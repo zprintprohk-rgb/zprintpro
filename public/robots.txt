@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://zprintpro.com/sitemap.xml
+
+# Disallow admin paths
+Disallow: /admin/
+Disallow: /api/
+Disallow: /_next/
+
+# Crawl-delay
+Crawl-delay: 1
