@@ -104,10 +104,10 @@ export function HotProducts({ locale }: HotProductsProps) {
   const localePrefix = locale === 'zh-hk' ? '' : `/${locale}`;
 
   return (
-    <section className="py-12 bg-gray-50">
+    <section className="pt-4 pb-6 bg-gray-50">
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mb-8">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mb-5">
           <div>
             <h2 className="text-2xl md:text-3xl font-bold text-[#333333]">{t.title}</h2>
             <p className="text-gray-500 mt-1">{t.subtitle}</p>

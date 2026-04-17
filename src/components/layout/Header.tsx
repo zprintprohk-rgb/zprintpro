@@ -114,10 +114,11 @@ export function Header({ locale }: HeaderProps) {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-white shadow-sm">
+    <header className="sticky top-0 z-50">
+      <div className="max-w-[1320px] mx-auto bg-white shadow-sm">
       {/* Top Bar */}
       <div className="bg-gray-50 border-b border-gray-100">
-        <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center text-xs sm:text-sm py-2">
+        <div className="px-4 sm:px-6 lg:px-8 flex justify-between items-center text-xs sm:text-sm py-2">
           <div className="flex items-center gap-4 text-gray-600">
             <a href={`tel:${t.phone.replace(/\D/g, '')}`} className="flex items-center gap-1 hover:text-[#2873F5] transition-colors">
               <Phone className="w-3.5 h-3.5" />
@@ -154,7 +155,7 @@ export function Header({ locale }: HeaderProps) {
 
       {/* Main Header */}
       <div className="bg-white">
-        <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16 lg:h-20 gap-4">
             {/* Logo */}
             <Link href={`${localePrefix}/`} className="flex-shrink-0">
@@ -214,11 +215,11 @@ export function Header({ locale }: HeaderProps) {
 
       {/* Blue Navigation Bar */}
       <nav className="hidden lg:block bg-[#2873F5]">
-        <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center h-[43px]">
+        <div className="px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center h-[43px] gap-1">
             <Link 
               href={`${localePrefix}/`}
-              className={`flex-1 h-full flex items-center justify-center text-sm font-medium transition-colors ${pathname === `${localePrefix}/` ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}
+              className={`px-5 h-full flex items-center text-sm font-medium transition-colors ${pathname === `${localePrefix}/` ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}
             >
               {t.home}
             </Link>
@@ -226,13 +227,13 @@ export function Header({ locale }: HeaderProps) {
             {t.navOrder.map((catSlug) => (
               <div
                 key={catSlug}
-                className="relative h-full flex-1"
+                className="relative h-full"
                 onMouseEnter={() => setActiveDropdown(catSlug)}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
                 <Link
                   href={`${localePrefix}/category/${catSlug}/`}
-                  className={`h-full flex items-center justify-center gap-1 text-sm font-medium transition-colors ${pathname.includes(`/category/${catSlug}`) ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}
+                  className={`px-5 h-full flex items-center gap-1 text-sm font-medium transition-colors ${pathname.includes(`/category/${catSlug}`) ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}
                 >
                   {t.categories[catSlug]}
                   <ChevronDown className={`w-3.5 h-3.5 transition-transform ${activeDropdown === catSlug ? 'rotate-180' : ''}`} />
@@ -264,19 +265,20 @@ export function Header({ locale }: HeaderProps) {
 
             <Link 
               href={`${localePrefix}/blog/`}
-              className={`flex-1 h-full flex items-center justify-center text-sm font-medium transition-colors ${pathname.includes('/blog') ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}
+              className={`px-5 h-full flex items-center text-sm font-medium transition-colors ${pathname.includes('/blog') ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}
             >
               {t.knowledge}
             </Link>
             <Link 
               href={`${localePrefix}/contact/`}
-              className={`flex-1 h-full flex items-center justify-center text-sm font-medium transition-colors ${pathname.includes('/contact') ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}
+              className={`px-5 h-full flex items-center text-sm font-medium transition-colors ${pathname.includes('/contact') ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}
             >
               {t.contact}
             </Link>
           </div>
         </div>
       </nav>
+      </div>
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
