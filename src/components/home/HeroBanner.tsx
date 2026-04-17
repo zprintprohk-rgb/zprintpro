@@ -3,9 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ChevronRight, ShoppingBag, FileText, Tag, Package, ImageIcon, GraduationCap, CreditCard, Mail, BookOpen, Calendar, Gift, Flag, StickyNote } from 'lucide-react';
 import { Locale } from '@/lib/seo';
-import { categories } from '@/data/products';
 
 interface HeroBannerProps {
   locale: Locale;
@@ -53,22 +51,6 @@ const translations = {
   },
 };
 
-const categoryIcons: Record<string, React.ReactNode> = {
-  'paper-bags': <ShoppingBag className="w-4 h-4" />,
-  'flyers': <FileText className="w-4 h-4" />,
-  'stickers': <Tag className="w-4 h-4" />,
-  'packaging': <Package className="w-4 h-4" />,
-  'posters': <ImageIcon className="w-4 h-4" />,
-  'books': <BookOpen className="w-4 h-4" />,
-  'business-cards': <CreditCard className="w-4 h-4" />,
-  'envelopes': <Mail className="w-4 h-4" />,
-  'menus': <StickyNote className="w-4 h-4" />,
-  'calendars': <Calendar className="w-4 h-4" />,
-  'red-packets': <Gift className="w-4 h-4" />,
-  'banners': <Flag className="w-4 h-4" />,
-  'educational': <GraduationCap className="w-4 h-4" />,
-};
-
 export function HeroBanner({ locale }: HeroBannerProps) {
   const t = translations[locale];
   const localePrefix = locale === 'zh-hk' ? '' : `/${locale}`;
@@ -84,36 +66,9 @@ export function HeroBanner({ locale }: HeroBannerProps) {
   return (
     <section className="bg-gray-50">
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-4">
-        <div className="flex gap-4">
-          {/* Category Sidebar */}
-          <div className="hidden lg:block w-60 flex-shrink-0">
-            <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden">
-              <div className="px-4 py-3 bg-[#2873F5] text-white">
-                <h3 className="font-semibold text-sm">{t.categoryTitle}</h3>
-              </div>
-              <div className="py-2">
-                {categories.map((cat) => (
-                  <Link
-                    key={cat.slug}
-                    href={`${localePrefix}/category/${cat.slug}/`}
-                    className="flex items-center justify-between px-4 py-2.5 text-sm text-gray-600 hover:text-[#2873F5] hover:bg-blue-50 transition-colors"
-                  >
-                    <span className="flex items-center gap-2.5">
-                      <span className="text-gray-400">{categoryIcons[cat.slug] || <ShoppingBag className="w-4 h-4" />}</span>
-                      <span>
-                        {locale === 'zh-hk' ? cat.name : locale === 'en' ? cat.nameEn : cat.nameJa}
-                      </span>
-                    </span>
-                    <ChevronRight className="w-3.5 h-3.5 text-gray-300" />
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </div>
-
-          {/* Banner Slider */}
-          <div className="flex-1 relative rounded-xl overflow-hidden bg-white shadow-sm border border-gray-100">
-            <div className="relative aspect-[16/7] md:aspect-[16/6]">
+        {/* Banner Slider - full width, no sidebar */}
+        <div className="relative rounded-xl overflow-hidden bg-white shadow-sm border border-gray-100">
+            <div className="relative h-[400px]">
               {t.slides.map((slide, index) => (
                 <div
                   key={index}
@@ -158,7 +113,6 @@ export function HeroBanner({ locale }: HeroBannerProps) {
             </div>
           </div>
         </div>
-      </div>
     </section>
   );
 }

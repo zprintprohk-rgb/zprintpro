@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X, Phone, Mail, ShoppingCart, User, Search, ChevronDown } from 'lucide-react';
@@ -156,14 +157,15 @@ export function Header({ locale }: HeaderProps) {
         <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16 lg:h-20 gap-4">
             {/* Logo */}
-            <Link href={`${localePrefix}/`} className="flex items-center gap-2 flex-shrink-0">
-              <div className="w-10 h-10 bg-gradient-to-br from-[#2873F5] to-[#F87314] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">Z</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="font-bold text-lg lg:text-xl text-[#333333] leading-tight">智印港</span>
-                <span className="text-[10px] text-[#666666] leading-tight">ZprintPro.com</span>
-              </div>
+            <Link href={`${localePrefix}/`} className="flex-shrink-0">
+              <Image
+                src="/images/logo.png"
+                alt="智印港 ZprintPro"
+                width={164}
+                height={40}
+                className="h-10 w-auto"
+                priority
+              />
             </Link>
 
             {/* Search Bar */}
@@ -213,10 +215,10 @@ export function Header({ locale }: HeaderProps) {
       {/* Blue Navigation Bar */}
       <nav className="hidden lg:block bg-[#2873F5]">
         <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center h-12">
+          <div className="flex items-center h-[43px]">
             <Link 
               href={`${localePrefix}/`}
-              className={`px-5 h-full flex items-center text-sm font-medium transition-colors ${pathname === `${localePrefix}/` ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}
+              className={`flex-1 h-full flex items-center justify-center text-sm font-medium transition-colors ${pathname === `${localePrefix}/` ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}
             >
               {t.home}
             </Link>
@@ -224,13 +226,13 @@ export function Header({ locale }: HeaderProps) {
             {t.navOrder.map((catSlug) => (
               <div
                 key={catSlug}
-                className="relative h-full"
+                className="relative h-full flex-1"
                 onMouseEnter={() => setActiveDropdown(catSlug)}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
                 <Link
                   href={`${localePrefix}/category/${catSlug}/`}
-                  className={`px-5 h-full flex items-center gap-1 text-sm font-medium transition-colors ${pathname.includes(`/category/${catSlug}`) ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}
+                  className={`h-full flex items-center justify-center gap-1 text-sm font-medium transition-colors ${pathname.includes(`/category/${catSlug}`) ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}
                 >
                   {t.categories[catSlug]}
                   <ChevronDown className={`w-3.5 h-3.5 transition-transform ${activeDropdown === catSlug ? 'rotate-180' : ''}`} />
@@ -262,13 +264,13 @@ export function Header({ locale }: HeaderProps) {
 
             <Link 
               href={`${localePrefix}/blog/`}
-              className={`px-5 h-full flex items-center text-sm font-medium transition-colors ${pathname.includes('/blog') ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}
+              className={`flex-1 h-full flex items-center justify-center text-sm font-medium transition-colors ${pathname.includes('/blog') ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}
             >
               {t.knowledge}
             </Link>
             <Link 
               href={`${localePrefix}/contact/`}
-              className={`px-5 h-full flex items-center text-sm font-medium transition-colors ${pathname.includes('/contact') ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}
+              className={`flex-1 h-full flex items-center justify-center text-sm font-medium transition-colors ${pathname.includes('/contact') ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}
             >
               {t.contact}
             </Link>

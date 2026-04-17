@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 import { Locale } from '@/lib/seo';
@@ -167,14 +168,14 @@ export function Footer({ locale }: FooterProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-[#2873F5] to-[#F87314] rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">Z</span>
-              </div>
-              <div className="flex flex-col">
-                <span className="font-bold text-xl">智印港</span>
-                <span className="text-xs text-gray-400">ZprintPro.com</span>
-              </div>
+            <div className="mb-4">
+              <Image
+                src="/images/logo.png"
+                alt="智印港 ZprintPro"
+                width={180}
+                height={44}
+                className="h-11 w-auto"
+              />
             </div>
             <p className="text-gray-400 text-sm mb-4 leading-relaxed">{t.companyDesc}</p>
             <div className="space-y-2">
