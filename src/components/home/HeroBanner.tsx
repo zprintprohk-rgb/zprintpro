@@ -140,30 +140,42 @@ export function HeroBanner({ locale }: HeroBannerProps) {
             </div>
           </div>
 
-          {/* Hero Image */}
-          <div className="relative hidden lg:block">
-            <div className="relative">
-              {/* Main Image Placeholder */}
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                <div className="aspect-[4/3] bg-gradient-to-br from-white/20 to-white/5 rounded-xl flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-32 h-32 mx-auto mb-4 bg-gradient-to-br from-[#F87314] to-[#2873F5] rounded-2xl flex items-center justify-center shadow-2xl">
-                      <span className="text-6xl font-bold text-white">Z</span>
+          {/* Hero Visual - Glassmorphism Z Card */}
+          <div className="relative hidden lg:flex items-center justify-center">
+            <div className="relative w-full max-w-md">
+              {/* Main Glassmorphism Card */}
+              <div className="relative bg-white/10 backdrop-blur-xl rounded-3xl p-8 border border-white/20 shadow-2xl">
+                <div className="aspect-square flex items-center justify-center">
+                  {/* 3D Z Icon */}
+                  <div className="relative">
+                    {/* Outer glow */}
+                    <div className="absolute inset-0 bg-gradient-to-br from-[#2873F5]/40 to-[#F87314]/40 rounded-3xl blur-2xl scale-110" />
+                    
+                    {/* Glass card */}
+                    <div className="relative w-40 h-40 bg-gradient-to-br from-white/20 to-white/5 rounded-2xl border border-white/30 backdrop-blur-md flex items-center justify-center shadow-xl">
+                      <span className="text-8xl font-bold text-white drop-shadow-lg">Z</span>
                     </div>
-                    <p className="text-white/60 text-sm">ZPrintPro Printing Services</p>
                   </div>
                 </div>
+                
+                <p className="text-center text-white/60 text-sm mt-4">ZPrintPro Printing Services</p>
               </div>
               
-              {/* Floating Elements */}
-              <div className="absolute -top-4 -right-4 bg-white text-[#333333] rounded-lg p-4 shadow-xl">
-                <p className="font-bold text-[#2873F5]">500+</p>
-                <p className="text-sm">Products</p>
+              {/* Floating Labels */}
+              <div className="absolute -top-2 -right-2 bg-white text-[#333333] rounded-xl px-4 py-3 shadow-xl border border-gray-100 animate-pulse">
+                <p className="font-bold text-[#2873F5] text-lg">500+</p>
+                <p className="text-sm text-gray-600">Products</p>
               </div>
-              <div className="absolute -bottom-4 -left-4 bg-[#F87314] text-white rounded-lg p-4 shadow-xl">
-                <p className="font-bold">24/7</p>
+              
+              <div className="absolute -bottom-2 -left-2 bg-gradient-to-r from-[#F87314] to-[#E56203] text-white rounded-xl px-4 py-3 shadow-xl">
+                <p className="font-bold text-lg">24/7</p>
                 <p className="text-sm">Support</p>
               </div>
+
+              {/* Decorative dots */}
+              <div className="absolute top-1/2 -right-8 w-3 h-3 bg-white/40 rounded-full" />
+              <div className="absolute bottom-1/4 -left-8 w-2 h-2 bg-[#F87314]/60 rounded-full" />
+              <div className="absolute top-1/4 -left-6 w-4 h-4 bg-white/20 rounded-full" />
             </div>
           </div>
         </div>

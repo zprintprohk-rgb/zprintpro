@@ -157,8 +157,8 @@ export function WhyChooseUs({ locale }: WhyChooseUsProps) {
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-[#333333] mb-4">{t.title}</h2>
-          <p className="text-[#666666] max-w-2xl mx-auto">{t.subtitle}</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#333333] mb-4">{t.title}</h2>
+          <p className="text-base text-[#666666] max-w-2xl mx-auto">{t.subtitle}</p>
         </div>
 
         {/* Features Grid */}
@@ -171,7 +171,7 @@ export function WhyChooseUs({ locale }: WhyChooseUsProps) {
               <div className="w-14 h-14 bg-gradient-to-br from-[#2873F5]/10 to-[#F87314]/10 rounded-xl flex items-center justify-center mb-4 group-hover:from-[#2873F5] group-hover:to-[#F87314] transition-all duration-300">
                 <feature.icon className="w-7 h-7 text-[#2873F5] group-hover:text-white transition-colors" />
               </div>
-              <h3 className="font-semibold text-[#333333] mb-2">{feature.title}</h3>
+              <h3 className="font-semibold text-base text-[#333333] mb-2">{feature.title}</h3>
               <p className="text-sm text-[#666666]">{feature.description}</p>
             </div>
           ))}
