@@ -1,8 +1,9 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
-import { BookOpen, ArrowRight, FileText, HelpCircle, Lightbulb, Video } from 'lucide-react';
+import { ArrowRight, Calendar } from 'lucide-react';
 import { Locale } from '@/lib/seo';
 
 interface KnowledgeSectionProps {
@@ -11,91 +12,133 @@ interface KnowledgeSectionProps {
 
 const translations = {
   'zh-hk': {
-    title: '印刷知識庫',
-    subtitle: '了解更多印刷相關知識，助您做出明智選擇',
-    articles: {
-      title: '實用文章',
-      items: [
-        { title: '如何準備印刷文件', description: '學習正確的PDF設定和出血設定' },
-        { title: '紙材選擇指南', description: '了解不同紙材的特性與應用' },
-        { title: '印刷工藝介紹', description: '燙金、UV、擊凸等特殊工藝' },
-      ],
-    },
-    faq: {
-      title: '常見問題',
-      items: [
-        { title: '訂單多久可以完成？', description: '標準訂單3-5個工作天' },
-        { title: '支持哪些付款方式？', description: '信用卡、銀行轉帳、PayPal' },
-        { title: '如何追蹤訂單狀態？', description: '登入帳戶查看即時進度' },
-      ],
-    },
-    guides: {
-      title: '設計指南',
-      items: [
-        { title: '名片設計規範', description: '尺寸、解析度、色彩模式' },
-        { title: '海報設計技巧', description: '視覺層次與排版建議' },
-        { title: '包裝設計要點', description: '結構與視覺的平衡' },
-      ],
-    },
-    cta: '查看更多',
+    title: '印刷知識',
+    subtitle: '專業指南與行業資訊',
+    viewMore: '查看更多',
+    articles: [
+      {
+        image: '/images/articles/sticker-guide.jpg',
+        tag: '印刷知識',
+        tagColor: 'bg-blue-100 text-blue-600',
+        date: '2025-03-15',
+        title: '貼紙印刷終極指南：材質、工藝與應用',
+        description: '深入了解各種貼紙材質的特性，選擇最適合您需求的貼紙類型...',
+        href: '/blog/sticker-guide/',
+      },
+      {
+        image: '/images/articles/lai-see.jpg',
+        tag: '設計靈感',
+        tagColor: 'bg-pink-100 text-pink-600',
+        date: '2025-03-10',
+        title: '新年賀詞2025精選：利是封設計靈感',
+        description: '精選2025年最受歡迎的新年賀詞，為您的利是封設計提供靈感...',
+        href: '/blog/lai-see-design/',
+      },
+      {
+        image: '/images/articles/brand-story.jpg',
+        tag: '品牌故事',
+        tagColor: 'bg-amber-100 text-amber-600',
+        date: '2025-03-05',
+        title: '智印港品牌故事：從觀塘到全港',
+        description: '了解智印港的發展歷程，從一家小型印刷店到全港領先的印刷服務商...',
+        href: '/blog/brand-story/',
+      },
+      {
+        image: '/images/articles/cmyk-rgb.jpg',
+        tag: '印刷技巧',
+        tagColor: 'bg-green-100 text-green-600',
+        date: '2025-02-28',
+        title: '印刷知識小貼士：CMYK vs RGB',
+        description: '了解CMYK和RGB的區別，確保您的設計在印刷時呈現最佳效果...',
+        href: '/blog/cmyk-rgb-guide/',
+      },
+    ],
   },
   en: {
-    title: 'Printing Knowledge Hub',
-    subtitle: 'Learn more about printing to make informed decisions',
-    articles: {
-      title: 'Helpful Articles',
-      items: [
-        { title: 'How to Prepare Print Files', description: 'Learn proper PDF settings and bleed setup' },
-        { title: 'Paper Selection Guide', description: 'Understand different paper types and applications' },
-        { title: 'Printing Techniques', description: 'Foil stamping, UV coating, embossing and more' },
-      ],
-    },
-    faq: {
-      title: 'FAQ',
-      items: [
-        { title: 'How long does an order take?', description: 'Standard orders take 3-5 business days' },
-        { title: 'What payment methods are accepted?', description: 'Credit card, bank transfer, PayPal' },
-        { title: 'How to track order status?', description: 'Log in to your account for real-time updates' },
-      ],
-    },
-    guides: {
-      title: 'Design Guides',
-      items: [
-        { title: 'Business Card Design Specs', description: 'Size, resolution, color mode' },
-        { title: 'Poster Design Tips', description: 'Visual hierarchy and layout advice' },
-        { title: 'Packaging Design Essentials', description: 'Balance between structure and visuals' },
-      ],
-    },
-    cta: 'View More',
+    title: 'Printing Knowledge',
+    subtitle: 'Professional guides and industry insights',
+    viewMore: 'View More',
+    articles: [
+      {
+        image: '/images/articles/sticker-guide.jpg',
+        tag: 'Knowledge',
+        tagColor: 'bg-blue-100 text-blue-600',
+        date: '2025-03-15',
+        title: 'Ultimate Sticker Printing Guide: Materials, Techniques & Applications',
+        description: 'Deep dive into various sticker materials to choose the best type for your needs...',
+        href: '/blog/sticker-guide/',
+      },
+      {
+        image: '/images/articles/lai-see.jpg',
+        tag: 'Design',
+        tagColor: 'bg-pink-100 text-pink-600',
+        date: '2025-03-10',
+        title: '2025 New Year Greetings: Red Packet Design Inspiration',
+        description: 'Curated collection of the most popular 2025 New Year greetings for your red packet designs...',
+        href: '/blog/lai-see-design/',
+      },
+      {
+        image: '/images/articles/brand-story.jpg',
+        tag: 'Brand Story',
+        tagColor: 'bg-amber-100 text-amber-600',
+        date: '2025-03-05',
+        title: 'The ZPrintPro Story: From Kwun Tong to All of Hong Kong',
+        description: 'Learn about our journey from a small print shop to a leading Hong Kong printing service...',
+        href: '/blog/brand-story/',
+      },
+      {
+        image: '/images/articles/cmyk-rgb.jpg',
+        tag: 'Tips',
+        tagColor: 'bg-green-100 text-green-600',
+        date: '2025-02-28',
+        title: 'Printing Tips: CMYK vs RGB',
+        description: 'Understand the difference between CMYK and RGB to ensure your designs print perfectly...',
+        href: '/blog/cmyk-rgb-guide/',
+      },
+    ],
   },
   ja: {
-    title: '印刷知識ハブ',
-    subtitle: 'より良い判断のための印刷関連知識',
-    articles: {
-      title: '役立つ記事',
-      items: [
-        { title: '印刷ファイルの準備方法', description: '適切なPDF設定と塗り足し設定を学ぶ' },
-        { title: '紙の選択ガイド', description: '異なる紙タイプと用途を理解する' },
-        { title: '印刷技術', description: '箔押し、UVコーティング、エンボス加工など' },
-      ],
-    },
-    faq: {
-      title: 'よくある質問',
-      items: [
-        { title: '注文にどのくらい時間がかかりますか？', description: '標準注文は3-5営業日' },
-        { title: 'どの支払い方法が利用できますか？', description: 'クレジットカード、銀行振込、PayPal' },
-        { title: '注文状況を確認するには？', description: 'アカウントにログインしてリアルタイム更新を確認' },
-      ],
-    },
-    guides: {
-      title: 'デザインガイド',
-      items: [
-        { title: '名刺デザイン仕様', description: 'サイズ、解像度、カラーモード' },
-        { title: 'ポスターデザインのヒント', description: '視覚的階層とレイアウトのアドバイス' },
-        { title: 'パッケージングデザインの基本', description: '構造と視覚のバランス' },
-      ],
-    },
-    cta: 'もっと見る',
+    title: '印刷知識',
+    subtitle: 'プロフェッショナルガイドと業界情報',
+    viewMore: 'もっと見る',
+    articles: [
+      {
+        image: '/images/articles/sticker-guide.jpg',
+        tag: '知識',
+        tagColor: 'bg-blue-100 text-blue-600',
+        date: '2025-03-15',
+        title: 'ステッカー印刷究極ガイド：材質、技術と応用',
+        description: '様々なステッカー材質を深く理解し、ニーズに最適なタイプを選びましょう...',
+        href: '/blog/sticker-guide/',
+      },
+      {
+        image: '/images/articles/lai-see.jpg',
+        tag: 'デザイン',
+        tagColor: 'bg-pink-100 text-pink-600',
+        date: '2025-03-10',
+        title: '2025年新年の挨拶：ポチ袋デザインのインスピレーション',
+        description: '2025年に最も人気のある新年の挨拶を厳選し、ポチ袋デザインのインスピレーションを提供...',
+        href: '/blog/lai-see-design/',
+      },
+      {
+        image: '/images/articles/brand-story.jpg',
+        tag: 'ブランドストーリー',
+        tagColor: 'bg-amber-100 text-amber-600',
+        date: '2025-03-05',
+        title: 'ZPrintProのストーリー：観塘から香港全土へ',
+        description: '小さな印刷店から香港を代表する印刷サービスへ成長した軌跡をご紹介...',
+        href: '/blog/brand-story/',
+      },
+      {
+        image: '/images/articles/cmyk-rgb.jpg',
+        tag: 'ヒント',
+        tagColor: 'bg-green-100 text-green-600',
+        date: '2025-02-28',
+        title: '印刷のヒント：CMYK vs RGB',
+        description: 'CMYKとRGBの違いを理解し、デザインが印刷時に最適な効果を発揮するように...',
+        href: '/blog/cmyk-rgb-guide/',
+      },
+    ],
   },
 };
 
@@ -104,92 +147,62 @@ export function KnowledgeSection({ locale }: KnowledgeSectionProps) {
   const localePrefix = locale === 'zh-hk' ? '' : `/${locale}`;
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-gray-50">
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-[#333333] mb-4">{t.title}</h2>
-          <p className="text-[#666666] max-w-2xl mx-auto">{t.subtitle}</p>
-        </div>
-
-        {/* Knowledge Categories */}
-        <div className="grid md:grid-cols-3 gap-8">
-          {/* Articles */}
-          <div className="bg-gray-50 rounded-xl p-6">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-[#2873F5]/10 rounded-lg flex items-center justify-center">
-                <FileText className="w-5 h-5 text-[#2873F5]" />
-              </div>
-              <h3 className="font-semibold text-[#333333]">{t.articles.title}</h3>
-            </div>
-            <ul className="space-y-3">
-              {t.articles.items.map((item, index) => (
-                <li key={index} className="group">
-                  <Link href={`${localePrefix}/blog/preparing-print-files`} className="block">
-                    <h4 className="text-sm font-medium text-[#333333] group-hover:text-[#2873F5] transition-colors">
-                      {item.title}
-                    </h4>
-                    <p className="text-xs text-[#666666]">{item.description}</p>
-                  </Link>
-                </li>
-              ))}
-            </ul>
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mb-8">
+          <div>
+            <h2 className="text-2xl md:text-3xl font-bold text-[#333333]">{t.title}</h2>
+            <p className="text-gray-500 mt-1">{t.subtitle}</p>
           </div>
-
-          {/* FAQ */}
-          <div className="bg-gray-50 rounded-xl p-6">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-[#F87314]/10 rounded-lg flex items-center justify-center">
-                <HelpCircle className="w-5 h-5 text-[#F87314]" />
-              </div>
-              <h3 className="font-semibold text-[#333333]">{t.faq.title}</h3>
-            </div>
-            <ul className="space-y-3">
-              {t.faq.items.map((item, index) => (
-                <li key={index} className="group">
-                  <Link href={`${localePrefix}/faq`} className="block">
-                    <h4 className="text-sm font-medium text-[#333333] group-hover:text-[#2873F5] transition-colors">
-                      {item.title}
-                    </h4>
-                    <p className="text-xs text-[#666666]">{item.description}</p>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Guides */}
-          <div className="bg-gray-50 rounded-xl p-6">
-            <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
-                <Lightbulb className="w-5 h-5 text-green-600" />
-              </div>
-              <h3 className="font-semibold text-[#333333]">{t.guides.title}</h3>
-            </div>
-            <ul className="space-y-3">
-              {t.guides.items.map((item, index) => (
-                <li key={index} className="group">
-                  <Link href={`${localePrefix}/guides/business-card-specs`} className="block">
-                    <h4 className="text-sm font-medium text-[#333333] group-hover:text-[#2873F5] transition-colors">
-                      {item.title}
-                    </h4>
-                    <p className="text-xs text-[#666666]">{item.description}</p>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-
-        {/* CTA */}
-        <div className="text-center mt-8">
-          <Link 
-            href={`${localePrefix}/blog`}
-            className="inline-flex items-center gap-2 text-[#2873F5] hover:text-[#1E5FD1] font-medium transition-colors"
+          <Link
+            href={`${localePrefix}/blog/`}
+            className="inline-flex items-center gap-1 text-[#2873F5] hover:text-[#1E5FD1] font-medium transition-colors text-sm"
           >
-            {t.cta}
+            {t.viewMore}
             <ArrowRight className="w-4 h-4" />
           </Link>
+        </div>
+
+        {/* Articles Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {t.articles.map((article, index) => (
+            <Link
+              key={index}
+              href={`${localePrefix}${article.href}`}
+              className="group bg-white rounded-xl border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-300"
+            >
+              {/* Image */}
+              <div className="aspect-[16/10] relative overflow-hidden">
+                <Image
+                  src={article.image}
+                  alt={article.title}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  unoptimized
+                />
+              </div>
+
+              {/* Content */}
+              <div className="p-4">
+                <div className="flex items-center gap-2 mb-2">
+                  <span className={`inline-block px-2 py-0.5 text-xs font-medium rounded ${article.tagColor}`}>
+                    {article.tag}
+                  </span>
+                  <span className="flex items-center gap-1 text-xs text-gray-400">
+                    <Calendar className="w-3 h-3" />
+                    {article.date}
+                  </span>
+                </div>
+                <h3 className="font-semibold text-[#333333] text-sm group-hover:text-[#2873F5] transition-colors line-clamp-2 mb-1">
+                  {article.title}
+                </h3>
+                <p className="text-xs text-gray-500 line-clamp-2">
+                  {article.description}
+                </p>
+              </div>
+            </Link>
+          ))}
         </div>
       </div>
     </section>

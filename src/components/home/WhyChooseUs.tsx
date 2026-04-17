@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Clock, Shield, Truck, Headphones, Palette, Leaf, Award, Zap } from 'lucide-react';
+import { Clock, Truck, Headphones, Shield, Award, CreditCard } from 'lucide-react';
 import { Locale } from '@/lib/seo';
 
 interface WhyChooseUsProps {
@@ -11,139 +11,181 @@ interface WhyChooseUsProps {
 const translations = {
   'zh-hk': {
     title: '為何選擇智印港',
-    subtitle: '我們致力於提供卓越的印刷服務體驗',
+    subtitle: '15,000+ 客戶的信賴之選',
     features: [
       {
         icon: Clock,
-        title: '快速交貨',
-        description: '標準訂單3-5個工作天，急單服務最快即日交貨',
-      },
-      {
-        icon: Shield,
-        title: '品質保證',
-        description: '採用優質紙材和先進印刷技術，確保每件產品完美無瑕',
+        title: '快速列印',
+        subtitle: '3-5日交貨',
+        subtitleColor: 'text-blue-500',
+        bgColor: 'bg-blue-50',
+        iconColor: 'text-blue-500',
+        description: '標準訂單3-5個工作天完成，特急服務最快24小時',
       },
       {
         icon: Truck,
-        title: '免費送貨',
-        description: '訂單滿$500即享免費送貨服務，覆蓋全香港',
+        title: '快速發貨',
+        subtitle: '滿$500免運',
+        subtitleColor: 'text-green-500',
+        bgColor: 'bg-green-50',
+        iconColor: 'text-green-500',
+        description: '訂單滿HK$500即享免費送貨上門服務',
       },
       {
         icon: Headphones,
-        title: '專業客服',
-        description: '經驗豐富的客服團隊，隨時解答您的疑問',
+        title: '24小時支持',
+        subtitle: '全天候服務',
+        subtitleColor: 'text-purple-500',
+        bgColor: 'bg-purple-50',
+        iconColor: 'text-purple-500',
+        description: '專業客服團隊7x24小時在線，隨時為您解答',
       },
       {
-        icon: Palette,
-        title: '免費設計支援',
-        description: '專業設計師提供設計建議和文件檢查服務',
-      },
-      {
-        icon: Leaf,
-        title: '環保印刷',
-        description: '使用環保油墨和可回收材料，愛護地球',
+        icon: Shield,
+        title: '準時交貨',
+        subtitle: '99.5%準時率',
+        subtitleColor: 'text-orange-500',
+        bgColor: 'bg-orange-50',
+        iconColor: 'text-orange-500',
+        description: '嚴格的生產管理，確保每一份訂單準時交付',
       },
       {
         icon: Award,
-        title: '價格透明',
-        description: '網上即時報價，無隱藏收費，價格公道',
+        title: '品質保證',
+        subtitle: '100%滿意',
+        subtitleColor: 'text-red-500',
+        bgColor: 'bg-red-50',
+        iconColor: 'text-red-500',
+        description: '不滿意免費重印，品質問題全額退款',
       },
       {
-        icon: Zap,
-        title: '先進設備',
-        description: '配備最新數碼和傳統印刷設備，滿足各種需求',
+        icon: CreditCard,
+        title: '安全支付',
+        subtitle: '多種支付方式',
+        subtitleColor: 'text-cyan-500',
+        bgColor: 'bg-cyan-50',
+        iconColor: 'text-cyan-500',
+        description: '支持信用卡、PayPal、銀行轉帳等多種支付方式',
       },
     ],
   },
   en: {
     title: 'Why Choose ZPrintPro',
-    subtitle: 'We are committed to providing an exceptional printing service experience',
+    subtitle: 'Trusted by 15,000+ Customers',
     features: [
       {
         icon: Clock,
-        title: 'Fast Delivery',
-        description: 'Standard orders in 3-5 business days, rush orders available same-day',
-      },
-      {
-        icon: Shield,
-        title: 'Quality Guaranteed',
-        description: 'Premium materials and advanced printing technology for flawless results',
+        title: 'Fast Printing',
+        subtitle: '3-5 Day Delivery',
+        subtitleColor: 'text-blue-500',
+        bgColor: 'bg-blue-50',
+        iconColor: 'text-blue-500',
+        description: 'Standard orders completed in 3-5 business days, rush service available in 24 hours',
       },
       {
         icon: Truck,
-        title: 'Free Delivery',
-        description: 'Free shipping on orders over $500, covering all of Hong Kong',
+        title: 'Fast Shipping',
+        subtitle: 'Free over $500',
+        subtitleColor: 'text-green-500',
+        bgColor: 'bg-green-50',
+        iconColor: 'text-green-500',
+        description: 'Free delivery on orders over HK$500',
       },
       {
         icon: Headphones,
-        title: 'Professional Support',
-        description: 'Experienced customer service team ready to assist you',
+        title: '24/7 Support',
+        subtitle: 'Always Available',
+        subtitleColor: 'text-purple-500',
+        bgColor: 'bg-purple-50',
+        iconColor: 'text-purple-500',
+        description: 'Professional customer service team online 24/7',
       },
       {
-        icon: Palette,
-        title: 'Free Design Support',
-        description: 'Professional designers provide advice and file checking services',
-      },
-      {
-        icon: Leaf,
-        title: 'Eco-Friendly',
-        description: 'Using eco-friendly inks and recyclable materials',
+        icon: Shield,
+        title: 'On-Time Delivery',
+        subtitle: '99.5% On-Time',
+        subtitleColor: 'text-orange-500',
+        bgColor: 'bg-orange-50',
+        iconColor: 'text-orange-500',
+        description: 'Strict production management ensures every order is delivered on time',
       },
       {
         icon: Award,
-        title: 'Transparent Pricing',
-        description: 'Instant online quotes, no hidden fees, fair prices',
+        title: 'Quality Guarantee',
+        subtitle: '100% Satisfaction',
+        subtitleColor: 'text-red-500',
+        bgColor: 'bg-red-50',
+        iconColor: 'text-red-500',
+        description: 'Free reprint if not satisfied, full refund for quality issues',
       },
       {
-        icon: Zap,
-        title: 'Advanced Equipment',
-        description: 'Latest digital and offset printing equipment for all needs',
+        icon: CreditCard,
+        title: 'Secure Payment',
+        subtitle: 'Multiple Options',
+        subtitleColor: 'text-cyan-500',
+        bgColor: 'bg-cyan-50',
+        iconColor: 'text-cyan-500',
+        description: 'Support credit card, PayPal, bank transfer and more',
       },
     ],
   },
   ja: {
     title: 'ZPrintProを選ぶ理由',
-    subtitle: '卓越した印刷サービス体験を提供することに全力を尽くしています',
+    subtitle: '15,000人以上のお客様に信頼されています',
     features: [
       {
         icon: Clock,
-        title: '迅速な納品',
-        description: '標準注文は3-5営業日、急ぎ注文は最短当日配送',
-      },
-      {
-        icon: Shield,
-        title: '品質保証',
-        description: '優れた材料と先進的な印刷技術で完璧な仕上がりを',
+        title: '迅速な印刷',
+        subtitle: '3-5日で納品',
+        subtitleColor: 'text-blue-500',
+        bgColor: 'bg-blue-50',
+        iconColor: 'text-blue-500',
+        description: '標準注文は3-5営業日、特急サービスは最短24時間',
       },
       {
         icon: Truck,
-        title: '送料無料',
-        description: '500ドル以上の注文で送料無料、香港全域対象',
+        title: '迅速な発送',
+        subtitle: '500ドル以上送料無料',
+        subtitleColor: 'text-green-500',
+        bgColor: 'bg-green-50',
+        iconColor: 'text-green-500',
+        description: '500ドル以上の注文で送料無料',
       },
       {
         icon: Headphones,
-        title: '専門サポート',
-        description: '経験豊富なカスタマーサービスチームがサポート',
+        title: '24時間サポート',
+        subtitle: '年中無休',
+        subtitleColor: 'text-purple-500',
+        bgColor: 'bg-purple-50',
+        iconColor: 'text-purple-500',
+        description: 'プロのカスタマーサービスチームが24時間対応',
       },
       {
-        icon: Palette,
-        title: '無料デザイン支援',
-        description: 'プロのデザイナーがアドバイスとファイルチェックを提供',
-      },
-      {
-        icon: Leaf,
-        title: 'エコフレンドリー',
-        description: '環境に優しいインクとリサイクル可能な材料を使用',
+        icon: Shield,
+        title: '定時納品',
+        subtitle: '99.5%定時率',
+        subtitleColor: 'text-orange-500',
+        bgColor: 'bg-orange-50',
+        iconColor: 'text-orange-500',
+        description: '厳格な生産管理で、すべての注文を定時に納品',
       },
       {
         icon: Award,
-        title: '透明な価格',
-        description: 'オンライン即時見積もり、隠れた料金なし、公正な価格',
+        title: '品質保証',
+        subtitle: '100%満足保証',
+        subtitleColor: 'text-red-500',
+        bgColor: 'bg-red-50',
+        iconColor: 'text-red-500',
+        description: '満足できない場合は無料再印刷、品質問題は全額返金',
       },
       {
-        icon: Zap,
-        title: '先進設備',
-        description: '最新のデジタル・オフセット印刷設備であらゆるニーズに対応',
+        icon: CreditCard,
+        title: '安全な支払い',
+        subtitle: '複数の支払方法',
+        subtitleColor: 'text-cyan-500',
+        bgColor: 'bg-cyan-50',
+        iconColor: 'text-cyan-500',
+        description: 'クレジットカード、PayPal、銀行振込などに対応',
       },
     ],
   },
@@ -153,26 +195,27 @@ export function WhyChooseUs({ locale }: WhyChooseUsProps) {
   const t = translations[locale];
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-white">
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#333333] mb-4">{t.title}</h2>
-          <p className="text-base text-[#666666] max-w-2xl mx-auto">{t.subtitle}</p>
+          <h2 className="text-3xl md:text-4xl font-bold text-[#333333] mb-3">{t.title}</h2>
+          <p className="text-base text-gray-500">{t.subtitle}</p>
         </div>
 
-        {/* Features Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {/* Features Grid - 6 columns on large screens */}
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
           {t.features.map((feature, index) => (
-            <div 
+            <div
               key={index}
-              className="bg-white rounded-xl p-6 border border-[#EEEEEE] hover:shadow-lg hover:border-[#2873F5]/20 transition-all duration-300 group"
+              className="bg-white rounded-xl border border-gray-100 p-5 hover:shadow-md transition-shadow text-center"
             >
-              <div className="w-14 h-14 bg-gradient-to-br from-[#2873F5]/10 to-[#F87314]/10 rounded-xl flex items-center justify-center mb-4 group-hover:from-[#2873F5] group-hover:to-[#F87314] transition-all duration-300">
-                <feature.icon className="w-7 h-7 text-[#2873F5] group-hover:text-white transition-colors" />
+              <div className={`w-12 h-12 ${feature.bgColor} rounded-xl flex items-center justify-center mx-auto mb-3`}>
+                <feature.icon className={`w-6 h-6 ${feature.iconColor}`} />
               </div>
-              <h3 className="font-semibold text-base text-[#333333] mb-2">{feature.title}</h3>
-              <p className="text-sm text-[#666666]">{feature.description}</p>
+              <h3 className="font-semibold text-[#333333] text-sm mb-1">{feature.title}</h3>
+              <p className={`text-xs font-medium ${feature.subtitleColor} mb-2`}>{feature.subtitle}</p>
+              <p className="text-xs text-gray-500 leading-relaxed">{feature.description}</p>
             </div>
           ))}
         </div>

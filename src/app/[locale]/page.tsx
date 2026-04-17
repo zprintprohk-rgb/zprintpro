@@ -9,6 +9,7 @@ import { JsonLd } from '@/components/JsonLd';
 import { generateOrganizationJsonLd, generateLocalBusinessJsonLd } from '@/lib/seo';
 import { HeroBanner } from '@/components/home/HeroBanner';
 import { HotProducts } from '@/components/home/HotProducts';
+import { StatsBar } from '@/components/home/StatsBar';
 import { WhyChooseUs } from '@/components/home/WhyChooseUs';
 import { KnowledgeSection } from '@/components/home/KnowledgeSection';
 
@@ -51,6 +52,7 @@ export default function HomePage({
       <main className="min-h-screen">
         <HeroBanner locale={locale} />
         <HotProducts locale={locale} />
+        <StatsBar locale={locale} />
         <WhyChooseUs locale={locale} />
         <KnowledgeSection locale={locale} />
       </main>
