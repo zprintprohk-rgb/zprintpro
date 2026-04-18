@@ -143,9 +143,9 @@ export function HotProducts({ locale }: HotProductsProps) {
                     <Link
                       key={cat.slug}
                       href={`${localePrefix}/category/${cat.slug}/`}
-                      className={`flex items-center justify-between px-4 py-3.5 text-[15px] transition-colors border-b border-gray-100 ${
+                      className={`flex items-center justify-between px-4 py-3.5 text-base transition-colors border-b border-gray-100 ${
                         isEducational
-                          ? 'bg-gray-100 text-gray-700 hover:bg-[#2873F5] hover:text-white'
+                          ? 'bg-gray-200 text-gray-700 font-bold hover:bg-[#2873F5] hover:text-white'
                           : 'text-gray-600 hover:text-[#2873F5] hover:bg-blue-50'
                       } ${idx === categories.length - 1 ? 'border-b-0' : ''}`}
                     >
@@ -176,11 +176,11 @@ export function HotProducts({ locale }: HotProductsProps) {
 
               {/* Enterprise CTA */}
               <div className="p-4 bg-gradient-to-br from-[#2873F5] to-[#1E5FD1] m-3 rounded-lg">
-                <p className="text-white font-semibold text-sm mb-1">{t.enterpriseCta}</p>
-                <p className="text-white/80 text-xs mb-3">{t.enterpriseDesc}</p>
+                <p className="text-white font-semibold text-lg mb-1 text-center">{t.enterpriseCta}</p>
+                <p className="text-white/80 text-xs mb-3 text-center">{t.enterpriseDesc}</p>
                 <Link
                   href={`${localePrefix}/contact/`}
-                  className="inline-flex items-center text-white text-xs font-medium bg-white/20 hover:bg-white/30 px-3 py-1.5 rounded transition-colors"
+                  className="flex items-center justify-center w-full text-[#2873F5] text-sm font-medium bg-white hover:bg-gray-100 px-3 py-2 rounded transition-colors"
                 >
                   {t.contactUs}
                 </Link>
