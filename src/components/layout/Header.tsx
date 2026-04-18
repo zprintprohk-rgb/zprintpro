@@ -89,6 +89,13 @@ const categorySubItems: Record<string, string[]> = {
   'educational': ['workbooks', 'certificates', 'diplomas', 'educational-banners'],
 };
 
+// 印刷知識下拉菜單內容（文章分類）
+const knowledgeSubItems: Record<string, string[]> = {
+  'zh-hk': ['畫冊知識', '貼紙知識', '包裝盒知識', '印刷工藝', '常見問題', '公司新聞'],
+  'en': ['Brochure Guide', 'Sticker Guide', 'Packaging Guide', 'Printing Techniques', 'FAQ', 'Company News'],
+  'ja': ['パンフレット知識', 'ステッカー知識', '包装箱知識', '印刷技術', 'よくある質問', '会社ニュース'],
+};
+
 const categoryCounts: Record<string, number> = {
   'paper-bags': 7,
   'flyers': 7,
@@ -98,108 +105,115 @@ const categoryCounts: Record<string, number> = {
   'educational': 4,
 };
 
-const categoryFeatured: Record<string, { image: string; name: string; nameEn: string; nameJa: string; slug: string }> = {
-  'paper-bags': { image: '/images/hero-v21/kraft-bag.jpg', name: '牛皮紙袋', nameEn: 'Kraft Bags', nameJa: 'クラフト紙袋', slug: 'kraft-paper-bags' },
-  'flyers': { image: '/images/hero-v21/flyer.jpg', name: '宣傳單張', nameEn: 'Flyers', nameJa: 'チラシ', slug: 'a4-flyers' },
-  'stickers': { image: '/images/hero-v21/sticker.jpg', name: '防水貼紙', nameEn: 'Stickers', nameJa: 'ステッカー', slug: 'waterproof-stickers' },
-  'packaging': { image: '/images/hero-v21/gift-box.jpg', name: '禮品盒', nameEn: 'Gift Boxes', nameJa: 'ギフトボックス', slug: 'gift-boxes' },
-  'posters': { image: '/images/hero-v21/poster.jpg', name: '海報', nameEn: 'Posters', nameJa: 'ポスター', slug: 'a2-posters' },
-  'educational': { image: '/images/hero-v21/flyer.jpg', name: '校園印刷', nameEn: 'Educational', nameJa: '教育印刷', slug: 'workbooks' },
+// 下拉菜單對齊偏移（居中以按鈕中心為基準，再偏移）
+const dropdownOffsets: Record<string, string> = {
+  'paper-bags': 'translateX(calc(-50% + 240px))',
+  'flyers': 'translateX(calc(-50% + 160px))',
+  'stickers': 'translateX(calc(-50% + 80px))',
+  'packaging': 'translateX(-50%)',
+  'posters': 'translateX(calc(-50% - 80px))',
+  'educational': 'translateX(calc(-50% - 160px))',
+  'blog': 'translateX(calc(-50% - 240px))',
 };
 
 const subItemNames: Record<string, Record<string, string>> = {
   'zh-hk': {
-    'kraft-paper-bags': '牛皮紙袋',
-    'white-card-bags': '白卡紙袋',
-    'gift-bags': '禮品袋',
-    'eco-paper-bags': '環保紙袋',
-    'handle-bags': '手提紙袋',
-    'a4-flyers': 'A4宣傳單張',
-    'a5-flyers': 'A5宣傳單張',
-    'a3-flyers': 'A3宣傳單張',
-    'dl-flyers': 'DL宣傳單張',
-    'door-hangers': '門掛卡',
-    'waterproof-stickers': '防水貼紙',
-    'transparent-stickers': '透明貼紙',
-    'foil-stickers': '燙金貼紙',
-    'die-cut-stickers': '異形貼紙',
-    'hologram-stickers': '全息貼紙',
-    'product-boxes': '產品包裝盒',
-    'mailer-boxes': '快遞紙盒',
-    'gift-boxes': '禮品盒',
-    'display-boxes': '展示盒',
-    'food-packaging': '食品包裝',
-    'a2-posters': 'A2海報',
-    'a1-posters': 'A1海報',
-    'a0-posters': 'A0海報',
-    'foam-board-posters': '泡沫板海報',
-    'backlit-posters': '燈箱海報',
-    'workbooks': '練習簿',
-    'certificates': '證書',
-    'diplomas': '畢業證書',
-    'educational-banners': '教育橫幅',
+    'kraft-paper-bags': '牛皮紙袋', 'white-card-bags': '白卡紙袋', 'gift-bags': '禮品袋',
+    'eco-paper-bags': '環保紙袋', 'handle-bags': '手提紙袋',
+    'a4-flyers': 'A4宣傳單張', 'a5-flyers': 'A5宣傳單張', 'a3-flyers': 'A3宣傳單張',
+    'dl-flyers': 'DL宣傳單張', 'door-hangers': '門掛卡',
+    'waterproof-stickers': '防水貼紙', 'transparent-stickers': '透明貼紙',
+    'foil-stickers': '燙金貼紙', 'die-cut-stickers': '異形貼紙', 'hologram-stickers': '全息貼紙',
+    'product-boxes': '產品包裝盒', 'mailer-boxes': '快遞紙盒', 'gift-boxes': '禮品盒',
+    'display-boxes': '展示盒', 'food-packaging': '食品包裝',
+    'a2-posters': 'A2海報', 'a1-posters': 'A1海報', 'a0-posters': 'A0海報',
+    'foam-board-posters': '泡沫板海報', 'backlit-posters': '燈箱海報',
+    'workbooks': '練習簿', 'certificates': '證書', 'diplomas': '畢業證書', 'educational-banners': '教育橫幅',
   },
   en: {
-    'kraft-paper-bags': 'Kraft Paper Bags',
-    'white-card-bags': 'White Card Bags',
-    'gift-bags': 'Gift Bags',
-    'eco-paper-bags': 'Eco Paper Bags',
-    'handle-bags': 'Handle Bags',
-    'a4-flyers': 'A4 Flyers',
-    'a5-flyers': 'A5 Flyers',
-    'a3-flyers': 'A3 Flyers',
-    'dl-flyers': 'DL Flyers',
-    'door-hangers': 'Door Hangers',
-    'waterproof-stickers': 'Waterproof Stickers',
-    'transparent-stickers': 'Transparent Stickers',
-    'foil-stickers': 'Foil Stickers',
-    'die-cut-stickers': 'Die-cut Stickers',
-    'hologram-stickers': 'Hologram Stickers',
-    'product-boxes': 'Product Boxes',
-    'mailer-boxes': 'Mailer Boxes',
-    'gift-boxes': 'Gift Boxes',
-    'display-boxes': 'Display Boxes',
-    'food-packaging': 'Food Packaging',
-    'a2-posters': 'A2 Posters',
-    'a1-posters': 'A1 Posters',
-    'a0-posters': 'A0 Posters',
-    'foam-board-posters': 'Foam Board Posters',
-    'backlit-posters': 'Backlit Posters',
-    'workbooks': 'Workbooks',
-    'certificates': 'Certificates',
-    'diplomas': 'Diplomas',
-    'educational-banners': 'Educational Banners',
+    'kraft-paper-bags': 'Kraft Paper Bags', 'white-card-bags': 'White Card Bags', 'gift-bags': 'Gift Bags',
+    'eco-paper-bags': 'Eco Paper Bags', 'handle-bags': 'Handle Bags',
+    'a4-flyers': 'A4 Flyers', 'a5-flyers': 'A5 Flyers', 'a3-flyers': 'A3 Flyers',
+    'dl-flyers': 'DL Flyers', 'door-hangers': 'Door Hangers',
+    'waterproof-stickers': 'Waterproof Stickers', 'transparent-stickers': 'Transparent Stickers',
+    'foil-stickers': 'Foil Stickers', 'die-cut-stickers': 'Die-cut Stickers', 'hologram-stickers': 'Hologram Stickers',
+    'product-boxes': 'Product Boxes', 'mailer-boxes': 'Mailer Boxes', 'gift-boxes': 'Gift Boxes',
+    'display-boxes': 'Display Boxes', 'food-packaging': 'Food Packaging',
+    'a2-posters': 'A2 Posters', 'a1-posters': 'A1 Posters', 'a0-posters': 'A0 Posters',
+    'foam-board-posters': 'Foam Board Posters', 'backlit-posters': 'Backlit Posters',
+    'workbooks': 'Workbooks', 'certificates': 'Certificates', 'diplomas': 'Diplomas', 'educational-banners': 'Educational Banners',
   },
   ja: {
-    'kraft-paper-bags': 'クラフト紙袋',
-    'white-card-bags': '白卡紙袋',
-    'gift-bags': 'ギフトバッグ',
-    'eco-paper-bags': 'エコ紙袋',
-    'handle-bags': '手提げ紙袋',
-    'a4-flyers': 'A4チラシ',
-    'a5-flyers': 'A5チラシ',
-    'a3-flyers': 'A3チラシ',
-    'dl-flyers': 'DLチラシ',
-    'door-hangers': 'ドアハンガー',
-    'waterproof-stickers': '防水ステッカー',
-    'transparent-stickers': '透明ステッカー',
-    'foil-stickers': '燙金ステッカー',
-    'die-cut-stickers': 'ダイカットステッカー',
-    'hologram-stickers': 'ホログラムステッカー',
-    'product-boxes': '製品箱',
-    'mailer-boxes': '配送箱',
-    'gift-boxes': 'ギフト箱',
-    'display-boxes': '展示箱',
-    'food-packaging': '食品包装',
-    'a2-posters': 'A2ポスター',
-    'a1-posters': 'A1ポスター',
-    'a0-posters': 'A0ポスター',
-    'foam-board-posters': '発泡板ポスター',
-    'backlit-posters': 'バックライトポスター',
-    'workbooks': 'ワークブック',
-    'certificates': '証明書',
-    'diplomas': '卒業証書',
-    'educational-banners': '教育バナー',
+    'kraft-paper-bags': 'クラフト紙袋', 'white-card-bags': '白卡紙袋', 'gift-bags': 'ギフトバッグ',
+    'eco-paper-bags': 'エコ紙袋', 'handle-bags': '手提げ紙袋',
+    'a4-flyers': 'A4チラシ', 'a5-flyers': 'A5チラシ', 'a3-flyers': 'A3チラシ',
+    'dl-flyers': 'DLチラシ', 'door-hangers': 'ドアハンガー',
+    'waterproof-stickers': '防水ステッカー', 'transparent-stickers': '透明ステッカー',
+    'foil-stickers': '燙金ステッカー', 'die-cut-stickers': 'ダイカットステッカー', 'hologram-stickers': 'ホログラムステッカー',
+    'product-boxes': '製品箱', 'mailer-boxes': '配送箱', 'gift-boxes': 'ギフト箱',
+    'display-boxes': '展示箱', 'food-packaging': '食品包装',
+    'a2-posters': 'A2ポスター', 'a1-posters': 'A1ポスター', 'a0-posters': 'A0ポスター',
+    'foam-board-posters': '発泡板ポスター', 'backlit-posters': 'バックライトポスター',
+    'workbooks': 'ワークブック', 'certificates': '証明書', 'diplomas': '卒業証書', 'educational-banners': '教育バナー',
+  },
+};
+
+const featuredImages: Record<string, string> = {
+  'kraft-paper-bags': '/images/hero-v21/kraft-bag.jpg',
+  'white-card-bags': '/images/hero-v21/white-bag.jpg',
+  'gift-bags': '/images/hero-v21/gift-box.jpg',
+  'a4-flyers': '/images/hero-v21/flyer.jpg',
+  'a5-flyers': '/images/hero-v21/poster.jpg',
+  'a3-flyers': '/images/hero-v21/sticker.jpg',
+  'waterproof-stickers': '/images/hero-v21/sticker.jpg',
+  'transparent-stickers': '/images/hero-v21/flyer.jpg',
+  'foil-stickers': '/images/hero-v21/poster.jpg',
+  'product-boxes': '/images/hero-v21/gift-box.jpg',
+  'mailer-boxes': '/images/hero-v21/kraft-bag.jpg',
+  'gift-boxes': '/images/hero-v21/gift-box.jpg',
+  'display-boxes': '/images/hero-v21/white-bag.jpg',
+  'food-packaging': '/images/hero-v21/kraft-bag.jpg',
+  'a2-posters': '/images/hero-v21/poster.jpg',
+  'a1-posters': '/images/hero-v21/flyer.jpg',
+  'a0-posters': '/images/hero-v21/sticker.jpg',
+  'foam-board-posters': '/images/hero-v21/gift-box.jpg',
+  'backlit-posters': '/images/hero-v21/poster.jpg',
+  'workbooks': '/images/hero-v21/flyer.jpg',
+  'certificates': '/images/hero-v21/poster.jpg',
+  'diplomas': '/images/hero-v21/sticker.jpg',
+  'educational-banners': '/images/hero-v21/flyer.jpg',
+};
+
+const featuredDescs: Record<string, Record<string, string>> = {
+  'zh-hk': {
+    'kraft-paper-bags': '環保耐用，100個起訂', 'white-card-bags': '高檔印刷，品牌首選', 'gift-bags': '精美包裝，送禮首選',
+    'a4-flyers': '彩色印刷，即日可取', 'a5-flyers': '多種尺寸，宣傳必備', 'a3-flyers': '大圖輸出，震撼效果',
+    'waterproof-stickers': '耐用防水，戶外適用', 'transparent-stickers': '清晰透明，質感出眾', 'foil-stickers': '高檔質感，奢華體驗',
+    'product-boxes': '堅固耐用，保護產品', 'mailer-boxes': '快遞專用，運輸安全', 'gift-boxes': '精美包裝，提升品牌',
+    'display-boxes': '展示專用，吸引目光', 'food-packaging': '食品級材，安全衛生',
+    'a2-posters': '大圖輸出，色彩鮮豔', 'a1-posters': '展覽專用，視覺震撼', 'a0-posters': '巨幅海報，戶外廣告',
+    'foam-board-posters': '輕便展示，易於搬運', 'backlit-posters': '燈箱專用，夜間醒目',
+    'workbooks': '教育專用，品質保證', 'certificates': '正式場合，尊貴體驗', 'diplomas': '畢業必備，紀念珍藏', 'educational-banners': '校園活動，宣傳必備',
+  },
+  'en': {
+    'kraft-paper-bags': 'Eco-friendly, min 100', 'white-card-bags': 'Premium, brand choice', 'gift-bags': 'Elegant, perfect gift',
+    'a4-flyers': 'Full color, same day', 'a5-flyers': 'Multi sizes, essential', 'a3-flyers': 'Large format, impact',
+    'waterproof-stickers': 'Durable, outdoor use', 'transparent-stickers': 'Clear, premium feel', 'foil-stickers': 'Luxury, elegant look',
+    'product-boxes': 'Sturdy, protective', 'mailer-boxes': 'Shipping safe', 'gift-boxes': 'Elegant, branded',
+    'display-boxes': 'Display, eye-catching', 'food-packaging': 'Food-grade, hygienic',
+    'a2-posters': 'Large, vivid colors', 'a1-posters': 'Exhibition ready', 'a0-posters': 'Huge, outdoor ads',
+    'foam-board-posters': 'Light, easy move', 'backlit-posters': 'Backlit, night visible',
+    'workbooks': 'Education quality', 'certificates': 'Formal, prestigious', 'diplomas': 'Graduation memento', 'educational-banners': 'School events',
+  },
+  'ja': {
+    'kraft-paper-bags': 'エコで耐久性あり', 'white-card-bags': '高級印刷，ブランド', 'gift-bags': 'ギフトに最適',
+    'a4-flyers': 'フルカラー当日', 'a5-flyers': '多サイズ必須', 'a3-flyers': '大判出力衝撃',
+    'waterproof-stickers': '防水耐久屋外', 'transparent-stickers': '透明高級感', 'foil-stickers': '高級ラグジュアリー',
+    'product-boxes': '丈夫保護製品', 'mailer-boxes': '配送安全専用', 'gift-boxes': 'ブランド向上',
+    'display-boxes': '展示注目集める', 'food-packaging': '食品級衛生的',
+    'a2-posters': '大判鮮やか色彩', 'a1-posters': '展示会専用', 'a0-posters': '巨大屋外広告',
+    'foam-board-posters': '軽量持運び易', 'backlit-posters': 'バックライト夜間',
+    'workbooks': '教育品質保証', 'certificates': '格式高級体験', 'diplomas': '卒業記念必須', 'educational-banners': '学校イベント',
   },
 };
 
@@ -222,359 +236,193 @@ export function Header({ locale }: HeaderProps) {
     return subItemNames[locale]?.[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
   };
 
-  const getFeaturedName = (cat: string) => {
-    const f = categoryFeatured[cat];
-    if (!f) return '';
-    if (locale === 'zh-hk') return f.name;
-    if (locale === 'en') return f.nameEn;
-    return f.nameJa;
-  };
+  const navLinkClass = (isActive: boolean) =>
+    `flex-1 h-full flex items-center justify-center text-[17px] font-semibold transition-colors ${
+      isActive ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'
+    }`;
+
+  const catNavLinkClass = (catSlug: string) =>
+    `h-full flex items-center justify-center gap-1 text-[17px] font-semibold transition-colors ${
+      pathname.includes(`/category/${catSlug}`) ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'
+    }`;
 
   return (
     <header className="sticky top-0 z-50">
       <div className="max-w-[1320px] mx-auto bg-white shadow-sm">
-      {/* Top Bar */}
-      <div className="bg-gray-50 border-b border-gray-100">
-        <div className="px-4 sm:px-6 lg:px-8 flex justify-between items-center text-xs sm:text-sm py-2">
-          <div className="flex items-center gap-6 text-gray-600">
-            <a href={`tel:${t.phone.replace(/\D/g, '')}`} className="flex items-center gap-2 hover:text-[#2873F5] transition-colors">
-              <Phone className="w-3.5 h-3.5" />
-              <span className="hidden sm:inline">{t.phone}</span>
-            </a>
-            <a href={`mailto:${t.email}`} className="hidden md:flex items-center gap-2 hover:text-[#2873F5] transition-colors">
-              <Mail className="w-3.5 h-3.5" />
-              <span>{t.email}</span>
-            </a>
-            <a href="https://wa.me/8618126380255" target="_blank" rel="noopener noreferrer" className="hidden lg:flex items-center gap-2 text-green-600 hover:text-green-700 transition-colors">
-              <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-              {t.whatsapp}
-            </a>
-          </div>
-          <div className="flex items-center gap-4">
-            <span className="hidden sm:flex items-center gap-1.5 text-gray-600">
-              <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
-              {t.support}
-            </span>
-            <div className="flex items-center gap-1">
-              <Link href="/zh-hk/" className={`px-2.5 py-0.5 rounded text-xs font-medium transition-colors ${locale === 'zh-hk' ? 'bg-[#2873F5] text-white' : 'text-gray-500 hover:text-[#2873F5]'}`}>
-                繁
-              </Link>
-              <Link href="/en/" className={`px-2.5 py-0.5 rounded text-xs font-medium transition-colors ${locale === 'en' ? 'bg-[#2873F5] text-white' : 'text-gray-500 hover:text-[#2873F5]'}`}>
-                EN
-              </Link>
-              <Link href="/ja/" className={`px-2.5 py-0.5 rounded text-xs font-medium transition-colors ${locale === 'ja' ? 'bg-[#2873F5] text-white' : 'text-gray-500 hover:text-[#2873F5]'}`}>
-                日
-              </Link>
+        {/* Top Bar */}
+        <div className="bg-gray-50 border-b border-gray-100">
+          <div className="px-4 sm:px-6 lg:px-8 flex justify-between items-center text-xs sm:text-sm py-2">
+            <div className="flex items-center gap-6 text-gray-600">
+              <a href={`tel:${t.phone.replace(/\D/g, '')}`} className="flex items-center gap-2 hover:text-[#2873F5] transition-colors">
+                <Phone className="w-3.5 h-3.5" />
+                <span className="hidden sm:inline">{t.phone}</span>
+              </a>
+              <a href={`mailto:${t.email}`} className="hidden md:flex items-center gap-2 hover:text-[#2873F5] transition-colors">
+                <Mail className="w-3.5 h-3.5" />
+                <span>{t.email}</span>
+              </a>
+              <a href="https://wa.me/8618126380255" target="_blank" rel="noopener noreferrer" className="hidden lg:flex items-center gap-2 text-green-600 hover:text-green-700 transition-colors">
+                <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                {t.whatsapp}
+              </a>
             </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Main Header */}
-      <div className="bg-white">
-        <div className="px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-14 lg:h-16 gap-4">
-            {/* Logo */}
-            <Link href={`${localePrefix}/`} className="flex-shrink-0 ml-5">
-              <Image
-                src="/images/logo.png"
-                alt="智印港 ZprintPro"
-                width={180}
-                height={44}
-                className="h-11 w-auto"
-                priority
-              />
-            </Link>
-
-            {/* Search Bar */}
-            <form onSubmit={handleSearch} className="hidden md:flex flex-1 max-w-xl mx-4">
-              <div className="relative w-full">
-                <input
-                  type="text"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder={t.searchPlaceholder}
-                  className="w-full pl-4 pr-24 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:border-[#2873F5] focus:ring-1 focus:ring-[#2873F5] text-sm"
-                />
-                <button
-                  type="submit"
-                  className="absolute right-0 top-0 h-full px-5 bg-[#F87314] hover:bg-[#E56203] text-white rounded-r-lg flex items-center gap-1.5 transition-colors text-sm font-medium"
-                >
-                  <Search className="w-4 h-4" />
-                  <span className="hidden lg:inline">{t.search}</span>
-                </button>
+            <div className="flex items-center gap-4">
+              <span className="hidden sm:flex items-center gap-1.5 text-gray-600">
+                <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse" />
+                {t.support}
+              </span>
+              <div className="flex items-center gap-1">
+                <Link href="/zh-hk/" className={`px-2.5 py-0.5 rounded text-xs font-medium transition-colors ${locale === 'zh-hk' ? 'bg-[#2873F5] text-white' : 'text-gray-500 hover:text-[#2873F5]'}`}>繁</Link>
+                <Link href="/en/" className={`px-2.5 py-0.5 rounded text-xs font-medium transition-colors ${locale === 'en' ? 'bg-[#2873F5] text-white' : 'text-gray-500 hover:text-[#2873F5]'}`}>EN</Link>
+                <Link href="/ja/" className={`px-2.5 py-0.5 rounded text-xs font-medium transition-colors ${locale === 'ja' ? 'bg-[#2873F5] text-white' : 'text-gray-500 hover:text-[#2873F5]'}`}>日</Link>
               </div>
-            </form>
-
-            {/* Right Actions */}
-            <div className="flex items-center gap-3 lg:gap-5">
-              <Link href={`${localePrefix}/login`} className="hidden sm:flex items-center gap-1.5 text-gray-600 hover:text-[#2873F5] transition-colors text-sm">
-                <User className="w-5 h-5" />
-                <span>{t.login}</span>
-              </Link>
-              <Link href={`${localePrefix}/cart`} className="flex items-center gap-1.5 text-gray-600 hover:text-[#2873F5] transition-colors text-sm">
-                <div className="relative">
-                  <ShoppingCart className="w-5 h-5" />
-                  <span className="absolute -top-2 -right-2 w-4 h-4 bg-[#F87314] text-white text-[10px] rounded-full flex items-center justify-center font-bold">0</span>
-                </div>
-                <span className="hidden sm:inline">{t.cart}</span>
-              </Link>
-              <button
-                className="lg:hidden p-2"
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              >
-                {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-              </button>
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Blue Navigation Bar */}
-      <nav className="hidden lg:block bg-[#2873F5]">
-        <div className="px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center h-[46px]">
-            <Link 
-              href={`${localePrefix}/`}
-              className={`flex-1 h-full flex items-center justify-center text-[17px] font-medium transition-colors ${pathname === `${localePrefix}/` ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}
-            >
-              {t.home}
-            </Link>
-
-            {t.navOrder.map((catSlug) => (
-              <div
-                key={catSlug}
-                className="relative h-full flex-1"
-                onMouseEnter={() => setActiveDropdown(catSlug)}
-                onMouseLeave={() => setActiveDropdown(null)}
-              >
-                <Link
-                  href={`${localePrefix}/category/${catSlug}/`}
-                  className={`h-full flex items-center justify-center gap-1 text-[17px] font-medium transition-colors ${pathname.includes(`/category/${catSlug}`) ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}
-                >
-                  {t.categories[catSlug]}
-                  <ChevronDown className={`w-3.5 h-3.5 transition-transform ${activeDropdown === catSlug ? 'rotate-180' : ''}`} />
+        {/* Main Header */}
+        <div className="bg-white">
+          <div className="px-4 sm:px-6 lg:px-8">
+            <div className="flex justify-between items-center h-14 lg:h-16 gap-4">
+              <Link href={`${localePrefix}/`} className="flex-shrink-0 ml-5">
+                <Image src="/images/logo.png" alt="智印港 ZprintPro" width={180} height={44} className="h-11 w-auto" priority />
+              </Link>
+              <form onSubmit={handleSearch} className="hidden md:flex flex-1 max-w-xl mx-4">
+                <div className="relative w-full">
+                  <input type="text" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} placeholder={t.searchPlaceholder} className="w-full pl-4 pr-24 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:border-[#2873F5] focus:ring-1 focus:ring-[#2873F5] text-sm" />
+                  <button type="submit" className="absolute right-0 top-0 h-full px-5 bg-[#F87314] hover:bg-[#E56203] text-white rounded-r-lg flex items-center gap-1.5 transition-colors text-sm font-medium">
+                    <Search className="w-4 h-4" /><span className="hidden lg:inline">{t.search}</span>
+                  </button>
+                </div>
+              </form>
+              <div className="flex items-center gap-3 lg:gap-5">
+                <Link href={`${localePrefix}/login`} className="hidden sm:flex items-center gap-1.5 text-gray-600 hover:text-[#2873F5] transition-colors text-sm"><User className="w-5 h-5" /><span>{t.login}</span></Link>
+                <Link href={`${localePrefix}/cart`} className="flex items-center gap-1.5 text-gray-600 hover:text-[#2873F5] transition-colors text-sm">
+                  <div className="relative"><ShoppingCart className="w-5 h-5" /><span className="absolute -top-2 -right-2 w-4 h-4 bg-[#F87314] text-white text-[10px] rounded-full flex items-center justify-center font-bold">0</span></div>
+                  <span className="hidden sm:inline">{t.cart}</span>
                 </Link>
+                <button className="lg:hidden p-2" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>{mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                {activeDropdown === catSlug && (
-                  <div className="absolute top-full left-0 bg-white shadow-2xl rounded-b-lg overflow-hidden z-50 flex">
-                    {/* Left: Subcategories */}
-                    <div className="w-52 py-2">
-                      <div className="px-4 pb-2 flex items-center gap-2">
-                        <span className="w-1 h-4 bg-[#2873F5] rounded-full" />
-                        <span className="text-xs font-semibold text-gray-500">
-                          {locale === 'zh-hk' ? '產品分類' : locale === 'en' ? 'Categories' : 'カテゴリー'}
-                        </span>
+        {/* Blue Navigation Bar */}
+        <nav className="hidden lg:block bg-[#2873F5]">
+          <div className="px-2 sm:px-4 lg:px-6">
+            <div className="flex items-center h-[46px]">
+              <Link href={`${localePrefix}/`} className={navLinkClass(pathname === `${localePrefix}/`)}>{t.home}</Link>
+
+              {t.navOrder.map((catSlug) => (
+                <div key={catSlug} className="relative h-full flex-1" onMouseEnter={() => setActiveDropdown(catSlug)} onMouseLeave={() => setActiveDropdown(null)}>
+                  <Link href={`${localePrefix}/category/${catSlug}/`} className={catNavLinkClass(catSlug)}>
+                    {t.categories[catSlug]}<ChevronDown className={`w-3.5 h-3.5 transition-transform ${activeDropdown === catSlug ? 'rotate-180' : ''}`} />
+                  </Link>
+                  {activeDropdown === catSlug && (
+                    <div className="absolute top-full left-1/2 bg-white shadow-2xl rounded-b-lg overflow-hidden z-50 flex" style={{ transform: dropdownOffsets[catSlug], width: 950, minHeight: 320 }}>
+                      <div className="w-[150px] py-3 flex flex-col">
+                        <div className="px-4 pb-2 flex items-center gap-2">
+                          <span className="w-1 h-4 bg-[#2873F5] rounded-full" />
+                          <span className="text-xs font-semibold text-gray-500">{locale === 'zh-hk' ? '產品分類' : locale === 'en' ? 'Categories' : 'カテゴリー'}</span>
+                        </div>
+                        <div className="flex-1">
+                          {categorySubItems[catSlug]?.map((subSlug) => (
+                            <Link key={subSlug} href={`${localePrefix}/product/${subSlug}/`} className="block px-4 py-1.5 text-sm text-gray-600 hover:text-[#2873F5] hover:bg-gray-50 transition-colors">{getSubItemName(subSlug)}</Link>
+                          ))}
+                        </div>
+                        <div className="border-t border-gray-100 mt-1 pt-1">
+                          <Link href={`${localePrefix}/category/${catSlug}/`} className="block px-4 py-1.5 text-sm font-medium text-[#2873F5] hover:bg-gray-50 transition-colors">{locale === 'zh-hk' ? '查看全部' : locale === 'en' ? 'View All' : 'すべて見る'} →</Link>
+                        </div>
                       </div>
-                      {categorySubItems[catSlug]?.map((subSlug) => (
-                        <Link
-                          key={subSlug}
-                          href={`${localePrefix}/product/${subSlug}/`}
-                          className="block px-4 py-1.5 text-sm text-gray-600 hover:text-[#2873F5] hover:bg-gray-50 transition-colors"
-                        >
-                          {getSubItemName(subSlug)}
-                        </Link>
-                      ))}
-                      <div className="border-t border-gray-100 mt-1 pt-1">
-                        <Link
-                          href={`${localePrefix}/category/${catSlug}/`}
-                          className="block px-4 py-1.5 text-sm font-medium text-[#2873F5] hover:bg-gray-50 transition-colors"
-                        >
-                          {locale === 'zh-hk' ? '查看全部' : locale === 'en' ? 'View All' : 'すべて見る'} →
-                        </Link>
+                      <div className="flex-1 bg-gray-50 p-4 border-l border-gray-100">
+                        <div className="pb-3 flex items-center gap-2">
+                          <span className="w-1 h-4 bg-[#F87314] rounded-full" />
+                          <span className="text-xs font-semibold text-gray-500">{locale === 'zh-hk' ? '熱門產品' : locale === 'en' ? 'Hot Products' : '人気製品'}</span>
+                        </div>
+                        <div className="flex gap-4">
+                          {categorySubItems[catSlug]?.slice(0, 3).map((subSlug, idx) => {
+                            const tagText = idx < 2 ? (locale === 'zh-hk' ? '熱銷' : locale === 'en' ? 'Hot' : '人気') : (locale === 'zh-hk' ? '推薦' : locale === 'en' ? 'New' : '新着');
+                            return (
+                              <Link key={subSlug} href={`${localePrefix}/product/${subSlug}/`} className="block group flex-1">
+                                <div className="relative aspect-[4/3] rounded-lg overflow-hidden mb-2">
+                                  <Image src={featuredImages[subSlug] || '/images/hero-v21/gift-box.jpg'} alt={getSubItemName(subSlug)} fill className="object-cover group-hover:scale-105 transition-transform" unoptimized />
+                                  <span className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded">{tagText}</span>
+                                </div>
+                                <p className="text-sm font-medium text-gray-700 text-center">{getSubItemName(subSlug)}</p>
+                                <p className="text-xs text-gray-400 text-center mt-0.5">{featuredDescs[locale]?.[subSlug] || ''}</p>
+                              </Link>
+                            );
+                          })}
+                        </div>
                       </div>
                     </div>
-                    {/* Right: Featured Products Grid */}
-                    <div className="w-72 bg-gray-50 p-3 border-l border-gray-100">
-                      <div className="pb-2 flex items-center gap-2">
-                        <span className="w-1 h-4 bg-[#F87314] rounded-full" />
-                        <span className="text-xs font-semibold text-gray-500">
-                          {locale === 'zh-hk' ? '熱門產品' : locale === 'en' ? 'Hot Products' : '人気製品'}
-                        </span>
+                  )}
+                </div>
+              ))}
+
+              {/* 印刷知識 - 帶下拉菜單 */}
+              <div className="relative h-full flex-1" onMouseEnter={() => setActiveDropdown('blog')} onMouseLeave={() => setActiveDropdown(null)}>
+                <Link href={`${localePrefix}/blog/`} className={`h-full flex items-center justify-center gap-1 text-[17px] font-semibold transition-colors ${pathname.includes('/blog') ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}>
+                  {t.knowledge}<ChevronDown className={`w-3.5 h-3.5 transition-transform ${activeDropdown === 'blog' ? 'rotate-180' : ''}`} />
+                </Link>
+                {activeDropdown === 'blog' && (
+                  <div className="absolute top-full left-1/2 bg-white shadow-2xl rounded-b-lg overflow-hidden z-50 flex" style={{ transform: dropdownOffsets['blog'], width: 950, minHeight: 320 }}>
+                    <div className="w-[150px] py-3 flex flex-col">
+                      <div className="px-4 pb-2 flex items-center gap-2">
+                        <span className="w-1 h-4 bg-[#2873F5] rounded-full" />
+                        <span className="text-xs font-semibold text-gray-500">{locale === 'zh-hk' ? '內容分類' : locale === 'en' ? 'Topics' : 'トピック'}</span>
                       </div>
-                      <div className="grid grid-cols-3 gap-2">
-                        {categorySubItems[catSlug]?.slice(0, 3).map((subSlug, idx) => {
-                          const featuredDescs: Record<string, Record<string, string>> = {
-                            'zh-hk': {
-                              'kraft-paper-bags': '環保耐用，100個起訂',
-                              'white-card-bags': '高檔印刷，品牌首選',
-                              'gift-bags': '精美包裝，送禮首選',
-                              'a4-flyers': '彩色印刷，即日可取',
-                              'a5-flyers': '多種尺寸，宣傳必備',
-                              'a3-flyers': '大圖輸出，震撼效果',
-                              'waterproof-stickers': '耐用防水，戶外適用',
-                              'transparent-stickers': '清晰透明，質感出眾',
-                              'foil-stickers': '高檔質感，奢華體驗',
-                              'product-boxes': '堅固耐用，保護產品',
-                              'mailer-boxes': '快遞專用，運輸安全',
-                              'gift-boxes': '精美包裝，提升品牌',
-                              'display-boxes': '展示專用，吸引目光',
-                              'food-packaging': '食品級材，安全衛生',
-                              'a2-posters': '大圖輸出，色彩鮮豔',
-                              'a1-posters': '展覽專用，視覺震撼',
-                              'a0-posters': '巨幅海報，戶外廣告',
-                              'foam-board-posters': '輕便展示，易於搬運',
-                              'backlit-posters': '燈箱專用，夜間醒目',
-                              'workbooks': '教育專用，品質保證',
-                              'certificates': '正式場合，尊貴體驗',
-                              'diplomas': '畢業必備，紀念珍藏',
-                              'educational-banners': '校園活動，宣傳必備',
-                            },
-                            'en': {
-                              'kraft-paper-bags': 'Eco-friendly, min 100',
-                              'white-card-bags': 'Premium, brand choice',
-                              'gift-bags': 'Elegant, perfect gift',
-                              'a4-flyers': 'Full color, same day',
-                              'a5-flyers': 'Multi sizes, essential',
-                              'a3-flyers': 'Large format, impact',
-                              'waterproof-stickers': 'Durable, outdoor use',
-                              'transparent-stickers': 'Clear, premium feel',
-                              'foil-stickers': 'Luxury, elegant look',
-                              'product-boxes': 'Sturdy, protective',
-                              'mailer-boxes': 'Shipping safe',
-                              'gift-boxes': 'Elegant, branded',
-                              'display-boxes': 'Display, eye-catching',
-                              'food-packaging': 'Food-grade, hygienic',
-                              'a2-posters': 'Large, vivid colors',
-                              'a1-posters': 'Exhibition ready',
-                              'a0-posters': 'Huge, outdoor ads',
-                              'foam-board-posters': 'Light, easy move',
-                              'backlit-posters': 'Backlit, night visible',
-                              'workbooks': 'Education quality',
-                              'certificates': 'Formal, prestigious',
-                              'diplomas': 'Graduation memento',
-                              'educational-banners': 'School events',
-                            },
-                            'ja': {
-                              'kraft-paper-bags': 'エコで耐久性あり',
-                              'white-card-bags': '高級印刷，ブランド',
-                              'gift-bags': 'ギフトに最適',
-                              'a4-flyers': 'フルカラー当日',
-                              'a5-flyers': '多サイズ必須',
-                              'a3-flyers': '大判出力衝撃',
-                              'waterproof-stickers': '防水耐久屋外',
-                              'transparent-stickers': '透明高級感',
-                              'foil-stickers': '高級ラグジュアリー',
-                              'product-boxes': '丈夫保護製品',
-                              'mailer-boxes': '配送安全専用',
-                              'gift-boxes': 'ブランド向上',
-                              'display-boxes': '展示注目集める',
-                              'food-packaging': '食品級衛生的',
-                              'a2-posters': '大判鮮やか色彩',
-                              'a1-posters': '展示会専用',
-                              'a0-posters': '巨大屋外広告',
-                              'foam-board-posters': '軽量持運び易',
-                              'backlit-posters': 'バックライト夜間',
-                              'workbooks': '教育品質保証',
-                              'certificates': '格式高級体験',
-                              'diplomas': '卒業記念必須',
-                              'educational-banners': '学校イベント',
-                            },
-                          };
-                          const featuredImages: Record<string, string> = {
-                            'kraft-paper-bags': '/images/hero-v21/kraft-bag.jpg',
-                            'white-card-bags': '/images/hero-v21/white-bag.jpg',
-                            'gift-bags': '/images/hero-v21/gift-box.jpg',
-                            'a4-flyers': '/images/hero-v21/flyer.jpg',
-                            'a5-flyers': '/images/hero-v21/poster.jpg',
-                            'a3-flyers': '/images/hero-v21/sticker.jpg',
-                            'waterproof-stickers': '/images/hero-v21/sticker.jpg',
-                            'transparent-stickers': '/images/hero-v21/flyer.jpg',
-                            'foil-stickers': '/images/hero-v21/poster.jpg',
-                            'product-boxes': '/images/hero-v21/gift-box.jpg',
-                            'mailer-boxes': '/images/hero-v21/kraft-bag.jpg',
-                            'gift-boxes': '/images/hero-v21/gift-box.jpg',
-                            'display-boxes': '/images/hero-v21/white-bag.jpg',
-                            'food-packaging': '/images/hero-v21/kraft-bag.jpg',
-                            'a2-posters': '/images/hero-v21/poster.jpg',
-                            'a1-posters': '/images/hero-v21/flyer.jpg',
-                            'a0-posters': '/images/hero-v21/sticker.jpg',
-                            'foam-board-posters': '/images/hero-v21/gift-box.jpg',
-                            'backlit-posters': '/images/hero-v21/poster.jpg',
-                            'workbooks': '/images/hero-v21/flyer.jpg',
-                            'certificates': '/images/hero-v21/poster.jpg',
-                            'diplomas': '/images/hero-v21/sticker.jpg',
-                            'educational-banners': '/images/hero-v21/flyer.jpg',
-                          };
-                          const tagText = idx < 2 
-                            ? (locale === 'zh-hk' ? '熱銷' : locale === 'en' ? 'Hot' : '人気')
-                            : (locale === 'zh-hk' ? '推薦' : locale === 'en' ? 'New' : '新着');
-                          return (
-                            <Link
-                              key={subSlug}
-                              href={`${localePrefix}/product/${subSlug}/`}
-                              className="block group"
-                            >
-                              <div className="relative aspect-square rounded-md overflow-hidden mb-1">
-                                <Image
-                                  src={featuredImages[subSlug] || '/images/hero-v21/gift-box.jpg'}
-                                  alt={getSubItemName(subSlug)}
-                                  fill
-                                  className="object-cover group-hover:scale-105 transition-transform"
-                                  unoptimized
-                                />
-                                <span className="absolute top-1 left-1 bg-red-500 text-white text-[10px] font-bold px-1 py-0.5 rounded">
-                                  {tagText}
-                                </span>
-                              </div>
-                              <p className="text-[11px] text-gray-700 text-center leading-tight truncate">{getSubItemName(subSlug)}</p>
-                              <p className="text-[10px] text-gray-400 text-center leading-tight truncate mt-0.5">{featuredDescs[locale]?.[subSlug] || ''}</p>
-                            </Link>
-                          );
-                        })}
+                      <div className="flex-1">
+                        {knowledgeSubItems[locale]?.map((item, idx) => (
+                          <Link key={idx} href={`${localePrefix}/blog/`} className="block px-4 py-1.5 text-sm text-gray-600 hover:text-[#2873F5] hover:bg-gray-50 transition-colors">{item}</Link>
+                        ))}
+                      </div>
+                      <div className="border-t border-gray-100 mt-1 pt-1">
+                        <Link href={`${localePrefix}/blog/`} className="block px-4 py-1.5 text-sm font-medium text-[#2873F5] hover:bg-gray-50 transition-colors">{locale === 'zh-hk' ? '查看全部' : locale === 'en' ? 'View All' : 'すべて見る'} →</Link>
+                      </div>
+                    </div>
+                    <div className="flex-1 bg-gray-50 p-4 border-l border-gray-100">
+                      <div className="pb-3 flex items-center gap-2">
+                        <span className="w-1 h-4 bg-[#F87314] rounded-full" />
+                        <span className="text-xs font-semibold text-gray-500">{locale === 'zh-hk' ? '推薦文章' : locale === 'en' ? 'Featured' : 'おすすめ'}</span>
+                      </div>
+                      <div className="flex gap-4">
+                        {['flyer.jpg', 'sticker.jpg', 'gift-box.jpg'].map((img, idx) => (
+                          <Link key={idx} href={`${localePrefix}/blog/`} className="block group flex-1">
+                            <div className="relative aspect-[4/3] rounded-lg overflow-hidden mb-2">
+                              <Image src={`/images/hero-v21/${img}`} alt="" fill className="object-cover group-hover:scale-105 transition-transform" unoptimized />
+                            </div>
+                            <p className="text-sm font-medium text-gray-700 text-center">{knowledgeSubItems[locale]?.[idx] || ''}</p>
+                          </Link>
+                        ))}
                       </div>
                     </div>
                   </div>
                 )}
               </div>
-            ))}
 
-            <Link 
-              href={`${localePrefix}/blog/`}
-              className={`flex-1 h-full flex items-center justify-center text-[17px] font-medium transition-colors ${pathname.includes('/blog') ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}
-            >
-              {t.knowledge}
-            </Link>
-            <Link 
-              href={`${localePrefix}/contact/`}
-              className={`flex-1 h-full flex items-center justify-center text-[17px] font-medium transition-colors ${pathname.includes('/contact') ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}
-            >
-              {t.contact}
-            </Link>
+              <Link href={`${localePrefix}/contact/`} className={navLinkClass(pathname.includes('/contact'))}>{t.contact}</Link>
+            </div>
           </div>
-        </div>
-      </nav>
+        </nav>
       </div>
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="lg:hidden bg-white border-t">
           <div className="px-4 py-4 space-y-3">
-            {/* Mobile Search */}
             <form onSubmit={handleSearch} className="md:hidden mb-4">
               <div className="relative">
-                <input
-                  type="text"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder={t.searchPlaceholder}
-                  className="w-full pl-4 pr-12 py-2.5 border border-gray-200 rounded-lg text-sm"
-                />
-                <button type="submit" className="absolute right-0 top-0 h-full px-3 text-[#F87314]">
-                  <Search className="w-5 h-5" />
-                </button>
+                <input type="text" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} placeholder={t.searchPlaceholder} className="w-full pl-4 pr-12 py-2.5 border border-gray-200 rounded-lg text-sm" />
+                <button type="submit" className="absolute right-0 top-0 h-full px-3 text-[#F87314]"><Search className="w-5 h-5" /></button>
               </div>
             </form>
-
             <Link href={`${localePrefix}/`} className="block font-medium text-[#333333] py-2">{t.home}</Link>
             {t.navOrder.map((catSlug) => (
-              <Link key={catSlug} href={`${localePrefix}/category/${catSlug}/`} className="block font-medium text-[#333333] py-2">
-                {t.categories[catSlug]}
-              </Link>
+              <Link key={catSlug} href={`${localePrefix}/category/${catSlug}/`} className="block font-medium text-[#333333] py-2">{t.categories[catSlug]}</Link>
             ))}
             <Link href={`${localePrefix}/blog/`} className="block font-medium text-[#333333] py-2">{t.knowledge}</Link>
             <Link href={`${localePrefix}/contact/`} className="block font-medium text-[#333333] py-2">{t.contact}</Link>
-            
             <div className="flex gap-2 pt-4 border-t">
               <Link href="/zh-hk/" className={`px-4 py-2 rounded text-sm ${locale === 'zh-hk' ? 'bg-[#2873F5] text-white' : 'border border-gray-200'}`}>繁</Link>
               <Link href="/en/" className={`px-4 py-2 rounded text-sm ${locale === 'en' ? 'bg-[#2873F5] text-white' : 'border border-gray-200'}`}>EN</Link>
