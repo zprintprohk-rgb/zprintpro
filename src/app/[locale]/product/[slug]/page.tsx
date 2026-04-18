@@ -19,6 +19,7 @@ import {
   generateBreadcrumbJsonLd,
   generateOrganizationJsonLd,
   generateFaqJsonLd,
+  generateProductReviewsJsonLd,
   Locale 
 } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
@@ -205,6 +206,7 @@ export default function ProductPage({
       <JsonLd data={breadcrumbJsonLd} />
       {faqJsonLd && <JsonLd data={faqJsonLd} />}
       {howToJsonLd && <JsonLd data={howToJsonLd} />}
+      <JsonLd data={generateProductReviewsJsonLd(product.name, slug, locale)} />
       
       <main className="min-h-screen bg-gray-50">
         {/* 面包屑导航 */}

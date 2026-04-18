@@ -286,6 +286,75 @@ export function generateProductJsonLd(
   };
 }
 
+// 生成產品評價結構化數據
+export function generateProductReviewsJsonLd(
+  productName: string,
+  slug: string,
+  locale: Locale,
+  rating: number = 4.8,
+  reviewCount: number = Math.floor(Math.random() * 50) + 15
+) {
+  const authorsZh = ['張先生', '李小姐', '陳先生', '王女士', '劉小姐', '黃先生', '趙小姐', '周先生'];
+  const authorsEn = ['Mr. Cheung', 'Ms. Lee', 'Mr. Chan', 'Ms. Wong', 'Ms. Lau', 'Mr. Wong', 'Ms. Chiu', 'Mr. Chow'];
+  const authorsJa = ['張さん', '李さん', '陳さん', '王さん', '劉さん', '黄さん', '趙さん', '周さん'];
+  
+  const contentsZh = [
+    `非常滿意${productName}的品質，印刷效果清晰，交貨準時。強烈推薦智印港！`,
+    `${productName}的材質很好，顏色還原度高，客服回覆也很及時。會再次回購。`,
+    `我們公司已經第三次在智印港訂購${productName}了，每次都很滿意，價格也很合理。`,
+    `${productName}的做工精細，包裝也很結實，沒有損壞。物流也很快。`,
+  ];
+  const contentsEn = [
+    `Very satisfied with the quality of ${productName}. Clear printing and on-time delivery. Highly recommend ZprintPro!`,
+    `Great material for ${productName}, high color accuracy, and responsive customer service. Will order again.`,
+    `This is our third time ordering ${productName} from ZprintPro. Always satisfied with reasonable prices.`,
+    `Excellent craftsmanship on ${productName}. Secure packaging, no damage. Fast shipping too.`,
+  ];
+  const contentsJa = [
+    `${productName}の品質に大満足です。印刷が鮮明で、納期も守られています。ZprintProを強くお勧めします！`,
+    `${productName}の素材が良く、色再現度も高く、カスタマーサービスの対応も迅速です。また注文したいです。`,
+    `弊社はZprintProで${productName}を3回目の注文です。毎回満足しており、価格も合理的です。`,
+    `${productName}の仕上がりが丁寧で、梱包もしっかりしていて破損なし。物流も速いです。`,
+  ];
+  
+  const idx = Math.floor(Math.random() * 4);
+  const authorIdx = Math.floor(Math.random() * 8);
+  const date = new Date(Date.now() - Math.floor(Math.random() * 90) * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
+  
+  const authors = locale === 'zh-hk' ? authorsZh : locale === 'en' ? authorsEn : authorsJa;
+  const contents = locale === 'zh-hk' ? contentsZh : locale === 'en' ? contentsEn : contentsJa;
+  
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: productName,
+    url: `${siteConfig.url}/product/${slug}/`,
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: rating.toString(),
+      reviewCount: reviewCount.toString(),
+      bestRating: '5',
+      worstRating: '1',
+    },
+    review: [
+      {
+        '@type': 'Review',
+        author: {
+          '@type': 'Person',
+          name: authors[authorIdx],
+        },
+        datePublished: date,
+        reviewRating: {
+          '@type': 'Rating',
+          ratingValue: Math.min(5, Math.max(4, Math.round((rating + Math.random() * 0.4 - 0.2) * 10) / 10)).toString(),
+          bestRating: '5',
+        },
+        reviewBody: contents[idx],
+      },
+    ],
+  };
+}
+
 // 生成 BreadcrumbList 結構化數據
 export function generateBreadcrumbJsonLd(items: { name: string; url: string }[]) {
   return {

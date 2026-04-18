@@ -102,7 +102,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/business-cards.jpg'],
+    images: ['/images/products/premium-business-cards.jpg'],
     variables: {
       sizes: [
         { value: 'standard', label: '標準尺寸 (90×54mm)', multiplier: 1 },
@@ -133,7 +133,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/business-cards.jpg'],
+    images: ['/images/products/thick-business-cards-400g.jpg'],
   },
   {
     id: 'BC-003',
@@ -149,7 +149,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/business-cards.jpg'],
+    images: ['/images/products/foil-business-cards.jpg'],
   },
   {
     id: 'BC-004',
@@ -165,7 +165,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/business-cards.jpg'],
+    images: ['/images/products/spot-uv-business-cards.jpg'],
   },
   {
     id: 'BC-005',
@@ -181,7 +181,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/business-cards.jpg'],
+    images: ['/images/products/matte-business-cards.jpg'],
   },
   {
     id: 'BC-006',
@@ -197,7 +197,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/business-cards.jpg'],
+    images: ['/images/products/rounded-corner-cards.jpg'],
   },
   {
     id: 'BC-007',
@@ -213,7 +213,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/business-cards.jpg'],
+    images: ['/images/products/double-sided-cards.jpg'],
   },
   {
     id: 'BC-008',
@@ -229,7 +229,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/business-cards.jpg'],
+    images: ['/images/products/same-day-business-cards.jpg'],
   },
   {
     id: 'BC-009',
@@ -245,7 +245,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/business-cards.jpg'],
+    images: ['/images/products/eco-business-cards.jpg'],
   },
   // 貼紙印刷 (8 SKU)
   {
@@ -262,7 +262,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/stickers.jpg'],
+    images: ['/images/products/waterproof-stickers.jpg'],
   },
   {
     id: 'ST-002',
@@ -278,7 +278,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/stickers.jpg'],
+    images: ['/images/products/transparent-stickers.jpg'],
   },
   {
     id: 'ST-003',
@@ -294,7 +294,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/stickers.jpg'],
+    images: ['/images/products/removable-stickers.jpg'],
   },
   {
     id: 'ST-004',
@@ -310,7 +310,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/stickers.jpg'],
+    images: ['/images/products/small-batch-stickers.jpg'],
   },
   {
     id: 'ST-005',
@@ -326,7 +326,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/stickers.jpg'],
+    images: ['/images/products/die-cut-stickers.jpg'],
   },
   {
     id: 'ST-006',
@@ -342,7 +342,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/stickers.jpg'],
+    images: ['/images/products/foil-stickers.jpg'],
   },
   {
     id: 'ST-007',
@@ -358,7 +358,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/stickers.jpg'],
+    images: ['/images/products/security-stickers.jpg'],
   },
   {
     id: 'ST-008',
@@ -374,7 +374,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/stickers.jpg'],
+    images: ['/images/products/fluorescent-stickers.jpg'],
   },
   // 紙袋印刷 (7 SKU)
   {
@@ -391,7 +391,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/paper-bags.jpg'],
+    images: ['/images/products/kraft-paper-bags.jpg'],
   },
   {
     id: 'PB-002',
@@ -407,7 +407,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/paper-bags.jpg'],
+    images: ['/images/products/white-card-bags.jpg'],
   },
   {
     id: 'PB-003',
@@ -423,7 +423,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/paper-bags.jpg'],
+    images: ['/images/products/gift-bags.jpg'],
   },
   {
     id: 'PB-004',
@@ -439,7 +439,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/paper-bags.jpg'],
+    images: ['/images/products/eco-paper-bags.jpg'],
   },
   {
     id: 'PB-005',
@@ -455,7 +455,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/paper-bags.jpg'],
+    images: ['/images/products/handle-bags.jpg'],
   },
   {
     id: 'PB-006',
@@ -471,7 +471,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/paper-bags.jpg'],
+    images: ['/images/products/small-bags.jpg'],
   },
   {
     id: 'PB-007',
@@ -487,7 +487,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/paper-bags.jpg'],
+    images: ['/images/products/large-bags.jpg'],
   },
   // 宣傳單張 (7 SKU)
   {
@@ -504,7 +504,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/flyers.jpg'],
+    images: ['/images/products/a4-flyers.jpg'],
   },
   {
     id: 'FL-002',
@@ -520,7 +520,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/flyers.jpg'],
+    images: ['/images/products/a5-flyers.jpg'],
   },
   {
     id: 'FL-003',
@@ -536,7 +536,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/flyers.jpg'],
+    images: ['/images/products/double-sided-flyers.jpg'],
   },
   {
     id: 'FL-004',
@@ -552,7 +552,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/flyers.jpg'],
+    images: ['/images/products/folded-leaflets.jpg'],
   },
   {
     id: 'FL-005',
@@ -568,7 +568,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/flyers.jpg'],
+    images: ['/images/products/thick-paper-flyers.jpg'],
   },
   {
     id: 'FL-006',
@@ -584,7 +584,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/flyers.jpg'],
+    images: ['/images/products/same-day-flyers.jpg'],
   },
   {
     id: 'FL-007',
@@ -600,7 +600,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/flyers.jpg'],
+    images: ['/images/products/eco-flyers.jpg'],
   },
   // 海報定制 (6 SKU)
   {
@@ -617,7 +617,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/posters.jpg'],
+    images: ['/images/products/a2-posters.jpg'],
   },
   {
     id: 'PO-002',
@@ -633,7 +633,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/posters.jpg'],
+    images: ['/images/products/a1-posters.jpg'],
   },
   {
     id: 'PO-003',
@@ -649,7 +649,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/posters.jpg'],
+    images: ['/images/products/outdoor-posters.jpg'],
   },
   {
     id: 'PO-004',
@@ -665,7 +665,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/posters.jpg'],
+    images: ['/images/products/display-posters.jpg'],
   },
   {
     id: 'PO-005',
@@ -681,7 +681,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/posters.jpg'],
+    images: ['/images/products/art-posters.jpg'],
   },
   {
     id: 'PO-006',
@@ -697,7 +697,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/posters.jpg'],
+    images: ['/images/products/adhesive-posters.jpg'],
   },
   // 包裝盒定制 (6 SKU)
   {
@@ -714,7 +714,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/packaging.jpg'],
+    images: ['/images/products/gift-boxes.jpg'],
   },
   {
     id: 'PK-002',
@@ -730,7 +730,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/packaging.jpg'],
+    images: ['/images/products/cosmetic-boxes.jpg'],
   },
   {
     id: 'PK-003',
@@ -746,7 +746,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/packaging.jpg'],
+    images: ['/images/products/food-boxes.jpg'],
   },
   {
     id: 'PK-004',
@@ -762,7 +762,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/packaging.jpg'],
+    images: ['/images/products/mailer-boxes.jpg'],
   },
   {
     id: 'PK-005',
@@ -778,7 +778,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/packaging.jpg'],
+    images: ['/images/products/folding-boxes.jpg'],
   },
   {
     id: 'PK-006',
@@ -794,7 +794,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/packaging.jpg'],
+    images: ['/images/products/rigid-boxes.jpg'],
   },
   // 利是封印刷 (6 SKU)
   {
@@ -811,7 +811,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/red-packets.jpg'],
+    images: ['/images/products/foil-red-packets.jpg'],
   },
   {
     id: 'RP-002',
@@ -827,7 +827,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/red-packets.jpg'],
+    images: ['/images/products/embossed-red-packets.jpg'],
   },
   {
     id: 'RP-003',
@@ -843,7 +843,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/red-packets.jpg'],
+    images: ['/images/products/custom-red-packets.jpg'],
   },
   {
     id: 'RP-004',
@@ -859,7 +859,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/red-packets.jpg'],
+    images: ['/images/products/cartoon-red-packets.jpg'],
   },
   {
     id: 'RP-005',
@@ -875,7 +875,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/red-packets.jpg'],
+    images: ['/images/products/eco-red-packets.jpg'],
   },
   {
     id: 'RP-006',
@@ -891,7 +891,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/red-packets.jpg'],
+    images: ['/images/products/large-red-packets.jpg'],
   },
   // 年曆印刷 (6 SKU)
   {
@@ -908,7 +908,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/calendars.jpg'],
+    images: ['/images/products/wall-calendars.jpg'],
   },
   {
     id: 'CL-002',
@@ -924,7 +924,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/calendars.jpg'],
+    images: ['/images/products/desk-calendars.jpg'],
   },
   {
     id: 'CL-003',
@@ -940,7 +940,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/calendars.jpg'],
+    images: ['/images/products/custom-calendars.jpg'],
   },
   {
     id: 'CL-004',
@@ -956,7 +956,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/calendars.jpg'],
+    images: ['/images/products/mini-calendars.jpg'],
   },
   {
     id: 'CL-005',
@@ -972,7 +972,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/calendars.jpg'],
+    images: ['/images/products/photo-frame-calendars.jpg'],
   },
   {
     id: 'CL-006',
@@ -988,7 +988,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/calendars.jpg'],
+    images: ['/images/products/magnetic-calendars.jpg'],
   },
   // 餐牌印刷 (5 SKU)
   {
@@ -1005,7 +1005,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/menus.jpg'],
+    images: ['/images/products/pvc-menus.jpg'],
   },
   {
     id: 'MN-002',
@@ -1021,7 +1021,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/menus.jpg'],
+    images: ['/images/products/laminated-menus.jpg'],
   },
   {
     id: 'MN-003',
@@ -1037,7 +1037,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/menus.jpg'],
+    images: ['/images/products/hardcover-menus.jpg'],
   },
   {
     id: 'MN-004',
@@ -1053,7 +1053,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/menus.jpg'],
+    images: ['/images/products/drink-menus.jpg'],
   },
   {
     id: 'MN-005',
@@ -1069,7 +1069,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/menus.jpg'],
+    images: ['/images/products/disposable-menus.jpg'],
   },
   // 噴繪廣告 (5 SKU)
   {
@@ -1086,7 +1086,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/banners.jpg'],
+    images: ['/images/products/outdoor-vinyl-banners.jpg'],
   },
   {
     id: 'BN-002',
@@ -1102,7 +1102,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/banners.jpg'],
+    images: ['/images/products/roll-up-banners.jpg'],
   },
   {
     id: 'BN-003',
@@ -1118,7 +1118,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/banners.jpg'],
+    images: ['/images/products/adhesive-banners.jpg'],
   },
   {
     id: 'BN-004',
@@ -1134,7 +1134,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/banners.jpg'],
+    images: ['/images/products/vehicle-wraps.jpg'],
   },
   {
     id: 'BN-005',
@@ -1150,7 +1150,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/banners.jpg'],
+    images: ['/images/products/mesh-banners.jpg'],
   },
   // 書籍印刷 (5 SKU)
   {
@@ -1167,7 +1167,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/books.jpg'],
+    images: ['/images/products/catalog-printing.jpg'],
   },
   {
     id: 'BK-002',
@@ -1183,7 +1183,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/books.jpg'],
+    images: ['/images/products/saddle-stitch-booklets.jpg'],
   },
   {
     id: 'BK-003',
@@ -1199,7 +1199,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/books.jpg'],
+    images: ['/images/products/perfect-bound-books.jpg'],
   },
   {
     id: 'BK-004',
@@ -1215,7 +1215,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/books.jpg'],
+    images: ['/images/products/hardcover-books.jpg'],
   },
   {
     id: 'BK-005',
@@ -1231,7 +1231,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/books.jpg'],
+    images: ['/images/products/spiral-notebooks.jpg'],
   },
   // 信封印刷 (4 SKU)
   {
@@ -1248,7 +1248,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/envelopes.jpg'],
+    images: ['/images/products/business-envelopes.jpg'],
   },
   {
     id: 'EV-002',
@@ -1264,7 +1264,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/envelopes.jpg'],
+    images: ['/images/products/colored-envelopes.jpg'],
   },
   {
     id: 'EV-003',
@@ -1280,7 +1280,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/envelopes.jpg'],
+    images: ['/images/products/large-envelopes.jpg'],
   },
   {
     id: 'EV-004',
@@ -1296,7 +1296,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/envelopes.jpg'],
+    images: ['/images/products/pearl-envelopes.jpg'],
   },
   // 校園教育印刷 (4 SKU)
   {
@@ -1313,7 +1313,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/educational.jpg'],
+    images: ['/images/products/exercise-books.jpg'],
   },
   {
     id: 'ED-002',
@@ -1329,7 +1329,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/educational.jpg'],
+    images: ['/images/products/certificates.jpg'],
   },
   {
     id: 'ED-003',
@@ -1345,7 +1345,7 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/educational.jpg'],
+    images: ['/images/products/school-flyers.jpg'],
   },
   {
     id: 'ED-004',
@@ -1361,7 +1361,7 @@ export const products: Product[] = [
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/educational.jpg'],
+    images: ['/images/products/textbooks.jpg'],
   },
 ];
 
