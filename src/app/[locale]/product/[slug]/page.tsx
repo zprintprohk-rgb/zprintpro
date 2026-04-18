@@ -18,6 +18,7 @@ import {
   generateProductJsonLd,
   generateBreadcrumbJsonLd,
   generateOrganizationJsonLd,
+  generateFaqJsonLd,
   Locale 
 } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
@@ -25,6 +26,9 @@ import { ProductGallery } from '@/components/ProductGallery';
 import { QuoteCalculator } from '@/components/quote/QuoteCalculator';
 import { ProductTabs } from '@/components/ProductTabs';
 import { RelatedProducts } from '@/components/RelatedProducts';
+import { ProductFaq } from '@/components/ProductFaq';
+import { ProductHowTo } from '@/components/ProductHowTo';
+import { getProductSeo } from '@/data/product-seo';
 
 // 生成静态参数 - 79产品 × 3语言 = 237个路径
 export function generateStaticParams() {
@@ -87,10 +91,42 @@ export default function ProductPage({
     { name: productTitle, url: `/${locale}/product/${slug}` },
   ];
   
+  // 核心产品 SEO 数据
+  const productSeo = getProductSeo(slug);
+  
   // JSON-LD结构化数据
   const productJsonLd = generateProductJsonLd(product.name, product.description, product.images[0] || '', product.slug, product.basePrice);
   const organizationJsonLd = generateOrganizationJsonLd();
   const breadcrumbJsonLd = generateBreadcrumbJsonLd(breadcrumbItems);
+  
+  // FAQPage Schema (仅核心产品有)
+  const faqItems = productSeo?.faq[locale];
+  const faqJsonLd = faqItems && faqItems.length > 0 
+    ? generateFaqJsonLd(faqItems.map(item => ({ question: item.q, answer: item.a }))) 
+    : null;
+  
+  // HowTo Schema (仅核心产品有)
+  const howToSteps = productSeo?.processSteps[locale];
+  const howToJsonLd = howToSteps && howToSteps.length > 0
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'HowTo',
+        name: locale === 'zh-hk' ? `${product.name} 印刷流程` : locale === 'en' ? `How to Print ${product.nameEn}` : `${product.nameJa} の製作方法`,
+        step: howToSteps.map((step, idx) => ({
+          '@type': 'HowToStep',
+          position: idx + 1,
+          name: step.name,
+          text: step.text,
+        })),
+      }
+    : null;
+  
+  // 长描述
+  const longDesc = productSeo?.longDescription[locale];
+  
+  // 相关博客链接
+  const relatedBlog = productSeo?.relatedBlogSlug;
+  const localePrefix = locale === 'zh-hk' ? '' : `/${locale}`;
   
   // 翻译文本
   const translations = {
@@ -167,6 +203,8 @@ export default function ProductPage({
       <JsonLd data={productJsonLd} />
       <JsonLd data={organizationJsonLd} />
       <JsonLd data={breadcrumbJsonLd} />
+      {faqJsonLd && <JsonLd data={faqJsonLd} />}
+      {howToJsonLd && <JsonLd data={howToJsonLd} />}
       
       <main className="min-h-screen bg-gray-50">
         {/* 面包屑导航 */}
@@ -197,7 +235,7 @@ export default function ProductPage({
             {/* 右侧：产品信息和报价计算器 */}
             <div>
               <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                {productTitle}
+                {productSeo?.h1Suffix[locale] || productTitle}
               </h1>
               
               <p className="text-gray-600 mb-6 leading-relaxed">
@@ -249,6 +287,41 @@ export default function ProductPage({
           <div className="mt-12">
             <ProductTabs product={product} locale={locale} />
           </div>
+          
+          {/* 长描述 SEO 内容 */}
+          {longDesc && (
+            <section className="mt-12 bg-white rounded-xl border border-gray-100 p-8">
+              <h2 className="text-2xl font-bold text-[#333333] mb-4">
+                {locale === 'zh-hk' ? '產品詳情' : locale === 'en' ? 'Product Details' : '製品詳細'}
+              </h2>
+              <p className="text-gray-600 leading-relaxed whitespace-pre-line">{longDesc}</p>
+              
+              {/* 相关博客链接 */}
+              {relatedBlog && (
+                <div className="mt-6 pt-6 border-t border-gray-100">
+                  <p className="text-sm text-gray-500 mb-2">
+                    {locale === 'zh-hk' ? '延伸閱讀：' : locale === 'en' ? 'Related Reading:' : '関連記事：'}
+                  </p>
+                  <a
+                    href={`${localePrefix}/blog/${relatedBlog}/`}
+                    className="inline-flex items-center text-[#2873F5] hover:underline font-medium"
+                  >
+                    {locale === 'zh-hk' ? '了解更多關於此產品的知識 →' : locale === 'en' ? 'Learn more about this product →' : 'この製品について詳しく知る →'}
+                  </a>
+                </div>
+              )}
+            </section>
+          )}
+          
+          {/* FAQ Accordion */}
+          {faqItems && faqItems.length > 0 && (
+            <ProductFaq items={faqItems} locale={locale} />
+          )}
+          
+          {/* HowTo 流程 */}
+          {howToSteps && howToSteps.length > 0 && (
+            <ProductHowTo steps={howToSteps} locale={locale} productName={productTitle} />
+          )}
           
           {/* 相关产品 */}
           <div className="mt-12">

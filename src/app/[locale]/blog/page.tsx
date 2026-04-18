@@ -29,6 +29,10 @@ const translations = {
 
 const articles = {
   'zh-hk': [
+    { slug: 'hong-kong-printing-guide', title: '香港印刷公司選擇完全指南：觀塘、九龍、新界哪裡最可靠？', date: '2024-05-20', category: '香港本地' },
+    { slug: 'design-file-specs', title: '印刷文件設計規範：出血位、分辨率、色彩模式一次搞懂', date: '2024-05-15', category: '設計技巧' },
+    { slug: 'brand-materials-checklist', title: '企業品牌物料清單：從名片到展架的全套印刷方案', date: '2024-05-10', category: '品牌建設' },
+    { slug: 'mtr-advertising-specs', title: '港鐵廣告印刷規格全解析：港島線、觀塘線、荃灣線投放指南', date: '2024-05-05', category: '香港本地' },
     { slug: 'sticker-guide', title: '香港貼紙印刷完全指南：材質、工藝與應用場景详解', date: '2024-04-15', category: '貼紙知識' },
     { slug: 'business-card-design', title: '名片設計的10個黃金法則：打造令人難忘的專業形象', date: '2024-04-10', category: '名片知識' },
     { slug: 'packaging-trends', title: '2024包裝盒設計趨勢解析：讓產品在貨架上脫穎而出', date: '2024-04-05', category: '包裝知識' },
@@ -37,6 +41,10 @@ const articles = {
     { slug: 'eco-printing', title: '環保印刷：企業ESG與可持續包裝的未來', date: '2024-03-15', category: '行業趨勢' },
   ],
   en: [
+    { slug: 'hong-kong-printing-guide', title: 'Hong Kong Printing Company Guide: Kwun Tong, Kowloon & NT', date: '2024-05-20', category: 'Hong Kong Local' },
+    { slug: 'design-file-specs', title: 'Print File Design Specifications: Bleed, Resolution & Color Modes', date: '2024-05-15', category: 'Design Tips' },
+    { slug: 'brand-materials-checklist', title: 'Corporate Brand Materials Checklist: From Cards to Displays', date: '2024-05-10', category: 'Branding' },
+    { slug: 'mtr-advertising-specs', title: 'MTR Advertising Print Specs: Island, Kwun Tong & Tsuen Wan Lines', date: '2024-05-05', category: 'Hong Kong Local' },
     { slug: 'sticker-guide', title: 'Complete Sticker Printing Guide: Materials, Finishes & Applications', date: '2024-04-15', category: 'Sticker Guide' },
     { slug: 'business-card-design', title: '10 Golden Rules for Business Card Design', date: '2024-04-10', category: 'Card Guide' },
     { slug: 'packaging-trends', title: '2024 Packaging Design Trends Analysis', date: '2024-04-05', category: 'Packaging Guide' },
@@ -45,6 +53,10 @@ const articles = {
     { slug: 'eco-printing', title: 'Eco-Friendly Printing: The Future of Sustainable Packaging', date: '2024-03-15', category: 'Industry Trends' },
   ],
   ja: [
+    { slug: 'hong-kong-printing-guide', title: '香港印刷会社選び完全ガイド：観塘、九龍、新界', date: '2024-05-20', category: '香港ローカル' },
+    { slug: 'design-file-specs', title: '印刷用デザインファイル仕様：裁ち落とし、解像度、カラーモード', date: '2024-05-15', category: 'デザインチップ' },
+    { slug: 'brand-materials-checklist', title: '企業ブランド物料チェックリスト：名刺から展示物まで', date: '2024-05-10', category: 'ブランディング' },
+    { slug: 'mtr-advertising-specs', title: 'MTR広告印刷仕様：港島線、観塘線、荃湾線', date: '2024-05-05', category: '香港ローカル' },
     { slug: 'sticker-guide', title: 'ステッカー印刷完全ガイド：材質、加工と応用場面', date: '2024-04-15', category: 'ステッカー知識' },
     { slug: 'business-card-design', title: '名刺デザインの10の黄金法則', date: '2024-04-10', category: '名刺知識' },
     { slug: 'packaging-trends', title: '2024年パッケージデザイントレンド解析', date: '2024-04-05', category: '包装知識' },

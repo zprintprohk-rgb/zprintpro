@@ -62,6 +62,7 @@ const products = [
 
 // 博客文章
 const blogPosts = [
+  'hong-kong-printing-guide', 'design-file-specs', 'brand-materials-checklist', 'mtr-advertising-specs',
   'sticker-guide', 'business-card-design', 'packaging-trends', 'cmyk-guide', 'paper-materials', 'eco-printing',
 ];
 

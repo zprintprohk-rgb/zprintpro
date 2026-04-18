@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
-import { Locale, siteConfig } from '@/lib/seo';
+import { Locale, siteConfig, generateFaqJsonLd } from '@/lib/seo';
+import { JsonLd } from '@/components/JsonLd';
 
 interface FaqPageProps {
   params: { locale: string };
@@ -80,8 +81,13 @@ export default function FaqPage({ params }: FaqPageProps) {
   const t = translations[locale];
   const items = faqs[locale] || faqs['zh-hk'];
 
+  const faqJsonLd = generateFaqJsonLd(
+    items.map((item) => ({ question: item.q, answer: item.a }))
+  );
+
   return (
     <main className="min-h-screen bg-gray-50 py-12">
+      <JsonLd data={faqJsonLd} />
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h1 className="text-3xl md:text-4xl font-bold text-[#333333] mb-3">{t.h1}</h1>

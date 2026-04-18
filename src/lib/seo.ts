@@ -12,8 +12,8 @@ export const siteConfig = {
   name: '智印港 ZPrintPro',
   url: 'https://zprintpro.com',
   logo: 'https://zprintpro.com/logo.png',
-  phone: '+852 2154 1318',
-  email: 'info@zprintpro.com',
+  phone: '+86 181 2638 0255',
+  email: 'zprintpro@outlook.com',
   address: {
     street: '16 Shing Yip Street',
     city: 'Kwun Tong',
@@ -155,8 +155,10 @@ export function generateProductMetadata(
   const desc = descriptions[locale];
   const lang = locale === 'zh-hk' ? 'zh-HK' : locale;
   
+  const suffix = locale === 'zh-hk' ? '專業印刷' : locale === 'en' ? 'Professional Printing' : 'プロ印刷';
+  
   return {
-    title: `${name} | 專業印刷 | ${siteConfig.name}`,
+    title: `${name} | ${suffix} | ${siteConfig.name}`,
     description: desc,
     alternates: {
       canonical: `${siteConfig.url}/${locale === 'zh-hk' ? '' : locale + '/'}product/${slug}/`,

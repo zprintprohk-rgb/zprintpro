@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { Locale, siteConfig } from '@/lib/seo';
+import { JsonLd } from '@/components/JsonLd';
 
 interface BlogPostPageProps {
   params: { locale: string; slug: string };
@@ -235,6 +236,30 @@ const posts: Record<string, Record<string, { title: string; description: string;
 
 <p>想為您的品牌加入環保元素？<a href="https://wa.me/8618126380255" target="_blank">聯繫智印港</a>獲取綠色印刷方案。</p>`,
     },
+    'hong-kong-printing-guide': {
+      title: '香港印刷公司選擇完全指南：觀塘、九龍、新界哪裡最可靠？',
+      description: '深入比較香港觀塘、九龍、新界的印刷公司，從價格、品質、交貨速度到客戶評價，幫您找到最適合的印刷合作夥伴。',
+      date: '2024-05-20', category: '香港本地',
+      content: `<p>香港作為國際商業中心，每天都有成千上萬的企業需要各類印刷服務。無論是<a href="/zh-hk/product/premium-business-cards/">名片印刷</a>、<a href="/zh-hk/product/a4-flyers/">宣傳單張</a>，還是<a href="/zh-hk/product/gift-boxes/">包裝盒定制</a>，選擇一家可靠的印刷公司至關重要。本文將為您詳細分析香港各區印刷公司的特點，特別是觀塘這個印刷業重鎮。</p><h3>一、香港各區印刷公司分佈概況</h3><p>香港的印刷業主要集中在以下幾個區域：</p><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>觀塘（Kwun Tong）</strong>：傳統工業區，印刷廠密度最高，價格競爭激烈，適合大批量訂單</li><li><strong>九龍灣（Kowloon Bay）</strong>：新興商業區，結合設計與印刷，適合品牌定制需求</li><li><strong>荃灣（Tsuen Wan）</strong>：新界西的中心，租金較低，性價比高</li><li><strong>上環/中環</strong>：高端商業區，主打精品印刷，價格較高</li></ul><h3>二、如何評估印刷公司的可靠性</h3><ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>設備水準</strong>：是否使用海德堡、小森等國際品牌印刷機？這直接影響色彩還原度</li><li><strong>色彩管理</strong>：是否有專業的色彩校準流程？能否提供數碼打樣？</li><li><strong>交貨時間</strong>：標準交貨是3-5天，急件能否做到24小時？</li><li><strong>客戶案例</strong>：是否服務過知名企業？有無實體樣品可以參考？</li><li><strong>售後服務</strong>：印刷出現問題時的處理機制如何？</li></ol><h3>三、觀塘印刷公司的優勢</h3><p>觀塘作為香港傳統的工業重鎮，擁有全港最密集的印刷產業鏈。這裡的印刷公司普遍具有以下優勢：</p><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>價格競爭力</strong>：由於廠家集中，成本控制較好，同品質下價格通常比中環便宜20-30%</li><li><strong>產能充足</strong>：大型印刷廠多，能夠承接萬級以上的大單</li><li><strong>交通便利</strong>：觀塘線直達，從觀塘站步行10分鐘即可到達大多數印刷廠</li><li><strong>配套完善</strong>：設計、印刷、後加工一條龍服務</li></ul><h3>四、智印港的差異化優勢</h3><p>智印港位於觀塘成業街，深耕香港印刷市場多年，我們的優勢包括：</p><ul class="list-disc pl-5 my-3 space-y-1"><li>採用德國海德堡印刷設備，確保色彩精準還原</li><li>支持24小時急件印刷，滿足香港快節奏商業需求</li><li>提供免費數碼打樣，大貨印刷前確認效果</li><li>滿HK$500免費送貨，覆蓋全港十八區</li><li>一站式服務：從設計、印刷到配送，全程無憂</li></ul><p>無論您在<a href="/zh-hk/product/premium-business-cards/">名片</a>、<a href="/zh-hk/product/a4-flyers/">傳單</a>、<a href="/zh-hk/product/kraft-paper-bags/">紙袋</a>還是<a href="/zh-hk/product/gift-boxes/">包裝盒</a>有任何印刷需求，歡迎<a href="https://wa.me/8618126380255" target="_blank">WhatsApp 聯繫智印港</a>獲取免費報價和專業建議。</p>`,
+    },
+    'design-file-specs': {
+      title: '印刷文件設計規範：出血位、分辨率、色彩模式一次搞懂',
+      description: '從出血位設置到色彩模式轉換，這篇指南將幫助設計師和企業避免最常見的印刷文件錯誤，確保印刷成品完美無瑕。',
+      date: '2024-05-15', category: '設計技巧',
+      content: `<p>很多設計師和企業市場部在準備印刷文件時都會遇到各種問題：成品邊緣出現白邊、圖片模糊不清、顏色與屏幕顯示差異巨大……這些問題大多源於對印刷文件規範的不了解。本文將詳細講解出血位、分辨率和色彩模式這三個核心概念。</p><h3>一、什麼是出血位（Bleed）？</h3><p>出血位是指在設計稿中超出成品裁切線的部分。由於印刷後需要裁切，如果設計剛好到邊緣，任何微小的裁切誤差都會導致露出白邊。因此，我們通常需要在成品尺寸外預留<strong>3mm</strong>的出血位。</p><h4>常見產品的出血位設置</h4><table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">產品</th><th class="border p-2 text-left">成品尺寸</th><th class="border p-2 text-left">設計尺寸（含出血）</th></tr></thead><tbody><tr><td class="border p-2">標準名片</td><td class="border p-2">90 × 54mm</td><td class="border p-2">96 × 60mm</td></tr><tr><td class="border p-2">A4 傳單</td><td class="border p-2">210 × 297mm</td><td class="border p-2">216 × 303mm</td></tr><tr><td class="border p-2">A3 海報</td><td class="border p-2">297 × 420mm</td><td class="border p-2">303 × 426mm</td></tr></tbody></table><h3>二、分辨率：為什麼 300dpi 是標準？</h3><p>分辨率決定了印刷品的清晰度。屏幕上顯示通常只需要72dpi，但印刷需要<strong>至少300dpi</strong>才能保證圖片清晰銳利。</p><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>72dpi</strong>：僅適用於網頁、社交媒體</li><li><strong>150dpi</strong>：大型海報、遠距離觀看的印刷品可以接受的最低標準</li><li><strong>300dpi</strong>：名片、書刊、宣傳單等近距離觀看印刷品的標準</li></ul><h3>三、CMYK vs RGB</h3><p>屏幕使用 RGB 色彩模式（紅綠藍光疊加），而印刷使用 CMYK 色彩模式（青品黃黑油墨疊加）。RGB 的色域比 CMYK 廣，直接印刷 RGB 文件會導致顏色變暗、鮮豔度下降。</p><h3>四、文件格式建議</h3><ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>PDF/X-1a</strong>：最佳選擇，字體嵌入、色彩穩定</li><li><strong>AI（Adobe Illustrator）</strong>：矢量文件，適合 Logo 和圖形</li><li><strong>PSD（Photoshop）</strong>：點陣文件，適合照片類設計</li></ol><p>不確定您的文件是否符合印刷標準？<a href="https://wa.me/8618126380255" target="_blank">聯繫智印港</a>，我們提供免費文件檢查服務。</p>`,
+    },
+    'brand-materials-checklist': {
+      title: '企業品牌物料清單：從名片到展架的全套印刷方案',
+      description: '無論是初創企業還是品牌升級，這份完整的品牌物料印刷清單將幫助您系統化地規劃所有印刷需求，確保品牌形象的一致性。',
+      date: '2024-05-10', category: '品牌建設',
+      content: `<p>品牌形象的建立需要系統化的物料支持。從一張<a href="/zh-hk/product/premium-business-cards/">名片</a>到一個<a href="/zh-hk/product/gift-boxes/">產品包裝盒</a>，每一個觸點都是品牌與客戶溝通的機會。本文將為您提供一份完整的企業品牌物料清單。</p><h3>一、基礎品牌識別物料</h3><ul class="list-disc pl-5 my-3 space-y-1"><li><a href="/zh-hk/product/premium-business-cards/">名片</a>：員工標配，建議準備雙面設計</li><li><a href="/zh-hk/product/envelopes/">信封</a>：正式商務溝通的必備品</li><li>信紙：合同、報價單等正式文件使用</li><li>文件夾：客戶會議、投標時使用，提升專業形象</li></ul><h3>二、市場推廣物料</h3><ul class="list-disc pl-5 my-3 space-y-1"><li><a href="/zh-hk/product/a4-flyers/">宣傳單張</a>：活動推廣、產品介紹</li><li><a href="/zh-hk/product/folded-leaflets/">摺頁/小冊子</a>：產品目錄、服務介紹</li><li><a href="/zh-hk/product/posters/">海報</a>：店內裝飾、活動宣傳</li><li><a href="/zh-hk/product/roll-up-banners/">易拉架</a>：展會、路演必備</li></ul><h3>三、產品包裝物料</h3><ul class="list-disc pl-5 my-3 space-y-1"><li><a href="/zh-hk/product/kraft-paper-bags/">紙袋</a>：零售購物袋，環保且有質感</li><li><a href="/zh-hk/product/gift-boxes/">禮品盒</a>：高端產品包裝，提升品牌檔次</li><li><a href="/zh-hk/product/mailer-boxes/">快遞盒</a>：電商發貨用</li></ul><h3>四、品牌物料規劃建議</h3><ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>統一設計語言</strong>：所有物料使用相同的色彩、字體和圖形元素</li><li><strong>分階段製作</strong>：初創企業先完成基礎物料，再逐步擴展</li><li><strong>選擇可靠供應商</strong>：與一家能夠提供全套服務的印刷公司合作，確保品質一致性</li></ol><p>智印港提供一站式品牌物料印刷服務。<a href="https://wa.me/8618126380255" target="_blank">立即聯繫我們</a>獲取專屬品牌物料方案。</p>`,
+    },
+    'mtr-advertising-specs': {
+      title: '港鐵廣告印刷規格全解析：港島線、觀塘線、荃灣線投放指南',
+      description: '詳細解析港鐵各線路廣告位的印刷規格、尺寸要求和投放策略，助您在香港最繁忙的交通網絡中精準觸達目標客戶。',
+      date: '2024-05-05', category: '香港本地',
+      content: `<p>香港港鐵（MTR）每天服務超過500萬人次，是香港最繁忙的公共交通系統。對於希望在<a href="/zh-hk/product/posters/">海報</a>和展示物料上投放廣告的企業來說，港鐵廣告無疑是極具性價比的選擇。</p><h3>一、港鐵廣告的主要形式</h3><h4>站內廣告</h4><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>月台燈箱（12-sheet / 48-sheet）</strong>：最常見的形式，位於月台牆面</li><li><strong>車站大堂燈箱</strong>：位於付費區大堂，人流量大</li><li><strong>月台門貼（Platform Screen Door）</strong>：新型廣告位，視覺衝擊力極強</li><li><strong>立柱包裝（Pillar Wrap）</strong>：將車站立柱包裹成廣告位</li></ul><h4>車廂廣告</h4><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>車廂內海報</strong>：車門上方和車廂連接處的標準海報位</li><li><strong>全車身廣告（Train Wrap）</strong>：整列車的外觀廣告，曝光率最高</li></ul><h3>二、主要廣告位印刷規格</h3><table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">廣告類型</th><th class="border p-2 text-left">尺寸（寬×高）</th><th class="border p-2 text-left">解析度要求</th></tr></thead><tbody><tr><td class="border p-2">12-sheet 燈箱</td><td class="border p-2">3000 × 1500mm</td><td class="border p-2">100dpi @ 實際尺寸</td></tr><tr><td class="border p-2">48-sheet 燈箱</td><td class="border p-2">6096 × 3048mm</td><td class="border p-2">72-100dpi</td></tr><tr><td class="border p-2">車廂內海報</td><td class="border p-2">1189 × 841mm (A0)</td><td class="border p-2">150dpi</td></tr></tbody></table><h3>三、各線路投放策略建議</h3><h4>港島線（Island Line）</h4><p>途經中環、金鐘、灣仔、銅鑼灣等核心商業區，受眾以白領、金融人士和遊客為主。</p><h4>觀塘線（Kwun Tong Line）</h4><p>連接觀塘、九龍灣等工業和商業混合區，以及旺角、油麻地等人流密集區。</p><h4>荃灣線（Tsuen Wan Line）</h4><p>貫穿新界和九龍，覆蓋住宅區和商業區。適合投放家庭消費品、教育和房地產廣告。</p><h3>四、印刷注意事項</h3><ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>色彩模式</strong>：必須使用 CMYK，RGB 文件會被拒收</li><li><strong>字體嵌入</strong>：PDF 文件必須嵌入所有字體</li><li><strong>材質</strong>：燈箱廣告使用背噴燈片（Backlit Film），車廂海報使用 PP 合成紙</li></ol><p>智印港提供港鐵廣告物料的專業印刷服務。<a href="https://wa.me/8618126380255" target="_blank">聯繫我們</a>獲取報價。</p>`,
+    },
   },
   en: {
     'sticker-guide': {
@@ -272,6 +297,30 @@ const posts: Record<string, Record<string, { title: string; description: string;
       description: 'Learn about eco-friendly printing materials.',
       date: '2024-03-15', category: 'Industry Trends',
       content: `<p>Sustainability has become a global trend. Discover eco-friendly printing options.</p><h3>Eco Materials</h3><p>Recycled paper, soy-based inks, and biodegradable options available.</p>`,
+    },
+    'hong-kong-printing-guide': {
+      title: 'Hong Kong Printing Company Guide: Kwun Tong, Kowloon & NT',
+      description: 'Compare printing companies across Hong Kong from pricing to quality to find your ideal partner.',
+      date: '2024-05-20', category: 'Hong Kong Local',
+      content: `<p>Hong Kong is a global business hub with thousands of companies needing printing services daily. This guide compares printing companies across Kwun Tong, Kowloon, and the New Territories.</p><h3>Hong Kong Printing Districts</h3><p>Kwun Tong remains the traditional industrial heartland with the highest concentration of printing factories. Kowloon Bay offers design-printing integration, while Tsuen Wan provides cost-effective solutions.</p><h3>How to Evaluate a Printer</h3><ul class="list-disc pl-5 my-3 space-y-1"><li>Equipment quality (Heidelberg, Komori)</li><li>Color management capabilities</li><li>Delivery speed (standard 3-5 days, rush 24h)</li><li>Portfolio and client references</li></ul><p><a href="https://wa.me/8618126380255" target="_blank">Contact ZprintPro</a> for a free quote.</p>`,
+    },
+    'design-file-specs': {
+      title: 'Print File Design Specifications: Bleed, Resolution & Color Modes',
+      description: 'Master bleed settings, resolution requirements, and color mode conversions for perfect prints.',
+      date: '2024-05-15', category: 'Design Tips',
+      content: `<p>Common print file mistakes include white edges, blurry images, and color shifts. This guide covers bleed, resolution, and color modes.</p><h3>Bleed Settings</h3><p>Always add 3mm bleed beyond the final trim size to avoid white edges after cutting.</p><h3>Resolution Standards</h3><p>300dpi is the standard for business cards and brochures. Large posters can use 150dpi.</p><h3>CMYK vs RGB</h3><p>Always convert to CMYK before submitting. RGB files will produce darker, less vibrant prints.</p><p><a href="https://wa.me/8618126380255" target="_blank">Contact us</a> for free file checking.</p>`,
+    },
+    'brand-materials-checklist': {
+      title: 'Corporate Brand Materials Checklist: From Cards to Displays',
+      description: 'A complete checklist of printed brand materials for startups and brand refreshes.',
+      date: '2024-05-10', category: 'Branding',
+      content: `<p>Building a brand requires systematic material support. From <a href="/en/product/premium-business-cards/">business cards</a> to <a href="/en/product/gift-boxes/">packaging</a>, every touchpoint matters.</p><h3>Essential Brand Items</h3><ul class="list-disc pl-5 my-3 space-y-1"><li>Business cards, envelopes, letterheads</li><li>Flyers, brochures, posters, banners</li><li>Packaging: bags, boxes, labels</li></ul><h3>Planning Tips</h3><ol class="list-decimal pl-5 my-3 space-y-1"><li>Maintain consistent design language</li><li>Phase your production (essentials first)</li><li>Choose a full-service printer for consistency</li></ol><p><a href="https://wa.me/8618126380255" target="_blank">Contact ZprintPro</a> for a custom brand package.</p>`,
+    },
+    'mtr-advertising-specs': {
+      title: 'MTR Advertising Print Specs: Island, Kwun Tong & Tsuen Wan Lines',
+      description: 'Detailed specifications and strategies for MTR advertising across Hong Kong.',
+      date: '2024-05-05', category: 'Hong Kong Local',
+      content: `<p>Hong Kong's MTR serves over 5 million passengers daily. This guide covers advertising specs and placement strategies.</p><h3>Advertising Formats</h3><ul class="list-disc pl-5 my-3 space-y-1"><li>Platform lightboxes (12-sheet / 48-sheet)</li><li>Concourse displays</li><li>Platform screen door ads</li><li>Train interior posters</li></ul><h3>Key Specifications</h3><table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Type</th><th class="border p-2 text-left">Size</th><th class="border p-2 text-left">Resolution</th></tr></thead><tbody><tr><td class="border p-2">12-sheet</td><td class="border p-2">3000 × 1500mm</td><td class="border p-2">100dpi</td></tr><tr><td class="border p-2">Train poster</td><td class="border p-2">1189 × 841mm</td><td class="border p-2">150dpi</td></tr></tbody></table><h3>Line Strategies</h3><p>Island Line targets finance and luxury. Kwun Tong Line reaches SMEs and retail. Tsuen Wan Line covers residential and family segments.</p><p><a href="https://wa.me/8618126380255" target="_blank">Contact us</a> for MTR advertising material printing.</p>`,
     },
   },
   ja: {
@@ -311,10 +360,34 @@ const posts: Record<string, Record<string, { title: string; description: string;
       date: '2024-03-15', category: '業界トレンド',
       content: `<p>持続可能性は世界的なトレンドになっています。エコ印刷オプションをご紹介。</p>`,
     },
+    'hong-kong-printing-guide': {
+      title: '香港印刷会社選び完全ガイド',
+      description: '香港の観塘、九龍、新界の印刷会社を比較し、最適なパートナーを選びましょう。',
+      date: '2024-05-20', category: '香港ローカル',
+      content: `<p>香港には数多くの印刷会社がありますが、信頼できるパートナーを見つけるのは容易ではありません。</p>`,
+    },
+    'design-file-specs': {
+      title: '印刷用デザインファイル仕様',
+      description: '裁ち落とし、解像度、カラーモードについて学びましょう。',
+      date: '2024-05-15', category: 'デザインチップ',
+      content: `<p>印刷用ファイルを正しく作成することは、高品質な印刷を確保するために不可欠です。</p>`,
+    },
+    'brand-materials-checklist': {
+      title: '企業ブランド物料チェックリスト',
+      description: '名刺から展示物まで、ブランド構築に必要な印刷物料を確認しましょう。',
+      date: '2024-05-10', category: 'ブランディング',
+      content: `<p>一貫性のあるブランド物料は、企業のプロフェッショナリズムを示します。</p>`,
+    },
+    'mtr-advertising-specs': {
+      title: 'MTR広告印刷仕様',
+      description: '港島線、観塘線、荃湾線の広告印刷規格について解説します。',
+      date: '2024-05-05', category: '香港ローカル',
+      content: `<p>香港のMTRは毎日数百万人の乗客を運んでおり、効果的な広告媒体です。</p>`,
+    },
   },
 };
 
-const articleSlugs = ['sticker-guide', 'business-card-design', 'packaging-trends', 'cmyk-guide', 'paper-materials', 'eco-printing'];
+const articleSlugs = ['hong-kong-printing-guide', 'design-file-specs', 'brand-materials-checklist', 'mtr-advertising-specs', 'sticker-guide', 'business-card-design', 'packaging-trends', 'cmyk-guide', 'paper-materials', 'eco-printing'];
 
 export async function generateStaticParams() {
   const params: { locale: string; slug: string }[] = [];
@@ -353,8 +426,33 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
     );
   }
 
+  const articleJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.description,
+    image: `${siteConfig.url}/images/articles/${params.slug}.jpg`,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: {
+      '@type': 'Organization',
+      name: siteConfig.name,
+      url: siteConfig.url,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: siteConfig.name,
+      logo: { '@type': 'ImageObject', url: siteConfig.logo },
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `${siteConfig.url}/${locale === 'zh-hk' ? '' : locale + '/'}blog/${params.slug}/`,
+    },
+  };
+
   return (
     <main className="min-h-screen bg-gray-50 py-12">
+      <JsonLd data={articleJsonLd} />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <Link href={`${localePrefix}/blog/`} className="text-[#2873F5] hover:underline text-sm mb-6 inline-block">
           ← Back to Blog
@@ -362,7 +460,13 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
         <article className="bg-white rounded-xl border border-gray-100 p-8">
           <span className="text-xs font-medium text-[#F87314] bg-orange-50 px-2 py-1 rounded">{post.category}</span>
           <h1 className="mt-3 text-2xl md:text-3xl font-bold text-[#333333]">{post.title}</h1>
-          <p className="mt-2 text-sm text-gray-400">{post.date}</p>
+          <div className="mt-2 flex items-center gap-3 text-sm text-gray-400">
+            <span>{post.date}</span>
+            <span>·</span>
+            <span className="text-[#2873F5]">
+              {locale === 'zh-hk' ? '作者：智印港印刷專家' : locale === 'en' ? 'By ZprintPro Printing Experts' : '執筆：ZprintPro印刷専門家'}
+            </span>
+          </div>
           <div
             className="mt-6 prose prose-blue max-w-none text-gray-600 leading-relaxed"
             dangerouslySetInnerHTML={{ __html: post.content }}

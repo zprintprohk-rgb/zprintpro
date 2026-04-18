@@ -222,18 +222,18 @@ export function Footer({ locale }: FooterProps) {
             <div className="flex items-center gap-4">
               <span className="text-gray-400 text-sm">{t.followUs}</span>
               <div className="flex gap-3">
-                <a href="#" className="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#2873F5] transition-colors">
+                <span className="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center opacity-50 cursor-not-allowed" title="Coming soon">
                   <Facebook className="w-4 h-4" />
-                </a>
-                <a href="#" className="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#2873F5] transition-colors">
+                </span>
+                <span className="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center opacity-50 cursor-not-allowed" title="Coming soon">
                   <Instagram className="w-4 h-4" />
-                </a>
-                <a href="#" className="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#2873F5] transition-colors">
+                </span>
+                <span className="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center opacity-50 cursor-not-allowed" title="Coming soon">
                   <Linkedin className="w-4 h-4" />
-                </a>
-                <a href="#" className="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center hover:bg-[#2873F5] transition-colors">
+                </span>
+                <span className="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center opacity-50 cursor-not-allowed" title="Coming soon">
                   <Youtube className="w-4 h-4" />
-                </a>
+                </span>
               </div>
             </div>
             <p className="text-gray-500 text-sm">{t.copyright}</p>
