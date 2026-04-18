@@ -237,12 +237,12 @@ export function Header({ locale }: HeaderProps) {
   };
 
   const navLinkClass = (isActive: boolean) =>
-    `flex-1 h-full flex items-center justify-center text-[17px] font-medium transition-colors ${
+    `flex-1 h-full flex items-center justify-center text-[17px] font-semibold transition-colors ${
       isActive ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'
     }`;
 
   const catNavLinkClass = (catSlug: string) =>
-    `h-full flex items-center justify-center gap-1 text-[17px] font-medium transition-colors ${
+    `h-full flex items-center justify-center gap-1 text-[17px] font-semibold transition-colors ${
       pathname.includes(`/category/${catSlug}`) ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'
     }`;
 
@@ -320,36 +320,38 @@ export function Header({ locale }: HeaderProps) {
                   </Link>
                   {activeDropdown === catSlug && (
                     <div className="absolute top-full left-1/2 bg-white shadow-2xl rounded-b-lg overflow-hidden z-50 flex" style={{ transform: dropdownOffsets[catSlug], width: 950, minHeight: 320 }}>
-                      <div className="w-[150px] py-3 flex flex-col">
-                        <div className="px-4 pb-2 flex items-center gap-2">
+                      {/* Left Column */}
+                      <div className="w-[150px] py-4 flex flex-col">
+                        <div className="px-4 pt-0 pb-3 flex items-center gap-2 border-b border-dotted border-gray-200">
                           <span className="w-1 h-4 bg-[#2873F5] rounded-full" />
                           <span className="text-sm font-bold text-gray-700">{locale === 'zh-hk' ? '產品分類' : locale === 'en' ? 'Categories' : 'カテゴリー'}</span>
                         </div>
-                        <div className="flex-1">
+                        <div className="flex-1 flex flex-col justify-around px-4 py-3">
                           {categorySubItems[catSlug]?.map((subSlug) => (
-                            <Link key={subSlug} href={`${localePrefix}/product/${subSlug}/`} className="block px-4 py-1.5 text-xs text-gray-400 hover:text-[#2873F5] hover:bg-gray-50 transition-colors">{getSubItemName(subSlug)}</Link>
+                            <Link key={subSlug} href={`${localePrefix}/product/${subSlug}/`} className="block text-xs font-normal text-gray-300 hover:text-[#2873F5] transition-colors py-1">{getSubItemName(subSlug)}</Link>
                           ))}
                         </div>
-                        <div className="border-t border-dotted border-gray-200 mt-2 pt-2 mx-4">
-                          <Link href={`${localePrefix}/category/${catSlug}/`} className="block py-1 text-xs font-medium text-[#2873F5] hover:bg-gray-50 transition-colors">{locale === 'zh-hk' ? '查看全部 →' : locale === 'en' ? 'View All →' : 'すべて見る →'}</Link>
+                        <div className="border-t border-dotted border-gray-200 pt-3 pb-0 mx-4">
+                          <Link href={`${localePrefix}/category/${catSlug}/`} className="block text-xs font-medium text-[#2873F5] hover:bg-gray-50 transition-colors">{locale === 'zh-hk' ? '查看全部 →' : locale === 'en' ? 'View All →' : 'すべて見る →'}</Link>
                         </div>
                       </div>
-                      <div className="flex-1 bg-gray-50 p-4 border-l border-gray-100">
-                        <div className="pb-3 flex items-center gap-2">
+                      {/* Right Column */}
+                      <div className="flex-1 bg-gray-50 px-4 pb-4 border-l border-gray-100 flex flex-col">
+                        <div className="pt-4 pb-3 flex items-center gap-2">
                           <span className="w-1 h-4 bg-[#F87314] rounded-full" />
                           <span className="text-sm font-bold text-gray-700">{locale === 'zh-hk' ? '熱門產品' : locale === 'en' ? 'Hot Products' : '人気製品'}</span>
                         </div>
-                        <div className="flex gap-4">
+                        <div className="flex-1 flex gap-4">
                           {categorySubItems[catSlug]?.slice(0, 3).map((subSlug, idx) => {
                             const tagText = idx < 2 ? (locale === 'zh-hk' ? '熱銷' : locale === 'en' ? 'Hot' : '人気') : (locale === 'zh-hk' ? '推薦' : locale === 'en' ? 'New' : '新着');
                             return (
                               <Link key={subSlug} href={`${localePrefix}/product/${subSlug}/`} className="block group flex-1">
-                                <div className="relative aspect-square overflow-hidden mb-2">
+                                <div className="relative aspect-square overflow-hidden rounded-t-lg mb-3">
                                   <Image src={featuredImages[subSlug] || '/images/hero-v21/gift-box.jpg'} alt={getSubItemName(subSlug)} fill className="object-cover group-hover:scale-105 transition-transform" unoptimized />
                                   <span className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded">{tagText}</span>
                                 </div>
-                                <p className="text-sm font-medium text-gray-700 text-center">{getSubItemName(subSlug)}</p>
-                                <p className="text-xs text-gray-400 text-center mt-0.5">{featuredDescs[locale]?.[subSlug] || ''}</p>
+                                <p className="text-base font-medium text-gray-700 text-center">{getSubItemName(subSlug)}</p>
+                                <p className="text-sm text-gray-400 text-center mt-1">{featuredDescs[locale]?.[subSlug] || ''}</p>
                               </Link>
                             );
                           })}
@@ -367,32 +369,32 @@ export function Header({ locale }: HeaderProps) {
                 </Link>
                 {activeDropdown === 'blog' && (
                   <div className="absolute top-full left-1/2 bg-white shadow-2xl rounded-b-lg overflow-hidden z-50 flex" style={{ transform: dropdownOffsets['blog'], width: 950, minHeight: 320 }}>
-                    <div className="w-[150px] py-3 flex flex-col">
-                      <div className="px-4 pb-2 flex items-center gap-2">
+                    <div className="w-[150px] py-4 flex flex-col">
+                      <div className="px-4 pt-0 pb-3 flex items-center gap-2 border-b border-dotted border-gray-200">
                         <span className="w-1 h-4 bg-[#2873F5] rounded-full" />
                         <span className="text-sm font-bold text-gray-700">{locale === 'zh-hk' ? '內容分類' : locale === 'en' ? 'Topics' : 'トピック'}</span>
                       </div>
-                      <div className="flex-1">
+                      <div className="flex-1 flex flex-col justify-around px-4 py-3">
                         {knowledgeSubItems[locale]?.map((item, idx) => (
-                          <Link key={idx} href={`${localePrefix}/blog/`} className="block px-4 py-1.5 text-xs text-gray-400 hover:text-[#2873F5] hover:bg-gray-50 transition-colors">{item}</Link>
+                          <Link key={idx} href={`${localePrefix}/blog/`} className="block text-xs font-normal text-gray-300 hover:text-[#2873F5] transition-colors py-1">{item}</Link>
                         ))}
                       </div>
-                      <div className="border-t border-gray-100 mt-1 pt-1">
-                        <Link href={`${localePrefix}/blog/`} className="block px-4 py-1.5 text-sm font-medium text-[#2873F5] hover:bg-gray-50 transition-colors">{locale === 'zh-hk' ? '查看全部' : locale === 'en' ? 'View All' : 'すべて見る'} →</Link>
+                      <div className="border-t border-dotted border-gray-200 pt-3 pb-0 mx-4">
+                        <Link href={`${localePrefix}/blog/`} className="block text-xs font-medium text-[#2873F5] hover:bg-gray-50 transition-colors">{locale === 'zh-hk' ? '查看全部 →' : locale === 'en' ? 'View All →' : 'すべて見る →'}</Link>
                       </div>
                     </div>
-                    <div className="flex-1 bg-gray-50 p-4 border-l border-gray-100">
-                      <div className="pb-3 flex items-center gap-2">
+                    <div className="flex-1 bg-gray-50 px-4 pb-4 border-l border-gray-100 flex flex-col">
+                      <div className="pt-4 pb-3 flex items-center gap-2">
                         <span className="w-1 h-4 bg-[#F87314] rounded-full" />
                         <span className="text-sm font-bold text-gray-700">{locale === 'zh-hk' ? '推薦文章' : locale === 'en' ? 'Featured' : 'おすすめ'}</span>
                       </div>
-                      <div className="flex gap-4">
+                      <div className="flex-1 flex gap-4">
                         {['flyer.jpg', 'sticker.jpg', 'gift-box.jpg'].map((img, idx) => (
                           <Link key={idx} href={`${localePrefix}/blog/`} className="block group flex-1">
-                            <div className="relative aspect-square overflow-hidden mb-2">
+                            <div className="relative aspect-square overflow-hidden rounded-t-lg mb-3">
                               <Image src={`/images/hero-v21/${img}`} alt="" fill className="object-cover group-hover:scale-105 transition-transform" unoptimized />
                             </div>
-                            <p className="text-sm font-medium text-gray-700 text-center">{knowledgeSubItems[locale]?.[idx] || ''}</p>
+                            <p className="text-base font-medium text-gray-700 text-center">{knowledgeSubItems[locale]?.[idx] || ''}</p>
                           </Link>
                         ))}
                       </div>
