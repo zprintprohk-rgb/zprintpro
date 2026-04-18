@@ -108,13 +108,13 @@ export function HotProducts({ locale }: HotProductsProps) {
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mb-5">
-          <div>
+          <div className="relative left-[-5px]">
             <h2 className="text-2xl md:text-3xl font-bold text-[#333333]">{t.title}</h2>
             <p className="text-gray-500 mt-1">{t.subtitle}</p>
           </div>
           <Link
             href={`${localePrefix}/category/business-cards/`}
-            className="inline-flex items-center gap-1 text-[#2873F5] hover:text-[#1E5FD1] font-medium transition-colors text-sm"
+            className="relative right-[-5px] inline-flex items-center gap-1 text-[#2873F5] hover:text-[#1E5FD1] font-medium transition-colors text-sm"
           >
             {t.viewAll}
             <ArrowRight className="w-4 h-4" />
@@ -122,30 +122,38 @@ export function HotProducts({ locale }: HotProductsProps) {
         </div>
 
         {/* Two Column Layout */}
-        <div className="flex gap-6">
+        <div className="flex gap-6 items-stretch">
           {/* Left Sidebar */}
-          <div className="hidden lg:block w-56 flex-shrink-0">
-            <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden sticky top-28">
-              <div className="px-4 py-3 bg-[#2873F5] text-white">
-                <h3 className="font-semibold text-sm">{t.categoryTitle}</h3>
+          <div className="hidden lg:block w-56 flex-shrink-0 relative left-[-5px]">
+            <div className="bg-white rounded-xl shadow-sm border border-gray-100 overflow-hidden h-full flex flex-col">
+              <div className="px-4 py-3 bg-[#2873F5] text-white flex items-center gap-2">
+                <span className="w-1 h-5 bg-white/80 rounded-full" />
+                <h3 className="font-semibold text-base">{t.categoryTitle}</h3>
               </div>
-              <div className="py-2">
-                {categories.map((cat) => (
-                  <Link
-                    key={cat.slug}
-                    href={`${localePrefix}/category/${cat.slug}/`}
-                    className="flex items-center justify-between px-4 py-2.5 text-sm text-gray-600 hover:text-[#2873F5] hover:bg-blue-50 transition-colors"
-                  >
-                    <span className="flex items-center gap-2.5">
-                      <span className="text-gray-400">{categoryIcons[cat.slug] || <ShoppingBag className="w-4 h-4" />}</span>
-                      <span>{locale === 'zh-hk' ? cat.name : locale === 'en' ? cat.nameEn : cat.nameJa}</span>
-                    </span>
-                    <span className="flex items-center gap-1 text-gray-400 text-xs">
-                      {categoryCounts[cat.slug] || 0}
-                      <ChevronRight className="w-3 h-3" />
-                    </span>
-                  </Link>
-                ))}
+              <div className="flex-1 flex flex-col">
+                {categories.map((cat, idx) => {
+                  const isEducational = cat.slug === 'educational';
+                  return (
+                    <Link
+                      key={cat.slug}
+                      href={`${localePrefix}/category/${cat.slug}/`}
+                      className={`flex items-center justify-between px-4 py-3.5 text-[15px] transition-colors border-b border-gray-100 ${
+                        isEducational
+                          ? 'bg-gray-100 text-gray-700 hover:bg-[#2873F5] hover:text-white'
+                          : 'text-gray-600 hover:text-[#2873F5] hover:bg-blue-50'
+                      } ${idx === categories.length - 1 ? 'border-b-0' : ''}`}
+                    >
+                      <span className="flex items-center gap-2.5">
+                        <span className={isEducational ? 'text-gray-500' : 'text-gray-400'}>{categoryIcons[cat.slug] || <ShoppingBag className="w-4 h-4" />}</span>
+                        <span>{locale === 'zh-hk' ? cat.name : locale === 'en' ? cat.nameEn : cat.nameJa}</span>
+                      </span>
+                      <span className={`flex items-center gap-1 text-sm ${isEducational ? 'text-gray-500' : 'text-gray-400'}`}>
+                        {categoryCounts[cat.slug] || 0}
+                        <ChevronRight className="w-3.5 h-3.5" />
+                      </span>
+                    </Link>
+                  );
+                })}
               </div>
 
               {/* Enterprise CTA */}
@@ -163,8 +171,8 @@ export function HotProducts({ locale }: HotProductsProps) {
           </div>
 
           {/* Products Grid */}
-          <div className="flex-1">
-            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
+          <div className="flex-1 relative right-[-5px]">
+            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
               {hotProducts.map((product, index) => {
                 const productName = getProductTitle(product, locale);
                 const productDesc = getProductDescription(product, locale);
@@ -177,7 +185,7 @@ export function HotProducts({ locale }: HotProductsProps) {
                     className="group bg-white rounded-xl border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-300"
                   >
                     {/* Image */}
-                    <div className="aspect-[4/3] relative overflow-hidden bg-gray-50">
+                    <div className="aspect-square relative overflow-hidden bg-gray-50">
                       <ProductImage src={imageSrc} alt={productName} />
                       {isHot && (
                         <div className="absolute top-3 left-3 bg-red-500 text-white text-xs font-bold px-2.5 py-1 rounded">
@@ -188,7 +196,7 @@ export function HotProducts({ locale }: HotProductsProps) {
 
                     {/* Info */}
                     <div className="p-4">
-                      <h3 className="font-semibold text-[#333333] group-hover:text-[#2873F5] transition-colors mb-1">
+                      <h3 className="font-semibold text-lg text-[#333333] group-hover:text-[#2873F5] transition-colors mb-1">
                         {productName}
                       </h3>
                       <p className="text-sm text-gray-500 line-clamp-2 mb-3">
