@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ArrowRight, ChevronRight, Star, ShoppingBag, FileText, Tag, Package, ImageIcon, GraduationCap, CreditCard, Mail, BookOpen, Calendar, Gift, Flag, StickyNote } from 'lucide-react';
+import { ArrowRight, ChevronRight, Search, ShoppingBag, FileText, Tag, Package, ImageIcon, GraduationCap, CreditCard, Mail, BookOpen, Calendar, Gift, Flag, StickyNote } from 'lucide-react';
 import { Locale } from '@/lib/seo';
 import { products, categories, getProductTitle, getProductDescription } from '@/data/products';
 
@@ -23,6 +23,8 @@ const translations = {
     enterpriseCta: '企業批量訂單',
     enterpriseDesc: '專屬客戶經理，專享優惠價格',
     contactUs: '聯繫我們 →',
+    cantFind: '找不到想要的產品?',
+    quickQuote: '快速詢價',
   },
   en: {
     title: 'Hot Printing Products',
@@ -35,6 +37,8 @@ const translations = {
     enterpriseCta: 'Enterprise Bulk Orders',
     enterpriseDesc: 'Dedicated account manager with exclusive pricing',
     contactUs: 'Contact Us →',
+    cantFind: "Can't find what you need?",
+    quickQuote: 'Quick Quote',
   },
   ja: {
     title: '人気の印刷製品',
@@ -47,6 +51,8 @@ const translations = {
     enterpriseCta: '企業向け大口注文',
     enterpriseDesc: '専任アカウントマネージャー、特別価格',
     contactUs: 'お問い合わせ →',
+    cantFind: 'お探しの製品が見つからない？',
+    quickQuote: 'お見積もり',
   },
 };
 
@@ -130,7 +136,7 @@ export function HotProducts({ locale }: HotProductsProps) {
                 <span className="w-1 h-5 bg-white/80 rounded-full" />
                 <h3 className="font-semibold text-base">{t.categoryTitle}</h3>
               </div>
-              <div className="flex-1 flex flex-col">
+              <div className="flex-1 flex flex-col justify-between">
                 {categories.map((cat, idx) => {
                   const isEducational = cat.slug === 'educational';
                   return (
@@ -154,6 +160,18 @@ export function HotProducts({ locale }: HotProductsProps) {
                     </Link>
                   );
                 })}
+              </div>
+
+              {/* Quick Quote Search */}
+              <div className="px-4 py-3 border-t border-gray-100">
+                <p className="text-xs text-gray-500 text-center mb-2">{t.cantFind}</p>
+                <Link
+                  href={`${localePrefix}/contact/`}
+                  className="flex items-center justify-center gap-2 w-full py-2 border border-[#2873F5] text-[#2873F5] rounded-lg text-sm hover:bg-[#2873F5] hover:text-white transition-colors"
+                >
+                  <Search className="w-4 h-4" />
+                  {t.quickQuote}
+                </Link>
               </div>
 
               {/* Enterprise CTA */}
@@ -196,14 +214,14 @@ export function HotProducts({ locale }: HotProductsProps) {
 
                     {/* Info */}
                     <div className="p-4">
-                      <h3 className="font-semibold text-lg text-[#333333] group-hover:text-[#2873F5] transition-colors mb-1">
+                      <h3 className="font-semibold text-xl text-[#333333] group-hover:text-[#2873F5] transition-colors mb-1 text-center">
                         {productName}
                       </h3>
-                      <p className="text-sm text-gray-500 line-clamp-2 mb-3">
+                      <p className="text-sm text-gray-500 line-clamp-2 mb-3 text-center">
                         {productDesc}
                       </p>
-                      <div className="flex items-center justify-between">
-                        <span className="text-[#F87314] font-bold text-sm">
+                      <div className="flex items-center justify-center">
+                        <span className="text-[#F87314] font-bold text-sm tracking-wider text-center">
                           {product.price_range}
                         </span>
                       </div>
