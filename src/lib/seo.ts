@@ -108,12 +108,13 @@ export function generateCategoryMetadata(locale: Locale, categoryName: string = 
     ja: `プロの${categoryNameJa}印刷サービス、品質保証、透明な価格。ZPrintProは様々な${categoryNameJa}オプションを提供し、最短当日配送可能。`,
   };
   
-  const name = names[locale];
+  const rawName = names[locale];
+  const name = rawName && !rawName.endsWith('印刷') && locale === 'zh-hk' ? `${rawName}印刷` : rawName;
   const description = descriptions[locale];
   const lang = locale === 'zh-hk' ? 'zh-HK' : locale;
   
   return {
-    title: `${name}印刷 | ${siteConfig.name}`,
+    title: `${name} | ${siteConfig.name}`,
     description,
     alternates: {
       canonical: `${siteConfig.url}/${locale === 'zh-hk' ? '' : locale + '/'}category/${categoryNameEn.toLowerCase().replace(/\s+/g, '-')}/`,
@@ -124,7 +125,7 @@ export function generateCategoryMetadata(locale: Locale, categoryName: string = 
       },
     },
     openGraph: {
-      title: `${name}印刷 | ${siteConfig.name}`,
+      title: `${name} | ${siteConfig.name}`,
       description,
       locale: lang,
       type: 'website',

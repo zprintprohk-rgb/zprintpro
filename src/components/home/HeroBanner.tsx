@@ -96,7 +96,7 @@ export function HeroBanner({ locale }: HeroBannerProps) {
                   <span className="inline-flex items-center w-fit px-3 py-1 bg-[#F87314] text-white text-sm font-medium rounded-full mb-4">
                     {t.fromPrice} {slide.price}
                   </span>
-                  <h2 className="text-3xl md:text-5xl font-bold text-white mb-3 leading-tight">{slide.title}</h2>
+                  <h1 className="text-3xl md:text-5xl font-bold text-white mb-3 leading-tight">{slide.title}</h1>
                   <p className="text-white/80 text-base md:text-lg mb-6 max-w-lg">{slide.subtitle}</p>
                   <div className="flex items-center gap-3">
                     <Link

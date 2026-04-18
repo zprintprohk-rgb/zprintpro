@@ -19,7 +19,24 @@ export async function generateMetadata({ params }: SuccessPageProps): Promise<Me
       : locale === 'en'
       ? 'Payment Successful | ZPrintPro'
       : '支払い完了 | ZPrintPro';
-  return { title };
+  const description =
+    locale === 'zh-hk'
+      ? '您的付款已成功處理。感謝您選擇智印港 ZPrintPro 的專業印刷服務。'
+      : locale === 'en'
+      ? 'Your payment has been successfully processed. Thank you for choosing ZPrintPro professional printing services.'
+      : 'お支払いが正常に処理されました。ZPrintProのプロフェッショナル印刷サービスをご利用いただきありがとうございます。';
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: `https://zprintpro.com/${locale === 'zh-hk' ? '' : locale + '/'}payment/success/`,
+      languages: {
+        'zh-HK': 'https://zprintpro.com/payment/success/',
+        'en': 'https://zprintpro.com/en/payment/success/',
+        'ja': 'https://zprintpro.com/ja/payment/success/',
+      },
+    },
+  };
 }
 
 export default function PaymentSuccessPage({ params }: SuccessPageProps) {

@@ -14,8 +14,8 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   metadataBase: new URL('https://zprintpro.com'),
   icons: {
-    icon: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
+    icon: '/images/logo.png',
+    apple: '/images/logo.png',
   },
   manifest: '/manifest.json',
 };
