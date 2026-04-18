@@ -15,6 +15,16 @@ const nextConfig = {
     };
     return config;
   },
+  // 根域名重定向到繁体中文
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/zh-hk/',
+        permanent: true,
+      },
+    ];
+  },
   // 国际化通过 app/[locale] 文件路由实现，不在 config 中声明 i18n
 };
 

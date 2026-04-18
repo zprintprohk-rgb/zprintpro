@@ -18,6 +18,12 @@ export const metadata: Metadata = {
     apple: '/apple-touch-icon.png',
   },
   manifest: '/manifest.json',
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 5,
+  },
+  themeColor: '#2873F5',
 };
 
 interface RootLayoutProps {
@@ -31,13 +37,6 @@ export default function RootLayout({
 }: RootLayoutProps) {
   return (
     <html lang={locale === 'zh-hk' ? 'zh-HK' : locale}>
-      <head>
-        {/* Hreflang标签 */}
-        <link rel="alternate" hrefLang="zh-HK" href="https://zprintpro.com/zh-hk/" />
-        <link rel="alternate" hrefLang="en" href="https://zprintpro.com/en/" />
-        <link rel="alternate" hrefLang="ja" href="https://zprintpro.com/ja/" />
-        <link rel="alternate" hrefLang="x-default" href="https://zprintpro.com/" />
-      </head>
       <body className={inter.className}>
         <Header locale={locale as 'zh-hk' | 'en' | 'ja'} />
         {children}

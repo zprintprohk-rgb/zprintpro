@@ -11,65 +11,71 @@ const path = require('path');
 const SITE_URL = 'https://zprintpro.com';
 const LANGUAGES = ['zh-hk', 'en', 'ja'];
 
-// 分類列表
+// 分類列表（13個，與實際產品數據一致）
 const categories = [
+  { slug: 'paper-bags', priority: 0.8 },
+  { slug: 'flyers', priority: 0.8 },
   { slug: 'stickers', priority: 0.8 },
-  { slug: 'labels', priority: 0.8 },
-  { slug: 'cards', priority: 0.8 },
-  { slug: 'booklets', priority: 0.8 },
   { slug: 'packaging', priority: 0.8 },
-  { slug: 'large-format', priority: 0.8 },
-  { slug: 'stationery', priority: 0.8 },
-  { slug: 'promotional', priority: 0.8 },
+  { slug: 'posters', priority: 0.8 },
+  { slug: 'books', priority: 0.8 },
+  { slug: 'business-cards', priority: 0.8 },
+  { slug: 'envelopes', priority: 0.8 },
+  { slug: 'menus', priority: 0.8 },
+  { slug: 'calendars', priority: 0.8 },
+  { slug: 'red-packets', priority: 0.8 },
+  { slug: 'banners', priority: 0.8 },
+  { slug: 'educational', priority: 0.8 },
 ];
 
-// 產品列表（79個SKU的slug）
+// 產品列表（79個SKU的slug，與實際產品數據一致）
 const products = [
-  // Stickers
-  'circular-stickers', 'rectangular-stickers', 'die-cut-stickers', 'kiss-cut-stickers',
-  'hologram-stickers', 'clear-stickers', 'foil-stickers', 'security-stickers',
-  'vinyl-stickers', 'removable-stickers',
-  // Labels
-  'product-labels', 'shipping-labels', 'food-labels', 'cosmetic-labels',
-  'wine-labels', 'thermal-labels', 'barcode-labels', 'qr-code-labels',
-  'asset-labels', 'cable-labels',
-  // Cards
-  'business-cards', 'name-cards', 'postcards', 'greeting-cards',
-  'thank-you-cards', 'appointment-cards', 'loyalty-cards', 'gift-cards',
-  'invitation-cards', 'rack-cards',
-  // Booklets
-  'booklets', 'catalogues', 'brochures', 'flyers',
-  'leaflets', 'menus', 'annual-reports', 'magazines',
-  'notebooks', 'calendars',
-  // Packaging
-  'product-boxes', 'mailer-boxes', 'shopping-bags', 'gift-boxes',
-  'paper-bags', 'tissue-paper', 'stickers-seals', 'hang-tags',
-  'sleeve-packaging', 'corrugated-mailers',
-  // Large Format
-  'banners', 'posters', 'foam-boards', 'roll-up-banners',
-  'vinyl-banners', 'backdrops', 'window-graphics', 'floor-graphics',
-  'vehicle-wraps', 'canvas-prints',
-  // Stationery
-  'letterheads', 'envelopes', 'notepads', 'folders',
-  'ncr-forms', 'invoices', 'compliment-slips', 'sticky-notes',
-  'desk-pads', 'certificates',
-  // Promotional
-  'bookmarks', 'magnets', 'coasters', 'lanyards',
-  'badges', 'tote-bags', 'pens', 'mouse-pads',
-  'keychains',
+  // Business Cards (9)
+  'premium-business-cards', 'thick-business-cards-400g', 'foil-business-cards', 'spot-uv-business-cards',
+  'matte-business-cards', 'rounded-corner-cards', 'double-sided-cards', 'same-day-business-cards', 'eco-business-cards',
+  // Stickers (8)
+  'waterproof-stickers', 'transparent-stickers', 'removable-stickers', 'small-batch-stickers',
+  'die-cut-stickers', 'foil-stickers', 'security-stickers', 'fluorescent-stickers',
+  // Paper Bags (7)
+  'kraft-paper-bags', 'white-card-bags', 'gift-bags', 'eco-paper-bags', 'handle-bags', 'small-bags', 'large-bags',
+  // Flyers (7)
+  'a4-flyers', 'a5-flyers', 'double-sided-flyers', 'folded-leaflets', 'thick-paper-flyers', 'same-day-flyers', 'eco-flyers',
+  // Posters (6)
+  'a2-posters', 'a1-posters', 'outdoor-posters', 'display-posters', 'art-posters', 'adhesive-posters',
+  // Packaging (6)
+  'gift-boxes', 'cosmetic-boxes', 'food-boxes', 'mailer-boxes', 'folding-boxes', 'rigid-boxes',
+  // Red Packets (6)
+  'foil-red-packets', 'embossed-red-packets', 'custom-red-packets', 'cartoon-red-packets', 'eco-red-packets', 'large-red-packets',
+  // Calendars (6)
+  'wall-calendars', 'desk-calendars', 'custom-calendars', 'mini-calendars', 'photo-frame-calendars', 'magnetic-calendars',
+  // Menus (5)
+  'pvc-menus', 'laminated-menus', 'hardcover-menus', 'drink-menus', 'disposable-menus',
+  // Banners (5)
+  'outdoor-vinyl-banners', 'roll-up-banners', 'adhesive-banners', 'vehicle-wraps', 'mesh-banners',
+  // Books (5)
+  'catalog-printing', 'saddle-stitch-booklets', 'perfect-bound-books', 'hardcover-books', 'spiral-notebooks',
+  // Envelopes (4)
+  'business-envelopes', 'colored-envelopes', 'large-envelopes', 'pearl-envelopes',
+  // Educational (4)
+  'exercise-books', 'certificates', 'school-flyers', 'textbooks',
 ];
 
-// 靜態頁面
+// 博客文章
+const blogPosts = [
+  'sticker-guide', 'business-card-design', 'packaging-trends', 'cmyk-guide', 'paper-materials', 'eco-printing',
+];
+
+// 靜態頁面（帶 trailing slash 與 next.config.js 一致）
 const staticPages = [
   { path: '', priority: 1.0, changefreq: 'daily' },
-  { path: 'about', priority: 0.7, changefreq: 'monthly' },
-  { path: 'contact', priority: 0.7, changefreq: 'monthly' },
-  { path: 'quote', priority: 0.9, changefreq: 'weekly' },
-  { path: 'faq', priority: 0.6, changefreq: 'monthly' },
-  { path: 'blog', priority: 0.7, changefreq: 'weekly' },
-  { path: 'sitemap', priority: 0.5, changefreq: 'monthly' },
-  { path: 'privacy', priority: 0.3, changefreq: 'yearly' },
-  { path: 'terms', priority: 0.3, changefreq: 'yearly' },
+  { path: 'about/', priority: 0.7, changefreq: 'monthly' },
+  { path: 'contact/', priority: 0.7, changefreq: 'monthly' },
+  { path: 'quote/', priority: 0.9, changefreq: 'weekly' },
+  { path: 'faq/', priority: 0.6, changefreq: 'monthly' },
+  { path: 'blog/', priority: 0.7, changefreq: 'weekly' },
+  { path: 'privacy/', priority: 0.3, changefreq: 'yearly' },
+  { path: 'terms/', priority: 0.3, changefreq: 'yearly' },
+  { path: 'search/', priority: 0.3, changefreq: 'monthly' },
 ];
 
 // 生成當前日期
@@ -106,6 +112,16 @@ function generateLanguageSitemap(lang) {
       loc: `${SITE_URL}${langPath}/product/${product}/`,
       priority: 0.6,
       changefreq: 'weekly',
+      lastmod: today,
+    });
+  });
+
+  // 博客文章頁面
+  blogPosts.forEach(post => {
+    urls.push({
+      loc: `${SITE_URL}${langPath}/blog/${post}/`,
+      priority: 0.5,
+      changefreq: 'monthly',
       lastmod: today,
     });
   });
@@ -188,7 +204,7 @@ Disallow: /_next/
   console.log('Generated robots.txt');
 
   console.log('\n✅ Sitemap generation complete!');
-  console.log(`📄 Total URLs: ${staticPages.length + categories.length + products.length}`);
+  console.log(`📄 Total URLs: ${staticPages.length + categories.length + products.length + blogPosts.length}`);
   console.log(`🌐 Languages: ${LANGUAGES.join(', ')}`);
 }
 
