@@ -91,7 +91,7 @@ export function HeroBanner({ locale }: HeroBannerProps) {
                   unoptimized
                   priority={index === 0}
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/30 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-r from-[#2873F5]/40 via-[#2873F5]/15 to-transparent" />
                 <div className="absolute inset-0 flex flex-col justify-center px-8 md:px-14">
                   <span className="inline-flex items-center w-fit px-3 py-1 bg-[#F87314] text-white text-sm font-medium rounded-full mb-4">
                     {t.fromPrice} {slide.price}
