@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { ArrowRight, ChevronRight, Search, ShoppingBag, FileText, Tag, Package, ImageIcon, GraduationCap, CreditCard, Mail, BookOpen, Calendar, Gift, Flag, StickyNote } from 'lucide-react';
 import { Locale } from '@/lib/seo';
 import { products, categories, getProductTitle, getProductDescription } from '@/data/products';
@@ -108,6 +109,7 @@ function ProductImage({ src, alt }: { src: string; alt: string }) {
 export function HotProducts({ locale }: HotProductsProps) {
   const t = translations[locale];
   const localePrefix = locale === 'zh-hk' ? '' : `/${locale}`;
+  const pathname = usePathname();
 
   return (
     <section className="pt-4 pb-6 bg-gray-50">
@@ -139,21 +141,26 @@ export function HotProducts({ locale }: HotProductsProps) {
               <div className="flex-1 flex flex-col justify-between">
                 {categories.map((cat, idx) => {
                   const isEducational = cat.slug === 'educational';
+                  const isActive = pathname.includes(`/category/${cat.slug}/`);
                   return (
                     <Link
                       key={cat.slug}
                       href={`${localePrefix}/category/${cat.slug}/`}
                       className={`flex items-center justify-between px-4 py-3.5 text-base transition-colors border-b border-gray-100 ${
                         isEducational
-                          ? 'bg-gray-200 text-gray-700 font-bold hover:bg-[#2873F5] hover:text-white'
-                          : 'text-gray-600 hover:text-[#2873F5] hover:bg-blue-50'
+                          ? isActive
+                            ? 'bg-[#2873F5] text-white font-semibold'
+                            : 'bg-gray-300 text-white font-semibold hover:bg-[#2873F5]'
+                          : isActive
+                            ? 'text-[#2873F5] bg-blue-50'
+                            : 'text-gray-600 hover:text-[#2873F5] hover:bg-blue-50'
                       } ${idx === categories.length - 1 ? 'border-b-0' : ''}`}
                     >
                       <span className="flex items-center gap-2.5">
-                        <span className={isEducational ? 'text-gray-500' : 'text-gray-400'}>{categoryIcons[cat.slug] || <ShoppingBag className="w-4 h-4" />}</span>
+                        <span className={isEducational ? 'text-white' : 'text-gray-400'}>{categoryIcons[cat.slug] || <ShoppingBag className="w-4 h-4" />}</span>
                         <span>{locale === 'zh-hk' ? cat.name : locale === 'en' ? cat.nameEn : cat.nameJa}</span>
                       </span>
-                      <span className={`flex items-center gap-1 text-sm ${isEducational ? 'text-gray-500' : 'text-gray-400'}`}>
+                      <span className={`flex items-center gap-1 text-sm ${isEducational ? 'text-white' : 'text-gray-400'}`}>
                         {categoryCounts[cat.slug] || 0}
                         <ChevronRight className="w-3.5 h-3.5" />
                       </span>
