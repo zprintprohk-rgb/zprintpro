@@ -273,7 +273,7 @@ export function Header({ locale }: HeaderProps) {
       {/* Main Header */}
       <div className="bg-white">
         <div className="px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16 lg:h-20 gap-4">
+          <div className="flex justify-between items-center h-14 lg:h-16 gap-4">
             {/* Logo */}
             <Link href={`${localePrefix}/`} className="flex-shrink-0 ml-5">
               <Image
@@ -333,10 +333,10 @@ export function Header({ locale }: HeaderProps) {
       {/* Blue Navigation Bar */}
       <nav className="hidden lg:block bg-[#2873F5]">
         <div className="px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center h-[46px] gap-1">
+          <div className="flex items-center h-[46px]">
             <Link 
               href={`${localePrefix}/`}
-              className={`px-5 h-full flex items-center text-[15px] font-medium transition-colors ${pathname === `${localePrefix}/` ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}
+              className={`flex-1 h-full flex items-center justify-center text-[17px] font-medium transition-colors ${pathname === `${localePrefix}/` ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}
             >
               {t.home}
             </Link>
@@ -344,13 +344,13 @@ export function Header({ locale }: HeaderProps) {
             {t.navOrder.map((catSlug) => (
               <div
                 key={catSlug}
-                className="relative h-full"
+                className="relative h-full flex-1"
                 onMouseEnter={() => setActiveDropdown(catSlug)}
                 onMouseLeave={() => setActiveDropdown(null)}
               >
                 <Link
                   href={`${localePrefix}/category/${catSlug}/`}
-                  className={`px-5 h-full flex items-center gap-1 text-[15px] font-medium transition-colors ${pathname.includes(`/category/${catSlug}`) ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}
+                  className={`h-full flex items-center justify-center gap-1 text-[17px] font-medium transition-colors ${pathname.includes(`/category/${catSlug}`) ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}
                 >
                   {t.categories[catSlug]}
                   <ChevronDown className={`w-3.5 h-3.5 transition-transform ${activeDropdown === catSlug ? 'rotate-180' : ''}`} />
@@ -394,6 +394,83 @@ export function Header({ locale }: HeaderProps) {
                       </div>
                       <div className="grid grid-cols-3 gap-2">
                         {categorySubItems[catSlug]?.slice(0, 3).map((subSlug, idx) => {
+                          const featuredDescs: Record<string, Record<string, string>> = {
+                            'zh-hk': {
+                              'kraft-paper-bags': '環保耐用，100個起訂',
+                              'white-card-bags': '高檔印刷，品牌首選',
+                              'gift-bags': '精美包裝，送禮首選',
+                              'a4-flyers': '彩色印刷，即日可取',
+                              'a5-flyers': '多種尺寸，宣傳必備',
+                              'a3-flyers': '大圖輸出，震撼效果',
+                              'waterproof-stickers': '耐用防水，戶外適用',
+                              'transparent-stickers': '清晰透明，質感出眾',
+                              'foil-stickers': '高檔質感，奢華體驗',
+                              'product-boxes': '堅固耐用，保護產品',
+                              'mailer-boxes': '快遞專用，運輸安全',
+                              'gift-boxes': '精美包裝，提升品牌',
+                              'display-boxes': '展示專用，吸引目光',
+                              'food-packaging': '食品級材，安全衛生',
+                              'a2-posters': '大圖輸出，色彩鮮豔',
+                              'a1-posters': '展覽專用，視覺震撼',
+                              'a0-posters': '巨幅海報，戶外廣告',
+                              'foam-board-posters': '輕便展示，易於搬運',
+                              'backlit-posters': '燈箱專用，夜間醒目',
+                              'workbooks': '教育專用，品質保證',
+                              'certificates': '正式場合，尊貴體驗',
+                              'diplomas': '畢業必備，紀念珍藏',
+                              'educational-banners': '校園活動，宣傳必備',
+                            },
+                            'en': {
+                              'kraft-paper-bags': 'Eco-friendly, min 100',
+                              'white-card-bags': 'Premium, brand choice',
+                              'gift-bags': 'Elegant, perfect gift',
+                              'a4-flyers': 'Full color, same day',
+                              'a5-flyers': 'Multi sizes, essential',
+                              'a3-flyers': 'Large format, impact',
+                              'waterproof-stickers': 'Durable, outdoor use',
+                              'transparent-stickers': 'Clear, premium feel',
+                              'foil-stickers': 'Luxury, elegant look',
+                              'product-boxes': 'Sturdy, protective',
+                              'mailer-boxes': 'Shipping safe',
+                              'gift-boxes': 'Elegant, branded',
+                              'display-boxes': 'Display, eye-catching',
+                              'food-packaging': 'Food-grade, hygienic',
+                              'a2-posters': 'Large, vivid colors',
+                              'a1-posters': 'Exhibition ready',
+                              'a0-posters': 'Huge, outdoor ads',
+                              'foam-board-posters': 'Light, easy move',
+                              'backlit-posters': 'Backlit, night visible',
+                              'workbooks': 'Education quality',
+                              'certificates': 'Formal, prestigious',
+                              'diplomas': 'Graduation memento',
+                              'educational-banners': 'School events',
+                            },
+                            'ja': {
+                              'kraft-paper-bags': 'エコで耐久性あり',
+                              'white-card-bags': '高級印刷，ブランド',
+                              'gift-bags': 'ギフトに最適',
+                              'a4-flyers': 'フルカラー当日',
+                              'a5-flyers': '多サイズ必須',
+                              'a3-flyers': '大判出力衝撃',
+                              'waterproof-stickers': '防水耐久屋外',
+                              'transparent-stickers': '透明高級感',
+                              'foil-stickers': '高級ラグジュアリー',
+                              'product-boxes': '丈夫保護製品',
+                              'mailer-boxes': '配送安全専用',
+                              'gift-boxes': 'ブランド向上',
+                              'display-boxes': '展示注目集める',
+                              'food-packaging': '食品級衛生的',
+                              'a2-posters': '大判鮮やか色彩',
+                              'a1-posters': '展示会専用',
+                              'a0-posters': '巨大屋外広告',
+                              'foam-board-posters': '軽量持運び易',
+                              'backlit-posters': 'バックライト夜間',
+                              'workbooks': '教育品質保証',
+                              'certificates': '格式高級体験',
+                              'diplomas': '卒業記念必須',
+                              'educational-banners': '学校イベント',
+                            },
+                          };
                           const featuredImages: Record<string, string> = {
                             'kraft-paper-bags': '/images/hero-v21/kraft-bag.jpg',
                             'white-card-bags': '/images/hero-v21/white-bag.jpg',
@@ -441,6 +518,7 @@ export function Header({ locale }: HeaderProps) {
                                 </span>
                               </div>
                               <p className="text-[11px] text-gray-700 text-center leading-tight truncate">{getSubItemName(subSlug)}</p>
+                              <p className="text-[10px] text-gray-400 text-center leading-tight truncate mt-0.5">{featuredDescs[locale]?.[subSlug] || ''}</p>
                             </Link>
                           );
                         })}
@@ -453,13 +531,13 @@ export function Header({ locale }: HeaderProps) {
 
             <Link 
               href={`${localePrefix}/blog/`}
-              className={`px-5 h-full flex items-center text-[15px] font-medium transition-colors ${pathname.includes('/blog') ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}
+              className={`flex-1 h-full flex items-center justify-center text-[17px] font-medium transition-colors ${pathname.includes('/blog') ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}
             >
               {t.knowledge}
             </Link>
             <Link 
               href={`${localePrefix}/contact/`}
-              className={`px-5 h-full flex items-center text-[15px] font-medium transition-colors ${pathname.includes('/contact') ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}
+              className={`flex-1 h-full flex items-center justify-center text-[17px] font-medium transition-colors ${pathname.includes('/contact') ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}
             >
               {t.contact}
             </Link>
