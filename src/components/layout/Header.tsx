@@ -237,12 +237,12 @@ export function Header({ locale }: HeaderProps) {
   };
 
   const navLinkClass = (isActive: boolean) =>
-    `flex-1 h-full flex items-center justify-center text-[17px] font-semibold transition-colors ${
+    `flex-1 h-full flex items-center justify-center text-[16px] font-medium transition-colors ${
       isActive ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'
     }`;
 
   const catNavLinkClass = (catSlug: string) =>
-    `h-full flex items-center justify-center gap-1 text-[17px] font-semibold transition-colors ${
+    `h-full flex items-center justify-center gap-1 text-[16px] font-medium transition-colors ${
       pathname.includes(`/category/${catSlug}`) ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'
     }`;
 
@@ -324,12 +324,12 @@ export function Header({ locale }: HeaderProps) {
                       <div className="w-[150px] p-4 flex flex-col">
                         <div className="pb-3 flex items-center gap-2">
                           <span className="w-1 h-4 bg-[#2873F5] rounded-full" />
-                          <span className="text-sm font-bold text-gray-700">{locale === 'zh-hk' ? '產品分類' : locale === 'en' ? 'Categories' : 'カテゴリー'}</span>
+                          <span className="text-[15px] font-bold text-gray-700">{locale === 'zh-hk' ? '產品分類' : locale === 'en' ? 'Categories' : 'カテゴリー'}</span>
                         </div>
                         <div className="border-b border-dotted border-gray-200" />
                         <div className="flex-1 flex flex-col justify-around py-3">
                           {categorySubItems[catSlug]?.map((subSlug) => (
-                            <Link key={subSlug} href={`${localePrefix}/product/${subSlug}/`} className="block text-xs font-normal text-gray-500 hover:text-[#2873F5] transition-colors py-1">{getSubItemName(subSlug)}</Link>
+                            <Link key={subSlug} href={`${localePrefix}/product/${subSlug}/`} className="block text-[13px] font-normal text-gray-500 hover:text-[#2873F5] transition-colors py-1">{getSubItemName(subSlug)}</Link>
                           ))}
                         </div>
                         <div className="border-t border-dotted border-gray-200" />
@@ -341,7 +341,7 @@ export function Header({ locale }: HeaderProps) {
                       <div className="flex-1 bg-gray-50 p-4 border-l border-gray-100 flex flex-col">
                         <div className="pb-3 flex items-center gap-2">
                           <span className="w-1 h-4 bg-[#F87314] rounded-full" />
-                          <span className="text-sm font-bold text-gray-700">{locale === 'zh-hk' ? '熱門產品' : locale === 'en' ? 'Hot Products' : '人気製品'}</span>
+                          <span className="text-[15px] font-bold text-gray-700">{locale === 'zh-hk' ? '熱門產品' : locale === 'en' ? 'Hot Products' : '人気製品'}</span>
                         </div>
                         <div className="border-b border-transparent" />
                         <div className="flex-1 flex gap-4">
@@ -353,9 +353,9 @@ export function Header({ locale }: HeaderProps) {
                                   <Image src={featuredImages[subSlug] || '/images/hero-v21/gift-box.jpg'} alt={getSubItemName(subSlug)} fill className="object-cover group-hover:scale-105 transition-transform" unoptimized />
                                   <span className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded">{tagText}</span>
                                 </div>
-                                <div className="pt-2 h-[50px] flex flex-col justify-center">
+                                <div className="pt-2 h-[60px] flex flex-col justify-center">
                                   <p className="text-base font-medium text-gray-700 leading-tight text-center">{getSubItemName(subSlug)}</p>
-                                  <p className="text-sm text-gray-400 leading-tight mt-0 text-center">{featuredDescs[locale]?.[subSlug] || ''}</p>
+                                  <p className="text-[13px] text-gray-400 leading-tight mt-1.5 text-center">{featuredDescs[locale]?.[subSlug] || ''}</p>
                                 </div>
                               </Link>
                             );
@@ -377,12 +377,12 @@ export function Header({ locale }: HeaderProps) {
                     <div className="w-[150px] p-4 flex flex-col">
                       <div className="pb-3 flex items-center gap-2">
                         <span className="w-1 h-4 bg-[#2873F5] rounded-full" />
-                        <span className="text-sm font-bold text-gray-700">{locale === 'zh-hk' ? '內容分類' : locale === 'en' ? 'Topics' : 'トピック'}</span>
+                        <span className="text-[15px] font-bold text-gray-700">{locale === 'zh-hk' ? '內容分類' : locale === 'en' ? 'Topics' : 'トピック'}</span>
                       </div>
                       <div className="border-b border-dotted border-gray-200" />
                       <div className="flex-1 flex flex-col justify-around py-3">
                         {knowledgeSubItems[locale]?.map((item, idx) => (
-                          <Link key={idx} href={`${localePrefix}/blog/`} className="block text-xs font-normal text-gray-500 hover:text-[#2873F5] transition-colors py-1">{item}</Link>
+                          <Link key={idx} href={`${localePrefix}/blog/`} className="block text-[13px] font-normal text-gray-500 hover:text-[#2873F5] transition-colors py-1">{item}</Link>
                         ))}
                       </div>
                       <div className="border-t border-dotted border-gray-200" />
@@ -393,7 +393,7 @@ export function Header({ locale }: HeaderProps) {
                     <div className="flex-1 bg-gray-50 p-4 border-l border-gray-100 flex flex-col">
                       <div className="pb-3 flex items-center gap-2">
                         <span className="w-1 h-4 bg-[#F87314] rounded-full" />
-                        <span className="text-sm font-bold text-gray-700">{locale === 'zh-hk' ? '推薦文章' : locale === 'en' ? 'Featured' : 'おすすめ'}</span>
+                        <span className="text-[15px] font-bold text-gray-700">{locale === 'zh-hk' ? '推薦文章' : locale === 'en' ? 'Featured' : 'おすすめ'}</span>
                       </div>
                       <div className="border-b border-transparent" />
                       <div className="flex-1 flex gap-4">
