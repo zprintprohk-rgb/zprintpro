@@ -225,9 +225,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'rounded-corner-cards': {
     slug: 'rounded-corner-cards',
     keywords: {
-      'zh-hk': '圓角名片,安全邊名片,創意名片,模切名片,印刷即日速遞送貨,圓邊名片,R角名片,圓角啞膠名片,圓角燙金名片,時尚圓角名片',
-      'en': 'rounded corner business cards, safe edge cards, creative name cards, die cut cards, same day delivery,round edge business cards,R corner business cards,rounded matte business cards,rounded foil business cards,modern rounded cards',
-      'ja': '角丸名刺,安全エッジ名刺,クリエイティブ名刺,ダイカット名刺,即日配送,丸角名刺,ラウンドエッジ名刺,Rコーナー名刺,丸角マット名刺,丸角箔押し名刺,モダン丸角名刺',
+      'zh-hk': '圓角名片印刷,圓角咭片,圓角名片設計,圓角商務名片,圓角卡片制作,圓角名片訂造,圓角名片香港,圓角名片報價,圓角名片速印,圓角名片少量印刷,圓角公司名片,時尚圓角名片',
+      'en': 'rounded corner business cards,rounded corner name cards,rounded edge business cards,rounded corner card printing,rounded corner card design,rounded corner cards hong kong,rounded corner business card quote,rounded corner card printing service,modern rounded corner cards',
+      'ja': '丸角名刺印刷,丸角名刺,丸角名刺デザイン,丸角名刺香港,丸角名刺見積もり,丸角名刺印刷サービス,おしゃれ丸角名刺,モダン丸角名刺',
     },
     h1Suffix: {
       'zh-hk': '時尚圓角名片定制 | 智印港',
@@ -343,9 +343,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'thick-business-cards-400g': {
     slug: 'thick-business-cards-400g',
     keywords: {
-      'zh-hk': '厚身咭片(400g),香港厚身(400g),厚身咭片(400g)印刷,香港印刷,厚紙名片,400g名片,厚身名片,高級厚名片,厚卡名片,重型名片',
-      en: 'thick business cards (400g),thick business cards (400g) printing hong kong, hong kong thick business cards (400g)',
-      ja: '厚紙名刺(400g),香港厚紙(400g),厚紙名刺(400g)印刷',
+      'zh-hk': '400g厚咭片印刷,厚身名片,超厚名片,400克名片,厚紙名片印刷,厚咭片訂造,厚咭片設計,厚咭片香港,厚咭片報價,厚咭片速印,厚咭片少量印刷,高級厚咭片,400g咭片,厚身咭片印刷',
+      'en': '400g business card printing,thick business cards,heavy business cards,400gsm business cards,ultra thick business cards,custom thick business cards,thick business card design,thick business cards hong kong,thick business card quote,thick business card printing service,premium thick business cards,400g card printing',
+      'ja': '400g名刺印刷,厚紙名刺,ヘビー名刺,400gsm名刺,超厚紙名刺,カスタム厚紙名刺,厚紙名刺デザイン,厚紙名刺香港,厚紙名刺見積もり,厚紙名刺印刷サービス',
     },
     h1Suffix: {
       'zh-hk': '專業厚身咭片(400g)服務 | 智印港',
@@ -465,9 +465,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'double-sided-cards': {
     slug: 'double-sided-cards',
     keywords: {
-      'zh-hk': '雙面咭片,香港雙面,雙面咭片印刷,香港印刷,雙面名片,雙面印刷名片,雙面彩色名片,雙面啞膠名片,雙面燙金名片',
-      en: 'double-sided cards,double-sided cards printing hong kong, hong kong double-sided cards',
-      ja: '両面名刺,香港両面,両面名刺印刷',
+      'zh-hk': '雙面名片印刷,雙面咭片,雙面名片設計,雙面商務名片,雙面卡片印刷,雙面名片訂造,雙面名片香港,雙面名片報價,雙面名片速印,雙面名片少量印刷,雙面公司名片,雙面彩色名片',
+      'en': 'double sided business cards,double sided name cards,double sided card printing,double sided business card design,double sided cards hong kong,double sided business card quote,double sided card printing service,two sided business cards,full color double sided cards',
+      'ja': '両面名刺印刷,両面名刺,両面名刺デザイン,両面名刺香港,両面名刺見積もり,両面名刺印刷サービス,フルカラー両面名刺,両面ビジネスカード',
     },
     h1Suffix: {
       'zh-hk': '專業雙面咭片服務 | 智印港',
@@ -587,9 +587,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'eco-business-cards': {
     slug: 'eco-business-cards',
     keywords: {
-      'zh-hk': '環保再生紙咭片,香港環保再生紙,環保再生紙咭片印刷,香港印刷,環保名片,再生紙名片,FSC名片,大豆油墨名片,綠色名片,可持續名片',
-      en: 'eco-friendly recycled cards,eco-friendly recycled cards printing hong kong, hong kong eco-friendly recycled cards',
-      ja: '再生紙名刺,香港再生紙,再生紙名刺印刷',
+      'zh-hk': '環保名片印刷,再生紙名片,環保咭片,綠色名片印刷,環保名片訂造,FSC名片,大豆油墨名片,環保名片香港,環保名片設計,環保名片報價,可持續名片,環保名片速印,環保名片少量印刷',
+      'en': 'eco business cards,recycled paper business cards,environmentally friendly business cards,green business card printing,eco friendly name cards,sustainable business cards,FSC certified business cards,eco business cards hong kong,eco business card design,eco business card printing service',
+      'ja': 'エコ名刺印刷,再生紙名刺,環境に優しい名刺,エコ名刺,持続可能名刺,FSC認証名刺,エコ名刺香港,エコ名刺デザイン,エコ名刺印刷サービス',
     },
     h1Suffix: {
       'zh-hk': '專業環保再生紙咭片服務 | 智印港',
@@ -706,9 +706,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'removable-stickers': {
     slug: 'removable-stickers',
     keywords: {
-      'zh-hk': '可移貼紙(無殘膠),香港可移(無殘膠),可移貼紙(無殘膠)印刷,香港印刷,可移除貼紙,易撕貼紙,不留痕貼紙,重複使用貼紙,可再貼貼紙,牆身可移除貼紙',
-      en: 'removable stickers,removable stickers printing hong kong, hong kong removable stickers',
-      ja: 'はがせるステッカー,香港はがせる,はがせるステッカー印刷',
+      'zh-hk': '可移除貼紙印刷,易撕貼紙,無痕貼紙,重複使用貼紙,可再貼貼紙,可移除貼紙訂造,可移除貼紙設計,可移除貼紙香港,可移除貼紙報價,可移除貼紙速印,可移除貼紙少量印刷,不留膠貼紙,玻璃可移除貼',
+      'en': 'removable sticker printing,reusable stickers,removable labels,peelable stickers,restickable stickers,custom removable stickers,removable sticker design,removable stickers hong kong,removable sticker quote,removable sticker printing service,no residue stickers,glass removable stickers',
+      'ja': '剥がせるステッカー印刷,再利用ステッカー,剥がせるラベル,はがせるステッカー,カスタム剥がせるステッカー,剥がせるステッカーデザイン,剥がせるステッカー香港,剥がせるステッカー見積もり',
     },
     h1Suffix: {
       'zh-hk': '專業可移貼紙(無殘膠)服務 | 智印港',
@@ -764,9 +764,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'small-batch-stickers': {
     slug: 'small-batch-stickers',
     keywords: {
-      'zh-hk': '小批量貼紙,香港小批量,小批量貼紙印刷,香港印刷,少量貼紙,50張貼紙,小量貼紙印刷,打樣貼紙,測試貼紙',
-      en: 'small batch stickers,small batch stickers printing hong kong, hong kong small batch stickers',
-      ja: '小ロットステッカー,香港小ロット,小ロットステッカー印刷',
+      'zh-hk': '小批量貼紙印刷,少量貼紙,小量貼紙訂造,低起訂量貼紙,少量貼紙印刷,小批量貼紙訂造,小批量貼紙設計,小批量貼紙香港,小批量貼紙報價,小批量貼紙速印,小批量貼紙少量印刷,10張貼紙,50張貼紙,試印貼紙',
+      'en': 'small batch sticker printing,low quantity stickers,small quantity stickers,low minimum stickers,few stickers printing,custom small batch stickers,small batch sticker design,small batch stickers hong kong,small batch sticker quote,small batch sticker printing service,10 stickers,50 stickers,sample stickers',
+      'ja': '小ロットステッカー印刷,少量ステッカー,小ロットステッカー,低ロットステッカー,小ロットステッカーデザイン,小ロットステッカー香港,小ロットステッカー見積もり,サンプルステッカー',
     },
     h1Suffix: {
       'zh-hk': '專業小批量貼紙服務 | 智印港',
@@ -880,9 +880,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'foil-stickers': {
     slug: 'foil-stickers',
     keywords: {
-      'zh-hk': '燙金貼紙,香港燙金,燙金貼紙印刷,香港印刷,金箔貼紙,銀箔貼紙,金屬貼紙,燙銀貼紙,玫瑰金貼紙',
-      en: 'foil stickers,foil stickers printing hong kong, hong kong foil stickers',
-      ja: '箔押しステッカー,香港箔押し,箔押しステッカー印刷',
+      'zh-hk': '燙金貼紙印刷,金屬貼紙,金箔貼紙,銀箔貼紙,燙印貼紙,燙金貼紙訂造,燙金貼紙設計,燙金貼紙香港,燙金貼紙報價,燙金貼紙速印,燙金貼紙少量印刷,高級燙金貼紙,裝飾燙金貼紙',
+      'en': 'foil sticker printing,metallic stickers,gold foil stickers,silver foil stickers,foil stamped stickers,custom foil stickers,foil sticker design,foil stickers hong kong,foil sticker quote,foil sticker printing service,premium foil stickers,decorative foil stickers',
+      'ja': '箔押しステッカー印刷,メタリックステッカー,ゴールド箔ステッカー,シルバー箔ステッカー,箔押しステッカー,カスタム箔押しステッカー,箔押しステッカーデザイン,箔押しステッカー香港,箔押しステッカー見積もり',
     },
     h1Suffix: {
       'zh-hk': '專業燙金貼紙服務 | 智印港',
@@ -938,9 +938,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'security-stickers': {
     slug: 'security-stickers',
     keywords: {
-      'zh-hk': '防偽貼紙,香港防偽,防偽貼紙印刷,香港印刷,防拆貼紙,易碎貼紙,保修貼紙,防偽標籤,防篡改貼紙',
-      en: 'security stickers,security stickers printing hong kong, hong kong security stickers',
-      ja: 'セキュリティステッカー,香港セキュリティ,セキュリティステッカー印刷',
+      'zh-hk': '防偽貼紙印刷,防盜貼紙,防拆貼紙,VOID貼紙,易碎貼紙,保安貼紙,防偽標籤印刷,防偽貼紙訂造,防偽貼紙設計,防偽貼紙香港,防偽貼紙報價,防偽貼紙速印,正品防偽貼',
+      'en': 'security sticker printing,tamper evident stickers,void stickers,security labels,anti counterfeit stickers,tamper proof stickers,custom security stickers,security sticker design,security stickers hong kong,security sticker quote,hologram security stickers,product security stickers',
+      'ja': 'セキュリティステッカー印刷,改ざん防止ステッカー,VOIDステッカー,セキュリティラベル,偽造防止ステッカー,カスタムセキュリティステッカー,セキュリティステッカーデザイン,セキュリティステッカー香港',
     },
     h1Suffix: {
       'zh-hk': '專業防偽貼紙服務 | 智印港',
@@ -996,9 +996,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'fluorescent-stickers': {
     slug: 'fluorescent-stickers',
     keywords: {
-      'zh-hk': '螢光貼紙,香港螢光,螢光貼紙印刷,香港印刷,夜光貼紙,發光貼紙,霓虹貼紙,反光貼紙,高可見度貼紙',
-      en: 'fluorescent stickers,fluorescent stickers printing hong kong, hong kong fluorescent stickers',
-      ja: '蛍光ステッカー,香港蛍光,蛍光ステッカー印刷',
+      'zh-hk': '螢光貼紙印刷,夜光貼紙,發光貼紙,霓虹貼紙,醒目貼紙,螢光貼紙訂造,螢光貼紙設計,螢光貼紙香港,螢光貼紙報價,螢光貼紙速印,螢光貼紙少量印刷,安全標示螢光貼,警示螢光貼紙',
+      'en': 'fluorescent sticker printing,glow in the dark stickers,neon stickers,luminous stickers,high visibility stickers,custom fluorescent stickers,fluorescent sticker design,fluorescent stickers hong kong,fluorescent sticker quote,fluorescent sticker printing service,safety fluorescent stickers,warning glow stickers',
+      'ja': '蛍光ステッカー印刷,蓄光ステッカー,ネオンステッカー,発光ステッカー,高視認性ステッカー,カスタム蛍光ステッカー,蛍光ステッカーデザイン,蛍光ステッカー香港,蛍光ステッカー見積もり',
     },
     h1Suffix: {
       'zh-hk': '專業螢光貼紙服務 | 智印港',
@@ -1118,9 +1118,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'white-card-bags': {
     slug: 'white-card-bags',
     keywords: {
-      'zh-hk': '白卡紙袋,香港白卡,白卡紙袋印刷,香港印刷,印刷即日速遞送貨,白色紙袋,白底紙袋,高檔白紙袋,白卡手提袋,白卡禮品袋',
-      en: 'white card bags,white card bags printing hong kong, hong kong white card bags',
-      ja: '白カード紙袋,香港白カード,白カード紙袋印刷',
+      'zh-hk': '白卡紙袋印刷,白卡紙手挽袋,白卡紙購物袋,白色紙袋,白卡紙袋訂造,白卡紙袋設計,白卡紙袋香港,白卡紙袋報價,白卡紙袋速印,白卡紙袋少量印刷,高檔白卡紙袋,商業白卡紙袋',
+      'en': 'white card paper bags,white paper bags,white kraft bags,white shopping bags,custom white paper bags,white bag design,white bags hong kong,white bag quote,white bag printing service,premium white paper bags,commercial white bags',
+      'ja': '白卡紙袋印刷,白い紙袋,白クラフト袋,白ショッピング袋,カスタム白紙袋,白バッグデザイン,白バッグ香港,白バッグ見積もり',
     },
     h1Suffix: {
       'zh-hk': '專業白卡紙袋服務 | 智印港',
@@ -1182,9 +1182,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'gift-bags': {
     slug: 'gift-bags',
     keywords: {
-      'zh-hk': '禮品紙袋,香港禮品,禮品紙袋印刷,香港印刷,印刷即日速遞送貨,禮物紙袋,高檔禮品袋,節日禮品袋,生日禮物袋,婚禮紙袋',
-      en: 'gift bags,gift bags printing hong kong, hong kong gift bags',
-      ja: 'ギフト紙袋,香港ギフト,ギフト紙袋印刷',
+      'zh-hk': '禮品紙袋印刷,禮物袋制作,精美禮品袋,節日禮品袋,禮品紙袋訂造,禮品紙袋設計,禮品紙袋香港,禮品紙袋報價,禮品紙袋速印,禮品紙袋少量印刷,高檔禮品袋,品牌禮品袋,生日禮品袋',
+      'en': 'gift paper bags,present bags,luxury gift bags,festival gift bags,custom gift paper bags,gift bag design,gift bags hong kong,gift bag quote,gift bag printing service,premium gift bags,branded gift bags,birthday gift bags',
+      'ja': 'ギフト紙袋印刷,プレゼント袋,高級ギフト袋,ギフト紙袋,カスタムギフト紙袋,ギフトバッグデザイン,ギフトバッグ香港,ギフトバッグ見積もり',
     },
     h1Suffix: {
       'zh-hk': '專業禮品紙袋服務 | 智印港',
@@ -1246,9 +1246,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'eco-paper-bags': {
     slug: 'eco-paper-bags',
     keywords: {
-      'zh-hk': '環保紙袋,香港環保,環保紙袋印刷,香港印刷',
-      en: 'eco paper bags,eco paper bags printing hong kong, hong kong eco paper bags',
-      ja: 'エコ紙袋,香港エコ,エコ紙袋印刷',
+      'zh-hk': '環保紙袋印刷,再生紙袋,環保購物袋,綠色紙袋,FSC紙袋,環保紙袋訂造,環保紙袋設計,環保紙袋香港,環保紙袋報價,環保紙袋速印,環保紙袋少量印刷,可持續紙袋,環保手提袋',
+      'en': 'eco paper bags,recycled paper bags,environmentally friendly paper bags,green paper bags,FSC paper bags,custom eco paper bags,eco paper bag design,eco paper bags hong kong,eco paper bag quote,eco paper bag printing service,sustainable paper bags,eco friendly shopping bags',
+      'ja': 'エコ紙袋印刷,再生紙袋,環境に優しい紙袋,エコ紙袋,FSC紙袋,カスタムエコ紙袋,エコ紙袋デザイン,エコ紙袋香港,エコ紙袋見積もり',
     },
     h1Suffix: {
       'zh-hk': '專業環保紙袋服務 | 智印港',
@@ -1374,9 +1374,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'small-bags': {
     slug: 'small-bags',
     keywords: {
-      'zh-hk': '小號紙袋,香港小號,小號紙袋印刷,香港印刷,小型紙袋,迷你紙袋,小尺寸紙袋,精品小紙袋,飾品紙袋',
-      en: 'small bags,small bags printing hong kong, hong kong small bags',
-      ja: '小判紙袋,香港小判,小判紙袋印刷',
+      'zh-hk': '小紙袋印刷,小型紙袋,迷你紙袋,精品小紙袋,小紙袋訂造,小紙袋設計,小紙袋香港,小紙袋報價,小紙袋速印,小紙袋少量印刷,飾品小紙袋,化妝品小紙袋,禮品小紙袋',
+      'en': 'small paper bags,mini paper bags,tiny paper bags,small gift bags,custom small paper bags,small bag design,small bags hong kong,small bag quote,small bag printing service,jewelry small bags,cosmetic small bags,party favor bags',
+      'ja': '小判紙袋印刷,小さい紙袋,ミニ紙袋,小判ギフト袋,カスタム小判紙袋,小判バッグデザイン,小判バッグ香港,小判バッグ見積もり',
     },
     h1Suffix: {
       'zh-hk': '專業小號紙袋服務 | 智印港',
@@ -1438,9 +1438,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'large-bags': {
     slug: 'large-bags',
     keywords: {
-      'zh-hk': '大號紙袋,香港大號,大號紙袋印刷,香港印刷,大型紙袋,加大紙袋,大尺寸紙袋,購物大紙袋,服裝紙袋',
-      en: 'large bags,large bags printing hong kong, hong kong large bags',
-      ja: '大判紙袋,香港大判,大判紙袋印刷',
+      'zh-hk': '大紙袋印刷,大型紙袋,加大紙袋,大碼購物袋,大紙袋訂造,大紙袋設計,大紙袋香港,大紙袋報價,大紙袋速印,大紙袋少量印刷,服裝大紙袋,禮品大紙袋,商業大紙袋',
+      'en': 'large paper bags,big paper bags,oversized paper bags,large shopping bags,custom large paper bags,large bag design,large bags hong kong,large bag quote,large bag printing service,clothing large bags,gift large bags,commercial large bags',
+      'ja': '大判紙袋印刷,大きい紙袋,オーバーサイズ紙袋,大判ショッピング袋,カスタム大判紙袋,大判バッグデザイン,大判バッグ香港,大判バッグ見積もり',
     },
     h1Suffix: {
       'zh-hk': '專業大號紙袋服務 | 智印港',
@@ -1676,9 +1676,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'folded-leaflets': {
     slug: 'folded-leaflets',
     keywords: {
-      'zh-hk': '摺疊宣傳單張,香港摺疊宣張,摺疊宣傳單張印刷,香港印刷',
-      en: 'folded leaflets,folded leaflets printing hong kong, hong kong folded leaflets',
-      ja: '折りたたみパンフレット,香港折りたたみパンフレット,折りたたみパンフレット印刷',
+      'zh-hk': '摺疊傳單印刷,摺頁傳單,對摺傳單,三摺頁印刷,四摺傳單,Z形摺傳單,門摺傳單,摺疊傳單設計,摺疊傳單香港,摺疊傳單報價,摺疊傳單速印,摺疊傳單少量印刷,宣傳摺頁',
+      'en': 'folded leaflet printing,folded flyers,folded brochures,bi fold leaflets,tri fold leaflets,quad fold leaflets,z fold leaflets,gate fold leaflets,folded leaflet design,folded leaflets hong kong,folded leaflet quote,folded leaflet printing service',
+      'ja': '折りたたみチラシ印刷,折りパンフレット,二つ折りチラシ,三つ折りパンフレット,四つ折りチラシ,Z折りチラシ,折りたたみチラシデザイン,折りたたみチラシ香港,折りたたみチラシ見積もり',
     },
     h1Suffix: {
       'zh-hk': '專業摺疊宣傳單張服務 | 智印港',
@@ -2024,9 +2024,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'outdoor-posters': {
     slug: 'outdoor-posters',
     keywords: {
-      'zh-hk': '戶外海報,香港戶外,戶外海報印刷,香港印刷,印刷即日速遞送貨',
-      en: 'outdoor posters,outdoor posters printing hong kong, hong kong outdoor posters',
-      ja: '屋外ポスター,香港屋外,屋外ポスター印刷',
+      'zh-hk': '戶外海報印刷,防水海報,防曬海報,戶外廣告海報,大型戶外海報,戶外海報訂造,戶外海報設計,戶外海報香港,戶外海報報價,戶外海報速印,戶外海報少量印刷,街招海報,建築棚架海報',
+      'en': 'outdoor poster printing,waterproof posters,weatherproof posters,outdoor advertising posters,large outdoor posters,custom outdoor posters,outdoor poster design,outdoor posters hong kong,outdoor poster quote,outdoor poster printing service,construction hoarding posters,street posters',
+      'ja': '屋外ポスター印刷,防水ポスター,耐候性ポスター,屋外広告ポスター,大型屋外ポスター,カスタム屋外ポスター,屋外ポスターデザイン,屋外ポスター香港,屋外ポスター見積もり',
     },
     h1Suffix: {
       'zh-hk': '專業戶外海報服務 | 智印港',
@@ -2082,9 +2082,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'display-posters': {
     slug: 'display-posters',
     keywords: {
-      'zh-hk': '展架海報,香港展架,展架海報印刷,香港印刷,展示海報,易拉架海報,X展架海報,落地海報,立式海報',
-      en: 'display posters,display posters printing hong kong, hong kong display posters',
-      ja: '展示用ポスター,香港展示用,展示用ポスター印刷',
+      'zh-hk': '展示海報印刷,展板海報,陳列海報,賣場海報,店內展示海報,展示海報訂造,展示海報設計,展示海報香港,展示海報報價,展示海報速印,展示海報少量印刷,零售展示海報,櫥窗海報',
+      'en': 'display poster printing,display posters,retail display posters,store posters,shop display posters,custom display posters,display poster design,display posters hong kong,display poster quote,display poster printing service,visual merchandising posters,window display posters',
+      'ja': 'ディスプレイポスター印刷,ディスプレイポスター,陳列ポスター,店舗ポスター,小売ディスプレイポスター,カスタムディスプレイポスター,ディスプレイポスターデザイン,ディスプレイポスター香港',
     },
     h1Suffix: {
       'zh-hk': '專業展架海報服務 | 智印港',
@@ -2140,9 +2140,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'art-posters': {
     slug: 'art-posters',
     keywords: {
-      'zh-hk': '藝術海報,香港藝術,藝術海報印刷,香港印刷,畫作海報,攝影海報,裝飾海報,家居海報,畫廊海報',
-      en: 'art posters,art posters printing hong kong, hong kong art posters',
-      ja: 'アートポスター,香港アート,アートポスター印刷',
+      'zh-hk': '藝術海報印刷,畫作海報,美術海報,展覽海報,藝術品複製,藝術海報訂造,藝術海報設計,藝術海報香港,藝術海報報價,藝術海報速印,藝術海報少量印刷,畫廊海報,攝影海報',
+      'en': 'art poster printing,art prints,fine art posters,exhibition posters,art reproductions,custom art posters,art poster design,art posters hong kong,art poster quote,art poster printing service,gallery posters,photography posters',
+      'ja': 'アートポスター印刷,アートプリント,美術ポスター,展覧会ポスター,美術品複製,カスタムアートポスター,アートポスターデザイン,アートポスター香港,アートポスター見積もり',
     },
     h1Suffix: {
       'zh-hk': '專業藝術海報服務 | 智印港',
@@ -2198,9 +2198,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'adhesive-posters': {
     slug: 'adhesive-posters',
     keywords: {
-      'zh-hk': '背膠海報,香港背膠,背膠海報印刷,香港印刷,自粘海報,粘貼海報,牆身海報,玻璃海報,可移除背膠海報',
-      en: 'adhesive posters,adhesive posters printing hong kong, hong kong adhesive posters',
-      ja: '粘着ポスター,香港粘着,粘着ポスター印刷',
+      'zh-hk': '背膠海報印刷,自粘海報,貼牆海報,可移海報,背膠海報訂造,背膠海報設計,背膠海報香港,背膠海報報價,背膠海報速印,背膠海報少量印刷,牆貼海報,窗貼海報,室內背膠海報',
+      'en': 'adhesive poster printing,self adhesive posters,stick on posters,wall posters,removable adhesive posters,custom adhesive posters,adhesive poster design,adhesive posters hong kong,adhesive poster quote,adhesive poster printing service,indoor adhesive posters,window cling posters',
+      'ja': '粘着ポスター印刷,セルフ粘着ポスター,壁貼りポスター,はがせる粘着ポスター,カスタム粘着ポスター,粘着ポスターデザイン,粘着ポスター香港,粘着ポスター見積もり,屋内粘着ポスター',
     },
     h1Suffix: {
       'zh-hk': '專業背膠海報服務 | 智印港',
@@ -2256,9 +2256,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'gift-boxes': {
     slug: 'gift-boxes',
     keywords: {
-      'zh-hk': '禮品盒定制,香港禮品盒,禮品盒印刷,化妝品包裝盒,食品包裝盒,手工皂盒,月餅盒定制,小批量包裝盒,產品包裝盒,紙盒印刷,印刷即日速遞送貨',
-      en: 'gift boxes,gift box printing hong kong,cosmetic packaging boxes,food packaging boxes,handmade soap boxes,mooncake box custom,small batch packaging,product packaging,paper box printing,custom box printing',
-      ja: 'ギフトボックス,香港ギフトボックス,化粧品パッケージ,食品箱,手作り石鹸箱,月餅箱,小ロットパッケージ,商品パッケージ,紙箱印刷,オーダーメイド箱印刷',
+      'zh-hk': '禮品盒印刷,禮物盒制作,精美禮盒,禮盒包裝印刷,禮品盒訂造,禮品盒設計,禮品盒香港,禮品盒報價,禮品盒速印,禮品盒少量印刷,高檔禮品盒,品牌禮盒,節日禮盒',
+      'en': 'gift box printing,present boxes,luxury gift boxes,gift packaging printing,custom gift boxes,gift box design,gift boxes hong kong,gift box quote,gift box printing service,premium gift boxes,branded gift boxes,festival gift boxes',
+      'ja': 'ギフトボックス印刷,プレゼント箱,高級ギフトボックス,ギフトパッケージ印刷,カスタムギフトボックス,ギフトボックスデザイン,ギフトボックス香港,ギフトボックス見積もり',
     },
     h1Suffix: {
       'zh-hk': '專業禮品盒定制服務 | 智印港',
@@ -2320,9 +2320,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'cosmetic-boxes': {
     slug: 'cosmetic-boxes',
     keywords: {
-      'zh-hk': '化妝品盒,香港化妝品盒,化妝品盒印刷,香港印刷,印刷即日速遞送貨',
-      en: 'cosmetic boxes,cosmetic boxes printing hong kong, hong kong cosmetic boxes',
-      ja: '化粧品箱,香港化粧品箱,化粧品箱印刷',
+      'zh-hk': '化妝品盒印刷,護膚品包裝盒,彩妝盒印刷,美容產品包裝,化妝品盒訂造,化妝品盒設計,化妝品盒香港,化妝品盒報價,化妝品盒速印,化妝品盒少量印刷,精緻化妝品盒,品牌化妝品盒',
+      'en': 'cosmetic box printing,skincare packaging boxes,makeup box printing,beauty product packaging,custom cosmetic boxes,cosmetic box design,cosmetic boxes hong kong,cosmetic box quote,cosmetic box printing service,premium cosmetic boxes,branded cosmetic packaging',
+      'ja': '化粧品箱印刷,スキンケアパッケージ箱,メイクボックス印刷,美容製品パッケージ,カスタム化粧品箱,化粧品箱デザイン,化粧品箱香港,化粧品箱見積もり',
     },
     h1Suffix: {
       'zh-hk': '專業化妝品盒服務 | 智印港',
@@ -2384,9 +2384,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'food-boxes': {
     slug: 'food-boxes',
     keywords: {
-      'zh-hk': '食品包裝盒,香港食品盒,食品包裝盒印刷,香港印刷',
-      en: 'food boxes,food boxes printing hong kong, hong kong food boxes',
-      ja: '食品包装箱,香港食品箱,食品包装箱印刷',
+      'zh-hk': '食品盒印刷,食物包裝盒,餐盒印刷,外賣盒印刷,食品級包裝盒,食品盒訂造,食品盒設計,食品盒香港,食品盒報價,食品盒速印,食品盒少量印刷,烘焙包裝盒,甜品盒印刷',
+      'en': 'food box printing,food packaging boxes,meal box printing,takeaway box printing,food grade packaging,custom food boxes,food box design,food boxes hong kong,food box quote,food box printing service,bakery packaging boxes,dessert box printing',
+      'ja': '食品箱印刷,食品パッケージ箱,弁当箱印刷,テイクアウト箱印刷,食品級パッケージ,カスタム食品箱,食品箱デザイン,食品箱香港,食品箱見積もり,ベーカリーパッケージ箱,デザート箱印刷',
     },
     h1Suffix: {
       'zh-hk': '專業食品包裝盒服務 | 智印港',
@@ -2448,9 +2448,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'mailer-boxes': {
     slug: 'mailer-boxes',
     keywords: {
-      'zh-hk': '快遞盒/飛機盒,香港快遞盒/飛機盒,快遞盒/飛機盒印刷,香港印刷,印刷即日速遞送貨,飛機盒,快遞盒,郵寄盒,電商包裝盒,發貨盒,瓦楞紙盒',
-      en: 'mailer boxes,mailer boxes printing hong kong, hong kong mailer boxes',
-      ja: '発送箱,香港発送箱,発送箱印刷',
+      'zh-hk': '飛機盒印刷,快遞盒印刷,郵寄盒制作,瓦通紙盒,電商包裝盒,飛機盒訂造,飛機盒設計,飛機盒香港,飛機盒報價,飛機盒速印,飛機盒少量印刷,包裝飛機盒,定制快遞盒',
+      'en': 'mailer box shipping boxes,corrugated mailer boxes,ecommerce packaging boxes,custom mailer boxes,mailer box design,mailer boxes hong kong,mailer box quote,mailer box printing service,branded shipping boxes,subscription box printing,product mailer boxes',
+      'ja': 'メーラーボックス印刷,配送用箱,段ボールメーラーボックス,ECパッケージ箱,カスタムメーラーボックス,メーラーボックスデザイン,メーラーボックス香港,メーラーボックス見積もり',
     },
     h1Suffix: {
       'zh-hk': '專業快遞盒/飛機盒服務 | 智印港',
@@ -2512,9 +2512,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'folding-boxes': {
     slug: 'folding-boxes',
     keywords: {
-      'zh-hk': '折疊盒,香港折疊盒,折疊盒印刷,香港印刷,組裝盒,平攤盒,摺盒,手工盒,禮品折疊盒',
-      en: 'folding boxes,folding boxes printing hong kong, hong kong folding boxes',
-      ja: '折りたたみ箱,香港折りたたみ箱,折りたたみ箱印刷',
+      'zh-hk': '摺盒印刷,摺疊盒制作,平摺盒印刷,卡紙摺盒,自動摺盒,摺盒包裝,摺盒訂造,摺盒設計,摺盒香港,摺盒報價,摺盒速印,摺盒少量印刷,產品摺盒,禮品摺盒',
+      'en': 'folding box printing,foldable boxes,carton folding boxes,cardboard folding boxes,auto lock boxes,folding packaging,folding box design,folding boxes hong kong,folding box quote,folding box printing service,product folding boxes,gift folding boxes',
+      'ja': '組み立て箱印刷,折りたたみ箱,カートン折りたたみ箱,段ボール折りたたみ箱,自動ロック箱,折りたたみパッケージ,折りたたみ箱デザイン,折りたたみ箱香港,折りたたみ箱見積もり',
     },
     h1Suffix: {
       'zh-hk': '專業折疊盒服務 | 智印港',
@@ -2576,9 +2576,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'rigid-boxes': {
     slug: 'rigid-boxes',
     keywords: {
-      'zh-hk': '精裝盒,香港精裝盒,精裝盒印刷,香港印刷,硬盒,天地蓋盒,書型盒,磁吸盒,高檔硬盒',
-      en: 'rigid boxes,rigid boxes printing hong kong, hong kong rigid boxes',
-      ja: '上製本箱,香港上製本箱,上製本箱印刷',
+      'zh-hk': '硬盒印刷,精裝盒制作,硬紙盒包裝,禮品硬盒,高檔硬盒印刷,硬盒訂造,硬盒設計,硬盒香港,硬盒報價,硬盒速印,硬盒少量印刷,天地蓋硬盒,書型硬盒,抽屜硬盒',
+      'en': 'rigid box printing,rigid boxes,luxury rigid packaging,premium rigid boxes,setup boxes,rigid box design,rigid boxes hong kong,rigid box quote,rigid box printing service,gift rigid boxes,telescope rigid boxes,book style rigid boxes,drawer rigid boxes',
+      'ja': '化粧箱印刷,リジッドボックス,高級リジッドパッケージ,プレミアムリジッドボックス,セットアップボックス,リジッドボックスデザイン,リジッドボックス香港,リジッドボックス見積もり',
     },
     h1Suffix: {
       'zh-hk': '專業精裝盒服務 | 智印港',
@@ -2640,9 +2640,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'foil-red-packets': {
     slug: 'foil-red-packets',
     keywords: {
-      'zh-hk': '燙金利是封,香港燙金,燙金利是封印刷,香港印刷,印刷即日速遞送貨,金箔利是封,高級利是封,豪華利是封,燙銀利是封,立體利是封',
-      en: 'foil red packets,foil red packets printing hong kong, hong kong foil red packets',
-      ja: '箔押しポチ袋,香港箔押しポチ袋,箔押しポチ袋印刷',
+      'zh-hk': '燙金利是封印刷,金銀利是封,金箔利是封,奢華利是封,燙印利是封,燙金利是封訂造,燙金利是封設計,燙金利是封香港,燙金利是封報價,燙金利是封速印,燙金利是封少量印刷,高級燙金利是封,公司燙金利是封',
+      'en': 'foil red packet printing,gold foil red packets,silver foil red packets,luxury lai see packets,foil stamped red packets,custom foil red packets,foil red packet design,foil red packets hong kong,foil red packet quote,foil red packet printing service,premium foil red packets',
+      'ja': '箔押し红包印刷,ゴールド箔红包,シルバー箔红包,高級红包,箔押し红包,カスタム箔押し红包,箔押し红包デザイン,箔押し红包香港,箔押し红包見積もり',
     },
     h1Suffix: {
       'zh-hk': '專業燙金利是封服務 | 智印港',
@@ -2701,9 +2701,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'embossed-red-packets': {
     slug: 'embossed-red-packets',
     keywords: {
-      'zh-hk': '浮雕利是封,香港浮雕,浮雕利是封印刷,香港印刷,凹凸利是封,壓紋利是封,立體壓紋利是封,質感利是封,觸感利是封',
-      en: 'embossed red packets,embossed red packets printing hong kong, hong kong embossed red packets',
-      ja: 'エンボスポチ袋,香港エンボスポチ袋,エンボスポチ袋印刷',
+      'zh-hk': '凹凸利是封印刷,立體利是封,浮雕利是封,凹凸工藝利是封,立體燙金利是封,凹凸利是封訂造,凹凸利是封設計,凹凸利是封香港,凹凸利是封報價,凹凸利是封速印,凹凸利是封少量印刷,3D效果利是封,凹凸質感利是封',
+      'en': 'embossed red packet printing,3d red packets,relief red packets,debossed red packets,embossed lai see packets,custom embossed red packets,embossed red packet design,embossed red packets hong kong,embossed red packet quote,embossed red packet printing service,luxury embossed red packets',
+      'ja': 'エンボス红包印刷,立体红包,リリーフ红包,エンボス工芸红包,カスタムエンボス红包,エンボス红包デザイン,エンボス红包香港,エンボス红包見積もり',
     },
     h1Suffix: {
       'zh-hk': '專業浮雕利是封服務 | 智印港',
@@ -2762,9 +2762,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'custom-red-packets': {
     slug: 'custom-red-packets',
     keywords: {
-      'zh-hk': '定制利是封,香港利是封,利是封印刷,香港印刷,印刷即日速遞送貨,公司利是封,品牌利是封,企業利是封,logo利是封,專屬利是封',
-      en: 'custom red packets, red packets printing hong kong, hong kong  red packets',
-      ja: 'オリジナルポチ袋,香港オリジナルポチ袋,オリジナルポチ袋印刷',
+      'zh-hk': '定制利是封印刷,訂造利是封,個人化利是封,公司利是封,專屬利是封,定制利是封訂造,定制利是封設計,定制利是封香港,定制利是封報價,定制利是封速印,定制利是封少量印刷,品牌利是封,Logo利是封',
+      'en': 'custom red packet printing,personalized red packets,custom lai see packets,company red packets,branded red packets,custom red packet design,custom red packets hong kong,custom red packet quote,custom red packet printing service,logo red packets,exclusive red packets',
+      'ja': 'オーダーメイド红包印刷,パーソナライズ红包,カスタム红包,会社红包,ブランド红包,オーダーメイド红包デザイン,オーダーメイド红包香港,オーダーメイド红包見積もり',
     },
     h1Suffix: {
       'zh-hk': '專業定制利是封服務 | 智印港',
@@ -2823,9 +2823,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'cartoon-red-packets': {
     slug: 'cartoon-red-packets',
     keywords: {
-      'zh-hk': '卡通利是封,香港卡通,卡通利是封印刷,香港印刷,可愛利是封,動漫利是封,兒童利是封,生肖利是封,主題利是封',
-      en: 'cartoon red packets,cartoon red packets printing hong kong, hong kong cartoon red packets',
-      ja: 'キャラクターポチ袋,香港キャラクターポチ袋,キャラクターポチ袋印刷',
+      'zh-hk': '卡通利是封印刷,Q版利是封,可愛利是封,動漫利是封,卡通紅包,卡通利是封訂造,卡通利是封設計,卡通利是封香港,卡通利是封報價,卡通利是封速印,卡通利是封少量印刷,生肖利是封,卡通人物利是封',
+      'en': 'cartoon red packet printing,cute red packets,anime red packets,cartoon lai see packets,character red packets,custom cartoon red packets,cartoon red packet design,cartoon red packets hong kong,cartoon red packet quote,cartoon red packet printing service,zodiac red packets',
+      'ja': 'キャラクター红包印刷,可愛い红包,アニメ红包,漫画红包,キャラクター红包,カスタムキャラクター红包,キャラクター红包デザイン,キャラクター红包香港,キャラクター红包見積もり',
     },
     h1Suffix: {
       'zh-hk': '專業卡通利是封服務 | 智印港',
@@ -2884,9 +2884,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'eco-red-packets': {
     slug: 'eco-red-packets',
     keywords: {
-      'zh-hk': '環保利是封,香港環保,環保利是封印刷,香港印刷,再生紙利是封,FSC利是封,綠色利是封,可持續利是封,環保紅包',
-      en: 'eco red packets,eco red packets printing hong kong, hong kong eco red packets',
-      ja: 'エコポチ袋,香港エコポチ袋,エコポチ袋印刷',
+      'zh-hk': '環保利是封印刷,再生紙利是封,環保紅包,綠色利是封,FSC利是封,環保利是封訂造,環保利是封設計,環保利是封香港,環保利是封報價,環保利是封速印,環保利是封少量印刷,可持續利是封,環保材質利是封',
+      'en': 'eco red packet printing,recycled paper red packets,eco friendly lai see packets,green red packets,sustainable red packets,eco red packet design,eco red packets hong kong,eco red packet quote,eco red packet printing service,FSC red packets,environmentally friendly red packets',
+      'ja': 'エコ红包印刷,再生紙红包,エコ红包,グリーン红包,持続可能红包,エコ红包デザイン,エコ红包香港,エコ红包見積もり',
     },
     h1Suffix: {
       'zh-hk': '專業環保利是封服務 | 智印港',
@@ -2945,9 +2945,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'large-red-packets': {
     slug: 'large-red-packets',
     keywords: {
-      'zh-hk': '大號利是封,香港大號,大號利是封印刷,香港印刷,大型利是封,加大利是封,厚款利是封,豪華大紅包,超大利是封',
-      en: 'large red packets,large red packets printing hong kong, hong kong large red packets',
-      ja: '大判ポチ袋,香港大判ポチ袋,大判ポチ袋印刷',
+      'zh-hk': '大號利是封印刷,大利是封,加大利是封,大碼利是封,大紅包,大號利是封訂造,大號利是封設計,大號利是封香港,大號利是封報價,大號利是封速印,大號利是封少量印刷,豪華大利是封,超大利是封',
+      'en': 'large red packet printing,big red packets,oversized red packets,large lai see packets,jumbo red packets,custom large red packets,large red packet design,large red packets hong kong,large red packet quote,large red packet printing service,extra large red packets',
+      'ja': '大判红包印刷,大きい红包,特大红包,大判红包,ジャンボ红包,カスタム大判红包,大判红包デザイン,大判红包香港,大判红包見積もり',
     },
     h1Suffix: {
       'zh-hk': '專業大號利是封服務 | 智印港',
@@ -3006,9 +3006,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'wall-calendars': {
     slug: 'wall-calendars',
     keywords: {
-      'zh-hk': '掛牆年曆,香港掛牆,掛牆年曆印刷,香港印刷,印刷即日速遞送貨,壁掛曆,月曆,掛曆,年曆印刷,企業年曆',
-      en: 'wall calendars,wall calendars printing hong kong, hong kong wall calendars',
-      ja: '壁掛けカレンダー,香港壁掛け,壁掛けカレンダー印刷',
+      'zh-hk': '掛曆印刷,牆上年曆,掛牆年曆,月曆印刷,大Calendar印刷,掛曆訂造,掛曆設計,掛曆香港,掛曆報價,掛曆速印,掛曆少量印刷,公司掛曆,宣傳掛曆',
+      'en': 'wall calendar printing,hanging calendars,wall calendars,custom wall calendars,large wall calendar printing,wall calendar design,wall calendars hong kong,wall calendar quote,wall calendar printing service,company wall calendars,promotional wall calendars',
+      'ja': '壁掛けカレンダー印刷,掛けカレンダー,ウォールカレンダー,カスタム壁掛けカレンダー,壁掛けカレンダーデザイン,壁掛けカレンダー香港,壁掛けカレンダー見積もり',
     },
     h1Suffix: {
       'zh-hk': '專業掛牆年曆服務 | 智印港',
@@ -3128,9 +3128,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'custom-calendars': {
     slug: 'custom-calendars',
     keywords: {
-      'zh-hk': '定制年曆,香港年曆,年曆印刷,香港印刷,專屬年曆,個人化年曆,訂造年曆,公司年曆,禮品年曆',
-      en: 'custom calendars, calendars printing hong kong, hong kong  calendars',
-      ja: 'オリジナルカレンダー,香港オリジナル,オリジナルカレンダー印刷',
+      'zh-hk': '定制年曆印刷,個人化年曆,訂造年曆,公司年曆訂制,禮品年曆印刷,專屬年曆制作,定制年曆設計,定制年曆香港,定制年曆報價,定制年曆速印,定制年曆少量印刷,企業定制年曆',
+      'en': 'custom calendar printing,personalized calendars,custom made calendars,company calendar printing,promotional calendar printing,custom calendar design,custom calendars hong kong,custom calendar quote,custom calendar printing service,branded calendars,bespoke calendars',
+      'ja': 'オーダーメイドカレンダー印刷,パーソナライズカレンダー,カスタムカレンダー,会社カレンダー印刷,販促カレンダー印刷,カスタムカレンダーデザイン,カスタムカレンダー香港,カスタムカレンダー見積もり',
     },
     h1Suffix: {
       'zh-hk': '專業定制年曆服務 | 智印港',
@@ -3189,9 +3189,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'mini-calendars': {
     slug: 'mini-calendars',
     keywords: {
-      'zh-hk': '迷你年曆,香港迷你,迷你年曆印刷,香港印刷,小型年曆,袖珍年曆,口袋年曆,卡片年曆,便攜年曆',
-      en: 'mini calendars,mini calendars printing hong kong, hong kong mini calendars',
-      ja: 'ミニカレンダー,香港ミニ,ミニカレンダー印刷',
+      'zh-hk': '迷你年曆印刷,小型年曆,口袋年曆,迷你日曆印刷,小巧年曆制作,迷你年曆訂造,迷你年曆設計,迷你年曆香港,迷你年曆報價,迷你年曆速印,迷你年曆少量印刷,迷你年曆禮品',
+      'en': 'mini calendar printing,small calendars,pocket calendars,mini desk calendars,tiny calendar printing,mini calendar design,mini calendars hong kong,mini calendar quote,mini calendar printing service,custom mini calendars',
+      'ja': 'ミニカレンダー印刷,小型カレンダー,ポケットカレンダー,ミニ卓上カレンダー,ミニカレンダーデザイン,ミニカレンダー香港,ミニカレンダー見積もり,オーダーメイドミニカレンダー',
     },
     h1Suffix: {
       'zh-hk': '專業迷你年曆服務 | 智印港',
@@ -3250,9 +3250,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'photo-frame-calendars': {
     slug: 'photo-frame-calendars',
     keywords: {
-      'zh-hk': '相框年曆,香港相框,相框年曆印刷,香港印刷,照片年曆,圖片年曆,紀念年曆,家庭年曆,寶寶年曆',
-      en: 'photo frame calendars,photo frame calendars printing hong kong, hong kong photo frame calendars',
-      ja: 'フォトフレームカレンダー,香港フォトフレーム,フォトフレームカレンダー印刷',
+      'zh-hk': '相框年曆印刷,相片年曆,相架日曆,照片年曆制作,相框月曆印刷,相框年曆訂造,相框年曆設計,相框年曆香港,相框年曆報價,相框年曆速印,相框年曆少量印刷,相框年曆禮品',
+      'en': 'photo frame calendar printing,photo calendars,picture frame calendars,personalized photo calendars,photo frame calendar design,photo frame calendars hong kong,photo frame calendar quote,photo frame calendar printing service,custom photo calendars',
+      'ja': 'フォトフレームカレンダー印刷,写真カレンダー,フォトカレンダー,パーソナライズフォトカレンダー,フォトフレームカレンダーデザイン,フォトフレームカレンダー香港,フォトフレームカレンダー見積もり',
     },
     h1Suffix: {
       'zh-hk': '專業相框年曆服務 | 智印港',
@@ -3311,9 +3311,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'magnetic-calendars': {
     slug: 'magnetic-calendars',
     keywords: {
-      'zh-hk': '磁石年曆,香港磁石,磁石年曆印刷,香港印刷,冰箱貼年曆,磁吸年曆,貼牆年曆,磁性月曆,便利年曆',
-      en: 'magnetic calendars,magnetic calendars printing hong kong, hong kong magnetic calendars',
-      ja: 'マグネットカレンダー,香港マグネット,マグネットカレンダー印刷',
+      'zh-hk': '磁石年曆印刷,冰箱貼年曆,磁性年曆,磁吸年曆制作,磁石日曆印刷,磁鐵年曆訂造,磁石年曆設計,磁石年曆香港,磁石年曆報價,磁石年曆速印,磁石年曆少量印刷,磁石年曆禮品',
+      'en': 'magnetic calendar printing,fridge magnet calendars,magnetic calendars,custom magnetic calendars,magnetic calendar printing,magnetic calendar design,magnetic calendars hong kong,magnetic calendar quote,magnetic calendar printing service,promotional magnetic calendars',
+      'ja': 'マグネットカレンダー印刷,冷蔵庫マグネットカレンダー,磁石カレンダー,カスタムマグネットカレンダー,マグネットカレンダーデザイン,マグネットカレンダー香港,マグネットカレンダー見積もり',
     },
     h1Suffix: {
       'zh-hk': '專業磁石年曆服務 | 智印港',
@@ -3546,9 +3546,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'drink-menus': {
     slug: 'drink-menus',
     keywords: {
-      'zh-hk': '酒水牌,香港酒水牌,酒水牌印刷,香港印刷,酒水單,飲品餐牌,酒吧餐牌,咖啡餐牌,茶餐牌,雞尾酒單',
-      en: 'drink menus,drink menus printing hong kong, hong kong drink menus',
-      ja: 'ドリンクメニュー,香港ドリンク,ドリンクメニュー印刷',
+      'zh-hk': '飲品餐牌印刷,酒水單印刷,飲料菜單,酒吧餐牌,咖啡店餐牌,茶餐廳餐牌,飲品餐牌設計,飲品餐牌香港,飲品餐牌報價,飲品餐牌速印,飲品餐牌少量印刷,雞尾酒餐牌,特色飲品餐牌',
+      'en': 'drink menu printing,drink menus,beverage menu printing,bar menus,cafe menus,tea restaurant menus,drink menu design,drink menus hong kong,drink menu quote,drink menu printing service,cocktail menus,signature drink menus',
+      'ja': 'ドリンクメニュー印刷,飲み物メニュー,ドリンクメニュー,バーメニュー,カフェメニュー,ドリンクメニューデザイン,ドリンクメニュー香港,ドリンクメニュー見積もり,カクテルメニュー',
     },
     h1Suffix: {
       'zh-hk': '專業酒水牌服務 | 智印港',
@@ -3604,9 +3604,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'disposable-menus': {
     slug: 'disposable-menus',
     keywords: {
-      'zh-hk': '一次性餐牌,香港一次性,一次性餐牌印刷,香港印刷,即棄餐牌,紙質餐牌,薄紙餐牌,單次餐牌,臨時餐牌',
-      en: 'disposable menus,disposable menus printing hong kong, hong kong disposable menus',
-      ja: '使い捨てメニュー,香港使い捨て,使い捨てメニュー印刷',
+      'zh-hk': '即棄餐牌印刷,一次性餐牌,即棄菜單,紙質餐牌印刷,即棄餐牌訂造,即棄餐牌設計,即棄餐牌香港,即棄餐牌報價,即棄餐牌速印,即棄餐牌少量印刷,餐廳即棄餐牌,外賣餐牌印刷',
+      'en': 'disposable menu printing,disposable menus,one time use menus,paper menus printing,temporary menus,disposable menu design,disposable menus hong kong,disposable menu quote,disposable menu printing service,restaurant disposable menus,takeaway menu printing',
+      'ja': '使い捨てメニュー印刷,使い捨てメニュー,ワンタイムメニュー,紙メニュー印刷,使い捨てメニューデザイン,使い捨てメニュー香港,使い捨てメニュー見積もり,レストラン使い捨てメニュー',
     },
     h1Suffix: {
       'zh-hk': '專業一次性餐牌服務 | 智印港',
@@ -3717,9 +3717,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'roll-up-banners': {
     slug: 'roll-up-banners',
     keywords: {
-      'zh-hk': '易拉寶,香港易拉寶,易拉寶印刷,香港印刷,印刷即日速遞送貨,易拉架,拉架,伸縮橫額,便攜橫額,活動易拉架',
-      en: 'roll-up banners,roll-up banners printing hong kong, hong kong roll-up banners',
-      ja: 'ロールアップバナー,香港ロールアップ,ロールアップバナー印刷',
+      'zh-hk': '易拉架,易拉架印刷,易拉寶,易拉架制作,便攜橫額,展覽易拉架,活動易拉架,易拉架設計,易拉架香港,易拉架訂造,易拉架連設計,易拉架快速制作,易拉架報價',
+      'en': 'roll up banners,roll up banner printing,retractable banners,pull up banners,portable banners,exhibition roll up banners,event roll up banners,roll up banner design,roll up banner hong kong,custom roll up banners,roll up stand banners,rollup banner printing',
+      'ja': 'ロールアップバナー,ロールアップバナー印刷,巻き取りバナー,持ち運びバナー,展示会用ロールアップバナー,イベントロールアップバナー,ロールアップバナーデザイン,ロールアップバナー香港,オーダーメイドロールアップバナー',
     },
     h1Suffix: {
       'zh-hk': '專業易拉寶服務 | 智印港',
@@ -3827,9 +3827,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'vehicle-wraps': {
     slug: 'vehicle-wraps',
     keywords: {
-      'zh-hk': '車身廣告,香港車身廣告,車身廣告印刷,香港印刷,車身貼,汽車貼紙,的士廣告,貨車廣告,巴士廣告',
-      en: 'vehicle wraps,vehicle wraps printing hong kong, hong kong vehicle wraps',
-      ja: 'カーラッピング,香港カーラッピング,カーラッピング印刷',
+      'zh-hk': '車身貼紙,車身廣告貼紙,車貼印刷,車身包膜,廣告車貼,貨車車身貼,巴士車身廣告,車身貼設計,車身貼香港,汽車貼紙印刷,車身廣告制作,全車貼紙,局部車身貼',
+      'en': 'vehicle wraps,car wrap printing,vehicle graphics,van wraps,car sticker printing,commercial vehicle wraps,truck wraps,bus advertising wraps,vehicle wrap design,vehicle wrap hong kong,fleet vehicle wraps,partial car wraps',
+      'ja': 'カーラッピング,車両ラップ,車体広告,カーステッカー印刷,商用車ラッピング,トラックラッピング,バス広告ラッピング,カーラップデザイン,カーラップ香港,フリートラッピング',
     },
     h1Suffix: {
       'zh-hk': '專業車身廣告服務 | 智印港',
@@ -3882,9 +3882,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'mesh-banners': {
     slug: 'mesh-banners',
     keywords: {
-      'zh-hk': '網格布噴繪,香港網格布噴繪,網格布噴繪印刷,香港印刷,網孔橫額,透風橫額,網眼橫額,防風橫額,建築圍板,工地圍網',
-      en: 'mesh banners,mesh banners printing hong kong, hong kong mesh banners',
-      ja: 'メッシュバナー,香港メッシュ,メッシュバナー印刷',
+      'zh-hk': '網孔橫額,透風橫額,戶外網布橫額,防風橫額印刷,工地圍欄橫額,大型網孔橫額,建築地盤橫額,工程橫額,網布橫額香港,透氣橫額制作,網眼橫額印刷,戶外防風橫額',
+      'en': 'mesh banners,perforated banners,windproof banners,outdoor mesh banners,construction site banners,building site banners,scaffold banners,large mesh banners,mesh banner printing hong kong,wind permeable banners,mesh vinyl banners',
+      'ja': 'メッシュバナー,パンチングバナー,防風バナー,屋外メッシュバナー,建設現場バナー,足場バナー,大型メッシュバナー,メッシュバナー印刷,風通しバナー,メッシュビニールバナー',
     },
     h1Suffix: {
       'zh-hk': '專業網格布噴繪服務 | 智印港',
@@ -3998,9 +3998,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'saddle-stitch-booklets': {
     slug: 'saddle-stitch-booklets',
     keywords: {
-      'zh-hk': '騎馬釘小冊子,香港騎馬釘小冊子,騎馬釘小冊子印刷,香港印刷,印刷即日速遞送貨,騎馬釘書刊,騎釘書,中綴書,小冊子,薄本印刷,雜誌印刷',
-      en: 'saddle stitch booklets,saddle stitch booklets printing hong kong, hong kong saddle stitch booklets',
-      ja: '中綴じ冊子,香港中綴じ冊子,中綴じ冊子印刷',
+      'zh-hk': '騎釘書刊印刷,騎馬釘小冊子,騎釘書制作,騎釘書訂造,騎釘刊物,騎釘宣傳冊,騎釘書設計,騎釘書香港,騎釘書報價,騎釘書速印,騎釘書少量印刷,騎釘書裝訂',
+      'en': 'saddle stitch booklet printing,saddle stitch binding,saddle stitch booklets,saddle stitched brochures,saddle stitch booklet design,saddle stitch booklet hong kong,saddle stitch booklet quote,saddle stitch printing service,saddle stitch pamphlet printing,saddle stitched catalogs',
+      'ja': '中綴じ小冊子印刷,中綴じ製本,中綴じ小冊子,中綴じパンフレット,中綴じ小冊子デザイン,中綴じ小冊子香港,中綴じ小冊子見積もり,中綴じ印刷サービス',
     },
     h1Suffix: {
       'zh-hk': '專業騎馬釘小冊子服務 | 智印港',
@@ -4059,9 +4059,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'perfect-bound-books': {
     slug: 'perfect-bound-books',
     keywords: {
-      'zh-hk': '無線膠裝書籍,香港無線膠裝,無線膠裝書籍印刷,香港印刷,膠裝書,無線膠裝,熱熔膠裝,膠裝書刊,膠裝雜誌,膠裝目錄',
-      en: 'perfect bound books,perfect bound books printing hong kong, hong kong perfect bound books',
-      ja: '無線綴じ本,香港無線綴じ本,無線綴じ本印刷',
+      'zh-hk': '膠裝書印刷,無線膠裝書,膠裝書制作,膠裝書訂造,膠裝書籍,膠裝畫冊,膠裝書設計,膠裝書香港,膠裝書報價,膠裝書速印,膠裝書少量印刷,膠裝書平裝,膠裝書質量',
+      'en': 'perfect bound book printing,perfect bound book binding,perfect bound books,perfect bound book design,perfect bound book hong kong,perfect bound book quote,perfect bound book printing service,softcover book printing,perfect binding books,paperback book printing',
+      'ja': '中綴じ本印刷,无线綴じ本,中綴じ本制作,中綴じ本デザイン,中綴じ本香港,中綴じ本見積もり,中綴じ本印刷サービス,ソフトカバー本印刷,ペーパーバック印刷',
     },
     h1Suffix: {
       'zh-hk': '專業無線膠裝書籍服務 | 智印港',
@@ -4120,9 +4120,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'hardcover-books': {
     slug: 'hardcover-books',
     keywords: {
-      'zh-hk': '精裝書籍,香港精裝,精裝書籍印刷,香港印刷,硬皮書,精裝書,硬殼書,皮面書,線裝書,珍藏書',
-      en: 'hardcover books,hardcover books printing hong kong, hong kong hardcover books',
-      ja: '上製本,香港上製本,上製本印刷',
+      'zh-hk': '硬皮書印刷,精裝書印刷,硬皮書制作,精裝書訂造,畫冊印刷,相冊印刷,紀念冊印刷,硬皮書香港,精裝書設計,硬皮書報價,高級精裝書,硬皮書少量印刷,硬皮書速印',
+      'en': 'hardcover book printing,hardcover book binding,premium book printing,photo book printing,coffee table book printing,commemorative book printing,hardcover book design,hardcover book hong kong,hardcover book quote,hardcover book printing service,hardcover book small quantity',
+      'ja': 'ハードカバー本印刷,上製本印刷,高級本印刷,写真集印刷,記念冊印刷,ハードカバー本デザイン,ハードカバー本香港,ハードカバー本見積もり,ハードカバー本印刷サービス',
     },
     h1Suffix: {
       'zh-hk': '專業精裝書籍服務 | 智印港',
@@ -4181,9 +4181,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'spiral-notebooks': {
     slug: 'spiral-notebooks',
     keywords: {
-      'zh-hk': '線圈筆記本,香港線圈筆記本,線圈筆記本印刷,香港印刷,活頁簿,圈裝筆記本,線圈簿,螺旋裝訂,活頁筆記本',
-      en: 'spiral notebooks,spiral notebooks printing hong kong, hong kong spiral notebooks',
-      ja: 'リングノート,香港リング,リングノート印刷',
+      'zh-hk': '鐵圈筆記簿印刷,線圈筆記本,鐵圈本制作,線圈簿印刷,螺旋裝訂筆記本,鐵圈筆記簿訂造,鐵圈本設計,鐵圈本香港,鐵圈本報價,鐵圈本速印,鐵圈本少量印刷,學校筆記簿,公司筆記簿',
+      'en': 'spiral notebook printing,spiral bound notebooks,wire bound notebooks,coil notebook printing,spiral notebook design,spiral notebook hong kong,spiral notebook quote,spiral notebook printing service,custom spiral notebooks,promotional notebooks',
+      'ja': 'スパイラルノート印刷,ワイヤー綴じノート,コイルノート印刷,スパイラルノートデザイン,スパイラルノート香港,スパイラルノート見積もり,オーダーメイドスパイラルノート,販促ノート',
     },
     h1Suffix: {
       'zh-hk': '專業線圈筆記本服務 | 智印港',
@@ -4358,9 +4358,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'large-envelopes': {
     slug: 'large-envelopes',
     keywords: {
-      'zh-hk': '大號信封,香港大號,大號信封印刷,香港印刷,大型信封,A4信封,C4信封,快遞信封,文件信封',
-      en: 'large envelopes,large envelopes printing hong kong, hong kong large envelopes',
-      ja: '大判封筒,香港大判,大判封筒印刷',
+      'zh-hk': '大型信封印刷,大信封訂造,A4信封,文件信封印刷,大碼信封,大型公文封,大信封設計,大信封香港,大信封報價,大信封速印,大信封少量印刷,商業大信封,牛皮大信封',
+      'en': 'large envelope printing,custom large envelopes,A4 envelopes,document envelopes,big envelopes,large business envelopes,large envelope design,large envelopes hong kong,large envelope quote,large envelope printing service,commercial large envelopes,kraft large envelopes',
+      'ja': '大判封筒印刷,大きい封筒,A4封筒,書類封筒印刷,ビッグ封筒,大型ビジネス封筒,大判封筒デザイン,大判封筒香港,大判封筒見積もり,大判封筒印刷サービス',
     },
     h1Suffix: {
       'zh-hk': '專業大號信封服務 | 智印港',
@@ -4416,9 +4416,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'pearl-envelopes': {
     slug: 'pearl-envelopes',
     keywords: {
-      'zh-hk': '珠光信封,香港珠光,珠光信封印刷,香港印刷,珍珠信封,閃亮信封,特殊紙信封,高檔信封,喜帖信封',
-      en: 'pearl envelopes,pearl envelopes printing hong kong, hong kong pearl envelopes',
-      ja: 'パール封筒,香港パール,パール封筒印刷',
+      'zh-hk': '珠光信封印刷,珍珠紙信封,珠光紙信封,閃亮信封,高貴信封印刷,珠光信封訂造,珠光信封設計,珠光信封香港,珠光信封報價,珠光信封速印,珠光信封少量印刷,喜帖信封,邀請函信封',
+      'en': 'pearl envelope printing,pearl paper envelopes,shimmer envelopes,luxury pearl envelopes,metallic pearl envelopes,pearl envelope design,pearl envelopes hong kong,pearl envelope quote,pearl envelope printing service,pearl finish envelopes,wedding invitation envelopes',
+      'ja': 'パール封筒印刷,パール紙封筒,キラキラ封筒,高級パール封筒,メタリックパール封筒,パール封筒デザイン,パール封筒香港,パール封筒見積もり,パール封筒印刷サービス',
     },
     h1Suffix: {
       'zh-hk': '專業珠光信封服務 | 智印港',
@@ -4474,9 +4474,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'exercise-books': {
     slug: 'exercise-books',
     keywords: {
-      'zh-hk': '作業簿印刷,香港印刷,印刷即日速遞送貨,練習簿,作業簿,學生簿,單行簿,雙行簿,方格簿',
-      en: 'exercise books,exercise books printing hong kong, hong kong exercise books',
-      ja: 'ワークブック印刷,香港ワークブック,ワークブック印刷',
+      'zh-hk': '練習簿印刷,學生練習簿,作業簿印刷,學校簿册,練習簿訂造,練習簿設計,練習簿香港,練習簿報價,練習簿速印,練習簿少量印刷,印刷練習簿,定制練習簿,學校練習簿',
+      'en': 'exercise book printing,student exercise books,workbook printing,school exercise books,custom exercise books,exercise book design,exercise books hong kong,exercise book quote,exercise book printing service,printed exercise books,school workbooks',
+      'ja': '練習帳印刷,生徒用練習帳,ワークブック印刷,学校用練習帳,カスタム練習帳,練習帳デザイン,練習帳香港,練習帳見積もり,練習帳印刷サービス,学校ワークブック',
     },
     h1Suffix: {
       'zh-hk': '專業作業簿印刷服務 | 智印港',
@@ -4532,9 +4532,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'certificates': {
     slug: 'certificates',
     keywords: {
-      'zh-hk': '證書印刷,香港印刷,印刷即日速遞送貨,畢業證書,獎狀,榮譽證書,培訓證書,資格證書',
-      en: 'certificates,certificates printing hong kong, hong kong certificates',
-      ja: '賞状印刷,香港賞状,賞状印刷',
+      'zh-hk': '證書印刷,畢業證書,獎狀印刷,榮譽證書,結業證書,證書制作,證書訂造,證書設計,證書香港,證書報價,證書速印,證書少量印刷,學校證書,公司證書',
+      'en': 'certificate printing,graduation certificates,award certificates,honor certificates,completion certificates,certificate design,certificates hong kong,certificate quote,certificate printing service,custom certificates,school certificates,diploma printing',
+      'ja': '賞状印刷,卒業証書,表彰状,栄誉賞状,修了証書,賞状デザイン,賞状香港,賞状見積もり,賞状印刷サービス,オーダーメイド賞状,学校賞状,卒業証書印刷',
     },
     h1Suffix: {
       'zh-hk': '專業證書印刷服務 | 智印港',
@@ -4590,9 +4590,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'school-flyers': {
     slug: 'school-flyers',
     keywords: {
-      'zh-hk': '學校單張,香港學校單張,學校單張印刷,香港印刷,學校傳單,招生傳單,校園活動傳單,補習社傳單,興趣班傳單,開放日傳單',
-      en: 'school flyers,school flyers printing hong kong, hong kong school flyers',
-      ja: '学校チラシ,香港学校,学校チラシ印刷',
+      'zh-hk': '學校單張印刷,學校宣傳單張,教育機構傳單,招生單張,校園宣傳單,學校活動傳單,學校單張設計,學校單張香港,學校單張報價,學校單張速印,學校單張少量印刷,補習社傳單,學校通告印刷',
+      'en': 'school flyer printing,school flyers,educational flyers,student recruitment flyers,campus flyers,school event flyers,school flyer design,school flyers hong kong,school flyer quote,school flyer printing service,tuition center flyers,school notice printing',
+      'ja': '学校チラシ印刷,学校案内チラシ,教育機関チラシ,生徒募集チラシ,キャンパスチラシ,学校イベントチラシ,学校チラシデザイン,学校チラシ香港,学校チラシ見積もり',
     },
     h1Suffix: {
       'zh-hk': '專業學校單張服務 | 智印港',
@@ -4648,9 +4648,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'textbooks': {
     slug: 'textbooks',
     keywords: {
-      'zh-hk': '教科書印刷,香港教科書,香港印刷,課本印刷,教材印刷,教科書,講義筆記,溫習筆記,校本教材',
-      en: 'textbooks,textbooks printing hong kong, hong kong textbooks',
-      ja: '教科書印刷,香港教科書,教科書印刷',
+      'zh-hk': '課本印刷,教科書印刷,教材印刷,學校課本,課本制作,課本訂造,課本設計,課本香港,課本報價,課本速印,課本少量印刷,印刷課本,定制課本,補充練習印刷',
+      'en': 'textbook printing,school textbook printing,educational material printing,custom textbooks,textbook design,textbooks hong kong,textbook quote,textbook printing service,printed textbooks,workbook printing,supplementary exercise printing',
+      'ja': '教科書印刷,学校教科書印刷,教材印刷,カスタム教科書,教科書デザイン,教科書香港,教科書見積もり,教科書印刷サービス,ワークブック印刷,補助教材印刷',
     },
     h1Suffix: {
       'zh-hk': '專業教科書印刷服務 | 智印港',

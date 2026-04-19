@@ -78,6 +78,7 @@ const staticPages = [
   { path: 'terms/', priority: 0.3, changefreq: 'yearly' },
   { path: 'search/', priority: 0.3, changefreq: 'monthly' },
   { path: 'press-kit/', priority: 0.5, changefreq: 'monthly' },
+  { path: 'service-areas/', priority: 0.7, changefreq: 'monthly' },
 ];
 
 // 生成當前日期
