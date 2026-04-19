@@ -23,6 +23,7 @@ import { ProductCard } from '@/components/ProductCard';
 import { CategoryFilter } from '@/components/CategoryFilter';
 import { Pagination } from '@/components/Pagination';
 import { CategoryPillarContent } from '@/components/CategoryPillarContent';
+import { RegionalContent, RegionalCta, RegionalTrustBadges } from '@/components/seo/RegionalContent';
 
 
 export const dynamic = 'force-static';
@@ -256,6 +257,30 @@ export default function CategoryPage({
         
         {/* Pillar Content — SEO支柱内容区 */}
         <CategoryPillarContent locale={locale} categorySlug={slug} />
+        
+        {/* 地區化內容區域 */}
+        <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 pb-12 pt-8 border-t border-gray-200 space-y-8">
+          <div>
+            <h3 className="text-lg font-bold text-[#333333] mb-4 text-center">
+              {locale === 'zh-hk' ? '為何選擇智印港？' : locale === 'en' ? 'Why Choose ZprintPro?' : 'なぜZprintProを選ぶ？'}
+            </h3>
+            <RegionalTrustBadges locale={locale} />
+          </div>
+          <div className="bg-blue-50 rounded-xl p-6">
+            <p className="text-gray-600 text-sm leading-relaxed">
+              <RegionalContent locale={locale} type="expertIntro" />
+            </p>
+          </div>
+          <div className="text-center space-y-3">
+            <p className="text-sm text-gray-500">
+              <RegionalContent locale={locale} type="shipping" />
+            </p>
+            <RegionalCta locale={locale} />
+            <p className="text-xs text-gray-400">
+              <RegionalContent locale={locale} type="pricingNote" />
+            </p>
+          </div>
+        </div>
       </main>
     </>
   );

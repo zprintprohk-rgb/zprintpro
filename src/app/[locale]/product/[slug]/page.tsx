@@ -30,6 +30,7 @@ import { RelatedProducts } from '@/components/RelatedProducts';
 import { ProductFaq } from '@/components/ProductFaq';
 import { ProductHowTo } from '@/components/ProductHowTo';
 import { getProductSeo } from '@/data/product-seo';
+import { RegionalContent, RegionalCta, RegionalTrustBadges } from '@/components/seo/RegionalContent';
 
 // 生成静态参数 - 79产品 × 3语言 = 237个路径
 export function generateStaticParams() {
@@ -331,6 +332,30 @@ export default function ProductPage({
               currentProduct={product} 
               locale={locale} 
             />
+          </div>
+          
+          {/* 地區化內容區域 */}
+          <div className="mt-16 pt-10 border-t border-gray-200 space-y-8">
+            <div>
+              <h3 className="text-lg font-bold text-[#333333] mb-4 text-center">
+                {locale === 'zh-hk' ? '為何選擇智印港？' : locale === 'en' ? 'Why Choose ZprintPro?' : 'なぜZprintProを選ぶ？'}
+              </h3>
+              <RegionalTrustBadges locale={locale} />
+            </div>
+            <div className="bg-blue-50 rounded-xl p-6">
+              <p className="text-gray-600 text-sm leading-relaxed">
+                <RegionalContent locale={locale} type="expertIntro" />
+              </p>
+            </div>
+            <div className="text-center space-y-3">
+              <p className="text-sm text-gray-500">
+                <RegionalContent locale={locale} type="shipping" />
+              </p>
+              <RegionalCta locale={locale} productSlug={product.slug} />
+              <p className="text-xs text-gray-400">
+                <RegionalContent locale={locale} type="pricingNote" />
+              </p>
+            </div>
           </div>
         </div>
       </main>
