@@ -158,6 +158,12 @@ export async function generateMetadata({ params }: PressKitPageProps): Promise<M
     description: t.description,
     alternates: {
       canonical: `${siteConfig.url}/${locale === 'zh-hk' ? '' : locale + '/'}press-kit/`,
+      languages: {
+        'zh-Hant-HK': `${siteConfig.url}/press-kit/`,
+        'en': `${siteConfig.url}/en/press-kit/`,
+        'ja-JP': `${siteConfig.url}/ja/press-kit/`,
+        'x-default': `${siteConfig.url}/en/press-kit/`,
+      },
     },
   };
 }

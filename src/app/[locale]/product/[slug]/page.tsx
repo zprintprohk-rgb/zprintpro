@@ -17,7 +17,7 @@ import {
   generateProductMetadata, 
   generateProductJsonLd,
   generateBreadcrumbJsonLd,
-  generateOrganizationJsonLd,
+  generateBusinessJsonLd,
   generateFaqJsonLd,
   generateProductReviewsJsonLd,
   Locale 
@@ -97,7 +97,7 @@ export default function ProductPage({
   
   // JSON-LD结构化数据
   const productJsonLd = generateProductJsonLd(product.name, product.description, product.images[0] || '', product.slug, product.basePrice);
-  const organizationJsonLd = generateOrganizationJsonLd();
+  const businessJsonLd = generateBusinessJsonLd(locale);
   const breadcrumbJsonLd = generateBreadcrumbJsonLd(breadcrumbItems);
   
   // FAQPage Schema (仅核心产品有)
@@ -202,7 +202,7 @@ export default function ProductPage({
     <>
       {/* 结构化数据 */}
       <JsonLd data={productJsonLd} />
-      <JsonLd data={organizationJsonLd} />
+      <JsonLd data={businessJsonLd} />
       <JsonLd data={breadcrumbJsonLd} />
       {faqJsonLd && <JsonLd data={faqJsonLd} />}
       {howToJsonLd && <JsonLd data={howToJsonLd} />}

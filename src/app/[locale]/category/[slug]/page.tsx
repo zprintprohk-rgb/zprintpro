@@ -15,7 +15,7 @@ import {
 import { 
   generateCategoryMetadata, 
   generateBreadcrumbJsonLd,
-  generateLocalBusinessJsonLd,
+  generateBusinessJsonLd,
   Locale
 } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
@@ -23,6 +23,7 @@ import { ProductCard } from '@/components/ProductCard';
 import { CategoryFilter } from '@/components/CategoryFilter';
 import { Pagination } from '@/components/Pagination';
 import { CategoryPillarContent } from '@/components/CategoryPillarContent';
+
 
 export const dynamic = 'force-static';
 
@@ -111,8 +112,8 @@ export default function CategoryPage({
     })),
   };
   
-  // LocalBusiness Schema — GEO本地化信号
-  const localBusinessJsonLd = generateLocalBusinessJsonLd();
+  // Business Schema — 按地區切換 LocalBusiness / Organization
+  const businessJsonLd = generateBusinessJsonLd(locale);
   
   // 翻译文本
   const translations = {
@@ -173,7 +174,7 @@ export default function CategoryPage({
       {/* 结构化数据：面包屑 + 产品列表 + 本地商家 */}
       <JsonLd data={breadcrumbJsonLd} />
       <JsonLd data={itemListJsonLd} />
-      <JsonLd data={localBusinessJsonLd} />
+      <JsonLd data={businessJsonLd} />
       
       <main className="min-h-screen bg-gray-50">
         {/* 页面标题区 */}
@@ -250,9 +251,57 @@ export default function CategoryPage({
           </div>
         </div>
         
+        {/* Buying Guide CTA — 选购指南入口 */}
+        <BuyingGuideCta locale={locale} categorySlug={slug} />
+        
         {/* Pillar Content — SEO支柱内容区 */}
         <CategoryPillarContent locale={locale} categorySlug={slug} />
       </main>
     </>
+  );
+}
+
+// Buying Guide CTA Component
+const categoryGuideMap: Record<string, string> = {
+  'business-cards': 'business-card-buying-guide',
+  'stickers': 'sticker-buying-guide',
+  'flyers': 'flyer-buying-guide',
+  'packaging': 'packaging-buying-guide',
+  'posters': 'poster-buying-guide',
+  'paper-bags': 'paper-bag-buying-guide',
+};
+
+function BuyingGuideCta({ locale, categorySlug }: { locale: Locale; categorySlug: string }) {
+  const guideSlug = categoryGuideMap[categorySlug];
+  if (!guideSlug) return null;
+  
+  const t = {
+    'zh-hk': { label: '選購指南', cta: '查看完整指南 →', title: '不知道怎麼選？看看我們的專業選購指南', desc: '從材質、工藝到價格，為您詳細拆解選購要點。' },
+    'en': { label: 'Buying Guide', cta: 'Read Full Guide →', title: 'Not Sure What to Choose?', desc: 'From materials to finishes to pricing, our expert guide has you covered.' },
+    'ja': { label: '選び方ガイド', cta: 'ガイドを読む →', title: 'どれを選べばいいか迷っていますか？', desc: '材質から加工、価格まで、専門家のガイドで解決。' },
+  }[locale];
+  
+  const localePrefix = locale === 'zh-hk' ? '' : `/${locale}`;
+  
+  return (
+    <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 pb-8">
+      <a 
+        href={`${localePrefix}/blog/${guideSlug}/`}
+        className="block bg-gradient-to-r from-[#2873F5] to-[#1E5FD1] rounded-xl p-6 md:p-8 text-white hover:shadow-lg transition-shadow"
+      >
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <div>
+            <span className="inline-block bg-white/20 text-white text-xs font-medium px-2 py-1 rounded mb-2">
+              {t.label}
+            </span>
+            <h3 className="text-xl md:text-2xl font-bold">{t.title}</h3>
+            <p className="text-blue-100 mt-1 text-sm md:text-base">{t.desc}</p>
+          </div>
+          <span className="inline-flex items-center text-white font-semibold whitespace-nowrap">
+            {t.cta}
+          </span>
+        </div>
+      </a>
+    </div>
   );
 }

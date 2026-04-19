@@ -41,6 +41,7 @@ export interface ProductSeoData {
 export const allProductSeo: Record<string, ProductSeoData> = {
   'premium-business-cards': {
     slug: 'premium-business-cards',
+    relatedBlogSlug: 'business-card-buying-guide',
     keywords: {
       'zh-hk': '名片印刷,香港名片,商務名片定制,快印名片,咭片印刷,高級名片,公司名片印刷,名片設計,急印名片,即日名片,印刷即日速遞送貨,名片製作,卡片印刷,企業名片,燙金名片,UV名片,厚紙名片',
       'en': 'business card printing,custom business cards,name card printing,premium business cards,same day business cards,company cards,design business cards online,cheap business cards fast,foil business cards,embossed business cards,rush business cards,hong kong business card printing,business card maker',
@@ -105,6 +106,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'foil-business-cards': {
     slug: 'foil-business-cards',
+    relatedBlogSlug: 'business-card-buying-guide',
     keywords: {
       'zh-hk': '燙金名片,金屬色名片,奢華名片,燙印工藝,香港燙金,燙銀名片,玫瑰金名片,公司燙金名片,高級燙金名片,凹凸燙金名片,印刷即日速遞送貨',
       'en': 'foil stamped business cards,metallic business cards,luxury name cards,gold foil printing hong kong,silver foil business cards,rose gold business cards,corporate foil cards,premium foil stamped cards,embossed foil business cards,same day foil business cards',
@@ -166,6 +168,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'spot-uv-business-cards': {
     slug: 'spot-uv-business-cards',
+    relatedBlogSlug: 'business-card-buying-guide',
     keywords: {
       'zh-hk': '局部UV名片,凸字名片,紋理名片,特殊工藝名片,光油名片,UV名片,立體UV名片,磨砂UV名片,啞光UV名片,創意UV名片,印刷即日速遞送貨',
       'en': 'spot UV business cards,embossed business cards,textured name cards,special finish cards,glossy UV cards,raised spot UV cards,matte UV business cards,creative UV business cards,premium spot UV cards,same day UV business cards',
@@ -224,6 +227,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'rounded-corner-cards': {
     slug: 'rounded-corner-cards',
+    relatedBlogSlug: 'business-card-buying-guide',
     keywords: {
       'zh-hk': '圓角名片印刷,圓角咭片,圓角名片設計,圓角商務名片,圓角卡片制作,圓角名片訂造,圓角名片香港,圓角名片報價,圓角名片速印,圓角名片少量印刷,圓角公司名片,時尚圓角名片',
       'en': 'rounded corner business cards,rounded corner name cards,rounded edge business cards,rounded corner card printing,rounded corner card design,rounded corner cards hong kong,rounded corner business card quote,rounded corner card printing service,modern rounded corner cards',
@@ -279,6 +283,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'waterproof-stickers': {
     slug: 'waterproof-stickers',
+    relatedBlogSlug: 'sticker-buying-guide',
     keywords: {
       'zh-hk': '防水貼紙,耐用標籤,戶外貼紙,食品標籤,香港貼紙印刷,產品標籤貼紙,電商包裝貼紙,車身防水貼紙,透明防水貼紙,圓形防水貼紙,異形防水貼紙,印刷即日速遞送貨',
       'en': 'waterproof stickers,durable labels,outdoor stickers,food labels,Hong Kong sticker printing,product label stickers,ecommerce packaging stickers,car bumper stickers,transparent waterproof stickers,round waterproof stickers,die cut waterproof stickers,same day sticker printing',
@@ -342,6 +347,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
 
   'thick-business-cards-400g': {
     slug: 'thick-business-cards-400g',
+    relatedBlogSlug: 'business-card-buying-guide',
     keywords: {
       'zh-hk': '400g厚咭片印刷,厚身名片,超厚名片,400克名片,厚紙名片印刷,厚咭片訂造,厚咭片設計,厚咭片香港,厚咭片報價,厚咭片速印,厚咭片少量印刷,高級厚咭片,400g咭片,厚身咭片印刷',
       'en': '400g business card printing,thick business cards,heavy business cards,400gsm business cards,ultra thick business cards,custom thick business cards,thick business card design,thick business cards hong kong,thick business card quote,thick business card printing service,premium thick business cards,400g card printing',
@@ -403,6 +409,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'matte-business-cards': {
     slug: 'matte-business-cards',
+    relatedBlogSlug: 'business-card-buying-guide',
     keywords: {
       'zh-hk': '啞膠咭片,香港啞膠,啞膠咭片印刷,香港印刷,啞膠名片,啞面名片,磨砂名片,質感名片,霧面名片,啞光名片印刷',
       en: 'matte laminated cards,matte laminated cards printing hong kong, hong kong matte laminated cards',
@@ -464,6 +471,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'double-sided-cards': {
     slug: 'double-sided-cards',
+    relatedBlogSlug: 'business-card-buying-guide',
     keywords: {
       'zh-hk': '雙面名片印刷,雙面咭片,雙面名片設計,雙面商務名片,雙面卡片印刷,雙面名片訂造,雙面名片香港,雙面名片報價,雙面名片速印,雙面名片少量印刷,雙面公司名片,雙面彩色名片',
       'en': 'double sided business cards,double sided name cards,double sided card printing,double sided business card design,double sided cards hong kong,double sided business card quote,double sided card printing service,two sided business cards,full color double sided cards',
@@ -525,6 +533,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'same-day-business-cards': {
     slug: 'same-day-business-cards',
+    relatedBlogSlug: 'business-card-buying-guide',
     keywords: {
       'zh-hk': '即日咭片印刷,香港即日印刷,香港印刷,印刷即日速遞送貨,即日名片,急印名片,24小時名片,當天名片,快印名片,即日取名片',
       en: 'same-day business cards,same-day business cards printing hong kong, hong kong same-day business cards',
@@ -586,6 +595,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'eco-business-cards': {
     slug: 'eco-business-cards',
+    relatedBlogSlug: 'business-card-buying-guide',
     keywords: {
       'zh-hk': '環保名片印刷,再生紙名片,環保咭片,綠色名片印刷,環保名片訂造,FSC名片,大豆油墨名片,環保名片香港,環保名片設計,環保名片報價,可持續名片,環保名片速印,環保名片少量印刷',
       'en': 'eco business cards,recycled paper business cards,environmentally friendly business cards,green business card printing,eco friendly name cards,sustainable business cards,FSC certified business cards,eco business cards hong kong,eco business card design,eco business card printing service',
@@ -647,6 +657,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'transparent-stickers': {
     slug: 'transparent-stickers',
+    relatedBlogSlug: 'sticker-buying-guide',
     keywords: {
       'zh-hk': '透明貼紙,香港透明貼紙,透明貼紙印刷,透明標籤,玻璃瓶貼紙,透明防水貼紙,透明圓形貼紙,透明異形貼紙,透明燙金貼紙,透明全息貼紙,印刷即日速遞送貨',
       en: 'transparent stickers,transparent sticker printing hong kong,clear labels,glass bottle stickers,transparent waterproof stickers,transparent round stickers,clear die cut stickers,transparent foil stickers,transparent holographic stickers,same day transparent stickers',
@@ -705,6 +716,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'removable-stickers': {
     slug: 'removable-stickers',
+    relatedBlogSlug: 'sticker-buying-guide',
     keywords: {
       'zh-hk': '可移除貼紙印刷,易撕貼紙,無痕貼紙,重複使用貼紙,可再貼貼紙,可移除貼紙訂造,可移除貼紙設計,可移除貼紙香港,可移除貼紙報價,可移除貼紙速印,可移除貼紙少量印刷,不留膠貼紙,玻璃可移除貼',
       'en': 'removable sticker printing,reusable stickers,removable labels,peelable stickers,restickable stickers,custom removable stickers,removable sticker design,removable stickers hong kong,removable sticker quote,removable sticker printing service,no residue stickers,glass removable stickers',
@@ -763,6 +775,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'small-batch-stickers': {
     slug: 'small-batch-stickers',
+    relatedBlogSlug: 'sticker-buying-guide',
     keywords: {
       'zh-hk': '小批量貼紙印刷,少量貼紙,小量貼紙訂造,低起訂量貼紙,少量貼紙印刷,小批量貼紙訂造,小批量貼紙設計,小批量貼紙香港,小批量貼紙報價,小批量貼紙速印,小批量貼紙少量印刷,10張貼紙,50張貼紙,試印貼紙',
       'en': 'small batch sticker printing,low quantity stickers,small quantity stickers,low minimum stickers,few stickers printing,custom small batch stickers,small batch sticker design,small batch stickers hong kong,small batch sticker quote,small batch sticker printing service,10 stickers,50 stickers,sample stickers',
@@ -821,6 +834,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'die-cut-stickers': {
     slug: 'die-cut-stickers',
+    relatedBlogSlug: 'sticker-buying-guide',
     keywords: {
       'zh-hk': '異形模切貼紙,香港異形模切,異形模切貼紙印刷,香港印刷,異形貼紙,模切貼紙,特殊形狀貼紙,自定義形狀貼紙,任意形狀貼紙,logo形狀貼紙',
       en: 'die-cut stickers,die-cut stickers printing hong kong, hong kong die-cut stickers',
@@ -879,6 +893,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'foil-stickers': {
     slug: 'foil-stickers',
+    relatedBlogSlug: 'sticker-buying-guide',
     keywords: {
       'zh-hk': '燙金貼紙印刷,金屬貼紙,金箔貼紙,銀箔貼紙,燙印貼紙,燙金貼紙訂造,燙金貼紙設計,燙金貼紙香港,燙金貼紙報價,燙金貼紙速印,燙金貼紙少量印刷,高級燙金貼紙,裝飾燙金貼紙',
       'en': 'foil sticker printing,metallic stickers,gold foil stickers,silver foil stickers,foil stamped stickers,custom foil stickers,foil sticker design,foil stickers hong kong,foil sticker quote,foil sticker printing service,premium foil stickers,decorative foil stickers',
@@ -937,6 +952,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'security-stickers': {
     slug: 'security-stickers',
+    relatedBlogSlug: 'sticker-buying-guide',
     keywords: {
       'zh-hk': '防偽貼紙印刷,防盜貼紙,防拆貼紙,VOID貼紙,易碎貼紙,保安貼紙,防偽標籤印刷,防偽貼紙訂造,防偽貼紙設計,防偽貼紙香港,防偽貼紙報價,防偽貼紙速印,正品防偽貼',
       'en': 'security sticker printing,tamper evident stickers,void stickers,security labels,anti counterfeit stickers,tamper proof stickers,custom security stickers,security sticker design,security stickers hong kong,security sticker quote,hologram security stickers,product security stickers',
@@ -995,6 +1011,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'fluorescent-stickers': {
     slug: 'fluorescent-stickers',
+    relatedBlogSlug: 'sticker-buying-guide',
     keywords: {
       'zh-hk': '螢光貼紙印刷,夜光貼紙,發光貼紙,霓虹貼紙,醒目貼紙,螢光貼紙訂造,螢光貼紙設計,螢光貼紙香港,螢光貼紙報價,螢光貼紙速印,螢光貼紙少量印刷,安全標示螢光貼,警示螢光貼紙',
       'en': 'fluorescent sticker printing,glow in the dark stickers,neon stickers,luminous stickers,high visibility stickers,custom fluorescent stickers,fluorescent sticker design,fluorescent stickers hong kong,fluorescent sticker quote,fluorescent sticker printing service,safety fluorescent stickers,warning glow stickers',
@@ -1053,6 +1070,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'kraft-paper-bags': {
     slug: 'kraft-paper-bags',
+    relatedBlogSlug: 'paper-bag-buying-guide',
     keywords: {
       'zh-hk': '牛皮紙袋,香港牛皮紙袋,牛皮紙袋印刷,環保紙袋,品牌紙袋,手提紙袋,餐廳外賣紙袋,小批量紙袋,棉繩紙袋,白卡紙袋,印刷即日速遞送貨',
       en: 'kraft paper bags,kraft paper bags printing hong kong,eco friendly paper bags,branded paper bags,takeaway paper bags,small batch paper bags,cotton rope bags,white card paper bags,custom paper bag printing,same day paper bag printing',
@@ -1117,6 +1135,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'white-card-bags': {
     slug: 'white-card-bags',
+    relatedBlogSlug: 'paper-bag-buying-guide',
     keywords: {
       'zh-hk': '白卡紙袋印刷,白卡紙手挽袋,白卡紙購物袋,白色紙袋,白卡紙袋訂造,白卡紙袋設計,白卡紙袋香港,白卡紙袋報價,白卡紙袋速印,白卡紙袋少量印刷,高檔白卡紙袋,商業白卡紙袋',
       'en': 'white card paper bags,white paper bags,white kraft bags,white shopping bags,custom white paper bags,white bag design,white bags hong kong,white bag quote,white bag printing service,premium white paper bags,commercial white bags',
@@ -1181,6 +1200,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'gift-bags': {
     slug: 'gift-bags',
+    relatedBlogSlug: 'paper-bag-buying-guide',
     keywords: {
       'zh-hk': '禮品紙袋印刷,禮物袋制作,精美禮品袋,節日禮品袋,禮品紙袋訂造,禮品紙袋設計,禮品紙袋香港,禮品紙袋報價,禮品紙袋速印,禮品紙袋少量印刷,高檔禮品袋,品牌禮品袋,生日禮品袋',
       'en': 'gift paper bags,present bags,luxury gift bags,festival gift bags,custom gift paper bags,gift bag design,gift bags hong kong,gift bag quote,gift bag printing service,premium gift bags,branded gift bags,birthday gift bags',
@@ -1245,6 +1265,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'eco-paper-bags': {
     slug: 'eco-paper-bags',
+    relatedBlogSlug: 'paper-bag-buying-guide',
     keywords: {
       'zh-hk': '環保紙袋印刷,再生紙袋,環保購物袋,綠色紙袋,FSC紙袋,環保紙袋訂造,環保紙袋設計,環保紙袋香港,環保紙袋報價,環保紙袋速印,環保紙袋少量印刷,可持續紙袋,環保手提袋',
       'en': 'eco paper bags,recycled paper bags,environmentally friendly paper bags,green paper bags,FSC paper bags,custom eco paper bags,eco paper bag design,eco paper bags hong kong,eco paper bag quote,eco paper bag printing service,sustainable paper bags,eco friendly shopping bags',
@@ -1309,6 +1330,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'handle-bags': {
     slug: 'handle-bags',
+    relatedBlogSlug: 'paper-bag-buying-guide',
     keywords: {
       'zh-hk': '手挽紙袋,香港手挽,手挽紙袋印刷,香港印刷,手提紙袋,有提手紙袋,繩柄紙袋,棉繩紙袋,紙繩紙袋,尼龍繩紙袋',
       en: 'handle bags,handle bags printing hong kong, hong kong handle bags',
@@ -1373,6 +1395,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'small-bags': {
     slug: 'small-bags',
+    relatedBlogSlug: 'paper-bag-buying-guide',
     keywords: {
       'zh-hk': '小紙袋印刷,小型紙袋,迷你紙袋,精品小紙袋,小紙袋訂造,小紙袋設計,小紙袋香港,小紙袋報價,小紙袋速印,小紙袋少量印刷,飾品小紙袋,化妝品小紙袋,禮品小紙袋',
       'en': 'small paper bags,mini paper bags,tiny paper bags,small gift bags,custom small paper bags,small bag design,small bags hong kong,small bag quote,small bag printing service,jewelry small bags,cosmetic small bags,party favor bags',
@@ -1437,6 +1460,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'large-bags': {
     slug: 'large-bags',
+    relatedBlogSlug: 'paper-bag-buying-guide',
     keywords: {
       'zh-hk': '大紙袋印刷,大型紙袋,加大紙袋,大碼購物袋,大紙袋訂造,大紙袋設計,大紙袋香港,大紙袋報價,大紙袋速印,大紙袋少量印刷,服裝大紙袋,禮品大紙袋,商業大紙袋',
       'en': 'large paper bags,big paper bags,oversized paper bags,large shopping bags,custom large paper bags,large bag design,large bags hong kong,large bag quote,large bag printing service,clothing large bags,gift large bags,commercial large bags',
@@ -1501,6 +1525,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'a4-flyers': {
     slug: 'a4-flyers',
+    relatedBlogSlug: 'flyer-buying-guide',
     keywords: {
       'zh-hk': 'A4宣傳單張,香港A4宣傳單張,A4宣傳單張印刷,開業宣傳單張,餐廳傳單印刷,活動宣傳單張,電商宣傳單張,摺頁傳單,A5傳單印刷,派傳單印刷,印刷即日速遞送貨',
       en: 'a4 flyers,a4 flyers printing hong kong,grand opening flyers,restaurant flyers,event flyers,ecommerce flyers,folded leaflets,a5 flyers,door hanger printing,direct mail flyers,same day flyer printing',
@@ -1559,6 +1584,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'a5-flyers': {
     slug: 'a5-flyers',
+    relatedBlogSlug: 'flyer-buying-guide',
     keywords: {
       'zh-hk': 'A5宣傳單張,香港A5宣張,A5宣傳單張印刷,香港印刷,印刷即日速遞送貨,A5傳單,A5單張印刷,A5雙面傳單,A5摺頁,A5宣傳單',
       en: 'a5 flyers,a5 flyers printing hong kong, hong kong a5 flyers',
@@ -1617,6 +1643,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'double-sided-flyers': {
     slug: 'double-sided-flyers',
+    relatedBlogSlug: 'flyer-buying-guide',
     keywords: {
       'zh-hk': '雙面宣傳單張,香港雙面宣張,雙面宣傳單張印刷,香港印刷,印刷即日速遞送貨,雙面傳單,雙面單張,雙面印刷傳單,雙面彩色傳單,雙面宣傳單,兩面印刷單張',
       en: 'double-sided flyers,double-sided flyers printing hong kong, hong kong double-sided flyers',
@@ -1675,6 +1702,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'folded-leaflets': {
     slug: 'folded-leaflets',
+    relatedBlogSlug: 'flyer-buying-guide',
     keywords: {
       'zh-hk': '摺疊傳單印刷,摺頁傳單,對摺傳單,三摺頁印刷,四摺傳單,Z形摺傳單,門摺傳單,摺疊傳單設計,摺疊傳單香港,摺疊傳單報價,摺疊傳單速印,摺疊傳單少量印刷,宣傳摺頁',
       'en': 'folded leaflet printing,folded flyers,folded brochures,bi fold leaflets,tri fold leaflets,quad fold leaflets,z fold leaflets,gate fold leaflets,folded leaflet design,folded leaflets hong kong,folded leaflet quote,folded leaflet printing service',
@@ -1733,6 +1761,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'thick-paper-flyers': {
     slug: 'thick-paper-flyers',
+    relatedBlogSlug: 'flyer-buying-guide',
     keywords: {
       'zh-hk': '厚紙宣傳單張,香港厚紙宣張,厚紙宣傳單張印刷,香港印刷,厚紙傳單,厚身宣傳單,高級傳單,厚卡傳單,重磅傳單,厚質宣傳單',
       en: 'thick paper flyers,thick paper flyers printing hong kong, hong kong thick paper flyers',
@@ -1791,6 +1820,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'same-day-flyers': {
     slug: 'same-day-flyers',
+    relatedBlogSlug: 'flyer-buying-guide',
     keywords: {
       'zh-hk': '即日宣傳單張,香港即日宣張,即日宣傳單張印刷,香港印刷,印刷即日速遞送貨,即日傳單,急印傳單,24小時傳單,當天傳單,快印傳單,即日宣傳單',
       en: 'same-day flyers,same-day flyers printing hong kong, hong kong same-day flyers',
@@ -1849,6 +1879,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'eco-flyers': {
     slug: 'eco-flyers',
+    relatedBlogSlug: 'flyer-buying-guide',
     keywords: {
       'zh-hk': '環保宣傳單張,香港環保宣張,環保宣傳單張印刷,香港印刷,環保傳單,再生紙傳單,FSC傳單,大豆油墨傳單,綠色傳單,可持續傳單',
       en: 'eco flyers,eco flyers printing hong kong, hong kong eco flyers',
@@ -1907,6 +1938,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'a2-posters': {
     slug: 'a2-posters',
+    relatedBlogSlug: 'poster-buying-guide',
     keywords: {
       'zh-hk': 'A2海報印刷,香港A2印刷,香港印刷,印刷即日速遞送貨,A2海報,A2尺寸海報,A2活動海報,A2宣傳海報,A2展覽海報',
       en: 'a2 posters,a2 posters printing hong kong, hong kong a2 posters',
@@ -1965,6 +1997,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'a1-posters': {
     slug: 'a1-posters',
+    relatedBlogSlug: 'poster-buying-guide',
     keywords: {
       'zh-hk': 'A1大幅海報,香港A1海報,A1海報印刷,戶外海報,展覽海報,Backdrop背景板,餐廳海報,PP海報裱貼,防水海報,A0海報印刷,印刷即日速遞送貨',
       en: 'a1 large posters,a1 poster printing hong kong,outdoor posters,exhibition posters,event backdrops,restaurant menu posters,pp laminated posters,waterproof posters,a0 poster printing,same day poster printing',
@@ -2023,6 +2056,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'outdoor-posters': {
     slug: 'outdoor-posters',
+    relatedBlogSlug: 'poster-buying-guide',
     keywords: {
       'zh-hk': '戶外海報印刷,防水海報,防曬海報,戶外廣告海報,大型戶外海報,戶外海報訂造,戶外海報設計,戶外海報香港,戶外海報報價,戶外海報速印,戶外海報少量印刷,街招海報,建築棚架海報',
       'en': 'outdoor poster printing,waterproof posters,weatherproof posters,outdoor advertising posters,large outdoor posters,custom outdoor posters,outdoor poster design,outdoor posters hong kong,outdoor poster quote,outdoor poster printing service,construction hoarding posters,street posters',
@@ -2081,6 +2115,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'display-posters': {
     slug: 'display-posters',
+    relatedBlogSlug: 'poster-buying-guide',
     keywords: {
       'zh-hk': '展示海報印刷,展板海報,陳列海報,賣場海報,店內展示海報,展示海報訂造,展示海報設計,展示海報香港,展示海報報價,展示海報速印,展示海報少量印刷,零售展示海報,櫥窗海報',
       'en': 'display poster printing,display posters,retail display posters,store posters,shop display posters,custom display posters,display poster design,display posters hong kong,display poster quote,display poster printing service,visual merchandising posters,window display posters',
@@ -2139,6 +2174,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'art-posters': {
     slug: 'art-posters',
+    relatedBlogSlug: 'poster-buying-guide',
     keywords: {
       'zh-hk': '藝術海報印刷,畫作海報,美術海報,展覽海報,藝術品複製,藝術海報訂造,藝術海報設計,藝術海報香港,藝術海報報價,藝術海報速印,藝術海報少量印刷,畫廊海報,攝影海報',
       'en': 'art poster printing,art prints,fine art posters,exhibition posters,art reproductions,custom art posters,art poster design,art posters hong kong,art poster quote,art poster printing service,gallery posters,photography posters',
@@ -2197,6 +2233,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'adhesive-posters': {
     slug: 'adhesive-posters',
+    relatedBlogSlug: 'poster-buying-guide',
     keywords: {
       'zh-hk': '背膠海報印刷,自粘海報,貼牆海報,可移海報,背膠海報訂造,背膠海報設計,背膠海報香港,背膠海報報價,背膠海報速印,背膠海報少量印刷,牆貼海報,窗貼海報,室內背膠海報',
       'en': 'adhesive poster printing,self adhesive posters,stick on posters,wall posters,removable adhesive posters,custom adhesive posters,adhesive poster design,adhesive posters hong kong,adhesive poster quote,adhesive poster printing service,indoor adhesive posters,window cling posters',
@@ -2255,6 +2292,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'gift-boxes': {
     slug: 'gift-boxes',
+    relatedBlogSlug: 'packaging-buying-guide',
     keywords: {
       'zh-hk': '禮品盒印刷,禮物盒制作,精美禮盒,禮盒包裝印刷,禮品盒訂造,禮品盒設計,禮品盒香港,禮品盒報價,禮品盒速印,禮品盒少量印刷,高檔禮品盒,品牌禮盒,節日禮盒',
       'en': 'gift box printing,present boxes,luxury gift boxes,gift packaging printing,custom gift boxes,gift box design,gift boxes hong kong,gift box quote,gift box printing service,premium gift boxes,branded gift boxes,festival gift boxes',
@@ -2319,6 +2357,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'cosmetic-boxes': {
     slug: 'cosmetic-boxes',
+    relatedBlogSlug: 'packaging-buying-guide',
     keywords: {
       'zh-hk': '化妝品盒印刷,護膚品包裝盒,彩妝盒印刷,美容產品包裝,化妝品盒訂造,化妝品盒設計,化妝品盒香港,化妝品盒報價,化妝品盒速印,化妝品盒少量印刷,精緻化妝品盒,品牌化妝品盒',
       'en': 'cosmetic box printing,skincare packaging boxes,makeup box printing,beauty product packaging,custom cosmetic boxes,cosmetic box design,cosmetic boxes hong kong,cosmetic box quote,cosmetic box printing service,premium cosmetic boxes,branded cosmetic packaging',
@@ -2383,6 +2422,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'food-boxes': {
     slug: 'food-boxes',
+    relatedBlogSlug: 'packaging-buying-guide',
     keywords: {
       'zh-hk': '食品盒印刷,食物包裝盒,餐盒印刷,外賣盒印刷,食品級包裝盒,食品盒訂造,食品盒設計,食品盒香港,食品盒報價,食品盒速印,食品盒少量印刷,烘焙包裝盒,甜品盒印刷',
       'en': 'food box printing,food packaging boxes,meal box printing,takeaway box printing,food grade packaging,custom food boxes,food box design,food boxes hong kong,food box quote,food box printing service,bakery packaging boxes,dessert box printing',
@@ -2447,6 +2487,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'mailer-boxes': {
     slug: 'mailer-boxes',
+    relatedBlogSlug: 'packaging-buying-guide',
     keywords: {
       'zh-hk': '飛機盒印刷,快遞盒印刷,郵寄盒制作,瓦通紙盒,電商包裝盒,飛機盒訂造,飛機盒設計,飛機盒香港,飛機盒報價,飛機盒速印,飛機盒少量印刷,包裝飛機盒,定制快遞盒',
       'en': 'mailer box shipping boxes,corrugated mailer boxes,ecommerce packaging boxes,custom mailer boxes,mailer box design,mailer boxes hong kong,mailer box quote,mailer box printing service,branded shipping boxes,subscription box printing,product mailer boxes',
@@ -2511,6 +2552,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'folding-boxes': {
     slug: 'folding-boxes',
+    relatedBlogSlug: 'packaging-buying-guide',
     keywords: {
       'zh-hk': '摺盒印刷,摺疊盒制作,平摺盒印刷,卡紙摺盒,自動摺盒,摺盒包裝,摺盒訂造,摺盒設計,摺盒香港,摺盒報價,摺盒速印,摺盒少量印刷,產品摺盒,禮品摺盒',
       'en': 'folding box printing,foldable boxes,carton folding boxes,cardboard folding boxes,auto lock boxes,folding packaging,folding box design,folding boxes hong kong,folding box quote,folding box printing service,product folding boxes,gift folding boxes',
@@ -2575,6 +2617,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   },
   'rigid-boxes': {
     slug: 'rigid-boxes',
+    relatedBlogSlug: 'packaging-buying-guide',
     keywords: {
       'zh-hk': '硬盒印刷,精裝盒制作,硬紙盒包裝,禮品硬盒,高檔硬盒印刷,硬盒訂造,硬盒設計,硬盒香港,硬盒報價,硬盒速印,硬盒少量印刷,天地蓋硬盒,書型硬盒,抽屜硬盒',
       'en': 'rigid box printing,rigid boxes,luxury rigid packaging,premium rigid boxes,setup boxes,rigid box design,rigid boxes hong kong,rigid box quote,rigid box printing service,gift rigid boxes,telescope rigid boxes,book style rigid boxes,drawer rigid boxes',

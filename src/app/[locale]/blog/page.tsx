@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { Locale, siteConfig } from '@/lib/seo';
+import { buyingGuides } from '@/data/buying-guides';
 
 interface BlogPageProps {
   params: { locale: string };
@@ -12,18 +13,21 @@ const translations = {
     description: '智印港印刷知識專欄，分享貼紙、名片、包裝、書刊等印刷工藝、設計技巧與行業趨勢。',
     h1: '印刷知識',
     subtitle: '專業印刷知識與行業洞察',
+    buyingGuideTag: '選購指南',
   },
   en: {
     title: 'Printing Knowledge | ZprintPro',
     description: 'ZprintPro printing knowledge blog. Sharing insights on stickers, business cards, packaging, booklets printing techniques and design tips.',
     h1: 'Printing Knowledge',
     subtitle: 'Professional printing insights and industry trends',
+    buyingGuideTag: 'Buying Guide',
   },
   ja: {
     title: '印刷知識 | ZprintPro',
     description: 'ZprintPro印刷知識ブログ。ステッカー、名刺、包装、冊子などの印刷技術とデザインノウハウをご紹介。',
     h1: '印刷知識',
     subtitle: 'プロの印刷技術と業界トレンド',
+    buyingGuideTag: '選び方ガイド',
   },
 };
 
@@ -73,11 +77,18 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: BlogPageProps): Promise<Metadata> {
   const locale = params.locale as Locale;
   const t = translations[locale];
+  const langPrefix = locale === 'zh-hk' ? '' : `${locale}/`;
   return {
     title: t.title,
     description: t.description,
     alternates: {
-      canonical: `${siteConfig.url}/${locale === 'zh-hk' ? '' : locale + '/'}blog/`,
+      canonical: `${siteConfig.url}/${langPrefix}blog/`,
+      languages: {
+        'zh-Hant-HK': `${siteConfig.url}/blog/`,
+        'en': `${siteConfig.url}/en/blog/`,
+        'ja-JP': `${siteConfig.url}/ja/blog/`,
+        'x-default': `${siteConfig.url}/en/blog/`,
+      },
     },
   };
 }
@@ -86,7 +97,19 @@ export default function BlogPage({ params }: BlogPageProps) {
   const locale = params.locale as Locale;
   const t = translations[locale];
   const localePrefix = locale === 'zh-hk' ? '' : `/${locale}`;
-  const posts = articles[locale] || articles['zh-hk'];
+  const legacyPosts = articles[locale] || articles['zh-hk'];
+
+  // Map buying guides for this locale
+  const guidePosts = buyingGuides.map((guide) => ({
+    slug: guide.slug,
+    title: guide.title[locale],
+    date: guide.date,
+    category: `${t.buyingGuideTag} · ${guide.category[locale]}`,
+    isBuyingGuide: true,
+  }));
+
+  // Combine: buying guides first, then legacy articles
+  const allPosts = [...guidePosts, ...legacyPosts];
 
   return (
     <main className="min-h-screen bg-gray-50 py-12">
@@ -97,7 +120,7 @@ export default function BlogPage({ params }: BlogPageProps) {
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {posts.map((post) => (
+          {allPosts.map((post) => (
             <Link
               key={post.slug}
               href={`${localePrefix}/blog/${post.slug}/`}
@@ -107,7 +130,9 @@ export default function BlogPage({ params }: BlogPageProps) {
                 <span className="text-4xl font-bold text-[#2873F5]/20">{post.title.charAt(0)}</span>
               </div>
               <div className="p-5">
-                <span className="text-xs font-medium text-[#F87314] bg-orange-50 px-2 py-1 rounded">{post.category}</span>
+                <span className={`text-xs font-medium px-2 py-1 rounded ${'isBuyingGuide' in post && post.isBuyingGuide ? 'bg-green-50 text-green-600' : 'text-[#F87314] bg-orange-50'}`}>
+                  {post.category}
+                </span>
                 <h2 className="mt-2 text-lg font-semibold text-[#333333] group-hover:text-[#2873F5] transition-colors line-clamp-2">
                   {post.title}
                 </h2>

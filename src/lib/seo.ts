@@ -12,7 +12,7 @@ export const siteConfig = {
   name: '智印港 ZPrintPro',
   url: 'https://zprintpro.com',
   logo: 'https://zprintpro.com/logo.png',
-  phone: '+86 181 2638 0255',
+  phone: '+852 [待填實際香港電話]',
   email: 'zprintpro@outlook.com',
   address: {
     street: '16 Shing Yip Street',
@@ -24,6 +24,64 @@ export const siteConfig = {
     facebook: 'https://facebook.com/zprintpro',
     instagram: 'https://instagram.com/zprintpro',
     linkedin: 'https://linkedin.com/company/zprintpro',
+  },
+};
+
+// 地區配置（三地區獨立SEO戰略）
+export interface RegionConfig {
+  lang: string;
+  regionCode: string;
+  googleDomain: string;
+  currency: 'HKD' | 'USD' | 'JPY';
+  phonePrefix: string;
+  businessSchema: 'LocalBusiness' | 'Organization';
+  targetAudience: string;
+  areaServed: string | string[];
+  contactType: string;
+  priceRange: string;
+  geoCoordinates?: {
+    lat: number;
+    lng: number;
+  };
+}
+
+export const regionConfig: Record<Locale, RegionConfig> = {
+  'zh-hk': {
+    lang: 'zh-Hant-HK',
+    regionCode: 'HK',
+    googleDomain: 'google.com.hk',
+    currency: 'HKD',
+    phonePrefix: '+852',
+    businessSchema: 'LocalBusiness',
+    targetAudience: '香港本地企業與實體店',
+    areaServed: 'Hong Kong',
+    contactType: '香港本地客戶服務',
+    priceRange: '$$',
+    geoCoordinates: { lat: 22.3105, lng: 114.224 },
+  },
+  'en': {
+    lang: 'en',
+    regionCode: 'GLOBAL',
+    googleDomain: 'google.com',
+    currency: 'USD',
+    phonePrefix: '+852',
+    businessSchema: 'Organization',
+    targetAudience: 'US/UK/AU businesses seeking Hong Kong manufacturing quality',
+    areaServed: ['US', 'GB', 'AU', 'CA', 'NZ', 'SG'],
+    contactType: 'International Sales',
+    priceRange: '$$$',
+  },
+  'ja': {
+    lang: 'ja-JP',
+    regionCode: 'JP',
+    googleDomain: 'google.co.jp',
+    currency: 'JPY',
+    phonePrefix: '+852',
+    businessSchema: 'Organization',
+    targetAudience: '日本企業への香港輸出印刷サービス',
+    areaServed: 'Japan',
+    contactType: '日本語対応',
+    priceRange: '$$$',
   },
 };
 
@@ -58,9 +116,10 @@ export function generateHomeMetadata(locale: Locale): Metadata {
     alternates: {
       canonical: `${siteConfig.url}/${locale === 'zh-hk' ? '' : locale}`,
       languages: {
-        'zh-HK': `${siteConfig.url}/`,
+        'zh-Hant-HK': `${siteConfig.url}/`,
         'en': `${siteConfig.url}/en/`,
-        'ja': `${siteConfig.url}/ja/`,
+        'ja-JP': `${siteConfig.url}/ja/`,
+        'x-default': `${siteConfig.url}/en/`,
       },
     },
     openGraph: {
@@ -214,9 +273,10 @@ export function generateCategoryMetadata(locale: Locale, categoryName: string = 
     alternates: {
       canonical: `${siteConfig.url}/${locale === 'zh-hk' ? '' : locale + '/'}category/${slug}/`,
       languages: {
-        'zh-HK': `${siteConfig.url}/category/${slug}/`,
+        'zh-Hant-HK': `${siteConfig.url}/category/${slug}/`,
         'en': `${siteConfig.url}/en/category/${slug}/`,
-        'ja': `${siteConfig.url}/ja/category/${slug}/`,
+        'ja-JP': `${siteConfig.url}/ja/category/${slug}/`,
+        'x-default': `${siteConfig.url}/en/category/${slug}/`,
       },
     },
     openGraph: {
@@ -258,9 +318,10 @@ export function generateProductMetadata(
     alternates: {
       canonical: `${siteConfig.url}/${locale === 'zh-hk' ? '' : locale + '/'}product/${slug}/`,
       languages: {
-        'zh-HK': `${siteConfig.url}/product/${slug}/`,
+        'zh-Hant-HK': `${siteConfig.url}/product/${slug}/`,
         'en': `${siteConfig.url}/en/product/${slug}/`,
-        'ja': `${siteConfig.url}/ja/product/${slug}/`,
+        'ja-JP': `${siteConfig.url}/ja/product/${slug}/`,
+        'x-default': `${siteConfig.url}/en/product/${slug}/`,
       },
     },
     openGraph: {
@@ -284,19 +345,30 @@ export function generateProductMetadata(
   };
 }
 
-// 生成 Organization 結構化數據
-export function generateOrganizationJsonLd() {
-  return {
+// 生成地區化 Business 結構化數據（核心：按地區切換 LocalBusiness / Organization）
+export function generateBusinessJsonLd(locale: Locale) {
+  const config = regionConfig[locale];
+  const isLocalBusiness = config.businessSchema === 'LocalBusiness';
+
+  const baseSchema: Record<string, unknown> = {
     '@context': 'https://schema.org',
-    '@type': 'Organization',
+    '@type': config.businessSchema,
     name: siteConfig.name,
     url: siteConfig.url,
     logo: siteConfig.logo,
+    telephone: siteConfig.phone,
+    email: siteConfig.email,
+    priceRange: config.priceRange,
+    areaServed: config.areaServed,
     contactPoint: {
       '@type': 'ContactPoint',
       telephone: siteConfig.phone,
-      contactType: 'customer service',
-      availableLanguage: ['Chinese', 'English', 'Japanese'],
+      contactType: config.contactType,
+      availableLanguage: locale === 'zh-hk'
+        ? ['Chinese', 'English']
+        : locale === 'ja'
+          ? ['Japanese', 'English']
+          : ['English', 'Chinese', 'Japanese'],
     },
     sameAs: [
       siteConfig.social.facebook,
@@ -304,47 +376,63 @@ export function generateOrganizationJsonLd() {
       siteConfig.social.linkedin,
     ],
   };
+
+  if (isLocalBusiness) {
+    // 香港版：LocalBusiness + 完整地址 + GeoCoordinates
+    return {
+      ...baseSchema,
+      '@id': `${siteConfig.url}/#localbusiness`,
+      image: siteConfig.logo,
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: siteConfig.address.street,
+        addressLocality: siteConfig.address.city,
+        addressRegion: siteConfig.address.region,
+        addressCountry: siteConfig.address.country,
+      },
+      geo: config.geoCoordinates
+        ? {
+            '@type': 'GeoCoordinates',
+            latitude: config.geoCoordinates.lat,
+            longitude: config.geoCoordinates.lng,
+          }
+        : undefined,
+      openingHoursSpecification: [
+        {
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+          opens: '09:00',
+          closes: '18:00',
+        },
+        {
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: 'Saturday',
+          opens: '09:00',
+          closes: '13:00',
+        },
+      ],
+    };
+  }
+
+  // 國際版 / 日本版：Organization + areaServed + 跨境服務信號
+  return {
+    ...baseSchema,
+    '@id': `${siteConfig.url}/#organization`,
+    description:
+      locale === 'ja'
+        ? '香港から日本への高品質印刷輸出サービス。品質管理徹底、納期厳守、日本語サポート対応。'
+        : 'Premium printing services from Hong Kong. ISO certified, worldwide shipping, factory-direct pricing.',
+  };
 }
 
-// 生成 LocalBusiness 結構化數據
+// 生成 Organization 結構化數據（向後兼容，默認使用舊版靜態數據）
+export function generateOrganizationJsonLd() {
+  return generateBusinessJsonLd('zh-hk');
+}
+
+// 生成 LocalBusiness 結構化數據（向後兼容，默認香港版）
 export function generateLocalBusinessJsonLd() {
-  return {
-    '@context': 'https://schema.org',
-    '@type': 'LocalBusiness',
-    name: siteConfig.name,
-    image: siteConfig.logo,
-    '@id': `${siteConfig.url}/#localbusiness`,
-    url: siteConfig.url,
-    telephone: siteConfig.phone,
-    email: siteConfig.email,
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: siteConfig.address.street,
-      addressLocality: siteConfig.address.city,
-      addressRegion: siteConfig.address.region,
-      addressCountry: siteConfig.address.country,
-    },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: 22.3105,
-      longitude: 114.224,
-    },
-    openingHoursSpecification: [
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
-        opens: '09:00',
-        closes: '18:00',
-      },
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: 'Saturday',
-        opens: '09:00',
-        closes: '13:00',
-      },
-    ],
-    priceRange: '$$',
-  };
+  return generateBusinessJsonLd('zh-hk');
 }
 
 // 生成 Product 結構化數據
@@ -525,21 +613,23 @@ export function generateQuotePageMetadata(locale: Locale): Metadata {
     alternates: {
       canonical: `${siteConfig.url}/${locale}/quote`,
       languages: {
-        'zh-HK': `${siteConfig.url}/zh-hk/quote`,
+        'zh-Hant-HK': `${siteConfig.url}/zh-hk/quote`,
         'en': `${siteConfig.url}/en/quote`,
-        'ja': `${siteConfig.url}/ja/quote`,
+        'ja-JP': `${siteConfig.url}/ja/quote`,
+        'x-default': `${siteConfig.url}/en/quote`,
       },
     },
   };
 }
 
-// Hreflang 標籤生成
+// Hreflang 標籤生成（修正：ja→ja-JP，x-default→en）
 export function generateHreflangTags(path: string = '') {
   const basePath = path.replace(/^\//, '');
+  const prefix = basePath ? `/${basePath}` : '';
   return [
-    { lang: 'zh-HK', url: `${siteConfig.url}/${basePath}` },
-    { lang: 'en', url: `${siteConfig.url}/en/${basePath}` },
-    { lang: 'ja', url: `${siteConfig.url}/ja/${basePath}` },
-    { lang: 'x-default', url: `${siteConfig.url}/${basePath}` },
+    { lang: 'zh-Hant-HK', url: `${siteConfig.url}${prefix}` },
+    { lang: 'en', url: `${siteConfig.url}/en${prefix}` },
+    { lang: 'ja-JP', url: `${siteConfig.url}/ja${prefix}` },
+    { lang: 'x-default', url: `${siteConfig.url}/en${prefix}` },
   ];
 }

@@ -3,6 +3,7 @@ import { QuoteForm } from '@/components/quote/QuoteForm';
 import { FileUploader } from '@/components/quote/FileUploader';
 import { JsonLd } from '@/components/JsonLd';
 import { generateQuotePageMetadata } from '@/lib/seo';
+import { Locale } from '@/lib/seo';
 
 interface QuotePageProps {
   params: { locale: string };
@@ -16,12 +17,12 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: QuotePageProps): Promise<Metadata> {
   const { locale } = params;
-  return generateQuotePageMetadata(locale as 'zh-hk' | 'en' | 'ja');
+  return generateQuotePageMetadata(locale as Locale);
 }
 
 export default function QuotePage({ params }: QuotePageProps) {
   const { locale } = params;
-  const safeLocale = locale as 'zh-hk' | 'en' | 'ja';
+  const safeLocale = locale as Locale;
 
   const pageTitle =
     locale === 'zh-hk'

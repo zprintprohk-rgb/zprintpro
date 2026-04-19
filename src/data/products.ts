@@ -4,15 +4,6 @@
  * 提供分类、搜索、筛选功能
  */
 
-export interface ProductVariant {
-  sku: string;
-  name: string;
-  size?: string;
-  material?: string;
-  quantity: number;
-  price: number;
-}
-
 export interface Product {
   id: string;
   sku_code: string;

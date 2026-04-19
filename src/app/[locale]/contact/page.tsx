@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { Locale, siteConfig, generateLocalBusinessJsonLd } from '@/lib/seo';
+import { Locale, siteConfig, generateBusinessJsonLd } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
 
 interface ContactPageProps {
@@ -72,6 +72,12 @@ export async function generateMetadata({ params }: ContactPageProps): Promise<Me
     description: t.description,
     alternates: {
       canonical: `${siteConfig.url}/${locale === 'zh-hk' ? '' : locale + '/'}contact/`,
+      languages: {
+        'zh-Hant-HK': `${siteConfig.url}/contact/`,
+        'en': `${siteConfig.url}/en/contact/`,
+        'ja-JP': `${siteConfig.url}/ja/contact/`,
+        'x-default': `${siteConfig.url}/en/contact/`,
+      },
     },
   };
 }
@@ -79,11 +85,11 @@ export async function generateMetadata({ params }: ContactPageProps): Promise<Me
 export default function ContactPage({ params }: ContactPageProps) {
   const locale = params.locale as Locale;
   const t = translations[locale];
-  const localBusinessJsonLd = generateLocalBusinessJsonLd();
+  const businessJsonLd = generateBusinessJsonLd(locale);
 
   return (
     <main className="min-h-screen bg-gray-50 py-12">
-      <JsonLd data={localBusinessJsonLd} />
+      <JsonLd data={businessJsonLd} />
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h1 className="text-3xl md:text-4xl font-bold text-[#333333] mb-3">{t.h1}</h1>

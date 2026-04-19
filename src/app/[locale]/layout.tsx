@@ -8,6 +8,7 @@ import { Inter } from 'next/font/google';
 import '../globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { regionConfig } from '@/lib/seo';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -36,7 +37,7 @@ export default function RootLayout({
   params: { locale },
 }: RootLayoutProps) {
   return (
-    <html lang={locale === 'zh-hk' ? 'zh-HK' : locale}>
+    <html lang={regionConfig[locale as 'zh-hk' | 'en' | 'ja']?.lang || locale}>
       <body className={inter.className}>
         <Header locale={locale as 'zh-hk' | 'en' | 'ja'} />
         {children}

@@ -6,7 +6,7 @@
 
 import { Metadata } from 'next';
 import { JsonLd } from '@/components/JsonLd';
-import { generateLocalBusinessJsonLd, Locale } from '@/lib/seo';
+import { generateBusinessJsonLd, Locale } from '@/lib/seo';
 
 export const dynamic = 'force-static';
 
@@ -41,7 +41,7 @@ export default function ServiceAreasPage({ params }: { params: { locale: Locale 
   const { locale } = params;
 
   // LocalBusiness Schema
-  const localBusinessJsonLd = generateLocalBusinessJsonLd();
+  const businessJsonLd = generateBusinessJsonLd(locale);
 
   // Geo Shape Schema for service areas
   const geoJsonLd = {
@@ -178,7 +178,7 @@ export default function ServiceAreasPage({ params }: { params: { locale: Locale 
 
   return (
     <>
-      <JsonLd data={localBusinessJsonLd} />
+      <JsonLd data={businessJsonLd} />
       <JsonLd data={geoJsonLd} />
       
       <main className="min-h-screen bg-gray-50">
