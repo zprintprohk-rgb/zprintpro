@@ -10,7 +10,7 @@ import Image from 'next/image';
 import { CreditCard, Tag, ShoppingBag, FileText, ImageIcon, Package, BookOpen, Flag, Calendar, Mail, Gift, GraduationCap, Box } from 'lucide-react';
 import { Product } from '@/data/products';
 import { Locale } from '@/lib/seo';
-import { getProductTitle, getProductDescription } from '@/data/products';
+import { getProductTitle, getProductDescription, getProductImageAlt } from '@/data/products';
 
 interface ProductCardProps {
   product: Product;
@@ -54,7 +54,7 @@ export function ProductCard({ product, locale }: ProductCardProps) {
   
   return (
     <a
-      href={`/${locale}/product/${product.slug}`}
+      href={`/${locale}/product/${product.slug}/`}
       className="group bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow"
     >
       {/* 产品图片 */}
@@ -62,7 +62,7 @@ export function ProductCard({ product, locale }: ProductCardProps) {
         {hasImage ? (
           <Image
             src={imageSrc}
-            alt={title}
+            alt={getProductImageAlt(product, locale)}
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-300"
             unoptimized

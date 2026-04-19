@@ -1443,3 +1443,14 @@ export function getCategoryName(category: Category, locale: string): string {
       return category.name_zh;
   }
 }
+
+
+// SEO-optimized image alt text generator
+export function getProductImageAlt(product: Product, locale: string): string {
+  const titles: Record<string, string> = {
+    'zh-hk': `香港${product.name}印刷 | ${product.description.slice(0, 25)} | ZprintPro智印港`,
+    en: `${product.nameEn} Printing Hong Kong | ${product.descriptionEn.slice(0, 35)} | ZprintPro`,
+    ja: `香港${product.nameJa} | ${product.descriptionJa.slice(0, 25)} | ZprintPro`,
+  };
+  return titles[locale] || titles['zh-hk'];
+}

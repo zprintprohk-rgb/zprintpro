@@ -6,6 +6,15 @@ import Link from 'next/link';
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 import { Locale } from '@/lib/seo';
 
+function getLocalizedHref(href: string, locale: Locale): string {
+  if (href.startsWith('http') || href.startsWith('mailto') || href.startsWith('tel') || href.startsWith('javascript')) {
+    return href;
+  }
+  const prefix = locale === 'zh-hk' ? '' : '/' + locale;
+  return prefix + href;
+}
+
+
 interface FooterProps {
   locale: Locale;
 }

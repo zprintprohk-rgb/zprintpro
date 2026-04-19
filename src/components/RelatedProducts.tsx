@@ -5,7 +5,7 @@
 
 import { Product } from '@/data/products';
 import { Locale } from '@/lib/seo';
-import { getProductsByCategory, getProductTitle } from '@/data/products';
+import { getProductsByCategory, getProductTitle, getProductImageAlt } from '@/data/products';
 
 interface RelatedProductsProps {
   currentProduct: Product;
@@ -33,7 +33,7 @@ export function RelatedProducts({ currentProduct, locale }: RelatedProductsProps
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-xl font-bold text-gray-900">{t.title}</h2>
         <a 
-          href={`/${locale}/category/${currentProduct.category_slug}`}
+          href={`/${locale}/category/${currentProduct.category_slug}/`}
           className="text-[#2873F5] text-sm hover:underline"
         >
           {t.viewAll} →
@@ -44,13 +44,13 @@ export function RelatedProducts({ currentProduct, locale }: RelatedProductsProps
         {relatedProducts.map((product) => (
           <a
             key={product.sku_code}
-            href={`/${locale}/product/${product.slug}`}
+            href={`/${locale}/product/${product.slug}/`}
             className="group bg-white rounded-lg border overflow-hidden hover:shadow-md transition-shadow"
           >
             <div className="aspect-square bg-gray-100">
               <img
                 src={product.images[0] || '/images/placeholder.jpg'}
-                alt={getProductTitle(product, locale)}
+                alt={getProductImageAlt(product, locale)}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform"
               />
             </div>

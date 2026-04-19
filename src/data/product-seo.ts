@@ -39,6 +39,307 @@ export interface ProductSeoData {
 }
 
 export const allProductSeo: Record<string, ProductSeoData> = {
+  'premium-business-cards': {
+    slug: 'premium-business-cards',
+    keywords: {
+      'zh-hk': '名片印刷,香港名片,商務名片定制,快印名片,咭片印刷,高級名片,印刷即日速遞送貨',
+      'en': 'business card printing Hong Kong, premium business cards, custom name cards, rush business cards, same day delivery',
+      'ja': '名刺印刷,香港名刺,高級名刺,オーダーメイド名刺,急ぎ名刺,即日配送',
+    },
+    h1Suffix: {
+      'zh-hk': '香港頂級商務名片定制專家 | 智印港',
+      'en': 'Premium Business Card Printing Hong Kong | ZprintPro',
+      'ja': '香港高級名刺印刷のプロ | ZprintPro',
+    },
+    longDescription: {
+      'zh-hk': '在競爭激烈的香港商業環境中，一張質感非凡的名片是您品牌的第一張臉。智印港深知這一點，因此我們提供多種高級紙張選擇，包括350gsm的剛古紙、觸感細膩的荷蘭白卡以及奢華的棉絨紙。我們的名片印刷服務不僅注重材質，更在工藝上精益求精。無論是彰顯尊貴的燙金工藝，還是增加立體觸感的局部UV，我們都能為您完美呈現。支持印刷即日速遞送貨，確保您的急單也能準時交付。',
+      'en': 'In Hong Kong\'s competitive business environment, a premium business card is your brand\'s first impression. ZprintPro offers high-quality paper options including 350gsm Conqueror paper, Dutch white card, and luxurious cotton paper. We also offer same-day rush printing and delivery.',
+      'ja': '香港の競争激しいビジネス環境において、高品質な名刺はブランドの第一印象です。ZprintProは350gsmコンカラー紙、オランダ白カード、豪華なコットン紙などをご用意。急行印刷・即日配送も対応します。',
+    },
+    faq: {
+      'zh-hk': [
+        { q: '名片印刷的起訂量是多少？', a: '我們支持靈活起訂，最低僅需100張。對於數碼打樣，也提供50張的小量服務。' },
+        { q: '名片印刷需要多長時間？', a: '標準交貨時間3-5個工作日。如需急件，可選擇24小時快印服務，支持印刷即日速遞送貨。' },
+        { q: '你們支持哪些紙張材質？', a: '我們提供300g銅版紙、350g剛古紙、荷蘭白卡、棉紙、合成紙等多種材質。' },
+        { q: '名片設計文件有什麼要求？', a: '請提供AI、PSD、PDF或高解析度JPG/PNG文件，解析度至少300dpi，並預留3mm出血位。' },
+      ],
+      'en': [
+        { q: 'What is the minimum order quantity for business cards?', a: 'We support flexible ordering with a minimum of just 100 cards. Digital proofing available from 50 cards.' },
+        { q: 'How long does business card printing take?', a: 'Standard delivery is 3-5 business days. For rush orders, we offer 24-hour express printing with same-day delivery.' },
+        { q: 'What paper materials do you support?', a: 'We offer 300g glossy art paper, 350g Conqueror paper, Dutch white card, cotton paper, and more.' },
+        { q: 'What are the design file requirements?', a: 'Please provide AI, PSD, PDF, or high-resolution JPG/PNG files at 300dpi minimum, with 3mm bleed area.' },
+      ],
+      'ja': [
+        { q: '名刺印刷の最小発注数は？', a: '柔軟な発注に対応しており、最低100枚から。デジタル校正用に50枚の少量サービスもご用意しています。' },
+        { q: '名刺印刷の納期は？', a: '標準納期は3〜5営業日です。急ぎの場合は24時間急行印刷・即日配送も可能です。' },
+        { q: '対応している紙の種類は？', a: '300gコート紙、350gコンカラー紙、オランダ白カード、コットン紙、合成紙などをご用意しています。' },
+        { q: 'デザインファイルの要件は？', a: 'AI、PSD、PDF、または高解像度JPG/PNG（最低300dpi）をご用意ください。3mmのbleedを含めてください。' },
+      ],
+    },
+    processSteps: {
+      'zh-hk': [
+        { name: '設計確認', text: '客戶提供設計稿，專業團隊進行文件檢查，確保色彩模式和解析度符合印刷標準。' },
+        { name: '數碼打樣', text: '根據需求提供數碼樣或傳統打樣，讓客戶在批量生產前確認顏色和效果。' },
+        { name: '印刷生產', text: '採用德國海德堡印刷機進行四色印刷，配合專業色彩管理，確保色彩準確還原。' },
+        { name: '表面處理', text: '根據選擇的工藝進行啞膠、光膠、局部UV或燙金等表面處理。' },
+        { name: '裁切成品', text: '使用精密裁切設備，確保每張名片尺寸精準，邊緣整齊。' },
+        { name: '質檢包裝', text: '每批產品經過QC檢驗後，使用專用包裝盒保護，確保運輸過程中不受損。' },
+      ],
+      'en': [
+        { name: 'Design Review', text: 'Our professional team checks your design files to ensure color mode and resolution meet printing standards.' },
+        { name: 'Digital Proofing', text: 'We provide digital or traditional proofing based on your needs.' },
+        { name: 'Printing Production', text: 'Using Heidelberg presses with professional color management.' },
+        { name: 'Surface Finishing', text: 'Matte lamination, glossy lamination, spot UV, or foil stamping.' },
+        { name: 'Precision Cutting', text: 'Precision cutting equipment ensures accurate dimensions.' },
+        { name: 'QC & Packaging', text: 'Each batch undergoes QC inspection before protective packaging.' },
+      ],
+      'ja': [
+        { name: 'デザイン確認', text: 'お客様のデザインデータを専門チームがチェックし、カラーモードと解像度が印刷基準を満たしているか確認します。' },
+        { name: 'デジタル校正', text: 'ご要望に応じてデジタル校正または伝統的な校正を提供します。' },
+        { name: '印刷生産', text: 'ハイデルベルグ印刷機とプロのカラーマネジメントを使用します。' },
+        { name: '表面加工', text: 'マットラミネーション、グロスラミネーション、局部UV、箔押しなど。' },
+        { name: '精密裁断', text: '精密裁断設備により、各名刺の寸法と端の仕上がりを正確に保証します。' },
+        { name: '品質検査・梱包', text: '全ロットをQC検査後、専用箱に梱包し、輸送中の損傷を防ぎます。' },
+      ],
+    },
+  },
+  'foil-business-cards': {
+    slug: 'foil-business-cards',
+    keywords: {
+      'zh-hk': '燙金名片,金屬色名片,奢華名片,燙印工藝,香港燙金,印刷即日速遞送貨',
+      'en': 'foil stamped business cards, metallic business cards, luxury name cards, gold foil printing Hong Kong, same day delivery',
+      'ja': '箔押し名刺,メタリック名刺,高級名刺,ゴールド foil,香港 箔押し,即日配送',
+    },
+    h1Suffix: {
+      'zh-hk': '奢華燙金名片定制服務 | 智印港',
+      'en': 'Luxury Foil Stamped Business Cards | ZprintPro',
+      'ja': '豪華箔押し名刺印刷 | ZprintPro',
+    },
+    longDescription: {
+      'zh-hk': '想要在众多名片中脱颖而出？燙金工藝是您的不二之選。這種傳統的凸版印刷工藝，通過高溫將金屬箔壓印在紙張表面，形成強烈的凹凸質感。在香港，無論是律師樓、會計師事務所還是高端地產代理，都偏愛使用燙金名片來展示其專業與權威。智印港提供專業的燙金服務，支持印刷即日速遞送貨，確保每一處細節都完美無瑕。',
+      'en': 'Want to stand out from the crowd? Foil stamping uses heat to press metallic foil onto paper, creating a strong embossed texture. ZprintPro offers expert foil stamping with precise registration and same-day rush delivery options.',
+      'ja': '群衆の中で目立ちたいですか？箔押し加工は熱で金属箔を紙に圧着し、強い凹凸の質感を生み出します。ZprintProは高精度の箔押しサービスを提供し、急行・即日配送にも対応します。',
+    },
+    faq: {
+      'zh-hk': [
+        { q: '燙金工藝有幾種顏色可選？', a: '除了經典的亮金和亮銀，我們還提供啞金、紅金、古銅色以及各種Pantone專色電化鋁。' },
+        { q: '燙金名片可以燙雙面嗎？', a: '可以。我們支持單面燙金、雙面燙金，以及正面燙金+背面燙銀的組合效果。' },
+        { q: '燙金名片的紙張有什麼要求？', a: '建議使用350g以上的厚紙，表面平滑度高的紙張燙金效果更好。我們推薦剛古紙或荷蘭白卡。' },
+        { q: '燙金名片的交貨時間？', a: '燙金工藝需要額外製版時間，標準交貨5-7個工作日。急件可安排3日快印，支持印刷即日速遞送貨。' },
+      ],
+      'en': [
+        { q: 'How many foil colors are available?', a: 'Besides classic bright gold and silver, we also offer matte gold, rose gold, bronze, and various Pantone spot color foils.' },
+        { q: 'Can foil stamping be done on both sides?', a: 'Yes. We support single-sided, double-sided foil stamping, and combinations like gold front + silver back.' },
+        { q: 'What paper requirements are there for foil cards?', a: 'We recommend 350gsm+ thick paper with smooth surface. Conqueror paper or Dutch white card are ideal.' },
+        { q: 'What is the delivery time for foil business cards?', a: 'Standard delivery is 5-7 business days. Rush orders available in 3 days with same-day delivery.' },
+      ],
+      'ja': [
+        { q: '箔押しの色は何種類ありますか？', a: '定番の輝く金・銀の他、マットゴールド、ローズゴールド、ブロンズ、各種Pantone専色箔もご用意しています。' },
+        { q: '両面箔押しは可能ですか？', a: 'はい。片面箔押し、両面箔押し、表金・裏銀の組み合わせにも対応しています。' },
+        { q: '箔押し名刺の紙の要件は？', a: '350g以上の厚紙で、表面が滑らかな紙が最適です。コンカラー紙やオランダ白カードを推奨します。' },
+        { q: '箔押し名刺の納期は？', a: '版作成に追加時間が必要で、標準納期は5〜7営業日です。急行注文は3日対応・即日配送可能です。' },
+      ],
+    },
+    processSteps: {
+      'zh-hk': [
+        { name: '設計稿確認', text: '確認燙金位置、圖案和顏色，製作專用燙金版。' },
+        { name: '燙金版製作', text: '根據設計製作高精度燙金銅版，確保細節清晰。' },
+        { name: '試燙調色', text: '進行試燙，調整溫度和壓力，確保燙金效果完美。' },
+        { name: '批量燙金', text: '使用自動燙金機進行批量生產，每張精準對位。' },
+        { name: '質檢包裝', text: '檢查燙金牢固度和光澤度，合格後包裝出貨。' },
+      ],
+      'en': [
+        { name: 'Design Review', text: 'Confirm foil placement, pattern, and color. Create dedicated foil stamping plate.' },
+        { name: 'Plate Making', text: 'Create high-precision copper foil stamping plate based on design.' },
+        { name: 'Test Stamping', text: 'Conduct test stamping, adjust temperature and pressure.' },
+        { name: 'Bulk Production', text: 'Use automatic foil stamping machine for bulk production.' },
+        { name: 'QC & Packaging', text: 'Inspect foil adhesion and gloss, then package for delivery.' },
+      ],
+      'ja': [
+        { name: 'デザイン確認', text: '箔押し位置、パターン、色を確認し、専用の箔押し版を作成します。' },
+        { name: '版作成', text: 'デザインに基づき高精度の銅箔押し版を作成します。' },
+        { name: '試し押し', text: '試し押しを行い、温度と圧力を調整します。' },
+        { name: '量産', text: '自動箔押し機で量産し、各枚を精密に位置合わせします。' },
+        { name: '品質検査・梱包', text: '箔の密着性と光沢を検査し、出荷します。' },
+      ],
+    },
+  },
+  'spot-uv-business-cards': {
+    slug: 'spot-uv-business-cards',
+    keywords: {
+      'zh-hk': '局部UV名片,凸字名片,紋理名片,特殊工藝名片,光油名片,印刷即日速遞送貨',
+      'en': 'spot UV business cards, embossed business cards, textured name cards, special finish cards, same day delivery',
+      'ja': '局部UV名刺,エンボス名刺,テクスチャ名刺,特殊加工名刺,即日配送',
+    },
+    h1Suffix: {
+      'zh-hk': '創意局部UV名片設計 | 智印港',
+      'en': 'Creative Spot UV Business Cards | ZprintPro',
+      'ja': 'クリエイティブ局部UV名刺 | ZprintPro',
+    },
+    longDescription: {
+      'zh-hk': '局部UV（Spot UV）是一種極具現代感的印刷工藝。它通過在名片的特定圖案上覆蓋一層透明的高光油墨，使其在啞面底紙上形成鮮明的對比。這種工藝不僅增加了名片的視覺層次感，更帶來了獨特的指尖觸感。在香港的創意設計、時尚品牌和科技初創公司中，局部UV名片非常流行。智印港擁有先進的過油機，支持印刷即日速遞送貨。',
+      'en': 'Spot UV applies a transparent glossy coating to specific areas of the business card, creating striking contrast against a matte background. This adds visual depth and unique tactile experience. ZprintPro uses advanced coating machines and offers same-day rush delivery.',
+      'ja': '局部UVは名刺の特定部分に透明な光沢コーティングを施し、マットな背景と鮮やかなコントラストを生み出します。視覚的な奥行きと独特の触覚体験を提供します。ZprintProは先進的なコーティング設備を使用し、急行・即日配送にも対応します。',
+    },
+    faq: {
+      'zh-hk': [
+        { q: '局部UV會很容易刮花嗎？', a: '優質的局部UV塗層經過紫外線固化，硬度非常高，耐磨性極佳。日常使用中非常耐用。' },
+        { q: '局部UV可以和其他工藝同時使用嗎？', a: '可以。局部UV經常與啞膠、燙金等工藝搭配使用，創造更豐富的視覺效果。' },
+        { q: '局部UV的設計有什麼注意事項？', a: '局部UV區域建議不要太細小（最少0.5mm），建議與大面積啞面形成對比。' },
+      ],
+      'en': [
+        { q: 'Is spot UV easily scratched?', a: 'High-quality spot UV coating is cured with ultraviolet light, making it very hard and wear-resistant.' },
+        { q: 'Can spot UV be combined with other finishes?', a: 'Yes. Spot UV is often combined with matte lamination, foil stamping, and other processes.' },
+        { q: 'What are the design considerations for spot UV?', a: 'Spot UV areas should not be too small (minimum 0.5mm). It works best when contrasting with large matte areas.' },
+      ],
+      'ja': [
+        { q: '局部UVは傷つきやすいですか？', a: '高品質の局部UVコーティングは紫外線硬化により非常に硬く、耐摩耗性に優れています。' },
+        { q: '他の加工と組み合わせられますか？', a: 'はい。局部UVはマットラミネーションや箔押しなどと組み合わせて使用することが一般的です。' },
+        { q: 'デザイン上の注意点は？', a: '局部UV部分はあまり細かくしないよう（最少0.5mm）、大きなマット面との対比が効果的です。' },
+      ],
+    },
+    processSteps: {
+      'zh-hk': [
+        { name: '印刷底紋', text: '先印刷名片的底色和圖案，通常使用啞面處理。' },
+        { name: 'UV版製作', text: '根據設計製作專用UV版，確保局部光油位置精準。' },
+        { name: '局部上光', text: '在指定區域精準塗布UV光油，形成高光效果。' },
+        { name: 'UV固化', text: '通過UV燈瞬間固化，形成耐磨保護層。' },
+        { name: '質檢包裝', text: '檢查UV層均勻度和光澤度，確保無氣泡、不粘花。' },
+      ],
+      'en': [
+        { name: 'Base Printing', text: 'Print the base color and pattern of the card, usually with matte finish.' },
+        { name: 'UV Plate Making', text: 'Create dedicated UV plate for areas requiring gloss coating.' },
+        { name: 'Spot Coating', text: 'Precisely apply UV varnish to designated areas for glossy effect.' },
+        { name: 'UV Curing', text: 'Instant curing via UV lamp exposure, creating wear-resistant coating.' },
+        { name: 'Quality Check', text: 'Inspect UV layer uniformity and gloss, ensuring no bubbles or sticking.' },
+      ],
+      'ja': [
+        { name: '下地印刷', text: '名刺の底色とパターンを印刷し、通常はマット仕上げにします。' },
+        { name: 'UV版作成', text: '光沢コーティングが必要な部分用の専用UV版を作成します。' },
+        { name: '局部コーティング', text: '指定された部分にUVワニスを精密に塗布し、光沢効果を出します。' },
+        { name: 'UV硬化', text: 'UVランプで瞬間硬化させ、耐摩耗性のあるコーティングを形成します。' },
+        { name: '品質検査', text: 'UV層の均一性と光沢を検査し、気泡やべたつきがないことを確認します。' },
+      ],
+    },
+  },
+  'rounded-corner-cards': {
+    slug: 'rounded-corner-cards',
+    keywords: {
+      'zh-hk': '圓角名片,安全邊名片,創意名片,模切名片,印刷即日速遞送貨',
+      'en': 'rounded corner business cards, safe edge cards, creative name cards, die cut cards, same day delivery',
+      'ja': '角丸名刺,安全エッジ名刺,クリエイティブ名刺,ダイカット名刺,即日配送',
+    },
+    h1Suffix: {
+      'zh-hk': '時尚圓角名片定制 | 智印港',
+      'en': 'Stylish Rounded Corner Business Cards | ZprintPro',
+      'ja': 'スタイリッシュ角丸名刺 | ZprintPro',
+    },
+    longDescription: {
+      'zh-hk': '圓角名片在香港越來越受歡迎，它打破了傳統直角名片的生硬印象。圓潤的邊緣不僅在視覺上更顯親和與現代，在實際使用中也更不容易刮傷其他卡片或錢包內襯，手感更加舒適。這種設計特別適合注重用戶體驗的品牌，如瑜伽工作室、兒童教育中心、精品咖啡館和設計工作室。智印港提供標準圓角和大圓角選項，支持印刷即日速遞送貨。',
+      'en': 'Rounded corner business cards are gaining popularity in Hong Kong, breaking away from the rigid impression of traditional right-angle cards. The smooth edges look more approachable and modern. ZprintPro offers standard and large fillet corner options with same-day rush delivery.',
+      'ja': '角丸名刺は香港で人気を集めています。従来の直角名刺の硬い印象を打ち破り、丸みを帯びたエッジが親しみやすくモダンに見えます。ZprintProは標準角丸と大きな角丸の両方に対応し、急行・即日配送も可能です。',
+    },
+    faq: {
+      'zh-hk': [
+        { q: '圓角名片的圓角半徑最小是多少？', a: '我們的標準圓角半徑是2mm或3mm。如需更大的圓角，可以定制模切。' },
+        { q: '圓角名片可以和其他工藝同時使用嗎？', a: '完全可以。圓角名片可以自由搭配燙金、局部UV、啞膠等任何工藝。' },
+        { q: '圓角名片會比普通名片貴嗎？', a: '圓角需要額外的裁切工序，比標準直角名片貴約10-15%，但品質提升非常值得。' },
+      ],
+      'en': [
+        { q: 'What is the minimum corner radius?', a: 'Our standard corner radius is 2mm or 3mm. If you need larger corners, we can do custom die-cutting.' },
+        { q: 'Can rounded corners be combined with other finishes?', a: 'Absolutely. Rounded corners can be freely combined with foil stamping, spot UV, matte lamination, or any other process.' },
+        { q: 'Are rounded corner cards more expensive?', a: 'Rounded corners require additional cutting steps, costing about 10-15% more than standard right-angle cards.' },
+      ],
+      'ja': [
+        { q: '角丸の最小半径は？', a: '標準の角丸半径は2mmまたは3mmです。より大きな角丸が必要な場合は、カスタムダイカットが可能です。' },
+        { q: '他の加工と組み合わせられますか？', a: 'もちろんです。角丸は箔押し、局部UV、マットラミネーションなどと自由に組み合わせられます。' },
+        { q: '角丸名刺は通常より高いですか？', a: '角丸には追加の裁切工程が必要で、標準の直角名刺より約10-15%高くなります。' },
+      ],
+    },
+    processSteps: {
+      'zh-hk': [
+        { name: '設計確認', text: '確認圓角半徑和裁切位置。' },
+        { name: '印刷生產', text: '四色印刷和表面處理。' },
+        { name: '圓角裁切', text: '使用專用圓角刀模進行精密裁切。' },
+        { name: '質檢包裝', text: '檢查圓角光滑度和尺寸精準度。' },
+      ],
+      'en': [
+        { name: 'Design Review', text: 'Confirm corner radius and cutting positions.' },
+        { name: 'Printing', text: 'Four-color printing and surface finishing.' },
+        { name: 'Corner Cutting', text: 'Precision cutting with dedicated rounded corner die.' },
+        { name: 'QC & Packaging', text: 'Inspect corner smoothness and dimensional accuracy.' },
+      ],
+      'ja': [
+        { name: 'デザイン確認', text: '角丸半径と裁切位置を確認します。' },
+        { name: '印刷', text: '4色印刷と表面加工を行います。' },
+        { name: '角丸裁断', text: '専用の角丸ダイを使用して精密に裁断します。' },
+        { name: '品質検査・梱包', text: '角丸の滑らかさと寸法精度を検査します。' },
+      ],
+    },
+  },
+  'waterproof-stickers': {
+    slug: 'waterproof-stickers',
+    keywords: {
+      'zh-hk': '防水貼紙,耐用標籤,戶外貼紙,食品標籤,香港貼紙印刷,印刷即日速遞送貨',
+      'en': 'waterproof stickers, durable labels, outdoor stickers, food labels, Hong Kong sticker printing, same day delivery',
+      'ja': '防水ステッカー,耐久ラベル,屋外ステッカー,食品ラベル,香港 ステッカー印刷,即日配送',
+    },
+    h1Suffix: {
+      'zh-hk': '專業防水貼紙印刷 | 智印港',
+      'en': 'Professional Waterproof Sticker Printing | ZprintPro',
+      'ja': 'プロ防水ステッカー印刷 | ZprintPro',
+    },
+    longDescription: {
+      'zh-hk': '防水貼紙是產品標籤和戶外廣告的首選。採用合成紙或PET材質配合防水膠水，即使浸泡雨水、接觸油污、曝曬紫外線也不會褪色或脫落。在香港潮濕的氣候中，防水貼紙尤為重要。智印港使用進口日本合成紙，配合特製膠水，即使放置在冰箱、浴室或戶外環境中，也能保持粘性和色彩鮮豔度。支持印刷即日速遞送貨。',
+      'en': 'Waterproof stickers are the top choice for product labels and outdoor advertising. Made with synthetic paper or PET material and waterproof adhesive, they withstand rain, oil, and UV exposure. ZprintPro uses imported Japanese synthetic paper with specially formulated adhesive. Same-day rush delivery available.',
+      'ja': '防水ステッカーは製品ラベルや屋外広告の首选です。合成紙やPET素材に防水粘着剤を使用し、雨水、油、紫外線にも耐えます。ZprintProは輸入の日本製合成紙と特製粘着剤を使用。急行・即日配送も対応します。',
+    },
+    faq: {
+      'zh-hk': [
+        { q: '防水貼紙真的可以泡水嗎？', a: '是的。我們的防水貼紙採用合成紙配合防水膠水，可以承受短時間浸泡。適合冰箱、浴室等潮濕環境。' },
+        { q: '防水貼紙的最小訂購量是多少？', a: '一般為100張起訂。部分特殊工藝需500張起。' },
+        { q: '防水貼紙可以模切成任意形狀嗎？', a: '可以。我們支持圓形、方形、異形等各種模切形狀，甚至複雜鏤空設計。' },
+        { q: '防水貼紙的交貨時間多久？', a: '標準3-5個工作日。急件可安排即日交貨，支持印刷即日速遞送貨。' },
+      ],
+      'en': [
+        { q: 'Can waterproof stickers really be submerged in water?', a: 'Yes. Our waterproof stickers use synthetic paper with waterproof adhesive and can withstand short-term immersion.' },
+        { q: 'What is the minimum order quantity?', a: 'Generally 100 pieces minimum. Some special processes require 500 pieces.' },
+        { q: 'Can waterproof stickers be die-cut into any shape?', a: 'Yes. We support circular, square, custom die-cut shapes, and even complex镂空 designs.' },
+        { q: 'What is the delivery time?', a: 'Standard 3-5 business days. Rush same-day delivery available.' },
+      ],
+      'ja': [
+        { q: '防水ステッカーは本当に水に浸かっても大丈夫ですか？', a: 'はい。合成紙と防水粘着剤を使用しており、短時間の浸水に耐えられます。' },
+        { q: '最小発注数は？', a: '一般的に100枚から。特殊加工の場合は500枚から。' },
+        { q: '任意の形状にダイカットできますか？', a: 'はい。円形、方形、カスタム形状、複雑な透かしデザインにも対応しています。' },
+        { q: '納期はどのくらい？', a: '標準3〜5営業日。急行の当日配送も可能です。' },
+      ],
+    },
+    processSteps: {
+      'zh-hk': [
+        { name: '設計確認', text: '確認貼紙尺寸、形狀和設計稿。' },
+        { name: '印刷生產', text: '使用耐水油墨進行四色印刷。' },
+        { name: '覆膜保護', text: '可選光膜或啞膜覆膜，增加耐磨性。' },
+        { name: '模切成型', text: '使用激光刀模進行精準模切。' },
+        { name: '質檢包裝', text: '進行防水測試和粘性測試，合格後包裝出貨。' },
+      ],
+      'en': [
+        { name: 'Design Review', text: 'Confirm sticker size, shape, and design files.' },
+        { name: 'Printing', text: 'Four-color printing with water-resistant ink.' },
+        { name: 'Lamination', text: 'Optional glossy or matte lamination for durability.' },
+        { name: 'Die Cutting', text: 'Precision die-cutting with laser die.' },
+        { name: 'QC & Packaging', text: 'Waterproof and adhesion testing before shipping.' },
+      ],
+      'ja': [
+        { name: 'デザイン確認', text: 'ステッカーのサイズ、形状、デザインデータを確認します。' },
+        { name: '印刷', text: '耐水インクで4色印刷します。' },
+        { name: 'ラミネーション', text: 'グロスまたはマットラミネーションで耐久性を向上させます。' },
+        { name: 'ダイカット', text: 'レーザーダイで精密に裁断します。' },
+        { name: '品質検査・梱包', text: '防水性と粘着性テストを実施し、出荷します。' },
+      ],
+    },
+  },
+
+
   'thick-business-cards-400g': {
     slug: 'thick-business-cards-400g',
     keywords: {
@@ -225,7 +526,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'same-day-business-cards': {
     slug: 'same-day-business-cards',
     keywords: {
-      'zh-hk': '即日咭片印刷,香港即日印刷,即日咭片印刷,香港印刷',
+      'zh-hk': '即日咭片印刷,香港即日印刷,即日咭片印刷,香港印刷,印刷即日速遞送貨',
       en: 'same-day business cards,same-day business cards printing hong kong, hong kong same-day business cards',
       ja: '即日名刺,香港即日,即日名刺印刷',
     },
@@ -235,7 +536,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
       ja: 'プロ即日名刺 | ZprintPro',
     },
     longDescription: {
-      'zh-hk': '緊急需求首選，最快4小時取貨。品質不打折，急件也能展現專業形象。智印港提供專業的即日咭片印刷服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
+      'zh-hk': '緊急需求首選，最快4小時取貨，支持印刷即日速遞送貨。品質不打折，急件也能展現專業形象。智印港提供專業的即日咭片印刷服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
       en: 'Emergency orders, ready in 4 hours. Quality not compromised, rush orders still look professional. ZprintPro offers professional Same-day Business Cards services using high-quality materials and advanced printing technology. We support flexible minimum orders and fast delivery to meet the needs of Hong Kong businesses.',
       ja: '緊急注文に最適、最短4時間で受取。品質を損なわず。 ZprintProは高品質な素材と先進的な印刷技術を使用した即日名刺サービスを提供しています。柔軟な最小発注数と迅速な納品で、香港企業の様々な印刷ニーズにお応えします。',
     },
@@ -347,7 +648,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'transparent-stickers': {
     slug: 'transparent-stickers',
     keywords: {
-      'zh-hk': '透明貼紙,香港透明,透明貼紙印刷,香港印刷',
+      'zh-hk': '透明貼紙,香港透明,透明貼紙印刷,香港印刷,印刷即日速遞送貨',
       en: 'transparent stickers,transparent stickers printing hong kong, hong kong transparent stickers',
       ja: '透明ステッカー,香港透明,透明ステッカー印刷',
     },
@@ -357,7 +658,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
       ja: 'プロ透明ステッカー | ZprintPro',
     },
     longDescription: {
-      'zh-hk': '透明PET材質，貼合後呈現無感效果，完美展現產品本身。適合化妝品、食品包裝、玻璃貼飾。智印港提供專業的透明貼紙服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
+      'zh-hk': '透明PET材質，貼合後呈現無感效果，完美展現產品本身，支持印刷即日速遞送貨。適合化妝品、食品包裝、玻璃貼飾。智印港提供專業的透明貼紙服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
       en: 'Transparent PET material creates invisible effect when applied. Perfect for cosmetics, food packaging, glass decoration. ZprintPro offers professional Transparent Stickers services using high-quality materials and advanced printing technology. We support flexible minimum orders and fast delivery to meet the needs of Hong Kong businesses.',
       ja: '透明PET素材、貼り付け後無感効果。化粧品、食品包装、ガラス装飾に最適。 ZprintProは高品質な素材と先進的な印刷技術を使用した透明ステッカーサービスを提供しています。柔軟な最小発注数と迅速な納品で、香港企業の様々な印刷ニーズにお応えします。',
     },
@@ -753,7 +1054,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'kraft-paper-bags': {
     slug: 'kraft-paper-bags',
     keywords: {
-      'zh-hk': '牛皮紙袋,香港牛皮,牛皮紙袋印刷,香港印刷',
+      'zh-hk': '牛皮紙袋,香港牛皮,牛皮紙袋印刷,香港印刷,印刷即日速遞送貨',
       en: 'kraft paper bags,kraft paper bags printing hong kong, hong kong kraft paper bags',
       ja: 'クラフト紙袋,香港クラフト,クラフト紙袋印刷',
     },
@@ -763,7 +1064,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
       ja: 'プロクラフト紙袋 | ZprintPro',
     },
     longDescription: {
-      'zh-hk': '環保牛皮紙材質，質樸自然，深受消費者喜愛。適合服裝店、禮品店、咖啡店。多種尺寸可選，可定制Logo印刷。智印港提供專業的牛皮紙袋服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
+      'zh-hk': '環保牛皮紙材質，質樸自然，深受消費者喜愛，支持印刷即日速遞送貨。適合服裝店、禮品店、咖啡店。多種尺寸可選，可定制Logo印刷。智印港提供專業的牛皮紙袋服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
       en: 'Eco-friendly kraft paper, natural and rustic, loved by consumers. Perfect for clothing stores, gift shops, coffee shops. ZprintPro offers professional Kraft Paper Bags services using high-quality materials and advanced printing technology. We support flexible minimum orders and fast delivery to meet the needs of Hong Kong businesses.',
       ja: '環境に優しいクラフト紙、質朴で自然、消費者に人気。衣料品店、ギフトショップ、コーヒーショップに最適。 ZprintProは高品質な素材と先進的な印刷技術を使用したクラフト紙袋サービスを提供しています。柔軟な最小発注数と迅速な納品で、香港企業の様々な印刷ニーズにお応えします。',
     },
@@ -817,7 +1118,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'white-card-bags': {
     slug: 'white-card-bags',
     keywords: {
-      'zh-hk': '白卡紙袋,香港白卡,白卡紙袋印刷,香港印刷',
+      'zh-hk': '白卡紙袋,香港白卡,白卡紙袋印刷,香港印刷,印刷即日速遞送貨',
       en: 'white card bags,white card bags printing hong kong, hong kong white card bags',
       ja: '白カード紙袋,香港白カード,白カード紙袋印刷',
     },
@@ -827,7 +1128,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
       ja: 'プロ白カード紙袋 | ZprintPro',
     },
     longDescription: {
-      'zh-hk': '白卡紙材質，表面平整光滑，印刷效果佳。適合高端品牌、化妝品店。智印港提供專業的白卡紙袋服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
+      'zh-hk': '白卡紙材質，表面平整光滑，印刷效果佳，支持印刷即日速遞送貨。適合高端品牌、化妝品店。智印港提供專業的白卡紙袋服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
       en: 'White card paper, smooth surface, excellent printing effect. Perfect for high-end brands, cosmetic stores. ZprintPro offers professional White Card Bags services using high-quality materials and advanced printing technology. We support flexible minimum orders and fast delivery to meet the needs of Hong Kong businesses.',
       ja: '白カード紙、表面が滑らかで印刷効果が抜群。高級ブランド、化粧品店に最適。 ZprintProは高品質な素材と先進的な印刷技術を使用した白カード紙袋サービスを提供しています。柔軟な最小発注数と迅速な納品で、香港企業の様々な印刷ニーズにお応えします。',
     },
@@ -881,7 +1182,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'gift-bags': {
     slug: 'gift-bags',
     keywords: {
-      'zh-hk': '禮品紙袋,香港禮品,禮品紙袋印刷,香港印刷',
+      'zh-hk': '禮品紙袋,香港禮品,禮品紙袋印刷,香港印刷,印刷即日速遞送貨',
       en: 'gift bags,gift bags printing hong kong, hong kong gift bags',
       ja: 'ギフト紙袋,香港ギフト,ギフト紙袋印刷',
     },
@@ -891,7 +1192,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
       ja: 'プロギフト紙袋 | ZprintPro',
     },
     longDescription: {
-      'zh-hk': '精美設計，配合燙金、UV等工藝。送禮必備，提升禮品檔次。智印港提供專業的禮品紙袋服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
+      'zh-hk': '精美設計，配合燙金、UV等工藝，支持印刷即日速遞送貨。送禮必備，提升禮品檔次。智印港提供專業的禮品紙袋服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
       en: 'Exquisite design with foil stamping, UV and other processes. Essential for gifting, elevates gift quality. ZprintPro offers professional Gift Bags services using high-quality materials and advanced printing technology. We support flexible minimum orders and fast delivery to meet the needs of Hong Kong businesses.',
       ja: '精巧なデザイン、箔押し・UVなどの加工付き。ギフトに必須、ギフトの質を向上。 ZprintProは高品質な素材と先進的な印刷技術を使用したギフト紙袋サービスを提供しています。柔軟な最小発注数と迅速な納品で、香港企業の様々な印刷ニーズにお応えします。',
     },
@@ -1201,7 +1502,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'a4-flyers': {
     slug: 'a4-flyers',
     keywords: {
-      'zh-hk': 'A4宣傳單張,香港A4宣張,A4宣傳單張印刷,香港印刷',
+      'zh-hk': 'A4宣傳單張,香港A4宣張,A4宣傳單張印刷,香港印刷,印刷即日速遞送貨',
       en: 'a4 flyers,a4 flyers printing hong kong, hong kong a4 flyers',
       ja: 'A4チラシ,香港A4,A4チラシ印刷',
     },
@@ -1211,7 +1512,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
       ja: 'プロA4チラシ | ZprintPro',
     },
     longDescription: {
-      'zh-hk': '標準A4尺寸，最常用的宣傳單張規格。157g銅版紙，四色印刷，色彩鮮豔。適合產品推廣、活動宣傳。智印港提供專業的A4宣傳單張服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
+      'zh-hk': '標準A4尺寸，最常用的宣傳單張規格，支持印刷即日速遞送貨。157g銅版紙，四色印刷，色彩鮮豔。適合產品推廣、活動宣傳。智印港提供專業的A4宣傳單張服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
       en: 'Standard A4 size, most common flyer format. 157g glossy paper, 4-color printing, vibrant colors. ZprintPro offers professional A4 Flyers services using high-quality materials and advanced printing technology. We support flexible minimum orders and fast delivery to meet the needs of Hong Kong businesses.',
       ja: '標準A4サイズ、最も一般的なチラシ形式。157gコート紙、4色印刷、鮮やかな色彩。 ZprintProは高品質な素材と先進的な印刷技術を使用したA4チラシサービスを提供しています。柔軟な最小発注数と迅速な納品で、香港企業の様々な印刷ニーズにお応えします。',
     },
@@ -1259,7 +1560,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'a5-flyers': {
     slug: 'a5-flyers',
     keywords: {
-      'zh-hk': 'A5宣傳單張,香港A5宣張,A5宣傳單張印刷,香港印刷',
+      'zh-hk': 'A5宣傳單張,香港A5宣張,A5宣傳單張印刷,香港印刷,印刷即日速遞送貨',
       en: 'a5 flyers,a5 flyers printing hong kong, hong kong a5 flyers',
       ja: 'A5チラシ,香港A5,A5チラシ印刷',
     },
@@ -1269,7 +1570,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
       ja: 'プロA5チラシ | ZprintPro',
     },
     longDescription: {
-      'zh-hk': 'A5尺寸，經濟實惠，適合大量派發。餐飲外賣、快閃活動首選。智印港提供專業的A5宣傳單張服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
+      'zh-hk': 'A5尺寸，經濟實惠，適合大量派發，支持印刷即日速遞送貨。餐飲外賣、快閃活動首選。智印港提供專業的A5宣傳單張服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
       en: 'A5 size, economical, perfect for mass distribution. First choice for food delivery, flash events. ZprintPro offers professional A5 Flyers services using high-quality materials and advanced printing technology. We support flexible minimum orders and fast delivery to meet the needs of Hong Kong businesses.',
       ja: 'A5サイズ、経済的、大量配布に最適。フードデリバリー、フラッシュイベントの第一選択。 ZprintProは高品質な素材と先進的な印刷技術を使用したA5チラシサービスを提供しています。柔軟な最小発注数と迅速な納品で、香港企業の様々な印刷ニーズにお応えします。',
     },
@@ -1317,7 +1618,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'double-sided-flyers': {
     slug: 'double-sided-flyers',
     keywords: {
-      'zh-hk': '雙面宣傳單張,香港雙面宣張,雙面宣傳單張印刷,香港印刷',
+      'zh-hk': '雙面宣傳單張,香港雙面宣張,雙面宣傳單張印刷,香港印刷,印刷即日速遞送貨',
       en: 'double-sided flyers,double-sided flyers printing hong kong, hong kong double-sided flyers',
       ja: '両面チラシ,香港両面,両面チラシ印刷',
     },
@@ -1327,7 +1628,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
       ja: 'プロ両面チラシ | ZprintPro',
     },
     longDescription: {
-      'zh-hk': '雙面全彩印刷，信息容量翻倍。正面吸引眼球，背面詳細介紹。智印港提供專業的雙面宣傳單張服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
+      'zh-hk': '雙面全彩印刷，信息容量翻倍，支持印刷即日速遞送貨。正面吸引眼球，背面詳細介紹。智印港提供專業的雙面宣傳單張服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
       en: 'Double-sided full color printing, doubled information capacity. ZprintPro offers professional Double-sided Flyers services using high-quality materials and advanced printing technology. We support flexible minimum orders and fast delivery to meet the needs of Hong Kong businesses.',
       ja: '両面フルカラー印刷、情報容量が2倍。 ZprintProは高品質な素材と先進的な印刷技術を使用した両面チラシサービスを提供しています。柔軟な最小発注数と迅速な納品で、香港企業の様々な印刷ニーズにお応えします。',
     },
@@ -1491,7 +1792,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'same-day-flyers': {
     slug: 'same-day-flyers',
     keywords: {
-      'zh-hk': '即日宣傳單張,香港即日宣張,即日宣傳單張印刷,香港印刷',
+      'zh-hk': '即日宣傳單張,香港即日宣張,即日宣傳單張印刷,香港印刷,印刷即日速遞送貨',
       en: 'same-day flyers,same-day flyers printing hong kong, hong kong same-day flyers',
       ja: '即日チラシ,香港即日,即日チラシ印刷',
     },
@@ -1501,7 +1802,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
       ja: 'プロ即日チラシ | ZprintPro',
     },
     longDescription: {
-      'zh-hk': '緊急活動首選，最快當天交貨。品質保證，急件不擔心。智印港提供專業的即日宣傳單張服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
+      'zh-hk': '緊急活動首選，最快當天交貨，支持印刷即日速遞送貨。品質保證，急件不擔心。智印港提供專業的即日宣傳單張服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
       en: 'First choice for emergency events, same-day delivery available. ZprintPro offers professional Same-day Flyers services using high-quality materials and advanced printing technology. We support flexible minimum orders and fast delivery to meet the needs of Hong Kong businesses.',
       ja: '緊急イベントの第一選択、最短当日納品。 ZprintProは高品質な素材と先進的な印刷技術を使用した即日チラシサービスを提供しています。柔軟な最小発注数と迅速な納品で、香港企業の様々な印刷ニーズにお応えします。',
     },
@@ -1607,7 +1908,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'a2-posters': {
     slug: 'a2-posters',
     keywords: {
-      'zh-hk': 'A2海報印刷,香港A2印刷,A2海報印刷,香港印刷',
+      'zh-hk': 'A2海報印刷,香港A2印刷,A2海報印刷,香港印刷,印刷即日速遞送貨',
       en: 'a2 posters,a2 posters printing hong kong, hong kong a2 posters',
       ja: 'A2ポスター,香港A2,A2ポスター印刷',
     },
@@ -1617,7 +1918,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
       ja: 'プロA2ポスター | ZprintPro',
     },
     longDescription: {
-      'zh-hk': '標準A2尺寸，活動宣傳、產品推廣首選。157g銅版紙，色彩鮮豔，即日交貨。智印港提供專業的A2海報印刷服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
+      'zh-hk': '標準A2尺寸，活動宣傳、產品推廣首選，支持印刷即日速遞送貨。157g銅版紙，色彩鮮豔，即日交貨。智印港提供專業的A2海報印刷服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
       en: 'Standard A2 size, first choice for event promotion. 157g glossy paper, vibrant colors, same-day delivery. ZprintPro offers professional A2 Posters services using high-quality materials and advanced printing technology. We support flexible minimum orders and fast delivery to meet the needs of Hong Kong businesses.',
       ja: '標準A2サイズ、イベント宣伝の第一選択。157gコート紙、鮮やかな色彩、即日納品。 ZprintProは高品質な素材と先進的な印刷技術を使用したA2ポスターサービスを提供しています。柔軟な最小発注数と迅速な納品で、香港企業の様々な印刷ニーズにお応えします。',
     },
@@ -1665,7 +1966,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'a1-posters': {
     slug: 'a1-posters',
     keywords: {
-      'zh-hk': 'A1大幅海報,香港A1大幅,A1大幅海報印刷,香港印刷',
+      'zh-hk': 'A1大幅海報,香港A1大幅,A1大幅海報印刷,香港印刷,印刷即日速遞送貨',
       en: 'a1 large posters,a1 large posters printing hong kong, hong kong a1 large posters',
       ja: 'A1大型ポスター,香港A1大型,A1大型ポスター印刷',
     },
@@ -1675,7 +1976,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
       ja: 'プロA1大型ポスター | ZprintPro',
     },
     longDescription: {
-      'zh-hk': 'A1大尺寸，視覺衝擊力強。適合展覽、會場佈置。智印港提供專業的A1大幅海報服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
+      'zh-hk': 'A1大尺寸，視覺衝擊力強，支持印刷即日速遞送貨。適合展覽、會場佈置。智印港提供專業的A1大幅海報服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
       en: 'A1 large size, strong visual impact. Perfect for exhibitions, venue decoration. ZprintPro offers professional A1 Large Posters services using high-quality materials and advanced printing technology. We support flexible minimum orders and fast delivery to meet the needs of Hong Kong businesses.',
       ja: 'A1大きなサイズ、強い視覚的インパクト。展示会、会場装飾に最適。 ZprintProは高品質な素材と先進的な印刷技術を使用したA1大型ポスターサービスを提供しています。柔軟な最小発注数と迅速な納品で、香港企業の様々な印刷ニーズにお応えします。',
     },
@@ -1723,7 +2024,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'outdoor-posters': {
     slug: 'outdoor-posters',
     keywords: {
-      'zh-hk': '戶外海報,香港戶外,戶外海報印刷,香港印刷',
+      'zh-hk': '戶外海報,香港戶外,戶外海報印刷,香港印刷,印刷即日速遞送貨',
       en: 'outdoor posters,outdoor posters printing hong kong, hong kong outdoor posters',
       ja: '屋外ポスター,香港屋外,屋外ポスター印刷',
     },
@@ -1733,7 +2034,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
       ja: 'プロ屋外ポスター | ZprintPro',
     },
     longDescription: {
-      'zh-hk': '防水防曬材質，戶外使用不褪色。適合戶外廣告、建築圍板。智印港提供專業的戶外海報服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
+      'zh-hk': '防水防曬材質，戶外使用不褪色，支持印刷即日速遞送貨。適合戶外廣告、建築圍板。智印港提供專業的戶外海報服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
       en: 'Waterproof and UV-resistant material, no fading for outdoor use. ZprintPro offers professional Outdoor Posters services using high-quality materials and advanced printing technology. We support flexible minimum orders and fast delivery to meet the needs of Hong Kong businesses.',
       ja: '防水・UV耐性素材、屋外使用でも色褪せません。 ZprintProは高品質な素材と先進的な印刷技術を使用した屋外ポスターサービスを提供しています。柔軟な最小発注数と迅速な納品で、香港企業の様々な印刷ニーズにお応えします。',
     },
@@ -1955,7 +2256,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'gift-boxes': {
     slug: 'gift-boxes',
     keywords: {
-      'zh-hk': '禮品盒定制,香港禮品盒,禮品盒印刷,香港印刷',
+      'zh-hk': '禮品盒定制,香港禮品盒,禮品盒印刷,香港印刷,印刷即日速遞送貨',
       en: 'gift boxes,gift boxes printing hong kong, hong kong gift boxes',
       ja: 'ギフトボックス,香港ギフトボックス,ギフトボックス印刷',
     },
@@ -1965,7 +2266,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
       ja: 'プロギフトボックス | ZprintPro',
     },
     longDescription: {
-      'zh-hk': '精緻禮品盒，配合燙金、UV等工藝。送禮首選，提升產品價值。智印港提供專業的禮品盒定制服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
+      'zh-hk': '精緻禮品盒，配合燙金、UV等工藝，支持印刷即日速遞送貨。送禮首選，提升產品價值。智印港提供專業的禮品盒定制服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
       en: 'Exquisite gift boxes with foil stamping, UV and other processes. ZprintPro offers professional Gift Boxes services using high-quality materials and advanced printing technology. We support flexible minimum orders and fast delivery to meet the needs of Hong Kong businesses.',
       ja: '精巧なギフトボックス、箔押し・UVなどの加工付き。 ZprintProは高品質な素材と先進的な印刷技術を使用したギフトボックスサービスを提供しています。柔軟な最小発注数と迅速な納品で、香港企業の様々な印刷ニーズにお応えします。',
     },
@@ -2019,7 +2320,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'cosmetic-boxes': {
     slug: 'cosmetic-boxes',
     keywords: {
-      'zh-hk': '化妝品盒,香港化妝品盒,化妝品盒印刷,香港印刷',
+      'zh-hk': '化妝品盒,香港化妝品盒,化妝品盒印刷,香港印刷,印刷即日速遞送貨',
       en: 'cosmetic boxes,cosmetic boxes printing hong kong, hong kong cosmetic boxes',
       ja: '化粧品箱,香港化粧品箱,化粧品箱印刷',
     },
@@ -2029,7 +2330,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
       ja: 'プロ化粧品箱 | ZprintPro',
     },
     longDescription: {
-      'zh-hk': '專為化妝品設計，內托可定制。適合護膚品、彩妝品牌。智印港提供專業的化妝品盒服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
+      'zh-hk': '專為化妝品設計，內托可定制，支持印刷即日速遞送貨。適合護膚品、彩妝品牌。智印港提供專業的化妝品盒服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
       en: 'Specially designed for cosmetics, customizable inner tray. ZprintPro offers professional Cosmetic Boxes services using high-quality materials and advanced printing technology. We support flexible minimum orders and fast delivery to meet the needs of Hong Kong businesses.',
       ja: '化粧品専用設計、カスタマイズ可能な内側トレイ。 ZprintProは高品質な素材と先進的な印刷技術を使用した化粧品箱サービスを提供しています。柔軟な最小発注数と迅速な納品で、香港企業の様々な印刷ニーズにお応えします。',
     },
@@ -2147,7 +2448,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'mailer-boxes': {
     slug: 'mailer-boxes',
     keywords: {
-      'zh-hk': '快遞盒/飛機盒,香港快遞盒/飛機盒,快遞盒/飛機盒印刷,香港印刷',
+      'zh-hk': '快遞盒/飛機盒,香港快遞盒/飛機盒,快遞盒/飛機盒印刷,香港印刷,印刷即日速遞送貨',
       en: 'mailer boxes,mailer boxes printing hong kong, hong kong mailer boxes',
       ja: '発送箱,香港発送箱,発送箱印刷',
     },
@@ -2157,7 +2458,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
       ja: 'プロ発送箱 | ZprintPro',
     },
     longDescription: {
-      'zh-hk': '堅固耐用，電商發貨首選。可印品牌Logo，提升開箱體驗。智印港提供專業的快遞盒/飛機盒服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
+      'zh-hk': '堅固耐用，電商發貨首選，支持印刷即日速遞送貨。可印品牌Logo，提升開箱體驗。智印港提供專業的快遞盒/飛機盒服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
       en: 'Sturdy and durable, first choice for e-commerce shipping. ZprintPro offers professional Mailer Boxes services using high-quality materials and advanced printing technology. We support flexible minimum orders and fast delivery to meet the needs of Hong Kong businesses.',
       ja: '頑丈で耐久性があり、EC発送の第一選択。 ZprintProは高品質な素材と先進的な印刷技術を使用した発送箱サービスを提供しています。柔軟な最小発注数と迅速な納品で、香港企業の様々な印刷ニーズにお応えします。',
     },
@@ -2339,7 +2640,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'foil-red-packets': {
     slug: 'foil-red-packets',
     keywords: {
-      'zh-hk': '燙金利是封,香港燙金,燙金利是封印刷,香港印刷',
+      'zh-hk': '燙金利是封,香港燙金,燙金利是封印刷,香港印刷,印刷即日速遞送貨',
       en: 'foil red packets,foil red packets printing hong kong, hong kong foil red packets',
       ja: '箔押しポチ袋,香港箔押しポチ袋,箔押しポチ袋印刷',
     },
@@ -2349,7 +2650,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
       ja: 'プロ箔押しポチ袋 | ZprintPro',
     },
     longDescription: {
-      'zh-hk': '傳統燙金工藝，喜慶大方。多種吉祥圖案可選，也可定制專屬設計。適合企業派發、節日營銷。智印港提供專業的燙金利是封服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
+      'zh-hk': '傳統燙金工藝，喜慶大方，支持印刷即日速遞送貨。多種吉祥圖案可選，也可定制專屬設計。適合企業派發、節日營銷。智印港提供專業的燙金利是封服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
       en: 'Traditional foil stamping, festive and elegant. Multiple auspicious patterns or custom designs. ZprintPro offers professional Foil Red Packets services using high-quality materials and advanced printing technology. We support flexible minimum orders and fast delivery to meet the needs of Hong Kong businesses.',
       ja: '伝統的な箔押し加工、縁起が良く上品。複数の縁起の良い柄またはカスタムデザイン。 ZprintProは高品質な素材と先進的な印刷技術を使用した箔押しポチ袋サービスを提供しています。柔軟な最小発注数と迅速な納品で、香港企業の様々な印刷ニーズにお応えします。',
     },
@@ -2461,7 +2762,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'custom-red-packets': {
     slug: 'custom-red-packets',
     keywords: {
-      'zh-hk': '定制利是封,香港利是封,利是封印刷,香港印刷',
+      'zh-hk': '定制利是封,香港利是封,利是封印刷,香港印刷,印刷即日速遞送貨',
       en: 'custom red packets, red packets printing hong kong, hong kong  red packets',
       ja: 'オリジナルポチ袋,香港オリジナルポチ袋,オリジナルポチ袋印刷',
     },
@@ -2471,7 +2772,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
       ja: 'プロオリジナルポチ袋 | ZprintPro',
     },
     longDescription: {
-      'zh-hk': '專屬設計，印上公司Logo和祝福語。強化品牌印象，節日營銷必備。智印港提供專業的定制利是封服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
+      'zh-hk': '專屬設計，印上公司Logo和祝福語，支持印刷即日速遞送貨。強化品牌印象，節日營銷必備。智印港提供專業的定制利是封服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
       en: 'Exclusive design with company logo and greetings. Strengthens brand impression. ZprintPro offers professional Custom Red Packets services using high-quality materials and advanced printing technology. We support flexible minimum orders and fast delivery to meet the needs of Hong Kong businesses.',
       ja: '独占的なデザイン、会社ロゴと祝福の言葉。ブランドイメージを強化。 ZprintProは高品質な素材と先進的な印刷技術を使用したオリジナルポチ袋サービスを提供しています。柔軟な最小発注数と迅速な納品で、香港企業の様々な印刷ニーズにお応えします。',
     },
@@ -2705,7 +3006,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'wall-calendars': {
     slug: 'wall-calendars',
     keywords: {
-      'zh-hk': '掛牆年曆,香港掛牆,掛牆年曆印刷,香港印刷',
+      'zh-hk': '掛牆年曆,香港掛牆,掛牆年曆印刷,香港印刷,印刷即日速遞送貨',
       en: 'wall calendars,wall calendars printing hong kong, hong kong wall calendars',
       ja: '壁掛けカレンダー,香港壁掛け,壁掛けカレンダー印刷',
     },
@@ -2715,7 +3016,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
       ja: 'プロ壁掛けカレンダー | ZprintPro',
     },
     longDescription: {
-      'zh-hk': '標準A3或A2掛牆年曆，13頁設計（封面+12個月）。適合家庭、辦公室使用，全年品牌曝光。智印港提供專業的掛牆年曆服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
+      'zh-hk': '標準A3或A2掛牆年曆，13頁設計（封面+12個月），支持印刷即日速遞送貨。適合家庭、辦公室使用，全年品牌曝光。智印港提供專業的掛牆年曆服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
       en: 'Standard A3 or A2 wall calendars, 13-page design. Perfect for home and office use. ZprintPro offers professional Wall Calendars services using high-quality materials and advanced printing technology. We support flexible minimum orders and fast delivery to meet the needs of Hong Kong businesses.',
       ja: '標準A3またはA2壁掛けカレンダー、13ページデザイン。家庭やオフィスに最適。 ZprintProは高品質な素材と先進的な印刷技術を使用した壁掛けカレンダーサービスを提供しています。柔軟な最小発注数と迅速な納品で、香港企業の様々な印刷ニーズにお応えします。',
     },
@@ -2766,7 +3067,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'desk-calendars': {
     slug: 'desk-calendars',
     keywords: {
-      'zh-hk': '座檯年曆,香港座檯,座檯年曆印刷,香港印刷',
+      'zh-hk': '座檯年曆,香港座檯,座檯年曆印刷,香港印刷,印刷即日速遞送貨',
       en: 'desk calendars,desk calendars printing hong kong, hong kong desk calendars',
       ja: '卓上カレンダー,香港卓上,卓上カレンダー印刷',
     },
@@ -2776,7 +3077,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
       ja: 'プロ卓上カレンダー | ZprintPro',
     },
     longDescription: {
-      'zh-hk': '三角形座檯設計，穩固美觀。適合辦公桌擺放，每日品牌接觸。智印港提供專業的座檯年曆服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
+      'zh-hk': '三角形座檯設計，穩固美觀，支持印刷即日速遞送貨。適合辦公桌擺放，每日品牌接觸。智印港提供專業的座檯年曆服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
       en: 'Triangular desk design, stable and beautiful. Perfect for office desk display. ZprintPro offers professional Desk Calendars services using high-quality materials and advanced printing technology. We support flexible minimum orders and fast delivery to meet the needs of Hong Kong businesses.',
       ja: '三角形の卓上デザイン、安定して美しい。オフィスデスクに最適。 ZprintProは高品質な素材と先進的な印刷技術を使用した卓上カレンダーサービスを提供しています。柔軟な最小発注数と迅速な納品で、香港企業の様々な印刷ニーズにお応えします。',
     },
@@ -3071,7 +3372,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'pvc-menus': {
     slug: 'pvc-menus',
     keywords: {
-      'zh-hk': 'PVC餐牌,香港PVC,PVC餐牌印刷,香港印刷',
+      'zh-hk': 'PVC餐牌,香港PVC,PVC餐牌印刷,香港印刷,印刷即日速遞送貨',
       en: 'pvc menus,pvc menus printing hong kong, hong kong pvc menus',
       ja: 'PVCメニュー,香港PVC,PVCメニュー印刷',
     },
@@ -3081,7 +3382,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
       ja: 'プロPVCメニュー | ZprintPro',
     },
     longDescription: {
-      'zh-hk': '防水防油PVC材質，易清潔耐用。餐廳、咖啡店首選。智印港提供專業的PVC餐牌服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
+      'zh-hk': '防水防油PVC材質，易清潔耐用，支持印刷即日速遞送貨。餐廳、咖啡店首選。智印港提供專業的PVC餐牌服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
       en: 'Waterproof and oil-resistant PVC material, easy to clean and durable. ZprintPro offers professional PVC Menus services using high-quality materials and advanced printing technology. We support flexible minimum orders and fast delivery to meet the needs of Hong Kong businesses.',
       ja: '防水・耐油性PVC素材、お手入れ簡単で耐久性あり。 ZprintProは高品質な素材と先進的な印刷技術を使用したPVCメニューサービスを提供しています。柔軟な最小発注数と迅速な納品で、香港企業の様々な印刷ニーズにお応えします。',
     },
@@ -3129,7 +3430,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'laminated-menus': {
     slug: 'laminated-menus',
     keywords: {
-      'zh-hk': '過膠餐牌,香港過膠,過膠餐牌印刷,香港印刷',
+      'zh-hk': '過膠餐牌,香港過膠,過膠餐牌印刷,香港印刷,印刷即日速遞送貨',
       en: 'laminated menus,laminated menus printing hong kong, hong kong laminated menus',
       ja: 'ラミネートメニュー,香港ラミネート,ラミネートメニュー印刷',
     },
@@ -3139,7 +3440,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
       ja: 'プロラミネートメニュー | ZprintPro',
     },
     longDescription: {
-      'zh-hk': '紙質過膠處理，防水耐用且成本較低。經濟實惠之選。智印港提供專業的過膠餐牌服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
+      'zh-hk': '紙質過膠處理，防水耐用且成本較低，支持印刷即日速遞送貨。經濟實惠之選。智印港提供專業的過膠餐牌服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
       en: 'Paper with lamination, waterproof and durable at lower cost. ZprintPro offers professional Laminated Menus services using high-quality materials and advanced printing technology. We support flexible minimum orders and fast delivery to meet the needs of Hong Kong businesses.',
       ja: 'ラミネート加工紙、防水で耐久性がありコストも低い。 ZprintProは高品質な素材と先進的な印刷技術を使用したラミネートメニューサービスを提供しています。柔軟な最小発注数と迅速な納品で、香港企業の様々な印刷ニーズにお応えします。',
     },
@@ -3187,7 +3488,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'hardcover-menus': {
     slug: 'hardcover-menus',
     keywords: {
-      'zh-hk': '精裝餐牌,香港精裝,精裝餐牌印刷,香港印刷',
+      'zh-hk': '精裝餐牌,香港精裝,精裝餐牌印刷,香港印刷,印刷即日速遞送貨',
       en: 'hardcover menus,hardcover menus printing hong kong, hong kong hardcover menus',
       ja: '高級メニュー,香港高級,高級メニュー印刷',
     },
@@ -3197,7 +3498,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
       ja: 'プロ高級メニュー | ZprintPro',
     },
     longDescription: {
-      'zh-hk': '硬殼精裝，高檔大氣。適合高級餐廳、酒店。智印港提供專業的精裝餐牌服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
+      'zh-hk': '硬殼精裝，高檔大氣，支持印刷即日速遞送貨。適合高級餐廳、酒店。智印港提供專業的精裝餐牌服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
       en: 'Hardcover binding, elegant and grand. Perfect for fine dining restaurants, hotels. ZprintPro offers professional Hardcover Menus services using high-quality materials and advanced printing technology. We support flexible minimum orders and fast delivery to meet the needs of Hong Kong businesses.',
       ja: '上製本装丁、エレガントで格式高い。高級レストラン、ホテルに最適。 ZprintProは高品質な素材と先進的な印刷技術を使用した高級メニューサービスを提供しています。柔軟な最小発注数と迅速な納品で、香港企業の様々な印刷ニーズにお応えします。',
     },
@@ -3361,7 +3662,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'outdoor-vinyl-banners': {
     slug: 'outdoor-vinyl-banners',
     keywords: {
-      'zh-hk': '戶外燈布噴繪,香港戶外燈布噴繪,戶外燈布噴繪印刷,香港印刷',
+      'zh-hk': '戶外燈布噴繪,香港戶外燈布噴繪,戶外燈布噴繪印刷,香港印刷,印刷即日速遞送貨',
       en: 'outdoor vinyl banners,outdoor vinyl banners printing hong kong, hong kong outdoor vinyl banners',
       ja: '屋外バナー,香港屋外,屋外バナー印刷',
     },
@@ -3371,7 +3672,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
       ja: 'プロ屋外バナー | ZprintPro',
     },
     longDescription: {
-      'zh-hk': '大型戶外燈布，防水防曬，耐候性強。適合戶外廣告牌、建築圍板。智印港提供專業的戶外燈布噴繪服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
+      'zh-hk': '大型戶外燈布，防水防曬，耐候性強，支持印刷即日速遞送貨。適合戶外廣告牌、建築圍板。智印港提供專業的戶外燈布噴繪服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
       en: 'Large outdoor vinyl banners, waterproof and UV-resistant, strong weather resistance. ZprintPro offers professional Outdoor Vinyl Banners services using high-quality materials and advanced printing technology. We support flexible minimum orders and fast delivery to meet the needs of Hong Kong businesses.',
       ja: '大型屋外ビニールバナー、防水・UV耐性、強い耐候性。 ZprintProは高品質な素材と先進的な印刷技術を使用した屋外バナーサービスを提供しています。柔軟な最小発注数と迅速な納品で、香港企業の様々な印刷ニーズにお応えします。',
     },
@@ -3416,7 +3717,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'roll-up-banners': {
     slug: 'roll-up-banners',
     keywords: {
-      'zh-hk': '易拉寶,香港易拉寶,易拉寶印刷,香港印刷',
+      'zh-hk': '易拉寶,香港易拉寶,易拉寶印刷,香港印刷,印刷即日速遞送貨',
       en: 'roll-up banners,roll-up banners printing hong kong, hong kong roll-up banners',
       ja: 'ロールアップバナー,香港ロールアップ,ロールアップバナー印刷',
     },
@@ -3426,7 +3727,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
       ja: 'プロロールアップバナー | ZprintPro',
     },
     longDescription: {
-      'zh-hk': '便攜易拉寶展架，安裝簡便。展會、路演必備。智印港提供專業的易拉寶服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
+      'zh-hk': '便攜易拉寶展架，安裝簡便，支持印刷即日速遞送貨。展會、路演必備。智印港提供專業的易拉寶服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
       en: 'Portable roll-up banner stands, easy to install. Essential for exhibitions and roadshows. ZprintPro offers professional Roll-up Banners services using high-quality materials and advanced printing technology. We support flexible minimum orders and fast delivery to meet the needs of Hong Kong businesses.',
       ja: 'ポータブルロールアップバナースタンド、設置簡単。展示会やロードショーに必須。 ZprintProは高品質な素材と先進的な印刷技術を使用したロールアップバナーサービスを提供しています。柔軟な最小発注数と迅速な納品で、香港企業の様々な印刷ニーズにお応えします。',
     },
@@ -3636,7 +3937,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'catalog-printing': {
     slug: 'catalog-printing',
     keywords: {
-      'zh-hk': '畫冊印刷,香港畫冊,畫冊印刷,香港印刷',
+      'zh-hk': '畫冊印刷,香港畫冊,畫冊印刷,香港印刷,印刷即日速遞送貨',
       en: 'catalog printing,catalog  printing hong kong, hong kong catalog ',
       ja: 'カタログ印刷,香港カタログ,カタログ印刷',
     },
@@ -3646,7 +3947,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
       ja: 'プロカタログ印刷 | ZprintPro',
     },
     longDescription: {
-      'zh-hk': '高級畫冊，色彩還原度高。適合產品目錄、企業年報、藝術作品集。智印港提供專業的畫冊印刷服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
+      'zh-hk': '高級畫冊，色彩還原度高，支持印刷即日速遞送貨。適合產品目錄、企業年報、藝術作品集。智印港提供專業的畫冊印刷服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
       en: 'Premium catalogs with high color accuracy. Perfect for product catalogs, annual reports. ZprintPro offers professional Catalog Printing services using high-quality materials and advanced printing technology. We support flexible minimum orders and fast delivery to meet the needs of Hong Kong businesses.',
       ja: '高級カタログ、高い色再現性。製品カタログ、年次報告書に最適。 ZprintProは高品質な素材と先進的な印刷技術を使用したカタログ印刷サービスを提供しています。柔軟な最小発注数と迅速な納品で、香港企業の様々な印刷ニーズにお応えします。',
     },
@@ -3697,7 +3998,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'saddle-stitch-booklets': {
     slug: 'saddle-stitch-booklets',
     keywords: {
-      'zh-hk': '騎馬釘小冊子,香港騎馬釘小冊子,騎馬釘小冊子印刷,香港印刷',
+      'zh-hk': '騎馬釘小冊子,香港騎馬釘小冊子,騎馬釘小冊子印刷,香港印刷,印刷即日速遞送貨',
       en: 'saddle stitch booklets,saddle stitch booklets printing hong kong, hong kong saddle stitch booklets',
       ja: '中綴じ冊子,香港中綴じ冊子,中綴じ冊子印刷',
     },
@@ -3707,7 +4008,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
       ja: 'プロ中綴じ冊子 | ZprintPro',
     },
     longDescription: {
-      'zh-hk': '經濟裝訂方式，適合頁數較少的冊子。產品說明書、活動手冊首選。智印港提供專業的騎馬釘小冊子服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
+      'zh-hk': '經濟裝訂方式，適合頁數較少的冊子，支持印刷即日速遞送貨。產品說明書、活動手冊首選。智印港提供專業的騎馬釘小冊子服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
       en: 'Economical binding method, perfect for booklets with fewer pages. ZprintPro offers professional Saddle Stitch Booklets services using high-quality materials and advanced printing technology. We support flexible minimum orders and fast delivery to meet the needs of Hong Kong businesses.',
       ja: '経済的な製本方法、ページ数の少ない冊子に最適。 ZprintProは高品質な素材と先進的な印刷技術を使用した中綴じ冊子サービスを提供しています。柔軟な最小発注数と迅速な納品で、香港企業の様々な印刷ニーズにお応えします。',
     },
@@ -3941,7 +4242,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'business-envelopes': {
     slug: 'business-envelopes',
     keywords: {
-      'zh-hk': '公司信封,香港公司,公司信封印刷,香港印刷',
+      'zh-hk': '公司信封,香港公司,公司信封印刷,香港印刷,印刷即日速遞送貨',
       en: 'business envelopes,business envelopes printing hong kong, hong kong business envelopes',
       ja: 'ビジネス封筒,香港ビジネス,ビジネス封筒印刷',
     },
@@ -3951,7 +4252,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
       ja: 'プロビジネス封筒 | ZprintPro',
     },
     longDescription: {
-      'zh-hk': '定制公司信封，印上Logo和地址。專業形象，商務必備。智印港提供專業的公司信封服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
+      'zh-hk': '定制公司信封，印上Logo和地址，支持印刷即日速遞送貨。專業形象，商務必備。智印港提供專業的公司信封服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
       en: 'Custom business envelopes with logo and address. Professional image, essential for business. ZprintPro offers professional Business Envelopes services using high-quality materials and advanced printing technology. We support flexible minimum orders and fast delivery to meet the needs of Hong Kong businesses.',
       ja: 'カスタムビジネス封筒、ロゴと住所を印刷。プロフェッショナルなイメージ。 ZprintProは高品質な素材と先進的な印刷技術を使用したビジネス封筒サービスを提供しています。柔軟な最小発注数と迅速な納品で、香港企業の様々な印刷ニーズにお応えします。',
     },
@@ -3999,7 +4300,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'colored-envelopes': {
     slug: 'colored-envelopes',
     keywords: {
-      'zh-hk': '彩色信封,香港彩色,彩色信封印刷,香港印刷',
+      'zh-hk': '彩色信封,香港彩色,彩色信封印刷,香港印刷,印刷即日速遞送貨',
       en: 'colored envelopes,colored envelopes printing hong kong, hong kong colored envelopes',
       ja: 'カラー封筒,香港カラー,カラー封筒印刷',
     },
@@ -4009,7 +4310,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
       ja: 'プロカラー封筒 | ZprintPro',
     },
     longDescription: {
-      'zh-hk': '彩色印刷，視覺吸引力強。適合邀請函、賀卡、營銷郵件。智印港提供專業的彩色信封服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
+      'zh-hk': '彩色印刷，視覺吸引力強，支持印刷即日速遞送貨。適合邀請函、賀卡、營銷郵件。智印港提供專業的彩色信封服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
       en: 'Colorful printing, strong visual appeal. Perfect for invitations, greeting cards. ZprintPro offers professional Colored Envelopes services using high-quality materials and advanced printing technology. We support flexible minimum orders and fast delivery to meet the needs of Hong Kong businesses.',
       ja: 'カラフルな印刷、強い視覚的アピール。招待状、グリーティングカードに最適。 ZprintProは高品質な素材と先進的な印刷技術を使用したカラー封筒サービスを提供しています。柔軟な最小発注数と迅速な納品で、香港企業の様々な印刷ニーズにお応えします。',
     },
@@ -4173,7 +4474,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'exercise-books': {
     slug: 'exercise-books',
     keywords: {
-      'zh-hk': '作業簿印刷,香港印刷,作業簿印刷,香港印刷',
+      'zh-hk': '作業簿印刷,香港印刷,作業簿印刷,香港印刷,印刷即日速遞送貨',
       en: 'exercise books,exercise books printing hong kong, hong kong exercise books',
       ja: 'ワークブック印刷,香港ワークブック,ワークブック印刷',
     },
@@ -4183,7 +4484,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
       ja: 'プロワークブック印刷 | ZprintPro',
     },
     longDescription: {
-      'zh-hk': '學校作業簿，可定制封面和內頁格式。適合中小學、補習社。智印港提供專業的作業簿印刷服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
+      'zh-hk': '學校作業簿，可定制封面和內頁格式，支持印刷即日速遞送貨。適合中小學、補習社。智印港提供專業的作業簿印刷服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
       en: 'School exercise books, customizable cover and inner page formats. Perfect for schools. ZprintPro offers professional Exercise Books services using high-quality materials and advanced printing technology. We support flexible minimum orders and fast delivery to meet the needs of Hong Kong businesses.',
       ja: '学校のワークブック、カスタマイズ可能な表紙と内側ページ形式。小中校、塾に最適。 ZprintProは高品質な素材と先進的な印刷技術を使用したワークブック印刷サービスを提供しています。柔軟な最小発注数と迅速な納品で、香港企業の様々な印刷ニーズにお応えします。',
     },
@@ -4231,7 +4532,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'certificates': {
     slug: 'certificates',
     keywords: {
-      'zh-hk': '證書印刷,香港印刷,證書印刷,香港印刷',
+      'zh-hk': '證書印刷,香港印刷,證書印刷,香港印刷,印刷即日速遞送貨',
       en: 'certificates,certificates printing hong kong, hong kong certificates',
       ja: '賞状印刷,香港賞状,賞状印刷',
     },
@@ -4241,7 +4542,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
       ja: 'プロ賞状印刷 | ZprintPro',
     },
     longDescription: {
-      'zh-hk': '精美證書，配合燙金、壓紋等工藝。畢業證書、獎狀、資格證明。智印港提供專業的證書印刷服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
+      'zh-hk': '精美證書，配合燙金、壓紋等工藝，支持印刷即日速遞送貨。畢業證書、獎狀、資格證明。智印港提供專業的證書印刷服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。',
       en: 'Exquisite certificates with foil stamping, embossing and other processes. ZprintPro offers professional Certificates services using high-quality materials and advanced printing technology. We support flexible minimum orders and fast delivery to meet the needs of Hong Kong businesses.',
       ja: '精巧な賞状、箔押し・エンボスなどの加工付き。卒業証書、賞状、資格証明。 ZprintProは高品質な素材と先進的な印刷技術を使用した賞状印刷サービスを提供しています。柔軟な最小発注数と迅速な納品で、香港企業の様々な印刷ニーズにお応えします。',
     },

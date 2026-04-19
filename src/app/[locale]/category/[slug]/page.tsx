@@ -90,7 +90,7 @@ export default function CategoryPage({
   // 面包屑数据
   const breadcrumbItems = [
     { name: locale === 'zh-hk' ? '首頁' : locale === 'en' ? 'Home' : 'ホーム', url: `/${locale}` },
-    { name: categoryName, url: `/${locale}/category/${slug}` },
+    { name: categoryName, url: `/${locale}/category/${slug}/` },
   ];
   
   // 面包屑JSON-LD
@@ -222,7 +222,7 @@ export default function CategoryPage({
                     currentPage={currentPage}
                     totalPages={totalPages}
                     locale={locale}
-                    baseUrl={`/${locale}/category/${slug}`}
+                    baseUrl={`/${locale}/category/${slug}/`}
                   />
                 </div>
               )}

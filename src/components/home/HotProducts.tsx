@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { ArrowRight, ChevronRight, Search, ShoppingBag, FileText, Tag, Package, ImageIcon, GraduationCap, CreditCard, Mail, BookOpen, Calendar, Gift, Flag, StickyNote } from 'lucide-react';
 import { Locale } from '@/lib/seo';
-import { products, categories, getProductTitle, getProductDescription } from '@/data/products';
+import { products, categories, getProductTitle, getProductDescription, getProductImageAlt } from '@/data/products';
 
 interface HotProductsProps {
   locale: Locale;
@@ -211,7 +211,7 @@ export function HotProducts({ locale }: HotProductsProps) {
                   >
                     {/* Image */}
                     <div className="aspect-square relative overflow-hidden bg-gray-50">
-                      <ProductImage src={imageSrc} alt={productName} />
+                      <ProductImage src={imageSrc} alt={getProductImageAlt(product, locale)} />
                       {isHot && (
                         <div className="absolute top-3 left-3 bg-red-500 text-white text-xs font-bold px-2.5 py-1 rounded">
                           {t.hotBadge}
