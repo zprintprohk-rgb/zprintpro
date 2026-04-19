@@ -42,9 +42,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'premium-business-cards': {
     slug: 'premium-business-cards',
     keywords: {
-      'zh-hk': '名片印刷,香港名片,商務名片定制,快印名片,咭片印刷,高級名片,印刷即日速遞送貨',
-      'en': 'business card printing Hong Kong, premium business cards, custom name cards, rush business cards, same day delivery',
-      'ja': '名刺印刷,香港名刺,高級名刺,オーダーメイド名刺,急ぎ名刺,即日配送',
+      'zh-hk': '名片印刷,香港名片,商務名片定制,快印名片,咭片印刷,高級名片,公司名片印刷,名片設計,急印名片,即日名片,印刷即日速遞送貨,名片製作,卡片印刷,企業名片,燙金名片,UV名片,厚紙名片',
+      'en': 'business card printing,custom business cards,name card printing,premium business cards,same day business cards,company cards,design business cards online,cheap business cards fast,foil business cards,embossed business cards,rush business cards,hong kong business card printing,business card maker',
+      'ja': '名刺印刷,名刺作成,オーダーメイド名刺,高級名刺,即日名刺,急ぎ名刺,会社名刺,名刺デザイン,箔押し名刺,厚紙名刺,エンボス名刺,香港名刺印刷,名刺印刷 格安',
     },
     h1Suffix: {
       'zh-hk': '香港頂級商務名片定制專家 | 智印港',
@@ -106,9 +106,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'foil-business-cards': {
     slug: 'foil-business-cards',
     keywords: {
-      'zh-hk': '燙金名片,金屬色名片,奢華名片,燙印工藝,香港燙金,印刷即日速遞送貨',
-      'en': 'foil stamped business cards, metallic business cards, luxury name cards, gold foil printing Hong Kong, same day delivery',
-      'ja': '箔押し名刺,メタリック名刺,高級名刺,ゴールド foil,香港 箔押し,即日配送',
+      'zh-hk': '燙金名片,金屬色名片,奢華名片,燙印工藝,香港燙金,燙銀名片,玫瑰金名片,公司燙金名片,高級燙金名片,凹凸燙金名片,印刷即日速遞送貨',
+      'en': 'foil stamped business cards,metallic business cards,luxury name cards,gold foil printing hong kong,silver foil business cards,rose gold business cards,corporate foil cards,premium foil stamped cards,embossed foil business cards,same day foil business cards',
+      'ja': '箔押し名刺,メタリック名刺,高級名刺,ゴールド箔押し,シルバー箔押し名刺,ローズゴールド名刺,会社用箔押し名刺,プレミアム箔押し名刺,エンボス箔押し名刺,即日箔押し名刺',
     },
     h1Suffix: {
       'zh-hk': '奢華燙金名片定制服務 | 智印港',
@@ -167,9 +167,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'spot-uv-business-cards': {
     slug: 'spot-uv-business-cards',
     keywords: {
-      'zh-hk': '局部UV名片,凸字名片,紋理名片,特殊工藝名片,光油名片,印刷即日速遞送貨',
-      'en': 'spot UV business cards, embossed business cards, textured name cards, special finish cards, same day delivery',
-      'ja': '局部UV名刺,エンボス名刺,テクスチャ名刺,特殊加工名刺,即日配送',
+      'zh-hk': '局部UV名片,凸字名片,紋理名片,特殊工藝名片,光油名片,UV名片,立體UV名片,磨砂UV名片,啞光UV名片,創意UV名片,印刷即日速遞送貨',
+      'en': 'spot UV business cards,embossed business cards,textured name cards,special finish cards,glossy UV cards,raised spot UV cards,matte UV business cards,creative UV business cards,premium spot UV cards,same day UV business cards',
+      'ja': '局部UV名刺,エンボス名刺,テクスチャ名刺,特殊加工名刺,グロスUV名刺, raised UV名刺,マットUV名刺,クリエイティブUV名刺,プレミアム局部UV名刺,即日UV名刺',
     },
     h1Suffix: {
       'zh-hk': '創意局部UV名片設計 | 智印港',
@@ -280,9 +280,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'waterproof-stickers': {
     slug: 'waterproof-stickers',
     keywords: {
-      'zh-hk': '防水貼紙,耐用標籤,戶外貼紙,食品標籤,香港貼紙印刷,印刷即日速遞送貨',
-      'en': 'waterproof stickers, durable labels, outdoor stickers, food labels, Hong Kong sticker printing, same day delivery',
-      'ja': '防水ステッカー,耐久ラベル,屋外ステッカー,食品ラベル,香港 ステッカー印刷,即日配送',
+      'zh-hk': '防水貼紙,耐用標籤,戶外貼紙,食品標籤,香港貼紙印刷,產品標籤貼紙,電商包裝貼紙,車身防水貼紙,透明防水貼紙,圓形防水貼紙,異形防水貼紙,印刷即日速遞送貨',
+      'en': 'waterproof stickers,durable labels,outdoor stickers,food labels,Hong Kong sticker printing,product label stickers,ecommerce packaging stickers,car bumper stickers,transparent waterproof stickers,round waterproof stickers,die cut waterproof stickers,same day sticker printing',
+      'ja': '防水ステッカー,耐久ラベル,屋外ステッカー,食品ラベル,香港 ステッカー印刷,商品ラベル,梱包用シール,車用防水ステッカー,透明防水シール,円形防水シール,ダイカット防水シール,即日シール印刷',
     },
     h1Suffix: {
       'zh-hk': '專業防水貼紙印刷 | 智印港',
@@ -648,9 +648,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'transparent-stickers': {
     slug: 'transparent-stickers',
     keywords: {
-      'zh-hk': '透明貼紙,香港透明,透明貼紙印刷,香港印刷,印刷即日速遞送貨',
-      en: 'transparent stickers,transparent stickers printing hong kong, hong kong transparent stickers',
-      ja: '透明ステッカー,香港透明,透明ステッカー印刷',
+      'zh-hk': '透明貼紙,香港透明貼紙,透明貼紙印刷,透明標籤,玻璃瓶貼紙,透明防水貼紙,透明圓形貼紙,透明異形貼紙,透明燙金貼紙,透明全息貼紙,印刷即日速遞送貨',
+      en: 'transparent stickers,transparent sticker printing hong kong,clear labels,glass bottle stickers,transparent waterproof stickers,transparent round stickers,clear die cut stickers,transparent foil stickers,transparent holographic stickers,same day transparent stickers',
+      ja: '透明ステッカー,香港透明ステッカー,透明シール印刷,クリアラベル,ガラス瓶シール,透明防水ステッカー,透明円形シール,透明ダイカットシール,透明箔押しシール,透明ホログラムシール,即日透明シール印刷',
     },
     h1Suffix: {
       'zh-hk': '專業透明貼紙服務 | 智印港',
@@ -1054,9 +1054,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'kraft-paper-bags': {
     slug: 'kraft-paper-bags',
     keywords: {
-      'zh-hk': '牛皮紙袋,香港牛皮,牛皮紙袋印刷,香港印刷,印刷即日速遞送貨',
-      en: 'kraft paper bags,kraft paper bags printing hong kong, hong kong kraft paper bags',
-      ja: 'クラフト紙袋,香港クラフト,クラフト紙袋印刷',
+      'zh-hk': '牛皮紙袋,香港牛皮紙袋,牛皮紙袋印刷,環保紙袋,品牌紙袋,手提紙袋,餐廳外賣紙袋,小批量紙袋,棉繩紙袋,白卡紙袋,印刷即日速遞送貨',
+      en: 'kraft paper bags,kraft paper bags printing hong kong,eco friendly paper bags,branded paper bags,takeaway paper bags,small batch paper bags,cotton rope bags,white card paper bags,custom paper bag printing,same day paper bag printing',
+      ja: 'クラフト紙袋,香港クラフト紙袋,エコ紙袋,ブランド紙袋,テイクアウト紙袋,小ロット紙袋,綿紐紙袋,白カード紙袋,オーダーメイド紙袋,即日紙袋印刷',
     },
     h1Suffix: {
       'zh-hk': '專業牛皮紙袋服務 | 智印港',
@@ -1502,9 +1502,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'a4-flyers': {
     slug: 'a4-flyers',
     keywords: {
-      'zh-hk': 'A4宣傳單張,香港A4宣張,A4宣傳單張印刷,香港印刷,印刷即日速遞送貨',
-      en: 'a4 flyers,a4 flyers printing hong kong, hong kong a4 flyers',
-      ja: 'A4チラシ,香港A4,A4チラシ印刷',
+      'zh-hk': 'A4宣傳單張,香港A4宣傳單張,A4宣傳單張印刷,開業宣傳單張,餐廳傳單印刷,活動宣傳單張,電商宣傳單張,摺頁傳單,A5傳單印刷,派傳單印刷,印刷即日速遞送貨',
+      en: 'a4 flyers,a4 flyers printing hong kong,grand opening flyers,restaurant flyers,event flyers,ecommerce flyers,folded leaflets,a5 flyers,door hanger printing,direct mail flyers,same day flyer printing',
+      ja: 'A4チラシ,香港A4チラシ,開業チラシ,飲食店チラシ,イベントチラシ,ECチラシ,折りパンフレット,A5チラシ,ドアハンガー印刷,ダイレクトメールチラシ,即日チラシ印刷',
     },
     h1Suffix: {
       'zh-hk': '專業A4宣傳單張服務 | 智印港',
@@ -1966,9 +1966,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'a1-posters': {
     slug: 'a1-posters',
     keywords: {
-      'zh-hk': 'A1大幅海報,香港A1大幅,A1大幅海報印刷,香港印刷,印刷即日速遞送貨',
-      en: 'a1 large posters,a1 large posters printing hong kong, hong kong a1 large posters',
-      ja: 'A1大型ポスター,香港A1大型,A1大型ポスター印刷',
+      'zh-hk': 'A1大幅海報,香港A1海報,A1海報印刷,戶外海報,展覽海報,Backdrop背景板,餐廳海報,PP海報裱貼,防水海報,A0海報印刷,印刷即日速遞送貨',
+      en: 'a1 large posters,a1 poster printing hong kong,outdoor posters,exhibition posters,event backdrops,restaurant menu posters,pp laminated posters,waterproof posters,a0 poster printing,same day poster printing',
+      ja: 'A1大型ポスター,香港A1ポスター,屋外用ポスター,展示会用ポスター,イベントバックドロップ,飲食店メニューポスター,PPラミネートポスター,防水ポスター,A0ポスター印刷,即日ポスター印刷',
     },
     h1Suffix: {
       'zh-hk': '專業A1大幅海報服務 | 智印港',
@@ -2256,9 +2256,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'gift-boxes': {
     slug: 'gift-boxes',
     keywords: {
-      'zh-hk': '禮品盒定制,香港禮品盒,禮品盒印刷,香港印刷,印刷即日速遞送貨',
-      en: 'gift boxes,gift boxes printing hong kong, hong kong gift boxes',
-      ja: 'ギフトボックス,香港ギフトボックス,ギフトボックス印刷',
+      'zh-hk': '禮品盒定制,香港禮品盒,禮品盒印刷,化妝品包裝盒,食品包裝盒,手工皂盒,月餅盒定制,小批量包裝盒,產品包裝盒,紙盒印刷,印刷即日速遞送貨',
+      en: 'gift boxes,gift box printing hong kong,cosmetic packaging boxes,food packaging boxes,handmade soap boxes,mooncake box custom,small batch packaging,product packaging,paper box printing,custom box printing',
+      ja: 'ギフトボックス,香港ギフトボックス,化粧品パッケージ,食品箱,手作り石鹸箱,月餅箱,小ロットパッケージ,商品パッケージ,紙箱印刷,オーダーメイド箱印刷',
     },
     h1Suffix: {
       'zh-hk': '專業禮品盒定制服務 | 智印港',

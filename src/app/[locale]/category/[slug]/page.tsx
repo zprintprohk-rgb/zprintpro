@@ -15,12 +15,14 @@ import {
 import { 
   generateCategoryMetadata, 
   generateBreadcrumbJsonLd,
+  generateLocalBusinessJsonLd,
   Locale
 } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
 import { ProductCard } from '@/components/ProductCard';
 import { CategoryFilter } from '@/components/CategoryFilter';
 import { Pagination } from '@/components/Pagination';
+import { CategoryPillarContent } from '@/components/CategoryPillarContent';
 
 export const dynamic = 'force-static';
 
@@ -96,6 +98,22 @@ export default function CategoryPage({
   // 面包屑JSON-LD
   const breadcrumbJsonLd = generateBreadcrumbJsonLd(breadcrumbItems);
   
+  // Category ItemList Schema — 产品列表结构化数据
+  const itemListJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: categoryName,
+    itemListElement: categoryProducts.map((product, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      url: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://zprintpro.com'}/${locale}/product/${product.slug}/`,
+      name: locale === 'zh-hk' ? product.name : locale === 'en' ? product.nameEn : product.nameJa,
+    })),
+  };
+  
+  // LocalBusiness Schema — GEO本地化信号
+  const localBusinessJsonLd = generateLocalBusinessJsonLd();
+  
   // 翻译文本
   const translations = {
     'zh-hk': {
@@ -152,8 +170,10 @@ export default function CategoryPage({
   
   return (
     <>
-      {/* 面包屑结构化数据 */}
+      {/* 结构化数据：面包屑 + 产品列表 + 本地商家 */}
       <JsonLd data={breadcrumbJsonLd} />
+      <JsonLd data={itemListJsonLd} />
+      <JsonLd data={localBusinessJsonLd} />
       
       <main className="min-h-screen bg-gray-50">
         {/* 页面标题区 */}
@@ -229,6 +249,9 @@ export default function CategoryPage({
             </div>
           </div>
         </div>
+        
+        {/* Pillar Content — SEO支柱内容区 */}
+        <CategoryPillarContent locale={locale} categorySlug={slug} />
       </main>
     </>
   );

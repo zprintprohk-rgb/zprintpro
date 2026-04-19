@@ -100,32 +100,127 @@ export function generateHomeMetadata(locale: Locale): Metadata {
 }
 
 // 生成分類頁元數據
-export function generateCategoryMetadata(locale: Locale, categoryName: string = '', categoryNameEn: string = '', categoryNameJa: string = ''): Metadata {
-  const names = { 'zh-hk': categoryName, en: categoryNameEn, ja: categoryNameJa };
-  const descriptions = {
-    'zh-hk': `專業${categoryName}印刷服務，品質保證，價格透明。智印港提供多種${categoryName}選擇，最快即日交貨。`,
-    en: `Professional ${categoryNameEn} printing services with quality guarantee and transparent pricing. ZPrintPro offers various ${categoryNameEn} options with same-day delivery available.`,
-    ja: `プロの${categoryNameJa}印刷サービス、品質保証、透明な価格。ZPrintProは様々な${categoryNameJa}オプションを提供し、最短当日配送可能。`,
+// 分类页市场特定SEO数据（基于全球三大市场调研）
+const categorySeoData: Record<string, {
+  keywords: { 'zh-hk': string; en: string; ja: string };
+  descriptions: { 'zh-hk': string; en: string; ja: string };
+}> = {
+  'business-cards': {
+    keywords: {
+      'zh-hk': '名片印刷,香港名片,商務名片,咭片印刷,卡片印刷,名片設計,急印名片,即日名片,公司名片,高級名片',
+      en: 'business card printing,custom business cards,name card printing,premium business cards,same day business cards,company cards,design business cards online,cheap business cards fast,foil business cards,embossed business cards',
+      ja: '名刺印刷,名刺作成,オーダーメイド名刺,高級名刺,即日名刺,急ぎ名刺,会社名刺,名刺デザイン,箔押し名刺,厚紙名刺',
+    },
+    descriptions: {
+      'zh-hk': '香港專業名片印刷，100張起訂，最快24小時交貨。支持燙金、UV、凹凸、圓角等特殊工藝，免費設計模板。智印港ISO9001認證，品質保證。',
+      en: 'Custom business card printing with same-day delivery in Hong Kong. Premium paper stocks, foil stamping, spot UV, embossing. Free design templates. ISO9001 certified. 100 cards minimum.',
+      ja: '香港の名刺印刷専門店。100枚から、最短24時間納品。箔押し・UV・エンボス・丸角加工対応。無料デザインテンプレート。ISO9001認証取得。',
+    },
+  },
+  'stickers': {
+    keywords: {
+      'zh-hk': '貼紙印刷,防水貼紙,標籤貼紙,透明貼紙,圓形貼紙,異形貼紙,產品標籤,食品標籤,電商貼紙,車身貼紙',
+      en: 'sticker printing,custom stickers,waterproof stickers,die cut stickers,vinyl stickers,product labels,transparent stickers,round stickers,food labels,ecommerce stickers,bumper stickers,holographic stickers',
+      ja: 'シール印刷,ステッカー印刷,防水シール,透明シール,円形シール,ダイカットシール,商品ラベル,食品ラベル,梱包用シール,ホログラムシール',
+    },
+    descriptions: {
+      'zh-hk': '香港專業貼紙印刷，防水防曬耐用。支持圓形、異形、透明、食品標籤等全系列貼紙。50張起訂，即日交貨。免費設計，全港送貨。',
+      en: 'Custom sticker printing Hong Kong — waterproof, UV-resistant, durable. Die-cut, round, transparent, food-safe labels. 50 pcs minimum, same-day rush available. Free design, island-wide delivery.',
+      ja: '香港のシール印刷専門店。防水・耐UV・耐久性抜群。ダイカット・円形・透明・食品対応ラベル。50枚から、急行対応。無料デザイン、全港配送。',
+    },
+  },
+  'flyers': {
+    keywords: {
+      'zh-hk': '宣傳單張印刷,傳單印刷,傳單派發,A4單張,A5單張,摺頁傳單,開業傳單,餐廳傳單,活動傳單,電商傳單',
+      en: 'flyer printing,leaflet printing,custom flyers,A4 flyers,A5 flyers,folded flyers,grand opening flyers,restaurant flyers,event flyers,real estate flyers,door hanger printing,direct mail flyers',
+      ja: 'チラシ印刷,フライヤー印刷,パンフレット印刷,A4チラシ,A5チラシ,折りパンフレット,開業チラシ,飲食店チラシ,イベントチラシ,不動産チラシ',
+    },
+    descriptions: {
+      'zh-hk': '香港宣傳單張印刷專家，10張起訂。A4/A5/摺頁傳單，光粉紙/啞粉紙/書紙多種紙質。即日印刷速遞，免費設計。適合開業、活動、餐廳、選舉宣傳。',
+      en: 'Flyer & leaflet printing Hong Kong from 10 copies. A4/A5/folded formats, glossy/matte/uncoated paper. Same-day printing & delivery. Free design. Perfect for grand openings, events, restaurants, campaigns.',
+      ja: '香港のチラシ印刷専門店。10枚から。A4/A5/折りパンフレット、光沢紙/マット紙/書籍紙。即日印刷・配送。無料デザイン。開業・イベント・飲食店・選挙に最適。',
+    },
+  },
+  'packaging': {
+    keywords: {
+      'zh-hk': '包裝盒印刷,禮品盒定制,化妝品包裝盒,食品包裝盒,手工皂盒,月餅盒,小批量包裝盒,產品包裝盒,紙盒印刷,彩盒印刷',
+      en: 'custom packaging boxes,box printing,gift box packaging,cosmetic packaging,food packaging boxes,product packaging,small batch packaging,corrugated boxes,paper box printing,retail packaging,mailer boxes',
+      ja: 'パッケージ印刷,箱印刷,ギフト箱,化粧品パッケージ,食品箱,商品パッケージ,小ロットパッケージ,段ボール箱,紙箱印刷,梱包材',
+    },
+    descriptions: {
+      'zh-hk': '香港包裝盒定制專家，100個起訂。禮品盒、化妝品盒、食品盒、月餅盒。支持燙金、UV、凹凸工藝。免費刀模設計，即日打樣。ISO9001+FSC認證。',
+      en: 'Custom packaging box printing Hong Kong from 100 units. Gift boxes, cosmetic boxes, food packaging, mooncake boxes. Foil stamping, UV, embossing. Free die-cut design, same-day sampling. ISO9001 & FSC certified.',
+      ja: '香港のパッケージ印刷専門店。100個から。ギフト箱・化粧品箱・食品箱・月餅箱。箔押し・UV・エンボス対応。無料型設計、即日サンプル。ISO9001・FSC認証。',
+    },
+  },
+  'posters': {
+    keywords: {
+      'zh-hk': '海報印刷,A1海報,A2海報,A0海報,戶外海報,展覽海報,餐廳海報,Backdrop背景板,PP海報裱貼,防水海報',
+      en: 'poster printing,custom posters,A1 poster,A2 poster,A0 poster,outdoor posters,exhibition posters,event backdrops,PP laminated posters,waterproof posters,foam board printing,same day poster printing',
+      ja: 'ポスター印刷,A1ポスター,A2ポスター,A0ポスター,屋外用ポスター,展示会用ポスター,イベントバックドロップ,PPラミネートポスター,防水ポスター,即日ポスター印刷',
+    },
+    descriptions: {
+      'zh-hk': '香港海報印刷專家，A0/A1/A2/A3全尺寸。戶外防水海報、展覽Backdrop、PP裱貼。10張起訂，最快4小時交貨。光粉紙/相紙/帆布多種材質。',
+      en: 'Poster printing Hong Kong — A0/A1/A2/A3 sizes. Outdoor waterproof posters, exhibition backdrops, PP lamination. 10 copies minimum, 4-hour rush available. Glossy art paper / photo paper / canvas options.',
+      ja: '香港のポスター印刷専門店。A0/A1/A2/A3サイズ。屋外用防水ポスター・展示会用バックドロップ・PPラミネート。10枚から、最短4時間急行。光沢紙・写真用紙・キャンバス対応。',
+    },
+  },
+  'paper-bags': {
+    keywords: {
+      'zh-hk': '紙袋印刷,牛皮紙袋,環保紙袋,手提紙袋,品牌紙袋,禮品紙袋,餐廳外賣紙袋,小批量紙袋,棉繩紙袋,白卡紙袋',
+      en: 'paper bag printing,custom paper bags,kraft paper bags,eco friendly bags,branded paper bags,gift bags,retail bags,takeaway bags,small batch paper bags,twisted handle bags,white card paper bags',
+      ja: '紙袋印刷,クラフト紙袋,エコ紙袋,手提げ紙袋,ブランド紙袋,ギフト袋,テイクアウト紙袋,小ロット紙袋,紙袋作成,ペーパーバッグ',
+    },
+    descriptions: {
+      'zh-hk': '香港紙袋印刷專家，100個起訂。牛皮紙袋、環保紙袋、手提禮品袋。支持燙金、UV、凹凸工藝。FSC環保認證紙張，即日交貨。適合零售、餐飲、活動、品牌推廣。',
+      en: 'Custom paper bag printing Hong Kong from 100 units. Kraft bags, eco-friendly bags, retail & gift bags. Foil stamping, UV, embossing. FSC-certified paper, same-day delivery. Perfect for retail, F&B, events, branding.',
+      ja: '香港の紙袋印刷専門店。100個から。クラフト紙袋・エコ紙袋・手提げギフト袋。箔押し・UV・エンボス対応。FSC認証紙、即日納品。小売・飲食・イベント・ブランディングに最適。',
+    },
+  },
+};
+
+// 默认分类SEO数据
+function getDefaultCategorySeo(categoryName: string, categoryNameEn: string, categoryNameJa: string) {
+  return {
+    keywords: {
+      'zh-hk': `${categoryName}印刷,香港${categoryName},${categoryName}定制`,
+      en: `${categoryNameEn} printing,custom ${categoryNameEn.toLowerCase()},${categoryNameEn.toLowerCase()} printing hong kong`,
+      ja: `${categoryNameJa}印刷,${categoryNameJa}作成,${categoryNameJa} 香港`,
+    },
+    descriptions: {
+      'zh-hk': `專業${categoryName}印刷服務，品質保證，價格透明。智印港提供多種${categoryName}選擇，最快即日交貨。`,
+      en: `Professional ${categoryNameEn} printing services with quality guarantee and transparent pricing. ZPrintPro offers various ${categoryNameEn} options with same-day delivery available.`,
+      ja: `プロの${categoryNameJa}印刷サービス、品質保証、透明な価格。ZPrintProは様々な${categoryNameJa}オプションを提供し、最短当日配送可能。`,
+    },
   };
+}
+
+export function generateCategoryMetadata(locale: Locale, categoryName: string = '', categoryNameEn: string = '', categoryNameJa: string = ''): Metadata {
+  // 查找分类的slug（通过nameEn反向查找）
+  const slug = categoryNameEn.toLowerCase().replace(/\s+/g, '-');
+  const seoData = categorySeoData[slug] || getDefaultCategorySeo(categoryName, categoryNameEn, categoryNameJa);
   
+  const names = { 'zh-hk': categoryName, en: categoryNameEn, ja: categoryNameJa };
   const rawName = names[locale];
   const name = rawName && !rawName.endsWith('印刷') && locale === 'zh-hk' ? `${rawName}印刷` : rawName;
-  const description = descriptions[locale];
+  const description = seoData.descriptions[locale];
+  const keywords = seoData.keywords[locale];
   const lang = locale === 'zh-hk' ? 'zh-HK' : locale;
   
   return {
-    title: `${name} | ${siteConfig.name}`,
+    title: `${name} | Same Day Delivery | ${siteConfig.name}`,
     description,
+    keywords: keywords.split(','),
     alternates: {
-      canonical: `${siteConfig.url}/${locale === 'zh-hk' ? '' : locale + '/'}category/${categoryNameEn.toLowerCase().replace(/\s+/g, '-')}/`,
+      canonical: `${siteConfig.url}/${locale === 'zh-hk' ? '' : locale + '/'}category/${slug}/`,
       languages: {
-        'zh-HK': `${siteConfig.url}/category/${categoryNameEn.toLowerCase().replace(/\s+/g, '-')}/`,
-        'en': `${siteConfig.url}/en/category/${categoryNameEn.toLowerCase().replace(/\s+/g, '-')}/`,
-        'ja': `${siteConfig.url}/ja/category/${categoryNameEn.toLowerCase().replace(/\s+/g, '-')}/`,
+        'zh-HK': `${siteConfig.url}/category/${slug}/`,
+        'en': `${siteConfig.url}/en/category/${slug}/`,
+        'ja': `${siteConfig.url}/ja/category/${slug}/`,
       },
     },
     openGraph: {
-      title: `${name} | ${siteConfig.name}`,
+      title: `${name} | Same Day Delivery | ${siteConfig.name}`,
       description,
       locale: lang,
       type: 'website',
