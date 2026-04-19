@@ -225,9 +225,9 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'rounded-corner-cards': {
     slug: 'rounded-corner-cards',
     keywords: {
-      'zh-hk': '圓角名片,安全邊名片,創意名片,模切名片,印刷即日速遞送貨',
-      'en': 'rounded corner business cards, safe edge cards, creative name cards, die cut cards, same day delivery',
-      'ja': '角丸名刺,安全エッジ名刺,クリエイティブ名刺,ダイカット名刺,即日配送',
+      'zh-hk': '圓角名片,安全邊名片,創意名片,模切名片,印刷即日速遞送貨,圓邊名片,R角名片,圓角啞膠名片,圓角燙金名片,時尚圓角名片',
+      'en': 'rounded corner business cards, safe edge cards, creative name cards, die cut cards, same day delivery,round edge business cards,R corner business cards,rounded matte business cards,rounded foil business cards,modern rounded cards',
+      'ja': '角丸名刺,安全エッジ名刺,クリエイティブ名刺,ダイカット名刺,即日配送,丸角名刺,ラウンドエッジ名刺,Rコーナー名刺,丸角マット名刺,丸角箔押し名刺,モダン丸角名刺',
     },
     h1Suffix: {
       'zh-hk': '時尚圓角名片定制 | 智印港',
@@ -343,7 +343,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'thick-business-cards-400g': {
     slug: 'thick-business-cards-400g',
     keywords: {
-      'zh-hk': '厚身咭片(400g),香港厚身(400g),厚身咭片(400g)印刷,香港印刷',
+      'zh-hk': '厚身咭片(400g),香港厚身(400g),厚身咭片(400g)印刷,香港印刷,厚紙名片,400g名片,厚身名片,高級厚名片,厚卡名片,重型名片',
       en: 'thick business cards (400g),thick business cards (400g) printing hong kong, hong kong thick business cards (400g)',
       ja: '厚紙名刺(400g),香港厚紙(400g),厚紙名刺(400g)印刷',
     },
@@ -404,7 +404,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'matte-business-cards': {
     slug: 'matte-business-cards',
     keywords: {
-      'zh-hk': '啞膠咭片,香港啞膠,啞膠咭片印刷,香港印刷',
+      'zh-hk': '啞膠咭片,香港啞膠,啞膠咭片印刷,香港印刷,啞膠名片,啞面名片,磨砂名片,質感名片,霧面名片,啞光名片印刷',
       en: 'matte laminated cards,matte laminated cards printing hong kong, hong kong matte laminated cards',
       ja: 'マット名刺,香港マット,マット名刺印刷',
     },
@@ -465,7 +465,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'double-sided-cards': {
     slug: 'double-sided-cards',
     keywords: {
-      'zh-hk': '雙面咭片,香港雙面,雙面咭片印刷,香港印刷',
+      'zh-hk': '雙面咭片,香港雙面,雙面咭片印刷,香港印刷,雙面名片,雙面印刷名片,雙面彩色名片,雙面啞膠名片,雙面燙金名片',
       en: 'double-sided cards,double-sided cards printing hong kong, hong kong double-sided cards',
       ja: '両面名刺,香港両面,両面名刺印刷',
     },
@@ -526,7 +526,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'same-day-business-cards': {
     slug: 'same-day-business-cards',
     keywords: {
-      'zh-hk': '即日咭片印刷,香港即日印刷,即日咭片印刷,香港印刷,印刷即日速遞送貨',
+      'zh-hk': '即日咭片印刷,香港即日印刷,香港印刷,印刷即日速遞送貨,即日名片,急印名片,24小時名片,當天名片,快印名片,即日取名片',
       en: 'same-day business cards,same-day business cards printing hong kong, hong kong same-day business cards',
       ja: '即日名刺,香港即日,即日名刺印刷',
     },
@@ -587,7 +587,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'eco-business-cards': {
     slug: 'eco-business-cards',
     keywords: {
-      'zh-hk': '環保再生紙咭片,香港環保再生紙,環保再生紙咭片印刷,香港印刷',
+      'zh-hk': '環保再生紙咭片,香港環保再生紙,環保再生紙咭片印刷,香港印刷,環保名片,再生紙名片,FSC名片,大豆油墨名片,綠色名片,可持續名片',
       en: 'eco-friendly recycled cards,eco-friendly recycled cards printing hong kong, hong kong eco-friendly recycled cards',
       ja: '再生紙名刺,香港再生紙,再生紙名刺印刷',
     },
@@ -706,7 +706,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'removable-stickers': {
     slug: 'removable-stickers',
     keywords: {
-      'zh-hk': '可移貼紙(無殘膠),香港可移(無殘膠),可移貼紙(無殘膠)印刷,香港印刷',
+      'zh-hk': '可移貼紙(無殘膠),香港可移(無殘膠),可移貼紙(無殘膠)印刷,香港印刷,可移除貼紙,易撕貼紙,不留痕貼紙,重複使用貼紙,可再貼貼紙,牆身可移除貼紙',
       en: 'removable stickers,removable stickers printing hong kong, hong kong removable stickers',
       ja: 'はがせるステッカー,香港はがせる,はがせるステッカー印刷',
     },
@@ -764,7 +764,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'small-batch-stickers': {
     slug: 'small-batch-stickers',
     keywords: {
-      'zh-hk': '小批量貼紙,香港小批量,小批量貼紙印刷,香港印刷',
+      'zh-hk': '小批量貼紙,香港小批量,小批量貼紙印刷,香港印刷,少量貼紙,50張貼紙,小量貼紙印刷,打樣貼紙,測試貼紙',
       en: 'small batch stickers,small batch stickers printing hong kong, hong kong small batch stickers',
       ja: '小ロットステッカー,香港小ロット,小ロットステッカー印刷',
     },
@@ -822,7 +822,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'die-cut-stickers': {
     slug: 'die-cut-stickers',
     keywords: {
-      'zh-hk': '異形模切貼紙,香港異形模切,異形模切貼紙印刷,香港印刷',
+      'zh-hk': '異形模切貼紙,香港異形模切,異形模切貼紙印刷,香港印刷,異形貼紙,模切貼紙,特殊形狀貼紙,自定義形狀貼紙,任意形狀貼紙,logo形狀貼紙',
       en: 'die-cut stickers,die-cut stickers printing hong kong, hong kong die-cut stickers',
       ja: '型抜きステッカー,香港型抜き,型抜きステッカー印刷',
     },
@@ -880,7 +880,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'foil-stickers': {
     slug: 'foil-stickers',
     keywords: {
-      'zh-hk': '燙金貼紙,香港燙金,燙金貼紙印刷,香港印刷',
+      'zh-hk': '燙金貼紙,香港燙金,燙金貼紙印刷,香港印刷,金箔貼紙,銀箔貼紙,金屬貼紙,燙銀貼紙,玫瑰金貼紙',
       en: 'foil stickers,foil stickers printing hong kong, hong kong foil stickers',
       ja: '箔押しステッカー,香港箔押し,箔押しステッカー印刷',
     },
@@ -938,7 +938,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'security-stickers': {
     slug: 'security-stickers',
     keywords: {
-      'zh-hk': '防偽貼紙,香港防偽,防偽貼紙印刷,香港印刷',
+      'zh-hk': '防偽貼紙,香港防偽,防偽貼紙印刷,香港印刷,防拆貼紙,易碎貼紙,保修貼紙,防偽標籤,防篡改貼紙',
       en: 'security stickers,security stickers printing hong kong, hong kong security stickers',
       ja: 'セキュリティステッカー,香港セキュリティ,セキュリティステッカー印刷',
     },
@@ -996,7 +996,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'fluorescent-stickers': {
     slug: 'fluorescent-stickers',
     keywords: {
-      'zh-hk': '螢光貼紙,香港螢光,螢光貼紙印刷,香港印刷',
+      'zh-hk': '螢光貼紙,香港螢光,螢光貼紙印刷,香港印刷,夜光貼紙,發光貼紙,霓虹貼紙,反光貼紙,高可見度貼紙',
       en: 'fluorescent stickers,fluorescent stickers printing hong kong, hong kong fluorescent stickers',
       ja: '蛍光ステッカー,香港蛍光,蛍光ステッカー印刷',
     },
@@ -1118,7 +1118,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'white-card-bags': {
     slug: 'white-card-bags',
     keywords: {
-      'zh-hk': '白卡紙袋,香港白卡,白卡紙袋印刷,香港印刷,印刷即日速遞送貨',
+      'zh-hk': '白卡紙袋,香港白卡,白卡紙袋印刷,香港印刷,印刷即日速遞送貨,白色紙袋,白底紙袋,高檔白紙袋,白卡手提袋,白卡禮品袋',
       en: 'white card bags,white card bags printing hong kong, hong kong white card bags',
       ja: '白カード紙袋,香港白カード,白カード紙袋印刷',
     },
@@ -1182,7 +1182,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'gift-bags': {
     slug: 'gift-bags',
     keywords: {
-      'zh-hk': '禮品紙袋,香港禮品,禮品紙袋印刷,香港印刷,印刷即日速遞送貨',
+      'zh-hk': '禮品紙袋,香港禮品,禮品紙袋印刷,香港印刷,印刷即日速遞送貨,禮物紙袋,高檔禮品袋,節日禮品袋,生日禮物袋,婚禮紙袋',
       en: 'gift bags,gift bags printing hong kong, hong kong gift bags',
       ja: 'ギフト紙袋,香港ギフト,ギフト紙袋印刷',
     },
@@ -1310,7 +1310,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'handle-bags': {
     slug: 'handle-bags',
     keywords: {
-      'zh-hk': '手挽紙袋,香港手挽,手挽紙袋印刷,香港印刷',
+      'zh-hk': '手挽紙袋,香港手挽,手挽紙袋印刷,香港印刷,手提紙袋,有提手紙袋,繩柄紙袋,棉繩紙袋,紙繩紙袋,尼龍繩紙袋',
       en: 'handle bags,handle bags printing hong kong, hong kong handle bags',
       ja: '手提げ紙袋,香港手提げ,手提げ紙袋印刷',
     },
@@ -1374,7 +1374,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'small-bags': {
     slug: 'small-bags',
     keywords: {
-      'zh-hk': '小號紙袋,香港小號,小號紙袋印刷,香港印刷',
+      'zh-hk': '小號紙袋,香港小號,小號紙袋印刷,香港印刷,小型紙袋,迷你紙袋,小尺寸紙袋,精品小紙袋,飾品紙袋',
       en: 'small bags,small bags printing hong kong, hong kong small bags',
       ja: '小判紙袋,香港小判,小判紙袋印刷',
     },
@@ -1438,7 +1438,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'large-bags': {
     slug: 'large-bags',
     keywords: {
-      'zh-hk': '大號紙袋,香港大號,大號紙袋印刷,香港印刷',
+      'zh-hk': '大號紙袋,香港大號,大號紙袋印刷,香港印刷,大型紙袋,加大紙袋,大尺寸紙袋,購物大紙袋,服裝紙袋',
       en: 'large bags,large bags printing hong kong, hong kong large bags',
       ja: '大判紙袋,香港大判,大判紙袋印刷',
     },
@@ -1560,7 +1560,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'a5-flyers': {
     slug: 'a5-flyers',
     keywords: {
-      'zh-hk': 'A5宣傳單張,香港A5宣張,A5宣傳單張印刷,香港印刷,印刷即日速遞送貨',
+      'zh-hk': 'A5宣傳單張,香港A5宣張,A5宣傳單張印刷,香港印刷,印刷即日速遞送貨,A5傳單,A5單張印刷,A5雙面傳單,A5摺頁,A5宣傳單',
       en: 'a5 flyers,a5 flyers printing hong kong, hong kong a5 flyers',
       ja: 'A5チラシ,香港A5,A5チラシ印刷',
     },
@@ -1618,7 +1618,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'double-sided-flyers': {
     slug: 'double-sided-flyers',
     keywords: {
-      'zh-hk': '雙面宣傳單張,香港雙面宣張,雙面宣傳單張印刷,香港印刷,印刷即日速遞送貨',
+      'zh-hk': '雙面宣傳單張,香港雙面宣張,雙面宣傳單張印刷,香港印刷,印刷即日速遞送貨,雙面傳單,雙面單張,雙面印刷傳單,雙面彩色傳單,雙面宣傳單,兩面印刷單張',
       en: 'double-sided flyers,double-sided flyers printing hong kong, hong kong double-sided flyers',
       ja: '両面チラシ,香港両面,両面チラシ印刷',
     },
@@ -1734,7 +1734,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'thick-paper-flyers': {
     slug: 'thick-paper-flyers',
     keywords: {
-      'zh-hk': '厚紙宣傳單張,香港厚紙宣張,厚紙宣傳單張印刷,香港印刷',
+      'zh-hk': '厚紙宣傳單張,香港厚紙宣張,厚紙宣傳單張印刷,香港印刷,厚紙傳單,厚身宣傳單,高級傳單,厚卡傳單,重磅傳單,厚質宣傳單',
       en: 'thick paper flyers,thick paper flyers printing hong kong, hong kong thick paper flyers',
       ja: '厚紙チラシ,香港厚紙,厚紙チラシ印刷',
     },
@@ -1792,7 +1792,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'same-day-flyers': {
     slug: 'same-day-flyers',
     keywords: {
-      'zh-hk': '即日宣傳單張,香港即日宣張,即日宣傳單張印刷,香港印刷,印刷即日速遞送貨',
+      'zh-hk': '即日宣傳單張,香港即日宣張,即日宣傳單張印刷,香港印刷,印刷即日速遞送貨,即日傳單,急印傳單,24小時傳單,當天傳單,快印傳單,即日宣傳單',
       en: 'same-day flyers,same-day flyers printing hong kong, hong kong same-day flyers',
       ja: '即日チラシ,香港即日,即日チラシ印刷',
     },
@@ -1850,7 +1850,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'eco-flyers': {
     slug: 'eco-flyers',
     keywords: {
-      'zh-hk': '環保宣傳單張,香港環保宣張,環保宣傳單張印刷,香港印刷',
+      'zh-hk': '環保宣傳單張,香港環保宣張,環保宣傳單張印刷,香港印刷,環保傳單,再生紙傳單,FSC傳單,大豆油墨傳單,綠色傳單,可持續傳單',
       en: 'eco flyers,eco flyers printing hong kong, hong kong eco flyers',
       ja: 'エコチラシ,香港エコ,エコチラシ印刷',
     },
@@ -1908,7 +1908,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'a2-posters': {
     slug: 'a2-posters',
     keywords: {
-      'zh-hk': 'A2海報印刷,香港A2印刷,A2海報印刷,香港印刷,印刷即日速遞送貨',
+      'zh-hk': 'A2海報印刷,香港A2印刷,香港印刷,印刷即日速遞送貨,A2海報,A2尺寸海報,A2活動海報,A2宣傳海報,A2展覽海報',
       en: 'a2 posters,a2 posters printing hong kong, hong kong a2 posters',
       ja: 'A2ポスター,香港A2,A2ポスター印刷',
     },
@@ -2082,7 +2082,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'display-posters': {
     slug: 'display-posters',
     keywords: {
-      'zh-hk': '展架海報,香港展架,展架海報印刷,香港印刷',
+      'zh-hk': '展架海報,香港展架,展架海報印刷,香港印刷,展示海報,易拉架海報,X展架海報,落地海報,立式海報',
       en: 'display posters,display posters printing hong kong, hong kong display posters',
       ja: '展示用ポスター,香港展示用,展示用ポスター印刷',
     },
@@ -2140,7 +2140,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'art-posters': {
     slug: 'art-posters',
     keywords: {
-      'zh-hk': '藝術海報,香港藝術,藝術海報印刷,香港印刷',
+      'zh-hk': '藝術海報,香港藝術,藝術海報印刷,香港印刷,畫作海報,攝影海報,裝飾海報,家居海報,畫廊海報',
       en: 'art posters,art posters printing hong kong, hong kong art posters',
       ja: 'アートポスター,香港アート,アートポスター印刷',
     },
@@ -2198,7 +2198,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'adhesive-posters': {
     slug: 'adhesive-posters',
     keywords: {
-      'zh-hk': '背膠海報,香港背膠,背膠海報印刷,香港印刷',
+      'zh-hk': '背膠海報,香港背膠,背膠海報印刷,香港印刷,自粘海報,粘貼海報,牆身海報,玻璃海報,可移除背膠海報',
       en: 'adhesive posters,adhesive posters printing hong kong, hong kong adhesive posters',
       ja: '粘着ポスター,香港粘着,粘着ポスター印刷',
     },
@@ -2448,7 +2448,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'mailer-boxes': {
     slug: 'mailer-boxes',
     keywords: {
-      'zh-hk': '快遞盒/飛機盒,香港快遞盒/飛機盒,快遞盒/飛機盒印刷,香港印刷,印刷即日速遞送貨',
+      'zh-hk': '快遞盒/飛機盒,香港快遞盒/飛機盒,快遞盒/飛機盒印刷,香港印刷,印刷即日速遞送貨,飛機盒,快遞盒,郵寄盒,電商包裝盒,發貨盒,瓦楞紙盒',
       en: 'mailer boxes,mailer boxes printing hong kong, hong kong mailer boxes',
       ja: '発送箱,香港発送箱,発送箱印刷',
     },
@@ -2512,7 +2512,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'folding-boxes': {
     slug: 'folding-boxes',
     keywords: {
-      'zh-hk': '折疊盒,香港折疊盒,折疊盒印刷,香港印刷',
+      'zh-hk': '折疊盒,香港折疊盒,折疊盒印刷,香港印刷,組裝盒,平攤盒,摺盒,手工盒,禮品折疊盒',
       en: 'folding boxes,folding boxes printing hong kong, hong kong folding boxes',
       ja: '折りたたみ箱,香港折りたたみ箱,折りたたみ箱印刷',
     },
@@ -2576,7 +2576,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'rigid-boxes': {
     slug: 'rigid-boxes',
     keywords: {
-      'zh-hk': '精裝盒,香港精裝盒,精裝盒印刷,香港印刷',
+      'zh-hk': '精裝盒,香港精裝盒,精裝盒印刷,香港印刷,硬盒,天地蓋盒,書型盒,磁吸盒,高檔硬盒',
       en: 'rigid boxes,rigid boxes printing hong kong, hong kong rigid boxes',
       ja: '上製本箱,香港上製本箱,上製本箱印刷',
     },
@@ -2640,7 +2640,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'foil-red-packets': {
     slug: 'foil-red-packets',
     keywords: {
-      'zh-hk': '燙金利是封,香港燙金,燙金利是封印刷,香港印刷,印刷即日速遞送貨',
+      'zh-hk': '燙金利是封,香港燙金,燙金利是封印刷,香港印刷,印刷即日速遞送貨,金箔利是封,高級利是封,豪華利是封,燙銀利是封,立體利是封',
       en: 'foil red packets,foil red packets printing hong kong, hong kong foil red packets',
       ja: '箔押しポチ袋,香港箔押しポチ袋,箔押しポチ袋印刷',
     },
@@ -2701,7 +2701,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'embossed-red-packets': {
     slug: 'embossed-red-packets',
     keywords: {
-      'zh-hk': '浮雕利是封,香港浮雕,浮雕利是封印刷,香港印刷',
+      'zh-hk': '浮雕利是封,香港浮雕,浮雕利是封印刷,香港印刷,凹凸利是封,壓紋利是封,立體壓紋利是封,質感利是封,觸感利是封',
       en: 'embossed red packets,embossed red packets printing hong kong, hong kong embossed red packets',
       ja: 'エンボスポチ袋,香港エンボスポチ袋,エンボスポチ袋印刷',
     },
@@ -2762,7 +2762,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'custom-red-packets': {
     slug: 'custom-red-packets',
     keywords: {
-      'zh-hk': '定制利是封,香港利是封,利是封印刷,香港印刷,印刷即日速遞送貨',
+      'zh-hk': '定制利是封,香港利是封,利是封印刷,香港印刷,印刷即日速遞送貨,公司利是封,品牌利是封,企業利是封,logo利是封,專屬利是封',
       en: 'custom red packets, red packets printing hong kong, hong kong  red packets',
       ja: 'オリジナルポチ袋,香港オリジナルポチ袋,オリジナルポチ袋印刷',
     },
@@ -2823,7 +2823,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'cartoon-red-packets': {
     slug: 'cartoon-red-packets',
     keywords: {
-      'zh-hk': '卡通利是封,香港卡通,卡通利是封印刷,香港印刷',
+      'zh-hk': '卡通利是封,香港卡通,卡通利是封印刷,香港印刷,可愛利是封,動漫利是封,兒童利是封,生肖利是封,主題利是封',
       en: 'cartoon red packets,cartoon red packets printing hong kong, hong kong cartoon red packets',
       ja: 'キャラクターポチ袋,香港キャラクターポチ袋,キャラクターポチ袋印刷',
     },
@@ -2884,7 +2884,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'eco-red-packets': {
     slug: 'eco-red-packets',
     keywords: {
-      'zh-hk': '環保利是封,香港環保,環保利是封印刷,香港印刷',
+      'zh-hk': '環保利是封,香港環保,環保利是封印刷,香港印刷,再生紙利是封,FSC利是封,綠色利是封,可持續利是封,環保紅包',
       en: 'eco red packets,eco red packets printing hong kong, hong kong eco red packets',
       ja: 'エコポチ袋,香港エコポチ袋,エコポチ袋印刷',
     },
@@ -2945,7 +2945,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'large-red-packets': {
     slug: 'large-red-packets',
     keywords: {
-      'zh-hk': '大號利是封,香港大號,大號利是封印刷,香港印刷',
+      'zh-hk': '大號利是封,香港大號,大號利是封印刷,香港印刷,大型利是封,加大利是封,厚款利是封,豪華大紅包,超大利是封',
       en: 'large red packets,large red packets printing hong kong, hong kong large red packets',
       ja: '大判ポチ袋,香港大判ポチ袋,大判ポチ袋印刷',
     },
@@ -3006,7 +3006,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'wall-calendars': {
     slug: 'wall-calendars',
     keywords: {
-      'zh-hk': '掛牆年曆,香港掛牆,掛牆年曆印刷,香港印刷,印刷即日速遞送貨',
+      'zh-hk': '掛牆年曆,香港掛牆,掛牆年曆印刷,香港印刷,印刷即日速遞送貨,壁掛曆,月曆,掛曆,年曆印刷,企業年曆',
       en: 'wall calendars,wall calendars printing hong kong, hong kong wall calendars',
       ja: '壁掛けカレンダー,香港壁掛け,壁掛けカレンダー印刷',
     },
@@ -3067,7 +3067,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'desk-calendars': {
     slug: 'desk-calendars',
     keywords: {
-      'zh-hk': '座檯年曆,香港座檯,座檯年曆印刷,香港印刷,印刷即日速遞送貨',
+      'zh-hk': '座檯年曆,香港座檯,座檯年曆印刷,香港印刷,印刷即日速遞送貨,座檯曆,桌曆,枱曆,三角桌曆,立式桌曆,辦公桌曆',
       en: 'desk calendars,desk calendars printing hong kong, hong kong desk calendars',
       ja: '卓上カレンダー,香港卓上,卓上カレンダー印刷',
     },
@@ -3128,7 +3128,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'custom-calendars': {
     slug: 'custom-calendars',
     keywords: {
-      'zh-hk': '定制年曆,香港年曆,年曆印刷,香港印刷',
+      'zh-hk': '定制年曆,香港年曆,年曆印刷,香港印刷,專屬年曆,個人化年曆,訂造年曆,公司年曆,禮品年曆',
       en: 'custom calendars, calendars printing hong kong, hong kong  calendars',
       ja: 'オリジナルカレンダー,香港オリジナル,オリジナルカレンダー印刷',
     },
@@ -3189,7 +3189,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'mini-calendars': {
     slug: 'mini-calendars',
     keywords: {
-      'zh-hk': '迷你年曆,香港迷你,迷你年曆印刷,香港印刷',
+      'zh-hk': '迷你年曆,香港迷你,迷你年曆印刷,香港印刷,小型年曆,袖珍年曆,口袋年曆,卡片年曆,便攜年曆',
       en: 'mini calendars,mini calendars printing hong kong, hong kong mini calendars',
       ja: 'ミニカレンダー,香港ミニ,ミニカレンダー印刷',
     },
@@ -3250,7 +3250,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'photo-frame-calendars': {
     slug: 'photo-frame-calendars',
     keywords: {
-      'zh-hk': '相框年曆,香港相框,相框年曆印刷,香港印刷',
+      'zh-hk': '相框年曆,香港相框,相框年曆印刷,香港印刷,照片年曆,圖片年曆,紀念年曆,家庭年曆,寶寶年曆',
       en: 'photo frame calendars,photo frame calendars printing hong kong, hong kong photo frame calendars',
       ja: 'フォトフレームカレンダー,香港フォトフレーム,フォトフレームカレンダー印刷',
     },
@@ -3311,7 +3311,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'magnetic-calendars': {
     slug: 'magnetic-calendars',
     keywords: {
-      'zh-hk': '磁石年曆,香港磁石,磁石年曆印刷,香港印刷',
+      'zh-hk': '磁石年曆,香港磁石,磁石年曆印刷,香港印刷,冰箱貼年曆,磁吸年曆,貼牆年曆,磁性月曆,便利年曆',
       en: 'magnetic calendars,magnetic calendars printing hong kong, hong kong magnetic calendars',
       ja: 'マグネットカレンダー,香港マグネット,マグネットカレンダー印刷',
     },
@@ -3372,7 +3372,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'pvc-menus': {
     slug: 'pvc-menus',
     keywords: {
-      'zh-hk': 'PVC餐牌,香港PVC,PVC餐牌印刷,香港印刷,印刷即日速遞送貨',
+      'zh-hk': 'PVC餐牌,香港PVC,PVC餐牌印刷,香港印刷,印刷即日速遞送貨,膠質餐牌,防水餐牌,耐用餐牌,塑膠餐牌,硬膠餐牌',
       en: 'pvc menus,pvc menus printing hong kong, hong kong pvc menus',
       ja: 'PVCメニュー,香港PVC,PVCメニュー印刷',
     },
@@ -3430,7 +3430,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'laminated-menus': {
     slug: 'laminated-menus',
     keywords: {
-      'zh-hk': '過膠餐牌,香港過膠,過膠餐牌印刷,香港印刷,印刷即日速遞送貨',
+      'zh-hk': '過膠餐牌,香港過膠,過膠餐牌印刷,香港印刷,印刷即日速遞送貨,護貝餐牌,過塑餐牌,防水過膠餐牌,啞膠餐牌,光膠餐牌',
       en: 'laminated menus,laminated menus printing hong kong, hong kong laminated menus',
       ja: 'ラミネートメニュー,香港ラミネート,ラミネートメニュー印刷',
     },
@@ -3488,7 +3488,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'hardcover-menus': {
     slug: 'hardcover-menus',
     keywords: {
-      'zh-hk': '精裝餐牌,香港精裝,精裝餐牌印刷,香港印刷,印刷即日速遞送貨',
+      'zh-hk': '精裝餐牌,香港精裝,精裝餐牌印刷,香港印刷,印刷即日速遞送貨,硬皮餐牌,高級餐牌,皮面餐牌,硬殼餐牌,厚板餐牌',
       en: 'hardcover menus,hardcover menus printing hong kong, hong kong hardcover menus',
       ja: '高級メニュー,香港高級,高級メニュー印刷',
     },
@@ -3546,7 +3546,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'drink-menus': {
     slug: 'drink-menus',
     keywords: {
-      'zh-hk': '酒水牌,香港酒水牌,酒水牌印刷,香港印刷',
+      'zh-hk': '酒水牌,香港酒水牌,酒水牌印刷,香港印刷,酒水單,飲品餐牌,酒吧餐牌,咖啡餐牌,茶餐牌,雞尾酒單',
       en: 'drink menus,drink menus printing hong kong, hong kong drink menus',
       ja: 'ドリンクメニュー,香港ドリンク,ドリンクメニュー印刷',
     },
@@ -3604,7 +3604,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'disposable-menus': {
     slug: 'disposable-menus',
     keywords: {
-      'zh-hk': '一次性餐牌,香港一次性,一次性餐牌印刷,香港印刷',
+      'zh-hk': '一次性餐牌,香港一次性,一次性餐牌印刷,香港印刷,即棄餐牌,紙質餐牌,薄紙餐牌,單次餐牌,臨時餐牌',
       en: 'disposable menus,disposable menus printing hong kong, hong kong disposable menus',
       ja: '使い捨てメニュー,香港使い捨て,使い捨てメニュー印刷',
     },
@@ -3662,7 +3662,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'outdoor-vinyl-banners': {
     slug: 'outdoor-vinyl-banners',
     keywords: {
-      'zh-hk': '戶外燈布噴繪,香港戶外燈布噴繪,戶外燈布噴繪印刷,香港印刷,印刷即日速遞送貨',
+      'zh-hk': '戶外燈布噴繪,香港戶外燈布噴繪,戶外燈布噴繪印刷,香港印刷,印刷即日速遞送貨,戶外橫額,戶外banner,防水橫額,防曬banner,大型戶外橫額,建築地盤橫額',
       en: 'outdoor vinyl banners,outdoor vinyl banners printing hong kong, hong kong outdoor vinyl banners',
       ja: '屋外バナー,香港屋外,屋外バナー印刷',
     },
@@ -3717,7 +3717,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'roll-up-banners': {
     slug: 'roll-up-banners',
     keywords: {
-      'zh-hk': '易拉寶,香港易拉寶,易拉寶印刷,香港印刷,印刷即日速遞送貨',
+      'zh-hk': '易拉寶,香港易拉寶,易拉寶印刷,香港印刷,印刷即日速遞送貨,易拉架,拉架,伸縮橫額,便攜橫額,活動易拉架',
       en: 'roll-up banners,roll-up banners printing hong kong, hong kong roll-up banners',
       ja: 'ロールアップバナー,香港ロールアップ,ロールアップバナー印刷',
     },
@@ -3772,7 +3772,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'adhesive-banners': {
     slug: 'adhesive-banners',
     keywords: {
-      'zh-hk': '背膠噴繪,香港背膠噴繪,背膠噴繪印刷,香港印刷',
+      'zh-hk': '背膠噴繪,香港背膠噴繪,背膠噴繪印刷,香港印刷,背膠橫額,自粘橫額,貼紙橫額,牆身橫額,玻璃橫額,可移除橫額',
       en: 'adhesive banners,adhesive banners printing hong kong, hong kong adhesive banners',
       ja: '粘着バナー,香港粘着,粘着バナー印刷',
     },
@@ -3827,7 +3827,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'vehicle-wraps': {
     slug: 'vehicle-wraps',
     keywords: {
-      'zh-hk': '車身廣告,香港車身廣告,車身廣告印刷,香港印刷',
+      'zh-hk': '車身廣告,香港車身廣告,車身廣告印刷,香港印刷,車身貼,汽車貼紙,的士廣告,貨車廣告,巴士廣告',
       en: 'vehicle wraps,vehicle wraps printing hong kong, hong kong vehicle wraps',
       ja: 'カーラッピング,香港カーラッピング,カーラッピング印刷',
     },
@@ -3882,7 +3882,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'mesh-banners': {
     slug: 'mesh-banners',
     keywords: {
-      'zh-hk': '網格布噴繪,香港網格布噴繪,網格布噴繪印刷,香港印刷',
+      'zh-hk': '網格布噴繪,香港網格布噴繪,網格布噴繪印刷,香港印刷,網孔橫額,透風橫額,網眼橫額,防風橫額,建築圍板,工地圍網',
       en: 'mesh banners,mesh banners printing hong kong, hong kong mesh banners',
       ja: 'メッシュバナー,香港メッシュ,メッシュバナー印刷',
     },
@@ -3937,7 +3937,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'catalog-printing': {
     slug: 'catalog-printing',
     keywords: {
-      'zh-hk': '畫冊印刷,香港畫冊,畫冊印刷,香港印刷,印刷即日速遞送貨',
+      'zh-hk': '畫冊印刷,香港畫冊,香港印刷,印刷即日速遞送貨,目錄印刷,產品目錄,公司目錄,商品目錄,精裝目錄,企業目錄',
       en: 'catalog printing,catalog  printing hong kong, hong kong catalog ',
       ja: 'カタログ印刷,香港カタログ,カタログ印刷',
     },
@@ -3998,7 +3998,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'saddle-stitch-booklets': {
     slug: 'saddle-stitch-booklets',
     keywords: {
-      'zh-hk': '騎馬釘小冊子,香港騎馬釘小冊子,騎馬釘小冊子印刷,香港印刷,印刷即日速遞送貨',
+      'zh-hk': '騎馬釘小冊子,香港騎馬釘小冊子,騎馬釘小冊子印刷,香港印刷,印刷即日速遞送貨,騎馬釘書刊,騎釘書,中綴書,小冊子,薄本印刷,雜誌印刷',
       en: 'saddle stitch booklets,saddle stitch booklets printing hong kong, hong kong saddle stitch booklets',
       ja: '中綴じ冊子,香港中綴じ冊子,中綴じ冊子印刷',
     },
@@ -4059,7 +4059,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'perfect-bound-books': {
     slug: 'perfect-bound-books',
     keywords: {
-      'zh-hk': '無線膠裝書籍,香港無線膠裝,無線膠裝書籍印刷,香港印刷',
+      'zh-hk': '無線膠裝書籍,香港無線膠裝,無線膠裝書籍印刷,香港印刷,膠裝書,無線膠裝,熱熔膠裝,膠裝書刊,膠裝雜誌,膠裝目錄',
       en: 'perfect bound books,perfect bound books printing hong kong, hong kong perfect bound books',
       ja: '無線綴じ本,香港無線綴じ本,無線綴じ本印刷',
     },
@@ -4120,7 +4120,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'hardcover-books': {
     slug: 'hardcover-books',
     keywords: {
-      'zh-hk': '精裝書籍,香港精裝,精裝書籍印刷,香港印刷',
+      'zh-hk': '精裝書籍,香港精裝,精裝書籍印刷,香港印刷,硬皮書,精裝書,硬殼書,皮面書,線裝書,珍藏書',
       en: 'hardcover books,hardcover books printing hong kong, hong kong hardcover books',
       ja: '上製本,香港上製本,上製本印刷',
     },
@@ -4181,7 +4181,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'spiral-notebooks': {
     slug: 'spiral-notebooks',
     keywords: {
-      'zh-hk': '線圈筆記本,香港線圈筆記本,線圈筆記本印刷,香港印刷',
+      'zh-hk': '線圈筆記本,香港線圈筆記本,線圈筆記本印刷,香港印刷,活頁簿,圈裝筆記本,線圈簿,螺旋裝訂,活頁筆記本',
       en: 'spiral notebooks,spiral notebooks printing hong kong, hong kong spiral notebooks',
       ja: 'リングノート,香港リング,リングノート印刷',
     },
@@ -4242,7 +4242,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'business-envelopes': {
     slug: 'business-envelopes',
     keywords: {
-      'zh-hk': '公司信封,香港公司,公司信封印刷,香港印刷,印刷即日速遞送貨',
+      'zh-hk': '公司信封,香港公司,公司信封印刷,香港印刷,印刷即日速遞送貨,商務信封,企業信封,公文信封,信封信紙套裝,印有logo信封',
       en: 'business envelopes,business envelopes printing hong kong, hong kong business envelopes',
       ja: 'ビジネス封筒,香港ビジネス,ビジネス封筒印刷',
     },
@@ -4300,7 +4300,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'colored-envelopes': {
     slug: 'colored-envelopes',
     keywords: {
-      'zh-hk': '彩色信封,香港彩色,彩色信封印刷,香港印刷,印刷即日速遞送貨',
+      'zh-hk': '彩色信封,香港彩色,彩色信封印刷,香港印刷,印刷即日速遞送貨,顏色信封,紅色信封,金色信封,藍色信封,特色信封',
       en: 'colored envelopes,colored envelopes printing hong kong, hong kong colored envelopes',
       ja: 'カラー封筒,香港カラー,カラー封筒印刷',
     },
@@ -4358,7 +4358,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'large-envelopes': {
     slug: 'large-envelopes',
     keywords: {
-      'zh-hk': '大號信封,香港大號,大號信封印刷,香港印刷',
+      'zh-hk': '大號信封,香港大號,大號信封印刷,香港印刷,大型信封,A4信封,C4信封,快遞信封,文件信封',
       en: 'large envelopes,large envelopes printing hong kong, hong kong large envelopes',
       ja: '大判封筒,香港大判,大判封筒印刷',
     },
@@ -4416,7 +4416,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'pearl-envelopes': {
     slug: 'pearl-envelopes',
     keywords: {
-      'zh-hk': '珠光信封,香港珠光,珠光信封印刷,香港印刷',
+      'zh-hk': '珠光信封,香港珠光,珠光信封印刷,香港印刷,珍珠信封,閃亮信封,特殊紙信封,高檔信封,喜帖信封',
       en: 'pearl envelopes,pearl envelopes printing hong kong, hong kong pearl envelopes',
       ja: 'パール封筒,香港パール,パール封筒印刷',
     },
@@ -4474,7 +4474,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'exercise-books': {
     slug: 'exercise-books',
     keywords: {
-      'zh-hk': '作業簿印刷,香港印刷,作業簿印刷,香港印刷,印刷即日速遞送貨',
+      'zh-hk': '作業簿印刷,香港印刷,印刷即日速遞送貨,練習簿,作業簿,學生簿,單行簿,雙行簿,方格簿',
       en: 'exercise books,exercise books printing hong kong, hong kong exercise books',
       ja: 'ワークブック印刷,香港ワークブック,ワークブック印刷',
     },
@@ -4532,7 +4532,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'certificates': {
     slug: 'certificates',
     keywords: {
-      'zh-hk': '證書印刷,香港印刷,證書印刷,香港印刷,印刷即日速遞送貨',
+      'zh-hk': '證書印刷,香港印刷,印刷即日速遞送貨,畢業證書,獎狀,榮譽證書,培訓證書,資格證書',
       en: 'certificates,certificates printing hong kong, hong kong certificates',
       ja: '賞状印刷,香港賞状,賞状印刷',
     },
@@ -4590,7 +4590,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'school-flyers': {
     slug: 'school-flyers',
     keywords: {
-      'zh-hk': '學校單張,香港學校單張,學校單張印刷,香港印刷',
+      'zh-hk': '學校單張,香港學校單張,學校單張印刷,香港印刷,學校傳單,招生傳單,校園活動傳單,補習社傳單,興趣班傳單,開放日傳單',
       en: 'school flyers,school flyers printing hong kong, hong kong school flyers',
       ja: '学校チラシ,香港学校,学校チラシ印刷',
     },
@@ -4648,7 +4648,7 @@ export const allProductSeo: Record<string, ProductSeoData> = {
   'textbooks': {
     slug: 'textbooks',
     keywords: {
-      'zh-hk': '教科書印刷,香港教科書,教科書印刷,香港印刷',
+      'zh-hk': '教科書印刷,香港教科書,香港印刷,課本印刷,教材印刷,教科書,講義筆記,溫習筆記,校本教材',
       en: 'textbooks,textbooks printing hong kong, hong kong textbooks',
       ja: '教科書印刷,香港教科書,教科書印刷',
     },
