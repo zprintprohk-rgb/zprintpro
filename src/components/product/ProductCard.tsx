@@ -129,7 +129,7 @@ export function ProductCard({ product, locale }: ProductCardProps) {
         </p>
         <div className="flex items-center justify-between mt-3">
           <span className="text-[#F87314] font-bold">
-            {t.from} ${product.basePrice}
+            {t.from} {product.price_range.split('-')[0]}
           </span>
           <span className="text-xs text-[#999999]">
             {product.minQuantity}{t.minQty}

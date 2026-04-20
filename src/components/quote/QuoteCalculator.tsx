@@ -83,15 +83,12 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
     const materialSurcharge = product.variables?.materials?.find(m => m.value === config.material)?.surcharge || 0;
     const quantityDiscount = product.variables?.quantities?.find(q => q.value === config.quantity)?.discount || 1;
     
-    // 基础价格（从price_range解析）
-    const basePriceMatch = product.price_range.match(/HK\$(\d+)/);
-    const basePrice = basePriceMatch ? parseInt(basePriceMatch[1]) : 100;
-    
-    // 计算公式: (基础价格 + 材质附加费) × 尺寸倍数 × 数量 × 数量折扣
-    const unitPrice = Math.round((basePrice + materialSurcharge) * sizeMultiplier * quantityDiscount);
+    // basePrice 是单价（每张/每个），materialSurcharge 是每批(minQuantity)附加费，需转换为单价
+    const surchargePerUnit = product.minQuantity > 0 ? materialSurcharge / product.minQuantity : materialSurcharge;
+    const unitPrice = (product.basePrice + surchargePerUnit) * sizeMultiplier * quantityDiscount;
     const totalPrice = unitPrice * config.quantity;
     
-    return { unitPrice, totalPrice };
+    return { unitPrice: Math.round(unitPrice * 100) / 100, totalPrice: Math.round(totalPrice * 100) / 100 };
   }, [config, product]);
   
   // 处理Stripe结账
@@ -148,7 +145,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
                 {material.label}
                 {material.surcharge > 0 && (
                   <span className="text-xs text-gray-500 ml-1">
-                    +HK${material.surcharge}
+                    +HK${Math.round((material.surcharge / product.minQuantity) * 100) / 100}/張
                   </span>
                 )}
               </button>
