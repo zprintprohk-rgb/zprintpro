@@ -144,7 +144,7 @@ const translations = {
 
 export function KnowledgeSection({ locale }: KnowledgeSectionProps) {
   const t = translations[locale];
-  const localePrefix = locale === 'zh-hk' ? '' : `/${locale}`;
+  const localePrefix = `/${locale}`;
 
   return (
     <section className="py-16 bg-gray-50">

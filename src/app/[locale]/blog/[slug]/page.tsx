@@ -416,7 +416,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
   const locale = params.locale as Locale;
   const post = getPostData(locale, params.slug);
-  const langPrefix = locale === 'zh-hk' ? '' : `${locale}/`;
+  const langPrefix = `${locale}/`;
   const canonical = `${siteConfig.url}/${langPrefix}blog/${params.slug}/`;
 
   return {
@@ -433,7 +433,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       publishedTime: post?.date,
       modifiedTime: post?.date,
       section: post?.category,
-      authors: [`https://zprintpro.com/${locale === 'zh-hk' ? '' : locale + '/'}about/`],
+      authors: [`https://zprintpro.com/${locale}/about/`],
       tags: post?.keywords ? post.keywords.split(',') : undefined,
       images: [
         {
@@ -447,7 +447,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     alternates: {
       canonical,
       languages: {
-        'zh-Hant-HK': `${siteConfig.url}/blog/${params.slug}/`,
+        'zh-Hant-HK': `${siteConfig.url}/zh-hk/blog/${params.slug}/`,
         'en': `${siteConfig.url}/en/blog/${params.slug}/`,
         'ja-JP': `${siteConfig.url}/ja/blog/${params.slug}/`,
         'x-default': `${siteConfig.url}/en/blog/${params.slug}/`,
@@ -458,7 +458,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
 
 export default function BlogPostPage({ params }: BlogPostPageProps) {
   const locale = params.locale as Locale;
-  const localePrefix = locale === 'zh-hk' ? '' : `/${locale}`;
+  const localePrefix = `/${locale}`;
   const post = getPostData(locale, params.slug);
 
   if (!post) {
@@ -471,7 +471,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
     );
   }
 
-  const langPrefix = locale === 'zh-hk' ? '' : `${locale}/`;
+  const langPrefix = `${locale}/`;
   const canonical = `${siteConfig.url}/${langPrefix}blog/${params.slug}/`;
 
   const articleJsonLd = {
@@ -507,7 +507,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
         '@type': 'ListItem',
         position: 1,
         name: locale === 'zh-hk' ? '首頁' : locale === 'en' ? 'Home' : 'ホーム',
-        item: `${siteConfig.url}/${locale === 'zh-hk' ? '' : locale + '/'}`,
+        item: `${siteConfig.url}/${locale}/`,
       },
       {
         '@type': 'ListItem',

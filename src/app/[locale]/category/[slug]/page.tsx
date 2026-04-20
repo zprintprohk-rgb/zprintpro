@@ -93,7 +93,7 @@ export default function CategoryPage({
   
   // 面包屑数据
   const breadcrumbItems = [
-    { name: locale === 'zh-hk' ? '首頁' : locale === 'en' ? 'Home' : 'ホーム', url: `/${locale}` },
+    { name: locale === 'zh-hk' ? '首頁' : locale === 'en' ? 'Home' : 'ホーム', url: `/${locale}/` },
     { name: categoryName, url: `/${locale}/category/${slug}/` },
   ];
   
@@ -306,7 +306,7 @@ function BuyingGuideCta({ locale, categorySlug }: { locale: Locale; categorySlug
     'ja': { label: '選び方ガイド', cta: 'ガイドを読む →', title: 'どれを選べばいいか迷っていますか？', desc: '材質から加工、価格まで、専門家のガイドで解決。' },
   }[locale];
   
-  const localePrefix = locale === 'zh-hk' ? '' : `/${locale}`;
+  const localePrefix = `/${locale}`;
   
   return (
     <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 pb-8">

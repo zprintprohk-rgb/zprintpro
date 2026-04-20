@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: TermsPageProps): Promise<Meta
     description: t.description,
     robots: { index: false, follow: true },
     alternates: {
-      canonical: `${siteConfig.url}/${locale === 'zh-hk' ? '' : locale + '/'}terms/`,
+      canonical: `${siteConfig.url}/${locale}/terms/`,
     },
   };
 }

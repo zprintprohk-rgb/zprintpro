@@ -51,7 +51,7 @@ const categoryFallbacks: Record<string, { icon: typeof Box; gradient: string; ic
 
 export function ProductCard({ product, locale }: ProductCardProps) {
   const t = translations[locale];
-  const localePrefix = locale === 'zh-hk' ? '' : `/${locale}`;
+  const localePrefix = `/${locale}`;
   const [imgError, setImgError] = useState(false);
 
   const getProductName = () => {

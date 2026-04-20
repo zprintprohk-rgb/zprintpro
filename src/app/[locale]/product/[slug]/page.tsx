@@ -88,9 +88,9 @@ export default function ProductPage({
   
   // 面包屑数据
   const breadcrumbItems = [
-    { name: locale === 'zh-hk' ? '首頁' : locale === 'en' ? 'Home' : 'ホーム', url: `/${locale}` },
-    { name: categoryName, url: `/${locale}/category/${product.category_slug}` },
-    { name: productTitle, url: `/${locale}/product/${slug}` },
+    { name: locale === 'zh-hk' ? '首頁' : locale === 'en' ? 'Home' : 'ホーム', url: `/${locale}/` },
+    { name: categoryName, url: `/${locale}/category/${product.category_slug}/` },
+    { name: productTitle, url: `/${locale}/product/${slug}/` },
   ];
   
   // 核心产品 SEO 数据
@@ -128,7 +128,7 @@ export default function ProductPage({
   
   // 相关博客链接
   const relatedBlog = productSeo?.relatedBlogSlug;
-  const localePrefix = locale === 'zh-hk' ? '' : `/${locale}`;
+  const localePrefix = `/${locale}`;
   
   // 翻译文本
   const translations = {
@@ -214,11 +214,11 @@ export default function ProductPage({
         <div className="bg-white border-b">
           <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <nav className="text-sm text-gray-500">
-              <a href={`/${locale}`} className="hover:text-[#2873F5]">
+              <a href={`/${locale}/`} className="hover:text-[#2873F5]">
                 {t.home}
               </a>
               <span className="mx-2">/</span>
-              <a href={`/${locale}/category/${product.category_slug}`} className="hover:text-[#2873F5]">
+              <a href={`/${locale}/category/${product.category_slug}/`} className="hover:text-[#2873F5]">
                 {categoryName}
               </a>
               <span className="mx-2">/</span>

@@ -77,14 +77,14 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: BlogPageProps): Promise<Metadata> {
   const locale = params.locale as Locale;
   const t = translations[locale];
-  const langPrefix = locale === 'zh-hk' ? '' : `${locale}/`;
+  const langPrefix = `${locale}/`;
   return {
     title: t.title,
     description: t.description,
     alternates: {
       canonical: `${siteConfig.url}/${langPrefix}blog/`,
       languages: {
-        'zh-Hant-HK': `${siteConfig.url}/blog/`,
+        'zh-Hant-HK': `${siteConfig.url}/zh-hk/blog/`,
         'en': `${siteConfig.url}/en/blog/`,
         'ja-JP': `${siteConfig.url}/ja/blog/`,
         'x-default': `${siteConfig.url}/en/blog/`,
@@ -96,7 +96,7 @@ export async function generateMetadata({ params }: BlogPageProps): Promise<Metad
 export default function BlogPage({ params }: BlogPageProps) {
   const locale = params.locale as Locale;
   const t = translations[locale];
-  const localePrefix = locale === 'zh-hk' ? '' : `/${locale}`;
+  const localePrefix = `/${locale}`;
   const legacyPosts = articles[locale] || articles['zh-hk'];
 
   // Map buying guides for this locale

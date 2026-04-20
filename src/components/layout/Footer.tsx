@@ -10,7 +10,7 @@ function getLocalizedHref(href: string, locale: Locale): string {
   if (href.startsWith('http') || href.startsWith('mailto') || href.startsWith('tel') || href.startsWith('javascript')) {
     return href;
   }
-  const prefix = locale === 'zh-hk' ? '' : '/' + locale;
+  const prefix = '/' + locale;
   return prefix + href;
 }
 
@@ -168,7 +168,7 @@ const translations = {
 
 export function Footer({ locale }: FooterProps) {
   const t = translations[locale];
-  const localePrefix = locale === 'zh-hk' ? '' : `/${locale}`;
+  const localePrefix = `/${locale}`;
 
   return (
     <footer className="bg-[#1a1a2e] text-white">

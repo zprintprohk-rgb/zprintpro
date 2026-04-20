@@ -108,7 +108,7 @@ function ProductImage({ src, alt }: { src: string; alt: string }) {
 
 export function HotProducts({ locale }: HotProductsProps) {
   const t = translations[locale];
-  const localePrefix = locale === 'zh-hk' ? '' : `/${locale}`;
+  const localePrefix = `/${locale}`;
   const pathname = usePathname();
 
   return (

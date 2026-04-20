@@ -54,7 +54,7 @@ const translations = {
 
 export function HeroBanner({ locale }: HeroBannerProps) {
   const t = translations[locale];
-  const localePrefix = locale === 'zh-hk' ? '' : `/${locale}`;
+  const localePrefix = `/${locale}`;
   const [currentSlide, setCurrentSlide] = useState(0);
 
   useEffect(() => {

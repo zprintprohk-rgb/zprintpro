@@ -41,7 +41,7 @@ export async function generateMetadata({ params }: SearchPageProps): Promise<Met
     description: t.description,
     robots: { index: false, follow: false },
     alternates: {
-      canonical: `${siteConfig.url}/${locale === 'zh-hk' ? '' : locale + '/'}search/`,
+      canonical: `${siteConfig.url}/${locale}/search/`,
     },
   };
 }

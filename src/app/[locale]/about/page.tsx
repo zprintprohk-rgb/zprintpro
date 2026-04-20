@@ -109,7 +109,7 @@ export async function generateMetadata({ params }: AboutPageProps): Promise<Meta
     title: t.title,
     description: t.description,
     alternates: {
-      canonical: `${siteConfig.url}/${locale === 'zh-hk' ? '' : locale + '/'}about/`,
+      canonical: `${siteConfig.url}/${locale}/about/`,
       languages: {
         'zh-Hant-HK': `${siteConfig.url}/about/`,
         'en': `${siteConfig.url}/en/about/`,

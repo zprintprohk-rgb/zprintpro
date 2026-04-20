@@ -43,7 +43,7 @@ interface RegionalCtaProps {
 }
 
 export function RegionalCta({ locale, productSlug, className = '' }: RegionalCtaProps) {
-  const basePath = locale === 'zh-hk' ? '' : `${locale}/`;
+  const basePath = `${locale}/`;
   const href = productSlug
     ? `/${basePath}quote?product=${productSlug}`
     : `/${basePath}quote/`;

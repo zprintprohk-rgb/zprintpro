@@ -157,7 +157,7 @@ export async function generateMetadata({ params }: PressKitPageProps): Promise<M
     title: t.title,
     description: t.description,
     alternates: {
-      canonical: `${siteConfig.url}/${locale === 'zh-hk' ? '' : locale + '/'}press-kit/`,
+      canonical: `${siteConfig.url}/${locale}/press-kit/`,
       languages: {
         'zh-Hant-HK': `${siteConfig.url}/press-kit/`,
         'en': `${siteConfig.url}/en/press-kit/`,
@@ -181,7 +181,7 @@ export default function PressKitPage({ params }: PressKitPageProps) {
     '@type': 'WebPage',
     name: t.title,
     description: t.description,
-    url: `${siteConfig.url}/${locale === 'zh-hk' ? '' : locale + '/'}press-kit/`,
+    url: `${siteConfig.url}/${locale}/press-kit/`,
     mainEntity: {
       '@type': 'Organization',
       name: siteConfig.name,
@@ -279,7 +279,7 @@ export default function PressKitPage({ params }: PressKitPageProps) {
                   <div className="aspect-square bg-gray-200 rounded" />
                 </div>
                 <a
-                  href={`/${locale === 'zh-hk' ? '' : locale + '/'}product/premium-business-cards/`}
+                  href={`/${locale}/product/premium-business-cards/`}
                   className="inline-flex items-center px-4 py-2 bg-[#2873F5] text-white rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors"
                 >
                   {t.productImagesDownload}
@@ -322,7 +322,7 @@ export default function PressKitPage({ params }: PressKitPageProps) {
           <section className="text-center py-8">
             <p className="text-lg text-gray-700 mb-4">{t.cta}</p>
             <a
-              href={`/${locale === 'zh-hk' ? '' : locale + '/'}contact/`}
+              href={`/${locale}/contact/`}
               className="inline-flex items-center px-6 py-3 bg-[#2873F5] text-white rounded-lg font-medium hover:bg-blue-700 transition-colors"
             >
               {t.ctaBtn}

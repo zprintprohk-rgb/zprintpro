@@ -114,9 +114,9 @@ export function generateHomeMetadata(locale: Locale): Metadata {
     description: meta.description,
     keywords: meta.keywords,
     alternates: {
-      canonical: `${siteConfig.url}/${locale === 'zh-hk' ? '' : locale}`,
+      canonical: `${siteConfig.url}/${locale}/`,
       languages: {
-        'zh-Hant-HK': `${siteConfig.url}/`,
+        'zh-Hant-HK': `${siteConfig.url}/zh-hk/`,
         'en': `${siteConfig.url}/en/`,
         'ja-JP': `${siteConfig.url}/ja/`,
         'x-default': `${siteConfig.url}/en/`,
@@ -125,7 +125,7 @@ export function generateHomeMetadata(locale: Locale): Metadata {
     openGraph: {
       title: meta.title,
       description: meta.description,
-      url: `${siteConfig.url}/${locale === 'zh-hk' ? '' : locale}`,
+      url: `${siteConfig.url}/${locale}/`,
       siteName: siteConfig.name,
       locale: lang,
       type: 'website',
@@ -271,9 +271,9 @@ export function generateCategoryMetadata(locale: Locale, categoryName: string = 
     description,
     keywords: keywords.split(','),
     alternates: {
-      canonical: `${siteConfig.url}/${locale === 'zh-hk' ? '' : locale + '/'}category/${slug}/`,
+      canonical: `${siteConfig.url}/${locale}/category/${slug}/`,
       languages: {
-        'zh-Hant-HK': `${siteConfig.url}/category/${slug}/`,
+        'zh-Hant-HK': `${siteConfig.url}/zh-hk/category/${slug}/`,
         'en': `${siteConfig.url}/en/category/${slug}/`,
         'ja-JP': `${siteConfig.url}/ja/category/${slug}/`,
         'x-default': `${siteConfig.url}/en/category/${slug}/`,
@@ -316,9 +316,9 @@ export function generateProductMetadata(
     title: `${name} | ${suffix} | ${siteConfig.name}`,
     description: desc,
     alternates: {
-      canonical: `${siteConfig.url}/${locale === 'zh-hk' ? '' : locale + '/'}product/${slug}/`,
+      canonical: `${siteConfig.url}/${locale}/product/${slug}/`,
       languages: {
-        'zh-Hant-HK': `${siteConfig.url}/product/${slug}/`,
+        'zh-Hant-HK': `${siteConfig.url}/zh-hk/product/${slug}/`,
         'en': `${siteConfig.url}/en/product/${slug}/`,
         'ja-JP': `${siteConfig.url}/ja/product/${slug}/`,
         'x-default': `${siteConfig.url}/en/product/${slug}/`,
