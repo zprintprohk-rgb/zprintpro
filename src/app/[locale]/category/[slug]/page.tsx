@@ -179,19 +179,19 @@ export default function CategoryPage({
       
       <main className="min-h-screen bg-gray-50">
         {/* 页面标题区 */}
-        <div className="bg-white border-b">
-          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <nav className="text-sm text-gray-500 mb-4">
-              <a href={`/${locale}`} className="hover:text-[#2873F5]">
+        <div className="bg-gradient-to-r from-[#2873F5] to-[#1E5FD1]">
+          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <nav className="text-sm text-white/70 mb-3">
+              <a href={`/${locale}/`} className="hover:text-white transition-colors">
                 {locale === 'zh-hk' ? '首頁' : locale === 'en' ? 'Home' : 'ホーム'}
               </a>
               <span className="mx-2">/</span>
-              <span className="text-gray-900">{categoryName}</span>
+              <span className="text-white font-medium">{categoryName}</span>
             </nav>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+            <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">
               {categoryName}
             </h1>
-            <p className="text-gray-500">{t.productsCount}</p>
+            <p className="text-white/80">{t.productsCount}</p>
           </div>
         </div>
         

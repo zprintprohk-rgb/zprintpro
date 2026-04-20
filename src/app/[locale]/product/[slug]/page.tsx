@@ -246,42 +246,46 @@ export default function ProductPage({
               </p>
               
               {/* 价格显示 */}
-              <div className="bg-gray-100 rounded-lg p-4 mb-6">
-                <span className="text-sm text-gray-500">{t.priceRange}</span>
-                <div className="text-2xl font-bold text-[#2873F5]">
-                  {product.price_range}
+              <div className="bg-gradient-to-r from-[#2873F5]/5 to-[#2873F5]/10 rounded-xl p-5 mb-6 border border-[#2873F5]/20">
+                <div className="flex items-baseline gap-2">
+                  <span className="text-sm text-gray-500">{t.priceRange}</span>
                 </div>
-              </div>
-              
-              {/* 快速信息 */}
-              <div className="grid grid-cols-2 gap-4 mb-6">
-                <div className="flex items-center gap-2 text-sm text-gray-600">
-                  <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                  {t.sameDay}
+                <div className="flex items-baseline gap-2 mt-1">
+                  <span className="text-3xl font-extrabold text-[#2873F5]">
+                    {product.price_range.split('-')[0]}
+                  </span>
+                  <span className="text-sm text-gray-400">{product.price_range.includes('/100') ? '/100張起' : product.price_range.includes('/個') ? '/個起' : '/張起'}</span>
                 </div>
-                <div className="flex items-center gap-2 text-sm text-gray-600">
-                  <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                  {t.freeShipping}
+                <div className="flex flex-wrap gap-2 mt-3">
+                  <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-green-50 text-green-700 text-xs font-medium rounded-full">
+                    <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
+                    {t.sameDay}
+                  </span>
+                  <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-blue-50 text-blue-700 text-xs font-medium rounded-full">
+                    <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/><path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1v-5a1 1 0 00-.293-.707l-2-2A1 1 0 0015 7h-1z"/></svg>
+                    {t.freeShipping}
+                  </span>
+                  <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-amber-50 text-amber-700 text-xs font-medium rounded-full">
+                    <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
+                    {t.quality}
+                  </span>
                 </div>
-                <div className="flex items-center gap-2 text-sm text-gray-600">
-                  <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                  {t.quality}
-                </div>
-                <div className="flex items-center gap-2 text-sm text-gray-600">
-                  <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                  {t.minOrder}: 100
-                </div>
-              </div>
-              
-              {/* SKU信息 */}
-              <div className="text-sm text-gray-500 mb-6">
-                {t.sku}: <span className="font-mono">{product.sku_code}</span>
               </div>
               
               {/* 报价计算器 */}
-              <div className="border rounded-lg p-6 mb-6">
-                <h3 className="text-lg font-semibold mb-4">{t.specifications}</h3>
+              <div className="bg-white rounded-xl border-2 border-[#2873F5]/20 shadow-lg shadow-[#2873F5]/5 p-6 mb-6">
+                <div className="flex items-center gap-2 mb-4">
+                  <svg className="w-5 h-5 text-[#2873F5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
+                  <h3 className="text-lg font-semibold">{t.specifications}</h3>
+                </div>
                 <QuoteCalculator product={product} locale={locale} />
+              </div>
+              
+              {/* SKU & 最低订购量 */}
+              <div className="flex items-center gap-4 text-xs text-gray-400 mb-4">
+                <span>{t.sku}: <span className="font-mono text-gray-500">{product.sku_code}</span></span>
+                <span className="w-px h-3 bg-gray-300"></span>
+                <span>{t.minOrder}: {product.minQuantity}</span>
               </div>
             </div>
           </div>

@@ -55,7 +55,7 @@ export function ProductCard({ product, locale }: ProductCardProps) {
   return (
     <a
       href={`/${locale}/product/${product.slug}/`}
-      className="group bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow"
+      className="group bg-white rounded-xl border border-gray-100 overflow-hidden hover:shadow-xl hover:shadow-[#2873F5]/5 hover:border-[#2873F5]/20 transition-all duration-300"
     >
       {/* 产品图片 */}
       <div className="aspect-square bg-gradient-to-br from-gray-50 to-gray-100 relative overflow-hidden">
@@ -79,12 +79,19 @@ export function ProductCard({ product, locale }: ProductCardProps) {
           </div>
         )}
         
-        {/* 权重标签 */}
-        {product.weight_score >= 90 && (
-          <span className="absolute top-2 left-2 bg-[#F87314] text-white text-xs px-2 py-1 rounded z-10">
-            HOT
-          </span>
-        )}
+        {/* 标签 */}
+        <div className="absolute top-2 left-2 flex flex-col gap-1">
+          {product.isNew && (
+            <span className="bg-green-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full z-10">
+              NEW
+            </span>
+          )}
+          {product.isHot && (
+            <span className="bg-[#F87314] text-white text-[10px] font-bold px-2 py-0.5 rounded-full z-10">
+              HOT
+            </span>
+          )}
+        </div>
       </div>
       
       {/* 产品信息 */}
@@ -96,11 +103,14 @@ export function ProductCard({ product, locale }: ProductCardProps) {
           {description.slice(0, 60)}...
         </p>
         <div className="flex items-center justify-between">
-          <span className="text-[#2873F5] font-bold">
-            {t.from} {product.price_range.split('-')[0]}
-          </span>
-          <span className="text-sm text-gray-400 group-hover:text-[#2873F5] transition-colors">
-            {t.viewDetails} →
+          <div>
+            <span className="text-[#2873F5] font-bold text-lg">
+              {product.price_range.split('-')[0]}
+            </span>
+            <span className="text-xs text-gray-400 ml-1">{t.from}</span>
+          </div>
+          <span className="text-xs text-gray-400 bg-gray-50 px-2 py-1 rounded">
+            {product.minQuantity}{locale === 'zh-hk' ? '個起' : locale === 'en' ? '+ pcs' : '個〜'}
           </span>
         </div>
       </div>
