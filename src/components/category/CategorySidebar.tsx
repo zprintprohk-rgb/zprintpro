@@ -99,22 +99,22 @@ export function CategorySidebar({ locale, currentCategorySlug }: CategorySidebar
             <Link
               key={cat.slug}
               href={`${localePrefix}/category/${cat.slug}/`}
-              className={`flex items-center justify-between px-4 py-3.5 border-b border-gray-100 last:border-b-0 transition-colors group ${
+              className={`flex items-center justify-between px-4 py-2.5 border-b border-gray-100 last:border-b-0 transition-colors group ${
                 isEducational
-                  ? 'bg-gray-100 text-gray-500'
+                  ? 'bg-gray-300 text-white'
                   : isActive
                     ? 'bg-blue-50 text-[#2873F5]'
                     : 'text-[#333333] hover:bg-gray-50'
-              }`}
+              } ${idx === categories.length - 1 ? 'last:rounded-b-lg' : ''}`}
             >
               <div className="flex items-center gap-3">
-                <Icon className={`w-4 h-4 ${isEducational ? 'text-gray-400' : isActive ? 'text-[#2873F5]' : 'text-gray-400 group-hover:text-[#2873F5]'}`} strokeWidth={1.5} />
+                <Icon className={`w-4 h-4 ${isEducational ? 'text-white' : isActive ? 'text-[#2873F5]' : 'text-gray-400 group-hover:text-[#2873F5]'}`} strokeWidth={1.5} />
                 <span className={`text-sm ${isActive ? 'font-semibold' : 'font-medium'}`}>
                   {locale === 'zh-hk' ? cat.name : locale === 'en' ? cat.nameEn : cat.nameJa}
                 </span>
               </div>
               <div className="flex items-center gap-1.5">
-                <span className={`text-xs ${isEducational ? 'text-gray-400' : 'text-gray-400'}`}>{cat.count}</span>
+                <span className={`text-xs ${isEducational ? 'text-white' : 'text-gray-400'}`}>{cat.count}</span>
                 <ChevronRight className={`w-3.5 h-3.5 transition-transform ${isActive ? 'text-[#2873F5]' : 'text-gray-300 group-hover:text-[#2873F5] group-hover:translate-x-0.5'}`} />
               </div>
             </Link>
