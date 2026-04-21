@@ -241,12 +241,12 @@ export function Header({ locale }: HeaderProps) {
   };
 
   const navLinkClass = (isActive: boolean) =>
-    `flex-1 h-full flex items-center justify-center text-[16px] font-medium transition-colors ${
+    `flex-1 h-full w-full flex items-center justify-center text-[16px] font-medium transition-colors ${
       isActive ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'
     }`;
 
   const catNavLinkClass = (catSlug: string) =>
-    `h-full flex items-center justify-center gap-1 text-[16px] font-medium transition-colors ${
+    `h-full w-full flex items-center justify-center gap-1 text-[16px] font-medium transition-colors ${
       pathname.includes(`/category/${catSlug}`) ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'
     }`;
 
@@ -313,7 +313,7 @@ export function Header({ locale }: HeaderProps) {
 
         {/* Blue Navigation Bar */}
         <nav className="hidden lg:block bg-[#2873F5]">
-          <div className="px-2 sm:px-4 lg:px-6">
+          <div className="px-0">
             <div className="flex items-center h-[46px]">
               <Link href={`${localePrefix}/`} className={navLinkClass(pathname === `${localePrefix}/`)}>{t.home}</Link>
 
@@ -373,7 +373,7 @@ export function Header({ locale }: HeaderProps) {
 
               {/* 印刷知識 - 帶下拉菜單 */}
               <div className="relative h-full flex-1" onMouseEnter={() => setActiveDropdown('blog')} onMouseLeave={() => setActiveDropdown(null)}>
-                <Link href={`${localePrefix}/blog/`} className={`h-full flex items-center justify-center gap-1 text-[17px] font-semibold transition-colors ${pathname.includes('/blog') ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}>
+                <Link href={`${localePrefix}/blog/`} className={`h-full w-full flex items-center justify-center gap-1 text-[16px] font-medium transition-colors ${pathname.includes('/blog') ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}>
                   {t.knowledge}<ChevronDown className={`w-3.5 h-3.5 transition-transform ${activeDropdown === 'blog' ? 'rotate-180' : ''}`} />
                 </Link>
                 {activeDropdown === 'blog' && (
