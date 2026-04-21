@@ -79,8 +79,15 @@ categories.forEach((cat) => {
   categoryCounts[cat.slug] = products.filter((p) => p.category === cat.slug).length;
 });
 
-// 按 weight_score 排序取前6個作為熱門產品（3列x2行）
-const hotProducts = [...products].sort((a, b) => b.weight_score - a.weight_score).slice(0, 6);
+// 每個分類取 weight_score 最高的一條，確保首頁覆蓋全部核心品類
+// 按分類 sort_order 排序，取前12條（3列x4行），最大化轉化入口
+const hotProducts = categories
+  .map((cat) => {
+    const catProducts = products.filter((p) => p.category === cat.slug);
+    return catProducts.sort((a, b) => b.weight_score - a.weight_score)[0];
+  })
+  .filter(Boolean)
+  .slice(0, 12);
 
 function ProductImage({ src, alt }: { src: string; alt: string }) {
   const [imgError, setImgError] = useState(false);
@@ -202,17 +209,15 @@ export function HotProducts({ locale }: HotProductsProps) {
                 const productName = getProductTitle(product, locale);
                 const productDesc = getProductDescription(product, locale);
                 const imageSrc = product.images?.[0] || '';
-                const isHot = index < 3;
-
                 return (
                   <div
                     key={product.sku_code}
                     className="group bg-white rounded-xl border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-300"
                   >
                     {/* Image */}
-                    <div className="aspect-square relative overflow-hidden bg-gray-50">
+                    <div className="aspect-[4/3] relative overflow-hidden bg-gray-50">
                       <ProductImage src={imageSrc} alt={getProductImageAlt(product, locale)} />
-                      {isHot && (
+                      {product.isHot && (
                         <div className="absolute top-3 left-3 bg-red-500 text-white text-xs font-bold px-2.5 py-1 rounded">
                           {t.hotBadge}
                         </div>
