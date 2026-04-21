@@ -44,6 +44,7 @@ export interface Product {
   variables?: {
     sizes?: { value: string; label: string; multiplier: number }[];
     materials?: { value: string; label: string; surcharge: number }[];
+    finishings?: { value: string; label: string; surcharge: number }[];
     quantities?: { value: number; label: string; discount: number }[];
   };
 }
@@ -105,10 +106,18 @@ export const products: Product[] = [
         { value: '300g', label: '300g銅版紙', surcharge: 0 },
         { value: '400g', label: '400g厚紙', surcharge: 100 },
       ],
+      finishings: [
+        { value: 'none', label: '無', surcharge: 0 },
+        { value: 'matte', label: '啞膠', surcharge: 30 },
+        { value: 'gloss', label: '光膠', surcharge: 30 },
+        { value: 'spot-uv', label: '局部UV', surcharge: 80 },
+        { value: 'foil', label: '燙金/燙銀', surcharge: 150 },
+      ],
       quantities: [
         { value: 100, label: '100張', discount: 1 },
         { value: 500, label: '500張', discount: 0.85 },
         { value: 1000, label: '1000張', discount: 0.75 },
+        { value: 2000, label: '2000張', discount: 0.65 },
       ],
     },
   },
@@ -256,6 +265,27 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/waterproof-stickers.jpg'],
+    variables: {
+      sizes: [
+        { value: 'small', label: '小尺寸(≤50mm)', multiplier: 1 },
+        { value: 'medium', label: '中尺寸(51-100mm)', multiplier: 1.5 },
+        { value: 'large', label: '大尺寸(>100mm)', multiplier: 2.2 },
+      ],
+      materials: [
+        { value: 'pvc', label: 'PVC防水', surcharge: 0 },
+        { value: 'pp', label: 'PP合成紙', surcharge: 10 },
+      ],
+      finishings: [
+        { value: 'gloss', label: '光膜', surcharge: 0 },
+        { value: 'matte', label: '啞膜', surcharge: 5 },
+        { value: 'diecut', label: '異形模切', surcharge: 30 },
+      ],
+      quantities: [
+        { value: 100, label: '100張', discount: 1 },
+        { value: 500, label: '500張', discount: 0.75 },
+        { value: 1000, label: '1000張', discount: 0.6 },
+      ],
+    },
   },
   {
     id: 'ST-002',
@@ -385,6 +415,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/kraft-paper-bags.jpg'],
+    variables: {
+      sizes: [
+        { value: 'small', label: '小號(180×230×80mm)', multiplier: 1 },
+        { value: 'medium', label: '中號(250×300×100mm)', multiplier: 1.4 },
+        { value: 'large', label: '大號(320×400×120mm)', multiplier: 2 },
+      ],
+      materials: [
+        { value: 'kraft', label: '牛皮紙', surcharge: 0 },
+        { value: 'white', label: '白卡紙', surcharge: 20 },
+        { value: 'art', label: '銅版紙', surcharge: 15 },
+      ],
+      finishings: [
+        { value: 'none', label: '無', surcharge: 0 },
+        { value: 'foil', label: '燙金', surcharge: 50 },
+        { value: 'uv', label: 'UV', surcharge: 40 },
+      ],
+      quantities: [
+        { value: 100, label: '100個', discount: 1 },
+        { value: 500, label: '500個', discount: 0.8 },
+        { value: 1000, label: '1000個', discount: 0.65 },
+      ],
+    },
   },
   {
     id: 'PB-002',
@@ -498,6 +550,29 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/a4-flyers.jpg'],
+    variables: {
+      sizes: [
+        { value: 'a4', label: 'A4 (210×297mm)', multiplier: 1 },
+        { value: 'a5', label: 'A5 (148×210mm)', multiplier: 0.65 },
+        { value: 'a3', label: 'A3 (297×420mm)', multiplier: 1.8 },
+      ],
+      materials: [
+        { value: '128g', label: '128g銅版紙', surcharge: 0 },
+        { value: '157g', label: '157g銅版紙', surcharge: 15 },
+        { value: '200g', label: '200g厚紙', surcharge: 40 },
+      ],
+      finishings: [
+        { value: 'single', label: '單面印刷', surcharge: 0 },
+        { value: 'double', label: '雙面印刷', surcharge: 20 },
+        { value: 'fold', label: '摺頁', surcharge: 35 },
+      ],
+      quantities: [
+        { value: 100, label: '100張', discount: 1 },
+        { value: 500, label: '500張', discount: 0.8 },
+        { value: 1000, label: '1000張', discount: 0.65 },
+        { value: 5000, label: '5000張', discount: 0.5 },
+      ],
+    },
   },
   {
     id: 'FL-002',
@@ -611,6 +686,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/a2-posters.jpg'],
+    variables: {
+      sizes: [
+        { value: 'a2', label: 'A2 (420×594mm)', multiplier: 1 },
+        { value: 'a1', label: 'A1 (594×841mm)', multiplier: 1.8 },
+        { value: 'a0', label: 'A0 (841×1189mm)', multiplier: 3.2 },
+      ],
+      materials: [
+        { value: '157g', label: '157g銅版紙', surcharge: 0 },
+        { value: '200g', label: '200g厚紙', surcharge: 50 },
+        { value: 'photo', label: '相紙', surcharge: 80 },
+      ],
+      finishings: [
+        { value: 'none', label: '無', surcharge: 0 },
+        { value: 'pp', label: 'PP裱貼', surcharge: 30 },
+        { value: 'foam', label: '泡沫板裱貼', surcharge: 60 },
+      ],
+      quantities: [
+        { value: 10, label: '10張', discount: 1 },
+        { value: 50, label: '50張', discount: 0.8 },
+        { value: 100, label: '100張', discount: 0.6 },
+      ],
+    },
   },
   {
     id: 'PO-002',
@@ -708,6 +805,29 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/gift-boxes.jpg'],
+    variables: {
+      sizes: [
+        { value: 'small', label: '小號(100×80×50mm)', multiplier: 1 },
+        { value: 'medium', label: '中號(150×120×80mm)', multiplier: 1.6 },
+        { value: 'large', label: '大號(200×180×100mm)', multiplier: 2.5 },
+      ],
+      materials: [
+        { value: 'white-card', label: '白卡紙', surcharge: 0 },
+        { value: 'kraft', label: '牛皮紙', surcharge: 10 },
+        { value: 'rigid', label: '硬紙板', surcharge: 80 },
+      ],
+      finishings: [
+        { value: 'none', label: '無', surcharge: 0 },
+        { value: 'foil', label: '燙金', surcharge: 60 },
+        { value: 'uv', label: 'UV', surcharge: 50 },
+        { value: 'emboss', label: '凹凸', surcharge: 70 },
+      ],
+      quantities: [
+        { value: 100, label: '100個', discount: 1 },
+        { value: 500, label: '500個', discount: 0.85 },
+        { value: 1000, label: '1000個', discount: 0.7 },
+      ],
+    },
   },
   {
     id: 'PK-002',

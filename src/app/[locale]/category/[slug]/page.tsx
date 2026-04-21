@@ -1,46 +1,46 @@
 /**
  * 产品分类页 (PLP - Product Listing Page)
- * 显示分类下的所有产品，支持筛选和分页
+ * 对标 e-print.com.hk 二级页面布局
+ * 顶部 1320×300 banner → 左侧分类导航 → 右侧 3列产品卡片（最多6个SKU）
  */
 
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import { 
-  getCategoryBySlug, 
+import {
+  getCategoryBySlug,
   getProductsByCategory,
   getCategoryName,
   categories,
-  products 
+  products
 } from '@/lib/products';
-import { 
-  generateCategoryMetadata, 
+import {
+  generateCategoryMetadata,
   generateBreadcrumbJsonLd,
   generateBusinessJsonLd,
   Locale
 } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
-import { ProductCard } from '@/components/ProductCard';
-import { CategoryFilter } from '@/components/CategoryFilter';
+import { CategorySidebar } from '@/components/category/CategorySidebar';
+import { CategoryProductCard } from '@/components/category/CategoryProductCard';
 import { Pagination } from '@/components/Pagination';
 import { CategoryPillarContent } from '@/components/CategoryPillarContent';
 import { RegionalContent, RegionalCta, RegionalTrustBadges } from '@/components/seo/RegionalContent';
-
 
 export const dynamic = 'force-static';
 
 // 生成静态参数 - 13分类 × 3语言 = 39个路径
 export function generateStaticParams() {
   const params: { locale: string; slug: string }[] = [];
-  
+
   const locales: Locale[] = ['zh-hk', 'en', 'ja'];
   const categorySlugs = categories.map((c) => c.slug);
-  
+
   locales.forEach((locale) => {
     categorySlugs.forEach((slug) => {
       params.push({ locale, slug });
     });
   });
-  
+
   return params;
 }
 
@@ -52,11 +52,11 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale, slug } = params;
   const category = getCategoryBySlug(slug);
-  
+
   if (!category) {
     return { title: 'Not Found' };
   }
-  
+
   return generateCategoryMetadata(locale, category.name, category.nameEn, category.nameJa);
 }
 
@@ -70,36 +70,36 @@ export default function CategoryPage({
 }) {
   const { locale, slug } = params;
   const category = getCategoryBySlug(slug);
-  
+
   // 分类不存在时返回404
   if (!category) {
     notFound();
   }
-  
+
   // 获取分类下的产品
   const categoryProducts = getProductsByCategory(slug);
-  
-  // 分页
+
+  // 分页 - 每页最多6个SKU（引流分类不赚钱，不展示太多）
   const currentPage = parseInt(searchParams.page || '1', 10);
-  const productsPerPage = 12;
+  const productsPerPage = 6;
   const totalPages = Math.ceil(categoryProducts.length / productsPerPage);
   const paginatedProducts = categoryProducts.slice(
     (currentPage - 1) * productsPerPage,
     currentPage * productsPerPage
   );
-  
+
   // 获取分类名称
   const categoryName = getCategoryName(category, locale);
-  
+
   // 面包屑数据
   const breadcrumbItems = [
     { name: locale === 'zh-hk' ? '首頁' : locale === 'en' ? 'Home' : 'ホーム', url: `/${locale}/` },
     { name: categoryName, url: `/${locale}/category/${slug}/` },
   ];
-  
+
   // 面包屑JSON-LD
   const breadcrumbJsonLd = generateBreadcrumbJsonLd(breadcrumbItems);
-  
+
   // Category ItemList Schema — 产品列表结构化数据
   const itemListJsonLd = {
     '@context': 'https://schema.org',
@@ -112,10 +112,10 @@ export default function CategoryPage({
       name: locale === 'zh-hk' ? product.name : locale === 'en' ? product.nameEn : product.nameJa,
     })),
   };
-  
+
   // Business Schema — 按地區切換 LocalBusiness / Organization
   const businessJsonLd = generateBusinessJsonLd(locale);
-  
+
   // 翻译文本
   const translations = {
     'zh-hk': {
@@ -124,15 +124,11 @@ export default function CategoryPage({
       priceAsc: '價格由低到高',
       priceDesc: '價格由高到低',
       popularity: '熱門程度',
-      filter: '篩選',
-      material: '材質',
-      size: '尺寸',
-      priceRange: '價格範圍',
-      reset: '重置',
-      apply: '應用',
       noProducts: '暫無產品',
       prev: '上一頁',
       next: '下一頁',
+      bannerTitle: '專業品質，價格透明，快速交貨',
+      bannerSubtitle: '香港領先的印刷服務平台',
     },
     'en': {
       productsCount: `${categoryProducts.length} Products`,
@@ -140,15 +136,11 @@ export default function CategoryPage({
       priceAsc: 'Price: Low to High',
       priceDesc: 'Price: High to Low',
       popularity: 'Popularity',
-      filter: 'Filter',
-      material: 'Material',
-      size: 'Size',
-      priceRange: 'Price Range',
-      reset: 'Reset',
-      apply: 'Apply',
       noProducts: 'No products found',
       prev: 'Previous',
       next: 'Next',
+      bannerTitle: 'Professional Quality, Transparent Pricing, Fast Delivery',
+      bannerSubtitle: 'Hong Kong\'s Leading Printing Service Platform',
     },
     'ja': {
       productsCount: `全 ${categoryProducts.length} 商品`,
@@ -156,62 +148,77 @@ export default function CategoryPage({
       priceAsc: '価格: 安い順',
       priceDesc: '価格: 高い順',
       popularity: '人気順',
-      filter: 'フィルター',
-      material: '素材',
-      size: 'サイズ',
-      priceRange: '価格帯',
-      reset: 'リセット',
-      apply: '適用',
       noProducts: '商品が見つかりません',
       prev: '前へ',
       next: '次へ',
+      bannerTitle: 'プロ品質、透明な価格、迅速な納品',
+      bannerSubtitle: '香港を代表する印刷サービスプラットフォーム',
     },
   };
-  
+
   const t = translations[locale];
-  
+
   return (
     <>
       {/* 结构化数据：面包屑 + 产品列表 + 本地商家 */}
       <JsonLd data={breadcrumbJsonLd} />
       <JsonLd data={itemListJsonLd} />
       <JsonLd data={businessJsonLd} />
-      
+
       <main className="min-h-screen bg-gray-50">
-        {/* 页面标题区 */}
-        <div className="bg-gradient-to-r from-[#2873F5] to-[#1E5FD1]">
-          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-10">
-            <nav className="text-sm text-white/70 mb-3">
-              <a href={`/${locale}/`} className="hover:text-white transition-colors">
+        {/* 面包屑导航 */}
+        <div className="bg-white border-b">
+          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-3">
+            <nav className="text-sm text-gray-500">
+              <a href={`/${locale}/`} className="hover:text-[#2873F5]">
                 {locale === 'zh-hk' ? '首頁' : locale === 'en' ? 'Home' : 'ホーム'}
               </a>
               <span className="mx-2">/</span>
-              <span className="text-white font-medium">{categoryName}</span>
+              <span className="text-gray-900">{categoryName}</span>
             </nav>
-            <h1 className="text-3xl md:text-4xl font-bold text-white mb-2">
-              {categoryName}
-            </h1>
-            <p className="text-white/80">{t.productsCount}</p>
           </div>
         </div>
-        
-        {/* 主内容区 */}
+
+        {/* Banner 区域 - 1320×300 */}
+        <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 pt-6">
+          <div className="relative w-full h-[200px] md:h-[250px] lg:h-[300px] rounded-xl overflow-hidden bg-gradient-to-r from-[#2873F5] via-[#3B82F6] to-[#1E5FD1]">
+            {/* 背景装饰 */}
+            <div className="absolute inset-0 opacity-10">
+              <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full -translate-y-1/2 translate-x-1/2" />
+              <div className="absolute bottom-0 left-0 w-64 h-64 bg-white rounded-full translate-y-1/2 -translate-x-1/2" />
+            </div>
+            {/* Banner 内容 */}
+            <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-8">
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3">
+                {categoryName}
+              </h1>
+              <p className="text-white/80 text-sm md:text-base mb-1">
+                {t.bannerTitle}
+              </p>
+              <p className="text-white/60 text-xs md:text-sm">
+                {t.bannerSubtitle} · {t.productsCount}
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* 主内容区 - 左侧分类 + 右侧产品 */}
         <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="flex flex-col lg:flex-row gap-8">
-            {/* 侧边筛选器 */}
+          <div className="flex flex-col lg:flex-row gap-6">
+            {/* 左侧分类导航 */}
             <aside className="w-full lg:w-64 flex-shrink-0">
-              <CategoryFilter locale={locale} />
+              <CategorySidebar locale={locale} currentCategorySlug={slug} />
             </aside>
-            
-            {/* 产品列表 */}
+
+            {/* 右侧产品列表 */}
             <div className="flex-1">
               {/* 排序栏 */}
-              <div className="flex items-center justify-between mb-6">
+              <div className="flex items-center justify-between mb-6 bg-white rounded-lg border border-gray-200 px-4 py-3">
                 <span className="text-gray-500 text-sm">
                   {t.productsCount}
                 </span>
-                <select 
-                  className="border rounded-lg px-3 py-2 text-sm focus:ring-2 focus:ring-[#2873F5] focus:border-transparent"
+                <select
+                  className="border rounded-lg px-3 py-1.5 text-sm focus:ring-2 focus:ring-[#2873F5] focus:border-transparent bg-white"
                   defaultValue="popularity"
                 >
                   <option value="popularity">{t.popularity}</option>
@@ -219,24 +226,25 @@ export default function CategoryPage({
                   <option value="price-desc">{t.priceDesc}</option>
                 </select>
               </div>
-              
-              {/* 产品网格 */}
+
+              {/* 产品网格 - 3列 */}
               {paginatedProducts.length > 0 ? (
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {paginatedProducts.map((product) => (
-                    <ProductCard 
-                      key={product.sku_code} 
-                      product={product} 
-                      locale={locale} 
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                  {paginatedProducts.map((product, index) => (
+                    <CategoryProductCard
+                      key={product.sku_code}
+                      product={product}
+                      locale={locale}
+                      index={index}
                     />
                   ))}
                 </div>
               ) : (
-                <div className="text-center py-16">
+                <div className="text-center py-16 bg-white rounded-lg border border-gray-200">
                   <p className="text-gray-500">{t.noProducts}</p>
                 </div>
               )}
-              
+
               {/* 分页 */}
               {totalPages > 1 && (
                 <div className="mt-8">
@@ -251,13 +259,13 @@ export default function CategoryPage({
             </div>
           </div>
         </div>
-        
+
         {/* Buying Guide CTA — 选购指南入口 */}
         <BuyingGuideCta locale={locale} categorySlug={slug} />
-        
+
         {/* Pillar Content — SEO支柱内容区 */}
         <CategoryPillarContent locale={locale} categorySlug={slug} />
-        
+
         {/* 地區化內容區域 */}
         <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 pb-12 pt-8 border-t border-gray-200 space-y-8">
           <div>
@@ -299,18 +307,18 @@ const categoryGuideMap: Record<string, string> = {
 function BuyingGuideCta({ locale, categorySlug }: { locale: Locale; categorySlug: string }) {
   const guideSlug = categoryGuideMap[categorySlug];
   if (!guideSlug) return null;
-  
+
   const t = {
     'zh-hk': { label: '選購指南', cta: '查看完整指南 →', title: '不知道怎麼選？看看我們的專業選購指南', desc: '從材質、工藝到價格，為您詳細拆解選購要點。' },
     'en': { label: 'Buying Guide', cta: 'Read Full Guide →', title: 'Not Sure What to Choose?', desc: 'From materials to finishes to pricing, our expert guide has you covered.' },
     'ja': { label: '選び方ガイド', cta: 'ガイドを読む →', title: 'どれを選べばいいか迷っていますか？', desc: '材質から加工、価格まで、専門家のガイドで解決。' },
   }[locale];
-  
+
   const localePrefix = `/${locale}`;
-  
+
   return (
     <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 pb-8">
-      <a 
+      <a
         href={`${localePrefix}/blog/${guideSlug}/`}
         className="block bg-gradient-to-r from-[#2873F5] to-[#1E5FD1] rounded-xl p-6 md:p-8 text-white hover:shadow-lg transition-shadow"
       >
