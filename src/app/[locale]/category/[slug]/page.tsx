@@ -166,22 +166,9 @@ export default function CategoryPage({
       <JsonLd data={businessJsonLd} />
 
       <main className="min-h-screen bg-gray-50">
-        {/* 面包屑导航 */}
-        <div className="bg-white border-b">
-          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-3">
-            <nav className="text-sm text-gray-500">
-              <a href={`/${locale}/`} className="hover:text-[#2873F5]">
-                {locale === 'zh-hk' ? '首頁' : locale === 'en' ? 'Home' : 'ホーム'}
-              </a>
-              <span className="mx-2">/</span>
-              <span className="text-gray-900">{categoryName}</span>
-            </nav>
-          </div>
-        </div>
-
-        {/* Banner 区域 - 1320×300 */}
+        {/* Banner 区域 - 1320×400，位于导航栏下方 */}
         <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 pt-6">
-          <div className="relative w-full h-[200px] md:h-[250px] lg:h-[300px] rounded-xl overflow-hidden bg-gradient-to-r from-[#2873F5] via-[#3B82F6] to-[#1E5FD1]">
+          <div className="relative w-full h-[250px] md:h-[320px] lg:h-[400px] overflow-hidden bg-gradient-to-r from-[#2873F5] via-[#3B82F6] to-[#1E5FD1]">
             {/* 背景装饰 */}
             <div className="absolute inset-0 opacity-10">
               <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full -translate-y-1/2 translate-x-1/2" />
@@ -199,6 +186,19 @@ export default function CategoryPage({
                 {t.bannerSubtitle} · {t.productsCount}
               </p>
             </div>
+          </div>
+        </div>
+
+        {/* 面包屑导航 - 位于 Banner 下方 */}
+        <div className="bg-white border-b mt-6">
+          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-3">
+            <nav className="text-sm text-gray-500">
+              <a href={`/${locale}/`} className="hover:text-[#2873F5]">
+                {locale === 'zh-hk' ? '首頁' : locale === 'en' ? 'Home' : 'ホーム'}
+              </a>
+              <span className="mx-2">/</span>
+              <span className="text-gray-900">{categoryName}</span>
+            </nav>
           </div>
         </div>
 

@@ -187,7 +187,7 @@ export function HotProducts({ locale }: HotProductsProps) {
               <p className="text-xs text-gray-500 text-center mb-2">{t.cantFind}</p>
               <Link
                 href={`${localePrefix}/contact/`}
-                className="flex items-center justify-center gap-2 w-full py-2 border border-[#2873F5] text-[#2873F5] rounded-lg text-sm hover:bg-[#2873F5] hover:text-white transition-colors"
+                className="flex items-center justify-center gap-2 w-full py-2 border border-[#3090FF] text-[#3090FF] rounded-lg text-sm hover:bg-[#3090FF] hover:text-white transition-colors"
               >
                 <Search className="w-4 h-4" />
                 {t.quickQuote}
@@ -257,7 +257,7 @@ export function HotProducts({ locale }: HotProductsProps) {
                       </div>
                       <Link
                         href={`${localePrefix}/product/${product.slug}/`}
-                        className="mt-3 w-full inline-flex items-center justify-center py-2.5 bg-[#2873F5] hover:bg-[#1E5FD1] text-white text-sm font-medium rounded-lg transition-colors"
+                        className="mt-3 w-full inline-flex items-center justify-center py-2.5 bg-[#3090FF] hover:bg-[#1E5FD1] text-white text-sm font-medium rounded-lg transition-colors"
                       >
                         {t.orderNow}
                       </Link>

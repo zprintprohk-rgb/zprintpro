@@ -42,19 +42,19 @@ const translations = {
   'zh-hk': {
     hot: '熱銷',
     orderNow: '立即訂購',
-    priceNote: '聯繫客服確認最終價格',
+    // priceNote 已移除，保持界面簡潔
     from: '起',
   },
   'en': {
     hot: 'Hot',
     orderNow: 'Order Now',
-    priceNote: 'Contact us for final pricing',
+    // priceNote removed for cleaner UI
     from: 'From',
   },
   'ja': {
     hot: '人気',
     orderNow: '注文する',
-    priceNote: '最終価格はお問い合わせください',
+    // priceNote removed for cleaner UI
     from: 'から',
   },
 };
@@ -156,8 +156,8 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
 
       {/* 产品描述 + 价格 + 按钮 */}
       <div className="p-4 flex flex-col flex-1">
-        {/* 描述 */}
-        <p className="text-sm text-gray-500 leading-relaxed mb-3 min-h-[40px]">
+        {/* 描述 — 固定3行高度，确保价格位置统一 */}
+        <p className="text-sm text-gray-500 leading-relaxed mb-3 h-[66px] overflow-hidden">
           {shortDesc}
         </p>
 
@@ -171,17 +171,12 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
           </span>
         </div>
 
-        {/* 立即订购按钮 */}
+        {/* 立即订购按钮 — 颜色减25% */}
         <span
-          className="block w-full text-center py-2.5 bg-[#2873F5] text-white rounded-lg text-sm font-medium hover:bg-[#1E5FD1] transition-colors mt-auto"
+          className="block w-full text-center py-2.5 bg-[#3090FF] text-white rounded-lg text-sm font-medium hover:bg-[#1E5FD1] transition-colors mt-auto"
         >
           {t.orderNow}
         </span>
-
-        {/* 价格备注 */}
-        <p className="text-[10px] text-gray-400 text-center mt-2">
-          {t.priceNote}
-        </p>
       </div>
     </Link>
   );
