@@ -214,11 +214,8 @@ export default function CategoryPage({
               <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3">
                 {categoryName}
               </h1>
-              <p className="text-white/80 text-sm md:text-base mb-1">
+              <p className="text-white/80 text-sm md:text-base mb-5">
                 {t.bannerTitle}
-              </p>
-              <p className="text-white/60 text-xs md:text-sm mb-5">
-                {t.bannerSubtitle} · {t.productsCount}
               </p>
               <a
                 href={`${localePrefix}/contact/`}

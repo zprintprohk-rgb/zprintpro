@@ -162,23 +162,17 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
           {shortDesc}
         </p>
 
-        {/* 价格 — 仅传单/海报/喷绘显示，其余显示需報價 */}
-        <div className="mb-3">
-          {shouldShowPrice(product.category_slug) ? (
-            <>
-              <span className="text-[#F87314] font-bold text-lg">
-                {convertPriceRangeString(product.price_range, locale).split('-')[0]}
-              </span>
-              <span className="text-xs text-gray-400 ml-1">
-                {t.from}
-              </span>
-            </>
-          ) : (
-            <span className="text-gray-400 font-medium text-sm">
-              {getQuoteLabel(locale)}
+        {/* 价格 — 仅传单/海报/喷绘显示 */}
+        {shouldShowPrice(product.category_slug) && (
+          <div className="mb-3">
+            <span className="text-[#F87314] font-bold text-lg">
+              {convertPriceRangeString(product.price_range, locale).split('-')[0]}
             </span>
-          )}
-        </div>
+            <span className="text-xs text-gray-400 ml-1">
+              {t.from}
+            </span>
+          </div>
+        )}
 
         {/* 立即订购按钮 — 颜色减25% */}
         <span

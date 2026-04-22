@@ -86,16 +86,19 @@ categories.forEach((cat) => {
   categoryCounts[cat.slug] = products.filter((p) => p.category === cat.slug).length;
 });
 
-// 首頁熱門產品：精選5大重點品類（貼紙、宣傳單張、包裝盒、海報、紙袋）
-// 每個品類取 weight_score 最高1條，最多6條SKU（3列x2行），聚焦轉化
-const priorityCategories = ['stickers', 'flyers', 'packaging', 'posters', 'paper-bags', 'business-cards'];
+// 首頁熱門產品：每個分類取 weight_score 最高1條，共12條（3列x4行）
+// 排序：貼紙→宣傳單張→包裝盒→海報→紙袋→咭片→書籍→餐牌→噴繪→信封→年曆→利是封
+const priorityCategories = [
+  'stickers', 'flyers', 'packaging', 'posters', 'paper-bags', 'business-cards',
+  'books', 'menus', 'banners', 'envelopes', 'calendars', 'red-packets',
+];
 const hotProducts = priorityCategories
   .map((catSlug) => {
     const catProducts = products.filter((p) => p.category === catSlug);
     return catProducts.sort((a, b) => b.weight_score - a.weight_score)[0];
   })
   .filter(Boolean)
-  .slice(0, 6);
+  .slice(0, 12);
 
 function ProductImage({ src, alt }: { src: string; alt: string }) {
   const [imgError, setImgError] = useState(false);
@@ -252,17 +255,13 @@ export function HotProducts({ locale }: HotProductsProps) {
                       <p className="text-sm text-gray-500 line-clamp-2 mb-3 text-center">
                         {productDesc}
                       </p>
-                      <div className="flex items-center justify-center">
-                        {shouldShowPrice(product.category) ? (
+                      {shouldShowPrice(product.category) && (
+                        <div className="flex items-center justify-center">
                           <span className="text-[#F87314] font-bold text-sm tracking-wider text-center">
                             {convertPriceRangeString(product.price_range, locale)}
                           </span>
-                        ) : (
-                          <span className="text-gray-400 font-medium text-sm">
-                            {getQuoteLabel(locale)}
-                          </span>
-                        )}
-                      </div>
+                        </div>
+                      )}
                       <Link
                         href={`${localePrefix}/product/${product.slug}/`}
                         className="mt-3 w-full inline-flex items-center justify-center py-2.5 bg-[#3090FF] hover:bg-[#1E5FD1] text-white text-sm font-medium rounded-lg transition-colors"
