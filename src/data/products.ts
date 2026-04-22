@@ -81,7 +81,7 @@ export const categories: Category[] = [
 
 // 79个SKU产品数据
 export const products: Product[] = [
-  // 咭片印刷 (9 SKU)
+  // 咭片印刷 (6 SKU)
   {
     id: 'BC-001',
     sku_code: 'BC-001',
@@ -201,54 +201,7 @@ export const products: Product[] = [
     minQuantity: 100,
     images: ['/images/products/rounded-corner-cards.jpg'],
   },
-  {
-    id: 'BC-007',
-    sku_code: 'BC-007',
-    slug: 'double-sided-cards',
-    category: 'business-cards',
-    category_slug: 'business-cards',
-    name: '雙面咭片', nameEn: 'Double-sided Cards', nameJa: '両面名刺', title_zh: '雙面咭片',
-    description: '雙面全彩印刷，充分利用空間展示更多信息。背面可印公司理念、產品介紹或聯絡方式。', descriptionEn: 'Double-sided full color printing maximizes space for information. Back can show company values, products, or contact details.', descriptionJa: '両面フルカラー印刷で情報スペースを最大限に活用。', description_zh: '雙面全彩印刷，充分利用空間展示更多信息。背面可印公司理念、產品介紹或聯絡方式。',
-    price_range: 'HK$100-180/100張',
-    basePrice: 1,
-    weight_score: 82,
-    isHot: false,
-    isNew: false,
-    minQuantity: 100,
-    images: ['/images/products/double-sided-cards.jpg'],
-  },
-  {
-    id: 'BC-008',
-    sku_code: 'BC-008',
-    slug: 'same-day-business-cards',
-    category: 'business-cards',
-    category_slug: 'business-cards',
-    name: '即日咭片印刷', nameEn: 'Same-day Business Cards', nameJa: '即日名刺', title_zh: '即日咭片印刷',
-    description: '緊急需求首選，最快4小時取貨。品質不打折，急件也能展現專業形象。', descriptionEn: 'Emergency orders, ready in 4 hours. Quality not compromised, rush orders still look professional.', descriptionJa: '緊急注文に最適、最短4時間で受取。品質を損なわず。', description_zh: '緊急需求首選，最快4小時取貨。品質不打折，急件也能展現專業形象。',
-    price_range: 'HK$180-320/100張',
-    basePrice: 1.8,
-    weight_score: 80,
-    isHot: false,
-    isNew: false,
-    minQuantity: 100,
-    images: ['/images/products/same-day-business-cards.jpg'],
-  },
-  {
-    id: 'BC-009',
-    sku_code: 'BC-009',
-    slug: 'eco-business-cards',
-    category: 'business-cards',
-    category_slug: 'business-cards',
-    name: '環保再生紙咭片', nameEn: 'Eco-friendly Recycled Cards', nameJa: '再生紙名刺', title_zh: '環保再生紙咭片',
-    description: '採用FSC認證環保再生紙，展現企業社會責任。質樸自然的風格，適合環保品牌。', descriptionEn: 'FSC-certified recycled paper showing corporate social responsibility. Natural style for eco-friendly brands.', descriptionJa: 'FSC認証再生紙、企業の社会的責任を示す。エコブランド向け。', description_zh: '採用FSC認證環保再生紙，展現企業社會責任。質樸自然的風格，適合環保品牌。',
-    price_range: 'HK$110-200/100張',
-    basePrice: 1.1,
-    weight_score: 78,
-    isHot: false,
-    isNew: false,
-    minQuantity: 100,
-    images: ['/images/products/eco-business-cards.jpg'],
-  },
+  // 貼紙印刷 (8 SKU)
   // 貼紙印刷 (8 SKU)
   {
     id: 'ST-001',
