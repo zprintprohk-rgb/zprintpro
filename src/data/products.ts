@@ -63,12 +63,12 @@ export interface Category {
 // 13个产品分类
 export const categories: Category[] = [
   // 六大核心主营分类（按全球市场搜索量+利润率+战略优先级排序）
-  { slug: 'business-cards', name: '咭片印刷', nameEn: 'Business Cards', nameJa: '名刺印刷', name_zh: '咭片印刷', name_en: 'Business Cards', name_ja: '名刺印刷', sort_order: 1 },
-  { slug: 'stickers', name: '貼紙印刷', nameEn: 'Stickers', nameJa: 'ステッカー印刷', name_zh: '貼紙印刷', name_en: 'Stickers', name_ja: 'ステッカー印刷', sort_order: 2 },
-  { slug: 'flyers', name: '宣傳單張', nameEn: 'Flyers', nameJa: 'チラシ印刷', name_zh: '宣傳單張', name_en: 'Flyers', name_ja: 'チラシ印刷', sort_order: 3 },
-  { slug: 'packaging', name: '包裝盒定制', nameEn: 'Packaging', nameJa: 'パッケージ印刷', name_zh: '包裝盒定制', name_en: 'Packaging', name_ja: 'パッケージ印刷', sort_order: 4 },
-  { slug: 'posters', name: '定制海報', nameEn: 'Posters', nameJa: 'ポスター印刷', name_zh: '定制海報', name_en: 'Posters', name_ja: 'ポスター印刷', sort_order: 5 },
-  { slug: 'paper-bags', name: '紙袋印刷', nameEn: 'Paper Bags', nameJa: '紙袋印刷', name_zh: '紙袋印刷', name_en: 'Paper Bags', name_ja: '紙袋印刷', sort_order: 6 },
+  { slug: 'stickers', name: '貼紙印刷', nameEn: 'Stickers', nameJa: 'ステッカー印刷', name_zh: '貼紙印刷', name_en: 'Stickers', name_ja: 'ステッカー印刷', sort_order: 1 },
+  { slug: 'flyers', name: '宣傳單張', nameEn: 'Flyers', nameJa: 'チラシ印刷', name_zh: '宣傳單張', name_en: 'Flyers', name_ja: 'チラシ印刷', sort_order: 2 },
+  { slug: 'packaging', name: '包裝盒定制', nameEn: 'Packaging', nameJa: 'パッケージ印刷', name_zh: '包裝盒定制', name_en: 'Packaging', name_ja: 'パッケージ印刷', sort_order: 3 },
+  { slug: 'posters', name: '定制海報', nameEn: 'Posters', nameJa: 'ポスター印刷', name_zh: '定制海報', name_en: 'Posters', name_ja: 'ポスター印刷', sort_order: 4 },
+  { slug: 'paper-bags', name: '紙袋印刷', nameEn: 'Paper Bags', nameJa: '紙袋印刷', name_zh: '紙袋印刷', name_en: 'Paper Bags', name_ja: '紙袋印刷', sort_order: 5 },
+  { slug: 'business-cards', name: '咭片印刷', nameEn: 'Business Cards', nameJa: '名刺印刷', name_zh: '咭片印刷', name_en: 'Business Cards', name_ja: '名刺印刷', sort_order: 6 },
   // 次要分类
   { slug: 'banners', name: '噴繪廣告', nameEn: 'Banners', nameJa: 'バナー印刷', name_zh: '噴繪廣告', name_en: 'Banners', name_ja: 'バナー印刷', sort_order: 7 },
   { slug: 'books', name: '書籍印刷', nameEn: 'Books', nameJa: '書籍印刷', name_zh: '書籍印刷', name_en: 'Books', name_ja: '書籍印刷', sort_order: 8 },
