@@ -519,7 +519,7 @@ export const products: Product[] = [
     minQuantity: 100,
     images: ['/images/products/large-bags.jpg'],
   },
-  // 宣傳單張 (6 SKU)
+  // 宣傳單張 (7 SKU) — 保留即日宣傳單張作为SEO流量入口
   {
     id: 'FL-001',
     sku_code: 'FL-001',
@@ -638,6 +638,22 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/eco-flyers.jpg'],
+  },
+  {
+    id: 'FL-008',
+    sku_code: 'FL-008',
+    slug: 'same-day-flyers',
+    category: 'flyers',
+    category_slug: 'flyers',
+    name: '即日宣傳單張', nameEn: 'Same-day Flyers', nameJa: '即日チラシ', title_zh: '即日宣傳單張',
+    description: '緊急活動首選，最快當天交貨。即日印刷、即日快遞出貨，急件不擔心。', descriptionEn: 'First choice for emergency events, same-day printing and courier delivery available.', descriptionJa: '緊急イベントの第一選択、最短当日印刷・宅配便発送。', description_zh: '緊急活動首選，最快當天交貨。即日印刷、即日快遞出貨，急件不擔心。',
+    price_range: 'HK$0.45-1.5/張',
+    basePrice: 0.45,
+    weight_score: 95,
+    isHot: true,
+    isNew: false,
+    minQuantity: 100,
+    images: ['/images/products/same-day-flyers.jpg'],
   },
   // 海報定制 (6 SKU)
   {
