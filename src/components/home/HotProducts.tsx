@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { ArrowRight, ChevronRight, Search, ShoppingBag, FileText, Tag, Package, ImageIcon, GraduationCap, CreditCard, Mail, BookOpen, Calendar, Gift, Flag, StickyNote } from 'lucide-react';
 import { Locale } from '@/lib/seo';
+import { shouldShowPrice, getQuoteLabel, convertPriceRangeString } from '@/lib/pricing';
 import { products, categories, getProductTitle, getProductDescription, getProductImageAlt } from '@/data/products';
 
 interface HotProductsProps {
@@ -85,15 +86,16 @@ categories.forEach((cat) => {
   categoryCounts[cat.slug] = products.filter((p) => p.category === cat.slug).length;
 });
 
-// 每個分類取 weight_score 最高的一條，確保首頁覆蓋全部核心品類
-// 按分類 sort_order 排序，取前12條（3列x4行），最大化轉化入口
-const hotProducts = categories
-  .map((cat) => {
-    const catProducts = products.filter((p) => p.category === cat.slug);
+// 首頁熱門產品：精選5大重點品類（貼紙、宣傳單張、包裝盒、海報、紙袋）
+// 每個品類取 weight_score 最高1條，最多6條SKU（3列x2行），聚焦轉化
+const priorityCategories = ['stickers', 'flyers', 'packaging', 'posters', 'paper-bags', 'business-cards'];
+const hotProducts = priorityCategories
+  .map((catSlug) => {
+    const catProducts = products.filter((p) => p.category === catSlug);
     return catProducts.sort((a, b) => b.weight_score - a.weight_score)[0];
   })
   .filter(Boolean)
-  .slice(0, 12);
+  .slice(0, 6);
 
 function ProductImage({ src, alt }: { src: string; alt: string }) {
   const [imgError, setImgError] = useState(false);
@@ -251,9 +253,15 @@ export function HotProducts({ locale }: HotProductsProps) {
                         {productDesc}
                       </p>
                       <div className="flex items-center justify-center">
-                        <span className="text-[#F87314] font-bold text-sm tracking-wider text-center">
-                          {product.price_range}
-                        </span>
+                        {shouldShowPrice(product.category) ? (
+                          <span className="text-[#F87314] font-bold text-sm tracking-wider text-center">
+                            {convertPriceRangeString(product.price_range, locale)}
+                          </span>
+                        ) : (
+                          <span className="text-gray-400 font-medium text-sm">
+                            {getQuoteLabel(locale)}
+                          </span>
+                        )}
                       </div>
                       <Link
                         href={`${localePrefix}/product/${product.slug}/`}

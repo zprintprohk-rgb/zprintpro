@@ -82,7 +82,7 @@ export default function CategoryPage({
 
   // 分页 - 每页最多6个SKU（引流分类不赚钱，不展示太多）
   const currentPage = parseInt(searchParams.page || '1', 10);
-  const productsPerPage = 6;
+  const productsPerPage = 9;
   const totalPages = Math.ceil(categoryProducts.length / productsPerPage);
   const paginatedProducts = categoryProducts.slice(
     (currentPage - 1) * productsPerPage,
@@ -192,7 +192,7 @@ export default function CategoryPage({
       <main className="min-h-screen bg-gray-50">
         {/* Banner 区域 - 1320×400，紧贴导航栏，图片背景 */}
         <div className="max-w-[1320px] mx-auto">
-          <div className="relative w-full h-[250px] md:h-[320px] lg:h-[400px] overflow-hidden">
+          <div className="relative w-full h-[200px] md:h-[250px] lg:h-[300px] overflow-hidden">
             {/* 背景图或渐变 */}
             {hasBannerImage ? (
               <>
@@ -268,7 +268,7 @@ export default function CategoryPage({
                 </select>
               </div>
 
-              {/* 产品网格 - 3列 */}
+              {/* 产品网格 - 3列，最多9条单页显示 */}
               {paginatedProducts.length > 0 ? (
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                   {paginatedProducts.map((product, index) => (
@@ -286,7 +286,7 @@ export default function CategoryPage({
                 </div>
               )}
 
-              {/* 分页 */}
+              {/* 分页 — 仅当超过9条时显示 */}
               {totalPages > 1 && (
                 <div className="mt-8">
                   <Pagination

@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { Star, CreditCard, Tag, ShoppingBag, FileText, ImageIcon, Package, BookOpen, Flag, Calendar, Mail, Gift, GraduationCap, Box } from 'lucide-react';
 import { Product } from '@/data/products';
 import { Locale } from '@/lib/seo';
+import { shouldShowPrice, getQuoteLabel, convertPriceRangeString } from '@/lib/pricing';
 
 interface CategoryProductCardProps {
   product: Product;
@@ -161,14 +162,22 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
           {shortDesc}
         </p>
 
-        {/* 价格 */}
+        {/* 价格 — 仅传单/海报/喷绘显示，其余显示需報價 */}
         <div className="mb-3">
-          <span className="text-[#F87314] font-bold text-lg">
-            {product.price_range.split('-')[0]}
-          </span>
-          <span className="text-xs text-gray-400 ml-1">
-            {t.from}
-          </span>
+          {shouldShowPrice(product.category_slug) ? (
+            <>
+              <span className="text-[#F87314] font-bold text-lg">
+                {convertPriceRangeString(product.price_range, locale).split('-')[0]}
+              </span>
+              <span className="text-xs text-gray-400 ml-1">
+                {t.from}
+              </span>
+            </>
+          ) : (
+            <span className="text-gray-400 font-medium text-sm">
+              {getQuoteLabel(locale)}
+            </span>
+          )}
         </div>
 
         {/* 立即订购按钮 — 颜色减25% */}
