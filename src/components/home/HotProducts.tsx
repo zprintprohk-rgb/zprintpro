@@ -160,15 +160,15 @@ export function HotProducts({ locale }: HotProductsProps) {
                     <Link
                       key={cat.slug}
                       href={`${localePrefix}/category/${cat.slug}/`}
-                      className={`flex items-center justify-between px-4 py-3 text-[15px] transition-colors border-b border-gray-100 ${
+                      className={`flex items-center justify-between px-4 py-3.5 text-[15.5px] transition-colors border-b border-gray-100 ${
                         isEducational
-                          ? 'bg-gray-300 text-white'
+                          ? 'bg-gray-400 text-white hover:bg-[#2873F5]'
                           : isActive
-                            ? 'text-[#2873F5] bg-blue-50'
-                            : 'text-gray-600 hover:text-[#2873F5] hover:bg-blue-50'
+                            ? 'bg-[#2873F5] text-white'
+                            : 'text-gray-600 hover:bg-[#2873F5] hover:text-white'
                       } ${idx === categories.length - 1 ? 'border-b-0 last:rounded-b-lg' : ''}`}
                     >
-                      <span className="flex items-center gap-2.5">
+                      <span className={`flex items-center gap-2.5 ${isEducational ? 'text-[16px]' : ''}`}>
                         <span className={isEducational ? 'text-white' : 'text-gray-400'}>{categoryIcons[cat.slug] || <ShoppingBag className="w-4 h-4" />}</span>
                         <span>{locale === 'zh-hk' ? cat.name : locale === 'en' ? cat.nameEn : cat.nameJa}</span>
                       </span>

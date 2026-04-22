@@ -90,7 +90,10 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
   const shortDesc = getDesc().slice(0, 45) + (getDesc().length > 45 ? '...' : '');
 
   return (
-    <div className="group bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col">
+    <Link
+      href={`${localePrefix}/product/${product.slug}/`}
+      className="group bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col"
+    >
       {/* 顶部彩色条 */}
       <div className={`h-2 ${topBarColor}`} />
 
@@ -106,23 +109,23 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
       )}
 
       {/* 图片区域 - e-print风格：圆形占位 */}
-      <Link href={`${localePrefix}/product/${product.slug}/`} className="block pt-6 pb-4 px-4">
+      <div className="block pt-6 pb-4 px-4">
         <div className="flex flex-col items-center">
           {hasImage ? (
-            <div className="w-24 h-24 rounded-full overflow-hidden bg-gray-50 mb-3 group-hover:scale-105 transition-transform duration-300">
+            <div className="w-28 h-28 rounded-full overflow-hidden bg-gray-50 mb-3 group-hover:scale-105 transition-transform duration-300">
               <Image
                 src={imageSrc}
                 alt={getName()}
-                width={96}
-                height={96}
+                width={112}
+                height={112}
                 className="object-cover w-full h-full"
                 unoptimized
                 onError={() => setImgError(true)}
               />
             </div>
           ) : (
-            <div className={`w-24 h-24 rounded-full ${fallback.bgColor} flex items-center justify-center mb-3 group-hover:scale-105 transition-transform duration-300`}>
-              <FallbackIcon className={`w-10 h-10 ${fallback.iconColor}`} strokeWidth={1.5} />
+            <div className={`w-28 h-28 rounded-full ${fallback.bgColor} flex items-center justify-center mb-3 group-hover:scale-105 transition-transform duration-300`}>
+              <FallbackIcon className={`w-12 h-12 ${fallback.iconColor}`} strokeWidth={1.5} />
             </div>
           )}
 
@@ -146,7 +149,7 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
             ZprintPro 智印港 · 香港專業印刷 Hong Kong Professional Printing
           </p>
         </div>
-      </Link>
+      </div>
 
       {/* 分隔线 */}
       <div className="mx-4 border-t border-gray-100" />
@@ -169,18 +172,17 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
         </div>
 
         {/* 立即订购按钮 */}
-        <Link
-          href={`${localePrefix}/product/${product.slug}/`}
+        <span
           className="block w-full text-center py-2.5 bg-[#2873F5] text-white rounded-lg text-sm font-medium hover:bg-[#1E5FD1] transition-colors mt-auto"
         >
           {t.orderNow}
-        </Link>
+        </span>
 
         {/* 价格备注 */}
         <p className="text-[10px] text-gray-400 text-center mt-2">
           {t.priceNote}
         </p>
       </div>
-    </div>
+    </Link>
   );
 }

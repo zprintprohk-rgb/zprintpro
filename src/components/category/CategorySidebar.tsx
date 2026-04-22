@@ -99,23 +99,23 @@ export function CategorySidebar({ locale, currentCategorySlug }: CategorySidebar
             <Link
               key={cat.slug}
               href={`${localePrefix}/category/${cat.slug}/`}
-              className={`flex items-center justify-between px-4 py-2.5 border-b border-gray-100 last:border-b-0 transition-colors group ${
+              className={`flex items-center justify-between px-4 py-3.5 border-b border-gray-100 last:border-b-0 transition-colors group ${
                 isEducational
-                  ? 'bg-gray-300 text-white'
+                  ? 'bg-gray-400 text-white hover:bg-[#2873F5]'
                   : isActive
-                    ? 'bg-blue-50 text-[#2873F5]'
-                    : 'text-[#333333] hover:bg-gray-50'
+                    ? 'bg-[#2873F5] text-white'
+                    : 'text-[#333333] hover:bg-[#2873F5] hover:text-white'
               } ${idx === categories.length - 1 ? 'last:rounded-b-lg' : ''}`}
             >
-              <div className="flex items-center gap-3">
-                <Icon className={`w-4 h-4 ${isEducational ? 'text-white' : isActive ? 'text-[#2873F5]' : 'text-gray-400 group-hover:text-[#2873F5]'}`} strokeWidth={1.5} />
-                <span className={`text-sm ${isActive ? 'font-semibold' : 'font-medium'}`}>
+              <div className={`flex items-center gap-3 ${isEducational ? 'text-[16px]' : ''}`}>
+                <Icon className={`w-4 h-4 ${isEducational ? 'text-white' : isActive ? 'text-white' : 'text-gray-400 group-hover:text-white'}`} strokeWidth={1.5} />
+                <span className={`text-[15.5px] ${isActive ? 'font-semibold' : 'font-medium'}`}>
                   {locale === 'zh-hk' ? cat.name : locale === 'en' ? cat.nameEn : cat.nameJa}
                 </span>
               </div>
               <div className="flex items-center gap-1.5">
-                <span className={`text-xs ${isEducational ? 'text-white' : 'text-gray-400'}`}>{cat.count}</span>
-                <ChevronRight className={`w-3.5 h-3.5 transition-transform ${isActive ? 'text-[#2873F5]' : 'text-gray-300 group-hover:text-[#2873F5] group-hover:translate-x-0.5'}`} />
+                <span className={`text-sm ${isEducational ? 'text-white' : isActive ? 'text-white' : 'text-gray-400 group-hover:text-white'}`}>{cat.count}</span>
+                <ChevronRight className={`w-3.5 h-3.5 transition-transform ${isActive ? 'text-white' : 'text-gray-300 group-hover:text-white group-hover:translate-x-0.5'}`} />
               </div>
             </Link>
           );
