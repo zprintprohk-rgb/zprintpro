@@ -19,6 +19,7 @@ import {
   generateBusinessJsonLd,
   Locale
 } from '@/lib/seo';
+import Image from 'next/image';
 import { JsonLd } from '@/components/JsonLd';
 import { CategorySidebar } from '@/components/category/CategorySidebar';
 import { CategoryProductCard } from '@/components/category/CategoryProductCard';
@@ -129,6 +130,7 @@ export default function CategoryPage({
       next: '下一頁',
       bannerTitle: '專業品質，價格透明，快速交貨',
       bannerSubtitle: '香港領先的印刷服務平台',
+      cta: '立即報價',
     },
     'en': {
       productsCount: `${categoryProducts.length} Products`,
@@ -141,6 +143,7 @@ export default function CategoryPage({
       next: 'Next',
       bannerTitle: 'Professional Quality, Transparent Pricing, Fast Delivery',
       bannerSubtitle: 'Hong Kong\'s Leading Printing Service Platform',
+      cta: 'Get Quote',
     },
     'ja': {
       productsCount: `全 ${categoryProducts.length} 商品`,
@@ -153,10 +156,31 @@ export default function CategoryPage({
       next: '次へ',
       bannerTitle: 'プロ品質、透明な価格、迅速な納品',
       bannerSubtitle: '香港を代表する印刷サービスプラットフォーム',
+      cta: 'お見積もり',
     },
   };
 
   const t = translations[locale];
+  const localePrefix = `/${locale}`;
+
+  // 分类 Banner 背景图映射
+  const categoryBannerImages: Record<string, string> = {
+    'paper-bags': '/images/hero/paper-bags.jpg',
+    'flyers': '/images/hero/flyers.jpg',
+    'stickers': '/images/hero/stickers.jpg',
+    'packaging': '/images/hero/packaging.jpg',
+    'posters': '/images/hero/posters.jpg',
+    'business-cards': '/images/hero-v21/sticker.jpg',
+    'banners': '/images/hero-v21/poster.jpg',
+    'books': '/images/hero-v21/gift-box.jpg',
+    'menus': '/images/hero-v21/flyer.jpg',
+    'envelopes': '/images/hero-v21/kraft-bag.jpg',
+    'calendars': '/images/hero-v21/white-bag.jpg',
+    'red-packets': '/images/hero-v21/gift-box.jpg',
+    'educational': '/images/hero-v21/flyer.jpg',
+  };
+  const bannerImage = categoryBannerImages[slug];
+  const hasBannerImage = !!bannerImage;
 
   return (
     <>
@@ -166,14 +190,25 @@ export default function CategoryPage({
       <JsonLd data={businessJsonLd} />
 
       <main className="min-h-screen bg-gray-50">
-        {/* Banner 区域 - 1320×400，位于导航栏下方 */}
-        <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 pt-6">
-          <div className="relative w-full h-[250px] md:h-[320px] lg:h-[400px] overflow-hidden bg-gradient-to-r from-[#2873F5] via-[#3B82F6] to-[#1E5FD1]">
-            {/* 背景装饰 */}
-            <div className="absolute inset-0 opacity-10">
-              <div className="absolute top-0 right-0 w-96 h-96 bg-white rounded-full -translate-y-1/2 translate-x-1/2" />
-              <div className="absolute bottom-0 left-0 w-64 h-64 bg-white rounded-full translate-y-1/2 -translate-x-1/2" />
-            </div>
+        {/* Banner 区域 - 1320×400，紧贴导航栏，图片背景 */}
+        <div className="max-w-[1320px] mx-auto">
+          <div className="relative w-full h-[250px] md:h-[320px] lg:h-[400px] overflow-hidden">
+            {/* 背景图或渐变 */}
+            {hasBannerImage ? (
+              <>
+                <Image
+                  src={bannerImage}
+                  alt={categoryName}
+                  fill
+                  className="object-cover"
+                  unoptimized
+                  priority
+                />
+                <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/30" />
+              </>
+            ) : (
+              <div className="absolute inset-0 bg-gradient-to-r from-[#2873F5] via-[#3B82F6] to-[#1E5FD1]" />
+            )}
             {/* Banner 内容 */}
             <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-8">
               <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3">
@@ -182,15 +217,21 @@ export default function CategoryPage({
               <p className="text-white/80 text-sm md:text-base mb-1">
                 {t.bannerTitle}
               </p>
-              <p className="text-white/60 text-xs md:text-sm">
+              <p className="text-white/60 text-xs md:text-sm mb-5">
                 {t.bannerSubtitle} · {t.productsCount}
               </p>
+              <a
+                href={`${localePrefix}/contact/`}
+                className="inline-flex items-center justify-center px-8 py-3 bg-[#3090FF] hover:bg-[#2873F5] text-white rounded-lg text-sm font-medium transition-colors shadow-lg"
+              >
+                {t.cta}
+              </a>
             </div>
           </div>
         </div>
 
         {/* 面包屑导航 - 位于 Banner 下方 */}
-        <div className="bg-white border-b mt-6">
+        <div className="bg-white border-b">
           <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-3">
             <nav className="text-sm text-gray-500">
               <a href={`/${locale}/`} className="hover:text-[#2873F5]">

@@ -253,9 +253,9 @@ export function Header({ locale }: HeaderProps) {
   return (
     <header className="sticky top-0 z-50">
       <div className="max-w-[1320px] mx-auto bg-white shadow-sm">
-        {/* Top Bar */}
+        {/* Top Bar — 明确限制1320px宽度 */}
         <div className="bg-gray-50 border-b border-gray-100">
-          <div className="px-4 sm:px-6 lg:px-8 flex justify-between items-center text-xs sm:text-sm py-2">
+          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center text-xs sm:text-sm py-2">
             <div className="flex items-center text-gray-600">
               <a href={`tel:${t.phone.replace(/\D/g, '')}`} className="flex items-center gap-2 hover:text-[#2873F5] transition-colors px-3 border-r border-gray-300">
                 <Phone className="w-3.5 h-3.5" />
@@ -288,7 +288,7 @@ export function Header({ locale }: HeaderProps) {
         <div className="bg-white">
           <div className="px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-[53px] lg:h-[61px] gap-4">
-              <Link href={`${localePrefix}/`} className="flex-shrink-0 ml-5">
+              <Link href={`${localePrefix}/`} className="flex-shrink-0 ml-[30px]">
                 <Image src="/images/logo.png" alt="智印港 ZprintPro" width={180} height={44} className="h-11 w-auto" priority />
               </Link>
               <form onSubmit={handleSearch} className="hidden md:flex flex-1 max-w-xl mx-4">
