@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import { CreditCard, Tag, FileText, Package, ImageIcon, ShoppingBag, Printer, Palette, Newspaper, ArrowRight } from 'lucide-react';
 import { Locale, siteConfig } from '@/lib/seo';
 import { buyingGuides } from '@/data/buying-guides';
 
@@ -29,6 +30,43 @@ const translations = {
     subtitle: 'プロの印刷技術と業界トレンド',
     buyingGuideTag: '選び方ガイド',
   },
+};
+
+// Blog category navigation data
+const blogCategories = {
+  'zh-hk': [
+    { name: '名片知識', slug: 'business-cards', count: 1, icon: CreditCard, gradient: 'from-blue-500 to-blue-600', bgClass: 'bg-blue-50', textClass: 'text-blue-600' },
+    { name: '貼紙知識', slug: 'stickers', count: 1, icon: Tag, gradient: 'from-pink-500 to-pink-600', bgClass: 'bg-pink-50', textClass: 'text-pink-600' },
+    { name: '傳單知識', slug: 'flyers', count: 1, icon: FileText, gradient: 'from-green-500 to-green-600', bgClass: 'bg-green-50', textClass: 'text-green-600' },
+    { name: '包裝知識', slug: 'packaging', count: 1, icon: Package, gradient: 'from-amber-500 to-amber-600', bgClass: 'bg-amber-50', textClass: 'text-amber-600' },
+    { name: '海報知識', slug: 'posters', count: 1, icon: ImageIcon, gradient: 'from-purple-500 to-purple-600', bgClass: 'bg-purple-50', textClass: 'text-purple-600' },
+    { name: '紙袋知識', slug: 'paper-bags', count: 1, icon: ShoppingBag, gradient: 'from-cyan-500 to-cyan-600', bgClass: 'bg-cyan-50', textClass: 'text-cyan-600' },
+    { name: '印刷工藝', slug: 'printing-techniques', count: 2, icon: Printer, gradient: 'from-gray-500 to-gray-600', bgClass: 'bg-gray-50', textClass: 'text-gray-600' },
+    { name: '設計技巧', slug: 'design-tips', count: 1, icon: Palette, gradient: 'from-rose-500 to-rose-600', bgClass: 'bg-rose-50', textClass: 'text-rose-600' },
+    { name: '公司新聞', slug: 'company-news', count: 0, icon: Newspaper, gradient: 'from-red-500 to-red-600', bgClass: 'bg-red-50', textClass: 'text-red-600' },
+  ],
+  'en': [
+    { name: 'Business Cards', slug: 'business-cards', count: 1, icon: CreditCard, gradient: 'from-blue-500 to-blue-600', bgClass: 'bg-blue-50', textClass: 'text-blue-600' },
+    { name: 'Stickers', slug: 'stickers', count: 1, icon: Tag, gradient: 'from-pink-500 to-pink-600', bgClass: 'bg-pink-50', textClass: 'text-pink-600' },
+    { name: 'Flyers', slug: 'flyers', count: 1, icon: FileText, gradient: 'from-green-500 to-green-600', bgClass: 'bg-green-50', textClass: 'text-green-600' },
+    { name: 'Packaging', slug: 'packaging', count: 1, icon: Package, gradient: 'from-amber-500 to-amber-600', bgClass: 'bg-amber-50', textClass: 'text-amber-600' },
+    { name: 'Posters', slug: 'posters', count: 1, icon: ImageIcon, gradient: 'from-purple-500 to-purple-600', bgClass: 'bg-purple-50', textClass: 'text-purple-600' },
+    { name: 'Paper Bags', slug: 'paper-bags', count: 1, icon: ShoppingBag, gradient: 'from-cyan-500 to-cyan-600', bgClass: 'bg-cyan-50', textClass: 'text-cyan-600' },
+    { name: 'Techniques', slug: 'printing-techniques', count: 2, icon: Printer, gradient: 'from-gray-500 to-gray-600', bgClass: 'bg-gray-50', textClass: 'text-gray-600' },
+    { name: 'Design Tips', slug: 'design-tips', count: 1, icon: Palette, gradient: 'from-rose-500 to-rose-600', bgClass: 'bg-rose-50', textClass: 'text-rose-600' },
+    { name: 'Company News', slug: 'company-news', count: 0, icon: Newspaper, gradient: 'from-red-500 to-red-600', bgClass: 'bg-red-50', textClass: 'text-red-600' },
+  ],
+  'ja': [
+    { name: '名刺知識', slug: 'business-cards', count: 1, icon: CreditCard, gradient: 'from-blue-500 to-blue-600', bgClass: 'bg-blue-50', textClass: 'text-blue-600' },
+    { name: 'ステッカー知識', slug: 'stickers', count: 1, icon: Tag, gradient: 'from-pink-500 to-pink-600', bgClass: 'bg-pink-50', textClass: 'text-pink-600' },
+    { name: 'チラシ知識', slug: 'flyers', count: 1, icon: FileText, gradient: 'from-green-500 to-green-600', bgClass: 'bg-green-50', textClass: 'text-green-600' },
+    { name: 'パッケージ知識', slug: 'packaging', count: 1, icon: Package, gradient: 'from-amber-500 to-amber-600', bgClass: 'bg-amber-50', textClass: 'text-amber-600' },
+    { name: 'ポスター知識', slug: 'posters', count: 1, icon: ImageIcon, gradient: 'from-purple-500 to-purple-600', bgClass: 'bg-purple-50', textClass: 'text-purple-600' },
+    { name: '紙袋知識', slug: 'paper-bags', count: 1, icon: ShoppingBag, gradient: 'from-cyan-500 to-cyan-600', bgClass: 'bg-cyan-50', textClass: 'text-cyan-600' },
+    { name: '印刷技術', slug: 'printing-techniques', count: 2, icon: Printer, gradient: 'from-gray-500 to-gray-600', bgClass: 'bg-gray-50', textClass: 'text-gray-600' },
+    { name: 'デザインチップ', slug: 'design-tips', count: 1, icon: Palette, gradient: 'from-rose-500 to-rose-600', bgClass: 'bg-rose-50', textClass: 'text-rose-600' },
+    { name: '会社ニュース', slug: 'company-news', count: 0, icon: Newspaper, gradient: 'from-red-500 to-red-600', bgClass: 'bg-red-50', textClass: 'text-red-600' },
+  ],
 };
 
 const articles = {
@@ -98,6 +136,7 @@ export default function BlogPage({ params }: BlogPageProps) {
   const t = translations[locale];
   const localePrefix = `/${locale}`;
   const legacyPosts = articles[locale] || articles['zh-hk'];
+  const categories = blogCategories[locale] || blogCategories['zh-hk'];
 
   // Map buying guides for this locale
   const guidePosts = buyingGuides.map((guide) => ({
@@ -114,10 +153,49 @@ export default function BlogPage({ params }: BlogPageProps) {
   return (
     <main className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
+        <div className="text-center mb-10">
           <h1 className="text-3xl md:text-4xl font-bold text-[#333333] mb-3">{t.h1}</h1>
           <p className="text-gray-500 text-lg">{t.subtitle}</p>
         </div>
+
+        {/* Category Navigation */}
+        <section className="mb-14">
+          <div className="flex items-center gap-2 mb-6">
+            <div className="w-1 h-6 bg-gradient-to-b from-[#2873F5] to-[#1E5FD1] rounded-full" />
+            <h2 className="text-xl font-bold text-[#333333]">{locale === 'zh-hk' ? '文章分類' : locale === 'en' ? 'Categories' : 'カテゴリー'}</h2>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+            {categories.map((cat) => {
+              const Icon = cat.icon;
+              return (
+                <Link
+                  key={cat.slug}
+                  href={`${localePrefix}/blog/`}
+                  className="group bg-white rounded-2xl border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                >
+                  <div className={`h-1.5 bg-gradient-to-r ${cat.gradient}`} />
+                  <div className="p-5">
+                    <div className="flex items-start justify-between">
+                      <div className={`w-11 h-11 rounded-xl ${cat.bgClass} flex items-center justify-center`}>
+                        <Icon className={`w-5 h-5 ${cat.textClass}`} />
+                      </div>
+                      <span className="text-xs font-semibold text-gray-400 bg-gray-50 px-2.5 py-1 rounded-full">
+                        {cat.count} {locale === 'zh-hk' ? '篇' : locale === 'en' ? 'posts' : '記事'}
+                      </span>
+                    </div>
+                    <h3 className="mt-3 text-base font-bold text-[#333333] group-hover:text-[#2873F5] transition-colors">
+                      {cat.name}
+                    </h3>
+                    <div className="mt-3 flex items-center text-sm text-gray-400 group-hover:text-[#2873F5] transition-colors">
+                      <span className="font-medium">{locale === 'zh-hk' ? '查看文章' : locale === 'en' ? 'View Posts' : '記事を見る'}</span>
+                      <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                    </div>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+        </section>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {allPosts.map((post) => (
