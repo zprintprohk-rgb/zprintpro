@@ -1,294 +1,408 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useState, useRef, useCallback } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from '@/components/ui/form';
-import { Input } from '@/components/ui/input';
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from '@/components/ui/select';
-import { Slider } from '@/components/ui/slider';
-import { Button } from '@/components/ui/button';
-import { Switch } from '@/components/ui/switch';
-import { calculateQuote, type QuoteParams, type QuoteResult } from '@/lib/pricing';
+import { Send, Paperclip, CheckCircle, AlertCircle, Upload, X, Loader2 } from 'lucide-react';
+import { categories } from '@/data/products';
 
 const quoteSchema = z.object({
-  pages: z.number().min(1).max(1000),
-  color: z.enum(['black', 'color']),
-  binding: z.enum(['none', 'staple', 'spiral', 'perfect']),
-  quantity: z.number().min(1).max(10000),
-  lamination: z.boolean().optional(),
-  paperType: z.enum(['standard', 'premium', 'recycled']).optional(),
-  duplex: z.boolean().optional(),
+  name: z.string().optional(),
+  phone: z.string().min(1, '請輸入聯絡電話'),
+  email: z.string().min(1, '請輸入電郵地址').email('請輸入有效的電郵地址'),
+  category: z.string().optional(),
+  quantity: z.string().optional(),
+  size: z.string().optional(),
+  message: z.string().min(1, '請輸入留言內容'),
 });
 
 type QuoteFormValues = z.infer<typeof quoteSchema>;
 
 interface QuoteFormProps {
-  onQuoteChange?: (result: QuoteResult) => void;
   locale?: 'zh-hk' | 'en' | 'ja';
 }
 
-export function QuoteForm({ onQuoteChange, locale = 'en' }: QuoteFormProps) {
+export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [files, setFiles] = useState<File[]>([]);
+  const fileInputRef = useRef<HTMLInputElement>(null);
+
   const form = useForm<QuoteFormValues>({
     resolver: zodResolver(quoteSchema),
-    defaultValues: {
-      pages: 10,
-      color: 'black',
-      binding: 'none',
-      quantity: 100,
-      lamination: false,
-      paperType: 'standard',
-      duplex: false,
-    },
+    defaultValues: { name: '', phone: '', email: '', category: '', quantity: '', size: '', message: '' },
   });
-
-  const values = form.watch();
-  const quoteResult = calculateQuote(values as QuoteParams);
-
-  useEffect(() => {
-    onQuoteChange?.(quoteResult);
-  }, [quoteResult, onQuoteChange]);
-
-  const onSubmit = (data: QuoteFormValues) => {
-    const result = calculateQuote(data as QuoteParams);
-    onQuoteChange?.(result);
-  };
 
   const labels = {
     'zh-hk': {
-      pages: '頁數',
-      color: '顏色',
-      binding: '裝訂方式',
-      quantity: '數量',
-      lamination: '覆膜',
-      paperType: '紙張類型',
-      duplex: '雙面打印',
-      black: '黑白',
-      colorLabel: '彩色',
-      none: '無',
-      staple: '騎馬釘',
-      spiral: '線圈',
-      perfect: '膠裝',
-      standard: '標準紙',
-      premium: '優質紙',
-      recycled: '再生紙',
-      estimatedTotal: '估算總價',
-      unitPrice: '單價',
-      getQuote: '獲取報價',
+      contactInfo: '聯絡資訊',
+      printNeeds: '印刷需求',
+      messageAttach: '留言與附件',
+      name: '姓名',
+      namePlaceholder: '請輸入您的姓名（選填）',
+      phone: '聯絡電話',
+      phonePlaceholder: '請輸入手提電話（例如：5123 4567）',
+      email: '電郵地址',
+      emailPlaceholder: '請輸入常用電郵地址（報價以郵件回覆）',
+      emailNote: '報價將以郵件回覆，請確保郵箱可用',
+      category: '產品類型',
+      categoryPlaceholder: '請選擇產品類型',
+      quantity: '印刷數量',
+      quantityPlaceholder: '例如：500張、1000個',
+      size: '尺寸規格',
+      sizePlaceholder: '例如：A4、90×54mm',
+      message: '留言內容',
+      messagePlaceholder: '請詳細說明印刷需求：例如品類、紙質、工藝要求、交貨時間等...',
+      attachment: '附件上傳',
+      attachmentNote: '點擊上傳設計稿、參考圖片（選填，最多5個檔案，單個最大10MB）',
+      submit: '提交詢價',
+      submitting: '發送中...',
+      successTitle: '詢價已提交！',
+      successDesc: '我們已收到您的需求，將在24小時內以郵件回覆報價。',
+      submitAgain: '再次提交',
+      required: '必填',
+      fileTooLarge: '單個檔案不能超過10MB',
+      maxFiles: '最多只能上傳5個檔案',
     },
     en: {
-      pages: 'Pages',
-      color: 'Color',
-      binding: 'Binding',
+      contactInfo: 'Contact Information',
+      printNeeds: 'Printing Requirements',
+      messageAttach: 'Message & Attachments',
+      name: 'Name',
+      namePlaceholder: 'Your name (optional)',
+      phone: 'Phone Number',
+      phonePlaceholder: 'Enter your phone number',
+      email: 'Email Address',
+      emailPlaceholder: 'Your email (quote will be sent here)',
+      emailNote: 'Quote will be sent via email',
+      category: 'Product Type',
+      categoryPlaceholder: 'Select product type',
       quantity: 'Quantity',
-      lamination: 'Lamination',
-      paperType: 'Paper Type',
-      duplex: 'Duplex Printing',
-      black: 'Black & White',
-      colorLabel: 'Color',
-      none: 'None',
-      staple: 'Staple',
-      spiral: 'Spiral',
-      perfect: 'Perfect Bound',
-      standard: 'Standard',
-      premium: 'Premium',
-      recycled: 'Recycled',
-      estimatedTotal: 'Estimated Total',
-      unitPrice: 'Unit Price',
-      getQuote: 'Get Quote',
+      quantityPlaceholder: 'e.g. 500 pcs, 1000 pcs',
+      size: 'Size / Specs',
+      sizePlaceholder: 'e.g. A4, 90×54mm',
+      message: 'Message',
+      messagePlaceholder: 'Please describe your printing needs: product type, paper, finishing, delivery time...',
+      attachment: 'Attachment Upload',
+      attachmentNote: 'Upload design files or reference images (optional, max 5 files, 10MB each)',
+      submit: 'Submit Inquiry',
+      submitting: 'Sending...',
+      successTitle: 'Inquiry Submitted!',
+      successDesc: 'We have received your request and will reply with a quote within 24 hours.',
+      submitAgain: 'Submit Another',
+      required: 'Required',
+      fileTooLarge: 'Each file must not exceed 10MB',
+      maxFiles: 'Maximum 5 files allowed',
     },
     ja: {
-      pages: 'ページ数',
-      color: '色',
-      binding: '製本方式',
+      contactInfo: '連絡先情報',
+      printNeeds: '印刷のご要望',
+      messageAttach: 'メッセージと添付ファイル',
+      name: 'お名前',
+      namePlaceholder: 'お名前（任意）',
+      phone: '電話番号',
+      phonePlaceholder: '電話番号を入力',
+      email: 'メールアドレス',
+      emailPlaceholder: 'メールアドレス（見積もりをこちらに送信）',
+      emailNote: '見積もりはメールで送信します',
+      category: '製品タイプ',
+      categoryPlaceholder: '製品タイプを選択',
       quantity: '数量',
-      lamination: 'ラミネート',
-      paperType: '用紙タイプ',
-      duplex: '両面印刷',
-      black: '白黒',
-      colorLabel: 'カラー',
-      none: 'なし',
-      staple: '中綴じ',
-      spiral: 'スパイラル',
-      perfect: '中綴じ製本',
-      standard: '標準紙',
-      premium: '上質紙',
-      recycled: '再生紙',
-      estimatedTotal: '見積もり合計',
-      unitPrice: '単価',
-      getQuote: '見積もりを取得',
+      quantityPlaceholder: '例：500枚、1000個',
+      size: 'サイズ・仕様',
+      sizePlaceholder: '例：A4、90×54mm',
+      message: 'メッセージ',
+      messagePlaceholder: '印刷のご要望を詳しくご記入ください：製品、紙質、加工、納期など...',
+      attachment: 'ファイル添付',
+      attachmentNote: 'デザインデータや参考画像をアップロード（任意、最大5ファイル、各10MBまで）',
+      submit: 'お見積もり依頼',
+      submitting: '送信中...',
+      successTitle: '依頼を送信しました！',
+      successDesc: '24時間以内にメールで見積もりをご返信いたします。',
+      submitAgain: '再度依頼する',
+      required: '必須',
+      fileTooLarge: '各ファイルは10MB以下にしてください',
+      maxFiles: '最大5ファイルまでアップロード可能です',
     },
   }[locale];
 
+  const t = labels;
+
+  const handleFileChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
+    const selected = Array.from(e.target.files || []);
+    const valid = selected.filter((f) => {
+      if (f.size > 10 * 1024 * 1024) {
+        alert(t.fileTooLarge);
+        return false;
+      }
+      return true;
+    });
+    setFiles((prev) => {
+      const combined = [...prev, ...valid];
+      if (combined.length > 5) {
+        alert(t.maxFiles);
+        return prev;
+      }
+      return combined;
+    });
+    if (fileInputRef.current) fileInputRef.current.value = '';
+  }, [t]);
+
+  const removeFile = useCallback((index: number) => {
+    setFiles((prev) => prev.filter((_, i) => i !== index));
+  }, []);
+
+  const onSubmit = async (data: QuoteFormValues) => {
+    setIsSubmitting(true);
+    setSubmitStatus('idle');
+
+    try {
+      const formData = new FormData();
+      formData.append('name', data.name || '');
+      formData.append('phone', data.phone);
+      formData.append('email', data.email);
+      formData.append('category', data.category || '');
+      formData.append('quantity', data.quantity || '');
+      formData.append('size', data.size || '');
+      formData.append('message', data.message);
+      formData.append('locale', locale);
+      files.forEach((file) => formData.append('attachments', file));
+
+      const res = await fetch('/api/send-quote-email', {
+        method: 'POST',
+        body: formData,
+      });
+
+      const result = await res.json();
+      if (result.success) {
+        setSubmitStatus('success');
+        form.reset();
+        setFiles([]);
+      } else {
+        setSubmitStatus('error');
+      }
+    } catch {
+      setSubmitStatus('error');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  if (submitStatus === 'success') {
+    return (
+      <div className="rounded-2xl border border-green-200 bg-green-50 p-10 text-center">
+        <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
+        <h3 className="text-2xl font-bold text-green-700 mb-2">{t.successTitle}</h3>
+        <p className="text-green-600 mb-6">{t.successDesc}</p>
+        <button
+          onClick={() => setSubmitStatus('idle')}
+          className="px-6 py-2.5 bg-green-600 hover:bg-green-700 text-white rounded-lg font-medium transition-colors"
+        >
+          {t.submitAgain}
+        </button>
+      </div>
+    );
+  }
+
   return (
-    <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 rounded-lg border p-6">
-        <FormField
-          control={form.control}
-          name="pages"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>{labels.pages}</FormLabel>
-              <FormControl>
-                <Input
-                  type="number"
-                  min={1}
-                  max={1000}
-                  {...field}
-                  onChange={(e) => field.onChange(Math.min(1000, Math.max(1, Number(e.target.value))))}
-                />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-
-        <FormField
-          control={form.control}
-          name="color"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>{labels.color}</FormLabel>
-              <Select onValueChange={field.onChange} defaultValue={field.value}>
-                <FormControl>
-                  <SelectTrigger>
-                    <SelectValue />
-                  </SelectTrigger>
-                </FormControl>
-                <SelectContent>
-                  <SelectItem value="black">{labels.black}</SelectItem>
-                  <SelectItem value="color">{labels.colorLabel}</SelectItem>
-                </SelectContent>
-              </Select>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-
-        <FormField
-          control={form.control}
-          name="binding"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>{labels.binding}</FormLabel>
-              <Select onValueChange={field.onChange} defaultValue={field.value}>
-                <FormControl>
-                  <SelectTrigger>
-                    <SelectValue />
-                  </SelectTrigger>
-                </FormControl>
-                <SelectContent>
-                  <SelectItem value="none">{labels.none}</SelectItem>
-                  <SelectItem value="staple">{labels.staple}</SelectItem>
-                  <SelectItem value="spiral">{labels.spiral}</SelectItem>
-                  <SelectItem value="perfect">{labels.perfect}</SelectItem>
-                </SelectContent>
-              </Select>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-
-        <FormField
-          control={form.control}
-          name="paperType"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>{labels.paperType}</FormLabel>
-              <Select onValueChange={field.onChange} defaultValue={field.value}>
-                <FormControl>
-                  <SelectTrigger>
-                    <SelectValue />
-                  </SelectTrigger>
-                </FormControl>
-                <SelectContent>
-                  <SelectItem value="standard">{labels.standard}</SelectItem>
-                  <SelectItem value="premium">{labels.premium}</SelectItem>
-                  <SelectItem value="recycled">{labels.recycled}</SelectItem>
-                </SelectContent>
-              </Select>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-
-        <FormField
-          control={form.control}
-          name="quantity"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>
-                {labels.quantity}: {field.value}
-              </FormLabel>
-              <FormControl>
-                <Slider
-                  min={1}
-                  max={1000}
-                  step={1}
-                  value={[field.value]}
-                  onValueChange={([v]) => field.onChange(v)}
-                />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-
-        <div className="flex items-center justify-between gap-4">
-          <FormField
-            control={form.control}
-            name="lamination"
-            render={({ field }) => (
-              <FormItem className="flex flex-1 items-center justify-between rounded-md border p-3">
-                <FormLabel className="mb-0">{labels.lamination}</FormLabel>
-                <FormControl>
-                  <Switch checked={field.value} onCheckedChange={field.onChange} />
-                </FormControl>
-              </FormItem>
-            )}
-          />
-
-          <FormField
-            control={form.control}
-            name="duplex"
-            render={({ field }) => (
-              <FormItem className="flex flex-1 items-center justify-between rounded-md border p-3">
-                <FormLabel className="mb-0">{labels.duplex}</FormLabel>
-                <FormControl>
-                  <Switch checked={field.value} onCheckedChange={field.onChange} />
-                </FormControl>
-              </FormItem>
-            )}
-          />
+    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+      {/* ===== 聯絡資訊 ===== */}
+      <div className="bg-white rounded-2xl border border-gray-100 p-6 md:p-8 shadow-sm">
+        <div className="flex items-center gap-2 mb-6">
+          <div className="w-8 h-8 rounded-lg bg-blue-100 flex items-center justify-center">
+            <span className="text-blue-600 font-bold text-sm">1</span>
+          </div>
+          <h3 className="text-lg font-bold text-[#333333]">{t.contactInfo}</h3>
         </div>
 
-        <div className="rounded-md bg-muted p-4">
-          <p className="text-lg font-semibold">
-            {labels.estimatedTotal}: HKD ${quoteResult.totalPrice.toFixed(2)}
-          </p>
-          <p className="text-sm text-muted-foreground">
-            {labels.unitPrice}: HKD ${quoteResult.unitPrice.toFixed(2)}
-          </p>
+        <div className="space-y-5">
+          {/* 姓名 */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1.5">
+              {t.name}
+            </label>
+            <input
+              {...form.register('name')}
+              type="text"
+              placeholder={t.namePlaceholder}
+              className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#2873F5] focus:ring-2 focus:ring-[#2873F5]/20 outline-none transition-all text-base"
+            />
+          </div>
+
+          {/* 電話 */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1.5">
+              {t.phone} <span className="text-red-500">*</span>
+            </label>
+            <input
+              {...form.register('phone')}
+              type="tel"
+              placeholder={t.phonePlaceholder}
+              className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#2873F5] focus:ring-2 focus:ring-[#2873F5]/20 outline-none transition-all text-base"
+            />
+            {form.formState.errors.phone && (
+              <p className="mt-1.5 text-sm text-red-500 flex items-center gap-1">
+                <AlertCircle className="w-4 h-4" /> {form.formState.errors.phone.message}
+              </p>
+            )}
+          </div>
+
+          {/* 電郵 */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1.5">
+              {t.email} <span className="text-red-500">*</span>
+            </label>
+            <input
+              {...form.register('email')}
+              type="email"
+              placeholder={t.emailPlaceholder}
+              className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#2873F5] focus:ring-2 focus:ring-[#2873F5]/20 outline-none transition-all text-base"
+            />
+            <p className="mt-1 text-xs text-gray-400">{t.emailNote}</p>
+            {form.formState.errors.email && (
+              <p className="mt-1 text-sm text-red-500 flex items-center gap-1">
+                <AlertCircle className="w-4 h-4" /> {form.formState.errors.email.message}
+              </p>
+            )}
+          </div>
+        </div>
+      </div>
+
+      {/* ===== 印刷需求 ===== */}
+      <div className="bg-white rounded-2xl border border-gray-100 p-6 md:p-8 shadow-sm">
+        <div className="flex items-center gap-2 mb-6">
+          <div className="w-8 h-8 rounded-lg bg-amber-100 flex items-center justify-center">
+            <span className="text-amber-600 font-bold text-sm">2</span>
+          </div>
+          <h3 className="text-lg font-bold text-[#333333]">{t.printNeeds}</h3>
         </div>
 
-        <Button type="submit" className="w-full">
-          {labels.getQuote}
-        </Button>
-      </form>
-    </Form>
+        <div className="grid md:grid-cols-3 gap-5">
+          {/* 產品類型 */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1.5">{t.category}</label>
+            <select
+              {...form.register('category')}
+              className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#2873F5] focus:ring-2 focus:ring-[#2873F5]/20 outline-none transition-all text-base bg-white"
+            >
+              <option value="">{t.categoryPlaceholder}</option>
+              {categories.map((cat) => (
+                <option key={cat.slug} value={cat.name}>
+                  {locale === 'zh-hk' ? cat.name : locale === 'en' ? (cat.nameEn || cat.name) : (cat.nameJa || cat.name)}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {/* 數量 */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1.5">{t.quantity}</label>
+            <input
+              {...form.register('quantity')}
+              type="text"
+              placeholder={t.quantityPlaceholder}
+              className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#2873F5] focus:ring-2 focus:ring-[#2873F5]/20 outline-none transition-all text-base"
+            />
+          </div>
+
+          {/* 尺寸 */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1.5">{t.size}</label>
+            <input
+              {...form.register('size')}
+              type="text"
+              placeholder={t.sizePlaceholder}
+              className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#2873F5] focus:ring-2 focus:ring-[#2873F5]/20 outline-none transition-all text-base"
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* ===== 留言與附件 ===== */}
+      <div className="bg-white rounded-2xl border border-gray-100 p-6 md:p-8 shadow-sm">
+        <div className="flex items-center gap-2 mb-6">
+          <div className="w-8 h-8 rounded-lg bg-purple-100 flex items-center justify-center">
+            <span className="text-purple-600 font-bold text-sm">3</span>
+          </div>
+          <h3 className="text-lg font-bold text-[#333333]">{t.messageAttach}</h3>
+        </div>
+
+        <div className="space-y-5">
+          {/* 留言 */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-1.5">
+              {t.message} <span className="text-red-500">*</span>
+            </label>
+            <textarea
+              {...form.register('message')}
+              rows={5}
+              placeholder={t.messagePlaceholder}
+              className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-[#2873F5] focus:ring-2 focus:ring-[#2873F5]/20 outline-none transition-all text-base resize-none"
+            />
+            {form.formState.errors.message && (
+              <p className="mt-1 text-sm text-red-500 flex items-center gap-1">
+                <AlertCircle className="w-4 h-4" /> {form.formState.errors.message.message}
+              </p>
+            )}
+          </div>
+
+          {/* 附件上傳 */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">{t.attachment}</label>
+            <div
+              onClick={() => fileInputRef.current?.click()}
+              className="border-2 border-dashed border-gray-200 rounded-xl p-6 text-center hover:border-[#2873F5] hover:bg-blue-50/30 transition-all cursor-pointer"
+            >
+              <input
+                ref={fileInputRef}
+                type="file"
+                multiple
+                accept=".pdf,.ai,.psd,.png,.jpg,.jpeg,.zip,.rar"
+                className="hidden"
+                onChange={handleFileChange}
+              />
+              <Upload className="w-8 h-8 text-gray-400 mx-auto mb-2" />
+              <p className="text-sm text-gray-500">{t.attachmentNote}</p>
+            </div>
+
+            {files.length > 0 && (
+              <div className="mt-3 space-y-2">
+                {files.map((file, idx) => (
+                  <div key={idx} className="flex items-center justify-between bg-gray-50 rounded-lg px-3 py-2">
+                    <div className="flex items-center gap-2 min-w-0">
+                      <Paperclip className="w-4 h-4 text-gray-400 flex-shrink-0" />
+                      <span className="text-sm text-gray-600 truncate">{file.name}</span>
+                      <span className="text-xs text-gray-400 flex-shrink-0">({(file.size / 1024 / 1024).toFixed(1)}MB)</span>
+                    </div>
+                    <button type="button" onClick={() => removeFile(idx)} className="p-1 hover:bg-gray-200 rounded transition-colors flex-shrink-0">
+                      <X className="w-4 h-4 text-gray-500" />
+                    </button>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+
+      {/* 提交按鈕 */}
+      <div className="flex flex-col items-center gap-4">
+        {submitStatus === 'error' && (
+          <div className="flex items-center gap-2 text-red-500 bg-red-50 px-4 py-2 rounded-lg">
+            <AlertCircle className="w-5 h-5" />
+            <span className="text-sm font-medium">發送失敗，請稍後重試</span>
+          </div>
+        )}
+        <button
+          type="submit"
+          disabled={isSubmitting}
+          className="w-full md:w-auto md:min-w-[280px] py-4 px-10 bg-gradient-to-r from-[#2873F5] to-[#1E5FD1] hover:from-[#1E5FD1] hover:to-[#2873F5] text-white rounded-xl font-bold text-lg transition-all shadow-lg hover:shadow-xl disabled:opacity-60 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+        >
+          {isSubmitting ? <Loader2 className="w-5 h-5 animate-spin" /> : <Send className="w-5 h-5" />}
+          {isSubmitting ? t.submitting : t.submit}
+        </button>
+      </div>
+    </form>
   );
 }

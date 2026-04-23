@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { QuoteForm } from '@/components/quote/QuoteForm';
-import { FileUploader } from '@/components/quote/FileUploader';
 import { JsonLd } from '@/components/JsonLd';
 import { generateQuotePageMetadata } from '@/lib/seo';
 import { Locale } from '@/lib/seo';
@@ -24,19 +23,24 @@ export default function QuotePage({ params }: QuotePageProps) {
   const { locale } = params;
   const safeLocale = locale as Locale;
 
-  const pageTitle =
-    locale === 'zh-hk'
-      ? '即時報價'
-      : locale === 'en'
-      ? 'Instant Quote'
-      : '見積もり';
-
-  const pageSubtitle =
-    locale === 'zh-hk'
-      ? '上傳檔案或選擇參數，快速獲取印刷報價'
-      : locale === 'en'
-      ? 'Upload your file or select parameters to get a quick printing quote'
-      : 'ファイルをアップロードするか、パラメータを選択して素早く見積もりを取得';
+  const translations = {
+    'zh-hk': {
+      pageTitle: '免費獲取報價',
+      pageSubtitle: '填寫下方表單，我們將在24小時內以郵件回覆專屬報價',
+      features: ['24小時內回覆', '免費設計諮詢', '專屬客戶經理', '量大價優'],
+    },
+    en: {
+      pageTitle: 'Get a Free Quote',
+      pageSubtitle: 'Fill out the form below and we will send you a customized quote via email within 24 hours',
+      features: ['Reply within 24h', 'Free design consultation', 'Dedicated account manager', 'Volume discounts'],
+    },
+    ja: {
+      pageTitle: '無料お見積もり',
+      pageSubtitle: '以下のフォームにご記入いただければ、24時間以内にメールで専用の見積もりをご返信いたします',
+      features: ['24時間以内に返信', '無料デザイン相談', '専任担当者', '大口割引'],
+    },
+  };
+  const t = translations[locale as keyof typeof translations] || translations['zh-hk'];
 
   const jsonLdData = {
     '@context': 'https://schema.org',
@@ -52,26 +56,10 @@ export default function QuotePage({ params }: QuotePageProps) {
         ],
       },
       {
-        '@type': 'Product',
-        name: 'Printing Service',
-        description:
-          locale === 'zh-hk'
-            ? '專業印刷服務，支援多種材料與後處理'
-            : locale === 'en'
-            ? 'Professional printing services with multiple materials and post-processing'
-            : '複数の材料と後加工に対応したプロフェッショナル印刷サービス',
-        brand: {
-          '@type': 'Brand',
-          name: 'ZPrintPro',
-        },
-        offers: {
-          '@type': 'Offer',
-          url: `https://zprintpro.com/${locale}/quote`,
-          priceCurrency: 'HKD',
-          price: '5.00',
-          availability: 'https://schema.org/InStock',
-          priceValidUntil: '2026-12-31',
-        },
+        '@type': 'ContactPage',
+        url: `https://zprintpro.com/${locale}/quote`,
+        name: t.pageTitle,
+        description: t.pageSubtitle,
       },
       {
         '@type': 'BreadcrumbList',
@@ -85,49 +73,8 @@ export default function QuotePage({ params }: QuotePageProps) {
           {
             '@type': 'ListItem',
             position: 2,
-            name: locale === 'zh-hk' ? '即時報價' : locale === 'en' ? 'Quote' : '見積もり',
+            name: t.pageTitle,
             item: `https://zprintpro.com/${locale}/quote`,
-          },
-        ],
-      },
-      {
-        '@type': 'FAQPage',
-        mainEntity: [
-          {
-            '@type': 'Question',
-            name:
-              locale === 'zh-hk'
-                ? '印刷報價需要多久？'
-                : locale === 'en'
-                ? 'How long does it take to get a printing quote?'
-                : '印刷の見積もりにはどのくらい時間がかかりますか？',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text:
-                locale === 'zh-hk'
-                  ? '參數報價即時生成，上傳檔案後複雜訂單通常需 2 小時內回覆。'
-                  : locale === 'en'
-                  ? 'Parametric quotes are instant. For uploaded files, complex orders are usually quoted within 2 hours.'
-                  : 'パラメータ見積もりは即座に生成されます。ファイルをアップロードした場合、複雑な注文は通常2時間以内にお見積もりします。',
-            },
-          },
-          {
-            '@type': 'Question',
-            name:
-              locale === 'zh-hk'
-                ? '支援哪些檔案格式？'
-                : locale === 'en'
-                ? 'What file formats are supported?'
-                : 'どのファイル形式に対応していますか？',
-            acceptedAnswer: {
-              '@type': 'Answer',
-              text:
-                locale === 'zh-hk'
-                  ? '支援 PDF、AI、PSD、PNG、JPG 等常見格式。'
-                  : locale === 'en'
-                  ? 'We support PDF, AI, PSD, PNG, and JPG formats.'
-                  : 'PDF、AI、PSD、PNG、JPGに対応しています。',
-            },
           },
         ],
       },
@@ -137,34 +84,29 @@ export default function QuotePage({ params }: QuotePageProps) {
   return (
     <>
       <JsonLd data={jsonLdData} />
-      <main className="container mx-auto max-w-3xl px-4 py-12">
-        <div className="mb-8 text-center">
-          <h1 className="text-3xl font-bold tracking-tight">{pageTitle}</h1>
-          <p className="mt-2 text-muted-foreground">{pageSubtitle}</p>
-        </div>
+      <main className="min-h-screen bg-gray-50 py-12 md:py-16">
+        <div className="max-w-[800px] mx-auto px-4 sm:px-6">
+          {/* Header */}
+          <div className="text-center mb-10">
+            <h1 className="text-3xl md:text-4xl font-bold text-[#333333] mb-3">
+              {t.pageTitle}
+            </h1>
+            <p className="text-gray-500 text-lg">{t.pageSubtitle}</p>
+            <div className="flex flex-wrap justify-center gap-3 mt-5">
+              {t.features.map((f) => (
+                <span
+                  key={f}
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-50 text-blue-700 rounded-full text-sm font-medium"
+                >
+                  <span className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
+                  {f}
+                </span>
+              ))}
+            </div>
+          </div>
 
-        <div className="grid gap-8 md:grid-cols-2">
-          <section aria-label={locale === 'zh-hk' ? '參數報價' : locale === 'en' ? 'Parametric Quote' : 'パラメータ見積もり'}>
-            <h2 className="mb-4 text-lg font-semibold">
-              {locale === 'zh-hk'
-                ? '參數報價'
-                : locale === 'en'
-                ? 'Parametric Quote'
-                : 'パラメータ見積もり'}
-            </h2>
-            <QuoteForm locale={safeLocale} />
-          </section>
-
-          <section aria-label={locale === 'zh-hk' ? '上傳檔案' : locale === 'en' ? 'Upload File' : 'ファイルアップロード'}>
-            <h2 className="mb-4 text-lg font-semibold">
-              {locale === 'zh-hk'
-                ? '上傳檔案'
-                : locale === 'en'
-                ? 'Upload File'
-                : 'ファイルアップロード'}
-            </h2>
-            <FileUploader locale={safeLocale} />
-          </section>
+          {/* Form */}
+          <QuoteForm locale={safeLocale} />
         </div>
       </main>
     </>
