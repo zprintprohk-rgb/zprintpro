@@ -82,7 +82,7 @@ export default function CategoryPage({
 
   // 分页 - 每页最多6个SKU（引流分类不赚钱，不展示太多）
   const currentPage = parseInt(searchParams.page || '1', 10);
-  const productsPerPage = 9;
+  const productsPerPage = 12;
   const totalPages = Math.ceil(categoryProducts.length / productsPerPage);
   const paginatedProducts = categoryProducts.slice(
     (currentPage - 1) * productsPerPage,
@@ -265,7 +265,7 @@ export default function CategoryPage({
                 </select>
               </div>
 
-              {/* 产品网格 - 3列，最多9条单页显示 */}
+              {/* 产品网格 - 3列，最多12条单页显示 */}
               {paginatedProducts.length > 0 ? (
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                   {paginatedProducts.map((product, index) => (
@@ -283,7 +283,7 @@ export default function CategoryPage({
                 </div>
               )}
 
-              {/* 分页 — 仅当超过9条时显示 */}
+              {/* 分页 — 仅当超过12条时显示 */}
               {totalPages > 1 && (
                 <div className="mt-8">
                   <Pagination
@@ -304,27 +304,32 @@ export default function CategoryPage({
         {/* Pillar Content — SEO支柱内容区 */}
         <CategoryPillarContent locale={locale} categorySlug={slug} />
 
-        {/* 地區化內容區域 */}
-        <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 pb-12 pt-8 border-t border-gray-200 space-y-8">
-          <div>
-            <h3 className="text-lg font-bold text-[#333333] mb-4 text-center">
-              {locale === 'zh-hk' ? '為何選擇智印港？' : locale === 'en' ? 'Why Choose ZprintPro?' : 'なぜZprintProを選ぶ？'}
-            </h3>
-            <RegionalTrustBadges locale={locale} />
-          </div>
-          <div className="bg-blue-50 rounded-xl p-6">
-            <p className="text-gray-600 text-sm leading-relaxed">
-              <RegionalContent locale={locale} type="expertIntro" />
-            </p>
-          </div>
-          <div className="text-center space-y-3">
-            <p className="text-sm text-gray-500">
-              <RegionalContent locale={locale} type="shipping" />
-            </p>
-            <RegionalCta locale={locale} />
-            <p className="text-xs text-gray-400">
-              <RegionalContent locale={locale} type="pricingNote" />
-            </p>
+        {/* 地區化內容區域 — CTA + 信任信號 */}
+        <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 pb-16 pt-12">
+          <div className="bg-gradient-to-b from-white to-blue-50/50 rounded-3xl border border-blue-100 p-8 md:p-12 space-y-8">
+            {/* 主標題 */}
+            <div className="text-center">
+              <h3 className="text-2xl md:text-3xl font-bold text-[#333333] mb-5">
+                {locale === 'zh-hk' ? '為何選擇智印港？' : locale === 'en' ? 'Why Choose ZprintPro?' : 'なぜZprintProを選ぶ？'}
+              </h3>
+              <RegionalTrustBadges locale={locale} />
+            </div>
+            {/* 專家介紹 */}
+            <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-blue-100/60">
+              <p className="text-gray-600 text-base md:text-lg leading-relaxed text-center">
+                <RegionalContent locale={locale} type="expertIntro" />
+              </p>
+            </div>
+            {/* CTA區 */}
+            <div className="text-center space-y-4">
+              <p className="text-base md:text-lg text-gray-500">
+                <RegionalContent locale={locale} type="shipping" />
+              </p>
+              <RegionalCta locale={locale} />
+              <p className="text-sm text-gray-400">
+                <RegionalContent locale={locale} type="pricingNote" />
+              </p>
+            </div>
           </div>
         </div>
       </main>

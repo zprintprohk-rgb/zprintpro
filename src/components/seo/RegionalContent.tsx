@@ -63,10 +63,10 @@ export function RegionalCta({ locale, productSlug, className = '' }: RegionalCta
   return (
     <a
       href={href}
-      className={`inline-flex flex-col items-center justify-center px-8 py-4 bg-[#2873F5] hover:bg-[#1E5FD1] text-white rounded-xl transition-colors shadow-lg hover:shadow-xl ${className}`}
+      className={`inline-flex flex-col items-center justify-center px-10 py-5 bg-[#2873F5] hover:bg-[#1E5FD1] text-white rounded-xl transition-colors shadow-lg hover:shadow-xl ${className}`}
     >
-      <span className="text-lg font-bold">{text}</span>
-      <span className="text-sm text-white/80 mt-1">{subtext}</span>
+      <span className="text-xl font-bold">{text}</span>
+      <span className="text-base text-white/80 mt-1.5">{subtext}</span>
     </a>
   );
 }
@@ -99,7 +99,7 @@ export function RegionalTrustBadges({ locale }: { locale: Locale }) {
       {badges.map((badge) => (
         <span
           key={badge.label}
-          className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-50 text-blue-700 rounded-full text-sm font-medium"
+          className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-700 rounded-full text-base font-semibold"
         >
           <span>{badge.icon}</span>
           <span>{badge.label}</span>
