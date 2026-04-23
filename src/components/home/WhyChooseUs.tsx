@@ -208,14 +208,14 @@ export function WhyChooseUs({ locale }: WhyChooseUsProps) {
           {t.features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white rounded-xl border border-gray-100 p-5 hover:shadow-md transition-shadow text-center"
+              className="group bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-xl hover:-translate-y-1 hover:border-gray-200 transition-all duration-300 text-center"
             >
-              <div className={`w-12 h-12 ${feature.bgColor} rounded-xl flex items-center justify-center mx-auto mb-3`}>
-                <feature.icon className={`w-6 h-6 ${feature.iconColor}`} />
+              <div className={`w-14 h-14 ${feature.bgColor} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                <feature.icon className={`w-7 h-7 ${feature.iconColor}`} />
               </div>
-              <h3 className="font-semibold text-[#333333] text-sm mb-1">{feature.title}</h3>
-              <p className={`text-xs font-medium ${feature.subtitleColor} mb-2`}>{feature.subtitle}</p>
-              <p className="text-xs text-gray-500 leading-relaxed">{feature.description}</p>
+              <h3 className="font-bold text-[#333333] text-lg mb-1.5">{feature.title}</h3>
+              <p className={`text-sm font-semibold ${feature.subtitleColor} mb-3`}>{feature.subtitle}</p>
+              <p className="text-sm text-gray-500 leading-relaxed">{feature.description}</p>
             </div>
           ))}
         </div>

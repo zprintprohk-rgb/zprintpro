@@ -150,27 +150,27 @@ export function KnowledgeSection({ locale }: KnowledgeSectionProps) {
     <section className="py-16 bg-gray-50">
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mb-8">
+        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mb-10">
           <div>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#333333]">{t.title}</h2>
-            <p className="text-gray-500 mt-1">{t.subtitle}</p>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#333333]">{t.title}</h2>
+            <p className="text-base text-gray-500 mt-2">{t.subtitle}</p>
           </div>
           <Link
             href={`${localePrefix}/blog/`}
-            className="inline-flex items-center gap-1 text-[#2873F5] hover:text-[#1E5FD1] font-medium transition-colors text-sm"
+            className="inline-flex items-center gap-1.5 text-[#2873F5] hover:text-[#1E5FD1] font-semibold transition-colors text-base"
           >
             {t.viewMore}
-            <ArrowRight className="w-4 h-4" />
+            <ArrowRight className="w-5 h-5" />
           </Link>
         </div>
 
         {/* Articles Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {t.articles.map((article, index) => (
             <Link
               key={index}
               href={`${localePrefix}${article.href}`}
-              className="group bg-white rounded-xl border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-300"
+              className="group bg-white rounded-2xl border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 hover:border-gray-200 transition-all duration-300"
             >
               {/* Image */}
               <div className="aspect-[16/10] relative overflow-hidden">
@@ -184,20 +184,20 @@ export function KnowledgeSection({ locale }: KnowledgeSectionProps) {
               </div>
 
               {/* Content */}
-              <div className="p-4">
-                <div className="flex items-center gap-2 mb-2">
-                  <span className={`inline-block px-2 py-0.5 text-xs font-medium rounded ${article.tagColor}`}>
+              <div className="p-5">
+                <div className="flex items-center gap-2.5 mb-3">
+                  <span className={`inline-block px-2.5 py-1 text-sm font-semibold rounded-md ${article.tagColor}`}>
                     {article.tag}
                   </span>
-                  <span className="flex items-center gap-1 text-xs text-gray-400">
-                    <Calendar className="w-3 h-3" />
+                  <span className="flex items-center gap-1 text-sm text-gray-400">
+                    <Calendar className="w-3.5 h-3.5" />
                     {article.date}
                   </span>
                 </div>
-                <h3 className="font-semibold text-[#333333] text-sm group-hover:text-[#2873F5] transition-colors line-clamp-2 mb-1">
+                <h3 className="font-bold text-[#333333] text-base group-hover:text-[#2873F5] transition-colors line-clamp-2 mb-2 leading-snug">
                   {article.title}
                 </h3>
-                <p className="text-xs text-gray-500 line-clamp-2">
+                <p className="text-sm text-gray-500 line-clamp-2 leading-relaxed">
                   {article.description}
                 </p>
               </div>
