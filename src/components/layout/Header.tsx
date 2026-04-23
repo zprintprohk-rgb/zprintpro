@@ -24,6 +24,7 @@ const translations = {
     home: '首頁',
     knowledge: '印刷知識',
     contact: '聯絡我們',
+    getQuote: '免費報價',
     categories: {
       'paper-bags': '紙袋印刷',
       'flyers': '宣傳單張',
@@ -46,6 +47,7 @@ const translations = {
     home: 'Home',
     knowledge: 'Knowledge',
     contact: 'Contact Us',
+    getQuote: 'Get Quote',
     categories: {
       'paper-bags': 'Paper Bags',
       'flyers': 'Flyers',
@@ -68,6 +70,7 @@ const translations = {
     home: 'ホーム',
     knowledge: '印刷知識',
     contact: 'お問い合わせ',
+    getQuote: '見積もり',
     categories: {
       'paper-bags': '紙袋印刷',
       'flyers': 'チラシ印刷',
@@ -339,6 +342,9 @@ export function Header({ locale }: HeaderProps) {
               </form>
               <div className="flex items-center gap-3 lg:gap-5">
                 <Link href={`${localePrefix}/contact/`} className="hidden sm:flex items-center gap-1.5 text-gray-600 hover:text-[#2873F5] transition-colors text-sm"><User className="w-5 h-5" /><span>{t.login}</span></Link>
+                <Link href={`${localePrefix}/quote/`} className="hidden md:flex items-center gap-1.5 px-4 py-2 bg-[#F87314] hover:bg-[#E56203] text-white rounded-lg transition-colors text-sm font-bold">
+                  <span>{t.getQuote}</span>
+                </Link>
                 <Link href={`${localePrefix}/contact/`} className="flex items-center gap-1.5 text-gray-600 hover:text-[#2873F5] transition-colors text-sm">
                   <div className="relative"><ShoppingCart className="w-5 h-5" /><span className="absolute -top-2 -right-2 w-4 h-4 bg-[#F87314] text-white text-[10px] rounded-full flex items-center justify-center font-bold">0</span></div>
                   <span className="hidden sm:inline">{t.cart}</span>
@@ -456,6 +462,12 @@ export function Header({ locale }: HeaderProps) {
               </div>
 
               <Link href={`${localePrefix}/contact/`} className={navLinkClass(pathname.includes('/contact'))}>{t.contact}</Link>
+              <Link
+                href={`${localePrefix}/quote/`}
+                className="h-full px-5 flex items-center justify-center text-[15px] font-bold bg-white text-[#2873F5] hover:bg-blue-50 transition-colors rounded-sm mx-1"
+              >
+                {t.getQuote}
+              </Link>
             </div>
           </div>
         </nav>
@@ -477,6 +489,7 @@ export function Header({ locale }: HeaderProps) {
             ))}
             <Link href={`${localePrefix}/blog/`} className="block font-medium text-[#333333] py-2">{t.knowledge}</Link>
             <Link href={`${localePrefix}/contact/`} className="block font-medium text-[#333333] py-2">{t.contact}</Link>
+            <Link href={`${localePrefix}/quote/`} className="block font-bold text-[#2873F5] bg-blue-50 rounded-lg py-2.5 px-4 text-center">{t.getQuote}</Link>
             <div className="flex gap-2 pt-4 border-t">
               <Link href="/zh-hk/" className={`px-4 py-2 rounded text-sm ${locale === 'zh-hk' ? 'bg-[#2873F5] text-white' : 'border border-gray-200'}`}>繁</Link>
               <Link href="/en/" className={`px-4 py-2 rounded text-sm ${locale === 'en' ? 'bg-[#2873F5] text-white' : 'border border-gray-200'}`}>EN</Link>

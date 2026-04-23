@@ -6,13 +6,19 @@ import Link from 'next/link';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Locale } from '@/lib/seo';
 
+function getQuoteHref(slideHref: string): string {
+  // /product/xxx/ → /quote/?product=xxx
+  const match = slideHref.match(/^\/product\/(.+?)\/$/);
+  return match ? `/quote/?product=${match[1]}` : slideHref;
+}
+
 interface HeroBannerProps {
   locale: Locale;
 }
 
 const translations = {
   'zh-hk': {
-    cta: '立即訂製',
+    cta: '獲取報價',
     ctaArrow: '→',
     browseAll: '瀏覽全部產品',
     fromPrice: '低至',
@@ -25,7 +31,7 @@ const translations = {
     ],
   },
   en: {
-    cta: 'Order Now',
+    cta: 'Get Quote',
     ctaArrow: '→',
     browseAll: 'Browse All Products',
     fromPrice: 'From',
@@ -38,7 +44,7 @@ const translations = {
     ],
   },
   ja: {
-    cta: '今すぐ注文',
+    cta: '見積もり',
     ctaArrow: '→',
     browseAll: 'すべての製品を見る',
     fromPrice: '最低',
@@ -100,7 +106,7 @@ export function HeroBanner({ locale }: HeroBannerProps) {
                   <p className="text-white/80 text-base md:text-lg mb-6 max-w-lg">{slide.subtitle}</p>
                   <div className="flex items-center gap-3">
                     <Link
-                      href={`${localePrefix}${slide.href}`}
+                      href={`${localePrefix}${getQuoteHref(slide.href)}`}
                       className="inline-flex items-center justify-center px-6 py-3 bg-[#F87314] hover:bg-[#E56203] text-white font-semibold rounded-md transition-colors"
                     >
                       {t.cta} {t.ctaArrow}

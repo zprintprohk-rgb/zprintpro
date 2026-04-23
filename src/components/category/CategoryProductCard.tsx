@@ -42,20 +42,17 @@ const categoryFallbacks: Record<string, { icon: typeof Box; bgColor: string; ico
 const translations = {
   'zh-hk': {
     hot: '熱銷',
-    orderNow: '立即訂購',
-    // priceNote 已移除，保持界面簡潔
+    getQuote: '獲取報價',
     from: '起',
   },
   'en': {
     hot: 'Hot',
-    orderNow: 'Order Now',
-    // priceNote removed for cleaner UI
+    getQuote: 'Get Quote',
     from: 'From',
   },
   'ja': {
     hot: '人気',
-    orderNow: '注文する',
-    // priceNote removed for cleaner UI
+    getQuote: '見積もり',
     from: 'から',
   },
 };
@@ -92,7 +89,7 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
 
   return (
     <Link
-      href={`${localePrefix}/product/${product.slug}/`}
+      href={`${localePrefix}/quote/?product=${product.slug}`}
       className="group bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col"
     >
       {/* 顶部彩色条 */}
@@ -178,7 +175,7 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
         <span
           className="block w-full text-center py-2.5 bg-[#3090FF] text-white rounded-lg text-sm font-medium hover:bg-[#1E5FD1] transition-colors mt-auto"
         >
-          {t.orderNow}
+          {t.getQuote}
         </span>
       </div>
     </Link>

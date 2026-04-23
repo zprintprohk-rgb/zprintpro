@@ -1,11 +1,12 @@
 'use client';
 
-import { useState, useRef, useCallback } from 'react';
+import { useState, useRef, useCallback, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
+// import { useSearchParams } from 'next/navigation'; // 静态导出不能用 useSearchParams，改用 window.location
 import { Send, Paperclip, CheckCircle, AlertCircle, Upload, X, Loader2 } from 'lucide-react';
-import { categories } from '@/data/products';
+import { categories, products, getProductBySlug } from '@/data/products';
 
 const quoteSchema = z.object({
   name: z.string().optional(),
@@ -28,11 +29,57 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [files, setFiles] = useState<File[]>([]);
   const fileInputRef = useRef<HTMLInputElement>(null);
+  const [productSlug, setProductSlug] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      setProductSlug(params.get('product'));
+    }
+  }, []);
+
+  const prefillProduct = productSlug ? getProductBySlug(productSlug) : null;
+  const prefillCategory = prefillProduct
+    ? (locale === 'zh-hk' ? prefillProduct.name : locale === 'en' ? (prefillProduct.nameEn || prefillProduct.name) : (prefillProduct.nameJa || prefillProduct.name))
+    : '';
 
   const form = useForm<QuoteFormValues>({
     resolver: zodResolver(quoteSchema),
-    defaultValues: { name: '', phone: '', email: '', category: '', quantity: '', size: '', message: '' },
+    defaultValues: {
+      name: '',
+      phone: '',
+      email: '',
+      category: prefillCategory,
+      quantity: prefillProduct?.minQuantity ? String(prefillProduct.minQuantity) : '',
+      size: '',
+      message: prefillProduct
+        ? (locale === 'zh-hk'
+            ? `我想查詢 ${prefillProduct.name} 的報價，請提供更多詳情。`
+            : locale === 'en'
+            ? `I would like to get a quote for ${prefillProduct.nameEn || prefillProduct.name}. Please provide more details.`
+            : `${prefillProduct.nameJa || prefillProduct.name}の見積もりをお願いしたいです。詳細を教えてください。`)
+        : '',
+    },
   });
+
+  useEffect(() => {
+    if (prefillCategory) {
+      form.setValue('category', prefillCategory);
+    }
+    if (prefillProduct?.minQuantity) {
+      form.setValue('quantity', String(prefillProduct.minQuantity));
+    }
+    const msg = prefillProduct
+      ? (locale === 'zh-hk'
+          ? `我想查詢 ${prefillProduct.name} 的報價，請提供更多詳情。`
+          : locale === 'en'
+          ? `I would like to get a quote for ${prefillProduct.nameEn || prefillProduct.name}. Please provide more details.`
+          : `${prefillProduct.nameJa || prefillProduct.name}の見積もりをお願いしたいです。詳細を教えてください。`)
+      : '';
+    if (msg) {
+      form.setValue('message', msg);
+    }
+  }, [prefillCategory, prefillProduct, form, locale]);
 
   const labels = {
     'zh-hk': {

@@ -8,6 +8,7 @@
 'use client';
 
 import { useState, useMemo } from 'react';
+import { useRouter } from 'next/navigation';
 import { Product } from '@/data/products';
 import { Locale } from '@/lib/seo';
 import { getProductTitle } from '@/data/products';
@@ -44,7 +45,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
       totalPrice: '參考總價',
       getQuote: '聯繫客服確認價格',
       addToCart: '加入購物車',
-      buyNow: '立即訂購',
+      getQuoteBtn: '獲取報價',
       uploadDesign: '上傳設計稿',
       designNote: '支持 PDF, AI, PSD, PNG, JPG 格式（最大50MB）',
       deliveryTime: '預計交貨',
@@ -66,7 +67,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
       totalPrice: 'Est. Total Price',
       getQuote: 'Contact Us for Pricing',
       addToCart: 'Add to Cart',
-      buyNow: 'Order Now',
+      getQuoteBtn: 'Get Quote',
       uploadDesign: 'Upload Design',
       designNote: 'Support PDF, AI, PSD, PNG, JPG (max 50MB)',
       deliveryTime: 'Est. Delivery',
@@ -88,7 +89,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
       totalPrice: '参考合計',
       getQuote: 'お問い合わせで価格確認',
       addToCart: 'カートに追加',
-      buyNow: '注文する',
+      getQuoteBtn: '見積もり',
       uploadDesign: 'デザインをアップロード',
       designNote: 'PDF, AI, PSD, PNG, JPG対応（最大50MB）',
       deliveryTime: '予定納期',
@@ -104,6 +105,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
   };
 
   const t = translations[locale];
+  const router = useRouter();
 
   // 计算价格
   const calculatedPrice = useMemo(() => {
@@ -439,11 +441,11 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
               {t.addToCart}
             </button>
             <button
-              onClick={handleWhatsApp}
+              onClick={() => router.push(`/${locale}/quote/?product=${product.slug}`)}
               className="flex-1 py-2.5 bg-white/10 text-white rounded-lg font-medium hover:bg-white/20 transition-colors text-sm flex items-center justify-center gap-1.5"
             >
               <Zap className="w-4 h-4" />
-              {t.buyNow}
+              {t.getQuoteBtn}
             </button>
           </div>
         </div>

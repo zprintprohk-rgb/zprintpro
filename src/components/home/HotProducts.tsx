@@ -19,7 +19,7 @@ const translations = {
     subtitle: '專業品質，價格透明，快速交貨',
     viewAll: '查看全部產品',
     categoryTitle: '產品分類',
-    orderNow: '立即訂購',
+    getQuote: '獲取報價',
     hotBadge: '熱銷',
     popular: '熱門',
     enterpriseCta: '企業批量訂單',
@@ -35,7 +35,7 @@ const translations = {
     subtitle: 'Professional quality, transparent pricing, fast delivery',
     viewAll: 'View All Products',
     categoryTitle: 'Categories',
-    orderNow: 'Order Now',
+    getQuote: 'Get Quote',
     hotBadge: 'Hot',
     popular: 'Popular',
     enterpriseCta: 'Enterprise Bulk Orders',
@@ -51,7 +51,7 @@ const translations = {
     subtitle: 'プロ品質、透明な価格、迅速な納品',
     viewAll: 'すべての製品を見る',
     categoryTitle: 'カテゴリー',
-    orderNow: '今すぐ注文',
+    getQuote: '見積もり',
     hotBadge: '人気',
     popular: '人気',
     enterpriseCta: '企業向け大口注文',
@@ -263,10 +263,10 @@ export function HotProducts({ locale }: HotProductsProps) {
                         </div>
                       )}
                       <Link
-                        href={`${localePrefix}/product/${product.slug}/`}
+                        href={`${localePrefix}/quote/?product=${product.slug}`}
                         className="mt-3 w-full inline-flex items-center justify-center py-2.5 bg-[#3090FF] hover:bg-[#1E5FD1] text-white text-sm font-medium rounded-lg transition-colors"
                       >
-                        {t.orderNow}
+                        {t.getQuote}
                       </Link>
                     </div>
                   </div>
