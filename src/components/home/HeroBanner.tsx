@@ -7,9 +7,9 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Locale } from '@/lib/seo';
 
 function getQuoteHref(slideHref: string): string {
-  // /product/xxx/ → /quote/?product=xxx
+  // /product/xxx/ → /contact/?product=xxx
   const match = slideHref.match(/^\/product\/(.+?)\/$/);
-  return match ? `/quote/?product=${match[1]}` : slideHref;
+  return match ? `/contact/?product=${match[1]}` : slideHref;
 }
 
 interface HeroBannerProps {

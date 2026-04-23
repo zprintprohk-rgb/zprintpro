@@ -89,7 +89,7 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
 
   return (
     <Link
-      href={`${localePrefix}/quote/?product=${product.slug}`}
+      href={`${localePrefix}/contact/?product=${product.slug}`}
       className="group bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col"
     >
       {/* 顶部彩色条 */}

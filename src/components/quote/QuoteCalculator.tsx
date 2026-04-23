@@ -441,7 +441,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
               {t.addToCart}
             </button>
             <button
-              onClick={() => router.push(`/${locale}/quote/?product=${product.slug}`)}
+              onClick={() => router.push(`/${locale}/contact/?product=${product.slug}`)}
               className="flex-1 py-2.5 bg-white/10 text-white rounded-lg font-medium hover:bg-white/20 transition-colors text-sm flex items-center justify-center gap-1.5"
             >
               <Zap className="w-4 h-4" />

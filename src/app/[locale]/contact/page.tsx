@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { Locale, siteConfig, generateBusinessJsonLd } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
+import { QuoteForm } from '@/components/quote/QuoteForm';
 
 interface ContactPageProps {
   params: { locale: string };
@@ -8,10 +9,10 @@ interface ContactPageProps {
 
 const translations = {
   'zh-hk': {
-    title: '聯絡我們 | 智印港 ZprintPro',
-    description: '聯絡智印港專業印刷團隊，獲取免費報價和印刷建議。電話/WhatsApp: +86 181 2638 0255',
-    h1: '聯絡我們',
-    subtitle: '智印港專業團隊隨時為您服務',
+    title: '聯絡我們 · 免費獲取報價 | 智印港 ZprintPro',
+    description: '聯絡智印港專業印刷團隊，填寫表單獲取免費報價。電話/WhatsApp: +86 181 2638 0255',
+    h1: '聯絡我們 · 免費獲取報價',
+    subtitle: '智印港專業團隊隨時為您服務，24小時內郵件回覆',
     name: '唐先生',
     role: '銷售經理｜智印港',
     phone: '電話 / WhatsApp',
@@ -23,12 +24,15 @@ const translations = {
     addressValue: '香港觀塘成業街16號怡生工業中心',
     mapTitle: '我們的位置',
     cta: '立即 WhatsApp 查詢',
+    quoteTitle: '免費獲取報價',
+    quoteSubtitle: '填寫下方表單，我們將在24小時內以郵件回覆專屬報價',
+    features: ['24小時內回覆', '免費設計諮詢', '專屬客戶經理', '量大價優'],
   },
   en: {
-    title: 'Contact Us | ZprintPro',
-    description: 'Contact ZprintPro professional printing team for free quotes and advice. Phone/WhatsApp: +86 181 2638 0255',
-    h1: 'Contact Us',
-    subtitle: 'ZprintPro team is ready to assist you',
+    title: 'Contact Us · Get a Free Quote | ZprintPro',
+    description: 'Contact ZprintPro professional printing team, fill out the form for a free quote. Phone/WhatsApp: +86 181 2638 0255',
+    h1: 'Contact Us · Get a Free Quote',
+    subtitle: 'ZprintPro team is ready to assist you, reply via email within 24 hours',
     name: 'Mr. Tang',
     role: 'Sales Manager | ZprintPro',
     phone: 'Phone / WhatsApp',
@@ -40,12 +44,15 @@ const translations = {
     addressValue: '16 Shing Yip Street, Kwun Tong, Kowloon, Hong Kong',
     mapTitle: 'Our Location',
     cta: 'WhatsApp Us Now',
+    quoteTitle: 'Get a Free Quote',
+    quoteSubtitle: 'Fill out the form below and we will send you a customized quote via email within 24 hours',
+    features: ['Reply within 24h', 'Free design consultation', 'Dedicated account manager', 'Volume discounts'],
   },
   ja: {
-    title: 'お問い合わせ | ZprintPro',
-    description: 'ZprintProのプロ印刷チームにお問い合わせください。電話/WhatsApp: +86 181 2638 0255',
-    h1: 'お問い合わせ',
-    subtitle: 'ZprintProチームがお待ちしております',
+    title: 'お問い合わせ · 無料お見積もり | ZprintPro',
+    description: 'ZprintProのプロ印刷チームにお問い合わせください。フォームに記入して無料見積もりを取得。電話/WhatsApp: +86 181 2638 0255',
+    h1: 'お問い合わせ · 無料お見積もり',
+    subtitle: 'ZprintProチームがお待ちしております、24時間以内にメールで返信',
     name: 'タン氏',
     role: '営業マネージャー | ZprintPro',
     phone: '電話 / WhatsApp',
@@ -57,6 +64,9 @@ const translations = {
     addressValue: '香港観塘成業街16号怡生工業中心',
     mapTitle: 'アクセス',
     cta: '今すぐWhatsAppで問い合わせ',
+    quoteTitle: '無料お見積もり',
+    quoteSubtitle: '以下のフォームにご記入いただければ、24時間以内にメールで専用の見積もりをご返信いたします',
+    features: ['24時間以内に返信', '無料デザイン相談', '専任担当者', '大口割引'],
   },
 };
 
@@ -91,11 +101,13 @@ export default function ContactPage({ params }: ContactPageProps) {
     <main className="min-h-screen bg-gray-50 py-12">
       <JsonLd data={businessJsonLd} />
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-3xl md:text-4xl font-bold text-[#333333] mb-3">{t.h1}</h1>
           <p className="text-gray-500 text-lg">{t.subtitle}</p>
         </div>
 
+        {/* Contact Info + WhatsApp */}
         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-8">
             <div className="flex items-center gap-4 mb-6">
@@ -143,7 +155,7 @@ export default function ContactPage({ params }: ContactPageProps) {
           </div>
         </div>
 
-        {/* Address & Map Section */}
+        {/* Address & Map */}
         <div className="mt-8 grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-8">
             <h3 className="text-xl font-bold text-[#333333] mb-4">{t.addressLabel}</h3>
@@ -169,6 +181,26 @@ export default function ContactPage({ params }: ContactPageProps) {
               />
             </div>
           </div>
+        </div>
+
+        {/* Quote Form Section */}
+        <div className="mt-16 max-w-[800px] mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#333333] mb-3">{t.quoteTitle}</h2>
+            <p className="text-gray-500 text-lg">{t.quoteSubtitle}</p>
+            <div className="flex flex-wrap justify-center gap-3 mt-5">
+              {t.features.map((f) => (
+                <span
+                  key={f}
+                  className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-50 text-blue-700 rounded-full text-sm font-medium"
+                >
+                  <span className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
+                  {f}
+                </span>
+              ))}
+            </div>
+          </div>
+          <QuoteForm locale={locale} />
         </div>
       </div>
     </main>

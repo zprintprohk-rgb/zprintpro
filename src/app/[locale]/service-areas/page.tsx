@@ -189,7 +189,7 @@ export default function ServiceAreasPage({ params }: { params: { locale: Locale 
             <p className="text-lg md:text-xl text-blue-100 max-w-3xl">{t.subtitle}</p>
             <div className="mt-8 flex flex-wrap gap-4">
               <a
-                href={`/${locale}/quote/`}
+                href={`/${locale}/contact/`}
                 className="inline-flex items-center px-6 py-3 bg-white text-[#2873F5] font-semibold rounded-lg hover:bg-blue-50 transition-colors"
               >
                 {t.cta}

@@ -263,7 +263,7 @@ export function HotProducts({ locale }: HotProductsProps) {
                         </div>
                       )}
                       <Link
-                        href={`${localePrefix}/quote/?product=${product.slug}`}
+                        href={`${localePrefix}/contact/?product=${product.slug}`}
                         className="mt-3 w-full inline-flex items-center justify-center py-2.5 bg-[#3090FF] hover:bg-[#1E5FD1] text-white text-sm font-medium rounded-lg transition-colors"
                       >
                         {t.getQuote}
