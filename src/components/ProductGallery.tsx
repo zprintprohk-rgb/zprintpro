@@ -56,7 +56,7 @@ export function ProductGallery({ images, title }: ProductGalleryProps) {
               <button
                 key={index}
                 onClick={() => setCurrentImage(index)}
-                className={`w-16 h-16 flex-shrink-0 rounded-lg overflow-hidden border-2 transition-colors ${
+                className={`w-24 h-24 flex-shrink-0 rounded-lg overflow-hidden border-2 transition-colors ${
                   currentImage === index ? 'border-[#2873F5]' : 'border-gray-200 hover:border-gray-400'
                 }`}
               >

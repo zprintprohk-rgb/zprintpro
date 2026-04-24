@@ -33,6 +33,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
     finishing: product.variables?.finishings?.[0]?.value || 'none',
     quantity: product.variables?.quantities?.[0]?.value || (product.minQuantity || 100),
   });
+  const [activeTab, setActiveTab] = useState<'order' | 'quote'>('order');
 
   // 翻译
   const translations = {
@@ -47,6 +48,17 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
       addToCart: '加入購物車',
       getQuoteBtn: '聯繫客服確認價格',
       orderNow: '立即訂購',
+      freeQuote: '免費獲取報價',
+      orderTab: '訂購',
+      quoteTab: '報價',
+      qty: '總數量',
+      subtotal: '產品小計',
+      processing: '後加工',
+      designFee: '打稿費',
+      shippingLabel: '運費',
+      shippingNote: '結算時算價',
+      totalAmount: '應收金額',
+      estDelivery: '預計交貨期',
       uploadDesign: '上傳設計稿',
       designNote: '支持 PDF, AI, PSD, PNG, JPG 格式（最大50MB）',
       deliveryTime: '預計交貨',
@@ -70,6 +82,17 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
       addToCart: 'Add to Cart',
       getQuoteBtn: 'Contact for Price',
       orderNow: 'Order Now',
+      freeQuote: 'Get Free Quote',
+      orderTab: 'Order',
+      quoteTab: 'Quote',
+      qty: 'Quantity',
+      subtotal: 'Subtotal',
+      processing: 'Finishing',
+      designFee: 'Design Fee',
+      shippingLabel: 'Shipping',
+      shippingNote: 'Calculated at checkout',
+      totalAmount: 'Total Amount',
+      estDelivery: 'Est. Delivery',
       uploadDesign: 'Upload Design',
       designNote: 'Support PDF, AI, PSD, PNG, JPG (max 50MB)',
       deliveryTime: 'Est. Delivery',
@@ -93,6 +116,17 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
       addToCart: 'カートに追加',
       getQuoteBtn: '価格確認の問い合わせ',
       orderNow: '今すぐ注文',
+      freeQuote: '無料見積もり',
+      orderTab: '注文',
+      quoteTab: '見積',
+      qty: '数量',
+      subtotal: '小計',
+      processing: '後加工',
+      designFee: 'デザイン料',
+      shippingLabel: '送料',
+      shippingNote: '決済時に計算',
+      totalAmount: '合計金額',
+      estDelivery: '予定納期',
       uploadDesign: 'デザインをアップロード',
       designNote: 'PDF, AI, PSD, PNG, JPG対応（最大50MB）',
       deliveryTime: '予定納期',
@@ -405,50 +439,117 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
         </label>
       </div>
 
-      {/* ===== 价格显示区域 - 去色块参考价格 ===== */}
-      <div className="border border-gray-200 rounded-xl p-5">
-        <div className="flex items-center gap-2 mb-4">
-          <Zap className="w-5 h-5 text-[#2873F5]" />
-          <span className="font-semibold text-gray-900">{t.priceNote}</span>
-        </div>
-
-        <div className="flex items-baseline gap-2 mb-1">
-          <span className="text-gray-500 text-sm">{t.unitPrice}</span>
-          <span className="text-2xl font-bold text-[#F87314]">HK${calculatedPrice.unitPrice}</span>
-        </div>
-        <div className="flex items-baseline gap-2 mb-3">
-          <span className="text-gray-500 text-sm">{t.totalPrice}</span>
-          <span className="text-3xl font-extrabold text-[#F87314]">HK${calculatedPrice.totalPrice.toLocaleString()}</span>
-        </div>
-
-        <div className="text-sm text-gray-500 mb-4">
-          {t.deliveryTime}: 3-5 {t.days}
-        </div>
-
-        <p className="text-xs text-gray-400 leading-relaxed mb-4">
-          {t.priceNoteDetail}
-        </p>
-
-        {/* 操作按钮 */}
-        <div className="space-y-2">
+      {/* ===== 价格显示区域 - 订购/报价选项卡 ===== */}
+      <div className="border border-gray-200 rounded-xl overflow-hidden">
+        {/* 选项卡 */}
+        <div className="flex border-b border-gray-200">
           <button
-            onClick={() => router.push(`/${locale}/contact/?product=${product.slug}`)}
-            className="w-full py-3 bg-[#F87314] text-white rounded-lg font-bold hover:bg-[#E56203] transition-colors flex items-center justify-center gap-2"
+            onClick={() => setActiveTab('order')}
+            className={`flex-1 py-3 text-sm font-semibold transition-colors ${
+              activeTab === 'order'
+                ? 'bg-white text-[#333333] border-b-2 border-[#F87314]'
+                : 'bg-gray-50 text-gray-500 hover:bg-gray-100'
+            }`}
           >
-            <Zap className="w-5 h-5" />
-            {t.orderNow}
-          </button>
-          <button className="w-full py-2.5 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors text-sm flex items-center justify-center gap-1.5">
-            <ShoppingCart className="w-4 h-4" />
-            {t.addToCart}
+            {t.orderTab}
           </button>
           <button
-            onClick={handleWhatsApp}
-            className="w-full py-2.5 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors text-sm flex items-center justify-center gap-1.5"
+            onClick={() => setActiveTab('quote')}
+            className={`flex-1 py-3 text-sm font-semibold transition-colors ${
+              activeTab === 'quote'
+                ? 'bg-white text-[#333333] border-b-2 border-[#2873F5]'
+                : 'bg-gray-50 text-gray-500 hover:bg-gray-100'
+            }`}
           >
-            <MessageCircle className="w-4 h-4" />
-            {t.getQuoteBtn}
+            {t.quoteTab}
           </button>
+        </div>
+
+        <div className="p-5">
+          {activeTab === 'order' ? (
+            <div>
+              {/* 订购明细 */}
+              <div className="space-y-3 mb-5">
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-500">{t.qty}</span>
+                  <span className="font-medium text-gray-900">{config.quantity}</span>
+                </div>
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-500">{t.subtotal}</span>
+                  <span className="font-medium text-gray-900">HK${(product.basePrice * config.quantity).toFixed(2)}</span>
+                </div>
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-500">{t.processing}</span>
+                  <span className="font-medium text-gray-900">HK${(calculatedPrice.totalPrice - product.basePrice * config.quantity).toFixed(2)}</span>
+                </div>
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-500">{t.designFee}</span>
+                  <span className="font-medium text-gray-900">HK$0.00</span>
+                </div>
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-500">{t.shippingLabel}</span>
+                  <span className="font-medium text-gray-400">{t.shippingNote}</span>
+                </div>
+                <div className="border-t border-gray-200 pt-3">
+                  <div className="flex justify-between items-baseline">
+                    <span className="font-semibold text-gray-900">{t.totalAmount}</span>
+                    <span className="text-xl font-bold text-[#F87314]">HK${calculatedPrice.totalPrice.toLocaleString()}</span>
+                  </div>
+                </div>
+                <div className="text-xs text-gray-400">
+                  {t.estDelivery}: 3-5 {t.days}
+                </div>
+              </div>
+              {/* 订购按钮 */}
+              <div className="flex gap-3">
+                <button className="flex-1 py-2.5 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors text-sm flex items-center justify-center gap-1.5">
+                  <ShoppingCart className="w-4 h-4" />
+                  {t.addToCart}
+                </button>
+                <button
+                  onClick={() => router.push(`/${locale}/contact/?product=${product.slug}`)}
+                  className="flex-1 py-2.5 bg-[#F87314] text-white rounded-lg font-bold hover:bg-[#E56203] transition-colors text-sm flex items-center justify-center gap-1.5"
+                >
+                  <Zap className="w-4 h-4" />
+                  {t.orderNow}
+                </button>
+              </div>
+            </div>
+          ) : (
+            <div>
+              {/* 报价明细 */}
+              <div className="mb-5">
+                <div className="flex items-baseline gap-2 mb-2">
+                  <span className="text-gray-500 text-sm">{t.unitPrice}</span>
+                  <span className="text-2xl font-bold text-[#F87314]">HK${calculatedPrice.unitPrice}</span>
+                </div>
+                <div className="flex items-baseline gap-2 mb-3">
+                  <span className="text-gray-500 text-sm">{t.totalPrice}</span>
+                  <span className="text-3xl font-extrabold text-[#F87314]">HK${calculatedPrice.totalPrice.toLocaleString()}</span>
+                </div>
+                <div className="text-sm text-gray-500 mb-3">
+                  {t.deliveryTime}: 3-5 {t.days}
+                </div>
+                <p className="text-xs text-gray-400 leading-relaxed">
+                  {t.priceNoteDetail}
+                </p>
+              </div>
+              {/* 报价按钮 */}
+              <div className="flex gap-3">
+                <button className="flex-1 py-2.5 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors text-sm flex items-center justify-center gap-1.5">
+                  <ShoppingCart className="w-4 h-4" />
+                  {t.addToCart}
+                </button>
+                <button
+                  onClick={() => router.push(`/${locale}/contact/?product=${product.slug}`)}
+                  className="flex-1 py-2.5 bg-[#2873F5] text-white rounded-lg font-bold hover:bg-[#1E5FD1] transition-colors text-sm flex items-center justify-center gap-1.5"
+                >
+                  <Zap className="w-4 h-4" />
+                  {t.freeQuote}
+                </button>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>
