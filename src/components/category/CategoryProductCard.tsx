@@ -87,8 +87,8 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
         </div>
       )}
 
-      {/* image — 1:1, not clickable */}
-      <div className="aspect-square relative overflow-hidden bg-gray-50 m-4 mb-2 rounded-lg">
+      {/* image — 1:1, not clickable, full width like homepage */}
+      <div className="aspect-square relative overflow-hidden bg-gray-50">
         {hasImage ? (
           <Image
             src={imageSrc}
