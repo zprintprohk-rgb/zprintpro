@@ -3,24 +3,20 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Star, CreditCard, Tag, ShoppingBag, FileText, ImageIcon, Package, BookOpen, Flag, Calendar, Mail, Gift, GraduationCap, Box } from 'lucide-react';
+import { CreditCard, Tag, ShoppingBag, FileText, ImageIcon, Package, BookOpen, Flag, Calendar, Mail, Gift, GraduationCap, Box } from 'lucide-react';
 import { Product } from '@/data/products';
 import { Locale } from '@/lib/seo';
-import { shouldShowPrice, getQuoteLabel, convertPriceRangeString } from '@/lib/pricing';
+import { shouldShowPrice, convertPriceRangeString } from '@/lib/pricing';
 
 interface CategoryProductCardProps {
   product: Product;
   locale: Locale;
-  index: number; // 用于决定顶部条颜色
+  index: number;
 }
 
 const topBarColors = [
-  'bg-[#2873F5]', // 蓝
-  'bg-[#10B981]', // 绿
-  'bg-[#F87314]', // 橙
-  'bg-[#8B5CF6]', // 紫
-  'bg-[#EC4899]', // 粉
-  'bg-[#06B6D4]', // 青
+  'bg-[#2873F5]', 'bg-[#10B981]', 'bg-[#F87314]',
+  'bg-[#8B5CF6]', 'bg-[#EC4899]', 'bg-[#06B6D4]',
 ];
 
 const categoryFallbacks: Record<string, { icon: typeof Box; bgColor: string; iconColor: string }> = {
@@ -40,21 +36,9 @@ const categoryFallbacks: Record<string, { icon: typeof Box; bgColor: string; ico
 };
 
 const translations = {
-  'zh-hk': {
-    hot: '熱銷',
-    getQuote: '獲取報價',
-    from: '起',
-  },
-  'en': {
-    hot: 'Hot',
-    getQuote: 'Get Quote',
-    from: 'From',
-  },
-  'ja': {
-    hot: '人気',
-    getQuote: '見積もり',
-    from: 'から',
-  },
+  'zh-hk': { hot: '熱銷', getQuote: '獲取報價', viewMore: '查詢更多', from: '起' },
+  'en': { hot: 'Hot', getQuote: 'Get Quote', viewMore: 'View More', from: 'From' },
+  'ja': { hot: '人気', getQuote: '見積もり', viewMore: '詳細を見る', from: 'から' },
 };
 
 export function CategoryProductCard({ product, locale, index }: CategoryProductCardProps) {
@@ -84,18 +68,15 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
     }
   };
 
-  // 截断描述，e-print风格较短
-  const shortDesc = getDesc().slice(0, 45) + (getDesc().length > 45 ? '...' : '');
+  const shortDesc = getDesc().slice(0, 40) + (getDesc().length > 40 ? '...' : '');
+  const showPrice = shouldShowPrice(product.category_slug);
 
   return (
-    <Link
-      href={`${localePrefix}/contact/?product=${product.slug}`}
-      className="group bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col"
-    >
-      {/* 顶部彩色条 */}
+    <div className="group bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col">
+      {/* top bar */}
       <div className={`h-2 ${topBarColor}`} />
 
-      {/* 热销标签 */}
+      {/* hot badge */}
       {product.isHot && (
         <div className="relative">
           <div className="absolute top-3 left-3 z-10">
@@ -106,78 +87,61 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
         </div>
       )}
 
-      {/* 图片区域 - e-print风格：圆形占位 */}
-      <div className="block pt-6 pb-4 px-4">
-        <div className="flex flex-col items-center">
-          {hasImage ? (
-            <div className="w-28 h-28 rounded-full overflow-hidden bg-gray-50 mb-3 group-hover:scale-105 transition-transform duration-300">
-              <Image
-                src={imageSrc}
-                alt={getName()}
-                width={112}
-                height={112}
-                className="object-cover w-full h-full"
-                unoptimized
-                onError={() => setImgError(true)}
-              />
-            </div>
-          ) : (
-            <div className={`w-28 h-28 rounded-full ${fallback.bgColor} flex items-center justify-center mb-3 group-hover:scale-105 transition-transform duration-300`}>
-              <FallbackIcon className={`w-12 h-12 ${fallback.iconColor}`} strokeWidth={1.5} />
-            </div>
-          )}
-
-          {/* 产品中文名 */}
-          <h3 className="text-lg font-bold text-[#333333] text-center group-hover:text-[#2873F5] transition-colors">
-            {product.name}
-          </h3>
-
-          {/* 英文名 */}
-          <p className="text-sm text-gray-500 text-center mt-0.5">
-            {product.nameEn}
-          </p>
-
-          {/* 日文名 - 更小 */}
-          <p className="text-xs text-gray-400 text-center mt-0.5">
-            {product.nameJa}
-          </p>
-
-          {/* 品牌小字 */}
-          <p className="text-[10px] text-gray-300 text-center mt-1.5 tracking-wider">
-            ZprintPro 智印港 · 香港專業印刷 Hong Kong Professional Printing
-          </p>
-        </div>
-      </div>
-
-      {/* 分隔线 */}
-      <div className="mx-4 border-t border-gray-100" />
-
-      {/* 产品描述 + 价格 + 按钮 */}
-      <div className="p-4 flex flex-col flex-1">
-        {/* 描述 — 固定3行高度，确保价格位置统一 */}
-        <p className="text-sm text-gray-500 leading-relaxed mb-3 h-[66px] overflow-hidden">
-          {shortDesc}
-        </p>
-
-        {/* 价格 — 仅传单/海报/喷绘显示 */}
-        {shouldShowPrice(product.category_slug) && (
-          <div className="mb-3">
-            <span className="text-[#F87314] font-bold text-lg">
-              {convertPriceRangeString(product.price_range, locale).split('-')[0]}
-            </span>
-            <span className="text-xs text-gray-400 ml-1">
-              {t.from}
-            </span>
+      {/* image — 1:1, not clickable */}
+      <div className="aspect-square relative overflow-hidden bg-gray-50 m-4 mb-2 rounded-lg">
+        {hasImage ? (
+          <Image
+            src={imageSrc}
+            alt={getName()}
+            fill
+            className="object-cover"
+            unoptimized
+            onError={() => setImgError(true)}
+          />
+        ) : (
+          <div className={`absolute inset-0 ${fallback.bgColor} flex items-center justify-center`}>
+            <FallbackIcon className={`w-16 h-16 ${fallback.iconColor}`} strokeWidth={1.5} />
           </div>
         )}
-
-        {/* 立即订购按钮 — 颜色减25% */}
-        <span
-          className="block w-full text-center py-2.5 bg-[#3090FF] text-white rounded-lg text-sm font-medium hover:bg-[#1E5FD1] transition-colors mt-auto"
-        >
-          {t.getQuote}
-        </span>
       </div>
-    </Link>
+
+      {/* product name + desc */}
+      <div className="px-4 pt-2">
+        <h3 className="text-lg font-bold text-[#333333] text-center">{getName()}</h3>
+        <p className="text-sm text-gray-500 text-center mt-1 line-clamp-2 h-[40px]">{shortDesc}</p>
+      </div>
+
+      {/* divider */}
+      <div className="mx-4 border-t border-gray-100 mt-2" />
+
+      {/* price + dual buttons */}
+      <div className="p-4 flex flex-col flex-1">
+        {/* price area — fixed height for alignment */}
+        <div className="h-[28px] mb-2 flex items-center justify-center">
+          {showPrice ? (
+            <span className="text-[#F87314] font-bold text-base">
+              {convertPriceRangeString(product.price_range, locale).split('-')[0]}
+              <span className="text-xs text-gray-400 ml-1">{t.from}</span>
+            </span>
+          ) : null}
+        </div>
+
+        {/* dual buttons */}
+        <div className="flex gap-2 mt-auto">
+          <Link
+            href={`${localePrefix}/product/${product.slug}/`}
+            className="flex-1 text-center py-2 border border-gray-300 text-gray-700 rounded-lg text-sm font-medium hover:border-[#2873F5] hover:text-[#2873F5] transition-colors"
+          >
+            {t.viewMore}
+          </Link>
+          <Link
+            href={`${localePrefix}/contact/?product=${product.slug}`}
+            className="flex-1 text-center py-2 bg-[#3090FF] text-white rounded-lg text-sm font-medium hover:bg-[#1E5FD1] transition-colors"
+          >
+            {t.getQuote}
+          </Link>
+        </div>
+      </div>
+    </div>
   );
 }
