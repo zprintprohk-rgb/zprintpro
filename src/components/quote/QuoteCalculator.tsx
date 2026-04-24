@@ -164,7 +164,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
     return (
       <div className="space-y-6">
         {/* 产品基本信息 */}
-        <div className="bg-gray-50 rounded-xl p-4 space-y-3">
+        <div className="bg-white rounded-xl border border-gray-200 p-4 space-y-3">
           <div className="flex justify-between py-2 border-b border-gray-200">
             <span className="text-gray-500 text-sm">{locale === 'zh-hk' ? '最低訂購量' : locale === 'en' ? 'Min. Order' : '最小注文数'}</span>
             <span className="font-medium text-gray-900">{product.minQuantity} {locale === 'zh-hk' ? '個起' : locale === 'en' ? 'pcs' : '個〜'}</span>
@@ -194,17 +194,17 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
         </div>
 
         {/* 价格提醒 */}
-        <div className="bg-gradient-to-br from-[#2873F5] to-[#1E5FD1] rounded-xl p-5 text-white">
+        <div className="border border-gray-200 rounded-xl p-5">
           <div className="flex items-center gap-2 mb-3">
-            <Zap className="w-5 h-5 text-yellow-300" />
-            <span className="font-semibold">{t.priceNote}</span>
+            <Zap className="w-5 h-5 text-[#2873F5]" />
+            <span className="font-semibold text-gray-900">{t.priceNote}</span>
           </div>
-          <p className="text-2xl font-bold mb-1">{product.price_range.split('-')[0]}</p>
-          <p className="text-sm text-white/70 mb-4">{product.price_range}</p>
-          <p className="text-xs text-white/50 leading-relaxed mb-4">{t.priceNoteDetail}</p>
+          <p className="text-2xl font-bold text-[#F87314] mb-1">{product.price_range.split('-')[0]}</p>
+          <p className="text-sm text-gray-500 mb-4">{product.price_range}</p>
+          <p className="text-xs text-gray-400 leading-relaxed mb-4">{t.priceNoteDetail}</p>
           <button
             onClick={handleWhatsApp}
-            className="w-full py-3 bg-white text-[#2873F5] rounded-lg font-bold hover:bg-gray-50 transition-colors flex items-center justify-center gap-2"
+            className="w-full py-3 bg-[#2873F5] text-white rounded-lg font-bold hover:bg-[#1E5FD1] transition-colors flex items-center justify-center gap-2"
           >
             <MessageCircle className="w-5 h-5" />
             {t.getQuote}
@@ -218,7 +218,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
     <div className="space-y-6">
       {/* ===== 第一层：尺寸规格 ===== */}
       {hasSizes && (
-        <div className="bg-gray-50 rounded-xl p-4">
+        <div className="bg-white rounded-xl border border-gray-200 p-4">
           <div className="flex items-center gap-2 mb-3">
             <span className="w-6 h-6 rounded-full bg-[#2873F5] text-white text-xs font-bold flex items-center justify-center">1</span>
             <h4 className="font-semibold text-gray-900 text-sm">{t.step1}</h4>
@@ -254,7 +254,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
 
       {/* ===== 第二层：材质选择 ===== */}
       {hasMaterials && (
-        <div className="bg-gray-50 rounded-xl p-4">
+        <div className="bg-white rounded-xl border border-gray-200 p-4">
           <div className="flex items-center gap-2 mb-3">
             <span className="w-6 h-6 rounded-full bg-[#2873F5] text-white text-xs font-bold flex items-center justify-center">2</span>
             <h4 className="font-semibold text-gray-900 text-sm">{t.step2}</h4>
@@ -301,7 +301,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
 
       {/* ===== 第三层：工艺选择 ===== */}
       {hasFinishings && (
-        <div className="bg-gray-50 rounded-xl p-4">
+        <div className="bg-white rounded-xl border border-gray-200 p-4">
           <div className="flex items-center gap-2 mb-3">
             <span className="w-6 h-6 rounded-full bg-[#2873F5] text-white text-xs font-bold flex items-center justify-center">3</span>
             <h4 className="font-semibold text-gray-900 text-sm">{t.step3}</h4>
@@ -339,7 +339,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
 
       {/* ===== 数量选择 ===== */}
       {hasQuantities && (
-        <div className="bg-gray-50 rounded-xl p-4">
+        <div className="bg-white rounded-xl border border-gray-200 p-4">
           <div className="flex items-center gap-2 mb-3">
             <span className="w-6 h-6 rounded-full bg-[#2873F5] text-white text-xs font-bold flex items-center justify-center">
               {hasSizes || hasMaterials || hasFinishings ? '4' : '1'}
@@ -402,27 +402,27 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
         </label>
       </div>
 
-      {/* ===== 价格显示区域 - 醒目的参考价格 ===== */}
-      <div className="bg-gradient-to-br from-[#2873F5] to-[#1E5FD1] rounded-xl p-5 text-white">
+      {/* ===== 价格显示区域 - 去色块参考价格 ===== */}
+      <div className="border border-gray-200 rounded-xl p-5">
         <div className="flex items-center gap-2 mb-4">
-          <Zap className="w-5 h-5 text-yellow-300" />
-          <span className="font-semibold">{t.priceNote}</span>
+          <Zap className="w-5 h-5 text-[#2873F5]" />
+          <span className="font-semibold text-gray-900">{t.priceNote}</span>
         </div>
 
         <div className="flex items-baseline gap-2 mb-1">
-          <span className="text-white/70 text-sm">{t.unitPrice}</span>
-          <span className="text-2xl font-bold">HK${calculatedPrice.unitPrice}</span>
+          <span className="text-gray-500 text-sm">{t.unitPrice}</span>
+          <span className="text-2xl font-bold text-[#F87314]">HK${calculatedPrice.unitPrice}</span>
         </div>
         <div className="flex items-baseline gap-2 mb-3">
-          <span className="text-white/70 text-sm">{t.totalPrice}</span>
-          <span className="text-3xl font-extrabold">HK${calculatedPrice.totalPrice.toLocaleString()}</span>
+          <span className="text-gray-500 text-sm">{t.totalPrice}</span>
+          <span className="text-3xl font-extrabold text-[#F87314]">HK${calculatedPrice.totalPrice.toLocaleString()}</span>
         </div>
 
-        <div className="text-sm text-white/60 mb-4">
+        <div className="text-sm text-gray-500 mb-4">
           {t.deliveryTime}: 3-5 {t.days}
         </div>
 
-        <p className="text-xs text-white/50 leading-relaxed mb-4">
+        <p className="text-xs text-gray-400 leading-relaxed mb-4">
           {t.priceNoteDetail}
         </p>
 
@@ -430,19 +430,19 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
         <div className="space-y-2">
           <button
             onClick={handleWhatsApp}
-            className="w-full py-3 bg-white text-[#2873F5] rounded-lg font-bold hover:bg-gray-50 transition-colors flex items-center justify-center gap-2"
+            className="w-full py-3 bg-[#2873F5] text-white rounded-lg font-bold hover:bg-[#1E5FD1] transition-colors flex items-center justify-center gap-2"
           >
             <MessageCircle className="w-5 h-5" />
             {t.getQuote}
           </button>
           <div className="flex gap-2">
-            <button className="flex-1 py-2.5 bg-white/10 text-white rounded-lg font-medium hover:bg-white/20 transition-colors text-sm flex items-center justify-center gap-1.5">
+            <button className="flex-1 py-2.5 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors text-sm flex items-center justify-center gap-1.5">
               <ShoppingCart className="w-4 h-4" />
               {t.addToCart}
             </button>
             <button
               onClick={() => router.push(`/${locale}/contact/?product=${product.slug}`)}
-              className="flex-1 py-2.5 bg-white/10 text-white rounded-lg font-medium hover:bg-white/20 transition-colors text-sm flex items-center justify-center gap-1.5"
+              className="flex-1 py-2.5 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors text-sm flex items-center justify-center gap-1.5"
             >
               <Zap className="w-4 h-4" />
               {t.getQuoteBtn}

@@ -97,7 +97,7 @@ const EXCHANGE_RATES: Record<Locale, { rate: number; symbol: string }> = {
 };
 
 /** 需要显示价格的分类（其余显示"需報價"） */
-const PRICE_VISIBLE_CATEGORIES = ['flyers', 'posters', 'banners'];
+const PRICE_VISIBLE_CATEGORIES = ['flyers', 'posters', 'banners', 'stickers', 'business-cards', 'menus', 'envelopes', 'red-packets'];
 
 /** 判断该分类是否显示价格 */
 export function shouldShowPrice(categorySlug: string): boolean {

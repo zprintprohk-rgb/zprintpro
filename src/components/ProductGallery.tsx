@@ -1,11 +1,12 @@
 /**
  * 产品图片画廊组件
- * 支持主图显示和缩略图切换
+ * 支持主图显示、缩略图切换、点击放大
  */
 
 'use client';
 
 import { useState } from 'react';
+import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface ProductGalleryProps {
   images: string[];
@@ -14,40 +15,106 @@ interface ProductGalleryProps {
 
 export function ProductGallery({ images, title }: ProductGalleryProps) {
   const [currentImage, setCurrentImage] = useState(0);
-  
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+
   const displayImages = images.length > 0 ? images : ['/images/placeholder.jpg'];
-  
+
+  const openLightbox = (index: number) => {
+    setCurrentImage(index);
+    setLightboxOpen(true);
+  };
+
+  const closeLightbox = () => setLightboxOpen(false);
+
+  const prevImage = () => {
+    setCurrentImage((prev) => (prev === 0 ? displayImages.length - 1 : prev - 1));
+  };
+
+  const nextImage = () => {
+    setCurrentImage((prev) => (prev === displayImages.length - 1 ? 0 : prev + 1));
+  };
+
   return (
-    <div className="space-y-4">
-      {/* 主图 */}
-      <div className="aspect-square bg-gray-100 rounded-lg overflow-hidden">
-        <img
-          src={displayImages[currentImage]}
-          alt={title}
-          className="w-full h-full object-cover"
-        />
+    <>
+      <div className="space-y-3">
+        {/* 主图 — 1:1 比例，点击放大 */}
+        <div
+          className="aspect-square bg-gray-100 rounded-xl overflow-hidden cursor-zoom-in"
+          onClick={() => openLightbox(currentImage)}
+        >
+          <img
+            src={displayImages[currentImage]}
+            alt={title}
+            className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+          />
+        </div>
+
+        {/* 缩略图 */}
+        {displayImages.length > 1 && (
+          <div className="flex gap-2 overflow-x-auto pb-1">
+            {displayImages.map((image, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentImage(index)}
+                className={`w-16 h-16 flex-shrink-0 rounded-lg overflow-hidden border-2 transition-colors ${
+                  currentImage === index ? 'border-[#2873F5]' : 'border-gray-200 hover:border-gray-400'
+                }`}
+              >
+                <img
+                  src={image}
+                  alt={`${title} - ${index + 1}`}
+                  className="w-full h-full object-cover"
+                />
+              </button>
+            ))}
+          </div>
+        )}
       </div>
-      
-      {/* 缩略图 */}
-      {displayImages.length > 1 && (
-        <div className="flex gap-2 overflow-x-auto">
-          {displayImages.map((image, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentImage(index)}
-              className={`w-20 h-20 flex-shrink-0 rounded-lg overflow-hidden border-2 ${
-                currentImage === index ? 'border-[#2873F5]' : 'border-transparent'
-              }`}
-            >
-              <img
-                src={image}
-                alt={`${title} - ${index + 1}`}
-                className="w-full h-full object-cover"
-              />
-            </button>
-          ))}
+
+      {/* Lightbox 放大查看 */}
+      {lightboxOpen && (
+        <div
+          className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center"
+          onClick={closeLightbox}
+        >
+          <button
+            onClick={closeLightbox}
+            className="absolute top-4 right-4 text-white/80 hover:text-white p-2"
+          >
+            <X className="w-8 h-8" />
+          </button>
+
+          {displayImages.length > 1 && (
+            <>
+              <button
+                onClick={(e) => { e.stopPropagation(); prevImage(); }}
+                className="absolute left-4 top-1/2 -translate-y-1/2 text-white/80 hover:text-white p-2"
+              >
+                <ChevronLeft className="w-10 h-10" />
+              </button>
+              <button
+                onClick={(e) => { e.stopPropagation(); nextImage(); }}
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-white/80 hover:text-white p-2"
+              >
+                <ChevronRight className="w-10 h-10" />
+              </button>
+            </>
+          )}
+
+          <img
+            src={displayImages[currentImage]}
+            alt={title}
+            className="max-w-[90vw] max-h-[90vh] object-contain"
+            onClick={(e) => e.stopPropagation()}
+          />
+
+          {displayImages.length > 1 && (
+            <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white text-sm">
+              {currentImage + 1} / {displayImages.length}
+            </div>
+          )}
         </div>
       )}
-    </div>
+    </>
   );
 }

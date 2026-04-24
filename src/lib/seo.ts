@@ -292,7 +292,7 @@ export function generateCategoryMetadata(locale: Locale, categoryName: string = 
   };
 }
 
-// 生成產品頁元數據
+// 生成產品頁元數據 — SEO優化：title 50-60字符，description 150-160字符
 export function generateProductMetadata(
   locale: Locale, 
   productName: string, 
@@ -301,20 +301,41 @@ export function generateProductMetadata(
   description: string,
   descriptionEn: string,
   descriptionJa: string,
-  slug: string
+  slug: string,
+  categoryName: string = '',
+  priceRange: string = ''
 ): Metadata {
   const names = { 'zh-hk': productName, en: productNameEn, ja: productNameJa };
   const descriptions = { 'zh-hk': description, en: descriptionEn, ja: descriptionJa };
   
   const name = names[locale];
-  const desc = descriptions[locale];
+  const baseDesc = descriptions[locale] || '';
   const lang = locale === 'zh-hk' ? 'zh-HK' : locale;
   
-  const suffix = locale === 'zh-hk' ? '專業印刷' : locale === 'en' ? 'Professional Printing' : 'プロ印刷';
+  // Title: 50-60字符，含核心關鍵詞
+  const suffix = locale === 'zh-hk' ? '印刷' : locale === 'en' ? 'Printing' : '印刷';
+  const titleBase = `${name}${suffix}`.replace(/印刷印刷/g, '印刷');
+  const title = locale === 'zh-hk' 
+    ? `${titleBase} | 香港${categoryName}專家 | ZprintPro`.slice(0, 60)
+    : locale === 'en'
+    ? `${titleBase} Hong Kong | ${siteConfig.name}`.slice(0, 60)
+    : `${titleBase} | 香港プロ | ZprintPro`.slice(0, 60);
+  
+  // Description: 150-160字符，含長尾關鍵詞+價格+行動號召
+  const priceText = priceRange ? ` ${priceRange.split('/')[0]}起。` : ' ';
+  const descPrefix = baseDesc.slice(0, 80);
+  const descSuffix = locale === 'zh-hk' 
+    ? `立即查詢報價，滿$500免運費，即日交貨。`
+    : locale === 'en'
+    ? `Get a quote now. Free shipping over $500. Same-day delivery available.`
+    : `今すぐ見積もり。500ドル以上送料無料。即日納品対応。`;
+  
+  const fullDesc = `${descPrefix}${priceText}${descSuffix}`;
+  const metaDescription = fullDesc.length > 160 ? fullDesc.slice(0, 157) + '...' : fullDesc;
   
   return {
-    title: `${name} | ${suffix} | ${siteConfig.name}`,
-    description: desc,
+    title,
+    description: metaDescription,
     alternates: {
       canonical: `${siteConfig.url}/${locale}/product/${slug}/`,
       languages: {
@@ -326,7 +347,7 @@ export function generateProductMetadata(
     },
     openGraph: {
       title: `${name} | ${siteConfig.name}`,
-      description: desc,
+      description: metaDescription,
       locale: lang,
       type: 'website',
       images: [
@@ -341,6 +362,13 @@ export function generateProductMetadata(
     robots: {
       index: true,
       follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-video-preview': -1,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+      },
     },
   };
 }

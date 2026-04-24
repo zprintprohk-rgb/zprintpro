@@ -61,7 +61,9 @@ export async function generateMetadata({
     return { title: 'Not Found' };
   }
   
-  return generateProductMetadata(locale, product.name, product.nameEn, product.nameJa, product.description, product.descriptionEn, product.descriptionJa, product.slug);
+  const category = getCategoryBySlug(product.category_slug);
+  const categoryName = category ? getCategoryName(category, locale) : '';
+  return generateProductMetadata(locale, product.name, product.nameEn, product.nameJa, product.description, product.descriptionEn, product.descriptionJa, product.slug, categoryName, product.price_range);
 }
 
 // 产品详情页组件
@@ -238,54 +240,51 @@ export default function ProductPage({
             {/* 右侧：产品信息和报价计算器 */}
             <div>
               <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                {productSeo?.h1Suffix[locale] || productTitle}
+                {productSeo?.h1Suffix[locale] || (locale === 'zh-hk' ? `${productTitle} | 香港${categoryName}專家 | 智印港` : locale === 'en' ? `${productTitle} | Hong Kong ${categoryName} Expert | ZprintPro` : `${productTitle} | 香港プロ | ZprintPro`)}
               </h1>
               
               <p className="text-gray-600 mb-6 leading-relaxed">
                 {productDescription}
               </p>
               
-              {/* 价格显示 - e-print风格 */}
-              <div className="bg-gradient-to-r from-[#2873F5] to-[#1E5FD1] rounded-xl p-5 mb-6 text-white">
+              {/* 价格显示 — 去色块简洁风格 */}
+              <div className="mb-5">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-sm text-white/70">{t.priceRange}</span>
-                  <span className="text-xs bg-white/20 px-2 py-0.5 rounded text-white/90">
+                  <span className="text-sm text-gray-500">{t.priceRange}</span>
+                  <span className="text-xs text-gray-400">
                     {locale === 'zh-hk' ? '價格以客服確認為準' : locale === 'en' ? 'Price subject to confirmation' : '価格は確認が必要'}
                   </span>
                 </div>
-                <div className="flex items-baseline gap-2 mt-1">
-                  <span className="text-3xl font-extrabold">
+                <div className="flex items-baseline gap-2 mb-1">
+                  <span className="text-3xl font-extrabold text-[#F87314]">
                     {product.price_range.split('-')[0]}
                   </span>
-                  <span className="text-sm text-white/60">
+                  <span className="text-sm text-gray-400">
                     {product.price_range.includes('/100') ? '/100張起' : product.price_range.includes('/個') ? '/個起' : '/張起'}
                   </span>
                 </div>
-                <p className="text-xs text-white/50 mt-2">
-                  {locale === 'zh-hk' ? `完整價格: ${product.price_range} · 聯繫客服獲取準確報價` : locale === 'en' ? `Full price: ${product.price_range} · Contact us for accurate quote` : `価格: ${product.price_range} · 正確な見積もりはお問い合わせください`}
+                <p className="text-xs text-gray-400">
+                  {locale === 'zh-hk' ? `完整價格: ${product.price_range}` : locale === 'en' ? `Full price: ${product.price_range}` : `価格: ${product.price_range}`}
                 </p>
-                <div className="flex flex-wrap gap-2 mt-3">
-                  <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-white/15 text-white text-xs font-medium rounded-full">
-                    <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
+                <div className="flex flex-wrap gap-3 mt-3">
+                  <span className="inline-flex items-center gap-1 text-sm text-gray-600">
+                    <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
                     {t.sameDay}
                   </span>
-                  <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-white/15 text-white text-xs font-medium rounded-full">
-                    <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/><path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1v-5a1 1 0 00-.293-.707l-2-2A1 1 0 0015 7h-1z"/></svg>
+                  <span className="inline-flex items-center gap-1 text-sm text-gray-600">
+                    <svg className="w-4 h-4 text-[#2873F5]" fill="currentColor" viewBox="0 0 20 20"><path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/><path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1v-5a1 1 0 00-.293-.707l-2-2A1 1 0 0015 7h-1z"/></svg>
                     {t.freeShipping}
                   </span>
-                  <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-white/15 text-white text-xs font-medium rounded-full">
-                    <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
+                  <span className="inline-flex items-center gap-1 text-sm text-gray-600">
+                    <svg className="w-4 h-4 text-amber-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
                     {t.quality}
                   </span>
                 </div>
               </div>
-              
-              {/* 报价计算器 */}
-              <div className="bg-white rounded-xl border-2 border-[#2873F5]/20 shadow-lg shadow-[#2873F5]/5 p-6 mb-6">
-                <div className="flex items-center gap-2 mb-4">
-                  <svg className="w-5 h-5 text-[#2873F5]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"/></svg>
-                  <h3 className="text-lg font-semibold">{t.specifications}</h3>
-                </div>
+
+              {/* 报价计算器 — 无边框简洁 */}
+              <div className="mb-5">
+                <h3 className="text-lg font-semibold text-gray-900 mb-4">{t.specifications}</h3>
                 <QuoteCalculator product={product} locale={locale} />
               </div>
               
@@ -354,7 +353,7 @@ export default function ProductPage({
               </h3>
               <RegionalTrustBadges locale={locale} />
             </div>
-            <div className="bg-blue-50 rounded-xl p-6">
+            <div className="p-6">
               <p className="text-gray-600 text-sm leading-relaxed">
                 <RegionalContent locale={locale} type="expertIntro" />
               </p>

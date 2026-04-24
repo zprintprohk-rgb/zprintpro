@@ -177,14 +177,14 @@ export function ProductTabs({ product, locale }: ProductTabsProps) {
   };
 
   return (
-    <div className="bg-white rounded-xl border border-gray-100 shadow-sm">
+    <div className="bg-white rounded-xl border border-gray-100">
       {/* Tab导航 */}
       <div className="flex border-b border-gray-100">
         {(['description', 'specs', 'shipping'] as const).map((tab) => (
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`px-6 py-4 text-sm font-medium transition-colors ${
+            className={`px-6 py-4 text-lg font-medium transition-colors ${
               activeTab === tab
                 ? 'text-[#2873F5] border-b-2 border-[#2873F5]'
                 : 'text-gray-500 hover:text-gray-700'
@@ -201,17 +201,17 @@ export function ProductTabs({ product, locale }: ProductTabsProps) {
           <div className="prose max-w-none">
             <p className="text-gray-600 leading-relaxed">{description}</p>
             <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="bg-gray-50 p-4 rounded-lg">
-                <h4 className="font-medium mb-2">{t.features}</h4>
-                <ul className="text-sm text-gray-600 space-y-1">
+              <div className="p-4">
+                <h4 className="font-medium text-lg mb-2">{t.features}</h4>
+                <ul className="text-base text-gray-600 space-y-1">
                   {getFeatures().map((f, i) => (
                     <li key={i}>• {f}</li>
                   ))}
                 </ul>
               </div>
-              <div className="bg-gray-50 p-4 rounded-lg">
-                <h4 className="font-medium mb-2">{t.useCases}</h4>
-                <ul className="text-sm text-gray-600 space-y-1">
+              <div className="p-4">
+                <h4 className="font-medium text-lg mb-2">{t.useCases}</h4>
+                <ul className="text-base text-gray-600 space-y-1">
                   {getUseCases().map((u, i) => (
                     <li key={i}>• {u}</li>
                   ))}
@@ -243,8 +243,8 @@ export function ProductTabs({ product, locale }: ProductTabsProps) {
                 </span>
               </div>
             </div>
-            <div className="bg-amber-50 border border-amber-200 rounded-lg p-4 mt-4">
-              <p className="text-sm text-amber-800">
+            <div className="border border-gray-200 rounded-lg p-4 mt-4">
+              <p className="text-base text-gray-700">
                 <span className="font-medium">{t.priceNote}：</span>
                 {locale === 'zh-hk'
                   ? '以上價格僅供參考，實際價格可能因紙張、工藝、數量而異。請聯繫客服確認最終報價。'
@@ -258,9 +258,9 @@ export function ProductTabs({ product, locale }: ProductTabsProps) {
 
         {activeTab === 'shipping' && (
           <div className="space-y-4">
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <h4 className="font-medium mb-2">{t.shippingMethod}</h4>
-              <p className="text-sm text-gray-600">
+            <div className="p-4">
+              <h4 className="font-medium text-lg mb-2">{t.shippingMethod}</h4>
+              <p className="text-base text-gray-600">
                 {locale === 'zh-hk'
                   ? '我們提供多種配送方式，包括順豐速運、本地快遞及門市自取。觀塘工廠可港鐵站交收。'
                   : locale === 'en'
@@ -268,9 +268,9 @@ export function ProductTabs({ product, locale }: ProductTabsProps) {
                   : 'SFエクスプレス、ローカルクーリエ、店舗受取など、複数の配送オプションを提供しています。観塘工場でMTR受取可能。'}
               </p>
             </div>
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <h4 className="font-medium mb-2">{t.freeShipping}</h4>
-              <p className="text-sm text-gray-600">
+            <div className="p-4">
+              <h4 className="font-medium text-lg mb-2">{t.freeShipping}</h4>
+              <p className="text-base text-gray-600">
                 {locale === 'zh-hk'
                   ? '訂單滿HK$500即可享受免費送貨服務（香港地區）。離島及偏遠地區可能需要額外費用。'
                   : locale === 'en'
