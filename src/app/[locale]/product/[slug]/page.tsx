@@ -232,10 +232,40 @@ export default function ProductPage({
         
         {/* 产品详情区 */}
         <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          <div className="grid grid-cols-1 lg:grid-cols-[60%_32%] gap-8 justify-between">
-            {/* 左侧：产品图片 */}
+          <div className="grid grid-cols-1 lg:grid-cols-[65%_35%] gap-8 justify-between">
+            {/* 左侧：产品图片 + 上传 + 备注 */}
             <div>
               <ProductGallery images={product.images} title={productTitle} />
+
+              {/* 上传设计稿 */}
+              <div className="mt-6 border-2 border-dashed border-gray-300 rounded-xl p-5 text-center hover:border-[#2873F5] transition-colors cursor-pointer bg-white">
+                <input type="file" accept=".pdf,.ai,.psd,.png,.jpg,.jpeg" className="hidden" id="design-upload-pdp" />
+                <label htmlFor="design-upload-pdp" className="cursor-pointer block">
+                  <div className="text-gray-400 mb-2">
+                    <svg className="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                    </svg>
+                  </div>
+                  <p className="text-sm font-medium text-gray-700">{locale === 'zh-hk' ? '上傳設計稿' : locale === 'en' ? 'Upload Design' : 'デザインをアップロード'}</p>
+                  <p className="text-xs text-gray-400 mt-1">{locale === 'zh-hk' ? '支持 PDF, AI, PSD, PNG, JPG 格式（最大50MB）' : locale === 'en' ? 'Support PDF, AI, PSD, PNG, JPG (max 50MB)' : 'PDF, AI, PSD, PNG, JPG対応（最大50MB）'}</p>
+                </label>
+              </div>
+
+              {/* 备注栏 */}
+              <details className="mt-6 bg-white rounded-xl border border-gray-200 overflow-hidden group">
+                <summary className="flex items-center justify-between px-5 py-4 cursor-pointer list-none hover:bg-gray-50 transition-colors">
+                  <span className="font-semibold text-gray-900">{locale === 'zh-hk' ? '備註' : locale === 'en' ? 'Notes' : '備考'}</span>
+                  <span className="text-sm text-[#2873F5] group-open:hidden">{locale === 'zh-hk' ? '添加' : locale === 'en' ? 'Add' : '追加'}</span>
+                  <span className="text-sm text-gray-400 hidden group-open:block">{locale === 'zh-hk' ? '收起' : locale === 'en' ? 'Collapse' : '閉じる'}</span>
+                </summary>
+                <div className="px-5 pb-4">
+                  <textarea
+                    className="w-full p-3 border border-gray-200 rounded-lg text-sm text-gray-700 focus:outline-none focus:border-[#2873F5] focus:ring-1 focus:ring-[#2873F5] resize-none"
+                    rows={3}
+                    placeholder={locale === 'zh-hk' ? '請輸入訂單備註...' : locale === 'en' ? 'Enter order notes...' : '注文備考を入力...'}
+                  />
+                </div>
+              </details>
             </div>
             
             {/* 右侧：产品信息和报价计算器 */}
@@ -269,6 +299,10 @@ export default function ProductPage({
                   <span className="inline-flex items-center gap-1.5 text-base text-gray-600">
                     <svg className="w-5 h-5 text-amber-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
                     {t.quality}
+                  </span>
+                  <span className="inline-flex items-center gap-1.5 text-base text-gray-600">
+                    <svg className="w-5 h-5 text-[#2873F5]" fill="currentColor" viewBox="0 0 20 20"><path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/><path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1v-5a1 1 0 00-.293-.707l-2-2A1 1 0 0015 7h-1z"/></svg>
+                    {t.freeShipping}
                   </span>
                 </div>
               </div>

@@ -420,25 +420,6 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
         </div>
       )}
 
-      {/* ===== 文件上传 ===== */}
-      <div className="border-2 border-dashed border-gray-300 rounded-xl p-5 text-center hover:border-[#2873F5] transition-colors cursor-pointer bg-white">
-        <input
-          type="file"
-          accept=".pdf,.ai,.psd,.png,.jpg,.jpeg"
-          className="hidden"
-          id="design-upload"
-        />
-        <label htmlFor="design-upload" className="cursor-pointer block">
-          <div className="text-gray-400 mb-2">
-            <svg className="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
-            </svg>
-          </div>
-          <p className="text-sm font-medium text-gray-700">{t.uploadDesign}</p>
-          <p className="text-xs text-gray-400 mt-1">{t.designNote}</p>
-        </label>
-      </div>
-
       {/* ===== 价格显示区域 - 订购/报价选项卡 ===== */}
       <div className="border border-gray-200 rounded-xl overflow-hidden">
         {/* 选项卡 */}
@@ -517,22 +498,37 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
             </div>
           ) : (
             <div>
-              {/* 报价明细 */}
-              <div className="mb-5">
-                <div className="flex items-baseline gap-2 mb-2">
-                  <span className="text-gray-500 text-sm">{t.unitPrice}</span>
-                  <span className="text-2xl font-bold text-[#F87314]">HK${calculatedPrice.unitPrice}</span>
+              {/* 报价明细 — 同订购内容 */}
+              <div className="space-y-3 mb-5">
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-500">{t.qty}</span>
+                  <span className="font-medium text-gray-900">{config.quantity}</span>
                 </div>
-                <div className="flex items-baseline gap-2 mb-3">
-                  <span className="text-gray-500 text-sm">{t.totalPrice}</span>
-                  <span className="text-3xl font-extrabold text-[#F87314]">HK${calculatedPrice.totalPrice.toLocaleString()}</span>
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-500">{t.subtotal}</span>
+                  <span className="font-medium text-gray-900">HK${(product.basePrice * config.quantity).toFixed(2)}</span>
                 </div>
-                <div className="text-sm text-gray-500 mb-3">
-                  {t.deliveryTime}: 3-5 {t.days}
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-500">{t.processing}</span>
+                  <span className="font-medium text-gray-900">HK${(calculatedPrice.totalPrice - product.basePrice * config.quantity).toFixed(2)}</span>
                 </div>
-                <p className="text-xs text-gray-400 leading-relaxed">
-                  {t.priceNoteDetail}
-                </p>
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-500">{t.designFee}</span>
+                  <span className="font-medium text-gray-900">HK$0.00</span>
+                </div>
+                <div className="flex justify-between text-sm">
+                  <span className="text-gray-500">{t.shippingLabel}</span>
+                  <span className="font-medium text-gray-400">{t.shippingNote}</span>
+                </div>
+                <div className="border-t border-gray-200 pt-3">
+                  <div className="flex justify-between items-baseline">
+                    <span className="font-semibold text-gray-900">{t.totalAmount}</span>
+                    <span className="text-xl font-bold text-[#F87314]">HK${calculatedPrice.totalPrice.toLocaleString()}</span>
+                  </div>
+                </div>
+                <div className="text-xs text-gray-400">
+                  {t.estDelivery}: 3-5 {t.days}
+                </div>
               </div>
               {/* 报价按钮 */}
               <div className="flex gap-3">
