@@ -283,12 +283,12 @@ export function Header({ locale }: HeaderProps) {
 
   const navLinkClass = (isActive: boolean) =>
     `flex-1 h-full w-full flex items-center justify-center text-[16px] font-medium transition-colors ${
-      isActive ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'
+      isActive ? 'text-[#F87314]' : 'text-white/90 hover:bg-white/10 hover:text-white'
     }`;
 
   const catNavLinkClass = (catSlug: string) =>
     `h-full w-full flex items-center justify-center gap-1 text-[16px] font-medium transition-colors ${
-      pathname.includes(`/category/${catSlug}`) ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'
+      pathname.includes(`/category/${catSlug}`) ? 'text-[#F87314]' : 'text-white/90 hover:bg-white/10 hover:text-white'
     }`;
 
   return (
@@ -417,7 +417,7 @@ export function Header({ locale }: HeaderProps) {
 
               {/* 印刷知識 - 帶下拉菜單 */}
               <div className="relative h-full flex-1" onMouseEnter={() => setActiveDropdown('blog')} onMouseLeave={() => setActiveDropdown(null)}>
-                <Link href={`${localePrefix}/blog/`} className={`h-full w-full flex items-center justify-center gap-1 text-[16px] font-medium transition-colors ${pathname.includes('/blog') ? 'bg-white/20 text-white' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}>
+                <Link href={`${localePrefix}/blog/`} className={`h-full w-full flex items-center justify-center gap-1 text-[16px] font-medium transition-colors ${pathname.includes('/blog') ? 'text-[#F87314]' : 'text-white/90 hover:bg-white/10 hover:text-white'}`}>
                   {t.knowledge}<ChevronDown className={`w-3.5 h-3.5 transition-transform ${activeDropdown === 'blog' ? 'rotate-180' : ''}`} />
                 </Link>
                 {activeDropdown === 'blog' && (

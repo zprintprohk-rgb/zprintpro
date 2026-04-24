@@ -126,17 +126,17 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
           ) : null}
         </div>
 
-        {/* dual buttons */}
-        <div className="flex gap-2 mt-auto">
+        {/* dual buttons — half length, centered */}
+        <div className="flex gap-2 mt-auto justify-center">
           <Link
             href={`${localePrefix}/product/${product.slug}/`}
-            className="flex-1 text-center py-2 border border-gray-300 text-gray-700 rounded-lg text-sm font-medium hover:border-[#2873F5] hover:text-[#2873F5] transition-colors"
+            className="flex-1 max-w-[140px] text-center py-2 border border-gray-300 text-gray-700 rounded-lg text-sm font-medium hover:border-[#2873F5] hover:text-[#2873F5] transition-colors"
           >
             {t.viewMore}
           </Link>
           <Link
             href={`${localePrefix}/contact/?product=${product.slug}`}
-            className="flex-1 text-center py-2 bg-[#3090FF] text-white rounded-lg text-sm font-medium hover:bg-[#1E5FD1] transition-colors"
+            className="flex-1 max-w-[140px] text-center py-2 bg-[#3090FF] text-white rounded-lg text-sm font-medium hover:bg-[#1E5FD1] transition-colors"
           >
             {t.getQuote}
           </Link>

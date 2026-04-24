@@ -31,6 +31,7 @@ import { ProductFaq } from '@/components/ProductFaq';
 import { ProductHowTo } from '@/components/ProductHowTo';
 import { getProductSeo } from '@/data/product-seo';
 import { RegionalContent, RegionalCta, RegionalTrustBadges } from '@/components/seo/RegionalContent';
+import { ProductWhyChooseUs } from '@/components/ProductWhyChooseUs';
 
 // 生成静态参数 - 79产品 × 3语言 = 237个路径
 export function generateStaticParams() {
@@ -249,25 +250,19 @@ export default function ProductPage({
               
               {/* 价格显示 — 去色块简洁风格 */}
               <div className="mb-5">
-                <div className="flex items-center justify-between mb-2">
-                  <span className="text-sm text-gray-500">{t.priceRange}</span>
-                  <span className="text-xs text-gray-400">
-                    {locale === 'zh-hk' ? '價格以客服確認為準' : locale === 'en' ? 'Price subject to confirmation' : '価格は確認が必要'}
-                  </span>
-                </div>
-                <div className="flex items-baseline gap-2 mb-1">
-                  <span className="text-3xl font-extrabold text-[#F87314]">
+                <div className="flex items-baseline gap-2 mb-1 flex-wrap">
+                  <span className="text-[33px] font-extrabold text-[#F87314] leading-tight">
                     {product.price_range.split('-')[0]}
                   </span>
                   <span className="text-sm text-gray-400">
                     {product.price_range.includes('/100') ? '/100張起' : product.price_range.includes('/個') ? '/個起' : '/張起'}
                   </span>
+                  <span className="text-xs text-gray-400 ml-1">
+                    {locale === 'zh-hk' ? `完整價格 ${product.price_range}` : locale === 'en' ? `Full price ${product.price_range}` : `価格 ${product.price_range}`}
+                  </span>
                 </div>
-                <p className="text-xs text-gray-400">
-                  {locale === 'zh-hk' ? `完整價格: ${product.price_range}` : locale === 'en' ? `Full price: ${product.price_range}` : `価格: ${product.price_range}`}
-                </p>
                 <div className="flex flex-wrap gap-3 mt-3">
-                  <span className="inline-flex items-center gap-1 text-sm text-gray-600">
+                  <span className="inline-flex items-center gap-1 text-base text-gray-600">
                     <svg className="w-4 h-4 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
                     {t.sameDay}
                   </span>
@@ -347,12 +342,7 @@ export default function ProductPage({
           
           {/* 地區化內容區域 */}
           <div className="mt-16 pt-10 border-t border-gray-200 space-y-8">
-            <div>
-              <h3 className="text-lg font-bold text-[#333333] mb-4 text-center">
-                {locale === 'zh-hk' ? '為何選擇智印港？' : locale === 'en' ? 'Why Choose ZprintPro?' : 'なぜZprintProを選ぶ？'}
-              </h3>
-              <RegionalTrustBadges locale={locale} />
-            </div>
+            <ProductWhyChooseUs locale={locale} />
             <div className="p-6">
               <p className="text-gray-600 text-sm leading-relaxed">
                 <RegionalContent locale={locale} type="expertIntro" />

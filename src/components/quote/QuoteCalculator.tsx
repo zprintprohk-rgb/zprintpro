@@ -41,11 +41,12 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
       step2: '選擇紙張材質',
       step3: '選擇表面工藝',
       step4: '選擇印刷數量',
-      unitPrice: '參考單價',
-      totalPrice: '參考總價',
+      unitPrice: '單價',
+      totalPrice: '總價',
       getQuote: '聯繫客服確認價格',
       addToCart: '加入購物車',
-      getQuoteBtn: '獲取報價',
+      getQuoteBtn: '聯繫客服確認價格',
+      orderNow: '立即訂購',
       uploadDesign: '上傳設計稿',
       designNote: '支持 PDF, AI, PSD, PNG, JPG 格式（最大50MB）',
       deliveryTime: '預計交貨',
@@ -63,11 +64,12 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
       step2: 'Select Paper Material',
       step3: 'Select Finish',
       step4: 'Select Quantity',
-      unitPrice: 'Est. Unit Price',
-      totalPrice: 'Est. Total Price',
+      unitPrice: 'Unit Price',
+      totalPrice: 'Total Price',
       getQuote: 'Contact Us for Pricing',
       addToCart: 'Add to Cart',
-      getQuoteBtn: 'Get Quote',
+      getQuoteBtn: 'Contact for Price',
+      orderNow: 'Order Now',
       uploadDesign: 'Upload Design',
       designNote: 'Support PDF, AI, PSD, PNG, JPG (max 50MB)',
       deliveryTime: 'Est. Delivery',
@@ -85,11 +87,12 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
       step2: '紙質を選択',
       step3: '加工を選択',
       step4: '数量を選択',
-      unitPrice: '参考単価',
-      totalPrice: '参考合計',
+      unitPrice: '単価',
+      totalPrice: '合計',
       getQuote: 'お問い合わせで価格確認',
       addToCart: 'カートに追加',
-      getQuoteBtn: '見積もり',
+      getQuoteBtn: '価格確認の問い合わせ',
+      orderNow: '今すぐ注文',
       uploadDesign: 'デザインをアップロード',
       designNote: 'PDF, AI, PSD, PNG, JPG対応（最大50MB）',
       deliveryTime: '予定納期',
@@ -262,7 +265,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
               {t.selected}: <span className="font-medium text-[#2873F5]">{getSelectedLabel('materials', config.material)}</span>
             </span>
           </div>
-          <div className="grid grid-cols-1 gap-2">
+          <div className="grid grid-cols-2 gap-2">
             {product.variables!.materials!.map((material, idx) => {
               const isPopular = idx === 0;
               const isSelected = config.material === material.value;
@@ -429,25 +432,23 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
         {/* 操作按钮 */}
         <div className="space-y-2">
           <button
-            onClick={handleWhatsApp}
-            className="w-full py-3 bg-[#2873F5] text-white rounded-lg font-bold hover:bg-[#1E5FD1] transition-colors flex items-center justify-center gap-2"
+            onClick={() => router.push(`/${locale}/contact/?product=${product.slug}`)}
+            className="w-full py-3 bg-[#F87314] text-white rounded-lg font-bold hover:bg-[#E56203] transition-colors flex items-center justify-center gap-2"
           >
-            <MessageCircle className="w-5 h-5" />
-            {t.getQuote}
+            <Zap className="w-5 h-5" />
+            {t.orderNow}
           </button>
-          <div className="flex gap-2">
-            <button className="flex-1 py-2.5 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors text-sm flex items-center justify-center gap-1.5">
-              <ShoppingCart className="w-4 h-4" />
-              {t.addToCart}
-            </button>
-            <button
-              onClick={() => router.push(`/${locale}/contact/?product=${product.slug}`)}
-              className="flex-1 py-2.5 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors text-sm flex items-center justify-center gap-1.5"
-            >
-              <Zap className="w-4 h-4" />
-              {t.getQuoteBtn}
-            </button>
-          </div>
+          <button className="w-full py-2.5 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors text-sm flex items-center justify-center gap-1.5">
+            <ShoppingCart className="w-4 h-4" />
+            {t.addToCart}
+          </button>
+          <button
+            onClick={handleWhatsApp}
+            className="w-full py-2.5 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors text-sm flex items-center justify-center gap-1.5"
+          >
+            <MessageCircle className="w-4 h-4" />
+            {t.getQuoteBtn}
+          </button>
         </div>
       </div>
     </div>

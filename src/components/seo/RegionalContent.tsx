@@ -76,8 +76,8 @@ export function RegionalTrustBadges({ locale }: { locale: Locale }) {
   const badges = {
     'zh-hk': [
       { icon: '🏭', label: '觀塘實體工廠' },
-      { icon: '🚇', label: '港鐵站交收' },
-      { icon: '🚚', label: '全港免運' },
+      { icon: '🚚', label: '順豐直達' },
+      { icon: '🎨', label: '免費打樣' },
       { icon: '⚡', label: '即日交貨' },
     ],
     'en': [

@@ -55,10 +55,10 @@ export function RelatedProducts({ currentProduct, locale }: RelatedProductsProps
               />
             </div>
             <div className="p-3">
-              <h3 className="text-sm font-medium text-gray-900 line-clamp-1 group-hover:text-[#2873F5]">
+              <h3 className="text-lg font-medium text-gray-900 line-clamp-1 group-hover:text-[#2873F5]">
                 {getProductTitle(product, locale)}
               </h3>
-              <p className="text-xs text-gray-500 mt-1">{product.price_range}</p>
+              <p className="text-sm text-[#F87314] font-semibold mt-1">{product.price_range}</p>
             </div>
           </a>
         ))}
