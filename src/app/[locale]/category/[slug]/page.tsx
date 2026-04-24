@@ -244,7 +244,7 @@ export default function CategoryPage({
         <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="flex flex-col lg:flex-row gap-6">
             {/* 左侧分类导航 */}
-            <aside className="w-full lg:w-64 flex-shrink-0">
+            <aside className="w-full lg:w-56 flex-shrink-0">
               <CategorySidebar locale={locale} currentCategorySlug={slug} />
             </aside>
 

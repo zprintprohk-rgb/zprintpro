@@ -168,7 +168,7 @@ export function HotProducts({ locale }: HotProductsProps) {
                     <Link
                       key={cat.slug}
                       href={`${localePrefix}/category/${cat.slug}/`}
-                      className={`flex items-center justify-between px-4 py-3.5 text-[15.5px] transition-colors border-b border-gray-100 ${
+                      className={`flex items-center justify-between px-4 ${isEducational ? 'py-5' : 'py-4'} text-[15.5px] transition-colors border-b border-gray-100 ${
                         isEducational
                           ? 'bg-gray-400 text-white hover:bg-[#2873F5]'
                           : isActive

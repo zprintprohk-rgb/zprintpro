@@ -99,7 +99,7 @@ export function CategorySidebar({ locale, currentCategorySlug }: CategorySidebar
             <Link
               key={cat.slug}
               href={`${localePrefix}/category/${cat.slug}/`}
-              className={`flex items-center justify-between px-4 py-3.5 border-b border-gray-100 last:border-b-0 transition-colors group ${
+              className={`flex items-center justify-between px-4 ${isEducational ? 'py-5' : 'py-4'} border-b border-gray-100 last:border-b-0 transition-colors group ${
                 isEducational
                   ? 'bg-gray-400 text-white hover:bg-[#2873F5]'
                   : isActive
