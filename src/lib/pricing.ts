@@ -96,12 +96,9 @@ const EXCHANGE_RATES: Record<Locale, { rate: number; symbol: string }> = {
   'ja':    { rate: 58.5, symbol: '¥' },      // 19.5 JPY/HKD × 3
 };
 
-/** 需要显示价格的分类（其余显示"需報價"） */
-const PRICE_VISIBLE_CATEGORIES = ['flyers', 'posters', 'banners', 'stickers', 'business-cards', 'menus', 'envelopes', 'red-packets'];
-
-/** 判断该分类是否显示价格 */
-export function shouldShowPrice(categorySlug: string): boolean {
-  return PRICE_VISIBLE_CATEGORIES.includes(categorySlug);
+/** 所有分类都显示价格 */
+export function shouldShowPrice(_categorySlug: string): boolean {
+  return true;
 }
 
 /** 获取分类的报价提示文案 */

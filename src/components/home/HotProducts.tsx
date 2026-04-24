@@ -19,7 +19,7 @@ const translations = {
     subtitle: '專業品質，價格透明，快速交貨',
     viewAll: '查看全部產品',
     categoryTitle: '產品分類',
-    getQuote: '獲取報價',
+    getQuote: '立即訂購',
     viewMore: '查詢更多',
     hotBadge: '熱銷',
     popular: '熱門',
@@ -36,7 +36,7 @@ const translations = {
     subtitle: 'Professional quality, transparent pricing, fast delivery',
     viewAll: 'View All Products',
     categoryTitle: 'Categories',
-    getQuote: 'Get Quote',
+    getQuote: 'Order Now',
     viewMore: 'View More',
     hotBadge: 'Hot',
     popular: 'Popular',
@@ -53,7 +53,7 @@ const translations = {
     subtitle: 'プロ品質、透明な価格、迅速な納品',
     viewAll: 'すべての製品を見る',
     categoryTitle: 'カテゴリー',
-    getQuote: '見積もり',
+    getQuote: '今すぐ注文',
     viewMore: '詳細を見る',
     hotBadge: '人気',
     popular: '人気',
@@ -240,15 +240,15 @@ export function HotProducts({ locale }: HotProductsProps) {
                     key={product.sku_code}
                     className="group bg-white rounded-xl border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-300"
                   >
-                    {/* Image — 1:1, not clickable */}
-                    <div className="aspect-square relative overflow-hidden bg-gray-50">
+                    {/* Image — 1:1, clickable to PDP */}
+                    <Link href={`${localePrefix}/product/${product.slug}/`} className="aspect-square relative overflow-hidden bg-gray-50 block">
                       <ProductImage src={imageSrc} alt={getProductImageAlt(product, locale)} />
                       {product.isHot && (
                         <div className="absolute top-3 left-3 bg-red-500 text-white text-xs font-bold px-2.5 py-1 rounded">
                           {t.hotBadge}
                         </div>
                       )}
-                    </div>
+                    </Link>
 
                     {/* Info */}
                     <div className="p-4">
@@ -258,13 +258,11 @@ export function HotProducts({ locale }: HotProductsProps) {
                       <p className="text-sm text-gray-500 line-clamp-2 mb-2 text-center h-[40px]">
                         {productDesc}
                       </p>
-                      {/* price area — fixed height for alignment */}
+                      {/* price area — fixed height for alignment, clickable to PDP */}
                       <div className="h-[24px] mb-2 flex items-center justify-center">
-                        {shouldShowPrice(product.category) && (
-                          <span className="text-[#F87314] font-bold text-sm tracking-wider">
-                            {convertPriceRangeString(product.price_range, locale)}
-                          </span>
-                        )}
+                        <Link href={`${localePrefix}/product/${product.slug}/`} className="text-[#F87314] font-bold text-sm tracking-wider hover:underline">
+                          {convertPriceRangeString(product.price_range, locale)}
+                        </Link>
                       </div>
                       {/* dual buttons */}
                       <div className="flex gap-2">
@@ -275,7 +273,7 @@ export function HotProducts({ locale }: HotProductsProps) {
                           {t.viewMore}
                         </Link>
                         <Link
-                          href={`${localePrefix}/contact/?product=${product.slug}`}
+                          href={`${localePrefix}/product/${product.slug}/`}
                           className="flex-1 text-center py-2 bg-[#3090FF] text-white rounded-lg text-sm font-medium hover:bg-[#1E5FD1] transition-colors"
                         >
                           {t.getQuote}

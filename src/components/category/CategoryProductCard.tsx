@@ -36,9 +36,9 @@ const categoryFallbacks: Record<string, { icon: typeof Box; bgColor: string; ico
 };
 
 const translations = {
-  'zh-hk': { hot: '熱銷', getQuote: '獲取報價', viewMore: '查詢更多', from: '起' },
-  'en': { hot: 'Hot', getQuote: 'Get Quote', viewMore: 'View More', from: 'From' },
-  'ja': { hot: '人気', getQuote: '見積もり', viewMore: '詳細を見る', from: 'から' },
+  'zh-hk': { hot: '熱銷', getQuote: '立即訂購', viewMore: '查詢更多', from: '起' },
+  'en': { hot: 'Hot', getQuote: 'Order Now', viewMore: 'View More', from: 'From' },
+  'ja': { hot: '人気', getQuote: '今すぐ注文', viewMore: '詳細を見る', from: 'から' },
 };
 
 export function CategoryProductCard({ product, locale, index }: CategoryProductCardProps) {
@@ -87,14 +87,14 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
         </div>
       )}
 
-      {/* image — 1:1, not clickable, full width like homepage */}
-      <div className="aspect-square relative overflow-hidden bg-gray-50">
+      {/* image — 1:1, clickable to PDP */}
+      <Link href={`${localePrefix}/product/${product.slug}/`} className="aspect-square relative overflow-hidden bg-gray-50 block">
         {hasImage ? (
           <Image
             src={imageSrc}
             alt={getName()}
             fill
-            className="object-cover"
+            className="object-cover group-hover:scale-105 transition-transform duration-500"
             unoptimized
             onError={() => setImgError(true)}
           />
@@ -103,7 +103,7 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
             <FallbackIcon className={`w-16 h-16 ${fallback.iconColor}`} strokeWidth={1.5} />
           </div>
         )}
-      </div>
+      </Link>
 
       {/* product name + desc */}
       <div className="px-4 pt-2">
@@ -116,14 +116,12 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
 
       {/* price + dual buttons */}
       <div className="p-4 flex flex-col flex-1">
-        {/* price area — fixed height for alignment */}
+        {/* price area — fixed height for alignment, clickable to PDP */}
         <div className="h-[28px] mb-2 flex items-center justify-center">
-          {showPrice ? (
-            <span className="text-[#F87314] font-bold text-base">
-              {convertPriceRangeString(product.price_range, locale).split('-')[0]}
-              <span className="text-xs text-gray-400 ml-1">{t.from}</span>
-            </span>
-          ) : null}
+          <Link href={`${localePrefix}/product/${product.slug}/`} className="text-[#F87314] font-bold text-base hover:underline">
+            {convertPriceRangeString(product.price_range, locale).split('-')[0]}
+            <span className="text-xs text-gray-400 ml-1">{t.from}</span>
+          </Link>
         </div>
 
         {/* dual buttons — half length, centered */}
@@ -135,7 +133,7 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
             {t.viewMore}
           </Link>
           <Link
-            href={`${localePrefix}/contact/?product=${product.slug}`}
+            href={`${localePrefix}/product/${product.slug}/`}
             className="flex-1 max-w-[140px] text-center py-2 bg-[#3090FF] text-white rounded-lg text-sm font-medium hover:bg-[#1E5FD1] transition-colors"
           >
             {t.getQuote}
