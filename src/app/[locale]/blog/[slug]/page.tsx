@@ -40,6 +40,7 @@ const translations = {
 
 // 文章圖片映射
 const articleImages: Record<string, string> = {
+  'company-intro': '/images/factory/factory-banner.jpg',
   'hong-kong-printing-guide': '/images/articles/brand-story.jpg',
   'design-file-specs': '/images/articles/cmyk-rgb.jpg',
   'brand-materials-checklist': '/images/articles/lai-see.jpg',
@@ -57,6 +58,113 @@ const defaultArticleImage = '/images/articles/sticker-guide.jpg';
 // Legacy posts (existing 10 articles per locale)
 const posts: Record<string, Record<string, { title: string; description: string; date: string; category: string; content: string }>> = {
   'zh-hk': {
+    'company-intro': {
+      title: '智印港印刷公司簡介：專業設備與一站式印刷服務',
+      description: '智印港擁有海德堡6+1印刷機、HP數碼印刷機、馬天尼膠裝線等先進設備，提供從設計到印刷到後加工的一站式服務，服務香港及大灣區客戶超過15年。',
+      date: '2024-06-01', category: '公司新聞',
+      content: `<p>智印港（ZprintPro）是一家專業的綜合性印刷服務企業，深耕香港及大灣區市場超過15年。我們致力於為企業客戶提供從設計、印刷到後加工的一站式解決方案，涵蓋商務印刷、包裝印刷、出版印刷及數碼印刷等多個領域。</p>
+<h3>一、企業概況</h3>
+<p>智印港總部位於深圳，毗鄰香港，擁有現代化標準廠房逾8,000平方米。公司配備了國際領先的印刷及後加工設備，年產能達到數億印張。我們的客戶遍及金融、地產、零售、教育、醫療等多個行業，為眾多知名企業提供長期穩定的印刷服務。</p>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 my-6">
+  <div class="bg-gray-50 rounded-xl p-4 text-center">
+    <p class="text-2xl font-bold text-[#F87314]">8,000+</p>
+    <p class="text-sm text-gray-500 mt-1">平方米廠房面積</p>
+  </div>
+  <div class="bg-gray-50 rounded-xl p-4 text-center">
+    <p class="text-2xl font-bold text-[#F87314]">200+</p>
+    <p class="text-sm text-gray-500 mt-1">專業員工</p>
+  </div>
+  <div class="bg-gray-50 rounded-xl p-4 text-center">
+    <p class="text-2xl font-bold text-[#F87314]">50+</p>
+    <p class="text-sm text-gray-500 mt-1">台先進設備</p>
+  </div>
+  <div class="bg-gray-50 rounded-xl p-4 text-center">
+    <p class="text-2xl font-bold text-[#F87314]">15+</p>
+    <p class="text-sm text-gray-500 mt-1">年行業經驗</p>
+  </div>
+</div>
+<h3>二、核心印刷設備</h3>
+<p>工欲善其事，必先利其器。智印港始終堅持以最先進的設備保障出品質量，主要印刷設備包括：</p>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
+  <div class="rounded-xl overflow-hidden border border-gray-100">
+    <img src="/images/factory/factory-heidelberg-6plus1.jpg" alt="海德堡全新6+1印刷機" class="w-full aspect-[4/3] object-cover"/>
+    <div class="p-3">
+      <p class="font-semibold text-sm text-[#333333]">海德堡全新6+1印刷機</p>
+      <p class="text-xs text-gray-500 mt-1">高精度色彩還原，適合高端商務印刷</p>
+    </div>
+  </div>
+  <div class="rounded-xl overflow-hidden border border-gray-100">
+    <img src="/images/factory/factory-hp-digital.png" alt="HP數碼印刷機" class="w-full aspect-[4/3] object-cover"/>
+    <div class="p-3">
+      <p class="font-semibold text-sm text-[#333333]">HP數碼印刷機</p>
+      <p class="text-xs text-gray-500 mt-1">支持可變數據印刷，短版快印首選</p>
+    </div>
+  </div>
+  <div class="rounded-xl overflow-hidden border border-gray-100">
+    <img src="/images/factory/factory-weigang-uv.jpg" alt="煒岡6色UV輪轉機" class="w-full aspect-[4/3] object-cover"/>
+    <div class="p-3">
+      <p class="font-semibold text-sm text-[#333333]">煒岡6色UV輪轉機</p>
+      <p class="text-xs text-gray-500 mt-1">UV固化技術，即印即乾，效率極高</p>
+    </div>
+  </div>
+  <div class="rounded-xl overflow-hidden border border-gray-100">
+    <img src="/images/factory/factory-color-chart.jpg" alt="印刷機長色卡校對" class="w-full aspect-[4/3] object-cover"/>
+    <div class="p-3">
+      <p class="font-semibold text-sm text-[#333333]">專業色彩管理</p>
+      <p class="text-xs text-gray-500 mt-1">機長級色彩校對，確保批次一致性</p>
+    </div>
+  </div>
+</div>
+<h3>三、後加工設備</h3>
+<p>除了強大的印刷能力，智印港還配備了完善的後加工生產線，滿足客戶多樣化的工藝需求：</p>
+<ul class="list-disc pl-5 my-3 space-y-1">
+<li><strong>馬天尼膠裝線</strong>：全自動膠裝，適合書刊、畫冊的大量生產</li>
+<li><strong>海德堡折頁機群</strong>：多台聯動，支持多種折頁方式</li>
+<li><strong>全自動糊盒機</strong>：高效完成包裝盒的糊盒工序</li>
+<li><strong>模切、燙金、UV</strong>：多種表面處理工藝一站式完成</li>
+</ul>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
+  <div class="rounded-xl overflow-hidden border border-gray-100">
+    <img src="/images/factory/factory-martini-1.jpg" alt="馬天尼膠裝車間" class="w-full aspect-[4/3] object-cover"/>
+    <div class="p-3">
+      <p class="font-semibold text-sm text-[#333333]">馬天尼膠裝車間</p>
+    </div>
+  </div>
+  <div class="rounded-xl overflow-hidden border border-gray-100">
+    <img src="/images/factory/factory-heidelberg-folding.jpg" alt="海德堡折頁機群" class="w-full aspect-[4/3] object-cover"/>
+    <div class="p-3">
+      <p class="font-semibold text-sm text-[#333333]">海德堡折頁機群</p>
+    </div>
+  </div>
+  <div class="rounded-xl overflow-hidden border border-gray-100">
+    <img src="/images/factory/factory-gluing.jpg" alt="糊盒機車間" class="w-full aspect-[4/3] object-cover"/>
+    <div class="p-3">
+      <p class="font-semibold text-sm text-[#333333]">全自動糊盒機車間</p>
+    </div>
+  </div>
+  <div class="rounded-xl overflow-hidden border border-gray-100">
+    <img src="/images/factory/factory-manual.jpg" alt="手工工藝車間" class="w-full aspect-[4/3] object-cover"/>
+    <div class="p-3">
+      <p class="font-semibold text-sm text-[#333333]">手工精裝工藝車間</p>
+    </div>
+  </div>
+</div>
+<h3>四、品質與服務承諾</h3>
+<p>智印港始終堅持「品質第一、客戶至上」的經營理念：</p>
+<ul class="list-disc pl-5 my-3 space-y-1">
+<li>全線採用環保油墨及紙張，通過ISO9001質量管理體系認證</li>
+<li>專業跟單團隊一對一服務，從報價到交貨全程跟進</li>
+<li>香港地區滿HK$500免運費，支持送貨上門</li>
+<li>急件支持24小時內交貨，滿足緊急商務需求</li>
+</ul>
+<h3>五、聯繫我們</h3>
+<p>無論您是需要名片、傳單、畫冊，還是禮品盒、紙袋、標籤貼紙，智印港都能為您提供專業的印刷解決方案。歡迎蒞臨參觀我們的工廠，或通過以下方式聯繫：</p>
+<div class="bg-gray-50 rounded-xl p-5 my-4 space-y-2">
+<p><strong>WhatsApp：</strong><a href="https://wa.me/8618126380255" target="_blank">+86 181 2638 0255</a>（唐先生）</p>
+<p><strong>服務時間：</strong>週一至週六 09:00 - 18:00</p>
+<p><strong>工廠地址：</strong>深圳市龍華區（毗鄰香港，物流便捷）</p>
+</div>`,
+    },
     'sticker-guide': {
       title: '香港貼紙印刷完全指南：材質、工藝與應用場景详解',
       description: '深入了解香港貼紙印刷的各種材質選擇、表面處理工藝以及不同場景的應用建議。智印港專家為您詳解防水貼紙、透明貼紙、燙金貼紙等熱門選項。',
@@ -249,6 +357,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
     },
   },
   en: {
+    'company-intro': { title: 'About ZprintPro: Professional Equipment & One-Stop Printing Services', description: 'ZprintPro features Heidelberg 6+1 printing presses, HP digital printers, and Martini perfect binding lines for full-service printing solutions.', date: '2024-06-01', category: 'Company News', content: `<p>ZprintPro is a professional integrated printing service company with over 15 years of experience serving Hong Kong and the Greater Bay Area. We provide one-stop solutions from design to printing to post-processing.</p><h3>Company Overview</h3><p>Our modern factory covers over 8,000 square meters, equipped with international leading printing and post-processing equipment. We serve clients across finance, real estate, retail, education, and healthcare industries.</p><div class="grid grid-cols-2 md:grid-cols-4 gap-4 my-6"><div class="bg-gray-50 rounded-xl p-4 text-center"><p class="text-2xl font-bold text-[#F87314]">8,000+</p><p class="text-sm text-gray-500 mt-1">sqm Factory</p></div><div class="bg-gray-50 rounded-xl p-4 text-center"><p class="text-2xl font-bold text-[#F87314]">200+</p><p class="text-sm text-gray-500 mt-1">Staff</p></div><div class="bg-gray-50 rounded-xl p-4 text-center"><p class="text-2xl font-bold text-[#F87314]">50+</p><p class="text-sm text-gray-500 mt-1">Machines</p></div><div class="bg-gray-50 rounded-xl p-4 text-center"><p class="text-2xl font-bold text-[#F87314]">15+</p><p class="text-sm text-gray-500 mt-1">Years</p></div></div><h3>Core Printing Equipment</h3><div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6"><div class="rounded-xl overflow-hidden border border-gray-100"><img src="/images/factory/factory-heidelberg-6plus1.jpg" alt="Heidelberg 6+1 Printing Machine" class="w-full aspect-[4/3] object-cover"/><div class="p-3"><p class="font-semibold text-sm text-[#333333]">Heidelberg 6+1 Printing Press</p><p class="text-xs text-gray-500 mt-1">High-precision color reproduction</p></div></div><div class="rounded-xl overflow-hidden border border-gray-100"><img src="/images/factory/factory-hp-digital.png" alt="HP Digital Printer" class="w-full aspect-[4/3] object-cover"/><div class="p-3"><p class="font-semibold text-sm text-[#333333]">HP Digital Printer</p><p class="text-xs text-gray-500 mt-1">Variable data printing support</p></div></div><div class="rounded-xl overflow-hidden border border-gray-100"><img src="/images/factory/factory-weigang-uv.jpg" alt="Weigang 6-Color UV Rotary Press" class="w-full aspect-[4/3] object-cover"/><div class="p-3"><p class="font-semibold text-sm text-[#333333]">Weigang 6-Color UV Rotary</p><p class="text-xs text-gray-500 mt-1">Instant UV curing technology</p></div></div><div class="rounded-xl overflow-hidden border border-gray-100"><img src="/images/factory/factory-color-chart.jpg" alt="Color Management" class="w-full aspect-[4/3] object-cover"/><div class="p-3"><p class="font-semibold text-sm text-[#333333]">Professional Color Management</p><p class="text-xs text-gray-500 mt-1">Consistent batch quality</p></div></div></div><h3>Post-Processing Equipment</h3><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Martini Perfect Binding Line</strong>: Automated book binding</li><li><strong>Heidelberg Folding Machines</strong>: Multi-unit folding capacity</li><li><strong>Automatic Carton Gluing</strong>: Efficient packaging production</li><li><strong>Die-cutting, Foil, UV</strong>: Comprehensive finishing</li></ul><div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6"><div class="rounded-xl overflow-hidden border border-gray-100"><img src="/images/factory/factory-martini-1.jpg" alt="Martini Binding Workshop" class="w-full aspect-[4/3] object-cover"/><div class="p-3"><p class="font-semibold text-sm text-[#333333]">Martini Perfect Binding Workshop</p></div></div><div class="rounded-xl overflow-hidden border border-gray-100"><img src="/images/factory/factory-heidelberg-folding.jpg" alt="Heidelberg Folding" class="w-full aspect-[4/3] object-cover"/><div class="p-3"><p class="font-semibold text-sm text-[#333333]">Heidelberg Folding Machines</p></div></div><div class="rounded-xl overflow-hidden border border-gray-100"><img src="/images/factory/factory-gluing.jpg" alt="Gluing Workshop" class="w-full aspect-[4/3] object-cover"/><div class="p-3"><p class="font-semibold text-sm text-[#333333]">Automatic Carton Gluing</p></div></div><div class="rounded-xl overflow-hidden border border-gray-100"><img src="/images/factory/factory-manual.jpg" alt="Manual Workshop" class="w-full aspect-[4/3] object-cover"/><div class="p-3"><p class="font-semibold text-sm text-[#333333]">Handcraft Finishing Workshop</p></div></div></div><h3>Contact Us</h3><div class="bg-gray-50 rounded-xl p-5 my-4 space-y-2"><p><strong>WhatsApp:</strong> <a href="https://wa.me/8618126380255" target="_blank">+86 181 2638 0255</a></p><p><strong>Hours:</strong> Mon-Sat 09:00 - 18:00</p></div>` },
     'sticker-guide': { title: 'Complete Sticker Printing Guide: Materials, Finishes & Applications', description: 'Deep dive into sticker material choices, surface treatments, and application scenarios.', date: '2024-04-15', category: 'Sticker Guide', content: `<p>Stickers are essential elements in brand promotion and product packaging. This guide covers everything you need to know about sticker printing in Hong Kong.</p><h3>Material Comparison</h3><p>Choose from art paper, waterproof synthetic, transparent PET, and holographic options. Each material serves different purposes and environments.</p><h3>Surface Finishes</h3><p>Glossy, matte, foil stamping, and spot UV each create unique visual effects. Select based on your brand positioning.</p><p>Order your <a href="/en/product/waterproof-stickers/">waterproof stickers</a> or <a href="/en/product/transparent-stickers/">transparent stickers</a> today!</p>` },
     'business-card-design': { title: '10 Golden Rules for Business Card Design', description: 'Master the core techniques of business card design.', date: '2024-04-10', category: 'Card Guide', content: `<p>Business cards create the first impression in commercial interactions. Here are 10 golden rules from ZprintPro design experts.</p><h3>Rule 1: White Space is Essential</h3><p>Don't overcrowd your card. Leave adequate breathing room for key information.</p><p>Order <a href="/en/product/premium-business-cards/">premium business cards</a> with professional design support.</p>` },
     'packaging-trends': { title: '2024 Packaging Design Trends Analysis', description: 'Explore latest packaging design trends.', date: '2024-04-05', category: 'Packaging Guide', content: `<p>Packaging design is undergoing a revolution. Discover the top trends for 2024.</p><h3>Trend 1: Minimalism Continues</h3><p>Clean, simple designs with ample white space dominate the market.</p><p>Get your <a href="/en/product/gift-boxes/">custom gift boxes</a> today!</p>` },
@@ -261,6 +370,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
     'mtr-advertising-specs': { title: 'MTR Advertising Print Specs: Island, Kwun Tong & Tsuen Wan Lines', description: 'Detailed specifications and strategies for MTR advertising across Hong Kong.', date: '2024-05-05', category: 'Hong Kong Local', content: `<p>Hong Kong's MTR serves over 5 million passengers daily. This guide covers advertising specs and placement strategies.</p><h3>Advertising Formats</h3><ul class="list-disc pl-5 my-3 space-y-1"><li>Platform lightboxes (12-sheet / 48-sheet)</li><li>Concourse displays</li><li>Platform screen door ads</li><li>Train interior posters</li></ul><p><a href="https://wa.me/8618126380255" target="_blank">Contact us</a> for MTR advertising material printing.</p>` },
   },
   ja: {
+    'company-intro': { title: 'ZprintPro会社概要：専門設備とワンストップ印刷サービス', description: 'ZprintProはハイデルベルグ6+1印刷機、HPデジタル印刷機、マルティニ製本ラインなどの先進設備を保有し、ワンストップ印刷サービスを提供しています。', date: '2024-06-01', category: '会社ニュース', content: `<p>ZprintProは香港および大湾エリアで15年以上の実績を持つ総合印刷サービス企業です。デザインから印刷、後加工までワンストップでご提供いたします。</p><h3>企業概要</h3><p>深圳に本社を置き、8,000平方メートル以上の現代工場を保有。金融、不動産、小売、教育、医療など幅広い業界のお客様にご利用いただいております。</p><div class="grid grid-cols-2 md:grid-cols-4 gap-4 my-6"><div class="bg-gray-50 rounded-xl p-4 text-center"><p class="text-2xl font-bold text-[#F87314]">8,000+</p><p class="text-sm text-gray-500 mt-1">平方メートル</p></div><div class="bg-gray-50 rounded-xl p-4 text-center"><p class="text-2xl font-bold text-[#F87314]">200+</p><p class="text-sm text-gray-500 mt-1">従業員</p></div><div class="bg-gray-50 rounded-xl p-4 text-center"><p class="text-2xl font-bold text-[#F87314]">50+</p><p class="text-sm text-gray-500 mt-1">設備</p></div><div class="bg-gray-50 rounded-xl p-4 text-center"><p class="text-2xl font-bold text-[#F87314]">15+</p><p class="text-sm text-gray-500 mt-1">年の実績</p></div></div><h3>主要印刷設備</h3><div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6"><div class="rounded-xl overflow-hidden border border-gray-100"><img src="/images/factory/factory-heidelberg-6plus1.jpg" alt="ハイデルベルグ6+1印刷機" class="w-full aspect-[4/3] object-cover"/><div class="p-3"><p class="font-semibold text-sm text-[#333333]">ハイデルベルグ6+1印刷機</p><p class="text-xs text-gray-500 mt-1">高精度カラー再現</p></div></div><div class="rounded-xl overflow-hidden border border-gray-100"><img src="/images/factory/factory-hp-digital.png" alt="HPデジタル印刷機" class="w-full aspect-[4/3] object-cover"/><div class="p-3"><p class="font-semibold text-sm text-[#333333]">HPデジタル印刷機</p><p class="text-xs text-gray-500 mt-1">可変データ印刷対応</p></div></div><div class="rounded-xl overflow-hidden border border-gray-100"><img src="/images/factory/factory-weigang-uv.jpg" alt="煒岡6色UV輪転機" class="w-full aspect-[4/3] object-cover"/><div class="p-3"><p class="font-semibold text-sm text-[#333333]">煒岡6色UV輪転機</p><p class="text-xs text-gray-500 mt-1">UV硬化技術</p></div></div><div class="rounded-xl overflow-hidden border border-gray-100"><img src="/images/factory/factory-color-chart.jpg" alt="カラー管理" class="w-full aspect-[4/3] object-cover"/><div class="p-3"><p class="font-semibold text-sm text-[#333333]">プロフェッショナルカラー管理</p><p class="text-xs text-gray-500 mt-1">バッチ品質の一貫性</p></div></div></div><h3>後加工設備</h3><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>マルティニ製本ライン</strong>：自動化された無線綴じ</li><li><strong>ハイデルベルグ折り機</strong>：複数台連動</li><li><strong>全自動箱貼り機</strong>：効率的な包装生産</li><li><strong>型抜き、箔押し、UV</strong>：総合的な仕上げ</li></ul><div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6"><div class="rounded-xl overflow-hidden border border-gray-100"><img src="/images/factory/factory-martini-1.jpg" alt="マルティニ製本工場" class="w-full aspect-[4/3] object-cover"/><div class="p-3"><p class="font-semibold text-sm text-[#333333]">マルティニ製本工場</p></div></div><div class="rounded-xl overflow-hidden border border-gray-100"><img src="/images/factory/factory-heidelberg-folding.jpg" alt="ハイデルベルグ折り機" class="w-full aspect-[4/3] object-cover"/><div class="p-3"><p class="font-semibold text-sm text-[#333333]">ハイデルベルグ折り機群</p></div></div><div class="rounded-xl overflow-hidden border border-gray-100"><img src="/images/factory/factory-gluing.jpg" alt="箱貼り工場" class="w-full aspect-[4/3] object-cover"/><div class="p-3"><p class="font-semibold text-sm text-[#333333]">全自動箱貼り工場</p></div></div><div class="rounded-xl overflow-hidden border border-gray-100"><img src="/images/factory/factory-manual.jpg" alt="手工芸工場" class="w-full aspect-[4/3] object-cover"/><div class="p-3"><p class="font-semibold text-sm text-[#333333]">手作り仕上げ工場</p></div></div></div><h3>お問い合わせ</h3><div class="bg-gray-50 rounded-xl p-5 my-4 space-y-2"><p><strong>WhatsApp:</strong> <a href="https://wa.me/8618126380255" target="_blank">+86 181 2638 0255</a></p><p><strong>営業時間:</strong> 月〜土 09:00 - 18:00</p></div>` },
     'sticker-guide': { title: 'ステッカー印刷完全ガイド：材質、加工と応用場面', description: 'ステッカーの材質選び、表面加工、応用場面について深く理解しましょう。', date: '2024-04-15', category: 'ステッカー知識', content: `<p>ステッカーはブランド宣伝に欠かせない要素です。材質、加工、応用場面を詳しく解説します。</p><h3>材質比較</h3><p>アート紙、防水合成紙、透明PET、ホログラムなど、目的に応じて選択しましょう。</p><p><a href="/ja/product/waterproof-stickers/">防水ステッカー</a>を今すぐ注文！</p>` },
     'business-card-design': { title: '名刺デザインの10の黄金法則', description: 'レイアウトから配色まで、名刺デザインの核心技術をマスターしましょう。', date: '2024-04-10', category: '名刺知識', content: `<p>名刺はビジネスでの第一印象を作ります。ZprintProデザイン専門家の10の黄金法則をご紹介。</p><p><a href="/ja/product/premium-business-cards/">高級名刺</a>を注文する</p>` },
     'packaging-trends': { title: '2024年パッケージデザイントレンド解析', description: '最新のパッケージデザイントレンドを探ります。', date: '2024-04-05', category: '包装知識', content: `<p>パッケージデザインに革命が起きています。2024年のトップトレンドを発見。</p><p><a href="/ja/product/gift-boxes/">ギフトボックス</a>をカスタマイズ</p>` },
@@ -274,7 +384,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
   },
 };
 
-const articleSlugs = ['hong-kong-printing-guide', 'design-file-specs', 'brand-materials-checklist', 'mtr-advertising-specs', 'sticker-guide', 'business-card-design', 'packaging-trends', 'cmyk-guide', 'paper-materials', 'eco-printing'];
+const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-specs', 'brand-materials-checklist', 'mtr-advertising-specs', 'sticker-guide', 'business-card-design', 'packaging-trends', 'cmyk-guide', 'paper-materials', 'eco-printing'];
 const guideSlugs = getAllBuyingGuideSlugs();
 const allSlugs = [...articleSlugs, ...guideSlugs];
 

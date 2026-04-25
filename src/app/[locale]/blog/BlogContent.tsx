@@ -32,6 +32,7 @@ const translations: Record<string, {
     datePrefix: '發布於',
     author: '智印港印刷專家',
     categories: [
+      { key: 'company-news', label: '公司新聞' },
       { key: 'sticker', label: '貼紙知識' },
       { key: 'card', label: '名片知識' },
       { key: 'packaging', label: '包裝盒知識' },
@@ -54,6 +55,7 @@ const translations: Record<string, {
     datePrefix: 'Published',
     author: 'ZprintPro Experts',
     categories: [
+      { key: 'company-news', label: 'Company News' },
       { key: 'sticker', label: 'Sticker Guide' },
       { key: 'card', label: 'Card Guide' },
       { key: 'packaging', label: 'Packaging Guide' },
@@ -76,6 +78,7 @@ const translations: Record<string, {
     datePrefix: '公開日',
     author: 'ZprintPro専門家',
     categories: [
+      { key: 'company-news', label: '会社ニュース' },
       { key: 'sticker', label: 'ステッカー知識' },
       { key: 'card', label: '名刺知識' },
       { key: 'packaging', label: '包装知識' },
@@ -90,6 +93,7 @@ const translations: Record<string, {
 };
 
 const articleImages: Record<string, string> = {
+  'company-intro': '/images/factory/factory-banner.jpg',
   'hong-kong-printing-guide': '/images/articles/brand-story.jpg',
   'design-file-specs': '/images/articles/cmyk-rgb.jpg',
   'brand-materials-checklist': '/images/articles/lai-see.jpg',
@@ -106,6 +110,7 @@ const defaultArticleImage = '/images/articles/sticker-guide.jpg';
 
 const articles: Record<string, { slug: string; title: string; date: string; category: string; excerpt: string }[]> = {
   'zh-hk': [
+    { slug: 'company-intro', title: '智印港印刷公司簡介：專業設備與一站式印刷服務', date: '2024-06-01', category: 'company-news', excerpt: '智印港擁有海德堡6+1印刷機、HP數碼印刷機、馬天尼膠裝線等先進設備，提供從設計到印刷到後加工的一站式服務。' },
     { slug: 'hong-kong-printing-guide', title: '香港印刷公司選擇完全指南：觀塘、九龍、新界哪裡最可靠？', date: '2024-05-20', category: 'hongkong', excerpt: '深入比較香港觀塘、九龍、新界的印刷公司，從價格、品質、交貨速度到客戶評價，幫您找到最適合的印刷合作夥伴。' },
     { slug: 'design-file-specs', title: '印刷文件設計規範：出血位、分辨率、色彩模式一次搞懂', date: '2024-05-15', category: 'design', excerpt: '從出血位設置到色彩模式轉換，這篇指南將幫助設計師和企業避免最常見的印刷文件錯誤。' },
     { slug: 'brand-materials-checklist', title: '企業品牌物料清單：從名片到展架的全套印刷方案', date: '2024-05-10', category: 'branding', excerpt: '無論是初創企業還是品牌升級，這份完整的品牌物料印刷清單將幫助您系統化地規劃所有印刷需求。' },
@@ -118,6 +123,7 @@ const articles: Record<string, { slug: string; title: string; date: string; cate
     { slug: 'eco-printing', title: '環保印刷：企業ESG與可持續包裝的未來', date: '2024-03-15', category: 'trends', excerpt: '了解環保印刷材料和工藝，為地球和品牌形象雙贏做出選擇。' },
   ],
   'en': [
+    { slug: 'company-intro', title: 'About ZprintPro: Professional Equipment & One-Stop Printing Services', date: '2024-06-01', category: 'company-news', excerpt: 'ZprintPro features Heidelberg 6+1 printing presses, HP digital printers, and Martini perfect binding lines for full-service printing.' },
     { slug: 'hong-kong-printing-guide', title: 'Hong Kong Printing Company Guide: Kwun Tong, Kowloon & NT', date: '2024-05-20', category: 'hongkong', excerpt: 'Compare printing companies across Hong Kong from pricing to quality to find your ideal partner.' },
     { slug: 'design-file-specs', title: 'Print File Design Specifications: Bleed, Resolution & Color Modes', date: '2024-05-15', category: 'design', excerpt: 'Master bleed settings, resolution requirements, and color mode conversions for perfect prints.' },
     { slug: 'brand-materials-checklist', title: 'Corporate Brand Materials Checklist: From Cards to Displays', date: '2024-05-10', category: 'branding', excerpt: 'A complete checklist of printed brand materials for startups and brand refreshes.' },
@@ -130,6 +136,7 @@ const articles: Record<string, { slug: string; title: string; date: string; cate
     { slug: 'eco-printing', title: 'Eco-Friendly Printing: The Future of Sustainable Packaging', date: '2024-03-15', category: 'trends', excerpt: 'Learn about eco-friendly printing materials.' },
   ],
   'ja': [
+    { slug: 'company-intro', title: 'ZprintPro会社概要：専門設備とワンストップ印刷サービス', date: '2024-06-01', category: 'company-news', excerpt: 'ZprintProはハイデルベルグ6+1印刷機、HPデジタル印刷機、マルティニ製本ラインなどの先進設備を保有しています。' },
     { slug: 'hong-kong-printing-guide', title: '香港印刷会社選び完全ガイド：観塘、九龍、新界', date: '2024-05-20', category: 'hongkong', excerpt: '香港の観塘、九龍、新界の印刷会社を比較し、最適なパートナーを選びましょう。' },
     { slug: 'design-file-specs', title: '印刷用デザインファイル仕様：裁ち落とし、解像度、カラーモード', date: '2024-05-15', category: 'design', excerpt: '裁ち落とし、解像度、カラーモードについて学びましょう。' },
     { slug: 'brand-materials-checklist', title: '企業ブランド物料チェックリスト', date: '2024-05-10', category: 'branding', excerpt: '名刺から展示物まで、ブランド構築に必要な印刷物料を確認しましょう。' },
@@ -144,6 +151,7 @@ const articles: Record<string, { slug: string; title: string; date: string; cate
 };
 
 const categoryColors: Record<string, { bg: string; text: string }> = {
+  'company-news': { bg: 'bg-red-50', text: 'text-red-600' },
   'sticker': { bg: 'bg-pink-50', text: 'text-pink-600' },
   'card': { bg: 'bg-cyan-50', text: 'text-cyan-600' },
   'packaging': { bg: 'bg-emerald-50', text: 'text-emerald-600' },
