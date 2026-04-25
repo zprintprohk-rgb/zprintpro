@@ -1,13 +1,58 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Locale, siteConfig, generateFaqJsonLd } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
 import { getBuyingGuideBySlug, getAllBuyingGuideSlugs } from '@/data/buying-guides';
-import { RegionalContent, RegionalCta, RegionalTrustBadges } from '@/components/seo/RegionalContent';
+import { products, getProductTitle, getProductDescription } from '@/data/products';
+import { convertPriceRangeString } from '@/lib/pricing';
 
 interface BlogPostPageProps {
   params: { locale: string; slug: string };
 }
+
+const translations = {
+  'zh-hk': {
+    backToBlog: '← 返回印刷知識',
+    hotProducts: '熱門產品',
+    viewMore: '查詢更多',
+    authorPrefix: '作者：',
+    author: '智印港印刷專家',
+    published: '發布於',
+  },
+  'en': {
+    backToBlog: '← Back to Blog',
+    hotProducts: 'Hot Products',
+    viewMore: 'View More',
+    authorPrefix: 'By ',
+    author: 'ZprintPro Printing Experts',
+    published: 'Published',
+  },
+  'ja': {
+    backToBlog: '← ブログに戻る',
+    hotProducts: '人気製品',
+    viewMore: '詳細を見る',
+    authorPrefix: '執筆：',
+    author: 'ZprintPro印刷専門家',
+    published: '公開日',
+  },
+};
+
+// 文章圖片映射
+const articleImages: Record<string, string> = {
+  'hong-kong-printing-guide': '/images/articles/brand-story.jpg',
+  'design-file-specs': '/images/articles/cmyk-rgb.jpg',
+  'brand-materials-checklist': '/images/articles/lai-see.jpg',
+  'mtr-advertising-specs': '/images/articles/brand-story.jpg',
+  'sticker-guide': '/images/articles/sticker-guide.jpg',
+  'business-card-design': '/images/articles/lai-see.jpg',
+  'packaging-trends': '/images/articles/brand-story.jpg',
+  'cmyk-guide': '/images/articles/cmyk-rgb.jpg',
+  'paper-materials': '/images/articles/brand-story.jpg',
+  'eco-printing': '/images/articles/sticker-guide.jpg',
+};
+
+const defaultArticleImage = '/images/articles/sticker-guide.jpg';
 
 // Legacy posts (existing 10 articles per locale)
 const posts: Record<string, Record<string, { title: string; description: string; date: string; category: string; content: string }>> = {
@@ -113,14 +158,6 @@ const posts: Record<string, Record<string, { title: string; description: string;
 <tr><td class="border p-2"><a href="/product/cosmetic-boxes/">化妝品盒</a></td><td class="border p-2">護膚品、彩妝</td><td class="border p-2">時尚設計，品牌加分</td></tr>
 <tr><td class="border p-2"><a href="/product/food-boxes/">食品盒</a></td><td class="border p-2">烘焙、零食</td><td class="border p-2">食品級材質，安全衛生</td></tr>
 </tbody></table>
-<h3>包裝設計 checklist</h3>
-<ul class="list-disc pl-5 my-3 space-y-1">
-<li>品牌 Logo 是否清晰可見？</li>
-<li>產品信息是否符合法規要求？</li>
-<li>開箱體驗是否順暢愉悅？</li>
-<li>材質是否環保可持續？</li>
-<li>運輸過程中是否足夠保護產品？</li>
-</ul>
 <p>想為您的產品打造完美的包裝盒？智印港提供從設計到印刷的一站式<a href="/product/packaging/">包裝盒定制</a>服務。立即<a href="https://wa.me/8618126380255" target="_blank">聯繫我們</a>獲取免費設計方案！</p>`,
     },
     'cmyk-guide': {
@@ -138,12 +175,6 @@ const posts: Record<string, Record<string, { title: string; description: string;
 <li><strong>色彩偏差</strong>：RGB 轉 CMYK 時，鮮豔顏色會變暗</li>
 <li><strong>預期管理</strong>：提前轉換可預見最終效果，避免失望</li>
 </ol>
-<h3>常見色彩問題與解決方案</h3>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3">
-<p><strong>問題1：藍色變紫</strong><br/>A: 屏幕藍色（RGB #0000FF）轉 CMYK 後會偏紫。設計時使用 CMYK 值 C100 M60 Y0 K0 可獲得更純正的藍色。</p>
-<p><strong>問題2：黑色不夠黑</strong><br/>A: 四色黑（C60 M40 Y40 K100）比單色黑（K100）更深更飽和。</p>
-<p><strong>問題3：漸變出現色階</strong><br/>A: 增加漸變長度，或使用專色印刷。</p>
-</div>
 <h3>智印港色彩管理服務</h3>
 <p>智印港採用專業色彩管理系統，確保從屏幕到印刷的色彩一致性。我們提供免費打樣服務，讓您在批量印刷前確認顏色效果。</p>
 <p>想了解更多印刷知識？<a href="https://wa.me/8618126380255" target="_blank">聯繫智印港</a>獲取專業建議。</p>`,
@@ -190,12 +221,6 @@ const posts: Record<string, Record<string, { title: string; description: string;
 <li><a href="/product/eco-business-cards/">環保名片</a>：再生紙+大豆油墨</li>
 <li><a href="/product/eco-flyers/">環保傳單</a>：FSC認證紙張</li>
 </ul>
-<h3>環保印刷的商業價值</h3>
-<ol class="list-decimal pl-5 my-3 space-y-1">
-<li><strong>品牌形象提升</strong>：消費者更願意支持環保品牌</li>
-<li><strong>合規要求</strong>：滿足越來越嚴格的環保法規</li>
-<li><strong>成本優化</strong>：減少材料浪費，長期降低印刷成本</li>
-</ol>
 <p>想為您的品牌加入環保元素？<a href="https://wa.me/8618126380255" target="_blank">聯繫智印港</a>獲取綠色印刷方案。</p>`,
     },
     'hong-kong-printing-guide': {
@@ -224,128 +249,28 @@ const posts: Record<string, Record<string, { title: string; description: string;
     },
   },
   en: {
-    'sticker-guide': {
-      title: 'Complete Sticker Printing Guide: Materials, Finishes & Applications',
-      description: 'Deep dive into sticker material choices, surface treatments, and application scenarios.',
-      date: '2024-04-15', category: 'Sticker Guide',
-      content: `<p>Stickers are essential elements in brand promotion and product packaging. This guide covers everything you need to know about sticker printing in Hong Kong.</p><h3>Material Comparison</h3><p>Choose from art paper, waterproof synthetic, transparent PET, and holographic options. Each material serves different purposes and environments.</p><h3>Surface Finishes</h3><p>Glossy, matte, foil stamping, and spot UV each create unique visual effects. Select based on your brand positioning.</p><p>Order your <a href="/en/product/waterproof-stickers/">waterproof stickers</a> or <a href="/en/product/transparent-stickers/">transparent stickers</a> today!</p>`,
-    },
-    'business-card-design': {
-      title: '10 Golden Rules for Business Card Design',
-      description: 'Master the core techniques of business card design.',
-      date: '2024-04-10', category: 'Card Guide',
-      content: `<p>Business cards create the first impression in commercial interactions. Here are 10 golden rules from ZprintPro design experts.</p><h3>Rule 1: White Space is Essential</h3><p>Don't overcrowd your card. Leave adequate breathing room for key information.</p><p>Order <a href="/en/product/premium-business-cards/">premium business cards</a> with professional design support.</p>`,
-    },
-    'packaging-trends': {
-      title: '2024 Packaging Design Trends Analysis',
-      description: 'Explore latest packaging design trends.',
-      date: '2024-04-05', category: 'Packaging Guide',
-      content: `<p>Packaging design is undergoing a revolution. Discover the top trends for 2024.</p><h3>Trend 1: Minimalism Continues</h3><p>Clean, simple designs with ample white space dominate the market.</p><p>Get your <a href="/en/product/gift-boxes/">custom gift boxes</a> today!</p>`,
-    },
-    'cmyk-guide': {
-      title: 'CMYK vs RGB: Complete Guide to Print Color Modes',
-      description: 'Understand color modes for optimal print results.',
-      date: '2024-03-28', category: 'Printing Techniques',
-      content: `<p>Color management is key to print quality. Learn the difference between RGB and CMYK.</p><h3>Why Convert to CMYK?</h3><p>Printers use CMYK inks. RGB colors must be converted, which can cause shifts in bright colors.</p>`,
-    },
-    'paper-materials': {
-      title: 'Paper Selection Guide: From Art Paper to Specialty Stock',
-      description: 'Analysis of different paper characteristics.',
-      date: '2024-03-20', category: 'Printing Techniques',
-      content: `<p>Paper is the soul of printed materials. Explore 300+ paper options at ZprintPro.</p><h3>Art Paper</h3><p>Smooth surface, high color reproduction. Ideal for catalogs and posters.</p>`,
-    },
-    'eco-printing': {
-      title: 'Eco-Friendly Printing: The Future of Sustainable Packaging',
-      description: 'Learn about eco-friendly printing materials.',
-      date: '2024-03-15', category: 'Industry Trends',
-      content: `<p>Sustainability has become a global trend. Discover eco-friendly printing options.</p><h3>Eco Materials</h3><p>Recycled paper, soy-based inks, and biodegradable options available.</p>`,
-    },
-    'hong-kong-printing-guide': {
-      title: 'Hong Kong Printing Company Guide: Kwun Tong, Kowloon & NT',
-      description: 'Compare printing companies across Hong Kong from pricing to quality to find your ideal partner.',
-      date: '2024-05-20', category: 'Hong Kong Local',
-      content: `<p>Hong Kong is a global business hub with thousands of companies needing printing services daily. This guide compares printing companies across Kwun Tong, Kowloon, and the New Territories.</p><h3>Hong Kong Printing Districts</h3><p>Kwun Tong remains the traditional industrial heartland with the highest concentration of printing factories. Kowloon Bay offers design-printing integration, while Tsuen Wan provides cost-effective solutions.</p><h3>How to Evaluate a Printer</h3><ul class="list-disc pl-5 my-3 space-y-1"><li>Equipment quality (Heidelberg, Komori)</li><li>Color management capabilities</li><li>Delivery speed (standard 3-5 days, rush 24h)</li><li>Portfolio and client references</li></ul><p><a href="https://wa.me/8618126380255" target="_blank">Contact ZprintPro</a> for a free quote.</p>`,
-    },
-    'design-file-specs': {
-      title: 'Print File Design Specifications: Bleed, Resolution & Color Modes',
-      description: 'Master bleed settings, resolution requirements, and color mode conversions for perfect prints.',
-      date: '2024-05-15', category: 'Design Tips',
-      content: `<p>Common print file mistakes include white edges, blurry images, and color shifts. This guide covers bleed, resolution, and color modes.</p><h3>Bleed Settings</h3><p>Always add 3mm bleed beyond the final trim size to avoid white edges after cutting.</p><h3>Resolution Standards</h3><p>300dpi is the standard for business cards and brochures. Large posters can use 150dpi.</p><h3>CMYK vs RGB</h3><p>Always convert to CMYK before submitting. RGB files will produce darker, less vibrant prints.</p><p><a href="https://wa.me/8618126380255" target="_blank">Contact us</a> for free file checking.</p>`,
-    },
-    'brand-materials-checklist': {
-      title: 'Corporate Brand Materials Checklist: From Cards to Displays',
-      description: 'A complete checklist of printed brand materials for startups and brand refreshes.',
-      date: '2024-05-10', category: 'Branding',
-      content: `<p>Building a brand requires systematic material support. From <a href="/en/product/premium-business-cards/">business cards</a> to <a href="/en/product/gift-boxes/">packaging</a>, every touchpoint matters.</p><h3>Essential Brand Items</h3><ul class="list-disc pl-5 my-3 space-y-1"><li>Business cards, envelopes, letterheads</li><li>Flyers, brochures, posters, banners</li><li>Packaging: bags, boxes, labels</li></ul><h3>Planning Tips</h3><ol class="list-decimal pl-5 my-3 space-y-1"><li>Maintain consistent design language</li><li>Phase your production (essentials first)</li><li>Choose a full-service printer for consistency</li></ol><p><a href="https://wa.me/8618126380255" target="_blank">Contact ZprintPro</a> for a custom brand package.</p>`,
-    },
-    'mtr-advertising-specs': {
-      title: 'MTR Advertising Print Specs: Island, Kwun Tong & Tsuen Wan Lines',
-      description: 'Detailed specifications and strategies for MTR advertising across Hong Kong.',
-      date: '2024-05-05', category: 'Hong Kong Local',
-      content: `<p>Hong Kong's MTR serves over 5 million passengers daily. This guide covers advertising specs and placement strategies.</p><h3>Advertising Formats</h3><ul class="list-disc pl-5 my-3 space-y-1"><li>Platform lightboxes (12-sheet / 48-sheet)</li><li>Concourse displays</li><li>Platform screen door ads</li><li>Train interior posters</li></ul><h3>Key Specifications</h3><table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Type</th><th class="border p-2 text-left">Size</th><th class="border p-2 text-left">Resolution</th></tr></thead><tbody><tr><td class="border p-2">12-sheet</td><td class="border p-2">3000 × 1500mm</td><td class="border p-2">100dpi</td></tr><tr><td class="border p-2">Train poster</td><td class="border p-2">1189 × 841mm</td><td class="border p-2">150dpi</td></tr></tbody></table><h3>Line Strategies</h3><p>Island Line targets finance and luxury. Kwun Tong Line reaches SMEs and retail. Tsuen Wan Line covers residential and family segments.</p><p><a href="https://wa.me/8618126380255" target="_blank">Contact us</a> for MTR advertising material printing.</p>`,
-    },
+    'sticker-guide': { title: 'Complete Sticker Printing Guide: Materials, Finishes & Applications', description: 'Deep dive into sticker material choices, surface treatments, and application scenarios.', date: '2024-04-15', category: 'Sticker Guide', content: `<p>Stickers are essential elements in brand promotion and product packaging. This guide covers everything you need to know about sticker printing in Hong Kong.</p><h3>Material Comparison</h3><p>Choose from art paper, waterproof synthetic, transparent PET, and holographic options. Each material serves different purposes and environments.</p><h3>Surface Finishes</h3><p>Glossy, matte, foil stamping, and spot UV each create unique visual effects. Select based on your brand positioning.</p><p>Order your <a href="/en/product/waterproof-stickers/">waterproof stickers</a> or <a href="/en/product/transparent-stickers/">transparent stickers</a> today!</p>` },
+    'business-card-design': { title: '10 Golden Rules for Business Card Design', description: 'Master the core techniques of business card design.', date: '2024-04-10', category: 'Card Guide', content: `<p>Business cards create the first impression in commercial interactions. Here are 10 golden rules from ZprintPro design experts.</p><h3>Rule 1: White Space is Essential</h3><p>Don't overcrowd your card. Leave adequate breathing room for key information.</p><p>Order <a href="/en/product/premium-business-cards/">premium business cards</a> with professional design support.</p>` },
+    'packaging-trends': { title: '2024 Packaging Design Trends Analysis', description: 'Explore latest packaging design trends.', date: '2024-04-05', category: 'Packaging Guide', content: `<p>Packaging design is undergoing a revolution. Discover the top trends for 2024.</p><h3>Trend 1: Minimalism Continues</h3><p>Clean, simple designs with ample white space dominate the market.</p><p>Get your <a href="/en/product/gift-boxes/">custom gift boxes</a> today!</p>` },
+    'cmyk-guide': { title: 'CMYK vs RGB: Complete Guide to Print Color Modes', description: 'Understand color modes for optimal print results.', date: '2024-03-28', category: 'Printing Techniques', content: `<p>Color management is key to print quality. Learn the difference between RGB and CMYK.</p><h3>Why Convert to CMYK?</h3><p>Printers use CMYK inks. RGB colors must be converted, which can cause shifts in bright colors.</p>` },
+    'paper-materials': { title: 'Paper Selection Guide: From Art Paper to Specialty Stock', description: 'Analysis of different paper characteristics.', date: '2024-03-20', category: 'Printing Techniques', content: `<p>Paper is the soul of printed materials. Explore 300+ paper options at ZprintPro.</p><h3>Art Paper</h3><p>Smooth surface, high color reproduction. Ideal for catalogs and posters.</p>` },
+    'eco-printing': { title: 'Eco-Friendly Printing: The Future of Sustainable Packaging', description: 'Learn about eco-friendly printing materials.', date: '2024-03-15', category: 'Industry Trends', content: `<p>Sustainability has become a global trend. Discover eco-friendly printing options.</p><h3>Eco Materials</h3><p>Recycled paper, soy-based inks, and biodegradable options available.</p>` },
+    'hong-kong-printing-guide': { title: 'Hong Kong Printing Company Guide: Kwun Tong, Kowloon & NT', description: 'Compare printing companies across Hong Kong from pricing to quality to find your ideal partner.', date: '2024-05-20', category: 'Hong Kong Local', content: `<p>Hong Kong is a global business hub with thousands of companies needing printing services daily. This guide compares printing companies across Kwun Tong, Kowloon, and the New Territories.</p><h3>Hong Kong Printing Districts</h3><p>Kwun Tong remains the traditional industrial heartland with the highest concentration of printing factories. Kowloon Bay offers design-printing integration, while Tsuen Wan provides cost-effective solutions.</p><p><a href="https://wa.me/8618126380255" target="_blank">Contact ZprintPro</a> for a free quote.</p>` },
+    'design-file-specs': { title: 'Print File Design Specifications: Bleed, Resolution & Color Modes', description: 'Master bleed settings, resolution requirements, and color mode conversions for perfect prints.', date: '2024-05-15', category: 'Design Tips', content: `<p>Common print file mistakes include white edges, blurry images, and color shifts. This guide covers bleed, resolution, and color modes.</p><h3>Bleed Settings</h3><p>Always add 3mm bleed beyond the final trim size to avoid white edges after cutting.</p><h3>Resolution Standards</h3><p>300dpi is the standard for business cards and brochures. Large posters can use 150dpi.</p><p><a href="https://wa.me/8618126380255" target="_blank">Contact us</a> for free file checking.</p>` },
+    'brand-materials-checklist': { title: 'Corporate Brand Materials Checklist: From Cards to Displays', description: 'A complete checklist of printed brand materials for startups and brand refreshes.', date: '2024-05-10', category: 'Branding', content: `<p>Building a brand requires systematic material support. From <a href="/en/product/premium-business-cards/">business cards</a> to <a href="/en/product/gift-boxes/">packaging</a>, every touchpoint matters.</p><h3>Essential Brand Items</h3><ul class="list-disc pl-5 my-3 space-y-1"><li>Business cards, envelopes, letterheads</li><li>Flyers, brochures, posters, banners</li><li>Packaging: bags, boxes, labels</li></ul><p><a href="https://wa.me/8618126380255" target="_blank">Contact ZprintPro</a> for a custom brand package.</p>` },
+    'mtr-advertising-specs': { title: 'MTR Advertising Print Specs: Island, Kwun Tong & Tsuen Wan Lines', description: 'Detailed specifications and strategies for MTR advertising across Hong Kong.', date: '2024-05-05', category: 'Hong Kong Local', content: `<p>Hong Kong's MTR serves over 5 million passengers daily. This guide covers advertising specs and placement strategies.</p><h3>Advertising Formats</h3><ul class="list-disc pl-5 my-3 space-y-1"><li>Platform lightboxes (12-sheet / 48-sheet)</li><li>Concourse displays</li><li>Platform screen door ads</li><li>Train interior posters</li></ul><p><a href="https://wa.me/8618126380255" target="_blank">Contact us</a> for MTR advertising material printing.</p>` },
   },
   ja: {
-    'sticker-guide': {
-      title: 'ステッカー印刷完全ガイド：材質、加工と応用場面',
-      description: 'ステッカーの材質選び、表面加工、応用場面について深く理解しましょう。',
-      date: '2024-04-15', category: 'ステッカー知識',
-      content: `<p>ステッカーはブランド宣伝に欠かせない要素です。材質、加工、応用場面を詳しく解説します。</p><h3>材質比較</h3><p>アート紙、防水合成紙、透明PET、ホログラムなど、目的に応じて選択しましょう。</p><p><a href="/ja/product/waterproof-stickers/">防水ステッカー</a>を今すぐ注文！</p>`,
-    },
-    'business-card-design': {
-      title: '名刺デザインの10の黄金法則',
-      description: 'レイアウトから配色まで、名刺デザインの核心技術をマスターしましょう。',
-      date: '2024-04-10', category: '名刺知識',
-      content: `<p>名刺はビジネスでの第一印象を作ります。ZprintProデザイン専門家の10の黄金法則をご紹介。</p><p><a href="/ja/product/premium-business-cards/">高級名刺</a>を注文する</p>`,
-    },
-    'packaging-trends': {
-      title: '2024年パッケージデザイントレンド解析',
-      description: '最新のパッケージデザイントレンドを探ります。',
-      date: '2024-04-05', category: '包装知識',
-      content: `<p>パッケージデザインに革命が起きています。2024年のトップトレンドを発見。</p><p><a href="/ja/product/gift-boxes/">ギフトボックス</a>をカスタマイズ</p>`,
-    },
-    'cmyk-guide': {
-      title: 'CMYK vs RGB：印刷カラーモード完全解説',
-      description: 'CMYKとRGBの違いを理解し、最適な印刷結果を得ましょう。',
-      date: '2024-03-28', category: '印刷技術',
-      content: `<p>カラーマネージメントは印刷品質の鍵です。RGBとCMYKの違いを学びましょう。</p>`,
-    },
-    'paper-materials': {
-      title: '印刷用紙選択ガイド：アート紙から特殊紙まで',
-      description: '異なる紙の特性を分析し、最適な用紙を選びましょう。',
-      date: '2024-03-20', category: '印刷技術',
-      content: `<p>紙は印刷物の魂です。ZprintProで300種類以上の用紙からお選びいただけます。</p>`,
-    },
-    'eco-printing': {
-      title: 'エコ印刷：持続可能な包装の未来',
-      description: '地球とブランドの両方のために、エコ印刷について学びましょう。',
-      date: '2024-03-15', category: '業界トレンド',
-      content: `<p>持続可能性は世界的なトレンドになっています。エコ印刷オプションをご紹介。</p>`,
-    },
-    'hong-kong-printing-guide': {
-      title: '香港印刷会社選び完全ガイド',
-      description: '香港の観塘、九龍、新界の印刷会社を比較し、最適なパートナーを選びましょう。',
-      date: '2024-05-20', category: '香港ローカル',
-      content: `<p>香港には数多くの印刷会社がありますが、信頼できるパートナーを見つけるのは容易ではありません。</p>`,
-    },
-    'design-file-specs': {
-      title: '印刷用デザインファイル仕様',
-      description: '裁ち落とし、解像度、カラーモードについて学びましょう。',
-      date: '2024-05-15', category: 'デザインチップ',
-      content: `<p>印刷用ファイルを正しく作成することは、高品質な印刷を確保するために不可欠です。</p>`,
-    },
-    'brand-materials-checklist': {
-      title: '企業ブランド物料チェックリスト',
-      description: '名刺から展示物まで、ブランド構築に必要な印刷物料を確認しましょう。',
-      date: '2024-05-10', category: 'ブランディング',
-      content: `<p>一貫性のあるブランド物料は、企業のプロフェッショナリズムを示します。</p>`,
-    },
-    'mtr-advertising-specs': {
-      title: 'MTR広告印刷仕様',
-      description: '港島線、観塘線、荃湾線の広告印刷規格について解説します。',
-      date: '2024-05-05', category: '香港ローカル',
-      content: `<p>香港のMTRは毎日数百万人の乗客を運んでおり、効果的な広告媒体です。</p>`,
-    },
+    'sticker-guide': { title: 'ステッカー印刷完全ガイド：材質、加工と応用場面', description: 'ステッカーの材質選び、表面加工、応用場面について深く理解しましょう。', date: '2024-04-15', category: 'ステッカー知識', content: `<p>ステッカーはブランド宣伝に欠かせない要素です。材質、加工、応用場面を詳しく解説します。</p><h3>材質比較</h3><p>アート紙、防水合成紙、透明PET、ホログラムなど、目的に応じて選択しましょう。</p><p><a href="/ja/product/waterproof-stickers/">防水ステッカー</a>を今すぐ注文！</p>` },
+    'business-card-design': { title: '名刺デザインの10の黄金法則', description: 'レイアウトから配色まで、名刺デザインの核心技術をマスターしましょう。', date: '2024-04-10', category: '名刺知識', content: `<p>名刺はビジネスでの第一印象を作ります。ZprintProデザイン専門家の10の黄金法則をご紹介。</p><p><a href="/ja/product/premium-business-cards/">高級名刺</a>を注文する</p>` },
+    'packaging-trends': { title: '2024年パッケージデザイントレンド解析', description: '最新のパッケージデザイントレンドを探ります。', date: '2024-04-05', category: '包装知識', content: `<p>パッケージデザインに革命が起きています。2024年のトップトレンドを発見。</p><p><a href="/ja/product/gift-boxes/">ギフトボックス</a>をカスタマイズ</p>` },
+    'cmyk-guide': { title: 'CMYK vs RGB：印刷カラーモード完全解説', description: 'CMYKとRGBの違いを理解し、最適な印刷結果を得ましょう。', date: '2024-03-28', category: '印刷技術', content: `<p>カラーマネージメントは印刷品質の鍵です。RGBとCMYKの違いを学びましょう。</p>` },
+    'paper-materials': { title: '印刷用紙選択ガイド：アート紙から特殊紙まで', description: '異なる紙の特性を分析し、最適な用紙を選びましょう。', date: '2024-03-20', category: '印刷技術', content: `<p>紙は印刷物の魂です。ZprintProで300種類以上の用紙からお選びいただけます。</p>` },
+    'eco-printing': { title: 'エコ印刷：持続可能な包装の未来', description: '地球とブランドの両方のために、エコ印刷について学びましょう。', date: '2024-03-15', category: '業界トレンド', content: `<p>持続可能性は世界的なトレンドになっています。エコ印刷オプションをご紹介。</p>` },
+    'hong-kong-printing-guide': { title: '香港印刷会社選び完全ガイド', description: '香港の観塘、九龍、新界の印刷会社を比較し、最適なパートナーを選びましょう。', date: '2024-05-20', category: '香港ローカル', content: `<p>香港には数多くの印刷会社がありますが、信頼できるパートナーを見つけるのは容易ではありません。</p>` },
+    'design-file-specs': { title: '印刷用デザインファイル仕様', description: '裁ち落とし、解像度、カラーモードについて学びましょう。', date: '2024-05-15', category: 'デザインチップ', content: `<p>印刷用ファイルを正しく作成することは、高品質な印刷を確保するために不可欠です。</p>` },
+    'brand-materials-checklist': { title: '企業ブランド物料チェックリスト', description: '名刺から展示物まで、ブランド構築に必要な印刷物料を確認しましょう。', date: '2024-05-10', category: 'ブランディング', content: `<p>一貫性のあるブランド物料は、企業のプロフェッショナリズムを示します。</p>` },
+    'mtr-advertising-specs': { title: 'MTR広告印刷仕様', description: '港島線、観塘線、荃湾線の広告印刷規格について解説します。', date: '2024-05-05', category: '香港ローカル', content: `<p>香港のMTRは毎日数百万人の乗客を運んでおり、効果的な広告媒体です。</p>` },
   },
 };
 
@@ -353,9 +278,7 @@ const articleSlugs = ['hong-kong-printing-guide', 'design-file-specs', 'brand-ma
 const guideSlugs = getAllBuyingGuideSlugs();
 const allSlugs = [...articleSlugs, ...guideSlugs];
 
-// Helper: get post data (legacy or buying guide)
 function getPostData(locale: Locale, slug: string) {
-  // Check legacy posts first
   const legacyPost = posts[locale]?.[slug];
   if (legacyPost) {
     return {
@@ -368,7 +291,6 @@ function getPostData(locale: Locale, slug: string) {
       isBuyingGuide: false,
     };
   }
-  // Check buying guides
   const guide = getBuyingGuideBySlug(slug);
   if (guide) {
     return {
@@ -388,7 +310,6 @@ function getOgLocale(locale: Locale): string {
   return locale === 'zh-hk' ? 'zh_HK' : locale === 'ja' ? 'ja_JP' : 'en_US';
 }
 
-// 從 Buying Guide HTML 內容中提取 FAQ 數據
 function extractFaqFromHtml(html: string): { question: string; answer: string }[] | null {
   const faqs: { question: string; answer: string }[] = [];
   const regex = /<p><strong>Q:\s*([\s\S]*?)<\/strong>\s*(?:<br\s*\/?>)\s*A:\s*([\s\S]*?)<\/p>/gi;
@@ -458,6 +379,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
 
 export default function BlogPostPage({ params }: BlogPostPageProps) {
   const locale = params.locale as Locale;
+  const t = translations[locale];
   const localePrefix = `/${locale}`;
   const post = getPostData(locale, params.slug);
 
@@ -473,13 +395,14 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
   const langPrefix = `${locale}/`;
   const canonical = `${siteConfig.url}/${langPrefix}blog/${params.slug}/`;
+  const postImage = articleImages[params.slug] || defaultArticleImage;
 
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: post.title,
     description: post.description,
-    image: `${siteConfig.url}/images/articles/${params.slug}.jpg`,
+    image: `${siteConfig.url}${postImage}`,
     datePublished: post.date,
     dateModified: post.date,
     articleSection: post.category,
@@ -524,65 +447,102 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
     ],
   };
 
-  // FAQ Schema — 從 Buying Guide 內容中提取 FAQ
   const faqs = extractFaqFromHtml(post.content);
   const faqJsonLd = faqs ? generateFaqJsonLd(faqs) : null;
+
+  // Hot products for sidebar
+  const hotProducts = products
+    .filter((p) => p.isHot)
+    .sort((a, b) => b.weight_score - a.weight_score)
+    .slice(0, 4);
 
   return (
     <main className="min-h-screen bg-gray-50 py-12">
       <JsonLd data={articleJsonLd} />
       <JsonLd data={breadcrumbJsonLd} />
       {faqJsonLd && <JsonLd data={faqJsonLd} />}
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         <Link href={`${localePrefix}/blog/`} className="text-[#2873F5] hover:underline text-sm mb-6 inline-block">
-          {locale === 'zh-hk' ? '← 返回印刷知識' : locale === 'en' ? '← Back to Blog' : '← ブログに戻る'}
+          {t.backToBlog}
         </Link>
-        <article className="bg-white rounded-xl border border-gray-100 p-8">
-          <span className="text-xs font-medium text-[#F87314] bg-orange-50 px-2 py-1 rounded">{post.category}</span>
-          <h1 className="mt-3 text-2xl md:text-3xl font-bold text-[#333333]">{post.title}</h1>
-          <div className="mt-2 flex items-center gap-3 text-sm text-gray-400">
-            <span>{post.date}</span>
-            <span>·</span>
-            <span className="text-[#2873F5]">
-              {locale === 'zh-hk' ? '作者：智印港印刷專家' : locale === 'en' ? 'By ZprintPro Printing Experts' : '執筆：ZprintPro印刷専門家'}
-            </span>
-          </div>
-          <div
-            className="mt-6 prose prose-blue max-w-none text-gray-600 leading-relaxed"
-            dangerouslySetInnerHTML={{ __html: post.content }}
-          />
 
-          {/* 地區化內容區域 — 僅 Buying Guide 顯示 */}
-          {post.isBuyingGuide && (
-            <div className="mt-10 pt-8 border-t border-gray-200 space-y-8">
-              {/* 信任徽章 */}
-              <div>
-                <h3 className="text-lg font-bold text-[#333333] mb-4 text-center">
-                  {locale === 'zh-hk' ? '為何選擇智印港？' : locale === 'en' ? 'Why Choose ZprintPro?' : 'なぜZprintProを選ぶ？'}
-                </h3>
-                <RegionalTrustBadges locale={locale} />
+        <div className="flex gap-8 items-start">
+          {/* Left: Article Content */}
+          <article className="flex-1 bg-white rounded-xl border border-gray-100 overflow-hidden">
+            {/* Hero Image */}
+            <div className="aspect-[21/9] relative overflow-hidden bg-gray-100">
+              <Image
+                src={postImage}
+                alt={post.title}
+                fill
+                className="object-cover"
+                unoptimized
+                priority
+              />
+            </div>
+
+            <div className="p-8">
+              <span className="text-xs font-medium text-[#F87314] bg-orange-50 px-2.5 py-1 rounded-full">
+                {post.category}
+              </span>
+              <h1 className="mt-4 text-2xl md:text-3xl font-bold text-[#333333]">{post.title}</h1>
+              <div className="mt-3 flex items-center gap-3 text-sm text-gray-400">
+                <span>{t.published} {post.date}</span>
+                <span>·</span>
+                <span className="text-[#2873F5]">
+                  {t.authorPrefix}{t.author}
+                </span>
               </div>
+              <div
+                className="mt-6 prose prose-blue max-w-none text-gray-600 leading-relaxed"
+                dangerouslySetInnerHTML={{ __html: post.content }}
+              />
+            </div>
+          </article>
 
-              {/* 地區化專家簡介 */}
-              <div className="bg-blue-50 rounded-xl p-6">
-                <p className="text-gray-600 text-sm leading-relaxed">
-                  <RegionalContent locale={locale} type="expertIntro" />
-                </p>
-              </div>
-
-              {/* 地區化CTA */}
-              <div className="text-center space-y-3">
-                <p className="text-sm text-gray-500">
-                  <RegionalContent locale={locale} type="shipping" />
-                </p>
-                <RegionalCta locale={locale} />
-                <p className="text-xs text-gray-400">
-                  <RegionalContent locale={locale} type="pricingNote" />
-                </p>
+          {/* Right: Hot Products Sidebar */}
+          <div className="hidden lg:block w-80 flex-shrink-0">
+            <div className="bg-white rounded-xl border border-gray-100 p-5 sticky top-24">
+              <h3 className="text-lg font-bold text-[#333333] mb-5 pb-3 border-b border-gray-100">
+                {t.hotProducts}
+              </h3>
+              <div className="space-y-5">
+                {hotProducts.map((product) => (
+                  <Link
+                    key={product.sku_code}
+                    href={`${localePrefix}/product/${product.slug}/`}
+                    className="group block"
+                  >
+                    <div className="aspect-[4/3] rounded-lg overflow-hidden bg-gray-50 mb-3">
+                      <Image
+                        src={product.images[0] || '/images/placeholder.jpg'}
+                        alt={getProductTitle(product, locale)}
+                        width={300}
+                        height={225}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                        unoptimized
+                      />
+                    </div>
+                    <h4 className="text-sm font-semibold text-[#333333] group-hover:text-[#2873F5] transition-colors line-clamp-2">
+                      {getProductTitle(product, locale)}
+                    </h4>
+                    <p className="text-xs text-gray-500 mt-1 line-clamp-2">
+                      {getProductDescription(product, locale).slice(0, 50)}...
+                    </p>
+                    <div className="flex items-center justify-between mt-2">
+                      <span className="text-sm text-[#F87314] font-bold">
+                        {convertPriceRangeString(product.price_range, locale).split('-')[0]}
+                      </span>
+                      <span className="text-xs px-3 py-1 border border-[#2873F5] text-[#2873F5] rounded-full group-hover:bg-[#2873F5] group-hover:text-white transition-colors">
+                        {t.viewMore}
+                      </span>
+                    </div>
+                  </Link>
+                ))}
               </div>
             </div>
-          )}
-        </article>
+          </div>
+        </div>
       </div>
     </main>
   );
