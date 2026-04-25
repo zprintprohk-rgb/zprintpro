@@ -342,9 +342,6 @@ export function Header({ locale }: HeaderProps) {
               </form>
               <div className="flex items-center gap-3 lg:gap-5">
                 <Link href={`${localePrefix}/contact/`} className="hidden sm:flex items-center gap-1.5 text-gray-600 hover:text-[#2873F5] transition-colors text-sm"><User className="w-5 h-5" /><span>{t.login}</span></Link>
-                <Link href={`${localePrefix}/contact/`} className="hidden md:flex items-center gap-1.5 px-4 py-2 bg-[#F87314] hover:bg-[#E56203] text-white rounded-lg transition-colors text-sm font-bold">
-                  <span>{t.contact}</span>
-                </Link>
                 <Link href={`${localePrefix}/contact/`} className="flex items-center gap-1.5 text-gray-600 hover:text-[#2873F5] transition-colors text-sm">
                   <div className="relative"><ShoppingCart className="w-5 h-5" /><span className="absolute -top-2 -right-2 w-4 h-4 bg-[#F87314] text-white text-[10px] rounded-full flex items-center justify-center font-bold">0</span></div>
                   <span className="hidden sm:inline">{t.cart}</span>
