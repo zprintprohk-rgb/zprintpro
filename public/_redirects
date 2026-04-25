@@ -1,4 +1,3 @@
-/  /zh-hk/  302
-/zh  /zh-hk/  302
-/en-US  /en/  302
-/ja-JP  /ja/  302
+# Cloudflare Pages redirects
+# Root path → Hong Kong homepage
+/ /zh-hk/ 301

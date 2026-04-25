@@ -12,7 +12,7 @@ export const siteConfig = {
   name: '智印港 ZPrintPro',
   url: 'https://zprintpro.com',
   logo: 'https://zprintpro.com/logo.png',
-  phone: '+852 [待填實際香港電話]',
+  phone: '+852 [TODO: 填入實際香港電話]',
   email: 'zprintpro@outlook.com',
   address: {
     street: '16 Shing Yip Street',
@@ -352,9 +352,9 @@ export function generateProductMetadata(
       type: 'website',
       images: [
         {
-          url: `${siteConfig.url}/products/${slug}.jpg`,
-          width: 800,
-          height: 600,
+          url: `${siteConfig.url}/images/products/${slug}.jpg`,
+          width: 1200,
+          height: 630,
           alt: name,
         },
       ],

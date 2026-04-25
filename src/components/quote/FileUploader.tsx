@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useCallback } from 'react';
-import { createClient } from '@supabase/supabase-js';
+import { supabase } from '@/lib/supabase';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
 
@@ -78,20 +78,7 @@ export function FileUploader({
       const safeName = file.name.replace(/[^a-zA-Z0-9.\-_]/g, '_');
       const filePath = `${folder}/${Date.now()}_${safeName}`;
 
-      const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
-      const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-      if (!supabaseUrl || !supabaseAnonKey) {
-        const errorResponse: UploadResponse = {
-          url: '',
-          path: '',
-          error: 'Supabase environment variables are not configured',
-        };
-        setLastResponse(errorResponse);
-        onUploadComplete?.(errorResponse);
-        setIsUploading(false);
-        return;
-      }
-      const supabase = createClient(supabaseUrl, supabaseAnonKey);
+      // 使用全局 supabase 客户端
 
       try {
         const { error: uploadError } = await supabase.storage

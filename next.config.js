@@ -8,6 +8,13 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  redirects: async () => [
+    {
+      source: '/',
+      destination: '/zh-hk/',
+      permanent: true,
+    },
+  ],
   webpack: (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,
