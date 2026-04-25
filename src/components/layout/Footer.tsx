@@ -66,6 +66,7 @@ const translations = {
       },
     ],
     followUs: '關注我們',
+    friendLinks: '友情連結',
     copyright: '© 2025 智印港 ZPrintPro. 保留所有權利。',
   },
   en: {
@@ -114,6 +115,7 @@ const translations = {
       },
     ],
     followUs: 'Follow Us',
+    friendLinks: 'Friendly Links',
     copyright: '© 2025 ZPrintPro. All rights reserved.',
   },
   ja: {
@@ -162,6 +164,7 @@ const translations = {
       },
     ],
     followUs: 'フォロー',
+    friendLinks: '友好リンク',
     copyright: '© 2025 ZPrintPro. All rights reserved.',
   },
 };
@@ -225,8 +228,23 @@ export function Footer({ locale }: FooterProps) {
           ))}
         </div>
 
+        {/* Friendly Links */}
+        <div className="mt-10 pt-6 border-t border-white/10">
+          <div className="flex flex-wrap items-center gap-3">
+            <span className="text-gray-400 text-sm font-medium">{t.friendLinks}：</span>
+            <a
+              href="https://www.z-printpro.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-[#F87314] transition-colors text-sm"
+            >
+              Z-PrintPro
+            </a>
+          </div>
+        </div>
+
         {/* Social & Bottom */}
-        <div className="mt-10 pt-8 border-t border-white/10">
+        <div className="mt-6 pt-6 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-4">
               <span className="text-gray-400 text-sm">{t.followUs}</span>
