@@ -1,76 +1,146 @@
 /**
- * 为所有 SKU 生成 Seedream 4.5 三语生图提示词
- * 输出 CSV 文件
+ * 为所有 79 SKU 生成 Seedream 4.5 三语生图提示词
+ * 包含：实际用户信息内容、SEO文件名、Alt标注
+ * 输出 CSV + TXT 文件
  */
 
 const fs = require('fs');
 
+// ========== 实际用户信息内容（按分类 × 三语） ==========
+const REAL_USER_CONTENT = {
+  'business-cards': {
+    zh: '每张名片印有真实用户信息：姓名「陳志明」、公司名「智印港有限公司」、職位「市場總監」、電話「+852 2345 6789」、電郵「info@zprintpro.com」，字體清晰可讀，排版專業',
+    en: 'Each card displays real user info: name "Alex Chan", company "ZprintPro Ltd.", title "Marketing Director", phone "+852 2345 6789", email "info@zprintpro.com", clear readable typography, professional layout',
+    ja: '各名刺に実際のユーザー情報が印刷されている：名前「陳志明」、会社名「智印港有限公司」、役職「市場総監」、電話「+852 2345 6789」、メール「info@zprintpro.com」、鮮明で読みやすい書体、プロフェッショナルなレイアウト',
+  },
+  'stickers': {
+    zh: '貼紙上印有真实品牌信息：品牌名「ZprintPro」、Logo圖案、產品標籤「有機蜂蜜 250g」、條碼和生產日期，字體清晰不模糊',
+    en: 'Stickers display real brand info: brand name "ZprintPro", logo graphic, product label "Organic Honey 250g", barcode and production date, crisp clear text',
+    ja: 'ステッカーに実際のブランド情報が印刷されている：ブランド名「ZprintPro」、ロゴグラフィック、製品ラベル「有機蜂蜜 250g」、バーコードと製造日、鮮明で読みやすい文字',
+  },
+  'paper-bags': {
+    zh: '紙袋印有真实品牌信息：品牌名「ZprintPro智印港」、燙金Logo、店鋪地址「九龍旺角彌敦道123號」、聯繫電話，印刷清晰精緻',
+    en: 'Bags display real brand info: brand name "ZprintPro", foil-stamped logo, store address "123 Nathan Road, Mong Kok, Kowloon", contact phone, crisp premium printing',
+    ja: '紙袋に実際のブランド情報が印刷されている：ブランド名「ZprintPro智印港」、箔押しロゴ、店舗住所「九龍旺角彌敦道123號」、連絡先電話、鮮明で高級な印刷',
+  },
+  'flyers': {
+    zh: '單張印有真实活動信息：標題「ZprintPro開業大酬賓」、優惠內容「全場8折」、活動時間「2026年5月1-7日」、地址「銅鑼灣軒尼詩道456號」、QR code，排版專業',
+    en: 'Flyers display real event info: headline "ZprintPro Grand Opening Sale", offer "20% Off Everything", dates "May 1-7, 2026", address "456 Hennessy Road, Causeway Bay", QR code, professional layout',
+    ja: 'チラシに実際のイベント情報が印刷されている：見出し「ZprintPro開業大酬賓」、優惠内容「全場8折」、開催期間「2026年5月1-7日」、住所「銅鑼灣軒尼詩道456號」、QRコード、プロフェッショナルなレイアウト',
+  },
+  'posters': {
+    zh: '海報展示真实活動畫面：主標題「香港書展2026」、副標題「閱讀·連繫·未來」、日期「7月15-21日」、地點「灣仔會展中心」、主辦單位Logo，色彩鮮豔',
+    en: 'Poster displays real event graphics: main title "Hong Kong Book Fair 2026", subtitle "Read. Connect. Future.", dates "July 15-21", venue "HKCEC Wan Chai", organizer logo, vibrant colors',
+    ja: 'ポスターに実際のイベントグラフィックが表示されている：メインタイトル「香港書展2026」、サブタイトル「閱讀·連繫·未來」、開催日「7月15-21日」、会場「灣仔會展中心」、主催者ロゴ、鮮やかな色彩',
+  },
+  'packaging': {
+    zh: '包裝盒印有真实產品信息：品牌名「ZprintPro」、產品名「精選茶葉禮盒」、成分表、淨含量「200g」、生產日期、條碼和環保標誌，設計精美',
+    en: 'Boxes display real product info: brand "ZprintPro", product name "Premium Tea Gift Box", ingredient list, net weight "200g", production date, barcode and eco label, exquisite design',
+    ja: '包装盒に実際の製品情報が印刷されている：ブランド名「ZprintPro」、製品名「精選茶葉禮盒」、成分表、内容量「200g」、製造日、バーコードとエコラベル、精巧なデザイン',
+  },
+  'banners': {
+    zh: '橫額展示真实品牌畫面：品牌名「ZprintPro智印港」、服務項目「專業印刷·免費設計」、聯繫電話「+852 2345 6789」、網址「www.zprintpro.com」，畫面清晰銳利',
+    en: 'Banner displays real brand graphics: brand name "ZprintPro", services "Professional Printing · Free Design", phone "+852 2345 6789", website "www.zprintpro.com", sharp crisp graphics',
+    ja: 'バナーに実際のブランドグラフィックが表示されている：ブランド名「ZprintPro智印港」、サービス「專業印刷·免費設計」、電話「+852 2345 6789」、ウェブサイト「www.zprintpro.com」、鮮明なグラフィック',
+  },
+  'books': {
+    zh: '書籍封面印有真实出版信息：書名「香港印刷工藝全書」、作者「張偉明」、出版社「智印港出版」、ISBN條碼，書脊印有書名，排版專業',
+    en: 'Book cover displays real publishing info: title "The Complete Guide to HK Printing", author "Alex Cheung", publisher "ZprintPro Press", ISBN barcode, spine printed with title, professional typography',
+    ja: '書籍の表紙に実際の出版情報が印刷されている：書名「香港印刷工藝全書」、著者「張偉明」、出版社「智印港出版」、ISBNバーコード、背表紙に書名、プロフェッショナルな組版',
+  },
+  'menus': {
+    zh: '餐牌印有真实菜品信息：餐廳名「龍記茶餐廳」、招牌菜「招牌奶茶 $28」、「黯然銷魂飯 $58」、地址「旺角西洋菜街78號」，配真實菜品圖片',
+    en: 'Menu displays real dish info: restaurant name "Lung Kee Café", signature items "Signature Milk Tea $28", "Baked Pork Chop Rice $58", address "78 Sai Yeung Choi Street, Mong Kok", with real food photos',
+    ja: 'メニューに実際の料理情報が印刷されている：レストラン名「龍記茶餐廳」、看板メニュー「招牌奶茶 $28」、「黯然銷魂飯 $58」、住所「旺角西洋菜街78號」、実際の料理写真付き',
+  },
+  'envelopes': {
+    zh: '信封印有真实收件人信息：姓名「張偉明 先生」、地址「九龍旺角彌敦道123號智印中心15樓」、郵編「KLN 1234」、公司名「智印港有限公司」，地址字跡清晰',
+    en: 'Envelopes display real recipient info: name "Mr. Alex Cheung", address "15/F Zprint Centre, 123 Nathan Road, Mong Kok, Kowloon", postcode "KLN 1234", company "ZprintPro Ltd.", clear legible address',
+    ja: '封筒に実際の宛先情報が印刷されている：名前「張偉明 先生」、住所「九龍旺角彌敦道123號智印中心15樓」、郵便番号「KLN 1234」、会社名「智印港有限公司」、鮮明で読みやすい住所',
+  },
+  'calendars': {
+    zh: '年曆印有真实日期和品牌信息：品牌名「智印港」、年份「2026」、月份「一月」、農曆日期、香港公眾假期標註，日期數字清晰可讀',
+    en: 'Calendar displays real dates and brand info: brand "ZprintPro", year "2026", month "January", lunar dates, Hong Kong public holidays marked, clear readable date numbers',
+    ja: 'カレンダーに実際の日付とブランド情報が印刷されている：ブランド名「智印港」、年「2026」、月「1月」、旧暦の日付、香港の祝日マーク、鮮明で読みやすい日付数字',
+  },
+  'red-packets': {
+    zh: '利是封印有真实祝福信息：公司名「滙豐銀行」、燙金「福」字、吉祥語「恭喜發財」、年份「2026」，紅色紙張喜慶質感',
+    en: 'Red packets display real blessing info: company name "HSBC", foil-stamped "福" character, greeting "恭喜發財", year "2026", festive red paper texture',
+    ja: 'ポチ袋に実際の祝福メッセージが印刷されている：会社名「滙豐銀行」、箔押し「福」字、吉祥語「恭喜發財」、年「2026」、お祝いの赤い紙の質感',
+  },
+  'educational': {
+    zh: '印有真实學校信息：學校名「聖保羅書院」、學生姓名「陳小明」、班級「5A」、科目「數學」，封面設計簡潔專業',
+    en: "Displays real school info: school name 'St. Pauls College', student name 'Alex Chan', class '5A', subject 'Mathematics', clean professional cover design",
+    ja: '実際の学校情報が印刷されている：学校名「聖保羅書院」、生徒名「陳小明」、クラス「5A」、科目「數學」、シンプルでプロフェッショナルな表紙デザイン',
+  },
+};
+
 // ========== 场景模板库（按分类） ==========
 const SCENE_TEMPLATES = {
   'business-cards': {
-    zh: '前景为{count}张{product}整齐排列在深色胡桃木桌面，部分卡片微斜展示侧面厚度，{feature}工艺细节清晰可见。背景虚化现代商务办公空间，暖黄台灯与皮面记事本隐约可见，暖棕调 professional atmosphere。',
-    en: 'Foreground: {count} {product} neatly arranged on dark walnut desk, some slightly angled showing thickness, {feature} details clearly visible. Background: blurred modern business office, warm yellow desk lamp and leather notebook, warm brown professional atmosphere.',
-    ja: '前景：ダークウォールナットの机に整列した{product}{count}枚、一部は角度を付けて厚みを見せ、{feature}のディテールがはっきり見える。背景：ぼかしたモダンなビジネスオフィス、暖かい黄色のデスクライトと革のノート、プロフェッショナルな雰囲気。',
+    zh: '前景为{count}张{product}整齐排列在深色胡桃木桌面，每张名片有实际用户信息内容，部分卡片微斜展示侧面厚度，{feature}工艺细节清晰可见。背景虚化现代商务办公空间，暖黄台灯与皮面记事本隐约可见，暖棕调 professional atmosphere。',
+    en: 'Foreground: {count} {product} neatly arranged on dark walnut desk, each card with real user info content, some slightly angled showing thickness, {feature} details clearly visible. Background: blurred modern business office, warm yellow desk lamp and leather notebook, warm brown professional atmosphere.',
+    ja: '前景：ダークウォールナットの机に整列した{product}{count}枚、各名刺に実際のユーザー情報が含まれ、一部は角度を付けて厚みを見せ、{feature}のディテールがはっきり見える。背景：ぼかしたモダンなビジネスオフィス、暖かい黄色のデスクライトと革のノート、プロフェッショナルな雰囲気。',
   },
   'stickers': {
-    zh: '前景为{product}贴在{surface}上，{feature}效果真实呈现，边缘细节高清。背景虚化{scene}，{lighting}。',
-    en: 'Foreground: {product} applied on {surface}, {feature} effect realistically shown, edge details in high definition. Background: blurred {scene}, {lighting}.',
-    ja: '前景：{surface}に貼られた{product}、{feature}効果がリアルに表現され、縁のディテールが鮮明。背景：ぼかした{scene}、{lighting}。',
+    zh: '前景为{product}贴在{surface}上，貼紙上有实际用户信息内容，{feature}效果真实呈现，边缘细节高清。背景虚化{scene}，{lighting}。',
+    en: 'Foreground: {product} applied on {surface}, stickers with real user info content, {feature} effect realistically shown, edge details in high definition. Background: blurred {scene}, {lighting}.',
+    ja: '前景：{surface}に貼られた{product}、ステッカーに実際のユーザー情報が含まれ、{feature}効果がリアルに表現され、縁のディテールが鮮明。背景：ぼかした{scene}、{lighting}。',
   },
   'paper-bags': {
-    zh: '前景为{count}个{product}，{feature}，袋内微露{content}，纸袋纹理清晰可见。背景虚化{scene}，{lighting}。',
-    en: 'Foreground: {count} {product}, {feature}, {content} slightly visible inside, paper texture clearly shown. Background: blurred {scene}, {lighting}.',
-    ja: '前景：{product}{count}個、{feature}、中から{content}が少し見える、紙の質感がはっきり見える。背景：ぼかした{scene}、{lighting}。',
+    zh: '前景为{count}个{product}，紙袋上有实际用户信息内容，{feature}，袋内微露{content}，纸袋纹理清晰可见。背景虚化{scene}，{lighting}。',
+    en: 'Foreground: {count} {product}, bags with real user info content, {feature}, {content} slightly visible inside, paper texture clearly shown. Background: blurred {scene}, {lighting}.',
+    ja: '前景：{product}{count}個、紙袋に実際のユーザー情報が含まれ、{feature}、中から{content}が少し見える、紙の質感がはっきり見える。背景：ぼかした{scene}、{lighting}。',
   },
   'flyers': {
-    zh: '前景为{count}张{product}，{feature}，展示真实印刷效果。背景虚化{scene}，{lighting}。',
-    en: 'Foreground: {count} {product}, {feature}, showing real printing effect. Background: blurred {scene}, {lighting}.',
-    ja: '前景：{product}{count}枚、{feature}、実際の印刷効果を展示。背景：ぼかした{scene}、{lighting}。',
+    zh: '前景为{count}张{product}，單張上有实际用户信息内容，{feature}，展示真实印刷效果。背景虚化{scene}，{lighting}。',
+    en: 'Foreground: {count} {product}, flyers with real user info content, {feature}, showing real printing effect. Background: blurred {scene}, {lighting}.',
+    ja: '前景：{product}{count}枚、チラシに実際のユーザー情報が含まれ、{feature}、実際の印刷効果を展示。背景：ぼかした{scene}、{lighting}。',
   },
   'posters': {
-    zh: '前景为一张{product}展示在{display}上，{feature}，边角微翘展示真实材质。背景虚化{scene}，{lighting}。',
-    en: 'Foreground: one {product} displayed on {display}, {feature}, slightly curled edges showing real material. Background: blurred {scene}, {lighting}.',
-    ja: '前景：{display}に展示された{product}1枚、{feature}、わずかにめくれた縁で実際の素材を見せる。背景：ぼかした{scene}、{lighting}。',
+    zh: '前景为一张{product}展示在{display}上，海報上有实际用户信息内容，{feature}，边角微翘展示真实材质。背景虚化{scene}，{lighting}。',
+    en: 'Foreground: one {product} displayed on {display}, poster with real user info content, {feature}, slightly curled edges showing real material. Background: blurred {scene}, {lighting}.',
+    ja: '前景：{display}に展示された{product}1枚、ポスターに実際のユーザー情報が含まれ、{feature}、わずかにめくれた縁で実際の素材を見せる。背景：ぼかした{scene}、{lighting}。',
   },
   'packaging': {
-    zh: '前景为{count}个{product}，盒盖微开露出{content}，{feature}。背景虚化{scene}，{lighting}。',
-    en: 'Foreground: {count} {product}, lid slightly open revealing {content}, {feature}. Background: blurred {scene}, {lighting}.',
-    ja: '前景：{product}{count}個、蓋が少し開いて{content}が見える、{feature}。背景：ぼかした{scene}、{lighting}。',
+    zh: '前景为{count}个{product}，包装盒上有实际用户信息内容，盒盖微开露出{content}，{feature}。背景虚化{scene}，{lighting}。',
+    en: 'Foreground: {count} {product}, boxes with real user info content, lid slightly open revealing {content}, {feature}. Background: blurred {scene}, {lighting}.',
+    ja: '前景：{product}{count}個、包装盒に実際のユーザー情報が含まれ、蓋が少し開いて{content}が見える、{feature}。背景：ぼかした{scene}、{lighting}。',
   },
   'banners': {
-    zh: '前景为{product}完整展开展示，{feature}，品牌画面清晰可见。背景虚化{scene}，{lighting}。',
-    en: 'Foreground: {product} fully displayed, {feature}, brand graphics clearly visible. Background: blurred {scene}, {lighting}.',
-    ja: '前景：完全に展開された{product}、{feature}、ブランドグラフィックがはっきり見える。背景：ぼかした{scene}、{lighting}。',
+    zh: '前景为{product}完整展开展示，橫額上有实际用户信息内容，{feature}，品牌画面清晰可见。背景虚化{scene}，{lighting}。',
+    en: 'Foreground: {product} fully displayed, banner with real user info content, {feature}, brand graphics clearly visible. Background: blurred {scene}, {lighting}.',
+    ja: '前景：完全に展開された{product}、バナーに実際のユーザー情報が含まれ、{feature}、ブランドグラフィックがはっきり見える。背景：ぼかした{scene}、{lighting}。',
   },
   'books': {
-    zh: '前景为{count}本{product}堆叠展示，{feature}，翻开状态展示内页。背景虚化{scene}，{lighting}。',
-    en: 'Foreground: {count} {product} stacked, {feature}, opened state showing inner pages. Background: blurred {scene}, {lighting}.',
-    ja: '前景：積み重ねられた{product}{count}冊、{feature}、開いた状態で内側のページを展示。背景：ぼかした{scene}、{lighting}。',
+    zh: '前景为{count}本{product}堆叠展示，書籍上有实际用户信息内容，{feature}，翻开状态展示内页。背景虚化{scene}，{lighting}。',
+    en: 'Foreground: {count} {product} stacked, books with real user info content, {feature}, opened state showing inner pages. Background: blurred {scene}, {lighting}.',
+    ja: '前景：積み重ねられた{product}{count}冊、書籍に実際のユーザー情報が含まれ、{feature}、開いた状態で内側のページを展示。背景：ぼかした{scene}、{lighting}。',
   },
   'menus': {
-    zh: '前景为{product}立于{surface}，{feature}，菜单内容清晰可见。背景虚化{scene}，{lighting}。',
-    en: 'Foreground: {product} standing on {surface}, {feature}, menu content clearly visible. Background: blurred {scene}, {lighting}.',
-    ja: '前景：{surface}に立てかけられた{product}、{feature}、メニュー内容がはっきり見える。背景：ぼかした{scene}、{lighting}。',
+    zh: '前景为{product}立于{surface}，餐牌上有实际用户信息内容，{feature}，菜单内容清晰可见。背景虚化{scene}，{lighting}。',
+    en: 'Foreground: {product} standing on {surface}, menu with real user info content, {feature}, menu content clearly visible. Background: blurred {scene}, {lighting}.',
+    ja: '前景：{surface}に立てかけられた{product}、メニューに実際のユーザー情報が含まれ、{feature}、メニュー内容がはっきり見える。背景：ぼかした{scene}、{lighting}。',
   },
   'envelopes': {
-    zh: '前景为{count}个{product}，{feature}，部分信件微微抽出。背景虚化{scene}，{lighting}。',
-    en: 'Foreground: {count} {product}, {feature}, some letters slightly pulled out. Background: blurred {scene}, {lighting}.',
-    ja: '前景：{product}{count}枚、{feature}、一部の手紙が少し引き出されている。背景：ぼかした{scene}、{lighting}。',
+    zh: '前景为{count}个{product}，信封上有实际用户信息内容，{feature}，部分信件微微抽出。背景虚化{scene}，{lighting}。',
+    en: 'Foreground: {count} {product}, envelopes with real user info content, {feature}, some letters slightly pulled out. Background: blurred {scene}, {lighting}.',
+    ja: '前景：{product}{count}枚、封筒に実際のユーザー情報が含まれ、{feature}、一部の手紙が少し引き出されている。背景：ぼかした{scene}、{lighting}。',
   },
   'calendars': {
-    zh: '前景为{product}立于桌面，翻开状态展示{month}月份，{feature}。背景虚化{scene}，{lighting}。',
-    en: 'Foreground: {product} standing on desk, opened showing {month}, {feature}. Background: blurred {scene}, {lighting}.',
-    ja: '前景：机に立てかけられた{product}、開いて{month}を展示、{feature}。背景：ぼかした{scene}、{lighting}。',
+    zh: '前景为{product}立于桌面，年曆上有实际用户信息内容，翻开状态展示{month}月份，{feature}。背景虚化{scene}，{lighting}。',
+    en: 'Foreground: {product} standing on desk, calendar with real user info content, opened showing {month}, {feature}. Background: blurred {scene}, {lighting}.',
+    ja: '前景：机に立てかけられた{product}、カレンダーに実際のユーザー情報が含まれ、開いて{month}を展示、{feature}。背景：ぼかした{scene}、{lighting}。',
   },
   'red-packets': {
-    zh: '前景为{count}个红色{product}，{feature}，喜庆红色纸张质感可见。背景虚化{scene}，{lighting}。',
-    en: 'Foreground: {count} red {product}, {feature}, festive red paper texture visible. Background: blurred {scene}, {lighting}.',
-    ja: '前景：赤い{product}{count}枚、{feature}、お祭り気分の赤い紙の質感が見える。背景：ぼかした{scene}、{lighting}。',
+    zh: '前景为{count}个红色{product}，利是封上有实际用户信息内容，{feature}，喜庆红色纸张质感可见。背景虚化{scene}，{lighting}。',
+    en: 'Foreground: {count} red {product}, red packets with real user info content, {feature}, festive red paper texture visible. Background: blurred {scene}, {lighting}.',
+    ja: '前景：赤い{product}{count}枚、ポチ袋に実際のユーザー情報が含まれ、{feature}、お祭り気分の赤い紙の質感が見える。背景：ぼかした{scene}、{lighting}。',
   },
   'educational': {
-    zh: '前景为{product}，{feature}，摆放于课桌。背景虚化{scene}，{lighting}。',
-    en: 'Foreground: {product}, {feature}, placed on school desk. Background: blurred {scene}, {lighting}.',
-    ja: '前景：{product}、{feature}、学校の机の上に置かれている。背景：ぼかした{scene}、{lighting}。',
+    zh: '前景为{product}，教育用品上有实际用户信息内容，{feature}，摆放于课桌。背景虚化{scene}，{lighting}。',
+    en: 'Foreground: {product}, educational items with real user info content, {feature}, placed on school desk. Background: blurred {scene}, {lighting}.',
+    ja: '前景：{product}、教育用品に実際のユーザー情報が含まれ、{feature}、学校の机の上に置かれている。背景：ぼかした{scene}、{lighting}。',
   },
 };
 
@@ -197,7 +267,6 @@ function generateTagLines(product, locale) {
   const priceMatch = price.match(/HK\$?([\d,.]+)/);
   const minPrice = priceMatch ? priceMatch[1].replace(',', '') : '';
   
-  // 基于分类的单位映射
   const unitMap = {
     'business-cards': '張', 'stickers': '張', 'paper-bags': '個',
     'flyers': '張', 'posters': '張', 'packaging': '個',
@@ -207,7 +276,6 @@ function generateTagLines(product, locale) {
   };
   let unit = unitMap[product.category] || '個';
   
-  // 日语单位映射
   const jaUnitMap = {
     'business-cards': '枚', 'stickers': '枚', 'paper-bags': '個',
     'flyers': '枚', 'posters': '枚', 'packaging': '個',
@@ -234,15 +302,38 @@ function generateTagLines(product, locale) {
   return lines[locale];
 }
 
+// ========== 生成 SEO 文件名 ==========
+function generateSEOFilename(product, locale) {
+  // 格式: zprintpro-{category}-{slug}-{locale}.jpg
+  return `zprintpro-${product.category}-${product.slug}-${locale}.jpg`;
+}
+
+// ========== 生成 Alt Text ==========
+function generateAltText(product, locale) {
+  const price = product.price_range || '';
+  if (locale === 'zh-hk') {
+    return `香港${product.name}印刷 ${price} 起｜${product.description.slice(0, 25)}｜ZprintPro智印港`;
+  }
+  if (locale === 'en') {
+    return `${product.nameEn} Printing Hong Kong ${price}｜${product.descriptionEn.slice(0, 35)}｜ZprintPro`;
+  }
+  if (locale === 'ja') {
+    return `香港${product.nameJa} ${price}｜${product.descriptionJa.slice(0, 25)}｜ZprintPro`;
+  }
+  return product.name;
+}
+
 // ========== 生成完整提示词 ==========
 function generatePrompt(product, locale) {
   const template = SCENE_TEMPLATES[product.category] || SCENE_TEMPLATES['business-cards'];
   const scene = CATEGORY_SCENES[product.category] || CATEGORY_SCENES['business-cards'];
+  const realContent = REAL_USER_CONTENT[product.category] || REAL_USER_CONTENT['business-cards'];
   
   const localeKey = locale === 'zh-hk' ? 'zh' : (locale === 'en' ? 'en' : 'ja');
   const desc = locale === 'zh-hk' ? product.description : (locale === 'en' ? product.descriptionEn : product.descriptionJa);
   const features = extractFeatures(desc, localeKey);
   const tags = generateTagLines(product, locale);
+  const userContent = realContent[localeKey];
   
   const t = template[localeKey];
   const s = scene[localeKey];
@@ -262,28 +353,27 @@ function generatePrompt(product, locale) {
     .replace(/{month}/g, s.month || '');
 
   const prefix = {
-    'zh-hk': `1:1比例，8K超高清电商主图。左上角固定放置单一枚大红色(#DC2626)底色、白色粗体字(PingFang HK Bold)、白色3px描边的爆炸促销标签。标签主标题：${tags.line1}，副标题：${tags.line2}。标签外画面内绝对不出现任何其他文字、乱码、水印、品牌名、多标签。`,
-    'en': `1:1 ratio, 8K ultra-high-definition e-commerce hero image. Top-left single burst label with deep red (#DC2626) background, white bold text (Inter Bold), white 3px stroke. Label main: ${tags.line1}, sub: ${tags.line2}. Absolutely no other text, gibberish, watermarks, brand names, or multiple labels anywhere else in the image.`,
-    'ja': `1:1比率、8K超高清Eコマースメイン画像。左上に単一の赤色(#DC2626)背景、白太字(Hiragino Sans W6)、白3px縁取りのバーストラベル。ラベル主見出し：${tags.line1}、副見出し：${tags.line2}。ラベル外の画面内に他の文字・乱码・透かし・ブランド名・複数ラベル一切禁止。`,
+    'zh-hk': `1:1比例，8K超高清电商主图。右上角固定放置单一枚大红色(#DC2626)底色、白色粗体字(PingFang HK Bold)、白色3px描边的爆炸促销标签。标签主标题：${tags.line1}，副标题：${tags.line2}。标签外画面内绝对不出现任何其他文字、乱码、水印、品牌名、多标签。`,
+    'en': `1:1 ratio, 8K ultra-high-definition e-commerce hero image. Top-right single burst label with deep red (#DC2626) background, white bold text (Inter Bold), white 3px stroke. Label main: ${tags.line1}, sub: ${tags.line2}. Absolutely no other text, gibberish, watermarks, brand names, or multiple labels anywhere else in the image.`,
+    'ja': `1:1比率、8K超高清Eコマースメイン画像。右上に単一の赤色(#DC2626)背景、白太字(Hiragino Sans W6)、白3px縁取りのバーストラベル。ラベル主見出し：${tags.line1}、副見出し：${tags.line2}。ラベル外の画面内に他の文字・乱码・透かし・ブランド名・複数ラベル一切禁止。`,
   };
 
   const suffix = {
-    'zh-hk': '产品占画面75%-85%，材质和工艺细节高清呈现。所有中文字符必须笔画完整准确，英文单词拼写正确、无粘连、无乱码。',
-    'en': 'Product occupies 75%-85% of frame, material and craftsmanship details in high definition. All English words must be spelled correctly, no粘连, no gibberish.',
-    'ja': '製品が画面の75%-85%を占める、素材と職人技のディテールが高精細。すべての文字が正確に表示されること。',
+    'zh-hk': `产品占画面75%-85%，材质和工艺细节高清呈现。所有中文字符必须笔画完整准确，英文单词拼写正确、无粘连、无乱码。產品上必須有实际用户信息内容：${userContent}`,
+    'en': `Product occupies 75%-85% of frame, material and craftsmanship details in high definition. All English words must be spelled correctly, no粘连, no gibberish. Products must display real user info content: ${userContent}`,
+    'ja': `製品が画面の75%-85%を占める、素材と職人技のディテールが高精細。すべての文字が正確に表示されること。製品には実際のユーザー情報が含まれている必要がある：${userContent}`,
   };
 
   return `${prefix[locale]} ${sceneDesc} ${suffix[locale]}`;
 }
 
-// ========== 解析 products.ts（使用正则逐字段匹配） ==========
+// ========== 解析 products.ts ==========
 function extractProducts() {
   const content = fs.readFileSync('F:/zprintpro-nextjs/src/data/products.ts', 'utf8');
   const arrayStart = content.indexOf('export const products: Product[] = [');
   const arrayEnd = content.lastIndexOf('];\n\n// 获取所有产品');
   const arrayContent = content.substring(arrayStart, arrayEnd);
   
-  // 按产品块分割 - 找到每个 { id: 开头
   const productRegex = /\{\s*\n\s*id:\s*['"]([^'"]+)['"][\s\S]*?\n\s*\},?\s*\n/g;
   const products = [];
   let match;
@@ -337,7 +427,6 @@ function generateCSV() {
     return;
   }
   
-  // CSV 头部
   const headers = [
     'id', 'slug', 'category',
     'name_zh', 'name_en', 'name_ja',
@@ -346,6 +435,8 @@ function generateCSV() {
     'tag_line_en', 'tag_sub_en',
     'tag_line_ja', 'tag_sub_ja',
     'prompt_zh_hk', 'prompt_en', 'prompt_ja',
+    'filename_zh_hk', 'filename_en', 'filename_ja',
+    'alt_zh_hk', 'alt_en', 'alt_ja',
     'scene_keywords', 'target_audience', 'material_keywords'
   ];
   
@@ -359,6 +450,14 @@ function generateCSV() {
     const promptZh = generatePrompt(product, 'zh-hk');
     const promptEn = generatePrompt(product, 'en');
     const promptJa = generatePrompt(product, 'ja');
+    
+    const filenameZh = generateSEOFilename(product, 'zh-hk');
+    const filenameEn = generateSEOFilename(product, 'en');
+    const filenameJa = generateSEOFilename(product, 'ja');
+    
+    const altZh = generateAltText(product, 'zh-hk');
+    const altEn = generateAltText(product, 'en');
+    const altJa = generateAltText(product, 'ja');
     
     const sceneKw = CATEGORY_SCENES[product.category]?.zh?.scene || '办公场景';
     
@@ -400,6 +499,12 @@ function generateCSV() {
       `"${promptZh.replace(/"/g, '""')}"`,
       `"${promptEn.replace(/"/g, '""')}"`,
       `"${promptJa.replace(/"/g, '""')}"`,
+      filenameZh,
+      filenameEn,
+      filenameJa,
+      `"${altZh.replace(/"/g, '""')}"`,
+      `"${altEn.replace(/"/g, '""')}"`,
+      `"${altJa.replace(/"/g, '""')}"`,
       sceneKw,
       audienceMap[product.category] || '一般企業',
       matKeywords,
@@ -413,10 +518,13 @@ function generateCSV() {
   console.log(`\nCSV saved to: ${outputPath}`);
   console.log(`Total products: ${products.length}`);
   
-  // 同时输出纯文本提示词文件
+  // 纯文本提示词文件
   let txtOutput = '';
   for (const product of products) {
     txtOutput += `\n========== ${product.id} | ${product.slug} ==========\n`;
+    txtOutput += `SEO Filename ZH: ${generateSEOFilename(product, 'zh-hk')}\n`;
+    txtOutput += `SEO Filename EN: ${generateSEOFilename(product, 'en')}\n`;
+    txtOutput += `SEO Filename JA: ${generateSEOFilename(product, 'ja')}\n\n`;
     txtOutput += `[zh-hk]\n${generatePrompt(product, 'zh-hk')}\n\n`;
     txtOutput += `[en]\n${generatePrompt(product, 'en')}\n\n`;
     txtOutput += `[ja]\n${generatePrompt(product, 'ja')}\n\n`;
@@ -426,7 +534,6 @@ function generateCSV() {
   fs.writeFileSync(txtPath, txtOutput, 'utf8');
   console.log(`TXT saved to: ${txtPath}`);
   
-  // 输出摘要
   console.log('\n=== Category Summary ===');
   const catCounts = {};
   for (const p of products) {
