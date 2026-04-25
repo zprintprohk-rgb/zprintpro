@@ -31,3 +31,6 @@ coverage/
 
 # Vite reference build (not part of Next.js project)
 Kimi_Agent_Deployment_Vite转Next.js重构_v21/
+
+/public/images/products-backup/
+
