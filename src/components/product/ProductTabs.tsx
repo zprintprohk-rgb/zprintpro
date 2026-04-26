@@ -51,7 +51,7 @@ const translations = {
       turnaround: 'Turnaround',
     },
     shipping: {
-      freeShipping: 'Free shipping over $500',
+      freeShipping: 'Free intl. shipping',
       standard: 'Standard: 3-5 business days',
       express: 'Express: 1-2 business days',
       selfPickup: 'Self pickup: Kwun Tong',
@@ -76,7 +76,7 @@ const translations = {
       turnaround: '納期',
     },
     shipping: {
-      freeShipping: '500ドル以上送料無料',
+      freeShipping: '国際送料無料',
       standard: '標準配送: 3-5営業日',
       express: '急ぎ配送: 1-2営業日',
       selfPickup: '店頭受取: 観塘',

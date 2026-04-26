@@ -173,7 +173,7 @@ export default function ProductPage({
       sku: 'SKU',
       category: 'Category',
       deliveryTime: 'Delivery Time',
-      freeShipping: 'Free shipping over $500',
+      freeShipping: 'Free intl. shipping',
       sameDay: 'Same-day delivery',
       quality: 'Quality Guarantee',
       minOrder: 'Minimum Order',
@@ -194,7 +194,7 @@ export default function ProductPage({
       sku: '製品番号',
       category: 'カテゴリー',
       deliveryTime: '納期',
-      freeShipping: '500ドル以上送料無料',
+      freeShipping: '国際送料無料',
       sameDay: '即日納品',
       quality: '品質保証',
       minOrder: '最小注文数',
@@ -292,6 +292,15 @@ export default function ProductPage({
                     {locale === 'zh-hk' ? `完整價格 ${product.price_range}` : locale === 'en' ? `Full price ${convertPriceRangeString(product.price_range, locale, product.category_slug, product.slug)}` : `価格 ${convertPriceRangeString(product.price_range, locale, product.category_slug, product.slug)}`}
                   </span>
                 </div>
+                {locale !== 'zh-hk' && (
+                  <div className="flex items-center gap-1.5 mb-2">
+                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-green-100 text-green-800 border border-green-200">
+                      <svg className="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"/></svg>
+                      {locale === 'en' ? 'Free International Shipping' : '国際送料無料'}
+                    </span>
+                    <span className="text-xs text-gray-400">{locale === 'en' ? 'DHL/FedEx 3-5 days to USA, 2-4 days to Japan' : 'DHL/FedEx アメリカ3-5日、日本2-4日'}</span>
+                  </div>
+                )}
                 <div className="flex flex-wrap gap-5 mt-3">
                   <span className="inline-flex items-center gap-1.5 text-base text-gray-600">
                     <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
