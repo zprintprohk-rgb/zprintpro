@@ -261,7 +261,7 @@ export function HotProducts({ locale }: HotProductsProps) {
                       {/* price area — fixed height for alignment, clickable to PDP */}
                       <div className="h-[24px] mb-2 flex items-center justify-center">
                         <Link href={`${localePrefix}/product/${product.slug}/`} className="text-[#F87314] font-bold text-sm tracking-wider hover:underline">
-                          {convertPriceRangeString(product.price_range, locale)}
+                          {convertPriceRangeString(product.price_range, locale, product.category_slug)}
                         </Link>
                       </div>
                       {/* dual buttons */}

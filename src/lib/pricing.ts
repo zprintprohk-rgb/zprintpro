@@ -84,17 +84,59 @@ export function calculateQuote(params: QuoteParams): QuoteResult {
 }
 
 // ============================================================================
-// 多币种定价系统（新增）
-// zh-hk: HKD (主场基准价)
-// en:    USD (国际价 ≈ HKD × 0.128 × 3)
-// ja:    JPY (日本价 ≈ HKD × 19.5 × 3)
+// 多币种定价系统（2026-04-16 更新：分级定价模型）
+// zh-hk: HKD (主场基准价，1×)
+// en:    USD (分级倍率 × 基础汇率 0.128)
+// ja:    JPY (分级倍率 × 基础汇率 19.5)
 // ============================================================================
 
-const EXCHANGE_RATES: Record<Locale, { rate: number; symbol: string }> = {
-  'zh-hk': { rate: 1, symbol: 'HK$' },
-  'en':    { rate: 0.384, symbol: 'US$' },   // 0.128 USD/HKD × 3
-  'ja':    { rate: 58.5, symbol: '¥' },      // 19.5 JPY/HKD × 3
+/** 品类分级倍率 — 基于竞品分析（运费、重量、竞争度） */
+const CATEGORY_TIER_MULTIPLIERS: Record<string, { en: number; ja: number }> = {
+  // A级：轻量高值，运费占比低，价格可接近本地
+  'stickers':     { en: 1.9, ja: 1.9 },
+  'flyers':       { en: 1.9, ja: 1.9 },
+  'envelopes':    { en: 2.0, ja: 2.0 },
+
+  // B级：中量中值，运费适中，保持竞争力
+  'business-cards': { en: 2.3, ja: 2.3 },
+  'posters':      { en: 2.5, ja: 2.5 },
+  'banners':      { en: 2.5, ja: 2.5 },
+  'menus':        { en: 2.5, ja: 2.5 },
+  'calendars':    { en: 2.5, ja: 2.5 },
+  'red-packets':  { en: 2.5, ja: 2.5 },
+
+  // C级：重量低值，运费占比高，需覆盖成本
+  'packaging':    { en: 3.2, ja: 3.2 },
+  'paper-bags':   { en: 3.2, ja: 3.2 },
+  'books':        { en: 3.2, ja: 3.2 },
+  'educational':  { en: 3.0, ja: 3.0 },
 };
+
+const BASE_EXCHANGE_RATES: Record<Locale, { rate: number; symbol: string }> = {
+  'zh-hk': { rate: 1,      symbol: 'HK$' },
+  'en':    { rate: 0.128,  symbol: 'US$' },   // 1 HKD = 0.128 USD
+  'ja':    { rate: 19.5,   symbol: '¥' },     // 1 HKD = 19.5 JPY
+};
+
+/** PayPal 手续费补偿系数 */
+const PAYPAL_SURCHARGE = 1.03; // +3%
+
+/** 获取品类的定价倍率 */
+export function getCategoryMultiplier(categorySlug: string, locale: Locale): number {
+  if (locale === 'zh-hk') return 1;
+  const tier = CATEGORY_TIER_MULTIPLIERS[categorySlug];
+  const multiplier = tier ? tier[locale] : 2.5; // 默认 2.5×
+  // EN 市场额外叠加 PayPal 手续费
+  return locale === 'en' ? multiplier * PAYPAL_SURCHARGE : multiplier;
+}
+
+/** 获取 effective 汇率（基础汇率 × 品类倍率） */
+function getEffectiveRate(locale: Locale, categorySlug?: string): number {
+  const base = BASE_EXCHANGE_RATES[locale].rate;
+  if (locale === 'zh-hk') return base;
+  const multiplier = categorySlug ? getCategoryMultiplier(categorySlug, locale) : 2.5 * (locale === 'en' ? PAYPAL_SURCHARGE : 1);
+  return base * multiplier;
+}
 
 /** 所有分类都显示价格 */
 export function shouldShowPrice(_categorySlug: string): boolean {
@@ -111,22 +153,22 @@ export function getQuoteLabel(locale: Locale): string {
   return labels[locale];
 }
 
-/** 转换基础HKD价格到目标币种 */
-export function convertPrice(basePriceHkd: number, locale: Locale): number {
-  return basePriceHkd * EXCHANGE_RATES[locale].rate;
+/** 转换基础HKD价格到目标币种（支持品类分级定价） */
+export function convertPrice(basePriceHkd: number, locale: Locale, categorySlug?: string): number {
+  return basePriceHkd * getEffectiveRate(locale, categorySlug);
 }
 
 /** 格式化价格显示（单个数值） */
 export function formatPrice(price: number, locale: Locale): string {
-  const { symbol } = EXCHANGE_RATES[locale];
+  const { symbol } = BASE_EXCHANGE_RATES[locale];
   if (locale === 'ja') {
     return `${symbol}${Math.round(price).toLocaleString()}`;
   }
   return `${symbol}${price.toFixed(2)}`;
 }
 
-/** 从 price_range 字符串提取并转换 */
-export function convertPriceRangeString(priceRange: string, locale: Locale): string {
+/** 从 price_range 字符串提取并转换（支持品类分级定价） */
+export function convertPriceRangeString(priceRange: string, locale: Locale, categorySlug?: string): string {
   const match = priceRange.match(/HK\$([\d.]+)(?:-([\d.]+))?\s*(?:\/(.*))?/);
   if (!match) return priceRange;
 
@@ -134,16 +176,16 @@ export function convertPriceRangeString(priceRange: string, locale: Locale): str
   const max = match[2] ? parseFloat(match[2]) : null;
   const unit = match[3] || '';
   const unitStr = unit ? `/${unit}` : '';
-  const { symbol } = EXCHANGE_RATES[locale];
+  const { symbol } = BASE_EXCHANGE_RATES[locale];
 
-  const minPrice = convertPrice(base, locale);
+  const minPrice = convertPrice(base, locale, categorySlug);
 
   if (!max || max <= base) {
     if (locale === 'ja') return `${symbol}${Math.round(minPrice).toLocaleString()}${unitStr}`;
     return `${symbol}${minPrice.toFixed(2)}${unitStr}`;
   }
 
-  const maxPrice = convertPrice(max, locale);
+  const maxPrice = convertPrice(max, locale, categorySlug);
   if (locale === 'ja') {
     return `${symbol}${Math.round(minPrice).toLocaleString()}-${Math.round(maxPrice).toLocaleString()}${unitStr}`;
   }

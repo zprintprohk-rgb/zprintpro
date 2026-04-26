@@ -31,6 +31,7 @@ import { ProductFaq } from '@/components/ProductFaq';
 import { ProductHowTo } from '@/components/ProductHowTo';
 import { getProductSeo } from '@/data/product-seo';
 import { RegionalContent, RegionalCta, RegionalTrustBadges } from '@/components/seo/RegionalContent';
+import { convertPriceRangeString } from '@/lib/pricing';
 import { ProductWhyChooseUs } from '@/components/ProductWhyChooseUs';
 
 // 生成静态参数 - 79产品 × 3语言 = 237个路径
@@ -282,13 +283,13 @@ export default function ProductPage({
               <div className="mb-5">
                 <div className="flex items-baseline gap-2 mb-1 flex-wrap">
                   <span className="text-[33px] font-extrabold text-[#F87314] leading-tight">
-                    {product.price_range.split('-')[0]}
+                    {locale === 'zh-hk' ? product.price_range.split('-')[0] : convertPriceRangeString(product.price_range, locale, product.category_slug).split('-')[0]}
                   </span>
                   <span className="text-sm text-gray-400">
-                    {product.price_range.includes('/100') ? '/100張起' : product.price_range.includes('/個') ? '/個起' : '/張起'}
+                    {product.price_range.includes('/100') ? (locale === 'zh-hk' ? '/100張起' : locale === 'en' ? '/100pcs From' : '/100枚から') : product.price_range.includes('/個') ? (locale === 'zh-hk' ? '/個起' : locale === 'en' ? '/pc From' : '/個から') : (locale === 'zh-hk' ? '/張起' : locale === 'en' ? '/pc From' : '/枚から')}
                   </span>
                   <span className="text-xs text-gray-400 ml-1">
-                    {locale === 'zh-hk' ? `完整價格 ${product.price_range}` : locale === 'en' ? `Full price ${product.price_range}` : `価格 ${product.price_range}`}
+                    {locale === 'zh-hk' ? `完整價格 ${product.price_range}` : locale === 'en' ? `Full price ${convertPriceRangeString(product.price_range, locale, product.category_slug)}` : `価格 ${convertPriceRangeString(product.price_range, locale, product.category_slug)}`}
                   </span>
                 </div>
                 <div className="flex flex-wrap gap-5 mt-3">

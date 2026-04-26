@@ -416,7 +416,7 @@ export default function BlogContent({ locale }: { locale: Locale }) {
                         {getProductDescription(product, locale).slice(0, 35)}...
                       </p>
                       <p className="text-sm text-[#F87314] font-bold mt-1">
-                        {convertPriceRangeString(product.price_range, locale).split('-')[0]}
+                        {convertPriceRangeString(product.price_range, locale, product.category_slug).split('-')[0]}
                       </p>
                     </div>
                   </Link>
