@@ -119,7 +119,7 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
         {/* price area — fixed height for alignment, clickable to PDP */}
         <div className="h-[28px] mb-2 flex items-center justify-center">
           <Link href={`${localePrefix}/product/${product.slug}/`} className="text-[#F87314] font-bold text-base hover:underline">
-            {convertPriceRangeString(product.price_range, locale, product.category_slug).split('-')[0]}
+            {convertPriceRangeString(product.price_range, locale, product.category_slug, product.slug).split('-')[0]}
             <span className="text-xs text-gray-400 ml-1">{t.from}</span>
           </Link>
         </div>

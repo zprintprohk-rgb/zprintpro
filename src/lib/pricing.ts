@@ -1,5 +1,15 @@
 /**
  * 报价计算 + 多币种定价系统
+ * 
+ * 2026-04-26 重大更新：
+ * EN/JA 市场采用完全独立的定价策略，直接对标海外市场头部竞品。
+ * 不再使用 "HK 价格 × 倍数" 模型。
+ * 
+ * 核心原则：
+ * 1. 名片（business-cards）：保持低价引流策略，沿用分级定价（不调整）
+ * 2. Flyers/Stickers/Posters/Packaging/Paper-bags：设定独立价格，对标 Vistaprint/CustomStickers/PosterPrintShop/Packlane/ラクスル 等
+ * 3. 其他品类：使用调整后的分级定价作为 fallback
+ * 4. 所有 EN/JA 价格为含国际运费的包邮价
  */
 
 import { Locale } from './seo';
@@ -84,32 +94,207 @@ export function calculateQuote(params: QuoteParams): QuoteResult {
 }
 
 // ============================================================================
-// 多币种定价系统（2026-04-16 更新：分级定价模型）
-// zh-hk: HKD (主场基准价，1×)
-// en:    USD (分级倍率 × 基础汇率 0.128)
-// ja:    JPY (分级倍率 × 基础汇率 19.5)
+// EN/JA 独立定价系统（2026-04-26）
+// 完全独立于 HK 定价，直接对标海外市场
 // ============================================================================
 
-/** 品类分级倍率 — 基于竞品分析（运费、重量、竞争度） */
+/** 独立定价映射：slug -> locale -> {min, max, unit} */
+const INDEPENDENT_PRICES: Record<string, Record<'en' | 'ja', { min: number; max: number; unit: string }>> = {
+  // ========== Flyers (宣传单张) ==========
+  'a4-flyers': {
+    'en': { min: 0.45, max: 0.90, unit: 'pc' },
+    'ja': { min: 55, max: 110, unit: '枚' },
+  },
+  'a5-flyers': {
+    'en': { min: 0.30, max: 0.60, unit: 'pc' },
+    'ja': { min: 40, max: 80, unit: '枚' },
+  },
+  'double-sided-flyers': {
+    'en': { min: 0.55, max: 1.10, unit: 'pc' },
+    'ja': { min: 70, max: 130, unit: '枚' },
+  },
+  'folded-leaflets': {
+    'en': { min: 0.70, max: 1.50, unit: 'pc' },
+    'ja': { min: 90, max: 170, unit: '枚' },
+  },
+  'thick-paper-flyers': {
+    'en': { min: 0.60, max: 1.20, unit: 'pc' },
+    'ja': { min: 75, max: 140, unit: '枚' },
+  },
+  'eco-flyers': {
+    'en': { min: 0.50, max: 0.95, unit: 'pc' },
+    'ja': { min: 60, max: 115, unit: '枚' },
+  },
+  'same-day-flyers': {
+    'en': { min: 0.80, max: 1.60, unit: 'pc' },
+    'ja': { min: 100, max: 190, unit: '枚' },
+  },
+
+  // ========== Stickers (贴纸) ==========
+  'waterproof-stickers': {
+    'en': { min: 0.35, max: 0.65, unit: 'pc' },
+    'ja': { min: 45, max: 85, unit: '枚' },
+  },
+  'transparent-stickers': {
+    'en': { min: 0.45, max: 0.90, unit: 'pc' },
+    'ja': { min: 55, max: 110, unit: '枚' },
+  },
+  'removable-stickers': {
+    'en': { min: 0.40, max: 0.75, unit: 'pc' },
+    'ja': { min: 50, max: 95, unit: '枚' },
+  },
+  'small-batch-stickers': {
+    'en': { min: 0.60, max: 1.20, unit: 'pc' },
+    'ja': { min: 75, max: 150, unit: '枚' },
+  },
+  'die-cut-stickers': {
+    'en': { min: 0.50, max: 1.00, unit: 'pc' },
+    'ja': { min: 65, max: 125, unit: '枚' },
+  },
+  'foil-stickers': {
+    'en': { min: 0.55, max: 1.10, unit: 'pc' },
+    'ja': { min: 70, max: 140, unit: '枚' },
+  },
+  'security-stickers': {
+    'en': { min: 0.45, max: 0.85, unit: 'pc' },
+    'ja': { min: 55, max: 105, unit: '枚' },
+  },
+  'fluorescent-stickers': {
+    'en': { min: 0.50, max: 1.00, unit: 'pc' },
+    'ja': { min: 65, max: 125, unit: '枚' },
+  },
+  'fruit-food-label-stickers': {
+    'en': { min: 0.25, max: 0.55, unit: 'pc' },
+    'ja': { min: 35, max: 70, unit: '枚' },
+  },
+
+  // ========== Posters (海报) ==========
+  'a2-posters': {
+    'en': { min: 1.50, max: 3.00, unit: 'pc' },
+    'ja': { min: 200, max: 350, unit: '枚' },
+  },
+  'a1-posters': {
+    'en': { min: 2.50, max: 4.50, unit: 'pc' },
+    'ja': { min: 350, max: 550, unit: '枚' },
+  },
+  'outdoor-posters': {
+    'en': { min: 2.00, max: 4.00, unit: 'pc' },
+    'ja': { min: 280, max: 480, unit: '枚' },
+  },
+  'display-posters': {
+    'en': { min: 1.80, max: 3.50, unit: 'pc' },
+    'ja': { min: 240, max: 420, unit: '枚' },
+  },
+  'art-posters': {
+    'en': { min: 3.00, max: 5.50, unit: 'pc' },
+    'ja': { min: 400, max: 650, unit: '枚' },
+  },
+  'adhesive-posters': {
+    'en': { min: 1.50, max: 2.80, unit: 'pc' },
+    'ja': { min: 200, max: 340, unit: '枚' },
+  },
+
+  // ========== Packaging (包装彩盒) ==========
+  'gift-boxes': {
+    'en': { min: 0.90, max: 2.50, unit: 'pc' },
+    'ja': { min: 120, max: 280, unit: '個' },
+  },
+  'cosmetic-boxes': {
+    'en': { min: 1.10, max: 3.00, unit: 'pc' },
+    'ja': { min: 150, max: 340, unit: '個' },
+  },
+  'food-boxes': {
+    'en': { min: 0.80, max: 2.20, unit: 'pc' },
+    'ja': { min: 110, max: 250, unit: '個' },
+  },
+  'mailer-boxes': {
+    'en': { min: 0.60, max: 1.80, unit: 'pc' },
+    'ja': { min: 80, max: 200, unit: '個' },
+  },
+  'folding-boxes': {
+    'en': { min: 0.55, max: 1.50, unit: 'pc' },
+    'ja': { min: 75, max: 170, unit: '個' },
+  },
+  'rigid-boxes': {
+    'en': { min: 1.50, max: 3.50, unit: 'pc' },
+    'ja': { min: 200, max: 400, unit: '個' },
+  },
+  'magnetic-closure-gift-box': {
+    'en': { min: 2.50, max: 5.00, unit: 'pc' },
+    'ja': { min: 350, max: 600, unit: '個' },
+  },
+  'electronics-packaging-box': {
+    'en': { min: 1.00, max: 2.50, unit: 'pc' },
+    'ja': { min: 140, max: 280, unit: '個' },
+  },
+  'kraft-paper-packaging-box': {
+    'en': { min: 0.70, max: 1.80, unit: 'pc' },
+    'ja': { min: 95, max: 200, unit: '個' },
+  },
+  'drawer-slide-gift-box': {
+    'en': { min: 1.80, max: 3.80, unit: 'pc' },
+    'ja': { min: 250, max: 450, unit: '個' },
+  },
+
+  // ========== Paper Bags (纸袋) ==========
+  'kraft-paper-bags': {
+    'en': { min: 0.60, max: 1.50, unit: 'pc' },
+    'ja': { min: 80, max: 180, unit: '個' },
+  },
+  'white-card-bags': {
+    'en': { min: 1.00, max: 2.20, unit: 'pc' },
+    'ja': { min: 130, max: 250, unit: '個' },
+  },
+  'gift-bags': {
+    'en': { min: 1.20, max: 2.80, unit: 'pc' },
+    'ja': { min: 160, max: 320, unit: '個' },
+  },
+  'eco-paper-bags': {
+    'en': { min: 0.70, max: 1.80, unit: 'pc' },
+    'ja': { min: 90, max: 190, unit: '個' },
+  },
+  'handle-bags': {
+    'en': { min: 0.90, max: 2.00, unit: 'pc' },
+    'ja': { min: 120, max: 230, unit: '個' },
+  },
+  'large-bags': {
+    'en': { min: 1.10, max: 2.50, unit: 'pc' },
+    'ja': { min: 150, max: 280, unit: '個' },
+  },
+};
+
+/** 检查是否有独立定价 */
+export function hasIndependentPrice(slug: string, locale: Locale): boolean {
+  if (locale === 'zh-hk') return false;
+  return !!INDEPENDENT_PRICES[slug]?.[locale];
+}
+
+/** 获取独立定价 */
+export function getIndependentPrice(slug: string, locale: Locale): { min: number; max: number; unit: string } | null {
+  if (locale === 'zh-hk') return null;
+  return INDEPENDENT_PRICES[slug]?.[locale] ?? null;
+}
+
+// ============================================================================
+// Fallback 分级定价（用于未设定独立定价的 SKU）
+// 名片保持原有倍率不变（低价引流策略）
+// ============================================================================
+
+/** 品类分级倍率 — 仅作为 fallback 使用 */
 const CATEGORY_TIER_MULTIPLIERS: Record<string, { en: number; ja: number }> = {
-  // A级：轻量高值，运费占比低，价格可接近本地
-  'stickers':     { en: 1.9, ja: 1.9 },
-  'flyers':       { en: 1.9, ja: 1.9 },
+  // A级：轻量高值，运费占比低
   'envelopes':    { en: 2.0, ja: 2.0 },
 
-  // B级：中量中值，运费适中，保持竞争力
-  'business-cards': { en: 2.3, ja: 2.3 },
-  'posters':      { en: 2.5, ja: 2.5 },
+  // B级：中量中值
+  'business-cards': { en: 2.3, ja: 2.3 }, // 名片：保持原有，不调整
   'banners':      { en: 2.5, ja: 2.5 },
   'menus':        { en: 2.5, ja: 2.5 },
   'calendars':    { en: 2.5, ja: 2.5 },
   'red-packets':  { en: 2.5, ja: 2.5 },
 
-  // C级：重量低值，运费占比高，需覆盖成本
-  'packaging':    { en: 3.2, ja: 3.2 },
-  'paper-bags':   { en: 3.2, ja: 3.2 },
-  'books':        { en: 3.2, ja: 3.2 },
-  'educational':  { en: 3.0, ja: 3.0 },
+  // C级：重量低值，运费占比高
+  'books':        { en: 3.0, ja: 3.0 },
+  'educational':  { en: 2.8, ja: 2.8 },
 };
 
 const BASE_EXCHANGE_RATES: Record<Locale, { rate: number; symbol: string }> = {
@@ -119,9 +304,9 @@ const BASE_EXCHANGE_RATES: Record<Locale, { rate: number; symbol: string }> = {
 };
 
 /** PayPal 手续费补偿系数 */
-const PAYPAL_SURCHARGE = 1.03; // +3%
+const PAYPAL_SURCHARGE = 1.035; // +3.5%
 
-/** 获取品类的定价倍率 */
+/** 获取品类的定价倍率（fallback 用） */
 export function getCategoryMultiplier(categorySlug: string, locale: Locale): number {
   if (locale === 'zh-hk') return 1;
   const tier = CATEGORY_TIER_MULTIPLIERS[categorySlug];
@@ -130,7 +315,7 @@ export function getCategoryMultiplier(categorySlug: string, locale: Locale): num
   return locale === 'en' ? multiplier * PAYPAL_SURCHARGE : multiplier;
 }
 
-/** 获取 effective 汇率（基础汇率 × 品类倍率） */
+/** 获取 effective 汇率（基础汇率 × 品类倍率）— fallback 用 */
 function getEffectiveRate(locale: Locale, categorySlug?: string): number {
   const base = BASE_EXCHANGE_RATES[locale].rate;
   if (locale === 'zh-hk') return base;
@@ -153,7 +338,7 @@ export function getQuoteLabel(locale: Locale): string {
   return labels[locale];
 }
 
-/** 转换基础HKD价格到目标币种（支持品类分级定价） */
+/** 转换基础HKD价格到目标币种（支持品类分级定价）— fallback 用 */
 export function convertPrice(basePriceHkd: number, locale: Locale, categorySlug?: string): number {
   return basePriceHkd * getEffectiveRate(locale, categorySlug);
 }
@@ -167,8 +352,31 @@ export function formatPrice(price: number, locale: Locale): string {
   return `${symbol}${price.toFixed(2)}`;
 }
 
-/** 从 price_range 字符串提取并转换（支持品类分级定价） */
-export function convertPriceRangeString(priceRange: string, locale: Locale, categorySlug?: string): string {
+/** 
+ * 转换 price_range 字符串到目标币种
+ * 
+ * 优先级：
+ * 1. 如果传入了 productSlug 且该 SKU 有独立定价 → 使用独立定价
+ * 2. 否则使用分级定价（HK 价格 × 品类倍率）
+ */
+export function convertPriceRangeString(priceRange: string, locale: Locale, categorySlug?: string, productSlug?: string): string {
+  // HK 市场直接返回原字符串
+  if (locale === 'zh-hk') return priceRange;
+
+  // 1. 优先检查独立定价
+  if (productSlug) {
+    const independent = getIndependentPrice(productSlug, locale);
+    if (independent) {
+      const { symbol } = BASE_EXCHANGE_RATES[locale];
+      const { min, max, unit } = independent;
+      if (locale === 'ja') {
+        return `${symbol}${Math.round(min).toLocaleString()}-${Math.round(max).toLocaleString()}/${unit}`;
+      }
+      return `${symbol}${min.toFixed(2)}-${max.toFixed(2)}/${unit}`;
+    }
+  }
+
+  // 2. Fallback 到分级定价
   const match = priceRange.match(/HK\$([\d.]+)(?:-([\d.]+))?\s*(?:\/(.*))?/);
   if (!match) return priceRange;
 

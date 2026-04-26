@@ -209,7 +209,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
           </div>
           <div className="flex justify-between py-2 border-b border-gray-200">
             <span className="text-gray-500 text-sm">{locale === 'zh-hk' ? '參考價格' : locale === 'en' ? 'Reference Price' : '参考価格'}</span>
-            <span className="font-medium text-[#2873F5]">{locale === 'zh-hk' ? product.price_range : convertPriceRangeString(product.price_range, locale, product.category_slug)}</span>
+            <span className="font-medium text-[#2873F5]">{locale === 'zh-hk' ? product.price_range : convertPriceRangeString(product.price_range, locale, product.category_slug, product.slug)}</span>
           </div>
           <div className="flex justify-between py-2">
             <span className="text-gray-500 text-sm">{locale === 'zh-hk' ? '預計交貨' : locale === 'en' ? 'Est. Delivery' : '予定納期'}</span>
@@ -237,8 +237,8 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
             <Zap className="w-5 h-5 text-[#2873F5]" />
             <span className="font-semibold text-gray-900">{t.priceNote}</span>
           </div>
-          <p className="text-2xl font-bold text-[#F87314] mb-1">{locale === 'zh-hk' ? product.price_range.split('-')[0] : convertPriceRangeString(product.price_range, locale, product.category_slug).split('-')[0]}</p>
-          <p className="text-sm text-gray-500 mb-4">{locale === 'zh-hk' ? product.price_range : convertPriceRangeString(product.price_range, locale, product.category_slug)}</p>
+          <p className="text-2xl font-bold text-[#F87314] mb-1">{locale === 'zh-hk' ? product.price_range.split('-')[0] : convertPriceRangeString(product.price_range, locale, product.category_slug, product.slug).split('-')[0]}</p>
+          <p className="text-sm text-gray-500 mb-4">{locale === 'zh-hk' ? product.price_range : convertPriceRangeString(product.price_range, locale, product.category_slug, product.slug)}</p>
           <p className="text-xs text-gray-400 leading-relaxed mb-4">{t.priceNoteDetail}</p>
           <button
             onClick={handleWhatsApp}

@@ -641,7 +641,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                     </p>
                     <div className="flex items-center justify-between mt-2">
                       <span className="text-sm text-[#F87314] font-bold">
-                        {convertPriceRangeString(product.price_range, locale, product.category_slug).split('-')[0]}
+                        {convertPriceRangeString(product.price_range, locale, product.category_slug, product.slug).split('-')[0]}
                       </span>
                       <span className="text-xs px-3 py-1 border border-[#2873F5] text-[#2873F5] rounded-full group-hover:bg-[#2873F5] group-hover:text-white transition-colors">
                         {t.viewMore}
