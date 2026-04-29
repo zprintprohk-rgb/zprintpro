@@ -99,7 +99,7 @@ export default function FaqClient({ items, t }: FaqClientProps) {
                     <span className={`inline-block px-2 py-0.5 text-[10px] font-semibold rounded-md ${catColor}`}>
                       {item.category}
                     </span>
-                    <h3 className={`font-semibold text-sm ${isOpen ? 'text-[#2873F5]' : 'text-[#333333]'}`}>
+                    <h3 className={`font-semibold text-lg ${isOpen ? 'text-[#2873F5]' : 'text-[#333333]'}`}>
                       {item.q}
                     </h3>
                   </div>
@@ -113,7 +113,7 @@ export default function FaqClient({ items, t }: FaqClientProps) {
               >
                 <div className="px-5 pb-4 pt-0">
                   <div className="pl-10 border-l-2 border-[#2873F5]/20">
-                    <p className="text-sm text-gray-600 leading-relaxed">{item.a}</p>
+                    <p className="text-base text-gray-600 leading-relaxed">{item.a}</p>
                   </div>
                 </div>
               </div>

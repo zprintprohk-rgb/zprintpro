@@ -581,7 +581,7 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
             <span className="w-8 h-8 rounded-lg bg-[#2873F5]/10 text-[#2873F5] flex items-center justify-center">
               <Icon className="w-4 h-4" />
             </span>
-            <span className="font-semibold text-[#333333] text-sm">{title}</span>
+            <span className="font-semibold text-[#333333] text-lg">{title}</span>
           </div>
           <ChevronDown
             className={`w-5 h-5 text-gray-400 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
@@ -620,11 +620,11 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
           <span className={`w-8 h-8 rounded-lg ${accentMap[accent]} flex items-center justify-center`}>
             <Icon className="w-4 h-4" />
           </span>
-          <h3 className="font-bold text-[#333333] text-sm">{title}</h3>
+          <h3 className="font-bold text-[#333333] text-lg">{title}</h3>
         </div>
         <ul className="space-y-2">
           {items.map((item, i) => (
-            <li key={i} className="flex items-start gap-2 text-sm text-gray-600 leading-relaxed">
+            <li key={i} className="flex items-start gap-2 text-base text-gray-600 leading-relaxed">
               <CheckCircle2 className="w-3.5 h-3.5 text-emerald-500 mt-0.5 flex-shrink-0" />
               <span>{item}</span>
             </li>
@@ -637,8 +637,8 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
   /* ── helper: price row ── */
   const PriceRow = ({ label, value }: { label: string; value: string }) => (
     <div className="flex items-center justify-between py-2.5 border-b border-gray-50 last:border-0">
-      <span className="text-sm text-gray-600">{label}</span>
-      <span className="text-sm font-bold text-[#333333]">{value}</span>
+      <span className="text-base text-gray-600">{label}</span>
+      <span className="text-base font-bold text-[#333333]">{value}</span>
     </div>
   );
 
@@ -659,7 +659,7 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
           <Accordion sectionKey="artwork" title={o.artworkTitle} icon={FileText}>
             <ul className="space-y-2.5">
               {o.artworkItems.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-sm text-gray-600 leading-relaxed">
+                <li key={i} className="flex items-start gap-2 text-base text-gray-600 leading-relaxed">
                   <AlertCircle className="w-3.5 h-3.5 text-[#F87314] mt-0.5 flex-shrink-0" />
                   <span>{item}</span>
                 </li>
@@ -669,7 +669,7 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
           <Accordion sectionKey="typography" title={o.typographyTitle} icon={Type}>
             <ul className="space-y-2.5">
               {o.typographyItems.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-sm text-gray-600 leading-relaxed">
+                <li key={i} className="flex items-start gap-2 text-base text-gray-600 leading-relaxed">
                   <Eye className="w-3.5 h-3.5 text-[#2873F5] mt-0.5 flex-shrink-0" />
                   <span>{item}</span>
                 </li>
@@ -679,7 +679,7 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
           <Accordion sectionKey="color" title={o.colorTitle} icon={Palette}>
             <ul className="space-y-2.5">
               {o.colorItems.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-sm text-gray-600 leading-relaxed">
+                <li key={i} className="flex items-start gap-2 text-base text-gray-600 leading-relaxed">
                   <Palette className="w-3.5 h-3.5 text-purple-500 mt-0.5 flex-shrink-0" />
                   <span>{item}</span>
                 </li>
@@ -711,8 +711,8 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
                     {m.name[0]}
                   </div>
                   <div>
-                    <p className="font-semibold text-sm text-[#333333]">{m.name}</p>
-                    <p className="text-xs text-gray-500">{m.desc}</p>
+                    <p className="font-semibold text-lg text-[#333333]">{m.name}</p>
+                    <p className="text-sm text-gray-500">{m.desc}</p>
                   </div>
                   <span className={`ml-auto text-xs px-2 py-0.5 rounded-full ${m.type === 'business' ? 'bg-emerald-50 text-emerald-600' : 'bg-blue-50 text-blue-600'}`}>
                     {m.type === 'business' ? (locale === 'zh-hk' ? '企業' : locale === 'ja' ? '企業' : 'Business') : (locale === 'zh-hk' ? '個人' : locale === 'ja' ? '個人' : 'Personal')}
@@ -723,10 +723,10 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
 
             {/* QR code placeholder */}
             <div className="mt-4 p-4 rounded-lg bg-amber-50 border border-amber-100">
-              <h4 className="font-semibold text-sm text-amber-800 mb-2">{p.qrcodeNotice}</h4>
+              <h4 className="font-semibold text-lg text-amber-800 mb-2">{p.qrcodeNotice}</h4>
               <ul className="space-y-1.5">
                 {p.qrcodeItems.map((item, i) => (
-                  <li key={i} className="flex items-start gap-2 text-xs text-amber-700">
+                  <li key={i} className="flex items-start gap-2 text-base text-amber-700">
                     <AlertCircle className="w-3 h-3 mt-0.5 flex-shrink-0" />
                     <span>{item}</span>
                   </li>
@@ -738,41 +738,60 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
                     onClick={() => setShowQrCodes(true)}
                     className="w-full py-2.5 rounded-lg bg-white border border-amber-200 text-sm text-amber-700 hover:bg-amber-50 transition-colors font-medium"
                   >
-                    {locale === 'zh-hk' ? '點擊顯示收款碼' : locale === 'ja' ? 'QRコードを表示' : 'Click to show QR codes'}
+                    {locale === 'zh-hk' ? '點擊顯示收款碼' : locale === 'ja' ? 'QRコードを表示' : 'Click to show QR code'}
                   </button>
                 ) : (
-                  <div className="grid grid-cols-2 gap-3 animate-in fade-in slide-in-from-top-2 duration-300">
-                    <div className="bg-white rounded-lg border border-amber-200 p-3 text-center">
-                      <p className="text-xs text-gray-500 mb-2">{locale === 'zh-hk' ? '微信支付' : locale === 'ja' ? 'WeChat Pay' : 'WeChat Pay'}</p>
-                      <div className="aspect-square bg-gray-100 rounded overflow-hidden">
-                        <Image
-                          src="/images/payment-wechat.webp"
-                          alt="WeChat Pay QR"
-                          width={200}
-                          height={200}
-                          className="w-full h-full object-contain"
-                          unoptimized
-                        />
+                  <div className="animate-in fade-in slide-in-from-top-2 duration-300">
+                    {locale === 'zh-hk' ? (
+                      <div className="grid grid-cols-2 gap-3">
+                        <div className="bg-white rounded-lg border border-amber-200 p-3 text-center">
+                          <p className="text-sm text-gray-500 mb-2">微信支付</p>
+                          <div className="aspect-square bg-gray-100 rounded overflow-hidden">
+                            <Image
+                              src="/images/payment-wechat.webp"
+                              alt="WeChat Pay QR"
+                              width={200}
+                              height={200}
+                              className="w-full h-full object-contain"
+                              unoptimized
+                            />
+                          </div>
+                        </div>
+                        <div className="bg-white rounded-lg border border-amber-200 p-3 text-center">
+                          <p className="text-sm text-gray-500 mb-2">支付寶</p>
+                          <div className="aspect-square bg-gray-100 rounded overflow-hidden">
+                            <Image
+                              src="/images/payment-alipay.webp"
+                              alt="Alipay QR"
+                              width={200}
+                              height={200}
+                              className="w-full h-full object-contain"
+                              unoptimized
+                            />
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                    <div className="bg-white rounded-lg border border-amber-200 p-3 text-center">
-                      <p className="text-xs text-gray-500 mb-2">{locale === 'zh-hk' ? '支付寶' : locale === 'ja' ? 'Alipay' : 'Alipay'}</p>
-                      <div className="aspect-square bg-gray-100 rounded overflow-hidden">
-                        <Image
-                          src="/images/payment-alipay.webp"
-                          alt="Alipay QR"
-                          width={200}
-                          height={200}
-                          className="w-full h-full object-contain"
-                          unoptimized
-                        />
+                    ) : (
+                      <div className="bg-white rounded-lg border border-amber-200 p-4 text-center">
+                        <p className="text-lg font-semibold text-gray-700 mb-2">{locale === 'ja' ? 'フラッシュレシーブ' : 'Flash Receipt'}</p>
+                        <p className="text-sm text-gray-500 mb-3">{locale === 'ja' ? '推奨支払方法 — 個人優先' : 'Recommended payment method — Personal priority'}</p>
+                        <div className="aspect-square bg-gray-100 rounded overflow-hidden max-w-[280px] mx-auto">
+                          <Image
+                            src="/images/payment-flash.webp"
+                            alt="Flash Receipt QR"
+                            width={280}
+                            height={280}
+                            className="w-full h-full object-contain"
+                            unoptimized
+                          />
+                        </div>
                       </div>
-                    </div>
+                    )}
                     <button
                       onClick={() => setShowQrCodes(false)}
-                      className="col-span-2 py-1.5 text-xs text-amber-600 hover:text-amber-800 transition-colors"
+                      className="w-full py-2 text-sm text-amber-600 hover:text-amber-800 transition-colors mt-2"
                     >
-                      {locale === 'zh-hk' ? '隱藏收款碼' : locale === 'ja' ? 'QRコードを隠す' : 'Hide QR codes'}
+                      {locale === 'zh-hk' ? '隱藏收款碼' : locale === 'ja' ? 'QRコードを隠す' : 'Hide QR code'}
                     </button>
                   </div>
                 )}
@@ -783,7 +802,7 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
           {/* Confirmation steps */}
           <div className="space-y-4">
             <div className="bg-white rounded-xl border border-gray-100 p-6">
-              <h3 className="font-bold text-[#333333] mb-4 flex items-center gap-2">
+              <h3 className="font-bold text-[#333333] mb-4 flex items-center gap-2 text-lg">
                 <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                 {p.confirmTitle}
               </h3>
@@ -793,7 +812,7 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
                     <span className="flex-shrink-0 w-6 h-6 rounded-full bg-[#2873F5] text-white text-xs flex items-center justify-center font-bold">
                       {i + 1}
                     </span>
-                    <p className="text-sm text-gray-600 leading-relaxed pt-0.5">{step}</p>
+                    <p className="text-base text-gray-600 leading-relaxed pt-0.5">{step}</p>
                   </div>
                 ))}
               </div>
@@ -801,14 +820,14 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
 
             {/* Security notice */}
             <div className="bg-red-50 border border-red-100 rounded-xl p-5">
-              <p className="text-sm text-red-700 leading-relaxed">{p.securityNotice}</p>
+              <p className="text-base text-red-700 leading-relaxed">{p.securityNotice}</p>
             </div>
 
             {/* Contact card */}
             <div className="bg-[#1a1a2e] rounded-xl p-5 text-white">
-              <h4 className="font-bold mb-3 text-sm">{t.contactCta}</h4>
+              <h4 className="font-bold mb-3 text-lg">{t.contactCta}</h4>
               <div className="space-y-2">
-                <div className="flex items-center gap-2 text-sm text-gray-300">
+                <div className="flex items-center gap-2 text-base text-gray-300">
                   <Mail className="w-4 h-4" />
                   <span>{p.contact.email}</span>
                 </div>
@@ -836,11 +855,11 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
         <div className="grid lg:grid-cols-2 gap-6">
           {/* Express */}
           <div className="bg-white rounded-xl border border-gray-100 p-6">
-            <h3 className="font-bold text-[#333333] mb-1 flex items-center gap-2">
+            <h3 className="font-bold text-[#333333] mb-1 flex items-center gap-2 text-lg">
               <Package className="w-5 h-5 text-[#2873F5]" />
               {s.expressTitle}
             </h3>
-            <p className="text-sm text-gray-500 mb-4">{s.expressSubtitle}</p>
+            <p className="text-base text-gray-500 mb-4">{s.expressSubtitle}</p>
             <div className="space-y-1">
               {s.expressItems.map((item, i) => (
                 <PriceRow key={i} label={item.label} value={item.value} />
@@ -850,7 +869,7 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
 
           {/* Truck */}
           <div className="bg-white rounded-xl border border-gray-100 p-6">
-            <h3 className="font-bold text-[#333333] mb-4 flex items-center gap-2">
+            <h3 className="font-bold text-[#333333] mb-4 flex items-center gap-2 text-lg">
               <Truck className="w-5 h-5 text-[#F87314]" />
               {s.truckTitle}
             </h3>
@@ -868,13 +887,13 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
 
           {/* Notice */}
           <div className="bg-white rounded-xl border border-gray-100 p-5">
-            <h3 className="font-bold text-[#333333] mb-3 flex items-center gap-2 text-sm">
+            <h3 className="font-bold text-[#333333] mb-3 flex items-center gap-2 text-lg">
               <AlertCircle className="w-4 h-4 text-red-500" />
               {s.noticeTitle}
             </h3>
             <ul className="space-y-2">
               {s.noticeItems.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-sm text-gray-600 leading-relaxed">
+                <li key={i} className="flex items-start gap-2 text-base text-gray-600 leading-relaxed">
                   <Ban className="w-3.5 h-3.5 text-gray-400 mt-0.5 flex-shrink-0" />
                   <span>{item}</span>
                 </li>
@@ -899,7 +918,7 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
         <div className="grid lg:grid-cols-2 gap-6">
           {/* Finishing services */}
           <div className="bg-white rounded-xl border border-gray-100 p-5">
-            <h3 className="font-bold text-[#333333] mb-3 flex items-center gap-2 text-sm">
+            <h3 className="font-bold text-[#333333] mb-3 flex items-center gap-2 text-lg">
               <Scissors className="w-4 h-4 text-[#2873F5]" />
               {r.finishTitle}
             </h3>
@@ -914,13 +933,13 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
 
           {/* Legal */}
           <div className="bg-white rounded-xl border border-gray-100 p-5">
-            <h3 className="font-bold text-[#333333] mb-3 flex items-center gap-2 text-sm">
+            <h3 className="font-bold text-[#333333] mb-3 flex items-center gap-2 text-lg">
               <Copyright className="w-4 h-4 text-red-500" />
               {r.legalTitle}
             </h3>
             <ul className="space-y-2">
               {r.legalItems.map((item, i) => (
-                <li key={i} className="flex items-start gap-2 text-sm text-gray-600 leading-relaxed">
+                <li key={i} className="flex items-start gap-2 text-base text-gray-600 leading-relaxed">
                   <AlertCircle className="w-3.5 h-3.5 text-red-400 mt-0.5 flex-shrink-0" />
                   <span>{item}</span>
                 </li>
@@ -968,7 +987,7 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
                 }`}
               >
                 <TabIcon className={`w-6 h-6 ${isActive ? 'text-white' : 'text-gray-400'}`} />
-                <span className="font-semibold text-sm">{tab.label}</span>
+                <span className="font-semibold text-xl">{tab.label}</span>
               </button>
             );
           })}
@@ -977,7 +996,7 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
         {/* Active Tab Title */}
         <div className="flex items-center gap-2 mb-5">
           <ActiveIcon className="w-5 h-5 text-[#2873F5]" />
-          <h2 className="text-lg font-bold text-[#333333]">
+          <h2 className="text-2xl font-bold text-[#333333]">
             {activeTab === 'order' && t.order.sectionTitle}
             {activeTab === 'payment' && t.payment.sectionTitle}
             {activeTab === 'shipping' && t.shipping.sectionTitle}
