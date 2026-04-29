@@ -100,34 +100,34 @@ export function calculateQuote(params: QuoteParams): QuoteResult {
 
 /** 独立定价映射：slug -> locale -> {min, max, unit} */
 const INDEPENDENT_PRICES: Record<string, Record<'en' | 'ja', { min: number; max: number; unit: string }>> = {
-  // ========== Flyers ==========
+  // ========== Flyers (宣传单张) — 基于e-print.com.hk成本重新定价 ==========
   'a4-flyers': {
-    'en': { min: 0.41, max: 0.83, unit: 'pc' },
-    'ja': { min: 51, max: 101, unit: '枚' },
+    'en': { min: 0.55, max: 0.95, unit: 'pc' },
+    'ja': { min: 70, max: 120, unit: '枚' },
   },
   'a5-flyers': {
-    'en': { min: 0.28, max: 0.55, unit: 'pc' },
-    'ja': { min: 37, max: 74, unit: '枚' },
+    'en': { min: 0.40, max: 0.70, unit: 'pc' },
+    'ja': { min: 50, max: 90, unit: '枚' },
   },
   'double-sided-flyers': {
-    'en': { min: 0.51, max: 1.01, unit: 'pc' },
-    'ja': { min: 64, max: 120, unit: '枚' },
+    'en': { min: 0.65, max: 1.15, unit: 'pc' },
+    'ja': { min: 85, max: 145, unit: '枚' },
   },
   'folded-leaflets': {
-    'en': { min: 0.64, max: 1.38, unit: 'pc' },
-    'ja': { min: 83, max: 156, unit: '枚' },
+    'en': { min: 0.80, max: 1.55, unit: 'pc' },
+    'ja': { min: 110, max: 195, unit: '枚' },
   },
   'thick-paper-flyers': {
-    'en': { min: 0.55, max: 1.1, unit: 'pc' },
-    'ja': { min: 69, max: 129, unit: '枚' },
+    'en': { min: 0.70, max: 1.25, unit: 'pc' },
+    'ja': { min: 95, max: 155, unit: '枚' },
   },
   'eco-flyers': {
-    'en': { min: 0.46, max: 0.87, unit: 'pc' },
-    'ja': { min: 55, max: 106, unit: '枚' },
+    'en': { min: 0.60, max: 1.00, unit: 'pc' },
+    'ja': { min: 75, max: 125, unit: '枚' },
   },
   'same-day-flyers': {
-    'en': { min: 0.74, max: 1.47, unit: 'pc' },
-    'ja': { min: 92, max: 175, unit: '枚' },
+    'en': { min: 0.95, max: 1.80, unit: 'pc' },
+    'ja': { min: 125, max: 210, unit: '枚' },
   },
   // ========== Stickers ==========
   'waterproof-stickers': {
