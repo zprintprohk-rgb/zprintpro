@@ -116,8 +116,24 @@ export default function CheckoutClient({ params }: CheckoutPageProps) {
   const [submitted, setSubmitted] = useState(false);
   const [mounted, setMounted] = useState(false);
 
+  /* ── load saved contact info from localStorage ── */
   useEffect(() => {
     setMounted(true);
+    try {
+      const saved = localStorage.getItem('zprintpro-contact-info');
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        setForm((prev) => ({
+          ...prev,
+          name: parsed.name || '',
+          phone: parsed.phone || '',
+          email: parsed.email || '',
+          address: parsed.address || '',
+        }));
+      }
+    } catch {
+      // ignore
+    }
     if (items.length === 0 && !submitted) {
       router.push(`${localePrefix}/cart/`);
     }
@@ -143,6 +159,13 @@ export default function CheckoutClient({ params }: CheckoutPageProps) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!form.name || !form.phone || !form.email) return;
+    /* save contact info for next time */
+    localStorage.setItem('zprintpro-contact-info', JSON.stringify({
+      name: form.name,
+      phone: form.phone,
+      email: form.email,
+      address: form.address,
+    }));
     const orderId = 'ZP' + Date.now().toString(36).toUpperCase();
     const orderData = {
       id: orderId,
@@ -181,23 +204,23 @@ export default function CheckoutClient({ params }: CheckoutPageProps) {
                     <label className="block text-sm text-gray-600 mb-1">
                       {t.name} <span className="text-red-500">*</span>
                     </label>
-                    <input type="text" required value={form.name} onChange={(e) => handleChange('name', e.target.value)} placeholder={t.namePlaceholder} className={inputClass} />
+                    <input type="text" required autoComplete="name" value={form.name} onChange={(e) => handleChange('name', e.target.value)} placeholder={t.namePlaceholder} className={inputClass} />
                   </div>
                   <div>
                     <label className="block text-sm text-gray-600 mb-1">
                       {t.phone} <span className="text-red-500">*</span>
                     </label>
-                    <input type="tel" required value={form.phone} onChange={(e) => handleChange('phone', e.target.value)} placeholder={t.phonePlaceholder} className={inputClass} />
+                    <input type="tel" required autoComplete="tel" value={form.phone} onChange={(e) => handleChange('phone', e.target.value)} placeholder={t.phonePlaceholder} className={inputClass} />
                   </div>
                   <div className="sm:col-span-2">
                     <label className="block text-sm text-gray-600 mb-1">
                       {t.email} <span className="text-red-500">*</span>
                     </label>
-                    <input type="email" required value={form.email} onChange={(e) => handleChange('email', e.target.value)} placeholder={t.emailPlaceholder} className={inputClass} />
+                    <input type="email" required autoComplete="email" value={form.email} onChange={(e) => handleChange('email', e.target.value)} placeholder={t.emailPlaceholder} className={inputClass} />
                   </div>
                   <div className="sm:col-span-2">
                     <label className="block text-sm text-gray-600 mb-1">{t.address}</label>
-                    <input type="text" value={form.address} onChange={(e) => handleChange('address', e.target.value)} placeholder={t.addressPlaceholder} className={inputClass} />
+                    <input type="text" autoComplete="street-address" value={form.address} onChange={(e) => handleChange('address', e.target.value)} placeholder={t.addressPlaceholder} className={inputClass} />
                   </div>
                   <div className="sm:col-span-2">
                     <label className="block text-sm text-gray-600 mb-1">{t.notes}</label>
@@ -228,7 +251,7 @@ export default function CheckoutClient({ params }: CheckoutPageProps) {
                 </div>
               </div>
 
-              <div className="flex gap-3">
+              <div className="flex flex-col sm:flex-row gap-3">
                 <button type="button" onClick={() => router.push(`${localePrefix}/cart/`)} className="flex-1 py-3 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors">
                   {t.backToCart}
                 </button>
