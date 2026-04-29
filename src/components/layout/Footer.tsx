@@ -48,10 +48,10 @@ const translations = {
       {
         title: '幫助中心',
         links: [
-          { label: '落單須知', href: '/help-center/' },
-          { label: '付款方式', href: '/help-center/' },
-          { label: '送貨安排', href: '/help-center/' },
-          { label: '退換政策', href: '/help-center/' },
+          { label: '落單須知', href: '/help-center/#order' },
+          { label: '付款方式', href: '/help-center/#payment' },
+          { label: '送貨安排', href: '/help-center/#shipping' },
+          { label: '退換政策', href: '/help-center/#returns' },
         ],
       },
       {
@@ -97,10 +97,10 @@ const translations = {
       {
         title: 'Help Center',
         links: [
-          { label: 'How to Order', href: '/help-center/' },
-          { label: 'Payment Methods', href: '/help-center/' },
-          { label: 'Shipping', href: '/help-center/' },
-          { label: 'Return Policy', href: '/help-center/' },
+          { label: 'How to Order', href: '/help-center/#order' },
+          { label: 'Payment Methods', href: '/help-center/#payment' },
+          { label: 'Shipping', href: '/help-center/#shipping' },
+          { label: 'Return Policy', href: '/help-center/#returns' },
         ],
       },
       {
@@ -146,10 +146,10 @@ const translations = {
       {
         title: 'ヘルプセンター',
         links: [
-          { label: '注文方法', href: '/help-center/' },
-          { label: '支払い方法', href: '/help-center/' },
-          { label: '配送', href: '/help-center/' },
-          { label: '返品ポリシー', href: '/help-center/' },
+          { label: '注文方法', href: '/help-center/#order' },
+          { label: '支払い方法', href: '/help-center/#payment' },
+          { label: '配送', href: '/help-center/#shipping' },
+          { label: '返品ポリシー', href: '/help-center/#returns' },
         ],
       },
       {
@@ -237,7 +237,7 @@ export function Footer({ locale }: FooterProps) {
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-[#F87314] transition-colors text-sm"
             >
-              zprintpro.com
+              Z-printpro.com
             </a>
           </div>
         </div>

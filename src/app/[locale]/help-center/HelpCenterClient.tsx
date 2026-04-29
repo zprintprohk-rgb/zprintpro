@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import {
   ClipboardList,
@@ -540,11 +540,20 @@ const translations = {
 export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
   const t = translations[locale];
   const [activeTab, setActiveTab] = useState<string>('order');
+  const [showQrCodes, setShowQrCodes] = useState(false);
   const [openSections, setOpenSections] = useState<Record<string, boolean>>({});
 
   const toggle = (key: string) => {
     setOpenSections((prev) => ({ ...prev, [key]: !prev[key] }));
   };
+
+  /* ── read hash on mount ── */
+  useEffect(() => {
+    const hash = window.location.hash.replace('#', '');
+    if (hash && t.tabs.some((tab) => tab.key === hash)) {
+      setActiveTab(hash);
+    }
+  }, []);
 
   const activeT = t.tabs.find((tab) => tab.key === activeTab)!;
   const ActiveIcon = activeT.icon;
@@ -723,19 +732,50 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
                   </li>
                 ))}
               </ul>
-              <div className="mt-3 grid grid-cols-2 gap-3">
-                <div className="bg-white rounded-lg border border-amber-200 p-3 text-center">
-                  <p className="text-xs text-gray-500 mb-2">{locale === 'zh-hk' ? '微信支付' : locale === 'ja' ? 'WeChat Pay' : 'WeChat Pay'}</p>
-                  <div className="aspect-square bg-gray-100 rounded flex items-center justify-center">
-                    <span className="text-xs text-gray-400">{locale === 'zh-hk' ? '請上傳收款碼' : 'Upload QR code'}</span>
+              <div className="mt-3">
+                {!showQrCodes ? (
+                  <button
+                    onClick={() => setShowQrCodes(true)}
+                    className="w-full py-2.5 rounded-lg bg-white border border-amber-200 text-sm text-amber-700 hover:bg-amber-50 transition-colors font-medium"
+                  >
+                    {locale === 'zh-hk' ? '點擊顯示收款碼' : locale === 'ja' ? 'QRコードを表示' : 'Click to show QR codes'}
+                  </button>
+                ) : (
+                  <div className="grid grid-cols-2 gap-3 animate-in fade-in slide-in-from-top-2 duration-300">
+                    <div className="bg-white rounded-lg border border-amber-200 p-3 text-center">
+                      <p className="text-xs text-gray-500 mb-2">{locale === 'zh-hk' ? '微信支付' : locale === 'ja' ? 'WeChat Pay' : 'WeChat Pay'}</p>
+                      <div className="aspect-square bg-gray-100 rounded overflow-hidden">
+                        <Image
+                          src="/images/payment-wechat.webp"
+                          alt="WeChat Pay QR"
+                          width={200}
+                          height={200}
+                          className="w-full h-full object-contain"
+                          unoptimized
+                        />
+                      </div>
+                    </div>
+                    <div className="bg-white rounded-lg border border-amber-200 p-3 text-center">
+                      <p className="text-xs text-gray-500 mb-2">{locale === 'zh-hk' ? '支付寶' : locale === 'ja' ? 'Alipay' : 'Alipay'}</p>
+                      <div className="aspect-square bg-gray-100 rounded overflow-hidden">
+                        <Image
+                          src="/images/payment-alipay.webp"
+                          alt="Alipay QR"
+                          width={200}
+                          height={200}
+                          className="w-full h-full object-contain"
+                          unoptimized
+                        />
+                      </div>
+                    </div>
+                    <button
+                      onClick={() => setShowQrCodes(false)}
+                      className="col-span-2 py-1.5 text-xs text-amber-600 hover:text-amber-800 transition-colors"
+                    >
+                      {locale === 'zh-hk' ? '隱藏收款碼' : locale === 'ja' ? 'QRコードを隠す' : 'Hide QR codes'}
+                    </button>
                   </div>
-                </div>
-                <div className="bg-white rounded-lg border border-amber-200 p-3 text-center">
-                  <p className="text-xs text-gray-500 mb-2">{locale === 'zh-hk' ? '支付寶' : locale === 'ja' ? 'Alipay' : 'Alipay'}</p>
-                  <div className="aspect-square bg-gray-100 rounded flex items-center justify-center">
-                    <span className="text-xs text-gray-400">{locale === 'zh-hk' ? '請上傳收款碼' : 'Upload QR code'}</span>
-                  </div>
-                </div>
+                )}
               </div>
             </div>
           </div>
@@ -917,7 +957,10 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
             return (
               <button
                 key={tab.key}
-                onClick={() => setActiveTab(tab.key)}
+                onClick={() => {
+                  setActiveTab(tab.key);
+                  window.location.hash = tab.key;
+                }}
                 className={`flex flex-col items-center justify-center gap-2 p-4 rounded-xl border-2 transition-all duration-200 ${
                   isActive
                     ? 'border-[#2873F5] bg-[#2873F5] text-white shadow-lg shadow-[#2873F5]/20'
