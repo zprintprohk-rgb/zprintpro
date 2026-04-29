@@ -14,22 +14,23 @@ function getLocalizedHref(href: string, locale: Locale): string {
   return prefix + href;
 }
 
-
 interface FooterProps {
   locale: Locale;
 }
 
 const translations = {
   'zh-hk': {
-    companyDesc: '智印港 Z-PrintPro 是香港領先的線上印刷平台，提供高品質、低價格、快交貨的專業印刷服務。從紙袋到海報，滿足您的一切印刷需求。',
+    companyDesc: '智印港 zprintpro.com 是香港領先的線上印刷平台，提供高品質、低價格、快交貨的專業印刷服務。從紙袋到海報，滿足您的一切印刷需求。',
     phone: '+86 181 2638 0255',
     email: 'zprintpro@outlook.com',
-    address: '香港觀塘成業街16號怡生工業中心',
+    address: '香港九龍觀塘偉業街180號 成運工業大廈',
     columns: [
       {
         title: '關於我們',
         links: [
-          { label: '公司新聞', href: '/blog/' },
+          { label: '公司新聞', href: '/company-news/' },
+          { label: '品牌故事', href: '/blog/company-intro/' },
+          { label: '印刷知識', href: '/blog/' },
           { label: '人才招聘', href: '/contact/' },
         ],
       },
@@ -47,10 +48,10 @@ const translations = {
       {
         title: '幫助中心',
         links: [
-          { label: '如何落單', href: '/faq/' },
-          { label: '付款方式', href: '/faq/' },
-          { label: '送貨安排', href: '/faq/' },
-          { label: '退換政策', href: '/faq/' },
+          { label: '落單須知', href: '/help-center/' },
+          { label: '付款方式', href: '/help-center/' },
+          { label: '送貨安排', href: '/help-center/' },
+          { label: '退換政策', href: '/help-center/' },
         ],
       },
       {
@@ -65,18 +66,20 @@ const translations = {
     ],
     followUs: '關注我們',
     friendLinks: '友情連結',
-    copyright: '© 2025 智印港 ZPrintPro. 保留所有權利。',
+    copyright: '© 2025 智印港 zprintpro.com. 保留所有權利。',
   },
   en: {
-    companyDesc: 'ZPrintPro is Hong Kong\'s leading online printing platform, offering high-quality, low-cost, fast-delivery professional printing services. From paper bags to posters, we meet all your printing needs.',
+    companyDesc: 'zprintpro.com is Hong Kong\'s leading online printing platform, offering high-quality, low-cost, fast-delivery professional printing services. From paper bags to posters, we meet all your printing needs.',
     phone: '+86 181 2638 0255',
     email: 'zprintpro@outlook.com',
-    address: '16 Shing Yip Street, Kwun Tong, Hong Kong',
+    address: '180 Wai Yip Street, Kwun Tong, Kowloon, Hong Kong',
     columns: [
       {
         title: 'About Us',
         links: [
-          { label: 'Company News', href: '/blog/' },
+          { label: 'Company News', href: '/company-news/' },
+          { label: 'Brand Story', href: '/blog/company-intro/' },
+          { label: 'Printing Knowledge', href: '/blog/' },
           { label: 'Careers', href: '/contact/' },
         ],
       },
@@ -94,10 +97,10 @@ const translations = {
       {
         title: 'Help Center',
         links: [
-          { label: 'How to Order', href: '/faq/' },
-          { label: 'Payment Methods', href: '/faq/' },
-          { label: 'Shipping', href: '/faq/' },
-          { label: 'Return Policy', href: '/faq/' },
+          { label: 'How to Order', href: '/help-center/' },
+          { label: 'Payment Methods', href: '/help-center/' },
+          { label: 'Shipping', href: '/help-center/' },
+          { label: 'Return Policy', href: '/help-center/' },
         ],
       },
       {
@@ -112,18 +115,20 @@ const translations = {
     ],
     followUs: 'Follow Us',
     friendLinks: 'Friendly Links',
-    copyright: '© 2025 ZPrintPro. All rights reserved.',
+    copyright: '© 2025 zprintpro.com. All rights reserved.',
   },
   ja: {
-    companyDesc: 'ZPrintProは香港を代表するオンライン印刷プラットフォームで、高品質・低価格・迅速納品のプロフェッショナル印刷サービスを提供しています。紙袋からポスターまで、あらゆる印刷ニーズにお応えします。',
+    companyDesc: 'zprintpro.comは香港を代表するオンライン印刷プラットフォームで、高品質・低価格・迅速納品のプロフェッショナル印刷サービスを提供しています。紙袋からポスターまで、あらゆる印刷ニーズにお応えします。',
     phone: '+86 181 2638 0255',
     email: 'zprintpro@outlook.com',
-    address: '香港観塘成業街16号怡生工業中心',
+    address: '香港九龍観塘偉業街180号 成運工業ビル',
     columns: [
       {
         title: '会社概要',
         links: [
-          { label: '会社ニュース', href: '/blog/' },
+          { label: '会社ニュース', href: '/company-news/' },
+          { label: 'ブランドストーリー', href: '/blog/company-intro/' },
+          { label: '印刷知識', href: '/blog/' },
           { label: '採用情報', href: '/contact/' },
         ],
       },
@@ -141,10 +146,10 @@ const translations = {
       {
         title: 'ヘルプセンター',
         links: [
-          { label: '注文方法', href: '/faq/' },
-          { label: '支払い方法', href: '/faq/' },
-          { label: '配送', href: '/faq/' },
-          { label: '返品ポリシー', href: '/faq/' },
+          { label: '注文方法', href: '/help-center/' },
+          { label: '支払い方法', href: '/help-center/' },
+          { label: '配送', href: '/help-center/' },
+          { label: '返品ポリシー', href: '/help-center/' },
         ],
       },
       {
@@ -159,7 +164,7 @@ const translations = {
     ],
     followUs: 'フォロー',
     friendLinks: '友好リンク',
-    copyright: '© 2025 ZPrintPro. All rights reserved.',
+    copyright: '© 2025 zprintpro.com. All rights reserved.',
   },
 };
 
@@ -177,7 +182,7 @@ export function Footer({ locale }: FooterProps) {
             <div className="mb-4">
               <Image
                 src="/images/logo.png"
-                alt="智印港 ZprintPro"
+                alt="智印港 zprintpro.com"
                 width={180}
                 height={44}
                 className="h-11 w-auto"
@@ -227,12 +232,12 @@ export function Footer({ locale }: FooterProps) {
           <div className="flex flex-wrap items-center gap-3">
             <span className="text-gray-400 text-sm font-medium">{t.friendLinks}：</span>
             <a
-              href="https://www.z-printpro.com/"
+              href="https://www.zprintpro.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-[#F87314] transition-colors text-sm"
             >
-              Z-PrintPro
+              zprintpro.com
             </a>
           </div>
         </div>

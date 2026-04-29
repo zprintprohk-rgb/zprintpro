@@ -15,7 +15,7 @@ export const siteConfig = {
   phone: '+852 [TODO: 填入實際香港電話]',
   email: 'zprintpro@outlook.com',
   address: {
-    street: '16 Shing Yip Street',
+    street: '180 Wai Yip Street',
     city: 'Kwun Tong',
     region: 'Kowloon',
     country: 'HK',
