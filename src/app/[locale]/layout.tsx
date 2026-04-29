@@ -8,6 +8,7 @@ import { Inter } from 'next/font/google';
 import '../globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { CartProvider } from '@/lib/cart-context';
 import { regionConfig } from '@/lib/seo';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -39,9 +40,11 @@ export default function RootLayout({
   return (
     <html lang={regionConfig[locale as 'zh-hk' | 'en' | 'ja']?.lang || locale}>
       <body className={inter.className}>
-        <Header locale={locale as 'zh-hk' | 'en' | 'ja'} />
-        {children}
-        <Footer locale={locale as 'zh-hk' | 'en' | 'ja'} />
+        <CartProvider>
+          <Header locale={locale as 'zh-hk' | 'en' | 'ja'} />
+          {children}
+          <Footer locale={locale as 'zh-hk' | 'en' | 'ja'} />
+        </CartProvider>
       </body>
     </html>
   );

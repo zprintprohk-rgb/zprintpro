@@ -13,6 +13,7 @@ import { Product } from '@/data/products';
 import { Locale } from '@/lib/seo';
 import { getProductTitle } from '@/data/products';
 import { convertPriceRangeString } from '@/lib/pricing';
+import { useCart } from '@/lib/cart-context';
 import { Check, MessageCircle, ShoppingCart, Zap, ChevronRight } from 'lucide-react';
 
 interface QuoteCalculatorProps {
@@ -144,6 +145,9 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
 
   const t = translations[locale];
   const router = useRouter();
+  const { addItem, items } = useCart();
+  const inCart = items.find((i) => i.sku_code === product.sku_code);
+  const inCartQty = inCart?.quantity || 0;
 
   // 计算价格
   const calculatedPrice = useMemo(() => {
@@ -186,9 +190,6 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
   const hasFinishings = product.variables?.finishings && product.variables.finishings.length > 0;
   const hasQuantities = product.variables?.quantities && product.variables.quantities.length > 0;
 
-  // 没有任何报价选项时，显示简化版本
-  const hasAnyVariables = hasSizes || hasMaterials || hasFinishings || hasQuantities;
-
   // 获取当前选中的标签名
   const getSelectedLabel = (type: 'sizes' | 'materials' | 'finishings' | 'quantities', value: string | number) => {
     const list = product.variables?.[type];
@@ -196,61 +197,6 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
     const item = list.find((i: any) => i.value === value);
     return item?.label || '';
   };
-
-  // 简化版本：无报价选项时的显示
-  if (!hasAnyVariables) {
-    return (
-      <div className="space-y-6">
-        {/* 产品基本信息 */}
-        <div className="bg-white rounded-xl border border-gray-200 p-4 space-y-3">
-          <div className="flex justify-between py-2 border-b border-gray-200">
-            <span className="text-gray-500 text-sm">{locale === 'zh-hk' ? '最低訂購量' : locale === 'en' ? 'Min. Order' : '最小注文数'}</span>
-            <span className="font-medium text-gray-900">{product.minQuantity} {locale === 'zh-hk' ? '個起' : locale === 'en' ? 'pcs' : '個〜'}</span>
-          </div>
-          <div className="flex justify-between py-2 border-b border-gray-200">
-            <span className="text-gray-500 text-sm">{locale === 'zh-hk' ? '參考價格' : locale === 'en' ? 'Reference Price' : '参考価格'}</span>
-            <span className="font-medium text-[#2873F5]">{locale === 'zh-hk' ? product.price_range : convertPriceRangeString(product.price_range, locale, product.category_slug, product.slug)}</span>
-          </div>
-          <div className="flex justify-between py-2">
-            <span className="text-gray-500 text-sm">{locale === 'zh-hk' ? '預計交貨' : locale === 'en' ? 'Est. Delivery' : '予定納期'}</span>
-            <span className="font-medium text-gray-900">3-5 {t.days}</span>
-          </div>
-        </div>
-
-        {/* 文件上传 */}
-        <div className="border-2 border-dashed border-gray-300 rounded-xl p-5 text-center hover:border-[#2873F5] transition-colors cursor-pointer bg-white">
-          <input type="file" accept=".pdf,.ai,.psd,.png,.jpg,.jpeg" className="hidden" id="design-upload" />
-          <label htmlFor="design-upload" className="cursor-pointer block">
-            <div className="text-gray-400 mb-2">
-              <svg className="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
-              </svg>
-            </div>
-            <p className="text-sm font-medium text-gray-700">{t.uploadDesign}</p>
-            <p className="text-xs text-gray-400 mt-1">{t.designNote}</p>
-          </label>
-        </div>
-
-        {/* 价格提醒 */}
-        <div className="border border-gray-200 rounded-xl p-5">
-          <div className="flex items-center gap-2 mb-3">
-            <Zap className="w-5 h-5 text-[#2873F5]" />
-            <span className="font-semibold text-gray-900">{t.priceNote}</span>
-          </div>
-          <p className="text-2xl font-bold text-[#F87314] mb-1">{locale === 'zh-hk' ? product.price_range.split('-')[0] : convertPriceRangeString(product.price_range, locale, product.category_slug, product.slug).split('-')[0]}</p>
-          <p className="text-sm text-gray-500 mb-4">{locale === 'zh-hk' ? product.price_range : convertPriceRangeString(product.price_range, locale, product.category_slug, product.slug)}</p>
-          <p className="text-xs text-gray-400 leading-relaxed mb-4">{t.priceNoteDetail}</p>
-          <button
-            onClick={handleWhatsApp}
-            className="w-full py-3 bg-[#2873F5] text-white rounded-lg font-bold hover:bg-[#1E5FD1] transition-colors flex items-center justify-center gap-2"
-          >
-            <MessageCircle className="w-5 h-5" />
-            {t.getQuote}
-          </button>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div className="space-y-6">
@@ -484,12 +430,58 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
               </div>
               {/* 订购按钮 */}
               <div className="flex gap-3">
-                <button className="flex-1 py-2.5 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors text-sm flex items-center justify-center gap-1.5">
+                <button
+                  onClick={() => {
+                    addItem({
+                      sku_code: product.sku_code,
+                      slug: product.slug,
+                      name: product.name,
+                      nameEn: product.nameEn || product.name,
+                      nameJa: product.nameJa || product.name,
+                      image: product.images[0] || '/images/placeholder.jpg',
+                      price_range: product.price_range,
+                      category_slug: product.category_slug,
+                      quantity: config.quantity,
+                      unitPrice: calculatedPrice.unitPrice,
+                      options: {
+                        size: hasSizes ? config.size : undefined,
+                        material: hasMaterials ? config.material : undefined,
+                        finishing: hasFinishings ? config.finishing : undefined,
+                        sizeLabel: hasSizes ? getSelectedLabel('sizes', config.size) : undefined,
+                        materialLabel: hasMaterials ? getSelectedLabel('materials', config.material) : undefined,
+                        finishingLabel: hasFinishings ? getSelectedLabel('finishings', config.finishing) : undefined,
+                      },
+                    });
+                  }}
+                  className="flex-1 py-2.5 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors text-sm flex items-center justify-center gap-1.5"
+                >
                   <ShoppingCart className="w-4 h-4" />
-                  {t.addToCart}
+                  {inCartQty > 0 ? `${t.addToCart} (${inCartQty})` : t.addToCart}
                 </button>
                 <button
-                  onClick={() => router.push(`/${locale}/contact/?product=${product.slug}`)}
+                  onClick={() => {
+                    addItem({
+                      sku_code: product.sku_code,
+                      slug: product.slug,
+                      name: product.name,
+                      nameEn: product.nameEn || product.name,
+                      nameJa: product.nameJa || product.name,
+                      image: product.images[0] || '/images/placeholder.jpg',
+                      price_range: product.price_range,
+                      category_slug: product.category_slug,
+                      quantity: config.quantity,
+                      unitPrice: calculatedPrice.unitPrice,
+                      options: {
+                        size: hasSizes ? config.size : undefined,
+                        material: hasMaterials ? config.material : undefined,
+                        finishing: hasFinishings ? config.finishing : undefined,
+                        sizeLabel: hasSizes ? getSelectedLabel('sizes', config.size) : undefined,
+                        materialLabel: hasMaterials ? getSelectedLabel('materials', config.material) : undefined,
+                        finishingLabel: hasFinishings ? getSelectedLabel('finishings', config.finishing) : undefined,
+                      },
+                    });
+                    router.push(`/${locale}/cart/`);
+                  }}
                   className="flex-1 py-2.5 bg-[#F87314] text-white rounded-lg font-bold hover:bg-[#E56203] transition-colors text-sm flex items-center justify-center gap-1.5"
                 >
                   <Zap className="w-4 h-4" />

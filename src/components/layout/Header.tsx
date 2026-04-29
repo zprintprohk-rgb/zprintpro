@@ -4,8 +4,9 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X, Phone, Mail, ShoppingCart, User, Search, ChevronDown } from 'lucide-react';
+import { Menu, X, Phone, Mail, ShoppingCart, Search, ChevronDown } from 'lucide-react';
 import { Locale } from '@/lib/seo';
+import { useCart } from '@/lib/cart-context';
 
 interface HeaderProps {
   locale: Locale;
@@ -19,7 +20,6 @@ const translations = {
     support: '24/7 客戶服務',
     searchPlaceholder: '搜尋印刷產品...',
     search: '搜尋',
-    login: '登入',
     cart: '購物車',
     home: '首頁',
     knowledge: '印刷知識',
@@ -42,7 +42,6 @@ const translations = {
     support: '24/7 Customer Service',
     searchPlaceholder: 'Search printing products...',
     search: 'Search',
-    login: 'Login',
     cart: 'Cart',
     home: 'Home',
     knowledge: 'Knowledge',
@@ -65,7 +64,6 @@ const translations = {
     support: '24時間年中無休サポート',
     searchPlaceholder: '印刷製品を検索...',
     search: '検索',
-    login: 'ログイン',
     cart: 'カート',
     home: 'ホーム',
     knowledge: '印刷知識',
@@ -262,6 +260,16 @@ const featuredDescs: Record<string, Record<string, string>> = {
   },
 };
 
+function CartBadge() {
+  const { totalItems } = useCart();
+  if (totalItems === 0) return null;
+  return (
+    <span className="absolute -top-2 -right-2 w-4 h-4 bg-[#F87314] text-white text-[10px] rounded-full flex items-center justify-center font-bold">
+      {totalItems > 99 ? '99+' : totalItems}
+    </span>
+  );
+}
+
 export function Header({ locale }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
@@ -341,9 +349,8 @@ export function Header({ locale }: HeaderProps) {
                 </div>
               </form>
               <div className="flex items-center gap-3 lg:gap-5">
-                <Link href={`${localePrefix}/contact/`} className="hidden sm:flex items-center gap-1.5 text-gray-600 hover:text-[#2873F5] transition-colors text-sm"><User className="w-5 h-5" /><span>{t.login}</span></Link>
-                <Link href={`${localePrefix}/contact/`} className="flex items-center gap-1.5 text-gray-600 hover:text-[#2873F5] transition-colors text-sm">
-                  <div className="relative"><ShoppingCart className="w-5 h-5" /><span className="absolute -top-2 -right-2 w-4 h-4 bg-[#F87314] text-white text-[10px] rounded-full flex items-center justify-center font-bold">0</span></div>
+                <Link href={`${localePrefix}/cart/`} className="flex items-center gap-1.5 text-gray-600 hover:text-[#2873F5] transition-colors text-sm">
+                  <div className="relative"><ShoppingCart className="w-5 h-5" /><CartBadge /></div>
                   <span className="hidden sm:inline">{t.cart}</span>
                 </Link>
                 <button className="lg:hidden p-2" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>{mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}</button>
