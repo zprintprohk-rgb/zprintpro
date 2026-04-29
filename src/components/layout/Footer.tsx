@@ -29,9 +29,7 @@ const translations = {
       {
         title: '關於我們',
         links: [
-          { label: '公司簡介', href: '/about/' },
-          { label: '服務條款', href: '/terms/' },
-          { label: '私隱政策', href: '/privacy/' },
+          { label: '公司新聞', href: '/blog/' },
           { label: '人才招聘', href: '/contact/' },
         ],
       },
@@ -78,9 +76,7 @@ const translations = {
       {
         title: 'About Us',
         links: [
-          { label: 'Company Profile', href: '/about/' },
-          { label: 'Terms of Service', href: '/terms/' },
-          { label: 'Privacy Policy', href: '/privacy/' },
+          { label: 'Company News', href: '/blog/' },
           { label: 'Careers', href: '/contact/' },
         ],
       },
@@ -127,9 +123,7 @@ const translations = {
       {
         title: '会社概要',
         links: [
-          { label: '会社紹介', href: '/about/' },
-          { label: '利用規約', href: '/terms/' },
-          { label: 'プライバシーポリシー', href: '/privacy/' },
+          { label: '会社ニュース', href: '/blog/' },
           { label: '採用情報', href: '/contact/' },
         ],
       },
