@@ -149,6 +149,29 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/thick-business-cards-400g.jpg'],
+    variables: {
+      sizes: [
+        { value: 'standard', label: '標準尺寸 (90×54mm)', multiplier: 1 },
+        { value: 'square', label: '方形 (65×65mm)', multiplier: 1.2 },
+      ],
+      materials: [
+        { value: '300g', label: '300g銅版紙', surcharge: 0 },
+        { value: '400g', label: '400g厚紙', surcharge: 100 },
+      ],
+      finishings: [
+        { value: 'none', label: '無', surcharge: 0 },
+        { value: 'matte', label: '啞膠', surcharge: 30 },
+        { value: 'gloss', label: '光膠', surcharge: 30 },
+        { value: 'spot-uv', label: '局部UV', surcharge: 80 },
+        { value: 'foil', label: '燙金/燙銀', surcharge: 150 },
+      ],
+      quantities: [
+        { value: 100, label: '100張', discount: 1 },
+        { value: 500, label: '500張', discount: 0.85 },
+        { value: 1000, label: '1000張', discount: 0.75 },
+        { value: 2000, label: '2000張', discount: 0.65 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-business-cards-thick-business-cards-400g-zh-hk.jpg', en: 'zprintpro-business-cards-thick-business-cards-400g-en.jpg', ja: 'zprintpro-business-cards-thick-business-cards-400g-ja.jpg' },
       alt: { 'zh-hk': '香港厚身咭片(400g)印刷 HK$120-220/100張 起｜400g超厚紙質，厚實手感彰顯尊貴品質。特別適合高｜ZprintPro智印港', en: 'Thick Business Cards (400g) Printing Hong Kong HK$120-220/100張｜400g ultra-thick paper with substan｜ZprintPro', ja: '香港厚紙名刺(400g) HK$120-220/100張｜400g超厚紙、重厚な質感。高級サービス業、デザイ｜ZprintPro' },
@@ -169,6 +192,29 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/foil-business-cards.jpg'],
+    variables: {
+      sizes: [
+        { value: 'standard', label: '標準尺寸 (90×54mm)', multiplier: 1 },
+        { value: 'square', label: '方形 (65×65mm)', multiplier: 1.2 },
+      ],
+      materials: [
+        { value: '300g', label: '300g銅版紙', surcharge: 0 },
+        { value: '400g', label: '400g厚紙', surcharge: 100 },
+      ],
+      finishings: [
+        { value: 'none', label: '無', surcharge: 0 },
+        { value: 'matte', label: '啞膠', surcharge: 30 },
+        { value: 'gloss', label: '光膠', surcharge: 30 },
+        { value: 'spot-uv', label: '局部UV', surcharge: 80 },
+        { value: 'foil', label: '燙金/燙銀', surcharge: 150 },
+      ],
+      quantities: [
+        { value: 100, label: '100張', discount: 1 },
+        { value: 500, label: '500張', discount: 0.85 },
+        { value: 1000, label: '1000張', discount: 0.75 },
+        { value: 2000, label: '2000張', discount: 0.65 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-business-cards-foil-business-cards-zh-hk.jpg', en: 'zprintpro-business-cards-foil-business-cards-en.jpg', ja: 'zprintpro-business-cards-foil-business-cards-ja.jpg' },
       alt: { 'zh-hk': '香港燙金/燙銀咭片印刷 HK$180-320/100張 起｜局部燙金或燙銀工藝，在光線下閃耀奪目，瞬間提升品牌｜ZprintPro智印港', en: 'Foil Stamped Business Cards Printing Hong Kong HK$180-320/100張｜Foil stamping in gold or silver, sh｜ZprintPro', ja: '香港箔押し名刺 HK$180-320/100張｜部分的な箔押し加工、光に輝いてブランドイメージ向上｜ZprintPro' },
@@ -189,6 +235,29 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/spot-uv-business-cards.jpg'],
+    variables: {
+      sizes: [
+        { value: 'standard', label: '標準尺寸 (90×54mm)', multiplier: 1 },
+        { value: 'square', label: '方形 (65×65mm)', multiplier: 1.2 },
+      ],
+      materials: [
+        { value: '300g', label: '300g銅版紙', surcharge: 0 },
+        { value: '400g', label: '400g厚紙', surcharge: 100 },
+      ],
+      finishings: [
+        { value: 'none', label: '無', surcharge: 0 },
+        { value: 'matte', label: '啞膠', surcharge: 30 },
+        { value: 'gloss', label: '光膠', surcharge: 30 },
+        { value: 'spot-uv', label: '局部UV', surcharge: 80 },
+        { value: 'foil', label: '燙金/燙銀', surcharge: 150 },
+      ],
+      quantities: [
+        { value: 100, label: '100張', discount: 1 },
+        { value: 500, label: '500張', discount: 0.85 },
+        { value: 1000, label: '1000張', discount: 0.75 },
+        { value: 2000, label: '2000張', discount: 0.65 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-business-cards-spot-uv-business-cards-zh-hk.jpg', en: 'zprintpro-business-cards-spot-uv-business-cards-en.jpg', ja: 'zprintpro-business-cards-spot-uv-business-cards-ja.jpg' },
       alt: { 'zh-hk': '香港UV局部光油咭片印刷 HK$140-260/100張 起｜局部UV光油工藝，讓Logo或圖案呈現立體光澤效果｜ZprintPro智印港', en: 'Spot UV Business Cards Printing Hong Kong HK$140-260/100張｜Spot UV coating creates glossy, dim｜ZprintPro', ja: '香港局部UV名刺 HK$140-260/100張｜部分UVコーティングでロゴやデザインに立体的な光沢｜ZprintPro' },
@@ -209,6 +278,29 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/matte-business-cards.jpg'],
+    variables: {
+      sizes: [
+        { value: 'standard', label: '標準尺寸 (90×54mm)', multiplier: 1 },
+        { value: 'square', label: '方形 (65×65mm)', multiplier: 1.2 },
+      ],
+      materials: [
+        { value: '300g', label: '300g銅版紙', surcharge: 0 },
+        { value: '400g', label: '400g厚紙', surcharge: 100 },
+      ],
+      finishings: [
+        { value: 'none', label: '無', surcharge: 0 },
+        { value: 'matte', label: '啞膠', surcharge: 30 },
+        { value: 'gloss', label: '光膠', surcharge: 30 },
+        { value: 'spot-uv', label: '局部UV', surcharge: 80 },
+        { value: 'foil', label: '燙金/燙銀', surcharge: 150 },
+      ],
+      quantities: [
+        { value: 100, label: '100張', discount: 1 },
+        { value: 500, label: '500張', discount: 0.85 },
+        { value: 1000, label: '1000張', discount: 0.75 },
+        { value: 2000, label: '2000張', discount: 0.65 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-business-cards-matte-business-cards-zh-hk.jpg', en: 'zprintpro-business-cards-matte-business-cards-en.jpg', ja: 'zprintpro-business-cards-matte-business-cards-ja.jpg' },
       alt: { 'zh-hk': '香港啞膠咭片印刷 HK$110-190/100張 起｜啞膠表面處理，低調內斂的質感，不易留下指紋。適合注｜ZprintPro智印港', en: 'Matte Laminated Cards Printing Hong Kong HK$110-190/100張｜Matte lamination provides understat｜ZprintPro', ja: '香港マット名刺 HK$110-190/100張｜マットラミネーション加工、落ち着いた質感で指紋が付｜ZprintPro' },
@@ -292,6 +384,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/transparent-stickers.jpg'],
+    variables: {
+      sizes: [
+        { value: 'small', label: '小尺寸(≤50mm)', multiplier: 1 },
+        { value: 'medium', label: '中尺寸(51-100mm)', multiplier: 1.5 },
+        { value: 'large', label: '大尺寸(>100mm)', multiplier: 2.2 },
+      ],
+      materials: [
+        { value: 'pvc', label: 'PVC防水', surcharge: 0 },
+        { value: 'pp', label: 'PP合成紙', surcharge: 10 },
+        { value: 'pet', label: 'PET透明', surcharge: 15 },
+      ],
+      finishings: [
+        { value: 'gloss', label: '光膜', surcharge: 0 },
+        { value: 'matte', label: '啞膜', surcharge: 5 },
+        { value: 'diecut', label: '異形模切', surcharge: 30 },
+      ],
+      quantities: [
+        { value: 100, label: '100張', discount: 1 },
+        { value: 500, label: '500張', discount: 0.75 },
+        { value: 1000, label: '1000張', discount: 0.6 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-stickers-transparent-stickers-zh-hk.jpg', en: 'zprintpro-stickers-transparent-stickers-en.jpg', ja: 'zprintpro-stickers-transparent-stickers-ja.jpg' },
       alt: { 'zh-hk': '香港透明貼紙印刷 HK$0.38-1.50/張 起｜透明PET材質，貼合後呈現無感效果，完美展現產品本｜ZprintPro智印港', en: 'Transparent Stickers Printing Hong Kong HK$0.38-1.50/張｜Transparent PET material creates in｜ZprintPro', ja: '香港透明ステッカー HK$0.38-1.50/張｜透明PET素材、貼り付け後無感効果。化粧品、食品包｜ZprintPro' },
@@ -328,6 +442,28 @@ export const products: Product[] = [
       '/images/products/seedream-webp/zprintpro-stickers-removable-stickers-ja-1.webp',
       '/images/products/seedream-webp/zprintpro-stickers-removable-stickers-ja-2.webp',
       '/images/products/seedream-webp/zprintpro-stickers-removable-stickers-ja-3.webp',
+      ],
+    },
+    variables: {
+      sizes: [
+        { value: 'small', label: '小尺寸(≤50mm)', multiplier: 1 },
+        { value: 'medium', label: '中尺寸(51-100mm)', multiplier: 1.5 },
+        { value: 'large', label: '大尺寸(>100mm)', multiplier: 2.2 },
+      ],
+      materials: [
+        { value: 'pvc', label: 'PVC防水', surcharge: 0 },
+        { value: 'pp', label: 'PP合成紙', surcharge: 10 },
+        { value: 'pet', label: 'PET透明', surcharge: 15 },
+      ],
+      finishings: [
+        { value: 'gloss', label: '光膜', surcharge: 0 },
+        { value: 'matte', label: '啞膜', surcharge: 5 },
+        { value: 'diecut', label: '異形模切', surcharge: 30 },
+      ],
+      quantities: [
+        { value: 100, label: '100張', discount: 1 },
+        { value: 500, label: '500張', discount: 0.75 },
+        { value: 1000, label: '1000張', discount: 0.6 },
       ],
     },
     seoImages: {
@@ -367,6 +503,28 @@ export const products: Product[] = [
       '/images/products/seedream-webp/zprintpro-stickers-small-batch-stickers-ja-2.webp',
       '/images/products/seedream-webp/zprintpro-stickers-small-batch-stickers-ja-3.webp',
       '/images/products/seedream-webp/zprintpro-stickers-small-batch-stickers-ja-4.webp',
+      ],
+    },
+    variables: {
+      sizes: [
+        { value: 'small', label: '小尺寸(≤50mm)', multiplier: 1 },
+        { value: 'medium', label: '中尺寸(51-100mm)', multiplier: 1.5 },
+        { value: 'large', label: '大尺寸(>100mm)', multiplier: 2.2 },
+      ],
+      materials: [
+        { value: 'pvc', label: 'PVC防水', surcharge: 0 },
+        { value: 'pp', label: 'PP合成紙', surcharge: 10 },
+        { value: 'pet', label: 'PET透明', surcharge: 15 },
+      ],
+      finishings: [
+        { value: 'gloss', label: '光膜', surcharge: 0 },
+        { value: 'matte', label: '啞膜', surcharge: 5 },
+        { value: 'diecut', label: '異形模切', surcharge: 30 },
+      ],
+      quantities: [
+        { value: 100, label: '100張', discount: 1 },
+        { value: 500, label: '500張', discount: 0.75 },
+        { value: 1000, label: '1000張', discount: 0.6 },
       ],
     },
     seoImages: {
@@ -411,6 +569,28 @@ export const products: Product[] = [
       '/images/products/seedream-webp/zprintpro-stickers-die-cut-stickers-ja-4.webp',
       ],
     },
+    variables: {
+      sizes: [
+        { value: 'small', label: '小尺寸(≤50mm)', multiplier: 1 },
+        { value: 'medium', label: '中尺寸(51-100mm)', multiplier: 1.5 },
+        { value: 'large', label: '大尺寸(>100mm)', multiplier: 2.2 },
+      ],
+      materials: [
+        { value: 'pvc', label: 'PVC防水', surcharge: 0 },
+        { value: 'pp', label: 'PP合成紙', surcharge: 10 },
+        { value: 'pet', label: 'PET透明', surcharge: 15 },
+      ],
+      finishings: [
+        { value: 'gloss', label: '光膜', surcharge: 0 },
+        { value: 'matte', label: '啞膜', surcharge: 5 },
+        { value: 'diecut', label: '異形模切', surcharge: 30 },
+      ],
+      quantities: [
+        { value: 100, label: '100張', discount: 1 },
+        { value: 500, label: '500張', discount: 0.75 },
+        { value: 1000, label: '1000張', discount: 0.6 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-stickers-die-cut-stickers-zh-hk.jpg', en: 'zprintpro-stickers-die-cut-stickers-en.jpg', ja: 'zprintpro-stickers-die-cut-stickers-ja.jpg' },
       alt: { 'zh-hk': '香港異形模切貼紙印刷 HK$0.58-2.20/張 起｜任意形狀模切，讓創意不受限制。可切出Logo形狀、｜ZprintPro智印港', en: 'Die-cut Stickers Printing Hong Kong HK$0.58-2.20/張｜Any shape die-cutting, creativity w｜ZprintPro', ja: '香港型抜きステッカー HK$0.58-2.20/張｜任意形状の型抜き、創作の自由を制限しません。｜ZprintPro' },
@@ -451,6 +631,28 @@ export const products: Product[] = [
       '/images/products/seedream-webp/zprintpro-stickers-foil-stickers-ja-4.webp',
       ],
     },
+    variables: {
+      sizes: [
+        { value: 'small', label: '小尺寸(≤50mm)', multiplier: 1 },
+        { value: 'medium', label: '中尺寸(51-100mm)', multiplier: 1.5 },
+        { value: 'large', label: '大尺寸(>100mm)', multiplier: 2.2 },
+      ],
+      materials: [
+        { value: 'pvc', label: 'PVC防水', surcharge: 0 },
+        { value: 'pp', label: 'PP合成紙', surcharge: 10 },
+        { value: 'pet', label: 'PET透明', surcharge: 15 },
+      ],
+      finishings: [
+        { value: 'gloss', label: '光膜', surcharge: 0 },
+        { value: 'matte', label: '啞膜', surcharge: 5 },
+        { value: 'diecut', label: '異形模切', surcharge: 30 },
+      ],
+      quantities: [
+        { value: 100, label: '100張', discount: 1 },
+        { value: 500, label: '500張', discount: 0.75 },
+        { value: 1000, label: '1000張', discount: 0.6 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-stickers-foil-stickers-zh-hk.jpg', en: 'zprintpro-stickers-foil-stickers-en.jpg', ja: 'zprintpro-stickers-foil-stickers-ja.jpg' },
       alt: { 'zh-hk': '香港燙金貼紙印刷 HK$0.78-2.80/張 起｜燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮｜ZprintPro智印港', en: 'Foil Stickers Printing Hong Kong HK$0.78-2.80/張｜Foil stamping gives stickers premiu｜ZprintPro', ja: '香港箔押しステッカー HK$0.78-2.80/張｜箔押し加工でステッカーに高級感。高級製品ラベル、ギ｜ZprintPro' },
@@ -489,6 +691,28 @@ export const products: Product[] = [
       '/images/products/seedream-webp/zprintpro-stickers-security-stickers-ja-2.webp',
       '/images/products/seedream-webp/zprintpro-stickers-security-stickers-ja-3.webp',
       '/images/products/seedream-webp/zprintpro-stickers-security-stickers-ja-4.webp',
+      ],
+    },
+    variables: {
+      sizes: [
+        { value: 'small', label: '小尺寸(≤50mm)', multiplier: 1 },
+        { value: 'medium', label: '中尺寸(51-100mm)', multiplier: 1.5 },
+        { value: 'large', label: '大尺寸(>100mm)', multiplier: 2.2 },
+      ],
+      materials: [
+        { value: 'pvc', label: 'PVC防水', surcharge: 0 },
+        { value: 'pp', label: 'PP合成紙', surcharge: 10 },
+        { value: 'pet', label: 'PET透明', surcharge: 15 },
+      ],
+      finishings: [
+        { value: 'gloss', label: '光膜', surcharge: 0 },
+        { value: 'matte', label: '啞膜', surcharge: 5 },
+        { value: 'diecut', label: '異形模切', surcharge: 30 },
+      ],
+      quantities: [
+        { value: 100, label: '100張', discount: 1 },
+        { value: 500, label: '500張', discount: 0.75 },
+        { value: 1000, label: '1000張', discount: 0.6 },
       ],
     },
     seoImages: {
@@ -627,6 +851,28 @@ export const products: Product[] = [
       '/images/products/seedream-webp/zprintpro-paper-bags-white-card-bags-ja-4.webp',
       ],
     },
+    variables: {
+      sizes: [
+        { value: 'small', label: '小號(180×230×80mm)', multiplier: 1 },
+        { value: 'medium', label: '中號(250×300×100mm)', multiplier: 1.4 },
+        { value: 'large', label: '大號(320×400×120mm)', multiplier: 2 },
+      ],
+      materials: [
+        { value: 'kraft', label: '牛皮紙', surcharge: 0 },
+        { value: 'white', label: '白卡紙', surcharge: 50 },
+        { value: 'art', label: '銅版紙', surcharge: 30 },
+      ],
+      finishings: [
+        { value: 'none', label: '無', surcharge: 0 },
+        { value: 'foil', label: '燙金', surcharge: 150 },
+        { value: 'handle', label: '手挽繩', surcharge: 20 },
+      ],
+      quantities: [
+        { value: 100, label: '100個', discount: 1 },
+        { value: 500, label: '500個', discount: 0.85 },
+        { value: 1000, label: '1000個', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-paper-bags-white-card-bags-zh-hk.jpg', en: 'zprintpro-paper-bags-white-card-bags-en.jpg', ja: 'zprintpro-paper-bags-white-card-bags-ja.jpg' },
       alt: { 'zh-hk': '香港白卡紙袋印刷 HK$5-12/個 起｜白卡紙材質，表面平整光滑，印刷效果佳。適合高端品牌｜ZprintPro智印港', en: 'White Card Bags Printing Hong Kong HK$5-12/個｜White card paper, smooth surface, e｜ZprintPro', ja: '香港白カード紙袋 HK$5-12/個｜白カード紙、表面が滑らかで印刷効果が抜群。高級ブラ｜ZprintPro' },
@@ -665,6 +911,28 @@ export const products: Product[] = [
       '/images/products/seedream-webp/zprintpro-paper-bags-gift-bags-ja-2.webp',
       '/images/products/seedream-webp/zprintpro-paper-bags-gift-bags-ja-3.webp',
       '/images/products/seedream-webp/zprintpro-paper-bags-gift-bags-ja-4.webp',
+      ],
+    },
+    variables: {
+      sizes: [
+        { value: 'small', label: '小號(180×230×80mm)', multiplier: 1 },
+        { value: 'medium', label: '中號(250×300×100mm)', multiplier: 1.4 },
+        { value: 'large', label: '大號(320×400×120mm)', multiplier: 2 },
+      ],
+      materials: [
+        { value: 'kraft', label: '牛皮紙', surcharge: 0 },
+        { value: 'white', label: '白卡紙', surcharge: 50 },
+        { value: 'art', label: '銅版紙', surcharge: 30 },
+      ],
+      finishings: [
+        { value: 'none', label: '無', surcharge: 0 },
+        { value: 'foil', label: '燙金', surcharge: 150 },
+        { value: 'handle', label: '手挽繩', surcharge: 20 },
+      ],
+      quantities: [
+        { value: 100, label: '100個', discount: 1 },
+        { value: 500, label: '500個', discount: 0.85 },
+        { value: 1000, label: '1000個', discount: 0.7 },
       ],
     },
     seoImages: {
@@ -707,6 +975,28 @@ export const products: Product[] = [
       '/images/products/seedream-webp/zprintpro-paper-bags-eco-paper-bags-ja-4.webp',
       ],
     },
+    variables: {
+      sizes: [
+        { value: 'small', label: '小號(180×230×80mm)', multiplier: 1 },
+        { value: 'medium', label: '中號(250×300×100mm)', multiplier: 1.4 },
+        { value: 'large', label: '大號(320×400×120mm)', multiplier: 2 },
+      ],
+      materials: [
+        { value: 'kraft', label: '牛皮紙', surcharge: 0 },
+        { value: 'white', label: '白卡紙', surcharge: 50 },
+        { value: 'art', label: '銅版紙', surcharge: 30 },
+      ],
+      finishings: [
+        { value: 'none', label: '無', surcharge: 0 },
+        { value: 'foil', label: '燙金', surcharge: 150 },
+        { value: 'handle', label: '手挽繩', surcharge: 20 },
+      ],
+      quantities: [
+        { value: 100, label: '100個', discount: 1 },
+        { value: 500, label: '500個', discount: 0.85 },
+        { value: 1000, label: '1000個', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-paper-bags-eco-paper-bags-zh-hk.jpg', en: 'zprintpro-paper-bags-eco-paper-bags-en.jpg', ja: 'zprintpro-paper-bags-eco-paper-bags-ja.jpg' },
       alt: { 'zh-hk': '香港環保紙袋印刷 HK$3-8/個 起｜FSC認證環保紙張，可持續發展。適合注重環保的品牌｜ZprintPro智印港', en: 'Eco Paper Bags Printing Hong Kong HK$3-8/個｜FSC-certified eco-friendly paper, s｜ZprintPro', ja: '香港エコ紙袋 HK$3-8/個｜FSC認証の環境に優しい紙、持続可能な開発。環境に｜ZprintPro' },
@@ -744,6 +1034,28 @@ export const products: Product[] = [
       '/images/products/seedream-webp/zprintpro-paper-bags-handle-bags-ja-1.webp',
       '/images/products/seedream-webp/zprintpro-paper-bags-handle-bags-ja-2.webp',
       '/images/products/seedream-webp/zprintpro-paper-bags-handle-bags-ja-3.webp',
+      ],
+    },
+    variables: {
+      sizes: [
+        { value: 'small', label: '小號(180×230×80mm)', multiplier: 1 },
+        { value: 'medium', label: '中號(250×300×100mm)', multiplier: 1.4 },
+        { value: 'large', label: '大號(320×400×120mm)', multiplier: 2 },
+      ],
+      materials: [
+        { value: 'kraft', label: '牛皮紙', surcharge: 0 },
+        { value: 'white', label: '白卡紙', surcharge: 50 },
+        { value: 'art', label: '銅版紙', surcharge: 30 },
+      ],
+      finishings: [
+        { value: 'none', label: '無', surcharge: 0 },
+        { value: 'foil', label: '燙金', surcharge: 150 },
+        { value: 'handle', label: '手挽繩', surcharge: 20 },
+      ],
+      quantities: [
+        { value: 100, label: '100個', discount: 1 },
+        { value: 500, label: '500個', discount: 0.85 },
+        { value: 1000, label: '1000個', discount: 0.7 },
       ],
     },
     seoImages: {
@@ -879,6 +1191,29 @@ export const products: Product[] = [
       '/images/products/seedream-webp/zprintpro-flyers-a5-flyers-ja-2.webp',
       ],
     },
+    variables: {
+      sizes: [
+        { value: 'a5', label: 'A5 (148×210mm)', multiplier: 0.65 },
+        { value: 'a4', label: 'A4 (210×297mm)', multiplier: 1 },
+        { value: 'a3', label: 'A3 (297×420mm)', multiplier: 1.8 },
+      ],
+      materials: [
+        { value: '128g', label: '128g銅版紙', surcharge: 0 },
+        { value: '157g', label: '157g銅版紙', surcharge: 15 },
+        { value: '200g', label: '200g厚紙', surcharge: 40 },
+      ],
+      finishings: [
+        { value: 'single', label: '單面印刷', surcharge: 0 },
+        { value: 'double', label: '雙面印刷', surcharge: 20 },
+        { value: 'fold', label: '摺疊', surcharge: 35 },
+      ],
+      quantities: [
+        { value: 100, label: '100張', discount: 1 },
+        { value: 500, label: '500張', discount: 0.8 },
+        { value: 1000, label: '1000張', discount: 0.65 },
+        { value: 5000, label: '5000張', discount: 0.5 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-flyers-a5-flyers-zh-hk.jpg', en: 'zprintpro-flyers-a5-flyers-en.jpg', ja: 'zprintpro-flyers-a5-flyers-ja.jpg' },
       alt: { 'zh-hk': '香港A5宣傳單張印刷 HK$0.12-0.40/張 起｜A5尺寸，經濟實惠，適合大量派發。餐飲外賣、快閃活｜ZprintPro智印港', en: 'A5 Flyers Printing Hong Kong HK$0.12-0.40/張｜A5 size, economical, perfect for ma｜ZprintPro', ja: '香港A5チラシ HK$0.12-0.40/張｜A5サイズ、経済的、大量配布に最適。フードデリバリ｜ZprintPro' },
@@ -915,6 +1250,29 @@ export const products: Product[] = [
       '/images/products/seedream-webp/zprintpro-flyers-double-sided-flyers-ja-2.webp',
       ],
     },
+    variables: {
+      sizes: [
+        { value: 'a5', label: 'A5 (148×210mm)', multiplier: 0.65 },
+        { value: 'a4', label: 'A4 (210×297mm)', multiplier: 1 },
+        { value: 'a3', label: 'A3 (297×420mm)', multiplier: 1.8 },
+      ],
+      materials: [
+        { value: '128g', label: '128g銅版紙', surcharge: 0 },
+        { value: '157g', label: '157g銅版紙', surcharge: 15 },
+        { value: '200g', label: '200g厚紙', surcharge: 40 },
+      ],
+      finishings: [
+        { value: 'single', label: '單面印刷', surcharge: 0 },
+        { value: 'double', label: '雙面印刷', surcharge: 20 },
+        { value: 'fold', label: '摺疊', surcharge: 35 },
+      ],
+      quantities: [
+        { value: 100, label: '100張', discount: 1 },
+        { value: 500, label: '500張', discount: 0.8 },
+        { value: 1000, label: '1000張', discount: 0.65 },
+        { value: 5000, label: '5000張', discount: 0.5 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-flyers-double-sided-flyers-zh-hk.jpg', en: 'zprintpro-flyers-double-sided-flyers-en.jpg', ja: 'zprintpro-flyers-double-sided-flyers-ja.jpg' },
       alt: { 'zh-hk': '香港雙面宣傳單張印刷 HK$0.22-0.80/張 起｜雙面全彩印刷，信息容量翻倍。正面吸引眼球，背面詳細｜ZprintPro智印港', en: 'Double-sided Flyers Printing Hong Kong HK$0.22-0.80/張｜Double-sided full color printing, d｜ZprintPro', ja: '香港両面チラシ HK$0.22-0.80/張｜両面フルカラー印刷、情報容量が2倍。｜ZprintPro' },
@@ -949,6 +1307,29 @@ export const products: Product[] = [
       '/images/products/seedream-webp/zprintpro-flyers-folded-leaflets-ja-2.webp',
       ],
     },
+    variables: {
+      sizes: [
+        { value: 'a5', label: 'A5 (148×210mm)', multiplier: 0.65 },
+        { value: 'a4', label: 'A4 (210×297mm)', multiplier: 1 },
+        { value: 'a3', label: 'A3 (297×420mm)', multiplier: 1.8 },
+      ],
+      materials: [
+        { value: '128g', label: '128g銅版紙', surcharge: 0 },
+        { value: '157g', label: '157g銅版紙', surcharge: 15 },
+        { value: '200g', label: '200g厚紙', surcharge: 40 },
+      ],
+      finishings: [
+        { value: 'single', label: '單面印刷', surcharge: 0 },
+        { value: 'double', label: '雙面印刷', surcharge: 20 },
+        { value: 'fold', label: '摺疊', surcharge: 35 },
+      ],
+      quantities: [
+        { value: 100, label: '100張', discount: 1 },
+        { value: 500, label: '500張', discount: 0.8 },
+        { value: 1000, label: '1000張', discount: 0.65 },
+        { value: 5000, label: '5000張', discount: 0.5 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-flyers-folded-leaflets-zh-hk.jpg', en: 'zprintpro-flyers-folded-leaflets-en.jpg', ja: 'zprintpro-flyers-folded-leaflets-ja.jpg' },
       alt: { 'zh-hk': '香港摺疊宣傳單張印刷 HK$0.45-1.60/張 起｜對摺或三摺設計，可展示更多信息。適合產品目錄、服務｜ZprintPro智印港', en: 'Folded Leaflets Printing Hong Kong HK$0.45-1.60/張｜Bi-fold or tri-fold design, can dis｜ZprintPro', ja: '香港折りたたみパンフレット HK$0.45-1.60/張｜二つ折りまたは三つ折りデザイン、より多くの情報を表｜ZprintPro' },
@@ -981,6 +1362,29 @@ export const products: Product[] = [
       ja: [
       '/images/products/seedream-webp/zprintpro-flyers-thick-paper-flyers-ja-1.webp',
       '/images/products/seedream-webp/zprintpro-flyers-thick-paper-flyers-ja-2.webp',
+      ],
+    },
+    variables: {
+      sizes: [
+        { value: 'a5', label: 'A5 (148×210mm)', multiplier: 0.65 },
+        { value: 'a4', label: 'A4 (210×297mm)', multiplier: 1 },
+        { value: 'a3', label: 'A3 (297×420mm)', multiplier: 1.8 },
+      ],
+      materials: [
+        { value: '128g', label: '128g銅版紙', surcharge: 0 },
+        { value: '157g', label: '157g銅版紙', surcharge: 15 },
+        { value: '200g', label: '200g厚紙', surcharge: 40 },
+      ],
+      finishings: [
+        { value: 'single', label: '單面印刷', surcharge: 0 },
+        { value: 'double', label: '雙面印刷', surcharge: 20 },
+        { value: 'fold', label: '摺疊', surcharge: 35 },
+      ],
+      quantities: [
+        { value: 100, label: '100張', discount: 1 },
+        { value: 500, label: '500張', discount: 0.8 },
+        { value: 1000, label: '1000張', discount: 0.65 },
+        { value: 5000, label: '5000張', discount: 0.5 },
       ],
     },
     seoImages: {
@@ -1018,6 +1422,29 @@ export const products: Product[] = [
       '/images/products/seedream-webp/zprintpro-flyers-eco-flyers-ja-1.webp',
       '/images/products/seedream-webp/zprintpro-flyers-eco-flyers-ja-2.webp',
       '/images/products/seedream-webp/zprintpro-flyers-eco-flyers-ja-3.webp',
+      ],
+    },
+    variables: {
+      sizes: [
+        { value: 'a5', label: 'A5 (148×210mm)', multiplier: 0.65 },
+        { value: 'a4', label: 'A4 (210×297mm)', multiplier: 1 },
+        { value: 'a3', label: 'A3 (297×420mm)', multiplier: 1.8 },
+      ],
+      materials: [
+        { value: '128g', label: '128g銅版紙', surcharge: 0 },
+        { value: '157g', label: '157g銅版紙', surcharge: 15 },
+        { value: '200g', label: '200g厚紙', surcharge: 40 },
+      ],
+      finishings: [
+        { value: 'single', label: '單面印刷', surcharge: 0 },
+        { value: 'double', label: '雙面印刷', surcharge: 20 },
+        { value: 'fold', label: '摺疊', surcharge: 35 },
+      ],
+      quantities: [
+        { value: 100, label: '100張', discount: 1 },
+        { value: 500, label: '500張', discount: 0.8 },
+        { value: 1000, label: '1000張', discount: 0.65 },
+        { value: 5000, label: '5000張', discount: 0.5 },
       ],
     },
     seoImages: {
@@ -1157,6 +1584,28 @@ export const products: Product[] = [
       '/images/products/seedream-webp/zprintpro-posters-a1-posters-ja-4.webp',
       ],
     },
+    variables: {
+      sizes: [
+        { value: 'a2', label: 'A2 (420×594mm)', multiplier: 1 },
+        { value: 'a1', label: 'A1 (594×841mm)', multiplier: 1.8 },
+        { value: 'a0', label: 'A0 (841×1189mm)', multiplier: 3.2 },
+      ],
+      materials: [
+        { value: '157g', label: '157g銅版紙', surcharge: 0 },
+        { value: '200g', label: '200g厚紙', surcharge: 50 },
+        { value: 'photo', label: '相紙', surcharge: 80 },
+      ],
+      finishings: [
+        { value: 'none', label: '無', surcharge: 0 },
+        { value: 'pp', label: 'PP護膜', surcharge: 30 },
+        { value: 'foam', label: '泡沫板裱貼', surcharge: 60 },
+      ],
+      quantities: [
+        { value: 100, label: '100張', discount: 1 },
+        { value: 500, label: '500張', discount: 0.85 },
+        { value: 1000, label: '1000張', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-posters-a1-posters-zh-hk.jpg', en: 'zprintpro-posters-a1-posters-en.jpg', ja: 'zprintpro-posters-a1-posters-ja.jpg' },
       alt: { 'zh-hk': '香港A1大幅海報印刷 HK$20-70/張 起｜A1大尺寸，視覺衝擊力強。適合展覽、會場佈置。｜ZprintPro智印港', en: 'A1 Large Posters Printing Hong Kong HK$20-70/張｜A1 large size, strong visual impact｜ZprintPro', ja: '香港A1大型ポスター HK$20-70/張｜A1大きなサイズ、強い視覚的インパクト。展示会、会｜ZprintPro' },
@@ -1193,6 +1642,28 @@ export const products: Product[] = [
 
       ],
     },
+    variables: {
+      sizes: [
+        { value: 'a2', label: 'A2 (420×594mm)', multiplier: 1 },
+        { value: 'a1', label: 'A1 (594×841mm)', multiplier: 1.8 },
+        { value: 'a0', label: 'A0 (841×1189mm)', multiplier: 3.2 },
+      ],
+      materials: [
+        { value: '157g', label: '157g銅版紙', surcharge: 0 },
+        { value: '200g', label: '200g厚紙', surcharge: 50 },
+        { value: 'photo', label: '相紙', surcharge: 80 },
+      ],
+      finishings: [
+        { value: 'none', label: '無', surcharge: 0 },
+        { value: 'pp', label: 'PP護膜', surcharge: 30 },
+        { value: 'foam', label: '泡沫板裱貼', surcharge: 60 },
+      ],
+      quantities: [
+        { value: 100, label: '100張', discount: 1 },
+        { value: 500, label: '500張', discount: 0.85 },
+        { value: 1000, label: '1000張', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-posters-outdoor-posters-zh-hk.jpg', en: 'zprintpro-posters-outdoor-posters-en.jpg', ja: 'zprintpro-posters-outdoor-posters-ja.jpg' },
       alt: { 'zh-hk': '香港戶外海報印刷 HK$16-55/張 起｜防水防曬材質，戶外使用不褪色。適合戶外廣告、建築圍｜ZprintPro智印港', en: 'Outdoor Posters Printing Hong Kong HK$16-55/張｜Waterproof and UV-resistant materia｜ZprintPro', ja: '香港屋外ポスター HK$16-55/張｜防水・UV耐性素材、屋外使用でも色褪せません。｜ZprintPro' },
@@ -1213,6 +1684,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/display-posters.jpg'],
+    variables: {
+      sizes: [
+        { value: 'a2', label: 'A2 (420×594mm)', multiplier: 1 },
+        { value: 'a1', label: 'A1 (594×841mm)', multiplier: 1.8 },
+        { value: 'a0', label: 'A0 (841×1189mm)', multiplier: 3.2 },
+      ],
+      materials: [
+        { value: '157g', label: '157g銅版紙', surcharge: 0 },
+        { value: '200g', label: '200g厚紙', surcharge: 50 },
+        { value: 'photo', label: '相紙', surcharge: 80 },
+      ],
+      finishings: [
+        { value: 'none', label: '無', surcharge: 0 },
+        { value: 'pp', label: 'PP護膜', surcharge: 30 },
+        { value: 'foam', label: '泡沫板裱貼', surcharge: 60 },
+      ],
+      quantities: [
+        { value: 100, label: '100張', discount: 1 },
+        { value: 500, label: '500張', discount: 0.85 },
+        { value: 1000, label: '1000張', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-posters-display-posters-zh-hk.jpg', en: 'zprintpro-posters-display-posters-en.jpg', ja: 'zprintpro-posters-display-posters-ja.jpg' },
       alt: { 'zh-hk': '香港展架海報印刷 HK$32-100/套 起｜配合X展架或易拉寶使用，便攜易裝。展會、路演必備。｜ZprintPro智印港', en: 'Display Posters Printing Hong Kong HK$32-100/套｜Compatible with X-stands or roll-up｜ZprintPro', ja: '香港展示用ポスター HK$32-100/套｜Xスタンドまたはロールアップバナーと互換、持ち運び｜ZprintPro' },
@@ -1233,6 +1726,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/art-posters.jpg'],
+    variables: {
+      sizes: [
+        { value: 'a2', label: 'A2 (420×594mm)', multiplier: 1 },
+        { value: 'a1', label: 'A1 (594×841mm)', multiplier: 1.8 },
+        { value: 'a0', label: 'A0 (841×1189mm)', multiplier: 3.2 },
+      ],
+      materials: [
+        { value: '157g', label: '157g銅版紙', surcharge: 0 },
+        { value: '200g', label: '200g厚紙', surcharge: 50 },
+        { value: 'photo', label: '相紙', surcharge: 80 },
+      ],
+      finishings: [
+        { value: 'none', label: '無', surcharge: 0 },
+        { value: 'pp', label: 'PP護膜', surcharge: 30 },
+        { value: 'foam', label: '泡沫板裱貼', surcharge: 60 },
+      ],
+      quantities: [
+        { value: 100, label: '100張', discount: 1 },
+        { value: 500, label: '500張', discount: 0.85 },
+        { value: 1000, label: '1000張', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-posters-art-posters-zh-hk.jpg', en: 'zprintpro-posters-art-posters-en.jpg', ja: 'zprintpro-posters-art-posters-ja.jpg' },
       alt: { 'zh-hk': '香港藝術海報印刷 HK$26-85/張 起｜高級藝術紙張，色彩還原度高。適合藝術展覽、攝影作品｜ZprintPro智印港', en: 'Art Posters Printing Hong Kong HK$26-85/張｜Premium art paper, high color accur｜ZprintPro', ja: '香港アートポスター HK$26-85/張｜高級アート紙、高い色再現性。美術展、写真作品に最適｜ZprintPro' },
@@ -1317,6 +1832,29 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/cosmetic-boxes.jpg'],
+    variables: {
+      sizes: [
+        { value: 'small', label: '小號(100×80×50mm)', multiplier: 1 },
+        { value: 'medium', label: '中號(150×120×80mm)', multiplier: 1.6 },
+        { value: 'large', label: '大號(200×180×100mm)', multiplier: 2.5 },
+      ],
+      materials: [
+        { value: 'white-card', label: '白卡紙', surcharge: 0 },
+        { value: 'kraft', label: '牛皮紙', surcharge: 10 },
+        { value: 'rigid', label: '硬紙板', surcharge: 80 },
+      ],
+      finishings: [
+        { value: 'none', label: '無', surcharge: 0 },
+        { value: 'foil', label: '燙金', surcharge: 60 },
+        { value: 'uv', label: 'UV', surcharge: 50 },
+        { value: 'emboss', label: '擊凸', surcharge: 70 },
+      ],
+      quantities: [
+        { value: 100, label: '100個', discount: 1 },
+        { value: 500, label: '500個', discount: 0.85 },
+        { value: 1000, label: '1000個', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-packaging-cosmetic-boxes-zh-hk.jpg', en: 'zprintpro-packaging-cosmetic-boxes-en.jpg', ja: 'zprintpro-packaging-cosmetic-boxes-ja.jpg' },
       alt: { 'zh-hk': '香港化妝品盒印刷 HK$6-32/個 起｜專為化妝品設計，內托可定制。適合護膚品、彩妝品牌。｜ZprintPro智印港', en: 'Cosmetic Boxes Printing Hong Kong HK$6-32/個｜Specially designed for cosmetics, c｜ZprintPro', ja: '香港化粧品箱 HK$6-32/個｜化粧品専用設計、カスタマイズ可能な内側トレイ。｜ZprintPro' },
@@ -1337,6 +1875,29 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/food-boxes.jpg'],
+    variables: {
+      sizes: [
+        { value: 'small', label: '小號(100×80×50mm)', multiplier: 1 },
+        { value: 'medium', label: '中號(150×120×80mm)', multiplier: 1.6 },
+        { value: 'large', label: '大號(200×180×100mm)', multiplier: 2.5 },
+      ],
+      materials: [
+        { value: 'white-card', label: '白卡紙', surcharge: 0 },
+        { value: 'kraft', label: '牛皮紙', surcharge: 10 },
+        { value: 'rigid', label: '硬紙板', surcharge: 80 },
+      ],
+      finishings: [
+        { value: 'none', label: '無', surcharge: 0 },
+        { value: 'foil', label: '燙金', surcharge: 60 },
+        { value: 'uv', label: 'UV', surcharge: 50 },
+        { value: 'emboss', label: '擊凸', surcharge: 70 },
+      ],
+      quantities: [
+        { value: 100, label: '100個', discount: 1 },
+        { value: 500, label: '500個', discount: 0.85 },
+        { value: 1000, label: '1000個', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-packaging-food-boxes-zh-hk.jpg', en: 'zprintpro-packaging-food-boxes-en.jpg', ja: 'zprintpro-packaging-food-boxes-ja.jpg' },
       alt: { 'zh-hk': '香港食品包裝盒印刷 HK$2.5-18/個 起｜食品級材質，安全環保。適合糕點、茶葉、保健品。｜ZprintPro智印港', en: 'Food Boxes Printing Hong Kong HK$2.5-18/個｜Food-grade material, safe and eco-f｜ZprintPro', ja: '香港食品包装箱 HK$2.5-18/個｜食品グレード素材、安全で環境に優しい。｜ZprintPro' },
@@ -1357,6 +1918,29 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/mailer-boxes.jpg'],
+    variables: {
+      sizes: [
+        { value: 'small', label: '小號(100×80×50mm)', multiplier: 1 },
+        { value: 'medium', label: '中號(150×120×80mm)', multiplier: 1.6 },
+        { value: 'large', label: '大號(200×180×100mm)', multiplier: 2.5 },
+      ],
+      materials: [
+        { value: 'white-card', label: '白卡紙', surcharge: 0 },
+        { value: 'kraft', label: '牛皮紙', surcharge: 10 },
+        { value: 'rigid', label: '硬紙板', surcharge: 80 },
+      ],
+      finishings: [
+        { value: 'none', label: '無', surcharge: 0 },
+        { value: 'foil', label: '燙金', surcharge: 60 },
+        { value: 'uv', label: 'UV', surcharge: 50 },
+        { value: 'emboss', label: '擊凸', surcharge: 70 },
+      ],
+      quantities: [
+        { value: 100, label: '100個', discount: 1 },
+        { value: 500, label: '500個', discount: 0.85 },
+        { value: 1000, label: '1000個', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-packaging-mailer-boxes-zh-hk.jpg', en: 'zprintpro-packaging-mailer-boxes-en.jpg', ja: 'zprintpro-packaging-mailer-boxes-ja.jpg' },
       alt: { 'zh-hk': '香港快遞盒/飛機盒印刷 HK$1.8-10/個 起｜堅固耐用，電商發貨首選。可印品牌Logo，提升開箱｜ZprintPro智印港', en: 'Mailer Boxes Printing Hong Kong HK$1.8-10/個｜Sturdy and durable, first choice fo｜ZprintPro', ja: '香港発送箱 HK$1.8-10/個｜頑丈で耐久性があり、EC発送の第一選択。｜ZprintPro' },
@@ -1377,6 +1961,29 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/folding-boxes.jpg'],
+    variables: {
+      sizes: [
+        { value: 'small', label: '小號(100×80×50mm)', multiplier: 1 },
+        { value: 'medium', label: '中號(150×120×80mm)', multiplier: 1.6 },
+        { value: 'large', label: '大號(200×180×100mm)', multiplier: 2.5 },
+      ],
+      materials: [
+        { value: 'white-card', label: '白卡紙', surcharge: 0 },
+        { value: 'kraft', label: '牛皮紙', surcharge: 10 },
+        { value: 'rigid', label: '硬紙板', surcharge: 80 },
+      ],
+      finishings: [
+        { value: 'none', label: '無', surcharge: 0 },
+        { value: 'foil', label: '燙金', surcharge: 60 },
+        { value: 'uv', label: 'UV', surcharge: 50 },
+        { value: 'emboss', label: '擊凸', surcharge: 70 },
+      ],
+      quantities: [
+        { value: 100, label: '100個', discount: 1 },
+        { value: 500, label: '500個', discount: 0.85 },
+        { value: 1000, label: '1000個', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-packaging-folding-boxes-zh-hk.jpg', en: 'zprintpro-packaging-folding-boxes-en.jpg', ja: 'zprintpro-packaging-folding-boxes-ja.jpg' },
       alt: { 'zh-hk': '香港折疊盒印刷 HK$2.5-15/個 起｜可折疊設計，節省倉儲空間。適合大量存貨的電商賣家。｜ZprintPro智印港', en: 'Folding Boxes Printing Hong Kong HK$2.5-15/個｜Foldable design, saves warehouse sp｜ZprintPro', ja: '香港折りたたみ箱 HK$2.5-15/個｜折りたたみ可能なデザイン、倉庫スペースを節約。｜ZprintPro' },
@@ -1397,6 +2004,29 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/rigid-boxes.jpg'],
+    variables: {
+      sizes: [
+        { value: 'small', label: '小號(100×80×50mm)', multiplier: 1 },
+        { value: 'medium', label: '中號(150×120×80mm)', multiplier: 1.6 },
+        { value: 'large', label: '大號(200×180×100mm)', multiplier: 2.5 },
+      ],
+      materials: [
+        { value: 'white-card', label: '白卡紙', surcharge: 0 },
+        { value: 'kraft', label: '牛皮紙', surcharge: 10 },
+        { value: 'rigid', label: '硬紙板', surcharge: 80 },
+      ],
+      finishings: [
+        { value: 'none', label: '無', surcharge: 0 },
+        { value: 'foil', label: '燙金', surcharge: 60 },
+        { value: 'uv', label: 'UV', surcharge: 50 },
+        { value: 'emboss', label: '擊凸', surcharge: 70 },
+      ],
+      quantities: [
+        { value: 100, label: '100個', discount: 1 },
+        { value: 500, label: '500個', discount: 0.85 },
+        { value: 1000, label: '1000個', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-packaging-rigid-boxes-zh-hk.jpg', en: 'zprintpro-packaging-rigid-boxes-en.jpg', ja: 'zprintpro-packaging-rigid-boxes-ja.jpg' },
       alt: { 'zh-hk': '香港精裝盒印刷 HK$8-42/個 起｜硬殼精裝，高檔奢華。適合高端產品、限量版商品。｜ZprintPro智印港', en: 'Rigid Boxes Printing Hong Kong HK$8-42/個｜Hardcover rigid construction, luxur｜ZprintPro', ja: '香港上製本箱 HK$8-42/個｜硬い上製本構造、豪華でプレミアム。｜ZprintPro' },
@@ -1438,6 +2068,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/embossed-red-packets.jpg'],
+    variables: {
+      sizes: [
+        { value: 'standard', label: '標準 (90×170mm)', multiplier: 1 },
+        { value: 'large', label: '大號 (100×190mm)', multiplier: 1.3 },
+        { value: 'premium', label: '豪華 (120×220mm)', multiplier: 1.8 },
+      ],
+      materials: [
+        { value: '128g', label: '128g紅紙', surcharge: 0 },
+        { value: '157g', label: '157g厚紅紙', surcharge: 15 },
+        { value: 'special', label: '特種紙', surcharge: 40 },
+      ],
+      finishings: [
+        { value: 'none', label: '燙金', surcharge: 0 },
+        { value: 'foil', label: '燙金浮雕', surcharge: 50 },
+        { value: 'emboss', label: '立體燙金', surcharge: 100 },
+      ],
+      quantities: [
+        { value: 100, label: '100個', discount: 1 },
+        { value: 500, label: '500個', discount: 0.85 },
+        { value: 1000, label: '1000個', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-red-packets-embossed-red-packets-zh-hk.jpg', en: 'zprintpro-red-packets-embossed-red-packets-en.jpg', ja: 'zprintpro-red-packets-embossed-red-packets-ja.jpg' },
       alt: { 'zh-hk': '香港浮雕利是封印刷 HK$3.00-9.50/個 起｜浮雕工藝，立體觸感，高檔奢華。展現品牌誠意，適合V｜ZprintPro智印港', en: 'Embossed Red Packets Printing Hong Kong HK$3.00-9.50/個｜Embossed craftsmanship, dimensional｜ZprintPro', ja: '香港エンボスポチ袋 HK$3.00-9.50/個｜エンボス加工、立体的な触感、豪華な質感。｜ZprintPro' },
@@ -1458,6 +2110,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/custom-red-packets.jpg'],
+    variables: {
+      sizes: [
+        { value: 'standard', label: '標準 (90×170mm)', multiplier: 1 },
+        { value: 'large', label: '大號 (100×190mm)', multiplier: 1.3 },
+        { value: 'premium', label: '豪華 (120×220mm)', multiplier: 1.8 },
+      ],
+      materials: [
+        { value: '128g', label: '128g紅紙', surcharge: 0 },
+        { value: '157g', label: '157g厚紅紙', surcharge: 15 },
+        { value: 'special', label: '特種紙', surcharge: 40 },
+      ],
+      finishings: [
+        { value: 'none', label: '燙金', surcharge: 0 },
+        { value: 'foil', label: '燙金浮雕', surcharge: 50 },
+        { value: 'emboss', label: '立體燙金', surcharge: 100 },
+      ],
+      quantities: [
+        { value: 100, label: '100個', discount: 1 },
+        { value: 500, label: '500個', discount: 0.85 },
+        { value: 1000, label: '1000個', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-red-packets-custom-red-packets-zh-hk.jpg', en: 'zprintpro-red-packets-custom-red-packets-en.jpg', ja: 'zprintpro-red-packets-custom-red-packets-ja.jpg' },
       alt: { 'zh-hk': '香港定制利是封印刷 HK$1.90-6.40/個 起｜專屬設計，印上公司Logo和祝福語。強化品牌印象，｜ZprintPro智印港', en: 'Custom Red Packets Printing Hong Kong HK$1.90-6.40/個｜Exclusive design with company logo ｜ZprintPro', ja: '香港オリジナルポチ袋 HK$1.90-6.40/個｜独占的なデザイン、会社ロゴと祝福の言葉。ブランドイ｜ZprintPro' },
@@ -1478,6 +2152,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/cartoon-red-packets.jpg'],
+    variables: {
+      sizes: [
+        { value: 'standard', label: '標準 (90×170mm)', multiplier: 1 },
+        { value: 'large', label: '大號 (100×190mm)', multiplier: 1.3 },
+        { value: 'premium', label: '豪華 (120×220mm)', multiplier: 1.8 },
+      ],
+      materials: [
+        { value: '128g', label: '128g紅紙', surcharge: 0 },
+        { value: '157g', label: '157g厚紅紙', surcharge: 15 },
+        { value: 'special', label: '特種紙', surcharge: 40 },
+      ],
+      finishings: [
+        { value: 'none', label: '燙金', surcharge: 0 },
+        { value: 'foil', label: '燙金浮雕', surcharge: 50 },
+        { value: 'emboss', label: '立體燙金', surcharge: 100 },
+      ],
+      quantities: [
+        { value: 100, label: '100個', discount: 1 },
+        { value: 500, label: '500個', discount: 0.85 },
+        { value: 1000, label: '1000個', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-red-packets-cartoon-red-packets-zh-hk.jpg', en: 'zprintpro-red-packets-cartoon-red-packets-en.jpg', ja: 'zprintpro-red-packets-cartoon-red-packets-ja.jpg' },
       alt: { 'zh-hk': '香港卡通利是封印刷 HK$1.10-3.80/個 起｜可愛卡通設計，深受年輕人喜愛。適合親子品牌、教育機｜ZprintPro智印港', en: 'Cartoon Red Packets Printing Hong Kong HK$1.10-3.80/個｜Cute cartoon design, loved by young｜ZprintPro', ja: '香港キャラクターポチ袋 HK$1.10-3.80/個｜かわいいキャラクターデザイン、若者に人気。｜ZprintPro' },
@@ -1498,6 +2194,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/eco-red-packets.jpg'],
+    variables: {
+      sizes: [
+        { value: 'standard', label: '標準 (90×170mm)', multiplier: 1 },
+        { value: 'large', label: '大號 (100×190mm)', multiplier: 1.3 },
+        { value: 'premium', label: '豪華 (120×220mm)', multiplier: 1.8 },
+      ],
+      materials: [
+        { value: '128g', label: '128g紅紙', surcharge: 0 },
+        { value: '157g', label: '157g厚紅紙', surcharge: 15 },
+        { value: 'special', label: '特種紙', surcharge: 40 },
+      ],
+      finishings: [
+        { value: 'none', label: '燙金', surcharge: 0 },
+        { value: 'foil', label: '燙金浮雕', surcharge: 50 },
+        { value: 'emboss', label: '立體燙金', surcharge: 100 },
+      ],
+      quantities: [
+        { value: 100, label: '100個', discount: 1 },
+        { value: 500, label: '500個', discount: 0.85 },
+        { value: 1000, label: '1000個', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-red-packets-eco-red-packets-zh-hk.jpg', en: 'zprintpro-red-packets-eco-red-packets-en.jpg', ja: 'zprintpro-red-packets-eco-red-packets-ja.jpg' },
       alt: { 'zh-hk': '香港環保利是封印刷 HK$1.90-5.20/個 起｜採用環保紙張和油墨，可持續發展理念。適合注重環保的｜ZprintPro智印港', en: 'Eco Red Packets Printing Hong Kong HK$1.90-5.20/個｜Eco-friendly paper and ink, sustain｜ZprintPro', ja: '香港エコポチ袋 HK$1.90-5.20/個｜環境に優しい紙とインク、持続可能な開発の理念。｜ZprintPro' },
@@ -1518,6 +2236,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/large-red-packets.jpg'],
+    variables: {
+      sizes: [
+        { value: 'standard', label: '標準 (90×170mm)', multiplier: 1 },
+        { value: 'large', label: '大號 (100×190mm)', multiplier: 1.3 },
+        { value: 'premium', label: '豪華 (120×220mm)', multiplier: 1.8 },
+      ],
+      materials: [
+        { value: '128g', label: '128g紅紙', surcharge: 0 },
+        { value: '157g', label: '157g厚紅紙', surcharge: 15 },
+        { value: 'special', label: '特種紙', surcharge: 40 },
+      ],
+      finishings: [
+        { value: 'none', label: '燙金', surcharge: 0 },
+        { value: 'foil', label: '燙金浮雕', surcharge: 50 },
+        { value: 'emboss', label: '立體燙金', surcharge: 100 },
+      ],
+      quantities: [
+        { value: 100, label: '100個', discount: 1 },
+        { value: 500, label: '500個', discount: 0.85 },
+        { value: 1000, label: '1000個', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-red-packets-large-red-packets-zh-hk.jpg', en: 'zprintpro-red-packets-large-red-packets-en.jpg', ja: 'zprintpro-red-packets-large-red-packets-ja.jpg' },
       alt: { 'zh-hk': '香港大號利是封印刷 HK$2.20-7.50/個 起｜加大尺寸，可放入更多鈔票或禮品卡。實用大氣，送禮更｜ZprintPro智印港', en: 'Large Red Packets Printing Hong Kong HK$2.20-7.50/個｜Larger size, can hold more cash or ｜ZprintPro', ja: '香港大判ポチ袋 HK$2.20-7.50/個｜大きなサイズ、より多くの現金やギフトカードを入れら｜ZprintPro' },
@@ -1559,6 +2299,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/desk-calendars.jpg'],
+    variables: {
+      sizes: [
+        { value: 'a4', label: 'A4 (210×297mm)', multiplier: 1 },
+        { value: 'a3', label: 'A3 (297×420mm)', multiplier: 1.8 },
+        { value: 'desk', label: '座檯 (150×200mm)', multiplier: 0.6 },
+      ],
+      materials: [
+        { value: '157g', label: '157g銅版紙', surcharge: 0 },
+        { value: '200g', label: '200g厚紙', surcharge: 20 },
+        { value: '250g', label: '250g卡紙', surcharge: 40 },
+      ],
+      finishings: [
+        { value: 'saddle', label: '騎馬釘', surcharge: 0 },
+        { value: 'spiral', label: '鐵圈裝', surcharge: 15 },
+        { value: 'perfect', label: '膠裝', surcharge: 20 },
+      ],
+      quantities: [
+        { value: 50, label: '50本', discount: 1 },
+        { value: 100, label: '100本', discount: 0.85 },
+        { value: 500, label: '500本', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-calendars-desk-calendars-zh-hk.jpg', en: 'zprintpro-calendars-desk-calendars-en.jpg', ja: 'zprintpro-calendars-desk-calendars-ja.jpg' },
       alt: { 'zh-hk': '香港座檯年曆印刷 HK$16-50/本 起｜三角形座檯設計，穩固美觀。適合辦公桌擺放，每日品牌｜ZprintPro智印港', en: 'Desk Calendars Printing Hong Kong HK$16-50/本｜Triangular desk design, stable and ｜ZprintPro', ja: '香港卓上カレンダー HK$16-50/本｜三角形の卓上デザイン、安定して美しい。オフィスデス｜ZprintPro' },
@@ -1579,6 +2341,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/custom-calendars.jpg'],
+    variables: {
+      sizes: [
+        { value: 'a4', label: 'A4 (210×297mm)', multiplier: 1 },
+        { value: 'a3', label: 'A3 (297×420mm)', multiplier: 1.8 },
+        { value: 'desk', label: '座檯 (150×200mm)', multiplier: 0.6 },
+      ],
+      materials: [
+        { value: '157g', label: '157g銅版紙', surcharge: 0 },
+        { value: '200g', label: '200g厚紙', surcharge: 20 },
+        { value: '250g', label: '250g卡紙', surcharge: 40 },
+      ],
+      finishings: [
+        { value: 'saddle', label: '騎馬釘', surcharge: 0 },
+        { value: 'spiral', label: '鐵圈裝', surcharge: 15 },
+        { value: 'perfect', label: '膠裝', surcharge: 20 },
+      ],
+      quantities: [
+        { value: 50, label: '50本', discount: 1 },
+        { value: 100, label: '100本', discount: 0.85 },
+        { value: 500, label: '500本', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-calendars-custom-calendars-zh-hk.jpg', en: 'zprintpro-calendars-custom-calendars-en.jpg', ja: 'zprintpro-calendars-custom-calendars-ja.jpg' },
       alt: { 'zh-hk': '香港定制年曆印刷 HK$20-65/本 起｜專屬設計，每頁可印公司產品或服務。企業禮品首選，送｜ZprintPro智印港', en: 'Custom Calendars Printing Hong Kong HK$20-65/本｜Exclusive design, each page can fea｜ZprintPro', ja: '香港オリジナルカレンダー HK$20-65/本｜独占的なデザイン、各ページに会社の製品やサービスを｜ZprintPro' },
@@ -1599,6 +2383,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/mini-calendars.jpg'],
+    variables: {
+      sizes: [
+        { value: 'a4', label: 'A4 (210×297mm)', multiplier: 1 },
+        { value: 'a3', label: 'A3 (297×420mm)', multiplier: 1.8 },
+        { value: 'desk', label: '座檯 (150×200mm)', multiplier: 0.6 },
+      ],
+      materials: [
+        { value: '157g', label: '157g銅版紙', surcharge: 0 },
+        { value: '200g', label: '200g厚紙', surcharge: 20 },
+        { value: '250g', label: '250g卡紙', surcharge: 40 },
+      ],
+      finishings: [
+        { value: 'saddle', label: '騎馬釘', surcharge: 0 },
+        { value: 'spiral', label: '鐵圈裝', surcharge: 15 },
+        { value: 'perfect', label: '膠裝', surcharge: 20 },
+      ],
+      quantities: [
+        { value: 50, label: '50本', discount: 1 },
+        { value: 100, label: '100本', discount: 0.85 },
+        { value: 500, label: '500本', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-calendars-mini-calendars-zh-hk.jpg', en: 'zprintpro-calendars-mini-calendars-en.jpg', ja: 'zprintpro-calendars-mini-calendars-ja.jpg' },
       alt: { 'zh-hk': '香港迷你年曆印刷 HK$6-20/本 起｜小巧便攜，可放入錢包或口袋。創意禮品，年輕人喜愛。｜ZprintPro智印港', en: 'Mini Calendars Printing Hong Kong HK$6-20/本｜Compact and portable, fits in walle｜ZprintPro', ja: '香港ミニカレンダー HK$6-20/本｜コンパクトで持ち運び可能、財布やポケットに入ります｜ZprintPro' },
@@ -1619,6 +2425,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/photo-frame-calendars.jpg'],
+    variables: {
+      sizes: [
+        { value: 'a4', label: 'A4 (210×297mm)', multiplier: 1 },
+        { value: 'a3', label: 'A3 (297×420mm)', multiplier: 1.8 },
+        { value: 'desk', label: '座檯 (150×200mm)', multiplier: 0.6 },
+      ],
+      materials: [
+        { value: '157g', label: '157g銅版紙', surcharge: 0 },
+        { value: '200g', label: '200g厚紙', surcharge: 20 },
+        { value: '250g', label: '250g卡紙', surcharge: 40 },
+      ],
+      finishings: [
+        { value: 'saddle', label: '騎馬釘', surcharge: 0 },
+        { value: 'spiral', label: '鐵圈裝', surcharge: 15 },
+        { value: 'perfect', label: '膠裝', surcharge: 20 },
+      ],
+      quantities: [
+        { value: 50, label: '50本', discount: 1 },
+        { value: 100, label: '100本', discount: 0.85 },
+        { value: 500, label: '500本', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-calendars-photo-frame-calendars-zh-hk.jpg', en: 'zprintpro-calendars-photo-frame-calendars-en.jpg', ja: 'zprintpro-calendars-photo-frame-calendars-ja.jpg' },
       alt: { 'zh-hk': '香港相框年曆印刷 HK$24-80/本 起｜結合相框功能，可替換照片。實用美觀，家庭必備。｜ZprintPro智印港', en: 'Photo Frame Calendars Printing Hong Kong HK$24-80/本｜Combined photo frame function, phot｜ZprintPro', ja: '香港フォトフレームカレンダー HK$24-80/本｜フォトフレーム機能付き、写真を交換可能。｜ZprintPro' },
@@ -1639,6 +2467,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/magnetic-calendars.jpg'],
+    variables: {
+      sizes: [
+        { value: 'a4', label: 'A4 (210×297mm)', multiplier: 1 },
+        { value: 'a3', label: 'A3 (297×420mm)', multiplier: 1.8 },
+        { value: 'desk', label: '座檯 (150×200mm)', multiplier: 0.6 },
+      ],
+      materials: [
+        { value: '157g', label: '157g銅版紙', surcharge: 0 },
+        { value: '200g', label: '200g厚紙', surcharge: 20 },
+        { value: '250g', label: '250g卡紙', surcharge: 40 },
+      ],
+      finishings: [
+        { value: 'saddle', label: '騎馬釘', surcharge: 0 },
+        { value: 'spiral', label: '鐵圈裝', surcharge: 15 },
+        { value: 'perfect', label: '膠裝', surcharge: 20 },
+      ],
+      quantities: [
+        { value: 50, label: '50本', discount: 1 },
+        { value: 100, label: '100本', discount: 0.85 },
+        { value: 500, label: '500本', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-calendars-magnetic-calendars-zh-hk.jpg', en: 'zprintpro-calendars-magnetic-calendars-en.jpg', ja: 'zprintpro-calendars-magnetic-calendars-ja.jpg' },
       alt: { 'zh-hk': '香港磁石年曆印刷 HK$10-30/本 起｜磁石背膠，可貼於冰箱等金屬表面。每日多次接觸，品牌｜ZprintPro智印港', en: 'Magnetic Calendars Printing Hong Kong HK$10-30/本｜Magnetic backing, can stick to refr｜ZprintPro', ja: '香港マグネットカレンダー HK$10-30/本｜マグネット背面、冷蔵庫などの金属面に貼付可能。｜ZprintPro' },
@@ -1680,6 +2530,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/laminated-menus.jpg'],
+    variables: {
+      sizes: [
+        { value: 'a4', label: 'A4 (210×297mm)', multiplier: 1 },
+        { value: 'a5', label: 'A5 (148×210mm)', multiplier: 0.7 },
+        { value: 'dl', label: 'DL (99×210mm)', multiplier: 0.5 },
+      ],
+      materials: [
+        { value: '157g', label: '157g銅版紙', surcharge: 0 },
+        { value: '200g', label: '200g厚紙', surcharge: 20 },
+        { value: '300g', label: '300g卡紙', surcharge: 50 },
+      ],
+      finishings: [
+        { value: 'single', label: '單面', surcharge: 0 },
+        { value: 'double', label: '雙面', surcharge: 15 },
+        { value: 'laminate', label: '過膠', surcharge: 25 },
+      ],
+      quantities: [
+        { value: 50, label: '50張', discount: 1 },
+        { value: 100, label: '100張', discount: 0.85 },
+        { value: 500, label: '500張', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-menus-laminated-menus-zh-hk.jpg', en: 'zprintpro-menus-laminated-menus-en.jpg', ja: 'zprintpro-menus-laminated-menus-ja.jpg' },
       alt: { 'zh-hk': '香港過膠餐牌印刷 HK$5-22/張 起｜紙質過膠處理，防水耐用且成本較低。經濟實惠之選。｜ZprintPro智印港', en: 'Laminated Menus Printing Hong Kong HK$5-22/張｜Paper with lamination, waterproof a｜ZprintPro', ja: '香港ラミネートメニュー HK$5-22/張｜ラミネート加工紙、防水で耐久性がありコストも低い。｜ZprintPro' },
@@ -1700,6 +2572,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/hardcover-menus.jpg'],
+    variables: {
+      sizes: [
+        { value: 'a4', label: 'A4 (210×297mm)', multiplier: 1 },
+        { value: 'a5', label: 'A5 (148×210mm)', multiplier: 0.7 },
+        { value: 'dl', label: 'DL (99×210mm)', multiplier: 0.5 },
+      ],
+      materials: [
+        { value: '157g', label: '157g銅版紙', surcharge: 0 },
+        { value: '200g', label: '200g厚紙', surcharge: 20 },
+        { value: '300g', label: '300g卡紙', surcharge: 50 },
+      ],
+      finishings: [
+        { value: 'single', label: '單面', surcharge: 0 },
+        { value: 'double', label: '雙面', surcharge: 15 },
+        { value: 'laminate', label: '過膠', surcharge: 25 },
+      ],
+      quantities: [
+        { value: 50, label: '50張', discount: 1 },
+        { value: 100, label: '100張', discount: 0.85 },
+        { value: 500, label: '500張', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-menus-hardcover-menus-zh-hk.jpg', en: 'zprintpro-menus-hardcover-menus-en.jpg', ja: 'zprintpro-menus-hardcover-menus-ja.jpg' },
       alt: { 'zh-hk': '香港精裝餐牌印刷 HK$28-120/本 起｜硬殼精裝，高檔大氣。適合高級餐廳、酒店。｜ZprintPro智印港', en: 'Hardcover Menus Printing Hong Kong HK$28-120/本｜Hardcover binding, elegant and gran｜ZprintPro', ja: '香港高級メニュー HK$28-120/本｜上製本装丁、エレガントで格式高い。高級レストラン、｜ZprintPro' },
@@ -1720,6 +2614,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/drink-menus.jpg'],
+    variables: {
+      sizes: [
+        { value: 'a4', label: 'A4 (210×297mm)', multiplier: 1 },
+        { value: 'a5', label: 'A5 (148×210mm)', multiplier: 0.7 },
+        { value: 'dl', label: 'DL (99×210mm)', multiplier: 0.5 },
+      ],
+      materials: [
+        { value: '157g', label: '157g銅版紙', surcharge: 0 },
+        { value: '200g', label: '200g厚紙', surcharge: 20 },
+        { value: '300g', label: '300g卡紙', surcharge: 50 },
+      ],
+      finishings: [
+        { value: 'single', label: '單面', surcharge: 0 },
+        { value: 'double', label: '雙面', surcharge: 15 },
+        { value: 'laminate', label: '過膠', surcharge: 25 },
+      ],
+      quantities: [
+        { value: 50, label: '50張', discount: 1 },
+        { value: 100, label: '100張', discount: 0.85 },
+        { value: 500, label: '500張', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-menus-drink-menus-zh-hk.jpg', en: 'zprintpro-menus-drink-menus-en.jpg', ja: 'zprintpro-menus-drink-menus-ja.jpg' },
       alt: { 'zh-hk': '香港酒水牌印刷 HK$12-48/張 起｜專為酒水設計，可立式或手持。酒吧、餐廳必備。｜ZprintPro智印港', en: 'Drink Menus Printing Hong Kong HK$12-48/張｜Specially designed for drinks, can ｜ZprintPro', ja: '香港ドリンクメニュー HK$12-48/張｜ドリンク専用設計、立てかけまたは手持ち可能。｜ZprintPro' },
@@ -1740,6 +2656,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/disposable-menus.jpg'],
+    variables: {
+      sizes: [
+        { value: 'a4', label: 'A4 (210×297mm)', multiplier: 1 },
+        { value: 'a5', label: 'A5 (148×210mm)', multiplier: 0.7 },
+        { value: 'dl', label: 'DL (99×210mm)', multiplier: 0.5 },
+      ],
+      materials: [
+        { value: '157g', label: '157g銅版紙', surcharge: 0 },
+        { value: '200g', label: '200g厚紙', surcharge: 20 },
+        { value: '300g', label: '300g卡紙', surcharge: 50 },
+      ],
+      finishings: [
+        { value: 'single', label: '單面', surcharge: 0 },
+        { value: 'double', label: '雙面', surcharge: 15 },
+        { value: 'laminate', label: '過膠', surcharge: 25 },
+      ],
+      quantities: [
+        { value: 50, label: '50張', discount: 1 },
+        { value: 100, label: '100張', discount: 0.85 },
+        { value: 500, label: '500張', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-menus-disposable-menus-zh-hk.jpg', en: 'zprintpro-menus-disposable-menus-en.jpg', ja: 'zprintpro-menus-disposable-menus-ja.jpg' },
       alt: { 'zh-hk': '香港一次性餐牌印刷 HK$0.22-1.20/張 起｜經濟紙質，適合快餐店、外賣店。可頻繁更換內容。｜ZprintPro智印港', en: 'Disposable Menus Printing Hong Kong HK$0.22-1.20/張｜Economical paper, perfect for fast ｜ZprintPro', ja: '香港使い捨てメニュー HK$0.22-1.20/張｜経済的な紙、ファストフードやテイクアウト店に最適。｜ZprintPro' },
@@ -1781,6 +2719,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/roll-up-banners.jpg'],
+    variables: {
+      sizes: [
+        { value: 'small', label: '小號(850×2000mm)', multiplier: 1 },
+        { value: 'medium', label: '中號(1000×2500mm)', multiplier: 1.5 },
+        { value: 'large', label: '大號(1200×3000mm)', multiplier: 2.2 },
+      ],
+      materials: [
+        { value: 'vinyl', label: '防水帆布', surcharge: 0 },
+        { value: 'mesh', label: '網孔布', surcharge: 30 },
+        { value: 'fabric', label: '旗幟布', surcharge: 50 },
+      ],
+      finishings: [
+        { value: 'none', label: '無', surcharge: 0 },
+        { value: 'eyelets', label: '打孔', surcharge: 20 },
+        { value: 'pole-pocket', label: '穿杆袋', surcharge: 30 },
+      ],
+      quantities: [
+        { value: 1, label: '1張', discount: 1 },
+        { value: 5, label: '5張', discount: 0.8 },
+        { value: 10, label: '10張', discount: 0.65 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-banners-roll-up-banners-zh-hk.jpg', en: 'zprintpro-banners-roll-up-banners-en.jpg', ja: 'zprintpro-banners-roll-up-banners-ja.jpg' },
       alt: { 'zh-hk': '香港易拉寶印刷 HK$85-300/套 起｜便攜易拉寶展架，安裝簡便。展會、路演必備。｜ZprintPro智印港', en: 'Roll-up Banners Printing Hong Kong HK$85-300/套｜Portable roll-up banner stands, eas｜ZprintPro', ja: '香港ロールアップバナー HK$85-300/套｜ポータブルロールアップバナースタンド、設置簡単。展｜ZprintPro' },
@@ -1801,6 +2761,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/adhesive-banners.jpg'],
+    variables: {
+      sizes: [
+        { value: 'small', label: '小號(850×2000mm)', multiplier: 1 },
+        { value: 'medium', label: '中號(1000×2500mm)', multiplier: 1.5 },
+        { value: 'large', label: '大號(1200×3000mm)', multiplier: 2.2 },
+      ],
+      materials: [
+        { value: 'vinyl', label: '防水帆布', surcharge: 0 },
+        { value: 'mesh', label: '網孔布', surcharge: 30 },
+        { value: 'fabric', label: '旗幟布', surcharge: 50 },
+      ],
+      finishings: [
+        { value: 'none', label: '無', surcharge: 0 },
+        { value: 'eyelets', label: '打孔', surcharge: 20 },
+        { value: 'pole-pocket', label: '穿杆袋', surcharge: 30 },
+      ],
+      quantities: [
+        { value: 1, label: '1張', discount: 1 },
+        { value: 5, label: '5張', discount: 0.8 },
+        { value: 10, label: '10張', discount: 0.65 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-banners-adhesive-banners-zh-hk.jpg', en: 'zprintpro-banners-adhesive-banners-en.jpg', ja: 'zprintpro-banners-adhesive-banners-ja.jpg' },
       alt: { 'zh-hk': '香港背膠噴繪印刷 HK$10-45/平方米 起｜自帶背膠，可直接粘貼於牆面或玻璃。適合店鋪裝飾、活｜ZprintPro智印港', en: 'Adhesive Banners Printing Hong Kong HK$10-45/平方米｜Self-adhesive, can be directly appl｜ZprintPro', ja: '香港粘着バナー HK$10-45/平方米｜自己粘着、壁やガラスに直接貼付可能。｜ZprintPro' },
@@ -1821,6 +2803,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/vehicle-wraps.jpg'],
+    variables: {
+      sizes: [
+        { value: 'small', label: '小號(850×2000mm)', multiplier: 1 },
+        { value: 'medium', label: '中號(1000×2500mm)', multiplier: 1.5 },
+        { value: 'large', label: '大號(1200×3000mm)', multiplier: 2.2 },
+      ],
+      materials: [
+        { value: 'vinyl', label: '防水帆布', surcharge: 0 },
+        { value: 'mesh', label: '網孔布', surcharge: 30 },
+        { value: 'fabric', label: '旗幟布', surcharge: 50 },
+      ],
+      finishings: [
+        { value: 'none', label: '無', surcharge: 0 },
+        { value: 'eyelets', label: '打孔', surcharge: 20 },
+        { value: 'pole-pocket', label: '穿杆袋', surcharge: 30 },
+      ],
+      quantities: [
+        { value: 1, label: '1張', discount: 1 },
+        { value: 5, label: '5張', discount: 0.8 },
+        { value: 10, label: '10張', discount: 0.65 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-banners-vehicle-wraps-zh-hk.jpg', en: 'zprintpro-banners-vehicle-wraps-en.jpg', ja: 'zprintpro-banners-vehicle-wraps-ja.jpg' },
       alt: { 'zh-hk': '香港車身廣告印刷 HK$28-120/平方米 起｜專用車身貼紙，耐候性強，移除不留痕。流動廣告，曝光｜ZprintPro智印港', en: 'Vehicle Wraps Printing Hong Kong HK$28-120/平方米｜Specialized vehicle wrap vinyl, str｜ZprintPro', ja: '香港カーラッピング HK$28-120/平方米｜専用車体ラップビニール、強い耐候性、剥がしても残り｜ZprintPro' },
@@ -1841,6 +2845,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/mesh-banners.jpg'],
+    variables: {
+      sizes: [
+        { value: 'small', label: '小號(850×2000mm)', multiplier: 1 },
+        { value: 'medium', label: '中號(1000×2500mm)', multiplier: 1.5 },
+        { value: 'large', label: '大號(1200×3000mm)', multiplier: 2.2 },
+      ],
+      materials: [
+        { value: 'vinyl', label: '防水帆布', surcharge: 0 },
+        { value: 'mesh', label: '網孔布', surcharge: 30 },
+        { value: 'fabric', label: '旗幟布', surcharge: 50 },
+      ],
+      finishings: [
+        { value: 'none', label: '無', surcharge: 0 },
+        { value: 'eyelets', label: '打孔', surcharge: 20 },
+        { value: 'pole-pocket', label: '穿杆袋', surcharge: 30 },
+      ],
+      quantities: [
+        { value: 1, label: '1張', discount: 1 },
+        { value: 5, label: '5張', discount: 0.8 },
+        { value: 10, label: '10張', discount: 0.65 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-banners-mesh-banners-zh-hk.jpg', en: 'zprintpro-banners-mesh-banners-en.jpg', ja: 'zprintpro-banners-mesh-banners-ja.jpg' },
       alt: { 'zh-hk': '香港網格布噴繪印刷 HK$16-75/平方米 起｜網格設計，透光透風。適合大型戶外廣告、建築圍板。｜ZprintPro智印港', en: 'Mesh Banners Printing Hong Kong HK$16-75/平方米｜Mesh design, light and air permeabl｜ZprintPro', ja: '香港メッシュバナー HK$16-75/平方米｜メッシュデザイン、光と空気を通す。大型屋外広告に最｜ZprintPro' },
@@ -1882,6 +2908,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/saddle-stitch-booklets.jpg'],
+    variables: {
+      sizes: [
+        { value: 'a5', label: 'A5 (148×210mm)', multiplier: 1 },
+        { value: 'a4', label: 'A4 (210×297mm)', multiplier: 1.5 },
+        { value: 'b5', label: 'B5 (176×250mm)', multiplier: 1.3 },
+      ],
+      materials: [
+        { value: '80g', label: '80g書紙', surcharge: 0 },
+        { value: '100g', label: '100g書紙', surcharge: 20 },
+        { value: '128g', label: '128g銅版紙', surcharge: 40 },
+      ],
+      finishings: [
+        { value: 'saddle', label: '騎馬釘', surcharge: 0 },
+        { value: 'perfect', label: '膠裝', surcharge: 30 },
+        { value: 'hardcover', label: '精裝', surcharge: 100 },
+      ],
+      quantities: [
+        { value: 50, label: '50本', discount: 1 },
+        { value: 100, label: '100本', discount: 0.85 },
+        { value: 500, label: '500本', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-books-saddle-stitch-booklets-zh-hk.jpg', en: 'zprintpro-books-saddle-stitch-booklets-en.jpg', ja: 'zprintpro-books-saddle-stitch-booklets-ja.jpg' },
       alt: { 'zh-hk': '香港騎馬釘小冊子印刷 HK$6-32/本 起｜經濟裝訂方式，適合頁數較少的冊子。產品說明書、活動｜ZprintPro智印港', en: 'Saddle Stitch Booklets Printing Hong Kong HK$6-32/本｜Economical binding method, perfect ｜ZprintPro', ja: '香港中綴じ冊子 HK$6-32/本｜経済的な製本方法、ページ数の少ない冊子に最適。｜ZprintPro' },
@@ -1902,6 +2950,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/perfect-bound-books.jpg'],
+    variables: {
+      sizes: [
+        { value: 'a5', label: 'A5 (148×210mm)', multiplier: 1 },
+        { value: 'a4', label: 'A4 (210×297mm)', multiplier: 1.5 },
+        { value: 'b5', label: 'B5 (176×250mm)', multiplier: 1.3 },
+      ],
+      materials: [
+        { value: '80g', label: '80g書紙', surcharge: 0 },
+        { value: '100g', label: '100g書紙', surcharge: 20 },
+        { value: '128g', label: '128g銅版紙', surcharge: 40 },
+      ],
+      finishings: [
+        { value: 'saddle', label: '騎馬釘', surcharge: 0 },
+        { value: 'perfect', label: '膠裝', surcharge: 30 },
+        { value: 'hardcover', label: '精裝', surcharge: 100 },
+      ],
+      quantities: [
+        { value: 50, label: '50本', discount: 1 },
+        { value: 100, label: '100本', discount: 0.85 },
+        { value: 500, label: '500本', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-books-perfect-bound-books-zh-hk.jpg', en: 'zprintpro-books-perfect-bound-books-en.jpg', ja: 'zprintpro-books-perfect-bound-books-ja.jpg' },
       alt: { 'zh-hk': '香港無線膠裝書籍印刷 HK$16-80/本 起｜平整書脊，可印刷書名。適合頁數較多的書籍、雜誌。｜ZprintPro智印港', en: 'Perfect Bound Books Printing Hong Kong HK$16-80/本｜Flat spine, can print book title. P｜ZprintPro', ja: '香港無線綴じ本 HK$16-80/本｜平らな背表紙、書名を印刷可能。ページ数の多い本や雑｜ZprintPro' },
@@ -1922,6 +2992,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/hardcover-books.jpg'],
+    variables: {
+      sizes: [
+        { value: 'a5', label: 'A5 (148×210mm)', multiplier: 1 },
+        { value: 'a4', label: 'A4 (210×297mm)', multiplier: 1.5 },
+        { value: 'b5', label: 'B5 (176×250mm)', multiplier: 1.3 },
+      ],
+      materials: [
+        { value: '80g', label: '80g書紙', surcharge: 0 },
+        { value: '100g', label: '100g書紙', surcharge: 20 },
+        { value: '128g', label: '128g銅版紙', surcharge: 40 },
+      ],
+      finishings: [
+        { value: 'saddle', label: '騎馬釘', surcharge: 0 },
+        { value: 'perfect', label: '膠裝', surcharge: 30 },
+        { value: 'hardcover', label: '精裝', surcharge: 100 },
+      ],
+      quantities: [
+        { value: 50, label: '50本', discount: 1 },
+        { value: 100, label: '100本', discount: 0.85 },
+        { value: 500, label: '500本', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-books-hardcover-books-zh-hk.jpg', en: 'zprintpro-books-hardcover-books-en.jpg', ja: 'zprintpro-books-hardcover-books-ja.jpg' },
       alt: { 'zh-hk': '香港精裝書籍印刷 HK$40-240/本 起｜硬殼精裝，高檔耐用。適合珍藏版書籍、企業年鑑。｜ZprintPro智印港', en: 'Hardcover Books Printing Hong Kong HK$40-240/本｜Hardcover binding, luxurious and du｜ZprintPro', ja: '香港上製本 HK$40-240/本｜上製本装丁、豪華で耐久性あり。愛蔵版、企業年鑑に最｜ZprintPro' },
@@ -1942,6 +3034,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/spiral-notebooks.jpg'],
+    variables: {
+      sizes: [
+        { value: 'a5', label: 'A5 (148×210mm)', multiplier: 1 },
+        { value: 'a4', label: 'A4 (210×297mm)', multiplier: 1.5 },
+        { value: 'b5', label: 'B5 (176×250mm)', multiplier: 1.3 },
+      ],
+      materials: [
+        { value: '80g', label: '80g書紙', surcharge: 0 },
+        { value: '100g', label: '100g書紙', surcharge: 20 },
+        { value: '128g', label: '128g銅版紙', surcharge: 40 },
+      ],
+      finishings: [
+        { value: 'saddle', label: '騎馬釘', surcharge: 0 },
+        { value: 'perfect', label: '膠裝', surcharge: 30 },
+        { value: 'hardcover', label: '精裝', surcharge: 100 },
+      ],
+      quantities: [
+        { value: 50, label: '50本', discount: 1 },
+        { value: 100, label: '100本', discount: 0.85 },
+        { value: 500, label: '500本', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-books-spiral-notebooks-zh-hk.jpg', en: 'zprintpro-books-spiral-notebooks-en.jpg', ja: 'zprintpro-books-spiral-notebooks-ja.jpg' },
       alt: { 'zh-hk': '香港線圈筆記本印刷 HK$8-40/本 起｜線圈裝訂，可180度平攤。適合筆記本、工作手冊。｜ZprintPro智印港', en: 'Spiral Notebooks Printing Hong Kong HK$8-40/本｜Spiral binding, can lay flat at 180｜ZprintPro', ja: '香港リングノート HK$8-40/本｜スパイラル製本、180度に開く。ノート、ワークブッ｜ZprintPro' },
@@ -1983,6 +3097,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/colored-envelopes.jpg'],
+    variables: {
+      sizes: [
+        { value: 'dl', label: 'DL (110×220mm)', multiplier: 1 },
+        { value: 'c5', label: 'C5 (162×229mm)', multiplier: 1.3 },
+        { value: 'c4', label: 'C4 (229×324mm)', multiplier: 1.8 },
+      ],
+      materials: [
+        { value: '80g', label: '80g書紙', surcharge: 0 },
+        { value: '100g', label: '100g書紙', surcharge: 10 },
+        { value: '120g', label: '120g彩色紙', surcharge: 20 },
+      ],
+      finishings: [
+        { value: 'none', label: '無窗口', surcharge: 0 },
+        { value: 'window', label: '有窗口', surcharge: 15 },
+        { value: 'peel', label: '自黏封口', surcharge: 10 },
+      ],
+      quantities: [
+        { value: 100, label: '100個', discount: 1 },
+        { value: 500, label: '500個', discount: 0.85 },
+        { value: 1000, label: '1000個', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-envelopes-colored-envelopes-zh-hk.jpg', en: 'zprintpro-envelopes-colored-envelopes-en.jpg', ja: 'zprintpro-envelopes-colored-envelopes-ja.jpg' },
       alt: { 'zh-hk': '香港彩色信封印刷 HK$0.38-2.60/個 起｜彩色印刷，視覺吸引力強。適合邀請函、賀卡、營銷郵件｜ZprintPro智印港', en: 'Colored Envelopes Printing Hong Kong HK$0.38-2.60/個｜Colorful printing, strong visual ap｜ZprintPro', ja: '香港カラー封筒 HK$0.38-2.60/個｜カラフルな印刷、強い視覚的アピール。招待状、グリー｜ZprintPro' },
@@ -2003,6 +3139,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/large-envelopes.jpg'],
+    variables: {
+      sizes: [
+        { value: 'dl', label: 'DL (110×220mm)', multiplier: 1 },
+        { value: 'c5', label: 'C5 (162×229mm)', multiplier: 1.3 },
+        { value: 'c4', label: 'C4 (229×324mm)', multiplier: 1.8 },
+      ],
+      materials: [
+        { value: '80g', label: '80g書紙', surcharge: 0 },
+        { value: '100g', label: '100g書紙', surcharge: 10 },
+        { value: '120g', label: '120g彩色紙', surcharge: 20 },
+      ],
+      finishings: [
+        { value: 'none', label: '無窗口', surcharge: 0 },
+        { value: 'window', label: '有窗口', surcharge: 15 },
+        { value: 'peel', label: '自黏封口', surcharge: 10 },
+      ],
+      quantities: [
+        { value: 100, label: '100個', discount: 1 },
+        { value: 500, label: '500個', discount: 0.85 },
+        { value: 1000, label: '1000個', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-envelopes-large-envelopes-zh-hk.jpg', en: 'zprintpro-envelopes-large-envelopes-en.jpg', ja: 'zprintpro-envelopes-large-envelopes-ja.jpg' },
       alt: { 'zh-hk': '香港大號信封印刷 HK$0.60-3.40/個 起｜A4尺寸大信封，可裝入文件、合同。辦公室必備。｜ZprintPro智印港', en: 'Large Envelopes Printing Hong Kong HK$0.60-3.40/個｜A4 size large envelopes, can hold d｜ZprintPro', ja: '香港大判封筒 HK$0.60-3.40/個｜A4サイズの大きな封筒、書類や契約書を入れられます｜ZprintPro' },
@@ -2023,6 +3181,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/pearl-envelopes.jpg'],
+    variables: {
+      sizes: [
+        { value: 'dl', label: 'DL (110×220mm)', multiplier: 1 },
+        { value: 'c5', label: 'C5 (162×229mm)', multiplier: 1.3 },
+        { value: 'c4', label: 'C4 (229×324mm)', multiplier: 1.8 },
+      ],
+      materials: [
+        { value: '80g', label: '80g書紙', surcharge: 0 },
+        { value: '100g', label: '100g書紙', surcharge: 10 },
+        { value: '120g', label: '120g彩色紙', surcharge: 20 },
+      ],
+      finishings: [
+        { value: 'none', label: '無窗口', surcharge: 0 },
+        { value: 'window', label: '有窗口', surcharge: 15 },
+        { value: 'peel', label: '自黏封口', surcharge: 10 },
+      ],
+      quantities: [
+        { value: 100, label: '100個', discount: 1 },
+        { value: 500, label: '500個', discount: 0.85 },
+        { value: 1000, label: '1000個', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-envelopes-pearl-envelopes-zh-hk.jpg', en: 'zprintpro-envelopes-pearl-envelopes-en.jpg', ja: 'zprintpro-envelopes-pearl-envelopes-ja.jpg' },
       alt: { 'zh-hk': '香港珠光信封印刷 HK$1.15-5.20/個 起｜珠光紙張，閃耀質感。適合婚禮邀請、高端活動。｜ZprintPro智印港', en: 'Pearl Envelopes Printing Hong Kong HK$1.15-5.20/個｜Pearl paper, shimmering quality. Pe｜ZprintPro', ja: '香港パール封筒 HK$1.15-5.20/個｜パール紙、輝く質感。結婚式の招待状、高級イベントに｜ZprintPro' },
@@ -2064,6 +3244,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/certificates.jpg'],
+    variables: {
+      sizes: [
+        { value: 'a4', label: 'A4 (210×297mm)', multiplier: 1 },
+        { value: 'a3', label: 'A3 (297×420mm)', multiplier: 1.8 },
+        { value: 'b4', label: 'B4 (250×353mm)', multiplier: 1.5 },
+      ],
+      materials: [
+        { value: '80g', label: '80g書紙', surcharge: 0 },
+        { value: '100g', label: '100g書紙', surcharge: 10 },
+        { value: '120g', label: '120g彩色紙', surcharge: 20 },
+      ],
+      finishings: [
+        { value: 'none', label: '無', surcharge: 0 },
+        { value: 'staple', label: '釘裝', surcharge: 5 },
+        { value: 'perfect', label: '膠裝', surcharge: 15 },
+      ],
+      quantities: [
+        { value: 50, label: '50本', discount: 1 },
+        { value: 100, label: '100本', discount: 0.85 },
+        { value: 500, label: '500本', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-educational-certificates-zh-hk.jpg', en: 'zprintpro-educational-certificates-en.jpg', ja: 'zprintpro-educational-certificates-ja.jpg' },
       alt: { 'zh-hk': '香港證書印刷印刷 HK$8-40/張 起｜精美證書，配合燙金、壓紋等工藝。畢業證書、獎狀、資｜ZprintPro智印港', en: 'Certificates Printing Hong Kong HK$8-40/張｜Exquisite certificates with foil st｜ZprintPro', ja: '香港賞状印刷 HK$8-40/張｜精巧な賞状、箔押し・エンボスなどの加工付き。卒業証｜ZprintPro' },
@@ -2084,6 +3286,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/school-flyers.jpg'],
+    variables: {
+      sizes: [
+        { value: 'a4', label: 'A4 (210×297mm)', multiplier: 1 },
+        { value: 'a3', label: 'A3 (297×420mm)', multiplier: 1.8 },
+        { value: 'b4', label: 'B4 (250×353mm)', multiplier: 1.5 },
+      ],
+      materials: [
+        { value: '80g', label: '80g書紙', surcharge: 0 },
+        { value: '100g', label: '100g書紙', surcharge: 10 },
+        { value: '120g', label: '120g彩色紙', surcharge: 20 },
+      ],
+      finishings: [
+        { value: 'none', label: '無', surcharge: 0 },
+        { value: 'staple', label: '釘裝', surcharge: 5 },
+        { value: 'perfect', label: '膠裝', surcharge: 15 },
+      ],
+      quantities: [
+        { value: 50, label: '50本', discount: 1 },
+        { value: 100, label: '100本', discount: 0.85 },
+        { value: 500, label: '500本', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-educational-school-flyers-zh-hk.jpg', en: 'zprintpro-educational-school-flyers-en.jpg', ja: 'zprintpro-educational-school-flyers-ja.jpg' },
       alt: { 'zh-hk': '香港學校單張印刷 HK$0.2-0.8/張 起｜學校通告、活動宣傳單張。經濟實惠，大量印刷。｜ZprintPro智印港', en: 'School Flyers Printing Hong Kong HK$0.2-0.8/張｜School notices, event promotional f｜ZprintPro', ja: '香港学校チラシ HK$0.2-0.8/張｜学校の通知、イベント宣伝チラシ。経済的、大量印刷。｜ZprintPro' },
@@ -2104,6 +3328,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/textbooks.jpg'],
+    variables: {
+      sizes: [
+        { value: 'a4', label: 'A4 (210×297mm)', multiplier: 1 },
+        { value: 'a3', label: 'A3 (297×420mm)', multiplier: 1.8 },
+        { value: 'b4', label: 'B4 (250×353mm)', multiplier: 1.5 },
+      ],
+      materials: [
+        { value: '80g', label: '80g書紙', surcharge: 0 },
+        { value: '100g', label: '100g書紙', surcharge: 10 },
+        { value: '120g', label: '120g彩色紙', surcharge: 20 },
+      ],
+      finishings: [
+        { value: 'none', label: '無', surcharge: 0 },
+        { value: 'staple', label: '釘裝', surcharge: 5 },
+        { value: 'perfect', label: '膠裝', surcharge: 15 },
+      ],
+      quantities: [
+        { value: 50, label: '50本', discount: 1 },
+        { value: 100, label: '100本', discount: 0.85 },
+        { value: 500, label: '500本', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-educational-textbooks-zh-hk.jpg', en: 'zprintpro-educational-textbooks-en.jpg', ja: 'zprintpro-educational-textbooks-ja.jpg' },
       alt: { 'zh-hk': '香港教科書印刷印刷 HK$24-120/本 起｜教材、教科書印刷。專業排版，品質保證。｜ZprintPro智印港', en: 'Textbooks Printing Hong Kong HK$24-120/本｜Teaching materials, textbook printi｜ZprintPro', ja: '香港教科書印刷 HK$24-120/本｜教材、教科書の印刷。プロの組版、品質保証。｜ZprintPro' },
@@ -2145,6 +3391,29 @@ export const products: Product[] = [
     isNew: true,
     minQuantity: 200,
     images: ['/images/products/cosmetic-boxes.jpg'],
+    variables: {
+      sizes: [
+        { value: 'small', label: '小號(100×80×50mm)', multiplier: 1 },
+        { value: 'medium', label: '中號(150×120×80mm)', multiplier: 1.6 },
+        { value: 'large', label: '大號(200×180×100mm)', multiplier: 2.5 },
+      ],
+      materials: [
+        { value: 'white-card', label: '白卡紙', surcharge: 0 },
+        { value: 'kraft', label: '牛皮紙', surcharge: 10 },
+        { value: 'rigid', label: '硬紙板', surcharge: 80 },
+      ],
+      finishings: [
+        { value: 'none', label: '無', surcharge: 0 },
+        { value: 'foil', label: '燙金', surcharge: 60 },
+        { value: 'uv', label: 'UV', surcharge: 50 },
+        { value: 'emboss', label: '擊凸', surcharge: 70 },
+      ],
+      quantities: [
+        { value: 100, label: '100個', discount: 1 },
+        { value: 500, label: '500個', discount: 0.85 },
+        { value: 1000, label: '1000個', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-packaging-electronics-packaging-box-zh-hk.jpg', en: 'zprintpro-packaging-electronics-packaging-box-en.jpg', ja: 'zprintpro-packaging-electronics-packaging-box-ja.jpg' },
       alt: { 'zh-hk': '香港電子產品包裝盒定制印刷 HK$8-50/個 起｜手機、耳機、充電器等3C產品包裝盒。EVA內托、吸｜ZprintPro智印港', en: 'Electronics Packaging Box Printing Hong Kong HK$8-50/個｜Packaging boxes for phones, earphon｜ZprintPro', ja: '香港電子機器包装箱 HK$8-50/個｜スマホ、イヤホン、充電器等のパッケージ箱。EVAフ｜ZprintPro' },
@@ -2165,6 +3434,29 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 300,
     images: ['/images/hero-v21/kraft-bag.jpg'],
+    variables: {
+      sizes: [
+        { value: 'small', label: '小號(100×80×50mm)', multiplier: 1 },
+        { value: 'medium', label: '中號(150×120×80mm)', multiplier: 1.6 },
+        { value: 'large', label: '大號(200×180×100mm)', multiplier: 2.5 },
+      ],
+      materials: [
+        { value: 'white-card', label: '白卡紙', surcharge: 0 },
+        { value: 'kraft', label: '牛皮紙', surcharge: 10 },
+        { value: 'rigid', label: '硬紙板', surcharge: 80 },
+      ],
+      finishings: [
+        { value: 'none', label: '無', surcharge: 0 },
+        { value: 'foil', label: '燙金', surcharge: 60 },
+        { value: 'uv', label: 'UV', surcharge: 50 },
+        { value: 'emboss', label: '擊凸', surcharge: 70 },
+      ],
+      quantities: [
+        { value: 100, label: '100個', discount: 1 },
+        { value: 500, label: '500個', discount: 0.85 },
+        { value: 1000, label: '1000個', discount: 0.7 },
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-packaging-kraft-paper-packaging-box-zh-hk.jpg', en: 'zprintpro-packaging-kraft-paper-packaging-box-en.jpg', ja: 'zprintpro-packaging-kraft-paper-packaging-box-ja.jpg' },
       alt: { 'zh-hk': '香港牛皮紙盒印刷定制印刷 HK$5-30/個 起｜環保牛皮紙盒，適合食品、茶葉、手工皂包裝。可印刷L｜ZprintPro智印港', en: 'Kraft Paper Packaging Box Printing Hong Kong HK$5-30/個｜Eco-friendly kraft paper boxes for ｜ZprintPro', ja: '香港クラフト紙箱印刷 HK$5-30/個｜環境に優しいクラフト紙箱。食品、お茶、手作り石鹸の｜ZprintPro' },
