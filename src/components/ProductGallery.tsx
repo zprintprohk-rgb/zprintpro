@@ -11,13 +11,16 @@ import { X, ChevronLeft, ChevronRight } from 'lucide-react';
 interface ProductGalleryProps {
   images: string[];
   title: string;
+  alt?: string;
 }
 
-export function ProductGallery({ images, title }: ProductGalleryProps) {
+export function ProductGallery({ images, title, alt }: ProductGalleryProps) {
   const [currentImage, setCurrentImage] = useState(0);
   const [lightboxOpen, setLightboxOpen] = useState(false);
 
   const displayImages = images.length > 0 ? images : ['/images/placeholder.jpg'];
+  const mainAlt = alt || title;
+  const getThumbAlt = (index: number) => `${mainAlt} - ${index + 1}`;
 
   const openLightbox = (index: number) => {
     setCurrentImage(index);
@@ -44,7 +47,7 @@ export function ProductGallery({ images, title }: ProductGalleryProps) {
         >
           <img
             src={displayImages[currentImage]}
-            alt={title}
+            alt={mainAlt}
             className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
           />
         </div>
@@ -61,7 +64,7 @@ export function ProductGallery({ images, title }: ProductGalleryProps) {
             >
               <img
                 src={image}
-                alt={`${title} - ${index + 1}`}
+                alt={getThumbAlt(index)}
                 className="w-full h-full object-cover"
               />
             </button>
@@ -101,7 +104,7 @@ export function ProductGallery({ images, title }: ProductGalleryProps) {
 
           <img
             src={displayImages[currentImage]}
-            alt={title}
+            alt={mainAlt}
             className="max-w-[90vw] max-h-[90vh] object-contain"
             onClick={(e) => e.stopPropagation()}
           />

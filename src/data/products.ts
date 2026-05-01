@@ -29,6 +29,11 @@ export interface Product {
   minQuantity: number;
   turnaround?: string;
   images: string[];
+  imagesByLocale?: {
+    'zh-hk': string[];
+    en: string[];
+    ja: string[];
+  };
   seoImages?: {
     filename: { 'zh-hk': string; en: string; ja: string };
     alt: { 'zh-hk': string; en: string; ja: string };
@@ -307,6 +312,24 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/removable-stickers.jpg'],
+    imagesByLocale: {
+      'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-stickers-removable-stickers-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-removable-stickers-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-removable-stickers-zh-hk-3.webp',
+      ],
+      en: [
+      '/images/products/seedream-webp/zprintpro-stickers-removable-stickers-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-removable-stickers-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-removable-stickers-en-3.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-removable-stickers-en-4.webp',
+      ],
+      ja: [
+      '/images/products/seedream-webp/zprintpro-stickers-removable-stickers-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-removable-stickers-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-removable-stickers-ja-3.webp',
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-stickers-removable-stickers-zh-hk.jpg', en: 'zprintpro-stickers-removable-stickers-en.jpg', ja: 'zprintpro-stickers-removable-stickers-ja.jpg' },
       alt: { 'zh-hk': '香港可移貼紙(無殘膠)印刷 HK$0.45-1.60/張 起｜特殊背膠設計，移除後不留殘膠，保護貼附表面。適合車｜ZprintPro智印港', en: 'Removable Stickers Printing Hong Kong HK$0.45-1.60/張｜Special adhesive design leaves no r｜ZprintPro', ja: '香港はがせるステッカー HK$0.45-1.60/張｜特殊粘着設計、剥がしても残りません。車窓、ガラス展｜ZprintPro' },
@@ -327,6 +350,25 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/small-batch-stickers.jpg'],
+    imagesByLocale: {
+      'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-stickers-small-batch-stickers-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-small-batch-stickers-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-small-batch-stickers-zh-hk-3.webp',
+      ],
+      en: [
+      '/images/products/seedream-webp/zprintpro-stickers-small-batch-stickers-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-small-batch-stickers-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-small-batch-stickers-en-3.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-small-batch-stickers-en-4.webp',
+      ],
+      ja: [
+      '/images/products/seedream-webp/zprintpro-stickers-small-batch-stickers-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-small-batch-stickers-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-small-batch-stickers-ja-3.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-small-batch-stickers-ja-4.webp',
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-stickers-small-batch-stickers-zh-hk.jpg', en: 'zprintpro-stickers-small-batch-stickers-en.jpg', ja: 'zprintpro-stickers-small-batch-stickers-ja.jpg' },
       alt: { 'zh-hk': '香港小批量貼紙印刷 HK$38-120/A4 起｜最低A4尺寸起印，無需大量庫存壓力。適合初創品牌、｜ZprintPro智印港', en: 'Small Batch Stickers Printing Hong Kong HK$38-120/A4｜Minimum A4 size order, no bulk inve｜ZprintPro', ja: '香港小ロットステッカー HK$38-120/A4｜最小A4サイズから、大量在庫の心配なし。スタートア｜ZprintPro' },
@@ -347,6 +389,28 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/die-cut-stickers.jpg'],
+    imagesByLocale: {
+      'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-stickers-die-cut-stickers-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-die-cut-stickers-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-die-cut-stickers-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-die-cut-stickers-zh-hk-4.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-die-cut-stickers-zh-hk-5.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-die-cut-stickers-zh-hk-6.webp',
+      ],
+      en: [
+      '/images/products/seedream-webp/zprintpro-stickers-die-cut-stickers-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-die-cut-stickers-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-die-cut-stickers-en-3.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-die-cut-stickers-en-4.webp',
+      ],
+      ja: [
+      '/images/products/seedream-webp/zprintpro-stickers-die-cut-stickers-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-die-cut-stickers-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-die-cut-stickers-ja-3.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-die-cut-stickers-ja-4.webp',
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-stickers-die-cut-stickers-zh-hk.jpg', en: 'zprintpro-stickers-die-cut-stickers-en.jpg', ja: 'zprintpro-stickers-die-cut-stickers-ja.jpg' },
       alt: { 'zh-hk': '香港異形模切貼紙印刷 HK$0.58-2.20/張 起｜任意形狀模切，讓創意不受限制。可切出Logo形狀、｜ZprintPro智印港', en: 'Die-cut Stickers Printing Hong Kong HK$0.58-2.20/張｜Any shape die-cutting, creativity w｜ZprintPro', ja: '香港型抜きステッカー HK$0.58-2.20/張｜任意形状の型抜き、創作の自由を制限しません。｜ZprintPro' },
@@ -367,6 +431,26 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/foil-stickers.jpg'],
+    imagesByLocale: {
+      'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-stickers-foil-stickers-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-foil-stickers-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-foil-stickers-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-foil-stickers-zh-hk-4.webp',
+      ],
+      en: [
+      '/images/products/seedream-webp/zprintpro-stickers-foil-stickers-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-foil-stickers-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-foil-stickers-en-3.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-foil-stickers-en-4.webp',
+      ],
+      ja: [
+      '/images/products/seedream-webp/zprintpro-stickers-foil-stickers-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-foil-stickers-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-foil-stickers-ja-3.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-foil-stickers-ja-4.webp',
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-stickers-foil-stickers-zh-hk.jpg', en: 'zprintpro-stickers-foil-stickers-en.jpg', ja: 'zprintpro-stickers-foil-stickers-ja.jpg' },
       alt: { 'zh-hk': '香港燙金貼紙印刷 HK$0.78-2.80/張 起｜燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮｜ZprintPro智印港', en: 'Foil Stickers Printing Hong Kong HK$0.78-2.80/張｜Foil stamping gives stickers premiu｜ZprintPro', ja: '香港箔押しステッカー HK$0.78-2.80/張｜箔押し加工でステッカーに高級感。高級製品ラベル、ギ｜ZprintPro' },
@@ -387,6 +471,26 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/security-stickers.jpg'],
+    imagesByLocale: {
+      'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-stickers-security-stickers-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-security-stickers-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-security-stickers-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-security-stickers-zh-hk-4.webp',
+      ],
+      en: [
+      '/images/products/seedream-webp/zprintpro-stickers-security-stickers-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-security-stickers-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-security-stickers-en-3.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-security-stickers-en-4.webp',
+      ],
+      ja: [
+      '/images/products/seedream-webp/zprintpro-stickers-security-stickers-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-security-stickers-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-security-stickers-ja-3.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-security-stickers-ja-4.webp',
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-stickers-security-stickers-zh-hk.jpg', en: 'zprintpro-stickers-security-stickers-en.jpg', ja: 'zprintpro-stickers-security-stickers-ja.jpg' },
       alt: { 'zh-hk': '香港防偽貼紙印刷 HK$1.15-4.00/張 起｜特殊防偽工藝，包括雷射標籤、易碎紙等，保護品牌免受｜ZprintPro智印港', en: 'Security Stickers Printing Hong Kong HK$1.15-4.00/張｜Special anti-counterfeiting process｜ZprintPro', ja: '香港セキュリティステッカー HK$1.15-4.00/張｜特殊な偽造防止加工、ホログラムラベル、壊れやすい紙｜ZprintPro' },
@@ -428,6 +532,25 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/kraft-paper-bags.jpg'],
+    imagesByLocale: {
+      'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-paper-bags-kraft-paper-bags-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-kraft-paper-bags-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-kraft-paper-bags-zh-hk-3.webp',
+      ],
+      en: [
+      '/images/products/seedream-webp/zprintpro-paper-bags-kraft-paper-bags-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-kraft-paper-bags-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-kraft-paper-bags-en-3.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-kraft-paper-bags-en-4.webp',
+      ],
+      ja: [
+      '/images/products/seedream-webp/zprintpro-paper-bags-kraft-paper-bags-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-kraft-paper-bags-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-kraft-paper-bags-ja-3.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-kraft-paper-bags-ja-4.webp',
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-paper-bags-kraft-paper-bags-zh-hk.jpg', en: 'zprintpro-paper-bags-kraft-paper-bags-en.jpg', ja: 'zprintpro-paper-bags-kraft-paper-bags-ja.jpg' },
       alt: { 'zh-hk': '香港牛皮紙袋印刷 HK$3-8/個 起｜環保牛皮紙材質，質樸自然，深受消費者喜愛。適合服裝｜ZprintPro智印港', en: 'Kraft Paper Bags Printing Hong Kong HK$3-8/個｜Eco-friendly kraft paper, natural a｜ZprintPro', ja: '香港クラフト紙袋 HK$3-8/個｜環境に優しいクラフト紙、質朴で自然、消費者に人気。｜ZprintPro' },
@@ -471,6 +594,23 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/white-card-bags.jpg'],
+    imagesByLocale: {
+      'zh-hk': [
+
+      ],
+      en: [
+      '/images/products/seedream-webp/zprintpro-paper-bags-white-card-bags-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-white-card-bags-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-white-card-bags-en-3.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-white-card-bags-en-4.webp',
+      ],
+      ja: [
+      '/images/products/seedream-webp/zprintpro-paper-bags-white-card-bags-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-white-card-bags-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-white-card-bags-ja-3.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-white-card-bags-ja-4.webp',
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-paper-bags-white-card-bags-zh-hk.jpg', en: 'zprintpro-paper-bags-white-card-bags-en.jpg', ja: 'zprintpro-paper-bags-white-card-bags-ja.jpg' },
       alt: { 'zh-hk': '香港白卡紙袋印刷 HK$5-12/個 起｜白卡紙材質，表面平整光滑，印刷效果佳。適合高端品牌｜ZprintPro智印港', en: 'White Card Bags Printing Hong Kong HK$5-12/個｜White card paper, smooth surface, e｜ZprintPro', ja: '香港白カード紙袋 HK$5-12/個｜白カード紙、表面が滑らかで印刷効果が抜群。高級ブラ｜ZprintPro' },
@@ -491,6 +631,26 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/gift-bags.jpg'],
+    imagesByLocale: {
+      'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-paper-bags-gift-bags-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-gift-bags-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-gift-bags-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-gift-bags-zh-hk-4.webp',
+      ],
+      en: [
+      '/images/products/seedream-webp/zprintpro-paper-bags-gift-bags-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-gift-bags-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-gift-bags-en-3.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-gift-bags-en-4.webp',
+      ],
+      ja: [
+      '/images/products/seedream-webp/zprintpro-paper-bags-gift-bags-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-gift-bags-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-gift-bags-ja-3.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-gift-bags-ja-4.webp',
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-paper-bags-gift-bags-zh-hk.jpg', en: 'zprintpro-paper-bags-gift-bags-en.jpg', ja: 'zprintpro-paper-bags-gift-bags-ja.jpg' },
       alt: { 'zh-hk': '香港禮品紙袋印刷 HK$10-20/個 起｜精美設計，配合燙金、UV等工藝。送禮必備，提升禮品｜ZprintPro智印港', en: 'Gift Bags Printing Hong Kong HK$10-20/個｜Exquisite design with foil stamping｜ZprintPro', ja: '香港ギフト紙袋 HK$10-20/個｜精巧なデザイン、箔押し・UVなどの加工付き。ギフト｜ZprintPro' },
@@ -511,6 +671,26 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/eco-paper-bags.jpg'],
+    imagesByLocale: {
+      'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-paper-bags-eco-paper-bags-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-eco-paper-bags-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-eco-paper-bags-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-eco-paper-bags-zh-hk-4.webp',
+      ],
+      en: [
+      '/images/products/seedream-webp/zprintpro-paper-bags-eco-paper-bags-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-eco-paper-bags-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-eco-paper-bags-en-3.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-eco-paper-bags-en-4.webp',
+      ],
+      ja: [
+      '/images/products/seedream-webp/zprintpro-paper-bags-eco-paper-bags-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-eco-paper-bags-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-eco-paper-bags-ja-3.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-eco-paper-bags-ja-4.webp',
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-paper-bags-eco-paper-bags-zh-hk.jpg', en: 'zprintpro-paper-bags-eco-paper-bags-en.jpg', ja: 'zprintpro-paper-bags-eco-paper-bags-ja.jpg' },
       alt: { 'zh-hk': '香港環保紙袋印刷 HK$3-8/個 起｜FSC認證環保紙張，可持續發展。適合注重環保的品牌｜ZprintPro智印港', en: 'Eco Paper Bags Printing Hong Kong HK$3-8/個｜FSC-certified eco-friendly paper, s｜ZprintPro', ja: '香港エコ紙袋 HK$3-8/個｜FSC認証の環境に優しい紙、持続可能な開発。環境に｜ZprintPro' },
@@ -531,6 +711,25 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/handle-bags.jpg'],
+    imagesByLocale: {
+      'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-paper-bags-handle-bags-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-handle-bags-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-handle-bags-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-handle-bags-zh-hk-4.webp',
+      ],
+      en: [
+      '/images/products/seedream-webp/zprintpro-paper-bags-handle-bags-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-handle-bags-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-handle-bags-en-3.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-handle-bags-en-4.webp',
+      ],
+      ja: [
+      '/images/products/seedream-webp/zprintpro-paper-bags-handle-bags-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-handle-bags-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-handle-bags-ja-3.webp',
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-paper-bags-handle-bags-zh-hk.jpg', en: 'zprintpro-paper-bags-handle-bags-en.jpg', ja: 'zprintpro-paper-bags-handle-bags-ja.jpg' },
       alt: { 'zh-hk': '香港手挽紙袋印刷 HK$3-8/個 起｜堅固手挽設計，承重能力強。適合購物中心、超市。｜ZprintPro智印港', en: 'Handle Bags Printing Hong Kong HK$3-8/個｜Sturdy handle design, strong load-b｜ZprintPro', ja: '香港手提げ紙袋 HK$3-8/個｜頑丈な持ち手デザイン、強い耐荷重能力。ショッピング｜ZprintPro' },
@@ -572,6 +771,20 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/a4-flyers.jpg'],
+    imagesByLocale: {
+      'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-flyers-a4-flyers-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-flyers-a4-flyers-zh-hk-2.webp',
+      ],
+      en: [
+      '/images/products/seedream-webp/zprintpro-flyers-a4-flyers-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-flyers-a4-flyers-en-2.webp',
+      ],
+      ja: [
+      '/images/products/seedream-webp/zprintpro-flyers-a4-flyers-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-flyers-a4-flyers-ja-2.webp',
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-flyers-a4-flyers-zh-hk.jpg', en: 'zprintpro-flyers-a4-flyers-en.jpg', ja: 'zprintpro-flyers-a4-flyers-ja.jpg' },
       alt: { 'zh-hk': '香港A4宣傳單張印刷 HK$0.18-0.65/張 起｜標準A4尺寸，最常用的宣傳單張規格。157g銅版紙｜ZprintPro智印港', en: 'A4 Flyers Printing Hong Kong HK$0.18-0.65/張｜Standard A4 size, most common flyer｜ZprintPro', ja: '香港A4チラシ HK$0.18-0.65/張｜標準A4サイズ、最も一般的なチラシ形式。157gコ｜ZprintPro' },
@@ -615,6 +828,21 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/a5-flyers.jpg'],
+    imagesByLocale: {
+      'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-flyers-a5-flyers-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-flyers-a5-flyers-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-flyers-a5-flyers-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-flyers-a5-flyers-zh-hk-4.webp',
+      ],
+      en: [
+      '/images/products/seedream-webp/zprintpro-flyers-a5-flyers-en-1.webp',
+      ],
+      ja: [
+      '/images/products/seedream-webp/zprintpro-flyers-a5-flyers-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-flyers-a5-flyers-ja-2.webp',
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-flyers-a5-flyers-zh-hk.jpg', en: 'zprintpro-flyers-a5-flyers-en.jpg', ja: 'zprintpro-flyers-a5-flyers-ja.jpg' },
       alt: { 'zh-hk': '香港A5宣傳單張印刷 HK$0.12-0.40/張 起｜A5尺寸，經濟實惠，適合大量派發。餐飲外賣、快閃活｜ZprintPro智印港', en: 'A5 Flyers Printing Hong Kong HK$0.12-0.40/張｜A5 size, economical, perfect for ma｜ZprintPro', ja: '香港A5チラシ HK$0.12-0.40/張｜A5サイズ、経済的、大量配布に最適。フードデリバリ｜ZprintPro' },
@@ -635,6 +863,22 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/double-sided-flyers.jpg'],
+    imagesByLocale: {
+      'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-flyers-double-sided-flyers-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-flyers-double-sided-flyers-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-flyers-double-sided-flyers-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-flyers-double-sided-flyers-zh-hk-4.webp',
+      ],
+      en: [
+      '/images/products/seedream-webp/zprintpro-flyers-double-sided-flyers-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-flyers-double-sided-flyers-en-2.webp',
+      ],
+      ja: [
+      '/images/products/seedream-webp/zprintpro-flyers-double-sided-flyers-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-flyers-double-sided-flyers-ja-2.webp',
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-flyers-double-sided-flyers-zh-hk.jpg', en: 'zprintpro-flyers-double-sided-flyers-en.jpg', ja: 'zprintpro-flyers-double-sided-flyers-ja.jpg' },
       alt: { 'zh-hk': '香港雙面宣傳單張印刷 HK$0.22-0.80/張 起｜雙面全彩印刷，信息容量翻倍。正面吸引眼球，背面詳細｜ZprintPro智印港', en: 'Double-sided Flyers Printing Hong Kong HK$0.22-0.80/張｜Double-sided full color printing, d｜ZprintPro', ja: '香港両面チラシ HK$0.22-0.80/張｜両面フルカラー印刷、情報容量が2倍。｜ZprintPro' },
@@ -655,6 +899,20 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/folded-leaflets.jpg'],
+    imagesByLocale: {
+      'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-flyers-folded-leaflets-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-flyers-folded-leaflets-zh-hk-2.webp',
+      ],
+      en: [
+      '/images/products/seedream-webp/zprintpro-flyers-folded-leaflets-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-flyers-folded-leaflets-en-2.webp',
+      ],
+      ja: [
+      '/images/products/seedream-webp/zprintpro-flyers-folded-leaflets-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-flyers-folded-leaflets-ja-2.webp',
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-flyers-folded-leaflets-zh-hk.jpg', en: 'zprintpro-flyers-folded-leaflets-en.jpg', ja: 'zprintpro-flyers-folded-leaflets-ja.jpg' },
       alt: { 'zh-hk': '香港摺疊宣傳單張印刷 HK$0.45-1.60/張 起｜對摺或三摺設計，可展示更多信息。適合產品目錄、服務｜ZprintPro智印港', en: 'Folded Leaflets Printing Hong Kong HK$0.45-1.60/張｜Bi-fold or tri-fold design, can dis｜ZprintPro', ja: '香港折りたたみパンフレット HK$0.45-1.60/張｜二つ折りまたは三つ折りデザイン、より多くの情報を表｜ZprintPro' },
@@ -675,6 +933,20 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/thick-paper-flyers.jpg'],
+    imagesByLocale: {
+      'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-flyers-thick-paper-flyers-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-flyers-thick-paper-flyers-zh-hk-2.webp',
+      ],
+      en: [
+      '/images/products/seedream-webp/zprintpro-flyers-thick-paper-flyers-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-flyers-thick-paper-flyers-en-2.webp',
+      ],
+      ja: [
+      '/images/products/seedream-webp/zprintpro-flyers-thick-paper-flyers-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-flyers-thick-paper-flyers-ja-2.webp',
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-flyers-thick-paper-flyers-zh-hk.jpg', en: 'zprintpro-flyers-thick-paper-flyers-en.jpg', ja: 'zprintpro-flyers-thick-paper-flyers-ja.jpg' },
       alt: { 'zh-hk': '香港厚紙宣傳單張印刷 HK$0.28-0.95/張 起｜200g以上厚紙，質感更佳，不易折損。適合高端產品｜ZprintPro智印港', en: 'Thick Paper Flyers Printing Hong Kong HK$0.28-0.95/張｜200g+ thick paper, better texture, ｜ZprintPro', ja: '香港厚紙チラシ HK$0.28-0.95/張｜200g以上の厚紙、質感が良く折れにくい。｜ZprintPro' },
@@ -695,6 +967,23 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/eco-flyers.jpg'],
+    imagesByLocale: {
+      'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-flyers-eco-flyers-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-flyers-eco-flyers-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-flyers-eco-flyers-zh-hk-3.webp',
+      ],
+      en: [
+      '/images/products/seedream-webp/zprintpro-flyers-eco-flyers-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-flyers-eco-flyers-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-flyers-eco-flyers-en-3.webp',
+      ],
+      ja: [
+      '/images/products/seedream-webp/zprintpro-flyers-eco-flyers-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-flyers-eco-flyers-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-flyers-eco-flyers-ja-3.webp',
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-flyers-eco-flyers-zh-hk.jpg', en: 'zprintpro-flyers-eco-flyers-en.jpg', ja: 'zprintpro-flyers-eco-flyers-ja.jpg' },
       alt: { 'zh-hk': '香港環保宣傳單張印刷 HK$0.22-0.80/張 起｜環保紙張印刷，展現企業責任。適合環保主題活動。｜ZprintPro智印港', en: 'Eco Flyers Printing Hong Kong HK$0.22-0.80/張｜Eco-friendly paper printing, showin｜ZprintPro', ja: '香港エコチラシ HK$0.22-0.80/張｜環境に優しい紙の印刷、企業の責任を示す。｜ZprintPro' },
@@ -715,6 +1004,23 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/same-day-flyers.jpg'],
+    imagesByLocale: {
+      'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-flyers-same-day-flyers-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-flyers-same-day-flyers-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-flyers-same-day-flyers-zh-hk-3.webp',
+      ],
+      en: [
+      '/images/products/seedream-webp/zprintpro-flyers-same-day-flyers-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-flyers-same-day-flyers-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-flyers-same-day-flyers-en-3.webp',
+      ],
+      ja: [
+      '/images/products/seedream-webp/zprintpro-flyers-same-day-flyers-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-flyers-same-day-flyers-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-flyers-same-day-flyers-ja-3.webp',
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-flyers-same-day-flyers-zh-hk.jpg', en: 'zprintpro-flyers-same-day-flyers-en.jpg', ja: 'zprintpro-flyers-same-day-flyers-ja.jpg' },
       alt: { 'zh-hk': '香港即日宣傳單張印刷 HK$0.32-1.20/張 起｜緊急活動首選，最快當天交貨。即日印刷、即日快遞出貨｜ZprintPro智印港', en: 'Same-day Flyers Printing Hong Kong HK$0.32-1.20/張｜First choice for emergency events, ｜ZprintPro', ja: '香港即日チラシ HK$0.32-1.20/張｜緊急イベントの第一選択、最短当日印刷・宅配便発送。｜ZprintPro' },
@@ -736,6 +1042,23 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/a2-posters.jpg'],
+    imagesByLocale: {
+      'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-posters-a2-posters-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-posters-a2-posters-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-posters-a2-posters-zh-hk-3.webp',
+      ],
+      en: [
+      '/images/products/seedream-webp/zprintpro-posters-a2-posters-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-posters-a2-posters-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-posters-a2-posters-en-3.webp',
+      ],
+      ja: [
+      '/images/products/seedream-webp/zprintpro-posters-a2-posters-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-posters-a2-posters-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-posters-a2-posters-ja-3.webp',
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-posters-a2-posters-zh-hk.jpg', en: 'zprintpro-posters-a2-posters-en.jpg', ja: 'zprintpro-posters-a2-posters-ja.jpg' },
       alt: { 'zh-hk': '香港A2海報印刷印刷 HK$10-35/張 起｜標準A2尺寸，活動宣傳、產品推廣首選。157g銅版｜ZprintPro智印港', en: 'A2 Posters Printing Hong Kong HK$10-35/張｜Standard A2 size, first choice for ｜ZprintPro', ja: '香港A2ポスター HK$10-35/張｜標準A2サイズ、イベント宣伝の第一選択。157gコ｜ZprintPro' },
@@ -778,6 +1101,26 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/a1-posters.jpg'],
+    imagesByLocale: {
+      'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-posters-a1-posters-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-posters-a1-posters-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-posters-a1-posters-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-posters-a1-posters-zh-hk-4.webp',
+      ],
+      en: [
+      '/images/products/seedream-webp/zprintpro-posters-a1-posters-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-posters-a1-posters-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-posters-a1-posters-en-3.webp',
+      '/images/products/seedream-webp/zprintpro-posters-a1-posters-en-4.webp',
+      ],
+      ja: [
+      '/images/products/seedream-webp/zprintpro-posters-a1-posters-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-posters-a1-posters-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-posters-a1-posters-ja-3.webp',
+      '/images/products/seedream-webp/zprintpro-posters-a1-posters-ja-4.webp',
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-posters-a1-posters-zh-hk.jpg', en: 'zprintpro-posters-a1-posters-en.jpg', ja: 'zprintpro-posters-a1-posters-ja.jpg' },
       alt: { 'zh-hk': '香港A1大幅海報印刷 HK$20-70/張 起｜A1大尺寸，視覺衝擊力強。適合展覽、會場佈置。｜ZprintPro智印港', en: 'A1 Large Posters Printing Hong Kong HK$20-70/張｜A1 large size, strong visual impact｜ZprintPro', ja: '香港A1大型ポスター HK$20-70/張｜A1大きなサイズ、強い視覚的インパクト。展示会、会｜ZprintPro' },
@@ -798,6 +1141,22 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/outdoor-posters.jpg'],
+    imagesByLocale: {
+      'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-posters-outdoor-posters-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-posters-outdoor-posters-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-posters-outdoor-posters-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-posters-outdoor-posters-zh-hk-4.webp',
+      ],
+      en: [
+      '/images/products/seedream-webp/zprintpro-posters-outdoor-posters-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-posters-outdoor-posters-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-posters-outdoor-posters-en-3.webp',
+      ],
+      ja: [
+
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-posters-outdoor-posters-zh-hk.jpg', en: 'zprintpro-posters-outdoor-posters-en.jpg', ja: 'zprintpro-posters-outdoor-posters-ja.jpg' },
       alt: { 'zh-hk': '香港戶外海報印刷 HK$16-55/張 起｜防水防曬材質，戶外使用不褪色。適合戶外廣告、建築圍｜ZprintPro智印港', en: 'Outdoor Posters Printing Hong Kong HK$16-55/張｜Waterproof and UV-resistant materia｜ZprintPro', ja: '香港屋外ポスター HK$16-55/張｜防水・UV耐性素材、屋外使用でも色褪せません。｜ZprintPro' },

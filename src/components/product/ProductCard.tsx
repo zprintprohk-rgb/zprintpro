@@ -72,7 +72,7 @@ export function ProductCard({ product, locale }: ProductCardProps) {
 
   const fallback = categoryFallbacks[product.category] || { icon: Package, gradient: 'from-gray-400/15 to-gray-600/15', iconColor: 'text-gray-500' };
   const FallbackIcon = fallback.icon;
-  const imageSrc = product.images?.[0] || '';
+  const imageSrc = product.imagesByLocale?.[locale]?.[0] || product.images?.[0] || '';
   const hasImage = imageSrc && !imgError;
 
   return (

@@ -625,7 +625,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                   >
                     <div className="aspect-[4/3] rounded-lg overflow-hidden bg-gray-50 mb-3">
                       <Image
-                        src={product.images[0] || '/images/placeholder.jpg'}
+                        src={product.imagesByLocale?.[locale]?.[0] || product.images[0] || '/images/placeholder.jpg'}
                         alt={getProductTitle(product, locale)}
                         width={300}
                         height={225}

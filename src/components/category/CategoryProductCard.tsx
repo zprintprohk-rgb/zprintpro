@@ -49,7 +49,7 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
   const topBarColor = topBarColors[index % topBarColors.length];
   const fallback = categoryFallbacks[product.category] || { icon: Package, bgColor: 'bg-gray-50', iconColor: 'text-gray-500' };
   const FallbackIcon = fallback.icon;
-  const imageSrc = product.images?.[0] || '';
+  const imageSrc = product.imagesByLocale?.[locale]?.[0] || product.images?.[0] || '';
   const hasImage = imageSrc && !imgError;
 
   const getName = () => {

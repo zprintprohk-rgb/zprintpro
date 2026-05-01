@@ -11,6 +11,7 @@ import {
   getCategoryName,
   getProductTitle,
   getProductDescription,
+  getProductImageAlt,
   products 
 } from '@/lib/products';
 import { 
@@ -101,7 +102,7 @@ export default function ProductPage({
   const productSeo = getProductSeo(slug);
   
   // JSON-LD结构化数据
-  const productJsonLd = generateProductJsonLd(product.name, product.description, product.images[0] || '', product.slug, product.basePrice);
+  const productJsonLd = generateProductJsonLd(product.name, product.description, product.imagesByLocale?.[locale]?.[0] || product.images[0] || '', product.slug, product.basePrice);
   const businessJsonLd = generateBusinessJsonLd(locale);
   const breadcrumbJsonLd = generateBreadcrumbJsonLd(breadcrumbItems);
   
@@ -236,7 +237,11 @@ export default function ProductPage({
           <div className="grid grid-cols-1 lg:grid-cols-[62%_38%] gap-8 justify-between">
             {/* 左侧：产品图片 + 上传 + 备注 */}
             <div>
-              <ProductGallery images={product.images} title={productTitle} />
+              <ProductGallery
+                images={product.imagesByLocale?.[locale]?.length ? product.imagesByLocale[locale] : product.images}
+                title={productTitle}
+                alt={getProductImageAlt(product, locale)}
+              />
 
               {/* 上传设计稿 */}
               <div className="mt-6 border-2 border-dashed border-gray-300 rounded-xl p-5 text-center hover:border-[#2873F5] transition-colors cursor-pointer bg-white">
