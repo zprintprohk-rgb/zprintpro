@@ -14,10 +14,6 @@ interface CategoryProductCardProps {
   index: number;
 }
 
-const topBarColors = [
-  'bg-[#2873F5]', 'bg-[#10B981]', 'bg-[#F87314]',
-  'bg-[#8B5CF6]', 'bg-[#EC4899]', 'bg-[#06B6D4]',
-];
 
 const categoryFallbacks: Record<string, { icon: typeof Box; bgColor: string; iconColor: string }> = {
   'business-cards': { icon: CreditCard, bgColor: 'bg-blue-50', iconColor: 'text-blue-500' },
@@ -46,7 +42,6 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
   const localePrefix = `/${locale}`;
   const [imgError, setImgError] = useState(false);
 
-  const topBarColor = topBarColors[index % topBarColors.length];
   const fallback = categoryFallbacks[product.category] || { icon: Package, bgColor: 'bg-gray-50', iconColor: 'text-gray-500' };
   const FallbackIcon = fallback.icon;
   const imageSrc = product.imagesByLocale?.[locale]?.[0] || product.images?.[0] || '';
@@ -73,9 +68,6 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
 
   return (
     <div className="group bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col">
-      {/* top bar */}
-      <div className={`h-2 ${topBarColor}`} />
-
       {/* hot badge */}
       {product.isHot && (
         <div className="relative">

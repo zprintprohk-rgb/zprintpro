@@ -30,9 +30,9 @@ export interface Product {
   turnaround?: string;
   images: string[];
   imagesByLocale?: {
-    'zh-hk': string[];
-    en: string[];
-    ja: string[];
+    'zh-hk'?: string[];
+    en?: string[];
+    ja?: string[];
   };
   seoImages?: {
     filename: { 'zh-hk': string; en: string; ja: string };
@@ -511,6 +511,25 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/fluorescent-stickers.jpg'],
+    imagesByLocale: {
+      'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-stickers-fluorescent-stickers-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-fluorescent-stickers-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-fluorescent-stickers-zh-hk-3.webp',
+      ],
+      en: [
+      '/images/products/seedream-webp/zprintpro-stickers-fluorescent-stickers-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-fluorescent-stickers-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-fluorescent-stickers-en-3.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-fluorescent-stickers-en-4.webp',
+      ],
+      ja: [
+      '/images/products/seedream-webp/zprintpro-stickers-fluorescent-stickers-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-fluorescent-stickers-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-fluorescent-stickers-ja-3.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-fluorescent-stickers-ja-4.webp',
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-stickers-fluorescent-stickers-zh-hk.jpg', en: 'zprintpro-stickers-fluorescent-stickers-en.jpg', ja: 'zprintpro-stickers-fluorescent-stickers-ja.jpg' },
       alt: { 'zh-hk': '香港螢光貼紙印刷 HK$0.52-2.00/張 起｜螢光色彩，在光線下格外醒目。適合促銷標籤、安全標識｜ZprintPro智印港', en: 'Fluorescent Stickers Printing Hong Kong HK$0.52-2.00/張｜Fluorescent colors, highly visible ｜ZprintPro', ja: '香港蛍光ステッカー HK$0.52-2.00/張｜蛍光色、光の下で非常に目立ちます。プロモーションラ｜ZprintPro' },
@@ -595,9 +614,6 @@ export const products: Product[] = [
     minQuantity: 100,
     images: ['/images/products/white-card-bags.jpg'],
     imagesByLocale: {
-      'zh-hk': [
-
-      ],
       en: [
       '/images/products/seedream-webp/zprintpro-paper-bags-white-card-bags-en-1.webp',
       '/images/products/seedream-webp/zprintpro-paper-bags-white-card-bags-en-2.webp',
@@ -750,6 +766,26 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/large-bags.jpg'],
+    imagesByLocale: {
+      'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-paper-bags-large-bags-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-large-bags-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-large-bags-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-large-bags-zh-hk-4.webp',
+      ],
+      en: [
+      '/images/products/seedream-webp/zprintpro-paper-bags-large-bags-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-large-bags-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-large-bags-en-3.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-large-bags-en-4.webp',
+      ],
+      ja: [
+      '/images/products/seedream-webp/zprintpro-paper-bags-large-bags-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-large-bags-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-large-bags-ja-3.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-large-bags-ja-4.webp',
+      ],
+    },
     seoImages: {
       filename: { 'zh-hk': 'zprintpro-paper-bags-large-bags-zh-hk.jpg', en: 'zprintpro-paper-bags-large-bags-en.jpg', ja: 'zprintpro-paper-bags-large-bags-ja.jpg' },
       alt: { 'zh-hk': '香港大號紙袋印刷 HK$6-15/個 起｜加大尺寸，適合服裝、鞋類等大件商品。｜ZprintPro智印港', en: 'Large Bags Printing Hong Kong HK$6-15/個｜Large size, perfect for clothing, s｜ZprintPro', ja: '香港大判紙袋 HK$6-15/個｜大きなサイズ、衣類、靴などの大物に最適。｜ZprintPro' },
