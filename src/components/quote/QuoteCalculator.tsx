@@ -35,7 +35,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
     finishing: product.variables?.finishings?.[0]?.value || 'none',
     quantity: product.variables?.quantities?.[0]?.value || (product.minQuantity || 100),
   });
-  const [activeTab, setActiveTab] = useState<'order' | 'quote'>('order');
+  const [activeTab, setActiveTab] = useState<'order' | 'quote'>('quote');
 
   // 翻译
   const translations = {
