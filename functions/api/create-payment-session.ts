@@ -168,7 +168,17 @@ export async function onRequestPost(context: {
 
     await supabase
       .from('orders')
-      .update({ airwallex_payment_intent_id: paymentIntent.id })
+      .update({
+        airwallex_payment_intent_id: paymentIntent.id,
+        quote_data: {
+          ...quote_data,
+          _airwallex: {
+            client_secret: paymentIntent.client_secret,
+            payment_intent_id: paymentIntent.id,
+            created_at: paymentIntent.created_at,
+          },
+        },
+      })
       .eq('id', orderId);
 
     return new Response(
