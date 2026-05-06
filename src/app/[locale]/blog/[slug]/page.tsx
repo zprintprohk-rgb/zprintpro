@@ -17,7 +17,7 @@ const translations = {
     hotProducts: '熱門產品',
     viewMore: '查詢更多',
     authorPrefix: '作者：',
-    author: '智印港印刷專家',
+    author: '智印云印刷專家',
     published: '發布於',
   },
   'en': {
@@ -59,12 +59,12 @@ const defaultArticleImage = '/images/articles/sticker-guide.jpg';
 const posts: Record<string, Record<string, { title: string; description: string; date: string; category: string; content: string }>> = {
   'zh-hk': {
     'company-intro': {
-      title: '智印港印刷公司簡介：專業設備與一站式印刷服務',
-      description: '智印港擁有海德堡6+1印刷機、HP數碼印刷機、馬天尼膠裝線等先進設備，提供從設計到印刷到後加工的一站式服務，服務香港及大灣區客戶超過15年。',
+      title: '智印云印刷公司簡介：專業設備與一站式印刷服務',
+      description: '智印云擁有海德堡6+1印刷機、HP數碼印刷機、馬天尼膠裝線等先進設備，提供從設計到印刷到後加工的一站式服務，服務香港及大灣區客戶超過15年。',
       date: '2024-06-01', category: '公司新聞',
-      content: `<p>智印港（ZprintPro）是一家專業的綜合性印刷服務企業，深耕香港及大灣區市場超過15年。我們致力於為企業客戶提供從設計、印刷到後加工的一站式解決方案，涵蓋商務印刷、包裝印刷、出版印刷及數碼印刷等多個領域。</p>
+      content: `<p>智印云（ZprintPro）是一家專業的綜合性印刷服務企業，深耕香港及大灣區市場超過15年。我們致力於為企業客戶提供從設計、印刷到後加工的一站式解決方案，涵蓋商務印刷、包裝印刷、出版印刷及數碼印刷等多個領域。</p>
 <h3>一、企業概況</h3>
-<p>智印港總部位於深圳，毗鄰香港，擁有現代化標準廠房逾8,000平方米。公司配備了國際領先的印刷及後加工設備，年產能達到數億印張。我們的客戶遍及金融、地產、零售、教育、醫療等多個行業，為眾多知名企業提供長期穩定的印刷服務。</p>
+<p>智印云總部位於深圳，毗鄰香港，擁有現代化標準廠房逾8,000平方米。公司配備了國際領先的印刷及後加工設備，年產能達到數億印張。我們的客戶遍及金融、地產、零售、教育、醫療等多個行業，為眾多知名企業提供長期穩定的印刷服務。</p>
 <div class="grid grid-cols-2 md:grid-cols-4 gap-4 my-6">
   <div class="bg-gray-50 rounded-xl p-4 text-center">
     <p class="text-2xl font-bold text-[#F87314]">8,000+</p>
@@ -84,7 +84,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
   </div>
 </div>
 <h3>二、核心印刷設備</h3>
-<p>工欲善其事，必先利其器。智印港始終堅持以最先進的設備保障出品質量，主要印刷設備包括：</p>
+<p>工欲善其事，必先利其器。智印云始終堅持以最先進的設備保障出品質量，主要印刷設備包括：</p>
 <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
   <div class="rounded-xl overflow-hidden border border-gray-100">
     <img src="/images/factory/factory-heidelberg-6plus1.jpg" alt="海德堡全新6+1印刷機" class="w-full aspect-[4/3] object-cover"/>
@@ -116,7 +116,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
   </div>
 </div>
 <h3>三、後加工設備</h3>
-<p>除了強大的印刷能力，智印港還配備了完善的後加工生產線，滿足客戶多樣化的工藝需求：</p>
+<p>除了強大的印刷能力，智印云還配備了完善的後加工生產線，滿足客戶多樣化的工藝需求：</p>
 <ul class="list-disc pl-5 my-3 space-y-1">
 <li><strong>馬天尼膠裝線</strong>：全自動膠裝，適合書刊、畫冊的大量生產</li>
 <li><strong>海德堡折頁機群</strong>：多台聯動，支持多種折頁方式</li>
@@ -150,7 +150,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
   </div>
 </div>
 <h3>四、品質與服務承諾</h3>
-<p>智印港始終堅持「品質第一、客戶至上」的經營理念：</p>
+<p>智印云始終堅持「品質第一、客戶至上」的經營理念：</p>
 <ul class="list-disc pl-5 my-3 space-y-1">
 <li>全線採用環保油墨及紙張，通過ISO9001質量管理體系認證</li>
 <li>專業跟單團隊一對一服務，從報價到交貨全程跟進</li>
@@ -158,7 +158,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
 <li>急件支持24小時內交貨，滿足緊急商務需求</li>
 </ul>
 <h3>五、聯繫我們</h3>
-<p>無論您是需要名片、傳單、畫冊，還是禮品盒、紙袋、標籤貼紙，智印港都能為您提供專業的印刷解決方案。歡迎蒞臨參觀我們的工廠，或通過以下方式聯繫：</p>
+<p>無論您是需要名片、傳單、畫冊，還是禮品盒、紙袋、標籤貼紙，智印云都能為您提供專業的印刷解決方案。歡迎蒞臨參觀我們的工廠，或通過以下方式聯繫：</p>
 <div class="bg-gray-50 rounded-xl p-5 my-4 space-y-2">
 <p><strong>WhatsApp：</strong><a href="https://wa.me/8618126380255" target="_blank">+86 181 2638 0255</a>（唐先生）</p>
 <p><strong>服務時間：</strong>週一至週六 09:00 - 21:00（香港時間同步）</p>
@@ -167,7 +167,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
     },
     'sticker-guide': {
       title: '香港貼紙印刷完全指南：材質、工藝與應用場景详解',
-      description: '深入了解香港貼紙印刷的各種材質選擇、表面處理工藝以及不同場景的應用建議。智印港專家為您詳解防水貼紙、透明貼紙、燙金貼紙等熱門選項。',
+      description: '深入了解香港貼紙印刷的各種材質選擇、表面處理工藝以及不同場景的應用建議。智印云專家為您詳解防水貼紙、透明貼紙、燙金貼紙等熱門選項。',
       date: '2024-04-15', category: '貼紙知識',
       content: `<p>貼紙是品牌宣傳和產品包裝中不可或缺的元素。無論是產品標籤、促銷宣傳還是個性化裝飾，選擇合適的貼紙材質和工藝都能大幅提升品牌形象。本文將為您詳細介紹香港貼紙印刷的各種選擇。</p>
 <h3>一、常見貼紙材質對比</h3>
@@ -193,8 +193,8 @@ const posts: Record<string, Record<string, { title: string; description: string;
 <li><strong>使用期限</strong>：臨時使用還是長期標籤？</li>
 <li><strong>預算範圍</strong>：不同材質價格差異較大</li>
 </ol>
-<h3>四、智印港貼紙印刷服務</h3>
-<p>智印港提供全面的<a href="/product/waterproof-stickers/">防水貼紙印刷</a>服務，採用高品質合成紙材質，具有出色的防水防油性能，非常適合食品包裝、化妝品標籤等場景。我們的<a href="/product/transparent-stickers/">透明貼紙</a>採用PET材質，貼合後呈現無感效果，完美展現產品本身。</p>
+<h3>四、智印云貼紙印刷服務</h3>
+<p>智印云提供全面的<a href="/product/waterproof-stickers/">防水貼紙印刷</a>服務，採用高品質合成紙材質，具有出色的防水防油性能，非常適合食品包裝、化妝品標籤等場景。我們的<a href="/product/transparent-stickers/">透明貼紙</a>採用PET材質，貼合後呈現無感效果，完美展現產品本身。</p>
 <p>對於追求獨特效果的客戶，我們的<a href="/product/die-cut-stickers/">異形模切貼紙</a>可以製作出任意形狀，讓您的品牌設計不受限制。而<a href="/product/foil-stickers/">燙金貼紙</a>則能為產品增添奢華質感，特別適合高端禮品和限量版產品。</p>
 <h3>五、常見問題</h3>
 <div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3">
@@ -202,13 +202,13 @@ const posts: Record<string, Record<string, { title: string; description: string;
 <p><strong>Q: 防水貼紙真的可以泡水嗎？</strong><br/>A: 是的，我們的防水貼紙採用合成紙+防水膠水，可承受短時間浸泡。</p>
 <p><strong>Q: 貼紙的交貨時間多久？</strong><br/>A: 標準3-5個工作日，急件可安排即日交貨。</p>
 </div>
-<p>無論您需要哪種貼紙，智印港都能為您提供專業建議和優質服務。立即<a href="https://wa.me/8618126380255" target="_blank">WhatsApp 聯繫我們</a>獲取免費報價！</p>`,
+<p>無論您需要哪種貼紙，智印云都能為您提供專業建議和優質服務。立即<a href="https://wa.me/8618126380255" target="_blank">WhatsApp 聯繫我們</a>獲取免費報價！</p>`,
     },
     'business-card-design': {
       title: '名片設計的10個黃金法則：打造令人難忘的專業形象',
-      description: '從排版到色彩搭配，掌握名片設計的核心技巧。智印港設計專家分享10個黃金法則，助您打造令人印象深刻的專業名片。',
+      description: '從排版到色彩搭配，掌握名片設計的核心技巧。智印云設計專家分享10個黃金法則，助您打造令人印象深刻的專業名片。',
       date: '2024-04-10', category: '名片知識',
-      content: `<p>名片是商業交往中的第一印象。一張設計精良的名片不僅能傳遞聯繫方式，更能展現品牌專業度和個人品味。以下是智印港設計團隊總結的10個名片設計黃金法則。</p>
+      content: `<p>名片是商業交往中的第一印象。一張設計精良的名片不僅能傳遞聯繫方式，更能展現品牌專業度和個人品味。以下是智印云設計團隊總結的10個名片設計黃金法則。</p>
 <h3>法則1：留白是設計的靈魂</h3>
 <p>不要試圖在名片上塞入所有信息。適當的留白能讓重點內容更加突出，給人簡潔專業的印象。建議信息區域佔用不超過名片面積的60%。</p>
 <h3>法則2：字體不超過兩種</h3>
@@ -222,7 +222,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
 <li>綠色：環保、健康、自然（適合醫療、環保）</li>
 </ul>
 <h3>法則4：材質決定觸感</h3>
-<p>智印港提供多種<a href="/product/premium-business-cards/">高級商務名片</a>材質選擇：</p>
+<p>智印云提供多種<a href="/product/premium-business-cards/">高級商務名片</a>材質選擇：</p>
 <ul class="list-disc pl-5 my-3 space-y-1">
 <li>300g銅版紙：經濟實惠，適合大量派發</li>
 <li><a href="/product/thick-business-cards-400g/">400g厚身名片</a>：厚實手感，彰顯尊貴品質</li>
@@ -240,21 +240,21 @@ const posts: Record<string, Record<string, { title: string; description: string;
 <h3>法則9：環保理念的體現</h3>
 <p>選擇<a href="/product/eco-business-cards/">環保名片</a>使用再生紙或大豆油墨，展現企業社會責任。</p>
 <h3>法則10：與印刷廠充分溝通</h3>
-<p>設計稿交付印刷前，務必確認出血位、色彩模式（CMYK）、分辨率（300dpi）等技術細節。智印港提供免費打樣服務，確保成品符合預期。</p>
+<p>設計稿交付印刷前，務必確認出血位、色彩模式（CMYK）、分辨率（300dpi）等技術細節。智印云提供免費打樣服務，確保成品符合預期。</p>
 <h3>立即行動</h3>
-<p>準備好升級您的名片了嗎？智印港提供<a href="/product/same-day-business-cards/">即日名片印刷</a>服務，最快當天即可取貨。立即<a href="https://wa.me/8618126380255" target="_blank">WhatsApp 聯繫唐先生</a>獲取設計建議和報價！</p>`,
+<p>準備好升級您的名片了嗎？智印云提供<a href="/product/same-day-business-cards/">即日名片印刷</a>服務，最快當天即可取貨。立即<a href="https://wa.me/8618126380255" target="_blank">WhatsApp 聯繫唐先生</a>獲取設計建議和報價！</p>`,
     },
     'packaging-trends': {
       title: '2024包裝盒設計趨勢解析：讓產品在貨架上脫穎而出',
-      description: '探索2024年最新包裝盒設計趨勢，從極簡主義到環保材質。智印港為您解析如何讓產品包裝成為品牌最佳代言人。',
+      description: '探索2024年最新包裝盒設計趨勢，從極簡主義到環保材質。智印云為您解析如何讓產品包裝成為品牌最佳代言人。',
       date: '2024-04-05', category: '包裝知識',
       content: `<p>在競爭激烈的零售市場中，包裝盒不僅是產品的保護殼，更是品牌與消費者的第一接觸點。2024年的包裝設計趨勢呈現出哪些新方向？讓我們一起探討。</p>
 <h3>趨勢一：極簡主義持續盛行</h3>
 <p>少即是多（Less is More）的設計哲學在包裝領域越發明顯。消費者更傾向於選擇簡潔、信息清晰的包裝。大面積留白、單一主色、精煉的產品名稱成為主流。</p>
 <h3>趨勢二：可持續包裝成為標配</h3>
-<p>環保不再是加分項，而是基本要求。可降解材料、再生紙板、植物基油墨越來越受歡迎。智印港的<a href="/product/eco-paper-bags/">環保紙袋</a>和可回收包裝盒選項，助您實現ESG目標。</p>
+<p>環保不再是加分項，而是基本要求。可降解材料、再生紙板、植物基油墨越來越受歡迎。智印云的<a href="/product/eco-paper-bags/">環保紙袋</a>和可回收包裝盒選項，助您實現ESG目標。</p>
 <h3>趨勢三：個性化與定制化</h3>
-<p>消費者渴望獨特的產品體驗。小批量、多款式的定制包裝成為新常態。智印港支持<a href="/product/gift-boxes/">禮品盒定制</a>，最低100個起訂，讓中小企業也能擁有專屬包裝。</p>
+<p>消費者渴望獨特的產品體驗。小批量、多款式的定制包裝成為新常態。智印云支持<a href="/product/gift-boxes/">禮品盒定制</a>，最低100個起訂，讓中小企業也能擁有專屬包裝。</p>
 <h3>趨勢四：智能包裝的興起</h3>
 <p>AR擴增實境、NFC芯片、溫度指示標籤等技術開始融入包裝設計。掃描包裝即可查看產品溯源、使用教程或品牌故事。</p>
 <h3>趨勢五：情感化設計</h3>
@@ -266,11 +266,11 @@ const posts: Record<string, Record<string, { title: string; description: string;
 <tr><td class="border p-2"><a href="/product/cosmetic-boxes/">化妝品盒</a></td><td class="border p-2">護膚品、彩妝</td><td class="border p-2">時尚設計，品牌加分</td></tr>
 <tr><td class="border p-2"><a href="/product/food-boxes/">食品盒</a></td><td class="border p-2">烘焙、零食</td><td class="border p-2">食品級材質，安全衛生</td></tr>
 </tbody></table>
-<p>想為您的產品打造完美的包裝盒？智印港提供從設計到印刷的一站式<a href="/product/packaging/">包裝盒定制</a>服務。立即<a href="https://wa.me/8618126380255" target="_blank">聯繫我們</a>獲取免費設計方案！</p>`,
+<p>想為您的產品打造完美的包裝盒？智印云提供從設計到印刷的一站式<a href="/product/packaging/">包裝盒定制</a>服務。立即<a href="https://wa.me/8618126380255" target="_blank">聯繫我們</a>獲取免費設計方案！</p>`,
     },
     'cmyk-guide': {
       title: 'CMYK vs RGB：印刷色彩模式完全詳解',
-      description: '理解CMYK和RGB色彩模式的區別，確保您的設計在印刷時呈現最佳效果。智印港印刷專家為您詳解色彩管理。',
+      description: '理解CMYK和RGB色彩模式的區別，確保您的設計在印刷時呈現最佳效果。智印云印刷專家為您詳解色彩管理。',
       date: '2024-03-28', category: '印刷工藝',
       content: `<p>色彩管理是印刷品質的關鍵。許多客戶在收到印刷成品後發現顏色與屏幕顯示不一致，這往往源於對色彩模式的理解不足。本文將詳細解析 CMYK 與 RGB 的區別。</p>
 <h3>RGB 色彩模式</h3>
@@ -283,13 +283,13 @@ const posts: Record<string, Record<string, { title: string; description: string;
 <li><strong>色彩偏差</strong>：RGB 轉 CMYK 時，鮮豔顏色會變暗</li>
 <li><strong>預期管理</strong>：提前轉換可預見最終效果，避免失望</li>
 </ol>
-<h3>智印港色彩管理服務</h3>
-<p>智印港採用專業色彩管理系統，確保從屏幕到印刷的色彩一致性。我們提供免費打樣服務，讓您在批量印刷前確認顏色效果。</p>
-<p>想了解更多印刷知識？<a href="https://wa.me/8618126380255" target="_blank">聯繫智印港</a>獲取專業建議。</p>`,
+<h3>智印云色彩管理服務</h3>
+<p>智印云採用專業色彩管理系統，確保從屏幕到印刷的色彩一致性。我們提供免費打樣服務，讓您在批量印刷前確認顏色效果。</p>
+<p>想了解更多印刷知識？<a href="https://wa.me/8618126380255" target="_blank">聯繫智印云</a>獲取專業建議。</p>`,
     },
     'paper-materials': {
       title: '印刷紙材選擇指南：從銅版紙到特種紙',
-      description: '不同紙材的特性與適用場景分析，幫助您為項目選擇最合適的印刷紙張。智印港300+種紙材任您選擇。',
+      description: '不同紙材的特性與適用場景分析，幫助您為項目選擇最合適的印刷紙張。智印云300+種紙材任您選擇。',
       date: '2024-03-20', category: '印刷工藝',
       content: `<p>紙張是印刷品的靈魂。不同的紙材不僅影響視覺效果，更決定了觸感和品質印象。本文將為您詳細介紹常見印刷紙材及其適用場景。</p>
 <h3>銅版紙（Art Paper）</h3>
@@ -307,11 +307,11 @@ const posts: Record<string, Record<string, { title: string; description: string;
 <tr><td class="border p-2">畫冊</td><td class="border p-2">200g銅版紙封面 + 157g內頁</td><td class="border p-2">157-250g</td></tr>
 <tr><td class="border p-2">包裝盒</td><td class="border p-2">白卡紙 / 牛皮紙</td><td class="border p-2">250-400g</td></tr>
 </tbody></table>
-<p>智印港提供超過300種紙材選擇，專業顧問為您推薦最適合的方案。立即<a href="https://wa.me/8618126380255" target="_blank">聯繫我們</a>獲取紙材樣本！</p>`,
+<p>智印云提供超過300種紙材選擇，專業顧問為您推薦最適合的方案。立即<a href="https://wa.me/8618126380255" target="_blank">聯繫我們</a>獲取紙材樣本！</p>`,
     },
     'eco-printing': {
       title: '環保印刷：企業ESG與可持續包裝的未來',
-      description: '了解環保印刷材料和工藝，為地球和品牌形象雙贏做出選擇。智印港助您實現綠色印刷目標。',
+      description: '了解環保印刷材料和工藝，為地球和品牌形象雙贏做出選擇。智印云助您實現綠色印刷目標。',
       date: '2024-03-15', category: '行業趨勢',
       content: `<p>可持續發展已經成為全球趨勢。越來越多的企業將 ESG（環境、社會、治理）納入核心戰略，而環保印刷正是其中的重要一環。</p>
 <h3>什麼是環保印刷？</h3>
@@ -323,37 +323,37 @@ const posts: Record<string, Record<string, { title: string; description: string;
 <li>優化生產流程降低能耗</li>
 </ul>
 <h3>環保材質推薦</h3>
-<p>智印港提供多種環保印刷選項：</p>
+<p>智印云提供多種環保印刷選項：</p>
 <ul class="list-disc pl-5 my-3 space-y-1">
 <li><a href="/product/eco-paper-bags/">環保紙袋</a>：使用再生牛皮紙，可完全降解</li>
 <li><a href="/product/eco-business-cards/">環保名片</a>：再生紙+大豆油墨</li>
 <li><a href="/product/eco-flyers/">環保傳單</a>：FSC認證紙張</li>
 </ul>
-<p>想為您的品牌加入環保元素？<a href="https://wa.me/8618126380255" target="_blank">聯繫智印港</a>獲取綠色印刷方案。</p>`,
+<p>想為您的品牌加入環保元素？<a href="https://wa.me/8618126380255" target="_blank">聯繫智印云</a>獲取綠色印刷方案。</p>`,
     },
     'hong-kong-printing-guide': {
       title: '香港印刷公司選擇完全指南：觀塘、九龍、新界哪裡最可靠？',
       description: '深入比較香港觀塘、九龍、新界的印刷公司，從價格、品質、交貨速度到客戶評價，幫您找到最適合的印刷合作夥伴。',
       date: '2024-05-20', category: '香港本地',
-      content: `<p>香港作為國際商業中心，每天都有成千上萬的企業需要各類印刷服務。無論是<a href="/product/premium-business-cards/">名片印刷</a>、<a href="/product/a4-flyers/">宣傳單張</a>，還是<a href="/product/gift-boxes/">包裝盒定制</a>，選擇一家可靠的印刷公司至關重要。本文將為您詳細分析香港各區印刷公司的特點，特別是觀塘這個印刷業重鎮。</p><h3>一、香港各區印刷公司分佈概況</h3><p>香港的印刷業主要集中在以下幾個區域：</p><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>觀塘（Kwun Tong）</strong>：傳統工業區，印刷廠密度最高，價格競爭激烈，適合大批量訂單</li><li><strong>九龍灣（Kowloon Bay）</strong>：新興商業區，結合設計與印刷，適合品牌定制需求</li><li><strong>荃灣（Tsuen Wan）</strong>：新界西的中心，租金較低，性價比高</li><li><strong>上環/中環</strong>：高端商業區，主打精品印刷，價格較高</li></ul><h3>二、如何評估印刷公司的可靠性</h3><ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>設備水準</strong>：是否使用海德堡、小森等國際品牌印刷機？這直接影響色彩還原度</li><li><strong>色彩管理</strong>：是否有專業的色彩校準流程？能否提供數碼打樣？</li><li><strong>交貨時間</strong>：標準交貨是3-5天，急件能否做到24小時？</li><li><strong>客戶案例</strong>：是否服務過知名企業？有無實體樣品可以參考？</li><li><strong>售後服務</strong>：印刷出現問題時的處理機制如何？</li></ol><h3>三、觀塘印刷公司的優勢</h3><p>觀塘作為香港傳統的工業重鎮，擁有全港最密集的印刷產業鏈。這裡的印刷公司普遍具有以下優勢：</p><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>價格競爭力</strong>：由於廠家集中，成本控制較好，同品質下價格通常比中環便宜20-30%</li><li><strong>產能充足</strong>：大型印刷廠多，能夠承接萬級以上的大單</li><li><strong>交通便利</strong>：觀塘線直達，從觀塘站步行10分鐘即可到達大多數印刷廠</li><li><strong>配套完善</strong>：設計、印刷、後加工一條龍服務</li></ul><h3>四、智印港的差異化優勢</h3><p>智印港位於觀塘成業街，深耕香港印刷市場多年，我們的優勢包括：</p><ul class="list-disc pl-5 my-3 space-y-1"><li>採用德國海德堡印刷設備，確保色彩精準還原</li><li>支持24小時急件印刷，滿足香港快節奏商業需求</li><li>提供免費數碼打樣，大貨印刷前確認效果</li><li>滿HK$500免費送貨，覆蓋全港十八區</li><li>一站式服務：從設計、印刷到配送，全程無憂</li></ul><p>無論您在<a href="/product/premium-business-cards/">名片</a>、<a href="/product/a4-flyers/">傳單</a>、<a href="/product/kraft-paper-bags/">紙袋</a>還是<a href="/product/gift-boxes/">包裝盒</a>有任何印刷需求，歡迎<a href="https://wa.me/8618126380255" target="_blank">WhatsApp 聯繫智印港</a>獲取免費報價和專業建議。</p>`,
+      content: `<p>香港作為國際商業中心，每天都有成千上萬的企業需要各類印刷服務。無論是<a href="/product/premium-business-cards/">名片印刷</a>、<a href="/product/a4-flyers/">宣傳單張</a>，還是<a href="/product/gift-boxes/">包裝盒定制</a>，選擇一家可靠的印刷公司至關重要。本文將為您詳細分析香港各區印刷公司的特點，特別是觀塘這個印刷業重鎮。</p><h3>一、香港各區印刷公司分佈概況</h3><p>香港的印刷業主要集中在以下幾個區域：</p><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>觀塘（Kwun Tong）</strong>：傳統工業區，印刷廠密度最高，價格競爭激烈，適合大批量訂單</li><li><strong>九龍灣（Kowloon Bay）</strong>：新興商業區，結合設計與印刷，適合品牌定制需求</li><li><strong>荃灣（Tsuen Wan）</strong>：新界西的中心，租金較低，性價比高</li><li><strong>上環/中環</strong>：高端商業區，主打精品印刷，價格較高</li></ul><h3>二、如何評估印刷公司的可靠性</h3><ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>設備水準</strong>：是否使用海德堡、小森等國際品牌印刷機？這直接影響色彩還原度</li><li><strong>色彩管理</strong>：是否有專業的色彩校準流程？能否提供數碼打樣？</li><li><strong>交貨時間</strong>：標準交貨是3-5天，急件能否做到24小時？</li><li><strong>客戶案例</strong>：是否服務過知名企業？有無實體樣品可以參考？</li><li><strong>售後服務</strong>：印刷出現問題時的處理機制如何？</li></ol><h3>三、觀塘印刷公司的優勢</h3><p>觀塘作為香港傳統的工業重鎮，擁有全港最密集的印刷產業鏈。這裡的印刷公司普遍具有以下優勢：</p><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>價格競爭力</strong>：由於廠家集中，成本控制較好，同品質下價格通常比中環便宜20-30%</li><li><strong>產能充足</strong>：大型印刷廠多，能夠承接萬級以上的大單</li><li><strong>交通便利</strong>：觀塘線直達，從觀塘站步行10分鐘即可到達大多數印刷廠</li><li><strong>配套完善</strong>：設計、印刷、後加工一條龍服務</li></ul><h3>四、智印云的差異化優勢</h3><p>智印云位於觀塘成業街，深耕香港印刷市場多年，我們的優勢包括：</p><ul class="list-disc pl-5 my-3 space-y-1"><li>採用德國海德堡印刷設備，確保色彩精準還原</li><li>支持24小時急件印刷，滿足香港快節奏商業需求</li><li>提供免費數碼打樣，大貨印刷前確認效果</li><li>滿HK$500免費送貨，覆蓋全港十八區</li><li>一站式服務：從設計、印刷到配送，全程無憂</li></ul><p>無論您在<a href="/product/premium-business-cards/">名片</a>、<a href="/product/a4-flyers/">傳單</a>、<a href="/product/kraft-paper-bags/">紙袋</a>還是<a href="/product/gift-boxes/">包裝盒</a>有任何印刷需求，歡迎<a href="https://wa.me/8618126380255" target="_blank">WhatsApp 聯繫智印云</a>獲取免費報價和專業建議。</p>`,
     },
     'design-file-specs': {
       title: '印刷文件設計規範：出血位、分辨率、色彩模式一次搞懂',
       description: '從出血位設置到色彩模式轉換，這篇指南將幫助設計師和企業避免最常見的印刷文件錯誤，確保印刷成品完美無瑕。',
       date: '2024-05-15', category: '設計技巧',
-      content: `<p>很多設計師和企業市場部在準備印刷文件時都會遇到各種問題：成品邊緣出現白邊、圖片模糊不清、顏色與屏幕顯示差異巨大……這些問題大多源於對印刷文件規範的不了解。本文將詳細講解出血位、分辨率和色彩模式這三個核心概念。</p><h3>一、什麼是出血位（Bleed）？</h3><p>出血位是指在設計稿中超出成品裁切線的部分。由於印刷後需要裁切，如果設計剛好到邊緣，任何微小的裁切誤差都會導致露出白邊。因此，我們通常需要在成品尺寸外預留<strong>3mm</strong>的出血位。</p><h4>常見產品的出血位設置</h4><table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">產品</th><th class="border p-2 text-left">成品尺寸</th><th class="border p-2 text-left">設計尺寸（含出血）</th></tr></thead><tbody><tr><td class="border p-2">標準名片</td><td class="border p-2">90 × 54mm</td><td class="border p-2">96 × 60mm</td></tr><tr><td class="border p-2">A4 傳單</td><td class="border p-2">210 × 297mm</td><td class="border p-2">216 × 303mm</td></tr><tr><td class="border p-2">A3 海報</td><td class="border p-2">297 × 420mm</td><td class="border p-2">303 × 426mm</td></tr></tbody></table><h3>二、分辨率：為什麼 300dpi 是標準？</h3><p>分辨率決定了印刷品的清晰度。屏幕上顯示通常只需要72dpi，但印刷需要<strong>至少300dpi</strong>才能保證圖片清晰銳利。</p><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>72dpi</strong>：僅適用於網頁、社交媒體</li><li><strong>150dpi</strong>：大型海報、遠距離觀看的印刷品可以接受的最低標準</li><li><strong>300dpi</strong>：名片、書刊、宣傳單等近距離觀看印刷品的標準</li></ul><h3>三、CMYK vs RGB</h3><p>屏幕使用 RGB 色彩模式（紅綠藍光疊加），而印刷使用 CMYK 色彩模式（青品黃黑油墨疊加）。RGB 的色域比 CMYK 廣，直接印刷 RGB 文件會導致顏色變暗、鮮豔度下降。</p><h3>四、文件格式建議</h3><ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>PDF/X-1a</strong>：最佳選擇，字體嵌入、色彩穩定</li><li><strong>AI（Adobe Illustrator）</strong>：矢量文件，適合 Logo 和圖形</li><li><strong>PSD（Photoshop）</strong>：點陣文件，適合照片類設計</li></ol><p>不確定您的文件是否符合印刷標準？<a href="https://wa.me/8618126380255" target="_blank">聯繫智印港</a>，我們提供免費文件檢查服務。</p>`,
+      content: `<p>很多設計師和企業市場部在準備印刷文件時都會遇到各種問題：成品邊緣出現白邊、圖片模糊不清、顏色與屏幕顯示差異巨大……這些問題大多源於對印刷文件規範的不了解。本文將詳細講解出血位、分辨率和色彩模式這三個核心概念。</p><h3>一、什麼是出血位（Bleed）？</h3><p>出血位是指在設計稿中超出成品裁切線的部分。由於印刷後需要裁切，如果設計剛好到邊緣，任何微小的裁切誤差都會導致露出白邊。因此，我們通常需要在成品尺寸外預留<strong>3mm</strong>的出血位。</p><h4>常見產品的出血位設置</h4><table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">產品</th><th class="border p-2 text-left">成品尺寸</th><th class="border p-2 text-left">設計尺寸（含出血）</th></tr></thead><tbody><tr><td class="border p-2">標準名片</td><td class="border p-2">90 × 54mm</td><td class="border p-2">96 × 60mm</td></tr><tr><td class="border p-2">A4 傳單</td><td class="border p-2">210 × 297mm</td><td class="border p-2">216 × 303mm</td></tr><tr><td class="border p-2">A3 海報</td><td class="border p-2">297 × 420mm</td><td class="border p-2">303 × 426mm</td></tr></tbody></table><h3>二、分辨率：為什麼 300dpi 是標準？</h3><p>分辨率決定了印刷品的清晰度。屏幕上顯示通常只需要72dpi，但印刷需要<strong>至少300dpi</strong>才能保證圖片清晰銳利。</p><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>72dpi</strong>：僅適用於網頁、社交媒體</li><li><strong>150dpi</strong>：大型海報、遠距離觀看的印刷品可以接受的最低標準</li><li><strong>300dpi</strong>：名片、書刊、宣傳單等近距離觀看印刷品的標準</li></ul><h3>三、CMYK vs RGB</h3><p>屏幕使用 RGB 色彩模式（紅綠藍光疊加），而印刷使用 CMYK 色彩模式（青品黃黑油墨疊加）。RGB 的色域比 CMYK 廣，直接印刷 RGB 文件會導致顏色變暗、鮮豔度下降。</p><h3>四、文件格式建議</h3><ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>PDF/X-1a</strong>：最佳選擇，字體嵌入、色彩穩定</li><li><strong>AI（Adobe Illustrator）</strong>：矢量文件，適合 Logo 和圖形</li><li><strong>PSD（Photoshop）</strong>：點陣文件，適合照片類設計</li></ol><p>不確定您的文件是否符合印刷標準？<a href="https://wa.me/8618126380255" target="_blank">聯繫智印云</a>，我們提供免費文件檢查服務。</p>`,
     },
     'brand-materials-checklist': {
       title: '企業品牌物料清單：從名片到展架的全套印刷方案',
       description: '無論是初創企業還是品牌升級，這份完整的品牌物料印刷清單將幫助您系統化地規劃所有印刷需求，確保品牌形象的一致性。',
       date: '2024-05-10', category: '品牌建設',
-      content: `<p>品牌形象的建立需要系統化的物料支持。從一張<a href="/product/premium-business-cards/">名片</a>到一個<a href="/product/gift-boxes/">產品包裝盒</a>，每一個觸點都是品牌與客戶溝通的機會。本文將為您提供一份完整的企業品牌物料清單。</p><h3>一、基礎品牌識別物料</h3><ul class="list-disc pl-5 my-3 space-y-1"><li><a href="/product/premium-business-cards/">名片</a>：員工標配，建議準備雙面設計</li><li><a href="/product/envelopes/">信封</a>：正式商務溝通的必備品</li><li>信紙：合同、報價單等正式文件使用</li><li>文件夾：客戶會議、投標時使用，提升專業形象</li></ul><h3>二、市場推廣物料</h3><ul class="list-disc pl-5 my-3 space-y-1"><li><a href="/product/a4-flyers/">宣傳單張</a>：活動推廣、產品介紹</li><li><a href="/product/folded-leaflets/">摺頁/小冊子</a>：產品目錄、服務介紹</li><li><a href="/product/posters/">海報</a>：店內裝飾、活動宣傳</li><li><a href="/product/roll-up-banners/">易拉架</a>：展會、路演必備</li></ul><h3>三、產品包裝物料</h3><ul class="list-disc pl-5 my-3 space-y-1"><li><a href="/product/kraft-paper-bags/">紙袋</a>：零售購物袋，環保且有質感</li><li><a href="/product/gift-boxes/">禮品盒</a>：高端產品包裝，提升品牌檔次</li><li><a href="/product/mailer-boxes/">快遞盒</a>：電商發貨用</li></ul><h3>四、品牌物料規劃建議</h3><ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>統一設計語言</strong>：所有物料使用相同的色彩、字體和圖形元素</li><li><strong>分階段製作</strong>：初創企業先完成基礎物料，再逐步擴展</li><li><strong>選擇可靠供應商</strong>：與一家能夠提供全套服務的印刷公司合作，確保品質一致性</li></ol><p>智印港提供一站式品牌物料印刷服務。<a href="https://wa.me/8618126380255" target="_blank">立即聯繫我們</a>獲取專屬品牌物料方案。</p>`,
+      content: `<p>品牌形象的建立需要系統化的物料支持。從一張<a href="/product/premium-business-cards/">名片</a>到一個<a href="/product/gift-boxes/">產品包裝盒</a>，每一個觸點都是品牌與客戶溝通的機會。本文將為您提供一份完整的企業品牌物料清單。</p><h3>一、基礎品牌識別物料</h3><ul class="list-disc pl-5 my-3 space-y-1"><li><a href="/product/premium-business-cards/">名片</a>：員工標配，建議準備雙面設計</li><li><a href="/product/envelopes/">信封</a>：正式商務溝通的必備品</li><li>信紙：合同、報價單等正式文件使用</li><li>文件夾：客戶會議、投標時使用，提升專業形象</li></ul><h3>二、市場推廣物料</h3><ul class="list-disc pl-5 my-3 space-y-1"><li><a href="/product/a4-flyers/">宣傳單張</a>：活動推廣、產品介紹</li><li><a href="/product/folded-leaflets/">摺頁/小冊子</a>：產品目錄、服務介紹</li><li><a href="/product/posters/">海報</a>：店內裝飾、活動宣傳</li><li><a href="/product/roll-up-banners/">易拉架</a>：展會、路演必備</li></ul><h3>三、產品包裝物料</h3><ul class="list-disc pl-5 my-3 space-y-1"><li><a href="/product/kraft-paper-bags/">紙袋</a>：零售購物袋，環保且有質感</li><li><a href="/product/gift-boxes/">禮品盒</a>：高端產品包裝，提升品牌檔次</li><li><a href="/product/mailer-boxes/">快遞盒</a>：電商發貨用</li></ul><h3>四、品牌物料規劃建議</h3><ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>統一設計語言</strong>：所有物料使用相同的色彩、字體和圖形元素</li><li><strong>分階段製作</strong>：初創企業先完成基礎物料，再逐步擴展</li><li><strong>選擇可靠供應商</strong>：與一家能夠提供全套服務的印刷公司合作，確保品質一致性</li></ol><p>智印云提供一站式品牌物料印刷服務。<a href="https://wa.me/8618126380255" target="_blank">立即聯繫我們</a>獲取專屬品牌物料方案。</p>`,
     },
     'mtr-advertising-specs': {
       title: '港鐵廣告印刷規格全解析：港島線、觀塘線、荃灣線投放指南',
       description: '詳細解析港鐵各線路廣告位的印刷規格、尺寸要求和投放策略，助您在香港最繁忙的交通網絡中精準觸達目標客戶。',
       date: '2024-05-05', category: '香港本地',
-      content: `<p>香港港鐵（MTR）每天服務超過500萬人次，是香港最繁忙的公共交通系統。對於希望在<a href="/product/posters/">海報</a>和展示物料上投放廣告的企業來說，港鐵廣告無疑是極具性價比的選擇。</p><h3>一、港鐵廣告的主要形式</h3><h4>站內廣告</h4><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>月台燈箱（12-sheet / 48-sheet）</strong>：最常見的形式，位於月台牆面</li><li><strong>車站大堂燈箱</strong>：位於付費區大堂，人流量大</li><li><strong>月台門貼（Platform Screen Door）</strong>：新型廣告位，視覺衝擊力極強</li><li><strong>立柱包裝（Pillar Wrap）</strong>：將車站立柱包裹成廣告位</li></ul><h4>車廂廣告</h4><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>車廂內海報</strong>：車門上方和車廂連接處的標準海報位</li><li><strong>全車身廣告（Train Wrap）</strong>：整列車的外觀廣告，曝光率最高</li></ul><h3>二、主要廣告位印刷規格</h3><table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">廣告類型</th><th class="border p-2 text-left">尺寸（寬×高）</th><th class="border p-2 text-left">解析度要求</th></tr></thead><tbody><tr><td class="border p-2">12-sheet 燈箱</td><td class="border p-2">3000 × 1500mm</td><td class="border p-2">100dpi @ 實際尺寸</td></tr><tr><td class="border p-2">48-sheet 燈箱</td><td class="border p-2">6096 × 3048mm</td><td class="border p-2">72-100dpi</td></tr><tr><td class="border p-2">車廂內海報</td><td class="border p-2">1189 × 841mm (A0)</td><td class="border p-2">150dpi</td></tr></tbody></table><h3>三、各線路投放策略建議</h3><h4>港島線（Island Line）</h4><p>途經中環、金鐘、灣仔、銅鑼灣等核心商業區，受眾以白領、金融人士和遊客為主。</p><h4>觀塘線（Kwun Tong Line）</h4><p>連接觀塘、九龍灣等工業和商業混合區，以及旺角、油麻地等人流密集區。</p><h4>荃灣線（Tsuen Wan Line）</h4><p>貫穿新界和九龍，覆蓋住宅區和商業區。適合投放家庭消費品、教育和房地產廣告。</p><h3>四、印刷注意事項</h3><ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>色彩模式</strong>：必須使用 CMYK，RGB 文件會被拒收</li><li><strong>字體嵌入</strong>：PDF 文件必須嵌入所有字體</li><li><strong>材質</strong>：燈箱廣告使用背噴燈片（Backlit Film），車廂海報使用 PP 合成紙</li></ol><p>智印港提供港鐵廣告物料的專業印刷服務。<a href="https://wa.me/8618126380255" target="_blank">聯繫我們</a>獲取報價。</p>`,
+      content: `<p>香港港鐵（MTR）每天服務超過500萬人次，是香港最繁忙的公共交通系統。對於希望在<a href="/product/posters/">海報</a>和展示物料上投放廣告的企業來說，港鐵廣告無疑是極具性價比的選擇。</p><h3>一、港鐵廣告的主要形式</h3><h4>站內廣告</h4><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>月台燈箱（12-sheet / 48-sheet）</strong>：最常見的形式，位於月台牆面</li><li><strong>車站大堂燈箱</strong>：位於付費區大堂，人流量大</li><li><strong>月台門貼（Platform Screen Door）</strong>：新型廣告位，視覺衝擊力極強</li><li><strong>立柱包裝（Pillar Wrap）</strong>：將車站立柱包裹成廣告位</li></ul><h4>車廂廣告</h4><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>車廂內海報</strong>：車門上方和車廂連接處的標準海報位</li><li><strong>全車身廣告（Train Wrap）</strong>：整列車的外觀廣告，曝光率最高</li></ul><h3>二、主要廣告位印刷規格</h3><table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">廣告類型</th><th class="border p-2 text-left">尺寸（寬×高）</th><th class="border p-2 text-left">解析度要求</th></tr></thead><tbody><tr><td class="border p-2">12-sheet 燈箱</td><td class="border p-2">3000 × 1500mm</td><td class="border p-2">100dpi @ 實際尺寸</td></tr><tr><td class="border p-2">48-sheet 燈箱</td><td class="border p-2">6096 × 3048mm</td><td class="border p-2">72-100dpi</td></tr><tr><td class="border p-2">車廂內海報</td><td class="border p-2">1189 × 841mm (A0)</td><td class="border p-2">150dpi</td></tr></tbody></table><h3>三、各線路投放策略建議</h3><h4>港島線（Island Line）</h4><p>途經中環、金鐘、灣仔、銅鑼灣等核心商業區，受眾以白領、金融人士和遊客為主。</p><h4>觀塘線（Kwun Tong Line）</h4><p>連接觀塘、九龍灣等工業和商業混合區，以及旺角、油麻地等人流密集區。</p><h4>荃灣線（Tsuen Wan Line）</h4><p>貫穿新界和九龍，覆蓋住宅區和商業區。適合投放家庭消費品、教育和房地產廣告。</p><h3>四、印刷注意事項</h3><ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>色彩模式</strong>：必須使用 CMYK，RGB 文件會被拒收</li><li><strong>字體嵌入</strong>：PDF 文件必須嵌入所有字體</li><li><strong>材質</strong>：燈箱廣告使用背噴燈片（Backlit Film），車廂海報使用 PP 合成紙</li></ol><p>智印云提供港鐵廣告物料的專業印刷服務。<a href="https://wa.me/8618126380255" target="_blank">聯繫我們</a>獲取報價。</p>`,
     },
   },
   en: {

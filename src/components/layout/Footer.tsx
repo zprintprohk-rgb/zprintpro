@@ -20,7 +20,7 @@ interface FooterProps {
 
 const translations = {
   'zh-hk': {
-    companyDesc: '智印港 zprintpro.com 是香港領先的線上印刷平台，提供高品質、低價格、快交貨的專業印刷服務。從紙袋到海報，滿足您的一切印刷需求。',
+    companyDesc: '智印云 ZPrintPro 是全球智能印刷定制平台，提供AI智能報價、在線文件上傳、Airwallex安全支付。從貼紙到包裝，30秒報價，72小時全球交付。',
     phone: '+86 181 2638 0255',
     email: 'zprintpro@outlook.com',
     address: '香港九龍觀塘偉業街180號 成運工業大廈',
@@ -66,10 +66,10 @@ const translations = {
     ],
     followUs: '關注我們',
     friendLinks: '友情連結',
-    copyright: '© 2025 智印港 zprintpro.com. 保留所有權利。',
+    copyright: '© 2026 智印云 ZPrintPro. 保留所有權利。',
   },
   en: {
-    companyDesc: 'zprintpro.com is Hong Kong\'s leading online printing platform, offering high-quality, low-cost, fast-delivery professional printing services. From paper bags to posters, we meet all your printing needs.',
+    companyDesc: 'ZPrintPro is a global smart printing platform offering AI instant quotes, online file upload, and Airwallex secure payment. From stickers to packaging, get a quote in 30 seconds, delivered globally in 72 hours.',
     phone: '+86 181 2638 0255',
     email: 'zprintpro@outlook.com',
     address: '180 Wai Yip Street, Kwun Tong, Kowloon, Hong Kong',
@@ -115,10 +115,10 @@ const translations = {
     ],
     followUs: 'Follow Us',
     friendLinks: 'Friendly Links',
-    copyright: '© 2025 zprintpro.com. All rights reserved.',
+    copyright: '© 2026 ZPrintPro. All rights reserved.',
   },
   ja: {
-    companyDesc: 'zprintpro.comは香港を代表するオンライン印刷プラットフォームで、高品質・低価格・迅速納品のプロフェッショナル印刷サービスを提供しています。紙袋からポスターまで、あらゆる印刷ニーズにお応えします。',
+    companyDesc: 'ZPrintProはグローバルスマート印刷プラットフォームです。AI即時見積、オンラインファイルアップロード、Airwallex安全決済を提供。ステッカーからパッケージングまで、30秒で見積もり、72時間でグローバル配送。',
     phone: '+86 181 2638 0255',
     email: 'zprintpro@outlook.com',
     address: '香港九龍観塘偉業街180号 成運工業ビル',
@@ -164,7 +164,7 @@ const translations = {
     ],
     followUs: 'フォロー',
     friendLinks: '友好リンク',
-    copyright: '© 2025 zprintpro.com. All rights reserved.',
+    copyright: '© 2026 ZPrintPro. All rights reserved.',
   },
 };
 
@@ -181,10 +181,10 @@ export function Footer({ locale }: FooterProps) {
           <div className="lg:col-span-2">
             <div className="mb-4">
               <Image
-                src="/images/logo.png"
-                alt="智印港 zprintpro.com"
-                width={180}
-                height={44}
+                src="/images/logo-dark.svg"
+                alt="智印云 ZPrintPro"
+                width={240}
+                height={53}
                 className="h-11 w-auto"
               />
             </div>
@@ -225,21 +225,6 @@ export function Footer({ locale }: FooterProps) {
               </ul>
             </div>
           ))}
-        </div>
-
-        {/* Friendly Links */}
-        <div className="mt-10 pt-6 border-t border-white/10">
-          <div className="flex flex-wrap items-center gap-3">
-            <span className="text-gray-400 text-sm font-medium">{t.friendLinks}：</span>
-            <a
-              href="https://www.zprintpro.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-[#F87314] transition-colors text-sm"
-            >
-              Z-printpro.com
-            </a>
-          </div>
         </div>
 
         {/* Social & Bottom */}

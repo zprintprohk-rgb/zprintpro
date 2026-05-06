@@ -338,7 +338,7 @@ export function Header({ locale }: HeaderProps) {
           <div className="px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-[53px] lg:h-[61px] gap-4">
               <Link href={`${localePrefix}/`} className="flex-shrink-0 ml-[30px]">
-                <Image src="/images/logo.png" alt="智印港 ZprintPro" width={180} height={44} className="h-11 w-auto" priority />
+                <Image src="/images/logo.svg" alt="智印云 ZPrintPro" width={180} height={44} className="h-11 w-auto" priority />
               </Link>
               <form onSubmit={handleSearch} className="hidden md:flex flex-1 max-w-xl mx-4">
                 <div className="relative w-full">

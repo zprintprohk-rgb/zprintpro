@@ -17,12 +17,12 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: { locale: Locale } }): Promise<Metadata> {
   const { locale } = params;
   const titles = {
-    'zh-hk': '香港印刷服務地區 | 全港送貨 | 智印港 ZprintPro',
+    'zh-hk': '香港印刷服務地區 | 全港送貨 | 智印云 ZprintPro',
     en: 'Hong Kong Printing Service Areas | Island-wide Delivery | ZprintPro',
     ja: '香港印刷サービスエリア | 全港配送 | ZprintPro',
   };
   const descriptions = {
-    'zh-hk': '智印港提供全港印刷送貨服務，覆蓋香港島、九龍、新界及離島。即日印刷，順豐速遞，次日送達。觀塘工場直送，品質保證。',
+    'zh-hk': '智印云提供全港印刷送貨服務，覆蓋香港島、九龍、新界及離島。即日印刷，順豐速遞，次日送達。觀塘工場直送，品質保證。',
     en: 'ZprintPro offers island-wide printing delivery across Hong Kong Island, Kowloon, New Territories and Outlying Islands. Same-day printing, SF Express next-day delivery. Kwun Tong factory direct.',
     ja: 'ZprintProは香港島・九龍・新界・離島をカバーする全港印刷配送サービスを提供。即日印刷、顺丰翌日配送。観塘工場直送、品質保証。',
   };
@@ -47,7 +47,7 @@ export default function ServiceAreasPage({ params }: { params: { locale: Locale 
   const geoJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Place',
-    name: locale === 'zh-hk' ? '智印港服務地區' : locale === 'en' ? 'ZprintPro Service Areas' : 'ZprintProサービスエリア',
+    name: locale === 'zh-hk' ? '智印云服務地區' : locale === 'en' ? 'ZprintPro Service Areas' : 'ZprintProサービスエリア',
     geo: {
       '@type': 'GeoCoordinates',
       latitude: '22.3193',

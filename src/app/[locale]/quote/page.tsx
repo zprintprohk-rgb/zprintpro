@@ -15,7 +15,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: QuotePageProps): Promise<Metadata> {
   const locale = params.locale as Locale;
   const titles: Record<string, string> = {
-    'zh-hk': '免費獲取報價 | 智印港 ZprintPro',
+    'zh-hk': '免費獲取報價 | 智印云 ZprintPro',
     'en': 'Get a Free Quote | ZprintPro',
     'ja': '無料お見積もり | ZprintPro',
   };

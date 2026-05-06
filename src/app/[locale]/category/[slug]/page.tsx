@@ -310,7 +310,7 @@ export default function CategoryPage({
             {/* 主標題 */}
             <div className="text-center">
               <h3 className="text-2xl md:text-3xl font-bold text-[#333333] mb-5">
-                {locale === 'zh-hk' ? '為何選擇智印港？' : locale === 'en' ? 'Why Choose ZprintPro?' : 'なぜZprintProを選ぶ？'}
+                {locale === 'zh-hk' ? '為何選擇智印云？' : locale === 'en' ? 'Why Choose ZprintPro?' : 'なぜZprintProを選ぶ？'}
               </h3>
               <RegionalTrustBadges locale={locale} />
             </div>

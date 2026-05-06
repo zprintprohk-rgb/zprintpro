@@ -13,7 +13,7 @@ const content: Record<Locale, Record<RegionalContentProps['type'], string>> = {
     shipping: '香港本地免費送貨（離島除外）· 觀塘/九龍/港島即日達 · 新界1-2個工作天',
     pricingNote: '以上價格以港幣（HKD）計算。量大價優，歡迎致電查詢批量報價。',
     contactCta: 'WhatsApp即時查詢',
-    expertIntro: '智印港位於香港觀塘工業區，專注本地印刷服務超過15年。我們熟悉香港各區的商業環境和物流網絡，能夠為您提供最貼合本地需求的印刷解決方案。',
+    expertIntro: '智印云位於香港觀塘工業區，專注本地印刷服務超過15年。我們熟悉香港各區的商業環境和物流網絡，能夠為您提供最貼合本地需求的印刷解決方案。',
   },
   'en': {
     trustSignals: 'Hong Kong ISO Certified Factory · Worldwide DHL/FedEx Shipping · USD/GBP/AUD Accepted · Factory Direct Pricing',

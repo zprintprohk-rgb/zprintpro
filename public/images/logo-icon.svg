@@ -1,0 +1,20 @@
+<svg viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="iTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee" />
+      <stop offset="100%" stop-color="#3b82f6" />
+    </linearGradient>
+    <linearGradient id="iBot" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1d4ed8" />
+      <stop offset="100%" stop-color="#1e3a8a" />
+    </linearGradient>
+    <linearGradient id="iFold" x1="100%" y1="0%" x2="80%" y2="20%">
+      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0.4" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="96" fill="#0f172a"/>
+  <path d="M80 96 L400 96 L400 176 L144 368 L80 368 Z" fill="url(#iTop)" />
+  <path d="M144 368 L400 176 L400 240 C432 240 456 264 456 296 C456 328 432 352 408 352 C432 352 456 376 456 400 L144 400 Z" fill="url(#iBot)" />
+  <path d="M400 96 L400 176 L336 96 Z" fill="url(#iFold)" />
+</svg>

@@ -9,10 +9,10 @@ export type Locale = 'zh-hk' | 'en' | 'ja';
 
 // 網站配置
 export const siteConfig = {
-  name: '智印港 ZPrintPro',
+  name: '智印云 ZPrintPro',
   url: 'https://zprintpro.com',
-  logo: 'https://zprintpro.com/logo.png',
-  phone: '+852 [TODO: 填入實際香港電話]',
+  logo: 'https://zprintpro.com/images/logo.svg',
+  phone: '+852 5500 8250',
   email: 'zprintpro@outlook.com',
   address: {
     street: '180 Wai Yip Street',
@@ -88,19 +88,19 @@ export const regionConfig: Record<Locale, RegionConfig> = {
 // 多語言元數據
 const homeMetadata: Record<Locale, { title: string; description: string; keywords: string }> = {
   'zh-hk': {
-    title: '智印港 ZPrintPro | 香港專業印刷服務 | 貼紙標籤卡片書刊印刷',
-    description: '智印港提供一站式專業印刷服務，包括貼紙、標籤、名片、書刊、包裝等。品質保證，價格透明，最快即日交貨。免費送貨滿$500。',
-    keywords: '印刷, 貼紙, 標籤, 名片, 書刊, 包裝, 香港印刷, 數碼印刷, 急件印刷, ZPrintPro, 智印港',
+    title: '智印云 ZPrintPro | 全球智能印刷定制平台 | 30秒報價72小時交付',
+    description: '智印云是全球智能印刷定制平台，提供貼紙、名片、包裝、海報等一站式印刷服務。AI智能報價、在線文件上傳、Airwallex安全支付，品質保證，最快即日交貨。',
+    keywords: '印刷, 貼紙, 標籤, 名片, 書刊, 包裝, 香港印刷, 數碼印刷, 急件印刷, ZPrintPro, 智印云, 線上報價',
   },
   en: {
-    title: 'ZPrintPro | Professional Printing Services Hong Kong | Stickers Labels Cards Booklets',
-    description: 'ZPrintPro offers one-stop professional printing services including stickers, labels, business cards, booklets, and packaging. Quality guaranteed, transparent pricing, same-day delivery available. Free shipping over $500.',
-    keywords: 'printing, stickers, labels, business cards, booklets, packaging, Hong Kong printing, digital printing, rush printing, ZPrintPro',
+    title: 'ZPrintPro | Global Smart Printing Platform | Instant Quote 72h Delivery',
+    description: 'ZPrintPro is a global smart printing platform offering stickers, business cards, packaging, posters and more. AI instant quote, online file upload, Airwallex secure payment. Quality guaranteed, same-day delivery available.',
+    keywords: 'printing, stickers, labels, business cards, booklets, packaging, Hong Kong printing, digital printing, rush printing, ZPrintPro, online quote',
   },
   ja: {
-    title: 'ZPrintPro | 香港プロ印刷サービス | ステッカーラベル名刺冊子印刷',
-    description: 'ZPrintProはステッカー、ラベル、名刺、冊子、包装などのワンストッププロ印刷サービスを提供します。品質保証、透明な価格、最短当日配送。500ドル以上送料無料。',
-    keywords: '印刷, ステッカー, ラベル, 名刺, 冊子, 包装, 香港印刷, デジタル印刷, 急ぎ印刷, ZPrintPro',
+    title: 'ZPrintPro | グローバルスマート印刷プラットフォーム | 即時見積72時間納品',
+    description: 'ZPrintProはグローバルスマート印刷プラットフォームです。ステッカー、名刺、包装、ポスターなどを提供。AI即時見積、オンラインファイルアップロード、Airwallex安全決済。品質保証、最短当日納品。',
+    keywords: '印刷, ステッカー, ラベル, 名刺, 冊子, 包装, 香港印刷, デジタル印刷, 急ぎ印刷, ZPrintPro, オンライン見積',
   },
 };
 
@@ -171,7 +171,7 @@ const categorySeoData: Record<string, {
       ja: '名刺印刷,名刺作成,オーダーメイド名刺,高級名刺,即日名刺,急ぎ名刺,会社名刺,名刺デザイン,箔押し名刺,厚紙名刺',
     },
     descriptions: {
-      'zh-hk': '香港專業名片印刷，100張起訂，最快24小時交貨。支持燙金、UV、凹凸、圓角等特殊工藝，免費設計模板。智印港ISO9001認證，品質保證。',
+      'zh-hk': '香港專業名片印刷，100張起訂，最快24小時交貨。支持燙金、UV、凹凸、圓角等特殊工藝，免費設計模板。智印云ISO9001認證，品質保證。',
       en: 'Custom business card printing with same-day delivery in Hong Kong. Premium paper stocks, foil stamping, spot UV, embossing. Free design templates. ISO9001 certified. 100 cards minimum.',
       ja: '香港の名刺印刷専門店。100枚から、最短24時間納品。箔押し・UV・エンボス・丸角加工対応。無料デザインテンプレート。ISO9001認証取得。',
     },
@@ -247,7 +247,7 @@ function getDefaultCategorySeo(categoryName: string, categoryNameEn: string, cat
       ja: `${categoryNameJa}印刷,${categoryNameJa}作成,${categoryNameJa} 香港`,
     },
     descriptions: {
-      'zh-hk': `專業${categoryName}印刷服務，品質保證，價格透明。智印港提供多種${categoryName}選擇，最快即日交貨。`,
+      'zh-hk': `專業${categoryName}印刷服務，品質保證，價格透明。智印云提供多種${categoryName}選擇，最快即日交貨。`,
       en: `Professional ${categoryNameEn} printing services with quality guarantee and transparent pricing. ZPrintPro offers various ${categoryNameEn} options with same-day delivery available.`,
       ja: `プロの${categoryNameJa}印刷サービス、品質保証、透明な価格。ZPrintProは様々な${categoryNameJa}オプションを提供し、最短当日配送可能。`,
     },
@@ -504,9 +504,9 @@ export function generateProductReviewsJsonLd(
   const authorsJa = ['張さん', '李さん', '陳さん', '王さん', '劉さん', '黄さん', '趙さん', '周さん'];
   
   const contentsZh = [
-    `非常滿意${productName}的品質，印刷效果清晰，交貨準時。強烈推薦智印港！`,
+    `非常滿意${productName}的品質，印刷效果清晰，交貨準時。強烈推薦智印云！`,
     `${productName}的材質很好，顏色還原度高，客服回覆也很及時。會再次回購。`,
-    `我們公司已經第三次在智印港訂購${productName}了，每次都很滿意，價格也很合理。`,
+    `我們公司已經第三次在智印云訂購${productName}了，每次都很滿意，價格也很合理。`,
     `${productName}的做工精細，包裝也很結實，沒有損壞。物流也很快。`,
   ];
   const contentsEn = [
@@ -611,7 +611,7 @@ export function generateWebsiteJsonLd() {
 // 報價頁面元數據
 export function generateQuotePageMetadata(locale: Locale): Metadata {
   const titles = {
-    'zh-hk': '即時報價 | 智印港 ZPrintPro',
+    'zh-hk': '即時報價 | 智印云 ZPrintPro',
     'en': 'Instant Quote | ZPrintPro',
     'ja': '即時見積もり | ZPrintPro',
   };

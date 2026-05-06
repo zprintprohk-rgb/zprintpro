@@ -1,7 +1,7 @@
 {
-  "name": "智印港 ZPrintPro",
+  "name": "智印云 ZPrintPro",
   "short_name": "ZPrintPro",
-  "description": "香港專業印刷服務 - 貼紙、標籤、名片、書刊、包裝印刷",
+  "description": "智印云 ZPrintPro - 全球智能印刷定制平台。AI報價、在線上傳、Airwallex支付，30秒報價72小時全球交付。",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",

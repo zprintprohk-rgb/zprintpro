@@ -30,7 +30,7 @@ const translations: Record<string, {
     viewMore: '查詢更多',
     buyingGuideTag: '選購指南',
     datePrefix: '發布於',
-    author: '智印港印刷專家',
+    author: '智印云印刷專家',
     categories: [
       { key: 'company-news', label: '公司新聞' },
       { key: 'sticker', label: '貼紙知識' },
@@ -110,7 +110,7 @@ const defaultArticleImage = '/images/articles/sticker-guide.jpg';
 
 const articles: Record<string, { slug: string; title: string; date: string; category: string; excerpt: string }[]> = {
   'zh-hk': [
-    { slug: 'company-intro', title: '智印港印刷公司簡介：專業設備與一站式印刷服務', date: '2024-06-01', category: 'company-news', excerpt: '智印港擁有海德堡6+1印刷機、HP數碼印刷機、馬天尼膠裝線等先進設備，提供從設計到印刷到後加工的一站式服務。' },
+    { slug: 'company-intro', title: '智印云印刷公司簡介：專業設備與一站式印刷服務', date: '2024-06-01', category: 'company-news', excerpt: '智印云擁有海德堡6+1印刷機、HP數碼印刷機、馬天尼膠裝線等先進設備，提供從設計到印刷到後加工的一站式服務。' },
     { slug: 'hong-kong-printing-guide', title: '香港印刷公司選擇完全指南：觀塘、九龍、新界哪裡最可靠？', date: '2024-05-20', category: 'hongkong', excerpt: '深入比較香港觀塘、九龍、新界的印刷公司，從價格、品質、交貨速度到客戶評價，幫您找到最適合的印刷合作夥伴。' },
     { slug: 'design-file-specs', title: '印刷文件設計規範：出血位、分辨率、色彩模式一次搞懂', date: '2024-05-15', category: 'design', excerpt: '從出血位設置到色彩模式轉換，這篇指南將幫助設計師和企業避免最常見的印刷文件錯誤。' },
     { slug: 'brand-materials-checklist', title: '企業品牌物料清單：從名片到展架的全套印刷方案', date: '2024-05-10', category: 'branding', excerpt: '無論是初創企業還是品牌升級，這份完整的品牌物料印刷清單將幫助您系統化地規劃所有印刷需求。' },

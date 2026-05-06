@@ -277,7 +277,7 @@ export default function ProductPage({
             {/* 右侧：产品信息和报价计算器 */}
             <div>
               <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                {productSeo?.h1Suffix[locale] || (locale === 'zh-hk' ? `${productTitle} | 香港${categoryName}專家 | 智印港` : locale === 'en' ? `${productTitle} | Hong Kong ${categoryName} Expert | ZprintPro` : `${productTitle} | 香港プロ | ZprintPro`)}
+                {productSeo?.h1Suffix[locale] || (locale === 'zh-hk' ? `${productTitle} | 香港${categoryName}專家 | 智印云` : locale === 'en' ? `${productTitle} | Hong Kong ${categoryName} Expert | ZprintPro` : `${productTitle} | 香港プロ | ZprintPro`)}
               </h1>
               
               <p className="text-gray-600 mb-6 leading-relaxed">

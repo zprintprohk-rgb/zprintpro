@@ -9,8 +9,8 @@ interface FaqPageProps {
 
 const translations = {
   'zh-hk': {
-    title: '常見問題 | 智印港 ZprintPro',
-    description: '智印港印刷服務常見問題解答，包括訂購流程、交貨時間、付款方式、送貨安排等。',
+    title: '常見問題 | 智印云 ZprintPro',
+    description: '智印云印刷服務常見問題解答，包括訂購流程、交貨時間、付款方式、送貨安排等。',
     h1: '常見問題',
     subtitle: '快速找到您需要的答案',
     searchPlaceholder: '輸入關鍵詞搜尋問題...',
