@@ -336,9 +336,9 @@ export function Header({ locale }: HeaderProps) {
         {/* Main Header */}
         <div className="bg-white">
           <div className="px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center h-[53px] lg:h-[61px] gap-4">
+            <div className="flex justify-between items-center h-[58px] lg:h-[68px] gap-4">
               <Link href={`${localePrefix}/`} className="flex-shrink-0 ml-[30px]">
-                <Image src="/images/logo.svg" alt="智印云 ZPrintPro" width={180} height={44} className="h-11 w-auto" priority />
+                <Image src="/images/logo.svg" alt="智印云 ZPrintPro" width={200} height={52} className="h-[52px] w-auto" priority />
               </Link>
               <form onSubmit={handleSearch} className="hidden md:flex flex-1 max-w-xl mx-4">
                 <div className="relative w-full">
