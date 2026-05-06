@@ -1112,8 +1112,8 @@ export const products: Product[] = [
     category_slug: 'flyers',
     name: 'A4宣傳單張', nameEn: 'A4 Flyers', nameJa: 'A4チラシ', title_zh: 'A4宣傳單張',
     description: '標準A4尺寸，最常用的宣傳單張規格。157g銅版紙，四色印刷，色彩鮮豔。適合產品推廣、活動宣傳。', descriptionEn: 'Standard A4 size, most common flyer format. 157g glossy paper, 4-color printing, vibrant colors.', descriptionJa: '標準A4サイズ、最も一般的なチラシ形式。157gコート紙、4色印刷、鮮やかな色彩。', description_zh: '標準A4尺寸，最常用的宣傳單張規格。157g銅版紙，四色印刷，色彩鮮豔。適合產品推廣、活動宣傳。',
-    price_range: 'HK$0.18-0.65/張',
-    basePrice: 0.18,
+    price_range: 'HK$0.22-0.80/張',
+    basePrice: 0.22,
     weight_score: 95,
     isHot: true,
     isNew: false,
@@ -1169,8 +1169,8 @@ export const products: Product[] = [
     category_slug: 'flyers',
     name: 'A5宣傳單張', nameEn: 'A5 Flyers', nameJa: 'A5チラシ', title_zh: 'A5宣傳單張',
     description: 'A5尺寸，經濟實惠，適合大量派發。餐飲外賣、快閃活動首選。', descriptionEn: 'A5 size, economical, perfect for mass distribution. First choice for food delivery, flash events.', descriptionJa: 'A5サイズ、経済的、大量配布に最適。フードデリバリー、フラッシュイベントの第一選択。', description_zh: 'A5尺寸，經濟實惠，適合大量派發。餐飲外賣、快閃活動首選。',
-    price_range: 'HK$0.12-0.40/張',
-    basePrice: 0.12,
+    price_range: 'HK$0.18-0.65/張',
+    basePrice: 0.18,
     weight_score: 92,
     isHot: true,
     isNew: false,
@@ -1227,8 +1227,8 @@ export const products: Product[] = [
     category_slug: 'flyers',
     name: '雙面宣傳單張', nameEn: 'Double-sided Flyers', nameJa: '両面チラシ', title_zh: '雙面宣傳單張',
     description: '雙面全彩印刷，信息容量翻倍。正面吸引眼球，背面詳細介紹。', descriptionEn: 'Double-sided full color printing, doubled information capacity.', descriptionJa: '両面フルカラー印刷、情報容量が2倍。', description_zh: '雙面全彩印刷，信息容量翻倍。正面吸引眼球，背面詳細介紹。',
-    price_range: 'HK$0.22-0.80/張',
-    basePrice: 0.22,
+    price_range: 'HK$0.27-0.95/張',
+    basePrice: 0.27,
     weight_score: 90,
     isHot: true,
     isNew: false,
@@ -1286,8 +1286,8 @@ export const products: Product[] = [
     category_slug: 'flyers',
     name: '摺疊宣傳單張', nameEn: 'Folded Leaflets', nameJa: '折りたたみパンフレット', title_zh: '摺疊宣傳單張',
     description: '對摺或三摺設計，可展示更多信息。適合產品目錄、服務介紹。', descriptionEn: 'Bi-fold or tri-fold design, can display more information.', descriptionJa: '二つ折りまたは三つ折りデザイン、より多くの情報を表示可能。', description_zh: '對摺或三摺設計，可展示更多信息。適合產品目錄、服務介紹。',
-    price_range: 'HK$0.45-1.60/張',
-    basePrice: 0.45,
+    price_range: 'HK$0.55-1.95/張',
+    basePrice: 0.55,
     weight_score: 88,
     isHot: false,
     isNew: false,
@@ -1343,8 +1343,8 @@ export const products: Product[] = [
     category_slug: 'flyers',
     name: '厚紙宣傳單張', nameEn: 'Thick Paper Flyers', nameJa: '厚紙チラシ', title_zh: '厚紙宣傳單張',
     description: '200g以上厚紙，質感更佳，不易折損。適合高端產品宣傳。', descriptionEn: '200g+ thick paper, better texture, not easily damaged.', descriptionJa: '200g以上の厚紙、質感が良く折れにくい。', description_zh: '200g以上厚紙，質感更佳，不易折損。適合高端產品宣傳。',
-    price_range: 'HK$0.28-0.95/張',
-    basePrice: 0.28,
+    price_range: 'HK$0.35-1.20/張',
+    basePrice: 0.35,
     weight_score: 85,
     isHot: false,
     isNew: false,
@@ -1400,8 +1400,8 @@ export const products: Product[] = [
     category_slug: 'flyers',
     name: '環保宣傳單張', nameEn: 'Eco Flyers', nameJa: 'エコチラシ', title_zh: '環保宣傳單張',
     description: '環保紙張印刷，展現企業責任。適合環保主題活動。', descriptionEn: 'Eco-friendly paper printing, showing corporate responsibility.', descriptionJa: '環境に優しい紙の印刷、企業の責任を示す。', description_zh: '環保紙張印刷，展現企業責任。適合環保主題活動。',
-    price_range: 'HK$0.22-0.80/張',
-    basePrice: 0.22,
+    price_range: 'HK$0.27-0.95/張',
+    basePrice: 0.27,
     weight_score: 80,
     isHot: false,
     isNew: false,
@@ -1460,8 +1460,8 @@ export const products: Product[] = [
     category_slug: 'flyers',
     name: '即日宣傳單張', nameEn: 'Same-day Flyers', nameJa: '即日チラシ', title_zh: '即日宣傳單張',
     description: '緊急活動首選，最快當天交貨。即日印刷、即日快遞出貨，急件不擔心。', descriptionEn: 'First choice for emergency events, same-day printing and courier delivery available.', descriptionJa: '緊急イベントの第一選択、最短当日印刷・宅配便発送。', description_zh: '緊急活動首選，最快當天交貨。即日印刷、即日快遞出貨，急件不擔心。',
-    price_range: 'HK$0.32-1.20/張',
-    basePrice: 0.32,
+    price_range: 'HK$0.40-1.50/張',
+    basePrice: 0.4,
     weight_score: 95,
     isHot: true,
     isNew: false,
@@ -2300,11 +2300,6 @@ export const products: Product[] = [
     minQuantity: 100,
     images: ['/images/products/desk-calendars.jpg'],
     variables: {
-      sizes: [
-        { value: 'a4', label: 'A4 (210×297mm)', multiplier: 1 },
-        { value: 'a3', label: 'A3 (297×420mm)', multiplier: 1.8 },
-        { value: 'desk', label: '座檯 (150×200mm)', multiplier: 0.6 },
-      ],
       materials: [
         { value: '157g', label: '157g銅版紙', surcharge: 0 },
         { value: '200g', label: '200g厚紙', surcharge: 20 },
@@ -2342,11 +2337,6 @@ export const products: Product[] = [
     minQuantity: 100,
     images: ['/images/products/custom-calendars.jpg'],
     variables: {
-      sizes: [
-        { value: 'a4', label: 'A4 (210×297mm)', multiplier: 1 },
-        { value: 'a3', label: 'A3 (297×420mm)', multiplier: 1.8 },
-        { value: 'desk', label: '座檯 (150×200mm)', multiplier: 0.6 },
-      ],
       materials: [
         { value: '157g', label: '157g銅版紙', surcharge: 0 },
         { value: '200g', label: '200g厚紙', surcharge: 20 },
@@ -2384,11 +2374,6 @@ export const products: Product[] = [
     minQuantity: 100,
     images: ['/images/products/mini-calendars.jpg'],
     variables: {
-      sizes: [
-        { value: 'a4', label: 'A4 (210×297mm)', multiplier: 1 },
-        { value: 'a3', label: 'A3 (297×420mm)', multiplier: 1.8 },
-        { value: 'desk', label: '座檯 (150×200mm)', multiplier: 0.6 },
-      ],
       materials: [
         { value: '157g', label: '157g銅版紙', surcharge: 0 },
         { value: '200g', label: '200g厚紙', surcharge: 20 },
@@ -2426,11 +2411,6 @@ export const products: Product[] = [
     minQuantity: 100,
     images: ['/images/products/photo-frame-calendars.jpg'],
     variables: {
-      sizes: [
-        { value: 'a4', label: 'A4 (210×297mm)', multiplier: 1 },
-        { value: 'a3', label: 'A3 (297×420mm)', multiplier: 1.8 },
-        { value: 'desk', label: '座檯 (150×200mm)', multiplier: 0.6 },
-      ],
       materials: [
         { value: '157g', label: '157g銅版紙', surcharge: 0 },
         { value: '200g', label: '200g厚紙', surcharge: 20 },
@@ -2468,11 +2448,6 @@ export const products: Product[] = [
     minQuantity: 100,
     images: ['/images/products/magnetic-calendars.jpg'],
     variables: {
-      sizes: [
-        { value: 'a4', label: 'A4 (210×297mm)', multiplier: 1 },
-        { value: 'a3', label: 'A3 (297×420mm)', multiplier: 1.8 },
-        { value: 'desk', label: '座檯 (150×200mm)', multiplier: 0.6 },
-      ],
       materials: [
         { value: '157g', label: '157g銅版紙', surcharge: 0 },
         { value: '200g', label: '200g厚紙', surcharge: 20 },

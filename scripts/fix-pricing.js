@@ -1,143 +1,80 @@
 const fs = require('fs');
 
-const priceMap = {
-  'BC-001': { base: 0.8,  range: 'HK$80-160/100張', matSur: 0.4 },
-  'BC-002': { base: 1.2,  range: 'HK$120-220/100張', matSur: 0.5 },
-  'BC-003': { base: 2.0,  range: 'HK$200-350/100張', matSur: 0.8 },
-  'BC-004': { base: 1.5,  range: 'HK$150-280/100張', matSur: 0.6 },
-  'BC-005': { base: 0.9,  range: 'HK$90-170/100張', matSur: 0.4 },
-  'BC-006': { base: 0.8,  range: 'HK$80-150/100張', matSur: 0.3 },
-  'BC-007': { base: 1.0,  range: 'HK$100-180/100張', matSur: 0.5 },
-  'BC-008': { base: 1.8,  range: 'HK$180-320/100張', matSur: 0.5 },
-  'BC-009': { base: 1.1,  range: 'HK$110-200/100張', matSur: 0.4 },
-  'ST-001': { base: 0.3,  range: 'HK$0.3-1.2/張' },
-  'ST-002': { base: 0.5,  range: 'HK$0.5-1.8/張' },
-  'ST-003': { base: 0.6,  range: 'HK$0.6-2.0/張' },
-  'ST-004': { base: 50,   range: 'HK$50-150/A4' },
-  'ST-005': { base: 0.8,  range: 'HK$0.8-2.8/張' },
-  'ST-006': { base: 1.0,  range: 'HK$1.0-3.5/張' },
-  'ST-007': { base: 1.5,  range: 'HK$1.5-5.0/張' },
-  'ST-008': { base: 0.7,  range: 'HK$0.7-2.5/張' },
-  'PB-001': { base: 0.8,  range: 'HK$0.8-3/個' },
-  'PB-002': { base: 1.0,  range: 'HK$1.0-4/個' },
-  'PB-003': { base: 2.5,  range: 'HK$2.5-10/個' },
-  'PB-004': { base: 1.0,  range: 'HK$1.0-4/個' },
-  'PB-005': { base: 1.0,  range: 'HK$1.0-4/個' },
-  'PB-006': { base: 0.5,  range: 'HK$0.5-2/個' },
-  'PB-007': { base: 2.0,  range: 'HK$2.0-8/個' },
-  'FL-001': { base: 0.25, range: 'HK$0.25-0.8/張' },
-  'FL-002': { base: 0.15, range: 'HK$0.15-0.5/張' },
-  'FL-003': { base: 0.3,  range: 'HK$0.3-1.0/張' },
-  'FL-004': { base: 0.6,  range: 'HK$0.6-2.0/張' },
-  'FL-005': { base: 0.4,  range: 'HK$0.4-1.2/張' },
-  'FL-006': { base: 0.45, range: 'HK$0.45-1.5/張' },
-  'FL-007': { base: 0.3,  range: 'HK$0.3-1.0/張' },
-  'PO-001': { base: 12,   range: 'HK$12-40/張' },
-  'PO-002': { base: 25,   range: 'HK$25-85/張' },
-  'PO-003': { base: 20,   range: 'HK$20-65/張' },
-  'PO-004': { base: 40,   range: 'HK$40-120/套' },
-  'PO-005': { base: 32,   range: 'HK$32-100/張' },
-  'PO-006': { base: 16,   range: 'HK$16-50/張' },
-  'PK-001': { base: 4,    range: 'HK$4-25/個' },
-  'PK-002': { base: 6,    range: 'HK$6-32/個' },
-  'PK-003': { base: 2.5,  range: 'HK$2.5-18/個' },
-  'PK-004': { base: 1.8,  range: 'HK$1.8-10/個' },
-  'PK-005': { base: 2.5,  range: 'HK$2.5-15/個' },
-  'PK-006': { base: 8,    range: 'HK$8-42/個' },
-  'RP-001': { base: 1.5,  range: 'HK$1.5-6/個' },
-  'RP-002': { base: 4,    range: 'HK$4-12/個' },
-  'RP-003': { base: 2.5,  range: 'HK$2.5-8/個' },
-  'RP-004': { base: 1.5,  range: 'HK$1.5-5/個' },
-  'RP-005': { base: 2.5,  range: 'HK$2.5-7/個' },
-  'RP-006': { base: 3,    range: 'HK$3-10/個' },
-  'CL-001': { base: 12,   range: 'HK$12-40/本' },
-  'CL-002': { base: 16,   range: 'HK$16-50/本' },
-  'CL-003': { base: 20,   range: 'HK$20-65/本' },
-  'CL-004': { base: 6,    range: 'HK$6-20/本' },
-  'CL-005': { base: 24,   range: 'HK$24-80/本' },
-  'CL-006': { base: 10,   range: 'HK$10-30/本' },
-  'MN-001': { base: 12,   range: 'HK$12-40/張' },
-  'MN-002': { base: 8,    range: 'HK$8-30/張' },
-  'MN-003': { base: 40,   range: 'HK$40-160/本' },
-  'MN-004': { base: 16,   range: 'HK$16-65/張' },
-  'MN-005': { base: 0.3,  range: 'HK$0.3-1.5/張' },
-  'BN-001': { base: 20,   range: 'HK$20-80/平方米' },
-  'BN-002': { base: 120,  range: 'HK$120-400/套' },
-  'BN-003': { base: 16,   range: 'HK$16-65/平方米' },
-  'BN-004': { base: 40,   range: 'HK$40-160/平方米' },
-  'BN-005': { base: 24,   range: 'HK$24-100/平方米' },
-  'BK-001': { base: 24,   range: 'HK$24-120/本' },
-  'BK-002': { base: 6,    range: 'HK$6-32/本' },
-  'BK-003': { base: 16,   range: 'HK$16-80/本' },
-  'BK-004': { base: 40,   range: 'HK$40-240/本' },
-  'BK-005': { base: 8,    range: 'HK$8-40/本' },
-  'EV-001': { base: 0.3,  range: 'HK$0.3-2/個' },
-  'EV-002': { base: 0.5,  range: 'HK$0.5-3/個' },
-  'EV-003': { base: 0.8,  range: 'HK$0.8-4/個' },
-  'EV-004': { base: 1.5,  range: 'HK$1.5-6/個' },
-  'ED-001': { base: 4,    range: 'HK$4-16/本' },
-  'ED-002': { base: 8,    range: 'HK$8-40/張' },
-  'ED-003': { base: 0.2,  range: 'HK$0.2-0.8/張' },
-  'ED-004': { base: 24,   range: 'HK$24-120/本' },
-};
+const filepath = 'src/data/products.ts';
+let content = fs.readFileSync(filepath, 'utf8');
 
-let content = fs.readFileSync('src/data/products.ts', 'utf-8');
+// ========== 1. Fix FL-002: normalize basePrice to A4 standard ==========
+// FL-002 is "a5-flyers" but its basePrice=0.12 is the A5 price.
+// The sizes template assumes A4 base (a5=0.65, a4=1, a3=1.8).
+// Fix: set basePrice to A4 standard (0.18) so multipliers work correctly.
+content = content.replace(
+  /(id: 'FL-002',[\s\S]*?price_range: 'HK\$)0\.12-0\.40\/張'/,
+  "$10.18-0.65/張'"
+);
+content = content.replace(
+  /(id: 'FL-002',[\s\S]*?basePrice:) 0\.12/,
+  "$1 0.18"
+);
 
-// Process each product block
-const lines = content.split('\n');
-let currentSku = null;
-let modified = 0;
+// ========== 2. Apply modest flyer price increases (+20-25%) ==========
+// Based on e-print cost analysis: digital printing costs more than offset.
+// These increases cover the digital-printing premium for small batches.
 
-for (let i = 0; i < lines.length; i++) {
-  const line = lines[i];
-  
-  // Detect SKU
-  const skuMatch = line.match(/sku_code:\s*['"]([^'"]+)['"]/);
-  if (skuMatch) {
-    currentSku = skuMatch[1];
-  }
-  
-  // Replace price_range for current SKU
-  if (currentSku && priceMap[currentSku] && line.includes('price_range:')) {
-    const oldRange = line.match(/price_range:\s*['"]([^'"]+)['"]/);
-    if (oldRange) {
-      lines[i] = line.replace(oldRange[1], priceMap[currentSku].range);
-      modified++;
-    }
-  }
-  
-  // Replace basePrice for current SKU
-  if (currentSku && priceMap[currentSku] && line.includes('basePrice:')) {
-    const oldBase = line.match(/basePrice:\s*([\d.]+)/);
-    if (oldBase) {
-      lines[i] = line.replace(oldBase[1], priceMap[currentSku].base.toString());
-      modified++;
-    }
-  }
-  
-  // Reset SKU at end of product block
-  if (line.trim() === '},' && currentSku) {
-    currentSku = null;
-  }
-}
+const flyerPriceUpdates = [
+  { id: 'FL-001', oldBase: 0.18, newBase: 0.22, oldRange: "HK$0.18-0.65/張", newRange: "HK$0.22-0.80/張" },
+  // FL-002 already handled above
+  { id: 'FL-003', oldBase: 0.22, newBase: 0.27, oldRange: "HK$0.22-0.80/張", newRange: "HK$0.27-0.95/張" },
+  { id: 'FL-004', oldBase: 0.45, newBase: 0.55, oldRange: "HK$0.45-1.60/張", newRange: "HK$0.55-1.95/張" },
+  { id: 'FL-005', oldBase: 0.28, newBase: 0.35, oldRange: "HK$0.28-0.95/張", newRange: "HK$0.35-1.20/張" },
+  { id: 'FL-007', oldBase: 0.22, newBase: 0.27, oldRange: "HK$0.22-0.80/張", newRange: "HK$0.27-0.95/張" },
+  { id: 'FL-008', oldBase: 0.32, newBase: 0.40, oldRange: "HK$0.32-1.20/張", newRange: "HK$0.40-1.50/張" },
+];
 
-fs.writeFileSync('src/data/products.ts', lines.join('\n'), 'utf-8');
-console.log(`Modified ${modified} lines in products.ts`);
+for (const u of flyerPriceUpdates) {
+  // Update basePrice (match within the SKU block to avoid false matches)
+  const basePattern = new RegExp(`(id: '${u.id}',[\\s\\S]*?basePrice:) ${u.oldBase}`);
+  content = content.replace(basePattern, `$1 ${u.newBase}`);
 
-// Verify
-const verify = fs.readFileSync('src/data/products.ts', 'utf-8');
-let ok = 0;
-for (const [sku, data] of Object.entries(priceMap)) {
-  const idx = verify.indexOf(`sku_code: '${sku}'`);
-  if (idx > 0) {
-    const block = verify.substring(idx, idx + 400);
-    const bp = block.match(/basePrice:\s*([\d.]+)/);
-    const pr = block.match(/price_range:\s*['"]([^'"]+)['"]/);
-    if (bp && parseFloat(bp[1]) === data.base && pr && pr[1] === data.range) {
-      ok++;
-    } else {
-      console.log(`VERIFY FAIL: ${sku} base=${bp?.[1]} range=${pr?.[1]}`);
+  // Update price_range by finding the SKU block and replacing within it
+  const idIndex = content.indexOf(`id: '${u.id}'`);
+  if (idIndex !== -1) {
+    const nextIdIndex = content.indexOf(`id: '`, idIndex + 10);
+    const blockEnd = nextIdIndex === -1 ? content.length : nextIdIndex;
+    const before = content.slice(0, idIndex);
+    const block = content.slice(idIndex, blockEnd);
+    const after = content.slice(blockEnd);
+    const newBlock = block.replace(u.oldRange, u.newRange);
+    if (newBlock !== block) {
+      content = before + newBlock + after;
     }
   }
 }
-console.log(`Verified ${ok}/${Object.keys(priceMap).length} products`);
+
+// ========== 3. Fix calendar SKUs: remove sizes from CL-002~006 ==========
+// These SKUs got the wall-calendar sizes template [a4=1, a3=1.8, desk=0.6]
+// but they are desk/mini/photo-frame/magnetic calendars.
+// Remove sizes, keep materials/finishings/quantities.
+
+const calendarSkus = ['CL-002', 'CL-003', 'CL-004', 'CL-005', 'CL-006'];
+
+for (const sku of calendarSkus) {
+  const idIndex = content.indexOf(`id: '${sku}'`);
+  if (idIndex === -1) continue;
+
+  const blockStart = content.lastIndexOf('{', idIndex);
+  const nextId = content.indexOf(`id: '`, idIndex + 1);
+  const blockEnd = nextId === -1 ? content.length : content.lastIndexOf('}', nextId) + 1;
+  let block = content.slice(blockStart, blockEnd);
+
+  // Remove the sizes array from variables
+  const sizesPattern = /      sizes: \[\n[\s\S]*?      \],\n/;
+  block = block.replace(sizesPattern, '');
+
+  content = content.slice(0, blockStart) + block + content.slice(blockEnd);
+}
+
+fs.writeFileSync(filepath, content);
+console.log('Pricing fixes applied to products.ts');
+console.log('  - FL-002: basePrice 0.12 -> 0.18 (A4 standard)');
+console.log('  - Flyers: modest +20-25% price increases');
+console.log('  - Calendars CL-002~006: removed incorrect sizes');
