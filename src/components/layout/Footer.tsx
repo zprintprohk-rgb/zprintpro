@@ -23,7 +23,7 @@ const translations = {
     companyDesc: '智印云 ZPrintPro 是全球智能印刷定制平台，提供AI智能報價、在線文件上傳、Airwallex安全支付。從貼紙到包裝，30秒報價，72小時全球交付。',
     phone: '+86 181 2638 0255',
     email: 'zprintpro@outlook.com',
-    address: '香港九龍觀塘偉業街180號 成運工業大廈',
+    address: '香港九龍觀塘偉業街182號 成運工業大廈',
     columns: [
       {
         title: '關於我們',
@@ -72,7 +72,7 @@ const translations = {
     companyDesc: 'ZPrintPro is a global smart printing platform offering AI instant quotes, online file upload, and Airwallex secure payment. From stickers to packaging, get a quote in 30 seconds, delivered globally in 72 hours.',
     phone: '+86 181 2638 0255',
     email: 'zprintpro@outlook.com',
-    address: '180 Wai Yip Street, Kwun Tong, Kowloon, Hong Kong',
+    address: '182 Wai Yip Street, Kwun Tong, Kowloon, Hong Kong',
     columns: [
       {
         title: 'About Us',
@@ -121,7 +121,7 @@ const translations = {
     companyDesc: 'ZPrintProはグローバルスマート印刷プラットフォームです。AI即時見積、オンラインファイルアップロード、Airwallex安全決済を提供。ステッカーからパッケージングまで、30秒で見積もり、72時間でグローバル配送。',
     phone: '+86 181 2638 0255',
     email: 'zprintpro@outlook.com',
-    address: '香港九龍観塘偉業街180号 成運工業ビル',
+    address: '香港九龍観塘偉業街182号 成運工業ビル',
     columns: [
       {
         title: '会社概要',

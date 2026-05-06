@@ -12,13 +12,14 @@ export const siteConfig = {
   name: '智印云 ZPrintPro',
   url: 'https://zprintpro.com',
   logo: 'https://zprintpro.com/images/logo.svg',
-  phone: '+852 5500 8250',
+  phone: '+86 181 2638 0255',
   email: 'zprintpro@outlook.com',
   address: {
-    street: '180 Wai Yip Street',
+    street: '182 Wai Yip Street',
     city: 'Kwun Tong',
     region: 'Kowloon',
     country: 'HK',
+    postalCode: '',
   },
   social: {
     facebook: 'https://facebook.com/zprintpro',
@@ -352,7 +353,7 @@ export function generateProductMetadata(
       type: 'website',
       images: [
         {
-          url: `${siteConfig.url}/images/products/${slug}.jpg`,
+          url: `${siteConfig.url}/images/products/${slug}.webp`,
           width: 1200,
           height: 630,
           alt: name,
@@ -410,13 +411,17 @@ export function generateBusinessJsonLd(locale: Locale) {
     return {
       ...baseSchema,
       '@id': `${siteConfig.url}/#localbusiness`,
-      image: siteConfig.logo,
+      image: [
+        siteConfig.logo,
+        `${siteConfig.url}/images/factory/factory-banner.jpg`,
+      ],
       address: {
         '@type': 'PostalAddress',
         streetAddress: siteConfig.address.street,
         addressLocality: siteConfig.address.city,
         addressRegion: siteConfig.address.region,
         addressCountry: siteConfig.address.country,
+        postalCode: siteConfig.address.postalCode || undefined,
       },
       geo: config.geoCoordinates
         ? {
@@ -425,6 +430,7 @@ export function generateBusinessJsonLd(locale: Locale) {
             longitude: config.geoCoordinates.lng,
           }
         : undefined,
+      hasMap: 'https://www.google.com/maps/search/?api=1&query=22.3105,114.224',
       openingHoursSpecification: [
         {
           '@type': 'OpeningHoursSpecification',
@@ -433,6 +439,8 @@ export function generateBusinessJsonLd(locale: Locale) {
           closes: '21:00',
         },
       ],
+      paymentAccepted: ['WeChat Pay', 'Alipay', 'Credit Card', 'Bank Transfer'],
+      currenciesAccepted: 'HKD, USD, JPY',
     };
   }
 
