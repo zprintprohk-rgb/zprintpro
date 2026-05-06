@@ -1,15 +1,15 @@
 <svg viewBox="0 0 720 160" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="gTop" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#22d3ee" />
-      <stop offset="100%" stop-color="#3b82f6" />
+      <stop offset="0%" stop-color="#4B9AF5" />
+      <stop offset="100%" stop-color="#2873F5" />
     </linearGradient>
     <linearGradient id="gBot" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1d4ed8" />
-      <stop offset="100%" stop-color="#1e3a8a" />
+      <stop offset="0%" stop-color="#1E5FD1" />
+      <stop offset="100%" stop-color="#153D8A" />
     </linearGradient>
     <linearGradient id="gFold" x1="100%" y1="0%" x2="80%" y2="20%">
-      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="0%" stop-color="#F87314" />
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0.4" />
     </linearGradient>
   </defs>
@@ -20,6 +20,6 @@
   </g>
   <text x="172" y="72" font-family="'Inter','SF Pro Display',-apple-system,sans-serif" font-size="56" font-weight="800" fill="#f1f5f9">ZPrint<tspan font-weight="400" fill="#64748b">Pro</tspan></text>
   <text x="174" y="100" font-family="'Inter',sans-serif" font-size="14" font-weight="500" fill="#64748b" letter-spacing="3">GLOBAL SMART PRINTING</text>
-  <text x="470" y="82" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="42" font-weight="700" fill="#22d3ee" letter-spacing="6">智印云</text>
+  <text x="470" y="82" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="42" font-weight="700" fill="#F87314" letter-spacing="6">智印云</text>
   <text x="614" y="62" font-family="sans-serif" font-size="14" fill="#64748b">®</text>
 </svg>

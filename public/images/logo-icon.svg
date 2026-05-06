@@ -1,15 +1,15 @@
 <svg viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="iTop" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#22d3ee" />
-      <stop offset="100%" stop-color="#3b82f6" />
+      <stop offset="0%" stop-color="#4B9AF5" />
+      <stop offset="100%" stop-color="#2873F5" />
     </linearGradient>
     <linearGradient id="iBot" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1d4ed8" />
-      <stop offset="100%" stop-color="#1e3a8a" />
+      <stop offset="0%" stop-color="#1E5FD1" />
+      <stop offset="100%" stop-color="#153D8A" />
     </linearGradient>
     <linearGradient id="iFold" x1="100%" y1="0%" x2="80%" y2="20%">
-      <stop offset="0%" stop-color="#06b6d4" />
+      <stop offset="0%" stop-color="#F87314" />
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0.4" />
     </linearGradient>
   </defs>

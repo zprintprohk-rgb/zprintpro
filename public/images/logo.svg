@@ -1,19 +1,19 @@
 <svg viewBox="0 0 320 40" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="gTop" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#22d3ee" />
-      <stop offset="100%" stop-color="#3b82f6" />
+      <stop offset="0%" stop-color="#4B9AF5" />
+      <stop offset="100%" stop-color="#2873F5" />
     </linearGradient>
     <linearGradient id="gBot" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1d4ed8" />
-      <stop offset="100%" stop-color="#1e3a8a" />
+      <stop offset="0%" stop-color="#1E5FD1" />
+      <stop offset="100%" stop-color="#153D8A" />
     </linearGradient>
   </defs>
   <g transform="translate(0,2) scale(0.9)">
     <path d="M4 4 L36 4 L36 10 L12 34 L4 34 Z" fill="url(#gTop)" />
     <path d="M12 34 L36 10 L36 18 C40 18 42 20 42 23 C42 26 40 28 38 28 C40 28 42 30 42 34 L12 34 Z" fill="url(#gBot)" />
-    <path d="M36 4 L36 10 L32 4 Z" fill="#06b6d4" />
+    <path d="M36 4 L36 10 L32 4 Z" fill="#F87314" />
   </g>
   <text x="48" y="26" font-family="'Inter','SF Pro Display',-apple-system,sans-serif" font-size="18" font-weight="800" fill="#0f172a">ZPrint<tspan font-weight="400" fill="#94a3b8">Pro</tspan></text>
-  <text x="158" y="25" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="15" font-weight="600" fill="#0ea5e9" letter-spacing="1">智印云</text>
+  <text x="158" y="25" font-family="'PingFang SC','Microsoft YaHei',sans-serif" font-size="15" font-weight="600" fill="#2873F5" letter-spacing="1">智印云</text>
 </svg>
