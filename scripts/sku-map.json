@@ -1,0 +1,1108 @@
+{
+  "premium-business-cards": {
+    "skuCode": "BC-001",
+    "slug": "premium-business-cards",
+    "alt": {
+      "zh-hk": "高級商務咭片 - 採用300g高級銅版紙，配合專業四色印刷，展現企業專業形象。可選啞膠或光膠表面處...",
+      "en": "Premium Business Cards - 300g premium glossy paper with professio...",
+      "ja": "高級名刺 - 300g高級コート紙、プロ4色印刷。マットまたはグロスラミネーション選択可。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-business-cards-premium-business-cards-zh-hk",
+      "en": "zprintpro-business-cards-premium-business-cards-en",
+      "ja": "zprintpro-business-cards-premium-business-cards-ja"
+    }
+  },
+  "thick-business-cards-400g": {
+    "skuCode": "BC-002",
+    "slug": "thick-business-cards-400g",
+    "alt": {
+      "zh-hk": "厚身咭片(400g) - 400g超厚紙質，厚實手感彰顯尊貴品質。特別適合高端服務業、設計師、律師等專業人...",
+      "en": "Thick Business Cards (400g) - 400g ultra-thick paper with substantial ...",
+      "ja": "厚紙名刺(400g) - 400g超厚紙、重厚な質感。高級サービス業、デザイナー、弁護士向け。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-business-cards-thick-business-cards-400g-zh-hk",
+      "en": "zprintpro-business-cards-thick-business-cards-400g-en",
+      "ja": "zprintpro-business-cards-thick-business-cards-400g-ja"
+    }
+  },
+  "foil-business-cards": {
+    "skuCode": "BC-003",
+    "slug": "foil-business-cards",
+    "alt": {
+      "zh-hk": "燙金/燙銀咭片 - 局部燙金或燙銀工藝，在光線下閃耀奪目，瞬間提升品牌檔次。可燙金色、銀色、玫瑰金等...",
+      "en": "Foil Stamped Business Cards - Foil stamping in gold or silver, shining...",
+      "ja": "箔押し名刺 - 部分的な箔押し加工、光に輝いてブランドイメージ向上。金・銀・ローズゴールド対応。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-business-cards-foil-business-cards-zh-hk",
+      "en": "zprintpro-business-cards-foil-business-cards-en",
+      "ja": "zprintpro-business-cards-foil-business-cards-ja"
+    }
+  },
+  "spot-uv-business-cards": {
+    "skuCode": "BC-004",
+    "slug": "spot-uv-business-cards",
+    "alt": {
+      "zh-hk": "UV局部光油咭片 - 局部UV光油工藝，讓Logo或圖案呈現立體光澤效果，視覺衝擊力強。適合創意行業、...",
+      "en": "Spot UV Business Cards - Spot UV coating creates glossy, dimensio...",
+      "ja": "局部UV名刺 - 部分UVコーティングでロゴやデザインに立体的な光沢効果。クリエイティブ業界向け。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-business-cards-spot-uv-business-cards-zh-hk",
+      "en": "zprintpro-business-cards-spot-uv-business-cards-en",
+      "ja": "zprintpro-business-cards-spot-uv-business-cards-ja"
+    }
+  },
+  "matte-business-cards": {
+    "skuCode": "BC-005",
+    "slug": "matte-business-cards",
+    "alt": {
+      "zh-hk": "啞膠咭片 - 啞膠表面處理，低調內斂的質感，不易留下指紋。適合注重細節的專業人士。...",
+      "en": "Matte Laminated Cards - Matte lamination provides understated el...",
+      "ja": "マット名刺 - マットラミネーション加工、落ち着いた質感で指紋が付きにくい。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-business-cards-matte-business-cards-zh-hk",
+      "en": "zprintpro-business-cards-matte-business-cards-en",
+      "ja": "zprintpro-business-cards-matte-business-cards-ja"
+    }
+  },
+  "rounded-corner-cards": {
+    "skuCode": "BC-006",
+    "slug": "rounded-corner-cards",
+    "alt": {
+      "zh-hk": "圓角咭片 - 圓角設計，柔和美觀且不易折損。展現與眾不同的品味，適合創意產業。...",
+      "en": "Rounded Corner Cards - Rounded corners for soft aesthetics and ...",
+      "ja": "丸角名刺 - 丸角デザイン、柔らかく美しく折れにくい。クリエイティブ業界向け。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-business-cards-rounded-corner-cards-zh-hk",
+      "en": "zprintpro-business-cards-rounded-corner-cards-en",
+      "ja": "zprintpro-business-cards-rounded-corner-cards-ja"
+    }
+  },
+  "waterproof-stickers": {
+    "skuCode": "ST-001",
+    "slug": "waterproof-stickers",
+    "alt": {
+      "zh-hk": "防水貼紙 - PVC材質防水貼紙，具有出色的防水、防曬、耐磨性能。適合戶外使用、產品標籤、車身...",
+      "en": "Waterproof Stickers - PVC waterproof stickers with excellent w...",
+      "ja": "防水ステッカー - PVC防水ステッカー、優れた防水・UV・耐摩耗性。屋外使用、製品ラベル、車用ステ..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-stickers-waterproof-stickers-zh-hk",
+      "en": "zprintpro-stickers-waterproof-stickers-en",
+      "ja": "zprintpro-stickers-waterproof-stickers-ja"
+    }
+  },
+  "transparent-stickers": {
+    "skuCode": "ST-002",
+    "slug": "transparent-stickers",
+    "alt": {
+      "zh-hk": "透明貼紙 - 透明PET材質，貼合後呈現無感效果，完美展現產品本身。適合化妝品、食品包裝、玻璃...",
+      "en": "Transparent Stickers - Transparent PET material creates invisib...",
+      "ja": "透明ステッカー - 透明PET素材、貼り付け後無感効果。化粧品、食品包装、ガラス装飾に最適。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-stickers-transparent-stickers-zh-hk",
+      "en": "zprintpro-stickers-transparent-stickers-en",
+      "ja": "zprintpro-stickers-transparent-stickers-ja"
+    }
+  },
+  "removable-stickers": {
+    "skuCode": "ST-003",
+    "slug": "removable-stickers",
+    "alt": {
+      "zh-hk": "可移貼紙(無殘膠) - 特殊背膠設計，移除後不留殘膠，保護貼附表面。適合車窗、玻璃櫥窗、短期展覽。...",
+      "en": "Removable Stickers - Special adhesive design leaves no residu...",
+      "ja": "はがせるステッカー - 特殊粘着設計、剥がしても残りません。車窓、ガラス展示、短期展示会に最適。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-stickers-removable-stickers-zh-hk",
+      "en": "zprintpro-stickers-removable-stickers-en",
+      "ja": "zprintpro-stickers-removable-stickers-ja"
+    }
+  },
+  "small-batch-stickers": {
+    "skuCode": "ST-004",
+    "slug": "small-batch-stickers",
+    "alt": {
+      "zh-hk": "小批量貼紙 - 最低A4尺寸起印，無需大量庫存壓力。適合初創品牌、活動宣傳、個人創作。...",
+      "en": "Small Batch Stickers - Minimum A4 size order, no bulk inventory...",
+      "ja": "小ロットステッカー - 最小A4サイズから、大量在庫の心配なし。スタートアップ、イベント宣伝、個人創作に..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-stickers-small-batch-stickers-zh-hk",
+      "en": "zprintpro-stickers-small-batch-stickers-en",
+      "ja": "zprintpro-stickers-small-batch-stickers-ja"
+    }
+  },
+  "die-cut-stickers": {
+    "skuCode": "ST-005",
+    "slug": "die-cut-stickers",
+    "alt": {
+      "zh-hk": "異形模切貼紙 - 任意形狀模切，讓創意不受限制。可切出Logo形狀、卡通形象等獨特輪廓。...",
+      "en": "Die-cut Stickers - Any shape die-cutting, creativity withou...",
+      "ja": "型抜きステッカー - 任意形状の型抜き、創作の自由を制限しません。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-stickers-die-cut-stickers-zh-hk",
+      "en": "zprintpro-stickers-die-cut-stickers-en",
+      "ja": "zprintpro-stickers-die-cut-stickers-ja"
+    }
+  },
+  "foil-stickers": {
+    "skuCode": "ST-006",
+    "slug": "foil-stickers",
+    "alt": {
+      "zh-hk": "燙金貼紙 - 燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮品包裝、VIP標識。...",
+      "en": "Foil Stickers - Foil stamping gives stickers premium qua...",
+      "ja": "箔押しステッカー - 箔押し加工でステッカーに高級感。高級製品ラベル、ギフト包装、VIPバッジに最適。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-stickers-foil-stickers-zh-hk",
+      "en": "zprintpro-stickers-foil-stickers-en",
+      "ja": "zprintpro-stickers-foil-stickers-ja"
+    }
+  },
+  "security-stickers": {
+    "skuCode": "ST-007",
+    "slug": "security-stickers",
+    "alt": {
+      "zh-hk": "防偽貼紙 - 特殊防偽工藝，包括雷射標籤、易碎紙等，保護品牌免受假冒。...",
+      "en": "Security Stickers - Special anti-counterfeiting processes in...",
+      "ja": "セキュリティステッカー - 特殊な偽造防止加工、ホログラムラベル、壊れやすい紙など。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-stickers-security-stickers-zh-hk",
+      "en": "zprintpro-stickers-security-stickers-en",
+      "ja": "zprintpro-stickers-security-stickers-ja"
+    }
+  },
+  "fluorescent-stickers": {
+    "skuCode": "ST-008",
+    "slug": "fluorescent-stickers",
+    "alt": {
+      "zh-hk": "螢光貼紙 - 螢光色彩，在光線下格外醒目。適合促銷標籤、安全標識、活動裝飾。...",
+      "en": "Fluorescent Stickers - Fluorescent colors, highly visible under...",
+      "ja": "蛍光ステッカー - 蛍光色、光の下で非常に目立ちます。プロモーションラベル、安全標識、イベント装飾に..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-stickers-fluorescent-stickers-zh-hk",
+      "en": "zprintpro-stickers-fluorescent-stickers-en",
+      "ja": "zprintpro-stickers-fluorescent-stickers-ja"
+    }
+  },
+  "kraft-paper-bags": {
+    "skuCode": "PB-001",
+    "slug": "kraft-paper-bags",
+    "alt": {
+      "zh-hk": "牛皮紙袋 - 環保牛皮紙材質，質樸自然，深受消費者喜愛。適合服裝店、禮品店、咖啡店。多種尺寸可...",
+      "en": "Kraft Paper Bags - Eco-friendly kraft paper, natural and ru...",
+      "ja": "クラフト紙袋 - 環境に優しいクラフト紙、質朴で自然、消費者に人気。衣料品店、ギフトショップ、コー..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-paper-bags-kraft-paper-bags-zh-hk",
+      "en": "zprintpro-paper-bags-kraft-paper-bags-en",
+      "ja": "zprintpro-paper-bags-kraft-paper-bags-ja"
+    }
+  },
+  "white-card-bags": {
+    "skuCode": "PB-002",
+    "slug": "white-card-bags",
+    "alt": {
+      "zh-hk": "白卡紙袋 - 白卡紙材質，表面平整光滑，印刷效果佳。適合高端品牌、化妝品店。...",
+      "en": "White Card Bags - White card paper, smooth surface, excell...",
+      "ja": "白カード紙袋 - 白カード紙、表面が滑らかで印刷効果が抜群。高級ブランド、化粧品店に最適。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-paper-bags-white-card-bags-zh-hk",
+      "en": "zprintpro-paper-bags-white-card-bags-en",
+      "ja": "zprintpro-paper-bags-white-card-bags-ja"
+    }
+  },
+  "gift-bags": {
+    "skuCode": "PB-003",
+    "slug": "gift-bags",
+    "alt": {
+      "zh-hk": "禮品紙袋 - 精美設計，配合燙金、UV等工藝。送禮必備，提升禮品檔次。...",
+      "en": "Gift Bags - Exquisite design with foil stamping, UV ...",
+      "ja": "ギフト紙袋 - 精巧なデザイン、箔押し・UVなどの加工付き。ギフトに必須、ギフトの質を向上。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-paper-bags-gift-bags-zh-hk",
+      "en": "zprintpro-paper-bags-gift-bags-en",
+      "ja": "zprintpro-paper-bags-gift-bags-ja"
+    }
+  },
+  "eco-paper-bags": {
+    "skuCode": "PB-004",
+    "slug": "eco-paper-bags",
+    "alt": {
+      "zh-hk": "環保紙袋 - FSC認證環保紙張，可持續發展。適合注重環保的品牌。...",
+      "en": "Eco Paper Bags - FSC-certified eco-friendly paper, sustai...",
+      "ja": "エコ紙袋 - FSC認証の環境に優しい紙、持続可能な開発。環境に配慮するブランドに最適。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-paper-bags-eco-paper-bags-zh-hk",
+      "en": "zprintpro-paper-bags-eco-paper-bags-en",
+      "ja": "zprintpro-paper-bags-eco-paper-bags-ja"
+    }
+  },
+  "handle-bags": {
+    "skuCode": "PB-005",
+    "slug": "handle-bags",
+    "alt": {
+      "zh-hk": "手挽紙袋 - 堅固手挽設計，承重能力強。適合購物中心、超市。...",
+      "en": "Handle Bags - Sturdy handle design, strong load-bearin...",
+      "ja": "手提げ紙袋 - 頑丈な持ち手デザイン、強い耐荷重能力。ショッピングセンター、スーパーに最適。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-paper-bags-handle-bags-zh-hk",
+      "en": "zprintpro-paper-bags-handle-bags-en",
+      "ja": "zprintpro-paper-bags-handle-bags-ja"
+    }
+  },
+  "large-bags": {
+    "skuCode": "PB-007",
+    "slug": "large-bags",
+    "alt": {
+      "zh-hk": "大號紙袋 - 加大尺寸，適合服裝、鞋類等大件商品。...",
+      "en": "Large Bags - Large size, perfect for clothing, shoes ...",
+      "ja": "大判紙袋 - 大きなサイズ、衣類、靴などの大物に最適。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-paper-bags-large-bags-zh-hk",
+      "en": "zprintpro-paper-bags-large-bags-en",
+      "ja": "zprintpro-paper-bags-large-bags-ja"
+    }
+  },
+  "a4-flyers": {
+    "skuCode": "FL-001",
+    "slug": "a4-flyers",
+    "alt": {
+      "zh-hk": "A4宣傳單張 - 標準A4尺寸，最常用的宣傳單張規格。157g銅版紙，四色印刷，色彩鮮豔。適合產品...",
+      "en": "A4 Flyers - Standard A4 size, most common flyer form...",
+      "ja": "A4チラシ - 標準A4サイズ、最も一般的なチラシ形式。157gコート紙、4色印刷、鮮やかな色彩..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-flyers-a4-flyers-zh-hk",
+      "en": "zprintpro-flyers-a4-flyers-en",
+      "ja": "zprintpro-flyers-a4-flyers-ja"
+    }
+  },
+  "a5-flyers": {
+    "skuCode": "FL-002",
+    "slug": "a5-flyers",
+    "alt": {
+      "zh-hk": "A5宣傳單張 - A5尺寸，經濟實惠，適合大量派發。餐飲外賣、快閃活動首選。...",
+      "en": "A5 Flyers - A5 size, economical, perfect for mass di...",
+      "ja": "A5チラシ - A5サイズ、経済的、大量配布に最適。フードデリバリー、フラッシュイベントの第一選..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-flyers-a5-flyers-zh-hk",
+      "en": "zprintpro-flyers-a5-flyers-en",
+      "ja": "zprintpro-flyers-a5-flyers-ja"
+    }
+  },
+  "double-sided-flyers": {
+    "skuCode": "FL-003",
+    "slug": "double-sided-flyers",
+    "alt": {
+      "zh-hk": "雙面宣傳單張 - 雙面全彩印刷，信息容量翻倍。正面吸引眼球，背面詳細介紹。...",
+      "en": "Double-sided Flyers - Double-sided full color printing, double...",
+      "ja": "両面チラシ - 両面フルカラー印刷、情報容量が2倍。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-flyers-double-sided-flyers-zh-hk",
+      "en": "zprintpro-flyers-double-sided-flyers-en",
+      "ja": "zprintpro-flyers-double-sided-flyers-ja"
+    }
+  },
+  "folded-leaflets": {
+    "skuCode": "FL-004",
+    "slug": "folded-leaflets",
+    "alt": {
+      "zh-hk": "摺疊宣傳單張 - 對摺或三摺設計，可展示更多信息。適合產品目錄、服務介紹。...",
+      "en": "Folded Leaflets - Bi-fold or tri-fold design, can display ...",
+      "ja": "折りたたみパンフレット - 二つ折りまたは三つ折りデザイン、より多くの情報を表示可能。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-flyers-folded-leaflets-zh-hk",
+      "en": "zprintpro-flyers-folded-leaflets-en",
+      "ja": "zprintpro-flyers-folded-leaflets-ja"
+    }
+  },
+  "thick-paper-flyers": {
+    "skuCode": "FL-005",
+    "slug": "thick-paper-flyers",
+    "alt": {
+      "zh-hk": "厚紙宣傳單張 - 200g以上厚紙，質感更佳，不易折損。適合高端產品宣傳。...",
+      "en": "Thick Paper Flyers - 200g+ thick paper, better texture, not e...",
+      "ja": "厚紙チラシ - 200g以上の厚紙、質感が良く折れにくい。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-flyers-thick-paper-flyers-zh-hk",
+      "en": "zprintpro-flyers-thick-paper-flyers-en",
+      "ja": "zprintpro-flyers-thick-paper-flyers-ja"
+    }
+  },
+  "eco-flyers": {
+    "skuCode": "FL-007",
+    "slug": "eco-flyers",
+    "alt": {
+      "zh-hk": "環保宣傳單張 - 環保紙張印刷，展現企業責任。適合環保主題活動。...",
+      "en": "Eco Flyers - Eco-friendly paper printing, showing cor...",
+      "ja": "エコチラシ - 環境に優しい紙の印刷、企業の責任を示す。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-flyers-eco-flyers-zh-hk",
+      "en": "zprintpro-flyers-eco-flyers-en",
+      "ja": "zprintpro-flyers-eco-flyers-ja"
+    }
+  },
+  "same-day-flyers": {
+    "skuCode": "FL-008",
+    "slug": "same-day-flyers",
+    "alt": {
+      "zh-hk": "即日宣傳單張 - 緊急活動首選，最快當天交貨。即日印刷、即日快遞出貨，急件不擔心。...",
+      "en": "Same-day Flyers - First choice for emergency events, same-...",
+      "ja": "即日チラシ - 緊急イベントの第一選択、最短当日印刷・宅配便発送。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-flyers-same-day-flyers-zh-hk",
+      "en": "zprintpro-flyers-same-day-flyers-en",
+      "ja": "zprintpro-flyers-same-day-flyers-ja"
+    }
+  },
+  "a2-posters": {
+    "skuCode": "PO-001",
+    "slug": "a2-posters",
+    "alt": {
+      "zh-hk": "A2海報印刷 - 標準A2尺寸，活動宣傳、產品推廣首選。157g銅版紙，色彩鮮豔，即日交貨。...",
+      "en": "A2 Posters - Standard A2 size, first choice for event...",
+      "ja": "A2ポスター - 標準A2サイズ、イベント宣伝の第一選択。157gコート紙、鮮やかな色彩、即日納品..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-posters-a2-posters-zh-hk",
+      "en": "zprintpro-posters-a2-posters-en",
+      "ja": "zprintpro-posters-a2-posters-ja"
+    }
+  },
+  "a1-posters": {
+    "skuCode": "PO-002",
+    "slug": "a1-posters",
+    "alt": {
+      "zh-hk": "A1大幅海報 - A1大尺寸，視覺衝擊力強。適合展覽、會場佈置。...",
+      "en": "A1 Large Posters - A1 large size, strong visual impact. Per...",
+      "ja": "A1大型ポスター - A1大きなサイズ、強い視覚的インパクト。展示会、会場装飾に最適。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-posters-a1-posters-zh-hk",
+      "en": "zprintpro-posters-a1-posters-en",
+      "ja": "zprintpro-posters-a1-posters-ja"
+    }
+  },
+  "outdoor-posters": {
+    "skuCode": "PO-003",
+    "slug": "outdoor-posters",
+    "alt": {
+      "zh-hk": "戶外海報 - 防水防曬材質，戶外使用不褪色。適合戶外廣告、建築圍板。...",
+      "en": "Outdoor Posters - Waterproof and UV-resistant material, no...",
+      "ja": "屋外ポスター - 防水・UV耐性素材、屋外使用でも色褪せません。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-posters-outdoor-posters-zh-hk",
+      "en": "zprintpro-posters-outdoor-posters-en",
+      "ja": "zprintpro-posters-outdoor-posters-ja"
+    }
+  },
+  "display-posters": {
+    "skuCode": "PO-004",
+    "slug": "display-posters",
+    "alt": {
+      "zh-hk": "展架海報 - 配合X展架或易拉寶使用，便攜易裝。展會、路演必備。...",
+      "en": "Display Posters - Compatible with X-stands or roll-up bann...",
+      "ja": "展示用ポスター - Xスタンドまたはロールアップバナーと互換、持ち運び可能で設置簡単。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-posters-display-posters-zh-hk",
+      "en": "zprintpro-posters-display-posters-en",
+      "ja": "zprintpro-posters-display-posters-ja"
+    }
+  },
+  "art-posters": {
+    "skuCode": "PO-005",
+    "slug": "art-posters",
+    "alt": {
+      "zh-hk": "藝術海報 - 高級藝術紙張，色彩還原度高。適合藝術展覽、攝影作品。...",
+      "en": "Art Posters - Premium art paper, high color accuracy. ...",
+      "ja": "アートポスター - 高級アート紙、高い色再現性。美術展、写真作品に最適。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-posters-art-posters-zh-hk",
+      "en": "zprintpro-posters-art-posters-en",
+      "ja": "zprintpro-posters-art-posters-ja"
+    }
+  },
+  "adhesive-posters": {
+    "skuCode": "PO-006",
+    "slug": "adhesive-posters",
+    "alt": {
+      "zh-hk": "背膠海報 - 自帶背膠，可直接粘貼。適合店鋪櫥窗、牆面裝飾。...",
+      "en": "Adhesive Posters - Self-adhesive, can be directly applied. ...",
+      "ja": "粘着ポスター - 自己粘着、直接貼付可能。店舗の窓、壁の装飾に最適。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-posters-adhesive-posters-zh-hk",
+      "en": "zprintpro-posters-adhesive-posters-en",
+      "ja": "zprintpro-posters-adhesive-posters-ja"
+    }
+  },
+  "gift-boxes": {
+    "skuCode": "PK-001",
+    "slug": "gift-boxes",
+    "alt": {
+      "zh-hk": "禮品盒定制 - 精緻禮品盒，配合燙金、UV等工藝。送禮首選，提升產品價值。...",
+      "en": "Gift Boxes - Exquisite gift boxes with foil stamping,...",
+      "ja": "ギフトボックス - 精巧なギフトボックス、箔押し・UVなどの加工付き。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-packaging-gift-boxes-zh-hk",
+      "en": "zprintpro-packaging-gift-boxes-en",
+      "ja": "zprintpro-packaging-gift-boxes-ja"
+    }
+  },
+  "cosmetic-boxes": {
+    "skuCode": "PK-002",
+    "slug": "cosmetic-boxes",
+    "alt": {
+      "zh-hk": "化妝品盒 - 專為化妝品設計，內托可定制。適合護膚品、彩妝品牌。...",
+      "en": "Cosmetic Boxes - Specially designed for cosmetics, custom...",
+      "ja": "化粧品箱 - 化粧品専用設計、カスタマイズ可能な内側トレイ。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-packaging-cosmetic-boxes-zh-hk",
+      "en": "zprintpro-packaging-cosmetic-boxes-en",
+      "ja": "zprintpro-packaging-cosmetic-boxes-ja"
+    }
+  },
+  "food-boxes": {
+    "skuCode": "PK-003",
+    "slug": "food-boxes",
+    "alt": {
+      "zh-hk": "食品包裝盒 - 食品級材質，安全環保。適合糕點、茶葉、保健品。...",
+      "en": "Food Boxes - Food-grade material, safe and eco-friend...",
+      "ja": "食品包装箱 - 食品グレード素材、安全で環境に優しい。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-packaging-food-boxes-zh-hk",
+      "en": "zprintpro-packaging-food-boxes-en",
+      "ja": "zprintpro-packaging-food-boxes-ja"
+    }
+  },
+  "mailer-boxes": {
+    "skuCode": "PK-004",
+    "slug": "mailer-boxes",
+    "alt": {
+      "zh-hk": "快遞盒/飛機盒 - 堅固耐用，電商發貨首選。可印品牌Logo，提升開箱體驗。...",
+      "en": "Mailer Boxes - Sturdy and durable, first choice for e-c...",
+      "ja": "発送箱 - 頑丈で耐久性があり、EC発送の第一選択。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-packaging-mailer-boxes-zh-hk",
+      "en": "zprintpro-packaging-mailer-boxes-en",
+      "ja": "zprintpro-packaging-mailer-boxes-ja"
+    }
+  },
+  "folding-boxes": {
+    "skuCode": "PK-005",
+    "slug": "folding-boxes",
+    "alt": {
+      "zh-hk": "折疊盒 - 可折疊設計，節省倉儲空間。適合大量存貨的電商賣家。...",
+      "en": "Folding Boxes - Foldable design, saves warehouse space....",
+      "ja": "折りたたみ箱 - 折りたたみ可能なデザイン、倉庫スペースを節約。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-packaging-folding-boxes-zh-hk",
+      "en": "zprintpro-packaging-folding-boxes-en",
+      "ja": "zprintpro-packaging-folding-boxes-ja"
+    }
+  },
+  "rigid-boxes": {
+    "skuCode": "PK-006",
+    "slug": "rigid-boxes",
+    "alt": {
+      "zh-hk": "精裝盒 - 硬殼精裝，高檔奢華。適合高端產品、限量版商品。...",
+      "en": "Rigid Boxes - Hardcover rigid construction, luxurious ...",
+      "ja": "上製本箱 - 硬い上製本構造、豪華でプレミアム。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-packaging-rigid-boxes-zh-hk",
+      "en": "zprintpro-packaging-rigid-boxes-en",
+      "ja": "zprintpro-packaging-rigid-boxes-ja"
+    }
+  },
+  "foil-red-packets": {
+    "skuCode": "RP-001",
+    "slug": "foil-red-packets",
+    "alt": {
+      "zh-hk": "燙金利是封 - 傳統燙金工藝，喜慶大方。多種吉祥圖案可選，也可定制專屬設計。適合企業派發、節日營...",
+      "en": "Foil Red Packets - Traditional foil stamping, festive and e...",
+      "ja": "箔押しポチ袋 - 伝統的な箔押し加工、縁起が良く上品。複数の縁起の良い柄またはカスタムデザイン。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-red-packets-foil-red-packets-zh-hk",
+      "en": "zprintpro-red-packets-foil-red-packets-en",
+      "ja": "zprintpro-red-packets-foil-red-packets-ja"
+    }
+  },
+  "embossed-red-packets": {
+    "skuCode": "RP-002",
+    "slug": "embossed-red-packets",
+    "alt": {
+      "zh-hk": "浮雕利是封 - 浮雕工藝，立體觸感，高檔奢華。展現品牌誠意，適合VIP客戶、高端送禮。...",
+      "en": "Embossed Red Packets - Embossed craftsmanship, dimensional text...",
+      "ja": "エンボスポチ袋 - エンボス加工、立体的な触感、豪華な質感。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-red-packets-embossed-red-packets-zh-hk",
+      "en": "zprintpro-red-packets-embossed-red-packets-en",
+      "ja": "zprintpro-red-packets-embossed-red-packets-ja"
+    }
+  },
+  "custom-red-packets": {
+    "skuCode": "RP-003",
+    "slug": "custom-red-packets",
+    "alt": {
+      "zh-hk": "定制利是封 - 專屬設計，印上公司Logo和祝福語。強化品牌印象，節日營銷必備。...",
+      "en": "Custom Red Packets - Exclusive design with company logo and g...",
+      "ja": "オリジナルポチ袋 - 独占的なデザイン、会社ロゴと祝福の言葉。ブランドイメージを強化。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-red-packets-custom-red-packets-zh-hk",
+      "en": "zprintpro-red-packets-custom-red-packets-en",
+      "ja": "zprintpro-red-packets-custom-red-packets-ja"
+    }
+  },
+  "cartoon-red-packets": {
+    "skuCode": "RP-004",
+    "slug": "cartoon-red-packets",
+    "alt": {
+      "zh-hk": "卡通利是封 - 可愛卡通設計，深受年輕人喜愛。適合親子品牌、教育機構、兒童產品。...",
+      "en": "Cartoon Red Packets - Cute cartoon design, loved by young peop...",
+      "ja": "キャラクターポチ袋 - かわいいキャラクターデザイン、若者に人気。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-red-packets-cartoon-red-packets-zh-hk",
+      "en": "zprintpro-red-packets-cartoon-red-packets-en",
+      "ja": "zprintpro-red-packets-cartoon-red-packets-ja"
+    }
+  },
+  "eco-red-packets": {
+    "skuCode": "RP-005",
+    "slug": "eco-red-packets",
+    "alt": {
+      "zh-hk": "環保利是封 - 採用環保紙張和油墨，可持續發展理念。適合注重環保的企業。...",
+      "en": "Eco Red Packets - Eco-friendly paper and ink, sustainable ...",
+      "ja": "エコポチ袋 - 環境に優しい紙とインク、持続可能な開発の理念。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-red-packets-eco-red-packets-zh-hk",
+      "en": "zprintpro-red-packets-eco-red-packets-en",
+      "ja": "zprintpro-red-packets-eco-red-packets-ja"
+    }
+  },
+  "large-red-packets": {
+    "skuCode": "RP-006",
+    "slug": "large-red-packets",
+    "alt": {
+      "zh-hk": "大號利是封 - 加大尺寸，可放入更多鈔票或禮品卡。實用大氣，送禮更有面子。...",
+      "en": "Large Red Packets - Larger size, can hold more cash or gift ...",
+      "ja": "大判ポチ袋 - 大きなサイズ、より多くの現金やギフトカードを入れられます。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-red-packets-large-red-packets-zh-hk",
+      "en": "zprintpro-red-packets-large-red-packets-en",
+      "ja": "zprintpro-red-packets-large-red-packets-ja"
+    }
+  },
+  "wall-calendars": {
+    "skuCode": "CL-001",
+    "slug": "wall-calendars",
+    "alt": {
+      "zh-hk": "掛牆年曆 - 標準A3或A2掛牆年曆，13頁設計（封面+12個月）。適合家庭、辦公室使用，全年...",
+      "en": "Wall Calendars - Standard A3 or A2 wall calendars, 13-pag...",
+      "ja": "壁掛けカレンダー - 標準A3またはA2壁掛けカレンダー、13ページデザイン。家庭やオフィスに最適。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-calendars-wall-calendars-zh-hk",
+      "en": "zprintpro-calendars-wall-calendars-en",
+      "ja": "zprintpro-calendars-wall-calendars-ja"
+    }
+  },
+  "desk-calendars": {
+    "skuCode": "CL-002",
+    "slug": "desk-calendars",
+    "alt": {
+      "zh-hk": "座檯年曆 - 三角形座檯設計，穩固美觀。適合辦公桌擺放，每日品牌接觸。...",
+      "en": "Desk Calendars - Triangular desk design, stable and beaut...",
+      "ja": "卓上カレンダー - 三角形の卓上デザイン、安定して美しい。オフィスデスクに最適。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-calendars-desk-calendars-zh-hk",
+      "en": "zprintpro-calendars-desk-calendars-en",
+      "ja": "zprintpro-calendars-desk-calendars-ja"
+    }
+  },
+  "custom-calendars": {
+    "skuCode": "CL-003",
+    "slug": "custom-calendars",
+    "alt": {
+      "zh-hk": "定制年曆 - 專屬設計，每頁可印公司產品或服務。企業禮品首選，送客戶最佳選擇。...",
+      "en": "Custom Calendars - Exclusive design, each page can feature ...",
+      "ja": "オリジナルカレンダー - 独占的なデザイン、各ページに会社の製品やサービスを掲載可能。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-calendars-custom-calendars-zh-hk",
+      "en": "zprintpro-calendars-custom-calendars-en",
+      "ja": "zprintpro-calendars-custom-calendars-ja"
+    }
+  },
+  "mini-calendars": {
+    "skuCode": "CL-004",
+    "slug": "mini-calendars",
+    "alt": {
+      "zh-hk": "迷你年曆 - 小巧便攜，可放入錢包或口袋。創意禮品，年輕人喜愛。...",
+      "en": "Mini Calendars - Compact and portable, fits in wallet or ...",
+      "ja": "ミニカレンダー - コンパクトで持ち運び可能、財布やポケットに入ります。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-calendars-mini-calendars-zh-hk",
+      "en": "zprintpro-calendars-mini-calendars-en",
+      "ja": "zprintpro-calendars-mini-calendars-ja"
+    }
+  },
+  "photo-frame-calendars": {
+    "skuCode": "CL-005",
+    "slug": "photo-frame-calendars",
+    "alt": {
+      "zh-hk": "相框年曆 - 結合相框功能，可替換照片。實用美觀，家庭必備。...",
+      "en": "Photo Frame Calendars - Combined photo frame function, photos ca...",
+      "ja": "フォトフレームカレンダー - フォトフレーム機能付き、写真を交換可能。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-calendars-photo-frame-calendars-zh-hk",
+      "en": "zprintpro-calendars-photo-frame-calendars-en",
+      "ja": "zprintpro-calendars-photo-frame-calendars-ja"
+    }
+  },
+  "magnetic-calendars": {
+    "skuCode": "CL-006",
+    "slug": "magnetic-calendars",
+    "alt": {
+      "zh-hk": "磁石年曆 - 磁石背膠，可貼於冰箱等金屬表面。每日多次接觸，品牌曝光率高。...",
+      "en": "Magnetic Calendars - Magnetic backing, can stick to refrigera...",
+      "ja": "マグネットカレンダー - マグネット背面、冷蔵庫などの金属面に貼付可能。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-calendars-magnetic-calendars-zh-hk",
+      "en": "zprintpro-calendars-magnetic-calendars-en",
+      "ja": "zprintpro-calendars-magnetic-calendars-ja"
+    }
+  },
+  "pvc-menus": {
+    "skuCode": "MN-001",
+    "slug": "pvc-menus",
+    "alt": {
+      "zh-hk": "PVC餐牌 - 防水防油PVC材質，易清潔耐用。餐廳、咖啡店首選。...",
+      "en": "PVC Menus - Waterproof and oil-resistant PVC materia...",
+      "ja": "PVCメニュー - 防水・耐油性PVC素材、お手入れ簡単で耐久性あり。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-menus-pvc-menus-zh-hk",
+      "en": "zprintpro-menus-pvc-menus-en",
+      "ja": "zprintpro-menus-pvc-menus-ja"
+    }
+  },
+  "laminated-menus": {
+    "skuCode": "MN-002",
+    "slug": "laminated-menus",
+    "alt": {
+      "zh-hk": "過膠餐牌 - 紙質過膠處理，防水耐用且成本較低。經濟實惠之選。...",
+      "en": "Laminated Menus - Paper with lamination, waterproof and du...",
+      "ja": "ラミネートメニュー - ラミネート加工紙、防水で耐久性がありコストも低い。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-menus-laminated-menus-zh-hk",
+      "en": "zprintpro-menus-laminated-menus-en",
+      "ja": "zprintpro-menus-laminated-menus-ja"
+    }
+  },
+  "hardcover-menus": {
+    "skuCode": "MN-003",
+    "slug": "hardcover-menus",
+    "alt": {
+      "zh-hk": "精裝餐牌 - 硬殼精裝，高檔大氣。適合高級餐廳、酒店。...",
+      "en": "Hardcover Menus - Hardcover binding, elegant and grand. Pe...",
+      "ja": "高級メニュー - 上製本装丁、エレガントで格式高い。高級レストラン、ホテルに最適。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-menus-hardcover-menus-zh-hk",
+      "en": "zprintpro-menus-hardcover-menus-en",
+      "ja": "zprintpro-menus-hardcover-menus-ja"
+    }
+  },
+  "drink-menus": {
+    "skuCode": "MN-004",
+    "slug": "drink-menus",
+    "alt": {
+      "zh-hk": "酒水牌 - 專為酒水設計，可立式或手持。酒吧、餐廳必備。...",
+      "en": "Drink Menus - Specially designed for drinks, can be st...",
+      "ja": "ドリンクメニュー - ドリンク専用設計、立てかけまたは手持ち可能。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-menus-drink-menus-zh-hk",
+      "en": "zprintpro-menus-drink-menus-en",
+      "ja": "zprintpro-menus-drink-menus-ja"
+    }
+  },
+  "disposable-menus": {
+    "skuCode": "MN-005",
+    "slug": "disposable-menus",
+    "alt": {
+      "zh-hk": "一次性餐牌 - 經濟紙質，適合快餐店、外賣店。可頻繁更換內容。...",
+      "en": "Disposable Menus - Economical paper, perfect for fast food ...",
+      "ja": "使い捨てメニュー - 経済的な紙、ファストフードやテイクアウト店に最適。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-menus-disposable-menus-zh-hk",
+      "en": "zprintpro-menus-disposable-menus-en",
+      "ja": "zprintpro-menus-disposable-menus-ja"
+    }
+  },
+  "outdoor-vinyl-banners": {
+    "skuCode": "BN-001",
+    "slug": "outdoor-vinyl-banners",
+    "alt": {
+      "zh-hk": "戶外燈布噴繪 - 大型戶外燈布，防水防曬，耐候性強。適合戶外廣告牌、建築圍板。...",
+      "en": "Outdoor Vinyl Banners - Large outdoor vinyl banners, waterproof ...",
+      "ja": "屋外バナー - 大型屋外ビニールバナー、防水・UV耐性、強い耐候性。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-banners-outdoor-vinyl-banners-zh-hk",
+      "en": "zprintpro-banners-outdoor-vinyl-banners-en",
+      "ja": "zprintpro-banners-outdoor-vinyl-banners-ja"
+    }
+  },
+  "roll-up-banners": {
+    "skuCode": "BN-002",
+    "slug": "roll-up-banners",
+    "alt": {
+      "zh-hk": "易拉寶 - 便攜易拉寶展架，安裝簡便。展會、路演必備。...",
+      "en": "Roll-up Banners - Portable roll-up banner stands, easy to ...",
+      "ja": "ロールアップバナー - ポータブルロールアップバナースタンド、設置簡単。展示会やロードショーに必須。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-banners-roll-up-banners-zh-hk",
+      "en": "zprintpro-banners-roll-up-banners-en",
+      "ja": "zprintpro-banners-roll-up-banners-ja"
+    }
+  },
+  "adhesive-banners": {
+    "skuCode": "BN-003",
+    "slug": "adhesive-banners",
+    "alt": {
+      "zh-hk": "背膠噴繪 - 自帶背膠，可直接粘貼於牆面或玻璃。適合店鋪裝飾、活動佈置。...",
+      "en": "Adhesive Banners - Self-adhesive, can be directly applied t...",
+      "ja": "粘着バナー - 自己粘着、壁やガラスに直接貼付可能。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-banners-adhesive-banners-zh-hk",
+      "en": "zprintpro-banners-adhesive-banners-en",
+      "ja": "zprintpro-banners-adhesive-banners-ja"
+    }
+  },
+  "vehicle-wraps": {
+    "skuCode": "BN-004",
+    "slug": "vehicle-wraps",
+    "alt": {
+      "zh-hk": "車身廣告 - 專用車身貼紙，耐候性強，移除不留痕。流動廣告，曝光率高。...",
+      "en": "Vehicle Wraps - Specialized vehicle wrap vinyl, strong w...",
+      "ja": "カーラッピング - 専用車体ラップビニール、強い耐候性、剥がしても残りません。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-banners-vehicle-wraps-zh-hk",
+      "en": "zprintpro-banners-vehicle-wraps-en",
+      "ja": "zprintpro-banners-vehicle-wraps-ja"
+    }
+  },
+  "mesh-banners": {
+    "skuCode": "BN-005",
+    "slug": "mesh-banners",
+    "alt": {
+      "zh-hk": "網格布噴繪 - 網格設計，透光透風。適合大型戶外廣告、建築圍板。...",
+      "en": "Mesh Banners - Mesh design, light and air permeable. Pe...",
+      "ja": "メッシュバナー - メッシュデザイン、光と空気を通す。大型屋外広告に最適。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-banners-mesh-banners-zh-hk",
+      "en": "zprintpro-banners-mesh-banners-en",
+      "ja": "zprintpro-banners-mesh-banners-ja"
+    }
+  },
+  "catalog-printing": {
+    "skuCode": "BK-001",
+    "slug": "catalog-printing",
+    "alt": {
+      "zh-hk": "畫冊印刷 - 高級畫冊，色彩還原度高。適合產品目錄、企業年報、藝術作品集。...",
+      "en": "Catalog Printing - Premium catalogs with high color accurac...",
+      "ja": "カタログ印刷 - 高級カタログ、高い色再現性。製品カタログ、年次報告書に最適。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-books-catalog-printing-zh-hk",
+      "en": "zprintpro-books-catalog-printing-en",
+      "ja": "zprintpro-books-catalog-printing-ja"
+    }
+  },
+  "saddle-stitch-booklets": {
+    "skuCode": "BK-002",
+    "slug": "saddle-stitch-booklets",
+    "alt": {
+      "zh-hk": "騎馬釘小冊子 - 經濟裝訂方式，適合頁數較少的冊子。產品說明書、活動手冊首選。...",
+      "en": "Saddle Stitch Booklets - Economical binding method, perfect for b...",
+      "ja": "中綴じ冊子 - 経済的な製本方法、ページ数の少ない冊子に最適。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-books-saddle-stitch-booklets-zh-hk",
+      "en": "zprintpro-books-saddle-stitch-booklets-en",
+      "ja": "zprintpro-books-saddle-stitch-booklets-ja"
+    }
+  },
+  "perfect-bound-books": {
+    "skuCode": "BK-003",
+    "slug": "perfect-bound-books",
+    "alt": {
+      "zh-hk": "無線膠裝書籍 - 平整書脊，可印刷書名。適合頁數較多的書籍、雜誌。...",
+      "en": "Perfect Bound Books - Flat spine, can print book title. Perfec...",
+      "ja": "無線綴じ本 - 平らな背表紙、書名を印刷可能。ページ数の多い本や雑誌に最適。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-books-perfect-bound-books-zh-hk",
+      "en": "zprintpro-books-perfect-bound-books-en",
+      "ja": "zprintpro-books-perfect-bound-books-ja"
+    }
+  },
+  "hardcover-books": {
+    "skuCode": "BK-004",
+    "slug": "hardcover-books",
+    "alt": {
+      "zh-hk": "精裝書籍 - 硬殼精裝，高檔耐用。適合珍藏版書籍、企業年鑑。...",
+      "en": "Hardcover Books - Hardcover binding, luxurious and durable...",
+      "ja": "上製本 - 上製本装丁、豪華で耐久性あり。愛蔵版、企業年鑑に最適。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-books-hardcover-books-zh-hk",
+      "en": "zprintpro-books-hardcover-books-en",
+      "ja": "zprintpro-books-hardcover-books-ja"
+    }
+  },
+  "spiral-notebooks": {
+    "skuCode": "BK-005",
+    "slug": "spiral-notebooks",
+    "alt": {
+      "zh-hk": "線圈筆記本 - 線圈裝訂，可180度平攤。適合筆記本、工作手冊。...",
+      "en": "Spiral Notebooks - Spiral binding, can lay flat at 180 degr...",
+      "ja": "リングノート - スパイラル製本、180度に開く。ノート、ワークブックに最適。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-books-spiral-notebooks-zh-hk",
+      "en": "zprintpro-books-spiral-notebooks-en",
+      "ja": "zprintpro-books-spiral-notebooks-ja"
+    }
+  },
+  "business-envelopes": {
+    "skuCode": "EV-001",
+    "slug": "business-envelopes",
+    "alt": {
+      "zh-hk": "公司信封 - 定制公司信封，印上Logo和地址。專業形象，商務必備。...",
+      "en": "Business Envelopes - Custom business envelopes with logo and ...",
+      "ja": "ビジネス封筒 - カスタムビジネス封筒、ロゴと住所を印刷。プロフェッショナルなイメージ。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-envelopes-business-envelopes-zh-hk",
+      "en": "zprintpro-envelopes-business-envelopes-en",
+      "ja": "zprintpro-envelopes-business-envelopes-ja"
+    }
+  },
+  "colored-envelopes": {
+    "skuCode": "EV-002",
+    "slug": "colored-envelopes",
+    "alt": {
+      "zh-hk": "彩色信封 - 彩色印刷，視覺吸引力強。適合邀請函、賀卡、營銷郵件。...",
+      "en": "Colored Envelopes - Colorful printing, strong visual appeal....",
+      "ja": "カラー封筒 - カラフルな印刷、強い視覚的アピール。招待状、グリーティングカードに最適。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-envelopes-colored-envelopes-zh-hk",
+      "en": "zprintpro-envelopes-colored-envelopes-en",
+      "ja": "zprintpro-envelopes-colored-envelopes-ja"
+    }
+  },
+  "large-envelopes": {
+    "skuCode": "EV-003",
+    "slug": "large-envelopes",
+    "alt": {
+      "zh-hk": "大號信封 - A4尺寸大信封，可裝入文件、合同。辦公室必備。...",
+      "en": "Large Envelopes - A4 size large envelopes, can hold docume...",
+      "ja": "大判封筒 - A4サイズの大きな封筒、書類や契約書を入れられます。オフィスに必須。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-envelopes-large-envelopes-zh-hk",
+      "en": "zprintpro-envelopes-large-envelopes-en",
+      "ja": "zprintpro-envelopes-large-envelopes-ja"
+    }
+  },
+  "pearl-envelopes": {
+    "skuCode": "EV-004",
+    "slug": "pearl-envelopes",
+    "alt": {
+      "zh-hk": "珠光信封 - 珠光紙張，閃耀質感。適合婚禮邀請、高端活動。...",
+      "en": "Pearl Envelopes - Pearl paper, shimmering quality. Perfect...",
+      "ja": "パール封筒 - パール紙、輝く質感。結婚式の招待状、高級イベントに最適。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-envelopes-pearl-envelopes-zh-hk",
+      "en": "zprintpro-envelopes-pearl-envelopes-en",
+      "ja": "zprintpro-envelopes-pearl-envelopes-ja"
+    }
+  },
+  "exercise-books": {
+    "skuCode": "ED-001",
+    "slug": "exercise-books",
+    "alt": {
+      "zh-hk": "作業簿印刷 - 學校作業簿，可定制封面和內頁格式。適合中小學、補習社。...",
+      "en": "Exercise Books - School exercise books, customizable cove...",
+      "ja": "ワークブック印刷 - 学校のワークブック、カスタマイズ可能な表紙と内側ページ形式。小中校、塾に最適。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-educational-exercise-books-zh-hk",
+      "en": "zprintpro-educational-exercise-books-en",
+      "ja": "zprintpro-educational-exercise-books-ja"
+    }
+  },
+  "certificates": {
+    "skuCode": "ED-002",
+    "slug": "certificates",
+    "alt": {
+      "zh-hk": "證書印刷 - 精美證書，配合燙金、壓紋等工藝。畢業證書、獎狀、資格證明。...",
+      "en": "Certificates - Exquisite certificates with foil stampin...",
+      "ja": "賞状印刷 - 精巧な賞状、箔押し・エンボスなどの加工付き。卒業証書、賞状、資格証明。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-educational-certificates-zh-hk",
+      "en": "zprintpro-educational-certificates-en",
+      "ja": "zprintpro-educational-certificates-ja"
+    }
+  },
+  "school-flyers": {
+    "skuCode": "ED-003",
+    "slug": "school-flyers",
+    "alt": {
+      "zh-hk": "學校單張 - 學校通告、活動宣傳單張。經濟實惠，大量印刷。...",
+      "en": "School Flyers - School notices, event promotional flyers...",
+      "ja": "学校チラシ - 学校の通知、イベント宣伝チラシ。経済的、大量印刷。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-educational-school-flyers-zh-hk",
+      "en": "zprintpro-educational-school-flyers-en",
+      "ja": "zprintpro-educational-school-flyers-ja"
+    }
+  },
+  "textbooks": {
+    "skuCode": "ED-004",
+    "slug": "textbooks",
+    "alt": {
+      "zh-hk": "教科書印刷 - 教材、教科書印刷。專業排版，品質保證。...",
+      "en": "Textbooks - Teaching materials, textbook printing. P...",
+      "ja": "教科書印刷 - 教材、教科書の印刷。プロの組版、品質保証。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-educational-textbooks-zh-hk",
+      "en": "zprintpro-educational-textbooks-en",
+      "ja": "zprintpro-educational-textbooks-ja"
+    }
+  },
+  "magnetic-closure-gift-box": {
+    "skuCode": "PKG-007",
+    "slug": "magnetic-closure-gift-box",
+    "alt": {
+      "zh-hk": "磁吸翻蓋禮盒印刷 - 高檔磁吸翻蓋硬盒，適合奢侈品、化妝品、電子產品包裝。支持燙金、UV、壓紋工藝。...",
+      "en": "Magnetic Closure Gift Box - Premium magnetic closure rigid boxes for...",
+      "ja": "マグネット蓋ギフトボックス - 高級マグネット蓋硬箱。高級品、化粧品、電子機器の包装に最適。箔押し、UV、エンボ..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-packaging-magnetic-closure-gift-box-zh-hk",
+      "en": "zprintpro-packaging-magnetic-closure-gift-box-en",
+      "ja": "zprintpro-packaging-magnetic-closure-gift-box-ja"
+    }
+  },
+  "electronics-packaging-box": {
+    "skuCode": "PKG-008",
+    "slug": "electronics-packaging-box",
+    "alt": {
+      "zh-hk": "電子產品包裝盒定制 - 手機、耳機、充電器等3C產品包裝盒。EVA內托、吸塑、紙托多種內襯選擇。支持環保...",
+      "en": "Electronics Packaging Box - Packaging boxes for phones, earphones, c...",
+      "ja": "電子機器包装箱 - スマホ、イヤホン、充電器等のパッケージ箱。EVAフォーム、ブリスター、紙トレイ内..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-packaging-electronics-packaging-box-zh-hk",
+      "en": "zprintpro-packaging-electronics-packaging-box-en",
+      "ja": "zprintpro-packaging-electronics-packaging-box-ja"
+    }
+  },
+  "kraft-paper-packaging-box": {
+    "skuCode": "PKG-009",
+    "slug": "kraft-paper-packaging-box",
+    "alt": {
+      "zh-hk": "牛皮紙盒印刷定制 - 環保牛皮紙盒，適合食品、茶葉、手工皂包裝。可印刷Logo，支持多種尺寸。...",
+      "en": "Kraft Paper Packaging Box - Eco-friendly kraft paper boxes for food,...",
+      "ja": "クラフト紙箱印刷 - 環境に優しいクラフト紙箱。食品、お茶、手作り石鹸の包装に最適。ロゴ印刷、サイズ豊..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-packaging-kraft-paper-packaging-box-zh-hk",
+      "en": "zprintpro-packaging-kraft-paper-packaging-box-en",
+      "ja": "zprintpro-packaging-kraft-paper-packaging-box-ja"
+    }
+  },
+  "drawer-slide-gift-box": {
+    "skuCode": "PKG-010",
+    "slug": "drawer-slide-gift-box",
+    "alt": {
+      "zh-hk": "抽屜禮盒滑軌盒印刷 - 精緻抽屜式禮盒，絲帶拉手設計。適合茶葉、月餅、珠寶首飾包裝。...",
+      "en": "Drawer Slide Gift Box - Exquisite drawer-style gift boxes with r...",
+      "ja": "引き出し式ギフトボックス - 精巧な引き出し式ギフトボックス。リボン引手付き。お茶、月餅、宝石類の包装に最適。..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-packaging-drawer-slide-gift-box-zh-hk",
+      "en": "zprintpro-packaging-drawer-slide-gift-box-en",
+      "ja": "zprintpro-packaging-drawer-slide-gift-box-ja"
+    }
+  },
+  "fruit-food-label-stickers": {
+    "skuCode": "ST-009",
+    "slug": "fruit-food-label-stickers",
+    "alt": {
+      "zh-hk": "水果貼紙食品標籤印刷 - 防水防油的水果貼紙和食品標籤，適合生鮮、烘焙、飲料包裝。符合食品安全標準。...",
+      "en": "Fruit & Food Label Stickers - Waterproof and oil-resistant fruit stick...",
+      "ja": "フルーツ・食品ラベルシール - 耐水耐油のフルーツシールと食品ラベル。生鮮食品、ベーカリー、飲料包装に最適。食品..."
+    },
+    "filename": {
+      "zh-hk": "zprintpro-stickers-fruit-food-label-stickers-zh-hk",
+      "en": "zprintpro-stickers-fruit-food-label-stickers-en",
+      "ja": "zprintpro-stickers-fruit-food-label-stickers-ja"
+    }
+  }
+}
