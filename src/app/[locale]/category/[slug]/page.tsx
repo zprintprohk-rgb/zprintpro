@@ -24,7 +24,7 @@ import { JsonLd } from '@/components/JsonLd';
 import { CategorySidebar } from '@/components/category/CategorySidebar';
 import { CategoryProductCard } from '@/components/category/CategoryProductCard';
 import { Pagination } from '@/components/Pagination';
-import { CategoryPillarContent } from '@/components/CategoryPillarContent';
+import { CategoryPillarContent, generateFaqSchema } from '@/components/CategoryPillarContent';
 import { RegionalContent, RegionalCta, RegionalTrustBadges } from '@/components/seo/RegionalContent';
 
 export const dynamic = 'force-static';
@@ -184,10 +184,14 @@ export default function CategoryPage({
 
   return (
     <>
-      {/* 结构化数据：面包屑 + 产品列表 + 本地商家 */}
+      {/* 结构化数据：面包屑 + 产品列表 + 本地商家 + FAQPage */}
       <JsonLd data={breadcrumbJsonLd} />
       <JsonLd data={itemListJsonLd} />
       <JsonLd data={businessJsonLd} />
+      {(() => {
+        const faqSchema = generateFaqSchema(locale, slug);
+        return faqSchema ? <JsonLd data={faqSchema} /> : null;
+      })()}
 
       <main className="min-h-screen bg-gray-50">
         {/* Banner 区域 - 1320×400，紧贴导航栏，图片背景 */}
