@@ -154,6 +154,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
         '選擇包裝盒時，首先要明確產品的用途和目標受眾。電商產品需要耐摔的瓦楞紙箱；美妝品牌適合高級感的白卡彩盒；食品則必須使用食品級材質並通過相關認證。',
         '其次考慮預算和數量。小批量試產可選擇數碼印刷的彩盒（50 個起），大批量生產則建議使用柯式印刷以降低成本。我們的專業顧問可根據您的預算和時間要求，推薦最合適的方案。',
         '最後，不要忽略設計細節。一個好的包裝設計應該在 3 秒內傳達品牌信息。我們提供免費設計諮詢，從色彩心理學到結構力學，確保您的包裝既美觀又實用。',
+        '在香港經營電商、零售或禮品線時，長尾搜尋常見「香港包裝盒印刷」「紙盒訂製」「禮盒少量」等組合詞；無論門市在港島、九龍或新界，只要鎖定用途（運輸防撞／開箱儀式／食品合規），就能更快收窄盒型與紙材，並與我們顧問對齊交期與預算。',
       ],
     },
     faq: [
@@ -165,6 +166,8 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
       { q: '可以自己設計刀模線嗎？', a: '可以。我們接受 AI / PDF 格式的刀模線文件（CMYK，300dpi）。如果不熟悉刀模設計，我們提供免費刀模設計服務。' },
       { q: '瓦楞紙箱能做抗壓測試嗎？', a: '可以。我們可根據 ISTA 標準進行抗壓和跌落測試，確保物流運輸安全。測試報告可作為出口通關文件。' },
       { q: '支持出口包裝標準嗎？', a: '支持。我們熟悉歐盟 WEEE、美國 FTC 綠色指南等出口包裝法規，可協助準備相關合規文件。' },
+      { q: '香港港島、九龍、新界都可以安排送貨嗎？', a: '可以。支援順豐／專車配送，港島（如中環、銅鑼灣）、九龍（如旺角、觀塘）、新界（如沙田、屯門）均可安排；大批量可協調貨車送倉或寫字樓，運費與時效會按重量與區域於報價單列明。' },
+      { q: '可以先網上報價再上傳設計稿嗎？', a: '可以。建議先提交盒型、展開尺寸、數量、紙材與表面工藝（燙金／UV／覆膜等）取得報價；確認後再上傳 AI／PDF，印前會檢查刀模、出血與色彩模式，避免批量後才發現結構或檔案問題。' },
     ],
   },
   en: {
@@ -433,6 +436,7 @@ const businessCardsContent: Record<string, CategoryLocaleContent> = {
         '選擇名片紙張時，首先要考慮行業屬性。金融、法律行業適合 400g 厚紙或剛古紙，傳達穩重專業；創意行業可選棉紙或特殊紋理紙，展示個性；科技行業推薦荷蘭白卡，簡約現代。',
         '工藝選擇上，燙金適合高端品牌，局部 UV 適合強調 LOGO，凹凸壓紋適合極簡設計。建議不要超過兩種工藝組合，避免視覺過於繁複。我們提供免費工藝搭配建議。',
         '文件準備是關鍵。請確保文字轉曲線、圖片嵌入、色彩模式為 CMYK。如果不確定，可直接上傳設計稿，我們的印前團隊會免費檢查並提供修改建議。',
+        '在香港搜尋「名片印刷 香港」「咭片燙金」「厚身名片」的用戶往往同時在意交期與門市／寫字樓收件便利；建議先定下使用場景（展會派發、投行會議、創意作品集），再決定紙厚與工藝數量，並預留時間做數碼樣張確認色彩。',
       ],
     },
     faq: [
@@ -444,6 +448,8 @@ const businessCardsContent: Record<string, CategoryLocaleContent> = {
       { q: '企業批量訂購有優惠嗎？', a: '有。1,000 張以上享批量折扣，企業客戶可申請月結賬戶，專屬客戶經理跟進。' },
       { q: '名片可以印 QR Code 嗎？', a: '可以。我們支持可變數據印刷，每張名片的 QR Code 可以不同（鏈接不同網頁或聯絡方式）。' },
       { q: '什麼是 NFC 智能名片？', a: '內置 NFC 芯片的名片，手機輕觸即可自動保存聯絡方式或打開網站，適合科技行業和前瞻性品牌。' },
+      { q: '香港港島、九龍、新界都可以安排送貨嗎？', a: '可以。支援順豐到付／月結及指定時段派送；港島核心商業區、九龍黃金地段與新界大型屋苑皆可安排。急件建議上午前確認稿件以便排單。' },
+      { q: '可以先網上報價再決定工藝嗎？', a: '可以。請提供數量、紙張克重（300g／400g 等）、單雙面與工藝（啞膠／燙金／UV／圓角等），可先取得分段報價；印前會協助檢查安全線與出血，確保批量無誤。' },
     ],
   },
   en: {
@@ -713,6 +719,7 @@ const bannersContent: Record<string, CategoryLocaleContent> = {
         '選擇噴繪材質時，首先要區分室內和戶外使用。室內活動（展覽、發布會）推薦 PP 合成紙或背膠海報，經濟且安裝方便；戶外廣告（建築圍板、橫幅）必須使用 PVC 橫幅布或網眼布，防水防曬且抗撕裂。',
         '尺寸選擇要考慮觀看距離和安裝空間。X 展架標準 60×160cm 適合展位角落；80×180cm 適合主通道。Backdrop 背景板建議高度 2.2–2.4m，確保拍照時不會露出頂部邊緣。我們提供免費場地測量和尺寸建議。',
         '解析度要求與輸出尺寸成反比。小尺寸（<1m）建議 150dpi；中尺寸（1–3m）100dpi 即可；大尺寸（>3m）72dpi 足夠。過高的解析度會增加文件大小和處理時間，不會提升實際效果。',
+        '活動密集區（港島會展周邊、九龍塘／旺角商場、將軍澳／荃灣社區）常有「Backdrop 背景板」「易拉寶 即日」「戶外橫額」類搜尋；預留安裝動線與電源／桁架需求，並區分短期路演與長期圍板，可大幅減少現場改稿與二次輸出。',
       ],
     },
     faq: [
@@ -724,6 +731,8 @@ const bannersContent: Record<string, CategoryLocaleContent> = {
       { q: '戶外廣告需要申請嗎？', a: '視位置和規模而定。建築圍板一般需要屋宇署批准，街道橫幅需要食環署許可。我們可提供申請指引。' },
       { q: '噴繪畫面可以重複使用嗎？', a: '可以。妥善捲起存放於陰涼乾燥處，PVC 橫幅布可重複使用多次。但折疊存放會產生摺痕。' },
       { q: '可以提供安裝服務嗎？', a: '可以。港島、九龍主要區域提供安裝服務，包括桁架搭建、燈光配置和現場調試。' },
+      { q: '香港港島、九龍、新界都可以送貨或現場安裝嗎？', a: '可以。畫面成品可順豐／貨車配送；港島與九龍主要展館及商業區可預約安裝團隊，新界大型場地亦可協調（視檔期與車輛通行而定）。建議活動前預留現場勘測時間。' },
+      { q: '可以先報價再給設計檔嗎？', a: '可以。請提供輸出尺寸、室內／戶外、是否需要租架或安裝、數量與期望取貨時間；可先給分段報價，定稿後再提交 AI／PDF／TIFF，印前會確認解析度與出血是否符合大型噴畫要求。' },
     ],
   },
   en: {
@@ -993,6 +1002,7 @@ const booksContent: Record<string, CategoryLocaleContent> = {
         '選擇裝訂方式時，首先要考慮頁數和用途。少於 64 頁的薄書推薦騎馬釘，經濟且展開平整；64–200 頁的書推薦無線膠裝，書脊平整且可平攤；超過 200 頁或需要長期收藏的書推薦鎖線膠裝或精裝書，耐久度最高。',
         '紙張選擇影響閱讀體驗和成本。文字為主的書（小說、教材）推薦 80g–100g 書紙，輕便且閱讀舒適；圖片為主的書（畫冊、攝影集）推薦 128g–157g 銅版紙，色彩還原極佳。封面建議 250g 以上，配合覆膜或燙金工藝提升質感。',
         '文件準備是書籍印刷的關鍵。請確保所有文字已轉曲線或嵌入字體，圖片解析度 ≥300dpi，預留 3mm 出血位，裝訂邊留出 ≥5mm 安全距離。如果不確定，我們的印前團隊會免費檢查並提供修改建議。',
+        '香港有不少「印書 香港」「畫冊 少量」「企業年報 印刷」需求來自中小企、協會與自費作者；若預算有限可先數碼短印驗證內容與裝訂手感，再視反應決定是否轉柯式大批，並同步規劃書脊厚度與封面工藝。',
       ],
     },
     faq: [
@@ -1004,6 +1014,8 @@ const booksContent: Record<string, CategoryLocaleContent> = {
       { q: '可以申請 ISBN 嗎？', a: '可以。我們協助自費出版作者申請香港 ISBN，提供出版諮詢和法律合規指導。' },
       { q: '攝影畫冊用什麼紙張最好？', a: '推薦 157g 銅版紙或 200g 哑粉紙，配合 ICC 色彩管理，確保照片色彩準確還原。' },
       { q: '精裝書和膠裝書有什麼區別？', a: '精裝書有硬殼封面，耐久度最高，適合收藏；膠裝書書脊平整，成本較低，適合一般閱讀。' },
+      { q: '香港港島、九龍、新界都可以送貨嗎？', a: '可以。成品書刊可按重量選擇順豐或貨車派送；寫字樓、學校或活動場地均可指定收件時段（視物流公司檔期）。大批量建議預約貨車送倉以減少損耗。' },
+      { q: '可以先報價再傳 InDesign／PDF 嗎？', a: '可以。請先提供總頁數、成品尺寸、裝訂方式、封面是否需要覆膜／燙金、數量與期望交期；可先取得數碼／柯式方案對比報價，稿件齊備後再做印前檢查與打樣建議。' },
     ],
   },
   en: {
@@ -1272,6 +1284,7 @@ const menusContent: Record<string, CategoryLocaleContent> = {
         '選擇餐牌材質時，首先要考慮餐廳類型和使用頻率。快餐店和茶餐廳推薦 PVC 餐牌，防水防油且經濟；西餐廳和甜品店推薦過膠餐牌，色彩鮮豔且易清潔；高級餐廳推薦皮革或木質餐牌，提升品牌格調。',
         '餐牌設計要遵循食物心理學原則。將高利潤菜品放在視覺焦點位置（右上角或中心）；使用高品質食物照片可提升點餐率 30% 以上；避免過多文字，每道菜控制在 20 字以內。我們的設計師深谙這些原則。',
         '考慮到疫情後的無接觸趨勢，建議在實體餐牌上添加 QR Code 電子菜單。顧客掃描後可查看完整菜單、圖片和營養信息，減少實體餐牌的更換頻率和印刷成本。',
+        '香港餐飲常用搜尋包含「餐牌印刷 香港」「防水餐牌」「PVC Menu」；深水埗、旺角、銅鑼灣、將軍澳等商圈對耐用與油污清潔要求高，選材時宜同步考慮晚市翻台效率與是否需要分店版本／價目更新。',
       ],
     },
     faq: [
@@ -1283,6 +1296,8 @@ const menusContent: Record<string, CategoryLocaleContent> = {
       { q: '可以印多語言菜單嗎？', a: '可以。支持中英文、中日文對照，以及可變數據印刷（不同分店不同價格）。' },
       { q: 'QR Code 電子菜單怎麼做？', a: '我們可以為您生成 QR Code 並連結到電子菜單頁面，支持實時更新價格和菜品。' },
       { q: '餐牌可以更改內頁嗎？', a: '可以。硬膠套或活頁夾設計的餐牌可以隨時更換單頁，適合季節性菜單更新。' },
+      { q: '香港港島、九龍、新界餐廳都可以送貨嗎？', a: '可以。支援順豐或專車送往各區分店；連鎖品牌可分地址分批配送。開業前急件請預留印刷與乾燥／過膠時間。' },
+      { q: '可以先報價再提供設計檔嗎？', a: '可以。請說明尺寸（如 A4／A5）、材質（PVC／過膠／硬膠套）、份數、是否需要多語言或 QR Code；可先取得單價與交期，稿件確認後再做色彩與出血檢查。' },
     ],
   },
   en: {
@@ -1552,6 +1567,7 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
         '選擇信封規格時，首先要考慮內裝文件的大小。A4 文件對折放入 DL 信封；A4 文件不對折放入 C4 信封；A5 文件放入 C5 信封。中式信封適合傳統商務和文化活動。如果不確定，可以聯繫我們的客服團隊諮詢。',
         '紙張選擇影響品牌形象。白卡紙適合一般商業信函，經濟實惠；牛皮紙適合文創品牌和電商，復古質感且環保；珠光紙適合高端邀請和 VIP 函件，珍珠光澤提升格調。',
         '特殊工藝可以讓普通信封變身品牌傳播載體。燙金公司名稱提升辨識度；凹凸壓紋增添觸感記憶；窗口設計節省書寫時間。建議企業至少選擇一種特色工藝，讓每一封信都成為品牌曝光。',
+        '本地搜尋常見「信封印刷 香港」「DL 信封」「邀請函信封」；金融、法律與活動公司多位於中環、金鐘或九龍東，對窗口位置與保密性要求高，宜在報價階段確認是否需要套印地址或可變資料。',
       ],
     },
     faq: [
@@ -1563,6 +1579,8 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
       { q: '可以燙金或壓紋嗎？', a: '可以。燙金、燙銀、凹凸壓紋、局部 UV 等多種工藝均可選擇。' },
       { q: '信封可以雙面印刷嗎？', a: '可以。內外雙面印刷增加品牌曝光，內頁可以印品牌故事或感謝語。' },
       { q: '窗口信封的透明膜會掉嗎？', a: '不會。我們使用高品質透明膜和專業粘貼工藝，確保窗口膜牢固不脫落。' },
+      { q: '香港港島、九龍、新界都可以送貨嗎？', a: '可以。大批量可走貨車直送寫字樓或倉庫；中小批量可順豐到付。節日前後派發邀請函建議預留緩衝日數。' },
+      { q: '可以先報價再提供刀模／設計檔嗎？', a: '可以。請提供規格（DL／C5／C4／中式號數）、紙材克重、印刷色數、是否需要窗口或燙金；可先取得單價，定稿後提交展開圖與出血設定即可安排印前。' },
     ],
   },
   en: {
@@ -1831,6 +1849,7 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
         '選擇年曆類型時，首先要考慮使用場景和目標受眾。辦公場景推薦座枱曆（三角架），桌面展示品牌曝光度高；家庭場景推薦掛牆曆（A3/A2），大圖視覺裝飾性強；促銷派發推薦月曆卡，便攜低價適合大量派發。',
         '設計年曆時要融入品牌元素。每頁都應包含 LOGO 和品牌色彩；重要日期（公司周年、產品發布日）可以特別標記；記事功能區設計可以提升實用性和留存率。建議預留廣告位或優惠券區域，增加營銷價值。',
         '時間規劃是年曆印刷的關鍵。建議提前 2–3 個月開始準備設計和印刷，避開 11–12 月的印刷高峰期。我們提供節日促銷提醒服務，確保您的年曆準時到位。',
+        '企業禮品搜尋例如「座枱曆 香港」「訂製月曆」在第四季度流量最高；若目標客戶為港島金融業或新界住宅社區，可在設計上預留假期標註與品牌故事頁，方便銷售同事分區派發。',
       ],
     },
     faq: [
@@ -1842,6 +1861,8 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
       { q: '可以個性化每本年曆嗎？', a: '可以。支持可變數據印刷，每本年曆可以印不同員工姓名或分店信息。' },
       { q: '年曆的紙張有什麼選擇？', a: '200g–300g 銅版紙／哑粉紙；底板 1–2mm 灰板或硬卡紙。' },
       { q: '建議什麼時候開始印年曆？', a: '建議提前 2–3 個月準備，避開 11–12 月的印刷高峰期。' },
+      { q: '香港港島、九龍、新界都可以送貨嗎？', a: '可以。座枱曆／掛曆可按箱規安排順豐或貨車；跨區派發企業禮品可先集中送到總部再分發。旺季建議鎖定檔期與數量。' },
+      { q: '可以先報價再給設計檔嗎？', a: '可以。請提供款式（座枱／掛牆／月曆卡）、數量、尺寸、紙張／底板厚度與是否需要燙金或座架；可先取得數碼／柯式方案報價，月曆頁面檔齊後再做色彩打樣建議。' },
     ],
   },
   en: {
@@ -2110,6 +2131,7 @@ const redPacketsContent: Record<string, CategoryLocaleContent> = {
         '選擇利是封時，首先要考慮用途和預算。企業大量贈禮推薦 128g 銅版紙配合燙金工藝，經濟且體面；高端品牌 VIP 贈禮推薦 200g 白卡紙或珠光紙配合浮雕工藝，質感極佳；文創品牌推薦紋理紙或環保再生紙，傳遞品牌理念。',
         '工藝選擇是利是封的靈魂。燙金是最經典的選擇，適合傳統節慶；浮雕擊凸增添觸感記憶；立體工藝和雷射切割適合高端定制，收藏價值高。建議至少選擇一種特色工藝，讓利是封從普通變身精品。',
         '時間規劃是利是封印刷的關鍵。建議提前 1–2 個月開始準備設計和印刷，避開春節前的印刷高峰期。我們提供生肖設計服務和傳統圖案庫，幫助您快速完成設計。',
+        '「利是封 印刷 香港」「定制 利是封」流量集中在農曆新年前；零售禮券與銀行客戶禮品通常要求色彩穩定與批量一致，宜提早鎖定燙金電鍍版與紙張批次，並為港九新界多點收件預留分貨時間。',
       ],
     },
     faq: [
@@ -2121,6 +2143,8 @@ const redPacketsContent: Record<string, CategoryLocaleContent> = {
       { q: '可以印不同祝福語嗎？', a: '可以。支持可變數據印刷，每個利是封可以印不同員工姓名或不同祝福語。' },
       { q: '利是封的尺寸可以定制嗎？', a: '可以。標準尺寸有小號、中號、大號，也支持完全客製化尺寸。' },
       { q: '建議什麼時候開始印利是封？', a: '建議提前 1–2 個月準備，避開春節前的印刷高峰期。' },
+      { q: '香港港島、九龍、新界都可以送貨嗎？', a: '可以。可按總部／分店地址分批配送；大批利是封建議木托或箱規出貨以利搬運。旺季車隊緊張時請盡早預約送貨時段。' },
+      { q: '可以先報價再給設計檔嗎？', a: '可以。請提供成品尺寸、數量、紙材、是否需要燙金／浮雕／立體工藝及封口方式；可先取得分段報價，定稿後再提交 AI／PDF 並標註燙金線條與出血。' },
     ],
   },
   en: {
@@ -2389,6 +2413,7 @@ const educationalContent: Record<string, CategoryLocaleContent> = {
         '選擇教育印刷產品時，首先要考慮學生的年齡和使用場景。幼稚園和小學推薦圓角處理的作業簿，避免尖角傷害；中學和大學推薦膠裝或鎖線裝訂的教科書，耐久度高且便於翻閱；證書和獎狀推薦燙金和防偽設計，確保莊重感和真實性。',
         '紙張選擇影響書寫體驗和耐用性。作業簿推薦 80g 書寫紙或道林紙，書寫流暢且不暈墨；教科書推薦 128g 銅版紙，圖文並茂且色彩準確；證書推薦 250g 以上白卡紙或珠光紙，挺度好且質感高級。',
         '教育機構應提前規劃印刷需求。建議每學期開學前 1 個月開始準備教材印刷，避開開學季的印刷高峰期。我們提供學期批量優惠和優先排期服務，確保您的教材準時到位。',
+        '搜尋「學校 印刷 香港」「作業簿 印刷」「證書 印刷」的單位遍及港島名校網、九龍城校網與新界新市鎮；若需分級／分班版本，宜在報價時說明可變欄位與裝訂方式，以便預留裁切與貼標時間。',
       ],
     },
     faq: [
@@ -2400,6 +2425,8 @@ const educationalContent: Record<string, CategoryLocaleContent> = {
       { q: '可以幫忙設計教材嗎？', a: '可以。專業設計師提供教材排版服務，確保內容清晰易讀，符合教育標準。' },
       { q: '有教育機構折扣嗎？', a: '有。學校、補習社、教育機構享受專屬折扣，長期合作客戶額外優惠。' },
       { q: '建議什麼時候開始準備教材印刷？', a: '建議每學期開學前 1 個月開始準備，避開開學季的印刷高峰期。' },
+      { q: '香港港島、九龍、新界學校都可以送貨嗎？', a: '可以。支援送往校舍、辦事處或指定代收點；大批教材可走貨車直送。開學季建議預約送貨時段並備妥接收人手。' },
+      { q: '可以先報價再提交 PDF／Word 稿件嗎？', a: '可以。請說明品類（作業簿／講義／證書）、頁數、尺寸、裝訂、數量與是否需要騎馬釘／膠裝；可先取得數碼／柯式報價，稿件齊備後再做印前檢查與打樣建議。' },
     ],
   },
   en: {
@@ -2589,6 +2616,8 @@ const educationalContent: Record<string, CategoryLocaleContent> = {
 // Default content generator for categories without full content yet
 export function getDefaultCategoryContent(categorySlug: string, locale: string): CategoryLocaleContent {
   const nameMap: Record<string, { 'zh-hk': string; en: string; ja: string }> = {
+    packaging: { 'zh-hk': '包裝盒定制', en: 'Packaging', ja: 'パッケージ印刷' },
+    'business-cards': { 'zh-hk': '咭片印刷', en: 'Business Cards', ja: '名刺印刷' },
     stickers: { 'zh-hk': '貼紙印刷', en: 'Sticker Printing', ja: 'シール印刷' },
     flyers: { 'zh-hk': '宣傳單張印刷', en: 'Flyer Printing', ja: 'チラシ印刷' },
     posters: { 'zh-hk': '海報印刷', en: 'Poster Printing', ja: 'ポスター印刷' },
@@ -2695,9 +2724,1142 @@ export function getDefaultCategoryContent(categorySlug: string, locale: string):
 
 
 // Export all category content
+
+// =============================================================================
+// STICKERS — 貼紙印刷
+// =============================================================================
+const stickersContent: Record<string, CategoryLocaleContent> = {
+  'zh-hk': {
+    h2: '香港貼紙印刷 — 防水／透明／燙金貼紙，50 張起訂，即日交貨',
+    coreAdvantages: {
+      title: '核心競爭優勢',
+      items: [
+        {
+          heading: '1. 全材質覆蓋：銅版紙到透明 PVC，滿足所有貼紙需求',
+          points: [
+            '提供銅版紙貼紙、透明貼紙、防水 PVC 貼紙、易碎貼紙、燙金貼紙、螢光貼紙、反光貼紙等 15+ 材質選擇',
+            '滿足「貼紙印刷 香港」、「防水貼紙」、「透明貼紙」、「燙金貼紙」等高搜索量關鍵詞',
+            '適用於產品標籤、包裝貼紙、品牌貼紙、活動貼紙、安全標示等多元場景',
+          ],
+        },
+        {
+          heading: '2. 小批量極致靈活，50 張起訂',
+          points: [
+            '50 張起訂（數碼印刷），適合初創品牌試產和限量活動',
+            '支持可變數據印刷，每張貼紙可以印不同序號、不同條碼或不同姓名（個性化標籤）',
+            '模切工藝精準，形狀可完全客製化（圓形、異形、鏤空）',
+          ],
+        },
+        {
+          heading: '3. 專業色彩管理，戶外耐久',
+          points: [
+            'ICC 色彩管理系統確保品牌色彩準確還原， Pantone 專色匹配可達 95% 以上',
+            '防水 PVC 和覆膜貼紙戶外耐久 2–3 年，不褪色不剝落',
+            '3M 背膠選項，強力粘附於金屬、玻璃、塑膠等多種表面',
+          ],
+        },
+      ],
+    },
+    materialTable: {
+      title: '材質工藝詳解',
+      subtitle: '貼紙常用材質與應用',
+      columns: ['材質類型', '關鍵特性', '適用場景'],
+      rows: [
+        { material: '銅版紙貼紙', features: '色彩鮮豔｜經濟｜室內使用｜可書寫', scenarios: '產品標籤｜包裝貼紙｜辦公標籤｜臨時標示' },
+        { material: '透明 PVC 貼紙', features: '透明背景｜防水｜耐撕｜高級感', scenarios: '玻璃瓶貼｜化妝品標籤｜透明包裝｜品牌貼紙' },
+        { material: '防水 PVC 貼紙', features: '完全防水｜戶外耐久｜抗 UV｜耐磨', scenarios: '戶外標示｜電器標籤｜食品包裝｜工業標籤' },
+        { material: '易碎貼紙', features: '撕毀即碎｜防偽｜一次性｜不可復原', scenarios: '保修標籤｜防偽封條｜資產標籤｜安全封條' },
+        { material: '燙金貼紙', features: '金屬光澤｜高級感｜品牌提升｜吸睛', scenarios: '高端產品｜禮品包裝｜VIP 標籤｜節慶裝飾' },
+      ],
+    },
+    specialOptions: {
+      title: '特殊加工選項',
+      items: [
+        { name: '模切異形', description: '任意形狀精準模切，圓形、星形、卡通形狀皆可，提升品牌辨識度' },
+        { name: '燙金／燙銀', description: 'LOGO 或圖案局部金屬光澤，增添高級感和節日氣氛' },
+        { name: '局部 UV', description: '重點圖案高光凸顯，觸感立體，視覺層次豐富' },
+        { name: '螢光色', description: '高可見度螢光色印刷，適合安全標示和促銷標籤' },
+        { name: '反光材質', description: '夜間反光效果，適合交通標示和安全標籤' },
+        { name: '可移除背膠', description: '可重複撕貼不留殘膠，適合臨時促銷和活動標籤' },
+      ],
+    },
+    techSpecs: {
+      title: '技術參數詳解',
+      items: [
+        { label: '尺寸範圍', value: '最小 10×10mm，最大 300×400mm，支持完全客製化形狀' },
+        { label: '起訂量', value: '50 張起訂（數碼印刷），1,000 張以上柯式印刷更經濟' },
+        { label: '交期', value: '即日交貨（數碼，50–500 張）；標準 2–3 天（柯式）；打樣當日' },
+        { label: '檔案要求', value: 'AI / PDF / PNG，300dpi，CMYK，預留 2mm 出血位（模切用）' },
+        { label: '背膠選項', value: '永久膠、可移除膠、3M 強力膠、低溫膠（冷凍環境）' },
+      ],
+    },
+    serviceNodes: {
+      title: '本地化服務節點',
+      items: [
+        { title: '免費模切刀模', description: '提供標準形狀刀模免費使用，異形刀模首次製作僅收工本費' },
+        { title: '可變數據印刷', description: '每張貼紙印不同序號、條碼、QR Code，適合產品追溯和個性化標籤' },
+        { title: '戶外耐久測試', description: '提供防水、抗 UV、耐磨測試報告，確保貼紙符合使用環境要求' },
+      ],
+    },
+    buyingGuide: {
+      title: '貼紙選購指南',
+      paragraphs: [
+        '選擇貼紙材質時，首先要考慮使用環境。室內乾燥環境推薦銅版紙貼紙，經濟且色彩鮮豔；潮濕或戶外環境必須選擇 PVC 防水貼紙，確保不褪色不剝落；需要防偽功能的場景推薦易碎貼紙，撕毀即碎無法復原。',
+        '形狀選擇影響品牌形象。標準矩形適合一般標籤；圓角矩形更柔和現代；異形模切（如品牌吉祥物輪廓）極具辨識度，但需額外製作刀模。建議新品牌先從標準形狀開始，驗證市場反應後再投資異形刀模。',
+        '背膠選擇常被忽略但非常重要。永久膠適合長期標籤；可移除膠適合臨時促銷和活動；3M 強力膠適合粗糙表面和戶外使用；低溫膠適合冷凍食品包裝。選擇錯誤的背膠可能導致貼紙脫落或殘膠難清。',
+        '零售與電商常用「貼紙 印刷 香港」「防水 標籤」「透明 貼紙」等組合詞；若產品會經葵涌倉或門市陳列，需同步考慮冷鏈、戶外曝曬或金屬曲面黏貼，並預留批次色差容忍值。',
+      ],
+    },
+    faq: [
+      { q: '貼紙印刷最低多少張起？', a: '50 張起訂（數碼印刷）。1,000 張以上柯式印刷更經濟。' },
+      { q: '貼紙可以印什麼形狀？', a: '任意形狀皆可。標準形狀免費，異形需製作刀模（首次僅收工本費）。' },
+      { q: '防水貼紙真的防水嗎？', a: 'PVC 防水貼紙完全防水，可承受浸泡和戶外雨淋。銅版紙貼紙不防水。' },
+      { q: '可以每張貼紙印不同內容嗎？', a: '可以。支持可變數據印刷，每張可印不同序號、條碼、QR Code 或姓名。' },
+      { q: '貼紙的背膠會留殘膠嗎？', a: '可移除背膠不會留殘膠；永久背膠長期粘附後可能有微量殘膠，可用酒精清除。' },
+      { q: '戶外貼紙能維持多久？', a: '覆膜 PVC 貼紙戶外可維持 2–3 年不褪色；無覆膜約 6–12 個月。' },
+      { q: '透明貼紙是什麼效果？', a: '透明 PVC 貼紙背景完全透明，僅圖案和文字顯示，適合玻璃瓶和透明包裝。' },
+      { q: '貼紙最快多久可以取？', a: '數碼印刷即日交貨（50–500 張）；柯式印刷標準 2–3 天。' },
+      { q: '香港港島、九龍、新界都可以送貨嗎？', a: '可以。支援順豐到付或月結；門市與工作室可取貨或速遞到指定地址。急件請一早確認稿件以便排單。' },
+      { q: '可以先報價再上傳設計檔嗎？', a: '可以。請提供尺寸、材質（銅版／PVC／透明等）、數量、是否需要模切異形與覆膜；可先取得數碼／柯式單價，檔案齊備後印前會檢查模切線與最小線寬。' },
+    ],
+  },
+  en: {
+    h2: 'Sticker Printing Hong Kong — Waterproof / Transparent / Foil, From 50 pcs, Same-Day Delivery',
+    coreAdvantages: {
+      title: 'Why Choose ZprintPro for Stickers?',
+      items: [
+        {
+          heading: '1. Full Material Range: Art Paper to Transparent PVC',
+          points: [
+            '15+ material options: art paper, transparent PVC, waterproof PVC, destructible, foil, fluorescent, and reflective stickers.',
+            'Covers high-search keywords: "sticker printing Hong Kong", "waterproof stickers", "transparent stickers", "foil stickers".',
+            'Ideal for product labels, packaging stickers, brand stickers, event stickers, and safety markings.',
+          ],
+        },
+        {
+          heading: '2. Ultra-Low MOQ, From 50 pcs',
+          points: [
+            '50 pcs minimum (digital printing) — perfect for startup brand prototyping and limited events.',
+            'Variable data printing supported — each sticker can feature different serial numbers, barcodes, or names (personalized labels).',
+            'Precision die-cutting with fully customizable shapes: round, irregular,镂空.',
+          ],
+        },
+        {
+          heading: '3. Professional Color Management, Outdoor Durability',
+          points: [
+            'ICC color management ensures accurate brand color reproduction with 95%+ Pantone matching.',
+            'Waterproof PVC and laminated stickers last 2–3 years outdoors without fading or peeling.',
+            '3M adhesive option for strong bonding on metal, glass, plastic, and other surfaces.',
+          ],
+        },
+      ],
+    },
+    materialTable: {
+      title: 'Material & Craftsmanship Guide',
+      subtitle: 'Popular Sticker Materials and Applications',
+      columns: ['Material Type', 'Key Features', 'Best For'],
+      rows: [
+        { material: 'Art Paper Stickers', features: 'Vibrant colors | Economical | Indoor use | Writable', scenarios: 'Product labels | Packaging | Office labels | Temporary signs' },
+        { material: 'Transparent PVC', features: 'Clear background | Waterproof | Tear-resistant | Premium', scenarios: 'Glass bottles | Cosmetics | Clear packaging | Brand stickers' },
+        { material: 'Waterproof PVC', features: 'Fully waterproof | Outdoor durable | UV-resistant | Wear-resistant', scenarios: 'Outdoor signs | Appliance labels | Food packaging | Industrial labels' },
+        { material: 'Destructible Stickers', features: 'Breaks when removed | Anti-fraud | One-time use | Irreversible', scenarios: 'Warranty labels | Security seals | Asset tags | Tamper-proof seals' },
+        { material: 'Foil Stickers', features: 'Metallic sheen | Premium feel | Brand elevation | Eye-catching', scenarios: 'Luxury products | Gift packaging | VIP labels | Festive decor' },
+      ],
+    },
+    specialOptions: {
+      title: 'Special Finishing Options',
+      items: [
+        { name: 'Die-Cut Custom Shapes', description: 'Precision die-cutting in any shape — round, star, cartoon outlines — boosting brand recognition.' },
+        { name: 'Foil Stamping', description: 'Metallic sheen on logos or designs adds premium feel and festive atmosphere.' },
+        { name: 'Spot UV', description: 'Glossy raised highlights on key visuals for rich tactile and visual layers.' },
+        { name: 'Fluorescent Colors', description: 'High-visibility fluorescent printing for safety markings and promotional labels.' },
+        { name: 'Reflective Material', description: 'Night-time reflective effect for traffic signs and safety labels.' },
+        { name: 'Removable Adhesive', description: 'Re-stickable without residue — ideal for temporary promotions and event labels.' },
+      ],
+    },
+    techSpecs: {
+      title: 'Technical Specifications',
+      items: [
+        { label: 'Size Range', value: 'Minimum 10×10mm, maximum 300×400mm. Fully customizable shapes supported.' },
+        { label: 'Minimum Order', value: '50 pcs (digital printing). 1,000+ recommended for offset (more economical).' },
+        { label: 'Turnaround', value: 'Same-day (digital, 50–500 pcs); Standard 2–3 days (offset); Prototyping same day.' },
+        { label: 'File Requirements', value: 'AI / PDF / PNG, 300dpi, CMYK, 2mm bleed (for die-cutting).' },
+        { label: 'Adhesive Options', value: 'Permanent, removable, 3M heavy-duty, low-temp (for frozen environments).' },
+      ],
+    },
+    serviceNodes: {
+      title: 'Local Service Points',
+      items: [
+        { title: 'Free Die-Cut Dies', description: 'Standard shape dies free to use; custom shape dies charged at cost price for first production.' },
+        { title: 'Variable Data Printing', description: 'Each sticker with unique serial numbers, barcodes, or QR codes — ideal for product tracking and personalized labels.' },
+        { title: 'Outdoor Durability Testing', description: 'Waterproof, UV-resistant, and wear-test reports provided to ensure stickers meet environmental requirements.' },
+      ],
+    },
+    buyingGuide: {
+      title: 'Sticker Buying Guide',
+      paragraphs: [
+        'When choosing sticker materials, first consider the environment. Dry indoor settings suit art paper stickers — economical with vibrant colors. Wet or outdoor environments require waterproof PVC stickers to prevent fading and peeling. Anti-fraud applications benefit from destructible stickers that break apart when removed.',
+        'Shape choice impacts brand image. Standard rectangles suit general labels; rounded corners feel softer and more modern; irregular die-cuts (like brand mascot outlines) offer high recognition but require custom dies. We recommend startups begin with standard shapes, then invest in custom dies after market validation.',
+        'Adhesive choice is often overlooked but critical. Permanent adhesive suits long-term labels; removable adhesive suits temporary promotions and events; 3M heavy-duty suits rough surfaces and outdoor use; low-temp adhesive suits frozen food packaging. Incorrect adhesive choice leads to peeling or difficult residue removal.',
+      ],
+    },
+    faq: [
+      { q: 'What is the minimum order for stickers?', a: '50 pcs (digital printing). 1,000+ pcs recommended for offset printing.' },
+      { q: 'What shapes can stickers be printed in?', a: 'Any shape. Standard shapes are free; custom shapes require die creation (first-time charged at cost).' },
+      { q: 'Are waterproof stickers really waterproof?', a: 'PVC waterproof stickers are fully waterproof and can withstand soaking and outdoor rain. Art paper stickers are not waterproof.' },
+      { q: 'Can each sticker have different content?', a: 'Yes. Variable data printing allows different serial numbers, barcodes, QR codes, or names per sticker.' },
+      { q: 'Will sticker adhesive leave residue?', a: 'Removable adhesive leaves no residue. Permanent adhesive may leave minimal residue after long-term adhesion — removable with alcohol.' },
+      { q: 'How long do outdoor stickers last?', a: 'Laminated PVC stickers last 2–3 years outdoors without fading. Non-laminated lasts approximately 6–12 months.' },
+      { q: 'What is the effect of transparent stickers?', a: 'Transparent PVC stickers have a fully clear background — only the design and text are visible. Ideal for glass bottles and clear packaging.' },
+      { q: 'What is the fastest turnaround for stickers?', a: 'Same-day digital printing (50–500 pcs). Standard offset: 2–3 days.' },
+    ],
+  },
+  ja: {
+    h2: '香港 シール印刷 — 防水／透明／箔押し、50枚から、即日納品',
+    coreAdvantages: {
+      title: 'ZprintPro シール印刷の強み',
+      items: [
+        {
+          heading: '1. 全材質対応：コート紙から透明PVCまで',
+          points: [
+            'コート紙シール、透明PVCシール、防水PVCシール、セキュリティシール、箔押しシール、蛍光シール、反射シールなど15種類以上の材質を提供。',
+            '「シール印刷 香港」、「防水シール」、「透明シール」、「箔押しシール」などの高検索ボリュームキーワードをカバー。',
+            '製品ラベル、包装シール、ブランドシール、イベントシール、安全標示など多様なシーンに対応。',
+          ],
+        },
+        {
+          heading: '2. 小ロット極致の柔軟性、50枚から',
+          points: [
+            '50枚から（デジタル印刷）。スタートアップブランドの試作や限定イベントに最適。',
+            '可変データ印刷に対応。1枚ずつ異なるシリアル番号、バーコード、QRコード、名前が可能（パーソナライズラベル）。',
+            '精密抜き型加工で、完全カスタマイズの形状（円形、異形、镂空）が可能。',
+          ],
+        },
+        {
+          heading: '3. プロ色彩管理、屋外耐久性',
+          points: [
+            'ICC色彩管理システムでブランドカラーを正確に再現。Pantone専色マッチングは95%以上。',
+            '防水PVCおよびラミネートシールは屋外で2–3年褪色・剥がれなし。',
+            '3M粘着剤オプションで、金属、ガラス、プラスチックなど多様な表面に強力接着。',
+          ],
+        },
+      ],
+    },
+    materialTable: {
+      title: '材質・工法ガイド',
+      subtitle: 'シールによく使われる材質と用途',
+      columns: ['材質タイプ', '主な特徴', '最適な用途'],
+      rows: [
+        { material: 'コート紙シール', features: '発色鮮やか｜手頃｜屋内使用｜書き込み可', scenarios: '製品ラベル｜包装シール｜オフィスラベル｜臨時標示' },
+        { material: '透明PVCシール', features: '透明背景｜防水｜耐裂｜高級感', scenarios: 'ガラス瓶｜化粧品ラベル｜透明包装｜ブランドシール' },
+        { material: '防水PVCシール', features: '完全防水｜屋外耐久｜UV耐性｜耐磨耗', scenarios: '屋外標示｜電器ラベル｜食品包装｜工業ラベル' },
+        { material: 'セキュリティシール', features: '剥がすと破損｜偽造防止｜一次性｜不可逆', scenarios: '保証ラベル｜防犯シール｜資産タグ｜開封防止' },
+        { material: '箔押しシール', features: '金属光沢｜高級感｜ブランド向上｜目を引く', scenarios: '高級製品｜ギフト包装｜VIPラベル｜季節装飾' },
+      ],
+    },
+    specialOptions: {
+      title: '特殊加工オプション',
+      items: [
+        { name: '抜き型カスタム形状', description: '円形、星形、キャラクター輪郭など任意の形状を精密抜き型加工。ブランド認知度を向上。' },
+        { name: '箔押し', description: 'ロゴやデザインに金属光沢の高級感と季節感を演出。' },
+        { name: '局部UV', description: '重要なビジュアルを光沢で強調。触感も立体的で視覚的な層が豊か。' },
+        { name: '蛍光色', description: '高い視認性の蛍光色印刷。安全標示やプロモーションラベルに最適。' },
+        { name: '反射材質', description: '夜間の反射効果。交通標示や安全ラベルに最適。' },
+        { name: '剥がしやすい粘着剤', description: '繰り返し貼り直し可能で残りません。臨時プロモーションやイベントラベルに最適。' },
+      ],
+    },
+    techSpecs: {
+      title: '技術仕様',
+      items: [
+        { label: 'サイズ範囲', value: '最小10×10mm、最大300×400mm。完全カスタマイズ形状対応。' },
+        { label: '最小発注数', value: '50枚から（デジタル印刷）。1,000枚以上はオフセット印刷がお得。' },
+        { label: '納期', value: '即日（デジタル、50–500枚）。標準2–3日（オフセット）。サンプル当日。' },
+        { label: 'ファイル要件', value: 'AI／PDF／PNG、300dpi、CMYK、2mmのbleed（抜き型用）。' },
+        { label: '粘着剤オプション', value: '永久粘着、剥がしやすい、3M強力、低温用（冷凍環境）。' },
+      ],
+    },
+    serviceNodes: {
+      title: 'ローカルサービス拠点',
+      items: [
+        { title: '無料抜き型', description: '標準形状の抜き型を無料提供。異形抜き型は初回のみ工本費を請求。' },
+        { title: '可変データ印刷', description: '1枚ずつ異なるシリアル番号、バーコード、QRコード。製品追跡やパーソナライズラベルに最適。' },
+        { title: '屋外耐久テスト', description: '防水、UV耐性、耐磨耗テストレポートを提供。使用環境に適合するシールを確保。' },
+      ],
+    },
+    buyingGuide: {
+      title: 'シール選び方ガイド',
+      paragraphs: [
+        'シールの材質を選ぶ際、まず使用環境を考慮しましょう。屋内の乾燥した環境にはコート紙シールがおすすめで、手頃でありながら発色が鮮やかです。湿気や屋外の環境には防水PVCシールが必要で、褪色や剥がれを防ぎます。偽造防止が必要なシーンには、剥がすと破損するセキュリティシールが最適です。',
+        '形状の選択はブランドイメージに影響します。標準の四角形は一般的なラベルに適しています。角丸はより柔らかくモダンな印象を与えます。異形の抜き型（ブランドマスコットの輪郭など）は高い認知度を提供しますが、カスタム抜き型が必要です。スタートアップには、まず標準形状から始め、市場の反応を確認してからカスタム抜き型に投資することをおすすめします。',
+        '粘着剤の選択は見落とされがちですが、非常に重要です。永久粘着剤は長期ラベルに適しています。剥がしやすい粘着剤は臨時プロモーションやイベントに適しています。3M強力粘着剤は粗い表面や屋外使用に適しています。低温用粘着剤は冷凍食品包装に適しています。間違った粘着剤の選択は、剥がれや残りの除去困難を引き起こす可能性があります。',
+      ],
+    },
+    faq: [
+      { q: 'シール印刷の最小発注数は？', a: '50枚から（デジタル印刷）。1,000枚以上はオフセット印刷がお得。' },
+      { q: 'どんな形状のシールが印刷できますか？', a: 'あらゆる形状が可能。標準形状は無料、異形は抜き型作成が必要（初回は工本費のみ）。' },
+      { q: '防水シールは本当に防水ですか？', a: 'PVC防水シールは完全防水で、浸水や屋外の雨にも耐えます。コート紙シールは防水ではありません。' },
+      { q: '1枚ずつ異なる内容は印刷できますか？', a: 'はい。可変データ印刷で、異なるシリアル番号、バーコード、QRコード、名前を各シールに印刷可能です。' },
+      { q: 'シールの粘着剤は残りますか？', a: '剥がしやすい粘着剤は残りません。永久粘着剤は長期粘着後に微量の残りがある可能性がありますが、アルコールで除去可能です。' },
+      { q: '屋外シールはどのくらい持ちますか？', a: 'ラミネートPVCシールは屋外で2–3年褪色しません。ラミネートなしは約6–12ヶ月です。' },
+      { q: '透明シールはどんな効果ですか？', a: '透明PVCシールは背景が完全に透明で、デザインと文字のみが見えます。ガラス瓶や透明包装に最適です。' },
+      { q: 'シールの最短納期は？', a: 'デジタル印刷は即日（50–500枚）。オフセット印刷は標準2–3日。' },
+    ],
+  },
+};
+
+// =============================================================================
+// FLYERS — 宣傳單張印刷
+// =============================================================================
+const flyersContent: Record<string, CategoryLocaleContent> = {
+  'zh-hk': {
+    h2: '香港宣傳單張印刷 — A5/A4/A3 彩印，100 張起訂，即日交貨',
+    coreAdvantages: {
+      title: '核心競爭優勢',
+      items: [
+        {
+          heading: '1. 全尺寸覆蓋：A6 到 A3，滿足所有派發場景',
+          points: [
+            '提供 A6(105×148mm)、A5(148×210mm)、A4(210×297mm)、A3(297×420mm)、DL(99×210mm) 等全標準尺寸',
+            '滿足「單張印刷 香港」、「宣傳單張」、「A4 彩印」、「A5 傳單」等高搜索量關鍵詞',
+            '適用於新店開業、活動推廣、產品介紹、餐飲外賣、教育招生等多元場景',
+          ],
+        },
+        {
+          heading: '2. 小批量高性價比，100 張起訂',
+          points: [
+            '100 張起訂（數碼印刷），適合小規模試推和精準派發',
+            '1,000 張以上柯式印刷，單價低至 HK$0.25/張，適合大規模派發',
+            '支持雙面印刷、多頁摺疊（對摺、三摺、Z 摺），一張傳單傳遞更多資訊',
+          ],
+        },
+        {
+          heading: '3. 專業設計 + 色彩還原，提升轉化率',
+          points: [
+            'ICC 色彩管理確保品牌色準確還原，Pantone 專色匹配可達 95% 以上',
+            '專業設計師提供傳單排版建議，通過視覺層次引導閱讀順序，提升行動轉化率',
+            '提供 QR Code 整合設計，掃描直達網站或優惠頁面，實現線下線上聯動',
+          ],
+        },
+      ],
+    },
+    materialTable: {
+      title: '材質工藝詳解',
+      subtitle: '單張常用紙張與工藝',
+      columns: ['紙張類型', '關鍵特性', '適用場景'],
+      rows: [
+        { material: '128g 銅版紙', features: '色彩鮮豔｜經濟｜適合大量派發', scenarios: '一般宣傳｜活動推廣｜新店開業｜限時優惠' },
+        { material: '157g 銅版紙', features: '厚實手感｜高級質感｜品牌首選', scenarios: '高端產品｜企業介紹｜VIP 邀請｜品牌形象' },
+        { material: '200g 白卡紙', features: '挺度極佳｜雙面印刷效果優｜高檔', scenarios: '精品菜單｜產品目錄｜企業年報｜高級活動' },
+        { material: '環保再生紙', features: 'FSC 認證｜環保形象｜社會責任', scenarios: '環保品牌｜NGO｜社會企業｜綠色活動' },
+        { material: '覆膜工藝', features: '啞膜／光膜｜防水防污｜延長壽命', scenarios: '長期展示｜戶外派發｜潮濕環境｜高使用頻率' },
+      ],
+    },
+    specialOptions: {
+      title: '特殊加工選項',
+      items: [
+        { name: '雙面印刷', description: '正反兩面充分利用，資訊量增加一倍，適合產品目錄和企業介紹' },
+        { name: '多頁摺疊', description: '對摺、三摺、Z 摺、開門摺等，一張紙展開多頁內容，適合菜單和產品目錄' },
+        { name: '局部 UV', description: '重點圖案或標題高光凸顯，視覺焦點明確，提升閱讀吸引力' },
+        { name: '燙金／燙銀', description: '品牌名稱或標語局部金屬光澤，增添高級感和節日氛圍' },
+        { name: '打號碼', description: '每張單張印獨立序號，適合抽獎券、優惠券和活動入場券' },
+        { name: '打孔', description: '頂部或側面打孔，方便裝訂成冊或懸掛展示' },
+      ],
+    },
+    techSpecs: {
+      title: '技術參數詳解',
+      items: [
+        { label: '標準尺寸', value: 'A6(105×148mm)、A5(148×210mm)、A4(210×297mm)、A3(297×420mm)、DL(99×210mm)，支持完全客製化' },
+        { label: '起訂量', value: '100 張起訂（數碼印刷），1,000 張以上柯式印刷更經濟' },
+        { label: '交期', value: '即日交貨（數碼，100–500 張）；標準 2–3 天（柯式）；打樣當日' },
+        { label: '檔案要求', value: 'AI / PDF / InDesign，300dpi，CMYK，預留 3mm 出血位' },
+        { label: '紙張選擇', value: '128g–200g 銅版紙／白卡紙；環保再生紙；覆膜（啞膜／光膜）' },
+      ],
+    },
+    serviceNodes: {
+      title: '本地化服務節點',
+      items: [
+        { title: '免費傳單模板', description: '提供 50+ 行業專用傳單模板，餐飲、美容、教育、零售等一鍵套用' },
+        { title: 'QR Code 整合設計', description: '免費生成 QR Code 並整合到傳單設計中，實現線下派發線上轉化' },
+        { title: '派發建議諮詢', description: '根據目標客群和預算，推薦最適尺寸、紙張和數量，最大化投資回報' },
+      ],
+    },
+    buyingGuide: {
+      title: '單張選購指南',
+      paragraphs: [
+        '選擇單張尺寸時，要考慮派發場景和閱讀距離。A6 適合信箱直投和街頭派發，輕便易攜帶；A5 是最常用的尺寸，平衡資訊量和便攜性；A4 適合詳細產品介紹和企業宣傳；A3 適合海報張貼和櫥窗展示。DL 尺寸（1/3 A4）適合信箱直投和活動邀請。',
+        '紙張選擇影響質感和成本。128g 銅版紙是最經濟的選擇，適合大量派發；157g 銅版紙手感厚實，適合品牌形象宣傳；200g 白卡紙挺度極佳，適合高端產品和長期展示。環保再生紙適合注重可持續發展的品牌。',
+        '摺疊方式可以大幅增加單張的資訊容量。對摺（4 頁）適合簡單的產品介紹；三摺（6 頁）是最常用的菜單和企業介紹格式；Z 摺適合圖表和流程展示。摺疊單張的成本僅比平面單張略高，但資訊量增加 3–5 倍。',
+        '香港線下派發常見搜尋如「傳單 印刷 香港」「A5 傳單 即日」「三折頁」；大型屋苑、港鐵出口與校園周邊對尺寸與厚度各有偏好，建議先鎖定派發點（信箱／街頭／店內），再決定紙厚與是否需要覆膜防潮。',
+      ],
+    },
+    faq: [
+      { q: '單張印刷最低多少張起？', a: '100 張起訂（數碼印刷）。1,000 張以上柯式印刷更經濟，單價低至 HK$0.25/張。' },
+      { q: '單張有哪些尺寸？', a: 'A6、A5、A4、A3、DL，以及完全客製化尺寸。' },
+      { q: '可以雙面印刷嗎？', a: '可以。雙面印刷充分利用紙張兩面，資訊量增加一倍。' },
+      { q: '可以摺疊嗎？', a: '可以。對摺、三摺、Z 摺、開門摺等多種摺疊方式可選。' },
+      { q: '單張最快多久可以取？', a: '數碼印刷即日交貨（100–500 張）；柯式印刷標準 2–3 天。' },
+      { q: '可以印序號或 QR Code 嗎？', a: '可以。支持可變數據印刷，每張可印不同序號、條碼或 QR Code。' },
+      { q: '什麼紙張最適合派發？', a: '128g 銅版紙最經濟，適合大量派發；157g 手感更好，適合品牌形象宣傳。' },
+      { q: '覆膜有什麼作用？', a: '覆膜（啞膜／光膜）防水防污，延長使用壽命，提升質感。適合長期展示和戶外使用。' },
+      { q: '香港港島、九龍、新界都可以送貨嗎？', a: '可以。可按活動場地或辦公地址安排順豐或貨車；大量派發物資可先送到總部分發。雨季派發建議選覆膜或較厚紙張。' },
+      { q: '可以先報價再提交設計檔嗎？', a: '可以。請說明成品尺寸、單雙面、是否需要摺頁（對摺／三摺）、紙張克數與數量；可先取得數碼／柯式報價，檔案齊備後印前會檢查出血與裁切線。' },
+    ],
+  },
+  en: {
+    h2: 'Flyer Printing Hong Kong — A5/A4/A3 Full Color, From 100 pcs, Same-Day Delivery',
+    coreAdvantages: {
+      title: 'Why Choose ZprintPro for Flyers?',
+      items: [
+        {
+          heading: '1. Full Size Coverage: A6 to A3 for Every Distribution Scenario',
+          points: [
+            'Full standard sizes: A6(105×148mm), A5(148×210mm), A4(210×297mm), A3(297×420mm), DL(99×210mm).',
+            'Covers high-search keywords: "flyer printing Hong Kong", "leaflet printing", "A4 color printing", "A5 flyers".',
+            'Ideal for grand openings, event promotions, product introductions, food delivery, and education enrollment.',
+          ],
+        },
+        {
+          heading: '2. Small Batch, High Value — From 100 pcs',
+          points: [
+            '100 pcs minimum (digital printing) — perfect for small-scale test campaigns and targeted distribution.',
+            '1,000+ pcs offset printing, unit price as low as HK$0.25/pc for large-scale distribution.',
+            'Double-sided printing and multi-page folding (half-fold, tri-fold, Z-fold) — more information per sheet.',
+          ],
+        },
+        {
+          heading: '3. Professional Design + Color Accuracy, Boosting Conversion',
+          points: [
+            'ICC color management ensures accurate brand colors with 95%+ Pantone matching.',
+            'Professional designers provide layout advice using visual hierarchy to guide reading flow and boost conversion rates.',
+            'QR code integration design — scan to access websites or offer pages, bridging offline and online marketing.',
+          ],
+        },
+      ],
+    },
+    materialTable: {
+      title: 'Material & Craftsmanship Guide',
+      subtitle: 'Common Flyer Papers and Finishes',
+      columns: ['Paper Type', 'Key Features', 'Best For'],
+      rows: [
+        { material: '128gsm Art Paper', features: 'Vibrant colors | Economical | Great for mass distribution', scenarios: 'General promotion | Events | Grand openings | Limited offers' },
+        { material: '157gsm Art Paper', features: 'Substantial feel | Premium quality | Brand favorite', scenarios: 'Luxury products | Corporate intro | VIP invites | Brand image' },
+        { material: '200gsm White Card', features: 'Excellent stiffness | Great double-sided results | High-end', scenarios: 'Premium menus | Product catalogs | Annual reports | Premium events' },
+        { material: 'Eco Recycled Paper', features: 'FSC certified | Eco-friendly image | Social responsibility', scenarios: 'Eco brands | NGOs | Social enterprises | Green events' },
+        { material: 'Lamination', features: 'Matte/gloss | Waterproof | Stain-resistant | Extended life', scenarios: 'Long-term display | Outdoor distribution | Humid environments | High-use' },
+      ],
+    },
+    specialOptions: {
+      title: 'Special Finishing Options',
+      items: [
+        { name: 'Double-Sided Printing', description: 'Full use of both sides — double the information, ideal for product catalogs and corporate introductions.' },
+        { name: 'Multi-Page Folding', description: 'Half-fold, tri-fold, Z-fold, gate-fold — multiple pages from one sheet, ideal for menus and catalogs.' },
+        { name: 'Spot UV', description: 'Glossy raised highlights on key visuals or headlines for clear focal points and reading attraction.' },
+        { name: 'Foil Stamping', description: 'Metallic sheen on brand names or taglines adds premium feel and festive atmosphere.' },
+        { name: 'Numbering', description: 'Unique serial numbers per flyer — ideal for lottery tickets, coupons, and event admission tickets.' },
+        { name: 'Hole Punching', description: 'Top or side holes for easy binding into booklets or hanging display.' },
+      ],
+    },
+    techSpecs: {
+      title: 'Technical Specifications',
+      items: [
+        { label: 'Standard Sizes', value: 'A6(105×148mm), A5(148×210mm), A4(210×297mm), A3(297×420mm), DL(99×210mm). Fully customizable.' },
+        { label: 'Minimum Order', value: '100 pcs (digital printing). 1,000+ recommended for offset (more economical).' },
+        { label: 'Turnaround', value: 'Same-day (digital, 100–500 pcs); Standard 2–3 days (offset); Prototyping same day.' },
+        { label: 'File Requirements', value: 'AI / PDF / InDesign, 300dpi, CMYK, 3mm bleed.' },
+        { label: 'Paper Options', value: '128g–200gsm art / white card paper; eco recycled paper; lamination (matte/gloss).' },
+      ],
+    },
+    serviceNodes: {
+      title: 'Local Service Points',
+      items: [
+        { title: 'Free Flyer Templates', description: '50+ industry-specific flyer templates for restaurants, beauty, education, retail — one-click customization.' },
+        { title: 'QR Code Integration', description: 'Free QR code generation integrated into flyer design — bridging offline distribution to online conversion.' },
+        { title: 'Distribution Advice', description: 'Recommendations on optimal size, paper, and quantity based on target audience and budget for maximum ROI.' },
+      ],
+    },
+    buyingGuide: {
+      title: 'Flyer Buying Guide',
+      paragraphs: [
+        'When choosing flyer size, consider distribution scenario and reading distance. A6 suits mailbox drops and street handouts — lightweight and portable. A5 is the most popular size, balancing information and portability. A4 suits detailed product introductions and corporate promotion. A3 suits poster posting and window display. DL size (1/3 A4) suits mailbox drops and event invitations.',
+        'Paper choice affects feel and cost. 128gsm art paper is the most economical choice for mass distribution. 157gsm offers a more substantial feel for brand image promotion. 200gsm white card provides excellent stiffness for premium products and long-term display. Eco recycled paper suits brands focused on sustainability.',
+        'Folding dramatically increases information capacity. Half-fold (4 pages) suits simple product introductions; tri-fold (6 pages) is the most common format for menus and corporate introductions; Z-fold suits charts and process displays. Folded flyers cost only slightly more than flat flyers but deliver 3–5x more information.',
+      ],
+    },
+    faq: [
+      { q: 'What is the minimum order for flyers?', a: '100 pcs (digital printing). 1,000+ pcs recommended for offset, as low as HK$0.25/pc.' },
+      { q: 'What sizes are available?', a: 'A6, A5, A4, A3, DL, and fully custom sizes.' },
+      { q: 'Can flyers be double-sided printed?', a: 'Yes. Double-sided printing fully utilizes both sides, doubling information capacity.' },
+      { q: 'Can flyers be folded?', a: 'Yes. Half-fold, tri-fold, Z-fold, gate-fold, and more options available.' },
+      { q: 'What is the fastest turnaround for flyers?', a: 'Same-day digital printing (100–500 pcs). Standard offset: 2–3 days.' },
+      { q: 'Can flyers have serial numbers or QR codes?', a: 'Yes. Variable data printing allows different serial numbers, barcodes, or QR codes per flyer.' },
+      { q: 'What paper is best for distribution?', a: '128gsm art paper is most economical for mass distribution; 157gsm offers better feel for brand promotion.' },
+      { q: 'What does lamination do?', a: 'Lamination (matte/gloss) provides waterproof and stain-resistant protection, extends lifespan, and enhances quality feel.' },
+    ],
+  },
+  ja: {
+    h2: '香港 チラシ印刷 — A5/A4/A3フルカラー、100枚から、即日納品',
+    coreAdvantages: {
+      title: 'ZprintPro チラシ印刷の強み',
+      items: [
+        {
+          heading: '1. 全サイズ対応：A6からA3まで、あらゆる配布シーンに',
+          points: [
+            'A6(105×148mm)、A5(148×210mm)、A4(210×297mm)、A3(297×420mm)、DL(99×210mm)など全標準サイズを提供。',
+            '「チラシ印刷 香港」、「パンフレット印刷」、「A4カラー印刷」、「A5チラシ」などの高検索ボリュームキーワードをカバー。',
+            '新店開業、イベントプロモーション、製品紹介、飲食デリバリー、教育生徒募集など多様なシーンに対応。',
+          ],
+        },
+        {
+          heading: '2. 小ロット高コスパ、100枚から',
+          points: [
+            '100枚から（デジタル印刷）。小規模な試行配布やターゲット配布に最適。',
+            '1,000枚以上はオフセット印刷で、単価HK$0.25／枚までお得。大規模配布に最適。',
+            '両面印刷や多ページ折り（対折、三つ折り、Z折り）に対応。1枚でより多くの情報を伝達。',
+          ],
+        },
+        {
+          heading: '3. プロデザイン＋色彩還元でコンバージョン向上',
+          points: [
+            'ICC色彩管理でブランドカラーを正確に再現。Pantone専色マッチングは95%以上。',
+            'プロのデザイナーが視覚的階層を活用したレイアウトアドバイスを提供。読書フローを導き、コンバージョン率を向上。',
+            'QRコード統合デザイン。スキャンでウェブサイトやオファーページへ。オフラインとオンラインの連動を実現。',
+          ],
+        },
+      ],
+    },
+    materialTable: {
+      title: '材質・工法ガイド',
+      subtitle: 'チラシによく使われる紙と加工',
+      columns: ['紙タイプ', '主な特徴', '最適な用途'],
+      rows: [
+        { material: '128gコート紙', features: '発色鮮やか｜手頃｜大量配布向き', scenarios: '一般宣伝｜イベント｜新店開業｜期間限定オファー' },
+        { material: '157gコート紙', features: '厚みのある質感｜高級感｜ブランド向け', scenarios: '高級製品｜企業紹介｜VIP招待｜ブランドイメージ' },
+        { material: '200g白カード紙', features: 'かし性抜群｜両面印刷効果良好｜高級', scenarios: '高級メニュー｜製品カタログ｜年次報告書｜プレミアム' },
+        { material: 'エコ再生紙', features: 'FSC認証｜エコイメージ｜社会的責任', scenarios: 'エコブランド｜NGO｜社会企業｜グリーンイベント' },
+        { material: 'ラミネート', features: 'マット／グロス｜防水防汚｜寿命延長', scenarios: '長期展示｜屋外配布｜湿気環境｜高頻度使用' },
+      ],
+    },
+    specialOptions: {
+      title: '特殊加工オプション',
+      items: [
+        { name: '両面印刷', description: '表裏両面をフル活用。情報量が2倍に。製品カタログや企業紹介に最適。' },
+        { name: '多ページ折り', description: '対折、三つ折り、Z折り、開門折りなど。1枚紙から複数ページ。メニューやカタログに最適。' },
+        { name: '局部UV', description: '重要なビジュアルや見出しを光沢で強調。視覚的な焦点が明確になり、読書吸引力を向上。' },
+        { name: '箔押し', description: 'ブランド名やキャッチコピーに金属光沢の高級感と季節感を演出。' },
+        { name: 'ナンバリング', description: '1枚ずつ異なるシリアル番号。抽選券、クーポン、イベント入場券に最適。' },
+        { name: '穴あけ', description: '上部または側面に穴を開け、綴じ込みや吊り下げ展示が可能に。' },
+      ],
+    },
+    techSpecs: {
+      title: '技術仕様',
+      items: [
+        { label: '標準サイズ', value: 'A6(105×148mm)、A5(148×210mm)、A4(210×297mm)、A3(297×420mm)、DL(99×210mm)。完全カスタマイズ対応。' },
+        { label: '最小発注数', value: '100枚から（デジタル印刷）。1,000枚以上はオフセット印刷がお得。' },
+        { label: '納期', value: '即日（デジタル、100–500枚）。標準2–3日（オフセット）。サンプル当日。' },
+        { label: 'ファイル要件', value: 'AI／PDF／InDesign、300dpi、CMYK、3mmのbleed。' },
+        { label: '紙の選択', value: '128g–200gコート紙／白カード紙。エコ再生紙。ラミネート（マット／グロス）。' },
+      ],
+    },
+    serviceNodes: {
+      title: 'ローカルサービス拠点',
+      items: [
+        { title: '無料チラシテンプレート', description: '飲食、美容、教育、小売など50以上の業界別テンプレートを提供。ワンクリックでカスタマイズ。' },
+        { title: 'QRコード統合', description: 'QRコードを無料生成し、チラシデザインに統合。オフライン配布からオンライン転化を実現。' },
+        { title: '配布アドバイス', description: 'ターゲット層と予算に応じて、最適なサイズ、紙、数量を推奨。投資収益率を最大化。' },
+      ],
+    },
+    buyingGuide: {
+      title: 'チラシ選び方ガイド',
+      paragraphs: [
+        'チラシサイズを選ぶ際、配布シーンと読書距離を考慮しましょう。A6は郵便ポスト投函や街頭配布に適し、軽量で持ち運びに便利です。A5は最も人気のサイズで、情報量と携帯性のバランスが良いです。A4は詳細な製品紹介や企業宣伝に適しています。A3はポスター掲示やショーウィンドウ展示に適しています。DLサイズ（A4の1/3）は郵便ポスト投函やイベント招待に適しています。',
+        '紙の選択は質感とコストに影響します。128gコート紙は大量配布に最も手頃な選択です。157gはより厚みのある質感で、ブランドイメージ宣伝に適しています。200g白カード紙はかし性が抜群で、高級製品や長期展示に適しています。エコ再生紙は持続可能性に注力するブランドに適しています。',
+        '折り加工はチラシの情報容量を劇的に増加させます。対折（4ページ）は簡単な製品紹介に適しています。三つ折り（6ページ）はメニューや企業紹介で最も一般的なフォーマットです。Z折りは図表やプロセス表示に適しています。折りチラシのコストは平面チラシよりわずかに高いだけで、情報量は3–5倍増加します。',
+      ],
+    },
+    faq: [
+      { q: 'チラシ印刷の最小発注数は？', a: '100枚から（デジタル印刷）。1,000枚以上はオフセット印刷がお得で、単価HK$0.25／枚まで。' },
+      { q: 'どんなサイズがありますか？', a: 'A6、A5、A4、A3、DL、および完全カスタマイズサイズ。' },
+      { q: '両面印刷は可能ですか？', a: 'はい。両面印刷で紙の両面をフル活用し、情報量を2倍にします。' },
+      { q: '折り加工は可能ですか？', a: 'はい。対折、三つ折り、Z折り、開門折りなど、多様な折り加工オプションがあります。' },
+      { q: 'チラシの最短納期は？', a: 'デジタル印刷は即日（100–500枚）。オフセット印刷は標準2–3日。' },
+      { q: 'シリアル番号やQRコードは印刷できますか？', a: 'はい。可変データ印刷で、異なるシリアル番号、バーコード、QRコードを各チラシに印刷可能です。' },
+      { q: '配布に最適な紙は？', a: '128gコート紙は大量配布に最も手頃。157gは質感が良く、ブランドプロモーションに適しています。' },
+      { q: 'ラミネートの効果は？', a: 'ラミネート（マット／グロス）は防水防汚で、使用寿命を延長し、質感を向上させます。長期展示や屋外使用に適しています。' },
+    ],
+  },
+};
+
+// =============================================================================
+// POSTERS — 海報印刷
+// =============================================================================
+const postersContent: Record<string, CategoryLocaleContent> = {
+  'zh-hk': {
+    h2: '香港海報印刷 — A2/A1/A0 大圖輸出，防水防 UV，牆身貼紙專家',
+    coreAdvantages: {
+      title: '核心競爭優勢',
+      items: [
+        {
+          heading: '1. 全尺寸覆蓋：A2 到 A0，室內到戶外一站搞定',
+          points: [
+            '提供 A2(420×594mm)、A1(594×841mm)、A0(841×1189mm) 等標準尺寸，支持完全客製化大圖輸出',
+            '滿足「海報印刷 香港」、「A1 海報」、「A0 大圖輸出」、「防水海報」等高搜索量關鍵詞',
+            '室內海報（銅版紙、PP 合成紙）和戶外海報（PVC、帆布、網布）全覆蓋',
+          ],
+        },
+        {
+          heading: '2. 大圖輸出專家，色彩精準不褪色',
+          points: [
+            'Epson 大型噴墨輸出設備，1440dpi 高精度，漸變色過渡自然無顆粒',
+            '防水防 UV 墨水，戶外海報可維持 2–3 年不褪色，抗雨淋和日曬',
+            ' Pantone 專色匹配可達 95% 以上，品牌色彩一致性保證',
+          ],
+        },
+        {
+          heading: '3. 多種安裝方式，方便張貼展示',
+          points: [
+            '提供背膠海報（可移除膠）、PP 吊旗、帆布捲軸、裱板等多種安裝形式',
+            '可移除背膠不留殘膠，適合短期展覽和租賃場地；永久背膠長期牢固',
+            '裱板服務（KT 板、Foam 板、亞加力板），即掛即用無需額外準備',
+          ],
+        },
+      ],
+    },
+    materialTable: {
+      title: '材質工藝詳解',
+      subtitle: '海報常用材質與應用',
+      columns: ['材質類型', '關鍵特性', '適用場景'],
+      rows: [
+        { material: '銅版紙海報', features: '色彩鮮豔｜經濟｜室內使用｜適合短期', scenarios: '展覽會｜活動宣傳｜店內裝飾｜短期推廣' },
+        { material: 'PP 合成紙', features: '輕薄｜防水｜不反光｜色彩還原佳', scenarios: '室內展覽｜燈箱｜海報架｜長期展示' },
+        { material: 'PVC 海報', features: '完全防水｜戶外耐久｜抗 UV｜耐磨', scenarios: '戶外廣告｜建築圍板｜工地標示｜長期戶外' },
+        { material: '帆布海報', features: '藝術質感｜耐用｜可捲軸收納｜高級', scenarios: '藝術展覽｜攝影展｜高端活動｜裝飾畫' },
+        { material: '網布海報', features: '透風｜輕量｜適合大型戶外｜抗風', scenarios: '大型戶外廣告｜建築外牆｜體育場｜演唱會' },
+      ],
+    },
+    specialOptions: {
+      title: '特殊加工選項',
+      items: [
+        { name: '裱板服務', description: 'KT 板、Foam 板、亞加力板裱貼，即掛即用，適合展覽和會議' },
+        { name: '背膠加工', description: '可移除膠或永久膠，方便張貼於牆面、玻璃、展板等多種表面' },
+        { name: '打孔穿繩', description: '四邊或頂部打孔配繩，方便懸掛和吊旗展示' },
+        { name: '燙金／燙銀', description: '標題或 LOGO 局部金屬光澤，增添高級感和節日氛圍' },
+        { name: '局部 UV', description: '重點圖案高光凸顯，觸感立體，視覺衝擊力強' },
+        { name: '夜光印刷', description: '夜間發光效果，適合緊急出口標示和安全指引' },
+      ],
+    },
+    techSpecs: {
+      title: '技術參數詳解',
+      items: [
+        { label: '尺寸範圍', value: 'A2(420×594mm)、A1(594×841mm)、A0(841×1189mm)，支持完全客製化大圖輸出' },
+        { label: '起訂量', value: '1 張起訂（大圖輸出），10 張以上批量優惠' },
+        { label: '交期', value: '即日交貨（大圖輸出，1–5 張）；標準 1–2 天（批量）；裱板額外 1 天' },
+        { label: '解析度', value: '1440dpi 高精度噴墨輸出；小尺寸建議 150dpi，大尺寸 72–100dpi 即可' },
+        { label: '墨水類型', value: '防水顏料墨水（室內 1–2 年耐久）；防 UV 溶劑墨水（戶外 2–3 年耐久）' },
+      ],
+    },
+    serviceNodes: {
+      title: '本地化服務節點',
+      items: [
+        { title: '免費裱板服務諮詢', description: '根據展示場景推薦最適裱板材質和厚度，確保海報平整美觀' },
+        { title: '戶外耐久測試', description: '提供防水、抗 UV、耐磨測試報告，幫助選擇最適戶外材質' },
+        { title: '安裝指導服務', description: '提供海報張貼和懸掛的最佳實踐指南，避免氣泡和皺褶' },
+      ],
+    },
+    buyingGuide: {
+      title: '海報選購指南',
+      paragraphs: [
+        '選擇海報尺寸時，要考慮觀看距離和展示空間。A2 適合近距離觀看（如店內裝飾、展板）；A1 是最常用的展覽尺寸，平衡視覺衝擊和空間需求；A0 適合遠距離觀看和大型空間（如會議背景、商場中庭）。對於超大型戶外廣告，推薦網布材質拼接輸出。',
+        '材質選擇決定海報的使用壽命和效果。室內短期使用（展覽會、活動）推薦銅版紙或 PP 合成紙，經濟且色彩鮮豔；室內長期展示推薦 PP 合成紙或裱板，不易捲曲；戶外使用必須選擇 PVC 或帆布，防水抗 UV 確保 2–3 年不褪色。',
+        '解析度設置常被忽視。大尺寸海報（A0 以上）觀看距離較遠，72–100dpi 已足夠清晰；過高的解析度會增加文件大小和處理時間，而不會提升實際視覺效果。小尺寸海報（A2）觀看距離較近，建議 150dpi 以確保細節清晰。',
+        '商場中庭、港鐵沿線與街舖櫥窗常見「海報印刷 香港」「A1 海報」「防水 海報」等需求；若展示於半戶外或潮濕環境（如離島渡輪附近），宜優先 PP／PVC 並評估裱板方案，避免紙邊受潮捲曲。',
+      ],
+    },
+    faq: [
+      { q: '海報印刷最低多少張起？', a: '1 張起訂（大圖輸出）。10 張以上享受批量優惠。' },
+      { q: '海報有哪些材質？', a: '銅版紙、PP 合成紙、PVC、帆布、網布。室內和戶外用途各異。' },
+      { q: '戶外海報能維持多久？', a: '防 UV PVC 海報戶外可維持 2–3 年不褪色；帆布約 3–5 年。' },
+      { q: '可以裱板嗎？', a: '可以。KT 板、Foam 板、亞加力板裱貼，即掛即用。' },
+      { q: '海報最快多久可以取？', a: '大圖輸出即日交貨（1–5 張）；批量標準 1–2 天；裱板額外 1 天。' },
+      { q: '背膠會留殘膠嗎？', a: '可移除背膠不會留殘膠，適合短期展覽；永久背膠長期牢固但可能留微量殘膠。' },
+      { q: '大圖輸出需要什麼解析度？', a: 'A2 建議 150dpi；A1/A0 建議 72–100dpi。過高解析度不會提升視覺效果。' },
+      { q: '可以客製化尺寸嗎？', a: '可以。支持完全客製化尺寸，最大寬度 1.5 米，長度不限。' },
+      { q: '香港港島、九龍、新界都可以送貨嗎？', a: '可以。海報可捲筒包裝順豐寄送；裱板成品需妥善防撞，亦可安排貨車直送活動場地。請預留現場搬運通道。' },
+      { q: '可以先報價再上傳設計檔嗎？', a: '可以。請提供輸出尺寸、數量、室內／戶外、材質（銅版／PP／PVC 等）及是否需要裱板或背膠；可先取得分段報價，再提交檔案並由印前確認解析度與出血。' },
+    ],
+  },
+  en: {
+    h2: 'Poster Printing Hong Kong — A2/A1/A0 Large Format, Waterproof & UV-Resistant, Wall Graphic Specialists',
+    coreAdvantages: {
+      title: 'Why Choose ZprintPro for Posters?',
+      items: [
+        {
+          heading: '1. Full Size Coverage: A2 to A0, Indoor to Outdoor',
+          points: [
+            'Standard sizes: A2(420×594mm), A1(594×841mm), A0(841×1189mm), plus fully custom large-format output.',
+            'Covers high-search keywords: "poster printing Hong Kong", "A1 poster", "A0 large format", "waterproof poster".',
+            'Indoor posters (art paper, PP synthetic) and outdoor posters (PVC, canvas, mesh) all covered.',
+          ],
+        },
+        {
+          heading: '2. Large Format Specialists with Accurate, Fade-Resistant Colors',
+          points: [
+            'Epson large-format inkjet output at 1440dpi — smooth gradients with no visible grain.',
+            'Waterproof and UV-resistant inks — outdoor posters last 2–3 years without fading, rain or sun resistant.',
+            'Pantone color matching up to 95%+ for guaranteed brand color consistency.',
+          ],
+        },
+        {
+          heading: '3. Multiple Mounting Options for Easy Display',
+          points: [
+            'Self-adhesive posters (removable), PP hanging banners, canvas scrolls, and foam board mounting available.',
+            'Removable adhesive leaves no residue — ideal for short-term exhibitions and rental venues.',
+            'Foam board mounting (KT, Foam, Acrylic) — ready to hang with no additional preparation needed.',
+          ],
+        },
+      ],
+    },
+    materialTable: {
+      title: 'Material & Craftsmanship Guide',
+      subtitle: 'Common Poster Materials and Applications',
+      columns: ['Material Type', 'Key Features', 'Best For'],
+      rows: [
+        { material: 'Art Paper Posters', features: 'Vibrant colors | Economical | Indoor use | Short-term', scenarios: 'Exhibitions | Event promotion | In-store decor | Short campaigns' },
+        { material: 'PP Synthetic Paper', features: 'Lightweight | Waterproof | Non-reflective | Great color', scenarios: 'Indoor exhibitions | Lightboxes | Poster stands | Long-term display' },
+        { material: 'PVC Posters', features: 'Fully waterproof | Outdoor durable | UV-resistant | Wear-resistant', scenarios: 'Outdoor ads | Building hoardings | Construction signs | Long-term outdoor' },
+        { material: 'Canvas Posters', features: 'Artistic texture | Durable | Rollable storage | Premium', scenarios: 'Art exhibitions | Photo exhibitions | Premium events | Decorative art' },
+        { material: 'Mesh Banners', features: 'Wind-permeable | Lightweight | Large outdoor | Wind-resistant', scenarios: 'Large outdoor ads | Building exteriors | Stadiums | Concerts' },
+      ],
+    },
+    specialOptions: {
+      title: 'Special Finishing Options',
+      items: [
+        { name: 'Foam Board Mounting', description: 'KT, Foam, or Acrylic board mounting — ready to hang, ideal for exhibitions and conferences.' },
+        { name: 'Self-Adhesive Backing', description: 'Removable or permanent adhesive for easy application on walls, glass, display boards, and more.' },
+        { name: 'Hole Punching & String', description: 'Edge or top holes with string for easy hanging and banner display.' },
+        { name: 'Foil Stamping', description: 'Metallic sheen on titles or logos for premium feel and festive atmosphere.' },
+        { name: 'Spot UV', description: 'Glossy raised highlights on key visuals for strong tactile and visual impact.' },
+        { name: 'Glow-in-the-Dark', description: 'Night-time glow effect for emergency exit signs and safety guidance.' },
+      ],
+    },
+    techSpecs: {
+      title: 'Technical Specifications',
+      items: [
+        { label: 'Size Range', value: 'A2(420×594mm), A1(594×841mm), A0(841×1189mm). Fully custom large-format output supported.' },
+        { label: 'Minimum Order', value: '1 pc (large-format output). Volume discounts for 10+ pcs.' },
+        { label: 'Turnaround', value: 'Same-day (large-format, 1–5 pcs); Standard 1–2 days (bulk); Mounting adds 1 day.' },
+        { label: 'Resolution', value: '1440dpi high-precision inkjet; Small sizes recommend 150dpi, large sizes 72–100dpi sufficient.' },
+        { label: 'Ink Type', value: 'Waterproof pigment ink (indoor 1–2 year durability); UV-resistant solvent ink (outdoor 2–3 year durability).' },
+      ],
+    },
+    serviceNodes: {
+      title: 'Local Service Points',
+      items: [
+        { title: 'Free Mounting Consultation', description: 'Recommend optimal board material and thickness based on display scenario for flat, beautiful results.' },
+        { title: 'Outdoor Durability Testing', description: 'Waterproof, UV-resistant, and wear-test reports to help select optimal outdoor materials.' },
+        { title: 'Installation Guidance', description: 'Best practice guides for poster application and hanging to avoid bubbles and wrinkles.' },
+      ],
+    },
+    buyingGuide: {
+      title: 'Poster Buying Guide',
+      paragraphs: [
+        'When choosing poster size, consider viewing distance and display space. A2 suits close viewing (in-store decor, display boards). A1 is the most common exhibition size, balancing visual impact and space requirements. A0 suits long-distance viewing and large spaces (conference backdrops, mall atriums). For extra-large outdoor ads, mesh material with seam output is recommended.',
+        'Material choice determines poster lifespan and effect. Short-term indoor use (exhibitions, events) suits art paper or PP synthetic paper — economical with vibrant colors. Long-term indoor display suits PP synthetic paper or mounted boards that resist curling. Outdoor use must choose PVC or canvas with waterproof and UV-resistant properties for 2–3 year fade resistance.',
+        'Resolution settings are often overlooked. Large posters (A0+) are viewed from distance — 72–100dpi is sufficiently clear. Excessively high resolution increases file size and processing time without improving actual visual effect. Small posters (A2) viewed at close range should use 150dpi to ensure crisp detail.',
+      ],
+    },
+    faq: [
+      { q: 'What is the minimum order for posters?', a: '1 pc (large-format output). Volume discounts available for 10+ pcs.' },
+      { q: 'What poster materials are available?', a: 'Art paper, PP synthetic paper, PVC, canvas, and mesh. Indoor and outdoor options available.' },
+      { q: 'How long do outdoor posters last?', a: 'UV-resistant PVC posters last 2–3 years outdoors without fading. Canvas lasts approximately 3–5 years.' },
+      { q: 'Can posters be mounted on boards?', a: 'Yes. KT, Foam, and Acrylic board mounting available — ready to hang.' },
+      { q: 'What is the fastest turnaround for posters?', a: 'Same-day large-format output (1–5 pcs). Standard bulk: 1–2 days. Mounting adds 1 day.' },
+      { q: 'Will self-adhesive backing leave residue?', a: 'Removable adhesive leaves no residue — ideal for short-term exhibitions. Permanent adhesive is long-lasting but may leave minimal residue.' },
+      { q: 'What resolution is needed for large-format output?', a: 'A2: 150dpi recommended; A1/A0: 72–100dpi sufficient. Higher resolution does not improve visual effect.' },
+      { q: 'Can custom sizes be ordered?', a: 'Yes. Fully custom sizes supported, maximum width 1.5 meters, unlimited length.' },
+    ],
+  },
+  ja: {
+    h2: '香港 ポスター印刷 — A2/A1/A0大判出力、防水・UV耐性、ウォールグラフィック専門',
+    coreAdvantages: {
+      title: 'ZprintPro ポスター印刷の強み',
+      items: [
+        {
+          heading: '1. 全サイズ対応：A2からA0、屋内から屋外まで',
+          points: [
+            'A2(420×594mm)、A1(594×841mm)、A0(841×1189mm)などの標準サイズに加え、完全カスタマイズの大判出力も対応。',
+            '「ポスター印刷 香港」、「A1ポスター」、「A0大判出力」、「防水ポスター」などの高検索ボリュームキーワードをカバー。',
+            '屋内ポスター（コート紙、PP合成紙）と屋外ポスター（PVC、帆布、メッシュ）を全カバー。',
+          ],
+        },
+        {
+          heading: '2. 大判出力専門家、色彩精確で褪色しない',
+          points: [
+            'Epson大判インクジェット出力機で1440dpiの高精度。グラデーションの遷移が自然で粒感なし。',
+            '防水・UV耐性インク。屋外ポスターは2–3年褪色せず、雨や日差しに耐えます。',
+            'Pantone専色マッチングは95%以上。ブランドカラーの一貫性を保証。',
+          ],
+        },
+        {
+          heading: '3. 多様な取り付け方式、簡単に展示可能',
+          points: [
+            '粘着剤付きポスター（剥がしやすい）、PP吊り旗、帆布巻物、板貼りなど多様な形式を提供。',
+            '剥がしやすい粘着剤は残りません。短期展示やレンタル会場に最適。',
+            '板貼りサービス（KT板、Foam板、アクリル板）。追加準備不要で即展示可能。',
+          ],
+        },
+      ],
+    },
+    materialTable: {
+      title: '材質・工法ガイド',
+      subtitle: 'ポスターによく使われる材質と用途',
+      columns: ['材質タイプ', '主な特徴', '最適な用途'],
+      rows: [
+        { material: 'コート紙ポスター', features: '発色鮮やか｜手頃｜屋内使用｜短期', scenarios: '展示会｜イベント宣伝｜店内装飾｜短期キャンペーン' },
+        { material: 'PP合成紙', features: '軽量｜防水｜非反射｜色彩還元良好', scenarios: '屋内展示｜ライトボックス｜ポスタースタンド｜長期展示' },
+        { material: 'PVCポスター', features: '完全防水｜屋外耐久｜UV耐性｜耐磨耗', scenarios: '屋外広告｜建築囲い｜工事標示｜長期屋外' },
+        { material: '帆布ポスター', features: 'アート感｜耐久｜巻物収納可｜高級', scenarios: '美術展｜写真展｜高級イベント｜装飾画' },
+        { material: 'メッシュバナー', features: '通風｜軽量｜大型屋外向き｜耐風', scenarios: '大型屋外広告｜建物外壁｜スタジアム｜コンサート' },
+      ],
+    },
+    specialOptions: {
+      title: '特殊加工オプション',
+      items: [
+        { name: '板貼りサービス', description: 'KT板、Foam板、アクリル板への貼り付け。即展示可能。展示会や会議に最適。' },
+        { name: '粘着剤加工', description: '剥がしやすいタイプまたは永久タイプ。壁面、ガラス、展示板など多様な表面に簡単貼付。' },
+        { name: '穴あけ紐付き', description: '四辺または上部に穴あけと紐付き。吊り下げや吊り旗展示が簡単に。' },
+        { name: '箔押し', description: 'タイトルやロゴに金属光沢の高級感と季節感を演出。' },
+        { name: '局部UV', description: '重要なビジュアルを光沢で強調。触感も立体的で視覚的インパクトが強い。' },
+        { name: '蓄光印刷', description: '夜間の発光効果。緊急出口標示や安全案内に最適。' },
+      ],
+    },
+    techSpecs: {
+      title: '技術仕様',
+      items: [
+        { label: 'サイズ範囲', value: 'A2(420×594mm)、A1(594×841mm)、A0(841×1189mm)。完全カスタマイズ大判出力対応。' },
+        { label: '最小発注数', value: '1枚から（大判出力）。10枚以上は大口割引あり。' },
+        { label: '納期', value: '即日（大判出力、1–5枚）。標準1–2日（大口）。板貼りは追加1日。' },
+        { label: '解像度', value: '1440dpi高精度インクジェット。小サイズは150dpi推奨、大サイズは72–100dpiで十分。' },
+        { label: 'インクタイプ', value: '防水顔料インク（屋内1–2年耐久）。UV耐性溶剤インク（屋外2–3年耐久）。' },
+      ],
+    },
+    serviceNodes: {
+      title: 'ローカルサービス拠点',
+      items: [
+        { title: '無料板貼り相談', description: '展示シーンに応じて最適な板材と厚みを推奨。ポスターを平らで美しく仕上げます。' },
+        { title: '屋外耐久テスト', description: '防水、UV耐性、耐磨耗テストレポートを提供。最適な屋外材質の選択をサポート。' },
+        { title: '取り付け指導', description: 'ポスターの貼り付けや吊り下げのベストプラクティスガイドを提供。気泡やしわを防ぎます。' },
+      ],
+    },
+    buyingGuide: {
+      title: 'ポスター選び方ガイド',
+      paragraphs: [
+        'ポスターサイズを選ぶ際、視聴距離と展示スペースを考慮しましょう。A2は近距離視聴に適しています（店内装飾、展示板）。A1は最も一般的な展示サイズで、視覚的インパクトとスペース要件のバランスが良いです。A0は遠距離視聴や大空間（会議背景、商場アトリウム）に適しています。超大型の屋外広告には、メッシュ材質の継ぎ目出力をおすすめします。',
+        '材質の選択はポスターの寿命と効果を決定します。短期の屋内使用（展示会、イベント）にはコート紙やPP合成紙が適しており、手頃でありながら発色が鮮やかです。長期の屋内展示には、PP合成紙や板貼りが適し、捲れを防ぎます。屋外使用には、PVCや帆布を選び、防水・UV耐性で2–3年の褪色防止を確保する必要があります。',
+        '解像度設定は見落とされがちです。大判ポスター（A0以上）は遠距離から見られるため、72–100dpiで十分に鮮明です。過度に高い解像度はファイルサイズと処理時間を増加させるだけで、実際の視覚効果は改善されません。小さなポスター（A2）は近距離で見られるため、細部の鮮明さを確保するために150dpiを推奨します。',
+      ],
+    },
+    faq: [
+      { q: 'ポスター印刷の最小発注数は？', a: '1枚から（大判出力）。10枚以上は大口割引があります。' },
+      { q: 'どんな材質のポスターがありますか？', a: 'コート紙、PP合成紙、PVC、帆布、メッシュ。屋内用と屋外用があります。' },
+      { q: '屋外ポスターはどのくらい持ちますか？', a: 'UV耐性PVCポスターは屋外で2–3年褪色しません。帆布は約3–5年です。' },
+      { q: '板貼りは可能ですか？', a: 'はい。KT板、Foam板、アクリル板への貼り付けが可能。即展示可能です。' },
+      { q: 'ポスターの最短納期は？', a: '大判出力は即日（1–5枚）。大口標準は1–2日。板貼りは追加1日。' },
+      { q: '粘着剤は残りますか？', a: '剥がしやすい粘着剤は残りません。短期展示に最適。永久粘着剤は長期牢固ですが、微量の残りがある可能性があります。' },
+      { q: '大判出力に必要な解像度は？', a: 'A2は150dpi推奨。A1/A0は72–100dpiで十分。高解像度は視覚効果を改善しません。' },
+      { q: 'カスタムサイズは注文できますか？', a: 'はい。完全カスタマイズサイズ対応。最大幅1.5メートル、長さは無制限です。' },
+    ],
+  },
+};
+
+// =============================================================================
+// PAPER-BAGS — 紙袋印刷
+// =============================================================================
+const paperBagsContent: Record<string, CategoryLocaleContent> = {
+  'zh-hk': {
+    h2: '香港紙袋印刷 — 白卡／牛皮／特種紙，100 個起訂，品牌包裝首選',
+    coreAdvantages: {
+      title: '核心競爭優勢',
+      items: [
+        {
+          heading: '1. 全材質覆蓋：白卡紙到特種紙，滿足所有品牌定位',
+          points: [
+            '提供白卡紙、牛皮紙、黑卡紙、珠光紙、紋理紙、環保再生紙等 20+ 材質選擇',
+            '滿足「紙袋印刷 香港」、「牛皮紙袋」、「禮品紙袋」、「品牌紙袋」等高搜索量關鍵詞',
+            '適用於零售購物袋、禮品包裝、活動贈品、餐飲外帶、化妝品包裝等多元場景',
+          ],
+        },
+        {
+          heading: '2. 小批量靈活起訂，100 個即可定制品牌紙袋',
+          points: [
+            '100 個起訂（數碼印刷），適合新品牌試產和限量活動',
+            '1,000 個以上柯式印刷，單價低至 HK$1.5/個，適合零售連鎖和大型活動',
+            '支持多種提手選擇：棉繩、紙繩、絲帶、皮繩，提升品牌質感',
+          ],
+        },
+        {
+          heading: '3. 精湛工藝，紙袋變身品牌名片',
+          points: [
+            '燙金、燙銀、凹凸壓紋、局部 UV、絲網印刷等多種工藝，讓普通紙袋成為品牌傳播載體',
+            '精準模切和糊袋工藝，承重可達 5–10kg，堅固耐用',
+            '免費刀模設計，支持完全客製化尺寸、形狀和開窗設計',
+          ],
+        },
+      ],
+    },
+    materialTable: {
+      title: '材質工藝詳解',
+      subtitle: '紙袋常用紙張與規格',
+      columns: ['紙張類型', '關鍵特性', '適用場景'],
+      rows: [
+        { material: '250g 白卡紙', features: '潔白挺括｜印刷精細｜品牌首選｜經濟', scenarios: '零售購物袋｜化妝品包裝｜服裝品牌｜一般禮品' },
+        { material: '200g 牛皮紙', features: '復古質感｜環保｜高辨識度｜耐用', scenarios: '文創品牌｜咖啡店｜有機食品｜手作品牌' },
+        { material: '300g 黑卡紙', features: '神秘高級｜燙金效果極佳｜奢華感', scenarios: '奢侈品｜珠寶品牌｜高端美妝｜VIP禮品' },
+        { material: '珠光紙', features: '珍珠光澤｜獨特視覺｜高級感', scenarios: '婚禮禮品｜節日包裝｜高端活動｜品牌推廣' },
+        { material: '環保再生紙', features: 'FSC 認證｜可降解｜綠色形象', scenarios: '環保企業｜永續品牌｜社會責任項目｜綠色活動' },
+      ],
+    },
+    specialOptions: {
+      title: '特殊加工選項',
+      items: [
+        { name: '燙金／燙銀', description: '品牌名稱或 LOGO 局部金屬光澤，增添高級感和節日氛圍' },
+        { name: '凹凸壓紋', description: '圖案或文字立體浮凸，無需油墨即可呈現質感，觸感記憶深刻' },
+        { name: '局部 UV', description: '重點圖案高光凸顯，觸感立體，視覺層次豐富' },
+        { name: '絲帶提手', description: '緞面絲帶提手，柔軟優雅，適合禮品袋和高端購物袋' },
+        { name: '皮繩提手', description: '真皮或仿皮繩提手，復古質感，適合文創品牌和手作商品' },
+        { name: '開窗設計', description: '正面透明窗口，展示內部商品，適合禮品和食品包裝' },
+      ],
+    },
+    techSpecs: {
+      title: '技術參數詳解',
+      items: [
+        { label: '標準尺寸', value: '小號(150×80×200mm)、中號(220×100×280mm)、大號(320×120×380mm)，支持完全客製化' },
+        { label: '起訂量', value: '100 個起訂（數碼印刷），1,000 個以上柯式印刷更經濟' },
+        { label: '交期', value: '標準 3–5 天（數碼）；5–7 天（柯式）；急件 2–3 天（數碼）；打樣 2–3 天' },
+        { label: '承重能力', value: '標準紙袋承重 3–5kg；加厚版可達 8–10kg；底部加固可進一步提升' },
+        { label: '檔案要求', value: 'AI / PDF，展開圖設計，300dpi，CMYK，預留 3mm 出血位和糊位' },
+      ],
+    },
+    serviceNodes: {
+      title: '本地化服務節點',
+      items: [
+        { title: '免費刀模設計', description: '專業設計師提供紙袋展開圖設計，確保模切精準和糊袋牢固' },
+        { title: '提手選配諮詢', description: '根據品牌風格和預算推薦最適提手材質和顏色，提升整體質感' },
+        { title: '承重測試報告', description: '提供紙袋承重測試，確保符合使用需求，避免提手斷裂尷尬' },
+      ],
+    },
+    buyingGuide: {
+      title: '紙袋選購指南',
+      paragraphs: [
+        '選擇紙袋材質時，首先要考慮品牌定位和用途。白卡紙是最通用的選擇，潔白挺括且印刷效果極佳，適合大多數零售品牌；牛皮紙傳遞環保和文創氣質，適合咖啡、手作和有機品牌；黑卡紙神秘高級，燙金效果極佳，是奢侈品牌的首選；珠光紙和紋理紙適合特殊節慶和高端活動。',
+        '尺寸選擇要根據內裝商品的大小。小號（150×80×200mm）適合化妝品、首飾和小禮品；中號（220×100×280mm）是最常用的購物袋尺寸，適合服裝、書籍和一般商品；大號（320×120×380mm）適合大衣、禮盒和大型商品。如果不確定，建議選擇中號，適用範圍最廣。',
+        '提手選擇影響紙袋的質感和使用體驗。棉繩是最經濟的選擇，結實耐用；紙繩環保且與牛皮紙袋風格一致；絲帶提手柔軟優雅，適合禮品袋；皮繩復古質感，適合文創品牌。提手的顏色應與紙袋和品牌的整體色調協調。',
+        '本地長尾搜尋包括「紙袋 印刷 香港」「牛皮紙袋 訂製」「婚禮 回禮 紙袋」；若門市分布在港島奢侈品街區或新界 outlet，宜統一手挽長度與承重規格，並在報價時說明是否需要分店地址分批出貨。',
+      ],
+    },
+    faq: [
+      { q: '紙袋印刷最低多少個起？', a: '100 個起訂（數碼印刷）。1,000 個以上柯式印刷更經濟，單價低至 HK$1.5/個。' },
+      { q: '紙袋有哪些材質？', a: '白卡紙、牛皮紙、黑卡紙、珠光紙、紋理紙、環保再生紙等 20+ 選擇。' },
+      { q: '紙袋可以承重多少？', a: '標準紙袋承重 3–5kg；加厚版可達 8–10kg。' },
+      { q: '可以定制尺寸嗎？', a: '可以。支持完全客製化尺寸、形狀和開窗設計。' },
+      { q: '紙袋最快多久可以取？', a: '數碼印刷 3–5 天；柯式印刷 5–7 天；急件 2–3 天。' },
+      { q: '有哪些提手選擇？', a: '棉繩、紙繩、絲帶、皮繩。不同材質適合不同品牌風格。' },
+      { q: '可以燙金或壓紋嗎？', a: '可以。燙金、燙銀、凹凸壓紋、局部 UV 等多種工藝均可選擇。' },
+      { q: '紙袋設計有什麼要求？', a: '需要提供展開圖（AI/PDF），300dpi，CMYK，預留 3mm 出血位和糊位。' },
+      { q: '香港港島、九龍、新界都可以送貨嗎？', a: '可以。紙袋可按箱規安排順豐或貨車；多分店可先送中央倉再分發。大量紙袋建議預約升降機時段以利卸貨。' },
+      { q: '可以先報價再上傳刀模嗎？', a: '可以。請提供袋型（平底／方底）、尺寸、紙材克重、印刷色數、提手類型與數量；可先取得數碼／柯式報價，刀模確認後再批量生產以降低重工風險。' },
+    ],
+  },
+  en: {
+    h2: 'Paper Bag Printing Hong Kong — White Card / Kraft / Specialty Paper, From 100 pcs, Brand Packaging Essential',
+    coreAdvantages: {
+      title: 'Why Choose ZprintPro for Paper Bags?',
+      items: [
+        {
+          heading: '1. Full Material Range: White Card to Specialty Papers',
+          points: [
+            '20+ material options: white card, kraft paper, black card, pearl paper, textured paper, and eco recycled paper.',
+            'Covers high-search keywords: "paper bag printing Hong Kong", "kraft paper bags", "gift bags", "branded paper bags".',
+            'Ideal for retail shopping bags, gift packaging, event giveaways, food takeaway, and cosmetics packaging.',
+          ],
+        },
+        {
+          heading: '2. Low MOQ Flexibility — From 100 pcs',
+          points: [
+            '100 pcs minimum (digital printing) — perfect for new brand prototyping and limited events.',
+            '1,000+ pcs offset printing, unit price as low as HK$1.5/pc for retail chains and large events.',
+            'Multiple handle options: cotton rope, paper rope, ribbon, and leather cord for elevated brand feel.',
+          ],
+        },
+        {
+          heading: '3. Exquisite Craftsmanship — Paper Bags as Brand Assets',
+          points: [
+            'Foil stamping, embossing, spot UV, and screen printing transform ordinary bags into brand communication vehicles.',
+            'Precision die-cutting and bag-making withstand 5–10kg loads — sturdy and durable.',
+            'Free dieline design with fully customizable sizes, shapes, and window designs.',
+          ],
+        },
+      ],
+    },
+    materialTable: {
+      title: 'Material & Craftsmanship Guide',
+      subtitle: 'Common Paper Bag Materials and Specifications',
+      columns: ['Paper Type', 'Key Features', 'Best For'],
+      rows: [
+        { material: '250gsm White Card', features: 'Clean & stiff | Fine printing | Brand favorite | Economical', scenarios: 'Retail shopping | Cosmetics | Fashion brands | General gifts' },
+        { material: '200gsm Kraft Paper', features: 'Vintage feel | Eco-friendly | High recognition | Durable', scenarios: 'Creative brands | Coffee shops | Organic food | Handmade brands' },
+        { material: '300gsm Black Card', features: 'Mysterious & premium | Excellent foil effect | Luxury feel', scenarios: 'Luxury goods | Jewelry | Premium beauty | VIP gifts' },
+        { material: 'Pearl Paper', features: 'Pearlescent sheen | Unique visual | Premium feel', scenarios: 'Wedding gifts | Holiday packaging | Premium events | Brand campaigns' },
+        { material: 'Eco Recycled Paper', features: 'FSC certified | Biodegradable | Green image', scenarios: 'Eco businesses | Sustainable brands | CSR projects | Green events' },
+      ],
+    },
+    specialOptions: {
+      title: 'Special Finishing Options',
+      items: [
+        { name: 'Foil Stamping', description: 'Metallic sheen on brand names or logos adds premium feel and festive atmosphere.' },
+        { name: 'Embossing', description: 'Three-dimensional patterns or text without ink — pure tactile elegance with lasting memory.' },
+        { name: 'Spot UV', description: 'Glossy raised highlights on key visuals for rich tactile and visual layers.' },
+        { name: 'Ribbon Handles', description: 'Satin ribbon handles — soft and elegant, ideal for gift bags and premium shopping bags.' },
+        { name: 'Leather Cord Handles', description: 'Genuine or faux leather cord handles — vintage feel for creative brands and handmade goods.' },
+        { name: 'Window Design', description: 'Front transparent window displays internal products — ideal for gifts and food packaging.' },
+      ],
+    },
+    techSpecs: {
+      title: 'Technical Specifications',
+      items: [
+        { label: 'Standard Sizes', value: 'Small(150×80×200mm), Medium(220×100×280mm), Large(320×120×380mm). Fully customizable.' },
+        { label: 'Minimum Order', value: '100 pcs (digital printing). 1,000+ recommended for offset (more economical).' },
+        { label: 'Turnaround', value: 'Standard 3–5 days (digital); 5–7 days (offset); Rush 2–3 days (digital); Prototyping 2–3 days.' },
+        { label: 'Load Capacity', value: 'Standard bags: 3–5kg; Reinforced version: 8–10kg; Bottom reinforcement for additional capacity.' },
+        { label: 'File Requirements', value: 'AI / PDF with dieline design, 300dpi, CMYK, 3mm bleed and glue area.' },
+      ],
+    },
+    serviceNodes: {
+      title: 'Local Service Points',
+      items: [
+        { title: 'Free Dieline Design', description: 'Professional designers provide paper bag dieline design ensuring precise die-cutting and secure gluing.' },
+        { title: 'Handle Selection Consultation', description: 'Recommend optimal handle material and color based on brand style and budget for enhanced overall quality.' },
+        { title: 'Load Capacity Testing', description: 'Paper bag load testing provided to ensure requirements are met and prevent handle breakage embarrassment.' },
+      ],
+    },
+    buyingGuide: {
+      title: 'Paper Bag Buying Guide',
+      paragraphs: [
+        'When choosing paper bag materials, first consider brand positioning and usage. White card is the most versatile choice — clean, stiff, with excellent printing results, suitable for most retail brands. Kraft paper conveys eco-friendly and creative vibes, ideal for coffee, handmade, and organic brands. Black card is mysterious and premium with excellent foil stamping effects — the top choice for luxury brands. Pearl and textured papers suit special holidays and premium events.',
+        'Size selection depends on the items being carried. Small (150×80×200mm) suits cosmetics, jewelry, and small gifts. Medium (220×100×280mm) is the most common shopping bag size for clothing, books, and general merchandise. Large (320×120×380mm) suits coats, gift boxes, and large items. If unsure, medium is recommended as the most versatile option.',
+        "Handle choice affects bag feel and user experience. Cotton rope is the most economical — sturdy and durable. Paper rope is eco-friendly and consistent with kraft bag style. Ribbon handles are soft and elegant for gift bags. Leather cord offers vintage feel for creative brands. Handle color should coordinate with the bag and brand's overall color palette.",
+      ],
+    },
+    faq: [
+      { q: 'What is the minimum order for paper bags?', a: '100 pcs (digital printing). 1,000+ pcs recommended for offset, as low as HK$1.5/pc.' },
+      { q: 'What paper options are available?', a: 'White card, kraft paper, black card, pearl paper, textured paper, eco recycled paper — 20+ options.' },
+      { q: 'How much weight can paper bags hold?', a: 'Standard bags: 3–5kg; Reinforced version: 8–10kg.' },
+      { q: 'Can sizes be customized?', a: 'Yes. Fully customizable sizes, shapes, and window designs supported.' },
+      { q: 'What is the fastest turnaround for paper bags?', a: 'Digital: 3–5 days; Offset: 5–7 days; Rush: 2–3 days.' },
+      { q: 'What handle options are available?', a: 'Cotton rope, paper rope, ribbon, and leather cord. Different materials suit different brand styles.' },
+      { q: 'Can bags be foil stamped or embossed?', a: 'Yes. Foil stamping, embossing, debossing, and spot UV all available.' },
+      { q: 'What are the design file requirements?', a: 'Dieline design required (AI/PDF), 300dpi, CMYK, 3mm bleed and glue area.' },
+    ],
+  },
+  ja: {
+    h2: '香港 紙袋印刷 — 白カード／クラフト／特殊紙、100個から、ブランドパッケージの定番',
+    coreAdvantages: {
+      title: 'ZprintPro 紙袋印刷の強み',
+      items: [
+        {
+          heading: '1. 全材質対応：白カードから特殊紙まで',
+          points: [
+            '白カード紙、クラフト紙、黒カード紙、パール紙、テクスチャ紙、エコ再生紙など20種類以上の材質を選択可能。',
+            '「紙袋印刷 香港」、「クラフト紙袋」、「ギフト紙袋」、「ブランド紙袋」などの高検索ボリュームキーワードをカバー。',
+            '小売ショッピングバッグ、ギフト包装、イベント配布、食品テイクアウト、化粧品包装など多様なシーンに対応。',
+          ],
+        },
+        {
+          heading: '2. 小ロット対応、100個からブランド紙袋をカスタマイズ',
+          points: [
+            '100個から（デジタル印刷）。新ブランドの試作や限定イベントに最適。',
+            '1,000個以上はオフセット印刷で、単価HK$1.5／個までお得。小売チェーンや大規模イベントに最適。',
+            '多様な取っ手選択：綿紐、紙紐、リボン、革紐。ブランドの質感を向上。',
+          ],
+        },
+        {
+          heading: '3. 精湛な工芸で、紙袋をブランドの名刺に',
+          points: [
+            '箔押し、エンボス、局部UV、スクリーン印刷などの多様な加工で、普通の紙袋をブランド伝達メディアに変身させます。',
+            '精密な抜き型と袋成型で、耐荷重5–10kg。堅牢で耐久性があります。',
+            '無料の展開図デザイン。完全カスタマイズのサイズ、形状、窓デザインに対応。',
+          ],
+        },
+      ],
+    },
+    materialTable: {
+      title: '材質・工法ガイド',
+      subtitle: '紙袋によく使われる紙と規格',
+      columns: ['紙タイプ', '主な特徴', '最適な用途'],
+      rows: [
+        { material: '250g白カード紙', features: '白くかし性良好｜印刷精度高｜ブランド向け｜手頃', scenarios: '小売ショッピング｜化粧品包装｜ファッションブランド｜一般ギフト' },
+        { material: '200gクラフト紙', features: 'レトロ感｜エコ｜高い識別性｜耐久', scenarios: 'クリエイティブブランド｜カフェ｜有機食品｜手作りブランド' },
+        { material: '300g黒カード紙', features: '神秘的で高級｜箔押し効果抜群｜ラグジュアリー', scenarios: '高級品｜ジュエリー｜高級美容｜VIPギフト' },
+        { material: 'パール紙', features: 'パール光沢｜独特の視覚｜高級感', scenarios: '結婚式ギフト｜季節包装｜高級イベント｜ブランドキャンペーン' },
+        { material: 'エコ再生紙', features: 'FSC認証｜生分解性｜グリーンイメージ', scenarios: '環境企業｜サステナブルブランド｜CSRプロジェクト｜グリーンイベント' },
+      ],
+    },
+    specialOptions: {
+      title: '特殊加工オプション',
+      items: [
+        { name: '箔押し', description: 'ブランド名やロゴに金属光沢の高級感と季節感を演出。' },
+        { name: 'エンボス', description: 'インクなしでパターンや文字を立体的に表現。触感の記憶に残ります。' },
+        { name: '局部UV', description: '重要なビジュアルを光沢で強調。触感も立体的で視覚的な層が豊か。' },
+        { name: 'リボン取っ手', description: 'サテンリボンの取っ手。柔らかく優雅で、ギフトバッグや高級ショッピングバッグに最適。' },
+        { name: '革紐取っ手', description: '本革または合成革紐の取っ手。レトロな質感で、クリエイティブブランドや手作り商品に適しています。' },
+        { name: '窓デザイン', description: '正面に透明窓。内部の商品を表示。ギフトや食品包装に最適。' },
+      ],
+    },
+    techSpecs: {
+      title: '技術仕様',
+      items: [
+        { label: '標準サイズ', value: '小(150×80×200mm)、中(220×100×280mm)、大(320×120×380mm)。完全カスタマイズ対応。' },
+        { label: '最小発注数', value: '100個から（デジタル印刷）。1,000個以上はオフセット印刷がお得。' },
+        { label: '納期', value: '標準3–5日（デジタル）。5–7日（オフセット）。急行2–3日（デジタル）。サンプル2–3日。' },
+        { label: '耐荷重', value: '標準紙袋3–5kg。厚手版は8–10kg。底部補強でさらに向上可能。' },
+        { label: 'ファイル要件', value: 'AI／PDF（展開図付き）、300dpi、CMYK、3mmのbleedと糊付けエリア。' },
+      ],
+    },
+    serviceNodes: {
+      title: 'ローカルサービス拠点',
+      items: [
+        { title: '無料展開図デザイン', description: 'プロデザイナーが紙袋の展開図をデザイン。精密な抜き型と堅牢な糊付けを確保。' },
+        { title: '取っ手選び相談', description: 'ブランドのスタイルと予算に応じて最適な取っ手の材質と色を推奨。全体の質感を向上。' },
+        { title: '耐荷重テスト報告', description: '紙袋の耐荷重テストを提供。使用ニーズに適合し、取っ手の断裂を防ぎます。' },
+      ],
+    },
+    buyingGuide: {
+      title: '紙袋選び方ガイド',
+      paragraphs: [
+        '紙袋の材質を選ぶ際、まずブランドのポジショニングと用途を考慮しましょう。白カード紙は最も多用途な選択で、白くかし性が良く印刷効果が抜群です。ほとんどの小売ブランドに適しています。クラフト紙は環境とクリエイティブな雰囲気を伝え、カフェ、手作り、有機ブランドに適しています。黒カード紙は神秘的で高級感があり、箔押し効果が抜群なので、ラグジュアリーブランドの第一選択です。パール紙やテクスチャ紙は特別な祝祭や高級イベントに適しています。',
+        'サイズの選択は内包する商品の大きさに依存します。小(150×80×200mm)は化粧品、ジュエリー、小さなギフトに適しています。中(220×100×280mm)は最も一般的なショッピングバッグのサイズで、洋服、本、一般商品に適しています。大(320×120×380mm)はコート、ギフトボックス、大型商品に適しています。不安な場合は中サイズをおすすめします。適用範囲が最も広いです。',
+        '取っ手の選択は紙袋の質感と使用体験に影響します。綿紐は最も経済的で、頑丈で耐久性があります。紙紐は環境に優しく、クラフト紙袋のスタイルと一致します。リボンの取っ手は柔らかく優雅で、ギフトバッグに適しています。革紐はレトロな質感で、クリエイティブブランドに適しています。取っ手の色は紙袋とブランドの全体的な色調と調和するべきです。',
+      ],
+    },
+    faq: [
+      { q: '紙袋印刷の最小発注数は？', a: '100個から（デジタル印刷）。1,000個以上はオフセット印刷がお得で、単価HK$1.5／個まで。' },
+      { q: 'どんな紙がありますか？', a: '白カード紙、クラフト紙、黒カード紙、パール紙、テクスチャ紙、エコ再生紙など20種類以上。' },
+      { q: '紙袋の耐荷重は？', a: '標準紙袋は3–5kg。厚手版は8–10kg。' },
+      { q: 'サイズはカスタマイズできますか？', a: 'はい。完全カスタマイズのサイズ、形状、窓デザインに対応。' },
+      { q: '紙袋の最短納期は？', a: 'デジタル印刷3–5日。オフセット印刷5–7日。急行2–3日。' },
+      { q: 'どんな取っ手がありますか？', a: '綿紐、紙紐、リボン、革紐。異なる材質は異なるブランドスタイルに適しています。' },
+      { q: '箔押しやエンボスはできますか？', a: 'はい。箔押し、エンボス、デボス、局部UVなど多様な加工が可能です。' },
+      { q: '紙袋のデザイン要件は？', a: '展開図が必要（AI／PDF）、300dpi、CMYK、3mmのbleedと糊付けエリア。' },
+    ],
+  },
+};
+
 export const categorySeoContent: CategorySeoData = {
   packaging: packagingContent,
   'business-cards': businessCardsContent,
+  stickers: stickersContent,
+  flyers: flyersContent,
+  posters: postersContent,
+  'paper-bags': paperBagsContent,
   banners: bannersContent,
   books: booksContent,
   menus: menusContent,

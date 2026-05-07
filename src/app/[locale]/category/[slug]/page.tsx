@@ -349,24 +349,45 @@ const categoryGuideMap: Record<string, string> = {
   'packaging': 'packaging-buying-guide',
   'posters': 'poster-buying-guide',
   'paper-bags': 'paper-bag-buying-guide',
+  'banners': 'banner-buying-guide',
+  'books': 'book-buying-guide',
+  'menus': 'menu-buying-guide',
 };
 
 function BuyingGuideCta({ locale, categorySlug }: { locale: Locale; categorySlug: string }) {
   const guideSlug = categoryGuideMap[categorySlug];
-  if (!guideSlug) return null;
+  const hasSpecificGuide = !!guideSlug;
 
   const t = {
-    'zh-hk': { label: '選購指南', cta: '查看完整指南 →', title: '不知道怎麼選？看看我們的專業選購指南', desc: '從材質、工藝到價格，為您詳細拆解選購要點。' },
-    'en': { label: 'Buying Guide', cta: 'Read Full Guide →', title: 'Not Sure What to Choose?', desc: 'From materials to finishes to pricing, our expert guide has you covered.' },
-    'ja': { label: '選び方ガイド', cta: 'ガイドを読む →', title: 'どれを選べばいいか迷っていますか？', desc: '材質から加工、価格まで、専門家のガイドで解決。' },
+    'zh-hk': {
+      label: '選購指南',
+      cta: hasSpecificGuide ? '查看完整指南 →' : '瀏覽所有指南 →',
+      title: '不知道怎麼選？看看我們的專業選購指南',
+      desc: hasSpecificGuide ? '從材質、工藝到價格，為您詳細拆解選購要點。' : '涵蓋全部 13 個分類，從材質、工藝到價格，專家為您詳細拆解。',
+    },
+    'en': {
+      label: 'Buying Guide',
+      cta: hasSpecificGuide ? 'Read Full Guide →' : 'Browse All Guides →',
+      title: 'Not Sure What to Choose?',
+      desc: hasSpecificGuide ? 'From materials to finishes to pricing, our expert guide has you covered.' : 'Covering all 13 categories — from materials to finishes to pricing, our experts have you covered.',
+    },
+    'ja': {
+      label: '選び方ガイド',
+      cta: hasSpecificGuide ? 'ガイドを読む →' : 'すべてのガイドを見る →',
+      title: 'どれを選べばいいか迷っていますか？',
+      desc: hasSpecificGuide ? '材質から加工、価格まで、専門家のガイドで解決。' : '13カテゴリー全てをカバー。材質から加工、価格まで、専門家が解決します。',
+    },
   }[locale];
 
   const localePrefix = `/${locale}`;
+  const href = hasSpecificGuide
+    ? `${localePrefix}/blog/${guideSlug}/`
+    : `${localePrefix}/blog/`;
 
   return (
     <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 pb-8">
       <a
-        href={`${localePrefix}/blog/${guideSlug}/`}
+        href={href}
         className="block bg-gradient-to-r from-[#2873F5] to-[#1E5FD1] rounded-xl p-6 md:p-8 text-white hover:shadow-lg transition-shadow"
       >
         <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
