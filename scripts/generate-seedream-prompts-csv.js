@@ -9,9 +9,9 @@ const fs = require('fs');
 // ========== 实际用户信息内容（按分类 × 三语） ==========
 const REAL_USER_CONTENT = {
   'business-cards': {
-    zh: '每张名片印有真实用户信息：姓名「陳志明」、公司名「智印港有限公司」、職位「市場總監」、電話「+852 2345 6789」、電郵「info@zprintpro.com」，字體清晰可讀，排版專業',
-    en: 'Each card displays real user info: name "Alex Chan", company "ZprintPro Ltd.", title "Marketing Director", phone "+852 2345 6789", email "info@zprintpro.com", clear readable typography, professional layout',
-    ja: '各名刺に実際のユーザー情報が印刷されている：名前「陳志明」、会社名「智印港有限公司」、役職「市場総監」、電話「+852 2345 6789」、メール「info@zprintpro.com」、鮮明で読みやすい書体、プロフェッショナルなレイアウト',
+    zh: '每张名片印有真实用户信息：姓名「陳志明」、公司名「智印港有限公司」、職位「市場總監」、電話「+86 181 2638 0255」、電郵「zprintpro@outlook.com」，字體清晰可讀，排版專業',
+    en: 'Each card displays real user info: name "Alex Chan", company "ZprintPro Ltd.", title "Marketing Director", phone "+86 181 2638 0255", email "zprintpro@outlook.com", clear readable typography, professional layout',
+    ja: '各名刺に実際のユーザー情報が印刷されている：名前「陳志明」、会社名「智印港有限公司」、役職「市場総監」、電話「+86 181 2638 0255」、メール「zprintpro@outlook.com」、鮮明で読みやすい書体、プロフェッショナルなレイアウト',
   },
   'stickers': {
     zh: '貼紙上印有真实品牌信息：品牌名「ZprintPro」、Logo圖案、產品標籤「有機蜂蜜 250g」、條碼和生產日期，字體清晰不模糊',

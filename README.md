@@ -241,5 +241,5 @@ node scripts/generate-sitemap.js
 
 - 網站: https://zprintpro.com
 - 電話: 2154 1318
-- 電郵: info@zprintpro.com
+- 電郵: zprintpro@outlook.com
 - 地址: 香港觀塘成業街16號怡生工業中心

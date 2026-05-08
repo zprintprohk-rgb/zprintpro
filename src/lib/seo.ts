@@ -13,14 +13,14 @@ export const siteConfig = {
   alternateName: ['智印云', 'ZPrintPro', 'ZPrintPro Global'],
   url: 'https://zprintpro.com',
   logo: 'https://zprintpro.com/logo-icon.svg',
-  phone: '+852-2345-6789',
-  email: 'info@zprintpro.com',
+  phone: '+86 181 2638 0255',
+  email: 'zprintpro@outlook.com',
   address: {
-    street: '香港九龙观塘成业街7号宁晋中心',
-    city: '观塘',
+    street: '182 Wai Yip Street',
+    city: 'Kwun Tong',
     region: 'Kowloon',
     country: 'HK',
-    postalCode: '999077',
+    postalCode: '',
   },
   social: {
     facebook: 'https://facebook.com/zprintpro',
@@ -59,7 +59,7 @@ export const regionConfig: Record<Locale, RegionConfig> = {
     areaServed: 'Hong Kong',
     contactType: '香港本地客戶服務',
     priceRange: '$$',
-    geoCoordinates: { lat: 22.3193, lng: 114.1694 },
+    geoCoordinates: { lat: 22.3105, lng: 114.224 },
   },
   'en': {
     lang: 'en',

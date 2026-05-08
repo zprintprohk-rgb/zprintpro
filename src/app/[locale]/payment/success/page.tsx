@@ -48,19 +48,19 @@ export default function PaymentSuccessPage({ params }: SuccessPageProps) {
       heading: '支付成功',
       subheading: '感謝您的訂購！我們已收到您的付款，將盡快處理您的訂單。',
       orderLabel: '訂單編號',
-      contact: '如有問題，請聯絡我們：info@zprintpro.com',
+      contact: '如有問題，請聯絡我們：zprintpro@outlook.com',
     },
     en: {
       heading: 'Payment Successful',
       subheading: 'Thank you for your order! We have received your payment and will process it shortly.',
       orderLabel: 'Order ID',
-      contact: 'If you have any questions, please contact us at info@zprintpro.com',
+      contact: 'If you have any questions, please contact us at zprintpro@outlook.com',
     },
     ja: {
       heading: '支払い完了',
       subheading: 'ご注文ありがとうございます！お支払いを確認しました。順次処理いたします。',
       orderLabel: '注文番号',
-      contact: 'ご不明な点がございましたら、info@zprintpro.com までお問い合わせください。',
+      contact: 'ご不明な点がございましたら、zprintpro@outlook.com までお問い合わせください。',
     },
   }[locale as 'zh-hk' | 'en' | 'ja'];
 
