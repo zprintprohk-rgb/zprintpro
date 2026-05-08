@@ -23,11 +23,11 @@ const translations = {
     browseAll: '瀏覽全部產品',
     fromPrice: '低至',
     slides: [
-      { title: '專業牛皮紙袋印刷', subtitle: '環保材質，堅固耐用，適合零售外賣', price: 'HK$1.2起', image: '/images/hero-v21/kraft-bag.jpg', href: '/product/kraft-paper-bags/' },
-      { title: 'A4宣傳單張印刷', subtitle: '彩色印刷，即日可取，宣傳首選', price: 'HK$0.3起', image: '/images/hero-v21/flyer.jpg', href: '/product/a4-flyers/' },
-      { title: '防水貼紙印刷', subtitle: '耐用材質，多種形狀，適用於任何表面', price: 'HK$0.5起', image: '/images/hero-v21/sticker.jpg', href: '/product/waterproof-stickers/' },
-      { title: '包裝盒定制', subtitle: '精緻包裝，提升品牌形象', price: 'HK$5起', image: '/images/hero-v21/gift-box.jpg', href: '/product/gift-boxes/' },
-      { title: '海報定制印刷', subtitle: '大圖輸出，色彩鮮豔，宣傳利器', price: 'HK$15起', image: '/images/hero-v21/poster.jpg', href: '/product/a2-posters/' },
+      { title: '專業牛皮紙袋印刷', subtitle: '環保材質，堅固耐用，適合零售外賣', price: 'HK$1.2起', image: '/images/hero/hero-kraft-bag-zh-hk.webp', href: '/product/kraft-paper-bags/' },
+      { title: 'A4宣傳單張印刷', subtitle: '彩色印刷，即日可取，宣傳首選', price: 'HK$0.3起', image: '/images/hero/hero-flyer-zh-hk.webp', href: '/product/a4-flyers/' },
+      { title: '防水貼紙印刷', subtitle: '耐用材質，多種形狀，適用於任何表面', price: 'HK$0.5起', image: '/images/hero/hero-sticker-zh-hk.webp', href: '/product/waterproof-stickers/' },
+      { title: '包裝盒定制', subtitle: '精緻包裝，提升品牌形象', price: 'HK$5起', image: '/images/hero/hero-gift-box-zh-hk.webp', href: '/product/gift-boxes/' },
+      { title: '海報定制印刷', subtitle: '大圖輸出，色彩鮮豔，宣傳利器', price: 'HK$15起', image: '/images/hero/hero-poster-zh-hk.webp', href: '/product/a2-posters/' },
     ],
   },
   en: {
@@ -36,11 +36,11 @@ const translations = {
     browseAll: 'Browse All Products',
     fromPrice: 'From',
     slides: [
-      { title: 'Professional Kraft Paper Bags', subtitle: 'Eco-friendly, durable, perfect for retail and takeout', price: 'From HK$1.2', image: '/images/hero-v21/kraft-bag.jpg', href: '/product/kraft-paper-bags/' },
-      { title: 'A4 Flyer Printing', subtitle: 'Full color, same-day pickup, ideal for promotion', price: 'From HK$0.3', image: '/images/hero-v21/flyer.jpg', href: '/product/a4-flyers/' },
-      { title: 'Waterproof Sticker Printing', subtitle: 'Durable material, various shapes, for any surface', price: 'From HK$0.5', image: '/images/hero-v21/sticker.jpg', href: '/product/waterproof-stickers/' },
-      { title: 'Custom Gift Boxes', subtitle: 'Premium packaging to elevate your brand', price: 'From HK$5', image: '/images/hero-v21/gift-box.jpg', href: '/product/gift-boxes/' },
-      { title: 'Custom Poster Printing', subtitle: 'Large format, vivid colors, great for advertising', price: 'From HK$15', image: '/images/hero-v21/poster.jpg', href: '/product/a2-posters/' },
+      { title: 'Professional Kraft Paper Bags', subtitle: 'Eco-friendly, durable, perfect for retail and takeout', price: 'From HK$1.2', image: '/images/hero/hero-kraft-bag-en.webp', href: '/product/kraft-paper-bags/' },
+      { title: 'A4 Flyer Printing', subtitle: 'Full color, same-day pickup, ideal for promotion', price: 'From HK$0.3', image: '/images/hero/hero-flyer-en.webp', href: '/product/a4-flyers/' },
+      { title: 'Waterproof Sticker Printing', subtitle: 'Durable material, various shapes, for any surface', price: 'From HK$0.5', image: '/images/hero/hero-sticker-en.webp', href: '/product/waterproof-stickers/' },
+      { title: 'Custom Gift Boxes', subtitle: 'Premium packaging to elevate your brand', price: 'From HK$5', image: '/images/hero/hero-gift-box-en.webp', href: '/product/gift-boxes/' },
+      { title: 'Custom Poster Printing', subtitle: 'Large format, vivid colors, great for advertising', price: 'From HK$15', image: '/images/hero/hero-poster-en.webp', href: '/product/a2-posters/' },
     ],
   },
   ja: {
@@ -49,11 +49,11 @@ const translations = {
     browseAll: 'すべての製品を見る',
     fromPrice: '最低',
     slides: [
-      { title: 'クラフト紙袋印刷', subtitle: '環境に優しく耐久性があり、小売やテイクアウトに最適', price: 'HK$1.2〜', image: '/images/hero-v21/kraft-bag.jpg', href: '/product/kraft-paper-bags/' },
-      { title: 'A4チラシ印刷', subtitle: 'フルカラー、当日受取可能、宣伝に最適', price: 'HK$0.3〜', image: '/images/hero-v21/flyer.jpg', href: '/product/a4-flyers/' },
-      { title: '防水ステッカー印刷', subtitle: '耐久性のある素材、様々な形状、あらゆる表面に対応', price: 'HK$0.5〜', image: '/images/hero-v21/sticker.jpg', href: '/product/waterproof-stickers/' },
-      { title: 'ギフトボックス定制', subtitle: '高級感のある包装でブランド価値を向上', price: 'HK$5〜', image: '/images/hero-v21/gift-box.jpg', href: '/product/gift-boxes/' },
-      { title: 'ポスター印刷', subtitle: '大判出力、鮮やかな色彩、広告に最適', price: 'HK$15〜', image: '/images/hero-v21/poster.jpg', href: '/product/a2-posters/' },
+      { title: 'クラフト紙袋印刷', subtitle: '環境に優しく耐久性があり、小売やテイクアウトに最適', price: 'HK$1.2〜', image: '/images/hero/hero-kraft-bag-ja.webp', href: '/product/kraft-paper-bags/' },
+      { title: 'A4チラシ印刷', subtitle: 'フルカラー、当日受取可能、宣伝に最適', price: 'HK$0.3〜', image: '/images/hero/hero-flyer-ja.webp', href: '/product/a4-flyers/' },
+      { title: '防水ステッカー印刷', subtitle: '耐久性のある素材、様々な形状、あらゆる表面に対応', price: 'HK$0.5〜', image: '/images/hero/hero-sticker-ja.webp', href: '/product/waterproof-stickers/' },
+      { title: 'ギフトボックス定制', subtitle: '高級感のある包装でブランド価値を向上', price: 'HK$5〜', image: '/images/hero/hero-gift-box-ja.webp', href: '/product/gift-boxes/' },
+      { title: 'ポスター印刷', subtitle: '大判出力、鮮やかな色彩、広告に最適', price: 'HK$15〜', image: '/images/hero/hero-poster-ja.webp', href: '/product/a2-posters/' }
     ],
   },
 };
@@ -91,7 +91,7 @@ export function HeroBanner({ locale }: HeroBannerProps) {
               >
                 <Image
                   src={slide.image}
-                  alt={slide.title}
+                  alt={`智印云 ${slide.title}`}
                   fill
                   className="object-cover"
                   unoptimized

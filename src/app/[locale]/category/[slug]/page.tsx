@@ -170,14 +170,14 @@ export default function CategoryPage({
     'stickers': '/images/hero/stickers.jpg',
     'packaging': '/images/hero/packaging.jpg',
     'posters': '/images/hero/posters.jpg',
-    'business-cards': '/images/hero-v21/sticker.jpg',
-    'banners': '/images/hero-v21/poster.jpg',
-    'books': '/images/hero-v21/gift-box.jpg',
-    'menus': '/images/hero-v21/flyer.jpg',
-    'envelopes': '/images/hero-v21/kraft-bag.jpg',
-    'calendars': '/images/hero-v21/white-bag.jpg',
-    'red-packets': '/images/hero-v21/gift-box.jpg',
-    'educational': '/images/hero-v21/flyer.jpg',
+    'business-cards': '/images/hero/hero-sticker-zh-hk.webp',
+    'banners': '/images/hero/hero-poster-zh-hk.webp',
+    'books': '/images/hero/hero-gift-box-zh-hk.webp',
+    'menus': '/images/hero/hero-flyer-zh-hk.webp',
+    'envelopes': '/images/hero/hero-kraft-bag-zh-hk.webp',
+    'calendars': '/images/hero/hero-poster-zh-hk.webp',
+    'red-packets': '/images/hero/hero-gift-box-zh-hk.webp',
+    'educational': '/images/hero/hero-flyer-zh-hk.webp',
   };
   const bannerImage = categoryBannerImages[slug];
   const hasBannerImage = !!bannerImage;

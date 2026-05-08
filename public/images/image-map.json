@@ -1,0 +1,1675 @@
+{
+  "processedAt": "2026-05-08T20:35:42.963Z",
+  "total": 204,
+  "heroCount": 15,
+  "productCount": 189,
+  "miscCount": 0,
+  "okCount": 200,
+  "warnCount": 4,
+  "errorCount": 0,
+  "warnings": [
+    "zprintpro-educational-certificates-zh-hk-1.jpg -> 106KB (target: 100KB)",
+    "zprintpro-educational-certificates-zh-hk-5.jpg -> 110KB (target: 100KB)",
+    "zprintpro-envelopes-pearl-envelopes-zh-hk-1.jpg -> 112KB (target: 100KB)",
+    "zprintpro-stickers-fruit-food-label-stickers-en-1.jpg -> 106KB (target: 100KB)"
+  ],
+  "productGroups": {
+    "educational/certificates": [
+      "zprintpro-educational-certificates-en-1.jpg",
+      "zprintpro-educational-certificates-en-2.jpg",
+      "zprintpro-educational-certificates-en-3.jpg",
+      "zprintpro-educational-certificates-en-4.jpg",
+      "zprintpro-educational-certificates-en-5.jpg",
+      "zprintpro-educational-certificates-ja-1.jpg",
+      "zprintpro-educational-certificates-ja-2.jpg",
+      "zprintpro-educational-certificates-ja-3.jpg",
+      "zprintpro-educational-certificates-ja-4.jpg",
+      "zprintpro-educational-certificates-ja-6.jpg"
+    ],
+    "educational/textbooks": [
+      "zprintpro-educational-textbooks-en-1.jpg",
+      "zprintpro-educational-textbooks-en-2.jpg",
+      "zprintpro-educational-textbooks-en-3.jpg",
+      "zprintpro-educational-textbooks-en-4.jpg",
+      "zprintpro-educational-textbooks-ja-1.jpg",
+      "zprintpro-educational-textbooks-ja-2.jpg",
+      "zprintpro-educational-textbooks-ja-3.jpg",
+      "zprintpro-educational-textbooks-ja-4.jpg",
+      "zprintpro-educational-textbooks-ja-5.jpg"
+    ]
+  },
+  "map": [
+    {
+      "original": "hero-flyer-en.png",
+      "webp": "/images/hero/hero-flyer-en.webp",
+      "category": "hero",
+      "sizeKB": 105,
+      "quality": 85,
+      "status": "OK"
+    },
+    {
+      "original": "hero-flyer-ja.png",
+      "webp": "/images/hero/hero-flyer-ja.webp",
+      "category": "hero",
+      "sizeKB": 105,
+      "quality": 85,
+      "status": "OK"
+    },
+    {
+      "original": "hero-flyer-zh-hk.png",
+      "webp": "/images/hero/hero-flyer-zh-hk.webp",
+      "category": "hero",
+      "sizeKB": 110,
+      "quality": 85,
+      "status": "OK"
+    },
+    {
+      "original": "hero-gift-box-en.png",
+      "webp": "/images/hero/hero-gift-box-en.webp",
+      "category": "hero",
+      "sizeKB": 72,
+      "quality": 85,
+      "status": "OK"
+    },
+    {
+      "original": "hero-gift-box-ja.png",
+      "webp": "/images/hero/hero-gift-box-ja.webp",
+      "category": "hero",
+      "sizeKB": 73,
+      "quality": 85,
+      "status": "OK"
+    },
+    {
+      "original": "hero-gift-box-zh-hk.png",
+      "webp": "/images/hero/hero-gift-box-zh-hk.webp",
+      "category": "hero",
+      "sizeKB": 76,
+      "quality": 85,
+      "status": "OK"
+    },
+    {
+      "original": "hero-kraft-bag-en.png",
+      "webp": "/images/hero/hero-kraft-bag-en.webp",
+      "category": "hero",
+      "sizeKB": 100,
+      "quality": 85,
+      "status": "OK"
+    },
+    {
+      "original": "hero-kraft-bag-ja.png",
+      "webp": "/images/hero/hero-kraft-bag-ja.webp",
+      "category": "hero",
+      "sizeKB": 79,
+      "quality": 85,
+      "status": "OK"
+    },
+    {
+      "original": "hero-kraft-bag-zh-hk.png",
+      "webp": "/images/hero/hero-kraft-bag-zh-hk.webp",
+      "category": "hero",
+      "sizeKB": 90,
+      "quality": 85,
+      "status": "OK"
+    },
+    {
+      "original": "hero-poster-en.png",
+      "webp": "/images/hero/hero-poster-en.webp",
+      "category": "hero",
+      "sizeKB": 97,
+      "quality": 85,
+      "status": "OK"
+    },
+    {
+      "original": "hero-poster-ja.png",
+      "webp": "/images/hero/hero-poster-ja.webp",
+      "category": "hero",
+      "sizeKB": 123,
+      "quality": 85,
+      "status": "OK"
+    },
+    {
+      "original": "hero-poster-zh-hk.png",
+      "webp": "/images/hero/hero-poster-zh-hk.webp",
+      "category": "hero",
+      "sizeKB": 92,
+      "quality": 85,
+      "status": "OK"
+    },
+    {
+      "original": "hero-sticker-en.png",
+      "webp": "/images/hero/hero-sticker-en.webp",
+      "category": "hero",
+      "sizeKB": 89,
+      "quality": 85,
+      "status": "OK"
+    },
+    {
+      "original": "hero-sticker-ja.png",
+      "webp": "/images/hero/hero-sticker-ja.webp",
+      "category": "hero",
+      "sizeKB": 111,
+      "quality": 85,
+      "status": "OK"
+    },
+    {
+      "original": "hero-sticker-zh-hk.png",
+      "webp": "/images/hero/hero-sticker-zh-hk.webp",
+      "category": "hero",
+      "sizeKB": 85,
+      "quality": 85,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-certificates-en-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-certificates-en-1.webp",
+      "category": "product",
+      "sizeKB": 94,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-certificates-en-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-certificates-en-2.webp",
+      "category": "product",
+      "sizeKB": 83,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-certificates-en-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-certificates-en-3.webp",
+      "category": "product",
+      "sizeKB": 79,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-certificates-en-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-certificates-en-4.webp",
+      "category": "product",
+      "sizeKB": 88,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-certificates-en-5.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-certificates-en-5.webp",
+      "category": "product",
+      "sizeKB": 94,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-certificates-ja-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-certificates-ja-1.webp",
+      "category": "product",
+      "sizeKB": 99,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-certificates-ja-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-certificates-ja-2.webp",
+      "category": "product",
+      "sizeKB": 85,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-certificates-ja-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-certificates-ja-3.webp",
+      "category": "product",
+      "sizeKB": 86,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-certificates-ja-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-certificates-ja-4.webp",
+      "category": "product",
+      "sizeKB": 91,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-certificates-ja-6.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-certificates-ja-6.webp",
+      "category": "product",
+      "sizeKB": 100,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-certificates-ja5.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-certificates-ja5.webp",
+      "category": "product",
+      "sizeKB": 91,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-certificates-zh-hk-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-certificates-zh-hk-1.webp",
+      "category": "product",
+      "sizeKB": 106,
+      "quality": 50,
+      "status": "WARN_OVERSIZE(106KB)"
+    },
+    {
+      "original": "zprintpro-educational-certificates-zh-hk-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-certificates-zh-hk-2.webp",
+      "category": "product",
+      "sizeKB": 93,
+      "quality": 60,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-certificates-zh-hk-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-certificates-zh-hk-3.webp",
+      "category": "product",
+      "sizeKB": 92,
+      "quality": 60,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-certificates-zh-hk-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-certificates-zh-hk-4.webp",
+      "category": "product",
+      "sizeKB": 91,
+      "quality": 60,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-certificates-zh-hk-5.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-certificates-zh-hk-5.webp",
+      "category": "product",
+      "sizeKB": 110,
+      "quality": 50,
+      "status": "WARN_OVERSIZE(110KB)"
+    },
+    {
+      "original": "zprintpro-educational-certificates-zh-hk-6.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-certificates-zh-hk-6.webp",
+      "category": "product",
+      "sizeKB": 94,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-exercise-books-en-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-exercise-books-en-1.webp",
+      "category": "product",
+      "sizeKB": 79,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-exercise-books-en-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-exercise-books-en-2.webp",
+      "category": "product",
+      "sizeKB": 85,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-exercise-books-en-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-exercise-books-en-3.webp",
+      "category": "product",
+      "sizeKB": 99,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-exercise-books-en-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-exercise-books-en-4.webp",
+      "category": "product",
+      "sizeKB": 91,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-exercise-books-ja-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-exercise-books-ja-1.webp",
+      "category": "product",
+      "sizeKB": 98,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-exercise-books-ja-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-exercise-books-ja-2.webp",
+      "category": "product",
+      "sizeKB": 79,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-exercise-books-ja-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-exercise-books-ja-3.webp",
+      "category": "product",
+      "sizeKB": 82,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-exercise-books-ja-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-exercise-books-ja-4.webp",
+      "category": "product",
+      "sizeKB": 87,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-exercise-books-ja-5.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-exercise-books-ja-5.webp",
+      "category": "product",
+      "sizeKB": 96,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-exercise-books-zh-hk-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-exercise-books-zh-hk-1.webp",
+      "category": "product",
+      "sizeKB": 97,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-exercise-books-zh-hk-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-exercise-books-zh-hk-2.webp",
+      "category": "product",
+      "sizeKB": 88,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-exercise-books-zh-hk-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-exercise-books-zh-hk-3.webp",
+      "category": "product",
+      "sizeKB": 97,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-exercise-books-zh-hk-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-exercise-books-zh-hk-4.webp",
+      "category": "product",
+      "sizeKB": 98,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-exercise-books-zh-hk-5.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-exercise-books-zh-hk-5.webp",
+      "category": "product",
+      "sizeKB": 97,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-exercise-books-zh-hk-6.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-exercise-books-zh-hk-6.webp",
+      "category": "product",
+      "sizeKB": 95,
+      "quality": 60,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-school-flyers-en-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-school-flyers-en-1.webp",
+      "category": "product",
+      "sizeKB": 95,
+      "quality": 60,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-school-flyers-en-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-school-flyers-en-2.webp",
+      "category": "product",
+      "sizeKB": 99,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-school-flyers-en-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-school-flyers-en-3.webp",
+      "category": "product",
+      "sizeKB": 92,
+      "quality": 60,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-school-flyers-en-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-school-flyers-en-4.webp",
+      "category": "product",
+      "sizeKB": 100,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-school-flyers-en-5.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-school-flyers-en-5.webp",
+      "category": "product",
+      "sizeKB": 93,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-school-flyers-ja-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-school-flyers-ja-1.webp",
+      "category": "product",
+      "sizeKB": 98,
+      "quality": 50,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-school-flyers-ja-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-school-flyers-ja-2.webp",
+      "category": "product",
+      "sizeKB": 97,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-school-flyers-ja-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-school-flyers-ja-3.webp",
+      "category": "product",
+      "sizeKB": 90,
+      "quality": 60,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-school-flyers-ja-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-school-flyers-ja-4.webp",
+      "category": "product",
+      "sizeKB": 81,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-school-flyers-ja-5.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-school-flyers-ja-5.webp",
+      "category": "product",
+      "sizeKB": 94,
+      "quality": 50,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-school-flyers-ja-6.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-school-flyers-ja-6.webp",
+      "category": "product",
+      "sizeKB": 94,
+      "quality": 60,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-school-flyers-zh-hk-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-school-flyers-zh-hk-1.webp",
+      "category": "product",
+      "sizeKB": 91,
+      "quality": 50,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-school-flyers-zh-hk-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-school-flyers-zh-hk-2.webp",
+      "category": "product",
+      "sizeKB": 90,
+      "quality": 60,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-school-flyers-zh-hk-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-school-flyers-zh-hk-3.webp",
+      "category": "product",
+      "sizeKB": 91,
+      "quality": 50,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-school-flyers-zh-hk-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-school-flyers-zh-hk-4.webp",
+      "category": "product",
+      "sizeKB": 90,
+      "quality": 60,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-school-flyers-zh-hk5.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-school-flyers-zh-hk5.webp",
+      "category": "product",
+      "sizeKB": 87,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-textbooks-en-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-textbooks-en-1.webp",
+      "category": "product",
+      "sizeKB": 96,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-textbooks-en-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-textbooks-en-2.webp",
+      "category": "product",
+      "sizeKB": 92,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-textbooks-en-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-textbooks-en-3.webp",
+      "category": "product",
+      "sizeKB": 98,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-textbooks-en-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-textbooks-en-4.webp",
+      "category": "product",
+      "sizeKB": 85,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-textbooks-ja-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-textbooks-ja-1.webp",
+      "category": "product",
+      "sizeKB": 98,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-textbooks-ja-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-textbooks-ja-2.webp",
+      "category": "product",
+      "sizeKB": 90,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-textbooks-ja-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-textbooks-ja-3.webp",
+      "category": "product",
+      "sizeKB": 97,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-textbooks-ja-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-textbooks-ja-4.webp",
+      "category": "product",
+      "sizeKB": 84,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-textbooks-ja-5.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-textbooks-ja-5.webp",
+      "category": "product",
+      "sizeKB": 81,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-textbooks-zh-hk-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-textbooks-zh-hk-1.webp",
+      "category": "product",
+      "sizeKB": 100,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-textbooks-zh-hk-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-textbooks-zh-hk-2.webp",
+      "category": "product",
+      "sizeKB": 96,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-textbooks-zh-hk-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-textbooks-zh-hk-3.webp",
+      "category": "product",
+      "sizeKB": 97,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-educational-textbooks-zh-hk-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-educational-textbooks-zh-hk-4.webp",
+      "category": "product",
+      "sizeKB": 99,
+      "quality": 60,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-colored-envelopes-en-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-en-1.webp",
+      "category": "product",
+      "sizeKB": 95,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-colored-envelopes-en-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-en-2.webp",
+      "category": "product",
+      "sizeKB": 99,
+      "quality": 60,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-colored-envelopes-en-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-en-3.webp",
+      "category": "product",
+      "sizeKB": 89,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-colored-envelopes-en-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-en-4.webp",
+      "category": "product",
+      "sizeKB": 84,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-colored-envelopes-en-5.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-en-5.webp",
+      "category": "product",
+      "sizeKB": 83,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-colored-envelopes-ja-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-ja-1.webp",
+      "category": "product",
+      "sizeKB": 91,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-colored-envelopes-ja-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-ja-2.webp",
+      "category": "product",
+      "sizeKB": 99,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-colored-envelopes-ja-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-ja-3.webp",
+      "category": "product",
+      "sizeKB": 85,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-colored-envelopes-ja-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-ja-4.webp",
+      "category": "product",
+      "sizeKB": 84,
+      "quality": 60,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-colored-envelopes-zh-hk-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-zh-hk-1.webp",
+      "category": "product",
+      "sizeKB": 94,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-colored-envelopes-zh-hk-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-zh-hk-2.webp",
+      "category": "product",
+      "sizeKB": 93,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-colored-envelopes-zh-hk-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-zh-hk-3.webp",
+      "category": "product",
+      "sizeKB": 98,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-colored-envelopes-zh-hk-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-zh-hk-4.webp",
+      "category": "product",
+      "sizeKB": 80,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-colored-envelopes-zh-hk-5.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-zh-hk-5.webp",
+      "category": "product",
+      "sizeKB": 77,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-colored-envelopes-zh-hk-6.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-zh-hk-6.webp",
+      "category": "product",
+      "sizeKB": 77,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-large-envelopes-en-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-en-1.webp",
+      "category": "product",
+      "sizeKB": 88,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-large-envelopes-en-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-en-2.webp",
+      "category": "product",
+      "sizeKB": 95,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-large-envelopes-en-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-en-3.webp",
+      "category": "product",
+      "sizeKB": 89,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-large-envelopes-en-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-en-4.webp",
+      "category": "product",
+      "sizeKB": 88,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-large-envelopes-en-5.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-en-5.webp",
+      "category": "product",
+      "sizeKB": 82,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-large-envelopes-ja-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-ja-1.webp",
+      "category": "product",
+      "sizeKB": 88,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-large-envelopes-ja-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-ja-2.webp",
+      "category": "product",
+      "sizeKB": 77,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-large-envelopes-ja-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-ja-3.webp",
+      "category": "product",
+      "sizeKB": 79,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-large-envelopes-ja-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-ja-4.webp",
+      "category": "product",
+      "sizeKB": 90,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-large-envelopes-ja-5.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-ja-5.webp",
+      "category": "product",
+      "sizeKB": 82,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-large-envelopes-zh-hk-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-zh-hk-1.webp",
+      "category": "product",
+      "sizeKB": 97,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-large-envelopes-zh-hk-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-zh-hk-2.webp",
+      "category": "product",
+      "sizeKB": 80,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-large-envelopes-zh-hk-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-zh-hk-3.webp",
+      "category": "product",
+      "sizeKB": 89,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-large-envelopes-zh-hk-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-zh-hk-4.webp",
+      "category": "product",
+      "sizeKB": 90,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-large-envelopes-zh-hk-5.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-zh-hk-5.webp",
+      "category": "product",
+      "sizeKB": 80,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-pearl-envelopes-en-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-en-1.webp",
+      "category": "product",
+      "sizeKB": 98,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-pearl-envelopes-en-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-en-2.webp",
+      "category": "product",
+      "sizeKB": 86,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-pearl-envelopes-en-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-en-3.webp",
+      "category": "product",
+      "sizeKB": 87,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-pearl-envelopes-en-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-en-4.webp",
+      "category": "product",
+      "sizeKB": 80,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-pearl-envelopes-en-5.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-en-5.webp",
+      "category": "product",
+      "sizeKB": 73,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-pearl-envelopes-ja-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-ja-1.webp",
+      "category": "product",
+      "sizeKB": 80,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-pearl-envelopes-ja-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-ja-2.webp",
+      "category": "product",
+      "sizeKB": 99,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-pearl-envelopes-ja-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-ja-3.webp",
+      "category": "product",
+      "sizeKB": 84,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-pearl-envelopes-ja-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-ja-4.webp",
+      "category": "product",
+      "sizeKB": 92,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-pearl-envelopes-zh-hk-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-zh-hk-1.webp",
+      "category": "product",
+      "sizeKB": 112,
+      "quality": 50,
+      "status": "WARN_OVERSIZE(112KB)"
+    },
+    {
+      "original": "zprintpro-envelopes-pearl-envelopes-zh-hk-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-zh-hk-2.webp",
+      "category": "product",
+      "sizeKB": 89,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-pearl-envelopes-zh-hk-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-zh-hk-3.webp",
+      "category": "product",
+      "sizeKB": 100,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-pearl-envelopes-zh-hk-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-zh-hk-4.webp",
+      "category": "product",
+      "sizeKB": 86,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-envelopes-pearl-envelopes-zh-hk-5.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-zh-hk-5.webp",
+      "category": "product",
+      "sizeKB": 93,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-drawer-slide-gift-box-en-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-en-1.webp",
+      "category": "product",
+      "sizeKB": 98,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-drawer-slide-gift-box-en-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-en-2.webp",
+      "category": "product",
+      "sizeKB": 95,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-drawer-slide-gift-box-en-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-en-3.webp",
+      "category": "product",
+      "sizeKB": 79,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-drawer-slide-gift-box-en-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-en-4.webp",
+      "category": "product",
+      "sizeKB": 98,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-drawer-slide-gift-box-ja-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-ja-1.webp",
+      "category": "product",
+      "sizeKB": 99,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-drawer-slide-gift-box-ja-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-ja-2.webp",
+      "category": "product",
+      "sizeKB": 100,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-drawer-slide-gift-box-ja-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-ja-3.webp",
+      "category": "product",
+      "sizeKB": 88,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-drawer-slide-gift-box-ja-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-ja-4.webp",
+      "category": "product",
+      "sizeKB": 96,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-drawer-slide-gift-box-ja-5.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-ja-5.webp",
+      "category": "product",
+      "sizeKB": 96,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-drawer-slide-gift-box-ja-6.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-ja-6.webp",
+      "category": "product",
+      "sizeKB": 82,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-drawer-slide-gift-box-zh-hk-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-zh-hk-1.webp",
+      "category": "product",
+      "sizeKB": 92,
+      "quality": 60,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-drawer-slide-gift-box-zh-hk-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-zh-hk-2.webp",
+      "category": "product",
+      "sizeKB": 94,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-drawer-slide-gift-box-zh-hk-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-zh-hk-3.webp",
+      "category": "product",
+      "sizeKB": 85,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-drawer-slide-gift-box-zh-hk-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-zh-hk-4.webp",
+      "category": "product",
+      "sizeKB": 94,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-drawer-slide-gift-box-zh-hk-5.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-zh-hk-5.webp",
+      "category": "product",
+      "sizeKB": 93,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-electronics-packaging-box-en-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-en-1.webp",
+      "category": "product",
+      "sizeKB": 80,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-electronics-packaging-box-en-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-en-2.webp",
+      "category": "product",
+      "sizeKB": 92,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-electronics-packaging-box-en-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-en-3.webp",
+      "category": "product",
+      "sizeKB": 85,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-electronics-packaging-box-en-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-en-4.webp",
+      "category": "product",
+      "sizeKB": 88,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-electronics-packaging-box-en-5.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-en-5.webp",
+      "category": "product",
+      "sizeKB": 97,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-electronics-packaging-box-ja-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-ja-1.webp",
+      "category": "product",
+      "sizeKB": 82,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-electronics-packaging-box-ja-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-ja-2.webp",
+      "category": "product",
+      "sizeKB": 96,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-electronics-packaging-box-ja-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-ja-3.webp",
+      "category": "product",
+      "sizeKB": 98,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-electronics-packaging-box-ja-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-ja-4.webp",
+      "category": "product",
+      "sizeKB": 87,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-electronics-packaging-box-ja-5.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-ja-5.webp",
+      "category": "product",
+      "sizeKB": 85,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-electronics-packaging-box-ja-6.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-ja-6.webp",
+      "category": "product",
+      "sizeKB": 92,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-electronics-packaging-box-zh-hk-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-zh-hk-1.webp",
+      "category": "product",
+      "sizeKB": 96,
+      "quality": 60,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-electronics-packaging-box-zh-hk-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-zh-hk-2.webp",
+      "category": "product",
+      "sizeKB": 100,
+      "quality": 60,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-electronics-packaging-box-zh-hk-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-zh-hk-3.webp",
+      "category": "product",
+      "sizeKB": 96,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-electronics-packaging-box-zh-hk-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-zh-hk-4.webp",
+      "category": "product",
+      "sizeKB": 78,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-electronics-packaging-box-zh-hk-5.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-zh-hk-5.webp",
+      "category": "product",
+      "sizeKB": 88,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-electronics-packaging-box-zh-hk-6.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-zh-hk-6.webp",
+      "category": "product",
+      "sizeKB": 86,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-kraft-paper-packaging-box-en-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-en-1.webp",
+      "category": "product",
+      "sizeKB": 90,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-kraft-paper-packaging-box-en-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-en-2.webp",
+      "category": "product",
+      "sizeKB": 83,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-kraft-paper-packaging-box-en-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-en-3.webp",
+      "category": "product",
+      "sizeKB": 97,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-kraft-paper-packaging-box-en-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-en-4.webp",
+      "category": "product",
+      "sizeKB": 78,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-kraft-paper-packaging-box-en-5.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-en-5.webp",
+      "category": "product",
+      "sizeKB": 96,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-kraft-paper-packaging-box-en-6.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-en-6.webp",
+      "category": "product",
+      "sizeKB": 76,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-kraft-paper-packaging-box-ja-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-ja-1.webp",
+      "category": "product",
+      "sizeKB": 76,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-kraft-paper-packaging-box-ja-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-ja-2.webp",
+      "category": "product",
+      "sizeKB": 97,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-kraft-paper-packaging-box-ja-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-ja-3.webp",
+      "category": "product",
+      "sizeKB": 100,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-kraft-paper-packaging-box-ja-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-ja-4.webp",
+      "category": "product",
+      "sizeKB": 98,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-kraft-paper-packaging-box-ja-5.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-ja-5.webp",
+      "category": "product",
+      "sizeKB": 72,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-kraft-paper-packaging-box-ja-6.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-ja-6.webp",
+      "category": "product",
+      "sizeKB": 77,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-kraft-paper-packaging-box-zh-hk-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-1.webp",
+      "category": "product",
+      "sizeKB": 93,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-kraft-paper-packaging-box-zh-hk-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-2.webp",
+      "category": "product",
+      "sizeKB": 79,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-kraft-paper-packaging-box-zh-hk-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-3.webp",
+      "category": "product",
+      "sizeKB": 82,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-kraft-paper-packaging-box-zh-hk-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-4.webp",
+      "category": "product",
+      "sizeKB": 81,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-magnetic-closure-gift-box-en-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-en-1.webp",
+      "category": "product",
+      "sizeKB": 77,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-magnetic-closure-gift-box-en-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-en-2.webp",
+      "category": "product",
+      "sizeKB": 91,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-magnetic-closure-gift-box-en-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-en-3.webp",
+      "category": "product",
+      "sizeKB": 97,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-magnetic-closure-gift-box-en-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-en-4.webp",
+      "category": "product",
+      "sizeKB": 87,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-magnetic-closure-gift-box-ja-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-ja-1.webp",
+      "category": "product",
+      "sizeKB": 95,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-magnetic-closure-gift-box-ja-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-ja-2.webp",
+      "category": "product",
+      "sizeKB": 84,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-magnetic-closure-gift-box-ja-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-ja-3.webp",
+      "category": "product",
+      "sizeKB": 80,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-magnetic-closure-gift-box-ja-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-ja-4.webp",
+      "category": "product",
+      "sizeKB": 83,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-magnetic-closure-gift-box-ja-5.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-ja-5.webp",
+      "category": "product",
+      "sizeKB": 85,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-magnetic-closure-gift-box-ja-6.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-ja-6.webp",
+      "category": "product",
+      "sizeKB": 93,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-magnetic-closure-gift-box-zh-hk-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-1.webp",
+      "category": "product",
+      "sizeKB": 89,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-magnetic-closure-gift-box-zh-hk-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-2.webp",
+      "category": "product",
+      "sizeKB": 92,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-magnetic-closure-gift-box-zh-hk-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-3.webp",
+      "category": "product",
+      "sizeKB": 80,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-magnetic-closure-gift-box-zh-hk-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-4.webp",
+      "category": "product",
+      "sizeKB": 89,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-packaging-magnetic-closure-gift-box-zh-hk-5.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-5.webp",
+      "category": "product",
+      "sizeKB": 96,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-paper-bags-white-card-bags-zh-hk-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-paper-bags-white-card-bags-zh-hk-1.webp",
+      "category": "product",
+      "sizeKB": 85,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-paper-bags-white-card-bags-zh-hk-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-paper-bags-white-card-bags-zh-hk-2.webp",
+      "category": "product",
+      "sizeKB": 86,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-paper-bags-white-card-bags-zh-hk-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-paper-bags-white-card-bags-zh-hk-3.webp",
+      "category": "product",
+      "sizeKB": 95,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-paper-bags-white-card-bags-zh-hk-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-paper-bags-white-card-bags-zh-hk-4.webp",
+      "category": "product",
+      "sizeKB": 90,
+      "quality": 80,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-stickers-fruit-food-label-stickers-en-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-en-1.webp",
+      "category": "product",
+      "sizeKB": 106,
+      "quality": 50,
+      "status": "WARN_OVERSIZE(106KB)"
+    },
+    {
+      "original": "zprintpro-stickers-fruit-food-label-stickers-en-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-en-2.webp",
+      "category": "product",
+      "sizeKB": 97,
+      "quality": 50,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-stickers-fruit-food-label-stickers-en-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-en-3.webp",
+      "category": "product",
+      "sizeKB": 99,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-stickers-fruit-food-label-stickers-en-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-en-4.webp",
+      "category": "product",
+      "sizeKB": 91,
+      "quality": 60,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-stickers-fruit-food-label-stickers-en-5.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-en-5.webp",
+      "category": "product",
+      "sizeKB": 93,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-stickers-fruit-food-label-stickers-en-6.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-en-6.webp",
+      "category": "product",
+      "sizeKB": 82,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-stickers-fruit-food-label-stickers-ja-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-ja-1.webp",
+      "category": "product",
+      "sizeKB": 94,
+      "quality": 60,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-stickers-fruit-food-label-stickers-ja-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-ja-2.webp",
+      "category": "product",
+      "sizeKB": 91,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-stickers-fruit-food-label-stickers-ja-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-ja-3.webp",
+      "category": "product",
+      "sizeKB": 97,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-stickers-fruit-food-label-stickers-ja-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-ja-4.webp",
+      "category": "product",
+      "sizeKB": 92,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-stickers-fruit-food-label-stickers-ja-5.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-ja-5.webp",
+      "category": "product",
+      "sizeKB": 87,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-stickers-fruit-food-label-stickers-zh-hk-1.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-zh-hk-1.webp",
+      "category": "product",
+      "sizeKB": 93,
+      "quality": 50,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-stickers-fruit-food-label-stickers-zh-hk-2.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-zh-hk-2.webp",
+      "category": "product",
+      "sizeKB": 96,
+      "quality": 70,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-stickers-fruit-food-label-stickers-zh-hk-3.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-zh-hk-3.webp",
+      "category": "product",
+      "sizeKB": 99,
+      "quality": 50,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-stickers-fruit-food-label-stickers-zh-hk-4.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-zh-hk-4.webp",
+      "category": "product",
+      "sizeKB": 93,
+      "quality": 60,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-stickers-fruit-food-label-stickers-zh-hk-5.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-zh-hk-5.webp",
+      "category": "product",
+      "sizeKB": 91,
+      "quality": 60,
+      "status": "OK"
+    },
+    {
+      "original": "zprintpro-stickers-fruit-food-label-stickers-zh-hk-6.jpg",
+      "webp": "/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-zh-hk-6.webp",
+      "category": "product",
+      "sizeKB": 95,
+      "quality": 60,
+      "status": "OK"
+    }
+  ]
+}

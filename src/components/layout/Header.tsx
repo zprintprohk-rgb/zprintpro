@@ -170,7 +170,7 @@ const subItemNames: Record<string, Record<string, string>> = {
 
 const featuredImages: Record<string, string> = {
   'kraft-paper-bags': '/images/products/kraft-paper-bags.jpg',
-  'white-card-bags': '/images/products/white-card-bags.jpg',
+  'white-card-bags': '/images/products/seedream-webp/zprintpro-paper-bags-white-card-bags-zh-hk-1.webp',
   'gift-bags': '/images/products/gift-bags.jpg',
   'eco-paper-bags': '/images/products/eco-paper-bags.jpg',
   'handle-bags': '/images/products/handle-bags.jpg',
@@ -186,27 +186,27 @@ const featuredImages: Record<string, string> = {
   'foil-stickers': '/images/products/foil-stickers.jpg',
   'removable-stickers': '/images/products/removable-stickers.jpg',
   'die-cut-stickers': '/images/products/die-cut-stickers.jpg',
-  'fruit-food-label-stickers': '/images/products/small-batch-stickers.jpg',
+  'fruit-food-label-stickers': '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-zh-hk-1.webp',
   'gift-boxes': '/images/products/gift-boxes.jpg',
   'cosmetic-boxes': '/images/products/cosmetic-boxes.jpg',
   'food-boxes': '/images/products/food-boxes.jpg',
   'mailer-boxes': '/images/products/mailer-boxes.jpg',
   'folding-boxes': '/images/products/folding-boxes.jpg',
   'rigid-boxes': '/images/products/rigid-boxes.jpg',
-  'magnetic-closure-gift-box': '/images/products/gift-box.jpg',
-  'electronics-packaging-box': '/images/products/packaging.jpg',
-  'kraft-paper-packaging-box': '/images/products/kraft-paper-bags.jpg',
-  'drawer-slide-gift-box': '/images/products/gift-box.jpg',
+  'magnetic-closure-gift-box': '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-1.webp',
+  'electronics-packaging-box': '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-zh-hk-1.webp',
+  'kraft-paper-packaging-box': '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-1.webp',
+  'drawer-slide-gift-box': '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-zh-hk-1.webp',
   'a2-posters': '/images/products/a2-posters.jpg',
   'a1-posters': '/images/products/a1-posters.jpg',
   'outdoor-posters': '/images/products/outdoor-posters.jpg',
   'display-posters': '/images/products/display-posters.jpg',
   'art-posters': '/images/products/art-posters.jpg',
   'adhesive-posters': '/images/products/adhesive-posters.jpg',
-  'exercise-books': '/images/products/exercise-books.jpg',
-  'certificates': '/images/products/certificates.jpg',
-  'school-flyers': '/images/products/school-flyers.jpg',
-  'textbooks': '/images/products/textbooks.jpg',
+  'exercise-books': '/images/products/seedream-webp/zprintpro-educational-exercise-books-zh-hk-1.webp',
+  'certificates': '/images/products/seedream-webp/zprintpro-educational-certificates-zh-hk-1.webp',
+  'school-flyers': '/images/products/seedream-webp/zprintpro-educational-school-flyers-zh-hk-1.webp',
+  'textbooks': '/images/products/seedream-webp/zprintpro-educational-textbooks-zh-hk-1.webp',
 };
 
 const featuredDescs: Record<string, Record<string, string>> = {
@@ -402,7 +402,7 @@ export function Header({ locale }: HeaderProps) {
                             return (
                               <Link key={subSlug} href={`${localePrefix}/product/${subSlug}/`} className="block group flex-1 flex flex-col">
                                 <div className="flex-1 relative overflow-hidden rounded-t-lg">
-                                  <Image src={featuredImages[subSlug] || '/images/hero-v21/gift-box.jpg'} alt={getSubItemName(subSlug)} fill className="object-cover group-hover:scale-105 transition-transform" unoptimized />
+                                  <Image src={featuredImages[subSlug] || '/images/hero/hero-gift-box-zh-hk.webp'} alt={getSubItemName(subSlug)} fill className="object-cover group-hover:scale-105 transition-transform" unoptimized />
                                   <span className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded">{tagText}</span>
                                 </div>
                                 <div className="pt-2 h-[60px] flex flex-col justify-center">
@@ -449,10 +449,10 @@ export function Header({ locale }: HeaderProps) {
                       </div>
                       <div className="border-b border-transparent" />
                       <div className="flex-1 flex gap-4">
-                        {['flyer.jpg', 'sticker.jpg', 'gift-box.jpg'].map((img, idx) => (
+                        {['hero-flyer-zh-hk.webp', 'hero-sticker-zh-hk.webp', 'hero-gift-box-zh-hk.webp'].map((img, idx) => (
                           <Link key={idx} href={`${localePrefix}/blog/`} className="block group flex-1 flex flex-col">
                             <div className="flex-1 relative overflow-hidden rounded-t-lg">
-                              <Image src={`/images/hero-v21/${img}`} alt="" fill className="object-cover group-hover:scale-105 transition-transform" unoptimized />
+                              <Image src={`/images/hero/${img}`} alt="" fill className="object-cover group-hover:scale-105 transition-transform" unoptimized />
                             </div>
                             <div className="pt-2 h-[50px] flex items-center justify-center">
                               <p className="text-base font-medium text-gray-700 leading-tight text-center">{knowledgeSubItems[locale]?.[idx] || ''}</p>

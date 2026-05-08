@@ -1351,8 +1351,14 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/white-card-bags.jpg'],
+    images: ['/images/products/seedream-webp/zprintpro-paper-bags-white-card-bags-zh-hk-1.webp'],
   imagesByLocale: {
+    'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-paper-bags-white-card-bags-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-white-card-bags-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-white-card-bags-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-white-card-bags-zh-hk-4.webp',
+    ],
     'en': [
       '/images/products/seedream-webp/zprintpro-paper-bags-white-card-bags-en-1.webp',
       '/images/products/seedream-webp/zprintpro-paper-bags-white-card-bags-en-2.webp',
@@ -5519,6 +5525,37 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/colored-envelopes.jpg'],
+  imagesByLocale: {
+    'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-zh-hk-4.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-zh-hk-5.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-zh-hk-6.webp',
+    ],
+    'en': [
+      '/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-en-3.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-en-4.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-en-5.webp',
+    ],
+    'ja': [
+      '/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-ja-3.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-colored-envelopes-ja-4.webp',
+    ],
+  },
+  seoImages: {
+    filename: { 'zh-hk': 'zprintpro-envelopes-colored-envelopes-zh-hk-1.webp', en: 'zprintpro-envelopes-colored-envelopes-en-1.webp', ja: 'zprintpro-envelopes-colored-envelopes-ja-1.webp' },
+    alt: {
+      'zh-hk': '香港彩色信封印刷 120g雙膠紙 四色印刷',
+      en: 'Hong Kong Colored Envelopes Printing 120g Offset Paper 4-Color',
+      ja: '香港カラー封筒印刷 120gオフセット紙 4色印刷',
+    },
+  },
     variables: {
       sizes: [
         { value: 'dl', label: 'DL (110×220mm)', multiplier: 1 },
@@ -5541,15 +5578,7 @@ export const products: Product[] = [
         { value: 1000, label: '1000個', discount: 0.7 },
       ],
     },
-  seoImages: {
-    filename: { 'zh-hk': 'zprintpro-envelopes-colored-envelopes-zh-hk.jpg', en: 'zprintpro-envelopes-colored-envelopes-en.jpg', ja: 'zprintpro-envelopes-colored-envelopes-ja.jpg' },
-    alt: {
-      'zh-hk': '香港彩色信封印刷 80–120g 書紙／彩色書紙 開窗',
-      en: 'Hong Kong Colored Envelopes Printing 80–120g 書紙／彩色書紙 開窗',
-      ja: '香港彩色信封印刷 80–120g 書紙／彩色書紙 開窗',
     },
-  },
-  },
   {
     id: 'EV-003',
     sku_code: 'EV-003',
@@ -5583,6 +5612,37 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/large-envelopes.jpg'],
+  imagesByLocale: {
+    'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-zh-hk-4.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-zh-hk-5.webp',
+    ],
+    'en': [
+      '/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-en-3.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-en-4.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-en-5.webp',
+    ],
+    'ja': [
+      '/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-ja-3.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-ja-4.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-large-envelopes-ja-5.webp',
+    ],
+  },
+  seoImages: {
+    filename: { 'zh-hk': 'zprintpro-envelopes-large-envelopes-zh-hk-1.webp', en: 'zprintpro-envelopes-large-envelopes-en-1.webp', ja: 'zprintpro-envelopes-large-envelopes-ja-1.webp' },
+    alt: {
+      'zh-hk': '香港大號信封印刷 150g牛皮紙 耐用厚實',
+      en: 'Hong Kong Large Envelopes Printing 150g Kraft Paper Durable',
+      ja: '香港大判封筒印刷 150gクラフト紙 厚手耐久',
+    },
+  },
     variables: {
       sizes: [
         { value: 'dl', label: 'DL (110×220mm)', multiplier: 1 },
@@ -5605,15 +5665,7 @@ export const products: Product[] = [
         { value: 1000, label: '1000個', discount: 0.7 },
       ],
     },
-  seoImages: {
-    filename: { 'zh-hk': 'zprintpro-envelopes-large-envelopes-zh-hk.jpg', en: 'zprintpro-envelopes-large-envelopes-en.jpg', ja: 'zprintpro-envelopes-large-envelopes-ja.jpg' },
-    alt: {
-      'zh-hk': '香港大號信封印刷 100–120g 書紙為主（可諮詢） 自黏封口',
-      en: 'Hong Kong Large Envelopes Printing 100–120g 書紙為主（可諮詢） 自黏封口',
-      ja: '香港大號信封印刷 100–120g 書紙為主（可諮詢） 自黏封口',
     },
-  },
-  },
   {
     id: 'EV-004',
     sku_code: 'EV-004',
@@ -5647,6 +5699,36 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/pearl-envelopes.jpg'],
+  imagesByLocale: {
+    'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-zh-hk-4.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-zh-hk-5.webp',
+    ],
+    'en': [
+      '/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-en-3.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-en-4.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-en-5.webp',
+    ],
+    'ja': [
+      '/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-ja-3.webp',
+      '/images/products/seedream-webp/zprintpro-envelopes-pearl-envelopes-ja-4.webp',
+    ],
+  },
+  seoImages: {
+    filename: { 'zh-hk': 'zprintpro-envelopes-pearl-envelopes-zh-hk-1.webp', en: 'zprintpro-envelopes-pearl-envelopes-en-1.webp', ja: 'zprintpro-envelopes-pearl-envelopes-ja-1.webp' },
+    alt: {
+      'zh-hk': '香港珠光信封印刷 120g珠光紙 高檔質感',
+      en: 'Hong Kong Pearl Envelopes Printing 120g Pearl Paper Premium',
+      ja: '香港パール封筒印刷 120gパール紙 高級感',
+    },
+  },
     variables: {
       sizes: [
         { value: 'dl', label: 'DL (110×220mm)', multiplier: 1 },
@@ -5669,15 +5751,7 @@ export const products: Product[] = [
         { value: 1000, label: '1000個', discount: 0.7 },
       ],
     },
-  seoImages: {
-    filename: { 'zh-hk': 'zprintpro-envelopes-pearl-envelopes-zh-hk.jpg', en: 'zprintpro-envelopes-pearl-envelopes-en.jpg', ja: 'zprintpro-envelopes-pearl-envelopes-ja.jpg' },
-    alt: {
-      'zh-hk': '香港珠光信封印刷 珠光／冰白特種書紙 自黏封口',
-      en: 'Hong Kong Pearl Envelopes Printing 珠光／冰白特種書紙 自黏封口',
-      ja: '香港珠光信封印刷 珠光／冰白特種書紙 自黏封口',
     },
-  },
-  },
   // 校園教育印刷 (4 SKU)
   {
     id: 'ED-001',
@@ -5712,15 +5786,38 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/exercise-books.jpg'],
+  imagesByLocale: {
+    'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-educational-exercise-books-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-educational-exercise-books-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-educational-exercise-books-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-educational-exercise-books-zh-hk-4.webp',
+      '/images/products/seedream-webp/zprintpro-educational-exercise-books-zh-hk-5.webp',
+      '/images/products/seedream-webp/zprintpro-educational-exercise-books-zh-hk-6.webp',
+    ],
+    'en': [
+      '/images/products/seedream-webp/zprintpro-educational-exercise-books-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-educational-exercise-books-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-educational-exercise-books-en-3.webp',
+      '/images/products/seedream-webp/zprintpro-educational-exercise-books-en-4.webp',
+    ],
+    'ja': [
+      '/images/products/seedream-webp/zprintpro-educational-exercise-books-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-educational-exercise-books-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-educational-exercise-books-ja-3.webp',
+      '/images/products/seedream-webp/zprintpro-educational-exercise-books-ja-4.webp',
+      '/images/products/seedream-webp/zprintpro-educational-exercise-books-ja-5.webp',
+    ],
+  },
   seoImages: {
-    filename: { 'zh-hk': 'zprintpro-educational-exercise-books-zh-hk.jpg', en: 'zprintpro-educational-exercise-books-en.jpg', ja: 'zprintpro-educational-exercise-books-ja.jpg' },
+    filename: { 'zh-hk': 'zprintpro-educational-exercise-books-zh-hk-1.webp', en: 'zprintpro-educational-exercise-books-en-1.webp', ja: 'zprintpro-educational-exercise-books-ja-1.webp' },
     alt: {
-      'zh-hk': '香港作業簿印刷印刷 80g–100g書紙 騎馬釘裝訂',
-      en: 'Hong Kong Exercise Books Printing 80g–100g書紙 騎馬釘裝訂',
-      ja: '香港作業簿印刷印刷 80g–100g書紙 騎馬釘裝訂',
+      'zh-hk': '香港練習簿印刷 80g書寫紙 膠裝裝訂',
+      en: 'Hong Kong Exercise Books Printing 80g Writing Paper Perfect Bound',
+      ja: '香港ワークブック印刷 80g書き紙 無線綴じ',
     },
   },
-  },
+    },
   {
     id: 'ED-002',
     sku_code: 'ED-002',
@@ -5754,6 +5851,39 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/certificates.jpg'],
+  imagesByLocale: {
+    'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-educational-certificates-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-educational-certificates-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-educational-certificates-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-educational-certificates-zh-hk-4.webp',
+      '/images/products/seedream-webp/zprintpro-educational-certificates-zh-hk-5.webp',
+      '/images/products/seedream-webp/zprintpro-educational-certificates-zh-hk-6.webp',
+    ],
+    'en': [
+      '/images/products/seedream-webp/zprintpro-educational-certificates-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-educational-certificates-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-educational-certificates-en-3.webp',
+      '/images/products/seedream-webp/zprintpro-educational-certificates-en-4.webp',
+      '/images/products/seedream-webp/zprintpro-educational-certificates-en-5.webp',
+    ],
+    'ja': [
+      '/images/products/seedream-webp/zprintpro-educational-certificates-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-educational-certificates-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-educational-certificates-ja-3.webp',
+      '/images/products/seedream-webp/zprintpro-educational-certificates-ja-4.webp',
+      '/images/products/seedream-webp/zprintpro-educational-certificates-ja5.webp',
+      '/images/products/seedream-webp/zprintpro-educational-certificates-ja-6.webp',
+    ],
+  },
+  seoImages: {
+    filename: { 'zh-hk': 'zprintpro-educational-certificates-zh-hk-1.webp', en: 'zprintpro-educational-certificates-en-1.webp', ja: 'zprintpro-educational-certificates-ja-1.webp' },
+    alt: {
+      'zh-hk': '香港證書印刷 250g珠光紙 燙金工藝',
+      en: 'Hong Kong Certificates Printing 250g Pearl Paper Foil Stamped',
+      ja: '香港証明書印刷 250gパール紙 箔押し加工',
+    },
+  },
     variables: {
       sizes: [
         { value: 'a4', label: 'A4 (210×297mm)', multiplier: 1 },
@@ -5776,15 +5906,7 @@ export const products: Product[] = [
         { value: 500, label: '500本', discount: 0.7 },
       ],
     },
-  seoImages: {
-    filename: { 'zh-hk': 'zprintpro-educational-certificates-zh-hk.jpg', en: 'zprintpro-educational-certificates-en.jpg', ja: 'zprintpro-educational-certificates-ja.jpg' },
-    alt: {
-      'zh-hk': '香港證書印刷印刷 200g–250g水印紙 燙金',
-      en: 'Hong Kong Certificates Printing 200g–250g水印紙 燙金',
-      ja: '香港證書印刷印刷 200g–250g水印紙 燙金',
     },
-  },
-  },
   {
     id: 'ED-003',
     sku_code: 'ED-003',
@@ -5818,6 +5940,38 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/school-flyers.jpg'],
+  imagesByLocale: {
+    'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-educational-school-flyers-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-educational-school-flyers-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-educational-school-flyers-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-educational-school-flyers-zh-hk-4.webp',
+      '/images/products/seedream-webp/zprintpro-educational-school-flyers-zh-hk5.webp',
+    ],
+    'en': [
+      '/images/products/seedream-webp/zprintpro-educational-school-flyers-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-educational-school-flyers-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-educational-school-flyers-en-3.webp',
+      '/images/products/seedream-webp/zprintpro-educational-school-flyers-en-4.webp',
+      '/images/products/seedream-webp/zprintpro-educational-school-flyers-en-5.webp',
+    ],
+    'ja': [
+      '/images/products/seedream-webp/zprintpro-educational-school-flyers-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-educational-school-flyers-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-educational-school-flyers-ja-3.webp',
+      '/images/products/seedream-webp/zprintpro-educational-school-flyers-ja-4.webp',
+      '/images/products/seedream-webp/zprintpro-educational-school-flyers-ja-5.webp',
+      '/images/products/seedream-webp/zprintpro-educational-school-flyers-ja-6.webp',
+    ],
+  },
+  seoImages: {
+    filename: { 'zh-hk': 'zprintpro-educational-school-flyers-zh-hk-1.webp', en: 'zprintpro-educational-school-flyers-en-1.webp', ja: 'zprintpro-educational-school-flyers-ja-1.webp' },
+    alt: {
+      'zh-hk': '香港校園傳單印刷 157g銅版紙 雙面彩色',
+      en: 'Hong Kong School Flyers Printing 157g Glossy Paper Double-sided Color',
+      ja: '香港学校チラシ印刷 157gコート紙 両面カラー',
+    },
+  },
     variables: {
       sizes: [
         { value: 'a4', label: 'A4 (210×297mm)', multiplier: 1 },
@@ -5840,15 +5994,7 @@ export const products: Product[] = [
         { value: 500, label: '500本', discount: 0.7 },
       ],
     },
-  seoImages: {
-    filename: { 'zh-hk': 'zprintpro-educational-school-flyers-zh-hk.jpg', en: 'zprintpro-educational-school-flyers-en.jpg', ja: 'zprintpro-educational-school-flyers-ja.jpg' },
-    alt: {
-      'zh-hk': '香港學校單張印刷 128g–157g銅版紙 覆膜（可選）',
-      en: 'Hong Kong School Flyers Printing 128g–157g銅版紙 覆膜（可選）',
-      ja: '香港學校單張印刷 128g–157g銅版紙 覆膜（可選）',
     },
-  },
-  },
   {
     id: 'ED-004',
     sku_code: 'ED-004',
@@ -5882,6 +6028,35 @@ export const products: Product[] = [
     isNew: false,
     minQuantity: 100,
     images: ['/images/products/textbooks.jpg'],
+  imagesByLocale: {
+    'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-educational-textbooks-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-educational-textbooks-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-educational-textbooks-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-educational-textbooks-zh-hk-4.webp',
+    ],
+    'en': [
+      '/images/products/seedream-webp/zprintpro-educational-textbooks-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-educational-textbooks-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-educational-textbooks-en-3.webp',
+      '/images/products/seedream-webp/zprintpro-educational-textbooks-en-4.webp',
+    ],
+    'ja': [
+      '/images/products/seedream-webp/zprintpro-educational-textbooks-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-educational-textbooks-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-educational-textbooks-ja-3.webp',
+      '/images/products/seedream-webp/zprintpro-educational-textbooks-ja-4.webp',
+      '/images/products/seedream-webp/zprintpro-educational-textbooks-ja-5.webp',
+    ],
+  },
+  seoImages: {
+    filename: { 'zh-hk': 'zprintpro-educational-textbooks-zh-hk-1.webp', en: 'zprintpro-educational-textbooks-en-1.webp', ja: 'zprintpro-educational-textbooks-ja-1.webp' },
+    alt: {
+      'zh-hk': '香港教科書印刷 80g雙膠紙 膠裝精裝',
+      en: 'Hong Kong Textbooks Printing 80g Offset Paper Perfect Bound',
+      ja: '香港教科書印刷 80gオフセット紙 無線綴じ',
+    },
+  },
     variables: {
       sizes: [
         { value: 'a4', label: 'A4 (210×297mm)', multiplier: 1 },
@@ -5904,15 +6079,7 @@ export const products: Product[] = [
         { value: 500, label: '500本', discount: 0.7 },
       ],
     },
-  seoImages: {
-    filename: { 'zh-hk': 'zprintpro-educational-textbooks-zh-hk.jpg', en: 'zprintpro-educational-textbooks-en.jpg', ja: 'zprintpro-educational-textbooks-ja.jpg' },
-    alt: {
-      'zh-hk': '香港教科書印刷印刷 80g–100g道林紙 膠裝或騎馬釘',
-      en: 'Hong Kong Textbooks Printing 80g–100g道林紙 膠裝或騎馬釘',
-      ja: '香港教科書印刷印刷 80g–100g道林紙 膠裝或騎馬釘',
     },
-  },
-  },
   // ===== 新增包裝盒產品（SEO重點布局） =====
   {
     id: 'PKG-007',
@@ -5946,16 +6113,39 @@ export const products: Product[] = [
     isHot: true,
     isNew: true,
     minQuantity: 100,
-    images: ['/images/hero-v21/gift-box.jpg'],
+    images: ['/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-1.webp'],
+  imagesByLocale: {
+    'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-4.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-5.webp',
+    ],
+    'en': [
+      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-en-3.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-en-4.webp',
+    ],
+    'ja': [
+      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-ja-3.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-ja-4.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-ja-5.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-ja-6.webp',
+    ],
+  },
   seoImages: {
-    filename: { 'zh-hk': 'zprintpro-packaging-magnetic-closure-gift-box-zh-hk.jpg', en: 'zprintpro-packaging-magnetic-closure-gift-box-en.jpg', ja: 'zprintpro-packaging-magnetic-closure-gift-box-ja.jpg' },
+    filename: { 'zh-hk': 'zprintpro-packaging-magnetic-closure-gift-box-zh-hk-1.webp', en: 'zprintpro-packaging-magnetic-closure-gift-box-en-1.webp', ja: 'zprintpro-packaging-magnetic-closure-gift-box-ja-1.webp' },
     alt: {
-      'zh-hk': '香港磁吸翻蓋禮盒印刷印刷 灰板裱面＋隱藏磁吸 燙金',
-      en: 'Hong Kong Magnetic Closure Gift Box Printing 灰板裱面＋隱藏磁吸 燙金',
-      ja: '香港磁吸翻蓋禮盒印刷印刷 灰板裱面＋隱藏磁吸 燙金',
+      'zh-hk': '香港磁吸翻蓋禮盒印刷 350g白卡紙 燙金Logo',
+      en: 'Hong Kong Magnetic Closure Gift Box Printing 350g White Card Foil Logo',
+      ja: '香港マグネット蓋ギフト箱印刷 350g白カード紙 箔押しロゴ',
     },
   },
-  },
+    },
   {
     id: 'PKG-008',
     sku_code: 'PKG-008',
@@ -5989,6 +6179,39 @@ export const products: Product[] = [
     isNew: true,
     minQuantity: 200,
     images: ['/images/products/cosmetic-boxes.jpg'],
+  imagesByLocale: {
+    'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-zh-hk-4.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-zh-hk-5.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-zh-hk-6.webp',
+    ],
+    'en': [
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-en-3.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-en-4.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-en-5.webp',
+    ],
+    'ja': [
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-ja-3.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-ja-4.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-ja-5.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-ja-6.webp',
+    ],
+  },
+  seoImages: {
+    filename: { 'zh-hk': 'zprintpro-packaging-electronics-packaging-box-zh-hk-1.webp', en: 'zprintpro-packaging-electronics-packaging-box-en-1.webp', ja: 'zprintpro-packaging-electronics-packaging-box-ja-1.webp' },
+    alt: {
+      'zh-hk': '香港電子產品包裝盒印刷 400g灰板紙 防靜電設計',
+      en: 'Hong Kong Electronics Packaging Box Printing 400g Grey Board Anti-static',
+      ja: '香港電子製品包装箱印刷 400gグレーボード 帯電防止',
+    },
+  },
     variables: {
       sizes: [
         { value: 'small', label: '小號(100×80×50mm)', multiplier: 1 },
@@ -6012,15 +6235,7 @@ export const products: Product[] = [
         { value: 1000, label: '1000個', discount: 0.7 },
       ],
     },
-  seoImages: {
-    filename: { 'zh-hk': 'zprintpro-packaging-electronics-packaging-box-zh-hk.jpg', en: 'zprintpro-packaging-electronics-packaging-box-en.jpg', ja: 'zprintpro-packaging-electronics-packaging-box-ja.jpg' },
-    alt: {
-      'zh-hk': '香港電子產品包裝盒定制印刷 1200g 灰板紙裱糊銅版紙 燙金／燙銀',
-      en: 'Hong Kong Electronics Packaging Box Printing 1200g 灰板紙裱糊銅版紙 燙金／燙銀',
-      ja: '香港電子產品包裝盒定制印刷 1200g 灰板紙裱糊銅版紙 燙金／燙銀',
     },
-  },
-  },
   {
     id: 'PKG-009',
     sku_code: 'PKG-009',
@@ -6053,7 +6268,39 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 300,
-    images: ['/images/hero-v21/kraft-bag.jpg'],
+    images: ['/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-1.webp'],
+  imagesByLocale: {
+    'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-4.webp',
+    ],
+    'en': [
+      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-en-3.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-en-4.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-en-5.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-en-6.webp',
+    ],
+    'ja': [
+      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-ja-3.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-ja-4.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-ja-5.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-ja-6.webp',
+    ],
+  },
+  seoImages: {
+    filename: { 'zh-hk': 'zprintpro-packaging-kraft-paper-packaging-box-zh-hk-1.webp', en: 'zprintpro-packaging-kraft-paper-packaging-box-en-1.webp', ja: 'zprintpro-packaging-kraft-paper-packaging-box-ja-1.webp' },
+    alt: {
+      'zh-hk': '香港牛皮紙包裝盒印刷 300g牛皮紙 環保材質',
+      en: 'Hong Kong Kraft Paper Packaging Box Printing 300g Kraft Paper Eco-friendly',
+      ja: '香港クラフト包装箱印刷 300gクラフト紙 エコ素材',
+    },
+  },
     variables: {
       sizes: [
         { value: 'small', label: '小號(100×80×50mm)', multiplier: 1 },
@@ -6077,15 +6324,7 @@ export const products: Product[] = [
         { value: 1000, label: '1000個', discount: 0.7 },
       ],
     },
-  seoImages: {
-    filename: { 'zh-hk': 'zprintpro-packaging-kraft-paper-packaging-box-zh-hk.jpg', en: 'zprintpro-packaging-kraft-paper-packaging-box-en.jpg', ja: 'zprintpro-packaging-kraft-paper-packaging-box-ja.jpg' },
-    alt: {
-      'zh-hk': '香港牛皮紙盒印刷定制印刷 300g–350g FSC 牛皮卡紙 燙黑',
-      en: 'Hong Kong Kraft Paper Packaging Box Printing 300g–350g FSC 牛皮卡紙 燙黑',
-      ja: '香港牛皮紙盒印刷定制印刷 300g–350g FSC 牛皮卡紙 燙黑',
     },
-  },
-  },
   {
     id: 'PKG-010',
     sku_code: 'PKG-010',
@@ -6118,16 +6357,39 @@ export const products: Product[] = [
     isHot: false,
     isNew: true,
     minQuantity: 200,
-    images: ['/images/hero-v21/gift-box.jpg'],
+    images: ['/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-zh-hk-1.webp'],
+  imagesByLocale: {
+    'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-zh-hk-4.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-zh-hk-5.webp',
+    ],
+    'en': [
+      '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-en-3.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-en-4.webp',
+    ],
+    'ja': [
+      '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-ja-3.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-ja-4.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-ja-5.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-ja-6.webp',
+    ],
+  },
   seoImages: {
-    filename: { 'zh-hk': 'zprintpro-packaging-drawer-slide-gift-box-zh-hk.jpg', en: 'zprintpro-packaging-drawer-slide-gift-box-en.jpg', ja: 'zprintpro-packaging-drawer-slide-gift-box-ja.jpg' },
+    filename: { 'zh-hk': 'zprintpro-packaging-drawer-slide-gift-box-zh-hk-1.webp', en: 'zprintpro-packaging-drawer-slide-gift-box-en-1.webp', ja: 'zprintpro-packaging-drawer-slide-gift-box-ja-1.webp' },
     alt: {
-      'zh-hk': '香港抽屜禮盒滑軌盒印刷印刷 1200g 灰板紙裱糊 157g 銅版紙 燙金／燙銀',
-      en: 'Hong Kong Drawer Slide Gift Box Printing 1200g 灰板紙裱糊 157g 銅版紙 燙金／燙銀',
-      ja: '香港抽屜禮盒滑軌盒印刷印刷 1200g 灰板紙裱糊 157g 銅版紙 燙金／燙銀',
+      'zh-hk': '香港抽屜式禮盒印刷 350g白卡紙 緞帶拉手',
+      en: 'Hong Kong Drawer Slide Gift Box Printing 350g White Card Ribbon Pull',
+      ja: '香港引き出し式ギフト箱印刷 350g白カード紙 リボン引手',
     },
   },
-  },
+    },
   // ===== 新增貼紙產品（SEO長尾詞覆盖） =====
   {
     id: 'ST-009',
@@ -6162,15 +6424,40 @@ export const products: Product[] = [
     isNew: true,
     minQuantity: 500,
     images: ['/images/products/transparent-stickers.jpg'],
+  imagesByLocale: {
+    'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-zh-hk-4.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-zh-hk-5.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-zh-hk-6.webp',
+    ],
+    'en': [
+      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-en-3.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-en-4.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-en-5.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-en-6.webp',
+    ],
+    'ja': [
+      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-ja-2.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-ja-3.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-ja-4.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-ja-5.webp',
+    ],
+  },
   seoImages: {
-    filename: { 'zh-hk': 'zprintpro-stickers-fruit-food-label-stickers-zh-hk.jpg', en: 'zprintpro-stickers-fruit-food-label-stickers-en.jpg', ja: 'zprintpro-stickers-fruit-food-label-stickers-ja.jpg' },
+    filename: { 'zh-hk': 'zprintpro-stickers-fruit-food-label-stickers-zh-hk-1.webp', en: 'zprintpro-stickers-fruit-food-label-stickers-en-1.webp', ja: 'zprintpro-stickers-fruit-food-label-stickers-ja-1.webp' },
     alt: {
-      'zh-hk': '香港水果貼紙食品標籤印刷印刷 食品級 BOPP／PE／PLA 模切',
-      en: 'Hong Kong Fruit & Food Label Stickers Printing 食品級 BOPP／PE／PLA 模切',
-      ja: '香港水果貼紙食品標籤印刷印刷 食品級 BOPP／PE／PLA 模切',
+      'zh-hk': '香港水果食品標籤貼紙印刷 防水材質 食品安全級',
+      en: 'Hong Kong Fruit Food Label Stickers Printing Waterproof Food-safe',
+      ja: '香港フルーツ食品ラベル印刷 防水素材 食品グレード',
     },
   },
-  },
+    },
 ];
 
 // 获取所有产品
