@@ -208,17 +208,17 @@ export default function CategoryPage({
                   unoptimized
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-black/30" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
               </>
             ) : (
               <div className="absolute inset-0 bg-gradient-to-r from-[#2873F5] via-[#3B82F6] to-[#1E5FD1]" />
             )}
             {/* Banner 内容 */}
             <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-8">
-              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3">
+              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 drop-shadow-lg">
                 {categoryName}
               </h1>
-              <p className="text-white/80 text-sm md:text-base mb-5">
+              <p className="text-white/90 text-sm md:text-base mb-5 drop-shadow-md">
                 {t.bannerTitle}
               </p>
               <a

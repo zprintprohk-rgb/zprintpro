@@ -708,8 +708,15 @@ export const products: Product[] = [
     isHot: true,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/transparent-stickers.jpg'],
+    images: ['/images/products/seedream-webp/zprintpro-stickers-transparent-stickers-zh-hk-1.webp'],
   imagesByLocale: {
+    'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-stickers-transparent-stickers-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-transparent-stickers-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-transparent-stickers-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-transparent-stickers-zh-hk-4.webp',
+      '/images/products/seedream-webp/zprintpro-stickers-transparent-stickers-zh-hk-5.webp',
+    ],
     'en': [
       '/images/products/seedream-webp/zprintpro-stickers-transparent-stickers-en.webp',
       '/images/products/seedream-webp/zprintpro-stickers-transparent-stickers-en-2.webp',
@@ -746,11 +753,11 @@ export const products: Product[] = [
       ],
     },
   seoImages: {
-    filename: { 'zh-hk': 'zprintpro-stickers-transparent-stickers-zh-hk.webp', en: 'zprintpro-stickers-transparent-stickers-en.webp', ja: 'zprintpro-stickers-transparent-stickers-ja.webp' },
+    filename: { 'zh-hk': 'zprintpro-stickers-transparent-stickers-zh-hk-1.webp', en: 'zprintpro-stickers-transparent-stickers-en.webp', ja: 'zprintpro-stickers-transparent-stickers-ja.webp' },
     alt: {
       'zh-hk': '香港透明貼紙印刷 透明 PET 覆膜（啞膜／光膜）',
-      en: 'Hong Kong Transparent Stickers Printing 透明 PET 覆膜（啞膜／光膜）',
-      ja: '香港透明貼紙印刷 透明 PET 覆膜（啞膜／光膜）',
+      en: 'Hong Kong Transparent Stickers Printing Clear PET Laminated',
+      ja: '香港透明ステッカー印刷 透明PET ラミネート',
     },
   },
   },

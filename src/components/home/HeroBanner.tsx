@@ -97,13 +97,13 @@ export function HeroBanner({ locale }: HeroBannerProps) {
                   unoptimized
                   priority={index === 0}
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-[#2873F5]/40 via-[#2873F5]/15 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent" />
                 <div className="absolute inset-0 flex flex-col justify-center px-8 md:px-14">
                   <span className="inline-flex items-center w-fit px-3 py-1 bg-[#F87314] text-white text-sm font-medium rounded-full mb-4">
                     {t.fromPrice} {slide.price}
                   </span>
-                  <h1 className="text-3xl md:text-5xl font-bold text-white mb-3 leading-tight">{slide.title}</h1>
-                  <p className="text-white/80 text-base md:text-lg mb-6 max-w-lg">{slide.subtitle}</p>
+                  <h1 className="text-3xl md:text-5xl font-bold text-white mb-3 leading-tight drop-shadow-lg">{slide.title}</h1>
+                  <p className="text-white/90 text-base md:text-lg mb-6 max-w-lg drop-shadow-md">{slide.subtitle}</p>
                   <div className="flex items-center gap-3">
                     <Link
                       href={`${localePrefix}${getQuoteHref(slide.href)}`}
