@@ -1,200 +1,279 @@
 import { Metadata } from 'next';
 import { Locale, siteConfig } from '@/lib/seo';
+import { JsonLd } from '@/components/JsonLd';
 
-interface AboutPageProps {
-  params: { locale: string };
-}
-
-const translations = {
-  'zh-hk': {
-    title: '關於我們 | 智印云 ZprintPro',
-    description: '智印云 ZprintPro 是香港領先的專業印刷服務供應商，致力於為企業和個人提供高品質、價格透明的印刷解決方案。',
-    h1: '關於智印云',
-    story: '品牌故事',
-    storyText: '智印云 ZprintPro 成立於香港觀塘，專注於為本地企業和個人提供一站式專業印刷服務。從2018年創立至今，我們已服務超過3,000家香港企業，包括餐飲、零售、教育、金融等多個行業。我們相信優質的印刷品是品牌傳播的基石，從設計到成品，每一個環節都力求完美。',
-    mission: '我們的使命',
-    missionText: '讓每一位客戶都能以合理的價格，獲得超出預期的印刷品質。我們致力於推動印刷行業的數碼化轉型，縮短交貨時間，提升產品品質，為香港企業的品牌建設貢獻力量。',
-    why: '為什麼選擇我們',
-    reasons: ['專業設計團隊支持', '300+ 種紙材選擇', '最快即日交貨', '免費送貨滿$500', '全程品質監控'],
-    timeline: '發展歷程',
-    timelineItems: [
-      { year: '2018', event: '智印云在香港觀塘成立，開始提供名片和傳單印刷服務' },
-      { year: '2019', event: '擴展產品線至貼紙、包裝盒和紙袋，服務客戶突破500家' },
-      { year: '2020', event: '引入海德堡印刷設備，建立數碼化色彩管理系統' },
-      { year: '2021', event: '推出24小時急件印刷服務，滿足香港快節奏商業需求' },
-      { year: '2022', event: '建立線上報價系統，客戶可即時獲取準確報價' },
-      { year: '2023', event: '服務企業客戶超過3,000家，拓展日本及海外市場' },
-      { year: '2024', event: '全新網站上線，支持三語言（繁中/英/日），提供更優質的用戶體驗' },
-    ],
-    stats: '核心數據',
-    statItems: [
-      { value: '3,000+', label: '服務企業' },
-      { value: '79', label: '產品種類' },
-      { value: '99.2%', label: '客戶滿意度' },
-      { value: '24h', label: '最快交貨' },
-    ],
-    team: '專業團隊',
-    teamText: '智印云擁有一支經驗豐富的專業團隊，包括資深印刷技師、平面設計師和客戶服務專員。我們的技術團隊平均擁有10年以上印刷行業經驗，熟悉各種印刷工藝和材料特性，能夠為客戶提供專業的建議和解決方案。',
-  },
-  en: {
-    title: 'About Us | ZprintPro',
-    description: 'ZprintPro is a leading professional printing service provider in Hong Kong, dedicated to delivering high-quality, transparently-priced printing solutions.',
-    h1: 'About ZprintPro',
-    story: 'Our Story',
-    storyText: 'ZprintPro was founded in Kwun Tong, Hong Kong, focusing on providing one-stop professional printing services for local businesses and individuals. Since 2018, we have served over 3,000 Hong Kong companies across catering, retail, education, finance, and more. We believe quality printing is the cornerstone of brand communication.',
-    mission: 'Our Mission',
-    missionText: 'To enable every client to obtain printing quality that exceeds expectations at a reasonable price. We are committed to driving digital transformation in the printing industry and contributing to Hong Kong business branding.',
-    why: 'Why Choose Us',
-    reasons: ['Professional design team', '300+ paper options', 'Same-day delivery available', 'Free shipping over $500', 'Full quality control'],
-    timeline: 'Our Journey',
-    timelineItems: [
-      { year: '2018', event: 'ZprintPro founded in Kwun Tong, Hong Kong, offering business card and flyer printing' },
-      { year: '2019', event: 'Expanded product line to stickers, boxes, and paper bags. Served 500+ clients.' },
-      { year: '2020', event: 'Introduced Heidelberg printing equipment and digital color management system' },
-      { year: '2021', event: 'Launched 24-hour rush printing service for Hong Kong\'s fast-paced business needs' },
-      { year: '2022', event: 'Built online quotation system for instant accurate pricing' },
-      { year: '2023', event: 'Served 3,000+ business clients, expanded to Japan and overseas markets' },
-      { year: '2024', event: 'New website launched supporting 3 languages (ZH/EN/JA) with enhanced UX' },
-    ],
-    stats: 'Key Metrics',
-    statItems: [
-      { value: '3,000+', label: 'Clients Served' },
-      { value: '79', label: 'Product Types' },
-      { value: '99.2%', label: 'Satisfaction Rate' },
-      { value: '24h', label: 'Fastest Delivery' },
-    ],
-    team: 'Our Team',
-    teamText: 'ZprintPro has an experienced professional team including senior printing technicians, graphic designers, and customer service specialists. Our technical team averages 10+ years in the printing industry, familiar with various printing processes and material characteristics.',
-  },
-  ja: {
-    title: '会社概要 | ZprintPro',
-    description: 'ZprintProは香港を拠点とするプロ印刷サービス提供者で、高品質で透明な価格の印刷ソリューションを提供しています。',
-    h1: 'ZprintProについて',
-    story: 'ブランドストーリー',
-    storyText: 'ZprintProは香港の観塘で設立され、地元企業や個人向けにワンストップのプロ印刷サービスを提供しています。2018年の創業以来、飲食、小売、教育、金融など、3,000社以上の香港企業をサポートしてきました。',
-    mission: '私たちの使命',
-    missionText: 'すべてのクライアントが適正な価格で期待を超える印刷品質を得られるようにすること。私たちは印刷業界のデジタル変革を推進し、香港企業のブランド構築に貢献しています。',
-    why: '選ばれる理由',
-    reasons: ['プロのデザインチーム', '300種類以上の用紙', '最短当日配送', '500ドル以上送料無料', '徹底した品質管理'],
-    timeline: '沿革',
-    timelineItems: [
-      { year: '2018', event: '香港観塘でZprintPro設立。名刺・チラシ印刷を開始。' },
-      { year: '2019', event: 'ステッカー・箱・紙袋へ製品ライン拡大。500社以上のクライアントを獲得。' },
-      { year: '2020', event: 'ハイデルベルグ印刷機導入。デジタルカラーマネジメントシステム構築。' },
-      { year: '2021', event: '24時間急行印刷サービス開始。香港の高速ビジネスニーズに対応。' },
-      { year: '2022', event: 'オンライン見積もりシステム構築。即時正確な価格提示を実現。' },
-      { year: '2023', event: '3,000社以上の企業クライアントをサポート。日本・海外市場へ拡大。' },
-      { year: '2024', event: '3言語対応（繁中・英・日）の新ウェブサイト開設。UXを大幅改善。' },
-    ],
-    stats: '主要データ',
-    statItems: [
-      { value: '3,000+', label: 'サービス企業' },
-      { value: '79', label: '製品種類' },
-      { value: '99.2%', label: '満足度' },
-      { value: '24h', label: '最短納期' },
-    ],
-    team: 'プロチーム',
-    teamText: 'ZprintProは、熟練した印刷技師、グラフィックデザイナー、カスタマーサービス専門家からなる経験豊富なチームを擁しています。技術チームの平均業界経験は10年以上で、様々な印刷工程と材料特性に精通しています。',
-  },
-};
-
-export async function generateStaticParams() {
+export function generateStaticParams() {
   return [{ locale: 'zh-hk' }, { locale: 'en' }, { locale: 'ja' }];
 }
 
-export async function generateMetadata({ params }: AboutPageProps): Promise<Metadata> {
-  const locale = params.locale as Locale;
-  const t = translations[locale];
+export async function generateMetadata({
+  params,
+}: {
+  params: { locale: Locale };
+}): Promise<Metadata> {
+  const t = translations[params.locale];
   return {
-    title: t.title,
-    description: t.description,
+    title: t.metaTitle,
+    description: t.metaDesc,
     alternates: {
-      canonical: `${siteConfig.url}/${locale}/about/`,
+      canonical: `${siteConfig.url}/${params.locale}/about/`,
       languages: {
         'zh-Hant-HK': `${siteConfig.url}/about/`,
         'en': `${siteConfig.url}/en/about/`,
         'ja-JP': `${siteConfig.url}/ja/about/`,
-        'x-default': `${siteConfig.url}/en/about/`,
       },
     },
   };
 }
 
-export default function AboutPage({ params }: AboutPageProps) {
-  const locale = params.locale as Locale;
+const translations = {
+  'zh-hk': {
+    metaTitle: '關於智印云 | 香港專業印刷服務 | 10年經驗服務1000+企業',
+    metaDesc: '智印云 ZPrintPro 扎根香港超過10年，專注為本地及全球企業提供高品質印刷服務。ISO 9001認證、FSC環保認證，累計服務1000+客戶。',
+    h1: '關於智印云 ZPrintPro',
+    subtitle: '扎根香港超過10年，專注高品質印刷服務',
+    storyTitle: '品牌故事',
+    story: `智印云 ZPrintPro 於2014年在香港成立，最初是一間專注於名片與宣傳單張的小型印刷工作室。創辦人憑藉對色彩管理的執著與對客戶需求的敏銳洞察，逐步將業務拓展至包裝盒、貼紙、海報、書籍等全方位印刷領域。
+
+十年來，我們見證了香港印刷行業從傳統柯式印刷向數碼印刷轉型的全過程。我們率先引入海德堡四色柯式印刷機與HP Indigo數碼印刷系統，建立了完整的ICC色彩管理流程，確保每一張成品都精準還原品牌色彩。我們累計服務超過1000家香港本地及海外企業，涵蓋金融、法律、餐飲、零售、教育及創意產業。`,
+    advantageTitle: '核心優勢',
+    advantages: [
+      { title: '品質保證', desc: 'ISO 9001質量管理體系認證，海德堡四色柯式印刷，ICC色彩管理，Delta E ≤3色彩誤差控制。從印前到印後，每個環節均有專人檢查。' },
+      { title: '快速交付', desc: '數碼印刷當日可取，柯式印刷3–5天交貨。順豐速遞覆蓋香港全區，大批量可安排專車直送。緊急訂單專人跟進，確保準時交付。' },
+      { title: '專業服務', desc: '免費設計諮詢、免費刀模設計、免費色彩校樣。專屬客戶經理一對一跟進，從報價到交付全程無憂。' },
+    ],
+    teamTitle: '專業團隊',
+    teams: [
+      { title: '創始人', desc: '擁有15年印刷行業經驗，曾服務於國際頂級印刷集團，精通色彩管理與印前工藝。' },
+      { title: '印前工程師', desc: '平均8年經驗，專注於AI／PDF文件檢查、刀模設計、ICC色彩配置與數碼打樣。' },
+      { title: '客戶服務團隊', desc: '流利粵語、英語、普通話及日語，提供24小時內回覆承諾，協助客戶解決從報價到售後的所有問題。' },
+    ],
+    certTitle: '資質認證',
+    certs: [
+      { name: 'ISO 9001', desc: '質量管理體系認證，確保每個生產環節標準化' },
+      { name: 'FSC 認證', desc: '森林管理委員會認證，環保紙張可追溯來源' },
+      { name: '大豆油墨', desc: '採用環保大豆油墨，VOC排放低於行業標準50%' },
+    ],
+    stats: { clients: '1000+', years: '10+', products: '79', satisfaction: '98%' },
+    statsLabels: { clients: '累計客戶', years: '行業經驗', products: 'SKU產品', satisfaction: '客戶滿意度' },
+  },
+  en: {
+    metaTitle: 'About ZPrintPro | Hong Kong Professional Printing | 10 Years Experience',
+    metaDesc: 'ZPrintPro has been rooted in Hong Kong for over 10 years, providing high-quality printing services. ISO 9001 certified, FSC certified, serving 1000+ clients.',
+    h1: 'About ZPrintPro',
+    subtitle: 'Over 10 years in Hong Kong, dedicated to high-quality printing',
+    storyTitle: 'Our Story',
+    story: `ZPrintPro was founded in Hong Kong in 2014, starting as a small printing studio focused on business cards and flyers. The founder's obsession with color management and keen insight into client needs gradually expanded the business into packaging, stickers, posters, books, and comprehensive printing services.
+
+Over the past decade, we have witnessed Hong Kong's printing industry transform from traditional offset to digital printing. We pioneered the introduction of Heidelberg 4-color offset presses and HP Indigo digital systems, establishing complete ICC color management workflows to ensure every piece precisely reproduces brand colors. We have served over 1,000 local and overseas businesses across finance, legal, F&B, retail, education, and creative industries.`,
+    advantageTitle: 'Core Advantages',
+    advantages: [
+      { title: 'Quality Assurance', desc: 'ISO 9001 certified, Heidelberg 4-color offset printing, ICC color management with Delta E ≤3 control. Every stage from prepress to postpress is inspected by dedicated personnel.' },
+      { title: 'Fast Delivery', desc: 'Digital printing available same-day; offset printing delivers in 3–5 days. SF Express covers all Hong Kong districts; large orders can be arranged for direct truck delivery.' },
+      { title: 'Professional Service', desc: 'Free design consultation, free die-cut design, free color proofing. Dedicated account managers provide one-on-one follow-up from quote to delivery.' },
+    ],
+    teamTitle: 'Our Team',
+    teams: [
+      { title: 'Founder', desc: '15 years of printing industry experience, formerly with top international printing groups, expert in color management and prepress processes.' },
+      { title: 'Prepress Engineers', desc: 'Average 8 years experience, specializing in AI/PDF file checking, die-cut design, ICC color profiling, and digital proofing.' },
+      { title: 'Customer Service', desc: 'Fluent in Cantonese, English, Mandarin, and Japanese. 24-hour response commitment, assisting clients from quote to after-sales.' },
+    ],
+    certTitle: 'Certifications',
+    certs: [
+      { name: 'ISO 9001', desc: 'Quality management system certification ensuring standardized production' },
+      { name: 'FSC Certified', desc: 'Forest Stewardship Council certified, eco paper with traceable sources' },
+      { name: 'Soy-based Inks', desc: 'Environmentally friendly soy inks with 50% lower VOC emissions' },
+    ],
+    stats: { clients: '1000+', years: '10+', products: '79', satisfaction: '98%' },
+    statsLabels: { clients: 'Clients Served', years: 'Years Experience', products: 'SKU Products', satisfaction: 'Satisfaction Rate' },
+  },
+  ja: {
+    metaTitle: 'ZPrintProについて | 香港プロ印刷サービス | 10年の実績',
+    metaDesc: '智印云 ZPrintProは香港で10年以上の歴史を持ち、高品質な印刷サービスを提供しています。ISO 9001認証、FSC認証、1000社以上のお客様にサービスを提供。',
+    h1: 'ZPrintProについて',
+    subtitle: '香港で10年以上、高品質印刷に専念',
+    storyTitle: 'ブランドストーリー',
+    story: `智印云 ZPrintProは2014年に香港で設立され、当初は名刺とチラシに特化した小さな印刷スタジオでした。創業者は色彩管理へのこだわりと顧客ニーズへの鋭い洞察力により、段階的にパッケージ、ステッカー、ポスター、書籍などの総合印刷領域へ事業を拡大しました。
+
+10年間、香港の印刷業界が伝統的なオフセットからデジタル印刷へと変貌する過程を目の当たりにしてきました。私たちはハイデルベルク4色オフセット印刷機とHP Indigoデジタル印刷システムを率先して導入し、ICCカラーマネジメントワークフローを構築しました。これにより、すべての製品がブランドカラーを正確に再現することを保証しています。金融、法律、飲食、小売、教育、クリエイティブ業界を含む、1000社以上の香港および海外企業にサービスを提供しています。`,
+    advantageTitle: '核心強み',
+    advantages: [
+      { title: '品質保証', desc: 'ISO 9001品質管理システム認証、ハイデルベルク4色オフセット印刷、ICCカラーマネジメント、Delta E ≤3の色彩誤差管理。印前から印後まで、各工程に専任者が検査を行います。' },
+      { title: '迅速な納品', desc: 'デジタル印刷は当日受取可能、オフセット印刷は3～5日で納品。顺丰速遞は香港全域をカバーし、大口注文は専用トラック直送も可能です。' },
+      { title: '専門的なサービス', desc: '無料デザイン相談、無料型抜き設計、無料カラープルーフ。専任のアカウントマネージャーが見積もりから納品までワンストップでサポートします。' },
+    ],
+    teamTitle: '専門チーム',
+    teams: [
+      { title: '創業者', desc: '印刷業界15年の経験。国際トップ印刷グループでの勤務経験があり、色彩管理と印前工程に精通。' },
+      { title: '印前エンジニア', desc: '平均8年の経験。AI／PDFファイルチェック、型抜き設計、ICCカラープロファイリング、デジタル校正を専門としています。' },
+      { title: 'カスタマーサービス', desc: '広東語、英語、北京語、日本語が堪能。24時間以内の返信を約束し、見積もりからアフターサービスまですべての問題を解決します。' },
+    ],
+    certTitle: '認証資格',
+    certs: [
+      { name: 'ISO 9001', desc: '品質管理システム認証。各生産工程の標準化を保証。' },
+      { name: 'FSC 認証', desc: '森林管理協議会認証。環境配慮型紙の溯源が可能。' },
+      { name: '大豆インク', desc: '環境配慮型大豆インクを採用。VOC排出量は業界標準の50%以下。' },
+    ],
+    stats: { clients: '1000+', years: '10+', products: '79', satisfaction: '98%' },
+    statsLabels: { clients: '累計顧客', years: '業界経験', products: 'SKU製品', satisfaction: '顧客満足度' },
+  },
+};
+
+export default function AboutPage({ params }: { params: { locale: Locale } }) {
+  const { locale } = params;
   const t = translations[locale];
 
+  // TeamMember Schema
+  const teamSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    name: t.metaTitle,
+    url: `${siteConfig.url}/${locale}/about/`,
+    mainEntity: {
+      '@type': 'Organization',
+      name: siteConfig.name,
+      url: siteConfig.url,
+      logo: siteConfig.logo,
+      foundingDate: '2014',
+      description: t.metaDesc,
+      member: [
+        {
+          '@type': 'Person',
+          name: locale === 'zh-hk' ? '創始人' : locale === 'ja' ? '創業者' : 'Founder',
+          jobTitle: locale === 'zh-hk' ? '創始人兼首席執行官' : locale === 'ja' ? '創業者兼CEO' : 'Founder & CEO',
+          worksFor: { '@type': 'Organization', name: siteConfig.name },
+        },
+        {
+          '@type': 'Person',
+          name: locale === 'zh-hk' ? '首席印前工程師' : locale === 'ja' ? '主任印前エンジニア' : 'Head of Prepress',
+          jobTitle: locale === 'zh-hk' ? '印前工程總監' : locale === 'ja' ? '印前工程ディレクター' : 'Prepress Engineering Director',
+          worksFor: { '@type': 'Organization', name: siteConfig.name },
+        },
+        {
+          '@type': 'Person',
+          name: locale === 'zh-hk' ? '客戶服務總監' : locale === 'ja' ? 'カスタマーサービスディレクター' : 'Customer Service Director',
+          jobTitle: locale === 'zh-hk' ? '客戶成功總監' : locale === 'ja' ? '顧客成功ディレクター' : 'Director of Customer Success',
+          worksFor: { '@type': 'Organization', name: siteConfig.name },
+        },
+      ],
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: locale === 'zh-hk' ? '印刷服務' : locale === 'ja' ? '印刷サービス' : 'Printing Services',
+        itemListElement: [
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Business Cards' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Stickers' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Packaging' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Flyers' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Posters' } },
+        ],
+      },
+    },
+  };
+
   return (
-    <main className="min-h-screen bg-gray-50 py-12">
-      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h1 className="text-3xl md:text-4xl font-bold text-[#333333] mb-3">{t.h1}</h1>
-        </div>
+    <>
+      <JsonLd data={teamSchema} />
+      <main className="min-h-screen bg-white">
+        {/* Hero */}
+        <section className="bg-gradient-to-br from-[#2873F5] to-[#1a5fd1] text-white py-16 md:py-24">
+          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 className="text-3xl md:text-5xl font-bold mb-4">{t.h1}</h1>
+            <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto">{t.subtitle}</p>
+          </div>
+        </section>
 
-        <div className="max-w-3xl mx-auto space-y-12">
-          <section className="bg-white rounded-xl shadow-sm border border-gray-100 p-8">
-            <h2 className="text-2xl font-bold text-[#333333] mb-4">{t.story}</h2>
-            <p className="text-gray-600 leading-relaxed">{t.storyText}</p>
-          </section>
-
-          <section className="bg-white rounded-xl shadow-sm border border-gray-100 p-8">
-            <h2 className="text-2xl font-bold text-[#333333] mb-4">{t.mission}</h2>
-            <p className="text-gray-600 leading-relaxed">{t.missionText}</p>
-          </section>
-
-          <section className="bg-white rounded-xl shadow-sm border border-gray-100 p-8">
-            <h2 className="text-2xl font-bold text-[#333333] mb-6">{t.why}</h2>
-            <div className="grid sm:grid-cols-2 gap-4">
-              {t.reasons.map((reason, idx) => (
-                <div key={idx} className="flex items-center gap-3 p-4 bg-gray-50 rounded-lg">
-                  <span className="w-8 h-8 bg-[#2873F5] text-white rounded-full flex items-center justify-center text-sm font-bold">{idx + 1}</span>
-                  <span className="text-gray-700 font-medium">{reason}</span>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          {/* 核心數據 */}
-          <section className="bg-gradient-to-br from-[#2873F5] to-[#1E5FD1] rounded-xl p-8 text-white">
-            <h2 className="text-2xl font-bold mb-6">{t.stats}</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              {t.statItems.map((stat, idx) => (
-                <div key={idx} className="text-center">
-                  <div className="text-3xl md:text-4xl font-bold mb-1">{stat.value}</div>
-                  <div className="text-white/80 text-sm">{stat.label}</div>
-                </div>
-              ))}
-            </div>
-          </section>
-
-          {/* 發展歷程 */}
-          <section className="bg-white rounded-xl shadow-sm border border-gray-100 p-8">
-            <h2 className="text-2xl font-bold text-[#333333] mb-6">{t.timeline}</h2>
-            <div className="relative">
-              <div className="absolute left-4 top-0 bottom-0 w-0.5 bg-gray-200" />
-              <div className="space-y-6">
-                {t.timelineItems.map((item, idx) => (
-                  <div key={idx} className="relative flex gap-4">
-                    <div className="relative z-10 w-8 h-8 rounded-full bg-[#2873F5] text-white flex items-center justify-center text-xs font-bold shrink-0">
-                      {item.year.slice(-2)}
-                    </div>
-                    <div>
-                      <div className="font-bold text-[#333333]">{item.year}</div>
-                      <div className="text-gray-600 text-sm">{item.event}</div>
-                    </div>
-                  </div>
-                ))}
+        {/* Stats Bar */}
+        <section className="py-10 bg-gray-50 border-b border-gray-100">
+          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+              <div>
+                <div className="text-3xl md:text-4xl font-bold text-[#2873F5]">{t.stats.clients}</div>
+                <div className="text-gray-600 text-sm mt-1">{t.statsLabels.clients}</div>
+              </div>
+              <div>
+                <div className="text-3xl md:text-4xl font-bold text-[#2873F5]">{t.stats.years}</div>
+                <div className="text-gray-600 text-sm mt-1">{t.statsLabels.years}</div>
+              </div>
+              <div>
+                <div className="text-3xl md:text-4xl font-bold text-[#2873F5]">{t.stats.products}</div>
+                <div className="text-gray-600 text-sm mt-1">{t.statsLabels.products}</div>
+              </div>
+              <div>
+                <div className="text-3xl md:text-4xl font-bold text-[#2873F5]">{t.stats.satisfaction}</div>
+                <div className="text-gray-600 text-sm mt-1">{t.statsLabels.satisfaction}</div>
               </div>
             </div>
-          </section>
+          </div>
+        </section>
 
-          {/* 專業團隊 */}
-          <section className="bg-white rounded-xl shadow-sm border border-gray-100 p-8">
-            <h2 className="text-2xl font-bold text-[#333333] mb-4">{t.team}</h2>
-            <p className="text-gray-600 leading-relaxed">{t.teamText}</p>
-          </section>
-        </div>
-      </div>
-    </main>
+        {/* Brand Story */}
+        <section className="py-16 md:py-20">
+          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#333333] mb-6 text-center">{t.storyTitle}</h2>
+              <div className="prose prose-lg text-gray-600 leading-relaxed whitespace-pre-line">
+                {t.story}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Core Advantages */}
+        <section className="py-16 md:py-20 bg-gray-50">
+          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#333333] mb-10 text-center">{t.advantageTitle}</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              {t.advantages.map((adv, i) => (
+                <div key={i} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                  <div className="w-12 h-12 bg-[#2873F5]/10 rounded-lg flex items-center justify-center mb-4">
+                    <span className="text-[#2873F5] text-xl font-bold">{i + 1}</span>
+                  </div>
+                  <h3 className="text-lg font-bold text-[#333333] mb-2">{adv.title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{adv.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Team */}
+        <section className="py-16 md:py-20">
+          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#333333] mb-10 text-center">{t.teamTitle}</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              {t.teams.map((team, i) => (
+                <div key={i} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 text-center">
+                  <div className="w-16 h-16 bg-gradient-to-br from-[#2873F5] to-[#1a5fd1] rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">
+                    {team.title.charAt(0)}
+                  </div>
+                  <h3 className="text-lg font-bold text-[#333333] mb-2">{team.title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{team.desc}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Certifications */}
+        <section className="py-16 md:py-20 bg-gray-50">
+          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-[#333333] mb-10 text-center">{t.certTitle}</h2>
+            <div className="grid md:grid-cols-3 gap-6">
+              {t.certs.map((cert, i) => (
+                <div key={i} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 flex items-start gap-4">
+                  <div className="w-10 h-10 bg-green-50 rounded-lg flex items-center justify-center shrink-0">
+                    <svg className="w-5 h-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                  </div>
+                  <div>
+                    <h3 className="text-base font-bold text-[#333333]">{cert.name}</h3>
+                    <p className="text-gray-600 text-sm mt-1">{cert.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </main>
+    </>
   );
 }

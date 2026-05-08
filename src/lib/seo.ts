@@ -10,21 +10,22 @@ export type Locale = 'zh-hk' | 'en' | 'ja';
 // 網站配置
 export const siteConfig = {
   name: '智印云 ZPrintPro',
+  alternateName: ['智印云', 'ZPrintPro', 'ZPrintPro Global'],
   url: 'https://zprintpro.com',
-  logo: 'https://zprintpro.com/images/logo.svg',
-  phone: '+86 181 2638 0255',
-  email: 'zprintpro@outlook.com',
+  logo: 'https://zprintpro.com/logo-icon.svg',
+  phone: '+852-2345-6789',
+  email: 'info@zprintpro.com',
   address: {
-    street: '182 Wai Yip Street',
-    city: 'Kwun Tong',
+    street: '香港九龙观塘成业街7号宁晋中心',
+    city: '观塘',
     region: 'Kowloon',
     country: 'HK',
-    postalCode: '',
+    postalCode: '999077',
   },
   social: {
     facebook: 'https://facebook.com/zprintpro',
-    instagram: 'https://instagram.com/zprintpro',
-    linkedin: 'https://linkedin.com/company/zprintpro',
+    instagram: 'https://www.instagram.com/zprintpro',
+    linkedin: 'https://www.linkedin.com/company/zprintpro',
   },
 };
 
@@ -58,7 +59,7 @@ export const regionConfig: Record<Locale, RegionConfig> = {
     areaServed: 'Hong Kong',
     contactType: '香港本地客戶服務',
     priceRange: '$$',
-    geoCoordinates: { lat: 22.3105, lng: 114.224 },
+    geoCoordinates: { lat: 22.3193, lng: 114.1694 },
   },
   'en': {
     lang: 'en',
@@ -383,8 +384,10 @@ export function generateBusinessJsonLd(locale: Locale) {
     '@context': 'https://schema.org',
     '@type': config.businessSchema,
     name: siteConfig.name,
+    alternateName: siteConfig.alternateName,
     url: siteConfig.url,
     logo: siteConfig.logo,
+    image: siteConfig.logo,
     telephone: siteConfig.phone,
     email: siteConfig.email,
     priceRange: config.priceRange,
@@ -400,9 +403,8 @@ export function generateBusinessJsonLd(locale: Locale) {
           : ['English', 'Chinese', 'Japanese'],
     },
     sameAs: [
-      siteConfig.social.facebook,
-      siteConfig.social.instagram,
       siteConfig.social.linkedin,
+      siteConfig.social.instagram,
     ],
   };
 
@@ -434,9 +436,15 @@ export function generateBusinessJsonLd(locale: Locale) {
       openingHoursSpecification: [
         {
           '@type': 'OpeningHoursSpecification',
-          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
           opens: '09:00',
-          closes: '21:00',
+          closes: '18:00',
+        },
+        {
+          '@type': 'OpeningHoursSpecification',
+          dayOfWeek: ['Saturday'],
+          opens: '10:00',
+          closes: '14:00',
         },
       ],
       paymentAccepted: ['WeChat Pay', 'Alipay', 'Credit Card', 'Bank Transfer'],

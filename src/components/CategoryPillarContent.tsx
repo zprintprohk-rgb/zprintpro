@@ -52,10 +52,10 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
 
   return (
     <section className="bg-white border-t">
-      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 md:py-16">
         
         {/* H2 主标题 */}
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-8 leading-tight">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-6 sm:mb-8 leading-snug sm:leading-tight break-words text-balance max-w-full">
           {data.h2}
         </h2>
         
@@ -94,12 +94,12 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
             {data.materialTable.subtitle && (
               <p className="text-gray-500 mb-4 text-sm md:text-base pl-5">{data.materialTable.subtitle}</p>
             )}
-            <div className="overflow-x-auto rounded-xl border border-gray-200">
-              <table className="w-full text-sm md:text-base">
+            <div className="overflow-x-auto rounded-xl border border-gray-200 -mx-1 sm:mx-0">
+              <table className="w-full min-w-[520px] sm:min-w-0 text-xs sm:text-sm md:text-base">
                 <thead>
                   <tr className="bg-gradient-to-r from-[#2873F5] to-[#1E5FD1] text-white">
                     {data.materialTable.columns.map((col, idx) => (
-                      <th key={idx} className="text-left px-4 py-3 font-semibold whitespace-nowrap">
+                      <th key={idx} className="text-left px-3 sm:px-4 py-2.5 sm:py-3 font-semibold whitespace-normal md:whitespace-nowrap align-top">
                         {col}
                       </th>
                     ))}
@@ -108,9 +108,9 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
                 <tbody>
                   {data.materialTable.rows.map((row, idx) => (
                     <tr key={idx} className={idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
-                      <td className="px-4 py-3 font-medium text-gray-900">{row.material}</td>
-                      <td className="px-4 py-3 text-gray-600">{row.features}</td>
-                      <td className="px-4 py-3 text-gray-600">{row.scenarios}</td>
+                      <td className="px-3 sm:px-4 py-2.5 sm:py-3 font-medium text-gray-900 align-top break-words max-w-[9rem] sm:max-w-none">{row.material}</td>
+                      <td className="px-3 sm:px-4 py-2.5 sm:py-3 text-gray-600 align-top break-words">{row.features}</td>
+                      <td className="px-3 sm:px-4 py-2.5 sm:py-3 text-gray-600 align-top break-words">{row.scenarios}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -176,9 +176,9 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
             <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 border-l-4 border-[#2873F5] pl-4">
               {data.buyingGuide.title || t.buyingGuide}
             </h3>
-            <div className="prose prose-lg max-w-none text-gray-600 space-y-4">
+            <div className="prose prose-sm sm:prose-base lg:prose-lg max-w-none text-gray-600 space-y-3 sm:space-y-4">
               {data.buyingGuide.paragraphs.map((p, idx) => (
-                <p key={idx} className="leading-relaxed text-sm md:text-base">{p}</p>
+                <p key={idx} className="leading-relaxed text-sm sm:text-base break-words">{p}</p>
               ))}
             </div>
           </div>
@@ -186,19 +186,21 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
         
         {/* ===== FAQ 区域 ===== */}
         {data.faq && data.faq.length > 0 && (
-          <div className="bg-gray-50 rounded-xl p-6 md:p-8">
-            <h3 className="text-xl md:text-2xl font-semibold text-gray-900 mb-6">
+          <div className="bg-gray-50 rounded-xl p-4 sm:p-6 md:p-8">
+            <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-900 mb-4 sm:mb-6">
               {t.faqTitle}
             </h3>
-            <div className="space-y-4">
+            <div className="space-y-3 sm:space-y-4">
               {data.faq.map((item, index) => (
                 <details
                   key={index}
                   className="group bg-white rounded-lg border border-gray-200 overflow-hidden"
                 >
-                  <summary className="flex items-center justify-between p-4 cursor-pointer hover:bg-gray-50 transition-colors">
-                    <span className="font-medium text-gray-900 pr-4">{item.q}</span>
-                    <span className="text-gray-400 group-open:rotate-180 transition-transform flex-shrink-0">
+                  <summary className="flex items-start gap-3 p-3.5 sm:p-4 cursor-pointer hover:bg-gray-50 transition-colors list-none [&::-webkit-details-marker]:hidden">
+                    <span className="min-w-0 flex-1 text-left font-medium text-gray-900 text-sm sm:text-base leading-snug break-words">
+                      {item.q}
+                    </span>
+                    <span className="text-gray-400 group-open:rotate-180 transition-transform flex-shrink-0 mt-0.5">
                       <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                         <path d="M4 6L8 10L12 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>

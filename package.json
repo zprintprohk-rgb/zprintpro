@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "sitemap": "node scripts/generate-sitemap.js",
-    "seo:check": "node scripts/check-category-seo-completeness.js"
+    "seo:check": "node scripts/check-category-seo-completeness.js",
+    "sku:check": "npx tsx scripts/check-product-sku-completeness.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.3.4",
