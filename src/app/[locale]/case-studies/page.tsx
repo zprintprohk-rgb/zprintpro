@@ -356,7 +356,7 @@ export default function CaseStudiesPage({ params }: { params: { locale: Locale }
       <JsonLd data={reviewSchema} />
       <main className="min-h-screen bg-white">
         {/* Hero */}
-        <section className="bg-gradient-to-br from-[#2873F5] to-[#1a5fd1] text-white py-16 md:py-24">
+        <section className="bg-gradient-to-r from-[#1e3a8a] to-[#06b6d4] text-white py-16 md:py-24">
           <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-3xl md:text-5xl font-bold mb-4">{t.h1}</h1>
             <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto">{t.subtitle}</p>
