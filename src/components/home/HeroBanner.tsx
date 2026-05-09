@@ -93,12 +93,12 @@ export function HeroBanner({ locale }: HeroBannerProps) {
                   src={slide.image}
                   alt={`智印云 ${slide.title}`}
                   fill
-                  className="object-cover"
+                  className="object-cover object-right"
                   unoptimized
                   priority={index === 0}
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent" />
-                <div className="absolute inset-0 flex flex-col justify-center px-8 md:px-14">
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                <div className="absolute inset-0 flex flex-col justify-start items-start pt-16 md:pt-20 px-8 md:px-14">
                   <span className="inline-flex items-center w-fit px-3 py-1 bg-[#F87314] text-white text-sm font-medium rounded-full mb-4">
                     {t.fromPrice} {slide.price}
                   </span>

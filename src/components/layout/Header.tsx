@@ -81,6 +81,14 @@ const translations = {
   },
 };
 
+const categoryHeroImages: Record<string, Record<string, string>> = {
+  'paper-bags': { 'zh-hk': '/images/hero/hero-kraft-bag-zh-hk.webp', 'en': '/images/hero/hero-kraft-bag-en.webp', 'ja': '/images/hero/hero-kraft-bag-ja.webp' },
+  'flyers': { 'zh-hk': '/images/hero/hero-flyer-zh-hk.webp', 'en': '/images/hero/hero-flyer-en.webp', 'ja': '/images/hero/hero-flyer-ja.webp' },
+  'stickers': { 'zh-hk': '/images/hero/hero-sticker-zh-hk.webp', 'en': '/images/hero/hero-sticker-en.webp', 'ja': '/images/hero/hero-sticker-ja.webp' },
+  'packaging': { 'zh-hk': '/images/hero/hero-gift-box-zh-hk.webp', 'en': '/images/hero/hero-gift-box-en.webp', 'ja': '/images/hero/hero-gift-box-ja.webp' },
+  'posters': { 'zh-hk': '/images/hero/hero-poster-zh-hk.webp', 'en': '/images/hero/hero-poster-en.webp', 'ja': '/images/hero/hero-poster-ja.webp' },
+};
+
 const categorySubItems: Record<string, string[]> = {
   'paper-bags': ['kraft-paper-bags', 'white-card-bags', 'gift-bags', 'eco-paper-bags', 'handle-bags', 'large-bags'],
   'flyers': ['a4-flyers', 'a5-flyers', 'double-sided-flyers', 'folded-leaflets', 'thick-paper-flyers', 'same-day-flyers'],
@@ -396,23 +404,29 @@ export function Header({ locale }: HeaderProps) {
                           <span className="text-[15px] font-bold text-gray-700">{locale === 'zh-hk' ? '熱門產品' : locale === 'en' ? 'Hot Products' : '人気製品'}</span>
                         </div>
                         <div className="border-b border-transparent" />
-                        <div className="flex-1 flex gap-4">
-                          {categorySubItems[catSlug]?.slice(0, 3).map((subSlug, idx) => {
-                            const tagText = idx < 2 ? (locale === 'zh-hk' ? '熱銷' : locale === 'en' ? 'Hot' : '人気') : (locale === 'zh-hk' ? '推薦' : locale === 'en' ? 'New' : '新着');
-                            return (
-                              <Link key={subSlug} href={`${localePrefix}/product/${subSlug}/`} className="block group flex-1 flex flex-col">
-                                <div className="flex-1 relative overflow-hidden rounded-t-lg">
-                                  <Image src={featuredImages[subSlug] || '/images/hero/hero-gift-box-zh-hk.webp'} alt={getSubItemName(subSlug)} fill className="object-cover group-hover:scale-105 transition-transform" unoptimized />
-                                  <span className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded">{tagText}</span>
-                                </div>
-                                <div className="pt-2 h-[60px] flex flex-col justify-center">
-                                  <p className="text-base font-medium text-gray-700 leading-tight text-center">{getSubItemName(subSlug)}</p>
-                                  <p className="text-[13px] text-gray-400 leading-tight mt-1.5 text-center">{featuredDescs[locale]?.[subSlug] || ''}</p>
-                                </div>
-                              </Link>
-                            );
-                          })}
-                        </div>
+                        {categoryHeroImages[catSlug] ? (
+                          <Link href={`${localePrefix}/category/${catSlug}/`} className="block group flex-1 relative overflow-hidden rounded-lg">
+                            <Image src={categoryHeroImages[catSlug][locale] || categoryHeroImages[catSlug]['zh-hk']} alt={t.categories[catSlug]} fill className="object-cover object-right group-hover:scale-105 transition-transform" unoptimized />
+                          </Link>
+                        ) : (
+                          <div className="flex-1 flex gap-4">
+                            {categorySubItems[catSlug]?.slice(0, 3).map((subSlug, idx) => {
+                              const tagText = idx < 2 ? (locale === 'zh-hk' ? '熱銷' : locale === 'en' ? 'Hot' : '人気') : (locale === 'zh-hk' ? '推薦' : locale === 'en' ? 'New' : '新着');
+                              return (
+                                <Link key={subSlug} href={`${localePrefix}/product/${subSlug}/`} className="block group flex-1 flex flex-col">
+                                  <div className="flex-1 relative overflow-hidden rounded-t-lg">
+                                    <Image src={featuredImages[subSlug] || '/images/hero/hero-gift-box-zh-hk.webp'} alt={getSubItemName(subSlug)} fill className="object-cover object-right group-hover:scale-105 transition-transform" unoptimized />
+                                    <span className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded">{tagText}</span>
+                                  </div>
+                                  <div className="pt-2 h-[60px] flex flex-col justify-center">
+                                    <p className="text-base font-medium text-gray-700 leading-tight text-center">{getSubItemName(subSlug)}</p>
+                                    <p className="text-[13px] text-gray-400 leading-tight mt-1.5 text-center">{featuredDescs[locale]?.[subSlug] || ''}</p>
+                                  </div>
+                                </Link>
+                              );
+                            })}
+                          </div>
+                        )}
                       </div>
                     </div>
                   )}
@@ -452,7 +466,7 @@ export function Header({ locale }: HeaderProps) {
                         {['hero-flyer-zh-hk.webp', 'hero-sticker-zh-hk.webp', 'hero-gift-box-zh-hk.webp'].map((img, idx) => (
                           <Link key={idx} href={`${localePrefix}/blog/`} className="block group flex-1 flex flex-col">
                             <div className="flex-1 relative overflow-hidden rounded-t-lg">
-                              <Image src={`/images/hero/${img}`} alt="" fill className="object-cover group-hover:scale-105 transition-transform" unoptimized />
+                              <Image src={`/images/hero/${img}`} alt="" fill className="object-cover object-right group-hover:scale-105 transition-transform" unoptimized />
                             </div>
                             <div className="pt-2 h-[50px] flex items-center justify-center">
                               <p className="text-base font-medium text-gray-700 leading-tight text-center">{knowledgeSubItems[locale]?.[idx] || ''}</p>
