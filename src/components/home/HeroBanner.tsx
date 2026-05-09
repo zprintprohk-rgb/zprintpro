@@ -83,7 +83,7 @@ export function HeroBanner({ locale }: HeroBannerProps) {
       <div className="max-w-[1320px] mx-auto">
         {/* Banner Slider - full width, no gap, no rounded corners */}
         <div className="relative overflow-hidden bg-white">
-          <div className="relative h-[400px]">
+          <div className="relative h-[300px] md:h-[400px]">
             {t.slides.map((slide, index) => (
               <div
                 key={index}

@@ -197,7 +197,7 @@ export default function CategoryPage({
       <main className="min-h-screen bg-gray-50">
         {/* Banner 区域 - 1320×400，紧贴导航栏，图片背景 */}
         <div className="max-w-[1320px] mx-auto">
-          <div className="relative w-full h-[200px] md:h-[250px] lg:h-[300px] overflow-hidden">
+          <div className="relative w-full h-[300px] overflow-hidden">
             {/* 背景图或渐变 */}
             {hasBannerImage ? (
               <>
@@ -205,7 +205,7 @@ export default function CategoryPage({
                   src={bannerImage}
                   alt={categoryName}
                   fill
-                  className="object-cover"
+                  className="object-cover object-right"
                   unoptimized
                   priority
                 />
