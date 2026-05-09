@@ -163,23 +163,24 @@ export default function CategoryPage({
   const t = translations[locale];
   const localePrefix = `/${locale}`;
 
-  // 分类 Banner 背景图映射
-  const categoryBannerImages: Record<string, string> = {
-    'paper-bags': '/images/hero/paper-bags.jpg',
-    'flyers': '/images/hero/flyers.jpg',
-    'stickers': '/images/hero/stickers.jpg',
-    'packaging': '/images/hero/packaging.jpg',
-    'posters': '/images/hero/posters.jpg',
-    'business-cards': '/images/hero/hero-sticker-zh-hk.webp',
-    'banners': '/images/hero/hero-poster-zh-hk.webp',
-    'books': '/images/hero/hero-gift-box-zh-hk.webp',
-    'menus': '/images/hero/hero-flyer-zh-hk.webp',
-    'envelopes': '/images/hero/hero-kraft-bag-zh-hk.webp',
-    'calendars': '/images/hero/hero-poster-zh-hk.webp',
-    'red-packets': '/images/hero/hero-gift-box-zh-hk.webp',
-    'educational': '/images/hero/hero-flyer-zh-hk.webp',
+  // 分类 Banner 背景图映射（按 locale 动态匹配 hero webp）
+  const categoryBannerMap: Record<string, string> = {
+    'paper-bags': 'hero-kraft-bag',
+    'flyers': 'hero-flyer',
+    'stickers': 'hero-sticker',
+    'packaging': 'hero-gift-box',
+    'posters': 'hero-poster',
+    'business-cards': 'hero-sticker',
+    'banners': 'hero-poster',
+    'books': 'hero-gift-box',
+    'menus': 'hero-flyer',
+    'envelopes': 'hero-kraft-bag',
+    'calendars': 'hero-poster',
+    'red-packets': 'hero-gift-box',
+    'educational': 'hero-flyer',
   };
-  const bannerImage = categoryBannerImages[slug];
+  const bannerBase = categoryBannerMap[slug];
+  const bannerImage = bannerBase ? `/images/hero/${bannerBase}-${locale}.webp` : undefined;
   const hasBannerImage = !!bannerImage;
 
   return (

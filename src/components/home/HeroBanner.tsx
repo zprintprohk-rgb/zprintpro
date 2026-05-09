@@ -83,7 +83,7 @@ export function HeroBanner({ locale }: HeroBannerProps) {
       <div className="max-w-[1320px] mx-auto">
         {/* Banner Slider - full width, no gap, no rounded corners */}
         <div className="relative overflow-hidden bg-white">
-          <div className="relative h-[400px]">
+          <div className="relative h-[400px] md:h-[500px] lg:h-[560px]">
             {t.slides.map((slide, index) => (
               <div
                 key={index}
@@ -99,21 +99,21 @@ export function HeroBanner({ locale }: HeroBannerProps) {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
                 <div className="absolute inset-0 flex flex-col justify-start items-start pt-16 md:pt-20 px-8 md:px-14">
-                  <span className="inline-flex items-center w-fit px-3 py-1 bg-[#F87314] text-white text-sm font-medium rounded-full mb-4">
+                  <span className="inline-flex items-center w-fit px-4 py-1.5 bg-gradient-to-r from-orange-500 to-red-500 text-white text-sm font-bold rounded-full mb-4 shadow-lg backdrop-blur-sm border border-white/20">
                     {t.fromPrice} {slide.price}
                   </span>
-                  <h1 className="text-3xl md:text-5xl font-bold text-white mb-3 leading-tight drop-shadow-lg">{slide.title}</h1>
-                  <p className="text-white/90 text-base md:text-lg mb-6 max-w-lg drop-shadow-md">{slide.subtitle}</p>
-                  <div className="flex items-center gap-3">
+                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 leading-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.6)]">{slide.title}</h1>
+                  <p className="text-white/90 text-base sm:text-lg md:text-xl mb-6 max-w-lg drop-shadow-md">{slide.subtitle}</p>
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4">
                     <Link
                       href={`${localePrefix}${getQuoteHref(slide.href)}`}
-                      className="inline-flex items-center justify-center px-6 py-3 bg-[#F87314] hover:bg-[#E56203] text-white font-semibold rounded-md transition-colors"
+                      className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold rounded-xl shadow-lg shadow-orange-500/30 transition-all hover:scale-105 hover:-translate-y-0.5 w-full sm:w-auto"
                     >
                       {t.cta} {t.ctaArrow}
                     </Link>
                     <Link
                       href={`${localePrefix}/category/business-cards/`}
-                      className="inline-flex items-center justify-center px-6 py-3 bg-transparent border border-white text-white font-medium rounded-md hover:bg-white/10 transition-colors"
+                      className="inline-flex items-center justify-center px-6 py-3 bg-transparent border-2 border-white/80 text-white font-medium rounded-xl hover:bg-white hover:text-gray-900 transition-colors w-full sm:w-auto"
                     >
                       {t.browseAll}
                     </Link>
@@ -126,14 +126,14 @@ export function HeroBanner({ locale }: HeroBannerProps) {
           {/* Left/Right Arrows */}
           <button
             onClick={goToPrev}
-            className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/20 hover:bg-white/40 backdrop-blur-sm rounded-full flex items-center justify-center text-white transition-colors z-10"
+            className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/20 hover:bg-white/40 hover:scale-110 backdrop-blur-sm rounded-full flex items-center justify-center text-white transition-all z-10"
             aria-label="Previous slide"
           >
             <ChevronLeft className="w-6 h-6" />
           </button>
           <button
             onClick={goToNext}
-            className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/20 hover:bg-white/40 backdrop-blur-sm rounded-full flex items-center justify-center text-white transition-colors z-10"
+            className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/20 hover:bg-white/40 hover:scale-110 backdrop-blur-sm rounded-full flex items-center justify-center text-white transition-all z-10"
             aria-label="Next slide"
           >
             <ChevronRight className="w-6 h-6" />
@@ -145,7 +145,7 @@ export function HeroBanner({ locale }: HeroBannerProps) {
               <button
                 key={index}
                 onClick={() => setCurrentSlide(index)}
-                className={`w-2.5 h-2.5 rounded-full transition-colors ${index === currentSlide ? 'bg-white' : 'bg-white/50 hover:bg-white/70'}`}
+                className={`rounded-full transition-all duration-300 ${index === currentSlide ? 'w-6 md:w-8 h-2 md:h-2.5 bg-orange-500 shadow-lg shadow-orange-500/50' : 'w-2 md:w-2.5 h-2 md:h-2.5 bg-white/50 hover:bg-white/70'}`}
               />
             ))}
           </div>
