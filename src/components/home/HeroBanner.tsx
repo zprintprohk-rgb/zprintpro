@@ -98,25 +98,27 @@ export function HeroBanner({ locale }: HeroBannerProps) {
                   priority={index === 0}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-                <div className="absolute inset-0 flex flex-col justify-start items-start pt-16 md:pt-20 px-8 md:px-14">
-                  <span className="inline-flex items-center w-fit px-4 py-1.5 bg-gradient-to-r from-orange-500 to-red-500 text-white text-sm font-bold rounded-full mb-4 shadow-lg backdrop-blur-sm border border-white/20">
-                    {t.fromPrice} {slide.price}
-                  </span>
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-3 leading-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.6)]">{slide.title}</h1>
-                  <p className="text-white/90 text-base sm:text-lg md:text-xl mb-6 max-w-lg drop-shadow-md">{slide.subtitle}</p>
-                  <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4">
-                    <Link
-                      href={`${localePrefix}${getQuoteHref(slide.href)}`}
-                      className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold rounded-xl shadow-lg shadow-orange-500/30 transition-all hover:scale-105 hover:-translate-y-0.5 w-full sm:w-auto"
-                    >
-                      {t.cta} {t.ctaArrow}
-                    </Link>
-                    <Link
-                      href={`${localePrefix}/category/business-cards/`}
-                      className="inline-flex items-center justify-center px-6 py-3 bg-transparent border-2 border-white/80 text-white font-medium rounded-xl hover:bg-white hover:text-gray-900 transition-colors w-full sm:w-auto"
-                    >
-                      {t.browseAll}
-                    </Link>
+                <div className="absolute inset-0 flex flex-col justify-start items-start pt-12 md:pt-16 px-6 md:px-10">
+                  <div className="bg-black/40 backdrop-blur-md rounded-2xl p-5 md:p-6 max-w-md">
+                    <span className="inline-flex items-center w-fit px-4 py-1.5 bg-gradient-to-r from-orange-500 to-red-500 text-white text-sm font-bold rounded-full mb-3 shadow-lg backdrop-blur-sm border border-white/20">
+                      {t.fromPrice} {slide.price}
+                    </span>
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2 leading-tight drop-shadow-[0_2px_10px_rgba(0,0,0,0.6)]">{slide.title}</h1>
+                    <p className="text-white/90 text-base sm:text-lg mb-5 max-w-md drop-shadow-md">{slide.subtitle}</p>
+                    <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4">
+                      <Link
+                        href={`${localePrefix}${getQuoteHref(slide.href)}`}
+                        className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold rounded-xl shadow-lg shadow-orange-500/30 transition-all hover:scale-105 hover:-translate-y-0.5 w-full sm:w-auto"
+                      >
+                        {t.cta} {t.ctaArrow}
+                      </Link>
+                      <Link
+                        href={`${localePrefix}/category/business-cards/`}
+                        className="inline-flex items-center justify-center px-6 py-3 bg-transparent border-2 border-white/80 text-white font-medium rounded-xl hover:bg-white hover:text-gray-900 transition-colors w-full sm:w-auto"
+                      >
+                        {t.browseAll}
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
