@@ -93,9 +93,9 @@ export default function ProductPage({
   
   // 面包屑数据
   const breadcrumbItems = [
-    { name: locale === 'zh-hk' ? '首頁' : locale === 'en' ? 'Home' : 'ホーム', url: `/${locale}/` },
-    { name: categoryName, url: `/${locale}/category/${product.category_slug}/` },
-    { name: productTitle, url: `/${locale}/product/${slug}/` },
+    { name: locale === 'zh-hk' ? '首頁' : locale === 'en' ? 'Home' : 'ホーム', url: `https://zprintpro.com/${locale}/` },
+    { name: categoryName, url: `https://zprintpro.com/${locale}/category/${product.category_slug}/` },
+    { name: productTitle, url: `https://zprintpro.com/${locale}/product/${slug}/` },
   ];
   
   // 核心产品 SEO 数据
