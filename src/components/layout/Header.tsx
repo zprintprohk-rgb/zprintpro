@@ -274,7 +274,7 @@ export function Header({ locale }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState('');
-  const pathname = usePathname();
+  const pathname = usePathname() || '';
   const t = translations[locale];
   const localePrefix = `/${locale}`;
 

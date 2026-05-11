@@ -72,7 +72,7 @@ const translations = {
 
 export function CategorySidebar({ locale, currentCategorySlug }: CategorySidebarProps) {
   const t = translations[locale];
-  const pathname = usePathname();
+  const pathname = usePathname() || '';
   const localePrefix = `/${locale}`;
 
   // 计算每个分类的SKU数量

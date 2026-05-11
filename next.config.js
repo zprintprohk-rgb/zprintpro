@@ -8,13 +8,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  redirects: async () => [
-    {
-      source: '/',
-      destination: '/zh-hk/',
-      permanent: true,
-    },
-  ],
+  // 根路径重定向由 Cloudflare Pages _redirects 文件处理
+  // 静态导出模式下 redirects 不生效，移除避免配置冲突
   webpack: (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,

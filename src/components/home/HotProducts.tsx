@@ -130,7 +130,7 @@ function ProductImage({ src, alt }: { src: string; alt: string }) {
 export function HotProducts({ locale }: HotProductsProps) {
   const t = translations[locale];
   const localePrefix = `/${locale}`;
-  const pathname = usePathname();
+  const pathname = usePathname() || '';
 
   return (
     <section className="pt-4 pb-6 bg-gray-50">
