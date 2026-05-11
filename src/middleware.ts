@@ -8,6 +8,13 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 
 export function middleware(request: NextRequest) {
+  const host = request.headers.get('host') || '';
+  if (host.startsWith('www.')) {
+    const newUrl = new URL(request.url);
+    newUrl.host = host.replace('www.', '');
+    return NextResponse.redirect(newUrl, 301);
+  }
+
   const { pathname } = request.nextUrl;
 
   // 排除静态文件、API、_next 内部路径
