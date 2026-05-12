@@ -21,6 +21,7 @@ interface FooterProps {
 const translations = {
   'zh-hk': {
     companyDesc: '智印云 ZPrintPro 是全球智能印刷定制平台，提供AI智能報價、在線文件上傳、Airwallex安全支付。從貼紙到包裝，30秒報價，72小時全球交付。',
+    serviceArea: '香港本地印刷服務',
     phone: '+86 181 2638 0255',
     email: 'zprintpro@outlook.com',
     address: '香港九龍觀塘偉業街182號 成運工業大廈',
@@ -71,6 +72,7 @@ const translations = {
   },
   en: {
     companyDesc: 'ZPrintPro is a global smart printing platform offering AI instant quotes, online file upload, and Airwallex secure payment. From stickers to packaging, get a quote in 30 seconds, delivered globally in 72 hours.',
+    serviceArea: 'Shipping & printing services for US, UK, and Australia',
     phone: '+86 181 2638 0255',
     email: 'zprintpro@outlook.com',
     address: '182 Wai Yip Street, Kwun Tong, Kowloon, Hong Kong',
@@ -121,6 +123,7 @@ const translations = {
   },
   ja: {
     companyDesc: 'ZPrintProはグローバルスマート印刷プラットフォームです。AI即時見積、オンラインファイルアップロード、Airwallex安全決済を提供。ステッカーからパッケージングまで、30秒で見積もり、72時間でグローバル配送。',
+    serviceArea: '香港を含むアジア圏印刷サービス',
     phone: '+86 181 2638 0255',
     email: 'zprintpro@outlook.com',
     address: '香港九龍観塘偉業街182号 成運工業ビル',
@@ -205,6 +208,15 @@ export function Footer({ locale }: FooterProps) {
                 <Mail className="w-4 h-4" />
                 <span className="text-sm">{t.email}</span>
               </a>
+              {/* Service Area - Only show for English version */}
+              {locale === 'en' && t.serviceArea && (
+                <div className="flex items-center gap-2 text-gray-400 mt-3">
+                  <svg className="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                  </svg>
+                  <span className="text-sm">{t.serviceArea}</span>
+                </div>
+              )}
             </div>
           </div>
 

@@ -291,10 +291,10 @@ export default function ProductPage({
                     {locale === 'zh-hk' ? product.price_range.split('-')[0] : convertPriceRangeString(product.price_range, locale, product.category_slug, product.slug).split('-')[0]}
                   </span>
                   <span className="text-sm text-gray-400">
-                    {product.price_range.includes('/100') ? (locale === 'zh-hk' ? '/100張起' : locale === 'en' ? '/100pcs From' : '/100枚から') : product.price_range.includes('/個') ? (locale === 'zh-hk' ? '/個起' : locale === 'en' ? '/pc From' : '/個から') : (locale === 'zh-hk' ? '/張起' : locale === 'en' ? '/pc From' : '/枚から')}
+                    {locale === 'zh-hk' ? (product.price_range.includes('/100') ? '/100張起' : product.price_range.includes('/個') ? '/個起' : '/張起') : locale === 'en' ? 'From' : (product.price_range.includes('/100') ? '/100枚から' : '/個から')}
                   </span>
                   <span className="text-xs text-gray-400 ml-1">
-                    {locale === 'zh-hk' ? `完整價格 ${product.price_range}` : locale === 'en' ? `Full price ${convertPriceRangeString(product.price_range, locale, product.category_slug, product.slug)}` : `価格 ${convertPriceRangeString(product.price_range, locale, product.category_slug, product.slug)}`}
+                    {locale === 'zh-hk' ? `完整價格 ${product.price_range}` : locale === 'en' ? `Full price: ${convertPriceRangeString(product.price_range, locale, product.category_slug, product.slug)}` : `価格 ${convertPriceRangeString(product.price_range, locale, product.category_slug, product.slug)}`}
                   </span>
                 </div>
                 {locale !== 'zh-hk' && (

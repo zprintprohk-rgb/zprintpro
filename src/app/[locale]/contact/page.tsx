@@ -86,7 +86,7 @@ export async function generateMetadata({ params }: ContactPageProps): Promise<Me
         'zh-Hant-HK': `${siteConfig.url}/contact/`,
         'en': `${siteConfig.url}/en/contact/`,
         'ja-JP': `${siteConfig.url}/ja/contact/`,
-        'x-default': `${siteConfig.url}/en/contact/`,
+        'x-default': `${siteConfig.url}/zh-hk/contact/`,
       },
     },
   };

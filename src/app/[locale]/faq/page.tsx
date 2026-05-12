@@ -107,7 +107,7 @@ export async function generateMetadata({ params }: FaqPageProps): Promise<Metada
         'zh-Hant-HK': `${siteConfig.url}/faq/`,
         'en': `${siteConfig.url}/en/faq/`,
         'ja-JP': `${siteConfig.url}/ja/faq/`,
-        'x-default': `${siteConfig.url}/en/faq/`,
+        'x-default': `${siteConfig.url}/zh-hk/faq/`,
       },
     },
   };

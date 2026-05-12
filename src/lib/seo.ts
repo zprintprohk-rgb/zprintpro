@@ -121,7 +121,7 @@ export function generateHomeMetadata(locale: Locale): Metadata {
         'zh-Hant-HK': `${siteConfig.url}/zh-hk/`,
         'en': `${siteConfig.url}/en/`,
         'ja-JP': `${siteConfig.url}/ja/`,
-        'x-default': `${siteConfig.url}/en/`,
+        'x-default': `${siteConfig.url}/zh-hk/`,
       },
     },
     openGraph: {
@@ -278,7 +278,7 @@ export function generateCategoryMetadata(locale: Locale, categoryName: string = 
         'zh-Hant-HK': `${siteConfig.url}/zh-hk/category/${slug}/`,
         'en': `${siteConfig.url}/en/category/${slug}/`,
         'ja-JP': `${siteConfig.url}/ja/category/${slug}/`,
-        'x-default': `${siteConfig.url}/en/category/${slug}/`,
+        'x-default': `${siteConfig.url}/zh-hk/category/${slug}/`,
       },
     },
     openGraph: {
@@ -344,7 +344,7 @@ export function generateProductMetadata(
         'zh-Hant-HK': `${siteConfig.url}/zh-hk/product/${slug}/`,
         'en': `${siteConfig.url}/en/product/${slug}/`,
         'ja-JP': `${siteConfig.url}/ja/product/${slug}/`,
-        'x-default': `${siteConfig.url}/en/product/${slug}/`,
+        'x-default': `${siteConfig.url}/zh-hk/product/${slug}/`,
       },
     },
     openGraph: {
@@ -654,13 +654,13 @@ export function generateQuotePageMetadata(locale: Locale): Metadata {
         'zh-Hant-HK': `${siteConfig.url}/zh-hk/quote`,
         'en': `${siteConfig.url}/en/quote`,
         'ja-JP': `${siteConfig.url}/ja/quote`,
-        'x-default': `${siteConfig.url}/en/quote`,
+        'x-default': `${siteConfig.url}/zh-hk/quote`,
       },
     },
   };
 }
 
-// Hreflang 標籤生成（修正：ja→ja-JP，x-default→en）
+// Hreflang 標籤生成（x-default→zh-hk：香港是主市場，未匹配語言的用戶先看中文版）
 export function generateHreflangTags(path: string = '') {
   const basePath = path.replace(/^\//, '');
   const prefix = basePath ? `/${basePath}` : '';
@@ -668,6 +668,6 @@ export function generateHreflangTags(path: string = '') {
     { lang: 'zh-Hant-HK', url: `${siteConfig.url}${prefix}` },
     { lang: 'en', url: `${siteConfig.url}/en${prefix}` },
     { lang: 'ja-JP', url: `${siteConfig.url}/ja${prefix}` },
-    { lang: 'x-default', url: `${siteConfig.url}/en${prefix}` },
+    { lang: 'x-default', url: `${siteConfig.url}/zh-hk${prefix}` },
   ];
 }

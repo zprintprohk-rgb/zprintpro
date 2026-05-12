@@ -50,7 +50,7 @@ export function RegionalCta({ locale, productSlug, className = '' }: RegionalCta
 
   const text = {
     'zh-hk': '立即獲取報價',
-    'en': 'Get a Free Quote',
+    'en': 'Get Instant Quote',
     'ja': '無料お見積もり',
   }[locale];
 

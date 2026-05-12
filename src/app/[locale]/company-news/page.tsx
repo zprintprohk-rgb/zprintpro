@@ -83,7 +83,7 @@ export async function generateMetadata({ params }: CompanyNewsPageProps): Promis
         'zh-Hant-HK': `${siteConfig.url}/company-news/`,
         'en': `${siteConfig.url}/en/company-news/`,
         'ja-JP': `${siteConfig.url}/ja/company-news/`,
-        'x-default': `${siteConfig.url}/en/company-news/`,
+        'x-default': `${siteConfig.url}/zh-hk/company-news/`,
       },
     },
   };

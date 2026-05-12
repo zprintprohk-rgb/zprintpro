@@ -443,7 +443,7 @@ const CATEGORY_TIER_MULTIPLIERS: Record<string, { en: number; ja: number }> = {
 
 const BASE_EXCHANGE_RATES: Record<Locale, { rate: number; symbol: string }> = {
   'zh-hk': { rate: 1,      symbol: 'HK$' },
-  'en':    { rate: 0.128,  symbol: 'US$' },   // 1 HKD = 0.128 USD
+  'en':    { rate: 0.128,  symbol: 'USD $' },   // 1 HKD = 0.128 USD
   'ja':    { rate: 19.5,   symbol: '¥' },     // 1 HKD = 19.5 JPY
 };
 

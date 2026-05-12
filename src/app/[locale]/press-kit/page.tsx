@@ -162,7 +162,7 @@ export async function generateMetadata({ params }: PressKitPageProps): Promise<M
         'zh-Hant-HK': `${siteConfig.url}/press-kit/`,
         'en': `${siteConfig.url}/en/press-kit/`,
         'ja-JP': `${siteConfig.url}/ja/press-kit/`,
-        'x-default': `${siteConfig.url}/en/press-kit/`,
+        'x-default': `${siteConfig.url}/zh-hk/press-kit/`,
       },
     },
   };
