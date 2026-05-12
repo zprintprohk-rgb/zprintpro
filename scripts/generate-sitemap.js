@@ -140,7 +140,8 @@ ${urls.map(url => `  <url>
     <priority>${url.priority.toFixed(1)}</priority>
     ${LANGUAGES.map(l => {
       const lPath = l === 'zh-hk' ? '' : `/${l}`;
-      const href = url.loc.replace(langPath, lPath);
+      const relativePath = url.loc.substring(`${SITE_URL}${langPath}`.length);
+      const href = `${SITE_URL}${lPath}${relativePath}`;
       return `<xhtml:link rel="alternate" hreflang="${l === 'zh-hk' ? 'zh-HK' : l}" href="${href}" />`;
     }).join('\n    ')}
   </url>`).join('\n')}
