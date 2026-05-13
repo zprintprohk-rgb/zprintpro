@@ -49,7 +49,7 @@ export function RelatedProducts({ currentProduct, locale }: RelatedProductsProps
           >
             <div className="aspect-square bg-gray-100">
               <img
-                src={product.imagesByLocale?.[locale]?.[0] || product.images[0] || '/images/placeholder.jpg'}
+                src={product.imagesByLocale?.[locale]?.[0] || '/images/placeholder.jpg'}
                 alt={getProductImageAlt(product, locale)}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform"
               />

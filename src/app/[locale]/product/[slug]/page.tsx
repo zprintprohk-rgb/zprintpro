@@ -103,7 +103,7 @@ export default function ProductPage({
   const productSeo = getProductSeo(slug);
 
   // JSON-LD结构化数据
-  const productJsonLd = generateProductJsonLd(product.name, product.description, product.imagesByLocale?.[locale]?.[0] || product.images[0] || '', product.slug, product.basePrice);
+  const productJsonLd = generateProductJsonLd(product.name, product.description, product.imagesByLocale?.[locale]?.[0] || '/images/placeholder.jpg', product.slug, product.basePrice);
   const businessJsonLd = generateBusinessJsonLd(locale);
   const breadcrumbJsonLd = generateBreadcrumbJsonLd(breadcrumbItems);
 
