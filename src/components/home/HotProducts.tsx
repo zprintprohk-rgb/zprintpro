@@ -234,7 +234,7 @@ export function HotProducts({ locale }: HotProductsProps) {
               {hotProducts.map((product, index) => {
                 const productName = getProductTitle(product, locale);
                 const productDesc = getProductDescription(product, locale);
-                const imageSrc = product.imagesByLocale?.[locale]?.[0] || product.images?.[0] || '';
+                const imageSrc = product.imagesByLocale?.[locale]?.[0] || '/images/placeholder.jpg';
                 return (
                   <div
                     key={product.sku_code}

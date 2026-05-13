@@ -44,7 +44,7 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
 
   const fallback = categoryFallbacks[product.category] || { icon: Package, bgColor: 'bg-gray-50', iconColor: 'text-gray-500' };
   const FallbackIcon = fallback.icon;
-  const imageSrc = product.imagesByLocale?.[locale]?.[0] || product.images?.[0] || '';
+  const imageSrc = product.imagesByLocale?.[locale]?.[0] || '/images/placeholder.jpg';
   const hasImage = imageSrc && !imgError;
 
   const getName = () => {

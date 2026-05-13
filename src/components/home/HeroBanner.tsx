@@ -23,11 +23,11 @@ const translations = {
     browseAll: '瀏覽全部產品',
     fromPrice: '低至',
     slides: [
-      { title: '專業牛皮紙袋印刷', subtitle: '環保材質，堅固耐用，適合零售外賣', price: 'HK$1.2起', image: '/images/hero/hero-kraft-bag-zh-hk.webp', href: '/product/kraft-paper-bags/', gradient: 'from-orange-500/95 via-red-500/80 to-transparent' },
-      { title: 'A4宣傳單張印刷', subtitle: '彩色印刷，即日可取，宣傳首選', price: 'HK$0.3起', image: '/images/hero/hero-flyer-zh-hk.webp', href: '/product/a4-flyers/', gradient: 'from-blue-600/95 via-cyan-500/80 to-transparent' },
-      { title: '防水貼紙印刷', subtitle: '耐用材質，多種形狀，適用於任何表面', price: 'HK$0.5起', image: '/images/hero/hero-sticker-zh-hk.webp', href: '/product/waterproof-stickers/', gradient: 'from-pink-500/95 via-purple-500/80 to-transparent' },
-      { title: '包裝盒定制', subtitle: '精緻包裝，提升品牌形象', price: 'HK$5起', image: '/images/hero/hero-gift-box-zh-hk.webp', href: '/product/gift-boxes/', gradient: 'from-amber-500/95 via-orange-500/80 to-transparent' },
-      { title: '海報定制印刷', subtitle: '大圖輸出，色彩鮮豔，宣傳利器', price: 'HK$15起', image: '/images/hero/hero-poster-zh-hk.webp', href: '/product/a2-posters/', gradient: 'from-emerald-500/95 via-teal-500/80 to-transparent' },
+      { title: '專業牛皮紙袋印刷', subtitle: '環保材質，堅固耐用，適合零售外賣', price: 'HK$1.2起', image: '/images/hero/hero-kraft-bag-zh-hk.webp', href: '/product/kraft-paper-bags/' },
+      { title: 'A4宣傳單張印刷', subtitle: '彩色印刷，即日可取，宣傳首選', price: 'HK$0.3起', image: '/images/hero/hero-flyer-zh-hk.webp', href: '/product/a4-flyers/' },
+      { title: '防水貼紙印刷', subtitle: '耐用材質，多種形狀，適用於任何表面', price: 'HK$0.5起', image: '/images/hero/hero-sticker-zh-hk.webp', href: '/product/waterproof-stickers/' },
+      { title: '包裝盒定制', subtitle: '精緻包裝，提升品牌形象', price: 'HK$5起', image: '/images/hero/hero-gift-box-zh-hk.webp', href: '/product/gift-boxes/' },
+      { title: '海報定制印刷', subtitle: '大圖輸出，色彩鮮豔，宣傳利器', price: 'HK$15起', image: '/images/hero/hero-poster-zh-hk.webp', href: '/product/a2-posters/' },
     ],
   },
   en: {
@@ -36,11 +36,11 @@ const translations = {
     browseAll: 'Browse All Products',
     fromPrice: 'From',
     slides: [
-      { title: 'Professional Kraft Paper Bags', subtitle: 'Eco-friendly, durable, perfect for retail and takeout', price: 'From HK$1.2', image: '/images/hero/hero-kraft-bag-en.webp', href: '/product/kraft-paper-bags/', gradient: 'from-orange-500/95 via-red-500/80 to-transparent' },
-      { title: 'A4 Flyer Printing', subtitle: 'Full color, same-day pickup, ideal for promotion', price: 'From HK$0.3', image: '/images/hero/hero-flyer-en.webp', href: '/product/a4-flyers/', gradient: 'from-blue-600/95 via-cyan-500/80 to-transparent' },
-      { title: 'Waterproof Sticker Printing', subtitle: 'Durable material, various shapes, for any surface', price: 'From HK$0.5', image: '/images/hero/hero-sticker-en.webp', href: '/product/waterproof-stickers/', gradient: 'from-pink-500/95 via-purple-500/80 to-transparent' },
-      { title: 'Custom Gift Boxes', subtitle: 'Premium packaging to elevate your brand', price: 'From HK$5', image: '/images/hero/hero-gift-box-en.webp', href: '/product/gift-boxes/', gradient: 'from-amber-500/95 via-orange-500/80 to-transparent' },
-      { title: 'Custom Poster Printing', subtitle: 'Large format, vivid colors, great for advertising', price: 'From HK$15', image: '/images/hero/hero-poster-en.webp', href: '/product/a2-posters/', gradient: 'from-emerald-500/95 via-teal-500/80 to-transparent' },
+      { title: 'Professional Kraft Paper Bags', subtitle: 'Eco-friendly, durable, perfect for retail and takeout', price: 'From HK$1.2', image: '/images/hero/hero-kraft-bag-en.webp', href: '/product/kraft-paper-bags/' },
+      { title: 'A4 Flyer Printing', subtitle: 'Full color, same-day pickup, ideal for promotion', price: 'From HK$0.3', image: '/images/hero/hero-flyer-en.webp', href: '/product/a4-flyers/' },
+      { title: 'Waterproof Sticker Printing', subtitle: 'Durable material, various shapes, for any surface', price: 'From HK$0.5', image: '/images/hero/hero-sticker-en.webp', href: '/product/waterproof-stickers/' },
+      { title: 'Custom Gift Boxes', subtitle: 'Premium packaging to elevate your brand', price: 'From HK$5', image: '/images/hero/hero-gift-box-en.webp', href: '/product/gift-boxes/' },
+      { title: 'Custom Poster Printing', subtitle: 'Large format, vivid colors, great for advertising', price: 'From HK$15', image: '/images/hero/hero-poster-en.webp', href: '/product/a2-posters/' },
     ],
   },
   ja: {
@@ -49,11 +49,11 @@ const translations = {
     browseAll: 'すべての製品を見る',
     fromPrice: '最低',
     slides: [
-      { title: 'クラフト紙袋印刷', subtitle: '環境に優しく耐久性があり、小売やテイクアウトに最適', price: 'HK$1.2〜', image: '/images/hero/hero-kraft-bag-ja.webp', href: '/product/kraft-paper-bags/', gradient: 'from-orange-500/95 via-red-500/80 to-transparent' },
-      { title: 'A4チラシ印刷', subtitle: 'フルカラー、当日受取可能、宣伝に最適', price: 'HK$0.3〜', image: '/images/hero/hero-flyer-ja.webp', href: '/product/a4-flyers/', gradient: 'from-blue-600/95 via-cyan-500/80 to-transparent' },
-      { title: '防水ステッカー印刷', subtitle: '耐久性のある素材、様々な形状、あらゆる表面に対応', price: 'HK$0.5〜', image: '/images/hero/hero-sticker-ja.webp', href: '/product/waterproof-stickers/', gradient: 'from-pink-500/95 via-purple-500/80 to-transparent' },
-      { title: 'ギフトボックス印刷', subtitle: '高級感のある包装でブランド価値を向上', price: 'HK$5〜', image: '/images/hero/hero-gift-box-ja.webp', href: '/product/gift-boxes/', gradient: 'from-amber-500/95 via-orange-500/80 to-transparent' },
-      { title: 'ポスター印刷', subtitle: '大判出力、鮮やかな色彩、広告に最適', price: 'HK$15〜', image: '/images/hero/hero-poster-ja.webp', href: '/product/a2-posters/', gradient: 'from-emerald-500/95 via-teal-500/80 to-transparent' }
+      { title: 'クラフト紙袋印刷', subtitle: '環境に優しく耐久性があり、小売やテイクアウトに最適', price: 'HK$1.2〜', image: '/images/hero/hero-kraft-bag-ja.webp', href: '/product/kraft-paper-bags/' },
+      { title: 'A4チラシ印刷', subtitle: 'フルカラー、当日受取可能、宣伝に最適', price: 'HK$0.3〜', image: '/images/hero/hero-flyer-ja.webp', href: '/product/a4-flyers/' },
+      { title: '防水ステッカー印刷', subtitle: '耐久性のある素材、様々な形状、あらゆる表面に対応', price: 'HK$0.5〜', image: '/images/hero/hero-sticker-ja.webp', href: '/product/waterproof-stickers/' },
+      { title: 'ギフトボックス印刷', subtitle: '高級感のある包装でブランド価値を向上', price: 'HK$5〜', image: '/images/hero/hero-gift-box-ja.webp', href: '/product/gift-boxes/' },
+      { title: 'ポスター印刷', subtitle: '大判出力、鮮やかな色彩、広告に最適', price: 'HK$15〜', image: '/images/hero/hero-poster-ja.webp', href: '/product/a2-posters/' }
     ],
   },
 };
@@ -97,12 +97,11 @@ export function HeroBanner({ locale }: HeroBannerProps) {
                   unoptimized
                   priority={index === 0}
                 />
-                <div className="absolute inset-0 bg-black/30" />
-                {/* PC端左侧渐变覆盖层 */}
-                <div className={`hidden md:block absolute inset-y-0 left-0 w-[60%] bg-gradient-to-r ${slide.gradient}`} />
+                {/* 统一遮罩保证文字可读，不添加渐变色块 */}
+                <div className="absolute inset-0 bg-black/40" />
                 {/* PC端文字内容 */}
                 <div className="hidden md:flex absolute inset-0 flex-col justify-start items-start pt-14 md:pt-18 px-8 md:px-12">
-                  <span className="inline-flex items-center w-fit px-4 py-1.5 bg-gradient-to-r from-orange-500 to-red-500 text-white text-sm font-bold rounded-full mb-3 shadow-lg border border-white/20">
+                  <span className="inline-flex items-center w-fit px-4 py-1.5 bg-[#F87314] text-white text-sm font-bold rounded-full mb-3 shadow-lg border border-white/20">
                     {t.fromPrice} {slide.price}
                   </span>
                   <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2 leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">{slide.title}</h1>
@@ -110,7 +109,7 @@ export function HeroBanner({ locale }: HeroBannerProps) {
                   <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4">
                     <Link
                       href={`${localePrefix}${getQuoteHref(slide.href)}`}
-                      className="inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold rounded-xl shadow-lg shadow-orange-500/30 transition-all hover:scale-105 hover:-translate-y-0.5 w-full sm:w-auto"
+                      className="inline-flex items-center justify-center px-6 py-3 bg-[#F87314] text-white font-bold rounded-xl shadow-lg transition-all hover:scale-105 hover:-translate-y-0.5 w-full sm:w-auto"
                     >
                       {t.cta} {t.ctaArrow}
                     </Link>
@@ -126,7 +125,7 @@ export function HeroBanner({ locale }: HeroBannerProps) {
                 <div className="flex md:hidden absolute bottom-6 left-4 right-4">
                   <Link
                     href={`${localePrefix}${getQuoteHref(slide.href)}`}
-                    className="inline-flex items-center justify-center w-full px-6 py-3 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-bold rounded-xl shadow-lg transition-all active:scale-95"
+                    className="inline-flex items-center justify-center w-full px-6 py-3 bg-[#F87314] text-white font-bold rounded-xl shadow-lg transition-all active:scale-95"
                   >
                     {t.cta} {t.ctaArrow}
                   </Link>
