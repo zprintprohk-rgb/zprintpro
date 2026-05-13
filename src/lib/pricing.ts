@@ -543,3 +543,99 @@ export function convertPriceRangeString(priceRange: string, locale: Locale, cate
   }
   return `${symbol}${minPrice.toFixed(2)}-${maxPrice.toFixed(2)}${unitStr}`;
 }
+
+
+// ============================================================================
+// 类型安全报价计算（新架构）
+// 与 types/quotation.ts 对齐
+// ============================================================================
+
+import type { QuotationFormData, PriceBreakdown, ProductType, PaperType, ProcessType } from '@/types/quotation';
+
+const basePrices: Record<ProductType, number> = {
+  'business-card': 200,
+  'sticker': 150,
+  'flyer': 180,
+  'paper-bag': 500,
+  'box': 800,
+  'poster': 300,
+};
+
+const quantityFactors: { threshold: number; factor: number }[] = [
+  { threshold: 100, factor: 1.0 },
+  { threshold: 200, factor: 0.85 },
+  { threshold: 500, factor: 0.65 },
+  { threshold: 1000, factor: 0.50 },
+  { threshold: 2000, factor: 0.40 },
+  { threshold: 5000, factor: 0.30 },
+  { threshold: 10000, factor: 0.25 },
+];
+
+const paperFees: Record<PaperType, number> = {
+  'artpaper': 0,
+  'cotton': 0.20,
+  'recycled': 0.10,
+  'pvc': 0.15,
+};
+
+const processFees: Record<ProcessType, number> = {
+  'none': 0,
+  'foil': 0.15,
+  'uv': 0.10,
+  'emboss': 0.12,
+  'die-cut': 0.08,
+};
+
+export function calculatePrice(data: QuotationFormData): PriceBreakdown {
+  const base = basePrices[data.productType];
+
+  // 数量阶梯
+  let qtyFactor = 1.0;
+  for (const qf of quantityFactors) {
+    if (data.quantity >= qf.threshold) {
+      qtyFactor = qf.factor;
+    }
+  }
+
+  const quantityPrice = base * (data.quantity / 100) * qtyFactor;
+
+  // 纸张附加
+  const paperFee = quantityPrice * paperFees[data.paper];
+
+  // 工艺附加（叠加）
+  let processFee = 0;
+  for (const p of data.process) {
+    processFee += quantityPrice * processFees[p];
+  }
+
+  // 双面
+  const sidesFee = data.sides === 'double' ? quantityPrice * 0.15 : 0;
+
+  // 快递
+  const deliveryFee = data.delivery === 'express' ? 150 : 0;
+
+  const subtotal = quantityPrice + paperFee + processFee + sidesFee;
+  const total = subtotal + deliveryFee;
+
+  return {
+    basePrice: Math.round(base),
+    quantityFactor: Math.round(quantityPrice),
+    processFee: Math.round(processFee),
+    paperFee: Math.round(paperFee),
+    deliveryFee: Math.round(deliveryFee),
+    total: Math.round(total),
+    currency: 'HKD',
+  };
+}
+
+// 货币转换（显示用，结算用HKD）
+export function convertCurrency(hkdAmount: number, targetCurrency: 'HKD' | 'USD' | 'GBP' | 'AUD' | 'JPY'): number {
+  const rates: Record<string, number> = {
+    'HKD': 1,
+    'USD': 0.128,
+    'GBP': 0.101,
+    'AUD': 0.195,
+    'JPY': 19.5,
+  };
+  return Math.round(hkdAmount * rates[targetCurrency]);
+}

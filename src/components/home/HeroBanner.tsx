@@ -52,7 +52,7 @@ const translations = {
       { title: 'クラフト紙袋印刷', subtitle: '環境に優しく耐久性があり、小売やテイクアウトに最適', price: 'HK$1.2〜', image: '/images/hero/hero-kraft-bag-ja.webp', href: '/product/kraft-paper-bags/', gradient: 'from-orange-500/95 via-red-500/80 to-transparent' },
       { title: 'A4チラシ印刷', subtitle: 'フルカラー、当日受取可能、宣伝に最適', price: 'HK$0.3〜', image: '/images/hero/hero-flyer-ja.webp', href: '/product/a4-flyers/', gradient: 'from-blue-600/95 via-cyan-500/80 to-transparent' },
       { title: '防水ステッカー印刷', subtitle: '耐久性のある素材、様々な形状、あらゆる表面に対応', price: 'HK$0.5〜', image: '/images/hero/hero-sticker-ja.webp', href: '/product/waterproof-stickers/', gradient: 'from-pink-500/95 via-purple-500/80 to-transparent' },
-      { title: 'ギフトボックス定制', subtitle: '高級感のある包装でブランド価値を向上', price: 'HK$5〜', image: '/images/hero/hero-gift-box-ja.webp', href: '/product/gift-boxes/', gradient: 'from-amber-500/95 via-orange-500/80 to-transparent' },
+      { title: 'ギフトボックス印刷', subtitle: '高級感のある包装でブランド価値を向上', price: 'HK$5〜', image: '/images/hero/hero-gift-box-ja.webp', href: '/product/gift-boxes/', gradient: 'from-amber-500/95 via-orange-500/80 to-transparent' },
       { title: 'ポスター印刷', subtitle: '大判出力、鮮やかな色彩、広告に最適', price: 'HK$15〜', image: '/images/hero/hero-poster-ja.webp', href: '/product/a2-posters/', gradient: 'from-emerald-500/95 via-teal-500/80 to-transparent' }
     ],
   },
@@ -91,13 +91,13 @@ export function HeroBanner({ locale }: HeroBannerProps) {
               >
                 <Image
                   src={slide.image}
-                  alt={`智印云 ${slide.title}`}
+                  alt={locale === 'ja' ? `${slide.title} | ZprintPro` : locale === 'en' ? `${slide.title} | ZprintPro` : `智印云 ${slide.title}`}
                   fill
                   className="object-cover object-right"
                   unoptimized
                   priority={index === 0}
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+                <div className="absolute inset-0 bg-black/30" />
                 {/* PC端左侧渐变覆盖层 */}
                 <div className={`hidden md:block absolute inset-y-0 left-0 w-[60%] bg-gradient-to-r ${slide.gradient}`} />
                 {/* PC端文字内容 */}

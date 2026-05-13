@@ -18,7 +18,7 @@ export function ProductGallery({ images, title, alt }: ProductGalleryProps) {
   const displayImages = images.length > 0 ? images : ['/images/placeholder.jpg'];
 
   const [currentImage, setCurrentImage] = useState(() => {
-    const defaultIndex = 2; // 默认显示第三张图片
+    const defaultIndex = 0; // 默认显示第一张图片
     return displayImages.length > defaultIndex ? defaultIndex : 0;
   });
   const [lightboxOpen, setLightboxOpen] = useState(false);

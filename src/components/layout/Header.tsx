@@ -168,46 +168,9 @@ const subItemNames: Record<string, Record<string, string>> = {
   },
 };
 
-const featuredImages: Record<string, string> = {
-  'kraft-paper-bags': '/images/products/seedream-webp/zprintpro-paper-bags-kraft-paper-bags-zh-hk-1.webp',
-  'white-card-bags': '/images/products/seedream-webp/zprintpro-paper-bags-white-card-bags-zh-hk-1.webp',
-  'gift-bags': '/images/products/seedream-webp/zprintpro-paper-bags-gift-bags-zh-hk-1.webp',
-  'eco-paper-bags': '/images/products/seedream-webp/zprintpro-paper-bags-eco-paper-bags-zh-hk-1.webp',
-  'handle-bags': '/images/products/seedream-webp/zprintpro-paper-bags-handle-bags-zh-hk-1.webp',
-  'large-bags': '/images/products/seedream-webp/zprintpro-paper-bags-large-bags-zh-hk-1.webp',
-  'a4-flyers': '/images/products/seedream-webp/zprintpro-flyers-a4-flyers-zh-hk-1.webp',
-  'a5-flyers': '/images/products/seedream-webp/zprintpro-flyers-a5-flyers-zh-hk-1.webp',
-  'double-sided-flyers': '/images/products/seedream-webp/zprintpro-flyers-double-sided-flyers-zh-hk-1.webp',
-  'folded-leaflets': '/images/products/seedream-webp/zprintpro-flyers-folded-leaflets-zh-hk-1.webp',
-  'thick-paper-flyers': '/images/products/seedream-webp/zprintpro-flyers-thick-paper-flyers-zh-hk-1.webp',
-  'same-day-flyers': '/images/products/seedream-webp/zprintpro-flyers-same-day-flyers-zh-hk-1.webp',
-  'waterproof-stickers': '/images/products/seedream-webp/zprintpro-stickers-waterproof-stickers-zh-hk.webp',
-  'transparent-stickers': '/images/products/seedream-webp/zprintpro-stickers-transparent-stickers-zh-hk-1.webp',
-  'foil-stickers': '/images/products/seedream-webp/zprintpro-stickers-foil-stickers-zh-hk-1.webp',
-  'removable-stickers': '/images/products/seedream-webp/zprintpro-stickers-removable-stickers-zh-hk-1.webp',
-  'die-cut-stickers': '/images/products/seedream-webp/zprintpro-stickers-die-cut-stickers-zh-hk-1.webp',
-  'fruit-food-label-stickers': '/images/products/seedream-webp/zprintpro-stickers-fruit-food-label-stickers-zh-hk-1.webp',
-  'gift-boxes': '/images/products/seedream-webp/zprintpro-packaging-gift-boxes-zh-hk.webp',
-  'cosmetic-boxes': '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-zh-hk.webp',
-  'food-boxes': '/images/products/seedream-webp/zprintpro-packaging-food-boxes-zh-hk.webp',
-  'mailer-boxes': '/images/products/seedream-webp/zprintpro-packaging-mailer-boxes-zh-hk.webp',
-  'folding-boxes': '/images/products/seedream-webp/zprintpro-packaging-folding-boxes-zh-hk.webp',
-  'rigid-boxes': '/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-zh-hk.webp',
-  'magnetic-closure-gift-box': '/images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-1.webp',
-  'electronics-packaging-box': '/images/products/seedream-webp/zprintpro-packaging-electronics-packaging-box-zh-hk-1.webp',
-  'kraft-paper-packaging-box': '/images/products/seedream-webp/zprintpro-packaging-kraft-paper-packaging-box-zh-hk-1.webp',
-  'drawer-slide-gift-box': '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-zh-hk-1.webp',
-  'a2-posters': '/images/products/seedream-webp/zprintpro-posters-a2-posters-zh-hk-1.webp',
-  'a1-posters': '/images/products/seedream-webp/zprintpro-posters-a1-posters-zh-hk-1.webp',
-  'outdoor-posters': '/images/products/seedream-webp/zprintpro-posters-outdoor-posters-zh-hk-1.webp',
-  'display-posters': '/images/products/seedream-webp/zprintpro-posters-display-posters-zh-hk.webp',
-  'art-posters': '/images/products/seedream-webp/zprintpro-posters-art-posters-zh-hk.webp',
-  'adhesive-posters': '/images/products/seedream-webp/zprintpro-posters-adhesive-posters-zh-hk.webp',
-  'exercise-books': '/images/products/seedream-webp/zprintpro-educational-exercise-books-zh-hk-1.webp',
-  'certificates': '/images/products/seedream-webp/zprintpro-educational-certificates-zh-hk-1.webp',
-  'school-flyers': '/images/products/seedream-webp/zprintpro-educational-school-flyers-zh-hk-1.webp',
-  'textbooks': '/images/products/seedream-webp/zprintpro-educational-textbooks-zh-hk-1.webp',
-};
+function getFeaturedImage(slug: string, locale: Locale): string {
+  return `/images/categories/${locale}/${slug}.webp`;
+}
 
 const featuredDescs: Record<string, Record<string, string>> = {
   'zh-hk': {
@@ -338,7 +301,7 @@ export function Header({ locale }: HeaderProps) {
           <div className="px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-[58px] lg:h-[68px] gap-4">
               <Link href={`${localePrefix}/`} className="flex-shrink-0 ml-[30px]">
-                <Image src="/images/logo.svg" alt="智印云 ZPrintPro" width={200} height={52} className="h-[52px] w-auto" priority />
+                <Image src="/images/logo.svg" alt="ZprintPro" width={200} height={52} className="h-[52px] w-auto" priority />
               </Link>
               <form onSubmit={handleSearch} className="hidden md:flex flex-1 max-w-xl mx-4">
                 <div className="relative w-full">
@@ -402,7 +365,7 @@ export function Header({ locale }: HeaderProps) {
                             return (
                               <Link key={subSlug} href={`${localePrefix}/product/${subSlug}/`} className="block group flex-1 flex flex-col">
                                 <div className="flex-1 relative overflow-hidden rounded-t-lg">
-                                  <Image src={featuredImages[subSlug] || '/images/hero/hero-gift-box-zh-hk.webp'} alt={getSubItemName(subSlug)} fill className="object-cover object-right group-hover:scale-105 transition-transform" unoptimized />
+                                  <Image src={getFeaturedImage(subSlug, locale)} alt={getSubItemName(subSlug)} fill className="object-cover object-right group-hover:scale-105 transition-transform" unoptimized />
                                   <span className="absolute top-2 left-2 bg-red-500 text-white text-xs font-bold px-2 py-0.5 rounded">{tagText}</span>
                                 </div>
                                 <div className="pt-2 h-[60px] flex flex-col justify-center">
@@ -449,10 +412,10 @@ export function Header({ locale }: HeaderProps) {
                       </div>
                       <div className="border-b border-transparent" />
                       <div className="flex-1 flex gap-4">
-                        {['hero-flyer-zh-hk.webp', 'hero-sticker-zh-hk.webp', 'hero-gift-box-zh-hk.webp'].map((img, idx) => (
+                        {['company-intro', 'sticker-guide', 'business-card-design'].map((slug, idx) => (
                           <Link key={idx} href={`${localePrefix}/blog/`} className="block group flex-1 flex flex-col">
                             <div className="flex-1 relative overflow-hidden rounded-t-lg">
-                              <Image src={`/images/hero/${img}`} alt="" fill className="object-cover object-right group-hover:scale-105 transition-transform" unoptimized />
+                              <Image src={`/images/blog/${locale}/${slug}.webp`} alt="" fill className="object-cover object-right group-hover:scale-105 transition-transform" unoptimized />
                             </div>
                             <div className="pt-2 h-[50px] flex items-center justify-center">
                               <p className="text-base font-medium text-gray-700 leading-tight text-center">{knowledgeSubItems[locale]?.[idx] || ''}</p>

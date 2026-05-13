@@ -70,7 +70,7 @@ const translations = {
     ],
   },
   en: {
-    title: 'Why Choose ZPrintPro',
+    title: 'Why Choose ZprintPro',
     subtitle: 'Trusted by 15,000+ Customers',
     features: [
       {
@@ -130,7 +130,7 @@ const translations = {
     ],
   },
   ja: {
-    title: 'ZPrintProを選ぶ理由',
+    title: 'ZprintProを選ぶ理由',
     subtitle: '15,000人以上のお客様に信頼されています',
     features: [
       {

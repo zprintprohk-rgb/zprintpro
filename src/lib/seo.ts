@@ -5,12 +5,13 @@
 
 import { Metadata } from 'next';
 
-export type Locale = 'zh-hk' | 'en' | 'ja';
+import type { Locale } from '@/types/locale';
+export type { Locale } from '@/types/locale';
 
 // 網站配置
 export const siteConfig = {
-  name: '智印云 ZPrintPro',
-  alternateName: ['智印云', 'ZPrintPro', 'ZPrintPro Global'],
+  name: '智印云 ZprintPro',
+  alternateName: ['智印云', 'ZprintPro', 'ZprintPro Global'],
   url: 'https://zprintpro.com',
   logo: 'https://zprintpro.com/logo-icon.svg',
   phone: '+86 181 2638 0255',
@@ -90,19 +91,19 @@ export const regionConfig: Record<Locale, RegionConfig> = {
 // 多語言元數據
 const homeMetadata: Record<Locale, { title: string; description: string; keywords: string }> = {
   'zh-hk': {
-    title: '智印云 ZPrintPro | 全球智能印刷定制平台 | 30秒報價72小時交付',
+    title: '智印云 ZprintPro | 全球智能印刷定制平台 | 30秒報價72小時交付',
     description: '智印云是全球智能印刷定制平台，提供貼紙、名片、包裝、海報等一站式印刷服務。AI智能報價、在線文件上傳、Airwallex安全支付，品質保證，最快即日交貨。',
-    keywords: '印刷, 貼紙, 標籤, 名片, 書刊, 包裝, 香港印刷, 數碼印刷, 急件印刷, ZPrintPro, 智印云, 線上報價',
+    keywords: '印刷, 貼紙, 標籤, 名片, 書刊, 包裝, 香港印刷, 數碼印刷, 急件印刷, ZprintPro, 智印云, 線上報價',
   },
   en: {
-    title: 'ZPrintPro | Global Smart Printing Platform | Instant Quote 72h Delivery',
-    description: 'ZPrintPro is a global smart printing platform offering stickers, business cards, packaging, posters and more. AI instant quote, online file upload, Airwallex secure payment. Quality guaranteed, same-day delivery available.',
-    keywords: 'printing, stickers, labels, business cards, booklets, packaging, Hong Kong printing, digital printing, rush printing, ZPrintPro, online quote',
+    title: 'ZprintPro | Global Smart Printing Platform | Instant Quote 72h Delivery',
+    description: 'ZprintPro is a global smart printing platform offering stickers, business cards, packaging, posters and more. AI instant quote, online file upload, Airwallex secure payment. Quality guaranteed, same-day delivery available.',
+    keywords: 'printing, stickers, labels, business cards, booklets, packaging, Hong Kong printing, digital printing, rush printing, ZprintPro, online quote',
   },
   ja: {
-    title: 'ZPrintPro | グローバルスマート印刷プラットフォーム | 即時見積72時間納品',
-    description: 'ZPrintProはグローバルスマート印刷プラットフォームです。ステッカー、名刺、包装、ポスターなどを提供。AI即時見積、オンラインファイルアップロード、Airwallex安全決済。品質保証、最短当日納品。',
-    keywords: '印刷, ステッカー, ラベル, 名刺, 冊子, 包装, 香港印刷, デジタル印刷, 急ぎ印刷, ZPrintPro, オンライン見積',
+    title: 'ZprintPro | グローバルスマート印刷プラットフォーム | 即時見積72時間納品',
+    description: 'ZprintProはグローバルスマート印刷プラットフォームです。ステッカー、名刺、包装、ポスターなどを提供。AI即時見積、オンラインファイルアップロード、Airwallex安全決済。品質保証、最短当日納品。',
+    keywords: '印刷, ステッカー, ラベル, 名刺, 冊子, 包装, 香港印刷, デジタル印刷, 急ぎ印刷, ZprintPro, オンライン見積',
   },
 };
 
@@ -250,8 +251,8 @@ function getDefaultCategorySeo(categoryName: string, categoryNameEn: string, cat
     },
     descriptions: {
       'zh-hk': `專業${categoryName}印刷服務，品質保證，價格透明。智印云提供多種${categoryName}選擇，最快即日交貨。`,
-      en: `Professional ${categoryNameEn} printing services with quality guarantee and transparent pricing. ZPrintPro offers various ${categoryNameEn} options with same-day delivery available.`,
-      ja: `プロの${categoryNameJa}印刷サービス、品質保証、透明な価格。ZPrintProは様々な${categoryNameJa}オプションを提供し、最短当日配送可能。`,
+      en: `Professional ${categoryNameEn} printing services with quality guarantee and transparent pricing. ZprintPro offers various ${categoryNameEn} options with same-day delivery available.`,
+      ja: `プロの${categoryNameJa}印刷サービス、品質保証、透明な価格。ZprintProは様々な${categoryNameJa}オプションを提供し、最短当日配送可能。`,
     },
   };
 }
@@ -627,9 +628,9 @@ export function generateWebsiteJsonLd() {
 // 報價頁面元數據
 export function generateQuotePageMetadata(locale: Locale): Metadata {
   const titles = {
-    'zh-hk': '即時報價 | 智印云 ZPrintPro',
-    'en': 'Instant Quote | ZPrintPro',
-    'ja': '即時見積もり | ZPrintPro',
+    'zh-hk': '即時報價 | 智印云 ZprintPro',
+    'en': 'Instant Quote | ZprintPro',
+    'ja': '即時見積もり | ZprintPro',
   };
   const descriptions = {
     'zh-hk': '在線計算印刷費用，即時獲取報價。支持黑白/彩色、多種裝訂方式。',
@@ -670,4 +671,133 @@ export function generateHreflangTags(path: string = '') {
     { lang: 'ja-JP', url: `${siteConfig.url}/ja${prefix}` },
     { lang: 'x-default', url: `${siteConfig.url}/zh-hk${prefix}` },
   ];
+}
+
+
+// 多语言 GEO 信号配置（兼容新类型系统）
+export const geoConfig: Record<Locale, import('@/types/seo').GeoSignals> = {
+  'zh-hk': {
+    region: 'HK',
+    currency: 'HKD',
+    pricePrefix: 'HK$',
+    areaServed: ['Hong Kong', 'Kowloon', 'New Territories', 'Hong Kong Island'],
+    phone: siteConfig.phone,
+    address: `${siteConfig.address.street}, ${siteConfig.address.city}, ${siteConfig.address.region}`,
+    deliveryText: '即日可取，港鐵站交收，香港島/九龍/新界均可送達',
+    geoKeywords: ['香港', '九龍', '新界', '港島', '灣仔', '觀塘', '旺角', '銅鑼灣', '尖沙咀', '港鐵站', '即日取'],
+  },
+  'en': {
+    region: 'US',
+    currency: 'USD',
+    pricePrefix: '$',
+    areaServed: ['United States', 'United Kingdom', 'Australia', 'Canada', 'New Zealand', 'Singapore'],
+    deliveryText: 'Free international shipping to US/UK/AU within 7-14 business days. Express delivery available.',
+    geoKeywords: ['custom printing', 'business cards USA', 'flyer printing UK', 'sticker printing Australia', 'international delivery'],
+  },
+  'ja': {
+    region: 'JP',
+    currency: 'JPY',
+    pricePrefix: '¥',
+    areaServed: ['Japan'],
+    deliveryText: '日本へ7-14営業日で国際配送。東京、大阪、名古屋など主要都市対応。',
+    geoKeywords: ['香港 印刷', '名刺 印刷 海外', 'シール 印刷 オーダー', '箔押し 名刺', '和紙 印刷', '少ロット 印刷'],
+  },
+};
+
+
+// ============================================================================
+// 新架构 Schema 生成器（兼容 types/seo.ts）
+// ============================================================================
+
+import type { SchemaOrgData } from '@/types/seo';
+
+export function generateOrganizationSchema(locale: Locale): SchemaOrgData {
+  const geo = geoConfig[locale];
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: locale === 'zh-hk' ? '智印云 ZprintPro' : 'ZprintPro',
+    url: `${siteConfig.url}/${locale}`,
+    logo: `${siteConfig.url}/images/logo.png`,
+    areaServed: geo.areaServed.map(area => ({ '@type': 'Place', name: area })),
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: geo.phone || siteConfig.phone,
+      contactType: 'customer service',
+      availableLanguage: ['Chinese', 'English', 'Japanese'],
+    },
+  };
+}
+
+export function generateLocalBusinessSchema(locale: Locale): SchemaOrgData {
+  const geo = geoConfig[locale];
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'LocalBusiness',
+    name: locale === 'zh-hk' ? '智印云 ZprintPro' : 'ZprintPro',
+    image: `${siteConfig.url}/images/hero/main-hero.webp`,
+    '@id': `${siteConfig.url}/${locale}`,
+    url: `${siteConfig.url}/${locale}`,
+    telephone: geo.phone || siteConfig.phone,
+    priceRange: geo.pricePrefix,
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: siteConfig.address.street,
+      addressLocality: siteConfig.address.city,
+      addressRegion: siteConfig.address.region,
+      addressCountry: geo.region,
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: '22.3193',
+      longitude: '114.1694',
+    },
+    openingHoursSpecification: {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+      opens: '09:00',
+      closes: '18:00',
+    },
+    areaServed: geo.areaServed.map(area => ({ '@type': 'Place', name: area })),
+  };
+}
+
+
+// ============================================================================
+// Article / BlogPosting Schema 生成器
+// ============================================================================
+
+export interface ArticleSchemaInput {
+  title: string;
+  description: string;
+  image?: string;
+  publishedAt: string;
+  updatedAt?: string;
+  authorName?: string;
+  wordCount?: number;
+}
+
+export function generateArticleSchema(input: ArticleSchemaInput, locale: Locale): SchemaOrgData {
+  const baseUrl = 'https://zprintpro.com';
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: input.title,
+    description: input.description,
+    image: input.image || `${baseUrl}/images/og-image.jpg`,
+    datePublished: input.publishedAt,
+    dateModified: input.updatedAt || input.publishedAt,
+    author: {
+      '@type': input.authorName ? 'Person' : 'Organization',
+      name: input.authorName || (locale === 'zh-hk' ? '智印云 ZprintPro' : 'ZprintPro'),
+      url: `${baseUrl}/${locale}/about/`,
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: locale === 'zh-hk' ? '智印云 ZprintPro' : 'ZprintPro',
+      logo: { '@type': 'ImageObject', url: `${baseUrl}/images/logo.png` },
+    },
+    inLanguage: locale === 'zh-hk' ? 'zh-Hant-HK' : locale === 'ja' ? 'ja-JP' : 'en-US',
+    wordCount: input.wordCount,
+  };
 }

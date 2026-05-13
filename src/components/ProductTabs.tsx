@@ -26,10 +26,10 @@ const specsByCategory: Record<string, {
   'business-cards': {
     material: { 'zh-hk': '300g-400g 銅版紙/剛古紙', en: '300g-400g Art/Conqueror Paper', ja: '300g-400g コート/コンカラー紙' },
     size: { 'zh-hk': '90×54mm（標準）', en: '3.5×2.1" (Standard Business Card)', ja: '90×54mm（標準）' },
-    finish: { 'zh-hk': '啞膠/光膠/局部UV/燙金', en: 'Matte/Gloss/Spot UV/Foil', ja: 'マット/グロス/局部UV/箔押し' },
+    finish: { 'zh-hk': '啞膠/光膠/局部UV/燙金', en: 'Matte/Gloss/Spot UV/Foil', ja: 'マット/グロス/スポットUV/箔押し' },
   },
   'stickers': {
-    material: { 'zh-hk': 'PVC防水材質 / 合成紙', en: 'PVC Waterproof / Synthetic Paper', ja: 'PVC防水材質 / 合成紙' },
+    material: { 'zh-hk': 'PVC防水材質 / 合成紙', en: 'PVC Waterproof / Synthetic Paper', ja: 'PVC防水素材 / 合成紙' },
     size: { 'zh-hk': '按客戶要求模切', en: 'Custom Die-cut', ja: 'カスタムダイカット' },
     finish: { 'zh-hk': '光膜/啞膜', en: 'Gloss/Matte Lamination', ja: 'グロス/マットラミネーション' },
   },

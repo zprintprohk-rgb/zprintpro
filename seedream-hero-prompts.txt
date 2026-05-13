@@ -323,3 +323,30 @@ Prompt:
 16:9宽屏比例，8K超高清电商Banner图。右上角固定放置单一枚大红色(#DC2626)底色、白色粗体字(Hiragino Sans W6)、白色3px描边的爆炸促销标签。标签主标题：ポチ袋印刷｜HK$0.3〜，副标题：箔押し・おめでたい。标签外画面内绝对不出现任何其他文字、乱码、水印、品牌名、多标签。
 
 前景为プロポチ袋印刷产品实物展示，複数の赤いポチ袋が扇形に広げられている，ポチ袋に金色の「福」文字、「恭喜發財」「生意興隆」、企業ロゴ「ZprintPro」、年「2026」、干支模様「馬」が印刷されている，120g赤色特殊紙、金箔押し加工、エンボス質感工艺细节清晰可见。背景虚化春節装飾シーン/花市屋台/企業受付祝祭飾り，赤色のおめでたい暖色調照明，营造高端节日商业氛围。产品占画面60%-70%，材质和工艺细节高清呈现。すべての日本語文字が正確で、英単語のスペルが正しく、文字の重なりや乱码がないこと。
+
+
+--- HERO-13 | zh-hk | educational ---
+Filename: hero-educational-zh-hk.jpg
+Alt: 校園教育印刷 - 作業簿印刷、證書印刷、學校單張、教科書印刷｜HK$0.2起｜香港中小學及補習社適用
+Prompt:
+16:9宽屏比例，8K超高清电商Banner图。右上角固定放置单一枚大红色(#DC2626)底色、白色粗体字(PingFang HK Bold)、白色3px描边的爆炸促销标签。标签主标题：校園印刷｜HK$0.2起，副标题：專業品質・快速交貨。标签外画面内绝对不出现任何其他文字、乱码、水印、品牌名、多标签。
+
+前景为校園教育印刷产品实物展示，多款學校印刷品整齊排列：作業簿（練習簿）封面印有校徽和學生姓名欄，燙金證書上有「榮譽證書」字樣及壓紋邊框，彩色學校單張（通告/活動宣傳單張）色彩鮮艷，精裝教科書專業排版。120g米白色道林紙/銅版紙材質，膠裝與騎馬釘裝訂工藝細節清晰可見。背景虚化香港校園場景/教室黑板/圖書館書架/補習社課室，明亮自然光線，營造專業教育商業氛圍。产品占画面60%-70%，材质和工艺细节高清呈现。所有中文字符必须笔画完整准确，英文单词拼写正确、无粘连、无乱码。
+
+
+--- HERO-13 | en | educational ---
+Filename: hero-educational-en.jpg
+Alt: School & Educational Printing - Exercise books, certificates, school flyers, textbooks | From USD $0.15 | For schools and tutoring centers
+Prompt:
+16:9 widescreen ratio, 8K ultra-high-definition e-commerce Banner image. Top-right corner features a single large red (#DC2626) background explosive promotional tag with bold white text (Inter Bold) and a white 3px stroke outline. Tag main title: School Printing｜From USD $0.15, subtitle: Professional · Fast Delivery. Absolutely no other text, garbled characters, watermarks, brand names, or multiple tags outside the label within the frame.
+
+Foreground showcases School & Educational Printing products, multiple educational print products neatly arranged: exercise books (student workbooks with school logo covers), gold foil stamped certificates with embossed borders and "Certificate of Honor" text, colorful school flyers (event announcements), perfect-bound textbooks with professional typesetting. 120g cream woodfree paper / coated paper, saddle-stitch and perfect binding工艺细节清晰可见. Background is a blurred modern classroom scene / school library bookshelves / tutoring center study room, bright natural lighting, creating a professional educational commercial atmosphere. Products occupy 60%-70% of the frame, with material and工艺细节 presented in high definition. All English words must be spelled correctly, no粘连, no gibberish.
+
+
+--- HERO-13 | ja | educational ---
+Filename: hero-educational-ja.jpg
+Alt: 学校・教育印刷 - ノート印刷、賞状印刷、学校チラシ、教科書印刷｜¥15〜｜学校・塾向け
+Prompt:
+16:9宽屏比例，8K超高清电商Banner图。右上角固定放置单一枚大红色(#DC2626)底色、白色粗体字(Hiragino Sans W6)、白色3px描边的爆炸促销标签。标签主标题：学校印刷｜¥15〜，副标题：プロ品質・早納品。标签外画面内绝对不出现任何其他文字、乱码、水印、品牌名、多标签。
+
+前景为学校・教育印刷产品实物展示，複数の教育印刷物が整然と並んでいる：学習帳（ノート、学校ロゴ入り表紙）、金箔押し賞状（エンボス枠、「栄誉賞」文字）、カラフルな学校チラシ（イベント告知）、上製本教科書（プロフェッショナル組版）。120gクリーム色上質紙/コート紙、中綴じ・上製本装丁工艺细节清晰可见。背景虚化現代の教室/学校図書館の本棚/塾の勉強部屋，明るい自然光，营造专业教育商业氛围。产品占画面60%-70%，材质和工艺细节高清呈现。すべての日本語文字が正確で、英単語のスペルが正しく、文字の重なりや乱码がないこと。

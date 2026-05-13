@@ -8,8 +8,10 @@ import { Inter } from 'next/font/google';
 import '../globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+import { BreadcrumbNav } from '@/components/breadcrumb-nav';
 import { CartProvider } from '@/lib/cart-context';
-import { regionConfig } from '@/lib/seo';
+import { htmlLangMap } from '@/types/locale';
+import { generateHreflangTags } from '@/lib/hreflang';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -37,13 +39,22 @@ export default function RootLayout({
   children,
   params: { locale },
 }: RootLayoutProps) {
+  const safeLocale = locale as 'zh-hk' | 'en' | 'ja';
+  const hreflangs = generateHreflangTags(safeLocale);
+
   return (
-    <html lang={regionConfig[locale as 'zh-hk' | 'en' | 'ja']?.lang || locale}>
+    <html lang={htmlLangMap[safeLocale] || locale}>
+      <head>
+        {hreflangs.map((tag, i) => (
+          <link key={i} rel={tag.rel} hrefLang={tag.hrefLang} href={tag.href} />
+        ))}
+      </head>
       <body className={inter.className}>
         <CartProvider>
-          <Header locale={locale as 'zh-hk' | 'en' | 'ja'} />
+          <Header locale={safeLocale} />
+          <BreadcrumbNav locale={safeLocale} />
           {children}
-          <Footer locale={locale as 'zh-hk' | 'en' | 'ja'} />
+          <Footer locale={safeLocale} />
         </CartProvider>
       </body>
     </html>

@@ -19,7 +19,7 @@ import {
   generateProductJsonLd,
   generateBreadcrumbJsonLd,
   generateBusinessJsonLd,
-  generateFaqJsonLd,
+
   generateProductReviewsJsonLd,
   Locale 
 } from '@/lib/seo';
@@ -29,8 +29,9 @@ import { QuoteCalculator } from '@/components/quote/QuoteCalculator';
 import { ProductTabs } from '@/components/ProductTabs';
 import { RelatedProducts } from '@/components/RelatedProducts';
 import { ProductFaq } from '@/components/ProductFaq';
-import { ProductHowTo } from '@/components/ProductHowTo';
 import { getProductSeo } from '@/data/product-seo';
+import { generateFAQSchema } from '@/lib/faq-schema';
+import { coreProductFAQMap } from '@/data/product-faqs';
 import { RegionalContent, RegionalCta, RegionalTrustBadges } from '@/components/seo/RegionalContent';
 import { convertPriceRangeString } from '@/lib/pricing';
 import { ProductWhyChooseUs } from '@/components/ProductWhyChooseUs';
@@ -100,39 +101,27 @@ export default function ProductPage({
   
   // 核心产品 SEO 数据
   const productSeo = getProductSeo(slug);
-  
+
   // JSON-LD结构化数据
   const productJsonLd = generateProductJsonLd(product.name, product.description, product.imagesByLocale?.[locale]?.[0] || product.images[0] || '', product.slug, product.basePrice);
   const businessJsonLd = generateBusinessJsonLd(locale);
   const breadcrumbJsonLd = generateBreadcrumbJsonLd(breadcrumbItems);
-  
-  // FAQPage Schema (仅核心产品有)
-  const faqItems = productSeo?.faq[locale];
-  const faqJsonLd = faqItems && faqItems.length > 0 
-    ? generateFaqJsonLd(faqItems.map(item => ({ question: item.q, answer: item.a }))) 
-    : null;
-  
-  // HowTo Schema (仅核心产品有)
-  const howToSteps = productSeo?.processSteps[locale];
-  const howToJsonLd = howToSteps && howToSteps.length > 0
-    ? {
-        '@context': 'https://schema.org',
-        '@type': 'HowTo',
-        name: locale === 'zh-hk' ? `${product.name} 印刷流程` : locale === 'en' ? `How to Print ${product.nameEn}` : `${product.nameJa} の製作方法`,
-        step: howToSteps.map((step, idx) => ({
-          '@type': 'HowToStep',
-          position: idx + 1,
-          name: step.name,
-          text: step.text,
-        })),
-      }
-    : null;
-  
+
+  // FAQPage Schema — 优先使用新集中式FAQ数据（按分类映射）
+  const coreFaqs = coreProductFAQMap[product.category_slug];
+  const faqItems = coreFaqs
+    ? coreFaqs.map((faq: { question: Record<Locale, string>; answer: Record<Locale, string> }) => ({ q: faq.question[locale], a: faq.answer[locale] }))
+    : undefined;
+  const faqJsonLd = coreFaqs ? generateFAQSchema(coreFaqs, locale) : null;
+
+  // HowTo Schema (暂不启用)
+  const howToJsonLd = null;
+
   // 长描述
-  const longDesc = productSeo?.longDescription[locale];
-  
-  // 相关博客链接
-  const relatedBlog = productSeo?.relatedBlogSlug;
+  const longDesc = locale === 'zh-hk' ? product.longDescription : locale === 'en' ? product.longDescriptionEn : product.longDescriptionJa;
+
+  // 相关博客链接（暂不启用）
+  const relatedBlog = null;
   const localePrefix = `/${locale}`;
   
   // 翻译文本
@@ -277,7 +266,7 @@ export default function ProductPage({
             {/* 右侧：产品信息和报价计算器 */}
             <div>
               <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                {productSeo?.h1Suffix[locale] || (locale === 'zh-hk' ? `${productTitle} | 香港${categoryName}專家 | 智印云` : locale === 'en' ? `${productTitle} | Hong Kong ${categoryName} Expert | ZprintPro` : `${productTitle} | 香港プロ | ZprintPro`)}
+                {locale === 'zh-hk' ? `${productTitle} | 香港${categoryName}專家 | 智印云` : locale === 'en' ? `${productTitle} | Hong Kong ${categoryName} Expert | ZprintPro` : `${productTitle} | 香港プロ | ZprintPro`}
               </h1>
               
               <p className="text-gray-600 mb-6 leading-relaxed">
@@ -372,11 +361,9 @@ export default function ProductPage({
             <ProductFaq items={faqItems} locale={locale} />
           )}
           
-          {/* HowTo 流程 */}
-          {howToSteps && howToSteps.length > 0 && (
-            <ProductHowTo steps={howToSteps} locale={locale} productName={productTitle} />
-          )}
-          
+          {/* HowTo 流程（暫不啟用） */}
+          {/* howToJsonLd && <ProductHowTo steps={[]} locale={locale} productName={productTitle} /> */}
+
           {/* 相关产品 */}
           <div className="mt-12">
             <RelatedProducts 

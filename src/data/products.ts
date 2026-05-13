@@ -149,8 +149,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-business-cards-premium-business-cards-zh-hk.webp', en: 'zprintpro-business-cards-premium-business-cards-en.webp', ja: 'zprintpro-business-cards-premium-business-cards-ja.webp' },
     alt: {
       'zh-hk': '香港高級商務咭片印刷 300g銅版紙 覆膜（啞膠／光膠）',
-      en: 'Hong Kong Premium Business Cards Printing 300g銅版紙 覆膜（啞膠／光膠）',
-      ja: '香港高級商務咭片印刷 300g銅版紙 覆膜（啞膠／光膠）',
+      en: 'Premium Business Cards | Professional Business Cards Hong Kong',
+      ja: '高級名刺 | 香港プロ名刺'
     },
   },
     variables: {
@@ -260,8 +260,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-business-cards-thick-business-cards-400g-zh-hk.webp', en: 'zprintpro-business-cards-thick-business-cards-400g-en.webp', ja: 'zprintpro-business-cards-thick-business-cards-400g-ja.webp' },
     alt: {
       'zh-hk': '香港厚身咭片(400g)印刷 400g超厚銅版紙 覆膜（啞膠／光膠）',
-      en: 'Hong Kong Thick Business Cards (400g) Printing 400g超厚銅版紙 覆膜（啞膠／光膠）',
-      ja: '香港厚身咭片(400g)印刷 400g超厚銅版紙 覆膜（啞膠／光膠）',
+      en: 'Thick Business Cards (400g) | Professional Business Cards Hong Kong',
+      ja: '厚紙名刺(400g) | 香港プロ名刺'
     },
   },
   },
@@ -347,8 +347,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-business-cards-foil-business-cards-zh-hk.webp', en: 'zprintpro-business-cards-foil-business-cards-en.webp', ja: 'zprintpro-business-cards-foil-business-cards-ja.webp' },
     alt: {
       'zh-hk': '香港燙金/燙銀咭片印刷 300g銅版紙 覆膜（啞膠／光膠）',
-      en: 'Hong Kong Foil Stamped Business Cards Printing 300g銅版紙 覆膜（啞膠／光膠）',
-      ja: '香港燙金/燙銀咭片印刷 300g銅版紙 覆膜（啞膠／光膠）',
+      en: 'Foil Stamped Business Cards | Professional Business Cards Hong Kong',
+      ja: '箔押し名刺 | 香港プロ名刺'
     },
   },
   },
@@ -432,8 +432,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-business-cards-spot-uv-business-cards-zh-hk.webp', en: 'zprintpro-business-cards-spot-uv-business-cards-en.webp', ja: 'zprintpro-business-cards-spot-uv-business-cards-ja.webp' },
     alt: {
       'zh-hk': '香港UV局部光油咭片印刷 300g銅版紙 局部UV',
-      en: 'Hong Kong Spot UV Business Cards Printing 300g銅版紙 局部UV',
-      ja: '香港UV局部光油咭片印刷 300g銅版紙 局部UV',
+      en: 'Spot UV Business Cards | Professional Business Cards Hong Kong',
+      ja: '局部UV名刺 | 香港プロ名刺'
     },
   },
   },
@@ -519,8 +519,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-business-cards-matte-business-cards-zh-hk.webp', en: 'zprintpro-business-cards-matte-business-cards-en.webp', ja: 'zprintpro-business-cards-matte-business-cards-ja.webp' },
     alt: {
       'zh-hk': '香港啞膠咭片印刷 300g啞粉紙 啞膠覆膜',
-      en: 'Hong Kong Matte Laminated Cards Printing 300g啞粉紙 啞膠覆膜',
-      ja: '香港啞膠咭片印刷 300g啞粉紙 啞膠覆膜',
+      en: 'Matte Laminated Cards | Professional Business Cards Hong Kong',
+      ja: 'マット名刺 | 香港プロ名刺'
     },
   },
   },
@@ -584,8 +584,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-business-cards-rounded-corner-cards-zh-hk.webp', en: 'zprintpro-business-cards-rounded-corner-cards-en.webp', ja: 'zprintpro-business-cards-rounded-corner-cards-ja.webp' },
     alt: {
       'zh-hk': '香港圓角咭片印刷 300g銅版紙 覆膜（啞膠／光膠）',
-      en: 'Hong Kong Rounded Corner Cards Printing 300g銅版紙 覆膜（啞膠／光膠）',
-      ja: '香港圓角咭片印刷 300g銅版紙 覆膜（啞膠／光膠）',
+      en: 'Rounded Corner Cards | Professional Business Cards Hong Kong',
+      ja: '丸角名刺 | 香港プロ名刺'
     },
   },
   },
@@ -650,8 +650,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-stickers-waterproof-stickers-zh-hk.webp', en: 'zprintpro-stickers-waterproof-stickers-en.webp', ja: 'zprintpro-stickers-waterproof-stickers-ja.webp' },
     alt: {
       'zh-hk': '香港防水貼紙印刷 PVC 防水／PP 合成紙 模切',
-      en: 'Hong Kong Waterproof Stickers Printing PVC 防水／PP 合成紙 模切',
-      ja: '香港防水貼紙印刷 PVC 防水／PP 合成紙 模切',
+      en: 'Waterproof Stickers | Professional Stickers Hong Kong',
+      ja: '防水ステッカー | 香港プロステッカー'
     },
   },
     variables: {
@@ -757,7 +757,7 @@ export const products: Product[] = [
     alt: {
       'zh-hk': '香港透明貼紙印刷 透明 PET 覆膜（啞膜／光膜）',
       en: 'Hong Kong Transparent Stickers Printing Clear PET Laminated',
-      ja: '香港透明ステッカー印刷 透明PET ラミネート',
+      ja: '透明ステッカー | 香港プロステッカー'
     },
   },
   },
@@ -838,8 +838,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-stickers-removable-stickers-zh-hk.webp', en: 'zprintpro-stickers-removable-stickers-en.webp', ja: 'zprintpro-stickers-removable-stickers-ja.webp' },
     alt: {
       'zh-hk': '香港可移貼紙(無殘膠)印刷 PP 合成紙／PET 透明膜 模切',
-      en: 'Hong Kong Removable Stickers Printing PP 合成紙／PET 透明膜 模切',
-      ja: '香港可移貼紙(無殘膠)印刷 PP 合成紙／PET 透明膜 模切',
+      en: 'Removable Stickers | Professional Stickers Hong Kong',
+      ja: 'はがせるステッカー | 香港プロステッカー'
     },
   },
   },
@@ -921,8 +921,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-stickers-small-batch-stickers-zh-hk.webp', en: 'zprintpro-stickers-small-batch-stickers-en.webp', ja: 'zprintpro-stickers-small-batch-stickers-ja.webp' },
     alt: {
       'zh-hk': '香港小批量貼紙印刷 銅版紙／PP 合成紙／透明 PVC／Kr 模切',
-      en: 'Hong Kong Small Batch Stickers Printing 銅版紙／PP 合成紙／透明 PVC／Kr 模切',
-      ja: '香港小批量貼紙印刷 銅版紙／PP 合成紙／透明 PVC／Kr 模切',
+      en: 'Small Batch Stickers | Professional Stickers Hong Kong',
+      ja: '小ロットステッカー | 香港プロステッカー'
     },
   },
   },
@@ -1007,8 +1007,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-stickers-die-cut-stickers-zh-hk.webp', en: 'zprintpro-stickers-die-cut-stickers-en.webp', ja: 'zprintpro-stickers-die-cut-stickers-ja.webp' },
     alt: {
       'zh-hk': '香港異形模切貼紙印刷 PVC／PP 合成紙／透明 PET 模切（全切／吻切）',
-      en: 'Hong Kong Die-cut Stickers Printing PVC／PP 合成紙／透明 PET 模切（全切／吻切）',
-      ja: '香港異形模切貼紙印刷 PVC／PP 合成紙／透明 PET 模切（全切／吻切）',
+      en: 'Die-cut Stickers | Professional Stickers Hong Kong',
+      ja: '型抜きステッカー | 香港プロステッカー'
     },
   },
   },
@@ -1091,8 +1091,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-stickers-foil-stickers-zh-hk.webp', en: 'zprintpro-stickers-foil-stickers-en.webp', ja: 'zprintpro-stickers-foil-stickers-ja.webp' },
     alt: {
       'zh-hk': '香港燙金貼紙印刷 銅版紙／合成紙 燙金／燙銀',
-      en: 'Hong Kong Foil Stickers Printing 銅版紙／合成紙 燙金／燙銀',
-      ja: '香港燙金貼紙印刷 銅版紙／合成紙 燙金／燙銀',
+      en: 'Foil Stickers | Professional Stickers Hong Kong',
+      ja: '箔押しステッカー | 香港プロステッカー'
     },
   },
   },
@@ -1175,8 +1175,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-stickers-security-stickers-zh-hk.webp', en: 'zprintpro-stickers-security-stickers-en.webp', ja: 'zprintpro-stickers-security-stickers-ja.webp' },
     alt: {
       'zh-hk': '香港防偽貼紙印刷 易碎紙／VOID／合成紙＋全息膜等（依方 模切',
-      en: 'Hong Kong Security Stickers Printing 易碎紙／VOID／合成紙＋全息膜等（依方 模切',
-      ja: '香港防偽貼紙印刷 易碎紙／VOID／合成紙＋全息膜等（依方 模切',
+      en: 'Security Stickers | Professional Stickers Hong Kong',
+      ja: 'セキュリティステッカー | 香港プロステッカー'
     },
   },
   },
@@ -1236,8 +1236,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-stickers-fluorescent-stickers-zh-hk.webp', en: 'zprintpro-stickers-fluorescent-stickers-en.webp', ja: 'zprintpro-stickers-fluorescent-stickers-ja.webp' },
     alt: {
       'zh-hk': '香港螢光貼紙印刷 螢光 PVC 膜／螢光紙 模切',
-      en: 'Hong Kong Fluorescent Stickers Printing 螢光 PVC 膜／螢光紙 模切',
-      ja: '香港螢光貼紙印刷 螢光 PVC 膜／螢光紙 模切',
+      en: 'Fluorescent Stickers | Professional Stickers Hong Kong',
+      ja: '蛍光ステッカー | 香港プロステッカー'
     },
   },
   },
@@ -1298,8 +1298,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-paper-bags-kraft-paper-bags-zh-hk.webp', en: 'zprintpro-paper-bags-kraft-paper-bags-en.webp', ja: 'zprintpro-paper-bags-kraft-paper-bags-ja.webp' },
     alt: {
       'zh-hk': '香港牛皮紙袋印刷 牛皮紙 120–200g 級（依報價） 燙金／燙銀',
-      en: 'Hong Kong Kraft Paper Bags Printing 牛皮紙 120–200g 級（依報價） 燙金／燙銀',
-      ja: '香港牛皮紙袋印刷 牛皮紙 120–200g 級（依報價） 燙金／燙銀',
+      en: 'Kraft Paper Bags | Professional Paper Bags Hong Kong',
+      ja: 'クラフト紙袋 | 香港プロ紙袋'
     },
   },
     variables: {
@@ -1405,8 +1405,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-paper-bags-white-card-bags-zh-hk.webp', en: 'zprintpro-paper-bags-white-card-bags-en.webp', ja: 'zprintpro-paper-bags-white-card-bags-ja.webp' },
     alt: {
       'zh-hk': '香港白卡紙袋印刷 白卡紙 200–300g 級（依報價） 覆膜',
-      en: 'Hong Kong White Card Bags Printing 白卡紙 200–300g 級（依報價） 覆膜',
-      ja: '香港白卡紙袋印刷 白卡紙 200–300g 級（依報價） 覆膜',
+      en: 'White Card Bags | Professional Paper Bags Hong Kong',
+      ja: '白カード紙袋 | 香港プロ紙袋'
     },
   },
   },
@@ -1489,8 +1489,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-paper-bags-gift-bags-zh-hk.webp', en: 'zprintpro-paper-bags-gift-bags-en.webp', ja: 'zprintpro-paper-bags-gift-bags-ja.webp' },
     alt: {
       'zh-hk': '香港禮品紙袋印刷 白卡／特種紙／珠光紙（依稿） 燙金',
-      en: 'Hong Kong Gift Bags Printing 白卡／特種紙／珠光紙（依稿） 燙金',
-      ja: '香港禮品紙袋印刷 白卡／特種紙／珠光紙（依稿） 燙金',
+      en: 'Gift Bags | Professional Paper Bags Hong Kong',
+      ja: 'ギフト紙袋 | 香港プロ紙袋'
     },
   },
   },
@@ -1535,6 +1535,10 @@ export const products: Product[] = [
       '/images/products/seedream-webp/zprintpro-paper-bags-eco-paper-bags-zh-hk-4.webp',
     ],
     'en': [
+      '/images/products/seedream-webp/zprintpro-paper-bags-eco-paper-bags-en-11.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-eco-paper-bags-en-12.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-eco-paper-bags-en-13.webp',
+      '/images/products/seedream-webp/zprintpro-paper-bags-eco-paper-bags-en-14.webp',
       '/images/products/seedream-webp/zprintpro-paper-bags-eco-paper-bags-en-1.webp',
       '/images/products/seedream-webp/zprintpro-paper-bags-eco-paper-bags-en-2.webp',
       '/images/products/seedream-webp/zprintpro-paper-bags-eco-paper-bags-en-3.webp',
@@ -1573,8 +1577,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-paper-bags-eco-paper-bags-zh-hk.webp', en: 'zprintpro-paper-bags-eco-paper-bags-en.webp', ja: 'zprintpro-paper-bags-eco-paper-bags-ja.webp' },
     alt: {
       'zh-hk': '香港環保紙袋印刷 FSC 牛皮／再生紙（依供應） 手挽',
-      en: 'Hong Kong Eco Paper Bags Printing FSC 牛皮／再生紙（依供應） 手挽',
-      ja: '香港環保紙袋印刷 FSC 牛皮／再生紙（依供應） 手挽',
+      en: 'Eco Paper Bags | Professional Paper Bags Hong Kong',
+      ja: 'エコ紙袋 | 香港プロ紙袋'
     },
   },
   },
@@ -1656,8 +1660,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-paper-bags-handle-bags-zh-hk.webp', en: 'zprintpro-paper-bags-handle-bags-en.webp', ja: 'zprintpro-paper-bags-handle-bags-ja.webp' },
     alt: {
       'zh-hk': '香港手挽紙袋印刷 牛皮／白卡 穿孔打釘',
-      en: 'Hong Kong Handle Bags Printing 牛皮／白卡 穿孔打釘',
-      ja: '香港手挽紙袋印刷 牛皮／白卡 穿孔打釘',
+      en: 'Handle Bags | Professional Paper Bags Hong Kong',
+      ja: '手提げ紙袋 | 香港プロ紙袋'
     },
   },
   },
@@ -1718,8 +1722,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-paper-bags-large-bags-zh-hk.webp', en: 'zprintpro-paper-bags-large-bags-en.webp', ja: 'zprintpro-paper-bags-large-bags-ja.webp' },
     alt: {
       'zh-hk': '香港大號紙袋印刷 250g 白卡紙／300g 牛皮紙／28 燙金／燙銀',
-      en: 'Hong Kong Large Bags Printing 250g 白卡紙／300g 牛皮紙／28 燙金／燙銀',
-      ja: '香港大號紙袋印刷 250g 白卡紙／300g 牛皮紙／28 燙金／燙銀',
+      en: 'Large Bags | Professional Paper Bags Hong Kong',
+      ja: '大判紙袋 | 香港プロ紙袋'
     },
   },
   },
@@ -1775,8 +1779,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-flyers-a4-flyers-zh-hk.webp', en: 'zprintpro-flyers-a4-flyers-en.webp', ja: 'zprintpro-flyers-a4-flyers-ja.webp' },
     alt: {
       'zh-hk': '香港A4宣傳單張印刷 157g銅版紙 覆膜（啞膜／光膜可選）',
-      en: 'Hong Kong A4 Flyers Printing 157g銅版紙 覆膜（啞膜／光膜可選）',
-      ja: '香港A4宣傳單張印刷 157g銅版紙 覆膜（啞膜／光膜可選）',
+      en: 'A4 Flyers | Professional Flyers Hong Kong',
+      ja: 'A4チラシ | 香港プロチラシ'
     },
   },
     variables: {
@@ -1878,8 +1882,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-flyers-a5-flyers-zh-hk.webp', en: 'zprintpro-flyers-a5-flyers-en.webp', ja: 'zprintpro-flyers-a5-flyers-ja.webp' },
     alt: {
       'zh-hk': '香港A5宣傳單張印刷 128g銅版紙 覆膜（啞膜／光膜可選）',
-      en: 'Hong Kong A5 Flyers Printing 128g銅版紙 覆膜（啞膜／光膜可選）',
-      ja: '香港A5宣傳單張印刷 128g銅版紙 覆膜（啞膜／光膜可選）',
+      en: 'A5 Flyers | Professional Flyers Hong Kong',
+      ja: 'A5チラシ | 香港プロチラシ'
     },
   },
   },
@@ -1959,8 +1963,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-flyers-double-sided-flyers-zh-hk.webp', en: 'zprintpro-flyers-double-sided-flyers-en.webp', ja: 'zprintpro-flyers-double-sided-flyers-ja.webp' },
     alt: {
       'zh-hk': '香港雙面宣傳單張印刷 157g銅版紙 覆膜（啞膜／光膜可選）',
-      en: 'Hong Kong Double-sided Flyers Printing 157g銅版紙 覆膜（啞膜／光膜可選）',
-      ja: '香港雙面宣傳單張印刷 157g銅版紙 覆膜（啞膜／光膜可選）',
+      en: 'Double-sided Flyers | Professional Flyers Hong Kong',
+      ja: '両面チラシ | 香港プロチラシ'
     },
   },
   },
@@ -2038,8 +2042,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-flyers-folded-leaflets-zh-hk.webp', en: 'zprintpro-flyers-folded-leaflets-en.webp', ja: 'zprintpro-flyers-folded-leaflets-ja.webp' },
     alt: {
       'zh-hk': '香港摺疊宣傳單張印刷 157g 壓線',
-      en: 'Hong Kong Folded Leaflets Printing 157g 壓線',
-      ja: '香港摺疊宣傳單張印刷 157g 壓線',
+      en: 'Folded Leaflets | Professional Flyers Hong Kong',
+      ja: '折りたたみパンフレット | 香港プロチラシ'
     },
   },
   },
@@ -2117,8 +2121,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-flyers-thick-paper-flyers-zh-hk.webp', en: 'zprintpro-flyers-thick-paper-flyers-en.webp', ja: 'zprintpro-flyers-thick-paper-flyers-ja.webp' },
     alt: {
       'zh-hk': '香港厚紙宣傳單張印刷 200g 覆膜（啞膜／光膜可選）',
-      en: 'Hong Kong Thick Paper Flyers Printing 200g 覆膜（啞膜／光膜可選）',
-      ja: '香港厚紙宣傳單張印刷 200g 覆膜（啞膜／光膜可選）',
+      en: 'Thick Paper Flyers | Professional Flyers Hong Kong',
+      ja: '厚紙チラシ | 香港プロチラシ'
     },
   },
   },
@@ -2199,8 +2203,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-flyers-eco-flyers-zh-hk.webp', en: 'zprintpro-flyers-eco-flyers-en.webp', ja: 'zprintpro-flyers-eco-flyers-ja.webp' },
     alt: {
       'zh-hk': '香港環保宣傳單張印刷 FSC認證再生紙 無覆膜（環保）或水性光油',
-      en: 'Hong Kong Eco Flyers Printing FSC認證再生紙 無覆膜（環保）或水性光油',
-      ja: '香港環保宣傳單張印刷 FSC認證再生紙 無覆膜（環保）或水性光油',
+      en: 'Eco Flyers | Professional Flyers Hong Kong',
+      ja: 'エコチラシ | 香港プロチラシ'
     },
   },
   },
@@ -2258,8 +2262,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-flyers-same-day-flyers-zh-hk.webp', en: 'zprintpro-flyers-same-day-flyers-en.webp', ja: 'zprintpro-flyers-same-day-flyers-ja.webp' },
     alt: {
       'zh-hk': '香港即日宣傳單張印刷 157g銅版紙 無覆膜或啞膜（加時）',
-      en: 'Hong Kong Same-day Flyers Printing 157g銅版紙 無覆膜或啞膜（加時）',
-      ja: '香港即日宣傳單張印刷 157g銅版紙 無覆膜或啞膜（加時）',
+      en: 'Same-day Flyers | Professional Flyers Hong Kong',
+      ja: '即日チラシ | 香港プロチラシ'
     },
   },
   },
@@ -2318,8 +2322,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-posters-a2-posters-zh-hk.webp', en: 'zprintpro-posters-a2-posters-en.webp', ja: 'zprintpro-posters-a2-posters-ja.webp' },
     alt: {
       'zh-hk': '香港A2海報印刷印刷 157g 銅版紙（可升 200g／相紙） PP 裱貼',
-      en: 'Hong Kong A2 Posters Printing 157g 銅版紙（可升 200g／相紙） PP 裱貼',
-      ja: '香港A2海報印刷印刷 157g 銅版紙（可升 200g／相紙） PP 裱貼',
+      en: 'A2 Posters | Professional Posters Hong Kong',
+      ja: 'A2ポスター | 香港プロポスター'
     },
   },
     variables: {
@@ -2424,8 +2428,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-posters-a1-posters-zh-hk.webp', en: 'zprintpro-posters-a1-posters-en.webp', ja: 'zprintpro-posters-a1-posters-ja.webp' },
     alt: {
       'zh-hk': '香港A1大幅海報印刷 157–200g 銅版 PP 護膜',
-      en: 'Hong Kong A1 Large Posters Printing 157–200g 銅版 PP 護膜',
-      ja: '香港A1大幅海報印刷 157–200g 銅版 PP 護膜',
+      en: 'A1 Large Posters | Professional Posters Hong Kong',
+      ja: 'A1大型ポスター | 香港プロポスター'
     },
   },
   },
@@ -2501,8 +2505,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-posters-outdoor-posters-zh-hk.webp', en: 'zprintpro-posters-outdoor-posters-en.webp', ja: 'zprintpro-posters-outdoor-posters-ja.webp' },
     alt: {
       'zh-hk': '香港戶外海報印刷 戶外 PVC／PET／合成紙 霧面護膜',
-      en: 'Hong Kong Outdoor Posters Printing 戶外 PVC／PET／合成紙 霧面護膜',
-      ja: '香港戶外海報印刷 戶外 PVC／PET／合成紙 霧面護膜',
+      en: 'Outdoor Posters | Professional Posters Hong Kong',
+      ja: '屋外ポスター | 香港プロポスター'
     },
   },
   },
@@ -2585,8 +2589,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-posters-display-posters-zh-hk.webp', en: 'zprintpro-posters-display-posters-en.webp', ja: 'zprintpro-posters-display-posters-ja.webp' },
     alt: {
       'zh-hk': '香港展架海報印刷 180g–200g PP 合成紙／背膠  覆膜（啞膜／光膜）',
-      en: 'Hong Kong Display Posters Printing 180g–200g PP 合成紙／背膠  覆膜（啞膜／光膜）',
-      ja: '香港展架海報印刷 180g–200g PP 合成紙／背膠  覆膜（啞膜／光膜）',
+      en: 'Display Posters | Professional Posters Hong Kong',
+      ja: '展示用ポスター | 香港プロポスター'
     },
   },
   },
@@ -2669,8 +2673,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-posters-art-posters-zh-hk.webp', en: 'zprintpro-posters-art-posters-en.webp', ja: 'zprintpro-posters-art-posters-ja.webp' },
     alt: {
       'zh-hk': '香港藝術海報印刷 200g–250g 啞粉藝術紙／260g 啞面／絲絨面／半光面',
-      en: 'Hong Kong Art Posters Printing 200g–250g 啞粉藝術紙／260g 啞面／絲絨面／半光面',
-      ja: '香港藝術海報印刷 200g–250g 啞粉藝術紙／260g 啞面／絲絨面／半光面',
+      en: 'Art Posters | Professional Posters Hong Kong',
+      ja: 'アートポスター | 香港プロポスター'
     },
   },
   },
@@ -2731,8 +2735,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-posters-adhesive-posters-zh-hk.webp', en: 'zprintpro-posters-adhesive-posters-en.webp', ja: 'zprintpro-posters-adhesive-posters-ja.webp' },
     alt: {
       'zh-hk': '香港背膠海報印刷 150g–180g 背膠 PP／鑄造級  模切',
-      en: 'Hong Kong Adhesive Posters Printing 150g–180g 背膠 PP／鑄造級  模切',
-      ja: '香港背膠海報印刷 150g–180g 背膠 PP／鑄造級  模切',
+      en: 'Adhesive Posters | Professional Posters Hong Kong',
+      ja: '粘着ポスター | 香港プロポスター'
     },
   },
   },
@@ -2799,8 +2803,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-packaging-gift-boxes-zh-hk.webp', en: 'zprintpro-packaging-gift-boxes-en.webp', ja: 'zprintpro-packaging-gift-boxes-ja.webp' },
     alt: {
       'zh-hk': '香港禮品盒定制印刷 白卡紙／牛皮裱面／硬紙板結構（依報價） 覆膜',
-      en: 'Hong Kong Gift Boxes Printing 白卡紙／牛皮裱面／硬紙板結構（依報價） 覆膜',
-      ja: '香港禮品盒定制印刷 白卡紙／牛皮裱面／硬紙板結構（依報價） 覆膜',
+      en: 'Gift Boxes | Professional Packaging Hong Kong',
+      ja: 'ギフトボックス | 香港プロパッケージ'
     },
   },
     variables: {
@@ -2912,8 +2916,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-packaging-cosmetic-boxes-zh-hk.webp', en: 'zprintpro-packaging-cosmetic-boxes-en.webp', ja: 'zprintpro-packaging-cosmetic-boxes-ja.webp' },
     alt: {
       'zh-hk': '香港化妝品盒印刷 白卡／硬紙板 覆膜',
-      en: 'Hong Kong Cosmetic Boxes Printing 白卡／硬紙板 覆膜',
-      ja: '香港化妝品盒印刷 白卡／硬紙板 覆膜',
+      en: 'Cosmetic Boxes | Professional Packaging Hong Kong',
+      ja: '化粧品箱 | 香港プロパッケージ'
     },
   },
   },
@@ -3001,8 +3005,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-packaging-food-boxes-zh-hk.webp', en: 'zprintpro-packaging-food-boxes-en.webp', ja: 'zprintpro-packaging-food-boxes-ja.webp' },
     alt: {
       'zh-hk': '香港食品包裝盒印刷 350g 食品級白卡／400g 灰底白板 燙金／燙銀',
-      en: 'Hong Kong Food Boxes Printing 350g 食品級白卡／400g 灰底白板 燙金／燙銀',
-      ja: '香港食品包裝盒印刷 350g 食品級白卡／400g 灰底白板 燙金／燙銀',
+      en: 'Food Boxes | Professional Packaging Hong Kong',
+      ja: '食品包装箱 | 香港プロパッケージ'
     },
   },
   },
@@ -3089,8 +3093,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-packaging-mailer-boxes-zh-hk.webp', en: 'zprintpro-packaging-mailer-boxes-en.webp', ja: 'zprintpro-packaging-mailer-boxes-ja.webp' },
     alt: {
       'zh-hk': '香港快遞盒/飛機盒印刷 E／B 坑瓦楞 模切',
-      en: 'Hong Kong Mailer Boxes Printing E／B 坑瓦楞 模切',
-      ja: '香港快遞盒/飛機盒印刷 E／B 坑瓦楞 模切',
+      en: 'Mailer Boxes | Professional Packaging Hong Kong',
+      ja: '発送箱 | 香港プロパッケージ'
     },
   },
   },
@@ -3177,8 +3181,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-packaging-folding-boxes-zh-hk.webp', en: 'zprintpro-packaging-folding-boxes-en.webp', ja: 'zprintpro-packaging-folding-boxes-ja.webp' },
     alt: {
       'zh-hk': '香港折疊盒印刷 300g–350g 白卡紙／E 坑瓦楞紙 覆膜（啞膜／光膜）',
-      en: 'Hong Kong Folding Boxes Printing 300g–350g 白卡紙／E 坑瓦楞紙 覆膜（啞膜／光膜）',
-      ja: '香港折疊盒印刷 300g–350g 白卡紙／E 坑瓦楞紙 覆膜（啞膜／光膜）',
+      en: 'Folding Boxes | Professional Packaging Hong Kong',
+      ja: '折りたたみ箱 | 香港プロパッケージ'
     },
   },
   },
@@ -3261,8 +3265,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-packaging-rigid-boxes-zh-hk.webp', en: 'zprintpro-packaging-rigid-boxes-en.webp', ja: 'zprintpro-packaging-rigid-boxes-ja.webp' },
     alt: {
       'zh-hk': '香港精裝盒印刷 灰板＋特種裱面紙 燙金',
-      en: 'Hong Kong Rigid Boxes Printing 灰板＋特種裱面紙 燙金',
-      ja: '香港精裝盒印刷 灰板＋特種裱面紙 燙金',
+      en: 'Rigid Boxes | Professional Packaging Hong Kong',
+      ja: '上製本箱 | 香港プロパッケージ'
     },
   },
   },
@@ -3324,8 +3328,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-red-packets-foil-red-packets-zh-hk.webp', en: 'zprintpro-red-packets-foil-red-packets-en.webp', ja: 'zprintpro-red-packets-foil-red-packets-ja.webp' },
     alt: {
       'zh-hk': '香港燙金利是封印刷 120g紅色紙張 燙金',
-      en: 'Hong Kong Foil Red Packets Printing 120g紅色紙張 燙金',
-      ja: '香港燙金利是封印刷 120g紅色紙張 燙金',
+      en: 'Foil Red Packets | Professional Red Packets Hong Kong',
+      ja: '箔押しポチ袋 | 香港プロポチ袋'
     },
   },
   },
@@ -3408,8 +3412,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-red-packets-embossed-red-packets-zh-hk.webp', en: 'zprintpro-red-packets-embossed-red-packets-en.webp', ja: 'zprintpro-red-packets-embossed-red-packets-ja.webp' },
     alt: {
       'zh-hk': '香港浮雕利是封印刷 150g紅色紙張 浮雕',
-      en: 'Hong Kong Embossed Red Packets Printing 150g紅色紙張 浮雕',
-      ja: '香港浮雕利是封印刷 150g紅色紙張 浮雕',
+      en: 'Embossed Red Packets | Professional Red Packets Hong Kong',
+      ja: 'エンボスポチ袋 | 香港プロポチ袋'
     },
   },
   },
@@ -3492,8 +3496,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-red-packets-custom-red-packets-zh-hk.webp', en: 'zprintpro-red-packets-custom-red-packets-en.webp', ja: 'zprintpro-red-packets-custom-red-packets-ja.webp' },
     alt: {
       'zh-hk': '香港定制利是封印刷 120g–150g紅色 燙金',
-      en: 'Hong Kong Custom Red Packets Printing 120g–150g紅色 燙金',
-      ja: '香港定制利是封印刷 120g–150g紅色 燙金',
+      en: 'Custom Red Packets | Professional Red Packets Hong Kong',
+      ja: 'オリジナルポチ袋 | 香港プロポチ袋'
     },
   },
   },
@@ -3574,8 +3578,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-red-packets-cartoon-red-packets-zh-hk.webp', en: 'zprintpro-red-packets-cartoon-red-packets-en.webp', ja: 'zprintpro-red-packets-cartoon-red-packets-ja.webp' },
     alt: {
       'zh-hk': '香港卡通利是封印刷 120g銅版紙 燙金',
-      en: 'Hong Kong Cartoon Red Packets Printing 120g銅版紙 燙金',
-      ja: '香港卡通利是封印刷 120g銅版紙 燙金',
+      en: 'Cartoon Red Packets | Professional Red Packets Hong Kong',
+      ja: 'キャラクターポチ袋 | 香港プロポチ袋'
     },
   },
   },
@@ -3658,8 +3662,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-red-packets-eco-red-packets-zh-hk.webp', en: 'zprintpro-red-packets-eco-red-packets-en.webp', ja: 'zprintpro-red-packets-eco-red-packets-ja.webp' },
     alt: {
       'zh-hk': '香港環保利是封印刷 FSC認證再生紙 無覆膜（環保）',
-      en: 'Hong Kong Eco Red Packets Printing FSC認證再生紙 無覆膜（環保）',
-      ja: '香港環保利是封印刷 FSC認證再生紙 無覆膜（環保）',
+      en: 'Eco Red Packets | Professional Red Packets Hong Kong',
+      ja: 'エコポチ袋 | 香港プロポチ袋'
     },
   },
   },
@@ -3742,8 +3746,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-red-packets-large-red-packets-zh-hk.webp', en: 'zprintpro-red-packets-large-red-packets-en.webp', ja: 'zprintpro-red-packets-large-red-packets-ja.webp' },
     alt: {
       'zh-hk': '香港大號利是封印刷 150g–200g紅色紙張 燙金',
-      en: 'Hong Kong Large Red Packets Printing 150g–200g紅色紙張 燙金',
-      ja: '香港大號利是封印刷 150g–200g紅色紙張 燙金',
+      en: 'Large Red Packets | Professional Red Packets Hong Kong',
+      ja: '大判ポチ袋 | 香港プロポチ袋'
     },
   },
   },
@@ -3809,8 +3813,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-calendars-wall-calendars-zh-hk.webp', en: 'zprintpro-calendars-wall-calendars-en.webp', ja: 'zprintpro-calendars-wall-calendars-ja.webp' },
     alt: {
       'zh-hk': '香港掛牆年曆印刷 250g–300g銅版紙 金屬圈裝訂',
-      en: 'Hong Kong Wall Calendars Printing 250g–300g銅版紙 金屬圈裝訂',
-      ja: '香港掛牆年曆印刷 250g–300g銅版紙 金屬圈裝訂',
+      en: 'Wall Calendars | Professional Calendars Hong Kong',
+      ja: '壁掛けカレンダー | 香港プロカレンダー'
     },
   },
   },
@@ -3884,8 +3888,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-calendars-desk-calendars-zh-hk.webp', en: 'zprintpro-calendars-desk-calendars-en.webp', ja: 'zprintpro-calendars-desk-calendars-ja.webp' },
     alt: {
       'zh-hk': '香港座檯年曆印刷 200g–250g銅版紙 三角座架',
-      en: 'Hong Kong Desk Calendars Printing 200g–250g銅版紙 三角座架',
-      ja: '香港座檯年曆印刷 200g–250g銅版紙 三角座架',
+      en: 'Desk Calendars | Professional Calendars Hong Kong',
+      ja: '卓上カレンダー | 香港プロカレンダー'
     },
   },
   },
@@ -3963,8 +3967,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-calendars-custom-calendars-zh-hk.webp', en: 'zprintpro-calendars-custom-calendars-en.webp', ja: 'zprintpro-calendars-custom-calendars-ja.webp' },
     alt: {
       'zh-hk': '香港定制年曆印刷 250g–300g藝術紙 燙金',
-      en: 'Hong Kong Custom Calendars Printing 250g–300g藝術紙 燙金',
-      ja: '香港定制年曆印刷 250g–300g藝術紙 燙金',
+      en: 'Custom Calendars | Professional Calendars Hong Kong',
+      ja: 'オリジナルカレンダー | 香港プロカレンダー'
     },
   },
   },
@@ -4043,8 +4047,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-calendars-mini-calendars-zh-hk.webp', en: 'zprintpro-calendars-mini-calendars-en.webp', ja: 'zprintpro-calendars-mini-calendars-ja.webp' },
     alt: {
       'zh-hk': '香港迷你年曆印刷 150g–200g銅版紙 騎馬釘或單張裁切',
-      en: 'Hong Kong Mini Calendars Printing 150g–200g銅版紙 騎馬釘或單張裁切',
-      ja: '香港迷你年曆印刷 150g–200g銅版紙 騎馬釘或單張裁切',
+      en: 'Mini Calendars | Professional Calendars Hong Kong',
+      ja: 'ミニカレンダー | 香港プロカレンダー'
     },
   },
   },
@@ -4124,8 +4128,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-calendars-photo-frame-calendars-zh-hk.webp', en: 'zprintpro-calendars-photo-frame-calendars-en.webp', ja: 'zprintpro-calendars-photo-frame-calendars-ja.webp' },
     alt: {
       'zh-hk': '香港相框年曆印刷 250g–300g銅版紙 硬紙板相架底座',
-      en: 'Hong Kong Photo Frame Calendars Printing 250g–300g銅版紙 硬紙板相架底座',
-      ja: '香港相框年曆印刷 250g–300g銅版紙 硬紙板相架底座',
+      en: 'Photo Frame Calendars | Professional Calendars Hong Kong',
+      ja: 'フォトフレームカレンダー | 香港プロカレンダー'
     },
   },
   },
@@ -4207,8 +4211,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-calendars-magnetic-calendars-zh-hk.webp', en: 'zprintpro-calendars-magnetic-calendars-en.webp', ja: 'zprintpro-calendars-magnetic-calendars-ja.webp' },
     alt: {
       'zh-hk': '香港磁石年曆印刷 200g–250g銅版紙 軟磁片貼合',
-      en: 'Hong Kong Magnetic Calendars Printing 200g–250g銅版紙 軟磁片貼合',
-      ja: '香港磁石年曆印刷 200g–250g銅版紙 軟磁片貼合',
+      en: 'Magnetic Calendars | Professional Calendars Hong Kong',
+      ja: 'マグネットカレンダー | 香港プロカレンダー'
     },
   },
   },
@@ -4273,8 +4277,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-menus-pvc-menus-zh-hk.webp', en: 'zprintpro-menus-pvc-menus-en.webp', ja: 'zprintpro-menus-pvc-menus-ja.webp' },
     alt: {
       'zh-hk': '香港PVC餐牌印刷 0.5mm–1.0mm透明 圓角或直角裁切',
-      en: 'Hong Kong PVC Menus Printing 0.5mm–1.0mm透明 圓角或直角裁切',
-      ja: '香港PVC餐牌印刷 0.5mm–1.0mm透明 圓角或直角裁切',
+      en: 'PVC Menus | Professional Menus Hong Kong',
+      ja: 'PVCメニュー | 香港プロメニュー'
     },
   },
   },
@@ -4359,8 +4363,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-menus-laminated-menus-zh-hk.webp', en: 'zprintpro-menus-laminated-menus-en.webp', ja: 'zprintpro-menus-laminated-menus-ja.webp' },
     alt: {
       'zh-hk': '香港過膠餐牌印刷 200g–250g銅版紙 覆膜（啞膠／光膠）',
-      en: 'Hong Kong Laminated Menus Printing 200g–250g銅版紙 覆膜（啞膠／光膠）',
-      ja: '香港過膠餐牌印刷 200g–250g銅版紙 覆膜（啞膠／光膠）',
+      en: 'Laminated Menus | Professional Menus Hong Kong',
+      ja: 'ラミネートメニュー | 香港プロメニュー'
     },
   },
   },
@@ -4446,8 +4450,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-menus-hardcover-menus-zh-hk.webp', en: 'zprintpro-menus-hardcover-menus-en.webp', ja: 'zprintpro-menus-hardcover-menus-ja.webp' },
     alt: {
       'zh-hk': '香港精裝餐牌印刷 硬紙板封面裱糊銅版紙 燙金',
-      en: 'Hong Kong Hardcover Menus Printing 硬紙板封面裱糊銅版紙 燙金',
-      ja: '香港精裝餐牌印刷 硬紙板封面裱糊銅版紙 燙金',
+      en: 'Hardcover Menus | Professional Menus Hong Kong',
+      ja: '高級メニュー | 香港プロメニュー'
     },
   },
   },
@@ -4530,8 +4534,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-menus-drink-menus-zh-hk.webp', en: 'zprintpro-menus-drink-menus-en.webp', ja: 'zprintpro-menus-drink-menus-ja.webp' },
     alt: {
       'zh-hk': '香港酒水牌印刷 200g–250g銅版紙 覆膜（啞膠）',
-      en: 'Hong Kong Drink Menus Printing 200g–250g銅版紙 覆膜（啞膠）',
-      ja: '香港酒水牌印刷 200g–250g銅版紙 覆膜（啞膠）',
+      en: 'Drink Menus | Professional Menus Hong Kong',
+      ja: 'ドリンクメニュー | 香港プロメニュー'
     },
   },
   },
@@ -4614,8 +4618,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-menus-disposable-menus-zh-hk.webp', en: 'zprintpro-menus-disposable-menus-en.webp', ja: 'zprintpro-menus-disposable-menus-ja.webp' },
     alt: {
       'zh-hk': '香港一次性餐牌印刷 100g–120g書紙 無覆膜（即棄）',
-      en: 'Hong Kong Disposable Menus Printing 100g–120g書紙 無覆膜（即棄）',
-      ja: '香港一次性餐牌印刷 100g–120g書紙 無覆膜（即棄）',
+      en: 'Disposable Menus | Professional Menus Hong Kong',
+      ja: '使い捨てメニュー | 香港プロメニュー'
     },
   },
   },
@@ -4679,8 +4683,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-banners-outdoor-vinyl-banners-zh-hk.webp', en: 'zprintpro-banners-outdoor-vinyl-banners-en.webp', ja: 'zprintpro-banners-outdoor-vinyl-banners-ja.webp' },
     alt: {
       'zh-hk': '香港戶外燈布噴繪印刷 外光／內光 PVC 燈布（依場景） 打扣',
-      en: 'Hong Kong Outdoor Vinyl Banners Printing 外光／內光 PVC 燈布（依場景） 打扣',
-      ja: '香港戶外燈布噴繪印刷 外光／內光 PVC 燈布（依場景） 打扣',
+      en: 'Outdoor Vinyl Banners | Professional Banners Hong Kong',
+      ja: '屋外バナー | 香港プロバナー'
     },
   },
   },
@@ -4763,8 +4767,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-banners-roll-up-banners-zh-hk.webp', en: 'zprintpro-banners-roll-up-banners-en.webp', ja: 'zprintpro-banners-roll-up-banners-ja.webp' },
     alt: {
       'zh-hk': '香港易拉寶印刷 PET／PVC 片 加重桿',
-      en: 'Hong Kong Roll-up Banners Printing PET／PVC 片 加重桿',
-      ja: '香港易拉寶印刷 PET／PVC 片 加重桿',
+      en: 'Roll-up Banners | Professional Banners Hong Kong',
+      ja: 'ロールアップバナー | 香港プロバナー'
     },
   },
   },
@@ -4848,8 +4852,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-banners-adhesive-banners-zh-hk.webp', en: 'zprintpro-banners-adhesive-banners-en.webp', ja: 'zprintpro-banners-adhesive-banners-ja.webp' },
     alt: {
       'zh-hk': '香港背膠噴繪印刷 PVC 車貼／可移膠／透明膜（依場景） 霧面護膜',
-      en: 'Hong Kong Adhesive Banners Printing PVC 車貼／可移膠／透明膜（依場景） 霧面護膜',
-      ja: '香港背膠噴繪印刷 PVC 車貼／可移膠／透明膜（依場景） 霧面護膜',
+      en: 'Adhesive Banners | Professional Banners Hong Kong',
+      ja: '粘着バナー | 香港プロバナー'
     },
   },
   },
@@ -4932,8 +4936,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-banners-vehicle-wraps-zh-hk.webp', en: 'zprintpro-banners-vehicle-wraps-en.webp', ja: 'zprintpro-banners-vehicle-wraps-ja.webp' },
     alt: {
       'zh-hk': '香港車身廣告印刷 鑄造級 PVC 車貼 80–100 微米 亮面／啞面覆膜',
-      en: 'Hong Kong Vehicle Wraps Printing 鑄造級 PVC 車貼 80–100 微米 亮面／啞面覆膜',
-      ja: '香港車身廣告印刷 鑄造級 PVC 車貼 80–100 微米 亮面／啞面覆膜',
+      en: 'Vehicle Wraps | Professional Banners Hong Kong',
+      ja: 'カーラッピング | 香港プロバナー'
     },
   },
   },
@@ -5016,8 +5020,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-banners-mesh-banners-zh-hk.webp', en: 'zprintpro-banners-mesh-banners-en.webp', ja: 'zprintpro-banners-mesh-banners-ja.webp' },
     alt: {
       'zh-hk': '香港網格布噴繪印刷 270g–350g PVC 網格夾網布 熱封邊',
-      en: 'Hong Kong Mesh Banners Printing 270g–350g PVC 網格夾網布 熱封邊',
-      ja: '香港網格布噴繪印刷 270g–350g PVC 網格夾網布 熱封邊',
+      en: 'Mesh Banners | Professional Banners Hong Kong',
+      ja: 'メッシュバナー | 香港プロバナー'
     },
   },
   },
@@ -5084,8 +5088,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-books-catalog-printing-zh-hk.webp', en: 'zprintpro-books-catalog-printing-en.webp', ja: 'zprintpro-books-catalog-printing-ja.webp' },
     alt: {
       'zh-hk': '香港畫冊印刷印刷 內頁157g–200g銅版紙 覆膜（啞膜／光膜）',
-      en: 'Hong Kong Catalog Printing Printing 內頁157g–200g銅版紙 覆膜（啞膜／光膜）',
-      ja: '香港畫冊印刷印刷 內頁157g–200g銅版紙 覆膜（啞膜／光膜）',
+      en: 'Catalog Printing | Professional Books Hong Kong',
+      ja: 'カタログ印刷 | 香港プロ書籍'
     },
   },
   },
@@ -5169,8 +5173,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-books-saddle-stitch-booklets-zh-hk.webp', en: 'zprintpro-books-saddle-stitch-booklets-en.webp', ja: 'zprintpro-books-saddle-stitch-booklets-ja.webp' },
     alt: {
       'zh-hk': '香港騎馬釘小冊子印刷 128g–157g銅版紙 騎馬釘裝訂',
-      en: 'Hong Kong Saddle Stitch Booklets Printing 128g–157g銅版紙 騎馬釘裝訂',
-      ja: '香港騎馬釘小冊子印刷 128g–157g銅版紙 騎馬釘裝訂',
+      en: 'Saddle Stitch Booklets | Professional Books Hong Kong',
+      ja: '中綴じ冊子 | 香港プロ書籍'
     },
   },
   },
@@ -5257,8 +5261,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-books-perfect-bound-books-zh-hk.webp', en: 'zprintpro-books-perfect-bound-books-en.webp', ja: 'zprintpro-books-perfect-bound-books-ja.webp' },
     alt: {
       'zh-hk': '香港無線膠裝書籍印刷 內頁157g–200g銅版紙 膠裝',
-      en: 'Hong Kong Perfect Bound Books Printing 內頁157g–200g銅版紙 膠裝',
-      ja: '香港無線膠裝書籍印刷 內頁157g–200g銅版紙 膠裝',
+      en: 'Perfect Bound Books | Professional Books Hong Kong',
+      ja: '無線綴じ本 | 香港プロ書籍'
     },
   },
   },
@@ -5341,8 +5345,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-books-hardcover-books-zh-hk.webp', en: 'zprintpro-books-hardcover-books-en.webp', ja: 'zprintpro-books-hardcover-books-ja.webp' },
     alt: {
       'zh-hk': '香港精裝書籍印刷 硬紙板封面裱糊銅版紙 膠裝',
-      en: 'Hong Kong Hardcover Books Printing 硬紙板封面裱糊銅版紙 膠裝',
-      ja: '香港精裝書籍印刷 硬紙板封面裱糊銅版紙 膠裝',
+      en: 'Hardcover Books | Professional Books Hong Kong',
+      ja: '上製本 | 香港プロ書籍'
     },
   },
   },
@@ -5429,8 +5433,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-books-spiral-notebooks-zh-hk.webp', en: 'zprintpro-books-spiral-notebooks-en.webp', ja: 'zprintpro-books-spiral-notebooks-ja.webp' },
     alt: {
       'zh-hk': '香港線圈筆記本印刷 內頁80g–100g書紙 YO圈或螺旋裝訂',
-      en: 'Hong Kong Spiral Notebooks Printing 內頁80g–100g書紙 YO圈或螺旋裝訂',
-      ja: '香港線圈筆記本印刷 內頁80g–100g書紙 YO圈或螺旋裝訂',
+      en: 'Spiral Notebooks | Professional Books Hong Kong',
+      ja: 'リングノート | 香港プロ書籍'
     },
   },
   },
@@ -5494,8 +5498,8 @@ export const products: Product[] = [
     filename: { 'zh-hk': 'zprintpro-envelopes-business-envelopes-zh-hk.webp', en: 'zprintpro-envelopes-business-envelopes-en.webp', ja: 'zprintpro-envelopes-business-envelopes-ja.webp' },
     alt: {
       'zh-hk': '香港公司信封印刷 80–120g 書紙／本白書紙 自黏封口',
-      en: 'Hong Kong Business Envelopes Printing 80–120g 書紙／本白書紙 自黏封口',
-      ja: '香港公司信封印刷 80–120g 書紙／本白書紙 自黏封口',
+      en: 'Business Envelopes | Professional Envelopes Hong Kong',
+      ja: 'ビジネス封筒 | 香港プロ封筒'
     },
   },
   },
@@ -5560,7 +5564,7 @@ export const products: Product[] = [
     alt: {
       'zh-hk': '香港彩色信封印刷 120g雙膠紙 四色印刷',
       en: 'Hong Kong Colored Envelopes Printing 120g Offset Paper 4-Color',
-      ja: '香港カラー封筒印刷 120gオフセット紙 4色印刷',
+      ja: 'カラー封筒 | 香港プロ封筒'
     },
   },
     variables: {
@@ -5647,7 +5651,7 @@ export const products: Product[] = [
     alt: {
       'zh-hk': '香港大號信封印刷 150g牛皮紙 耐用厚實',
       en: 'Hong Kong Large Envelopes Printing 150g Kraft Paper Durable',
-      ja: '香港大判封筒印刷 150gクラフト紙 厚手耐久',
+      ja: '大判封筒 | 香港プロ封筒'
     },
   },
     variables: {
@@ -5733,7 +5737,7 @@ export const products: Product[] = [
     alt: {
       'zh-hk': '香港珠光信封印刷 120g珠光紙 高檔質感',
       en: 'Hong Kong Pearl Envelopes Printing 120g Pearl Paper Premium',
-      ja: '香港パール封筒印刷 120gパール紙 高級感',
+      ja: 'パール封筒 | 香港プロ封筒'
     },
   },
     variables: {
@@ -5821,7 +5825,7 @@ export const products: Product[] = [
     alt: {
       'zh-hk': '香港練習簿印刷 80g書寫紙 膠裝裝訂',
       en: 'Hong Kong Exercise Books Printing 80g Writing Paper Perfect Bound',
-      ja: '香港ワークブック印刷 80g書き紙 無線綴じ',
+      ja: 'ワークブック印刷 | 香港プロ教育印刷'
     },
   },
     },
@@ -5888,7 +5892,7 @@ export const products: Product[] = [
     alt: {
       'zh-hk': '香港證書印刷 250g珠光紙 燙金工藝',
       en: 'Hong Kong Certificates Printing 250g Pearl Paper Foil Stamped',
-      ja: '香港証明書印刷 250gパール紙 箔押し加工',
+      ja: '賞状印刷 | 香港プロ教育印刷'
     },
   },
     variables: {
@@ -5976,7 +5980,7 @@ export const products: Product[] = [
     alt: {
       'zh-hk': '香港校園傳單印刷 157g銅版紙 雙面彩色',
       en: 'Hong Kong School Flyers Printing 157g Glossy Paper Double-sided Color',
-      ja: '香港学校チラシ印刷 157gコート紙 両面カラー',
+      ja: '学校チラシ | 香港プロ教育印刷'
     },
   },
     variables: {
@@ -6061,7 +6065,7 @@ export const products: Product[] = [
     alt: {
       'zh-hk': '香港教科書印刷 80g雙膠紙 膠裝精裝',
       en: 'Hong Kong Textbooks Printing 80g Offset Paper Perfect Bound',
-      ja: '香港教科書印刷 80gオフセット紙 無線綴じ',
+      ja: '教科書印刷 | 香港プロ教育印刷'
     },
   },
     variables: {
@@ -6149,7 +6153,7 @@ export const products: Product[] = [
     alt: {
       'zh-hk': '香港磁吸翻蓋禮盒印刷 350g白卡紙 燙金Logo',
       en: 'Hong Kong Magnetic Closure Gift Box Printing 350g White Card Foil Logo',
-      ja: '香港マグネット蓋ギフト箱印刷 350g白カード紙 箔押しロゴ',
+      ja: 'マグネット蓋ギフトボックス | 香港プロパッケージ'
     },
   },
     },
@@ -6216,7 +6220,7 @@ export const products: Product[] = [
     alt: {
       'zh-hk': '香港電子產品包裝盒印刷 400g灰板紙 防靜電設計',
       en: 'Hong Kong Electronics Packaging Box Printing 400g Grey Board Anti-static',
-      ja: '香港電子製品包装箱印刷 400gグレーボード 帯電防止',
+      ja: '電子機器包装箱 | 香港プロパッケージ'
     },
   },
     variables: {
@@ -6305,7 +6309,7 @@ export const products: Product[] = [
     alt: {
       'zh-hk': '香港牛皮紙包裝盒印刷 300g牛皮紙 環保材質',
       en: 'Hong Kong Kraft Paper Packaging Box Printing 300g Kraft Paper Eco-friendly',
-      ja: '香港クラフト包装箱印刷 300gクラフト紙 エコ素材',
+      ja: 'クラフト紙箱印刷 | 香港プロパッケージ'
     },
   },
     variables: {
@@ -6393,7 +6397,7 @@ export const products: Product[] = [
     alt: {
       'zh-hk': '香港抽屜式禮盒印刷 350g白卡紙 緞帶拉手',
       en: 'Hong Kong Drawer Slide Gift Box Printing 350g White Card Ribbon Pull',
-      ja: '香港引き出し式ギフト箱印刷 350g白カード紙 リボン引手',
+      ja: '引き出し式ギフトボックス | 香港プロパッケージ'
     },
   },
     },
@@ -6461,7 +6465,7 @@ export const products: Product[] = [
     alt: {
       'zh-hk': '香港水果食品標籤貼紙印刷 防水材質 食品安全級',
       en: 'Hong Kong Fruit Food Label Stickers Printing Waterproof Food-safe',
-      ja: '香港フルーツ食品ラベル印刷 防水素材 食品グレード',
+      ja: 'フルーツ・食品ラベルシール | 香港プロステッカー'
     },
   },
     },

@@ -83,12 +83,12 @@ export function ProductCard({ product, locale }: ProductCardProps) {
         <div className="absolute top-2 left-2 flex flex-col gap-1">
           {product.isNew && (
             <span className="bg-green-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full z-10">
-              NEW
+              {locale === 'zh-hk' ? '新品' : locale === 'ja' ? '新着' : 'NEW'}
             </span>
           )}
           {product.isHot && (
             <span className="bg-[#F87314] text-white text-[10px] font-bold px-2 py-0.5 rounded-full z-10">
-              HOT
+              {locale === 'zh-hk' ? '熱銷' : locale === 'ja' ? '人気' : 'HOT'}
             </span>
           )}
         </div>

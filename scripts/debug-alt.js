@@ -1,0 +1,13 @@
+const fs = require('fs');
+const content = fs.readFileSync('src/data/products.ts', 'utf-8');
+const slugMatches = content.match(/slug:\s*'[^']+'/g);
+console.log('slug matches:', slugMatches ? slugMatches.length : 0);
+const altMatches = content.match(/alt:\s*\{/g);
+console.log('alt matches:', altMatches ? altMatches.length : 0);
+const firstSlug = content.indexOf("slug: 'premium-business-cards'");
+const nextSlug = content.indexOf("slug: '") + 10;
+const block = content.slice(firstSlug, nextSlug);
+console.log('has nameEn:', block.includes('nameEn:'));
+console.log('has nameJa:', block.includes('nameJa:'));
+console.log('has category_slug:', block.includes('category_slug:'));
+console.log('has alt:', block.includes('alt:'));

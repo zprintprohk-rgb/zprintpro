@@ -20,7 +20,7 @@ interface FooterProps {
 
 const translations = {
   'zh-hk': {
-    companyDesc: '智印云 ZPrintPro 是全球智能印刷定制平台，提供AI智能報價、在線文件上傳、Airwallex安全支付。從貼紙到包裝，30秒報價，72小時全球交付。',
+    companyDesc: '智印云 ZprintPro 是全球智能印刷定制平台，提供AI智能報價、在線文件上傳、Airwallex安全支付。從貼紙到包裝，30秒報價，72小時全球交付。',
     serviceArea: '香港本地印刷服務',
     phone: '+86 181 2638 0255',
     email: 'zprintpro@outlook.com',
@@ -68,10 +68,10 @@ const translations = {
     ],
     followUs: '關注我們',
     friendLinks: '友情連結',
-    copyright: '© 2026 智印云 ZPrintPro. 保留所有權利。',
+    copyright: '© 2026 智印云 ZprintPro. 保留所有權利。',
   },
   en: {
-    companyDesc: 'ZPrintPro is a global smart printing platform offering AI instant quotes, online file upload, and Airwallex secure payment. From stickers to packaging, get a quote in 30 seconds, delivered globally in 72 hours.',
+    companyDesc: 'ZprintPro is a global smart printing platform offering AI instant quotes, online file upload, and Airwallex secure payment. From stickers to packaging, get a quote in 30 seconds, delivered globally in 72 hours.',
     serviceArea: 'Shipping & printing services for US, UK, and Australia',
     phone: '+86 181 2638 0255',
     email: 'zprintpro@outlook.com',
@@ -119,10 +119,10 @@ const translations = {
     ],
     followUs: 'Follow Us',
     friendLinks: 'Friendly Links',
-    copyright: '© 2026 ZPrintPro. All rights reserved.',
+    copyright: '© 2026 ZprintPro. All rights reserved.',
   },
   ja: {
-    companyDesc: 'ZPrintProはグローバルスマート印刷プラットフォームです。AI即時見積、オンラインファイルアップロード、Airwallex安全決済を提供。ステッカーからパッケージングまで、30秒で見積もり、72時間でグローバル配送。',
+    companyDesc: 'ZprintProはグローバルスマート印刷プラットフォームです。AI即時見積、オンラインファイルアップロード、Airwallex安全決済を提供。ステッカーからパッケージングまで、30秒で見積もり、72時間でグローバル配送。',
     serviceArea: '香港を含むアジア圏印刷サービス',
     phone: '+86 181 2638 0255',
     email: 'zprintpro@outlook.com',
@@ -170,7 +170,7 @@ const translations = {
     ],
     followUs: 'フォロー',
     friendLinks: '友好リンク',
-    copyright: '© 2026 ZPrintPro. All rights reserved.',
+    copyright: '© 2026 ZprintPro. All rights reserved.',
   },
 };
 
@@ -188,7 +188,7 @@ export function Footer({ locale }: FooterProps) {
             <div className="mb-4">
               <Image
                 src="/images/logo-dark.svg"
-                alt="智印云 ZPrintPro"
+                alt="ZprintPro"
                 width={240}
                 height={53}
                 className="h-11 w-auto"

@@ -15,16 +15,16 @@ export async function generateMetadata({ params }: SuccessPageProps): Promise<Me
   const { locale } = params;
   const title =
     locale === 'zh-hk'
-      ? '支付成功 | ZPrintPro'
+      ? '支付成功 | ZprintPro'
       : locale === 'en'
-      ? 'Payment Successful | ZPrintPro'
-      : '支払い完了 | ZPrintPro';
+      ? 'Payment Successful | ZprintPro'
+      : '支払い完了 | ZprintPro';
   const description =
     locale === 'zh-hk'
-      ? '您的付款已成功處理。感謝您選擇智印云 ZPrintPro 的專業印刷服務。'
+      ? '您的付款已成功處理。感謝您選擇智印云 ZprintPro 的專業印刷服務。'
       : locale === 'en'
-      ? 'Your payment has been successfully processed. Thank you for choosing ZPrintPro professional printing services.'
-      : 'お支払いが正常に処理されました。ZPrintProのプロフェッショナル印刷サービスをご利用いただきありがとうございます。';
+      ? 'Your payment has been successfully processed. Thank you for choosing ZprintPro professional printing services.'
+      : 'お支払いが正常に処理されました。ZprintProのプロフェッショナル印刷サービスをご利用いただきありがとうございます。';
   return {
     title,
     description,
@@ -70,7 +70,7 @@ export default function PaymentSuccessPage({ params }: SuccessPageProps) {
     orderStatus: 'https://schema.org/OrderPaymentDue',
     merchant: {
       '@type': 'Organization',
-      name: 'ZPrintPro',
+      name: 'ZprintPro',
       url: 'https://zprintpro.com',
     },
   };

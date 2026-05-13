@@ -6,7 +6,7 @@
 import { Metadata } from 'next';
 import { generateHomeMetadata, Locale } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
-import { generateBusinessJsonLd } from '@/lib/seo';
+import { generateOrganizationSchema, generateLocalBusinessSchema } from '@/lib/seo';
 import { HeroBanner } from '@/components/home/HeroBanner';
 import { HotProducts } from '@/components/home/HotProducts';
 import { StatsBar } from '@/components/home/StatsBar';
@@ -40,12 +40,13 @@ export default function HomePage({
   const { locale } = params;
   
   // 结构化数据 — 按地區切換 LocalBusiness / Organization
-  const businessJsonLd = generateBusinessJsonLd(locale);
-  
+  const orgSchema = generateOrganizationSchema(locale);
+  const localSchema = generateLocalBusinessSchema(locale);
+
   return (
     <>
       {/* 结构化数据 */}
-      <JsonLd data={businessJsonLd} />
+      <JsonLd data={[orgSchema, localSchema]} />
       
       <main className="min-h-screen">
         <HeroBanner locale={locale} />

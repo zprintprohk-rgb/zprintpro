@@ -29,11 +29,11 @@ export async function generateMetadata({
 const translations = {
   'zh-hk': {
     metaTitle: '關於智印云 | 香港專業印刷服務 | 10年經驗服務1000+企業',
-    metaDesc: '智印云 ZPrintPro 扎根香港超過10年，專注為本地及全球企業提供高品質印刷服務。ISO 9001認證、FSC環保認證，累計服務1000+客戶。',
-    h1: '關於智印云 ZPrintPro',
+    metaDesc: '智印云 ZprintPro 扎根香港超過10年，專注為本地及全球企業提供高品質印刷服務。ISO 9001認證、FSC環保認證，累計服務1000+客戶。',
+    h1: '關於智印云 ZprintPro',
     subtitle: '扎根香港超過10年，專注高品質印刷服務',
     storyTitle: '品牌故事',
-    story: `智印云 ZPrintPro 於2014年在香港成立，最初是一間專注於名片與宣傳單張的小型印刷工作室。創辦人憑藉對色彩管理的執著與對客戶需求的敏銳洞察，逐步將業務拓展至包裝盒、貼紙、海報、書籍等全方位印刷領域。
+    story: `智印云 ZprintPro 於2014年在香港成立，最初是一間專注於名片與宣傳單張的小型印刷工作室。創辦人憑藉對色彩管理的執著與對客戶需求的敏銳洞察，逐步將業務拓展至包裝盒、貼紙、海報、書籍等全方位印刷領域。
 
 十年來，我們見證了香港印刷行業從傳統柯式印刷向數碼印刷轉型的全過程。我們率先引入海德堡四色柯式印刷機與HP Indigo數碼印刷系統，建立了完整的ICC色彩管理流程，確保每一張成品都精準還原品牌色彩。我們累計服務超過1000家香港本地及海外企業，涵蓋金融、法律、餐飲、零售、教育及創意產業。`,
     advantageTitle: '核心優勢',
@@ -58,12 +58,12 @@ const translations = {
     statsLabels: { clients: '累計客戶', years: '行業經驗', products: 'SKU產品', satisfaction: '客戶滿意度' },
   },
   en: {
-    metaTitle: 'About ZPrintPro | Hong Kong Professional Printing | 10 Years Experience',
-    metaDesc: 'ZPrintPro has been rooted in Hong Kong for over 10 years, providing high-quality printing services. ISO 9001 certified, FSC certified, serving 1000+ clients.',
-    h1: 'About ZPrintPro',
+    metaTitle: 'About ZprintPro | Hong Kong Professional Printing | 10 Years Experience',
+    metaDesc: 'ZprintPro has been rooted in Hong Kong for over 10 years, providing high-quality printing services. ISO 9001 certified, FSC certified, serving 1000+ clients.',
+    h1: 'About ZprintPro',
     subtitle: 'Over 10 years in Hong Kong, dedicated to high-quality printing',
     storyTitle: 'Our Story',
-    story: `ZPrintPro was founded in Hong Kong in 2014, starting as a small printing studio focused on business cards and flyers. The founder's obsession with color management and keen insight into client needs gradually expanded the business into packaging, stickers, posters, books, and comprehensive printing services.
+    story: `ZprintPro was founded in Hong Kong in 2014, starting as a small printing studio focused on business cards and flyers. The founder's obsession with color management and keen insight into client needs gradually expanded the business into packaging, stickers, posters, books, and comprehensive printing services.
 
 Over the past decade, we have witnessed Hong Kong's printing industry transform from traditional offset to digital printing. We pioneered the introduction of Heidelberg 4-color offset presses and HP Indigo digital systems, establishing complete ICC color management workflows to ensure every piece precisely reproduces brand colors. We have served over 1,000 local and overseas businesses across finance, legal, F&B, retail, education, and creative industries.`,
     advantageTitle: 'Core Advantages',
@@ -88,12 +88,12 @@ Over the past decade, we have witnessed Hong Kong's printing industry transform 
     statsLabels: { clients: 'Clients Served', years: 'Years Experience', products: 'SKU Products', satisfaction: 'Satisfaction Rate' },
   },
   ja: {
-    metaTitle: 'ZPrintProについて | 香港プロ印刷サービス | 10年の実績',
-    metaDesc: '智印云 ZPrintProは香港で10年以上の歴史を持ち、高品質な印刷サービスを提供しています。ISO 9001認証、FSC認証、1000社以上のお客様にサービスを提供。',
-    h1: 'ZPrintProについて',
+    metaTitle: 'ZprintProについて | 香港プロ印刷サービス | 10年の実績',
+    metaDesc: '智印云 ZprintProは香港で10年以上の歴史を持ち、高品質な印刷サービスを提供しています。ISO 9001認証、FSC認証、1000社以上のお客様にサービスを提供。',
+    h1: 'ZprintProについて',
     subtitle: '香港で10年以上、高品質印刷に専念',
     storyTitle: 'ブランドストーリー',
-    story: `智印云 ZPrintProは2014年に香港で設立され、当初は名刺とチラシに特化した小さな印刷スタジオでした。創業者は色彩管理へのこだわりと顧客ニーズへの鋭い洞察力により、段階的にパッケージ、ステッカー、ポスター、書籍などの総合印刷領域へ事業を拡大しました。
+    story: `智印云 ZprintProは2014年に香港で設立され、当初は名刺とチラシに特化した小さな印刷スタジオでした。創業者は色彩管理へのこだわりと顧客ニーズへの鋭い洞察力により、段階的にパッケージ、ステッカー、ポスター、書籍などの総合印刷領域へ事業を拡大しました。
 
 10年間、香港の印刷業界が伝統的なオフセットからデジタル印刷へと変貌する過程を目の当たりにしてきました。私たちはハイデルベルク4色オフセット印刷機とHP Indigoデジタル印刷システムを率先して導入し、ICCカラーマネジメントワークフローを構築しました。これにより、すべての製品がブランドカラーを正確に再現することを保証しています。金融、法律、飲食、小売、教育、クリエイティブ業界を含む、1000社以上の香港および海外企業にサービスを提供しています。`,
     advantageTitle: '核心強み',

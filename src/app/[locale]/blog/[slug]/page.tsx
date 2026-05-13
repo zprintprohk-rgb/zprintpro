@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { Locale, siteConfig, generateFaqJsonLd } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
 import { getBuyingGuideBySlug, getAllBuyingGuideSlugs } from '@/data/buying-guides';
+import { getClusterBySlug, getAllClusterSlugs } from '@/data/pillar-content';
 import { products, getProductTitle, getProductDescription } from '@/data/products';
 import { convertPriceRangeString } from '@/lib/pricing';
 
@@ -386,7 +387,8 @@ const posts: Record<string, Record<string, { title: string; description: string;
 
 const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-specs', 'brand-materials-checklist', 'mtr-advertising-specs', 'sticker-guide', 'business-card-design', 'packaging-trends', 'cmyk-guide', 'paper-materials', 'eco-printing'];
 const guideSlugs = getAllBuyingGuideSlugs();
-const allSlugs = [...articleSlugs, ...guideSlugs];
+const clusterSlugs = getAllClusterSlugs();
+const allSlugs = [...articleSlugs, ...guideSlugs, ...clusterSlugs];
 
 function getPostData(locale: Locale, slug: string) {
   const legacyPost = posts[locale]?.[slug];
@@ -411,6 +413,19 @@ function getPostData(locale: Locale, slug: string) {
       content: guide.content[locale],
       keywords: guide.keywords[locale],
       isBuyingGuide: true,
+    };
+  }
+  const cluster = getClusterBySlug(slug);
+  if (cluster) {
+    const content = cluster.content[locale].replace(/\/{locale}\//g, `/${locale}/`);
+    return {
+      title: cluster.title[locale],
+      description: cluster.description[locale],
+      date: cluster.date,
+      category: cluster.pillarSlug,
+      content,
+      keywords: cluster.keywords[locale].join(','),
+      isBuyingGuide: false,
     };
   }
   return null;
