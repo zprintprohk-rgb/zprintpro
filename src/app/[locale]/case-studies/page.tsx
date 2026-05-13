@@ -355,27 +355,29 @@ export default function CaseStudiesPage({ params }: { params: { locale: Locale }
     <>
       <JsonLd data={reviewSchema} />
       <main className="min-h-screen bg-white">
-        {/* Hero */}
-        <section className="bg-gradient-to-r from-[#1e3a8a] to-[#06b6d4] text-white py-16 md:py-24">
-          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-3xl md:text-5xl font-bold mb-4">{t.h1}</h1>
-            <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto">{t.subtitle}</p>
-            <div className="mt-8 flex justify-center gap-8 md:gap-12">
-              <div className="text-center">
-                <div className="text-3xl font-bold">1000+</div>
-                <div className="text-white/80 text-sm">{t.clientsLabel}</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold">8+</div>
-                <div className="text-white/80 text-sm">{t.industriesLabel}</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold">98%</div>
-                <div className="text-white/80 text-sm">{t.satisfactionLabel}</div>
+        {/* Hero - 1320×400，与分类页保持一致 */}
+        <div className="max-w-[1320px] mx-auto">
+          <section className="relative w-full h-[400px] overflow-hidden bg-gradient-to-r from-[#1e3a8a] to-[#06b6d4] text-white">
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4">
+              <h1 className="text-3xl md:text-5xl font-bold mb-4">{t.h1}</h1>
+              <p className="text-lg md:text-xl text-white/90 max-w-2xl mx-auto">{t.subtitle}</p>
+              <div className="mt-8 flex justify-center gap-8 md:gap-12">
+                <div className="text-center">
+                  <div className="text-3xl font-bold">1000+</div>
+                  <div className="text-white/80 text-sm">{t.clientsLabel}</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold">8+</div>
+                  <div className="text-white/80 text-sm">{t.industriesLabel}</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-3xl font-bold">98%</div>
+                  <div className="text-white/80 text-sm">{t.satisfactionLabel}</div>
+                </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </div>
 
         {/* Case Studies */}
         <section className="py-16 md:py-20">

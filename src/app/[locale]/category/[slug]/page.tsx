@@ -170,14 +170,14 @@ export default function CategoryPage({
     'stickers': 'hero-sticker',
     'packaging': 'hero-gift-box',
     'posters': 'hero-poster',
-    'business-cards': 'hero-sticker',
-    'banners': 'hero-poster',
-    'books': 'hero-gift-box',
-    'menus': 'hero-flyer',
-    'envelopes': 'hero-kraft-bag',
-    'calendars': 'hero-poster',
-    'red-packets': 'hero-gift-box',
-    'educational': 'hero-flyer',
+    'business-cards': 'hero-business-cards',
+    'banners': 'hero-banners',
+    'books': 'hero-books',
+    'menus': 'hero-menus',
+    'envelopes': 'hero-envelopes',
+    'calendars': 'hero-calendars',
+    'red-packets': 'hero-red-packets',
+    'educational': 'hero-educational',
   };
   const bannerBase = categoryBannerMap[slug];
   const bannerImage = bannerBase ? `/images/hero/${bannerBase}-${locale}.webp` : undefined;
@@ -197,7 +197,7 @@ export default function CategoryPage({
       <main className="min-h-screen bg-gray-50">
         {/* Banner 区域 - 1320×400，紧贴导航栏，图片背景 */}
         <div className="max-w-[1320px] mx-auto">
-          <div className="relative w-full h-[300px] overflow-hidden">
+          <div className="relative w-full h-[400px] overflow-hidden">
             {/* 背景图或渐变 */}
             {hasBannerImage ? (
               <>
@@ -205,43 +205,35 @@ export default function CategoryPage({
                   src={bannerImage}
                   alt={categoryName}
                   fill
-                  className="object-cover object-right"
+                  className="object-cover object-center"
                   unoptimized
                   priority
+                  sizes="1320px"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
               </>
             ) : (
               <div className="absolute inset-0 bg-gradient-to-r from-[#2873F5] via-[#3B82F6] to-[#1E5FD1]" />
             )}
-            {/* Banner 内容 */}
-            <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-8">
-              <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-3 drop-shadow-lg">
-                {categoryName}
-              </h1>
-              <p className="text-white/90 text-sm md:text-base mb-5 drop-shadow-md">
-                {t.bannerTitle}
-              </p>
-              <a
-                href={`${localePrefix}/contact/`}
-                className="inline-flex items-center justify-center px-8 py-3 bg-[#3090FF] hover:bg-[#2873F5] text-white rounded-lg text-sm font-medium transition-colors shadow-lg"
-              >
-                {t.cta}
-              </a>
+            {/* Banner 内容 + 面包屑整合到底部 */}
+            <div className="absolute inset-0 z-10 flex flex-col justify-end">
+              <div className="max-w-[1320px] w-full mx-auto px-4 sm:px-6 lg:px-8 pb-6">
+                {/* 面包屑 */}
+                <nav aria-label="breadcrumb" className="text-white/80 text-sm mb-2">
+                  <a href={`/${locale}/`} className="hover:text-white transition-colors">
+                    {locale === 'zh-hk' ? '首頁' : locale === 'en' ? 'Home' : 'ホーム'}
+                  </a>
+                  <span className="mx-2">/</span>
+                  <span className="text-white font-medium">{categoryName}</span>
+                </nav>
+                <h1 className="text-3xl md:text-4xl font-bold text-white drop-shadow-lg">
+                  {categoryName}
+                </h1>
+                <p className="text-white/90 text-base md:text-lg mt-2 drop-shadow-md max-w-2xl">
+                  {t.bannerTitle}
+                </p>
+              </div>
             </div>
-          </div>
-        </div>
-
-        {/* 面包屑导航 - 位于 Banner 下方 */}
-        <div className="bg-white border-b">
-          <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-3">
-            <nav className="text-sm text-gray-500">
-              <a href={`/${locale}/`} className="hover:text-[#2873F5]">
-                {locale === 'zh-hk' ? '首頁' : locale === 'en' ? 'Home' : 'ホーム'}
-              </a>
-              <span className="mx-2">/</span>
-              <span className="text-gray-900">{categoryName}</span>
-            </nav>
           </div>
         </div>
 
