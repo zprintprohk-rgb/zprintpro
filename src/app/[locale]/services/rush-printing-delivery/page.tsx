@@ -1,5 +1,6 @@
-import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import Link from 'next/link';
+import type { Metadata } from 'next';
 import { Locale } from '@/lib/seo';
 import RushDeliveryGrid from '@/components/sections/RushDeliveryGrid';
 import RushDeliveryFAQ from '@/components/sections/RushDeliveryFAQ';
@@ -42,11 +43,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       canonical: `https://zprintpro.com/${locale}/services/rush-printing-delivery`,
       languages: {
         'zh-HK': 'https://zprintpro.com/zh-hk/services/rush-printing-delivery',
-        'en-US': 'https://zprintpro.com/en/services/same-day-printing-delivery',
-        'en-GB': 'https://zprintpro.com/en/services/same-day-printing-delivery',
-        'en-AU': 'https://zprintpro.com/en/services/same-day-printing-delivery',
-        'ja': 'https://zprintpro.com/ja/services/same-day-printing-delivery',
-        'x-default': 'https://zprintpro.com/en/services/same-day-printing-delivery',
+        'en-US': 'https://zprintpro.com/en/services/rush-printing-delivery',
+        'en-GB': 'https://zprintpro.com/en/services/rush-printing-delivery',
+        'en-AU': 'https://zprintpro.com/en/services/rush-printing-delivery',
+        'ja': 'https://zprintpro.com/ja/services/rush-printing-delivery',
+        'x-default': 'https://zprintpro.com/en/services/rush-printing-delivery',
       },
     },
   };
@@ -65,6 +66,42 @@ export default function RushDeliveryPage({ params }: Props) {
 
   return (
     <main className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+      {/* Hero Banner 占位区 */}
+      <section className="relative w-full h-[320px] md:h-[380px] rounded-xl overflow-hidden mb-8">
+        {/* 渐变背景（占位，后续替换为真实图片） */}
+        <div className="absolute inset-0 bg-gradient-to-r from-red-600 via-orange-500 to-amber-400" />
+        
+        {/* 内容层 */}
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
+          <span className="bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full text-sm font-bold mb-4">
+            ⚡ {locale === 'zh-hk' ? '通宵達服務' : locale === 'en' ? 'Overnight Delivery' : '徹夜配送'}
+          </span>
+          <h2 className="text-3xl md:text-4xl font-bold mb-3">
+            {locale === 'zh-hk' ? '今天下單·明天中午12點前到' : locale === 'en' ? 'Order Today, Receive by 12PM Tomorrow' : '本日注文・翌日12時まで'}
+          </h2>
+          <p className="text-lg md:text-xl text-white/90 mb-6 max-w-2xl">
+            {locale === 'zh-hk' ? '專為臨急任務而生——宣傳單張、海報、貼紙、名片通宵印刷，畫冊與易拉寶翌日中午準時達' : 'Rush printing for flyers, posters, stickers, business cards. Booklets & banners by noon next day.'}
+          </p>
+          <Link
+            href={`/${locale}/services/rush-printing-delivery#order`}
+            className="bg-white text-orange-600 font-bold px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors shadow-lg"
+          >
+            {locale === 'zh-hk' ? '立即下單' : locale === 'en' ? 'Order Now' : '注文する'}
+          </Link>
+        </div>
+      </section>
+
+      {/* 面包屑 */}
+      <nav className="flex items-center gap-2 text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
+        <Link href={`/${locale}`} className="hover:text-[#2873F5] transition-colors">
+          {locale === 'zh-hk' ? '首頁' : locale === 'en' ? 'Home' : 'ホーム'}
+        </Link>
+        <span>/</span>
+        <span className="text-gray-900 font-medium">
+          {locale === 'zh-hk' ? '即日服務' : locale === 'en' ? 'Rush Service' : '即日サービス'}
+        </span>
+      </nav>
+
       {/* GEO 答案块 */}
       <section className="mb-10">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{title}</h1>

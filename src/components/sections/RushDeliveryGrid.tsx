@@ -5,9 +5,6 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { getAltTag } from '@/data/image-alt-map';
 
-function resolveProductImage(slug: string, locale: string): string {
-  return `/images/products/${slug}-${locale}.webp`;
-}
 
 interface SKUItem {
   slug: string;
@@ -140,9 +137,9 @@ export default function RushDeliveryGrid({ locale }: { locale: string }) {
             href={`/${locale}${sku.href}`}
             className="group block bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg hover:border-gray-300 transition-all duration-200"
           >
-            <div className="relative h-48 md:h-52 bg-gray-100 overflow-hidden">
+            <div className="relative aspect-square w-full bg-gray-100 overflow-hidden">
               <Image
-                src={resolveProductImage(sku.slug, locale)}
+                src={sku.image(locale)}
                 alt={getAltTag(sku.slug, locale)}
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -154,7 +151,7 @@ export default function RushDeliveryGrid({ locale }: { locale: string }) {
                   }
                 }}
               />
-              <span className="absolute top-3 right-3 bg-red-600 text-white text-xs md:text-sm font-bold px-3 py-1.5 rounded-full shadow-sm">
+              <span className="absolute top-3 left-3 bg-red-600 text-white text-xs md:text-sm font-bold px-2.5 py-1 rounded-md shadow-sm">
                 {locale === 'zh-hk'
                   ? '明天12:00前'
                   : locale === 'en'
