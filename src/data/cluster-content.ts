@@ -7,6 +7,7 @@ import { Locale } from '@/types/locale';
 
 export interface ClusterArticle {
   slug: string;
+  displayName: Record<Locale, string>;
   title: Record<Locale, string>;
   description: Record<Locale, string>;
   pillarSlug: string;
@@ -16,6 +17,7 @@ export interface ClusterArticle {
 
 export interface PillarPage {
   slug: string;
+  displayName: Record<Locale, string>;
   title: Record<Locale, string>;
   description: Record<Locale, string>;
   linkedSku: string;
@@ -24,6 +26,11 @@ export interface PillarPage {
 export const pillarPages: PillarPage[] = [
   {
     slug: 'guide/stickers',
+    displayName: {
+      'zh-hk': '貼紙印刷完全指南',
+      'en': 'Complete Sticker Printing Guide',
+      'ja': 'シール印刷完全ガイド',
+    },
     title: {
       'zh-hk': '貼紙印刷完全指南',
       'en': 'Complete Sticker Printing Guide',
@@ -38,6 +45,11 @@ export const pillarPages: PillarPage[] = [
   },
   {
     slug: 'guide/flyers',
+    displayName: {
+      'zh-hk': '宣傳單張印刷攻略',
+      'en': 'Flyer Printing Masterclass',
+      'ja': 'チラシ印刷マスターガイド',
+    },
     title: {
       'zh-hk': '宣傳單張印刷攻略',
       'en': 'Flyer Printing Masterclass',
@@ -52,6 +64,11 @@ export const pillarPages: PillarPage[] = [
   },
   {
     slug: 'guide/packaging',
+    displayName: {
+      'zh-hk': '品牌包裝完全指南',
+      'en': 'Brand Packaging Guide',
+      'ja': 'ブランド包装完全ガイド',
+    },
     title: {
       'zh-hk': '品牌包裝完全指南',
       'en': 'Brand Packaging Guide',
@@ -70,6 +87,11 @@ export const clusterArticles: ClusterArticle[] = [
   // 支柱页1：stickers 集群
   {
     slug: 'blog/sticker-materials',
+    displayName: {
+      'zh-hk': '防水貼紙材質比較：PVC vs 合成紙',
+      'en': 'Waterproof Sticker Materials: PVC vs Synthetic Paper',
+      'ja': '防水シール素材比較：PVCと合成紙',
+    },
     title: {
       'zh-hk': '防水貼紙材質比較：PVC vs 合成紙',
       'en': 'Waterproof Sticker Materials: PVC vs Synthetic Paper',
@@ -90,6 +112,11 @@ export const clusterArticles: ClusterArticle[] = [
   },
   {
     slug: 'blog/sticker-packaging-design',
+    displayName: {
+      'zh-hk': '產品包裝貼紙設計策略',
+      'en': 'Product Packaging Sticker Design',
+      'ja': '商品包装シールデザイン戦略',
+    },
     title: {
       'zh-hk': '產品包裝貼紙設計的 5 個關鍵技巧',
       'en': '5 Key Tips for Product Packaging Sticker Design',
@@ -110,6 +137,11 @@ export const clusterArticles: ClusterArticle[] = [
   },
   {
     slug: 'blog/clear-vs-matte-stickers',
+    displayName: {
+      'zh-hk': '透明貼紙 vs 霧面貼紙',
+      'en': 'Clear vs Matte Stickers',
+      'ja': '透明シール vs マットシール',
+    },
     title: {
       'zh-hk': '透明貼紙與霧面貼紙選擇指南',
       'en': 'Clear vs Matte Stickers: Which to Choose?',
@@ -131,6 +163,11 @@ export const clusterArticles: ClusterArticle[] = [
   // 支柱页2：flyers 集群
   {
     slug: 'blog/flyer-sizes-compared',
+    displayName: {
+      'zh-hk': 'A5 vs A6 傳單尺寸效果比較',
+      'en': 'A5 vs A6 Flyer Comparison',
+      'ja': 'A5 vs A6 チラシサイズ比較',
+    },
     title: {
       'zh-hk': 'A5 vs A6 傳單尺寸效果比較',
       'en': 'A5 vs A6 Flyer Sizes: Impact on ROI',
@@ -151,6 +188,11 @@ export const clusterArticles: ClusterArticle[] = [
   },
   {
     slug: 'blog/flyer-distribution-strategy',
+    displayName: {
+      'zh-hk': '傳單派發策略與印刷配合指南',
+      'en': 'Flyer Distribution Strategy',
+      'ja': 'チラシ配布戦略と印刷の連携',
+    },
     title: {
       'zh-hk': '傳單派發策略與印刷配合指南',
       'en': 'Flyer Distribution Strategy & Print Coordination',
@@ -171,6 +213,11 @@ export const clusterArticles: ClusterArticle[] = [
   },
   {
     slug: 'blog/foil-flyers-industry',
+    displayName: {
+      'zh-hk': '燙金傳單行業應用',
+      'en': 'Foil Flyer Industry Applications',
+      'ja': '箔押しチラシの業界応用',
+    },
     title: {
       'zh-hk': '燙金傳單適合什麼行業？',
       'en': 'Foil Flyers: Best Industries for Luxury Print',
@@ -192,6 +239,11 @@ export const clusterArticles: ClusterArticle[] = [
   // 支柱页3：packaging 集群
   {
     slug: 'blog/rigid-vs-folding-boxes',
+    displayName: {
+      'zh-hk': '磁吸禮盒與摺疊盒成本比較',
+      'en': 'Rigid Box vs Folding Carton',
+      'ja': '箱包装の種類とコスト比較',
+    },
     title: {
       'zh-hk': '磁吸禮盒與摺疊盒成本比較',
       'en': 'Rigid Box vs Folding Carton: Cost Breakdown',
@@ -212,6 +264,11 @@ export const clusterArticles: ClusterArticle[] = [
   },
   {
     slug: 'blog/eco-paper-bag-gsm',
+    displayName: {
+      'zh-hk': '環保紙袋趨勢與克重選擇指南',
+      'en': 'Eco Paper Bag Trends & GSM Selection',
+      'ja': 'エコ紙袋のトレンドと厚さ選び',
+    },
     title: {
       'zh-hk': '環保紙袋趨勢與克重選擇指南',
       'en': 'Eco Paper Bag Trends & GSM Selection Guide',
@@ -232,6 +289,11 @@ export const clusterArticles: ClusterArticle[] = [
   },
   {
     slug: 'blog/packaging-color-psychology',
+    displayName: {
+      'zh-hk': '包裝設計色彩心理學',
+      'en': 'Packaging Color Psychology',
+      'ja': 'パッケージデザインの色彩心理学',
+    },
     title: {
       'zh-hk': '包裝設計色彩心理學',
       'en': 'Packaging Color Psychology for Brands',
