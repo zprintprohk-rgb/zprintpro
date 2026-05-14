@@ -1,3 +1,17 @@
 # Cloudflare Pages redirects
 # Root path → Hong Kong homepage
 / /zh-hk/ 301
+
+# www → non-www
+https://www.zprintpro.com/* https://zprintpro.com/:splat 301
+
+# http → https
+http://zprintpro.com/* https://zprintpro.com/:splat 301
+
+# 复数 → 单数（产品详情页）
+/zh-hk/products/:slug /zh-hk/product/:slug/ 301
+/en/products/:slug /en/product/:slug/ 301
+/ja/products/:slug /ja/product/:slug/ 301
+
+# 旧平台兼容
+/product-detail?id=:id /zh-hk/product/:id/ 301
