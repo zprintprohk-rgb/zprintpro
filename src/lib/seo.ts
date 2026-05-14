@@ -475,15 +475,21 @@ export function generateLocalBusinessJsonLd() {
 }
 
 // 生成 Product 結構化數據
+export interface ProductRatingInput {
+  ratingValue?: number;
+  reviewCount?: number;
+}
+
 export function generateProductJsonLd(
   name: string,
   description: string,
   image: string,
   slug: string,
   price: number,
-  currency: string = 'HKD'
+  currency: string = 'HKD',
+  rating?: ProductRatingInput
 ) {
-  return {
+  const schema: SchemaOrgData = {
     '@context': 'https://schema.org',
     '@type': 'Product',
     name,
@@ -500,12 +506,44 @@ export function generateProductJsonLd(
       priceCurrency: currency,
       price: (price ?? 0).toString(),
       availability: 'https://schema.org/InStock',
+      itemCondition: 'https://schema.org/NewCondition',
       seller: {
         '@type': 'Organization',
         name: siteConfig.name,
       },
+      shippingDetails: {
+        '@type': 'OfferShippingDetails',
+        shippingRate: {
+          '@type': 'MonetaryAmount',
+          value: '0',
+          currency: currency,
+        },
+        shippingDestination: {
+          '@type': 'DefinedRegion',
+          addressCountry: currency === 'HKD' ? 'HK' : currency === 'JPY' ? 'JP' : 'US',
+        },
+      },
+      hasMerchantReturnPolicy: {
+        '@type': 'MerchantReturnPolicy',
+        returnPolicyCategory: 'https://schema.org/MerchantReturnNotPermitted',
+        merchantReturnDays: 0,
+        returnMethod: 'https://schema.org/ReturnByMail',
+        returnFees: 'https://schema.org/FreeReturn',
+      },
     },
   };
+
+  if (rating && rating.ratingValue) {
+    schema.aggregateRating = {
+      '@type': 'AggregateRating',
+      ratingValue: rating.ratingValue.toString(),
+      reviewCount: (rating.reviewCount ?? 0).toString(),
+      bestRating: '5',
+      worstRating: '1',
+    };
+  }
+
+  return schema;
 }
 
 // 生成產品評價結構化數據
@@ -767,26 +805,34 @@ export function generateLocalBusinessSchema(locale: Locale): SchemaOrgData {
 // Article / BlogPosting Schema 生成器
 // ============================================================================
 
+export interface ArticleQuotation {
+  text: string;
+  source?: string;
+  url?: string;
+}
+
 export interface ArticleSchemaInput {
   title: string;
   description: string;
   image?: string;
   publishedAt: string;
   updatedAt?: string;
+  lastUpdated?: string;
   authorName?: string;
   wordCount?: number;
+  quotations?: ArticleQuotation[];
 }
 
 export function generateArticleSchema(input: ArticleSchemaInput, locale: Locale): SchemaOrgData {
   const baseUrl = 'https://zprintpro.com';
-  return {
+  const schema: SchemaOrgData = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: input.title,
     description: input.description,
     image: input.image || `${baseUrl}/images/og-image.jpg`,
     datePublished: input.publishedAt,
-    dateModified: input.updatedAt || input.publishedAt,
+    dateModified: input.lastUpdated || input.updatedAt || input.publishedAt,
     author: {
       '@type': input.authorName ? 'Person' : 'Organization',
       name: input.authorName || (locale === 'zh-hk' ? '智印云 ZprintPro' : 'ZprintPro'),
@@ -800,4 +846,16 @@ export function generateArticleSchema(input: ArticleSchemaInput, locale: Locale)
     inLanguage: locale === 'zh-hk' ? 'zh-Hant-HK' : locale === 'ja' ? 'ja-JP' : 'en-US',
     wordCount: input.wordCount,
   };
+
+  // Add hasPart with Quotation objects for GEO citations
+  if (input.quotations && input.quotations.length > 0) {
+    schema.hasPart = input.quotations.map((q) => ({
+      '@type': 'Quotation',
+      text: q.text,
+      ...(q.source ? { spokenByCharacter: { '@type': 'Organization', name: q.source } } : {}),
+      ...(q.url ? { url: q.url } : {}),
+    }));
+  }
+
+  return schema;
 }
