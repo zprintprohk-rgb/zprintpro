@@ -35,6 +35,7 @@ import { coreProductFAQMap } from '@/data/product-faqs';
 import { RegionalContent, RegionalCta, RegionalTrustBadges } from '@/components/seo/RegionalContent';
 import { convertPriceRangeString } from '@/lib/pricing';
 import { ProductWhyChooseUs } from '@/components/ProductWhyChooseUs';
+import RushDeliveryBadge from '@/components/sections/RushDeliveryBadge';
 
 // 生成静态参数 - 79产品 × 3语言 = 237个路径
 export function generateStaticParams() {
@@ -67,7 +68,28 @@ export async function generateMetadata({
   
   const category = getCategoryBySlug(product.category_slug);
   const categoryName = category ? getCategoryName(category, locale) : '';
-  return generateProductMetadata(locale, product.name, product.nameEn, product.nameJa, product.description, product.descriptionEn, product.descriptionJa, product.slug, categoryName, product.price_range);
+  
+  const rushDescriptions: Record<string, Record<string, string>> = {
+    'zh-hk': {
+      'flyers': '宣傳單張印刷即日速递送货，今天下單明天12點前到。A4/A5/A6尺寸、157g銅版紙，100張起訂，支持港鐵站交收，單價低至HK$0.25。',
+      'posters': '海報印刷即日速递送货，今天下單明天12點前到。A2/A1/A3尺寸、防水材質，10張起訂，支持全港速递及港鐵站交收。',
+      'stickers': '貼紙印刷即日速递送货，今天下單明天12點前到。防水/PVC/透明材質，100張起訂，支持異形切割，港鐵站交收。',
+      'business-cards': '名片印刷即日速递送货，今天下單明天12點前到。燙金、棉紙、局部UV工藝，100張起訂，專業名片通宵印刷。',
+      'books': '畫冊印刷即日速递送货，今天下單明天12點前到。騎馬釘/膠裝、封面覆膜，50本起訂，支持辦公室地址配送。',
+      'banners': '易拉寶噴繪即日速递送货，今天下單明天12點前到。鋁合金支架、高清噴繪，1個起訂，活動展架通宵製作。',
+    },
+  };
+  
+  const metadata = generateProductMetadata(locale, product.name, product.nameEn, product.nameJa, product.description, product.descriptionEn, product.descriptionJa, product.slug, categoryName, product.price_range);
+  
+  if (rushDescriptions[locale]?.[product.category_slug]) {
+    return {
+      ...metadata,
+      description: rushDescriptions[locale][product.category_slug],
+    };
+  }
+  
+  return metadata;
 }
 
 // 产品详情页组件
@@ -280,6 +302,10 @@ export default function ProductPage({
               <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
                 {locale === 'zh-hk' ? `${productTitle} | 香港${categoryName}專家 | 智印云` : locale === 'en' ? `${productTitle} | Hong Kong ${categoryName} Expert | ZprintPro` : `${productTitle} | 香港プロ | ZprintPro`}
               </h1>
+              
+              {['flyers', 'posters', 'stickers', 'business-cards', 'books', 'banners'].includes(product.category_slug) && (
+                <RushDeliveryBadge locale={locale} />
+              )}
               
               <p className="text-gray-600 mb-6 leading-relaxed">
                 {productDescription}

@@ -328,6 +328,22 @@ export function Header({ locale }: HeaderProps) {
             <div className="flex items-center h-[46px]">
               <Link href={`${localePrefix}/`} className={navLinkClass(pathname === `${localePrefix}/`)}>{t.home}</Link>
 
+              {locale === 'zh-hk' && (
+                <Link href="/zh-hk/services/rush-printing-delivery" className={`h-full w-full flex items-center justify-center text-[16px] font-bold transition-colors ${pathname === '/zh-hk/services/rush-printing-delivery' ? 'bg-[#F87314] text-white' : 'bg-orange-500 text-white hover:bg-orange-600'}`}>
+                  ⚡ 即日服務
+                </Link>
+              )}
+              {locale === 'en' && (
+                <Link href="/en/services/same-day-printing-delivery" className={`h-full w-full flex items-center justify-center text-[16px] font-bold transition-colors ${pathname === '/en/services/same-day-printing-delivery' ? 'bg-[#F87314] text-white' : 'bg-orange-500 text-white hover:bg-orange-600'}`}>
+                  ⚡ Rush Service
+                </Link>
+              )}
+              {locale === 'ja' && (
+                <Link href="/ja/services/same-day-printing-delivery" className={`h-full w-full flex items-center justify-center text-[16px] font-bold transition-colors ${pathname === '/ja/services/same-day-printing-delivery' ? 'bg-[#F87314] text-white' : 'bg-orange-500 text-white hover:bg-orange-600'}`}>
+                  ⚡ 即日サービス
+                </Link>
+              )}
+
               {t.navOrder.map((catSlug) => (
                 <div key={catSlug} className="relative h-full flex-1" onMouseEnter={() => setActiveDropdown(catSlug)} onMouseLeave={() => setActiveDropdown(null)}>
                   <Link href={`${localePrefix}/category/${catSlug}/`} className={catNavLinkClass(catSlug)}>
@@ -445,6 +461,15 @@ export function Header({ locale }: HeaderProps) {
               </div>
             </form>
             <Link href={`${localePrefix}/`} className="block font-medium text-[#333333] py-2">{t.home}</Link>
+            {locale === 'zh-hk' && (
+              <Link href="/zh-hk/services/rush-printing-delivery" className="block font-bold text-orange-600 py-2">⚡ 即日服務</Link>
+            )}
+            {locale === 'en' && (
+              <Link href="/en/services/same-day-printing-delivery" className="block font-bold text-orange-600 py-2">⚡ Rush Service</Link>
+            )}
+            {locale === 'ja' && (
+              <Link href="/ja/services/same-day-printing-delivery" className="block font-bold text-orange-600 py-2">⚡ 即日サービス</Link>
+            )}
             {t.navOrder.map((catSlug) => (
               <Link key={catSlug} href={`${localePrefix}/category/${catSlug}/`} className="block font-medium text-[#333333] py-2">{t.categories[catSlug]}</Link>
             ))}

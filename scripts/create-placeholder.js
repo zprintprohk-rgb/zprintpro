@@ -1,0 +1,8 @@
+const fs = require('fs');
+const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#f3f4f6"/>
+  <text x="400" y="280" font-family="Arial" font-size="24" fill="#9ca3af" text-anchor="middle">Image Coming Soon</text>
+  <text x="400" y="320" font-family="Arial" font-size="14" fill="#cbd5e1" text-anchor="middle">ZprintPro</text>
+</svg>`;
+fs.writeFileSync('public/images/placeholder.svg', svg, 'utf8');
+console.log('placeholder.svg created');

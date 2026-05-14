@@ -1,0 +1,594 @@
+{
+  "generatedAt": "2026-05-13T20:50:49.107Z",
+  "totalTasks": 57,
+  "priorityP0": 15,
+  "priorityP1": 0,
+  "priorityP2": 24,
+  "tasks": [
+    {
+      "id": 1,
+      "type": "blog-cover",
+      "locale": "zh-hk",
+      "topic": "packaging-trends",
+      "reason":"missing"filename": "packaging-trends-zh-hk.webp",
+      "dimensions": "800x450",
+      "prompt":"TBD",
+      "alt": "packaging-trends zh-hk blog cover"
+    },
+    {
+      "id": 2,
+      "type": "blog-cover",
+      "locale": "en",
+      "topic": "packaging-trends",
+      "reason":"missing"filename": "packaging-trends-en.webp",
+      "dimensions": "800x450",
+      "prompt":"TBD",
+      "alt": "packaging-trends en blog cover"
+    },
+    {
+      "id": 3,
+      "type": "blog-cover",
+      "locale": "ja",
+      "topic": "packaging-trends",
+      "reason":"missing"filename": "packaging-trends-ja.webp",
+      "dimensions": "800x450",
+      "prompt":"TBD",
+      "alt": "packaging-trends ja blog cover"
+    },
+    {
+      "id": 4,
+      "type": "blog-cover",
+      "locale": "zh-hk",
+      "topic": "hong-kong-printing-guide",
+      "reason":"missing"filename": "hong-kong-printing-guide-zh-hk.webp",
+      "dimensions": "800x450",
+      "prompt":"TBD",
+      "alt": "hong-kong-printing-guide zh-hk blog cover"
+    },
+    {
+      "id": 5,
+      "type": "blog-cover",
+      "locale": "en",
+      "topic": "hong-kong-printing-guide",
+      "reason":"missing"filename": "hong-kong-printing-guide-en.webp",
+      "dimensions": "800x450",
+      "prompt":"TBD",
+      "alt": "hong-kong-printing-guide en blog cover"
+    },
+    {
+      "id": 6,
+      "type": "blog-cover",
+      "locale": "ja",
+      "topic": "hong-kong-printing-guide",
+      "reason":"missing"filename": "hong-kong-printing-guide-ja.webp",
+      "dimensions": "800x450",
+      "prompt":"TBD",
+      "alt": "hong-kong-printing-guide ja blog cover"
+    },
+    {
+      "id": 7,
+      "type": "blog-cover",
+      "locale": "zh-hk",
+      "topic": "design-file-specs",
+      "reason":"missing"filename": "design-file-specs-zh-hk.webp",
+      "dimensions": "800x450",
+      "prompt":"TBD",
+      "alt": "design-file-specs zh-hk blog cover"
+    },
+    {
+      "id": 8,
+      "type": "blog-cover",
+      "locale": "en",
+      "topic": "design-file-specs",
+      "reason":"missing"filename": "design-file-specs-en.webp",
+      "dimensions": "800x450",
+      "prompt":"TBD",
+      "alt": "design-file-specs en blog cover"
+    },
+    {
+      "id": 9,
+      "type": "blog-cover",
+      "locale": "ja",
+      "topic": "design-file-specs",
+      "reason":"missing"filename": "design-file-specs-ja.webp",
+      "dimensions": "800x450",
+      "prompt":"TBD",
+      "alt": "design-file-specs ja blog cover"
+    },
+    {
+      "id": 10,
+      "type": "blog-cover",
+      "locale": "zh-hk",
+      "topic": "brand-materials-checklist",
+      "reason":"missing"filename": "brand-materials-checklist-zh-hk.webp",
+      "dimensions": "800x450",
+      "prompt":"TBD",
+      "alt": "brand-materials-checklist zh-hk blog cover"
+    },
+    {
+      "id": 11,
+      "type": "blog-cover",
+      "locale": "en",
+      "topic": "brand-materials-checklist",
+      "reason":"missing"filename": "brand-materials-checklist-en.webp",
+      "dimensions": "800x450",
+      "prompt":"TBD",
+      "alt": "brand-materials-checklist en blog cover"
+    },
+    {
+      "id": 12,
+      "type": "blog-cover",
+      "locale": "ja",
+      "topic": "brand-materials-checklist",
+      "reason":"missing"filename": "brand-materials-checklist-ja.webp",
+      "dimensions": "800x450",
+      "prompt":"TBD",
+      "alt": "brand-materials-checklist ja blog cover"
+    },
+    {
+      "id": 13,
+      "type": "blog-cover",
+      "locale": "zh-hk",
+      "topic": "mtr-advertising-specs",
+      "reason":"missing"filename": "mtr-advertising-specs-zh-hk.webp",
+      "dimensions": "800x450",
+      "prompt":"TBD",
+      "alt": "mtr-advertising-specs zh-hk blog cover"
+    },
+    {
+      "id": 14,
+      "type": "blog-cover",
+      "locale": "en",
+      "topic": "mtr-advertising-specs",
+      "reason":"missing"filename": "mtr-advertising-specs-en.webp",
+      "dimensions": "800x450",
+      "prompt":"TBD",
+      "alt": "mtr-advertising-specs en blog cover"
+    },
+    {
+      "id": 15,
+      "type": "blog-cover",
+      "locale": "ja",
+      "topic": "mtr-advertising-specs",
+      "reason":"missing"filename": "mtr-advertising-specs-ja.webp",
+      "dimensions": "800x450",
+      "prompt":"TBD",
+      "alt": "mtr-advertising-specs ja blog cover"
+    },
+    {
+      "id": 16,
+      "type": "blog-cover",
+      "locale": "zh-hk",
+      "topic": "cmyk-guide",
+      "reason":"missing"filename": "cmyk-guide-zh-hk.webp",
+      "dimensions": "800x450",
+      "prompt":"TBD",
+      "alt": "cmyk-guide zh-hk blog cover"
+    },
+    {
+      "id": 17,
+      "type": "blog-cover",
+      "locale": "en",
+      "topic": "cmyk-guide",
+      "reason":"missing"filename": "cmyk-guide-en.webp",
+      "dimensions": "800x450",
+      "prompt":"TBD",
+      "alt": "cmyk-guide en blog cover"
+    },
+    {
+      "id": 18,
+      "type": "blog-cover",
+      "locale": "ja",
+      "topic": "cmyk-guide",
+      "reason":"missing"filename": "cmyk-guide-ja.webp",
+      "dimensions": "800x450",
+      "prompt":"TBD",
+      "alt": "cmyk-guide ja blog cover"
+    },
+    {
+      "id": 19,
+      "type": "blog-cover",
+      "locale": "zh-hk",
+      "topic": "paper-materials",
+      "reason":"missing"filename": "paper-materials-zh-hk.webp",
+      "dimensions": "800x450",
+      "prompt":"TBD",
+      "alt": "paper-materials zh-hk blog cover"
+    },
+    {
+      "id": 20,
+      "type": "blog-cover",
+      "locale": "en",
+      "topic": "paper-materials",
+      "reason":"missing"filename": "paper-materials-en.webp",
+      "dimensions": "800x450",
+      "prompt":"TBD",
+      "alt": "paper-materials en blog cover"
+    },
+    {
+      "id": 21,
+      "type": "blog-cover",
+      "locale": "ja",
+      "topic": "paper-materials",
+      "reason":"missing"filename": "paper-materials-ja.webp",
+      "dimensions": "800x450",
+      "prompt":"TBD",
+      "alt": "paper-materials ja blog cover"
+    },
+    {
+      "id": 22,
+      "type": "blog-cover",
+      "locale": "zh-hk",
+      "topic": "eco-printing",
+      "reason":"missing"filename": "eco-printing-zh-hk.webp",
+      "dimensions": "800x450",
+      "prompt":"TBD",
+      "alt": "eco-printing zh-hk blog cover"
+    },
+    {
+      "id": 23,
+      "type": "blog-cover",
+      "locale": "en",
+      "topic": "eco-printing",
+      "reason":"missing"filename": "eco-printing-en.webp",
+      "dimensions": "800x450",
+      "prompt":"TBD",
+      "alt": "eco-printing en blog cover"
+    },
+    {
+      "id": 24,
+      "type": "blog-cover",
+      "locale": "ja",
+      "topic": "eco-printing",
+      "reason":"missing"filename": "eco-printing-ja.webp",
+      "dimensions": "800x450",
+      "prompt":"TBD",
+      "alt": "eco-printing ja blog cover"
+    },
+    {
+      "id": 25,
+      "type": "product-card",
+      "locale": "en",
+      "product": "stickers",
+      "reason":"missing",
+      "filename": "stickers-en-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "stickers English product card"
+    },
+    {
+      "id": 26,
+      "type": "product-card",
+      "locale": "en",
+      "product": "flyers",
+      "reason":"missing",
+      "filename": "flyers-en-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "flyers English product card"
+    },
+    {
+      "id": 27,
+      "type": "product-card",
+      "locale": "en",
+      "product": "packaging",
+      "reason":"missing",
+      "filename": "packaging-en-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "packaging English product card"
+    },
+    {
+      "id": 28,
+      "type": "product-card",
+      "locale": "en",
+      "product": "posters",
+      "reason":"missing",
+      "filename": "posters-en-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "posters English product card"
+    },
+    {
+      "id": 29,
+      "type": "product-card",
+      "locale": "en",
+      "product": "paper-bags",
+      "reason":"missing",
+      "filename": "paper-bags-en-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "paper-bags English product card"
+    },
+    {
+      "id": 30,
+      "type": "product-card",
+      "locale": "en",
+      "product": "business-cards",
+      "reason":"missing",
+      "filename": "business-cards-en-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "business-cards English product card"
+    },
+    {
+      "id": 31,
+      "type": "product-card",
+      "locale": "en",
+      "product": "banners",
+      "reason":"missing",
+      "filename": "banners-en-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "banners English product card"
+    },
+    {
+      "id": 32,
+      "type": "product-card",
+      "locale": "en",
+      "product": "books",
+      "reason":"missing",
+      "filename": "books-en-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "books English product card"
+    },
+    {
+      "id": 33,
+      "type": "product-card",
+      "locale": "en",
+      "product": "menus",
+      "reason":"missing",
+      "filename": "menus-en-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "menus English product card"
+    },
+    {
+      "id": 34,
+      "type": "product-card",
+      "locale": "en",
+      "product": "envelopes",
+      "reason":"missing",
+      "filename": "envelopes-en-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "envelopes English product card"
+    },
+    {
+      "id": 35,
+      "type": "product-card",
+      "locale": "en",
+      "product": "calendars",
+      "reason":"missing",
+      "filename": "calendars-en-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "calendars English product card"
+    },
+    {
+      "id": 36,
+      "type": "product-card",
+      "locale": "en",
+      "product": "electronics-packaging-box",
+      "reason":"missing",
+      "filename": "electronics-packaging-box-en-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "electronics-packaging-box English product card"
+    },
+    {
+      "id": 37,
+      "type": "product-card",
+      "locale": "en",
+      "product": "kraft-paper-packaging-box",
+      "reason":"missing",
+      "filename": "kraft-paper-packaging-box-en-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "kraft-paper-packaging-box English product card"
+    },
+    {
+      "id": 38,
+      "type": "product-card",
+      "locale": "en",
+      "product": "drawer-slide-gift-box",
+      "reason":"missing",
+      "filename": "drawer-slide-gift-box-en-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "drawer-slide-gift-box English product card"
+    },
+    {
+      "id": 39,
+      "type": "product-card",
+      "locale": "en",
+      "product": "fruit-food-label-stickers",
+      "reason":"missing",
+      "filename": "fruit-food-label-stickers-en-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "fruit-food-label-stickers English product card"
+    },
+    {
+      "id": 40,
+      "type": "product-card",
+      "locale": "ja",
+      "product": "red-packets",
+      "reason":"missing"filename": "red-packets-ja-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "red-packets Japanese product card"
+    },
+    {
+      "id": 41,
+      "type": "product-card",
+      "locale": "ja",
+      "product": "educational",
+      "reason":"missing"filename": "educational-ja-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "educational Japanese product card"
+    },
+    {
+      "id": 42,
+      "type": "product-card",
+      "locale": "ja",
+      "product": "premium-business-cards",
+      "reason":"missing"filename": "premium-business-cards-ja-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "premium-business-cards Japanese product card"
+    },
+    {
+      "id": 43,
+      "type": "product-card",
+      "locale": "ja",
+      "product": "thick-business-cards-400g",
+      "reason":"missing"filename": "thick-business-cards-400g-ja-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "thick-business-cards-400g Japanese product card"
+    },
+    {
+      "id": 44,
+      "type": "product-card",
+      "locale": "ja",
+      "product": "waterproof-stickers",
+      "reason":"missing"filename": "waterproof-stickers-ja-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "waterproof-stickers Japanese product card"
+    },
+    {
+      "id": 45,
+      "type": "product-card",
+      "locale": "ja",
+      "product": "removable-stickers",
+      "reason":"missing"filename": "removable-stickers-ja-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "removable-stickers Japanese product card"
+    },
+    {
+      "id": 46,
+      "type": "product-card",
+      "locale": "ja",
+      "product": "small-batch-stickers",
+      "reason":"missing"filename": "small-batch-stickers-ja-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "small-batch-stickers Japanese product card"
+    },
+    {
+      "id": 47,
+      "type": "product-card",
+      "locale": "ja",
+      "product": "fluorescent-stickers",
+      "reason":"missing"filename": "fluorescent-stickers-ja-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "fluorescent-stickers Japanese product card"
+    },
+    {
+      "id": 48,
+      "type": "product-card",
+      "locale": "ja",
+      "product": "large-bags",
+      "reason":"missing"filename": "large-bags-ja-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "large-bags Japanese product card"
+    },
+    {
+      "id": 49,
+      "type": "product-card",
+      "locale": "ja",
+      "product": "outdoor-posters",
+      "reason":"missing"filename": "outdoor-posters-ja-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "outdoor-posters Japanese product card"
+    },
+    {
+      "id": 50,
+      "type": "product-card",
+      "locale": "ja",
+      "product": "display-posters",
+      "reason":"missing"filename": "display-posters-ja-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "display-posters Japanese product card"
+    },
+    {
+      "id": 51,
+      "type": "product-card",
+      "locale": "ja",
+      "product": "art-posters",
+      "reason":"missing"filename": "art-posters-ja-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "art-posters Japanese product card"
+    },
+    {
+      "id": 52,
+      "type": "product-card",
+      "locale": "ja",
+      "product": "adhesive-posters",
+      "reason":"missing"filename": "adhesive-posters-ja-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "adhesive-posters Japanese product card"
+    },
+    {
+      "id": 53,
+      "type": "product-card",
+      "locale": "ja",
+      "product": "food-boxes",
+      "reason":"missing"filename": "food-boxes-ja-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "food-boxes Japanese product card"
+    },
+    {
+      "id": 54,
+      "type": "product-card",
+      "locale": "ja",
+      "product": "folding-boxes",
+      "reason":"missing"filename": "folding-boxes-ja-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "folding-boxes Japanese product card"
+    },
+    {
+      "id": 55,
+      "type": "product-card",
+      "locale": "ja",
+      "product": "desk-calendars",
+      "reason":"missing"filename": "desk-calendars-ja-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "desk-calendars Japanese product card"
+    },
+    {
+      "id": 56,
+      "type": "product-card",
+      "locale": "ja",
+      "product": "vehicle-wraps",
+      "reason":"missing"filename": "vehicle-wraps-ja-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "vehicle-wraps Japanese product card"
+    },
+    {
+      "id": 57,
+      "type": "product-card",
+      "locale": "ja",
+      "product": "mesh-banners",
+      "reason":"missing"filename": "mesh-banners-ja-card.webp",
+      "dimensions": "800x600",
+      "prompt":"TBD",
+      "alt": "mesh-banners Japanese product card"
+    }
+  ]
+}
