@@ -104,8 +104,15 @@ export default function PillarPage({
               <h1 className="text-3xl md:text-4xl font-bold text-[#333333] mb-4">
                 {pillar.title[safeLocale]}
               </h1>
-              <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+              <p className="text-lg text-gray-600 mb-2 leading-relaxed">
                 {pillar.description[safeLocale]}
+              </p>
+              <p className="text-sm text-gray-400 mb-8">
+                {safeLocale === 'zh-hk'
+                  ? `最後更新：${pillar.lastUpdated}`
+                  : safeLocale === 'en'
+                    ? `Last updated: ${pillar.lastUpdated}`
+                    : `最終更新：${pillar.lastUpdated}`}
               </p>
               <div
                 className="prose prose-blue max-w-none text-gray-600 leading-relaxed"
