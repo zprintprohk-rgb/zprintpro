@@ -45,6 +45,8 @@ const commonSegments: Record<string, Record<Locale, string>> = {
   calendars: { 'zh-hk': '年曆印刷', en: 'Calendars', ja: 'カレンダー印刷' },
   'red-packets': { 'zh-hk': '利是封印刷', en: 'Red Packets', ja: 'ポチ袋印刷' },
   educational: { 'zh-hk': '校園教育印刷', en: 'Educational', ja: '教育印刷' },
+  services: { 'zh-hk': '服務', en: 'Services', ja: 'サービス' },
+  'rush-printing-delivery': { 'zh-hk': '即日服務', en: 'Rush Service', ja: '即日サービス' },
 };
 
 // =============================================================================

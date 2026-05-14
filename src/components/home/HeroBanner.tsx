@@ -23,7 +23,7 @@ const translations = {
     browseAll: '瀏覽全部產品',
     fromPrice: '低至',
     slides: [
-      { title: '⚡ 印刷即日速递送货', subtitle: '今天下單·明天12點前到，專為臨急任務而生', price: '即日可取', image: '/images/hero/hero-rush-delivery-zh-hk.webp', href: '/zh-hk/services/rush-printing-delivery' },
+      { title: '⚡ 印刷即日速递送货', subtitle: '今天下單·明天12點前到，專為臨急任務而生', price: '即日可取', image: '/images/hero/hero-flyer-zh-hk.webp', href: '/zh-hk/services/rush-printing-delivery' },
       { title: '專業牛皮紙袋印刷', subtitle: '環保材質，堅固耐用，適合零售外賣', price: 'HK$1.2起', image: '/images/hero/hero-kraft-bag-zh-hk.webp', href: '/product/kraft-paper-bags/' },
       { title: 'A4宣傳單張印刷', subtitle: '彩色印刷，即日可取，宣傳首選', price: 'HK$0.3起', image: '/images/hero/hero-flyer-zh-hk.webp', href: '/product/a4-flyers/' },
       { title: '防水貼紙印刷', subtitle: '耐用材質，多種形狀，適用於任何表面', price: 'HK$0.5起', image: '/images/hero/hero-sticker-zh-hk.webp', href: '/product/waterproof-stickers/' },
@@ -37,7 +37,7 @@ const translations = {
     browseAll: 'Browse All Products',
     fromPrice: 'From',
     slides: [
-      { title: '⚡ Same-Day Printing Delivery', subtitle: 'Order Today, Receive by 12PM Tomorrow. Rush service for urgent jobs', price: 'Same Day', image: '/images/hero/hero-rush-delivery-en.webp', href: '/en/services/rush-printing-delivery' },
+      { title: ' Same-Day Printing Delivery', subtitle: 'Order Today, Receive by 12PM Tomorrow. Rush service for urgent jobs', price: 'Same Day', image: '/images/hero/hero-flyer-en.webp', href: '/en/services/rush-printing-delivery' },
       { title: 'Professional Kraft Paper Bags', subtitle: 'Eco-friendly, durable, perfect for retail and takeout', price: 'From HK$1.2', image: '/images/hero/hero-kraft-bag-en.webp', href: '/product/kraft-paper-bags/' },
       { title: 'A4 Flyer Printing', subtitle: 'Full color, same-day pickup, ideal for promotion', price: 'From HK$0.3', image: '/images/hero/hero-flyer-en.webp', href: '/product/a4-flyers/' },
       { title: 'Waterproof Sticker Printing', subtitle: 'Durable material, various shapes, for any surface', price: 'From HK$0.5', image: '/images/hero/hero-sticker-en.webp', href: '/product/waterproof-stickers/' },
@@ -51,7 +51,7 @@ const translations = {
     browseAll: 'すべての製品を見る',
     fromPrice: '最低',
     slides: [
-      { title: '⚡ 即日印刷・翌日正午配送', subtitle: '本日注文・明日12時までお届け。緊急印刷対応', price: '即日対応', image: '/images/hero/hero-rush-delivery-ja.webp', href: '/ja/services/rush-printing-delivery' },
+      { title: '⚡ 即日印刷・翌日正午配送', subtitle: '本日注文・明日12時までお届け。緊急印刷対応', price: '即日対応', image: '/images/hero/hero-flyer-ja.webp', href: '/ja/services/rush-printing-delivery' },
       { title: 'クラフト紙袋印刷', subtitle: '環境に優しく耐久性があり、小売やテイクアウトに最適', price: 'HK$1.2〜', image: '/images/hero/hero-kraft-bag-ja.webp', href: '/product/kraft-paper-bags/' },
       { title: 'A4チラシ印刷', subtitle: 'フルカラー、当日受取可能、宣伝に最適', price: 'HK$0.3〜', image: '/images/hero/hero-flyer-ja.webp', href: '/product/a4-flyers/' },
       { title: '防水ステッカー印刷', subtitle: '耐久性のある素材、様々な形状、あらゆる表面に対応', price: 'HK$0.5〜', image: '/images/hero/hero-sticker-ja.webp', href: '/product/waterproof-stickers/' },
