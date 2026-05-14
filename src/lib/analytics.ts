@@ -44,6 +44,6 @@ export function getGaScript(): string {
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', '${GA_ID}', { send_page_view: false });
+    gtag('config', '${GA_ID}', { send_page_view: true });
   `;
 }
