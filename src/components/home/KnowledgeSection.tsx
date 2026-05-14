@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
+import { PictureImage } from '@/components/picture-image';
 import Link from 'next/link';
 import { ArrowRight, Calendar } from 'lucide-react';
 import { Locale } from '@/lib/seo';
@@ -174,12 +174,11 @@ export function KnowledgeSection({ locale }: KnowledgeSectionProps) {
             >
               {/* Image */}
               <div className="aspect-[16/10] relative overflow-hidden">
-                <Image
+                <PictureImage
                   src={article.image}
                   alt={article.title}
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
-                  unoptimized
                   loading="lazy"
                   decoding="async"
                 />

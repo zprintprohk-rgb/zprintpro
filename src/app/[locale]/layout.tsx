@@ -29,6 +29,7 @@ export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,
+  themeColor: '#2873F5',
 };
 
 interface RootLayoutProps {
@@ -48,6 +49,8 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://api.airwallex.com" />
+        <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
         {hreflangs.map((tag, i) => (
           <link key={i} rel={tag.rel} hrefLang={tag.hrefLang} href={tag.href} />
         ))}
@@ -55,6 +58,17 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(generateWebsiteJsonLd()),
+          }}
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function() {
+                  navigator.serviceWorker.register('/sw.js');
+                });
+              }
+            `,
           }}
         />
       </head>

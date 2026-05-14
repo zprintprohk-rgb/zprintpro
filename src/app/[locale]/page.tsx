@@ -38,6 +38,12 @@ export default function HomePage({
   params: { locale: Locale };
 }) {
   const { locale } = params;
+
+  const heroPreloadMap: Record<Locale, string> = {
+    'zh-hk': '/images/hero/hero-kraft-bag-zh-hk.webp',
+    'en': '/images/hero/hero-kraft-bag-en.webp',
+    'ja': '/images/hero/hero-kraft-bag-ja.webp',
+  };
   
   // 结构化数据 — 按地區切換 LocalBusiness / Organization
   const orgSchema = generateOrganizationSchema(locale);
@@ -45,6 +51,7 @@ export default function HomePage({
 
   return (
     <>
+      <link rel="preload" as="image" href={heroPreloadMap[locale]} type="image/webp" />
       {/* 结构化数据 */}
       <JsonLd data={[orgSchema, localSchema]} />
       
