@@ -340,6 +340,8 @@ export default function BlogContent({ locale }: { locale: Locale }) {
                         fill
                         className="object-cover group-hover:scale-105 transition-transform duration-500"
                         unoptimized
+                        loading="lazy"
+                        decoding="async"
                       />
                     </div>
                     <div className="p-5">
@@ -435,6 +437,8 @@ export default function BlogContent({ locale }: { locale: Locale }) {
                         height={64}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                         unoptimized
+                        loading="lazy"
+                        decoding="async"
                       />
                     </div>
                     <div className="flex-1 min-w-0">

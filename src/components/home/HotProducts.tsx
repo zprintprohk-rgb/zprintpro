@@ -115,6 +115,8 @@ function ProductImage({ src, alt }: { src: string; alt: string }) {
         fill
         className="object-cover group-hover:scale-105 transition-transform duration-500"
         unoptimized
+        loading="lazy"
+        decoding="async"
         onError={() => setImgError(true)}
       />
     );

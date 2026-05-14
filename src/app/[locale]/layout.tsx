@@ -12,8 +12,9 @@ import { BreadcrumbNav } from '@/components/breadcrumb-nav';
 import { CartProvider } from '@/lib/cart-context';
 import { htmlLangMap } from '@/types/locale';
 import { generateHreflangTags } from '@/lib/hreflang';
+import { generateWebsiteJsonLd } from '@/lib/seo';
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ['latin'], display: 'swap' });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://zprintpro.com'),
@@ -45,9 +46,17 @@ export default function RootLayout({
   return (
     <html lang={htmlLangMap[safeLocale] || locale}>
       <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         {hreflangs.map((tag, i) => (
           <link key={i} rel={tag.rel} hrefLang={tag.hrefLang} href={tag.href} />
         ))}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(generateWebsiteJsonLd()),
+          }}
+        />
       </head>
       <body className={inter.className}>
         <CartProvider>

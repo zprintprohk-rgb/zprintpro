@@ -124,6 +124,8 @@ export default function CartClient({ params }: CartPageProps) {
                     height={112}
                     className="w-full h-full object-cover"
                     unoptimized
+                    loading="lazy"
+                    decoding="async"
                   />
                 </Link>
 

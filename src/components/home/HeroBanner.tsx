@@ -96,6 +96,8 @@ export function HeroBanner({ locale }: HeroBannerProps) {
                   className="object-cover object-right"
                   unoptimized
                   priority={index === 0}
+                  loading={index === 0 ? undefined : 'lazy'}
+                  decoding="async"
                 />
                 {/* 统一遮罩保证文字可读，不添加渐变色块 */}
                 <div className="absolute inset-0 bg-black/40" />

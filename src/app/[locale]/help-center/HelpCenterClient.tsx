@@ -754,6 +754,8 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
                               height={200}
                               className="w-full h-full object-contain"
                               unoptimized
+                              loading="lazy"
+                              decoding="async"
                             />
                           </div>
                         </div>
@@ -767,6 +769,8 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
                               height={200}
                               className="w-full h-full object-contain"
                               unoptimized
+                              loading="lazy"
+                              decoding="async"
                             />
                           </div>
                         </div>
@@ -783,6 +787,8 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
                             height={280}
                             className="w-full h-full object-contain"
                             unoptimized
+                            loading="lazy"
+                            decoding="async"
                           />
                         </div>
                       </div>

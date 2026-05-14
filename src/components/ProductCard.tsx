@@ -66,6 +66,8 @@ export function ProductCard({ product, locale }: ProductCardProps) {
             fill
             className="object-cover group-hover:scale-105 transition-transform duration-300"
             unoptimized
+            loading="lazy"
+            decoding="async"
             onError={() => setImgError(true)}
           />
         ) : (

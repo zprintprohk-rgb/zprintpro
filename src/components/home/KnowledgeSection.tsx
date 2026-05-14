@@ -180,6 +180,8 @@ export function KnowledgeSection({ locale }: KnowledgeSectionProps) {
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                   unoptimized
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
 

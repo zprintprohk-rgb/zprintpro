@@ -284,7 +284,7 @@ export default function OrderConfirmationClient({ params }: OrderConfirmationPag
                 {items.map((item: any) => (
                   <div key={item.sku_code || item.id} className="flex gap-4">
                     <div className="w-16 h-16 rounded-lg overflow-hidden bg-gray-50 flex-shrink-0">
-                      <Image src={item.image || '/images/placeholder.webp'} alt={item.name || ''} width={64} height={64} className="w-full h-full object-cover" unoptimized />
+                      <Image src={item.image || '/images/placeholder.webp'} alt={item.name || ''} width={64} height={64} className="w-full h-full object-cover" unoptimized loading="lazy" decoding="async" />
                     </div>
                     <div className="flex-1">
                       <p className="font-medium text-sm text-[#333333]">
@@ -394,13 +394,13 @@ export default function OrderConfirmationClient({ params }: OrderConfirmationPag
                               <div className="bg-white rounded-lg border border-gray-200 p-3 text-center">
                                 <p className="text-xs text-gray-500 mb-2">{t.wechat}</p>
                                 <div className="aspect-square bg-gray-50 rounded overflow-hidden">
-                                  <Image src="/images/payment-wechat.webp" alt="WeChat" width={200} height={200} className="w-full h-full object-contain" unoptimized />
+                                  <Image src="/images/payment-wechat.webp" alt="WeChat" width={200} height={200} className="w-full h-full object-contain" unoptimized loading="lazy" decoding="async" />
                                 </div>
                               </div>
                               <div className="bg-white rounded-lg border border-gray-200 p-3 text-center">
                                 <p className="text-xs text-gray-500 mb-2">{t.alipay}</p>
                                 <div className="aspect-square bg-gray-50 rounded overflow-hidden">
-                                  <Image src="/images/payment-alipay.webp" alt="Alipay" width={200} height={200} className="w-full h-full object-contain" unoptimized />
+                                  <Image src="/images/payment-alipay.webp" alt="Alipay" width={200} height={200} className="w-full h-full object-contain" unoptimized loading="lazy" decoding="async" />
                                 </div>
                               </div>
                             </div>
@@ -409,7 +409,7 @@ export default function OrderConfirmationClient({ params }: OrderConfirmationPag
                               <p className="text-sm font-semibold text-gray-700 mb-1">{t.flash}</p>
                               <p className="text-xs text-gray-500 mb-3">{locale === 'ja' ? '推奨支払方法' : 'Recommended'}</p>
                               <div className="aspect-square bg-gray-50 rounded overflow-hidden max-w-[240px] mx-auto">
-                                <Image src="/images/payment-flash.webp" alt="Flash Receipt" width={240} height={240} className="w-full h-full object-contain" unoptimized />
+                                <Image src="/images/payment-flash.webp" alt="Flash Receipt" width={240} height={240} className="w-full h-full object-contain" unoptimized loading="lazy" decoding="async" />
                               </div>
                             </div>
                           )}

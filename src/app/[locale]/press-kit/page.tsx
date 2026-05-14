@@ -260,7 +260,7 @@ export default function PressKitPage({ params }: PressKitPageProps) {
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">{t.logo}</h3>
                 <p className="text-sm text-gray-500 mb-4">{t.logoDesc}</p>
                 <div className="bg-gray-50 rounded-lg p-8 mb-4 flex items-center justify-center">
-                  <img src="/ZprintproLOGONEW.png" alt="ZprintPro Logo" className="max-h-24 object-contain" />
+                  <img src="/ZprintproLOGONEW.png" alt="ZprintPro Logo" className="max-h-24 object-contain" loading="lazy" decoding="async" width="200" height="80" />
                 </div>
                 <a
                   href="/ZprintproLOGONEW.png"

@@ -425,7 +425,7 @@ export default function CheckoutClient({ params }: CheckoutPageProps) {
                 {items.map((item) => (
                   <div key={item.sku_code} className="flex gap-3">
                     <div className="w-14 h-14 rounded-lg overflow-hidden bg-gray-50 flex-shrink-0">
-                      <Image src={item.image} alt={item.name} width={56} height={56} className="w-full h-full object-cover" unoptimized />
+                      <Image src={item.image} alt={item.name} width={56} height={56} className="w-full h-full object-cover" unoptimized loading="lazy" decoding="async" />
                     </div>
                     <div className="flex-1 min-w-0">
                       <p className="text-sm font-medium text-[#333333] line-clamp-1">

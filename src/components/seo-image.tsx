@@ -24,6 +24,8 @@ export function SEOImage({ src, alt, locale, ...props }: SEOImageProps) {
     <Image
       src={imageSrc}
       alt={imageAlt}
+      loading={props.priority ? undefined : 'lazy'}
+      decoding="async"
       {...props}
     />
   );

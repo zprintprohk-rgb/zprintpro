@@ -192,6 +192,8 @@ export function Footer({ locale }: FooterProps) {
                 width={240}
                 height={53}
                 className="h-11 w-auto"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <p className="text-gray-400 text-sm mb-4 leading-relaxed">{t.companyDesc}</p>
