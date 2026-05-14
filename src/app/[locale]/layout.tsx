@@ -13,6 +13,7 @@ import { CartProvider } from '@/lib/cart-context';
 import { htmlLangMap } from '@/types/locale';
 import { generateHreflangTags } from '@/lib/hreflang';
 import { generateWebsiteJsonLd } from '@/lib/seo';
+import { getGaScript } from '@/lib/analytics';
 
 const inter = Inter({ subsets: ['latin'], display: 'swap' });
 
@@ -60,6 +61,19 @@ export default function RootLayout({
             __html: JSON.stringify(generateWebsiteJsonLd()),
           }}
         />
+        {process.env.NEXT_PUBLIC_GA_ID && (
+          <>
+            <script
+              async
+              src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`}
+            />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: getGaScript(),
+              }}
+            />
+          </>
+        )}
         <script
           dangerouslySetInnerHTML={{
             __html: `

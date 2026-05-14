@@ -28,6 +28,7 @@ export interface PillarPage {
   image?: string;
   date: string;
   lastUpdated: string;
+  linkedProducts?: string[];
 }
 
 // =============================================================================
@@ -60,6 +61,7 @@ export const stickerGuidePillar: PillarPage = {
   image: '/images/guide/sticker-guide.webp',
   date: '2026-05-13',
   lastUpdated: '2026-05-14',
+  linkedProducts: ['waterproof-stickers', 'transparent-stickers', 'foil-stickers'],
 };
 
 // =============================================================================
@@ -92,6 +94,7 @@ export const flyerGuidePillar: PillarPage = {
   image: '/images/guide/flyer-guide.webp',
   date: '2026-05-13',
   lastUpdated: '2026-05-14',
+  linkedProducts: ['a5-flyers', 'a4-flyers', 'thick-paper-flyers'],
 };
 
 // =============================================================================
@@ -124,6 +127,7 @@ export const packagingGuidePillar: PillarPage = {
   image: '/images/guide/packaging-guide.webp',
   date: '2026-05-13',
   lastUpdated: '2026-05-14',
+  linkedProducts: ['gift-boxes', 'mailer-boxes', 'kraft-paper-bags'],
 };
 
 // =============================================================================

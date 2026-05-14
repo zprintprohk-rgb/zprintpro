@@ -5,7 +5,7 @@ import { Locale, siteConfig, generateFaqJsonLd } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
 import { getBuyingGuideBySlug, getAllBuyingGuideSlugs } from '@/data/buying-guides';
 import { getClusterBySlug, getAllClusterSlugs } from '@/data/pillar-content';
-import { products, getProductTitle, getProductDescription } from '@/data/products';
+import { products, getProductTitle, getProductDescription, getProductBySlug } from '@/data/products';
 import { convertPriceRangeString } from '@/lib/pricing';
 
 interface BlogPostPageProps {
@@ -20,6 +20,7 @@ const translations = {
     authorPrefix: '作者：',
     author: '智印云印刷專家',
     published: '發布於',
+    relatedProducts: '相關產品推薦',
   },
   'en': {
     backToBlog: '← Back to Blog',
@@ -28,6 +29,7 @@ const translations = {
     authorPrefix: 'By ',
     author: 'ZprintPro Printing Experts',
     published: 'Published',
+    relatedProducts: 'Related Products',
   },
   'ja': {
     backToBlog: '← ブログに戻る',
@@ -36,6 +38,7 @@ const translations = {
     authorPrefix: '執筆：',
     author: 'ZprintPro印刷専門家',
     published: '公開日',
+    relatedProducts: '関連製品',
   },
 };
 
@@ -429,6 +432,7 @@ function getPostData(locale: Locale, slug: string) {
       content: legacyPost.content,
       keywords: '',
       isBuyingGuide: false,
+      linkedProducts: [] as string[],
     };
   }
   const guide = getBuyingGuideBySlug(slug);
@@ -441,6 +445,7 @@ function getPostData(locale: Locale, slug: string) {
       content: guide.content[locale],
       keywords: guide.keywords[locale],
       isBuyingGuide: true,
+      linkedProducts: guide.relatedProducts || [],
     };
   }
   const cluster = getClusterBySlug(slug);
@@ -454,6 +459,7 @@ function getPostData(locale: Locale, slug: string) {
       content,
       keywords: cluster.keywords[locale].join(','),
       isBuyingGuide: false,
+      linkedProducts: cluster.linkedProducts || [],
     };
   }
   return null;
@@ -609,6 +615,11 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
     .sort((a, b) => b.weight_score - a.weight_score)
     .slice(0, 4);
 
+  const linkedProductSlugs = post.linkedProducts?.slice(0, 4) || [];
+  const linkedProducts = linkedProductSlugs
+    .map((slug) => getProductBySlug(slug))
+    .filter((p): p is NonNullable<typeof p> => !!p);
+
   return (
     <main className="min-h-screen bg-gray-50 py-12">
       <JsonLd data={articleJsonLd} />
@@ -650,6 +661,37 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                 className="mt-6 prose prose-blue max-w-none text-gray-600 leading-relaxed"
                 dangerouslySetInnerHTML={{ __html: post.content }}
               />
+
+              {/* 相關產品推薦 */}
+              {linkedProducts.length > 0 && (
+                <div className="mt-10 pt-8 border-t border-gray-100">
+                  <h3 className="text-lg font-bold text-[#333333] mb-4">{t.relatedProducts}</h3>
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                    {linkedProducts.map((product) => (
+                      <a
+                        key={product.slug}
+                        href={`${localePrefix}/product/${product.slug}/`}
+                        className="group bg-gray-50 rounded-xl border border-gray-100 overflow-hidden hover:shadow-md transition-shadow"
+                      >
+                        <div className="aspect-square bg-white relative overflow-hidden">
+                          <img
+                            src={product.imagesByLocale?.[locale]?.[0] || product.images?.[0] || '/images/placeholder.jpg'}
+                            alt={getProductTitle(product, locale)}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div className="p-3">
+                          <h4 className="text-sm font-bold text-[#333333] line-clamp-2 group-hover:text-[#2873F5] transition-colors">
+                            {getProductTitle(product, locale)}
+                          </h4>
+                        </div>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           </article>
 

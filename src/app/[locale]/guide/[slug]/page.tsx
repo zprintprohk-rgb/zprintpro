@@ -7,6 +7,7 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { Locale, locales } from '@/types/locale';
 import { pillars, getClustersByPillarSlug, getPillarBySlug } from '@/data/pillar-content';
+import { getProductBySlug, getProductTitle } from '@/data/products';
 import { generateArticleSchema } from '@/lib/seo';
 import { createMetadata } from '@/lib/metadata';
 import { JsonLd } from '@/components/JsonLd';
@@ -161,10 +162,15 @@ export default function PillarPage({
   };
 
   const t = {
-    'zh-hk': { relatedArticles: '相關文章', readMore: '閱讀全文', backToHome: '← 返回首頁' },
-    'en': { relatedArticles: 'Related Articles', readMore: 'Read Full Article', backToHome: '← Back to Home' },
-    'ja': { relatedArticles: '関連記事', readMore: '全文を読む', backToHome: '← ホームに戻る' },
+    'zh-hk': { relatedArticles: '相關文章', readMore: '閱讀全文', backToHome: '← 返回首頁', relatedProducts: '相關產品推薦' },
+    'en': { relatedArticles: 'Related Articles', readMore: 'Read Full Article', backToHome: '← Back to Home', relatedProducts: 'Related Products' },
+    'ja': { relatedArticles: '関連記事', readMore: '全文を読む', backToHome: '← ホームに戻る', relatedProducts: '関連製品' },
   }[safeLocale];
+
+  const linkedProductSlugs = pillar.linkedProducts?.slice(0, 4) || [];
+  const linkedProducts = linkedProductSlugs
+    .map((slug: string) => getProductBySlug(slug))
+    .filter((p): p is NonNullable<typeof p> => !!p);
 
   return (
     <>
@@ -201,6 +207,37 @@ export default function PillarPage({
             </div>
           </article>
 
+          {/* 相關產品推薦 */}
+          {linkedProducts.length > 0 && (
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold text-[#333333] mb-6">{t.relatedProducts}</h2>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                {linkedProducts.map((product: NonNullable<ReturnType<typeof getProductBySlug>>) => (
+                  <a
+                    key={product.slug}
+                    href={`/${safeLocale}/product/${product.slug}/`}
+                    className="group bg-white rounded-xl border border-gray-100 overflow-hidden hover:shadow-lg transition-shadow"
+                  >
+                    <div className="aspect-square bg-gray-50 relative overflow-hidden">
+                      <img
+                        src={product.imagesByLocale?.[safeLocale]?.[0] || product.images?.[0] || '/images/placeholder.jpg'}
+                        alt={getProductTitle(product, safeLocale)}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div className="p-3">
+                      <h3 className="text-sm font-bold text-[#333333] line-clamp-2 group-hover:text-[#2873F5] transition-colors">
+                        {getProductTitle(product, safeLocale)}
+                      </h3>
+                    </div>
+                  </a>
+                ))}
+              </div>
+            </section>
+          )}
+
           {/* 相關集群文章卡片 */}
           <section>
             <h2 className="text-2xl font-bold text-[#333333] mb-6">{t.relatedArticles}</h2>
@@ -217,6 +254,7 @@ export default function PillarPage({
                         alt={cluster.title[safeLocale]}
                         className="w-full h-full object-cover"
                         loading="lazy"
+                        decoding="async"
                       />
                     ) : (
                       <div className="w-full h-full flex items-center justify-center text-gray-300">
