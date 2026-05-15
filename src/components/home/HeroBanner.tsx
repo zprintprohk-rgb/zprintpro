@@ -147,7 +147,7 @@ export function HeroBanner({ locale }: HeroBannerProps) {
                 <div className="hidden md:flex absolute inset-0 flex-col justify-between px-8 md:px-12 py-6 md:py-8 z-10">
                   {/* === 上半区：空白占位，将内容推下（增加两个描述文字高度） === */}
                   <div className="flex-1" />
-                  <div className="h-10 md:h-12" />
+                  <div className="h-[50px] md:h-[58px]" />
 
                   {/* === 中间区：三行主视觉 + 描述文字（整体下移到红线位置） === */}
                   <div className="mb-6">
