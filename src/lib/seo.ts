@@ -521,7 +521,7 @@ export function generateProductJsonLd(
         },
         shippingDestination: {
           '@type': 'DefinedRegion',
-          addressCountry: currency === 'HKD' ? 'HK' : currency === 'JPY' ? 'JP' : 'US',
+          addressCountry: locale === 'zh-hk' ? 'HK' : locale === 'ja' ? 'JP' : 'US',
         },
         deliveryTime: {
           '@type': 'ShippingDeliveryTime',
@@ -540,6 +540,7 @@ export function generateProductJsonLd(
           : locale === 'ja'
           ? 'オーダーメイド印刷品は返品不可、発送前にデジタル校正を提供'
           : 'Custom printed products are non-returnable. Digital proof provided before production.',
+        applicableCountry: locale === 'zh-hk' ? 'HK' : locale === 'ja' ? 'JP' : 'US',
       },
     },
   };
