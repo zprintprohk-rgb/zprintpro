@@ -16,41 +16,41 @@ interface HeroBannerProps {
   locale: Locale;
 }
 
-// 每张轮播图定义不同的遮罩颜色和强调色
+// 每张轮播图定义不同的遮罩颜色和强调色（透明度变浅50%）
 const slideStyles = [
   {
     // 第1张：即日服务 — 活力红色系
-    overlay: 'bg-gradient-to-r from-red-900/70 via-rose-700/50 to-transparent',
+    overlay: 'bg-gradient-to-r from-red-900/35 via-rose-700/25 to-transparent',
     accentColor: 'bg-red-500',
     accentHover: 'hover:bg-red-400',
   },
   {
     // 第2张：牛皮纸袋 — 暖棕色系
-    overlay: 'bg-gradient-to-r from-amber-900/70 via-orange-800/50 to-transparent',
+    overlay: 'bg-gradient-to-r from-amber-900/35 via-orange-800/25 to-transparent',
     accentColor: 'bg-orange-500',
     accentHover: 'hover:bg-orange-400',
   },
   {
     // 第3张：宣传单张 — 品牌橙色系
-    overlay: 'bg-gradient-to-r from-orange-900/70 via-amber-700/50 to-transparent',
+    overlay: 'bg-gradient-to-r from-orange-900/35 via-amber-700/25 to-transparent',
     accentColor: 'bg-orange-500',
     accentHover: 'hover:bg-orange-400',
   },
   {
     // 第4张：贴纸 — 清新绿色系
-    overlay: 'bg-gradient-to-r from-emerald-900/70 via-teal-700/50 to-transparent',
+    overlay: 'bg-gradient-to-r from-emerald-900/35 via-teal-700/25 to-transparent',
     accentColor: 'bg-emerald-500',
     accentHover: 'hover:bg-emerald-400',
   },
   {
     // 第5张：包装盒 — 高端紫色系
-    overlay: 'bg-gradient-to-r from-violet-900/70 via-purple-700/50 to-transparent',
+    overlay: 'bg-gradient-to-r from-violet-900/35 via-purple-700/25 to-transparent',
     accentColor: 'bg-violet-500',
     accentHover: 'hover:bg-violet-400',
   },
   {
     // 第6张：海报 — 深海蓝色系
-    overlay: 'bg-gradient-to-r from-blue-900/70 via-cyan-700/50 to-transparent',
+    overlay: 'bg-gradient-to-r from-blue-900/35 via-cyan-700/25 to-transparent',
     accentColor: 'bg-blue-500',
     accentHover: 'hover:bg-blue-400',
   },
@@ -145,8 +145,8 @@ export function HeroBanner({ locale }: HeroBannerProps) {
                 <div className={`absolute inset-0 ${slideStyles[index].overlay}`} />
                 {/* PC端文字内容 - 三行主视觉 + 底部辅助层 */}
                 <div className="hidden md:flex absolute inset-0 flex-col justify-between px-8 md:px-12 py-6 md:py-8 z-10">
-                  {/* === 上半区：三行主视觉 === */}
-                  <div className="pt-8 md:pt-12">
+                  {/* === 上半区：三行主视觉 — 整体下移 === */}
+                  <div className="pt-16 md:pt-24">
                     {/* 第1行：低至标签（蓝色底色，白色文字，圆角胶囊） */}
                     <span className="inline-block bg-blue-600 text-white text-sm font-bold px-4 py-1.5 rounded-full mb-3 shadow-md w-fit">
                       {t.fromPrice} {slide.price}

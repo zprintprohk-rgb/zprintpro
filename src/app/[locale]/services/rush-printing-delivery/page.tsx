@@ -89,19 +89,10 @@ export default function RushDeliveryPage({ params }: Props) {
         </div>
       </section>
 
-      {/* 面包屑 */}
-      <nav className="flex items-center gap-2 text-sm text-gray-500 mb-4" aria-label="Breadcrumb">
-        <Link href={`/${locale}`} className="hover:text-[#2873F5] transition-colors">
-          {locale === 'zh-hk' ? '首頁' : locale === 'en' ? 'Home' : 'ホーム'}
-        </Link>
-        <span>/</span>
-        <span className="text-gray-900 font-medium">
-          {locale === 'zh-hk' ? '即日服務' : locale === 'en' ? 'Rush Service' : '即日サービス'}
-        </span>
-      </nav>
+      {/* 面包屑由 layout.tsx / BreadcrumbNav 统一生成，page.tsx 内不重复 */}
 
       {/* GEO 答案块 */}
-      <section className="mb-5">
+      <section className="mb-4">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">{title}</h1>
         <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-3xl">
           {locale === 'zh-hk' && (
@@ -125,46 +116,67 @@ export default function RushDeliveryPage({ params }: Props) {
         </p>
       </section>
 
-      {/* 时间轴 - 图标间距缩小 + 居中 + UI 美化 */}
+      {/* 时间轴 - 4个节点均匀分布在1000px容器内 */}
       <section className="mb-8 bg-gray-50 rounded-xl p-6 md:p-8">
-        <div className="flex flex-col md:flex-row justify-center items-start gap-4 md:gap-6 max-w-3xl mx-auto text-center">
-          {[
-            {
-              time: locale === 'zh-hk' ? '今天18:00' : locale === 'en' ? 'Today 6PM' : '本日18時',
-              label: locale === 'zh-hk' ? '您下單' : locale === 'en' ? 'You order' : 'ご注文',
-              icon: '👤',
-            },
-            {
-              time: locale === 'zh-hk' ? '今晚22:00' : locale === 'en' ? 'Tonight 10PM' : '今夜22時',
-              label: locale === 'zh-hk' ? '印刷完成' : locale === 'en' ? 'Printed' : '印刷完了',
-              icon: '🖨️',
-            },
-            {
-              time: locale === 'zh-hk' ? '明早06:00' : locale === 'en' ? 'Tomorrow 6AM' : '翌朝6時',
-              label: locale === 'zh-hk' ? '分揀包裝' : locale === 'en' ? 'Packed' : '梱包完了',
-              icon: '📦',
-            },
-            {
-              time: locale === 'zh-hk' ? '明天12:00' : locale === 'en' ? 'Tomorrow 12PM' : '翌日12時',
-              label: locale === 'zh-hk' ? '您收貨' : locale === 'en' ? 'Delivered' : 'お届け',
-              icon: '🏢',
-            },
-          ].map((step, i) => (
-            <div key={i} className="flex flex-col items-center">
-              <div className="h-16 w-16 rounded-full bg-orange-100 flex items-center justify-center mb-2 shadow-sm border-2 border-orange-200">
-                <span className="text-2xl">{step.icon}</span>
+        <div className="max-w-[1000px] mx-auto w-full px-4">
+          <div className="flex justify-between items-start">
+            {/* 节点1 */}
+            <div className="flex flex-col items-center text-center w-24">
+              <div className="h-14 w-14 rounded-full bg-orange-100 border-2 border-orange-200 flex items-center justify-center mb-2 shadow-sm">
+                <span className="text-2xl">👤</span>
               </div>
-              <span className="text-sm font-bold text-gray-900">{step.time}</span>
-              <span className="text-xs text-gray-500">{step.label}</span>
-              {i < 3 && (
-                <div className="hidden md:flex items-center pt-5">
-                  <svg className="h-3 w-3 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
-                </div>
-              )}
+              <span className="text-sm font-bold text-gray-900">{locale === 'zh-hk' ? '今天18:00' : locale === 'en' ? 'Today 6PM' : '本日18時'}</span>
+              <span className="text-xs text-gray-500">{locale === 'zh-hk' ? '您下單' : locale === 'en' ? 'You order' : 'ご注文'}</span>
             </div>
-          ))}
+
+            {/* 箭头1 */}
+            <div className="flex items-center pt-5">
+              <svg className="h-3 w-3 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
+
+            {/* 节点2 */}
+            <div className="flex flex-col items-center text-center w-24">
+              <div className="h-14 w-14 rounded-full bg-orange-100 border-2 border-orange-200 flex items-center justify-center mb-2 shadow-sm">
+                <span className="text-2xl">🖨️</span>
+              </div>
+              <span className="text-sm font-bold text-gray-900">{locale === 'zh-hk' ? '今晚22:00' : locale === 'en' ? 'Tonight 10PM' : '今夜22時'}</span>
+              <span className="text-xs text-gray-500">{locale === 'zh-hk' ? '印刷完成' : locale === 'en' ? 'Printed' : '印刷完了'}</span>
+            </div>
+
+            {/* 箭头2 */}
+            <div className="flex items-center pt-5">
+              <svg className="h-3 w-3 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
+
+            {/* 节点3 */}
+            <div className="flex flex-col items-center text-center w-24">
+              <div className="h-14 w-14 rounded-full bg-orange-100 border-2 border-orange-200 flex items-center justify-center mb-2 shadow-sm">
+                <span className="text-2xl">📦</span>
+              </div>
+              <span className="text-sm font-bold text-gray-900">{locale === 'zh-hk' ? '明早06:00' : locale === 'en' ? 'Tomorrow 6AM' : '翌朝6時'}</span>
+              <span className="text-xs text-gray-500">{locale === 'zh-hk' ? '分揀包裝' : locale === 'en' ? 'Packed' : '梱包完了'}</span>
+            </div>
+
+            {/* 箭头3 */}
+            <div className="flex items-center pt-5">
+              <svg className="h-3 w-3 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
+
+            {/* 节点4 */}
+            <div className="flex flex-col items-center text-center w-24">
+              <div className="h-14 w-14 rounded-full bg-orange-100 border-2 border-orange-200 flex items-center justify-center mb-2 shadow-sm">
+                <span className="text-2xl">🏢</span>
+              </div>
+              <span className="text-sm font-bold text-gray-900">{locale === 'zh-hk' ? '明天12:00' : locale === 'en' ? 'Tomorrow 12PM' : '翌日12時'}</span>
+              <span className="text-xs text-gray-500">{locale === 'zh-hk' ? '您收貨' : locale === 'en' ? 'Delivered' : 'お届け'}</span>
+            </div>
+          </div>
         </div>
       </section>
 
