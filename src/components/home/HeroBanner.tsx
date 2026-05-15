@@ -143,10 +143,13 @@ export function HeroBanner({ locale }: HeroBannerProps) {
                 />
                 {/* 每张图使用不同的品牌色渐变遮罩 */}
                 <div className={`absolute inset-0 ${slideStyles[index].overlay}`} />
-                {/* PC端文字内容 - 三行主视觉 + 底部辅助层 */}
+                {/* PC端文字内容 - 三行主视觉+描述作为整体下移 + dots在最底部 */}
                 <div className="hidden md:flex absolute inset-0 flex-col justify-between px-8 md:px-12 py-6 md:py-8 z-10">
-                  {/* === 上半区：三行主视觉 — 整体下移 === */}
-                  <div className="pt-16 md:pt-24">
+                  {/* === 上半区：空白占位，将内容推下 === */}
+                  <div className="flex-1" />
+
+                  {/* === 中间区：三行主视觉 + 描述文字（整体下移到红线位置） === */}
+                  <div className="mb-6">
                     {/* 第1行：低至标签（蓝色底色，白色文字，圆角胶囊） */}
                     <span className="inline-block bg-blue-600 text-white text-sm font-bold px-4 py-1.5 rounded-full mb-3 shadow-md w-fit">
                       {t.fromPrice} {slide.price}
@@ -158,7 +161,7 @@ export function HeroBanner({ locale }: HeroBannerProps) {
                     </h1>
                     
                     {/* 第3行：获取报价按钮（紧跟标题，主视觉最后一行） */}
-                    <div>
+                    <div className="mb-4">
                       <Link
                         href={`${localePrefix}${getQuoteHref(slide.href)}`}
                         className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-bold px-6 py-3 rounded-lg transition-colors shadow-lg"
@@ -166,25 +169,22 @@ export function HeroBanner({ locale }: HeroBannerProps) {
                         {t.cta} <ArrowRight className="h-4 w-4" />
                       </Link>
                     </div>
-                  </div>
 
-                  {/* === 下半区：底部辅助层 === */}
-                  <div className="pb-2">
-                    {/* 描述文字（底部锚点，小字） */}
-                    <p className="text-sm md:text-base text-white/90 max-w-xl drop-shadow-md leading-relaxed mb-4">
+                    {/* 描述文字（紧跟按钮下方） */}
+                    <p className="text-sm md:text-base text-white/90 max-w-xl drop-shadow-md leading-relaxed">
                       {slide.subtitle}
                     </p>
-                    
-                    {/* dots 指示器（最底部，与描述文字留约2行小字高度） */}
-                    <div className="flex justify-center gap-2">
-                      {t.slides.map((_, idx) => (
-                        <button
-                          key={idx}
-                          onClick={() => setCurrentSlide(idx)}
-                          className={`h-2 w-2 rounded-full transition-colors ${idx === currentSlide ? 'bg-white' : 'bg-white/40'}`}
-                        />
-                      ))}
-                    </div>
+                  </div>
+
+                  {/* === 底部：dots 指示器（最底部，与描述文字有足够间距） === */}
+                  <div className="flex justify-center gap-2 pb-2">
+                    {t.slides.map((_, idx) => (
+                      <button
+                        key={idx}
+                        onClick={() => setCurrentSlide(idx)}
+                        className={`h-2 w-2 rounded-full transition-colors ${idx === currentSlide ? 'bg-white' : 'bg-white/40'}`}
+                      />
+                    ))}
                   </div>
                 </div>
                 {/* 移动端只显示获取报价按钮 */}
