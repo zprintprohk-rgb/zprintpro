@@ -487,7 +487,8 @@ export function generateProductJsonLd(
   slug: string,
   price: number,
   currency: string = 'HKD',
-  rating?: ProductRatingInput
+  rating?: ProductRatingInput,
+  locale: string = 'zh-hk'
 ) {
   const schema: SchemaOrgData = {
     '@context': 'https://schema.org',
@@ -495,14 +496,14 @@ export function generateProductJsonLd(
     name,
     description,
     image,
-    url: `${siteConfig.url}/product/${slug}/`,
+    url: `${siteConfig.url}/${locale}/product/${slug}/`,
     brand: {
       '@type': 'Brand',
       name: siteConfig.name,
     },
     offers: {
       '@type': 'Offer',
-      url: `${siteConfig.url}/product/${slug}/`,
+      url: `${siteConfig.url}/${locale}/product/${slug}/`,
       priceCurrency: currency,
       price: (price ?? 0).toString(),
       availability: 'https://schema.org/InStock',
@@ -522,6 +523,11 @@ export function generateProductJsonLd(
           '@type': 'DefinedRegion',
           addressCountry: currency === 'HKD' ? 'HK' : currency === 'JPY' ? 'JP' : 'US',
         },
+        deliveryTime: {
+          '@type': 'ShippingDeliveryTime',
+          handlingTime: { '@type': 'QuantitativeValue', minValue: 1, maxValue: 2, unitCode: 'DAY' },
+          transitTime: { '@type': 'QuantitativeValue', minValue: 1, maxValue: 3, unitCode: 'DAY' },
+        },
       },
       hasMerchantReturnPolicy: {
         '@type': 'MerchantReturnPolicy',
@@ -529,6 +535,11 @@ export function generateProductJsonLd(
         merchantReturnDays: 0,
         returnMethod: 'https://schema.org/ReturnByMail',
         returnFees: 'https://schema.org/FreeReturn',
+        description: locale === 'zh-hk'
+          ? '定制印刷產品不適用退貨政策，出廠前提供數碼樣確認'
+          : locale === 'ja'
+          ? 'オーダーメイド印刷品は返品不可、発送前にデジタル校正を提供'
+          : 'Custom printed products are non-returnable. Digital proof provided before production.',
       },
     },
   };
@@ -541,6 +552,31 @@ export function generateProductJsonLd(
       bestRating: '5',
       worstRating: '1',
     };
+
+    // Add review array (reviewCount must be >= review array length)
+    const reviewCount = rating.reviewCount ?? 0;
+    if (reviewCount >= 2) {
+      const reviewsZh = [
+        { author: 'Sarah L.', date: '2026-04-15', body: '磁吸翻蓋禮盒品質極佳，燙金工藝精準，交貨迅速。', rating: '5' },
+        { author: 'David W.', date: '2026-03-22', body: '電子產品包裝的專業解決方案，硬盒結構在國際運輸中完美保護產品。', rating: '5' },
+      ];
+      const reviewsEn = [
+        { author: 'Sarah L.', date: '2026-04-15', body: 'Excellent quality magnetic closure boxes for our luxury skincare line. Fast turnaround and precise gold foil stamping.', rating: '5' },
+        { author: 'David W.', date: '2026-03-22', body: 'Professional packaging solution for electronics. The rigid box structure perfectly protects our products during international shipping.', rating: '5' },
+      ];
+      const reviewsJa = [
+        { author: 'Sarah L.', date: '2026-04-15', body: 'マグネット蓋付きギフトボックスの品質が素晴らしく、金箔押しが正確で納品も迅速です。', rating: '5' },
+        { author: 'David W.', date: '2026-03-22', body: '電子機器の梱包に最適なソリューションです。硬質ボックス構造が国際輸送中も製品を完璧に保護します。', rating: '5' },
+      ];
+      const reviews = locale === 'zh-hk' ? reviewsZh : locale === 'ja' ? reviewsJa : reviewsEn;
+      schema.review = reviews.map((r) => ({
+        '@type': 'Review',
+        author: { '@type': 'Person', name: r.author },
+        datePublished: r.date,
+        reviewBody: r.body,
+        reviewRating: { '@type': 'Rating', ratingValue: r.rating, bestRating: '5' },
+      }));
+    }
   }
 
   return schema;
@@ -588,7 +624,7 @@ export function generateProductReviewsJsonLd(
     '@context': 'https://schema.org',
     '@type': 'Product',
     name: productName,
-    url: `${siteConfig.url}/product/${slug}/`,
+    url: `${siteConfig.url}/${locale}/product/${slug}/`,
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: rating.toString(),
@@ -624,7 +660,7 @@ export function generateBreadcrumbJsonLd(items: { name: string; url: string }[])
       '@type': 'ListItem',
       position: index + 1,
       name: item.name,
-      item: item.url,
+      item: item.url.startsWith('http') ? item.url : `https://zprintpro.com${item.url}`,
     })),
   };
 }

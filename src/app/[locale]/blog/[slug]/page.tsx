@@ -424,12 +424,21 @@ const allSlugs = [...articleSlugs, ...guideSlugs, ...clusterSlugs];
 function getPostData(locale: Locale, slug: string) {
   const legacyPost = posts[locale]?.[slug];
   if (legacyPost) {
+    // Fix hardcoded paths without locale prefix
+    let content = legacyPost.content;
+    // Replace /product/ with /{locale}/product/
+    content = content.replace(/href="\/product\//g, `href="/${locale}/product/`);
+    // Replace /en/product/ or /ja/product/ with correct locale
+    content = content.replace(/href="\/(en|ja)\/product\//g, `href="/${locale}/product/`);
+    // Replace /category/ with /{locale}/category/
+    content = content.replace(/href="\/category\//g, `href="/${locale}/category/`);
+    content = content.replace(/href="\/(en|ja)\/category\//g, `href="/${locale}/category/`);
     return {
       title: legacyPost.title,
       description: legacyPost.description,
       date: legacyPost.date,
       category: legacyPost.category,
-      content: legacyPost.content,
+      content,
       keywords: '',
       isBuyingGuide: false,
       linkedProducts: [] as string[],

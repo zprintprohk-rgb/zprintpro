@@ -136,7 +136,8 @@ export default function ProductPage({
     product.slug,
     product.basePrice,
     locale === 'zh-hk' ? 'HKD' : locale === 'ja' ? 'JPY' : 'USD',
-    productRating
+    productRating,
+    locale
   );
   const businessJsonLd = generateBusinessJsonLd(locale);
   const breadcrumbJsonLd = generateBreadcrumbJsonLd(breadcrumbItems);

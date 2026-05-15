@@ -15,3 +15,7 @@ http://zprintpro.com/* https://zprintpro.com/:splat 301
 
 # 旧平台兼容
 /product-detail?id=:id /zh-hk/product/:id/ 301
+
+# 缺失 locale 前缀的产品/分类链接 → 英文默认
+/product/* /en/product/:splat/ 301
+/category/* /en/category/:splat/ 301

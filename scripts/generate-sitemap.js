@@ -74,6 +74,8 @@ const staticPages = [
   'help-center/',
   'service-areas/',
   'company-news/',
+  // services
+  'services/rush-printing-delivery/',
   // commerce pages - lower priority
   'cart/',
   'checkout/',

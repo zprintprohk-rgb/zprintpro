@@ -26,6 +26,8 @@ export function BreadcrumbNav({ locale }: BreadcrumbNavProps) {
 
   // 分类页面包屑由 Hero 内部接管，不渲染独立面包屑
   if (pathname.includes('/category/')) return null;
+  // 产品页面包屑由 page.tsx 内部渲染（含真实分类名），不渲染独立面包屑
+  if (pathname.includes('/product/')) return null;
 
   const segments = pathname.replace(`/${locale}`, '').split('/').filter(Boolean);
   if (segments.length === 0) return null;

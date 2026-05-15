@@ -380,7 +380,7 @@ export default function CaseStudiesPage({ params }: { params: { locale: Locale }
         </div>
 
         {/* Case Studies */}
-        <section className="py-16 md:py-20">
+        <section className="py-8 md:py-10">
           <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
             <div className="space-y-12">
               {t.caseStudies.map((cs, i) => (

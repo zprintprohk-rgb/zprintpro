@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
 import { Locale } from '@/lib/seo';
 
 function getQuoteHref(slideHref: string): string {
@@ -16,11 +16,50 @@ interface HeroBannerProps {
   locale: Locale;
 }
 
+// 每张轮播图定义不同的遮罩颜色和强调色
+const slideStyles = [
+  {
+    // 第1张：即日服务 — 活力红色系
+    overlay: 'bg-gradient-to-r from-red-900/70 via-rose-700/50 to-transparent',
+    accentColor: 'bg-red-500',
+    accentHover: 'hover:bg-red-400',
+  },
+  {
+    // 第2张：牛皮纸袋 — 暖棕色系
+    overlay: 'bg-gradient-to-r from-amber-900/70 via-orange-800/50 to-transparent',
+    accentColor: 'bg-orange-500',
+    accentHover: 'hover:bg-orange-400',
+  },
+  {
+    // 第3张：宣传单张 — 品牌橙色系
+    overlay: 'bg-gradient-to-r from-orange-900/70 via-amber-700/50 to-transparent',
+    accentColor: 'bg-orange-500',
+    accentHover: 'hover:bg-orange-400',
+  },
+  {
+    // 第4张：贴纸 — 清新绿色系
+    overlay: 'bg-gradient-to-r from-emerald-900/70 via-teal-700/50 to-transparent',
+    accentColor: 'bg-emerald-500',
+    accentHover: 'hover:bg-emerald-400',
+  },
+  {
+    // 第5张：包装盒 — 高端紫色系
+    overlay: 'bg-gradient-to-r from-violet-900/70 via-purple-700/50 to-transparent',
+    accentColor: 'bg-violet-500',
+    accentHover: 'hover:bg-violet-400',
+  },
+  {
+    // 第6张：海报 — 深海蓝色系
+    overlay: 'bg-gradient-to-r from-blue-900/70 via-cyan-700/50 to-transparent',
+    accentColor: 'bg-blue-500',
+    accentHover: 'hover:bg-blue-400',
+  },
+];
+
 const translations = {
   'zh-hk': {
     cta: '獲取報價',
     ctaArrow: '→',
-    browseAll: '瀏覽全部產品',
     fromPrice: '低至',
     slides: [
       { title: '⚡ 印刷即日速递送货', subtitle: '今天下單·明天12點前到，專為臨急任務而生', price: '即日可取', image: '/images/hero/hero-flyer-zh-hk.webp', href: '/zh-hk/services/rush-printing-delivery' },
@@ -34,7 +73,6 @@ const translations = {
   en: {
     cta: 'Get Quote',
     ctaArrow: '→',
-    browseAll: 'Browse All Products',
     fromPrice: 'From',
     slides: [
       { title: ' Same-Day Printing Delivery', subtitle: 'Order Today, Receive by 12PM Tomorrow. Rush service for urgent jobs', price: 'Same Day', image: '/images/hero/hero-flyer-en.webp', href: '/en/services/rush-printing-delivery' },
@@ -48,7 +86,6 @@ const translations = {
   ja: {
     cta: '見積もり',
     ctaArrow: '→',
-    browseAll: 'すべての製品を見る',
     fromPrice: '最低',
     slides: [
       { title: '⚡ 即日印刷・翌日正午配送', subtitle: '本日注文・明日12時までお届け。緊急印刷対応', price: '即日対応', image: '/images/hero/hero-flyer-ja.webp', href: '/ja/services/rush-printing-delivery' },
@@ -81,6 +118,8 @@ export function HeroBanner({ locale }: HeroBannerProps) {
     setCurrentSlide((prev) => (prev + 1) % t.slides.length);
   };
 
+  const currentStyle = slideStyles[currentSlide];
+
   return (
     <section>
       <div className="max-w-[1320px] mx-auto">
@@ -102,37 +141,59 @@ export function HeroBanner({ locale }: HeroBannerProps) {
                   loading={index === 0 ? undefined : 'lazy'}
                   decoding="async"
                 />
-                {/* 统一遮罩保证文字可读，不添加渐变色块 */}
-                <div className="absolute inset-0 bg-black/40" />
-                {/* PC端文字内容 */}
-                <div className="hidden md:flex absolute inset-0 flex-col justify-start items-start pt-14 md:pt-18 px-8 md:px-12">
-                  <span className="inline-flex items-center w-fit px-4 py-1.5 bg-[#F87314] text-white text-sm font-bold rounded-full mb-3 shadow-lg border border-white/20">
-                    {t.fromPrice} {slide.price}
-                  </span>
-                  <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-2 leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">{slide.title}</h1>
-                  <p className="text-white/95 text-base sm:text-lg mb-6 max-w-md drop-shadow-md">{slide.subtitle}</p>
-                  <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 sm:gap-4">
-                    <Link
-                      href={`${localePrefix}${getQuoteHref(slide.href)}`}
-                      className="inline-flex items-center justify-center px-6 py-3 bg-[#F87314] text-white font-bold rounded-xl shadow-lg transition-all hover:scale-105 hover:-translate-y-0.5 w-full sm:w-auto"
-                    >
-                      {t.cta} {t.ctaArrow}
-                    </Link>
-                    <Link
-                      href={`${localePrefix}/category/business-cards/`}
-                      className="inline-flex items-center justify-center px-6 py-3 bg-white/10 border-2 border-white/80 text-white font-medium rounded-xl hover:bg-white hover:text-gray-900 transition-colors w-full sm:w-auto"
-                    >
-                      {t.browseAll}
-                    </Link>
+                {/* 每张图使用不同的品牌色渐变遮罩 */}
+                <div className={`absolute inset-0 ${slideStyles[index].overlay}`} />
+                {/* PC端文字内容 - 三行主视觉 + 底部辅助层 */}
+                <div className="hidden md:flex absolute inset-0 flex-col justify-between px-8 md:px-12 py-6 md:py-8 z-10">
+                  {/* === 上半区：三行主视觉 === */}
+                  <div className="pt-8 md:pt-12">
+                    {/* 第1行：低至标签（蓝色底色，白色文字，圆角胶囊） */}
+                    <span className="inline-block bg-blue-600 text-white text-sm font-bold px-4 py-1.5 rounded-full mb-3 shadow-md w-fit">
+                      {t.fromPrice} {slide.price}
+                    </span>
+                    
+                    {/* 第2行：大标题 */}
+                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] max-w-2xl">
+                      {slide.title}
+                    </h1>
+                    
+                    {/* 第3行：获取报价按钮（紧跟标题，主视觉最后一行） */}
+                    <div>
+                      <Link
+                        href={`${localePrefix}${getQuoteHref(slide.href)}`}
+                        className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-bold px-6 py-3 rounded-lg transition-colors shadow-lg"
+                      >
+                        {t.cta} <ArrowRight className="h-4 w-4" />
+                      </Link>
+                    </div>
+                  </div>
+
+                  {/* === 下半区：底部辅助层 === */}
+                  <div className="pb-2">
+                    {/* 描述文字（底部锚点，小字） */}
+                    <p className="text-sm md:text-base text-white/90 max-w-xl drop-shadow-md leading-relaxed mb-4">
+                      {slide.subtitle}
+                    </p>
+                    
+                    {/* dots 指示器（最底部，与描述文字留约2行小字高度） */}
+                    <div className="flex justify-center gap-2">
+                      {t.slides.map((_, idx) => (
+                        <button
+                          key={idx}
+                          onClick={() => setCurrentSlide(idx)}
+                          className={`h-2 w-2 rounded-full transition-colors ${idx === currentSlide ? 'bg-white' : 'bg-white/40'}`}
+                        />
+                      ))}
+                    </div>
                   </div>
                 </div>
                 {/* 移动端只显示获取报价按钮 */}
                 <div className="flex md:hidden absolute bottom-6 left-4 right-4">
                   <Link
                     href={`${localePrefix}${getQuoteHref(slide.href)}`}
-                    className="inline-flex items-center justify-center w-full px-6 py-3 bg-[#F87314] text-white font-bold rounded-xl shadow-lg transition-all active:scale-95"
+                    className="inline-flex items-center justify-center w-full px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-lg shadow-lg transition-colors"
                   >
-                    {t.cta} {t.ctaArrow}
+                    {t.cta} <ArrowRight className="h-4 w-4" />
                   </Link>
                 </div>
               </div>
@@ -154,17 +215,6 @@ export function HeroBanner({ locale }: HeroBannerProps) {
           >
             <ChevronRight className="w-6 h-6" />
           </button>
-
-          {/* Dots Indicator */}
-          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-            {t.slides.map((_, index) => (
-              <button
-                key={index}
-                onClick={() => setCurrentSlide(index)}
-                className={`rounded-full transition-all duration-300 ${index === currentSlide ? 'w-6 md:w-8 h-2 md:h-2.5 bg-orange-500 shadow-lg shadow-orange-500/50' : 'w-2 md:w-2.5 h-2 md:h-2.5 bg-white/50 hover:bg-white/70'}`}
-              />
-            ))}
-          </div>
         </div>
       </div>
     </section>

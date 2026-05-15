@@ -39,17 +39,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: m.title,
     description: m.desc,
-    alternates: {
-      canonical: `https://zprintpro.com/${locale}/services/rush-printing-delivery`,
-      languages: {
-        'zh-HK': 'https://zprintpro.com/zh-hk/services/rush-printing-delivery',
-        'en-US': 'https://zprintpro.com/en/services/rush-printing-delivery',
-        'en-GB': 'https://zprintpro.com/en/services/rush-printing-delivery',
-        'en-AU': 'https://zprintpro.com/en/services/rush-printing-delivery',
-        'ja': 'https://zprintpro.com/ja/services/rush-printing-delivery',
-        'x-default': 'https://zprintpro.com/en/services/rush-printing-delivery',
+      alternates: {
+        canonical: `https://zprintpro.com/${locale}/services/rush-printing-delivery/`,
+        languages: {
+          'zh-HK': 'https://zprintpro.com/zh-hk/services/rush-printing-delivery/',
+          'en': 'https://zprintpro.com/en/services/rush-printing-delivery/',
+          'ja-JP': 'https://zprintpro.com/ja/services/rush-printing-delivery/',
+          'x-default': 'https://zprintpro.com/zh-hk/services/rush-printing-delivery/',
+        },
       },
-    },
   };
 }
 
@@ -66,8 +64,8 @@ export default function RushDeliveryPage({ params }: Props) {
 
   return (
     <main className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
-      {/* Hero Banner 占位区 */}
-      <section className="relative w-full h-[320px] md:h-[380px] rounded-xl overflow-hidden mb-8">
+      {/* Hero Banner 占位区 - 方角 + 固定 400px */}
+      <section className="relative w-full h-[400px] rounded-none overflow-hidden mb-4">
         {/* 渐变背景（占位，后续替换为真实图片） */}
         <div className="absolute inset-0 bg-gradient-to-r from-red-600 via-orange-500 to-amber-400" />
         
@@ -92,7 +90,7 @@ export default function RushDeliveryPage({ params }: Props) {
       </section>
 
       {/* 面包屑 */}
-      <nav className="flex items-center gap-2 text-sm text-gray-500 mb-6" aria-label="Breadcrumb">
+      <nav className="flex items-center gap-2 text-sm text-gray-500 mb-4" aria-label="Breadcrumb">
         <Link href={`/${locale}`} className="hover:text-[#2873F5] transition-colors">
           {locale === 'zh-hk' ? '首頁' : locale === 'en' ? 'Home' : 'ホーム'}
         </Link>
@@ -103,8 +101,8 @@ export default function RushDeliveryPage({ params }: Props) {
       </nav>
 
       {/* GEO 答案块 */}
-      <section className="mb-10">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{title}</h1>
+      <section className="mb-5">
+        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">{title}</h1>
         <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-3xl">
           {locale === 'zh-hk' && (
             <>
@@ -127,9 +125,9 @@ export default function RushDeliveryPage({ params }: Props) {
         </p>
       </section>
 
-      {/* 时间轴 */}
-      <section className="mb-12 bg-gray-50 rounded-xl p-6 md:p-8">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-center">
+      {/* 时间轴 - 图标间距缩小 + 居中 + UI 美化 */}
+      <section className="mb-8 bg-gray-50 rounded-xl p-6 md:p-8">
+        <div className="flex flex-col md:flex-row justify-center items-start gap-4 md:gap-6 max-w-3xl mx-auto text-center">
           {[
             {
               time: locale === 'zh-hk' ? '今天18:00' : locale === 'en' ? 'Today 6PM' : '本日18時',
@@ -153,11 +151,17 @@ export default function RushDeliveryPage({ params }: Props) {
             },
           ].map((step, i) => (
             <div key={i} className="flex flex-col items-center">
-              <span className="text-2xl mb-2">{step.icon}</span>
-              <span className="font-bold text-gray-900">{step.time}</span>
-              <span className="text-sm text-gray-600">{step.label}</span>
+              <div className="h-16 w-16 rounded-full bg-orange-100 flex items-center justify-center mb-2 shadow-sm border-2 border-orange-200">
+                <span className="text-2xl">{step.icon}</span>
+              </div>
+              <span className="text-sm font-bold text-gray-900">{step.time}</span>
+              <span className="text-xs text-gray-500">{step.label}</span>
               {i < 3 && (
-                <span className="hidden md:block text-gray-300 text-xl mt-2">→</span>
+                <div className="hidden md:flex items-center pt-5">
+                  <svg className="h-3 w-3 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
               )}
             </div>
           ))}
