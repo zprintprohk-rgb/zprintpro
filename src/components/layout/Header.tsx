@@ -328,7 +328,7 @@ export function Header({ locale }: HeaderProps) {
             <div className="flex items-center h-[46px]">
               <Link href={`${localePrefix}/`} className={navLinkClass(pathname === `${localePrefix}/`)}>{t.home}</Link>
 
-              <Link href={`${localePrefix}/services/rush-printing-delivery`} className={navLinkClass(pathname === `${localePrefix}/services/rush-printing-delivery`)}>
+              <Link href={`${localePrefix}/services/rush-printing-delivery`} className={navLinkClass(pathname.includes('/services/rush-printing-delivery'))}>
                 {locale === 'zh-hk' ? '即日服務' : locale === 'en' ? 'Rush' : '即日'}
               </Link>
 
