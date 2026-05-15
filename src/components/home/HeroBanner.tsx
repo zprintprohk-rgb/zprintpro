@@ -155,22 +155,20 @@ export function HeroBanner({ locale }: HeroBannerProps) {
                       {t.fromPrice} {slide.price}
                     </span>
                     
-                    {/* 第2行：大标题 */}
-                    <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] max-w-2xl">
-                      {slide.title}
-                    </h1>
-                    
-                    {/* 第3行：获取报价按钮（紧跟标题，主视觉最后一行） */}
-                    <div className="mb-4">
+                    {/* 第2行：大标题 + 获取报价按钮（同一行，按钮在标题右侧） */}
+                    <div className="flex items-center gap-4 mb-3">
+                      <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]">
+                        {slide.title}
+                      </h1>
                       <Link
                         href={`${localePrefix}${getQuoteHref(slide.href)}`}
-                        className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-bold px-6 py-3 rounded-lg transition-colors shadow-lg"
+                        className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-bold px-6 py-3 rounded-lg transition-colors shadow-lg whitespace-nowrap flex-shrink-0"
                       >
                         {t.cta} <ArrowRight className="h-4 w-4" />
                       </Link>
                     </div>
 
-                    {/* 描述文字（紧跟按钮下方） */}
+                    {/* 第3行：描述文字（标题下方） */}
                     <p className="text-sm md:text-base text-white/90 max-w-xl drop-shadow-md leading-relaxed">
                       {slide.subtitle}
                     </p>
