@@ -13,6 +13,16 @@ http://zprintpro.com/* https://zprintpro.com/:splat 301
 /en/products/:slug /en/product/:slug/ 301
 /ja/products/:slug /ja/product/:slug/ 301
 
+# 报价页面 URL 规范化：/quote → /quote/ （统一带斜杠版本，避免重复内容）
+/zh-hk/quote /zh-hk/quote/ 301
+/en/quote /en/quote/ 301
+/ja/quote /ja/quote/ 301
+
+# 报价页面带 product 参数的 URL 规范化
+/zh-hk/quote?product=:product /zh-hk/quote/?product=:product 301
+/en/quote?product=:product /en/quote/?product=:product 301
+/ja/quote?product=:product /ja/quote/?product=:product 301
+
 # 旧平台兼容
 /product-detail?id=:id /zh-hk/product/:id/ 301
 
