@@ -26,14 +26,14 @@ export async function generateMetadata({ params }: QuotePageProps): Promise<Meta
     'ja': 'フォームに記入して無料印刷見積もりを取得、24時間以内に返信',
   };
 
-  // 静态导出时无法使用 searchParams，统一返回 noindex
-  // 客户端 QuoteNoIndexManager 会根据 URL 中是否有 product 参数动态控制
-  // 有 product → 移除 noindex（允许 Google 收录）
-  // 无 product → 维持 noindex（基础报价页不应索引）
+  // 静态导出时无法使用 searchParams，移除静态 noindex 避免阻止所有报价页收录
+  // 客户端 QuoteNoIndexManager 会根据 URL 中是否有 product 参数动态控制：
+  // - 有 product → 不注入 noindex（允许 Google 收录产品报价页）
+  // - 无 product → 注入 noindex（基础报价表单页不应索引）
   return {
     title: titles[locale] || titles['zh-hk'],
     description: descriptions[locale] || descriptions['zh-hk'],
-    robots: { index: false, follow: true },
+    robots: { index: true, follow: true },
     alternates: {
       canonical: `${siteConfig.url}/${locale}/quote/`,
     },

@@ -1,31 +1,100 @@
-# Cloudflare Pages redirects
-# Root path → Hong Kong homepage
+# ============================================================
+# Cloudflare Pages Redirects
+# 目标：统一URL规范为 https://zprintpro.com/（非www + https + 尾部斜杠）
+# 
+# Cloudflare Pages _redirects 规则说明：
+# - 精确路径匹配（如 /en 只匹配 /en，不匹配 /en/xxx）
+# - 通配符 * 可匹配路径任意部分
+# - :splat 获取 * 匹配的内容
+# - 查询参数默认保留（301 会自动传递 qs）
+# - 不支持 host-level 匹配
+# - 不支持路径 negation 语法
+#
+# 需在 Cloudflare 仪表板手动配置：
+#   1. SSL/TLS → Edge Certificates → Always Use HTTPS
+#   2. Rules → Page Rules: www.zprintpro.com/* 
+#      301 → https://zprintpro.com/$1
+# ============================================================
+
+# =====================
+# SECTION 1: 根路径
+# =====================
 / /zh-hk/ 301
 
-# www → non-www
-https://www.zprintpro.com/* https://zprintpro.com/:splat 301
+# =====================
+# SECTION 2: Locale 尾部斜杠（精确匹配）
+# =====================
+/en /en/ 301
+/zh-hk /zh-hk/ 301
+/ja /ja/ 301
 
-# http → https
-http://zprintpro.com/* https://zprintpro.com/:splat 301
-
-# 复数 → 单数（产品详情页）
-/zh-hk/products/:slug /zh-hk/product/:slug/ 301
-/en/products/:slug /en/product/:slug/ 301
-/ja/products/:slug /ja/product/:slug/ 301
-
-# 报价页面 URL 规范化：/quote → /quote/ （统一带斜杠版本，避免重复内容）
-/zh-hk/quote /zh-hk/quote/ 301
+# =====================
+# SECTION 3: Quote 尾部斜杠（精确匹配）
+# /en/quote?product=xxx → /en/quote/?product=xxx（qs 自动保留）
+# =====================
 /en/quote /en/quote/ 301
+/zh-hk/quote /zh-hk/quote/ 301
 /ja/quote /ja/quote/ 301
+/quote /quote/ 301
 
-# 报价页面带 product 参数的 URL 规范化
-/zh-hk/quote?product=:product /zh-hk/quote/?product=:product 301
-/en/quote?product=:product /en/quote/?product=:product 301
-/ja/quote?product=:product /ja/quote/?product=:product 301
+# =====================
+# SECTION 4: 已知 404 产品路径 → 报价页
+# =====================
+/en/product/kraft-paper-bags /en/quote/?product=kraft-paper-bags 301
+/en/product/gift-boxes /en/quote/?product=gift-boxes 301
+/zh-hk/product/kraft-paper-bags /zh-hk/quote/?product=kraft-paper-bags 301
+/zh-hk/product/gift-boxes /zh-hk/quote/?product=gift-boxes 301
+/zh-hk/product/electronics-packaging-box /zh-hk/quote/?product=electronics-packaging-box 301
+/zh-hk/product/drawer-slide-gift-box /zh-hk/quote/?product=drawer-slide-gift-box 301
 
-# 旧平台兼容
-/product-detail?id=:id /zh-hk/product/:id/ 301
+# =====================
+# SECTION 5: 通用产品路径（通配符）
+# 覆盖所有 /{locale}/product/{slug} → /{locale}/quote/?product={slug}
+# =====================
+/zh-hk/product/* /zh-hk/quote/?product=:splat 301
+/en/product/* /en/quote/?product=:splat 301
+/ja/product/* /ja/quote/?product=:splat 301
+/product/* /en/quote/?product=:splat 301
 
-# 缺失 locale 前缀的产品/分类链接 → 英文默认
-/product/* /en/product/:splat/ 301
+# =====================
+# SECTION 6: 重复 locale 修复
+# =====================
+/en/en/* /en/:splat 301
+/zh-hk/zh-hk/* /zh-hk/:splat 301
+/ja/ja/* /ja/:splat 301
+
+# =====================
+# SECTION 7: 路径修正
+# =====================
+/ja/guide/* /ja/blog/:splat 301
+/ja/services/same-day-printing-delivery /ja/services/rush-printing-delivery/ 301
+
+# =====================
+# SECTION 8: 日文编码 URL
+# /ja/%E6%9E%9A%E3%81%8B%E3%82%89 → /ja/quote/?product=custom-stickers
+# =====================
+/ja/枚から /ja/quote/?product=custom-stickers 301
+
+# =====================
+# SECTION 9: 复数产品路径（旧链接兼容）
+# =====================
+/zh-hk/products/* /zh-hk/quote/?product=:splat 301
+/en/products/* /en/quote/?product=:splat 301
+/ja/products/* /ja/quote/?product=:splat 301
+
+# =====================
+# SECTION 10: 类别路径兼容
+# =====================
 /category/* /en/category/:splat/ 301
+
+# =====================
+# SECTION 11: 其他 404
+# =====================
+/contact/ /en/contact/ 301
+/help-center/ /en/help-center/ 301
+/zh-hk/blog/flyer-guide/ /zh-hk/blog/ 301
+
+# =====================
+# SECTION 12: 旧平台兼容
+# =====================
+/product-detail?id=:id /zh-hk/product/:id/ 301

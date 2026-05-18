@@ -127,7 +127,7 @@ staticPages.forEach((page) => {
   });
 });
 
-// Category pages
+// Category pages → 保留 category 路径，确认页面存在
 categorySlugs.forEach((slug) => {
   locales.forEach((locale) => {
     urls.push({
@@ -138,11 +138,12 @@ categorySlugs.forEach((slug) => {
   });
 });
 
-// Product pages
+// Product pages → 替换为 /quote/?product=xxx 格式
+// 产品页面已迁移到报价系统，不再有独立产品页
 productSlugs.forEach((slug) => {
   locales.forEach((locale) => {
     urls.push({
-      loc: `${BASE_URL}/${locale}/product/${slug}/`,
+      loc: `${BASE_URL}/${locale}/quote/?product=${slug}`,
       priority: '0.9',
       changefreq: 'weekly',
     });
@@ -175,12 +176,16 @@ urls.forEach((url) => {
 `;
   // xhtml:link alternates
   const slugPart = url.loc.replace(BASE_URL + '/', '');
-  const pathWithoutLocale = slugPart.replace(/^(zh-hk|en|ja)\//, '');
+  // 分离路径和查询参数
+  const [pathPart, queryPart] = slugPart.split('?');
+  const pathWithoutLocale = pathPart.replace(/^(zh-hk|en|ja)\//, '');
+  // 保留查询参数（例如 ?product=xxx）用于 quote 页面
+  const queryString = queryPart ? '?' + queryPart : '';
   locales.forEach((locale) => {
-    xml += `    <xhtml:link rel="alternate" hreflang="${locale === 'zh-hk' ? 'zh-Hant-HK' : locale === 'en' ? 'en' : 'ja-JP'}" href="${BASE_URL}/${locale}/${pathWithoutLocale}" />
+    xml += `    <xhtml:link rel="alternate" hreflang="${locale === 'zh-hk' ? 'zh-Hant-HK' : locale === 'en' ? 'en' : 'ja-JP'}" href="${BASE_URL}/${locale}/${pathWithoutLocale}${queryString}" />
 `;
   });
-  xml += `    <xhtml:link rel="alternate" hreflang="x-default" href="${BASE_URL}/zh-hk/${pathWithoutLocale}" />
+  xml += `    <xhtml:link rel="alternate" hreflang="x-default" href="${BASE_URL}/zh-hk/${pathWithoutLocale}${queryString}" />
   </url>
 `;
 });

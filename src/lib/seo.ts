@@ -719,18 +719,18 @@ export function generateQuotePageMetadata(locale: Locale): Metadata {
     openGraph: {
       title: titles[locale],
       description: descriptions[locale],
-      url: `${siteConfig.url}/${locale}/quote`,
+      url: `${siteConfig.url}/${locale}/quote/`,
       siteName: siteConfig.name,
       locale: lang === 'zh-HK' ? 'zh_HK' : lang,
       type: 'website',
     },
     alternates: {
-      canonical: `${siteConfig.url}/${locale}/quote`,
+      canonical: `${siteConfig.url}/${locale}/quote/`,
       languages: {
-        'zh-Hant-HK': `${siteConfig.url}/zh-hk/quote`,
-        'en': `${siteConfig.url}/en/quote`,
-        'ja-JP': `${siteConfig.url}/ja/quote`,
-        'x-default': `${siteConfig.url}/zh-hk/quote`,
+        'zh-Hant-HK': `${siteConfig.url}/zh-hk/quote/`,
+        'en': `${siteConfig.url}/en/quote/`,
+        'ja-JP': `${siteConfig.url}/ja/quote/`,
+        'x-default': `${siteConfig.url}/zh-hk/quote/`,
       },
     },
   };
