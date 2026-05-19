@@ -209,7 +209,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
         {/* Brand Story */}
         <section className="py-16 md:py-20">
           <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-4xl mx-auto">
               <h2 className="text-2xl md:text-3xl font-bold text-[#333333] mb-6 text-center">{t.storyTitle}</h2>
               <div className="prose prose-lg text-gray-600 leading-relaxed whitespace-pre-line">
                 {t.story}
