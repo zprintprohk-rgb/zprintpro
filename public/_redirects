@@ -38,63 +38,37 @@
 /quote /quote/ 301
 
 # =====================
-# SECTION 4: 已知 404 产品路径 → 报价页
-# =====================
-/en/product/kraft-paper-bags /en/quote/?product=kraft-paper-bags 301
-/en/product/gift-boxes /en/quote/?product=gift-boxes 301
-/zh-hk/product/kraft-paper-bags /zh-hk/quote/?product=kraft-paper-bags 301
-/zh-hk/product/gift-boxes /zh-hk/quote/?product=gift-boxes 301
-/zh-hk/product/electronics-packaging-box /zh-hk/quote/?product=electronics-packaging-box 301
-/zh-hk/product/drawer-slide-gift-box /zh-hk/quote/?product=drawer-slide-gift-box 301
-
-# =====================
-# SECTION 5: 通用产品路径（通配符）
-# 覆盖所有 /{locale}/product/{slug} → /{locale}/quote/?product={slug}
-# =====================
-/zh-hk/product/* /zh-hk/quote/?product=:splat 301
-/en/product/* /en/quote/?product=:splat 301
-/ja/product/* /ja/quote/?product=:splat 301
-/product/* /en/quote/?product=:splat 301
-
-# =====================
-# SECTION 6: 重复 locale 修复
+# SECTION 4: 重复 locale 修复
 # =====================
 /en/en/* /en/:splat 301
 /zh-hk/zh-hk/* /zh-hk/:splat 301
 /ja/ja/* /ja/:splat 301
 
 # =====================
-# SECTION 7: 路径修正
+# SECTION 5: 路径修正
 # =====================
 /ja/guide/* /ja/blog/:splat 301
 /ja/services/same-day-printing-delivery /ja/services/rush-printing-delivery/ 301
 
 # =====================
-# SECTION 8: 日文编码 URL
+# SECTION 6: 日文编码 URL
 # /ja/%E6%9E%9A%E3%81%8B%E3%82%89 → /ja/quote/?product=custom-stickers
 # =====================
 /ja/枚から /ja/quote/?product=custom-stickers 301
 
 # =====================
-# SECTION 9: 复数产品路径（旧链接兼容）
-# =====================
-/zh-hk/products/* /zh-hk/quote/?product=:splat 301
-/en/products/* /en/quote/?product=:splat 301
-/ja/products/* /ja/quote/?product=:splat 301
-
-# =====================
-# SECTION 10: 类别路径兼容
+# SECTION 7: 类别路径兼容（旧平台）
 # =====================
 /category/* /en/category/:splat/ 301
 
 # =====================
-# SECTION 11: 其他 404
+# SECTION 8: 其他 404
 # =====================
 /contact/ /en/contact/ 301
 /help-center/ /en/help-center/ 301
 /zh-hk/blog/flyer-guide/ /zh-hk/blog/ 301
 
 # =====================
-# SECTION 12: 旧平台兼容
+# SECTION 9: 旧平台兼容
 # =====================
 /product-detail?id=:id /zh-hk/product/:id/ 301

@@ -138,12 +138,11 @@ categorySlugs.forEach((slug) => {
   });
 });
 
-// Product pages → 替换为 /quote/?product=xxx 格式
-// 产品页面已迁移到报价系统，不再有独立产品页
+// Product pages → 标准产品详情页 URL
 productSlugs.forEach((slug) => {
   locales.forEach((locale) => {
     urls.push({
-      loc: `${BASE_URL}/${locale}/quote/?product=${slug}`,
+      loc: `${BASE_URL}/${locale}/product/${slug}/`,
       priority: '0.9',
       changefreq: 'weekly',
     });
