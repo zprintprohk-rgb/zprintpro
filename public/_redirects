@@ -47,7 +47,8 @@
 /press-kit /zh-hk/press-kit/ 301
 /privacy/ /zh-hk/privacy/ 301
 /privacy /zh-hk/privacy/ 301
-/product/* /zh-hk/product/:splat/ 301
+# 注意: /product/* 不能放在此处，因为会错误匹配 /zh-hk/product/xxx/ 路径
+# 已在 SECTION 1B 处理
 /quote/ /zh-hk/quote/ 301
 /quote /zh-hk/quote/ 301
 /search/ /zh-hk/search/ 301
@@ -57,6 +58,13 @@
 /services/* /zh-hk/services/:splat/ 301
 /terms/ /zh-hk/terms/ 301
 /terms /zh-hk/terms/ 301
+
+# =====================
+# SECTION 1B: 缺失 locale 前缀的 product 路径 → 默认 locale（zh-hk）
+# 必须放 SECTION 2 之前，且不能放 SECTION 1 中以免干扰有locale的product路径
+# 修复：Cloudflare Pages 中通配符 * 会贪婪匹配包括 /zh-hk/ 在内的任何路径
+# =====================
+/product/* /zh-hk/product/:splat/ 301
 
 # =====================
 # SECTION 2: Locale 尾部斜杠（精确匹配）
@@ -89,6 +97,12 @@
 # =====================
 # SECTION 6: Services 别名和旧链接修正
 # =====================
+# 【新增】Services 根路径 → rush-printing-delivery 详情页
+# 解决 /zh-hk/services/、/en/services/、/ja/services/ 应为详情页而非列表页
+/zh-hk/services/ /zh-hk/services/rush-printing-delivery/ 301
+/en/services/ /en/services/rush-printing-delivery/ 301
+/ja/services/ /ja/services/rush-printing-delivery/ 301
+
 # same-day-printing-delivery → rush-printing-delivery（正确的slug）
 # 同时覆盖带斜杠和不带斜杠的版本（Cloudflare精确匹配需要两者）
 /zh-hk/services/same-day-printing-delivery /zh-hk/services/rush-printing-delivery/ 301
