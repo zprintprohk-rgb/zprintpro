@@ -1,8 +1,3 @@
-/**
- * SEO 工具函數
- * 用於生成頁面元數據和結構化數據
- */
-
 import { Metadata } from 'next';
 
 import type { Locale } from '@/types/locale';
@@ -175,7 +170,7 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       'zh-hk': '香港專業名片印刷，100張起訂，最快24小時交貨。支持燙金、UV、凹凸、圓角等特殊工藝，免費設計模板。智印云ISO9001認證，品質保證。',
-      en: 'Custom business card printing with same-day delivery in Hong Kong. Premium paper stocks, foil stamping, spot UV, embossing. Free design templates. ISO9001 certified. 100 cards minimum.',
+      en: 'Custom business card printing with global express delivery. Premium paper stocks, foil stamping, spot UV, embossing. Free design templates. ISO9001 certified. 100 cards minimum. Ships to US, UK, AU.',
       ja: '香港の名刺印刷専門店。100枚から、最短24時間納品。箔押し・UV・エンボス・丸角加工対応。無料デザインテンプレート。ISO9001認証取得。',
     },
   },
@@ -187,7 +182,7 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       'zh-hk': '香港專業貼紙印刷，防水防曬耐用。支持圓形、異形、透明、食品標籤等全系列貼紙。50張起訂，即日交貨。免費設計，全港送貨。',
-      en: 'Custom sticker printing Hong Kong — waterproof, UV-resistant, durable. Die-cut, round, transparent, food-safe labels. 50 pcs minimum, same-day rush available. Free design, island-wide delivery.',
+      en: 'Custom sticker printing — waterproof, UV-resistant, durable. Die-cut, round, transparent, food-safe labels. 50 pcs minimum, rush production available. Free design, ships to US, UK, AU & worldwide.',
       ja: '香港のシール印刷専門店。防水・耐UV・耐久性抜群。ダイカット・円形・透明・食品対応ラベル。50枚から、急行対応。無料デザイン、全港配送。',
     },
   },
@@ -199,7 +194,7 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       'zh-hk': '香港宣傳單張印刷專家，10張起訂。A4/A5/摺頁傳單，光粉紙/啞粉紙/書紙多種紙質。即日印刷速遞，免費設計。適合開業、活動、餐廳、選舉宣傳。',
-      en: 'Flyer & leaflet printing Hong Kong from 10 copies. A4/A5/folded formats, glossy/matte/uncoated paper. Same-day printing & delivery. Free design. Perfect for grand openings, events, restaurants, campaigns.',
+      en: 'Flyer & leaflet printing from 10 copies. A4/A5/folded formats, glossy/matte/uncoated paper. Rush printing available, global delivery. Free design. Perfect for grand openings, events, restaurants, campaigns.',
       ja: '香港のチラシ印刷専門店。10枚から。A4/A5/折りパンフレット、光沢紙/マット紙/書籍紙。即日印刷・配送。無料デザイン。開業・イベント・飲食店・選挙に最適。',
     },
   },
@@ -211,7 +206,7 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       'zh-hk': '香港包裝盒定制專家，100個起訂。禮品盒、化妝品盒、食品盒、月餅盒。支持燙金、UV、凹凸工藝。免費刀模設計，即日打樣。ISO9001+FSC認證。',
-      en: 'Custom packaging box printing Hong Kong from 100 units. Gift boxes, cosmetic boxes, food packaging, mooncake boxes. Foil stamping, UV, embossing. Free die-cut design, same-day sampling. ISO9001 & FSC certified.',
+      en: 'Custom packaging box printing from 100 units. Gift boxes, cosmetic boxes, food packaging, mooncake boxes. Foil stamping, UV, embossing. Free die-cut design, rush sampling. ISO9001 & FSC certified. Global shipping to US, UK, AU.',
       ja: '香港のパッケージ印刷専門店。100個から。ギフト箱・化粧品箱・食品箱・月餅箱。箔押し・UV・エンボス対応。無料型設計、即日サンプル。ISO9001・FSC認証。',
     },
   },
@@ -223,7 +218,7 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       'zh-hk': '香港海報印刷專家，A0/A1/A2/A3全尺寸。戶外防水海報、展覽Backdrop、PP裱貼。10張起訂，最快4小時交貨。光粉紙/相紙/帆布多種材質。',
-      en: 'Poster printing Hong Kong — A0/A1/A2/A3 sizes. Outdoor waterproof posters, exhibition backdrops, PP lamination. 10 copies minimum, 4-hour rush available. Glossy art paper / photo paper / canvas options.',
+      en: 'Poster printing — A0/A1/A2/A3 sizes. Outdoor waterproof posters, exhibition backdrops, PP lamination. 10 copies minimum, rush production available. Ships worldwide. Glossy / photo paper / canvas options.',
       ja: '香港のポスター印刷専門店。A0/A1/A2/A3サイズ。屋外用防水ポスター・展示会用バックドロップ・PPラミネート。10枚から、最短4時間急行。光沢紙・写真用紙・キャンバス対応。',
     },
   },
@@ -235,7 +230,7 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       'zh-hk': '香港紙袋印刷專家，100個起訂。牛皮紙袋、環保紙袋、手提禮品袋。支持燙金、UV、凹凸工藝。FSC環保認證紙張，即日交貨。適合零售、餐飲、活動、品牌推廣。',
-      en: 'Custom paper bag printing Hong Kong from 100 units. Kraft bags, eco-friendly bags, retail & gift bags. Foil stamping, UV, embossing. FSC-certified paper, same-day delivery. Perfect for retail, F&B, events, branding.',
+      en: 'Custom paper bag printing from 100 units. Kraft bags, eco-friendly bags, retail & gift bags. Foil stamping, UV, embossing. FSC-certified paper, global delivery. Perfect for retail, F&B, events, branding.',
       ja: '香港の紙袋印刷専門店。100個から。クラフト紙袋・エコ紙袋・手提げギフト袋。箔押し・UV・エンボス対応。FSC認証紙、即日納品。小売・飲食・イベント・ブランディングに最適。',
     },
   },
@@ -246,13 +241,13 @@ function getDefaultCategorySeo(categoryName: string, categoryNameEn: string, cat
   return {
     keywords: {
       'zh-hk': `${categoryName}印刷,香港${categoryName},${categoryName}定制`,
-      en: `${categoryNameEn} printing,custom ${categoryNameEn.toLowerCase()},${categoryNameEn.toLowerCase()} printing hong kong`,
-      ja: `${categoryNameJa}印刷,${categoryNameJa}作成,${categoryNameJa} 香港`,
+      en: `${categoryNameEn} printing,custom ${categoryNameEn.toLowerCase()},${categoryNameEn.toLowerCase()} printing,global shipping ${categoryNameEn.toLowerCase()}`,
+      ja: `${categoryNameJa}印刷,${categoryNameJa}作成,${categoryNameJa} 海外,${categoryNameJa} 配送`,
     },
     descriptions: {
       'zh-hk': `專業${categoryName}印刷服務，品質保證，價格透明。智印云提供多種${categoryName}選擇，最快即日交貨。`,
-      en: `Professional ${categoryNameEn} printing services with quality guarantee and transparent pricing. ZprintPro offers various ${categoryNameEn} options with same-day delivery available.`,
-      ja: `プロの${categoryNameJa}印刷サービス、品質保証、透明な価格。ZprintProは様々な${categoryNameJa}オプションを提供し、最短当日配送可能。`,
+      en: `Professional ${categoryNameEn} printing services from Hong Kong. Quality guaranteed, factory-direct pricing. Ships to US, UK, AU & worldwide. Free quote in 30 seconds.`,
+      ja: `プロの${categoryNameJa}印刷サービス、香港の工場から日本全国へ配送。品質保証、透明な価格。最短3〜5営業日でお届け。`,
     },
   };
 }
@@ -269,8 +264,15 @@ export function generateCategoryMetadata(locale: Locale, categoryName: string = 
   const keywords = seoData.keywords[locale];
   const lang = locale === 'zh-hk' ? 'zh-HK' : locale;
   
+  // 分类标题按市场区分
+  const categoryTitle = locale === 'zh-hk'
+    ? `${name} | 即日交貨 | ${siteConfig.name}`
+    : locale === 'en'
+    ? `${name} | Global Shipping | ${siteConfig.name}`
+    : `${name} | 配送対応 | ${siteConfig.name}`;
+
   return {
-    title: `${name} | Same Day Delivery | ${siteConfig.name}`,
+    title: categoryTitle,
     description,
     keywords: keywords.split(','),
     alternates: {
@@ -283,7 +285,7 @@ export function generateCategoryMetadata(locale: Locale, categoryName: string = 
       },
     },
     openGraph: {
-      title: `${name} | Same Day Delivery | ${siteConfig.name}`,
+      title: categoryTitle,
       description,
       locale: lang,
       type: 'website',
@@ -319,10 +321,10 @@ export function generateProductMetadata(
   const suffix = locale === 'zh-hk' ? '印刷' : locale === 'en' ? 'Printing' : '印刷';
   const titleBase = `${name}${suffix}`.replace(/印刷印刷/g, '印刷');
   const title = locale === 'zh-hk' 
-    ? `${titleBase} | 香港${categoryName}專家 | ZprintPro`.slice(0, 60)
+    ? `${titleBase} | 香港${categoryName}專家 | ${siteConfig.name}`.slice(0, 60)
     : locale === 'en'
-    ? `${titleBase} Hong Kong | ${siteConfig.name}`.slice(0, 60)
-    : `${titleBase} | 香港プロ | ZprintPro`.slice(0, 60);
+    ? `${titleBase} | Global Shipping | ${siteConfig.name}`.slice(0, 60)
+    : `${titleBase} | 日本向け高品質印刷 | ${siteConfig.name}`.slice(0, 60);
   
   // Description: 150-160字符，含長尾關鍵詞+價格+行動號召
   const priceText = priceRange ? ` ${priceRange.split('/')[0]}起。` : ' ';
@@ -330,8 +332,8 @@ export function generateProductMetadata(
   const descSuffix = locale === 'zh-hk' 
     ? `立即查詢報價，滿$500免運費，即日交貨。`
     : locale === 'en'
-    ? `Get a quote now. Free shipping over $500. Same-day delivery available.`
-    : `今すぐ見積もり。500ドル以上送料無料。即日納品対応。`;
+    ? `Fast shipping to US, UK, AU. Factory-direct quality from Hong Kong. Get a free quote now.`
+    : `今すぐ見積もり。日本全国配送対応。3〜5営業日でお届け。`;
   
   const fullDesc = `${descPrefix}${priceText}${descSuffix}`;
   const metaDescription = fullDesc.length > 160 ? fullDesc.slice(0, 157) + '...' : fullDesc;

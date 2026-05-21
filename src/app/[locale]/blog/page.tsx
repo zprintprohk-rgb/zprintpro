@@ -35,9 +35,9 @@ export async function generateMetadata({ params }: BlogPageProps): Promise<Metad
     alternates: {
       canonical: `${siteConfig.url}/${langPrefix}blog/`,
       languages: {
-        'zh-Hant-HK': `${siteConfig.url}/zh-hk/blog/`,
+        'zh-HK': `${siteConfig.url}/zh-hk/blog/`,
         'en': `${siteConfig.url}/en/blog/`,
-        'ja-JP': `${siteConfig.url}/ja/blog/`,
+        'ja': `${siteConfig.url}/ja/blog/`,
         'x-default': `${siteConfig.url}/zh-hk/blog/`,
       },
     },

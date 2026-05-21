@@ -18,9 +18,9 @@ export async function generateMetadata({
     alternates: {
       canonical: `${siteConfig.url}/${params.locale}/case-studies/`,
       languages: {
-        'zh-Hant-HK': `${siteConfig.url}/case-studies/`,
+        'zh-HK': `${siteConfig.url}/case-studies/`,
         'en': `${siteConfig.url}/en/case-studies/`,
-        'ja-JP': `${siteConfig.url}/ja/case-studies/`,
+        'ja': `${siteConfig.url}/ja/case-studies/`,
       },
     },
   };

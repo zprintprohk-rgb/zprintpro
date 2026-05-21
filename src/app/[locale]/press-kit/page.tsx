@@ -159,9 +159,9 @@ export async function generateMetadata({ params }: PressKitPageProps): Promise<M
     alternates: {
       canonical: `${siteConfig.url}/${locale}/press-kit/`,
       languages: {
-        'zh-Hant-HK': `${siteConfig.url}/press-kit/`,
+        'zh-HK': `${siteConfig.url}/press-kit/`,
         'en': `${siteConfig.url}/en/press-kit/`,
-        'ja-JP': `${siteConfig.url}/ja/press-kit/`,
+        'ja': `${siteConfig.url}/ja/press-kit/`,
         'x-default': `${siteConfig.url}/zh-hk/press-kit/`,
       },
     },

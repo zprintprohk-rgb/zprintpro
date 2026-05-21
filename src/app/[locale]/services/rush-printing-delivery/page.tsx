@@ -44,7 +44,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         languages: {
           'zh-HK': 'https://zprintpro.com/zh-hk/services/rush-printing-delivery/',
           'en': 'https://zprintpro.com/en/services/rush-printing-delivery/',
-          'ja-JP': 'https://zprintpro.com/ja/services/rush-printing-delivery/',
+          'ja': 'https://zprintpro.com/ja/services/rush-printing-delivery/',
           'x-default': 'https://zprintpro.com/zh-hk/services/rush-printing-delivery/',
         },
       },

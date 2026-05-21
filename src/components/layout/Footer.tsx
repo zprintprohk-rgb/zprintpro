@@ -29,7 +29,7 @@ const translations = {
       {
         title: '關於我們',
         links: [
-          { label: '公司新聞', href: '/company-news/' },
+          { label: '關於我們', href: '/about/' },
           { label: '品牌故事', href: '/blog/company-intro/' },
           { label: '客戶案例', href: '/case-studies/' },
           { label: '印刷知識', href: '/blog/' },
@@ -80,7 +80,7 @@ const translations = {
       {
         title: 'About Us',
         links: [
-          { label: 'Company News', href: '/company-news/' },
+          { label: 'About Us', href: '/about/' },
           { label: 'Brand Story', href: '/blog/company-intro/' },
           { label: 'Case Studies', href: '/case-studies/' },
           { label: 'Printing Knowledge', href: '/blog/' },
@@ -131,7 +131,7 @@ const translations = {
       {
         title: '会社概要',
         links: [
-          { label: '会社ニュース', href: '/company-news/' },
+          { label: '会社概要', href: '/about/' },
           { label: 'ブランドストーリー', href: '/blog/company-intro/' },
           { label: '導入事例', href: '/case-studies/' },
           { label: '印刷知識', href: '/blog/' },
