@@ -1,182 +1,179 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
-import { siteConfig } from '@/lib/seo';
+import { useEffect } from 'react';
 
 interface QuoteRedirectProps {
   locale: string;
 }
 
 /**
- * 客户端重定向逻辑（SEO 友好版）
+ * QUOTE_PRODUCT_MAP - 从 middleware.ts 同步的产品映射表
+ * /quote?product=xxx 中 product 参数值 → 产品详情页路径
+ */
+const QUOTE_PRODUCT_MAP: Record<string, string> = {
+  // === Paper Bags ===
+  'kraft-paper-bags': '/product/kraft-paper-bags/',
+  'kraft-paper-packaging-box': '/product/kraft-paper-packaging-box/',
+  'gift-boxes': '/product/gift-boxes/',
+  'cosmetic-boxes': '/product/cosmetic-boxes/',
+  'gift-bags': '/product/gift-bags/',
+  'mailer-boxes': '/product/mailer-boxes/',
+  'rigid-boxes': '/product/rigid-boxes/',
+  'drawer-slide-gift-box': '/product/drawer-slide-gift-box/',
+  'magnetic-closure-gift-box': '/product/magnetic-closure-gift-box/',
+  'electronics-packaging-box': '/product/electronics-packaging-box/',
+  'food-boxes': '/product/food-boxes/',
+  'folding-boxes': '/product/folding-boxes/',
+  // === Stickers ===
+  'waterproof-stickers': '/product/waterproof-stickers/',
+  'die-cut-stickers': '/product/die-cut-stickers/',
+  'removable-stickers': '/product/removable-stickers/',
+  'security-stickers': '/product/security-stickers/',
+  'transparent-stickers': '/product/transparent-stickers/',
+  'small-batch-stickers': '/product/small-batch-stickers/',
+  'foil-stickers': '/product/foil-stickers/',
+  'fluorescent-stickers': '/product/fluorescent-stickers/',
+  // === Posters ===
+  'display-posters': '/product/display-posters/',
+  'outdoor-posters': '/product/outdoor-posters/',
+  'a2-posters': '/product/a2-posters/',
+  'a1-posters': '/product/a1-posters/',
+  'art-posters': '/product/art-posters/',
+  'adhesive-posters': '/product/adhesive-posters/',
+  // === Books ===
+  'perfect-bound-books': '/product/perfect-bound-books/',
+  'saddle-stitch-booklets': '/product/saddle-stitch-booklets/',
+  'hardcover-books': '/product/hardcover-books/',
+  'custom-calendars': '/product/custom-calendars/',
+  'wall-calendars': '/product/wall-calendars/',
+  'desk-calendars': '/product/desk-calendars/',
+  // === Flyers ===
+  'same-day-flyers': '/product/same-day-flyers/',
+  'thick-paper-flyers': '/product/thick-paper-flyers/',
+  'folded-leaflets': '/product/folded-leaflets/',
+  'a4-flyers': '/product/a4-flyers/',
+  'a5-flyers': '/product/a5-flyers/',
+  // === Envelopes ===
+  'business-envelopes': '/product/business-envelopes/',
+  'colored-envelopes': '/product/colored-envelopes/',
+  'large-envelopes': '/product/large-envelopes/',
+  // === Banners ===
+  'mesh-banners': '/product/mesh-banners/',
+  'outdoor-vinyl-banners': '/product/outdoor-vinyl-banners/',
+  'roll-up-banners': '/product/roll-up-banners/',
+  // === Paper Bags variants ===
+  'paper-bags': '/product/paper-bags/',
+  'white-card-bags': '/product/white-card-bags/',
+  'eco-paper-bags': '/product/eco-paper-bags/',
+  // === Business Cards ===
+  'premium-business-cards': '/product/premium-business-cards/',
+  'thick-business-cards-400g': '/product/thick-business-cards-400g/',
+  'foil-business-cards': '/product/foil-business-cards/',
+  'spot-uv-business-cards': '/product/spot-uv-business-cards/',
+  'matte-business-cards': '/product/matte-business-cards/',
+  'rounded-corner-cards': '/product/rounded-corner-cards/',
+  'double-sided-cards': '/product/double-sided-cards/',
+  'same-day-business-cards': '/product/same-day-business-cards/',
+  'eco-business-cards': '/product/eco-business-cards/',
+  // === Handle Bags ===
+  'handle-bags': '/product/handle-bags/',
+  'small-bags': '/product/small-bags/',
+  'large-bags': '/product/large-bags/',
+  // === Eco Flyers ===
+  'eco-flyers': '/product/eco-flyers/',
+  'double-sided-flyers': '/product/double-sided-flyers/',
+  // === Red Packets ===
+  'foil-red-packets': '/product/foil-red-packets/',
+  'embossed-red-packets': '/product/embossed-red-packets/',
+  'custom-red-packets': '/product/custom-red-packets/',
+  'cartoon-red-packets': '/product/cartoon-red-packets/',
+  'eco-red-packets': '/product/eco-red-packets/',
+  'large-red-packets': '/product/large-red-packets/',
+  // === Mini Calendars ===
+  'mini-calendars': '/product/mini-calendars/',
+  'photo-frame-calendars': '/product/photo-frame-calendars/',
+  'magnetic-calendars': '/product/magnetic-calendars/',
+  // === Menus ===
+  'pvc-menus': '/product/pvc-menus/',
+  'laminated-menus': '/product/laminated-menus/',
+  'hardcover-menus': '/product/hardcover-menus/',
+  'drink-menus': '/product/drink-menus/',
+  'disposable-menus': '/product/disposable-menus/',
+  // === Additional Banners ===
+  'adhesive-banners': '/product/adhesive-banners/',
+  'vehicle-wraps': '/product/vehicle-wraps/',
+  // === Books ===
+  'catalog-printing': '/product/catalog-printing/',
+  'spiral-notebooks': '/product/spiral-notebooks/',
+  // === Envelopes ===
+  'pearl-envelopes': '/product/pearl-envelopes/',
+  // === Educational ===
+  'exercise-books': '/product/exercise-books/',
+  'certificates': '/product/certificates/',
+  'school-flyers': '/product/school-flyers/',
+  'textbooks': '/product/textbooks/',
+};
+
+/**
+ * 客户端硬重定向（SEO 修复版 v3）
  * 
- * GSC 修复（2026-05-18）：
- * - 有 product 参数（产品报价页）→ 不重定向，展示报价内容
- *   Googlebot 可正常抓取页面，解决 53 个 quote 页 noindex 问题
- * - 无 product 参数（基础报价页）→ 重定向到 contact 页
+ * 核心策略：/quote?product=xxx → window.location.href 硬重定向到 /{locale}/product/xxx/
+ * 
+ * 为什么用 window.location.href 而不是 router.replace？
+ * 1. router.replace 是 SPA 客户端导航，不会触发 301 HTTP 状态码
+ * 2. Googlebot 需要 301 来更新索引，但客户端 JS 无法发送 301
+ * 3. 使用 window.location.href 是 true 硬导航，浏览器会发起新请求
+ * 4. 配合 middleware.ts 的服务端 301（SSR 场景），双保险
+ * 
+ * Cloudflare Pages 场景说明：
+ * - _redirects 不支持查询参数匹配（/?product=xxx）
+ * - 静态导出时 middleware.ts 不运行
+ * - 这是唯一的客户端兜底方案
+ * 
+ * Googlebot 抓取说明：
+ * - Googlebot 会执行 JavaScript，看到 window.location.href
+ * - Google 会将这种行为视为软重定向，数月后更新索引
+ * - 配合 sitemap.xml 中的正确 URL，加速索引更新
+ * 
+ * 新增产品映射时需同步更新：
+ * 1. 本文件 QUOTE_PRODUCT_MAP
+ * 2. middleware.ts QUOTE_PRODUCT_MAP
+ * 3. public/_redirects（Cloudflare Pages 重定向规则）
  */
 export function QuoteRedirect({ locale }: QuoteRedirectProps) {
-  const [shouldRender, setShouldRender] = useState(false);
-  const [productName, setProductName] = useState('');
-  const router = useRouter();
-
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const params = new URLSearchParams(window.location.search);
-      const product = params.get('product');
+    if (typeof window === 'undefined') return;
 
-      if (!product) {
-        // 无 product 参数 → 重定向到 contact
-        const target = `/${locale}/contact/`;
-        router.replace(target);
-      } else {
-        // 有 product 参数 → 渲染报价展示内容
-        setProductName(product);
-        setShouldRender(true);
-      }
+    const params = new URLSearchParams(window.location.search);
+    const product = params.get('product');
+
+    if (!product) {
+      // 无 product 参数 → 基础报价表单页（不应被直接访问，重定向到 contact）
+      window.location.href = `/${locale}/contact/`;
+      return;
     }
-  }, [locale, router]);
 
-  if (shouldRender) {
-    return <QuotePageContent locale={locale} productName={productName} />;
-  }
+    // 有 product 参数 → 查找产品映射，硬重定向到产品详情页
+    const productPath = QUOTE_PRODUCT_MAP[product];
+    if (productPath) {
+      // 保留其他查询参数（如果有的话，去掉 product 和 locale 参数）
+      params.delete('product');
+      params.delete('locale');
+      const remainingParams = params.toString();
+      const targetUrl = `/${locale}${productPath}${remainingParams ? '?' + remainingParams : ''}`;
+      window.location.href = targetUrl;
+    } else {
+      // 未映射的产品 → 重定向到 contact 页面
+      window.location.href = `/${locale}/contact/?product=${encodeURIComponent(product)}`;
+    }
+  }, [locale]);
 
-  // 无 product 参数时显示加载状态（重定向期间）
+  // 重定向期间不渲染任何内容（只显示加载状态）
   return (
     <main className="min-h-screen bg-gray-50 flex items-center justify-center">
       <div className="text-center">
         <div className="w-8 h-8 border-2 border-[#2873F5] border-t-transparent rounded-full animate-spin mx-auto mb-4" />
         <p className="text-gray-500">Redirecting...</p>
-      </div>
-    </main>
-  );
-}
-
-/**
- * 产品报价展示页内容
- * 当 URL 包含 ?product=xxx 时渲染此组件
- * 提供产品信息 + 引导用户联系客服获取报价
- */
-function QuotePageContent({ locale, productName }: { locale: string; productName: string }) {
-  const titles: Record<string, string> = {
-    'zh-hk': `獲取報價 - ${productName}`,
-    'en': `Get a Quote - ${productName}`,
-    'ja': `見積もり - ${productName}`,
-  };
-
-  const descriptions: Record<string, string> = {
-    'zh-hk': `填寫以下信息獲取${productName}的免費報價，智印云專業團隊將在24小時內回覆。`,
-    'en': `Fill in the form below to get a free quote for ${productName}. Our team will reply within 24 hours.`,
-    'ja': `以下のフォームに記入して${productName}の無料見積もりを取得してください。24時間以内にご返信いたします。`,
-  };
-
-  const contactLinks: Record<string, string> = {
-    'zh-hk': `/${locale}/contact/?product=${productName}`,
-    'en': `/${locale}/contact/?product=${productName}`,
-    'ja': `/${locale}/contact/?product=${productName}`,
-  };
-
-  return (
-    <main className="min-h-screen bg-gray-50">
-      <div className="max-w-4xl mx-auto px-4 py-12">
-        <div className="bg-white rounded-2xl shadow-sm p-8">
-          {/* 产品名称 */}
-          <h1 className="text-3xl font-bold text-gray-900 mb-4">
-            {titles[locale] || titles['en']}
-          </h1>
-
-          {/* 产品描述 */}
-          <p className="text-lg text-gray-600 mb-8">
-            {descriptions[locale] || descriptions['en']}
-          </p>
-
-          {/* 联系 CTA */}
-          <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 mb-8">
-            <h2 className="text-xl font-semibold text-blue-900 mb-2">
-              {locale === 'zh-hk' ? '需要即時報價？' : locale === 'ja' ? '即時見積もりが必要ですか？' : 'Need an instant quote?'}
-            </h2>
-            <p className="text-blue-700 mb-4">
-              {locale === 'zh-hk'
-                ? '點擊下方按鈕直接聯繫我們，獲取最準確的報價'
-                : locale === 'ja'
-                  ? '下のボタンをクリックして、正確な見積もりを入手してください'
-                  : 'Click the button below to contact us directly for the most accurate quote'}
-            </p>
-            <a
-              href={contactLinks[locale]}
-              className="inline-flex items-center px-6 py-3 bg-[#2873F5] text-white font-semibold rounded-lg hover:bg-[#1a5fd4] transition-colors"
-            >
-              {locale === 'zh-hk' ? '立即詢價' : locale === 'ja' ? '今すぐ見積もり' : 'Get Quote Now'}
-              <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
-            </a>
-          </div>
-
-          {/* 产品规格信息 */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            <div className="bg-gray-50 rounded-lg p-4">
-              <h3 className="font-semibold text-gray-900 mb-2">
-                {locale === 'zh-hk' ? '📋 產品規格' : locale === 'ja' ? '📋 製品仕様' : '📋 Product Specs'}
-              </h3>
-              <p className="text-gray-600 text-sm">
-                {locale === 'zh-hk'
-                  ? '填寫表單告訴我們您的需求'
-                  : locale === 'ja'
-                    ? 'フォームにご要望をご記入ください'
-                    : 'Fill in the form to tell us your requirements'}
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-4">
-              <h3 className="font-semibold text-gray-900 mb-2">
-                {locale === 'zh-hk' ? '🚚 交貨時間' : locale === 'ja' ? '🚚 納期' : '🚚 Delivery Time'}
-              </h3>
-              <p className="text-gray-600 text-sm">
-                {locale === 'zh-hk'
-                  ? '最快24小時內出貨'
-                  : locale === 'ja'
-                    ? '最短24時間で出荷'
-                    : 'Fastest delivery within 24 hours'}
-              </p>
-            </div>
-            <div className="bg-gray-50 rounded-lg p-4">
-              <h3 className="font-semibold text-gray-900 mb-2">
-                {locale === 'zh-hk' ? '💳 安全支付' : locale === 'ja' ? '💳 安全な支払い' : '💳 Secure Payment'}
-              </h3>
-              <p className="text-gray-600 text-sm">
-                {locale === 'zh-hk'
-                  ? 'Airwallex 等多種安全支付方式'
-                  : locale === 'ja'
-                    ? 'Airwallexなど安全な支払い方法'
-                    : 'Multiple secure payment options including Airwallex'}
-              </p>
-            </div>
-          </div>
-
-          {/* 结构化数据 */}
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                '@context': 'https://schema.org',
-                '@type': 'Product',
-                name: productName,
-                url: `${siteConfig.url}/${locale}/quote/?product=${productName}`,
-                offers: {
-                  '@type': 'Offer',
-                  priceCurrency: locale === 'ja' ? 'JPY' : locale === 'en' ? 'USD' : 'HKD',
-                  availability: 'https://schema.org/InStock',
-                  priceSpecification: {
-                    '@type': 'PriceSpecification',
-                    price: '0',
-                    priceCurrency: locale === 'ja' ? 'JPY' : locale === 'en' ? 'USD' : 'HKD',
-                  },
-                },
-              }),
-            }}
-          />
-        </div>
       </div>
     </main>
   );

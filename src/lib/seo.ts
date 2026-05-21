@@ -119,10 +119,10 @@ export function generateHomeMetadata(locale: Locale): Metadata {
     alternates: {
       canonical: `${siteConfig.url}/${locale}/`,
       languages: {
-        'zh-Hant-HK': `${siteConfig.url}/zh-hk/`,
-        'en': `${siteConfig.url}/en/`,
-        'ja-JP': `${siteConfig.url}/ja/`,
-        'x-default': `${siteConfig.url}/zh-hk/`,
+        'zh-HK': `${siteConfig.url}/zh-hk/`,
+        'en-US': `${siteConfig.url}/en/`,
+        'ja': `${siteConfig.url}/ja/`,
+        'x-default': `${siteConfig.url}/en/`,
       },
     },
     openGraph: {
@@ -276,10 +276,10 @@ export function generateCategoryMetadata(locale: Locale, categoryName: string = 
     alternates: {
       canonical: `${siteConfig.url}/${locale}/category/${slug}/`,
       languages: {
-        'zh-Hant-HK': `${siteConfig.url}/zh-hk/category/${slug}/`,
-        'en': `${siteConfig.url}/en/category/${slug}/`,
-        'ja-JP': `${siteConfig.url}/ja/category/${slug}/`,
-        'x-default': `${siteConfig.url}/zh-hk/category/${slug}/`,
+        'zh-HK': `${siteConfig.url}/zh-hk/category/${slug}/`,
+        'en-US': `${siteConfig.url}/en/category/${slug}/`,
+        'ja': `${siteConfig.url}/ja/category/${slug}/`,
+        'x-default': `${siteConfig.url}/en/category/${slug}/`,
       },
     },
     openGraph: {
@@ -342,10 +342,10 @@ export function generateProductMetadata(
     alternates: {
       canonical: `${siteConfig.url}/${locale}/product/${slug}/`,
       languages: {
-        'zh-Hant-HK': `${siteConfig.url}/zh-hk/product/${slug}/`,
-        'en': `${siteConfig.url}/en/product/${slug}/`,
-        'ja-JP': `${siteConfig.url}/ja/product/${slug}/`,
-        'x-default': `${siteConfig.url}/zh-hk/product/${slug}/`,
+        'zh-HK': `${siteConfig.url}/zh-hk/product/${slug}/`,
+        'en-US': `${siteConfig.url}/en/product/${slug}/`,
+        'ja': `${siteConfig.url}/ja/product/${slug}/`,
+        'x-default': `${siteConfig.url}/en/product/${slug}/`,
       },
     },
     openGraph: {
@@ -508,6 +508,11 @@ export function generateProductJsonLd(
       price: (price ?? 0).toString(),
       availability: 'https://schema.org/InStock',
       itemCondition: 'https://schema.org/NewCondition',
+      areaServed: locale === 'zh-hk' 
+        ? { '@type': 'Place' as const, name: 'Hong Kong' }
+        : locale === 'ja'
+        ? { '@type': 'Place' as const, name: 'Japan' }
+        : { '@type': 'Place' as const, name: 'United States' },
       seller: {
         '@type': 'Organization',
         name: siteConfig.name,
@@ -727,10 +732,10 @@ export function generateQuotePageMetadata(locale: Locale): Metadata {
     alternates: {
       canonical: `${siteConfig.url}/${locale}/quote/`,
       languages: {
-        'zh-Hant-HK': `${siteConfig.url}/zh-hk/quote/`,
-        'en': `${siteConfig.url}/en/quote/`,
-        'ja-JP': `${siteConfig.url}/ja/quote/`,
-        'x-default': `${siteConfig.url}/zh-hk/quote/`,
+        'zh-HK': `${siteConfig.url}/zh-hk/quote/`,
+        'en-US': `${siteConfig.url}/en/quote/`,
+        'ja': `${siteConfig.url}/ja/quote/`,
+        'x-default': `${siteConfig.url}/en/quote/`,
       },
     },
   };
@@ -741,10 +746,10 @@ export function generateHreflangTags(path: string = '') {
   const basePath = path.replace(/^\//, '');
   const prefix = basePath ? `/${basePath}` : '';
   return [
-    { lang: 'zh-Hant-HK', url: `${siteConfig.url}${prefix}` },
-    { lang: 'en', url: `${siteConfig.url}/en${prefix}` },
-    { lang: 'ja-JP', url: `${siteConfig.url}/ja${prefix}` },
-    { lang: 'x-default', url: `${siteConfig.url}/zh-hk${prefix}` },
+    { lang: 'zh-HK', url: `${siteConfig.url}${prefix}` },
+    { lang: 'en-US', url: `${siteConfig.url}/en${prefix}` },
+    { lang: 'ja', url: `${siteConfig.url}/ja${prefix}` },
+    { lang: 'x-default', url: `${siteConfig.url}/en${prefix}` },
   ];
 }
 
