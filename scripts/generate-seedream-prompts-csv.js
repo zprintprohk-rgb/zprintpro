@@ -1,4 +1,4 @@
-/**
+﻿/**
  * 为所有 79 SKU 生成 Seedream 4.5 三语生图提示词
  * 包含：实际用户信息内容、SEO文件名、Alt标注
  * 输出 CSV + TXT 文件
@@ -9,9 +9,9 @@ const fs = require('fs');
 // ========== 实际用户信息内容（按分类 × 三语） ==========
 const REAL_USER_CONTENT = {
   'business-cards': {
-    zh: '每张名片印有真实用户信息：姓名「陳志明」、公司名「智印港有限公司」、職位「市場總監」、電話「+86 181 2638 0255」、電郵「zprintpro@outlook.com」，字體清晰可讀，排版專業',
+    zh: '每张名片印有真实用户信息：姓名「陳志明」、公司名「智印云有限公司」、職位「市場總監」、電話「+86 181 2638 0255」、電郵「zprintpro@outlook.com」，字體清晰可讀，排版專業',
     en: 'Each card displays real user info: name "Alex Chan", company "ZprintPro Ltd.", title "Marketing Director", phone "+86 181 2638 0255", email "zprintpro@outlook.com", clear readable typography, professional layout',
-    ja: '各名刺に実際のユーザー情報が印刷されている：名前「陳志明」、会社名「智印港有限公司」、役職「市場総監」、電話「+86 181 2638 0255」、メール「zprintpro@outlook.com」、鮮明で読みやすい書体、プロフェッショナルなレイアウト',
+    ja: '各名刺に実際のユーザー情報が印刷されている：名前「陳志明」、会社名「智印云有限公司」、役職「市場総監」、電話「+86 181 2638 0255」、メール「zprintpro@outlook.com」、鮮明で読みやすい書体、プロフェッショナルなレイアウト',
   },
   'stickers': {
     zh: '貼紙上印有真实品牌信息：品牌名「ZprintPro」、Logo圖案、產品標籤「有機蜂蜜 250g」、條碼和生產日期，字體清晰不模糊',
@@ -19,9 +19,9 @@ const REAL_USER_CONTENT = {
     ja: 'ステッカーに実際のブランド情報が印刷されている：ブランド名「ZprintPro」、ロゴグラフィック、製品ラベル「有機蜂蜜 250g」、バーコードと製造日、鮮明で読みやすい文字',
   },
   'paper-bags': {
-    zh: '紙袋印有真实品牌信息：品牌名「ZprintPro智印港」、燙金Logo、店鋪地址「九龍旺角彌敦道123號」、聯繫電話，印刷清晰精緻',
+    zh: '紙袋印有真实品牌信息：品牌名「ZprintPro智印云」、燙金Logo、店鋪地址「九龍旺角彌敦道123號」、聯繫電話，印刷清晰精緻',
     en: 'Bags display real brand info: brand name "ZprintPro", foil-stamped logo, store address "123 Nathan Road, Mong Kok, Kowloon", contact phone, crisp premium printing',
-    ja: '紙袋に実際のブランド情報が印刷されている：ブランド名「ZprintPro智印港」、箔押しロゴ、店舗住所「九龍旺角彌敦道123號」、連絡先電話、鮮明で高級な印刷',
+    ja: '紙袋に実際のブランド情報が印刷されている：ブランド名「ZprintPro智印云」、箔押しロゴ、店舗住所「九龍旺角彌敦道123號」、連絡先電話、鮮明で高級な印刷',
   },
   'flyers': {
     zh: '單張印有真实活動信息：標題「ZprintPro開業大酬賓」、優惠內容「全場8折」、活動時間「2026年5月1-7日」、地址「銅鑼灣軒尼詩道456號」、QR code，排版專業',
@@ -39,14 +39,14 @@ const REAL_USER_CONTENT = {
     ja: '包装盒に実際の製品情報が印刷されている：ブランド名「ZprintPro」、製品名「精選茶葉禮盒」、成分表、内容量「200g」、製造日、バーコードとエコラベル、精巧なデザイン',
   },
   'banners': {
-    zh: '橫額展示真实品牌畫面：品牌名「ZprintPro智印港」、服務項目「專業印刷·免費設計」、聯繫電話「+852 2345 6789」、網址「www.zprintpro.com」，畫面清晰銳利',
+    zh: '橫額展示真实品牌畫面：品牌名「ZprintPro智印云」、服務項目「專業印刷·免費設計」、聯繫電話「+852 2345 6789」、網址「www.zprintpro.com」，畫面清晰銳利',
     en: 'Banner displays real brand graphics: brand name "ZprintPro", services "Professional Printing · Free Design", phone "+852 2345 6789", website "www.zprintpro.com", sharp crisp graphics',
-    ja: 'バナーに実際のブランドグラフィックが表示されている：ブランド名「ZprintPro智印港」、サービス「專業印刷·免費設計」、電話「+852 2345 6789」、ウェブサイト「www.zprintpro.com」、鮮明なグラフィック',
+    ja: 'バナーに実際のブランドグラフィックが表示されている：ブランド名「ZprintPro智印云」、サービス「專業印刷·免費設計」、電話「+852 2345 6789」、ウェブサイト「www.zprintpro.com」、鮮明なグラフィック',
   },
   'books': {
-    zh: '書籍封面印有真实出版信息：書名「香港印刷工藝全書」、作者「張偉明」、出版社「智印港出版」、ISBN條碼，書脊印有書名，排版專業',
+    zh: '書籍封面印有真实出版信息：書名「香港印刷工藝全書」、作者「張偉明」、出版社「智印云出版」、ISBN條碼，書脊印有書名，排版專業',
     en: 'Book cover displays real publishing info: title "The Complete Guide to HK Printing", author "Alex Cheung", publisher "ZprintPro Press", ISBN barcode, spine printed with title, professional typography',
-    ja: '書籍の表紙に実際の出版情報が印刷されている：書名「香港印刷工藝全書」、著者「張偉明」、出版社「智印港出版」、ISBNバーコード、背表紙に書名、プロフェッショナルな組版',
+    ja: '書籍の表紙に実際の出版情報が印刷されている：書名「香港印刷工藝全書」、著者「張偉明」、出版社「智印云出版」、ISBNバーコード、背表紙に書名、プロフェッショナルな組版',
   },
   'menus': {
     zh: '餐牌印有真实菜品信息：餐廳名「龍記茶餐廳」、招牌菜「招牌奶茶 $28」、「黯然銷魂飯 $58」、地址「旺角西洋菜街78號」，配真實菜品圖片',
@@ -54,14 +54,14 @@ const REAL_USER_CONTENT = {
     ja: 'メニューに実際の料理情報が印刷されている：レストラン名「龍記茶餐廳」、看板メニュー「招牌奶茶 $28」、「黯然銷魂飯 $58」、住所「旺角西洋菜街78號」、実際の料理写真付き',
   },
   'envelopes': {
-    zh: '信封印有真实收件人信息：姓名「張偉明 先生」、地址「九龍旺角彌敦道123號智印中心15樓」、郵編「KLN 1234」、公司名「智印港有限公司」，地址字跡清晰',
+    zh: '信封印有真实收件人信息：姓名「張偉明 先生」、地址「九龍旺角彌敦道123號智印中心15樓」、郵編「KLN 1234」、公司名「智印云有限公司」，地址字跡清晰',
     en: 'Envelopes display real recipient info: name "Mr. Alex Cheung", address "15/F Zprint Centre, 123 Nathan Road, Mong Kok, Kowloon", postcode "KLN 1234", company "ZprintPro Ltd.", clear legible address',
-    ja: '封筒に実際の宛先情報が印刷されている：名前「張偉明 先生」、住所「九龍旺角彌敦道123號智印中心15樓」、郵便番号「KLN 1234」、会社名「智印港有限公司」、鮮明で読みやすい住所',
+    ja: '封筒に実際の宛先情報が印刷されている：名前「張偉明 先生」、住所「九龍旺角彌敦道123號智印中心15樓」、郵便番号「KLN 1234」、会社名「智印云有限公司」、鮮明で読みやすい住所',
   },
   'calendars': {
-    zh: '年曆印有真实日期和品牌信息：品牌名「智印港」、年份「2026」、月份「一月」、農曆日期、香港公眾假期標註，日期數字清晰可讀',
+    zh: '年曆印有真实日期和品牌信息：品牌名「智印云」、年份「2026」、月份「一月」、農曆日期、香港公眾假期標註，日期數字清晰可讀',
     en: 'Calendar displays real dates and brand info: brand "ZprintPro", year "2026", month "January", lunar dates, Hong Kong public holidays marked, clear readable date numbers',
-    ja: 'カレンダーに実際の日付とブランド情報が印刷されている：ブランド名「智印港」、年「2026」、月「1月」、旧暦の日付、香港の祝日マーク、鮮明で読みやすい日付数字',
+    ja: 'カレンダーに実際の日付とブランド情報が印刷されている：ブランド名「智印云」、年「2026」、月「1月」、旧暦の日付、香港の祝日マーク、鮮明で読みやすい日付数字',
   },
   'red-packets': {
     zh: '利是封印有真实祝福信息：公司名「滙豐銀行」、燙金「福」字、吉祥語「恭喜發財」、年份「2026」，紅色紙張喜慶質感',
@@ -312,7 +312,7 @@ function generateSEOFilename(product, locale) {
 function generateAltText(product, locale) {
   const price = product.price_range || '';
   if (locale === 'zh-hk') {
-    return `香港${product.name}印刷 ${price} 起｜${product.description.slice(0, 25)}｜ZprintPro智印港`;
+    return `香港${product.name}印刷 ${price} 起｜${product.description.slice(0, 25)}｜ZprintPro智印云`;
   }
   if (locale === 'en') {
     return `${product.nameEn} Printing Hong Kong ${price}｜${product.descriptionEn.slice(0, 35)}｜ZprintPro`;

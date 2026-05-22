@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 const path = require('path');
 
 // Read the products file
@@ -59,12 +59,12 @@ function generateSeo(product) {
   const cat = categoryNames[product.category] || { zh: '印刷', en: 'Printing', ja: '印刷' };
   
   // SEO Title (60 chars max)
-  const seoTitleZh = `${product.name} | 香港專業${cat.zh}印刷 | 智印港ZPrintPro`;
+  const seoTitleZh = `${product.name} | 香港專業${cat.zh}印刷 | 智印云ZPrintPro`;
   const seoTitleEn = `${product.nameEn} | Professional ${cat.en} Printing Hong Kong | ZPrintPro`;
   const seoTitleJa = `${product.nameJa} | 香港${cat.ja}印刷 | ZPrintPro`;
   
   // SEO Keywords
-  const seoKeywordsZh = `${product.name},${cat.zh}印刷,香港${cat.zh},${cat.zh}定制,${cat.zh}印刷公司,智印港,即日${cat.zh},急印${cat.zh},觀塘${cat.zh}`;
+  const seoKeywordsZh = `${product.name},${cat.zh}印刷,香港${cat.zh},${cat.zh}定制,${cat.zh}印刷公司,智印云,即日${cat.zh},急印${cat.zh},觀塘${cat.zh}`;
   const seoKeywordsEn = `${product.nameEn},${cat.en} printing Hong Kong,custom ${cat.en.toLowerCase()},${cat.en.toLowerCase()} printing,same day ${cat.en.toLowerCase()},ZPrintPro,Kwun Tong printing`;
   const seoKeywordsJa = `${product.nameJa},${cat.ja}印刷,香港${cat.ja},${cat.ja}作成,${cat.ja}印刷会社,ZPrintPro,即日${cat.ja}`;
   
@@ -73,7 +73,7 @@ function generateSeo(product) {
   const baseDescEn = product.descriptionEn.length > 80 ? product.descriptionEn.substring(0, 80) + '...' : product.descriptionEn;
   const baseDescJa = product.descriptionJa.length > 80 ? product.descriptionJa.substring(0, 80) + '...' : product.descriptionJa;
   
-  const seoDescZh = `${baseDescZh} 智印港提供專業${cat.zh}印刷服務，品質保證，價格透明，即日交貨。ISO9001認證，觀塘實體工廠。`;
+  const seoDescZh = `${baseDescZh} 智印云提供專業${cat.zh}印刷服務，品質保證，價格透明，即日交貨。ISO9001認證，觀塘實體工廠。`;
   const seoDescEn = `${baseDescEn} ZPrintPro offers professional ${cat.en.toLowerCase()} printing in Hong Kong. Same-day delivery, ISO9001 certified, factory-direct pricing.`;
   const seoDescJa = `${baseDescJa} ZPrintProは香港の${cat.ja}印刷専門店。最短当日納品、ISO9001認証、工場直送価格。`;
   

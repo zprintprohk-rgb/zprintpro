@@ -1,4 +1,4 @@
-# EN / JA 市场深度分析与 SEO+GEO 执行方案
+﻿# EN / JA 市场深度分析与 SEO+GEO 执行方案
 
 > 基于《google 排名的顶级打法.docx》方法论
 > 核心框架：E-E-A-T + GEO语义搜索 + Pillar Content + 内容金字塔 + 外链建设
@@ -453,7 +453,7 @@ Pillar Page（支柱页）
 ### Week 1：地基（所有动作必须本周完成）
 
 - [ ] **1.1 修复6大分类页Meta**
-  - 每个分类页Title：`香港[分类名]印刷 | 即日速遞 | ZprintPro智印港`
+  - 每个分类页Title：`香港[分类名]印刷 | 即日速遞 | ZprintPro智印云`
   - 每个分类页Description：`專業[分类名]印刷服務，即日交貨，全港送貨。免費設計，100起訂。立即獲取報價！`
   - EN/JA同步优化
 

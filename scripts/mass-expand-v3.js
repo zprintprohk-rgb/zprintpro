@@ -1,4 +1,4 @@
-const fs = require('fs');
+﻿const fs = require('fs');
 let data = fs.readFileSync('src/data/pillar-content.ts', 'utf-8');
 
 function extractString(block, label) {
@@ -94,12 +94,12 @@ for (const [start, next] of clusters) {
 
 // flyer-guide needs +220 zh
 expandBlock("export const flyerGuidePillar", "export const packagingGuidePillar",
-  '<h2>香港傳單印刷的數字化轉型趨勢</h2><p>隨著數碼印刷技術的成熟，香港傳單市場正在經歷一場靜默的革命。可變數據印刷（VDP）讓每張傳單都能承載個性化的內容，從會員姓名到專屬優惠碼，大幅提升轉化率。AR 擴增實境傳單則通過掃描圖案觸發手機互動體驗，讓靜態的紙張變身動態的品牌展示窗口。智印港緊跟技術前沿，為品牌提供從傳統膠印到智能互動傳單的全方位解決方案。</p>',
+  '<h2>香港傳單印刷的數字化轉型趨勢</h2><p>隨著數碼印刷技術的成熟，香港傳單市場正在經歷一場靜默的革命。可變數據印刷（VDP）讓每張傳單都能承載個性化的內容，從會員姓名到專屬優惠碼，大幅提升轉化率。AR 擴增實境傳單則通過掃描圖案觸發手機互動體驗，讓靜態的紙張變身動態的品牌展示窗口。智印云緊跟技術前沿，為品牌提供從傳統膠印到智能互動傳單的全方位解決方案。</p>',
   null, null);
 
 // foil-flyers-industry needs +37 zh
 expandBlock("export const foilFlyersIndustryCluster", "export const rigidVsFoldingBoxesCluster",
-  '<h2>燙金傳單的設計與印刷注意事項</h2><p>燙金傳單的設計需要特別注意金屬光澤與紙張底色的對比關係。深色紙張（如黑色、深藍色）配合金色或銀色燙印能產生最強的視覺衝擊；淺色紙張則建議選用彩金或古銅色以增加層次感。燙金文件的設計需使用向量圖形，線條粗細不得低於 0.25mm，以確保燙印清晰度。智印港提供燙金打樣服務，讓客戶在量產前確認效果。</p>',
+  '<h2>燙金傳單的設計與印刷注意事項</h2><p>燙金傳單的設計需要特別注意金屬光澤與紙張底色的對比關係。深色紙張（如黑色、深藍色）配合金色或銀色燙印能產生最強的視覺衝擊；淺色紙張則建議選用彩金或古銅色以增加層次感。燙金文件的設計需使用向量圖形，線條粗細不得低於 0.25mm，以確保燙印清晰度。智印云提供燙金打樣服務，讓客戶在量產前確認效果。</p>',
   null, null);
 
 fs.writeFileSync('src/data/pillar-content.ts', data);

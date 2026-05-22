@@ -1,4 +1,4 @@
-# ZprintPro 智印港 — 78 產品高轉化率 AI 繪圖提示詞庫
+﻿# ZprintPro 智印云 — 78 產品高轉化率 AI 繪圖提示詞庫
 
 > 生成標準：繁體中文主導 + EN/JA 混排 | 霓虹粉爆炸標籤 | 24H 極速出貨 | 8K 商業攝影風
 > 適用工具：Midjourney v6 / DALL·E 3 / Kimi 2.6 Code 視覺模型

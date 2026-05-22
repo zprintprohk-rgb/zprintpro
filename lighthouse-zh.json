@@ -1,4 +1,4 @@
-{
+﻿{
   "lighthouseVersion": "12.8.2",
   "requestedUrl": "http://localhost:3456/zh-hk/",
   "mainDocumentUrl": "http://localhost:3456/zh-hk/",
@@ -4215,7 +4215,7 @@
                 "height": 22
               },
               "snippet": "<p class=\"text-gray-500 text-sm\">",
-              "nodeLabel": "© 2025 智印港 ZPrintPro. 保留所有權利。",
+              "nodeLabel": "© 2025 智印云 ZPrintPro. 保留所有權利。",
               "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.52 (foreground color: #6b7280, background color: #1a1a2e, font size: 11.5pt (15.3125px), font weight: normal). Expected contrast ratio of 4.5:1"
             },
             "subItems": {
@@ -4236,7 +4236,7 @@
                       "height": 1463
                     },
                     "snippet": "<footer class=\"bg-[#1a1a2e] text-white\">",
-                    "nodeLabel": "智印港 Z-PrintPro 是香港領先的線上印刷平台，提供高品質、低價格、快交貨的專業印刷服務。從紙袋到海報，滿足您的一切印刷需求。\n\n香港觀塘成業街16號…"
+                    "nodeLabel": "智印云 Z-PrintPro 是香港領先的線上印刷平台，提供高品質、低價格、快交貨的專業印刷服務。從紙袋到海報，滿足您的一切印刷需求。\n\n香港觀塘成業街16號…"
                   }
                 }
               ]
@@ -5827,8 +5827,8 @@
                 "width": 375,
                 "height": 375
               },
-              "snippet": "<img alt=\"香港厚身咭片(400g)印刷 | 400g超厚紙質，厚實手感彰顯尊貴品質。特別適合高 | ZprintPro智印港\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover group-hover:scale-105 transition-transform duration-500\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px;\" src=\"http://localhost:3456/images/products/thick-business-cards-400g.jpg\">",
-              "nodeLabel": "香港厚身咭片(400g)印刷 | 400g超厚紙質，厚實手感彰顯尊貴品質。特別適合高 | ZprintPro智印港"
+              "snippet": "<img alt=\"香港厚身咭片(400g)印刷 | 400g超厚紙質，厚實手感彰顯尊貴品質。特別適合高 | ZprintPro智印云\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover group-hover:scale-105 transition-transform duration-500\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px;\" src=\"http://localhost:3456/images/products/thick-business-cards-400g.jpg\">",
+              "nodeLabel": "香港厚身咭片(400g)印刷 | 400g超厚紙質，厚實手感彰顯尊貴品質。特別適合高 | ZprintPro智印云"
             },
             "url": "http://localhost:3456/images/products/thick-business-cards-400g.jpg",
             "fromProtocol": true,
@@ -5851,8 +5851,8 @@
                 "width": 375,
                 "height": 375
               },
-              "snippet": "<img alt=\"香港高級商務咭片印刷 | 採用300g高級銅版紙，配合專業四色印刷，展現企業 | ZprintPro智印港\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover group-hover:scale-105 transition-transform duration-500\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px;\" src=\"http://localhost:3456/images/products/premium-business-cards.jpg\">",
-              "nodeLabel": "香港高級商務咭片印刷 | 採用300g高級銅版紙，配合專業四色印刷，展現企業 | ZprintPro智印港"
+              "snippet": "<img alt=\"香港高級商務咭片印刷 | 採用300g高級銅版紙，配合專業四色印刷，展現企業 | ZprintPro智印云\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover group-hover:scale-105 transition-transform duration-500\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px;\" src=\"http://localhost:3456/images/products/premium-business-cards.jpg\">",
+              "nodeLabel": "香港高級商務咭片印刷 | 採用300g高級銅版紙，配合專業四色印刷，展現企業 | ZprintPro智印云"
             },
             "url": "http://localhost:3456/images/products/premium-business-cards.jpg",
             "fromProtocol": true,
@@ -5875,8 +5875,8 @@
                 "width": 375,
                 "height": 375
               },
-              "snippet": "<img alt=\"香港牛皮紙袋印刷 | 環保牛皮紙材質，質樸自然，深受消費者喜愛。適合服裝 | ZprintPro智印港\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover group-hover:scale-105 transition-transform duration-500\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px;\" src=\"http://localhost:3456/images/products/kraft-paper-bags.jpg\">",
-              "nodeLabel": "香港牛皮紙袋印刷 | 環保牛皮紙材質，質樸自然，深受消費者喜愛。適合服裝 | ZprintPro智印港"
+              "snippet": "<img alt=\"香港牛皮紙袋印刷 | 環保牛皮紙材質，質樸自然，深受消費者喜愛。適合服裝 | ZprintPro智印云\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover group-hover:scale-105 transition-transform duration-500\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px;\" src=\"http://localhost:3456/images/products/kraft-paper-bags.jpg\">",
+              "nodeLabel": "香港牛皮紙袋印刷 | 環保牛皮紙材質，質樸自然，深受消費者喜愛。適合服裝 | ZprintPro智印云"
             },
             "url": "http://localhost:3456/images/products/kraft-paper-bags.jpg",
             "fromProtocol": true,
@@ -5899,8 +5899,8 @@
                 "width": 375,
                 "height": 375
               },
-              "snippet": "<img alt=\"香港白卡紙袋印刷 | 白卡紙材質，表面平整光滑，印刷效果佳。適合高端品牌 | ZprintPro智印港\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover group-hover:scale-105 transition-transform duration-500\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px;\" src=\"http://localhost:3456/images/products/white-card-bags.jpg\">",
-              "nodeLabel": "香港白卡紙袋印刷 | 白卡紙材質，表面平整光滑，印刷效果佳。適合高端品牌 | ZprintPro智印港"
+              "snippet": "<img alt=\"香港白卡紙袋印刷 | 白卡紙材質，表面平整光滑，印刷效果佳。適合高端品牌 | ZprintPro智印云\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover group-hover:scale-105 transition-transform duration-500\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px;\" src=\"http://localhost:3456/images/products/white-card-bags.jpg\">",
+              "nodeLabel": "香港白卡紙袋印刷 | 白卡紙材質，表面平整光滑，印刷效果佳。適合高端品牌 | ZprintPro智印云"
             },
             "url": "http://localhost:3456/images/products/white-card-bags.jpg",
             "fromProtocol": true,
@@ -5923,8 +5923,8 @@
                 "width": 375,
                 "height": 375
               },
-              "snippet": "<img alt=\"香港防水貼紙印刷 | PVC材質防水貼紙，具有出色的防水、防曬、耐磨性能 | ZprintPro智印港\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover group-hover:scale-105 transition-transform duration-500\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px;\" src=\"http://localhost:3456/images/products/waterproof-stickers.jpg\">",
-              "nodeLabel": "香港防水貼紙印刷 | PVC材質防水貼紙，具有出色的防水、防曬、耐磨性能 | ZprintPro智印港"
+              "snippet": "<img alt=\"香港防水貼紙印刷 | PVC材質防水貼紙，具有出色的防水、防曬、耐磨性能 | ZprintPro智印云\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover group-hover:scale-105 transition-transform duration-500\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px;\" src=\"http://localhost:3456/images/products/waterproof-stickers.jpg\">",
+              "nodeLabel": "香港防水貼紙印刷 | PVC材質防水貼紙，具有出色的防水、防曬、耐磨性能 | ZprintPro智印云"
             },
             "url": "http://localhost:3456/images/products/waterproof-stickers.jpg",
             "fromProtocol": true,
@@ -5947,8 +5947,8 @@
                 "width": 375,
                 "height": 375
               },
-              "snippet": "<img alt=\"香港透明貼紙印刷 | 透明PET材質，貼合後呈現無感效果，完美展現產品本 | ZprintPro智印港\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover group-hover:scale-105 transition-transform duration-500\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px;\" src=\"http://localhost:3456/images/products/transparent-stickers.jpg\">",
-              "nodeLabel": "香港透明貼紙印刷 | 透明PET材質，貼合後呈現無感效果，完美展現產品本 | ZprintPro智印港"
+              "snippet": "<img alt=\"香港透明貼紙印刷 | 透明PET材質，貼合後呈現無感效果，完美展現產品本 | ZprintPro智印云\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover group-hover:scale-105 transition-transform duration-500\" style=\"position: absolute; height: 100%; width: 100%; inset: 0px;\" src=\"http://localhost:3456/images/products/transparent-stickers.jpg\">",
+              "nodeLabel": "香港透明貼紙印刷 | 透明PET材質，貼合後呈現無感效果，完美展現產品本 | ZprintPro智印云"
             },
             "url": "http://localhost:3456/images/products/transparent-stickers.jpg",
             "fromProtocol": true,

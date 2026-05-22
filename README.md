@@ -1,4 +1,4 @@
-# 智印港 ZPrintPro - Next.js 14 印刷服務網站
+﻿# 智印云 ZPrintPro - Next.js 14 印刷服務網站
 
 這是一個基於 Next.js 14 構建的三語言（繁體中文、英文、日文）印刷服務網站，包含 279 個靜態頁面，79 個 SKU 產品數據，完整的 SEO + GEO 優化。
 
@@ -235,7 +235,7 @@ node scripts/generate-sitemap.js
 
 ## 授權
 
-© 2024 智印港 ZPrintPro. All rights reserved.
+© 2024 智印云 ZPrintPro. All rights reserved.
 
 ## 聯絡
 

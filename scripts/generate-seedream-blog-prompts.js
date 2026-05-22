@@ -1,4 +1,4 @@
-/**
+﻿/**
  * 为 11 篇博客文章生成 Seedream 4.5 配图提示词
  * 每篇 1 张主题图（1200×630，适合 OG Image 复用）
  * 11 篇 × 3 语言 = 33 条提示词
@@ -14,7 +14,7 @@ const blogArticles = [
   {
     slug: 'company-intro',
     category: '公司新聞',
-    title: { 'zh-hk': '智印港印刷公司簡介', en: 'About ZprintPro', ja: 'ZprintPro会社概要' },
+    title: { 'zh-hk': '智印云印刷公司簡介', en: 'About ZprintPro', ja: 'ZprintPro会社概要' },
     theme: '現代化印刷工廠內部，海德堡印刷機運作中，專業技術人員操作設備',
     themeEn: 'Modern printing factory interior, Heidelberg press in operation, skilled technicians operating equipment',
     themeJa: '現代の印刷工場内部、ハイデルベルグ印刷機が稼働中、熟練技術者が設備を操作',
