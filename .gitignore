@@ -1,3 +1,77 @@
-.gitignore  
-build.bat  
-node_modules
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env*.local
+.env
+.env.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# IDE
+.vscode/
+.idea/
+
+# logs
+*.log
+
+# playwright
+playwright-user-data/
+
+# backup bundles
+*.bundle
+
+# traineddata
+*.traineddata
+
+# temp scripts / reports
+*-report.json
+seedream-progress*.json
+seedream-tasks.json
+seedream-current-prompt.txt
+auto-rename*.js
+rename-helper.js
+fix-prompts.js
+generate-queue.js
+fix-hreflang-schema.js
+analyze-xlsx.js
+convert-products.js
+fix-categories.js
+debug-regex.js
+sku-list.json
+seedream-prompts-all-skus.txt.bak
+
+# Kimi deployment backup
+Kimi_Agent_Deployment_Vite*/
+
+# SEEDREAM guide
+SEEDREAM-GUIDE.md
+
+# product image backups
+public/images/products-backup/
