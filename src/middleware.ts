@@ -160,6 +160,25 @@ export function middleware(request: NextRequest) {
     return thisResponseWithHeaders();
   }
 
+  // 优先级2.5：非ASCII字符路径（日文/中文）→ 重定向到日文首页
+  // 产品页价格标签中的日文字符（如 /個から、/個起）被搜索引擎错误索引为URL
+  // 这些路径不存在，需要301重定向避免404
+  const hasNonAscii = /[^\x00-\x7F]/.test(pathname);
+  if (hasNonAscii && !pathname.startsWith('/ja') && !pathname.startsWith('/zh-hk') && !pathname.startsWith('/en')) {
+    url.pathname = '/ja/';
+    return NextResponse.redirect(url, 301);
+  }
+
+  // 优先级2.6：{locale} 字面量路径 → 重定向到英文版
+  // 搜索引擎或外部工具错误地将模板变量 {locale} 当作实际URL路径
+  if (pathname.startsWith('/{locale}')) {
+    url.pathname = pathname.replace('/{locale}', '/en');
+    if (!url.pathname.endsWith('/')) {
+      url.pathname += '/';
+    }
+    return NextResponse.redirect(url, 301);
+  }
+
   // 优先级3：缺少 locale 前缀 → 添加默认 locale（如 /about/ → /zh-hk/about/，301）
   // 检查是否以已知 locale 开头
   const hasLocale = LOCALES.some(locale => pathname === locale.slice(0, -1) || pathname.startsWith(locale));

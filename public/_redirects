@@ -297,11 +297,34 @@
 /ja/quote/?product=electronics-packaging-box /ja/product/electronics-packaging-box/ 301
 
 # =====================
-# SECTION 8: 日文编码 URL
 # =====================
-/ja/枚から /ja/quote/?product=custom-stickers 301
+# SECTION 8: 日文/中文编码 URL 404 修复
+# 产品页面价格标签中的日文/中文字符被搜索引擎错误索引为URL路径
+# 修复策略：301重定向到对应的产品页面或首页
+# =====================
+/個から /ja/ 301
+/個起 /ja/ 301
+/枚から /ja/quote/?product=custom-stickers 301
+/張起 /ja/ 301
 
 # =====================
+# SECTION 8B: {locale} 字面量 URL 修复
+# 搜索引擎或外部工具错误地将模板变量 {locale} 当作实际URL路径
+# 修复策略：301重定向到正确的英文版页面
+# =====================
+/{locale}/product/gift-boxes /en/product/gift-boxes/ 301
+/{locale}/product/gift-boxes/ /en/product/gift-boxes/ 301
+/{locale}/product/kraft-paper-bags /en/product/kraft-paper-bags/ 301
+/{locale}/product/kraft-paper-bags/ /en/product/kraft-paper-bags/ 301
+/{locale}/product/* /en/product/:splat/ 301
+/{locale}/category/* /en/category/:splat/ 301
+/{locale}/* /en/:splat/ 301
+
+# =====================
+# SECTION 8C: Cloudflare 内部路径 404 修复
+# /cdn-cgi/ 是 Cloudflare 内部路径，不应被外部访问或索引
+# =====================
+/cdn-cgi/* / 301
 # SECTION 9: 其他 404 修复
 # =====================
 /zh-hk/blog/flyer-guide/ /zh-hk/blog/ 301

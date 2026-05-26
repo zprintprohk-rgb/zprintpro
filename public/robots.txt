@@ -7,6 +7,12 @@ Sitemap: https://zprintpro.com/sitemap.xml
 # Disallow admin paths
 Disallow: /admin/
 Disallow: /api/
+# Disallow Cloudflare internal paths
+Disallow: /cdn-cgi/
+
+# Disallow {locale} literal template variable paths (not real URLs)
+Disallow: /{locale}/
+
 Disallow: /_next/
 
 # Crawl-delay
