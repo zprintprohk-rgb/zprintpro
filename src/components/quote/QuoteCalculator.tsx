@@ -14,6 +14,7 @@ import { Locale } from '@/lib/seo';
 import { getProductTitle } from '@/data/products';
 import { convertPriceRangeString } from '@/lib/pricing';
 import { useCart } from '@/lib/cart-context';
+import { translateVariableLabel } from '@/lib/variable-i18n';
 import { Check, MessageCircle, ShoppingCart, Zap, ChevronRight } from 'lucide-react';
 
 interface QuoteCalculatorProps {
@@ -190,12 +191,13 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
   const hasFinishings = product.variables?.finishings && product.variables.finishings.length > 0;
   const hasQuantities = product.variables?.quantities && product.variables.quantities.length > 0;
 
-  // 获取当前选中的标签名
+  // 获取当前选中的标签名（含多语言翻译）
   const getSelectedLabel = (type: 'sizes' | 'materials' | 'finishings' | 'quantities', value: string | number) => {
     const list = product.variables?.[type];
     if (!list) return '';
     const item = list.find((i: any) => i.value === value);
-    return item?.label || '';
+    const rawLabel = item?.label || '';
+    return translateVariableLabel(rawLabel, locale, type === 'sizes' ? 'size' : type === 'materials' ? 'material' : type === 'finishings' ? 'finishing' : 'quantity');
   };
 
   return (
@@ -222,7 +224,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
                 }`}
               >
                 <div className="flex items-center justify-between">
-                  <span className="font-medium">{size.label}</span>
+                  <span className="font-medium">{translateVariableLabel(size.label, locale, 'size')}</span>
                   {config.size === size.value && (
                     <Check className="w-4 h-4 text-[#2873F5]" />
                   )}
@@ -262,7 +264,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
                 >
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2">
-                      <span className="font-medium">{material.label}</span>
+                      <span className="font-medium">{translateVariableLabel(material.label, locale, 'material')}</span>
                       {isPopular && !isSelected && (
                         <span className="text-[10px] bg-orange-100 text-orange-600 px-1.5 py-0.5 rounded font-medium">
                           {t.popular}
@@ -305,7 +307,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
                 }`}
               >
                 <div className="flex items-center justify-between">
-                  <span className="font-medium">{finishing.label}</span>
+                  <span className="font-medium">{translateVariableLabel(finishing.label, locale, 'finishing')}</span>
                   {config.finishing === finishing.value && (
                     <Check className="w-4 h-4 text-[#2873F5]" />
                   )}
@@ -348,7 +350,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
                   }`}
                 >
                   <div className="flex items-center gap-1.5">
-                    <span className="font-medium">{qty.label}</span>
+                    <span className="font-medium">{translateVariableLabel(qty.label, locale, 'quantity')}</span>
                     {isRecommend && !isSelected && qty.discount < 1 && (
                       <span className="text-[10px] bg-green-100 text-green-600 px-1.5 py-0.5 rounded font-medium">
                         {t.recommend}
