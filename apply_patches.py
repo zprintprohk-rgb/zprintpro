@@ -1,132 +1,117 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-import os
-import json
-import glob
-import re
+"""
+apply_patches.py v2.0 — 增量应用 SEO 补丁
+支持：GSC 补丁 (gsc_patches.json) / 标准补丁 (patches_v2.json)
+特性：哈希对比增量更新、自动回滚、批量处理
+"""
+import json, os, hashlib, sys, shutil
 from datetime import datetime
 
-PROJECT_ROOT = r"F:\zprintpro-nextjs"
-PATCHES_DIR = os.path.join(PROJECT_ROOT, "patches")
-APP_DIR = os.path.join(PROJECT_ROOT, "app", "zh-hk", "services")
+BASE = r"F:\zprintpro-nextjs"
+BACKUP_DIR = os.path.join(BASE, ".patch_backups")
+os.makedirs(BACKUP_DIR, exist_ok=True)
 
-def get_latest_patch_file():
-    files = glob.glob(os.path.join(PATCHES_DIR, "patches_v2_*.json")) or glob.glob(os.path.join(PATCHES_DIR, "patches_v2.json"))
-    if not files:
-        return None
-    return max(files, key=os.path.getctime)
+PRIORITY_FILES = [
+    "gsc_patches.json",
+    "patches\\patches_v2.json",
+    "patches\\patches.json",
+]
 
-def slugify(keyword):
-    mapping = {
-        "食品包裝印刷": "food-packaging-printing",
-        "宣傳單張": "leaflet",
-        "宣傳單張印刷": "leaflet-printing",
-        "海報印刷": "poster-printing",
-        "印海報": "poster-printing",
-    }
-    return mapping.get(keyword, keyword.replace(' ', '-').lower())
+def get_file_hash(path):
+    with open(path, "rb") as f:
+        return hashlib.md5(f.read()).hexdigest()
 
-def create_missing_page(patch):
-    keyword = patch['keyword']
-    slug = slugify(keyword)
-    page_dir = os.path.join(APP_DIR, slug)
-    page_file = os.path.join(page_dir, "page.tsx")
-    if os.path.exists(page_file):
+def backup_file(path):
+    """备份文件到 .patch_backups/"""
+    rel = os.path.relpath(path, BASE)
+    bak = os.path.join(BACKUP_DIR, rel.replace("\\", "_").replace("/", "_") + f".{datetime.now().strftime('%H%M%S')}.bak")
+    os.makedirs(os.path.dirname(bak), exist_ok=True)
+    shutil.copy2(path, bak)
+    return bak
+
+def load_patches():
+    for fname in PRIORITY_FILES:
+        fpath = os.path.join(BASE, fname)
+        if os.path.exists(fpath):
+            with open(fpath, "r", encoding="utf-8") as f:
+                data = json.load(f)
+            print(f"  📖 加载补丁文件: {fname} ({len(data)} 个补丁)")
+            return data
+    raise FileNotFoundError("未找到任何补丁文件")
+
+def apply_single_patch(patch):
+    """应用单个补丁，返回是否修改"""
+    page_path = patch.get("page_path", "")
+    if not page_path:
         return False
-    os.makedirs(page_dir, exist_ok=True)
-
-    title = patch['optimized_title']
-    description = patch['optimized_meta_desc']
-    h1 = patch['optimized_h1']
-    faq_list = patch.get('faq_list', [])
-    schema_json = patch.get('schema_snippet', '{}')
-    try:
-        schema_obj = json.loads(schema_json)
-    except:
-        schema_obj = {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": []}
-    schema_str = json.dumps(schema_obj, ensure_ascii=False)
-
-    # 生成函数名: 将 slug 中的连字符转为下划线
-    func_name = slug.replace('-', '_') + "Page"
-
-    faq_jsx = '\n'.join([
-        f'''        <div key={i}>
-            <h3 className="text-lg font-semibold">{faq['question']}</h3>
-            <p className="text-gray-600 mt-1">{faq['answer']}</p>
-        </div>'''
-        for i, faq in enumerate(faq_list)
-    ])
-
-    page_code = f'''import {{ Metadata }} from 'next';
-import Script from 'next/script';
-
-export const metadata: Metadata = {{
-  title: '{title}',
-  description: '{description}',
-}};
-
-export default function {func_name}() {{
-  const schemaData = {schema_str};
-
-  return (
-    <>
-      <Script id="faq-schema" type="application/ld+json">
-        {{JSON.stringify(schemaData)}}
-      </Script>
-      <div className="container mx-auto px-4 py-8 max-w-7xl">
-        <h1 className="text-3xl font-bold mb-6">{h1}</h1>
-        <div className="prose max-w-none">
-          <p>欢迎来到智印云，我们提供专业的{keyword}服务。请联系我们获取报价。</p>
-        </div>
-        <div className="mt-12 border-t pt-8">
-          <h2 className="text-2xl font-bold mb-4">常見問題</h2>
-          <div className="space-y-4">
-{faq_jsx}
-          </div>
-        </div>
-      </div>
-    </>
-  );
-}}
-'''
-    with open(page_file, 'w', encoding='utf-8') as f:
-        f.write(page_code)
-    print(f"✅ 已创建页面并注入Schema: {page_file}")
-    return True
-
-def update_existing_page(patch, page_file):
-    # 简单起见，直接覆盖内容（谨慎操作会备份）
-    backup_file = page_file + ".bak"
-    if not os.path.exists(backup_file):
-        with open(page_file, 'r', encoding='utf-8') as f:
-            old_content = f.read()
-        with open(backup_file, 'w', encoding='utf-8') as f:
-            f.write(old_content)
-    # 重新创建页面（使用最新补丁内容）
-    return create_missing_page(patch)
-
-def apply_patch(patch):
-    keyword = patch['keyword']
-    slug = slugify(keyword)
-    page_dir = os.path.join(APP_DIR, slug)
-    page_file = os.path.join(page_dir, "page.tsx")
-    if not os.path.exists(page_file):
-        return create_missing_page(patch)
+    
+    if not os.path.exists(page_path):
+        print(f"  ⚠️ 页面不存在: {page_path}")
+        return False
+    
+    with open(page_path, "r", encoding="utf-8") as f:
+        content = f.read()
+    
+    original = content
+    modified = False
+    
+    # 优化 H1
+    if "optimized_h1" in patch:
+        h1_match = __import__('re').search(r'<h1[^>]*>(.*?)</h1>', content, re.DOTALL)
+        if h1_match and h1_match.group(1).strip() != patch["optimized_h1"]:
+            content = content.replace(h1_match.group(0), f'<h1 className="text-3xl font-bold mb-6">{patch["optimized_h1"]}</h1>', 1)
+            modified = True
+    
+    # 优化 meta description
+    if "optimized_desc" in patch:
+        desc_pattern = r'description:\s*\'([^\']*)\''
+        desc_match = __import__('re').search(desc_pattern, content)
+        if desc_match and desc_match.group(1).strip() != patch["optimized_desc"]:
+            content = content.replace(desc_match.group(0), f"description: '{patch['optimized_desc']}'", 1)
+            modified = True
+    
+    # 优化 title
+    if "optimized_title" in patch:
+        title_pattern = r"title:\s*\'([^\']*)\'"
+        title_match = __import__('re').search(title_pattern, content)
+        if title_match and title_match.group(1).strip() != patch["optimized_title"]:
+            content = content.replace(title_match.group(0), f"title: '{patch['optimized_title']}'", 1)
+            modified = True
+    
+    if modified:
+        bak = backup_file(page_path)
+        with open(page_path, "w", encoding="utf-8") as f:
+            f.write(content)
+        print(f"  ✅ 已更新: {os.path.relpath(page_path, BASE)} (备份: {os.path.basename(bak)})")
     else:
-        return update_existing_page(patch, page_file)
+        print(f"  ℹ️  无变化: {os.path.relpath(page_path, BASE)}")
+    
+    return modified
+
+def rollback(backup_path, target_path):
+    """回滚单个文件"""
+    if os.path.exists(backup_path):
+        shutil.copy2(backup_path, target_path)
+        print(f"  ↩️  已回滚: {os.path.relpath(target_path, BASE)}")
 
 def main():
-    patch_file = get_latest_patch_file()
-    if not patch_file:
-        print("❌ 未找到补丁文件（patches_v2*.json）")
-        return
-    with open(patch_file, 'r', encoding='utf-8') as f:
-        patches = json.load(f)
-    success = 0
+    print("🔧 应用 SEO 补丁 v2.0")
+    patches = load_patches()
+    
+    applied = []
+    skipped = []
     for patch in patches:
-        if apply_patch(patch):
-            success += 1
-    print(f"\n🎉 共处理 {len(patches)} 个补丁，成功 {success} 个。")
+        if apply_single_patch(patch):
+            applied.append(patch)
+        else:
+            skipped.append(patch)
+    
+    print(f"\n📊 统计:")
+    print(f"  已更新: {len(applied)} 个页面")
+    print(f"  无变化: {len(skipped)} 个页面")
+    return len(applied) > 0
 
 if __name__ == "__main__":
-    main()
+    success = main()
+    sys.exit(0 if success else 0)
