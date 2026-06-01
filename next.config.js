@@ -2,8 +2,8 @@
 const path = require('path');
 
 const nextConfig = {
-  // output: 'export',
-  // distDir: 'out',
+  output: 'export',      // ✅ 恢复静态导出
+  distDir: 'out',        // ✅ 输出到 out 目录
   trailingSlash: true,
   images: {
     unoptimized: true,
