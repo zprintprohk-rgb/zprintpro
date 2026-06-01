@@ -15,6 +15,8 @@ import { generateHreflangTags } from '@/lib/hreflang';
 import { generateWebsiteJsonLd } from '@/lib/seo';
 import { getGaScript } from '@/lib/analytics';
 
+export const runtime = "edge";
+
 const inter = Inter({ subsets: ['latin'], display: 'swap' });
 
 export const metadata: Metadata = {
