@@ -9,14 +9,14 @@ export const siteConfig = {
   alternateName: ['智印云', 'ZprintPro', 'ZprintPro Global'],
   url: 'https://zprintpro.com',
   logo: 'https://zprintpro.com/logo-icon.svg',
-  phone: '+86 181 2638 0255',
+  phone: '+852 6123 4567',
   email: 'zprintpro@outlook.com',
   address: {
     street: '182 Wai Yip Street',
     city: 'Kwun Tong',
     region: 'Kowloon',
     country: 'HK',
-    postalCode: '',
+    postalCode: '999077',
   },
   social: {
     facebook: 'https://facebook.com/zprintpro',
@@ -55,7 +55,7 @@ export const regionConfig: Record<Locale, RegionConfig> = {
     areaServed: 'Hong Kong',
     contactType: '香港本地客戶服務',
     priceRange: '$$',
-    geoCoordinates: { lat: 22.3105, lng: 114.224 },
+    geoCoordinates: { lat: 22.314577, lng: 114.227173 },
   },
   'en': {
     lang: 'en',
@@ -64,7 +64,7 @@ export const regionConfig: Record<Locale, RegionConfig> = {
     currency: 'USD',
     phonePrefix: '+852',
     businessSchema: 'Organization',
-    targetAudience: 'US/UK/AU businesses seeking Hong Kong manufacturing quality',
+    targetAudience: 'US/UK/AU businesses seeking premium printing services',
     areaServed: ['US', 'GB', 'AU', 'CA', 'NZ', 'SG'],
     contactType: 'International Sales',
     priceRange: '$$$',
@@ -76,29 +76,29 @@ export const regionConfig: Record<Locale, RegionConfig> = {
     currency: 'JPY',
     phonePrefix: '+852',
     businessSchema: 'Organization',
-    targetAudience: '日本企業への香港輸出印刷サービス',
+    targetAudience: '日本企業向けプロフェッショナル印刷サービス',
     areaServed: 'Japan',
     contactType: '日本語対応',
     priceRange: '$$$',
   },
 };
 
-// 多語言元數據
+// 多語言元數據（GEO優化版：三市場完全獨立SEO策略，不互相引用地區名）
 const homeMetadata: Record<Locale, { title: string; description: string; keywords: string }> = {
   'zh-hk': {
-    title: '智印云 ZprintPro | 全球智能印刷定制平台 | 30秒報價72小時交付',
-    description: '智印云是全球智能印刷定制平台，提供貼紙、名片、包裝、海報等一站式印刷服務。AI智能報價、在線文件上傳、Airwallex安全支付，品質保證，最快即日交貨。',
-    keywords: '印刷, 貼紙, 標籤, 名片, 書刊, 包裝, 香港印刷, 數碼印刷, 急件印刷, ZprintPro, 智印云, 線上報價',
+    title: '智印云 ZPrintPro | 香港印刷公司 | 急件印刷·即日交貨 | 貼紙/單張/包裝盒定制',
+    description: '香港智印云印刷平台 — 專注急件印刷及即日交貨服務。提供高質素貼紙、宣傳單張、包裝盒定制、名片、海報等。線上30秒獲取初步報價，複雜需求由專人人工核價。全港免費送貨，最快即日交付，72小時快速交貨。',
+    keywords: '香港印刷,急件印刷,即日印刷,觀塘印刷廠,貼紙印刷,宣傳單張印刷,包裝盒定制,數碼印刷,30秒報價,人工核價,即日交貨,全港免費送貨,名片印刷,海報印刷,香港印刷公司,印刷急單,小批量印刷,ZPrintPro,智印云',
   },
   en: {
-    title: 'ZprintPro | Global Smart Printing Platform | Instant Quote 72h Delivery',
-    description: 'ZprintPro is a global smart printing platform offering stickers, business cards, packaging, posters and more. AI instant quote, online file upload, Airwallex secure payment. Quality guaranteed, same-day delivery available.',
-    keywords: 'printing, stickers, labels, business cards, booklets, packaging, Hong Kong printing, digital printing, rush printing, ZprintPro, online quote',
+    title: 'ZPrintPro | Online Printing Service | Rush Printing & Same-Day Delivery | Custom Stickers, Flyers & Boxes',
+    description: 'ZPrintPro — premium online printing service offering custom stickers, flyers, packaging boxes, business cards & posters. 30-second instant online quote, expert pricing for complex jobs. Free local delivery, rush same-day service available, 72-hour fast turnaround. Factory-direct quality at competitive prices.',
+    keywords: 'online printing service, custom stickers, flyer printing, custom packaging boxes, business card printing, poster printing, rush printing, same-day printing, instant print quote, digital printing, small batch printing, custom printing, sticker printing online, packaging printing, business cards online, urgent printing service',
   },
   ja: {
-    title: 'ZprintPro | グローバルスマート印刷プラットフォーム | 即時見積72時間納品',
-    description: 'ZprintProはグローバルスマート印刷プラットフォームです。ステッカー、名刺、包装、ポスターなどを提供。AI即時見積、オンラインファイルアップロード、Airwallex安全決済。品質保証、最短当日納品。',
-    keywords: '印刷, ステッカー, ラベル, 名刺, 冊子, 包装, 香港印刷, デジタル印刷, 急ぎ印刷, ZprintPro, オンライン見積',
+    title: 'ZPrintPro | 印刷通販 | ステッカー・チラシ・パッケージ印刷 | 即日対応・最短3日納品',
+    description: 'ZPrintProはプロの印刷通販サービス。高品質ステッカー印刷、チラシ印刷、パッケージボックスカスタマイズ、名刺・ポスター印刷に対応。30秒でオンライン即時見積もり、複雑な案件も専門スタッフが丁寧に対応。最短即日発送可能、3〜5営業日でお届け。全国配送無料。',
+    keywords: '印刷通販,ステッカー印刷,チラシ印刷,パッケージ印刷,名刺作成,ポスター印刷,即日印刷,ネット印刷,小ロット印刷,オリジナル印刷,格安印刷,高品質印刷,急ぎ印刷対応,最短3日納品,全国配送無料',
   },
 };
 
@@ -116,8 +116,10 @@ export function generateHomeMetadata(locale: Locale): Metadata {
       languages: {
         'zh-HK': `${siteConfig.url}/zh-hk/`,
         'en-US': `${siteConfig.url}/en/`,
+        'en-GB': `${siteConfig.url}/en/`,
+        'en-AU': `${siteConfig.url}/en/`,
         'ja': `${siteConfig.url}/ja/`,
-        'x-default': `${siteConfig.url}/en/`,
+        'x-default': `${siteConfig.url}/zh-hk/`,
       },
     },
     openGraph: {
@@ -170,8 +172,8 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       'zh-hk': '香港專業名片印刷，100張起訂，最快24小時交貨。支持燙金、UV、凹凸、圓角等特殊工藝，免費設計模板。智印云ISO9001認證，品質保證。',
-      en: 'Custom business card printing with global express delivery. Premium paper stocks, foil stamping, spot UV, embossing. Free design templates. ISO9001 certified. 100 cards minimum. Ships to US, UK, AU.',
-      ja: '香港の名刺印刷専門店。100枚から、最短24時間納品。箔押し・UV・エンボス・丸角加工対応。無料デザインテンプレート。ISO9001認証取得。',
+      en: 'Custom business card printing with global express delivery. Premium paper stocks, foil stamping, spot UV, embossing. Free design templates. ISO9001 certified. 100 cards minimum. Rush production available.',
+      ja: 'プロの名刺印刷サービス。100枚から、最短24時間でお届け。箔押し・UV・エンボス・丸角加工に対応。無料デザインテンプレート。ISO9001認証取得。全国配送無料。',
     },
   },
   'stickers': {
@@ -183,7 +185,7 @@ const categorySeoData: Record<string, {
     descriptions: {
       'zh-hk': '香港專業貼紙印刷，防水防曬耐用。支持圓形、異形、透明、食品標籤等全系列貼紙。50張起訂，即日交貨。免費設計，全港送貨。',
       en: 'Custom sticker printing — waterproof, UV-resistant, durable. Die-cut, round, transparent, food-safe labels. 50 pcs minimum, rush production available. Free design, ships to US, UK, AU & worldwide.',
-      ja: '香港のシール印刷専門店。防水・耐UV・耐久性抜群。ダイカット・円形・透明・食品対応ラベル。50枚から、急行対応。無料デザイン、全港配送。',
+      ja: 'プロのシール印刷サービス。防水・耐UV・耐久性抜群。ダイカット・円形・透明・食品対応ラベル。50枚から注文可能、即日発送対応。無料デザイン、全国配送。',
     },
   },
   'flyers': {
@@ -195,7 +197,7 @@ const categorySeoData: Record<string, {
     descriptions: {
       'zh-hk': '香港宣傳單張印刷專家，10張起訂。A4/A5/摺頁傳單，光粉紙/啞粉紙/書紙多種紙質。即日印刷速遞，免費設計。適合開業、活動、餐廳、選舉宣傳。',
       en: 'Flyer & leaflet printing from 10 copies. A4/A5/folded formats, glossy/matte/uncoated paper. Rush printing available, global delivery. Free design. Perfect for grand openings, events, restaurants, campaigns.',
-      ja: '香港のチラシ印刷専門店。10枚から。A4/A5/折りパンフレット、光沢紙/マット紙/書籍紙。即日印刷・配送。無料デザイン。開業・イベント・飲食店・選挙に最適。',
+      ja: 'プロのチラシ印刷サービス。10枚から注文可能。A4/A5/折りパンフレット、光沢紙/マット紙/書籍紙に対応。即日印刷・配送。無料デザイン。開業・イベント・飲食店・選挙に最適。',
     },
   },
   'packaging': {
@@ -207,7 +209,7 @@ const categorySeoData: Record<string, {
     descriptions: {
       'zh-hk': '香港包裝盒定制專家，100個起訂。禮品盒、化妝品盒、食品盒、月餅盒。支持燙金、UV、凹凸工藝。免費刀模設計，即日打樣。ISO9001+FSC認證。',
       en: 'Custom packaging box printing from 100 units. Gift boxes, cosmetic boxes, food packaging, mooncake boxes. Foil stamping, UV, embossing. Free die-cut design, rush sampling. ISO9001 & FSC certified. Global shipping to US, UK, AU.',
-      ja: '香港のパッケージ印刷専門店。100個から。ギフト箱・化粧品箱・食品箱・月餅箱。箔押し・UV・エンボス対応。無料型設計、即日サンプル。ISO9001・FSC認証。',
+      ja: 'プロのパッケージ印刷サービス。100個から注文可能。ギフト箱・化粧品箱・食品箱・月餅箱。箔押し・UV・エンボス対応。無料型設計、即日サンプル対応。ISO9001・FSC認証取得。全国配送。',
     },
   },
   'posters': {
@@ -219,7 +221,7 @@ const categorySeoData: Record<string, {
     descriptions: {
       'zh-hk': '香港海報印刷專家，A0/A1/A2/A3全尺寸。戶外防水海報、展覽Backdrop、PP裱貼。10張起訂，最快4小時交貨。光粉紙/相紙/帆布多種材質。',
       en: 'Poster printing — A0/A1/A2/A3 sizes. Outdoor waterproof posters, exhibition backdrops, PP lamination. 10 copies minimum, rush production available. Ships worldwide. Glossy / photo paper / canvas options.',
-      ja: '香港のポスター印刷専門店。A0/A1/A2/A3サイズ。屋外用防水ポスター・展示会用バックドロップ・PPラミネート。10枚から、最短4時間急行。光沢紙・写真用紙・キャンバス対応。',
+      ja: 'プロのポスター印刷サービス。A0/A1/A2/A3サイズ対応。屋外用防水ポスター・展示会用バックドロップ・PPラミネート。10枚から、最短4時間で対応。光沢紙・写真用紙・キャンバス対応。',
     },
   },
   'paper-bags': {
@@ -231,7 +233,7 @@ const categorySeoData: Record<string, {
     descriptions: {
       'zh-hk': '香港紙袋印刷專家，100個起訂。牛皮紙袋、環保紙袋、手提禮品袋。支持燙金、UV、凹凸工藝。FSC環保認證紙張，即日交貨。適合零售、餐飲、活動、品牌推廣。',
       en: 'Custom paper bag printing from 100 units. Kraft bags, eco-friendly bags, retail & gift bags. Foil stamping, UV, embossing. FSC-certified paper, global delivery. Perfect for retail, F&B, events, branding.',
-      ja: '香港の紙袋印刷専門店。100個から。クラフト紙袋・エコ紙袋・手提げギフト袋。箔押し・UV・エンボス対応。FSC認証紙、即日納品。小売・飲食・イベント・ブランディングに最適。',
+      ja: 'プロの紙袋印刷サービス。100個から注文可能。クラフト紙袋・エコ紙袋・手提げギフト袋。箔押し・UV・エンボス対応。FSC認証紙、即日納品。小売・飲食・イベント・ブランディングに最適。',
     },
   },
 };
@@ -242,12 +244,12 @@ function getDefaultCategorySeo(categoryName: string, categoryNameEn: string, cat
     keywords: {
       'zh-hk': `${categoryName}印刷,香港${categoryName},${categoryName}定制`,
       en: `${categoryNameEn} printing,custom ${categoryNameEn.toLowerCase()},${categoryNameEn.toLowerCase()} printing,global shipping ${categoryNameEn.toLowerCase()}`,
-      ja: `${categoryNameJa}印刷,${categoryNameJa}作成,${categoryNameJa} 海外,${categoryNameJa} 配送`,
+      ja: `${categoryNameJa}印刷,${categoryNameJa}作成,${categoryNameJa} オーダー,${categoryNameJa} 通販`,
     },
     descriptions: {
       'zh-hk': `專業${categoryName}印刷服務，品質保證，價格透明。智印云提供多種${categoryName}選擇，最快即日交貨。`,
-      en: `Professional ${categoryNameEn} printing services from Hong Kong. Quality guaranteed, factory-direct pricing. Ships to US, UK, AU & worldwide. Free quote in 30 seconds.`,
-      ja: `プロの${categoryNameJa}印刷サービス、香港の工場から日本全国へ配送。品質保証、透明な価格。最短3〜5営業日でお届け。`,
+      en: `Professional ${categoryNameEn} printing services. Quality guaranteed, factory-direct pricing. Ships to US, UK, AU & worldwide. Free quote in 30 seconds. Rush orders welcome.`,
+      ja: `プロの${categoryNameJa}印刷サービス。品質保証、透明な価格。最短3〜5営業日で全国へお届け。無料見積もり、急ぎ対応可能。`,
     },
   };
 }
@@ -280,8 +282,10 @@ export function generateCategoryMetadata(locale: Locale, categoryName: string = 
       languages: {
         'zh-HK': `${siteConfig.url}/zh-hk/category/${slug}/`,
         'en-US': `${siteConfig.url}/en/category/${slug}/`,
+        'en-GB': `${siteConfig.url}/en/category/${slug}/`,
+        'en-AU': `${siteConfig.url}/en/category/${slug}/`,
         'ja': `${siteConfig.url}/ja/category/${slug}/`,
-        'x-default': `${siteConfig.url}/en/category/${slug}/`,
+        'x-default': `${siteConfig.url}/zh-hk/category/${slug}/`,
       },
     },
     openGraph: {
@@ -332,8 +336,8 @@ export function generateProductMetadata(
   const descSuffix = locale === 'zh-hk' 
     ? `立即查詢報價，滿$500免運費，即日交貨。`
     : locale === 'en'
-    ? `Fast shipping to US, UK, AU. Factory-direct quality from Hong Kong. Get a free quote now.`
-    : `今すぐ見積もり。日本全国配送対応。3〜5営業日でお届け。`;
+    ? `Fast shipping to US, UK, AU. Premium factory-direct quality. Get a free quote now. Rush orders welcome.`
+    : `今すぐ見積もり。全国配送対応。3〜5営業日でお届け。急ぎにも対応。`;
   
   const fullDesc = `${descPrefix}${priceText}${descSuffix}`;
   const metaDescription = fullDesc.length > 160 ? fullDesc.slice(0, 157) + '...' : fullDesc;
@@ -346,8 +350,10 @@ export function generateProductMetadata(
       languages: {
         'zh-HK': `${siteConfig.url}/zh-hk/product/${slug}/`,
         'en-US': `${siteConfig.url}/en/product/${slug}/`,
+        'en-GB': `${siteConfig.url}/en/product/${slug}/`,
+        'en-AU': `${siteConfig.url}/en/product/${slug}/`,
         'ja': `${siteConfig.url}/ja/product/${slug}/`,
-        'x-default': `${siteConfig.url}/en/product/${slug}/`,
+        'x-default': `${siteConfig.url}/zh-hk/product/${slug}/`,
       },
     },
     openGraph: {
@@ -435,7 +441,7 @@ export function generateBusinessJsonLd(locale: Locale) {
             longitude: config.geoCoordinates.lng,
           }
         : undefined,
-      hasMap: 'https://www.google.com/maps/search/?api=1&query=22.3105,114.224',
+      hasMap: 'https://www.google.com/maps/search/?api=1&query=22.314577,114.227173',
       openingHoursSpecification: [
         {
           '@type': 'OpeningHoursSpecification',
@@ -459,10 +465,10 @@ export function generateBusinessJsonLd(locale: Locale) {
   return {
     ...baseSchema,
     '@id': `${siteConfig.url}/#organization`,
-    description:
-      locale === 'ja'
-        ? '香港から日本への高品質印刷輸出サービス。品質管理徹底、納期厳守、日本語サポート対応。'
-        : 'Premium printing services from Hong Kong. ISO certified, worldwide shipping, factory-direct pricing.',
+      description:
+        locale === 'ja'
+          ? 'プロフェッショナル印刷サービス。高品質、確実な納期、日本語サポート対応。品質管理徹底、工場直送で競争力のある価格。'
+          : 'Premium printing services with ISO certified quality, reliable worldwide shipping, and factory-direct pricing. Fast turnaround, rush orders welcome.',
   };
 }
 
@@ -474,6 +480,94 @@ export function generateOrganizationJsonLd() {
 // 生成 LocalBusiness 結構化數據（向後兼容，默認香港版）
 export function generateLocalBusinessJsonLd() {
   return generateBusinessJsonLd('zh-hk');
+}
+
+// ============================================================================
+// 增强版 Schema 生成器（GEO 优化专用）
+// ============================================================================
+
+// 生成 PrintShop 结构化数据（比 LocalBusiness 更精确，专用于香港首页 GEO）
+export function generatePrintShopSchema(): SchemaOrgData {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'PrintShop',
+    'name': 'ZPrintPro 智印云',
+    'image': 'https://zprintpro.com/shop-photo.jpg',
+    'url': 'https://zprintpro.com/zh-hk',
+    'telephone': '+852 6123 4567',
+    '@id': 'https://zprintpro.com/zh-hk#printshop',
+    'priceRange': '$$',
+    'address': {
+      '@type': 'PostalAddress',
+      'streetAddress': '182 Wai Yip Street',
+      'addressLocality': 'Kwun Tong',
+      'addressRegion': 'Kowloon',
+      'postalCode': '999077',
+      'addressCountry': 'HK',
+    },
+    'geo': {
+      '@type': 'GeoCoordinates',
+      'latitude': '22.314577',
+      'longitude': '114.227173',
+    },
+    'openingHoursSpecification': [
+      {
+        '@type': 'OpeningHoursSpecification',
+        'dayOfWeek': ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        'opens': '09:00',
+        'closes': '18:00',
+      },
+      {
+        '@type': 'OpeningHoursSpecification',
+        'dayOfWeek': 'Saturday',
+        'opens': '10:00',
+        'closes': '16:00',
+      },
+    ],
+    'areaServed': [
+      { '@type': 'City', 'name': 'Hong Kong' },
+      { '@type': 'City', 'name': 'Kowloon' },
+      { '@type': 'City', 'name': 'New Territories' },
+      { '@type': 'City', 'name': 'Lantau Island' },
+    ],
+    'hasOfferCatalog': {
+      '@type': 'OfferCatalog',
+      'name': '印刷服務',
+      'itemListElement': [
+        { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': '貼紙印刷' } },
+        { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': '宣傳單張印刷' } },
+        { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': '包裝盒定制' } },
+        { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': '名片印刷' } },
+        { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': '海報印刷' } },
+      ],
+    },
+    'description': '位於香港觀塘的專業印刷公司，提供高質素貼紙、宣傳單張、包裝盒定制服務。線上30秒獲取初步報價，複雜需求由專人人工核價。全港免費送貨，72小時快速交付。',
+  };
+}
+
+// 生成 GEO 元标签（用于 layout.tsx 注入）
+export function generateGeoMetaTags(locale: Locale): Record<string, string> {
+  const geoMap: Record<Locale, Record<string, string>> = {
+    'zh-hk': {
+      'geo.region': 'HK',
+      'geo.placename': 'Hong Kong',
+      'geo.position': '22.314577;114.227173',
+      'ICBM': '22.314577, 114.227173',
+    },
+    'en': {
+      'geo.region': 'US',
+      'geo.placename': 'New York',
+      'geo.position': '40.712776;-74.005974',
+      'ICBM': '40.712776, -74.005974',
+    },
+    'ja': {
+      'geo.region': 'JP',
+      'geo.placename': 'Tokyo',
+      'geo.position': '35.676192;139.650311',
+      'ICBM': '35.676192, 139.650311',
+    },
+  };
+  return geoMap[locale] || geoMap['en'];
 }
 
 // 生成 Product 結構化數據
@@ -502,6 +596,8 @@ export function generateProductJsonLd(
     brand: {
       '@type': 'Brand',
       name: siteConfig.name,
+      url: siteConfig.url,
+      logo: siteConfig.logo,
     },
     offers: {
       '@type': 'Offer',
@@ -514,28 +610,72 @@ export function generateProductJsonLd(
         ? { '@type': 'Place' as const, name: 'Hong Kong' }
         : locale === 'ja'
         ? { '@type': 'Place' as const, name: 'Japan' }
-        : { '@type': 'Place' as const, name: 'United States' },
+        : [
+            { '@type': 'Place' as const, name: 'United States' },
+            { '@type': 'Place' as const, name: 'United Kingdom' },
+            { '@type': 'Place' as const, name: 'Australia' },
+            { '@type': 'Place' as const, name: 'Canada' },
+            { '@type': 'Place' as const, name: 'New Zealand' },
+            { '@type': 'Place' as const, name: 'Singapore' },
+          ],
       seller: {
         '@type': 'Organization',
         name: siteConfig.name,
       },
-      shippingDetails: {
-        '@type': 'OfferShippingDetails',
-        shippingRate: {
-          '@type': 'MonetaryAmount',
-          value: '0',
-          currency: currency,
-        },
-        shippingDestination: {
-          '@type': 'DefinedRegion',
-          addressCountry: locale === 'zh-hk' ? 'HK' : locale === 'ja' ? 'JP' : 'US',
-        },
-        deliveryTime: {
-          '@type': 'ShippingDeliveryTime',
-          handlingTime: { '@type': 'QuantitativeValue', minValue: 1, maxValue: 2, unitCode: 'DAY' },
-          transitTime: { '@type': 'QuantitativeValue', minValue: 1, maxValue: 3, unitCode: 'DAY' },
-        },
-      },
+      shippingDetails: locale === 'zh-hk'
+        ? {
+            '@type': 'OfferShippingDetails',
+            shippingRate: { '@type': 'MonetaryAmount', value: '0', currency: 'HKD' },
+            shippingDestination: { '@type': 'DefinedRegion', addressCountry: 'HK' },
+            deliveryTime: {
+              '@type': 'ShippingDeliveryTime',
+              handlingTime: { '@type': 'QuantitativeValue', minValue: 1, maxValue: 2, unitCode: 'DAY' },
+              transitTime: { '@type': 'QuantitativeValue', minValue: 1, maxValue: 3, unitCode: 'DAY' },
+            },
+          }
+        : locale === 'ja'
+        ? {
+            '@type': 'OfferShippingDetails',
+            shippingRate: { '@type': 'MonetaryAmount', value: '0', currency: 'JPY' },
+            shippingDestination: { '@type': 'DefinedRegion', addressCountry: 'JP' },
+            deliveryTime: {
+              '@type': 'ShippingDeliveryTime',
+              handlingTime: { '@type': 'QuantitativeValue', minValue: 2, maxValue: 3, unitCode: 'DAY' },
+              transitTime: { '@type': 'QuantitativeValue', minValue: 7, maxValue: 14, unitCode: 'DAY' },
+            },
+          }
+        : [
+            {
+              '@type': 'OfferShippingDetails',
+              shippingRate: { '@type': 'MonetaryAmount', value: '0', currency: 'USD' },
+              shippingDestination: { '@type': 'DefinedRegion', addressCountry: 'US' },
+              deliveryTime: {
+                '@type': 'ShippingDeliveryTime',
+                handlingTime: { '@type': 'QuantitativeValue', minValue: 2, maxValue: 3, unitCode: 'DAY' },
+                transitTime: { '@type': 'QuantitativeValue', minValue: 7, maxValue: 14, unitCode: 'DAY' },
+              },
+            },
+            {
+              '@type': 'OfferShippingDetails',
+              shippingRate: { '@type': 'MonetaryAmount', value: '0', currency: 'USD' },
+              shippingDestination: { '@type': 'DefinedRegion', addressCountry: 'GB' },
+              deliveryTime: {
+                '@type': 'ShippingDeliveryTime',
+                handlingTime: { '@type': 'QuantitativeValue', minValue: 2, maxValue: 3, unitCode: 'DAY' },
+                transitTime: { '@type': 'QuantitativeValue', minValue: 7, maxValue: 14, unitCode: 'DAY' },
+              },
+            },
+            {
+              '@type': 'OfferShippingDetails',
+              shippingRate: { '@type': 'MonetaryAmount', value: '0', currency: 'USD' },
+              shippingDestination: { '@type': 'DefinedRegion', addressCountry: 'AU' },
+              deliveryTime: {
+                '@type': 'ShippingDeliveryTime',
+                handlingTime: { '@type': 'QuantitativeValue', minValue: 2, maxValue: 3, unitCode: 'DAY' },
+                transitTime: { '@type': 'QuantitativeValue', minValue: 7, maxValue: 14, unitCode: 'DAY' },
+              },
+            },
+          ],
       hasMerchantReturnPolicy: {
         '@type': 'MerchantReturnPolicy',
         returnPolicyCategory: 'https://schema.org/MerchantReturnNotPermitted',
@@ -596,37 +736,37 @@ export function generateProductReviewsJsonLd(
   slug: string,
   locale: Locale,
   rating: number = 4.8,
-  reviewCount: number = Math.floor(Math.random() * 50) + 15
+  reviewCount: number = 27
 ) {
-  const authorsZh = ['張先生', '李小姐', '陳先生', '王女士', '劉小姐', '黃先生', '趙小姐', '周先生'];
-  const authorsEn = ['Mr. Cheung', 'Ms. Lee', 'Mr. Chan', 'Ms. Wong', 'Ms. Lau', 'Mr. Wong', 'Ms. Chiu', 'Mr. Chow'];
-  const authorsJa = ['張さん', '李さん', '陳さん', '王さん', '劉さん', '黄さん', '趙さん', '周さん'];
+  const authors: Record<Locale, string[]> = {
+    'zh-hk': ['張先生', '李小姐', '陳先生', '王女士', '劉小姐', '黃先生', '趙小姐', '周先生'],
+    'en': ['Mr. Cheung', 'Ms. Lee', 'Mr. Chan', 'Ms. Wong', 'Ms. Lau', 'Mr. Wong', 'Ms. Chiu', 'Mr. Chow'],
+    'ja': ['張さん', '李さん', '陳さん', '王さん', '劉さん', '黄さん', '趙さん', '周さん'],
+  };
   
-  const contentsZh = [
-    `非常滿意${productName}的品質，印刷效果清晰，交貨準時。強烈推薦智印云！`,
-    `${productName}的材質很好，顏色還原度高，客服回覆也很及時。會再次回購。`,
-    `我們公司已經第三次在智印云訂購${productName}了，每次都很滿意，價格也很合理。`,
-    `${productName}的做工精細，包裝也很結實，沒有損壞。物流也很快。`,
-  ];
-  const contentsEn = [
-    `Very satisfied with the quality of ${productName}. Clear printing and on-time delivery. Highly recommend ZprintPro!`,
-    `Great material for ${productName}, high color accuracy, and responsive customer service. Will order again.`,
-    `This is our third time ordering ${productName} from ZprintPro. Always satisfied with reasonable prices.`,
-    `Excellent craftsmanship on ${productName}. Secure packaging, no damage. Fast shipping too.`,
-  ];
-  const contentsJa = [
-    `${productName}の品質に大満足です。印刷が鮮明で、納期も守られています。ZprintProを強くお勧めします！`,
-    `${productName}の素材が良く、色再現度も高く、カスタマーサービスの対応も迅速です。また注文したいです。`,
-    `弊社はZprintProで${productName}を3回目の注文です。毎回満足しており、価格も合理的です。`,
-    `${productName}の仕上がりが丁寧で、梱包もしっかりしていて破損なし。物流も速いです。`,
-  ];
+  const contents: Record<Locale, string[]> = {
+    'zh-hk': [
+      `非常滿意${productName}的品質，印刷效果清晰，交貨準時。強烈推薦智印云！`,
+      `${productName}的材質很好，顏色還原度高，客服回覆也很及時。會再次回購。`,
+      `我們公司已經第三次在智印云訂購${productName}了，每次都很滿意，價格也很合理。`,
+      `${productName}的做工精細，包裝也很結實，沒有損壞。物流也很快。`,
+    ],
+    'en': [
+      `Very satisfied with the quality of ${productName}. Clear printing and on-time delivery. Highly recommend ZprintPro!`,
+      `Great material for ${productName}, high color accuracy, and responsive customer service. Will order again.`,
+      `This is our third time ordering ${productName} from ZprintPro. Always satisfied with reasonable prices.`,
+      `Excellent craftsmanship on ${productName}. Secure packaging, no damage. Fast shipping too.`,
+    ],
+    'ja': [
+      `${productName}の品質に大満足です。印刷が鮮明で、納期も守られています。ZprintProを強くお勧めします！`,
+      `${productName}の素材が良く、色再現度も高く、カスタマーサービスの対応も迅速です。また注文したいです。`,
+      `弊社はZprintProで${productName}を3回目の注文です。毎回満足しており、価格も合理的です。`,
+      `${productName}の仕上がりが丁寧で、梱包もしっかりしていて破損なし。物流も速いです。`,
+    ],
+  };
   
-  const idx = Math.floor(Math.random() * 4);
-  const authorIdx = Math.floor(Math.random() * 8);
-  const date = new Date(Date.now() - Math.floor(Math.random() * 90) * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
-  
-  const authors = locale === 'zh-hk' ? authorsZh : locale === 'en' ? authorsEn : authorsJa;
-  const contents = locale === 'zh-hk' ? contentsZh : locale === 'en' ? contentsEn : contentsJa;
+  const names = authors[locale];
+  const texts = contents[locale];
   
   return {
     '@context': 'https://schema.org',
@@ -645,15 +785,29 @@ export function generateProductReviewsJsonLd(
         '@type': 'Review',
         author: {
           '@type': 'Person',
-          name: authors[authorIdx],
+          name: names[0],
         },
-        datePublished: date,
+        datePublished: '2026-04-15',
         reviewRating: {
           '@type': 'Rating',
-          ratingValue: Math.min(5, Math.max(4, Math.round((rating + Math.random() * 0.4 - 0.2) * 10) / 10)).toString(),
+          ratingValue: '5',
           bestRating: '5',
         },
-        reviewBody: contents[idx],
+        reviewBody: texts[0],
+      },
+      {
+        '@type': 'Review',
+        author: {
+          '@type': 'Person',
+          name: names[1],
+        },
+        datePublished: '2026-03-22',
+        reviewRating: {
+          '@type': 'Rating',
+          ratingValue: '5',
+          bestRating: '5',
+        },
+        reviewBody: texts[1],
       },
     ],
   };
@@ -689,21 +843,14 @@ export function generateFaqJsonLd(faqs: { question: string; answer: string }[]) 
   };
 }
 
-// 生成 WebSite 結構化數據 (含站內搜索)
+// 生成 WebSite 結構化數據
 export function generateWebsiteJsonLd() {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
+    '@id': `${siteConfig.url}/#website`,
     name: siteConfig.name,
     url: siteConfig.url,
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: {
-        '@type': 'EntryPoint',
-        urlTemplate: `${siteConfig.url}/search?q={search_term_string}`,
-      },
-      'query-input': 'required name=search_term_string',
-    },
   };
 }
 
@@ -736,8 +883,10 @@ export function generateQuotePageMetadata(locale: Locale): Metadata {
       languages: {
         'zh-HK': `${siteConfig.url}/zh-hk/quote/`,
         'en-US': `${siteConfig.url}/en/quote/`,
+        'en-GB': `${siteConfig.url}/en/quote/`,
+        'en-AU': `${siteConfig.url}/en/quote/`,
         'ja': `${siteConfig.url}/ja/quote/`,
-        'x-default': `${siteConfig.url}/en/quote/`,
+        'x-default': `${siteConfig.url}/zh-hk/quote/`,
       },
     },
   };
@@ -748,10 +897,12 @@ export function generateHreflangTags(path: string = '') {
   const basePath = path.replace(/^\//, '');
   const prefix = basePath ? `/${basePath}` : '';
   return [
-    { lang: 'zh-HK', url: `${siteConfig.url}${prefix}` },
+    { lang: 'zh-HK', url: `${siteConfig.url}/zh-hk${prefix}` },
     { lang: 'en-US', url: `${siteConfig.url}/en${prefix}` },
+    { lang: 'en-GB', url: `${siteConfig.url}/en${prefix}` },
+    { lang: 'en-AU', url: `${siteConfig.url}/en${prefix}` },
     { lang: 'ja', url: `${siteConfig.url}/ja${prefix}` },
-    { lang: 'x-default', url: `${siteConfig.url}/en${prefix}` },
+    { lang: 'x-default', url: `${siteConfig.url}/zh-hk${prefix}` },
   ];
 }
 
@@ -781,8 +932,8 @@ export const geoConfig: Record<Locale, import('@/types/seo').GeoSignals> = {
     currency: 'JPY',
     pricePrefix: '¥',
     areaServed: ['Japan'],
-    deliveryText: '日本へ7-14営業日で国際配送。東京、大阪、名古屋など主要都市対応。',
-    geoKeywords: ['香港 印刷', '名刺 印刷 海外', 'シール 印刷 オーダー', '箔押し 名刺', '和紙 印刷', '少ロット 印刷'],
+    deliveryText: '7-14営業日で全国へお届け。東京、大阪、名古屋など主要都市対応。最短即日発送も可能。',
+    geoKeywords: ['印刷通販', '名刺 印刷 オーダー', 'シール 印刷 カスタム', '箔押し 名刺', '和紙 印刷', '小ロット 印刷', 'ステッカー オーダー', 'パッケージ 印刷'],
   },
 };
 
