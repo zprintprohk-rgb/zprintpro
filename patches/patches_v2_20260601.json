@@ -1,0 +1,153 @@
+[
+  {
+    "keyword": "食品包裝印刷",
+    "impressions": 108,
+    "rank": 25.45,
+    "intent": "commercial",
+    "optimized_title": "食品包裝印刷｜食品級包裝盒/袋訂製｜免費打樣｜智印云",
+    "optimized_h1": "香港食品包裝印刷｜智印云一站式定制",
+    "optimized_meta_desc": "專業香港食品包裝印刷服務，提供食品包裝印刷盒/袋/貼紙定制。小批量OK，3天交貨，免費設計打樣。立即報價！",
+    "faq_list": [
+      {
+        "question": "食品包裝印刷需要什麼認證？",
+        "answer": "智印云 ZPrintPro 提供專業食品包裝印刷服務。食品包裝印刷需要什麼認證？ 我們的最小起訂量為500個，可提供食品級認證，全港免費送貨。"
+      },
+      {
+        "question": "香港邊度有得印食品包裝盒？",
+        "answer": "智印云 ZPrintPro 提供專業食品包裝印刷服務。香港邊度有得印食品包裝盒？ 我們的最小起訂量為500個，可提供食品級認證，全港免費送貨。"
+      },
+      {
+        "question": "最小起訂量幾多？",
+        "answer": "智印云 ZPrintPro 提供專業食品包裝印刷服務。最小起訂量幾多？ 我們的最小起訂量為500個，可提供食品級認證，全港免費送貨。"
+      }
+    ],
+    "schema_snippet": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"FAQPage\",\n  \"mainEntity\": [\n    {\n      \"@type\": \"Question\",\n      \"name\": \"食品包裝印刷需要什麼認證？\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"智印云 ZPrintPro 提供專業食品包裝印刷服務。食品包裝印刷需要什麼認證？ 我們的最小起訂量為500個，可提供食品級認證，全港免費送貨。\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"香港邊度有得印食品包裝盒？\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"智印云 ZPrintPro 提供專業食品包裝印刷服務。香港邊度有得印食品包裝盒？ 我們的最小起訂量為500個，可提供食品級認證，全港免費送貨。\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"最小起訂量幾多？\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"智印云 ZPrintPro 提供專業食品包裝印刷服務。最小起訂量幾多？ 我們的最小起訂量為500個，可提供食品級認證，全港免費送貨。\"\n      }\n    }\n  ]\n}",
+    "internal_links": [],
+    "local_entities": [
+      "港鐵沿線",
+      "新界",
+      "九龍",
+      "香港島"
+    ]
+  },
+  {
+    "keyword": "宣傳單張",
+    "impressions": 84,
+    "rank": 42.9,
+    "intent": "transactional",
+    "optimized_title": "宣傳單張｜500張起印｜免費設計｜智印云",
+    "optimized_h1": "香港宣傳單張｜智印云一站式定制",
+    "optimized_meta_desc": "專業香港宣傳單張服務，提供宣傳單張盒/袋/貼紙定制。小批量OK，3天交貨，免費設計打樣。立即報價！",
+    "faq_list": [
+      {
+        "question": "宣傳單張印刷幾錢？",
+        "answer": "智印云 ZPrintPro 提供專業宣傳單張服務。宣傳單張印刷幾錢？ 我們的最小起訂量為500個，可提供食品級認證，全港免費送貨。"
+      },
+      {
+        "question": "A4宣傳單張尺寸？",
+        "answer": "智印云 ZPrintPro 提供專業宣傳單張服務。A4宣傳單張尺寸？ 我們的最小起訂量為500個，可提供食品級認證，全港免費送貨。"
+      },
+      {
+        "question": "邊度印宣傳單張平？",
+        "answer": "智印云 ZPrintPro 提供專業宣傳單張服務。邊度印宣傳單張平？ 我們的最小起訂量為500個，可提供食品級認證，全港免費送貨。"
+      }
+    ],
+    "schema_snippet": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"FAQPage\",\n  \"mainEntity\": [\n    {\n      \"@type\": \"Question\",\n      \"name\": \"宣傳單張印刷幾錢？\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"智印云 ZPrintPro 提供專業宣傳單張服務。宣傳單張印刷幾錢？ 我們的最小起訂量為500個，可提供食品級認證，全港免費送貨。\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"A4宣傳單張尺寸？\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"智印云 ZPrintPro 提供專業宣傳單張服務。A4宣傳單張尺寸？ 我們的最小起訂量為500個，可提供食品級認證，全港免費送貨。\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"邊度印宣傳單張平？\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"智印云 ZPrintPro 提供專業宣傳單張服務。邊度印宣傳單張平？ 我們的最小起訂量為500個，可提供食品級認證，全港免費送貨。\"\n      }\n    }\n  ]\n}",
+    "internal_links": [],
+    "local_entities": [
+      "港鐵沿線",
+      "新界",
+      "九龍",
+      "香港島"
+    ]
+  },
+  {
+    "keyword": "宣傳單張印刷",
+    "impressions": 73,
+    "rank": 40.42,
+    "intent": "commercial",
+    "optimized_title": "宣傳單張印刷｜500張起印｜免費設計｜智印云",
+    "optimized_h1": "香港宣傳單張印刷｜智印云一站式定制",
+    "optimized_meta_desc": "專業香港宣傳單張印刷服務，提供宣傳單張印刷盒/袋/貼紙定制。小批量OK，3天交貨，免費設計打樣。立即報價！",
+    "faq_list": [
+      {
+        "question": "宣傳單張印刷 邊度平？",
+        "answer": "智印云 ZPrintPro 提供專業宣傳單張印刷服務。宣傳單張印刷 邊度平？ 我們的最小起訂量為500個，可提供食品級認證，全港免費送貨。"
+      },
+      {
+        "question": "宣傳單張印刷 最少要印幾多？",
+        "answer": "智印云 ZPrintPro 提供專業宣傳單張印刷服務。宣傳單張印刷 最少要印幾多？ 我們的最小起訂量為500個，可提供食品級認證，全港免費送貨。"
+      },
+      {
+        "question": "宣傳單張印刷 有無免費打樣？",
+        "answer": "智印云 ZPrintPro 提供專業宣傳單張印刷服務。宣傳單張印刷 有無免費打樣？ 我們的最小起訂量為500個，可提供食品級認證，全港免費送貨。"
+      }
+    ],
+    "schema_snippet": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"FAQPage\",\n  \"mainEntity\": [\n    {\n      \"@type\": \"Question\",\n      \"name\": \"宣傳單張印刷 邊度平？\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"智印云 ZPrintPro 提供專業宣傳單張印刷服務。宣傳單張印刷 邊度平？ 我們的最小起訂量為500個，可提供食品級認證，全港免費送貨。\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"宣傳單張印刷 最少要印幾多？\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"智印云 ZPrintPro 提供專業宣傳單張印刷服務。宣傳單張印刷 最少要印幾多？ 我們的最小起訂量為500個，可提供食品級認證，全港免費送貨。\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"宣傳單張印刷 有無免費打樣？\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"智印云 ZPrintPro 提供專業宣傳單張印刷服務。宣傳單張印刷 有無免費打樣？ 我們的最小起訂量為500個，可提供食品級認證，全港免費送貨。\"\n      }\n    }\n  ]\n}",
+    "internal_links": [],
+    "local_entities": [
+      "港鐵沿線",
+      "新界",
+      "九龍",
+      "香港島"
+    ]
+  },
+  {
+    "keyword": "海報印刷",
+    "impressions": 65,
+    "rank": 38.31,
+    "intent": "commercial",
+    "optimized_title": "海報印刷｜即日交貨｜多種尺寸｜智印云",
+    "optimized_h1": "香港海報印刷｜智印云一站式定制",
+    "optimized_meta_desc": "專業香港海報印刷服務，提供海報印刷盒/袋/貼紙定制。小批量OK，3天交貨，免費設計打樣。立即報價！",
+    "faq_list": [
+      {
+        "question": "海報印刷尺寸有邊啲？",
+        "answer": "智印云 ZPrintPro 提供專業海報印刷服務。海報印刷尺寸有邊啲？ 我們的最小起訂量為500個，可提供食品級認證，全港免費送貨。"
+      },
+      {
+        "question": "海報用咩紙好？",
+        "answer": "智印云 ZPrintPro 提供專業海報印刷服務。海報用咩紙好？ 我們的最小起訂量為500個，可提供食品級認證，全港免費送貨。"
+      }
+    ],
+    "schema_snippet": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"FAQPage\",\n  \"mainEntity\": [\n    {\n      \"@type\": \"Question\",\n      \"name\": \"海報印刷尺寸有邊啲？\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"智印云 ZPrintPro 提供專業海報印刷服務。海報印刷尺寸有邊啲？ 我們的最小起訂量為500個，可提供食品級認證，全港免費送貨。\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"海報用咩紙好？\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"智印云 ZPrintPro 提供專業海報印刷服務。海報用咩紙好？ 我們的最小起訂量為500個，可提供食品級認證，全港免費送貨。\"\n      }\n    }\n  ]\n}",
+    "internal_links": [],
+    "local_entities": [
+      "港鐵沿線",
+      "新界",
+      "九龍",
+      "香港島"
+    ]
+  },
+  {
+    "keyword": "印海報",
+    "impressions": 58,
+    "rank": 38.43,
+    "intent": "commercial",
+    "optimized_title": "印海報｜即日交貨｜多種尺寸｜智印云",
+    "optimized_h1": "香港印海報｜智印云一站式定制",
+    "optimized_meta_desc": "專業香港印海報服務，提供印海報盒/袋/貼紙定制。小批量OK，3天交貨，免費設計打樣。立即報價！",
+    "faq_list": [
+      {
+        "question": "印海報 邊度平？",
+        "answer": "智印云 ZPrintPro 提供專業印海報服務。印海報 邊度平？ 我們的最小起訂量為500個，可提供食品級認證，全港免費送貨。"
+      },
+      {
+        "question": "印海報 最少要印幾多？",
+        "answer": "智印云 ZPrintPro 提供專業印海報服務。印海報 最少要印幾多？ 我們的最小起訂量為500個，可提供食品級認證，全港免費送貨。"
+      },
+      {
+        "question": "印海報 有無免費打樣？",
+        "answer": "智印云 ZPrintPro 提供專業印海報服務。印海報 有無免費打樣？ 我們的最小起訂量為500個，可提供食品級認證，全港免費送貨。"
+      }
+    ],
+    "schema_snippet": "{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"FAQPage\",\n  \"mainEntity\": [\n    {\n      \"@type\": \"Question\",\n      \"name\": \"印海報 邊度平？\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"智印云 ZPrintPro 提供專業印海報服務。印海報 邊度平？ 我們的最小起訂量為500個，可提供食品級認證，全港免費送貨。\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"印海報 最少要印幾多？\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"智印云 ZPrintPro 提供專業印海報服務。印海報 最少要印幾多？ 我們的最小起訂量為500個，可提供食品級認證，全港免費送貨。\"\n      }\n    },\n    {\n      \"@type\": \"Question\",\n      \"name\": \"印海報 有無免費打樣？\",\n      \"acceptedAnswer\": {\n        \"@type\": \"Answer\",\n        \"text\": \"智印云 ZPrintPro 提供專業印海報服務。印海報 有無免費打樣？ 我們的最小起訂量為500個，可提供食品級認證，全港免費送貨。\"\n      }\n    }\n  ]\n}",
+    "internal_links": [],
+    "local_entities": [
+      "港鐵沿線",
+      "新界",
+      "九龍",
+      "香港島"
+    ]
+  }
+]

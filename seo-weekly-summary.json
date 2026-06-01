@@ -1,0 +1,29 @@
+{
+  "high_potential_top5": [
+    "食品包裝印刷",
+    "宣傳單張",
+    "宣傳單張印刷",
+    "海報印刷",
+    "印海報"
+  ],
+  "clicks_low_rank": [
+    "蛍光ステッカー",
+    "a2 size printing near me"
+  ],
+  "zero_clicks_top5": [
+    "食品包裝印刷",
+    "海報與印刷",
+    "紙袋印刷",
+    "宣傳單張",
+    "紙袋訂製"
+  ],
+  "new_words_top5": [],
+  "stalled": [],
+  "counts": {
+    "high_potential": 5,
+    "has_clicks_rank_low": 2,
+    "zero_clicks_high_imp": 30,
+    "new_high_imp_words": 0,
+    "stalled_4weeks": 0
+  }
+}

@@ -1,0 +1,105 @@
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: '食品包裝印刷定制 | 香港智印云 ZPrintPro — 食品級環保包裝盒袋',
+  description: '香港食品包裝印刷專家｜智印云提供食品級包裝盒、牛油紙袋、食品貼紙定制，500個起訂免費打樣。觀塘工廠直營，全港送貨！',
+};
+
+export default function foodpackagingprintingPage() {
+  return (
+    <div className="container mx-auto px-4 py-8 max-w-7xl">
+      <h1 className="text-3xl font-bold mb-6">香港食品包裝印刷定制 — 食品級環保紙盒/紙袋印刷</h1>
+      <div className="prose max-w-none">
+        <p>智印云 ZPrintPro 是香港本地食品包裝印刷專家。我們提供食品級包裝盒、牛油紙袋、食品貼紙等定制印刷服務，符合食品安全標準，500個起訂，免費打樣確認品質。觀塘自設工廠，港鐵沿線交收，急單3天交貨。</p>
+        <h2 className="text-2xl font-bold mt-8 mb-4">适用场景</h2>
+        <ul className="list-disc pl-6 space-y-1">
+          <li>🥡 烘焙店/蛋糕店 — 紙盒蛋糕包裝、牛油紙袋，展示品牌Logo提升檔次（旺角、銅鑼灣糕點店已採用）</li>
+          <li>🍱 外賣餐飲/食品工廠 — 餐盒、便當盒、紙袋定制，防水防油處理，適合中央廚房批量採購</li>
+          <li>🎁 零食品牌/禮盒 — 食品級包裝盒印製品牌故事，提升送禮質感，節日營銷必備</li>
+        </ul>
+        <h2 className="text-2xl font-bold mt-8 mb-4">材质与尺寸对照表</h2>
+        <div className="overflow-x-auto">
+          <table className="min-w-full border-collapse border border-gray-300">
+            <thead>
+              <tr className="bg-gray-100">
+                <th className="border border-gray-300 px-4 py-2">材质</th>
+                <th className="border border-gray-300 px-4 py-2">规格/尺寸</th>
+                <th className="border border-gray-300 px-4 py-2">推荐场景</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>食品級白卡紙 350-400g</td><td>按需定制</td><td>蛋糕盒、禮品盒、高檔乾貨包裝</td></tr>
+              <tr><td>牛皮紙 120-250g</td><td>寬10-50cm×高10-40cm</td><td>牛油紙袋、外賣袋、麵包袋</td></tr>
+              <tr><td>淋膜紙 / PLA可降解</td><td>按需定制</td><td>防油紙袋、外賣餐盒、食品托盤</td></tr>
+              <tr><td>食品級貼紙 PVC/銅版</td><td>直徑2-15cm 方形/異形</td><td>食品標籤、封口貼、營養標籤</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h2 className="text-2xl font-bold mt-8 mb-4">服务流程</h2>
+        <ol className="list-decimal pl-6 space-y-2">
+          <li><strong>設計打樣</strong> — 提供AI/PDF稿件，或由我們免費排版設計，確認後數碼打樣</li>
+          <li><strong>確認生產</strong> — 打樣滿意後安排大貨生產，全程品質跟進</li>
+          <li><strong>印刷加工</strong> — 採用環保大豆油墨，食品級材料，印刷+覆膜+燙金等後道加工</li>
+          <li><strong>送貨交收</strong> — 全港免費送貨，觀塘自提或港鐵站交收，批量訂單可約定時配送</li>
+        </ol>
+        <h2 className="text-2xl font-bold mt-8 mb-4">为什么选择智印云？</h2>
+        <ul className="list-disc pl-6 space-y-1">
+          <li>超过 <strong>500+ 香港商户</strong>选择智印云，覆盖餐饮、零售、教育、地产等行业</li>
+          <li>香港观塘自设工厂，品质管控严格，支持<strong>免费打样</strong>确认后再大货生产</li>
+          <li>全港免费送货，港铁沿线站点交收，急单最快<strong>4小时</strong>可取</li>
+        </ul>
+        <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mt-8 text-center">
+          <p className="text-lg font-semibold mb-2">需要报价或咨询？</p>
+          <a href="/quote" className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition">立即获取报价</a>
+          <p className="text-sm text-gray-500 mt-2">提供规格即享实时报价，首次下单9折优惠</p>
+        </div>
+      </div>
+      <div className="mt-12 border-t pt-8">
+        <h2 className="text-2xl font-bold mb-4">常见问题</h2>
+        <div className="space-y-4">
+          <div key={0}>
+            <h3 className="text-lg font-semibold">食品包裝印刷需要什麼認證？</h3>
+            <p className="text-gray-600 mt-1">食品包裝需符合食品安全法規，材料通過FDA/EU食品級認證。智印云使用食品級環保材料，油墨無毒無味，確保接觸食物安全可靠。</p>
+          </div>
+          <div key={1}>
+            <h3 className="text-lg font-semibold">食品包裝盒印刷最少要印幾多？</h3>
+            <p className="text-gray-600 mt-1">智印云500個起訂，通用尺寸可拼單降低起訂量。免費打樣，滿意後再大貨生產。</p>
+          </div>
+          <div key={2}>
+            <h3 className="text-lg font-semibold">食品包裝印刷幾多錢？</h3>
+            <p className="text-gray-600 mt-1">視尺寸、材質和數量而定，約$2-8/個。提供免費報價，量大更優惠。歡迎聯繫查詢。</p>
+          </div>
+        </div>
+      </div>
+      <div className="mt-12 border-t pt-8">
+        <h2 className="text-2xl font-bold mb-4">其他服务</h2>
+        <ul className="list-disc pl-6 space-y-1">
+          <li><a href="/zh-hk/services/leaflet/" className="text-blue-600 hover:underline">宣傳單張設計指南 — 尺寸/摺法大全</a></li>
+          <li><a href="/zh-hk/services/leaflet-printing/" className="text-blue-600 hover:underline">宣傳單張印刷 — 24小時起貨 低至$0.5</a></li>
+          <li><a href="/zh-hk/services/poster-printing/" className="text-blue-600 hover:underline">海報印刷 — A2/A3/A1 一張起印</a></li>
+        </ul>
+      </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{__html: JSON.stringify([
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://zprintpro.com/zh-hk/"},
+              {"@type": "ListItem", "position": 2, "name": "服务", "item": "https://zprintpro.com/zh-hk/services/"},
+              {"@type": "ListItem", "position": 3, "name": "香港食品包裝印刷定制 — 食品級環保紙盒/紙袋印刷", "item": "https://zprintpro.com/zh-hk/services/food-packaging-printing/"}
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "食品包裝印刷定制 | 香港智印云 ZPrintPro — 食品級環保包裝盒袋",
+            "description": "香港食品包裝印刷專家｜智印云提供食品級包裝盒、牛油紙袋、食品貼紙定制，500個起訂免費打樣。觀塘工廠直營，全港送貨！",
+            "provider": { "@type": "LocalBusiness", "name": "智印云 ZPrintPro", "areaServed": "HK" }
+          }
+        ])}}
+      />
+    </div>
+  );
+}

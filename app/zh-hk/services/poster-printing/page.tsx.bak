@@ -1,0 +1,105 @@
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: '海報印刷 | 香港智印云 ZPrintPro — A2/A3/A1 海報快印 一張起印',
+  description: '香港海報印刷專門店｜智印云提供A2/A3/A1海報快印，高解像度CMYK彩色印刷，適合活動宣傳店舖裝飾，一張起印即日可取，免費送貨！',
+};
+
+export default function posterprintingPage() {
+  return (
+    <div className="container mx-auto px-4 py-8 max-w-7xl">
+      <h1 className="text-3xl font-bold mb-6">香港專業海報印刷服務 — A2/A3/A1 多尺寸・一張起印・即日可取</h1>
+      <div className="prose max-w-none">
+        <p>智印云 ZPrintPro 是香港海報印刷專門店。無論是店鋪宣傳海報、活動展會海報還是藝術海報，我們提供A2/A3/A1多種尺寸，一張起印無最低量，高解像度CMYK彩色印刷，急單即日可取。觀塘工廠直營，品質保證。</p>
+        <h2 className="text-2xl font-bold mt-8 mb-4">适用场景</h2>
+        <ul className="list-disc pl-6 space-y-1">
+          <li>🛍️ 零售店鋪宣傳 — 櫥窗海報、促銷海報，A3尺寸展示優惠資訊吸引人流（適用於尖沙咀/銅鑼灣商舖）</li>
+          <li>🎯 展覽活動 — A1大型海報適合展會背景板、活動宣傳，PP防水紙可戶外使用</li>
+          <li>🎨 藝術展覽/畫廊 — 高解像度藝術微噴，色彩還原度高，適合藝術家限量印製</li>
+        </ul>
+        <h2 className="text-2xl font-bold mt-8 mb-4">材质与尺寸对照表</h2>
+        <div className="overflow-x-auto">
+          <table className="min-w-full border-collapse border border-gray-300">
+            <thead>
+              <tr className="bg-gray-100">
+                <th className="border border-gray-300 px-4 py-2">材质</th>
+                <th className="border border-gray-300 px-4 py-2">规格/尺寸</th>
+                <th className="border border-gray-300 px-4 py-2">推荐场景</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>157g 銅版紙</td><td>A3 (297×420mm)</td><td>經濟實惠，適合室內短期宣傳</td></tr>
+              <tr><td>200g 啞粉紙</td><td>A2 (420×594mm)</td><td>高級質感，不反光，適合店鋪長期展示</td></tr>
+              <tr><td>PP防水合成紙</td><td>A1 (594×841mm)</td><td>防水耐用，適合戶外/櫥窗展示</td></tr>
+              <tr><td>相紙/藝術紙</td><td>A3/A2</td><td>高解像度影像輸出，適合藝術海報</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h2 className="text-2xl font-bold mt-8 mb-4">服务流程</h2>
+        <ol className="list-decimal pl-6 space-y-2">
+          <li><strong>提交稿件</strong> — 提供AI/PDF/PSD/JPG檔案，或由我們免費排版</li>
+          <li><strong>打樣確認</strong> — 數碼打樣確認顏色和尺寸，確保輸出效果</li>
+          <li><strong>印刷裁切</strong> — 高解像度CMYK印刷+裁切，可選覆膜/燙金等工藝</li>
+          <li><strong>送貨交收</strong> — 觀塘自取或全港送貨，急單最快4小時可取</li>
+        </ol>
+        <h2 className="text-2xl font-bold mt-8 mb-4">为什么选择智印云？</h2>
+        <ul className="list-disc pl-6 space-y-1">
+          <li>超过 <strong>500+ 香港商户</strong>选择智印云，覆盖餐饮、零售、教育、地产等行业</li>
+          <li>香港观塘自设工厂，品质管控严格，支持<strong>免费打样</strong>确认后再大货生产</li>
+          <li>全港免费送货，港铁沿线站点交收，急单最快<strong>4小时</strong>可取</li>
+        </ul>
+        <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mt-8 text-center">
+          <p className="text-lg font-semibold mb-2">需要报价或咨询？</p>
+          <a href="/quote" className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition">立即获取报价</a>
+          <p className="text-sm text-gray-500 mt-2">提供规格即享实时报价，首次下单9折优惠</p>
+        </div>
+      </div>
+      <div className="mt-12 border-t pt-8">
+        <h2 className="text-2xl font-bold mb-4">常见问题</h2>
+        <div className="space-y-4">
+          <div key={0}>
+            <h3 className="text-lg font-semibold">海報印刷一張幾錢？</h3>
+            <p className="text-gray-600 mt-1">A3約$20起、A2約$35起、A1約$50起。按紙材和工藝報價。一張起印，量大更優惠。</p>
+          </div>
+          <div key={1}>
+            <h3 className="text-lg font-semibold">海報印刷需幾多天？</h3>
+            <p className="text-gray-600 mt-1">標準2-3個工作天，急單即日可取（上午11點前落單，下午4點後取貨）。全港免費送貨。</p>
+          </div>
+          <div key={2}>
+            <h3 className="text-lg font-semibold">海報應選邊種紙質？</h3>
+            <p className="text-gray-600 mt-1">室內短期用：157g銅版紙（經濟）；長期展示：200g啞粉紙（高級）；戶外用：PP防水合成紙（耐用）。</p>
+          </div>
+        </div>
+      </div>
+      <div className="mt-12 border-t pt-8">
+        <h2 className="text-2xl font-bold mb-4">其他服务</h2>
+        <ul className="list-disc pl-6 space-y-1">
+          <li><a href="/zh-hk/services/leaflet-printing/" className="text-blue-600 hover:underline">宣傳單張印刷 — 24小時起貨 低至$0.5</a></li>
+          <li><a href="/zh-hk/services/leaflet/" className="text-blue-600 hover:underline">宣傳單張設計指南 — 尺寸/摺法大全</a></li>
+          <li><a href="/zh-hk/services/food-packaging-printing/" className="text-blue-600 hover:underline">食品包裝印刷 — 食品級環保包裝盒袋</a></li>
+        </ul>
+      </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{__html: JSON.stringify([
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://zprintpro.com/zh-hk/"},
+              {"@type": "ListItem", "position": 2, "name": "服务", "item": "https://zprintpro.com/zh-hk/services/"},
+              {"@type": "ListItem", "position": 3, "name": "香港專業海報印刷服務 — A2/A3/A1 多尺寸・一張起印・即日可取", "item": "https://zprintpro.com/zh-hk/services/poster-printing/"}
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "海報印刷 | 香港智印云 ZPrintPro — A2/A3/A1 海報快印 一張起印",
+            "description": "香港海報印刷專門店｜智印云提供A2/A3/A1海報快印，高解像度CMYK彩色印刷，適合活動宣傳店舖裝飾，一張起印即日可取，免費送貨！",
+            "provider": { "@type": "LocalBusiness", "name": "智印云 ZPrintPro", "areaServed": "HK" }
+          }
+        ])}}
+      />
+    </div>
+  );
+}

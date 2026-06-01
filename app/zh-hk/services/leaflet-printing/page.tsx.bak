@@ -1,0 +1,105 @@
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: '宣傳單張印刷 香港｜24小時交貨｜免費設計 $0.5起｜智印云',
+  description: '香港宣傳單張印刷24小時交貨｜智印云專業設計+印刷一條龍，A4/A5/DL多尺寸，銅版紙啞粉紙任選，$0.5/張起，免費排版全港送貨。立即查詢報價！',
+};
+
+export default function leafletprintingPage() {
+  return (
+    <div className="container mx-auto px-4 py-8 max-w-7xl">
+      <h1 className="text-3xl font-bold mb-6">宣傳單張印刷 — 24小時起貨・免費設計・低至$0.5/張</h1>
+      <div className="prose max-w-none">
+        <p>智印云 ZPrintPro 提供香港最快最實惠的宣傳單張印刷服務。A4/A5/DL多種尺寸，銅版紙/啞粉紙任選，500張起印，價格低至$0.5/張。專業排版設計免費，24小時急單起貨，全港免費送貨。</p>
+        <h2 className="text-2xl font-bold mt-8 mb-4">适用场景</h2>
+        <ul className="list-disc pl-6 space-y-1">
+          <li>🏪 零售店促銷 — 換季清貨、節日優惠，A4雙面彩印500張僅$250起，銅鑼灣/旺角商戶首選</li>
+          <li>🏢 地產代理樓盤 — A5單張方便客戶取閱，印刷精美，適合各區地產分行批量訂購</li>
+          <li>🎓 學校/教育機構 — 招生簡章、課程宣傳，DL尺寸配合信封直郵家長，專業可靠</li>
+        </ul>
+        <h2 className="text-2xl font-bold mt-8 mb-4">材质与尺寸对照表</h2>
+        <div className="overflow-x-auto">
+          <table className="min-w-full border-collapse border border-gray-300">
+            <thead>
+              <tr className="bg-gray-100">
+                <th className="border border-gray-300 px-4 py-2">材质</th>
+                <th className="border border-gray-300 px-4 py-2">规格/尺寸</th>
+                <th className="border border-gray-300 px-4 py-2">推荐场景</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>128g 銅版紙 (A4雙面)</td><td>500張 — $0.5/張</td><td>基礎促銷傳單，大量派發不心疼</td></tr>
+              <tr><td>157g 銅版紙 (A5雙面)</td><td>1000張 — $0.4/張</td><td>品牌推廣，手感厚實</td></tr>
+              <tr><td>200g 啞粉紙 (DL雙面)</td><td>500張 — $0.8/張</td><td>高端品牌或產品目錄</td></tr>
+              <tr><td>157g 過啞膠 (A4三摺)</td><td>1000張 — $0.7/張</td><td>防水耐用，餐廳/戶外使用</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <h2 className="text-2xl font-bold mt-8 mb-4">服务流程</h2>
+        <ol className="list-decimal pl-6 space-y-2">
+          <li><strong>簡單報價</strong> — 提供尺寸/數量/紙張，30秒內報價，價格透明無隱藏費用</li>
+          <li><strong>免費設計</strong> — 專業排版師為你設計，無限次修改至滿意</li>
+          <li><strong>快速印刷</strong> — 採用德國海德堡印刷機，色彩精準，急單24小時起貨</li>
+          <li><strong>免費送貨</strong> — 全港送貨上門，或觀塘工廠自提，港鐵站交收均可</li>
+        </ol>
+        <h2 className="text-2xl font-bold mt-8 mb-4">为什么选择智印云？</h2>
+        <ul className="list-disc pl-6 space-y-1">
+          <li>超过 <strong>500+ 香港商户</strong>选择智印云，覆盖餐饮、零售、教育、地产等行业</li>
+          <li>香港观塘自设工厂，品质管控严格，支持<strong>免费打样</strong>确认后再大货生产</li>
+          <li>全港免费送货，港铁沿线站点交收，急单最快<strong>4小时</strong>可取</li>
+        </ul>
+        <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mt-8 text-center">
+          <p className="text-lg font-semibold mb-2">需要报价或咨询？</p>
+          <a href="/quote" className="inline-block bg-blue-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-blue-700 transition">立即获取报价</a>
+          <p className="text-sm text-gray-500 mt-2">提供规格即享实时报价，首次下单9折优惠</p>
+        </div>
+      </div>
+      <div className="mt-12 border-t pt-8">
+        <h2 className="text-2xl font-bold mb-4">常见问题</h2>
+        <div className="space-y-4">
+          <div key={0}>
+            <h3 className="text-lg font-semibold">宣傳單張印刷價錢如何？</h3>
+            <p className="text-gray-600 mt-1">A4雙面彩色500張約$0.5/張起，價格透明。按尺寸、紙張、數量和加工而定，量大更優惠。免費報價。</p>
+          </div>
+          <div key={1}>
+            <h3 className="text-lg font-semibold">宣傳單張印刷需要幾多日？</h3>
+            <p className="text-gray-600 mt-1">標準3-5個工作天交貨，急單24小時起貨。上午落單最快下午可取，全港免費送貨。</p>
+          </div>
+          <div key={2}>
+            <h3 className="text-lg font-semibold">免費設計包啲咩？</h3>
+            <p className="text-gray-600 mt-1">提供文字和圖片（或參考風格），我們專業排版師為你設計，可無限次修改。如需從零創作另議設計費。</p>
+          </div>
+        </div>
+      </div>
+      <div className="mt-12 border-t pt-8">
+        <h2 className="text-2xl font-bold mb-4">其他服务</h2>
+        <ul className="list-disc pl-6 space-y-1">
+          <li><a href="/zh-hk/services/leaflet/" className="text-blue-600 hover:underline">宣傳單張設計指南 — 尺寸/摺法大全</a></li>
+          <li><a href="/zh-hk/services/food-packaging-printing/" className="text-blue-600 hover:underline">食品包裝印刷 — 食品級環保包裝盒袋</a></li>
+          <li><a href="/zh-hk/services/poster-printing/" className="text-blue-600 hover:underline">海報印刷 — A2/A3/A1 一張起印</a></li>
+        </ul>
+      </div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{__html: JSON.stringify([
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {"@type": "ListItem", "position": 1, "name": "首页", "item": "https://zprintpro.com/zh-hk/"},
+              {"@type": "ListItem", "position": 2, "name": "服务", "item": "https://zprintpro.com/zh-hk/services/"},
+              {"@type": "ListItem", "position": 3, "name": "宣傳單張印刷 — 24小時起貨・免費設計・低至$0.5/張", "item": "https://zprintpro.com/zh-hk/services/leaflet-printing/"}
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            "name": "宣傳單張印刷 香港｜24小時交貨｜免費設計 $0.5起｜智印云",
+            "description": "香港宣傳單張印刷24小時交貨｜智印云專業設計+印刷一條龍，A4/A5/DL多尺寸，銅版紙啞粉紙任選，$0.5/張起，免費排版全港送貨。立即查詢報價！",
+            "provider": { "@type": "LocalBusiness", "name": "智印云 ZPrintPro", "areaServed": "HK" }
+          }
+        ])}}
+      />
+    </div>
+  );
+}
