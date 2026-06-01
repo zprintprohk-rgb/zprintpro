@@ -23,8 +23,8 @@
 /about/ /zh-hk/about/ 301
 /about /zh-hk/about 301
 / /zh-hk/ 301
-/blog/ /zh-hk/blog/ 301
-/blog /zh-hk/blog/ 301
+/blog/ /zh-hk/guide/ 301
+/blog /zh-hk/guide/ 301
 /cart/ /zh-hk/cart/ 301
 /cart /zh-hk/cart/ 301
 /case-studies/ /zh-hk/case-studies/ 301
@@ -90,9 +90,8 @@
 /ja/ja/* /ja/:splat 301
 
 # =====================
-# SECTION 5: 路径修正 & 别名
+# SECTION 5: 路径修正 & 别名（已移除 /ja/guide/* → /ja/blog/ 重定向，因 sitemap 改用 /guide/ 路径）
 # =====================
-/ja/guide/* /ja/blog/:splat 301
 
 # =====================
 # SECTION 6: Services 别名和旧链接修正
@@ -327,7 +326,7 @@
 /cdn-cgi/* / 301
 # SECTION 9: 其他 404 修复
 # =====================
-/zh-hk/blog/flyer-guide/ /zh-hk/blog/ 301
+/zh-hk/blog/flyer-guide/ /zh-hk/guide/ 301
 
 # =====================
 # SECTION 10: 旧平台兼容

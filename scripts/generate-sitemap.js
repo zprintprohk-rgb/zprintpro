@@ -67,7 +67,7 @@ const allBlogSlugs = [...new Set([...blogSlugs, ...guideSlugs, ...clusterSlugs])
 const staticPages = [
   '',                          // home
   'about/',
-  'blog/',
+  'guide/',
   'case-studies/',
   'contact/',
   'faq/',
@@ -91,7 +91,7 @@ function getPriority(urlPath) {
   if (urlPath === '') return '1.0';
   if (urlPath.startsWith('category/')) return '0.8';
   if (urlPath.startsWith('product/')) return '0.9';
-  if (urlPath.startsWith('blog/')) return '0.7';
+  if (urlPath.startsWith('guide/')) return '0.7';
   if (['about/', 'contact/', 'faq/', 'service-areas/', 'case-studies/'].includes(urlPath)) return '0.7';
   if (['cart/', 'checkout/', 'order-confirmation/', 'payment/success/'].includes(urlPath)) return '0.3';
   if (['privacy/', 'terms/'].includes(urlPath)) return '0.3';
@@ -102,7 +102,7 @@ function getChangefreq(urlPath) {
   if (urlPath === '') return 'daily';
   if (urlPath.startsWith('category/')) return 'weekly';
   if (urlPath.startsWith('product/')) return 'weekly';
-  if (urlPath.startsWith('blog/')) return 'monthly';
+  if (urlPath.startsWith('guide/')) return 'monthly';
   return 'monthly';
 }
 
@@ -153,7 +153,7 @@ productSlugs.forEach((slug) => {
 allBlogSlugs.forEach((slug) => {
   locales.forEach((locale) => {
     urls.push({
-      loc: `${BASE_URL}/${locale}/blog/${slug}/`,
+      loc: `${BASE_URL}/${locale}/guide/${slug}/`,
       priority: '0.7',
       changefreq: 'monthly',
     });
