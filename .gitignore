@@ -10,6 +10,10 @@
 /.next/
 /out/
 
+# 排除 Next.js 缓存文件，避免 Cloudflare Pages 25MB 限制
+.next/cache/
+.next/server/
+
 # production
 /build
 
