@@ -13,7 +13,7 @@ import os
 import json
 
 PROJECT_ROOT = r"F:\zprintpro-nextjs"
-SERVICES_DIR = os.path.join(PROJECT_ROOT, "app", "zh-hk", "services")
+SERVICES_DIR = os.path.join(PROJECT_ROOT, "src", "app", "[locale]", "services")
 BACKUP_SUFFIX = ".bak.v3"
 
 ENHANCEMENTS = {

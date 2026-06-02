@@ -10,6 +10,9 @@
 /.next/
 /out/
 
+# 防止根目录 app/ 与 src/app/ 冲突（脚本错误创建）
+/app/
+
 # 排除 Next.js 缓存文件，避免 Cloudflare Pages 25MB 限制
 .next/cache/
 .next/server/
