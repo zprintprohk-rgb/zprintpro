@@ -111,6 +111,17 @@ textarea:focus-visible {
   animation: slideUp 0.5s ease-out;
 }
 
+/* Price pop — 报价计算器价格变化时弹性动画 */
+@keyframes pricePop {
+  0%   { transform: scale(1); }
+  40%  { transform: scale(1.12); }
+  100% { transform: scale(1); }
+}
+
+.animate-price-pop {
+  animation: pricePop 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
 /* Aspect ratio fallback */
 .aspect-square {
   aspect-ratio: 1 / 1;

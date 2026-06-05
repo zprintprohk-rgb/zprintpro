@@ -423,7 +423,12 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
                 <div className="border-t border-gray-200 pt-3">
                   <div className="flex justify-between items-baseline">
                     <span className="font-semibold text-gray-900">{t.totalAmount}</span>
-                    <span className="text-xl font-bold text-[#F87314]">HK${calculatedPrice.totalPrice.toLocaleString()}</span>
+                    <span
+                      key={calculatedPrice.totalPrice}
+                      className="text-xl font-bold text-[#F87314] tabular-nums transition-all duration-300 ease-out animate-price-pop"
+                    >
+                      HK${calculatedPrice.totalPrice.toLocaleString()}
+                    </span>
                   </div>
                 </div>
                 <div className="text-xs text-gray-400">
@@ -518,7 +523,12 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
                 <div className="border-t border-gray-200 pt-3">
                   <div className="flex justify-between items-baseline">
                     <span className="font-semibold text-gray-900">{t.totalAmount}</span>
-                    <span className="text-xl font-bold text-[#F87314]">HK${calculatedPrice.totalPrice.toLocaleString()}</span>
+                    <span
+                      key={calculatedPrice.totalPrice}
+                      className="text-xl font-bold text-[#F87314] tabular-nums transition-all duration-300 ease-out animate-price-pop"
+                    >
+                      HK${calculatedPrice.totalPrice.toLocaleString()}
+                    </span>
                   </div>
                 </div>
                 <div className="text-xs text-gray-400">
