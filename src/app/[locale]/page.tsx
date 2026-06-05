@@ -12,6 +12,7 @@ import { HotProducts } from '@/components/home/HotProducts';
 import { StatsBar } from '@/components/home/StatsBar';
 import { WhyChooseUs } from '@/components/home/WhyChooseUs';
 import { KnowledgeSection } from '@/components/home/KnowledgeSection';
+import { TrustWaterfall } from '@/components/home/TrustWaterfall';
 
 // 生成静态参数
 export function generateStaticParams() {
@@ -57,6 +58,7 @@ export default function HomePage({
       
       <main className="min-h-screen">
         <HeroBanner locale={locale} />
+        <TrustWaterfall locale={locale} />
         <HotProducts locale={locale} />
         <StatsBar locale={locale} />
         <WhyChooseUs locale={locale} />

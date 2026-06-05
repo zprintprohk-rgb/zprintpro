@@ -5,6 +5,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 import { Locale } from '@/lib/seo';
+import { GeoFooterText } from '@/components/seo/GeoFooterText';
+import { generateWhatsAppLink } from '@/lib/whatsapp';
 
 function getLocalizedHref(href: string, locale: Locale): string {
   if (href.startsWith('http') || href.startsWith('mailto') || href.startsWith('tel') || href.startsWith('javascript')) {
@@ -227,25 +229,34 @@ export function Footer({ locale }: FooterProps) {
             <div key={colIndex}>
               <h3 className="font-bold text-lg mb-4">{column.title}</h3>
               <ul className="space-y-2.5">
-                {column.links.map((link, linkIndex) => (
-                  <li key={linkIndex}>
-                    <Link
-                      href={link.href.startsWith('http') ? link.href : `${localePrefix}${link.href}`}
-                      target={link.href.startsWith('http') ? '_blank' : undefined}
-                      rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                      className="text-gray-400 hover:text-white transition-colors text-sm"
-                    >
-                      {link.label}
-                    </Link>
-                  </li>
-                ))}
+                {column.links.map((link, linkIndex) => {
+                  // WhatsApp 链接：使用统一生成器（带 source=footer 上下文）
+                  const href = link.href.startsWith('https://wa.me/')
+                    ? generateWhatsAppLink(locale, { source: 'footer' })
+                    : link.href.startsWith('http') ? link.href : `${localePrefix}${link.href}`;
+                  return (
+                    <li key={linkIndex}>
+                      <Link
+                        href={href}
+                        target={link.href.startsWith('http') ? '_blank' : undefined}
+                        rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+                        className="text-gray-400 hover:text-white transition-colors text-sm"
+                      >
+                        {link.label}
+                      </Link>
+                    </li>
+                  );
+                })}
               </ul>
             </div>
           ))}
         </div>
 
+        {/* GEO 锚定文本 — 供 AI 搜索引擎抓取 */}
+        <GeoFooterText locale={locale} />
+
         {/* Social & Bottom */}
-        <div className="mt-6 pt-6 border-t border-white/10">
+        <div className="mt-2 pt-6 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-4">
               <span className="text-gray-400 text-sm">{t.followUs}</span>

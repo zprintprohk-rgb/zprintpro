@@ -172,8 +172,8 @@ export function KnowledgeSection({ locale }: KnowledgeSectionProps) {
               href={`${localePrefix}${article.href}`}
               className="group bg-white rounded-2xl border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-1 hover:border-gray-200 transition-all duration-300"
             >
-              {/* Image */}
-              <div className="aspect-[16/10] relative overflow-hidden">
+              {/* Image — 1:1 统一视觉 */}
+              <div className="aspect-square relative overflow-hidden">
                 <PictureImage
                   src={article.image}
                   alt={article.title}
