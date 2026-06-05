@@ -9,6 +9,7 @@
 import React from 'react';
 import { generateWhatsAppLink, WhatsAppContext } from '@/lib/whatsapp';
 import { Locale } from '@/types/locale';
+import { trackWhatsappClick } from '@/lib/analytics';
 
 interface SmartWhatsAppLinkProps {
   locale?: Locale;
@@ -30,6 +31,16 @@ export function SmartWhatsAppLink({
   onClick,
 }: SmartWhatsAppLinkProps) {
   const href = generateWhatsAppLink(locale, context);
+  const hasContext = !!(context.productName || context.size || context.material || context.quantity);
+
+  const handleClick = (e: React.MouseEvent) => {
+    trackWhatsappClick({
+      source: context.source || 'unknown',
+      hasContext,
+      productName: context.productName,
+    });
+    onClick?.(e);
+  };
 
   if (as === 'button') {
     return (
@@ -38,7 +49,7 @@ export function SmartWhatsAppLink({
         className={className}
         onClick={(e) => {
           window.open(href, '_blank', 'noopener,noreferrer');
-          onClick?.(e);
+          handleClick(e);
         }}
       >
         {children}
@@ -52,7 +63,7 @@ export function SmartWhatsAppLink({
       target="_blank"
       rel="noopener noreferrer"
       className={className}
-      onClick={onClick}
+      onClick={handleClick}
     >
       {children}
     </a>

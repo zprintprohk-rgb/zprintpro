@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import { Search, Mail, Phone, ChevronDown } from 'lucide-react';
+import { trackFaqExpand } from '@/lib/analytics';
 
 interface FaqItem {
   q: string;
@@ -58,7 +59,13 @@ export default function FaqClient({ items, t }: FaqClientProps) {
   }, [search, items]);
 
   const toggle = (idx: number) => {
-    setOpenIndex((prev) => (prev === idx ? null : idx));
+    setOpenIndex((prev) => {
+      const next = prev === idx ? null : idx;
+      if (next !== null) {
+        trackFaqExpand(`faq-${idx}`);
+      }
+      return next;
+    });
   };
 
   return (
