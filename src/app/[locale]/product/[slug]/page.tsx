@@ -30,6 +30,7 @@ import { ProductTabs } from '@/components/ProductTabs';
 import { RelatedProducts } from '@/components/RelatedProducts';
 import { ProductFaq } from '@/components/ProductFaq';
 import { getProductSeo } from '@/data/product-seo';
+import { getSkuSeo } from '@/data/sku-seo-data';
 import { generateFAQSchema } from '@/lib/faq-schema';
 import { coreProductFAQMap } from '@/data/product-faqs';
 import { RegionalContent, RegionalCta, RegionalTrustBadges } from '@/components/seo/RegionalContent';
@@ -82,6 +83,28 @@ export async function generateMetadata({
   
   const metadata = generateProductMetadata(locale, product.name, product.nameEn, product.nameJa, product.description, product.descriptionEn, product.descriptionJa, product.slug, categoryName, product.price_range);
   
+  // 优先：SKU 级 SEO 数据（来自 zprintpro-sku-seo-data.csv）— 78 个 SKU
+  const skuSeo = getSkuSeo(slug);
+  if (skuSeo?.seo?.[locale]) {
+    return {
+      ...metadata,
+      title: skuSeo.seo[locale].title || metadata.title,
+      description: skuSeo.seo[locale].description || metadata.description,
+      keywords: skuSeo.seo[locale].keywords,
+    };
+  }
+
+  // 兼容：核心分类 SEO（5 个）— 旧路径
+  const coreSeo = getProductSeo(slug);
+  if (coreSeo?.[locale]) {
+    return {
+      ...metadata,
+      title: coreSeo[locale].title || metadata.title,
+      description: coreSeo[locale].description || metadata.description,
+      keywords: coreSeo[locale].keywords,
+    };
+  }
+
   if (rushDescriptions[locale]?.[product.category_slug]) {
     return {
       ...metadata,

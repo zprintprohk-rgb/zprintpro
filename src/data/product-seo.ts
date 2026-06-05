@@ -154,5 +154,9 @@ export const coreProductSEO: Record<string, Record<Locale, SEOMetadata>> = {
 };
 
 export function getProductSeo(slug: string): Record<Locale, SEOMetadata> | undefined {
-  return coreProductSEO[slug];
+  // 优先返回核心分类 SEO
+  if (coreProductSEO[slug]) return coreProductSEO[slug];
+  // Fallback 到全量 SKU SEO 数据（78 个）
+  // 详情页用 getProductSeoSlugs() + getProductSeoEntry() 拿到完整信息
+  return undefined;
 }

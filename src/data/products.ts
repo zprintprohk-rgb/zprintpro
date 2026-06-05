@@ -3,6 +3,7 @@
  * 从CSV加载79个SKU产品数据
  * 提供分类、搜索、筛选功能
  */
+import { getSkuSeo } from '@/data/sku-seo-data';
 
 export interface Product {
   id: string;
@@ -6553,6 +6554,11 @@ export function getCategoryName(category: Category, locale: string): string {
 
 // SEO-optimized image alt text generator
 export function getProductImageAlt(product: Product, locale: string): string {
+  // 优先：从 sku-seo-data 取（78 个 SKU 的高质量 alt）
+  const sku = getSkuSeo(product.slug);
+  if (sku?.imageAlt?.[locale as 'zh-hk' | 'en' | 'ja']) {
+    return sku.imageAlt[locale as 'zh-hk' | 'en' | 'ja'];
+  }
   const titles: Record<string, string> = {
     'zh-hk': `香港${product.name}印刷 | ${product.description.slice(0, 25)} | ZprintPro智印云`,
     en: `${product.nameEn} Printing Hong Kong | ${product.descriptionEn.slice(0, 35)} | ZprintPro`,
