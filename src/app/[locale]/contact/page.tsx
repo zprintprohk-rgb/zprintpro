@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { Locale, siteConfig, generateBusinessJsonLd } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
 import { QuoteForm } from '@/components/quote/QuoteForm';
-import { QrCode } from 'lucide-react';
+import Image from 'next/image';
 import { generateWhatsAppLink } from '@/lib/whatsapp';
 
 interface ContactPageProps {
@@ -170,10 +170,17 @@ export default function ContactPage({ params }: ContactPageProps) {
                 {t.cta}
               </a>
 
-              {/* WhatsApp 二维码占位 — 实际 /whatsapp-qr.jpg 待补资源 */}
+              {/* WhatsApp 二维码 */}
               <div className="mt-4 flex flex-col items-center gap-2">
-                <div className="w-[120px] h-[120px] bg-white border border-gray-200 rounded-lg flex items-center justify-center shadow-sm">
-                  <QrCode className="w-12 h-12 text-emerald-600" strokeWidth={1.5} aria-hidden="true" />
+                <div className="w-[120px] h-[120px] bg-white border border-gray-200 rounded-lg overflow-hidden flex items-center justify-center shadow-sm">
+                  <Image
+                    src="/whatsapp-qr.jpg"
+                    alt="WhatsApp QR Code | ZprintPro"
+                    width={120}
+                    height={120}
+                    className="object-contain"
+                    loading="lazy"
+                  />
                 </div>
                 <p className="text-xs text-gray-500">{t.qrCaption}</p>
               </div>
