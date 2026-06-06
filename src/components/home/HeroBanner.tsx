@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
 import { Locale } from '@/lib/seo';
+import { getAbVariant, CTA_VARIANTS, trackEvent, AbVariant } from '@/lib/analytics';
 
 function getQuoteHref(slideHref: string): string {
   // /product/xxx/ → /contact/?product=xxx
@@ -102,6 +103,14 @@ export function HeroBanner({ locale }: HeroBannerProps) {
   const t = translations[locale];
   const localePrefix = `/${locale}`;
   const [currentSlide, setCurrentSlide] = useState(0);
+  // A/B 测试：客户端读 cookie 决定 CTA 文案
+  const [abVariant, setAbVariant] = useState<AbVariant>('A');
+
+  useEffect(() => {
+    const variant = getAbVariant();
+    setAbVariant(variant);
+    trackEvent('hero_ab_exposure', { variant, locale });
+  }, [locale]);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -163,9 +172,10 @@ export function HeroBanner({ locale }: HeroBannerProps) {
                       </h1>
                       <Link
                         href={`${localePrefix}${getQuoteHref(slide.href)}`}
+                        onClick={() => trackEvent('hero_cta_click', { variant: abVariant, locale, slide_idx: currentSlide })}
                         className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-bold px-6 py-3 rounded-lg transition-colors shadow-lg whitespace-nowrap flex-shrink-0"
                       >
-                        {t.cta} <ArrowRight className="h-4 w-4" />
+                        {CTA_VARIANTS[abVariant][locale]} <ArrowRight className="h-4 w-4" />
                       </Link>
                     </div>
 
@@ -190,9 +200,10 @@ export function HeroBanner({ locale }: HeroBannerProps) {
                 <div className="flex md:hidden absolute bottom-6 left-4 right-4">
                   <Link
                     href={`${localePrefix}${getQuoteHref(slide.href)}`}
+                    onClick={() => trackEvent('hero_cta_click', { variant: abVariant, locale, slide_idx: currentSlide, mobile: true })}
                     className="inline-flex items-center justify-center w-full px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-bold rounded-lg shadow-lg transition-colors"
                   >
-                    {t.cta} <ArrowRight className="h-4 w-4" />
+                    {CTA_VARIANTS[abVariant][locale]} <ArrowRight className="h-4 h-4" />
                   </Link>
                 </div>
               </div>
