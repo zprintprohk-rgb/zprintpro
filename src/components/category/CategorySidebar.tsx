@@ -136,9 +136,13 @@ export function CategorySidebar({ locale, currentCategorySlug }: CategorySidebar
       </div>
 
       {/* 企業批量訂單 + 聯繫方式 */}
-      <div className="bg-gradient-to-br from-[#2873F5] to-[#1E5FD1] rounded-2xl p-5 md:p-6 pb-6 md:pb-7 text-white">
+      <div className="bg-gradient-to-br from-[#2873F5] to-[#1E5FD1] rounded-2xl px-3 md:px-4 py-5 md:py-6 text-white">
         <h3 className="font-bold text-base md:text-lg mb-2 text-center whitespace-nowrap">{t.enterpriseCta}</h3>
-        <p className={`text-white/85 mb-4 text-center leading-snug ${locale === 'en' ? 'text-[12px] px-1 whitespace-normal' : 'text-[12.5px] whitespace-nowrap'}`}>{t.enterpriseDesc}</p>
+        <p className={`text-white/85 mb-4 text-center leading-snug ${
+          locale === 'en'
+            ? 'text-[11.5px] leading-snug line-clamp-2 px-0.5'
+            : 'text-[12px] leading-snug whitespace-nowrap'
+        }`}>{t.enterpriseDesc}</p>
         <Link
           href={`${localePrefix}/contact/`}
           className="flex items-center justify-center w-full text-[#2873F5] text-sm md:text-base font-semibold bg-white hover:bg-gray-50 px-4 py-2.5 rounded-xl transition-colors mb-3 shadow-lg whitespace-nowrap"
