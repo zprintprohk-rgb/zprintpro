@@ -5,6 +5,8 @@
  * 图：seedream 生成 → scripts/convert-doujin-to-webp.mjs 转 webp
  */
 
+'use client';
+
 import Link from 'next/link';
 import { Locale } from '@/types/locale';
 import { generateWhatsAppLink } from '@/lib/whatsapp';
