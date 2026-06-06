@@ -109,6 +109,7 @@ export function DoujinSKU({ locale }: DoujinSKUProps) {
             <Link
               key={item.slug}
               href={`/${locale}/services/seo/${item.slug}/`}
+              onClick={() => { /* doujin click - intentionally noop for SSR safety */ }}
               className="bg-white rounded-2xl p-4 block"
             >
               <h3 className="font-semibold text-slate-900 text-sm">{item.name}</h3>
