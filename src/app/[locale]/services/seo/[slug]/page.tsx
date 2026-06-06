@@ -11,6 +11,7 @@ import { Locale, siteConfig } from '@/lib/seo';
 import { SEO_KEYWORDS, getSeoKeyword } from '@/lib/seo-keywords';
 import { CompareTable } from '@/components/geo/CompareTable';
 import { HowToGuide } from '@/components/geo/HowToGuide';
+import { RelatedSearchQueries } from '@/components/seo/RelatedSearchQueries';
 import { generateWhatsAppLink } from '@/lib/whatsapp';
 import { ArrowRight, MessageCircle, CheckCircle2 } from 'lucide-react';
 
@@ -166,6 +167,9 @@ export default function SeoKeywordPage({ params }: { params: { locale: string; s
         <section className="mb-12">
           <HowToGuide locale={locale} />
         </section>
+
+        {/* P1: GSC top 5 关键词长尾扩展（基于真实搜索数据）*/}
+        <RelatedSearchQueries slug={data.slug} locale={locale} />
 
         {/* FAQ */}
         <section className="mb-12">
