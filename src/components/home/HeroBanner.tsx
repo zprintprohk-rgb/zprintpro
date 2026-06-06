@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
 import { Locale } from '@/lib/seo';
-import { getAbVariant, CTA_VARIANTS, trackEvent, AbVariant } from '@/lib/analytics';
+import { getAbVariant, CTA_VARIANTS, HERO_H1_VARIANTS, trackEvent, AbVariant } from '@/lib/analytics';
 
 function getQuoteHref(slideHref: string): string {
   // /product/xxx/ → /contact/?product=xxx
@@ -131,6 +131,8 @@ export function HeroBanner({ locale }: HeroBannerProps) {
 
   return (
     <section>
+      {/* P1.1 增强：SEO H1 顶层元素（按 variant 切换），slide 内的 H1 保留为视觉标题 */}
+      <h1 className="sr-only">{HERO_H1_VARIANTS[abVariant][locale]}</h1>
       <div className="max-w-[1320px] mx-auto">
         {/* Banner Slider - full width, no gap, no rounded corners */}
         <div className="relative overflow-hidden bg-white">
