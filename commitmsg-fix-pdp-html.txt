@@ -1,0 +1,25 @@
+fix: PDP 长描述 HTML 渲染 + Sidebar 按钮单行 (zh-hk/en/ja)
+
+1) PDP 乱码 (zh-hk/en/ja 79 SKU 中 5 个有 HTML 表格):
+   - src/app/[locale]/product/[slug]/page.tsx:410
+     <p>{longDesc}</p> → <div dangerouslySetInnerHTML={{__html: longDesc}}
+     + prose-sm + [&_h3]: [&_table]: [&_thead]: [&_th]: [&_td]: [&_tr] Tailwind arbitrary variants
+   - src/components/ProductTabs.tsx:204
+     <p>{description}</p> → 加 whitespace-pre-line (纯文本, 防御性)
+
+2) Sidebar WhatsApp 按钮双行 (zh-hk):
+   - src/components/category/CategorySidebar.tsx
+   - src/components/home/HotProducts.tsx
+   - enterpriseCta: text-lg md:text-xl → text-base md:text-lg + whitespace-nowrap
+   - enterpriseDesc: 字号按 locale 调整
+     * zh-hk/ja: text-[12.5px] + whitespace-nowrap (单行)
+     * en: text-[12px] + px-1 + whitespace-normal (允许换 2 行)
+   - Contact Us: text-base → text-sm md:text-base + whitespace-nowrap
+   - WhatsApp 按钮: gap-2 → gap-1.5 + px-4 → px-3 + text-base → text-sm md:text-base
+     + SVG w-5 h-5 → w-4 h-4 md:w-5 md:h-5 + shrink-0 + whitespace-nowrap
+   - 容器 padding 5/6 → 5/6 (不变), margin mb-3.5 → mb-3
+
+3) 74 个纯文本 longDescription 也用 dangerouslySetInnerHTML 安全 (无 HTML 标签
+   时浏览器当文本, 不会出问题; 5 个含 <h3><table> 的被正确解析)。
+
+TSC: 0 errors.

@@ -1,0 +1,89 @@
+========== DSH-001 | doujinshi-printing ==========
+SEO Filename ZH: zprintpro-doujinshi-doujinshi-printing-zh-hk.jpg
+SEO Filename EN: zprintpro-doujinshi-doujinshi-printing-en.jpg
+SEO Filename JA: zprintpro-doujinshi-doujinshi-printing-ja.jpg
+Alt ZH: 同人誌印刷 - A5/B5尺寸対応，表紙フルカラー印刷，少部数から対応。コミケ・推し活・VTuber向け同人作家の必需品。..
+Alt EN: Doujinshi Printing - A5/B5 sizes, full-color cover, small batches from 10 copies. Perfect for Comiket, VTuber fan events, indie creators...
+Alt JA: 同人誌印刷 - A5/B5対応、表紙フルカラー、少部数10部から対応。コミケ・VTuber・推し活の同人作家必須アイテム。..
+Prices: ZH=HK$500~/部起, EN=$65~, JA=¥7500~
+
+[zh-hk]
+1:1比例，2048x2048像素超高清电商主图。右上角固定放置单一枚鲜艳明亮的大红色(#DC2626，标准正红色，绝对不能是暗红、老红、棕红或酒红)底色、白色粗体字(PingFang HK Bold)、白色细线描边的爆炸促销标签。标签主标题：同人誌印刷｜HK$500/部起，副标题：熱賣中・免費排版。标签外画面内绝对不出现任何其他文字、乱码、水印、品牌名、多标签。前景为有可爱二次元角色封面的同人誌(A5)产品实物展示，A5/B5対応，表紙フルカラー印刷，少部数から対応。コミケ・推し活・VTuber向け同人作家の必需品。..工艺细节清晰可见，封面色彩鲜艳，纸张厚度可见。背景虚化Comiket同人展会场桌面，邻近展品隐约可见，自然光柔和明亮。产品占画面75%-85%，材质和工艺细节高清呈现。所有中文字符必须笔画完整准确，英文单词拼写正确、无粘连、无乱码。特别注意：所有技术参数指令（颜色代码、分辨率等）绝对不能以任何文字形式出现在生成的图片画面中，只能作为invisible style instruction 生效。
+
+[en]
+1:1 ratio, 2048x2048 pixel ultra-high-definition e-commerce hero image. Top-right single burst label with bright vivid red (#DC2626, standard bright red, absolutely NOT dark red, brownish red, maroon, or dull red) background, white bold text, white thin stroke outline. Label main: Doujinshi Printing｜From $65, sub: Hot Sale · Free Layout. Absolutely no other text, gibberish, watermarks, brand names, or multiple labels anywhere else in the image. Foreground: physical product showing visible printed anime cover illustration, Doujinshi Printing product实物展示，A5/B5 sizes, full-color cover, small batches from 10 copies. Perfect for Comiket, VTuber fan events, indie creators... details clearly visible, cover colors vivid, paper thickness visible. Background: blurred Comiket doujinshi event table with neighboring indie zines faintly visible, soft natural lighting. Product occupies 75%-85% of frame, material and craftsmanship details in high definition. All English words must be spelled correctly, no粘连, no gibberish. CRITICAL: All technical parameters (color codes, resolution numbers, etc.) are invisible style instructions ONLY and must NEVER appear as visible text, numbers, or symbols anywhere in the generated image.
+
+[ja]
+1:1 ratio, 2048x2048 pixel ultra-high-definition e-commerce hero image. Top-right single burst label with bright vivid red (#DC2626, standard bright red, absolutely NOT dark red, brownish red, maroon, or dull red) background, white bold text, white thin stroke outline. Label main text MUST display accurate Japanese characters: 同人誌印刷｜¥7500〜｜ sub: コミケ必須・少量OK. Absolutely no other text, gibberish, watermarks, brand names, or multiple labels anywhere else in the image. Foreground: physical product showing visible printed anime cover illustration, Doujinshi Printing product实物展示，A5/B5対応、表紙フルカラー、少部数10部から対応。コミケ・VTuber・推し活の同人作家必須アイテム。.. details clearly visible, cover colors vivid, paper thickness visible. Background: blurred Comiket doujinshi event table with neighboring indie zines faintly visible, soft natural lighting. Product occupies 75%-85% of frame, material and craftsmanship details in high definition. All Japanese text in the image must be accurately rendered with correct kanji/hiragana/katakana. No gibberish or incorrect characters. CRITICAL: All technical parameters (color codes, resolution numbers, etc.) are invisible style instructions ONLY and must NEVER appear as visible text, numbers, or symbols anywhere in the generated image.
+
+========== DSH-002 | acrylic-keychain ==========
+SEO Filename ZH: zprintpro-doujinshi-acrylic-keychain-zh-hk.jpg
+SEO Filename EN: zprintpro-doujinshi-acrylic-keychain-en.jpg
+SEO Filename JA: zprintpro-doujinshi-acrylic-keychain-ja.jpg
+Alt ZH: 亞克力鑰匙扣印刷 - 透明亞克力材質，2mm/3mm厚度可选，DIY角色造型，动漫周邊必备。..
+Alt EN: Acrylic Keychain - Transparent acrylic material, 2mm/3mm thickness, custom character shape, anime merchandise essential.  ..
+Alt JA: アクリルキーホルダー印刷 - 透明アクリル素材、2mm/3mm厚対応、オリジナルキャラクター、コミケ・推し活グッズに最適。..
+Prices: ZH=HK$150~/個起, EN=$20~, JA=¥2275~
+
+[zh-hk]
+1:1比例，2048x2048像素超高清电商主图。右上角固定放置单一枚鲜艳明亮的大红色(#DC2626，标准正红色，绝对不能是暗红、老红、棕红或酒红)底色、白色粗体字(PingFang HK Bold)、白色细线描边的爆炸促销标签。标签主标题：亞克力鑰匙扣印刷｜HK$150/個起，副标题：熱賣中・免費設計。标签外画面内绝对不出现任何其他文字、乱码、水印、品牌名、多标签。前景为透明亚克力材质的鑰匙扣产品实物展示，鑰匙扣带有可爱的二次元角色图案，光线穿过亚克力呈现透明感与立体感，2mm/3mm厚度可见。背景虚化Comiket同人展会场或动漫周邊店，柔和粉色灯光氛围。产品占画面75%-85%，材质和工艺细节高清呈现，透明亚克力的光线折射清晰可见。所有中文字符必须笔画完整准确，英文单词拼写正确、无粘连、无乱码。特别注意：所有技术参数指令（颜色代码、分辨率等）绝对不能以任何文字形式出现在生成的图片画面中，只能作为invisible style instruction 生效。
+
+[en]
+1:1 ratio, 2048x2048 pixel ultra-high-definition e-commerce hero image. Top-right single burst label with bright vivid red (#DC2626, standard bright red, absolutely NOT dark red, brownish red, maroon, or dull red) background, white bold text, white thin stroke outline. Label main: Acrylic Keychain｜From $20, sub: Hot Sale · Free Design. Absolutely no other text, gibberish, watermarks, brand names, or multiple labels anywhere else in the image. Foreground: physical product showing transparent acrylic keychain with cute anime character design, Acrylic Keychain product实物展示，Transparent acrylic material, 2mm/3mm thickness, custom character shape, anime merchandise essential.  .. details clearly visible, light refracting through acrylic material. Background: blurred Comiket doujinshi event table or anime merchandise booth, soft pink ambient lighting. Product occupies 75%-85% of frame, material and craftsmanship details in high definition, transparent acrylic refraction clearly visible. All English words must be spelled correctly, no粘连, no gibberish. CRITICAL: All technical parameters (color codes, resolution numbers, etc.) are invisible style instructions ONLY and must NEVER appear as visible text, numbers, or symbols anywhere in the generated image.
+
+[ja]
+1:1 ratio, 2048x2048 pixel ultra-high-definition e-commerce hero image. Top-right single burst label with bright vivid red (#DC2626, standard bright red, absolutely NOT dark red, brownish red, maroon, or dull red) background, white bold text, white thin stroke outline. Label main text MUST display accurate Japanese characters: アクリルキーホルダー印刷｜¥2275〜｜ sub: コミケ必須・推し活応援. Absolutely no other text, gibberish, watermarks, brand names, or multiple labels anywhere else in the image. Foreground: physical product showing transparent acrylic keychain with cute anime character design, Acrylic Keychain product实物展示，透明アクリル素材、2mm/3mm厚対応、オリジナルキャラクター、コミケ・推し活グッズに最適。.. details clearly visible, light refracting through acrylic material. Background: blurred Comiket doujinshi event table or anime merchandise booth, soft pink ambient lighting. Product occupies 75%-85% of frame, material and craftsmanship details in high definition, transparent acrylic refraction clearly visible. All Japanese text in the image must be accurately rendered with correct kanji/hiragana/katakana. No gibberish or incorrect characters. CRITICAL: All technical parameters (color codes, resolution numbers, etc.) are invisible style instructions ONLY and must NEVER appear as visible text, numbers, or symbols anywhere in the generated image.
+
+========== DSH-003 | can-badge ==========
+SEO Filename ZH: zprintpro-doujinshi-can-badge-zh-hk.jpg
+SEO Filename EN: zprintpro-doujinshi-can-badge-en.jpg
+SEO Filename JA: zprintpro-doujinshi-can-badge-ja.jpg
+Alt ZH: 缶バッジ印刷 - 57mm/76mm可选，安全扣附赠，金属感涂层，动漫周边、活動紀念品首选。..
+Alt EN: Can Badge Printing - 57mm/76mm sizes, safety pin included, metallic finish coating, anime merchandise and event souvenirs...
+Alt JA: 缶バッジ印刷 - 57mm/76mm対応、安全ピン付き、金属感仕上げ、コミケ・推し活・VTuber向け記念品。..
+Prices: ZH=HK$80~/個起, EN=$10~, JA=¥1200~
+
+[zh-hk]
+1:1比例，2048x2048像素超高清电商主图。右上角固定放置单一枚鲜艳明亮的大红色(#DC2626，标准正红色，绝对不能是暗红、老红、棕红或酒红)底色、白色粗体字(PingFang HK Bold)、白色细线描边的爆炸促销标签。标签主标题：缶バッジ印刷｜HK$80/個起，副标题：熱賣中・免費設計。标签外画面内绝对不出现任何其他文字、乱码、水印、品牌名、多标签。前景为圆形缶バッジ产品实物展示，57mm/76mm金属感圆形胸章，带有可爱的二次元角色图案，安全扣附赠可见。背景虚化Comiket同人展会场或動漫周邊販賣桌，柔和灯光氛围。产品占画面75%-85%，材质和工艺细节高清呈现，金属光泽和印刷细节清晰可见。所有中文字符必须笔画完整准确，英文单词拼写正确、无粘连、无乱码。特别注意：所有技术参数指令（颜色代码、分辨率等）绝对不能以任何文字形式出现在生成的图片画面中，只能作为invisible style instruction 生效。
+
+[en]
+1:1 ratio, 2048x2048 pixel ultra-high-definition e-commerce hero image. Top-right single burst label with bright vivid red (#DC2626, standard bright red, absolutely NOT dark red, brownish red, maroon, or dull red) background, white bold text, white thin stroke outline. Label main: Can Badge Printing｜From $10, sub: Hot Sale · Free Design. Absolutely no other text, gibberish, watermarks, brand names, or multiple labels anywhere else in the image. Foreground: physical product showing circular 57mm/76mm metallic-finish can badge with cute anime character design, safety pin visibly attached, Can Badge Printing product实物展示，57mm/76mm sizes, safety pin included, metallic finish coating, anime merchandise and event souvenirs... details clearly visible, metallic luster visible. Background: blurred Comiket doujinshi event table or anime merchandise booth, soft ambient lighting. Product occupies 75%-85% of frame, material and craftsmanship details in high definition, metallic shine and print details clearly visible. All English words must be spelled correctly, no粘连, no gibberish. CRITICAL: All technical parameters (color codes, resolution numbers, etc.) are invisible style instructions ONLY and must NEVER appear as visible text, numbers, or symbols anywhere in the generated image.
+
+[ja]
+1:1 ratio, 2048x2048 pixel ultra-high-definition e-commerce hero image. Top-right single burst label with bright vivid red (#DC2626, standard bright red, absolutely NOT dark red, brownish red, maroon, or dull red) background, white bold text, white thin stroke outline. Label main text MUST display accurate Japanese characters: 缶バッジ印刷｜¥1200〜｜ sub: コミケ必須・VTuber向け. Absolutely no other text, gibberish, watermarks, brand names, or multiple labels anywhere else in the image. Foreground: physical product showing circular 57mm/76mm metallic-finish can badge with cute anime character design, safety pin visibly attached, Can Badge Printing product实物展示，57mm/76mm対応、安全ピン付き、金属感仕上げ、コミケ・推し活・VTuber向け記念品。.. details clearly visible, metallic luster visible. Background: blurred Comiket doujinshi event table or anime merchandise booth, soft ambient lighting. Product occupies 75%-85% of frame, material and craftsmanship details in high definition, metallic shine and print details clearly visible. All Japanese text in the image must be accurately rendered with correct kanji/hiragana/katakana. No gibberish or incorrect characters. CRITICAL: All technical parameters (color codes, resolution numbers, etc.) are invisible style instructions ONLY and must NEVER appear as visible text, numbers, or symbols anywhere in the generated image.
+
+========== DSH-004 | postcard-set ==========
+SEO Filename ZH: zprintpro-doujinshi-postcard-set-zh-hk.jpg
+SEO Filename EN: zprintpro-doujinshi-postcard-set-en.jpg
+SEO Filename JA: zprintpro-doujinshi-postcard-set-ja.jpg
+Alt ZH: ポストカード套装印刷 - 和紙風紙質，4-8枚套裝，箔押し対応，動漫周邊/同人活動紀念品。..
+Alt EN: Postcard Set Printing - Washi-style paper, sets of 4-8, foil stamping available, anime merchandise and doujin event souvenirs. ..
+Alt JA: ポストカードセット印刷 - 和紙風質感、4-8枚セット、箔押し対応、コミケ・推し活記念品。..
+Prices: ZH=HK$50~/枚起, EN=$6.5~, JA=¥750~
+
+[zh-hk]
+1:1比例，2048x2048像素超高清电商主图。右上角固定放置单一枚鲜艳明亮的大红色(#DC2626，标准正红色，绝对不能是暗红、老红、棕红或酒红)底色、白色粗体字(PingFang HK Bold)、白色细线描边的爆炸促销标签。标签主标题：ポストカード套装印刷｜HK$50/枚起，副标题：熱賣中・免費設計。标签外画面内绝对不出现任何其他文字、乱码、水印、品牌名、多标签。前景为一组4-8枚同款主题的ポストカード产品实物展示，和紙風質感纸张，多种二次元角色图案组合排列。背景虚化Comiket同人展会场或文创礼品店陈列台，柔和暖色灯光氛围。产品占画面75%-85%，材质和工艺细节高清呈现，纸张纹理和图案清晰可见。所有中文字符必须笔画完整准确，英文单词拼写正确、无粘连、无乱码。特别注意：所有技术参数指令（颜色代码、分辨率等）绝对不能以任何文字形式出现在生成的图片画面中，只能作为invisible style instruction 生效。
+
+[en]
+1:1 ratio, 2048x2048 pixel ultra-high-definition e-commerce hero image. Top-right single burst label with bright vivid red (#DC2626, standard bright red, absolutely NOT dark red, brownish red, maroon, or dull red) background, white bold text, white thin stroke outline. Label main: Postcard Set Printing｜From $6.5, sub: Hot Sale · Free Design. Absolutely no other text, gibberish, watermarks, brand names, or multiple labels anywhere else in the image. Foreground: physical product showing a set of 4-8 themed postcards with various anime character designs, Postcard Set Printing product实物展示，Washi-style paper, sets of 4-8, foil stamping available, anime merchandise and doujin event souvenirs. .. details clearly visible, paper texture and prints clear. Background: blurred Comiket doujinshi event table or cultural gift shop display, soft warm ambient lighting. Product occupies 75%-85% of frame, material and craftsmanship details in high definition, paper texture and designs clearly visible. All English words must be spelled correctly, no粘连, no gibberish. CRITICAL: All technical parameters (color codes, resolution numbers, etc.) are invisible style instructions ONLY and must NEVER appear as visible text, numbers, or symbols anywhere in the generated image.
+
+[ja]
+1:1 ratio, 2048x2048 pixel ultra-high-definition e-commerce hero image. Top-right single burst label with bright vivid red (#DC2626, standard bright red, absolutely NOT dark red, brownish red, maroon, or dull red) background, white bold text, white thin stroke outline. Label main text MUST display accurate Japanese characters: ポストカードセット印刷｜¥750〜｜ sub: コミケ必須・和紙風. Absolutely no other text, gibberish, watermarks, brand names, or multiple labels anywhere else in the image. Foreground: physical product showing a set of 4-8 themed postcards with various anime character designs, Postcard Set Printing product实物展示，和紙風質感、4-8枚セット、箔押し対応、コミケ・推し活記念品。.. details clearly visible, paper texture and prints clear. Background: blurred Comiket doujinshi event table or cultural gift shop display, soft warm ambient lighting. Product occupies 75%-85% of frame, material and craftsmanship details in high definition, paper texture and designs clearly visible. All Japanese text in the image must be accurately rendered with correct kanji/hiragana/katakana. No gibberish or incorrect characters. CRITICAL: All technical parameters (color codes, resolution numbers, etc.) are invisible style instructions ONLY and must NEVER appear as visible text, numbers, or symbols anywhere in the generated image.
+
+========== DSH-005 | eco-tote-bag ==========
+SEO Filename ZH: zprintpro-doujinshi-eco-tote-bag-zh-hk.jpg
+SEO Filename EN: zprintpro-doujinshi-eco-tote-bag-en.jpg
+SEO Filename JA: zprintpro-doujinshi-eco-tote-bag-ja.jpg
+Alt ZH: エコトートバッグ印刷 - オーガニックコットン材質，シルク印刷対応，アニメ周边/同人活動紀念品。..
+Alt EN: Eco Tote Bag Printing - Organic cotton material, silk printing, anime merchandise and doujin event souvenirs. ..
+Alt JA: エコトートバッグ印刷 - オーガニックコットン、シルク印刷対応、コミケ・推し活・環境対応。..
+Prices: ZH=HK$600~/個起, EN=$78~, JA=¥9000~
+
+[zh-hk]
+1:1比例，2048x2048像素超高清电商主图。右上角固定放置单一枚鲜艳明亮的大红色(#DC2626，标准正红色，绝对不能是暗红、老红、棕红或酒红)底色、白色粗体字(PingFang HK Bold)、白色细线描边的爆炸促销标签。标签主标题：エコトートバッグ印刷｜HK$600/個起，副标题：熱賣中・免費設計。标签外画面内绝对不出现任何其他文字、乱码、水印、品牌名、多标签。前景为天然棉色エコトートバッグ产品实物展示，帆布材质自然褶皱，印有可爱的二次元角色图案，オーガニックコットン材質。背景虚化Comiket同人展会场或文创市集陈列台，柔和自然光氛围。产品占画面75%-85%，材质和工艺细节高清呈现，帆布纹理和印刷细节清晰可见。所有中文字符必须笔画完整准确，英文单词拼写正确、无粘连、无乱码。特别注意：所有技术参数指令（颜色代码、分辨率等）绝对不能以任何文字形式出现在生成的图片画面中，只能作为invisible style instruction 生效。
+
+[en]
+1:1 ratio, 2048x2048 pixel ultra-high-definition e-commerce hero image. Top-right single burst label with bright vivid red (#DC2626, standard bright red, absolutely NOT dark red, brownish red, maroon, or dull red) background, white bold text, white thin stroke outline. Label main: Eco Tote Bag Printing｜From $78, sub: Hot Sale · Free Design. Absolutely no other text, gibberish, watermarks, brand names, or multiple labels anywhere else in the image. Foreground: physical product showing natural ecru cotton tote bag with cute anime character print on the front, Eco Tote Bag Printing product实物展示，Organic cotton material, silk printing, anime merchandise and doujin event souvenirs. .. details clearly visible, canvas texture and print details clear. Background: blurred Comiket doujinshi event table or cultural market display, soft natural lighting. Product occupies 75%-85% of frame, material and craftsmanship details in high definition, canvas texture and print details clearly visible. All English words must be spelled correctly, no粘连, no gibberish. CRITICAL: All technical parameters (color codes, resolution numbers, etc.) are invisible style instructions ONLY and must NEVER appear as visible text, numbers, or symbols anywhere in the generated image.
+
+[ja]
+1:1 ratio, 2048x2048 pixel ultra-high-definition e-commerce hero image. Top-right single burst label with bright vivid red (#DC2626, standard bright red, absolutely NOT dark red, brownish red, maroon, or dull red) background, white bold text, white thin stroke outline. Label main text MUST display accurate Japanese characters: エコトートバッグ印刷｜¥9000〜｜ sub: 環境対応・推し活応援. Absolutely no other text, gibberish, watermarks, brand names, or multiple labels anywhere else in the image. Foreground: physical product showing natural ecru cotton tote bag with cute anime character print on the front, Eco Tote Bag Printing product实物展示，オーガニックコットン、シルク印刷対応、コミケ・推し活・環境対応。.. details clearly visible, canvas texture and print details clear. Background: blurred Comiket doujinshi event table or cultural market display, soft natural lighting. Product occupies 75%-85% of frame, material and craftsmanship details in high definition, canvas texture and print details clearly visible. All Japanese text in the image must be accurately rendered with correct kanji/hiragana/katakana. No gibberish or incorrect characters. CRITICAL: All technical parameters (color codes, resolution numbers, etc.) are invisible style instructions ONLY and must NEVER appear as visible text, numbers, or symbols anywhere in the generated image.

@@ -407,7 +407,10 @@ export default function ProductPage({
               <h2 className="text-2xl font-bold text-[#333333] mb-4">
                 {locale === 'zh-hk' ? '產品詳情' : locale === 'en' ? 'Product Details' : '製品詳細'}
               </h2>
-              <p className="text-gray-600 leading-relaxed whitespace-pre-line">{longDesc}</p>
+              <div
+                className="text-gray-600 leading-relaxed prose prose-sm max-w-none [&_h3]:text-lg [&_h3]:font-semibold [&_h3]:text-[#333333] [&_h3]:mt-6 [&_h3]:mb-3 [&_table]:w-full [&_table]:border-collapse [&_table]:my-4 [&_table]:text-sm [&_thead]:bg-[#2873F5] [&_thead]:text-white [&_th]:p-2 [&_th]:text-center [&_th:first-child]:text-left [&_th:last-child]:text-left [&_td]:p-2 [&_td]:text-center [&_td:first-child]:text-left [&_td:first-child]:font-medium [&_td:last-child]:text-left [&_tr.border-b]:border-b [&_tr.border-b]:border-gray-200 [&_tr.bg-gray-50]:bg-gray-50"
+                dangerouslySetInnerHTML={{ __html: longDesc }}
+              />
               
               {/* 相关博客链接 */}
               {relatedBlog && (

@@ -1,0 +1,10 @@
+P1.3: ProductGallery 场景图 Tab 增强
+
+- 3 个 Tab：產品圖/實景效果/材質特寫 (zh-hk)、Product/In Use/Material (en)、商品画像/使用例/素材特写 (ja)
+- 角色 tablist + aria-selected（无障碍）
+- Tab 切换触发 trackProductView 埋点
+- 缩略图按 Tab 独立计数（4 张/组）
+- 解决 src/components/ProductGallery.tsx 与 src/components/product/ProductGallery.tsx 重复问题（删除子目录版，统一用根目录版）
+- 调用方 page.tsx 已更新为新签名 {product, locale}
+
+Co-Authored-By: MiniMax <noreply@MiniMax.dev>

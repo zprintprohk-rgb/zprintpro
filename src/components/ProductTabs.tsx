@@ -201,7 +201,7 @@ export function ProductTabs({ product, locale }: ProductTabsProps) {
       <div className="p-6">
         {activeTab === 'description' && (
           <div className="prose max-w-none">
-            <p className="text-gray-600 leading-relaxed">{description}</p>
+            <p className="text-gray-600 leading-relaxed whitespace-pre-line">{description}</p>
             <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="p-4">
                 <h4 className="font-medium text-lg mb-2">{t.features}</h4>

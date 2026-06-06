@@ -1,0 +1,15 @@
+fix: DoujinSKU onClick inline gtag (避开 @/lib/analytics RSC 序列化)
+
+- 根因: trackProductView 来自 @/lib/analytics, 在 RSC 序列化阶段
+  即使不调用函数体, 它的 import 触发 module-level 执行路径
+  → onClick 函数闭包无法在 Edge runtime 安全序列化 → SSR 500
+- 修法: onClick 内联 window.gtag 调用, 不导入 analytics 模块
+  - typeof window !== 'undefined' 防御 SSR
+  - (window as any).gtag 直接调用 GA4
+  - 不依赖 trackEvent/trackProductView (避免 RSC 序列化触发)
+- 保留完整 DoujinSKU 功能 (5 SKU + Link + onClick + GA4 追踪)
+- Tsc 0 errors
+- 之前几个 debug commit (7076973, 1b0da71, 038152c, 53af6cc, 06f7d0d,
+  ba62740, 12e94ee, c87a644) 都是二分定位过程, 全部 commit 保留作为审计 trail
+
+Co-Authored-By: MiniMax <noreply@MiniMax.dev>

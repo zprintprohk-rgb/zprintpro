@@ -1,0 +1,14 @@
+P2: ImageObject Schema for product image SEO
+
+- src/lib/seo.ts:
+  - add generateProductImageJsonLd(imageUrls, productName, locale)
+  - returns standalone ImageObject node (does NOT modify existing
+    generateProductJsonLd to preserve Product schema ranking)
+  - trilingual alt text + author/copyrightHolder linked to siteConfig
+- src/app/[locale]/product/[slug]/page.tsx:
+  - import + emit <JsonLd data={productImageJsonLd} /> next to Product
+  - feeds product.imagesByLocale[locale] array (multi-image aware)
+  - falls back to /images/placeholder.jpg
+- Tsc 0 errors. Zero new deps.
+
+Co-Authored-By: MiniMax <noreply@MiniMax.dev>

@@ -1,0 +1,13 @@
+P1.1 followup: middleware A/B cookie injection
+
+- src/middleware.ts:
+  - add pickVariant(): read zp_ab_bucket cookie else 50/50 random
+  - rename thisResponseWithHeaders to thisResponseWithAbHeaders
+  - inject zp_ab_bucket cookie on every response (60s cache hint)
+  - make middleware async to await cookie writes
+- Deployment target: Cloudflare Pages (Vercel Edge Config was N/A,
+  project zprintpro-production paused). Static A/B variant table
+  (lib/analytics.ts) + middleware cookie now powers the H1 swap
+  that landed in 698db01.
+
+Co-Authored-By: MiniMax <noreply@MiniMax.dev>

@@ -1,0 +1,17 @@
+P1.2: 18 事件埋点接入 QuoteCalculator/Form/FileUploader
+
+- QuoteCalculator:
+  * updateConfig → trackCalculatorInteraction (size/material/finishing/quantity)
+  * tab 切换 → trackQuoteStart (order | quote)
+  * Order Now 按钮 → trackQuoteSubmit({flow, product, quantity})
+  * Free Quote 按钮 → trackContactFormSubmit(false)
+- FileUploader:
+  * trackFileUpload(ext, sizeKB) 上传前
+  * trackPreflight('pass' | 'fail') 上传结果
+- QuoteForm:
+  * onSubmit 成功 → trackContactFormSubmit(hasFile)
+- analytics.ts trackQuoteSubmit 参数类型扩展 Record<string, string|number>
+
+未触动：Hero 已有 hero_ab_exposure/cta_click，Faq 已有 faq_expand，SmartWhatsAppLink 已有
+
+Co-Authored-By: MiniMax <noreply@MiniMax.dev>

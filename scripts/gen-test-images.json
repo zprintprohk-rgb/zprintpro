@@ -1,0 +1,24 @@
+{
+  "requests": [
+    {
+      "prompt": "A premium Hong Kong printing studio hero image: high-end kraft paper bags and PVC stickers arranged in a clean minimalist composition on a white marble surface, soft natural lighting from the side, soft shadows, professional product photography, no text, no people, ultra detailed, photorealistic",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    },
+    {
+      "prompt": "Anime style illustration for Japanese printing market: a cute round mascot character holding a custom acrylic keychain and a doujinshi booklet, pastel pink and purple color scheme, kawaii style, soft lighting, cel shading, 16-bit pixel art influence, white background isolated, no text",
+      "aspect_ratio": "1:1",
+      "resolution": "1K"
+    },
+    {
+      "prompt": "International shipping and global delivery concept: cardboard boxes with shipping labels and DHL-style logistics, world map overlay, professional B2B photography, blue and orange brand color palette, dynamic angle, no text, no people, ultra detailed",
+      "aspect_ratio": "16:9",
+      "resolution": "1K"
+    },
+    {
+      "prompt": "Material comparison flat-lay photography: 5 different sticker materials (PVC glossy, PP synthetic matte, kraft paper, transparent vinyl, holographic) arranged in a circle on a clean white background, soft studio lighting, top-down view, product photography style, no text",
+      "aspect_ratio": "1:1",
+      "resolution": "1K"
+    }
+  ]
+}

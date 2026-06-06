@@ -1,0 +1,13 @@
+fix: sitemap-image.xml + robots.txt CF Pages 拦截
+
+- 症状: 部署后 /sitemap-image.xml 500 (Next.js 404 页面),
+  /robots.txt 返回 Cloudflare Content-Signal 模板而非项目 robots.txt
+- 原因: @cloudflare/next-on-pages 把非标准 .xml 路径当 App Router 路由
+  捕获,CF Pages 默认拦截 /robots.txt 走自家 Content-Signal
+- 修复: 改用显式 App Router route handler
+  - src/app/sitemap-image.xml/route.ts (force-static, 读 public/sitemap-image.xml)
+  - src/app/robots.txt/route.ts (force-static, 读 public/robots.txt)
+- 保留 public/ 下的源文件作为 build-time fallback 与本地参考
+- tsc 0 errors, 不影响其他路由
+
+Co-Authored-By: MiniMax <noreply@MiniMax.dev>
