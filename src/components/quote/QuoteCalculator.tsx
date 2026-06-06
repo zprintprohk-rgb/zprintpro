@@ -16,6 +16,7 @@ import { convertPriceRangeString } from '@/lib/pricing';
 import { useCart } from '@/lib/cart-context';
 import { translateVariableLabel } from '@/lib/variable-i18n';
 import { Check, MessageCircle, ShoppingCart, Zap, ChevronRight } from 'lucide-react';
+import { trackQuoteStart, trackQuoteSubmit, trackContactFormSubmit, trackCalculatorInteraction } from '@/lib/analytics';
 
 interface QuoteCalculatorProps {
   product: Product;
@@ -183,6 +184,8 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
 
   const updateConfig = (key: keyof QuoteConfig, value: string | number) => {
     setConfig(prev => ({ ...prev, [key]: value }));
+    // 数据飞轮：跟踪用户与计算器交互
+    trackCalculatorInteraction(key, String(value));
   };
 
   // 是否有对应的选项数据
@@ -374,7 +377,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
         {/* 选项卡 */}
         <div className="flex border-b border-gray-200">
           <button
-            onClick={() => setActiveTab('order')}
+            onClick={() => { setActiveTab('order'); trackQuoteStart('order'); }}
             className={`flex-1 py-3 text-sm font-semibold transition-colors ${
               activeTab === 'order'
                 ? 'bg-white text-[#333333] border-b-2 border-[#F87314]'
@@ -384,7 +387,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
             {t.orderTab}
           </button>
           <button
-            onClick={() => setActiveTab('quote')}
+            onClick={() => { setActiveTab('quote'); trackQuoteStart('quote'); }}
             className={`flex-1 py-3 text-sm font-semibold transition-colors ${
               activeTab === 'quote'
                 ? 'bg-white text-[#333333] border-b-2 border-[#2873F5]'
@@ -487,6 +490,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
                         finishingLabel: hasFinishings ? getSelectedLabel('finishings', config.finishing) : undefined,
                       },
                     });
+                    trackQuoteSubmit({ flow: 'order_now', product: product.slug, quantity: config.quantity });
                     router.push(`/${locale}/cart/`);
                   }}
                   className="flex-1 py-2.5 bg-[#F87314] text-white rounded-lg font-bold hover:bg-[#E56203] transition-colors text-sm flex items-center justify-center gap-1.5"
@@ -542,7 +546,10 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
                   {t.addToCart}
                 </button>
                 <button
-                  onClick={() => router.push(`/${locale}/contact/?product=${product.slug}`)}
+                  onClick={() => {
+                    trackContactFormSubmit(false);
+                    router.push(`/${locale}/contact/?product=${product.slug}`);
+                  }}
                   className="flex-1 py-2.5 bg-[#2873F5] text-white rounded-lg font-bold hover:bg-[#1E5FD1] transition-colors text-sm flex items-center justify-center gap-1.5"
                 >
                   <Zap className="w-4 h-4" />

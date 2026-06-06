@@ -4,6 +4,7 @@ import { useState, useCallback } from 'react';
 import { supabase } from '@/lib/supabase';
 import { Button } from '@/components/ui/button';
 import { Progress } from '@/components/ui/progress';
+import { trackFileUpload, trackPreflight } from '@/lib/analytics';
 
 export interface UploadResponse {
   url: string;
@@ -78,6 +79,10 @@ export function FileUploader({
       const safeName = file.name.replace(/[^a-zA-Z0-9.\-_]/g, '_');
       const filePath = `${folder}/${Date.now()}_${safeName}`;
 
+      // 数据飞轮：文件上传埋点
+      const ext = file.name.split('.').pop() || 'unknown';
+      trackFileUpload(ext, Math.round(file.size / 1024));
+
       // 使用全局 supabase 客户端
 
       try {
@@ -89,6 +94,7 @@ export function FileUploader({
           });
 
         if (uploadError) {
+          trackPreflight('fail', file.name);
           throw new Error(uploadError.message);
         }
 
@@ -101,6 +107,7 @@ export function FileUploader({
 
         setProgress(100);
         setLastResponse(response);
+        trackPreflight('pass', file.name);
         onUploadComplete?.(response);
       } catch (err) {
         const message = err instanceof Error ? err.message : 'Upload failed';

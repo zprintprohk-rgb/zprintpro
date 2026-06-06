@@ -7,6 +7,7 @@ import { z } from 'zod';
 // import { useSearchParams } from 'next/navigation'; // 静态导出不能用 useSearchParams，改用 window.location
 import { Send, Paperclip, CheckCircle, AlertCircle, Upload, X, Loader2 } from 'lucide-react';
 import { categories, products, getProductBySlug } from '@/data/products';
+import { trackContactFormSubmit } from '@/lib/analytics';
 
 const quoteSchema = z.object({
   name: z.string().optional(),
@@ -223,6 +224,7 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
 
       const result = await res.json();
       if (result.success) {
+        trackContactFormSubmit(files.length > 0);
         setSubmitStatus('success');
         form.reset();
         setFiles([]);

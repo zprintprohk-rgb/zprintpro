@@ -59,7 +59,7 @@ export const trackQuoteStep3 = () => trackEvent('quote_step_3');
 export const trackQuoteStep = (step: 1 | 2 | 3) =>
   trackEvent(`quote_step_${step}`);
 
-export const trackQuoteSubmit = (params?: Record<string, string>) =>
+export const trackQuoteSubmit = (params?: Record<string, string | number>) =>
   trackEvent('quote_submit', params);
 
 export const trackWhatsappClick = (context: { source?: string; hasContext?: boolean; productName?: string }) =>
@@ -169,42 +169,7 @@ export function getGaScript(): string {
   `;
 }
 
-// ============ Vercel Edge Config 服务端 A/B（生产用）============
-// 在 Vercel 项目中：
-//   1. 创建 Edge Config store: https://vercel.com/dashboard/stores
-//   2. 设置环境变量 EDGE_CONFIG
-//   3. 运行 `npm i @vercel/edge-config`
-//   4. 把 getAbConfigFromEdge 接入 middleware.ts
-//   5. Edge Config key: `ab_variants` = { heroH1: {A:...,B:...}, cta: {A:...,B:...} }
-// 当前实现：fallback 到静态表（HERO_H1_VARIANTS / CTA_VARIANTS）
-export interface AbConfig {
-  heroH1: typeof HERO_H1_VARIANTS;
-  cta: typeof CTA_VARIANTS;
-  enabled: boolean;
-}
-
-const FALLBACK_CONFIG: AbConfig = {
-  heroH1: HERO_H1_VARIANTS,
-  cta: CTA_VARIANTS,
-  enabled: true,
-};
-
-export async function getAbConfigFromEdge(): Promise<AbConfig> {
-  // 动态 import 避免本地构建报错
-  try {
-    // @ts-expect-error - @vercel/edge-config 可选依赖
-    const { get } = await import('@vercel/edge-config').catch(() => ({ get: null }));
-    if (!get) return FALLBACK_CONFIG;
-    const remote = await get('ab_variants');
-    if (remote && typeof remote === 'object') {
-      return {
-        heroH1: (remote as any).heroH1 || FALLBACK_CONFIG.heroH1,
-        cta: (remote as any).cta || FALLBACK_CONFIG.cta,
-        enabled: (remote as any).enabled ?? true,
-      };
-    }
-  } catch {
-    // 静默：fallback
-  }
-  return FALLBACK_CONFIG;
-}
+// ============ A/B Test 配置（静态 fallback）============
+// 部署在 Cloudflare Pages，cookie 分组由 middleware 写入
+// 改文案 → 改 HERO_H1_VARIANTS / CTA_VARIANTS → git push
+// 如需后台改文案不部署：后续可接 Cloudflare Workers KV（不在当前范围）
