@@ -6,7 +6,6 @@
  */
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { Locale } from '@/types/locale';
 import { generateWhatsAppLink } from '@/lib/whatsapp';
 import { trackProductView } from '@/lib/analytics';
@@ -118,13 +117,12 @@ export function DoujinSKU({ locale }: DoujinSKUProps) {
                 <div className="bg-white rounded-2xl p-4 md:p-5 h-full flex flex-col">
                   {/* 真实图（已通过 scripts/convert-doujin-to-webp.mjs 转换为 webp） */}
                   <div className="aspect-square rounded-xl bg-gradient-to-br from-pink-50 to-purple-50 flex items-center justify-center mb-3 overflow-hidden relative">
-                    <Image
+                    <img
                       src={`/images/japan/${item.slug}.webp`}
                       alt={`${item.name} - ${item.spec}`}
-                      fill
-                      sizes="(max-width: 768px) 50vw, 20vw"
-                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   {/* SKU 名 */}
