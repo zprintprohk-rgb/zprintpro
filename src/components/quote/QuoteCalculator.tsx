@@ -255,17 +255,24 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
             {product.variables!.materials!.map((material, idx) => {
               const isPopular = idx === 0;
               const isSelected = config.material === material.value;
+              // P2 增强：选中时按钮背景显示材质纹理（CSS 模拟）
+              const textureClass = `material-texture-${material.value}`;
               return (
                 <button
                   key={material.value}
                   onClick={() => updateConfig('material', material.value)}
-                  className={`relative px-4 py-3 border rounded-lg text-sm text-left transition-all ${
+                  className={`relative px-4 py-3 border rounded-lg text-sm text-left transition-all overflow-hidden ${
                     isSelected
-                      ? 'border-[#2873F5] bg-[#2873F5]/5 text-[#2873F5] shadow-sm'
+                      ? `border-[#2873F5] text-[#2873F5] shadow-sm ${textureClass}`
                       : 'border-gray-200 bg-white hover:border-gray-300'
                   }`}
                 >
-                  <div className="flex items-center justify-between">
+                  {/* 纹理预览条（左侧 6px 宽） */}
+                  <span
+                    aria-hidden="true"
+                    className={`absolute left-0 top-0 bottom-0 w-1.5 ${textureClass}`}
+                  />
+                  <div className="flex items-center justify-between pl-2">
                     <div className="flex items-center gap-2">
                       <span className="font-medium">{translateVariableLabel(material.label, locale, 'material')}</span>
                       {isPopular && !isSelected && (
