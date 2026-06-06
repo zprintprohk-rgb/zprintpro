@@ -285,9 +285,8 @@ export default function ProductPage({
             {/* 左侧：产品图片 + 上传 + 备注 */}
             <div>
               <ProductGallery
-                images={product.imagesByLocale?.[locale]?.length ? product.imagesByLocale[locale] : product.images}
-                title={productTitle}
-                alt={getProductImageAlt(product, locale)}
+                product={product}
+                locale={locale}
               />
 
               {/* 上传设计稿 */}
