@@ -64,7 +64,7 @@ export default function HomePage({
         <StatsBar locale={locale} />
         <WhyChooseUs locale={locale} />
         <KnowledgeSection locale={locale} />
-        {locale === 'ja' && <DoujinSKU locale={locale} />}
+        {false && locale === 'ja' && <DoujinSKU locale={locale} />}
       </main>
     </>
   );
