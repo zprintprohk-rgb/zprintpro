@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { Locale, siteConfig } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
+import { getWhatsAppLinkProps } from '@/lib/whatsapp';
 
 interface PressKitPageProps {
   params: { locale: string };
@@ -219,7 +220,7 @@ export default function PressKitPage({ params }: PressKitPageProps) {
                   <p className="text-gray-600 mb-4">{t.contactRole}</p>
                   <div className="space-y-2 text-sm">
                     <p><span className="text-gray-500">Email:</span> <a href={`mailto:${t.contactEmail}`} className="text-[#2873F5] hover:underline">{t.contactEmail}</a></p>
-                    <p><span className="text-gray-500">WhatsApp:</span> <a href={`https://wa.me/${t.contactPhone.replace(/\D/g, '')}`} className="text-[#2873F5] hover:underline">{t.contactPhone}</a></p>
+                    <p><span className="text-gray-500">WhatsApp:</span> <a {...getWhatsAppLinkProps(locale, { source: 'press-kit', phone: t.contactPhone })} className="text-[#2873F5] hover:underline">{t.contactPhone}</a></p>
                   </div>
                 </div>
                 <div className="flex items-center">

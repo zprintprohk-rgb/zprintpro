@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
 import { Locale } from '@/lib/seo';
 import { GeoFooterText } from '@/components/seo/GeoFooterText';
-import { generateWhatsAppLink } from '@/lib/whatsapp';
+import { generateWhatsAppLink, getWhatsAppLinkProps } from '@/lib/whatsapp';
 
 function getLocalizedHref(href: string, locale: Locale): string {
   if (href.startsWith('http') || href.startsWith('mailto') || href.startsWith('tel') || href.startsWith('javascript')) {
@@ -230,10 +230,25 @@ export function Footer({ locale }: FooterProps) {
               <h3 className="font-bold text-lg mb-4">{column.title}</h3>
               <ul className="space-y-2.5">
                 {column.links.map((link, linkIndex) => {
-                  // WhatsApp 链接：使用统一生成器（带 source=footer 上下文）
-                  const href = link.href.startsWith('https://wa.me/')
-                    ? generateWhatsAppLink(locale, { source: 'footer' })
-                    : link.href.startsWith('http') ? link.href : `${localePrefix}${link.href}`;
+                  // WhatsApp 链接：使用统一生成器（带 source=footer 上下文 + onClick 追踪）
+                  const isWa = link.href.startsWith('https://wa.me/');
+                  if (isWa) {
+                    const waProps = getWhatsAppLinkProps(locale, { source: 'footer' });
+                    return (
+                      <li key={linkIndex}>
+                        <a
+                          href={waProps.href}
+                          target={waProps.target}
+                          rel={waProps.rel}
+                          onClick={waProps.onClick}
+                          className="text-gray-400 hover:text-white transition-colors text-sm"
+                        >
+                          {link.label}
+                        </a>
+                      </li>
+                    );
+                  }
+                  const href = link.href.startsWith('http') ? link.href : `${localePrefix}${link.href}`;
                   return (
                     <li key={linkIndex}>
                       <Link

@@ -16,7 +16,8 @@ import { convertPriceRangeString } from '@/lib/pricing';
 import { useCart } from '@/lib/cart-context';
 import { translateVariableLabel } from '@/lib/variable-i18n';
 import { Check, MessageCircle, ShoppingCart, Zap, ChevronRight } from 'lucide-react';
-import { trackQuoteStart, trackQuoteSubmit, trackContactFormSubmit, trackCalculatorInteraction } from '@/lib/analytics';
+import { trackQuoteStart, trackQuoteSubmit, trackContactFormSubmit, trackCalculatorInteraction, trackWhatsappClick } from '@/lib/analytics';
+import { generateWhatsAppLink } from '@/lib/whatsapp';
 
 interface QuoteCalculatorProps {
   product: Product;
@@ -172,14 +173,17 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
   }, [config, product]);
 
   const handleWhatsApp = () => {
-    const text = encodeURIComponent(
-      locale === 'zh-hk'
-        ? `您好，我想查詢 ${product.name} 的價格。SKU: ${product.sku_code}`
-        : locale === 'en'
-        ? `Hi, I would like to inquire about the price of ${product.nameEn}. SKU: ${product.sku_code}`
-        : `こんにちは、${product.nameJa}の価格をお問い合わせしたいです。SKU: ${product.sku_code}`
-    );
-    window.open(`https://wa.me/85290616204?text=${text}`, '_blank');
+    const link = generateWhatsAppLink(locale, {
+      source: 'quote-calculator',
+      productName: locale === 'zh-hk' ? product.name : locale === 'en' ? product.nameEn : product.nameJa,
+      phone: '85290616204',
+    });
+    trackWhatsappClick({
+      source: 'quote-calculator',
+      hasContext: true,
+      productName: product.sku_code,
+    });
+    window.open(link, '_blank');
   };
 
   const updateConfig = (key: keyof QuoteConfig, value: string | number) => {

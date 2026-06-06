@@ -19,18 +19,27 @@ declare global {
   interface Window {
     gtag: (...args: any[]) => void;
     dataLayer: any[];
+    plausible?: (event: string, options?: { props?: Record<string, string | number | boolean> }) => void;
   }
 }
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
+const PLAUSIBLE_DOMAIN = process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN;
 
 export function isAnalyticsEnabled(): boolean {
-  return typeof window !== 'undefined' && !!GA_ID && typeof window.gtag === 'function';
+  return (
+    typeof window !== 'undefined' &&
+    ((!!GA_ID && typeof window.gtag === 'function') ||
+      (!!PLAUSIBLE_DOMAIN && typeof window.plausible === 'function'))
+  );
 }
 
 export function trackPageView(path: string) {
   if (!isAnalyticsEnabled()) return;
-  window.gtag('config', GA_ID!, { page_path: path });
+  if (GA_ID && typeof window.gtag === 'function') {
+    window.gtag('config', GA_ID!, { page_path: path });
+  }
+  // Plausible 自动追踪 pageview（script.js 默认开启），无需手动调用
 }
 
 export function trackEvent(
@@ -44,7 +53,15 @@ export function trackEvent(
     }
     return;
   }
-  window.gtag('event', action, params);
+  // 优先 Plausible（更轻量）
+  if (PLAUSIBLE_DOMAIN && typeof window.plausible === 'function') {
+    window.plausible(action, { props: params });
+    return;
+  }
+  // 降级到 GA4
+  if (GA_ID && typeof window.gtag === 'function') {
+    window.gtag('event', action, params);
+  }
 }
 
 // ============ 18 个事件便捷函数 ============

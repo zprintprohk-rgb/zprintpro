@@ -9,7 +9,7 @@
 
 import Link from 'next/link';
 import { Locale } from '@/types/locale';
-import { generateWhatsAppLink } from '@/lib/whatsapp';
+import { generateWhatsAppLink, getWhatsAppLinkProps } from '@/lib/whatsapp';
 import { trackProductView } from '@/lib/analytics';
 
 const I18N: Record<Locale, {
@@ -161,9 +161,7 @@ export function DoujinSKU({ locale }: DoujinSKUProps) {
         {/* 底部 WhatsApp CTA */}
         <div className="text-center mt-8">
           <a
-            href={generateWhatsAppLink(locale, { source: 'doujin-grid' })}
-            target="_blank"
-            rel="noopener noreferrer"
+            {...getWhatsAppLinkProps(locale, { source: 'doujin-grid' })}
             className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-6 py-3 rounded-full transition-colors"
           >
             {t.ctaText}

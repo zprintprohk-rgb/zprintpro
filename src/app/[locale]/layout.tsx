@@ -63,6 +63,14 @@ export default function RootLayout({
             __html: JSON.stringify(generateWebsiteJsonLd()),
           }}
         />
+        {process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN && (
+          <script
+            async
+            defer
+            data-domain={process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN}
+            src="https://plausible.io/js/script.js"
+          />
+        )}
         {process.env.NEXT_PUBLIC_GA_ID && (
           <>
             <script

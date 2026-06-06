@@ -10,6 +10,7 @@ export interface WhatsAppContext {
   quantity?: number | string;
   source?: string; // 例如 'hero-banner' | 'product-detail' | 'calculator' | 'contact' | 'footer'
   extra?: string;  // 任意补充文本
+  phone?: string;  // 覆盖默认 PHONE（例：香港号 85290616204）
 }
 
 const PHONE = '8618126380255'; // +86 181 2638 0255，去掉 +
@@ -54,7 +55,7 @@ const TEMPLATE: Record<string, (ctx: WhatsAppContext) => string> = {
  * 生成带上下文的 WhatsApp Web/App 链接
  * @param locale  当前语言
  * @param ctx     上下文
- * @returns       完整 wa.me 链接（已 encodeURIComponent）
+ * @returns       完整 wa.me 链接（已 encodeURIComponent，含 #src=... 追踪 hash）
  */
 export function generateWhatsAppLink(
   locale: 'zh-hk' | 'en' | 'ja' = 'zh-hk',
@@ -62,7 +63,52 @@ export function generateWhatsAppLink(
 ): string {
   const builder = TEMPLATE[locale] || TEMPLATE['zh-hk'];
   const text = builder(ctx);
-  return `https://wa.me/${PHONE}?text=${encodeURIComponent(text)}`;
+
+  // 用 URL hash 携带追踪参数（不破坏 wa.me 协议，WhatsApp 端可读）
+  const trackingParams: string[] = [];
+  if (ctx.source) trackingParams.push(`src=${ctx.source}`);
+  if (ctx.productName) trackingParams.push(`sku=${encodeURIComponent(ctx.productName)}`);
+  if (ctx.size) trackingParams.push(`size=${encodeURIComponent(ctx.size)}`);
+  if (ctx.material) trackingParams.push(`mat=${encodeURIComponent(ctx.material)}`);
+  if (ctx.quantity) trackingParams.push(`qty=${ctx.quantity}`);
+  const hash = trackingParams.length > 0 ? `#${trackingParams.join('&')}` : '';
+
+  return `https://wa.me/${(ctx.phone || PHONE).replace(/\D/g, '')}?text=${encodeURIComponent(text)}${hash}`;
+}
+
+/**
+ * 包装一个 a 标签，onClick 时自动追踪（客户端）
+ * 用于在 React 组件中替换 <a href={generateWhatsAppLink(...)}>
+ *
+ * @example
+ *   <a {...getWhatsAppLinkProps(locale, { source: 'hero-banner' })}>立即 WhatsApp 咨询</a>
+ */
+export function getWhatsAppLinkProps(
+  locale: 'zh-hk' | 'en' | 'ja' = 'zh-hk',
+  ctx: WhatsAppContext = {}
+): {
+  href: string;
+  target: '_blank';
+  rel: 'noopener noreferrer';
+  onClick: () => void;
+} {
+  return {
+    href: generateWhatsAppLink(locale, ctx),
+    target: '_blank',
+    rel: 'noopener noreferrer',
+    onClick: () => {
+      // 客户端动态 import 避免 SSR 引入 analytics 模块
+      if (typeof window !== 'undefined') {
+        import('@/lib/analytics').then(({ trackWhatsappClick }) => {
+          trackWhatsappClick({
+            source: ctx.source,
+            hasContext: !!(ctx.productName || ctx.size || ctx.material || ctx.quantity),
+            productName: ctx.productName,
+          });
+        });
+      }
+    },
+  };
 }
 
 /**

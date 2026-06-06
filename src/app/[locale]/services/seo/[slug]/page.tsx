@@ -12,7 +12,7 @@ import { SEO_KEYWORDS, getSeoKeyword } from '@/lib/seo-keywords';
 import { CompareTable } from '@/components/geo/CompareTable';
 import { HowToGuide } from '@/components/geo/HowToGuide';
 import { RelatedSearchQueries } from '@/components/seo/RelatedSearchQueries';
-import { generateWhatsAppLink } from '@/lib/whatsapp';
+import { generateWhatsAppLink, getWhatsAppLinkProps } from '@/lib/whatsapp';
 import { ArrowRight, MessageCircle, CheckCircle2 } from 'lucide-react';
 
 const FAQ: Record<Locale, Array<{ q: string; a: string }>> = {
@@ -128,7 +128,7 @@ export default function SeoKeywordPage({ params }: { params: { locale: string; s
             {cta.cta} <ArrowRight className="w-4 h-4" />
           </Link>
           <a
-            href={generateWhatsAppLink(locale, { source: `seo-${data.slug}` })}
+            {...getWhatsAppLinkProps(locale, { source: `seo-${data.slug}` })}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-6 py-3 rounded-full transition-colors"
@@ -202,7 +202,7 @@ export default function SeoKeywordPage({ params }: { params: { locale: string; s
               {cta.cta} <ArrowRight className="w-4 h-4" />
             </Link>
             <a
-              href={generateWhatsAppLink(locale, { source: `seo-${data.slug}-bottom` })}
+              {...getWhatsAppLinkProps(locale, { source: `seo-${data.slug}-bottom` })}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-6 py-3 rounded-full transition-colors"
