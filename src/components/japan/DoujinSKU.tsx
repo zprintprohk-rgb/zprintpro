@@ -109,7 +109,6 @@ export function DoujinSKU({ locale }: DoujinSKUProps) {
             <Link
               key={item.slug}
               href={`/${locale}/services/seo/${item.slug}/`}
-              onClick={() => trackProductView(item.slug, 'doujin_grid_click')}
               className="bg-white rounded-2xl p-4 block"
             >
               <h3 className="font-semibold text-slate-900 text-sm">{item.name}</h3>
