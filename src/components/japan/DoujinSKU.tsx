@@ -102,7 +102,14 @@ export function DoujinSKU({ locale }: DoujinSKUProps) {
           </h2>
           <p className="text-slate-500 text-sm md:text-base">{t.sectionSubtitle}</p>
         </div>
-        <p className="text-center text-slate-400 text-sm">[DoujinSKU grid temporarily simplified for SSR debugging]</p>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
+          {t.items.map((item) => (
+            <div key={item.slug} className="bg-white rounded-2xl p-4">
+              <h3 className="font-semibold text-slate-900 text-sm">{item.name}</h3>
+              <p className="text-xs text-slate-500">{item.price}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
