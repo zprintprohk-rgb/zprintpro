@@ -28,6 +28,19 @@ const LOCALES = ['/zh-hk/', '/en/', '/ja/'];
 // 默认 locale（香港繁中）
 const DEFAULT_LOCALE = '/zh-hk/';
 
+// ============ A/B Test（静态 fallback）============
+// 文案集中在 lib/analytics.ts 的 HERO_H1_VARIANTS / CTA_VARIANTS
+// 部署在 Cloudflare Pages，cookie 分组由 middleware 注入
+type AbVariant = 'A' | 'B';
+
+function pickVariant(req: NextRequest): AbVariant {
+  // 已分组则稳定返回
+  const existing = req.cookies.get('zp_ab_bucket')?.value;
+  if (existing === 'A' || existing === 'B') return existing;
+  // 否则 50/50 随机
+  return Math.random() < 0.5 ? 'A' : 'B';
+}
+
 /**
  * quote?product=xxx → /product/xxx/ 产品 slug 映射表
  * 所有通过 /quote?product=xxx 被错误索引的页面，301 跳转到正确的产品详情页
@@ -128,7 +141,7 @@ const QUOTE_PRODUCT_MAP: Record<string, string> = {
   'textbooks': '/product/textbooks/',
 };
 
-export function middleware(request: NextRequest) {
+export async function middleware(request: NextRequest) {
   const url = request.nextUrl.clone();
   const host = request.headers.get('host') || '';
 
@@ -157,7 +170,7 @@ export function middleware(request: NextRequest) {
     pathname.startsWith('/sitemap') ||
     pathname.startsWith('/manifest.json')
   ) {
-    return thisResponseWithHeaders();
+    return thisResponseWithAbHeaders(request);
   }
 
   // 优先级2.5：非ASCII字符路径（日文/中文）→ 重定向到日文首页
@@ -223,11 +236,11 @@ export function middleware(request: NextRequest) {
     return NextResponse.redirect(url, 301);
   }
 
-  // 无重定向：添加 Security Headers 后返回
-  return thisResponseWithHeaders();
+  // 无重定向：添加 Security Headers + A/B 分组 cookie
+  return thisResponseWithAbHeaders(request);
 }
 
-function thisResponseWithHeaders() {
+async function thisResponseWithAbHeaders(request: NextRequest) {
   const response = NextResponse.next();
   response.headers.set('X-Frame-Options', 'DENY');
   response.headers.set('X-Content-Type-Options', 'nosniff');
@@ -236,6 +249,16 @@ function thisResponseWithHeaders() {
     'Content-Security-Policy',
     "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://checkout.airwallex.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://*.supabase.co https://api.airwallex.com; frame-src https://checkout.airwallex.com;"
   );
+
+  // A/B 分组：Edge Config 优先，未配置时由 client getAbVariant 走 cookie
+  const variant = pickVariant(request);
+  response.cookies.set('zp_ab_bucket', variant, {
+    path: '/',
+    maxAge: 60 * 60 * 24 * 30, // 30 天
+    sameSite: 'lax',
+  });
+  response.headers.set('x-zp-ab-variant', variant);
+
   return response;
 }
 
