@@ -1,0 +1,333 @@
+{
+  "generatedAt": "2026-06-07T00:00:00.000Z",
+  "totalTasks": 24,
+  "version": "v2",
+  "source": "image-generation-tasks.json P2 blog covers",
+  "sizeStrategy": "800x450 (16:9 banner, seedream needs L-shape composite)",
+  "styleStrategy": "C_lifestyle for 5 topics (scene-driven) / D_technical for 3 topics (spec-driven)",
+  "tasks": [
+    {
+      "id": 1,
+      "type": "blog-cover",
+      "locale": "zh-hk",
+      "topic": "packaging-trends",
+      "style": "C_lifestyle",
+      "filename": "packaging-trends-zh-hk.webp",
+      "dimensions": "800x450",
+      "reason": "Blog 封面图缺失 (v2: Style C scene)",
+      "prompt": "Premium gift boxes and packaging on neutral background, sustainable materials, unboxing scene, Chinese aesthetic, no text overlay on image, clean composition, 8k, photorealistic, NO #DC2626, NO 2048x2048, NO PingFang HK Bold, NO 3px",
+      "alt": "packaging-trends zh-hk blog cover v2"
+    },
+    {
+      "id": 2,
+      "type": "blog-cover",
+      "locale": "en",
+      "topic": "packaging-trends",
+      "style": "C_lifestyle",
+      "filename": "packaging-trends-en.webp",
+      "dimensions": "800x450",
+      "reason": "Blog 封面图缺失 (v2: Style C scene)",
+      "prompt": "Premium gift boxes and packaging on neutral background, sustainable materials, unboxing scene, English aesthetic, no text overlay on image, clean composition, 8k, photorealistic, NO #DC2626, NO 2048x2048, NO PingFang HK Bold, NO 3px",
+      "alt": "packaging-trends en blog cover v2"
+    },
+    {
+      "id": 3,
+      "type": "blog-cover",
+      "locale": "ja",
+      "topic": "packaging-trends",
+      "style": "C_lifestyle",
+      "filename": "packaging-trends-ja.webp",
+      "dimensions": "800x450",
+      "reason": "Blog 封面图缺失 (v2: Style C scene)",
+      "prompt": "Premium gift boxes and packaging on neutral background, sustainable materials, unboxing scene, Japanese aesthetic, no text overlay on image, clean composition, 8k, photorealistic, NO #DC2626, NO 2048x2048, NO PingFang HK Bold, NO 3px",
+      "alt": "packaging-trends ja blog cover v2"
+    },
+    {
+      "id": 4,
+      "type": "blog-cover",
+      "locale": "zh-hk",
+      "topic": "hong-kong-printing-guide",
+      "style": "C_lifestyle",
+      "filename": "hong-kong-printing-guide-zh-hk.webp",
+      "dimensions": "800x450",
+      "reason": "Blog 封面图缺失 (v2: Style C Hong Kong street scene)",
+      "prompt": "Hong Kong Kwun Tong industrial district street view, printing factory storefronts with colorful signage, local signage in Traditional Chinese, golden hour lighting, urban documentary photography style, 8k, photorealistic, no text overlay, no watermark",
+      "alt": "hong-kong-printing-guide zh-hk blog cover v2"
+    },
+    {
+      "id": 5,
+      "type": "blog-cover",
+      "locale": "en",
+      "topic": "hong-kong-printing-guide",
+      "style": "C_lifestyle",
+      "filename": "hong-kong-printing-guide-en.webp",
+      "dimensions": "800x450",
+      "reason": "Blog 封面图缺失 (v2: Style C Hong Kong street scene)",
+      "prompt": "Hong Kong Kwun Tong industrial district street view, printing factory storefronts with bilingual signage, urban documentary photography, golden hour lighting, 8k, photorealistic, no text overlay, no watermark",
+      "alt": "hong-kong-printing-guide en blog cover v2"
+    },
+    {
+      "id": 6,
+      "type": "blog-cover",
+      "locale": "ja",
+      "topic": "hong-kong-printing-guide",
+      "style": "C_lifestyle",
+      "filename": "hong-kong-printing-guide-ja.webp",
+      "dimensions": "800x450",
+      "reason": "Blog 封面图缺失 (v2: Style C Hong Kong street scene)",
+      "prompt": "Hong Kong Kwun Tong industrial district street view, printing factory storefronts, urban documentary photography, soft daylight, 8k, photorealistic, no text overlay, no watermark",
+      "alt": "hong-kong-printing-guide ja blog cover v2"
+    },
+    {
+      "id": 7,
+      "type": "blog-cover",
+      "locale": "zh-hk",
+      "topic": "design-file-specs",
+      "style": "D_technical",
+      "filename": "design-file-specs-zh-hk.webp",
+      "dimensions": "800x450",
+      "reason": "Blog 封面图缺失 (v2: Style D technical spec)",
+      "prompt": "Top-down view of a printed design file layout on white desk, showing bleed marks, CMYK color swatches, 300dpi resolution indicator, ruler with mm/inch, technical documentation aesthetic, 8k, clean, no text overlay, no watermark",
+      "alt": "design-file-specs zh-hk blog cover v2"
+    },
+    {
+      "id": 8,
+      "type": "blog-cover",
+      "locale": "en",
+      "topic": "design-file-specs",
+      "style": "D_technical",
+      "filename": "design-file-specs-en.webp",
+      "dimensions": "800x450",
+      "reason": "Blog 封面图缺失 (v2: Style D technical spec)",
+      "prompt": "Top-down view of a printed design file layout on white desk, showing bleed marks, CMYK color swatches, 300dpi resolution indicator, ruler with mm/inch, technical documentation aesthetic, 8k, clean, no text overlay, no watermark",
+      "alt": "design-file-specs en blog cover v2"
+    },
+    {
+      "id": 9,
+      "type": "blog-cover",
+      "locale": "ja",
+      "topic": "design-file-specs",
+      "style": "D_technical",
+      "filename": "design-file-specs-ja.webp",
+      "dimensions": "800x450",
+      "reason": "Blog 封面图缺失 (v2: Style D technical spec)",
+      "prompt": "Top-down view of a printed design file layout on white desk, showing bleed marks, CMYK color swatches, 300dpi resolution indicator, ruler with mm/inch, technical documentation aesthetic, 8k, clean, no text overlay, no watermark",
+      "alt": "design-file-specs ja blog cover v2"
+    },
+    {
+      "id": 10,
+      "type": "blog-cover",
+      "locale": "zh-hk",
+      "topic": "brand-materials-checklist",
+      "style": "C_lifestyle",
+      "filename": "brand-materials-checklist-zh-hk.webp",
+      "dimensions": "800x450",
+      "reason": "Blog 封面图缺失 (v2: Style C brand materials scene)",
+      "prompt": "Corporate brand identity materials flat lay: business cards, letterhead, envelopes, branded tote bag, coffee mug, notebook arranged aesthetically on a clean white desk, soft studio lighting from upper-left, 8k, photorealistic, no text overlay, no watermark",
+      "alt": "brand-materials-checklist zh-hk blog cover v2"
+    },
+    {
+      "id": 11,
+      "type": "blog-cover",
+      "locale": "en",
+      "topic": "brand-materials-checklist",
+      "style": "C_lifestyle",
+      "filename": "brand-materials-checklist-en.webp",
+      "dimensions": "800x450",
+      "reason": "Blog 封面图缺失 (v2: Style C brand materials scene)",
+      "prompt": "Corporate brand identity materials flat lay: business cards, letterhead, envelopes, branded tote bag, coffee mug, notebook arranged aesthetically on a clean white desk, soft studio lighting from upper-left, 8k, photorealistic, no text overlay, no watermark",
+      "alt": "brand-materials-checklist en blog cover v2"
+    },
+    {
+      "id": 12,
+      "type": "blog-cover",
+      "locale": "ja",
+      "topic": "brand-materials-checklist",
+      "style": "C_lifestyle",
+      "filename": "brand-materials-checklist-ja.webp",
+      "dimensions": "800x450",
+      "reason": "Blog 封面图缺失 (v2: Style C brand materials scene)",
+      "prompt": "Corporate brand identity materials flat lay: business cards, letterhead, envelopes, branded tote bag, coffee mug, notebook arranged aesthetically on a clean white desk, soft studio lighting from upper-left, 8k, photorealistic, no text overlay, no watermark",
+      "alt": "brand-materials-checklist ja blog cover v2"
+    },
+    {
+      "id": 13,
+      "type": "blog-cover",
+      "locale": "zh-hk",
+      "topic": "mtr-advertising-specs",
+      "style": "D_technical",
+      "filename": "mtr-advertising-specs-zh-hk.webp",
+      "dimensions": "800x450",
+      "reason": "Blog 封面图缺失 (v2: Style D MTR technical spec)",
+      "prompt": "Hong Kong MTR station platform with a 12-sheet lightbox advertising display showing dimensional drawing overlay, technical specification aesthetic, train visible in background, dim platform lighting, 8k, photorealistic with technical annotations, no text overlay, no watermark",
+      "alt": "mtr-advertising-specs zh-hk blog cover v2"
+    },
+    {
+      "id": 14,
+      "type": "blog-cover",
+      "locale": "en",
+      "topic": "mtr-advertising-specs",
+      "style": "D_technical",
+      "filename": "mtr-advertising-specs-en.webp",
+      "dimensions": "800x450",
+      "reason": "Blog 封面图缺失 (v2: Style D MTR technical spec)",
+      "prompt": "Hong Kong MTR station platform with a 12-sheet lightbox advertising display showing dimensional drawing overlay, technical specification aesthetic, train visible in background, dim platform lighting, 8k, photorealistic with technical annotations, no text overlay, no watermark",
+      "alt": "mtr-advertising-specs en blog cover v2"
+    },
+    {
+      "id": 15,
+      "type": "blog-cover",
+      "locale": "ja",
+      "topic": "mtr-advertising-specs",
+      "style": "D_technical",
+      "filename": "mtr-advertising-specs-ja.webp",
+      "dimensions": "800x450",
+      "reason": "Blog 封面图缺失 (v2: Style D MTR technical spec)",
+      "prompt": "Hong Kong MTR station platform with a 12-sheet lightbox advertising display showing dimensional drawing overlay, technical specification aesthetic, train visible in background, dim platform lighting, 8k, photorealistic with technical annotations, no text overlay, no watermark",
+      "alt": "mtr-advertising-specs ja blog cover v2"
+    },
+    {
+      "id": 16,
+      "type": "blog-cover",
+      "locale": "zh-hk",
+      "topic": "cmyk-guide",
+      "style": "D_technical",
+      "filename": "cmyk-guide-zh-hk.webp",
+      "dimensions": "800x450",
+      "reason": "Blog 封面图缺失 (v2: Style D CMYK technical)",
+      "prompt": "Top-down view of CMYK color swatch fan on white desk, with printed color samples showing color gamut, technical color guide aesthetic, soft studio lighting, 8k, photorealistic, no text overlay, no watermark",
+      "alt": "cmyk-guide zh-hk blog cover v2"
+    },
+    {
+      "id": 17,
+      "type": "blog-cover",
+      "locale": "en",
+      "topic": "cmyk-guide",
+      "style": "D_technical",
+      "filename": "cmyk-guide-en.webp",
+      "dimensions": "800x450",
+      "reason": "Blog 封面图缺失 (v2: Style D CMYK technical)",
+      "prompt": "Top-down view of CMYK color swatch fan on white desk, with printed color samples showing color gamut, technical color guide aesthetic, soft studio lighting, 8k, photorealistic, no text overlay, no watermark",
+      "alt": "cmyk-guide en blog cover v2"
+    },
+    {
+      "id": 18,
+      "type": "blog-cover",
+      "locale": "ja",
+      "topic": "cmyk-guide",
+      "style": "D_technical",
+      "filename": "cmyk-guide-ja.webp",
+      "dimensions": "800x450",
+      "reason": "Blog 封面图缺失 (v2: Style D CMYK technical)",
+      "prompt": "Top-down view of CMYK color swatch fan on white desk, with printed color samples showing color gamut, technical color guide aesthetic, soft studio lighting, 8k, photorealistic, no text overlay, no watermark",
+      "alt": "cmyk-guide ja blog cover v2"
+    },
+    {
+      "id": 19,
+      "type": "blog-cover",
+      "locale": "zh-hk",
+      "topic": "paper-materials",
+      "style": "C_lifestyle",
+      "filename": "paper-materials-zh-hk.webp",
+      "dimensions": "800x450",
+      "reason": "Blog 封面图缺失 (v2: Style C paper texture scene)",
+      "prompt": "Elegant stack of different paper materials: kraft, cotton, glossy, matte, washi, with visible texture and grain, soft natural lighting from window, minimalist Japanese-inspired composition, 8k, photorealistic close-up, no text overlay, no watermark",
+      "alt": "paper-materials zh-hk blog cover v2"
+    },
+    {
+      "id": 20,
+      "type": "blog-cover",
+      "locale": "en",
+      "topic": "paper-materials",
+      "style": "C_lifestyle",
+      "filename": "paper-materials-en.webp",
+      "dimensions": "800x450",
+      "reason": "Blog 封面图缺失 (v2: Style C paper texture scene)",
+      "prompt": "Elegant stack of different paper materials: kraft, cotton, glossy, matte, washi, with visible texture and grain, soft natural lighting from window, minimalist Japanese-inspired composition, 8k, photorealistic close-up, no text overlay, no watermark",
+      "alt": "paper-materials en blog cover v2"
+    },
+    {
+      "id": 21,
+      "type": "blog-cover",
+      "locale": "ja",
+      "topic": "paper-materials",
+      "style": "C_lifestyle",
+      "filename": "paper-materials-ja.webp",
+      "dimensions": "800x450",
+      "reason": "Blog 封面图缺失 (v2: Style C paper texture scene)",
+      "prompt": "Elegant stack of different paper materials: kraft, cotton, glossy, matte, washi, with visible texture and grain, soft natural lighting from window, minimalist Japanese-inspired composition, 8k, photorealistic close-up, no text overlay, no watermark",
+      "alt": "paper-materials ja blog cover v2"
+    },
+    {
+      "id": 22,
+      "type": "blog-cover",
+      "locale": "zh-hk",
+      "topic": "eco-printing",
+      "style": "C_lifestyle",
+      "filename": "eco-printing-zh-hk.webp",
+      "dimensions": "800x450",
+      "reason": "Blog 封面图缺失 (v2: Style C eco scene)",
+      "prompt": "Eco-friendly printed materials: kraft paper bag, recycled cardboard box, soy-ink business cards, green leaf accents, sustainable lifestyle aesthetic, soft natural lighting, 8k, photorealistic, no text overlay, no watermark",
+      "alt": "eco-printing zh-hk blog cover v2"
+    },
+    {
+      "id": 23,
+      "type": "blog-cover",
+      "locale": "en",
+      "topic": "eco-printing",
+      "style": "C_lifestyle",
+      "filename": "eco-printing-en.webp",
+      "dimensions": "800x450",
+      "reason": "Blog 封面图缺失 (v2: Style C eco scene)",
+      "prompt": "Eco-friendly printed materials: kraft paper bag, recycled cardboard box, soy-ink business cards, green leaf accents, sustainable lifestyle aesthetic, soft natural lighting, 8k, photorealistic, no text overlay, no watermark",
+      "alt": "eco-printing en blog cover v2"
+    },
+    {
+      "id": 24,
+      "type": "blog-cover",
+      "locale": "ja",
+      "topic": "eco-printing",
+      "style": "C_lifestyle",
+      "filename": "eco-printing-ja.webp",
+      "dimensions": "800x450",
+      "reason": "Blog 封面图缺失 (v2: Style C eco scene)",
+      "prompt": "Eco-friendly printed materials: kraft paper bag, recycled cardboard box, soy-ink business cards, green leaf accents, sustainable lifestyle aesthetic, soft natural lighting, 8k, photorealistic, no text overlay, no watermark",
+      "alt": "eco-printing ja blog cover v2"
+    }
+  ],
+  "summary": {
+    "byStyle": {
+      "C_lifestyle": 15,
+      "D_technical": 9
+    },
+    "byLocale": {
+      "zh-hk": 8,
+      "en": 8,
+      "ja": 8
+    },
+    "byTopic": {
+      "packaging-trends": 3,
+      "hong-kong-printing-guide": 3,
+      "design-file-specs": 3,
+      "brand-materials-checklist": 3,
+      "mtr-advertising-specs": 3,
+      "cmyk-guide": 3,
+      "paper-materials": 3,
+      "eco-printing": 3
+    }
+  },
+  "executionSteps": [
+    "1. 安装 OpenCV: pip install opencv-python numpy",
+    "2. 修改 seedream-automation.js 接入 800x450 尺寸（默认 2048x2048）",
+    "3. 修改 seedream-automation.js 在 downloadImage 后调用 remove-watermark.py",
+    "4. 运行 node seedream-automation.js 批量生成",
+    "5. 验证 24 张图全部入库 public/images/blog/{locale}/",
+    "6. 跑 dev-workflow.ps1 验证无新错误"
+  ],
+  "notes": [
+    "800x450 是 16:9 banner，seedream 默认 1:1 生成后需要后期裁剪或拼接",
+    "9 张 D_technical 用 orthographic projection 风格",
+    "15 张 C_lifestyle 用真实场景风格",
+    "每个 topic 3 张同主题，跨语言共享同视觉"
+  ]
+}
