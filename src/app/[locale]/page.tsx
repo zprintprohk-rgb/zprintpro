@@ -13,6 +13,7 @@ import { StatsBar } from '@/components/home/StatsBar';
 import { WhyChooseUs } from '@/components/home/WhyChooseUs';
 import { KnowledgeSection } from '@/components/home/KnowledgeSection';
 import { TrustWaterfall } from '@/components/home/TrustWaterfall';
+import { DoujinSKU } from '@/components/japan/DoujinSKU';
 
 // 生成静态参数
 export function generateStaticParams() {
@@ -63,6 +64,7 @@ export default function HomePage({
         <StatsBar locale={locale} />
         <WhyChooseUs locale={locale} />
         <KnowledgeSection locale={locale} />
+        {locale === 'ja' && <DoujinSKU locale={locale} />}
       </main>
     </>
   );
