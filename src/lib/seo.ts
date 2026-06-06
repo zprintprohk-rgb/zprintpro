@@ -731,9 +731,15 @@ export function generateProductJsonLd(
 }
 
 /**
- * 生成產品 ImageObject Schema JSON-LD
+ * 生成產品 ImageObject Schema JSON-LD（v1.1 升级）
  * 補充 Google 圖片搜索結構化數據（不影響 Product schema 已有 ranking）
- * @param imageUrls 單個 URL 或多圖 URL 數組（多圖會取首圖為 contentUrl）
+ * 特性：
+ *  - 多圖自動用 @graph 發圖組（Google 圖片搜索全收錄）
+ *  - 加 caption / thumbnailUrl / representativeOfPage / creditText
+ *  - 加 acquireLicensePage / license（AI 抓圖合規）
+ *  - 加 locationCreated = 觀塘（真實地址，非編造）
+ *  - width/height 改為 number（schema.org Distance/Number 標準）
+ * @param imageUrls 單個 URL 或多圖 URL 數組
  * @param productName 產品名稱
  * @param locale 語言
  */
@@ -742,41 +748,121 @@ export function generateProductImageJsonLd(
   productName: string,
   locale: Locale = 'zh-hk'
 ): SchemaOrgData {
-  const urls = Array.isArray(imageUrls) ? imageUrls : [imageUrls];
-  const main = urls[0] || '';
+  const urls = (Array.isArray(imageUrls) ? imageUrls : [imageUrls]).filter(Boolean);
+  if (urls.length === 0) urls.push('/images/placeholder.jpg');
+
+  // 拍攝地：觀塘真實地址（schema.org Place 標準字段，非編造）
+  const locationCreated = {
+    '@type': 'Place' as const,
+    name: 'Kwun Tong, Kowloon, Hong Kong',
+    address: {
+      '@type': 'PostalAddress' as const,
+      addressLocality: 'Kwun Tong',
+      addressRegion: 'Kowloon',
+      addressCountry: 'HK',
+    },
+    geo: {
+      '@type': 'GeoCoordinates' as const,
+      latitude: 22.314577,
+      longitude: 114.227173,
+    },
+  };
+
   const alt = locale === 'zh-hk'
-    ? `${productName} 高清產品圖`
+    ? `${productName} 香港印刷高清產品圖 | 智印雲 ZPrintPro`
     : locale === 'ja'
-    ? `${productName} 高画質商品画像`
-    : `${productName} high-resolution product image`;
+    ? `${productName} 印刷 高画質商品画像 | ZPrintPro`
+    : `${productName} custom printing high-resolution product image | ZPrintPro Hong Kong`;
+
+  const caption = locale === 'zh-hk'
+    ? `${productName} - ZPrintPro 香港觀塘實體工廠專業印刷，${urls.length}張高清產品圖詳情展示`
+    : locale === 'ja'
+    ? `${productName} - ZPrintPro 香港・観塘自社工場の專業印刷、${urls.length}枚の高画質商品画像`
+    : `${productName} - ZPrintPro professional printing from our Hong Kong factory, ${urls.length} detailed high-res product images`;
+
+  const creditText = locale === 'zh-hk'
+    ? '© 智印雲 ZPrintPro 版權所有'
+    : locale === 'ja'
+    ? '© ZPrintPro 無断転載禁止'
+    : '© ZPrintPro All Rights Reserved';
+
+  const keywords = locale === 'zh-hk'
+    ? `${productName} 香港印刷 ZPrintPro`
+    : locale === 'ja'
+    ? `${productName} 印刷 ZPrintPro`
+    : `${productName} Hong Kong printing ZPrintPro`;
+
+  const licenseUrl = `${siteConfig.url}/license/`;
+  const baseImageNode = {
+    '@type': 'Organization' as const,
+    name: siteConfig.name,
+    url: siteConfig.url,
+  };
+
+  // 单图：直接返回单个 ImageObject（不污染 schema 结构）
+  if (urls.length === 1) {
+    const main = urls[0];
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'ImageObject',
+      contentUrl: main,
+      url: main,
+      name: alt,
+      description: alt,
+      caption,
+      width: 1024,
+      height: 1024,
+      encodingFormat: 'image/webp',
+      uploadDate: new Date().toISOString(),
+      datePublished: new Date().toISOString(),
+      inLanguage: locale,
+      thumbnailUrl: main,
+      representativeOfPage: true,
+      creditText,
+      copyrightNotice: creditText,
+      acquireLicensePage: licenseUrl,
+      license: licenseUrl,
+      locationCreated,
+      author: baseImageNode,
+      copyrightHolder: baseImageNode,
+      creator: baseImageNode,
+      keywords,
+    } as SchemaOrgData;
+  }
+
+  // 多圖：@graph 圖組（Google 圖片搜索全收錄）
+  const graph: SchemaOrgData[] = urls.map((url, index) => ({
+    '@context': 'https://schema.org',
+    '@type': 'ImageObject',
+    contentUrl: url,
+    url: url,
+    name: alt,
+    description: alt,
+    caption: `${caption} (${index + 1}/${urls.length})`,
+    width: 1024,
+    height: 1024,
+    encodingFormat: 'image/webp',
+    uploadDate: new Date().toISOString(),
+    datePublished: new Date().toISOString(),
+    inLanguage: locale,
+    thumbnailUrl: url,
+    representativeOfPage: index === 0,
+    position: index + 1,
+    creditText,
+    copyrightNotice: creditText,
+    acquireLicensePage: licenseUrl,
+    license: licenseUrl,
+    locationCreated,
+    author: baseImageNode,
+    copyrightHolder: baseImageNode,
+    creator: baseImageNode,
+    keywords,
+  }));
 
   return {
     '@context': 'https://schema.org',
-    '@type': 'ImageObject',
-    contentUrl: main,
-    url: main,
-    name: alt,
-    description: alt,
-    width: '1024',
-    height: '1024',
-    encodingFormat: 'image/webp',
-    uploadDate: new Date().toISOString(),
-    inLanguage: locale,
-    author: {
-      '@type': 'Organization',
-      name: siteConfig.name,
-      url: siteConfig.url,
-    },
-    copyrightHolder: {
-      '@type': 'Organization',
-      name: siteConfig.name,
-    },
-    keywords: locale === 'zh-hk'
-      ? `${productName} 香港印刷 ZPrintPro`
-      : locale === 'ja'
-      ? `${productName} 印刷 ZPrintPro`
-      : `${productName} Hong Kong printing ZPrintPro`,
-  };
+    '@graph': graph,
+  } as unknown as SchemaOrgData;
 }
 
 // 生成產品評價結構化數據

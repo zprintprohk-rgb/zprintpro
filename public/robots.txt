@@ -1,8 +1,9 @@
 User-agent: *
 Allow: /
 
-# Sitemap
+# Sitemap index (main pages + image sitemap)
 Sitemap: https://zprintpro.com/sitemap.xml
+Sitemap: https://zprintpro.com/sitemap-image.xml
 
 # Disallow admin paths
 Disallow: /admin/

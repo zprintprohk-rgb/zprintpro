@@ -8,8 +8,6 @@ import { Metadata } from 'next';
 import { JsonLd } from '@/components/JsonLd';
 import { generateBusinessJsonLd, Locale } from '@/lib/seo';
 
-export const dynamic = 'force-static';
-
 export function generateStaticParams() {
   return [{ locale: 'zh-hk' }, { locale: 'en' }, { locale: 'ja' }];
 }

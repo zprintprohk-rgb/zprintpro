@@ -27,8 +27,6 @@ import { Pagination } from '@/components/Pagination';
 import { CategoryPillarContent, generateFaqSchema } from '@/components/CategoryPillarContent';
 import { RegionalContent, RegionalCta, RegionalTrustBadges } from '@/components/seo/RegionalContent';
 
-export const dynamic = 'force-static';
-
 // 生成静态参数 - 13分类 × 3语言 = 39个路径
 export function generateStaticParams() {
   const params: { locale: string; slug: string }[] = [];

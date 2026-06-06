@@ -77,11 +77,11 @@ const translations = {
     fromPrice: 'From',
     slides: [
       { title: ' Same-Day Printing Delivery', subtitle: 'Order Today, Receive by 12PM Tomorrow. Rush service for urgent jobs', price: 'Same Day', image: '/images/hero/hero-flyer-en.webp', href: '/en/services/rush-printing-delivery' },
-      { title: 'Professional Kraft Paper Bags', subtitle: 'Eco-friendly, durable, perfect for retail and takeout', price: 'From HK$1.2', image: '/images/hero/hero-kraft-bag-en.webp', href: '/product/kraft-paper-bags/' },
-      { title: 'A4 Flyer Printing', subtitle: 'Full color, same-day pickup, ideal for promotion', price: 'From HK$0.3', image: '/images/hero/hero-flyer-en.webp', href: '/product/a4-flyers/' },
-      { title: 'Waterproof Sticker Printing', subtitle: 'Durable material, various shapes, for any surface', price: 'From HK$0.5', image: '/images/hero/hero-sticker-en.webp', href: '/product/waterproof-stickers/' },
-      { title: 'Custom Gift Boxes', subtitle: 'Premium packaging to elevate your brand', price: 'From HK$5', image: '/images/hero/hero-gift-box-en.webp', href: '/product/gift-boxes/' },
-      { title: 'Custom Poster Printing', subtitle: 'Large format, vivid colors, great for advertising', price: 'From HK$15', image: '/images/hero/hero-poster-en.webp', href: '/product/a2-posters/' },
+      { title: 'Professional Kraft Paper Bags', subtitle: 'Eco-friendly, durable, perfect for retail and takeout', price: 'From US$0.15', image: '/images/hero/hero-kraft-bag-en.webp', href: '/product/kraft-paper-bags/' },
+      { title: 'A4 Flyer Printing', subtitle: 'Full color, same-day pickup, ideal for promotion', price: 'From US$0.04', image: '/images/hero/hero-flyer-en.webp', href: '/product/a4-flyers/' },
+      { title: 'Waterproof Sticker Printing', subtitle: 'Durable material, various shapes, for any surface', price: 'From US$0.06', image: '/images/hero/hero-sticker-en.webp', href: '/product/waterproof-stickers/' },
+      { title: 'Custom Gift Boxes', subtitle: 'Premium packaging to elevate your brand', price: 'From US$0.65', image: '/images/hero/hero-gift-box-en.webp', href: '/product/gift-boxes/' },
+      { title: 'Custom Poster Printing', subtitle: 'Large format, vivid colors, great for advertising', price: 'From US$1.95', image: '/images/hero/hero-poster-en.webp', href: '/product/a2-posters/' },
     ],
   },
   ja: {
@@ -90,11 +90,11 @@ const translations = {
     fromPrice: '最低',
     slides: [
       { title: '⚡ 即日印刷・翌日正午配送', subtitle: '本日注文・明日12時までお届け。緊急印刷対応', price: '即日対応', image: '/images/hero/hero-flyer-ja.webp', href: '/ja/services/rush-printing-delivery' },
-      { title: 'クラフト紙袋印刷', subtitle: '環境に優しく耐久性があり、小売やテイクアウトに最適', price: 'HK$1.2〜', image: '/images/hero/hero-kraft-bag-ja.webp', href: '/product/kraft-paper-bags/' },
-      { title: 'A4チラシ印刷', subtitle: 'フルカラー、当日受取可能、宣伝に最適', price: 'HK$0.3〜', image: '/images/hero/hero-flyer-ja.webp', href: '/product/a4-flyers/' },
-      { title: '防水ステッカー印刷', subtitle: '耐久性のある素材、様々な形状、あらゆる表面に対応', price: 'HK$0.5〜', image: '/images/hero/hero-sticker-ja.webp', href: '/product/waterproof-stickers/' },
-      { title: 'ギフトボックス印刷', subtitle: '高級感のある包装でブランド価値を向上', price: 'HK$5〜', image: '/images/hero/hero-gift-box-ja.webp', href: '/product/gift-boxes/' },
-      { title: 'ポスター印刷', subtitle: '大判出力、鮮やかな色彩、広告に最適', price: 'HK$15〜', image: '/images/hero/hero-poster-ja.webp', href: '/product/a2-posters/' }
+      { title: 'クラフト紙袋印刷', subtitle: '環境に優しく耐久性があり、小売やテイクアウトに最適', price: '¥23〜', image: '/images/hero/hero-kraft-bag-ja.webp', href: '/product/kraft-paper-bags/' },
+      { title: 'A4チラシ印刷', subtitle: 'フルカラー、当日受取可能、宣伝に最適', price: '¥6〜', image: '/images/hero/hero-flyer-ja.webp', href: '/product/a4-flyers/' },
+      { title: '防水ステッカー印刷', subtitle: '耐久性のある素材、様々な形状、あらゆる表面に対応', price: '¥10〜', image: '/images/hero/hero-sticker-ja.webp', href: '/product/waterproof-stickers/' },
+      { title: 'ギフトボックス印刷', subtitle: '高級感のある包装でブランド価値を向上', price: '¥95〜', image: '/images/hero/hero-gift-box-ja.webp', href: '/product/gift-boxes/' },
+      { title: 'ポスター印刷', subtitle: '大判出力、鮮やかな色彩、広告に最適', price: '¥285〜', image: '/images/hero/hero-poster-ja.webp', href: '/product/a2-posters/' }
     ],
   },
 };
