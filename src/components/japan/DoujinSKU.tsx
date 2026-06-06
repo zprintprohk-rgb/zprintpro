@@ -104,10 +104,14 @@ export function DoujinSKU({ locale }: DoujinSKUProps) {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
           {t.items.map((item) => (
-            <div key={item.slug} className="bg-white rounded-2xl p-4">
+            <Link
+              key={item.slug}
+              href={`/${locale}/services/seo/${item.slug}/`}
+              className="bg-white rounded-2xl p-4 block"
+            >
               <h3 className="font-semibold text-slate-900 text-sm">{item.name}</h3>
               <p className="text-xs text-slate-500">{item.price}</p>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
