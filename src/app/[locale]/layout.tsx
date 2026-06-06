@@ -63,14 +63,19 @@ export default function RootLayout({
             __html: JSON.stringify(generateWebsiteJsonLd()),
           }}
         />
-        {process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN && (
-          <script
-            async
-            defer
-            data-domain={process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN}
-            src="https://plausible.io/js/script.js"
-          />
-        )}
+        {(() => {
+          // Plausible 域名：优先 env var，否则硬编码 zprintpro.com
+          // 硬编码 fallback 确保 CF Pages env 漏配时仍生效
+          const plausibleDomain = process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN || 'zprintpro.com';
+          return (
+            <script
+              async
+              defer
+              data-domain={plausibleDomain}
+              src="https://plausible.io/js/script.js"
+            />
+          );
+        })()}
         {process.env.NEXT_PUBLIC_GA_ID && (
           <>
             <script
