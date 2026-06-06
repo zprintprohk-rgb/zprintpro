@@ -96,68 +96,13 @@ export function DoujinSKU({ locale }: DoujinSKUProps) {
   return (
     <section className="py-12 md:py-16 bg-gradient-to-br from-pink-50 via-white to-purple-50">
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-        {/* 标题 */}
         <div className="text-center mb-8 md:mb-12">
           <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-2">
             {t.sectionTitle}
           </h2>
           <p className="text-slate-500 text-sm md:text-base">{t.sectionSubtitle}</p>
         </div>
-
-        {/* 5 SKU 网格 */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6">
-          {t.items.map((item) => {
-            return (
-              <Link
-                key={item.slug}
-                href={`/${locale}/services/seo/${item.slug}/`}
-                onClick={() => trackProductView(item.slug, 'doujin_grid_click')}
-                className="group relative rounded-2xl border-2 border-transparent bg-gradient-to-br from-pink-400/20 to-purple-500/20 p-[2px] hover:from-pink-400/60 hover:to-purple-500/60 transition-all duration-300"
-              >
-                <div className="bg-white rounded-2xl p-4 md:p-5 h-full flex flex-col">
-                  {/* 真实图（已通过 scripts/convert-doujin-to-webp.mjs 转换为 webp） */}
-                  <div className="aspect-square rounded-xl bg-gradient-to-br from-pink-50 to-purple-50 flex items-center justify-center mb-3 overflow-hidden relative">
-                    <img
-                      src={`/images/japan/${item.slug}.webp`}
-                      alt={`${item.name} - ${item.spec}`}
-                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                      loading="lazy"
-                      decoding="async"
-                    />
-                  </div>
-                  {/* SKU 名 */}
-                  <h3 className="font-semibold text-slate-900 text-sm md:text-base mb-1 line-clamp-2">
-                    {item.name}
-                  </h3>
-                  <p className="text-xs text-slate-500 mb-2 line-clamp-2">{item.spec}</p>
-                  {/* 价格 + 标签 */}
-                  <div className="mt-auto flex items-end justify-between gap-2">
-                    <span className="text-sm md:text-base font-bold text-amber-600">
-                      {item.price}
-                    </span>
-                    <span
-                      className={`text-[10px] px-2 py-0.5 rounded-full border font-medium ${TAG_STYLES[item.tag]}`}
-                    >
-                      {t.badges[item.tag]}
-                    </span>
-                  </div>
-                </div>
-              </Link>
-            );
-          })}
-        </div>
-
-        {/* 底部 WhatsApp CTA */}
-        <div className="text-center mt-8">
-          <a
-            href={generateWhatsAppLink(locale, { source: 'doujin-grid' })}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold px-6 py-3 rounded-full transition-colors"
-          >
-            {t.ctaText}
-          </a>
-        </div>
+        <p className="text-center text-slate-400 text-sm">[DoujinSKU grid temporarily simplified for SSR debugging]</p>
       </div>
     </section>
   );
