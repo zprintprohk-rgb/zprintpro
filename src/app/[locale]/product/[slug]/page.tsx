@@ -17,6 +17,7 @@ import {
 import { 
   generateProductMetadata, 
   generateProductJsonLd,
+  generateProductImageJsonLd,
   generateBreadcrumbJsonLd,
   generateBusinessJsonLd,
 
@@ -162,6 +163,12 @@ export default function ProductPage({
     productRating,
     locale
   );
+  // ImageObject Schema（獨立節點，不影響 Product ranking）
+  const productImageJsonLd = generateProductImageJsonLd(
+    product.imagesByLocale?.[locale] || [],
+    product.name,
+    locale
+  );
   const businessJsonLd = generateBusinessJsonLd(locale);
   const breadcrumbJsonLd = generateBreadcrumbJsonLd(breadcrumbItems);
 
@@ -255,6 +262,7 @@ export default function ProductPage({
     <>
       {/* 结构化数据 */}
       <JsonLd data={productJsonLd} />
+      <JsonLd data={productImageJsonLd} />
       <JsonLd data={businessJsonLd} />
       <JsonLd data={breadcrumbJsonLd} />
       {faqJsonLd && <JsonLd data={faqJsonLd} />}

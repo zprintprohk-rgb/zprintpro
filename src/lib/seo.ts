@@ -730,6 +730,55 @@ export function generateProductJsonLd(
   return schema;
 }
 
+/**
+ * 生成產品 ImageObject Schema JSON-LD
+ * 補充 Google 圖片搜索結構化數據（不影響 Product schema 已有 ranking）
+ * @param imageUrls 單個 URL 或多圖 URL 數組（多圖會取首圖為 contentUrl）
+ * @param productName 產品名稱
+ * @param locale 語言
+ */
+export function generateProductImageJsonLd(
+  imageUrls: string | string[],
+  productName: string,
+  locale: Locale = 'zh-hk'
+): SchemaOrgData {
+  const urls = Array.isArray(imageUrls) ? imageUrls : [imageUrls];
+  const main = urls[0] || '';
+  const alt = locale === 'zh-hk'
+    ? `${productName} 高清產品圖`
+    : locale === 'ja'
+    ? `${productName} 高画質商品画像`
+    : `${productName} high-resolution product image`;
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'ImageObject',
+    contentUrl: main,
+    url: main,
+    name: alt,
+    description: alt,
+    width: '1024',
+    height: '1024',
+    encodingFormat: 'image/webp',
+    uploadDate: new Date().toISOString(),
+    inLanguage: locale,
+    author: {
+      '@type': 'Organization',
+      name: siteConfig.name,
+      url: siteConfig.url,
+    },
+    copyrightHolder: {
+      '@type': 'Organization',
+      name: siteConfig.name,
+    },
+    keywords: locale === 'zh-hk'
+      ? `${productName} 香港印刷 ZPrintPro`
+      : locale === 'ja'
+      ? `${productName} 印刷 ZPrintPro`
+      : `${productName} Hong Kong printing ZPrintPro`,
+  };
+}
+
 // 生成產品評價結構化數據
 export function generateProductReviewsJsonLd(
   productName: string,
