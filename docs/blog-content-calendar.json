@@ -1,0 +1,444 @@
+{
+  "generatedAt": "2026-06-06T22:00:58.558Z",
+  "totalWeeks": 4,
+  "totalPosts": 12,
+  "frequencyPerWeek": 3,
+  "frequencyTarget": 4,
+  "weeks": [
+    {
+      "week": 1,
+      "posts": [
+        {
+          "week": 1,
+          "locale": "zh-hk",
+          "topic": "香港 Same Day 印刷完全指南",
+          "keyword": "香港 Same Day 印刷",
+          "intent": "service",
+          "meta_description": "香港 Same Day 印刷完全指南。香港 Same Day 印刷專家指南，附報價案例。智印云香港 Same Day 印刷專家｜ISO9001｜FSC認證｜24H交貨。",
+          "slug": "香港-same-day-印刷",
+          "outline": [
+            "為什麼 香港 Same Day 印刷完全指南 在 2026 年越來越重要？",
+            "常見痛點：買家最常問的 3 個問題",
+            "解決方案：4 步流程（圖解）",
+            "報價對比：智印云 vs 同業（HK$ 對比）",
+            "真實案例：客戶成功故事",
+            "FAQ：5 個最常見問題（AI 搜索友好）",
+            "行動呼籲：免費 WhatsApp 報價"
+          ],
+          "faq": [
+            "香港 Same Day 印刷完全指南需要多長時間？",
+            "香港 Same Day 印刷完全指南的價格大約多少？",
+            "智印云提供 香港 Same Day 印刷完全指南服務嗎？",
+            "香港 Same Day 印刷完全指南需要注意什麼？",
+            "如何開始 香港 Same Day 印刷完全指南？"
+          ],
+          "internal_links_suggestion": [
+            "/zh-hk/",
+            "/zh-hk/product/premium-business-cards/",
+            "/zh-hk/contact/"
+          ],
+          "image_alt": "香港 Same Day 印刷完全指南 - 香港 Same Day 印刷 - ZprintPro 智印云",
+          "ai_prompt": "# 任務\n\n寫一篇關於「香港 Same Day 印刷完全指南」的 SEO + GEO 友好博客文章，目標關鍵詞：「香港 Same Day 印刷」。\n\n# 結構（嚴格按 outline 寫）\n\n1. 為什麼 香港 Same Day 印刷完全指南 在 2026 年越來越重要？\n2. 常見痛點：買家最常問的 3 個問題\n3. 解決方案：4 步流程（圖解）\n4. 報價對比：智印云 vs 同業（HK$ 對比）\n5. 真實案例：客戶成功故事\n6. FAQ：5 個最常見問題（AI 搜索友好）\n7. 行動呼籲：免費 WhatsApp 報價\n\n# 字數\n- 1500-2000 字（繁體中文）\n- 不要水內容，每段都要有實質信息\n\n# SEO 優化\n- 標題包含目標關鍵詞\n- H2 子標題包含關鍵詞變體\n- 內鏈 3-5 個（指向 zprintpro.com 產品/分類頁）\n- 外鏈 2-3 個（權威來源）\n- Meta description 150-160 字\n- 圖片 alt 包含關鍵詞\n\n# GEO 友好（AI 搜索）\n- FAQ 章节 5 个 Q&A\n- 每个 Q&A 用结构化问答格式\n- 引用源标注（[1]、[2]...）\n- 文章末尾加\"参考来源\"\n\n# 語氣\n- 專業但親和\n- 數據支持（不要空談）\n- 港式繁體中文\n- 智印云 ZprintPro 品牌自然植入\n\n# 輸出格式\nMarkdown，含 frontmatter（title/meta_description/keywords/tags）。",
+          "estimated_words": 1750,
+          "status": "brief-ready"
+        },
+        {
+          "week": 1,
+          "locale": "en",
+          "topic": "Same Day Printing Hong Kong: Complete Guide for Event Organizers",
+          "keyword": "same day printing hong kong",
+          "intent": "service",
+          "meta_description": "Same Day Printing Hong Kong: Complete Guide for Event Organizers. Expert same day printing hong kong guide with case studies. ZprintPro Hong Kong Same Day Printing | ISO9001 | FSC Certified | 24H Delivery.",
+          "slug": "same-day-printing-hong-kong",
+          "outline": [
+            "Why Same Day Printing Hong Kong: Complete Guide for Event Organizers matters in 2026",
+            "Top 3 pain points buyers ask about",
+            "Solution: 4-step workflow (with diagrams)",
+            "Price comparison: ZprintPro vs competitors (USD/HKD)",
+            "Case study: Customer success story",
+            "FAQ: 5 most common questions (AI-search friendly)",
+            "CTA: Free WhatsApp quote"
+          ],
+          "faq": [
+            "How long does Same Day Printing Hong Kong: Complete Guide for Event Organizers take?",
+            "How much does Same Day Printing Hong Kong: Complete Guide for Event Organizers cost?",
+            "Does ZprintPro offer Same Day Printing Hong Kong: Complete Guide for Event Organizers?",
+            "What to watch out for with Same Day Printing Hong Kong: Complete Guide for Event Organizers?",
+            "How to get started with Same Day Printing Hong Kong: Complete Guide for Event Organizers?"
+          ],
+          "internal_links_suggestion": [
+            "/en/",
+            "/en/product/premium-business-cards/",
+            "/en/contact/"
+          ],
+          "image_alt": "Same Day Printing Hong Kong: Complete Guide for Event Organizers - same day printing hong kong - ZprintPro 智印云",
+          "ai_prompt": "# Task\n\nWrite an SEO + GEO-friendly blog post about \"Same Day Printing Hong Kong: Complete Guide for Event Organizers\", target keyword: \"same day printing hong kong\".\n\n# Structure (strictly follow outline)\n\n1. Why Same Day Printing Hong Kong: Complete Guide for Event Organizers matters in 2026\n2. Top 3 pain points buyers ask about\n3. Solution: 4-step workflow (with diagrams)\n4. Price comparison: ZprintPro vs competitors (USD/HKD)\n5. Case study: Customer success story\n6. FAQ: 5 most common questions (AI-search friendly)\n7. CTA: Free WhatsApp quote\n\n# Word count\n- 1500-2000 words (English)\n- No fluff, every paragraph must have substantive information\n\n# SEO optimization\n- Title contains target keyword\n- H2 subheadings contain keyword variations\n- Internal links 3-5 (to zprintpro.com product/category pages)\n- External links 2-3 (authoritative sources)\n- Meta description 150-160 chars\n- Image alts contain keyword\n\n# GEO-friendly (AI search)\n- FAQ section 5 Q&A\n- Each Q&A in structured question-answer format\n- Source citations ([1], [2]...)\n- \"References\" section at end\n\n# Tone\n- Professional but approachable\n- Data-backed (no empty claims)\n- ZprintPro brand naturally embedded\n\n# Output format\nMarkdown with frontmatter (title/meta_description/keywords/tags).",
+          "estimated_words": 1750,
+          "status": "brief-ready"
+        },
+        {
+          "week": 1,
+          "locale": "ja",
+          "topic": "同人誌印刷 完全ガイド：少ロット vs 大量印刷の選び方",
+          "keyword": "同人誌 印刷",
+          "intent": "guide",
+          "meta_description": "同人誌印刷 完全ガイド：少ロット vs 大量印刷の選び方。同人誌 印刷の專門ガイド。智印云香港即日印刷｜ISO9001｜FSC認証｜24時間納品。",
+          "slug": "同人誌-印刷",
+          "outline": [
+            "なぜ 同人誌印刷 完全ガイド：少ロット vs 大量印刷の選び方 が 2026 年に重要か",
+            "よくある課題：購入者が聞く 3 つの質問",
+            "解決策：4 ステップフロー（図解）",
+            "価格比較：智印云 vs 競合（JPY/HKD）",
+            "事例：顧客成功ストーリー",
+            "FAQ：5 つのよくある質問（AI 検索対応）",
+            "CTA：無料 WhatsApp 見積もり"
+          ],
+          "faq": [
+            "同人誌印刷 完全ガイド：少ロット vs 大量印刷の選び方にはどのくらい時間がかかりますか？",
+            "同人誌印刷 完全ガイド：少ロット vs 大量印刷の選び方の価格はいくらですか？",
+            "智印云は 同人誌印刷 完全ガイド：少ロット vs 大量印刷の選び方サービスを提供していますか？",
+            "同人誌印刷 完全ガイド：少ロット vs 大量印刷の選び方で注意すべき点は？",
+            "同人誌印刷 完全ガイド：少ロット vs 大量印刷の選び方を始めるには？"
+          ],
+          "internal_links_suggestion": [
+            "/ja/",
+            "/ja/product/premium-business-cards/",
+            "/ja/contact/"
+          ],
+          "image_alt": "同人誌印刷 完全ガイド：少ロット vs 大量印刷の選び方 - 同人誌 印刷 - ZprintPro 智印云",
+          "ai_prompt": "# タスク\n\n「同人誌印刷 完全ガイド：少ロット vs 大量印刷の選び方」について SEO + GEO 対応のブログ記事を書く。ターゲットキーワード：「同人誌 印刷」。\n\n# 構造（アウトライン厳守）\n\n1. なぜ 同人誌印刷 完全ガイド：少ロット vs 大量印刷の選び方 が 2026 年に重要か\n2. よくある課題：購入者が聞く 3 つの質問\n3. 解決策：4 ステップフロー（図解）\n4. 価格比較：智印云 vs 競合（JPY/HKD）\n5. 事例：顧客成功ストーリー\n6. FAQ：5 つのよくある質問（AI 検索対応）\n7. CTA：無料 WhatsApp 見積もり\n\n# 文字数\n- 1500-2000 文字（日本語）\n- 水内容禁止、各段落に実質情報\n\n# SEO 最適化\n- タイトルにターゲットキーワード\n- H2 サブタイトルにキーワードバリエーション\n- 内部リンク 3-5（zprintpro.com 製品/カテゴリページへ）\n- 外部リンク 2-3（権威ソース）\n- Meta description 150-160 文字\n- 画像 alt にキーワード\n\n# GEO 対応（AI 検索）\n- FAQ セクション 5 Q&A\n- 各 Q&A は構造化された質問回答形式\n- 出典表記（[1]、[2]...）\n- 記事末尾に「参考来源」\n\n# トーン\n- 専門的だが親しみやすい\n- データバックアップ（空論禁止）\n- 智印云 ZprintPro ブランド自然に組み込み\n\n# 出力形式\nフロントマター付き Markdown（title/meta_description/keywords/tags）。",
+          "estimated_words": 1750,
+          "status": "brief-ready"
+        }
+      ]
+    },
+    {
+      "week": 2,
+      "posts": [
+        {
+          "week": 2,
+          "locale": "zh-hk",
+          "topic": "觀塘印刷 vs 上環印刷：港島 vs 九龍印刷公司比較",
+          "keyword": "觀塘印刷",
+          "intent": "comparison",
+          "meta_description": "觀塘印刷 vs 上環印刷：港島 vs 九龍印刷公司比較。觀塘印刷專家指南，附報價案例。智印云香港 Same Day 印刷專家｜ISO9001｜FSC認證｜24H交貨。",
+          "slug": "觀塘印刷",
+          "outline": [
+            "為什麼 觀塘印刷 vs 上環印刷：港島 vs 九龍印刷公司比較 在 2026 年越來越重要？",
+            "常見痛點：買家最常問的 3 個問題",
+            "解決方案：4 步流程（圖解）",
+            "報價對比：智印云 vs 同業（HK$ 對比）",
+            "真實案例：客戶成功故事",
+            "FAQ：5 個最常見問題（AI 搜索友好）",
+            "行動呼籲：免費 WhatsApp 報價"
+          ],
+          "faq": [
+            "觀塘印刷 vs 上環印刷：港島 vs 九龍印刷公司比較需要多長時間？",
+            "觀塘印刷 vs 上環印刷：港島 vs 九龍印刷公司比較的價格大約多少？",
+            "智印云提供 觀塘印刷 vs 上環印刷：港島 vs 九龍印刷公司比較服務嗎？",
+            "觀塘印刷 vs 上環印刷：港島 vs 九龍印刷公司比較需要注意什麼？",
+            "如何開始 觀塘印刷 vs 上環印刷：港島 vs 九龍印刷公司比較？"
+          ],
+          "internal_links_suggestion": [
+            "/zh-hk/",
+            "/zh-hk/product/premium-business-cards/",
+            "/zh-hk/contact/"
+          ],
+          "image_alt": "觀塘印刷 vs 上環印刷：港島 vs 九龍印刷公司比較 - 觀塘印刷 - ZprintPro 智印云",
+          "ai_prompt": "# 任務\n\n寫一篇關於「觀塘印刷 vs 上環印刷：港島 vs 九龍印刷公司比較」的 SEO + GEO 友好博客文章，目標關鍵詞：「觀塘印刷」。\n\n# 結構（嚴格按 outline 寫）\n\n1. 為什麼 觀塘印刷 vs 上環印刷：港島 vs 九龍印刷公司比較 在 2026 年越來越重要？\n2. 常見痛點：買家最常問的 3 個問題\n3. 解決方案：4 步流程（圖解）\n4. 報價對比：智印云 vs 同業（HK$ 對比）\n5. 真實案例：客戶成功故事\n6. FAQ：5 個最常見問題（AI 搜索友好）\n7. 行動呼籲：免費 WhatsApp 報價\n\n# 字數\n- 1500-2000 字（繁體中文）\n- 不要水內容，每段都要有實質信息\n\n# SEO 優化\n- 標題包含目標關鍵詞\n- H2 子標題包含關鍵詞變體\n- 內鏈 3-5 個（指向 zprintpro.com 產品/分類頁）\n- 外鏈 2-3 個（權威來源）\n- Meta description 150-160 字\n- 圖片 alt 包含關鍵詞\n\n# GEO 友好（AI 搜索）\n- FAQ 章节 5 个 Q&A\n- 每个 Q&A 用结构化问答格式\n- 引用源标注（[1]、[2]...）\n- 文章末尾加\"参考来源\"\n\n# 語氣\n- 專業但親和\n- 數據支持（不要空談）\n- 港式繁體中文\n- 智印云 ZprintPro 品牌自然植入\n\n# 輸出格式\nMarkdown，含 frontmatter（title/meta_description/keywords/tags）。",
+          "estimated_words": 1750,
+          "status": "brief-ready"
+        },
+        {
+          "week": 2,
+          "locale": "en",
+          "topic": "FSC Certified Paper vs Regular: Sustainable Printing Cost Analysis",
+          "keyword": "sustainable printing",
+          "intent": "analysis",
+          "meta_description": "FSC Certified Paper vs Regular: Sustainable Printing Cost Analysis. Expert sustainable printing guide with case studies. ZprintPro Hong Kong Same Day Printing | ISO9001 | FSC Certified | 24H Delivery.",
+          "slug": "sustainable-printing",
+          "outline": [
+            "Why FSC Certified Paper vs Regular: Sustainable Printing Cost Analysis matters in 2026",
+            "Top 3 pain points buyers ask about",
+            "Solution: 4-step workflow (with diagrams)",
+            "Price comparison: ZprintPro vs competitors (USD/HKD)",
+            "Case study: Customer success story",
+            "FAQ: 5 most common questions (AI-search friendly)",
+            "CTA: Free WhatsApp quote"
+          ],
+          "faq": [
+            "How long does FSC Certified Paper vs Regular: Sustainable Printing Cost Analysis take?",
+            "How much does FSC Certified Paper vs Regular: Sustainable Printing Cost Analysis cost?",
+            "Does ZprintPro offer FSC Certified Paper vs Regular: Sustainable Printing Cost Analysis?",
+            "What to watch out for with FSC Certified Paper vs Regular: Sustainable Printing Cost Analysis?",
+            "How to get started with FSC Certified Paper vs Regular: Sustainable Printing Cost Analysis?"
+          ],
+          "internal_links_suggestion": [
+            "/en/",
+            "/en/product/premium-business-cards/",
+            "/en/contact/"
+          ],
+          "image_alt": "FSC Certified Paper vs Regular: Sustainable Printing Cost Analysis - sustainable printing - ZprintPro 智印云",
+          "ai_prompt": "# Task\n\nWrite an SEO + GEO-friendly blog post about \"FSC Certified Paper vs Regular: Sustainable Printing Cost Analysis\", target keyword: \"sustainable printing\".\n\n# Structure (strictly follow outline)\n\n1. Why FSC Certified Paper vs Regular: Sustainable Printing Cost Analysis matters in 2026\n2. Top 3 pain points buyers ask about\n3. Solution: 4-step workflow (with diagrams)\n4. Price comparison: ZprintPro vs competitors (USD/HKD)\n5. Case study: Customer success story\n6. FAQ: 5 most common questions (AI-search friendly)\n7. CTA: Free WhatsApp quote\n\n# Word count\n- 1500-2000 words (English)\n- No fluff, every paragraph must have substantive information\n\n# SEO optimization\n- Title contains target keyword\n- H2 subheadings contain keyword variations\n- Internal links 3-5 (to zprintpro.com product/category pages)\n- External links 2-3 (authoritative sources)\n- Meta description 150-160 chars\n- Image alts contain keyword\n\n# GEO-friendly (AI search)\n- FAQ section 5 Q&A\n- Each Q&A in structured question-answer format\n- Source citations ([1], [2]...)\n- \"References\" section at end\n\n# Tone\n- Professional but approachable\n- Data-backed (no empty claims)\n- ZprintPro brand naturally embedded\n\n# Output format\nMarkdown with frontmatter (title/meta_description/keywords/tags).",
+          "estimated_words": 1750,
+          "status": "brief-ready"
+        },
+        {
+          "week": 2,
+          "locale": "ja",
+          "topic": "即日発送 香港ポスター印刷：日本イベント向け",
+          "keyword": "ポスター印刷 香港",
+          "intent": "service",
+          "meta_description": "即日発送 香港ポスター印刷：日本イベント向け。ポスター印刷 香港の專門ガイド。智印云香港即日印刷｜ISO9001｜FSC認証｜24時間納品。",
+          "slug": "印刷-香港",
+          "outline": [
+            "なぜ 即日発送 香港ポスター印刷：日本イベント向け が 2026 年に重要か",
+            "よくある課題：購入者が聞く 3 つの質問",
+            "解決策：4 ステップフロー（図解）",
+            "価格比較：智印云 vs 競合（JPY/HKD）",
+            "事例：顧客成功ストーリー",
+            "FAQ：5 つのよくある質問（AI 検索対応）",
+            "CTA：無料 WhatsApp 見積もり"
+          ],
+          "faq": [
+            "即日発送 香港ポスター印刷：日本イベント向けにはどのくらい時間がかかりますか？",
+            "即日発送 香港ポスター印刷：日本イベント向けの価格はいくらですか？",
+            "智印云は 即日発送 香港ポスター印刷：日本イベント向けサービスを提供していますか？",
+            "即日発送 香港ポスター印刷：日本イベント向けで注意すべき点は？",
+            "即日発送 香港ポスター印刷：日本イベント向けを始めるには？"
+          ],
+          "internal_links_suggestion": [
+            "/ja/",
+            "/ja/product/premium-business-cards/",
+            "/ja/contact/"
+          ],
+          "image_alt": "即日発送 香港ポスター印刷：日本イベント向け - ポスター印刷 香港 - ZprintPro 智印云",
+          "ai_prompt": "# タスク\n\n「即日発送 香港ポスター印刷：日本イベント向け」について SEO + GEO 対応のブログ記事を書く。ターゲットキーワード：「ポスター印刷 香港」。\n\n# 構造（アウトライン厳守）\n\n1. なぜ 即日発送 香港ポスター印刷：日本イベント向け が 2026 年に重要か\n2. よくある課題：購入者が聞く 3 つの質問\n3. 解決策：4 ステップフロー（図解）\n4. 価格比較：智印云 vs 競合（JPY/HKD）\n5. 事例：顧客成功ストーリー\n6. FAQ：5 つのよくある質問（AI 検索対応）\n7. CTA：無料 WhatsApp 見積もり\n\n# 文字数\n- 1500-2000 文字（日本語）\n- 水内容禁止、各段落に実質情報\n\n# SEO 最適化\n- タイトルにターゲットキーワード\n- H2 サブタイトルにキーワードバリエーション\n- 内部リンク 3-5（zprintpro.com 製品/カテゴリページへ）\n- 外部リンク 2-3（権威ソース）\n- Meta description 150-160 文字\n- 画像 alt にキーワード\n\n# GEO 対応（AI 検索）\n- FAQ セクション 5 Q&A\n- 各 Q&A は構造化された質問回答形式\n- 出典表記（[1]、[2]...）\n- 記事末尾に「参考来源」\n\n# トーン\n- 専門的だが親しみやすい\n- データバックアップ（空論禁止）\n- 智印云 ZprintPro ブランド自然に組み込み\n\n# 出力形式\nフロントマター付き Markdown（title/meta_description/keywords/tags）。",
+          "estimated_words": 1750,
+          "status": "brief-ready"
+        }
+      ]
+    },
+    {
+      "week": 3,
+      "posts": [
+        {
+          "week": 3,
+          "locale": "zh-hk",
+          "topic": "如何印一盒 100 個禮盒：包裝印刷流程圖解",
+          "keyword": "包裝印刷",
+          "intent": "howto",
+          "meta_description": "如何印一盒 100 個禮盒：包裝印刷流程圖解。包裝印刷專家指南，附報價案例。智印云香港 Same Day 印刷專家｜ISO9001｜FSC認證｜24H交貨。",
+          "slug": "包裝印刷",
+          "outline": [
+            "為什麼 如何印一盒 100 個禮盒：包裝印刷流程圖解 在 2026 年越來越重要？",
+            "常見痛點：買家最常問的 3 個問題",
+            "解決方案：4 步流程（圖解）",
+            "報價對比：智印云 vs 同業（HK$ 對比）",
+            "真實案例：客戶成功故事",
+            "FAQ：5 個最常見問題（AI 搜索友好）",
+            "行動呼籲：免費 WhatsApp 報價"
+          ],
+          "faq": [
+            "如何印一盒 100 個禮盒：包裝印刷流程圖解需要多長時間？",
+            "如何印一盒 100 個禮盒：包裝印刷流程圖解的價格大約多少？",
+            "智印云提供 如何印一盒 100 個禮盒：包裝印刷流程圖解服務嗎？",
+            "如何印一盒 100 個禮盒：包裝印刷流程圖解需要注意什麼？",
+            "如何開始 如何印一盒 100 個禮盒：包裝印刷流程圖解？"
+          ],
+          "internal_links_suggestion": [
+            "/zh-hk/",
+            "/zh-hk/product/premium-business-cards/",
+            "/zh-hk/contact/"
+          ],
+          "image_alt": "如何印一盒 100 個禮盒：包裝印刷流程圖解 - 包裝印刷 - ZprintPro 智印云",
+          "ai_prompt": "# 任務\n\n寫一篇關於「如何印一盒 100 個禮盒：包裝印刷流程圖解」的 SEO + GEO 友好博客文章，目標關鍵詞：「包裝印刷」。\n\n# 結構（嚴格按 outline 寫）\n\n1. 為什麼 如何印一盒 100 個禮盒：包裝印刷流程圖解 在 2026 年越來越重要？\n2. 常見痛點：買家最常問的 3 個問題\n3. 解決方案：4 步流程（圖解）\n4. 報價對比：智印云 vs 同業（HK$ 對比）\n5. 真實案例：客戶成功故事\n6. FAQ：5 個最常見問題（AI 搜索友好）\n7. 行動呼籲：免費 WhatsApp 報價\n\n# 字數\n- 1500-2000 字（繁體中文）\n- 不要水內容，每段都要有實質信息\n\n# SEO 優化\n- 標題包含目標關鍵詞\n- H2 子標題包含關鍵詞變體\n- 內鏈 3-5 個（指向 zprintpro.com 產品/分類頁）\n- 外鏈 2-3 個（權威來源）\n- Meta description 150-160 字\n- 圖片 alt 包含關鍵詞\n\n# GEO 友好（AI 搜索）\n- FAQ 章节 5 个 Q&A\n- 每个 Q&A 用结构化问答格式\n- 引用源标注（[1]、[2]...）\n- 文章末尾加\"参考来源\"\n\n# 語氣\n- 專業但親和\n- 數據支持（不要空談）\n- 港式繁體中文\n- 智印云 ZprintPro 品牌自然植入\n\n# 輸出格式\nMarkdown，含 frontmatter（title/meta_description/keywords/tags）。",
+          "estimated_words": 1750,
+          "status": "brief-ready"
+        },
+        {
+          "week": 3,
+          "locale": "en",
+          "topic": "How to Print 100 Gift Boxes: Packaging Printing Workflow Explained",
+          "keyword": "custom packaging",
+          "intent": "howto",
+          "meta_description": "How to Print 100 Gift Boxes: Packaging Printing Workflow Explained. Expert custom packaging guide with case studies. ZprintPro Hong Kong Same Day Printing | ISO9001 | FSC Certified | 24H Delivery.",
+          "slug": "custom-packaging",
+          "outline": [
+            "Why How to Print 100 Gift Boxes: Packaging Printing Workflow Explained matters in 2026",
+            "Top 3 pain points buyers ask about",
+            "Solution: 4-step workflow (with diagrams)",
+            "Price comparison: ZprintPro vs competitors (USD/HKD)",
+            "Case study: Customer success story",
+            "FAQ: 5 most common questions (AI-search friendly)",
+            "CTA: Free WhatsApp quote"
+          ],
+          "faq": [
+            "How long does How to Print 100 Gift Boxes: Packaging Printing Workflow Explained take?",
+            "How much does How to Print 100 Gift Boxes: Packaging Printing Workflow Explained cost?",
+            "Does ZprintPro offer How to Print 100 Gift Boxes: Packaging Printing Workflow Explained?",
+            "What to watch out for with How to Print 100 Gift Boxes: Packaging Printing Workflow Explained?",
+            "How to get started with How to Print 100 Gift Boxes: Packaging Printing Workflow Explained?"
+          ],
+          "internal_links_suggestion": [
+            "/en/",
+            "/en/product/premium-business-cards/",
+            "/en/contact/"
+          ],
+          "image_alt": "How to Print 100 Gift Boxes: Packaging Printing Workflow Explained - custom packaging - ZprintPro 智印云",
+          "ai_prompt": "# Task\n\nWrite an SEO + GEO-friendly blog post about \"How to Print 100 Gift Boxes: Packaging Printing Workflow Explained\", target keyword: \"custom packaging\".\n\n# Structure (strictly follow outline)\n\n1. Why How to Print 100 Gift Boxes: Packaging Printing Workflow Explained matters in 2026\n2. Top 3 pain points buyers ask about\n3. Solution: 4-step workflow (with diagrams)\n4. Price comparison: ZprintPro vs competitors (USD/HKD)\n5. Case study: Customer success story\n6. FAQ: 5 most common questions (AI-search friendly)\n7. CTA: Free WhatsApp quote\n\n# Word count\n- 1500-2000 words (English)\n- No fluff, every paragraph must have substantive information\n\n# SEO optimization\n- Title contains target keyword\n- H2 subheadings contain keyword variations\n- Internal links 3-5 (to zprintpro.com product/category pages)\n- External links 2-3 (authoritative sources)\n- Meta description 150-160 chars\n- Image alts contain keyword\n\n# GEO-friendly (AI search)\n- FAQ section 5 Q&A\n- Each Q&A in structured question-answer format\n- Source citations ([1], [2]...)\n- \"References\" section at end\n\n# Tone\n- Professional but approachable\n- Data-backed (no empty claims)\n- ZprintPro brand naturally embedded\n\n# Output format\nMarkdown with frontmatter (title/meta_description/keywords/tags).",
+          "estimated_words": 1750,
+          "status": "brief-ready"
+        },
+        {
+          "week": 3,
+          "locale": "ja",
+          "topic": "和紙名刺 vs 普通名刺：日本向けハイエンド印刷",
+          "keyword": "和紙名刺",
+          "intent": "comparison",
+          "meta_description": "和紙名刺 vs 普通名刺：日本向けハイエンド印刷。和紙名刺の專門ガイド。智印云香港即日印刷｜ISO9001｜FSC認証｜24時間納品。",
+          "slug": "和紙名刺",
+          "outline": [
+            "なぜ 和紙名刺 vs 普通名刺：日本向けハイエンド印刷 が 2026 年に重要か",
+            "よくある課題：購入者が聞く 3 つの質問",
+            "解決策：4 ステップフロー（図解）",
+            "価格比較：智印云 vs 競合（JPY/HKD）",
+            "事例：顧客成功ストーリー",
+            "FAQ：5 つのよくある質問（AI 検索対応）",
+            "CTA：無料 WhatsApp 見積もり"
+          ],
+          "faq": [
+            "和紙名刺 vs 普通名刺：日本向けハイエンド印刷にはどのくらい時間がかかりますか？",
+            "和紙名刺 vs 普通名刺：日本向けハイエンド印刷の価格はいくらですか？",
+            "智印云は 和紙名刺 vs 普通名刺：日本向けハイエンド印刷サービスを提供していますか？",
+            "和紙名刺 vs 普通名刺：日本向けハイエンド印刷で注意すべき点は？",
+            "和紙名刺 vs 普通名刺：日本向けハイエンド印刷を始めるには？"
+          ],
+          "internal_links_suggestion": [
+            "/ja/",
+            "/ja/product/premium-business-cards/",
+            "/ja/contact/"
+          ],
+          "image_alt": "和紙名刺 vs 普通名刺：日本向けハイエンド印刷 - 和紙名刺 - ZprintPro 智印云",
+          "ai_prompt": "# タスク\n\n「和紙名刺 vs 普通名刺：日本向けハイエンド印刷」について SEO + GEO 対応のブログ記事を書く。ターゲットキーワード：「和紙名刺」。\n\n# 構造（アウトライン厳守）\n\n1. なぜ 和紙名刺 vs 普通名刺：日本向けハイエンド印刷 が 2026 年に重要か\n2. よくある課題：購入者が聞く 3 つの質問\n3. 解決策：4 ステップフロー（図解）\n4. 価格比較：智印云 vs 競合（JPY/HKD）\n5. 事例：顧客成功ストーリー\n6. FAQ：5 つのよくある質問（AI 検索対応）\n7. CTA：無料 WhatsApp 見積もり\n\n# 文字数\n- 1500-2000 文字（日本語）\n- 水内容禁止、各段落に実質情報\n\n# SEO 最適化\n- タイトルにターゲットキーワード\n- H2 サブタイトルにキーワードバリエーション\n- 内部リンク 3-5（zprintpro.com 製品/カテゴリページへ）\n- 外部リンク 2-3（権威ソース）\n- Meta description 150-160 文字\n- 画像 alt にキーワード\n\n# GEO 対応（AI 検索）\n- FAQ セクション 5 Q&A\n- 各 Q&A は構造化された質問回答形式\n- 出典表記（[1]、[2]...）\n- 記事末尾に「参考来源」\n\n# トーン\n- 専門的だが親しみやすい\n- データバックアップ（空論禁止）\n- 智印云 ZprintPro ブランド自然に組み込み\n\n# 出力形式\nフロントマター付き Markdown（title/meta_description/keywords/tags）。",
+          "estimated_words": 1750,
+          "status": "brief-ready"
+        }
+      ]
+    },
+    {
+      "week": 4,
+      "posts": [
+        {
+          "week": 4,
+          "locale": "zh-hk",
+          "topic": "FSC 認證紙 vs 普通紙：環保印刷成本分析",
+          "keyword": "環保印刷",
+          "intent": "analysis",
+          "meta_description": "FSC 認證紙 vs 普通紙：環保印刷成本分析。環保印刷專家指南，附報價案例。智印云香港 Same Day 印刷專家｜ISO9001｜FSC認證｜24H交貨。",
+          "slug": "環保印刷",
+          "outline": [
+            "為什麼 FSC 認證紙 vs 普通紙：環保印刷成本分析 在 2026 年越來越重要？",
+            "常見痛點：買家最常問的 3 個問題",
+            "解決方案：4 步流程（圖解）",
+            "報價對比：智印云 vs 同業（HK$ 對比）",
+            "真實案例：客戶成功故事",
+            "FAQ：5 個最常見問題（AI 搜索友好）",
+            "行動呼籲：免費 WhatsApp 報價"
+          ],
+          "faq": [
+            "FSC 認證紙 vs 普通紙：環保印刷成本分析需要多長時間？",
+            "FSC 認證紙 vs 普通紙：環保印刷成本分析的價格大約多少？",
+            "智印云提供 FSC 認證紙 vs 普通紙：環保印刷成本分析服務嗎？",
+            "FSC 認證紙 vs 普通紙：環保印刷成本分析需要注意什麼？",
+            "如何開始 FSC 認證紙 vs 普通紙：環保印刷成本分析？"
+          ],
+          "internal_links_suggestion": [
+            "/zh-hk/",
+            "/zh-hk/product/premium-business-cards/",
+            "/zh-hk/contact/"
+          ],
+          "image_alt": "FSC 認證紙 vs 普通紙：環保印刷成本分析 - 環保印刷 - ZprintPro 智印云",
+          "ai_prompt": "# 任務\n\n寫一篇關於「FSC 認證紙 vs 普通紙：環保印刷成本分析」的 SEO + GEO 友好博客文章，目標關鍵詞：「環保印刷」。\n\n# 結構（嚴格按 outline 寫）\n\n1. 為什麼 FSC 認證紙 vs 普通紙：環保印刷成本分析 在 2026 年越來越重要？\n2. 常見痛點：買家最常問的 3 個問題\n3. 解決方案：4 步流程（圖解）\n4. 報價對比：智印云 vs 同業（HK$ 對比）\n5. 真實案例：客戶成功故事\n6. FAQ：5 個最常見問題（AI 搜索友好）\n7. 行動呼籲：免費 WhatsApp 報價\n\n# 字數\n- 1500-2000 字（繁體中文）\n- 不要水內容，每段都要有實質信息\n\n# SEO 優化\n- 標題包含目標關鍵詞\n- H2 子標題包含關鍵詞變體\n- 內鏈 3-5 個（指向 zprintpro.com 產品/分類頁）\n- 外鏈 2-3 個（權威來源）\n- Meta description 150-160 字\n- 圖片 alt 包含關鍵詞\n\n# GEO 友好（AI 搜索）\n- FAQ 章节 5 个 Q&A\n- 每个 Q&A 用结构化问答格式\n- 引用源标注（[1]、[2]...）\n- 文章末尾加\"参考来源\"\n\n# 語氣\n- 專業但親和\n- 數據支持（不要空談）\n- 港式繁體中文\n- 智印云 ZprintPro 品牌自然植入\n\n# 輸出格式\nMarkdown，含 frontmatter（title/meta_description/keywords/tags）。",
+          "estimated_words": 1750,
+          "status": "brief-ready"
+        },
+        {
+          "week": 4,
+          "locale": "en",
+          "topic": "Hong Kong vs Shenzhen Printing: Which to Choose for International Clients",
+          "keyword": "hong kong printing service",
+          "intent": "comparison",
+          "meta_description": "Hong Kong vs Shenzhen Printing: Which to Choose for International Clients. Expert hong kong printing service guide with case studies. ZprintPro Hong Kong Same Day Printing | ISO9001 | FSC Certified | 24H Delivery.",
+          "slug": "hong-kong-printing-service",
+          "outline": [
+            "Why Hong Kong vs Shenzhen Printing: Which to Choose for International Clients matters in 2026",
+            "Top 3 pain points buyers ask about",
+            "Solution: 4-step workflow (with diagrams)",
+            "Price comparison: ZprintPro vs competitors (USD/HKD)",
+            "Case study: Customer success story",
+            "FAQ: 5 most common questions (AI-search friendly)",
+            "CTA: Free WhatsApp quote"
+          ],
+          "faq": [
+            "How long does Hong Kong vs Shenzhen Printing: Which to Choose for International Clients take?",
+            "How much does Hong Kong vs Shenzhen Printing: Which to Choose for International Clients cost?",
+            "Does ZprintPro offer Hong Kong vs Shenzhen Printing: Which to Choose for International Clients?",
+            "What to watch out for with Hong Kong vs Shenzhen Printing: Which to Choose for International Clients?",
+            "How to get started with Hong Kong vs Shenzhen Printing: Which to Choose for International Clients?"
+          ],
+          "internal_links_suggestion": [
+            "/en/",
+            "/en/product/premium-business-cards/",
+            "/en/contact/"
+          ],
+          "image_alt": "Hong Kong vs Shenzhen Printing: Which to Choose for International Clients - hong kong printing service - ZprintPro 智印云",
+          "ai_prompt": "# Task\n\nWrite an SEO + GEO-friendly blog post about \"Hong Kong vs Shenzhen Printing: Which to Choose for International Clients\", target keyword: \"hong kong printing service\".\n\n# Structure (strictly follow outline)\n\n1. Why Hong Kong vs Shenzhen Printing: Which to Choose for International Clients matters in 2026\n2. Top 3 pain points buyers ask about\n3. Solution: 4-step workflow (with diagrams)\n4. Price comparison: ZprintPro vs competitors (USD/HKD)\n5. Case study: Customer success story\n6. FAQ: 5 most common questions (AI-search friendly)\n7. CTA: Free WhatsApp quote\n\n# Word count\n- 1500-2000 words (English)\n- No fluff, every paragraph must have substantive information\n\n# SEO optimization\n- Title contains target keyword\n- H2 subheadings contain keyword variations\n- Internal links 3-5 (to zprintpro.com product/category pages)\n- External links 2-3 (authoritative sources)\n- Meta description 150-160 chars\n- Image alts contain keyword\n\n# GEO-friendly (AI search)\n- FAQ section 5 Q&A\n- Each Q&A in structured question-answer format\n- Source citations ([1], [2]...)\n- \"References\" section at end\n\n# Tone\n- Professional but approachable\n- Data-backed (no empty claims)\n- ZprintPro brand naturally embedded\n\n# Output format\nMarkdown with frontmatter (title/meta_description/keywords/tags).",
+          "estimated_words": 1750,
+          "status": "brief-ready"
+        },
+        {
+          "week": 4,
+          "locale": "ja",
+          "topic": "FSC認証紙 vs 普通紙：環境対応印刷のコスト分析",
+          "keyword": "エコ印刷",
+          "intent": "analysis",
+          "meta_description": "FSC認証紙 vs 普通紙：環境対応印刷のコスト分析。エコ印刷の專門ガイド。智印云香港即日印刷｜ISO9001｜FSC認証｜24時間納品。",
+          "slug": "印刷",
+          "outline": [
+            "なぜ FSC認証紙 vs 普通紙：環境対応印刷のコスト分析 が 2026 年に重要か",
+            "よくある課題：購入者が聞く 3 つの質問",
+            "解決策：4 ステップフロー（図解）",
+            "価格比較：智印云 vs 競合（JPY/HKD）",
+            "事例：顧客成功ストーリー",
+            "FAQ：5 つのよくある質問（AI 検索対応）",
+            "CTA：無料 WhatsApp 見積もり"
+          ],
+          "faq": [
+            "FSC認証紙 vs 普通紙：環境対応印刷のコスト分析にはどのくらい時間がかかりますか？",
+            "FSC認証紙 vs 普通紙：環境対応印刷のコスト分析の価格はいくらですか？",
+            "智印云は FSC認証紙 vs 普通紙：環境対応印刷のコスト分析サービスを提供していますか？",
+            "FSC認証紙 vs 普通紙：環境対応印刷のコスト分析で注意すべき点は？",
+            "FSC認証紙 vs 普通紙：環境対応印刷のコスト分析を始めるには？"
+          ],
+          "internal_links_suggestion": [
+            "/ja/",
+            "/ja/product/premium-business-cards/",
+            "/ja/contact/"
+          ],
+          "image_alt": "FSC認証紙 vs 普通紙：環境対応印刷のコスト分析 - エコ印刷 - ZprintPro 智印云",
+          "ai_prompt": "# タスク\n\n「FSC認証紙 vs 普通紙：環境対応印刷のコスト分析」について SEO + GEO 対応のブログ記事を書く。ターゲットキーワード：「エコ印刷」。\n\n# 構造（アウトライン厳守）\n\n1. なぜ FSC認証紙 vs 普通紙：環境対応印刷のコスト分析 が 2026 年に重要か\n2. よくある課題：購入者が聞く 3 つの質問\n3. 解決策：4 ステップフロー（図解）\n4. 価格比較：智印云 vs 競合（JPY/HKD）\n5. 事例：顧客成功ストーリー\n6. FAQ：5 つのよくある質問（AI 検索対応）\n7. CTA：無料 WhatsApp 見積もり\n\n# 文字数\n- 1500-2000 文字（日本語）\n- 水内容禁止、各段落に実質情報\n\n# SEO 最適化\n- タイトルにターゲットキーワード\n- H2 サブタイトルにキーワードバリエーション\n- 内部リンク 3-5（zprintpro.com 製品/カテゴリページへ）\n- 外部リンク 2-3（権威ソース）\n- Meta description 150-160 文字\n- 画像 alt にキーワード\n\n# GEO 対応（AI 検索）\n- FAQ セクション 5 Q&A\n- 各 Q&A は構造化された質問回答形式\n- 出典表記（[1]、[2]...）\n- 記事末尾に「参考来源」\n\n# トーン\n- 専門的だが親しみやすい\n- データバックアップ（空論禁止）\n- 智印云 ZprintPro ブランド自然に組み込み\n\n# 出力形式\nフロントマター付き Markdown（title/meta_description/keywords/tags）。",
+          "estimated_words": 1750,
+          "status": "brief-ready"
+        }
+      ]
+    }
+  ],
+  "usage": {
+    "step1": "复制 ai_prompt 到 Kimi 2.6 / Claude / ChatGPT",
+    "step2": "让 AI 生成完整博客（1500-2000 字）",
+    "step3": "人工 review + 添加图片",
+    "step4": "保存为 src/data/blog-posts/{slug}.{locale}.md",
+    "step5": "更新 sitemap 提交 GSC"
+  }
+}

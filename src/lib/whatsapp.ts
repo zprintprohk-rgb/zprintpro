@@ -97,14 +97,19 @@ export function getWhatsAppLinkProps(
     target: '_blank',
     rel: 'noopener noreferrer',
     onClick: () => {
-      // 客户端动态 import 避免 SSR 引入 analytics 模块
+      // 客户端动态 import 避免 SSR 引入 analytics + inquiry 模块
       if (typeof window !== 'undefined') {
+        // 1) 埋点（Plausible / GA 事件）
         import('@/lib/analytics').then(({ trackWhatsappClick }) => {
           trackWhatsappClick({
             source: ctx.source,
             hasContext: !!(ctx.productName || ctx.size || ctx.material || ctx.quantity),
             productName: ctx.productName,
           });
+        });
+        // 2) 询盘落库（Supabase whatsapp_inquiries 表）
+        import('@/lib/whatsapp-inquiry').then(({ trackWhatsappInquiry }) => {
+          trackWhatsappInquiry({ locale, ctx });
         });
       }
     },
