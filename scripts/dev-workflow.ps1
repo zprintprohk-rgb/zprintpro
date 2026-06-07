@@ -142,7 +142,7 @@ if (Test-Path "src") {
 }
 $swFiles = @()
 if (Test-Path "public") {
-    $swFiles = @(Get-ChildItem "public" -Filter "sw.js","service-worker.js","serviceWorker.js" -ErrorAction SilentlyContinue)
+    $swFiles = @(Get-ChildItem "public" -Include "sw.js","service-worker.js","serviceWorker.js" -ErrorAction SilentlyContinue)
 }
 if ($swHits -or $swFiles) {
     Red "Service Worker detected - browser will cache stale error pages during high-frequency deploys"
