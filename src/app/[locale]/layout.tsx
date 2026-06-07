@@ -92,9 +92,21 @@ export default function RootLayout({
         <script
           dangerouslySetInnerHTML={{
             __html: `
+              // 2026-06-07 改造：禁用 SW 缓存（高频迭代期缓存导致用户端看到旧 500 错误页）
+              // 旧逻辑: navigator.serviceWorker.register('/sw.js')
+              // 新逻辑: 访问时自动注销所有 SW + 清除所有 caches，下次刷新拿最新代码
               if ('serviceWorker' in navigator) {
-                window.addEventListener('load', function() {
-                  navigator.serviceWorker.register('/sw.js');
+                navigator.serviceWorker.getRegistrations().then(function(registrations) {
+                  for (var i = 0; i < registrations.length; i++) {
+                    registrations[i].unregister();
+                  }
+                });
+              }
+              if ('caches' in window) {
+                caches.keys().then(function(names) {
+                  for (var i = 0; i < names.length; i++) {
+                    caches.delete(names[i]);
+                  }
                 });
               }
             `,
