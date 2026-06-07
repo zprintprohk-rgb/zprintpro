@@ -87,29 +87,36 @@ export const businessCardsFormulaV2: ProductFormula = (ctx: FormulaContext & { m
     deadline === 'same-day' ? 2.0 : deadline === 'rush' ? 1.5 : 1.0;
   const deadlineSurcharge = (setupCost + paperCost + finishingTotal) * (deadlineMultiplier - 1.0);
 
-  // 8. 基础总价 (HKD) = 印刷成本 + 运费
-  let baseCost = setupCost + paperCost + finishingTotal + shipping.costHKD + deadlineSurcharge;
+  // 8. 工厂成本 (HKD) — 印刷实际成本（不含运费）
+  // 运费单独走 1.1x 加价 (不进入毛利率加成, 客户运费不该被 45% 毛利加成)
+  const factoryCostHKD = setupCost + paperCost + finishingTotal + deadlineSurcharge;
+  const shippingMarkupHKD = shipping.costHKD * 1.1; // 运费加价 10% (覆盖包装处理)
+  const totalCostHKD = factoryCostHKD + shippingMarkupHKD;
 
-  // 9. 目标毛利率加成 (按市场)
-  // 例如美国目标 45%，价格 = 成本 / (1 - 0.45) = 成本 * 1.82
+  // 9. 目标毛利率加成 (按市场) — 只对工厂成本加, 不含运费
+  // 例如美国目标 45%，印刷价 = factoryCost / (1 - 0.45) = factoryCost * 1.82
   const marginMultiplier = 1 / (1 - m.targetMargin);
-  const pricedCost = baseCost * marginMultiplier;
+  const pricedFactoryHKD = factoryCostHKD * marginMultiplier;
+  const pricedShippingHKD = shippingMarkupHKD; // 运费不加毛利
+  const pricedCostHKD = pricedFactoryHKD + pricedShippingHKD;
 
-  // 10. FX 风险溢价 + 实际净收入
-  const totalCostHKD = setupCost + paperCost + finishingTotal + shipping.costHKD;
-  const fromCurrencyEstimate = m.currency;
-  const fxInputAmount = pricedCost * m.exchangeRate; // 客户付款本币（含目标毛利）
+  // 10. FX 计算 (修复双重换汇 bug 2026-06-07)
+  // 关键修复: 客户付款金额应该是 HKD → 本币 (用 markets.ts exchangeRate)
+  // 然后 fx.ts 不要再做反向换汇, 直接用本币计算支付成本
+  // 旧代码: fxInputAmount = pricedCost * exchangeRate (HKD→外币) 然后 fx.ts 又用 midMarketRate 反向
+  // 新代码: 直接传本币金额, 让 fx.ts 算支付成本
+  const customerPaysLocal = pricedCostHKD * m.exchangeRate; // 客户付款本币 (e.g. USD)
   const fxResult = calculateFX({
-    fromAmount: fxInputAmount,
-    fromCurrency: fromCurrencyEstimate,
+    fromAmount: customerPaysLocal,
+    fromCurrency: m.currency,
     market: m,
-    paymentChannel: bestPaymentChannel({ fromAmount: fxInputAmount, speed: '24h' }),
-    factoryCostHKD: totalCostHKD,
-    shippingCostHKD: shipping.costHKD,
+    paymentChannel: bestPaymentChannel({ fromAmount: customerPaysLocal, speed: '24h' }),
+    factoryCostHKD,         // 工厂成本 (印刷+deadline, 不含运费)
+    shippingCostHKD: shippingMarkupHKD, // 运费加价版 (1.1x 原始运费)
   });
 
-  // 实际客户付款 = 客户报价（含 FX 风险缓冲）
-  const withFxBuffer = fxInputAmount * (1 + m.fxRiskBuffer);
+  // 实际客户付款 = 含 FX 风险缓冲
+  const withFxBuffer = customerPaysLocal * (1 + m.fxRiskBuffer);
 
   // 11. 转本币 + 税务
   const taxResult = calculateTax(withFxBuffer, m);
@@ -133,16 +140,18 @@ export const businessCardsFormulaV2: ProductFormula = (ctx: FormulaContext & { m
       `Currency: ${m.currency}, Tax: ${taxResult.taxLabel || 'none'}`,
       `Gang: ${gang.itemsPerSheet} pcs/sheet, ${gang.sheetsNeeded} sheets, ${gang.mode}, ${(gang.utilization * 100).toFixed(1)}% util`,
       `Setup: HKD ${setupCost} | Paper: HKD ${paperCost.toFixed(2)} | Finishing: HKD ${finishingTotal.toFixed(2)}`,
-      `Shipping: HKD ${shipping.costHKD.toFixed(2)} via ${shipping.carrier} (${shipping.etaDays.min}-${shipping.etaDays.max}d)`,
-      `Target margin: ${(m.targetMargin * 100).toFixed(0)}%`,
+      `Shipping: HKD ${shipping.costHKD.toFixed(2)} (markup 1.1x = ${shippingMarkupHKD.toFixed(2)}) via ${shipping.carrier} (${shipping.etaDays.min}-${shipping.etaDays.max}d)`,
+      `Target margin: ${(m.targetMargin * 100).toFixed(0)}% (on factory cost only, not shipping)`,
+      `FX rate used: ${m.exchangeRate} (1 HKD = ${m.exchangeRate} ${m.currency})`,
+      `FX risk buffer: ${(m.fxRiskBuffer * 100).toFixed(1)}%, Payment: ${fxResult.paymentChannel}`,
       `Total ${m.currency}: ${taxResult.totalWithTax.toFixed(2)} (preTax ${taxResult.preTaxAmount.toFixed(2)} + tax ${taxResult.taxAmount.toFixed(2)})`,
     ],
     gangLayout: gang,
     setupCostHKD: setupCost,
     paperCostHKD: paperCost,
     finishingCostHKD: finishingTotal,
-    shippingHKD: shipping.costHKD,
-    totalCostHKD: pricedCost,
+    shippingHKD: shippingMarkupHKD,
+    totalCostHKD: pricedCostHKD,
     market: m,
     tax: taxResult,
   } as FormulaResult & {
