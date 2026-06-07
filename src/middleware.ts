@@ -152,7 +152,8 @@ export async function middleware(request: NextRequest) {
   }
 
   // 优先级2：HTTP → HTTPS（301，立即返回）
-  if (url.protocol === 'http:') {
+  // Dev 环境 localhost 跳过（无 SSL，curl 测试用）
+  if (url.protocol === 'http:' && url.hostname !== 'localhost' && url.hostname !== '127.0.0.1') {
     url.protocol = 'https:';
     return NextResponse.redirect(url, 301);
   }
