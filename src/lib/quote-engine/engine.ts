@@ -85,6 +85,16 @@ class QuoteEngine {
       );
     }
 
+    // C5 修复 (2026-06-07): 市场最低订单金额强制
+    // 客户订单 (本币) 低于市场 minimumOrder → 警告 + 提示
+    const m = req.marketCode ? getMarket(req.marketCode) : getMarket(marketFromLocale(req.locale || 'en'));
+    const totalPriceLocal = formulaResult.baseUnitPrice * req.quantity;
+    if (totalPriceLocal < m.minimumOrder) {
+      warnings.push(
+        `${m.displayName} minimum order is ${m.currency} ${m.minimumOrder}. Current quote is ${m.currency} ${totalPriceLocal.toFixed(2)}. Please increase quantity to meet the minimum.`
+      );
+    }
+
     // 价格计算
     const finalUnitPrice =
       (formulaResult.baseUnitPrice + formulaResult.finishSurcharge) * formulaResult.deadlineMultiplier;

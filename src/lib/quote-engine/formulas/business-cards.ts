@@ -30,32 +30,49 @@ interface BusinessCardConfig {
   paperCost: number;
   press: keyof typeof PRESS_SETUP_COSTS;
   sheet: SheetSize;
-  standardSize: { w: number; h: number };
   /** 单张克重 (g) — 用于估算重量 */
   weightPerCardGram: number;
 }
+
+/** 业务卡尺寸按市场分 (2026-06-07 C3 修复)
+ * 行业标准 (ISO/IEC 7810 ID-1 for EU/UK, 北美 3.5"×2", 澳洲用 EU)
+ * 旧: 硬编码 90×54mm, US/AU/UK 客户收到的名片塞不进当地卡夹
+ */
+const SIZE_BY_MARKET: Record<MarketCode, { w: number; h: number; label: string }> = {
+  US: { w: 89, h: 51, label: 'US Standard (3.5"×2" = 88.9×50.8mm)' },
+  CA: { w: 89, h: 51, label: 'CA Standard (3.5"×2")' },
+  GB: { w: 85, h: 55, label: 'EU/UK ISO ID-1 (85×55mm)' },
+  HK: { w: 90, h: 54, label: 'HK Standard (90×54mm)' },
+  AU: { w: 90, h: 54, label: 'AU Standard (90×54mm)' },
+  NZ: { w: 90, h: 54, label: 'NZ Standard (90×54mm)' },
+  JP: { w: 91, h: 55, label: 'JP Standard (91×55mm)' },
+  SG: { w: 90, h: 54, label: 'SG Standard (90×54mm)' },
+  CN: { w: 90, h: 54, label: 'CN Standard (90×54mm)' },
+};
 
 const DEFAULT_CONFIG: BusinessCardConfig = {
   paperType: '400g_gloss_art',
   paperCost: PAPER_COSTS_PER_SHEET['400g_gloss_art'],
   press: 'offset_4color',
   sheet: 'A3plus',
-  standardSize: { w: 90, h: 54 }, // 欧规
-  weightPerCardGram: 2.5, // 90×54mm × 400gsm ≈ 2g，加工艺 ~ 2.5g
+  weightPerCardGram: 2.5, // 89×51mm × 400gsm ≈ 2g, 加工艺 ~ 2.5g
 };
 
 export const businessCardsFormulaV2: ProductFormula = (ctx: FormulaContext & { market?: Market }): FormulaResult => {
   const { quantity, finishes, deadline, market } = ctx;
   const config = DEFAULT_CONFIG;
   const m = market || MARKETS[marketFromLocale('en')]; // 默认美国市场
+  // 按市场选尺寸 (C3 修复)
+  const standardSize = SIZE_BY_MARKET[m.code];
 
-  // 1. 拼版计算 (按市场的 gangRunThreshold)
+  // 1. 拼版计算 (按市场的 gangRunThreshold + 市场尺寸)
   const gang = calculateGang({
-    itemWidthMM: config.standardSize.w,
-    itemHeightMM: config.standardSize.h,
+    itemWidthMM: standardSize.w,
+    itemHeightMM: standardSize.h,
     quantity,
     sheet: config.sheet,
     gangRunThreshold: m.gangRunThreshold,
+    dieCutMM: 0, // 业务卡不需 die-cut (啤位是给贴纸/啤盒)
   });
 
   // 2. 启动成本 (HKD)

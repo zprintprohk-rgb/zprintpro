@@ -206,12 +206,17 @@ export function calculateFX(input: {
   // 净到账 (fromCurrency)
   const netAmount = netAmountHKD / midMarketRate;
 
-  // 净利率 (如果有工厂成本)
+  // 净利率 (如果有工厂成本) — 2026-06-07 修复 C6 (单位混乱)
+  // 旧 bug: profit (HKD) / toAmount (USD) → 无意义 100%+ 数字
+  // 新逻辑: 全部统一 HKD 计算
   let netMargin = 0;
   if (input.factoryCostHKD !== undefined && input.shippingCostHKD !== undefined) {
-    const totalCost = input.factoryCostHKD + input.shippingCostHKD + (input.taxAmountLocal || 0) * 0.128;
-    const profit = netAmountHKD - totalCost;
-    netMargin = profit / toAmount;
+    // 工厂总成本 HKD = 印刷 + 运费 (税是客户付的, 工厂不收)
+    const totalCostHKD = input.factoryCostHKD + input.shippingCostHKD;
+    // 客户实际付款的 HKD 等值 (按 mid-market rate 折算)
+    const revenueHKD = toAmount * midMarketRate;
+    const profit = revenueHKD - totalCostHKD;
+    netMargin = revenueHKD > 0 ? profit / revenueHKD : 0;
   }
 
   // 汇率风险溢价

@@ -23,6 +23,10 @@ export interface QuoteRequest {
   finishes: FinishOption[];
   /** 交期 */
   deadline: Deadline;
+  /** 目标市场代码 (C5 修复 2026-06-07) - 用于 minimumOrder 校验 */
+  marketCode?: import('./markets').MarketCode;
+  /** Locale (跟 marketCode 二选一) */
+  locale?: string;
   /** 文件 URL（可选，附在询盘单上） */
   fileUrls?: string[];
 }
