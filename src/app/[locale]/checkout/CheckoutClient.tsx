@@ -162,13 +162,43 @@ export default function CheckoutClient({ params }: CheckoutPageProps) {
     }
   }, [items.length, router, localePrefix]);
 
-  if (!mounted || items.length === 0) {
+  if (!mounted) {
     return (
       <main className="min-h-screen bg-gray-50 py-16">
         <div className="max-w-[1320px] mx-auto px-4 text-center">
           <div className="bg-white rounded-xl border border-gray-100 p-12 max-w-md mx-auto">
             <ShoppingBag className="w-16 h-16 text-gray-300 mx-auto mb-4" />
             <p className="text-gray-500">Loading...</p>
+          </div>
+        </div>
+      </main>
+    );
+  }
+
+  // Mounted 但购物车为空：显示友好提示 + 返回购物车链接（不再卡 Loading）
+  if (items.length === 0) {
+    return (
+      <main className="min-h-screen bg-gray-50 py-16">
+        <div className="max-w-[1320px] mx-auto px-4 text-center">
+          <div className="bg-white rounded-xl border border-gray-100 p-12 max-w-md mx-auto">
+            <ShoppingBag className="w-16 h-16 text-gray-300 mx-auto mb-4" />
+            <h1 className="text-2xl font-bold text-[#333333] mb-2">
+              {locale === 'zh-hk' ? '購物車是空的' : locale === 'en' ? 'Your cart is empty' : 'カートは空です'}
+            </h1>
+            <p className="text-gray-500 mb-6">
+              {locale === 'zh-hk'
+                ? '請先將商品加入購物車'
+                : locale === 'en'
+                ? 'Please add items to your cart first'
+                : '先にカートに商品を追加してください'}
+            </p>
+            <a
+              href={`${localePrefix}/cart/`}
+              className="inline-flex items-center gap-2 px-6 py-3 bg-[#2873F5] text-white rounded-lg font-medium hover:bg-[#1E5FD1] transition-colors"
+            >
+              {locale === 'zh-hk' ? '返回購物車' : locale === 'en' ? 'Go to Cart' : 'カートに戻る'}
+              <ArrowRight className="w-4 h-4" />
+            </a>
           </div>
         </div>
       </main>
