@@ -1,26 +1,29 @@
 'use client';
 
 /**
- * Quote Calculator v1 (Phase 1 MVP)
- * 2026-06-07 启动：第一个 SKU - Premium Business Cards
+ * Quote Calculator v2 (Phase 3 — 多市场 + Gang Run + FX)
+ * 2026-06-07
  *
- * 特性：
- * - react-hook-form + zod 验证
- * - 实时价格计算（debounced 200ms）
- * - 价格细分 + 优化建议
- * - 提交落 Supabase (quote_calculations table)
- * - 失败 fallback：纯客户端计算，不阻塞 UI
+ * 升级：
+ * - 市场选择器（9 个市场）
+ * - 多币种实时显示 + USD 折算
+ * - FX 风险提示
+ * - Gang Run 排版预览
+ * - 净收入分析 (专业感)
  */
 
 import { useState, useMemo, useDeferredValue, useTransition } from 'react';
 import { useForm, Controller } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { Calculator, Sparkles, Check, AlertCircle, Loader2 } from 'lucide-react';
+import { Calculator, Sparkles, Check, AlertCircle, Loader2, Globe, TrendingUp, AlertTriangle } from 'lucide-react';
 import { quoteEngine } from '@/lib/quote-engine/engine';
 import { BUSINESS_CARDS_CONFIG_V2 as BUSINESS_CARDS_CONFIG } from '@/lib/quote-engine/formulas/business-cards';
+import { MARKETS, marketFromLocale, getMarket } from '@/lib/quote-engine/markets';
+import type { MarketCode, Market } from '@/lib/quote-engine/markets';
 import type { GangResult } from '@/lib/quote-engine/core';
 import { GangPreview } from './GangPreview';
+import { formatPriceByMarket } from '@/lib/quote-engine/tax';
 import type { QuoteRequest, QuoteResult, FinishOption, Deadline } from '@/lib/quote-engine/types';
 
 const formSchema = z.object({
@@ -29,6 +32,7 @@ const formSchema = z.object({
   finishes: z.array(z.string()).default([]),
   quantity: z.coerce.number().int().min(100, 'Minimum 100 cards').max(100000),
   deadline: z.enum(['standard', 'rush', 'same-day']),
+  marketCode: z.enum(['HK', 'US', 'GB', 'AU', 'JP', 'CA', 'CN', 'SG', 'NZ']),
 });
 
 type FormValues = z.infer<typeof formSchema>;
@@ -54,7 +58,14 @@ const DEADLINE_LABELS: Record<Deadline, string> = {
   'same-day': 'Same-day (24h)',
 };
 
-export function BusinessCardQuoteCalculator({ source = 'product' }: { source?: string }) {
+/** 市场国旗 emoji (轻量) */
+const MARKET_FLAGS: Record<MarketCode, string> = {
+  HK: '🇭🇰', US: '🇺🇸', GB: '🇬🇧', AU: '🇦🇺', JP: '🇯🇵',
+  CA: '🇨🇦', CN: '🇨🇳', SG: '🇸🇬', NZ: '🇳🇿',
+};
+
+export function BusinessCardQuoteCalculator({ source = 'product', defaultLocale = 'en' }: { source?: string; defaultLocale?: 'zh-hk' | 'en' | 'ja' }) {
+  const initialMarket = marketFromLocale(defaultLocale);
   const [result, setResult] = useState<QuoteResult | null>(null);
   const [submitting, setSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
@@ -68,16 +79,21 @@ export function BusinessCardQuoteCalculator({ source = 'product' }: { source?: s
       finishes: [],
       quantity: 500,
       deadline: 'standard',
+      marketCode: initialMarket,
     },
   });
 
   const watchedValues = form.watch();
   const deferredValues = useDeferredValue(watchedValues);
+  const selectedMarket = getMarket(deferredValues.marketCode as MarketCode);
 
-  // 实时价格计算（useDeferredValue 自动 debounce）
-  const liveResult = useMemo<(QuoteResult & { gangLayout?: GangResult }) | null>(() => {
+  // 实时价格计算（含 market 参数）
+  const liveResult = useMemo<{
+    result: (QuoteResult & { gangLayout?: GangResult; market?: Market; tax?: any; fx?: any }) | null;
+    market: Market;
+  }>(() => {
     const values = deferredValues;
-    if (!values.material || values.quantity < 100) return null;
+    if (!values.material || values.quantity < 100) return { result: null, market: selectedMarket };
     const size = SIZE_MAP[values.size as keyof typeof SIZE_MAP];
     const req: QuoteRequest = {
       productSlug: BUSINESS_CARDS_CONFIG.slug,
@@ -88,32 +104,35 @@ export function BusinessCardQuoteCalculator({ source = 'product' }: { source?: s
       deadline: values.deadline as Deadline,
     };
     try {
-      return quoteEngine.calculate(req);
+      const result = quoteEngine.calculate({ ...req, market: selectedMarket } as any);
+      return { result, market: selectedMarket };
     } catch (e) {
       console.error('[QuoteEngine] calc error:', e);
-      return null;
+      return { result: null, market: selectedMarket };
     }
-  }, [deferredValues]);
+  }, [deferredValues, selectedMarket]);
 
   async function onSubmit(values: FormValues) {
-    if (!liveResult) return;
+    if (!liveResult.result) return;
     setSubmitting(true);
     try {
-      // 落库：先调 API route 写 Supabase
+      const m = selectedMarket;
       const response = await fetch('/api/quote', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           ...values,
           size: SIZE_MAP[values.size as keyof typeof SIZE_MAP],
-          unitPrice: liveResult.unitPrice,
-          totalPrice: liveResult.totalPrice,
+          unitPrice: liveResult.result.unitPrice,
+          totalPrice: liveResult.result.totalPrice,
+          market: m.code,
+          currency: m.currency,
           source,
         }),
       });
       if (response.ok) {
         const data = await response.json();
-        setResult({ ...liveResult, inquiryId: data.id });
+        setResult({ ...liveResult.result, inquiryId: data.id });
         setSubmitSuccess(true);
       }
     } catch (e) {
@@ -123,13 +142,48 @@ export function BusinessCardQuoteCalculator({ source = 'product' }: { source?: s
     }
   }
 
+  const r = liveResult.result;
+  const m = liveResult.market;
+
   return (
     <div className="bg-white rounded-2xl shadow-lg border border-gray-100 p-6 md:p-8">
-      <div className="flex items-center gap-2 mb-6">
+      <div className="flex items-center gap-2 mb-4">
         <Calculator className="w-6 h-6 text-[#2873F5]" />
         <h2 className="text-xl md:text-2xl font-bold text-[#333333]">
           Instant Quote · Premium Business Cards
         </h2>
+      </div>
+
+      {/* ★ 市场选择器 */}
+      <div className="mb-5 p-3 bg-gradient-to-r from-blue-50 to-indigo-50 rounded-lg border border-blue-100">
+        <div className="flex items-center gap-2 mb-1.5">
+          <Globe className="w-4 h-4 text-[#2873F5]" />
+          <span className="text-sm font-semibold text-gray-700">Shipping to</span>
+          <span className="text-xs text-gray-500">·</span>
+          <span className="text-xs text-gray-500">Prices in {m.currency} · {m.displayName}</span>
+        </div>
+        <Controller
+          control={form.control}
+          name="marketCode"
+          render={({ field }) => (
+            <select
+              {...field}
+              onChange={(e) => {
+                field.onChange(e);
+              }}
+              className="w-full px-3 py-2 bg-white border border-blue-200 rounded-md focus:border-[#2873F5] focus:ring-1 focus:ring-[#2873F5] text-sm font-medium"
+            >
+              {(Object.keys(MARKETS) as MarketCode[]).map((code) => {
+                const mk = MARKETS[code];
+                return (
+                  <option key={code} value={code}>
+                    {MARKET_FLAGS[code]} {mk.displayName} · {mk.currency} · Tax {mk.taxType === 'none' ? 'No' : `${(mk.taxRate * 100).toFixed(1)}%`}
+                  </option>
+                );
+              })}
+            </select>
+          )}
+        />
       </div>
 
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
@@ -226,25 +280,62 @@ export function BusinessCardQuoteCalculator({ source = 'product' }: { source?: s
         </div>
 
         {/* Live result */}
-        {liveResult && (
+        {r && (
           <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-xl p-5 border border-blue-100">
-            <div className="flex items-baseline justify-between mb-3">
+            {/* ★ 多币种主价格 + USD 折算 */}
+            <div className="flex items-baseline justify-between mb-2">
               <span className="text-sm text-gray-600">Estimated Total</span>
-              <span className="text-3xl font-bold text-[#2873F5]">
-                ${liveResult.totalPrice.toFixed(2)}
+              <div className="text-right">
+                <div className="text-3xl font-bold text-[#2873F5]">
+                  {formatPriceByMarket(r.totalPrice, m.currency, m)}
+                </div>
+                {m.currency !== 'USD' && (
+                  <div className="text-xs text-gray-500 mt-0.5">
+                    ≈ ${(r.totalPrice * 0.128).toFixed(2)} USD
+                  </div>
+                )}
+              </div>
+            </div>
+            <div className="flex items-baseline justify-between mb-3">
+              <span className="text-xs text-gray-500">
+                {formatPriceByMarket(r.unitPrice, m.currency, m)} per card
+              </span>
+              <span className="text-xs text-gray-500">
+                Lead time {r.leadTimeHours.min}-{r.leadTimeHours.max}h
               </span>
             </div>
-            <div className="text-xs text-gray-500 mb-3">
-              ${liveResult.unitPrice.toFixed(4)} per card · Lead time {liveResult.leadTimeHours.min}-{liveResult.leadTimeHours.max}h
-            </div>
+
+            {/* ★ FX 风险提示 + 净收入分析 (专业感) */}
+            {r.tax && r.fx && (
+              <div className="mb-3 p-2 bg-white/60 border border-blue-200 rounded text-xs space-y-1">
+                <div className="flex items-center justify-between text-gray-600">
+                  <span>{MARKET_FLAGS[m.code]} {m.displayName}</span>
+                  <span className="font-mono">
+                    {r.tax.taxLabel || 'No tax'} · {(r.fx.totalCostRatio ?? 0).toFixed(1)}% FX/payment fees
+                  </span>
+                </div>
+                <div className="flex items-center justify-between text-gray-500">
+                  <span>Net margin (after FX + shipping + tax)</span>
+                  <span className="font-mono font-semibold text-green-700">
+                    {(r.fx.netMargin ?? 0).toFixed(1)}%
+                  </span>
+                </div>
+                <div className="flex items-center justify-between text-gray-500">
+                  <span>FX risk buffer ({(m.fxRiskBuffer * 100).toFixed(1)}%)</span>
+                  <span className="font-mono text-amber-700">
+                    {formatPriceByMarket(r.totalPrice * m.fxRiskBuffer, m.currency, m)}
+                  </span>
+                </div>
+              </div>
+            )}
 
             {/* ★ Gang Run 排版预览 (杀手级体验) */}
-            {liveResult.gangLayout && (
+            {r.gangLayout && (
               <div className="mt-4">
                 <GangPreview
-                  gang={liveResult.gangLayout}
-                  paperCostHKD={(liveResult as { paperCostHKD?: number }).paperCostHKD || 4.2}
-                  setupCostHKD={(liveResult as { setupCostHKD?: number }).setupCostHKD || 300}
+                  gang={r.gangLayout}
+                  paperCostHKD={(r as { paperCostHKD?: number }).paperCostHKD || 4.2}
+                  setupCostHKD={(r as { setupCostHKD?: number }).setupCostHKD || 300}
                 />
               </div>
             )}
@@ -255,19 +346,24 @@ export function BusinessCardQuoteCalculator({ source = 'product' }: { source?: s
                 View price breakdown
               </summary>
               <ul className="mt-2 space-y-1 text-xs text-gray-600">
-                {liveResult.breakdown.map((b: { label: string; amount: number; description?: string }, i: number) => (
+                {r.breakdown.map((b: { label: string; amount: number; description?: string }, i: number) => (
                   <li key={i} className="flex justify-between">
                     <span>{b.label}</span>
-                    <span className="font-mono">${b.amount.toFixed(2)}</span>
+                    <span className="font-mono">
+                      {formatPriceByMarket(b.amount, m.currency, m)}
+                      {m.currency !== 'USD' && (
+                        <span className="text-gray-400 ml-1">(${b.amount.toFixed(2)})</span>
+                      )}
+                    </span>
                   </li>
                 ))}
               </ul>
             </details>
 
             {/* Suggestions */}
-            {liveResult.suggestions.length > 0 && (
+            {r.suggestions.length > 0 && (
               <div className="space-y-2">
-                {liveResult.suggestions.map((s, i) => (
+                {r.suggestions.map((s, i) => (
                   <div
                     key={i}
                     className="flex items-start gap-2 text-xs bg-amber-50 border border-amber-200 rounded-lg p-2"
@@ -275,16 +371,18 @@ export function BusinessCardQuoteCalculator({ source = 'product' }: { source?: s
                     <Sparkles className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
                     <div>
                       <p className="text-amber-900">{s.message}</p>
-                      <p className="text-amber-700 font-semibold">Save ${s.savingsUsd.toFixed(2)}</p>
+                      <p className="text-amber-700 font-semibold">
+                        Save {formatPriceByMarket(s.savingsUsd, m.currency, m)}
+                      </p>
                     </div>
                   </div>
                 ))}
               </div>
             )}
 
-            {liveResult.warnings.length > 0 && (
+            {r.warnings.length > 0 && (
               <div className="mt-3 space-y-1">
-                {liveResult.warnings.map((w, i) => (
+                {r.warnings.map((w, i) => (
                   <div key={i} className="flex items-start gap-2 text-xs text-red-600">
                     <AlertCircle className="w-4 h-4 shrink-0 mt-0.5" />
                     <span>{w}</span>
@@ -298,7 +396,7 @@ export function BusinessCardQuoteCalculator({ source = 'product' }: { source?: s
         {/* Submit */}
         <button
           type="submit"
-          disabled={submitting || !liveResult || liveResult.warnings.length > 0}
+          disabled={submitting || !r || (r.warnings && r.warnings.length > 0)}
           className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#2873F5] to-[#1E5FD1] text-white font-semibold py-3 px-4 rounded-lg hover:opacity-90 transition-opacity disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {submitting ? (
@@ -314,7 +412,9 @@ export function BusinessCardQuoteCalculator({ source = 'product' }: { source?: s
           ) : (
             <>
               <Calculator className="w-4 h-4" />
-              Get this quote emailed to me
+              {m.currency === 'HKD'
+                ? 'Get this quote emailed to me'
+                : `Order for ${formatPriceByMarket(r?.totalPrice || 0, m.currency, m)}`}
             </>
           )}
         </button>
