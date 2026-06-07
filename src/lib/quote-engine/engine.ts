@@ -25,13 +25,20 @@ import type {
 } from './types';
 import { businessCardsFormulaV2 } from './formulas/business-cards';
 import { postersFormula } from './formulas/posters';
+import { stickersFormula } from './formulas/stickers';
+import { packagingFormula } from './formulas/packaging';
+import { bagsFormula } from './formulas/bags';
+import { booksFormula } from './formulas/books';
 import { MARKETS, marketFromLocale, getMarket } from './markets';
 import type { Market } from './markets';
 
 const REGISTRY: Record<string, ProductFormula> = {
   'business-cards': businessCardsFormulaV2, // v2 (Phase 2 — 印刷大脑版)
   'posters': postersFormula, // v1 (Phase 3 — 海报公式)
-  // 注：v1 公式已废弃，全部走 v2 拼版大脑
+  'stickers': stickersFormula, // v1 (Phase 4 — 贴纸公式)
+  'packaging': packagingFormula, // v1 (Phase 4 — 包装盒公式)
+  'bags': bagsFormula, // v1 (Phase 4 — 纸袋公式)
+  'books': booksFormula, // v1 (Phase 4 — 书册公式)
 };
 
 class QuoteEngine {
