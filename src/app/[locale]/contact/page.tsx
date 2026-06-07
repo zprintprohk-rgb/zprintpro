@@ -1,25 +1,9 @@
 import { Metadata } from 'next';
-import dynamic from 'next/dynamic';
-import Image from 'next/image';
 import { Locale, siteConfig, generateBusinessJsonLd } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
+import { ContactFormWrapper } from './ContactFormWrapper';
+import Image from 'next/image';
 import { generateWhatsAppLink, getWhatsAppLinkProps } from '@/lib/whatsapp';
-
-// QuoteForm 动态 import + ssr:false
-// 原因：layout 强制 Edge Runtime，QuoteForm 含 react-hook-form useForm/useEffect
-// 在 SSR 渲染时抛错导致 3 语言 contact 全部 500
-// 改为 client-only 后，SSR 跳过 QuoteForm，client 端 hydration 后再加载
-const QuoteForm = dynamic(
-  () => import('@/components/quote/QuoteForm').then((m) => m.QuoteForm),
-  {
-    ssr: false,
-    loading: () => (
-      <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 md:p-8 min-h-[400px] flex items-center justify-center">
-        <p className="text-gray-400">Loading form...</p>
-      </div>
-    ),
-  }
-);
 
 interface ContactPageProps {
   params: { locale: string };
@@ -142,7 +126,7 @@ export default function ContactPage({ params }: ContactPageProps) {
                   ))}
                 </div>
               </div>
-              <QuoteForm locale={locale} />
+              <ContactFormWrapper locale={locale} />
             </div>
           </div>
 
