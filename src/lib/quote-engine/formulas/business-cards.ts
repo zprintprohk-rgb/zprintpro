@@ -59,7 +59,7 @@ const DEFAULT_CONFIG: BusinessCardConfig = {
 };
 
 export const businessCardsFormulaV2: ProductFormula = (ctx: FormulaContext & { market?: Market }): FormulaResult => {
-  const { quantity, finishes, deadline, market } = ctx;
+  const { quantity, finishes, deadline, market, sides } = ctx;
   const config = DEFAULT_CONFIG;
   const m = market || MARKETS[marketFromLocale('en')]; // 默认美国市场
   // 按市场选尺寸 (C3 修复)
@@ -75,12 +75,20 @@ export const businessCardsFormulaV2: ProductFormula = (ctx: FormulaContext & { m
     dieCutMM: 0, // 业务卡不需 die-cut (啤位是给贴纸/啤盒)
   });
 
-  // 2. 启动成本 (HKD)
-  const pressSetup = PRESS_SETUP_COSTS[config.press];
-  const setupCost = pressSetup.setupPerSheet;
+  // C7 修复 (2026-06-07): 双面印刷 sideMultiplier
+  // 业务卡 ~90% 是双面 (美/英/澳 99%), 旧公式按单面算亏 30-50% 毛利
+  // double: setup × 1.5 (调机多 0.5 次), paper × 1.8 (双面印 2x 但有废率优化)
+  // 注: finishing (UV/烫金) 双面算 2x 但一般客户只单面工艺, 这里按 single
+  const isDouble = sides === 'double';
+  const sideSetupMultiplier = isDouble ? 1.5 : 1.0;
+  const sidePaperMultiplier = isDouble ? 1.8 : 1.0;
 
-  // 3. 纸张成本 (HKD)
-  const paperCost = gang.sheetsNeeded * config.paperCost;
+  // 2. 启动成本 (HKD) — 双面 × 1.5
+  const pressSetup = PRESS_SETUP_COSTS[config.press];
+  const setupCost = pressSetup.setupPerSheet * sideSetupMultiplier;
+
+  // 3. 纸张成本 (HKD) — 双面 × 1.8
+  const paperCost = gang.sheetsNeeded * config.paperCost * sidePaperMultiplier;
 
   // 4. 工艺成本 (HKD)
   let finishingTotal = 0;

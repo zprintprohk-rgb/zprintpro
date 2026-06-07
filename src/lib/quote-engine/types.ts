@@ -9,6 +9,8 @@
 export type FinishOption = 'spot-uv' | 'foil' | 'emboss' | 'rounded-corners' | 'matte-lamination' | 'gloss-lamination';
 export type Deadline = 'standard' | 'rush' | 'same-day';
 export type SizeUnit = 'mm' | 'in';
+/** 印刷面数 (C7 修复 2026-06-07) - 业务卡 90% 是双面, 但公式之前只算单面 */
+export type Sides = 'single' | 'double';
 
 export interface QuoteRequest {
   /** 产品 slug（决定走哪个公式模板） */
@@ -23,6 +25,8 @@ export interface QuoteRequest {
   finishes: FinishOption[];
   /** 交期 */
   deadline: Deadline;
+  /** 印刷面数 (C7 修复 2026-06-07) */
+  sides?: Sides;
   /** 目标市场代码 (C5 修复 2026-06-07) - 用于 minimumOrder 校验 */
   marketCode?: import('./markets').MarketCode;
   /** Locale (跟 marketCode 二选一) */
@@ -73,6 +77,8 @@ export interface FormulaContext {
   material: string;
   finishes: FinishOption[];
   deadline: Deadline;
+  /** 印刷面数 (C7 修复 2026-06-07) - 可选, 默认 single 保持兼容 */
+  sides?: Sides;
 }
 
 export interface FormulaResult {

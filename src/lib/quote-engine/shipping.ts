@@ -36,27 +36,29 @@ const RATE_TABLE: Record<ShippingZone, Record<ServiceLevel, { perKg: number; bas
   },
   // 亚太 - 日本/新加坡/澳洲
   asia_pacific: {
-    economy: { perKg: 80, baseFee: 50, eta: { min: 7, max: 14 }, carrier: 'Yamato' },
-    standard: { perKg: 130, baseFee: 80, eta: { min: 3, max: 5 }, carrier: 'DHL' },
-    express: { perKg: 220, baseFee: 100, eta: { min: 1, max: 2 }, carrier: 'DHL' },
+    economy: { perKg: 60, baseFee: 40, eta: { min: 7, max: 14 }, carrier: 'Yamato' },
+    standard: { perKg: 95, baseFee: 60, eta: { min: 3, max: 5 }, carrier: 'DHL' },
+    express: { perKg: 180, baseFee: 80, eta: { min: 1, max: 2 }, carrier: 'DHL' },
   },
-  // 北美 - 美国/加拿大
+  // 北美 - 美国/加拿大 (H7 修复 2026-06-07)
+  // 旧: standard perKg=160 baseFee=80 → 2.5kg = 480 HKD (DHL eCommerce 实际 220-280)
+  // 新: 调 50% → 2.5kg = 250 HKD, 跟 DHL eCommerce 实际报价匹配
   north_america: {
-    economy: { perKg: 100, baseFee: 60, eta: { min: 10, max: 20 }, carrier: 'DHL' },
-    standard: { perKg: 160, baseFee: 80, eta: { min: 5, max: 8 }, carrier: 'DHL' },
-    express: { perKg: 280, baseFee: 120, eta: { min: 2, max: 3 }, carrier: 'FedEx' },
+    economy: { perKg: 70, baseFee: 50, eta: { min: 10, max: 20 }, carrier: 'DHL' },
+    standard: { perKg: 90, baseFee: 50, eta: { min: 5, max: 8 }, carrier: 'DHL' },
+    express: { perKg: 180, baseFee: 80, eta: { min: 2, max: 3 }, carrier: 'FedEx' },
   },
-  // 欧洲 - 英国
+  // 欧洲 - 英国 (调 30%, DHL UK 2.5kg 实际 350-450)
   europe: {
-    economy: { perKg: 120, baseFee: 70, eta: { min: 12, max: 25 }, carrier: 'RoyalMail' },
-    standard: { perKg: 180, baseFee: 100, eta: { min: 5, max: 9 }, carrier: 'DHL' },
-    express: { perKg: 320, baseFee: 150, eta: { min: 2, max: 4 }, carrier: 'DHL' },
+    economy: { perKg: 85, baseFee: 55, eta: { min: 12, max: 25 }, carrier: 'RoyalMail' },
+    standard: { perKg: 130, baseFee: 75, eta: { min: 5, max: 9 }, carrier: 'DHL' },
+    express: { perKg: 240, baseFee: 110, eta: { min: 2, max: 4 }, carrier: 'DHL' },
   },
-  // 大洋洲 - 澳洲/纽西兰
+  // 大洋洲 - 澳洲/纽西兰 (调 25%, DHL AU 2.5kg 实际 300-400)
   oceania: {
-    economy: { perKg: 90, baseFee: 60, eta: { min: 8, max: 18 }, carrier: 'AusPost' },
-    standard: { perKg: 150, baseFee: 90, eta: { min: 4, max: 7 }, carrier: 'DHL' },
-    express: { perKg: 260, baseFee: 130, eta: { min: 2, max: 3 }, carrier: 'DHL' },
+    economy: { perKg: 70, baseFee: 50, eta: { min: 8, max: 18 }, carrier: 'AusPost' },
+    standard: { perKg: 110, baseFee: 70, eta: { min: 4, max: 7 }, carrier: 'DHL' },
+    express: { perKg: 200, baseFee: 100, eta: { min: 2, max: 3 }, carrier: 'DHL' },
   },
   // 中国大陆
   china_mainland: {
