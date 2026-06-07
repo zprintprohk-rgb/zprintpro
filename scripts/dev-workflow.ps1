@@ -144,6 +144,21 @@ $swFiles = @()
 if (Test-Path "public") {
     $swFiles = @(Get-ChildItem "public" -Include "sw.js","service-worker.js","serviceWorker.js" -ErrorAction SilentlyContinue)
 }
+
+# ============ Step 4.5: Untracked File Reference Check ============
+Write-Host ""
+Write-Host "  Untracked File Reference Check:" -ForegroundColor Yellow
+
+$untrackedTsx = @(git ls-files --others --exclude-standard -- "src/**/*.ts" "src/**/*.tsx" 2>&1)
+if ($untrackedTsx.Count -gt 0) {
+    Red "Found $($untrackedTsx.Count) untracked .ts/.tsx file(s) in src/ - will cause CF Pages build to FAIL"
+    $untrackedTsx | ForEach-Object {
+        Write-Host "    ? $_" -ForegroundColor Red
+    }
+    Write-Host "    [FIX] Run: git add src/**/*.ts src/**/*.tsx" -ForegroundColor Yellow
+} else {
+    Green "All src/ .ts/.tsx files are tracked by git (CF Pages build-safe)"
+}
 if ($swHits -or $swFiles) {
     Red "Service Worker detected - browser will cache stale error pages during high-frequency deploys"
     $swHits | Select-Object -First 5 | ForEach-Object {
