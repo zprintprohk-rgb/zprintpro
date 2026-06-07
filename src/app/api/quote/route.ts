@@ -13,6 +13,10 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { z } from 'zod';
 
+// CF Pages (next-on-pages) 强制要求所有动态路由声明 edge runtime
+// 2026-06-07 修复部署失败 — 加此声明
+export const runtime = 'edge';
+
 const QuoteRequestSchema = z.object({
   productSlug: z.string().min(1),
   quantity: z.number().int().min(1).max(1000000),

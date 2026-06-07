@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && node scripts/generate-sitemap.js",
-    "build:cf": "rm -rf .next && npx @cloudflare/next-on-pages@1",
+    "build:cf": "node scripts/clean.mjs && npx @cloudflare/next-on-pages@1",
     "start": "next start",
     "lint": "next lint",
     "sitemap": "node scripts/generate-sitemap.js",

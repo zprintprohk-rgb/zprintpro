@@ -9,6 +9,7 @@
 [CmdletBinding()]
 param(
     [switch]$SkipBuild,
+    [switch]$RunCfBuild,
     [switch]$SkipTsc,
     [switch]$ShowFullOutput
 )
@@ -63,21 +64,33 @@ if (-not $SkipTsc) {
     Header "Step 2/5: TypeScript Check [SKIPPED]"
 }
 
-# ============ Step 3: Next.js Build ============
-if (-not $SkipBuild) {
-    Header "Step 3/5: Next.js Build (npm run build)"
+# ============ Step 3: Next.js Build (快速本地) ============
+# 2026-06-07 改造：默认跳 npm run build (next build + sitemap)
+# 不跳 build:cf 因为：
+#   1. build:cf 调 npx 装包 (10+ min 本地)
+#   2. build:cf 主要验证 next-on-pages adapter
+#   3. CF Pages 部署环境自动跑 build:cf
+# 关键检查项 (Step 4) 覆盖: edge runtime / untracked / import path
+# 所以本地跳过 build:cf 不丢覆盖。
 
-    # Use `npm run build` (next build + sitemap) instead of `build:cf`
-    # because `build:cf` uses `rm -rf` (Unix only) and `npx @cloudflare/next-on-pages`
-    # CF Pages adapter is only needed at deploy time, not dev verification.
-    $buildOutput = npm run build 2>&1 | Out-String
+if (-not $SkipBuild) {
+    if ($RunCfBuild) {
+        Header "Step 3/5: CF Pages Build (npm run build:cf - FULL chain, slow)"
+        Write-Host "  This runs: next build + next-on-pages + vercel build (10+ min)" -ForegroundColor DarkGray
+        $buildOutput = npm run build:cf 2>&1 | Out-String
+    } else {
+        Header "Step 3/5: Next.js Build (npm run build - fast, ~60s)"
+        Write-Host "  Step 4 covers: edge runtime / untracked files / import paths" -ForegroundColor DarkGray
+        Write-Host "  Use -RunCfBuild to also run build:cf (slow, only before deploy)" -ForegroundColor DarkGray
+        $buildOutput = npm run build 2>&1 | Out-String
+    }
     [System.IO.File]::WriteAllText($buildLog, $buildOutput, [System.Text.Encoding]::UTF8)
     $buildExit = $LASTEXITCODE
 
     if ($buildExit -eq 0) {
         Green "Build passed"
     } else {
-        Red "Build failed (exit code: $buildExit)"
+        Red "Build failed (exit code: $buildExit) — DO NOT commit or push"
     }
 
     # Always show last 30 lines of build output
@@ -158,6 +171,51 @@ if ($untrackedTsx.Count -gt 0) {
     Write-Host "    [FIX] Run: git add src/**/*.ts src/**/*.tsx" -ForegroundColor Yellow
 } else {
     Green "All src/ .ts/.tsx files are tracked by git (CF Pages build-safe)"
+}
+
+# ============ Step 4.6: Import Path Check ============
+# 检查 src/ 所有 .ts(x) 是否 import 引用了不存在的文件
+# 防止类似 GangPreview 漏 add 事故
+Write-Host ""
+Write-Host "  Import Path Check (本地模块存在性):" -ForegroundColor Yellow
+
+$brokenImports = @()
+$trackedSrcFiles = @(git ls-files "src/**/*.ts" "src/**/*.tsx" 2>&1)
+foreach ($file in $trackedSrcFiles) {
+    if (-not (Test-Path $file)) { continue }
+    $content = Get-Content $file -Raw -ErrorAction SilentlyContinue
+    # 匹配本地相对 import: from './xxx' or '../xxx' (排除带 @ 符号的 alias)
+    $imports = [regex]::Matches($content, "(?:from|import\()\s*['""](\.[\\/][^'""\)]+)['""]")
+    foreach ($m in $imports) {
+        $importPath = $m.Groups[1].Value
+        $fileDir = Split-Path $file -Parent
+        # 处理 ./ 和 ../ 路径
+        $resolved = [System.IO.Path]::GetFullPath((Join-Path $fileDir $importPath))
+        # 检查可能的扩展名
+        $candidates = @(
+            $resolved,
+            "$resolved.ts",
+            "$resolved.tsx",
+            "$resolved/index.ts",
+            "$resolved/index.tsx"
+        )
+        $found = $false
+        foreach ($c in $candidates) {
+            if (Test-Path $c) { $found = $true; break }
+        }
+        if (-not $found) {
+            $relFile = $file.Replace((Get-Location).Path + "\", "")
+            $brokenImports += "$relFile -> $importPath"
+        }
+    }
+}
+if ($brokenImports.Count -gt 0) {
+    Red "Found $($brokenImports.Count) broken import(s):"
+    $brokenImports | Select-Object -First 10 | ForEach-Object {
+        Write-Host "    - $_" -ForegroundColor Red
+    }
+} else {
+    Green "All import paths resolve to existing files"
 }
 if ($swHits -or $swFiles) {
     Red "Service Worker detected - browser will cache stale error pages during high-frequency deploys"
@@ -241,6 +299,30 @@ if ((Test-Path $engineFile) -and (Test-Path $formulaFile)) {
         Green "Material data source exists in Supabase migration: $($sqlFiles[0].Name)"
     } else {
         Yellow "Material data source not yet in Supabase (硬编码中)"
+    }
+
+    # 边界 6: 动态路由必须有 edge runtime (CF Pages 强制要求)
+    # 2026-06-07 根因: /api/quote 缺 runtime 声明 -> build:cf 失败 4 次
+    Write-Host ""
+    Write-Host "  Edge Runtime Check (CF Pages requirement):" -ForegroundColor Yellow
+    $apiRoutes = @(Get-ChildItem -Path "src/app/api" -Recurse -Filter "route.ts" -ErrorAction SilentlyContinue)
+    $missingRuntime = @()
+    foreach ($route in $apiRoutes) {
+        $content = Get-Content $route.FullName -Raw -ErrorAction SilentlyContinue
+        if ($content -notmatch "export const runtime = 'edge'" -and $content -notmatch "export const runtime = 'nodejs'") {
+            $relPath = $route.FullName.Replace((Get-Location).Path + "\", "")
+            $missingRuntime += $relPath
+        }
+    }
+    if ($missingRuntime.Count -gt 0) {
+        Red "API routes missing 'export const runtime' declaration (CF Pages REQUIRES this):"
+        $missingRuntime | ForEach-Object {
+            Write-Host "    - $_" -ForegroundColor Red
+        }
+        Write-Host "    [FIX] Add at top of route.ts:" -ForegroundColor Yellow
+        Write-Host "      export const runtime = 'edge';  // CF Pages 不支持 nodejs runtime" -ForegroundColor Yellow
+    } else {
+        Green "All API routes have runtime declaration (CF Pages build-safe)"
     }
 } else {
     Yellow "Quote Engine files not found - skip boundary tests"
