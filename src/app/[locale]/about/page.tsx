@@ -58,8 +58,8 @@ const translations = {
     statsLabels: { clients: '累計客戶', years: '行業經驗', products: 'SKU產品', satisfaction: '客戶滿意度' },
   },
   en: {
-    metaTitle: 'About ZprintPro | Hong Kong Professional Printing | 10 Years Experience',
-    metaDesc: 'ZprintPro has been rooted in Hong Kong for over 10 years, providing high-quality printing services. ISO 9001 certified, FSC certified, serving 1000+ clients.',
+    metaTitle: 'About ZprintPro | Premium Printing Service From Hong Kong to USA / UK / AU',
+    metaDesc: 'Premium printing service from Hong Kong to US, UK, AU, CA. ISO 9001 + FSC certified, 10+ years experience, 1000+ global clients. 72-hour worldwide delivery from our Hong Kong factory.',
     h1: 'About ZprintPro',
     subtitle: 'Over 10 years in Hong Kong, dedicated to high-quality printing',
     storyTitle: 'Our Story',

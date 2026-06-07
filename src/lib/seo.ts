@@ -91,9 +91,9 @@ const homeMetadata: Record<Locale, { title: string; description: string; keyword
     keywords: '香港印刷,急件印刷,即日印刷,觀塘印刷廠,貼紙印刷,宣傳單張印刷,包裝盒定制,數碼印刷,30秒報價,人工核價,即日交貨,全港免費送貨,名片印刷,海報印刷,香港印刷公司,印刷急單,小批量印刷,ZPrintPro,智印云',
   },
   en: {
-    title: 'ZPrintPro | Online Printing Service | Rush Printing & Same-Day Delivery | Custom Stickers, Flyers & Boxes',
-    description: 'ZPrintPro — premium online printing service offering custom stickers, flyers, packaging boxes, business cards & posters. 30-second instant online quote, expert pricing for complex jobs. Free local delivery, rush same-day service available, 72-hour fast turnaround. Factory-direct quality at competitive prices.',
-    keywords: 'online printing service, custom stickers, flyer printing, custom packaging boxes, business card printing, poster printing, rush printing, same-day printing, instant print quote, digital printing, small batch printing, custom printing, sticker printing online, packaging printing, business cards online, urgent printing service',
+    title: 'Custom Printing Service Online — Stickers, Boxes, Business Cards | ZprintPro',
+    description: 'Custom printing service online for US / UK / AU / CA businesses. Stickers, packaging boxes, business cards, posters, books. 30-second AI instant quote. 72-hour worldwide delivery from Hong Kong factory. Free shipping on selected products.',
+    keywords: 'custom printing service, online printing, custom stickers online, custom packaging boxes, business card printing, poster printing, custom book printing, rush printing service, same day printing, international printing, print quote online, custom labels, paper bags wholesale, eco friendly printing, hong kong printing service',
   },
   ja: {
     title: 'ZPrintPro | 印刷通販 | ステッカー・チラシ・パッケージ印刷 | 即日対応・最短3日納品',

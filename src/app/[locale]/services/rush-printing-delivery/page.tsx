@@ -24,8 +24,8 @@ const metaMap: Record<string, { title: string; desc: string }> = {
     desc: '印刷即日速递送货首选智印云 ZPrintPro！今天下班6點前下單，明天中午12點前收貨。宣傳單張、海報、貼紙、名片、畫冊、易拉寶通宵印刷，支持港鐵站交收。',
   },
   'en': {
-    title: 'Same-Day Printing Delivery | Order Today, Receive by 12PM Tomorrow | ZPrintPro',
-    desc: 'Same-day printing with next-day delivery by 12PM. Order by 6PM today. Flyers, posters, stickers, business cards, booklets, roll-up banners. MTR station pickup available.',
+    title: '24-Hour Rush Printing Service USA / UK / AU | Free Shipping | ZprintPro',
+    desc: '24-hour rush printing service for flyers, posters, stickers, business cards, booklets & roll-up banners. Order by 6PM, deliver in 24h. Free shipping to US, UK, AU, CA. No setup fees. AI instant quote.',
   },
   'ja': {
     title: '即日印刷・翌日正午配送 | 本日注文・明日12時まで | ZPrintPro',
