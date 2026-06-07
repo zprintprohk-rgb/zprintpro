@@ -21,6 +21,62 @@ const inter = Inter({ subsets: ['latin'], display: 'swap' });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://zprintpro.com'),
+  title: {
+    default: 'ZprintPro | Custom Printing Service Online — Stickers, Packaging, Bags, Books',
+    template: '%s | ZprintPro',
+  },
+  description: 'Custom printing service online for US, UK, AU markets. Stickers, packaging, paper bags, business cards, posters, books. 72h global delivery from Hong Kong factory. AI instant quote in 30s.',
+  keywords: ['custom printing', 'online printing service', 'sticker printing', 'packaging boxes', 'paper bags', 'business cards', 'custom posters', 'same day printing', 'global printing service'],
+  authors: [{ name: 'ZprintPro' }],
+  creator: 'ZprintPro',
+  publisher: 'ZprintPro',
+  formatDetection: { email: false, address: false, telephone: false },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://zprintpro.com',
+    siteName: 'ZprintPro',
+    title: 'ZprintPro | Custom Printing Service Online — Global 72h Delivery',
+    description: 'Custom printing for US/UK/AU. Stickers, packaging, bags, books. AI instant quote, 72h global delivery from Hong Kong factory.',
+    images: [
+      {
+        url: '/images/og-default.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'ZprintPro — Custom Printing Service Online',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'ZprintPro | Custom Printing Service Online',
+    description: 'Custom printing for US/UK/AU. Stickers, packaging, bags, books. AI instant quote, 72h global delivery.',
+    images: ['/images/og-default.jpg'],
+    creator: '@zprintpro',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+      'max-video-preview': -1,
+    },
+  },
+  alternates: {
+    canonical: '/',
+    languages: {
+      'en-US': '/en',
+      'en-GB': '/en',
+      'en-AU': '/en',
+      'en-CA': '/en',
+      'ja-JP': '/ja',
+      'zh-HK': '/zh-hk',
+      'x-default': '/',
+    },
+  },
   icons: {
     icon: '/images/logo-icon.svg',
     apple: '/images/logo-icon.svg',
@@ -63,19 +119,6 @@ export default function RootLayout({
             __html: JSON.stringify(generateWebsiteJsonLd()),
           }}
         />
-        {(() => {
-          // Plausible 域名：优先 env var，否则硬编码 zprintpro.com
-          // 硬编码 fallback 确保 CF Pages env 漏配时仍生效
-          const plausibleDomain = process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN || 'zprintpro.com';
-          return (
-            <script
-              async
-              defer
-              data-domain={plausibleDomain}
-              src="https://plausible.io/js/script.js"
-            />
-          );
-        })()}
         {process.env.NEXT_PUBLIC_GA_ID && (
           <>
             <script
