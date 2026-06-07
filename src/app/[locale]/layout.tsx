@@ -93,7 +93,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: `
               // 2026-06-07 改造：禁用 SW 缓存（高频迭代期缓存导致用户端看到旧 500 错误页）
-              // 旧逻辑: navigator.serviceWorker.register('/sw.js')
+              // 旧逻辑已删除（参考 commit 95fae4e）
               // 新逻辑: 访问时自动注销所有 SW + 清除所有 caches，下次刷新拿最新代码
               if ('serviceWorker' in navigator) {
                 navigator.serviceWorker.getRegistrations().then(function(registrations) {

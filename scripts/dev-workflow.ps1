@@ -132,6 +132,33 @@ if ($warnings) {
     Green "No warnings"
 }
 
+# ============ Step 4.5: Browser Cache Audit (高频迭代期保护) ============
+Write-Host ""
+Write-Host "  Service Worker / Browser Cache:" -ForegroundColor Yellow
+$swHits = @()
+if (Test-Path "src") {
+    $swHits = @(Get-ChildItem "src" -Recurse -Include "*.ts","*.tsx","*.js","*.jsx" -ErrorAction SilentlyContinue |
+        Select-String -Pattern "serviceWorker\.register" -ErrorAction SilentlyContinue)
+}
+$swFiles = @()
+if (Test-Path "public") {
+    $swFiles = @(Get-ChildItem "public" -Filter "sw.js","service-worker.js","serviceWorker.js" -ErrorAction SilentlyContinue)
+}
+if ($swHits -or $swFiles) {
+    Red "Service Worker detected - browser will cache stale error pages during high-frequency deploys"
+    $swHits | Select-Object -First 5 | ForEach-Object {
+        Write-Host "    $($_.Path):$($_.LineNumber): $($_.Line.Trim())" -ForegroundColor Red
+    }
+    $swFiles | ForEach-Object {
+        Write-Host "    public/$($_.Name) ($($_.Length) bytes)" -ForegroundColor Red
+    }
+    Write-Host "    [FIX] Replace layout.tsx serviceWorker.register" -ForegroundColor Yellow
+    Write-Host "          with inline unregister and caches.delete" -ForegroundColor Yellow
+    Write-Host "          Also delete public/sw.js" -ForegroundColor Yellow
+} else {
+    Green "No Service Worker (browser will not cache stale pages)"
+}
+
 # ============ Step 5: Summary ============
 Header "Step 5/5: Summary"
 
