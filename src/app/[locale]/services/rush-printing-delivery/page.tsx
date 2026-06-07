@@ -2,7 +2,8 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { ShoppingCart, Printer, Package, Truck, ChevronRight } from 'lucide-react';
-import { Locale } from '@/lib/seo';
+import { Locale, generateServiceJsonLd } from '@/lib/seo';
+import { JsonLd } from '@/components/JsonLd';
 import RushDeliveryGrid from '@/components/sections/RushDeliveryGrid';
 import RushDeliveryFAQ from '@/components/sections/RushDeliveryFAQ';
 
@@ -65,6 +66,24 @@ export default function RushDeliveryPage({ params }: Props) {
 
   return (
     <main className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+      <JsonLd
+        data={generateServiceJsonLd({
+          serviceType: 'Rush Printing Service',
+          serviceName: locale === 'en' ? '24-Hour Rush Printing & Global Delivery' : locale === 'ja' ? '即日印刷・翌日配送サービス' : '印刷即日速遞送貨',
+          description: metaMap[locale].desc,
+          url: `https://zprintpro.com/${locale}/services/rush-printing-delivery/`,
+          areaServed: ['US', 'GB', 'AU', 'CA', 'JP', 'HK'],
+          offers: [
+            { name: 'Flyer Printing', price: '0.04', priceCurrency: 'USD' },
+            { name: 'Business Card Printing', price: '0.10', priceCurrency: 'USD' },
+            { name: 'Sticker Printing', price: '0.06', priceCurrency: 'USD' },
+            { name: 'Poster Printing', price: '1.95', priceCurrency: 'USD' },
+            { name: 'Booklet Printing', price: '0.50', priceCurrency: 'USD' },
+            { name: 'Roll-up Banner Printing', price: '12.00', priceCurrency: 'USD' },
+          ],
+        })}
+      />
+
       {/* Hero Banner 占位区 - 方角 + 固定 400px */}
       <section className="relative w-full h-[400px] rounded-none overflow-hidden mb-4">
         {/* 渐变背景（占位，后续替换为真实图片） */}
@@ -104,8 +123,8 @@ export default function RushDeliveryPage({ params }: Props) {
           )}
           {locale === 'en' && (
             <>
-              <strong>Order by 6PM today, receive by 12PM tomorrow.</strong>
-              Rush printing for flyers, posters, stickers, business cards overnight. Booklets and roll-up banners delivered by noon next day. Free MTR station pickup in Hong Kong.
+              <strong>Order by 6PM EST, receive in 24 hours anywhere in US / UK / AU.</strong>
+              Rush printing for flyers, posters, stickers, business cards, booklets, roll-up banners. Premium-grade printing shipped from our Hong Kong factory to your door in 1–3 business days. Free shipping on orders over $200. No setup fees.
             </>
           )}
           {locale === 'ja' && (

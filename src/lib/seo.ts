@@ -989,6 +989,51 @@ export function generateWebsiteJsonLd() {
   };
 }
 
+// 2026-06-07 升级：Service schema 接入（之前 services/ 页面没标 GEO）
+// 用于 /services/rush-printing-delivery/、/quote/、/case-studies/ 等
+export function generateServiceJsonLd(input: {
+  serviceType: string;
+  serviceName: string;
+  description: string;
+  url: string;
+  areaServed?: string[];
+  offers?: { name: string; price?: string; priceCurrency?: string }[];
+  provider?: { name: string; url: string };
+}): SchemaOrgData {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    serviceType: input.serviceType,
+    name: input.serviceName,
+    description: input.description,
+    url: input.url,
+    provider: {
+      '@type': 'Organization',
+      name: input.provider?.name || siteConfig.name,
+      url: input.provider?.url || siteConfig.url,
+    },
+    areaServed: (input.areaServed || ['US', 'GB', 'AU', 'CA', 'JP', 'HK']).map((c) => ({
+      '@type': 'Country',
+      name: c,
+    })),
+    hasOfferCatalog: input.offers
+      ? {
+          '@type': 'OfferCatalog',
+          name: `${input.serviceName} Catalog`,
+          itemListElement: input.offers.map((o) => ({
+            '@type': 'Offer',
+            itemOffered: {
+              '@type': 'Service',
+              name: o.name,
+            },
+            price: o.price,
+            priceCurrency: o.priceCurrency || 'USD',
+          })),
+        }
+      : undefined,
+  };
+}
+
 // 報價頁面元數據
 export function generateQuotePageMetadata(locale: Locale): Metadata {
   const titles = {

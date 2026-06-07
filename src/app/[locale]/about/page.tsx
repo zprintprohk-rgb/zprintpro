@@ -61,22 +61,22 @@ const translations = {
     metaTitle: 'About ZprintPro | Premium Printing Service From Hong Kong to USA / UK / AU',
     metaDesc: 'Premium printing service from Hong Kong to US, UK, AU, CA. ISO 9001 + FSC certified, 10+ years experience, 1000+ global clients. 72-hour worldwide delivery from our Hong Kong factory.',
     h1: 'About ZprintPro',
-    subtitle: 'Over 10 years in Hong Kong, dedicated to high-quality printing',
+    subtitle: 'Premium printing service shipping to 50+ countries from Hong Kong since 2014',
     storyTitle: 'Our Story',
     story: `ZprintPro was founded in Hong Kong in 2014, starting as a small printing studio focused on business cards and flyers. The founder's obsession with color management and keen insight into client needs gradually expanded the business into packaging, stickers, posters, books, and comprehensive printing services.
 
 Over the past decade, we have witnessed Hong Kong's printing industry transform from traditional offset to digital printing. We pioneered the introduction of Heidelberg 4-color offset presses and HP Indigo digital systems, establishing complete ICC color management workflows to ensure every piece precisely reproduces brand colors. We have served over 1,000 local and overseas businesses across finance, legal, F&B, retail, education, and creative industries.`,
     advantageTitle: 'Core Advantages',
     advantages: [
-      { title: 'Quality Assurance', desc: 'ISO 9001 certified, Heidelberg 4-color offset printing, ICC color management with Delta E ≤3 control. Every stage from prepress to postpress is inspected by dedicated personnel.' },
-      { title: 'Fast Delivery', desc: 'Digital printing available same-day; offset printing delivers in 3–5 days. SF Express covers all Hong Kong districts; large orders can be arranged for direct truck delivery.' },
-      { title: 'Professional Service', desc: 'Free design consultation, free die-cut design, free color proofing. Dedicated account managers provide one-on-one follow-up from quote to delivery.' },
+      { title: 'Quality Assurance', desc: 'ISO 9001 + FSC certified. Heidelberg 4-color offset + HP Indigo digital printing. ICC color management with Delta E ≤3 control. Every order inspected by dedicated prepress and postpress teams before shipping.' },
+      { title: 'Fast Global Delivery', desc: 'Digital printing ships in 24 hours. Offset printing delivers in 3–5 business days. Worldwide express shipping to 50+ countries. Free shipping on selected products to US / UK / AU / CA. Volume orders include dedicated freight forwarding.' },
+      { title: 'Professional Service', desc: 'Free design consultation, free die-cut design, free color proofing. Dedicated English-speaking account manager assigned to every order. From quote to delivery — no setup fees, no hidden charges.' },
     ],
     teamTitle: 'Our Team',
     teams: [
       { title: 'Founder', desc: '15 years of printing industry experience, formerly with top international printing groups, expert in color management and prepress processes.' },
       { title: 'Prepress Engineers', desc: 'Average 8 years experience, specializing in AI/PDF file checking, die-cut design, ICC color profiling, and digital proofing.' },
-      { title: 'Customer Service', desc: 'Fluent in Cantonese, English, Mandarin, and Japanese. 24-hour response commitment, assisting clients from quote to after-sales.' },
+      { title: 'Customer Service', desc: 'Fluent English-speaking team (Mandarin, Cantonese, Japanese available). 24-hour response commitment, dedicated WhatsApp support at +86 181 2638 0255. Assisting clients from quote to after-sales.' },
     ],
     certTitle: 'Certifications',
     certs: [
