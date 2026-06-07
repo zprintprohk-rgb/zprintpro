@@ -18,7 +18,9 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { Calculator, Sparkles, Check, AlertCircle, Loader2 } from 'lucide-react';
 import { quoteEngine } from '@/lib/quote-engine/engine';
-import { BUSINESS_CARDS_CONFIG } from '@/lib/quote-engine/formulas/business-cards';
+import { BUSINESS_CARDS_CONFIG_V2 as BUSINESS_CARDS_CONFIG } from '@/lib/quote-engine/formulas/business-cards';
+import type { GangResult } from '@/lib/quote-engine/core';
+import { GangPreview } from './GangPreview';
 import type { QuoteRequest, QuoteResult, FinishOption, Deadline } from '@/lib/quote-engine/types';
 
 const formSchema = z.object({
@@ -73,7 +75,7 @@ export function BusinessCardQuoteCalculator({ source = 'product' }: { source?: s
   const deferredValues = useDeferredValue(watchedValues);
 
   // 实时价格计算（useDeferredValue 自动 debounce）
-  const liveResult = useMemo<QuoteResult | null>(() => {
+  const liveResult = useMemo<(QuoteResult & { gangLayout?: GangResult }) | null>(() => {
     const values = deferredValues;
     if (!values.material || values.quantity < 100) return null;
     const size = SIZE_MAP[values.size as keyof typeof SIZE_MAP];
@@ -184,7 +186,7 @@ export function BusinessCardQuoteCalculator({ source = 'product' }: { source?: s
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1.5">Finishes (optional)</label>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
-            {BUSINESS_CARDS_CONFIG.finishes.map((finish) => (
+              {BUSINESS_CARDS_CONFIG.finishes.map((finish: string) => (
               <label
                 key={finish}
                 className="flex items-center gap-2 px-3 py-2 border border-gray-200 rounded-lg cursor-pointer hover:border-[#2873F5] has-[:checked]:border-[#2873F5] has-[:checked]:bg-blue-50"
@@ -209,7 +211,7 @@ export function BusinessCardQuoteCalculator({ source = 'product' }: { source?: s
             name="deadline"
             render={({ field }) => (
               <div className="grid grid-cols-3 gap-2">
-                {BUSINESS_CARDS_CONFIG.deadlines.map((d) => (
+                {BUSINESS_CARDS_CONFIG.deadlines.map((d: string) => (
                   <label
                     key={d}
                     className="flex items-center justify-center px-3 py-2.5 border border-gray-200 rounded-lg cursor-pointer hover:border-[#2873F5] has-[:checked]:border-[#2873F5] has-[:checked]:bg-blue-50 has-[:checked]:text-[#2873F5] has-[:checked]:font-semibold"
@@ -236,13 +238,24 @@ export function BusinessCardQuoteCalculator({ source = 'product' }: { source?: s
               ${liveResult.unitPrice.toFixed(4)} per card · Lead time {liveResult.leadTimeHours.min}-{liveResult.leadTimeHours.max}h
             </div>
 
+            {/* ★ Gang Run 排版预览 (杀手级体验) */}
+            {liveResult.gangLayout && (
+              <div className="mt-4">
+                <GangPreview
+                  gang={liveResult.gangLayout}
+                  paperCostHKD={(liveResult as { paperCostHKD?: number }).paperCostHKD || 4.2}
+                  setupCostHKD={(liveResult as { setupCostHKD?: number }).setupCostHKD || 300}
+                />
+              </div>
+            )}
+
             {/* Breakdown */}
             <details className="mb-3">
               <summary className="text-xs text-gray-600 cursor-pointer hover:text-[#2873F5]">
                 View price breakdown
               </summary>
               <ul className="mt-2 space-y-1 text-xs text-gray-600">
-                {liveResult.breakdown.map((b, i) => (
+                {liveResult.breakdown.map((b: { label: string; amount: number; description?: string }, i: number) => (
                   <li key={i} className="flex justify-between">
                     <span>{b.label}</span>
                     <span className="font-mono">${b.amount.toFixed(2)}</span>

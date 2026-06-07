@@ -19,13 +19,19 @@ import type {
   PriceBreakdown,
   PriceSuggestion,
   ProductFormula,
+  FormulaResult,
   QuoteRequest,
   QuoteResult,
 } from './types';
-import { businessCardsFormula } from './formulas/business-cards';
+import { businessCardsFormulaV2 } from './formulas/business-cards';
+import { postersFormula } from './formulas/posters';
+import { MARKETS, marketFromLocale, getMarket } from './markets';
+import type { Market } from './markets';
 
 const REGISTRY: Record<string, ProductFormula> = {
-  'business-cards': businessCardsFormula,
+  'business-cards': businessCardsFormulaV2, // v2 (Phase 2 — 印刷大脑版)
+  'posters': postersFormula, // v1 (Phase 3 — 海报公式)
+  // 注：v1 公式已废弃，全部走 v2 拼版大脑
 };
 
 class QuoteEngine {
@@ -77,19 +83,48 @@ class QuoteEngine {
       (formulaResult.baseUnitPrice + formulaResult.finishSurcharge) * formulaResult.deadlineMultiplier;
     const totalPrice = finalUnitPrice * req.quantity;
 
-    const breakdown: PriceBreakdown[] = [
-      {
+    const breakdown: PriceBreakdown[] = [];
+
+    // v2 公式：按版数分摊的详细 breakdown
+    const extended = formulaResult as FormulaResult & {
+      gangLayout?: ReturnType<typeof import('./core').calculateGang>;
+      setupCostHKD?: number;
+      paperCostHKD?: number;
+      finishingCostHKD?: number;
+      totalCostHKD?: number;
+    };
+    if (extended.gangLayout && extended.setupCostHKD !== undefined) {
+      breakdown.push({
+        label: 'Setup (press)',
+        amount: extended.setupCostHKD * 0.128, // HKD → USD
+        description: `${extended.gangLayout.sheetsNeeded} sheets × 1 setup`,
+      });
+      breakdown.push({
+        label: 'Paper',
+        amount: (extended.paperCostHKD || 0) * 0.128,
+        description: `${extended.gangLayout.sheetsNeeded} sheets of paper stock`,
+      });
+      if ((extended.finishingCostHKD || 0) > 0) {
+        breakdown.push({
+          label: 'Finishing',
+          amount: (extended.finishingCostHKD || 0) * 0.128,
+          description: req.finishes.join(', '),
+        });
+      }
+    } else {
+      // v1 公式 fallback
+      breakdown.push({
         label: 'Base price',
         amount: formulaResult.baseUnitPrice * req.quantity,
         description: `$${formulaResult.baseUnitPrice.toFixed(2)} × ${req.quantity} cards`,
-      },
-    ];
-    if (formulaResult.finishSurcharge > 0) {
-      breakdown.push({
-        label: 'Finish upgrades',
-        amount: formulaResult.finishSurcharge * req.quantity,
-        description: `${req.finishes.join(', ')} +$${formulaResult.finishSurcharge.toFixed(2)}/card`,
       });
+      if (formulaResult.finishSurcharge > 0) {
+        breakdown.push({
+          label: 'Finish upgrades',
+          amount: formulaResult.finishSurcharge * req.quantity,
+          description: `${req.finishes.join(', ')} +$${formulaResult.finishSurcharge.toFixed(2)}/card`,
+        });
+      }
     }
     if (formulaResult.deadlineMultiplier > 1.0) {
       const extra = totalPrice - finalUnitPrice * req.quantity / formulaResult.deadlineMultiplier;
@@ -148,7 +183,15 @@ class QuoteEngine {
       warnings,
       suggestions,
       calculatedAt: new Date().toISOString(),
-    };
+      // v3 透传：拼版数据 + 版数分摊成本
+      ...(extended.gangLayout && {
+        gangLayout: extended.gangLayout,
+        setupCostHKD: extended.setupCostHKD,
+        paperCostHKD: extended.paperCostHKD,
+        finishingCostHKD: extended.finishingCostHKD,
+        totalCostHKD: extended.totalCostHKD,
+      }),
+    } as QuoteResult;
   }
 }
 

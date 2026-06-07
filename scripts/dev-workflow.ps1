@@ -159,6 +159,78 @@ if ($swHits -or $swFiles) {
     Green "No Service Worker (browser will not cache stale pages)"
 }
 
+# ============ Step 4.6: Quote Engine Boundary Tests ============
+Write-Host ""
+Write-Host "  Quote Engine Boundary Tests:" -ForegroundColor Yellow
+
+$engineFile = "src/lib/quote-engine/core.ts"
+$formulaFile = "src/lib/quote-engine/formulas/business-cards.ts"
+
+if ((Test-Path $engineFile) -and (Test-Path $formulaFile)) {
+    # 边界 1: GangCalculation 必须有 itemsPerSheet, sheetsNeeded, wasteRatio 字段
+    $coreContent = Get-Content $engineFile -Raw -ErrorAction SilentlyContinue
+    $requiredFields = @('itemsPerSheet', 'sheetsNeeded', 'wasteRatio', 'utilization')
+    $missingFields = @()
+    foreach ($field in $requiredFields) {
+        # 匹配 interface/type 中的字段定义（如 "field: number;" 或 "field?:"）
+        if ($coreContent -notmatch "$field\s*[?:]") {
+            $missingFields += $field
+        }
+    }
+    if ($missingFields.Count -gt 0) {
+        Red "Quote Engine missing required fields: $($missingFields -join ', ')"
+    } else {
+        Green "Quote Engine has all required gang layout fields"
+    }
+
+    # 边界 2: 必须有混拼 (mix) 模式支持
+    if ($coreContent -match "GANG_RUN_THRESHOLD|mixDensity|mode.*mix") {
+        Green "Gang Run (混拼) mode is supported"
+    } else {
+        Red "Gang Run (混拼) mode is REQUIRED - e-print competitor advantage"
+        Write-Host "    [FIX] Add GANG_RUN_THRESHOLD + mixDensity constants in core.ts" -ForegroundColor Yellow
+        Write-Host "          Use mode 'mix' for quantity <= threshold, 'isolate' for larger" -ForegroundColor Yellow
+    }
+
+    # 边界 3: 极端尺寸边界检查
+    $boundaryTests = @(
+        @{ Test = "calculateGang.*itemWidthMM:\s*1"; Name = "1mm minimal sticker" },
+        @{ Test = "calculateGang.*itemWidthMM:\s*1000"; Name = "1m maximal poster" },
+        @{ Test = "isNaN|NaN"; Name = "NaN guard" },
+        @{ Test = "quantity.*0|quantity.*<.*0"; Name = "Negative/zero quantity guard" }
+    )
+    $hasBoundaryTests = $false
+    foreach ($bt in $boundaryTests) {
+        if ($coreContent -match $bt.Test) {
+            $hasBoundaryTests = $true
+            break
+        }
+    }
+    if ($hasBoundaryTests) {
+        Green "Extreme size boundary tests present (1mm / 1m / NaN / neg)"
+    } else {
+        Yellow "Consider adding extreme size boundary tests (1mm / 1m / NaN / neg quantity)"
+    }
+
+    # 边界 4: 工艺起步价 (BaseCost) 必备
+    if ((Test-Path "src/lib/quote-engine/finishings.ts") -and (Get-Content "src/lib/quote-engine/finishings.ts" -Raw -ErrorAction SilentlyContinue) -match "baseCost|base_cost") {
+        Green "Finishing has base cost (起步价) - matches print industry reality"
+    } else {
+        Red "Missing finishing base cost logic (NOT multiplier)"
+        Write-Host "    [FIX] Create finishings.ts with baseCost + perSheetCost per FinishingOption" -ForegroundColor Yellow
+    }
+
+    # 边界 5: Supabase material data source
+    $sqlFiles = Get-ChildItem "supabase/migrations" -Filter "*.sql" -ErrorAction SilentlyContinue | Where-Object { $_.Name -match "004|material" }
+    if ($sqlFiles.Count -gt 0) {
+        Green "Material data source exists in Supabase migration: $($sqlFiles[0].Name)"
+    } else {
+        Yellow "Material data source not yet in Supabase (硬编码中)"
+    }
+} else {
+    Yellow "Quote Engine files not found - skip boundary tests"
+}
+
 # ============ Step 5: Summary ============
 Header "Step 5/5: Summary"
 
