@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { ShoppingCart, Printer, Package, Truck, ChevronRight } from 'lucide-react';
 import { Locale } from '@/lib/seo';
 import RushDeliveryGrid from '@/components/sections/RushDeliveryGrid';
 import RushDeliveryFAQ from '@/components/sections/RushDeliveryFAQ';
@@ -122,8 +123,8 @@ export default function RushDeliveryPage({ params }: Props) {
           <div className="flex justify-between items-start">
             {/* 节点1 */}
             <div className="flex flex-col items-center text-center w-24">
-              <div className="h-14 w-14 rounded-full bg-orange-100 border-2 border-orange-200 flex items-center justify-center mb-2 shadow-sm">
-                <span className="text-2xl">👤</span>
+              <div className="h-14 w-14 rounded-full bg-blue-50 border-2 border-blue-100 flex items-center justify-center mb-2 shadow-sm">
+                <ShoppingCart className="h-6 w-6 text-[#2873F5]" strokeWidth={2} />
               </div>
               <span className="text-sm font-bold text-gray-900">{locale === 'zh-hk' ? '今天18:00' : locale === 'en' ? 'Today 6PM' : '本日18時'}</span>
               <span className="text-xs text-gray-500">{locale === 'zh-hk' ? '您下單' : locale === 'en' ? 'You order' : 'ご注文'}</span>
@@ -131,15 +132,13 @@ export default function RushDeliveryPage({ params }: Props) {
 
             {/* 箭头1 */}
             <div className="flex items-center pt-5">
-              <svg className="h-3 w-3 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
+              <ChevronRight className="h-4 w-4 text-gray-300" />
             </div>
 
             {/* 节点2 */}
             <div className="flex flex-col items-center text-center w-24">
-              <div className="h-14 w-14 rounded-full bg-orange-100 border-2 border-orange-200 flex items-center justify-center mb-2 shadow-sm">
-                <span className="text-2xl">🖨️</span>
+              <div className="h-14 w-14 rounded-full bg-blue-50 border-2 border-blue-100 flex items-center justify-center mb-2 shadow-sm">
+                <Printer className="h-6 w-6 text-[#2873F5]" strokeWidth={2} />
               </div>
               <span className="text-sm font-bold text-gray-900">{locale === 'zh-hk' ? '今晚22:00' : locale === 'en' ? 'Tonight 10PM' : '今夜22時'}</span>
               <span className="text-xs text-gray-500">{locale === 'zh-hk' ? '印刷完成' : locale === 'en' ? 'Printed' : '印刷完了'}</span>
@@ -147,15 +146,13 @@ export default function RushDeliveryPage({ params }: Props) {
 
             {/* 箭头2 */}
             <div className="flex items-center pt-5">
-              <svg className="h-3 w-3 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
+              <ChevronRight className="h-4 w-4 text-gray-300" />
             </div>
 
             {/* 节点3 */}
             <div className="flex flex-col items-center text-center w-24">
-              <div className="h-14 w-14 rounded-full bg-orange-100 border-2 border-orange-200 flex items-center justify-center mb-2 shadow-sm">
-                <span className="text-2xl">📦</span>
+              <div className="h-14 w-14 rounded-full bg-blue-50 border-2 border-blue-100 flex items-center justify-center mb-2 shadow-sm">
+                <Package className="h-6 w-6 text-[#2873F5]" strokeWidth={2} />
               </div>
               <span className="text-sm font-bold text-gray-900">{locale === 'zh-hk' ? '明早06:00' : locale === 'en' ? 'Tomorrow 6AM' : '翌朝6時'}</span>
               <span className="text-xs text-gray-500">{locale === 'zh-hk' ? '分揀包裝' : locale === 'en' ? 'Packed' : '梱包完了'}</span>
@@ -163,15 +160,13 @@ export default function RushDeliveryPage({ params }: Props) {
 
             {/* 箭头3 */}
             <div className="flex items-center pt-5">
-              <svg className="h-3 w-3 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-              </svg>
+              <ChevronRight className="h-4 w-4 text-gray-300" />
             </div>
 
             {/* 节点4 */}
             <div className="flex flex-col items-center text-center w-24">
-              <div className="h-14 w-14 rounded-full bg-orange-100 border-2 border-orange-200 flex items-center justify-center mb-2 shadow-sm">
-                <span className="text-2xl">🏢</span>
+              <div className="h-14 w-14 rounded-full bg-blue-50 border-2 border-blue-100 flex items-center justify-center mb-2 shadow-sm">
+                <Truck className="h-6 w-6 text-[#2873F5]" strokeWidth={2} />
               </div>
               <span className="text-sm font-bold text-gray-900">{locale === 'zh-hk' ? '明天12:00' : locale === 'en' ? 'Tomorrow 12PM' : '翌日12時'}</span>
               <span className="text-xs text-gray-500">{locale === 'zh-hk' ? '您收貨' : locale === 'en' ? 'Delivered' : 'お届け'}</span>
