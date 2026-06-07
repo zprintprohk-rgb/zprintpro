@@ -190,16 +190,26 @@ export default function ContactPage({ params }: ContactPageProps) {
                 <h3 className="text-base font-bold text-[#333333] mb-2">{t.addressLabel}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{t.addressValue}</p>
               </div>
-              <div className="px-1 pb-1">
+              <div className="px-1 pb-1 space-y-2">
                 <iframe
                   src="https://www.openstreetmap.org/export/embed.html?bbox=114.2185%2C22.3085%2C114.2295%2C22.3145&layer=mapnik&marker=22.3115%2C114.2240"
                   width="100%"
-                  height="200"
+                  height="260"
                   style={{ border: 0 }}
                   loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  sandbox="allow-scripts allow-same-origin"
                   title="ZprintPro Office Location - 182 Wai Yip Street, Kwun Tong"
-                  className="rounded-lg"
+                  className="rounded-lg w-full"
                 />
+                <a
+                  href="https://www.openstreetmap.org/?mlat=22.3115&mlon=114.2240#map=17/22.3115/114.2240"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-xs text-[#2873F5] hover:underline"
+                >
+                  在 OpenStreetMap 全屏查看 →
+                </a>
               </div>
             </div>
           </div>
