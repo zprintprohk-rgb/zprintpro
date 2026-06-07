@@ -38,10 +38,13 @@ export const booksFormula = (ctx: FormulaContext & {
   const totalPages = pages || DEFAULT_PAGES;
   const bindingType = binding || (totalPages <= 32 ? 'saddle-stitch' : totalPages <= 200 ? 'perfect-bind' : 'case-bind');
 
-  // 内页拼版
+  // 内页拼版 (H2 修复 2026-06-07)
   // A3+ 大版 = 8 页（双面印刷）= 4 张 A4
-  // totalPages 张内页需要 totalPages/8 张大版
-  const sheetsNeeded = Math.ceil(totalPages / DEFAULT_INNER_PAGES_SHEET) * Math.ceil(quantity / 50); // 50 本起印
+  // 旧 bug: ceil(totalPages/8) * ceil(quantity/50) = 3 * 1 = 3 张
+  //   → 24 页 × 50 本 = 1200 张内页, 实际需要 150 张大版 (差 50x)
+  // 正确: ceil(totalPages / 8) × quantity
+  //   → 24 页 / 8 = 3 张/本 × 50 本 = 150 张大版
+  const sheetsNeeded = Math.ceil(totalPages / DEFAULT_INNER_PAGES_SHEET) * quantity; // 50 本起印
 
   // 装订起步价
   const bindingSetup = BINDING_COSTS[bindingType];
