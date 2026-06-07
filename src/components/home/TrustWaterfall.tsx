@@ -39,15 +39,15 @@ export function TrustWaterfall({ locale }: TrustWaterfallProps) {
       className="bg-white border-b border-slate-100"
       aria-label="Trust signals"
     >
-      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-3 md:py-4">
-        <ul className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 md:gap-x-10">
+      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-4 md:py-5">
+        <ul className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3 md:gap-x-14">
           {items.map((label, i) => (
             <li
               key={i}
-              className="flex items-center gap-1.5 text-xs md:text-sm text-slate-600 hover:text-slate-900 transition-colors"
+              className="flex items-center gap-2 text-[13px] md:text-[15px] text-slate-700 hover:text-slate-900 transition-colors"
             >
-              <CheckCircle2 className="w-4 h-4 text-emerald-500 flex-shrink-0" />
-              <span className="font-medium whitespace-nowrap">{label}</span>
+              <CheckCircle2 className="w-[18px] h-[18px] text-emerald-500 flex-shrink-0" />
+              <span className="font-semibold whitespace-nowrap">{label}</span>
             </li>
           ))}
         </ul>

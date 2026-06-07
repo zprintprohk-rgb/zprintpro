@@ -38,6 +38,7 @@ import { RegionalContent, RegionalCta, RegionalTrustBadges } from '@/components/
 import { convertPriceRangeString } from '@/lib/pricing';
 import { ProductWhyChooseUs } from '@/components/ProductWhyChooseUs';
 import RushDeliveryBadge from '@/components/sections/RushDeliveryBadge';
+import { TrustWaterfall } from '@/components/home/TrustWaterfall';
 
 // 生成静态参数 - 79产品 × 3语言 = 237个路径
 export function generateStaticParams() {
@@ -387,8 +388,8 @@ export default function ProductPage({
                 <QuoteCalculator product={product} locale={locale} />
               </div>
               
-              {/* SKU & 最低订购量 */}
-              <div className="flex items-center gap-4 text-xs text-gray-400 mb-4">
+              {/* SKU & 最低订购量 (2026-06-07: 靠右对齐 + 减右 padding 2/3) */}
+              <div className="flex items-center justify-end gap-3 text-xs text-gray-400 mb-4 pr-2">
                 <span>{t.sku}: <span className="font-mono text-gray-500">{product.sku_code}</span></span>
                 <span className="w-px h-3 bg-gray-300"></span>
                 <span>{t.minOrder}: {product.minQuantity}</span>
@@ -396,8 +397,9 @@ export default function ProductPage({
             </div>
           </div>
           
-          {/* 产品详情Tabs */}
+          {/* 产品详情Tabs — 上方加 trust badges (2026-06-07) */}
           <div className="mt-12">
+            <TrustWaterfall locale={locale} />
             <ProductTabs product={product} locale={locale} />
           </div>
           
