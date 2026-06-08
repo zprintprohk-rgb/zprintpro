@@ -1,16 +1,39 @@
-export interface Env {
-  RESEND_API_KEY: string;
-}
+import { NextRequest, NextResponse } from 'next/server';
 
-export async function onRequestPost(context: { request: Request; env: Env }): Promise<Response> {
-  const corsHeaders: Record<string, string> = {
+export const runtime = 'edge';
+export const dynamic = 'force-dynamic';
+
+const labelMap: Record<string, Record<string, string>> = {
+  'zh-hk': {
+    title: '新的印刷詢價', name: '姓名', phone: '聯絡電話', email: '電郵',
+    category: '產品類型', quantity: '印刷數量', size: '尺寸規格',
+    message: '留言內容', none: '無',
+  },
+  en: {
+    title: 'New Printing Quote Request', name: 'Name', phone: 'Phone', email: 'Email',
+    category: 'Product Category', quantity: 'Quantity', size: 'Size',
+    message: 'Message', none: 'None',
+  },
+  ja: {
+    title: '新規印刷お見積もり依頼', name: 'お名前', phone: '電話番号', email: 'メール',
+    category: '製品カテゴリー', quantity: '数量', size: 'サイズ',
+    message: 'メッセージ', none: 'なし',
+  },
+};
+
+function corsHeaders() {
+  return {
     'Access-Control-Allow-Origin': '*',
     'Access-Control-Allow-Methods': 'POST, OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type',
   };
+}
+
+export async function POST(request: NextRequest): Promise<NextResponse> {
+  const headers = corsHeaders();
 
   try {
-    const formData = await context.request.formData();
+    const formData = await request.formData();
     const name = (formData.get('name') as string) || '';
     const phone = (formData.get('phone') as string) || '';
     const email = (formData.get('email') as string) || '';
@@ -23,23 +46,6 @@ export async function onRequestPost(context: { request: Request; env: Env }): Pr
     const files = formData.getAll('attachments') as File[];
     const validFiles = files.filter((f) => f && f.size > 0);
 
-    const labelMap: Record<string, Record<string, string>> = {
-      'zh-hk': {
-        title: '新的印刷詢價', name: '姓名', phone: '聯絡電話', email: '電郵',
-        category: '產品類型', quantity: '印刷數量', size: '尺寸規格',
-        message: '留言內容', none: '無',
-      },
-      en: {
-        title: 'New Printing Quote Request', name: 'Name', phone: 'Phone', email: 'Email',
-        category: 'Product Category', quantity: 'Quantity', size: 'Size',
-        message: 'Message', none: 'None',
-      },
-      ja: {
-        title: '新規印刷お見積もり依頼', name: 'お名前', phone: '電話番号', email: 'メール',
-        category: '製品カテゴリー', quantity: '数量', size: 'サイズ',
-        message: 'メッセージ', none: 'なし',
-      },
-    };
     const t = labelMap[locale] || labelMap['zh-hk'];
     const submittedTime = new Date().toLocaleString(
       locale === 'zh-hk' ? 'zh-HK' : locale === 'ja' ? 'ja-JP' : 'en-US'
@@ -64,7 +70,6 @@ export async function onRequestPost(context: { request: Request; env: Env }): Pr
       <div style="text-align:center;padding:16px;font-size:12px;color:#9ca3af"><p>Sent from ZprintPro Website</p></div>
     </div>`;
 
-    // 处理附件为 base64
     const attachments = await Promise.all(
       validFiles.map(async (file) => ({
         filename: file.name,
@@ -72,15 +77,15 @@ export async function onRequestPost(context: { request: Request; env: Env }): Pr
       }))
     );
 
-    const resendKey = context.env.RESEND_API_KEY;
+    const resendKey = process.env.RESEND_API_KEY;
     if (!resendKey) {
-      return new Response(
-        JSON.stringify({ success: false, error: 'RESEND_API_KEY not configured' }),
-        { status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      return NextResponse.json(
+        { success: false, error: 'RESEND_API_KEY not configured' },
+        { status: 500, headers }
       );
     }
 
-    const resendBody: any = {
+    const resendBody: Record<string, unknown> = {
       from: 'ZprintPro <noreply@zprintpro.com>',
       to: 'zprintpro@outlook.com',
       reply_to: email || undefined,
@@ -109,21 +114,18 @@ export async function onRequestPost(context: { request: Request; env: Env }): Pr
       throw new Error(`Resend error: ${err}`);
     }
 
-    return new Response(JSON.stringify({ success: true }), {
-      status: 200,
-      headers: { ...corsHeaders, 'Content-Type': 'application/json' },
-    });
+    return NextResponse.json({ success: true }, { status: 200, headers });
   } catch (error) {
     const msg = error instanceof Error ? error.message : 'Unknown error';
-    return new Response(JSON.stringify({ success: false, error: msg }), {
-      status: 500,
-      headers: { ...corsHeaders, 'Content-Type': 'application/json' },
-    });
+    return NextResponse.json(
+      { success: false, error: msg },
+      { status: 500, headers }
+    );
   }
 }
 
-export async function onRequestOptions(): Promise<Response> {
-  return new Response(null, {
+export async function OPTIONS(): Promise<NextResponse> {
+  return new NextResponse(null, {
     status: 204,
     headers: {
       'Access-Control-Allow-Origin': '*',

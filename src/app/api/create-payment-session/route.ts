@@ -1,4 +1,8 @@
+import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
+
+export const runtime = 'edge';
+export const dynamic = 'force-dynamic';
 
 interface PaymentIntentResponse {
   id: string;
@@ -87,55 +91,50 @@ function isAllowedCurrency(value: string): value is AllowedCurrency {
   return ALLOWED_CURRENCIES.includes(value as AllowedCurrency);
 }
 
-export interface Env {
-  AIRWALLEX_API_KEY: string;
-  SUPABASE_URL: string;
-  SUPABASE_SERVICE_ROLE_KEY: string;
-}
-
-export async function onRequestPost(context: {
-  request: Request;
-  env: Env;
-}): Promise<Response> {
-  const origin = context.request.headers.get('Origin') || '*';
-  const corsHeaders: Record<string, string> = {
-    'Access-Control-Allow-Origin': origin,
+function corsHeaders(origin: string | null) {
+  return {
+    'Access-Control-Allow-Origin': origin || '*',
     'Access-Control-Allow-Methods': 'POST, OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type',
   };
+}
+
+export async function POST(request: NextRequest): Promise<NextResponse> {
+  const origin = request.headers.get('Origin');
+  const headers = corsHeaders(origin);
 
   try {
-    const body: CreateSessionRequest = await context.request.json();
+    const body: CreateSessionRequest = await request.json();
     const { quote_data, amount, currency, file_url } = body;
 
     if (typeof amount !== 'number' || amount <= 0) {
-      return new Response(
-        JSON.stringify({ error: 'Invalid amount. Must be a number greater than 0.' }),
-        { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      return NextResponse.json(
+        { error: 'Invalid amount. Must be a number greater than 0.' },
+        { status: 400, headers }
       );
     }
 
     if (typeof currency !== 'string' || !isAllowedCurrency(currency)) {
-      return new Response(
-        JSON.stringify({ error: `Invalid currency. Must be one of: ${ALLOWED_CURRENCIES.join(', ')}.` }),
-        { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      return NextResponse.json(
+        { error: `Invalid currency. Must be one of: ${ALLOWED_CURRENCIES.join(', ')}.` },
+        { status: 400, headers }
       );
     }
 
-    const apiKey = context.env.AIRWALLEX_API_KEY;
+    const apiKey = process.env.AIRWALLEX_API_KEY;
     if (!apiKey) {
-      return new Response(
-        JSON.stringify({ error: 'AIRWALLEX_API_KEY is not configured' }),
-        { status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      return NextResponse.json(
+        { error: 'AIRWALLEX_API_KEY is not configured' },
+        { status: 500, headers }
       );
     }
 
-    const supabaseUrl = context.env.SUPABASE_URL;
-    const supabaseServiceKey = context.env.SUPABASE_SERVICE_ROLE_KEY;
+    const supabaseUrl = process.env.SUPABASE_URL;
+    const supabaseServiceKey = process.env.SUPABASE_SERVICE_ROLE_KEY;
     if (!supabaseUrl || !supabaseServiceKey) {
-      return new Response(
-        JSON.stringify({ error: 'Supabase environment variables are not configured' }),
-        { status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      return NextResponse.json(
+        { error: 'Supabase environment variables are not configured' },
+        { status: 500, headers }
       );
     }
 
@@ -181,28 +180,22 @@ export async function onRequestPost(context: {
       })
       .eq('id', orderId);
 
-    return new Response(
-      JSON.stringify({
+    return NextResponse.json(
+      {
         clientSecret: paymentIntent.client_secret,
         paymentIntentId: paymentIntent.id,
         orderId,
-      }),
-      {
-        status: 200,
-        headers: { ...corsHeaders, 'Content-Type': 'application/json' },
-      }
+      },
+      { status: 200, headers }
     );
   } catch (error) {
     const message = error instanceof Error ? error.message : 'Internal server error';
-    return new Response(JSON.stringify({ error: message }), {
-      status: 500,
-      headers: { ...corsHeaders, 'Content-Type': 'application/json' },
-    });
+    return NextResponse.json({ error: message }, { status: 500, headers });
   }
 }
 
-export async function onRequestOptions(): Promise<Response> {
-  return new Response(null, {
+export async function OPTIONS(): Promise<NextResponse> {
+  return new NextResponse(null, {
     status: 204,
     headers: {
       'Access-Control-Allow-Origin': '*',
