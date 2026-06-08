@@ -292,22 +292,22 @@ export default function ContactPage({ params }: ContactPageProps) {
                     <div className="flex-1 h-px bg-slate-200"></div>
                   </div>
 
-                  {/* 二维码: 144x144 居中 + 4 角绿色 L 装饰 */}
+                  {/* 二维码: 120x120 居中 + 4 角绿色 L 装饰 (适中大小) */}
                   <div className="flex justify-center">
-                    <div className="relative w-[144px] h-[144px] bg-white border-2 border-slate-200 rounded-xl overflow-hidden flex items-center justify-center shadow-sm group/qr">
+                    <div className="relative w-[120px] h-[120px] bg-white border border-slate-200 rounded-lg overflow-hidden flex items-center justify-center shadow-sm group/qr">
                       <Image
                         src="/whatsapp-qr.jpg"
                         alt="WhatsApp QR Code | ZprintPro"
-                        width={136}
-                        height={136}
+                        width={112}
+                        height={112}
                         className="object-contain transition-transform duration-300 group-hover/qr:scale-105"
                         loading="lazy"
                       />
-                      {/* 4 角绿色 L 装饰 (放大版) */}
-                      <span className="absolute top-1.5 left-1.5 w-3 h-3 border-t-[3px] border-l-[3px] border-emerald-500 rounded-tl-sm"></span>
-                      <span className="absolute top-1.5 right-1.5 w-3 h-3 border-t-[3px] border-r-[3px] border-emerald-500 rounded-tr-sm"></span>
-                      <span className="absolute bottom-1.5 left-1.5 w-3 h-3 border-b-[3px] border-l-[3px] border-emerald-500 rounded-bl-sm"></span>
-                      <span className="absolute bottom-1.5 right-1.5 w-3 h-3 border-b-[3px] border-r-[3px] border-emerald-500 rounded-br-sm"></span>
+                      {/* 4 角绿色 L 装饰 (适中) */}
+                      <span className="absolute top-1 left-1 w-2.5 h-2.5 border-t-[2.5px] border-l-[2.5px] border-emerald-500"></span>
+                      <span className="absolute top-1 right-1 w-2.5 h-2.5 border-t-[2.5px] border-r-[2.5px] border-emerald-500"></span>
+                      <span className="absolute bottom-1 left-1 w-2.5 h-2.5 border-b-[2.5px] border-l-[2.5px] border-emerald-500"></span>
+                      <span className="absolute bottom-1 right-1 w-2.5 h-2.5 border-b-[2.5px] border-r-[2.5px] border-emerald-500"></span>
                     </div>
                   </div>
                   {/* 二维码下方文案: 字号 14px (text-base), font-medium, text-slate-700 */}
