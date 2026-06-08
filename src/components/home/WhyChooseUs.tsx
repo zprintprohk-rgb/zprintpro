@@ -230,6 +230,14 @@ export function WhyChooseUs({ locale }: WhyChooseUsProps) {
                 {/* hover 时发光边框 (蓝色微光) */}
                 <div className="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 ring-1 ring-blue-400/30" />
 
+                {/* "24小时支持" 卡: 右上角绿点脉动 (沿用联系页 ContactCard 模式, 跨页一致性) */}
+                {index === 2 && (
+                  <span className="absolute top-4 right-4 flex h-3 w-3" title={t.title === '為何選擇智印云' ? '在線' : 'Online'}>
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+                    <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500 border-2 border-white" />
+                  </span>
+                )}
+
                 {/* 图标容器 — hover 时图标微旋转 6° + 容器底色加深 (基线色 token 不变) */}
                 <div className={`w-14 h-14 ${feature.iconBg} ${feature.hoverRing} rounded-xl flex items-center justify-center transition-all duration-300 group-hover:rotate-6 group-hover:scale-110`}>
                   <Icon className={`w-7 h-7 ${feature.iconColor}`} strokeWidth={2} />

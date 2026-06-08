@@ -253,16 +253,19 @@ export function Footer({ locale }: FooterProps) {
 
   return (
     <footer className="bg-[#1a1a2e] text-white">
-      {/* ===== 顶部信任栏 (bg-slate-900) ===== */}
+      {/* ===== 顶部信任栏 (bg-slate-900) — 升级为 pill 风格 trust badges (2026-06-09 P0 信任锚点包) ===== */}
       <div className="bg-slate-900 border-b border-white/5">
         <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-5">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-4">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-3 gap-y-3">
             {t.trustBar.map((item, idx) => (
-              <div key={idx} className="flex items-center gap-2.5 text-sm text-slate-300">
-                <span className="text-cyan-400">
+              <div
+                key={idx}
+                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10 text-xs text-slate-200 hover:bg-white/10 hover:border-cyan-400/40 hover:text-white transition-all duration-200"
+              >
+                <span className="text-cyan-400 flex-shrink-0">
                   <TrustIcon kind={item.icon} />
                 </span>
-                <span className="font-medium">{item.text}</span>
+                <span className="font-medium whitespace-nowrap">{item.text}</span>
               </div>
             ))}
           </div>
