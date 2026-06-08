@@ -6497,70 +6497,9 @@ export function getProductsByCategory(categorySlug: string): Product[] {
   return products.filter((p) => p.category === categorySlug);
 }
 
-// 简繁字符映射 (2026-06-07 修复搜索 "宣传单张" 找不到)
-// 字符数组: [繁体, 简体, 繁体, 简体, ...] — 避免 object literal 重复 key 错误
-const TRAD_SIMP_PAIRS: Array<[string, string]> = [
-  ['宣', '宣'], ['傳', '传'], ['單', '单'], ['張', '张'], ['圖', '图'], ['個', '个'], ['們', '们'],
-  ['時', '时'], ['間', '间'], ['價', '价'], ['錢', '钱'], ['銀', '银'], ['紙', '纸'], ['樣', '样'],
-  ['現', '现'], ['實', '实'], ['話', '话'], ['語', '语'], ['車', '车'], ['馬', '马'], ['鳥', '鸟'],
-  ['魚', '鱼'], ['龍', '龙'], ['門', '门'], ['開', '开'], ['關', '关'], ['長', '长'],
-  ['遠', '远'], ['東', '东'], ['顏', '颜'], ['紅', '红'], ['藍', '蓝'], ['黃', '黄'],
-  ['綠', '绿'], ['產', '产'], ['業', '业'], ['電', '电'], ['腦', '脑'],
-  ['網', '网'], ['絡', '络'], ['設', '设'], ['計', '计'], ['劃', '划'], ['專', '专'],
-  ['購', '购'], ['買', '买'], ['賣', '卖'], ['質', '质'], ['標', '标'], ['準', '准'],
-  ['訂', '订'], ['貨', '货'], ['據', '据'], ['處', '处'], ['員', '员'],
-  ['廠', '厂'], ['機', '机'], ['備', '备'], ['裝', '装'],
-  ['製', '制'], ['創', '创'], ['藝', '艺'], ['術', '术'],
-  ['學', '学'], ['習', '习'], ['書', '书'], ['報', '报'], ['雜', '杂'], ['誌', '志'],
-  ['貼', '贴'], ['盒', '盒'], ['袋', '袋'], ['戶', '户'], ['服', '服'], ['務', '务'],
-  ['聯', '联'], ['應', '应'], ['該', '该'], ['當', '当'], ['為', '为'], ['種', '种'], ['類', '类'],
-  ['選', '选'], ['擇', '择'], ['滿', '满'], ['費', '费'],
-  ['經', '经'], ['驗', '验'],
-];
-
-function toSimplified(s: string): string {
-  const map = new Map(TRAD_SIMP_PAIRS);
-  return s.split('').map((c) => map.get(c) || c).join('');
-}
-
-// 搜索产品
-export function searchProducts(query: string): Product[] {
-  const lowerQuery = query.toLowerCase().trim();
-  if (!lowerQuery) return [];
-
-  // 简体 query, 映射到繁体 (e.g. "宣传" → "宣傳") 让繁简都能匹配
-  const simpQuery = toSimplified(lowerQuery);
-  // 反向映射: 简体→繁体 (用 Map 反向遍历)
-  const tradMap = new Map(TRAD_SIMP_PAIRS.map(([t, s]) => [s, t]));
-  const tradQuery = lowerQuery.split('').map((c) => tradMap.get(c) || c).join('');
-
-  return products.filter((p) => {
-    // 扫描 7 个字段 (含 description / slug / category)
-    const fields = [
-      p.name, p.nameEn, p.nameJa, p.sku_code,
-      p.description, p.descriptionEn, p.descriptionJa, p.description_zh,
-      p.slug, p.category_slug, p.category,
-    ];
-    for (const f of fields) {
-      if (!f) continue;
-      const lower = f.toLowerCase();
-      if (lower.includes(lowerQuery) || lower.includes(simpQuery) || lower.includes(tradQuery)) {
-        return true;
-      }
-      // category name 查表
-      if (p.category_slug) {
-        const cat = categories.find((c) => c.slug === p.category_slug);
-        if (cat) {
-          const catFields = [cat.name, cat.nameEn, cat.nameJa, cat.name_zh];
-          for (const cf of catFields) {
-            if (cf && (cf.includes(lowerQuery) || cf.includes(simpQuery))) return true;
-          }
-        }
-      }
-    }
-    return false;
-  });
-}
+// 搜索产品 — 复用 search-helpers 模块 (2026-06-08 抽出)
+// 实际实现在 src/data/search-helpers.ts, 这里 re-export 保持向后兼容
+export { searchProducts, searchCategories, searchAll } from './search-helpers';
 
 // 获取产品标题（根据语言）
 export function getProductTitle(product: Product, locale: string): string {

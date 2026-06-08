@@ -6,6 +6,7 @@
 import { Product } from '@/data/products';
 import { Locale } from '@/lib/seo';
 import { getProductsByCategory, getProductTitle, getProductImageAlt } from '@/data/products';
+import { getProductMainImage } from '@/lib/product-image';
 
 interface RelatedProductsProps {
   currentProduct: Product;
@@ -49,7 +50,7 @@ export function RelatedProducts({ currentProduct, locale }: RelatedProductsProps
           >
             <div className="aspect-square bg-gray-100">
               <img
-                src={product.imagesByLocale?.[locale]?.[0] || '/images/placeholder.jpg'}
+                src={getProductMainImage(product, locale)}
                 alt={getProductImageAlt(product, locale)}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform"
               />

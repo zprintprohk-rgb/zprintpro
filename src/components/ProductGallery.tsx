@@ -18,8 +18,10 @@ export function ProductGallery({ images, title, alt }: ProductGalleryProps) {
   const displayImages = images.length > 0 ? images : ['/images/placeholder.jpg'];
 
   const [currentImage, setCurrentImage] = useState(() => {
-    const defaultIndex = 2; // 默认显示第三张图片
-    return displayImages.length > defaultIndex ? defaultIndex : 0;
+    // 2026-06-08 修复: 显示第 1 张 (index 0), 不是第 3 张
+    // 原因: GSC Image Indexing 抓取详情页主图, 第 1 张通常是最好的封面/主视觉
+    // 改 0 后, Google 索引的缩略图会是产品首图, 用户点开看也是首图 (一致)
+    return 0;
   });
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const mainAlt = alt || title;

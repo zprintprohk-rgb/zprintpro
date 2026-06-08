@@ -7,6 +7,7 @@ import { usePathname } from 'next/navigation';
 import { ArrowRight, ChevronRight, Search, ShoppingBag, FileText, Tag, Package, ImageIcon, GraduationCap, CreditCard, Mail, BookOpen, Calendar, Gift, Flag, StickyNote } from 'lucide-react';
 import { Locale } from '@/lib/seo';
 import { shouldShowPrice, getQuoteLabel, convertPriceRangeString } from '@/lib/pricing';
+import { getProductMainImage } from '@/lib/product-image';
 import { products, categories, getProductTitle, getProductDescription, getProductImageAlt } from '@/data/products';
 import { getWhatsAppLinkProps } from '@/lib/whatsapp';
 
@@ -253,7 +254,7 @@ export function HotProducts({ locale }: HotProductsProps) {
               {hotProducts.map((product, index) => {
                 const productName = getProductTitle(product, locale);
                 const productDesc = getProductDescription(product, locale);
-                const imageSrc = product.imagesByLocale?.[locale]?.[0] || '/images/placeholder.jpg';
+                const imageSrc = getProductMainImage(product, locale);
                 return (
                   <div
                     key={product.sku_code}

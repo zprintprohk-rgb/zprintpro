@@ -7,6 +7,7 @@ import { CreditCard, Tag, ShoppingBag, FileText, ImageIcon, Package, BookOpen, F
 import { Product } from '@/data/products';
 import { Locale } from '@/lib/seo';
 import { shouldShowPrice, convertPriceRangeString } from '@/lib/pricing';
+import { getProductMainImage } from '@/lib/product-image';
 
 interface CategoryProductCardProps {
   product: Product;
@@ -44,7 +45,7 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
 
   const fallback = categoryFallbacks[product.category] || { icon: Package, bgColor: 'bg-gray-50', iconColor: 'text-gray-500' };
   const FallbackIcon = fallback.icon;
-  const imageSrc = product.imagesByLocale?.[locale]?.[0] || '/images/placeholder.jpg';
+  const imageSrc = getProductMainImage(product, locale);
   const hasImage = imageSrc && !imgError;
 
   const getName = () => {

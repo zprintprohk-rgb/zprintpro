@@ -13,6 +13,7 @@ import { Product } from '@/data/products';
 import { Locale } from '@/lib/seo';
 import { getProductTitle } from '@/data/products';
 import { convertPriceRangeString } from '@/lib/pricing';
+import { getProductMainImage } from '@/lib/product-image';
 import { useCart } from '@/lib/cart-context';
 import { translateVariableLabel } from '@/lib/variable-i18n';
 import { Check, MessageCircle, ShoppingCart, Zap, ChevronRight } from 'lucide-react';
@@ -459,7 +460,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
                       name: product.name,
                       nameEn: product.nameEn || product.name,
                       nameJa: product.nameJa || product.name,
-                      image: product.imagesByLocale?.[locale]?.[0] || '/images/placeholder.jpg',
+                      image: getProductMainImage(product, locale),
                       price_range: product.price_range,
                       category_slug: product.category_slug,
                       quantity: config.quantity,
@@ -487,7 +488,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
                       name: product.name,
                       nameEn: product.nameEn || product.name,
                       nameJa: product.nameJa || product.name,
-                      image: product.imagesByLocale?.[locale]?.[0] || '/images/placeholder.jpg',
+                      image: getProductMainImage(product, locale),
                       price_range: product.price_range,
                       category_slug: product.category_slug,
                       quantity: config.quantity,

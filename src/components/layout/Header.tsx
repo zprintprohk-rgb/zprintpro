@@ -4,10 +4,11 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Menu, X, Phone, Mail, ShoppingCart, Search, ChevronDown } from 'lucide-react';
+import { Menu, X, Phone, Mail, ShoppingCart, ChevronDown } from 'lucide-react';
 import { Locale } from '@/lib/seo';
 import { useCart } from '@/lib/cart-context';
 import { getWhatsAppLinkProps } from '@/lib/whatsapp';
+import { SearchDropdown } from './SearchDropdown';
 
 interface HeaderProps {
   locale: Locale;
@@ -19,13 +20,14 @@ const translations = {
     email: 'zprintpro@outlook.com',
     whatsapp: 'WhatsApp',
     support: '24/7 客戶服務',
-    searchPlaceholder: '搜尋印刷產品...',
+    searchPlaceholder: '搜尋印刷產品 (宣傳單張/咭片/貼紙...)',
     search: '搜尋',
     cart: '購物車',
     home: '首頁',
     knowledge: '印刷知識',
     contact: '聯絡我們',
     getQuote: '免費報價',
+    noResults: '沒有相關結果, 試試其他關鍵字?',
     categories: {
       'paper-bags': '紙袋印刷',
       'flyers': '宣傳單張',
@@ -41,13 +43,14 @@ const translations = {
     email: 'zprintpro@outlook.com',
     whatsapp: 'WhatsApp',
     support: '24/7 Customer Service',
-    searchPlaceholder: 'Search printing products...',
+    searchPlaceholder: 'Search printing products (Flyers/Cards/Stickers...)',
     search: 'Search',
     cart: 'Cart',
     home: 'Home',
     knowledge: 'Knowledge',
     contact: 'Contact Us',
     getQuote: 'Get Quote',
+    noResults: 'No results found. Try other keywords?',
     categories: {
       'paper-bags': 'Paper Bags',
       'flyers': 'Flyers',
@@ -63,13 +66,14 @@ const translations = {
     email: 'zprintpro@outlook.com',
     whatsapp: 'WhatsApp',
     support: '24時間年中無休サポート',
-    searchPlaceholder: '印刷製品を検索...',
+    searchPlaceholder: '印刷製品を検索 (チラシ/名刺/ステッカー...)',
     search: '検索',
     cart: 'カート',
     home: 'ホーム',
     knowledge: '印刷知識',
     contact: 'お問い合わせ',
     getQuote: '見積もり',
+    noResults: '結果が見つかりません。他のキーワードをお試しください。',
     categories: {
       'paper-bags': '紙袋印刷',
       'flyers': 'チラシ印刷',
@@ -237,17 +241,9 @@ function CartBadge() {
 export function Header({ locale }: HeaderProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
-  const [searchQuery, setSearchQuery] = useState('');
   const pathname = usePathname() || '';
   const t = translations[locale];
   const localePrefix = `/${locale}`;
-
-  const handleSearch = (e: React.FormEvent) => {
-    e.preventDefault();
-    if (searchQuery.trim()) {
-      window.location.href = `${localePrefix}/search?q=${encodeURIComponent(searchQuery.trim())}`;
-    }
-  };
 
   const getSubItemName = (slug: string) => {
     return subItemNames[locale]?.[slug] || slug.split('-').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ');
@@ -302,14 +298,17 @@ export function Header({ locale }: HeaderProps) {
               <Link href={`${localePrefix}/`} className="flex-shrink-0 ml-[30px]">
                 <Image src="/images/logo.svg" alt="ZprintPro" width={200} height={52} className="h-[52px] w-auto" priority />
               </Link>
-              <form onSubmit={handleSearch} className="hidden md:flex flex-1 max-w-xl mx-4">
-                <div className="relative w-full">
-                  <input type="text" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} placeholder={t.searchPlaceholder} className="w-full pl-4 pr-24 py-2.5 border border-gray-200 rounded-lg focus:outline-none focus:border-[#2873F5] focus:ring-1 focus:ring-[#2873F5] text-sm" />
-                  <button type="submit" className="absolute right-0 top-0 h-full px-5 bg-[#F87314] hover:bg-[#E56203] text-white rounded-r-lg flex items-center gap-1.5 transition-colors text-sm font-medium">
-                    <Search className="w-4 h-4" /><span className="hidden lg:inline">{t.search}</span>
-                  </button>
-                </div>
-              </form>
+              <div className="hidden md:flex flex-1 max-w-xl mx-4">
+                <SearchDropdown
+                  locale={locale}
+                  placeholder={t.searchPlaceholder}
+                  searchLabel={t.search}
+                  viewAllLabel={t.search}
+                  noResultsLabel={t.noResults}
+                  variant="desktop"
+                  className="w-full"
+                />
+              </div>
               <div className="flex items-center gap-3 lg:gap-5">
                 <Link href={`${localePrefix}/cart/`} className="flex items-center gap-1.5 text-gray-600 hover:text-[#2873F5] transition-colors text-sm">
                   <div className="relative"><ShoppingCart className="w-5 h-5" /><CartBadge /></div>
@@ -441,12 +440,17 @@ export function Header({ locale }: HeaderProps) {
       {mobileMenuOpen && (
         <div className="lg:hidden bg-white border-t">
           <div className="px-4 py-4 space-y-3">
-            <form onSubmit={handleSearch} className="md:hidden mb-4">
-              <div className="relative">
-                <input type="text" value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)} placeholder={t.searchPlaceholder} className="w-full pl-4 pr-12 py-2.5 border border-gray-200 rounded-lg text-sm" />
-                <button type="submit" className="absolute right-0 top-0 h-full px-3 text-[#F87314]"><Search className="w-5 h-5" /></button>
-              </div>
-            </form>
+            <div className="md:hidden mb-4">
+              <SearchDropdown
+                locale={locale}
+                placeholder={t.searchPlaceholder}
+                searchLabel={t.search}
+                viewAllLabel={t.search}
+                noResultsLabel={t.noResults}
+                variant="mobile"
+                className="w-full"
+              />
+            </div>
             <Link href={`${localePrefix}/`} className="block font-medium text-[#333333] py-2">{t.home}</Link>
             <Link href={`${localePrefix}/services/rush-printing-delivery`} className="block font-medium text-[#333333] py-2">
               {locale === 'zh-hk' ? '⚡ 即日服務' : locale === 'en' ? '⚡ Rush' : '⚡ 即日'}

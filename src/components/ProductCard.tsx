@@ -11,6 +11,7 @@ import { CreditCard, Tag, ShoppingBag, FileText, ImageIcon, Package, BookOpen, F
 import { Product } from '@/data/products';
 import { Locale } from '@/lib/seo';
 import { getProductTitle, getProductDescription, getProductImageAlt } from '@/data/products';
+import { getProductMainImage } from '@/lib/product-image';
 
 interface ProductCardProps {
   product: Product;
@@ -40,7 +41,7 @@ export function ProductCard({ product, locale }: ProductCardProps) {
   
   const fallback = categoryFallbacks[product.category] || { icon: Package, gradient: 'from-gray-400/15 to-gray-600/15', iconColor: 'text-gray-500' };
   const FallbackIcon = fallback.icon;
-  const imageSrc = product.imagesByLocale?.[locale]?.[0] || '/images/placeholder.jpg';
+  const imageSrc = getProductMainImage(product, locale);
   const hasImage = imageSrc && !imgError;
   
   // 翻译

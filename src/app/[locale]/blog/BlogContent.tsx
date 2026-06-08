@@ -7,6 +7,7 @@ import { Locale } from '@/lib/seo';
 import { buyingGuides } from '@/data/buying-guides';
 import { products, getProductTitle, getProductDescription } from '@/data/products';
 import { convertPriceRangeString } from '@/lib/pricing';
+import { getProductMainImage } from '@/lib/product-image';
 import { ChevronRight } from 'lucide-react';
 
 const translations: Record<string, {
@@ -431,7 +432,7 @@ export default function BlogContent({ locale }: { locale: Locale }) {
                   >
                     <div className="w-16 h-16 rounded-lg overflow-hidden bg-gray-50 flex-shrink-0">
                       <Image
-                        src={product.imagesByLocale?.[locale]?.[0] || '/images/placeholder.jpg'}
+                        src={getProductMainImage(product, locale)}
                         alt={getProductTitle(product, locale)}
                         width={64}
                         height={64}

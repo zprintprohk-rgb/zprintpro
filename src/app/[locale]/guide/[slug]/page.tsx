@@ -10,6 +10,7 @@ import { pillars, getClustersByPillarSlug, getPillarBySlug } from '@/data/pillar
 import { getProductBySlug, getProductTitle } from '@/data/products';
 import { generateArticleSchema } from '@/lib/seo';
 import { createMetadata } from '@/lib/metadata';
+import { getProductMainImage } from '@/lib/product-image';
 import { JsonLd } from '@/components/JsonLd';
 import { InternalLink } from '@/components/internal-link';
 
@@ -220,7 +221,7 @@ export default function PillarPage({
                   >
                     <div className="aspect-square bg-gray-50 relative overflow-hidden">
                       <img
-                        src={product.imagesByLocale?.[safeLocale]?.[0] || product.images?.[0] || '/images/placeholder.jpg'}
+                        src={getProductMainImage(product, safeLocale)}
                         alt={getProductTitle(product, safeLocale)}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                         loading="lazy"

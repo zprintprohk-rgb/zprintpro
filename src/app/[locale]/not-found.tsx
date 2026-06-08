@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { products, getProductTitle } from '@/data/products';
+import { getProductMainImage } from '@/lib/product-image';
 
 export default function NotFoundPage() {
   const params = useParams();
@@ -72,7 +73,7 @@ export default function NotFoundPage() {
               >
                 <div className="aspect-square bg-gray-50 relative overflow-hidden">
                   <img
-                    src={product.imagesByLocale?.[locale as 'zh-hk' | 'en' | 'ja']?.[0] || product.images?.[0] || '/images/placeholder.jpg'}
+                    src={getProductMainImage(product, locale as 'zh-hk' | 'en' | 'ja')}
                     alt={getProductTitle(product, locale as 'zh-hk' | 'en' | 'ja')}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                     loading="lazy"

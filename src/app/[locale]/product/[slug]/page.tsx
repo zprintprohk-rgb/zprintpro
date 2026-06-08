@@ -36,6 +36,7 @@ import { generateFAQSchema } from '@/lib/faq-schema';
 import { coreProductFAQMap } from '@/data/product-faqs';
 import { RegionalContent, RegionalCta, RegionalTrustBadges } from '@/components/seo/RegionalContent';
 import { convertPriceRangeString } from '@/lib/pricing';
+import { getProductMainImage, getProductImages } from '@/lib/product-image';
 import { ProductWhyChooseUs } from '@/components/ProductWhyChooseUs';
 import RushDeliveryBadge from '@/components/sections/RushDeliveryBadge';
 import { TrustWaterfall } from '@/components/home/TrustWaterfall';
@@ -154,10 +155,13 @@ export default function ProductPage({
     ratingValue: Math.min(5, Math.max(4.2, 4.5 + (product.weight_score % 5) * 0.1)),
     reviewCount: 15 + (product.weight_score % 50),
   };
+  // 2026-06-08 修复: og:image fallback chain — 优先用 locale 专属图, 再用通用图, 最后才 placeholder
+  // 之前: 直接 fallback 到 placeholder.jpg (0 字节, GSC 显示通用图标)
+  const ogImage = getProductMainImage(product, locale);
   const productJsonLd = generateProductJsonLd(
     product.name,
     product.description,
-    product.imagesByLocale?.[locale]?.[0] || '/images/placeholder.jpg',
+    ogImage,
     product.slug,
     product.basePrice,
     locale === 'zh-hk' ? 'HKD' : locale === 'ja' ? 'JPY' : 'USD',
@@ -166,7 +170,7 @@ export default function ProductPage({
   );
   // ImageObject Schema（獨立節點，不影響 Product ranking）
   const productImageJsonLd = generateProductImageJsonLd(
-    product.imagesByLocale?.[locale] || [],
+    getProductImages(product, locale),
     product.name,
     locale
   );
@@ -294,7 +298,7 @@ export default function ProductPage({
             {/* 左侧：产品图片 + 上传 + 备注 */}
             <div>
               <ProductGallery
-                images={product.imagesByLocale?.[locale] || product.images || ['/images/placeholder.jpg']}
+                images={getProductImages(product, locale)}
                 title={productTitle}
                 alt={getProductImageAlt(product, locale)}
               />

@@ -7,6 +7,7 @@ import { getBuyingGuideBySlug, getAllBuyingGuideSlugs } from '@/data/buying-guid
 import { getClusterBySlug, getAllClusterSlugs } from '@/data/pillar-content';
 import { products, getProductTitle, getProductDescription, getProductBySlug } from '@/data/products';
 import { convertPriceRangeString } from '@/lib/pricing';
+import { getProductMainImage } from '@/lib/product-image';
 
 interface BlogPostPageProps {
   params: { locale: string; slug: string };
@@ -684,7 +685,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                       >
                         <div className="aspect-square bg-white relative overflow-hidden">
                           <img
-                            src={product.imagesByLocale?.[locale]?.[0] || product.images?.[0] || '/images/placeholder.jpg'}
+                            src={getProductMainImage(product, locale)}
                             alt={getProductTitle(product, locale)}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                             loading="lazy"
@@ -719,7 +720,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                   >
                     <div className="aspect-[4/3] rounded-lg overflow-hidden bg-gray-50 mb-3">
                       <Image
-                        src={product.imagesByLocale?.[locale]?.[0] || '/images/placeholder.jpg'}
+                        src={getProductMainImage(product, locale)}
                         alt={getProductTitle(product, locale)}
                         width={300}
                         height={225}
