@@ -27,6 +27,7 @@ const translations = {
     qrCaption: '掃碼即聊',
     quoteTitle: '免費獲取報價',
     quoteSubtitle: '1分鐘提交需求，專屬顧問極速回覆',
+    qrOrScan: '或掃碼',
     promiseSecure: '資料嚴格保密',
     promiseNoSpam: '無騷擾跟進',
     promiseVolume: '量大價優',
@@ -60,6 +61,7 @@ const translations = {
     qrCaption: 'Scan to chat',
     quoteTitle: 'Get a Free Quote',
     quoteSubtitle: 'Submit in 1 minute — dedicated consultant responds fast',
+    qrOrScan: 'or scan',
     promiseSecure: 'Strict data privacy',
     promiseNoSpam: 'No spam follow-ups',
     promiseVolume: 'Volume discounts',
@@ -93,6 +95,7 @@ const translations = {
     qrCaption: 'QRコードでチャット',
     quoteTitle: '無料お見積もり',
     quoteSubtitle: '1分で提出、専任スタッフが迅速対応',
+    qrOrScan: 'またはスキャン',
     promiseSecure: '情報厳守',
     promiseNoSpam: 'しつこい連絡なし',
     promiseVolume: '大口割引',
@@ -270,36 +273,45 @@ export default function ContactPage({ params }: ContactPageProps) {
                   </a>
                 </div>
 
-                {/* ===== 核心转化区: WhatsApp 按钮 + 二维码 合并到一个 bg-slate-50 区块 (2026-06-08 新规) ===== */}
+                {/* ===== 核心转化区: WhatsApp 按钮 + 二维码 合并到一个 bg-slate-50 区块 (2026-06-08 v2: 纵向布局 + 大二维码 + 按钮强 hover) ===== */}
                 <div className="mt-5 bg-slate-50 rounded-xl p-4">
-                  <div className="flex items-center gap-4">
-                    {/* 左侧: WhatsApp 大按钮 (圆角 rounded-full) */}
-                    <a
-                      href={generateWhatsAppLink(locale, { source: 'contact' })}
-                      className="flex-1 inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-4 rounded-full shadow-sm shadow-emerald-200 hover:shadow-md transition-all group"
-                    >
-                      <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                      <span className="whitespace-nowrap">{t.cta}</span>
-                    </a>
-                    {/* 右侧: 紧贴按钮的 WhatsApp 二维码 (100x100) */}
-                    <div className="relative w-[100px] h-[100px] bg-white border border-gray-200 rounded-lg overflow-hidden flex items-center justify-center flex-shrink-0">
+                  {/* 按钮: 占满宽度, hover 有强视觉反馈 (缩放+阴影+箭头滑动+图标微动) */}
+                  <a
+                    href={generateWhatsAppLink(locale, { source: 'contact' })}
+                    className="group w-full inline-flex items-center justify-center gap-2.5 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3.5 px-5 rounded-full shadow-md shadow-emerald-200 hover:shadow-xl hover:shadow-emerald-500/40 hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
+                  >
+                    <svg className="w-5 h-5 transition-transform group-hover:scale-110" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    <span className="whitespace-nowrap">{t.cta}</span>
+                    <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth={2.5}><path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7"/></svg>
+                  </a>
+
+                  {/* 分割线 */}
+                  <div className="flex items-center gap-3 my-4">
+                    <div className="flex-1 h-px bg-slate-200"></div>
+                    <span className="text-[10px] font-medium text-slate-400 uppercase tracking-wider">{t.qrOrScan}</span>
+                    <div className="flex-1 h-px bg-slate-200"></div>
+                  </div>
+
+                  {/* 二维码: 144x144 居中 + 4 角绿色 L 装饰 */}
+                  <div className="flex justify-center">
+                    <div className="relative w-[144px] h-[144px] bg-white border-2 border-slate-200 rounded-xl overflow-hidden flex items-center justify-center shadow-sm group/qr">
                       <Image
                         src="/whatsapp-qr.jpg"
                         alt="WhatsApp QR Code | ZprintPro"
-                        width={92}
-                        height={92}
-                        className="object-contain"
+                        width={136}
+                        height={136}
+                        className="object-contain transition-transform duration-300 group-hover/qr:scale-105"
                         loading="lazy"
                       />
-                      {/* 4 角绿色 L 装饰 (缩小版) */}
-                      <span className="absolute top-0.5 left-0.5 w-2 h-2 border-t-2 border-l-2 border-emerald-500"></span>
-                      <span className="absolute top-0.5 right-0.5 w-2 h-2 border-t-2 border-r-2 border-emerald-500"></span>
-                      <span className="absolute bottom-0.5 left-0.5 w-2 h-2 border-b-2 border-l-2 border-emerald-500"></span>
-                      <span className="absolute bottom-0.5 right-0.5 w-2 h-2 border-b-2 border-r-2 border-emerald-500"></span>
+                      {/* 4 角绿色 L 装饰 (放大版) */}
+                      <span className="absolute top-1.5 left-1.5 w-3 h-3 border-t-[3px] border-l-[3px] border-emerald-500 rounded-tl-sm"></span>
+                      <span className="absolute top-1.5 right-1.5 w-3 h-3 border-t-[3px] border-r-[3px] border-emerald-500 rounded-tr-sm"></span>
+                      <span className="absolute bottom-1.5 left-1.5 w-3 h-3 border-b-[3px] border-l-[3px] border-emerald-500 rounded-bl-sm"></span>
+                      <span className="absolute bottom-1.5 right-1.5 w-3 h-3 border-b-[3px] border-r-[3px] border-emerald-500 rounded-br-sm"></span>
                     </div>
                   </div>
-                  {/* 二维码下方极小字 */}
-                  <p className="text-center text-[11px] text-slate-400 mt-2">{t.qrCaption}</p>
+                  {/* 二维码下方文案: 字号 14px (text-base), font-medium, text-slate-700 */}
+                  <p className="text-center text-sm font-medium text-slate-700 mt-2.5">{t.qrCaption}</p>
                 </div>
               </div>
             </div>
