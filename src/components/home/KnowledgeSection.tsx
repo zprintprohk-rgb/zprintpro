@@ -28,11 +28,12 @@ const TAG_STYLES: Record<ArticleConfig['tagStyle'], string> = {
   green: 'border-emerald-200 text-emerald-600 bg-emerald-50/50',
 };
 
-const translations: Record<Locale, { title: string; subtitle: string; viewMore: string; articles: ArticleConfig[] }> = {
+const translations: Record<Locale, { title: string; subtitle: string; viewMore: string; viewArticle: string; articles: ArticleConfig[] }> = {
   'zh-hk': {
     title: '印刷知識',
     subtitle: '專業指南與行業資訊',
     viewMore: '查看更多',
+    viewArticle: '查看文章',
     articles: [
       {
         image: '/images/articles/sticker-guide.jpg',
@@ -76,6 +77,7 @@ const translations: Record<Locale, { title: string; subtitle: string; viewMore: 
     title: 'Printing Knowledge',
     subtitle: 'Professional guides and industry insights',
     viewMore: 'View More',
+    viewArticle: 'Read Article',
     articles: [
       {
         image: '/images/articles/sticker-guide.jpg',
@@ -119,6 +121,7 @@ const translations: Record<Locale, { title: string; subtitle: string; viewMore: 
     title: '印刷知識',
     subtitle: 'プロフェッショナルガイドと業界情報',
     viewMore: 'もっと見る',
+    viewArticle: '記事を読む',
     articles: [
       {
         image: '/images/articles/sticker-guide.jpg',
@@ -201,6 +204,12 @@ export function KnowledgeSection({ locale }: KnowledgeSectionProps) {
             />
             {/* 底部黑色渐变覆盖层 */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+            {/* hover 时中央 dim overlay + 渐显"查看文章" 胶囊按钮 (基线: 不动卡片结构, 不改基线颜色) */}
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-colors duration-500 flex items-center justify-center pointer-events-none">
+              <span className="inline-flex items-center gap-2 bg-white/95 text-slate-800 text-sm font-semibold px-5 py-2.5 rounded-full shadow-xl transform translate-y-3 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">
+                {t.viewArticle} <ArrowRight className="w-4 h-4" />
+              </span>
+            </div>
             {/* 浮在图上的 tag + 标题 + 描述 */}
             <div className="absolute inset-x-0 bottom-0 p-6 md:p-7">
               <span

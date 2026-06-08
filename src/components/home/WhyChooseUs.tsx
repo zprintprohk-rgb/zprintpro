@@ -230,13 +230,13 @@ export function WhyChooseUs({ locale }: WhyChooseUsProps) {
                 {/* hover 时发光边框 (蓝色微光) */}
                 <div className="pointer-events-none absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 ring-1 ring-blue-400/30" />
 
-                {/* 图标容器 */}
-                <div className={`w-14 h-14 ${feature.iconBg} ${feature.hoverRing} rounded-xl flex items-center justify-center transition-colors duration-300`}>
+                {/* 图标容器 — hover 时图标微旋转 6° + 容器底色加深 (基线色 token 不变) */}
+                <div className={`w-14 h-14 ${feature.iconBg} ${feature.hoverRing} rounded-xl flex items-center justify-center transition-all duration-300 group-hover:rotate-6 group-hover:scale-110`}>
                   <Icon className={`w-7 h-7 ${feature.iconColor}`} strokeWidth={2} />
                 </div>
 
-                {/* 文案层级 */}
-                <h3 className="text-xl font-bold text-slate-800 mt-6">{feature.title}</h3>
+                {/* 文案层级 — 标题 hover 时渐变蓝色 (基线 token) */}
+                <h3 className="text-xl font-bold text-slate-800 mt-6 transition-colors duration-300 group-hover:text-blue-600">{feature.title}</h3>
                 <p className="text-xs font-semibold uppercase tracking-wider text-slate-400 mt-1.5">
                   {feature.subtitle}
                 </p>

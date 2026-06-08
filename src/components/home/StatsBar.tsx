@@ -133,11 +133,11 @@ export function StatsBar({ locale }: StatsBarProps) {
             return (
               <div
                 key={index}
-                className="group flex flex-col items-center text-center"
+                className="group flex flex-col items-center text-center transition-transform duration-300 hover:scale-105 cursor-default"
                 aria-label={`${stat.displayValue} ${stat.label}`}
               >
-                {/* 图标移到数字上方 */}
-                <div className="mb-3 text-blue-500/50 group-hover:text-blue-500/80 transition-colors">
+                {/* 图标移到数字上方 — hover 时图标微上浮 + 颜色加深 (基线色 token) */}
+                <div className="mb-3 text-blue-500/50 group-hover:text-blue-500/80 transition-all duration-300 group-hover:-translate-y-0.5">
                   <Icon className="w-8 h-8" strokeWidth={1.5} />
                 </div>
                 {/* 渐变大数字 — CountUp 动效 */}
@@ -148,6 +148,8 @@ export function StatsBar({ locale }: StatsBarProps) {
                     suffix={stat.suffix}
                   />
                 </div>
+                {/* 数字下方渐变短线 — hover 时从 0 展开到 48px (基线蓝-青渐变, 不改色) */}
+                <div className="mt-2 h-0.5 w-0 group-hover:w-12 bg-gradient-to-r from-blue-600 to-cyan-500 transition-all duration-500 rounded-full" />
                 {/* 标签 */}
                 <p className="text-slate-500 text-sm font-medium mt-2">{stat.label}</p>
               </div>
