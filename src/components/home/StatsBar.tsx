@@ -5,13 +5,12 @@ import { Users, Package, Clock, Star, type LucideIcon } from 'lucide-react';
 import { Locale } from '@/lib/seo';
 
 /**
- * CountUp 组件 — 数字进入视口时从 0 滚动到目标值
- * 性能优化: 使用 requestAnimationFrame, 离屏/已触发后停止
- * a11y: 尊重 prefers-reduced-motion
+ * CountUp 组件 — 视口触发滚动
+ * 尊重 prefers-reduced-motion
  */
 function CountUp({
   end,
-  duration = 1800,
+  duration = 1600,
   decimals = 0,
   prefix = '',
   suffix = '',
@@ -29,8 +28,6 @@ function CountUp({
   useEffect(() => {
     const node = ref.current;
     if (!node) return;
-
-    // 尊重用户的减少动画偏好
     const reduceMotion =
       typeof window !== 'undefined' &&
       window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -39,7 +36,6 @@ function CountUp({
       startedRef.current = true;
       return;
     }
-
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -49,14 +45,10 @@ function CountUp({
             const tick = (now: number) => {
               const elapsed = now - start;
               const progress = Math.min(elapsed / duration, 1);
-              // ease-out cubic
               const eased = 1 - Math.pow(1 - progress, 3);
               setValue(end * eased);
-              if (progress < 1) {
-                requestAnimationFrame(tick);
-              } else {
-                setValue(end);
-              }
+              if (progress < 1) requestAnimationFrame(tick);
+              else setValue(end);
             };
             requestAnimationFrame(tick);
           }
@@ -68,7 +60,8 @@ function CountUp({
     return () => observer.disconnect();
   }, [end, duration]);
 
-  const display = decimals > 0 ? value.toFixed(decimals) : Math.floor(value).toLocaleString();
+  const display =
+    decimals > 0 ? value.toFixed(decimals) : Math.floor(value).toLocaleString();
   return (
     <span ref={ref}>
       {prefix}
@@ -84,12 +77,10 @@ interface StatsBarProps {
 
 interface StatConfig {
   icon: LucideIcon;
-  /** 数字部分 (用于 CountUp) */
   numericValue: number;
   decimals?: number;
   prefix?: string;
   suffix?: string;
-  /** 原始显示值 (用于 a11y + reduce-motion fallback) */
   displayValue: string;
   label: string;
 }
@@ -125,32 +116,41 @@ export function StatsBar({ locale }: StatsBarProps) {
   const t = translations[locale];
 
   return (
-    <section className="py-12 bg-gradient-to-b from-white to-slate-50/50">
+    <section className="py-8 bg-white border-b border-slate-100">
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
+        {/* 仪表盘胶囊流: 4 个胶囊 + 3 条竖线分隔 */}
+        <div className="flex flex-wrap items-center justify-center gap-y-3">
           {t.stats.map((stat, index) => {
             const Icon = stat.icon;
             return (
-              <div
-                key={index}
-                className="group flex flex-col items-center text-center"
-                aria-label={`${stat.displayValue} ${stat.label}`}
-              >
-                {/* 图标移到数字上方 */}
-                <div className="mb-3 text-blue-500/50 group-hover:text-blue-500/80 transition-colors">
-                  <Icon className="w-8 h-8" strokeWidth={1.5} />
+              <React.Fragment key={index}>
+                {/* 胶囊指标 */}
+                <div
+                  className="flex items-center gap-3 px-6 py-3 bg-slate-50 rounded-full"
+                  aria-label={`${stat.displayValue} ${stat.label}`}
+                >
+                  <Icon className="w-5 h-5 text-blue-500 flex-shrink-0" strokeWidth={2} />
+                  <div className="flex flex-col">
+                    <span className="text-xl font-bold text-slate-800 leading-none">
+                      <CountUp
+                        end={stat.numericValue}
+                        decimals={stat.decimals ?? 0}
+                        suffix={stat.suffix}
+                      />
+                    </span>
+                    <span className="text-[11px] text-slate-500 mt-0.5 font-medium">
+                      {stat.label}
+                    </span>
+                  </div>
                 </div>
-                {/* 渐变大数字 — CountUp 动效 */}
-                <div className="text-5xl font-black tracking-tight bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent leading-none">
-                  <CountUp
-                    end={stat.numericValue}
-                    decimals={stat.decimals ?? 0}
-                    suffix={stat.suffix}
+                {/* 竖线分隔 (最后一个不加) */}
+                {index < t.stats.length - 1 && (
+                  <div
+                    className="hidden md:block h-8 w-px bg-slate-200 mx-1"
+                    aria-hidden="true"
                   />
-                </div>
-                {/* 标签 */}
-                <p className="text-slate-500 text-sm font-medium mt-2">{stat.label}</p>
-              </div>
+                )}
+              </React.Fragment>
             );
           })}
         </div>
