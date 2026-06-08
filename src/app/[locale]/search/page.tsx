@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { Locale, siteConfig } from '@/lib/seo';
 import { searchProducts, categories, getCategoryBySlug } from '@/data/products';
+import { ProductCard } from '@/components/ProductCard';
 
 interface SearchPageProps {
   params: { locale: string };
@@ -63,12 +64,6 @@ export async function generateMetadata({ params, searchParams }: SearchPageProps
       canonical: `${siteConfig.url}/${locale}/search${q ? `?q=${encodeURIComponent(q)}` : ''}`,
     },
   };
-}
-
-function getProductName(p: any, locale: string): string {
-  if (locale === 'en') return p.nameEn || p.name;
-  if (locale === 'ja') return p.nameJa || p.name;
-  return p.name;
 }
 
 function getCategoryName(c: any, locale: string): string {
@@ -159,34 +154,16 @@ export default function SearchPage({ params, searchParams }: SearchPageProps) {
             <h2 className="text-xl font-semibold text-[#333333] mb-4">
               {locale === 'en' ? 'Products' : locale === 'ja' ? '製品' : '產品'}
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {/* 2026-06-08 升级: 用 ProductCard 组件, 1:1 图片 + 4 列网格
+                之前: 自写无图扁平卡 (line 162-191)
+                现在: 复用首页/分类页同款 ProductCard, 自动继承:
+                  - aspect-square 1:1 封面图 (getProductMainImage fallback 链)
+                  - "熱銷"/"新品" 角标
+                  - 标题/描述/价格/起订量
+                  - 整卡 hover 阴影 + 边框高亮 */}
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
               {productResults.map((p) => (
-                <Link
-                  key={p.sku_code}
-                  href={`/${locale}/product/${p.slug}/`}
-                  className="bg-white border border-gray-200 rounded-lg p-5 hover:border-[#2873F5] hover:shadow-md transition-all"
-                >
-                  <div className="flex items-start justify-between gap-2 mb-2">
-                    <h3 className="text-base font-semibold text-[#333333] line-clamp-2">
-                      {getProductName(p, locale)}
-                    </h3>
-                    <div className="flex flex-col gap-1 flex-shrink-0">
-                      {p.isHot && (
-                        <span className="px-2 py-0.5 bg-red-50 text-red-600 text-[10px] font-medium rounded">HOT</span>
-                      )}
-                      {p.isNew && (
-                        <span className="px-2 py-0.5 bg-blue-50 text-blue-600 text-[10px] font-medium rounded">NEW</span>
-                      )}
-                    </div>
-                  </div>
-                  <p className="text-xs text-gray-500 mb-3 line-clamp-2">
-                    {locale === 'en' ? p.descriptionEn || p.description : locale === 'ja' ? p.descriptionJa || p.description : p.description}
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-sm font-bold text-[#F87314]">{p.price_range}</span>
-                    <span className="text-xs text-[#2873F5] font-medium">{t.viewProduct} →</span>
-                  </div>
-                </Link>
+                <ProductCard key={p.sku_code} product={p} locale={locale} />
               ))}
             </div>
           </section>
