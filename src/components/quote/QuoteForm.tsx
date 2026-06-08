@@ -255,17 +255,17 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
   }
 
   return (
-    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
       {/* ===== 聯絡資訊 ===== */}
-      <div className="bg-white rounded-2xl border border-gray-100 p-6 md:p-8 shadow-sm">
-        <div className="flex items-center gap-2 mb-6">
-          <div className="w-8 h-8 rounded-lg bg-blue-100 flex items-center justify-center">
-            <span className="text-blue-600 font-bold text-sm">1</span>
+      <div className="bg-white rounded-2xl border border-gray-100 p-5 md:p-6 shadow-sm">
+        <div className="flex items-center gap-2 mb-4">
+          <div className="w-7 h-7 rounded-lg bg-blue-100 flex items-center justify-center">
+            <span className="text-blue-600 font-bold text-xs">1</span>
           </div>
-          <h3 className="text-lg font-bold text-[#333333]">{t.contactInfo}</h3>
+          <h3 className="text-base font-bold text-[#333333]">{t.contactInfo}</h3>
         </div>
 
-        <div className="space-y-5">
+        <div className="space-y-3.5">
           {/* 姓名 */}
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1.5">
@@ -319,15 +319,15 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
       </div>
 
       {/* ===== 印刷需求 ===== */}
-      <div className="bg-white rounded-2xl border border-gray-100 p-6 md:p-8 shadow-sm">
-        <div className="flex items-center gap-2 mb-6">
-          <div className="w-8 h-8 rounded-lg bg-amber-100 flex items-center justify-center">
-            <span className="text-amber-600 font-bold text-sm">2</span>
+      <div className="bg-white rounded-2xl border border-gray-100 p-5 md:p-6 shadow-sm">
+        <div className="flex items-center gap-2 mb-4">
+          <div className="w-7 h-7 rounded-lg bg-amber-100 flex items-center justify-center">
+            <span className="text-amber-600 font-bold text-xs">2</span>
           </div>
-          <h3 className="text-lg font-bold text-[#333333]">{t.printNeeds}</h3>
+          <h3 className="text-base font-bold text-[#333333]">{t.printNeeds}</h3>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-5">
+        <div className="grid md:grid-cols-3 gap-4">
           {/* 產品類型 */}
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1.5">{t.category}</label>
@@ -369,15 +369,15 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
       </div>
 
       {/* ===== 留言與附件 ===== */}
-      <div className="bg-white rounded-2xl border border-gray-100 p-6 md:p-8 shadow-sm">
-        <div className="flex items-center gap-2 mb-6">
-          <div className="w-8 h-8 rounded-lg bg-purple-100 flex items-center justify-center">
-            <span className="text-purple-600 font-bold text-sm">3</span>
+      <div className="bg-white rounded-2xl border border-gray-100 p-5 md:p-6 shadow-sm">
+        <div className="flex items-center gap-2 mb-4">
+          <div className="w-7 h-7 rounded-lg bg-purple-100 flex items-center justify-center">
+            <span className="text-purple-600 font-bold text-xs">3</span>
           </div>
-          <h3 className="text-lg font-bold text-[#333333]">{t.messageAttach}</h3>
+          <h3 className="text-base font-bold text-[#333333]">{t.messageAttach}</h3>
         </div>
 
-        <div className="space-y-5">
+        <div className="space-y-3.5">
           {/* 留言 */}
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1.5">
@@ -396,12 +396,12 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
             )}
           </div>
 
-          {/* 附件上傳 — 拖拽區 (2026-06-08 美化) */}
+          {/* 附件上傳 — 拖拽區 (2026-06-08 美化 + 2026-06-08 紧凑) */}
           <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">{t.attachment}</label>
+            <label className="block text-sm font-medium text-gray-700 mb-1.5">{t.attachment}</label>
             <div
               onClick={() => fileInputRef.current?.click()}
-              className="border-2 border-dashed border-slate-200 rounded-xl p-6 text-center hover:border-blue-400 transition-colors cursor-pointer"
+              className="border-2 border-dashed border-slate-200 rounded-xl p-4 text-center hover:border-blue-400 transition-colors cursor-pointer"
             >
               <input
                 ref={fileInputRef}
@@ -437,7 +437,7 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
       </div>
 
       {/* 提交按鈕 */}
-      <div className="flex flex-col items-center gap-4">
+      <div className="flex flex-col items-center gap-3 pt-1">
         {submitStatus === 'error' && (
           <div className="flex items-center gap-2 text-red-500 bg-red-50 px-4 py-2 rounded-lg">
             <AlertCircle className="w-5 h-5" />

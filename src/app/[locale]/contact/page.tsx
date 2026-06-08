@@ -142,25 +142,25 @@ export default function ContactPage({ params }: ContactPageProps) {
   const businessJsonLd = generateBusinessJsonLd(locale);
 
   return (
-    <main className="min-h-screen bg-gray-50 py-12 md:py-16">
+    <main className="min-h-screen bg-gray-50 py-6 md:py-8">
       <JsonLd data={businessJsonLd} />
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-10 md:mb-12">
-          <h1 className="text-3xl md:text-4xl font-bold text-[#333333] mb-3">{t.h1}</h1>
-          <p className="text-gray-500 text-lg">{t.subtitle}</p>
+        {/* Header — 紧凑 */}
+        <div className="text-center mb-6">
+          <h1 className="text-2xl md:text-3xl font-bold text-[#333333] mb-2">{t.h1}</h1>
+          <p className="text-gray-500 text-base">{t.subtitle}</p>
         </div>
 
         {/* Two Column Layout */}
-        <div className="grid lg:grid-cols-12 gap-8 items-start">
+        <div className="grid lg:grid-cols-12 gap-6 items-start">
           {/* LEFT: Quote Form */}
           <div className="lg:col-span-7">
-            <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 md:p-8">
-              <div className="text-center mb-8">
-                <h2 className="text-2xl md:text-3xl font-bold text-[#333333] mb-2">{t.quoteTitle}</h2>
-                <p className="text-slate-500">{t.quoteSubtitle}</p>
+            <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-5 md:p-7">
+              <div className="text-center mb-5">
+                <h2 className="text-xl md:text-2xl font-bold text-[#333333] mb-1.5">{t.quoteTitle}</h2>
+                <p className="text-sm text-slate-500">{t.quoteSubtitle}</p>
                 {/* 三个承诺 emoji 行 (2026-06-08 新规) */}
-                <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-1.5 mt-4 text-sm text-slate-600">
+                <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-1.5 mt-3 text-sm text-slate-600">
                   <span className="inline-flex items-center gap-1.5">
                     <span aria-hidden="true">🔒</span>
                     <span>{t.promiseSecure}</span>
