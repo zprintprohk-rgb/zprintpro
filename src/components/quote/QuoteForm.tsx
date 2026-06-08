@@ -103,7 +103,7 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
       message: '留言內容',
       messagePlaceholder: '請詳細說明印刷需求：例如品類、紙質、工藝要求、交貨時間等...',
       attachment: '附件上傳',
-      attachmentNote: '點擊上傳設計稿、參考圖片（選填，最多5個檔案，單個最大10MB）',
+      attachmentNote: '拖拽設計稿至此，或點擊上傳',
       submit: '提交詢價',
       submitting: '發送中...',
       successTitle: '詢價已提交！',
@@ -133,7 +133,7 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
       message: 'Message',
       messagePlaceholder: 'Please describe your printing needs: product type, paper, finishing, delivery time...',
       attachment: 'Attachment Upload',
-      attachmentNote: 'Upload design files or reference images (optional, max 5 files, 10MB each)',
+      attachmentNote: 'Drag & drop design files, or click to upload',
       submit: 'Submit Inquiry',
       submitting: 'Sending...',
       successTitle: 'Inquiry Submitted!',
@@ -163,7 +163,7 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
       message: 'メッセージ',
       messagePlaceholder: '印刷のご要望を詳しくご記入ください：製品、紙質、加工、納期など...',
       attachment: 'ファイル添付',
-      attachmentNote: 'デザインデータや参考画像をアップロード（任意、最大5ファイル、各10MBまで）',
+      attachmentNote: 'ドラッグ&ドロップでデザインファイルをアップロード',
       submit: 'お見積もり依頼',
       submitting: '送信中...',
       successTitle: '依頼を送信しました！',
@@ -396,12 +396,12 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
             )}
           </div>
 
-          {/* 附件上傳 */}
+          {/* 附件上傳 — 拖拽區 (2026-06-08 美化) */}
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-2">{t.attachment}</label>
             <div
               onClick={() => fileInputRef.current?.click()}
-              className="border-2 border-dashed border-gray-200 rounded-xl p-6 text-center hover:border-[#2873F5] hover:bg-blue-50/30 transition-all cursor-pointer"
+              className="border-2 border-dashed border-slate-200 rounded-xl p-6 text-center hover:border-blue-400 transition-colors cursor-pointer"
             >
               <input
                 ref={fileInputRef}
@@ -411,8 +411,9 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
                 className="hidden"
                 onChange={handleFileChange}
               />
-              <Upload className="w-8 h-8 text-gray-400 mx-auto mb-2" />
-              <p className="text-sm text-gray-500">{t.attachmentNote}</p>
+              <Upload className="text-3xl text-slate-300 mx-auto mb-2 w-8 h-8" />
+              <p className="text-sm font-medium text-slate-700">{t.attachmentNote}</p>
+              <p className="text-xs text-slate-400 mt-1">PDF / AI / PSD / PNG / JPG（單個最大10MB，最多5個檔案）</p>
             </div>
 
             {files.length > 0 && (

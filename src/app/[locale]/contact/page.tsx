@@ -24,11 +24,14 @@ const translations = {
     addressValue: '香港九龍觀塘偉業街182號 成運工業大廈',
     mapTitle: '我們的位置',
     cta: '立即 WhatsApp 查詢',
-    qrCaption: '掃碼即時查詢',
+    qrCaption: '掃碼即聊',
     quoteTitle: '免費獲取報價',
-    quoteSubtitle: '填寫下方表單，我們將在24小時內以郵件回覆專屬報價',
+    quoteSubtitle: '1分鐘提交需求，專屬顧問極速回覆',
+    promiseSecure: '資料嚴格保密',
+    promiseNoSpam: '無騷擾跟進',
+    promiseVolume: '量大價優',
     features: ['24小時內回覆', '免費設計諮詢', '專屬客戶經理', '量大價優'],
-    online: '線上客服',
+    online: '在線',
     responseTime: '平均回覆 < 5 分鐘',
     quickContact: '快速聯絡',
     viewOnMap: '在 Google Maps 查看 →',
@@ -37,6 +40,8 @@ const translations = {
     officeHours: '辦公時間',
     officeHoursValue: '週一至週五 09:00 - 18:00',
     whatsappLabel: 'WhatsApp',
+    uploadTitle: '拖拽設計稿至此，或點擊上傳',
+    uploadHint: '支持 PDF/AI/PSD/PNG（最大10MB）',
   },
   en: {
     title: 'Free Custom Printing Quote · 30s Response | ZprintPro USA / UK / AU',
@@ -52,11 +57,14 @@ const translations = {
     addressValue: '182 Wai Yip Street, Kwun Tong, Kowloon, Hong Kong',
     mapTitle: 'Our Location',
     cta: 'WhatsApp Us Now',
-    qrCaption: 'Scan to chat instantly',
+    qrCaption: 'Scan to chat',
     quoteTitle: 'Get a Free Quote',
-    quoteSubtitle: 'Fill out the form below and we will send you a customized quote via email within 24 hours',
+    quoteSubtitle: 'Submit in 1 minute — dedicated consultant responds fast',
+    promiseSecure: 'Strict data privacy',
+    promiseNoSpam: 'No spam follow-ups',
+    promiseVolume: 'Volume discounts',
     features: ['Reply within 24h', 'Free design consultation', 'Dedicated account manager', 'Volume discounts'],
-    online: 'Online now',
+    online: 'Online',
     responseTime: 'Avg. reply < 5 min',
     quickContact: 'Quick Contact',
     viewOnMap: 'View on Google Maps →',
@@ -65,6 +73,8 @@ const translations = {
     officeHours: 'Office Hours',
     officeHoursValue: 'Mon - Fri 09:00 - 18:00',
     whatsappLabel: 'WhatsApp',
+    uploadTitle: 'Drag & drop design files, or click to upload',
+    uploadHint: 'PDF / AI / PSD / PNG supported (max 10MB)',
   },
   ja: {
     title: 'お問い合わせ · 無料お見積もり | ZprintPro',
@@ -80,9 +90,12 @@ const translations = {
     addressValue: '香港九龍観塘偉業街182号 成運工業ビル',
     mapTitle: 'アクセス',
     cta: '今すぐWhatsAppで問い合わせ',
-    qrCaption: 'QRコードで即時問い合わせ',
+    qrCaption: 'QRコードでチャット',
     quoteTitle: '無料お見積もり',
-    quoteSubtitle: '以下のフォームにご記入いただければ、24時間以内にメールで専用の見積もりをご返信いたします',
+    quoteSubtitle: '1分で提出、専任スタッフが迅速対応',
+    promiseSecure: '情報厳守',
+    promiseNoSpam: 'しつこい連絡なし',
+    promiseVolume: '大口割引',
     features: ['24時間以内に返信', '無料デザイン相談', '専任担当者', '大口割引'],
     online: 'オンライン',
     responseTime: '平均返信 < 5 分',
@@ -93,6 +106,8 @@ const translations = {
     officeHours: '営業時間',
     officeHoursValue: '月〜金 09:00 - 18:00',
     whatsappLabel: 'WhatsApp',
+    uploadTitle: 'ドラッグ&ドロップでデザインファイルをアップロード',
+    uploadHint: 'PDF / AI / PSD / PNG 対応（最大10MB）',
   },
 };
 
@@ -140,17 +155,23 @@ export default function ContactPage({ params }: ContactPageProps) {
             <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-6 md:p-8">
               <div className="text-center mb-8">
                 <h2 className="text-2xl md:text-3xl font-bold text-[#333333] mb-2">{t.quoteTitle}</h2>
-                <p className="text-gray-500">{t.quoteSubtitle}</p>
-                <div className="flex flex-wrap justify-center gap-2.5 mt-4">
-                  {t.features.map((f) => (
-                    <span
-                      key={f}
-                      className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-50 text-blue-700 rounded-full text-sm font-medium"
-                    >
-                      <span className="w-1.5 h-1.5 bg-blue-500 rounded-full" />
-                      {f}
-                    </span>
-                  ))}
+                <p className="text-slate-500">{t.quoteSubtitle}</p>
+                {/* 三个承诺 emoji 行 (2026-06-08 新规) */}
+                <div className="flex flex-wrap justify-center items-center gap-x-4 gap-y-1.5 mt-4 text-sm text-slate-600">
+                  <span className="inline-flex items-center gap-1.5">
+                    <span aria-hidden="true">🔒</span>
+                    <span>{t.promiseSecure}</span>
+                  </span>
+                  <span className="text-slate-300">|</span>
+                  <span className="inline-flex items-center gap-1.5">
+                    <span aria-hidden="true">💬</span>
+                    <span>{t.promiseNoSpam}</span>
+                  </span>
+                  <span className="text-slate-300">|</span>
+                  <span className="inline-flex items-center gap-1.5">
+                    <span aria-hidden="true">🎁</span>
+                    <span>{t.promiseVolume}</span>
+                  </span>
                 </div>
               </div>
               <ContactFormWrapper locale={locale} />
@@ -159,38 +180,58 @@ export default function ContactPage({ params }: ContactPageProps) {
 
           {/* RIGHT: Contact Info */}
           <div className="lg:col-span-5 space-y-6">
-            {/* Contact Person Card (2026-06-08 美化升级) */}
+            {/* Contact Person Card (2026-06-08 美化升级 v2 — 蓝色圆形头像 + 绿点脉动 + 合并 WhatsApp) */}
             <div className="bg-white rounded-2xl shadow-lg shadow-gray-200/50 border border-gray-100 overflow-hidden">
               {/* 顶部品牌色 banner */}
               <div className="h-20 bg-gradient-to-r from-[#2873F5] via-[#4F46E5] to-[#7C3AED] relative">
-                <div className="absolute -bottom-6 left-6 w-16 h-16 rounded-2xl bg-gradient-to-br from-[#F87314] to-[#EA580C] flex items-center justify-center text-white text-2xl font-bold ring-4 ring-white shadow-lg">
+                {/* 蓝色渐变圆形头像 + 右下角绿点脉动 (2026-06-08 新规) */}
+                <div className="absolute -bottom-8 left-6 w-20 h-20 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center text-white text-3xl font-bold ring-4 ring-white shadow-lg">
                   {t.name.charAt(0)}
-                </div>
-                {/* 在线状态绿点 */}
-                <div className="absolute top-3 right-3 flex items-center gap-1.5 bg-white/15 backdrop-blur-sm rounded-full px-2.5 py-1">
-                  <span className="relative flex h-2 w-2">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                    <span className="relative inline-flex rounded-full h-2 w-2 bg-green-400"></span>
+                  {/* 在线状态: 右下角绿点 + 脉动呼吸灯 */}
+                  <span className="absolute -bottom-0.5 -right-0.5 flex h-5 w-5">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-5 w-5 bg-emerald-500 border-2 border-white"></span>
                   </span>
-                  <span className="text-white text-[11px] font-medium">{t.online}</span>
+                </div>
+                {/* 顶部右上角: 在线文字标识 (banner 上) */}
+                <div className="absolute top-3 right-3 flex items-center gap-1.5 bg-white/15 backdrop-blur-sm rounded-full px-2.5 py-1">
+                  <span className="text-white text-[11px] font-medium">{t.quickContact}</span>
                 </div>
               </div>
 
-              <div className="px-6 pt-9 pb-6">
-                {/* 姓名 + 角色 */}
+              <div className="px-6 pt-12 pb-6">
+                {/* 姓名 + 角色 + 在线文字 (绿字 text-emerald-500) */}
                 <div className="mb-5">
                   <h2 className="text-xl font-bold text-[#333333] flex items-center gap-2">
                     {t.name}
                     <span className="text-[10px] font-semibold bg-blue-50 text-[#2873F5] px-2 py-0.5 rounded-full uppercase tracking-wide">verified</span>
                   </h2>
                   <p className="text-gray-500 text-sm mt-0.5">{t.role}</p>
-                  <p className="text-xs text-green-600 font-medium mt-1.5 flex items-center gap-1">
-                    <svg className="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
+                  <p className="text-xs text-emerald-500 font-medium mt-1.5 flex items-center gap-1">
+                    <span className="relative flex h-2 w-2">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+                    </span>
+                    {t.online}
+                    <span className="text-gray-300 mx-0.5">·</span>
+                    <svg className="w-3.5 h-3.5 text-emerald-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
                     {t.responseTime}
                   </p>
                 </div>
 
-                {/* 联系方式 3 列 (icon 彩色方块 + label + value) */}
+                {/* 胶囊徽章区 (Badge 风格) */}
+                <div className="flex flex-wrap gap-2 mb-5">
+                  {t.features.map((f) => (
+                    <span
+                      key={f}
+                      className="inline-flex items-center px-2.5 py-1 bg-blue-50 text-blue-700 border border-blue-100 rounded-full text-xs font-medium"
+                    >
+                      {f}
+                    </span>
+                  ))}
+                </div>
+
+                {/* 联系方式 3 列 (icon 彩色方块 + label + value) — 极简版 */}
                 <div className="space-y-2.5">
                   {/* Phone */}
                   <a href="tel:+8618126380255" className="flex items-center gap-3 p-3 rounded-xl bg-gradient-to-r from-blue-50/50 to-transparent hover:from-blue-50 hover:to-blue-50/50 transition-colors group">
@@ -198,22 +239,22 @@ export default function ContactPage({ params }: ContactPageProps) {
                       <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
                     </div>
                     <div className="flex-1 min-w-0">
-                      <div className="text-[11px] text-gray-400 font-medium uppercase tracking-wide">{t.phone}</div>
-                      <div className="text-sm font-semibold text-[#333333] group-hover:text-[#2873F5] transition-colors">+86 181 2638 0255</div>
+                      <div className="text-[11px] text-slate-400 font-medium uppercase tracking-wide">{t.phone}</div>
+                      <div className="text-sm font-semibold text-slate-700 group-hover:text-[#2873F5] transition-colors">+86 181 2638 0255</div>
                     </div>
-                    <svg className="w-4 h-4 text-gray-300 group-hover:text-[#2873F5] group-hover:translate-x-0.5 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
+                    <svg className="w-4 h-4 text-slate-300 group-hover:text-[#2873F5] group-hover:translate-x-0.5 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
                   </a>
 
-                  {/* Email */}
+                  {/* Email — 错字已修: "電郵" */}
                   <a href="mailto:Zprintpro@outlook.com" className="flex items-center gap-3 p-3 rounded-xl bg-gradient-to-r from-orange-50/50 to-transparent hover:from-orange-50 hover:to-orange-50/50 transition-colors group">
                     <div className="w-10 h-10 rounded-lg bg-[#F87314] flex items-center justify-center flex-shrink-0 shadow-sm shadow-orange-200">
                       <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
                     </div>
                     <div className="flex-1 min-w-0">
-                      <div className="text-[11px] text-gray-400 font-medium uppercase tracking-wide">{t.email}</div>
-                      <div className="text-sm font-semibold text-[#333333] group-hover:text-[#F87314] transition-colors truncate">Zprintpro@outlook.com</div>
+                      <div className="text-[11px] text-slate-400 font-medium uppercase tracking-wide">{t.email}</div>
+                      <div className="text-sm font-semibold text-slate-700 group-hover:text-[#F87314] transition-colors truncate">Zprintpro@outlook.com</div>
                     </div>
-                    <svg className="w-4 h-4 text-gray-300 group-hover:text-[#F87314] group-hover:translate-x-0.5 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
+                    <svg className="w-4 h-4 text-slate-300 group-hover:text-[#F87314] group-hover:translate-x-0.5 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
                   </a>
 
                   {/* Website */}
@@ -222,41 +263,43 @@ export default function ContactPage({ params }: ContactPageProps) {
                       <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg>
                     </div>
                     <div className="flex-1 min-w-0">
-                      <div className="text-[11px] text-gray-400 font-medium uppercase tracking-wide">{t.website}</div>
-                      <div className="text-sm font-semibold text-[#333333] group-hover:text-[#7C3AED] transition-colors truncate">www.zprintpro.com</div>
+                      <div className="text-[11px] text-slate-400 font-medium uppercase tracking-wide">{t.website}</div>
+                      <div className="text-sm font-semibold text-slate-700 group-hover:text-[#7C3AED] transition-colors truncate">www.zprintpro.com</div>
                     </div>
-                    <svg className="w-4 h-4 text-gray-300 group-hover:text-[#7C3AED] group-hover:translate-x-0.5 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+                    <svg className="w-4 h-4 text-slate-300 group-hover:text-[#7C3AED] group-hover:translate-x-0.5 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
                   </a>
                 </div>
 
-                {/* WhatsApp CTA 按钮 (更醒目) */}
-                <a
-                  href={generateWhatsAppLink(locale, { source: 'contact' })}
-                  className="mt-5 w-full inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-[#25D366] via-[#20BD5C] to-[#128C7E] text-white font-semibold py-3.5 px-4 rounded-xl hover:shadow-lg hover:shadow-green-500/30 transition-all group"
-                >
-                  <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                  {t.cta}
-                  <svg className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M9 5l7 7-7 7"/></svg>
-                </a>
-
-                {/* WhatsApp 二维码 (精致边框) */}
-                <div className="mt-5 flex flex-col items-center gap-2 pt-5 border-t border-gray-100">
-                  <div className="relative w-[128px] h-[128px] bg-white border-2 border-gray-100 rounded-2xl overflow-hidden flex items-center justify-center shadow-md">
-                    <Image
-                      src="/whatsapp-qr.jpg"
-                      alt="WhatsApp QR Code | ZprintPro"
-                      width={120}
-                      height={120}
-                      className="object-contain"
-                      loading="lazy"
-                    />
-                    {/* 4 角装饰 */}
-                    <span className="absolute top-1 left-1 w-3 h-3 border-t-2 border-l-2 border-[#25D366] rounded-tl-md"></span>
-                    <span className="absolute top-1 right-1 w-3 h-3 border-t-2 border-r-2 border-[#25D366] rounded-tr-md"></span>
-                    <span className="absolute bottom-1 left-1 w-3 h-3 border-b-2 border-l-2 border-[#25D366] rounded-bl-md"></span>
-                    <span className="absolute bottom-1 right-1 w-3 h-3 border-b-2 border-r-2 border-[#25D366] rounded-br-md"></span>
+                {/* ===== 核心转化区: WhatsApp 按钮 + 二维码 合并到一个 bg-slate-50 区块 (2026-06-08 新规) ===== */}
+                <div className="mt-5 bg-slate-50 rounded-xl p-4">
+                  <div className="flex items-center gap-4">
+                    {/* 左侧: WhatsApp 大按钮 (圆角 rounded-full) */}
+                    <a
+                      href={generateWhatsAppLink(locale, { source: 'contact' })}
+                      className="flex-1 inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-4 rounded-full shadow-sm shadow-emerald-200 hover:shadow-md transition-all group"
+                    >
+                      <svg className="w-5 h-5" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                      <span className="whitespace-nowrap">{t.cta}</span>
+                    </a>
+                    {/* 右侧: 紧贴按钮的 WhatsApp 二维码 (100x100) */}
+                    <div className="relative w-[100px] h-[100px] bg-white border border-gray-200 rounded-lg overflow-hidden flex items-center justify-center flex-shrink-0">
+                      <Image
+                        src="/whatsapp-qr.jpg"
+                        alt="WhatsApp QR Code | ZprintPro"
+                        width={92}
+                        height={92}
+                        className="object-contain"
+                        loading="lazy"
+                      />
+                      {/* 4 角绿色 L 装饰 (缩小版) */}
+                      <span className="absolute top-0.5 left-0.5 w-2 h-2 border-t-2 border-l-2 border-emerald-500"></span>
+                      <span className="absolute top-0.5 right-0.5 w-2 h-2 border-t-2 border-r-2 border-emerald-500"></span>
+                      <span className="absolute bottom-0.5 left-0.5 w-2 h-2 border-b-2 border-l-2 border-emerald-500"></span>
+                      <span className="absolute bottom-0.5 right-0.5 w-2 h-2 border-b-2 border-r-2 border-emerald-500"></span>
+                    </div>
                   </div>
-                  <p className="text-xs text-gray-500 font-medium">{t.qrCaption}</p>
+                  {/* 二维码下方极小字 */}
+                  <p className="text-center text-[11px] text-slate-400 mt-2">{t.qrCaption}</p>
                 </div>
               </div>
             </div>
