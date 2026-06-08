@@ -1,3 +1,8 @@
+import { NextRequest, NextResponse } from 'next/server';
+
+export const runtime = 'edge';
+export const dynamic = 'force-dynamic';
+
 interface PaymentIntentResponse {
   id: string;
   request_id: string;
@@ -89,51 +94,48 @@ function isAllowedCurrency(value: string): value is AllowedCurrency {
   return ALLOWED_CURRENCIES.includes(value as AllowedCurrency);
 }
 
-export interface Env {
-  AIRWALLEX_API_KEY: string;
-}
-
-export async function onRequestPost(context: {
-  request: Request;
-  env: Env;
-}): Promise<Response> {
-  const origin = context.request.headers.get('Origin') || '*';
-  const corsHeaders: Record<string, string> = {
-    'Access-Control-Allow-Origin': origin,
+function corsHeaders(origin: string | null) {
+  return {
+    'Access-Control-Allow-Origin': origin || '*',
     'Access-Control-Allow-Methods': 'POST, OPTIONS',
     'Access-Control-Allow-Headers': 'Content-Type',
   };
+}
+
+export async function POST(request: NextRequest): Promise<NextResponse> {
+  const origin = request.headers.get('Origin');
+  const headers = corsHeaders(origin);
 
   try {
-    const body: CreatePaymentIntentRequest = await context.request.json();
+    const body: CreatePaymentIntentRequest = await request.json();
     const { amount, currency, merchant_order_id, description } = body;
 
     if (typeof amount !== 'number' || amount <= 0) {
-      return new Response(
-        JSON.stringify({ error: 'Invalid amount. Must be a number greater than 0.' }),
-        { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      return NextResponse.json(
+        { error: 'Invalid amount. Must be a number greater than 0.' },
+        { status: 400, headers }
       );
     }
 
     if (typeof currency !== 'string' || !isAllowedCurrency(currency)) {
-      return new Response(
-        JSON.stringify({ error: `Invalid currency. Must be one of: ${ALLOWED_CURRENCIES.join(', ')}.` }),
-        { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      return NextResponse.json(
+        { error: `Invalid currency. Must be one of: ${ALLOWED_CURRENCIES.join(', ')}.` },
+        { status: 400, headers }
       );
     }
 
     if (merchant_order_id && merchant_order_id.length > 128) {
-      return new Response(
-        JSON.stringify({ error: 'merchant_order_id must not exceed 128 characters.' }),
-        { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      return NextResponse.json(
+        { error: 'merchant_order_id must not exceed 128 characters.' },
+        { status: 400, headers }
       );
     }
 
-    const apiKey = context.env.AIRWALLEX_API_KEY;
+    const apiKey = process.env.AIRWALLEX_API_KEY;
     if (!apiKey) {
-      return new Response(
-        JSON.stringify({ error: 'AIRWALLEX_API_KEY is not configured' }),
-        { status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      return NextResponse.json(
+        { error: 'AIRWALLEX_API_KEY is not configured' },
+        { status: 500, headers }
       );
     }
 
@@ -142,21 +144,15 @@ export async function onRequestPost(context: {
       apiKey
     );
 
-    return new Response(JSON.stringify(paymentIntent), {
-      status: 200,
-      headers: { ...corsHeaders, 'Content-Type': 'application/json' },
-    });
+    return NextResponse.json(paymentIntent, { status: 200, headers });
   } catch (error) {
     const message = error instanceof Error ? error.message : 'Internal server error';
-    return new Response(JSON.stringify({ error: message }), {
-      status: 500,
-      headers: { ...corsHeaders, 'Content-Type': 'application/json' },
-    });
+    return NextResponse.json({ error: message }, { status: 500, headers });
   }
 }
 
-export async function onRequestOptions(): Promise<Response> {
-  return new Response(null, {
+export async function OPTIONS(): Promise<NextResponse> {
+  return new NextResponse(null, {
     status: 204,
     headers: {
       'Access-Control-Allow-Origin': '*',
