@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { Locale, siteConfig } from '@/lib/seo';
+import { Locale, siteConfig, generateLocalBusinessSchema } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
 
 export function generateStaticParams() {
@@ -170,9 +170,14 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
     },
   };
 
+  // 2026-06-12 Phase B-P1 修复 R08: LocalBusiness schema 注入（Phase A2 报告 0/138 → 1/138）
+  const localBusinessJsonLd = generateLocalBusinessSchema(locale);
+
   return (
     <>
       <JsonLd data={teamSchema} />
+      {/* 2026-06-12 Phase B-P1 修复 R08: LocalBusiness schema */}
+      <JsonLd data={localBusinessJsonLd} />
       <main className="min-h-screen bg-white">
         {/* Hero */}
         <section className="bg-gradient-to-br from-[#2873F5] to-[#1a5fd1] text-white py-16 md:py-24 max-w-[1320px] mx-auto">

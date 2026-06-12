@@ -1,0 +1,107 @@
+# Products per category (from /en/product/* URLs)
+
+## packaging (10 products)
+  https://zprintpro.com/en/product/cosmetic-boxes/
+  https://zprintpro.com/en/product/drawer-slide-gift-box/
+  https://zprintpro.com/en/product/electronics-packaging-box/
+  https://zprintpro.com/en/product/folding-boxes/
+  https://zprintpro.com/en/product/food-boxes/
+  https://zprintpro.com/en/product/gift-boxes/
+  https://zprintpro.com/en/product/kraft-paper-packaging-box/
+  https://zprintpro.com/en/product/magnetic-closure-gift-box/
+  https://zprintpro.com/en/product/mailer-boxes/
+  https://zprintpro.com/en/product/rigid-boxes/
+
+## stickers (9 products)
+  https://zprintpro.com/en/product/die-cut-stickers/
+  https://zprintpro.com/en/product/fluorescent-stickers/
+  https://zprintpro.com/en/product/foil-stickers/
+  https://zprintpro.com/en/product/fruit-food-label-stickers/
+  https://zprintpro.com/en/product/removable-stickers/
+  https://zprintpro.com/en/product/security-stickers/
+  https://zprintpro.com/en/product/small-batch-stickers/
+  https://zprintpro.com/en/product/transparent-stickers/
+  https://zprintpro.com/en/product/waterproof-stickers/
+
+## flyers (8 products)
+  https://zprintpro.com/en/product/a4-flyers/
+  https://zprintpro.com/en/product/a5-flyers/
+  https://zprintpro.com/en/product/double-sided-flyers/
+  https://zprintpro.com/en/product/eco-flyers/
+  https://zprintpro.com/en/product/folded-leaflets/
+  https://zprintpro.com/en/product/same-day-flyers/
+  https://zprintpro.com/en/product/school-flyers/
+  https://zprintpro.com/en/product/thick-paper-flyers/
+
+## books (7 products)
+  https://zprintpro.com/en/product/catalog-printing/
+  https://zprintpro.com/en/product/exercise-books/
+  https://zprintpro.com/en/product/hardcover-books/
+  https://zprintpro.com/en/product/perfect-bound-books/
+  https://zprintpro.com/en/product/saddle-stitch-booklets/
+  https://zprintpro.com/en/product/spiral-notebooks/
+  https://zprintpro.com/en/product/textbooks/
+
+## posters (6 products)
+  https://zprintpro.com/en/product/a1-posters/
+  https://zprintpro.com/en/product/a2-posters/
+  https://zprintpro.com/en/product/adhesive-posters/
+  https://zprintpro.com/en/product/art-posters/
+  https://zprintpro.com/en/product/display-posters/
+  https://zprintpro.com/en/product/outdoor-posters/
+
+## red-packets (6 products)
+  https://zprintpro.com/en/product/cartoon-red-packets/
+  https://zprintpro.com/en/product/custom-red-packets/
+  https://zprintpro.com/en/product/eco-red-packets/
+  https://zprintpro.com/en/product/embossed-red-packets/
+  https://zprintpro.com/en/product/foil-red-packets/
+  https://zprintpro.com/en/product/large-red-packets/
+
+## calendars (6 products)
+  https://zprintpro.com/en/product/custom-calendars/
+  https://zprintpro.com/en/product/desk-calendars/
+  https://zprintpro.com/en/product/magnetic-calendars/
+  https://zprintpro.com/en/product/mini-calendars/
+  https://zprintpro.com/en/product/photo-frame-calendars/
+  https://zprintpro.com/en/product/wall-calendars/
+
+## paper-bags (6 products)
+  https://zprintpro.com/en/product/eco-paper-bags/
+  https://zprintpro.com/en/product/gift-bags/
+  https://zprintpro.com/en/product/handle-bags/
+  https://zprintpro.com/en/product/kraft-paper-bags/
+  https://zprintpro.com/en/product/large-bags/
+  https://zprintpro.com/en/product/white-card-bags/
+
+## business-cards (6 products)
+  https://zprintpro.com/en/product/foil-business-cards/
+  https://zprintpro.com/en/product/matte-business-cards/
+  https://zprintpro.com/en/product/premium-business-cards/
+  https://zprintpro.com/en/product/rounded-corner-cards/
+  https://zprintpro.com/en/product/spot-uv-business-cards/
+  https://zprintpro.com/en/product/thick-business-cards-400g/
+
+## banners (5 products)
+  https://zprintpro.com/en/product/adhesive-banners/
+  https://zprintpro.com/en/product/mesh-banners/
+  https://zprintpro.com/en/product/outdoor-vinyl-banners/
+  https://zprintpro.com/en/product/roll-up-banners/
+  https://zprintpro.com/en/product/vehicle-wraps/
+
+## menus (5 products)
+  https://zprintpro.com/en/product/disposable-menus/
+  https://zprintpro.com/en/product/drink-menus/
+  https://zprintpro.com/en/product/hardcover-menus/
+  https://zprintpro.com/en/product/laminated-menus/
+  https://zprintpro.com/en/product/pvc-menus/
+
+## envelopes (4 products)
+  https://zprintpro.com/en/product/business-envelopes/
+  https://zprintpro.com/en/product/colored-envelopes/
+  https://zprintpro.com/en/product/large-envelopes/
+  https://zprintpro.com/en/product/pearl-envelopes/
+
+## educational (1 products)
+  https://zprintpro.com/en/product/certificates/
+

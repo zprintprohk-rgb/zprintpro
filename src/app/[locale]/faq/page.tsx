@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
 import { Locale, siteConfig, generateFaqJsonLd } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
+import { generateFaqPageWrapperJsonLd } from '@/lib/seo/schema-extensions';
 import FaqClient from './FaqClient';
 
 interface FaqPageProps {
@@ -121,10 +122,14 @@ export default function FaqPage({ params }: FaqPageProps) {
   const faqJsonLd = generateFaqJsonLd(
     items.map((item) => ({ question: item.q, answer: item.a }))
   );
+  // 2026-06-12 Phase B-P1 修复 P1-4: FAQPage wrapper schema 增强（Phase A2 FAQ 页面 overall 34.6 → 升级）
+  const faqPageUrl = `${siteConfig.url}/${locale}/faq/`;
+  const faqPageJsonLd = generateFaqPageWrapperJsonLd(locale, faqPageUrl, t.description);
 
   return (
     <main className="min-h-screen bg-gray-50 py-12">
       <JsonLd data={faqJsonLd} />
+      <JsonLd data={faqPageJsonLd} />
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10">
           <h1 className="text-3xl md:text-4xl font-bold text-[#333333] mb-3">{t.h1}</h1>

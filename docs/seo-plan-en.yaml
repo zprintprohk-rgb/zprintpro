@@ -1,0 +1,345 @@
+version: 1
+plan:
+  name: '智印云 ZprintPro en 市场 SEO/GEO + 高毛利品类战略 V1+V2 并行'
+  max_concurrency: 5
+  max_consecutive_failures: 2
+  max_cycles: 8
+  auto_reject_retries: 1
+  verifier_config:
+    default_verifiers: [verifier]
+    audit_sample_rate: 0.0
+tasks:
+  - id: phase-a1-crawl-parse
+    title: '抓取智印云 en 全站 URL + 解析 SEO/GEO 元数据'
+    prompt: |
+      工作目录: F:\zprintpro-nextjs\ (智印云 ZprintPro Next.js 项目)
+      品牌硬规则: 智印云 / ZprintPro, **不是** "智印港" (竞品)
+
+      任务: 抓取智印云 en 站全站 URL + 解析每个页面 SEO/GEO 元数据。
+
+      Step 1 - 列出所有 en URL:
+      从 https://zprintpro.com/en/ 开始,递归抓所有内部链接,生成完整 URL 列表:
+      - 1 个首页 /en/
+      - 13 个分类页 (paper-bags / flyers / stickers / packaging / posters / business-cards / banners / books / menus / envelopes / calendars / red-packets / educational)
+      - 每个分类下 4-10 个产品页
+      - 4-8 个 blog (Knowledge) 页 /en/blog/[slug]/
+      - 服务页 /en/services/rush-printing-delivery/
+      - Info 页: about / contact / faq / help-center / privacy / terms
+      目标: 80+ URL 完整列表。
+
+      Step 2 - 抓取每个 URL 的 HTML head:
+      用 webfetch (markdown 或 html) 抓每个 URL,保存到 F:\zprintpro-nextjs\docs\seo-audit-en\raw\<filename>.html。
+
+      Step 3 - 用 explore agent 解析每个 HTML head,提取:
+      - title + 字符数
+      - meta description + 字符数
+      - meta keywords
+      - hreflang 标签 (8 locale 完整?)
+      - canonical
+      - 所有 JSON-LD schema (类型 + 关键字段)
+      - og:* 标签
+      - twitter:* 标签
+      - preload images (前 5)
+      - img alt 缺失数 / 总数
+      - h1 文本 + 字符数
+      - h2 数量
+      - BreadcrumbList / FAQPage / Product / Article / Speakable / HowTo schema 存在?
+      - en locale 数据错配 (description 是中文?keywords 是中文?)
+
+      输出: F:\zprintpro-nextjs\docs\seo-audit-en\parsed-data.json (每个 URL 一个 entry)
+      + F:\zprintpro-nextjs\docs\seo-audit-en\raw\*.html (原始 HTML 备份)
+
+      报告: (1) 总 URL 数 (2) 各类型页面数量 (3) en locale 数据错配页数。
+    assigned_to: general
+    verified_by: verifier
+    verify_prompt: |
+      独立核查 F:\zprintpro-nextjs\docs\seo-audit-en\parsed-data.json:
+      1. 抽样 5 个 URL, 用 webfetch 重新抓 HTML, 对比 parsed-data.json 的字段是否准确 (title/description/keywords/hreflang/schema)。
+      2. 检查 en locale 数据错配的判定: 比如 en 页面 description 是中文应该标记。
+      3. 检查 hreflang 完整性: 8 个 locale (en-US / en-GB / en-AU / en-CA / en / ja / zh-HK / x-default) 都应该有。
+      4. 报告: 抽样准确率 + 错配数 + hreflang 完整度。
+      标准: 抽样 5 个全部准确 + en 错配判定合理 = PASS。
+    max_retries: 2
+
+  - id: phase-a2-core-eeat
+    title: '跑 CORE-EEAT 80 项评分 + GEO Readiness 评估'
+    prompt: |
+      基于 F:\zprintpro-nextjs\docs\seo-audit-en\parsed-data.json 的 80+ URL 数据,跑 CORE-EEAT 80 项评分。
+
+      评分规则:
+      - Pass = 10 分 | Partial = 5 分 | Fail = 0 分
+      - 维度: C (Contextual) / O (Organization) / R (Referenceability) / E (Exclusivity) / Exp (Experience) / Ept (Expertise) / A (Authority) / T (Trust)
+      - GEO Score = (C + O + R + E) / 4
+      - SEO Score = (Exp + Ept + A + T) / 4
+      - Authority A01-A10 + Trust T01-T03/T05/T07/T10 大部分需要 site-level 数据,标记 N/A 排除
+      - 评分标准 (90-100 优 / 75-89 好 / 60-74 中 / 40-59 低 / 0-39 差)
+
+      GEO Readiness Checklist (GEO-First 6 项):
+      - C02 Direct Answer in first 150 words
+      - C09 Structured FAQ with Schema
+      - O03 Data in tables, not prose
+      - O05 JSON-LD Schema Markup
+      - E01 Original first-party data
+      - O02 Key Takeaways / Summary Box
+
+      输出:
+      F:\zprintpro-nextjs\docs\seo-audit-en\core-eeat-scores.json (全站聚合 + 每页细分)
+      + F:\zprintpro-nextjs\docs\seo-audit-en\core-eeat-summary.md (文字总结)
+
+      重点: 对产品页 + 分类页 + blog 区分场景评分 (产品 = transactional / 分类 = commercial / blog = informational)。
+    assigned_to: general
+    verified_by: verifier
+    verify_prompt: |
+      独立核查 F:\zprintpro-nextjs\docs\seo-audit-en\core-eeat-scores.json:
+      1. 抽 2 个产品页 + 1 个分类页 + 1 个 blog,根据 parsed-data.json 重新跑 80 项,对比分数。
+      2. 检查 GEO Readiness 6 项判定是否正确。
+      3. 检查 Authority / Trust N/A 标记是否合理。
+      标准: 抽样 4 页分数偏差 ≤ 10 分 + GEO 判定合理 = PASS。
+    max_retries: 2
+
+  - id: phase-a3-business-strategy
+    title: '智印云 en 市场 Top 20 搜索词 + 高毛利品类分析'
+    prompt: |
+      用户目标: 智印云 zprintpro-nextjs en 市场首页排名 -> 询盘 -> 大订单 -> 赚钱
+
+      核心问题: 名片印刷搜索量大但毛利低, 哪些品类毛利高 + 能赚大钱?
+
+      任务:
+      1. 业务建模: 列出 zprintpro 当前 13 个分类的典型订单规模 / 单价 / 毛利预估 (基于 src/lib/pricing/ 数据)
+      2. Top 20 en 圈搜索词分析:
+         - 区分 高搜索量低毛利 (e.g. business card printing)
+         - 区分 中等搜索量高毛利 (e.g. custom packaging boxes)
+         - 区分 低搜索量极高毛利 (e.g. specialty boxes / 限量版)
+      3. 品类 P0/P1/P2 排序: 基于 (搜索量 × 毛利 × 询盘转化率) 给 13 个分类打分排序
+      4. 大订单锚点: 哪些品类容易触发 B2B 大订单 (>USD 5000)?
+
+      13 个分类: Stickers / Flyers / Packaging / Posters / Paper Bags / Business Cards / Banners / Books / Menus / Envelopes / Calendars / Red Packets / Educational
+
+      输出: F:\zprintpro-nextjs\docs\seo-audit-en\business-strategy.md
+      包含:
+      - Top 20 en 搜索词清单 (含搜索量估计 + 毛利判定 + 竞争难度)
+      - 13 品类 P0/P1/P2 排序表
+      - 高毛利品类 Top 3 详细推荐
+      - 大订单锚点品类清单
+      - 建议主钻的 3-5 个品类
+    assigned_to: general
+    verified_by: verifier
+    verify_prompt: |
+      独立核查 F:\zprintpro-nextjs\docs\seo-audit-en\business-strategy.md:
+      1. Top 20 搜索词是否合理 (基于 en 圈印刷行业知识)
+      2. 13 品类 P0/P1/P2 排序是否基于 (搜索量 × 毛利 × 询盘转化) 三维度,而不是单一搜索量
+      3. 大订单锚点品类是否合理 (B2B 高单价场景)
+      4. 检查 user.md 里的 user-preference (universal / inclusive positioning) 不能跟 niche 推荐冲突
+      标准: 三维度评估 + B2B 锚点合理 + 不跟 universal 原则冲突 = PASS。
+    max_retries: 2
+
+  - id: phase-a4-v1-report
+    title: '生成 V1 SEO/GEO 审计 + 业务战略主报告'
+    prompt: |
+      基于 phase-a1, a2, a3 的产物,生成最终 V1 报告:
+
+      F:\zprintpro-nextjs\docs\seo-geo-audit-en-v1.md
+
+      报告结构:
+      1. Executive Summary - 关键发现 + 全站评分 + Top 5 问题
+      2. 业务目标对齐 - 首页排名 -> 询盘 -> 大订单 -> 赚大钱的映射
+      3. P0 问题 (致命, 立刻修):
+         - en locale 数据错配 (description/keywords 中文泄漏)
+         - Title 品牌重复
+         - Schema 缺关键字段 (Product/HowTo/Speakable/Author)
+         - ItemList schema 用了错的 Cloudflare preview 域名
+      4. P1 问题 (1 周内):
+         - hreflang en-CA 缺失
+         - H1 含杂讯
+         - Description 过长 (211 字符)
+         - 缺 core pages schema (Privacy, Terms)
+      5. P2 问题 (1 月内): 优化级
+      6. 业务战略 - Top 20 搜索词 + 13 品类 P0/P1/P2 + 高毛利 Top 3 + 大订单锚点 + 主钻建议
+      7. 修复优先级矩阵 - P0 代码修复 (Phase B) 的具体清单
+      8. Next Steps - Phase B 代码修复 + Phase C 监控
+
+      风格: 商业报告 (不是技术报告), 重在商业影响 + ROI + 怎么赚大钱。
+      用户偏好: 简单直接 (user.md 已记)。
+    assigned_to: general
+    verified_by: verifier
+    verify_prompt: |
+      独立核查 V1 报告 F:\zprintpro-nextjs\docs\seo-geo-audit-en-v1.md:
+      1. 8 节结构完整
+      2. P0/P1/P2 问题都有具体页面引用 (从 parsed-data.json 抽)
+      3. 业务战略有 Top 20 搜索词 + 13 品类排序
+      4. 不超过 30 页 (用户偏好简单直接)
+      标准: 结构完整 + 数据驱动 + 不超 30 页 = PASS。
+    max_retries: 1
+
+  - id: phase-b-code-fixes
+    title: 'V2 代码修复: metadata generator + product page + schema 增强'
+    prompt: |
+      基于 V1 报告 (F:\zprintpro-nextjs\docs\seo-geo-audit-en-v1.md) 修代码:
+
+      项目: F:\zprintpro-nextjs\ (Next.js App Router + i18n zh-hk/en/ja)
+      品牌: 智印云 / ZprintPro
+
+      修复 P0 问题:
+
+      1. src/lib/metadata.ts 或 app/[locale]/layout.tsx:
+         - Title 模板: 主关键词前置 + 品牌后置 + 不重复
+         - Description 模板: 150-160 字符, 含数字 + 地理关键词 + CTA
+         - Open Graph + Twitter Card 模板
+         - hreflang 8 locale 完整
+
+      2. app/[locale]/product/[slug]/page.tsx:
+         - 致命修复: en locale description/keywords 是中文泄漏 (i18n key 错配), 改成从 messages/en/*.json 读
+         - Title 简化: Custom {Product} from Hong Kong | ZprintPro (去掉重复)
+         - Product Schema 增强: 加 inStock / priceValidUntil / availability / shippingDestination / returnPolicy
+         - 加 Speakable schema (GEO 关键)
+         - 加 Author markup (E-E-A-T)
+         - 加 AggregateRating (从已有 review 数据)
+
+      3. app/[locale]/category/[slug]/page.tsx:
+         - Title 模板化 (主关键词前置)
+         - ItemList schema 修复: 域名用 zprintpro.com (不是 pages.dev preview)
+         - 加 HowTo schema (印刷工艺类内容)
+
+      4. 新建 src/lib/seo/schema.ts:
+         - 集中管理 JSON-LD 生成器 (Product / Organization / BreadcrumbList / FAQPage / Article / HowTo / Speakable)
+         - 主钻品类 (Phase A3 业务战略结果) 加专属 schema 字段
+
+      5. 新建 src/lib/seo/i18n-meta.ts:
+         - en locale 专用的 meta 模板
+         - 解决 description/keywords 中文泄漏问题
+         - 包含主钻品类的高价值关键词
+
+      加 HowTo schema (主钻品类各加 1 个):
+      - Custom packaging boxes 流程
+      - Paper bag 印刷流程
+      - Sticker 印刷流程
+
+      英文文案避免中式英语, 符合 en-US 习惯。
+
+      输出:
+      - 改动的文件列表 + diff
+      - 新建的 lib 文件
+      - messages/en/*.json 改动
+      - 跑 npm run build 验证
+      - 用 webfetch 重抓 5 个代表性页面,对比修复前后
+
+      报告: 改动文件清单 + 修复了哪些 P0 问题 + 剩余 P1/P2 列表。
+    assigned_to: ai-coder
+    verified_by: code-reviewer
+    verify_prompt: |
+      独立核查 V2 修复:
+      1. 跑 cd F:\zprintpro-nextjs && npm run build 看是否构建成功
+      2. 用 webfetch 重新抓 5 个 en 页面 (首页 + 1 分类 + 3 产品),对比修复前后:
+         - Title 不再重复品牌
+         - Description 是英文, 150-160 字符, 含数字 + 地理
+         - hreflang 8 locale 完整
+         - Product schema 含 inStock / shippingDestination / priceValidUntil
+         - Speakable schema 存在
+         - Author markup 存在
+      3. 检查 messages/en/*.json 的英文文案不是中式英语
+      4. 检查没用 "智印港" 竞品词
+      标准: build 成功 + 5 页全部修复 + 英文文案地道 + 无竞品词 = PASS。
+    depends_on: [phase-a4-v1-report]
+    max_retries: 2
+
+  - id: phase-c-image-prompts
+    title: 'Phase C: en SKU 生图 prompt 模板 (英文 Only, 主钻品类优化)'
+    prompt: |
+      任务: 为 en 市场主钻品类生成英文生图 prompt 模板(只 en,zh-hk/ja 不要)。
+
+      参考现有模板:
+      - F:\zprintpro-nextjs\seedream-hero-prompts.txt (HERO 模板,有 en 版本)
+      - F:\zprintpro-nextjs\seedream-prompts-batch-20260515-補充版.txt (BATCH 模板,banner/blog-cover,有 en)
+
+      现状分析 (看完模板后总结):
+      - 当前 en prompt 是 "zh-hk + en 双语" 模式的 en 版本(描述混合 zh-HK + en 文字 + 英文场景)
+      - 用户要求: **en-only 优化版**,按 en-US 独立站营销习惯写
+      - 文件名 SEO 规范: `zprintpro-{type}-{slug}-{locale}.webp` (现有模式)
+      - Alt 英文,符合 en-US 习惯
+
+      en 独立站营销图特点(基于市场喜好):
+      1. **爆炸标签**: en-US 接受红色爆炸标签 (HK$ style),但用 USD + "From $X" 更地道
+      2. **场景**: en-US 偏 product close-up + lifestyle 背景(cafe / office / boutique)
+      3. **配色**: 跟品牌一致 (zprintpro 是 #2873F5 蓝 + #F87314 橙)
+      4. **文字**: 所有文字英文,无中文泄漏
+      5. **字体**: Inter Bold (en-US 字体,不是 PingFang HK)
+
+      **任务**:
+
+      Step 1 - 主钻品类分析:
+      基于 Phase A3 业务战略 (还没产出,但按已知 en 市场常识推测):
+      - Packaging (boxes, gift box, magnetic box) - 高毛利 B2B
+      - Paper Bags (kraft, eco-friendly) - 高流量中毛利
+      - Stickers (waterproof, die-cut) - 高流量
+      - Posters (A2, A1, large format) - 中毛利
+      - Books/Catalogs - 中毛利 B2B
+      - Menus (PVC, restaurant) - 中毛利
+
+      Step 2 - 生成每个主钻品类的 en-only prompt 模板:
+      每品类 2-3 个 prompt:
+      - HERO (16:9 banner with explosive promo label)
+      - BLOG-COVER (1200x630, NO promo label)
+      - PRODUCT-CARD (800x600, NO promo label)
+      格式跟现有 seedream 模板一致,但只写 en,不写 zh-hk/ja
+
+      Step 3 - 每个 prompt 含:
+      - 比例 + 8K 超高清
+      - 爆炸标签位置 (右上角) + 颜色 (#DC2626 保留,Inter Bold 字体,白字)
+      - 产品场景 (en-US 独立站风格)
+      - 材质工艺细节
+      - 背景虚化场景
+      - 文字禁止清单 (NO Chinese, NO gibberish, NO logo placement confusion)
+      - Filename: zprintpro-{type}-{slug}-en.webp
+      - Alt: 英文,符合 en-US 习惯,含 keyword + benefit + CTA
+
+      输出:
+      F:\zprintpro-nextjs\seedream-prompts-en-optimized.txt
+
+      风格: 商业报告风格,只 en locale,适合 en-US 独立站(美式营销 + 英文文案 + US 习惯)。
+
+      文件结构示例:
+      ```
+      --- HERO-XX | en | kraft-bag (主钻品类 #2) ---
+      Filename: zprintpro-hero-kraft-bag-en-optimized.webp
+      Alt: Custom Kraft Paper Bags - Eco-friendly, durable, US shipping | From $0.55 | ZprintPro
+      Prompt: [英文,跟现有 en 模式类似但优化 en-US 营销]
+      ```
+
+      每个主钻品类 1 HERO + 1 BLOG-COVER + 1 PRODUCT-CARD,共 ~18 个 prompt (6 品类 × 3 类型)。
+
+      报告: 输出文件路径 + 生成的 prompt 数 + 哪些品类覆盖。
+    assigned_to: general
+    verified_by: code-reviewer
+    depends_on: [phase-a3-business-strategy]
+    verify_prompt: |
+      独立核查 F:\zprintpro-nextjs\seedream-prompts-en-optimized.txt:
+      1. 只 en locale,无 zh-hk / ja 字段
+      2. 文件名 SEO 规范 (zprintpro-{type}-{slug}-en.webp)
+      3. Alt 英文 + 含 keyword + benefit,符合 en-US 习惯
+      4. Prompt 含比例 (16:9 / 1200x630 / 800x600) + 8K
+      5. 爆炸标签位置正确 (右上角,Inter Bold,白字)
+      6. 产品场景 en-US 风格 (cafe / office / boutique)
+      7. 文字禁止清单完整 (NO Chinese / NO gibberish / NO logo confusion)
+      8. 覆盖 6 个主钻品类 (Packaging / Paper Bags / Stickers / Posters / Books / Menus)
+      9. 每个品类 3 个 prompt (HERO + BLOG-COVER + PRODUCT-CARD) = ~18 个
+      10. 没用 "智印港" 竞品词
+      标准: 10 条全部满足 = PASS。
+    max_retries: 2
+
+  - id: final-gate-e2e
+    title: 'E2E Gate: 智印云 en 站 SEO/GEO 完整验证'
+    role: verify-as-task
+    prompt: |
+      Phase A + Phase B 全部交付后,跑最终 E2E 验证:
+
+      1. 读 V1 报告 F:\zprintpro-nextjs\docs\seo-geo-audit-en-v1.md
+      2. 读 V2 修复 diff (ai-coder 报告)
+      3. 用 webfetch 重抓 10 个 en 页 (首页 + 3 分类 + 5 产品 + 1 blog):
+         - 检查所有 P0 问题已修
+         - 业务战略里的主钻品类 schema 都对
+      4. 报告 PASS/FAIL + 剩余风险
+
+      标准: 全部 P0 修完 + 主钻品类 schema 全 + build 成功 + 无新错误 = PASS。
+    assigned_to: verifier
+    depends_on: [phase-a4-v1-report, phase-b-code-fixes]
+    max_retries: 1

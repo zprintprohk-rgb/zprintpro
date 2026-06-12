@@ -24,6 +24,12 @@ import {
   generateProductReviewsJsonLd,
   Locale 
 } from '@/lib/seo';
+import {
+  generateHowToJsonLd,
+  generateSpeakableJsonLd,
+  getCategoryHowToSteps,
+  standardSpeakableSelectors,
+} from '@/lib/seo/schema-extensions';
 import { JsonLd } from '@/components/JsonLd';
 import { ProductGallery } from '@/components/ProductGallery';
 import { QuoteCalculator } from '@/components/quote/QuoteCalculator';
@@ -158,9 +164,12 @@ export default function ProductPage({
   // 2026-06-08 修复: og:image fallback chain — 优先用 locale 专属图, 再用通用图, 最后才 placeholder
   // 之前: 直接 fallback 到 placeholder.jpg (0 字节, GSC 显示通用图标)
   const ogImage = getProductMainImage(product, locale);
+  // 2026-06-10 Phase B 修复 P0-1：使用 locale 本地化的 name / description（不再传 product.name / product.description）
+  // 之前 en/ja 页直接传中文，导致 Product JSON-LD name 字段是 "牛皮紙袋" 等中文。
+  // productTitle / productDescription 来自 getProductTitle / getProductDescription，已经按 locale 切换。
   const productJsonLd = generateProductJsonLd(
-    product.name,
-    product.description,
+    productTitle,
+    productDescription,
     ogImage,
     product.slug,
     product.basePrice,
@@ -171,7 +180,7 @@ export default function ProductPage({
   // ImageObject Schema（獨立節點，不影響 Product ranking）
   const productImageJsonLd = generateProductImageJsonLd(
     getProductImages(product, locale),
-    product.name,
+    productTitle,
     locale
   );
   const businessJsonLd = generateBusinessJsonLd(locale);
@@ -184,8 +193,26 @@ export default function ProductPage({
     : undefined;
   const faqJsonLd = coreFaqs ? generateFAQSchema(coreFaqs, locale) : null;
 
-  // HowTo Schema (暂不启用)
-  const howToJsonLd = null;
+  // 2026-06-10 Phase B 修复 P0-3：HowTo + Speakable 注入
+  // 仅对 4 个主钻品类（packaging / paper-bags / books / calendars）的产品页注入 HowTo。
+  // Speakable 通用注入（与 P0-3 任务说明一致：选 2-3 个核心 cssSelector）。
+  const mainDrillingCategories = ['packaging', 'paper-bags', 'books', 'calendars'];
+  const categoryHowto = mainDrillingCategories.includes(product.category_slug)
+    ? getCategoryHowToSteps(product.category_slug, locale)
+    : null;
+  const howToJsonLd = categoryHowto
+    ? generateHowToJsonLd(
+        categoryHowto.name,
+        categoryHowto.description,
+        categoryHowto.steps,
+        locale,
+        categoryHowto.totalTime
+      )
+    : null;
+  const speakableJsonLd = generateSpeakableJsonLd(
+    standardSpeakableSelectors.product.xpath,
+    standardSpeakableSelectors.product.cssSelector
+  );
 
   // 长描述
   const longDesc = locale === 'zh-hk' ? product.longDescription : locale === 'en' ? product.longDescriptionEn : product.longDescriptionJa;
@@ -272,7 +299,10 @@ export default function ProductPage({
       <JsonLd data={breadcrumbJsonLd} />
       {faqJsonLd && <JsonLd data={faqJsonLd} />}
       {howToJsonLd && <JsonLd data={howToJsonLd} />}
-      <JsonLd data={generateProductReviewsJsonLd(product.name, slug, locale)} />
+      {/* 2026-06-10 Phase B 修复 P0-3：Speakable 注入（语音 / AI 抓取） */}
+      <JsonLd data={speakableJsonLd} />
+      {/* 2026-06-10 Phase B 修复 P0-1：reviews schema 也使用 locale 本地化 productTitle（之前是中文 product.name） */}
+      <JsonLd data={generateProductReviewsJsonLd(productTitle, slug, locale)} />
       
       <main className="min-h-screen bg-gray-50">
         {/* 面包屑导航 */}

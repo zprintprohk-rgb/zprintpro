@@ -1,5 +1,7 @@
 import { Metadata } from 'next';
 import { Locale, siteConfig } from '@/lib/seo';
+import { JsonLd } from '@/components/JsonLd';
+import { generatePrivacyPageJsonLd } from '@/lib/seo/schema-extensions';
 
 interface PrivacyPageProps {
   params: { locale: string };
@@ -43,9 +45,13 @@ export async function generateMetadata({ params }: PrivacyPageProps): Promise<Me
 export default function PrivacyPage({ params }: PrivacyPageProps) {
   const locale = params.locale as Locale;
   const t = translations[locale];
+  // 2026-06-12 Phase B-P1 修复 P1-4: PrivacyPolicy schema
+  const privacyUrl = `${siteConfig.url}/${locale}/privacy/`;
+  const privacyJsonLd = generatePrivacyPageJsonLd(locale, privacyUrl, t.description);
 
   return (
     <main className="min-h-screen bg-gray-50 py-12">
+      <JsonLd data={privacyJsonLd} />
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-3xl font-bold text-[#333333] mb-8">{t.h1}</h1>
         <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-8 space-y-6 text-gray-600">

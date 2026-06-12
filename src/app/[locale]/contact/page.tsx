@@ -1,6 +1,7 @@
 import { Metadata } from 'next';
-import { Locale, siteConfig, generateBusinessJsonLd } from '@/lib/seo';
+import { Locale, siteConfig, generateBusinessJsonLd, generateLocalBusinessSchema } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
+import { generateContactPageJsonLd } from '@/lib/seo/schema-extensions';
 import { ContactFormWrapper } from './ContactFormWrapper';
 import Image from 'next/image';
 import { generateWhatsAppLink } from '@/lib/whatsapp';
@@ -140,10 +141,18 @@ export default function ContactPage({ params }: ContactPageProps) {
   const locale = params.locale as Locale;
   const t = translations[locale];
   const businessJsonLd = generateBusinessJsonLd(locale);
+  // 2026-06-12 Phase B-P1 修复 P1-4 + R08：ContactPage + LocalBusiness 双 schema
+  const contactPageUrl = `${siteConfig.url}/${locale}/contact/`;
+  const contactPageJsonLd = generateContactPageJsonLd(locale, contactPageUrl, t.description);
+  const localBusinessJsonLd = generateLocalBusinessSchema(locale);
 
   return (
     <main className="min-h-screen bg-gray-50 py-12 md:py-16">
       <JsonLd data={businessJsonLd} />
+      {/* 2026-06-12 Phase B-P1 修复 P1-4: ContactPage schema */}
+      <JsonLd data={contactPageJsonLd} />
+      {/* 2026-06-12 Phase B-P1 修复 R08: LocalBusiness schema (Phase A2 报告 0/138 → 1/138) */}
+      <JsonLd data={localBusinessJsonLd} />
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-10 md:mb-12">

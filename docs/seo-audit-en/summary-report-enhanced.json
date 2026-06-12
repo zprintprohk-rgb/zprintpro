@@ -1,0 +1,169 @@
+{
+  "metadata": {
+    "source_file": "parsed-data.json",
+    "total_urls": 138,
+    "crawl_timestamp": "2026-06-10T02:30:00+08:00",
+    "verifier": "phase-a1-crawl-parse (re-verified 2026-06-10T07:10+08:00)",
+    "brand": "ZprintPro / 智印云"
+  },
+  "by_page_type": {
+    "about": 1,
+    "blog": 35,
+    "case-studies": 1,
+    "category": 13,
+    "news": 1,
+    "contact": 1,
+    "faq": 1,
+    "help": 1,
+    "home": 1,
+    "privacy": 1,
+    "product": 79,
+    "service": 2,
+    "terms": 1
+  },
+  "products_per_category": {
+    "packaging": 10,
+    "stickers": 9,
+    "flyers": 8,
+    "books": 7,
+    "posters": 6,
+    "red-packets": 6,
+    "calendars": 6,
+    "paper-bags": 6,
+    "business-cards": 6,
+    "banners": 5,
+    "menus": 5,
+    "envelopes": 4,
+    "educational": 1
+  },
+  "locale_mismatch": {
+    "total_pages_with_chinese": 92,
+    "by_type": {
+      "category": 13,
+      "product": 79
+    },
+    "description_chinese": 79,
+    "keywords_chinese": 74,
+    "title_chinese": 18,
+    "note": "All 79 product pages have Chinese characters in JSON-LD Product schema (name/description) — pulled from Chinese product DB. en meta description and meta keywords on these pages are typically short Chinese placeholder text (e.g. 印刷即日速遞送貨) instead of localized English content. This is the #1 en locale data mismatch."
+  },
+  "hreflang": {
+    "pages_with_8_unique_locales": 137,
+    "distribution": {
+      "8": 137,
+      "9": 1
+    },
+    "note": "Site uses 8 unique hreflang locales: en, en-US, en-GB, en-AU, en-CA, ja, zh-HK, x-default. Matches AGENTS.md spec (8 locales)."
+  },
+  "schema_coverage": {
+    "has_breadcrumb_schema": {
+      "count": 124,
+      "pct": 89.9
+    },
+    "has_faq_schema": {
+      "count": 49,
+      "pct": 35.5
+    },
+    "has_product_schema": {
+      "count": 79,
+      "pct": 57.2
+    },
+    "has_article_schema": {
+      "count": 32,
+      "pct": 23.2
+    },
+    "has_speakable": {
+      "count": 0,
+      "pct": 0.0
+    },
+    "has_howto_schema": {
+      "count": 0,
+      "pct": 0.0
+    },
+    "has_organization_schema": {
+      "count": 95,
+      "pct": 68.8
+    },
+    "has_website_schema": {
+      "count": 138,
+      "pct": 100.0
+    },
+    "has_local_business_schema": {
+      "count": 1,
+      "pct": 0.7
+    }
+  },
+  "schema_coverage_by_type": {
+    "product": {
+      "total": 79,
+      "breadcrumb": 100.0,
+      "faq": 35.4,
+      "product": 100.0,
+      "article": 0.0
+    },
+    "category": {
+      "total": 13,
+      "breadcrumb": 100.0,
+      "faq": 100.0,
+      "product": 0.0,
+      "article": 0.0
+    },
+    "blog": {
+      "total": 35,
+      "breadcrumb": 91.4,
+      "faq": 17.1,
+      "product": 0.0,
+      "article": 91.4
+    },
+    "service": {
+      "total": 2,
+      "breadcrumb": 0.0,
+      "faq": 50.0,
+      "product": 0.0,
+      "article": 0.0
+    },
+    "home": {
+      "total": 1,
+      "breadcrumb": 0.0,
+      "faq": 0.0,
+      "product": 0.0,
+      "article": 0.0
+    }
+  },
+  "image_alt": {
+    "total_images": 1382,
+    "missing_alt": 0,
+    "pages_with_missing": 0
+  },
+  "title_length": {
+    "min": 21,
+    "max": 86,
+    "avg": 63.1,
+    "optimal_50_60": 34
+  },
+  "description_length": {
+    "min": 0,
+    "max": 238,
+    "avg": 110.3,
+    "optimal_150_160": 46,
+    "empty_count": 2
+  },
+  "h1": {
+    "distribution": {
+      "1": 137,
+      "7": 1
+    },
+    "zero_h1_pages": 0,
+    "multi_h1_pages": 1
+  },
+  "og_twitter": {
+    "og_title": 138,
+    "og_description": 136,
+    "og_image": 125,
+    "twitter_card": 138
+  },
+  "canonical": {
+    "with_canonical": 138,
+    "without_canonical": 0
+  }
+}

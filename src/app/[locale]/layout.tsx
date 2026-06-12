@@ -11,7 +11,6 @@ import { Footer } from '@/components/layout/Footer';
 import { BreadcrumbNav } from '@/components/breadcrumb-nav';
 import { CartProvider } from '@/lib/cart-context';
 import { htmlLangMap } from '@/types/locale';
-import { generateHreflangTags } from '@/lib/hreflang';
 import { generateWebsiteJsonLd } from '@/lib/seo';
 import { getGaScript } from '@/lib/analytics';
 
@@ -23,7 +22,11 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://zprintpro.com'),
   title: {
     default: 'ZprintPro | Custom Printing Service Online — Stickers, Packaging, Bags, Books',
-    template: '%s | ZprintPro',
+    // 2026-06-10 Phase B 修复 P0-2：去除 layout 级品牌后缀
+    // 原 template '%s | ZprintPro' 会与子页 generate*Metadata 中的品牌后缀叠加
+    // 形成 "...| ZprintPro | ZprintPro" 重复品牌。
+    // 改用 '%s'，由各 page.tsx 的 generate*Metadata 统一控制品牌后缀。
+    template: '%s',
   },
   description: 'Custom printing service online for US, UK, AU markets. Stickers, packaging, paper bags, business cards, posters, books. 72h global delivery from Hong Kong factory. AI instant quote in 30s.',
   keywords: ['custom printing', 'online printing service', 'sticker printing', 'packaging boxes', 'paper bags', 'business cards', 'custom posters', 'same day printing', 'global printing service'],
@@ -101,7 +104,6 @@ export default function RootLayout({
   params: { locale },
 }: RootLayoutProps) {
   const safeLocale = locale as 'zh-hk' | 'en' | 'ja';
-  const hreflangs = generateHreflangTags(safeLocale);
 
   return (
     <html lang={htmlLangMap[safeLocale] || locale}>
@@ -110,9 +112,12 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://api.airwallex.com" />
         <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
-        {hreflangs.map((tag, i) => (
-          <link key={i} rel={tag.rel} hrefLang={tag.hrefLang} href={tag.href} />
-        ))}
+        {/* 2026-06-10 Phase B 修复 P0-4：移除 layout 级 hreflang 重复渲染。
+            Next.js 14+ 已通过 metadata.alternates.languages 自动输出 hreflang <link>，
+            且各 page.tsx 的 generate*Metadata 已经传了正确的当前页 path（含 /product/${slug}/）。
+            此处手渲染的 generateHreflangTags(safeLocale) 不带 path，
+            会导致深层页（产品/分类）hreflang 全部指向 home URL，Google 区域信号紊乱。
+            让所有 page 完全靠 metadata.alternates.languages 输出 hreflang。 */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

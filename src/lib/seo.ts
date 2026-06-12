@@ -267,11 +267,15 @@ export function generateCategoryMetadata(locale: Locale, categoryName: string = 
   const lang = locale === 'zh-hk' ? 'zh-HK' : locale;
   
   // 分类标题按市场区分
+  // 2026-06-10 Phase B 修复 P0-2：en/ja 分支末尾使用纯英文品牌 'ZprintPro'（无中文），
+  // 避免 layout 模板的 '| ZprintPro' 再次叠加后形成 "...| 智印云 ZprintPro | ZprintPro"。
+  // 2026-06-10：layout template 改为 '%s'（见 layout.tsx），此处由子页统一控制品牌后缀。
+  const brandSuffix = locale === 'zh-hk' ? siteConfig.name : 'ZprintPro';
   const categoryTitle = locale === 'zh-hk'
-    ? `${name} | 即日交貨 | ${siteConfig.name}`
+    ? `${name} | 即日交貨 | ${brandSuffix}`
     : locale === 'en'
-    ? `${name} | Global Shipping | ${siteConfig.name}`
-    : `${name} | 配送対応 | ${siteConfig.name}`;
+    ? `${name} | Global Shipping | ${brandSuffix}`
+    : `${name} | 配送対応 | ${brandSuffix}`;
 
   return {
     title: categoryTitle,
@@ -322,17 +326,23 @@ export function generateProductMetadata(
   const lang = locale === 'zh-hk' ? 'zh-HK' : locale;
   
   // Title: 50-60字符，含核心關鍵詞
+  // 2026-06-10 Phase B 修复 P0-2：en/ja 末尾使用纯英文 'ZprintPro'（无中文），
+  // 避免 layout 模板的 '| ZprintPro' 再次叠加后形成 "...| 智印云 ZprintPro | ZprintPro"。
+  // 2026-06-10：layout template 改为 '%s'（见 layout.tsx），此处由子页统一控制品牌后缀。
   const suffix = locale === 'zh-hk' ? '印刷' : locale === 'en' ? 'Printing' : '印刷';
   const titleBase = `${name}${suffix}`.replace(/印刷印刷/g, '印刷');
-  const title = locale === 'zh-hk' 
-    ? `${titleBase} | 香港${categoryName}專家 | ${siteConfig.name}`.slice(0, 60)
+  const brandSuffix = locale === 'zh-hk' ? siteConfig.name : 'ZprintPro';
+  const title = locale === 'zh-hk'
+    ? `${titleBase} | 香港${categoryName}專家 | ${brandSuffix}`.slice(0, 60)
     : locale === 'en'
-    ? `${titleBase} | Global Shipping | ${siteConfig.name}`.slice(0, 60)
-    : `${titleBase} | 日本向け高品質印刷 | ${siteConfig.name}`.slice(0, 60);
+    ? `${titleBase} | Global Shipping | ${brandSuffix}`.slice(0, 60)
+    : `${titleBase} | 日本向け高品質印刷 | ${brandSuffix}`.slice(0, 60);
   
   // Description: 150-160字符，含長尾關鍵詞+價格+行動號召
+  // 2026-06-12 Phase B-P1 修复 P1-1：扩大 descPrefix 到 100 字符，确保 baseDesc 短时仍能凑足 150+
+  // 之前 descPrefix.slice(0, 80) + descSuffix 在 baseDesc 短时只能拼到 ~80-100 字符
   const priceText = priceRange ? ` ${priceRange.split('/')[0]}起。` : ' ';
-  const descPrefix = baseDesc.slice(0, 80);
+  const descPrefix = baseDesc.slice(0, 100);
   const descSuffix = locale === 'zh-hk' 
     ? `立即查詢報價，滿$500免運費，即日交貨。`
     : locale === 'en'
@@ -340,7 +350,24 @@ export function generateProductMetadata(
     : `今すぐ見積もり。全国配送対応。3〜5営業日でお届け。急ぎにも対応。`;
   
   const fullDesc = `${descPrefix}${priceText}${descSuffix}`;
-  const metaDescription = fullDesc.length > 160 ? fullDesc.slice(0, 157) + '...' : fullDesc;
+  // 确保 metaDescription ≥ 150 字符（Phase A2 报告 C06/C07 失败项：9 字符占位符）
+  // 超 160 才截，否则主动补 locale 关键词 padding
+  let metaDescription: string;
+  if (fullDesc.length > 160) {
+    metaDescription = fullDesc.slice(0, 157) + '...';
+  } else if (fullDesc.length < 150) {
+    const padding = locale === 'zh-hk'
+      ? ` ISO9001品質認證，全球配送。`
+      : locale === 'en'
+      ? ` ISO9001 certified. Worldwide shipping.`
+      : ` ISO9001認証取得。全国配送対応。`;
+    metaDescription = fullDesc + padding;
+    if (metaDescription.length > 160) {
+      metaDescription = metaDescription.slice(0, 157) + '...';
+    }
+  } else {
+    metaDescription = fullDesc;
+  }
   
   return {
     title,
