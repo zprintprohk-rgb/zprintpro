@@ -2,6 +2,8 @@ import { Metadata } from 'next';
 import { Locale, siteConfig } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
 
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://zprintpro.com';
+
 export function generateStaticParams() {
   return [{ locale: 'zh-hk' }, { locale: 'en' }, { locale: 'ja' }];
 }
@@ -330,25 +332,35 @@ export default function CaseStudiesPage({ params }: { params: { locale: Locale }
   const { locale } = params;
   const t = translations[locale];
 
-  // Review Schema (aggregate + individual)
+  // 2026-06-10 Phase B 修复 P0-5：ItemList 每条 ListItem 显式带 url + name + 案例标题。
+  // 旧实现：仅有内嵌 Review，缺 url/name 字段 → Google 视为低质 ItemList，CTR 损失。
+  // 同时补 url 强制走 SITE_URL 兜底（避免 build env 没设时出现 pages.dev）。
   const reviewSchema = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
-    itemListElement: t.caseStudies.map((cs, i) => ({
-      '@type': 'ListItem',
-      position: i + 1,
-      item: {
-        '@type': 'Review',
-        author: { '@type': 'Person', name: cs.author },
-        reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-        reviewBody: cs.quote,
-        itemReviewed: {
-          '@type': 'LocalBusiness',
-          name: siteConfig.name,
-          image: siteConfig.logo,
+    name: t.h1,
+    itemListElement: t.caseStudies.map((cs, i) => {
+      // 案例标题（按 locale 选 client + industry 拼接，可读性更好）
+      const title = `${cs.industry} - ${cs.client}`;
+      return {
+        '@type': 'ListItem',
+        position: i + 1,
+        name: title,
+        url: `${SITE_URL}/${locale}/case-studies/#case-${i + 1}`,
+        item: {
+          '@type': 'Review',
+          author: { '@type': 'Person', name: cs.author },
+          reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
+          reviewBody: cs.quote,
+          itemReviewed: {
+            '@type': 'LocalBusiness',
+            name: siteConfig.name,
+            image: siteConfig.logo,
+            url: SITE_URL,
+          },
         },
-      },
-    })),
+      };
+    }),
   };
 
   return (

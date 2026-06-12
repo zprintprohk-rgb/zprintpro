@@ -2,6 +2,11 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Locale, siteConfig, generateFaqJsonLd } from '@/lib/seo';
+import {
+  generateBlogArticleJsonLd,
+  generateSpeakableJsonLd,
+  standardSpeakableSelectors,
+} from '@/lib/seo/schema-extensions';
 import { JsonLd } from '@/components/JsonLd';
 import { getBuyingGuideBySlug, getAllBuyingGuideSlugs } from '@/data/buying-guides';
 import { getClusterBySlug, getAllClusterSlugs } from '@/data/pillar-content';
@@ -566,30 +571,19 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
   const canonical = `${siteConfig.url}/${langPrefix}blog/${params.slug}/`;
   const postImage = articleImagesByLocale[locale]?.[params.slug] || articleImagesByLocale['zh-hk']?.[params.slug] || defaultArticleImage;
 
-  const articleJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'Article',
-    headline: post.title,
-    description: post.description,
-    image: `${siteConfig.url}${postImage}`,
-    datePublished: post.date,
-    dateModified: post.date,
-    articleSection: post.category,
-    author: {
-      '@type': 'Organization',
-      name: siteConfig.name,
-      url: siteConfig.url,
+  // 2026-06-10 Phase B 修复 P0-3：使用 generateBlogArticleJsonLd（author = Person 类型，E-E-A-T 关键）
+  // 旧实现：author = Organization 类型 → AI 抓取时无作者归属，信任度低。
+  const articleJsonLd = generateBlogArticleJsonLd(
+    {
+      title: post.title,
+      description: post.description,
+      image: `${siteConfig.url}${postImage}`,
+      publishedAt: post.date,
+      updatedAt: post.date,
+      url: canonical,
     },
-    publisher: {
-      '@type': 'Organization',
-      name: siteConfig.name,
-      logo: { '@type': 'ImageObject', url: siteConfig.logo },
-    },
-    mainEntityOfPage: {
-      '@type': 'WebPage',
-      '@id': canonical,
-    },
-  };
+    locale
+  );
 
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
@@ -616,6 +610,12 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
     ],
   };
 
+  // 2026-06-10 Phase B 修复 P0-3：Speakable 注入（语音 / AI 抓取）
+  const speakableJsonLd = generateSpeakableJsonLd(
+    standardSpeakableSelectors.blog.xpath,
+    standardSpeakableSelectors.blog.cssSelector
+  );
+
   const faqs = extractFaqFromHtml(post.content);
   const faqJsonLd = faqs ? generateFaqJsonLd(faqs) : null;
 
@@ -634,6 +634,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
     <main className="min-h-screen bg-gray-50 py-12">
       <JsonLd data={articleJsonLd} />
       <JsonLd data={breadcrumbJsonLd} />
+      <JsonLd data={speakableJsonLd} />
       {faqJsonLd && <JsonLd data={faqJsonLd} />}
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         <Link href={`${localePrefix}/blog/`} className="text-[#2873F5] hover:underline text-sm mb-6 inline-block">

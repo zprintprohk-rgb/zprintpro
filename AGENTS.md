@@ -1,0 +1,210 @@
+# ZprintPro（智印云）— AI 协作指南
+
+> **项目**: F:\zprintpro-nextjs\ (Next.js 印刷 SaaS)
+> **类型**: 8 locale 印刷电商 (zh-hk / en / ja)
+> **部署**: Cloudflare Pages + Airwallex 支付
+> **品牌**: 智印云 / ZprintPro (**不是** "智印港",后者是竞品必须排除)
+
+## 0. Orchestrator Discipline (编排者铁律) — Mavis 必读
+
+> **这一节是给 Mavis 编排者 (orchestrator) 角色读的。** 凡涉及 spawn worker / 派活 / 监控长任务,必先复读本节。
+>
+> **双向引用**: 全局精炼版 (auto-loaded for ALL mavis sessions) 在 `C:\Users\Administrator\.mavis\agents\mavis\agent.md` 末尾的 "Orchestrator Discipline (Mavis Global)" 章节。**本文件是 zprintpro 项目专属的完整版**(更多上下文 + 复盘细节)。
+>
+> 来源: 2026-06-10 phase B verifier 孤儿事件复盘(旧 verifier 静默 3.5h、cron 二十多次空 tick、最后撞 LLM 5h quota 才发现)。
+
+### R1. 派活前 3 问 (Pre-dispatch Triad)
+派任何新 worker (`mavis communication send --command spawn`) 前,必须查 3 个事实来源:
+1. `mavis session info <id>` — 同名任务的 worker session 是否 `status=running/started`?
+2. `mavis communication peers` — 当前活动 worker 列表里有没有同类 agent 在干同活?
+3. 共享 scratchpad + workspace 中预期输出文件 (e.g. `docs/audit-*.md`) 是否已存在且非空?
+
+三个都 NO → 允许 spawn。任一是 YES → **跳过 spawn,进入"等结果"模式 (R3)。**
+
+### R2. ACK 协议 (Acknowledgment Protocol)
+spawn worker 后,**30 秒内**必须看到以下任一信号:
+- 收到 worker 的 inbound (哪怕只是 "received" 一字)
+- `mavis session info` 显示 worker 的 `lastActiveAt` 在最近 30s 内
+- 预期输出文件出现修改时间
+
+看不到任何信号 → 视为 spawn 失败 (引擎/网络问题),允许重 spawn **一次**。第二次失败立刻 kill + 升级用户,**绝不**无限重试。
+
+### R3. 监控模式 (Watch Mode) — 替代"无限 cron 轮询"
+**进入监控模式**: worker session `status=started` 或 `running`,且最近 60s 内 `lastActiveAt` 在动。
+
+进入监控模式后:
+- **不要每分钟 ping**,不要每 10min tick "is it done?"
+- 只在 worker 的 `lastActiveAt` **冻结**超过算力阈值 (上午 20min, 下午 40min) 时,才 ping 一次
+- ping 模板: `Status check: which step? Any blocker? <one line>`
+- ping 后再过算力阈值仍无响应 → **kill worker + force-spawn replacement**,**不**重发原指令
+
+算力阈值动态化: 读取 `COMPUTE_LOAD_LEVEL` env (LOW=上午, HIGH=下午 14:00+ 或 peers 中 > 5 个 aborted),HIGH 时阈值 × 2。
+
+### R4. 幂等性协议 (Idempotency Mandate) — 写进每个 worker 的 spawn prompt
+每次 spawn worker 时,提示词首段必须 **verbatim** 包含:
+
+> BEFORE any other action, run this 3-question idempotency check:
+> (1) Does the expected output file `<path>` already exist with non-empty content?
+> (2) If yes, is its mtime within the past `<TTL>`?
+> (3) Does it cover all `<task signature>` sub-items?
+> If ALL yes → return "ALREADY DONE" to parent session and exit immediately.
+> If ANY no → proceed with normal execution.
+
+worker 自己防呆网。orchestrator 不重复 spawn,它也能自己刹住。
+
+### R5. 报告协议 (Report-back Protocol)
+worker 完成后:
+- 写完整报告到 `<path>` (走 file,**不**塞 message body)
+- 给 parent session 发一条短 ack: `<TASK NAME> done. Report: <path>. Verdict: <PASS/FAIL/BLOCKER>.`
+- **不要**在 ack 里复述报告内容 (size limit + GBK 风险)
+
+orchestrator 收到 ack 后:
+- `Read` 文件拿完整内容
+- 1 句话告诉用户结果
+- **不**重复发 ack 给 worker (避免 ping-pong)
+
+### R6. Cron 自检 (Cron Hygiene)
+任何自设的 cron 监控任务,必须包含 3 个 hard-coded 出口条件:
+- (a) **TTL 过期 → 自删** (e.g. `If Date.now() > <expiry_ms>, mavis cron delete <self>`)
+- (b) **报告落盘 → 自删** (e.g. `If docs/<file>.md exists, mavis cron delete <self>`)
+- (c) **静默阈值触达 → 升级用户**,**不**继续静默 tick
+
+缺 (a)(b)(c) 任一的 cron **不允许创建**。
+
+### Anti-Patterns (绝对禁止)
+- 看到 worker 静默就无脑再发同指令 → 重复派发,浪费算力,污染状态(本次 phase B 踩坑根因)
+- 设 cron 每 5-10min tick "is it done?" 超过 1h 还静默 → 升级用户
+- ping worker 后没回应就再 ping → 变 ping-pong,必失败
+- 在 message body 塞 ≥ 200 行报告 → size limit 切碎中文
+- 信任 worker 的"我正在做"说辞而不查 `lastActiveAt` → 假死检测失灵
+- 设 cron 但忘出口条件 → cron 永远在跑、永远在"没动静 skip",成为系统噪音
+
+---
+
+## 1. 核心定位（一句话）
+
+> 香港印刷 SaaS，为全球用户提供 30 秒 AI 报价 + 72 小时全球交付。
+
+## 2. 5 个不可妥协
+
+1. **品牌名 = 智印云 / ZprintPro**，绝不写"智印港"
+2. **8 locale 全覆盖** (zh-hk / en / ja + 5 个其他),SEO hreflang 正确
+3. **GSC 数据实时分析** (gsc_data.csv + seo-weekly-analyzer.py)
+4. **airwallex 多币种**结算,CN 用 alipay, 其他用 USD
+5. **本地开发 + Cloudflare Pages 部署**(Node.js runtime via @opennextjs/cloudflare)
+
+## 3. 项目结构（关键路径）
+
+```
+F:\zprintpro-nextjs\
+├── src/
+│   ├── app/
+│   │   └── [locale]/
+│   │       ├── page.tsx                 # 首页
+│   │       ├── category/[slug]/page.tsx # 分类页 (13 类)
+│   │       ├── product/[slug]/page.tsx  # 产品页
+│   │       ├── blog/[slug]/page.tsx     # 知识中心
+│   │       └── services/rush-printing-delivery/page.tsx
+│   └── lib/
+│       ├── pricing.ts                   # 多币种定价
+│       ├── seo.ts                       # SEO meta 生成
+│       └── airwallex.ts                 # 支付集成
+├── messages/                            # 8 locale, i18n 消息
+├── scripts/
+│   ├── seo-weekly-analyzer.py           # GSC 周报生成 (Cron 2e7ff9ec5f15, 每周一 9 点)
+│   ├── apply_patches.py                 # 从周报生成 SEO 补丁
+│   └── build_verifier.py                # 构建验证 (≥400 页面硬校验)
+├── patches/                             # SEO 补丁
+├── seo-research/                        # SEO 竞品研究
+├── docs/                                # 文档
+├── supabase/                            # 数据库迁移
+├── public/                              # 静态资源
+├── .env, .env.local, .env.example       # 环境变量
+├── wrangler.toml                        # Cloudflare 配置
+├── next.config.js
+├── package.json
+└── AGENTS.md                            # 本文件
+```
+
+## 4. 环境变量（必须）
+
+- `NEXT_PUBLIC_SUPABASE_URL`
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY`
+- `SUPABASE_SERVICE_ROLE_KEY`
+- `AIRWALLEX_API_KEY`
+- `AIRWALLEX_CLIENT_ID`
+- `NEXT_PUBLIC_CDN_URL`
+
+## 5. SEO/GEO 关键约定
+
+- **Title**: 50-60 字符,主关键词前置,品牌后置,只用一次
+- **Meta description**: 150-160 字符,含数字 + CTA
+- **H1**: 每页唯一,含主关键词
+- **Schema**: Organization / BreadcrumbList / Product / FAQPage
+- **hreflang**: zh-hant-HK / en / ja-JP / x-default=zh-hant-HK
+- **sitemaps**: zh-hk / en / ja 各一份 + sitemap-index.xml
+
+## 6. 常用命令
+
+```bash
+# 开发
+npm run dev
+
+# 构建 (本地)
+npm run build
+
+# Cloudflare 构建 + 部署
+npm run cf-deploy
+
+# SEO 周报 (本地)
+python scripts/seo-weekly-analyzer.py
+
+# 应用 SEO 补丁 (--preview 先看)
+python scripts/apply_patches.py --preview
+python scripts/apply_patches.py --apply
+
+# i18n 检查
+node scripts/check-i18n.js
+```
+
+## 7. 与 hermes 的集成约定
+
+- **配置主目录**: `C:\Users\Administrator\.hermes\` (全局)
+- **项目专属 memory**: `F:\zprintpro-nextjs\.hermes\memory\` (新建)
+- **已积累记忆**: `C:\Users\Administrator\.hermes\memories\{MEMORY.md, USER.md}` (不要覆盖)
+- **沟通语言**: 中文为主,简洁直接,指令式
+- **品牌关键词**: 智印云 / ZprintPro,**过滤 "智印港"**
+- **重要模块**: GSC 数据 / SEO 周报 / 多 locale i18n / Cloudflare 部署
+
+## 8. 7 大"绝对不要做"清单
+
+1. ❌ 不要用"智印港" / 任何竞品名
+2. ❌ 不要在 user-facing 文本里出现 GBK 乱码 (中文必须 UTF-8)
+3. ❌ 不要漏 hreflang (8 locale 必须完整)
+4. ❌ 不要让 /app/ 目录被提交 (会冲突 Cloudflare 构建)
+5. ❌ 不要把 .env 真实 key 提交 (已 .gitignore 但要小心)
+6. ❌ 不要在 GSC 数据里出现竞品词"智印印港"
+7. ❌ 不要让 SWC 解析失败 (Python open() 写文件必须 newline='\n', 避免 CRLF)
+
+## 9. 关键文件别删
+
+- `scripts/seo-weekly-analyzer.py`
+- `scripts/apply_patches.py`
+- `scripts/build_verifier.py`
+- `patches/` (所有 SEO 补丁)
+- `seo-weekly-history.json` (历史周报数据)
+- `wrangler.toml` (Cloudflare 配置)
+- `AGENTS.md` (本文件)
+
+## 10. hermes 调用模式
+
+```bash
+# 单次 query (用 DeepSeek-V4-flash)
+hermes -q "分析当前 GSC 数据,找 Top 3 关键词优化机会"
+
+# 项目级 memory 注入
+hermes --cwd "F:\zprintpro-nextjs" -q "..."
+
+# 跨项目 (zprintpro + stock-lab) 联合 query
+hermes --global-memory -q "对比 zprintpro 和 stock-lab 的术语习惯"
+```

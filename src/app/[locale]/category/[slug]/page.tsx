@@ -19,6 +19,13 @@ import {
   generateBusinessJsonLd,
   Locale
 } from '@/lib/seo';
+import {
+  generateCategoryItemListJsonLd,
+  generateHowToJsonLd,
+  generateSpeakableJsonLd,
+  getCategoryHowToSteps,
+  standardSpeakableSelectors,
+} from '@/lib/seo/schema-extensions';
 import Image from 'next/image';
 import { JsonLd } from '@/components/JsonLd';
 import { CategorySidebar } from '@/components/category/CategorySidebar';
@@ -100,17 +107,29 @@ export default function CategoryPage({
   const breadcrumbJsonLd = generateBreadcrumbJsonLd(breadcrumbItems);
 
   // Category ItemList Schema — 产品列表结构化数据
-  const itemListJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'ItemList',
-    name: categoryName,
-    itemListElement: categoryProducts.map((product, index) => ({
-      '@type': 'ListItem',
-      position: index + 1,
-      url: `${process.env.NEXT_PUBLIC_SITE_URL || 'https://zprintpro.com'}/${locale}/product/${product.slug}/`,
-      name: locale === 'zh-hk' ? product.name : locale === 'en' ? product.nameEn : product.nameJa,
-    })),
-  };
+  // 2026-06-10 Phase B 修复 P0-5：改用 schema-extensions 中的 generateCategoryItemListJsonLd，
+  // 强制 url 走 SITE_URL 兜底，name 按 locale 切换。
+  const itemListJsonLd = generateCategoryItemListJsonLd(categoryName, categoryProducts, locale);
+
+  // 2026-06-10 Phase B 修复 P0-3：主钻 4 品类分类页注入 HowTo + Speakable。
+  // 与产品页同源：让搜索/AI 知道"分类页工艺是什么"。
+  const mainDrillingCategories = ['packaging', 'paper-bags', 'books', 'calendars'];
+  const categoryHowto = mainDrillingCategories.includes(slug)
+    ? getCategoryHowToSteps(slug, locale)
+    : null;
+  const howToJsonLd = categoryHowto
+    ? generateHowToJsonLd(
+        categoryHowto.name,
+        categoryHowto.description,
+        categoryHowto.steps,
+        locale,
+        categoryHowto.totalTime
+      )
+    : null;
+  const speakableJsonLd = generateSpeakableJsonLd(
+    standardSpeakableSelectors.category.xpath,
+    standardSpeakableSelectors.category.cssSelector
+  );
 
   // Business Schema — 按地區切換 LocalBusiness / Organization
   const businessJsonLd = generateBusinessJsonLd(locale);
@@ -183,10 +202,12 @@ export default function CategoryPage({
 
   return (
     <>
-      {/* 结构化数据：面包屑 + 产品列表 + 本地商家 + FAQPage */}
+      {/* 结构化数据：面包屑 + 产品列表 + 本地商家 + FAQPage + HowTo + Speakable */}
       <JsonLd data={breadcrumbJsonLd} />
       <JsonLd data={itemListJsonLd} />
       <JsonLd data={businessJsonLd} />
+      {howToJsonLd && <JsonLd data={howToJsonLd} />}
+      <JsonLd data={speakableJsonLd} />
       {(() => {
         const faqSchema = generateFaqSchema(locale, slug);
         return faqSchema ? <JsonLd data={faqSchema} /> : null;
