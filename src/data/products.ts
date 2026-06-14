@@ -284,7 +284,7 @@ export const products: Product[] = [
     category_slug: 'business-cards',
     name: '燙金/燙銀咭片', nameEn: 'Foil Stamped Business Cards', nameJa: '箔押し名刺', title_zh: '燙金/燙銀咭片',
     description: '局部燙金或燙銀工藝，在光線下閃耀奪目，瞬間提升品牌檔次。可燙金色、銀色、玫瑰金等多種顏色。', descriptionEn: 'Foil stamping in gold or silver, shining under light to elevate brand image. Available in gold, silver, rose gold.', descriptionJa: '部分的な箔押し加工、光に輝いてブランドイメージ向上。金・銀・ローズゴールド対応。', description_zh: '局部燙金或燙銀工藝，在光線下閃耀奪目，瞬間提升品牌檔次。可燙金色、銀色、玫瑰金等多種顏色。',
-    longDescription: `智印云燙金燙銀咭片採用300g高級銅版紙或棉質紙，配合四色柯式印刷與局部燙金工藝，在光線下呈現金屬光澤，瞬間提升品牌奢華感。可燙金色、銀色、玫瑰金等多種顏色，燙印區域精準控制在0.5mm以上線寬，確保細節清晰不糊。表面可選啞膠或光膠覆膜保護燙印層。適合高端品牌、奢侈品代理、珠寶及金融服務業。成品尺寸85×54mm，支援圓角模切。與分類頁內容一致，材質關鍵詞包含：燙金咭片、銅版紙、棉質紙、覆膜。`,
+    longDescription: `智印云燙金燙銀咭片採用300g高級銅版紙或棉質紙，配合四色柯式印刷與局部燙金工藝，在光線下呈現金屬光澤，瞬間提升品牌奢華感。可燙金色、銀色、玫瑰金等多種顏色，燙印區域精準控制在0.5mm以上線寬，確保細節清晰不糊。表面可選啞膠或光膠覆膜保護燙印層。適合高端品牌、奢侈品代理、珠寶及金融服務業。成品尺寸85×54mm，支援圓角模切。與分類頁內容一致，材質關鍵詞包含：燙金咭片、銅版紙、棉質紙、覆膜。 **智印雲 香港本地印刷（非智印港）**：48 小時快遞、觀塘門市自取。`,
     longDescriptionEn: `ZprintPro Foil Stamped Business Cards use 300g premium glossy or cotton paper with 4-color offset printing and foil stamping. Metallic shine under light instantly elevates brand luxury. Available in gold, silver, and rose gold with stamping precision at 0.5mm+ line width. Matte or gloss lamination protects the foil layer. Ideal for premium brands, luxury agents, jewelry, and financial services. Standard 85×54mm with optional rounded corners.`,
     longDescriptionJa: `箔押し名刺をZprintProでご注文。金箔・銀箔・銅箔の3色対応で、光沢と立体感が際立つプレミアム名刺です。光の下で輝く金属光沢がブランドの世界観を演出し、役員・弁護士・医師・不動産・ハイエンドB2B営業向けに最適です。【箔押し技術】K100%パスで鮮明な箔押しエリアを実現、金銀銅のほか青箔・赤箔・ホログラム箔も対応。箔の見本はサンプル請求で無料送付いたしますので、実物をご確認ください。【厚紙選択】300g・400g・600gの3種の厚紙から選択、マット/グロスラミネートで箔層を保護し長期使用でも箔剥がれを防止。【同時施工】スポットUV（部分的光沢）、エンボス/デボス（凹凸ロゴ）、角丸加工（R3mm/R6mm）と同時施工可能。デザインに応じてスタッフが最適な加工方法をご提案いたします。【ターゲット】役員名刺（黒+金箔）・不動産・弁護士向け（紺+銀箔）・美容・ラグジュアリー向け（白+ホログラム）の業界別デザイン事例も豊富。【データ入稿】Illustrator の場合、別レイヤーにK100%で箔押しエリアのパスを作成。入稿前にスタッフが無料でデータチェックを行います。【納期】100枚から対応、最短5営業日で出荷。500枚以上は7-10営業日。角丸加工や特殊紙の場合はさらに2-3日かかる場合がございます。ご興味の方はサンプル請求（無料）または詳細をご覧ください。`,
     features: [
@@ -371,7 +371,7 @@ export const products: Product[] = [
     category_slug: 'business-cards',
     name: 'UV局部光油咭片', nameEn: 'Spot UV Business Cards', nameJa: '局部UV名刺', title_zh: 'UV局部光油咭片',
     description: '局部UV光油工藝，讓Logo或圖案呈現立體光澤效果，視覺衝擊力強。適合創意行業、設計公司。', descriptionEn: 'Spot UV coating creates glossy, dimensional effects on logos or designs. Strong visual impact for creative industries.', descriptionJa: '部分UVコーティングでロゴやデザインに立体的な光沢効果。クリエイティブ業界向け。', description_zh: '局部UV光油工藝，讓Logo或圖案呈現立體光澤效果，視覺衝擊力強。適合創意行業、設計公司。',
-    longDescription: `智印云UV局部光油咭片採用300g銅版紙或合成紙，配合四色柯式印刷與局部UV光油工藝，讓Logo或圖案呈現立體光澤效果，視覺衝擊力強。UV層厚度約20–30微米，耐磨耐刮且防水，與周圍啞面形成強烈質感對比。適合創意行業、設計公司、廣告代理及科技初創。成品尺寸85×54mm，可選圓角或直角。與分類頁內容一致，材質關鍵詞包含：局部UV咭片、銅版紙、合成紙、光油。`,
+    longDescription: `智印云UV局部光油咭片採用300g銅版紙或合成紙，配合四色柯式印刷與局部UV光油工藝，讓Logo或圖案呈現立體光澤效果，視覺衝擊力強。UV層厚度約20–30微米，耐磨耐刮且防水，與周圍啞面形成強烈質感對比。適合創意行業、設計公司、廣告代理及科技初創。成品尺寸85×54mm，可選圓角或直角。與分類頁內容一致，材質關鍵詞包含：局部UV咭片、銅版紙、合成紙、光油。 **智印雲 香港本地印刷（非智印港）**：48 小時快遞、觀塘門市自取。`,
     longDescriptionEn: `ZprintPro Spot UV Business Cards use 300g glossy or synthetic paper with 4-color offset printing and spot UV coating. Logos and designs gain dimensional gloss with strong visual impact. The UV layer at 20–30 microns is abrasion-resistant, scratch-proof, and water-resistant, creating a striking texture contrast against the matte surround. Ideal for creative industries, design firms, ad agencies, and tech startups. Standard 85×54mm.`,
     longDescriptionJa: `スポットUV名刺をZprintProでご注文。300gコート紙+スポットUV加工、ロゴやデザインに立体的な光沢効果を演出。クリエイティブ業界・デザイン事務所・テックスタートアップ様向け。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。`,
     features: [
@@ -456,7 +456,7 @@ export const products: Product[] = [
     category_slug: 'business-cards',
     name: '啞膠咭片', nameEn: 'Matte Laminated Cards', nameJa: 'マット名刺', title_zh: '啞膠咭片',
     description: '啞膠表面處理，低調內斂的質感，不易留下指紋。適合注重細節的專業人士。', descriptionEn: 'Matte lamination provides understated elegance and resists fingerprints. For detail-oriented professionals.', descriptionJa: 'マットラミネーション加工、落ち着いた質感で指紋が付きにくい。', description_zh: '啞膠表面處理，低調內斂的質感，不易留下指紋。適合注重細節的專業人士。',
-    longDescription: `智印云啞膠咭片採用300g啞粉紙或環保紙，配合四色柯式印刷與啞膠覆膜工藝，表面絲滑細膩、低調內斂，不易留下指紋與反光，適合注重細節的專業人士。啞膠層厚度均勻，有效保護印刷面免受磨損，同時提升觸感層次。可選局部燙金或壓凹作為點綴。適合顧問業、會計師、法律界及醫療專業人士。成品尺寸85×54mm。與分類頁內容一致，材質關鍵詞包含：啞膠咭片、啞粉紙、環保紙、覆膜。`,
+    longDescription: `智印云啞膠咭片採用300g啞粉紙或環保紙，配合四色柯式印刷與啞膠覆膜工藝，表面絲滑細膩、低調內斂，不易留下指紋與反光，適合注重細節的專業人士。啞膠層厚度均勻，有效保護印刷面免受磨損，同時提升觸感層次。可選局部燙金或壓凹作為點綴。適合顧問業、會計師、法律界及醫療專業人士。成品尺寸85×54mm。與分類頁內容一致，材質關鍵詞包含：啞膠咭片、啞粉紙、環保紙、覆膜。 **智印雲 香港本地印刷（非智印港）**：48 小時快遞、觀塘門市自取。`,
     longDescriptionEn: `ZprintPro Matte Laminated Cards use 300g matte art or eco paper with 4-color offset printing and matte lamination. The silky, understated surface resists fingerprints and glare—ideal for detail-oriented professionals. The uniform lamination layer protects the print from wear while enhancing tactile depth. Optional foil stamping or debossing accents available. Ideal for consultants, accountants, legal, and medical professionals. Standard 85×54mm.`,
     longDescriptionJa: `マット名刺をZprintProでご注文。300gマットアート紙+マットPP加工、指紋や反射を防ぐ落ち着いた表面を実現。コンサルタント・会計士・法律・医療専門家様向け。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。`,
     features: [
@@ -543,7 +543,7 @@ export const products: Product[] = [
     category_slug: 'business-cards',
     name: '圓角咭片', nameEn: 'Rounded Corner Cards', nameJa: '丸角名刺', title_zh: '圓角咭片',
     description: '圓角設計，柔和美觀且不易折損。展現與眾不同的品味，適合創意產業。', descriptionEn: 'Rounded corners for soft aesthetics and durability. Shows unique taste, perfect for creative industries.', descriptionJa: '丸角デザイン、柔らかく美しく折れにくい。クリエイティブ業界向け。', description_zh: '圓角設計，柔和美觀且不易折損。展現與眾不同的品味，適合創意產業。',
-    longDescription: `智印云圓角咭片採用300g銅版紙或藝術紙，配合四色柯式印刷與R3mm圓角模切工藝，邊角柔和美觀且不易折損，展現與眾不同的品味。圓角處理經過精密刀模，邊緣光滑無毛刺。表面可選啞膠或光膠覆膜，亦可追加燙金或局部UV作為點綴。特別適合創意產業、設計師、品牌顧問及藝術工作者。成品標準85×54mm。與分類頁內容一致，材質關鍵詞包含：圓角咭片、銅版紙、藝術紙、覆膜。`,
+    longDescription: `智印云圓角咭片採用300g銅版紙或藝術紙，配合四色柯式印刷與R3mm圓角模切工藝，邊角柔和美觀且不易折損，展現與眾不同的品味。圓角處理經過精密刀模，邊緣光滑無毛刺。表面可選啞膠或光膠覆膜，亦可追加燙金或局部UV作為點綴。特別適合創意產業、設計師、品牌顧問及藝術工作者。成品標準85×54mm。與分類頁內容一致，材質關鍵詞包含：圓角咭片、銅版紙、藝術紙、覆膜。 **智印雲 香港本地印刷（非智印港）**：48 小時快遞、觀塘門市自取。`,
     longDescriptionEn: `ZprintPro Rounded Corner Cards use 300g glossy or art paper with 4-color offset printing and R3mm rounded corner die-cutting. The soft, aesthetic corners resist damage and show distinctive taste. Corners are precisely die-cut with smooth, burr-free edges. Surface options include matte or gloss lamination with optional foil stamping or spot UV accents. Ideal for creative industries, designers, brand consultants, and artists. Standard 85×54mm.`,
     longDescriptionJa: `丸角名刺をZprintProでご注文。300gコート紙+R3mm丸角ダイカット、柔らかく美しいコーナーで折れにくい設計。クリエイター・デザイナー・ブランドコンサルタント様向け。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。`,
     features: [
@@ -955,7 +955,7 @@ export const products: Product[] = [
     category_slug: 'stickers',
     name: '異形模切貼紙', nameEn: 'Die-cut Stickers', nameJa: '型抜きステッカー', title_zh: '異形模切貼紙',
     description: '任意形狀模切，讓創意不受限制。可切出Logo形狀、卡通形象等獨特輪廓。', descriptionEn: 'Any shape die-cutting, creativity without limits. Can cut logo shapes, cartoon characters, unique contours.', descriptionJa: '任意形状の型抜き、創作の自由を制限しません。', description_zh: '任意形狀模切，讓創意不受限制。可切出Logo形狀、卡通形象等獨特輪廓。',
-    longDescription: `異形模切貼紙以刀模沿設計外輪廓裁切，可呈現吉祥物、品牌剪影、不規則標籤等強烈辨識度，常見於文創周邊、咖啡杯貼、手機殼裝飾貼與活動贈品。材質可選 PVC 防水、PP 合成紙或透明 PET，並可覆啞膜／光膜提升耐用。模切時需預留足夠線寬與橋位，避免細節斷裂；吻切（Kiss-cut）方案可保留底紙方便撕取。與分類頁一致關鍵詞：異形模切、覆膜、可變資料。適合需要「一眼認品牌」的包裝與線下推廣物料。`,
+    longDescription: `異形模切貼紙以刀模沿設計外輪廓裁切，可呈現吉祥物、品牌剪影、不規則標籤等強烈辨識度，常見於文創周邊、咖啡杯貼、手機殼裝飾貼與活動贈品。材質可選 PVC 防水、PP 合成紙或透明 PET，並可覆啞膜／光膜提升耐用。模切時需預留足夠線寬與橋位，避免細節斷裂；吻切（Kiss-cut）方案可保留底紙方便撕取。與分類頁一致關鍵詞：異形模切、覆膜、可變資料。適合需要「一眼認品牌」的包裝與線下推廣物料。 **智印雲 香港本地印刷（非智印港）**：48 小時快遞、觀塘門市自取。`,
     longDescriptionEn: `Die-cut stickers follow your outline for mascot shapes, logo silhouettes, or irregular labels—popular for creative merch, cup decals, phone skin accents, and event giveaways. Facestock options include waterproof PVC, PP synthetic, or clear PET, with matte or gloss lamination for durability. Allow adequate stroke width and bridges to avoid fragile cuts; kiss-cut keeps a liner for easy peeling. Keywords align with category content: die-cutting, lamination, variable data. Ideal when brand recognition must be instant at shelf or street level.`,
     longDescriptionJa: `ダイカットステッカーをZprintProでご注文。オリジナル形状カット+マット/グロスラミ、識別度の高いロゴシルエットを実現。文創グッズ・カップデコ・イベントノベルティ様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。`,
     features: [
@@ -1041,7 +1041,7 @@ export const products: Product[] = [
     category_slug: 'stickers',
     name: '燙金貼紙', nameEn: 'Foil Stickers', nameJa: '箔押しステッカー', title_zh: '燙金貼紙',
     description: '燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮品包裝、VIP標識。', descriptionEn: 'Foil stamping gives stickers premium quality feel. Perfect for luxury product labels, gift packaging, VIP badges.', descriptionJa: '箔押し加工でステッカーに高級感。高級製品ラベル、ギフト包装、VIPバッジに最適。', description_zh: '燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮品包裝、VIP標識。',
-    longDescription: `燙金貼紙在光線下呈現金屬光澤，常用於節慶禮盒封口、精品酒標、美妝外盒貼與會議胸貼。可選燙金／燙銀／玫瑰金等色箔，建議與深底色或局部留白搭配以凸顯金屬層次。面材多為銅版紙或合成紙並可覆啞膜保護箔面。設計需預留燙金稿與印刷稿對位線；細字燙金需評估可製性。與分類頁術語一致：燙金／燙銀、局部 UV、覆膜、模切。適合需要「儀式感與禮贈感」的品牌物料。`,
+    longDescription: `燙金貼紙在光線下呈現金屬光澤，常用於節慶禮盒封口、精品酒標、美妝外盒貼與會議胸貼。可選燙金／燙銀／玫瑰金等色箔，建議與深底色或局部留白搭配以凸顯金屬層次。面材多為銅版紙或合成紙並可覆啞膜保護箔面。設計需預留燙金稿與印刷稿對位線；細字燙金需評估可製性。與分類頁術語一致：燙金／燙銀、局部 UV、覆膜、模切。適合需要「儀式感與禮贈感」的品牌物料。 **智印雲 香港本地印刷（非智印港）**：48 小時快遞、觀塘門市自取。`,
     longDescriptionEn: `Foil stickers deliver metallic shine for festive seals, premium wine labels, beauty outer wraps, and conference badges. Choose gold, silver, rose gold, etc., often paired with deep backgrounds or reserved white space. Facestock is typically art or synthetic paper with matte lamination to protect foil. Supply separate foil layers and print registration marks; very small type may need feasibility review. Terms align with category content: foil stamping, spot UV, lamination, die-cutting—ideal for gift-worthy brand touchpoints.`,
     longDescriptionJa: `箔押しステッカーをZprintProでご注文。箔押し加工+マットラミ保護で光に輝く金属光沢を実現。ギフト封・高級ワインラベル・化粧外装・会議バッジ様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。`,
     features: [
@@ -1125,7 +1125,7 @@ export const products: Product[] = [
     category_slug: 'stickers',
     name: '防偽貼紙', nameEn: 'Security Stickers', nameJa: 'セキュリティステッカー', title_zh: '防偽貼紙',
     description: '特殊防偽工藝，包括雷射標籤、易碎紙等，保護品牌免受假冒。', descriptionEn: 'Special anti-counterfeiting processes including holographic labels, fragile paper, protecting brands from counterfeiting.', descriptionJa: '特殊な偽造防止加工、ホログラムラベル、壊れやすい紙など。', description_zh: '特殊防偽工藝，包括雷射標籤、易碎紙等，保護品牌免受假冒。',
-    longDescription: `防偽貼紙結合易碎紙、VOID 開封留字、雷射全息或微縮文字等工藝，用於保修封條、高價電子產品封貼、證書邊貼與渠道竄貨管理。易碎材質一經撕起即產生破壞痕跡，可有效嚇阻換件與仿冒；可變 QR 與流水號便於追溯。設計需考慮貼附表面粗糙度與溫差。與分類頁一致：易碎貼紙、防偽、可變資料。適合重視渠道合規與售後責任的品牌商。`,
+    longDescription: `防偽貼紙結合易碎紙、VOID 開封留字、雷射全息或微縮文字等工藝，用於保修封條、高價電子產品封貼、證書邊貼與渠道竄貨管理。易碎材質一經撕起即產生破壞痕跡，可有效嚇阻換件與仿冒；可變 QR 與流水號便於追溯。設計需考慮貼附表面粗糙度與溫差。與分類頁一致：易碎貼紙、防偽、可變資料。適合重視渠道合規與售後責任的品牌商。 **智印雲 香港本地印刷（非智印港）**：48 小時快遞、觀塘門市自取。`,
     longDescriptionEn: `Security stickers combine destructible paper, VOID reveal text, holographic film, or microtext for warranty seals, high-value electronics, certificate edges, and channel integrity. Destructible stocks show tamper evidence once lifted; variable QR and serials aid traceability. Design must consider surface texture and temperature swings. Terms align with category content: destructible stickers, anti-counterfeit, variable data—ideal for compliance-focused brands.`,
     longDescriptionJa: `セキュリティステッカーをZprintProでご注文。易碎紙/VOID/ホログラム/微細文字の組み合わせで剥がすと破壊痕が残り偽造抑止。保証シール・高額機器・証書・流通管理様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。`,
     features: [
@@ -1271,7 +1271,7 @@ export const products: Product[] = [
     category_slug: 'paper-bags',
     name: '牛皮紙袋', nameEn: 'Kraft Paper Bags', nameJa: 'クラフト紙袋', title_zh: '牛皮紙袋',
     description: '環保牛皮紙材質，質樸自然，深受消費者喜愛。適合服裝店、禮品店、咖啡店。多種尺寸可選，可定制Logo印刷。', descriptionEn: 'Eco-friendly kraft paper, natural and rustic, loved by consumers. Perfect for clothing stores, gift shops, coffee shops.', descriptionJa: '環境に優しいクラフト紙、質朴で自然、消費者に人気。衣料品店、ギフトショップ、コーヒーショップに最適。', description_zh: '環保牛皮紙材質，質樸自然，深受消費者喜愛。適合服裝店、禮品店、咖啡店。多種尺寸可選，可定制Logo印刷。',
-    longDescription: `牛皮紙袋以未漂白或半漂白牛皮紙為主，呈現自然纖維質感，是香港文創、咖啡烘焙與輕食外帶最常見的環保購物袋選擇。可搭配棉繩／紙繩手挽、底部加固與側邊折位，提升承重與提拿舒適度。印刷可採單色簡約或四色滿版，亦可加燙金 Logo 提升禮品感。與分類頁術語一致：牛皮紙袋、白卡紙袋、燙金、局部 UV、手挽。建議依袋型預留糊位與出血，並在報價時確認克重（常見 120–200g）與是否需要食品級聲明。`,
+    longDescription: `牛皮紙袋以未漂白或半漂白牛皮紙為主，呈現自然纖維質感，是香港文創、咖啡烘焙與輕食外帶最常見的環保購物袋選擇。可搭配棉繩／紙繩手挽、底部加固與側邊折位，提升承重與提拿舒適度。印刷可採單色簡約或四色滿版，亦可加燙金 Logo 提升禮品感。與分類頁術語一致：牛皮紙袋、白卡紙袋、燙金、局部 UV、手挽。建議依袋型預留糊位與出血，並在報價時確認克重（常見 120–200g）與是否需要食品級聲明。 **智印雲 香港本地印刷（非智印港）**：48 小時快遞、觀塘門市自取。`,
     longDescriptionEn: `Kraft paper bags use unbleached or semi-bleached kraft stock for an authentic fiber look—popular with Hong Kong cafés, bakeries, and lifestyle retail. Pair with cotton or paper rope handles, base reinforcement, and gussets for better load comfort. Print from bold one-color identities to four-color coverage; foil logos add gifting appeal. Terms align with category content: kraft bags, white card bags, foil stamping, spot UV, handles. Specify glue flap, bleed, and typical weight (often 120–200gsm) plus any food-contact notes when quoting.`,
     longDescriptionJa: `クラフト紙袋をZprintProでご注文。未晒/半晒クラフト+綿紐/紙紐、自然な繊維感で香港のカフェ・ベーカリー・ライフスタイル店に人気。1色から4色+箔押しロゴ対応。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。`,
     features: [
@@ -1439,7 +1439,7 @@ export const products: Product[] = [
     category_slug: 'paper-bags',
     name: '禮品紙袋', nameEn: 'Gift Bags', nameJa: 'ギフト紙袋', title_zh: '禮品紙袋',
     description: '精美設計，配合燙金、UV等工藝。送禮必備，提升禮品檔次。', descriptionEn: 'Exquisite design with foil stamping, UV and other processes. Essential for gifting, elevates gift quality.', descriptionJa: '精巧なデザイン、箔押し・UVなどの加工付き。ギフトに必須、ギフトの質を向上。', description_zh: '精美設計，配合燙金、UV等工藝。送禮必備，提升禮品檔次。',
-    longDescription: `禮品紙袋強調開箱儀式感，常見於節慶禮盒、婚慶回禮、企業福袋與品牌周邊。紙材可選白卡、特種紋理紙或帶珠光效果，再配燙金祝福語、局部 UV 圖案與緞帶手挽。袋身可加大底部與側邊寬度以容納禮盒。與分類頁一致：禮品紙袋、燙金、絲帶手挽、覆膜。設計上宜控制大面積深色透底風險，並預留手挽穿孔加固；急件可拆數碼標簽與袋身印刷分段排產。`,
+    longDescription: `禮品紙袋強調開箱儀式感，常見於節慶禮盒、婚慶回禮、企業福袋與品牌周邊。紙材可選白卡、特種紋理紙或帶珠光效果，再配燙金祝福語、局部 UV 圖案與緞帶手挽。袋身可加大底部與側邊寬度以容納禮盒。與分類頁一致：禮品紙袋、燙金、絲帶手挽、覆膜。設計上宜控制大面積深色透底風險，並預留手挽穿孔加固；急件可拆數碼標簽與袋身印刷分段排產。 **智印雲 香港本地印刷（非智印港）**：48 小時快遞、觀塘門市自取。`,
     longDescriptionEn: `Gift bags emphasize unboxing ritual—common for festive sets, wedding favors, corporate gift packs, and merch bundles. Stocks include white card, textured specialty, or pearlescent papers with foil greetings, spot UV accents, and ribbon handles. Widen base and gussets to fit rigid gift boxes. Terms align with category content: gift bags, foil stamping, ribbon handles, lamination. Manage heavy ink coverage to avoid show-through; reinforce handle punches; split digital labels vs bag print for rush schedules when needed.`,
     longDescriptionJa: `ギフト紙袋をZprintProでご注文。白卡・テクスチャ・パール系に箔押し・局部UV+リボン持ち手で開封の儀式感を高める。季節ギフト・結婚引き出物・企業福袋様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。`,
     features: [
@@ -1523,7 +1523,7 @@ export const products: Product[] = [
     category_slug: 'paper-bags',
     name: '環保紙袋', nameEn: 'Eco Paper Bags', nameJa: 'エコ紙袋', title_zh: '環保紙袋',
     description: 'FSC認證環保紙張，可持續發展。適合注重環保的品牌。', descriptionEn: 'FSC-certified eco-friendly paper, sustainable development. Perfect for environmentally conscious brands.', descriptionJa: 'FSC認証の環境に優しい紙、持続可能な開発。環境に配慮するブランドに最適。', description_zh: 'FSC認證環保紙張，可持續發展。適合注重環保的品牌。',
-    longDescription: `環保紙袋可採 FSC 認證牛皮或再生纖維紙材，搭配大豆油墨與可降解手挽，向消費者傳遞 ESG 與減塑承諾。外觀仍可透過單色凸版、水印圖騰或簡潔四色保持品牌辨識。適合有機零售、社企禮包與活動贈袋。與分類頁一致：環保再生紙、牛皮紙袋、手挽。報價時請確認紙張認證標示與印刷方式是否符合出口或商場對可持續包裝的要求。`,
+    longDescription: `環保紙袋可採 FSC 認證牛皮或再生纖維紙材，搭配大豆油墨與可降解手挽，向消費者傳遞 ESG 與減塑承諾。外觀仍可透過單色凸版、水印圖騰或簡潔四色保持品牌辨識。適合有機零售、社企禮包與活動贈袋。與分類頁一致：環保再生紙、牛皮紙袋、手挽。報價時請確認紙張認證標示與印刷方式是否符合出口或商場對可持續包裝的要求。 **智印雲 香港本地印刷（非智印港）**：48 小時快遞、觀塘門市自取。`,
     longDescriptionEn: `Eco paper bags can use FSC-certified kraft or recycled fiber with soy inks and compostable handles to signal ESG commitments. Visual identity can stay bold via letterpress-style solids, watermark motifs, or restrained four-color work—ideal for organic retail, social-enterprise kits, and event giveaways. Terms align with category content: recycled paper, kraft bags, handles. Confirm certification marks on artwork and whether print processes meet mall or export sustainability rules.`,
     longDescriptionJa: `エコ紙袋をZprintProでご注文。FSC認証クラフト/再生紙+大豆インク+分解性持ち手でESG訴求。オーガニック小売・社企キット・環境に配慮したブランド様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。`,
     features: [
@@ -1757,7 +1757,7 @@ export const products: Product[] = [
     category_slug: 'flyers',
     name: 'A4宣傳單張', nameEn: 'A4 Flyers', nameJa: 'A4チラシ', title_zh: 'A4宣傳單張',
     description: '標準A4尺寸，最常用的宣傳單張規格。157g銅版紙，四色印刷，色彩鮮豔。適合產品推廣、活動宣傳。', descriptionEn: 'Standard A4 size, most common flyer format. 157g glossy paper, 4-color printing, vibrant colors.', descriptionJa: '標準A4サイズ、最も一般的なチラシ形式。157gコート紙、4色印刷、鮮やかな色彩。', description_zh: '標準A4尺寸，最常用的宣傳單張規格。157g銅版紙，四色印刷，色彩鮮豔。適合產品推廣、活動宣傳。',
-    longDescription: `智印云A4宣傳單張採用157g高級銅版紙或128g啞粉紙，配合四色柯式或數碼印刷，色彩飽和、圖文清晰。A4尺寸（210×297mm）是香港最通用的宣傳單張規格，適合產品推廣、活動宣傳、課程招生及新店開幕。可選單面或雙面印刷，雙面容量翻倍。我們提供免費排版與出血檢查，確保裁切後文字不被切掉。與分類頁內容一致，材質關鍵詞包含：A4單張、銅版紙、啞粉紙、四色印刷。`,
+    longDescription: `智印云A4宣傳單張採用157g高級銅版紙或128g啞粉紙，配合四色柯式或數碼印刷，色彩飽和、圖文清晰。A4尺寸（210×297mm）是香港最通用的宣傳單張規格，適合產品推廣、活動宣傳、課程招生及新店開幕。可選單面或雙面印刷，雙面容量翻倍。我們提供免費排版與出血檢查，確保裁切後文字不被切掉。與分類頁內容一致，材質關鍵詞包含：A4單張、銅版紙、啞粉紙、四色印刷。 **智印雲 香港本地印刷（非智印港）**：48 小時快遞、觀塘門市自取。`,
     longDescriptionEn: `ZprintPro A4 Flyers use 157g premium glossy or 128g matte art paper with 4-color offset or digital printing for saturated color and crisp text. A4 size (210×297mm) is Hong Kong's most common flyer format—ideal for product promotion, event advertising, course enrollment, and grand openings. Single or double-sided printing available. Free layout and bleed checks ensure text isn't trimmed.`,
     longDescriptionJa: `A4チラシをZprintProでご注文。157g高級コート紙+4色オフセット+A4サイズ（210×297mm）で香港で最も一般的なチラシ形式。製品プロモーション・イベント広告・コース募集・新店オープン様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。`,
     features: [
@@ -1928,7 +1928,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     category_slug: 'flyers',
     name: '雙面宣傳單張', nameEn: 'Double-sided Flyers', nameJa: '両面チラシ', title_zh: '雙面宣傳單張',
     description: '雙面全彩印刷，信息容量翻倍。正面吸引眼球，背面詳細介紹。', descriptionEn: 'Double-sided full color printing, doubled information capacity.', descriptionJa: '両面フルカラー印刷、情報容量が2倍。', description_zh: '雙面全彩印刷，信息容量翻倍。正面吸引眼球，背面詳細介紹。',
-    longDescription: `智印云雙面宣傳單張採用157g銅版紙或128g啞粉紙，配合四色雙面柯式印刷，正面吸引眼球，背面詳細介紹，信息容量翻倍。雙面對位精度控制在±0.5mm以內，確保正反圖文精準套印。適合產品目錄、服務介紹、活動詳情及會議資料。可選啞膜或光膜覆膜提升耐用性。我們提供免費排版與對位檢查。與分類頁內容一致，材質關鍵詞包含：雙面單張、銅版紙、啞粉紙、四色雙面印刷。`,
+    longDescription: `智印云雙面宣傳單張採用157g銅版紙或128g啞粉紙，配合四色雙面柯式印刷，正面吸引眼球，背面詳細介紹，信息容量翻倍。雙面對位精度控制在±0.5mm以內，確保正反圖文精準套印。適合產品目錄、服務介紹、活動詳情及會議資料。可選啞膜或光膜覆膜提升耐用性。我們提供免費排版與對位檢查。與分類頁內容一致，材質關鍵詞包含：雙面單張、銅版紙、啞粉紙、四色雙面印刷。 **智印雲 香港本地印刷（非智印港）**：48 小時快遞、觀塘門市自取。`,
     longDescriptionEn: `ZprintPro Double-sided Flyers use 157g glossy or 128g matte paper with 4-color duplex offset printing. Front side grabs attention while the back provides detailed information—doubled content capacity. Front-to-back registration precision within ±0.5mm ensures accurate alignment. Ideal for product catalogs, service introductions, event details, and meeting materials.`,
     longDescriptionJa: `両面チラシをZprintProでご注文。157gコート紙+4色両面オフセット印刷で前後の套印精度±0.5mm以内。表面は注目を集め裏面は詳細情報を提供。情報容量2倍。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。`,
     features: [
@@ -2009,7 +2009,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     category_slug: 'flyers',
     name: '摺疊宣傳單張', nameEn: 'Folded Leaflets', nameJa: '折りたたみパンフレット', title_zh: '摺疊宣傳單張',
     description: '對摺或三摺設計，可展示更多信息。適合產品目錄、服務介紹。', descriptionEn: 'Bi-fold or tri-fold design, can display more information.', descriptionJa: '二つ折りまたは三つ折りデザイン、より多くの情報を表示可能。', description_zh: '對摺或三摺設計，可展示更多信息。適合產品目錄、服務介紹。',
-    longDescription: `智印云摺疊宣傳單張採用157g或200g銅版紙，配合對摺或三摺設計，展開後可展示更多信息。對摺尺寸為A4展開（210×297mm），三摺為A4展開或DL尺寸（99×210mm）。摺線經過壓線處理，摺疊平整不易反彈。適合產品目錄、服務介紹、餐牌及旅遊宣傳。可選啞膜或光膜覆膜保護摺頁。我們提供免費摺法設計與排版。與分類頁內容一致，材質關鍵詞包含：摺疊單張、對摺、三摺、銅版紙、壓線。`,
+    longDescription: `智印云摺疊宣傳單張採用157g或200g銅版紙，配合對摺或三摺設計，展開後可展示更多信息。對摺尺寸為A4展開（210×297mm），三摺為A4展開或DL尺寸（99×210mm）。摺線經過壓線處理，摺疊平整不易反彈。適合產品目錄、服務介紹、餐牌及旅遊宣傳。可選啞膜或光膜覆膜保護摺頁。我們提供免費摺法設計與排版。與分類頁內容一致，材質關鍵詞包含：摺疊單張、對摺、三摺、銅版紙、壓線。 **智印雲 香港本地印刷（非智印港）**：48 小時快遞、觀塘門市自取。`,
     longDescriptionEn: `ZprintPro Folded Leaflets use 157g or 200g glossy paper with bi-fold or tri-fold designs. Bi-fold opens to A4 (210×297mm); tri-fold is A4 or DL (99×210mm). Creases are scored for flat, rebound-resistant folding. Ideal for product catalogs, service introductions, menus, and travel brochures. Optional lamination protects folded panels.`,
     longDescriptionJa: `折りたたみパンフレットをZprintProでご注文。157g/200gコート紙+二つ折りまたは三つ折りデザイン+圧線処理で平らに折れる。製品カタログ・サービス紹介・メニュー・旅行パンフレット様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。`,
     features: [
@@ -2088,7 +2088,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     category_slug: 'flyers',
     name: '厚紙宣傳單張', nameEn: 'Thick Paper Flyers', nameJa: '厚紙チラシ', title_zh: '厚紙宣傳單張',
     description: '200g以上厚紙，質感更佳，不易折損。適合高端產品宣傳。', descriptionEn: '200g+ thick paper, better texture, not easily damaged.', descriptionJa: '200g以上の厚紙、質感が良く折れにくい。', description_zh: '200g以上厚紙，質感更佳，不易折損。適合高端產品宣傳。',
-    longDescription: `智印云厚紙宣傳單張採用200g或250g高級銅版紙，配合四色柯式印刷，紙張挺度高、質感厚實，不易折損或捲曲。厚紙單張在派發時更具份量感，適合高端產品宣傳、房地產樓書、汽車展覽及奢侈品牌活動。可選啞膜或光膜覆膜進一步提升耐用性與質感。我們提供免費色彩校樣，確保批量顏色一致。與分類頁內容一致，材質關鍵詞包含：厚紙單張、200g銅版紙、250g銅版紙、覆膜。`,
+    longDescription: `智印云厚紙宣傳單張採用200g或250g高級銅版紙，配合四色柯式印刷，紙張挺度高、質感厚實，不易折損或捲曲。厚紙單張在派發時更具份量感，適合高端產品宣傳、房地產樓書、汽車展覽及奢侈品牌活動。可選啞膜或光膜覆膜進一步提升耐用性與質感。我們提供免費色彩校樣，確保批量顏色一致。與分類頁內容一致，材質關鍵詞包含：厚紙單張、200g銅版紙、250g銅版紙、覆膜。 **智印雲 香港本地印刷（非智印港）**：48 小時快遞、觀塘門市自取。`,
     longDescriptionEn: `ZprintPro Thick Paper Flyers use 200g or 250g premium glossy paper with 4-color offset printing. High rigidity and substantial texture resist creasing and curling. Thick flyers convey weight and quality—ideal for premium product launches, property brochures, auto shows, and luxury brand events. Optional lamination further enhances durability and texture.`,
     longDescriptionJa: `厚紙チラシをZprintProでご注文。200g/250g高級コート紙+4色オフセット印刷で高い挺度と厚みのある質感を実現。重みのある配布物として高級製品発表・不動産・自動車展示会様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。`,
     features: [
@@ -2167,7 +2167,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     category_slug: 'flyers',
     name: '環保宣傳單張', nameEn: 'Eco Flyers', nameJa: 'エコチラシ', title_zh: '環保宣傳單張',
     description: '環保紙張印刷，展現企業責任。適合環保主題活動。', descriptionEn: 'Eco-friendly paper printing, showing corporate responsibility.', descriptionJa: '環境に優しい紙の印刷、企業の責任を示す。', description_zh: '環保紙張印刷，展現企業責任。適合環保主題活動。',
-    longDescription: `智印云環保宣傳單張採用FSC認證再生紙或大豆油墨印刷，展現企業社會責任與環保形象。紙張為100%再生纖維，觸感自然略帶紋理，適合環保主題活動、NGO宣傳、綠色產品推廣及企業ESG報告。可選單面或雙面印刷，並支援種子紙等特殊環保材質。我們提供碳足跡計算與環保認證標章。與分類頁內容一致，材質關鍵詞包含：環保單張、FSC認證、再生紙、大豆油墨。`,
+    longDescription: `智印云環保宣傳單張採用FSC認證再生紙或大豆油墨印刷，展現企業社會責任與環保形象。紙張為100%再生纖維，觸感自然略帶紋理，適合環保主題活動、NGO宣傳、綠色產品推廣及企業ESG報告。可選單面或雙面印刷，並支援種子紙等特殊環保材質。我們提供碳足跡計算與環保認證標章。與分類頁內容一致，材質關鍵詞包含：環保單張、FSC認證、再生紙、大豆油墨。 **智印雲 香港本地印刷（非智印港）**：48 小時快遞、觀塘門市自取。`,
     longDescriptionEn: `ZprintPro Eco Flyers use FSC-certified recycled paper with soy-based inks, showcasing corporate social responsibility and eco-branding. 100% recycled fiber with a natural, slightly textured feel. Ideal for environmental campaigns, NGO outreach, green product launches, and corporate ESG reports. Single or double-sided printing with special options like seed paper. Carbon footprint calculation and eco-certification labels available.`,
     longDescriptionJa: `エコチラシをZprintProでご注文。FSC認証リサイクル紙+大豆インクで100%再生繊維の自然なテクスチャー。環境キャンペーン・NGOアウトリーチ・グリーンプロダクトローンチ・企業ESGレポート様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。`,
     features: [
@@ -2249,7 +2249,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     category_slug: 'flyers',
     name: '即日宣傳單張', nameEn: 'Same-day Flyers', nameJa: '即日チラシ', title_zh: '即日宣傳單張',
     description: '緊急活動首選，最快當天交貨。即日印刷、即日快遞出貨，急件不擔心。', descriptionEn: 'First choice for emergency events, same-day printing and courier delivery available.', descriptionJa: '緊急イベントの第一選択、最短当日印刷・宅配便発送。', description_zh: '緊急活動首選，最快當天交貨。即日印刷、即日快遞出貨，急件不擔心。',
-    longDescription: `智印云即日宣傳單張採用157g銅版紙，配合四色高速數碼印刷，從接稿到出貨最快4小時完成。適合緊急活動、突發促銷、新聞發布及臨時會議資料。我們提供專人急件通道，確保稿件優先處理，並可配合即日快遞或專人送貨。雖然是急單，但我們仍堅持色彩校準與出血檢查，確保品質不打折。與分類頁內容一致，材質關鍵詞包含：即日單張、數碼印刷、急件、銅版紙。`,
+    longDescription: `智印云即日宣傳單張採用157g銅版紙，配合四色高速數碼印刷，從接稿到出貨最快4小時完成。適合緊急活動、突發促銷、新聞發布及臨時會議資料。我們提供專人急件通道，確保稿件優先處理，並可配合即日快遞或專人送貨。雖然是急單，但我們仍堅持色彩校準與出血檢查，確保品質不打折。與分類頁內容一致，材質關鍵詞包含：即日單張、數碼印刷、急件、銅版紙。 **智印雲 香港本地印刷（非智印港）**：48 小時快遞、觀塘門市自取。`,
     longDescriptionEn: `ZprintPro Same-day Flyers use 157g glossy paper with high-speed 4-color digital printing— from file receipt to shipment in as fast as 4 hours. Ideal for emergency events, flash sales, press releases, and last-minute meeting materials. Dedicated rush handling ensures priority processing with same-day courier or personal delivery. Despite the rush, we maintain color calibration and bleed checks for uncompromised quality.`,
     longDescriptionJa: `短納期チラシをZprintProでご注文。157gコート紙+高速4色デジタル印刷でデータ受付から発送まで最短4時間。緊急イベント・フラッシュセール・プレスリリース・直前会議資料様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。`,
     features: [
@@ -2309,7 +2309,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     category_slug: 'posters',
     name: 'A2海報印刷', nameEn: 'A2 Posters', nameJa: 'A2ポスター', title_zh: 'A2海報印刷',
     description: '標準A2尺寸，活動宣傳、產品推廣首選。157g銅版紙，色彩鮮豔，即日交貨。', descriptionEn: 'Standard A2 size, first choice for event promotion. 157g glossy paper, vibrant colors, same-day delivery.', descriptionJa: '標準A2サイズ、イベント宣伝の第一選択。157gコート紙、鮮やかな色彩、即日納品。', description_zh: '標準A2尺寸，活動宣傳、產品推廣首選。157g銅版紙，色彩鮮豔，即日交貨。',
-    longDescription: `A2 海報在辦公室牆面、電梯間與店內立架之間取得最佳可讀距離，是講座、市集與新品上市的「標準戰術尺寸」。157g 銅版紙在柯式或高品數碼下能呈現飽和產品色與細緻人像；可選 PP 護膜或裱泡沫板提升耐用。與分類頁一致：海報印刷、銅版紙、覆膜。建議預留 3mm 出血並轉 CMYK，避免霓虹色超出色域；急件可拆數碼快印與後工裱貼分段排程。`,
+    longDescription: `A2 海報在辦公室牆面、電梯間與店內立架之間取得最佳可讀距離，是講座、市集與新品上市的「標準戰術尺寸」。157g 銅版紙在柯式或高品數碼下能呈現飽和產品色與細緻人像；可選 PP 護膜或裱泡沫板提升耐用。與分類頁一致：海報印刷、銅版紙、覆膜。建議預留 3mm 出血並轉 CMYK，避免霓虹色超出色域；急件可拆數碼快印與後工裱貼分段排程。 **智印雲 香港本地印刷（非智印港）**：48 小時快遞、觀塘門市自取。`,
     longDescriptionEn: `A2 posters hit the sweet spot between office walls, lift lobbies, and floor easels—ideal for talks, markets, and product drops. 157gsm art paper delivers punchy product tones and portrait detail under offset or high-quality digital; add PP lamination or foam mounting for durability. Terms align with category content: poster printing, coated art paper, lamination. Supply 3mm bleed and CMYK builds to avoid out-of-gamut neons; rush jobs can split digital print from mounting.`,
     longDescriptionJa: `当サービスではA2ポスター印刷 業者として、標準A2サイズ（420×594mm）のポスターを157gアート紙または高彩度コート紙で印刷し、講座・展示会・マルシェ・新品発表・店舗装飾に最適な視認距離と発色を実現しています。
 
@@ -2792,7 +2792,7 @@ A2 ポスター 印刷 価格と品揃え。A1（594×841mm）・B1（728×1030m
     category_slug: 'packaging',
     name: '禮品盒定制', nameEn: 'Gift Boxes', nameJa: 'ギフトボックス', title_zh: '禮品盒定制',
     description: '精緻禮品盒，配合燙金、UV等工藝。送禮首選，提升產品價值。', descriptionEn: 'Exquisite gift boxes with foil stamping, UV and other processes.', descriptionJa: '精巧なギフトボックス、箔押し・UVなどの加工付き。', description_zh: '精緻禮品盒，配合燙金、UV等工藝。送禮首選，提升產品價值。',
-    longDescription: `禮品盒定制以白卡、特種紙或灰板裱面為主，透過刀模成型、糊盒與內托配置，把產品敘事濃縮在開盒第一眼。外觀可疊加燙金／燙銀、局部 UV、擊凸與柔觸覆膜，兼顧觸感與陳列反光控制。與分類頁術語一致：包裝盒、白卡紙、燙金、局部 UV、模切。建議同步規劃內襯（紙托／EVA）與封口貼，並在印前確認長寬高公差與堆疊承重，避免物流擠壓變形。`,
+    longDescription: `禮品盒定制以白卡、特種紙或灰板裱面為主，透過刀模成型、糊盒與內托配置，把產品敘事濃縮在開盒第一眼。外觀可疊加燙金／燙銀、局部 UV、擊凸與柔觸覆膜，兼顧觸感與陳列反光控制。與分類頁術語一致：包裝盒、白卡紙、燙金、局部 UV、模切。建議同步規劃內襯（紙托／EVA）與封口貼，並在印前確認長寬高公差與堆疊承重，避免物流擠壓變形。 **智印雲 香港本地印刷（非智印港）**：48 小時快遞、觀塘門市自取。`,
     longDescriptionEn: `Custom gift boxes combine white card, specialty stocks, or greyboard wraps with die-cutting, folding, and inserts to tell your product story at first open. Layer foil, spot UV, embossing, and soft-touch film while managing shelf glare. Terms align with category content: packaging boxes, white card, foil stamping, spot UV, die-cutting. Plan inserts (paper or EVA) and seal stickers together; validate L×W×H tolerances and stack crush resistance before print lock.`,
     longDescriptionJa: `ギフト箱をZprintProでご注文。白卡・特殊紙・灰板貼りを組み合わせ+型抜き・糊箱・内装で開封の第一印象を作る。箔押し・局部UV・エンボス・ソフトタッチで質感調整。各種贈答・企業プロモーション様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。`,
     features: [
@@ -3322,7 +3322,7 @@ A2 ポスター 印刷 価格と品揃え。A1（594×841mm）・B1（728×1030m
     category_slug: 'red-packets',
     name: '燙金利是封', nameEn: 'Foil Red Packets', nameJa: '箔押しポチ袋', title_zh: '燙金利是封',
     description: '傳統燙金工藝，喜慶大方。多種吉祥圖案可選，也可定制專屬設計。適合企業派發、節日營銷。', descriptionEn: 'Traditional foil stamping, festive and elegant. Multiple auspicious patterns or custom designs.', descriptionJa: '伝統的な箔押し加工、縁起が良く上品。複数の縁起の良い柄またはカスタムデザイン。', description_zh: '傳統燙金工藝，喜慶大方。多種吉祥圖案可選，也可定制專屬設計。適合企業派發、節日營銷。',
-    longDescription: `智印云燙金利是封採用120g高級紅色紙張，配合傳統燙金工藝，金色圖案在光線下閃耀奪目，喜慶大方。可燙金色、銀色、玫瑰金等多種顏色，圖案涵蓋傳統吉祥紋樣、福字、生肖及企業Logo。適合企業派發、節日營銷、婚禮回禮及商務拜年。我們提供免費排版與燙金定位檢查，確保圖案精準。與分類頁內容一致，材質關鍵詞包含：燙金利是封、紅紙、金色圖案、生肖。`,
+    longDescription: `智印云燙金利是封採用120g高級紅色紙張，配合傳統燙金工藝，金色圖案在光線下閃耀奪目，喜慶大方。可燙金色、銀色、玫瑰金等多種顏色，圖案涵蓋傳統吉祥紋樣、福字、生肖及企業Logo。適合企業派發、節日營銷、婚禮回禮及商務拜年。我們提供免費排版與燙金定位檢查，確保圖案精準。與分類頁內容一致，材質關鍵詞包含：燙金利是封、紅紙、金色圖案、生肖。 **智印雲 香港本地印刷（非智印港）**：48 小時快遞、觀塘門市自取。`,
     longDescriptionEn: `ZprintPro Foil Red Packets use 120g premium red paper with traditional foil stamping. Gold patterns shine brilliantly—festive and elegant. Available in gold, silver, and rose gold with designs including auspicious patterns, fortune characters, zodiac signs, and corporate logos. Ideal for corporate distribution, holiday marketing, wedding favors, and business New Year greetings.`,
     longDescriptionJa: `箔押し祝儀袋をZprintProでご注文。金箔・銀箔・銅箔対応の祝儀袋で、婚礼・成人式・表彰式・周年記念の高級紅包に最適なプレミアム印刷です。法人周年記念・株主総会・表彰式・婚礼・成人式・出産祝・高級贈答など、JAの伝統文化に根ざした高品質な祝儀袋をお届けします。【素材】和紙（奉書紙/雲龍紙/ペルーラ和紙調）、カラー印刷は4色/特色対応。実物サンプルを無料でお送りできますので、質感をご確認ください。【サイズ】中包み/大/特大/カスタムサイズまで対応。【箔押し】金箔/銀箔/銅箔/黒箔、紋章箔押し（家紋・社紋・ロゴ）、文字箔押し（御祝・寿・表彰）。Illustratorのパスデータで支給いただければ忠実に再現。【紋章データ作成】紋章データ作成（有償）も対応可能、家紋・社紋を新規作成する場合もご相談ください。【セット対応】奉書紙中包み・奉書紙封筒もご注文可能、祝儀袋と一括ご注文でセット割引あり。【利用シーン】婚礼（ご祝儀袋）、成人式・長寿祝、出産祝・入学祝、表彰式・周年記念。【納期】データ確定後、最短5営業日で出荷。500枚以上の大量発注は7-14営業日。紋章データ作成を含む場合はさらに1-2営業日かかる場合がございます。ご興味の方はサンプル請求（無料）または詳細をご覧ください。`,
     features: [
@@ -3384,7 +3384,7 @@ A2 ポスター 印刷 価格と品揃え。A1（594×841mm）・B1（728×1030m
     category_slug: 'red-packets',
     name: '浮雕利是封', nameEn: 'Embossed Red Packets', nameJa: 'エンボスポチ袋', title_zh: '浮雕利是封',
     description: '浮雕工藝，立體觸感，高檔奢華。展現品牌誠意，適合VIP客戶、高端送禮。', descriptionEn: 'Embossed craftsmanship, dimensional texture, luxurious feel.', descriptionJa: 'エンボス加工、立体的な触感、豪華な質感。', description_zh: '浮雕工藝，立體觸感，高檔奢華。展現品牌誠意，適合VIP客戶、高端送禮。',
-    longDescription: `智印云浮雕利是封採用150g高級紅色紙張，配合浮雕工藝，圖案與文字呈現立體觸感，高檔奢華。浮雕深度約0.3–0.5mm，手指撫摸即可感受層次變化，展現品牌誠意。適合VIP客戶、高端送禮、私人銀行及奢侈品牌。可搭配燙金作為點綴，提升視覺與觸覺雙重體驗。我們提供免費打樣確認浮雕效果。與分類頁內容一致，材質關鍵詞包含：浮雕利是封、立體觸感、高端禮品。`,
+    longDescription: `智印云浮雕利是封採用150g高級紅色紙張，配合浮雕工藝，圖案與文字呈現立體觸感，高檔奢華。浮雕深度約0.3–0.5mm，手指撫摸即可感受層次變化，展現品牌誠意。適合VIP客戶、高端送禮、私人銀行及奢侈品牌。可搭配燙金作為點綴，提升視覺與觸覺雙重體驗。我們提供免費打樣確認浮雕效果。與分類頁內容一致，材質關鍵詞包含：浮雕利是封、立體觸感、高端禮品。 **智印雲 香港本地印刷（非智印港）**：48 小時快遞、觀塘門市自取。`,
     longDescriptionEn: `ZprintPro Embossed Red Packets use 150g premium red paper with embossing that creates dimensional texture at 0.3–0.5mm depth. The tactile layering conveys brand sincerity and luxury. Ideal for VIP clients, premium gifting, private banking, and luxury brands. Can be paired with foil stamping for enhanced visual and tactile experience. Free sampling to confirm embossing effect.`,
     longDescriptionJa: `エンボスポチ袋をZprintProでご注文。150g高級赤紙+エンボス加工で0.3-0.5mmの深さで立体的な触感。指で撫でると層の変化を感じブランド誠意と高級感を伝える。VIP・高級ギフト・プライベートバンク様向け。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。`,
     features: [
@@ -3468,7 +3468,7 @@ A2 ポスター 印刷 価格と品揃え。A1（594×841mm）・B1（728×1030m
     category_slug: 'red-packets',
     name: '定制利是封', nameEn: 'Custom Red Packets', nameJa: 'オリジナルポチ袋', title_zh: '定制利是封',
     description: '專屬設計，印上公司Logo和祝福語。強化品牌印象，節日營銷必備。', descriptionEn: 'Exclusive design with company logo and greetings. Strengthens brand impression.', descriptionJa: '独占的なデザイン、会社ロゴと祝福の言葉。ブランドイメージを強化。', description_zh: '專屬設計，印上公司Logo和祝福語。強化品牌印象，節日營銷必備。',
-    longDescription: `智印云定制利是封採用120g–150g紅色或特殊色紙張，完全客製化設計，可印企業Logo、品牌色彩、專屬圖案及祝福語。適合企業年會、品牌活動、會員回饋及節慶營銷。我們提供從設計到印刷的一站式服務，並可搭配燙金、局部UV或壓凹工藝。免費刀模與色彩校樣確保效果。與分類頁內容一致，材質關鍵詞包含：定制利是封、客製化、企業Logo、品牌色。`,
+    longDescription: `智印云定制利是封採用120g–150g紅色或特殊色紙張，完全客製化設計，可印企業Logo、品牌色彩、專屬圖案及祝福語。適合企業年會、品牌活動、會員回饋及節慶營銷。我們提供從設計到印刷的一站式服務，並可搭配燙金、局部UV或壓凹工藝。免費刀模與色彩校樣確保效果。與分類頁內容一致，材質關鍵詞包含：定制利是封、客製化、企業Logo、品牌色。 **智印雲 香港本地印刷（非智印港）**：48 小時快遞、觀塘門市自取。`,
     longDescriptionEn: `ZprintPro Custom Red Packets use 120g–150g red or specialty colored paper with fully custom designs—corporate logos, brand colors, exclusive patterns, and greetings. Ideal for annual meetings, brand events, member rewards, and holiday marketing. One-stop service from design to print with optional foil stamping, spot UV, or debossing. Free die-cut and color proofing.`,
     longDescriptionJa: `カスタムポチ袋をZprintProでご注文。120g-150g赤または特殊色紙+完全カスタマイズで企業ロゴ・ブランドカラー・専用柄・メッセージを印刷。年会・ブランドイベント・会員特典・ホリデーマーケティング様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。`,
     features: [
@@ -3803,7 +3803,7 @@ A2 ポスター 印刷 価格と品揃え。A1（594×841mm）・B1（728×1030m
     category_slug: 'calendars',
     name: '掛牆年曆', nameEn: 'Wall Calendars', nameJa: '壁掛けカレンダー', title_zh: '掛牆年曆',
     description: '標準A3或A2掛牆年曆，13頁設計（封面+12個月）。適合家庭、辦公室使用，全年品牌曝光。', descriptionEn: 'Standard A3 or A2 wall calendars, 13-page design. Perfect for home and office use.', descriptionJa: '標準A3またはA2壁掛けカレンダー、13ページデザイン。家庭やオフィスに最適。', description_zh: '標準A3或A2掛牆年曆，13頁設計（封面+12個月）。適合家庭、辦公室使用，全年品牌曝光。',
-    longDescription: `智印云掛牆月曆採用250g–300g銅版紙或啞粉紙，配合四色柯式印刷，每月一頁，圖文清晰色彩鮮豔。背面可印企業資訊、優惠券或聯絡方式，實用與宣傳兼具。適合企業禮品、客戶回饋、房地產推廣及家庭使用。金屬圈裝訂，翻頁順暢。我們提供免費節慶標註與排版設計。與分類頁內容一致，材質關鍵詞包含：掛牆月曆、銅版紙、金屬圈、四色印刷。`,
+    longDescription: `智印云掛牆月曆採用250g–300g銅版紙或啞粉紙，配合四色柯式印刷，每月一頁，圖文清晰色彩鮮豔。背面可印企業資訊、優惠券或聯絡方式，實用與宣傳兼具。適合企業禮品、客戶回饋、房地產推廣及家庭使用。金屬圈裝訂，翻頁順暢。我們提供免費節慶標註與排版設計。與分類頁內容一致，材質關鍵詞包含：掛牆月曆、銅版紙、金屬圈、四色印刷。 **智印雲 香港本地印刷（非智印港）**：48 小時快遞、觀塘門市自取。`,
     longDescriptionEn: `ZprintPro Wall Calendars use 250g–300g glossy or matte paper with 4-color offset printing—one month per page with crisp text and vibrant images. The back can feature corporate info, coupons, or contact details—practical and promotional. Ideal for corporate gifts, client rewards, property marketing, and home use. Metal ring binding for smooth page turning.`,
     longDescriptionJa: `壁掛けカレンダーをZprintProでご注文。250g-300gコート紙またはマット紙+4色オフセット印刷+1月1ページ+裏面企業情報。金属リング綴じでページめくりがスムーズ。企業ギフト・顧客特典・不動産マーケティング・家庭用に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。`,
     features: [
@@ -3944,7 +3944,7 @@ A2 ポスター 印刷 価格と品揃え。A1（594×841mm）・B1（728×1030m
     category_slug: 'calendars',
     name: '定制年曆', nameEn: 'Custom Calendars', nameJa: 'オリジナルカレンダー', title_zh: '定制年曆',
     description: '專屬設計，每頁可印公司產品或服務。企業禮品首選，送客戶最佳選擇。', descriptionEn: 'Exclusive design, each page can feature company products or services.', descriptionJa: '独占的なデザイン、各ページに会社の製品やサービスを掲載可能。', description_zh: '專屬設計，每頁可印公司產品或服務。企業禮品首選，送客戶最佳選擇。',
-    longDescription: `智印云定制月曆採用250g–300g藝術紙或銅版紙，完全客製化設計，可印企業Logo、品牌故事、產品圖片及專屬節慶標註。適合企業年終禮品、VIP客戶回饋、品牌紀念品及家庭定制。我們提供從設計到印刷的一站式服務，並可搭配燙金或局部UV工藝。與分類頁內容一致，材質關鍵詞包含：定制月曆、客製化、企業Logo、藝術紙。`,
+    longDescription: `智印云定制月曆採用250g–300g藝術紙或銅版紙，完全客製化設計，可印企業Logo、品牌故事、產品圖片及專屬節慶標註。適合企業年終禮品、VIP客戶回饋、品牌紀念品及家庭定制。我們提供從設計到印刷的一站式服務，並可搭配燙金或局部UV工藝。與分類頁內容一致，材質關鍵詞包含：定制月曆、客製化、企業Logo、藝術紙。 **智印雲 香港本地印刷（非智印港）**：48 小時快遞、觀塘門市自取。`,
     longDescriptionEn: `ZprintPro Custom Calendars use 250g–300g art or glossy paper with fully custom designs—corporate logos, brand stories, product images, and exclusive holiday markers. Ideal for year-end corporate gifts, VIP client rewards, brand memorabilia, and family customization. One-stop service from design to print with optional foil stamping or spot UV.`,
     longDescriptionJa: `カスタムカレンダーをZprintProでご注文。250g-300gアート紙またはコート紙+完全カスタマイズで企業ロゴ・ブランドストーリー・製品画像・専用祝日マーカーを印刷。年末企業ギフト・VIP顧客特典・ブランド記念品・家族カスタマイズ様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。`,
     features: [
@@ -4184,7 +4184,7 @@ A2 ポスター 印刷 価格と品揃え。A1（594×841mm）・B1（728×1030m
     category_slug: 'calendars',
     name: '磁石年曆', nameEn: 'Magnetic Calendars', nameJa: 'マグネットカレンダー', title_zh: '磁石年曆',
     description: '磁石背膠，可貼於冰箱等金屬表面。每日多次接觸，品牌曝光率高。', descriptionEn: 'Magnetic backing, can stick to refrigerator and other metal surfaces.', descriptionJa: 'マグネット背面、冷蔵庫などの金属面に貼付可能。', description_zh: '磁石背膠，可貼於冰箱等金屬表面。每日多次接觸，品牌曝光率高。',
-    longDescription: `智印云磁石月曆採用200g–250g銅版紙或合成紙，背面貼合軟磁片，可吸附於冰箱、白板或金屬櫃表面。每月一頁或全年一張，正面印精美圖案，背面可印食譜、優惠券或企業資訊。適合家庭、餐飲店、學校及辦公室。我們提供免費磁片厚度選擇（0.5mm或1mm）與排版設計。與分類頁內容一致，材質關鍵詞包含：磁石月曆、軟磁片、銅版紙、冰箱貼。`,
+    longDescription: `智印云磁石月曆採用200g–250g銅版紙或合成紙，背面貼合軟磁片，可吸附於冰箱、白板或金屬櫃表面。每月一頁或全年一張，正面印精美圖案，背面可印食譜、優惠券或企業資訊。適合家庭、餐飲店、學校及辦公室。我們提供免費磁片厚度選擇（0.5mm或1mm）與排版設計。與分類頁內容一致，材質關鍵詞包含：磁石月曆、軟磁片、銅版紙、冰箱貼。 **智印雲 香港本地印刷（非智印港）**：48 小時快遞、觀塘門市自取。`,
     longDescriptionEn: `ZprintPro Magnetic Calendars use 200g–250g glossy or synthetic paper backed with flexible magnet sheets, adhering to refrigerators, whiteboards, or metal cabinets. Monthly or full-year formats with beautiful designs on the front and recipes, coupons, or corporate info on the back. Ideal for homes, restaurants, schools, and offices.`,
     longDescriptionJa: `マグネットカレンダーをZprintProでご注文。200g-250gコート紙または合成紙+裏面フレキシブルマグネットシート貼付で冷蔵庫・ホワイトボード・金属キャビネットに貼付可能。月ごとまたは全年フォーマット。家庭・飲食店・学校・オフィス様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。`,
     features: [
@@ -4675,7 +4675,7 @@ A2 ポスター 印刷 価格と品揃え。A1（594×841mm）・B1（728×1030m
     category_slug: 'banners',
     name: '戶外燈布噴繪', nameEn: 'Outdoor Vinyl Banners', nameJa: '屋外バナー', title_zh: '戶外燈布噴繪',
     description: '大型戶外燈布，防水防曬，耐候性強。適合戶外廣告牌、建築圍板。', descriptionEn: 'Large outdoor vinyl banners, waterproof and UV-resistant, strong weather resistance.', descriptionJa: '大型屋外ビニールバナー、防水・UV耐性、強い耐候性。', description_zh: '大型戶外燈布，防水防曬，耐候性強。適合戶外廣告牌、建築圍板。',
-    longDescription: `戶外燈布噴繪以 PVC 燈布或外光／內光柔性材料為主，配合溶劑、弱溶劑或 UV 固化墨水，兼顧防水、抗紫外線與大幅面拼接。適用於地產圍板、商場外立面、活動背板與臨時指示牌。與分類頁術語一致：噴繪、燈布、防水防曬。檔案需預留穿繩孔、焊邊與風扣位置；海邊或高紫外線場景建議升級耐候墨層並在安裝時評估張力與鋼索間距。`,
+    longDescription: `戶外燈布噴繪以 PVC 燈布或外光／內光柔性材料為主，配合溶劑、弱溶劑或 UV 固化墨水，兼顧防水、抗紫外線與大幅面拼接。適用於地產圍板、商場外立面、活動背板與臨時指示牌。與分類頁術語一致：噴繪、燈布、防水防曬。檔案需預留穿繩孔、焊邊與風扣位置；海邊或高紫外線場景建議升級耐候墨層並在安裝時評估張力與鋼索間距。 **智印雲 香港本地印刷（非智印港）**：48 小時快遞、觀塘門市自取。`,
     longDescriptionEn: `Outdoor vinyl banners use frontlit/backlit flex with solvent, eco-solvent, or UV-cured inks for waterproof, UV-stable, wide-format seams. Ideal for construction hoardings, mall exteriors, event backdrops, and temporary wayfinding. Terms align with category content: large-format printing, banner vinyl, weather resistance. Artwork should include grommet grids, welded hems, and wind-slit plans; coastal or high-UV sites may need upgraded ink sets plus cable spacing checks on install.`,
     longDescriptionJa: `屋外大型バナーをZprintProでご注文。塩ビターポリン（440g/510g）素材で、防水・耐候性・UVカット加工により、直射日光下でも3年以上の色持ちを実現する大型バナー印刷です。建設現場仮囲い・店舗装飾・イベント会場・不動産建築囲いなど、屋外B2B用途に最適です。平方フィート単位で算出いたします。【最大サイズ】継ぎ目なしで最大5m×10mまで対応、それ以上のサイズはオーバーラップ接合で納品します。継ぎ目は現場で目立たないように施工できます。【素材選択】厚手塩ビターポリン（440g/510g、標準的な屋外用）、メッシュターポリン（開孔率30-40%、風透過で強風時の負荷軽減、建築現場の仮囲いや台風の影響を受けやすい高所設置に最適）、反射シート（夜間の視認性向上）。【印刷方式】UVカット大型インクジェット+顔料インク使用、飽和した色彩再現。塩ビ素材自体が防水・防カビ・耐候性に優れています。【ハトメ加工】標準料金に4隅+中央2点、合計6点のハトメ加工を含みます。追加や位置変更も無料で対応可能、ロープ・紐は別途ご用意ください。【納期】データ確定後、最短5営業日で出荷。10平方フィート以上の大型印刷は7-10営業日。北海道・沖縄はさらに1-2日かかります。ご興味の方はサンプル請求（無料）または詳細をご覧ください。`,
     features: [
@@ -4739,7 +4739,7 @@ A2 ポスター 印刷 価格と品揃え。A1（594×841mm）・B1（728×1030m
     category_slug: 'banners',
     name: '易拉寶', nameEn: 'Roll-up Banners', nameJa: 'ロールアップバナー', title_zh: '易拉寶',
     description: '便攜易拉寶展架，安裝簡便。展會、路演必備。', descriptionEn: 'Portable roll-up banner stands, easy to install. Essential for exhibitions and roadshows.', descriptionJa: 'ポータブルロールアップバナースタンド、設置簡単。展示会やロードショーに必須。', description_zh: '便攜易拉寶展架，安裝簡便。展會、路演必備。',
-    longDescription: `易拉寶由鋁合金或塑鋼支架＋可反捲畫面組成，單人數分鐘即可完成展開與收納，是展會攤位、酒店簽到與門市臨時促銷的標配。畫面多採不反光 PET／PVC 片或防捲邊合成紙，底部加重桿降低晃動。與分類頁一致：噴繪、易拉寶、防水帆布。稿面請預留上下安全區避免捲入機構；若長期戶外擺放，建議升級抗 UV 墨與加重底座。`,
+    longDescription: `易拉寶由鋁合金或塑鋼支架＋可反捲畫面組成，單人數分鐘即可完成展開與收納，是展會攤位、酒店簽到與門市臨時促銷的標配。畫面多採不反光 PET／PVC 片或防捲邊合成紙，底部加重桿降低晃動。與分類頁一致：噴繪、易拉寶、防水帆布。稿面請預留上下安全區避免捲入機構；若長期戶外擺放，建議升級抗 UV 墨與加重底座。 **智印雲 香港本地印刷（非智印港）**：48 小時快遞、觀塘門市自取。`,
     longDescriptionEn: `Roll-up banners pair aluminum or hybrid stands with spring-rolled graphics for one-person setup in minutes—staples for expo booths, hotel check-ins, and pop-up retail promos. Graphics often use anti-glare PET/PVC or curl-resistant synthetics with weighted foot bars to reduce wobble. Terms align with category content: large-format printing, roll-ups, outdoor vinyl. Keep top/bottom safe zones clear of hardware; outdoor long runs may need UV-stable inks and heavier bases.`,
     longDescriptionJa: `当サービスではロールアップ バナー 印刷 業者として、アルミ製軽量スタンドと高品質グラフィックの組み合わせで、展示会・ホテル受付・店頭POP・セミナー会場などあらゆるビジネスシーンに迅速かつ美しい設営をお届けします。標準サイズ85×200cm、組み立ては1人で3-5分、専用キャリーバッグで持ち運びも簡単です。
 
@@ -5748,7 +5748,7 @@ A2 ポスター 印刷 価格と品揃え。A1（594×841mm）・B1（728×1030m
     category_slug: 'envelopes',
     name: '珠光信封', nameEn: 'Pearl Envelopes', nameJa: 'パール封筒', title_zh: '珠光信封',
     description: '珠光紙張，閃耀質感。適合婚禮邀請、高端活動。', descriptionEn: 'Pearl paper, shimmering quality. Perfect for wedding invitations, high-end events.', descriptionJa: 'パール紙、輝く質感。結婚式の招待状、高級イベントに最適。', description_zh: '珠光紙張，閃耀質感。適合婚禮邀請、高端活動。',
-    longDescription: `珠光信封在光線下呈現細緻微粒光澤，無需大面積燙金即可營造高級感，特別適合婚禮邀請、品牌發佈會 RSVP 與 VIP 禮券封套。印刷建議以專色或簡潔線條為主，避免過多實地疊印造成珠光層被遮蓋。與分類頁一致：信封印刷、特種紙。可搭配燙金細框或凹凸壓紋 Logo；印前請提供實紙打樣確認珠光方向與色彩偏移。`,
+    longDescription: `珠光信封在光線下呈現細緻微粒光澤，無需大面積燙金即可營造高級感，特別適合婚禮邀請、品牌發佈會 RSVP 與 VIP 禮券封套。印刷建議以專色或簡潔線條為主，避免過多實地疊印造成珠光層被遮蓋。與分類頁一致：信封印刷、特種紙。可搭配燙金細框或凹凸壓紋 Logo；印前請提供實紙打樣確認珠光方向與色彩偏移。 **智印雲 香港本地印刷（非智印港）**：48 小時快遞、觀塘門市自取。`,
     longDescriptionEn: `Pearl-finish envelopes shimmer under light, delivering luxury without heavy foil—ideal for wedding suites, launch RSVPs, and VIP voucher sleeves. Favor spot colors or fine linework so the pearl coat stays visible; avoid excessive solids that mask sparkle. Terms align with category content: envelope printing, specialty paper. Pair with hairline foil borders or embossed crests; physical proofs confirm grain direction and color shift.`,
     longDescriptionJa: `パール封筒をZprintProでご注文。微細な輝きで高級感を演出する特殊紙。結婚招待・発表会返信・VIP券封様に最適。細い箔枠やエンボスと相性良好。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。`,
     features: [
@@ -6163,7 +6163,7 @@ A2 ポスター 印刷 価格と品揃え。A1（594×841mm）・B1（728×1030m
     category_slug: 'packaging',
     name: '磁吸翻蓋禮盒印刷', nameEn: 'Magnetic Closure Gift Box', nameJa: 'マグネット蓋ギフトボックス', title_zh: '磁吸翻蓋禮盒印刷',
     description: '高檔磁吸翻蓋硬盒，適合奢侈品、化妝品、電子產品包裝。支持燙金、UV、壓紋工藝。', descriptionEn: 'Premium magnetic closure rigid boxes for luxury goods, cosmetics, electronics. Foil stamping, UV, embossing available.', descriptionJa: '高級マグネット蓋硬箱。高級品、化粧品、電子機器の包装に最適。箔押し、UV、エンボス加工対応。', description_zh: '高檔磁吸翻蓋硬盒，適合奢侈品、化妝品、電子產品包裝。支持燙金、UV、壓紋工藝。',
-    longDescription: `磁吸翻蓋禮盒在書型結構上嵌入隱藏磁鐵，單手即可優雅開合，是香氛、腕表配件與高端 3C 的首選呈現方式。面紙可配觸感膜降低指紋，邊角多經圓角刀模降低磕碰風險。內襯可一體成型 EVA 或雙層紙托分隔主機與配件。與分類頁一致：精裝盒、燙金、局部 UV、壓紋。請在報價時說明磁鐵規格與航空運輸需求，以便選用符合安檢的包裝標示與內隔方案。`,
+    longDescription: `磁吸翻蓋禮盒在書型結構上嵌入隱藏磁鐵，單手即可優雅開合，是香氛、腕表配件與高端 3C 的首選呈現方式。面紙可配觸感膜降低指紋，邊角多經圓角刀模降低磕碰風險。內襯可一體成型 EVA 或雙層紙托分隔主機與配件。與分類頁一致：精裝盒、燙金、局部 UV、壓紋。請在報價時說明磁鐵規格與航空運輸需求，以便選用符合安檢的包裝標示與內隔方案。 **智印雲 香港本地印刷（非智印港）**：48 小時快遞、觀塘門市自取。`,
     longDescriptionEn: `Magnetic book-style rigid boxes hide magnets for one-hand, elegant openings—ideal for fragrance, watch accessories, and premium electronics. Touch films reduce fingerprints; rounded corners ease knocks. Liners can be one-piece EVA or dual-layer paper trays for device plus cables. Terms align with category content: rigid boxes, foil stamping, spot UV, embossing. Specify magnet grades and air-freight needs so we can advise labeling and compartment layouts for security screening.`,
     longDescriptionJa: `磁気フラップギフトボックスをZprintProでご注文。片手で静かに開閉できるハードケース磁気蓋構造で、ラグジュアリーブランド・化粧品・宝飾・高級食品の贈答包装に最適なプレミアムパッケージです。磁石位置は左右2点または全面密封式から選択でき、開閉の儀式感と高級感を演出します。【構造】ハードケース（厚紙+グレー台紙）+磁石、サイズは5cm～40cmまでカスタマイズ対応。【表面仕上げ】特殊紙貼り（アート紙/クラフト紙/模様紙）、箔押し（金・銀・銅 + 特殊箔）、エンボス/デボス（凹凸ロゴ）、スポットUV（部分的光沢）、マット/光沢PP ラミネート。【内装オプション】サテン生地（黒/白/ベージュ/カスタム色）、EVAフォーム成形（化粧品・ボトル形状に合わせてカット）、ブリスタートレイ（精密機器・複数アイテム収納）。【利用シーン】化粧品・スキンケア、宝飾・アクセサリー、高級食品（贈答用）、精密機器・電子製品、周年記念品。【サンプル】本制作前に白サンプル（無印刷）とフルカラープロトタイプ（有償）の2種類をご用意。色・質感・磁石の開閉感など実物でご確認いただけます。【データ入稿】展開図データ形式（Illustrator/PDF）、ロゴ・テキスト位置を明確に指定。スタッフが入稿時に無料でデータチェックを行います。【納期】データ確定後、最短10営業日で出荷。形状カスタマイズや特殊加工を含む場合は14-21営業日。お急ぎの場合は特急プラン（有償）もございます。ご興味の方はサンプル請求（無料）または詳細をご覧ください。`,
     features: [
