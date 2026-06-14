@@ -115,6 +115,22 @@ const currencyMap: Record<Locale, string> = {
   'ja': 'JPY',
 };
 
+/**
+ * 2026-06-14 Phase B P0-5: JPY 没有小数位（最小单位 = 1 JPY），其他币种以分为单位传给 Airwallex。
+ * 返回 - JPY: 实际金额（整数）；HKD/USD: 金额 × 100（分）。
+ */
+function toSmallestUnit(amount: number, currency: string): number {
+  if (currency === 'JPY') return Math.round(amount);
+  return Math.round(amount * 100);
+}
+
+/** 按币种格式化显示（JA 用 ¥1,234 无小数，HKD/USD 用 $XX.XX 两位小数） */
+function formatMoneyForCurrency(amount: number, currency: string): string {
+  if (currency === 'JPY') return `¥${Math.round(amount).toLocaleString()}`;
+  const symbol = currency === 'HKD' ? 'HK$' : currency === 'USD' ? '$' : currency;
+  return `${symbol}${amount.toFixed(2)}`;
+}
+
 export default function CheckoutClient({ params }: CheckoutPageProps) {
   const locale = params.locale as Locale;
   const t = translations[locale];
@@ -253,12 +269,12 @@ export default function CheckoutClient({ params }: CheckoutPageProps) {
     }));
 
     const currency = currencyMap[locale];
-    // Convert amount to smallest currency unit (cents)
-    const amountInCents = Math.round(totalPrice * 100);
+    // 2026-06-14 P0-5: 区分币种最小单位（JPY 无小数位）
+    const amountInSmallestUnit = toSmallestUnit(totalPrice, currency);
 
     try {
       const session = await createPaymentSession({
-        amount: amountInCents,
+        amount: amountInSmallestUnit,
         currency,
         quote_data: {
           items: items.map((item) => ({
@@ -424,6 +440,8 @@ export default function CheckoutClient({ params }: CheckoutPageProps) {
                   <AirwallexDropIn
                     paymentIntentId={paymentData.paymentIntentId}
                     clientSecret={paymentData.clientSecret}
+                    locale={locale}
+                    intentCurrency={currencyMap[locale]}
                     onSuccess={handlePaymentSuccess}
                     onError={(err) => setPaymentError(err.message)}
                   />
@@ -464,19 +482,19 @@ export default function CheckoutClient({ params }: CheckoutPageProps) {
                       <p className="text-xs text-gray-400 mt-0.5">
                         {item.options?.sizeLabel || ''} {item.options?.materialLabel || ''} × {item.quantity}
                       </p>
-                      <p className="text-sm text-[#F87314] font-medium">{currencyMap[locale]}${(item.unitPrice * item.quantity).toFixed(2)}</p>
+                      <p className="text-sm text-[#F87314] font-medium">{formatMoneyForCurrency(item.unitPrice * item.quantity, currencyMap[locale])}</p>
                     </div>
                   </div>
                 ))}
               </div>
               <div className="border-t border-gray-100 mt-4 pt-4 space-y-2 text-sm">
-                <div className="flex justify-between"><span className="text-gray-500">{t.subtotal}</span><span className="font-medium">{currencyMap[locale]}${totalPrice.toFixed(2)}</span></div>
+                <div className="flex justify-between"><span className="text-gray-500">{t.subtotal}</span><span className="font-medium">{formatMoneyForCurrency(totalPrice, currencyMap[locale])}</span></div>
                 <div className="flex justify-between"><span className="text-gray-500">{t.shipping}</span><span className="text-gray-400">{t.shippingNote}</span></div>
               </div>
               <div className="border-t border-gray-100 mt-3 pt-3">
                 <div className="flex justify-between items-baseline">
                   <span className="font-bold text-[#333333]">{t.total}</span>
-                  <span className="text-xl font-bold text-[#F87314]">{currencyMap[locale]}${totalPrice.toFixed(2)}</span>
+                  <span className="text-xl font-bold text-[#F87314]">{formatMoneyForCurrency(totalPrice, currencyMap[locale])}</span>
                 </div>
               </div>
             </div>

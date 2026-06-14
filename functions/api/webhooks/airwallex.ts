@@ -52,22 +52,31 @@ export async function onRequestPost(context: {
     const eventData = JSON.parse(payload) as {
       name: string;
       data?: {
-        payment_intent?: { id: string; status: string; merchant_order_id?: string };
+        payment_intent?: { id: string; status: string; merchant_order_id?: string; currency?: string; amount?: number };
       };
     };
 
+    // 2026-06-14 Phase B P0-5: 记录实际收到 currency 用于核对 JA locale 是否走 JPY
     if (eventData.name === 'payment_intent.succeeded') {
       const paymentIntent = eventData.data?.payment_intent;
       const orderId = paymentIntent?.merchant_order_id;
 
       if (orderId && paymentIntent?.status === 'SUCCEEDED') {
+        // eslint-disable-next-line no-console
+        console.log(`[P0-5 airwallex webhook] order=${orderId} currency=${paymentIntent.currency} amount=${paymentIntent.amount}`);
+
         const supabase = createClient(
           context.env.SUPABASE_URL,
           context.env.SUPABASE_SERVICE_ROLE_KEY
         );
         const { error } = await supabase
           .from('orders')
-          .update({ status: 'paid', airwallex_payment_intent_id: paymentIntent.id })
+          .update({
+            status: 'paid',
+            airwallex_payment_intent_id: paymentIntent.id,
+            // 2026-06-14 P0-5: 落库收到的 currency 供后台对账
+            currency: paymentIntent.currency || undefined,
+          })
           .eq('id', orderId);
 
         if (error) {

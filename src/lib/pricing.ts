@@ -15,6 +15,92 @@
 import { Locale } from './seo';
 
 // ============================================================================
+// 2026-06-14 Phase B 修复 P0-5：JA locale JPY 结算强制化
+// 背景：审计发现 JA 页面显示 JPY 但实际后台结算走 HKD，信任崩塌。
+// 设计：feature flag `NEXT_PUBLIC_JA_FORCE_JPY` 控制（默认 false），
+//       打开后 JA locale 走 JPY 计价/结算，HKD 后台记账仍可换算。
+// 退出条件：把 env 改 false 一秒回滚。
+// ============================================================================
+
+/** JA locale 检测（兼容 'ja' 与 'ja-JP' 两种写法） */
+export function isJALocale(locale: string | undefined | null): boolean {
+  if (!locale) return false;
+  const norm = String(locale).toLowerCase().trim();
+  return norm === 'ja' || norm === 'ja-jp';
+}
+
+/**
+ * 是否在 JA locale 下强制使用 JPY 结算。
+ * - 默认 false（保持 HKD 结算，安全）
+ * - 把 NEXT_PUBLIC_JA_FORCE_JPY 设为 'true' / '1' 启用
+ */
+export function isJAForceJPYEnabled(): boolean {
+  const raw = process.env.NEXT_PUBLIC_JA_FORCE_JPY;
+  if (!raw) return false;
+  const v = String(raw).toLowerCase().trim();
+  return v === 'true' || v === '1' || v === 'yes' || v === 'on';
+}
+
+/**
+ * 解析 locale 应当使用的结算币种。
+ * - JA + feature flag on → JPY
+ * - 其他 locale → 用 locale 默认（zh-hk=HKD, en=USD, ja=JPY）
+ */
+export function resolveSettlementCurrency(locale: string | undefined | null): 'HKD' | 'USD' | 'JPY' {
+  if (isJALocale(locale) && isJAForceJPYEnabled()) return 'JPY';
+  // 现有 mapping：zh-hk=HKD, en=USD, ja=JPY
+  if (locale === 'zh-hk') return 'HKD';
+  if (locale === 'en') return 'USD';
+  if (isJALocale(locale)) return 'JPY';
+  return 'HKD';
+}
+
+/** 货币符号表（含可选 override） */
+const CURRENCY_SYMBOLS: Record<'HKD' | 'USD' | 'JPY', string> = {
+  HKD: 'HK$',
+  USD: 'US$',
+  JPY: '¥',
+};
+
+/**
+ * 将基础 HKD 价格转换成目标币种（按汇率）。
+ * 注意：与 convertCurrency 不同，本函数允许外部传任意目标币种，封装层使用。
+ */
+export function convertHKDTo(hkdAmount: number, target: 'HKD' | 'USD' | 'JPY'): number {
+  const rates: Record<'HKD' | 'USD' | 'JPY', number> = {
+    HKD: 1,
+    USD: 0.128,
+    JPY: 19.5,
+  };
+  if (target === 'JPY') {
+    return Math.round(hkdAmount * rates.JPY);
+  }
+  return Math.round(hkdAmount * rates[target] * 100) / 100;
+}
+
+/**
+ * 按 locale 输出价格字符串。
+ * 集成 P0-5：当 JA locale + feature flag 开启时，使用 JPY 结算（覆盖原 ¥ 显示逻辑）。
+ */
+export function formatPriceForLocale(priceHKD: number, locale: string | undefined | null): { amount: number; currency: 'HKD' | 'USD' | 'JPY'; symbol: string; text: string } {
+  const currency = resolveSettlementCurrency(locale);
+  const symbol = CURRENCY_SYMBOLS[currency];
+  let amount: number;
+  let text: string;
+  if (currency === 'JPY') {
+    amount = convertHKDTo(priceHKD, 'JPY');
+    text = `${symbol}${amount.toLocaleString()}`;
+  } else if (currency === 'USD') {
+    amount = convertHKDTo(priceHKD, 'USD');
+    text = `${symbol}${amount.toFixed(2)}`;
+  } else {
+    amount = priceHKD;
+    text = `${symbol}${amount.toFixed(2)}`;
+  }
+  return { amount, currency, symbol, text };
+}
+
+// ============================================================================
 // 原有报价计算（书籍/画册类）
 // ============================================================================
 

@@ -2,10 +2,23 @@
 
 import { useEffect, useRef, useState, useCallback } from 'react';
 import { createElement, loadAirwallex } from 'airwallex-payment-elements';
+import { isJALocale, isJAForceJPYEnabled } from '@/lib/pricing';
 
 interface AirwallexDropInProps {
   paymentIntentId: string;
   clientSecret: string;
+  /**
+   * 当前 locale（来自 [locale] 段）。用于 P0-5 JPY 结算强制化。
+   * - 'ja' + feature flag on → 校验传入的 payment intent currency 必须是 JPY
+   * - 其他 locale → 透传
+   */
+  locale?: string;
+  /**
+   * 当前 payment intent 的 currency（来自服务端创建响应）。
+   * 与 locale 不一致时（例：JA locale 但 currency=HKD），控制台 warn，
+   * 提示运维这是 feature flag 没正确开启，或后端没传 JPY。
+   */
+  intentCurrency?: string;
   onSuccess?: () => void;
   onError?: (error: Error) => void;
 }
@@ -13,12 +26,27 @@ interface AirwallexDropInProps {
 export function AirwallexDropIn({
   paymentIntentId,
   clientSecret,
+  locale,
+  intentCurrency,
   onSuccess,
   onError,
 }: AirwallexDropInProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isReady, setIsReady] = useState<boolean>(false);
   const [error, setError] = useState<string | null>(null);
+
+  // 2026-06-14 Phase B P0-5: 校验 JA locale + feature flag 与 payment intent currency 一致性
+  useEffect(() => {
+    if (!locale) return;
+    if (!isJALocale(locale)) return;
+    if (!isJAForceJPYEnabled()) return;
+    if (!intentCurrency) return; // 未传时跳过，由调用方保证
+    if (String(intentCurrency).toUpperCase() !== 'JPY') {
+      const msg = `[P0-5] JA locale detected, NEXT_PUBLIC_JA_FORCE_JPY=true, but payment intent currency=${intentCurrency} (expected JPY). Verify the create-payment-session endpoint is passing currency=JPY for JA orders.`;
+      // eslint-disable-next-line no-console
+      console.warn(msg);
+    }
+  }, [locale, intentCurrency]);
 
   const stableOnSuccess = useCallback(() => {
     onSuccess?.();
