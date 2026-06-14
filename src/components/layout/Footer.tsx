@@ -212,6 +212,52 @@ export function Footer({ locale }: FooterProps) {
                 <Mail className="w-4 h-4" />
                 <span className="text-sm">{t.email}</span>
               </a>
+              {/* 2026-06-14 Phase B P0-6: JA 市场专属客服入口（LINE / +81 电话 / JA 邮箱）
+                  - 仅 locale === 'ja' 时渲染
+                  - 所有值从 env 读，未配置则不显示对应入口
+                  - env 配置由用户（owner）上线前填入真实值 */}
+              {locale === 'ja' && (process.env.NEXT_PUBLIC_LINE_URL || process.env.NEXT_PUBLIC_JA_PHONE || process.env.NEXT_PUBLIC_JA_EMAIL) && (
+                <div className="mt-4 pt-3 border-t border-white/10 space-y-2" data-ja-contact-block>
+                  <div className="flex items-center gap-2 text-gray-300 text-xs font-semibold uppercase tracking-wider">
+                    <span>日本市場サポート</span>
+                  </div>
+                  {process.env.NEXT_PUBLIC_LINE_URL && (
+                    <a
+                      href={process.env.NEXT_PUBLIC_LINE_URL}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-gray-400 hover:text-[#06C755] transition-colors"
+                      aria-label="LINE 公式アカウント"
+                    >
+                      {/* LINE official green logo SVG (small) */}
+                      <svg className="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="#06C755" aria-hidden="true">
+                        <path d="M12 2C6.477 2 2 5.926 2 10.748c0 4.341 3.577 7.945 8.32 8.6.323.07.764.214.876.493.1.252.066.65.032.906l-.143.86c-.044.252-.198.984.862.535 1.06-.448 5.717-3.366 7.798-5.764C20.78 14.43 22 12.694 22 10.748 22 5.926 17.523 2 12 2zm-3.6 9.6a.9.9 0 110-1.8.9.9 0 010 1.8zm5.4 0a.9.9 0 110-1.8.9.9 0 010 1.8z" />
+                      </svg>
+                      <span className="text-sm">LINE 公式アカウント</span>
+                    </a>
+                  )}
+                  {process.env.NEXT_PUBLIC_JA_PHONE && (
+                    <a
+                      href={`tel:${process.env.NEXT_PUBLIC_JA_PHONE.replace(/\D/g, '')}`}
+                      className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
+                      aria-label="日本電話"
+                    >
+                      <Phone className="w-4 h-4 flex-shrink-0" />
+                      <span className="text-sm">{process.env.NEXT_PUBLIC_JA_PHONE}</span>
+                    </a>
+                  )}
+                  {process.env.NEXT_PUBLIC_JA_EMAIL && (
+                    <a
+                      href={`mailto:${process.env.NEXT_PUBLIC_JA_EMAIL}`}
+                      className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
+                      aria-label="日本メール"
+                    >
+                      <Mail className="w-4 h-4 flex-shrink-0" />
+                      <span className="text-sm">{process.env.NEXT_PUBLIC_JA_EMAIL}</span>
+                    </a>
+                  )}
+                </div>
+              )}
               {/* Service Area - Only show for English version */}
               {locale === 'en' && t.serviceArea && (
                 <div className="flex items-center gap-2 text-gray-400 mt-3">

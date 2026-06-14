@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" role="img" aria-label="LINE QR PLACEHOLDER">
+  <rect x="0" y="0" width="120" height="120" fill="#f3f4f6" stroke="#d1d5db" stroke-width="2" stroke-dasharray="4 4"/>
+  <g font-family="system-ui, -apple-system, sans-serif" text-anchor="middle">
+    <text x="60" y="55" font-size="12" font-weight="700" fill="#374151">LINE QR</text>
+    <text x="60" y="70" font-size="12" font-weight="700" fill="#374151">PLACEHOLDER</text>
+    <text x="60" y="92" font-size="7" fill="#6b7280">上线前替换为真实 LINE 官方账号 QR</text>
+  </g>
+</svg>

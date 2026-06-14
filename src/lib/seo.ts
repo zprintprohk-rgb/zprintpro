@@ -1153,6 +1153,13 @@ import type { SchemaOrgData } from '@/types/seo';
 
 export function generateOrganizationSchema(locale: Locale): SchemaOrgData {
   const geo = geoConfig[locale];
+  // 2026-06-14 Phase B P0-6: JA locale 优先用 NEXT_PUBLIC_JA_PHONE / JA 邮箱做 contactPoint
+  // 未配置时 fallback 到默认 siteConfig.phone
+  const jaPhone = process.env.NEXT_PUBLIC_JA_PHONE;
+  const jaEmail = process.env.NEXT_PUBLIC_JA_EMAIL;
+  const isJA = locale === 'ja';
+  const contactTelephone = isJA && jaPhone ? jaPhone : (geo.phone || siteConfig.phone);
+  const contactEmail = isJA && jaEmail ? jaEmail : (siteConfig as { email?: string }).email || undefined;
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
@@ -1162,9 +1169,11 @@ export function generateOrganizationSchema(locale: Locale): SchemaOrgData {
     areaServed: geo.areaServed.map(area => ({ '@type': 'Place', name: area })),
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: geo.phone || siteConfig.phone,
+      telephone: contactTelephone,
+      ...(contactEmail ? { email: contactEmail } : {}),
       contactType: 'customer service',
       availableLanguage: ['Chinese', 'English', 'Japanese'],
+      areaServed: isJA ? 'JP' : (locale === 'en' ? 'US/GB/AU/CA/NZ/SG' : 'HK'),
     },
   };
 }
