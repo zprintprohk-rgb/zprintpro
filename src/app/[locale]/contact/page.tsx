@@ -258,13 +258,13 @@ export default function ContactPage({ params }: ContactPageProps) {
                   </a>
 
                   {/* Email — 错字已修: "電郵" */}
-                  <a href="mailto:Zprintpro@outlook.com" className="flex items-center gap-3 p-3 rounded-xl bg-gradient-to-r from-orange-50/50 to-transparent hover:from-orange-50 hover:to-orange-50/50 transition-colors group">
+                  <a href="mailto:zprintpro@outlook.com" className="flex items-center gap-3 p-3 rounded-xl bg-gradient-to-r from-orange-50/50 to-transparent hover:from-orange-50 hover:to-orange-50/50 transition-colors group">
                     <div className="w-10 h-10 rounded-lg bg-[#F87314] flex items-center justify-center flex-shrink-0 shadow-sm shadow-orange-200">
                       <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="text-[11px] text-slate-400 font-medium uppercase tracking-wide">{t.email}</div>
-                      <div className="text-sm font-semibold text-slate-700 group-hover:text-[#F87314] transition-colors truncate">Zprintpro@outlook.com</div>
+                      <div className="text-sm font-semibold text-slate-700 group-hover:text-[#F87314] transition-colors truncate">zprintpro@outlook.com</div>
                     </div>
                     <svg className="w-4 h-4 text-slate-300 group-hover:text-[#F87314] group-hover:translate-x-0.5 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
                   </a>
