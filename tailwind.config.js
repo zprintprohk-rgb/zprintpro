@@ -16,6 +16,12 @@ module.exports = {
       },
     },
     extend: {
+      // 2026-06-14 Phase B P0-4: 多语言字体集（tailwind font-ja / font-zh / font-sans）
+      fontFamily: {
+        sans: ['var(--font-inter)', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+        ja: ['var(--font-noto-jp)', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', 'Noto Sans JP', 'sans-serif'],
+        zh: ['var(--font-noto-sc)', 'PingFang HK', 'Microsoft JhengHei', 'Hiragino Sans GB', 'Noto Sans SC', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
