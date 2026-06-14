@@ -9,7 +9,12 @@ export const siteConfig = {
   alternateName: ['智印云', 'ZprintPro', 'ZprintPro Global'],
   url: 'https://zprintpro.com',
   logo: 'https://zprintpro.com/logo-icon.svg',
-  phone: '+852 6123 4567',
+  // 2026-06-15 P0: NAP 统一修复
+  // 原问题: siteConfig.phone = "+852 6123 4567" (假号), Footer = "+86 181 2638 0255" (真实号)
+  //   → Google 看到 schema 跟 UI 不一致, 判定 NAP 欺诈
+  // 修法: 全部统一到 Footer 真实号 +86 181 2638 0255 (这是公司真号, 不是胡编)
+  // 注意: 此号虽是中国内地号, 但 Footer/Contact 全部用这个, NAP 一致性优先于"地理号"
+  phone: '+86 181 2638 0255',
   email: 'zprintpro@outlook.com',
   address: {
     street: '182 Wai Yip Street',
