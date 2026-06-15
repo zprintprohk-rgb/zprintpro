@@ -120,7 +120,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       "zh-hk": {
         "title": "燙金名片 | 燙金 UV 多工藝 | 智印雲 ZprintPro",
         "description": "燙金名片/燙金名片 100 張起。採用 300g-400g 銅版紙/啞面/棉紙 高品質材質，支援 90×54mm 標準 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。1-3 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
-        "h1": "foil stamped business cards",
+        "h1": "燙金咭片 | 金屬光澤 香港本地印刷",
         "keywords": ["燙金名片", "咭片印刷"],
         "body": " gold foil printing Hong Kong"
       },
@@ -169,7 +169,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       "zh-hk": {
         "title": "局部 UV 名片 | 燙金 UV 多工藝 | 智印雲 ZprintPro",
         "description": "局部 UV 名片/UV business card 100 張起。採用 300g-400g 銅版紙/啞面/棉紙 高品質材質，支援 90×54mm 標準 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。1-3 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首",
-        "h1": "spot UV business cards",
+        "h1": "局部UV咭片 | 立體光澤視覺衝擊",
         "keywords": ["局部 UV 名片", "UV business card", "咭片印刷", "uv business cards"],
         "body": " special finish cards"
       },
@@ -267,7 +267,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       "zh-hk": {
         "title": "圓角卡片 | 燙金 UV 多工藝 | 智印雲 ZprintPro",
         "description": "圓角卡片/圓角卡片 100 張起。採用 300g-400g 銅版紙/啞面/棉紙 高品質材質，支援 90×54mm 標準 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。1-3 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
-        "h1": " safe edge cards",
+        "h1": "圓角咭片 | 柔和邊緣 創意行業首選",
         "keywords": ["圓角卡片", "咭片印刷"],
         "body": " same day delivery"
       },
@@ -365,7 +365,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       "zh-hk": {
         "title": "即日名片 | 燙金 UV 多工藝 | 智印雲 ZprintPro",
         "description": "即日名片/即時印刷 100 張起。採用 300g-400g 銅版紙/啞面/棉紙 高品質材質，支援 90×54mm 標準 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。1-3 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
-        "h1": "",
+        "h1": "即日名片 | 4小時取件 急件首選",
         "keywords": ["即日名片", "即時印刷", "名片印刷", "咭片印刷"],
         "body": " ready in 4 hours. Quality not compromised"
       },
@@ -463,7 +463,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       "zh-hk": {
         "title": "防水貼紙 | 防水 PVC 異形切割 | 智印雲 ZprintPro",
         "description": "防水貼紙/防水貼紙 100 張起。採用 防水 PVC/銅版紙/透明料 高品質材質，支援 圓/方/異形 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
-        "h1": "waterproof stickers",
+        "h1": "防水貼紙 | PVC/PP合成紙 異形切割",
         "keywords": ["防水貼紙", "防水 貼紙 印刷", "防水 pvc 貼紙"],
         "body": " food labels"
       },
