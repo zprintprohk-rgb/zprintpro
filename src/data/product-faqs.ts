@@ -500,10 +500,123 @@ export const paperBagsFAQs: FAQItem[] = [
   },
 ];
 
+// 通用 FAQ — 適用所有未自定義的 category（business-cards / books / calendars /
+// menus / banners / red-packets / envelopes / educational）
+// 含 6 個最高頻問題：最低訂量 / 印刷工期 / 配送 / 設計稿要求 / 付款方式 / 環保認證
+export const generalProductFAQs: FAQItem[] = [
+  {
+    question: {
+      'zh-hk': '產品印刷 最低訂量是多少？',
+      'en': 'What is the minimum order quantity for printing?',
+      'ja': '印刷の最小注文数はいくつですか？',
+    },
+    answer: {
+      'zh-hk': '智印雲大部分產品最低 50–100 個 / 本 / 張起訂，具體以產品頁報價為準。即日小批量急件可低至 10 張起。大量訂單享階梯折扣，請聯絡客服獲取專屬報價。',
+      'en': 'Most ZprintPro products start from 50–100 units/copies. Specific minimums are shown on each product page. Same-day small-batch rush orders are available from 10 copies. Bulk orders enjoy tiered discounts—contact us for a custom quote.',
+      'ja': 'ZprintPro のほとんどの商品は 50〜100 個/部/枚からの最小注文です。詳細は各商品ページをご覧ください。即日少量急ぎは10枚から対応。大量注文は段階割引あり、お気軽にお問い合わせください。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '印刷工期 需要多長時間？',
+      'en': 'How long does printing and delivery take?',
+      'ja': '印刷と納品にはどのくらい時間がかかりますか？',
+    },
+    answer: {
+      'zh-hk': '標準工期為 3–5 個工作天，加急件最快 24–48 小時內完成。即日交貨適用於大部分標準 SKU，建議上午 11 時前確認稿件。觀塘門市可現場打樣，港九新界 48 小時快遞直送。',
+      'en': 'Standard turnaround is 3–5 business days. Rush orders are completed in 24–48 hours. Same-day delivery is available for most standard SKUs—confirm artwork before 11 AM. Kwun Tong showroom offers on-site proofing, with 48-hour courier delivery across Hong Kong.',
+      'ja': '標準納期は 3〜5 営業日、急ぎは 24〜48 時間以内。即日納品は多くの標準 SKU で対応可能、正午までのデータ確定推奨です。観塘 showroom で現場校正、香港全域へ 48 時間配送。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '香港本地 有送貨服務嗎？',
+      'en': 'Do you offer delivery in Hong Kong?',
+      'ja': '香港内で配送サービスはありますか？',
+    },
+    answer: {
+      'zh-hk': '智印雲提供全港送貨服務，包括九龍、港島、新界及離島。訂單滿 HK$500 免運費，未滿額可選擇港鐵站交收（觀塘、旺角、銅鑼灣、尖沙咀等）。海外市場支援 DHL / FedEx 全球直送，3-5 個工作天到美國、2-4 天到日本。',
+      'en': 'ZprintPro offers Hong Kong-wide delivery including Kowloon, Hong Kong Island, New Territories, and outlying islands. Free shipping on orders over HK$500; MTR station pickup available for smaller orders (Kwun Tong, Mong Kok, Causeway Bay, Tsim Sha Tsui). International orders ship via DHL/FedEx—3-5 days to USA, 2-4 days to Japan.',
+      'ja': 'ZprintPro は九龍・香港島・新界・離島を含む香港全域に配送します。HK$500 以上で送料無料、未満は MTR 駅受取（観塘・旺角・銅鑼湾・尖沙咀など）。海外は DHL/FedEx 対応、米国 3-5 日、日本 2-4 日。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '設計稿 有什麼規格要求？',
+      'en': 'What file specifications do you need?',
+      'ja': '入稿データの仕様を教えてください。',
+    },
+    answer: {
+      'zh-hk': '建議提供 AI / PDF / EPS 格式，解析度 300dpi 以上，並預留 3mm 出血位。彩色印刷請使用 CMYK 色彩模式，文字請轉曲線。如需燙金、局部 UV、壓凹等加值工藝，請另外提供獨立黑稿（K100）標示加工位置。',
+      'en': 'Please provide AI / PDF / EPS files at 300dpi or higher with 3mm bleed. Use CMYK color mode for full-color printing and convert fonts to outlines. For foil stamping, spot UV, or embossing, supply a separate K100 black plate marking the processing areas.',
+      'ja': 'AI / PDF / EPS 形式、300dpi 以上、3mm の塗り足しを推奨します。フルカラー印刷は CMYK カラーモード、フォントはアウトライン化。箔押し・スポット UV・エンボスなどのオプション加工には、加工位置を示す K100 黒版を別途ご支給ください。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '支援 哪些付款方式？',
+      'en': 'What payment methods do you accept?',
+      'ja': '支払い方法は何が利用できますか？',
+    },
+    answer: {
+      'zh-hk': '智印雲支援 Airwallex 多幣種結算：港幣 / 美元 / 日圓 / 人民幣，Visa / Mastercard / 銀聯 / FPS / PayMe / 支付寶香港 / 微信支付。企業客戶可申請 NET 30 月結賬期。',
+      'en': 'ZprintPro supports Airwallex multi-currency settlement: HKD / USD / JPY / CNY, with Visa / Mastercard / UnionPay / FPS / PayMe / Alipay HK / WeChat Pay. Corporate accounts can apply for NET 30 monthly billing.',
+      'ja': 'ZprintPro は Airwallex マルチ通貨決済対応：HKD / USD / JPY / CNY、Visa / Mastercard / UnionPay / FPS / PayMe / Alipay HK / WeChat Pay。法人顧客は NET 30 月締請求対応可。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '紙材 是環保認證的嗎？',
+      'en': 'Are your paper materials eco-certified?',
+      'ja': '紙素材に環境認証はありますか？',
+    },
+    answer: {
+      'zh-hk': '智印雲所有紙張均通過 FSC 森林管理委員會認證，可持續採購。環保系列額外採用再生紙 / 大豆油墨，可完全降解，無毒無味。適合注重 ESG 形象的企業、社會企業及 NGO。',
+      'en': 'All ZprintPro paper is FSC (Forest Stewardship Council) certified for sustainable sourcing. Our eco line additionally uses recycled paper and soy-based inks—fully biodegradable and non-toxic. Ideal for ESG-focused corporates, social enterprises, and NGOs.',
+      'ja': 'ZprintPro の紙材は全て FSC（森林管理協議会）認証を取得。エコシリーズは再生紙・大豆インクを採用、完全生分解性・無毒無臭。ESG 重視の企業・社会企業・NGO に最適。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '急件 / 加急 如何收費？',
+      'en': 'How much does rush delivery cost?',
+      'ja': '急ぎ/速納の追加料金は？',
+    },
+    answer: {
+      'zh-hk': '48 小時快遞免費（港九新界大部分地區）。即日 4 小時取件加收 HK$80–150（視產品類型）。加急件可聯絡客服走專屬急件通道，產能優先排程。',
+      'en': '48-hour delivery is free for most Hong Kong areas. Same-day 4-hour pickup adds HK$80–150 (depending on product type). For urgent orders, contact our team for a dedicated rush channel with priority production scheduling.',
+      'ja': '48 時間配送は香港大部分の地域で無料。即日 4 時間受取は HK$80〜150 追加（商品による）。急ぎは專用急便チャンネルをカスタマーサポートまで、優先生産スケジュールで対応。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '不滿意 可以重印嗎？',
+      'en': 'Can you reprint if I am not satisfied?',
+      'ja': '仕上がりに不満があれば再印刷できますか？',
+    },
+    answer: {
+      'zh-hk': '智印雲提供「不滿意免費重印」承諾。若成品顏色 / 裁切 / 裝訂與確認樣稿不符，我們承擔重印費用。請於收貨 7 個工作天內提交問題照片與訂單號碼，客服 24 小時內回覆處理方案。',
+      'en': 'ZprintPro offers a "Free Reprint If Unsatisfied" guarantee. If color, cutting, or binding does not match the approved proof, we cover reprinting costs. Please submit issue photos and order number within 7 business days of receipt—our team responds within 24 hours.',
+      'ja': 'ZprintPro は「ご不満なら無料再印刷」保証を提供。色・裁断・製本が承認サンプルと相違する場合、再印刷費用は当社負担。商品受領後 7 営業日以内に問題写真と注文番号をご提出ください、24 時間以内に対応。',
+    },
+  },
+];
+
 export const coreProductFAQMap: Record<string, FAQItem[]> = {
   stickers: stickersFAQs,
   flyers: flyersFAQs,
   'packaging-boxes': packagingBoxesFAQs,
   posters: postersFAQs,
   'paper-bags': paperBagsFAQs,
+  // 通用 FAQ 兜底 — 適用所有未自定義的 category
+  'business-cards': generalProductFAQs,
+  books: generalProductFAQs,
+  calendars: generalProductFAQs,
+  menus: generalProductFAQs,
+  banners: generalProductFAQs,
+  'red-packets': generalProductFAQs,
+  envelopes: generalProductFAQs,
+  educational: generalProductFAQs,
+  // packaging 沒有專屬 FAQ（只有 packaging-boxes），回退到通用
+  packaging: generalProductFAQs,
 };

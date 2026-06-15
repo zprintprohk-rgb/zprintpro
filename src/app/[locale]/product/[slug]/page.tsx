@@ -187,7 +187,8 @@ export default function ProductPage({
   const breadcrumbJsonLd = generateBreadcrumbJsonLd(breadcrumbItems);
 
   // FAQPage Schema — 优先使用新集中式FAQ数据（按分类映射）
-  const coreFaqs = coreProductFAQMap[product.category_slug];
+  // 兜底：所有 category 已在 product-faqs.ts 注册 generalProductFAQs 通用集
+  const coreFaqs = coreProductFAQMap[product.category_slug] || coreProductFAQMap['educational'];
   const faqItems = coreFaqs
     ? coreFaqs.map((faq: { question: Record<Locale, string>; answer: Record<Locale, string> }) => ({ q: faq.question[locale], a: faq.answer[locale] }))
     : undefined;

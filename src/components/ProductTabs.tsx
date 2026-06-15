@@ -17,8 +17,8 @@ interface ProductTabsProps {
   locale: Locale;
 }
 
-// 各品类规格参数映射 — 根据品类动态显示
-const specsByCategory: Record<string, {
+// 各品類規格參數映射 — 按 slug 索引（支援 educational 4 SKU 各自獨立）
+const specsBySlug: Record<string, {
   material: Record<string, string>;
   size: Record<string, string>;
   finish: Record<string, string>;
@@ -83,10 +83,26 @@ const specsByCategory: Record<string, {
     size: { 'zh-hk': 'DL / C5 / C4 / 自定', en: '#10 / A2 / A4 / Custom', ja: 'DL / C5 / C4 / カスタム' },
     finish: { 'zh-hk': '單色/彩色印刷', en: 'Single/Full Color', ja: '単色/フルカラー' },
   },
-  'educational': {
-    material: { 'zh-hk': '按產品類型', en: 'Per Product Type', ja: '製品タイプ別' },
-    size: { 'zh-hk': '按產品類型', en: 'Per Product Type', ja: '製品タイプ別' },
-    finish: { 'zh-hk': '按產品類型', en: 'Per Product Type', ja: '製品タイプ別' },
+  // Educational 4 SKU — 各自獨立規格（之前統一填「按產品類型」是 bug）
+  'exercise-books': {
+    material: { 'zh-hk': '80g-100g 高級書紙 / 道林紙', en: '80g-100g Premium Book / Wood-free Paper', ja: '80g-100g 高級書籍紙/上質紙' },
+    size: { 'zh-hk': 'A4 / B5 / 16 開', en: 'A4 / B5 / 16-mo', ja: 'A4 / B5 / 16 判' },
+    finish: { 'zh-hk': '騎馬釘裝訂（封面四色印刷）', en: 'Saddle-stitch (4-color cover)', ja: '中綴じ（表紙4色印刷）' },
+  },
+  'certificates': {
+    material: { 'zh-hk': '200g-250g 水印紙 / 棉質紙 / 無酸紙', en: '200g-250g Watermarked / Cotton / Acid-free Paper', ja: '200g-250g 透かし紙/コットン紙/無酸紙' },
+    size: { 'zh-hk': 'A4 / A5 / 客製', en: 'A4 / A5 / Custom', ja: 'A4 / A5 / カスタム' },
+    finish: { 'zh-hk': '燙金 / 燙銀 / 玫瑰金 / 壓凹 / 浮水印', en: 'Gold/Silver/Rose Gold Foil / Emboss / Watermark', ja: '金/銀/ローズ金箔 / エンボス / 透かし' },
+  },
+  'school-flyers': {
+    material: { 'zh-hk': '128g-157g 高級銅版紙 / 書紙', en: '128g-157g Premium Gloss / Book Paper', ja: '128g-157g 高級コート紙/書籍紙' },
+    size: { 'zh-hk': 'A4 / A5 / 16 開', en: 'A4 / A5 / 16-mo', ja: 'A4 / A5 / 16 判' },
+    finish: { 'zh-hk': '四色柯式 / 數碼印刷 / 單雙面可選', en: '4-color Offset / Digital / Single or Double-sided', ja: '4色オフセット/デジタル/片面・両面' },
+  },
+  'textbooks': {
+    material: { 'zh-hk': '80g-100g 道林紙 / 書紙', en: '80g-100g Wood-free / Book Paper', ja: '80g-100g 上質紙/書籍紙' },
+    size: { 'zh-hk': 'A4 / B5 / 16 開', en: 'A4 / B5 / 16-mo', ja: 'A4 / B5 / 16 判' },
+    finish: { 'zh-hk': '騎馬釘 / 膠裝（封面四色 / 內頁單雙色）', en: 'Saddle / Perfect Bound (4-color cover, 1-2 color inner)', ja: '中綴じ/無線綴じ（表紙4色・本文単〜2色）' },
   },
 };
 
@@ -140,20 +156,34 @@ export function ProductTabs({ product, locale }: ProductTabsProps) {
 
   const t = translations[locale];
   const description = getProductDescription(product, locale);
-  const specs = specsByCategory[product.category] || specsByCategory['educational'];
+  // 用 slug 索引（educational 4 SKU 各自獨立規格）
+  const specs = specsBySlug[product.slug] || specsBySlug[product.category] || specsBySlug['business-cards'];
 
   const getSpec = (key: 'material' | 'size' | 'finish') => {
     return specs[key][locale] || specs[key]['en'];
   };
 
-  // 根据品类生成特点
+  // 根據 slug 查找；找不到 fallback 到 category；都找不到用通用 features
   const getFeatures = () => {
     const map: Record<string, string[][]> = {
       'paper-bags': ['zh-hk,多種尺寸可選,牛皮紙/白卡紙,加厚手柄牢固,可自訂Logo印刷'.split(','), 'en,Multiple sizes available,Kraft/white card stock,Reinforced handles,Full-color custom logo printing'.split(','), 'ja,多種サイズ対応,クラフト/白カード,補強ハンドル,フルカラーロゴ印刷'.split(',')],
       'business-cards': ['zh-hk,高品質四色印刷,多種紙張可選,即日交貨服務,免費設計諮詢'.split(','), 'en,High-quality full-color printing,Multiple paper options,Same-day delivery,Free design consultation'.split(','), 'ja,高品質4色印刷,複数の紙種選択可,即日納品サービス,無料デザイン相談'.split(',')],
       'flyers': ['zh-hk,標準A4/A5尺寸,157g銅版紙,色彩鮮豔飽滿,適合大量派發'.split(','), 'en,Standard Letter (8.5×11") & Half-Letter sizes,100lb gloss text stock,Vibrant full-color printing,Perfect for mass distribution'.split(','), 'ja,標準A4/A5サイズ,157gコート紙,鮮やかな色彩,大量配布に最適'.split(',')],
+      'stickers': ['zh-hk,PVC防水材質,異形模切可選,多種尺寸定制,撕不殘膠可選'.split(','), 'en,PVC waterproof,Custom die-cut shapes,Multiple sizes,Removable adhesive option'.split(','), 'ja,PVC防水素材,カスタムダイカット,複数サイズ,再剥離粘着剤選択可'.split(',')],
+      'posters': ['zh-hk,A1/A2/A3 多尺寸,高清柯式印刷,PP裱貼可選,展覽活動適用'.split(','), 'en,A1/A2/A3 sizes,High-resolution offset,PP lamination option,Exhibition-ready'.split(','), 'ja,A1/A2/A3サイズ,高解像度オフセット,PPラミネート選択可,展示対応'.split(',')],
+      'packaging': ['zh-hk,白卡/牛皮紙/瓦楞,結構設計免費,燙金UV可選,FSC認證紙'.split(','), 'en,White card/Kraft/Corrugated,Free structural design,Foil/UV options,FSC certified'.split(','), 'ja,白カード/クラフト/段ボール,構造設計無料,箔/UV選択可,FSC認証紙'.split(',')],
+      'red-packets': ['zh-hk,120g-200g 紅色紙,燙金/浮雕/UV,客製Logo服務,婚禮企業適用'.split(','), 'en,120g-200g Red paper,Foil/Emboss/UV,Custom logo service,For weddings & corporate'.split(','), 'ja,120g-200g 紅色紙,箔押し/エンボス/UV,ロゴカスタム,婚礼・企業向け'.split(',')],
+      'calendars': ['zh-hk,250g-300g 銅版紙,騎馬釘/圈裝/膠裝,封面燙金可選,座枱掛牆多款'.split(','), 'en,250g-300g Art paper,Saddle/Spiral/Perfect bound,Foil cover options,Desk or wall formats'.split(','), 'ja,250g-300g コート紙,中綴じ/スパイラル/無線,箔押し表紙選択可,卓上/壁掛け'.split(',')],
+      'menus': ['zh-hk,PVC防水耐用,過膠防油,多摺頁設計,咖啡廳餐廳適用'.split(','), 'en,PVC waterproof durable,Laminated oil-proof,Multi-fold design,For cafés & restaurants'.split(','), 'ja,PVC防水耐久,ラミネート耐油,多折デザイン,カフェ・レストラン向け'.split(',')],
+      'banners': ['zh-hk,戶外耐候 3-6 個月,UV固化墨水,包邊打孔可選,展會活動適用'.split(','), 'en,Outdoor 3-6 months,UV-cured inks,Hemming/grommets,For exhibitions & events'.split(','), 'ja,屋外耐候3-6ヶ月,UV硬化インク,ヘミング/ハトメ,展示・イベント向け'.split(',')],
+      'books': ['zh-hk,騎馬釘/膠裝/精裝,封面覆膜可選,內頁銅版紙,同人誌紀念冊適用'.split(','), 'en,Saddle/Perfect/Hardcover,Cover lamination,Glossy inner pages,For zines & memorials'.split(','), 'ja,中綴じ/無線綴じ/ハード,表紙ラミネート,光沢本文,同人誌・記念誌向け'.split(',')],
+      'envelopes': ['zh-hk,DL/C5/C4 國際標準,自黏封口可選,燙金Logo免費,企業郵寄適用'.split(','), 'en,DL/C5/C4 standard,Self-seal option,Free foil logo,For corporate mailings'.split(','), 'ja,DL/C5/C4規格,自己封緘選択可,箔押しロゴ無料,企業郵送向け'.split(',')],
+      'exercise-books': ['zh-hk,FSC認證環保紙,封面免費印Logo,橫線/方格/田字格可選,學校補習社適用'.split(','), 'en,FSC certified eco paper,Free cover logo,Ruled/grid/blank inner,For schools & tutors'.split(','), 'ja,FSC認証エコ紙,表紙ロゴ無料,横罫/方眼/白紙選択可,学校・塾向け'.split(',')],
+      'certificates': ['zh-hk,燙金/燙銀/玫瑰金,防偽浮水印,ISO 9706 永久保存,大學企業適用'.split(','), 'en,Gold/Silver/Rose Gold foil,Anti-counterfeit watermark,ISO 9706 archival,For universities & corporates'.split(','), 'ja,金/銀/ローズ金箔,偽造防止透かし,ISO 9706永久保存,大学・企業向け'.split(',')],
+      'school-flyers': ['zh-hk,128g-157g 銅版紙,四色柯式印刷,QR Code報名連結,學校招生適用'.split(','), 'en,128g-157g Gloss paper,4-color offset,QR registration link,For school enrollment'.split(','), 'ja,128g-157g コート紙,4色オフセット,QR登録リンク,学校募集向け'.split(',')],
+      'textbooks': ['zh-hk,道林紙輕薄不反光,符合教育局規範,ISBN 條碼加印,補習社出版適用'.split(','), 'en,Lightweight non-glare paper,Education Bureau compliant,ISBN barcode add-on,For tutors & publishers'.split(','), 'ja,軽量非反射紙,教育局準拠,ISBNバーコード追加,塾・出版向け'.split(',')],
     };
-    const list = map[product.category];
+    const list = map[product.slug] || map[product.category];
     if (!list) {
       return locale === 'zh-hk' ? ['高品質印刷', '環保材料', '即日交貨', '免費設計諮詢']
         : locale === 'en' ? ['High-quality printing', 'Eco-friendly materials', 'Same-day delivery', 'Free design consultation']
@@ -168,8 +198,20 @@ export function ProductTabs({ product, locale }: ProductTabsProps) {
       'flyers': ['zh-hk,產品推廣,活動宣傳,餐飲外賣,開業慶典'.split(','), 'en,Product promotion,Event advertising,Food delivery,Grand opening'.split(','), 'ja,製品プロモーション,イベント宣伝,フードデリバリー,開業セレモニー'.split(',')],
       'stickers': ['zh-hk,產品標籤,品牌貼紙,包裝裝飾,促銷活動'.split(','), 'en,Product labels,Brand stickers,Packaging decoration,Promotions'.split(','), 'ja,製品ラベル,ブランドステッカー,包装装飾,プロモーション'.split(',')],
       'paper-bags': ['zh-hk,零售購物,禮品包裝,品牌宣傳,活動贈品'.split(','), 'en,Retail shopping,Gift packaging,Brand promotion,Event giveaways'.split(','), 'ja,小売ショッピング,ギフト包装,ブランドプロモーション,イベント景品'.split(',')],
+      'posters': ['zh-hk,商場展覽,藝廊開幕,演唱會宣傳,品牌活動'.split(','), 'en,Mall exhibitions,Gallery openings,Concert promotion,Brand events'.split(','), 'ja,商场展示,ギャラリー開幕,コンサート宣伝,ブランドイベント'.split(',')],
+      'packaging': ['zh-hk,電商物流,禮品包裝,品牌旗艦,節日禮盒'.split(','), 'en,E-commerce shipping,Gift packaging,Brand flagship,Festival gift boxes'.split(','), 'ja,EC物流,ギフト包装,ブランドフラッグ,祝日ギフトボックス'.split(',')],
+      'red-packets': ['zh-hk,企業年會,婚禮回禮,品牌活動,會員回饋'.split(','), 'en,Corporate events,Wedding favors,Brand campaigns,Member rewards'.split(','), 'ja,企業イベント,婚礼引出物,ブランドキャンペーン,会員特典'.split(',')],
+      'calendars': ['zh-hk,企業禮品,品牌年曆,客戶送禮,辦公擺設'.split(','), 'en,Corporate gifts,Brand calendars,Client gifts,Office décor'.split(','), 'ja,企業ギフト,ブランドカレンダー,顧客ギフト,オフィス装飾'.split(',')],
+      'menus': ['zh-hk,咖啡廳,茶餐廳,酒吧,居酒屋'.split(','), 'en,Cafés,Tea restaurants,Bars,Izakaya'.split(','), 'ja,カフェ,茶餐廳,バー,居酒屋'.split(',')],
+      'banners': ['zh-hk,建築圍板,工地告示,巴士站,廣告燈箱'.split(','), 'en,Construction hoarding,Site notices,Bus stops,Ad lightboxes'.split(','), 'ja,建設現場囲い,現場告知,バス停,広告灯箱'.split(',')],
+      'books': ['zh-hk,同人誌,學校刊物,產品手冊,會議議程'.split(','), 'en,Zines,School publications,Product manuals,Meeting agendas'.split(','), 'ja,同人誌,学校出版物,製品マニュアル,会議アジェンダ'.split(',')],
+      'envelopes': ['zh-hk,商務信函,合約標書,正式文件,品牌郵件'.split(','), 'en,Business letters,Contract bids,Official documents,Brand mailings'.split(','), 'ja,ビジネスレター,契約入札,公式文書,ブランド郵送'.split(',')],
+      'exercise-books': ['zh-hk,K12 學校,補習社,暑期作業,班級教材'.split(','), 'en,K12 schools,Tutoring centers,Summer homework,Class materials'.split(','), 'ja,K12学校,塾,夏休みの宿題,クラス教材'.split(',')],
+      'certificates': ['zh-hk,大學畢業,專業認證,企業培訓,競賽獎狀'.split(','), 'en,University graduation,Professional certs,Corporate training,Competition awards'.split(','), 'ja,大学卒業,專業資格,企業研修,コンペ賞状'.split(',')],
+      'school-flyers': ['zh-hk,招生宣傳,活動通告,家長通知,課程介紹'.split(','), 'en,Enrollment promotion,Event notices,Parent letters,Course intros'.split(','), 'ja,募集宣伝,イベント通知,保護者通知,コース紹介'.split(',')],
+      'textbooks': ['zh-hk,補習社教材,出版社,K12 學校,專業培訓'.split(','), 'en,Tutor materials,Publishers,K12 schools,Professional training'.split(','), 'ja,塾教材,出版社,K12学校,專業研修'.split(',')],
     };
-    const list = map[product.category];
+    const list = map[product.slug] || map[product.category];
     if (!list) {
       return locale === 'zh-hk' ? ['企業宣傳', '活動推廣', '產品包裝', '品牌展示']
         : locale === 'en' ? ['Corporate promotion', 'Event promotion', 'Product packaging', 'Brand display']
