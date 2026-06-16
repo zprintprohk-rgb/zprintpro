@@ -138,18 +138,198 @@ export const products: Product[] = [
 
 <h3>智印雲 SaaS 印刷服務</h3>
 <p>智印雲 (ZprintPro) —— 香港本地印刷 SaaS，支持 30 秒 AI 報價及 72 小時全球交付。自有觀塘門市自取點，48 小時快遞直送港九新界。</p>`,
-    longDescriptionEn: `ZprintPro Premium Business Cards use 300g premium glossy art paper or 250g matte art paper, paired with Heidelberg 4-color offset printing for fine halftone reproduction and 90%+ color saturation. Surface options include matte or gloss lamination with optional spot UV or foil stamping. Standard size 85×54mm with optional R3mm rounded corners. Free color proofing ensures batch consistency. Ideal for executives, finance, legal, and creative professionals.`,
-    longDescriptionJa: `当サービスでは名刺印刷 即日対応にこだわり、300gの高級コート紙または250gマットアート紙を採用し、ハイデルベルク4色オフセット印刷で90%以上の色飽和と繊細な網点再現を実現しています。マット／グロスラミネートに加え、スポットUVや箔押し（金・銀・ローズゴールド）もご選択いただけ、ブランドの世界観に合わせたプレミアム名刺へと仕上げます。
+    longDescriptionEn: `<h3>Premium Business Cards for Global Brands</h3>
+<p>ZprintPro premium business cards are designed for executives, finance, and legal professionals across the US and global markets. Choose from 300g-400g matte, cotton, or coated paper with foil stamping, spot UV, and embossing. Heidelberg 4-color offset printing delivers 90%+ color saturation and crisp halftone reproduction, while optional R3mm rounded corners add a refined touch. Standard 85×54mm size, 100-card MOQ, with free color proofing to ensure batch consistency.</p>
 
-名刺 印刷 激安 ネット注文をご希望の方へ。当サービスはネット注文の利便性と高品質を両立しており、100枚からご注文可能、500枚以上で15%オフ、1,000枚以上で25%オフ、2,000枚以上で35%オフの段階割引をご用意しています。最短当日データ確定後3営業日で全国へ出荷。東京・大阪・名古屋・福岡・横浜へは翌日配送にも対応し、ヤマト運輸・佐川急便での追跡可能な発送を行っております。
+<h3>Material & GSM Comparison</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Weight</th>
+      <th class="p-2 text-center">Rigidity</th>
+      <th class="p-2 text-center">Feel</th>
+      <th class="p-2 text-center">Cost</th>
+      <th class="p-2 text-left">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">300g Matte</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Startups, general business</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">350g Cotton</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">Creative agencies, designers</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">400g Premium</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Lawyers, finance, luxury brands</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">600g Ultra</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★</td><td class="p-2">VIP cards, executive suites</td></tr>
+  </tbody>
+</table>
 
-名刺 オーダーメイド 業者をお探しの皆様に。ロゴ・写真・QRコードまで鮮明に再現する4色プロセス印刷、完全データ入稿からデザイン作成サービス（3案まで無料）まで柔軟に対応。標準85×54mmサイズのほか、R3mm丸角ダイカット、600g超厚紙、特殊加工（エンボス・パール箔・ホログラム）などのカスタマイズも承っております。全工程を香港自社工場で印刷し、国内検品・税込価格表示・日本語サポートで日本市場向けに最適化しています。
+<h3>Printing & Finish Options</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Finish</th>
+      <th class="p-2 text-left">Effect</th>
+      <th class="p-2 text-center">Lead Time</th>
+      <th class="p-2 text-center">Cost Add</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">Matte Lamination</td><td class="p-2">Soft-touch, fingerprint resistant</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Gloss Lamination</td><td class="p-2">High-shine, vibrant colors</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Foil Stamping (Gold/Silver/Rose Gold)</td><td class="p-2">Metallic shine, luxury feel</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Spot UV</td><td class="p-2">Glossy dimensional contrast</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Embossing / Rounded Corners</td><td class="p-2">Tactile depth, soft aesthetic</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
+  </tbody>
+</table>
 
-名刺 印刷 テンプレート 無料をご希望の方へ。Ai・PDF・PNG・JPG対応の無料デザインテンプレートを豊富にご用意しており、初めての方でも安心してオリジナル名刺を作成できます。テンプレートは業種別（弁護士・デザイナー・エンジニア・飲食・美容など）100種以上を取り揃え、企業ロゴやブランドカラーの差し替えも簡単です。
+<h3>Why Choose ZprintPro?</h3>
+<ul>
+  <li><strong>Global Shipping:</strong> DHL Express 2-4 days to US/UK/AU/KR/SG/AE. Free US shipping on orders over $100.</li>
+  <li><strong>Certified Quality:</strong> FSC paper, ISO 9001 manufacturing, ISO 12647 color management, Delta E ≤2.</li>
+  <li><strong>Low MOQ with Volume Discount:</strong> 100-card minimum, 15% off at 500+, 25% off at 1,000+.</li>
+  <li><strong>Free Sample Proofing:</strong> Digital color proof before production, free reprints if color drifts.</li>
+  <li><strong>Variable Data Printing:</strong> Per-card customization (name, title, QR code) for sales teams of 100+.</li>
+</ul>
 
-名刺 印刷 失敗 事例で多い「色ズレ・糊不良・裁断ズレ」を未然に防ぐため、無料のカラープルーフと刀型チェックを全ご注文に標準で実施しています。印刷面と箔押し面の位置ズレ、CCMYK変換時の色域外警告、データ不備の事前検出まで一貫サポート。印刷品質に妥協したくない方に選ばれているサービスです。
+<h3>Use Cases & Industries</h3>
+<p>Premium business cards are the first handshake of your brand. ZprintPro serves executives at Fortune 500 finance firms, partners at law offices, founders at tech startups, and creative directors at agencies. For US-based professionals, we offer rush turnaround (1-3 business days) with same-day file confirmation. For international clients in the UK, Australia, Korea, Singapore, and the UAE, DHL Express delivers in 2-4 days. Common use cases include corporate rebrand rollouts, conference name badges, client gift packets, and individual executive updates.</p>
 
-運営会社：ZprintPro Limited（香港本社）。所在地：香港九龍観塘偉業街82号成運工業ビル。日本語サポート受付：平日 9:00-18:00（日本時間）。ISO 9001認証取得、国内検品体制、FSC認証紙対応。決済：JPY（日本円）、クレジットカード（VISA／Master／Amex／JCB）、Alipay、銀聯。送料：¥10,000以上のご注文で全国送料無料、特定商取引法に基づく表記・プライバシーポリシー・利用規約・お問い合わせの全リンクをフッターに掲載しております。今すぐご注文、無料見積もり、サンプル請求はこちらから。`,
+<h3>Frequently Asked Questions</h3>
+<details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>100 cards. Sample orders of 10-50 cards are available for design proofing (rush fee applies).</p></details>
+<details class="my-2"><summary><strong>How long does production take?</strong></summary><p>Standard production is 3-5 business days after artwork approval. Rush production (1-2 days) is available for orders up to 500 cards.</p></details>
+<details class="my-2"><summary><strong>Do you offer double-sided printing?</strong></summary><p>Yes. Double-sided 4-color CMYK is standard. Submit two files (front and back) or one combined file with separate layers.</p></details>
+<details class="my-2"><summary><strong>Can I order different names on each card?</strong></summary><p>Yes. Variable data printing allows per-card customization. Submit an Excel/CSV file with name, title, and contact details. Minimum 100 cards for variable orders.</p></details>
+<details class="my-2"><summary><strong>How is shipping calculated to my country?</strong></summary><p>US orders over $100 ship free via DHL Express (2-4 business days). UK/AU orders over £80 / AU$150 ship free. KR/SG/AE ship via DHL Express at standard rates (calculated at checkout). Tracking provided for all shipments.</p></details>
+<details class="my-2"><summary><strong>What if I'm not happy with the print quality?</strong></summary><p>We provide free digital color proofing before production. If the final print drifts from approved proof, we reprint at no cost or refund in full. Your satisfaction is guaranteed.</p></details>
+
+<p><em>Printed in our Hong Kong facility, shipped worldwide via DHL Express. ZprintPro — your global printing partner for premium business cards, packaging, and marketing materials.</em></p>
+
+    `,
+<h3>紙質材質対比</h3>
+<p>プレミアム名刺は 4 種類の高級紙質をご用意、ブランドイメージと予算に応じて選択可能。</p>
+<table>
+  <thead>
+    <tr><th>紙質</th><th>克重</th><th>特性</th><th>適用場景</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>アート紙</td><td>300g–400g</td><td>表面平滑、印刷再現性最良、スタンダード名刺</td><td>一般ビジネス・営業</td></tr>
+    <tr class="border-b border-gray-200"><td>マット紙</td><td>250g–300g</td><td>上品な雾面感、視認性高、フォーマル</td><td>士業・コンサル・金融</td></tr>
+    <tr class="border-b border-gray-200"><td>コットン紙</td><td>250g–300g</td><td>繊維質の高級感、独特の手触り、エコ</td><td>クリエイティブ・デザイン</td></tr>
+    <tr><td>ケント紙</td><td>250g</td><td>シンプルで誠実な印象、コストパフォーマンス高</td><td>スタートアップ・ベンチャー</td></tr>
+  </tbody>
+</table>
+
+<h3>高級加値工藝</h3>
+<p>プレミアム名刺の最大の特徴は「加値工藝」。箔押し・スポット UV・エンボスで他者と差別化。</p>
+<table>
+  <thead>
+    <tr><th>工藝</th><th>効果</th><th>適用場面</th><th>追加料金</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>箔押し（金/銀/ローズ）</td><td>金属光沢、ロゴや社名を立体的に</td><td>ブランド名・ロゴ・記念日</td><td>+20%</td></tr>
+    <tr class="border-b border-gray-200"><td>スポット UV</td><td>部分的光沢、コントラストで注目度 UP</td><td>ロゴ・イラスト・写真</td><td>+15%</td></tr>
+    <tr class="border-b border-gray-200"><td>エンボス（浮き出し）</td><td>触覚的高級感、視えない特別感</td><td>記念版・VIP 名刺</td><td>+25%</td></tr>
+    <tr><td>角丸加工</td><td>R3/R5/R10 角丸、ソフトな印象</td><td>クリエイティブ・デザイナー</td><td>+10%</td></tr>
+  </tbody>
+</table>
+
+<h3>印刷工藝説明</h3>
+<ul>
+  <li><strong>4 色 CMYK 両面印刷</strong>：表面におもて面（ロゴ・氏名）、裏面に日本語/英語併記の連絡先</li>
+  <li><strong>ISO 12647 色彩管理</strong>：ブランドカラー厳守、再印刷時の色再現も安定</li>
+  <li><strong>個別データ可変印刷</strong>：1 枚ごとに氏名・連絡先が違う可変データ対応、100 名以上の営業チーム名刺に最適</li>
+  <li><strong>極小ロット特急</strong>：50 枚でも特急料金で 1〜2 営業日納品、急ぎの役員名刺も対応</li>
+  <li><strong>印前 AI 預検</strong>：無料 AI チェックでトンボ・CMYK・フォント埋め込みを自動検証</li>
+</ul>
+
+<h3>FSC 認証と ISO 12647 色彩管理</h3>
+<p>智印雲 ZprintPro のプレミアム名刺は <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> 基準。ブランドカラーを厳守し、再発注時の色再現も安定。ESG 報告用の紙材トレーサビリティもご提供。士業・金融・クリエイティブなど格式高い業界のプロフェッショナル向けに、最適な名刺ソリューションをご提案します。</p>
+
+<h3>法人・大量発注対応</h3>
+<p>智印雲 ZprintPro は香港 5,000 社以上の法人名刺取引実績。</p>
+<ul>
+  <li><strong>営業チーム 100 名以上</strong>：個別データ可変印刷、部署別カラー分け対応</li>
+  <li><strong>NET 30 月締請求書払い</strong>：法人掛売り対応、与信審査後サービス開始</li>
+  <li><strong>継続発注割引</strong>：年間 1,000 枚以上のご注文は 25% オフ、5,000 枚以上は 35% オフ</li>
+  <li><strong>緊急再発注</strong>：営業メンバーの急な入社・異動にも 24 時間特急で対応</li>
+  <li><strong>日本語請求書・領収書</strong>：経費精算・会計処理に対応、インボイス制度対応</li>
+</ul>
+
+<h3>プレミアム名刺の標準仕様</h3>
+<p>智印雲 ZprintPro プレミアム名刺の標準仕様と日本向け最適化。</p>
+<ul>
+  <li><strong>標準サイズ</strong>：91mm × 55mm（日本の名刺規格）</li>
+  <li><strong>横向き・縦向き</strong>：両対応、データ入稿時にご指定</li>
+  <li><strong>両面印刷</strong>：標準対応、表面と裏面で異なる情報掲載可能</li>
+  <li><strong>角の形状</strong>：標準は直角（無料）、R3/R5/R10 角丸加工（+10%）</li>
+  <li><strong>納期</strong>：標準 3〜5 営業日、特急 1〜2 営業日、日本向け配送 2〜4 日</li>
+</ul>
+
+<h3>業界別活用事例と導入効果</h3>
+<p>本サービスの {PRODUCT_NAME} は、国内外 5,000 社以上の法人取引実績があり、業界別の課題と要件に応じた最適ソリューションをご提供しています。</p>
+<ul>
+  <li><strong>小売・ブランドオーナー</strong>：店舗ロゴ入りオリジナル商品でブランド認知度向上、リピート率 30% UP 事例多数</li>
+  <li><strong>飲食店・カフェ</strong>：テイクアウト需要増で大量発注対応、印刷コスト 25% 削減事例あり</li>
+  <li><strong>アパレル・セレクトショップ</strong>：店舗体験の質向上、ESG 配慮の紙袋でサステナブルブランドイメージ強化</li>
+  <li><strong>化粧品・コスメブランド</strong>：高級感あふれるパッケージで商品価値 UP、消費者レビューで「プレゼント向き」言及増加</li>
+  <li><strong>教育・スクール・塾</strong>：教材・案内チラシの一括印刷で教務業務時間 50% 削減、ブランド統一感向上</li>
+  <li><strong>不動産・住宅</strong>：物件資料・募集チラシの高品質印刷で問い合わせ数 40% UP 事例あり</li>
+  <li><strong>クリニック・医院</strong>：予防接種・健診案内の即日印刷で患者サービス向上</li>
+  <li><strong>イベント・展示会主催</strong>：ポスター・チラシ・配布物のワンストップ印刷、当日仕上げ対応</li>
+</ul>
+
+<h3>失敗しない発注のための 5 つのポイント</h3>
+<p>ご注文前に、以下の 5 つのポイントをご確認いただくと、発注後のトラブルを未然に防げます：</p>
+<ul>
+  <li><strong>用途を明確にする</strong>：屋内 or 屋外 / 短期 or 長期 / 耐水性が必要か、を事前に決定</li>
+  <li><strong>データ形式を準備する</strong>：Illustrator / InDesign / PDF 形式推奨、CMYK モード・トンボ付き</li>
+  <li><strong>数量は段階割引を考慮する</strong>：500 枚 / 1,000 枚 / 5,000 枚で割引率が UP、まとめて発注がお得</li>
+  <li><strong>納期に余裕を持つ</strong>：繁忙期（クリスマス / 年末年始 / 2 月 / 8 月）は 1 ヶ月前発注推奨</li>
+  <li><strong>サンプル請求を活用する</strong>：実物を見てから本印刷に進めるため、ミスマッチ防止</li>
+</ul>
+
+<h3>当サービスが選ばれる 5 つの理由</h3>
+<p>香港本社の印刷 SaaS として、日本語・日本市場向けに最適化されたサービスを提供しています：</p>
+<ul>
+  <li><strong>日本語ネイティブ対応</strong>：日本語カスタマーサポート平日 9:00〜18:00、日本向け請求書・領収書発行</li>
+  <li><strong>JPY 日本円建て明朗会計</strong>：為替変動リスクなし、経費精算しやすい</li>
+  <li><strong>30 秒 AI 見積もり</strong>：画面上で簡単設定、送料込みの総額表示で安心</li>
+  <li><strong>DHL/FedEx 直送 2-4 日</strong>：沖縄・離島も別途見積もり、全国配送対応</li>
+  <li><strong>FSC 認証 + 大豆インク</strong>：ESG 配慮、サステナブル調達要件に対応</li>
+</ul>
+
+<h3>配送方式と国際物流</h3>
+<p>日本向け配送に特化した 3 つのプランをご用意。ご注文数量・納期・配送先に応じて最適なプランを選択可能です：</p>
+<table>
+  <thead>
+    <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3〜5 営業日</td><td>少量追加料金</td></tr>
+    <tr><td>観塘門市自取</td><td>香港九龍観塘</td><td>完工当日</td><td>無料</td></tr>
+  </tbody>
+</table>
+<p>100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+
+<h3>環保認證と紙材溯源</h3>
+<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。学校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
+
+<h3>SaaS 印刷プラットフォーム概要</h3>
+<p>香港本社の印刷 SaaS プラットフォーム。30 秒 AI 見積もり、72 時間国際配送、AI ファイル事前チェック、印刷工藝のオンライン設定、紙材サンプル請求、NET 30 法人掛売りなど一站式サービスをご提供。日本語カスタマーサポート平日 9:00〜18:00、深圳・香港観塘・東京 3 拠点体制で日本市場を全力サポート。印刷のプロが業種別の最適仕様をご提案します。</p>
+
+<h3>香港観塘門市</h3>
+<p>観塘門市は香港九龍観塘偉業街 82 号成運工業大廈に位置し、観塘 MRT 駅 A2 出口より徒歩 5 分。紙質サンプル比較・装訂工藝展示・色校正確認など実物をご確認いただけます。日本のお客様は日本語スタッフが事前予約制で対応、休日応相談。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料セミナー開催中。</p>
+
+<h3>多通貨決済</h3>
+<p>Airwallex 多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・学校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
+
+<h3>30 秒 AI 見積もり流程</h3>
+<p>ご注文は 3 ステップで完了：</p>
+<ol>
+  <li><strong>仕様選択</strong>：紙材・サイズ・数量・印刷工藝・オプションを画面上で簡単設定</li>
+  <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式対応、AI 自動チェックで出血・解像度・CMYK 色彩を事前検証</li>
+  <li><strong>見積もり確認</strong>：30 秒以内に送料込みの総額表示、内容確認後すぐ製造開始</li>
+</ol>
+<p>今すぐ体験：<strong>智印雲 ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>`,
     features: [
       '【85×54mm標準尺寸】兼容全球名片夾與卡套',
       '【四色柯式印刷】網點細膩，色彩飽和度≥90%',
@@ -835,18 +1015,199 @@ export const products: Product[] = [
 
 <h3>智印雲 SaaS 印刷服務</h3>
 <p>智印雲 (ZprintPro) —— 香港本地印刷 SaaS，支持 30 秒 AI 報價及 72 小時全球交付。自有觀塘門市自取點，48 小時快遞直送港九新界。</p>`,
-    longDescriptionEn: `ZprintPro waterproof stickers use PVC or PP synthetic facestock with water-resistant inks and optional gloss or matte lamination—suited to Hong Kong humidity and short outdoor exposure. Typical uses include appliance labels, outer food packaging decals, takeaway cup stickers, toolbox markings, and on-site equipment tags. We support die-cut shapes plus variable serial numbers or QR codes for batch control and anti-counterfeiting. Prepress: allow kiss-cut bleed and minimum line width so fine lines survive cutting. Digital suits low MOQ and fast sampling; offset becomes economical at higher volumes. Terminology aligns with our category pillar content: waterproof PVC stickers, PP synthetic paper, art paper stickers, lamination (matte/gloss), die-cutting.`,
-    longDescriptionJa: `当サービスでは防水ステッカー印刷 業者として、PVCまたはPP合成紙の面材に耐水インクを組み合わせ、グロス／マットラミネートで防水・防晒・耐磨耗性能を強化した高品質なステッカーをご提供しています。日本向け最適化としてISO 9001認証取得済みの香港自社工場で印刷し、国内検品・税込表示・日本語サポート体制を整えております。
+    longDescriptionEn: `<h3>Waterproof Stickers for Global Brands</h3>
+<p>ZprintPro waterproof stickers are engineered for outdoor labels, product packaging, car decals, and equipment tags across the US, UK, Australia, and global markets. Built on PVC or PP synthetic facestock with water-resistant inks, our stickers withstand rain, UV exposure, and abrasion. Optional matte or gloss lamination extends outdoor life to 3-5 years, while die-cut shapes and variable QR codes enable batch control and brand tracking. 100-sticker MOQ, with same-day sampling for small batches.</p>
 
-防水 ラベル 印刷 ネット注文の利便性。10枚からご注文可能で、100枚以上で20%オフ、500枚以上で35%オフの段階割引。最短3営業日で全国出荷、東京・大阪・名古屋へは翌日配送、ヤマト運輸・佐川急便・日本郵便（EMS）での追跡発送。Visa／Master／JCB／Alipay／銀聯対応、JPY（日本円）建てで明朗会計。
+<h3>Material & Durability Comparison</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Material</th>
+      <th class="p-2 text-center">Waterproof</th>
+      <th class="p-2 text-center">UV Resistance</th>
+      <th class="p-2 text-center">Outdoor Life</th>
+      <th class="p-2 text-left">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">PVC Film</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">3-5 years</td><td class="p-2">Outdoor labels, car decals</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">PP Synthetic</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">2-3 years</td><td class="p-2">Product packaging, equipment tags</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Clear PET</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">2-4 years</td><td class="p-2">Bottle labels, gift seals</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Vinyl (Cast)</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">5-7 years</td><td class="p-2">Vehicle wraps, premium decals</td></tr>
+  </tbody>
+</table>
 
-ステッカー 変形 カット 印刷にも対応。円形・四角・オリジナル形状・ハート型・キャラクターシルエットなど、変形ダイカットを完全サポート（一部有料）。カットラインはプロデザイナーが印前無料で確認し、細線の断裂リスクを事前にチェック。最小サイズ10×10mmから最大300×400mmまで、データ形式はIllustrator・PDF・PNG・JPGに対応します。
+<h3>Lamination & Finish Options</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Finish</th>
+      <th class="p-2 text-left">Effect</th>
+      <th class="p-2 text-center">Lead Time</th>
+      <th class="p-2 text-center">Cost Add</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">Gloss Lamination</td><td class="p-2">High-shine, color saturation</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Matte Lamination</td><td class="p-2">Soft-touch, anti-glare</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Die-Cut Shapes</td><td class="p-2">Custom outlines, kiss-cut available</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Variable QR / Serial Numbers</td><td class="p-2">Batch tracking, anti-counterfeit</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Removable Adhesive</td><td class="p-2">Clean removal, no residue</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
+  </tbody>
+</table>
 
-オリジナル ステッカー 印刷 激安をご希望の方へ。コストパフォーマンスに優れたPVC・PP・クラフト紙・蛍光紙の素材ラインアップを取り揃え、食品ラベル・商品タグ・屋外サイン・テイクアウトカップ・工具箱表示・車体デカールなど多様な用途に対応。可変QRコード・連番印刷にも対応し、ロット管理や偽造対策も万全です。UVカットインクと防水ラミネート加工により、屋外3年以上の色持ちを保証します。
+<h3>Why Choose ZprintPro?</h3>
+<ul>
+  <li><strong>Global Shipping:</strong> DHL Express 2-4 days to US/UK/AU/KR/SG/AE. Free US shipping on orders over $100.</li>
+  <li><strong>Certified Safe:</strong> SGS migration tested, heavy-metal-free inks, suitable for food-contact outer packaging.</li>
+  <li><strong>Low MOQ with Same-Day Sampling:</strong> 100-sticker minimum, same-day digital proofing for batches under 500.</li>
+  <li><strong>Free Die-Cut Design:</strong> Custom shapes at no extra charge. Submit your outline (AI/PDF) and we prep the file for production.</li>
+  <li><strong>Variable Data Printing:</strong> Per-sticker QR codes or serial numbers for inventory, anti-counterfeit, and event check-in.</li>
+</ul>
 
-ステッカー 印刷 失敗 例として多い「カットラインの断裂・粘着力低下・印刷かすれ」を防ぐため、当サービスでは入稿前の無料データチェック、糊面の温度管理、ブリード確保を全ご注文で実施。最小線幅0.3mm以上、型抜き安全距離0.5mm以上、糊種類（永久・再剥離・強粘着）の使い分けまで専門スタッフがご案内いたします。
+<h3>Use Cases & Industries</h3>
+<p>Waterproof stickers are the workhorse of product branding and outdoor labeling. ZprintPro serves beverage brands (bottle labels), cosmetics (outer packaging seals), e-commerce sellers (mailing and thank-you stickers), and industrial clients (equipment tags, toolbox labels, machinery ID). For US-based small businesses, our 100-sticker MOQ with same-day file confirmation is ideal for short-run product launches. For international clients, DHL Express delivers in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
 
-運営会社：ZprintPro Limited（香港本社・観塘）。所在地：香港九龍観塘偉業街82号成運工業ビル。受付時間：平日 9:00-18:00（日本時間）。送料：¥10,000以上のご注文で全国送料無料、特定商取引法に基づく表記・プライバシーポリシー・利用規約・お問い合わせの全リンクをフッターに掲載。今すぐご注文、無料見積もり、サンプル請求はこちらから。`,
+<h3>Frequently Asked Questions</h3>
+<details class="my-2"><summary><strong>Are the stickers truly waterproof?</strong></summary><p>Yes. PVC film stickers with our lamination are fully waterproof — they survive rain, dishwashers, freezers, and brief submersion. PP synthetic stickers are water-resistant (suitable for short outdoor exposure and damp environments).</p></details>
+<details class="my-2"><summary><strong>What shapes and sizes can you cut?</strong></summary><p>Any custom shape from 10×10mm to 300×300mm. Circles, squares, ovals, stars, hearts, and irregular logo outlines are all supported. Submit your die-cut line in AI or PDF format.</p></details>
+<details class="my-2"><summary><strong>Will the colors fade in sunlight?</strong></summary><p>PVC film with our UV-resistant lamination maintains color for 3-5 years outdoors. For high-sun or coastal environments, choose cast vinyl (5-7 year outdoor life).</p></details>
+<details class="my-2"><summary><strong>Can I get a sample before ordering?</strong></summary><p>Yes. We offer same-day digital sampling for batches under 500 stickers. Physical printed samples ship via DHL Express and arrive in 2-4 business days.</p></details>
+<details class="my-2"><summary><strong>Do you offer removable adhesive?</strong></summary><p>Yes. Our removable adhesive is repositionable 3-5 times on smooth surfaces and leaves no residue. Perfect for short-term campaigns, events, and rental equipment.</p></details>
+<details class="my-2"><summary><strong>How do I order different designs on one sheet?</strong></summary><p>Submit multiple AI/PDF files or one combined file with separate layers. We'll arrange them on the print sheet for optimal material use.</p></details>
+
+<p><em>Printed in our Hong Kong facility, shipped worldwide via DHL Express. ZprintPro — your global printing partner for waterproof labels, premium packaging, and outdoor-grade marketing materials.</em></p>
+
+    `,
+<h3>素材材質対比</h3>
+<p>防水ステッカーは 4 種類の基材から選択、用途と予算に応じて最適化。</p>
+<table>
+  <thead>
+    <tr><th>素材</th><th>厚み</th><th>防水性</th><th>適用場景</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>塩ビ（PVC）フィルム</td><td>80μm–150μm</td><td>完全防水、屋外 3〜5 年耐久</td><td>屋外看板・車・バイク・ヘルメット</td></tr>
+    <tr class="border-b border-gray-200"><td>合成紙（PP）</td><td>80μm–120μm</td><td>撥水効果、短期屋外・屋内</td><td>商品ラベル・パッケージ・屋内掲示</td></tr>
+    <tr class="border-b border-gray-200"><td>透明 PET</td><td>50μm–100μm</td><td>防水、無地背景</td><td>化粧品・ガラス瓶・無地感演出</td></tr>
+    <tr><td>クラフト紙</td><td>100g–150g</td><td>撥水（表面ラミネート要）、屋内</td><td>エコ志向ブランド・食品</td></tr>
+  </tbody>
+</table>
+
+<h3>表面加値工藝</h3>
+<p>防水ステッカーの表面加工 4 種類、用途と予算に応じて選択。</p>
+<table>
+  <thead>
+    <tr><th>加工</th><th>効果</th><th>適用場面</th><th>追加料金</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>UV 耐性ラミネート（光）</td><td>色褪せ防止、表面防水 UP</td><td>屋外長期使用</td><td>+10%</td></tr>
+    <tr class="border-b border-gray-200"><td>UV 耐性ラミネート（マット）</td><td>上品な雾面、指紋防止</td><td>化粧品・高級ブランド</td><td>+10%</td></tr>
+    <tr class="border-b border-gray-200"><td>再剥離糊</td><td>剥がしやすく糊残なし</td><td>期間限定キャンペーン・賃貸</td><td>+15%</td></tr>
+    <tr><td>ホログラム箔</td><td>金属光沢、特別感演出</td><td>ブランドロゴ・限定版</td><td>+25%</td></tr>
+  </tbody>
+</table>
+
+<h3>印刷工藝説明</h3>
+<ul>
+  <li><strong>4 色 CMYK 印刷</strong>：塩ビフィルム + 4 色 CMYK + UV 耐性ラミネートで、屋外 3〜5 年色褪せ防止</li>
+  <li><strong>高解像度印刷</strong>：1440dpi インクジェット + 4 色オフセット機で、グラデーション・写真も精確再現</li>
+  <li><strong>白インク印刷</strong>：透明 PET 素材に白インク下地で色再現性確保、クリアステッカー対応</li>
+  <li><strong>可変 QR コード</strong>：1 枚ごとに違う QR コード・シリアル番号印刷可能、トレーサビリティ管理</li>
+  <li><strong>印前 AI 預検</strong>：無料 AI チェックで型抜きライン・CMYK・低解像度画像を自動検証</li>
+</ul>
+
+<h3>自由形状と型抜き</h3>
+<p>防水ステッカーは型抜きで完全自由形状に。最小 10×10mm から最大 300×300mm まで対応。</p>
+<ul>
+  <li><strong>標準形状</strong>：円形・楕円・四角・三角形・星形・ハート形（無料）</li>
+  <li><strong>カスタム形状</strong>：ブランドロゴ輪郭・キャラクターシルエット・国形（+1,000 円）</li>
+  <li><strong>ハーフカット（キスカット）</strong>：台紙を残して表面材のみを切る方法、シール集・メッセージカードに最適</li>
+  <li><strong>型抜きライン</strong>：AI/PDF でご指定、入稿データに型抜きパスを含めてください</li>
+  <li><strong>ブリッジ（橋）</strong>：細かいパーツの脱落防止、1.5mm 幅で自動付与</li>
+</ul>
+
+<h3>FSC 認証と環境配慮</h3>
+<p>智印雲 ZprintPro の防水ステッカーは全素材で <strong>FSC 認証取得</strong>。紙素材版（クラフト紙）は 100% リサイクル可能、PLA 透明フィルム・生分解性コートもオプション対応。ESG 配慮ブランドやサステナブルな商品パッケージの選択肢として、エコ志向のお客様から好評です。</p>
+
+<h3>活用シーンと用途別事例</h3>
+<p>智印雲 ZprintPro 防水ステッカーは年間 50 万枚以上の出荷実績。</p>
+<ul>
+  <li><strong>屋外看板・標識</strong>：店舗・駐車場・工事現場、注意喚起・誘導表示</li>
+  <li><strong>商品パッケージ</strong>：化粧品・食品・飲料、防水必須商品</li>
+  <li><strong>車・バイク・ヘルメット</strong>：チームロゴ・クラブエンブレム、屋外耐久必須</li>
+  <li><strong>ブランドロゴ</strong>：オリジナルキャラクター・マスコット、ロイヤルティグッズ</li>
+  <li><strong>イベント・キャンペーン</strong>：短期屋外イベント・フェス・スポーツ大会</li>
+  <li><strong>プロモーショングッズ</strong>：企業ノベルティ・展示会配布物</li>
+</ul>
+
+<h3>業界別活用事例と導入効果</h3>
+<p>本サービスの {PRODUCT_NAME} は、国内外 5,000 社以上の法人取引実績があり、業界別の課題と要件に応じた最適ソリューションをご提供しています。</p>
+<ul>
+  <li><strong>小売・ブランドオーナー</strong>：店舗ロゴ入りオリジナル商品でブランド認知度向上、リピート率 30% UP 事例多数</li>
+  <li><strong>飲食店・カフェ</strong>：テイクアウト需要増で大量発注対応、印刷コスト 25% 削減事例あり</li>
+  <li><strong>アパレル・セレクトショップ</strong>：店舗体験の質向上、ESG 配慮の紙袋でサステナブルブランドイメージ強化</li>
+  <li><strong>化粧品・コスメブランド</strong>：高級感あふれるパッケージで商品価値 UP、消費者レビューで「プレゼント向き」言及増加</li>
+  <li><strong>教育・スクール・塾</strong>：教材・案内チラシの一括印刷で教務業務時間 50% 削減、ブランド統一感向上</li>
+  <li><strong>不動産・住宅</strong>：物件資料・募集チラシの高品質印刷で問い合わせ数 40% UP 事例あり</li>
+  <li><strong>クリニック・医院</strong>：予防接種・健診案内の即日印刷で患者サービス向上</li>
+  <li><strong>イベント・展示会主催</strong>：ポスター・チラシ・配布物のワンストップ印刷、当日仕上げ対応</li>
+</ul>
+
+<h3>失敗しない発注のための 5 つのポイント</h3>
+<p>ご注文前に、以下の 5 つのポイントをご確認いただくと、発注後のトラブルを未然に防げます：</p>
+<ul>
+  <li><strong>用途を明確にする</strong>：屋内 or 屋外 / 短期 or 長期 / 耐水性が必要か、を事前に決定</li>
+  <li><strong>データ形式を準備する</strong>：Illustrator / InDesign / PDF 形式推奨、CMYK モード・トンボ付き</li>
+  <li><strong>数量は段階割引を考慮する</strong>：500 枚 / 1,000 枚 / 5,000 枚で割引率が UP、まとめて発注がお得</li>
+  <li><strong>納期に余裕を持つ</strong>：繁忙期（クリスマス / 年末年始 / 2 月 / 8 月）は 1 ヶ月前発注推奨</li>
+  <li><strong>サンプル請求を活用する</strong>：実物を見てから本印刷に進めるため、ミスマッチ防止</li>
+</ul>
+
+<h3>当サービスが選ばれる 5 つの理由</h3>
+<p>香港本社の印刷 SaaS として、日本語・日本市場向けに最適化されたサービスを提供しています：</p>
+<ul>
+  <li><strong>日本語ネイティブ対応</strong>：日本語カスタマーサポート平日 9:00〜18:00、日本向け請求書・領収書発行</li>
+  <li><strong>JPY 日本円建て明朗会計</strong>：為替変動リスクなし、経費精算しやすい</li>
+  <li><strong>30 秒 AI 見積もり</strong>：画面上で簡単設定、送料込みの総額表示で安心</li>
+  <li><strong>DHL/FedEx 直送 2-4 日</strong>：沖縄・離島も別途見積もり、全国配送対応</li>
+  <li><strong>FSC 認証 + 大豆インク</strong>：ESG 配慮、サステナブル調達要件に対応</li>
+</ul>
+
+<h3>配送方式と国際物流</h3>
+<p>日本向け配送に特化した 3 つのプランをご用意。ご注文数量・納期・配送先に応じて最適なプランを選択可能です：</p>
+<table>
+  <thead>
+    <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3〜5 営業日</td><td>少量追加料金</td></tr>
+    <tr><td>観塘門市自取</td><td>香港九龍観塘</td><td>完工当日</td><td>無料</td></tr>
+  </tbody>
+</table>
+<p>100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+
+<h3>環保認證と紙材溯源</h3>
+<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。学校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
+
+<h3>SaaS 印刷プラットフォーム概要</h3>
+<p>香港本社の印刷 SaaS プラットフォーム。30 秒 AI 見積もり、72 時間国際配送、AI ファイル事前チェック、印刷工藝のオンライン設定、紙材サンプル請求、NET 30 法人掛売りなど一站式サービスをご提供。日本語カスタマーサポート平日 9:00〜18:00、深圳・香港観塘・東京 3 拠点体制で日本市場を全力サポート。印刷のプロが業種別の最適仕様をご提案します。</p>
+
+<h3>香港観塘門市</h3>
+<p>観塘門市は香港九龍観塘偉業街 82 号成運工業大廈に位置し、観塘 MRT 駅 A2 出口より徒歩 5 分。紙質サンプル比較・装訂工藝展示・色校正確認など実物をご確認いただけます。日本のお客様は日本語スタッフが事前予約制で対応、休日応相談。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料セミナー開催中。</p>
+
+<h3>多通貨決済</h3>
+<p>Airwallex 多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・学校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
+
+<h3>30 秒 AI 見積もり流程</h3>
+<p>ご注文は 3 ステップで完了：</p>
+<ol>
+  <li><strong>仕様選択</strong>：紙材・サイズ・数量・印刷工藝・オプションを画面上で簡単設定</li>
+  <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式対応、AI 自動チェックで出血・解像度・CMYK 色彩を事前検証</li>
+  <li><strong>見積もり確認</strong>：30 秒以内に送料込みの総額表示、内容確認後すぐ製造開始</li>
+</ol>
+<p>今すぐ体験：<strong>智印雲 ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>`,
     features: [
       '面材：PVC 防水或 PP 合成紙，戶外短期耐候',
       '可選啞膜／光膜覆膜，提升耐磨與抗污',
@@ -1174,7 +1535,145 @@ export const products: Product[] = [
 <h3>智印雲 SaaS 印刷服務</h3>
 <p>智印雲 (ZprintPro) —— 香港本地印刷 SaaS，支持 30 秒 AI 報價及 72 小時全球交付。自有觀塘門市自取點，48 小時快遞直送港九新界。</p>`,
     longDescriptionEn: `ZprintPro small-batch stickers are designed for startups, indie designers, and short-term events. Minimum order starts at A4 size with no bulk inventory pressure. Facestock options include art paper, synthetic paper, clear PVC, and kraft paper, paired with 4-color digital printing achieving Delta E ≤3 color accuracy. We offer free die-cut design and prepress checks, supporting rounded corners, custom die-cutting, and spot foil stamping. For e-commerce sellers needing rapid packaging iteration, small-batch stickers deliver in 1–2 working days and support variable data printing for limited edition numbering. Terminology aligns with category content: art paper stickers, PP synthetic paper, clear PVC, die-cutting, foil stamping.`,
-    longDescriptionJa: `小ロットステッカーをZprintProでご注文。A4サイズから小ロット対応、4色デジタル印刷でDelta E≤3の色再現。スタートアップ・インディーデザイナー・EC売家様向け。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。`,
+    longDescriptionJa: `
+<h3>素材材質対比</h3>
+<p>小ロットステッカーは 4 種類の素材から選択、用途と予算に応じて最適化。</p>
+<table>
+  <thead>
+    <tr><th>素材</th><th>厚み/克重</th><th>特性</th><th>適用場景</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>アート紙</td><td>100g–150g</td><td>紙質基材、コストパフォーマンス最良</td><td>屋内商品ラベル・短期プロモーション</td></tr>
+    <tr class="border-b border-gray-200"><td>塩ビ（PVC）フィルム</td><td>80μm–120μm</td><td>防水、屋外 3〜5 年耐久</td><td>屋外短期・バイク・ヘルメット</td></tr>
+    <tr class="border-b border-gray-200"><td>PP 合成紙</td><td>80μm–120μm</td><td>撥水、短期屋外・屋内</td><td>商品パッケージ・屋内掲示</td></tr>
+    <tr><td>透明 PET</td><td>50μm–100μm</td><td>透明基材、白インクで色再現</td><td>化粧品・ガラス瓶・無地感演出</td></tr>
+  </tbody>
+</table>
+
+<h3>印刷方式と後加工</h3>
+<p>小ロットステッカーは 4 種類の印刷方式 + 後加工から選択。</p>
+<table>
+  <thead>
+    <tr><th>加工</th><th>効果</th><th>適用場面</th><th>追加料金</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>HP Indigo デジタル印刷</td><td>1 枚から対応、可変データ</td><td>個人利用・サンプル</td><td>なし</td></tr>
+    <tr class="border-b border-gray-200"><td>4 色 CMYK オフセット</td><td>500 枚以上で高品質</td><td>大量発注</td><td>なし</td></tr>
+    <tr class="border-b border-gray-200"><td>光膜ラミネート</td><td>表面光亮、防水 UP</td><td>屋外・耐久必須</td><td>+10%</td></tr>
+    <tr><td>型抜き（自由形状）</td><td>ロゴ・キャラクター輪郭</td><td>ブランドステッカー</td><td>+10%</td></tr>
+  </tbody>
+</table>
+
+<h3>小ロット対応印刷技術</h3>
+<ul>
+  <li><strong>HP Indigo デジタル印刷</strong>：A4 サイズで 1 枚から対応、Delta E≤3 の高精度色再現</li>
+  <li><strong>4 色 CMYK 印刷</strong>：500 枚以上はオフセット機で大量印刷、コスト削減</li>
+  <li><strong>可変データ印刷</strong>：1 枚ごとに違う QR コード・番号・名前印刷、限定商品・イベント名札に最適</li>
+  <li><strong>即日仕上げ対応</strong>：A4 サイズ 1〜50 枚は当日仕上げ（香港本店受取・特急料金）</li>
+  <li><strong>短納期特急</strong>：100〜500 枚は 1〜2 営業日納品</li>
+</ul>
+
+<h3>FSC 認証と環境配慮</h3>
+<p>智印雲 ZprintPro の小ロットステッカーは全素材で <strong>FSC 認証取得</strong>。紙素材版（アート紙・クラフト紙）は 100% リサイクル可能、PLA 透明フィルム・生分解性コートもオプション対応。スタートアップ・EC 事業者の ESG 配慮にも貢献します。</p>
+
+<h3>デザインサポートとテンプレート</h3>
+<p>初めてのお客様向けに無料テンプレート + 作成ガイドをご提供。</p>
+<ul>
+  <li><strong>無料テンプレート</strong>：Illustrator / PNG 形式で丸・四角・楕円など基本形状</li>
+  <li><strong>作成ガイド</strong>：サイズ・解像度・CMYK 設定の初心者向け解説書</li>
+  <li><strong>多形式入稿対応</strong>：Illustrator / Photoshop / Canva / PowerPoint / PDF すべて対応</li>
+  <li><strong>3 案無料デザイン</strong>：プロデザイナーが 3 案作成、お好みの 1 案を本印刷</li>
+  <li><strong>修正無制限</strong>：初版提出後 3 回まで無料修正</li>
+</ul>
+
+<h3>可変データ印刷と 1 枚もの違うデザイン</h3>
+<p>小ロットステッカーの最大の特徴は、1 枚ごとに違うデザイン対応。</p>
+<ul>
+  <li><strong>可変 QR コード</strong>：1 枚ごとに違う QR コードを印刷、限定商品・トレーサビリティ管理</li>
+  <li><strong>個別番号</strong>：1〜10,000 までの連番・エディションナンバーを自動付与</li>
+  <li><strong>個別名前</strong>：名札・イベント参加者・チームメンバー名を 1 枚ずつ</li>
+  <li><strong>写真入り</strong>：1 枚ごとに違う写真を使った記念ステッカー・プロフィールステッカー</li>
+  <li><strong>EC 事業者向け</strong>：SKU 別の商品ステッカーを小ロットから量産まで同一価格で対応</li>
+</ul>
+
+<h3>段階割引と小ロット特急</h3>
+<p>小ロットでも大量発注でも、コストパフォーマンス最良のプランをご用意。</p>
+<ul>
+  <li><strong>1〜99 枚</strong>：特急料金（デジタル印刷 1 枚から対応）</li>
+  <li><strong>100〜499 枚</strong>：標準料金（オフセット印刷に切り替わり）</li>
+  <li><strong>500〜999 枚</strong>：15% オフ</li>
+  <li><strong>1,000 枚以上</strong>：25% オフ</li>
+  <li><strong>5,000 枚以上</strong>：35% オフ、別途お問い合わせ</li>
+</ul>
+
+<h3>業界別活用事例と導入効果</h3>
+<p>本サービスの {PRODUCT_NAME} は、国内外 5,000 社以上の法人取引実績があり、業界別の課題と要件に応じた最適ソリューションをご提供しています。</p>
+<ul>
+  <li><strong>小売・ブランドオーナー</strong>：店舗ロゴ入りオリジナル商品でブランド認知度向上、リピート率 30% UP 事例多数</li>
+  <li><strong>飲食店・カフェ</strong>：テイクアウト需要増で大量発注対応、印刷コスト 25% 削減事例あり</li>
+  <li><strong>アパレル・セレクトショップ</strong>：店舗体験の質向上、ESG 配慮の紙袋でサステナブルブランドイメージ強化</li>
+  <li><strong>化粧品・コスメブランド</strong>：高級感あふれるパッケージで商品価値 UP、消費者レビューで「プレゼント向き」言及増加</li>
+  <li><strong>教育・スクール・塾</strong>：教材・案内チラシの一括印刷で教務業務時間 50% 削減、ブランド統一感向上</li>
+  <li><strong>不動産・住宅</strong>：物件資料・募集チラシの高品質印刷で問い合わせ数 40% UP 事例あり</li>
+  <li><strong>クリニック・医院</strong>：予防接種・健診案内の即日印刷で患者サービス向上</li>
+  <li><strong>イベント・展示会主催</strong>：ポスター・チラシ・配布物のワンストップ印刷、当日仕上げ対応</li>
+</ul>
+
+<h3>失敗しない発注のための 5 つのポイント</h3>
+<p>ご注文前に、以下の 5 つのポイントをご確認いただくと、発注後のトラブルを未然に防げます：</p>
+<ul>
+  <li><strong>用途を明確にする</strong>：屋内 or 屋外 / 短期 or 長期 / 耐水性が必要か、を事前に決定</li>
+  <li><strong>データ形式を準備する</strong>：Illustrator / InDesign / PDF 形式推奨、CMYK モード・トンボ付き</li>
+  <li><strong>数量は段階割引を考慮する</strong>：500 枚 / 1,000 枚 / 5,000 枚で割引率が UP、まとめて発注がお得</li>
+  <li><strong>納期に余裕を持つ</strong>：繁忙期（クリスマス / 年末年始 / 2 月 / 8 月）は 1 ヶ月前発注推奨</li>
+  <li><strong>サンプル請求を活用する</strong>：実物を見てから本印刷に進めるため、ミスマッチ防止</li>
+</ul>
+
+<h3>当サービスが選ばれる 5 つの理由</h3>
+<p>香港本社の印刷 SaaS として、日本語・日本市場向けに最適化されたサービスを提供しています：</p>
+<ul>
+  <li><strong>日本語ネイティブ対応</strong>：日本語カスタマーサポート平日 9:00〜18:00、日本向け請求書・領収書発行</li>
+  <li><strong>JPY 日本円建て明朗会計</strong>：為替変動リスクなし、経費精算しやすい</li>
+  <li><strong>30 秒 AI 見積もり</strong>：画面上で簡単設定、送料込みの総額表示で安心</li>
+  <li><strong>DHL/FedEx 直送 2-4 日</strong>：沖縄・離島も別途見積もり、全国配送対応</li>
+  <li><strong>FSC 認証 + 大豆インク</strong>：ESG 配慮、サステナブル調達要件に対応</li>
+</ul>
+
+<h3>配送方式と国際物流</h3>
+<p>日本向け配送に特化した 3 つのプランをご用意。ご注文数量・納期・配送先に応じて最適なプランを選択可能です：</p>
+<table>
+  <thead>
+    <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3〜5 営業日</td><td>少量追加料金</td></tr>
+    <tr><td>観塘門市自取</td><td>香港九龍観塘</td><td>完工当日</td><td>無料</td></tr>
+  </tbody>
+</table>
+<p>100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+
+<h3>環保認證と紙材溯源</h3>
+<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。学校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
+
+<h3>SaaS 印刷プラットフォーム概要</h3>
+<p>香港本社の印刷 SaaS プラットフォーム。30 秒 AI 見積もり、72 時間国際配送、AI ファイル事前チェック、印刷工藝のオンライン設定、紙材サンプル請求、NET 30 法人掛売りなど一站式サービスをご提供。日本語カスタマーサポート平日 9:00〜18:00、深圳・香港観塘・東京 3 拠点体制で日本市場を全力サポート。印刷のプロが業種別の最適仕様をご提案します。</p>
+
+<h3>香港観塘門市</h3>
+<p>観塘門市は香港九龍観塘偉業街 82 号成運工業大廈に位置し、観塘 MRT 駅 A2 出口より徒歩 5 分。紙質サンプル比較・装訂工藝展示・色校正確認など実物をご確認いただけます。日本のお客様は日本語スタッフが事前予約制で対応、休日応相談。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料セミナー開催中。</p>
+
+<h3>多通貨決済</h3>
+<p>Airwallex 多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・学校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
+
+<h3>30 秒 AI 見積もり流程</h3>
+<p>ご注文は 3 ステップで完了：</p>
+<ol>
+  <li><strong>仕様選択</strong>：紙材・サイズ・数量・印刷工藝・オプションを画面上で簡単設定</li>
+  <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式対応、AI 自動チェックで出血・解像度・CMYK 色彩を事前検証</li>
+  <li><strong>見積もり確認</strong>：30 秒以内に送料込みの総額表示、内容確認後すぐ製造開始</li>
+</ol>
+<p>今すぐ体験：<strong>智印雲 ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>`,
     features: [
       '【A4 起印】無最低數量壓力，適合試產與限量活動',
       '【多材質】銅版紙／PP／PVC／Kraft，匹配品牌調性',
@@ -1294,7 +1793,136 @@ export const products: Product[] = [
 <h3>智印雲 SaaS 印刷服務</h3>
 <p>智印雲 (ZprintPro) —— 香港本地印刷 SaaS，支持 30 秒 AI 報價及 72 小時全球交付。自有觀塘門市自取點，48 小時快遞直送港九新界。</p>`,
     longDescriptionEn: `Die-cut stickers follow your outline for mascot shapes, logo silhouettes, or irregular labels—popular for creative merch, cup decals, phone skin accents, and event giveaways. Facestock options include waterproof PVC, PP synthetic, or clear PET, with matte or gloss lamination for durability. Allow adequate stroke width and bridges to avoid fragile cuts; kiss-cut keeps a liner for easy peeling. Keywords align with category content: die-cutting, lamination, variable data. Ideal when brand recognition must be instant at shelf or street level.`,
-    longDescriptionJa: `ダイカットステッカーをZprintProでご注文。オリジナル形状カット+マット/グロスラミ、識別度の高いロゴシルエットを実現。文創グッズ・カップデコ・イベントノベルティ様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。`,
+    longDescriptionJa: `
+<h3>素材材質対比</h3>
+<p>ダイカットステッカーは 4 種類の素材から選択、屋外・屋内・短期・長期で使い分け。</p>
+<table>
+  <thead>
+    <tr><th>素材</th><th>厚み/克重</th><th>特性</th><th>適用場景</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>塩ビ（PVC）フィルム</td><td>80μm–150μm</td><td>完全防水、屋外 3〜5 年耐久、強度高</td><td>屋外看板・車・バイク・ヘルメット</td></tr>
+    <tr class="border-b border-gray-200"><td>合成紙（PP）</td><td>80μm–120μm</td><td>撥水、短期屋外・屋内、コストパフォーマンス高</td><td>商品ラベル・パッケージ・屋内掲示</td></tr>
+    <tr class="border-b border-gray-200"><td>アート紙（厚口）</td><td>200g–300g</td><td>紙質、印刷再現性最良、コスト最良</td><td>屋内商品ラベル・短期プロモーション</td></tr>
+    <tr><td>クラフト紙</td><td>150g–200g</td><td>エコ志向、独特的质感、屋内向け</td><td>オーガニック商品・クラフトブランド</td></tr>
+  </tbody>
+</table>
+
+<h3>加値工藝と型抜き</h3>
+<p>ダイカットステッカーの自由形状型抜きと表面加値工藝。</p>
+<table>
+  <thead>
+    <tr><th>工藝</th><th>効果</th><th>適用場面</th><th>追加料金</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>自由形状型抜き</td><td>ロゴ・キャラクター輪郭</td><td>ブランドステッカー・ロゴ</td><td>標準</td></tr>
+    <tr class="border-b border-gray-200"><td>UV 耐性ラミネート</td><td>屋外色褪せ防止</td><td>屋外長期使用</td><td>+10%</td></tr>
+    <tr class="border-b border-gray-200"><td>再剥離糊</td><td>剥がしやすく糊残なし</td><td>期間限定・賃貸物件</td><td>+15%</td></tr>
+    <tr><td>金/銀箔押し</td><td>金属光沢、立体感</td><td>ロゴ・記念版・限定版</td><td>+20%</td></tr>
+  </tbody>
+</table>
+
+<h3>印刷工藝と高精度型抜き</h3>
+<ul>
+  <li><strong>4 色 CMYK 印刷</strong>：海德堡 4 色機で 90% 以上の色飽和、グラデーション・写真も精確再現</li>
+  <li><strong>高解像度印刷</strong>：1440dpi インクジェット + 4 色オフセット機で、複雑なデザインも精確再現</li>
+  <li><strong>高精度型抜き</strong>：レーザーガイド + 自動刃制御で ±0.1mm の精度、複雑な形状も対応</li>
+  <li><strong>白インク印刷</strong>：透明素材に白インク下地で色再現性確保、クリアステッカー対応</li>
+  <li><strong>印前 AI 預検</strong>：無料 AI チェックで型抜きライン・CMYK・低解像度画像を自動検証</li>
+</ul>
+
+<h3>自由形状型抜きとハーフカット</h3>
+<p>ダイカットの最大の特徴は「自由形状型抜き」。ブランドのロゴ・キャラクターをそのまま切り抜き可能。</p>
+<ul>
+  <li><strong>標準形状</strong>：円形・楕円・四角・三角形・星形・ハート形（無料）</li>
+  <li><strong>カスタム形状</strong>：ブランドロゴ輪郭・キャラクターシルエット・国形（+1,000 円）</li>
+  <li><strong>ハーフカット（キスカット）</strong>：台紙を残して表面材のみを切る方法、シール集・メッセージカードに最適</li>
+  <li><strong>型抜き精度</strong>：±0.1mm の高精度、複雑なパターンも対応</li>
+  <li><strong>ブリッジ（橋）</strong>：細かいパーツの脱落防止、1.5mm 幅で自動付与</li>
+</ul>
+
+<h3>FSC 認証と環境配慮</h3>
+<p>智印雲 ZprintPro のダイカットステッカーは全素材で <strong>FSC 認証取得</strong>。紙素材版（アート紙・クラフト紙）は 100% リサイクル可能、PLA 透明フィルム・生分解性コートもオプション対応。ESG 配慮ブランドやサステナブルな商品パッケージの選択肢として、エコ志向のお客様から好評です。</p>
+
+<h3>活用シーンと用途別事例</h3>
+<p>智印雲 ZprintPro ダイカットステッカーは年間 30 万枚以上の出荷実績。</p>
+<ul>
+  <li><strong>ブランドロゴステッカー</strong>：オリジナルブランド・スタートアップ・個人事業主</li>
+  <li><strong>キャラクターグッズ</strong>：アニメ・漫画・ゲームの公式グッズ</li>
+  <li><strong>商品ラベル</strong>：化粧品・食品・飲料ブランド</li>
+  <li><strong>イベント配布物</strong>：フェス・ライブ・スポーツ大会</li>
+  <li><strong>ギフト用</strong>：オリジナルキャラクター・写真入り</li>
+  <li><strong>プロモーショングッズ</strong>：企業ノベルティ・展示会配布物</li>
+</ul>
+
+<h3>業界別活用事例と導入効果</h3>
+<p>本サービスの {PRODUCT_NAME} は、国内外 5,000 社以上の法人取引実績があり、業界別の課題と要件に応じた最適ソリューションをご提供しています。</p>
+<ul>
+  <li><strong>小売・ブランドオーナー</strong>：店舗ロゴ入りオリジナル商品でブランド認知度向上、リピート率 30% UP 事例多数</li>
+  <li><strong>飲食店・カフェ</strong>：テイクアウト需要増で大量発注対応、印刷コスト 25% 削減事例あり</li>
+  <li><strong>アパレル・セレクトショップ</strong>：店舗体験の質向上、ESG 配慮の紙袋でサステナブルブランドイメージ強化</li>
+  <li><strong>化粧品・コスメブランド</strong>：高級感あふれるパッケージで商品価値 UP、消費者レビューで「プレゼント向き」言及増加</li>
+  <li><strong>教育・スクール・塾</strong>：教材・案内チラシの一括印刷で教務業務時間 50% 削減、ブランド統一感向上</li>
+  <li><strong>不動産・住宅</strong>：物件資料・募集チラシの高品質印刷で問い合わせ数 40% UP 事例あり</li>
+  <li><strong>クリニック・医院</strong>：予防接種・健診案内の即日印刷で患者サービス向上</li>
+  <li><strong>イベント・展示会主催</strong>：ポスター・チラシ・配布物のワンストップ印刷、当日仕上げ対応</li>
+</ul>
+
+<h3>失敗しない発注のための 5 つのポイント</h3>
+<p>ご注文前に、以下の 5 つのポイントをご確認いただくと、発注後のトラブルを未然に防げます：</p>
+<ul>
+  <li><strong>用途を明確にする</strong>：屋内 or 屋外 / 短期 or 長期 / 耐水性が必要か、を事前に決定</li>
+  <li><strong>データ形式を準備する</strong>：Illustrator / InDesign / PDF 形式推奨、CMYK モード・トンボ付き</li>
+  <li><strong>数量は段階割引を考慮する</strong>：500 枚 / 1,000 枚 / 5,000 枚で割引率が UP、まとめて発注がお得</li>
+  <li><strong>納期に余裕を持つ</strong>：繁忙期（クリスマス / 年末年始 / 2 月 / 8 月）は 1 ヶ月前発注推奨</li>
+  <li><strong>サンプル請求を活用する</strong>：実物を見てから本印刷に進めるため、ミスマッチ防止</li>
+</ul>
+
+<h3>当サービスが選ばれる 5 つの理由</h3>
+<p>香港本社の印刷 SaaS として、日本語・日本市場向けに最適化されたサービスを提供しています：</p>
+<ul>
+  <li><strong>日本語ネイティブ対応</strong>：日本語カスタマーサポート平日 9:00〜18:00、日本向け請求書・領収書発行</li>
+  <li><strong>JPY 日本円建て明朗会計</strong>：為替変動リスクなし、経費精算しやすい</li>
+  <li><strong>30 秒 AI 見積もり</strong>：画面上で簡単設定、送料込みの総額表示で安心</li>
+  <li><strong>DHL/FedEx 直送 2-4 日</strong>：沖縄・離島も別途見積もり、全国配送対応</li>
+  <li><strong>FSC 認証 + 大豆インク</strong>：ESG 配慮、サステナブル調達要件に対応</li>
+</ul>
+
+<h3>配送方式と国際物流</h3>
+<p>日本向け配送に特化した 3 つのプランをご用意。ご注文数量・納期・配送先に応じて最適なプランを選択可能です：</p>
+<table>
+  <thead>
+    <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3〜5 営業日</td><td>少量追加料金</td></tr>
+    <tr><td>観塘門市自取</td><td>香港九龍観塘</td><td>完工当日</td><td>無料</td></tr>
+  </tbody>
+</table>
+<p>100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+
+<h3>環保認證と紙材溯源</h3>
+<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。学校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
+
+<h3>SaaS 印刷プラットフォーム概要</h3>
+<p>香港本社の印刷 SaaS プラットフォーム。30 秒 AI 見積もり、72 時間国際配送、AI ファイル事前チェック、印刷工藝のオンライン設定、紙材サンプル請求、NET 30 法人掛売りなど一站式サービスをご提供。日本語カスタマーサポート平日 9:00〜18:00、深圳・香港観塘・東京 3 拠点体制で日本市場を全力サポート。印刷のプロが業種別の最適仕様をご提案します。</p>
+
+<h3>香港観塘門市</h3>
+<p>観塘門市は香港九龍観塘偉業街 82 号成運工業大廈に位置し、観塘 MRT 駅 A2 出口より徒歩 5 分。紙質サンプル比較・装訂工藝展示・色校正確認など実物をご確認いただけます。日本のお客様は日本語スタッフが事前予約制で対応、休日応相談。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料セミナー開催中。</p>
+
+<h3>多通貨決済</h3>
+<p>Airwallex 多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・学校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
+
+<h3>30 秒 AI 見積もり流程</h3>
+<p>ご注文は 3 ステップで完了：</p>
+<ol>
+  <li><strong>仕様選択</strong>：紙材・サイズ・数量・印刷工藝・オプションを画面上で簡単設定</li>
+  <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式対応、AI 自動チェックで出血・解像度・CMYK 色彩を事前検証</li>
+  <li><strong>見積もり確認</strong>：30 秒以内に送料込みの総額表示、内容確認後すぐ製造開始</li>
+</ol>
+<p>今すぐ体験：<strong>智印雲 ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>`,
     features: [
       '任意外形模切，強化品牌造型記憶',
       '可選 PVC／PP／PET 面材與覆膜',
@@ -1659,7 +2287,136 @@ export const products: Product[] = [
 <h3>智印雲 SaaS 印刷服務</h3>
 <p>智印雲 (ZprintPro) —— 香港本地印刷 SaaS，支持 30 秒 AI 報價及 72 小時全球交付。自有觀塘門市自取點，48 小時快遞直送港九新界。</p>`,
     longDescriptionEn: `ZprintPro fluorescent stickers use high-saturation fluorescent inks printed on PVC or fluorescent paper facestock, delivering strong visual impact under daylight and UV light. Ideal for promotional labels, safety warning signs, and nightclub event decoration. Inks pass SGS migration testing, are heavy-metal-free, and suitable for short-term indoor and outdoor display. We support die-cut shapes combined with reflective stripe designs to enhance nighttime visibility. Prepress: use high-contrast color schemes and avoid text smaller than 6pt to prevent blurring. Same-day digital printing for small batches; offset printing reduces unit cost at volume. Terminology aligns with category content: fluorescent PVC stickers, fluorescent paper, reflective film, die-cutting.`,
-    longDescriptionJa: `蛍光ステッカーをZprintProでご注文。高彩度蛍光インク+PVC/蛍光紙で日光や紫外線下で強い視覚的インパクト。プロモーション・安全警告・ナイトクラブイベント装飾様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。`,
+    longDescriptionJa: `
+<h3>素材材質対比</h3>
+<p>蛍光ステッカーは 4 種類の素材から選択、用途と予算に応じて最適化。</p>
+<table>
+  <thead>
+    <tr><th>素材</th><th>厚み/克重</th><th>特性</th><th>適用場景</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>アート紙</td><td>100g–150g</td><td>紙質基材、コストパフォーマンス最良、屋内向け</td><td>屋内イベント・短期キャンペーン</td></tr>
+    <tr class="border-b border-gray-200"><td>塩ビ（PVC）フィルム</td><td>80μm–150μm</td><td>防水、屋外 6 ヶ月〜1 年耐久</td><td>屋外短期・選挙・工事</td></tr>
+    <tr class="border-b border-gray-200"><td>合成紙（PP）</td><td>80μm–120μm</td><td>撥水、短期屋外・屋内</td><td>商品ラベル・屋内掲示</td></tr>
+    <tr><td>透明 PET</td><td>50μm–100μm</td><td>透明基材、蛍光部分だけの特殊効果</td><td>化粧品・ガラス瓶</td></tr>
+  </tbody>
+</table>
+
+<h3>蛍光インキと表面加工</h3>
+<p>蛍光ステッカーは蛍光インキの色と表面加工で差別化。</p>
+<table>
+  <thead>
+    <tr><th>工藝</th><th>効果</th><th>適用場面</th><th>追加料金</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>蛍光ピンク・蛍光イエロー</td><td>高彩度、視認性最強</td><td>ライブ・クラブ・パーティー</td><td>標準</td></tr>
+    <tr class="border-b border-gray-200"><td>蛍光オレンジ・蛍光グリーン</td><td>高彩度、安全標識向け</td><td>安全標識・工事現場</td><td>標準</td></tr>
+    <tr class="border-b border-gray-200"><td>UV 耐性ラミネート</td><td>屋外色褪せ防止</td><td>屋外短期使用</td><td>+10%</td></tr>
+    <tr><td>メタリック箔押し</td><td>蛍光 + メタリックの特別感</td><td>限定版・記念版</td><td>+25%</td></tr>
+  </tbody>
+</table>
+
+<h3>高彩度蛍光インキと UV 印刷</h3>
+<ul>
+  <li><strong>蛍光インキ 4 色（ピンク・イエロー・オレンジ・グリーン）</strong>：高彩度の蛍光インキで視認性 MAX</li>
+  <li><strong>ブラックライト（UV 紫外線）対応</strong>：ブラックライト照射で強く発光、ライブ・クラブ装飾に最適</li>
+  <li><strong>4 色 CMYK + 蛍光インキ重ね刷り</strong>：通常色と蛍光色の組み合わせ、複雑なデザイン対応</li>
+  <li><strong>屋外 6 ヶ月〜1 年色持ち</strong>：UV 耐性ラミネートで短期屋外イベント・選挙ポスターに対応</li>
+  <li><strong>印前 AI 預検</strong>：無料 AI チェックで蛍光色の色域・CMYK 変換を自動検証</li>
+</ul>
+
+<h3>FSC 認証と環境配慮</h3>
+<p>智印雲 ZprintPro の蛍光ステッカーは全素材で <strong>FSC 認証取得</strong>。紙素材版（アート紙）は 100% リサイクル可能、PLA 透明フィルム・生分解性コートもオプション対応。ESG 配慮ブランドやサステナブルな商品パッケージの選択肢として、エコ志向のお客様から好評です。</p>
+
+<h3>活用シーンと用途別事例</h3>
+<p>智印雲 ZprintPro 蛍光ステッカーは年間 10 万枚以上の出荷実績。</p>
+<ul>
+  <li><strong>ライブ・コンサート会場</strong>：アーティストグッズ、限定販売</li>
+  <li><strong>ナイトクラブ・イベント装飾</strong>：ブラックライト下で発光、視覚的インパクト</li>
+  <li><strong>安全標識・警告表示</strong>：工事現場・危険区域の注意喚起</li>
+  <li><strong>選挙キャンペーン</strong>：候補者名・政党ロゴの視認性向上</li>
+  <li><strong>短期キャンペーン広告</strong>：夏休み・年末セール・キャンペーン告知</li>
+  <li><strong>パーティー装飾</strong>：誕生日・結婚式・イベントの装飾ステッカー</li>
+</ul>
+
+<h3>蛍光と他の素材の組み合わせ</h3>
+<p>蛍光ステッカーは他の素材・工藝と組み合わせで無限の可能性。</p>
+<ul>
+  <li><strong>蛍光ピンク + 銀箔押し</strong>：高彩度の蛍光と金属光沢の対比、特別感 MAX</li>
+  <li><strong>蛍光イエロー + 黒エンボス</strong>：視認性最強、安全標識・警告表示向け</li>
+  <li><strong>蛍光グリーン + 透明 PET</strong>：クリア背景に蛍光グリーン、白インクで補強</li>
+  <li><strong>蛍光オレンジ + 屋外ラミネート</strong>：短期屋外イベント・選挙ポスター対応</li>
+  <li><strong>蛍光 4 色グラデーション</strong>：CMYK + 蛍光インキ重ね刷りで虹色効果</li>
+</ul>
+
+<h3>業界別活用事例と導入効果</h3>
+<p>本サービスの {PRODUCT_NAME} は、国内外 5,000 社以上の法人取引実績があり、業界別の課題と要件に応じた最適ソリューションをご提供しています。</p>
+<ul>
+  <li><strong>小売・ブランドオーナー</strong>：店舗ロゴ入りオリジナル商品でブランド認知度向上、リピート率 30% UP 事例多数</li>
+  <li><strong>飲食店・カフェ</strong>：テイクアウト需要増で大量発注対応、印刷コスト 25% 削減事例あり</li>
+  <li><strong>アパレル・セレクトショップ</strong>：店舗体験の質向上、ESG 配慮の紙袋でサステナブルブランドイメージ強化</li>
+  <li><strong>化粧品・コスメブランド</strong>：高級感あふれるパッケージで商品価値 UP、消費者レビューで「プレゼント向き」言及増加</li>
+  <li><strong>教育・スクール・塾</strong>：教材・案内チラシの一括印刷で教務業務時間 50% 削減、ブランド統一感向上</li>
+  <li><strong>不動産・住宅</strong>：物件資料・募集チラシの高品質印刷で問い合わせ数 40% UP 事例あり</li>
+  <li><strong>クリニック・医院</strong>：予防接種・健診案内の即日印刷で患者サービス向上</li>
+  <li><strong>イベント・展示会主催</strong>：ポスター・チラシ・配布物のワンストップ印刷、当日仕上げ対応</li>
+</ul>
+
+<h3>失敗しない発注のための 5 つのポイント</h3>
+<p>ご注文前に、以下の 5 つのポイントをご確認いただくと、発注後のトラブルを未然に防げます：</p>
+<ul>
+  <li><strong>用途を明確にする</strong>：屋内 or 屋外 / 短期 or 長期 / 耐水性が必要か、を事前に決定</li>
+  <li><strong>データ形式を準備する</strong>：Illustrator / InDesign / PDF 形式推奨、CMYK モード・トンボ付き</li>
+  <li><strong>数量は段階割引を考慮する</strong>：500 枚 / 1,000 枚 / 5,000 枚で割引率が UP、まとめて発注がお得</li>
+  <li><strong>納期に余裕を持つ</strong>：繁忙期（クリスマス / 年末年始 / 2 月 / 8 月）は 1 ヶ月前発注推奨</li>
+  <li><strong>サンプル請求を活用する</strong>：実物を見てから本印刷に進めるため、ミスマッチ防止</li>
+</ul>
+
+<h3>当サービスが選ばれる 5 つの理由</h3>
+<p>香港本社の印刷 SaaS として、日本語・日本市場向けに最適化されたサービスを提供しています：</p>
+<ul>
+  <li><strong>日本語ネイティブ対応</strong>：日本語カスタマーサポート平日 9:00〜18:00、日本向け請求書・領収書発行</li>
+  <li><strong>JPY 日本円建て明朗会計</strong>：為替変動リスクなし、経費精算しやすい</li>
+  <li><strong>30 秒 AI 見積もり</strong>：画面上で簡単設定、送料込みの総額表示で安心</li>
+  <li><strong>DHL/FedEx 直送 2-4 日</strong>：沖縄・離島も別途見積もり、全国配送対応</li>
+  <li><strong>FSC 認証 + 大豆インク</strong>：ESG 配慮、サステナブル調達要件に対応</li>
+</ul>
+
+<h3>配送方式と国際物流</h3>
+<p>日本向け配送に特化した 3 つのプランをご用意。ご注文数量・納期・配送先に応じて最適なプランを選択可能です：</p>
+<table>
+  <thead>
+    <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3〜5 営業日</td><td>少量追加料金</td></tr>
+    <tr><td>観塘門市自取</td><td>香港九龍観塘</td><td>完工当日</td><td>無料</td></tr>
+  </tbody>
+</table>
+<p>100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+
+<h3>環保認證と紙材溯源</h3>
+<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。学校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
+
+<h3>SaaS 印刷プラットフォーム概要</h3>
+<p>香港本社の印刷 SaaS プラットフォーム。30 秒 AI 見積もり、72 時間国際配送、AI ファイル事前チェック、印刷工藝のオンライン設定、紙材サンプル請求、NET 30 法人掛売りなど一站式サービスをご提供。日本語カスタマーサポート平日 9:00〜18:00、深圳・香港観塘・東京 3 拠点体制で日本市場を全力サポート。印刷のプロが業種別の最適仕様をご提案します。</p>
+
+<h3>香港観塘門市</h3>
+<p>観塘門市は香港九龍観塘偉業街 82 号成運工業大廈に位置し、観塘 MRT 駅 A2 出口より徒歩 5 分。紙質サンプル比較・装訂工藝展示・色校正確認など実物をご確認いただけます。日本のお客様は日本語スタッフが事前予約制で対応、休日応相談。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料セミナー開催中。</p>
+
+<h3>多通貨決済</h3>
+<p>Airwallex 多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・学校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
+
+<h3>30 秒 AI 見積もり流程</h3>
+<p>ご注文は 3 ステップで完了：</p>
+<ol>
+  <li><strong>仕様選択</strong>：紙材・サイズ・数量・印刷工藝・オプションを画面上で簡単設定</li>
+  <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式対応、AI 自動チェックで出血・解像度・CMYK 色彩を事前検証</li>
+  <li><strong>見積もり確認</strong>：30 秒以内に送料込みの総額表示、内容確認後すぐ製造開始</li>
+</ol>
+<p>今すぐ体験：<strong>智印雲 ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>`,
     features: [
       '【螢光油墨】高飽和度，日光下即顯強烈視覺衝擊',
       '【PVC／螢光紙】可選防水膜或紙質，適配室內外場景',
@@ -1757,8 +2514,197 @@ export const products: Product[] = [
 
 <h3>智印雲 SaaS 印刷服務</h3>
 <p>智印雲 (ZprintPro) —— 香港本地印刷 SaaS，支持 30 秒 AI 報價及 72 小時全球交付。自有觀塘門市自取點，48 小時快遞直送港九新界。</p>`,
-    longDescriptionEn: `Kraft paper bags use unbleached or semi-bleached kraft stock for an authentic fiber look—popular with Hong Kong cafés, bakeries, and lifestyle retail. Pair with cotton or paper rope handles, base reinforcement, and gussets for better load comfort. Print from bold one-color identities to four-color coverage; foil logos add gifting appeal. Terms align with category content: kraft bags, white card bags, foil stamping, spot UV, handles. Specify glue flap, bleed, and typical weight (often 120–200gsm) plus any food-contact notes when quoting.`,
-    longDescriptionJa: `クラフト紙袋をZprintProでご注文。未晒/半晒クラフト+綿紐/紙紐、自然な繊維感で香港のカフェ・ベーカリー・ライフスタイル店に人気。1色から4色+箔押しロゴ対応。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。`,
+    longDescriptionEn: `<h3>Kraft Paper Bags for Global Brands</h3>
+<p>ZprintPro kraft paper bags combine eco-friendly materials with retail-ready durability. Choose from 120-300g natural brown or white kraft with cotton or paper rope handles, base reinforcement, and gussets for load comfort. Our 4-color CMYK printing supports bold one-color identities through full-coverage photographic prints, with foil logo options for gifting appeal. 100-bag MOQ, 5-7 day standard production, FSC certified.</p>
+
+<h3>Material & Weight Comparison</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Stock</th>
+      <th class="p-2 text-center">Strength</th>
+      <th class="p-2 text-center">Eco Score</th>
+      <th class="p-2 text-center">Print Quality</th>
+      <th class="p-2 text-left">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">120g Brown Kraft</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Lightweight gifts, takeout</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">150g Brown Kraft</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Cafés, bakeries, retail</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">200g Brown Kraft</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">Apparel, lifestyle retail</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">250-300g White Card</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Beauty, jewelry, premium gifting</td></tr>
+  </tbody>
+</table>
+
+<h3>Handle & Finish Options</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Option</th>
+      <th class="p-2 text-left">Effect</th>
+      <th class="p-2 text-center">Load Capacity</th>
+      <th class="p-2 text-center">Cost Add</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">Cotton Rope Handles</td><td class="p-2">Premium tactile, eco-friendly</td><td class="p-2 text-center">8-12kg</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Paper Rope Handles</td><td class="p-2">100% recyclable, classic look</td><td class="p-2 text-center">6-10kg</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Flat Paper Handles</td><td class="p-2">Sleek, retail-friendly</td><td class="p-2 text-center">4-6kg</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Foil Stamped Logo</td><td class="p-2">Metallic shine, gifting appeal</td><td class="p-2 text-center">—</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Spot UV / Embossing</td><td class="p-2">Dimensional contrast</td><td class="p-2 text-center">—</td><td class="p-2 text-center">$$</td></tr>
+  </tbody>
+</table>
+
+<h3>Why Choose ZprintPro?</h3>
+<ul>
+  <li><strong>Global Shipping:</strong> DHL Express 2-4 days to US/UK/AU/KR/SG/AE. Free US shipping on orders over $100.</li>
+  <li><strong>FSC Certified Paper:</strong> Sustainably sourced kraft and white card. Soy-based inks available for ESG-conscious brands.</li>
+  <li><strong>Low MOQ with Volume Discount:</strong> 100-bag minimum, 15% off at 500+, 25% off at 1,000+, 35% off at 2,000+.</li>
+  <li><strong>Free Structural Design:</strong> Custom dieline design included. We handle glue flap, bleed, and base reinforcement spec.</li>
+  <li><strong>Reinforced Load Testing:</strong> 8-12kg capacity tested on standard configurations. Heavy-duty options for apparel twin-packs.</li>
+</ul>
+
+<h3>Use Cases & Industries</h3>
+<p>Kraft paper bags are the eco-friendly face of retail. ZprintPro serves coffee shops and bakeries (takeout and pastry bags), apparel brands (shopping bags for clothing and shoes), lifestyle retailers (gift and boutique bags), and event companies (conference and wedding favor bags). For US-based small businesses, our 100-bag MOQ and 5-7 day production is ideal for short retail runs. For international clients in the UK, Australia, and beyond, DHL Express delivers in 2-4 days.</p>
+
+<h3>Frequently Asked Questions</h3>
+<details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>100 bags. Volume discounts start at 500 bags (15% off), 1,000 bags (25% off), and 2,000+ bags (35% off).</p></details>
+<details class="my-2"><summary><strong>Can I print my logo in metallic foil?</strong></summary><p>Yes. Gold, silver, rose gold, and holographic foils are available. Foil stamping adds 1-2 days to production and is quoted per design complexity.</p></details>
+<details class="my-2"><summary><strong>How much weight can the bags hold?</strong></summary><p>Standard cotton rope handle bags hold 8-12kg, paper rope 6-10kg, flat paper 4-6kg. For heavier items, we reinforce the base and add internal card inserts.</p></details>
+<details class="my-2"><summary><strong>Are the bags food-safe?</strong></summary><p>For direct food contact, we offer FDA-compliant inner liners. For bakery and takeaway use, our standard kraft with a food-grade insert is recommended.</p></details>
+<details class="my-2"><summary><strong>Can I get custom sizes?</strong></summary><p>Yes. We produce custom dimensions from 8×6×2" (small jewelry) to 320×120×380mm (large apparel). Submit your spec for a quote.</p></details>
+<details class="my-2"><summary><strong>What about eco-certifications?</strong></summary><p>We offer FSC-certified kraft, 100% recycled fiber, and soy-based ink options. Carbon footprint calculation and eco-certification labels are available on request.</p></details>
+
+<p><em>Printed in our Hong Kong facility, shipped worldwide via DHL Express. ZprintPro — your global printing partner for eco-friendly retail bags, premium packaging, and brand merchandise.</em></p>
+
+    `,
+<h3>紙材材質対比</h3>
+<p>クラフト紙袋は 3 種類の中芯原紙を揃え、強度・印刷適性・コストのバランスで選択可能。智印雲 ZprintPro 全紙材 FSC 認証取得。</p>
+<table>
+  <thead>
+    <tr><th>紙材</th><th>克重</th><th>特性</th><th>適用場景</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>クラフト紙（茶）</td><td>100g–150g</td><td>自然な茶色、ザラつき感、エコ志向ブランドに最適、コストパフォーマンス高</td><td>アパレル・カフェ・小売店</td></tr>
+    <tr class="border-b border-gray-200"><td>白カード紙</td><td>200g–300g</td><td>表面平滑、印刷再現性高、フルカラー印刷に最適、プレミアム感</td><td>化粧品・高級ブランド・ギフト</td></tr>
+    <tr><td>黒厚紙</td><td>250g–350g</td><td>深黒の高級感、箔押し（金/銀）と相性抜群、婚礼・フォーマル向け</td><td>婚礼・フォーマル・VIP</td></tr>
+  </tbody>
+</table>
+
+<h3>表面加値工藝選択</h3>
+<p>クラフト紙袋の表面加工は 3 種類から選択可能、ブランドイメージと予算に応じて組み合わせ自由自在。</p>
+<table>
+  <thead>
+    <tr><th>工藝</th><th>効果</th><th>適用場面</th><th>追加料金</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>PP ラミネート（光）</td><td>表面光亮、防水性 UP、色再現性強化</td><td>小売店・アパレル</td><td>+15%</td></tr>
+    <tr class="border-b border-gray-200"><td>PP ラミネート（マット）</td><td>表面雾面、高級感、指紋防止</td><td>化粧品・高級ブランド</td><td>+15%</td></tr>
+    <tr><td>箔押し（金/銀/ローズ）</td><td>金属光沢、立体感、特別感演出</td><td>婚礼・ギフト・VIP</td><td>+20%</td></tr>
+  </tbody>
+</table>
+
+<h3>印刷工藝説明</h3>
+<ul>
+  <li><strong>4 色 CMYK 印刷</strong>：海德堡 4 色オフセット機で 90% 以上の色飽和、写真・グラデーション・ブランド色も精確に再現</li>
+  <li><strong>両面印刷</strong>：表面と裏面の両面に印刷可能、店舗ロゴ＋連絡先など情報量増</li>
+  <li><strong>スポットカラー</strong>：DIC/Pantone 指定色対応、ブランドカラー厳守</li>
+  <li><strong>特殊インキ</strong>：蛍光インキ・メタリックインキ・香りインキなど差別化オプション</li>
+  <li><strong>印前 AI 預検</strong>：無料 AI ファイルチェックで出血・CMYK 色域・低解像度画像を自動検出</li>
+</ul>
+
+<h3>取っ手と構造の選択</h3>
+<p>クラフト紙袋の取っ手は 8 種類から選択可能、ブランドイメージと用途に応じてカスタマイズ。</p>
+<ul>
+  <li><strong>PP 縄（ポリプロピレン）</strong>：標準的な化学繊維縄、耐久性高、コストパフォーマンス最良</li>
+  <li><strong>紙縄</strong>：エコ志向、100% 紙素材、リサイクル可能</li>
+  <li><strong>リボン（サテン）</strong>：ギフト・婚礼向け、上品な光沢と手触り</li>
+  <li><strong>平紐・丸紐</strong>：シンプル、アパレル・カフェに人気</li>
+  <li><strong>穴あけタイプ</strong>：取っ手なし、底マチ広め、梱包用に最適</li>
+</ul>
+
+<h3>FSC 認証と ESG 対応</h3>
+<p>智印雲 ZprintPro のクラフト紙袋は全紙材 <strong>FSC 森林管理委員会認証</strong>。再生紙 100% 使用可能、大豆インク印刷で VOC 排出を 80% 削減。ESG 報告書用カーボンフットプリント試算もご提供。アパレル・小売ブランド様のサステナビリティ目標達成を支援します。</p>
+
+<h3>活用シーンと業種別事例</h3>
+<p>智印雲 ZprintPro クラフト紙袋は国内外 5,000 社以上のブランド取引実績。</p>
+<ul>
+  <li><strong>アパレル・セレクトショップ</strong>：店舗ロゴ入りオリジナル紙袋、買い物体験の質を向上</li>
+  <li><strong>カフェ・飲食店</strong>：テイクアウト用、テイクアウト需要増で大量発注も対応</li>
+  <li><strong>小売・百貨店</strong>：催事・福袋用、季節限定デザイン</li>
+  <li><strong>化粧品・コスメブランド</strong>：マット PP + 箔押しで高級感演出</li>
+  <li><strong>ギフト・婚礼</strong>：黒厚紙 + 金箔押しのフォーマル仕様</li>
+  <li><strong>展示会・カンファレンス</strong>：資料・ノベルティ配布用、即日納品可能</li>
+</ul>
+
+<h3>業界別活用事例と導入効果</h3>
+<p>本サービスの {PRODUCT_NAME} は、国内外 5,000 社以上の法人取引実績があり、業界別の課題と要件に応じた最適ソリューションをご提供しています。</p>
+<ul>
+  <li><strong>小売・ブランドオーナー</strong>：店舗ロゴ入りオリジナル商品でブランド認知度向上、リピート率 30% UP 事例多数</li>
+  <li><strong>飲食店・カフェ</strong>：テイクアウト需要増で大量発注対応、印刷コスト 25% 削減事例あり</li>
+  <li><strong>アパレル・セレクトショップ</strong>：店舗体験の質向上、ESG 配慮の紙袋でサステナブルブランドイメージ強化</li>
+  <li><strong>化粧品・コスメブランド</strong>：高級感あふれるパッケージで商品価値 UP、消費者レビューで「プレゼント向き」言及増加</li>
+  <li><strong>教育・スクール・塾</strong>：教材・案内チラシの一括印刷で教務業務時間 50% 削減、ブランド統一感向上</li>
+  <li><strong>不動産・住宅</strong>：物件資料・募集チラシの高品質印刷で問い合わせ数 40% UP 事例あり</li>
+  <li><strong>クリニック・医院</strong>：予防接種・健診案内の即日印刷で患者サービス向上</li>
+  <li><strong>イベント・展示会主催</strong>：ポスター・チラシ・配布物のワンストップ印刷、当日仕上げ対応</li>
+</ul>
+
+<h3>失敗しない発注のための 5 つのポイント</h3>
+<p>ご注文前に、以下の 5 つのポイントをご確認いただくと、発注後のトラブルを未然に防げます：</p>
+<ul>
+  <li><strong>用途を明確にする</strong>：屋内 or 屋外 / 短期 or 長期 / 耐水性が必要か、を事前に決定</li>
+  <li><strong>データ形式を準備する</strong>：Illustrator / InDesign / PDF 形式推奨、CMYK モード・トンボ付き</li>
+  <li><strong>数量は段階割引を考慮する</strong>：500 枚 / 1,000 枚 / 5,000 枚で割引率が UP、まとめて発注がお得</li>
+  <li><strong>納期に余裕を持つ</strong>：繁忙期（クリスマス / 年末年始 / 2 月 / 8 月）は 1 ヶ月前発注推奨</li>
+  <li><strong>サンプル請求を活用する</strong>：実物を見てから本印刷に進めるため、ミスマッチ防止</li>
+</ul>
+
+<h3>当サービスが選ばれる 5 つの理由</h3>
+<p>香港本社の印刷 SaaS として、日本語・日本市場向けに最適化されたサービスを提供しています：</p>
+<ul>
+  <li><strong>日本語ネイティブ対応</strong>：日本語カスタマーサポート平日 9:00〜18:00、日本向け請求書・領収書発行</li>
+  <li><strong>JPY 日本円建て明朗会計</strong>：為替変動リスクなし、経費精算しやすい</li>
+  <li><strong>30 秒 AI 見積もり</strong>：画面上で簡単設定、送料込みの総額表示で安心</li>
+  <li><strong>DHL/FedEx 直送 2-4 日</strong>：沖縄・離島も別途見積もり、全国配送対応</li>
+  <li><strong>FSC 認証 + 大豆インク</strong>：ESG 配慮、サステナブル調達要件に対応</li>
+</ul>
+
+<h3>配送方式と国際物流</h3>
+<p>日本向け配送に特化した 3 つのプランをご用意。ご注文数量・納期・配送先に応じて最適なプランを選択可能です：</p>
+<table>
+  <thead>
+    <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3〜5 営業日</td><td>少量追加料金</td></tr>
+    <tr><td>観塘門市自取</td><td>香港九龍観塘</td><td>完工当日</td><td>無料</td></tr>
+  </tbody>
+</table>
+<p>100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+
+<h3>環保認證と紙材溯源</h3>
+<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。学校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
+
+<h3>SaaS 印刷プラットフォーム概要</h3>
+<p>香港本社の印刷 SaaS プラットフォーム。30 秒 AI 見積もり、72 時間国際配送、AI ファイル事前チェック、印刷工藝のオンライン設定、紙材サンプル請求、NET 30 法人掛売りなど一站式サービスをご提供。日本語カスタマーサポート平日 9:00〜18:00、深圳・香港観塘・東京 3 拠点体制で日本市場を全力サポート。印刷のプロが業種別の最適仕様をご提案します。</p>
+
+<h3>香港観塘門市</h3>
+<p>観塘門市は香港九龍観塘偉業街 82 号成運工業大廈に位置し、観塘 MRT 駅 A2 出口より徒歩 5 分。紙質サンプル比較・装訂工藝展示・色校正確認など実物をご確認いただけます。日本のお客様は日本語スタッフが事前予約制で対応、休日応相談。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料セミナー開催中。</p>
+
+<h3>多通貨決済</h3>
+<p>Airwallex 多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・学校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
+
+<h3>30 秒 AI 見積もり流程</h3>
+<p>ご注文は 3 ステップで完了：</p>
+<ol>
+  <li><strong>仕様選択</strong>：紙材・サイズ・数量・印刷工藝・オプションを画面上で簡単設定</li>
+  <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式対応、AI 自動チェックで出血・解像度・CMYK 色彩を事前検証</li>
+  <li><strong>見積もり確認</strong>：30 秒以内に送料込みの総額表示、内容確認後すぐ製造開始</li>
+</ol>
+<p>今すぐ体験：<strong>智印雲 ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>`,
     features: [
       '牛皮紙質感，環保形象鮮明',
       '可選棉繩／紙繩手挽與底部加固',
@@ -1965,7 +2911,150 @@ export const products: Product[] = [
 <h3>智印雲 SaaS 印刷服務</h3>
 <p>智印雲 (ZprintPro) —— 香港本地印刷 SaaS，支持 30 秒 AI 報價及 72 小時全球交付。自有觀塘門市自取點，48 小時快遞直送港九新界。</p>`,
     longDescriptionEn: `Gift bags emphasize unboxing ritual—common for festive sets, wedding favors, corporate gift packs, and merch bundles. Stocks include white card, textured specialty, or pearlescent papers with foil greetings, spot UV accents, and ribbon handles. Widen base and gussets to fit rigid gift boxes. Terms align with category content: gift bags, foil stamping, ribbon handles, lamination. Manage heavy ink coverage to avoid show-through; reinforce handle punches; split digital labels vs bag print for rush schedules when needed.`,
-    longDescriptionJa: `ギフト紙袋をZprintProでご注文。白卡・テクスチャ・パール系に箔押し・局部UV+リボン持ち手で開封の儀式感を高める。季節ギフト・結婚引き出物・企業福袋様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。`,
+    longDescriptionJa: `
+<h3>紙質材質対比</h3>
+<p>ギフトバッグは 4 種類の紙質から選択、季節と予算に応じて最適化。</p>
+<table>
+  <thead>
+    <tr><th>紙質</th><th>克重</th><th>特性</th><th>適用場景</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>コート紙（光沢）</td><td>157g–250g</td><td>表面光亮、色鮮やか、写真再現性高</td><td>クリスマス・アパレル</td></tr>
+    <tr class="border-b border-gray-200"><td>クラフト紙（ナチュラル）</td><td>120g–200g</td><td>自然な茶色、ザラつき感、エコ志向</td><td>オーガニック・ナチュラル系</td></tr>
+    <tr class="border-b border-gray-200"><td>特殊紙（マーブル・和紙調）</td><td>200g–250g</td><td>独特な模様、高級感</td><td>婚礼・フォーマル・VIP</td></tr>
+    <tr><td>厚口紙（プレミアム）</td><td>300g</td><td>最高級、存在感 MAX</td><td>高級ブランド・VIP ギフト</td></tr>
+  </tbody>
+</table>
+
+<h3>取っ手と加値工藝</h3>
+<p>ギフトバッグの取っ手 10 種類と表面加工 4 種類から選択。</p>
+<table>
+  <thead>
+    <tr><th>工藝</th><th>効果</th><th>適用場面</th><th>追加料金</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>PP 縄（黒/白/茶）</td><td>標準的、耐久性高</td><td>クリスマス・汎用</td><td>標準</td></tr>
+    <tr class="border-b border-gray-200"><td>紙縄</td><td>エコ志向、100% 紙素材</td><td>オーガニック・SDGs</td><td>標準</td></tr>
+    <tr class="border-b border-gray-200"><td>リボン（サテン）</td><td>上品な光沢、特別感</td><td>婚礼・ギフト</td><td>+10%</td></tr>
+    <tr class="border-b border-gray-200"><td>サテンリボン（幅広）</td><td>より高級、存在感 MAX</td><td>クリスマス VIP・フォーマル</td><td>+15%</td></tr>
+    <tr class="border-b border-gray-200"><td>箔押し（金/銀/ローズ）</td><td>金属光沢、特別感演出</td><td>クリスマス・記念版</td><td>+20%</td></tr>
+    <tr><td>スポット UV</td><td>部分的光沢、コントラスト</td><td>ロゴ・クリスマス</td><td>+15%</td></tr>
+  </tbody>
+</table>
+
+<h3>印刷工藝と表面加工</h3>
+<ul>
+  <li><strong>4 色 CMYK 印刷</strong>：海德堡 4 色機で 90% 以上の色飽和、写真・グラデーションも精確再現</li>
+  <li><strong>両面印刷</strong>：表面と裏面の両面に印刷可能、店舗ロゴ＋連絡先など情報量増</li>
+  <li><strong>スポットカラー</strong>：DIC/Pantone 指定色対応、ブランドカラー厳守</li>
+  <li><strong>PP ラミネート（光/マット）</strong>：表面保護、防水性 UP、上品な雾面感</li>
+  <li><strong>印前 AI 預検</strong>：無料 AI ファイルチェックで出血・CMYK 色域・低解像度画像を自動検出</li>
+</ul>
+
+<h3>取っ手 10 種類の選択</h3>
+<p>ギフトバッグの取っ手は 10 種類から選択、ブランドイメージと季節に応じて。</p>
+<ul>
+  <li><strong>PP 縄（黒/白/茶/赤/金/銀）</strong>：標準的、耐久性高、コストパフォーマンス最良</li>
+  <li><strong>紙縄</strong>：エコ志向、100% 紙素材、リサイクル可能</li>
+  <li><strong>リボン（サテン）</strong>：ギフト・婚礼向け、上品な光沢と手触り</li>
+  <li><strong>サテンリボン（幅広）</strong>：より高級、クリスマス VIP・フォーマル向け</li>
+  <li><strong>平紐・丸紐</strong>：シンプル、アパレル・カフェに人気</li>
+  <li><strong>穴あけタイプ</strong>：取っ手なし、底マチ広め、梱包用に最適</li>
+</ul>
+
+<h3>サイズと形の選択</h3>
+<p>ギフトバッグは 4 つの標準サイズとオリジナルサイズ対応。</p>
+<ul>
+  <li><strong>S（180×120×80mm）</strong>：アクセサリー・小さなギフト</li>
+  <li><strong>M（250×200×100mm）</strong>：標準サイズ、汎用</li>
+  <li><strong>L（350×280×120mm）</strong>：アパレル・中型ギフト</li>
+  <li><strong>LL（450×350×150mm）</strong>：大型ギフト・複数アイテム</li>
+  <li><strong>オリジナルサイズ</strong>：最小 100×80×50mm から最大 600×500×300mm まで対応</li>
+  <li><strong>底マチ・形状</strong>：角底・丸底・平底、自由指定</li>
+</ul>
+
+<h3>FSC 認証と環境配慮</h3>
+<p>智印雲 ZprintPro のギフトバッグは全紙質で <strong>FSC 認証取得</strong>。再生紙 100% 使用可能、大豆インク印刷対応で ESG 配慮イベント・サステナブル志向ブランドも安心してご利用いただけます。クリスマス大量配布の廃棄時にも、リサイクル可能な素材構成で環境負荷を最小化します。</p>
+
+<h3>活用シーンと季節別事例</h3>
+<p>智印雲 ZprintPro ギフトバッグは年間 50 万枚以上の出荷実績。</p>
+<ul>
+  <li><strong>クリスマス</strong>：百貨店・小売・ブランド、サンタ柄・雪の結晶デザイン</li>
+  <li><strong>年末年始</strong>：お年玉袋・お年賀・新年プレゼント</li>
+  <li><strong>婚礼</strong>：引出物・記念品、和風鶴亀松竹梅デザイン</li>
+  <li><strong>アパレル・セレクトショップ</strong>：店舗ロゴ入りオリジナル紙袋</li>
+  <li><strong>化粧品・コスメブランド</strong>：マット PP + 箔押しで高級感演出</li>
+  <li><strong>カフェ・飲食店</strong>：テイクアウト用、クリスマスメニュー</li>
+</ul>
+
+<h3>業界別活用事例と導入効果</h3>
+<p>本サービスの {PRODUCT_NAME} は、国内外 5,000 社以上の法人取引実績があり、業界別の課題と要件に応じた最適ソリューションをご提供しています。</p>
+<ul>
+  <li><strong>小売・ブランドオーナー</strong>：店舗ロゴ入りオリジナル商品でブランド認知度向上、リピート率 30% UP 事例多数</li>
+  <li><strong>飲食店・カフェ</strong>：テイクアウト需要増で大量発注対応、印刷コスト 25% 削減事例あり</li>
+  <li><strong>アパレル・セレクトショップ</strong>：店舗体験の質向上、ESG 配慮の紙袋でサステナブルブランドイメージ強化</li>
+  <li><strong>化粧品・コスメブランド</strong>：高級感あふれるパッケージで商品価値 UP、消費者レビューで「プレゼント向き」言及増加</li>
+  <li><strong>教育・スクール・塾</strong>：教材・案内チラシの一括印刷で教務業務時間 50% 削減、ブランド統一感向上</li>
+  <li><strong>不動産・住宅</strong>：物件資料・募集チラシの高品質印刷で問い合わせ数 40% UP 事例あり</li>
+  <li><strong>クリニック・医院</strong>：予防接種・健診案内の即日印刷で患者サービス向上</li>
+  <li><strong>イベント・展示会主催</strong>：ポスター・チラシ・配布物のワンストップ印刷、当日仕上げ対応</li>
+</ul>
+
+<h3>失敗しない発注のための 5 つのポイント</h3>
+<p>ご注文前に、以下の 5 つのポイントをご確認いただくと、発注後のトラブルを未然に防げます：</p>
+<ul>
+  <li><strong>用途を明確にする</strong>：屋内 or 屋外 / 短期 or 長期 / 耐水性が必要か、を事前に決定</li>
+  <li><strong>データ形式を準備する</strong>：Illustrator / InDesign / PDF 形式推奨、CMYK モード・トンボ付き</li>
+  <li><strong>数量は段階割引を考慮する</strong>：500 枚 / 1,000 枚 / 5,000 枚で割引率が UP、まとめて発注がお得</li>
+  <li><strong>納期に余裕を持つ</strong>：繁忙期（クリスマス / 年末年始 / 2 月 / 8 月）は 1 ヶ月前発注推奨</li>
+  <li><strong>サンプル請求を活用する</strong>：実物を見てから本印刷に進めるため、ミスマッチ防止</li>
+</ul>
+
+<h3>当サービスが選ばれる 5 つの理由</h3>
+<p>香港本社の印刷 SaaS として、日本語・日本市場向けに最適化されたサービスを提供しています：</p>
+<ul>
+  <li><strong>日本語ネイティブ対応</strong>：日本語カスタマーサポート平日 9:00〜18:00、日本向け請求書・領収書発行</li>
+  <li><strong>JPY 日本円建て明朗会計</strong>：為替変動リスクなし、経費精算しやすい</li>
+  <li><strong>30 秒 AI 見積もり</strong>：画面上で簡単設定、送料込みの総額表示で安心</li>
+  <li><strong>DHL/FedEx 直送 2-4 日</strong>：沖縄・離島も別途見積もり、全国配送対応</li>
+  <li><strong>FSC 認証 + 大豆インク</strong>：ESG 配慮、サステナブル調達要件に対応</li>
+</ul>
+
+<h3>配送方式と国際物流</h3>
+<p>日本向け配送に特化した 3 つのプランをご用意。ご注文数量・納期・配送先に応じて最適なプランを選択可能です：</p>
+<table>
+  <thead>
+    <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3〜5 営業日</td><td>少量追加料金</td></tr>
+    <tr><td>観塘門市自取</td><td>香港九龍観塘</td><td>完工当日</td><td>無料</td></tr>
+  </tbody>
+</table>
+<p>100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+
+<h3>環保認證と紙材溯源</h3>
+<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。学校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
+
+<h3>SaaS 印刷プラットフォーム概要</h3>
+<p>香港本社の印刷 SaaS プラットフォーム。30 秒 AI 見積もり、72 時間国際配送、AI ファイル事前チェック、印刷工藝のオンライン設定、紙材サンプル請求、NET 30 法人掛売りなど一站式サービスをご提供。日本語カスタマーサポート平日 9:00〜18:00、深圳・香港観塘・東京 3 拠点体制で日本市場を全力サポート。印刷のプロが業種別の最適仕様をご提案します。</p>
+
+<h3>香港観塘門市</h3>
+<p>観塘門市は香港九龍観塘偉業街 82 号成運工業大廈に位置し、観塘 MRT 駅 A2 出口より徒歩 5 分。紙質サンプル比較・装訂工藝展示・色校正確認など実物をご確認いただけます。日本のお客様は日本語スタッフが事前予約制で対応、休日応相談。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料セミナー開催中。</p>
+
+<h3>多通貨決済</h3>
+<p>Airwallex 多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・学校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
+
+<h3>30 秒 AI 見積もり流程</h3>
+<p>ご注文は 3 ステップで完了：</p>
+<ol>
+  <li><strong>仕様選択</strong>：紙材・サイズ・数量・印刷工藝・オプションを画面上で簡単設定</li>
+  <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式対応、AI 自動チェックで出血・解像度・CMYK 色彩を事前検証</li>
+  <li><strong>見積もり確認</strong>：30 秒以内に送料込みの総額表示、内容確認後すぐ製造開始</li>
+</ol>
+<p>今すぐ体験：<strong>智印雲 ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>`,
     features: [
       '禮贈場景導向，工藝層次豐富',
       '可搭燙金、局部 UV、緞帶手挽',
@@ -2430,8 +3519,204 @@ export const products: Product[] = [
 
 <h3>智印雲 SaaS 印刷服務</h3>
 <p>智印雲 (ZprintPro) —— 香港本地印刷 SaaS，支持 30 秒 AI 報價及 72 小時全球交付。自有觀塘門市自取點，48 小時快遞直送港九新界。</p>`,
-    longDescriptionEn: `ZprintPro A4 Flyers use 157g premium glossy or 128g matte art paper with 4-color offset or digital printing for saturated color and crisp text. A4 size (210×297mm) is Hong Kong's most common flyer format—ideal for product promotion, event advertising, course enrollment, and grand openings. Single or double-sided printing available. Free layout and bleed checks ensure text isn't trimmed.`,
-    longDescriptionJa: `A4チラシをZprintProでご注文。157g高級コート紙+4色オフセット+A4サイズ（210×297mm）で香港で最も一般的なチラシ形式。製品プロモーション・イベント広告・コース募集・新店オープン様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。`,
+    longDescriptionEn: `<h3>A4 Flyers for Global Brands</h3>
+<p>ZprintPro A4 flyers (210×297mm) are the workhorse of event marketing, product launches, and retail promotions. Choose from 128g-300g gloss or matte art paper with 4-color CMYK printing on one or both sides. Our Heidelberg offset presses deliver saturated color and crisp text, with optional matte or gloss lamination for durability. 100-flyer MOQ, same-day production available for orders of 500 or fewer. Standard lead time 1-3 business days.</p>
+
+<h3>Paper & Weight Comparison</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Paper</th>
+      <th class="p-2 text-center">Weight</th>
+      <th class="p-2 text-center">Feel</th>
+      <th class="p-2 text-center">Cost</th>
+      <th class="p-2 text-left">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">Gloss Art</td><td class="p-2 text-center">128g</td><td class="p-2 text-center">Slick, vibrant</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Mass distribution, retail promos</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Gloss Art</td><td class="p-2 text-center">157g</td><td class="p-2 text-center">Premium standard</td><td class="p-2 text-center">★★★★</td><td class="p-2">Product launches, real estate</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Matte Art</td><td class="p-2 text-center">200g</td><td class="p-2 text-center">Substantial, refined</td><td class="p-2 text-center">★★★</td><td class="p-2">Restaurant menus, events</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Matte Art</td><td class="p-2 text-center">250-300g</td><td class="p-2 text-center">Card-like, luxury</td><td class="p-2 text-center">★★</td><td class="p-2">Premium catalogs, course guides</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Recycled</td><td class="p-2 text-center">120-150g</td><td class="p-2 text-center">Natural, textured</td><td class="p-2 text-center">★★★★</td><td class="p-2">Eco campaigns, NGO outreach</td></tr>
+  </tbody>
+</table>
+
+<h3>Size & Format Options</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-left">Dimensions</th>
+      <th class="p-2 text-center">Info Capacity</th>
+      <th class="p-2 text-center">Cost</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">A6 (postcard)</td><td class="p-2">105×148mm</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5 (half page)</td><td class="p-2">148×210mm</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">A4 (standard)</td><td class="p-2">210×297mm</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">DL (envelope fit)</td><td class="p-2">99×210mm</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Square</td><td class="p-2">210×210mm</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★</td></tr>
+  </tbody>
+</table>
+
+<h3>Why Choose ZprintPro?</h3>
+<ul>
+  <li><strong>Global Shipping:</strong> DHL Express 2-4 days to US/UK/AU/KR/SG/AE. Free US shipping on orders over $100.</li>
+  <li><strong>Same-Day Turnaround:</strong> 500-flyer orders with file confirmation by 11am ship same day. Standard 1-3 business days.</li>
+  <li><strong>Low MOQ with Volume Discount:</strong> 100-flyer minimum, 15% off at 500+, 25% off at 1,000+, 35% off at 5,000+.</li>
+  <li><strong>Free Layout & Bleed Check:</strong> We prepress your file at no charge. CMYK conversion, color proofing, and bleed verification included.</li>
+  <li><strong>Free Design Service:</strong> 3 layout concepts free with every order. Professional designers tailor to your industry and audience.</li>
+</ul>
+
+<h3>Use Cases & Industries</h3>
+<p>A4 flyers are the most versatile marketing collateral. ZprintPro serves real estate agents (open house and listing flyers), restaurants (menu and promo flyers), retail stores (sale and event announcements), educational institutions (course enrollment and event flyers), and service businesses (dental, salon, fitness, and professional services). For US-based small businesses, our same-day turnaround and 100-MOQ is ideal for last-minute events. For international clients in the UK, Australia, and beyond, DHL Express delivers in 2-4 days.</p>
+
+<h3>Frequently Asked Questions</h3>
+<details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>100 flyers. We also accept sample orders of 10-50 flyers for design proofing (rush fee applies).</p></details>
+<details class="my-2"><summary><strong>Can I get same-day printing?</strong></summary><p>Yes. For orders up to 500 flyers with file confirmation by 11am (Hong Kong time), production and same-day dispatch are available. US delivery via DHL Express arrives 2-4 business days after dispatch.</p></details>
+<details class="my-2"><summary><strong>Do you offer double-sided printing?</strong></summary><p>Yes. Double-sided 4-color CMYK is standard. Front-to-back registration precision within ±0.5mm. Submit two files (front and back) or one combined file with layers.</p></details>
+<details class="my-2"><summary><strong>Can I add a QR code or coupon design?</strong></summary><p>Yes. QR codes, discount coupons, and tear-off reply cards are all supported. We can also design these for you at no extra charge.</p></details>
+<details class="my-2"><summary><strong>What paper weight should I choose?</strong></summary><p>157g gloss art is the industry standard for A4 flyers. For premium feel, choose 200-250g matte. For high-volume distribution (under $0.10 per flyer), 128g gloss is the budget option.</p></details>
+<details class="my-2"><summary><strong>Do you offer eco-friendly options?</strong></summary><p>Yes. FSC-certified recycled paper and soy-based inks are available. Carbon footprint calculation and eco-certification labels can be added on request.</p></details>
+
+<p><em>Printed in our Hong Kong facility, shipped worldwide via DHL Express. ZprintPro — your global printing partner for flyers, posters, packaging, and marketing collateral.</em></p>
+
+    `,
+<h3>紙質材質対比</h3>
+<p>A4 チラシは 3 種類の紙質から選択、用途・予算・持ち手期間で最適化。</p>
+<table>
+  <thead>
+    <tr><th>紙質</th><th>克重</th><th>特性</th><th>適用場景</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>光沢コート紙</td><td>128g–157g</td><td>表面光亮、色鮮やか、写真再現性高</td><td>商品広告・キャンペーン・店舗 POP</td></tr>
+    <tr class="border-b border-gray-200"><td>マットコート紙</td><td>128g–157g</td><td>表面雾面、上品な質感、視認性高</td><td>飲食店・サロン・クリニック</td></tr>
+    <tr><td>上質紙</td><td>90g–110g</td><td>ざらついた質感、コストパフォーマンス最良、書き込み可</td><td>折り込みチラシ・セミナー案内</td></tr>
+  </tbody>
+</table>
+
+<h3>後加工選択</h3>
+<p>A4 チラシの追加加工 4 種類、目的に応じて選択。</p>
+<table>
+  <thead>
+    <tr><th>加工</th><th>効果</th><th>適用場面</th><th>納期影響</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>PP ラミネート（光）</td><td>防水・耐久性 UP、色再現強化</td><td>店舗 POP・屋外短期間</td><td>+1 営業日</td></tr>
+    <tr class="border-b border-gray-200"><td>PP ラミネート（マット）</td><td>上品な雾面、指紋防止</td><td>高級商品広告</td><td>+1 営業日</td></tr>
+    <tr class="border-b border-gray-200"><td>ニス仕上げ</td><td>簡易保護、低コスト</td><td>大量折り込みチラシ</td><td>影響なし</td></tr>
+    <tr><td>折り加工</td><td>二つ折り・三つ折り Z 折り</td><td>リーフレット・メニュー</td><td>+1 営業日</td></tr>
+  </tbody>
+</table>
+
+<h3>印刷工藝説明</h3>
+<ul>
+  <li><strong>4 色 CMYK 印刷</strong>：海德堡 4 色機で高精細、グラデーション・写真も精確に再現</li>
+  <li><strong>両面印刷</strong>：表と裏で異なる情報掲載、メニュー・店舗案内に最適</li>
+  <li><strong>特大版対応</strong>：A4 以下の全サイズ（A5/A6/DL/正方形）対応</li>
+  <li><strong>可変データ印刷</strong>：1 枚ごとに違う名前・QR コード・番号印刷可能</li>
+  <li><strong>スピード納品</strong>：午前 11 時までのデータ確定で当日仕上げ・当日配送（香港本店受取）</li>
+</ul>
+
+<h3>デザイン制作サービス</h3>
+<p>プロデザイナーが業種別の A4 チラシを 3 案まで無料作成。</p>
+<ul>
+  <li><strong>3 案無料デザイン</strong>：Illustrator / InDesign / PDF 入稿対応、CMYK 変換・色校正・入稿チェック無料</li>
+  <li><strong>業種別最適化</strong>：飲食店・小売・サービス業・クリニックなど業種別テンプレート豊富</li>
+  <li><strong>多言語対応</strong>：日本語・英語・中国語併記の 3 言語チラシも対応可能</li>
+  <li><strong>修正無制限</strong>：初版提出後 3 回まで無料修正、満足いくまで対応</li>
+</ul>
+
+<h3>スピード納品と緊急対応</h3>
+<p>智印雲 ZprintPro は急ぎの A4 チラシ印刷に業界最速で対応。</p>
+<ul>
+  <li><strong>当日仕上げ（即日納品）</strong>：500 枚未満、午前 11 時データ確定で当日仕上げ・当日配送（香港本店受取）</li>
+  <li><strong>特急 1〜2 営業日</strong>：500 枚以上、特急料金で対応</li>
+  <li><strong>イベント・キャンペーン対応</strong>：開店祝い・新作発表・セミナー案内など直前発注も相談可能</li>
+  <li><strong>日本向け配送 2〜4 日</strong>：DHL/FedEx 直送、沖縄・離島も別途見積もりで対応</li>
+</ul>
+
+<h3>活用シーンと成功事例</h3>
+<p>智印雲 ZprintPro A4 チラシは年間 1,000 万枚以上の印刷実績。</p>
+<ul>
+  <li><strong>飲食店（カフェ・レストラン）</strong>：新メニュー・季節限定・テイクアウト案内</li>
+  <li><strong>小売・アパレル</strong>：セール・新作・会員募集</li>
+  <li><strong>美容・サロン</strong>：新規オープン・キャンペーン・施術メニュー</li>
+  <li><strong>クリニック・医院</strong>：予防接種・健診・健康講座案内</li>
+  <li><strong>不動産</strong>：賃貸物件・売却物件・オープンルーム案内</li>
+  <li><strong>教育・スクール</strong>：入会案内・体験レッスン・キャンペーン</li>
+</ul>
+
+<h3>業界別活用事例と導入効果</h3>
+<p>本サービスの {PRODUCT_NAME} は、国内外 5,000 社以上の法人取引実績があり、業界別の課題と要件に応じた最適ソリューションをご提供しています。</p>
+<ul>
+  <li><strong>小売・ブランドオーナー</strong>：店舗ロゴ入りオリジナル商品でブランド認知度向上、リピート率 30% UP 事例多数</li>
+  <li><strong>飲食店・カフェ</strong>：テイクアウト需要増で大量発注対応、印刷コスト 25% 削減事例あり</li>
+  <li><strong>アパレル・セレクトショップ</strong>：店舗体験の質向上、ESG 配慮の紙袋でサステナブルブランドイメージ強化</li>
+  <li><strong>化粧品・コスメブランド</strong>：高級感あふれるパッケージで商品価値 UP、消費者レビューで「プレゼント向き」言及増加</li>
+  <li><strong>教育・スクール・塾</strong>：教材・案内チラシの一括印刷で教務業務時間 50% 削減、ブランド統一感向上</li>
+  <li><strong>不動産・住宅</strong>：物件資料・募集チラシの高品質印刷で問い合わせ数 40% UP 事例あり</li>
+  <li><strong>クリニック・医院</strong>：予防接種・健診案内の即日印刷で患者サービス向上</li>
+  <li><strong>イベント・展示会主催</strong>：ポスター・チラシ・配布物のワンストップ印刷、当日仕上げ対応</li>
+</ul>
+
+<h3>失敗しない発注のための 5 つのポイント</h3>
+<p>ご注文前に、以下の 5 つのポイントをご確認いただくと、発注後のトラブルを未然に防げます：</p>
+<ul>
+  <li><strong>用途を明確にする</strong>：屋内 or 屋外 / 短期 or 長期 / 耐水性が必要か、を事前に決定</li>
+  <li><strong>データ形式を準備する</strong>：Illustrator / InDesign / PDF 形式推奨、CMYK モード・トンボ付き</li>
+  <li><strong>数量は段階割引を考慮する</strong>：500 枚 / 1,000 枚 / 5,000 枚で割引率が UP、まとめて発注がお得</li>
+  <li><strong>納期に余裕を持つ</strong>：繁忙期（クリスマス / 年末年始 / 2 月 / 8 月）は 1 ヶ月前発注推奨</li>
+  <li><strong>サンプル請求を活用する</strong>：実物を見てから本印刷に進めるため、ミスマッチ防止</li>
+</ul>
+
+<h3>当サービスが選ばれる 5 つの理由</h3>
+<p>香港本社の印刷 SaaS として、日本語・日本市場向けに最適化されたサービスを提供しています：</p>
+<ul>
+  <li><strong>日本語ネイティブ対応</strong>：日本語カスタマーサポート平日 9:00〜18:00、日本向け請求書・領収書発行</li>
+  <li><strong>JPY 日本円建て明朗会計</strong>：為替変動リスクなし、経費精算しやすい</li>
+  <li><strong>30 秒 AI 見積もり</strong>：画面上で簡単設定、送料込みの総額表示で安心</li>
+  <li><strong>DHL/FedEx 直送 2-4 日</strong>：沖縄・離島も別途見積もり、全国配送対応</li>
+  <li><strong>FSC 認証 + 大豆インク</strong>：ESG 配慮、サステナブル調達要件に対応</li>
+</ul>
+
+<h3>配送方式と国際物流</h3>
+<p>日本向け配送に特化した 3 つのプランをご用意。ご注文数量・納期・配送先に応じて最適なプランを選択可能です：</p>
+<table>
+  <thead>
+    <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3〜5 営業日</td><td>少量追加料金</td></tr>
+    <tr><td>観塘門市自取</td><td>香港九龍観塘</td><td>完工当日</td><td>無料</td></tr>
+  </tbody>
+</table>
+<p>100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+
+<h3>環保認證と紙材溯源</h3>
+<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。学校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
+
+<h3>SaaS 印刷プラットフォーム概要</h3>
+<p>香港本社の印刷 SaaS プラットフォーム。30 秒 AI 見積もり、72 時間国際配送、AI ファイル事前チェック、印刷工藝のオンライン設定、紙材サンプル請求、NET 30 法人掛売りなど一站式サービスをご提供。日本語カスタマーサポート平日 9:00〜18:00、深圳・香港観塘・東京 3 拠点体制で日本市場を全力サポート。印刷のプロが業種別の最適仕様をご提案します。</p>
+
+<h3>香港観塘門市</h3>
+<p>観塘門市は香港九龍観塘偉業街 82 号成運工業大廈に位置し、観塘 MRT 駅 A2 出口より徒歩 5 分。紙質サンプル比較・装訂工藝展示・色校正確認など実物をご確認いただけます。日本のお客様は日本語スタッフが事前予約制で対応、休日応相談。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料セミナー開催中。</p>
+
+<h3>多通貨決済</h3>
+<p>Airwallex 多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・学校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
+
+<h3>30 秒 AI 見積もり流程</h3>
+<p>ご注文は 3 ステップで完了：</p>
+<ol>
+  <li><strong>仕様選択</strong>：紙材・サイズ・数量・印刷工藝・オプションを画面上で簡単設定</li>
+  <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式対応、AI 自動チェックで出血・解像度・CMYK 色彩を事前検証</li>
+  <li><strong>見積もり確認</strong>：30 秒以内に送料込みの総額表示、内容確認後すぐ製造開始</li>
+</ol>
+<p>今すぐ体験：<strong>智印雲 ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>`,
     features: [
       '【A4／A5標準尺寸】最常見派發規格，兼容性強',
       '【四色數碼／柯式】色彩鮮豔，適合照片與圖文混排',
@@ -3207,17 +4492,145 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <h3>智印雲 SaaS 印刷服務</h3>
 <p>智印雲 (ZprintPro) —— 香港本地印刷 SaaS，支持 30 秒 AI 報價及 72 小時全球交付。自有觀塘門市自取點，48 小時快遞直送港九新界。</p>`,
     longDescriptionEn: `A2 posters hit the sweet spot between office walls, lift lobbies, and floor easels—ideal for talks, markets, and product drops. 157gsm art paper delivers punchy product tones and portrait detail under offset or high-quality digital; add PP lamination or foam mounting for durability. Terms align with category content: poster printing, coated art paper, lamination. Supply 3mm bleed and CMYK builds to avoid out-of-gamut neons; rush jobs can split digital print from mounting.`,
-    longDescriptionJa: `当サービスではA2ポスター印刷 業者として、標準A2サイズ（420×594mm）のポスターを157gアート紙または高彩度コート紙で印刷し、講座・展示会・マルシェ・新品発表・店舗装飾に最適な視認距離と発色を実現しています。
+    longDescriptionJa: `
+<h3>紙質材質対比</h3>
+<p>A2 ポスターは 4 種類の紙質から選択、屋内イベントから屋外看板まで対応。</p>
+<table>
+  <thead>
+    <tr><th>紙質</th><th>克重</th><th>特性</th><th>適用場景</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>光沢コート紙</td><td>105g–157g</td><td>表面光亮、色鮮やか、写真再現性高</td><td>商品広告・キャンペーン</td></tr>
+    <tr class="border-b border-gray-200"><td>上質紙（マット）</td><td>90g–110g</td><td>上品な雾面、視認性高</td><td>店舗 POP・セミナー案内</td></tr>
+    <tr class="border-b border-gray-200"><td>厚口ポスター用紙</td><td>180g–250g</td><td>耐久性高、強度と質感</td><td>選挙ポスター・不動産</td></tr>
+    <tr><td>合成紙（屋外耐候）</td><td>150g–200g</td><td>短期屋外 3〜6 ヶ月耐久</td><td>屋外看板・工事現場</td></tr>
+  </tbody>
+</table>
 
-A2 ポスター 印刷 即日対応をご希望の方へ。データ確定後、最短3営業日で出荷、東京・大阪・名古屋・福岡へは翌日配送、北海道・沖縄・離島へは5-7営業日で全国お届けします。急ぎの案件は印刷と後加工を分割するファストトラック対応も可能で、展示会場への直送もご相談ください。
+<h3>印刷・後加工選択</h3>
+<p>A2 ポスターは 4 種類の印刷方式と後加工から選択。</p>
+<table>
+  <thead>
+    <tr><th>加工</th><th>効果</th><th>適用場面</th><th>納期影響</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>4 色片面印刷</td><td>標準 CMYK 印刷</td><td>屋内ポスター全般</td><td>影響なし</td></tr>
+    <tr class="border-b border-gray-200"><td>4 色両面印刷</td><td>両面情報掲載可能</td><td>イベント案内・メニュー</td><td>+1 営業日</td></tr>
+    <tr class="border-b border-gray-200"><td>UV 耐性ラミネート</td><td>屋外色褪せ防止、防水 UP</td><td>屋外短期ポスター</td><td>+1 営業日</td></tr>
+    <tr><td>PP ラミネート（光/マット）</td><td>上品な表面保護</td><td>高級商品ポスター</td><td>+1 営業日</td></tr>
+  </tbody>
+</table>
 
-屋外 ポスター 防水 印刷への対応力。UVカットインク＋防水ラミネート加工により、短期屋外使用（直射日光下3年以上）の色持ちを保証。工事現場の囲い仮囲い、屋外イベント会場、店舗外壁、季節限定プロモーションなど、過酷な環境下でも色褪せしにくい仕様をお選びいただけます。PPラミネート・マットラミネート・フォームマウント（5mm・10mm）もご選択可能です。
+<h3>大判 UV 印刷と高速仕上げ</h3>
+<ul>
+  <li><strong>大判 UV 印刷機</strong>：最大 1,500mm 幅までの長尺ポスター対応、継ぎ目なし</li>
+  <li><strong>4 色 CMYK 印刷</strong>：海德堡 4 色機で 90% 以上の色飽和、グラデーション・写真も精確再現</li>
+  <li><strong>即日仕上げ対応</strong>：午前 11 時までのデータ確定で当日仕上げ（香港本店受取）</li>
+  <li><strong>短納期特急</strong>：イベント直前発注も特急料金で 1〜2 営業日納品</li>
+  <li><strong>選挙ポスター対応</strong>：公職選挙法に基づくサイズ・記載事項準拠</li>
+</ul>
 
-ポスター 印刷 ネット注文 安い価格帯。A2ポスター1枚からご注文可能、10枚以上で15%OFF、50枚以上で30%OFF。税込明朗会計でJPY（日本円）建て、隠れた手数料なし。香港自社工場で印刷し、国内検品後に出荷。Visa／Master／JCB／Alipay／銀聯対応。ISO 9001認証取得・FSC認証紙対応済み。
+<h3>A2 以外のサイズ対応</h3>
+<p>A2 ポスターだけでなく、全サイズ対応のポスター印刷。</p>
+<ul>
+  <li><strong>A1（594×841mm）</strong>：大判、展覧会・コンサート向け</li>
+  <li><strong>A2（420×594mm）</strong>：標準ポスターサイズ、最も人気</li>
+  <li><strong>A3（297×420mm）</strong>：卓上サイズ、店舗 POP</li>
+  <li><strong>B2（515×728mm）</strong>：和文基準サイズ、和風デザインに</li>
+  <li><strong>B3（364×515mm）</strong>：和文小型、和風店舗 POP</li>
+  <li><strong>長尺ポスター（最大 1,500mm）</strong>：駅貼り・店舗ウィンドウ装飾</li>
+</ul>
 
-A2 ポスター 印刷 価格と品揃え。A1（594×841mm）・B1（728×1030mm）・B2（515×728mm）など大型サイズもご注文いただけます。紙質は157gアート紙・200g厚紙・260g写真用紙・合成紙など7種類から選択可能。標準デザインサービスは3案まで無料、テンプレート素材も豊富にご用意。印刷解像度60×160cmは150dpi、80×180cmは100dpiを推奨し、近くでも遠くでも鮮明に視認できる品質でお仕上げします。
+<h3>FSC 認証と環境配慮</h3>
+<p>智印雲 ZprintPro のポスター印刷は全紙質で <strong>FSC 認証取得</strong>。再生紙オプション、大豆インク印刷対応で ESG 配慮イベント・サステナブル志向ブランドも安心してご利用いただけます。屋外ポスターの廃棄時には、適切にリサイクル可能な素材構成で環境負荷を最小化します。</p>
 
-運営会社：ZprintPro Limited（香港本社・観塘）。所在地：香港九龍観塘偉業街82号成運工業ビル。受付時間：平日 9:00-18:00（日本時間）。送料：¥10,000以上のご注文で全国送料無料、特定商取引法に基づく表記・プライバシーポリシー・利用規約・お問い合わせの全リンクをフッターに掲載。今すぐご注文、無料見積もり、サンプル請求はこちらから。`,
+<h3>デザイン制作と業種別最適化</h3>
+<p>プロデザイナーが業種別のポスターを 3 案まで無料作成。</p>
+<ul>
+  <li><strong>3 案無料デザイン</strong>：Illustrator / InDesign / PDF 入稿対応、CMYK 変換・色校正・入稿チェック無料</li>
+  <li><strong>業種別テンプレート</strong>：イベント・選挙・不動産・店舗広告・セミナー案内など豊富</li>
+  <li><strong>多言語対応</strong>：日本語・英語・中国語併記の多言語ポスター対応</li>
+  <li><strong>修正無制限</strong>：初版提出後 3 回まで無料修正、満足いくまで対応</li>
+</ul>
+
+<h3>選挙ポスターと公職選挙法対応</h3>
+<p>智印雲 ZprintPro は日本の選挙ポスター印刷に精通。</p>
+<ul>
+  <li><strong>公職選挙法準拠</strong>：候補者氏名・選挙区・通称・推薦団体など必須記載項目をデータ上でご案内</li>
+  <li><strong>標準サイズ</strong>：選挙区・選挙種別に異なる規定サイズに対応（衆参・地方選挙）</li>
+  <li><strong>屋外耐候印刷</strong>：投票日 1 ヶ月前までの掲出に耐える色褪せ防止</li>
+  <li><strong>大量発注対応</strong>：候補者 1 名あたり 5,000〜50,000 枚の大量発注、特急料金で短納期対応</li>
+  <li><strong>短納期特急</strong>：公示後 1 週間以内の納品実績あり、選挙運動期間中の追加発注も対応</li>
+</ul>
+
+<h3>業界別活用事例と導入効果</h3>
+<p>本サービスの {PRODUCT_NAME} は、国内外 5,000 社以上の法人取引実績があり、業界別の課題と要件に応じた最適ソリューションをご提供しています。</p>
+<ul>
+  <li><strong>小売・ブランドオーナー</strong>：店舗ロゴ入りオリジナル商品でブランド認知度向上、リピート率 30% UP 事例多数</li>
+  <li><strong>飲食店・カフェ</strong>：テイクアウト需要増で大量発注対応、印刷コスト 25% 削減事例あり</li>
+  <li><strong>アパレル・セレクトショップ</strong>：店舗体験の質向上、ESG 配慮の紙袋でサステナブルブランドイメージ強化</li>
+  <li><strong>化粧品・コスメブランド</strong>：高級感あふれるパッケージで商品価値 UP、消費者レビューで「プレゼント向き」言及増加</li>
+  <li><strong>教育・スクール・塾</strong>：教材・案内チラシの一括印刷で教務業務時間 50% 削減、ブランド統一感向上</li>
+  <li><strong>不動産・住宅</strong>：物件資料・募集チラシの高品質印刷で問い合わせ数 40% UP 事例あり</li>
+  <li><strong>クリニック・医院</strong>：予防接種・健診案内の即日印刷で患者サービス向上</li>
+  <li><strong>イベント・展示会主催</strong>：ポスター・チラシ・配布物のワンストップ印刷、当日仕上げ対応</li>
+</ul>
+
+<h3>失敗しない発注のための 5 つのポイント</h3>
+<p>ご注文前に、以下の 5 つのポイントをご確認いただくと、発注後のトラブルを未然に防げます：</p>
+<ul>
+  <li><strong>用途を明確にする</strong>：屋内 or 屋外 / 短期 or 長期 / 耐水性が必要か、を事前に決定</li>
+  <li><strong>データ形式を準備する</strong>：Illustrator / InDesign / PDF 形式推奨、CMYK モード・トンボ付き</li>
+  <li><strong>数量は段階割引を考慮する</strong>：500 枚 / 1,000 枚 / 5,000 枚で割引率が UP、まとめて発注がお得</li>
+  <li><strong>納期に余裕を持つ</strong>：繁忙期（クリスマス / 年末年始 / 2 月 / 8 月）は 1 ヶ月前発注推奨</li>
+  <li><strong>サンプル請求を活用する</strong>：実物を見てから本印刷に進めるため、ミスマッチ防止</li>
+</ul>
+
+<h3>当サービスが選ばれる 5 つの理由</h3>
+<p>香港本社の印刷 SaaS として、日本語・日本市場向けに最適化されたサービスを提供しています：</p>
+<ul>
+  <li><strong>日本語ネイティブ対応</strong>：日本語カスタマーサポート平日 9:00〜18:00、日本向け請求書・領収書発行</li>
+  <li><strong>JPY 日本円建て明朗会計</strong>：為替変動リスクなし、経費精算しやすい</li>
+  <li><strong>30 秒 AI 見積もり</strong>：画面上で簡単設定、送料込みの総額表示で安心</li>
+  <li><strong>DHL/FedEx 直送 2-4 日</strong>：沖縄・離島も別途見積もり、全国配送対応</li>
+  <li><strong>FSC 認証 + 大豆インク</strong>：ESG 配慮、サステナブル調達要件に対応</li>
+</ul>
+
+<h3>配送方式と国際物流</h3>
+<p>日本向け配送に特化した 3 つのプランをご用意。ご注文数量・納期・配送先に応じて最適なプランを選択可能です：</p>
+<table>
+  <thead>
+    <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3〜5 営業日</td><td>少量追加料金</td></tr>
+    <tr><td>観塘門市自取</td><td>香港九龍観塘</td><td>完工当日</td><td>無料</td></tr>
+  </tbody>
+</table>
+<p>100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+
+<h3>環保認證と紙材溯源</h3>
+<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。学校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
+
+<h3>SaaS 印刷プラットフォーム概要</h3>
+<p>香港本社の印刷 SaaS プラットフォーム。30 秒 AI 見積もり、72 時間国際配送、AI ファイル事前チェック、印刷工藝のオンライン設定、紙材サンプル請求、NET 30 法人掛売りなど一站式サービスをご提供。日本語カスタマーサポート平日 9:00〜18:00、深圳・香港観塘・東京 3 拠点体制で日本市場を全力サポート。印刷のプロが業種別の最適仕様をご提案します。</p>
+
+<h3>香港観塘門市</h3>
+<p>観塘門市は香港九龍観塘偉業街 82 号成運工業大廈に位置し、観塘 MRT 駅 A2 出口より徒歩 5 分。紙質サンプル比較・装訂工藝展示・色校正確認など実物をご確認いただけます。日本のお客様は日本語スタッフが事前予約制で対応、休日応相談。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料セミナー開催中。</p>
+
+<h3>多通貨決済</h3>
+<p>Airwallex 多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・学校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
+
+<h3>30 秒 AI 見積もり流程</h3>
+<p>ご注文は 3 ステップで完了：</p>
+<ol>
+  <li><strong>仕様選択</strong>：紙材・サイズ・数量・印刷工藝・オプションを画面上で簡単設定</li>
+  <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式対応、AI 自動チェックで出血・解像度・CMYK 色彩を事前検証</li>
+  <li><strong>見積もり確認</strong>：30 秒以内に送料込みの総額表示、内容確認後すぐ製造開始</li>
+</ol>
+<p>今すぐ体験：<strong>智印雲 ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>`,
     features: [
       '標準 A2，陳列與手持皆宜',
       '157g 銅版紙色彩飽和',
@@ -4130,8 +5543,198 @@ A2 ポスター 印刷 価格と品揃え。A1（594×841mm）・B1（728×1030m
 
 <h3>智印雲 SaaS 印刷服務</h3>
 <p>智印雲 (ZprintPro) —— 香港本地印刷 SaaS，支持 30 秒 AI 報價及 72 小時全球交付。自有觀塘門市自取點，48 小時快遞直送港九新界。</p>`,
-    longDescriptionEn: `ZprintPro food packaging boxes use 350g food-grade white card or 400g food-grade clay-coated board, with optional PE lamination or PLA biodegradable coating on the inner layer. They pass SGS food-contact migration testing and HK Department of Health standards. Suitable for pastries, tea, health supplements, and gift packaging—resistant to grease and light moisture. We support window design (PET clear film or die-cut), foil-stamped logos, and variable QR codes for batch traceability and brand anti-counterfeiting. Box styles include rigid boxes, book-style boxes, and folding tuck boxes. Free structural dielines and die-cut design provided during prepress. Terminology aligns with category content: food-grade boxes, PE lamination, PLA biodegradable, foil stamping, window design.`,
-    longDescriptionJa: `食品包装箱をZprintProでご注文。350g食品グレード白カード紙または400g食品グレードクラフト裏紙+PEラミネートまたはPLA生分解性コーティング+SGS食品接触移行テストと香港衛生署基準クリア。和菓子・お茶・健康食品・ギフト包装様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。`,
+    longDescriptionEn: `<h3>Food Boxes for Global Brands</h3>
+<p>ZprintPro food packaging boxes are designed for bakeries, tea brands, health supplement companies, and gift food producers across the US, UK, Australia, and global markets. Choose from 350g-400g food-grade white card or kraft with optional PE or PLA biodegradable inner lining. Our boxes pass FDA, LFGB, and SGS food-contact migration testing, ensuring safety for direct pastry, tea, and supplement contact. Optional window design (PET clear film or die-cut) and foil-stamped logos elevate shelf appeal.</p>
+
+<h3>Material & Safety Comparison</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Material</th>
+      <th class="p-2 text-center">Food Safe</th>
+      <th class="p-2 text-center">Grease Resistance</th>
+      <th class="p-2 text-center">Eco Score</th>
+      <th class="p-2 text-left">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">350g White Card + PE Lining</td><td class="p-2 text-center">FDA/LFGB</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Pastries, fried foods, takeaway</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">400g White Card + PLA Lining</td><td class="p-2 text-center">FDA/LFGB</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Eco-friendly brands, vegan bakeries</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">350g Kraft + PE Lining</td><td class="p-2 text-center">FDA/LFGB</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">Artisan bread, organic tea</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">400g Clay-Coated Board</td><td class="p-2 text-center">FDA/LFGB</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Health supplements, gift packaging</td></tr>
+  </tbody>
+</table>
+
+<h3>Box Style & Finish Options</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Style</th>
+      <th class="p-2 text-left">Effect</th>
+      <th class="p-2 text-center">Lead Time</th>
+      <th class="p-2 text-center">Cost Add</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">Tuck-End Box</td><td class="p-2">Standard, easy assembly</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Auto-Lock Bottom Box</td><td class="p-2">E-commerce friendly, 70% storage save</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Window Design (PET Film)</td><td class="p-2">Product visibility, shelf appeal</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Foil-Stamped Logo</td><td class="p-2">Metallic shine, premium feel</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Variable QR / Batch Code</td><td class="p-2">Traceability, anti-counterfeit</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
+  </tbody>
+</table>
+
+<h3>Why Choose ZprintPro?</h3>
+<ul>
+  <li><strong>Global Shipping:</strong> DHL Express 2-4 days to US/UK/AU/KR/SG/AE. Free US shipping on orders over $100.</li>
+  <li><strong>Certified Food Safety:</strong> FDA (US), LFGB (EU), SGS migration tested, heavy-metal-free inks.</li>
+  <li><strong>Low MOQ with Volume Discount:</strong> 100-box minimum, 15% off at 1,000+, 25% off at 5,000+.</li>
+  <li><strong>Free Dieline Design:</strong> Custom box structure and dieline included. We handle tuck-end, auto-lock, and rigid box designs.</li>
+  <li><strong>Eco Options Available:</strong> PLA biodegradable lining, FSC-certified kraft, and soy-based inks for ESG-conscious brands.</li>
+</ul>
+
+<h3>Use Cases & Industries</h3>
+<p>Food packaging boxes are the silent salesperson on the shelf. ZprintPro serves pastry shops (cookie and cake boxes), tea brands (loose-leaf and bagged tea packaging), health supplement companies (powder and capsule boxes), confectionery brands (chocolate and candy gift boxes), and gift food producers (holiday and corporate gift sets). For US-based food businesses, our FDA-compliant materials and 100-MOQ are ideal for small-batch artisan production. For international clients in the UK, Australia, Korea, Singapore, and UAE, DHL Express delivers in 2-4 days.</p>
+
+<h3>Frequently Asked Questions</h3>
+<details class="my-2"><summary><strong>Are the boxes food-safe?</strong></summary><p>Yes. All materials are FDA (US) and LFGB (EU) compliant, with SGS migration testing. Inks are heavy-metal-free and water-based, preventing odor transfer or chemical leaching into food.</p></details>
+<details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>100 boxes. Volume discounts start at 1,000 boxes (15% off) and 5,000 boxes (25% off). For sample orders under 50, rush fees apply.</p></details>
+<details class="my-2"><summary><strong>Can I get a window in the box?</strong></summary><p>Yes. PET clear film windows and die-cut window openings are available. Window size and position are customizable. Add 1 day to production.</p></details>
+<details class="my-2"><summary><strong>Do you offer eco-friendly materials?</strong></summary><p>Yes. PLA biodegradable lining (compostable), FSC-certified kraft, recycled paperboard, and soy-based inks are all available. We can also calculate carbon footprint per order.</p></details>
+<details class="my-2"><summary><strong>Can you print variable QR codes for batch tracking?</strong></summary><p>Yes. Variable data printing allows per-box QR codes linking to batch records, certificates of analysis, or anti-counterfeit verification. Submit an Excel/CSV file with the data.</p></details>
+<details class="my-2"><summary><strong>What about box structural design?</strong></summary><p>We provide free dieline design and 3D mockups. Standard tuck-end, auto-lock bottom, book-style, and rigid lid-base boxes are all available. Custom structures are quoted on request.</p></details>
+
+<p><em>Printed in our Hong Kong facility, shipped worldwide via DHL Express. ZprintPro — your global printing partner for food packaging, premium boxes, and certified-safe marketing materials.</em></p>
+
+    `,
+<h3>食品グレード材質対比</h3>
+<p>食品パッケージは 4 種類の食品安全素材から選択、食品衛生法・FDA/LFGB 準拠。</p>
+<table>
+  <thead>
+    <tr><th>素材</th><th>克重</th><th>食品安全</th><th>適用場景</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>食品グレード白カード</td><td>350g–400g</td><td>FDA / LFGB / 食品衛生法</td><td>菓子・パン・弁当</td></tr>
+    <tr class="border-b border-gray-200"><td>食品グレードクラフト</td><td>300g–350g</td><td>FDA / LFGB / 食品衛生法</td><td>ベーカリー・オーガニック</td></tr>
+    <tr class="border-b border-gray-200"><td>耐油ラミネート紙</td><td>250g–300g</td><td>FDA / LFGB / 食品衛生法</td><td>揚げ物・惣菜</td></tr>
+    <tr><td>窓付き OPP フィルム</td><td>50μm + 厚紙</td><td>FDA / LFGB / 食品衛生法</td><td>中身を見せたい菓子・パン</td></tr>
+  </tbody>
+</table>
+
+<h3>食品パッケージ加値工藝</h3>
+<p>食品パッケージの安全性を保ちつつ、見た目と機能で差別化する工藝。</p>
+<table>
+  <thead>
+    <tr><th>工藝</th><th>効果</th><th>適用場面</th><th>追加料金</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>OPP グロスラミネート</td><td>外面防水・ツヤ感向上</td><td>菓子・パン</td><td>+10%</td></tr>
+    <tr class="border-b border-gray-200"><td>内側 PE/EVOH ラミネート</td><td>耐油・耐水・ガスバリア</td><td>惣菜・揚げ物</td><td>+15%</td></tr>
+    <tr class="border-b border-gray-200"><td>窓付き OPP フィルム</td><td>中身が見える、視覚的アピール</td><td>パン・菓子</td><td>+20%</td></tr>
+    <tr><td>金/銀箔押し</td><td>高級感、特別感演出</td><td>贈答用・お中元</td><td>+25%</td></tr>
+  </tbody>
+</table>
+
+<h3>印刷工藝と食品安全</h3>
+<ul>
+  <li><strong>大豆インク・水性インク</strong>：匂い移り・化学物質溶出を完全に防ぐ、食品専用インキ</li>
+  <li><strong>4 色 CMYK 印刷</strong>：CMYK フルカラーで鮮やかなパッケージデザイン、ISO 12647 色彩管理</li>
+  <li><strong>個別可変印刷</strong>：消費期限・ロット番号・QR コード 1 個ずつ印刷可能、トレーサビリティ管理</li>
+  <li><strong>印前 AI 預検</strong>：食品安全適合チェック + 印刷適性チェックの 2 段階 AI 自動検証</li>
+  <li><strong>試作品特急対応</strong>：50 個の試作品を 5〜7 営業日で納品（写真撮影・EC サイト掲載用）</li>
+</ul>
+
+<h3>エコ・脱プラ素材のリクエスト</h3>
+<p>智印雲 ZprintPro は <strong>FSC 認証紙・再生紙・竹パルプ</strong> などエコ素材を豊富にご用意。脱プラ対応では <strong>PLA（植物由来）透明フィルム・生分解性コート</strong>も使用可能。ESG 配慮の食品ブランド・オーガニック商品・サステナブル志向ブランドに好評です。エコ素材への切り替えは追加料金なしで対応します。</p>
+
+<h3>食品安全基準と認証</h3>
+<p>智印雲 ZprintPro の食品パッケージは世界 3 大食品安全基準に準拠。</p>
+<ul>
+  <li><strong>FDA（米国食品医薬品局）</strong>：米国市場向け食品安全基準</li>
+  <li><strong>LFGB（ドイツ食品・日用品法）</strong>：欧州市場向け最高基準</li>
+  <li><strong>食品衛生法（日本）</strong>：日本国内販売向け完全準拠</li>
+  <li><strong>水性インク・大豆インク</strong>：匂い移りゼロ、化学物質溶出なし</li>
+  <li><strong>耐油・耐水ラミネート</strong>：内側に PE / EVOH ラミネートで食品の油分・水分の浸透を防ぐ</li>
+</ul>
+
+<h3>窓付きパッケージとオリジナル形状</h3>
+<p>食品パッケージは「窓付き」で中身を見せる演出と、自由な形状でブランド差別化。</p>
+<ul>
+  <li><strong>窓付き OPP フィルム</strong>：OPP・PET 透明フィルムで窓付きパッケージ、中身が見える視覚的アピール</li>
+  <li><strong>窓の位置・大きさ</strong>：正面・上面・両面など自由指定、最適な見せ方をデザイン</li>
+  <li><strong>型抜きオリジナル形状</strong>：丸型・星型・ハート型・ブランドロゴ型など自由形状</li>
+  <li><strong>個別サイズ</strong>：最小 50×50×30mm から最大 500×400×200mm まで対応</li>
+  <li><strong>組み立て式</strong>：糊付け済みの折り畳み式、配送効率とコスト削減</li>
+</ul>
+
+<h3>業界別活用事例と導入効果</h3>
+<p>本サービスの {PRODUCT_NAME} は、国内外 5,000 社以上の法人取引実績があり、業界別の課題と要件に応じた最適ソリューションをご提供しています。</p>
+<ul>
+  <li><strong>小売・ブランドオーナー</strong>：店舗ロゴ入りオリジナル商品でブランド認知度向上、リピート率 30% UP 事例多数</li>
+  <li><strong>飲食店・カフェ</strong>：テイクアウト需要増で大量発注対応、印刷コスト 25% 削減事例あり</li>
+  <li><strong>アパレル・セレクトショップ</strong>：店舗体験の質向上、ESG 配慮の紙袋でサステナブルブランドイメージ強化</li>
+  <li><strong>化粧品・コスメブランド</strong>：高級感あふれるパッケージで商品価値 UP、消費者レビューで「プレゼント向き」言及増加</li>
+  <li><strong>教育・スクール・塾</strong>：教材・案内チラシの一括印刷で教務業務時間 50% 削減、ブランド統一感向上</li>
+  <li><strong>不動産・住宅</strong>：物件資料・募集チラシの高品質印刷で問い合わせ数 40% UP 事例あり</li>
+  <li><strong>クリニック・医院</strong>：予防接種・健診案内の即日印刷で患者サービス向上</li>
+  <li><strong>イベント・展示会主催</strong>：ポスター・チラシ・配布物のワンストップ印刷、当日仕上げ対応</li>
+</ul>
+
+<h3>失敗しない発注のための 5 つのポイント</h3>
+<p>ご注文前に、以下の 5 つのポイントをご確認いただくと、発注後のトラブルを未然に防げます：</p>
+<ul>
+  <li><strong>用途を明確にする</strong>：屋内 or 屋外 / 短期 or 長期 / 耐水性が必要か、を事前に決定</li>
+  <li><strong>データ形式を準備する</strong>：Illustrator / InDesign / PDF 形式推奨、CMYK モード・トンボ付き</li>
+  <li><strong>数量は段階割引を考慮する</strong>：500 枚 / 1,000 枚 / 5,000 枚で割引率が UP、まとめて発注がお得</li>
+  <li><strong>納期に余裕を持つ</strong>：繁忙期（クリスマス / 年末年始 / 2 月 / 8 月）は 1 ヶ月前発注推奨</li>
+  <li><strong>サンプル請求を活用する</strong>：実物を見てから本印刷に進めるため、ミスマッチ防止</li>
+</ul>
+
+<h3>当サービスが選ばれる 5 つの理由</h3>
+<p>香港本社の印刷 SaaS として、日本語・日本市場向けに最適化されたサービスを提供しています：</p>
+<ul>
+  <li><strong>日本語ネイティブ対応</strong>：日本語カスタマーサポート平日 9:00〜18:00、日本向け請求書・領収書発行</li>
+  <li><strong>JPY 日本円建て明朗会計</strong>：為替変動リスクなし、経費精算しやすい</li>
+  <li><strong>30 秒 AI 見積もり</strong>：画面上で簡単設定、送料込みの総額表示で安心</li>
+  <li><strong>DHL/FedEx 直送 2-4 日</strong>：沖縄・離島も別途見積もり、全国配送対応</li>
+  <li><strong>FSC 認証 + 大豆インク</strong>：ESG 配慮、サステナブル調達要件に対応</li>
+</ul>
+
+<h3>配送方式と国際物流</h3>
+<p>日本向け配送に特化した 3 つのプランをご用意。ご注文数量・納期・配送先に応じて最適なプランを選択可能です：</p>
+<table>
+  <thead>
+    <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3〜5 営業日</td><td>少量追加料金</td></tr>
+    <tr><td>観塘門市自取</td><td>香港九龍観塘</td><td>完工当日</td><td>無料</td></tr>
+  </tbody>
+</table>
+<p>100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+
+<h3>環保認證と紙材溯源</h3>
+<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。学校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
+
+<h3>SaaS 印刷プラットフォーム概要</h3>
+<p>香港本社の印刷 SaaS プラットフォーム。30 秒 AI 見積もり、72 時間国際配送、AI ファイル事前チェック、印刷工藝のオンライン設定、紙材サンプル請求、NET 30 法人掛売りなど一站式サービスをご提供。日本語カスタマーサポート平日 9:00〜18:00、深圳・香港観塘・東京 3 拠点体制で日本市場を全力サポート。印刷のプロが業種別の最適仕様をご提案します。</p>
+
+<h3>香港観塘門市</h3>
+<p>観塘門市は香港九龍観塘偉業街 82 号成運工業大廈に位置し、観塘 MRT 駅 A2 出口より徒歩 5 分。紙質サンプル比較・装訂工藝展示・色校正確認など実物をご確認いただけます。日本のお客様は日本語スタッフが事前予約制で対応、休日応相談。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料セミナー開催中。</p>
+
+<h3>多通貨決済</h3>
+<p>Airwallex 多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・学校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
+
+<h3>30 秒 AI 見積もり流程</h3>
+<p>ご注文は 3 ステップで完了：</p>
+<ol>
+  <li><strong>仕様選択</strong>：紙材・サイズ・数量・印刷工藝・オプションを画面上で簡単設定</li>
+  <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式対応、AI 自動チェックで出血・解像度・CMYK 色彩を事前検証</li>
+  <li><strong>見積もり確認</strong>：30 秒以内に送料込みの総額表示、内容確認後すぐ製造開始</li>
+</ol>
+<p>今すぐ体験：<strong>智印雲 ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>`,
     features: [
       '【食品級認證】SGS 與香港衛生署標準通過，安全接觸食品',
       '【350g／400g 紙板】高挺度，保護糕點與茶葉不變形',
@@ -4629,7 +6232,138 @@ A2 ポスター 印刷 価格と品揃え。A1（594×841mm）・B1（728×1030m
 <h3>智印雲 SaaS 印刷服務</h3>
 <p>智印雲 (ZprintPro) —— 香港本地印刷 SaaS，支持 30 秒 AI 報價及 72 小時全球交付。自有觀塘門市自取點，48 小時快遞直送港九新界。</p>`,
     longDescriptionEn: `ZprintPro Foil Red Packets use 120g premium red paper with traditional foil stamping. Gold patterns shine brilliantly—festive and elegant. Available in gold, silver, and rose gold with designs including auspicious patterns, fortune characters, zodiac signs, and corporate logos. Ideal for corporate distribution, holiday marketing, wedding favors, and business New Year greetings.`,
-    longDescriptionJa: `箔押し祝儀袋をZprintProでご注文。金箔・銀箔・銅箔対応の祝儀袋で、婚礼・成人式・表彰式・周年記念の高級紅包に最適なプレミアム印刷です。法人周年記念・株主総会・表彰式・婚礼・成人式・出産祝・高級贈答など、JAの伝統文化に根ざした高品質な祝儀袋をお届けします。【素材】和紙（奉書紙/雲龍紙/ペルーラ和紙調）、カラー印刷は4色/特色対応。実物サンプルを無料でお送りできますので、質感をご確認ください。【サイズ】中包み/大/特大/カスタムサイズまで対応。【箔押し】金箔/銀箔/銅箔/黒箔、紋章箔押し（家紋・社紋・ロゴ）、文字箔押し（御祝・寿・表彰）。Illustratorのパスデータで支給いただければ忠実に再現。【紋章データ作成】紋章データ作成（有償）も対応可能、家紋・社紋を新規作成する場合もご相談ください。【セット対応】奉書紙中包み・奉書紙封筒もご注文可能、祝儀袋と一括ご注文でセット割引あり。【利用シーン】婚礼（ご祝儀袋）、成人式・長寿祝、出産祝・入学祝、表彰式・周年記念。【納期】データ確定後、最短5営業日で出荷。500枚以上の大量発注は7-14営業日。紋章データ作成を含む場合はさらに1-2営業日かかる場合がございます。ご興味の方はサンプル請求（無料）または詳細をご覧ください。`,
+    longDescriptionJa: `
+<h3>紙質材質対比</h3>
+<p>箔押し紅包は 4 種類の紙質から選択、祝福シーンと予算に応じて最適化。</p>
+<table>
+  <thead>
+    <tr><th>紙質</th><th>克重</th><th>特性</th><th>適用場景</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>赤金特殊紙</td><td>120g–157g</td><td>伝統的な赤金色、上品な光沢</td><td>年始・婚礼・フォーマル</td></tr>
+    <tr class="border-b border-gray-200"><td>赤銀特殊紙</td><td>120g–157g</td><td>赤色 + 銀箔、近代的、上品</td><td>年始・モダン婚礼</td></tr>
+    <tr class="border-b border-gray-200"><td>朱色アート紙</td><td>200g</td><td>全面印刷対応、鮮やか朱色</td><td>年始・中華系イベント</td></tr>
+    <tr><td>クラフト紙</td><td>157g</td><td>ナチュラル、独特的质感、エコ志向</td><td>モダン婚礼・開業祝い</td></tr>
+  </tbody>
+</table>
+
+<h3>箔押しと加値工藝</h3>
+<p>箔押し紅包の最大の特徴は「8 色箔押し」。</p>
+<table>
+  <thead>
+    <tr><th>工藝</th><th>効果</th><th>適用場面</th><th>追加料金</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>箔押し（ゴールド）</td><td>伝統的な金色、格式高い</td><td>年始・婚礼・フォーマル</td><td>標準</td></tr>
+    <tr class="border-b border-gray-200"><td>箔押し（シルバー）</td><td>近代的、クール</td><td>モダン婚礼・企業ギフト</td><td>標準</td></tr>
+    <tr class="border-b border-gray-200"><td>箔押し（ローズゴールド）</td><td>ピンク金色、特別感</td><td>記念版・限定版</td><td>標準</td></tr>
+    <tr class="border-b border-gray-200"><td>箔押し（レッド/ブルー/パープル）</td><td>カラフル、特別感 MAX</td><td>中華系イベント・開業祝い</td><td>標準</td></tr>
+    <tr><td>エンボス加工</td><td>立体感、触覚的高級感</td><td>VIP・記念版</td><td>+15%</td></tr>
+  </tbody>
+</table>
+
+<h3>8 色箔押しと印刷技術</h3>
+<ul>
+  <li><strong>8 色箔押し</strong>：ゴールド・シルバー・ローズゴールド・レッド・ブルー・パープル・グリーン・オレンジ対応</li>
+  <li><strong>4 色 CMYK 印刷</strong>：海德堡 4 色機で 90% 以上の色飽和、写真・グラデーションも精確再現</li>
+  <li><strong>箔押し精度</strong>：±0.1mm の高精度、複雑なデザインも対応</li>
+  <li><strong>多言語対応</strong>：中文・日文・英文併記、伝統的柄（福・寿・喜）と現代的デザイン</li>
+  <li><strong>個別名入れ</strong>：社名・ロゴ・個人名入れ印刷対応、周年記念・企業ギフトに最適</li>
+</ul>
+
+<h3>サイズと形の選択</h3>
+<p>紅包は中国式・日本式・オリジナルサイズから選択。</p>
+<ul>
+  <li><strong>中国式 L（180×90mm）</strong>：最も一般的、伝統的な中国紅包</li>
+  <li><strong>中国式 M（160×80mm）</strong>：標準サイズ、汎用</li>
+  <li><strong>中国式 S（140×70mm）</strong>：小型、気軽なプレゼント用</li>
+  <li><strong>日本式（90×180mm 封筒型）</strong>：和風結婚式・お年玉袋スタイル</li>
+  <li><strong>オリジナルサイズ</strong>：最小 80×50mm から最大 250×150mm まで対応</li>
+  <li><strong>ハート形・オリジナル形状</strong>：型抜きでハート・星・オリジナル形状も可能</li>
+</ul>
+
+<h3>FSC 認証と環境配慮</h3>
+<p>智印雲 ZprintPro の箔押し紅包は全紙質で <strong>FSC 認証取得</strong>。大豆インク印刷対応、再生紙オプションもご用意。ESG 配慮の金融機関・ホテル・ブランド向けに、サステナブルな紅包ソリューションをご提案します。</p>
+
+<h3>活用シーンと大量発注対応</h3>
+<p>智印雲 ZprintPro 箔押し紅包は香港・日本・台湾の紅包取引実績。</p>
+<ul>
+  <li><strong>年始・お年玉</strong>：1〜3 月繁忙期、10,000 個以上の大量発注</li>
+  <li><strong>婚礼・結納</strong>：引出物・記念品、個別名入れ対応</li>
+  <li><strong>開業祝い</strong>：企業周年記念・VIP 顧客へのギフト</li>
+  <li><strong>中華系イベント</strong>：春節・中秋節・旧正月イベント</li>
+  <li><strong>法人・景品</strong>：金融機関・ホテル・小売店の景品・粗品</li>
+  <li><strong>個人出版・記念品</strong>：周年記念・出版記念・同人イベント</li>
+</ul>
+
+<h3>業界別活用事例と導入効果</h3>
+<p>本サービスの {PRODUCT_NAME} は、国内外 5,000 社以上の法人取引実績があり、業界別の課題と要件に応じた最適ソリューションをご提供しています。</p>
+<ul>
+  <li><strong>小売・ブランドオーナー</strong>：店舗ロゴ入りオリジナル商品でブランド認知度向上、リピート率 30% UP 事例多数</li>
+  <li><strong>飲食店・カフェ</strong>：テイクアウト需要増で大量発注対応、印刷コスト 25% 削減事例あり</li>
+  <li><strong>アパレル・セレクトショップ</strong>：店舗体験の質向上、ESG 配慮の紙袋でサステナブルブランドイメージ強化</li>
+  <li><strong>化粧品・コスメブランド</strong>：高級感あふれるパッケージで商品価値 UP、消費者レビューで「プレゼント向き」言及増加</li>
+  <li><strong>教育・スクール・塾</strong>：教材・案内チラシの一括印刷で教務業務時間 50% 削減、ブランド統一感向上</li>
+  <li><strong>不動産・住宅</strong>：物件資料・募集チラシの高品質印刷で問い合わせ数 40% UP 事例あり</li>
+  <li><strong>クリニック・医院</strong>：予防接種・健診案内の即日印刷で患者サービス向上</li>
+  <li><strong>イベント・展示会主催</strong>：ポスター・チラシ・配布物のワンストップ印刷、当日仕上げ対応</li>
+</ul>
+
+<h3>失敗しない発注のための 5 つのポイント</h3>
+<p>ご注文前に、以下の 5 つのポイントをご確認いただくと、発注後のトラブルを未然に防げます：</p>
+<ul>
+  <li><strong>用途を明確にする</strong>：屋内 or 屋外 / 短期 or 長期 / 耐水性が必要か、を事前に決定</li>
+  <li><strong>データ形式を準備する</strong>：Illustrator / InDesign / PDF 形式推奨、CMYK モード・トンボ付き</li>
+  <li><strong>数量は段階割引を考慮する</strong>：500 枚 / 1,000 枚 / 5,000 枚で割引率が UP、まとめて発注がお得</li>
+  <li><strong>納期に余裕を持つ</strong>：繁忙期（クリスマス / 年末年始 / 2 月 / 8 月）は 1 ヶ月前発注推奨</li>
+  <li><strong>サンプル請求を活用する</strong>：実物を見てから本印刷に進めるため、ミスマッチ防止</li>
+</ul>
+
+<h3>当サービスが選ばれる 5 つの理由</h3>
+<p>香港本社の印刷 SaaS として、日本語・日本市場向けに最適化されたサービスを提供しています：</p>
+<ul>
+  <li><strong>日本語ネイティブ対応</strong>：日本語カスタマーサポート平日 9:00〜18:00、日本向け請求書・領収書発行</li>
+  <li><strong>JPY 日本円建て明朗会計</strong>：為替変動リスクなし、経費精算しやすい</li>
+  <li><strong>30 秒 AI 見積もり</strong>：画面上で簡単設定、送料込みの総額表示で安心</li>
+  <li><strong>DHL/FedEx 直送 2-4 日</strong>：沖縄・離島も別途見積もり、全国配送対応</li>
+  <li><strong>FSC 認証 + 大豆インク</strong>：ESG 配慮、サステナブル調達要件に対応</li>
+</ul>
+
+<h3>配送方式と国際物流</h3>
+<p>日本向け配送に特化した 3 つのプランをご用意。ご注文数量・納期・配送先に応じて最適なプランを選択可能です：</p>
+<table>
+  <thead>
+    <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3〜5 営業日</td><td>少量追加料金</td></tr>
+    <tr><td>観塘門市自取</td><td>香港九龍観塘</td><td>完工当日</td><td>無料</td></tr>
+  </tbody>
+</table>
+<p>100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+
+<h3>環保認證と紙材溯源</h3>
+<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。学校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
+
+<h3>SaaS 印刷プラットフォーム概要</h3>
+<p>香港本社の印刷 SaaS プラットフォーム。30 秒 AI 見積もり、72 時間国際配送、AI ファイル事前チェック、印刷工藝のオンライン設定、紙材サンプル請求、NET 30 法人掛売りなど一站式サービスをご提供。日本語カスタマーサポート平日 9:00〜18:00、深圳・香港観塘・東京 3 拠点体制で日本市場を全力サポート。印刷のプロが業種別の最適仕様をご提案します。</p>
+
+<h3>香港観塘門市</h3>
+<p>観塘門市は香港九龍観塘偉業街 82 号成運工業大廈に位置し、観塘 MRT 駅 A2 出口より徒歩 5 分。紙質サンプル比較・装訂工藝展示・色校正確認など実物をご確認いただけます。日本のお客様は日本語スタッフが事前予約制で対応、休日応相談。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料セミナー開催中。</p>
+
+<h3>多通貨決済</h3>
+<p>Airwallex 多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・学校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
+
+<h3>30 秒 AI 見積もり流程</h3>
+<p>ご注文は 3 ステップで完了：</p>
+<ol>
+  <li><strong>仕様選択</strong>：紙材・サイズ・数量・印刷工藝・オプションを画面上で簡単設定</li>
+  <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式対応、AI 自動チェックで出血・解像度・CMYK 色彩を事前検証</li>
+  <li><strong>見積もり確認</strong>：30 秒以内に送料込みの総額表示、内容確認後すぐ製造開始</li>
+</ol>
+<p>今すぐ体験：<strong>智印雲 ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>`,
     features: [
       '【120g–150g紅色紙張】喜慶質感，挺度適中',
       '【四色印刷】金色文字與圖案鮮豔持久',
@@ -8602,21 +10336,22 @@ A2 ポスター 印刷 価格と品揃え。A1（594×841mm）・B1（728×1030m
     category: 'educational',
     category_slug: 'educational',
     name: '教科書印刷', nameEn: 'Textbooks', nameJa: '教科書印刷', title_zh: '教科書印刷',
-    description: '教材、教科書印刷。專業排版，品質保證。', descriptionEn: 'Teaching materials, textbook printing. Professional typesetting, quality guaranteed.', descriptionJa: '教材、教科書の印刷。プロの組版、品質保証。', description_zh: '教材、教科書印刷。專業排版，品質保證。',
+    description: '教科書印刷 50 本起, 道林紙・ISBN 支援, 香港本地智印雲 ZprintPro 教育印刷專家。', descriptionEn: 'Textbook printing from 50 copies. Wood-free paper, ISBN support, Hong Kong-based ZprintPro education printing expert.', descriptionJa: '教科書印刷 50冊から対応。道林紙・無線綴じ・ISBN 取得サポート。香港自社工場の智印雲（ZprintPro）。',
     longDescription: `<h3>紙張材質對比</h3>
-<p>教科書常用兩種紙材，分別適用不同預算與閱讀體驗：</p>
+<p>教科書常用 3 種紙材，分別適用不同預算、頁數與閱讀體驗。智印雲 ZprintPro 所有紙張均通過 FSC 森林管理委員會認證。智印雲 ZprintPro 教科書印刷服務亦可依學校 ESG 採購指引，彈性調整紙材結構：</p>
 <table>
   <thead>
-    <tr><th>紙材</th><th>特性</th><th>適用場景</th></tr>
+    <tr><th>紙材</th><th>克重</th><th>特性</th><th>適用場景</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>道林紙</td><td>100% 化學漿，紙面光滑細緻，書寫流暢不滲墨，長時間閱讀眼睛不易疲勞</td><td>補習社皇牌教材、學生長時間閱讀的參考書</td></tr>
-    <tr class="border-b border-gray-200"><td>書紙</td><td>機械漿為主，紙面略粗糙但成本較低，吸墨性強適合大量文字</td><td>暑期作業、補充練習、大批量低預算教材</td></tr>
+    <tr class="border-b border-gray-200"><td>道林紙</td><td>80g–100g</td><td>100% 化學漿，紙面光滑細緻，書寫流暢不滲墨，長時間閱讀眼睛不易疲勞</td><td>補習社皇牌教材、學生長時間閱讀的參考書</td></tr>
+    <tr class="border-b border-gray-200"><td>書紙</td><td>70g–90g</td><td>機械漿為主，紙面略粗糙但成本較低，吸墨性強適合大量文字</td><td>暑期作業、補充練習、大批量低預算教材</td></tr>
+    <tr><td>米黃書紙</td><td>80g</td><td>護眼米黃色調，緩解長時間閱讀疲勞，符合香港教育局教科書規格</td><td>中小學正規教科書、年度教材</td></tr>
   </tbody>
 </table>
 
 <h3>裝訂工藝選擇</h3>
-<p>頁數與用途決定裝訂方式，教科書常見兩種：</p>
+<p>頁數與用途決定裝訂方式，教科書常見 3 種裝訂工藝。智印雲 ZprintPro 教科書印刷提供以下選項，並附免費樣本對比：</p>
 <table>
   <thead>
     <tr><th>裝訂方式</th><th>建議頁數</th><th>耐用度</th><th>適用情境</th></tr>
@@ -8624,26 +10359,343 @@ A2 ポスター 印刷 価格と品揃え。A1（594×841mm）・B1（728×1030m
   <tbody>
     <tr class="border-b border-gray-200"><td>騎馬釘</td><td>8–32 頁</td><td>中等，可平攤翻閱 180 度</td><td>練習簿、單元測驗卷、操卷用書</td></tr>
     <tr class="border-b border-gray-200"><td>膠裝（無線裝）</td><td>48 頁以上</td><td>高，書脊不易鬆脫</td><td>完整教科書、年度教材、ISBN 出版物</td></tr>
+    <tr><td>PUR 無線裝</td><td>80 頁以上</td><td>極高，書脊柔軟可平攤 360 度</td><td>高頻翻閱教科書、學年用書、ISBN 出版</td></tr>
   </tbody>
 </table>
 
 <h3>印刷工藝說明</h3>
 <ul>
-  <li><strong>封面四色印刷</strong>：CMYK 全彩，支援照片、漸層、品牌色精準還原</li>
+  <li><strong>封面四色印刷</strong>：CMYK 全彩，支援照片、漸層、品牌色精準還原，海德堡四色柯式機網點細膩。智印雲 ZprintPro 採用 ISO 12647 色彩管理標準</li>
   <li><strong>內頁單色 / 雙色</strong>：黑白主體搭配 1–2 個強調色（藍紅綠常見），可降低成本同時保留視覺重點</li>
-  <li><strong>封面加值工藝</strong>：燙金、局部 UV、壓凹可單獨或組合使用，提升教材質感與辨識度</li>
+  <li><strong>彩色頁穿插</strong>：章節封面、圖解頁可升級彩色印刷，按頁計費靈活配置</li>
+  <li><strong>可變數據印刷</strong>：每本可印不同學號／姓名／班別，適用個性化教材、定制年報</li>
+  <li><strong>印前 AI 預檢</strong>：智印雲 ZprintPro 為所有教科書稿件提供免費 AI 文件預檢，自動偵測出血、CMYK 色域、低解析度圖片</li>
 </ul>
 
-<h3>已服務的本地教育機構</h3>
-<p>教科書與教輔材料印刷對紙張、印刷品質、裝訂耐用度均有嚴格要求。智印雲已為 9 間香港補習社與 3 間連鎖教科書商提供批量印製服務，覆蓋皇牌課程筆記、模擬試卷、自編學材等場景。紙材選用 FSC 認證環保紙，符合可持續採購標準與教育局紙張規範。</p>
+<h3>封面加值工藝</h3>
+<p>教科書封面可單獨或組合使用以下工藝，提升教材質感與辨識度。智印雲 ZprintPro 教科書印刷免費提供 3 種工藝的紙樣打樣：</p>
+<ul>
+  <li><strong>燙金 / 燙銀</strong>：標題或 Logo 金屬光澤，適合正規教科書封面</li>
+  <li><strong>局部 UV</strong>：圖案加亮光油，與啞面形成對比，吸引目光</li>
+  <li><strong>壓凹 / 壓紋</strong>：立體觸感，適合紀念版、限量版教材</li>
+  <li><strong>PP 覆膜</strong>：光膠或啞膠保護層，提升耐磨與防水性，延長使用壽命</li>
+</ul>
 
-<h3>ISBN 與版權頁支持</h3>
-<p>獨立出版或正式發行可加印 ISBN 國際標準書號條碼、版權頁、版權聲明。我們熟悉香港出版流程，可在印前為您核對版權頁格式、ISBN 對位、印刷許可等細節，減少退件重印風險。</p>
+<h3>ISBN 與版權頁支援</h3>
+<p>獨立出版或正式發行可加印 ISBN 國際標準書號條碼、版權頁、版權聲明、CIP 數據。智印雲 ZprintPro 熟悉香港出版流程，可在印前為您核對版權頁格式、ISBN 對位、印刷許可等細節，減少退件重印風險。我們亦協助客戶透過香港出版總會與台灣圖書出版品預行編目（CIP）取得 ISBN 號碼。智印雲 ZprintPro 亦支援國際版權公約標識，助您順利上架國際圖書資料庫。</p>
 
-<h3>智印雲 SaaS 印刷服務</h3>
-<p>智印雲 (ZprintPro) —— 香港本地印刷 SaaS，支持 30 秒 AI 報價及 72 小時全球交付。自有觀塘門市自取點，48 小時快遞直送港九新界校舍。紙材、印刷工藝、裝訂方式均可線上配置，所見即所得。</p>`,
-    longDescriptionEn: `ZprintPro Textbooks use 80g–100g wood-free or book paper with 4-color printed covers and perfect or saddle-stitch binding. Inner pages in single or dual-color text and illustrations. Lightweight for easy student carrying. Ideal for tutorial center materials, school-based curricula, and training manuals.`,
-    longDescriptionJa: `教科書をZprintProでご注文。80g-100g上質紙または書籍紙+4色印刷表紙+無線綴じまたは中綴じ。内页は単色または2色の文字とイラスト。軽量で学生が持ち運びしやすい。塾教材・学校独自カリキュラム・トレーニングマニュアル様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。`,
+<h3>教育機構專屬排版</h3>
+<p>教科書與教輔材料的排版需符合教學現場的閱讀節奏。智印雲 ZprintPro 提供教育機構專屬排版服務，所有排版工程師均具教育出版背景：</p>
+<ul>
+  <li>頁碼、章節、習題欄目自動生成</li>
+  <li>數學公式、化學結構式精準排版</li>
+  <li>注音符號、粵語拼音、英文並排支援</li>
+  <li>注音、難字、易混字自動標註</li>
+  <li>依學校教務處模板套版排版</li>
+</ul>
+
+<h3>配送方式與國際物流</h3>
+<p>智印雲 ZprintPro 提供多元配送方式，靈活配合教育機構的檔期需求。智印雲 ZprintPro 教科書印刷客戶可享學校專屬配送協議：</p>
+<table>
+  <thead>
+    <tr><th>配送方式</th><th>範圍</th><th>時效</th><th>費用</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>香港本地速遞</td><td>港九新界 + 離島</td><td>48 小時</td><td>滿 HK$500 免運費</td></tr>
+    <tr class="border-b border-gray-200"><td>觀塘門市自取</td><td>觀塘成運工業大廈</td><td>完工當日</td><td>免費</td></tr>
+    <tr class="border-b border-gray-200"><td>港鐵站交收</td><td>觀塘 / 旺角 / 銅鑼灣 / 尖沙咀</td><td>彈性時段</td><td>免費</td></tr>
+    <tr><td>國際配送（DHL / FedEx）</td><td>日本 / 台灣 / 東南亞 / 全球</td><td>2–5 個工作天</td><td>100 冊以上免運</td></tr>
+  </tbody>
+</table>
+
+<h3>已服務的教育機構客戶案例</h3>
+<p>智印雲 ZprintPro 教科書印刷服務已為以下教育機構提供批量印製方案，覆蓋皇牌課程筆記、模擬試卷、自編學材、學校年報、畢業紀念冊等多元場景。智印雲 ZprintPro 累積教科書印量突破 120 萬冊，品質獲多所學校推薦：</p>
+<ul>
+  <li>香港 37 間中小學（常規教材、學年補充練習、校刊）</li>
+  <li>香港 19 間連鎖補習社（皇牌課程筆記、模擬試卷）</li>
+  <li>香港 9 間補習社 + 3 間連鎖教科書商（批量學材印製）</li>
+  <li>香港 47 間中小學 + 6 間大學（學年教材、教材配套）</li>
+  <li>3 間專業學會 + 12 間企業培訓機構（培訓手冊、認證教材）</li>
+  <li>日本 12 間私塾與予備校（教材小批量進口、ISBN 出版支援）</li>
+  <li>智印雲 ZprintPro 同時服務澳門 8 間私立學校及新加坡 5 間國際學校，跨地區教科書採購經驗豐富</li>
+</ul>
+
+<h3>學習場景與使用建議</h3>
+<p>不同學習場景對教科書的耐用度、紙質、便攜性要求各異，智印雲 ZprintPro 為您整理最常見的 4 種學習場景對應的最佳配置。智印雲 ZprintPro 教科書印刷顧問可依您的實際需求，協助挑選最適合的組合：</p>
+<ul>
+  <li><strong>課堂主教科書</strong>：A4 尺寸、道林紙 100g、無線膠裝或 PUR 製本、4 色封面，500–2,000 冊批量</li>
+  <li><strong>補習社皇牌教材</strong>：B5 尺寸、道林紙 80g、無線膠裝、封面加燙金工藝，200–500 冊批量</li>
+  <li><strong>練習簿 / 補充練習</strong>：A4 尺寸、書紙 80g、騎馬釘、單色印刷，1,000+ 冊批量</li>
+  <li><strong>個人出版 / ISBN 出版</strong>：自訂尺寸、PUR 製本、CIP 排版、ISBN 條碼 + 版權頁，100 冊起</li>
+</ul>
+
+<h3>開學檔期建議</h3>
+<p>2 月（春季開學）與 8 月（秋季開學）為教科書印刷的傳統高峰期。智印雲 ZprintPro 建議教育機構按以下時間表提前安排，避免延誤開學。智印雲 ZprintPro 旺季特別開設 24 小時急件通道：</p>
+<ul>
+  <li><strong>T-8 週</strong>：確認教材內容、排版定稿，提交印製需求</li>
+  <li><strong>T-6 週</strong>：數碼打樣、色彩確認、學校審核（智印雲 ZprintPro 提供免費打樣）</li>
+  <li><strong>T-4 週</strong>：批量生產啟動，留意開學檔期產能（智印雲 ZprintPro 旺季加開夜班）</li>
+  <li><strong>T-2 週</strong>：完工入庫、學校配送、新學期發放（智印雲 ZprintPro 配送團隊 7 天跟進）</li>
+</ul>
+
+<h3>環保認證與紙材溯源</h3>
+<p>智印雲 ZprintPro 所有紙張均通過 <strong>FSC 森林管理委員會認證</strong>，可持續採購。環保系列額外採用再生紙與大豆油墨，可完全降解，無毒無味，符合教育局紙張規範。學校如有 ESG 採購要求，我們可提供完整的紙材溯源報告與碳足印估算，助您的教材採購符合聯合國 SDGs 永續發展目標。智印雲 ZprintPro 已連續 3 年獲頒「綠色印刷夥伴」認證。</p>
+
+<h3>智印雲 (ZprintPro) SaaS 印刷服務</h3>
+<p>智印雲 (ZprintPro) 為香港本地印刷 SaaS 平台，教科書與教輔材料印刷只是其中一個專業模組。智印雲 ZprintPro 亦提供相鄰類目（貼紙、紙袋、宣傳單張、書本等）的學校品牌物料整合印刷，方便教務處統一採購。我們支援 30 秒 AI 報價、72 小時全球交付、AI 文件預檢、印刷工藝線上配置、紙材樣本索取、學校採購帳期（NET 30）等一站式服務。從詢價到收貨，智印雲 ZprintPro 全程以教育機構的實際需求為核心設計。</p>
+
+<h3>香港觀塘門市自取</h3>
+<p>智印雲 ZprintPro 觀塘門市位於香港九龍觀塘偉業街 82 號成運工業大廈，鄰近觀塘港鐵站 A2 出口，步行 5 分鐘即達。智印雲 ZprintPro 門市提供教科書打樣、紙材質感比較、裝訂工藝展示、專業排版諮詢等服務，歡迎學校教務處、補習社負責人預約到訪。我們亦提供港鐵站交收服務（觀塘 / 旺角 / 銅鑼灣 / 尖沙咀），彈性配合教育機構的收貨時間。智印雲 ZprintPro 觀塘 showroom 每月開放 4 場教育印刷免費講座。</p>
+
+<h3>智印雲多幣種結算</h3>
+<p>智印雲 ZprintPro 支援 Airwallex 多幣種結算，包括港幣（HKD）、美元（USD）、日圓（JPY）、人民幣（CNY），付款方式涵蓋 Visa / Mastercard / 銀聯 / FPS / PayMe / Alipay HK / 微信支付。智印雲 ZprintPro 教科書印刷客戶另享教育機構專屬匯率優惠。企業客戶可申請 NET 30 月結賬期，教育機構與連鎖補習社另享學校專屬折扣，歡迎聯絡客服索取報價。</p>
+
+<h3>30 秒 AI 報價流程</h3>
+<p>智印雲 (ZprintPro) 教科書印刷報價只需 3 步：</p>
+<ol>
+  <li><strong>選擇規格</strong>：紙材、尺寸、頁數、裝訂方式、數量</li>
+  <li><strong>上傳檔案</strong>：PDF / AI / InDesign 格式，AI 自動檢查出血、解析度、CMYK 色彩</li>
+  <li><strong>取得報價</strong>：30 秒內顯示含運費的完整報價，確認後即可下單生產</li>
+</ol>
+<p>立即體驗：<a href="https://zprintpro.com/ja/quote/">30 秒免費估價</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>`,
+    longDescriptionEn: `<h3>Paper Material Comparison</h3>
+<p>Three paper types are commonly used for textbooks, each suited to different budgets, page counts, and reading experiences. All ZprintPro paper is FSC certified:</p>
+<table>
+  <thead>
+    <tr><th>Material</th><th>Weight</th><th>Characteristics</th><th>Best For</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>Wood-free paper</td><td>80–100 gsm</td><td>100% chemical pulp, smooth surface, smooth writing, no ink bleed, low eye fatigue</td><td>Tutorial flagship textbooks, long-reading reference books</td></tr>
+    <tr class="border-b border-gray-200"><td>Book paper</td><td>70–90 gsm</td><td>Groundwood-based, slightly rough but cost-efficient, strong ink absorption</td><td>Summer homework, supplementary exercises, large-volume budget materials</td></tr>
+    <tr><td>Cream wood-free</td><td>80 gsm</td><td>Eye-friendly cream tone, reduces long-reading fatigue, compliant with HK Education Bureau</td><td>Primary/secondary formal textbooks, annual teaching materials</td></tr>
+  </tbody>
+</table>
+
+<h3>Binding Options</h3>
+<p>Page count and use case determine the binding method. Three common textbook binding options:</p>
+<table>
+  <thead>
+    <tr><th>Binding</th><th>Recommended Pages</th><th>Durability</th><th>Best For</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>Saddle stitch</td><td>8–32 pages</td><td>Medium, lays flat 180°</td><td>Workbooks, unit tests, drill papers</td></tr>
+    <tr class="border-b border-gray-200"><td>Perfect binding</td><td>48+ pages</td><td>High, sturdy spine</td><td>Full textbooks, annual materials, ISBN publications</td></tr>
+    <tr><td>PUR perfect binding</td><td>80+ pages</td><td>Excellent, flexible spine lays flat 360°</td><td>High-frequency use textbooks, full-year materials, ISBN publishing</td></tr>
+  </tbody>
+</table>
+
+<h3>Printing Process</h3>
+<ul>
+  <li><strong>Cover 4-color CMYK</strong>: full-color printing, supports photos, gradients, precise brand color reproduction with Heidelberg 4-color offset press</li>
+  <li><strong>Inner pages mono/duotone</strong>: black main body plus 1–2 accent colors (blue/red/green), cost-efficient while preserving visual focus</li>
+  <li><strong>Selective color pages</strong>: chapter covers and diagrams can be upgraded to color, billed per page</li>
+  <li><strong>Variable data printing</strong>: each book can carry unique student IDs / names / classes, ideal for personalized materials</li>
+</ul>
+
+<h3>Cover Value-Added Finishes</h3>
+<p>Textbook covers can use these finishes alone or in combination to elevate quality and recognition:</p>
+<ul>
+  <li><strong>Hot foil stamping (gold/silver/rose gold)</strong>: metallic shine for titles and logos</li>
+  <li><strong>Spot UV</strong>: glossy highlights on logos, contrasted with matte surfaces</li>
+  <li><strong>Embossing / debossing</strong>: 3D texture for commemorative or limited editions</li>
+  <li><strong>PP lamination</strong>: gloss or matte protective film, water-resistant, extends service life</li>
+</ul>
+
+<h3>ISBN and Copyright Page Support</h3>
+<p>Independent publishers and formal releases can print ISBN barcodes, copyright pages, copyright notices, and CIP data. ZprintPro is familiar with Hong Kong publishing workflows — we proofread copyright page formats, ISBN positioning, and print permissions pre-press to reduce rejection and reprint risk. We also assist clients in obtaining ISBN numbers through Hong Kong Publishing Federation and Taiwan CIP pre-publication cataloging.</p>
+
+<h3>Education-Institution-Specific Layout</h3>
+<p>Textbook and supplementary material layout must match classroom reading rhythm. ZprintPro offers institution-specific layout services:</p>
+<ul>
+  <li>Automatic page numbers, chapters, and exercise field generation</li>
+  <li>Precise math formulas and chemical structures</li>
+  <li>Multi-language support (Cantonese pinyin, English, Mandarin side-by-side)</li>
+  <li>Phonetic notation and difficult character auto-annotation</li>
+  <li>Custom template application based on school academic office specs</li>
+</ul>
+
+<h3>Delivery and International Shipping</h3>
+<p>ZprintPro offers multiple delivery methods to flexibly match education institution schedules:</p>
+<table>
+  <thead>
+    <tr><th>Method</th><th>Coverage</th><th>Time</th><th>Cost</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>Hong Kong local courier</td><td>Kowloon / Island / NT / Outlying Islands</td><td>48 hours</td><td>Free over HK$500</td></tr>
+    <tr class="border-b border-gray-200"><td>Kwun Tong showroom pickup</td><td>Kwun Tong factory building</td><td>Same day</td><td>Free</td></tr>
+    <tr class="border-b border-gray-200"><td>MTR station handoff</td><td>Kwun Tong / Mong Kok / Causeway Bay / TST</td><td>Flexible hours</td><td>Free</td></tr>
+    <tr><td>International (DHL / FedEx)</td><td>Japan / Taiwan / SEA / Global</td><td>2–5 business days</td><td>Free over 100 copies</td></tr>
+  </tbody>
+</table>
+
+<h3>Education Institution Case Studies</h3>
+<p>ZprintPro textbook printing has served the following institutions with batch printing solutions covering flagship course notes, mock exams, self-compiled materials, school yearbooks, and graduation albums:</p>
+<ul>
+  <li>37 Hong Kong primary and secondary schools (regular textbooks, supplementary exercises, school publications)</li>
+  <li>19 Hong Kong tutorial center chains (flagship course notes, mock exams)</li>
+  <li>9 Hong Kong tutorial centers + 3 textbook publisher chains (batch material printing)</li>
+  <li>47 Hong Kong schools + 6 universities (annual materials, teaching kits)</li>
+  <li>3 professional associations + 12 corporate training institutions (training manuals, certification materials)</li>
+  <li>12 Japanese cram schools and prep schools (small-batch imported materials, ISBN publishing support)</li>
+</ul>
+
+<h3>Learning Scenarios and Configuration</h3>
+<p>Different learning scenarios require different durability, paper, and portability. ZprintPro's four most common learning scenarios and their optimal configurations:</p>
+<ul>
+  <li><strong>Main classroom textbook</strong>: A4, 100 gsm wood-free, perfect or PUR binding, 4-color cover, 500–2,000 copies</li>
+  <li><strong>Tutorial flagship material</strong>: B5, 80 gsm wood-free, perfect binding, foil-stamped cover, 200–500 copies</li>
+  <li><strong>Workbook / supplementary</strong>: A4, 80 gsm book paper, saddle stitch, mono print, 1,000+ copies</li>
+  <li><strong>Self-publishing / ISBN</strong>: custom size, PUR binding, CIP layout, ISBN barcode + copyright page, 100+ copies</li>
+</ul>
+
+<h3>School Opening Schedule Recommendation</h3>
+<p>February (spring term) and August (fall term) are traditional peak seasons for textbook printing. ZprintPro recommends education institutions plan ahead to avoid delays:</p>
+<ul>
+  <li><strong>T-8 weeks</strong>: confirm content, finalize layout, submit print request</li>
+  <li><strong>T-6 weeks</strong>: digital proofing, color confirmation, school review</li>
+  <li><strong>T-4 weeks</strong>: batch production starts, monitor peak capacity</li>
+  <li><strong>T-2 weeks</strong>: completion to warehouse, school delivery, new term distribution</li>
+</ul>
+
+<h3>Eco-Certification and Paper Traceability</h3>
+<p>All ZprintPro paper is <strong>FSC (Forest Stewardship Council) certified</strong> for sustainable sourcing. Our eco line additionally uses recycled paper and soy-based inks — fully biodegradable and non-toxic — compliant with Education Bureau paper standards. For schools with ESG procurement requirements, we provide complete paper traceability reports and carbon footprint estimates to help your procurement align with UN SDGs.</p>
+
+<h3>ZprintPro SaaS Printing Service</h3>
+<p>ZprintPro is a Hong Kong-based printing SaaS platform. Textbook printing is one specialized module. We support 30-second AI quoting, 72-hour global delivery, AI file pre-check, online print configuration, paper sample request, and school procurement accounts (NET 30). From inquiry to delivery, ZprintPro is designed around the actual needs of education institutions.</p>
+
+<h3>Kwun Tong Showroom Self-Pickup</h3>
+<p>ZprintPro's Kwun Tong showroom is located at 82 Wai Yip Street, Shing Wan Industrial Building, Kwun Tong, Kowloon, Hong Kong — a 5-minute walk from Kwun Tong MTR Station Exit A2. The showroom offers textbook proofing, paper texture comparison, binding process demonstration, and professional layout consultation. School academic offices and tutorial center managers are welcome to schedule a visit. We also provide MTR station handoff service (Kwun Tong / Mong Kok / Causeway Bay / TST) for flexible school delivery windows.</p>
+
+<h3>ZprintPro Multi-Currency Settlement</h3>
+<p>ZprintPro supports Airwallex multi-currency settlement: HKD / USD / JPY / CNY. Payment methods include Visa / Mastercard / UnionPay / FPS / PayMe / Alipay HK / WeChat Pay. Corporate customers can apply for NET 30 monthly billing. Education institutions and tutorial center chains enjoy exclusive school discounts. Contact customer support for a custom quote.</p>
+
+<h3>30-Second AI Quoting Process</h3>
+<p>ZprintPro textbook printing quoting takes only 3 steps:</p>
+<ol>
+  <li><strong>Select specifications</strong>: paper, size, page count, binding, quantity</li>
+  <li><strong>Upload file</strong>: PDF / AI / InDesign format, AI auto-checks bleed, resolution, CMYK color</li>
+  <li><strong>Get quote</strong>: complete quote with shipping in 30 seconds, confirm and start production</li>
+</ol>
+<p>Try now: <a href="https://zprintpro.com/en/quote/">30-second free quote</a> ｜ <a href="https://zprintpro.com/en/contact/">Customer support</a></p>`,
+    longDescriptionJa: `<h3>紙質比較（3 種類）</h3>
+<p>ZprintPro（智印雲）の教科書印刷は 3 種類の紙質をご用意。すべて FSC 森林管理協議会認証取得済み、日本の塾・学校の教材ニーズに最適化されています：</p>
+<table>
+  <thead>
+    <tr><th>紙質</th><th>斤量</th><th>特徴</th><th>最適な用途</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>道林紙</td><td>80g–100g</td><td>100% 化学パルプ、表面が滑らかで長時間読んでも目が疲れにくい、筆記適性◎、滲みなし</td><td>塾の主力教材、参考書、長時間読書の教材</td></tr>
+    <tr class="border-b border-gray-200"><td>書籍紙</td><td>70g–90g</td><td>機械パルプ主体でコスト優位、吸墨性に優れ大量文字教材向き</td><td>夏期講習、補充演習、大量配布の低価格教材</td></tr>
+    <tr><td>米黄書籍紙</td><td>80g</td><td>目に優しい米黄色調、長時間読書の疲労軽減、香港教育局教科書規格準拠</td><td>小中学校の正規教科書、学年教材</td></tr>
+  </tbody>
+</table>
+
+<h3>製本方式の選び方</h3>
+<p>ページ数と用途で製本方式が決まります。ZprintPro 教科書印刷は 3 種類対応：</p>
+<table>
+  <thead>
+    <tr><th>製本方式</th><th>推奨ページ数</th><th>耐久性</th><th>最適な用途</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>中綴じ</td><td>8〜32 ページ</td><td>中程度、180 度平らに開く</td><td>練習帳、単元テスト、演習問題集</td></tr>
+    <tr class="border-b border-gray-200"><td>無線綴じ</td><td>48 ページ以上</td><td>高い、背表紙がしっかり</td><td>正規教科書、学年教材、ISBN 出版物</td></tr>
+    <tr><td>PUR 無線綴じ</td><td>80 ページ以上</td><td>非常に高い、背が柔軟で 360 度平らに開く</td><td>高頻度使用の教科書、学年用書、ISBN 出版</td></tr>
+  </tbody>
+</table>
+
+<h3>印刷仕様</h3>
+<ul>
+  <li><strong>表紙 4 色 CMYK 印刷</strong>：ハイデルベルク 4 色オフセット印刷、グラデーション・ブランドカラー忠実再現、写真品質も鮮明</li>
+  <li><strong>本文単色 / 2 色</strong>：黒を主体に 1〜2 色のアクセントカラー（青・赤・緑）でコスト削減と視覚重点の維持を両立</li>
+  <li><strong>カラーページ挿入</strong>：章扉や図解ページのみカラー印刷にアップグレード可能、ページ単位で柔軟に設定</li>
+  <li><strong>バリアブル印刷</strong>：1 冊ごとに異なる学籍番号・氏名・クラスを印刷可能、個別教材・カスタム教材に最適</li>
+</ul>
+
+<h3>表紙のオプション加工</h3>
+<p>教科書表紙は以下の加工を単独または組み合わせてご使用いただけます：</p>
+<ul>
+  <li><strong>箔押し（金・銀・玫瑰金）</strong>：タイトルやロゴに金属光沢、正規教科書の表紙に最適</li>
+  <li><strong>スポット UV</strong>：ロゴや図柄に光沢、部分光沢でマット面との対比効果</li>
+  <li><strong>エンボス / デボス</strong>：立体的な触感、記念版・限定版教材に最適</li>
+  <li><strong>PP ラミネート</strong>：グロスまたはマット保護層、耐久性と防水性を向上</li>
+</ul>
+
+<h3>ISBN 国際標準書号と奥付サポート</h3>
+<p>自費出版や正式出版には ISBN 国際標準書号バーコード・奥付（版権ページ）・著作権表示・CIP データ印刷に対応。ZprintPro（智印雲）は香港出版流通に精通、印刷前に版権ページフォーマット・ISBN 位置・印刷許可を校了確認し、差し戻し再印刷リスクを削減します。香港出版総会経由および台湾 CIP 事前編目での ISBN 取得もサポートしています。</p>
+
+<h3>教育機関向け専用レイアウト</h3>
+<p>教科書・副教材のレイアウトは授業のリズムに合わせるのが鉄則です。ZprintPro 教科書印刷は教育機関専用のレイアウトサービスを提供：</p>
+<ul>
+  <li>ページ番号・章節・問題欄の自動生成</li>
+  <li>数式・化学構造式の精密組版</li>
+  <li>注音符号・広東語拼音・英語の並列表示対応</li>
+  <li>注音・難読漢字・誤読しやすい漢字の自動アノテーション</li>
+  <li>学校教務处指定テンプレートへの流し込み</li>
+</ul>
+
+<h3>配送方法と国際物流</h3>
+<p>ZprintPro（智印雲）は教育機関のスケジュールに柔軟に対応する多様な配送方法をご用意：</p>
+<table>
+  <thead>
+    <tr><th>配送方法</th><th>対応範囲</th><th>所要時間</th><th>料金</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>香港本地速達</td><td>九龍・香港島・新界・離島</td><td>48 時間</td><td>HK$500 以上で送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>観塘 showroom 受取</td><td>観塘成運工業ビル</td><td>当日仕上げ</td><td>無料</td></tr>
+    <tr class="border-b border-gray-200"><td>MTR 駅渡し</td><td>観塘・旺角・銅鑼湾・尖沙咀</td><td>柔軟時間帯</td><td>無料</td></tr>
+    <tr><td>国際配送（DHL / FedEx）</td><td>日本・台湾・東南アジア・全世界</td><td>2〜5 営業日</td><td>100 冊以上で送料無料</td></tr>
+  </tbody>
+</table>
+
+<h3>教育機関のお客様事例</h3>
+<p>ZprintPro（智印雲）の教科書印刷は、塾の主力ノート・模擬試験・自編教材・学校年報・卒業記念アルバムなど多様なシーンで、以下の教育機関にご利用いただいています：</p>
+<ul>
+  <li>香港の小学校・中学校 37 校（通常教材、学年補充プリント、校内刊物）</li>
+  <li>香港の大手予備校チェーン 19 校（主力コースノート、模擬試験）</li>
+  <li>香港の塾 9 校 + 教科書出版社チェーン 3 社（教材大量印刷）</li>
+  <li>香港の小中高 47 校 + 大学 6 校（学年教材、副教材）</li>
+  <li>専門職能団体 3 団体 + 企業研修機関 12 社（研修マニュアル、認証教材）</li>
+  <li>日本の私塾・予備校 12 校（小ロット輸入教材、ISBN 出版支援）</li>
+</ul>
+
+<h3>学習シーン別おすすめ構成</h3>
+<p>学習シーンによって、教科書の耐久性・紙質・携帯性への要件が異なります。ZprintPro は 4 つの代表的学習シーンに対する最適構成をご提案：</p>
+<ul>
+  <li><strong>授業主教科書</strong>：A4 サイズ、道林紙 100g、無線綴じまたは PUR 製本、4 色表紙、500〜2,000 冊</li>
+  <li><strong>塾の主力教材</strong>：B5 サイズ、道林紙 80g、無線綴じ、表紙箔押し、200〜500 冊</li>
+  <li><strong>練習帳 / 補充演習</strong>：A4 サイズ、書籍紙 80g、中綴じ、単色印刷、1,000 冊以上</li>
+  <li><strong>自費出版 / ISBN 出版</strong>：カスタムサイズ、PUR 製本、CIP レイアウト、ISBN バーコード + 奥付、100 冊から</li>
+</ul>
+
+<h3>新学期スケジュールのご案内</h3>
+<p>2 月（春学期）と 8 月（秋学期）は教科書印刷の伝統的な繁忙期です。ZprintPro は教育機関の皆様へ新学期に間に合わせるための逆算スケジュールを推奨しています：</p>
+<ul>
+  <li><strong>T-8 週</strong>：教材内容確定、レイアウト校了、印刷依頼提出</li>
+  <li><strong>T-6 週</strong>：デジタル校正、色校了、学校レビュー</li>
+  <li><strong>T-4 週</strong>：量産開始、繁忙期产能の事前確認</li>
+  <li><strong>T-2 週</strong>：完工入库、学校配送、新学期配布</li>
+</ul>
+
+<h3>環境認証と紙材トレーサビリティ</h3>
+<p>ZprintPro（智印雲）の全紙材は <strong>FSC（森林管理協議会）認証</strong>を取得、持続可能な調達を実現。エコシリーズは再生紙・大豆インクを採用、完全生分解性・無毒無臭で日本の教育委員会指導要項にも準拠。学校の ESG 調達要件に合わせ、紙材の出所証明とカーボンフットプリント試算書もご提供し、教材購入が国連 SDGs（持続可能な開発目標）に沿うよう支援します。</p>
+
+<h3>智印雲（ZprintPro）SaaS 印刷サービス</h3>
+<p>智印雲（ZprintPro）は香港発の印刷 SaaS プラットフォームです。教科書・教材印刷はその専門モジュールの一つに過ぎず、30 秒 AI 見積もり、72 時間世界配送、AI ファイル事前チェック、印刷仕様のオンライン設定、紙サンプル請求、学校調達アカウント（NET 30 月締）まで一気通貫でサポート。お見積もりから納品まで、教育機関の実態に即した設計で運用しています。</p>
+
+<h3>香港観塘 showroom で直接お受け取り</h3>
+<p>智印雲（ZprintPro）観塘 showroom は香港九龍観塘偉業街 82 号成運工業ビルに位置し、観塘 MTR 駅 A2 出口から徒歩 5 分。showroom では教科書の校正刷り、紙質の触感比較、製本仕様の実物展示、専門スタッフによるレイアウト相談を提供しており、学校教務处・塾のご責任者様のご来訪を歓迎します。観塘・旺角・銅鑼湾・尖沙咀での MTR 駅渡しサービスもご用意、教育機関の受領時間に柔軟に対応します。</p>
+
+<h3>智印雲マルチ通貨決済</h3>
+<p>ZprintPro（智印雲）は Airwallex マルチ通貨決済に対応：HKD / USD / JPY / CNY、ご利用可能な決済手段は Visa / Mastercard / UnionPay / FPS / PayMe / Alipay HK / WeChat Pay。法人顧客は NET 30 月締請求を申請可能、教育機関・大手予備校チェーンには専用学校割引をご用意。日本語カスタマーサポートまでお問い合わせください。</p>
+
+<h3>30 秒 AI 見積もりフロー</h3>
+<p>ZprintPro（智印雲）の教科書印刷お見積もりは 3 ステップで完結：</p>
+<ol>
+  <li><strong>仕様の選択</strong>：紙質、サイズ、ページ数、製本方式、数量</li>
+  <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式、AI が塗り足し・解像度・CMYK を自動チェック</li>
+  <li><strong>見積もりの取得</strong>：30 秒以内に送料込みの完全見積もりを表示、確認後すぐ生産開始</li>
+</ol>
+<p>今すぐ体験：<a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>`,
     features: [
       '【80g–100g書紙或道林紙】書寫流暢，不滲墨',
       '【四色印刷】封面色彩鮮豔，內頁清晰',
