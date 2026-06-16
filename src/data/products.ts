@@ -5224,6 +5224,27 @@ export const products: Product[] = [
   </tbody>
 </table>
 
+<h3>Material &amp; GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Paper Weight</th>
+      <th class="p-2 text-center">Feel</th>
+      <th class="p-2 text-center">Opacity</th>
+      <th class="p-2 text-center">Cost</th>
+      <th class="p-2 text-left">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">128g Glossy</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Cost-effective handouts</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">157g Coated</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">Standard flyers</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">200g Premium</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Luxury brand flyers</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">250g Heavy</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★</td><td class="p-2">VIP invitations</td></tr>
+  </tbody>
+</table>
+
+<p>ZprintPro A5 flyers use FSC-certified art paper from sustainable forests, supporting eco-conscious brands. All papers pass ISO 12647 color management for accurate, consistent output across reprint runs.</p>
+
 <h3>Printing & Finishing Processes</h3>
 <p>Our A5 flyers are printed using 4-color digital printing, which is both cost-effective and high-quality. The paper is coated to ensure vibrant colors and sharp images. Despite the lower cost, we maintain color calibration and bleed checks for uncompromised quality.</p>
 
