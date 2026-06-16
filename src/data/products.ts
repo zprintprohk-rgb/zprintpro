@@ -449,18 +449,58 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro Thick Business Cards use 400g ultra-thick glossy paper—1.3× standard thickness—with exceptional rigidity and a substantial, prestigious feel. Paired with 4-color offset printing for fine halftones and saturated color. Surface options include matte or gloss lamination, plus foil stamping or embossing. Ideal for high-end service professionals, designers, and lawyers. Standard 85×54mm with reinforced edges. Free sampling and color confirmation.<h3>Business Card GSM Comparison Scorecard</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">Weight</th><th class="p-2 text-center">Rigidity</th><th class="p-2 text-center">Feel</th><th class="p-2 text-center">Cost</th><th class="p-2 text-left">Best For</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">300g Standard</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">General business, startups</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">400g Thick</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">Designers, lawyers, premium</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">600g Ultra</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Luxury brands, VIP cards</td></tr></tbody></table>
+    longDescriptionEn: `<h3>Premium Thick Business Cards for a Lasting Impression</h3>
+<p>ZprintPro Thick Business Cards are crafted from 400g ultra-thick glossy paper, offering a substantial feel and exceptional rigidity. With a thickness 1.3 times that of standard cards, these cards are perfect for high-end service professionals, designers, and lawyers. The 4-color offset printing ensures fine halftones and vibrant, saturated colors, while surface options like matte or gloss lamination, foil stamping, and embossing add a touch of luxury.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Weight</th>
+      <th class="p-2 text-center">Rigidity</th>
+      <th class="p-2 text-center">Feel</th>
+      <th class="p-2 text-center">Cost</th>
+      <th class="p-2 text-left">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">300g Standard</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">General business, startups</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">400g Thick</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">Designers, lawyers, premium</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">600g Ultra</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Luxury brands, VIP cards</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>Our 4-color offset printing technology delivers superior color accuracy and clarity. We offer a variety of finishing options, including matte or gloss lamination, foil stamping in gold, silver, or rose gold, and embossing for a tactile effect. These processes are performed using state-of-the-art Heidelberg machinery to ensure precision and quality.</p>
 
-<h3>Frequently Asked Questions</h3>
-<details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<h3>Size, Format, and MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size (mm)</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">85x54</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$1.00</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">90x50</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$1.00</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases and Applications</h3>
+<p>ZprintPro Thick Business Cards are ideal for:
+<ul>
+  <li>Lawyers and financial professionals looking for a prestigious image.</li>
+  <li>Designers and creative agencies seeking a modern, high-end look.</li>
+  <li>Luxury brands aiming to convey exclusivity and sophistication.</li>
+  <li>VIP cards for exclusive clubs and events.</li>
+</ul>
+</p>
+
+<h3>Quality, Compliance, and Shipping</h3>
+<p>ZprintPro is dedicated to quality and compliance, with FSC-certified materials, ISO 9001 manufacturing standards, and ISO 12647 color management. We offer DHL Express global shipping with delivery in 2-4 days. Get an instant 30-second AI quote with no signup required.</p>`,
     longDescriptionJa: `厚紙名刺をZprintProでご注文。400g超厚コート紙、両面カラー、厚紙名刺でプレミアム感を演出。デザイナー・弁護士・高級サービス業様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -1685,18 +1725,58 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `Transparent PET stickers read nearly “label-free” on glass, plastic, or clear packaging—ideal for serums, perfumes, beverages, and gift seals. Optional white underprint keeps colors vivid on dark bottles. Avoid hairline reverse text and keep safe margins for die-cutting. Matte lamination reduces fingerprints; gloss boosts saturation. Terms match category content: clear PET, spot UV, lamination, die-cutting. Common in Hong Kong retail sampling and exhibition displays.<h3>Sticker Material Comparison Scorecard</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">Material</th><th class="p-2 text-center">Clarity</th><th class="p-2 text-center">Waterproof</th><th class="p-2 text-center">Cost</th><th class="p-2 text-left">Best For</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">Clear PET</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">Bottle labels, gift seals</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">PVC Waterproof</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Outdoor labels, food delivery</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">Art Paper</td><td class="p-2 text-center">★★</td><td class="p-2 text-center">★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Promotional stickers, temporary labels</td></tr></tbody></table>
+    longDescriptionEn: `<h3>Transparent Stickers for a Sleek, Invisible Effect</h3>
+<p>ZprintPro Transparent PET stickers offer a nearly 'label-free' appearance on glass, plastic, or clear packaging, making them ideal for serums, perfumes, beverages, and gift seals. The transparent material creates an invisible effect when applied, ensuring your product remains the focus. Optional white underprint can be added to maintain color vibrancy on dark bottles.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Material</th>
+      <th class="p-2 text-center">Clarity</th>
+      <th class="p-2 text-center">Waterproof</th>
+      <th class="p-2 text-center">Cost</th>
+      <th class="p-2 text-left">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">Clear PET</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">Bottle labels, gift seals</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">PVC Waterproof</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Outdoor labels, food delivery</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Art Paper</td><td class="p-2 text-center">★★</td><td class="p-2 text-center">★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Promotional stickers, indoor use</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>Our advanced printing technology ensures high-quality, vibrant prints on transparent PET material. We offer optional matte or gloss lamination to reduce fingerprints and enhance color saturation. Spot UV can be applied for a glossy, dimensional contrast, and die-cutting is available for custom shapes and sizes.</p>
 
-<h3>Frequently Asked Questions</h3>
-<details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<h3>Size, Format, and MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size (mm)</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">50x50</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$0.50</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">100x100</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$0.30</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases and Applications</h3>
+<p>ZprintPro Transparent PET stickers are perfect for:
+<ul>
+  <li>Cosmetics and skincare products for a sleek, modern look.</li>
+  <li>Beverage bottles and glassware for branding and decoration.</li>
+  <li>Gift seals for a sophisticated, invisible effect.</li>
+  <li>Outdoor labels for durability and waterproofing.</li>
+</ul>
+</p>
+
+<h3>Quality, Compliance, and Shipping</h3>
+<p>ZprintPro is committed to quality and compliance, with FSC-certified materials, ISO 9001 manufacturing standards, and ISO 12647 color management. We offer DHL Express global shipping with delivery in 2-4 days. Get an instant 30-second AI quote with no signup required.</p>`,
     longDescriptionJa: `透明ステッカーをZprintProでご注文。PET素材+防水・防晒・耐磨耗+プロ4色印刷+変形カット対応のプレミアム透明ステッカー印刷です。食品ブランド・化粧品・商品ラベル・容器装飾・アーティスト・クリエイター向けに、無地感ラベルやガラス容器でのラベルレス効果を実現します。【素材】PET（透明/乳白半透明/艶消し）、接着剤は一般強粘着/再剥離/耐水強粘着から選択。【サイズ】最小20mm～最大300mmまで対応。【印刷方式】顔料インクUV印刷（耐候性◎）、CMYK+特色（白インク/メタリック）対応。透明フィルムに白を下刷りして上からCMYK印刷することで、透明素材でも発色鮮明に再現できます。【カット】標準カット（四角/円/楕円）、変形カット（オリジナル形状/型抜き）、部分型抜き対応。Cut lineパスを含めてIllustrator/PDFでご支給ください。【屋外耐久性】PET素材+UVインクで3年以上、直射日光・雨風に強く自動車ボディや屋外看板にも対応可能。【利用シーン】商品ラベル（食品/化粧品/雑貨）、容器装飾（ボトル/ジャー/ガラス容器）、アート・クリエイター作品、店舗装飾（窓・ショーケース）。【納期】20枚から対応（個人のクリエイター少量制作から、法人商品ラベルの10,000枚大量発注まで対応）、最短3営業日で出荷。500枚以上の大量発注は5-7営業日。変形カットや白インク印刷を含む場合はさらに1-2日かかる場合がございます。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -3717,18 +3797,58 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `White card bags offer a smooth, stiff surface with vibrant four-color printing—ideal walking billboards for beauty, jewelry, and premium apparel. Add matte or gloss lamination to protect ink, plus foil, spot UV, or embossing to elevate the logo. Handles range from ribbon to cotton or flat paper to match brand tone. Terms align with category content: white card, foil stamping, lamination, handles. Validate punch positions and safe margins at die stage; offset suits higher volumes for unit economics.<h3>Paper Bag Material Comparison Scorecard</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">Material</th><th class="p-2 text-center">Rigidity</th><th class="p-2 text-center">Print Quality</th><th class="p-2 text-center">Cost</th><th class="p-2 text-left">Best For</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">White Card Bag</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Beauty, jewelry, premium fashion</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">Kraft Paper Bag</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Lifestyle, coffee, organic food</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">Art Paper Bag</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">Department stores, promotions</td></tr></tbody></table>
+    longDescriptionEn: `<h3>White Card Bags for a Premium, Walking Billboard Effect</h3>
+<p>ZprintPro White Card Bags offer a smooth, stiff surface with vibrant four-color printing, making them ideal walking billboards for beauty, jewelry, and premium apparel brands. The white card material provides excellent print quality, and the bags can be enhanced with matte or gloss lamination to protect the ink and add a luxurious touch. Additional options such as foil stamping, spot UV, or embossing can be used to elevate the logo and create a striking visual impact.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Material</th>
+      <th class="p-2 text-center">Rigidity</th>
+      <th class="p-2 text-center">Print Quality</th>
+      <th class="p-2 text-center">Cost</th>
+      <th class="p-2 text-left">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">White Card Bag</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Beauty, jewelry, premium fashion</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Kraft Paper Bag</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Lifestyle, coffee, organic food</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Art Paper Bag</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td c...</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>Our four-color printing process ensures high-quality, vibrant prints on the white card material. We offer a variety of finishing options, including matte or gloss lamination to protect the ink and add a luxurious feel. Additional options such as foil stamping, spot UV, or embossing can be used to enhance the logo and create a striking visual impact. Handles can be customized with ribbon, cotton, or flat paper to match the brand's tone.</p>
 
-<h3>Frequently Asked Questions</h3>
-<details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<h3>Size, Format, and MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size (mm)</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">200x300</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$2.00</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">250x350</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$2.50</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases and Applications</h3>
+<p>ZprintPro White Card Bags are ideal for:
+<ul>
+  <li>Beauty and cosmetics brands looking for a premium packaging solution.</li>
+  <li>Jewelry and accessory brands seeking a stylish, walking billboard effect.</li>
+  <li>Premium fashion brands aiming to convey exclusivity and sophistication.</li>
+  <li>Promotional events and product launches.</li>
+</ul>
+</p>
+
+<h3>Quality, Compliance, and Shipping</h3>
+<p>ZprintPro is dedicated to quality and compliance, with FSC-certified materials, ISO 9001 manufacturing standards, and ISO 12647 color management. We offer DHL Express global shipping with delivery in 2-4 days. Get an instant 30-second AI quote with no signup required.</p>`,
     longDescriptionJa: `白卡紙袋をZprintProでご注文。平滑で高剛性の白卡紙+フルカラー印刷+箔押し/局部UV/エンボス。美容・宝飾・プレミアムアパレル様の贈答・小売に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -5083,18 +5203,42 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro A5 Flyers use 128g glossy or 100g book paper with 4-color digital printing—economical yet vibrant. A5 size (148×210mm) is perfect for mass distribution at ~40% lower cost than A4. First choice for food delivery, flash events, and community outreach. Single or double-sided with QR code and coupon design support.<h3>Flyer Size Comparison Scorecard</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">Size</th><th class="p-2 text-center">Info Capacity</th><th class="p-2 text-center">Distribution</th><th class="p-2 text-center">Cost</th><th class="p-2 text-left">Best For</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">A4 (210×297mm)</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Product catalogs, course guides</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5 (148×210mm)</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">Food delivery, event promos</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">A6 (105×148mm)</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Street handouts, takeaway inserts</td></tr></tbody></table>
+    longDescriptionEn: `<h3>A5 Flyers for Cost-effective Marketing</h3>
+<p>ZprintPro A5 Flyers are designed for businesses that need a cost-effective marketing solution. Using 128g glossy or 100g book paper with 4-color digital printing, these flyers offer vibrant colors and sharp images at a lower cost than A4 flyers. The A5 size (148×210mm) is perfect for mass distribution at ~40% lower cost than A4. This makes them ideal for food delivery, flash events, and community outreach. Single or double-sided printing with QR code and coupon design support is available.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Flyer Size Comparison Scorecard</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">Info Capacity</th>
+      <th class="p-2 text-center">Distribution</th>
+      <th class="p-2 text-center">Cost</th>
+      <th class="p-2 text-left">Best For</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">A4 (210×297mm)</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Product catalogs, course guides</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">A5 (148×210mm)</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">Food delivery, event promos</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">A6 (105×148mm)</td><td class="p-5 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Street handouts, takeaway inserts</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>Our A5 flyers are printed using 4-color digital printing, which is both cost-effective and high-quality. The paper is coated to ensure vibrant colors and sharp images. Despite the lower cost, we maintain color calibration and bleed checks for uncompromised quality.</p>
+
+<h3>Use Cases / Applications</h3>
+<p>A5 flyers are perfect for businesses that need to distribute large quantities of flyers at a low cost. They are ideal for food delivery services, event promotions, and community outreach programs.</p>
+
+<h3>Quality, Compliance, and Global Reach</h3>
+<p>ZprintPro ensures top-notch quality with FSC-certified paper and ISO 9001 manufacturing standards. Our ISO 12647 color management guarantees accurate color reproduction. With DHL Express global shipping, your flyers will reach international destinations within 2-4 days. Get a 30-second AI quote with no signup required.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
 <details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners.</p></details>
+<details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, ZprintPro offers DHL Express global shipping with delivery within 2-4 days.</p></details>
+<details class="my-2"><summary><strong>How do you ensure quality?</strong></summary><p>ZprintPro maintains quality with FSC-certified paper, ISO 9001 manufacturing, and ISO 12647 color management. We also offer free digital color proofing before production.</p></details>`,
     longDescriptionJa: `当サービスではA5チラシ印刷 即日対応にこだわり、128gコート紙または100g上質紙を採用し、4色デジタル印刷で経済性と鮮やかな発色を両立させています。A5サイズ（148×210mm）はA4より約40%のコスト削減となり、飲食店・カフェ・小売店・コミュニティイベント主催者にとって大量配布の第一選択です。
 
 A5 チラシ 印刷 激安をお求めの方へ。コストパフォーマンスに優れた価格設定で、100枚からご注文可能、1,000枚以上で30%以上OFF、5,000枚以上でさらに大幅割引。業界最安値に挑戦する明朗会計で、隠し料金なしの税込価格表示。香港自社工場からDHL／FedEx／EMSで最短3営業日出荷、東京・大阪・名古屋・福岡へは翌日配送対応。ヤマト運輸・佐川急便での追跡発送もご選択いただけます。
@@ -5245,18 +5389,56 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro Double-sided Flyers use 157g glossy or 128g matte paper with 4-color duplex offset printing. Front side grabs attention while the back provides detailed information—doubled content capacity. Front-to-back registration precision within ±0.5mm ensures accurate alignment. Ideal for product catalogs, service introductions, event details, and meeting materials.
+    longDescriptionEn: `<h3>Double-sided Flyers for Enhanced Information Delivery</h3>
+<p>ZprintPro Double-sided Flyers are designed for businesses and organizations that need to communicate extensive information efficiently. With full-color duplex printing on 157g glossy or 128g matte paper, these flyers double your content capacity without increasing the distribution footprint. The front side is optimized for attention-grabbing visuals, while the back provides detailed information, ensuring your message is comprehensive and engaging.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Paper Weight</th>
+      <th class="p-2 text-center">Coating</th>
+      <th class="p-2 text-center">Durability</th>
+      <th class="p-2 text-center">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">157g Glossy</td><td class="p-2 text-center">Glossy</td><td class="p-2 text-center">★★★</td><td class="p-2">Product catalogs, event details</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">128g Matte</td><td class="p-2 text-center">Matte</td><td class="p-2 text-center">★★★★</td><td class="p-2">Service introductions, meeting materials</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>ZprintPro employs advanced 4-color duplex offset printing to ensure high-quality, vibrant images and text. Our Heidelberg presses guarantee front-to-back registration precision within ±0.5mm, ensuring perfect alignment. Optional lamination is available to enhance durability and appearance.</p>
+
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">A4 (210×297mm)</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$0.50</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">A5 (148×210mm)</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$0.30</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases / Applications</h3>
+<p>Double-sided flyers are ideal for product launches, event promotions, and detailed service overviews. They are perfect for businesses that need to convey comprehensive information, such as real estate agencies, educational institutions, and event organizers.</p>
+
+<h3>Quality, Compliance, and Global Reach</h3>
+<p>ZprintPro ensures top-notch quality with FSC-certified paper and ISO 9001 manufacturing standards. Our ISO 12647 color management guarantees accurate color reproduction. With DHL Express global shipping, your flyers will reach international destinations within 2-4 days. Get a 30-second AI quote with no signup required.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
 <details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners.</p></details>
+<details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, ZprintPro offers DHL Express global shipping with delivery within 2-4 days.</p></details>
+<details class="my-2"><summary><strong>How do you ensure quality?</strong></summary><p>ZprintPro maintains quality with FSC-certified paper, ISO 9001 manufacturing, and ISO 12647 color management. We also offer free digital color proofing before production.</p></details>`,
     longDescriptionJa: `両面チラシをZprintProでご注文。157gコート紙+4色両面オフセット印刷で前後の套印精度±0.5mm以内。表面は注目を集め裏面は詳細情報を提供。情報容量2倍。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -5396,18 +5578,56 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro Folded Leaflets use 157g or 200g glossy paper with bi-fold or tri-fold designs. Bi-fold opens to A4 (210×297mm); tri-fold is A4 or DL (99×210mm). Creases are scored for flat, rebound-resistant folding. Ideal for product catalogs, service introductions, menus, and travel brochures. Optional lamination protects folded panels.
+    longDescriptionEn: `<h3>Folded Leaflets for Comprehensive Information Presentation</h3>
+<p>ZprintPro Folded Leaflets are perfect for businesses that need to present detailed information in a compact format. Available in bi-fold or tri-fold designs, these leaflets can be printed on 157g or 200g glossy paper. Bi-fold leaflets open to A4 size (210×297mm), while tri-fold leaflets are available in A4 or DL size (99×210mm). The creases are scored to ensure flat, rebound-resistant folding, making them ideal for product catalogs, service introductions, menus, and travel brochures.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Paper Weight</th>
+      <th class="p-2 text-center">Coating</th>
+      <th class="p-2 text-center">Durability</td>
+      <th class="p-2 text-center">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">157g Glossy</td><td class="p-2 text-center">Glossy</td><td class="p-2 text-center">★★★</td><td class="p-2">Product catalogs, service introductions</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">200g Glossy</td><td class="p-2 text-center">Glossy</td><td class="p-2 text-center">★★★★</td><td class="p-2">Menus, travel brochures</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>Our high-quality printing is achieved through 4-color offset printing, ensuring vibrant colors and sharp images. The creases are carefully scored to prevent cracking and ensure a smooth fold. Optional lamination is available to enhance durability and appearance.</p>
+
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">A4 (210×297mm)</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$0.60</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">DL (99×210mm)</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$0.40</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases / Applications</h3>
+<p>Folded leaflets are ideal for restaurants, travel agencies, and service providers that need to present detailed information in a compact format. They are perfect for menus, brochures, and promotional materials.</p>
+
+<h3>Quality, Compliance, and Global Reach</h3>
+<p>ZprintPro ensures top-notch quality with FSC-certified paper and ISO 9001 manufacturing standards. Our ISO 12647 color management guarantees accurate color reproduction. With DHL Express global shipping, your leaflets will reach international destinations within 2-4 days. Get a 30-second AI quote with no signup required.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
 <details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners.</p></details>
+<details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, ZprintPro offers DHL Express global shipping with delivery within 2-4 days.</p></details>
+<details class="my-2"><summary><strong>How do you ensure quality?</strong></summary><p>ZprintPro maintains quality with FSC-certified paper, ISO 9001 manufacturing, and ISO 12647 color management. We also offer free digital color proofing before production.</p></details>`,
     longDescriptionJa: `折りたたみパンフレットをZprintProでご注文。157g/200gコート紙+二つ折りまたは三つ折りデザイン+圧線処理で平らに折れる。製品カタログ・サービス紹介・メニュー・旅行パンフレット様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -5545,18 +5765,56 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro Thick Paper Flyers use 200g or 250g premium glossy paper with 4-color offset printing. High rigidity and substantial texture resist creasing and curling. Thick flyers convey weight and quality—ideal for premium product launches, property brochures, auto shows, and luxury brand events. Optional lamination further enhances durability and texture.
+    longDescriptionEn: `<h3>Thick Paper Flyers for Premium Quality</h3>
+<p>ZprintPro Thick Paper Flyers are designed for businesses that require a high-quality, durable flyer. Using 200g or 250g premium glossy paper, these flyers offer high rigidity and a substantial texture that resists creasing and curling. The substantial weight and quality make them ideal for premium product launches, property brochures, auto shows, and luxury brand events. Optional lamination further enhances durability and texture.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Paper Weight</th>
+      <th class="p-2 text-center">Coating</th>
+      <th class="p-2 text-center">Durability</td>
+      <th class="p-2 text-center">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">200g Glossy</td><td class="p-2 text-center">Glossy</td><td class="p-2 text-center">★★★★</td><td class="p-2">Premium product launches, property brochures</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">250g Glossy</td><td class="p-2 text-center">Glossy</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Auto shows, luxury brand events</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>Our thick paper flyers are printed using 4-color offset printing, ensuring vibrant colors and sharp images. The high-quality paper and printing process make these flyers a standout choice for premium marketing materials. Optional lamination is available to enhance durability and appearance.</p>
+
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">A4 (210×297mm)</td><td class="p-2 text-center">100</td><td class="p-5 text-center">3-5 days</td><td class="p-2 text-center">$0.70</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">A5 (148×210mm)</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$0.50</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases / Applications</h3>
+<p>Thick paper flyers are ideal for businesses that want to make a premium impression. They are perfect for luxury brands, automotive companies, and real estate agencies that need to showcase high-quality products or services.</p>
+
+<h3>Quality, Compliance, and Global Reach</h3>
+<p>ZprintPro ensures top-notch quality with FSC-certified paper and ISO 9001 manufacturing standards. Our ISO 12647 color management guarantees accurate color reproduction. With DHL Express global shipping, your flyers will reach international destinations within 2-4 days. Get a 30-second AI quote with no signup required.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
 <details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners.</p></details>
+<details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, ZprintPro offers DHL Express global shipping with delivery within 2-4 days.</p></details>
+<details class="my-2"><summary><strong>How do you ensure quality?</strong></summary><p>ZprintPro maintains quality with FSC-certified paper, ISO 9001 manufacturing, and ISO 12647 color management. We also offer free digital color proofing before production.</p></details>`,
     longDescriptionJa: `厚紙チラシをZprintProでご注文。200g/250g高級コート紙+4色オフセット印刷で高い挺度と厚みのある質感を実現。重みのある配布物として高級製品発表・不動産・自動車展示会様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -5694,18 +5952,56 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro Eco Flyers use FSC-certified recycled paper with soy-based inks, showcasing corporate social responsibility and eco-branding. 100% recycled fiber with a natural, slightly textured feel. Ideal for environmental campaigns, NGO outreach, green product launches, and corporate ESG reports. Single or double-sided printing with special options like seed paper. Carbon footprint calculation and eco-certification labels available.
+    longDescriptionEn: `<h3>Eco Flyers for Environmentally Conscious Marketing</h3>
+<p>ZprintPro Eco Flyers are designed for businesses that prioritize sustainability and corporate responsibility. Using FSC-certified recycled paper and soy-based inks, these flyers are perfect for environmental campaigns, NGO outreach, green product launches, and corporate ESG reports. The 100% recycled fiber with a natural, slightly textured feel not only conveys your eco-friendly message but also aligns with your brand's commitment to sustainability.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Paper Weight</th>
+      <th class="p-2 text-center">Coating</th>
+      <th class="p-2 text-center">Durability</td>
+      <th class="p-2 text-center">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">100g Recycled</td><td class="p-2 text-center">Matte</td><td class="p-2 text-center">★★★</td><td class="p-2">Environmental campaigns, NGO outreach</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">120g Recycled</td><td class="p-2 text-center">Matte</td><td class="p-2 text-center">★★★★</td><td class="p-2">Green product launches, corporate ESG reports</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>Our eco flyers are printed using 4-color digital printing, which is more environmentally friendly than traditional offset printing. The use of soy-based inks further reduces the environmental impact. Optional seed paper is available for an additional eco-friendly touch.</p>
+
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">A5 (148×210mm)</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$0.40</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">A6 (105×148mm)</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$0.30</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases / Applications</h3>
+<p>Eco flyers are ideal for businesses that want to promote their environmental initiatives and commitment to sustainability. They are perfect for environmental NGOs, green product manufacturers, and companies that want to showcase their eco-friendly practices.</p>
+
+<h3>Quality, Compliance, and Global Reach</h3>
+<p>ZprintPro ensures top-notch quality with FSC-certified paper and ISO 9001 manufacturing standards. Our ISO 12647 color management guarantees accurate color reproduction. With DHL Express global shipping, your flyers will reach international destinations within 2-4 days. Get a 30-second AI quote with no signup required.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
 <details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners.</p></details>
+<details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, ZprintPro offers DHL Express global shipping with delivery within 2-4 days.</p></details>
+<details class="my-2"><summary><strong>How do you ensure quality?</strong></summary><p>ZprintPro maintains quality with FSC-certified paper, ISO 9001 manufacturing, and ISO 12647 color management. We also offer free digital color proofing before production.</p></details>`,
     longDescriptionJa: `エコチラシをZprintProでご注文。FSC認証リサイクル紙+大豆インクで100%再生繊維の自然なテクスチャー。環境キャンペーン・NGOアウトリーチ・グリーンプロダクトローンチ・企業ESGレポート様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -5846,18 +6142,56 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro Same-day Flyers use 157g glossy paper with high-speed 4-color digital printing— from file receipt to shipment in as fast as 4 hours. Ideal for emergency events, flash sales, press releases, and last-minute meeting materials. Dedicated rush handling ensures priority processing with same-day courier or personal delivery. Despite the rush, we maintain color calibration and bleed checks for uncompromised quality.
+    longDescriptionEn: `<h3>Same-day Flyers for Urgent Marketing Needs</h3>
+<p>ZprintPro Same-day Flyers are designed for businesses that need to meet urgent deadlines. Using 157g glossy paper and high-speed 4-color digital printing, these flyers can be printed and shipped in as fast as 4 hours from the time the file is received. This makes them ideal for emergency events, flash sales, press releases, and last-minute meeting materials. Our dedicated rush handling ensures priority processing and same-day courier or personal delivery. Despite the rush, we maintain color calibration and bleed checks for uncompromised quality.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Paper Weight</th>
+      <th class="p-2 text-center">Coating</th>
+      <th class="p-2 text-center">Durability</td>
+      <th class="p-2 text-center">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">157g Glossy</td><td class="p-2 text-center">Glossy</td><td class="p-2 text-center">★★★</td><td class="p-2">Emergency events, flash sales</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">120g Glossy</td><td class="p-2 text-center">Glossy</td><td class="p-2 text-center">★★★★</td><td class="p-2">Press releases, last-minute meeting materials</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>Our same-day flyers are printed using high-speed 4-color digital printing, which allows for rapid production without compromising on quality. The paper is coated to ensure vibrant colors and sharp images. Despite the rush, we maintain color calibration and bleed checks for uncompromised quality.</p>
+
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">A4 (210×297mm)</td><td class="p-2 text-center">100</td><td class="p-2 text-center">4 hours</td><td class="p-2 text-center">$1.00</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">A5 (148×210mm)</td><td class="p-2 text-center">100</td><td class="p-2 text-center">4 hours</td><td class="p-2 text-center">$0.70</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases / Applications</h3>
+<p>Same-day flyers are perfect for businesses that need to respond quickly to market demands or urgent situations. They are ideal for emergency events, flash sales, press releases, and last-minute meeting materials.</p>
+
+<h3>Quality, Compliance, and Global Reach</h3>
+<p>ZprintPro ensures top-notch quality with FSC-certified paper and ISO 9001 manufacturing standards. Our ISO 12647 color management guarantees accurate color reproduction. With DHL Express global shipping, your flyers will reach international destinations within 2-4 days. Get a 30-second AI quote with no signup required.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
 <details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<details class="my-5"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners.</p></details>
+<details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, ZprintPro offers DHL Express global shipping with delivery within 2-4 days.</p></details>
+<details class="my-2"><summary><strong>How do you ensure quality?</strong></summary><p>ZprintPro maintains quality with FSC-certified paper, ISO 9001 manufacturing, and ISO 12647 color management. We also offer free digital color proofing before production.</p></details>`,
     longDescriptionJa: `短納期チラシをZprintProでご注文。157gコート紙+高速4色デジタル印刷でデータ受付から発送まで最短4時間。緊急イベント・フラッシュセール・プレスリリース・直前会議資料様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -7433,18 +7767,58 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `Cosmetic cartons must balance regulatory panels, bottle shock protection, and counter aesthetics. Outer shells often use stiff white card with matte or soft-touch film; inserts can be EVA cavities, molded pulp, or PET blisters to secure glass and palettes. Logos gain finesse via hairline foil or spot UV. Terms align with category content: packaging boxes, white card, lamination, foil stamping, inserts. Reserve space for ingredients and batch codes; prototype drop and rub tests before mass run.<h3>Cosmetic Packaging Box Comparison Scorecard</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">Box Type</th><th class="p-2 text-center">Shock Protection</th><th class="p-2 text-center">Display Impact</th><th class="p-2 text-center">Cost</th><th class="p-2 text-left">Best For</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">Cosmetic Box (with insert)</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Skincare, premium makeup</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">Folding Carton</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Budget cosmetics, trial sets</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">Rigid Gift Box</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★</td><td class="p-2">Luxury brands, limited editions</td></tr></tbody></table>
+    longDescriptionEn: `<h3>Cosmetic Boxes with Customizable Inner Tray</h3>
+<p>ZprintPro Cosmetic Boxes are specially designed for cosmetics, featuring a customizable inner tray to securely hold bottles, palettes, and other products. The outer shell is crafted from stiff white card with matte or soft-touch film, providing a premium look and feel. The inner tray can be made from EVA foam, molded pulp, or PET blisters to ensure shock protection and stability.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Material</th>
+      <th class="p-2 text-center">Rigidity</th>
+      <th class="p-2 text-center">Shock Protection</th>
+      <th class="p-2 text-center">Cost</th>
+      <th class="p-2 text-left">Best For</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">Cosmetic Box (with insert)</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Skincare, premium makeup</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Folding Carton</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Budget cosmetics, trial sets</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Rigid Gift Box</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">Luxury cosmetics, gift sets</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>Our printing technology ensures high-quality, vibrant prints on the outer shell of the cosmetic boxes. We offer a variety of finishing options, including matte or soft-touch film for a premium feel, and hairline foil or spot UV for a luxurious touch. The inner tray can be customized with different materials and colors to match the brand's aesthetic.</p>
 
-<h3>Frequently Asked Questions</h3>
-<details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<h3>Size, Format, and MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size (mm)</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">100x100x30</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$3.00</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">150x200x40</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$5.00</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases and Applications</h3>
+<p>ZprintPro Cosmetic Boxes are perfect for:
+<ul>
+  <li>Skincare and premium makeup brands looking for a customizable packaging solution.</li>
+  <li>Luxury cosmetics and gift sets for a luxurious, high-end look.</li>
+  <li>Budget cosmetics and trial sets for cost-effective packaging.</li>
+  <li>Promotional events and product launches.</li>
+</ul>
+</p>
+
+<h3>Quality, Compliance, and Shipping</h3>
+<p>ZprintPro is committed to quality and compliance, with FSC-certified materials, ISO 9001 manufacturing standards, and ISO 12647 color management. We offer DHL Express global shipping with delivery in 2-4 days. Get an instant 30-second AI quote with no signup required.</p>`,
     longDescriptionJa: `化妝品パッケージボックスをZprintProでご注文。専用内装（EVAフォーム/サテン生地）+箔押し・スポットUV対応の化粧品OEMパッケージです。スキンケア・メイクアップ・香水・フレグランス・美容EC・OEMメーカー向けに、ブランドの世界観を表現する専用設計で、少量OEM・テスト販売から量産・百貨店展開まで対応可能です。【専用サイズ】30ml/50ml/100ml/200mlボトル対応、表面はアート紙/クラフト/メタル調/皮革調から選択。【構造】差込蓋・天地蓋・引出し式・観音開きの4種類から選択可能、【内装オプション】EVAフォーム成形（ボトル形状に合わせてカット）、サテン生地（黒/白/ピンク/ベージュ）、ブリスタートレイ（複数アイテム収納）。【表面仕上げ】箔押し（金/銀+特殊色）、スポットUV（ロゴ・装飾）、エンボス/デボス、ラグジュアリー系のコスメブランドで多数の実績があります。【コンプライアンス】薬機法準拠の全成分表示スペース設計をサポート、業界基準（縦1.5mm以上の文字サイズ等）を満たすレイアウトをご提案。リサイクルマーク・材質表示対応。【納期】30個から対応、最短10営業日で出荷。内装カスタマイズや特殊加工を含む場合は14-21営業日。お急ぎの場合は特急プラン（有償）もございます。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -8528,18 +8902,56 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro Foil Red Packets use 120g premium red paper with traditional foil stamping. Gold patterns shine brilliantly—festive and elegant. Available in gold, silver, and rose gold with designs including auspicious patterns, fortune characters, zodiac signs, and corporate logos. Ideal for corporate distribution, holiday marketing, wedding favors, and business New Year greetings.
+    longDescriptionEn: `<h3>Premium Foil Red Packets for Festive Elegance</h3>
+<p>ZprintPro Foil Red Packets are designed for businesses and individuals seeking a touch of luxury and tradition. With traditional foil stamping in gold, silver, or rose gold, these packets feature auspicious patterns, zodiac signs, and customizable corporate logos. Ideal for corporate gifting, holiday promotions, weddings, and New Year celebrations, these packets convey a sense of festivity and sophistication.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Weight</th>
+      <th class="p-2 text-center">Coating</th>
+      <th class="p-2 text-center">Durability</th>
+      <th class="p-2 text-center">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">120g Premium</td><td class="p-2 text-center">Foil Stamping</td><td class="p-2 text-center">★★★★</td><td class="p-2">Corporate events, weddings</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">150g Specialty</td><td class="p-2 text-center">Gloss/Matte</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Luxury brands, VIP clients</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>ZprintPro utilizes state-of-the-art Heidelberg 4-color offset printing to ensure vibrant colors and sharp details. Foil stamping is available in gold, silver, and rose gold, with optional embossing for a tactile, luxurious finish. Our ISO 12647 color management ensures consistent, high-quality results.</p>
+
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom</td><td class="p-2 text-center">200</td><td class="p-2 text-center">5-7 days</td><td class="p-2 text-center">$$$</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases / Applications</h3>
+<p>Ideal for corporate gifting, holiday promotions, weddings, and New Year celebrations. Perfect for businesses looking to make a lasting impression with a touch of luxury and tradition.</p>
+
+<h3>Quality, Compliance, NAP Closing</h3>
+<p>ZprintPro Foil Red Packets are FSC-certified, ensuring sustainable sourcing. Our ISO 9001 quality management system guarantees top-notch production standards. With DHL Express global shipping, your orders will arrive in 2-4 days. Get an instant 30-second AI quote with no signup required.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
+<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting.</p></details>
+<details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, we offer DHL Express global shipping, delivering in 2-4 days.</p></details>
+<details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>ZprintPro is FSC-certified and ISO 9001 quality certified.</p></details>`,
     longDescriptionJa: `
 <h3>紙質材質対比</h3>
 <p>箔押し紅包は 4 種類の紙質から選択、祝福シーンと予算に応じて最適化。</p>
@@ -8791,18 +9203,56 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro Embossed Red Packets use 150g premium red paper with embossing that creates dimensional texture at 0.3–0.5mm depth. The tactile layering conveys brand sincerity and luxury. Ideal for VIP clients, premium gifting, private banking, and luxury brands. Can be paired with foil stamping for enhanced visual and tactile experience. Free sampling to confirm embossing effect.
+    longDescriptionEn: `<h3>Luxurious Embossed Red Packets for VIP Clients</h3>
+<p>ZprintPro Embossed Red Packets are crafted for those who appreciate the finer things in life. With embossing that creates a dimensional texture at 0.3–0.5mm depth, these packets convey a sense of luxury and sincerity. Ideal for VIP clients, premium gifting, private banking, and luxury brands, these packets can be paired with foil stamping for an enhanced visual and tactile experience. Free sampling is available to confirm the embossing effect.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Weight</th>
+      <th class="p-2 text-center">Coating</th>
+      <th class="p-2 text-center">Durability</th>
+      <th class="p-2 text-center">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">150g Premium</td><td class="p-2 text-center">Embossing</td><td class="p-2 text-center">★★★★★</td><td class="p-2">VIP clients, luxury brands</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">200g Specialty</td><td class="p-2 text-center">Gloss/Matte</td><td class="p-2 text-center">★★★★★</td><td class="p-2">High-end events, executive suites</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>Our embossing process creates a tactile, dimensional effect that enhances the visual appeal of the packets. ZprintPro uses Heidelberg 4-color offset printing for vibrant colors and sharp details. Optional foil stamping in gold, silver, or rose gold is available for an added touch of luxury.</p>
+
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom</td><td class="p-2 text-center">200</td><td class="p-2 text-center">5-7 days</td><td class="p-2 text-center">$$$</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases / Applications</h3>
+<p>Perfect for VIP clients, premium gifting, private banking, and luxury brands. Ideal for high-end events and executive suites.</p>
+
+<h3>Quality, Compliance, NAP Closing</h3>
+<p>ZprintPro Embossed Red Packets are FSC-certified, ensuring sustainable sourcing. Our ISO 9001 quality management system guarantees top-notch production standards. With DHL Express global shipping, your orders will arrive in 2-4 days. Get an instant 30-second AI quote with no signup required.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
+<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting.</p></details>
+<details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, we offer DHL Express global shipping, delivering in 2-4 days.</p></details>
+<details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>ZprintPro is FSC-certified and ISO 9001 quality certified.</p></details>`,
     longDescriptionJa: `エンボスポチ袋をZprintProでご注文。150g高級赤紙+エンボス加工で0.3-0.5mmの深さで立体的な触感。指で撫でると層の変化を感じブランド誠意と高級感を伝える。VIP・高級ギフト・プライベートバンク様向け。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -8945,18 +9395,56 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro Custom Red Packets use 120g–150g red or specialty colored paper with fully custom designs—corporate logos, brand colors, exclusive patterns, and greetings. Ideal for annual meetings, brand events, member rewards, and holiday marketing. One-stop service from design to print with optional foil stamping, spot UV, or debossing. Free die-cut and color proofing.
+    longDescriptionEn: `<h3>Fully Custom Red Packets for Brand Enhancement</h3>
+<p>ZprintPro Custom Red Packets are designed for businesses looking to strengthen their brand impression. With fully custom designs featuring corporate logos, brand colors, exclusive patterns, and personalized greetings, these packets are ideal for annual meetings, brand events, member rewards, and holiday marketing. Our one-stop service from design to print includes optional foil stamping, spot UV, or debossing. Free die-cut and color proofing are available to ensure the highest quality.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Weight</th>
+      <th class="p-2 text-center">Coating</th>
+      <th class="p-2 text-center">Durability</th>
+      <th class="p-2 text-center">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">120g Premium</td><td class="p-2 text-center">Custom Design</td><td class="p-2 text-center">★★★★</td><td class="p-2">Corporate events, brand marketing</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">150g Specialty</td><td class="p-2 text-center">Gloss/Matte</td><td class="p-2 text-center">★★★★★</td><td class="p-2">VIP clients, premium gifting</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>ZprintPro utilizes advanced printing techniques to bring your custom designs to life. Our Heidelberg 4-color offset printing ensures vibrant colors and sharp details. Optional foil stamping, spot UV, or debossing are available for a personalized touch.</p>
+
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom</td><td class="p-2 text-center">200</td><td class="p-2 text-center">5-7 days</td><td class="p-2 text-center">$$$</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases / Applications</h3>
+<p>Perfect for corporate events, brand marketing, VIP clients, and premium gifting. Ideal for businesses looking to make a lasting impression with personalized designs.</p>
+
+<h3>Quality, Compliance, NAP Closing</h3>
+<p>ZprintPro Custom Red Packets are FSC-certified, ensuring sustainable sourcing. Our ISO 9001 quality management system guarantees top-notch production standards. With DHL Express global shipping, your orders will arrive in 2-4 days. Get an instant 30-second AI quote with no signup required.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
+<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, debossing, die-cutting.</p></details>
+<details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, we offer DHL Express global shipping, delivering in 2-4 days.</p></details>
+<details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>ZprintPro is FSC-certified and ISO 9001 quality certified.</p></details>`,
     longDescriptionJa: `カスタムポチ袋をZprintProでご注文。120g-150g赤または特殊色紙+完全カスタマイズで企業ロゴ・ブランドカラー・専用柄・メッセージを印刷。年会・ブランドイベント・会員特典・ホリデーマーケティング様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -9099,18 +9587,56 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro Cartoon Red Packets use 120g glossy or eco paper with 4-color digital printing—vibrant colors and lively patterns. Ideal for family brands, children's products, educational institutions, and festive family parties. Can feature cartoon characters, zodiac animals, cute designs, and brand mascots. Free design templates with optional foil stamping or spot UV.
+    longDescriptionEn: `<h3>Cartoon Red Packets for Festive Fun</h3>
+<p>ZprintPro Cartoon Red Packets are perfect for families, children's products, educational institutions, and festive family parties. With 4-color digital printing, these packets feature vibrant colors and lively patterns, including cartoon characters, zodiac animals, cute designs, and brand mascots. Optional foil stamping or spot UV can be added for an extra touch of flair. Free design templates are available to help you create the perfect packet.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Weight</th>
+      <th class="p-2 text-center">Coating</th>
+      <th class="p-2 text-center">Durability</td>
+      <th class="p-2 text-center">Best For</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">120g Premium</td><td class="p-2 text-center">Glossy/Eco</td><td class="p-2 text-center">★★★★</td><td class="p-2">Family brands, children's products</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">150g Specialty</td><td class="p-2 text-center">Matte</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Educational institutions, family parties</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>ZprintPro uses 4-color digital printing to ensure vibrant colors and sharp details. Optional foil stamping or spot UV can be added for a personalized touch. Our ISO 12647 color management ensures consistent, high-quality results.</p>
+
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</td>
+      <th class="p-2 text-center">Unit Price</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom</td><td class="p-2 text-center">200</td><td class="p-2 text-center">5-7 days</td><td class="p-2 text-center">$$$</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases / Applications</h3>
+<p>Ideal for family brands, children's products, educational institutions, and festive family parties. Perfect for businesses looking to add a fun, festive touch to their marketing efforts.</p>
+
+<h3>Quality, Compliance, NAP Closing</h3>
+<p>ZprintPro Cartoon Red Packets are FSC-certified, ensuring sustainable sourcing. Our ISO 9001 quality management system guarantees top-notch production standards. With DHL Express global shipping, your orders will arrive in 2-4 days. Get an instant 30-second AI quote with no signup required.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
+<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, debossing, die-cutting.</p></details>
+<details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, we offer DHL Express global shipping, delivering in 2-4 days.</p></details>
+<details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>ZprintPro is FSC-certified and ISO 9001 quality certified.</p></details>`,
     longDescriptionJa: `キャラクターポチ袋をZprintProでご注文。120gコート紙または環境配慮紙+4色デジタル印刷で鮮やかな色彩と楽しい柄。ファミリーブランド・子供向け製品・教育機関・祝祭ファミリーパーティー様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -9251,18 +9777,56 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro Eco Red Packets use FSC-certified recycled or seed paper with soy-based inks—fully biodegradable or plantable to grow flowers, demonstrating corporate environmental commitment. Ideal for eco-brands, NGOs, green enterprises, and sustainability-focused organizations. Corporate logos and eco-slogans with carbon footprint calculation available.
+    longDescriptionEn: `<h3>Eco-Friendly Red Packets for Sustainable Development</h3>
+<p>ZprintPro Eco Red Packets are designed for businesses committed to sustainability. Made from FSC-certified recycled or seed paper and printed with soy-based inks, these packets are fully biodegradable or plantable to grow flowers, demonstrating corporate environmental commitment. Ideal for eco-brands, NGOs, green enterprises, and sustainability-focused organizations, these packets can feature corporate logos and eco-slogans with carbon footprint calculation available.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Weight</th>
+      <th class="p-2 text-center">Coating</th>
+      <th class="p-2 text-center">Durability</td>
+      <th class="p-2 text-center">Best For</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">120g Premium</td><td class="p-2 text-center">Eco-friendly</td><td class="p-2 text-center">★★★★</td><td class="p-2">Eco-brands, NGOs, green enterprises</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">150g Specialty</td><td class="p-2 text-center">Matte</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Sustainability-focused organizations</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>ZprintPro uses advanced printing techniques to ensure the highest quality eco-friendly red packets. Our Heidelberg 4-color offset printing ensures vibrant colors and sharp details. Optional foil stamping, spot UV, or embossing are available for a personalized touch.</p>
+
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</td>
+      <th class="p-2 text-center">Unit Price</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom</td><td class="p-2 text-center">200</td><td class="p-2 text-center">5-7 days</td><td class="p-2 text-center">$$$</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases / Applications</h3>
+<p>Perfect for eco-brands, NGOs, green enterprises, and sustainability-focused organizations. Ideal for businesses looking to demonstrate their environmental commitment.</p>
+
+<h3>Quality, Compliance, NAP Closing</h3>
+<p>ZprintPro Eco Red Packets are FSC-certified, ensuring sustainable sourcing. Our ISO 9001 quality management system guarantees top-notch production standards. With DHL Express global shipping, your orders will arrive in 2-4 days. Get an instant 30-second AI quote with no signup required.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
+<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting.</p></details>
+<details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, we offer DHL Express global shipping, delivering in 2-4 days.</p></details>
+<details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>ZprintPro is FSC-certified and ISO 9001 quality certified.</p></details>`,
     longDescriptionJa: `エコーポチ袋をZprintProでご注文。FSC認証リサイクル紙または種子紙+大豆インクで完全に生分解性または植えて花を育てられる。環境ブランド・NGO・グリーン企業・持続可能性に注力する機関様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -9405,18 +9969,56 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro Large Red Packets use 150g–200g premium red paper, 30%–50% larger than standard size with greater capacity for thicker cash or gift cards. Ideal for senior corporate distribution, wedding gifts, birthday banquets, and major holidays. Can feature foil stamping, embossing, or spot UV for enhanced prestige.
+    longDescriptionEn: `<h3>Large Red Packets for Maximum Capacity</h3>
+<p>ZprintPro Large Red Packets are designed for businesses and individuals who need to hold more cash or gift cards. With a size 30%-50% larger than standard, these packets are ideal for senior corporate distribution, wedding gifts, birthday banquets, and major holidays. Optional foil stamping, embossing, or spot UV can be added for enhanced prestige.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Weight</th>
+      <th class="p-2 text-center">Coating</th>
+      <th class="p-2 text-center">Durability</td>
+      <th class="p-2 text-center">Best For</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">150g Premium</td><td class="p-2 text-center">Glossy/Matte</td><td class="p-2 text-center">★★★★</td><td class="p-2">Corporate events, weddings</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">200g Specialty</td><td class="p-2 text-center">Matte</td><td class="p-2 text-center">★★★★★</td><td class="p-2">VIP clients, premium gifting</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>ZprintPro uses Heidelberg 4-color offset printing to ensure vibrant colors and sharp details. Optional foil stamping, embossing, or spot UV can be added for a personalized touch. Our ISO 12647 color management ensures consistent, high-quality results.</p>
+
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</td>
+      <th class="p-2 text-center">Unit Price</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">Large</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom</td><td class="p-2 text-center">200</td><td class="p-2 text-center">5-7 days</td><td class="p-2 text-center">$$$</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases / Applications</h3>
+<p>Ideal for senior corporate distribution, wedding gifts, birthday banquets, and major holidays. Perfect for businesses and individuals who need to hold more cash or gift cards.</p>
+
+<h3>Quality, Compliance, NAP Closing</h3>
+<p>ZprintPro Large Red Packets are FSC-certified, ensuring sustainable sourcing. Our ISO 9001 quality management system guarantees top-notch production standards. With DHL Express global shipping, your orders will arrive in 2-4 days. Get an instant 30-second AI quote with no signup required.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
+<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitching.</p></details>
+<details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, we offer DHL Express global shipping, delivering in 2-4 days.</p></details>
+<details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>ZprintPro is FSC-certified and ISO 9001 quality certified.</p></details>`,
     longDescriptionJa: `大判ポチ袋をZprintProでご注文。150g-200g高級赤紙+標準サイズより30-50%大きく厚い現金やギフトカードが入る。企業上層部配布・結婚式ギフト・寿宴・主要な祝日様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -9560,18 +10162,62 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro Wall Calendars use 250g–300g glossy or matte paper with 4-color offset printing—one month per page with crisp text and vibrant images. The back can feature corporate info, coupons, or contact details—practical and promotional. Ideal for corporate gifts, client rewards, property marketing, and home use. Metal ring binding for smooth page turning.
+    longDescriptionEn: `<h3>Premium Wall Calendars for Corporate and Home Use</h3>
+<p>ZprintPro Wall Calendars are designed for both professional and personal environments, offering a blend of functionality and aesthetic appeal. Available in standard A3 or A2 sizes, these 13-page calendars are perfect for home, office, or retail spaces. With options for glossy or matte paper, they ensure vibrant images and crisp text throughout the year.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Weight</th>
+      <th class="p-2 text-center">Coating</th>
+      <th class="p-2 text-center">Durability</th>
+      <th class="p-2 text-center">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">250g Glossy</td><td class="p-2 text-center">Glossy</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">Offices, retail</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">300g Matte</td><td class="p-2 text-center">Matte</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">Home use, corporate gifts</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>ZprintPro utilizes 4-color offset printing with ISO 12647 color management to ensure high-quality, consistent results. Our state-of-the-art Heidelberg presses deliver exceptional color saturation and sharpness. Optional metal ring binding provides smooth page turning and a professional finish.</p>
+
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">A3</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A2</td><td class="p-2 text-center">25</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$$</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases & Applications</h3>
+<ul>
+  <li>Corporate gifts for clients and partners</li>
+  <li>Home or office organization and decoration</li>
+  
+  <li>Retail displays for promotions and events</li>
+  <li>Educational tools for schools and training centers</li>
+</ul>
+
+<h3>Quality, Compliance, and Shipping</h3>
+<p>ZprintPro Wall Calendars are crafted with FSC-certified paper and manufactured under ISO 9001 quality standards. We offer DHL Express global shipping, ensuring your calendars arrive in 2-4 days. Our 30-second AI quote system provides instant pricing, and our team is committed to delivering exceptional quality and service.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. Rush orders can be completed same-day with a small expedite fee.</p></details>
+<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, and more. Finishes: 4-color CMYK offset printing, metal ring binding, and optional spot UV.</p></details>
+<details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, we offer DHL Express global shipping with delivery in 2-4 days.</p></details>
+<details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>Our paper is FSC-certified, and we are ISO 9001 quality certified.</p></details>`,
     longDescriptionJa: `壁掛けカレンダーをZprintProでご注文。250g-300gコート紙またはマット紙+4色オフセット印刷+1月1ページ+裏面企業情報。金属リング綴じでページめくりがスムーズ。企業ギフト・顧客特典・不動産マーケティング・家庭用に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -9696,18 +10342,62 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro Desk Calendars use 200g–250g glossy or card paper with triangular stand design for stable desktop placement. Monthly or quarterly pages with beautiful images on the front and memo space on the back. Ideal for office desks, cashier counters, and corporate gifts. Free stand structure design and layout provided.
+    longDescriptionEn: `<h3>Stylish Desk Calendars for Professional Environments</h3>
+<p>ZprintPro Desk Calendars are designed to enhance your workspace with their elegant triangular stand design. These calendars are perfect for office desks, reception areas, and corporate gift-giving. Available in both monthly and quarterly formats, they offer ample space for notes and reminders.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Weight</th>
+      <th class="p-2 text-center">Coating</th>
+      <th class="p-2 text-center">Durability</th>
+      <th class="p-2 text-center">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">200g Glossy</td><td class="p-2 text-center">Glossy</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">Offices, retail</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">250g Card</td><td class="p-2 text-center">Matte</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">Corporate environments</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>Our desk calendars are printed using 4-color offset printing with ISO 12647 color management for vibrant, long-lasting images. The triangular stand is designed for stability and easy placement on any flat surface. Optional spot UV or foil stamping can add a touch of luxury to your design.</p>
+
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$</td></tr>
+    
+  </tbody>
+</table>
+
+<h3>Use Cases & Applications</h3>
+<ul>
+  <li>Office desk organization and decoration</li>
+  <li>Reception areas for visitor information</li>
+  
+  <li>Corporate gifts for employees and clients</li>
+  <li>Retail displays for promotional events</li>
+</ul>
+
+<h3>Quality, Compliance, and Shipping</h3>
+<p>ZprintPro Desk Calendars are crafted with FSC-certified paper and manufactured under ISO 9001 quality standards. We offer DHL Express global shipping, ensuring your calendars arrive in 2-4 days. Our 30-second AI quote system provides instant pricing, and our team is dedicated to delivering exceptional quality and service.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. Rush orders can be completed same-day with a small expedite fee.</p></details>
+<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, and more. Finishes: 4-color CMYK offset printing, triangular stand design, and optional spot UV.</p></details>
+<details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, we offer DHL Express global shipping with delivery in 2-4 days.</p></details>
+<details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>Our paper is FSC-certified, and we are ISO 9001 quality certified.</p></details>`,
     longDescriptionJa: `卓上カレンダーをZprintProでご注文。200g-250gコート紙またはカード紙+三角スタンド設計でデスクにしっかりと立てられる。月ごとまたは四半期ごとページ。オフィスデスク・レジカウンター・企業ギフト様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -9841,18 +10531,64 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro Custom Calendars use 250g–300g art or glossy paper with fully custom designs—corporate logos, brand stories, product images, and exclusive holiday markers. Ideal for year-end corporate gifts, VIP client rewards, brand memorabilia, and family customization. One-stop service from design to print with optional foil stamping or spot UV.
+    longDescriptionEn: `<h3>Exclusive Custom Calendars for Brand Promotion</h3>
+<p>ZprintPro Custom Calendars offer a unique opportunity to showcase your brand with fully personalized designs. Whether it's corporate logos, brand stories, or product images, each page can be tailored to reflect your company's identity. Ideal for year-end corporate gifts, VIP client rewards, and brand memorabilia, these calendars are a powerful marketing tool.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Weight</th>
+      <th class="p-2 text-center">Coating</th>
+      <th class="p-2 text-center">Durability</th>
+      <th class="p-2 text-center">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">250g Art Paper</td><td class="p-2 text-center">Glossy</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">Corporate branding, VIP gifts</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">300g Glossy</td><td class="p-2 text-center">Glossy</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">High-end promotions</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>Our custom calendars are printed using 4-color offset printing with ISO 12647 color management to ensure your designs are reproduced with the highest fidelity. Optional foil stamping or spot UV can be added to enhance the visual appeal and durability of your calendars.</p>
+
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">A3</td><td class="p-2 text-center">25</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$$</td></tr>
+    
+  </tbody>
+</table>
+
+<h3>Use Cases & Applications</h3>
+<ul>
+  
+  <li>Year-end corporate gifts for employees and clients</li>
+  <li>VIP client rewards and incentives</li>
+  <li>Brand memorabilia and promotional items</li>
+  <li>Family or personal customization for special occasions</li>
+</ul>
+
+<h3>Quality, Compliance, and Shipping</h3>
+<p>ZprintPro Custom Calendars are crafted with FSC-certified paper and manufactured under ISO 9001 quality standards. We offer DHL Express global shipping, ensuring your calendars arrive in 2-4 days. Our 30-second AI quote system provides instant pricing, and our team is committed to delivering exceptional quality and service.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. Rush orders can be completed same-day with a small expedite fee.</p></details>
+<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, and more. Finishes: 4-color CMYK offset printing, foil stamping, and spot UV.</p></details>
+<details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, we offer DHL Express global shipping with delivery in 2-4 days.</p></details>
+<details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>Our paper is FSC-certified, and we are ISO 9001 quality certified.</p></details>`,
     longDescriptionJa: `カスタムカレンダーをZprintProでご注文。250g-300gアート紙またはコート紙+完全カスタマイズで企業ロゴ・ブランドストーリー・製品画像・専用祝日マーカーを印刷。年末企業ギフト・VIP顧客特典・ブランド記念品・家族カスタマイズ様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -9990,18 +10726,74 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro Mini Calendars use 150g–200g glossy or card paper in compact, pocket-sized formats—perfect for wallets, pockets, or phone cases. Each page shows one month with corporate info or promo codes on the back. Ideal for FMCG brands, restaurants, cafes, and member gifts. Free mini-size layout and cutting design.
+    longDescriptionEn: `<h3>Compact Mini Calendars for Everyday Use</h3>
+<p>ZprintPro Mini Calendars are designed for convenience and portability, making them ideal for everyday use. With dimensions small enough to fit in a wallet, pocket, or phone case, these calendars are perfect for busy individuals who need quick access to their schedule. Available in glossy or card paper, they offer durability and style.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      
+      <th class="p-2 text-left">Weight</th>
+      <th class="p-2 text-center">Coating</th>
+      <th class="p-2 text-center">Durability</th>
+      <th class="p-2 text-center">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr class="border-b"><td class="p-2 font-medium">150g Glossy</td><td class="p-2 text-center">Glossy</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">Everyday use, quick access</td></tr>
+    
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">200g Card</td><td class="p-2 text-center">Matte</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">Professional environments</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>Our mini calendars are printed using 4-color offset printing with ISO 12647 color management to ensure high-quality images and text. The compact design is complemented by a durable finish that resists wear and tear. Optional rounded corners can be added for a sleek, modern look.</p>
+
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  
+  <thead>
+    
+    <tr class="bg-[#2873F5] text-white">
+      
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    
+    <tr class="border-b"><td class="p-2 font-medium">Standard</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$</td></tr>
+    
+  </tbody>
+</table>
+
+<h3>Use Cases & Applications</h3>
+<ul>
+  
+  <li>Quick reference for appointments and meetings</li>
+  
+  <li>Promotional giveaways for FMCG brands, restaurants, and cafes</li>
+  
+  <li>Member gifts for clubs and organizations</li>
+  
+  <li>Personal organization and planning</li>
+</ul>
+
+<h3>Quality, Compliance, and Shipping</h3>
+<p>ZprintPro Mini Calendars are crafted with FSC-certified paper and manufactured under ISO 9001 quality standards. We offer DHL Express global shipping, ensuring your calendars arrive in 2-4 days. Our 30-second AI quote system provides instant pricing, and our team is dedicated to delivering exceptional quality and service.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. Rush orders can be completed same-day with a small expedite fee.</p></details>
+<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, and more. Finishes: 4-color CMYK offset printing, rounded corners, and optional spot UV.</p></details>
+<details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, we offer DHL Express global shipping with delivery in 2-4 days.</p></details>
+<details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>Our paper is FSC-certified, and we are ISO 9001 quality certified.</p></details>`,
     longDescriptionJa: `ミニカレンダーをZprintProでご注文。150g-200gコート紙またはカード紙+コンパクトポケットサイズで財布・ポケット・スマホケースに入る。各ページ1か月+裏面企業情報やプロモーションコード。FMCGブランド・飲食店・カフェ・会員ギフト様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -10140,18 +10932,108 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro Photo Frame Calendars use 250g–300g glossy or photo paper with rigid cardboard frame stands for upright display on desks or shelves. Monthly pages with beautiful photos or illustrations on the front and memo space on the back. Ideal for home decor, office decoration, photography displays, and corporate gifts.
+    longDescriptionEn: `<h3>Innovative Photo Frame Calendars for Home and Office</h3>
+<p>ZprintPro Photo Frame Calendars combine the functionality of a calendar with the aesthetic appeal of a photo frame. With a rigid cardboard frame stand, these calendars are perfect for desks, shelves, or mantelpieces. The front features beautiful photos or illustrations, while the back offers memo space for notes and reminders. Ideal for home decor, office decoration, and photography displays.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  
+  <thead>
+    
+    <tr class="bg-[#2873F5] text-white">
+      
+      <th class="p-2 text-left">Weight</th>
+      
+      <th class="p-2 text-center">Coating</th>
+      
+      <th class="p-2 text-center">Durability</th>
+      
+      <th class="p-2 text-center">Best For</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    
+    <tr class="border-b"><td class="p-2 font-medium">250g Glossy</td>
+      
+      <td class="p-2 text-center">Glossy</td>
+      
+      <td class="p-2 text-center">★★★★</td>
+      
+      <td class="p-2 text-center">Home and office decor</td>
+    </tr>
+    
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">300g Photo Paper</td>
+      
+      <td class="p-2 text-center">Glossy</td>
+      
+      <td class="p-2 text-center">★★★★</td>
+      
+      <td class="p-2 text-center">Photography displays</td>
+    </tr>
+  
+  </tbody>
 
+</table>
+
+<h3>Printing & Finishing Processes</h3>
+<p>Our photo frame calendars are printed using 4-color offset printing with ISO 12647 color management to ensure vibrant, lifelike images. The rigid cardboard frame stand provides stability and durability, making it easy to display your calendar in any setting. Optional spot UV or foil stamping can be added to enhance the visual appeal of your design.</p>
+
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  
+  <thead>
+    
+    <tr class="bg-[#2873F5] text-white">
+      
+      <th class="p-2 text-left">Size</th>
+      
+      <th class="p-2 text-center">MOQ</th>
+      
+      <th class="p-2 text-center">Turnaround</th>
+      
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  
+  </thead>
+  
+  <tbody>
+    
+    <tr class="border-b"><td class="p-2 font-medium">Standard</td>
+      
+      <td class="p-2 text-center">25</td>
+      
+      <td class="p-2 text-center">3-5 days</td>
+      
+      <td class="p-2 text-center">$$$</td>
+    </tr>
+    
+  
+  </tbody>
+
+</table>
+
+<h3>Use Cases & Applications</h3>
+<ul>
+  
+  <li>Home decor for living rooms and bedrooms</li>
+  
+  <li>Office decoration for desks and shelves</li>
+  
+  <li>Photography displays for exhibitions and galleries</li>
+  
+  <li>Promotional items for photography studios and art galleries</li>
+</ul>
+
+<h3>Quality, Compliance, and Shipping</h3>
+<p>ZprintPro Photo Frame Calendars are crafted with FSC-certified paper and manufactured under ISO 9001 quality standards. We offer DHL Express global shipping, ensuring your calendars arrive in 2-4 days. Our 30-second AI quote system provides instant pricing, and our team is committed to delivering exceptional quality and service.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. Rush orders can be completed same-day with a small expedite fee.</p></details>
+<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, and more. Finishes: 4-color CMYK offset printing, rigid cardboard frame stand, and optional spot UV.</p></details>
+<details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, we offer DHL Express global shipping with delivery in 2-4 days.</p></details>
+<details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>Our paper is FSC-certified, and we are ISO 9001 quality certified.</p></details>`,
     longDescriptionJa: `フォトフレームカレンダーをZprintProでご注文。写真入れ付き+13頁（表紙+12ヶ月+裏表紙フォトフレーム）で、母の日・敬老の日・クリスマスギフト、企業ノベルティに最適なプレミアムカレンダー印刷です。写真スタジオ提携プランもあり、プロカメラマンが撮影した写真での高品質仕上げにも対応します。【構造】フォトフレーム機能+13頁構成、サイズはA5/A4/卓上/カスタムから選択。最後のページにL判～A4のフォトフレーム機能を設置。【表面仕上げ】箔押し（タイトル・社名・記念日を強調）、スポットUV（写真の特定部分に光沢）、マットPP/光沢PP ラミネート。【カスタマイズ】写真差し替え可（マグネット式や差込式など、構造カスタマイズも対応）、JA祝日完全準拠、六曜表示オプション（JA旧暦併記・大安・仏滅等の六曜、ギフト向けに特に人気）。【利用シーン】個人ギフト（母の日・父の日・敬老の日・クリスマス）、企業ノベルティ・周年記念品、写真スタジオ・学校記念品。【デザインサービス】写真を12枚支給いただければ、デザイナーがカレンダーにレイアウト（無料・3案まで）いたします。【納期】10個から対応（個人ギフト少量から、法人ノベルティの1,000個大量発注まで対応）、最短7営業日で出荷。繁忙期は14-21営業日かかる場合がございます。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -10291,18 +11173,110 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro Magnetic Calendars use 200g–250g glossy or synthetic paper backed with flexible magnet sheets, adhering to refrigerators, whiteboards, or metal cabinets. Monthly or full-year formats with beautiful designs on the front and recipes, coupons, or corporate info on the back. Ideal for homes, restaurants, schools, and offices.
+    longDescriptionEn: `<h3>Convenient Magnetic Calendars for Home and Office</h3>
+<p>ZprintPro Magnetic Calendars are designed for versatility and ease of use. With a magnetic backing, these calendars can be easily attached to refrigerators, whiteboards, or metal cabinets, making them perfect for home, office, or classroom use. Available in monthly or full-year formats, they offer beautiful designs on the front and useful information on the back, such as recipes, coupons, or corporate info.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  
+  <thead>
+    
+    <tr class="bg-[#2873F5] text-white">
+      
+      <th class="p-2 text-left">Weight</th>
+      
+      <th class="p-2 text-center">Coating</th>
+      
+      <th class="p-2 text-center">Durability</th>
+      
+      <th class="p-2 text-center">Best For</th>
+    </tr>
+  
+  </thead>
+  
+  <tbody>
+    
+    <tr class="border-b"><td class="p-2 font-medium">200g Glossy</td>
+      
+      <td class="p-2 text-center">Glossy</td>
+      
+      <td class="p-2 text-center">★★★</td>
+      
+      <td class="p-2 text-center">Home and office use</td>
+    </tr>
+    
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">250g Synthetic Paper</td>
+      
+      <td class="p-2 text-center">Matte</td>
+      
+      
+      <td class="p-2 text-center">★★★★</td>
+      
+      <td class="p-2 text-center">Restaurants, schools, offices</td>
+    </tr>
+  
+  </tbody>
 
+</table>
+
+<h3>Printing & Finishing Processes</h3>
+<p>Our magnetic calendars are printed using 4-color offset printing with ISO 12647 color management to ensure vibrant, long-lasting images. The flexible magnet sheets provide a strong, reliable hold on any metal surface. Optional spot UV or foil stamping can be added to enhance the visual appeal of your design.</p>
+
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  
+  <thead>
+    
+    <tr class="bg-[#2873F5] text-white">
+      
+      <th class="p-2 text-left">Size</th>
+      
+      <th class="p-2 text-center">MOQ</th>
+      
+      <th class="p-2 text-center">Turnaround</th>
+      
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  
+  </thead>
+  
+  <tbody>
+    
+    <tr class="border-b"><td class="p-2 font-medium">Standard</td>
+      
+      <td class="p-2 text-center">25</td>
+      
+      <td class="p-2 text-center">3-5 days</td>
+      
+      <td class="p-2 text-center">$$$</td>
+    </tr>
+    
+  
+  </tbody>
+
+</table>
+
+<h3>Use Cases & Applications</h3>
+<ul>
+  
+  <li>Home use for refrigerators and whiteboards</li>
+  
+  <li>Office use for metal cabinets and filing systems</li>
+  
+  <li>Classroom use for lesson planning and scheduling</li>
+  
+  <li>Promotional items for restaurants, schools, and offices</li>
+</ul>
+
+<h3>Quality, Compliance, and Shipping</h3>
+<p>ZprintPro Magnetic Calendars are crafted with FSC-certified paper and manufactured under ISO 9001 quality standards. We offer DHL Express global shipping, ensuring your calendars arrive in 2-4 days. Our 30-second AI quote system provides instant pricing, and our team is committed to delivering exceptional quality and service.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. Rush orders can be completed same-day with a small expedite fee.</p></details>
+<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, and more. Finishes: 4-color CMYK offset printing, flexible magnet sheets, and optional spot UV.</p></details>
+<details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, we offer DHL Express global shipping with delivery in 2-4 days.</p></details>
+<details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>Our paper is FSC-certified, and we are ISO 9001 quality certified.</p></details>`,
     longDescriptionJa: `マグネットカレンダーをZprintProでご注文。200g-250gコート紙または合成紙+裏面フレキシブルマグネットシート貼付で冷蔵庫・ホワイトボード・金属キャビネットに貼付可能。月ごとまたは全年フォーマット。家庭・飲食店・学校・オフィス様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -10445,18 +11419,60 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro PVC Menus use 0.5mm–1.0mm clear or white PVC film with 4-color UV printing—waterproof, oil-resistant, abrasion-resistant, and wipeable with a damp cloth. Ideal for cafes, fast-food restaurants, food stalls, and outdoor dining. Single or double-sided with rounded or square corners.
+    longDescriptionEn: `<h3>Waterproof PVC Menus for Restaurants and Cafes</h3>
+<p>ZprintPro PVC Menus are designed for establishments requiring durable, easy-to-clean menus. Made from 0.5mm–1.0mm clear or white PVC film, these menus are waterproof, oil-resistant, and abrasion-resistant, making them ideal for cafes, fast-food restaurants, food stalls, and outdoor dining areas. Choose from single or double-sided printing with rounded or square corners to suit your needs.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Material</th>
+      <th class="p-2 text-center">Thickness</th>
+      <th class="p-2 text-center">Durability</th>
+      <th class="p-2 text-center">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">Clear PVC</td><td class="p-2 text-center">0.5mm</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">Outdoor dining, cafes</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">White PVC</td><td class="p-2 text-center">1.0mm</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">Fast-food restaurants, food stalls</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>ZprintPro utilizes 4-color UV printing to ensure vibrant colors and sharp details. The PVC material is resistant to water and oil, and can be easily wiped clean with a damp cloth. This makes it a practical choice for high-traffic environments where durability is key.</p>
+
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">A4</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases & Applications</h3>
+<p>ZprintPro PVC Menus are perfect for:</p>
+<ul>
+  <li>Outdoor cafes and restaurants</li>
+  <li>Fast-food chains and food stalls</li>
+  <li>Food festivals and events</li>
+  <li>High-traffic dining areas</li>
+</ul>
+
+<h3>Quality, Compliance, and Shipping</h3>
+<p>ZprintPro is committed to quality and sustainability. Our PVC Menus are made with FSC-certified materials and manufactured under ISO 9001 quality standards. We offer DHL Express global shipping, ensuring your menus arrive in 2-4 days. Get a 30-second AI quote with no signup required.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
 <details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding.</p></details>`,
     longDescriptionJa: `PVCメニューをZprintProでご注文。0.5-1.0mm透明または白色PVCフィルム+4色UV印刷で防水・耐油・耐摩耗・湿布で拭き取り可能。茶餐廳・ファストフード・屋台・屋外飲食様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -10580,18 +11596,60 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro Laminated Menus use 200g–250g glossy or matte paper with 4-color printing and matte or gloss lamination. The laminated surface is water and oil-resistant, wipeable with a damp cloth. Uniform lamination protects the print from wear. Ideal for Chinese restaurants, Western restaurants, cafes, and bars.
+    longDescriptionEn: `<h3>Durable Laminated Menus for Restaurants</h3>
+<p>ZprintPro Laminated Menus are perfect for restaurants and bars that need a cost-effective, durable solution. Made from 200g–250g glossy or matte paper with 4-color printing, these menus are laminated with a matte or gloss finish to provide water and oil resistance. The laminated surface is also wipeable with a damp cloth, ensuring your menus stay in pristine condition.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Material</th>
+      <th class="p-2 text-center">Weight</th>
+      <th class="p-2 text-center">Lamination</th>
+      <th class="p-2 text-center">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">Glossy Paper</td><td class="p-2 text-center">200g</td><td class="p-2 text-center">Matte</td><td class="p-2 text-center">Chinese restaurants, cafes</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Matte Paper</td><td class="p-2 text-center">250g</td><td class="p-2 text-center">Gloss</td><td class="p-2 text-center">Western restaurants, bars</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>ZprintPro employs 4-color printing to ensure high-quality, vibrant images. The laminated finish not only provides durability but also enhances the visual appeal of the menus. This makes them an excellent choice for establishments that want to make a lasting impression on their customers.</p>
+
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">A4</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases & Applications</h3>
+<p>ZprintPro Laminated Menus are ideal for:</p>
+<ul>
+  <li>Chinese restaurants and cafes</li>
+  <li>Western restaurants and bars</li>
+  <li>Fast-food chains and food stalls</li>
+  <li>Food festivals and events</li>
+</ul>
+
+<h3>Quality, Compliance, and Shipping</h3>
+<p>ZprintPro is dedicated to quality and sustainability. Our laminated menus are made with FSC-certified materials and manufactured under ISO 9001 quality standards. We offer DHL Express global shipping, ensuring your menus arrive in 2-4 days. Get a 30-second AI quote with no signup required.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
 <details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding.</p></details>`,
     longDescriptionJa: `ラミネートメニューをZprintProでご注文。200g-250gコート紙またはマット紙+4色印刷+マットまたはグロスラミネート。防水・耐油で均一なラミネート層が印刷面を摩耗から保護。中華料理店・西洋料理店・カフェ・バー様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -10736,18 +11794,60 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro Hardcover Menus use rigid board covers laminated with glossy or specialty paper, with 200g glossy inner pages. Saddle-stitched or perfect-bound with optional foil stamping or debossing on the cover. Premium quality for upscale restaurants, hotels, clubs, and private kitchens. Free cover design and structural advice.
+    longDescriptionEn: `<h3>Elegant Hardcover Menus for Fine Dining</h3>
+<p>ZprintPro Hardcover Menus are designed for upscale restaurants, hotels, and private kitchens that require a premium, durable menu. These menus feature rigid board covers laminated with glossy or specialty paper, and 200g glossy inner pages. The saddle-stitched or perfect-bound binding ensures longevity, while optional foil stamping or debossing on the cover adds a touch of elegance.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Material</th>
+      <th class="p-2 text-center">Weight</th>
+      <th class="p-2 text-center">Binding</th>
+      <th class="p-2 text-center">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">Rigid Board</td><td class="p-2 text-center">N/A</td><td class="p-2 text-center">Saddle-stitched</td><td class="p-2 text-center">Fine dining restaurants, hotels</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Specialty Paper</td><td class="p-2 text-center">200g</td><td class="p-2 text-center">Perfect-bound</td><td class="p-2 text-center">Clubs, private kitchens</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>ZprintPro uses 4-color printing to ensure vibrant, high-quality images. The hardcover binding provides durability and a premium feel, while optional foil stamping or debossing on the cover adds a personalized touch. This makes these menus perfect for establishments that want to convey a sense of luxury and sophistication.</p>
+
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">A4</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases & Applications</h3>
+<p>ZprintPro Hardcover Menus are ideal for:</p>
+<ul>
+  <li>Fine dining restaurants</li>
+  <li>Upscale hotels and clubs</li>
+  <li>Private kitchens and exclusive venues</li>
+  <li>Luxury events and banquets</li>
+</ul>
+
+<h3>Quality, Compliance, and Shipping</h3>
+<p>ZprintPro is committed to quality and sustainability. Our hardcover menus are made with FSC-certified materials and manufactured under ISO 9001 quality standards. We offer DHL Express global shipping, ensuring your menus arrive in 2-4 days. Get a 30-second AI quote with no signup required.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
 <details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding.</p></details>`,
     longDescriptionJa: `ハードカバー精裝メニューをZprintProでご注文。高級レストラン・ホテル・結婚式場・会員制クラブ向けのプレミアムメニュー印刷で、ハードケース表紙+上質紙本文+箔押し・エンボス・スポットUV対応の最高峰仕上げです。フランス料理・日本料理・ホテル・結婚式場・会員制クラブ・BARなど、店舗の世界観をメニューから伝えたい業態に最適です。【構造】ハードケース表紙+本文（上質紙/アート紙/コーティング紙）、製本は無線綴じ/糸綴じから選択、16-64頁まで対応。【プレミアム仕上げ】箔押し（金/銀/銅+特殊箔）、エンボス/デボス、スポットUV/マットPP、表面ラミネート加工でレストラン現場の水濡れ・油汚れにも強く、アルコール消毒にも耐えます。【中身差替】リング式・ポケット式の中綴じオプションで、季節ごとのメニュー差し替えに対応可能、コスト削減にも貢献します。【利用シーン】フランス料理・日本料理（高級仕上げ）、ホテル・結婚式場（フォーマル感）、会員制クラブ・BAR（世界観演出）。【データ入稿】InDesign / Illustrator / PDF対応、写真は350dpi以上の高解像度でご支給ください。スタッフが入稿時に無料でデータチェックを行います。【納期】5部から対応（単店少部数から、チェーン店一括100部まで対応）、最短10営業日で出荷。100部以上の大量印刷は14-21営業日。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -10893,18 +11993,60 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro Drink Menus use 200g–250g glossy or synthetic paper with 4-color printing and matte lamination. Water and oil-resistant for cafes, tea shops, bars, and dessert stores. Can be designed as single-page, folded, or stand-up formats with QR codes linking to online ordering.
+    longDescriptionEn: `<h3>Versatile Drink Menus for Cafes and Bars</h3>
+<p>ZprintPro Drink Menus are designed for cafes, tea shops, bars, and dessert stores that need a menu that can be both standing and handheld. Made from 200g–250g glossy or synthetic paper with 4-color printing and matte lamination, these menus are water and oil-resistant, making them ideal for environments where spills are common. The menus can be designed in single-page, folded, or stand-up formats, with QR codes linking to online ordering for added convenience.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Material</th>
+      <th class="p-2 text-center">Weight</th>
+      <th class="p-2 text-center">Lamination</th>
+      <th class="p-2 text-center">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">Glossy Paper</td><td class="p-2 text-center">200g</td><td class="p-2 text-center">Matte</td><td class="p-2 text-center">Cafes, tea shops</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Synthetic Paper</td><td class="p-2 text-center">250g</td><td class="p-2 text-center">Matte</td><td class="p-2 text-center">Bars, dessert stores</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>ZprintPro employs 4-color printing to ensure vibrant, high-quality images. The matte lamination provides durability and a premium feel, while the QR codes offer a modern touch that enhances the customer experience.</p>
+
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">A4</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases & Applications</h3>
+<p>ZprintPro Drink Menus are ideal for:</p>
+<ul>
+  <li>Cafes and tea shops</li>
+  <li>Bars and dessert stores</li>
+  <li>Restaurants with QR code ordering</li>
+  <li>Food festivals and events</li>
+</ul>
+
+<h3>Quality, Compliance, and Shipping</h3>
+<p>ZprintPro is dedicated to quality and sustainability. Our drink menus are made with FSC-certified materials and manufactured under ISO 9001 quality standards. We offer DHL Express global shipping, ensuring your menus arrive in 2-4 days. Get a 30-second AI quote with no signup required.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
 <details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding.</p></details>`,
     longDescriptionJa: `ドリンクメニューをZprintProでご注文。200g-250gコート紙または合成紙+4色印刷+マットラミネートで防水・耐油。単ページ・折りたたみ・スタンド型デザイン可能でオンライン注文QRコードも印刷可能。カフェ・ティーショップ・バー・デザート店様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -11047,18 +12189,59 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro Disposable Menus use 100g–120g book or recycled paper with 4-color digital printing—low cost for mass distribution of temporary menus, limited-time offers, or event sets. Lightweight and disposable after use. Ideal for fast-food restaurants, food festivals, temporary stalls, and trial promotions.
+    longDescriptionEn: `<h3>Economical Disposable Menus for Fast Food and Takeaway</h3>
+<p>ZprintPro Disposable Menus are designed for fast-food restaurants, food festivals, temporary stalls, and trial promotions that require a low-cost, lightweight, and disposable solution. Made from 100g–120g book or recycled paper with 4-color digital printing, these menus are perfect for mass distribution of temporary menus, limited-time offers, or event sets.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Material</th>
+      <th class="p-2 text-center">Weight</td>
+      <th class="p-2 text-center">Best For</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">Book Paper</td><td class="p-2 text-center">100g</td><td class="p-2 text-center">Fast-food restaurants, food festivals</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Recycled Paper</td><td class="p-2 text-center">120g</td><td class="p-2 text-center">Temporary stalls, trial promotions</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>ZprintPro uses 4-color digital printing to ensure vibrant, high-quality images. The lightweight nature of the paper makes these menus easy to distribute and dispose of, while the digital printing process allows for cost-effective production.</p>
+
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</td>
+      <th class="p-2 text-center">MOQ</td>
+      <th class="p-2 text-center">Turnaround</td>
+      <th class="p-2 text-center">Unit Price</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">A4</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases & Applications</h3>
+<p>ZprintPro Disposable Menus are ideal for:</p>
+<ul>
+  <li>Fast-food restaurants</li>
+  <li>Food festivals and events</li>
+  <li>Takeaway shops and temporary stalls</li>
+  <li>Trial promotions and limited-time offers</li>
+</ul>
+
+<h3>Quality, Compliance, and Shipping</h3>
+<p>ZprintPro is committed to quality and sustainability. Our disposable menus are made with FSC-certified materials and manufactured under ISO 9001 quality standards. We offer DHL Express global shipping, ensuring your menus arrive in 2-4 days. Get a 30-second AI quote with no signup required.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
 <details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding.</p></details>`,
     longDescriptionJa: `使い捨てメニューをZprintProでご注文。100g-120g書籍紙または再生紙+4色デジタル印刷で低コスト大量配布向け。軽量で使用後に捨てられる。ファストフード・フードフェスティバル・仮設屋台・試験販売様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -11202,18 +12385,66 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `Outdoor vinyl banners use frontlit/backlit flex with solvent, eco-solvent, or UV-cured inks for waterproof, UV-stable, wide-format seams. Ideal for construction hoardings, mall exteriors, event backdrops, and temporary wayfinding. Terms align with category content: large-format printing, banner vinyl, weather resistance. Artwork should include grommet grids, welded hems, and wind-slit plans; coastal or high-UV sites may need upgraded ink sets plus cable spacing checks on install.
+    longDescriptionEn: `<h3>Large-Format Outdoor Vinyl Banners for Robust Branding</h3>
+<p>ZprintPro's outdoor vinyl banners are designed for businesses and organizations seeking durable, weather-resistant signage. Ideal for construction sites, event backdrops, and exterior promotions, these banners are crafted from high-grade frontlit or backlit flex materials and printed with solvent, eco-solvent, or UV-cured inks to ensure waterproofing and UV stability. With welded hems and grommet grids, our banners withstand coastal winds and high UV exposure, making them perfect for long-term outdoor use.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Material</th>
+      <th class="p-2 text-center">GSM</th>
+      <th class="p-2 text-center">Durability</th>
+      <th class="p-2 text-center">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">Frontlit Flex</td><td class="p-2 text-center">440g</td><td class="p-2 text-center">★★★★</td><td class="p-2">Outdoor events, temporary signage</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Backlit Flex</td><td class="p-2 text-center">500g</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Mall exteriors, illuminated displays</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Mesh Vinyl</td><td class="p-2 text-center">350g</td><td class="p-2 text-center">★★★</td><td class="p-2">High-wind areas, building facades</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Premium Vinyl</td><td class="p-2 text-center">610g</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Long-term outdoor installations</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>Our banners are printed using state-of-the-art large-format printers with advanced color management to ensure vibrant, accurate colors. We use heat welding for hems and brass grommets for reinforced edges. Optional UV protection and flame-retardant treatments are available for enhanced durability and safety.</p>
+
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">2x3 ft</td><td class="p-2 text-center">1</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$50</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">4x6 ft</td><td class="p-2 text-center">1</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$100</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">8x10 ft</td><td class="p-2 text-center">1</td><td class="p-2 text-center">5-7 days</td><td class="p-2 text-center">$200</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">10x20 ft</td><td class="p-2 text-center">1</td><td class="p-2 text-center">7-10 days</td><td class="p-2 text-center">$400</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases & Applications</h3>
+<p>Outdoor vinyl banners are perfect for:</p>
+<ul>
+  <li><strong>Construction Sites:</strong> Durable, weather-resistant banners for project announcements and safety signage.</li>
+  <li><strong>Event Backdrops:</strong> High-visibility banners for concerts, festivals, and trade shows.</li>
+  <li><strong>Exterior Promotions:</strong> Eye-catching signage for storefronts, malls, and public spaces.</li>
+  <li><strong>Building Facades:</strong> Large-scale banners for branding and advertising on skyscrapers and stadiums.</li>
+</ul>
+
+<h3>Quality, Compliance, and Support</h3>
+<p>ZprintPro ensures top-notch quality with FSC-certified materials and ISO 9001 manufacturing standards. Our ISO 12647 color management guarantees precise color reproduction. We offer DHL Express global shipping with a 2-4 day delivery timeframe. Get an instant AI quote in 30 seconds and experience our commitment to quality and customer satisfaction.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
 <details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton, vinyl, and mesh. Finishes range from matte to gloss lamination, UV protection, and flame-retardant treatments.</p></details>
+<details class="my-2"><summary><strong>What is your shipping policy?</strong></summary><p>We offer DHL Express global shipping with a 2-4 day delivery timeframe. Free US shipping on orders over $100.</p></details>
+<details class="my-2"><summary><strong>How do you ensure quality?</strong></summary><p>ZprintPro maintains FSC certification, ISO 9001 manufacturing standards, and ISO 12647 color management for consistent, high-quality output.</p></details>`,
     longDescriptionJa: `屋外大型バナーをZprintProでご注文。塩ビターポリン（440g/510g）素材で、防水・耐候性・UVカット加工により、直射日光下でも3年以上の色持ちを実現する大型バナー印刷です。建設現場仮囲い・店舗装飾・イベント会場・不動産建築囲いなど、屋外B2B用途に最適です。平方フィート単位で算出いたします。【最大サイズ】継ぎ目なしで最大5m×10mまで対応、それ以上のサイズはオーバーラップ接合で納品します。継ぎ目は現場で目立たないように施工できます。【素材選択】厚手塩ビターポリン（440g/510g、標準的な屋外用）、メッシュターポリン（開孔率30-40%、風透過で強風時の負荷軽減、建築現場の仮囲いや台風の影響を受けやすい高所設置に最適）、反射シート（夜間の視認性向上）。【印刷方式】UVカット大型インクジェット+顔料インク使用、飽和した色彩再現。塩ビ素材自体が防水・防カビ・耐候性に優れています。【ハトメ加工】標準料金に4隅+中央2点、合計6点のハトメ加工を含みます。追加や位置変更も無料で対応可能、ロープ・紐は別途ご用意ください。【納期】データ確定後、最短5営業日で出荷。10平方フィート以上の大型印刷は7-10営業日。北海道・沖縄はさらに1-2日かかります。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -11336,18 +12567,59 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `Roll-up banners pair aluminum or hybrid stands with spring-rolled graphics for one-person setup in minutes—staples for expo booths, hotel check-ins, and pop-up retail promos. Graphics often use anti-glare PET/PVC or curl-resistant synthetics with weighted foot bars to reduce wobble. Terms align with category content: large-format printing, roll-ups, outdoor vinyl. Keep top/bottom safe zones clear of hardware; outdoor long runs may need UV-stable inks and heavier bases.
+    longDescriptionEn: `<h3>Portable Roll-up Banners for Professional Displays</h3>
+<p>ZprintPro's roll-up banners are designed for businesses and professionals who need a portable, easy-to-set-up display solution. Ideal for exhibitions, trade shows, and retail promotions, these banners feature spring-rolled graphics and lightweight aluminum or hybrid stands for quick, one-person setup. The anti-glare PET/PVC or curl-resistant synthetic materials ensure clear, vibrant visuals, while weighted foot bars provide stability.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Material</th>
+      <th class="p-2 text-center">GSM</th>
+      <th class="p-2 text-center">Durability</th>
+      <th class="p-2 text-center">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">Anti-glare PET</td><td class="p-2 text-center">250g</td><td class="p-2 text-center">★★★</td><td class="p-2">Indoor events, retail displays</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Curl-resistant Synthetic</td><td class="p-2 text-center">300g</td><td class="p-2 text-center">★★★★</td><td class="p-2">Exhibitions, trade shows</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Premium Vinyl</td><td class="p-2 text-center">450g</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Long-term installations, outdoor use</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Mesh Vinyl</td><td class="p-2 text-center">350g</td><td class="p-2 text-center">★★★★</td><td class="p-2">High-wind areas, building facades</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>Our roll-up banners are printed using large-format printers with precise color management to ensure high-quality, vibrant images. We use heat welding for reinforced edges and brass grommets for durability. Optional UV protection and flame-retardant treatments are available for enhanced durability and safety.</p>
 
-<h3>Frequently Asked Questions</h3>
-<details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">24x80 in</td><td class="p-2 text-center">1</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$75</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">48x96 in</td><td class="p-2 text-center">1</td><td class="p-2 text-center">5-7 days</td><td class="p-2 text-center">$150</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">60x120 in</td><td class="p-2 text-center">1</td><td class="p-2 text-center">7-10 days</td><td class="p-2 text-center">$300</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">72x144 in</td><td class="p-2 text-center">1</td><td class="p-2 text-center">10-14 days</td><td class="p-2 text-center">$600</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases & Applications</h3>
+<p>Roll-up banners are perfect for:</p>
+<ul>
+  <li><strong>Exhibitions:</strong> Portable, professional displays for trade shows and conferences.</li>
+  <li><strong>Retail Promotions:</strong> Eye-catching signage for store openings and product launches.</li>
+  <li><strong>Hotel Check-ins:</strong> Informative banners for lobbies and event spaces.</li>
+  <li><strong>Pop-up Retail:</strong> Temporary signage for markets and fairs.</li>
+</ul>
+
+<h3>Quality, Compliance, and Support</h3>
+<p>ZprintPro ensures top-notch quality with FSC-certified materials and ISO 9001 manufacturing standards. Our ISO 12647 color management guarantees precise color reproduction. We offer DHL Express global shipping with a 2-4 day delivery timeframe. Get an instant AI quote in 30 seconds and experience our commitment to quality and customer satisfaction.</p>`,
     longDescriptionJa: `当サービスではロールアップ バナー 印刷 業者として、アルミ製軽量スタンドと高品質グラフィックの組み合わせで、展示会・ホテル受付・店頭POP・セミナー会場などあらゆるビジネスシーンに迅速かつ美しい設営をお届けします。標準サイズ85×200cm、組み立ては1人で3-5分、専用キャリーバッグで持ち運びも簡単です。
 
 ロールアップ バナー テンプレートを豊富にご用意。展示会向け・セミナー向け・新商品発表向け・キャンペーン告知向けなど、業界別・シーン別のテンプレートを50種以上ご提供。Ai／PDF／PNG／JPG形式で無料ダウンロードでき、ロゴやテキストを差し替えるだけで短時間でプロ品質の仕上がりに。デザイン作成サービス（3案まで無料）もご利用いただけます。
@@ -11500,18 +12772,59 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `Adhesive wide-format prints use calendared vinyl, removable gray glue, clear films, or air-egress liners for full-window wraps, wall hero graphics, and short-term decor. Matte finishes tame hot spots; inside/outside glass layers can create dual reads. Terms align with category content: large-format printing, adhesive vinyl, waterproofing. Confirm substrate cleanliness and adhesive class (permanent vs removable); curved or rough walls benefit from strip tests for tack and stretch recovery.
+    longDescriptionEn: `<h3>Self-Adhesive Banners for Versatile Applications</h3>
+<p>ZprintPro's adhesive banners are designed for businesses and organizations seeking a versatile, easy-to-apply signage solution. Ideal for wall graphics, window displays, and temporary decor, these banners feature self-adhesive vinyl that can be applied directly to walls, glass, and other smooth surfaces. The removable gray glue and air-egress liners ensure easy application and removal without damaging surfaces.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Material</th>
+      <th class="p-2 text-center">GSM</th>
+      <th class="p-2 text-center">Durability</th>
+      <th class="p-2 text-center">Best For</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">Calendared Vinyl</td><td class="p-2 text-center">200g</td><td class="p-2 text-center">★★★</td><td class="p-2">Interior wall graphics, short-term decor</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Removable Gray Glue</td><td class="p-2 text-center">250g</td><td class="p-2 text-center">★★★★</td><td class="p-2">Window displays, glass doors</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Clear Film</td><td class="p-2 text-center">300g</td><td class="p-2 text-center">★★★★</td><td class="p-2">Dual-sided graphics, interior decor</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Air-egress Liner</td><td class="p-2 text-center">350g</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Large-scale wall graphics, murals</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>Our adhesive banners are printed using large-format printers with advanced color management to ensure vibrant, accurate colors. The self-adhesive vinyl is laminated with a matte finish to reduce glare and fingerprints. Optional UV protection and flame-retardant treatments are available for enhanced durability and safety.</p>
 
-<h3>Frequently Asked Questions</h3>
-<details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">24x36 in</td><td class="p-2 text-center">1</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$50</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">36x48 in</td><td class="p-2 text-center">1</td><td class="p-2 text-center">5-7 days</td><td class="p-2 text-center">$100</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">48x72 in</td><td class="p-2 text-center">1</td><td class="p-2 text-center">7-10 days</td><td class="p-2 text-center">$200</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">60x96 in</td><td class="p-2 text-center">1</td><td class="p-2 text-center">10-14 days</td><td class="p-2 text-center">$400</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases & Applications</h3>
+<p>Adhesive banners are perfect for:</p>
+<ul>
+  <li><strong>Wall Graphics:</strong> Large-scale murals and decor for offices and retail spaces.</li>
+  <li><strong>Window Displays:</strong> Full-window wraps and decals for storefronts and restaurants.</li>
+  <li><strong>Temporary Decor:</strong> Short-term graphics for events and exhibitions.</li>
+  <li><strong>Interior Signage:</strong> Directional and informational signs for lobbies and hallways.</li>
+</ul>
+
+<h3>Quality, Compliance, and Support</h3>
+<p>ZprintPro ensures top-notch quality with FSC-certified materials and ISO 9001 manufacturing standards. Our ISO 12647 color management guarantees precise color reproduction. We offer DHL Express global shipping with a 2-4 day delivery timeframe. Get an instant AI quote in 30 seconds and experience our commitment to quality and customer satisfaction.</p>`,
     longDescriptionJa: `粘着大判をZprintProでご注文。カッティングシート/グレー再剥離/透明/エアリリース等でショーウィンドウ全面や壁面ヒーローを短工期で施工。下地清浄度と糊種を確認。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -11655,18 +12968,59 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro vehicle wraps use cast-grade polymer PVC vinyl at 80–100 microns thickness, with air-release channels and removable adhesive that conforms tightly to vehicle curves without residue or damaging factory paint upon removal. UV-cured or eco-solvent inks provide 2–3 year outdoor weather resistance against UV and acid rain. We offer full-vehicle wraps, partial decals, and rear-window perforated film options, with upgrades to 3M or Avery brand materials. Free vehicle template and air-release simulation provided during prepress, ensuring corners and edges stay flat. Terminology aligns with category content: cast-grade PVC, air-release channels, removable adhesive, UV curing, perforated film.
+    longDescriptionEn: `<h3>Premium Vehicle Wraps for Lasting Impressions</h3>
+<p>ZprintPro's vehicle wraps are designed for businesses and individuals seeking a durable, high-impact branding solution. Ideal for cars, trucks, buses, and other vehicles, these wraps use cast-grade polymer PVC vinyl with air-release channels and removable adhesive that conforms tightly to vehicle curves without leaving residue or damaging the factory paint upon removal. The UV-cured or eco-solvent inks provide 2-3 years of outdoor weather resistance against UV and acid rain.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Material</th>
+      <th class="p-2 text-center">GSM</th>
+      <th class="p-2 text-center">Durability</th>
+      <th class="p-2 text-center">Best For</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">Cast-grade Polymer PVC</td><td class="p-2 text-center">80-100 microns</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Long-term vehicle wraps, high-quality finishes</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Perforated Film</td><td class="p-2 text-center">60 microns</td><td class="p-2 text-center">★★★★</td><td class="p-2">Rear windows, partial wraps</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">3M/Avery Brand Vinyl</td><td class="p-2 text-center">120 microns</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Premium vehicle branding, custom designs</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Removable Adhesive Vinyl</td><td class="p-2 text-center">90 microns</td><td class="p-2 text-center">★★★★</td><td class="p-2">Temporary vehicle graphics, promotional wraps</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>Our vehicle wraps are printed using large-format printers with precise color management to ensure vibrant, accurate colors. The vinyl is laminated with a UV-protective film to enhance durability and weather resistance. Optional flame-retardant treatments are available for added safety.</p>
 
-<h3>Frequently Asked Questions</h3>
-<details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">Partial Wrap</td><td class="p-2 text-center">1</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$500</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Full Wrap</td><td class="p-2 text-center">1</td><td class="p-2 text-center">5-7 days</td><td class="p-2 text-center">$1000</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Full Wrap with Perforated Film</td><td class="p-2 text-center">1</td><td class="p-2 text-center">7-10 days</td><td class="p-2 text-center">$1500</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Full Wrap with Premium Vinyl</td><td class="p-2 text-center">1</td><td class="p-2 text-center">10-14 days</td><td class="p-2 text-center">$2000</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases & Applications</h3>
+<p>Vehicle wraps are perfect for:</p>
+<ul>
+  <li><strong>Corporate Fleets:</strong> Branding for company cars, vans, and buses.</li>
+  <li><strong>Promotional Campaigns:</strong> Eye-catching graphics for product launches and events.</li>
+  <li><strong>Personal Branding:</strong> Custom designs for personal vehicles.</li>
+  <li><strong>Public Transport:</strong> Advertising for buses, taxis, and trains.</li>
+</ul>
+
+<h3>Quality, Compliance, and Support</h3>
+<p>ZprintPro ensures top-notch quality with FSC-certified materials and ISO 9001 manufacturing standards. Our ISO 12647 color management guarantees precise color reproduction. We offer DHL Express global shipping with a 2-4 day delivery timeframe. Get an instant AI quote in 30 seconds and experience our commitment to quality and customer satisfaction.</p>`,
     longDescriptionJa: `車ラッピングをZprintProでご注文。キャストグレード高分子PVCビニール+エアリリース溝+再剥離粘着剤で車体曲面に密着。フルラッピング・部分デカール・リアウィンドウ単透貼の3プラン。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -11809,18 +13163,59 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro mesh banners use 270g–350g PVC mesh scrim with 30%–40% perforation ratio, combining light/air permeability with graphic integrity. Ideal for large outdoor advertising, building hoardings, stadium fencing, and building facade mega-banners. Wind resistance is reduced by over 60% compared to traditional banners, significantly lowering truss and tie-rope loads. UV-cured inks provide 2–3 year outdoor durability, with optional flame-retardant treatment meeting Hong Kong Fire Services Department standards. Heat-sealed reinforced edges with brass grommets and tie ropes ensure long-term hanging without tearing. We provide free wind-load calculations and installation recommendations. Terminology aligns with category content: PVC mesh fabric, scrim, flame-retardant treatment, UV curing, brass grommets.
+    longDescriptionEn: `<h3>Lightweight Mesh Banners for Large Outdoor Advertising</h3>
+<p>ZprintPro's mesh banners are designed for businesses and organizations seeking a lightweight, air-permeable signage solution. Ideal for large outdoor advertising, building facades, and stadium fencing, these banners use 270g-350g PVC mesh with a 30%-40% perforation ratio, combining light and air permeability with graphic integrity. The UV-cured inks provide 2-3 years of outdoor durability, and the heat-sealed reinforced edges with brass grommets and tie ropes ensure long-term hanging without tearing.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Material</th>
+      <th class="p-2 text-center">GSM</th>
+      <th class="p-2 text-center">Durability</th>
+      <th class="p-2 text-center">Best For</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">PVC Mesh</td><td class="p-2 text-center">270g</td><td class="p-2 text-center">★★★</td><td class="p-2">Building facades, temporary signage</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Reinforced PVC Mesh</td><td class="p-2 text-center">350g</td><td class="p-2 text-center">★★★★</td><td class="p-2">Outdoor advertising, stadium fencing</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Flame-retardant PVC Mesh</td><td class="p-2 text-center">300g</td><td class="p-2 text-center">★★★★</td><td class="p-2">Public safety areas, building sites</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Perforated PVC Mesh</td><td class="p-2 text-center">320g</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Large-scale outdoor graphics, building wraps</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>Our mesh banners are printed using large-format printers with advanced color management to ensure vibrant, accurate colors. The mesh fabric is heat-sealed with reinforced edges and brass grommets for durability. Optional flame-retardant treatments are available for enhanced safety.</p>
 
-<h3>Frequently Asked Questions</h3>
-<details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</td>
+      <th class="p-2 text-center">MOQ</td>
+      <th class="p-2 text-center">Turnaround</td>
+      <th class="p-2 text-center">Unit Price</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">24x48 in</td><td class="p-2 text-center">1</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$75</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">48x96 in</td><td class="p-2 text-center">1</td><td class="p-2 text-center">5-7 days</td><td class="p-2 text-center">$150</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">60x120 in</td><td class="p-2 text-center">1</td><td class="p-2 text-center">7-10 days</td><td class="p-2 text-center">$300</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">72x144 in</td><td class="p-2 text-center">1</td><td class="p-2 text-center">10-14 days</td><td class="p-2 text-center">$600</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases & Applications</h3>
+<p>Mesh banners are perfect for:</p>
+<ul>
+  <li><strong>Large Outdoor Advertising:</strong> Building facades, billboards, and stadium banners.</li>
+  <li><strong>Building Wraps:</strong> Full-building graphics for construction sites and renovations.</li>
+  <li><strong>Stadium Fencing:</strong> Perimeter signage for sports venues and events.</li>
+  <li><strong>Public Safety Areas:</strong> Warning banners for construction sites and public spaces.</li>
+</ul>
+
+<h3>Quality, Compliance, and Support</h3>
+<p>ZprintPro ensures top-notch quality with FSC-certified materials and ISO 9001 manufacturing standards. Our ISO 12647 color management guarantees precise color reproduction. We offer DHL Express global shipping with a 2-4 day delivery timeframe. Get an instant AI quote in 30 seconds and experience our commitment to quality and customer satisfaction.</p>`,
     longDescriptionJa: `メッシュバナーをZprintProでご注文。270g-350g PVCメッシュスクリム+開孔率30-40%で透光性・通風性・画面完全性を両立。風阻60%以上低減で建築囲板・競技場フェンスに最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -11964,18 +13359,58 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro Catalogs use 157g–200g glossy or matte paper with 4-color offset printing. Covers in 200g–250g glossy with lamination or foil stamping. Binding options include saddle-stitching (thin) or perfect binding (thick). Ideal for product showcases, service introductions, and wholesale catalogs.
+    longDescriptionEn: `<h3>Premium Catalog Printing for Global Brands</h3>
+<p>ZprintPro catalog printing services are designed for businesses looking to showcase their products or services with high color accuracy and professional presentation. Ideal for product catalogs, annual reports, and promotional materials, our catalogs are printed on 157g–200g glossy or matte paper with 4-color offset printing. Covers are available in 200g–250g glossy with options for lamination or foil stamping. Choose from saddle-stitching for thinner catalogs or perfect binding for thicker publications.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Weight</th>
+      <th class="p-2 text-center">Coating</th>
+      <th class="p-2 text-center">Durability</th>
+      <th class="p-2 text-center">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">157g Matte</td><td class="p-2 text-center">Matte</td><td class="p-2 text-center">★★★</td><td class="p-2">General business, product showcases</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">200g Glossy</td><td class="p-2 text-center">Glossy</td><td class="p-2 text-center">★★★★</td><td class="p-2">High-end catalogs, annual reports</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">250g Laminated</td><td class="p-2 text-center">Laminated</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Luxury catalogs, premium publications</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>ZprintPro utilizes state-of-the-art Heidelberg 4-color offset printing to ensure 90%+ color saturation and crisp reproduction. Our finishing options include matte or glossy lamination, foil stamping in gold, silver, or rose gold, and spot UV for a glossy, dimensional contrast. These processes are executed with precision using our advanced equipment to deliver high-quality catalogs.</p>
 
-<h3>Frequently Asked Questions</h3>
-<details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<h3>Size, Format & MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size (in)</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">8.5x11</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A4</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom</td><td class="p-2 text-center">100</td><td class="p-2 text-center">5-7 days</td><td class="p-2 text-center">$$$</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases & Applications</h3>
+<p>ZprintPro catalogs are ideal for a variety of applications, including:
+<ul>
+  <li>Product catalogs for retail and e-commerce businesses</li>
+  <li>Annual reports for corporate and financial institutions</li>
+  <li>Promotional materials for marketing campaigns</li>
+  <li>Service brochures for professional services firms</li>
+</ul>
+</p>
+
+<h3>Quality, Compliance & Assurance</h3>
+<p>ZprintPro is committed to quality and compliance, with FSC-certified paper, ISO 9001 manufacturing standards, and ISO 12647 color management. We offer a 30-second AI quote with no signup required and DHL Express global shipping for fast, reliable delivery. Our 48-hour local delivery in Hong Kong and Kwun Tong factory ensure quick turnaround times.</p>`,
     longDescriptionJa: `高級カタログ・画冊をZprintProでご注文。アート紙・上質紙・写真用紙対応で、写真再現と高級感・ブランドの世界観を両立したプレミアムカタログ印刷です。アパレル・化粧品・不動産・美術館・ギャラリーなど、ブランドの世界観をカタログで伝えたい企業に最適です。【用紙選択】写真再現重視（写真用紙・コート紙157g+光沢PPラミネート）、高級感重視（アート紙180g+マットPP）、エコ重視（FSC認証紙）から選択。【製本方式】中綴じ（8-64頁、開いた時に見栄え◎、薄い冊子向け）、無線綴じ（64-400頁、長期保存・耐久性◎、厚い冊子向け）、ハードカバー（プレミアム仕上げ）の3方式。【表面仕上げ】箔押し（金/銀/銅）、エンボス/デボス（凹凸ロゴ）、スポットUV（部分的光沢）、マットPP/光沢PP ラミネート加工。【利用シーン】アパレル・ファッションブランド（商品カタログ）、化粧品・美容ブランド（新作発表資料）、不動産・物件資料、美術館・作品集、企業年報。【データ入稿】写真は350dpi以上のCMYKモード TIFF/PSD/高解像度PDFでご支給ください。RGBモードの場合、スタッフが入稿時にRGB→CMYK変換を行います。【色校正】本機色校正（有償）で実物の色を確認可能、色再現にご不安がある場合も安心です。【納期】10冊から対応、最短7営業日で出荷。100冊以上の大量印刷は10-14営業日。特殊加工（箔押し・エンボス等）が含まれる場合はさらに2-3日かかる場合がございます。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -12101,18 +13536,54 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro Saddle-stitch Booklets use 128g–157g glossy or book paper with 4-color printing and saddle-stitch binding—smooth page turning at economical cost. Ideal for thin publications, event handbooks, meeting materials, and product manuals. Recommended 8–64 pages.
+    longDescriptionEn: `<h3>Affordable Booklet Printing for Marketing and Events</h3>
+<p>ZprintPro Saddle Stitch Booklets are designed for businesses and organizations needing cost-effective, professional booklets for marketing materials, event programs, and product guides. Using 128g-157g glossy or book paper, these booklets offer smooth page turning and vibrant color reproduction at an economical price point. Ideal for thin publications ranging from 8 to 64 pages.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Weight</th>
+      <th class="p-2 text-center">Coating</th>
+      <th class="p-2 text-center">Durability</th>
+      <th class="p-2 text-center">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">128g Glossy</td><td class="p-2 text-center">Glossy</td><td class="p-2 text-center">★★★</td><td class="p-2">Marketing materials, event programs</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">157g Book Paper</td><td class="p-2 text-center">Matte</td><td class="p-2 text-center">★★★★</td><td class="p-2">Product manuals, meeting materials</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>ZprintPro utilizes advanced 4-color offset printing technology to ensure high-quality, consistent results. Our Heidelberg presses deliver sharp images and accurate color reproduction. Saddle stitch binding provides a secure and professional finish, suitable for booklets up to 64 pages.</p>
 
-<h3>Frequently Asked Questions</h3>
-<details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">A5</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$1.50</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">A4</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$2.50</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases & Applications</h3>
+<ul>
+  <li>Marketing brochures for product launches and promotions</li>
+  <li>Event programs for conferences, seminars, and trade shows</li>
+  <li>Product manuals and user guides for technical documentation</li>
+  <li>Training materials and course handouts for educational purposes</li>
+</ul>
+
+<h3>Quality, Compliance, and Shipping</h3>
+<p>ZprintPro is committed to quality and compliance, using FSC-certified paper and adhering to ISO 9001 standards. Our state-of-the-art Kwun Tong factory ensures fast turnaround times, with DHL Express global shipping delivering your booklets in 2-4 days. Get an instant 30-second AI quote with no signup required.</p>`,
     longDescriptionJa: `当サービスでは同人誌 印刷 中綴じ 業者として、コミケ・即売会・創作イベント向けに最適化された中綴じ冊子をご提供しています。128g～157gの上質紙またはコート紙を採用し、4色プロセス印刷で鮮やかな発色と鮮明な画像再現を実現。中綴じ製本によりページめくりがスムーズで、8～64ページの薄本冊子に最適です。
 
 同人誌 印刷 少部数対応。10冊からご注文可能で、コミケの少部数出品やテスト印刷にもご利用いただけます。表紙特殊紙8種類（マットコート紙・アート紙・クラフト紙・ミラーペーパー等）から選択でき、表紙と本文用紙を別素材で組み合わせた凝った造本にも対応。本文用紙は上質紙90gを標準とし、古紙100%再生紙やモントキルなど7種類から選べます。
@@ -12266,18 +13737,54 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro Perfect-bound Books use 157g–200g glossy or matte inner pages with 200g–250g glossy laminated covers. Perfect binding creates a flat, sturdy spine that opens flat. Ideal for magazines, annual reports, portfolios, and textbooks. Recommended 48+ pages.
+    longDescriptionEn: `<h3>Professional Book Printing for High-Quality Publications</h3>
+<p>ZprintPro Perfect Bound Books are ideal for businesses and publishers seeking durable, high-quality books and magazines with a flat spine that can display the book title. Using 157g-200g glossy or matte inner pages and 200g-250g glossy laminated covers, these books offer a premium finish and sturdy binding, perfect for magazines, annual reports, portfolios, and textbooks with 48 or more pages.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Weight</th>
+      <th class="p-2 text-center">Coating</th>
+      <th class="p-2 text-center">Durability</th>
+      <th class="p-2 text-center">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">157g Glossy</td><td class="p-2 text-center">Glossy</td><td class="p-2 text-center">★★★★</td><td class="p-2">Magazines, annual reports</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">200g Matte</td><td class="p-2 text-center">Matte</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Portfolios, textbooks</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>Our perfect binding technique creates a flat, professional spine that enhances the aesthetic appeal and functionality of the book. The covers are laminated for added durability and a premium look. Advanced 4-color offset printing ensures vibrant colors and sharp images, making your publications stand out.</p>
 
-<h3>Frequently Asked Questions</h3>
-<details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">A5</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$3.00</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">A4</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$5.00</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases & Applications</h3>
+<ul>
+  <li>Annual reports for corporate communications</li>
+  <li>Magazines for publishers and media companies</li>
+  <li>Portfolios for artists, photographers, and designers</li>
+  <li>Textbooks for educational institutions and e-learning platforms</li>
+</ul>
+
+<h3>Quality, Compliance, and Shipping</h3>
+<p>ZprintPro is dedicated to quality and compliance, using FSC-certified paper and adhering to ISO 9001 standards. Our Kwun Tong factory ensures fast turnaround times, with DHL Express global shipping delivering your books in 2-4 days. Get an instant 30-second AI quote with no signup required.`,
     longDescriptionJa: `無線綴じ本をZprintProでご注文。157g-200gコート紙またはマット紙内页+200g-250gラミネート表紙+無線綴じで平らで丈夫な背表紙。雑誌・年報・ポートフォリオ・教材様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -12424,18 +13931,54 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro Hardcover Books use rigid board covers laminated with glossy or specialty paper, with 157g–200g glossy inner pages and perfect binding. Covers can feature foil stamping, debossing, or spot UV. Premium quality for art books, commemorative albums, deluxe editions, and corporate yearbooks.
+    longDescriptionEn: `<h3>Luxurious Hardcover Book Printing for Collectors and Premium Publications</h3>
+<p>ZprintPro Hardcover Books are designed for businesses and individuals seeking a premium, durable finish for art books, commemorative albums, deluxe editions, and corporate yearbooks. Using rigid board covers laminated with glossy or specialty paper, and 157g-200g glossy inner pages with perfect binding, these hardcover books offer a luxurious feel and long-lasting durability.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Weight</th>
+      <th class="p-2 text-center">Coating</th>
+      <th class="p-2 text-center">Durability</th>
+      <th class="p-2 text-center">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">157g Glossy</td><td class="p-2 text-center">Glossy</td><td class="p-2 text-center">★★★★</td><td class="p-2">Art books, commemorative albums</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">200g Specialty Paper</td><td class="p-2 text-center">Specialty</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Deluxe editions, corporate yearbooks</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>Our hardcover books feature foil stamping, debossing, or spot UV on the covers for a distinctive, elegant look. The perfect binding ensures the books open flat, providing a comfortable reading experience. Advanced 4-color offset printing guarantees vibrant colors and sharp images, making your hardcover books truly stand out.</p>
 
-<h3>Frequently Asked Questions</h3>
-<details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">A5</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$5.00</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">A4</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$8.00</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases & Applications</h3>
+<ul>
+  <li>Art books for galleries and museums</li>
+  <li>Commemorative albums for special events and anniversaries</li>
+  <li>Deluxe editions for publishers and authors</li>
+  <li>Corporate yearbooks for companies and organizations</li>
+</ul>
+
+<h3>Quality, Compliance, and Shipping</h3>
+<p>ZprintPro is committed to quality and compliance, using FSC-certified paper and adhering to ISO 9001 standards. Our Kwun Tong factory ensures fast turnaround times, with DHL Express global shipping delivering your hardcover books in 2-4 days. Get an instant 30-second AI quote with no signup required.`,
     longDescriptionJa: `ハードカバー精装書籍をZprintProでご注文。プレミアム仕上げの精装本は、上質紙90g本文＋ハードケース表紙で、長期保存・高級感を両立した印刷物です。1部からご注文いただける少部数対応で、コミケ・卒業アルバムなど個人ユースから、企業記念誌・年鑑・カタログまで対応可能です。【製本方式】無線綴じ（64-400頁向け、PUR接着剤で丈夫で長期保存向き）・糸綴じ（16-200頁向け、上品で開いた時の見栄え◎、高級書籍推奨）・PUR製本の3方式から選択可能。【表紙仕上げ】箔押し（金・銀・銅 3 色標準対応、青箔・赤箔・ホログラム箔も別途対応）、エンボス/デボス、スポットUV（部分的光沢）、マットPP/光沢PP ラミネート加工。【本文用紙】上質紙90g、書籍用紙、高級アート紙から選択、写真集や作品集には写真用紙（半光沢）も対応。【利用シーン】卒業アルバム（10冊～）、企業記念誌（50冊～）、商品カタログ（100冊～）、年鑑、写真集、社史、研究報告書など。【データ入稿】InDesign / Illustrator / PDF対応。入稿データをスタッフが無料でチェックし、必要に応じてRGB→CMYK変換を行います。【色校正】本機色校正（有償）とデジタル色校正（無償）から選択可能、色再現にご不安がある場合も安心です。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短7営業日で全国へお届け、国内検品体制・日本語サポート対応。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -12578,18 +14121,54 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro Spiral Notebooks use 80g–100g book or wood-free paper with YO-ring or metal spiral binding, opening flat to 180 degrees for writing. Covers in 200g glossy laminated or clear PP. Ideal for student notes, meeting minutes, work planners, and corporate gifts.
+    longDescriptionEn: `<h3>Functional Spiral Notebook Printing for Everyday Use</h3>
+<p>ZprintPro Spiral Notebooks are perfect for businesses, schools, and individuals needing practical, durable notebooks for everyday use. Using 80g-100g book or wood-free paper and YO-ring or metal spiral binding, these notebooks open flat to 180 degrees, providing a comfortable writing experience. The 200g glossy laminated or clear PP covers offer protection and a sleek look.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Weight</th>
+      <th class="p-2 text-center">Coating</th>
+      <th class="p-2 text-center">Durability</th>
+      <th class="p-2 text-center">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">80g Book Paper</td><td class="p-2 text-center">Matte</td><td class="p-2 text-center">★★★</td><td class="p-2">Student notes, meeting minutes</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">100g Wood-Free Paper</td><td class="p-2 text-center">Glossy</td><td class="p-2 text-center">★★★★</td><td class="p-2">Work planners, corporate gifts</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>Our spiral binding allows the notebooks to lay completely flat, making them ideal for writing and note-taking. The advanced 4-color offset printing ensures high-quality, vibrant images and text. The glossy laminated or clear PP covers provide protection against wear and tear, making these notebooks both functional and stylish.</p>
 
-<h3>Frequently Asked Questions</h3>
-<details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">A5</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$2.00</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">A4</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$3.00</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases & Applications</h3>
+<ul>
+  <li>Student notebooks for schools and universities</li>
+  <li>Meeting notebooks for corporate meetings and conferences</li>
+  <li>Work planners for project management and scheduling</li>
+  <li>Corporate gifts for clients and employees</li>
+</ul>
+
+<h3>Quality, Compliance, and Shipping</h3>
+<p>ZprintPro is dedicated to quality and compliance, using FSC-certified paper and adhering to ISO 9001 standards. Our Kwun Tong factory ensures fast turnaround times, with DHL Express global shipping delivering your spiral notebooks in 2-4 days. Get an instant 30-second AI quote with no signup required.`,
     longDescriptionJa: `リングノートをZprintProでご注文。80g-100g書籍紙または上質紙+YOリングまたは金属スパイラル綴じで180度開いて書ける。表紙200gコート紙のラミネートまたは透明PP。学生ノート・会議議事録・ワークプランナー様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -12737,18 +14316,63 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `Business envelopes are your mailed brand handshake—ideal for statements, quotes, legal notices, and daily correspondence. Print on bright or natural bond in one-color corporate marks or four-color lockups, with optional windows for matching letterheads. Terms align with category content: envelope printing, book paper, peel-and-seal. Reserve postage and barcode clear zones; align flap geometry with inserting lines for high-volume mailing.
+    longDescriptionEn: `<h3>Professional Business Envelopes for Corporate Correspondence</h3>
+<p>ZprintPro business envelopes are designed for companies that prioritize a polished and professional image. Ideal for mailing statements, quotes, legal notices, and daily correspondence, these envelopes ensure your brand makes a strong first impression. Choose from a variety of paper stocks, including bright or natural bond, with options for one-color corporate logos or full four-color branding. Optional windows are available for easy viewing of addresses when using matching letterheads.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Weight</th>
+      <th class="p-2 text-center">Durability</th>
+      <th class="p-2 text-center">Feel</th>
+      <th class="p-2 text-center">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">90gsm Bond</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">General business</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">100gsm Coated</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">Corporate branding</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">120gsm Premium</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">High-end correspondence</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>ZprintPro utilizes state-of-the-art Heidelberg offset printing technology to deliver vibrant colors and sharp details. Our ISO 12647 color management ensures consistent, high-quality results. Optional finishes include matte, gloss, and soft-touch lamination. For a touch of elegance, consider adding a custom embossed logo or a security tint for confidentiality.</p>
+
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">C4 (229 x 324mm)</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$0.50</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">DL (110 x 220mm)</td><td class="p-2 text-center">200</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$0.40</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">C5 (162 x 229mm)</td><td class="p-2 text-center">150</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$0.45</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases & Applications</h3>
+<ul>
+  <li><strong>Corporate Correspondence:</strong> Ideal for sending invoices, contracts, and official documents.</li>
+  <li><strong>Marketing Campaigns:</strong> Perfect for direct mail campaigns that require a professional touch.</li>
+  <li><strong>Legal Notices:</strong> Ensure your legal correspondence is delivered in a secure and professional manner.</li>
+  <li><strong>Event Invitations:</strong> Make a lasting impression with custom-printed envelopes for special events.</li>
+</ul>
+
+<h3>Quality, Compliance & Shipping</h3>
+<p>ZprintPro is committed to quality and compliance, with FSC-certified paper, ISO 9001 manufacturing standards, and ISO 12647 color management. We offer DHL Express global shipping, ensuring your envelopes arrive in 2-4 days to the US, UK, Australia, Korea, Singapore, and the UAE. Our 30-second AI quote system allows you to get an instant estimate without any signup required.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. Rush orders can be completed same-day with a small expedite fee.</p></details>
+<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, and more. Finishes include matte, gloss, and soft-touch lamination.</p></details>
+<details class="my-2"><summary><strong>What is your shipping policy?</strong></summary><p>We offer DHL Express global shipping with delivery in 2-4 days. Free US shipping on orders over $100.</p></details>
+<details class="my-2"><summary><strong>How do you ensure quality?</strong></summary><p>Our ISO 9001 certification and ISO 12647 color management ensure consistent, high-quality results. We offer free sample proofing before production.</p></details>`,
     longDescriptionJa: `ビジネス封筒をZprintProでご注文。高白/生成ブック+1色～4色印刷+窓付きで書簡照合可能。請求・見積・法務文書用に最適。フラップ形状を挿入機に合わせる必要あり。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -12871,18 +14495,61 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `Colored envelopes use vibrant four-color or Pantone builds for illustrations, gradients, and photo crops so invitations, thank-yous, and DM pieces pop in the mailbox. Choose tinted stocks with knockouts or light bases with full bleed; peel-and-seal speeds closing. Terms align with category content: envelope printing, colored stocks, peel-and-seal. Test rub and edge gain on heavy solids; wedding suites can gang-proof with matching cards.
+    longDescriptionEn: `<h3>Colored Envelopes for Vibrant Invitations and Greetings</h3>
+<p>ZprintPro's colored envelopes are designed for businesses and individuals seeking to make a strong visual impact. Whether for wedding invitations, corporate announcements, or personalized greeting cards, our envelopes use vibrant four-color or Pantone printing to ensure your message stands out. Choose from a variety of tinted stocks with knockout designs or light bases with full bleed printing. Our peel-and-seal options provide convenience and speed for mass mailings.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Weight</th>
+      <th class="p-2 text-center">Coating</th>
+      <th class="p-2 text-center">Durability</th>
+      <th class="p-2 text-center">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">120g Matte</td><td class="p-2 text-center">Matte</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">General invitations</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">150g Gloss</td><td class="p-2 text-center">Gloss</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">Corporate mailings</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">200g Premium</td><td class="p-2 text-center">Soft-touch</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">Luxury invitations</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>Our envelopes are printed using state-of-the-art Heidelberg offset presses, ensuring 90%+ color saturation and sharp image reproduction. We offer a range of finishes including matte, gloss, and soft-touch lamination. Additional options like foil stamping and embossing are available for a premium touch.</p>
+
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size (inches)</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">5.25 x 7.25</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$0.50</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">6 x 9</td><td class="p-2 text-center">200</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$0.45</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases / Applications</h3>
+<p>Our colored envelopes are perfect for:</p>
+<ul>
+  <li>Wedding invitations with matching RSVP cards</li>
+  <li>Corporate mailings and direct marketing campaigns</li>
+  <li>Personalized greeting cards for special occasions</li>
+  <li>Event announcements and promotional materials</li>
+</ul>
+
+<h3>Quality, Compliance, and Shipping</h3>
+<p>ZprintPro ensures top-quality printing with FSC-certified materials and ISO 9001 manufacturing standards. We offer DHL Express global shipping, delivering to the US, UK, Australia, and more in 2-4 days. Our 30-second AI quote system provides instant pricing without the need for sign-up.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
 <details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free...</p></details>`,
     longDescriptionJa: `箔押し招待状・カラー封筒をZprintProでご注文。金箔・銀箔・銅箔対応の招待状・表彰状・株主総会招集通知向けに最適なプレミアム封筒印刷です。結婚式披露宴・表彰式・株主総会・VIP案内状に最適です。【素材】特殊紙（和紙風/クラフト/ペルーラ/ケント紙）、カラー封筒はオフセット4色/特色印刷対応。【サイズ】長3・角2・洋長3・洋2・カスタムサイズまで対応、招待状カード・席次表・返信ハガキとの一括ご注文でセット割引あり。【箔押し】金箔/銀箔/銅箔/黒箔、部分箔押しで宛名・ロゴ・紋章を強調できます。箔押しとカラー印刷の同時施工に対応。【宛名印刷】Excelリストをご支給いただければ、印刷・封入まで一括対応可能（有償）。大量の宛名印刷も効率的に処理できます。【利用シーン】結婚式披露宴50-200組規模、表彰状100-500枚規模、株主総会招集通知、VIP案内状、イベント案内。【データ入稿】Illustrator / PDF対応、入稿前にスタッフが無料でデータチェックを行います。【納期】データ確定後、最短5営業日で出荷。500枚以上の大量発注や宛名印刷込みは7-10営業日。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -13028,18 +14695,54 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `Large envelopes (typically C4) lay A4 sheets flat—ideal for contracts, tenders, transcripts, and formal papers that must stay uncreased. Use 100–120gsm bond for stiffness so multi-page sets do not burst corners; choose permanent gum or peel-and-seal tear strips for archival-friendly opening. Terms align with category content: envelope printing, book paper. For confidential sets, add interior tint or security tint patterns; machine-mail paths need fold and caliper checks.
+    longDescriptionEn: `<h3>Professional Large Envelope Printing for Official Documents</h3>
+<p>ZprintPro Large Envelopes are designed for businesses and organizations needing to send official documents, contracts, and tenders that must remain uncreased. Made from 100-120gsm bond paper, these envelopes provide the necessary stiffness to prevent bursting at the corners. Choose between permanent gum or peel-and-seal tear strips for secure and archival-friendly opening.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Weight</th>
+      <th class="p-2 text-center">Coating</th>
+      <th class="p-2 text-center">Durability</th>
+      <th class="p-2 text-center">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">100gsm Bond</td><td class="p-2 text-center">Matte</td><td class="p-2 text-center">★★★</td><td class="p-2">Official documents, contracts</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">120gsm Bond</td><td class="p-2 text-center">Matte</td><td class="p-2 text-center">★★★★</td><td class="p-2">Tenders, transcripts</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>Our large envelopes are printed using 4-color offset printing, ensuring high-quality, vibrant images and text. For confidential documents, we offer interior tint or security tint patterns to deter unauthorized access. The envelopes are designed to fit standard A4 sheets, making them ideal for official correspondence.</p>
 
-<h3>Frequently Asked Questions</h3>
-<details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">C4</td><td class="p-2 text-center">100</td><td class="p-3 text-center">3-5 days</td><td class="p-2 text-center">$1.00</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">DL</td><td class="p-2 text-center">100</td><td class="p-3 text-center">3-5 days</td><td class="p-2 text-center">$0.80</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases & Applications</h3>
+<ul>
+  <li>Official documents and contracts for businesses and legal firms</li>
+  <li>Tenders and proposals for government and corporate clients</li>
+  <li>Transcripts and certifications for educational institutions</li>
+  <li>Confidential documents requiring additional security features</li>
+</ul>
+
+<h3>Quality, Compliance, and Shipping</h3>
+<p>ZprintPro is committed to quality and compliance, using FSC-certified paper and adhering to ISO 9001 standards. Our Kwun Tong factory ensures fast turnaround times, with DHL Express global shipping delivering your large envelopes in 2-4 days. Get an instant 30-second AI quote with no signup required.`,
     longDescriptionJa: `大判封筒をZprintProでご注文。C4等の100-120gでコシを確保+A4を折らずに入れられる。永久糊または剥離式で開封性向上。契約・入札・成績書用に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -13185,18 +14888,54 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `Pearl-finish envelopes shimmer under light, delivering luxury without heavy foil—ideal for wedding suites, launch RSVPs, and VIP voucher sleeves. Favor spot colors or fine linework so the pearl coat stays visible; avoid excessive solids that mask sparkle. Terms align with category content: envelope printing, specialty paper. Pair with hairline foil borders or embossed crests; physical proofs confirm grain direction and color shift.
+    longDescriptionEn: `<h3>Luxurious Pearl Envelope Printing for Special Occasions</h3>
+<p>ZprintPro Pearl Envelopes are designed for businesses and individuals seeking a premium, shimmering finish for wedding invitations, high-end event invitations, and VIP voucher sleeves. The pearl paper provides a luxurious feel and a subtle, elegant sheen that catches the light, making your invitations and invitations stand out.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Weight</th>
+      <th class="p-2 text-center">Coating</td>
+      <th class="p-2 text-center">Durability</td>
+      <th class="p-2 text-center">Best For</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">120gsm Pearl Paper</td><td class="p-2 text-center">Pearl</td><td class="p-2 text-center">★★★★</td><td class="p-2">Wedding invitations, event invitations</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">150gsm Pearl Paper</td><td class="p-2 text-center">Pearl</td><td class="p-2 text-center">★★★★★</td><td class="p-2">VIP voucher sleeves, luxury packaging</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>Our pearl envelopes are printed using 4-color offset printing, with the option of spot colors or fine linework to ensure the pearl coat remains visible. For added elegance, we offer foil borders or embossed crests. The envelopes are designed to enhance the aesthetic appeal of your invitations and invitations.</p>
 
-<h3>Frequently Asked Questions</h3>
-<details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">MOQ</td>
+      <th class="p-2 text-center">Turnaround</td>
+      <th class="p-2 text-center">Unit Price</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">C5</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$2.00</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">C6</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$1.50</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases & Applications</h3>
+<ul>
+  <li>Wedding invitations for weddings and celebrations</li>
+  <li>Event invitations for high-end events and galas</li>
+  <li>VIP voucher sleeves for luxury brands and exclusive offers</li>
+  <li>Luxury packaging for premium products and gifts</li>
+</ul>
+
+<h3>Quality, Compliance, and Shipping</h3>
+<p>ZprintPro is committed to quality and compliance, using FSC-certified paper and adhering to ISO 9001 standards. Our Kwun Tong factory ensures fast turnaround times, with DHL Express global shipping delivering your pearl envelopes in 2-4 days. Get an instant 30-second AI quote with no signup required.`,
     longDescriptionJa: `パール封筒をZprintProでご注文。微細な輝きで高級感を演出する特殊紙。結婚招待・発表会返信・VIP券封様に最適。細い箔枠やエンボスと相性良好。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -13342,18 +15081,60 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro Exercise Books use 80g–100g book or wood-free paper with 4-color printed covers and saddle-stitch binding. Inner pages in ruled, grid, or blank formats. Smooth writing with no ink bleed—ideal for daily student use. Covers can feature school logos, class names, and subjects.
+    longDescriptionEn: `<h3>Customizable Exercise Books for Schools</h3>
+<p>ZprintPro Exercise Books are designed for educational institutions, offering customizable cover and inner page formats. These books are perfect for daily student use, featuring smooth writing surfaces and no ink bleed. Choose from ruled, grid, or blank inner pages to suit various subjects and teaching styles.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Weight</th>
+      <th class="p-2 text-center">Rigidity</th>
+      <th class="p-2 text-center">Feel</th>
+      <th class="p-2 text-center">Cost</th>
+      <th class="p-2 text-left">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">80g Book Paper</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">General school use, daily note-taking</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">100g Wood-Free</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">Art classes, premium notebooks</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>ZprintPro utilizes 4-color offset printing to ensure vibrant and accurate colors on the covers. Saddle-stitch binding provides durability and ease of use. Optional embossing and foil stamping are available for a premium finish.</p>
+
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">A4</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$1.50</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$1.00</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases / Applications</h3>
+<ul>
+  <li>Daily school notebooks for students.</li>
+  <li>Customized notebooks for specific subjects or projects.</li>
+  <li>Premium notebooks for art classes or workshops.</li>
+  <li>Bulk orders for school supply distribution.</li>
+</ul>
+
+<h3>Quality, Compliance, NAP Closing</h3>
+<p>ZprintPro Exercise Books are made with FSC-certified paper and manufactured under ISO 9001 quality standards. We offer DHL Express global shipping, ensuring your order arrives within 2-4 days. Our 30-second AI quote system provides instant pricing, and our ISO 12647 color management ensures consistent and accurate colors.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
 <details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding...</p></details>`,
     longDescriptionJa: `練習帳をZprintProでご注文。80g-100g書籍紙または上質紙+4色印刷表紙+中綴じ。内页は横線・方眼・白紙から選択、書き心地が良くにじまない。学校・塾・学生の日常使用様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -13477,18 +15258,60 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro Certificates use 200g–250g cream or white watermarked or cotton paper with 4-color printing and foil stamping. Premium texture with strong anti-counterfeiting properties. Ideal for diplomas, honors, certifications, and corporate awards. Can feature anti-counterfeiting patterns, watermarks, and unique serial numbers.
+    longDescriptionEn: `<h3>Premium Certificates with Anti-Counterfeiting Features</h3>
+<p>ZprintPro Certificates are designed for diplomas, honors, certifications, and corporate awards. These certificates are printed on 200g–250g cream or white watermarked or cotton paper, providing a premium texture and strong anti-counterfeiting properties. Foil stamping and embossing options add a touch of elegance and authenticity.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Weight</th>
+      <th class="p-2 text-center">Rigidity</th>
+      <th class="p-2 text-center">Feel</th>
+      <th class="p-2 text-center">Cost</th>
+      <th class="p-2 text-left">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">200g Watermarked</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">Diplomas, corporate awards</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">250g Cotton</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Honor certificates, VIP awards</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>ZprintPro employs 4-color printing to ensure high-quality and vibrant colors. Foil stamping and embossing are available to enhance the visual appeal and authenticity of the certificates. Optional anti-counterfeiting patterns and watermarks can be added for extra security.</p>
+
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">A4</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$3.00</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">A3</td><td class="p-2 text-center">50</td><td class="p-3 text-center">3-5 days</td><td class="p-2 text-center">$5.00</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases / Applications</h3>
+<ul>
+  <li>Diplomas for academic institutions.</li>
+  <li>Corporate awards for employee recognition.</li>
+  <li>Honor certificates for professional achievements.</li>
+  <li>Certification documents for training programs.</li>
+</ul>
+
+<h3>Quality, Compliance, NAP Closing</h3>
+<p>ZprintPro Certificates are made with FSC-certified paper and manufactured under ISO 9001 quality standards. We offer DHL Express global shipping, ensuring your order arrives within 2-4 days. Our 30-second AI quote system provides instant pricing, and our ISO 12647 color management ensures consistent and accurate colors.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
 <details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners...</p></details>`,
     longDescriptionJa: `証書をZprintProでご注文。200g-250gクリームまたは白色透かし紙またはコットン紙+4色印刷+箔押しで高級感のある質感と強い偽造防止性。卒業証書・栄誉証書・資格認定・企業表彰様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -13636,18 +15459,60 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro School Flyers use 128g–157g glossy or book paper with 4-color digital printing—economical and vibrant. Ideal for school enrollment, event promotion, course introductions, and parent meeting notices. Single or double-sided with QR codes linking to registration systems.
+    longDescriptionEn: `<h3>School Flyers for Effective Communication</h3>
+<p>ZprintPro's school flyers are designed to meet the needs of educational institutions for promotional and informational materials. Whether it's for school enrollment, event promotion, course introductions, or parent meeting notices, our flyers are printed on 128g–157g glossy or book paper using vibrant 4-color digital printing. The single or double-sided options, along with the ability to include QR codes, make these flyers a versatile tool for schools to connect with their community.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Weight</th>
+      <th class="p-2 text-center">Paper Type</th>
+      <th class="p-2 text-center">Finish</th>
+      <th class="p-2 text-center">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">128g Glossy</td><td class="p-2 text-center">Glossy</td><td class="p-2 text-center">Glossy</td><td class="p-2 text-center">General school flyers</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">157g Book Paper</td><td class="p-2 text-center">Book Paper</td><td class="p-2 text-center">Matte</td><td class="p-2 text-center">High-end school publications</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>Our flyers are printed using advanced digital printing technology, ensuring high-quality and cost-effective results. The 4-color CMYK printing guarantees vibrant colors and sharp images. Optional finishes include matte or glossy lamination for added durability and visual appeal.</p>
+
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size (inches)</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">8.5 x 11</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$0.20</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">11 x 17</td><td class="p-2 text-center">200</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$0.35</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases / Applications</h3>
+<p>Our school flyers are ideal for:</p>
+<ul>
+  <li>School enrollment campaigns</li>
+  <li>Event promotion and announcements</li>
+  <li>Course introduction and curriculum information</li>
+  <li>Parent-teacher communication and meeting notices</li>
+</ul>
+
+<h3>Quality, Compliance, and Shipping</h3>
+<p>ZprintPro ensures top-quality printing with FSC-certified materials and ISO 9001 manufacturing standards. We offer DHL Express global shipping, delivering to the US, UK, Australia, and more in 2-4 days. Our 30-second AI quote system provides instant pricing without the need for sign-up.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
 <details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free...</p></details>`,
     longDescriptionJa: `学校チラシをZprintProでご注文。128g-157gコート紙または書籍紙+4色デジタル印刷で経済的かつ鮮やか。学校募集・コース紹介・保護者会のお知らせ・登録システムQRコード様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -14269,18 +16134,56 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `Magnetic book-style rigid boxes hide magnets for one-hand, elegant openings—ideal for fragrance, watch accessories, and premium electronics. Touch films reduce fingerprints; rounded corners ease knocks. Liners can be one-piece EVA or dual-layer paper trays for device plus cables. Terms align with category content: rigid boxes, foil stamping, spot UV, embossing. Specify magnet grades and air-freight needs so we can advise labeling and compartment layouts for security screening.
+    longDescriptionEn: `<h3>Premium Magnetic Closure Gift Boxes</h3>
+<p>ZprintPro's magnetic closure gift boxes are designed for luxury brands, cosmetics, and electronics packaging. These rigid boxes feature a book-style design with hidden magnets for a one-handed, elegant opening experience. The touch films used in the construction help reduce fingerprints, while rounded corners add durability and a refined aesthetic. The liners can be customized with one-piece EVA or dual-layer paper trays to securely hold products and accessories such as cables. Our team can advise on magnet grades and air-freight needs to ensure compliance with security screening requirements.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Box Type</th>
+      <th class="p-2 text-center">Material</th>
+      <th class="p-2 text-center">Durability</th>
+      <th class="p-2 text-center">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">Rigid Box</td><td class="p-2 text-center">Greyboard</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">Luxury goods</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Magnetic Box</td><td class="p-2 text-center">Art Paper</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">Cosmetics</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">EVA Tray</td><td class="p-2 text-center">EVA Foam</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">Electronics</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>Our gift boxes are printed using high-quality offset printing with options for gold or silver foil stamping, spot UV, and embossing to add a touch of luxury. The surface finishes include matte, gloss, and soft-touch for a premium feel.</p>
 
-<h3>Frequently Asked Questions</h3>
-<details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size (inches)</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">6 x 6 x 2</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$3.00</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">8 x 8 x 3</td><td class="p-2 text-center">200</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$4.50</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases / Applications</h3>
+<p>Our magnetic closure gift boxes are perfect for:</p>
+<ul>
+  <li>Luxury cosmetics packaging</li>
+  <li>High-end electronics packaging</li>
+  <li>Premium corporate gifts</li>
+  <li>Jewelry and watch boxes</li>
+</ul>
+
+<h3>Quality, Compliance, and Shipping</h3>
+<p>ZprintPro ensures top-quality printing with FSC-certified materials and ISO 9001 manufacturing standards. We offer DHL Express global shipping, delivering to the US, UK, Australia, and more in 2-4 days. Our 30-second AI quote system provides instant pricing without the need for sign-up.</p>`,
     longDescriptionJa: `磁気フラップギフトボックスをZprintProでご注文。片手で静かに開閉できるハードケース磁気蓋構造で、ラグジュアリーブランド・化粧品・宝飾・高級食品の贈答包装に最適なプレミアムパッケージです。磁石位置は左右2点または全面密封式から選択でき、開閉の儀式感と高級感を演出します。【構造】ハードケース（厚紙+グレー台紙）+磁石、サイズは5cm～40cmまでカスタマイズ対応。【表面仕上げ】特殊紙貼り（アート紙/クラフト紙/模様紙）、箔押し（金・銀・銅 + 特殊箔）、エンボス/デボス（凹凸ロゴ）、スポットUV（部分的光沢）、マット/光沢PP ラミネート。【内装オプション】サテン生地（黒/白/ベージュ/カスタム色）、EVAフォーム成形（化粧品・ボトル形状に合わせてカット）、ブリスタートレイ（精密機器・複数アイテム収納）。【利用シーン】化粧品・スキンケア、宝飾・アクセサリー、高級食品（贈答用）、精密機器・電子製品、周年記念品。【サンプル】本制作前に白サンプル（無印刷）とフルカラープロトタイプ（有償）の2種類をご用意。色・質感・磁石の開閉感など実物でご確認いただけます。【データ入稿】展開図データ形式（Illustrator/PDF）、ロゴ・テキスト位置を明確に指定。スタッフが入稿時に無料でデータチェックを行います。【納期】データ確定後、最短10営業日で出荷。形状カスタマイズや特殊加工を含む場合は14-21営業日。お急ぎの場合は特急プラン（有償）もございます。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -14404,18 +16307,56 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro electronics packaging boxes are designed for phones, earphones, chargers, and other 3C accessories. The outer box uses 1200g greyboard laminated with art paper or specialty paper. Inserts include EVA foam trays, blister (PET/PVC), and molded pulp—precisely securing products and absorbing transport shock. Surface options include gold foil, silver foil, spot UV, or soft-touch film; magnetic flap structure enhances unboxing experience. We offer anti-static insert options meeting electronics protection standards. Prepress includes 3D structural rendering and die-cut confirmation, ensuring insert-to-product tolerance ≤0.5mm. Terminology aligns with category content: greyboard boxes, EVA trays, blister inserts, foil stamping, magnetic boxes.
+    longDescriptionEn: `<h3>Electronics Packaging Boxes for Secure Product Protection</h3>
+<p>ZprintPro's electronics packaging boxes are designed for packaging phones, earphones, chargers, and other 3C accessories. The outer box is constructed using 1200g greyboard laminated with art paper or specialty paper, providing a sturdy and durable structure. The inserts, including EVA foam trays, blister (PET/PVC), and molded pulp, are designed to secure products and absorb transport shock. Surface options such as gold foil, silver foil, spot UV, or soft-touch film enhance the visual appeal, while the magnetic flap structure improves the unboxing experience. We offer anti-static insert options to meet electronics protection standards. Our prepress process includes 3D structural rendering and die-cut confirmation, ensuring a tolerance of ≤0.5mm between the insert and the product.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Box Type</th>
+      <th class="p-2 text-center">Material</th>
+      <th class="p-2 text-center">Durability</th>
+      <th class="p-2 text-center">Best For</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">Outer Box</td><td class="p-2 text-center">Greyboard</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">Electronics</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">EVA Tray</td><td class="p-2 text-center">EVA Foam</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">Phones, earphones</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Blister Insert</td><td class="p-2 text-center">PET/PVC</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">Chargers, cables</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>Our packaging boxes are printed using high-quality offset printing with options for foil stamping, spot UV, and embossing to add a touch of luxury. The surface finishes include matte, gloss, and soft-touch for a premium feel.</p>
 
-<h3>Frequently Asked Questions</h3>
-<details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size (inches)</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">8 x 6 x 2</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$2.50</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">10 x 8 x 3</td><td class="p-2 text-center">200</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$3.50</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases / Applications</h3>
+<p>Our electronics packaging boxes are ideal for:</p>
+<ul>
+  <li>Phone and earphone packaging</li>
+  <li>Charger and cable packaging</li>
+  <li>Other 3C accessories packaging</li>
+  <li>Anti-static electronics packaging</li>
+</ul>
+
+<h3>Quality, Compliance, and Shipping</h3>
+<p>ZprintPro ensures top-quality printing with FSC-certified materials and ISO 9001 manufacturing standards. We offer DHL Express global shipping, delivering to the US, UK, Australia, and more in 2-4 days. Our 30-second AI quote system provides instant pricing without the need for sign-up.</p>`,
     longDescriptionJa: `電子機器包装箱をZprintProでご注文。1200gグレーボードにコート紙または特殊紙を貼り合わせ+内装EVAフォームトレー・ブリスター・紙パルプモールドの3種類から選択。磁石式フタ構造で開閉体験向上。帯電防止内装オプションで電子機器保護基準適合。3Cアクセサリー向けに最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -14564,18 +16505,55 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro kraft paper boxes use 300g–350g unbleached eco-friendly kraft card with rugged fibers and natural texture. Fully biodegradable and FSC-certified, ideal for organic food, artisan tea, handmade soap, and eco-brand packaging. Surface options include natural kraft tone or single/dual-color water-based ink printing, plus black foil stamping, debossing, or screen printing for a rustic yet refined visual effect. Box styles focus on auto-lock bottom tuck boxes and rope-handle boxes, with base load testing at 3–5kg. We provide free structural design and paper batch color sample confirmation to ensure consistent color across orders. Terminology aligns with category content: kraft paper boxes, FSC certification, water-based inks, black foil, debossing, biodegradable.
+    longDescriptionEn: `<h3>Kraft Paper Packaging Boxes for Eco-Friendly Packaging</h3>
+<p>ZprintPro's kraft paper packaging boxes are made from 300g–350g unbleached eco-friendly kraft card with rugged fibers and natural texture. These boxes are fully biodegradable and FSC-certified, making them ideal for organic food, artisan tea, handmade soap, and eco-food packaging. The surface options include natural kraft tone or single/dual-color water-based ink printing, along with black foil stamping, debossing, or screen printing for a rustic yet refined visual effect. Box styles focus on auto-lock bottom tuck boxes and rope-handle boxes, with base load testing at 3–5kg. We provide free structural design and paper batch color sample confirmation to ensure consistent color across orders.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Box Type</th>
+      <th class="p-2 text-center">Material</th>
+      <th class="p-2 text-center">Durability</th>
+      <th class="p-2 text-center">Best For</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">Auto-lock Bottom Tuck Box</td><td class="p-2 text-center">Kraft Card</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">Organic food, artisan tea</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Rope-handle Box</td><td class="p-2 text-center">Kraft Card</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">Handmade soap, eco-food</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>Our kraft paper boxes are printed using water-based inks, with options for black foil stamping, debossing, or screen printing to add a touch of elegance. The finishes include matte and glossy for a premium feel.</p>
 
-<h3>Frequently Asked Questions</h3>
-<details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size (inches)</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">6 x 6 x 3</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$1.50</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">8 x 8 x 4</td><td class="p-2 text-center">200</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$2.00</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases / Applications</h3>
+<p>Our kraft paper packaging boxes are perfect for:</p>
+<ul>
+  <li>Organic food packaging</li>
+  <li>Artisan tea packaging</li>
+  <li>Handmade soap packaging</li>
+  <li>Eco-food packaging</li>
+</ul>
+
+<h3>Quality, Compliance, and Shipping</h3>
+<p>ZprintPro ensures top-quality printing with FSC-certified materials and ISO 9001 manufacturing standards. We offer DHL Express global shipping, delivering to the US, UK, Australia, and more in 2-4 days. Our 30-second AI quote system provides instant pricing without the sign-up.</p>`,
     longDescriptionJa: `クラフト紙箱をZprintProでご注文。300g-350g無漂白環境配慮クラフトカード+FSC森林認証+完全生分解性。表面は原紙色または単色/2色水性インク印刷+黒箔押し・デボス・シルクスクリーン加工。自動ロック底差し込み箱と紐付き手提げ箱が主体。有機食品・手作りお茶・手作り石鹸・環境ブランド包装様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -14723,18 +16701,55 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro drawer gift boxes use 1200g greyboard laminated with 157g art paper or velvet-textured specialty paper. The inner tray features a slide-rail structure with satin ribbon pulls for smooth opening and a ceremonial unboxing experience—ideal for tea, mooncakes, jewelry, and premium corporate gifts. Inserts include EVA cutouts, velvet lining, or satin fabric, precisely securing products and preventing scratches. Surface finishes include gold foil, silver foil, spot UV, and embossed debossing; hidden magnetic closures ensure the lid stays shut. We provide free 3D structural design and material touch samples, with 7–10 working day delivery after confirmation. Terminology aligns with category content: greyboard gift boxes, slide-rail structure, ribbon pulls, foil stamping, velvet lining.
+    longDescriptionEn: `<h3>Drawer Slide Gift Boxes for Elegant Presentations</h3>
+<p>ZprintPro's drawer slide gift boxes are designed for packaging premium products such as tea, mooncakes, and jewelry. These boxes feature a greyboard structure laminated with 157g art paper or velvet-textured specialty paper, providing a luxurious feel. The inner tray has a slide-rail structure with satin ribbon pulls for a smooth and ceremonial unboxing experience. Inserts such as EVA cutouts, velvet lining, or satin fabric are used to secure products and prevent scratches. Surface finishes include gold foil, silver foil, spot UV, and embossed debossing, while hidden magnetic closures ensure the lid stays shut. We provide free 3D structural design and material touch samples, with a delivery time of 7–10 working days after confirmation.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Box Type</th>
+      <th class="p-2 text-center">Material</th>
+      <th class="p-2 text-center">Durability</th>
+      <th class="p-2 text-center">Best For</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">Slide-rail Box</td><td class="p-2 text-center">Greyboard</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">Tea, mooncakes</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Drawer Box</td><td class="p-2 text-center">Art Paper</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">Jewelry, premium gifts</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>Our gift boxes are printed using high-quality offset printing with options for foil stamping, spot UV, and embossing to add a touch of luxury. The surface finishes include matte, gloss, and soft-touch for a premium feel.</p>
 
-<h3>Frequently Asked Questions</h3>
-<details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<h3>Size / Format / MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size (inches)</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">8 x 8 x 3</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$4.00</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font_medium">10 x 10 x 4</td><td class="p-2 text-center">200</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$5.00</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases / Applications</h3>
+<p>Our drawer slide gift boxes are perfect for:</p>
+<ul>
+  <li>Tea packaging</li>
+  <li>Mooncake packaging</li>
+  <li>Jewelry packaging</li>
+  <li>Premium corporate gifts</li>
+</ul>
+
+<h3>Quality, Compliance, and Shipping</h3>
+<p>ZprintPro ensures top-quality printing with FSC-certified materials and ISO 9001 manufacturing standards. We offer DHL Express global shipping, delivering to the US, UK, Australia, and more in 2-4 days. Our 30-second AI quote system provides instant pricing without the need for sign-up.</p>`,
     longDescriptionJa: `引き出し式ギフトボックスをZprintProでご注文。1200gグレーボードに157gコート紙またはベルベット調特殊紙を貼り合わせ+内箱スライドレール構造+サテンリボン引手で滑らかな開閉と儀式的な開封体験。お茶・月餅・宝石類・高級企業ギフト包装様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -14859,18 +16874,65 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲香港本地支援港九新界免費速遞（辦公室/港鐵站交收），觀塘門市自取 24 小時。訂單滿 HK$500 即享免費送貨。國際訂單透過 DHL Express 全球配送。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `ZprintPro fruit stickers and food labels use food-grade facestock with non-migrating soy-based inks, passing SGS and FDA food-contact testing. They can be directly applied to fresh fruit skin, bakery packaging, and beverage cups. Facestock options include clear BOPP, white PE, and biodegradable PLA—waterproof, oil-resistant, and maintaining adhesion in 0–4°C refrigerated environments. We support variable barcodes and origin QR codes for traceability and anti-counterfeiting. Prepress: allow die-cut bleed and use high-contrast colors to ensure readability on moist surfaces. Terminology aligns with category content: food-grade stickers, BOPP labels, PE labels, PLA biodegradable, die-cutting.
+    longDescriptionEn: `<h3>Food-Safe Stickers for Fresh Produce and Packaging</h3>
+<p>ZprintPro offers waterproof and oil-resistant fruit stickers and food labels designed for fresh produce, bakery items, and beverage packaging. Our labels are made with food-grade materials and non-migrating soy-based inks, ensuring compliance with SGS and FDA food-contact standards. Available in clear BOPP, white PE, and biodegradable PLA, these labels maintain adhesion in refrigerated environments (0–4°C) and are ideal for applications requiring durability and safety.</p>
 
-<p><em>ZprintPro Hong Kong-based printing SaaS with our own Kwun Tong factory, 48-hour local delivery, and DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>
+<h3>Material & GSM Specifications</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Material</th>
+      <th class="p-2 text-center">Durability</th>
+      <th class="p-2 text-center">Adhesion</th>
+      <th class="p-2 text-center">Cost</th>
+      <th class="p-2 text-left">Best For</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">Clear BOPP</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">Fresh produce, beverage cups</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">White PE</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Bakery packaging, labels</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Biodegradable PLA</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Eco-friendly brands, compostable packaging</td></tr>
+  </tbody>
+</table>
 
+<h3>Printing & Finishing Processes</h3>
+<p>Our state-of-the-art printing technology includes high-contrast color printing to ensure readability on moist surfaces and variable data options such as barcodes and QR codes for traceability and anti-counterfeiting. We use advanced die-cutting techniques to achieve precise shapes and sizes, and optional matte or gloss lamination to enhance durability and appearance.</p>
+
+<h3>Size, Format, and MOQ Table</h3>
+<table class="w-full border-collapse my-4 text-sm">
+  <thead>
+    <tr class="bg-[#2873F5] text-white">
+      <th class="p-2 text-left">Size (mm)</th>
+      <th class="p-2 text-center">MOQ</th>
+      <th class="p-2 text-center">Turnaround</th>
+      <th class="p-2 text-center">Unit Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="border-b"><td class="p-2 font-medium">50x50</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$0.50</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">100x100</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$0.30</td></tr>
+  </tbody>
+</table>
+
+<h3>Use Cases and Applications</h3>
+<p>ZprintPro fruit and food labels are perfect for:
+<ul>
+  <li>Fruit and vegetable stickers for branding and traceability.</li>
+  <li>Bakery and confectionery packaging for product information and branding.</li>
+  <li>Beverage cups and bottles for logos and promotional messages.</li>
+  <li>Eco-friendly brands looking for biodegradable options.</li>
+</ul>
+</p>
+
+<h3>Quality, Compliance, and Shipping</h3>
+<p>ZprintPro is committed to quality and compliance, with FSC-certified materials, ISO 9001 manufacturing standards, and ISO 12647 color management. We offer DHL Express global shipping with delivery in 2-4 days. Get an instant 30-second AI quote with no signup required.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
-<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
-<details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free samples for comparison.</p></details>
-<details class="my-2"><summary><strong>Do you offer international shipping via DHL Express?</strong></summary><p>Yes. DHL Express delivers worldwide in 2-4 days. To Japan (Tokyo, Osaka, Nagoya, Fukuoka), 2-3 business days. To US, UK, Australia, Korea, Singapore, UAE, 2-4 business days. Free US shipping on orders over $100.</p></details>
-<details class="my-2"><summary><strong>What if there are quality issues with my print order?</strong></summary><p>ZprintPro offers a 100% satisfaction guarantee — free reprint for color mismatch, full refund for any quality issue. FSC-certified paper, ISO 12647 color management, Heidelberg printing. Free AI preflight check and proofing included.</p></details>
-`,
+<details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro Hong Kong factory supports 24-hour pickup at our Kwun Tong store. Rush orders can be accommodated for an additional fee.</p></details>
+<details class="my-2"><summary><strong>What materials do you offer for stickers?</strong></summary><p>We offer clear BOPP, white PE, and biodegradable PLA materials for our stickers.</p></details>
+<details class="my-2"><summary><strong>Do you offer global shipping?</strong></summary><p>Yes, we offer DHL Express global shipping with delivery in 2-4 days.</p></details>
+<details class="my-2"><summary><strong>How do you ensure quality?</strong></summary><p>We adhere to FSC certification, ISO 9001 manufacturing standards, and ISO 12647 color management to ensure the highest quality.</p></details>`,
     longDescriptionJa: `フルーツシール食品ラベルをZprintProでご注文。食品グレード素材+SGS/FDA食品接触テストクリア、BOPP/PE/PLA素材選択可で0-4°C冷蔵環境対応。生鮮果物・ bakery・飲料カップ様に最適。香港本社印刷、国内検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記完備。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
