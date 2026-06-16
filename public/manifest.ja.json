@@ -1,0 +1,47 @@
+{
+  "id": "/ja",
+  "name": "ZPrintPro - グローバル印刷サービス",
+  "short_name": "ZPrintPro",
+  "description": "ZPrintPro - 香港拠点のカスタム印刷 SaaS。AI見積もり30秒、Airwallex多通貨決済、DHL Express全世界72時間納品（米英豪日韓星）。FSC認証紙、ISO 9001品質保証。名刺・パッケージ・ステッカー。",
+  "start_url": "/ja?source=pwa",
+  "scope": "/ja/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2873F5",
+  "orientation": "portrait-primary",
+  "dir": "ltr",
+  "lang": "ja-JP",
+  "icons": [
+    { "src": "/icon-72x72.png", "sizes": "72x72", "type": "image/png", "purpose": "maskable any" },
+    { "src": "/icon-96x96.png", "sizes": "96x96", "type": "image/png", "purpose": "maskable any" },
+    { "src": "/icon-128x128.png", "sizes": "128x128", "type": "image/png", "purpose": "maskable any" },
+    { "src": "/icon-144x144.png", "sizes": "144x144", "type": "image/png", "purpose": "maskable any" },
+    { "src": "/icon-152x152.png", "sizes": "152x152", "type": "image/png", "purpose": "maskable any" },
+    { "src": "/icon-192x192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable any" },
+    { "src": "/icon-384x384.png", "sizes": "384x384", "type": "image/png", "purpose": "maskable any" },
+    { "src": "/icon-512x512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable any" }
+  ],
+  "categories": ["business", "shopping", "productivity"],
+  "screenshots": [
+    { "src": "/screenshot-1.png", "sizes": "1280x720", "type": "image/png", "form_factor": "wide" },
+    { "src": "/screenshot-2.png", "sizes": "750x1334", "type": "image/png", "form_factor": "narrow" }
+  ],
+  "shortcuts": [
+    {
+      "name": "無料見積もり",
+      "short_name": "見積もり",
+      "description": "30秒で即時見積もり取得",
+      "url": "/ja/quote",
+      "icons": [{ "src": "/icon-quote.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "製品を見る",
+      "short_name": "製品",
+      "description": "全印刷製品カテゴリを閲覧",
+      "url": "/ja/category/business-cards/",
+      "icons": [{ "src": "/icon-products.png", "sizes": "96x96" }]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

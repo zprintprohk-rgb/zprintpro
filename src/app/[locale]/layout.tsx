@@ -113,7 +113,6 @@ export const metadata: Metadata = {
     icon: '/images/logo-icon.svg',
     apple: '/images/logo-icon.svg',
   },
-  manifest: '/manifest.json',
 };
 
 export const viewport: Viewport = {
@@ -150,6 +149,11 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://api.airwallex.com" />
         <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+        {/* 2026-06-17 Per-locale PWA manifest — 3 locale 分 manifest,Chrome 自动按 lang 匹配 */}
+        <link rel="manifest" href={`/manifest.${safeLocale}.json`} />
+        <link rel="manifest" href="/manifest.zh-hk.json" hrefLang="zh-HK" />
+        <link rel="manifest" href="/manifest.en.json" hrefLang="en" />
+        <link rel="manifest" href="/manifest.ja.json" hrefLang="ja" />
         {/* 2026-06-10 Phase B 修复 P0-4：移除 layout 级 hreflang 重复渲染。
             Next.js 14+ 已通过 metadata.alternates.languages 自动输出 hreflang <link>，
             且各 page.tsx 的 generate*Metadata 已经传了正确的当前页 path（含 /product/${slug}/）。
