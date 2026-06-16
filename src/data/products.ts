@@ -1921,6 +1921,7 @@ export const products: Product[] = [
 <p><em>Printed in our Hong Kong facility, shipped worldwide via DHL Express. ZprintPro — your global printing partner for small-batch stickers, indie brand packaging, and creator economy materials.</em></p>
 
     `,
+    longDescriptionJa: `
 <h3>素材材質対比</h3>
 <p>小ロットステッカーは 4 種類の素材から選択、用途と予算に応じて最適化。</p>
 <table>
@@ -2242,6 +2243,7 @@ export const products: Product[] = [
 <p><em>Printed in our Hong Kong facility, shipped worldwide via DHL Express. ZprintPro — your global printing partner for custom die-cut stickers, brand decals, and creative marketing materials.</em></p>
 
     `,
+    longDescriptionJa: `
 <h3>素材材質対比</h3>
 <p>ダイカットステッカーは 4 種類の素材から選択、屋外・屋内・短期・長期で使い分け。</p>
 <table>
@@ -2927,6 +2929,7 @@ export const products: Product[] = [
 <p><em>Printed in our Hong Kong facility, shipped worldwide via DHL Express. ZprintPro — your global printing partner for fluorescent stickers, attention-grabbing signage, and high-visibility brand materials.</em></p>
 
     `,
+    longDescriptionJa: `
 <h3>素材材質対比</h3>
 <p>蛍光ステッカーは 4 種類の素材から選択、用途と予算に応じて最適化。</p>
 <table>
@@ -3613,6 +3616,7 @@ export const products: Product[] = [
 <p><em>Printed in our Hong Kong facility, shipped worldwide via DHL Express. ZprintPro — your global printing partner for premium retail packaging, gift bags, and luxury brand merchandise.</em></p>
 
     `,
+    longDescriptionJa: `
 <h3>紙質材質対比</h3>
 <p>ギフトバッグは 4 種類の紙質から選択、季節と予算に応じて最適化。</p>
 <table>
@@ -5443,6 +5447,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <p><em>Printed in our Hong Kong facility, shipped worldwide via DHL Express. ZprintPro — your global printing partner for posters, signage, and visual marketing materials.</em></p>
 
     `,
+    longDescriptionJa: `
 <h3>紙質材質対比</h3>
 <p>A2 ポスターは 4 種類の紙質から選択、屋内イベントから屋外看板まで対応。</p>
 <table>
@@ -11858,7 +11863,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     category: 'educational',
     category_slug: 'educational',
     name: '教科書印刷', nameEn: 'Textbooks', nameJa: '教科書印刷', title_zh: '教科書印刷',
-    description: '教科書印刷 50 本起, 道林紙・ISBN 支援, 香港本地智印雲 ZprintPro 教育印刷專家。', descriptionEn: 'Textbook printing from 50 copies. Wood-free paper, ISBN support, Hong Kong-based ZprintPro education printing expert.', descriptionJa: '教科書印刷 50冊から対応。道林紙・無線綴じ・ISBN 取得サポート。香港自社工場の智印雲（ZprintPro）。',
+    description: '教科書印刷 50 本起, 道林紙・ISBN 支援, 香港本地智印雲 ZprintPro 教育印刷專家。', descriptionEn: 'Textbook printing from 50 copies. Wood-free paper, ISBN support, Hong Kong-based ZprintPro education printing expert.', descriptionJa: '教科書印刷 50冊から対応。道林紙・無線綴じ・ISBN 取得サポート。香港自社工場の智印雲（ZprintPro）。', description_zh: '教科書印刷 50 本起, 道林紙・ISBN 支援, 香港本地智印雲 ZprintPro 教育印刷專家。',
     longDescription: `<h3>紙張材質對比</h3>
 <p>教科書常用 3 種紙材，分別適用不同預算、頁數與閱讀體驗。智印雲 ZprintPro 所有紙張均通過 FSC 森林管理委員會認證。智印雲 ZprintPro 教科書印刷服務亦可依學校 ESG 採購指引，彈性調整紙材結構：</p>
 <table>

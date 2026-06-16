@@ -352,7 +352,7 @@ function run() {
         `        "keywords": ${JSON.stringify(d.keywords)},\n` +
         `        "body": ${JSON.stringify(d.body)}\n      `;
       if (seoRe.test(content)) {
-        content = content.replace(seoRe, `$1${newSeoEn}$3`);
+        content = content.replace(seoRe, (_, g1, g2, g3) => g1 + newSeoEn + g3);
         applied++;
         console.log(`✅ ${slug}: seo.en updated`);
       } else {
@@ -360,7 +360,7 @@ function run() {
       }
       const altRe = new RegExp(`("${slug}":\\s*{[\\s\\S]*?"imageAlt":\\s*{[\\s\\S]*?"en":\\s*")([^"]*)(")`, 'm');
       if (altRe.test(content)) {
-        content = content.replace(altRe, `$1${d.imageAlt.replace(/"/g, '\\"')}$3`);
+        content = content.replace(altRe, (_, g1, g2, g3) => g1 + d.imageAlt.replace(/"/g, '\\"') + g3);
         console.log(`✅ ${slug}: imageAlt.en updated`);
       } else {
         console.log(`⚠️  ${slug}: imageAlt.en regex no match`);
