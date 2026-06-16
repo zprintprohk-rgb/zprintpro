@@ -1,4 +1,4 @@
-﻿{
+{
   "lighthouseVersion": "12.8.2",
   "requestedUrl": "http://localhost:3456/zh-hk/",
   "mainDocumentUrl": "http://localhost:3456/zh-hk/",
@@ -6657,7 +6657,7 @@
     "font-size": {
       "id": "font-size",
       "title": "Document uses legible font sizes",
-      "description": "Font sizes less than 12px are too small to be legible and require mobile visitors to “pinch to zoom” in order to read. Strive to have >60% of page text ≥12px. [Learn more about legible font sizes](https://developer.chrome.com/docs/lighthouse/seo/font-size/).",
+      "description": "Font sizes less than 12px are too small to be legible and require mobile visitors to 'pinch to zoom' in order to read. Strive to have >60% of page text ≥12px. [Learn more about legible font sizes](https://developer.chrome.com/docs/lighthouse/seo/font-size/).",
       "score": 1,
       "scoreDisplayMode": "binary",
       "displayValue": "99.96% legible text",
@@ -6753,7 +6753,7 @@
     },
     "is-crawlable": {
       "id": "is-crawlable",
-      "title": "Page isn’t blocked from indexing",
+      "title": "Page isn't blocked from indexing",
       "description": "Search engines are unable to include your pages in search results if they don't have permission to crawl them. [Learn more about crawler directives](https://developer.chrome.com/docs/lighthouse/seo/is-crawlable/).",
       "score": 1,
       "scoreDisplayMode": "binary",
@@ -9044,11 +9044,11 @@
     },
     "seo-mobile": {
       "title": "Mobile Friendly",
-      "description": "Make sure your pages are mobile friendly so users don’t have to pinch or zoom in order to read the content pages. [Learn how to make pages mobile-friendly](https://developers.google.com/search/mobile-sites/)."
+      "description": "Make sure your pages are mobile friendly so users don't have to pinch or zoom in order to read the content pages. [Learn how to make pages mobile-friendly](https://developers.google.com/search/mobile-sites/)."
     },
     "seo-content": {
       "title": "Content Best Practices",
-      "description": "Format your HTML in a way that enables crawlers to better understand your app’s content."
+      "description": "Format your HTML in a way that enables crawlers to better understand your app's content."
     },
     "seo-crawl": {
       "title": "Crawling and Indexing",
