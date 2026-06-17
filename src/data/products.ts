@@ -3405,8 +3405,8 @@ export const products: Product[] = [
     slug: 'kraft-paper-bags',
     category: 'paper-bags',
     category_slug: 'paper-bags',
-    name: '牛皮紙袋', nameEn: 'Kraft Paper Bags', nameJa: 'クラフト紙袋', title_zh: '牛皮紙袋',
-    description: '環保牛皮紙材質，質樸自然，深受消費者喜愛。適合服裝店、禮品店、咖啡店。多種尺寸可選，可定制Logo印刷。', descriptionEn: 'Eco-friendly kraft paper, natural and rustic, loved by consumers. Perfect for clothing stores, gift shops, coffee shops.', descriptionJa: '環境に優しいクラフト紙、質朴で自然、消費者に人気。衣料品店、ギフトショップ、コーヒーショップに最適。', description_zh: '環保牛皮紙材質，質樸自然，深受消費者喜愛。適合服裝店、禮品店、咖啡店。多種尺寸可選，可定制Logo印刷。',
+    name: '牛皮紙袋', nameEn: 'Kraft Paper Bags', nameJa: 'クラフト紙袋', title_zh: '牛皮紙袋印刷訂製 100個起印 免費刀模 FSC認證 | 智印雲 ZprintPro',
+    description: '牛皮紙袋印刷訂製，100個起印，HK$1.8起/個。FSC環保認證紙材，多尺寸多規格，免費刀模設計，支援燙金UV局部。即日交貨，全港送貨，零售餐飲活動品牌推廣。', descriptionEn: 'Eco-friendly kraft paper, natural and rustic, loved by consumers. Perfect for clothing stores, gift shops, coffee shops.', descriptionJa: '環境に優しいクラフト紙、質朴で自然、消費者に人気。衣料品店、ギフトショップ、コーヒーショップに最適。', description_zh: '環保牛皮紙材質，質樸自然，深受消費者喜愛。適合服裝店、禮品店、咖啡店。多種尺寸可選，可定制Logo印刷。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -3896,8 +3896,8 @@ export const products: Product[] = [
     slug: 'gift-bags',
     category: 'paper-bags',
     category_slug: 'paper-bags',
-    name: '禮品紙袋', nameEn: 'Gift Bags', nameJa: 'ギフト紙袋', title_zh: '禮品紙袋',
-    description: '精美設計，配合燙金、UV等工藝。送禮必備，提升禮品檔次。', descriptionEn: 'Exquisite design with foil stamping, UV and other processes. Essential for gifting, elevates gift quality.', descriptionJa: '精巧なデザイン、箔押し・UVなどの加工付き。ギフトに必須、ギフトの質を向上。', description_zh: '精美設計，配合燙金、UV等工藝。送禮必備，提升禮品檔次。',
+    name: '禮品紙袋', nameEn: 'Gift Bags', nameJa: 'ギフト紙袋', title_zh: '禮品紙袋印刷訂製 高檔禮品袋 100個起印 燙金LOGO | 智印雲',
+    description: '禮品紙袋印刷訂製，100個起印，HK$3.5起/個。棉繩緞帶手挽，燙金UV壓凹工藝，支援多尺寸客製LOGO。適合品牌活動週年慶贈品，即日交貨，全港免費送貨。', descriptionEn: 'Exquisite design with foil stamping, UV and other processes. Essential for gifting, elevates gift quality.', descriptionJa: '精巧なデザイン、箔押し・UVなどの加工付き。ギフトに必須、ギフトの質を向上。', description_zh: '精美設計，配合燙金、UV等工藝。送禮必備，提升禮品檔次。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -4245,8 +4245,8 @@ export const products: Product[] = [
     slug: 'eco-paper-bags',
     category: 'paper-bags',
     category_slug: 'paper-bags',
-    name: '環保紙袋', nameEn: 'Eco Paper Bags', nameJa: 'エコ紙袋', title_zh: '環保紙袋',
-    description: 'FSC認證環保紙張，可持續發展。適合注重環保的品牌。', descriptionEn: 'FSC-certified eco-friendly paper, sustainable development. Perfect for environmentally conscious brands.', descriptionJa: 'FSC認証の環境に優しい紙、持続可能な開発。環境に配慮するブランドに最適。', description_zh: 'FSC認證環保紙張，可持續發展。適合注重環保的品牌。',
+    name: '環保紙袋', nameEn: 'Eco Paper Bags', nameJa: 'エコ紙袋', title_zh: '環保紙袋印刷訂製 FSC再生認證 100個起印 | 智印雲 ZprintPro',
+    description: '環保紙袋印刷訂製，100個起印，HK$2.2起/個。FSC再生認證紙材，可完全降解，支援燙金UV印刷。適合ESG品牌碳審計、減塑徵費合規，即日交貨，全港送貨。', descriptionEn: 'FSC-certified eco-friendly paper, sustainable development. Perfect for environmentally conscious brands.', descriptionJa: 'FSC認証の環境に優しい紙、持続可能な開発。環境に配慮するブランドに最適。', description_zh: 'FSC認證環保紙張，可持續發展。適合注重環保的品牌。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -4809,8 +4809,8 @@ export const products: Product[] = [
     slug: 'a4-flyers',
     category: 'flyers',
     category_slug: 'flyers',
-    name: 'A4宣傳單張', nameEn: 'A4 Flyers', nameJa: 'A4チラシ', title_zh: 'A4宣傳單張',
-    description: '標準A4尺寸，最常用的宣傳單張規格。157g銅版紙，四色印刷，色彩鮮豔。適合產品推廣、活動宣傳。', descriptionEn: 'Standard A4 size, most common flyer format. 157g glossy paper, 4-color printing, vibrant colors.', descriptionJa: '標準A4サイズ、最も一般的なチラシ形式。157gコート紙、4色印刷、鮮やかな色彩。', description_zh: '標準A4尺寸，最常用的宣傳單張規格。157g銅版紙，四色印刷，色彩鮮豔。適合產品推廣、活動宣傳。',
+    name: 'A4宣傳單張', nameEn: 'A4 Flyers', nameJa: 'A4チラシ', title_zh: 'A4傳單印刷 100張起印 HK$0.3/張 雙面彩印 | 智印雲 ZprintPro',
+    description: 'A4傳單印刷訂製，100張起印，HK$0.3起/張。157g銅版紙雙面四色印刷，免費設計打樣。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。', descriptionEn: 'Standard A4 size, most common flyer format. 157g glossy paper, 4-color printing, vibrant colors.', descriptionJa: '標準A4サイズ、最も一般的なチラシ形式。157gコート紙、4色印刷、鮮やかな色彩。', description_zh: '標準A4尺寸，最常用的宣傳單張規格。157g銅版紙，四色印刷，色彩鮮豔。適合產品推廣、活動宣傳。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -5143,8 +5143,8 @@ export const products: Product[] = [
     slug: 'a5-flyers',
     category: 'flyers',
     category_slug: 'flyers',
-    name: 'A5宣傳單張', nameEn: 'A5 Flyers', nameJa: 'A5チラシ', title_zh: 'A5宣傳單張',
-    description: 'A5尺寸，經濟實惠，適合大量派發。餐飲外賣、快閃活動首選。', descriptionEn: 'A5 size, economical, perfect for mass distribution. First choice for food delivery, flash events.', descriptionJa: 'A5サイズ、経済的、大量配布に最適。フードデリバリー、フラッシュイベントの第一選択。', description_zh: 'A5尺寸，經濟實惠，適合大量派發。餐飲外賣、快閃活動首選。',
+    name: 'A5宣傳單張', nameEn: 'A5 Flyers', nameJa: 'A5チラシ', title_zh: 'A5傳單印刷 100張起印 雙面四色 免費設計 | 智印雲 ZprintPro',
+    description: 'A5傳單印刷訂製，100張起印，HK$0.18起/張。157g銅版紙雙面四色，免費設計排版。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。', descriptionEn: 'A5 size, economical, perfect for mass distribution. First choice for food delivery, flash events.', descriptionJa: 'A5サイズ、経済的、大量配布に最適。フードデリバリー、フラッシュイベントの第一選択。', description_zh: 'A5尺寸，經濟實惠，適合大量派發。餐飲外賣、快閃活動首選。',
     longDescription: `智印雲A5宣傳單張採用128g銅版紙或100g書紙，配合四色數碼印刷，經濟實惠且色彩鮮豔。A5尺寸（148×210mm）適合大量派發，成本較A4降低約40%，是餐飲外賣、快閃活動及社區宣傳的首選。可選單面或雙面印刷，並支援二維碼與優惠券設計。我們提供免費排版與出血檢查，確保裁切精準。與分類頁內容一致，材質關鍵詞包含：A5單張、銅版紙、書紙、數碼印刷。<h3>傳單尺寸對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">尺寸</th><th class="p-2 text-center">資訊容量</th><th class="p-2 text-center">派發效率</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用場景</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">A4 (210×297mm)</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">詳細產品目錄、課程介紹</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5 (148×210mm)</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">餐飲外賣、活動宣傳</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">A6 (105×148mm)</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">街頭派發、外賣插頁</td></tr></tbody></table><h3>傳單尺寸對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">尺寸</th><th class="p-2 text-center">資訊容量</th><th class="p-2 text-center">派發效率</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用場景</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">A4 (210×297mm)</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">詳細產品目錄、課程介紹</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5 (148×210mm)</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">餐飲外賣、活動宣傳</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">A6 (105×148mm)</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">街頭派發、外賣插頁</td></tr></tbody></table>
 
 **智印雲 香港本地印刷**：48 小時快遞、觀塘門市自取。
@@ -5504,8 +5504,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'folded-leaflets',
     category: 'flyers',
     category_slug: 'flyers',
-    name: '摺疊宣傳單張', nameEn: 'Folded Leaflets', nameJa: '折りたたみパンフレット', title_zh: '摺疊宣傳單張',
-    description: '對摺或三摺設計，可展示更多信息。適合產品目錄、服務介紹。', descriptionEn: 'Bi-fold or tri-fold design, can display more information.', descriptionJa: '二つ折りまたは三つ折りデザイン、より多くの情報を表示可能。', description_zh: '對摺或三摺設計，可展示更多信息。適合產品目錄、服務介紹。',
+    name: '摺疊宣傳單張', nameEn: 'Folded Leaflets', nameJa: '折りたたみパンフレット', title_zh: '三摺雙摺宣傳單印刷 100張起印 企業簡介摺頁 | 智印雲',
+    description: '三摺雙摺宣傳單印刷訂製，100張起印，HK$0.45起/張。157g-250g銅版紙，免費摺頁設計排版。適合企業簡介產品目錄活動宣傳，3-5天交貨，全港送貨。', descriptionEn: 'Bi-fold or tri-fold design, can display more information.', descriptionJa: '二つ折りまたは三つ折りデザイン、より多くの情報を表示可能。', description_zh: '對摺或三摺設計，可展示更多信息。適合產品目錄、服務介紹。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -6236,8 +6236,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'a2-posters',
     category: 'posters',
     category_slug: 'posters',
-    name: 'A2海報印刷', nameEn: 'A2 Posters', nameJa: 'A2ポスター', title_zh: 'A2海報印刷',
-    description: '標準A2尺寸，活動宣傳、產品推廣首選。157g銅版紙，色彩鮮豔，即日交貨。', descriptionEn: 'Standard A2 size, first choice for event promotion. 157g glossy paper, vibrant colors, same-day delivery.', descriptionJa: '標準A2サイズ、イベント宣伝の第一選択。157gコート紙、鮮やかな色彩、即日納品。', description_zh: '標準A2尺寸，活動宣傳、產品推廣首選。157g銅版紙，色彩鮮豔，即日交貨。',
+    name: 'A2海報印刷', nameEn: 'A2 Posters', nameJa: 'A2ポスター', title_zh: 'A2海報印刷 1張起印 HK$8/張 雙面彩印 防水 | 智印雲 ZprintPro',
+    description: 'A2海報印刷訂製，1張起印，HK$8起/張。200g銅版紙/PP合成紙，雙面四色印刷，防水防曬耐用。適合地產活動展覽店舖推廣，48小時交貨，全港送貨。', descriptionEn: 'Standard A2 size, first choice for event promotion. 157g glossy paper, vibrant colors, same-day delivery.', descriptionJa: '標準A2サイズ、イベント宣伝の第一選択。157gコート紙、鮮やかな色彩、即日納品。', description_zh: '標準A2尺寸，活動宣傳、產品推廣首選。157g銅版紙，色彩鮮豔，即日交貨。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -7156,8 +7156,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'art-posters',
     category: 'posters',
     category_slug: 'posters',
-    name: '藝術海報', nameEn: 'Art Posters', nameJa: 'アートポスター', title_zh: '藝術海報',
-    description: '高級藝術紙張，色彩還原度高。適合藝術展覽、攝影作品。', descriptionEn: 'Premium art paper, high color accuracy. Perfect for art exhibitions, photography works.', descriptionJa: '高級アート紙、高い色再現性。美術展、写真作品に最適。', description_zh: '高級藝術紙張，色彩還原度高。適合藝術展覽、攝影作品。',
+    name: '藝術海報', nameEn: 'Art Posters', nameJa: 'アートポスター', title_zh: '藝術海報印刷 1張起印 美術紙/相紙 高端畫冊 | 智印雲',
+    description: '藝術海報印刷訂製，1張起印，HK$15起/張。200g美術紙/啞粉紙/RC相紙，Giclée級色彩管理。適合攝影師藝術家畫廊展覽，3-5天交貨，全球配送。', descriptionEn: 'Premium art paper, high color accuracy. Perfect for art exhibitions, photography works.', descriptionJa: '高級アート紙、高い色再現性。美術展、写真作品に最適。', description_zh: '高級藝術紙張，色彩還原度高。適合藝術展覽、攝影作品。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -7525,8 +7525,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'gift-boxes',
     category: 'packaging',
     category_slug: 'packaging',
-    name: '禮品盒定制', nameEn: 'Gift Boxes', nameJa: 'ギフトボックス', title_zh: '禮品盒定制',
-    description: '精緻禮品盒，配合燙金、UV等工藝。送禮首選，提升產品價值。', descriptionEn: 'Exquisite gift boxes with foil stamping, UV and other processes.', descriptionJa: '精巧なギフトボックス、箔押し・UVなどの加工付き。', description_zh: '精緻禮品盒，配合燙金、UV等工藝。送禮首選，提升產品價值。',
+    name: '禮品盒定制', nameEn: 'Gift Boxes', nameJa: 'ギフトボックス', title_zh: '禮品盒訂製印刷 100個起印 HK$4.5/個 磁吸盒首選 | 智印雲',
+    description: '禮品盒訂製印刷，100個起印，HK$4.5起/個。磁吸盒天地盒抽屜盒，燙金UV壓凹工藝，免費刀模設計。適合品牌活動週年慶贈品，即日打樣，3-5天交貨。', descriptionEn: 'Exquisite gift boxes with foil stamping, UV and other processes.', descriptionJa: '精巧なギフトボックス、箔押し・UVなどの加工付き。', description_zh: '精緻禮品盒，配合燙金、UV等工藝。送禮首選，提升產品價值。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -7891,8 +7891,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'food-boxes',
     category: 'packaging',
     category_slug: 'packaging',
-    name: '食品包裝盒', nameEn: 'Food Boxes', nameJa: '食品包装箱', title_zh: '食品包裝盒',
-    description: '食品級材質，安全環保。適合糕點、茶葉、保健品。', descriptionEn: 'Food-grade material, safe and eco-friendly.', descriptionJa: '食品グレード素材、安全で環境に優しい。', description_zh: '食品級材質，安全環保。適合糕點、茶葉、保健品。',
+    name: '食品包裝盒', nameEn: 'Food Boxes', nameJa: '食品包装箱', title_zh: '食品包裝盒印刷訂製 100個起印 HK$4起/個 FDA級 | 智印雲',
+    description: '食品包裝盒印刷訂製，100個起印，HK$4起/個。FDA級食品接觸安全材質，牛皮紙白卡紙可選，支援燙金UV印刷。適合糕點茶葉巧克力月餅食品品牌，3-5天交貨。', descriptionEn: 'Food-grade material, safe and eco-friendly.', descriptionJa: '食品グレード素材、安全で環境に優しい。', description_zh: '食品級材質，安全環保。適合糕點、茶葉、保健品。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -8625,8 +8625,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'rigid-boxes',
     category: 'packaging',
     category_slug: 'packaging',
-    name: '精裝盒', nameEn: 'Rigid Boxes', nameJa: '上製本箱', title_zh: '精裝盒',
-    description: '硬殼精裝，高檔奢華。適合高端產品、限量版商品。', descriptionEn: 'Hardcover rigid construction, luxurious and premium.', descriptionJa: '硬い上製本構造、豪華でプレミアム。', description_zh: '硬殼精裝，高檔奢華。適合高端產品、限量版商品。',
+    name: '精裝盒', nameEn: 'Rigid Boxes', nameJa: '上製本箱', title_zh: '精品盒訂製印刷 100個起印 HK$8起/個 高端禮盒 | 智印雲',
+    description: '精品盒訂製印刷，100個起印，HK$8起/個。硬殼天地盒磁吸盒，灰板裱藝術紙，燙金UV壓凹工藝。適合化妝品珠寶首飾高端品牌，5-7天交貨，全球配送。', descriptionEn: 'Hardcover rigid construction, luxurious and premium.', descriptionJa: '硬い上製本構造、豪華でプレミアム。', description_zh: '硬殼精裝，高檔奢華。適合高端產品、限量版商品。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
