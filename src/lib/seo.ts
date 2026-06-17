@@ -5,8 +5,15 @@ export type { Locale } from '@/types/locale';
 
 // 網站配置
 export const siteConfig = {
-  name: '智印云 ZprintPro',
-  alternateName: ['智印云', 'ZprintPro', 'ZprintPro Global'],
+  // 2026-06-17 P0: 品牌切割 — 主品牌剥离 "ZprintPro" 字串
+  // 原问题: name = "智印云 ZprintPro", alternateName 直接含 "ZprintPro" / "ZprintPro Global"
+  //   → Google Knowledge Graph 把 zprintpro.com 和 z-printpro.com 共享同一品牌实体
+  //   → 智印港和智印云互相印证"是同一个东西", 整体被算法降权, 展示量长期 10-20
+  // 修法: name 改成"智印云" (主品牌, 让 Google 识别为独立实体)
+  //   alternateName 保留 "ZprintPro" (用户实际品牌) + 加 "ZprintPro HK" 区分地理位置
+  //   social 全部删 (用户没 FB/IG/LinkedIn 账号, 假链接是 NAP 污染源, GBP 是更优先的实体信号)
+  name: '智印云',
+  alternateName: ['ZprintPro', 'ZprintPro HK', '智印云印刷'],
   url: 'https://zprintpro.com',
   logo: 'https://zprintpro.com/logo-icon.svg',
   // 2026-06-15 P0: NAP 统一修复
@@ -14,6 +21,7 @@ export const siteConfig = {
   //   → Google 看到 schema 跟 UI 不一致, 判定 NAP 欺诈
   // 修法: 全部统一到 Footer 真实号 +86 181 2638 0255 (这是公司真号, 不是胡编)
   // 注意: 此号虽是中国内地号, 但 Footer/Contact 全部用这个, NAP 一致性优先于"地理号"
+  // TODO: 后续办虚拟 +852 号替换, 进一步提升 NAP 香港本地信任度
   phone: '+86 181 2638 0255',
   email: 'zprintpro@outlook.com',
   address: {
@@ -22,11 +30,6 @@ export const siteConfig = {
     region: 'Kowloon',
     country: 'HK',
     postalCode: '999077',
-  },
-  social: {
-    facebook: 'https://facebook.com/zprintpro',
-    instagram: 'https://www.instagram.com/zprintpro',
-    linkedin: 'https://www.linkedin.com/company/zprintpro',
   },
 };
 
@@ -443,10 +446,9 @@ export function generateBusinessJsonLd(locale: Locale) {
           ? ['Japanese', 'English']
           : ['English', 'Chinese', 'Japanese'],
     },
-    sameAs: [
-      siteConfig.social.linkedin,
-      siteConfig.social.instagram,
-    ],
+    // 2026-06-17: sameAs 改为空 (用户没有真实社交账号, 不传假链接)
+    // 实体识别主要靠 GBP (用户后续注册) + 真实外链
+    sameAs: [],
   };
 
   if (isLocalBusiness) {

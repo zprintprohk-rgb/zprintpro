@@ -192,15 +192,13 @@ export const products: Product[] = [
 
 <h3>Why Choose ZprintPro?</h3>
 <ul>
-  <li><strong>Global Shipping:</strong> DHL Express 2-4 days to US/UK/AU/KR/SG/AE. Free US shipping on orders over $100.</li>
-  <li><strong>Certified Quality:</strong> FSC paper, ISO 9001 manufacturing, ISO 12647 color management, Delta E ≤2.</li>
-  <li><strong>Low MOQ with Volume Discount:</strong> 100-card minimum, 15% off at 500+, 25% off at 1,000+.</li>
-  <li><strong>Free Sample Proofing:</strong> Digital color proof before production, free reprints if color drifts.</li>
-  <li><strong>Variable Data Printing:</strong> Per-card customization (name, title, QR code) for sales teams of 100+.</li>
+  <li><strong>100-card MOQ with volume pricing:</strong> 15% off at 500+ cards, 25% off at 1,000+ for rebrand rollouts and conference distribution runs.</li>
+  <li><strong>Variable data printing:</strong> Per-card names, titles, and QR codes for sales teams of 100+ staff. Submit a CSV; we handle merging and production.</li>
+  <li><strong>Free digital color proofing:</strong> Color proof against the approved artwork before production. Delta E ≤2 color management on Heidelberg 4-color offset.</li>
 </ul>
 
 <h3>Use Cases & Industries</h3>
-<p>Premium business cards are the first handshake of your brand. ZprintPro serves executives at Fortune 500 finance firms, partners at law offices, founders at tech startups, and creative directors at agencies. For US-based professionals, we offer rush turnaround (1-3 business days) with same-day file confirmation. For international clients in the UK, Australia, Korea, Singapore, and the UAE, DHL Express delivers in 2-4 days. Common use cases include corporate rebrand rollouts, conference name badges, client gift packets, and individual executive updates.</p>
+<p>Premium business cards are the first handshake of your brand. Best fit for private wealth managers in Central handling high-net-worth client introductions, boutique law firm partners in Admiralty preparing for trial appearances, and corporate executives coordinating rebrand rollouts across 50-500 staff. 100-card MOQ supports boutique professional runs; rush 1-3 day production is available for US-based professionals. International orders ship via DHL Express in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>100 cards. Sample orders of 10-50 cards are available for design proofing (rush fee applies).</p></details>
@@ -209,8 +207,6 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>Can I order different names on each card?</strong></summary><p>Yes. Variable data printing allows per-card customization. Submit an Excel/CSV file with name, title, and contact details. Minimum 100 cards for variable orders.</p></details>
 <details class="my-2"><summary><strong>How is shipping calculated to my country?</strong></summary><p>US orders over $100 ship free via DHL Express (2-4 business days). UK/AU orders over £80 / AU$150 ship free. KR/SG/AE ship via DHL Express at standard rates (calculated at checkout). Tracking provided for all shipments.</p></details>
 <details class="my-2"><summary><strong>What if I'm not happy with the print quality?</strong></summary><p>We provide free digital color proofing before production. If the final print drifts from approved proof, we reprint at no cost or refund in full. Your satisfaction is guaranteed.</p></details>
-
-<p><em>Printed in our Hong Kong facility, shipped worldwide via DHL Express. ZprintPro — your global printing partner for premium business cards, packaging, and marketing materials.</em></p>
 
     `,
     longDescriptionJa: `<h3>紙質材質対比</h3>
@@ -693,15 +689,14 @@ export const products: Product[] = [
 
 <h3>Why Choose ZprintPro?</h3>
 <ul>
-  <li><strong>Global Shipping:</strong> DHL Express 2-4 days to US/UK/AU/KR/SG/AE. Free US shipping on orders over $100.</li>
-  <li><strong>6 Foil Colors in Stock:</strong> Gold, silver, rose gold, copper, holographic, black. Custom Pantone foil matching for 1,000+ orders.</li>
-  <li><strong>Low MOQ with Volume Discount:</strong> 100-card minimum, 15% off at 500+, 25% off at 1,000+, 35% off at 5,000+.</li>
-  <li><strong>Hot Stamp Foil:</strong> True hot foil stamping (not metallic ink) for crisp edges and high reflectivity.</li>
-  <li><strong>Free Design Service:</strong> We optimize foil placement, sizing, and registration for maximum visual impact.</li>
+  <li><strong>6 foil colors in stock:</strong> Gold, silver, rose gold, copper, holographic, black. Custom Pantone foil matching for 1,000+ orders.</li>
+  <li><strong>Volume pricing on foil runs:</strong> 100-card minimum, 15% off at 500+, 25% off at 1,000+, 35% off at 5,000+ for rebrand and event distribution.</li>
+  <li><strong>True hot stamp foil:</strong> Real metallic film pressed onto the card (not metallic ink) for crisp edges and high reflectivity.</li>
+  <li><strong>Free foil design service:</strong> We optimize foil placement, sizing, and registration for maximum visual impact on your artwork.</li>
 </ul>
 
 <h3>Use Cases & Industries</h3>
-<p>Foil stamped business cards elevate professional first impressions. ZprintPro serves finance and banking (private bankers, advisors), law firms (partners, senior associates), luxury real estate (high-end agents), executive search firms (recruiters, partners), wedding and event planners (premium presentation), jewelry and watch brands (sales associates), and luxury hospitality (concierge, GM cards). For US-based executives, our 100-card MOQ supports boutique professional runs and rebrand rollouts. For international clients, DHL Express delivers in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
+<p>Foil stamped business cards elevate professional first impressions. Best fit for boutique wealth managers seeking client-facing card differentiation, senior partners at litigation firms building case-prep presentation sets, and luxury hotel concierge teams presenting guest welcome packages. Common applications include 50-100 card boutique runs for individual executives and 500+ card rebrand rollouts. International orders ship via DHL Express in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>100 cards. Volume discounts start at 500 (15% off), 1,000 (25% off), and 5,000+ (35% off).</p></details>
@@ -710,8 +705,6 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>Which paper is best for foil stamping?</strong></summary><p>Uncoated card and cotton paper give the most luxurious foil result. Matte art also works well. Glossy laminated card is less ideal — foil doesn't adhere as cleanly to laminated surfaces.</p></details>
 <details class="my-2"><summary><strong>Can I combine foil with embossing?</strong></summary><p>Yes. Foil + emboss is the ultimate premium combination — metallic shine with dimensional depth. Add 2 days to production. Quoted per design complexity.</p></details>
 <details class="my-2"><summary><strong>How long does production take?</strong></summary><p>Standard 3-5 business days after artwork approval. Rush 1-2 day production available for orders up to 500 cards.</p></details>
-
-<p><em>Printed in our Hong Kong facility with precision hot foil stamping, shipped worldwide via DHL Express. ZprintPro — your global printing partner for foil business cards, premium business stationery, and luxury brand materials.</em></p>
 
     `,
     features: [
@@ -1766,17 +1759,10 @@ export const products: Product[] = [
 </table>
 
 <h3>Use Cases and Applications</h3>
-<p>ZprintPro Transparent PET stickers are perfect for:
-<ul>
-  <li>Cosmetics and skincare products for a sleek, modern look.</li>
-  <li>Beverage bottles and glassware for branding and decoration.</li>
-  <li>Gift seals for a sophisticated, invisible effect.</li>
-  <li>Outdoor labels for durability and waterproofing.</li>
-</ul>
-</p>
+<p>Best fit for indie skincare brands seeking "no-label" premium aesthetics on serum dropper bottles, craft beverage producers needing tamper-evident seals on glass bottles, and gift box producers wanting an invisible product seal that doesn't break the unboxing reveal. Common runs are 200-500 stickers per SKU for boutique launches; 1,000+ for established product lines. Optional white underprint preserves color saturation on dark or amber glass. For international orders, DHL Express delivers in 2-4 days to US, UK, Australia, Korea, Singapore, and UAE.</p>
 
 <h3>Quality, Compliance, and Shipping</h3>
-<p>ZprintPro is committed to quality and compliance, with FSC-certified materials, ISO 9001 manufacturing standards, and ISO 12647 color management. We offer DHL Express global shipping with delivery in 2-4 days. Get an instant 30-second AI quote with no signup required.</p>`,
+<p>Each batch runs through a free digital color proof against your approved artwork before production. Heidelberg 4-color offset + UV ink delivers 90%+ color saturation on transparent PET. Reprints are free if final color drifts from the approved proof beyond Delta E 2.</p>`,
     longDescriptionJa: `透明ステッカーをZprintProでご注文。PET素材+防水・防晒・耐磨耗+プロ4色印刷+変形カット対応のプレミアム透明ステッカー印刷です。食品ブランド・化粧品・商品ラベル・容器装飾・アーティスト・クリエイター向けに、無地感ラベルやガラス容器でのラベルレス効果を実現します。【素材】PET（透明/乳白半透明/艶消し）、接着剤は一般強粘着/再剥離/耐水強粘着から選択。【サイズ】最小20mm～最大300mmまで対応。【印刷方式】顔料インクUV印刷（耐候性◎）、CMYK+特色（白インク/メタリック）対応。透明フィルムに白を下刷りして上からCMYK印刷することで、透明素材でも発色鮮明に再現できます。【カット】標準カット（四角/円/楕円）、変形カット（オリジナル形状/型抜き）、部分型抜き対応。Cut lineパスを含めてIllustrator/PDFでご支給ください。【屋外耐久性】PET素材+UVインクで3年以上、直射日光・雨風に強く自動車ボディや屋外看板にも対応可能。【利用シーン】商品ラベル（食品/化粧品/雑貨）、容器装飾（ボトル/ジャー/ガラス容器）、アート・クリエイター作品、店舗装飾（窓・ショーケース）。【納期】20枚から対応（個人のクリエイター少量制作から、法人商品ラベルの10,000枚大量発注まで対応）、最短3営業日で出荷。500枚以上の大量発注は5-7営業日。変形カットや白インク印刷を含む場合はさらに1-2日かかる場合がございます。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
 
 <p><em>智印雲（ZprintPro）香港自社工場、観塘店舗受取対応、48 時間香港内速達。DHL Express で全世界 2-4 日配送。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -2500,15 +2486,14 @@ export const products: Product[] = [
 
 <h3>Why Choose ZprintPro?</h3>
 <ul>
-  <li><strong>Global Shipping:</strong> DHL Express 2-4 days to US/UK/AU/KR/SG/AE. Free US shipping on orders over $100.</li>
-  <li><strong>Precision Cutting:</strong> Digital cutting with ±0.2mm tolerance for vinyl and ±0.3mm for foil/paper. Crisp edges, no fraying.</li>
-  <li><strong>Low MOQ with Volume Discount:</strong> 100-sticker minimum, 15% off at 500+, 25% off at 1,000+, 35% off at 5,000+.</li>
-  <li><strong>Free Die-Line Setup:</strong> Custom die-line prep from your AI/PDF artwork. We handle cut paths, bleed, and safe zones.</li>
-  <li><strong>Variable Data Printing:</strong> Sequential numbering, QR codes, or per-sticker names for limited editions and personalization.</li>
+  <li><strong>Precision cutting:</strong> Digital cutting with ±0.2mm tolerance for vinyl and ±0.3mm for foil/paper. Crisp edges, no fraying.</li>
+  <li><strong>Volume pricing on die-cut runs:</strong> 100-sticker minimum, 15% off at 500+, 25% off at 1,000+, 35% off at 5,000+ for product launches and event distribution.</li>
+  <li><strong>Free die-line setup:</strong> Custom die-line prep from your AI/PDF artwork. We handle cut paths, bleed, and safe zones at no charge.</li>
+  <li><strong>Variable data printing:</strong> Sequential numbering, QR codes, or per-sticker names for limited editions and personalization.</li>
 </ul>
 
 <h3>Use Cases & Industries</h3>
-<p>Die-cut stickers turn any brand mark into a wearable, shareable product. ZprintPro serves consumer brands (logo stickers on packaging), creators and influencers (merch and fan giveaways), beverage brands (can and bottle seals), tech and SaaS companies (laptop decals for the team), event organizers (custom badges and signage), sports and esports (team logos, fan packs), and small businesses (packaging accents and seals). For US-based brands, our 100-sticker MOQ with 3-5 day production supports pop-ups, conferences, and product drops. For international clients, DHL Express delivers in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
+<p>Die-cut stickers turn any brand mark into a wearable, shareable product. Best fit for craft breweries running limited-edition can releases (200-500 sticker runs per SKU), independent musicians selling merch at live shows (50-200 stickers per stop), and SaaS teams putting branded decals on employee laptops (10-50 stickers per team, repeated quarterly). International orders ship via DHL Express in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What file format do I need for die-cut shapes?</strong></summary><p>Submit an AI or PDF file with the cut path on a separate layer. We provide free die-line prep if you only have a square/rectangle artwork — just send your logo.</p></details>
@@ -2517,8 +2502,6 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>Can I get holographic or metallic foil?</strong></summary><p>Yes. Holographic vinyl, metallic foil (gold/silver/rose/copper), and iridescent films are all available. Custom Pantone matching for orders of 1,000+ stickers.</p></details>
 <details class="my-2"><summary><strong>Are they waterproof?</strong></summary><p>Vinyl stickers with lamination are fully waterproof. Paper and kraft stickers are water-resistant only. For dishwasher or outdoor use, choose laminated vinyl.</p></details>
 <details class="my-2"><summary><strong>How long do they last outdoors?</strong></summary><p>Vinyl stickers with UV lamination last 3-5 years outdoors. Metallic foil 2-3 years. Paper and kraft are for indoor use only.</p></details>
-
-<p><em>Printed in our Hong Kong facility, shipped worldwide via DHL Express. ZprintPro — your global printing partner for custom die-cut stickers, brand decals, and creative marketing materials.</em></p>
 
     `,
     longDescriptionJa: `
@@ -7674,7 +7657,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>Use Cases & Industries</h3>
-<p>Custom gift boxes are the silent ambassador for premium brands. ZprintPro serves jewelry brands (ring, necklace, watch presentation), cosmetics and beauty (skincare, fragrance, makeup sets), gourmet food (chocolate truffles, tea collections, holiday hampers), spirits and wine (single-bottle, multi-bottle, gift sets), corporate gifting (executive client gifts, employee awards), electronics (premium headphones, smartwatches), and subscription boxes (monthly curated unboxing). For US-based DTC brands, our 100-box MOQ supports limited drops and seasonal launches. For international clients, DHL Express delivers in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
+<p>Custom gift boxes are the silent ambassador for premium brands. Best fit for indie jewelry brands producing 100-500 presentation boxes per collection drop, craft chocolatiers needing holiday-hamper boxes (1,000-2,500 unit seasonal runs), and DTC skincare brands building monthly subscription unboxing (500-1,000 boxes per cycle). Magnetic-closure rigid setup adds 1-2 days to production. International orders ship via DHL Express in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the difference between folding and rigid setup?</strong></summary><p>Folding cartons ship flat (lower shipping cost) and are assembled by the customer. Rigid setup boxes arrive pre-assembled and are heavier, more premium. Magnetic closure boxes are a hybrid that fold flat but snap together for presentation.</p></details>
@@ -7683,8 +7666,6 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>Do you offer ribbon or magnetic closures?</strong></summary><p>Yes. Satin ribbon closures (multiple colors), grosgrain ribbon, and magnetic flap closures are all available. Add 1-2 days to production.</p></details>
 <details class="my-2"><summary><strong>How much weight can the box hold?</strong></summary><p>Folding cartons hold 0.5-2kg typical contents. Rigid setup boxes hold 2-5kg+ depending on size. Custom reinforced bases available for heavy items.</p></details>
 <details class="my-2"><summary><strong>What about custom inserts?</strong></summary><p>Yes. EVA foam, paper pulp, molded fiber, and cardboard inserts are all available. Custom die-cut inserts designed to fit your product perfectly.</p></details>
-
-<p><em>Printed in our Hong Kong facility, shipped worldwide via DHL Express. ZprintPro — your global printing partner for custom gift boxes, premium packaging, and luxury unboxing experiences.</em></p>
 
     `,
     features: [
