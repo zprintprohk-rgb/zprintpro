@@ -191,7 +191,7 @@ const categorySeoData: Record<string, {
       ja: 'シール印刷,ステッカー印刷,防水シール,透明シール,円形シール,ダイカットシール,商品ラベル,食品ラベル,梱包用シール,ホログラムシール',
     },
     descriptions: {
-      'zh-hk': '香港專業貼紙印刷，防水防曬耐用。支持圓形、異形、透明、食品標籤等全系列貼紙。50張起訂，即日交貨。免費設計，全港送貨。',
+      'zh-hk': '香港貼紙印刷訂製，50張起訂，防水防曬耐用。支援圓形、異形、透明、食品標籤、LOGO標籤等全系列貼紙。電商包裝、產品標籤、活動贈品首選。免費設計，全港送貨，即日交貨。',
       en: 'Custom sticker printing — waterproof, UV-resistant, durable. Die-cut, round, transparent, food-safe labels. 50 pcs minimum, rush production available. Free design, ships to US, UK, AU & worldwide.',
       ja: 'プロのシール印刷サービス。防水・耐UV・耐久性抜群。ダイカット・円形・透明・食品対応ラベル。50枚から注文可能、即日発送対応。無料デザイン、全国配送。',
     },
@@ -215,7 +215,7 @@ const categorySeoData: Record<string, {
       ja: 'パッケージ印刷,箱印刷,ギフト箱,化粧品パッケージ,食品箱,商品パッケージ,小ロットパッケージ,段ボール箱,紙箱印刷,梱包材',
     },
     descriptions: {
-      'zh-hk': '香港包裝盒定制專家，100個起訂。禮品盒、化妝品盒、食品盒、月餅盒。支持燙金、UV、凹凸工藝。免費刀模設計，即日打樣。ISO9001+FSC認證。',
+      'zh-hk': '香港包裝盒訂製印刷，100個起訂，HK$4起/個。禮品盒、化妝品盒、食品包裝盒、月餅盒、磁吸盒。支持燙金、UV、凹凸、局部印刷。免費刀模設計，即日打樣。ISO9001+FSC認證。',
       en: 'Custom packaging box printing from 100 units. Gift boxes, cosmetic boxes, food packaging, mooncake boxes. Foil stamping, UV, embossing. Free die-cut design, rush sampling. ISO9001 & FSC certified. Global shipping to US, UK, AU.',
       ja: 'プロのパッケージ印刷サービス。100個から注文可能。ギフト箱・化粧品箱・食品箱・月餅箱。箔押し・UV・エンボス対応。無料型設計、即日サンプル対応。ISO9001・FSC認証取得。全国配送。',
     },
@@ -239,7 +239,7 @@ const categorySeoData: Record<string, {
       ja: '紙袋印刷,クラフト紙袋,エコ紙袋,手提げ紙袋,ブランド紙袋,ギフト袋,テイクアウト紙袋,小ロット紙袋,紙袋作成,ペーパーバッグ',
     },
     descriptions: {
-      'zh-hk': '香港紙袋印刷專家，100個起訂。牛皮紙袋、環保紙袋、手提禮品袋。支持燙金、UV、凹凸工藝。FSC環保認證紙張，即日交貨。適合零售、餐飲、活動、品牌推廣。',
+      'zh-hk': '香港紙袋印刷訂製，100個起訂，HK$1.8起/個。牛皮紙袋、環保紙袋、手提禮品袋、餐廳外賣袋。支援燙金、UV、凹凸、LOGO印刷。FSC環保認證紙張。適合零售、餐飲、活動、品牌推廣。即日交貨。',
       en: 'Custom paper bag printing from 100 units. Kraft bags, eco-friendly bags, retail & gift bags. Foil stamping, UV, embossing. FSC-certified paper, global delivery. Perfect for retail, F&B, events, branding.',
       ja: 'プロの紙袋印刷サービス。100個から注文可能。クラフト紙袋・エコ紙袋・手提げギフト袋。箔押し・UV・エンボス対応。FSC認証紙、即日納品。小売・飲食・イベント・ブランディングに最適。',
     },
