@@ -44,7 +44,7 @@ const translations = {
     contactUs: '聯繫我們 →',
     whatsapp: 'WhatsApp 查詢',
     qrScan: '掃碼即時查詢',
-    trustBadge: '已有 500+ 企業客戶選擇智印云',
+    trustBadge: '已有 500+ 企業客戶選擇智印雲',
   },
   'en': {
     title: 'Product Categories',

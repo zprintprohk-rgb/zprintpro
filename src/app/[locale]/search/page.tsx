@@ -11,8 +11,8 @@ interface SearchPageProps {
 
 const translations = {
   'zh-hk': {
-    title: '搜尋結果 | 智印云 ZprintPro',
-    description: '在智印云搜尋印刷產品和服務。',
+    title: '搜尋結果 | 智印雲 ZprintPro',
+    description: '在智印雲搜尋印刷產品和服務。',
     h1: '搜尋結果',
     placeholder: '輸入關鍵字搜尋...',
     noResults: '沒有找到相關結果，請嘗試其他關鍵字。',

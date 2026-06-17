@@ -73,7 +73,7 @@ export function getCategoryHowToSteps(
   locale: Locale
 ): { name: string; description: string; steps: HowToStep[]; totalTime: string } | null {
   // 统一品牌名（en/ja 用纯英文，避免中文泄漏）
-  const brand = locale === 'zh-hk' ? '智印云' : 'ZprintPro';
+  const brand = locale === 'zh-hk' ? '智印雲' : 'ZprintPro';
 
   // 4 个主钻品类（按 P0 修复范围锁定）：
   // packaging / paper-bags / books / calendars
@@ -319,7 +319,7 @@ export interface AuthorInfo {
 
 export const authorByLocale: Record<Locale, AuthorInfo> = {
   'zh-hk': {
-    name: '智印云印刷專家',
+    name: '智印雲印刷專家',
     url: `${SITE_URL}/zh-hk/about/`,
     sameAs: [
       'https://www.linkedin.com/company/zprintpro',
@@ -385,7 +385,7 @@ export function generateBlogArticleJsonLd(input: BlogArticleInput, locale: Local
     author,
     publisher: {
       '@type': 'Organization',
-      name: locale === 'zh-hk' ? '智印云 ZprintPro' : 'ZprintPro',
+      name: locale === 'zh-hk' ? '智印雲 ZprintPro' : 'ZprintPro',
       logo: { '@type': 'ImageObject', url: `${SITE_URL}/images/logo.png` },
     },
     mainEntityOfPage: {
@@ -460,11 +460,11 @@ export function generateContactPageJsonLd(
       '@type': 'WebSite',
       '@id': `${SITE_URL}/#website`,
       url: SITE_URL,
-      name: locale === 'zh-hk' ? '智印云 ZprintPro' : 'ZprintPro',
+      name: locale === 'zh-hk' ? '智印雲 ZprintPro' : 'ZprintPro',
     },
     publisher: {
       '@type': 'Organization',
-      name: locale === 'zh-hk' ? '智印云 ZprintPro' : 'ZprintPro',
+      name: locale === 'zh-hk' ? '智印雲 ZprintPro' : 'ZprintPro',
       url: SITE_URL,
       logo: `${SITE_URL}/logo-icon.svg`,
     },
@@ -490,13 +490,13 @@ export function generateAboutPageJsonLd(
     '@type': 'AboutPage',
     '@id': url,
     url,
-    name: locale === 'zh-hk' ? '關於智印云' : locale === 'ja' ? 'ZprintProについて' : 'About ZprintPro',
+    name: locale === 'zh-hk' ? '關於智印雲' : locale === 'ja' ? 'ZprintProについて' : 'About ZprintPro',
     description,
     inLanguage: locale === 'zh-hk' ? 'zh-Hant-HK' : locale === 'ja' ? 'ja-JP' : 'en-US',
     mainEntity: {
       '@type': 'Organization',
       '@id': `${SITE_URL}/#organization`,
-      name: locale === 'zh-hk' ? '智印云 ZprintPro' : 'ZprintPro',
+      name: locale === 'zh-hk' ? '智印雲 ZprintPro' : 'ZprintPro',
       url: SITE_URL,
       logo: `${SITE_URL}/logo-icon.svg`,
       foundingDate,
@@ -536,7 +536,7 @@ export function generateCoreWebPageJsonLd(
     },
     publisher: {
       '@type': 'Organization',
-      name: locale === 'zh-hk' ? '智印云 ZprintPro' : 'ZprintPro',
+      name: locale === 'zh-hk' ? '智印雲 ZprintPro' : 'ZprintPro',
       url: SITE_URL,
     },
   };

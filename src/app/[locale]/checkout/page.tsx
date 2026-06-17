@@ -8,7 +8,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
   const locale = params.locale;
   const titles: Record<string, string> = {
-    'zh-hk': '結算 | 智印云 ZprintPro',
+    'zh-hk': '結算 | 智印雲 ZprintPro',
     'en': 'Checkout | ZprintPro',
     'ja': 'レジ | ZprintPro',
   };

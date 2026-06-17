@@ -10,7 +10,7 @@ interface WhyChooseUsProps {
 
 const translations = {
   'zh-hk': {
-    title: '為何選擇智印云',
+    title: '為何選擇智印雲',
     subtitle: '15,000+ 客戶的信賴之選',
     features: [
       {

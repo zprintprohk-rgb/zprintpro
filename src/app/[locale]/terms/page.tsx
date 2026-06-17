@@ -9,8 +9,8 @@ interface TermsPageProps {
 
 const translations = {
   'zh-hk': {
-    title: '服務條款 | 智印云 ZprintPro',
-    description: '智印云服務條款與細則。',
+    title: '服務條款 | 智印雲 ZprintPro',
+    description: '智印雲服務條款與細則。',
     h1: '服務條款',
   },
   en: {

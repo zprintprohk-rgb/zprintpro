@@ -31,7 +31,7 @@ export function createMetadata(seo: SEOMetadata, locale: Locale): Metadata {
       title: seo.title,
       description: seo.description,
       url: seo.canonical,
-      siteName: 'ZprintPro 智印云',
+      siteName: 'ZprintPro 智印雲',
       images: [{ url: seo.ogImage, width: 1200, height: 630 }],
       locale: hreflangMap[locale],
       type: seo.ogType === 'product' ? 'website' : seo.ogType,
@@ -67,7 +67,7 @@ export function generateProductTitle(productName: string, locale: Locale, price?
   const priceStr = price ? `From ${geo.pricePrefix}${price} ` : '';
 
   const templates: Record<Locale, (name: string, price: string) => string> = {
-    'zh-hk': (n, p) => `${n} 香港 | ${p}| 專業印刷服務 - ZprintPro 智印云`,
+    'zh-hk': (n, p) => `${n} 香港 | ${p}| 專業印刷服務 - ZprintPro 智印雲`,
     'en': (n, p) => `Custom ${n} ${p}| Premium Printing for US/UK/AU - ZprintPro`,
     'ja': (n, p) => `${n} オーダーメイド | ${p}| 香港から国際配送 - ZprintPro`,
   };

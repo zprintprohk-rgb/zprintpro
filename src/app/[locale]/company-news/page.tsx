@@ -9,10 +9,10 @@ interface CompanyNewsPageProps {
 
 const translations = {
   'zh-hk': {
-    title: '公司新聞 | 智印云 ZprintPro',
-    description: '智印云最新公司動態、業務發展與印刷行業資訊。',
+    title: '公司新聞 | 智印雲 ZprintPro',
+    description: '智印雲最新公司動態、業務發展與印刷行業資訊。',
     h1: '公司新聞',
-    subtitle: '了解智印云的最新動態與行業資訊',
+    subtitle: '了解智印雲的最新動態與行業資訊',
     viewMore: '閱讀全文',
     noArticles: '暫無公司新聞',
     categories: { key: 'company-news', label: '公司新聞' },
@@ -41,9 +41,9 @@ const articles: Record<string, { slug: string; title: string; date: string; exce
   'zh-hk': [
     {
       slug: 'company-intro',
-      title: '智印云印刷公司簡介：專業設備與一站式印刷服務',
+      title: '智印雲印刷公司簡介：專業設備與一站式印刷服務',
       date: '2024-06-01',
-      excerpt: '智印云擁有海德堡6+1印刷機、HP數碼印刷機、馬天尼膠裝線等先進設備，提供從設計到印刷到後加工的一站式服務。',
+      excerpt: '智印雲擁有海德堡6+1印刷機、HP數碼印刷機、馬天尼膠裝線等先進設備，提供從設計到印刷到後加工的一站式服務。',
       image: '/images/factory/factory-banner.jpg',
     },
   ],

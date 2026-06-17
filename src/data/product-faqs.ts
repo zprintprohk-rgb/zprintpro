@@ -13,7 +13,7 @@ export const stickersFAQs: FAQItem[] = [
       'ja': '香港でのシール印刷の最小ロットは何枚からですか？',
     },
     answer: {
-      'zh-hk': '智印云提供少批量貼紙印刷服務，最低100張起訂。無論是防水貼紙、透明貼紙或PVC貼紙，均可小量定制，適合初創品牌與產品包裝測試。詳情請參閱《貼紙印刷完全指南》。',
+      'zh-hk': '智印雲提供少批量貼紙印刷服務，最低100張起訂。無論是防水貼紙、透明貼紙或PVC貼紙，均可小量定制，適合初創品牌與產品包裝測試。詳情請參閱《貼紙印刷完全指南》。',
       'en': 'ZprintPro offers small-batch custom sticker printing with a minimum order of 100 pieces. Whether you need waterproof stickers, clear vinyl, or PVC labels, we support low-volume orders perfect for startups and product packaging tests. See our Complete Sticker Printing Guide for details.',
       'ja': 'ZprintProでは少ロットのシール印刷に対応しており、最小ロットは100枚からです。防水シール、透明シール、PVCシールなど、スタートアップやパッケージングテストに最適です。詳しくは「シール印刷完全ガイド」をご覧ください。',
     },
@@ -49,7 +49,7 @@ export const stickersFAQs: FAQItem[] = [
       'ja': '透明シールはどんな商品包装に適していますか？',
     },
     answer: {
-      'zh-hk': '透明貼紙（Clear Stickers）適合玻璃樽、塑膠盒、化妝品瓶等透明或半透明包裝，可營造「無標籤」的高級感。智印云提供防水透明貼紙，適合食品、護膚品及精品包裝。',
+      'zh-hk': '透明貼紙（Clear Stickers）適合玻璃樽、塑膠盒、化妝品瓶等透明或半透明包裝，可營造「無標籤」的高級感。智印雲提供防水透明貼紙，適合食品、護膚品及精品包裝。',
       'en': 'Clear stickers are ideal for glass bottles, plastic containers, cosmetic jars, and other transparent or semi-transparent packaging, creating a "no-label" premium look. ZprintPro offers waterproof clear stickers perfect for food, skincare, and boutique packaging.',
       'ja': '透明シールは、ガラス瓶、プラスチック容器、化粧品瓶などの透明または半透明の包装に最適で、「ラベルなし」の高級感を演出します。ZprintProでは食品、スキンケア、ブティック向けの防水透明シールを提供しています。',
     },
@@ -73,7 +73,7 @@ export const stickersFAQs: FAQItem[] = [
       'ja': '九龍など香港全域へのシール配送はありますか？',
     },
     answer: {
-      'zh-hk': '有。智印云提供全港送貨服務，包括九龍、港島、新界及離島。貼紙印刷訂單滿HK$500免運費，未滿額可選擇港鐵站交收，觀塘、旺角、銅鑼灣、尖沙咀等站點均可。',
+      'zh-hk': '有。智印雲提供全港送貨服務，包括九龍、港島、新界及離島。貼紙印刷訂單滿HK$500免運費，未滿額可選擇港鐵站交收，觀塘、旺角、銅鑼灣、尖沙咀等站點均可。',
       'en': 'Yes. ZprintPro offers delivery across all Hong Kong areas including Kowloon, Hong Kong Island, New Territories, and outlying islands. Sticker orders over HK$500 qualify for free shipping. For smaller orders, MTR station pickup is available at Kwun Tong, Mong Kok, Causeway Bay, Tsim Sha Tsui, and more.',
       'ja': 'はい。ZprintProは九龍、香港島、新界、離島を含む香港全域に配送しています。シール印刷のご注文がHK$500以上で送料無料です。未満の場合は、観塘、旺角、銅鑼湾、尖沙咀などのMTR駅での受け取りが可能です。',
     },
@@ -112,7 +112,7 @@ export const flyersFAQs: FAQItem[] = [
       'ja': '香港でのチラシ印刷の最小ロットは何枚からですか？',
     },
     answer: {
-      'zh-hk': '智印云提供A5傳單印刷服務，最低10張起訂。無論是宣傳單張派發、開業傳單或活動傳單，均可少批量定制，適合初創企業與社區宣傳。詳情請參閱《宣傳單張印刷攻略》。',
+      'zh-hk': '智印雲提供A5傳單印刷服務，最低10張起訂。無論是宣傳單張派發、開業傳單或活動傳單，均可少批量定制，適合初創企業與社區宣傳。詳情請參閱《宣傳單張印刷攻略》。',
       'en': 'ZprintPro offers A5 flyer printing with a minimum order of 10 copies. Whether for leaflet distribution, grand opening flyers, or event promotions, we support small orders perfect for startups and community outreach. See our Flyer Printing Masterclass for details.',
       'ja': 'ZprintProではA5チラシ印刷に対応しており、最小ロットは10枚からです。チラシ配布、開業チラシ、イベントプロモーションなど、スタートアップや地域宣伝に最適です。詳しくは「チラシ印刷マスターガイド」をご覧ください。',
     },
@@ -184,7 +184,7 @@ export const flyersFAQs: FAQItem[] = [
       'ja': '折りパンフレットにはどんな種類がありますか？',
     },
     answer: {
-      'zh-hk': '智印云提供多款摺頁傳單：對摺（2頁）、三摺（Z摺/門摺）、四摺地圖式等。適合產品目錄、活動流程表及餐牌設計。不同摺法影響閱讀動線，建議根據內容層次選擇。',
+      'zh-hk': '智印雲提供多款摺頁傳單：對摺（2頁）、三摺（Z摺/門摺）、四摺地圖式等。適合產品目錄、活動流程表及餐牌設計。不同摺法影響閱讀動線，建議根據內容層次選擇。',
       'en': 'ZprintPro offers various folded leaflets: half-fold (2 panels), tri-fold (Z-fold/gate-fold), and four-fold map styles. Suitable for product catalogs, event programs, and menu design. Different folds affect reading flow; choose based on content hierarchy.',
       'ja': 'ZprintProでは、二つ折り、三つ折り（Z折り/観音開き）、四つ折りマップ式などの折りパンフレットを提供しています。商品カタログ、イベントプログラム、メニュー設計に適しています。',
     },
@@ -196,7 +196,7 @@ export const flyersFAQs: FAQItem[] = [
       'ja': '九龍などへのチラシ配送はありますか？',
     },
     answer: {
-      'zh-hk': '有。智印云提供全港送貨服務，包括九龍、港島、新界及離島。傳單印刷訂單滿HK$500免運費，未滿額可選擇港鐵站交收。大量傳單派發訂單可安排貨車直送。',
+      'zh-hk': '有。智印雲提供全港送貨服務，包括九龍、港島、新界及離島。傳單印刷訂單滿HK$500免運費，未滿額可選擇港鐵站交收。大量傳單派發訂單可安排貨車直送。',
       'en': 'Yes. ZprintPro offers delivery across all Hong Kong areas. Flyer orders over HK$500 qualify for free shipping. For bulk leaflet distribution orders, truck delivery can be arranged directly to your distribution team.',
       'ja': 'はい。ZprintProは香港全域に配送しています。チラシ印刷のご注文がHK$500以上で送料無料です。大量のチラシ配布注文には、トラックでの直送も手配可能です。',
     },
@@ -211,7 +211,7 @@ export const packagingBoxesFAQs: FAQItem[] = [
       'ja': '香港での箱包装オーダーメイドの最小ロットはいくつからですか？',
     },
     answer: {
-      'zh-hk': '智印云提供磁吸禮盒、環保包裝盒等定制服務，最低100個起訂。無論是化妝品盒、食品盒或禮品盒，均可小量定制，適合初創品牌與節日禮品測試。詳情請參閱《品牌包裝完全指南》。',
+      'zh-hk': '智印雲提供磁吸禮盒、環保包裝盒等定制服務，最低100個起訂。無論是化妝品盒、食品盒或禮品盒，均可小量定制，適合初創品牌與節日禮品測試。詳情請參閱《品牌包裝完全指南》。',
       'en': 'ZprintPro offers custom packaging box printing from 100 units minimum. Whether cosmetic boxes, food packaging, or gift boxes, we support small orders perfect for startups and seasonal gift testing. See our Brand Packaging Guide for details.',
       'ja': 'ZprintProでは100個からの箱包装オーダーメイドに対応しています。化粧品箱、食品箱、ギフト箱など、スタートアップや季節のギフトテストに最適です。詳しくは「ブランド包装完全ガイド」をご覧ください。',
     },
@@ -235,7 +235,7 @@ export const packagingBoxesFAQs: FAQItem[] = [
       'ja': 'エコ包装箱にはどんな素材が使えますか？',
     },
     answer: {
-      'zh-hk': '智印云提供FSC認證環保包裝盒，材質包括再生紙、牛皮紙及大豆油墨印刷。適合注重ESG的品牌及有機產品包裝。新界及九龍客戶可安排即日打樣。',
+      'zh-hk': '智印雲提供FSC認證環保包裝盒，材質包括再生紙、牛皮紙及大豆油墨印刷。適合注重ESG的品牌及有機產品包裝。新界及九龍客戶可安排即日打樣。',
       'en': 'ZprintPro offers FSC-certified eco-friendly packaging boxes using recycled paper, kraft paper, and soy-based inks. Ideal for ESG-focused brands and organic product packaging. Same-day sampling available for New Territories and Kowloon customers.',
       'ja': 'ZprintProではFSC認証のエコ包装箱を提供しており、再生紙、クラフト紙、大豆インクを使用しています。ESGに配慮したブランドやオーガニック商品の包装に最適です。新界と九龍のお客様には即日サンプルも可能です。',
     },
@@ -259,7 +259,7 @@ export const packagingBoxesFAQs: FAQItem[] = [
       'ja': '化粧品箱のオーダーメイドにはどんなサイズがありますか？',
     },
     answer: {
-      'zh-hk': '智印云提供多款化妝品盒尺寸，常見包括：小號（80×80×30mm，適合唇膏/眼影）、中號（120×120×50mm，適合護膚套裝）、大號（200×150×80mm，適合禮品套裝）。亦可按產品尺寸完全定制刀模。',
+      'zh-hk': '智印雲提供多款化妝品盒尺寸，常見包括：小號（80×80×30mm，適合唇膏/眼影）、中號（120×120×50mm，適合護膚套裝）、大號（200×150×80mm，適合禮品套裝）。亦可按產品尺寸完全定制刀模。',
       'en': 'ZprintPro offers various cosmetic box sizes: small (80×80×30mm for lipsticks/eyeshadow), medium (120×120×50mm for skincare sets), and large (200×150×80mm for gift sets). Fully custom die-cut sizes are also available based on your product dimensions.',
       'ja': 'ZprintProでは様々な化粧品箱サイズを提供しています。小（80×80×30mm）、中（120×120×50mm）、大（200×150×80mm）のほか、商品サイズに応じた完全オーダーメイドも可能です。',
     },
@@ -295,7 +295,7 @@ export const packagingBoxesFAQs: FAQItem[] = [
       'ja': '新界などへの包装箱配送はありますか？',
     },
     answer: {
-      'zh-hk': '有。智印云提供全港送貨服務，包括九龍、港島、新界及離島。包裝盒定制訂單滿HK$500免運費，未滿額可選擇港鐵站交收。大量訂單可安排貨車直送倉庫。',
+      'zh-hk': '有。智印雲提供全港送貨服務，包括九龍、港島、新界及離島。包裝盒定制訂單滿HK$500免運費，未滿額可選擇港鐵站交收。大量訂單可安排貨車直送倉庫。',
       'en': 'Yes. ZprintPro delivers across all Hong Kong areas including the New Territories. Packaging box orders over HK$500 qualify for free shipping. For bulk orders, truck delivery to your warehouse can be arranged.',
       'ja': 'はい。ZprintProは新界を含む香港全域に配送しています。箱包装のご注文がHK$500以上で送料無料です。大量注文には倉庫へのトラック直送も手配可能です。',
     },
@@ -310,7 +310,7 @@ export const postersFAQs: FAQItem[] = [
       'ja': '香港でのポスター印刷の最小ロットは何枚からですか？',
     },
     answer: {
-      'zh-hk': '智印云提供A2海報印刷服務，最低10張起訂。無論是戶外防水海報、展覽海報或燙金海報，均可少批量定制，適合活動宣傳及零售推廣。詳情請參閱《海報印刷完全指南》。',
+      'zh-hk': '智印雲提供A2海報印刷服務，最低10張起訂。無論是戶外防水海報、展覽海報或燙金海報，均可少批量定制，適合活動宣傳及零售推廣。詳情請參閱《海報印刷完全指南》。',
       'en': 'ZprintPro offers A2 poster printing with a minimum order of 10 copies. Whether outdoor waterproof posters, exhibition posters, or foil-stamped posters, we support small orders perfect for event promotion and retail advertising. See our Poster Printing Guide for details.',
       'ja': 'ZprintProではA2ポスター印刷に対応しており、最小ロットは10枚からです。屋外防水ポスター、展示会用ポスター、箔押しポスターなど、イベント宣伝や小売広告に最適です。詳しくは「ポスター印刷ガイド」をご覧ください。',
     },
@@ -358,7 +358,7 @@ export const postersFAQs: FAQItem[] = [
       'ja': 'ポスター素材にはどんな種類がありますか？',
     },
     answer: {
-      'zh-hk': '智印云提供多款海報材質：光粉紙（室內展示，色彩鮮豔）、啞粉紙（減少反光，適合攝影）、防水PP紙（戶外短期）、帆布（戶外長期）、相紙（高解析度輸出）。展覽海報建議選用啞粉紙或相紙。',
+      'zh-hk': '智印雲提供多款海報材質：光粉紙（室內展示，色彩鮮豔）、啞粉紙（減少反光，適合攝影）、防水PP紙（戶外短期）、帆布（戶外長期）、相紙（高解析度輸出）。展覽海報建議選用啞粉紙或相紙。',
       'en': 'ZprintPro offers various poster materials: glossy art paper (indoor, vibrant colors), matte art paper (reduced glare, photography-friendly), waterproof PP paper (short-term outdoor), canvas (long-term outdoor), and photo paper (high-resolution output). Exhibition posters are recommended in matte art paper or photo paper.',
       'ja': 'ZprintProでは光沢紙、マット紙、防水PP紙、キャンバス、写真用紙などのポスター素材を提供しています。展示会用ポスターにはマット紙または写真用紙が推奨されます。',
     },
@@ -370,7 +370,7 @@ export const postersFAQs: FAQItem[] = [
       'ja': 'バックドロップのオーダーメイドサイズはどこまで対応していますか？',
     },
     answer: {
-      'zh-hk': '智印云提供Backdrop背景板定制服務，常見尺寸包括：2×2.5m、3×3m、4×2.5m。採用防水帆布或遮光布，適合展覽會、發布會及婚禮佈置。亦可按場地尺寸完全定制。',
+      'zh-hk': '智印雲提供Backdrop背景板定制服務，常見尺寸包括：2×2.5m、3×3m、4×2.5m。採用防水帆布或遮光布，適合展覽會、發布會及婚禮佈置。亦可按場地尺寸完全定制。',
       'en': 'ZprintPro offers custom backdrop printing in common sizes: 2×2.5m, 3×3m, and 4×2.5m. Using waterproof canvas or blackout fabric, suitable for exhibitions, product launches, and wedding setups. Fully custom sizes based on venue dimensions are also available.',
       'ja': 'ZprintProでは2×2.5m、3×3m、4×2.5mなどのバックドロップを提供しています。防水キャンバスまたは遮光布を使用し、展示会や発表会、結婚式の演出に適しています。会場サイズに応じた完全オーダーメイドも可能です。',
     },
@@ -394,7 +394,7 @@ export const postersFAQs: FAQItem[] = [
       'ja': '香港島などへのポスター配送はありますか？',
     },
     answer: {
-      'zh-hk': '有。智印云提供全港送貨服務，包括港島、九龍、新界及離島。海報印刷訂單滿HK$500免運費，Backdrop背景板等大件可安排貨車直送會場。未滿額可選擇港鐵站交收。',
+      'zh-hk': '有。智印雲提供全港送貨服務，包括港島、九龍、新界及離島。海報印刷訂單滿HK$500免運費，Backdrop背景板等大件可安排貨車直送會場。未滿額可選擇港鐵站交收。',
       'en': 'Yes. ZprintPro delivers across all Hong Kong areas including Hong Kong Island. Poster orders over HK$500 qualify for free shipping. Large items like backdrop boards can be truck-delivered directly to your venue.',
       'ja': 'はい。ZprintProは香港島を含む香港全域に配送しています。ポスター印刷のご注文がHK$500以上で送料無料です。バックドロップなどの大きな商品は会場へのトラック直送も可能です。',
     },
@@ -409,7 +409,7 @@ export const paperBagsFAQs: FAQItem[] = [
       'ja': '香港での紙袋印刷の最小ロットはいくつからですか？',
     },
     answer: {
-      'zh-hk': '智印云提供環保紙袋、牛皮紙袋等定制服務，最低100個起訂。無論是禮品紙袋、品牌紙袋或餐飲外賣紙袋，均可小量定制。詳情請參閱《品牌包裝完全指南》。',
+      'zh-hk': '智印雲提供環保紙袋、牛皮紙袋等定制服務，最低100個起訂。無論是禮品紙袋、品牌紙袋或餐飲外賣紙袋，均可小量定制。詳情請參閱《品牌包裝完全指南》。',
       'en': 'ZprintPro offers custom paper bag printing from 100 units minimum. Whether gift bags, branded shopping bags, or F&B takeaway bags, we support small orders. See our Brand Packaging Guide for details.',
       'ja': 'ZprintProでは100個からの紙袋印刷に対応しています。ギフト袋、ブランド紙袋、飲食テイクアウト袋など、小ロットから承ります。詳しくは「ブランド包装完全ガイド」をご覧ください。',
     },
@@ -433,7 +433,7 @@ export const paperBagsFAQs: FAQItem[] = [
       'ja': 'エコ紙袋にはどんな認証素材が使えますか？',
     },
     answer: {
-      'zh-hk': '智印云提供FSC認證環保紙袋，材質包括再生牛皮紙、未漂白原木漿紙及大豆油墨印刷。適合注重可持續發展的品牌，可於袋身印製FSC標誌及環保標語。新界及九龍客戶可安排即日打樣。',
+      'zh-hk': '智印雲提供FSC認證環保紙袋，材質包括再生牛皮紙、未漂白原木漿紙及大豆油墨印刷。適合注重可持續發展的品牌，可於袋身印製FSC標誌及環保標語。新界及九龍客戶可安排即日打樣。',
       'en': 'ZprintPro offers FSC-certified eco-friendly paper bags using recycled kraft paper, unbleached wood pulp, and soy-based inks. Ideal for sustainability-focused brands, with FSC logos and eco slogans printable on the bag. Same-day sampling for New Territories and Kowloon.',
       'ja': 'ZprintProではFSC認証のエコ紙袋を提供しており、再生クラフト紙、無漂白木材パルプ、大豆インクを使用しています。サステナビリティに注力したブランドに最適で、袋身にFSCロゴや環保スローガンを印刷できます。',
     },
@@ -457,7 +457,7 @@ export const paperBagsFAQs: FAQItem[] = [
       'ja': 'ギフト袋のオーダーメイドにはどんなサイズがありますか？',
     },
     answer: {
-      'zh-hk': '智印云提供多款禮品紙袋尺寸：小號（180×230×80mm，適合飾品/化妝品）、中號（250×300×100mm，適合服裝/鞋履）、大號（320×400×120mm，適合禮品套裝）。亦可按產品尺寸完全定制。',
+      'zh-hk': '智印雲提供多款禮品紙袋尺寸：小號（180×230×80mm，適合飾品/化妝品）、中號（250×300×100mm，適合服裝/鞋履）、大號（320×400×120mm，適合禮品套裝）。亦可按產品尺寸完全定制。',
       'en': 'ZprintPro offers various gift bag sizes: small (180×230×80mm for accessories/cosmetics), medium (250×300×100mm for apparel/footwear), and large (320×400×120mm for gift sets). Fully custom sizes based on your products are also available.',
       'ja': 'ZprintProでは小（180×230×80mm）、中（250×300×100mm）、大（320×400×120mm）などのギフト袋サイズを提供しています。商品サイズに応じた完全オーダーメイドも可能です。',
     },
@@ -481,7 +481,7 @@ export const paperBagsFAQs: FAQItem[] = [
       'ja': '紙袋の持ち手素材の選び方を教えてください。',
     },
     answer: {
-      'zh-hk': '智印云提供多款紙袋手挽：棉繩手挽（堅固耐用，適合重載）、扁紙手挽（經濟實惠，適合輕量商品）、緞帶手挽（高級感強，適合禮品袋）。選擇時需考慮載重量及品牌形象。',
+      'zh-hk': '智印雲提供多款紙袋手挽：棉繩手挽（堅固耐用，適合重載）、扁紙手挽（經濟實惠，適合輕量商品）、緞帶手挽（高級感強，適合禮品袋）。選擇時需考慮載重量及品牌形象。',
       'en': 'ZprintPro offers various paper bag handles: cotton rope (durable, heavy loads), flat paper (economical, light items), and satin ribbon (luxury feel, gift bags). Consider load weight and brand image when choosing.',
       'ja': 'ZprintProでは綿紐持ち手（頑丈で重い荷物向け）、平紐（経済的で軽い商品向け）、サテンリボン（高級感がありギフト向け）などの紙袋持ち手を提供しています。',
     },
@@ -493,7 +493,7 @@ export const paperBagsFAQs: FAQItem[] = [
       'ja': '九龍などへの紙袋配送はありますか？',
     },
     answer: {
-      'zh-hk': '有。智印云提供全港送貨服務，包括九龍、港島、新界及離島。紙袋印刷訂單滿HK$500免運費，未滿額可選擇港鐵站交收。大量訂單可安排貨車直送店舖或倉庫。',
+      'zh-hk': '有。智印雲提供全港送貨服務，包括九龍、港島、新界及離島。紙袋印刷訂單滿HK$500免運費，未滿額可選擇港鐵站交收。大量訂單可安排貨車直送店舖或倉庫。',
       'en': 'Yes. ZprintPro delivers across all Hong Kong areas including Kowloon. Paper bag orders over HK$500 qualify for free shipping. For bulk orders, truck delivery to your store or warehouse can be arranged.',
       'ja': 'はい。ZprintProは九龍を含む香港全域に配送しています。紙袋印刷のご注文がHK$500以上で送料無料です。大量注文には店舗や倉庫へのトラック直送も手配可能です。',
     },

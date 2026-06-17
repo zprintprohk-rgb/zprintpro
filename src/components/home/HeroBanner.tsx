@@ -144,7 +144,7 @@ export function HeroBanner({ locale }: HeroBannerProps) {
               >
                 <Image
                   src={slide.image}
-                  alt={locale === 'ja' ? `${slide.title} | ZprintPro` : locale === 'en' ? `${slide.title} | ZprintPro` : `智印云 ${slide.title}`}
+                  alt={locale === 'ja' ? `${slide.title} | ZprintPro` : locale === 'en' ? `${slide.title} | ZprintPro` : `智印雲 ${slide.title}`}
                   fill
                   className="object-cover object-right"
                   unoptimized

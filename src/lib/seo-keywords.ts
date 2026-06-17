@@ -29,23 +29,23 @@ export const SEO_KEYWORDS: SeoKeyword[] = [
   {
     slug: 'food-packaging',
     title: {
-      'zh-hk': '食品包裝印刷 香港 | 智印云 ZPrintPro — 食品級包裝盒/袋 定制印刷',
+      'zh-hk': '食品包裝印刷 香港 | 智印雲 ZPrintPro — 食品級包裝盒/袋 定制印刷',
       en: 'Food Packaging Printing Hong Kong | ZPrintPro',
       ja: '食品パッケージ印刷 香港 | ZPrintPro',
     },
     description: {
-      'zh-hk': '香港食品包裝印刷服務｜智印云提供食品級包裝盒、食品袋、食品貼紙定制印刷，符合食品安全標準，支持小批量起訂。免費報價，3-5天交貨，立即查詢！',
+      'zh-hk': '香港食品包裝印刷服務｜智印雲提供食品級包裝盒、食品袋、食品貼紙定制印刷，符合食品安全標準，支持小批量起訂。免費報價，3-5天交貨，立即查詢！',
       en: 'Food packaging printing in Hong Kong. Food-grade boxes, bags, stickers. Food safety standard compliant. Small MOQ. Free quote, 3-5 day delivery.',
       ja: '香港の食品パッケージ印刷サービス。食品グレードの箱、袋、ステッカー。食品安全基準準拠。小ロット対応。無料見積もり、3-5日納品。',
     },
     h1: {
-      'zh-hk': '香港食品包裝印刷定制 — 智印云 ZPrintPro',
+      'zh-hk': '香港食品包裝印刷定制 — 智印雲 ZPrintPro',
       en: 'Food Packaging Printing in Hong Kong — ZPrintPro',
       ja: '香港の食品パッケージ印刷カスタマイズ — ZPrintPro',
     },
     keywords: ['食品包裝印刷', 'food packaging printing', '食品包装', 'food grade'],
     intro: {
-      'zh-hk': '香港專業食品包裝印刷服務，智印云 ZPrintPro 為您提供食品級包裝盒、食品袋、食品標籤等一站式定制印刷方案。',
+      'zh-hk': '香港專業食品包裝印刷服務，智印雲 ZPrintPro 為您提供食品級包裝盒、食品袋、食品標籤等一站式定制印刷方案。',
       en: 'Professional food packaging printing in Hong Kong. ZPrintPro provides one-stop custom solutions for food-grade boxes, bags, and labels.',
       ja: '香港の食品パッケージ印刷専門サービス。ZPrintPro は食品グレードの箱、袋、ラベルのワンストップカスタムソリューションを提供。',
     },
@@ -76,7 +76,7 @@ export const SEO_KEYWORDS: SeoKeyword[] = [
       ],
     },
     outro: {
-      'zh-hk': '智印云 ZPrintPro 深耕香港印刷行業，食品包裝印刷客戶遍布港九新界。立即聯絡報價，免費打樣確認品質後再大貨生產，零風險合作。',
+      'zh-hk': '智印雲 ZPrintPro 深耕香港印刷行業，食品包裝印刷客戶遍布港九新界。立即聯絡報價，免費打樣確認品質後再大貨生產，零風險合作。',
       en: 'ZPrintPro serves bakeries, restaurants, and food brands across Hong Kong. Contact us for a free quote — sample proof before mass production, zero-risk cooperation.',
       ja: 'ZPrintPro は香港全土のベーカリー、レストラン、食品ブランドにサービスを提供。無料見積もり、本生産前のサンプル確認でリスクゼロ。',
     },
@@ -85,12 +85,12 @@ export const SEO_KEYWORDS: SeoKeyword[] = [
   {
     slug: 'paper-bags',
     title: {
-      'zh-hk': '紙袋印刷 香港 | 智印云 ZPrintPro — 牛皮紙袋/白卡紙袋 訂製印刷',
+      'zh-hk': '紙袋印刷 香港 | 智印雲 ZPrintPro — 牛皮紙袋/白卡紙袋 訂製印刷',
       en: 'Paper Bag Printing Hong Kong | ZPrintPro',
       ja: '紙袋印刷 香港 | ZPrintPro',
     },
     description: {
-      'zh-hk': '香港紙袋印刷專家｜智印云提供牛皮紙袋、白卡紙袋、Kraft Paper Bag 印刷定制，支持小批量，免費設計打樣。服裝店/餐飲/零售首選紙袋印刷廠，立即在線報價！',
+      'zh-hk': '香港紙袋印刷專家｜智印雲提供牛皮紙袋、白卡紙袋、Kraft Paper Bag 印刷定制，支持小批量，免費設計打樣。服裝店/餐飲/零售首選紙袋印刷廠，立即在線報價！',
       en: 'Paper bag printing Hong Kong. Kraft paper bags, white card bags. Small MOQ, free design proofing. Garment, F&B, retail. Get a quote now!',
       ja: '香港の紙袋印刷。クラフト紙袋、白カード紙袋、Kraft Paper Bag。小ロット対応、無料デザインチャック。',
     },
@@ -101,7 +101,7 @@ export const SEO_KEYWORDS: SeoKeyword[] = [
     },
     keywords: ['紙袋印刷', 'paper bag printing', 'kraft bag', '牛皮纸袋'],
     intro: {
-      'zh-hk': '香港專業紙袋印刷服務，智印云 ZPrintPro 提供牛皮紙袋、白卡紙袋、精品紙袋一站式定制印刷，品質保證。',
+      'zh-hk': '香港專業紙袋印刷服務，智印雲 ZPrintPro 提供牛皮紙袋、白卡紙袋、精品紙袋一站式定制印刷，品質保證。',
       en: 'Professional paper bag printing in Hong Kong. ZPrintPro provides one-stop custom kraft, white card, and premium paper bags with quality guaranteed.',
       ja: '香港の紙袋印刷専門サービス。ZPrintPro はクラフト、白カード、プレミアム紙袋のワンストップカスタム印刷。',
     },
@@ -135,7 +135,7 @@ export const SEO_KEYWORDS: SeoKeyword[] = [
       ],
     },
     outro: {
-      'zh-hk': '智印云已服務 500+ 香港商戶，點擊獲取即時報價，享首次下單 9 折優惠。',
+      'zh-hk': '智印雲已服務 500+ 香港商戶，點擊獲取即時報價，享首次下單 9 折優惠。',
       en: 'ZPrintPro serves 500+ Hong Kong merchants. Click for instant quote — first order 10% off.',
       ja: 'ZPrintPro は500社以上の香港商戶にサービスを提供。即時見積もり、初注文10%オフ。',
     },
@@ -144,12 +144,12 @@ export const SEO_KEYWORDS: SeoKeyword[] = [
   {
     slug: 'flyers',
     title: {
-      'zh-hk': '宣傳單張印刷 香港 | 智印云 ZPrintPro — 傳單/單張/Leaflet 特價印刷',
+      'zh-hk': '宣傳單張印刷 香港 | 智印雲 ZPrintPro — 傳單/單張/Leaflet 特價印刷',
       en: 'Flyer Printing Hong Kong | ZPrintPro',
       ja: 'チラシ印刷 香港 | ZPrintPro',
     },
     description: {
-      'zh-hk': '香港宣傳單張印刷｜智印云提供 A4/A5/DL 宣傳單張、Leaflet、傳單印刷，銅版紙/啞粉紙可選，500張起印，免費送貨。全港最低價保證，立即網上報價！',
+      'zh-hk': '香港宣傳單張印刷｜智印雲提供 A4/A5/DL 宣傳單張、Leaflet、傳單印刷，銅版紙/啞粉紙可選，500張起印，免費送貨。全港最低價保證，立即網上報價！',
       en: 'Flyer printing in Hong Kong. A4/A5/DL flyers, leaflets. Coated/matte paper. 500 pcs MOQ, free delivery. Best price guaranteed!',
       ja: '香港のチラシ印刷。A4/A5/DL チラシ、Leaflet。コート紙/マット紙。500枚から。',
     },
@@ -160,7 +160,7 @@ export const SEO_KEYWORDS: SeoKeyword[] = [
     },
     keywords: ['宣傳單張', 'flyer printing', '傳單', 'leaflet'],
     intro: {
-      'zh-hk': '香港宣傳單張印刷服務，智印云 ZPrintPro 專業承接各類傳單/單張/Leaflet 印刷，價格透明，時效保證。',
+      'zh-hk': '香港宣傳單張印刷服務，智印雲 ZPrintPro 專業承接各類傳單/單張/Leaflet 印刷，價格透明，時效保證。',
       en: 'Professional flyer printing in Hong Kong. ZPrintPro handles all types of flyers, leaflets, and single sheets with transparent pricing and on-time delivery.',
       ja: '香港のチラシ印刷サービス。ZPrintPro は全タイプのチラシ、Leaflet、単紙を透明価格と納期保証で対応。',
     },
@@ -194,7 +194,7 @@ export const SEO_KEYWORDS: SeoKeyword[] = [
       ],
     },
     outro: {
-      'zh-hk': '宣傳單張作為傳統銷售利器，搭配線上引流效果倍增。智印云專注香港本地印刷，上午落單下午出貨。立即聯絡獲取專屬報價，大量訂單更可享上門送稿服務。',
+      'zh-hk': '宣傳單張作為傳統銷售利器，搭配線上引流效果倍增。智印雲專注香港本地印刷，上午落單下午出貨。立即聯絡獲取專屬報價，大量訂單更可享上門送稿服務。',
       en: 'Flyers remain a powerful offline sales tool — combined with online traffic, the effect doubles. ZPrintPro specializes in Hong Kong local print: morning order, afternoon dispatch. Click for a custom quote.',
       ja: 'チラシは伝統的な販売ツールとして依然強力 — オンライン集客と組み合わせ効果は倍増。ZPrintPro は香港ローカル印刷に特化。',
     },
@@ -203,12 +203,12 @@ export const SEO_KEYWORDS: SeoKeyword[] = [
   {
     slug: 'menu-printing',
     title: {
-      'zh-hk': '餐牌印刷 香港 | 智印云 ZPrintPro — 餐廳菜單/Menu 訂製印刷',
+      'zh-hk': '餐牌印刷 香港 | 智印雲 ZPrintPro — 餐廳菜單/Menu 訂製印刷',
       en: 'Menu Printing Hong Kong | ZPrintPro',
       ja: 'メニュープリント 香港 | ZPrintPro',
     },
     description: {
-      'zh-hk': '香港餐牌印刷專業廠家｜智印云為餐廳提供 Menu 菜單、餐牌、酒水牌、膠卡餐牌印刷，PVC防水/啞面/燙金工藝，免費排版設計，100本起訂，3天交貨！',
+      'zh-hk': '香港餐牌印刷專業廠家｜智印雲為餐廳提供 Menu 菜單、餐牌、酒水牌、膠卡餐牌印刷，PVC防水/啞面/燙金工藝，免費排版設計，100本起訂，3天交貨！',
       en: 'Menu printing Hong Kong for restaurants. PVC waterproof, matte, foil finishes. Free layout, 100 books MOQ, 3-day delivery.',
       ja: '香港のメニュープリント。PVC防水、マット、箔加工。無料レイアウト、100冊から、3日納品。',
     },
@@ -219,7 +219,7 @@ export const SEO_KEYWORDS: SeoKeyword[] = [
     },
     keywords: ['餐牌印刷', 'menu printing', 'menu', '餐牌'],
     intro: {
-      'zh-hk': '香港專業餐牌印刷服務，智印云 ZPrintPro 為各類餐飲企業提供菜單、酒水牌、餐桌牌等一站式印刷方案。',
+      'zh-hk': '香港專業餐牌印刷服務，智印雲 ZPrintPro 為各類餐飲企業提供菜單、酒水牌、餐桌牌等一站式印刷方案。',
       en: 'Professional menu printing in Hong Kong. ZPrintPro provides one-stop printing solutions for menus, wine lists, and table cards for F&B businesses.',
       ja: '香港のメニュープリント専門サービス。ZPrintPro はメニュー、ワインリスト、テーブルカードなど F&B 企業向けワンストップ印刷を提供。',
     },
@@ -253,7 +253,7 @@ export const SEO_KEYWORDS: SeoKeyword[] = [
       ],
     },
     outro: {
-      'zh-hk': '餐牌是食客對餐廳的"第一印象"。智印云提供免費餐牌設計打樣，專業排版師根據您餐廳風格量身設計。',
+      'zh-hk': '餐牌是食客對餐廳的"第一印象"。智印雲提供免費餐牌設計打樣，專業排版師根據您餐廳風格量身設計。',
       en: 'The menu is the diner\u2019s first impression of your restaurant. ZPrintPro offers free menu design proofing, with professional layout tailored to your restaurant style.',
       ja: 'メニューはお客様の第一印象。ZPrintPro は無料デザイン作成、店舗スタイルに合わせたプロフェッショナルレイアウトを提供。',
     },
@@ -262,12 +262,12 @@ export const SEO_KEYWORDS: SeoKeyword[] = [
   {
     slug: 'lai-see',
     title: {
-      'zh-hk': '利是封印刷 香港 | 智印云 ZPrintPro — 利是封/紅包/婚慶利是封 訂製',
+      'zh-hk': '利是封印刷 香港 | 智印雲 ZPrintPro — 利是封/紅包/婚慶利是封 訂製',
       en: 'Lai See / Red Packet Printing Hong Kong | ZPrintPro',
       ja: 'ポチ袋印刷 香港 | ZPrintPro',
     },
     description: {
-      'zh-hk': '香港利是封印刷定制｜智印云提供企業利是封、婚慶利是封、賀年利是封印刷，燙金/UV/專色工藝，300個起訂，免費設計。公司年會/婚禮/春節送禮首選，立即報價！',
+      'zh-hk': '香港利是封印刷定制｜智印雲提供企業利是封、婚慶利是封、賀年利是封印刷，燙金/UV/專色工藝，300個起訂，免費設計。公司年會/婚禮/春節送禮首選，立即報價！',
       en: 'Lai See / red packet printing in Hong Kong. Corporate, wedding, CNY designs. Foil, UV, spot color. 300 pcs MOQ, free design.',
       ja: '香港のポチ袋印刷。企業、婚礼、旧正月デザイン。箔、UV、スポットカラー。300個から。',
     },
@@ -278,7 +278,7 @@ export const SEO_KEYWORDS: SeoKeyword[] = [
     },
     keywords: ['利是封印刷', 'red packet printing', 'lai see', '利是封'],
     intro: {
-      'zh-hk': '香港專業利是封印刷定制服務，智印云 ZPrintPro 承接企業年會、婚禮喜慶、春節賀年用利是封批量印刷。',
+      'zh-hk': '香港專業利是封印刷定制服務，智印雲 ZPrintPro 承接企業年會、婚禮喜慶、春節賀年用利是封批量印刷。',
       en: 'Professional Lai See / red packet printing in Hong Kong. ZPrintPro handles corporate, wedding, and Chinese New Year red packets in bulk.',
       ja: '香港のポチ袋印刷専門サービス。ZPrintPro は法人、婚礼、旧正月用ポチ袋の大量印刷を承ります。',
     },
@@ -312,7 +312,7 @@ export const SEO_KEYWORDS: SeoKeyword[] = [
       ],
     },
     outro: {
-      'zh-hk': '每年香港利是封需求高峰期集中農曆新年前 2 個月。智印云提前備貨，支持急單加急生產。',
+      'zh-hk': '每年香港利是封需求高峰期集中農曆新年前 2 個月。智印雲提前備貨，支持急單加急生產。',
       en: 'Lai See demand peaks in the 2 months before Lunar New Year. ZPrintPro stocks in advance and supports rush production.',
       ja: 'ポチ袋の需要は旧正月前の2ヶ月にピーク。ZPrintPro は事前在庫と特急生産をサポート。',
     },

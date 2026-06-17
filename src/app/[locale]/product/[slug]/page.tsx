@@ -368,7 +368,7 @@ export default function ProductPage({
             {/* 右侧：产品信息和报价计算器 */}
             <div>
               <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-                {locale === 'zh-hk' ? `${productTitle} | 香港${categoryName}專家 | 智印云` : locale === 'en' ? `${productTitle} | Global Shipping | ZprintPro` : `${productTitle} | 日本向け高品質印刷 | ZprintPro`}
+                {locale === 'zh-hk' ? `${productTitle} | 香港${categoryName}專家 | 智印雲` : locale === 'en' ? `${productTitle} | Global Shipping | ZprintPro` : `${productTitle} | 日本向け高品質印刷 | ZprintPro`}
               </h1>
               
               {['flyers', 'posters', 'stickers', 'business-cards', 'books', 'banners'].includes(product.category_slug) && (

@@ -9,18 +9,18 @@ interface PressKitPageProps {
 
 const translations = {
   'zh-hk': {
-    title: '媒體中心 & Press Kit | 智印云 ZprintPro',
-    description: '智印云 ZprintPro 媒體中心——獲取公司介紹、品牌素材、高解析度產品圖片及媒體聯絡資訊。歡迎媒體、博主及合作夥伴聯繫我們。',
+    title: '媒體中心 & Press Kit | 智印雲 ZprintPro',
+    description: '智印雲 ZprintPro 媒體中心——獲取公司介紹、品牌素材、高解析度產品圖片及媒體聯絡資訊。歡迎媒體、博主及合作夥伴聯繫我們。',
     h1: '媒體中心',
     subtitle: '歡迎媒體、博主及行業夥伴使用以下素材進行報導與合作',
     contact: '媒體聯絡',
     contactName: '唐先生（市場部）',
-    contactRole: 'ZprintPro 智印云 市場總監',
+    contactRole: 'ZprintPro 智印雲 市場總監',
     contactEmail: 'zprintpro@outlook.com',
     contactPhone: '+86 181 2638 0255',
     contactNote: '媒體查詢優先處理，24小時內回覆',
     about: '公司簡介',
-    aboutText: `ZprintPro 智印云成立於2018年，總部位於香港觀塘，是香港領先的專業印刷服務供應商。我們為超過3,000家香港企業提供高品質印刷解決方案，產品涵蓋名片、傳單、貼紙、包裝盒、紙袋、海報、書籍、利是封等79個品類。我們的使命是讓每一位客戶都能以合理的價格，獲得超出預期的印刷品質。`,
+    aboutText: `ZprintPro 智印雲成立於2018年，總部位於香港觀塘，是香港領先的專業印刷服務供應商。我們為超過3,000家香港企業提供高品質印刷解決方案，產品涵蓋名片、傳單、貼紙、包裝盒、紙袋、海報、書籍、利是封等79個品類。我們的使命是讓每一位客戶都能以合理的價格，獲得超出預期的印刷品質。`,
     stats: '核心數據',
     statItems: [
       { value: '3,000+', label: '服務企業' },
@@ -30,7 +30,7 @@ const translations = {
     ],
     assets: '品牌素材下載',
     logo: '公司 Logo',
-    logoDesc: 'ZprintPro 智印云品牌標誌，PNG 格式，透明背景',
+    logoDesc: 'ZprintPro 智印雲品牌標誌，PNG 格式，透明背景',
     logoDownload: '下載 Logo',
     productImages: '產品圖片',
     productImagesDesc: '78款產品的高解析度展示圖片，適用於媒體報導及內容創作',
@@ -44,7 +44,7 @@ const translations = {
     ],
     factSheet: '事實資料表',
     factItems: [
-      { label: '公司全名', value: 'ZprintPro 智印云' },
+      { label: '公司全名', value: 'ZprintPro 智印雲' },
       { label: '成立年份', value: '2018年' },
       { label: '總部地址', value: '香港九龍觀塘' },
       { label: '服務範圍', value: '香港、澳門、中國內地、日本' },
@@ -138,7 +138,7 @@ const translations = {
     ],
     factSheet: 'ファクトシート',
     factItems: [
-      { label: '会社名', value: 'ZprintPro 智印云' },
+      { label: '会社名', value: 'ZprintPro 智印雲' },
       { label: '設立', value: '2018年' },
       { label: '本社所在地', value: '香港九龍観塘' },
       { label: 'サービスエリア', value: '香港、マカオ、中国本土、日本' },

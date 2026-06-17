@@ -19,8 +19,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   
   const meta: Record<string, { title: string; description: string }> = {
     'zh-hk': {
-      title: '印刷服務 | 即日速递·專業印刷 | 智印云 ZprintPro',
-      description: '智印云提供專業香港印刷服務：宣傳單張、海報、貼紙、名片、畫冊、易拉寶等。最快即日出貨，港鐵站交收，支持全球速遞。',
+      title: '印刷服務 | 即日速递·專業印刷 | 智印雲 ZprintPro',
+      description: '智印雲提供專業香港印刷服務：宣傳單張、海報、貼紙、名片、畫冊、易拉寶等。最快即日出貨，港鐵站交收，支持全球速遞。',
     },
     'en': {
       title: 'Printing Services | Same-Day Delivery | ZprintPro',

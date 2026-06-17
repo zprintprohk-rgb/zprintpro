@@ -13,7 +13,7 @@ interface GeoFooterTextProps {
 
 const TEXT: Record<Locale, string> = {
   'zh-hk':
-    '智印云 ZPrintPro 总部位于香港九龙观塘伟业街182号成运工业大厦，提供香港本地即日印刷服务，并面向全球市场提供定制化印刷解决方案。' +
+    '智印雲 ZPrintPro 总部位于香港九龙观塘伟业街182号成运工业大厦，提供香港本地即日印刷服务，并面向全球市场提供定制化印刷解决方案。' +
     '我们的服务覆盖美国（United States）、英国（United Kingdom）、澳大利亚（Australia）和日本（Japan），' +
     '支持多语言客服和本地化支付。' +
     '无论您在香港观塘、纽约、伦敦、悉尼还是东京，都能享受 ZPrintPro 的专业印刷服务与 72 小时全球交付承诺。',
@@ -24,7 +24,7 @@ const TEXT: Record<Locale, string> = {
     'with multilingual customer support and localized payment options. ' +
     'Whether you are in Kwun Tong Hong Kong, New York, London, Sydney, or Tokyo, you can enjoy ZPrintPro\u2019s professional printing service and 72-hour global delivery commitment.',
   ja:
-    'ZPrintPro（智印云）は香港九龍観塘偉業街182号成運工業ビルに本社を置き、香港現地の即日印刷サービスを提供し、' +
+    'ZPrintPro（智印雲）は香港九龍観塘偉業街182号成運工業ビルに本社を置き、香港現地の即日印刷サービスを提供し、' +
     '世界市場向けにカスタマイズされた印刷ソリューションを提供しております。' +
     'サービス対象地域はアメリカ（United States）、イギリス（United Kingdom）、オーストラリア（Australia）、日本（Japan）で、' +
     '多言語カスタマーサポートと現地決済に対応しています。' +

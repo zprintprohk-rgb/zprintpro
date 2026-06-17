@@ -2695,7 +2695,7 @@ export function getDefaultCategoryContent(categorySlug: string, locale: string):
         {
           heading: isZh ? `1. 專業${name}服務` : isEn ? `1. Professional ${name} Services` : `1. プロの${name}サービス`,
           points: [
-            isZh ? `智印云提供專業的${name}服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。` : isEn ? `ZprintPro offers professional ${name.toLowerCase()} services using premium materials and advanced printing technology.` : `ZprintProは高品質な素材と先進的な印刷技術を使用したプロの${name}サービスを提供します。`,
+            isZh ? `智印雲提供專業的${name}服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。` : isEn ? `ZprintPro offers professional ${name.toLowerCase()} services using premium materials and advanced printing technology.` : `ZprintProは高品質な素材と先進的な印刷技術を使用したプロの${name}サービスを提供します。`,
             isZh ? '支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。' : isEn ? 'Flexible minimum orders and fast turnaround to meet all your printing needs.' : '柔軟な最小発注数と迅速な納品で、あらゆる印刷ニーズにお応えします。',
             isZh ? '適用於企業宣傳、活動推廣、產品包裝、品牌展示等多元場景。' : isEn ? 'Suitable for corporate promotion, events, product packaging, and brand display.' : '企業宣伝、イベント、商品パッケージ、ブランド展示など多様なシーンに対応。',
           ],

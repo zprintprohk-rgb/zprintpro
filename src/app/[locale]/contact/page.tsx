@@ -12,12 +12,12 @@ interface ContactPageProps {
 
 const translations = {
   'zh-hk': {
-    title: '聯絡我們 · 免費獲取報價 | 智印云 ZprintPro',
-    description: '聯絡智印云專業印刷團隊，填寫表單獲取免費報價。電話/WhatsApp: +86 181 2638 0255',
+    title: '聯絡我們 · 免費獲取報價 | 智印雲 ZprintPro',
+    description: '聯絡智印雲專業印刷團隊，填寫表單獲取免費報價。電話/WhatsApp: +86 181 2638 0255',
     h1: '聯絡我們 · 免費獲取報價',
     subtitle: '填寫表單或 WhatsApp 聯繫，24小時內回覆',
     name: '唐先生',
-    role: '銷售經理｜智印云',
+    role: '銷售經理｜智印雲',
     phone: '電話 / WhatsApp',
     email: '電郵',
     website: '官網',

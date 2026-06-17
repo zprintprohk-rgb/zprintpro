@@ -8,7 +8,7 @@ import { SEOMetadata } from '@/types/seo';
 export const coreProductSEO: Record<string, Record<Locale, SEOMetadata>> = {
   stickers: {
     'zh-hk': {
-      title: '防水貼紙印刷 香港 | 透明/PVC/燙金貼紙 少批量定制 | ZprintPro 智印云',
+      title: '防水貼紙印刷 香港 | 透明/PVC/燙金貼紙 少批量定制 | ZprintPro 智印雲',
       description: '香港專業貼紙印刷服務，防水貼紙、透明貼紙、PVC貼紙、燙金貼紙少批量起訂。九龍/港島/新界即日可取，產品包裝貼紙一站式定制。',
       canonical: 'https://zprintpro.com/zh-hk/products/stickers',
       ogImage: 'https://zprintpro.com/images/hero/stickers-zh-hk.webp',

@@ -9,8 +9,8 @@ interface PrivacyPageProps {
 
 const translations = {
   'zh-hk': {
-    title: '隱私政策 | 智印云 ZprintPro',
-    description: '智印云隱私政策，說明我們如何收集、使用和保護您的個人資料。',
+    title: '隱私政策 | 智印雲 ZprintPro',
+    description: '智印雲隱私政策，說明我們如何收集、使用和保護您的個人資料。',
     h1: '隱私政策',
   },
   en: {

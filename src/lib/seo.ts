@@ -6,14 +6,14 @@ export type { Locale } from '@/types/locale';
 // 網站配置
 export const siteConfig = {
   // 2026-06-17 P0: 品牌切割 — 主品牌剥离 "ZprintPro" 字串
-  // 原问题: name = "智印云 ZprintPro", alternateName 直接含 "ZprintPro" / "ZprintPro Global"
+  // 原问题: name = "智印雲 ZprintPro", alternateName 直接含 "ZprintPro" / "ZprintPro Global"
   //   → Google Knowledge Graph 把 zprintpro.com 和 z-printpro.com 共享同一品牌实体
-  //   → 智印港和智印云互相印证"是同一个东西", 整体被算法降权, 展示量长期 10-20
-  // 修法: name 改成"智印云" (主品牌, 让 Google 识别为独立实体)
+  //   → 智印港和智印雲互相印证"是同一个东西", 整体被算法降权, 展示量长期 10-20
+  // 修法: name 改成"智印雲" (主品牌, 让 Google 识别为独立实体)
   //   alternateName 保留 "ZprintPro" (用户实际品牌) + 加 "ZprintPro HK" 区分地理位置
   //   social 全部删 (用户没 FB/IG/LinkedIn 账号, 假链接是 NAP 污染源, GBP 是更优先的实体信号)
-  name: '智印云',
-  alternateName: ['ZprintPro', 'ZprintPro HK', '智印云印刷'],
+  name: '智印雲',
+  alternateName: ['ZprintPro', 'ZprintPro HK', '智印雲印刷'],
   url: 'https://zprintpro.com',
   logo: 'https://zprintpro.com/logo-icon.svg',
   // 2026-06-15 P0: NAP 统一修复
@@ -94,9 +94,9 @@ export const regionConfig: Record<Locale, RegionConfig> = {
 // 多語言元數據（GEO優化版：三市場完全獨立SEO策略，不互相引用地區名）
 const homeMetadata: Record<Locale, { title: string; description: string; keywords: string }> = {
   'zh-hk': {
-    title: '智印云 ZPrintPro | 香港印刷公司 | 急件印刷·即日交貨 | 貼紙/單張/包裝盒定制',
-    description: '香港智印云印刷平台 — 專注急件印刷及即日交貨服務。提供高質素貼紙、宣傳單張、包裝盒定制、名片、海報等。線上30秒獲取初步報價，複雜需求由專人人工核價。全港免費送貨，最快即日交付，72小時快速交貨。',
-    keywords: '香港印刷,急件印刷,即日印刷,觀塘印刷廠,貼紙印刷,宣傳單張印刷,包裝盒定制,數碼印刷,30秒報價,人工核價,即日交貨,全港免費送貨,名片印刷,海報印刷,香港印刷公司,印刷急單,小批量印刷,ZPrintPro,智印云',
+    title: '智印雲 ZPrintPro | 香港印刷公司 | 急件印刷·即日交貨 | 貼紙/單張/包裝盒定制',
+    description: '香港智印雲印刷平台 — 專注急件印刷及即日交貨服務。提供高質素貼紙、宣傳單張、包裝盒定制、名片、海報等。線上30秒獲取初步報價，複雜需求由專人人工核價。全港免費送貨，最快即日交付，72小時快速交貨。',
+    keywords: '香港印刷,急件印刷,即日印刷,觀塘印刷廠,貼紙印刷,宣傳單張印刷,包裝盒定制,數碼印刷,30秒報價,人工核價,即日交貨,全港免費送貨,名片印刷,海報印刷,香港印刷公司,印刷急單,小批量印刷,ZPrintPro,智印雲',
   },
   en: {
     title: 'Custom Printing Service Online — Stickers, Boxes, Business Cards | ZprintPro',
@@ -179,7 +179,7 @@ const categorySeoData: Record<string, {
       ja: '名刺印刷,名刺作成,オーダーメイド名刺,高級名刺,即日名刺,急ぎ名刺,会社名刺,名刺デザイン,箔押し名刺,厚紙名刺',
     },
     descriptions: {
-      'zh-hk': '香港專業名片印刷，100張起訂，最快24小時交貨。支持燙金、UV、凹凸、圓角等特殊工藝，免費設計模板。智印云ISO9001認證，品質保證。',
+      'zh-hk': '香港專業名片印刷，100張起訂，最快24小時交貨。支持燙金、UV、凹凸、圓角等特殊工藝，免費設計模板。智印雲ISO9001認證，品質保證。',
       en: 'Custom business card printing with global express delivery. Premium paper stocks, foil stamping, spot UV, embossing. Free design templates. ISO9001 certified. 100 cards minimum. Rush production available.',
       ja: 'プロの名刺印刷サービス。100枚から、最短24時間でお届け。箔押し・UV・エンボス・丸角加工に対応。無料デザインテンプレート。ISO9001認証取得。全国配送無料。',
     },
@@ -255,7 +255,7 @@ function getDefaultCategorySeo(categoryName: string, categoryNameEn: string, cat
       ja: `${categoryNameJa}印刷,${categoryNameJa}作成,${categoryNameJa} オーダー,${categoryNameJa} 通販`,
     },
     descriptions: {
-      'zh-hk': `專業${categoryName}印刷服務，品質保證，價格透明。智印云提供多種${categoryName}選擇，最快即日交貨。`,
+      'zh-hk': `專業${categoryName}印刷服務，品質保證，價格透明。智印雲提供多種${categoryName}選擇，最快即日交貨。`,
       en: `Professional ${categoryNameEn} printing services. Quality guaranteed, factory-direct pricing. Ships to US, UK, AU & worldwide. Free quote in 30 seconds. Rush orders welcome.`,
       ja: `プロの${categoryNameJa}印刷サービス。品質保証、透明な価格。最短3〜5営業日で全国へお届け。無料見積もり、急ぎ対応可能。`,
     },
@@ -276,7 +276,7 @@ export function generateCategoryMetadata(locale: Locale, categoryName: string = 
   
   // 分类标题按市场区分
   // 2026-06-10 Phase B 修复 P0-2：en/ja 分支末尾使用纯英文品牌 'ZprintPro'（无中文），
-  // 避免 layout 模板的 '| ZprintPro' 再次叠加后形成 "...| 智印云 ZprintPro | ZprintPro"。
+  // 避免 layout 模板的 '| ZprintPro' 再次叠加后形成 "...| 智印雲 ZprintPro | ZprintPro"。
   // 2026-06-10：layout template 改为 '%s'（见 layout.tsx），此处由子页统一控制品牌后缀。
   const brandSuffix = locale === 'zh-hk' ? siteConfig.name : 'ZprintPro';
   const categoryTitle = locale === 'zh-hk'
@@ -335,7 +335,7 @@ export function generateProductMetadata(
   
   // Title: 50-60字符，含核心關鍵詞
   // 2026-06-10 Phase B 修复 P0-2：en/ja 末尾使用纯英文 'ZprintPro'（无中文），
-  // 避免 layout 模板的 '| ZprintPro' 再次叠加后形成 "...| 智印云 ZprintPro | ZprintPro"。
+  // 避免 layout 模板的 '| ZprintPro' 再次叠加后形成 "...| 智印雲 ZprintPro | ZprintPro"。
   // 2026-06-10：layout template 改为 '%s'（见 layout.tsx），此处由子页统一控制品牌后缀。
   const suffix = locale === 'zh-hk' ? '印刷' : locale === 'en' ? 'Printing' : '印刷';
   const titleBase = `${name}${suffix}`.replace(/印刷印刷/g, '印刷');
@@ -525,7 +525,7 @@ export function generatePrintShopSchema(): SchemaOrgData {
   return {
     '@context': 'https://schema.org',
     '@type': 'PrintShop',
-    'name': 'ZPrintPro 智印云',
+    'name': 'ZPrintPro 智印雲',
     'image': 'https://zprintpro.com/shop-photo.jpg',
     'url': 'https://zprintpro.com/zh-hk',
     'telephone': '+852 6123 4567',
@@ -915,9 +915,9 @@ export function generateProductReviewsJsonLd(
   
   const contents: Record<Locale, string[]> = {
     'zh-hk': [
-      `非常滿意${productName}的品質，印刷效果清晰，交貨準時。強烈推薦智印云！`,
+      `非常滿意${productName}的品質，印刷效果清晰，交貨準時。強烈推薦智印雲！`,
       `${productName}的材質很好，顏色還原度高，客服回覆也很及時。會再次回購。`,
-      `我們公司已經第三次在智印云訂購${productName}了，每次都很滿意，價格也很合理。`,
+      `我們公司已經第三次在智印雲訂購${productName}了，每次都很滿意，價格也很合理。`,
       `${productName}的做工精細，包裝也很結實，沒有損壞。物流也很快。`,
     ],
     'en': [
@@ -1071,7 +1071,7 @@ export function generateServiceJsonLd(input: {
 // 報價頁面元數據
 export function generateQuotePageMetadata(locale: Locale): Metadata {
   const titles = {
-    'zh-hk': '即時報價 | 智印云 ZprintPro',
+    'zh-hk': '即時報價 | 智印雲 ZprintPro',
     'en': 'Instant Quote | ZprintPro',
     'ja': '即時見積もり | ZprintPro',
   };
@@ -1170,7 +1170,7 @@ export function generateOrganizationSchema(locale: Locale): SchemaOrgData {
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: locale === 'zh-hk' ? '智印云 ZprintPro' : 'ZprintPro',
+    name: locale === 'zh-hk' ? '智印雲 ZprintPro' : 'ZprintPro',
     url: `${siteConfig.url}/${locale}`,
     logo: `${siteConfig.url}/images/logo.png`,
     areaServed: geo.areaServed.map(area => ({ '@type': 'Place', name: area })),
@@ -1190,7 +1190,7 @@ export function generateLocalBusinessSchema(locale: Locale): SchemaOrgData {
   return {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    name: locale === 'zh-hk' ? '智印云 ZprintPro' : 'ZprintPro',
+    name: locale === 'zh-hk' ? '智印雲 ZprintPro' : 'ZprintPro',
     image: `${siteConfig.url}/images/hero/main-hero.webp`,
     '@id': `${siteConfig.url}/${locale}`,
     url: `${siteConfig.url}/${locale}`,
@@ -1253,12 +1253,12 @@ export function generateArticleSchema(input: ArticleSchemaInput, locale: Locale)
     dateModified: input.lastUpdated || input.updatedAt || input.publishedAt,
     author: {
       '@type': input.authorName ? 'Person' : 'Organization',
-      name: input.authorName || (locale === 'zh-hk' ? '智印云 ZprintPro' : 'ZprintPro'),
+      name: input.authorName || (locale === 'zh-hk' ? '智印雲 ZprintPro' : 'ZprintPro'),
       url: `${baseUrl}/${locale}/about/`,
     },
     publisher: {
       '@type': 'Organization',
-      name: locale === 'zh-hk' ? '智印云 ZprintPro' : 'ZprintPro',
+      name: locale === 'zh-hk' ? '智印雲 ZprintPro' : 'ZprintPro',
       logo: { '@type': 'ImageObject', url: `${baseUrl}/images/logo.png` },
     },
     inLanguage: locale === 'zh-hk' ? 'zh-Hant-HK' : locale === 'ja' ? 'ja-JP' : 'en-US',

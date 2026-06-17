@@ -28,7 +28,7 @@ export const buyingGuides: BuyingGuide[] = [
       ja: '名刺印刷選び方完全ガイド：材質、加工、価格を徹底解説',
     },
     description: {
-      'zh-hk': '從300g銅版紙到400g厚紙、從燙金到局部UV，香港名片印刷選購全攻略。智印云印刷專家為您拆解材質、工藝與價格，助您選出最適合的商務名片。',
+      'zh-hk': '從300g銅版紙到400g厚紙、從燙金到局部UV，香港名片印刷選購全攻略。智印雲印刷專家為您拆解材質、工藝與價格，助您選出最適合的商務名片。',
       en: 'From 300g art paper to 400g thick stock, from foil stamping to spot UV - a complete guide to choosing business cards in Hong Kong.',
       ja: '300gアート紙から400g厚紙まで、箔押しから局部UVまで—香港名刺印刷の選び方完全ガイド。',
     },
@@ -73,7 +73,7 @@ export const buyingGuides: BuyingGuide[] = [
 
 <h3>四、選購決策框架</h3>
 <div class="bg-blue-50 rounded-lg p-5 my-4">
-<p class="font-semibold text-blue-800 mb-2">智印云選購建議</p>
+<p class="font-semibold text-blue-800 mb-2">智印雲選購建議</p>
 <ul class="list-disc pl-5 space-y-1 text-blue-900">
 <li><strong>預算有限</strong>：選300g銅版紙+單面印刷，100張約HK$150起</li>
 <li><strong>追求質感</strong>：選400g厚紙+啞膠，厚實手感令人印象深刻</li>
@@ -84,13 +84,13 @@ export const buyingGuides: BuyingGuide[] = [
 
 <h3>五、常見問題</h3>
 <div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3">
-<p><strong>Q: 名片最少可以印幾多張？</strong><br/>A: 智印云最低100張起印。即香港行內，100張係標準起訂量，因為開機費同人工成本固定。</p>
+<p><strong>Q: 名片最少可以印幾多張？</strong><br/>A: 智印雲最低100張起印。即香港行內，100張係標準起訂量，因為開機費同人工成本固定。</p>
 <p><strong>Q: 即日名片係咪真係當日可取？</strong><br/>A: 只要上午11點前確認稿件，300g銅版紙名片可以即日取貨。燙金、UV等特殊工藝需額外1-2個工作日。</p>
 <p><strong>Q: 雙面名片會唔會透底？</strong><br/>A: 選用300g或以上紙張一般不會透底。如果設計有大面積深色，建議選400g厚紙或加印白色打底。</p>
-<p><strong>Q: 名片設計可以自己做嗎？</strong><br/>A: 可以。智印云提供免費模板下載，符合出血位和安全線規範。我們也提供專業設計服務，HK$500起。</p>
+<p><strong>Q: 名片設計可以自己做嗎？</strong><br/>A: 可以。智印雲提供免費模板下載，符合出血位和安全線規範。我們也提供專業設計服務，HK$500起。</p>
 </div>
 
-<p>無論您需要經濟實惠的<a href="/product/premium-business-cards/">標準名片</a>，還是尊貴非凡的<a href="/product/foil-business-cards/">燙金名片</a>，智印云都能為您提供專業建議和優質印刷。立即<a href="/quote/">獲取即時報價</a>或<a href="https://wa.me/8618126380255" target="_blank">WhatsApp聯繫我們</a>！</p>`,
+<p>無論您需要經濟實惠的<a href="/product/premium-business-cards/">標準名片</a>，還是尊貴非凡的<a href="/product/foil-business-cards/">燙金名片</a>，智印雲都能為您提供專業建議和優質印刷。立即<a href="/quote/">獲取即時報價</a>或<a href="https://wa.me/8618126380255" target="_blank">WhatsApp聯繫我們</a>！</p>`,
       en: `<p>Your business card is your first impression in commercial interactions. From 300g art paper to 400g thick stock, from foil stamping to spot UV, this guide covers everything you need to know about choosing business cards in Hong Kong.</p>
 <h3>Business Card Material Comparison</h3>
 <table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Material</th><th class="border p-2 text-left">Weight</th><th class="border p-2 text-left">Features</th><th class="border p-2 text-left">Best For</th><th class="border p-2 text-left">Price</th></tr></thead><tbody>
@@ -157,7 +157,7 @@ export const buyingGuides: BuyingGuide[] = [
       ja: 'ステッカー印刷選び方完全ガイド：材質、形状、用途を徹底解説',
     },
     description: {
-      'zh-hk': '防水貼紙、透明貼紙、異形模切貼紙、燙金貼紙...面對眾多選擇如何下手？智印云為您整理香港貼紙印刷的完整選購攻略。',
+      'zh-hk': '防水貼紙、透明貼紙、異形模切貼紙、燙金貼紙...面對眾多選擇如何下手？智印雲為您整理香港貼紙印刷的完整選購攻略。',
       en: 'Waterproof stickers, transparent stickers, die-cut stickers, foil stickers - a complete guide to choosing the right sticker type for your needs.',
       ja: '防水ステッカー、透明ステッカー、ダイカットステッカー、箔押しステッカー—あなたのニーズに最適なステッカー選び方ガイド。',
     },
@@ -202,7 +202,7 @@ export const buyingGuides: BuyingGuide[] = [
 
 <h3>四、選購決策流程</h3>
 <div class="bg-blue-50 rounded-lg p-5 my-4">
-<p class="font-semibold text-blue-800 mb-2">智印云選購建議</p>
+<p class="font-semibold text-blue-800 mb-2">智印雲選購建議</p>
 <ul class="list-disc pl-5 space-y-1 text-blue-900">
 <li><strong>產品標籤</strong>：選防水合成紙+啞膜，耐用且專業</li>
 <li><strong>品牌周邊</strong>：選異形模切+光膜，設計感強</li>
@@ -220,7 +220,7 @@ export const buyingGuides: BuyingGuide[] = [
 <p><strong>Q: 貼紙設計有咩要留意？</strong><br/>A: 出血位至少2mm，文字同邊緣保持3mm安全距離。複雜模切圖案需要有足夠粗細嘅線條，太細會切斷。</p>
 </div>
 
-<p>無論您需要<a href="/product/waterproof-stickers/">防水貼紙</a>、<a href="/product/transparent-stickers/">透明貼紙</a>定係<a href="/product/die-cut-stickers/">異形模切貼紙</a>，智印云都能提供專業建議和優質印刷。立即<a href="/quote/">獲取報價</a>或<a href="https://wa.me/8618126380255" target="_blank">WhatsApp聯繫我們</a>！</p>`,
+<p>無論您需要<a href="/product/waterproof-stickers/">防水貼紙</a>、<a href="/product/transparent-stickers/">透明貼紙</a>定係<a href="/product/die-cut-stickers/">異形模切貼紙</a>，智印雲都能提供專業建議和優質印刷。立即<a href="/quote/">獲取報價</a>或<a href="https://wa.me/8618126380255" target="_blank">WhatsApp聯繫我們</a>！</p>`,
       en: `<p>Stickers are one of the most flexible promotional tools in the Hong Kong printing market. This guide covers materials, shapes, and finishes to help you choose the perfect sticker.</p>
 <h3>Sticker Material Comparison</h3>
 <table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Material</th><th class="border p-2 text-left">Features</th><th class="border p-2 text-left">Best For</th><th class="border p-2 text-left">Durability</th></tr></thead><tbody>
@@ -264,7 +264,7 @@ export const buyingGuides: BuyingGuide[] = [
       ja: 'チラシ印刷選び方完全ガイド：サイズ、用紙、折り方を徹底解説',
     },
     description: {
-      'zh-hk': 'A4傳單、A5傳單、對摺、三摺頁...傳單印刷點樣揀？智印云為您整理香港傳單印刷的完整選購攻略，助您用最抵價錢達到最佳宣傳效果。',
+      'zh-hk': 'A4傳單、A5傳單、對摺、三摺頁...傳單印刷點樣揀？智印雲為您整理香港傳單印刷的完整選購攻略，助您用最抵價錢達到最佳宣傳效果。',
       en: 'A4 flyers, A5 flyers, bi-fold, tri-fold - a complete guide to choosing flyer printing in Hong Kong for maximum marketing impact.',
       ja: 'A4チラシ、A5チラシ、二つ折り、三つ折り—香港チラシ印刷の選び方完全ガイド。',
     },
@@ -307,7 +307,7 @@ export const buyingGuides: BuyingGuide[] = [
 
 <h3>四、選購建議</h3>
 <div class="bg-blue-50 rounded-lg p-5 my-4">
-<p class="font-semibold text-blue-800 mb-2">智印云選購建議</p>
+<p class="font-semibold text-blue-800 mb-2">智印雲選購建議</p>
 <ul class="list-disc pl-5 space-y-1 text-blue-900">
 <li><strong>街頭派發</strong>：選A5單面+128g銅版紙，成本最低</li>
 <li><strong>餐廳/零售</strong>：選A4雙面+157g銅版紙，信息充足</li>
@@ -318,12 +318,12 @@ export const buyingGuides: BuyingGuide[] = [
 
 <h3>五、常見問題</h3>
 <div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3">
-<p><strong>Q: 傳單最少印幾多張？</strong><br/>A: 智印云最低500張起印。即香港行內，500張係傳單嘅標準起訂量。</p>
+<p><strong>Q: 傳單最少印幾多張？</strong><br/>A: 智印雲最低500張起印。即香港行內，500張係傳單嘅標準起訂量。</p>
 <p><strong>Q: 單面定雙面印刷好？</strong><br/>A: 雙面印刷每張只貴幾毫子，但信息量增加一倍。除非預算極度緊張，否則建議雙面。</p>
 <p><strong>Q: 傳單設計有咩要留意？</strong><br/>A: 標題要醒目、電話/WhatsApp要放大、地址要清晰。避免文字過細（最少8pt），否則街頭派發時長者睇唔到。</p>
 </div>
 
-<p>無論您需要<a href="/product/a4-flyers/">A4傳單</a>、<a href="/product/folded-leaflets/">摺頁傳單</a>定係<a href="/product/same-day-flyers/">即日傳單</a>，智印云都能提供專業建議和優質印刷。立即<a href="/quote/">獲取報價</a>！</p>`,
+<p>無論您需要<a href="/product/a4-flyers/">A4傳單</a>、<a href="/product/folded-leaflets/">摺頁傳單</a>定係<a href="/product/same-day-flyers/">即日傳單</a>，智印雲都能提供專業建議和優質印刷。立即<a href="/quote/">獲取報價</a>！</p>`,
       en: `<p>Flyers remain one of the most effective ground marketing tools in Hong Kong. This guide covers sizes, paper weights, and folding options to maximize your promotional impact.</p>
 <h3>Flyer Size Options</h3>
 <table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Size</th><th class="border p-2 text-left">Dimensions</th><th class="border p-2 text-left">Best For</th><th class="border p-2 text-left">Advantages</th></tr></thead><tbody>
@@ -365,7 +365,7 @@ export const buyingGuides: BuyingGuide[] = [
       ja: 'パッケージ箱選び方完全ガイド：箱型、材質、加工を徹底解説',
     },
     description: {
-      'zh-hk': '禮品盒、快遞盒、化妝品盒、食品盒...包裝盒點樣揀？智印云為您整理香港包裝盒定制的完整選購攻略。',
+      'zh-hk': '禮品盒、快遞盒、化妝品盒、食品盒...包裝盒點樣揀？智印雲為您整理香港包裝盒定制的完整選購攻略。',
       en: 'Gift boxes, shipping boxes, cosmetic boxes, food boxes - a complete guide to custom packaging in Hong Kong.',
       ja: 'ギフトボックス、配送箱、化粧品箱、食品箱—香港パッケージ印刷の選び方完全ガイド。',
     },
@@ -409,7 +409,7 @@ export const buyingGuides: BuyingGuide[] = [
 
 <h3>四、選購建議</h3>
 <div class="bg-blue-50 rounded-lg p-5 my-4">
-<p class="font-semibold text-blue-800 mb-2">智印云選購建議</p>
+<p class="font-semibold text-blue-800 mb-2">智印雲選購建議</p>
 <ul class="list-disc pl-5 space-y-1 text-blue-900">
 <li><strong>電商發貨</strong>：選E坑瓦楞飛機盒，輕便且保護性好</li>
 <li><strong>化妝品/護膚品</strong>：選白卡紙摺疊盒+燙金Logo，精美且省空間</li>
@@ -421,11 +421,11 @@ export const buyingGuides: BuyingGuide[] = [
 <h3>五、常見問題</h3>
 <div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3">
 <p><strong>Q: 包裝盒最低訂幾多個？</strong><br/>A: 摺疊盒最低500個起，硬盒（天地蓋）最低300個起。即香港印刷廠一般開模費固定，量越多單價越低。</p>
-<p><strong>Q: 包裝盒設計要預留邊位嗎？</strong><br/>A: 摺盒需要預留粘口位（一般15-20mm），設計稿需要包含刀模圖。智印云提供免費刀模設計服務。</p>
+<p><strong>Q: 包裝盒設計要預留邊位嗎？</strong><br/>A: 摺盒需要預留粘口位（一般15-20mm），設計稿需要包含刀模圖。智印雲提供免費刀模設計服務。</p>
 <p><strong>Q: 包裝盒交貨要幾耐？</strong><br/>A: 標準摺疊盒7-10個工作日，硬盒10-15個工作日。急件可加快至5-7個工作日。</p>
 </div>
 
-<p>無論您需要<a href="/product/gift-boxes/">禮品盒</a>、<a href="/product/mailer-boxes/">快遞盒</a>定係<a href="/product/cosmetic-boxes/">化妝品盒</a>，智印云都能提供專業建議和優質印刷。立即<a href="/quote/">獲取報價</a>！</p>`,
+<p>無論您需要<a href="/product/gift-boxes/">禮品盒</a>、<a href="/product/mailer-boxes/">快遞盒</a>定係<a href="/product/cosmetic-boxes/">化妝品盒</a>，智印雲都能提供專業建議和優質印刷。立即<a href="/quote/">獲取報價</a>！</p>`,
       en: `<p>Packaging is your product's silent salesman. This guide covers box styles, materials, and finishes for custom packaging in Hong Kong.</p>
 <h3>Box Style Comparison</h3>
 <table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Style</th><th class="border p-2 text-left">Structure</th><th class="border p-2 text-left">Best For</th><th class="border p-2 text-left">Features</th></tr></thead><tbody>
@@ -470,7 +470,7 @@ export const buyingGuides: BuyingGuide[] = [
       ja: 'ポスター印刷選び方完全ガイド：サイズ、用紙、用途を徹底解説',
     },
     description: {
-      'zh-hk': 'A1海報、A2海報、戶外海報、藝術海報...海報印刷點樣揀？智印云為您整理香港海報印刷的完整選購攻略。',
+      'zh-hk': 'A1海報、A2海報、戶外海報、藝術海報...海報印刷點樣揀？智印雲為您整理香港海報印刷的完整選購攻略。',
       en: 'A1 posters, A2 posters, outdoor posters, art posters - a complete guide to poster printing in Hong Kong.',
       ja: 'A1ポスター、A2ポスター、屋外ポスター、アートポスター—香港ポスター印刷の選び方完全ガイド。',
     },
@@ -514,7 +514,7 @@ export const buyingGuides: BuyingGuide[] = [
 
 <h3>四、選購建議</h3>
 <div class="bg-blue-50 rounded-lg p-5 my-4">
-<p class="font-semibold text-blue-800 mb-2">智印云選購建議</p>
+<p class="font-semibold text-blue-800 mb-2">智印雲選購建議</p>
 <ul class="list-disc pl-5 space-y-1 text-blue-900">
 <li><strong>店內裝飾</strong>：選A2+157g銅版紙+啞膜，美觀且經濟</li>
 <li><strong>戶外廣告</strong>：選A1+PP合成紙，防水防曬</li>
@@ -526,12 +526,12 @@ export const buyingGuides: BuyingGuide[] = [
 
 <h3>五、常見問題</h3>
 <div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3">
-<p><strong>Q: 海報最少印幾多張？</strong><br/>A: 智印云海報最低10張起印。即香港行內，海報係少批量高頻次嘅印刷品。</p>
+<p><strong>Q: 海報最少印幾多張？</strong><br/>A: 智印雲海報最低10張起印。即香港行內，海報係少批量高頻次嘅印刷品。</p>
 <p><strong>Q: 戶外海報可以維持幾耐？</strong><br/>A: PP合成紙戶外海報可以維持3-6個月（視乎日照和風雨情況）。長期戶外展示建議選用戶外專用墨水。</p>
 <p><strong>Q: 海報設計有咩要留意？</strong><br/>A: 標題字體要大（建議最小36pt），圖片分辨率150dpi（大尺寸海報可接受72-100dpi），色彩用CMYK。</p>
 </div>
 
-<p>無論您需要<a href="/product/a1-posters/">A1海報</a>、<a href="/product/outdoor-posters/">戶外海報</a>定係<a href="/product/art-posters/">藝術海報</a>，智印云都能提供專業建議和優質印刷。立即<a href="/quote/">獲取報價</a>！</p>`,
+<p>無論您需要<a href="/product/a1-posters/">A1海報</a>、<a href="/product/outdoor-posters/">戶外海報</a>定係<a href="/product/art-posters/">藝術海報</a>，智印雲都能提供專業建議和優質印刷。立即<a href="/quote/">獲取報價</a>！</p>`,
       en: `<p>Posters are one of the most direct and impactful visual communication media. This guide covers sizes, paper types, and applications for poster printing in Hong Kong.</p>
 <h3>Poster Size Comparison</h3>
 <table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Size</th><th class="border p-2 text-left">Dimensions</th><th class="border p-2 text-left">Best For</th><th class="border p-2 text-left">Viewing Distance</th></tr></thead><tbody>
@@ -577,7 +577,7 @@ export const buyingGuides: BuyingGuide[] = [
       ja: '紙袋印刷選び方完全ガイド：材質、サイズ、持ち手を徹底解説',
     },
     description: {
-      'zh-hk': '牛皮紙袋、白卡紙袋、禮品紙袋...紙袋印刷點樣揀？智印云為您整理香港紙袋印刷的完整選購攻略。',
+      'zh-hk': '牛皮紙袋、白卡紙袋、禮品紙袋...紙袋印刷點樣揀？智印雲為您整理香港紙袋印刷的完整選購攻略。',
       en: 'Kraft bags, white card bags, gift bags - a complete guide to paper bag printing in Hong Kong.',
       ja: 'クラフト袋、白卡紙袋、ギフト袋—香港紙袋印刷の選び方完全ガイド。',
     },
@@ -621,7 +621,7 @@ export const buyingGuides: BuyingGuide[] = [
 
 <h3>四、選購建議</h3>
 <div class="bg-blue-50 rounded-lg p-5 my-4">
-<p class="font-semibold text-blue-800 mb-2">智印云選購建議</p>
+<p class="font-semibold text-blue-800 mb-2">智印雲選購建議</p>
 <ul class="list-disc pl-5 space-y-1 text-blue-900">
 <li><strong>咖啡店/烘焙店</strong>：選牛皮紙袋+紙繩手挽，環保且成本可控</li>
 <li><strong>服裝店/百貨</strong>：選白卡紙袋+棉繩手挽，品牌感強</li>
@@ -632,12 +632,12 @@ export const buyingGuides: BuyingGuide[] = [
 
 <h3>五、常見問題</h3>
 <div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3">
-<p><strong>Q: 紙袋最低訂幾多個？</strong><br/>A: 智印云紙袋最低500個起訂。即香港印刷廠一般開機費固定，量越多單價越低。1000個以上價格明顯優惠。</p>
+<p><strong>Q: 紙袋最低訂幾多個？</strong><br/>A: 智印雲紙袋最低500個起訂。即香港印刷廠一般開機費固定，量越多單價越低。1000個以上價格明顯優惠。</p>
 <p><strong>Q: 紙袋可以承重幾多？</strong><br/>A: 一般紙袋承重2-5kg。如需承載更重物品，建議選用250g以上厚紙+加固底板。</p>
 <p><strong>Q: 紙袋設計有咩要留意？</strong><br/>A: 印刷區域要避開手挽穿孔位（一般距離袋口3cm），Logo建議放在正中或側面顯眼位置。出血位3mm。</p>
 </div>
 
-<p>無論您需要<a href="/product/kraft-paper-bags/">牛皮紙袋</a>、<a href="/product/white-card-bags/">白卡紙袋</a>定係<a href="/product/gift-bags/">禮品紙袋</a>，智印云都能提供專業建議和優質印刷。立即<a href="/quote/">獲取報價</a>！</p>`,
+<p>無論您需要<a href="/product/kraft-paper-bags/">牛皮紙袋</a>、<a href="/product/white-card-bags/">白卡紙袋</a>定係<a href="/product/gift-bags/">禮品紙袋</a>，智印雲都能提供專業建議和優質印刷。立即<a href="/quote/">獲取報價</a>！</p>`,
       en: `<p>Paper bags are an essential brand touchpoint in retail. This guide covers materials, sizes, and handle options for paper bag printing in Hong Kong.</p>
 <h3>Paper Bag Material Comparison</h3>
 <table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Material</th><th class="border p-2 text-left">Weight</th><th class="border p-2 text-left">Features</th><th class="border p-2 text-left">Best For</th></tr></thead><tbody>
@@ -691,7 +691,7 @@ export const buyingGuides: BuyingGuide[] = [
       ja: 'バナー印刷選び方完全ガイド：Xスタンド、ロールアップ、背景板を徹底解説',
     },
     description: {
-      'zh-hk': 'X展架、易拉寶、背景板、戶外大橫幅...噴繪廣告點樣揀？智印云為您整理香港噴繪廣告的完整選購攻略。',
+      'zh-hk': 'X展架、易拉寶、背景板、戶外大橫幅...噴繪廣告點樣揀？智印雲為您整理香港噴繪廣告的完整選購攻略。',
       en: 'X-stands, roll-ups, backdrops, outdoor banners — a complete guide to banner printing in Hong Kong.',
       ja: 'Xスタンド、ロールアップ、背景板、屋外横断幕—香港バナー印刷の選び方完全ガイド。',
     },
@@ -762,7 +762,7 @@ export const buyingGuides: BuyingGuide[] = [
       ja: '書籍印刷選び方完全ガイド：製本方式、紙、表紙加工を徹底解説',
     },
     description: {
-      'zh-hk': '騎馬釘、膠裝、精裝...書籍印刷點樣揀？智印云為您整理香港書籍印刷的完整選購攻略。',
+      'zh-hk': '騎馬釘、膠裝、精裝...書籍印刷點樣揀？智印雲為您整理香港書籍印刷的完整選購攻略。',
       en: 'Saddle-stitch, perfect binding, hardcover — a complete guide to book printing in Hong Kong.',
       ja: '中綴じ、無線綴じ、上製本—香港書籍印刷の選び方完全ガイド。',
     },
@@ -833,7 +833,7 @@ export const buyingGuides: BuyingGuide[] = [
       ja: 'メニュー印刷選び方完全ガイド：材質、加工、耐久性を徹底解説',
     },
     description: {
-      'zh-hk': 'PVC餐牌、過膠餐牌、硬膠套、皮革餐牌...餐牌印刷點樣揀？智印云為您整理香港餐牌印刷的完整選購攻略。',
+      'zh-hk': 'PVC餐牌、過膠餐牌、硬膠套、皮革餐牌...餐牌印刷點樣揀？智印雲為您整理香港餐牌印刷的完整選購攻略。',
       en: 'PVC menus, laminated menus, hard sleeves, leather menus — a complete guide to menu printing in Hong Kong.',
       ja: 'PVCメニュー、ラミネートメニュー、硬質ケース、革メニュー—香港メニュー印刷の選び方完全ガイド。',
     },
