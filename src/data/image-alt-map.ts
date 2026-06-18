@@ -78,6 +78,32 @@ export const altTagMap: Record<string, Record<string, string>> = {
     en: 'kraft-paper-box-printing-eco-gift-food-hong-kong-english',
     ja: 'クラフト紙箱印刷-エコギフト食品箱-香港-日本語',
   },
+  'doujinshi-printing': {
+    'zh-hk': '同人誌印刷-コミケ対応-A5-B5サイズ',
+    en: 'doujinshi-printing-comiket-a5-b5-format',
+    ja: '同人誌印刷-コミケ対応-A5-B5サイズ',
+  },
+  'acrylic-keychain': {
+    'zh-hk': '亞克力鑰匙扣-角色造型-2mm-3mm',
+    en: 'acrylic-keychain-custom-shape-2mm-3mm',
+    ja: 'アクリルキーホルダー-キャラクター形-2mm-3mm',
+  },
+  'can-badge': {
+    'zh-hk': '缶バッジ印刷-57mm-76mm-安全扣',
+    en: 'can-badge-printing-57mm-76mm-safety-pin',
+    ja: '缶バッジ印刷-57mm-76mm-安全ピン',
+  },
+  'postcard-set': {
+    'zh-hk': 'ポストカードセット-和紙風-105x148mm',
+    en: 'postcard-set-washi-style-105x148mm',
+    ja: 'ポストカードセット-和紙風-105x148mm',
+  },
+  'eco-tote-bag': {
+    'zh-hk': 'エコトートバッグ-オーガニックコットン-12oz',
+    en: 'eco-tote-bag-organic-cotton-12oz-canvas',
+    ja: 'エコトートバッグ-オーガニックコットン-12oz',
+  },
+
 };
 
 // 辅助函数：获取 Alt 标签

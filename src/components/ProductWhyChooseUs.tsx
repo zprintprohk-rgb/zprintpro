@@ -14,12 +14,12 @@ const translations = {
     features: [
       {
         icon: Factory,
-        title: '觀塘實體工廠',
-        subtitle: '15年本地經驗',
+        title: '深圳自有工廠',
+        subtitle: '15年跨境經驗',
         subtitleColor: 'text-blue-500',
         bgColor: 'bg-blue-50',
         iconColor: 'text-blue-500',
-        description: '香港觀塘工業區自營工廠，品質可控',
+        description: '深圳市彩龍印刷包裝有限公司旗下品牌，深圳自有工廠生產，品質可控',
       },
       {
         icon: Zap,
@@ -73,12 +73,12 @@ const translations = {
     features: [
       {
         icon: Factory,
-        title: 'HK ISO Factory',
+        title: 'Shenzhen ISO Factory',
         subtitle: '15+ Years Experience',
         subtitleColor: 'text-blue-500',
         bgColor: 'bg-blue-50',
         iconColor: 'text-blue-500',
-        description: 'Own factory in Kwun Tong industrial district',
+        description: 'Owned production facility in Shenzhen, operated by Shenzhen Cailong Printing & Packaging Co., Ltd. ISO-certified quality manufacturing.',
       },
       {
         icon: Zap,
@@ -132,12 +132,12 @@ const translations = {
     features: [
       {
         icon: Factory,
-        title: '香港実工場',
+        title: '深圳自社工場',
         subtitle: '15年以上の実績',
         subtitleColor: 'text-blue-500',
         bgColor: 'bg-blue-50',
         iconColor: 'text-blue-500',
-        description: '観塘工業区に自社工場を持つ',
+        description: '深圳市彩龍印刷包装有限公司が運営する深圳自社工場、ISO認証取得の品質管理',
       },
       {
         icon: Zap,

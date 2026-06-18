@@ -87,6 +87,7 @@ export const categories: Category[] = [
   { slug: 'calendars', name: '年曆印刷', nameEn: 'Calendars', nameJa: 'カレンダー印刷', name_zh: '年曆印刷', name_en: 'Calendars', name_ja: 'カレンダー印刷', sort_order: 11 },
   { slug: 'red-packets', name: '利是封印刷', nameEn: 'Red Packets', nameJa: 'ポチ袋印刷', name_zh: '利是封印刷', name_en: 'Red Packets', name_ja: 'ポチ袋印刷', sort_order: 12 },
   { slug: 'educational', name: '校園教育印刷', nameEn: 'Educational', nameJa: '教育印刷', name_zh: '校園教育印刷', name_en: 'Educational', name_ja: '教育印刷', sort_order: 13 },
+  { slug: 'japan-doujin', name: '同人誌・アニメグッズ', nameEn: 'Doujinshi & Anime Goods', nameJa: '同人誌・アニメグッズ', name_zh: '同人誌・アニメグッズ', name_en: 'Doujinshi & Anime Goods', name_ja: '同人誌・アニメグッズ', sort_order: 14 },
 ];
 
 // 79个SKU产品数据
@@ -16442,6 +16443,824 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     },
   },
     },
+    {
+      id: 'DJ-001',
+      sku_code: 'DJ-001',
+      slug: 'doujinshi-printing',
+      category: 'japan-doujin',
+      category_slug: 'japan-doujin',
+      name: '同人誌印刷',
+      nameEn: 'Doujinshi Printing',
+      nameJa: '同人誌印刷',
+      title_zh: '同人誌印刷 コミケ対応',
+      description: 'コミケ・即売会向け同人誌印刷。A5/B5 サイズ対応、表紙フルカラー、本文モノクロ。本文 10 部から対応、コミケ前 24 時間特急対応可能。',
+      descriptionEn: 'Doujinshi printing for Comiket and doujin events. A5/B5 sizes, full-color cover + mono interior. MOQ 10 books. 24-hour rush available before Comiket.',
+      descriptionJa: 'コミケ・即売会向け同人誌印刷。A5/B5 サイズ対応、表紙フルカラー、本文モノクロ。本文 10 部から対応、コミケ前 24 時間特急対応可能。',
+      description_zh: 'コミケ・即売会向け同人誌印刷。A5/B5 サイズ対応、表紙フルカラー、本文モノクロ。本文 10 部から対応、コミケ前 24 時間特急対応可能。',
+      longDescription: `<h3>同人誌・推し活特化印刷サービス</h3>
+<p>コミケ・即売会・創作イベント向けに最適化された同人誌印刷。表紙フルカラー + 本文モノクロの標準構成から、表紙本文ともにフルカラーのプレミアム構成まで対応。本文 10 部からの少部数対応で、個人サークル・初心者も気軽に発注可能。コミケ開催前は 24 時間特急対応で、在庫切れの追加印刷も迅速対応。</p>
+
+<h3>サイズ・仕様</h3>
+<table>
+  <thead><tr><th>項目</th><th>仕様</th></tr></thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>材質</td><td>FSC認証 上質紙 90g/コート紙 90g (表紙)</td></tr>
+    <tr class="border-b border-gray-200"><td>サイズ</td><td>A5 (148×210mm) / B5 (182×257mm) / A4 (オプション)</td></tr>
+    <tr><td>印刷方式</td><td>表紙: オフセット4色 / 本文: オンデマンド or オフセット</td></tr>
+  </tbody>
+</table>
+
+<h3>コミケ・即売会前 特急対応</h3>
+<p>智印雲 ZprintPro はコミケ前 24 時間特急対応で、在庫切れの追加印刷や直前物販にも迅速対応。深圳自社工場から DHL Express で 2-4 日で日本直送、日本語サポートで安心取引。</p>
+
+<h3>よくある質問 (FAQ)</h3>
+<details class="my-2"><summary><strong>最低何個から注文できますか？</strong></summary><p>10 個から対応可能です。個人サークル・個人作家様も安心してご注文いただけます。</p></details>
+<details class="my-2"><summary><strong>コミケ前の特急対応はできますか？</strong></summary><p>はい、コミケ開催前は 24 時間特急対応可能 (一部 SKU、追加料金適用)。詳細は WhatsApp でお問い合わせください。</p></details>
+<details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>深圳自社工場から DHL Express で 2-4 営業日でお届け。コミケ会場受取・自宅受取どちらも対応可能です。</p></details>
+<details class="my-2"><summary><strong>データ入稿の形式は？</strong></summary><p>Illustrator / Photoshop / PDF 形式推奨、CMYK モード、解像度 300dpi 以上。無料 AI データチェックで対応。</p></details>
+<details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能です。品質問題 (色ズレ・印刷ミス) は無料で再印刷または全額返金いたします。</p></details>
+
+<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
+      longDescriptionEn: `<h3>Specialized Printing for Doujin & Oshi-katsu Markets</h3>
+<p>Optimized for Comiket, doujin events, and creative exhibitions. Standard full-color cover + mono interior, with premium full-color cover-and-interior upgrades. Low MOQ of 10 books makes this accessible for individual circles and beginners. 24-hour rush production available before Comiket for last-minute reprints.</p>
+
+<h3>Specifications</h3>
+<table>
+  <thead><tr><th>Spec</th><th>Details</th></tr></thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>Material</td><td>FSC認証 上質紙 90g/コート紙 90g (表紙)</td></tr>
+    <tr class="border-b border-gray-200"><td>Size</td><td>A5 (148×210mm) / B5 (182×257mm) / A4 (オプション)</td></tr>
+    <tr><td>Print Method</td><td>表紙: オフセット4色 / 本文: オンデマンド or オフセット</td></tr>
+  </tbody>
+</table>
+
+<h3>24-Hour Rush Production Before Comiket</h3>
+<p>ZprintPro offers 24-hour rush production for last-minute reprints and Comiket merchandise. Our Shenzhen production facility ships via DHL Express to Japan in 2-4 business days, with Japanese-language support throughout.</p>
+
+<h3>Frequently Asked Questions</h3>
+<details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>10 pieces. Individual circles and artists are welcome to order.</p></details>
+<details class="my-2"><summary><strong>Do you offer rush production before Comiket?</strong></summary><p>Yes, 24-hour rush is available for select SKUs (rush fee applies). Contact us via WhatsApp for details.</p></details>
+<details class="my-2"><summary><strong>How long does DHL Express shipping take to Japan?</strong></summary><p>2-4 business days from our Shenzhen production facility. Both Comiket venue pickup and home delivery are supported.</p></details>
+<details class="my-2"><summary><strong>What file formats do you accept?</strong></summary><p>Illustrator / Photoshop / PDF preferred, CMYK mode, 300dpi+ resolution. Free AI data check included.</p></details>
+<details class="my-2"><summary><strong>Can I cancel or return my order?</strong></summary><p>Cancellations accepted before printing starts. Quality issues (color drift, print defects) get free reprint or full refund.</p></details>
+
+<p><em>ZprintPro is the international printing brand of Shenzhen Cailong Printing & Packaging Co., Ltd. Shenzhen production facility with DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>`,
+      longDescriptionJa: `<h3>同人誌・推し活特化印刷サービス</h3>
+<p>コミケ・即売会・創作イベント向けに最適化された同人誌印刷。表紙フルカラー + 本文モノクロの標準構成から、表紙本文ともにフルカラーのプレミアム構成まで対応。本文 10 部からの少部数対応で、個人サークル・初心者も気軽に発注可能。コミケ開催前は 24 時間特急対応で、在庫切れの追加印刷も迅速対応。</p>
+
+<h3>サイズ・仕様</h3>
+<table>
+  <thead><tr><th>項目</th><th>仕様</th></tr></thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>材質</td><td>FSC認証 上質紙 90g/コート紙 90g (表紙)</td></tr>
+    <tr class="border-b border-gray-200"><td>サイズ</td><td>A5 (148×210mm) / B5 (182×257mm) / A4 (オプション)</td></tr>
+    <tr class="border-b border-gray-200"><td>印刷方式</td><td>表紙: オフセット4色 / 本文: オンデマンド or オフセット</td></tr>
+    <tr><td>加工</td><td>無線綴じ / 中綴じ (8-64p) / 背表紙</td></tr>
+  </tbody>
+</table>
+
+<h3>コミケ・即売会前 特急対応</h3>
+<p>智印雲 ZprintPro はコミケ前 24 時間特急対応で、在庫切れの追加印刷や直前物販にも迅速対応。深圳自社工場から DHL Express で 2-4 日で日本直送、日本語サポートで安心取引。FSC 認証紙材・ISO 12647 色彩管理で品質保証。</p>
+
+<h3>よくある質問 (FAQ)</h3>
+<details class="my-2"><summary><strong>最低何個から注文できますか？</strong></summary><p>10 個から対応可能です。個人サークル・個人作家様も安心してご注文いただけます。</p></details>
+<details class="my-2"><summary><strong>コミケ前の特急対応はできますか？</strong></summary><p>はい、コミケ開催前は 24 時間特急対応可能 (一部 SKU、追加料金適用)。詳細は WhatsApp でお問い合わせください。</p></details>
+<details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>深圳自社工場から DHL Express で 2-4 営業日でお届け。コミケ会場受取・自宅受取どちらも対応可能です。</p></details>
+<details class="my-2"><summary><strong>データ入稿の形式は？</strong></summary><p>Illustrator / Photoshop / PDF 形式推奨、CMYK モード、解像度 300dpi 以上。無料 AI データチェックで対応。</p></details>
+<details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能です。品質問題 (色ズレ・印刷ミス) は無料で再印刷または全額返金いたします。</p></details>
+
+<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
+      price_range: '¥7,500〜/部〜',
+      basePrice: 7500,
+      weight_score: 0.7,
+      isHot: true,
+      isNew: true,
+      minQuantity: 10,
+      turnaround: '5-7 営業日 (コミケ前 24時間特急対応)',
+      images: [
+        '/images/japan/doujinshi-printing.webp',
+      '/images/japan/zprintpro-doujinshi-doujinshi-printing-ja-1.jpg',
+      '/images/japan/zprintpro-doujinshi-doujinshi-printing-ja-2.jpg',
+      '/images/japan/zprintpro-doujinshi-doujinshi-printing-ja-3.jpg',
+      '/images/japan/zprintpro-doujinshi-doujinshi-printing-ja-4.jpg'
+      ],
+      imagesByLocale: {
+        'zh-hk': [
+          '/images/japan/doujinshi-printing.webp',
+        ],
+        en: [
+          '/images/japan/doujinshi-printing.webp',
+        ],
+        ja: [
+          '/images/japan/doujinshi-printing.webp',
+      '/images/japan/zprintpro-doujinshi-doujinshi-printing-ja-1.jpg',
+      '/images/japan/zprintpro-doujinshi-doujinshi-printing-ja-2.jpg',
+      '/images/japan/zprintpro-doujinshi-doujinshi-printing-ja-3.jpg',
+      '/images/japan/zprintpro-doujinshi-doujinshi-printing-ja-4.jpg'
+        ],
+      },
+      seoImages: {
+        filename: {
+          'zh-hk': 'doujinshi-printing.webp',
+          en: 'doujinshi-printing.webp',
+          ja: 'doujinshi-printing.webp',
+        },
+        alt: {
+          'zh-hk': '同人誌印刷-コミケ対応-A5-B5サイズ',
+          en: 'doujinshi-printing-comiket-a5-b5-format',
+          ja: '同人誌印刷-コミケ対応-A5-B5サイズ',
+        },
+      },
+      features: [
+        'コミケ前 24時間特急対応可',
+        '10 個から少部数対応',
+        '深圳自社工場 + DHL Express 2-4 日日本直送',
+        'FSC 認証紙材 / ISO 12647 色彩管理',
+        '日本語サポート + WhatsApp 対応',
+        'A5 (148×210mm) / B5 (182×257mm サイズ'
+      ],
+      specs: {
+        material: 'FSC認証 上質紙 90g/コート紙 90g (表紙)',
+        size: 'A5 (148×210mm) / B5 (182×257mm) / A4 (オプション)',
+        printMethod: '表紙: オフセット4色 / 本文: オンデマンド or オフセット',
+        finishing: '無線綴じ / 中綴じ (8-64p) / 背表紙',
+      },
+      options: {
+        material: [
+          { value: 'standard', label: '標準', priceAdjustment: 0 },
+          { value: 'premium', label: 'プレミアム', priceAdjustment: 1500 },
+        ],
+        size: [
+          { value: 'standard', label: '標準サイズ', priceAdjustment: 0 },
+          { value: 'custom', label: 'カスタムサイズ', priceAdjustment: 800 },
+        ],
+      },
+      variables: {
+        quantities: [
+          { value: 10, label: '10 個〜', discount: 0 },
+          { value: 50, label: '50 個〜', discount: 0.05 },
+          { value: 100, label: '100 個〜', discount: 0.10 },
+          { value: 500, label: '500 個〜', discount: 0.15 },
+        ],
+      },
+    },
+    {
+      id: 'DJ-002',
+      sku_code: 'DJ-002',
+      slug: 'acrylic-keychain',
+      category: 'japan-doujin',
+      category_slug: 'japan-doujin',
+      name: '亞克力鑰匙扣',
+      nameEn: 'Acrylic Keychain',
+      nameJa: 'アクリルキーホルダー',
+      title_zh: '亞克力鑰匙扣 角色造型',
+      description: '推し活応援・キャラクター形亞克力鑰匙扣。透明/白/滿版印刷対応。2mm/3mm 厚度選択可。10 個から対応、安全扣/鏈條オプション。',
+      descriptionEn: 'Custom-shaped acrylic keychains for anime, VTuber, and character goods. Clear/white/full-color printing. 2mm/3mm thickness options. MOQ 10 pcs. Safety pin or chain options.',
+      descriptionJa: '推し活・VTuber・キャラクターグッズ向けアクリルキーホルダー。透明/白/滿版印刷対応。2mm/3mm 厚度選択可。10 個から対応、安全扣/チェーンオプション。',
+      description_zh: '推し活応援・キャラクター形亞克力鑰匙扣。透明/白/滿版印刷対応。2mm/3mm 厚度選択可。10 個から対応、安全扣/鏈條オプション。',
+      longDescription: `<h3>同人誌・推し活特化印刷サービス</h3>
+<p>推し活応援・キャラクターグッズ・アクリルスタンドの小型版。完全なカスタム形状対応 — VTuber・Vtuber のロゴ、推しキャラのイラストをそのままキーホルダー化。2mm と 3mm 厚で価格・手触りが異なる。10 個から対応で、個人作家・同人イベント参加にも最適。安全ピン・チェーン・ナスカンなど付属品も選択可能。</p>
+
+<h3>サイズ・仕様</h3>
+<table>
+  <thead><tr><th>項目</th><th>仕様</th></tr></thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>材質</td><td>透明アクリル板 2mm/3mm (オプション: 白ベース / 満版印刷)</td></tr>
+    <tr class="border-b border-gray-200"><td>サイズ</td><td>30-80mm (カスタム形状可、Illustrator パスデータ入稿)</td></tr>
+    <tr><td>印刷方式</td><td>UV インクジェット 4色 (CMYK + 白インク)</td></tr>
+  </tbody>
+</table>
+
+<h3>コミケ・即売会前 特急対応</h3>
+<p>智印雲 ZprintPro はコミケ前 24 時間特急対応で、在庫切れの追加印刷や直前物販にも迅速対応。深圳自社工場から DHL Express で 2-4 日で日本直送、日本語サポートで安心取引。</p>
+
+<h3>よくある質問 (FAQ)</h3>
+<details class="my-2"><summary><strong>最低何個から注文できますか？</strong></summary><p>10 個から対応可能です。個人サークル・個人作家様も安心してご注文いただけます。</p></details>
+<details class="my-2"><summary><strong>コミケ前の特急対応はできますか？</strong></summary><p>はい、コミケ開催前は 24 時間特急対応可能 (一部 SKU、追加料金適用)。詳細は WhatsApp でお問い合わせください。</p></details>
+<details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>深圳自社工場から DHL Express で 2-4 営業日でお届け。コミケ会場受取・自宅受取どちらも対応可能です。</p></details>
+<details class="my-2"><summary><strong>データ入稿の形式は？</strong></summary><p>Illustrator / Photoshop / PDF 形式推奨、CMYK モード、解像度 300dpi 以上。無料 AI データチェックで対応。</p></details>
+<details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能です。品質問題 (色ズレ・印刷ミス) は無料で再印刷または全額返金いたします。</p></details>
+
+<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
+      longDescriptionEn: `<h3>Specialized Printing for Doujin & Oshi-katsu Markets</h3>
+<p>Custom acrylic keychains for anime, VTuber, and character merchandise. Fully customizable shapes — your VTuber logo or favorite character artwork becomes a wearable keychain. Choose 2mm or 3mm thickness for different price points and tactile feel. MOQ of 10 pcs makes it accessible for individual artists and doujin event participation. Optional accessories: safety pin, ball chain, or hook clasp.</p>
+
+<h3>Specifications</h3>
+<table>
+  <thead><tr><th>Spec</th><th>Details</th></tr></thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>Material</td><td>透明アクリル板 2mm/3mm (オプション: 白ベース / 満版印刷)</td></tr>
+    <tr class="border-b border-gray-200"><td>Size</td><td>30-80mm (カスタム形状可、Illustrator パスデータ入稿)</td></tr>
+    <tr><td>Print Method</td><td>UV インクジェット 4色 (CMYK + 白インク)</td></tr>
+  </tbody>
+</table>
+
+<h3>24-Hour Rush Production Before Comiket</h3>
+<p>ZprintPro offers 24-hour rush production for last-minute reprints and Comiket merchandise. Our Shenzhen production facility ships via DHL Express to Japan in 2-4 business days, with Japanese-language support throughout.</p>
+
+<h3>Frequently Asked Questions</h3>
+<details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>10 pieces. Individual circles and artists are welcome to order.</p></details>
+<details class="my-2"><summary><strong>Do you offer rush production before Comiket?</strong></summary><p>Yes, 24-hour rush is available for select SKUs (rush fee applies). Contact us via WhatsApp for details.</p></details>
+<details class="my-2"><summary><strong>How long does DHL Express shipping take to Japan?</strong></summary><p>2-4 business days from our Shenzhen production facility. Both Comiket venue pickup and home delivery are supported.</p></details>
+<details class="my-2"><summary><strong>What file formats do you accept?</strong></summary><p>Illustrator / Photoshop / PDF preferred, CMYK mode, 300dpi+ resolution. Free AI data check included.</p></details>
+<details class="my-2"><summary><strong>Can I cancel or return my order?</strong></summary><p>Cancellations accepted before printing starts. Quality issues (color drift, print defects) get free reprint or full refund.</p></details>
+
+<p><em>ZprintPro is the international printing brand of Shenzhen Cailong Printing & Packaging Co., Ltd. Shenzhen production facility with DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>`,
+      longDescriptionJa: `<h3>同人誌・推し活特化印刷サービス</h3>
+<p>推し活応援・キャラクターグッズ・アクリルスタンドの小型版。完全なカスタム形状対応 — VTuber のロゴ、推しキャラのイラストをそのままキーホルダー化。2mm と 3mm 厚で価格・手触りが異なる。10 個から対応で、個人作家・同人イベント参加にも最適。安全ピン・チェーン・ナスカンなど付属品も選択可能。</p>
+
+<h3>サイズ・仕様</h3>
+<table>
+  <thead><tr><th>項目</th><th>仕様</th></tr></thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>材質</td><td>透明アクリル板 2mm/3mm (オプション: 白ベース / 満版印刷)</td></tr>
+    <tr class="border-b border-gray-200"><td>サイズ</td><td>30-80mm (カスタム形状可、Illustrator パスデータ入稿)</td></tr>
+    <tr class="border-b border-gray-200"><td>印刷方式</td><td>UV インクジェット 4色 (CMYK + 白インク)</td></tr>
+    <tr><td>加工</td><td>安全ピン / ボールチェーン / ナスカン / ヘッダーOPP袋封入</td></tr>
+  </tbody>
+</table>
+
+<h3>コミケ・即売会前 特急対応</h3>
+<p>智印雲 ZprintPro はコミケ前 24 時間特急対応で、在庫切れの追加印刷や直前物販にも迅速対応。深圳自社工場から DHL Express で 2-4 日で日本直送、日本語サポートで安心取引。FSC 認証紙材・ISO 12647 色彩管理で品質保証。</p>
+
+<h3>よくある質問 (FAQ)</h3>
+<details class="my-2"><summary><strong>最低何個から注文できますか？</strong></summary><p>10 個から対応可能です。個人サークル・個人作家様も安心してご注文いただけます。</p></details>
+<details class="my-2"><summary><strong>コミケ前の特急対応はできますか？</strong></summary><p>はい、コミケ開催前は 24 時間特急対応可能 (一部 SKU、追加料金適用)。詳細は WhatsApp でお問い合わせください。</p></details>
+<details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>深圳自社工場から DHL Express で 2-4 営業日でお届け。コミケ会場受取・自宅受取どちらも対応可能です。</p></details>
+<details class="my-2"><summary><strong>データ入稿の形式は？</strong></summary><p>Illustrator / Photoshop / PDF 形式推奨、CMYK モード、解像度 300dpi 以上。無料 AI データチェックで対応。</p></details>
+<details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能です。品質問題 (色ズレ・印刷ミス) は無料で再印刷または全額返金いたします。</p></details>
+
+<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
+      price_range: '¥2,275〜/個〜',
+      basePrice: 2275,
+      weight_score: 0.5,
+      isHot: true,
+      isNew: true,
+      minQuantity: 10,
+      turnaround: '5-7 営業日 (特急 3 営業日対応可)',
+      images: [
+        '/images/japan/acrylic-keychain.webp',
+      '/images/japan/zprintpro-doujinshi-acrylic-keychain-ja-1.jpg',
+      '/images/japan/zprintpro-doujinshi-acrylic-keychain-ja-2.jpg',
+      '/images/japan/zprintpro-doujinshi-acrylic-keychain-ja-3.jpg',
+      '/images/japan/zprintpro-doujinshi-acrylic-keychain-ja-4.jpg',
+      '/images/japan/zprintpro-doujinshi-acrylic-keychain-ja-5.jpg',
+      '/images/japan/zprintpro-doujinshi-acrylic-keychain-ja-6.jpg'
+      ],
+      imagesByLocale: {
+        'zh-hk': [
+          '/images/japan/acrylic-keychain.webp',
+        ],
+        en: [
+          '/images/japan/acrylic-keychain.webp',
+        ],
+        ja: [
+          '/images/japan/acrylic-keychain.webp',
+      '/images/japan/zprintpro-doujinshi-acrylic-keychain-ja-1.jpg',
+      '/images/japan/zprintpro-doujinshi-acrylic-keychain-ja-2.jpg',
+      '/images/japan/zprintpro-doujinshi-acrylic-keychain-ja-3.jpg',
+      '/images/japan/zprintpro-doujinshi-acrylic-keychain-ja-4.jpg',
+      '/images/japan/zprintpro-doujinshi-acrylic-keychain-ja-5.jpg',
+      '/images/japan/zprintpro-doujinshi-acrylic-keychain-ja-6.jpg'
+        ],
+      },
+      seoImages: {
+        filename: {
+          'zh-hk': 'acrylic-keychain.webp',
+          en: 'acrylic-keychain.webp',
+          ja: 'acrylic-keychain.webp',
+        },
+        alt: {
+          'zh-hk': '亞克力鑰匙扣-角色造型-2mm-3mm',
+          en: 'acrylic-keychain-custom-shape-2mm-3mm',
+          ja: 'アクリルキーホルダー-キャラクター形-2mm-3mm',
+        },
+      },
+      features: [
+        'コミケ前 24時間特急対応可',
+        '10 個から少部数対応',
+        '深圳自社工場 + DHL Express 2-4 日日本直送',
+        'FSC 認証紙材 / ISO 12647 色彩管理',
+        '日本語サポート + WhatsApp 対応',
+        '30-80mm (カスタム形状可、Illustrator パ サイズ'
+      ],
+      specs: {
+        material: '透明アクリル板 2mm/3mm (オプション: 白ベース / 満版印刷)',
+        size: '30-80mm (カスタム形状可、Illustrator パスデータ入稿)',
+        printMethod: 'UV インクジェット 4色 (CMYK + 白インク)',
+        finishing: '安全ピン / ボールチェーン / ナスカン / ヘッダーOPP袋封入',
+      },
+      options: {
+        material: [
+          { value: 'standard', label: '標準', priceAdjustment: 0 },
+          { value: 'premium', label: 'プレミアム', priceAdjustment: 1500 },
+        ],
+        size: [
+          { value: 'standard', label: '標準サイズ', priceAdjustment: 0 },
+          { value: 'custom', label: 'カスタムサイズ', priceAdjustment: 800 },
+        ],
+      },
+      variables: {
+        quantities: [
+          { value: 10, label: '10 個〜', discount: 0 },
+          { value: 50, label: '50 個〜', discount: 0.05 },
+          { value: 100, label: '100 個〜', discount: 0.10 },
+          { value: 500, label: '500 個〜', discount: 0.15 },
+        ],
+      },
+    },
+    {
+      id: 'DJ-003',
+      sku_code: 'DJ-003',
+      slug: 'can-badge',
+      category: 'japan-doujin',
+      category_slug: 'japan-doujin',
+      name: '缶バッジ印刷',
+      nameEn: 'Can Badge Printing',
+      nameJa: '缶バッジ印刷',
+      title_zh: '缶バッジ印刷 VTuber向け',
+      description: '57mm/76mm 缶バッジ印刷、安全扣付き。フルカラー印刷、10 個から対応。コミケ・推し活応援・企業イベント・物販用に最適。',
+      descriptionEn: '57mm/76mm can badge printing with safety pin. Full-color print, MOQ 10 pcs. Ideal for Comiket, oshi-katsu support, corporate events, and merchandise sales.',
+      descriptionJa: '57mm/76mm 缶バッジ印刷、安全ピン付き。フルカラー印刷、10 個から対応。コミケ・推し活応援・企業イベント・物販用に最適。',
+      description_zh: '57mm/76mm 缶バッジ印刷、安全扣付き。フルカラー印刷、10 個から対応。コミケ・推し活応援・企業イベント・物販用に最適。',
+      longDescription: `<h3>同人誌・推し活特化印刷サービス</h3>
+<p>コミケ・推し活・VTuber 物販に必須の缶バッジ。57mm 標準サイズと 76mm 大判、44mm ミニの 3 サイズ展開。フルカラー印刷でイラスト・ロゴをそのまま再現。安全ピン標準装備で衣服・カバンに簡単装着。10 個から少部数対応で、個人サークルも気軽に発注可能。コミケ前特急対応で、追加発注にも迅速対応。</p>
+
+<h3>サイズ・仕様</h3>
+<table>
+  <thead><tr><th>項目</th><th>仕様</th></tr></thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>材質</td><td>金属ベース + 紙/ペット印刷面 + 安全ピン</td></tr>
+    <tr class="border-b border-gray-200"><td>サイズ</td><td>57mm (標準) / 76mm (大判) / 44mm (ミニ)</td></tr>
+    <tr><td>印刷方式</td><td>オフセット/デジタル 4色 (CMYK)</td></tr>
+  </tbody>
+</table>
+
+<h3>コミケ・即売会前 特急対応</h3>
+<p>智印雲 ZprintPro はコミケ前 24 時間特急対応で、在庫切れの追加印刷や直前物販にも迅速対応。深圳自社工場から DHL Express で 2-4 日で日本直送、日本語サポートで安心取引。</p>
+
+<h3>よくある質問 (FAQ)</h3>
+<details class="my-2"><summary><strong>最低何個から注文できますか？</strong></summary><p>10 個から対応可能です。個人サークル・個人作家様も安心してご注文いただけます。</p></details>
+<details class="my-2"><summary><strong>コミケ前の特急対応はできますか？</strong></summary><p>はい、コミケ開催前は 24 時間特急対応可能 (一部 SKU、追加料金適用)。詳細は WhatsApp でお問い合わせください。</p></details>
+<details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>深圳自社工場から DHL Express で 2-4 営業日でお届け。コミケ会場受取・自宅受取どちらも対応可能です。</p></details>
+<details class="my-2"><summary><strong>データ入稿の形式は？</strong></summary><p>Illustrator / Photoshop / PDF 形式推奨、CMYK モード、解像度 300dpi 以上。無料 AI データチェックで対応。</p></details>
+<details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能です。品質問題 (色ズレ・印刷ミス) は無料で再印刷または全額返金いたします。</p></details>
+
+<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
+      longDescriptionEn: `<h3>Specialized Printing for Doujin & Oshi-katsu Markets</h3>
+<p>Essential can badges for Comiket, oshi-katsu, and VTuber merchandise. Three sizes: 57mm standard, 76mm large, 44mm mini. Full-color printing preserves illustration and logo details. Safety pin included for easy attachment to clothing or bags. Low MOQ of 10 pcs makes it accessible for individual circles. Rush production available before Comiket for last-minute orders.</p>
+
+<h3>Specifications</h3>
+<table>
+  <thead><tr><th>Spec</th><th>Details</th></tr></thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>Material</td><td>金属ベース + 紙/ペット印刷面 + 安全ピン</td></tr>
+    <tr class="border-b border-gray-200"><td>Size</td><td>57mm (標準) / 76mm (大判) / 44mm (ミニ)</td></tr>
+    <tr><td>Print Method</td><td>オフセット/デジタル 4色 (CMYK)</td></tr>
+  </tbody>
+</table>
+
+<h3>24-Hour Rush Production Before Comiket</h3>
+<p>ZprintPro offers 24-hour rush production for last-minute reprints and Comiket merchandise. Our Shenzhen production facility ships via DHL Express to Japan in 2-4 business days, with Japanese-language support throughout.</p>
+
+<h3>Frequently Asked Questions</h3>
+<details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>10 pieces. Individual circles and artists are welcome to order.</p></details>
+<details class="my-2"><summary><strong>Do you offer rush production before Comiket?</strong></summary><p>Yes, 24-hour rush is available for select SKUs (rush fee applies). Contact us via WhatsApp for details.</p></details>
+<details class="my-2"><summary><strong>How long does DHL Express shipping take to Japan?</strong></summary><p>2-4 business days from our Shenzhen production facility. Both Comiket venue pickup and home delivery are supported.</p></details>
+<details class="my-2"><summary><strong>What file formats do you accept?</strong></summary><p>Illustrator / Photoshop / PDF preferred, CMYK mode, 300dpi+ resolution. Free AI data check included.</p></details>
+<details class="my-2"><summary><strong>Can I cancel or return my order?</strong></summary><p>Cancellations accepted before printing starts. Quality issues (color drift, print defects) get free reprint or full refund.</p></details>
+
+<p><em>ZprintPro is the international printing brand of Shenzhen Cailong Printing & Packaging Co., Ltd. Shenzhen production facility with DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>`,
+      longDescriptionJa: `<h3>同人誌・推し活特化印刷サービス</h3>
+<p>コミケ・推し活・VTuber 物販に必須の缶バッジ。57mm 標準サイズと 76mm 大判、44mm ミニの 3 サイズ展開。フルカラー印刷でイラスト・ロゴをそのまま再現。安全ピン標準装備で衣服・カバンに簡単装着。10 個から少部数対応で、個人サークルも気軽に発注可能。コミケ前特急対応で、追加発注にも迅速対応。</p>
+
+<h3>サイズ・仕様</h3>
+<table>
+  <thead><tr><th>項目</th><th>仕様</th></tr></thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>材質</td><td>金属ベース + 紙/ペット印刷面 + 安全ピン</td></tr>
+    <tr class="border-b border-gray-200"><td>サイズ</td><td>57mm (標準) / 76mm (大判) / 44mm (ミニ)</td></tr>
+    <tr class="border-b border-gray-200"><td>印刷方式</td><td>オフセット/デジタル 4色 (CMYK)</td></tr>
+    <tr><td>加工</td><td>安全ピン標準装備 / OPP袋個別包装オプション</td></tr>
+  </tbody>
+</table>
+
+<h3>コミケ・即売会前 特急対応</h3>
+<p>智印雲 ZprintPro はコミケ前 24 時間特急対応で、在庫切れの追加印刷や直前物販にも迅速対応。深圳自社工場から DHL Express で 2-4 日で日本直送、日本語サポートで安心取引。FSC 認証紙材・ISO 12647 色彩管理で品質保証。</p>
+
+<h3>よくある質問 (FAQ)</h3>
+<details class="my-2"><summary><strong>最低何個から注文できますか？</strong></summary><p>10 個から対応可能です。個人サークル・個人作家様も安心してご注文いただけます。</p></details>
+<details class="my-2"><summary><strong>コミケ前の特急対応はできますか？</strong></summary><p>はい、コミケ開催前は 24 時間特急対応可能 (一部 SKU、追加料金適用)。詳細は WhatsApp でお問い合わせください。</p></details>
+<details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>深圳自社工場から DHL Express で 2-4 営業日でお届け。コミケ会場受取・自宅受取どちらも対応可能です。</p></details>
+<details class="my-2"><summary><strong>データ入稿の形式は？</strong></summary><p>Illustrator / Photoshop / PDF 形式推奨、CMYK モード、解像度 300dpi 以上。無料 AI データチェックで対応。</p></details>
+<details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能です。品質問題 (色ズレ・印刷ミス) は無料で再印刷または全額返金いたします。</p></details>
+
+<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
+      price_range: '¥1,200〜/個〜',
+      basePrice: 1200,
+      weight_score: 0.4,
+      isHot: true,
+      isNew: true,
+      minQuantity: 10,
+      turnaround: '5-7 営業日 (特急 3 営業日対応可)',
+      images: [
+        '/images/japan/can-badge.webp',
+      '/images/japan/zprintpro-doujinshi-can-badge-ja-1.jpg',
+      '/images/japan/zprintpro-doujinshi-can-badge-ja-2.jpg',
+      '/images/japan/zprintpro-doujinshi-can-badge-ja-3.jpg',
+      '/images/japan/zprintpro-doujinshi-can-badge-ja-4.jpg',
+      '/images/japan/zprintpro-doujinshi-can-badge-ja-5.jpg'
+      ],
+      imagesByLocale: {
+        'zh-hk': [
+          '/images/japan/can-badge.webp',
+        ],
+        en: [
+          '/images/japan/can-badge.webp',
+        ],
+        ja: [
+          '/images/japan/can-badge.webp',
+      '/images/japan/zprintpro-doujinshi-can-badge-ja-1.jpg',
+      '/images/japan/zprintpro-doujinshi-can-badge-ja-2.jpg',
+      '/images/japan/zprintpro-doujinshi-can-badge-ja-3.jpg',
+      '/images/japan/zprintpro-doujinshi-can-badge-ja-4.jpg',
+      '/images/japan/zprintpro-doujinshi-can-badge-ja-5.jpg'
+        ],
+      },
+      seoImages: {
+        filename: {
+          'zh-hk': 'can-badge.webp',
+          en: 'can-badge.webp',
+          ja: 'can-badge.webp',
+        },
+        alt: {
+          'zh-hk': '缶バッジ印刷-57mm-76mm-安全扣',
+          en: 'can-badge-printing-57mm-76mm-safety-pin',
+          ja: '缶バッジ印刷-57mm-76mm-安全ピン',
+        },
+      },
+      features: [
+        'コミケ前 24時間特急対応可',
+        '10 個から少部数対応',
+        '深圳自社工場 + DHL Express 2-4 日日本直送',
+        'FSC 認証紙材 / ISO 12647 色彩管理',
+        '日本語サポート + WhatsApp 対応',
+        '57mm (標準) / 76mm (大判) / 44mm ( サイズ'
+      ],
+      specs: {
+        material: '金属ベース + 紙/ペット印刷面 + 安全ピン',
+        size: '57mm (標準) / 76mm (大判) / 44mm (ミニ)',
+        printMethod: 'オフセット/デジタル 4色 (CMYK)',
+        finishing: '安全ピン標準装備 / OPP袋個別包装オプション',
+      },
+      options: {
+        material: [
+          { value: 'standard', label: '標準', priceAdjustment: 0 },
+          { value: 'premium', label: 'プレミアム', priceAdjustment: 1500 },
+        ],
+        size: [
+          { value: 'standard', label: '標準サイズ', priceAdjustment: 0 },
+          { value: 'custom', label: 'カスタムサイズ', priceAdjustment: 800 },
+        ],
+      },
+      variables: {
+        quantities: [
+          { value: 10, label: '10 個〜', discount: 0 },
+          { value: 50, label: '50 個〜', discount: 0.05 },
+          { value: 100, label: '100 個〜', discount: 0.10 },
+          { value: 500, label: '500 個〜', discount: 0.15 },
+        ],
+      },
+    },
+    {
+      id: 'DJ-004',
+      sku_code: 'DJ-004',
+      slug: 'postcard-set',
+      category: 'japan-doujin',
+      category_slug: 'japan-doujin',
+      name: 'ポストカードセット',
+      nameEn: 'Postcard Set',
+      nameJa: 'ポストカードセット',
+      title_zh: 'ポストカードセット 4-8枚入',
+      description: '和紙風ポストカード 4-8 枚セット。推しキャラ・VTuber・イラストコレクション。105×148mm 標準、両面印刷対応、OPP スリーブ封入。',
+      descriptionEn: 'Washi-style postcard sets in 4-8 piece collections. Ideal for character goods, VTuber, illustration collections. 105×148mm standard, double-sided printing, OPP sleeve packaging.',
+      descriptionJa: '和紙風ポストカード 4-8 枚セット。推しキャラ・VTuber・イラストコレクション。105×148mm 標準、両面印刷対応、OPP スリーブ封入。',
+      description_zh: '和紙風ポストカード 4-8 枚セット。推しキャラ・VTuber・イラストコレクション。105×148mm 標準、両面印刷対応、OPP スリーブ封入。',
+      longDescription: `<h3>同人誌・推し活特化印刷サービス</h3>
+<p>推しキャラ・VTuber のイラストやサイン会配布用に最適なポストカードセット。4-8 枚のセット販売で、コレクション性が高い。和紙風アート紙採用で、和風・古風テイストの作品にもマッチ。両面印刷対応で、表面イラスト + 裏面テキスト/サインを自由にデザイン。OPP スリーブ個別包装で、傷・汚れから保護。</p>
+
+<h3>サイズ・仕様</h3>
+<table>
+  <thead><tr><th>項目</th><th>仕様</th></tr></thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>材質</td><td>和紙風アート紙 180g / 両面マットPPラミネート</td></tr>
+    <tr class="border-b border-gray-200"><td>サイズ</td><td>105×148mm (A6 標準ポストカード)</td></tr>
+    <tr><td>印刷方式</td><td>オンデマンド/オフセット 4色 (CMYK)</td></tr>
+  </tbody>
+</table>
+
+<h3>コミケ・即売会前 特急対応</h3>
+<p>智印雲 ZprintPro はコミケ前 24 時間特急対応で、在庫切れの追加印刷や直前物販にも迅速対応。深圳自社工場から DHL Express で 2-4 日で日本直送、日本語サポートで安心取引。</p>
+
+<h3>よくある質問 (FAQ)</h3>
+<details class="my-2"><summary><strong>最低何個から注文できますか？</strong></summary><p>4 個から対応可能です。個人サークル・個人作家様も安心してご注文いただけます。</p></details>
+<details class="my-2"><summary><strong>コミケ前の特急対応はできますか？</strong></summary><p>はい、コミケ開催前は 24 時間特急対応可能 (一部 SKU、追加料金適用)。詳細は WhatsApp でお問い合わせください。</p></details>
+<details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>深圳自社工場から DHL Express で 2-4 営業日でお届け。コミケ会場受取・自宅受取どちらも対応可能です。</p></details>
+<details class="my-2"><summary><strong>データ入稿の形式は？</strong></summary><p>Illustrator / Photoshop / PDF 形式推奨、CMYK モード、解像度 300dpi 以上。無料 AI データチェックで対応。</p></details>
+<details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能です。品質問題 (色ズレ・印刷ミス) は無料で再印刷または全額返金いたします。</p></details>
+
+<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
+      longDescriptionEn: `<h3>Specialized Printing for Doujin & Oshi-katsu Markets</h3>
+<p>Ideal postcard sets for character goods, VTuber illustrations, and signature event giveaways. Sold in 4-8 piece sets for collection appeal. Washi-style art paper matches Japanese-aesthetic and traditional artwork. Double-sided printing allows front illustration + back text/signature design. OPP sleeve packaging protects from scratches and dust.</p>
+
+<h3>Specifications</h3>
+<table>
+  <thead><tr><th>Spec</th><th>Details</th></tr></thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>Material</td><td>和紙風アート紙 180g / 両面マットPPラミネート</td></tr>
+    <tr class="border-b border-gray-200"><td>Size</td><td>105×148mm (A6 標準ポストカード)</td></tr>
+    <tr><td>Print Method</td><td>オンデマンド/オフセット 4色 (CMYK)</td></tr>
+  </tbody>
+</table>
+
+<h3>24-Hour Rush Production Before Comiket</h3>
+<p>ZprintPro offers 24-hour rush production for last-minute reprints and Comiket merchandise. Our Shenzhen production facility ships via DHL Express to Japan in 2-4 business days, with Japanese-language support throughout.</p>
+
+<h3>Frequently Asked Questions</h3>
+<details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>4 pieces. Individual circles and artists are welcome to order.</p></details>
+<details class="my-2"><summary><strong>Do you offer rush production before Comiket?</strong></summary><p>Yes, 24-hour rush is available for select SKUs (rush fee applies). Contact us via WhatsApp for details.</p></details>
+<details class="my-2"><summary><strong>How long does DHL Express shipping take to Japan?</strong></summary><p>2-4 business days from our Shenzhen production facility. Both Comiket venue pickup and home delivery are supported.</p></details>
+<details class="my-2"><summary><strong>What file formats do you accept?</strong></summary><p>Illustrator / Photoshop / PDF preferred, CMYK mode, 300dpi+ resolution. Free AI data check included.</p></details>
+<details class="my-2"><summary><strong>Can I cancel or return my order?</strong></summary><p>Cancellations accepted before printing starts. Quality issues (color drift, print defects) get free reprint or full refund.</p></details>
+
+<p><em>ZprintPro is the international printing brand of Shenzhen Cailong Printing & Packaging Co., Ltd. Shenzhen production facility with DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>`,
+      longDescriptionJa: `<h3>同人誌・推し活特化印刷サービス</h3>
+<p>推しキャラ・VTuber のイラストやサイン会配布用に最適なポストカードセット。4-8 枚のセット販売で、コレクション性が高い。和紙風アート紙採用で、和風・古風テイストの作品にもマッチ。両面印刷対応で、表面イラスト + 裏面テキスト/サインを自由にデザイン。OPP スリーブ個別包装で、傷・汚れから保護。</p>
+
+<h3>サイズ・仕様</h3>
+<table>
+  <thead><tr><th>項目</th><th>仕様</th></tr></thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>材質</td><td>和紙風アート紙 180g / 両面マットPPラミネート</td></tr>
+    <tr class="border-b border-gray-200"><td>サイズ</td><td>105×148mm (A6 標準ポストカード)</td></tr>
+    <tr class="border-b border-gray-200"><td>印刷方式</td><td>オンデマンド/オフセット 4色 (CMYK)</td></tr>
+    <tr><td>加工</td><td>OPP スリーブ個別包装 + 集合OPP袋</td></tr>
+  </tbody>
+</table>
+
+<h3>コミケ・即売会前 特急対応</h3>
+<p>智印雲 ZprintPro はコミケ前 24 時間特急対応で、在庫切れの追加印刷や直前物販にも迅速対応。深圳自社工場から DHL Express で 2-4 日で日本直送、日本語サポートで安心取引。FSC 認証紙材・ISO 12647 色彩管理で品質保証。</p>
+
+<h3>よくある質問 (FAQ)</h3>
+<details class="my-2"><summary><strong>最低何個から注文できますか？</strong></summary><p>4 個から対応可能です。個人サークル・個人作家様も安心してご注文いただけます。</p></details>
+<details class="my-2"><summary><strong>コミケ前の特急対応はできますか？</strong></summary><p>はい、コミケ開催前は 24 時間特急対応可能 (一部 SKU、追加料金適用)。詳細は WhatsApp でお問い合わせください。</p></details>
+<details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>深圳自社工場から DHL Express で 2-4 営業日でお届け。コミケ会場受取・自宅受取どちらも対応可能です。</p></details>
+<details class="my-2"><summary><strong>データ入稿の形式は？</strong></summary><p>Illustrator / Photoshop / PDF 形式推奨、CMYK モード、解像度 300dpi 以上。無料 AI データチェックで対応。</p></details>
+<details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能です。品質問題 (色ズレ・印刷ミス) は無料で再印刷または全額返金いたします。</p></details>
+
+<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
+      price_range: '¥750〜/枚〜',
+      basePrice: 750,
+      weight_score: 0.3,
+      isHot: true,
+      isNew: true,
+      minQuantity: 4,
+      turnaround: '3-5 営業日',
+      images: [
+        '/images/japan/postcard-set.webp',
+      '/images/japan/zprintpro-doujinshi-postcard-set-ja-1.jpg',
+      '/images/japan/zprintpro-doujinshi-postcard-set-ja-2.jpg',
+      '/images/japan/zprintpro-doujinshi-postcard-set-ja-3.jpg',
+      '/images/japan/zprintpro-doujinshi-postcard-set-ja-4.jpg',
+      '/images/japan/zprintpro-doujinshi-postcard-set-ja-5.jpg',
+      '/images/japan/zprintpro-doujinshi-postcard-set-ja-6.jpg'
+      ],
+      imagesByLocale: {
+        'zh-hk': [
+          '/images/japan/postcard-set.webp',
+        ],
+        en: [
+          '/images/japan/postcard-set.webp',
+        ],
+        ja: [
+          '/images/japan/postcard-set.webp',
+      '/images/japan/zprintpro-doujinshi-postcard-set-ja-1.jpg',
+      '/images/japan/zprintpro-doujinshi-postcard-set-ja-2.jpg',
+      '/images/japan/zprintpro-doujinshi-postcard-set-ja-3.jpg',
+      '/images/japan/zprintpro-doujinshi-postcard-set-ja-4.jpg',
+      '/images/japan/zprintpro-doujinshi-postcard-set-ja-5.jpg',
+      '/images/japan/zprintpro-doujinshi-postcard-set-ja-6.jpg'
+        ],
+      },
+      seoImages: {
+        filename: {
+          'zh-hk': 'postcard-set.webp',
+          en: 'postcard-set.webp',
+          ja: 'postcard-set.webp',
+        },
+        alt: {
+          'zh-hk': 'ポストカードセット-和紙風-105x148mm',
+          en: 'postcard-set-washi-style-105x148mm',
+          ja: 'ポストカードセット-和紙風-105x148mm',
+        },
+      },
+      features: [
+        'コミケ前 24時間特急対応可',
+        '4 個から少部数対応',
+        '深圳自社工場 + DHL Express 2-4 日日本直送',
+        'FSC 認証紙材 / ISO 12647 色彩管理',
+        '日本語サポート + WhatsApp 対応',
+        '105×148mm (A6 標準ポストカード) サイズ'
+      ],
+      specs: {
+        material: '和紙風アート紙 180g / 両面マットPPラミネート',
+        size: '105×148mm (A6 標準ポストカード)',
+        printMethod: 'オンデマンド/オフセット 4色 (CMYK)',
+        finishing: 'OPP スリーブ個別包装 + 集合OPP袋',
+      },
+      options: {
+        material: [
+          { value: 'standard', label: '標準', priceAdjustment: 0 },
+          { value: 'premium', label: 'プレミアム', priceAdjustment: 1500 },
+        ],
+        size: [
+          { value: 'standard', label: '標準サイズ', priceAdjustment: 0 },
+          { value: 'custom', label: 'カスタムサイズ', priceAdjustment: 800 },
+        ],
+      },
+      variables: {
+        quantities: [
+          { value: 4, label: '4 個〜', discount: 0 },
+          { value: 50, label: '50 個〜', discount: 0.05 },
+          { value: 100, label: '100 個〜', discount: 0.10 },
+          { value: 500, label: '500 個〜', discount: 0.15 },
+        ],
+      },
+    },
+    {
+      id: 'DJ-005',
+      sku_code: 'DJ-005',
+      slug: 'eco-tote-bag',
+      category: 'japan-doujin',
+      category_slug: 'japan-doujin',
+      name: 'エコトートバッグ',
+      nameEn: 'Eco Tote Bag',
+      nameJa: 'エコトートバッグ',
+      title_zh: 'エコトートバッグ オーガニックコットン',
+      description: 'オーガニックコットン 100% トートバッグ。シルク印刷対応。推し活・コミケ・企業物販向け。10 個から対応、FSC 認証生地使用。',
+      descriptionEn: '100% organic cotton tote bags with silk printing. Ideal for oshi-katsu, Comiket, corporate merchandise. MOQ 10 pcs, FSC-certified fabric.',
+      descriptionJa: 'オーガニックコットン 100% トートバッグ。シルク印刷対応。推し活・コミケ・企業物販向け。10 個から対応、FSC 認証生地使用。',
+      description_zh: 'オーガニックコットン 100% トートバッグ。シルク印刷対応。推し活・コミケ・企業物販向け。10 個から対応、FSC 認証生地使用。',
+      longDescription: `<h3>同人誌・推し活特化印刷サービス</h3>
+<p>推し活・コミケ物販・企業ノベルティに最適なオーガニックコットントート。FSC 認証オーガニックコットン 100% 使用で、ESG ・サステナブル志向にも対応。シルクスクリーン印刷でロゴ・イラストを鮮明再現、DTG フルカラー印刷でグラデーション・写真も対応。A4 サイズ収納可能で、実用性も高い。10 個から対応で、少部数 OK。</p>
+
+<h3>サイズ・仕様</h3>
+<table>
+  <thead><tr><th>項目</th><th>仕様</th></tr></thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>材質</td><td>オーガニックコットン 100% / 12oz 厚手キャンバス</td></tr>
+    <tr class="border-b border-gray-200"><td>サイズ</td><td>38×42×10cm (A4 収納可) / マチ 10cm</td></tr>
+    <tr><td>印刷方式</td><td>シルクスクリーン印刷 (1-3 色) / DTG フルカラー印刷</td></tr>
+  </tbody>
+</table>
+
+<h3>コミケ・即売会前 特急対応</h3>
+<p>智印雲 ZprintPro はコミケ前 24 時間特急対応で、在庫切れの追加印刷や直前物販にも迅速対応。深圳自社工場から DHL Express で 2-4 日で日本直送、日本語サポートで安心取引。</p>
+
+<h3>よくある質問 (FAQ)</h3>
+<details class="my-2"><summary><strong>最低何個から注文できますか？</strong></summary><p>10 個から対応可能です。個人サークル・個人作家様も安心してご注文いただけます。</p></details>
+<details class="my-2"><summary><strong>コミケ前の特急対応はできますか？</strong></summary><p>はい、コミケ開催前は 24 時間特急対応可能 (一部 SKU、追加料金適用)。詳細は WhatsApp でお問い合わせください。</p></details>
+<details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>深圳自社工場から DHL Express で 2-4 営業日でお届け。コミケ会場受取・自宅受取どちらも対応可能です。</p></details>
+<details class="my-2"><summary><strong>データ入稿の形式は？</strong></summary><p>Illustrator / Photoshop / PDF 形式推奨、CMYK モード、解像度 300dpi 以上。無料 AI データチェックで対応。</p></details>
+<details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能です。品質問題 (色ズレ・印刷ミス) は無料で再印刷または全額返金いたします。</p></details>
+
+<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
+      longDescriptionEn: `<h3>Specialized Printing for Doujin & Oshi-katsu Markets</h3>
+<p>Premium organic cotton tote bags for oshi-katsu, Comiket merchandise, and corporate gifting. FSC-certified 100% organic cotton supports ESG and sustainability narratives. Silk screen printing delivers crisp logos and illustrations; DTG full-color printing handles gradients and photos. A4-sized capacity adds practicality. MOQ 10 pcs accommodates small-batch needs.</p>
+
+<h3>Specifications</h3>
+<table>
+  <thead><tr><th>Spec</th><th>Details</th></tr></thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>Material</td><td>オーガニックコットン 100% / 12oz 厚手キャンバス</td></tr>
+    <tr class="border-b border-gray-200"><td>Size</td><td>38×42×10cm (A4 収納可) / マチ 10cm</td></tr>
+    <tr><td>Print Method</td><td>シルクスクリーン印刷 (1-3 色) / DTG フルカラー印刷</td></tr>
+  </tbody>
+</table>
+
+<h3>24-Hour Rush Production Before Comiket</h3>
+<p>ZprintPro offers 24-hour rush production for last-minute reprints and Comiket merchandise. Our Shenzhen production facility ships via DHL Express to Japan in 2-4 business days, with Japanese-language support throughout.</p>
+
+<h3>Frequently Asked Questions</h3>
+<details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>10 pieces. Individual circles and artists are welcome to order.</p></details>
+<details class="my-2"><summary><strong>Do you offer rush production before Comiket?</strong></summary><p>Yes, 24-hour rush is available for select SKUs (rush fee applies). Contact us via WhatsApp for details.</p></details>
+<details class="my-2"><summary><strong>How long does DHL Express shipping take to Japan?</strong></summary><p>2-4 business days from our Shenzhen production facility. Both Comiket venue pickup and home delivery are supported.</p></details>
+<details class="my-2"><summary><strong>What file formats do you accept?</strong></summary><p>Illustrator / Photoshop / PDF preferred, CMYK mode, 300dpi+ resolution. Free AI data check included.</p></details>
+<details class="my-2"><summary><strong>Can I cancel or return my order?</strong></summary><p>Cancellations accepted before printing starts. Quality issues (color drift, print defects) get free reprint or full refund.</p></details>
+
+<p><em>ZprintPro is the international printing brand of Shenzhen Cailong Printing & Packaging Co., Ltd. Shenzhen production facility with DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>`,
+      longDescriptionJa: `<h3>同人誌・推し活特化印刷サービス</h3>
+<p>推し活・コミケ物販・企業ノベルティに最適なオーガニックコットントート。FSC 認証オーガニックコットン 100% 使用で、ESG・サステナブル志向にも対応。シルクスクリーン印刷でロゴ・イラストを鮮明再現、DTG フルカラー印刷でグラデーション・写真も対応。A4 サイズ収納可能で、実用性も高い。10 個から対応で、少部数 OK。</p>
+
+<h3>サイズ・仕様</h3>
+<table>
+  <thead><tr><th>項目</th><th>仕様</th></tr></thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>材質</td><td>オーガニックコットン 100% / 12oz 厚手キャンバス</td></tr>
+    <tr class="border-b border-gray-200"><td>サイズ</td><td>38×42×10cm (A4 収納可) / マチ 10cm</td></tr>
+    <tr class="border-b border-gray-200"><td>印刷方式</td><td>シルクスクリーン印刷 (1-3 色) / DTG フルカラー印刷</td></tr>
+    <tr><td>加工</td><td>内ポケット / 底板補強 / 名入れ刺繍 (オプション)</td></tr>
+  </tbody>
+</table>
+
+<h3>コミケ・即売会前 特急対応</h3>
+<p>智印雲 ZprintPro はコミケ前 24 時間特急対応で、在庫切れの追加印刷や直前物販にも迅速対応。深圳自社工場から DHL Express で 2-4 日で日本直送、日本語サポートで安心取引。FSC 認証紙材・ISO 12647 色彩管理で品質保証。</p>
+
+<h3>よくある質問 (FAQ)</h3>
+<details class="my-2"><summary><strong>最低何個から注文できますか？</strong></summary><p>10 個から対応可能です。個人サークル・個人作家様も安心してご注文いただけます。</p></details>
+<details class="my-2"><summary><strong>コミケ前の特急対応はできますか？</strong></summary><p>はい、コミケ開催前は 24 時間特急対応可能 (一部 SKU、追加料金適用)。詳細は WhatsApp でお問い合わせください。</p></details>
+<details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>深圳自社工場から DHL Express で 2-4 営業日でお届け。コミケ会場受取・自宅受取どちらも対応可能です。</p></details>
+<details class="my-2"><summary><strong>データ入稿の形式は？</strong></summary><p>Illustrator / Photoshop / PDF 形式推奨、CMYK モード、解像度 300dpi 以上。無料 AI データチェックで対応。</p></details>
+<details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能です。品質問題 (色ズレ・印刷ミス) は無料で再印刷または全額返金いたします。</p></details>
+
+<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
+      price_range: '¥9,000〜/個〜',
+      basePrice: 9000,
+      weight_score: 0.6,
+      isHot: true,
+      isNew: true,
+      minQuantity: 10,
+      turnaround: '5-7 営業日',
+      images: [
+        '/images/japan/eco-tote-bag.webp',
+      '/images/japan/JA-zprintpro-doujinshi-eco-tote-bag-ja-1.jpg',
+      '/images/japan/JA-zprintpro-doujinshi-eco-tote-bag-ja-2.jpg',
+      '/images/japan/JA-zprintpro-doujinshi-eco-tote-bag-ja-3.jpg',
+      '/images/japan/JA-zprintpro-doujinshi-eco-tote-bag-ja-4.jpg',
+      '/images/japan/JA-zprintpro-doujinshi-eco-tote-bag-ja-5.jpg'
+      ],
+      imagesByLocale: {
+        'zh-hk': [
+          '/images/japan/eco-tote-bag.webp',
+        ],
+        en: [
+          '/images/japan/eco-tote-bag.webp',
+        ],
+        ja: [
+          '/images/japan/eco-tote-bag.webp',
+      '/images/japan/JA-zprintpro-doujinshi-eco-tote-bag-ja-1.jpg',
+      '/images/japan/JA-zprintpro-doujinshi-eco-tote-bag-ja-2.jpg',
+      '/images/japan/JA-zprintpro-doujinshi-eco-tote-bag-ja-3.jpg',
+      '/images/japan/JA-zprintpro-doujinshi-eco-tote-bag-ja-4.jpg',
+      '/images/japan/JA-zprintpro-doujinshi-eco-tote-bag-ja-5.jpg'
+        ],
+      },
+      seoImages: {
+        filename: {
+          'zh-hk': 'eco-tote-bag.webp',
+          en: 'eco-tote-bag.webp',
+          ja: 'eco-tote-bag.webp',
+        },
+        alt: {
+          'zh-hk': 'エコトートバッグ-オーガニックコットン-12oz',
+          en: 'eco-tote-bag-organic-cotton-12oz-canvas',
+          ja: 'エコトートバッグ-オーガニックコットン-12oz',
+        },
+      },
+      features: [
+        'コミケ前 24時間特急対応可',
+        '10 個から少部数対応',
+        '深圳自社工場 + DHL Express 2-4 日日本直送',
+        'FSC 認証紙材 / ISO 12647 色彩管理',
+        '日本語サポート + WhatsApp 対応',
+        '38×42×10cm (A4 収納可) / マチ 10cm サイズ'
+      ],
+      specs: {
+        material: 'オーガニックコットン 100% / 12oz 厚手キャンバス',
+        size: '38×42×10cm (A4 収納可) / マチ 10cm',
+        printMethod: 'シルクスクリーン印刷 (1-3 色) / DTG フルカラー印刷',
+        finishing: '内ポケット / 底板補強 / 名入れ刺繍 (オプション)',
+      },
+      options: {
+        material: [
+          { value: 'standard', label: '標準', priceAdjustment: 0 },
+          { value: 'premium', label: 'プレミアム', priceAdjustment: 1500 },
+        ],
+        size: [
+          { value: 'standard', label: '標準サイズ', priceAdjustment: 0 },
+          { value: 'custom', label: 'カスタムサイズ', priceAdjustment: 800 },
+        ],
+      },
+      variables: {
+        quantities: [
+          { value: 10, label: '10 個〜', discount: 0 },
+          { value: 50, label: '50 個〜', discount: 0.05 },
+          { value: 100, label: '100 個〜', discount: 0.10 },
+          { value: 500, label: '500 個〜', discount: 0.15 },
+        ],
+      },
+    },
+
 ];
 
 // 获取所有产品

@@ -112,7 +112,7 @@ export function DoujinSKU({ locale }: DoujinSKUProps) {
             return (
               <Link
                 key={item.slug}
-                href={`/${locale}/services/seo/${item.slug}/`}
+                href={`/${locale}/product/${item.slug}/`}
                 onClick={() => {
                   // inline GA4 tracking (avoid RSC serialization issue with @/lib/analytics)
                   if (typeof window !== 'undefined' && (window as any).gtag) {

@@ -4181,6 +4181,251 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     }
   },
 
+  "doujinshi-printing": {
+    "name": {
+      "zh-hk": "同人誌印刷",
+      "en": "Doujinshi Printing",
+      "ja": "同人誌印刷"
+    },
+    "seo": {
+      "zh-hk": {
+        "title": "同人誌印刷 コミケ対応 | 即日発送 24h特急",
+        "description": "コミケ・即売会向け同人誌印刷専門。A5/B5 サイズ、表紙フルカラー、本文モノクロ。10 部から対応、コミケ前 24 時間特急対応。日本語サポート、DHL Express 日本直送 2-4 日。",
+        "h1": "同人誌印刷 コミケ対応",
+        "keywords": ["同人誌印刷", "コミケ", "同人誌", "即売会", "印刷", "A5同人誌", "少部数印刷", "コミケ前特急"],
+        "body": "<p>コミケ・即売会・創作イベント向けに最適化された同人誌印刷。表紙フルカラー + 本文モノクロの標準構成から、表紙本文ともにフルカラーのプレミアム構成まで対応。本文 10 部からの少部数対応で、個人サークル・初心者も気軽に発注可能。コミケ開催前は 24 時間特急対応で、在庫切れの追加印刷も迅速対応。</p><h3>サイズ・仕様</h3><p>材質: FSC認証 上質紙 90g/コート紙 90g (表紙)。サイズ: A5 (148×210mm) / B5 (182×257mm) / A4 (オプション)。印刷方式: 表紙: オフセット4色 / 本文: オンデマンド or オフセット。加工: 無線綴じ / 中綴じ (8-64p) / 背表紙。</p>"
+      },
+      "en": {
+        "title": "Doujinshi Printing Comiket | 24h Rush Available",
+        "description": "Comiket-ready doujinshi printing service. A5/B5 sizes, full-color cover + mono interior. Low MOQ 10 books, 24-hour rush before Comiket. Japanese support, DHL Express worldwide 2-4 days.",
+        "h1": "Doujinshi Printing for Comiket & Doujin Events",
+        "keywords": ["doujinshi printing", "comiket", "doujinshi", "doujin event", "self publishing", "A5 booklet", "low MOQ printing", "rush printing"],
+        "body": "<p>Optimized for Comiket, doujin events, and creative exhibitions. Standard full-color cover + mono interior, with premium full-color cover-and-interior upgrades. Low MOQ of 10 books makes this accessible for individual circles and beginners. 24-hour rush production available before Comiket for last-minute reprints.</p><h3>Specifications</h3><p>Material: FSC-certified fine paper 90g / coated paper 90g (cover). Size: A5 (148×210mm) / B5 (182×257mm) / A4 (optional). Print method: Cover: offset 4-color / Interior: on-demand or offset.</p>"
+      },
+      "ja": {
+        "title": "同人誌印刷 コミケ対応 | 即日発送 24時間特急",
+        "description": "コミケ・即売会向け同人誌印刷専門。A5/B5 サイズ、表紙フルカラー、本文モノクロ。10 部から対応、コミケ前 24 時間特急対応。日本語サポート、DHL Express 日本直送 2-4 日。",
+        "h1": "同人誌印刷 コミケ・即売会対応",
+        "keywords": ["同人誌印刷", "コミケ", "同人誌", "即売会", "印刷", "A5同人誌", "少部数印刷", "コミケ前特急", "即売会印刷"],
+        "body": "<p>コミケ・即売会・創作イベント向けに最適化された同人誌印刷。表紙フルカラー + 本文モノクロの標準構成から、表紙本文ともにフルカラーのプレミアム構成まで対応。本文 10 部からの少部数対応で、個人サークル・初心者も気軽に発注可能。コミケ開催前は 24 時間特急対応で、在庫切れの追加印刷も迅速対応。</p><h3>サイズ・仕様</h3><p>材質: FSC認証 上質紙 90g/コート紙 90g (表紙)。サイズ: A5 (148×210mm) / B5 (182×257mm) / A4 (オプション)。印刷方式: 表紙: オフセット4色 / 本文: オンデマンド or オフセット。加工: 無線綴じ / 中綴じ (8-64p) / 背表紙。</p>"
+      }
+    },
+    "faqs": [
+      {
+        "q": "同人誌印刷の最低注文数量は？",
+        "a": "10 部から対応可能です。個人サークル・個人作家様も安心してご注文いただけます。"
+      },
+      {
+        "q": "コミケ前の特急対応はできますか？",
+        "a": "はい、コミケ開催前は 24 時間特急対応可能（一部 SKU、追加料金適用）。"
+      },
+      {
+        "q": "DHL で日本まで何日で届きますか？",
+        "a": "深圳自社工場から DHL Express で 2-4 営業日でお届けします。"
+      },
+    ],
+    "imageAlt": {
+      "zh-hk": "同人誌印刷-コミケ対応-A5-B5サイズ",
+      "en": "doujinshi-printing-comiket-a5-b5-format",
+      "ja": "同人誌印刷-コミケ対応-A5-B5サイズ"
+    }
+  },
+  "acrylic-keychain": {
+    "name": {
+      "zh-hk": "亞克力鑰匙扣",
+      "en": "Acrylic Keychain",
+      "ja": "アクリルキーホルダー"
+    },
+    "seo": {
+      "zh-hk": {
+        "title": "亞克力鑰匙扣 角色造型 推し活応援 | 10個起",
+        "description": "推し活応援・VTuber 向け亞克力鑰匙扣。完全カスタム形状、2mm/3mm 選択、透明/白/滿版印刷対応。10 個から対応、安全扣オプション。DHL Express 日本直送 2-4 日。",
+        "h1": "亞克力鑰匙扣 角色造型 推し活応援",
+        "keywords": ["亞克力鑰匙扣", "壓克力吊飾", "角色吊飾", "推し活", "VTuber周邊", "動漫周邊", "客製化吊飾", "同人周邊"],
+        "body": "<p>推し活応援・キャラクターグッズ・アクリルスタンドの小型版。完全なカスタム形状対応 — VTuber のロゴ、推しキャラのイラストをそのままキーホルダー化。2mm と 3mm 厚で価格・手触りが異なる。10 個から対応で、個人作家・同人イベント参加にも最適。</p><h3>サイズ・仕様</h3><p>材質: 透明アクリル板 2mm/3mm。サイズ: 30-80mm (カスタム形状可)。印刷方式: UV インクジェット 4色 (CMYK + 白インク)。</p>"
+      },
+      "en": {
+        "title": "Custom Acrylic Keychain VTuber Character Goods | MOQ 10",
+        "description": "Custom acrylic keychains for anime and VTuber character goods. Fully custom shapes, 2mm/3mm thickness, clear/white/full-color print options. MOQ 10 pcs, safety pin accessory available. DHL Express worldwide 2-4 days.",
+        "h1": "Custom Acrylic Keychain — Anime & VTuber Character Goods",
+        "keywords": ["acrylic keychain", "character keychain", "anime merchandise", "oshi-katsu", "VTuber goods", "anime goods", "custom keychain", "doujin merchandise"],
+        "body": "<p>Custom acrylic keychains for anime, VTuber, and character merchandise. Fully customizable shapes — your VTuber logo or favorite character artwork becomes a wearable keychain. Choose 2mm or 3mm thickness for different price points and tactile feel. MOQ of 10 pcs makes it accessible for individual artists and doujin event participation.</p><h3>Specifications</h3><p>Material: Clear acrylic 2mm/3mm (white base / full-color print optional). Size: 30-80mm (custom shapes via Illustrator path data). Print method: UV inkjet 4-color (CMYK + white ink).</p>"
+      },
+      "ja": {
+        "title": "アクリルキーホルダー キャラクター形 推し活応援 | 10個から",
+        "description": "推し活応援・VTuber 向けアクリルキーホルダー。完全カスタム形状、2mm/3mm 選択、透明/白/滿版印刷対応。10 個から対応、安全扣オプション。DHL Express 日本直送 2-4 日。",
+        "h1": "アクリルキーホルダー キャラクター形 推し活応援",
+        "keywords": ["アクリルキーホルダー", "キャラキーホルダー", "推し活", "VTuber グッズ", "アニメ グッズ", "カスタム キーホルダー", "同人グッズ", "オタク グッズ"],
+        "body": "<p>推し活応援・キャラクターグッズ・アクリルスタンドの小型版。完全なカスタム形状対応 — VTuber のロゴ、推しキャラのイラストをそのままキーホルダー化。2mm と 3mm 厚で価格・手触りが異なる。10 個から対応で、個人作家・同人イベント参加にも最適。</p><h3>サイズ・仕様</h3><p>材質: 透明アクリル板 2mm/3mm (オプション: 白ベース/満版印刷)。サイズ: 30-80mm (カスタム形状可、Illustrator パスデータ入稿)。印刷方式: UV インクジェット 4色 (CMYK + 白インク)。加工: 安全ピン/ボールチェーン/ナスカン/ヘッダーOPP袋封入。</p>"
+      }
+    },
+    "faqs": [
+      {
+        "q": "亞克力鑰匙扣最小訂購量？",
+        "a": "10 個から対応。"
+      },
+      {
+        "q": "カスタム形状は対応？",
+        "a": "はい、Illustrator パスデータ入稿で完全カスタム形状対応。"
+      },
+      {
+        "q": "配送方法は？",
+        "a": "DHL Express で 2-4 日日本直送。"
+      },
+    ],
+    "imageAlt": {
+      "zh-hk": "亞克力鑰匙扣-角色造型-2mm-3mm",
+      "en": "acrylic-keychain-custom-shape-2mm-3mm",
+      "ja": "アクリルキーホルダー-キャラクター形-2mm-3mm"
+    }
+  },
+  "can-badge": {
+    "name": {
+      "zh-hk": "缶バッジ印刷",
+      "en": "Can Badge Printing",
+      "ja": "缶バッジ印刷"
+    },
+    "seo": {
+      "zh-hk": {
+        "title": "缶バッジ印刷 57mm 76mm | 推し活応援 コミケ",
+        "description": "缶バッジ印刷専門。57mm 標準 + 76mm 大判 + 44mm ミニ。安全扣付き、フルカラー印刷、10 個から対応。コミケ・推し活応援・物販用に最適。DHL Express 日本直送 2-4 日。",
+        "h1": "缶バッジ印刷 57mm 76mm 推し活応援",
+        "keywords": ["缶バッジ印刷", "缶バッジ", "徽章", "推し活", "コミケ", "VTuber周邊", "動漫周邊", "安全扣"],
+        "body": "<p>コミケ・推し活・VTuber 物販に必須の缶バッジ。57mm 標準サイズと 76mm 大判、44mm ミニの 3 サイズ展開。フルカラー印刷でイラスト・ロゴをそのまま再現。安全ピン標準装備で衣服・カバンに簡単装着。10 個から少部数対応で、個人サークルも気軽に発注可能。</p><h3>サイズ・仕様</h3><p>材質: 金属ベース + 紙/ペット印刷面 + 安全ピン。サイズ: 57mm (標準) / 76mm (大判) / 44mm (ミニ)。印刷方式: オフセット/デジタル 4色 (CMYK)。</p>"
+      },
+      "en": {
+        "title": "Custom Can Badges 57mm & 76mm | Comiket & VTuber",
+        "description": "Custom can badge printing. 57mm standard, 76mm large, 44mm mini. Safety pin included, full-color printing, MOQ 10 pcs. Ideal for Comiket, oshi-katsu, merchandise sales. DHL Express worldwide 2-4 days.",
+        "h1": "Can Badge Printing 57mm & 76mm | Comiket Ready",
+        "keywords": ["can badge printing", "pin badge", "anime badge", "oshi-katsu", "comiket badge", "VTuber goods", "anime merchandise", "safety pin badge"],
+        "body": "<p>Essential can badges for Comiket, oshi-katsu, and VTuber merchandise. Three sizes: 57mm standard, 76mm large, 44mm mini. Full-color printing preserves illustration and logo details. Safety pin included for easy attachment to clothing or bags. Low MOQ of 10 pcs makes it accessible for individual circles.</p><h3>Specifications</h3><p>Material: Metal base + paper/PET print surface + safety pin. Size: 57mm (standard) / 76mm (large) / 44mm (mini). Print method: Offset/digital 4-color (CMYK).</p>"
+      },
+      "ja": {
+        "title": "缶バッジ印刷 57mm 76mm | 推し活応援 コミケ対応",
+        "description": "缶バッジ印刷専門。57mm 標準 + 76mm 大判 + 44mm ミニ。安全扣付き、フルカラー印刷、10 個から対応。コミケ・推し活応援・物販用に最適。DHL Express 日本直送 2-4 日。",
+        "h1": "缶バッジ印刷 57mm 76mm コミケ・推し活応援",
+        "keywords": ["缶バッジ印刷", "缶バッジ", "バッジ", "推し活", "コミケ", "VTuber グッズ", "アニメ グッズ", "安全ピン バッジ"],
+        "body": "<p>コミケ・推し活・VTuber 物販に必須の缶バッジ。57mm 標準サイズと 76mm 大判、44mm ミニの 3 サイズ展開。フルカラー印刷でイラスト・ロゴをそのまま再現。安全ピン標準装備で衣服・カバンに簡単装着。10 個から少部数対応で、個人サークルも気軽に発注可能。</p><h3>サイズ・仕様</h3><p>材質: 金属ベース + 紙/ペット印刷面 + 安全ピン。サイズ: 57mm (標準) / 76mm (大判) / 44mm (ミニ)。印刷方式: オフセット/デジタル 4色 (CMYK)。加工: 安全ピン標準装備 / OPP袋個別包装オプション。</p>"
+      }
+    },
+    "faqs": [
+      {
+        "q": "缶バッジの最低注文数量は？",
+        "a": "10 個から対応。"
+      },
+      {
+        "q": "57mm と 76mm どちらが人気？",
+        "a": "57mm 標準サイズが一番人気、物販用に最適。"
+      },
+      {
+        "q": "安全扣は付属？",
+        "a": "はい、安全ピン標準装備。"
+      },
+    ],
+    "imageAlt": {
+      "zh-hk": "缶バッジ印刷-57mm-76mm-安全扣",
+      "en": "can-badge-printing-57mm-76mm-safety-pin",
+      "ja": "缶バッジ印刷-57mm-76mm-安全ピン"
+    }
+  },
+  "postcard-set": {
+    "name": {
+      "zh-hk": "ポストカードセット",
+      "en": "Postcard Set",
+      "ja": "ポストカードセット"
+    },
+    "seo": {
+      "zh-hk": {
+        "title": "ポストカードセット 4-8枚 和紙風 | 推し活応援",
+        "description": "和紙風ポストカードセット 4-8 枚入。推しキャラ・VTuber・イラストコレクション向け。105×148mm 標準、両面印刷、OPP スリーブ封入。3-5 営業日納品、DHL Express 日本直送 2-4 日。",
+        "h1": "ポストカードセット 4-8 枚 和紙風",
+        "keywords": ["ポストカード", "明信片", "ポストカードセット", "推し活", "VTuber", "插畫周邊", "同人周邊", "サイン会"],
+        "body": "<p>推しキャラ・VTuber のイラストやサイン会配布用に最適なポストカードセット。4-8 枚のセット販売で、コレクション性が高い。和紙風アート紙採用で、和風・古風テイストの作品にもマッチ。両面印刷対応で、表面イラスト + 裏面テキスト/サインを自由にデザイン。</p><h3>サイズ・仕様</h3><p>材質: 和紙風アート紙 180g / 両面マットPPラミネート。サイズ: 105×148mm (A6 標準ポストカード)。印刷方式: オンデマンド/オフセット 4色 (CMYK)。</p>"
+      },
+      "en": {
+        "title": "Washi Postcard Sets 4-8 pcs | Character Goods",
+        "description": "Washi-style postcard sets in 4-8 piece collections. Ideal for character goods, VTuber, illustration collections. 105×148mm standard, double-sided print, OPP sleeve packaging. 3-5 day production, DHL Express worldwide 2-4 days.",
+        "h1": "Washi-style Postcard Sets | 4-8 Piece Collections",
+        "keywords": ["postcard set", "postcards", "character postcards", "oshi-katsu", "VTuber", "illustration goods", "doujin merchandise", "signature event"],
+        "body": "<p>Ideal postcard sets for character goods, VTuber illustrations, and signature event giveaways. Sold in 4-8 piece sets for collection appeal. Washi-style art paper matches Japanese-aesthetic and traditional artwork. Double-sided printing allows front illustration + back text/signature design.</p><h3>Specifications</h3><p>Material: Washi-style art paper 180g / double-sided matte PP laminate. Size: 105×148mm (A6 standard postcard). Print method: On-demand/offset 4-color (CMYK).</p>"
+      },
+      "ja": {
+        "title": "ポストカードセット 4-8枚 和紙風 | 推し活応援",
+        "description": "和紙風ポストカードセット 4-8 枚入。推しキャラ・VTuber・イラストコレクション向け。105×148mm 標準、両面印刷、OPP スリーブ封入。3-5 営業日納品、DHL Express 日本直送 2-4 日。",
+        "h1": "ポストカードセット 4-8 枚 和紙風",
+        "keywords": ["ポストカードセット", "ポストカード", "絵葉書", "推し活", "VTuber", "イラスト グッズ", "同人グッズ", "サイン会"],
+        "body": "<p>推しキャラ・VTuber のイラストやサイン会配布用に最適なポストカードセット。4-8 枚のセット販売で、コレクション性が高い。和紙風アート紙採用で、和風・古風テイストの作品にもマッチ。両面印刷対応で、表面イラスト + 裏面テキスト/サインを自由にデザイン。OPP スリーブ個別包装で、傷・汚れから保護。</p><h3>サイズ・仕様</h3><p>材質: 和紙風アート紙 180g / 両面マットPPラミネート。サイズ: 105×148mm (A6 標準ポストカード)。印刷方式: オンデマンド/オフセット 4色 (CMYK)。加工: OPP スリーブ個別包装 + 集合OPP袋。</p>"
+      }
+    },
+    "faqs": [
+      {
+        "q": "ポストカードセットは何枚から？",
+        "a": "4 枚セットから対応。"
+      },
+      {
+        "q": "和紙風とは？",
+        "a": "和紙のような独特の風合いを持つアート紙、和風作品に最適。"
+      },
+      {
+        "q": "両面印刷は対応？",
+        "a": "はい、両面印刷対応、表面イラスト+裏面テキスト自由にデザイン。"
+      },
+    ],
+    "imageAlt": {
+      "zh-hk": "ポストカードセット-和紙風-105x148mm",
+      "en": "postcard-set-washi-style-105x148mm",
+      "ja": "ポストカードセット-和紙風-105x148mm"
+    }
+  },
+  "eco-tote-bag": {
+    "name": {
+      "zh-hk": "エコトートバッグ",
+      "en": "Eco Tote Bag",
+      "ja": "エコトートバッグ"
+    },
+    "seo": {
+      "zh-hk": {
+        "title": "エコトートバッグ オーガニックコットン | 推し活 コミケ",
+        "description": "オーガニックコットン 100% トートバッグ。シルク/DTG 印刷対応、推し活・コミケ物販・ESG ノベルティ向け。FSC 認証生地使用、A4 収納可能、10 個から対応。DHL Express 日本直送 2-4 日。",
+        "h1": "エコトートバッグ オーガニックコットン 推し活",
+        "keywords": ["エコトート", "トートバッグ", "オーガニックコットン", "推し活", "コミケ", "ESG ノベルティ", "企業物販", "FSC認証"],
+        "body": "<p>推し活・コミケ物販・企業ノベルティに最適なオーガニックコットントート。FSC 認証オーガニックコットン 100% 使用で、ESG ・サステナブル志向にも対応。シルクスクリーン印刷でロゴ・イラストを鮮明再現、DTG フルカラー印刷でグラデーション・写真も対応。A4 サイズ収納可能で、実用性も高い。10 個から対応で、少部数 OK。</p><h3>サイズ・仕様</h3><p>材質: オーガニックコットン 100% / 12oz 厚手キャンバス。サイズ: 38×42×10cm (A4 収納可) / マチ 10cm。印刷方式: シルクスクリーン印刷 (1-3 色) / DTG フルカラー印刷。</p>"
+      },
+      "en": {
+        "title": "Organic Cotton Eco Tote Bag | Oshi-katsu Comiket",
+        "description": "100% organic cotton tote bags. Silk/DTG printing options, ideal for oshi-katsu, Comiket merchandise, ESG-friendly corporate gifts. FSC-certified fabric, A4 capacity, MOQ 10 pcs. DHL Express worldwide 2-4 days.",
+        "h1": "Eco Tote Bag Organic Cotton | Oshi-katsu & Comiket",
+        "keywords": ["eco tote bag", "tote bag", "organic cotton", "oshi-katsu", "comiket", "ESG merchandise", "corporate gift", "FSC certified"],
+        "body": "<p>Premium organic cotton tote bags for oshi-katsu, Comiket merchandise, and corporate gifting. FSC-certified 100% organic cotton supports ESG and sustainability narratives. Silk screen printing delivers crisp logos and illustrations; DTG full-color printing handles gradients and photos.</p><h3>Specifications</h3><p>Material: 100% organic cotton / 12oz heavy canvas. Size: 38×42×10cm (A4 capacity) / gusset 10cm. Print method: Silk screen (1-3 colors) / DTG full-color.</p>"
+      },
+      "ja": {
+        "title": "エコトートバッグ オーガニックコットン | 推し活 コミケ",
+        "description": "オーガニックコットン 100% トートバッグ。シルク/DTG 印刷対応、推し活・コミケ物販・ESG ノベルティ向け。FSC 認証生地使用、A4 収納可能、10 個から対応。DHL Express 日本直送 2-4 日。",
+        "h1": "エコトートバッグ オーガニックコットン 推し活・コミケ",
+        "keywords": ["エコトートバッグ", "トートバッグ", "オーガニックコットン", "推し活", "コミケ", "ESG ノベルティ", "企業物販", "FSC 認証"],
+        "body": "<p>推し活・コミケ物販・企業ノベルティに最適なオーガニックコットントート。FSC 認証オーガニックコットン 100% 使用で、ESG・サステナブル志向にも対応。シルクスクリーン印刷でロゴ・イラストを鮮明再現、DTG フルカラー印刷でグラデーション・写真も対応。A4 サイズ収納可能で、実用性も高い。10 個から対応で、少部数 OK。</p><h3>サイズ・仕様</h3><p>材質: オーガニックコットン 100% / 12oz 厚手キャンバス。サイズ: 38×42×10cm (A4 収納可) / マチ 10cm。印刷方式: シルクスクリーン印刷 (1-3 色) / DTG フルカラー印刷。加工: 内ポケット / 底板補強 / 名入れ刺繍 (オプション)。</p>"
+      }
+    },
+    "faqs": [
+      {
+        "q": "エコトートバッグの最低注文数量は？",
+        "a": "10 個から対応可能。"
+      },
+      {
+        "q": "FSC 認証は本物？",
+        "a": "はい、FSC 認証オーガニックコットン 100% 使用、ESG 報告対応。"
+      },
+      {
+        "q": "印刷方法はシルクと DTG どちらが良い？",
+        "a": "ロゴ・単色イラストはシルク、グラデーション・写真は DTG が最適。"
+      },
+    ],
+    "imageAlt": {
+      "zh-hk": "エコトートバッグ-オーガニックコットン-12oz",
+      "en": "eco-tote-bag-organic-cotton-12oz-canvas",
+      "ja": "エコトートバッグ-オーガニックコットン-12oz"
+    }
+  },
 };
 
 export function getSkuSeo(slug: string): SkuSeoEntry | undefined {
