@@ -82,3 +82,87 @@ SEEDREAM-GUIDE.md
 
 # product image backups
 public/images/products-backup/
+
+# 2026-06-18 cleanup — mavis / opencode runtime + Phase 0 debug scripts
+.harness/
+.opencode/
+# Temporary debug/inspection scripts (created during Phase 0 NAP drift audit)
+.apply-*.mjs
+.audit-*.mjs
+.inspect-*.mjs
+.verify-*.mjs
+.patch-*.mjs
+.extract-*.mjs
+.find-*.mjs
+.fix-*.mjs
+.gen-*.py
+.tmp-*.txt
+.tmp-*.cjs
+.debug-*.txt
+.debug-*.html
+.debug-*.json
+.debug-*.py
+.debug_*.js
+.commit-msg-*.txt
+.dryrun.txt
+.meta-inspect.txt
+.audit-ja-gsc-*.json
+.batch-c-*.json
+.batch-c-output/
+.test-*.py
+.prod-textbooks.html
+.sample-textbook-*.txt
+# _ prefix temp scripts (Phase 0 audit tooling)
+_analyze*.py
+_audit*.py
+_audit-*.txt
+_append*.py
+_bak-*.txt
+_batch-*.diff
+_batch_*.json
+_brand_audit.json
+_categorize-*.txt
+_check*.py
+_current-*.txt
+_diagnose-*.cjs
+_extend*.py
+_findbugs*.py
+_findsku*.py
+_fix-*.cjs
+_fixproducts*.py
+_gen_*.py
+_head-*.txt
+_meta*.py
+_p0-*.txt
+_page*.html
+_product-meta*.txt
+_regen_*.py
+_removable-*.txt
+_samples*.txt
+_seo-gen-*.txt
+_skulist.py
+_tsconfig_*.cjs
+# Phase B/C SEO batch artifacts (seeds-batch-*.json / patches/batch-b-sample.json / etc.)
+secrets-*.json
+seeds-*.json
+# Misplaced stock-lab scripts (lives at G:\stock-lab, NOT here)
+w1_chanlun*.js
+# Generic debug/build/audit text dumps
+audit-batch-*.txt
+build-check.txt
+build-output-*.txt
+push-log.txt
+merge-seeds.mjs
+gen-batch-*.mjs
+find-short-*.mjs
+get-full-sample.mjs
+sample-*.mjs
+inspect-*.mjs
+inventory_*.js
+inventory-*.js
+# Internal cleanup helper scripts (avoid committing these too)
+_trash_*.py
+_commit_*.py
+_fix_*.py
+_detailed_*.py
+_check_*.py
