@@ -4,6 +4,14 @@
 > **类型**: 8 locale 印刷电商 (zh-hk / en / ja)
 > **部署**: Cloudflare Pages + Airwallex 支付
 > **品牌**: 智印云 / ZprintPro (**不是** "智印港",后者是竞品必须排除)
+>
+> **真实主体 (2026-06-18 user-corrected)**: 深圳市彩龙印刷包装有限公司
+> **法定代表人**: 唐运提
+> **真实地址**: 広東省深圳市龍崗区平湖街道嘉城路1号（〒518111）
+> **真实電話**: +86 181 2638 0255
+> **真实メール**: zprintpro@outlook.com
+>
+> ⚠️ 早期 audit / copy / siteConfig / schema.org 都默认是「HK 観塘」实体，是错的。user 2026-06-18 明确告知：实体在深圳，跨境接全球订单。法律公示 (`/legal/`) + Footer 公司信息 + siteConfig.address + ImageObject locationCreated + ja/zh-hk imageCaption 都已改为深圳实体。
 
 ## 0. Orchestrator Discipline (编排者铁律) — Mavis 必读
 

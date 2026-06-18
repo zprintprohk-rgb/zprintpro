@@ -75,7 +75,7 @@ export function RegionalCta({ locale, productSlug, className = '' }: RegionalCta
 export function RegionalTrustBadges({ locale }: { locale: Locale }) {
   const badges = {
     'zh-hk': [
-      { icon: '🏭', label: '觀塘實體工廠' },
+      { icon: '🏭', label: '深圳自有工廠' },
       { icon: '🚚', label: '順豐直達' },
       { icon: '🎨', label: '免費打樣' },
       { icon: '⚡', label: '即日交貨' },

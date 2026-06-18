@@ -431,7 +431,7 @@ const businessCardsContent: Record<string, CategoryLocaleContent> = {
     serviceNodes: {
       title: '本地化服務節點',
       items: [
-        { title: '觀塘實體工廠', description: '可預約參觀印刷流程，親眼見證海德堡印刷機運作' },
+        { title: '深圳自有工廠', description: '現代化生產基地，配備海德堡印刷設備，ISO 12647 色彩管理' },
         { title: '免費設計諮詢', description: '資深設計師一對一服務，從排版到色彩管理全程指導' },
         { title: '企業月結賬戶', description: '專屬客戶經理、批量優惠、優先排期、月結付款' },
       ],
@@ -525,7 +525,7 @@ const businessCardsContent: Record<string, CategoryLocaleContent> = {
     serviceNodes: {
       title: 'Local Service Points',
       items: [
-        { title: 'Kwun Tong Production Facility', description: 'Book a tour to witness Heidelberg presses in action.' },
+        { title: 'Modern Production Facility', description: 'Modern production base in Shenzhen with Heidelberg presses and ISO 12647 color management.' },
         { title: 'Free Design Consultation', description: 'Senior designers provide one-on-one guidance from layout to color management.' },
         { title: 'Corporate Account Billing', description: 'Dedicated account manager, volume discounts, priority scheduling, monthly billing.' },
       ],
@@ -619,7 +619,7 @@ const businessCardsContent: Record<string, CategoryLocaleContent> = {
     serviceNodes: {
       title: 'ローカルサービス拠点',
       items: [
-        { title: '観塘実体工場', description: '印刷工程の見学予約が可能。ハイデルベルグ印刷機の稼働を間近で見学。' },
+        { title: '自社工場 (深圳)', description: '深圳にある自社工場。ハイデルベルグ印刷機の稼働を間近で見学可能。' },
         { title: '無料デザイン相談', description: 'ベテランデザイナーが一对一で、組版から色彩管理まで全程指導。' },
         { title: '法人月次請求', description: '専任担当者、大口割引、優先スケジュール、月次請求対応。' },
       ],
@@ -2750,7 +2750,7 @@ export function getDefaultCategoryContent(categorySlug: string, locale: string):
     serviceNodes: {
       title: isZh ? '本地化服務節點' : isEn ? 'Local Service Points' : 'ローカルサービス拠点',
       items: [
-        { title: isZh ? '觀塘實體工廠' : isEn ? 'Kwun Tong Production Facility' : '観塘実体工場', description: isZh ? '可預約參觀，親眼見證印刷品質' : isEn ? 'Book a tour to witness print quality firsthand' : '見学予約で印刷品質を実際に確認' },
+        { title: isZh ? '深圳自有工廠' : isEn ? 'Modern Production Facility' : '自社工場 (深圳)', description: isZh ? '現代化生產基地，配備海德堡印刷設備' : isEn ? 'Modern production base in Shenzhen with Heidelberg presses' : '深圳にある自社工場。ハイデルベルグ印刷機稼働中' },
         { title: isZh ? '免費設計諮詢' : isEn ? 'Free Design Consultation' : '無料デザイン相談', description: isZh ? '專業設計師提供一對一指導' : isEn ? 'Professional designers provide one-on-one guidance' : 'プロのデザイナーが一对一で指導' },
         { title: isZh ? '全港順豐配送' : isEn ? 'Island-Wide SF Express' : '香港全域SF配送', description: isZh ? '小批量快遞，大批量專車直送' : isEn ? 'Small batches by express, large batches by dedicated truck' : '小ロットは宅配、大ロットは専用トラック直送' },
       ],

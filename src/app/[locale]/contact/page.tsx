@@ -56,7 +56,7 @@ const translations = {
     email: 'Email',
     website: 'Website',
     addressLabel: 'Office Address',
-    addressValue: '182 Wai Yip Street, Kwun Tong, Kowloon, Hong Kong',
+    addressValue: 'Shenzhen, Guangdong, China (深圳市彩龙印刷包装有限公司 · 龍崗区平湖街道嘉城路1号)',
     mapTitle: 'Our Location',
     cta: 'WhatsApp Us Now',
     qrCaption: 'Scan to chat',
@@ -373,7 +373,7 @@ export default function ContactPage({ params }: ContactPageProps) {
                     <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
                     <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
                   </span>
-                  <span className="text-[11px] font-semibold text-gray-700">Kwun Tong</span>
+                  <span className="text-[11px] font-semibold text-gray-700">Shenzhen</span>
                 </div>
                 {/* 右上角坐标 */}
                 <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm rounded-md px-2 py-1 text-[10px] font-mono text-gray-500 shadow-sm">

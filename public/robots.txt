@@ -10,6 +10,11 @@ Disallow: /admin/
 Disallow: /api/
 # Disallow Cloudflare internal paths
 Disallow: /cdn-cgi/
+# Disallow web manifest (info disclosure — leaks internal asset paths)
+Disallow: /manifest.json
+Disallow: /manifest.webmanifest
+Disallow: /sw.js
+Disallow: /workbox-*.js
 
 # Disallow {locale} literal template variable paths (not real URLs)
 Disallow: /{locale}/

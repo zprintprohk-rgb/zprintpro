@@ -143,7 +143,7 @@ export function getAbVariant(): AbVariant {
 /**
  * Hero H1 A/B 测试（v2 融合方案 P3）
  * - A: "香港本地印刷" 
- * - B: "觀塘實體工廠印刷"
+ * - B: "跨境印刷服務 (深圳自有工廠)"
  */
 export const HERO_H1_VARIANTS: Record<AbVariant, { 'zh-hk': string; en: string; ja: string }> = {
   A: {
@@ -152,7 +152,7 @@ export const HERO_H1_VARIANTS: Record<AbVariant, { 'zh-hk': string; en: string; 
     ja: '国内印刷 · 最短3日納品 · エコ素材対応',
   },
   B: {
-    'zh-hk': '觀塘實體工廠印刷 · 即日取貨',
+    'zh-hk': '跨境印刷服務 · 香港 48 小時派送',
     en: 'Kwun Tong Factory Print · Same-Day Pickup',
     ja: '観塘自社工場印刷 · 即日受取',
   },

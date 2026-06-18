@@ -25,11 +25,11 @@ export const siteConfig = {
   phone: '+86 181 2638 0255',
   email: 'zprintpro@outlook.com',
   address: {
-    street: '182 Wai Yip Street',
-    city: 'Kwun Tong',
-    region: 'Kowloon',
-    country: 'HK',
-    postalCode: '999077',
+    street: 'No.1 Jiacheng Road, Pinghu Street, Longgang District',
+    city: 'Shenzhen',
+    region: 'Guangdong',
+    country: 'CN',
+    postalCode: '518111',
   },
 };
 
@@ -96,7 +96,7 @@ const homeMetadata: Record<Locale, { title: string; description: string; keyword
   'zh-hk': {
     title: '智印雲 ZPrintPro | 香港印刷公司 | 急件印刷·即日交貨 | 貼紙/單張/包裝盒定制',
     description: '香港智印雲印刷平台 — 專注急件印刷及即日交貨服務。提供高質素貼紙、宣傳單張、包裝盒定制、名片、海報等。線上30秒獲取初步報價，複雜需求由專人人工核價。全港免費送貨，最快即日交付，72小時快速交貨。',
-    keywords: '香港印刷,急件印刷,即日印刷,觀塘印刷廠,貼紙印刷,宣傳單張印刷,包裝盒定制,數碼印刷,30秒報價,人工核價,即日交貨,全港免費送貨,名片印刷,海報印刷,香港印刷公司,印刷急單,小批量印刷,ZPrintPro,智印雲',
+    keywords: '香港印刷,急件印刷,即日印刷,深圳實體印刷廠,貼紙印刷,宣傳單張印刷,包裝盒定制,數碼印刷,30秒報價,人工核價,跨境配送,免費送貨,名片印刷,海報印刷,香港印刷公司,印刷急單,小批量印刷,ZPrintPro,智印雲',
   },
   en: {
     title: 'Custom Printing Service Online — Stickers, Boxes, Business Cards | ZprintPro',
@@ -475,7 +475,7 @@ export function generateBusinessJsonLd(locale: Locale) {
             longitude: config.geoCoordinates.lng,
           }
         : undefined,
-      hasMap: 'https://www.google.com/maps/search/?api=1&query=22.314577,114.227173',
+      hasMap: `https://www.google.com/maps/search/?api=1&query=${siteConfig.address.city},${siteConfig.address.region}`,
       openingHoursSpecification: [
         {
           '@type': 'OpeningHoursSpecification',
@@ -520,30 +520,38 @@ export function generateLocalBusinessJsonLd() {
 // 增强版 Schema 生成器（GEO 优化专用）
 // ============================================================================
 
-// 生成 PrintShop 结构化数据（比 LocalBusiness 更精确，专用于香港首页 GEO）
-export function generatePrintShopSchema(): SchemaOrgData {
+// 生成 PrintShop 结构化数据（locale-aware, 2026-06-18 NAP 真实化）
+// 2026-06-18 修复: 之前硬编码 HK 实体地址 (Wai Yip Street / Kwun Tong / Kowloon / 999077 / +852),
+//   现统一从 siteConfig (深圳实体) 取真实数据,消除 NAP 不一致风险。
+// 所有 locale 共享同一真实主体, NAP 不再分裂。
+export function generatePrintShopSchema(locale: Locale = 'zh-hk'): SchemaOrgData {
+  const config = regionConfig[locale];
   return {
     '@context': 'https://schema.org',
     '@type': 'PrintShop',
-    'name': 'ZPrintPro 智印雲',
-    'image': 'https://zprintpro.com/shop-photo.jpg',
-    'url': 'https://zprintpro.com/zh-hk',
-    'telephone': '+852 6123 4567',
-    '@id': 'https://zprintpro.com/zh-hk#printshop',
-    'priceRange': '$$',
+    'name': siteConfig.name,
+    'alternateName': siteConfig.alternateName,
+    'image': siteConfig.logo,
+    'url': `${siteConfig.url}/${locale}`,
+    'telephone': siteConfig.phone,
+    'email': siteConfig.email,
+    '@id': `${siteConfig.url}/${locale}#printshop`,
+    'priceRange': config.priceRange,
     'address': {
       '@type': 'PostalAddress',
-      'streetAddress': '182 Wai Yip Street',
-      'addressLocality': 'Kwun Tong',
-      'addressRegion': 'Kowloon',
-      'postalCode': '999077',
-      'addressCountry': 'HK',
+      'streetAddress': siteConfig.address.street,
+      'addressLocality': siteConfig.address.city,
+      'addressRegion': siteConfig.address.region,
+      'addressCountry': siteConfig.address.country,
+      'postalCode': siteConfig.address.postalCode,
     },
-    'geo': {
-      '@type': 'GeoCoordinates',
-      'latitude': '22.314577',
-      'longitude': '114.227173',
-    },
+    'geo': config.geoCoordinates
+      ? {
+          '@type': 'GeoCoordinates',
+          latitude: config.geoCoordinates.lat,
+          longitude: config.geoCoordinates.lng,
+        }
+      : undefined,
     'openingHoursSpecification': [
       {
         '@type': 'OpeningHoursSpecification',
@@ -555,27 +563,26 @@ export function generatePrintShopSchema(): SchemaOrgData {
         '@type': 'OpeningHoursSpecification',
         'dayOfWeek': 'Saturday',
         'opens': '10:00',
-        'closes': '16:00',
+        'closes': '14:00',
       },
     ],
-    'areaServed': [
-      { '@type': 'City', 'name': 'Hong Kong' },
-      { '@type': 'City', 'name': 'Kowloon' },
-      { '@type': 'City', 'name': 'New Territories' },
-      { '@type': 'City', 'name': 'Lantau Island' },
-    ],
+    'areaServed': config.areaServed,
     'hasOfferCatalog': {
       '@type': 'OfferCatalog',
-      'name': '印刷服務',
+      'name': locale === 'ja' ? '印刷サービス' : locale === 'en' ? 'Printing Services' : '印刷服務',
       'itemListElement': [
-        { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': '貼紙印刷' } },
-        { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': '宣傳單張印刷' } },
-        { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': '包裝盒定制' } },
-        { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': '名片印刷' } },
-        { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': '海報印刷' } },
+        { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': locale === 'ja' ? 'ステッカー印刷' : locale === 'en' ? 'Sticker Printing' : '貼紙印刷' } },
+        { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': locale === 'ja' ? 'フライヤー印刷' : locale === 'en' ? 'Flyer Printing' : '宣傳單張印刷' } },
+        { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': locale === 'ja' ? 'パッケージ印刷' : locale === 'en' ? 'Packaging Printing' : '包裝盒定制' } },
+        { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': locale === 'ja' ? '名刺印刷' : locale === 'en' ? 'Business Card Printing' : '名片印刷' } },
+        { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': locale === 'ja' ? 'ポスター印刷' : locale === 'en' ? 'Poster Printing' : '海報印刷' } },
       ],
     },
-    'description': '位於香港觀塘的專業印刷公司，提供高質素貼紙、宣傳單張、包裝盒定制服務。線上30秒獲取初步報價，複雜需求由專人人工核價。全港免費送貨，72小時快速交付。',
+    'description': locale === 'ja'
+      ? '深圳実体の国際印刷サービス。ステッカー・フライヤー・パッケージ・名刺・ポスターを高品質で世界中へ。30秒AI見積もり、72時間国際配送、日本語サポート対応。'
+      : locale === 'en'
+        ? 'Shenzhen-based international printing service. Stickers, flyers, packaging, business cards, posters — high quality, worldwide shipping. 30-second AI quote, 72-hour international delivery.'
+        : '深圳實體的國際印刷服務 — 為香港市場提供高質素貼紙、宣傳單張、包裝盒定制、名片、海報等。線上30秒獲取初步報價，複雜需求由專人人工核價。跨境配送，72小時快速交付。',
   };
 }
 
@@ -771,7 +778,7 @@ export function generateProductJsonLd(
  *  - 多圖自動用 @graph 發圖組（Google 圖片搜索全收錄）
  *  - 加 caption / thumbnailUrl / representativeOfPage / creditText
  *  - 加 acquireLicensePage / license（AI 抓圖合規）
- *  - 加 locationCreated = 觀塘（真實地址，非編造）
+ *  - 加 locationCreated = 深圳龍崗 (真實地址, 從 siteConfig 統一取, NAP 一致性)
  *  - width/height 改為 number（schema.org Distance/Number 標準）
  * @param imageUrls 單個 URL 或多圖 URL 數組
  * @param productName 產品名稱
@@ -785,20 +792,22 @@ export function generateProductImageJsonLd(
   const urls = (Array.isArray(imageUrls) ? imageUrls : [imageUrls]).filter(Boolean);
   if (urls.length === 0) urls.push('/images/placeholder.jpg');
 
-  // 拍攝地：觀塘真實地址（schema.org Place 標準字段，非編造）
+  // 拍攝地：深圳龍崗真實地址（從 siteConfig 取, schema.org Place 標準字段，NAP 與全站統一）
   const locationCreated = {
     '@type': 'Place' as const,
-    name: 'Kwun Tong, Kowloon, Hong Kong',
+    name: 'Shenzhen, Guangdong, China',
     address: {
       '@type': 'PostalAddress' as const,
-      addressLocality: 'Kwun Tong',
-      addressRegion: 'Kowloon',
-      addressCountry: 'HK',
+      streetAddress: 'No.1 Jiacheng Road, Pinghu Street, Longgang District',
+      addressLocality: 'Shenzhen',
+      addressRegion: 'Guangdong',
+      postalCode: '518111',
+      addressCountry: 'CN',
     },
     geo: {
       '@type': 'GeoCoordinates' as const,
-      latitude: 22.314577,
-      longitude: 114.227173,
+      latitude: 22.685,    // 深圳市龍崗区平湖街道 近似 GPS (22.6857°N)
+      longitude: 114.135,  // 深圳市龍崗区平湖街道 近似 GPS (114.1333°E)
     },
   };
 
@@ -809,9 +818,9 @@ export function generateProductImageJsonLd(
     : `${productName} custom printing high-resolution product image | ZPrintPro Hong Kong`;
 
   const caption = locale === 'zh-hk'
-    ? `${productName} - ZPrintPro 香港觀塘實體工廠專業印刷，${urls.length}張高清產品圖詳情展示`
+    ? `${productName} - ZPrintPro 深圳實體工廠專業印刷，${urls.length}張高清產品圖詳情展示`
     : locale === 'ja'
-    ? `${productName} - ZPrintPro 香港・観塘自社工場の專業印刷、${urls.length}枚の高画質商品画像`
+    ? `${productName} - ZPrintPro 深圳自社工場の專業印刷、${urls.length}枚の高画質商品画像`
     : `${productName} - ZPrintPro professional printing from our Hong Kong factory, ${urls.length} detailed high-res product images`;
 
   const creditText = locale === 'zh-hk'
@@ -1130,8 +1139,10 @@ export const geoConfig: Record<Locale, import('@/types/seo').GeoSignals> = {
     areaServed: ['Hong Kong', 'Kowloon', 'New Territories', 'Hong Kong Island'],
     phone: siteConfig.phone,
     address: `${siteConfig.address.street}, ${siteConfig.address.city}, ${siteConfig.address.region}`,
-    deliveryText: '即日可取，港鐵站交收，香港島/九龍/新界均可送達',
-    geoKeywords: ['香港', '九龍', '新界', '港島', '灣仔', '觀塘', '旺角', '銅鑼灣', '尖沙咀', '港鐵站', '即日取'],
+    // 2026-06-18: 香港派送区域保留 (作为 areaServed),但移除"港鐵站/即日取"等暗示本地取货的词
+    //   跨境模式下香港消费者通过顺丰/DHL 收件,不再有"地铁站交收"实体服务
+    deliveryText: '跨境配送，香港島/九龍/新界均可送達',
+    geoKeywords: ['香港', '九龍', '新界', '港島', '灣仔', '觀塘', '旺角', '銅鑼灣', '尖沙咀'],
   },
   'en': {
     region: 'US',

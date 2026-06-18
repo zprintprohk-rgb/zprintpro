@@ -13,19 +13,19 @@ interface GeoFooterTextProps {
 
 const TEXT: Record<Locale, string> = {
   'zh-hk':
-    '智印雲 ZPrintPro 总部位于香港九龙观塘伟业街182号成运工业大厦，提供香港本地即日印刷服务，并面向全球市场提供定制化印刷解决方案。' +
-    '我们的服务覆盖美国（United States）、英国（United Kingdom）、澳大利亚（Australia）和日本（Japan），' +
+    '智印雲 ZPrintPro 总部位于中国深圳，是面向香港及全球市场的国际印刷服务品牌。' +
+    '服务覆盖香港（顺豐本地派送）、美国、英国、澳大利亚、日本（DHL Express 全球 2-4 日送达）等市场。' +
     '支持多语言客服和本地化支付。' +
-    '无论您在香港观塘、纽约、伦敦、悉尼还是东京，都能享受 ZPrintPro 的专业印刷服务与 72 小时全球交付承诺。',
+    '无论您在香港、纽约、伦敦、悉尼还是东京，都能享受 ZPrintPro 的专业印刷服务与 72 小时全球交付承诺。',
   en:
-    'ZPrintPro is headquartered at 182 Wai Yip Street, Kwun Tong, Kowloon, Hong Kong, ' +
-    'providing same-day local printing services in Hong Kong and customized printing solutions for the global market. ' +
+    'ZPrintPro is headquartered in Shenzhen, China, providing cross-border printing services to Hong Kong and global markets. ' +
+    'Hong Kong delivery via SF Express (48-hour); worldwide shipping via DHL Express (2-4 days). ' +
     'Our services cover the United States, the United Kingdom, Australia, and Japan, ' +
     'with multilingual customer support and localized payment options. ' +
-    'Whether you are in Kwun Tong Hong Kong, New York, London, Sydney, or Tokyo, you can enjoy ZPrintPro\u2019s professional printing service and 72-hour global delivery commitment.',
+    'Whether you are in Hong Kong, New York, London, Sydney, or Tokyo, you can enjoy ZPrintPro\u2019s professional printing service and 72-hour global delivery commitment.',
   ja:
-    'ZPrintPro（智印雲）は香港九龍観塘偉業街182号成運工業ビルに本社を置き、香港現地の即日印刷サービスを提供し、' +
-    '世界市場向けにカスタマイズされた印刷ソリューションを提供しております。' +
+    'ZPrintPro（智印雲）は中国深圳に本社を置く国際印刷サービスブランドで、香港を含む世界市場向けにカスタマイズされた印刷ソリューションを提供しております。' +
+    '越境EC形式でサービスを提供し、香港向けは順豐速運で 48 時間配達、海外は DHL Express で 2-4 日配送しております。' +
     'サービス対象地域はアメリカ（United States）、イギリス（United Kingdom）、オーストラリア（Australia）、日本（Japan）で、' +
     '多言語カスタマーサポートと現地決済に対応しています。' +
     '香港観塘、ニューヨーク、ロンドン、シドニー、東京のいずれにお住まいでも、ZPrintPro の専門印刷サービスと 72 時間グローバル配送をお受け取りいただけます。',

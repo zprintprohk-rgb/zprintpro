@@ -523,8 +523,8 @@ export const generalProductFAQs: FAQItem[] = [
       'ja': '印刷と納品にはどのくらい時間がかかりますか？',
     },
     answer: {
-      'zh-hk': '標準工期為 3–5 個工作天，加急件最快 24–48 小時內完成。即日交貨適用於大部分標準 SKU，建議上午 11 時前確認稿件。觀塘門市可現場打樣，港九新界 48 小時快遞直送。',
-      'en': 'Standard turnaround is 3–5 business days. Rush orders are completed in 24–48 hours. Same-day delivery is available for most standard SKUs—confirm artwork before 11 AM. Kwun Tong showroom offers on-site proofing, with 48-hour courier delivery across Hong Kong.',
+      'zh-hk': '標準工期為 3–5 個工作天，加急件最快 24–48 小時內完成。即日交貨適用於大部分標準 SKU，建議上午 11 時前確認稿件。深圳總部生產，港九新界 48 小時快遞直送 (順豐/DHL)。樣書可郵寄審核。',
+      'en': 'Standard turnaround is 3–5 business days. Rush orders are completed in 24–48 hours. Same-day delivery is available for most standard SKUs—confirm artwork before 11 AM. Sample proofs available by mail/courier, with 48-hour delivery across Hong Kong via SF Express / DHL.',
       'ja': '標準納期は 3〜5 営業日、急ぎは 24〜48 時間以内。即日納品は多くの標準 SKU で対応可能、正午までのデータ確定推奨です。観塘 showroom で現場校正、香港全域へ 48 時間配送。',
     },
   },
