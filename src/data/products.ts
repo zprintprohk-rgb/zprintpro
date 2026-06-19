@@ -16616,7 +16616,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
       title_zh: '亞克力鑰匙扣 角色造型',
       description: '推し活応援・キャラクター形亞克力鑰匙扣。透明/白/滿版印刷対応。2mm/3mm 厚度選択可。10 個から対応、安全扣/鏈條オプション。',
       descriptionEn: 'Custom-shaped acrylic keychains for anime, VTuber, and character goods. Clear/white/full-color printing. 2mm/3mm thickness options. MOQ 10 pcs. Safety pin or chain options.',
-      descriptionJa: '推し活・VTuber・キャラクターグッズ向けアクリルキーホルダー。透明/白/滿版印刷対応。2mm/3mm 厚度選択可。10 個から対応、安全扣/チェーンオプション。',
+      descriptionJa: '推し活・VTuber・キャラクターグッズ向けアクリルキーホルダー。透明/白/満版印刷対応。2mm/3mm 厚み選択可。10 個から対応、安全ピン/チェーンオプション。',
       description_zh: '推し活応援・キャラクター形亞克力鑰匙扣。透明/白/滿版印刷対応。2mm/3mm 厚度選択可。10 個から対応、安全扣/鏈條オプション。',
       longDescription: `<h3>同人誌・推し活特化印刷サービス</h3>
 <p>推し活応援・キャラクターグッズ・アクリルスタンドの小型版。完全なカスタム形状対応 — VTuber・Vtuber のロゴ、推しキャラのイラストをそのままキーホルダー化。2mm と 3mm 厚で価格・手触りが異なる。10 個から対応で、個人作家・同人イベント参加にも最適。安全ピン・チェーン・ナスカンなど付属品も選択可能。</p>
