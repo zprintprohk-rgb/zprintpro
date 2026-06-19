@@ -153,8 +153,8 @@ export const HERO_H1_VARIANTS: Record<AbVariant, { 'zh-hk': string; en: string; 
   },
   B: {
     'zh-hk': '跨境印刷服務 · 香港 48 小時派送',
-    en: 'Kwun Tong Factory Print · Same-Day Pickup',
-    ja: '観塘自社工場印刷 · 即日受取',
+    en: 'Shenzhen Factory Direct · HK MTR Pickup',
+    ja: '深圳自社工場印刷 · 香港 MTR 受取可',
   },
 };
 

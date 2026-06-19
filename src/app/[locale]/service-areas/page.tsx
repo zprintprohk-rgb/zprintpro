@@ -20,18 +20,18 @@ export async function generateMetadata({ params }: { params: { locale: Locale } 
     ja: '香港印刷サービスエリア | 全港配送 | ZprintPro',
   };
   const descriptions = {
-    'zh-hk': '智印雲提供全港印刷送貨服務，覆蓋香港島、九龍、新界及離島。即日印刷，順豐速遞，次日送達。觀塘工場直送，品質保證。',
-    en: 'ZprintPro offers island-wide printing delivery across Hong Kong Island, Kowloon, New Territories and Outlying Islands. Same-day printing, SF Express next-day delivery. Kwun Tong factory direct.',
-    ja: 'ZprintProは香港島・九龍・新界・離島をカバーする全港印刷配送サービスを提供。即日印刷、顺丰翌日配送。観塘工場直送、品質保証。',
+    'zh-hk': '智印雲提供全港印刷送貨服務，覆蓋香港島、九龍、新界及離島。即日印刷，順豐速遞，次日送達。深圳自家工場直送，香港 MTR 站交收服務，品質保證。',
+    en: 'ZprintPro offers global cross-border printing from our Shenzhen factory. Hong Kong-wide delivery with SF Express next-day, plus HK MTR station pickup. DHL Express worldwide shipping to US/UK/AU/JP and beyond.',
+    ja: 'ZprintPro は深圳自社工場から越境印刷サービスを提供。香港 MTR 駅受取サービス、順丰翌日配送。DHL Express で日本・米国・英国・豪州へ 2-4 日配送。',
   };
   return {
     title: titles[locale],
     description: descriptions[locale],
-    keywords: locale === 'zh-hk' 
-      ? ['香港印刷送貨','全港送貨','香港島印刷','九龍印刷','新界印刷','即日印刷速遞','觀塘印刷'] 
-      : locale === 'en' 
-        ? ['hong kong printing delivery','island wide delivery','hong kong island printing','kowloon printing','new territories printing','same day printing','kwun tong printing']
-        : ['香港印刷配送','全港配送','香港島印刷','九龍印刷','新界印刷','即日印刷','観塘印刷'],
+    keywords: locale === 'zh-hk'
+      ? ['香港印刷送貨','全港送貨','香港島印刷','九龍印刷','新界印刷','即日印刷速遞','跨境印刷','深圳工場直送']
+      : locale === 'en'
+        ? ['hong kong printing delivery','island wide delivery','cross border printing','shenzhen factory direct','DHL express printing','international printing service','us uk au printing']
+        : ['香港印刷配送','全港配送','越境印刷','深圳工場直送','DHL Express 印刷','国際印刷サービス','日本同人誌印刷'],
   };
 }
 
@@ -41,22 +41,37 @@ export default function ServiceAreasPage({ params }: { params: { locale: Locale 
   // LocalBusiness Schema
   const businessJsonLd = generateBusinessJsonLd(locale);
 
-  // Geo Shape Schema for service areas
+  // Geo Shape Schema for service areas (深圳主体 + 香港服务点 + 全球)
   const geoJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Place',
     name: locale === 'zh-hk' ? '智印雲服務地區' : locale === 'en' ? 'ZprintPro Service Areas' : 'ZprintProサービスエリア',
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: '22.3193',
-      longitude: '114.1694',
+      // 深圳龍崗区平湖街道嘉城路1号 (生产主体) — 22.6850°N, 114.1320°E (approx)
+      latitude: '22.6850',
+      longitude: '114.1320',
     },
     address: {
       '@type': 'PostalAddress',
-      addressLocality: 'Kwun Tong',
-      addressRegion: 'Kowloon',
-      addressCountry: 'HK',
+      streetAddress: 'No.1 Jiacheng Road, Pinghu Street, Longgang District',
+      addressLocality: 'Shenzhen',
+      addressRegion: 'Guangdong',
+      addressCountry: 'CN',
+      postalCode: '518111',
     },
+    // serviceArea 显式声明服务覆盖范围：深圳主体 + 香港服务点 + 全球
+    serviceArea: [
+      { '@type': 'Country', name: 'China' },
+      { '@type': 'AdministrativeArea', name: 'Hong Kong' },
+      { '@type': 'Country', name: 'Japan' },
+      { '@type': 'Country', name: 'United States' },
+      { '@type': 'Country', name: 'United Kingdom' },
+      { '@type': 'Country', name: 'Australia' },
+      { '@type': 'Country', name: 'Canada' },
+      { '@type': 'Country', name: 'New Zealand' },
+      { '@type': 'Country', name: 'Singapore' },
+    ],
     containedInPlace: [
       {
         '@type': 'AdministrativeArea',
@@ -87,8 +102,8 @@ export default function ServiceAreasPage({ params }: { params: { locale: Locale 
         {
           title: '九龍',
           districts: '尖沙咀、佐敦、油麻地、旺角、太子、深水埗、長沙灣、荔枝角、美孚、九龍塘、樂富、黃大仙、鑽石山、彩虹、牛池灣、九龍灣、牛頭角、觀塘、藍田、油塘、將軍澳、調景嶺、康城',
-          delivery: '標準次日達，急件4小時達（觀塘工場周邊2小時）',
-          note: '觀塘工場所在地，周邊區域享最快送貨速度',
+          delivery: '標準次日達，急件4小時達（觀塘 MTR 站交收點周邊 2 小時）',
+          note: '觀塘設有 MTR 交收服務點（非生產地），周邊區域享最快送貨速度',
         },
         {
           title: '新界',
@@ -108,7 +123,7 @@ export default function ServiceAreasPage({ params }: { params: { locale: Locale 
     },
     en: {
       h1: 'Global Printing Service | US · UK · AU',
-      subtitle: 'International printing for businesses in the United States, United Kingdom, Australia and beyond. Hong Kong factory direct, SF Express / DHL worldwide shipping.',
+      subtitle: 'International printing for businesses in the United States, United Kingdom, Australia and beyond. Shenzhen factory direct, SF Express / DHL worldwide shipping, plus HK MTR station pickup.',
       areas: [
         {
           title: 'United States',
@@ -139,8 +154,8 @@ export default function ServiceAreasPage({ params }: { params: { locale: Locale 
       guarantee: 'Worldwide Delivery Guarantee: All international orders include DHL tracking with full insurance.',
     },
     ja: {
-      h1: '日本向け海外印刷サービス | 香港から発送',
-      subtitle: '同人誌・企業資料を香港から日本へ。観塘自社工場直送、ISO9001認証、DHL国際配送。',
+      h1: '日本向け越境印刷サービス | 深圳工場から発送',
+      subtitle: '同人誌・企業資料を深圳自社工場から日本へ。香港 MTR 駅受取サービス、ISO9001認証、DHL国際配送。',
       areas: [
         {
           title: '東京・関東エリア',

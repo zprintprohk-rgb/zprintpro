@@ -1142,7 +1142,7 @@ export const geoConfig: Record<Locale, import('@/types/seo').GeoSignals> = {
     // 2026-06-18: 香港派送区域保留 (作为 areaServed),但移除"港鐵站/即日取"等暗示本地取货的词
     //   跨境模式下香港消费者通过顺丰/DHL 收件,不再有"地铁站交收"实体服务
     deliveryText: '跨境配送，香港島/九龍/新界均可送達',
-    geoKeywords: ['香港', '九龍', '新界', '港島', '灣仔', '觀塘', '旺角', '銅鑼灣', '尖沙咀'],
+    geoKeywords: ['香港', '九龍', '新界', '港島', '灣仔', '旺角', '銅鑼灣', '尖沙咀'],
   },
   'en': {
     region: 'US',

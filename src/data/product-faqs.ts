@@ -73,9 +73,9 @@ export const stickersFAQs: FAQItem[] = [
       'ja': '九龍など香港全域へのシール配送はありますか？',
     },
     answer: {
-      'zh-hk': '有。智印雲提供全港送貨服務，包括九龍、港島、新界及離島。貼紙印刷訂單滿HK$500免運費，未滿額可選擇港鐵站交收，觀塘、旺角、銅鑼灣、尖沙咀等站點均可。',
-      'en': 'Yes. ZprintPro offers delivery across all Hong Kong areas including Kowloon, Hong Kong Island, New Territories, and outlying islands. Sticker orders over HK$500 qualify for free shipping. For smaller orders, MTR station pickup is available at Kwun Tong, Mong Kok, Causeway Bay, Tsim Sha Tsui, and more.',
-      'ja': 'はい。ZprintProは九龍、香港島、新界、離島を含む香港全域に配送しています。シール印刷のご注文がHK$500以上で送料無料です。未満の場合は、観塘、旺角、銅鑼湾、尖沙咀などのMTR駅での受け取りが可能です。',
+      'zh-hk': '有。智印雲提供全港送貨服務，包括九龍、港島、新界及離島。貼紙印刷訂單滿HK$500免運費，未滿額可選擇香港 MTR 站交收（觀塘、旺角、銅鑼灣、尖沙咀等站點 — 香港服務點，非生產地）。',
+      'en': 'Yes. ZprintPro offers delivery across all Hong Kong areas including Kowloon, Hong Kong Island, New Territories, and outlying islands. Sticker orders over HK$500 qualify for free shipping. For smaller orders, MTR station pickup is available at Hong Kong stations (Kwun Tong, Mong Kok, Causeway Bay, Tsim Sha Tsui — HK service points, not production site).',
+      'ja': 'はい。ZprintProは九龍、香港島、新界、離島を含む香港全域に配送しています。シール印刷のご注文がHK$500以上で送料無料です。未満の場合は、香港 MTR 駅での受け取りが可能です（観塘、旺角、銅鑼湾、尖沙咀など — 香港サービスポイント、製造拠点ではありません）。',
     },
   },
   {
@@ -525,7 +525,7 @@ export const generalProductFAQs: FAQItem[] = [
     answer: {
       'zh-hk': '標準工期為 3–5 個工作天，加急件最快 24–48 小時內完成。即日交貨適用於大部分標準 SKU，建議上午 11 時前確認稿件。深圳總部生產，港九新界 48 小時快遞直送 (順豐/DHL)。樣書可郵寄審核。',
       'en': 'Standard turnaround is 3–5 business days. Rush orders are completed in 24–48 hours. Same-day delivery is available for most standard SKUs—confirm artwork before 11 AM. Sample proofs available by mail/courier, with 48-hour delivery across Hong Kong via SF Express / DHL.',
-      'ja': '標準納期は 3〜5 営業日、急ぎは 24〜48 時間以内。即日納品は多くの標準 SKU で対応可能、正午までのデータ確定推奨です。観塘 showroom で現場校正、香港全域へ 48 時間配送。',
+      'ja': '標準納期は 3〜5 営業日、急ぎは 24〜48 時間以内。即日納品は多くの標準 SKU で対応可能、正午までのデータ確定推奨です。深圳 showroom で現場校正、香港全域へ 48 時間配送。',
     },
   },
   {
@@ -535,9 +535,9 @@ export const generalProductFAQs: FAQItem[] = [
       'ja': '香港内で配送サービスはありますか？',
     },
     answer: {
-      'zh-hk': '智印雲提供全港送貨服務，包括九龍、港島、新界及離島。訂單滿 HK$500 免運費，未滿額可選擇港鐵站交收（觀塘、旺角、銅鑼灣、尖沙咀等）。海外市場支援 DHL / FedEx 全球直送，3-5 個工作天到美國、2-4 天到日本。',
-      'en': 'ZprintPro offers Hong Kong-wide delivery including Kowloon, Hong Kong Island, New Territories, and outlying islands. Free shipping on orders over HK$500; MTR station pickup available for smaller orders (Kwun Tong, Mong Kok, Causeway Bay, Tsim Sha Tsui). International orders ship via DHL/FedEx—3-5 days to USA, 2-4 days to Japan.',
-      'ja': 'ZprintPro は九龍・香港島・新界・離島を含む香港全域に配送します。HK$500 以上で送料無料、未満は MTR 駅受取（観塘・旺角・銅鑼湾・尖沙咀など）。海外は DHL/FedEx 対応、米国 3-5 日、日本 2-4 日。',
+      'zh-hk': '智印雲提供全港送貨服務，包括九龍、港島、新界及離島。訂單滿 HK$500 免運費，未滿額可選擇香港 MTR 站交收（觀塘、旺角、銅鑼灣、尖沙咀等 — 香港服務點，非生產地）。海外市場支援 DHL / FedEx 全球直送，3-5 個工作天到美國、2-4 天到日本。',
+      'en': 'ZprintPro offers Hong Kong-wide delivery including Kowloon, Hong Kong Island, New Territories, and outlying islands. Free shipping on orders over HK$500; MTR station pickup available for smaller orders at Hong Kong stations (Kwun Tong, Mong Kok, Causeway Bay, Tsim Sha Tsui — HK service points, not production site). International orders ship via DHL/FedEx—3-5 days to USA, 2-4 days to Japan.',
+      'ja': 'ZprintPro は九龍・香港島・新界・離島を含む香港全域に配送します。HK$500 以上で送料無料、未満は香港 MTR 駅受取（観塘・旺角・銅鑼湾・尖沙咀など — 香港サービスポイント、製造拠点ではありません）。海外は DHL/FedEx 対応、米国 3-5 日、日本 2-4 日。',
     },
   },
   {

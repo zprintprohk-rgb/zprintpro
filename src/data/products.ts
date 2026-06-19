@@ -2931,6 +2931,8 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>How tamper-resistant is holographic?</strong></summary><p>Holographic seals combine visual anti-counterfeit (hard to replicate) with adhesive tamper evidence (cannot be removed intact). Best for mid-high security.</p></details>
 <details class="my-2"><summary><strong>What about barcode or RFID integration?</strong></summary><p>We support 1D/2D barcodes (Code 128, QR, Data Matrix) and can pre-print serial numbers. RFID inlay integration available on request for orders of 5,000+.</p></details>
 
+
+<p><em>Compliance:  ✅ FSC-certified materials, ✅ ISO 9001:2015 certified quality management system.</em></p>
 `,
     features: [
       '易碎／VOID 等防拆材可選',
@@ -3248,7 +3250,7 @@ export const products: Product[] = [
 </ol>
 <p>今すぐ体験：<strong>智印雲 ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>
 
-<p><em>智印雲（ZprintPro）は深圳市彩龙印刷包装有限公司が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>智印雲（ZprintPro）は深圳市彩龙印刷包装有限公司が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001:2015 認証品質管理システム 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
 <details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、名刺・封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
@@ -3314,7 +3316,7 @@ export const products: Product[] = [
     category: 'paper-bags',
     category_slug: 'paper-bags',
     name: '牛皮紙袋', nameEn: 'Kraft Paper Bags', nameJa: 'クラフト紙袋', title_zh: '牛皮紙袋印刷訂製 100個起印 免費刀模 FSC認證 | 智印雲 ZprintPro',
-    description: '牛皮紙袋印刷訂製，100個起印，HK$1.8起/個。FSC環保認證紙材，多尺寸多規格，免費刀模設計，支援燙金UV局部。即日交貨，全港送貨，零售餐飲活動品牌推廣。', descriptionEn: 'Eco-friendly kraft paper, natural and rustic, loved by consumers. Perfect for clothing stores, gift shops, coffee shops.', descriptionJa: '環境に優しいクラフト紙、質朴で自然、消費者に人気。衣料品店、ギフトショップ、コーヒーショップに最適。', description_zh: '環保牛皮紙材質，質樸自然，深受消費者喜愛。適合服裝店、禮品店、咖啡店。多種尺寸可選，可定制Logo印刷。',
+    description: '牛皮紙袋印刷訂製，100個起印，HK$1.8起/個。FSC環保認證紙材，多尺寸多規格，免費刀模設計，支援燙金UV局部。即日交貨，全港送貨，零售餐飲活動品牌推廣。', descriptionEn: 'Eco-friendly kraft paper, natural and rustic, loved by consumers. Perfect for clothing stores, gift shops, coffee shops., ISO 9001:2015 certified quality management system', descriptionJa: '環境に優しいクラフト紙、質朴で自然、消費者に人気。衣料品店、ギフトショップ、コーヒーショップに最適。', description_zh: '環保牛皮紙材質，質樸自然，深受消費者喜愛。適合服裝店、禮品店、咖啡店。多種尺寸可選，可定制Logo印刷。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -3419,6 +3421,11 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>Are the bags food-safe?</strong></summary><p>For direct food contact, we offer FDA-compliant inner liners. For bakery and takeaway use, our standard kraft with a food-grade insert is recommended.</p></details>
 <details class="my-2"><summary><strong>Can I get custom sizes?</strong></summary><p>Yes. We produce custom dimensions from 8×6×2" (small jewelry) to 320×120×380mm (large apparel). Submit your spec for a quote.</p></details>
 <details class="my-2"><summary><strong>What about eco-certifications?</strong></summary><p>We offer FSC-certified kraft, 100% recycled fiber, and soy-based ink options. Carbon footprint calculation and eco-certification labels are available on request.</p></details>
+
+
+
+<h3>Compliance & Quality Management</h3>
+<p>ISO 9001:2015 certified quality management system.</p>
 
 <p><em>Printed in our Hong Kong facility, shipped worldwide via DHL Express. ZprintPro — your global printing partner for eco-friendly retail bags, premium packaging, and brand merchandise.</em></p>
 
@@ -3791,7 +3798,7 @@ export const products: Product[] = [
     category: 'paper-bags',
     category_slug: 'paper-bags',
     name: '禮品紙袋', nameEn: 'Gift Bags', nameJa: 'ギフト紙袋', title_zh: '禮品紙袋印刷訂製 高檔禮品袋 100個起印 燙金LOGO | 智印雲',
-    description: '禮品紙袋印刷訂製，100個起印，HK$3.5起/個。棉繩緞帶手挽，燙金UV壓凹工藝，支援多尺寸客製LOGO。適合品牌活動週年慶贈品，即日交貨，全港免費送貨。', descriptionEn: 'Exquisite design with foil stamping, UV and other processes. Essential for gifting, elevates gift quality.', descriptionJa: '精巧なデザイン、箔押し・UVなどの加工付き。ギフトに必須、ギフトの質を向上。', description_zh: '精美設計，配合燙金、UV等工藝。送禮必備，提升禮品檔次。',
+    description: '禮品紙袋印刷訂製，100個起印，HK$3.5起/個。棉繩緞帶手挽，燙金UV壓凹工藝，支援多尺寸客製LOGO。適合品牌活動週年慶贈品，即日交貨，全港免費送貨。', descriptionEn: 'Exquisite design with foil stamping, UV and other processes. Essential for gifting, elevates gift quality., ISO 9001:2015 certified quality management system', descriptionJa: '精巧なデザイン、箔押し・UVなどの加工付き。ギフトに必須、ギフトの質を向上。', description_zh: '精美設計，配合燙金、UV等工藝。送禮必備，提升禮品檔次。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -3896,6 +3903,11 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>How much weight can the bags hold?</strong></summary><p>Standard cotton rope handle bags hold 8-12kg, satin ribbon 5-8kg. For heavier items (wine, books), we recommend rigid base inserts and reinforced handles.</p></details>
 <details class="my-2"><summary><strong>Can I get custom sizes?</strong></summary><p>Yes. We produce custom dimensions from 6×4×1.5" (small jewelry) to 16×12×5" (large apparel or multi-bottle). Submit your spec for a quote.</p></details>
 <details class="my-2"><summary><strong>What about foil stamping?</strong></summary><p>Gold, silver, rose gold, copper, and holographic foils are available. Foil stamping adds 1-2 days to production and is quoted per design complexity.</p></details>
+
+
+
+<h3>Compliance & Quality Management</h3>
+<p>ISO 9001:2015 certified quality management system.</p>
 
 <p><em>Printed in our Hong Kong facility, shipped worldwide via DHL Express. ZprintPro — your global printing partner for premium retail packaging, gift bags, and luxury brand merchandise.</em></p>
 
@@ -4130,7 +4142,7 @@ export const products: Product[] = [
     category: 'paper-bags',
     category_slug: 'paper-bags',
     name: '環保紙袋', nameEn: 'Eco Paper Bags', nameJa: 'エコ紙袋', title_zh: '環保紙袋印刷訂製 FSC再生認證 100個起印 | 智印雲 ZprintPro',
-    description: '環保紙袋印刷訂製，100個起印，HK$2.2起/個。FSC再生認證紙材，可完全降解，支援燙金UV印刷。適合ESG品牌碳審計、減塑徵費合規，即日交貨，全港送貨。', descriptionEn: 'FSC-certified eco-friendly paper, sustainable development. Perfect for environmentally conscious brands.', descriptionJa: 'FSC認証の環境に優しい紙、持続可能な開発。環境に配慮するブランドに最適。', description_zh: 'FSC認證環保紙張，可持續發展。適合注重環保的品牌。',
+    description: '環保紙袋印刷訂製，100個起印，HK$2.2起/個。FSC再生認證紙材，可完全降解，支援燙金UV印刷。適合ESG品牌碳審計、減塑徵費合規，即日交貨，全港送貨。', descriptionEn: 'FSC-certified eco-friendly paper, sustainable development. Perfect for environmentally conscious brands., ISO 9001:2015 certified quality management system', descriptionJa: 'FSC認証の環境に優しい紙、持続可能な開発。環境に配慮するブランドに最適。', description_zh: 'FSC認證環保紙張，可持續發展。適合注重環保的品牌。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -4236,6 +4248,11 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>Can I get custom sizes?</strong></summary><p>Yes. We produce custom dimensions from 6×4×1.5" (small soap bars) to 16×12×5" (large grocery). Submit your spec for a quote.</p></details>
 <details class="my-2"><summary><strong>What about carbon offset?</strong></summary><p>Per-order carbon footprint calculation is available. We partner with verified offset projects (reforestation, renewable energy) and issue certificates.</p></details>
 
+
+
+<h3>Compliance & Quality Management</h3>
+<p>ISO 9001:2015 certified quality management system.</p>
+
 <p><em>Printed in our Hong Kong facility with 100% renewable energy, shipped worldwide via DHL Express. ZprintPro — your global printing partner for eco-friendly retail bags, sustainable packaging, and zero-waste brand materials.</em></p>
 
     `,
@@ -4323,7 +4340,7 @@ export const products: Product[] = [
     category: 'paper-bags',
     category_slug: 'paper-bags',
     name: '手挽紙袋', nameEn: 'Handle Bags', nameJa: '手提げ紙袋', title_zh: '手挽紙袋',
-    description: '堅固手挽設計，承重能力強。適合購物中心、超市。', descriptionEn: 'Sturdy handle design, strong load-bearing capacity. Perfect for shopping centers, supermarkets.', descriptionJa: '頑丈な持ち手デザイン、強い耐荷重能力。ショッピングセンター、スーパーに最適。', description_zh: '堅固手挽設計，承重能力強。適合購物中心、超市。',
+    description: '堅固手挽設計，承重能力強。適合購物中心、超市。', descriptionEn: 'Sturdy handle design, strong load-bearing capacity. Perfect for shopping centers, supermarkets., ISO 9001:2015 certified quality management system', descriptionJa: '頑丈な持ち手デザイン、強い耐荷重能力。ショッピングセンター、スーパーに最適。', description_zh: '堅固手挽設計，承重能力強。適合購物中心、超市。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -4429,6 +4446,11 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>Do you offer rush production?</strong></summary><p>Yes. 3-5 day rush available for orders up to 5,000 bags. Same-day file confirmation by 11am (HKT) for next-day dispatch.</p></details>
 <details class="my-2"><summary><strong>Are the bags food-safe?</strong></summary><p>For indirect food contact (bread, pastries in inner wrapping), yes. For direct food contact, we offer FDA-compliant inner liners at additional cost.</p></details>
 
+
+
+<h3>Compliance & Quality Management</h3>
+<p>ISO 9001:2015 certified quality management system.</p>
+
 <p><em>Printed in our Hong Kong facility, shipped worldwide via DHL Express. ZprintPro — your global printing partner for retail shopping bags, custom packaging, and brand merchandise.</em></p>
 
     `,
@@ -4511,7 +4533,7 @@ export const products: Product[] = [
     category: 'paper-bags',
     category_slug: 'paper-bags',
     name: '大號紙袋', nameEn: 'Large Bags', nameJa: '大判紙袋', title_zh: '大號紙袋',
-    description: '加大尺寸，適合服裝、鞋類等大件商品。', descriptionEn: 'Large size, perfect for clothing, shoes and other large items.', descriptionJa: '大きなサイズ、衣類、靴などの大物に最適。', description_zh: '加大尺寸，適合服裝、鞋類等大件商品。',
+    description: '加大尺寸，適合服裝、鞋類等大件商品。', descriptionEn: 'Large size, perfect for clothing, shoes and other large items., ISO 9001:2015 certified quality management system', descriptionJa: '大きなサイズ、衣類、靴などの大物に最適。', description_zh: '加大尺寸，適合服裝、鞋類等大件商品。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -4617,6 +4639,11 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>Can the bag be reinforced for very heavy items?</strong></summary><p>Yes. For loads over 20kg, we recommend rigid box alternatives. For 15-20kg paper bags, we add double-card base inserts and reinforced handle attachments.</p></details>
 <details class="my-2"><summary><strong>What about foil stamping or inside printing?</strong></summary><p>Both available. Foil stamping (gold, silver, rose gold, holographic) and inside single or full-color printing add 1-2 days to production and are quoted per design complexity.</p></details>
 
+
+
+<h3>Compliance & Quality Management</h3>
+<p>ISO 9001:2015 certified quality management system.</p>
+
 <p><em>Printed in our Hong Kong facility, shipped worldwide via DHL Express. ZprintPro — your global printing partner for oversized retail bags, premium gift packaging, and heavy-duty brand merchandise.</em></p>
 
     `,
@@ -4679,7 +4706,7 @@ export const products: Product[] = [
     category: 'flyers',
     category_slug: 'flyers',
     name: 'A4宣傳單張', nameEn: 'A4 Flyers', nameJa: 'A4チラシ', title_zh: 'A4傳單印刷 100張起印 HK$0.3/張 雙面彩印 | 智印雲 ZprintPro',
-    description: 'A4傳單印刷訂製，100張起印，HK$0.3起/張。157g銅版紙雙面四色印刷，免費設計打樣。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。', descriptionEn: 'Standard A4 size, most common flyer format. 157g glossy paper, 4-color printing, vibrant colors.', descriptionJa: '標準A4サイズ、最も一般的なチラシ形式。157gコート紙、4色印刷、鮮やかな色彩。', description_zh: '標準A4尺寸，最常用的宣傳單張規格。157g銅版紙，四色印刷，色彩鮮豔。適合產品推廣、活動宣傳。',
+    description: 'A4傳單印刷訂製，100張起印，HK$0.3起/張。157g銅版紙雙面四色印刷，免費設計打樣。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。', descriptionEn: 'Standard A4 size, most common flyer format. 157g glossy paper, 4-color printing, vibrant colors., ISO 9001:2015 certified quality management system', descriptionJa: '標準A4サイズ、最も一般的なチラシ形式。157gコート紙、4色印刷、鮮やかな色彩。', description_zh: '標準A4尺寸，最常用的宣傳單張規格。157g銅版紙，四色印刷，色彩鮮豔。適合產品推廣、活動宣傳。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -4785,6 +4812,11 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>Can I add a QR code or coupon design?</strong></summary><p>Yes. QR codes, discount coupons, and tear-off reply cards are all supported. We can also design these for you at no extra charge.</p></details>
 <details class="my-2"><summary><strong>What paper weight should I choose?</strong></summary><p>157g gloss art is the industry standard for A4 flyers. For premium feel, choose 200-250g matte. For high-volume distribution (under $0.10 per flyer), 128g gloss is the budget option.</p></details>
 <details class="my-2"><summary><strong>Do you offer eco-friendly options?</strong></summary><p>Yes. FSC-certified recycled paper and soy-based inks are available. Carbon footprint calculation and eco-certification labels can be added on request.</p></details>
+
+
+
+<h3>Compliance & Quality Management</h3>
+<p>ISO 9001:2015 certified quality management system.</p>
 
 <p><em>Printed in our Hong Kong facility, shipped worldwide via DHL Express. ZprintPro — your global printing partner for flyers, posters, packaging, and marketing collateral.</em></p>
 
@@ -6389,7 +6421,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     category: 'posters',
     category_slug: 'posters',
     name: 'A1大幅海報', nameEn: 'A1 Large Posters', nameJa: 'A1大型ポスター', title_zh: 'A1大幅海報',
-    description: 'A1大尺寸，視覺衝擊力強。適合展覽、會場佈置。', descriptionEn: 'A1 large size, strong visual impact. Perfect for exhibitions, venue decoration.', descriptionJa: 'A1大きなサイズ、強い視覚的インパクト。展示会、会場装飾に最適。', description_zh: 'A1大尺寸，視覺衝擊力強。適合展覽、會場佈置。',
+    description: 'A1大尺寸，視覺衝擊力強。適合展覽、會場佈置。', descriptionEn: 'A1 large size, strong visual impact. Perfect for exhibitions, venue decoration., ISO 9001:2015 certified quality management system', descriptionJa: 'A1大きなサイズ、強い視覚的インパクト。展示会、会場装飾に最適。', description_zh: 'A1大尺寸，視覺衝擊力強。適合展覽、會場佈置。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -6495,6 +6527,11 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What's the difference between A1 and A0?</strong></summary><p>A1 (594×841mm) is standard large poster — fits most wall displays and standard frames. A0 (841×1189mm) is oversized — for trade show backdrops, premium art prints, and maximum impact.</p></details>
 <details class="my-2"><summary><strong>Can I get lamination?</strong></summary><p>Yes. Matte and gloss lamination available. Recommended for posters that will be handled frequently or hung in high-traffic areas. Adds 1 day to production.</p></details>
 <details class="my-2"><summary><strong>Do you offer recycled or eco-friendly paper?</strong></summary><p>Yes. FSC-certified recycled and kraft papers available for eco-conscious campaigns. Soy-based inks standard. Carbon-neutral offset option.</p></details>
+
+
+
+<h3>Compliance & Quality Management</h3>
+<p>ISO 9001:2015 certified quality management system.</p>
 
 <p><em>Printed in our Hong Kong facility, shipped worldwide via DHL Express. ZprintPro — your global printing partner for large-format posters, retail signage, and visual marketing.</em></p>
 
@@ -7311,7 +7348,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     category: 'packaging',
     category_slug: 'packaging',
     name: '禮品盒定制', nameEn: 'Gift Boxes', nameJa: 'ギフトボックス', title_zh: '禮品盒訂製印刷 100個起印 HK$4.5/個 磁吸盒首選 | 智印雲',
-    description: '禮品盒訂製印刷，100個起印，HK$4.5起/個。磁吸盒天地盒抽屜盒，燙金UV壓凹工藝，免費刀模設計。適合品牌活動週年慶贈品，即日打樣，3-5天交貨。', descriptionEn: 'Exquisite gift boxes with foil stamping, UV and other processes.', descriptionJa: '精巧なギフトボックス、箔押し・UVなどの加工付き。', description_zh: '精緻禮品盒，配合燙金、UV等工藝。送禮首選，提升產品價值。',
+    description: '禮品盒訂製印刷，100個起印，HK$4.5起/個。磁吸盒天地盒抽屜盒，燙金UV壓凹工藝，免費刀模設計。適合品牌活動週年慶贈品，即日打樣，3-5天交貨。', descriptionEn: 'Exquisite gift boxes with foil stamping, UV and other processes., ISO 9001:2015 certified quality management system', descriptionJa: '精巧なギフトボックス、箔押し・UVなどの加工付き。', description_zh: '精緻禮品盒，配合燙金、UV等工藝。送禮首選，提升產品價值。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -7420,6 +7457,10 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>How much weight can the box hold?</strong></summary><p>Folding cartons hold 0.5-2kg typical contents. Rigid setup boxes hold 2-5kg+ depending on size. Custom reinforced bases available for heavy items.</p></details>
 <details class="my-2"><summary><strong>What about custom inserts?</strong></summary><p>Yes. EVA foam, paper pulp, molded fiber, and cardboard inserts are all available. Custom die-cut inserts designed to fit your product perfectly.</p></details>
 
+
+
+<h3>Compliance & Quality Management</h3>
+<p>ISO 9001:2015 certified quality management system.</p>
     `,
     features: [
       '白卡／特種紙／裱灰板多方案',
@@ -7668,7 +7709,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     category: 'packaging',
     category_slug: 'packaging',
     name: '食品包裝盒', nameEn: 'Food Boxes', nameJa: '食品包装箱', title_zh: '食品包裝盒印刷訂製 100個起印 HK$4起/個 FDA級 | 智印雲',
-    description: '食品包裝盒印刷訂製，100個起印，HK$4起/個。FDA級食品接觸安全材質，牛皮紙白卡紙可選，支援燙金UV印刷。適合糕點茶葉巧克力月餅食品品牌，3-5天交貨。', descriptionEn: 'Food-grade material, safe and eco-friendly.', descriptionJa: '食品グレード素材、安全で環境に優しい。', description_zh: '食品級材質，安全環保。適合糕點、茶葉、保健品。',
+    description: '食品包裝盒印刷訂製，100個起印，HK$4起/個。FDA級食品接觸安全材質，牛皮紙白卡紙可選，支援燙金UV印刷。適合糕點茶葉巧克力月餅食品品牌，3-5天交貨。', descriptionEn: 'Food-grade material, safe and eco-friendly., ISO 9001:2015 certified quality management system', descriptionJa: '食品グレード素材、安全で環境に優しい。', description_zh: '食品級材質，安全環保。適合糕點、茶葉、保健品。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -7773,6 +7814,10 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>Can you print variable QR codes for batch tracking?</strong></summary><p>Yes. Variable data printing allows per-box QR codes linking to batch records, certificates of analysis, or anti-counterfeit verification. Submit an Excel/CSV file with the data.</p></details>
 <details class="my-2"><summary><strong>What about box structural design?</strong></summary><p>We provide free dieline design and 3D mockups. Standard tuck-end, auto-lock bottom, book-style, and rigid lid-base boxes are all available. Custom structures are quoted on request.</p></details>
 
+
+
+<h3>Compliance & Quality Management</h3>
+<p>ISO 9001:2015 certified quality management system.</p>
 `,
     longDescriptionJa: `<h3>食品グレード材質対比</h3>
 <p>食品パッケージは 4 種類の食品安全素材から選択、食品衛生法・FDA/LFGB 準拠。</p>
@@ -7993,7 +8038,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     category: 'packaging',
     category_slug: 'packaging',
     name: '快遞盒/飛機盒', nameEn: 'Mailer Boxes', nameJa: '発送箱', title_zh: '快遞盒/飛機盒',
-    description: '堅固耐用，電商發貨首選。可印品牌Logo，提升開箱體驗。', descriptionEn: 'Sturdy and durable, first choice for e-commerce shipping.', descriptionJa: '頑丈で耐久性があり、EC発送の第一選択。', description_zh: '堅固耐用，電商發貨首選。可印品牌Logo，提升開箱體驗。',
+    description: '堅固耐用，電商發貨首選。可印品牌Logo，提升開箱體驗。', descriptionEn: 'Sturdy and durable, first choice for e-commerce shipping., ISO 9001:2015 certified quality management system', descriptionJa: '頑丈で耐久性があり、EC発送の第一選択。', description_zh: '堅固耐用，電商發貨首選。可印品牌Logo，提升開箱體驗。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -8099,6 +8144,11 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>Do you offer custom sizes?</strong></summary><p>Yes. Any dimension from 100×80×30mm (small jewelry) to 600×400×300mm (large multi-item). We optimize the dieline for your product and shipping method.</p></details>
 <details class="my-2"><summary><strong>What about tape or adhesive closures?</strong></summary><p>Self-lock tuck-front design requires no tape. We also offer tear-strip closures (for returnable packaging) and adhesive strips on request.</p></details>
 <details class="my-2"><summary><strong>Are they eco-friendly?</strong></summary><p>Yes. All our mailers use FSC-certified paper. Corrugated and kraft mailers are 100% recyclable. Folding carton mailers with soy ink are recyclable and biodegradable.</p></details>
+
+
+
+<h3>Compliance & Quality Management</h3>
+<p>ISO 9001:2015 certified quality management system.</p>
 
 <p><em>Printed in our Hong Kong facility, shipped worldwide via DHL Express. ZprintPro — your global printing partner for e-commerce mailer boxes, DTC shipping packaging, and branded unboxing.</em></p>
 
@@ -15287,7 +15337,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <tbody>
     <tr class="border-b border-gray-200"><td>Hong Kong local courier</td><td>Kowloon / Island / NT / Outlying Islands</td><td>48 hours</td><td>Free over HK$500</td></tr>
     <tr class="border-b border-gray-200"><td>Hong Kong local pickup</td><td>SF Express / DHL courier points</td><td>Same day</td><td>Free</td></tr>
-    <tr class="border-b border-gray-200"><td>MTR station handoff</td><td>Kwun Tong / Mong Kok / Causeway Bay / TST</td><td>Flexible hours</td><td>Free</td></tr>
+    <tr class="border-b border-gray-200"><td>MTR station handoff</td><td>Mong Kok / Causeway Bay / TST / Hong Kong Station (HK service point, not production site)</td><td>Flexible hours</td><td>Free</td></tr>
     <tr><td>International (DHL / FedEx)</td><td>Japan / Taiwan / SEA / Global</td><td>2–5 business days</td><td>Free over 100 copies</td></tr>
   </tbody>
 </table>
@@ -16610,7 +16660,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
       slug: 'acrylic-keychain',
       category: 'japan-doujin',
       category_slug: 'japan-doujin',
-      name: '亞克力鑰匙扣',
+      name: '壓克力鑰匙扣',
       nameEn: 'Acrylic Keychain',
       nameJa: 'アクリルキーホルダー',
       title_zh: '亞克力鑰匙扣 角色造型',
