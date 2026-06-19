@@ -529,7 +529,7 @@ const CATEGORY_TIER_MULTIPLIERS: Record<string, { en: number; ja: number }> = {
 
 const BASE_EXCHANGE_RATES: Record<Locale, { rate: number; symbol: string }> = {
   'zh-hk': { rate: 1,      symbol: 'HK$' },
-  'en':    { rate: 0.128,  symbol: 'USD $' },   // 1 HKD = 0.128 USD
+  'en':    { rate: 0.128,  symbol: 'US$' },      // 1 HKD = 0.128 USD
   'ja':    { rate: 19.5,   symbol: '¥' },     // 1 HKD = 19.5 JPY
 };
 
@@ -723,5 +723,9 @@ export function convertCurrency(hkdAmount: number, targetCurrency: 'HKD' | 'USD'
     'AUD': 0.195,
     'JPY': 19.5,
   };
-  return Math.round(hkdAmount * rates[targetCurrency]);
+  // JPY 用整数（无小数币种）；其他币种保留 2 位小数
+  if (targetCurrency === 'JPY') {
+    return Math.round(hkdAmount * rates.JPY);
+  }
+  return Math.round(hkdAmount * rates[targetCurrency] * 100) / 100;
 }

@@ -1,6 +1,6 @@
 /**
  * 产品数据服务模块
- * 从CSV加载79个SKU产品数据
+ * 从CSV加载84个SKU产品数据
  * 提供分类、搜索、筛选功能
  */
 import { getSkuSeo } from '@/data/sku-seo-data';
@@ -70,7 +70,7 @@ export interface Category {
   sort_order: number;
 }
 
-// 13个产品分类
+// 14个产品分类
 export const categories: Category[] = [
   // 六大核心主营分类（按全球市场搜索量+利润率+战略优先级排序）
   { slug: 'stickers', name: '貼紙印刷', nameEn: 'Stickers', nameJa: 'ステッカー印刷', name_zh: '貼紙印刷', name_en: 'Stickers', name_ja: 'ステッカー印刷', sort_order: 1 },
@@ -90,7 +90,7 @@ export const categories: Category[] = [
   { slug: 'japan-doujin', name: '同人誌・アニメグッズ', nameEn: 'Doujinshi & Anime Goods', nameJa: '同人誌・アニメグッズ', name_zh: '同人誌・アニメグッズ', name_en: 'Doujinshi & Anime Goods', name_ja: '同人誌・アニメグッズ', sort_order: 14 },
 ];
 
-// 79个SKU产品数据
+// 84个SKU产品数据
 export const products: Product[] = [
   // 咭片印刷 (6 SKU)
   {
