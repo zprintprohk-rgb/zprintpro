@@ -16616,32 +16616,32 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
           ja: 'doujinshi-printing.webp',
         },
         alt: {
-          'zh-hk': '同人誌印刷-コミケ対応-A5-B5サイズ',
+          'zh-hk': '同人誌印刷-Comiket對應-A5-B5尺寸',
           en: 'doujinshi-printing-comiket-a5-b5-format',
           ja: '同人誌印刷-コミケ対応-A5-B5サイズ',
         },
       },
       features: [
-        'コミケ前 24時間特急対応可',
-        '10 個から少部数対応',
-        '深圳自社工場 + DHL Express 2-4 日日本直送',
-        'FSC 認証紙材 / ISO 12647 色彩管理',
-        '日本語サポート + WhatsApp 対応',
-        'A5 (148×210mm) / B5 (182×257mm サイズ'
+        'Comiket 前 24 小時特急対応可',
+        '10 本起印,少量対応',
+        '深圳自營工廠 + DHL Express 直送日本 2-4 個工作天',
+        'FSC 認證紙材 / ISO 12647 色彩管理',
+        '繁體中文 / 日文雙語支援 + WhatsApp 對應',
+        'A5 (148×210mm) / B5 (182×257mm) 標準尺寸'
       ],
       specs: {
-        material: 'FSC認証 上質紙 90g/コート紙 90g (表紙)',
-        size: 'A5 (148×210mm) / B5 (182×257mm) / A4 (オプション)',
-        printMethod: '表紙: オフセット4色 / 本文: オンデマンド or オフセット',
-        finishing: '無線綴じ / 中綴じ (8-64p) / 背表紙',
+        material: 'FSC 認證道林紙 90g / 銅版紙 90g (封面)',
+        size: 'A5 (148×210mm) / B5 (182×257mm) / A4 (可選)',
+        printMethod: '封面: 柯式四色 / 內頁: 數碼或柯式印刷',
+        finishing: '膠裝 / 騎馬釘 (8-64頁) / 書脊封面',
       },
       options: {
         material: [
           { value: 'standard', label: '標準', priceAdjustment: 0 },
-          { value: 'premium', label: 'プレミアム', priceAdjustment: 1500 },
+          { value: 'premium', label: '進階', priceAdjustment: 1500 },
         ],
         size: [
-          { value: 'standard', label: '標準サイズ', priceAdjustment: 0 },
+          { value: 'standard', label: '標準尺寸', priceAdjustment: 0 },
           { value: 'custom', label: 'カスタムサイズ', priceAdjustment: 800 },
         ],
       },
@@ -16787,7 +16787,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
         },
       },
       features: [
-        'コミケ前 24時間特急対応可',
+        'Comiket 前 24 小時特急対応可',
         '10 個から少部数対応',
         '深圳自社工場 + DHL Express 2-4 日日本直送',
         'FSC 認証紙材 / ISO 12647 色彩管理',
@@ -16944,13 +16944,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
           ja: 'can-badge.webp',
         },
         alt: {
-          'zh-hk': '缶バッジ印刷-57mm-76mm-安全扣',
+          'zh-hk': '罐型襟章印刷-57mm-76mm-安全扣',
           en: 'can-badge-printing-57mm-76mm-safety-pin',
           ja: '缶バッジ印刷-57mm-76mm-安全ピン',
         },
       },
       features: [
-        'コミケ前 24時間特急対応可',
+        'Comiket 前 24 小時特急対応可',
         '10 個から少部数対応',
         '深圳自社工場 + DHL Express 2-4 日日本直送',
         'FSC 認証紙材 / ISO 12647 色彩管理',
@@ -17109,13 +17109,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
           ja: 'postcard-set.webp',
         },
         alt: {
-          'zh-hk': 'ポストカードセット-和紙風-105x148mm',
+          'zh-hk': '明信片套裝-和紙風-105x148mm',
           en: 'postcard-set-washi-style-105x148mm',
           ja: 'ポストカードセット-和紙風-105x148mm',
         },
       },
       features: [
-        'コミケ前 24時間特急対応可',
+        'Comiket 前 24 小時特急対応可',
         '4 個から少部数対応',
         '深圳自社工場 + DHL Express 2-4 日日本直送',
         'FSC 認証紙材 / ISO 12647 色彩管理',
@@ -17153,38 +17153,38 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
       slug: 'eco-tote-bag',
       category: 'japan-doujin',
       category_slug: 'japan-doujin',
-      name: 'エコトートバッグ',
+      name: '環保托特袋',
       nameEn: 'Eco Tote Bag',
       nameJa: 'エコトートバッグ',
-      title_zh: 'エコトートバッグ オーガニックコットン',
-      description: 'オーガニックコットン 100% トートバッグ。シルク印刷対応。推し活・コミケ・企業物販向け。10 個から対応、FSC 認証生地使用。',
+      title_zh: '環保托特袋 | 100% 有機棉 | 智印雲',
+      description: '100% 純棉有機托特袋,絲網印刷 / DTG 全彩印刷。Comiket / 企業活動周邊首選,10 件起印,FSC 認證布料。',
       descriptionEn: '100% organic cotton tote bags with silk printing. Ideal for oshi-katsu, Comiket, corporate merchandise. MOQ 10 pcs, FSC-certified fabric.',
       descriptionJa: 'オーガニックコットン 100% トートバッグ。シルク印刷対応。推し活・コミケ・企業物販向け。10 個から対応、FSC 認証生地使用。',
-      description_zh: 'オーガニックコットン 100% トートバッグ。シルク印刷対応。推し活・コミケ・企業物販向け。10 個から対応、FSC 認証生地使用。',
-      longDescription: `<h3>同人誌・推し活特化印刷サービス</h3>
-<p>推し活・コミケ物販・企業ノベルティに最適なオーガニックコットントート。FSC 認証オーガニックコットン 100% 使用で、ESG ・サステナブル志向にも対応。シルクスクリーン印刷でロゴ・イラストを鮮明再現、DTG フルカラー印刷でグラデーション・写真も対応。A4 サイズ収納可能で、実用性も高い。10 個から対応で、少部数 OK。</p>
+      description_zh: '100% 純棉有機托特袋,絲網印刷 / DTG 全彩印刷。Comiket / 企業活動周邊首選,10 件起印,FSC 認證布料。',
+      longDescription: `<h3>環保托特袋 — 推し活 / Comiket / 企業活動周邊最佳選擇</h3>
+<p>推し活、Comiket 物販、企業禮贈品的最佳有機棉托特袋。FSC 認證 100% 有機棉材質,符合 ESG / 永續發展訴求。絲網印刷清晰呈現 logo 與插圖;DTG 全彩印刷支援漸層與相片效果。A4 尺寸收納,實用性高。10 件起印,小批量 OK。</p>
 
-<h3>サイズ・仕様</h3>
+<h3>尺寸・規格</h3>
 <table>
-  <thead><tr><th>項目</th><th>仕様</th></tr></thead>
+  <thead><tr><th>項目</th><th>規格</th></tr></thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>材質</td><td>オーガニックコットン 100% / 12oz 厚手キャンバス</td></tr>
-    <tr class="border-b border-gray-200"><td>サイズ</td><td>38×42×10cm (A4 収納可) / マチ 10cm</td></tr>
-    <tr><td>印刷方式</td><td>シルクスクリーン印刷 (1-3 色) / DTG フルカラー印刷</td></tr>
+    <tr class="border-b border-gray-200"><td>材質</td><td>100% 有機棉 / 12oz 厚實帆布</td></tr>
+    <tr class="border-b border-gray-200"><td>尺寸</td><td>38×42×10cm (可收納 A4) / 側寬 10cm</td></tr>
+    <tr><td>印刷方式</td><td>絲網印刷 (1-3 色) / DTG 全彩印刷</td></tr>
   </tbody>
 </table>
 
-<h3>コミケ・即売会前 特急対応</h3>
-<p>智印雲 ZprintPro はコミケ前 24 時間特急対応で、在庫切れの追加印刷や直前物販にも迅速対応。深圳自社工場から DHL Express で 2-4 日で日本直送、日本語サポートで安心取引。</p>
+<h3>Comiket・即售會前特急対応</h3>
+<p>智印雲 ZprintPro 提供 Comiket 前 24 小時特急対応,完售補印及會場直前販售都迅速處理。深圳自營工廠 DHL Express 直送日本 2-4 個工作天,日文客服 + 繁體中文客服雙語支援,安心交易。</p>
 
-<h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>最低何個から注文できますか？</strong></summary><p>10 個から対応可能です。個人サークル・個人作家様も安心してご注文いただけます。</p></details>
-<details class="my-2"><summary><strong>コミケ前の特急対応はできますか？</strong></summary><p>はい、コミケ開催前は 24 時間特急対応可能 (一部 SKU、追加料金適用)。詳細は WhatsApp でお問い合わせください。</p></details>
-<details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>深圳自社工場から DHL Express で 2-4 営業日でお届け。コミケ会場受取・自宅受取どちらも対応可能です。</p></details>
-<details class="my-2"><summary><strong>データ入稿の形式は？</strong></summary><p>Illustrator / Photoshop / PDF 形式推奨、CMYK モード、解像度 300dpi 以上。無料 AI データチェックで対応。</p></details>
-<details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能です。品質問題 (色ズレ・印刷ミス) は無料で再印刷または全額返金いたします。</p></details>
+<h3>常見問題 (FAQ)</h3>
+<details class="my-2"><summary><strong>最低可以印幾件？</strong></summary><p>10 件起印。個人社團及獨立作者都歡迎下單。</p></details>
+<details class="my-2"><summary><strong>Comiket 前特急対応可以嗎？</strong></summary><p>可以,會期前 24 小時特急対応(部分 SKU 適用,加收特急費用)。詳情請透過 WhatsApp 洽詢。</p></details>
+<details class="my-2"><summary><strong>DHL 直送日本需時多久？</strong></summary><p>深圳自營工廠 DHL Express 直送日本,2-4 個工作天到貨。Comiket 會場收貨及自宅收貨皆可。</p></details>
+<details class="my-2"><summary><strong>接受什麼檔案格式？</strong></summary><p>建議 Illustrator / Photoshop / PDF,CMYK 模式,解像度 300dpi 以上。免費 AI 資料檢查服務。</p></details>
+<details class="my-2"><summary><strong>可以取消或退貨嗎？</strong></summary><p>印刷開始前可取消。品質問題(色差 / 印刷瑕疵)提供免費重印或全額退款。</p></details>
 
-<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
+<p><em>智印雲 (ZprintPro) 是深圳市彩龍印刷包裝有限公司營運的國際印刷服務品牌。深圳自營工廠 DHL Express 全球 2-4 日配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>`,
       longDescriptionEn: `<h3>Specialized Printing for Doujin & Oshi-katsu Markets</h3>
 <p>Premium organic cotton tote bags for oshi-katsu, Comiket merchandise, and corporate gifting. FSC-certified 100% organic cotton supports ESG and sustainability narratives. Silk screen printing delivers crisp logos and illustrations; DTG full-color printing handles gradients and photos. A4-sized capacity adds practicality. MOQ 10 pcs accommodates small-batch needs.</p>
 
@@ -17192,9 +17192,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <table>
   <thead><tr><th>Spec</th><th>Details</th></tr></thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>Material</td><td>オーガニックコットン 100% / 12oz 厚手キャンバス</td></tr>
-    <tr class="border-b border-gray-200"><td>Size</td><td>38×42×10cm (A4 収納可) / マチ 10cm</td></tr>
-    <tr><td>Print Method</td><td>シルクスクリーン印刷 (1-3 色) / DTG フルカラー印刷</td></tr>
+    <tr class="border-b border-gray-200"><td>Material</td><td>100% organic cotton / 12oz heavyweight canvas</td></tr>
+    <tr class="border-b border-gray-200"><td>Size</td><td>38×42×10cm (fits A4) / gusset 10cm</td></tr>
+    <tr><td>Print Method</td><td>Silk screen (1-3 colors) / DTG full-color print</td></tr>
   </tbody>
 </table>
 
@@ -17272,13 +17272,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
           ja: 'eco-tote-bag.webp',
         },
         alt: {
-          'zh-hk': 'エコトートバッグ-オーガニックコットン-12oz',
+          'zh-hk': '環保托特袋-有機棉-12oz',
           en: 'eco-tote-bag-organic-cotton-12oz-canvas',
           ja: 'エコトートバッグ-オーガニックコットン-12oz',
         },
       },
       features: [
-        'コミケ前 24時間特急対応可',
+        'Comiket 前 24 小時特急対応可',
         '10 個から少部数対応',
         '深圳自社工場 + DHL Express 2-4 日日本直送',
         'FSC 認証紙材 / ISO 12647 色彩管理',
