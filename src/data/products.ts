@@ -16660,14 +16660,14 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
       slug: 'acrylic-keychain',
       category: 'japan-doujin',
       category_slug: 'japan-doujin',
-      name: '壓克力鑰匙扣',
+      name: '亞克力鑰匙扣',
       nameEn: 'Acrylic Keychain',
       nameJa: 'アクリルキーホルダー',
       title_zh: '亞克力鑰匙扣 角色造型',
-      description: '推し活応援・キャラクター形亞克力鑰匙扣。透明/白/滿版印刷対応。2mm/3mm 厚度選択可。10 個から対応、安全扣/鏈條オプション。',
+      description: 'VTuber / 動漫角色主題亞克力鑰匙扣訂製。30-80mm 任意形狀,2mm / 3mm 厚度選擇,10 件起印,可加掛繩 / 安全扣。',
       descriptionEn: 'Custom-shaped acrylic keychains for anime, VTuber, and character goods. Clear/white/full-color printing. 2mm/3mm thickness options. MOQ 10 pcs. Safety pin or chain options.',
       descriptionJa: '推し活・VTuber・キャラクターグッズ向けアクリルキーホルダー。透明/白/満版印刷対応。2mm/3mm 厚み選択可。10 個から対応、安全ピン/チェーンオプション。',
-      description_zh: '推し活応援・キャラクター形亞克力鑰匙扣。透明/白/滿版印刷対応。2mm/3mm 厚度選択可。10 個から対応、安全扣/鏈條オプション。',
+      description_zh: 'VTuber / 動漫角色主題亞克力鑰匙扣訂製。30-80mm 任意形狀,2mm / 3mm 厚度選擇,10 件起印,可加掛繩 / 安全扣。',
       longDescription: `<h3>同人誌・推し活特化印刷サービス</h3>
 <p>推し活応援・キャラクターグッズ・アクリルスタンドの小型版。完全なカスタム形状対応 — VTuber・Vtuber のロゴ、推しキャラのイラストをそのままキーホルダー化。2mm と 3mm 厚で価格・手触りが異なる。10 個から対応で、個人作家・同人イベント参加にも最適。安全ピン・チェーン・ナスカンなど付属品も選択可能。</p>
 
@@ -16825,14 +16825,14 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
       slug: 'can-badge',
       category: 'japan-doujin',
       category_slug: 'japan-doujin',
-      name: '缶バッジ印刷',
+      name: '罐型襟章印刷',
       nameEn: 'Can Badge Printing',
       nameJa: '缶バッジ印刷',
-      title_zh: '缶バッジ印刷 VTuber向け',
-      description: '57mm/76mm 缶バッジ印刷、安全扣付き。フルカラー印刷、10 個から対応。コミケ・推し活応援・企業イベント・物販用に最適。',
+      title_zh: '罐型襟章印刷 | 安全扣標準 | 智印雲',
+      description: '57mm / 76mm 標準罐型襟章,含安全扣。彩色印刷,10 件起印。Comiket / 推し活 / 活動物販首選。',
       descriptionEn: '57mm/76mm can badge printing with safety pin. Full-color print, MOQ 10 pcs. Ideal for Comiket, oshi-katsu support, corporate events, and merchandise sales.',
       descriptionJa: '57mm/76mm 缶バッジ印刷、安全ピン付き。フルカラー印刷、10 個から対応。コミケ・推し活応援・企業イベント・物販用に最適。',
-      description_zh: '57mm/76mm 缶バッジ印刷、安全扣付き。フルカラー印刷、10 個から対応。コミケ・推し活応援・企業イベント・物販用に最適。',
+      description_zh: '57mm / 76mm 標準罐型襟章,含安全扣。彩色印刷,10 件起印。Comiket / 推し活 / 活動物販首選。',
       longDescription: `<h3>同人誌・推し活特化印刷サービス</h3>
 <p>コミケ・推し活・VTuber 物販に必須の缶バッジ。57mm 標準サイズと 76mm 大判、44mm ミニの 3 サイズ展開。フルカラー印刷でイラスト・ロゴをそのまま再現。安全ピン標準装備で衣服・カバンに簡単装着。10 個から少部数対応で、個人サークルも気軽に発注可能。コミケ前特急対応で、追加発注にも迅速対応。</p>
 
@@ -16988,14 +16988,14 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
       slug: 'postcard-set',
       category: 'japan-doujin',
       category_slug: 'japan-doujin',
-      name: 'ポストカードセット',
+      name: '明信片套裝',
       nameEn: 'Postcard Set',
       nameJa: 'ポストカードセット',
-      title_zh: 'ポストカードセット 4-8枚入',
-      description: '和紙風ポストカード 4-8 枚セット。推しキャラ・VTuber・イラストコレクション。105×148mm 標準、両面印刷対応、OPP スリーブ封入。',
+      title_zh: '明信片套裝 | 和紙風藝術紙 | 智印雲',
+      description: '和紙風藝術紙明信片套裝,4 件套起印,雙面印刷。Comiket 限定贈品 / 收藏首選。',
       descriptionEn: 'Washi-style postcard sets in 4-8 piece collections. Ideal for character goods, VTuber, illustration collections. 105×148mm standard, double-sided printing, OPP sleeve packaging.',
       descriptionJa: '和紙風ポストカード 4-8 枚セット。推しキャラ・VTuber・イラストコレクション。105×148mm 標準、両面印刷対応、OPP スリーブ封入。',
-      description_zh: '和紙風ポストカード 4-8 枚セット。推しキャラ・VTuber・イラストコレクション。105×148mm 標準、両面印刷対応、OPP スリーブ封入。',
+      description_zh: '和紙風藝術紙明信片套裝,4 件套起印,雙面印刷。Comiket 限定贈品 / 收藏首選。',
       longDescription: `<h3>同人誌・推し活特化印刷サービス</h3>
 <p>推しキャラ・VTuber のイラストやサイン会配布用に最適なポストカードセット。4-8 枚のセット販売で、コレクション性が高い。和紙風アート紙採用で、和風・古風テイストの作品にもマッチ。両面印刷対応で、表面イラスト + 裏面テキスト/サインを自由にデザイン。OPP スリーブ個別包装で、傷・汚れから保護。</p>
 
