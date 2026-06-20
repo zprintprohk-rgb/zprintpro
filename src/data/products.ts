@@ -689,6 +689,131 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>How long does production take?</strong></summary><p>Standard 3-5 business days after artwork approval. Rush 1-2 day production available for orders up to 500 cards.</p></details>
 
     `,
+    longDescriptionJa: `<h3>グローバルブランド向け 箔押し名刺</h3>
+<p>智印雲 ZprintPro の箔押し名刺は、ロゴ・氏名・デザイン要素に金属光沢をプラスする高級印刷サービスです。経営者・金融・ラグジュアリーブランドのプロフェッショナル向けに最適化され、米国・英国・オーストラリア・日本などグローバル市場に対応。金箔・銀箔・rose gold 箔・銅箔・ホログラム箔の 5 種類から選択可能、350-600g のマットアート紙または非塗工紙をベースに、Heidelberg 4 色オフセット印刷 + ホットスタンプ箔押しで、シャープな箔エッジと 90% 以上の色再現性を実現します。100 枚からご注文可能、無料色校正サービス、3-5 営業日で製作完了。</p>
+
+<h3>紙質と箔押し効果の比較</h3>
+<table>
+  <thead>
+    <tr><th>紙質</th><th>克重</th><th>高級感</th><th>箔押し適合性</th><th>適用場面</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>マットアート紙</td><td>350g</td><td>★★★★</td><td>★★★★★</td><td>標準箔押し名刺、モダンブランド</td></tr>
+    <tr class="border-b border-gray-200"><td>非塗工紙</td><td>350-400g</td><td>★★★★★</td><td>★★★★★</td><td>高級箔押し、トラディショナル</td></tr>
+    <tr class="border-b border-gray-200"><td>コットン紙</td><td>400-600g</td><td>★★★★★</td><td>★★★★★</td><td>格式高いブランド、金融・士業</td></tr>
+    <tr class="border-b border-gray-200"><td>パール調カード</td><td>300-350g</td><td>★★★★★</td><td>★★★★</td><td>化粧品・美容・女性向けラグジュアリー</td></tr>
+    <tr><td>黒カード</td><td>350-400g</td><td>★★★★★</td><td>★★★★★</td><td>プレミアム黒カード、箔映え</td></tr>
+  </tbody>
+</table>
+
+<h3>箔色と仕上げオプション</h3>
+<table>
+  <thead>
+    <tr><th>箔種類</th><th>効果</th><th>追加納期</th><th>追加料金</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>金箔</td><td>クラシックな高級感、温かみのある光沢</td><td>+1 日</td><td>$$</td></tr>
+    <tr class="border-b border-gray-200"><td>銀箔</td><td>モダン、テクノロジー感</td><td>+1 日</td><td>$$</td></tr>
+    <tr class="border-b border-gray-200"><td>ローズゴールド箔</td><td>柔らかなフェミニン高級感、美容ブランド</td><td>+1 日</td><td>$$</td></tr>
+    <tr class="border-b border-gray-200"><td>銅箔</td><td>温かみのあるクラフト感、職人技</td><td>+1 日</td><td>$$</td></tr>
+    <tr><td>ホログラム箔</td><td>多色シフト、プレミアム感</td><td>+1 日</td><td>$$$</td></tr>
+  </tbody>
+</table>
+
+<h3>印刷工藝と品質管理</h3>
+<ul>
+  <li><strong>Heidelberg 4 色オフセット</strong>：業界標準機で色再現性 90% 以上、CMYK 厳密管理</li>
+  <li><strong>ホットスタンプ箔押し</strong>：温度・圧力精密制御、シャープな箔エッジ、剥がれなし</li>
+  <li><strong>ISO 12647 色彩管理</strong>：再印刷時の色ブレなし、ブランドカラー厳守</li>
+  <li><strong>両面印刷対応</strong>：表面と裏面で異なる情報掲載可能</li>
+  <li><strong>オプション：ロゴ部分エンボス</strong>：箔押しと組み合わせで立体感 UP</li>
+</ul>
+
+<h3>納期と MOQ (最低発注数量)</h3>
+<ul>
+  <li><strong>MOQ 100 枚</strong>：個人名刺・少数役員も対応、特急料金で 50 枚も対応可能</li>
+  <li><strong>標準納期 3-5 営業日</strong>：色校正確認後、本印刷開始</li>
+  <li><strong>特急 1-2 営業日</strong>：追加料金で特急対応、緊急役員名刺に最適</li>
+  <li><strong>大量発注割引</strong>：500 枚 (+15%)、1,000 枚 (+25%)、5,000 枚以上 (+35%)</li>
+</ul>
+
+<h3>FSC 認証と ISO 9001 品質保証</h3>
+<p>智印雲 ZprintPro の箔押し名刺は <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。持続可能な紙材調達と厳格な品質管理を実現。ESG 報告用の紙材トレーサビリティレポートもご提供。経営者・金融・士業・クリエイティブ業界のプロフェッショナル向けに、最適な箔押し名刺ソリューションをご提案します。</p>
+
+<h3>業界別活用事例</h3>
+<ul>
+  <li><strong>金融・投資銀行</strong>：役員・パートナーの格式高い名刺、ブランド信頼感 UP</li>
+  <li><strong>法律事務所・会計事務所</strong>：トラディショナルな箔押しで格式表現、既存顧客に安心感</li>
+  <li><strong>ラグジュアリーブランド</strong>：rose gold 箔で商品パッケージとの統一感、新商品 PR 効果</li>
+  <li><strong>クリエイティブ・広告代理店</strong>：ホログラム箔で創造性表現、クライアントへの印象 UP</li>
+  <li><strong>不動産・住宅販売</strong>：高級住宅販売担当者の名刺、信頼感の演出</li>
+  <li><strong>コンサルティングファーム</strong>：パートナー昇進時の特別版、箔押しで記念性を演出</li>
+</ul>
+
+<h3>日本向け配送と多通貨決済</h3>
+<p>智印雲 ZprintPro は深圳自社工場から DHL Express で日本全国 2-4 営業日納品。100 枚以上のご注文は送料無料で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
+
+<h3>30 秒 AI 見積もり流程</h3>
+<p>ご注文は 3 ステップで完了：</p>
+<ol>
+  <li><strong>仕様選択</strong>：紙材・箔色・サイズ・数量・両面/片面・オプションを画面上で簡単設定</li>
+  <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式対応、AI 自動チェックで出血・解像度・CMYK 色彩を事前検証</li>
+  <li><strong>確定・発注</strong>：総額表示を確認、決済方法で完了。色校正 PDF を 24 時間以内にお届け</li>
+</ol>
+
+<h3>失敗しない発注のための 5 つのポイント</h3>
+<p>ご注文前に、以下の 5 つのポイントをご確認いただくと、発注後のトラブルを未然に防げます：</p>
+<ul>
+  <li><strong>箔色を明確に指定する</strong>：金色 (gold) と rose gold では印象が大きく異なる、サンプル請求で実物確認推奨</li>
+  <li><strong>データ形式を準備する</strong>：Illustrator / InDesign / PDF 形式推奨、CMYK モード・トンボ付き、箔押しエリアは別レイヤーで明確に</li>
+  <li><strong>数量は段階割引を考慮する</strong>：500 枚 / 1,000 枚 / 5,000 枚で割引率が UP、まとめて発注がお得</li>
+  <li><strong>納期に余裕を持つ</strong>：繁忙期 (年度末 / 異動時期 3-4 月 / 年末年始) は 2 週間前発注推奨</li>
+  <li><strong>無料色校正を活用する</strong>：箔色と紙色の組み合わせを事前に確認、ミスマッチ防止</li>
+</ul>
+
+<h3>当サービスが選ばれる 5 つの理由</h3>
+<p>中国深圳の国際印刷ブランドとして、日本語・日本市場向けに最適化されたサービスを提供しています：</p>
+<ul>
+  <li><strong>日本語ネイティブ対応</strong>：日本語カスタマーサポート平日 9:00-18:00、日本向け請求書・領収書発行</li>
+  <li><strong>JPY 日本円建て明朗会計</strong>：為替変動リスクなし、経費精算しやすい</li>
+  <li><strong>30 秒 AI 見積もり</strong>：画面上で簡単設定、送料込みの総額表示で安心</li>
+  <li><strong>DHL/FedEx 直送 2-4 日</strong>：沖縄・離島も別途見積もり、全国配送対応</li>
+  <li><strong>FSC 認証 + ISO 9001</strong>：ESG 配慮、サステナブル調達 + 厳格な品質管理</li>
+</ul>
+
+<h3>配送方式と国際物流</h3>
+<p>日本向け配送に特化した 3 つのプランをご用意。ご注文数量・納期・配送先に応じて最適なプランを選択可能です：</p>
+<table>
+  <thead>
+    <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3-5 営業日</td><td>少量追加料金</td></tr>
+    <tr><td>深圳自社工場直送（事前予約制）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
+  </tbody>
+</table>
+<p>100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+
+<h3>環保認證と紙材溯源</h3>
+<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。箔押しシリーズでも大豆インクを採用し、エコシリーズでは再生紙も選択可能。ESG 配慮のブランドやサステナブル調達要件の企業向けに、紙材トレーサビリティレポートとカーボンフットプリント試算をご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
+
+<h3>深圳自社工場・事前予約制現地確認</h3>
+<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約制で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
+
+<h3>多通貨決済</h3>
+<p>Airwallex 多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人・士業事務所向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス制度対応。</p>
+
+<h3>常見問題 (FAQ)</h3>
+<details class="my-2"><summary><strong>金箔と銀箔のどちらを選ぶべきですか？</strong></summary><p>ブランドカラー・業界・印象に応じて選択します。金融・士業はトラディショナルな金箔、モダンブランド・テック系は銀箔、美容・ライフスタイルブランドは rose gold 箔が好評です。無料サンプル請求で実物をご確認いただけます。</p></details>
+<details class="my-2"><summary><strong>MOQ は何枚からですか？特急対応は可能ですか？</strong></summary><p>標準 MOQ は 100 枚です。特急料金で 50 枚にも対応可能、1-2 営業日で製作・納品できます。緊急役員名刺・新人入社時の名刺にも迅速対応いたします。</p></details>
+<details class="my-2"><summary><strong>既存のロゴデータをそのまま箔押しできますか？</strong></summary><p>はい。Illustrator / InDesign / PDF 形式でロゴデータをお送りください。箔押しエリアは別レイヤーで明確に分けていただきます。無料 AI データチェックで箔押し適性を事前検証いたします。</p></details>
+<details class="my-2"><summary><strong>両面印刷で表面と裏面で異なる仕上げが可能ですか？</strong></summary><p>はい。両面とも箔押し可能、片面箔押し + もう片面通常印刷、片面箔押し + もう片面エンボスなど、組み合わせ自由です。データ入稿時にご指定ください。</p></details>
+<details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>深圳自社工場から DHL Express で 2-3 営業日納品、沖縄・離島も 2-4 営業日。追跡番号は発送後 24 時間以内にお届け。100 枚以上のご注文は送料無料で全国配送対応。</p></details>
+<details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能です。品質問題（箔剥がれ・色ズレ）は無料で再印刷または全額返金いたします。100% 満足保証でご提供します。</p></details>
+
+<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
     features: [
       '【85×54mm標準尺寸】兼容全球名片夾與卡套',
       '【四色柯式印刷】網點細膩，色彩飽和度≥90%',
@@ -881,6 +1006,128 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>Can I combine spot UV with foil or emboss?</strong></summary><p>Yes. Spot UV + foil is the most popular combo for ultra-premium cards. Spot UV + emboss adds dimensional depth. Both add 2 days to production.</p></details>
 
 `,
+    longDescriptionJa: `<h3>グローバルブランド向け スポット UV 名刺</h3>
+<p>智印雲 ZprintPro のスポット UV 名刺は、マット調の用紙ベースにロゴ・氏名・デザイン要素を部分的に UV グロス加工することで、光沢コントラストで立体感を演出する高級印刷サービスです。クリエイティブエージェンシー・デザイナー・テック企業の創業者・モダンブランド向けに最適化。米国・英国・オーストラリア・日本などグローバル市場に対応。100 枚からご注文可能、3-5 営業日製作、無料色校正サービス込み。</p>
+
+<h3>紙質と UV 効果の比較</h3>
+<table>
+  <thead>
+    <tr><th>紙質</th><th>UV コントラスト</th><th>視覚効果</th><th>コスト</th><th>適用場面</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>マットアート 350g</td><td>★★★★★</td><td>★★★★★</td><td>★★★★</td><td>標準スポット UV 名刺、モダンブランド</td></tr>
+    <tr class="border-b border-gray-200"><td>マットアート 400g</td><td>★★★★★</td><td>★★★★★</td><td>★★★</td><td>プレミアムスポット UV、デザイナー向け</td></tr>
+    <tr class="border-b border-gray-200"><td>ソフトタッチマット 350g</td><td>★★★★★</td><td>★★★★★</td><td>★★★</td><td>ラグジュアリー触感体験</td></tr>
+    <tr class="border-b border-gray-200"><td>非塗工紙 350g</td><td>★★★★</td><td>★★★★</td><td>★★★★</td><td>ナチュラル感、エコブランド</td></tr>
+    <tr><td>黒カード 350-400g</td><td>★★★★★</td><td>★★★★★</td><td>★★★</td><td>プレミアム黒カード、UV 映え</td></tr>
+  </tbody>
+</table>
+
+<h3>UV パターンと組み合わせオプション</h3>
+<table>
+  <thead>
+    <tr><th>パターン</th><th>効果</th><th>追加納期</th><th>追加料金</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>ロゴスポット UV</td><td>グロス加工ロゴ、クラシカル技法</td><td>+1 日</td><td>$</td></tr>
+    <tr class="border-b border-gray-200"><td>氏名スポット UV</td><td>グロス加工氏名、触覚階層</td><td>+1 日</td><td>$</td></tr>
+    <tr class="border-b border-gray-200"><td>パターン・テクスチャ UV</td><td>幾何学・抽象・ブランドパターン</td><td>+1 日</td><td>$</td></tr>
+    <tr class="border-b border-gray-200"><td>全面ブリード UV 画像</td><td>写真風グロスアクセント</td><td>+1 日</td><td>$$</td></tr>
+    <tr><td>スポット UV + エンボス</td><td>グロス + 立体感</td><td>+2 日</td><td>$$$</td></tr>
+  </tbody>
+</table>
+
+<h3>印刷工藝と品質管理</h3>
+<ul>
+  <li><strong>UV コーティング精密制御</strong>：選択的 UV 照射でマット部分と光沢部分の境界を鮮明に</li>
+  <li><strong>Heidelberg 4 色オフセット</strong>：業界標準機で色再現性 90% 以上</li>
+  <li><strong>ISO 12647 色彩管理</strong>：ブランドカラー厳守、再印刷時の色ブレなし</li>
+  <li><strong>両面スポット UV 対応</strong>：表面と裏面の両方に UV 加工可能</li>
+  <li><strong>オプション：箔押しと組み合わせ</strong>：スポット UV + 箔押しで究極のハイエンド名刺</li>
+</ul>
+
+<h3>納期と MOQ</h3>
+<ul>
+  <li><strong>MOQ 100 枚</strong>：個人名刺・小規模チームも対応、特急料金で 50 枚も対応可能</li>
+  <li><strong>標準納期 3-5 営業日</strong>：色校正確認後、本印刷開始</li>
+  <li><strong>特急 1-2 営業日</strong>：追加料金で特急対応</li>
+  <li><strong>大量発注割引</strong>：500 枚 (+15%)、1,000 枚 (+25%)、5,000 枚以上 (+35%)</li>
+</ul>
+
+<h3>FSC 認証と ISO 9001 品質保証</h3>
+<p>智印雲 ZprintPro のスポット UV 名刺は <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。持続可能な紙材調達と厳格な品質管理を実現。クリエイティブ業界・テック業界・モダンブランド向けに、最適なスポット UV 名刺ソリューションをご提案します。</p>
+
+<h3>業界別活用事例</h3>
+<ul>
+  <li><strong>クリエイティブエージェンシー</strong>：クライアントへの第一印象で差をつける、モダンな UV アクセント</li>
+  <li><strong>テックスタートアップ</strong>：プロダクトブランドと統一感のある UV 名刺、ロゴ強調効果</li>
+  <li><strong>ファッションデザイナー</strong>：シーズンロゴを UV で強調、コレクションブックへの同梱に最適</li>
+  <li><strong>建築家・インテリアデザイナー</strong>：ポートレートプロジェクトの名刺、視覚的階層を UV で表現</li>
+  <li><strong>建築設計事務所</strong>：プロジェクト名を UV で強調、ポートフォリオと同送</li>
+  <li><strong>ライフスタイルブランド</strong>：ナチュラル + モダンのハイブリッド、エコブランドとの両立</li>
+</ul>
+
+<h3>日本向け配送と多通貨決済</h3>
+<p>智印雲 ZprintPro は深圳自社工場から DHL Express で日本全国 2-4 営業日納品。100 枚以上のご注文は送料無料で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
+
+<h3>30 秒 AI 見積もり流程</h3>
+<p>ご注文は 3 ステップで完了：</p>
+<ol>
+  <li><strong>仕様選択</strong>：紙質・UV パターン・サイズ・数量・両面/片面・オプションを画面上で簡単設定</li>
+  <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式対応、AI 自動チェックで UV エリアを事前検証</li>
+  <li><strong>確定・発注</strong>：総額表示を確認、決済方法で完了。色校正 PDF を 24 時間以内にお届け</li>
+</ol>
+
+<h3>失敗しない発注のための 5 つのポイント</h3>
+<ul>
+  <li><strong>UV エリアを明確に指定する</strong>：データ入稿時に UV 加工エリアを別レイヤーで明確に、CMYK モード・トンボ付き</li>
+  <li><strong>紙質と UV の相性を確認する</strong>：非塗工紙は UV コントラストがやや弱め、マットアート・黒カードで効果最大</li>
+  <li><strong>数量は段階割引を考慮する</strong>：500 枚 / 1,000 枚 / 5,000 枚で割引率が UP</li>
+  <li><strong>納期に余裕を持つ</strong>：繁忙期 (3-4 月 / 12 月) は 2 週間前発注推奨</li>
+  <li><strong>無料色校正を活用する</strong>：UV 部分とマット部分のコントラストを事前に確認</li>
+</ul>
+
+<h3>当サービスが選ばれる 5 つの理由</h3>
+<ul>
+  <li><strong>日本語ネイティブ対応</strong>：日本語カスタマーサポート平日 9:00-18:00、日本向け請求書・領収書発行</li>
+  <li><strong>JPY 日本円建て明朗会計</strong>：為替変動リスクなし、経費精算しやすい</li>
+  <li><strong>30 秒 AI 見積もり</strong>：画面上で簡単設定、送料込みの総額表示で安心</li>
+  <li><strong>DHL/FedEx 直送 2-4 日</strong>：沖縄・離島も別途見積もり、全国配送対応</li>
+  <li><strong>FSC 認証 + ISO 9001</strong>：ESG 配慮、サステナブル調達 + 厳格な品質管理</li>
+</ul>
+
+<h3>配送方式と国際物流</h3>
+<table>
+  <thead>
+    <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3-5 営業日</td><td>少量追加料金</td></tr>
+    <tr><td>深圳自社工場直送（事前予約制）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
+  </tbody>
+</table>
+<p>100 枚以上のご注文は送料無料で全国配送、日本語カスタマーサポートが配送状況を確認します。</p>
+
+<h3>環保認證と紙材溯源</h3>
+<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。UV 加工でも水性インクと低 VOC コーティングを採用。ESG 配慮のブランド向けに、紙材トレーサビリティレポートをご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
+
+<h3>深圳自社工場・事前予約制現地確認</h3>
+<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約制で現地確認・紙質サンプル比較・UV 効果実物確認に対応（日本語スタッフ同席可・1 週間前予約）。日本向け発送の集荷拠点。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
+
+<h3>多通貨決済</h3>
+<p>Airwallex 多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い対応、日本語請求書・領収書発行対応、インボイス制度対応。</p>
+
+<h3>常見問題 (FAQ)</h3>
+<details class="my-2"><summary><strong>スポット UV と箔押しの違いは何ですか？</strong></summary><p>スポット UV は光沢のある樹脂コーティングで、立体感は出ませんがマットと光沢のコントラストが鮮明。箔押しは金属光沢で、より格式高い印象。金箔・銀箔・rose gold 箔など色選択肢豊富。組み合わせることで究極のハイエンド名刺も実現可能です。</p></details>
+<details class="my-2"><summary><strong>複雑なデザインでも UV 加工できますか？</strong></summary><p>はい。グラデーション・写真・細かいパターンも対応可能ですが、UV エリアが細かすぎると効果が弱まります。データ入稿時に UV エリアを別レイヤーで明確に分離してください。無料 AI データチェックで UV 適性を事前検証いたします。</p></details>
+<details class="my-2"><summary><strong>MOQ は何枚からですか？</strong></summary><p>標準 MOQ は 100 枚です。特急料金で 50 枚にも対応可能、1-2 営業日で製作・納品できます。</p></details>
+<details class="my-2"><summary><strong>両面とも UV 加工できますか？</strong></summary><p>はい。両面スポット UV、片面 UV + もう片面通常印刷、片面 UV + もう片面箔押しなど、自由な組み合わせが可能です。データ入稿時にご指定ください。</p></details>
+<details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>深圳自社工場から DHL Express で 2-3 営業日納品、沖縄・離島も 2-4 営業日。100 枚以上のご注文は送料無料で全国配送対応。</p></details>
+<details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能。品質問題 (UV 剥がれ・色ズレ) は無料で再印刷または全額返金、100% 満足保証。</p></details>
+
+<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
     features: [
       '【85×54mm標準尺寸】兼容全球名片夾與卡套',
       '【四色柯式印刷】網點細膩，色彩飽和度≥90%',
@@ -1071,6 +1318,126 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>How long does production take?</strong></summary><p>Standard 2-3 business days after artwork approval (no special finishes). Rush 1-day available for orders up to 500 cards.</p></details>
 
 `,
+    longDescriptionJa: `<h3>グローバルブランド向け マットラミネート名刺</h3>
+<p>智印雲 ZprintPro のマットラミネート名刺は、モダンブランドの定番フォーマット。ソフトタッチのマットラミネート加工で指紋が付きにくく、プレミアムな手触りと共に上品な色彩再現を実現します。デザイナー・エージェンシー・金融プロフェッショナル・モダンブランド向けに最適化。300-400g アートカードまたは非塗工紙に 4 色 CMYK 印刷。100 枚から対応、2-3 営業日製作、無料色校正込み。</p>
+
+<h3>紙質とラミネーションの比較</h3>
+<table>
+  <thead>
+    <tr><th>紙質</th><th>マット感</th><th>耐久性</th><th>コスト</th><th>適用場面</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>マットアート 300g</td><td>★★★★</td><td>★★★★</td><td>★★★★★</td><td>標準マット名刺、モダンブランド</td></tr>
+    <tr class="border-b border-gray-200"><td>マットアート 350g</td><td>★★★★★</td><td>★★★★</td><td>★★★★</td><td>プレミアムマット、デザインエージェンシー</td></tr>
+    <tr class="border-b border-gray-200"><td>マットアート 400g</td><td>★★★★★</td><td>★★★★★</td><td>★★★</td><td>ラグジュアリーマット、金融・士業</td></tr>
+    <tr class="border-b border-gray-200"><td>ソフトタッチ 350g</td><td>★★★★★</td><td>★★★★★</td><td>★★★</td><td>ベルベット触感、プレミアム触感</td></tr>
+    <tr><td>非塗工紙 350-400g</td><td>★★★★</td><td>★★★</td><td>★★★★</td><td>ナチュラル感、エコ志向</td></tr>
+  </tbody>
+</table>
+
+<h3>仕上げと組み合わせオプション</h3>
+<table>
+  <thead>
+    <tr><th>仕上げ</th><th>効果</th><th>追加納期</th><th>追加料金</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>マットラミネート (片面)</td><td>ソフトタッチ、指紋防止</td><td>+0 日</td><td>$</td></tr>
+    <tr class="border-b border-gray-200"><td>マットラミネート (両面)</td><td>全面ソフトタッチ、プレミアム感</td><td>+0 日</td><td>$</td></tr>
+    <tr class="border-b border-gray-200"><td>ソフトタッチベルベットラミ</td><td>ベルベットテクスチャ、超プレミアム</td><td>+0 日</td><td>$$</td></tr>
+    <tr class="border-b border-gray-200"><td>マット + スポット UV ロゴ</td><td>マットベース + グロスロゴコントラスト</td><td>+1 日</td><td>$$</td></tr>
+    <tr><td>マット + 箔押しロゴ</td><td>マット + 金属光沢ロゴ</td><td>+1 日</td><td>$$</td></tr>
+  </tbody>
+</table>
+
+<h3>印刷工藝と品質管理</h3>
+<ul>
+  <li><strong>BOPP マットラミネート</strong>：両面接着、引っ掻き耐性 UP、長期使用でも色褪せなし</li>
+  <li><strong>Heidelberg 4 色オフセット</strong>：業界標準機で色再現性 90% 以上</li>
+  <li><strong>ISO 12647 色彩管理</strong>：ブランドカラー厳守、再印刷時の色ブレなし</li>
+  <li><strong>両面印刷対応</strong>：標準両面印刷、表面と裏面で異なる情報掲載可能</li>
+  <li><strong>オプション：角丸加工</strong>：R3mm/R5mm/R10mm 角丸、ソフトな印象</li>
+</ul>
+
+<h3>納期と MOQ</h3>
+<ul>
+  <li><strong>MOQ 100 枚</strong>：個人名刺・小規模チームも対応、特急料金で 50 枚も対応可能</li>
+  <li><strong>標準納期 2-3 営業日</strong>：ラミネート加工込みで短納期</li>
+  <li><strong>特急 1 営業日</strong>：追加料金で特急対応</li>
+  <li><strong>大量発注割引</strong>：500 枚 (+15%)、1,000 枚 (+25%)、5,000 枚以上 (+35%)</li>
+</ul>
+
+<h3>FSC 認証と ISO 9001 品質保証</h3>
+<p>智印雲 ZprintPro のマットラミネート名刺は <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。マットラミネートは BOPP フィルムで紙を保護、耐久性と上品な手触りを両立。ESG 報告用の紙材トレーサビリティレポートもご提供。デザイナー・金融・士業・クリエイティブ業界のプロフェッショナル向けに、最適なマットラミネート名刺ソリューションをご提案します。</p>
+
+<h3>業界別活用事例</h3>
+<ul>
+  <li><strong>デザインエージェンシー</strong>：クライアントへの第一印象で差をつける、洗練されたマット感</li>
+  <li><strong>金融機関・投資銀行</strong>：役員・パートナーの格式高い名刺、信頼感の演出</li>
+  <li><strong>法律事務所・会計事務所</strong>：トラディショナルなマットで格式表現</li>
+  <li><strong>スタートアップ・ベンチャー</strong>：モダンで誠実な印象、コストパフォーマンス高</li>
+  <li><strong>コンサルティングファーム</strong>：パートナー昇進時の特別版、マット + 箔押しで記念性</li>
+  <li><strong>ライフスタイルブランド</strong>：サステナブル + モダン、エコブランドとの両立</li>
+</ul>
+
+<h3>日本向け配送と多通貨決済</h3>
+<p>智印雲 ZprintPro は深圳自社工場から DHL Express で日本全国 2-4 営業日納品。100 枚以上のご注文は送料無料で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定。</p>
+
+<h3>30 秒 AI 見積もり流程</h3>
+<ol>
+  <li><strong>仕様選択</strong>：紙質・ラミネーション・サイズ・数量・両面/片面・オプションを画面上で簡単設定</li>
+  <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式対応、AI 自動チェックで事前検証</li>
+  <li><strong>確定・発注</strong>：総額表示を確認、決済方法で完了。色校正 PDF を 24 時間以内にお届け</li>
+</ol>
+
+<h3>失敗しない発注のための 5 つのポイント</h3>
+<ul>
+  <li><strong>ラミネーションの片面/両面を決める</strong>：両面ラミネートで全面保護、片面は片側のみ</li>
+  <li><strong>データ形式を準備する</strong>：Illustrator / InDesign / PDF 形式推奨、CMYK モード・トンボ付き</li>
+  <li><strong>数量は段階割引を考慮する</strong>：500 枚 / 1,000 枚 / 5,000 枚で割引率が UP</li>
+  <li><strong>納期に余裕を持つ</strong>：繁忙期 (3-4 月 / 12 月) は 2 週間前発注推奨</li>
+  <li><strong>無料色校正を活用する</strong>：マットラミネート後の色を事前に確認</li>
+</ul>
+
+<h3>当サービスが選ばれる 5 つの理由</h3>
+<ul>
+  <li><strong>日本語ネイティブ対応</strong>：日本語カスタマーサポート平日 9:00-18:00</li>
+  <li><strong>JPY 日本円建て明朗会計</strong>：為替変動リスクなし</li>
+  <li><strong>30 秒 AI 見積もり</strong>：画面上で簡単設定</li>
+  <li><strong>DHL/FedEx 直送 2-4 日</strong>：全国配送対応</li>
+  <li><strong>FSC 認証 + ISO 9001</strong>：ESG 配慮 + 厳格な品質管理</li>
+</ul>
+
+<h3>配送方式と国際物流</h3>
+<table>
+  <thead>
+    <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3-5 営業日</td><td>少量追加料金</td></tr>
+    <tr><td>深圳自社工場直送（事前予約制）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
+  </tbody>
+</table>
+
+<h3>環保認證と紙材溯源</h3>
+<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得。BOPP ラミネートでも低環境負荷フィルムを採用。ESG 配慮のブランド向けに、紙材トレーサビリティレポートをご提供。3 年連続で「グリーン印刷パートナー」認証を取得、SDGs 永続発展目標にも貢献します。</p>
+
+<h3>深圳自社工場・事前予約制現地確認</h3>
+<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約制で現地確認・紙質サンプル比較・ラミネート実物確認に対応（日本語スタッフ同席可・1 週間前予約）。</p>
+
+<h3>多通貨決済</h3>
+<p>Airwallex 多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い対応、日本語請求書・領収書発行対応、インボイス制度対応。</p>
+
+<h3>常見問題 (FAQ)</h3>
+<details class="my-2"><summary><strong>マットとグロスラミネートのどちらを選ぶべきですか？</strong></summary><p>上品でモダンな印象はマットラミネート、鮮やかで色鮮やかな印象はグロスラミネート。モダンブランド・金融・士業はマット、写真・イラスト多用はグロスが定番です。両面ラミネートで全面保護、片面のみならコスト削減可能。</p></details>
+<details class="my-2"><summary><strong>MOQ は何枚からですか？</strong></summary><p>標準 MOQ は 100 枚です。特急料金で 50 枚にも対応可能、最短 1 営業日で製作・納品できます。</p></details>
+<details class="my-2"><summary><strong>マットラミネートの上から書き込みできますか？</strong></summary><p>マットラミネート表面は油性ペンで書き込み可能ですが、剥がれやすいため推奨しません。裏面 (ラミネート無し) へのメモは可能。</p></details>
+<details class="my-2"><summary><strong>マット + スポット UV の組み合わせは可能ですか？</strong></summary><p>はい。マットラミネートをベースにして、ロゴ部分のみスポット UV で光沢を加える組み合わせが好評です。追加納期 +1 日、追加料金 $$ ですが、究極のハイエンド名刺として高い訴求力があります。</p></details>
+<details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>深圳自社工場から DHL Express で 2-3 営業日納品、100 枚以上のご注文は送料無料で全国配送対応。</p></details>
+<details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能。品質問題 (ラミネート剥がれ・色ズレ) は無料で再印刷または全額返金、100% 満足保証。</p></details>
+
+<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
     features: [
       '【85×54mm標準尺寸】兼容全球名片夾與卡套',
       '【四色柯式印刷】網點細膩，色彩飽和度≥90%',
@@ -1263,6 +1630,126 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>Can I combine rounded corners with foil or spot UV?</strong></summary><p>Yes. Rounded corners + spot UV logo or foil logo are popular combinations. The rounded corner softens the geometry while the spot UV/foil adds premium accent. Add 1 day to production.</p></details>
 
 `,
+    longDescriptionJa: `<h3>モダンブランド向け 角丸名刺</h3>
+<p>智印雲 ZprintPro の角丸名刺は、R3mm または R5mm の柔らかい角丸加工でモダンテイストを表現する名刺印刷サービスです。クリエイティブエージェンシー・テックスタートアップ・デザイナー・ライフスタイルブランド向けに最適化。米国・英国・オーストラリア・日本などグローバル市場に対応。300-400g マット・グロス・非塗工紙に 4 色 CMYK 印刷。100 枚から対応、2-3 営業日製作、無料色校正込み。</p>
+
+<h3>紙質と角丸半径の比較</h3>
+<table>
+  <thead>
+    <tr><th>紙質</th><th>最適角丸半径</th><th>視覚スタイル</th><th>コスト</th><th>適用場面</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>マットアート 350g</td><td>R3-R5mm</td><td>モダンスoft</td><td>★★★★</td><td>デザイナー、クリエイティブエージェンシー</td></tr>
+    <tr class="border-b border-gray-200"><td>グロスアート 350g</td><td>R3-R10mm</td><td>sleek モダン</td><td>★★★★</td><td>テックブランド、スタートアップ</td></tr>
+    <tr class="border-b border-gray-200"><td>ソフトタッチ 350g</td><td>R5mm</td><td>プレミアムsoft</td><td>★★★</td><td>プレミアムライフスタイル、美容</td></tr>
+    <tr class="border-b border-gray-200"><td>非塗工紙 350-400g</td><td>R3-R5mm</td><td>ナチュラルsoft</td><td>★★★★</td><td>エコブランド、職人技</td></tr>
+    <tr><td>黒カード 350-400g</td><td>R3-R5mm</td><td>プレミアムdark</td><td>★★★</td><td>ラグジュアリーブランド、モダンミニマリズム</td></tr>
+  </tbody>
+</table>
+
+<h3>角丸と仕上げオプション</h3>
+<table>
+  <thead>
+    <tr><th>半径</th><th>効果</th><th>追加納期</th><th>追加料金</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>標準 (角丸なし)</td><td>シャープな 90° 角、クラシカル</td><td>+0 日</td><td>—</td></tr>
+    <tr class="border-b border-gray-200"><td>R3mm</td><td>微妙な柔らかさ、モダン</td><td>+0 日</td><td>$</td></tr>
+    <tr class="border-b border-gray-200"><td>R5mm</td><td>明確なsoft曲線、プレミアム</td><td>+0 日</td><td>$</td></tr>
+    <tr class="border-b border-gray-200"><td>R10mm</td><td>強い曲線、モダンライフスタイル</td><td>+0 日</td><td>$</td></tr>
+    <tr><td>カスタム半径 (5-15mm)</td><td>独自ブランド形状</td><td>+0 日</td><td>$$</td></tr>
+  </tbody>
+</table>
+
+<h3>印刷工藝と品質管理</h3>
+<ul>
+  <li><strong>精密角丸加工</strong>：特殊金型でクリーンなエッジ、紙の繊維崩れなし</li>
+  <li><strong>Heidelberg 4 色オフセット</strong>：業界標準機で色再現性 90% 以上</li>
+  <li><strong>ISO 12647 色彩管理</strong>：ブランドカラー厳守、再印刷時の色ブレなし</li>
+  <li><strong>両面印刷対応</strong>：表面と裏面で異なる情報掲載可能</li>
+  <li><strong>オプション：マット/グロスラミネート</strong>：角丸 + ラミネートで耐久性 UP</li>
+</ul>
+
+<h3>納期と MOQ</h3>
+<ul>
+  <li><strong>MOQ 100 枚</strong>：個人名刺・小規模チームも対応、特急料金で 50 枚も対応可能</li>
+  <li><strong>標準納期 2-3 営業日</strong>：角丸加工込みで短納期</li>
+  <li><strong>特急 1 営業日</strong>：追加料金で特急対応</li>
+  <li><strong>大量発注割引</strong>：500 枚 (+15%)、1,000 枚 (+25%)、5,000 枚以上 (+35%)</li>
+</ul>
+
+<h3>FSC 認証と ISO 9001 品質保証</h3>
+<p>智印雲 ZprintPro の角丸名刺は <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。角丸加工はカード寿命を延ばし、角の摩耗を防止。ESG 報告用の紙材トレーサビリティレポートもご提供。デザイナー・テック・ライフスタイル業界のプロフェッショナル向けに、最適な角丸名刺ソリューションをご提案します。</p>
+
+<h3>業界別活用事例</h3>
+<ul>
+  <li><strong>テックスタートアップ</strong>：モダンプロダクトブランドとの統一感、ピッチ資料への同梱に最適</li>
+  <li><strong>クリエイティブエージェンシー</strong>：クライアントへの第一印象で差をつける、洗練された印象</li>
+  <li><strong>ファッションブランド</strong>：シーズンコレクションとの統一感、ルックブック同梱</li>
+  <li><strong>ライフスタイルブランド</strong>：サステナブル + モダンの両立、エコブランドとの親和性</li>
+  <li><strong>カフェ・レストラン</strong>：メニューブランドとの統一感、SNS 用の写真映え</li>
+  <li><strong>建築家・デザイナー</strong>：プロジェクト名を角丸で強調、ポートフォリオとの統一感</li>
+</ul>
+
+<h3>日本向け配送と多通貨決済</h3>
+<p>智印雲 ZprintPro は深圳自社工場から DHL Express で日本全国 2-4 営業日納品。100 枚以上のご注文は送料無料で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定。</p>
+
+<h3>30 秒 AI 見積もり流程</h3>
+<ol>
+  <li><strong>仕様選択</strong>：紙質・角丸半径・サイズ・数量・両面/片面・オプションを画面上で簡単設定</li>
+  <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式対応、AI 自動チェックで事前検証</li>
+  <li><strong>確定・発注</strong>：総額表示を確認、決済方法で完了。色校正 PDF を 24 時間以内にお届け</li>
+</ol>
+
+<h3>失敗しない発注のための 5 つのポイント</h3>
+<ul>
+  <li><strong>角丸半径を決める</strong>：R3mm は微妙、R5mm は明確、R10mm はライフスタイル系に最適</li>
+  <li><strong>データ形式を準備する</strong>：Illustrator / InDesign / PDF 形式推奨、CMYK モード・トンボ付き</li>
+  <li><strong>数量は段階割引を考慮する</strong>：500 枚 / 1,000 枚 / 5,000 枚で割引率が UP</li>
+  <li><strong>納期に余裕を持つ</strong>：繁忙期 (3-4 月 / 12 月) は 2 週間前発注推奨</li>
+  <li><strong>無料色校正を活用する</strong>：角丸後のサイズ感を事前に確認</li>
+</ul>
+
+<h3>当サービスが選ばれる 5 つの理由</h3>
+<ul>
+  <li><strong>日本語ネイティブ対応</strong>：日本語カスタマーサポート平日 9:00-18:00</li>
+  <li><strong>JPY 日本円建て明朗会計</strong>：為替変動リスクなし</li>
+  <li><strong>30 秒 AI 見積もり</strong>：画面上で簡単設定</li>
+  <li><strong>DHL/FedEx 直送 2-4 日</strong>：全国配送対応</li>
+  <li><strong>FSC 認証 + ISO 9001</strong>：ESG 配慮 + 厳格な品質管理</li>
+</ul>
+
+<h3>配送方式と国際物流</h3>
+<table>
+  <thead>
+    <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3-5 営業日</td><td>少量追加料金</td></tr>
+    <tr><td>深圳自社工場直送（事前予約制）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
+  </tbody>
+</table>
+
+<h3>環保認證と紙材溯源</h3>
+<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得。角丸加工は廃棄ロスも少なく、エコフレンドリーな加工方法。ESG 配慮のブランド向けに、紙材トレーサビリティレポートをご提供。3 年連続で「グリーン印刷パートナー」認証を取得、SDGs 永続発展目標にも貢献します。</p>
+
+<h3>深圳自社工場・事前予約制現地確認</h3>
+<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約制で現地確認・紙質サンプル比較・角丸実物確認に対応（日本語スタッフ同席可・1 週間前予約）。</p>
+
+<h3>多通貨決済</h3>
+<p>Airwallex 多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い対応、日本語請求書・領収書発行対応、インボイス制度対応。</p>
+
+<h3>常見問題 (FAQ)</h3>
+<details class="my-2"><summary><strong>角丸名刺と通常名刺の違いは何ですか？</strong></summary><p>角丸名刺は R3mm/R5mm/R10mm の柔らかい角丸加工で、モダンで優しい印象を与えます。通常名刺は 90° のシャープな角で、トラディショナルで格式高い印象。テック・ライフスタイル・クリエイティブ系は角丸、金融・士業は通常が定番です。</p></details>
+<details class="my-2"><summary><strong>MOQ は何枚からですか？</strong></summary><p>標準 MOQ は 100 枚です。特急料金で 50 枚にも対応可能、最短 1 営業日で製作・納品できます。</p></details>
+<details class="my-2"><summary><strong>角丸とラミネートは併用できますか？</strong></summary><p>はい。角丸加工 + マット/グロスラミネート併用で、耐久性 + モダンデザインを両立。両面ラミネートで全面保護、片面のみならコスト削減可能。</p></details>
+<details class="my-2"><summary><strong>角丸名刺は財布に入れやすいですか？</strong></summary><p>R5mm 以下の角丸であれば、名刺入れ・カードケースにスムーズに収納可能。R10mm は曲線が大きいため、収納性は若干低下します。R3mm-R5mm が最もバランス良い選択です。</p></details>
+<details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>深圳自社工場から DHL Express で 2-3 営業日納品、100 枚以上のご注文は送料無料で全国配送対応。</p></details>
+<details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能。品質問題 (角丸精度・色ズレ) は無料で再印刷または全額返金、100% 満足保証。</p></details>
+
+<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
     features: [
       '【85×54mm標準尺寸】兼容全球名片夾與卡套',
       '【四色柯式印刷】網點細膩，色彩飽和度≥90%',
@@ -1902,6 +2389,132 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>Can I get it in custom shapes?</strong></summary><p>Yes. Any shape from 10×10mm to 500×500mm. Circles, squares, ovals, stars, hearts, and irregular outlines are all supported. Submit your die-cut line in AI or PDF format.</p></details>
 <details class="my-2"><summary><strong>Do you offer variable data printing?</strong></summary><p>Yes. Per-sticker QR codes, serial numbers, or sequential numbering for rental tracking, event check-in, and short-term campaigns. Submit an Excel/CSV file with the data.</p></details>
 
+`,
+    longDescriptionJa: `<h3>グローバルブランド向け 再剥離ステッカー</h3>
+<p>智印雲 ZprintPro の再剥離ステッカー（剥がせるステッカー）は、貼付後 90 日以内に糊残らずクリーンに剥がせる短期キャンペーン・レンタル機器・イベントバッジ・ウィンドウデカール専用設計のラベル印刷サービスです。ビニール基材または PP 基材に再剥離アクリル粘着剤を組み合せ、ガラス・塗装壁面・電子機器・平滑パッケージにしっかり密着し、貼付から 90 日以内に表面を傷つけず綺麗に除去可能。100 枚からご注文可能、500 枚未満のロットは当日デジタル色校正を無料ご提供いたします。</p>
+
+<h3>基材と粘着剤の比較</h3>
+<table>
+  <thead>
+    <tr><th>基材</th><th>再剥離性</th><th>糊残り</th><th>屋外耐久</th><th>適用場面</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>ビニール + 再剥離粘着剤</td><td>★★★★★</td><td>★★★★★</td><td>90 日間剥離可能</td><td>ウィンドウデカール、壁面アート、イベント看板</td></tr>
+    <tr class="border-b border-gray-200"><td>PP 合成紙 + 弱粘着</td><td>★★★★</td><td>★★★★</td><td>60 日間剥離可能</td><td>電子機器、レンタル機器、商品サンプル</td></tr>
+    <tr class="border-b border-gray-200"><td>透明 PET + 静電吸着</td><td>★★★★★</td><td>★★★★★</td><td>屋内専用</td><td>ガラス専用 再利用可能デカール</td></tr>
+    <tr><td>上質紙 + 再剥離ゴム</td><td>★★★</td><td>★★★★</td><td>30 日間剥離可能</td><td>プライスラベル、短期キャンペーン</td></tr>
+  </tbody>
+</table>
+
+<h3>ラミネーションと仕上げオプション</h3>
+<table>
+  <thead>
+    <tr><th>仕上げ</th><th>効果</th><th>追加納期</th><th>追加料金</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>マットラミネーション</td><td>ソフトタッチ、反射防止</td><td>+0 日</td><td>$</td></tr>
+    <tr class="border-b border-gray-200"><td>グロスラミネーション</td><td>高光沢、色彩鮮やか</td><td>+0 日</td><td>$</td></tr>
+    <tr class="border-b border-gray-200"><td>型抜き形状</td><td>カスタム形状、キスカット対応</td><td>+1 日</td><td>$</td></tr>
+    <tr class="border-b border-gray-200"><td>静電吸着（粘着剤なし）</td><td>再利用可能、ガラス上で位置調整可</td><td>+0 日</td><td>$$</td></tr>
+    <tr><td>可変 QR / シリアル番号</td><td>ロット管理、偽造防止</td><td>+1 日</td><td>$$</td></tr>
+  </tbody>
+</table>
+
+<h3>印刷工藝と品質管理</h3>
+<ul>
+  <li><strong>Heidelberg 4 色オフセット</strong>：業界標準機で色再現性 90% 以上、CMYK 厳密管理</li>
+  <li><strong>再剥離アクリル粘着剤</strong>：温度・湿度調整下で精密コーティング、剥がれ・浮き・端めくれなし</li>
+  <li><strong>ISO 12647 色彩管理</strong>：再印刷時の色ブレなし、ブランドカラー厳守</li>
+  <li><strong>片面 / 両面印刷対応</strong>：製品ラベル・キャンペーンステッカーなど用途別に対応</li>
+  <li><strong>オプション：型抜きカスタム形状</strong>：10×10mm〜500×500mm まで対応、丸・四角・星・ハート・ロゴ輪郭</li>
+</ul>
+
+<h3>納期と MOQ（最低発注数量）</h3>
+<ul>
+  <li><strong>MOQ 100 枚</strong>：短期キャンペーン・少量テスト発注も対応、特急料金でさらに小ロットも対応可能</li>
+  <li><strong>標準納期 5-7 営業日</strong>：色校正確認後、本印刷開始</li>
+  <li><strong>特急 2-3 営業日</strong>：追加料金で特急対応、緊急イベント・展示会に最適</li>
+  <li><strong>大量発注割引</strong>：500 枚 (+15%)、1,000 枚 (+25%)、5,000 枚以上 (+35%)</li>
+  <li><strong>当日デジタル色校正</strong>：500 枚未満のロットは AI データ受領後 24 時間以内に PDF 校正納品</li>
+</ul>
+
+<h3>FSC 認証と ISO 9001 品質保証</h3>
+<p>智印雲 ZprintPro の再剥離ステッカーは <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。ビニール基材も並行して FSC 認証取得メーカーの素材を優先採用、持続可能な紙材調達と厳格な品質管理を実現。ESG 報告用の紙材トレーサビリティレポートもご提供。短期キャンペーン・レンタル機器・イベント業界の B2B 向けに、最適な再剥離ステッカーソリューションをご提案します。</p>
+
+<h3>業界別活用事例</h3>
+<ul>
+  <li><strong>小売・季節セール</strong>：200-500 枚のウィンドウデカールで季節キャンペーン展開、シーズン後に糊残らず撤去</li>
+  <li><strong>不動産・オープン house</strong>：週末 100-200 枚のオープンハウス案内ステッカー、施主への配慮として剥がしやすさ重視</li>
+  <li><strong>イベント・カンファレンス</strong>：500-1,000 枚のバッジステッカーセット、来場者名札・座席表示に最適</li>
+  <li><strong>レンタル機器メーカー</strong>：電子機器・測定器に商品番号シール貼付、返却時に糊残りなし</li>
+  <li><strong>短期キャンペーン・POP 広告</strong>：30 日以内に剥がすプライスラベル、需要期後の原状復帰が容易</li>
+  <li><strong>教育機関・学校</strong>：机・椅子の管理番号、学期末に糊残らず剥がせる学校備品管理用</li>
+</ul>
+
+<h3>日本向け配送と多通貨決済</h3>
+<p>智印雲 ZprintPro は深圳自社工場から DHL Express で日本全国 2-4 営業日納品。<strong>100 枚以上のご注文は送料無料</strong>で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
+
+<h3>30 秒 AI 見積もり流程</h3>
+<p>ご注文は 3 ステップで完了：</p>
+<ol>
+  <li><strong>仕様選択</strong>：基材・粘着剤・サイズ・数量・ラミネ・オプションを画面上で簡単設定</li>
+  <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式対応、AI 自動チェックで事前検証</li>
+  <li><strong>確定・発注</strong>：総額表示を確認、決済方法で完了。色校正 PDF を 24 時間以内にお届け</li>
+</ol>
+
+<h3>失敗しない発注のための 5 つのポイント</h3>
+<p>ご注文前に、以下の 5 つのポイントをご確認いただくと、発注後のトラブルを未然に防げます：</p>
+<ul>
+  <li><strong>貼付期間を明示する</strong>：30 日 / 60 日 / 90 日で粘着剤の硬化度が異なる、長期貼付は恒久粘着剤タイプ推奨</li>
+  <li><strong>貼付面の素材を確認する</strong>：ガラス / 塗装壁 / プラスチック / 電子機器筐体で適合粘着剤が異なる、特殊面は事前サンプルテスト推奨</li>
+  <li><strong>屋外か屋内かを明示する</strong>：屋外はビニール + UV ラミネ必須、屋内は上質紙でコスト削減可能</li>
+  <li><strong>数量は段階割引を考慮する</strong>：500 枚 / 1,000 枚 / 5,000 枚で割引率が UP、まとめて発注がお得</li>
+  <li><strong>無料色校正を活用する</strong>：基材色と印刷色の組み合わせを事前に確認、ミスマッチ防止</li>
+</ul>
+
+<h3>当サービスが選ばれる 5 つの理由</h3>
+<p>中国深圳の国際印刷ブランドとして、日本語・日本市場向けに最適化されたサービスを提供しています：</p>
+<ul>
+  <li><strong>日本語ネイティブ対応</strong>：日本語カスタマーサポート平日 9:00-18:00、日本向け請求書・領収書発行</li>
+  <li><strong>JPY 日本円建て明朗会計</strong>：為替変動リスクなし、経費精算しやすい</li>
+  <li><strong>30 秒 AI 見積もり</strong>：画面上で簡単設定、送料込みの総額表示で安心</li>
+  <li><strong>DHL/FedEx 直送 2-4 日</strong>：沖縄・離島も別途見積もり、全国配送対応</li>
+  <li><strong>FSC 認証 + ISO 9001</strong>：ESG 配慮、サステナブル調達 + 厳格な品質管理</li>
+</ul>
+
+<h3>配送方式と国際物流</h3>
+<p>日本向け配送に特化した 3 つのプランをご用意。ご注文数量・納期・配送先に応じて最適なプランを選択可能です：</p>
+<table>
+  <thead>
+    <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3-5 営業日</td><td>少量追加料金</td></tr>
+    <tr><td>深圳自社工場直送（事前予約制）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
+  </tbody>
+</table>
+<p>100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+
+<h3>環保認證と紙材溯源</h3>
+<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。再剥離ステッカーシリーズでも大豆インク・水性インクを採用し、エコシリーズでは再生紙も選択可能。ESG 配慮のブランドやサステナブル調達要件の企業向けに、紙材トレーサビリティレポートとカーボンフットプリント試算をご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
+
+<h3>深圳自社工場・事前予約制現地確認</h3>
+<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約制で現地確認・基材サンプル比較・粘着力テスト・色校正確認に対応しています（日本語スタッフ同席可・1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
+
+<h3>多通貨決済</h3>
+<p>Airwallex 多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス制度対応。</p>
+
+<h3>常見問題 (FAQ)</h3>
+<details class="my-2"><summary><strong>剥がした時に糊残りは出ませんか？</strong></summary><p>いいえ、出ません。当社の再剥離粘着剤は、ガラス・塗装壁・電子機器・平滑パッケージのいずれにおいても、貼付から 90 日以内に糊残りなく剥がせるよう設計されています。すべてのロットでクリーン剥離テストを実施しております。</p></details>
+<details class="my-2"><summary><strong>剥がした後に再利用できますか？</strong></summary><p>静電吸着タイプ（粘着剤なし）のガラス用デカールは、5〜10 回の再利用が可能です。再剥離粘着剤タイプは、貼付後 24 時間以内であれば 2〜3 回の位置調整に対応いたします。</p></details>
+<details class="my-2"><summary><strong>どのような貼付面に対応していますか？</strong></summary><p>ガラス・塗装壁（ラテックス・油性塗料いずれも）・仕上げ木材・プラスチックパッケージ・電子機器筐体・平滑金属面に対応いたします。未塗装木材・煉瓦・テクスチャー面では恒久粘着剤タイプを推奨いたします。</p></details>
+<details class="my-2"><summary><strong>どのくらいの期間、再剥離性が維持されますか？</strong></summary><p>標準再剥離粘着剤は最長 90 日、弱粘着タイプは最長 60 日まで糊残りなく剥がせます。それ以上の期間になりますと、粘着剤が硬化し始めます。</p></details>
+<details class="my-2"><summary><strong>カスタム形状に対応できますか？</strong></summary><p>はい。10×10mm〜500×500mm までのカスタム形状に対応いたします。丸・四角・楕円・星・ハート・ロゴ輪郭いずれも対応可能です。型抜きラインを AI または PDF 形式で ご入稿ください。</p></details>
+<details class="my-2"><summary><strong>可変データ印刷に対応していますか？</strong></summary><p>はい。1 枚ごとの QR コード・シリアル番号・連番印刷に対応いたします。レンタル管理・イベントチェックイン・短期キャンペーンのトラッキング用途に最適で、データは Excel / CSV 形式で ご入稿ください。</p></details>
+
+<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>
 `,
     features: [
       '【可移膠】移除不留殘膠，保護車漆與玻璃表面',
@@ -2745,6 +3358,134 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>How long do they last?</strong></summary><p>Vinyl foil stickers last 3-5 years outdoors and indefinitely indoors. Paper foil 2-3 years indoors. All laminated versions extend lifespan and improve durability.</p></details>
 
 `,
+    longDescriptionJa: `<h3>グローバルブランド向け 箔押しステッカー</h3>
+<p>智印雲 ZprintPro の箔押しステッカーは、ロゴ・パッケージ・シールに金属光沢を加える高級印刷。金箔・銀箔・ローズゴールド箔・銅箔・ホログラム箔・ブラシメタル箔の 6 種類から選択可能、ビニールまたは紙基材に箔押し加工。箔押しでシャープな金属エッジ・全方位反射。プレミアム製品ラベル・ウェディングステーショナリー・高級パッケージシール・限定版ブランディング向け。100 枚からご注文可能、5-7 営業日で標準製作、無料色校正サービス対応。</p>
+
+<h3>箔種類と基材の比較</h3>
+<table>
+  <thead>
+    <tr><th>箔種類</th><th>反射性</th><th>耐久性</th><th>コスト</th><th>適用場面</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>金箔</td><td>★★★★★</td><td>★★★★★</td><td>★★★★</td><td>ラグジュアリーブランド、表彰状、高級パッケージ</td></tr>
+    <tr class="border-b border-gray-200"><td>銀箔</td><td>★★★★★</td><td>★★★★★</td><td>★★★★</td><td>テックブランド、モダンミニマリズム、電子機器</td></tr>
+    <tr class="border-b border-gray-200"><td>ローズゴールド箔</td><td>★★★★</td><td>★★★★</td><td>★★★★</td><td>美容・化粧品、フェミニンラグジュアリー</td></tr>
+    <tr class="border-b border-gray-200"><td>銅箔</td><td>★★★★</td><td>★★★★</td><td>★★★★</td><td>クラフトビール、職人ブランド、温かみのある意匠</td></tr>
+    <tr class="border-b border-gray-200"><td>ホログラム箔</td><td>★★★★★</td><td>★★★★</td><td>★★★</td><td>美容・ゲーミング、若年層向けプレミアム</td></tr>
+    <tr><td>ブラシメタル箔</td><td>★★★</td><td>★★★★</td><td>★★★</td><td>インダストリアル・自動車・マスキュリンブランド</td></tr>
+  </tbody>
+</table>
+
+<h3>加工方法と仕上げオプション</h3>
+<table>
+  <thead>
+    <tr><th>加工方法</th><th>効果</th><th>追加納期</th><th>追加料金</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>全面箔押し</td><td>最大光沢、プレミアム開封体験</td><td>+1 日</td><td>$$$</td></tr>
+    <tr class="border-b border-gray-200"><td>ロゴ部分のみ箔押し</td><td>白地・カラー印刷上に選択的アクセント</td><td>+1 日</td><td>$$</td></tr>
+    <tr class="border-b border-gray-200"><td>箔押し枠・フレーム</td><td>装飾エッジ、プレミアム感演出</td><td>+1 日</td><td>$$</td></tr>
+    <tr class="border-b border-gray-200"><td>箔押し + スポット UV 組合せ</td><td>金属光沢 + 光沢コントラスト</td><td>+1 日</td><td>$$$</td></tr>
+    <tr><td>マットラミネーション（箔上）</td><td>控えめな金属感、反射防止</td><td>+1 日</td><td>$</td></tr>
+  </tbody>
+</table>
+
+<h3>印刷工藝と品質管理</h3>
+<ul>
+  <li><strong>ホットスタンプ箔押し</strong>：金属フィルムを真の熱圧着、反射率 90% 以上、メタリックインキでは表現できない本物の輝き</li>
+  <li><strong>Heidelberg 4 色オフセット</strong>：業界標準機で色再現性 90% 以上、CMYK 厳密管理</li>
+  <li><strong>ISO 12647 色彩管理</strong>：再印刷時の色ブレなし、ブランドカラー厳守</li>
+  <li><strong>Pantone 特殊色箔マッチ</strong>：1,000 枚以上で対応</li>
+  <li><strong>ラミネ防水</strong>：ビニール箔押し + ラミネで防水・食洗機対応</li>
+</ul>
+
+<h3>納期と MOQ（最低発注数量）</h3>
+<ul>
+  <li><strong>MOQ 100 枚</strong>：少量イベント・ウェディングシールも対応、特急料金でさらに小ロットも対応可能</li>
+  <li><strong>標準納期 5-7 営業日</strong>：色校正確認後、本印刷開始</li>
+  <li><strong>特急 2-4 営業日</strong>：追加料金で特急対応、緊急キャンペーン・新商品発表に最適</li>
+  <li><strong>大量発注割引</strong>：500 枚 (+15%)、1,000 枚 (+25%)、5,000 枚以上 (+35%)</li>
+  <li><strong>無料色校正サービス</strong>：箔色と紙色の組み合わせを事前に PDF 校正で確認可能</li>
+</ul>
+
+<h3>FSC 認証と ISO 9001 品質保証</h3>
+<p>智印雲 ZprintPro の箔押しステッカーは <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。箔押し加工も FSC 認証取得メーカーの基材を優先採用、持続可能な紙材調達と厳格な品質管理を実現。ESG 報告用の紙材トレーサビリティレポートもご提供。ラグジュアリー・美容・ウェディング業界の B2B 向けに、最適な箔押しステッカーソリューションをご提案します。</p>
+
+<h3>業界別活用事例</h3>
+<ul>
+  <li><strong>ウェディング・ブライダル</strong>：200-500 枚の箔封印、招待状・席次表・引き出物用</li>
+  <li><strong>クラフトチョコレート・菓子</strong>：1,000 枚以上のホリデーシーズン箔封印、季節限定パッケージの高級感演出</li>
+  <li><strong>ラグジュアリー美容ブランド</strong>：500-2,000 枚のプレミアムギフトパッケージ用箔シール、商品価値 UP</li>
+  <li><strong>クラフトビール・地酒</strong>：銅箔・金箔で温かみのある職人感演出、中小ブランドの商品差別化</li>
+  <li><strong>テック・スタートアップ</strong>：銀箔ロゴでモダンテック感、新商品 PR・投資家向け資料に最適</li>
+  <li><strong>高級ホテル・レストラン</strong>：ホログラム箔・ブラシメタル箔でメニュー・予約確認書のプレミアム感演出</li>
+</ul>
+
+<h3>日本向け配送と多通貨決済</h3>
+<p>智印雲 ZprintPro は深圳自社工場から DHL Express で日本全国 2-4 営業日納品。<strong>100 枚以上のご注文は送料無料</strong>で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
+
+<h3>30 秒 AI 見積もり流程</h3>
+<p>ご注文は 3 ステップで完了：</p>
+<ol>
+  <li><strong>仕様選択</strong>：箔色・基材・サイズ・数量・ラミネ・オプションを画面上で簡単設定</li>
+  <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式対応、箔押しエリアを別レイヤーで明確に分離して ご入稿</li>
+  <li><strong>確定・発注</strong>：総額表示を確認、決済方法で完了。色校正 PDF を 24 時間以内にお届け</li>
+</ol>
+
+<h3>失敗しない発注のための 5 つのポイント</h3>
+<p>ご注文前に、以下の 5 つのポイントをご確認いただくと、発注後のトラブルを未然に防げます：</p>
+<ul>
+  <li><strong>箔色を明確に指定する</strong>：金箔とローズゴールド箔では印象が大きく異なる、サンプル請求で実物確認推奨</li>
+  <li><strong>箔押しエリアを別レイヤーで明示する</strong>：Illustrator / InDesign / PDF 形式で、箔押しレイヤーを別レイヤーで明確に分離、色指定で区別</li>
+  <li><strong>基材の凹凸を考慮する</strong>：クラフト紙やテクスチャー紙では箔押しエッジが粗くなる、平滑紙推奨</li>
+  <li><strong>数量は段階割引を考慮する</strong>：500 枚 / 1,000 枚 / 5,000 枚で割引率が UP、まとめて発注がお得</li>
+  <li><strong>無料色校正を活用する</strong>：箔色と印刷色・基材色の組み合わせを事前に確認、ミスマッチ防止</li>
+</ul>
+
+<h3>当サービスが選ばれる 5 つの理由</h3>
+<p>中国深圳の国際印刷ブランドとして、日本語・日本市場向けに最適化されたサービスを提供しています：</p>
+<ul>
+  <li><strong>日本語ネイティブ対応</strong>：日本語カスタマーサポート平日 9:00-18:00、日本向け請求書・領収書発行</li>
+  <li><strong>JPY 日本円建て明朗会計</strong>：為替変動リスクなし、経費精算しやすい</li>
+  <li><strong>30 秒 AI 見積もり</strong>：画面上で簡単設定、送料込みの総額表示で安心</li>
+  <li><strong>DHL/FedEx 直送 2-4 日</strong>：沖縄・離島も別途見積もり、全国配送対応</li>
+  <li><strong>FSC 認証 + ISO 9001</strong>：ESG 配慮、サステナブル調達 + 厳格な品質管理</li>
+</ul>
+
+<h3>配送方式と国際物流</h3>
+<p>日本向け配送に特化した 3 つのプランをご用意。ご注文数量・納期・配送先に応じて最適なプランを選択可能です：</p>
+<table>
+  <thead>
+    <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3-5 営業日</td><td>少量追加料金</td></tr>
+    <tr><td>深圳自社工場直送（事前予約制）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
+  </tbody>
+</table>
+<p>100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+
+<h3>環保認證と紙材溯源</h3>
+<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。箔押しシリーズでも大豆インク・水性インクを採用し、エコシリーズでは再生紙も選択可能。ESG 配慮のブランドやサステナブル調達要件の企業向けに、紙材トレーサビリティレポートとカーボンフットプリント試算をご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
+
+<h3>深圳自社工場・事前予約制現地確認</h3>
+<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約制で現地確認・箔サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
+
+<h3>多通貨決済</h3>
+<p>Airwallex 多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス制度対応。</p>
+
+<h3>常見問題 (FAQ)</h3>
+<details class="my-2"><summary><strong>箔押しとメタリックインキの違いは何ですか？</strong></summary><p>ホットスタンプ箔押しは本物の金属フィルムを熱圧着する加工で、反射率 90% 以上の本物の金属光沢を実現します。メタリックインキは金属顔料を配合したインキで印刷する方式で、光沢が控えめで反射性が劣ります。箔押しの方が圧倒的に高級感があります。</p></details>
+<details class="my-2"><summary><strong>箔押しステッカーは防水ですか？</strong></summary><p>ラミネ加工を施せば完全防水です。ビニール箔押しステッカー + マット/グロスラミネは完全防水・食洗機対応。紙基材の箔押しは耐水のみです。</p></details>
+<details class="my-2"><summary><strong>カスタム形状に対応できますか？</strong></summary><p>はい。10×10mm〜300×300mm までのカスタム形状に対応いたします。丸・楕円・星・ハート・ロゴ輪郭いずれも対応可能です。型抜きラインを AI または PDF 形式で ご入稿ください。</p></details>
+<details class="my-2"><summary><strong>どのようなサイズが利用可能ですか？</strong></summary><p>10×10mm から 300×300mm まで対応いたします。一般的なサイズ：25mm 円形（瓶シール）、50×30mm（ロゴラベル）、80×80mm（プレミアムスクエア）、100×50mm（ボトル巻き）。</p></details>
+<details class="my-2"><summary><strong>箔押しと通常印刷を組合せできますか？</strong></summary><p>はい。最も人気は「カラー印刷背景 + 箔押しロゴ」の組合せ。「白印刷 + 箔押し枠」「クラフト紙 + 箔押しテキスト」も対応。</p></details>
+<details class="my-2"><summary><strong>耐久年数はどのくらいですか？</strong></summary><p>ビニール箔押しステッカーは屋外 3-5 年、屋内では無期限。紙基材箔押しは屋内 2-3 年。ラミネ加工でさらに耐久性が向上します。</p></details>
+
+<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>
+`,
     features: [
       '多色箔可選（金／銀／玫瑰金等）',
       '適合禮盒、酒標、美妝與 VIP 物料',
@@ -2933,6 +3674,133 @@ export const products: Product[] = [
 
 
 <p><em>Compliance:  ✅ FSC-certified materials, ✅ ISO 9001:2015 certified quality management system.</em></p>
+`,
+    longDescriptionJa: `<h3>グローバルブランド向け セキュリティステッカー（偽造防止）</h3>
+<p>智印雲 ZprintPro のセキュリティステッカー（防偽ステッカー）は、製品の改ざん・偽造・不正アクセスを防ぐための高度なセキュリティ機能を搭載したラベル印刷サービスです。ボイド剥離ラベル・ホログラムシール・タンパーエビデント（破壊型）・シリアル QR コードの 4 種類から選択可能で、製薬業界向け FDA 21 CFR Part 11 準拠、ISO 12931 偽造防止規格対応、産業グレードのサプライチェーン監査対応。100 枚からご注文可能、5-7 営業日で製作、可変データ印刷オプション対応。</p>
+
+<h3>セキュリティ機能の比較</h3>
+<table>
+  <thead>
+    <tr><th>タイプ</th><th>改ざん検知</th><th>偽造防止</th><th>追跡管理</th><th>適用場面</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>ボイド剥離ラベル</td><td>★★★★★</td><td>★★★</td><td>—</td><td>電子機器、保証シール、資産管理タグ</td></tr>
+    <tr class="border-b border-gray-200"><td>タンパーエビデント破壊型</td><td>★★★★★</td><td>★★★</td><td>—</td><td>製薬、食品パッケージ、認証製品</td></tr>
+    <tr class="border-b border-gray-200"><td>ホログラムシール</td><td>★★★★</td><td>★★★★★</td><td>—</td><td>高級品、証明書、公文書</td></tr>
+    <tr class="border-b border-gray-200"><td>シリアル QR コード</td><td>★★★</td><td>★★★★</td><td>★★★★★</td><td>製薬サプライチェーン、電子機器保証</td></tr>
+    <tr><td>組合せ（ホログラム + QR）</td><td>★★★★</td><td>★★★★★</td><td>★★★★★</td><td>高価値商品、規制産業</td></tr>
+  </tbody>
+</table>
+
+<h3>基材と粘着剤のオプション</h3>
+<table>
+  <thead>
+    <tr><th>基材</th><th>効果</th><th>屋外耐久</th><th>追加料金</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>VOID パターン（ポリエステル）</td><td>—</td><td>5+ 年</td><td>$$</td></tr>
+    <tr class="border-b border-gray-200"><td>破壊型ビニール</td><td>—</td><td>3-5 年</td><td>$$</td></tr>
+    <tr class="border-b border-gray-200"><td>ホログラムポリエステル</td><td>—</td><td>5+ 年</td><td>$$$</td></tr>
+    <tr class="border-b border-gray-200"><td>連番印刷</td><td>—</td><td>—</td><td>$</td></tr>
+    <tr><td>可変 QR + DB 連動</td><td>—</td><td>—</td><td>$$</td></tr>
+  </tbody>
+</table>
+
+<h3>印刷工藝と品質管理</h3>
+<ul>
+  <li><strong>FDA 21 CFR Part 11 準拠</strong>：製薬業界向け電子記録・電子署名規制に対応、規制産業向けに必須</li>
+  <li><strong>ISO 12931 偽造防止規格対応</strong>：国際的な偽造防止基準に適合、輸出製品の信頼性向上</li>
+  <li><strong>REACH / RoHS 準拠素材</strong>：欧州化学物質規制・有害物質制限に対応、EU 市場向けも安心</li>
+  <li><strong>可変データ印刷（VDP）</strong>：1 枚ごとの固有 QR / シリアル番号 / 英数字コードを生成、Excel/CSV ご入稿で対応</li>
+  <li><strong>Heidelberg 4 色オフセット + 専用セキュリティ印刷機</strong>：色再現性 90% 以上、CMYK 厳密管理、改ざん検知精度を確保</li>
+</ul>
+
+<h3>納期と MOQ（最低発注数量）</h3>
+<ul>
+  <li><strong>MOQ 100 枚</strong>：少量テスト・限定版商品も対応、特急料金でさらに小ロットも対応可能</li>
+  <li><strong>標準納期 5-7 営業日</strong>：色校正確認後、本印刷開始</li>
+  <li><strong>特急 2-4 営業日</strong>：追加料金で特急対応、緊急リコール・新商品発表に最適</li>
+  <li><strong>大量発注割引</strong>：1,000 枚 (+15%)、10,000 枚 (+25%)、50,000 枚以上 (+35%)</li>
+  <li><strong>無料セキュリティ監査</strong>：商品パッケージ評価・最適セキュリティ機能の組合せ提案を無料ご提供</li>
+</ul>
+
+<h3>FSC 認証と ISO 9001 品質保証</h3>
+<p>智印雲 ZprintPro のセキュリティステッカーは <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。基材も並行して FSC 認証取得メーカーの素材を優先採用、持続可能な紙材調達と厳格な品質管理を実現。ESG 報告用の紙材トレーサビリティレポートもご提供。電子機器・製薬・食品・高級品業界の B2B 向けに、最適なセキュリティステッカーソリューションをご提案します。</p>
+
+<h3>業界別活用事例</h3>
+<ul>
+  <li><strong>電子機器メーカー</strong>：製品ラインあたり 1,000 枚以上の保証シール貼付、保証期間中の不正開封防止</li>
+  <li><strong>製薬会社</strong>：500-2,000 ロット単位のタンパーエビデントシール、医薬品包装の完全性保証</li>
+  <li><strong>ラグジュアリーハンドバッグブランド</strong>：200-1,000 枚の限定ドロップ用偽造防止シール、本物認証</li>
+  <li><strong>食品・サプリメント</strong>：オーガニック認証商品・健康食品のホログラムシール、信頼性の可視化</li>
+  <li><strong>化粧品・香水ブランド</strong>：高級ラインの改ざん検知シール、並行輸入品の流通抑止</li>
+  <li><strong>産業機器・測定器</strong>：校正証明・資産管理タグ、保証・保守契約時の真正性証明</li>
+</ul>
+
+<h3>日本向け配送と多通貨決済</h3>
+<p>智印雲 ZprintPro は深圳自社工場から DHL Express で日本全国 2-4 営業日納品。<strong>100 枚以上のご注文は送料無料</strong>で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
+
+<h3>30 秒 AI 見積もり流程</h3>
+<p>ご注文は 3 ステップで完了：</p>
+<ol>
+  <li><strong>仕様選択</strong>：セキュリティタイプ・基材・サイズ・数量・可変データオプションを画面上で簡単設定</li>
+  <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式対応、可変データは Excel / CSV で ご入稿、AI 自動チェックで事前検証</li>
+  <li><strong>確定・発注</strong>：総額表示を確認、決済方法で完了。色校正 PDF + COA を 24 時間以内にお届け</li>
+</ol>
+
+<h3>失敗しない発注のための 5 つのポイント</h3>
+<p>ご注文前に、以下の 5 つのポイントをご確認いただくと、発注後のトラブルを未然に防げます：</p>
+<ul>
+  <li><strong>リスクプロファイルを評価する</strong>：商品価値・流通経路・偽造リスクを整理、最適なセキュリティ機能を選択</li>
+  <li><strong>規制要件を確認する</strong>：FDA / ISO / REACH / RoHS など、業界固有の規制への適合性を事前確認</li>
+  <li><strong>追跡管理システムを連携する</strong>：既存 DB / ERP との連動可否、可変 QR のフォーマットを事前協議</li>
+  <li><strong>数量は段階割引を考慮する</strong>：1,000 枚 / 10,000 枚 / 50,000 枚で割引率が UP、まとめて発注がお得</li>
+  <li><strong>無料セキュリティ監査を活用する</strong>：商品パッケージの最適なセキュリティ機能ミックスを専門家がご提案</li>
+</ul>
+
+<h3>当サービスが選ばれる 5 つの理由</h3>
+<p>中国深圳の国際印刷ブランドとして、日本語・日本市場向けに最適化されたサービスを提供しています：</p>
+<ul>
+  <li><strong>日本語ネイティブ対応</strong>：日本語カスタマーサポート平日 9:00-18:00、日本向け請求書・領収書発行</li>
+  <li><strong>JPY 日本円建て明朗会計</strong>：為替変動リスクなし、経費精算しやすい</li>
+  <li><strong>30 秒 AI 見積もり</strong>：画面上で簡単設定、送料込みの総額表示で安心</li>
+  <li><strong>DHL/FedEx 直送 2-4 日</strong>：沖縄・離島も別途見積もり、全国配送対応</li>
+  <li><strong>FSC 認証 + ISO 9001</strong>：ESG 配慮、サステナブル調達 + 厳格な品質管理</li>
+</ul>
+
+<h3>配送方式と国際物流</h3>
+<p>日本向け配送に特化した 3 つのプランをご用意。ご注文数量・納期・配送先に応じて最適なプランを選択可能です：</p>
+<table>
+  <thead>
+    <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3-5 営業日</td><td>少量追加料金</td></tr>
+    <tr><td>深圳自社工場直送（事前予約制）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
+  </tbody>
+</table>
+<p>100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+
+<h3>環保認證と紙材溯源</h3>
+<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。セキュリティステッカーシリーズでも大豆インク・水性インクを採用し、エコシリーズでは再生紙も選択可能。ESG 配慮のブランドやサステナブル調達要件の企業向けに、紙材トレーサビリティレポートとカーボンフットプリント試算をご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
+
+<h3>深圳自社工場・事前予約制現地確認</h3>
+<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約制で現地確認・セキュリティ素材サンプル比較・粘着力テスト・色校正確認に対応しています（日本語スタッフ同席可・1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
+
+<h3>多通貨決済</h3>
+<p>Airwallex 多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス制度対応。</p>
+
+<h3>常見問題 (FAQ)</h3>
+<details class="my-2"><summary><strong>ボイド剥離と破壊型の違いは何ですか？</strong></summary><p>ボイド剥離は剥がすと基材側に「VOID」のパターンが残ります。破壊型ステッカーは剥がそうとすると細かく破砕され、再貼付が不可能となります。ボイドは再利用フレンドリー、破壊型は最高セキュリティ。</p></details>
+<details class="my-2"><summary><strong>1 枚ごとに固有の QR コードを付けられますか？</strong></summary><p>はい。可変データ印刷で 1 枚ごとの固有 QR コードを生成し、貴社 DB にリンクできます。Excel / CSV 形式で ご入稿ください。DB スキーマ・連携ガイドもご提供いたします。</p></details>
+<details class="my-2"><summary><strong>FDA 準拠ですか？</strong></summary><p>はい。当社のボイド剥離・破壊型素材は FDA 準拠で、食品間接接触・製薬包装に対応。ロットごとに COA（分析証明書）をご提供いたします。</p></details>
+<details class="my-2"><summary><strong>既存の追跡システムと連動できますか？</strong></summary><p>はい。URL / JSON / GS1 など任意のフォーマットで QR コードを生成し、既存の track-and-trace DB と連携可能です。API・バルクエクスポート対応。</p></details>
+<details class="my-2"><summary><strong>ホログラムの改ざん防止性はどのくらいですか？</strong></summary><p>ホログラムシールは視覚的偽造防止（複製困難）と粘着剤の改ざん検知（剥がすと破壊）を併せ持ちます。中〜高セキュリティ向けに最適です。</p></details>
+<details class="my-2"><summary><strong>バーコードや RFID との連動はできますか？</strong></summary><p>1D / 2D バーコード（Code 128 / QR / Data Matrix）に対応、シリアル番号の事前印刷も可能です。RFID inlay 組込みは 5,000 枚以上のご注文で対応いたします。</p></details>
+
+<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。FDA 21 CFR Part 11 / ISO 12931 / REACH / RoHS 準拠。</em></p>
 `,
     features: [
       '易碎／VOID 等防拆材可選',
@@ -4256,6 +5124,132 @@ export const products: Product[] = [
 <p><em>Printed in our Hong Kong facility with 100% renewable energy, shipped worldwide via DHL Express. ZprintPro — your global printing partner for eco-friendly retail bags, sustainable packaging, and zero-waste brand materials.</em></p>
 
     `,
+    longDescriptionJa: `<h3>グローバルブランド向け エコ紙袋（環境配慮型）</h3>
+<p>智印雲 ZprintPro のエコ紙袋は、サステナビリティをブランドの核に据える企業向けの環境配慮型ショッピングバッグです。100% 再生繊維または FSC 認証バージン紙パルプを基材に、大豆インク・水性インクを採用、すべての紙袋が完全リサイクル可能・コンポスト可能・プラスチックフリー。有機食品小売・サステナブルファッション・エコ志向化粧品・ゼロウェイストキャンペーンに最適で、米国・英国・オーストラリア・グローバル市場に対応。100 枚からご注文可能、5-7 営業日で標準製作、カーボンニュートラルオプション対応。</p>
+
+<h3>素材と環境認証の比較</h3>
+<table>
+  <thead>
+    <tr><th>素材</th><th>再生紙含有率</th><th>環境認証</th><th>印刷品質</th><th>適用場面</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>100% 再生茶色クラフト</td><td>100%</td><td>FSC Recycled</td><td>★★★</td><td>有機食品、ゼロウェイスト店舗</td></tr>
+    <tr class="border-b border-gray-200"><td>FSC バージン茶色クラフト</td><td>0% (バージン)</td><td>FSC Mix</td><td>★★★★</td><td>カフェ・ bakery、 eco リテール</td></tr>
+    <tr class="border-b border-gray-200"><td>グラスペーパークラフト</td><td>50%</td><td>FSC + TUV</td><td>★★★</td><td>プレミアムエコ、天然繊維ブランド</td></tr>
+    <tr><td>未塗工再生白紙</td><td>100%</td><td>FSC Recycled</td><td>★★★★</td><td>サステナブル化粧品、クリーンビューティー</td></tr>
+  </tbody>
+</table>
+
+<h3>ハンドルと仕上げオプション</h3>
+<table>
+  <thead>
+    <tr><th>オプション</th><th>効果</th><th>耐荷重</th><th>追加料金</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>紙紐ハンドル</td><td>100% リサイクル可能、ラスティック感</td><td>6-10kg</td><td>$</td></tr>
+    <tr class="border-b border-gray-200"><td>オーガニックコットンロープ</td><td>GOTS 認証コットン、プレミアム触感</td><td>8-12kg</td><td>$$</td></tr>
+    <tr class="border-b border-gray-200"><td>平織り紙ハンドル</td><td>スマート、リテールフレンドリー、リサイクル可</td><td>4-6kg</td><td>$</td></tr>
+    <tr class="border-b border-gray-200"><td>大豆インク印刷</td><td>低 VOC、鮮明、食品安全</td><td>—</td><td>$</td></tr>
+    <tr><td>水性コーティング</td><td>プラスチックフリー防湿層</td><td>—</td><td>$$</td></tr>
+  </tbody>
+</table>
+
+<h3>印刷工藝と品質管理</h3>
+<ul>
+  <li><strong>Heidelberg 4 色オフセット + 水性インキ</strong>：色再現性 90% 以上、CMYK 厳密管理、低 VOC 環境対応</li>
+  <li><strong>FSC 認証クラフト紙 + GOTS 認証コットン</strong>：持続可能な森林管理と有機栽培コットンの国際認証取得素材</li>
+  <li><strong>ISO 12647 色彩管理</strong>：再印刷時の色ブレなし、ブランドカラー厳守</li>
+  <li><strong>大豆インク / 水性インク標準採用</strong>：石油系インク不使用、印刷時の VOC 排出を大幅削減</li>
+  <li><strong>オプション：内側ライナー</strong>：FDA 準拠の食品直接接触用インナーライナー対応</li>
+</ul>
+
+<h3>納期と MOQ（最低発注数量）</h3>
+<ul>
+  <li><strong>MOQ 100 枚</strong>：小規模 DTC ブランド・テストキャンペーンも対応、特急料金でさらに小ロットも対応可能</li>
+  <li><strong>標準納期 5-7 営業日</strong>：色校正確認後、本印刷開始</li>
+  <li><strong>特急 2-4 営業日</strong>：追加料金で特急対応、緊急キャンペーン・新商品発表に最適</li>
+  <li><strong>大量発注割引</strong>：500 枚 (+15%)、1,000 枚 (+25%)、2,500 枚以上 (+35%)</li>
+  <li><strong>カーボンフットプリントレポート</strong>：1 注文ごとの CO2 排出量計算・オフセット証明書発行対応</li>
+</ul>
+
+<h3>FSC 認証と ISO 9001 品質保証</h3>
+<p>智印雲 ZprintPro のエコ紙袋は <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。100% 再生紙・FSC バージン紙パルプ・GOTS 認証コットン・TUV 認証グラスペーパーを調達、ESG 調達要件を満たす最適な素材をご提案。ESG 報告用の紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。有機食品・サステナブルファッション・ゼロウェイスト業界の B2B 向けに、最適なエコ紙袋ソリューションをご提案します。</p>
+
+<h3>業界別活用事例</h3>
+<ul>
+  <li><strong>有機食品小売・オーガニックスーパー</strong>：バルクビンパッケージ・青果・サプリメント用、リピート購入時のサステナビリティ訴求</li>
+  <li><strong>ゼロウェイスト・リフィルストア</strong>：リフィル容器用、再利用顧客のサステナブルライフスタイル可視化</li>
+  <li><strong>サステナブルファッションブランド</strong>：オーガニックコットン・ hemp・再生繊維商品のショッピングバッグ、ESG 調達対応</li>
+  <li><strong>クリーンビューティー・ナチュラルコスメ</strong>：リフィル化粧品・固形石鹸・ shampoo バー、プラスチック削減への本気度表現</li>
+  <li><strong>フェアトレードコーヒー・チョコレート</strong>：原料産地・生産者ストーリー可視化、フェアトレード認証商品のパッケージ</li>
+  <li><strong>企業 ESG キャンペーン・周年記念</strong>：ゼロウェイスト・カーボンニュートラルキャンペーン、ノベルティグリーン化</li>
+</ul>
+
+<h3>日本向け配送と多通貨決済</h3>
+<p>智印雲 ZprintPro は深圳自社工場から DHL Express で日本全国 2-4 営業日納品。<strong>100 枚以上のご注文は送料無料</strong>で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
+
+<h3>30 秒 AI 見積もり流程</h3>
+<p>ご注文は 3 ステップで完了：</p>
+<ol>
+  <li><strong>仕様選択</strong>：素材・ハンドル・サイズ・数量・印刷色・オプションを画面上で簡単設定</li>
+  <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式対応、AI 自動チェックで水性印刷適性を事前検証</li>
+  <li><strong>確定・発注</strong>：総額表示を確認、決済方法で完了。色校正 PDF + 認証証明書を 24 時間以内にお届け</li>
+</ol>
+
+<h3>失敗しない発注のための 5 つのポイント</h3>
+<p>ご注文前に、以下の 5 つのポイントをご確認いただくと、発注後のトラブルを未然に防げます：</p>
+<ul>
+  <li><strong>環境認証を明確に指定する</strong>：FSC Recycled / FSC Mix / GOTS / TUV で調達要件が変わる、ESG 報告要件を事前確認</li>
+  <li><strong>食品接触の有無を確認する</strong>：直接食品接触は FDA 準拠インナーライナーが必要、間接接触は標準クラフトで対応</li>
+  <li><strong>耐荷重を考慮する</strong>：4-6kg（軽量）/ 6-10kg（標準）/ 8-12kg（ヘビーデューティ）で素材・ハンドルを選択</li>
+  <li><strong>数量は段階割引を考慮する</strong>：500 枚 / 1,000 枚 / 2,500 枚で割引率が UP、まとめて発注がお得</li>
+  <li><strong>無料エコデザインサービスを活用する</strong>：リサイクル素材選定・カスタムダイライン設計を専門家がご提案</li>
+</ul>
+
+<h3>当サービスが選ばれる 5 つの理由</h3>
+<p>中国深圳の国際印刷ブランドとして、日本語・日本市場向けに最適化されたサービスを提供しています：</p>
+<ul>
+  <li><strong>日本語ネイティブ対応</strong>：日本語カスタマーサポート平日 9:00-18:00、日本向け請求書・領収書発行</li>
+  <li><strong>JPY 日本円建て明朗会計</strong>：為替変動リスクなし、経費精算しやすい</li>
+  <li><strong>30 秒 AI 見積もり</strong>：画面上で簡単設定、送料込みの総額表示で安心</li>
+  <li><strong>DHL/FedEx 直送 2-4 日</strong>：沖縄・離島も別途見積もり、全国配送対応</li>
+  <li><strong>FSC 認証 + ISO 9001</strong>：ESG 配慮、サステナブル調達 + 厳格な品質管理</li>
+</ul>
+
+<h3>配送方式と国際物流</h3>
+<p>日本向け配送に特化した 3 つのプランをご用意。ご注文数量・納期・配送先に応じて最適なプランを選択可能です：</p>
+<table>
+  <thead>
+    <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3-5 営業日</td><td>少量追加料金</td></tr>
+    <tr><td>深圳自社工場直送（事前予約制）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
+  </tbody>
+</table>
+<p>100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+
+<h3>環保認證と紙材溯源</h3>
+<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコ紙袋シリーズでは再生紙 100%・FSC Mix・大豆インク・水性コーティングを採用し、コンポスト可能・プラスチックフリー。ESG 配慮のブランドやサステナブル調達要件の企業向けに、紙材トレーサビリティレポートとカーボンフットプリント試算をご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
+
+<h3>深圳自社工場・事前予約制現地確認</h3>
+<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約制で現地確認・素材サンプル比較・耐荷重テスト・色校正確認に対応しています（日本語スタッフ同席可・1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
+
+<h3>多通貨決済</h3>
+<p>Airwallex 多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス制度対応。</p>
+
+<h3>常見問題 (FAQ)</h3>
+<details class="my-2"><summary><strong>本当に 100% リサイクル可能ですか？</strong></summary><p>はい。当社のクラフト紙 + 紙紐ハンドル + 大豆インクの紙袋は、標準的な紙リサイクル系統で完全にリサイクル可能です。エンド消費者向けリサイクル説明もご注文毎にご提供いたします。</p></details>
+<details class="my-2"><summary><strong>どのような認証を取得していますか？</strong></summary><p>FSC Mix、FSC Recycled、GOTS（オーガニックコットンハンドル）、TUV（グラスペーパー）、カーボンオフセット証明書。ご注文毎の個別証明書発行にも対応いたします。</p></details>
+<details class="my-2"><summary><strong>大豆インクで印刷できますか？</strong></summary><p>はい。エコラインの標準印刷は大豆インクです。フルカラーフォト印刷には同等の発色を持つ水性 CMYK インキもご用意、いずれも低 VOC です。</p></details>
+<details class="my-2"><summary><strong>食品接触に対応していますか？</strong></summary><p>はい。当社のエコクラフト紙袋は FDA 移行テストで間接食品接触に対応しております。直接接触用途には FDA 準拠インナーライナーを追加でご提供可能です。</p></details>
+<details class="my-2"><summary><strong>カスタムサイズに対応できますか？</strong></summary><p>はい。6×4×1.5 インチ（小型石鹸）から 16×12×5 インチ（大容量 grocery）まで対応。ご要望のサイズをお知らせください、お見積もりいたします。</p></details>
+<details class="my-2"><summary><strong>カーボンオフセットはどう対応していますか？</strong></summary><p>ご注文毎のカーボンフットプリント計算をご提供いたします。検証済みのオフセットプロジェクト（再森林化・再生可能エネルギー）と連携し、証明書を発行いたします。</p></details>
+
+<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>
+`,
     features: [
       '可選 FSC 認證與再生紙材',
       '大豆油墨與環保手挽方案',
@@ -4454,6 +5448,132 @@ export const products: Product[] = [
 <p><em>Printed in our Hong Kong facility, shipped worldwide via DHL Express. ZprintPro — your global printing partner for retail shopping bags, custom packaging, and brand merchandise.</em></p>
 
     `,
+    longDescriptionJa: `<h3>グローバルブランド向け カスタムハンドル紙袋（手提げ）</h3>
+<p>智印雲 ZprintPro のカスタムハンドル紙袋は、小売・アパレル・テイクアウト向けの定番ワークホースショッピングバッグです。120-200g の茶色または白クラフト紙に、コットン・紙紐・平織り紙の 3 種類、11 色の標準カラーハンドルから選択可能。補強ベースインサートで最大 12kg まで対応、ガゼットサイドが嵩張る商品をしっかり保持、フルカバー 4 色 CMYK 印刷でブランドを鮮やかに訴求。100 枚からご注文可能、3-5 営業日特急製作対応、FSC 認証取得。</p>
+
+<h3>素材とハンドルの比較</h3>
+<table>
+  <thead>
+    <tr><th>素材</th><th>強度</th><th>ハンドルオプション</th><th>コスト</th><th>適用場面</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>120g 茶色クラフト</td><td>★★★</td><td>紙紐 / 平織り</td><td>★★★★★</td><td>軽量小売、テイクアウト</td></tr>
+    <tr class="border-b border-gray-200"><td>150g 茶色クラフト</td><td>★★★★</td><td>コットン / 紙紐 / 平織り</td><td>★★★★</td><td>カフェ・ bakery、リテール</td></tr>
+    <tr class="border-b border-gray-200"><td>170g 白クラフト</td><td>★★★★</td><td>コットン / 紙紐 / リボン</td><td>★★★★</td><td>アパレル、ライフスタイルリテール</td></tr>
+    <tr><td>200g 茶色クラフト</td><td>★★★★★</td><td>コットン / 補強紙ハンドル</td><td>★★★</td><td>重量リテール、ツインパック、書籍</td></tr>
+  </tbody>
+</table>
+
+<h3>サイズと容量オプション</h3>
+<table>
+  <thead>
+    <tr><th>サイズ</th><th>寸法</th><th>容量</th><th>コスト</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>スモール (S)</td><td>200×100×280mm</td><td>★★★</td><td>★★★★★</td></tr>
+    <tr class="border-b border-gray-200"><td>ミディアム (M)</td><td>250×110×320mm</td><td>★★★★</td><td>★★★★</td></tr>
+    <tr class="border-b border-gray-200"><td>ラージ (L)</td><td>320×120×380mm</td><td>★★★★★</td><td>★★★</td></tr>
+    <tr class="border-b border-gray-200"><td>エクストララージ (XL)</td><td>400×150×450mm</td><td>★★★★★</td><td>★★</td></tr>
+    <tr><td>カスタム</td><td>ご要望の仕様をご提示ください</td><td>—</td><td>別途お見積もり</td></tr>
+  </tbody>
+</table>
+
+<h3>印刷工藝と品質管理</h3>
+<ul>
+  <li><strong>Heidelberg 4 色オフセット CMYK</strong>：業界標準機で色再現性 90% 以上、ブランドカラー厳守、フルカバー印刷対応</li>
+  <li><strong>ISO 12647 色彩管理</strong>：再印刷時の色ブレなし、大量発注時のロット間色差を最小化</li>
+  <li><strong>補強ベースインサート</strong>：12kg までの荷重対応、底面ダンボール芯材で重量商品の変形を防止</li>
+  <li><strong>11 色ハンドル標準在庫</strong>：黒・白・ナチュラル・茶・赤・ネイビー・フォレストグリーン・金・銀・ローズ・ベージュ、即納対応</li>
+  <li><strong>オプション：ホットスタンプ箔押し</strong>：ロゴ・ブランドマークに金属光沢を追加可能、別料金で特急対応</li>
+</ul>
+
+<h3>納期と MOQ（最低発注数量）</h3>
+<ul>
+  <li><strong>MOQ 100 枚</strong>：ポップアップイベント・少量テスト販売も対応、特急料金でさらに小ロットも対応可能</li>
+  <li><strong>標準納期 5-7 営業日</strong>：色校正確認後、本印刷開始</li>
+  <li><strong>特急 3-5 営業日</strong>：5,000 枚までのご注文で特急対応、追加料金で全国配送</li>
+  <li><strong>大量発注割引</strong>：500 枚 (+15%)、1,000 枚 (+25%)、5,000 枚以上 (+35%)</li>
+  <li><strong>当日ファイル確認</strong>：11 時（HKT）までのデータ確定で当日製作開始、次日発送対応</li>
+</ul>
+
+<h3>FSC 認証と ISO 9001 品質保証</h3>
+<p>智印雲 ZprintPro のカスタムハンドル紙袋は <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。120-200g のクラフト紙はすべて FSC 認証取得メーカーから調達、持続可能な紙材調達と厳格な品質管理を実現。ESG 報告用の紙材トレーサビリティレポートもご提供。アパレル・小売・カフェ・书店業界の B2B 向けに、最適なショッピングバッグソリューションをご提案します。</p>
+
+<h3>業界別活用事例</h3>
+<ul>
+  <li><strong>アパレルブランド</strong>：衣料品・アクセサリー・靴のショッピングバッグ、フルカラー印刷でブランド世界観を演出</li>
+  <li><strong>ギフトショップ・セレクトショップ</strong>：複数カテゴリの商品取扱い、サイズ S/M/L を使い分けで最適なパッケージング</li>
+  <li><strong>书店・文具店</strong>：書籍・雑誌・筆記具・ギフト商品、補強ベースで重量書籍も安心</li>
+  <li><strong>カフェ・ bakery</strong>： pastry・焼菓子・テイクアウト、150g クラフト + 紙紐ハンドルで環境に優しい世界観</li>
+  <li><strong>ワイン・酒販店</strong>： bottle 複数本持ち帰り、200g クラフト + 補強紙ハンドルで安全に持ち運べる</li>
+  <li><strong>化粧品・コスメ小売</strong>：スキンケア・美容商品、170g 白クラフト + リボンハンドルでプレミアム感演出</li>
+</ul>
+
+<h3>日本向け配送と多通貨決済</h3>
+<p>智印雲 ZprintPro は深圳自社工場から DHL Express で日本全国 2-4 営業日納品。<strong>100 枚以上のご注文は送料無料</strong>で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
+
+<h3>30 秒 AI 見積もり流程</h3>
+<p>ご注文は 3 ステップで完了：</p>
+<ol>
+  <li><strong>仕様選択</strong>：素材・ハンドル色・サイズ・数量・印刷色・オプションを画面上で簡単設定</li>
+  <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式対応、AI 自動チェックで展開図・ブリード・CMYK を事前検証</li>
+  <li><strong>確定・発注</strong>：総額表示を確認、決済方法で完了。色校正 PDF を 24 時間以内にお届け</li>
+</ol>
+
+<h3>失敗しない発注のための 5 つのポイント</h3>
+<p>ご注文前に、以下の 5 つのポイントをご確認いただくと、発注後のトラブルを未然に防げます：</p>
+<ul>
+  <li><strong>想定荷重を明確にする</strong>：4-6kg / 8-12kg / 10-15kg で素材・ハンドル・補強の組合せが異なる、想定最大重量を事前確認</li>
+  <li><strong>ハンドル色を在庫色から選ぶ</strong>：11 色の標準在庫色は即納対応、カスタム Pantone 色は 1,000 枚以上で対応</li>
+  <li><strong>展開図データを準備する</strong>：Illustrator / InDesign / PDF 形式推奨、ブリード 3mm、トンボ付きで ご入稿</li>
+  <li><strong>数量は段階割引を考慮する</strong>：500 枚 / 1,000 枚 / 5,000 枚で割引率が UP、まとめて発注がお得</li>
+  <li><strong>無料レイアウトサービスを活用する</strong>：カスタムダイライン・ブリード設定を専門家が作成</li>
+</ul>
+
+<h3>当サービスが選ばれる 5 つの理由</h3>
+<p>中国深圳の国際印刷ブランドとして、日本語・日本市場向けに最適化されたサービスを提供しています：</p>
+<ul>
+  <li><strong>日本語ネイティブ対応</strong>：日本語カスタマーサポート平日 9:00-18:00、日本向け請求書・領収書発行</li>
+  <li><strong>JPY 日本円建て明朗会計</strong>：為替変動リスクなし、経費精算しやすい</li>
+  <li><strong>30 秒 AI 見積もり</strong>：画面上で簡単設定、送料込みの総額表示で安心</li>
+  <li><strong>DHL/FedEx 直送 2-4 日</strong>：沖縄・離島も別途見積もり、全国配送対応</li>
+  <li><strong>FSC 認証 + ISO 9001</strong>：ESG 配慮、サステナブル調達 + 厳格な品質管理</li>
+</ul>
+
+<h3>配送方式と国際物流</h3>
+<p>日本向け配送に特化した 3 つのプランをご用意。ご注文数量・納期・配送先に応じて最適なプランを選択可能です：</p>
+<table>
+  <thead>
+    <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3-5 営業日</td><td>少量追加料金</td></tr>
+    <tr><td>深圳自社工場直送（事前予約制）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
+  </tbody>
+</table>
+<p>100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+
+<h3>環保認證と紙材溯源</h3>
+<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。ハンドル紙袋シリーズでは大豆インク・水性インクを採用し、エコシリーズでは再生紙も選択可能。ESG 配慮のブランドやサステナブル調達要件の企業向けに、紙材トレーサビリティレポートとカーボンフットプリント試算をご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
+
+<h3>深圳自社工場・事前予約制現地確認</h3>
+<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約制で現地確認・素材サンプル比較・ハンドル色見本確認・色校正確認に対応しています（日本語スタッフ同席可・1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
+
+<h3>多通貨決済</h3>
+<p>Airwallex 多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス制度対応。</p>
+
+<h3>常見問題 (FAQ)</h3>
+<details class="my-2"><summary><strong>最低発注数量はどのくらいですか？</strong></summary><p>100 枚からご注文可能です。数量割引は 500 枚 (+15%)、1,000 枚 (+25%)、5,000 枚以上 (+35%) で適用されます。</p></details>
+<details class="my-2"><summary><strong>紙袋はどのくらいの重量まで耐えられますか？</strong></summary><p>標準コットンロープハンドル紙袋は 8-12kg 対応。補強紙ロープは 10-15kg 対応。より重い荷物（酒類・書籍）には 200g クラフト + 補強ベースインサートを推奨いたします。</p></details>
+<details class="my-2"><summary><strong>ハンドル色をカスタマイズできますか？</strong></summary><p>はい。11 色の標準在庫コットンロープハンドルに加え、1,000 枚以上のご注文で Pantone カラーマッチングに対応いたします。</p></details>
+<details class="my-2"><summary><strong>利用可能なサイズを教えてください</strong></summary><p>S / M / L / XL の標準サイズでほとんどの小売ニーズに対応いたします。カスタム寸法は 6×4×1.5 インチから 16×12×5 インチまで対応可能です。</p></details>
+<details class="my-2"><summary><strong>特急製作に対応していますか？</strong></summary><p>はい。5,000 枚までのご注文で 3-5 日特急製作対応。11 時（HKT）までのデータ確定で当日製作開始、次日発送いたします。</p></details>
+<details class="my-2"><summary><strong>食品接触に対応していますか？</strong></summary><p>間接食品接触（パン・ pastry を個別包装して入れる場合）は対応可能です。直接食品接触には別料金で FDA 準拠インナーライナーをご用意いたします。</p></details>
+
+<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>
+`,
     features: [
       '手挽加固，承重更佳',
       '適合量販與雙件服飾購物',
@@ -4647,6 +5767,132 @@ export const products: Product[] = [
 <p><em>Printed in our Hong Kong facility, shipped worldwide via DHL Express. ZprintPro — your global printing partner for oversized retail bags, premium gift packaging, and heavy-duty brand merchandise.</em></p>
 
     `,
+    longDescriptionJa: `<h3>グローバルブランド向け 大型紙袋（強化タイプ）</h3>
+<p>智印雲 ZprintPro の大型紙袋は、アパレルツインパック・靴箱・ギフトハンパー・ホームグッズなど大型小売向けに最適化された高耐久ショッピングバッグです。200-300g の補強クラフト紙にツインコットンロープハンドル、両面グルー底、ガゼットサイドを組み合わせて 12-18kg までの荷重に対応。フルカバー 4 色 CMYK 印刷・箔押しロゴ・内側印刷もオプション対応で、プレミアム開封体験を演出。100 枚からご注文可能、7-10 営業日で標準製作、FSC 認証取得、荷重試験済み。</p>
+
+<h3>素材と強度の比較</h3>
+<table>
+  <thead>
+    <tr><th>素材</th><th>耐荷重</th><th>補強構造</th><th>印刷品質</th><th>適用場面</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>200g 茶色クラフト</td><td>12-15kg</td><td>両面グルー底</td><td>★★★★</td><td>アパレル、ツインパック靴</td></tr>
+    <tr class="border-b border-gray-200"><td>250g 茶色クラフト</td><td>14-18kg</td><td>段ボールベースインサート</td><td>★★★★</td><td>靴箱、ホームグッズ</td></tr>
+    <tr class="border-b border-gray-200"><td>300g 茶色クラフト</td><td>15-20kg</td><td>補強底 + 補強サイド</td><td>★★★★</td><td>ギフトハンパー、ワイン複数本</td></tr>
+    <tr><td>250g 白カード</td><td>14-18kg</td><td>段ボールベースインサート</td><td>★★★★★</td><td>プレミアムアパレル、宝飾品プレゼンテーション</td></tr>
+  </tbody>
+</table>
+
+<h3>サイズと容量オプション</h3>
+<table>
+  <thead>
+    <tr><th>サイズ</th><th>寸法</th><th>容量</th><th>適用場面</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>アパレルラージ</td><td>400×150×450mm</td><td>12kg</td><td>セーター・ジャケット・ツインパック靴</td></tr>
+    <tr class="border-b border-gray-200"><td>アパレル XL</td><td>500×150×500mm</td><td>15kg</td><td>バルクアパレル・コート・寝具</td></tr>
+    <tr class="border-b border-gray-200"><td>フットウェアボックス</td><td>350×200×250mm</td><td>10kg</td><td>靴箱・ブーツボックス</td></tr>
+    <tr class="border-b border-gray-200"><td>ギフトハンパー</td><td>450×250×350mm</td><td>18kg</td><td>ワイン・ gourmet・ holiday ハンパー</td></tr>
+    <tr><td>カスタム</td><td>ご要望の仕様をご提示ください</td><td>—</td><td>あらゆる大型小売ニーズ</td></tr>
+  </tbody>
+</table>
+
+<h3>印刷工藝と品質管理</h3>
+<ul>
+  <li><strong>Heidelberg 4 色オフセット CMYK</strong>：色再現性 90% 以上、フルカバー印刷対応、ブランドカラー厳守</li>
+  <li><strong>ISO 12647 色彩管理</strong>：再印刷時の色ブレなし、大量発注時のロット間色差を最小化</li>
+  <li><strong>ツインコットンロープハンドル</strong>：2 本組合せで重量分散、ハンドル取付部は多層グルー補強で切れ防止</li>
+  <li><strong>両面グルー底 + 補強ベースインサート</strong>：重量商品の底抜け防止、12-20kg まで対応</li>
+  <li><strong>オプション：内側印刷・箔押し</strong>：プレミアム開封体験、ホットスタンプ箔（金・銀・ローズゴールド・ホログラム）対応</li>
+</ul>
+
+<h3>納期と MOQ（最低発注数量）</h3>
+<ul>
+  <li><strong>MOQ 100 枚</strong>：DTC ブランド・限定ドロップも対応、特急料金でさらに小ロットも対応可能</li>
+  <li><strong>標準納期 7-10 営業日</strong>：色校正確認後、本印刷開始、構造設計が必要な場合は+1-2 日</li>
+  <li><strong>特急 3-5 営業日</strong>：追加料金で特急対応、緊急クリスマス・ holiday シーズン前に最適</li>
+  <li><strong>大量発注割引</strong>：500 枚 (+15%)、1,000 枚 (+25%)、2,500 枚以上 (+35%)</li>
+  <li><strong>無料構造設計サービス</strong>：補強ベースインサート・ガゼット深さ・ハンドル取付を荷重別に最適設計</li>
+</ul>
+
+<h3>FSC 認証と ISO 9001 品質保証</h3>
+<p>智印雲 ZprintPro の大型紙袋は <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。200-300g のクラフト紙はすべて FSC 認証取得メーカーから調達、持続可能な紙材調達と厳格な品質管理を実現。荷重試験（drop test 定格荷重 5 回実施）で品質保証。ESG 報告用の紙材トレーサビリティレポートもご提供。アパレル・靴・ホーム・ギフト業界の B2B 向けに、最適な大型紙袋ソリューションをご提案します。</p>
+
+<h3>業界別活用事例</h3>
+<ul>
+  <li><strong>プレミアムアパレルブランド</strong>：コート・セーター・ツインパックデニム、高級紙袋で商品価値と顧客体験の両方を向上</li>
+  <li><strong>靴小売・フットウェアブランド</strong>：靴箱・ブーツボックス用、250g クラフト + 補強ベースで安定保持</li>
+  <li><strong>ホームグッズ・家具</strong>：クッション・ブランケット・小型 decor、300g クラフトで安心</li>
+  <li><strong>ギフト・ハンパービジネス</strong>：holiday ハンパー・企業ギフト、450×250×350mm で大容量</li>
+  <li><strong>ワイン・ spirits 流通</strong>：複数本 bottle 持ち帰り、補強ベース + ツインハンドルで安全</li>
+  <li><strong>书店チェーン・教科書パック</strong>：教科書セット・雑誌バンドル、重量書籍も安定保持</li>
+</ul>
+
+<h3>日本向け配送と多通貨決済</h3>
+<p>智印雲 ZprintPro は深圳自社工場から DHL Express で日本全国 2-4 営業日納品。<strong>100 枚以上のご注文は送料無料</strong>で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
+
+<h3>30 秒 AI 見積もり流程</h3>
+<p>ご注文は 3 ステップで完了：</p>
+<ol>
+  <li><strong>仕様選択</strong>：素材・補強構造・ハンドルスタイル・サイズ・数量・印刷色・オプションを画面上で簡単設定</li>
+  <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式対応、構造展開図・ブリード・CMYK を AI 自動チェックで事前検証</li>
+  <li><strong>確定・発注</strong>：総額表示を確認、決済方法で完了。色校正 PDF を 24 時間以内にお届け</li>
+</ol>
+
+<h3>失敗しない発注のための 5 つのポイント</h3>
+<p>ご注文前に、以下の 5 つのポイントをご確認いただくと、発注後のトラブルを未然に防げます：</p>
+<ul>
+  <li><strong>想定最大荷重を明示する</strong>：12-15kg / 14-18kg / 15-20kg で素材・補強構造を選択、20kg 超は段ボール箱のご検討推奨</li>
+  <li><strong>ドロップテスト結果を参考にする</strong>：標準構成は定格荷重で 5 回ドロップテスト済み、安全マージンを確保</li>
+  <li><strong>ハンドルスタイルを選ぶ</strong>：コットンロープ・サテンリボン・グロスグレイン・ツイルテープ、別料金で $1-3/枚</li>
+  <li><strong>数量は段階割引を考慮する</strong>：500 枚 / 1,000 枚 / 2,500 枚で割引率が UP、まとめて発注がお得</li>
+  <li><strong>無料構造設計サービスを活用する</strong>：補強ベースインサート・ガゼット深さ・ハンドル取付を荷重別に最適設計</li>
+</ul>
+
+<h3>当サービスが選ばれる 5 つの理由</h3>
+<p>中国深圳の国際印刷ブランドとして、日本語・日本市場向けに最適化されたサービスを提供しています：</p>
+<ul>
+  <li><strong>日本語ネイティブ対応</strong>：日本語カスタマーサポート平日 9:00-18:00、日本向け請求書・領収書発行</li>
+  <li><strong>JPY 日本円建て明朗会計</strong>：為替変動リスクなし、経費精算しやすい</li>
+  <li><strong>30 秒 AI 見積もり</strong>：画面上で簡単設定、送料込みの総額表示で安心</li>
+  <li><strong>DHL/FedEx 直送 2-4 日</strong>：沖縄・離島も別途見積もり、全国配送対応</li>
+  <li><strong>FSC 認証 + ISO 9001</strong>：ESG 配慮、サステナブル調達 + 厳格な品質管理</li>
+</ul>
+
+<h3>配送方式と国際物流</h3>
+<p>日本向け配送に特化した 3 つのプランをご用意。ご注文数量・納期・配送先に応じて最適なプランを選択可能です：</p>
+<table>
+  <thead>
+    <tr><th>配送方式</th><th>対象</th><th>時效</th><th>費用</th></tr>
+  </thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>100 枚以上 送料無料</td></tr>
+    <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3-5 営業日</td><td>少量追加料金</td></tr>
+    <tr><td>深圳自社工場直送（事前予約制）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
+  </tbody>
+</table>
+<p>100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
+
+<h3>環保認證と紙材溯源</h3>
+<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。大型紙袋シリーズでは大豆インク・水性インクを採用し、エコシリーズでは再生紙も選択可能。ESG 配慮のブランドやサステナブル調達要件の企業向けに、紙材トレーサビリティレポートとカーボンフットプリント試算をご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
+
+<h3>深圳自社工場・事前予約制現地確認</h3>
+<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約制で現地確認・素材サンプル比較・荷重試験実演・ハンドルスタイル試着・色校正確認に対応しています（日本語スタッフ同席可・1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
+
+<h3>多通貨決済</h3>
+<p>Airwallex 多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス制度対応。</p>
+
+<h3>常見問題 (FAQ)</h3>
+<details class="my-2"><summary><strong>最低発注数量はどのくらいですか？</strong></summary><p>100 枚からご注文可能です。数量割引は 500 枚 (+15%)、1,000 枚 (+25%)、2,500 枚以上 (+35%) で適用されます。</p></details>
+<details class="my-2"><summary><strong>紙袋はどのくらいの重量まで耐えられますか？</strong></summary><p>200g クラフトは 12-15kg、250g は 14-18kg、300g は 15-20kg まで対応。段ボールベースインサートでさらに 2-3kg 容量 UP。すべて定格荷重で 5 回ドロップテスト済みです。</p></details>
+<details class="my-2"><summary><strong>カスタムサイズに対応できますか？</strong></summary><p>はい。600×300×600mm まで対応。それ以上のサイズは段ボール箱など特別仕様をご相談ください。</p></details>
+<details class="my-2"><summary><strong>リボンやプレミアムハンドルはありますか？</strong></summary><p>はい。コットンロープ・サテンリボン・グロスグレインリボン・ツイルテープなどご用意しております。プレミアムハンドルはスタイルにより 1 枚あたり $1-3 の追加料金で対応可能です。</p></details>
+<details class="my-2"><summary><strong>非常に重い商品用に補強できますか？</strong></summary><p>20kg を超える場合は段ボール箱のご検討を推奨いたします。15-20kg の紙袋には、二重段ボールベースインサート + 補強ハンドル取付で対応いたします。</p></details>
+<details class="my-2"><summary><strong>箔押しや内側印刷に対応していますか？</strong></summary><p>はい、いずれも対応可能です。箔押し（金・銀・ローズゴールド・ホログラム）と内側片面またはフルカラー印刷は製作期間 1-2 日追加、デザイン複雑性に応じたお見積もりとなります。</p></details>
+
+<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>
+`,
     features: [
       '【320×120×380mm】加大尺寸，適合外套、鞋盒、大型禮品',
       '【加固車縫】底部貼底工藝，承重達 8–10 公斤',
@@ -16502,35 +17748,35 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
       name: '同人誌印刷',
       nameEn: 'Doujinshi Printing',
       nameJa: '同人誌印刷',
-      title_zh: '同人誌印刷 コミケ対応',
-      description: 'コミケ・即売会向け同人誌印刷。A5/B5 サイズ対応、表紙フルカラー、本文モノクロ。本文 10 部から対応、コミケ前 24 時間特急対応可能。',
+      title_zh: '同人誌印刷 | Comiket 對應 | 智印雲',
+      description: '專為 Comiket 及同人活動設計的同人誌印刷。A5/B5 標準尺寸,封面彩色、內頁單色。10 本起印,Comiket 前 24 小時特急対応。',
       descriptionEn: 'Doujinshi printing for Comiket and doujin events. A5/B5 sizes, full-color cover + mono interior. MOQ 10 books. 24-hour rush available before Comiket.',
       descriptionJa: 'コミケ・即売会向け同人誌印刷。A5/B5 サイズ対応、表紙フルカラー、本文モノクロ。本文 10 部から対応、コミケ前 24 時間特急対応可能。',
-      description_zh: 'コミケ・即売会向け同人誌印刷。A5/B5 サイズ対応、表紙フルカラー、本文モノクロ。本文 10 部から対応、コミケ前 24 時間特急対応可能。',
-      longDescription: `<h3>同人誌・推し活特化印刷サービス</h3>
-<p>コミケ・即売会・創作イベント向けに最適化された同人誌印刷。表紙フルカラー + 本文モノクロの標準構成から、表紙本文ともにフルカラーのプレミアム構成まで対応。本文 10 部からの少部数対応で、個人サークル・初心者も気軽に発注可能。コミケ開催前は 24 時間特急対応で、在庫切れの追加印刷も迅速対応。</p>
+      description_zh: '專為 Comiket 及同人活動設計的同人誌印刷。A5/B5 標準尺寸,封面彩色、內頁單色。10 本起印,Comiket 前 24 小時特急対応。',
+      longDescription: `<h3>同人誌印刷 — Comiket / 即售會 / 創作活動特化服務</h3>
+<p>專為 Comiket、即售會、創作活動優化的同人誌印刷服務。封面彩色 + 內頁單色標準配置起,另有封面內頁全彩色升級版可選。10 本起印的低起訂量,個人社團 / 新手作者也能輕鬆下單。Comiket 會期前 24 小時特急対応,完售補印 / 臨時追加都來得及。</p>
 
-<h3>サイズ・仕様</h3>
+<h3>尺寸・規格</h3>
 <table>
-  <thead><tr><th>項目</th><th>仕様</th></tr></thead>
+  <thead><tr><th>項目</th><th>規格</th></tr></thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>材質</td><td>FSC認証 上質紙 90g/コート紙 90g (表紙)</td></tr>
-    <tr class="border-b border-gray-200"><td>サイズ</td><td>A5 (148×210mm) / B5 (182×257mm) / A4 (オプション)</td></tr>
-    <tr><td>印刷方式</td><td>表紙: オフセット4色 / 本文: オンデマンド or オフセット</td></tr>
+    <tr class="border-b border-gray-200"><td>材質</td><td>FSC 認證道林紙 90g / 銅版紙 90g (封面)</td></tr>
+    <tr class="border-b border-gray-200"><td>尺寸</td><td>A5 (148×210mm) / B5 (182×257mm) / A4 (可選)</td></tr>
+    <tr><td>印刷方式</td><td>封面: 柯式四色 / 內頁: 數碼或柯式印刷</td></tr>
   </tbody>
 </table>
 
-<h3>コミケ・即売会前 特急対応</h3>
-<p>智印雲 ZprintPro はコミケ前 24 時間特急対応で、在庫切れの追加印刷や直前物販にも迅速対応。深圳自社工場から DHL Express で 2-4 日で日本直送、日本語サポートで安心取引。</p>
+<h3>Comiket・即售會前特急対応</h3>
+<p>智印雲 ZprintPro 提供 Comiket 前 24 小時特急対応,完售補印及會場直前販售都迅速處理。深圳自營工廠 DHL Express 直送日本 2-4 個工作天,日文客服 + 繁體中文客服雙語支援,安心交易。</p>
 
-<h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>最低何個から注文できますか？</strong></summary><p>10 個から対応可能です。個人サークル・個人作家様も安心してご注文いただけます。</p></details>
-<details class="my-2"><summary><strong>コミケ前の特急対応はできますか？</strong></summary><p>はい、コミケ開催前は 24 時間特急対応可能 (一部 SKU、追加料金適用)。詳細は WhatsApp でお問い合わせください。</p></details>
-<details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>深圳自社工場から DHL Express で 2-4 営業日でお届け。コミケ会場受取・自宅受取どちらも対応可能です。</p></details>
-<details class="my-2"><summary><strong>データ入稿の形式は？</strong></summary><p>Illustrator / Photoshop / PDF 形式推奨、CMYK モード、解像度 300dpi 以上。無料 AI データチェックで対応。</p></details>
-<details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能です。品質問題 (色ズレ・印刷ミス) は無料で再印刷または全額返金いたします。</p></details>
+<h3>常見問題 (FAQ)</h3>
+<details class="my-2"><summary><strong>最低可以印多少本？</strong></summary><p>10 本起印。個人社團及獨立作者都歡迎下單。</p></details>
+<details class="my-2"><summary><strong>Comiket 前特急対応可以嗎？</strong></summary><p>可以,會期前 24 小時特急対応(部分 SKU 適用,加收特急費用)。詳情請透過 WhatsApp 洽詢。</p></details>
+<details class="my-2"><summary><strong>DHL 直送日本需時多久？</strong></summary><p>深圳自營工廠 DHL Express 直送日本,2-4 個工作天到貨。Comiket 會場收貨及自宅收貨皆可。</p></details>
+<details class="my-2"><summary><strong>接受什麼檔案格式？</strong></summary><p>建議 Illustrator / Photoshop / PDF,CMYK 模式,解像度 300dpi 以上。免費 AI 資料檢查服務。</p></details>
+<details class="my-2"><summary><strong>可以取消或退貨嗎？</strong></summary><p>印刷開始前可取消。品質問題(色差 / 印刷瑕疵)提供免費重印或全額退款。</p></details>
 
-<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
+<p><em>智印雲 (ZprintPro) 是深圳市彩龍印刷包裝有限公司營運的國際印刷服務品牌。深圳自營工廠 DHL Express 全球 2-4 日配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>`,
       longDescriptionEn: `<h3>Specialized Printing for Doujin & Oshi-katsu Markets</h3>
 <p>Optimized for Comiket, doujin events, and creative exhibitions. Standard full-color cover + mono interior, with premium full-color cover-and-interior upgrades. Low MOQ of 10 books makes this accessible for individual circles and beginners. 24-hour rush production available before Comiket for last-minute reprints.</p>
 
@@ -16642,15 +17888,15 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
         ],
         size: [
           { value: 'standard', label: '標準尺寸', priceAdjustment: 0 },
-          { value: 'custom', label: 'カスタムサイズ', priceAdjustment: 800 },
+          { value: 'custom', label: '自訂尺寸', priceAdjustment: 800 },
         ],
       },
       variables: {
         quantities: [
-          { value: 10, label: '10 個〜', discount: 0 },
-          { value: 50, label: '50 個〜', discount: 0.05 },
-          { value: 100, label: '100 個〜', discount: 0.10 },
-          { value: 500, label: '500 個〜', discount: 0.15 },
+          { value: 10, label: '10 件起', discount: 0 },
+          { value: 50, label: '50 件', discount: 0.05 },
+          { value: 100, label: '100 件', discount: 0.10 },
+          { value: 500, label: '500 件', discount: 0.15 },
         ],
       },
     },
@@ -16668,30 +17914,30 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
       descriptionEn: 'Custom-shaped acrylic keychains for anime, VTuber, and character goods. Clear/white/full-color printing. 2mm/3mm thickness options. MOQ 10 pcs. Safety pin or chain options.',
       descriptionJa: '推し活・VTuber・キャラクターグッズ向けアクリルキーホルダー。透明/白/満版印刷対応。2mm/3mm 厚み選択可。10 個から対応、安全ピン/チェーンオプション。',
       description_zh: 'VTuber / 動漫角色主題亞克力鑰匙扣訂製。30-80mm 任意形狀,2mm / 3mm 厚度選擇,10 件起印,可加掛繩 / 安全扣。',
-      longDescription: `<h3>同人誌・推し活特化印刷サービス</h3>
-<p>推し活応援・キャラクターグッズ・アクリルスタンドの小型版。完全なカスタム形状対応 — VTuber・Vtuber のロゴ、推しキャラのイラストをそのままキーホルダー化。2mm と 3mm 厚で価格・手触りが異なる。10 個から対応で、個人作家・同人イベント参加にも最適。安全ピン・チェーン・ナスカンなど付属品も選択可能。</p>
+      longDescription: `<h3>亞克力鑰匙扣 — 推し活 / VTuber / 角色周邊訂製</h3>
+<p>推し活應援、VTuber 周邊、角色商品的最佳選擇。完全自訂形狀,VTuber logo 或最愛角色插圖直接做成可佩戴的鑰匙扣。2mm 與 3mm 厚度提供不同價格帶與手感。10 件起印的低起訂量,個人作家及同人活動參展也適合。可選配件:安全扣、珠鏈、掛鉤扣。</p>
 
-<h3>サイズ・仕様</h3>
+<h3>尺寸・規格</h3>
 <table>
-  <thead><tr><th>項目</th><th>仕様</th></tr></thead>
+  <thead><tr><th>項目</th><th>規格</th></tr></thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>材質</td><td>透明アクリル板 2mm/3mm (オプション: 白ベース / 満版印刷)</td></tr>
-    <tr class="border-b border-gray-200"><td>サイズ</td><td>30-80mm (カスタム形状可、Illustrator パスデータ入稿)</td></tr>
-    <tr><td>印刷方式</td><td>UV インクジェット 4色 (CMYK + 白インク)</td></tr>
+    <tr class="border-b border-gray-200"><td>材質</td><td>透明亞加力膠板 2mm / 3mm (可選:白底 / 滿版印刷)</td></tr>
+    <tr class="border-b border-gray-200"><td>尺寸</td><td>30-80mm (自訂形狀,Illustrator パス路徑入稿)</td></tr>
+    <tr><td>印刷方式</td><td>UV 噴墨四色 (CMYK + 白墨)</td></tr>
   </tbody>
 </table>
 
-<h3>コミケ・即売会前 特急対応</h3>
-<p>智印雲 ZprintPro はコミケ前 24 時間特急対応で、在庫切れの追加印刷や直前物販にも迅速対応。深圳自社工場から DHL Express で 2-4 日で日本直送、日本語サポートで安心取引。</p>
+<h3>Comiket・即售會前特急対応</h3>
+<p>智印雲 ZprintPro 提供 Comiket 前 24 小時特急対応,完售補印及會場直前販售都迅速處理。深圳自營工廠 DHL Express 直送日本 2-4 個工作天,日文客服 + 繁體中文客服雙語支援,安心交易。</p>
 
-<h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>最低何個から注文できますか？</strong></summary><p>10 個から対応可能です。個人サークル・個人作家様も安心してご注文いただけます。</p></details>
-<details class="my-2"><summary><strong>コミケ前の特急対応はできますか？</strong></summary><p>はい、コミケ開催前は 24 時間特急対応可能 (一部 SKU、追加料金適用)。詳細は WhatsApp でお問い合わせください。</p></details>
-<details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>深圳自社工場から DHL Express で 2-4 営業日でお届け。コミケ会場受取・自宅受取どちらも対応可能です。</p></details>
-<details class="my-2"><summary><strong>データ入稿の形式は？</strong></summary><p>Illustrator / Photoshop / PDF 形式推奨、CMYK モード、解像度 300dpi 以上。無料 AI データチェックで対応。</p></details>
-<details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能です。品質問題 (色ズレ・印刷ミス) は無料で再印刷または全額返金いたします。</p></details>
+<h3>常見問題 (FAQ)</h3>
+<details class="my-2"><summary><strong>最低可以印幾件？</strong></summary><p>10 件起印。個人社團及獨立作者都歡迎下單。</p></details>
+<details class="my-2"><summary><strong>Comiket 前特急対応可以嗎？</strong></summary><p>可以,會期前 24 小時特急対応(部分 SKU 適用,加收特急費用)。詳情請透過 WhatsApp 洽詢。</p></details>
+<details class="my-2"><summary><strong>DHL 直送日本需時多久？</strong></summary><p>深圳自營工廠 DHL Express 直送日本,2-4 個工作天到貨。Comiket 會場收貨及自宅收貨皆可。</p></details>
+<details class="my-2"><summary><strong>接受什麼檔案格式？</strong></summary><p>建議 Illustrator / Photoshop / PDF,CMYK 模式,解像度 300dpi 以上。免費 AI 資料檢查服務。</p></details>
+<details class="my-2"><summary><strong>可以取消或退貨嗎？</strong></summary><p>印刷開始前可取消。品質問題(色差 / 印刷瑕疵)提供免費重印或全額退款。</p></details>
 
-<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
+<p><em>智印雲 (ZprintPro) 是深圳市彩龍印刷包裝有限公司營運的國際印刷服務品牌。深圳自營工廠 DHL Express 全球 2-4 日配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>`,
       longDescriptionEn: `<h3>Specialized Printing for Doujin & Oshi-katsu Markets</h3>
 <p>Custom acrylic keychains for anime, VTuber, and character merchandise. Fully customizable shapes — your VTuber logo or favorite character artwork becomes a wearable keychain. Choose 2mm or 3mm thickness for different price points and tactile feel. MOQ of 10 pcs makes it accessible for individual artists and doujin event participation. Optional accessories: safety pin, ball chain, or hook clasp.</p>
 
@@ -16699,9 +17945,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <table>
   <thead><tr><th>Spec</th><th>Details</th></tr></thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>Material</td><td>透明アクリル板 2mm/3mm (オプション: 白ベース / 満版印刷)</td></tr>
-    <tr class="border-b border-gray-200"><td>Size</td><td>30-80mm (カスタム形状可、Illustrator パスデータ入稿)</td></tr>
-    <tr><td>Print Method</td><td>UV インクジェット 4色 (CMYK + 白インク)</td></tr>
+    <tr class="border-b border-gray-200"><td>Material</td><td>Clear acrylic 2mm / 3mm (options: white base / full-color print)</td></tr>
+    <tr class="border-b border-gray-200"><td>Size</td><td>30-80mm (custom shapes, Illustrator path data submission)</td></tr>
+    <tr><td>Print Method</td><td>UV inkjet 4-color (CMYK + white ink)</td></tr>
   </tbody>
 </table>
 
@@ -16788,34 +18034,34 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
       },
       features: [
         'Comiket 前 24 小時特急対応可',
-        '10 個から少部数対応',
-        '深圳自社工場 + DHL Express 2-4 日日本直送',
-        'FSC 認証紙材 / ISO 12647 色彩管理',
-        '日本語サポート + WhatsApp 対応',
-        '30-80mm (カスタム形状可、Illustrator パ サイズ'
+        '10 件起印,少量対応',
+        '深圳自營工廠 + DHL Express 直送日本 2-4 個工作天',
+        'FSC 認證紙材 / ISO 12647 色彩管理',
+        '繁體中文 / 日文雙語支援 + WhatsApp 對應',
+        '30-80mm (任意自訂形狀,Illustrator 路徑檔入稿)'
       ],
       specs: {
-        material: '透明アクリル板 2mm/3mm (オプション: 白ベース / 満版印刷)',
-        size: '30-80mm (カスタム形状可、Illustrator パスデータ入稿)',
-        printMethod: 'UV インクジェット 4色 (CMYK + 白インク)',
-        finishing: '安全ピン / ボールチェーン / ナスカン / ヘッダーOPP袋封入',
+        material: '透明亞加力膠板 2mm / 3mm (可選:白底 / 滿版印刷)',
+        size: '30-80mm (自訂形狀,Illustrator パス路徑入稿)',
+        printMethod: 'UV 噴墨四色 (CMYK + 白墨)',
+        finishing: '安全扣 / 珠鏈 / 掛鉤扣 / OPP 袋封裝',
       },
       options: {
         material: [
           { value: 'standard', label: '標準', priceAdjustment: 0 },
-          { value: 'premium', label: 'プレミアム', priceAdjustment: 1500 },
+          { value: 'premium', label: '進階', priceAdjustment: 1500 },
         ],
         size: [
           { value: 'standard', label: '標準サイズ', priceAdjustment: 0 },
-          { value: 'custom', label: 'カスタムサイズ', priceAdjustment: 800 },
+          { value: 'custom', label: '自訂尺寸', priceAdjustment: 800 },
         ],
       },
       variables: {
         quantities: [
-          { value: 10, label: '10 個〜', discount: 0 },
-          { value: 50, label: '50 個〜', discount: 0.05 },
-          { value: 100, label: '100 個〜', discount: 0.10 },
-          { value: 500, label: '500 個〜', discount: 0.15 },
+          { value: 10, label: '10 件起', discount: 0 },
+          { value: 50, label: '50 件', discount: 0.05 },
+          { value: 100, label: '100 件', discount: 0.10 },
+          { value: 500, label: '500 件', discount: 0.15 },
         ],
       },
     },
@@ -16833,30 +18079,30 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
       descriptionEn: '57mm/76mm can badge printing with safety pin. Full-color print, MOQ 10 pcs. Ideal for Comiket, oshi-katsu support, corporate events, and merchandise sales.',
       descriptionJa: '57mm/76mm 缶バッジ印刷、安全ピン付き。フルカラー印刷、10 個から対応。コミケ・推し活応援・企業イベント・物販用に最適。',
       description_zh: '57mm / 76mm 標準罐型襟章,含安全扣。彩色印刷,10 件起印。Comiket / 推し活 / 活動物販首選。',
-      longDescription: `<h3>同人誌・推し活特化印刷サービス</h3>
-<p>コミケ・推し活・VTuber 物販に必須の缶バッジ。57mm 標準サイズと 76mm 大判、44mm ミニの 3 サイズ展開。フルカラー印刷でイラスト・ロゴをそのまま再現。安全ピン標準装備で衣服・カバンに簡単装着。10 個から少部数対応で、個人サークルも気軽に発注可能。コミケ前特急対応で、追加発注にも迅速対応。</p>
+      longDescription: `<h3>罐型襟章 (Can Badge) — Comiket / 推し活 / VTuber 物販必備</h3>
+<p>Comiket、推し活、VTuber 攤位必備的罐型襟章。提供 57mm 標準、76mm 大尺寸、44mm 迷你三種規格。彩色印刷忠實還原插圖與 logo 細節。安全扣標準配備,輕鬆別在衣物或包包上。10 件起印的低起訂量,個人社團也能輕鬆下單。Comiket 前特急対応,臨時追加訂單迅速處理。</p>
 
-<h3>サイズ・仕様</h3>
+<h3>尺寸・規格</h3>
 <table>
-  <thead><tr><th>項目</th><th>仕様</th></tr></thead>
+  <thead><tr><th>項目</th><th>規格</th></tr></thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>材質</td><td>金属ベース + 紙/ペット印刷面 + 安全ピン</td></tr>
-    <tr class="border-b border-gray-200"><td>サイズ</td><td>57mm (標準) / 76mm (大判) / 44mm (ミニ)</td></tr>
-    <tr><td>印刷方式</td><td>オフセット/デジタル 4色 (CMYK)</td></tr>
+    <tr class="border-b border-gray-200"><td>材質</td><td>金屬底座 + 紙 / PET 印刷面 + 安全扣</td></tr>
+    <tr class="border-b border-gray-200"><td>尺寸</td><td>57mm (標準) / 76mm (大尺寸) / 44mm (迷你)</td></tr>
+    <tr><td>印刷方式</td><td>柯式 / 數碼四色 (CMYK)</td></tr>
   </tbody>
 </table>
 
-<h3>コミケ・即売会前 特急対応</h3>
-<p>智印雲 ZprintPro はコミケ前 24 時間特急対応で、在庫切れの追加印刷や直前物販にも迅速対応。深圳自社工場から DHL Express で 2-4 日で日本直送、日本語サポートで安心取引。</p>
+<h3>Comiket・即售會前特急対応</h3>
+<p>智印雲 ZprintPro 提供 Comiket 前 24 小時特急対応,完售補印及會場直前販售都迅速處理。深圳自營工廠 DHL Express 直送日本 2-4 個工作天,日文客服 + 繁體中文客服雙語支援,安心交易。</p>
 
-<h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>最低何個から注文できますか？</strong></summary><p>10 個から対応可能です。個人サークル・個人作家様も安心してご注文いただけます。</p></details>
-<details class="my-2"><summary><strong>コミケ前の特急対応はできますか？</strong></summary><p>はい、コミケ開催前は 24 時間特急対応可能 (一部 SKU、追加料金適用)。詳細は WhatsApp でお問い合わせください。</p></details>
-<details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>深圳自社工場から DHL Express で 2-4 営業日でお届け。コミケ会場受取・自宅受取どちらも対応可能です。</p></details>
-<details class="my-2"><summary><strong>データ入稿の形式は？</strong></summary><p>Illustrator / Photoshop / PDF 形式推奨、CMYK モード、解像度 300dpi 以上。無料 AI データチェックで対応。</p></details>
-<details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能です。品質問題 (色ズレ・印刷ミス) は無料で再印刷または全額返金いたします。</p></details>
+<h3>常見問題 (FAQ)</h3>
+<details class="my-2"><summary><strong>最低可以印幾件？</strong></summary><p>10 件起印。個人社團及獨立作者都歡迎下單。</p></details>
+<details class="my-2"><summary><strong>Comiket 前特急対応可以嗎？</strong></summary><p>可以,會期前 24 小時特急対応(部分 SKU 適用,加收特急費用)。詳情請透過 WhatsApp 洽詢。</p></details>
+<details class="my-2"><summary><strong>DHL 直送日本需時多久？</strong></summary><p>深圳自營工廠 DHL Express 直送日本,2-4 個工作天到貨。Comiket 會場收貨及自宅收貨皆可。</p></details>
+<details class="my-2"><summary><strong>接受什麼檔案格式？</strong></summary><p>建議 Illustrator / Photoshop / PDF,CMYK 模式,解像度 300dpi 以上。免費 AI 資料檢查服務。</p></details>
+<details class="my-2"><summary><strong>可以取消或退貨嗎？</strong></summary><p>印刷開始前可取消。品質問題(色差 / 印刷瑕疵)提供免費重印或全額退款。</p></details>
 
-<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
+<p><em>智印雲 (ZprintPro) 是深圳市彩龍印刷包裝有限公司營運的國際印刷服務品牌。深圳自營工廠 DHL Express 全球 2-4 日配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>`,
       longDescriptionEn: `<h3>Specialized Printing for Doujin & Oshi-katsu Markets</h3>
 <p>Essential can badges for Comiket, oshi-katsu, and VTuber merchandise. Three sizes: 57mm standard, 76mm large, 44mm mini. Full-color printing preserves illustration and logo details. Safety pin included for easy attachment to clothing or bags. Low MOQ of 10 pcs makes it accessible for individual circles. Rush production available before Comiket for last-minute orders.</p>
 
@@ -16864,9 +18110,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <table>
   <thead><tr><th>Spec</th><th>Details</th></tr></thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>Material</td><td>金属ベース + 紙/ペット印刷面 + 安全ピン</td></tr>
-    <tr class="border-b border-gray-200"><td>Size</td><td>57mm (標準) / 76mm (大判) / 44mm (ミニ)</td></tr>
-    <tr><td>Print Method</td><td>オフセット/デジタル 4色 (CMYK)</td></tr>
+    <tr class="border-b border-gray-200"><td>Material</td><td>Metal base + paper / PET print surface + safety pin</td></tr>
+    <tr class="border-b border-gray-200"><td>Size</td><td>57mm (standard) / 76mm (large) / 44mm (mini)</td></tr>
+    <tr><td>Print Method</td><td>Offset / digital 4-color (CMYK)</td></tr>
   </tbody>
 </table>
 
@@ -16951,34 +18197,34 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
       },
       features: [
         'Comiket 前 24 小時特急対応可',
-        '10 個から少部数対応',
-        '深圳自社工場 + DHL Express 2-4 日日本直送',
-        'FSC 認証紙材 / ISO 12647 色彩管理',
-        '日本語サポート + WhatsApp 対応',
-        '57mm (標準) / 76mm (大判) / 44mm ( サイズ'
+        '10 件起印,少量対応',
+        '深圳自營工廠 + DHL Express 直送日本 2-4 個工作天',
+        'FSC 認證紙材 / ISO 12647 色彩管理',
+        '繁體中文 / 日文雙語支援 + WhatsApp 對應',
+        '57mm (標準) / 76mm (大尺寸) / 44mm (迷你) 三款可選'
       ],
       specs: {
-        material: '金属ベース + 紙/ペット印刷面 + 安全ピン',
-        size: '57mm (標準) / 76mm (大判) / 44mm (ミニ)',
-        printMethod: 'オフセット/デジタル 4色 (CMYK)',
-        finishing: '安全ピン標準装備 / OPP袋個別包装オプション',
+        material: '金屬底座 + 紙 / PET 印刷面 + 安全扣',
+        size: '57mm (標準) / 76mm (大尺寸) / 44mm (迷你)',
+        printMethod: '柯式 / 數碼四色 (CMYK)',
+        finishing: '安全扣標準配備 / OPP 袋獨立包裝可選',
       },
       options: {
         material: [
           { value: 'standard', label: '標準', priceAdjustment: 0 },
-          { value: 'premium', label: 'プレミアム', priceAdjustment: 1500 },
+          { value: 'premium', label: '進階', priceAdjustment: 1500 },
         ],
         size: [
           { value: 'standard', label: '標準サイズ', priceAdjustment: 0 },
-          { value: 'custom', label: 'カスタムサイズ', priceAdjustment: 800 },
+          { value: 'custom', label: '自訂尺寸', priceAdjustment: 800 },
         ],
       },
       variables: {
         quantities: [
-          { value: 10, label: '10 個〜', discount: 0 },
-          { value: 50, label: '50 個〜', discount: 0.05 },
-          { value: 100, label: '100 個〜', discount: 0.10 },
-          { value: 500, label: '500 個〜', discount: 0.15 },
+          { value: 10, label: '10 件起', discount: 0 },
+          { value: 50, label: '50 件', discount: 0.05 },
+          { value: 100, label: '100 件', discount: 0.10 },
+          { value: 500, label: '500 件', discount: 0.15 },
         ],
       },
     },
@@ -16996,31 +18242,31 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
       descriptionEn: 'Washi-style postcard sets in 4-8 piece collections. Ideal for character goods, VTuber, illustration collections. 105×148mm standard, double-sided printing, OPP sleeve packaging.',
       descriptionJa: '和紙風ポストカード 4-8 枚セット。推しキャラ・VTuber・イラストコレクション。105×148mm 標準、両面印刷対応、OPP スリーブ封入。',
       description_zh: '和紙風藝術紙明信片套裝,4 件套起印,雙面印刷。Comiket 限定贈品 / 收藏首選。',
-      longDescription: `<h3>同人誌・推し活特化印刷サービス</h3>
-<p>推しキャラ・VTuber のイラストやサイン会配布用に最適なポストカードセット。4-8 枚のセット販売で、コレクション性が高い。和紙風アート紙採用で、和風・古風テイストの作品にもマッチ。両面印刷対応で、表面イラスト + 裏面テキスト/サインを自由にデザイン。OPP スリーブ個別包装で、傷・汚れから保護。</p>
+      longDescription: `<h3>明信片套裝 — 推しキャラ / VTuber / 簽名會贈品最佳選擇</h3>
+<p>推し角色、VTuber 插圖、簽名會分發用的最佳明信片套裝。4-8 件成套販售,收藏性高。和紙風藝術紙適合和風、復古風格作品。雙面印刷,正面插圖 + 背面文字 / 簽名自由設計。OPP 獨立袋包裝,防刮防塵。</p>
 
-<h3>サイズ・仕様</h3>
+<h3>尺寸・規格</h3>
 <table>
-  <thead><tr><th>項目</th><th>仕様</th></tr></thead>
+  <thead><tr><th>項目</th><th>規格</th></tr></thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>材質</td><td>和紙風アート紙 180g / 両面マットPPラミネート</td></tr>
-    <tr class="border-b border-gray-200"><td>サイズ</td><td>105×148mm (A6 標準ポストカード)</td></tr>
-    <tr><td>印刷方式</td><td>オンデマンド/オフセット 4色 (CMYK)</td></tr>
+    <tr class="border-b border-gray-200"><td>材質</td><td>和紙風藝術紙 180g / 雙面霧面 PP 貼膜</td></tr>
+    <tr class="border-b border-gray-200"><td>尺寸</td><td>105×148mm (A6 標準明信片)</td></tr>
+    <tr><td>印刷方式</td><td>數碼 / 柯式四色 (CMYK)</td></tr>
   </tbody>
 </table>
 
-<h3>コミケ・即売会前 特急対応</h3>
-<p>智印雲 ZprintPro はコミケ前 24 時間特急対応で、在庫切れの追加印刷や直前物販にも迅速対応。深圳自社工場から DHL Express で 2-4 日で日本直送、日本語サポートで安心取引。</p>
+<h3>Comiket・即售會前特急対応</h3>
+<p>智印雲 ZprintPro 提供 Comiket 前 24 小時特急対応,完售補印及會場直前販售都迅速處理。深圳自營工廠 DHL Express 直送日本 2-4 個工作天,日文客服 + 繁體中文客服雙語支援,安心交易。</p>
 
-<h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>最低何個から注文できますか？</strong></summary><p>4 個から対応可能です。個人サークル・個人作家様も安心してご注文いただけます。</p></details>
-<details class="my-2"><summary><strong>コミケ前の特急対応はできますか？</strong></summary><p>はい、コミケ開催前は 24 時間特急対応可能 (一部 SKU、追加料金適用)。詳細は WhatsApp でお問い合わせください。</p></details>
-<details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>深圳自社工場から DHL Express で 2-4 営業日でお届け。コミケ会場受取・自宅受取どちらも対応可能です。</p></details>
-<details class="my-2"><summary><strong>データ入稿の形式は？</strong></summary><p>Illustrator / Photoshop / PDF 形式推奨、CMYK モード、解像度 300dpi 以上。無料 AI データチェックで対応。</p></details>
-<details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能です。品質問題 (色ズレ・印刷ミス) は無料で再印刷または全額返金いたします。</p></details>
+<h3>常見問題 (FAQ)</h3>
+<details class="my-2"><summary><strong>最低可以印幾套？</strong></summary><p>4 套起印。個人社團及獨立作者都歡迎下單。</p></details>
+<details class="my-2"><summary><strong>Comiket 前特急対応可以嗎？</strong></summary><p>可以,會期前 24 小時特急対応(部分 SKU 適用,加收特急費用)。詳情請透過 WhatsApp 洽詢。</p></details>
+<details class="my-2"><summary><strong>DHL 直送日本需時多久？</strong></summary><p>深圳自營工廠 DHL Express 直送日本,2-4 個工作天到貨。Comiket 會場收貨及自宅收貨皆可。</p></details>
+<details class="my-2"><summary><strong>接受什麼檔案格式？</strong></summary><p>建議 Illustrator / Photoshop / PDF,CMYK 模式,解像度 300dpi 以上。免費 AI 資料檢查服務。</p></details>
+<details class="my-2"><summary><strong>可以取消或退貨嗎？</strong></summary><p>印刷開始前可取消。品質問題(色差 / 印刷瑕疵)提供免費重印或全額退款。</p></details>
 
-<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
-      longDescriptionEn: `<h3>Specialized Printing for Doujin & Oshi-katsu Markets</h3>
+<p><em>智印雲 (ZprintPro) 是深圳市彩龍印刷包裝有限公司營運的國際印刷服務品牌。深圳自營工廠 DHL Express 全球 2-4 日配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>`,
+longDescriptionEn: `<h3>Specialized Printing for Doujin & Oshi-katsu Markets</h3>
 <p>Ideal postcard sets for character goods, VTuber illustrations, and signature event giveaways. Sold in 4-8 piece sets for collection appeal. Washi-style art paper matches Japanese-aesthetic and traditional artwork. Double-sided printing allows front illustration + back text/signature design. OPP sleeve packaging protects from scratches and dust.</p>
 
 <h3>Specifications</h3>
@@ -17116,34 +18362,34 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
       },
       features: [
         'Comiket 前 24 小時特急対応可',
-        '4 個から少部数対応',
-        '深圳自社工場 + DHL Express 2-4 日日本直送',
-        'FSC 認証紙材 / ISO 12647 色彩管理',
-        '日本語サポート + WhatsApp 対応',
-        '105×148mm (A6 標準ポストカード) サイズ'
+        '4 套起印,少量対応',
+        '深圳自營工廠 + DHL Express 直送日本 2-4 個工作天',
+        'FSC 認證紙材 / ISO 12647 色彩管理',
+        '繁體中文 / 日文雙語支援 + WhatsApp 對應',
+        '105×148mm (A6 標準明信片) 尺寸'
       ],
       specs: {
-        material: '和紙風アート紙 180g / 両面マットPPラミネート',
-        size: '105×148mm (A6 標準ポストカード)',
-        printMethod: 'オンデマンド/オフセット 4色 (CMYK)',
-        finishing: 'OPP スリーブ個別包装 + 集合OPP袋',
+        material: '和紙風藝術紙 180g / 雙面霧面 PP 貼膜',
+        size: '105×148mm (A6 標準明信片)',
+        printMethod: '數碼 / 柯式四色 (CMYK)',
+        finishing: 'OPP 獨立袋包裝 + 集合 OPP 袋',
       },
       options: {
         material: [
           { value: 'standard', label: '標準', priceAdjustment: 0 },
-          { value: 'premium', label: 'プレミアム', priceAdjustment: 1500 },
+          { value: 'premium', label: '進階', priceAdjustment: 1500 },
         ],
         size: [
           { value: 'standard', label: '標準サイズ', priceAdjustment: 0 },
-          { value: 'custom', label: 'カスタムサイズ', priceAdjustment: 800 },
+          { value: 'custom', label: '自訂尺寸', priceAdjustment: 800 },
         ],
       },
       variables: {
         quantities: [
-          { value: 4, label: '4 個〜', discount: 0 },
-          { value: 50, label: '50 個〜', discount: 0.05 },
-          { value: 100, label: '100 個〜', discount: 0.10 },
-          { value: 500, label: '500 個〜', discount: 0.15 },
+          { value: 4, label: '4 套起', discount: 0 },
+          { value: 50, label: '50 件', discount: 0.05 },
+          { value: 100, label: '100 件', discount: 0.10 },
+          { value: 500, label: '500 件', discount: 0.15 },
         ],
       },
     },
@@ -17279,34 +18525,34 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
       },
       features: [
         'Comiket 前 24 小時特急対応可',
-        '10 個から少部数対応',
-        '深圳自社工場 + DHL Express 2-4 日日本直送',
-        'FSC 認証紙材 / ISO 12647 色彩管理',
-        '日本語サポート + WhatsApp 対応',
-        '38×42×10cm (A4 収納可) / マチ 10cm サイズ'
+        '10 件起印,少量対応',
+        '深圳自營工廠 + DHL Express 直送日本 2-4 個工作天',
+        'FSC 認證紙材 / ISO 12647 色彩管理',
+        '繁體中文 / 日文雙語支援 + WhatsApp 對應',
+        '38×42×10cm (可收納 A4) / 側寬 10cm 尺寸'
       ],
       specs: {
-        material: 'オーガニックコットン 100% / 12oz 厚手キャンバス',
-        size: '38×42×10cm (A4 収納可) / マチ 10cm',
-        printMethod: 'シルクスクリーン印刷 (1-3 色) / DTG フルカラー印刷',
-        finishing: '内ポケット / 底板補強 / 名入れ刺繍 (オプション)',
+        material: '100% 有機棉 / 12oz 厚實帆布',
+        size: '38×42×10cm (可收納 A4) / 側寬 10cm',
+        printMethod: '絲網印刷 (1-3 色) / DTG 全彩印刷',
+        finishing: '內袋 / 底板加強 / 繡名字 (可選)',
       },
       options: {
         material: [
           { value: 'standard', label: '標準', priceAdjustment: 0 },
-          { value: 'premium', label: 'プレミアム', priceAdjustment: 1500 },
+          { value: 'premium', label: '進階', priceAdjustment: 1500 },
         ],
         size: [
           { value: 'standard', label: '標準サイズ', priceAdjustment: 0 },
-          { value: 'custom', label: 'カスタムサイズ', priceAdjustment: 800 },
+          { value: 'custom', label: '自訂尺寸', priceAdjustment: 800 },
         ],
       },
       variables: {
         quantities: [
-          { value: 10, label: '10 個〜', discount: 0 },
-          { value: 50, label: '50 個〜', discount: 0.05 },
-          { value: 100, label: '100 個〜', discount: 0.10 },
-          { value: 500, label: '500 個〜', discount: 0.15 },
+          { value: 10, label: '10 件起', discount: 0 },
+          { value: 50, label: '50 件', discount: 0.05 },
+          { value: 100, label: '100 件', discount: 0.10 },
+          { value: 500, label: '500 件', discount: 0.15 },
         ],
       },
     },
