@@ -87,7 +87,7 @@ export const categories: Category[] = [
   { slug: 'calendars', name: '年曆印刷', nameEn: 'Calendars', nameJa: 'カレンダー印刷', name_zh: '年曆印刷', name_en: 'Calendars', name_ja: 'カレンダー印刷', sort_order: 11 },
   { slug: 'red-packets', name: '利是封印刷', nameEn: 'Red Packets', nameJa: 'ポチ袋印刷', name_zh: '利是封印刷', name_en: 'Red Packets', name_ja: 'ポチ袋印刷', sort_order: 12 },
   { slug: 'educational', name: '校園教育印刷', nameEn: 'Educational', nameJa: '教育印刷', name_zh: '校園教育印刷', name_en: 'Educational', name_ja: '教育印刷', sort_order: 13 },
-  { slug: 'japan-doujin', name: '同人誌・アニメグッズ', nameEn: 'Doujinshi & Anime Goods', nameJa: '同人誌・アニメグッズ', name_zh: '同人誌・アニメグッズ', name_en: 'Doujinshi & Anime Goods', name_ja: '同人誌・アニメグッズ', sort_order: 14 },
+  { slug: 'japan-doujin', name: '同人周邊印刷', nameEn: 'Doujinshi & Anime Goods', nameJa: '同人誌・アニメグッズ', name_zh: '同人周邊印刷', name_en: 'Doujinshi & Anime Goods', name_ja: '同人誌・アニメグッズ', sort_order: 14 },
 ];
 
 // 84个SKU产品数据
@@ -17027,9 +17027,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <table>
   <thead><tr><th>Spec</th><th>Details</th></tr></thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>Material</td><td>和紙風アート紙 180g / 両面マットPPラミネート</td></tr>
-    <tr class="border-b border-gray-200"><td>Size</td><td>105×148mm (A6 標準ポストカード)</td></tr>
-    <tr><td>Print Method</td><td>オンデマンド/オフセット 4色 (CMYK)</td></tr>
+    <tr class="border-b border-gray-200"><td>Material</td><td>Washi-style art paper 180g / double-sided matte PP laminate</td></tr>
+    <tr class="border-b border-gray-200"><td>Size</td><td>105×148mm (A6 standard postcard)</td></tr>
+    <tr><td>Print Method</td><td>On-demand / offset 4-color (CMYK)</td></tr>
   </tbody>
 </table>
 

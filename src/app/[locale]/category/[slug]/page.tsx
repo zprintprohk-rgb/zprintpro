@@ -63,7 +63,7 @@ export async function generateMetadata({
     return { title: 'Not Found' };
   }
 
-  return generateCategoryMetadata(locale, category.name, category.nameEn, category.nameJa);
+  return generateCategoryMetadata(locale, category.slug, category.name, category.nameEn, category.nameJa);
 }
 
 // 分类页组件

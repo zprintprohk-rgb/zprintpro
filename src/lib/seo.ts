@@ -244,6 +244,18 @@ const categorySeoData: Record<string, {
       ja: 'プロの紙袋印刷サービス。100個から注文可能。クラフト紙袋・エコ紙袋・手提げギフト袋。箔押し・UV・エンボス対応。FSC認証紙、即日納品。小売・飲食・イベント・ブランディングに最適。',
     },
   },
+  'japan-doujin': {
+    keywords: {
+      'zh-hk': '同人誌印刷,同人周邊,亞克力鑰匙扣,亞克力立牌,全息貼紙,和紙膠帶,罐型襟章,明信片套裝,環保托特袋,Comiket印刷,VTuber周邊,動漫角色周邊,推し活周邊,日系周邊訂製',
+      en: 'doujinshi printing,japan doujin,acrylic keychain custom,acrylic stand,can badge printing,postcard set,washi tape custom,eco tote bag print,hologram sticker,comiket printing,VTuber merch,anime goods custom,japan merchandise,oshi-katsu goods',
+      ja: '同人誌印刷,コミケ印刷,即売会,A5同人誌,B5同人誌,アクリルキーホルダー,アクリルスタンド,缶バッジ,ポストカード,和紙テープ,エコトートバッグ,ホログラムステッカー,VTuber グッズ,推し活グッズ',
+    },
+    descriptions: {
+      'zh-hk': '同人誌及日系ACG周邊印刷專家。A5/B5 同人誌 10 本起印、亞克力鑰匙扣 / 立牌 / 罐型襟章 / 明信片套裝 / 環保托特袋。Comiket 前 24 小時特急対応,深圳工廠 DHL Express 2-4 日直送日本。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。繁體中文客服,日本在地支援。',
+      en: 'Professional doujinshi & Japanese ACG merchandise printing. A5/B5 doujinshi (MOQ 10), acrylic keychains/stands, can badges, postcard sets, eco tote bags. 24-hour rush before Comiket. Ships from Shenzhen factory to Japan in 2-4 days via DHL Express. FSC paper, ISO 12647 color, ISO 9001 certified. Japanese-language support.',
+      ja: '同人誌・推し活特化の印刷サービス。A5/B5 同人誌 10 部から対応、アクリルキーホルダー・スタンド・缶バッジ・ポストカード・エコトートバッグ。コミケ前 24 時間特急対応可能。深圳自社工場から DHL Express で 2-4 営業日でお届け。FSC 認証紙、ISO 12647 色彩管理、ISO 9001 取得。日本語サポート完備。',
+    },
+  },
 };
 
 // 默认分类SEO数据
@@ -262,9 +274,9 @@ function getDefaultCategorySeo(categoryName: string, categoryNameEn: string, cat
   };
 }
 
-export function generateCategoryMetadata(locale: Locale, categoryName: string = '', categoryNameEn: string = '', categoryNameJa: string = ''): Metadata {
-  // 查找分类的slug（通过nameEn反向查找）
-  const slug = categoryNameEn.toLowerCase().replace(/\s+/g, '-');
+export function generateCategoryMetadata(locale: Locale, categorySlug: string = '', categoryName: string = '', categoryNameEn: string = '', categoryNameJa: string = ''): Metadata {
+  // 2026-06-20 fix B2: 直接使用传入的真实 slug（避免 nameEn 反向派生在含特殊字符时指向 404）
+  const slug = categorySlug;
   const seoData = categorySeoData[slug] || getDefaultCategorySeo(categoryName, categoryNameEn, categoryNameJa);
   
   const names = { 'zh-hk': categoryName, en: categoryNameEn, ja: categoryNameJa };
