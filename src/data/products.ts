@@ -180,8 +180,8 @@ export const products: Product[] = [
   <tbody>
     <tr class="border-b"><td class="p-2 font-medium">Matte Lamination</td><td class="p-2">Soft-touch, fingerprint resistant</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
     <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Gloss Lamination</td><td class="p-2">High-shine, vibrant colors</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Foil Stamping (Gold/Silver/Rose Gold)</td><td class="p-2">Metallic shine, luxury feel</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Spot UV</td><td class="p-2">Glossy dimensional contrast</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Foil Stamping (Gold/Silver/Rose Gold)</td><td class="p-2">Metallic shine, luxury feel</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Spot UV</td><td class="p-2">Glossy dimensional contrast</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
     <tr class="bg-gray-50"><td class="p-2 font-medium">Embossing / Rounded Corners</td><td class="p-2">Tactile depth, soft aesthetic</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
   </tbody>
 </table>
@@ -192,6 +192,8 @@ export const products: Product[] = [
   <li><strong>Variable data printing:</strong> Per-card names, titles, and QR codes for sales teams of 100+ staff. Submit a CSV; we handle merging and production.</li>
   <li><strong>Free digital color proofing:</strong> Color proof against the approved artwork before production. Delta E ≤2 color management on Heidelberg 4-color offset.</li>
 </ul>
+
+<p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>ISO 9001:2015</strong> certified lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and Heidelberg 4-color offset. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
 
 <h3>Use Cases & Industries</h3>
 <p>Premium business cards are the first handshake of your brand. Best fit for private wealth managers in Central handling high-net-worth client introductions, boutique law firm partners in Admiralty preparing for trial appearances, and corporate executives coordinating rebrand rollouts across 50-500 staff. 100-card MOQ supports boutique professional runs; rush 1-3 day production is available for US-based professionals. International orders ship via DHL Express in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
@@ -434,10 +436,10 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為深圳彩龍印刷包裝有限公司旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `<h3>Premium Thick Business Cards for a Lasting Impression</h3>
-<p>ZprintPro Thick Business Cards are crafted from 400g ultra-thick glossy paper, offering a substantial feel and exceptional rigidity. With a thickness 1.3 times that of standard cards, these cards are perfect for high-end service professionals, designers, and lawyers. The 4-color offset printing ensures fine halftones and vibrant, saturated colors, while surface options like matte or gloss lamination, foil stamping, and embossing add a touch of luxury.</p>
+    longDescriptionEn: `<h3>Thick Business Cards (400g) for Premium Brands</h3>
+<p>ZprintPro Thick Business Cards are crafted from 400g ultra-thick coated paper, offering 1.3× the thickness and rigidity of standard cards. Designed for executives, finance and legal professionals, designers, and luxury hospitality brands that need an instant impression of substance and authority. Heidelberg 4-color offset printing delivers crisp halftone reproduction and saturated color, with optional matte or gloss lamination, foil stamping, and embossing for a refined finish. Standard 85×54mm, 100-card MOQ, free digital color proofing.</p>
 
-<h3>Material & GSM Specifications</h3>
+<h3>Weight Comparison</h3>
 <table class="w-full border-collapse my-4 text-sm">
   <thead>
     <tr class="bg-[#2873F5] text-white">
@@ -451,41 +453,50 @@ export const products: Product[] = [
   <tbody>
     <tr class="border-b"><td class="p-2 font-medium">300g Standard</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">General business, startups</td></tr>
     <tr class="border-b bg-gray-50"><td class="p-2 font-medium">400g Thick</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">Designers, lawyers, premium</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">600g Ultra</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Luxury brands, VIP cards</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">500g Premium</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Luxury brands, VIP cards</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">600g Ultra</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★</td><td class="p-2">Executive suites, invitation cards</td></tr>
   </tbody>
 </table>
 
-<h3>Printing & Finishing Processes</h3>
-<p>Our 4-color offset printing technology delivers superior color accuracy and clarity. We offer a variety of finishing options, including matte or gloss lamination, foil stamping in gold, silver, or rose gold, and embossing for a tactile effect. These processes are performed using state-of-the-art Heidelberg machinery to ensure precision and quality.</p>
-
-<h3>Size, Format, and MOQ Table</h3>
+<h3>Printing & Finishing Options</h3>
 <table class="w-full border-collapse my-4 text-sm">
   <thead>
     <tr class="bg-[#2873F5] text-white">
-      <th class="p-2 text-left">Size (mm)</th>
-      <th class="p-2 text-center">MOQ</th>
-      <th class="p-2 text-center">Turnaround</th>
-      <th class="p-2 text-center">Unit Price</th>
+      <th class="p-2 text-left">Finish</th>
+      <th class="p-2 text-left">Effect</th>
+      <th class="p-2 text-center">Lead Time</th>
+      <th class="p-2 text-center">Cost Add</th>
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">85x54</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$1.00</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">90x50</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$1.00</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Matte Lamination</td><td class="p-2">Soft-touch, fingerprint resistant, premium feel</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Gloss Lamination</td><td class="p-2">High-shine, vibrant color saturation</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Foil Stamping (Gold/Silver/Rose Gold)</td><td class="p-2">Metallic shine, executive luxury feel</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Spot UV</td><td class="p-2">Dimensional contrast on logos or patterns</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Embossing / Letterpress</td><td class="p-2">Tactile depth on logos or text</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
   </tbody>
 </table>
 
-<h3>Use Cases and Applications</h3>
-<p>ZprintPro Thick Business Cards are ideal for:
+<h3>Why Choose ZprintPro?</h3>
 <ul>
-  <li>Lawyers and financial professionals looking for a prestigious image.</li>
-  <li>Designers and creative agencies seeking a modern, high-end look.</li>
-  <li>Luxury brands aiming to convey exclusivity and sophistication.</li>
-  <li>VIP cards for exclusive clubs and events.</li>
+  <li><strong>400g rigid stock, 1.3× standard thickness:</strong> Substantial hand-feel signals authority and quality at first handshake. Perfect for partner-level introductions and high-net-worth client meetings.</li>
+  <li><strong>100-card MOQ with volume pricing:</strong> 15% off at 500+ cards, 25% off at 1,000+ for rebrand rollouts across multi-partner law firms and corporate teams.</li>
+  <li><strong>Variable data printing:</strong> Per-card names, titles, and QR codes for sales teams of 100+ staff. Submit a CSV; we handle merging and production.</li>
+  <li><strong>Free digital color proofing:</strong> Color proof against approved artwork before production. Delta E ≤2 color management on Heidelberg 4-color offset.</li>
 </ul>
-</p>
 
-<h3>Quality, Compliance, and Shipping</h3>
-<p>Each batch runs through a free digital color proof against your approved artwork before production. Heidelberg 4-color offset + UV ink delivers 90%+ color saturation on 400g card. Reprints are free if final color drifts beyond Delta E 2.</p>`,
+<p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>ISO 9001:2015</strong> certified lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and Heidelberg 4-color offset. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
+
+<h3>Use Cases & Industries</h3>
+<p>Thick 400g business cards deliver an instant impression of authority and quality. Best fit for senior partners at Magic Circle and US law firms preparing for client meetings, wealth managers handling high-net-worth introductions in Central, and creative directors at boutique agencies launching a rebrand. Also ideal for executive suites at luxury hotels, VIP invitation cards for corporate events, and premium product launches where the card itself becomes part of the brand experience. International orders ship via DHL Express in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
+
+<h3>Frequently Asked Questions</h3>
+<details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>100 cards. Sample orders of 10-50 cards are available for design proofing (rush fee applies).</p></details>
+<details class="my-2"><summary><strong>How long does production take?</strong></summary><p>Standard production is 3-5 business days after artwork approval. Rush production (1-2 days) is available for orders up to 500 cards.</p></details>
+<details class="my-2"><summary><strong>Do you offer double-sided printing?</strong></summary><p>Yes. Double-sided 4-color CMYK is standard on 400g stock. Submit two files (front and back) or one combined file with separate layers.</p></details>
+<details class="my-2"><summary><strong>Can I order different names on each card?</strong></summary><p>Yes. Variable data printing allows per-card customization. Submit an Excel/CSV file with name, title, and contact details. Minimum 100 cards for variable orders.</p></details>
+<details class="my-2"><summary><strong>How is shipping calculated to my country?</strong></summary><p>US orders over $100 ship free via DHL Express (2-4 business days). UK/AU orders over £80 / AU$150 ship free. KR/SG/AE ship via DHL Express at standard rates (calculated at checkout). Tracking provided for all shipments.</p></details>
+<details class="my-2"><summary><strong>What if I'm not happy with the print quality?</strong></summary><p>We provide free digital color proofing before production. If the final print drifts from approved proof, we reprint at no cost or refund in full. Your satisfaction is guaranteed.</p></details>`,
     longDescriptionJa: `厚紙名刺をZprintProでご注文。400g超厚コート紙、両面カラー、厚紙名刺でプレミアム感を演出。デザイナー・弁護士・高級サービス業様に最適。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は深圳市彩龙印刷包装有限公司が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -659,13 +670,13 @@ export const products: Product[] = [
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Gold Foil</td><td class="p-2">Classic luxury, warm shine</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Silver Foil</td><td class="p-2">Modern, tech-forward shine</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Rose Gold Foil</td><td class="p-2">Soft feminine luxury, beauty brands</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Copper Foil</td><td class="p-2">Warm craft aesthetic, artisan feel</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Holographic Foil</td><td class="p-2">Multi-color shifting, premium impact</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Black Foil (on light card)</td><td class="p-2">Sophisticated contrast, modern minimalism</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Foil + Spot UV Combo</td><td class="p-2">Metallic + glossy dimensional contrast</td><td class="p-2 text-center">+2 days</td><td class="p-2 text-center">$$$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Gold Foil</td><td class="p-2">Classic luxury, warm shine</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Silver Foil</td><td class="p-2">Modern, tech-forward shine</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Rose Gold Foil</td><td class="p-2">Soft feminine luxury, beauty brands</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Copper Foil</td><td class="p-2">Warm craft aesthetic, artisan feel</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Holographic Foil</td><td class="p-2">Multi-color shifting, premium impact</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Black Foil (on light card)</td><td class="p-2">Sophisticated contrast, modern minimalism</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Foil + Spot UV Combo</td><td class="p-2">Metallic + glossy dimensional contrast</td><td class="p-2 text-center">+2 days</td><td class="p-2 text-center">$$</td></tr>
   </tbody>
 </table>
 
@@ -676,6 +687,8 @@ export const products: Product[] = [
   <li><strong>True hot stamp foil:</strong> Real metallic film pressed onto the card (not metallic ink) for crisp edges and high reflectivity.</li>
   <li><strong>Free foil design service:</strong> We optimize foil placement, sizing, and registration for maximum visual impact on your artwork.</li>
 </ul>
+
+<p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>ISO 9001:2015</strong> certified lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and Heidelberg 4-color offset. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
 
 <h3>Use Cases & Industries</h3>
 <p>Foil stamped business cards elevate professional first impressions. Best fit for boutique wealth managers seeking client-facing card differentiation, senior partners at litigation firms building case-prep presentation sets, and luxury hotel concierge teams presenting guest welcome packages. Common applications include 50-100 card boutique runs for individual executives and 500+ card rebrand rollouts. International orders ship via DHL Express in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
@@ -712,11 +725,11 @@ export const products: Product[] = [
     <tr><th>箔種類</th><th>効果</th><th>追加納期</th><th>追加料金</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>金箔</td><td>クラシックな高級感、温かみのある光沢</td><td>+1 日</td><td>$$</td></tr>
-    <tr class="border-b border-gray-200"><td>銀箔</td><td>モダン、テクノロジー感</td><td>+1 日</td><td>$$</td></tr>
-    <tr class="border-b border-gray-200"><td>ローズゴールド箔</td><td>柔らかなフェミニン高級感、美容ブランド</td><td>+1 日</td><td>$$</td></tr>
-    <tr class="border-b border-gray-200"><td>銅箔</td><td>温かみのあるクラフト感、職人技</td><td>+1 日</td><td>$$</td></tr>
-    <tr><td>ホログラム箔</td><td>多色シフト、プレミアム感</td><td>+1 日</td><td>$$$</td></tr>
+    <tr class="border-b border-gray-200"><td>金箔</td><td>クラシックな高級感、温かみのある光沢</td><td>+1 日</td><td>$</td></tr>
+    <tr class="border-b border-gray-200"><td>銀箔</td><td>モダン、テクノロジー感</td><td>+1 日</td><td>$</td></tr>
+    <tr class="border-b border-gray-200"><td>ローズゴールド箔</td><td>柔らかなフェミニン高級感、美容ブランド</td><td>+1 日</td><td>$</td></tr>
+    <tr class="border-b border-gray-200"><td>銅箔</td><td>温かみのあるクラフト感、職人技</td><td>+1 日</td><td>$</td></tr>
+    <tr><td>ホログラム箔</td><td>多色シフト、プレミアム感</td><td>+1 日</td><td>$$</td></tr>
   </tbody>
 </table>
 
@@ -979,10 +992,10 @@ export const products: Product[] = [
     <tr class="border-b"><td class="p-2 font-medium">Logo Spot UV</td><td class="p-2">Glossy logo, classic technique</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
     <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Name Spot UV</td><td class="p-2">Glossy name, tactile hierarchy</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
     <tr class="border-b"><td class="p-2 font-medium">Pattern / Texture UV</td><td class="p-2">Geometric, abstract, brand pattern</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Full-Bleed UV Image</td><td class="p-2">Photographic glossy accent</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Spot UV + Emboss</td><td class="p-2">Glossy + dimensional depth</td><td class="p-2 text-center">+2 days</td><td class="p-2 text-center">$$$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Spot UV + Foil</td><td class="p-2">Glossy + metallic shine</td><td class="p-2 text-center">+2 days</td><td class="p-2 text-center">$$$</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Double-Sided Spot UV</td><td class="p-2">UV on both sides</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Full-Bleed UV Image</td><td class="p-2">Photographic glossy accent</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Spot UV + Emboss</td><td class="p-2">Glossy + dimensional depth</td><td class="p-2 text-center">+2 days</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Spot UV + Foil</td><td class="p-2">Glossy + metallic shine</td><td class="p-2 text-center">+2 days</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Double-Sided Spot UV</td><td class="p-2">UV on both sides</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
   </tbody>
 </table>
 
@@ -993,6 +1006,8 @@ export const products: Product[] = [
   <li><strong>Free Design Service:</strong> We optimize UV placement for maximum visual contrast and brand recognition.</li>
   <li><strong>Free Physical Sample:</strong> Hand-finished sample card with your UV design before full production. DHL 2-4 day delivery.</li>
 </ul>
+
+<p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>ISO 9001:2015</strong> certified lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and Heidelberg 4-color offset. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
 
 <h3>Use Cases & Industries</h3>
 <p>Best fit for tech startup founders putting spot UV on logo cards for fundraising meetings, real estate agents using spot UV for client presentation cards, and creative directors needing standout cards for portfolio handoffs. Common applications: 100-300 card founder runs, 500+ card rebrand rollouts. International orders ship via DHL Express in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
@@ -1032,8 +1047,8 @@ export const products: Product[] = [
     <tr class="border-b border-gray-200"><td>ロゴスポット UV</td><td>グロス加工ロゴ、クラシカル技法</td><td>+1 日</td><td>$</td></tr>
     <tr class="border-b border-gray-200"><td>氏名スポット UV</td><td>グロス加工氏名、触覚階層</td><td>+1 日</td><td>$</td></tr>
     <tr class="border-b border-gray-200"><td>パターン・テクスチャ UV</td><td>幾何学・抽象・ブランドパターン</td><td>+1 日</td><td>$</td></tr>
-    <tr class="border-b border-gray-200"><td>全面ブリード UV 画像</td><td>写真風グロスアクセント</td><td>+1 日</td><td>$$</td></tr>
-    <tr><td>スポット UV + エンボス</td><td>グロス + 立体感</td><td>+2 日</td><td>$$$</td></tr>
+    <tr class="border-b border-gray-200"><td>全面ブリード UV 画像</td><td>写真風グロスアクセント</td><td>+1 日</td><td>$</td></tr>
+    <tr><td>スポット UV + エンボス</td><td>グロス + 立体感</td><td>+2 日</td><td>$$</td></tr>
   </tbody>
 </table>
 
@@ -1290,10 +1305,10 @@ export const products: Product[] = [
   <tbody>
     <tr class="border-b"><td class="p-2 font-medium">Matte Lamination (one side)</td><td class="p-2">Soft-touch, fingerprint resistant</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
     <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Matte Lamination (both sides)</td><td class="p-2">Full soft-touch, premium feel</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Soft-Touch Velvet Lam</td><td class="p-2">Velvet texture, ultra-premium</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Matte + Spot UV Logo</td><td class="p-2">Matte base + glossy logo contrast</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Matte + Foil Logo</td><td class="p-2">Matte base + metallic shine</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Matte + Emboss</td><td class="p-2">Matte base + dimensional depth</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Soft-Touch Velvet Lam</td><td class="p-2">Velvet texture, ultra-premium</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Matte + Spot UV Logo</td><td class="p-2">Matte base + glossy logo contrast</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Matte + Foil Logo</td><td class="p-2">Matte base + metallic shine</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Matte + Emboss</td><td class="p-2">Matte base + dimensional depth</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
     <tr class="bg-gray-50"><td class="p-2 font-medium">Rounded Corners (R3/R5)</td><td class="p-2">Soft aesthetic, modern</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
   </tbody>
 </table>
@@ -1305,6 +1320,8 @@ export const products: Product[] = [
   <li><strong>Free Color Proofing:</strong> Digital color proof and physical sample card before full production. DHL 2-4 day delivery.</li>
   <li><strong>Variable Data Printing:</strong> Per-card customization (name, title, QR code) for sales teams of 100+.</li>
 </ul>
+
+<p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>ISO 9001:2015</strong> certified lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and Heidelberg 4-color offset. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
 
 <h3>Use Cases & Industries</h3>
 <p>Best fit for designers and creative agencies whose 50-300 card boutique runs go to agency review committees, product managers whose 200-card distribution needs to stand out at customer meetings, and tech startup founders building investor decks. Matte lamination hides fingerprints — a frequent concern at 2-3 day conferences. International orders ship via DHL Express in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
@@ -1343,9 +1360,9 @@ export const products: Product[] = [
   <tbody>
     <tr class="border-b border-gray-200"><td>マットラミネート (片面)</td><td>ソフトタッチ、指紋防止</td><td>+0 日</td><td>$</td></tr>
     <tr class="border-b border-gray-200"><td>マットラミネート (両面)</td><td>全面ソフトタッチ、プレミアム感</td><td>+0 日</td><td>$</td></tr>
-    <tr class="border-b border-gray-200"><td>ソフトタッチベルベットラミ</td><td>ベルベットテクスチャ、超プレミアム</td><td>+0 日</td><td>$$</td></tr>
-    <tr class="border-b border-gray-200"><td>マット + スポット UV ロゴ</td><td>マットベース + グロスロゴコントラスト</td><td>+1 日</td><td>$$</td></tr>
-    <tr><td>マット + 箔押しロゴ</td><td>マット + 金属光沢ロゴ</td><td>+1 日</td><td>$$</td></tr>
+    <tr class="border-b border-gray-200"><td>ソフトタッチベルベットラミ</td><td>ベルベットテクスチャ、超プレミアム</td><td>+0 日</td><td>$</td></tr>
+    <tr class="border-b border-gray-200"><td>マット + スポット UV ロゴ</td><td>マットベース + グロスロゴコントラスト</td><td>+1 日</td><td>$</td></tr>
+    <tr><td>マット + 箔押しロゴ</td><td>マット + 金属光沢ロゴ</td><td>+1 日</td><td>$</td></tr>
   </tbody>
 </table>
 
@@ -1433,7 +1450,7 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>マットとグロスラミネートのどちらを選ぶべきですか？</strong></summary><p>上品でモダンな印象はマットラミネート、鮮やかで色鮮やかな印象はグロスラミネート。モダンブランド・金融・士業はマット、写真・イラスト多用はグロスが定番です。両面ラミネートで全面保護、片面のみならコスト削減可能。</p></details>
 <details class="my-2"><summary><strong>MOQ は何枚からですか？</strong></summary><p>標準 MOQ は 100 枚です。特急料金で 50 枚にも対応可能、最短 1 営業日で製作・納品できます。</p></details>
 <details class="my-2"><summary><strong>マットラミネートの上から書き込みできますか？</strong></summary><p>マットラミネート表面は油性ペンで書き込み可能ですが、剥がれやすいため推奨しません。裏面 (ラミネート無し) へのメモは可能。</p></details>
-<details class="my-2"><summary><strong>マット + スポット UV の組み合わせは可能ですか？</strong></summary><p>はい。マットラミネートをベースにして、ロゴ部分のみスポット UV で光沢を加える組み合わせが好評です。追加納期 +1 日、追加料金 $$ ですが、究極のハイエンド名刺として高い訴求力があります。</p></details>
+<details class="my-2"><summary><strong>マット + スポット UV の組み合わせは可能ですか？</strong></summary><p>はい。マットラミネートをベースにして、ロゴ部分のみスポット UV で光沢を加える組み合わせが好評です。追加納期 +1 日、追加料金 $ ですが、究極のハイエンド名刺として高い訴求力があります。</p></details>
 <details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>深圳自社工場から DHL Express で 2-3 営業日納品、100 枚以上のご注文は送料無料で全国配送対応。</p></details>
 <details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能。品質問題 (ラミネート剥がれ・色ズレ) は無料で再印刷または全額返金、100% 満足保証。</p></details>
 
@@ -1604,9 +1621,9 @@ export const products: Product[] = [
     <tr class="border-b bg-gray-50"><td class="p-2 font-medium">R3mm</td><td class="p-2">Subtle softness, modern</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
     <tr class="border-b"><td class="p-2 font-medium">R5mm</td><td class="p-2">Distinct soft curve, premium</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
     <tr class="border-b bg-gray-50"><td class="p-2 font-medium">R10mm</td><td class="p-2">Pronounced curve, modern lifestyle</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Custom radius (5-15mm)</td><td class="p-2">Distinctive brand shape</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Rounded + Spot UV Logo</td><td class="p-2">Modern soft + glossy contrast</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Rounded + Foil Logo</td><td class="p-2">Modern soft + metallic shine</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Custom radius (5-15mm)</td><td class="p-2">Distinctive brand shape</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Rounded + Spot UV Logo</td><td class="p-2">Modern soft + glossy contrast</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Rounded + Foil Logo</td><td class="p-2">Modern soft + metallic shine</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
   </tbody>
 </table>
 
@@ -1617,6 +1634,8 @@ export const products: Product[] = [
   <li><strong>Free Design Service:</strong> We optimize corner radius for your design and brand aesthetic.</li>
   <li><strong>Free Color Proofing:</strong> Digital color proof and physical sample card before full production.</li>
 </ul>
+
+<p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>ISO 9001:2015</strong> certified lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and Heidelberg 4-color offset. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
 
 <h3>Use Cases & Industries</h3>
 <p>Best fit for wellness brands (yoga studios, beauty therapists) whose 200-500 card runs go to local clientele, café and restaurant owners using 100-card reorders for staff rotations, and tech product teams putting rounded corners on swag cards for design-system compliance. International orders ship via DHL Express in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
@@ -1657,7 +1676,7 @@ export const products: Product[] = [
     <tr class="border-b border-gray-200"><td>R3mm</td><td>微妙な柔らかさ、モダン</td><td>+0 日</td><td>$</td></tr>
     <tr class="border-b border-gray-200"><td>R5mm</td><td>明確なsoft曲線、プレミアム</td><td>+0 日</td><td>$</td></tr>
     <tr class="border-b border-gray-200"><td>R10mm</td><td>強い曲線、モダンライフスタイル</td><td>+0 日</td><td>$</td></tr>
-    <tr><td>カスタム半径 (5-15mm)</td><td>独自ブランド形状</td><td>+0 日</td><td>$$</td></tr>
+    <tr><td>カスタム半径 (5-15mm)</td><td>独自ブランド形状</td><td>+0 日</td><td>$</td></tr>
   </tbody>
 </table>
 
@@ -1894,7 +1913,7 @@ export const products: Product[] = [
     <tr class="border-b"><td class="p-2 font-medium">Gloss Lamination</td><td class="p-2">High-shine, color saturation</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
     <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Matte Lamination</td><td class="p-2">Soft-touch, anti-glare</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
     <tr class="border-b"><td class="p-2 font-medium">Die-Cut Shapes</td><td class="p-2">Custom outlines, kiss-cut available</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Variable QR / Serial Numbers</td><td class="p-2">Batch tracking, anti-counterfeit</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Variable QR / Serial Numbers</td><td class="p-2">Batch tracking, anti-counterfeit</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
     <tr class="bg-gray-50"><td class="p-2 font-medium">Removable Adhesive</td><td class="p-2">Clean removal, no residue</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
   </tbody>
 </table>
@@ -1906,6 +1925,8 @@ export const products: Product[] = [
   <li><strong>Free Die-Cut Design:</strong> Custom shapes at no extra charge. Submit your outline (AI/PDF) and we prep the file for production.</li>
   <li><strong>Variable Data Printing:</strong> Per-sticker QR codes or serial numbers for inventory, anti-counterfeit, and event check-in.</li>
 </ul>
+
+<p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>ISO 9001:2015</strong> certified lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and Heidelberg 4-color offset. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
 
 <h3>Use Cases & Industries</h3>
 <p>Best fit for skincare and cosmetics brands whose 500-2,000 sticker runs go on product packaging for retail shelves, craft beverage producers needing 200-500 bottle labels for limited releases, and e-commerce sellers running 1,000+ unit batches for monthly shipments. PVC withstands 3+ years outdoor exposure. International orders ship via DHL Express in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
@@ -2148,51 +2169,67 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為深圳彩龍印刷包裝有限公司旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `<h3>Transparent Stickers for a Sleek, Invisible Effect</h3>
-<p>ZprintPro Transparent PET stickers offer a nearly 'label-free' appearance on glass, plastic, or clear packaging, making them ideal for serums, perfumes, beverages, and gift seals. The transparent material creates an invisible effect when applied, ensuring your product remains the focus. Optional white underprint can be added to maintain color vibrancy on dark bottles.</p>
+    longDescriptionEn: `<h3>Transparent Stickers for Premium Product Branding</h3>
+<p>ZprintPro transparent stickers are printed on clear vinyl or polyester film with white-ink underbase for vibrant colors and crisp detail. Designed for premium product labels, beverage bottles, cosmetics, and window decals where the "no-label" look is part of the brand experience. UV-resistant inks ensure outdoor durability; removable adhesive option allows clean removal within 90 days. Standard shapes in square, rectangle, circle, oval, and custom die-cut. 100-sticker MOQ, free digital color proofing.</p>
 
-<h3>Material & GSM Specifications</h3>
+<h3>Material & Adhesive Comparison</h3>
 <table class="w-full border-collapse my-4 text-sm">
   <thead>
     <tr class="bg-[#2873F5] text-white">
       <th class="p-2 text-left">Material</th>
-      <th class="p-2 text-center">Clarity</th>
-      <th class="p-2 text-center">Waterproof</th>
+      <th class="p-2 text-center">Transparency</th>
+      <th class="p-2 text-center">Adhesion</th>
       <th class="p-2 text-center">Cost</th>
       <th class="p-2 text-left">Best For</th>
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Clear PET</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">Bottle labels, gift seals</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">PVC Waterproof</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Outdoor labels, food delivery</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Art Paper</td><td class="p-2 text-center">★★</td><td class="p-2 text-center">★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Promotional stickers, indoor use</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Clear Vinyl (Permanent)</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">Beverage bottles, permanent labels</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Clear Vinyl (Removable)</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">Window decals, seasonal campaigns</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Frosted Polyester</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Luxury cosmetics, premium packaging</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Static Cling (No Adhesive)</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★</td><td class="p-2 text-center">★★★</td><td class="p-2">Reusable window signs, point-of-sale</td></tr>
   </tbody>
 </table>
 
-<h3>Printing & Finishing Processes</h3>
-<p>Our advanced printing technology ensures high-quality, vibrant prints on transparent PET material. We offer optional matte or gloss lamination to reduce fingerprints and enhance color saturation. Spot UV can be applied for a glossy, dimensional contrast, and die-cutting is available for custom shapes and sizes.</p>
-
-<h3>Size, Format, and MOQ Table</h3>
+<h3>Printing & Finishing Options</h3>
 <table class="w-full border-collapse my-4 text-sm">
   <thead>
     <tr class="bg-[#2873F5] text-white">
-      <th class="p-2 text-left">Size (mm)</th>
-      <th class="p-2 text-center">MOQ</th>
-      <th class="p-2 text-center">Turnaround</th>
-      <th class="p-2 text-center">Unit Price</th>
+      <th class="p-2 text-left">Finish</th>
+      <th class="p-2 text-left">Effect</th>
+      <th class="p-2 text-center">Lead Time</th>
+      <th class="p-2 text-center">Cost Add</th>
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">50x50</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$0.50</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">100x100</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$0.30</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">White Ink Underbase</td><td class="p-2">Opaque white layer beneath CMYK for true color on clear film</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Gloss UV Varnish</td><td class="p-2">High-shine, scratch resistant top coat</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Matte Soft-Touch Lamination</td><td class="p-2">Velvety feel, fingerprint resistant</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Foil Stamping (Gold/Silver)</td><td class="p-2">Metallic accents on logo or text</td><td class="p-2 text-center">+2 days</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Custom Die-Cut Shape</td><td class="p-2">Any outline: circle, oval, bottle contour, logo</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
   </tbody>
 </table>
 
-<h3>Use Cases and Applications</h3>
-<p>Best fit for indie skincare brands seeking "no-label" premium aesthetics on serum dropper bottles, craft beverage producers needing tamper-evident seals on glass bottles, and gift box producers wanting an invisible product seal that doesn't break the unboxing reveal. Common runs are 200-500 stickers per SKU for boutique launches; 1,000+ for established product lines. Optional white underprint preserves color saturation on dark or amber glass. For international orders, DHL Express delivers in 2-4 days to US, UK, Australia, Korea, Singapore, and UAE.</p>
+<h3>Why Choose ZprintPro?</h3>
+<ul>
+  <li><strong>White-ink underbase for true color on clear film:</strong> Standard CMYK prints look washed out on transparent vinyl. White-ink underbase ensures vibrant reproduction matching your artwork proof.</li>
+  <li><strong>100-sticker MOQ with volume pricing:</strong> 15% off at 500+, 25% off at 1,000+, 35% off at 5,000+ for product launch runs and subscription box fulfillment.</li>
+  <li><strong>Variable data printing:</strong> Per-sticker serial numbers, batch codes, or QR codes for product traceability. Submit a CSV; we handle merging and production.</li>
+  <li><strong>Free digital color proofing:</strong> White-ink proof against approved artwork before production. Delta E ≤2 color management on Heidelberg digital press.</li>
+</ul>
 
-<h3>Quality, Compliance, and Shipping</h3>
-<p>Each batch runs through a free digital color proof against your approved artwork before production. Heidelberg 4-color offset + UV ink delivers 90%+ color saturation on transparent PET. Reprints are free if final color drifts from the approved proof beyond Delta E 2.</p>`,
+<p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>ISO 9001:2015</strong> certified lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and Heidelberg 4-color offset. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
+
+<h3>Use Cases & Industries</h3>
+<p>Transparent stickers deliver the "no-label" premium look for product packaging. Best fit for craft beverage brands bottling seasonal IPAs or cold brew that want label-free visual impact, indie cosmetics launching serums or fragrances in clear glass bottles, and subscription box operators needing serial-numbered QR codes on every package. Also ideal for window decals on retail storefronts, point-of-sale displays, and short-term promotional campaigns where clean removal is required. International orders ship via DHL Express in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
+
+<h3>Frequently Asked Questions</h3>
+<details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>100 stickers. Sample orders of 25-50 stickers are available for design proofing (rush fee applies).</p></details>
+<details class="my-2"><summary><strong>How long does production take?</strong></summary><p>Standard production is 3-5 business days after artwork approval. Rush production (1-2 days) is available for orders up to 1,000 stickers.</p></details>
+<details class="my-2"><summary><strong>Will colors look vibrant on clear film?</strong></summary><p>Yes. White-ink underbase is standard on all transparent stickers. CMYK prints over white for accurate color reproduction matching your artwork proof. Without white ink, colors appear washed out.</p></details>
+<details class="my-2"><summary><strong>Can I get custom die-cut shapes?</strong></summary><p>Yes. Any outline: circle, oval, bottle contour, logo silhouette, or custom shape. Submit a vector path; we cut precisely to your spec.</p></details>
+<details class="my-2"><summary><strong>How is shipping calculated to my country?</strong></summary><p>US orders over $100 ship free via DHL Express (2-4 business days). UK/AU orders over £80 / AU$150 ship free. KR/SG/AE ship via DHL Express at standard rates (calculated at checkout). Tracking provided for all shipments.</p></details>
+<details class="my-2"><summary><strong>What if I'm not happy with the print quality?</strong></summary><p>We provide free digital color proofing before production. If the final print drifts from approved proof, we reprint at no cost or refund in full. Your satisfaction is guaranteed.</p></details>`,
     longDescriptionJa: `透明ステッカーをZprintProでご注文。PET素材+防水・防晒・耐磨耗+プロ4色印刷+変形カット対応のプレミアム透明ステッカー印刷です。食品ブランド・化粧品・商品ラベル・容器装飾・アーティスト・クリエイター向けに、無地感ラベルやガラス容器でのラベルレス効果を実現します。【素材】PET（透明/乳白半透明/艶消し）、接着剤は一般強粘着/再剥離/耐水強粘着から選択。【サイズ】最小20mm～最大300mmまで対応。【印刷方式】顔料インクUV印刷（耐候性◎）、CMYK+特色（白インク/メタリック）対応。透明フィルムに白を下刷りして上からCMYK印刷することで、透明素材でも発色鮮明に再現できます。【カット】標準カット（四角/円/楕円）、変形カット（オリジナル形状/型抜き）、部分型抜き対応。Cut lineパスを含めてIllustrator/PDFでご支給ください。【屋外耐久性】PET素材+UVインクで3年以上、直射日光・雨風に強く自動車ボディや屋外看板にも対応可能。【利用シーン】商品ラベル（食品/化粧品/雑貨）、容器装飾（ボトル/ジャー/ガラス容器）、アート・クリエイター作品、店舗装飾（窓・ショーケース）。【納期】20枚から対応（個人のクリエイター少量制作から、法人商品ラベルの10,000枚大量発注まで対応）、最短3営業日で出荷。500枚以上の大量発注は5-7営業日。変形カットや白インク印刷を含む場合はさらに1-2日かかる場合がございます。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
 
 <p><em>智印雲（ZprintPro）は深圳市彩龙印刷包装有限公司が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -2365,8 +2402,8 @@ export const products: Product[] = [
     <tr class="border-b"><td class="p-2 font-medium">Matte Lamination</td><td class="p-2">Soft-touch, anti-glare</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
     <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Gloss Lamination</td><td class="p-2">High-shine, vibrant color</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
     <tr class="border-b"><td class="p-2 font-medium">Die-Cut Shapes</td><td class="p-2">Custom outlines, kiss-cut available</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Static Cling (no adhesive)</td><td class="p-2">Reusable, repositionable on glass</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Variable QR / Serial Numbers</td><td class="p-2">Batch tracking, anti-counterfeit</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Static Cling (no adhesive)</td><td class="p-2">Reusable, repositionable on glass</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Variable QR / Serial Numbers</td><td class="p-2">Batch tracking, anti-counterfeit</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
   </tbody>
 </table>
 
@@ -2377,6 +2414,8 @@ export const products: Product[] = [
   <li><strong>Free Die-Cut Design:</strong> Custom shapes at no extra charge. Submit your outline (AI/PDF) and we prep the file for production.</li>
   <li><strong>Variable Data Printing:</strong> Per-sticker QR codes or serial numbers for rental tracking, event check-in, and short-term campaigns.</li>
 </ul>
+
+<p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>ISO 9001:2015</strong> certified lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and Heidelberg 4-color offset. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
 
 <h3>Use Cases & Industries</h3>
 <p>Best fit for retail store owners putting 200-500 removable window decals on seasonal sales signage, real estate agents using 100-200 open-house decals per weekend, and event companies running 500-1,000 badge sticker sets per conference. Removable adhesive leaves no residue within 90 days. International orders ship via DHL Express in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
@@ -2415,8 +2454,8 @@ export const products: Product[] = [
     <tr class="border-b border-gray-200"><td>マットラミネーション</td><td>ソフトタッチ、反射防止</td><td>+0 日</td><td>$</td></tr>
     <tr class="border-b border-gray-200"><td>グロスラミネーション</td><td>高光沢、色彩鮮やか</td><td>+0 日</td><td>$</td></tr>
     <tr class="border-b border-gray-200"><td>型抜き形状</td><td>カスタム形状、キスカット対応</td><td>+1 日</td><td>$</td></tr>
-    <tr class="border-b border-gray-200"><td>静電吸着（粘着剤なし）</td><td>再利用可能、ガラス上で位置調整可</td><td>+0 日</td><td>$$</td></tr>
-    <tr><td>可変 QR / シリアル番号</td><td>ロット管理、偽造防止</td><td>+1 日</td><td>$$</td></tr>
+    <tr class="border-b border-gray-200"><td>静電吸着（粘着剤なし）</td><td>再利用可能、ガラス上で位置調整可</td><td>+0 日</td><td>$</td></tr>
+    <tr><td>可変 QR / シリアル番号</td><td>ロット管理、偽造防止</td><td>+1 日</td><td>$</td></tr>
   </tbody>
 </table>
 
@@ -2688,6 +2727,8 @@ export const products: Product[] = [
   <li><strong>Free Design Service:</strong> We resize your artwork for any custom shape at no extra charge. Submit AI, PDF, or high-res PNG.</li>
   <li><strong>Free Sample Proof:</strong> Digital color proof before production. Physical sample ships via DHL Express (2-4 day delivery).</li>
 </ul>
+
+<p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>ISO 9001:2015</strong> certified lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and Heidelberg 4-color offset. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
 
 <h3>Use Cases & Industries</h3>
 <p>Best fit for Etsy and Shopify sellers running 50-200 sticker runs per product launch, wedding planners using 100-300 favor stickers per event, and indie candle/soap makers producing 200-500 product labels per batch. 50-sticker minimum supports boutique iteration. International orders ship via DHL Express in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
@@ -3006,9 +3047,9 @@ export const products: Product[] = [
   <tbody>
     <tr class="border-b"><td class="p-2 font-medium">Kiss-Cut (sheets)</td><td class="p-2">Easy peel, multiple per sheet</td><td class="p-2 text-center">15×15mm</td><td class="p-2 text-center">$</td></tr>
     <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Die-Cut (individual)</td><td class="p-2">Each sticker cut to shape, stacked</td><td class="p-2 text-center">10×10mm</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Perforated Cut</td><td class="p-2">Cut + perforated tear lines</td><td class="p-2 text-center">20×20mm</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Perforated Cut</td><td class="p-2">Cut + perforated tear lines</td><td class="p-2 text-center">20×20mm</td><td class="p-2 text-center">$</td></tr>
     <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Back-Slit (easy peel backing)</td><td class="p-2">Pre-split liner for fast peel</td><td class="p-2 text-center">—</td><td class="p-2 text-center">$</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Multi-Layer Cut</td><td class="p-2">Cut-out areas for see-through effect</td><td class="p-2 text-center">25×25mm</td><td class="p-2 text-center">$$$</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Multi-Layer Cut</td><td class="p-2">Cut-out areas for see-through effect</td><td class="p-2 text-center">25×25mm</td><td class="p-2 text-center">$$</td></tr>
   </tbody>
 </table>
 
@@ -3019,6 +3060,8 @@ export const products: Product[] = [
   <li><strong>Free die-line setup:</strong> Custom die-line prep from your AI/PDF artwork. We handle cut paths, bleed, and safe zones at no charge.</li>
   <li><strong>Variable data printing:</strong> Sequential numbering, QR codes, or per-sticker names for limited editions and personalization.</li>
 </ul>
+
+<p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>ISO 9001:2015</strong> certified lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and Heidelberg 4-color offset. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
 
 <h3>Use Cases & Industries</h3>
 <p>Die-cut stickers turn any brand mark into a wearable, shareable product. Best fit for craft breweries running limited-edition can releases (200-500 sticker runs per SKU), independent musicians selling merch at live shows (50-200 stickers per stop), and SaaS teams putting branded decals on employee laptops (10-50 stickers per team, repeated quarterly). International orders ship via DHL Express in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
@@ -3330,10 +3373,10 @@ export const products: Product[] = [
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Full Foil (entire design)</td><td class="p-2">Maximum shine, premium unboxing</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Foil Logo Only</td><td class="p-2">Selective accent on white or color print</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Foil Border / Frame</td><td class="p-2">Decorative edge, premium cue</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Foil + Spot UV Combo</td><td class="p-2">Metallic shine + glossy contrast</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Full Foil (entire design)</td><td class="p-2">Maximum shine, premium unboxing</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Foil Logo Only</td><td class="p-2">Selective accent on white or color print</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Foil Border / Frame</td><td class="p-2">Decorative edge, premium cue</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Foil + Spot UV Combo</td><td class="p-2">Metallic shine + glossy contrast</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
     <tr class="bg-gray-50"><td class="p-2 font-medium">Matte Lamination (over foil)</td><td class="p-2">Subtle metallic, anti-glare</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
   </tbody>
 </table>
@@ -3345,6 +3388,8 @@ export const products: Product[] = [
   <li><strong>Hot Stamp Foil:</strong> True hot foil stamping (not metallic ink) for crisp edges and high reflectivity.</li>
   <li><strong>Free Die-Cut Shapes:</strong> Custom shapes at no extra charge. Submit your outline (AI/PDF) and we prep the cut file.</li>
 </ul>
+
+<p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>ISO 9001:2015</strong> certified lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and Heidelberg 4-color offset. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
 
 <h3>Use Cases & Industries</h3>
 <p>Best fit for wedding stationers producing 200-500 foil seal stickers per event order, craft chocolatiers running 1,000+ holiday-hamper foil seals, and luxury beauty brands putting 500-2,000 foil seals on premium gift packaging. Foil elevates everyday branding. International orders ship via DHL Express in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
@@ -3382,10 +3427,10 @@ export const products: Product[] = [
     <tr><th>加工方法</th><th>効果</th><th>追加納期</th><th>追加料金</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>全面箔押し</td><td>最大光沢、プレミアム開封体験</td><td>+1 日</td><td>$$$</td></tr>
-    <tr class="border-b border-gray-200"><td>ロゴ部分のみ箔押し</td><td>白地・カラー印刷上に選択的アクセント</td><td>+1 日</td><td>$$</td></tr>
-    <tr class="border-b border-gray-200"><td>箔押し枠・フレーム</td><td>装飾エッジ、プレミアム感演出</td><td>+1 日</td><td>$$</td></tr>
-    <tr class="border-b border-gray-200"><td>箔押し + スポット UV 組合せ</td><td>金属光沢 + 光沢コントラスト</td><td>+1 日</td><td>$$$</td></tr>
+    <tr class="border-b border-gray-200"><td>全面箔押し</td><td>最大光沢、プレミアム開封体験</td><td>+1 日</td><td>$$</td></tr>
+    <tr class="border-b border-gray-200"><td>ロゴ部分のみ箔押し</td><td>白地・カラー印刷上に選択的アクセント</td><td>+1 日</td><td>$</td></tr>
+    <tr class="border-b border-gray-200"><td>箔押し枠・フレーム</td><td>装飾エッジ、プレミアム感演出</td><td>+1 日</td><td>$</td></tr>
+    <tr class="border-b border-gray-200"><td>箔押し + スポット UV 組合せ</td><td>金属光沢 + 光沢コントラスト</td><td>+1 日</td><td>$$</td></tr>
     <tr><td>マットラミネーション（箔上）</td><td>控えめな金属感、反射防止</td><td>+1 日</td><td>$</td></tr>
   </tbody>
 </table>
@@ -3964,9 +4009,9 @@ export const products: Product[] = [
   <tbody>
     <tr class="border-b"><td class="p-2 font-medium">Full Color Background</td><td class="p-2">Maximum neon impact</td><td class="p-2 text-center">15×15mm</td><td class="p-2 text-center">$</td></tr>
     <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Neon Accent on White</td><td class="p-2">Selective neon highlights, readable body text</td><td class="p-2 text-center">15×15mm</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">CMYK + Neon Layer</td><td class="p-2">Full color with neon punch</td><td class="p-2 text-center">20×20mm</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">CMYK + Neon Layer</td><td class="p-2">Full color with neon punch</td><td class="p-2 text-center">20×20mm</td><td class="p-2 text-center">$</td></tr>
     <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Die-Cut Shapes</td><td class="p-2">Custom outlines, any color</td><td class="p-2 text-center">10×10mm</td><td class="p-2 text-center">$</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">UV-Reactive Layer</td><td class="p-2">Glows under blacklight only</td><td class="p-2 text-center">25×25mm</td><td class="p-2 text-center">$$$</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">UV-Reactive Layer</td><td class="p-2">Glows under blacklight only</td><td class="p-2 text-center">25×25mm</td><td class="p-2 text-center">$$</td></tr>
   </tbody>
 </table>
 
@@ -3977,6 +4022,8 @@ export const products: Product[] = [
   <li><strong>Free Design Service:</strong> Color separation and neon layering handled by our prepress team. Submit your artwork in any format.</li>
   <li><strong>Free Sample Proof:</strong> Digital color proof before production. Physical sample ships via DHL Express (2-4 day delivery).</li>
 </ul>
+
+<p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>ISO 9001:2015</strong> certified lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and Heidelberg 4-color offset. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
 
 <h3>Use Cases & Industries</h3>
 <p>Fluorescent stickers grab attention in high-noise environments. ZprintPro serves nightclubs and event promoters (UV-reactive wristbands, party badges), retail sale signage (clearance, end-cap promotions), safety and construction (hazard warnings, PPE reminders), beauty and youth brands (Gen Z-targeted packaging), sports and fitness (race numbers, training labels), and educational tools (visual learning, classroom aids). For US-based event companies, our 100-sticker MOQ with 3-5 day production supports last-minute event prep. For international clients, DHL Express delivers in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
@@ -7431,6 +7478,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>Free Design Service:</strong> 3 layout concepts free with every order. Professional designers tailor to your industry.</li>
 </ul>
 
+<p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>ISO 9001:2015</strong> certified lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and Heidelberg 4-color offset. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
+
 <h3>Use Cases & Industries</h3>
 <p>A2 posters are the most versatile mid-format signage. ZprintPro serves retail stores (sale and seasonal signage), event companies (concert, festival, conference posters), real estate agents (open house and listing), restaurants (menu boards and promo posters), gyms and fitness studios (class schedules and trainer promotions), educational institutions (event and program posters), and small businesses (campaign announcements). For US-based small businesses, our 100-poster MOQ with 2-3 day production supports fast event prep. For international clients, DHL Express delivers in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
 
@@ -7958,6 +8007,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>Free Wind-Slot Cutting:</strong> Mesh banners with wind-permeable cutouts for high-wind locations (fences, scaffolding).</li>
 </ul>
 
+<p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>ISO 9001:2015</strong> certified lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and Heidelberg 4-color offset. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
+
 <h3>Use Cases & Industries</h3>
 <p>Outdoor posters deliver brand presence in open-air environments. ZprintPro serves construction and real estate (development signage, hoarding wraps), event and entertainment (concert and festival outdoor signage), retail and restaurants (storefront sale and seasonal campaigns), sports venues (game-day signage, sponsor boards), political and advocacy (campaign posters, awareness drives), and tourism (directional signage, attraction posters). For US-based outdoor campaigns, our 50-poster minimum supports boutique events and short-term installations. For international clients, DHL Express delivers in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
 
@@ -8140,6 +8191,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>Premium Print Quality:</strong> Heidelberg offset and large-format digital for crisp text and photo-quality imagery.</li>
   <li><strong>Free Lamination:</strong> Matte or gloss lamination standard on all foam board posters for durability.</li>
 </ul>
+
+<p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>ISO 9001:2015</strong> certified lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and Heidelberg 4-color offset. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
 
 <h3>Use Cases & Industries</h3>
 <p>Display posters are the workhorse of trade show and retail visual marketing. ZprintPro serves trade show exhibitors (booth backdrops, product posters), retail pop-ups (window displays, hero signage), event companies (sponsor boards, wayfinding), corporate conferences (stage backdrops, sponsor walls), product launches (campaign hero posters), art exhibitions (gallery-style prints), and educational fairs (program posters, booth signage). For US-based trade show exhibitors, our 50-poster minimum and fast production support tight event timelines. For international clients, DHL Express delivers in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
@@ -8331,6 +8384,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>Free Hand Inspection:</strong> Every print hand-inspected for color, registration, and paper quality before shipping.</li>
 </ul>
 
+<p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>ISO 9001:2015</strong> certified lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and Heidelberg 4-color offset. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
+
 <h3>Use Cases & Industries</h3>
 <p>Art posters serve the creative economy with museum-grade quality. ZprintPro serves independent artists (limited edition prints for sale), photographers (gallery prints and exhibitions), illustrators and designers (poster drops and merchandise), galleries and curators (exhibition prints), interior designers (custom art for client projects), corporate art programs (office and lobby art), and gift and stationery brands (curated art collections). For US-based artists, our 25-poster minimum supports boutique editions and art fair prep. For international clients, DHL Express delivers in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
 
@@ -8520,6 +8575,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>Free Installation Guide:</strong> We provide step-by-step installation instructions and squeegee tool for bubble-free application.</li>
   <li><strong>Free Contour Cut:</strong> Custom shape cutting available — circles, ovals, logo outlines. Add 1-2 days to production.</li>
 </ul>
+
+<p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>ISO 9001:2015</strong> certified lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and Heidelberg 4-color offset. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
 
 <h3>Use Cases & Industries</h3>
 <p>Adhesive posters are the easiest way to put brand presence on any smooth surface. ZprintPro serves retail windows (sale and seasonal decals), vehicle advertising (car and truck decals), event signage (concert, festival, conference), corporate offices (branded wall murals, wayfinding), restaurants and cafés (menu boards, daily specials), real estate (open house, sold stickers), and home decor (removable wallpaper, photo murals). For US-based brands, our 50-poster minimum supports boutique campaigns and short-term installs. For international clients, DHL Express delivers in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
@@ -8807,58 +8864,67 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為深圳彩龍印刷包裝有限公司旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `<h3>Cosmetic Boxes with Customizable Inner Tray</h3>
-<p>ZprintPro Cosmetic Boxes are specially designed for cosmetics, featuring a customizable inner tray to securely hold bottles, palettes, and other products. The outer shell is crafted from stiff white card with matte or soft-touch film, providing a premium look and feel. The inner tray can be made from EVA foam, molded pulp, or PET blisters to ensure shock protection and stability.</p>
+    longDescriptionEn: `<h3>Cosmetic Packaging Boxes with Customizable Inner Tray</h3>
+<p>ZprintPro cosmetic boxes are precision-engineered for skincare, fragrance, and beauty brands that need a premium unboxing experience. Rigid setup boxes with custom EVA foam or molded pulp inner trays hold bottles, jars, and tubes securely. Choose from magnetic closure, ribbon pull, lift-off lid, or drawer-style opening. Full-color CMYK + spot color printing with optional soft-touch lamination, foil stamping, and embossing for a luxury finish. 100-box MOQ, white-glove DHL Express shipping.</p>
 
-<h3>Material & GSM Specifications</h3>
+<h3>Material & Adhesive Comparison</h3>
 <table class="w-full border-collapse my-4 text-sm">
   <thead>
     <tr class="bg-[#2873F5] text-white">
       <th class="p-2 text-left">Material</th>
-      <th class="p-2 text-center">Rigidity</th>
-      <th class="p-2 text-center">Shock Protection</th>
+      <th class="p-2 text-center">Transparency</th>
+      <th class="p-2 text-center">Adhesion</th>
       <th class="p-2 text-center">Cost</th>
-      <th class="p-2 text-left">Best For</td>
+      <th class="p-2 text-left">Best For</th>
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Cosmetic Box (with insert)</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Skincare, premium makeup</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Folding Carton</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Budget cosmetics, trial sets</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Rigid Gift Box</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">Luxury cosmetics, gift sets</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Rigid Setup Box</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Luxury skincare, fragrance gift sets</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Folding Carton</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Mid-tier skincare, retail shelf-ready</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Drawer-Style Box</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">Subscription boxes, sample kits</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Magnetic Closure Box</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Premium gift sets, PR packaging</td></tr>
   </tbody>
 </table>
 
-<h3>Printing & Finishing Processes</h3>
-<p>Our printing technology ensures high-quality, vibrant prints on the outer shell of the cosmetic boxes. We offer a variety of finishing options, including matte or soft-touch film for a premium feel, and hairline foil or spot UV for a luxurious touch. The inner tray can be customized with different materials and colors to match the brand's aesthetic.</p>
-
-<h3>Size, Format, and MOQ Table</h3>
+<h3>Printing & Finishing Options</h3>
 <table class="w-full border-collapse my-4 text-sm">
   <thead>
     <tr class="bg-[#2873F5] text-white">
-      <th class="p-2 text-left">Size (mm)</th>
-      <th class="p-2 text-center">MOQ</th>
-      <th class="p-2 text-center">Turnaround</th>
-      <th class="p-2 text-center">Unit Price</td>
+      <th class="p-2 text-left">Finish</th>
+      <th class="p-2 text-left">Effect</th>
+      <th class="p-2 text-center">Lead Time</th>
+      <th class="p-2 text-center">Cost Add</th>
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">100x100x30</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$3.00</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">150x200x40</td><td class="p-2 text-center">50</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$5.00</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Soft-Touch Lamination</td><td class="p-2">Velvety matte feel, fingerprint resistant, premium perception</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Gloss Lamination</td><td class="p-2">High-shine, vibrant color saturation</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Foil Stamping (Gold/Silver/Rose)</td><td class="p-2">Metallic logo accents, luxury positioning</td><td class="p-2 text-center">+2 days</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Embossing / Debossing</td><td class="p-2">Tactile depth on logo or pattern</td><td class="p-2 text-center">+2 days</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Spot UV</td><td class="p-2">Selective glossy highlights on logos or graphics</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
   </tbody>
 </table>
 
-<h3>Use Cases and Applications</h3>
-<p>ZprintPro Cosmetic Boxes are perfect for:
+<h3>Why Choose ZprintPro?</h3>
 <ul>
-  <li>Skincare and premium makeup brands looking for a customizable packaging solution.</li>
-  <li>Luxury cosmetics and gift sets for a luxurious, high-end look.</li>
-  <li>Budget cosmetics and trial sets for cost-effective packaging.</li>
-  <li>Promotional events and product launches.</li>
+  <li><strong>Custom inner tray engineering:</strong> EVA foam, molded pulp, or paperboard inserts tailored to your exact bottle and jar dimensions. Protects product during shipping; elevates unboxing perception.</li>
+  <li><strong>100-box MOQ with volume pricing:</strong> 15% off at 500+, 25% off at 1,000+, 35% off at 5,000+ for product launches, retail rollouts, and gifting campaigns.</li>
+  <li><strong>Full-color CMYK + spot color:</strong> Heidelberg 6-color offset with Pantone matching for brand-accurate reproduction. Spot UV, foil, and embossing on the same press pass.</li>
+  <li><strong>Free structural design service:</strong> Our packaging engineers create 3D mockups and dieline templates for your product. Iterate until the unboxing feels right.</li>
 </ul>
-</p>
 
-<h3>Quality, Compliance, and Shipping</h3>
-<p>Each batch runs through a free digital color proof before production. Heidelberg 4-color offset + UV ink delivers 90%+ color saturation. Reprints are free if final color drifts beyond Delta E 2. Custom EVA foam or paper pulp inserts available for dropper bottle protection.</p>`,
+<p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>ISO 9001:2015</strong> certified lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and Heidelberg 4-color offset. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
+
+<h3>Use Cases & Industries</h3>
+<p>Cosmetic packaging boxes are the first physical touchpoint of any beauty brand. Best fit for indie skincare brands launching serums or moisturizers in glass dropper bottles, fragrance houses preparing PR gift sets for media editors, and subscription beauty boxes shipping curated assortments. Also ideal for direct-to-consumer beauty brands building unboxing experiences that drive social sharing, and luxury hotel amenity programs seeking elevated guest gifts. International orders ship via DHL Express in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
+
+<h3>Frequently Asked Questions</h3>
+<details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>100 boxes. Sample orders of 5-25 boxes are available with custom dieline and white sample proofing (rush fee applies).</p></details>
+<details class="my-2"><summary><strong>How long does production take?</strong></summary><p>Standard production is 10-15 business days after artwork approval (longer than flat products due to rigid construction and inner tray fabrication). Rush production (5-7 days) is available for orders up to 500 boxes.</p></details>
+<details class="my-2"><summary><strong>Do you provide the inner tray insert?</strong></summary><p>Yes. Custom EVA foam, molded pulp, or paperboard inserts are included. Send your product dimensions and we engineer the tray to hold bottles, jars, and tubes securely.</p></details>
+<details class="my-2"><summary><strong>Can I print inside the box as well?</strong></summary><p>Yes. Inside printing is available on rigid setup and drawer-style boxes. Common for brand storytelling, usage instructions, or premium patterns visible when the lid is opened.</p></details>
+<details class="my-2"><summary><strong>How is shipping calculated to my country?</strong></summary><p>US orders over $200 ship free via DHL Express (3-5 business days, flat-pack). UK/AU orders over £150 / AU$300 ship free. KR/SG/AE ship via DHL Express at standard rates (calculated at checkout). Tracking provided for all shipments.</p></details>
+<details class="my-2"><summary><strong>What if I'm not happy with the print quality?</strong></summary><p>We provide free digital color proofing and physical white sample before production. If the final print drifts from approved proof, we reprint at no cost or refund in full. Your satisfaction is guaranteed.</p></details>`,
     longDescriptionJa: `化妝品パッケージボックスをZprintProでご注文。専用内装（EVAフォーム/サテン生地）+箔押し・スポットUV対応の化粧品OEMパッケージです。スキンケア・メイクアップ・香水・フレグランス・美容EC・OEMメーカー向けに、ブランドの世界観を表現する専用設計で、少量OEM・テスト販売から量産・百貨店展開まで対応可能です。【専用サイズ】30ml/50ml/100ml/200mlボトル対応、表面はアート紙/クラフト/メタル調/皮革調から選択。【構造】差込蓋・天地蓋・引出し式・観音開きの4種類から選択可能、【内装オプション】EVAフォーム成形（ボトル形状に合わせてカット）、サテン生地（黒/白/ピンク/ベージュ）、ブリスタートレイ（複数アイテム収納）。【表面仕上げ】箔押し（金/銀+特殊色）、スポットUV（ロゴ・装飾）、エンボス/デボス、ラグジュアリー系のコスメブランドで多数の実績があります。【コンプライアンス】薬機法準拠の全成分表示スペース設計をサポート、業界基準（縦1.5mm以上の文字サイズ等）を満たすレイアウトをご提案。リサイクルマーク・材質表示対応。【納期】30個から対応、最短10営業日で出荷。内装カスタマイズや特殊加工を含む場合は14-21営業日。お急ぎの場合は特急プラン（有償）もございます。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
 
 <p><em>智印雲（ZprintPro）は深圳市彩龙印刷包装有限公司が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
@@ -9580,6 +9646,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>Free Material Samples:</strong> Paper, lamination, and finish samples shipped via DHL for hands-on evaluation.</li>
 </ul>
 
+<p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>ISO 9001:2015</strong> certified lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and Heidelberg 4-color offset. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
+
 <h3>Use Cases & Industries</h3>
 <p>Folding boxes cover the broadest range of retail packaging needs. ZprintPro serves cosmetics and beauty (skincare, makeup, fragrance), pharmaceuticals (vitamins, supplements, OTC), food and beverage (tea, chocolate, snacks, dry goods), electronics (cables, accessories, small gadgets), retail apparel (folded clothing, accessories), candles and home goods (small décor, kitchenware), and DIY/craft brands (small parts, kits, supplies). For US-based brands, our 100-box MOQ supports small launches and pilot runs. For international clients, DHL Express delivers in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
 
@@ -9759,10 +9827,10 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <tbody>
     <tr class="border-b"><td class="p-2 font-medium">Art Paper + Matte Lam</td><td class="p-2">Soft-touch, fingerprint resistant</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
     <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Art Paper + Gloss Lam</td><td class="p-2">High-shine, vibrant color</td><td class="p-2 text-center">+0 days</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Specialty Paper (linen/canvas)</td><td class="p-2">Textured, premium tactile</td><td class="p-2 text-center">+2 days</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Leatherette / PU</td><td class="p-2">Luxury leather look, durable</td><td class="p-2 text-center">+3 days</td><td class="p-2 text-center">$$$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Foil Stamping</td><td class="p-2">Metallic logo, premium cue</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Embossing / Debossing</td><td class="p-2">Tactile dimensional logo</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Specialty Paper (linen/canvas)</td><td class="p-2">Textured, premium tactile</td><td class="p-2 text-center">+2 days</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Leatherette / PU</td><td class="p-2">Luxury leather look, durable</td><td class="p-2 text-center">+3 days</td><td class="p-2 text-center">$$</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Foil Stamping</td><td class="p-2">Metallic logo, premium cue</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Embossing / Debossing</td><td class="p-2">Tactile dimensional logo</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
     <tr class="bg-gray-50"><td class="p-2 font-medium">Spot UV</td><td class="p-2">Glossy contrast, modern</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
   </tbody>
 </table>
@@ -9775,6 +9843,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>Free Structural Design:</strong> Custom dieline, 3D mockup, and material samples included.</li>
   <li><strong>Free Premium Proofing:</strong> Physical sample with all finishes applied before full production. DHL 2-4 day delivery.</li>
 </ul>
+
+<p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>ISO 9001:2015</strong> certified lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and Heidelberg 4-color offset. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
 
 <h3>Use Cases & Industries</h3>
 <p>Rigid boxes define the luxury tier of packaging. ZprintPro serves fine jewelry (engagement rings, watches, necklaces), premium spirits (single-malt whisky, cognac, champagne), luxury cosmetics (high-end skincare, designer fragrance), premium electronics (headphones, smartwatches), gourmet food (truffle collections, aged cheese, fine chocolate), corporate gifting (executive client gifts, awards), and limited-edition collectibles (artisan drops, signed editions). For US-based luxury brands, our 250-box MOQ supports limited drops and gift-with-purchase. For international clients, DHL Express delivers in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
