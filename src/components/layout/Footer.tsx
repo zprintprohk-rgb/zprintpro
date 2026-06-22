@@ -27,7 +27,7 @@ const translations = {
     phone: '+86 181 2638 0255',
     email: 'zprintpro@outlook.com',
     address: '廣東省深圳市龍崗區平湖街道嘉城路1號（518111）',
-    legalLabel: '特定商取引法に基づく表記',
+    legalLabel: '經營者資訊披露',
     privacyLabel: '隱私政策',
     termsLabel: '使用條款',
     columns: [

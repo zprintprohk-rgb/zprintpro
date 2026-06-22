@@ -11,10 +11,13 @@ interface LegalPageProps {
 const LEGAL_ENTITY = {
   sellerName: '深圳市彩龙印刷包装有限公司',
   sellerNameEn: 'Shenzhen Cailong Printing & Packaging Co., Ltd.',
+  sellerNameTrad: '深圳市彩龍印刷包裝有限公司',
   responsiblePerson: '唐运提',
   responsiblePersonEn: 'Tang Yunti',
+  responsiblePersonTrad: '唐運提',
   address: '〒518111 中華人民共和国 広東省深圳市龍崗区平湖街道嘉城路1号',
   addressEn: 'No.1 Jiacheng Road, Pinghu Street, Longgang District, Shenzhen, Guangdong 518111, China',
+  addressTrad: '中國廣東省深圳市龍崗區平湖街道嘉城路1號 518111',
   phone: '+86-181-2638-0255',
   email: 'zprintpro@outlook.com',
   brand: '智印雲 / ZprintPro',
@@ -29,60 +32,60 @@ const LEGAL_ENTITY = {
 
 const translations = {
   'zh-hk': {
-    title: '特定商取引法に基づく表記 | 智印雲 ZprintPro',
-    titleShort: '特定商取引法に基づく表記',
+    title: '經營者資訊披露 | 智印雲 ZprintPro',
+    titleShort: '經營者資訊披露',
     description:
-      '智印雲 ZprintPro 銷售業者資訊・商品販売条件・特定商取引法に基づく表記(日本市場向け)。',
-    h1: '特定商取引法に基づく表記',
-    lastUpdated: '最終更新',
-    sectionCrossBorder: '事業者の説明',
+      '智印雲 ZprintPro 經營者資訊披露：包括公司資料、商品銷售條款及聯絡方式。跨境電商，全球配送。',
+    h1: '經營者資訊披露',
+    lastUpdated: '最後更新日期',
+    sectionCrossBorder: '關於經營者',
     crossBorderBody:
-      'ZprintPro(智印雲)は、中華人民共和国深圳市に本社を置く国際印刷サービス事業者です。日本市場向けには越境EC(Eコマース)形式で商品を販売しており、日本国内には店舗・営業所・支店はございません。本ページは「特定商取引に関する法律」(特定商取引法)第3条および同法施行規則第2条に基づき、日本消費者の皆様に販売事業者を明示するものです。',
-    sectionSeller: '販売事業者情報',
-    sectionTransaction: '商品販売条件',
-    sectionCustoms: '関税・輸入消費税について',
+      '智印雲 ZprintPro 為於中華人民共和國深圳市註冊成立之國際印刷服務商。本網站以跨境電商形式銷售印刷產品至全球多個市場，包括香港、中國內地、日本、美國、英國、澳大利亞等地。我們於香港並無實體門市或營業所，所有交易均透過本網站及國際速遞完成。本頁面根據適用之消費者保護法規要求，向客戶披露經營者資訊。',
+    sectionSeller: '經營者資訊',
+    sectionTransaction: '商品銷售條款',
+    sectionCustoms: '關稅及進口稅費',
     customsBody:
-      '本商品は中華人民共和国から国際便で発送されます。関税・輸入消費税はご注文者様のご負担となります(印刷物の HS code 4911.99 は関税 0% が一般的ですが、輸入消費税 10% が課税される場合があります)。詳細は税関までお問い合わせください。',
-    sectionContact: 'お問い合わせ',
+      '本商品由中華人民共和國出貨，經國際速遞寄送至全球各地。關稅及進口環節稅費由收件人承擔（印刷品 HS code 4911.99 一般關稅為 0%，但部分國家或地區可能徵收進口消費稅）。詳情請聯絡當地海關。',
+    sectionContact: '聯絡我們',
     contactBody:
-      'ご質問・お問い合わせは下記までご連絡ください。日本語対応スタッフがお答えします(平日 9:00-18:00 日本時間)。',
-    contactHours: '平日 9:00-18:00 日本時間',
-    contactResponseSla: '通常 1-2 営業日以内に返信',
+      '如有任何疑問，歡迎透過以下方式聯絡我們。客服時間：星期一至五 9:00-18:00（香港時間），粵語、普通話、英語及日語皆可。',
+    contactHours: '星期一至五 9:00-18:00（香港時間）',
+    contactResponseSla: '一般 1-2 個工作天內回覆',
     fields: {
-      sellerName: '販売業者名',
-      responsiblePerson: '運営統括責任者',
-      address: '所在地',
-      phone: '電話番号',
-      email: 'メールアドレス',
-      brand: '運営ブランド',
-      established: '設立年',
-      langSupport: '対応言語',
-      price: '販売価格',
-      additionalFees: '商品代金以外の必要料金',
-      paymentMethod: '支払方法',
-      paymentTiming: '支払時期',
-      deliveryTiming: '引渡時期',
-      returns: '返品・交換',
-      quantityLimit: '販売数量の制限',
-      techEnv: '動作環境',
+      sellerName: '公司名稱',
+      responsiblePerson: '法定代表人',
+      address: '公司地址',
+      phone: '聯絡電話',
+      email: '電郵地址',
+      brand: '營運品牌',
+      established: '成立年份',
+      langSupport: '支援語言',
+      price: '銷售價格',
+      additionalFees: '商品以外之費用',
+      paymentMethod: '付款方式',
+      paymentTiming: '付款時間',
+      deliveryTiming: '交貨時間',
+      returns: '退換貨政策',
+      quantityLimit: '銷售數量限制',
+      techEnv: '技術環境',
     },
     values: {
       price:
-        '各商品ページに表示(消費税込価格)。送料は別途(下記参照)。商品によりボリュームディスカウントあり(500枚 15% OFF / 1,000枚 25% OFF)。',
+        '各商品頁面顯示（含稅價）。運費另計（見下）。提供批量折扣（500 件 9 折 / 1,000 件 75 折）。',
       additionalFees:
-        '国際送料(DHL Express / FedEx 国際速達便)。日本全国一律 ¥10,000 以上のご注文で送料無料。沖縄・離島は追加料金が必要な場合があります。',
+        '國際運費（DHL Express / FedEx 國際速遞），按目的地及重量計算。香港／澳門訂單滿 HK$1,000 享免運優惠；偏遠地區可能另收附加費。海外訂單運費於結賬時計算。',
       paymentMethod:
-        'クレジットカード(VISA / Mastercard / JCB / AMEX)、Alipay、銀行振込(前払い・法人・個人いずれも可)。',
+        '信用卡（VISA / Mastercard / JCB / AMEX）、Alipay、WeChat Pay、PayPal、銀行轉帳（預付，公司及個人客戶均可使用）。',
       paymentTiming:
-        'クレジットカード:商品出荷時に即時決済。Alipay:商品出荷時に即時決済。銀行振込:ご注文確定後 7 日以内にお振込み。',
+        '信用卡 / Alipay / WeChat Pay / PayPal：商品出貨時即時結算。銀行轉帳：訂單確認後 7 日內匯款。',
       deliveryTiming:
-        '校正完了後 3-7 営業日で出荷。DHL / FedEx 国際速達便で日本全国へ 2-4 日配送(沖縄・離島は 5-7 日)。納期内配送率は 98.5% 以上(2024 年実績)。',
+        '校稿確認後 3-7 個工作日出貨。DHL / FedEx 國際速遞到全球主要城市 2-7 個工作天。準時達標率 98.5% 以上（2024 年數據）。',
       returns:
-        'オーダーメイド印刷商品は性質上、原則として返品不可。ただし、商品到着時に破損・汚損・注文と異なる商品が届いた場合は、商品到着後 7 日以内に限り、無償で再印刷または全額返金いたします。色校正 PDF を提供し、最終印刷前に内容を確認いただいております。',
+        '度身訂製印刷商品性質上原則上不退換。若到貨時發現破損、污損或與訂單不符，可於收貨 7 日內聯絡我們安排免費重印或全額退款。出貨前會提供 PDF 色彩校稿供您確認。',
       quantityLimit:
-        '商品ごとに最小注文数量(MOQ)を設定(各商品ページに記載)。大量発注割引あり(各商品ページのボリュームディスカウント表を参照)。',
+        '每件商品設有最低起訂量（MOQ），詳見各商品頁面。提供批量折扣優惠。',
       techEnv:
-        '本サービスは WEB ブラウザ(Chrome / Firefox / Safari / Edge 最新版)で動作します。インターネット接続が必要です。推奨画面解像度:1280×720 以上。',
+        '本服務於現代網頁瀏覽器（Chrome / Firefox / Safari / Edge 最新版）運行。需要互聯網連線。建議螢幕解析度：1280×720 或以上。',
     },
   },
   en: {
@@ -265,11 +268,17 @@ export default function LegalPage({ params }: LegalPageProps) {
           streetAddress:
             locale === 'en'
               ? 'No.1 Jiacheng Road, Pinghu Street, Longgang District'
-              : '嘉城路1号 平湖街道 龍崗区',
+              : locale === 'ja'
+              ? '嘉城路1号 平湖街道 龙岗区'
+              : '嘉城路1號 平湖街道 龍崗區',
           addressLocality:
             locale === 'en' ? LEGAL_ENTITY.city : '深圳市',
           addressRegion:
-            locale === 'en' ? LEGAL_ENTITY.region : '広東省',
+            locale === 'en'
+              ? LEGAL_ENTITY.region
+              : locale === 'ja'
+              ? '広東省'
+              : '廣東省',
           postalCode: LEGAL_ENTITY.postalCode,
           addressCountry: {
             '@type': 'Country',
@@ -323,7 +332,11 @@ export default function LegalPage({ params }: LegalPageProps) {
                 {t.fields.sellerName}
               </dt>
               <dd className="mt-1 text-gray-900 font-medium">
-                {locale === 'en' ? LEGAL_ENTITY.sellerNameEn : LEGAL_ENTITY.sellerName}
+                {locale === 'en'
+                  ? LEGAL_ENTITY.sellerNameEn
+                  : locale === 'ja'
+                  ? LEGAL_ENTITY.sellerName
+                  : LEGAL_ENTITY.sellerNameTrad}
               </dd>
             </div>
             <div>
@@ -333,7 +346,9 @@ export default function LegalPage({ params }: LegalPageProps) {
               <dd className="mt-1 text-gray-900 font-medium">
                 {locale === 'en'
                   ? LEGAL_ENTITY.responsiblePersonEn
-                  : LEGAL_ENTITY.responsiblePerson}
+                  : locale === 'ja'
+                  ? LEGAL_ENTITY.responsiblePerson
+                  : LEGAL_ENTITY.responsiblePersonTrad}
               </dd>
             </div>
             <div>
@@ -349,7 +364,11 @@ export default function LegalPage({ params }: LegalPageProps) {
                 {t.fields.address}
               </dt>
               <dd className="mt-1 text-gray-900">
-                {locale === 'en' ? LEGAL_ENTITY.addressEn : LEGAL_ENTITY.address}
+                {locale === 'en'
+                  ? LEGAL_ENTITY.addressEn
+                  : locale === 'ja'
+                  ? LEGAL_ENTITY.address
+                  : LEGAL_ENTITY.addressTrad}
               </dd>
             </div>
             <div>
@@ -394,7 +413,11 @@ export default function LegalPage({ params }: LegalPageProps) {
                 {t.fields.langSupport}
               </dt>
               <dd className="mt-1 text-gray-900">
-                日本語 / 中文(繁體・簡體) / English
+                {locale === 'ja'
+                  ? '日本語 / 中文(繁體・簡體) / English'
+                  : locale === 'en'
+                  ? 'English / 中文(繁體・簡體) / 日本語'
+                  : '中文（繁體／簡體）／日本語／English'}
               </dd>
             </div>
           </dl>
