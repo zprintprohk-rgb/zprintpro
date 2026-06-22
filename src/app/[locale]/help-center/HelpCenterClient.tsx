@@ -173,31 +173,40 @@ const translations = {
     },
     /* ── 退換政策 ── */
     returns: {
-      sectionTitle: '退換政策及免責聲明',
-      noReturnTitle: '不予退貨情況',
-      noReturnItems: [
-        '客戶自來稿件，當印刷品到手後，如顏色及文字完全正確，客戶不能以其他藉口或理由退貨',
-        '四色 CMYK 以外之色彩（RGB、Pantone）所造成之色差',
-        '裁切誤差 ±1 mm 屬正常範圍內',
-        '同一電腦檔案重覆訂單時的色差（±10% 為正常標準）',
+      sectionTitle: '退換政策',
+      intro: '本店所有商品均為按需訂製印刷產品，僅針對印刷品質缺陷提供退貨服務。',
+      returnableTitle: '可申請退貨的情況',
+      returnableItems: [
+        '印刷顏色偏差超出行業標準',
+        '裁切尺寸錯誤',
+        '材質與商品描述不符',
+        '商品運輸途中嚴重損壞',
+      ],
+      nonReturnableTitle: '不可申請退貨的情況',
+      nonReturnableItems: [
+        '客戶提供的設計文件有誤',
+        '文字 / 排版錯誤',
+        '色差在合理印刷範圍內',
+        '個人主觀不喜',
+        '下單後改變主意等非我方責任問題',
+      ],
+      timeLimitTitle: '退貨申請時限',
+      timeLimitItems: [
+        '退貨申請需在簽收商品後 14 天內發起，逾期不予受理',
+      ],
+      shippingCostTitle: '退貨運費承擔',
+      shippingCostItems: [
+        '非質量問題退貨運費由買家承擔',
+        '經核實確屬我方質量問題的，退貨運費由我方承擔',
       ],
       spareTitle: '損耗及備品說明',
       spareItems: [
         '由於生產上可能出現損耗，一般會多備品',
         '如交貨數量少於訂單 5% 內，可減少差額，不再補數',
       ],
-      finishTitle: '加工服務範圍',
-      finishItems: [
-        '局部 UV',
-        '多層形裁切',
-        '燙金銀',
-        '打窿',
-        '圓角裁切',
-        '壓線加工',
-      ],
       legalTitle: '法律免責',
       legalItems: [
-        '自我製作之稿件內若含有任何沒有版權之圖片或未經許可之標語、反對字眼、淫穢字句等，所有法律責任本公司一概不負責',
+        '客戶自製稿件內若含有任何沒有版權之圖片或未經許可之標語，所有法律責任本公司一概不負責',
         '若稿件上印有 QR code 或 Barcode 條碼，本公司不能保證條碼內的資料能讀取正常',
       ],
     },
@@ -339,27 +348,36 @@ const translations = {
       ],
     },
     returns: {
-      sectionTitle: 'Return Policy & Disclaimer',
-      noReturnTitle: 'Non-Returnable Items',
-      noReturnItems: [
-        'If colors and text are correct upon receipt, returns will not be accepted for other reasons',
-        'Color deviations caused by RGB or Pantone colors',
-        'Cutting tolerance within ±1 mm',
-        'Color variation on repeat orders (±10% is normal)',
+      sectionTitle: 'Return Policy',
+      intro: 'All products are custom-made to order. Returns are only accepted for print quality defects.',
+      returnableTitle: 'Eligible for Return',
+      returnableItems: [
+        'Print color deviation beyond industry standard',
+        'Incorrect cutting size',
+        'Material does not match product description',
+        'Severe damage during shipping',
+      ],
+      nonReturnableTitle: 'Not Eligible for Return',
+      nonReturnableItems: [
+        'Errors in customer-provided design files',
+        'Text / layout errors',
+        'Color variation within acceptable print range',
+        'Personal subjective dissatisfaction',
+        'Change of mind after ordering and other non-defect issues',
+      ],
+      timeLimitTitle: 'Return Request Window',
+      timeLimitItems: [
+        'Return requests must be submitted within 14 days of receiving the product. Late requests will not be accepted.',
+      ],
+      shippingCostTitle: 'Return Shipping Cost',
+      shippingCostItems: [
+        'For non-quality issues, return shipping is paid by the buyer',
+        'For verified quality defects, return shipping is paid by us',
       ],
       spareTitle: 'Spare Quantity & Spoilage',
       spareItems: [
         'Spare copies are produced to account for production spoilage',
         'If delivered quantity is within 5% of order, no reprints will be made',
-      ],
-      finishTitle: 'Finishing Services',
-      finishItems: [
-        'Spot UV',
-        'Die-cutting',
-        'Foil stamping',
-        'Hole punching',
-        'Rounded corners',
-        'Creasing',
       ],
       legalTitle: 'Legal Disclaimer',
       legalItems: [
@@ -505,27 +523,36 @@ const translations = {
       ],
     },
     returns: {
-      sectionTitle: '返品ポリシーと免責事項',
-      noReturnTitle: '返品不可の場合',
-      noReturnItems: [
-        '色と文字が正しい場合、他の理由での返品はお受けできません',
-        'RGBやPantoneによる色のずれ',
-        '裁断誤差±1 mm以内',
-        '同じデータの再注文での色のずれ（±10%は正常範囲）',
+      sectionTitle: '返品ポリシー',
+      intro: '当店のすべての商品は受注後印刷されるカスタムメイド商品であり、印刷品質不良のみ返品を受け付けます。',
+      returnableTitle: '返品可能なケース',
+      returnableItems: [
+        '業界標準を超える印刷色の偏差',
+        '裁断サイズの誤り',
+        '材質の商品記載内容との相違',
+        '輸送中の重大な破損',
+      ],
+      nonReturnableTitle: '返品不可のケース',
+      nonReturnableItems: [
+        'お客様提供のデザインデータの誤り',
+        'テキスト・レイアウトの誤り',
+        '許容範囲内の印刷色差',
+        '個人主観による不満',
+        '注文後のキャンセルなど当社責任外の事項',
+      ],
+      timeLimitTitle: '返品申請期限',
+      timeLimitItems: [
+        '返品申請は商品受領後 14 日以内に申請してください。期限切れは受け付けません。',
+      ],
+      shippingCostTitle: '返品送料の負担',
+      shippingCostItems: [
+        '品質不良以外の返品送料はお客様のご負担',
+        '当社品質不良と確認された場合、返品送料は当社負担',
       ],
       spareTitle: '予備数量と損耗',
       spareItems: [
         '生産上の損耗を考慮し予備を作成します',
         '納品数量が注文数の5%以内の場合、再製作は行いません',
-      ],
-      finishTitle: '加工サービス',
-      finishItems: [
-        '局部UV',
-        '型抜き',
-        '箔押し',
-        '穴あけ',
-        '角丸加工',
-        '折り目加工',
       ],
       legalTitle: '法的免責事項',
       legalItems: [
@@ -916,28 +943,26 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
     const r = t.returns;
     return (
       <div className="space-y-6">
-        <div className="grid lg:grid-cols-2 gap-6">
-          <InfoCard title={r.noReturnTitle} icon={Ban} items={r.noReturnItems} accent="red" />
-          <InfoCard title={r.spareTitle} icon={Package} items={r.spareItems} accent="green" />
+        {/* Intro: general policy statement */}
+        <div className="bg-amber-50 border-l-4 border-amber-400 rounded-r-lg p-5">
+          <p className="text-base text-gray-800 leading-relaxed">{r.intro}</p>
         </div>
 
+        {/* Returnable + Non-returnable */}
         <div className="grid lg:grid-cols-2 gap-6">
-          {/* Finishing services */}
-          <div className="bg-white rounded-xl border border-gray-100 p-5">
-            <h3 className="font-bold text-[#333333] mb-3 flex items-center gap-2 text-lg">
-              <Scissors className="w-4 h-4 text-[#2873F5]" />
-              {r.finishTitle}
-            </h3>
-            <div className="flex flex-wrap gap-2">
-              {r.finishItems.map((item, i) => (
-                <span key={i} className="px-3 py-1.5 bg-gray-50 rounded-lg text-sm text-gray-600 border border-gray-100">
-                  {item}
-                </span>
-              ))}
-            </div>
-          </div>
+          <InfoCard title={r.returnableTitle} icon={CheckCircle2} items={r.returnableItems} accent="green" />
+          <InfoCard title={r.nonReturnableTitle} icon={Ban} items={r.nonReturnableItems} accent="red" />
+        </div>
 
-          {/* Legal */}
+        {/* Time limit + Shipping cost */}
+        <div className="grid lg:grid-cols-2 gap-6">
+          <InfoCard title={r.timeLimitTitle} icon={Clock} items={r.timeLimitItems} accent="orange" />
+          <InfoCard title={r.shippingCostTitle} icon={Truck} items={r.shippingCostItems} accent="blue" />
+        </div>
+
+        {/* Spare quantity + Legal disclaimer */}
+        <div className="grid lg:grid-cols-2 gap-6">
+          <InfoCard title={r.spareTitle} icon={Package} items={r.spareItems} accent="green" />
           <div className="bg-white rounded-xl border border-gray-100 p-5">
             <h3 className="font-bold text-[#333333] mb-3 flex items-center gap-2 text-lg">
               <Copyright className="w-4 h-4 text-red-500" />

@@ -34,7 +34,7 @@ const translations = {
       },
       {
         title: '5. 退換貨政策',
-        body: '度身訂製印刷商品性質上原則上不退換。若到貨時發現破損、污損或與訂單不符，可於收貨 7 日內聯絡我們安排免費重印或全額退款。',
+        body: '本店所有商品均為按需訂製印刷產品，僅針對印刷品質缺陷提供退貨服務。可申請退貨的情況：印刷顏色偏差超出行業標準、裁切尺寸錯誤、材質與商品描述不符、商品運輸途中嚴重損壞。退貨申請需在簽收商品後 14 天內發起，逾期不予受理。非質量問題退貨運費由買家承擔；經核實確屬我方質量問題的，退貨運費由我方承擔。',
       },
       {
         title: '6. 知識產權',
@@ -84,7 +84,7 @@ const translations = {
       },
       {
         title: '5. Returns and Exchanges',
-        body: 'Custom-printed products are generally non-returnable. If items arrive damaged, defective, or do not match your order, please contact us within 7 days of receipt for a free reprint or full refund.',
+        body: 'All products are custom-made to order. Returns are only accepted for print quality defects. Eligible scenarios: print color deviation beyond industry standard, incorrect cutting size, material does not match product description, severe damage during shipping. Return requests must be submitted within 14 days of receiving the product; late requests will not be accepted. For non-quality issues, return shipping is paid by the buyer; for verified quality defects, return shipping is paid by us.',
       },
       {
         title: '6. Intellectual Property',
@@ -134,7 +134,7 @@ const translations = {
       },
       {
         title: '5. 返品・交換',
-        body: 'オーダーメイド印刷商品は性質上返品不可。到着時に破損・汚損・注文との相違がある場合のみ、受領後 7 日以内のご連絡で再印刷または全額返金いたします。',
+        body: '当店のすべての商品は受注後印刷されるカスタムメイド商品であり、印刷品質不良のみ返品を受け付けます。返品可能なケース：業界標準を超える印刷色の偏差、裁断サイズの誤り、材質の商品記載内容との相違、輸送中の重大な破損。返品申請は商品受領後 14 日以内に申請してください。期限切れは受け付けません。品質不良以外の返品送料はお客様のご負担、当社品質不良と確認された場合、返品送料は当社負担。',
       },
       {
         title: '6. 知的財産権',

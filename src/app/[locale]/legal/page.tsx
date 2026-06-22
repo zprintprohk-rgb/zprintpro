@@ -84,7 +84,7 @@ const translations = {
       deliveryTiming:
         '校稿確認後 3-7 個工作日出貨。DHL / FedEx 國際速遞到全球主要城市 2-7 個工作天。準時達標率 98.5% 以上（2024 年數據）。',
       returns:
-        '度身訂製印刷商品性質上原則上不退換。若到貨時發現破損、污損或與訂單不符，可於收貨 7 日內聯絡我們安排免費重印或全額退款。出貨前會提供 PDF 色彩校稿供您確認。',
+        '本店所有商品均為按需訂製印刷產品，僅針對印刷品質缺陷提供退貨服務。可申請退貨的情況：印刷顏色偏差超出行業標準、裁切尺寸錯誤、材質與商品描述不符、商品運輸途中嚴重損壞。退貨申請需在簽收商品後 14 天內發起，逾期不予受理。非質量問題退貨運費由買家承擔；經核實確屬我方質量問題的，退貨運費由我方承擔。詳見「退換政策」頁面。',
       quantityLimit:
         '每件商品設有最低起訂量（MOQ），詳見各商品頁面。提供批量折扣優惠。',
       techEnv:
@@ -144,7 +144,7 @@ const translations = {
       deliveryTiming:
         '3-7 business days after proof approval, then 2-4 days via DHL / FedEx to anywhere in Japan (5-7 days for Okinawa and remote islands). On-time delivery rate above 98.5% (2024 data).',
       returns:
-        'Custom-printed products are generally non-returnable due to their made-to-order nature. However, if the product arrives damaged, defective, or does not match your order, we will reprint free of charge or issue a full refund if you notify us within 7 days of receipt. A PDF color proof is provided for your final approval before printing.',
+        'All products are custom-made to order. Returns are only accepted for print quality defects. Eligible scenarios: print color deviation beyond industry standard, incorrect cutting size, material does not match product description, severe damage during shipping. Return requests must be submitted within 14 days of receiving the product; late requests will not be accepted. For non-quality issues, return shipping is paid by the buyer; for verified quality defects, return shipping is paid by us. See the Return Policy page for details.',
       quantityLimit:
         'Each product has a minimum order quantity (MOQ) shown on its page. Volume discounts are available (see the volume discount table on each product page).',
       techEnv:
@@ -204,7 +204,7 @@ const translations = {
       deliveryTiming:
         '校正完了後 3-7 営業日で出荷。DHL / FedEx 国際速達便で日本全国へ 2-4 日配送(沖縄・離島は 5-7 日)。納期内配送率は 98.5% 以上(2024 年実績)。',
       returns:
-        'オーダーメイド印刷商品は性質上、原則として返品不可。ただし、商品到着時に破損・汚損・注文と異なる商品が届いた場合は、商品到着後 7 日以内に限り、無償で再印刷または全額返金いたします。色校正 PDF を提供し、最終印刷前に内容を確認いただいております。',
+        '当店のすべての商品は受注後印刷されるカスタムメイド商品であり、印刷品質不良のみ返品を受け付けます。返品可能なケース：業界標準を超える印刷色の偏差、裁断サイズの誤り、材質の商品記載内容との相違、輸送中の重大な破損。返品申請は商品受領後 14 日以内に申請してください。期限切れは受け付けません。品質不良以外の返品送料はお客様のご負担、当社品質不良と確認された場合、返品送料は当社負担。詳細は「返品ポリシー」ページをご覧ください。',
       quantityLimit:
         '商品ごとに最小注文数量(MOQ)を設定(各商品ページに記載)。大量発注割引あり(各商品ページのボリュームディスカウント表を参照)。',
       techEnv:
