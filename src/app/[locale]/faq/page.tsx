@@ -19,7 +19,7 @@ const translations = {
     contactCta: '仍有疑問？',
     contactDesc: '歡迎聯絡我們的客服團隊',
     email: 'zprintpro@outlook.com',
-    phone: '+86 181 2638 0255',
+    phone: '+86 198 8085 1334',
   },
   en: {
     title: 'FAQ | ZprintPro',
@@ -31,7 +31,7 @@ const translations = {
     contactCta: 'Still have questions?',
     contactDesc: 'Contact our customer service team',
     email: 'zprintpro@outlook.com',
-    phone: '+86 181 2638 0255',
+    phone: '+86 198 8085 1334',
   },
   ja: {
     title: 'よくある質問 | ZprintPro',
@@ -43,7 +43,7 @@ const translations = {
     contactCta: 'ご質問がございますか？',
     contactDesc: 'カスタマーサービスまでお問い合わせください',
     email: 'zprintpro@outlook.com',
-    phone: '+86 181 2638 0255',
+    phone: '+86 198 8085 1334',
   },
 };
 

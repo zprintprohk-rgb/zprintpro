@@ -16,7 +16,7 @@ interface HeaderProps {
 
 const translations = {
   'zh-hk': {
-    phone: '+86 181 2638 0255',
+    phone: '+86 198 8085 1334',
     email: 'zprintpro@outlook.com',
     whatsapp: 'WhatsApp',
     support: '24/7 客戶服務',
@@ -39,7 +39,7 @@ const translations = {
     navOrder: ['paper-bags', 'flyers', 'stickers', 'packaging', 'posters', 'educational'] as const,
   },
   en: {
-    phone: '+86 181 2638 0255',
+    phone: '+86 198 8085 1334',
     email: 'zprintpro@outlook.com',
     whatsapp: 'WhatsApp',
     support: '24/7 Customer Service',
@@ -62,7 +62,7 @@ const translations = {
     navOrder: ['paper-bags', 'flyers', 'stickers', 'packaging', 'posters', 'educational'] as const,
   },
   ja: {
-    phone: '+86 181 2638 0255',
+    phone: '+86 198 8085 1334',
     email: 'zprintpro@outlook.com',
     whatsapp: 'WhatsApp',
     support: '24時間年中無休サポート',

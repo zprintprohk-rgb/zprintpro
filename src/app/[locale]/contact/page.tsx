@@ -13,7 +13,7 @@ interface ContactPageProps {
 const translations = {
   'zh-hk': {
     title: '聯絡我們 · 免費獲取報價 | 智印雲 ZprintPro',
-    description: '聯絡智印雲專業印刷團隊，填寫表單獲取免費報價。電話/WhatsApp: +86 181 2638 0255',
+    description: '聯絡智印雲專業印刷團隊，填寫表單獲取免費報價。電話：+86 198 8085 1334 / WhatsApp：+86 181 2638 0255',
     h1: '聯絡我們 · 免費獲取報價',
     subtitle: '填寫表單或 WhatsApp 聯繫，24小時內回覆',
     name: '唐先生',
@@ -81,7 +81,7 @@ const translations = {
   },
   ja: {
     title: 'お問い合わせ · 無料お見積もり | ZprintPro',
-    description: 'ZprintProのプロ印刷チームにお問い合わせください。フォームに記入して無料見積もりを取得。電話/WhatsApp: +86 181 2638 0255',
+    description: 'ZprintProのプロ印刷チームにお問い合わせください。フォームに記入して無料見積もりを取得。電話：+86 198 8085 1334 / WhatsApp：+86 181 2638 0255',
     h1: 'お問い合わせ · 無料お見積もり',
     subtitle: 'フォーム記入またはWhatsAppで、24時間以内に返信',
     name: 'タン氏',
@@ -246,13 +246,13 @@ export default function ContactPage({ params }: ContactPageProps) {
                 {/* 联系方式 3 列 (icon 彩色方块 + label + value) — 极简版 */}
                 <div className="space-y-2.5">
                   {/* Phone */}
-                  <a href="tel:+8618126380255" className="flex items-center gap-3 p-3 rounded-xl bg-gradient-to-r from-blue-50/50 to-transparent hover:from-blue-50 hover:to-blue-50/50 transition-colors group">
+                  <a href="tel:+8619880851334" className="flex items-center gap-3 p-3 rounded-xl bg-gradient-to-r from-blue-50/50 to-transparent hover:from-blue-50 hover:to-blue-50/50 transition-colors group">
                     <div className="w-10 h-10 rounded-lg bg-[#2873F5] flex items-center justify-center flex-shrink-0 shadow-sm shadow-blue-200">
                       <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="text-[11px] text-slate-400 font-medium uppercase tracking-wide">{t.phone}</div>
-                      <div className="text-sm font-semibold text-slate-700 group-hover:text-[#2873F5] transition-colors">+86 181 2638 0255</div>
+                      <div className="text-sm font-semibold text-slate-700 group-hover:text-[#2873F5] transition-colors">+86 198 8085 1334</div>
                     </div>
                     <svg className="w-4 h-4 text-slate-300 group-hover:text-[#2873F5] group-hover:translate-x-0.5 transition-all" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7"/></svg>
                   </a>

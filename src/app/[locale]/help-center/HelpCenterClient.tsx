@@ -135,7 +135,7 @@ const translations = {
       securityNotice: '⚠️ 安全提示：付款後必須發送電郵確認，否則可能延誤訂單處理。如對付款有任何疑問，請先聯絡客服。',
       contact: {
         email: 'zprintpro@outlook.com',
-        phone: '+86 181 2638 0255',
+        phone: '+86 198 8085 1334',
         hours: '週一至五 9:00–21:00',
       },
     },
@@ -312,7 +312,7 @@ const translations = {
       securityNotice: '⚠️ Security Notice: You must send a confirmation email after payment, otherwise order processing may be delayed. Contact customer service if you have any questions.',
       contact: {
         email: 'zprintpro@outlook.com',
-        phone: '+86 181 2638 0255',
+        phone: '+86 198 8085 1334',
         hours: 'Mon-Fri 9:00-21:00',
       },
     },
@@ -487,7 +487,7 @@ const translations = {
       securityNotice: '⚠️ セキュリティ注意：お支払い後は必ず確認メールを送信してください。送信がない場合、注文処理が遅れる可能性があります。ご質問があればカスタマーサービスまでお問い合わせください。',
       contact: {
         email: 'zprintpro@outlook.com',
-        phone: '+86 181 2638 0255',
+        phone: '+86 198 8085 1334',
         hours: '月曜〜金曜 9:00-21:00',
       },
     },
@@ -1054,9 +1054,9 @@ export default function HelpCenterClient({ locale }: HelpCenterClientProps) {
               <Mail className="w-4 h-4" />
               zprintpro@outlook.com
             </a>
-            <a href="tel:+8618126380255" className="flex items-center gap-1.5 text-[#2873F5] hover:underline">
+            <a href="tel:+8619880851334" className="flex items-center gap-1.5 text-[#2873F5] hover:underline">
               <Phone className="w-4 h-4" />
-              +86 181 2638 0255
+              +86 198 8085 1334
             </a>
           </div>
         </div>

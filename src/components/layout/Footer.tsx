@@ -24,7 +24,7 @@ const translations = {
   'zh-hk': {
     companyDesc: '智印雲 ZprintPro 是全球智能印刷定制平台，提供AI智能報價、在線文件上傳、Airwallex安全支付。從貼紙到包裝，30秒報價，72小時全球交付。',
     serviceArea: '全球跨境印刷服務',
-    phone: '+86 181 2638 0255',
+    phone: '+86 198 8085 1334',
     email: 'zprintpro@outlook.com',
     address: '廣東省深圳市龍崗區平湖街道嘉城路1號（518111）',
     legalLabel: '經營者資訊披露',
@@ -78,7 +78,7 @@ const translations = {
   en: {
     companyDesc: 'ZprintPro is a global smart printing platform offering AI instant quotes, online file upload, and Airwallex secure payment. From stickers to packaging, get a quote in 30 seconds, delivered globally in 72 hours.',
     serviceArea: 'Global cross-border printing services',
-    phone: '+86 181 2638 0255',
+    phone: '+86 198 8085 1334',
     email: 'zprintpro@outlook.com',
     address: 'No.1 Jiacheng Road, Pinghu Street, Longgang District, Shenzhen, Guangdong 518111, China',
     legalLabel: 'Legal Disclosure',
@@ -132,7 +132,7 @@ const translations = {
   ja: {
     companyDesc: 'ZprintProはグローバルスマート印刷プラットフォームです。AI即時見積、オンラインファイルアップロード、Airwallex安全決済を提供。ステッカーからパッケージングまで、30秒で見積もり、72時間でグローバル配送。',
     serviceArea: 'グローバル越境印刷サービス',
-    phone: '+86 181 2638 0255',
+    phone: '+86 198 8085 1334',
     email: 'zprintpro@outlook.com',
     address: '広東省深圳市龍崗区平湖街道嘉城路1号（〒518111）',
     legalLabel: '特定商取引法に基づく表記',

@@ -451,7 +451,7 @@ export default function OrderConfirmationClient({ params }: OrderConfirmationPag
                 <p className="text-xs text-gray-500 mb-2">{t.contactCta}</p>
                 <div className="flex items-center justify-center gap-3 text-sm">
                   <a href="mailto:zprintpro@outlook.com" className="text-[#2873F5] hover:underline flex items-center gap-1"><Mail className="w-3.5 h-3.5" /> Email</a>
-                  <a href="tel:+8618126380255" className="text-[#2873F5] hover:underline flex items-center gap-1"><Phone className="w-3.5 h-3.5" /> +86 181 2638 0255</a>
+                  <a href="tel:+8619880851334" className="text-[#2873F5] hover:underline flex items-center gap-1"><Phone className="w-3.5 h-3.5" /> +86 198 8085 1334</a>
                 </div>
               </div>
             </div>

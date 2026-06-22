@@ -19,10 +19,11 @@ export const siteConfig = {
   // 2026-06-15 P0: NAP 统一修复
   // 原问题: siteConfig.phone = "+852 6123 4567" (假号), Footer = "+86 181 2638 0255" (真实号)
   //   → Google 看到 schema 跟 UI 不一致, 判定 NAP 欺诈
-  // 修法: 全部统一到 Footer 真实号 +86 181 2638 0255 (这是公司真号, 不是胡编)
+  // 修法: 全部统一到 Footer 真实号 +86 198 8085 1334 (新联系电话, 这是公司真号, 不是胡编)
+  // WhatsApp 号码保持 +86 181 2638 0255 不动 (whatsapp.ts PHONE)
   // 注意: 此号虽是中国内地号, 但 Footer/Contact 全部用这个, NAP 一致性优先于"地理号"
   // TODO: 后续办虚拟 +852 号替换, 进一步提升 NAP 香港本地信任度
-  phone: '+86 181 2638 0255',
+  phone: '+86 198 8085 1334',
   email: 'zprintpro@outlook.com',
   address: {
     street: 'No.1 Jiacheng Road, Pinghu Street, Longgang District',
