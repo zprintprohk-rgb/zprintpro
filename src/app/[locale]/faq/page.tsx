@@ -60,7 +60,7 @@ const faqs: Record<string, { q: string; a: string; category: string }[]> = {
     { q: '提供設計服務嗎？', a: '是的，我們提供專業設計服務。簡單設計修改免費，完整設計方案另行報價。經本公司做稿或改稿，稿件擁有權屬本公司所有，只提供jpg圖檔校對。', category: '設計' },
     { q: '訂單可以取消或修改嗎？', a: '確認打樣前可免費修改。進入印刷流程後，修改可能產生額外費用。一旦開始印刷，訂單不可取消。', category: '訂購' },
     { q: '文件有什麼格式要求？', a: '請上傳PDF / AI / PSD檔案，並確保：預留3mm出血位、使用CMYK色彩模式、文字已轉曲（Outlined）。更多詳情請參閱幫助中心的排版及色彩指引。', category: '文件' },
-    { q: '什麼情況下可以退貨？', a: '如印刷品存在明顯品質問題（非客戶稿件錯誤），請於收貨後3個工作天內聯絡客服。客戶自來稿件，當顏色及文字完全正確的話，不能以其他理由退貨。', category: '退換' },
+    { q: '什麼情況下可以退貨？', a: '如印刷品存在明顯品質問題（非客戶稿件錯誤），請於收貨後 3 個工作天內聯絡客服——此為品質問題緊急回應 SLA，會優先處理。一般退換貨申請則需於收貨後 14 天內提出，詳見「退換政策」頁面。客戶自來稿件，當顏色及文字完全正確的話，不能以其他理由退貨。', category: '退換' },
   ],
   en: [
     { q: 'What is the minimum order quantity?', a: 'Most products have a minimum order of 100 pieces. Business cards start from 50 boxes. Check each product page or contact us for details.', category: 'Ordering' },
@@ -74,7 +74,7 @@ const faqs: Record<string, { q: string; a: string; category: string }[]> = {
     { q: 'Do you offer design services?', a: 'Yes, we offer professional design services. Simple modifications are free; full design services are quoted separately. Artwork created by us remains our property; JPG proofs only.', category: 'Design' },
     { q: 'Can I cancel or modify my order?', a: 'Free modifications before proof approval. Changes after printing starts may incur additional fees. Once printing begins, orders cannot be cancelled.', category: 'Ordering' },
     { q: 'What are the file format requirements?', a: 'Please upload PDF / AI / PSD files with 3mm bleed, CMYK color mode, and text converted to outlines. See our Help Center for detailed typography and color guidelines.', category: 'Files' },
-    { q: 'When can I return items?', a: 'If there are obvious quality issues (not due to customer artwork errors), please contact us within 3 business days of receipt. For customer-supplied artwork, if colors and text are correct, returns will not be accepted for other reasons.', category: 'Returns' },
+    { q: 'When can I return items?', a: 'If there are obvious quality issues (not due to customer artwork errors), please contact us within 3 business days of receipt — this is our quality emergency response SLA for priority handling. General return requests must be submitted within 14 days; see the Return Policy page for details. For customer-supplied artwork, if colors and text are correct, returns will not be accepted for other reasons.', category: 'Returns' },
   ],
   ja: [
     { q: '最低発注数は？', a: 'ほとんどの製品は最低100個から。名刺は最低50箱から。詳細は各製品ページをご確認いただくか、お問い合わせください。', category: '注文' },
@@ -88,7 +88,7 @@ const faqs: Record<string, { q: string; a: string; category: string }[]> = {
     { q: 'デザインサービスはありますか？', a: 'はい、プロのデザインサービスを提供しています。簡単な修正は無料、完全デザインは別途見積もり。当社で作成した原稿の所有権は当社に帰属し、JPG校正データのみ提供します。', category: 'デザイン' },
     { q: '注文のキャンセル・変更は可能？', a: '校正承認前は無料で変更可能。印刷開始後の変更は追加料金が発生する場合があります。印刷開始後のキャンセルはお受けできません。', category: '注文' },
     { q: 'ファイルのフォーマット要件は？', a: 'PDF / AI / PSDファイルをアップロードしてください。3mmの裁ち落とし、CMYKカラーモード、文字の輪郭化が必要です。詳細はヘルプセンターをご覧ください。', category: 'ファイル' },
-    { q: 'どのような場合に返品できますか？', a: '明らかな品質問題（お客様の原稿ミスではない場合）がある場合、受取後3営業日以内にご連絡ください。お客様の原稿の場合、色と文字が正しければ他の理由での返品はお受けできません。', category: '返品' },
+    { q: 'どのような場合に返品できますか？', a: '明らかな品質問題（お客様の原稿ミスではない場合）がある場合、受取後 3 営業日以内にご連絡ください——これは品質問題の緊急対応 SLA であり、優先対応となります。一般的な返品申請は 14 日以内で、詳細は「返品ポリシー」ページをご覧ください。お客様の原稿の場合、色と文字が正しければ他の理由での返品はお受けできません。', category: '返品' },
   ],
 };
 
