@@ -53,6 +53,7 @@ const translations = {
     contactResponseSla: '一般 1-2 個工作天內回覆',
     contactEmailLabel: '電郵',
     contactPhoneLabel: '電話',
+    lastUpdatedDate: '2026年6月18日',
     fields: {
       sellerName: '公司名稱',
       responsiblePerson: '法定代表人',
@@ -112,6 +113,7 @@ const translations = {
     contactResponseSla: 'Typically replies within 1-2 business days',
     contactEmailLabel: 'Email',
     contactPhoneLabel: 'Phone',
+    lastUpdatedDate: 'June 18, 2026',
     fields: {
       sellerName: 'Seller name',
       responsiblePerson: 'Representative',
@@ -171,6 +173,7 @@ const translations = {
     contactResponseSla: '通常 1-2 営業日以内に返信',
     contactEmailLabel: 'メール',
     contactPhoneLabel: '電話',
+    lastUpdatedDate: '2026年6月18日',
     fields: {
       sellerName: '販売業者名',
       responsiblePerson: '運営統括責任者',
@@ -543,7 +546,7 @@ export default function LegalPage({ params }: LegalPageProps) {
         </section>
 
         <p className="text-sm text-gray-500 text-center mt-8">
-          {t.lastUpdated}: 2026年6月18日
+          {t.lastUpdated}: {t.lastUpdatedDate}
         </p>
       </div>
     </main>

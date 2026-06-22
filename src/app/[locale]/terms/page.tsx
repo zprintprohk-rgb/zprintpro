@@ -13,6 +13,7 @@ const translations = {
     description: '智印雲服務條款與細則。',
     h1: '服務條款',
     lastUpdated: '最後更新日期',
+    lastUpdatedDate: '2026年6月18日',
     intro: '歡迎使用智印雲 ZprintPro 服務。當您瀏覽本網站、下單購買或使用本網站任何服務時，即代表您同意以下條款。請仔細閱讀。',
     sections: [
       {
@@ -62,6 +63,7 @@ const translations = {
     description: 'ZprintPro terms of service.',
     h1: 'Terms of Service',
     lastUpdated: 'Last updated',
+    lastUpdatedDate: 'June 18, 2026',
     intro: 'Welcome to ZprintPro. By browsing our site, placing an order, or using any of our services, you agree to the following terms. Please read them carefully.',
     sections: [
       {
@@ -111,6 +113,7 @@ const translations = {
     description: 'ZprintProの利用規約。',
     h1: '利用規約',
     lastUpdated: '最終更新日',
+    lastUpdatedDate: '2026年6月18日',
     intro: 'ZprintPro へようこそ。本サイトの閲覧、注文、サービス利用をもって、以下の利用規約に同意したものとみなされます。よくお読みください。',
     sections: [
       {
@@ -188,7 +191,7 @@ export default function TermsPage({ params }: TermsPageProps) {
         <h1 className="text-3xl font-bold text-[#333333] mb-8">{t.h1}</h1>
         <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-8 space-y-6 text-gray-700">
           <p className="text-sm text-gray-500">
-            {t.lastUpdated}: 2026年6月18日
+            {t.lastUpdated}: {t.lastUpdatedDate}
           </p>
           <p className="leading-relaxed">{t.intro}</p>
           {t.sections.map((section, idx) => (

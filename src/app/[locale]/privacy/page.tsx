@@ -13,6 +13,7 @@ const translations = {
     description: '智印雲隱私政策，說明我們如何收集、使用和保護您的個人資料。',
     h1: '隱私政策',
     lastUpdated: '最後更新日期',
+    lastUpdatedDate: '2026年6月18日',
     intro: '智印雲 ZprintPro 致力於保護您的個人私隱。本政策說明我們如何收集、使用、儲存及保護您於本網站提供的個人資料。',
     sections: [
       {
@@ -54,6 +55,7 @@ const translations = {
     description: 'ZprintPro privacy policy explaining how we collect, use, and protect your personal data.',
     h1: 'Privacy Policy',
     lastUpdated: 'Last updated',
+    lastUpdatedDate: 'June 18, 2026',
     intro: 'ZprintPro is committed to protecting your privacy. This policy explains how we collect, use, store, and protect your personal data when you use our website.',
     sections: [
       {
@@ -95,6 +97,7 @@ const translations = {
     description: 'ZprintProのプライバシーポリシー。個人情報の収集、使用、保護について説明します。',
     h1: 'プライバシーポリシー',
     lastUpdated: '最終更新日',
+    lastUpdatedDate: '2026年6月18日',
     intro: 'ZprintProはお客様の個人情報保護に取り組んでいます。本ポリシーでは、当サイトご利用時に個人情報がどのように収集・使用・保管・保護されるかを説明します。',
     sections: [
       {
@@ -164,7 +167,7 @@ export default function PrivacyPage({ params }: PrivacyPageProps) {
         <h1 className="text-3xl font-bold text-[#333333] mb-8">{t.h1}</h1>
         <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-8 space-y-6 text-gray-700">
           <p className="text-sm text-gray-500">
-            {t.lastUpdated}: 2026年6月18日
+            {t.lastUpdated}: {t.lastUpdatedDate}
           </p>
           <p className="leading-relaxed">{t.intro}</p>
           {t.sections.map((section, idx) => (
