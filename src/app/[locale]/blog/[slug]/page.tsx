@@ -10,6 +10,7 @@ import {
 import { JsonLd } from '@/components/JsonLd';
 import { getBuyingGuideBySlug, getAllBuyingGuideSlugs } from '@/data/buying-guides';
 import { getClusterBySlug, getAllClusterSlugs } from '@/data/pillar-content';
+import { getBlogCover } from '@/data/blog-posts';
 import { products, getProductTitle, getProductDescription, getProductBySlug } from '@/data/products';
 import { convertPriceRangeString } from '@/lib/pricing';
 import { getProductMainImage } from '@/lib/product-image';
@@ -48,50 +49,8 @@ const translations = {
   },
 };
 
-// 文章圖片映射（按 locale）
-const articleImagesByLocale: Record<string, Record<string, string>> = {
-  'zh-hk': {
-    'company-intro': '/images/blog/zh-hk/company-intro.webp',
-    'sticker-guide': '/images/blog/zh-hk/sticker-guide.webp',
-    'business-card-design': '/images/blog/zh-hk/business-card-design.webp',
-    'packaging-trends': '/images/blog/blog-packaging-trends-zh-hk.webp',
-    'hong-kong-printing-guide': '/images/blog/blog-sticker-guide-zh-hk.webp',
-    'design-file-specs': '/images/blog/blog-sticker-guide-zh-hk-2.webp',
-    'brand-materials-checklist': '/images/blog/blog-business-card-design-zh-hk.webp',
-    'mtr-advertising-specs': '/images/blog/blog-business-card-design-zh-hk-2.webp',
-    'cmyk-guide': '/images/blog/blog-sticker-guide-zh-hk.webp',
-    'paper-materials': '/images/blog/blog-packaging-trends-zh-hk.webp',
-    'eco-printing': '/images/blog/blog-packaging-trends-zh-hk-2.webp',
-  },
-  'en': {
-    'company-intro': '/images/blog/en/company-intro.webp',
-    'sticker-guide': '/images/blog/en/sticker-guide.webp',
-    'business-card-design': '/images/blog/en/business-card-design.webp',
-    'packaging-trends': '/images/blog/blog-sticker-guide-en.webp',
-    'hong-kong-printing-guide': '/images/blog/blog-sticker-guide-en-2.webp',
-    'design-file-specs': '/images/blog/blog-sticker-guide-en-3.webp',
-    'brand-materials-checklist': '/images/blog/blog-business-card-design-en.webp',
-    'mtr-advertising-specs': '/images/blog/blog-business-card-design-en-2.webp',
-    'cmyk-guide': '/images/blog/blog-business-card-design-en-3.webp',
-    'paper-materials': '/images/blog/blog-sticker-guide-en.webp',
-    'eco-printing': '/images/blog/blog-sticker-guide-en-2.webp',
-  },
-  'ja': {
-    'company-intro': '/images/blog/ja/company-intro.webp',
-    'sticker-guide': '/images/blog/ja/sticker-guide.webp',
-    'business-card-design': '/images/blog/ja/business-card-design.webp',
-    'packaging-trends': '/images/blog/blog-sticker-guide-ja.webp',
-    'hong-kong-printing-guide': '/images/blog/blog-sticker-guide-ja-2.webp',
-    'design-file-specs': '/images/blog/blog-sticker-guide-ja-3.webp',
-    'brand-materials-checklist': '/images/blog/blog-business-card-design-ja.webp',
-    'mtr-advertising-specs': '/images/blog/blog-business-card-design-ja-2.webp',
-    'cmyk-guide': '/images/blog/blog-business-card-design-ja-3.webp',
-    'paper-materials': '/images/blog/blog-sticker-guide-ja.webp',
-    'eco-printing': '/images/blog/blog-sticker-guide-ja-2.webp',
-  },
-};
-
-const defaultArticleImage = '/images/blog/zh-hk/sticker-guide.webp';
+// 文章封面图现统一在 src/data/blog-posts.ts (2026-06-25)
+// 通过 getBlogCover(slug, locale) 解析
 
 // Legacy posts (existing 10 articles per locale)
 const posts: Record<string, Record<string, { title: string; description: string; date: string; category: string; content: string }>> = {
@@ -569,7 +528,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
   const langPrefix = `${locale}/`;
   const canonical = `${siteConfig.url}/${langPrefix}blog/${params.slug}/`;
-  const postImage = articleImagesByLocale[locale]?.[params.slug] || articleImagesByLocale['zh-hk']?.[params.slug] || defaultArticleImage;
+  const postImage = getBlogCover(params.slug, locale);
 
   // 2026-06-10 Phase B 修复 P0-3：使用 generateBlogArticleJsonLd（author = Person 类型，E-E-A-T 关键）
   // 旧实现：author = Organization 类型 → AI 抓取时无作者归属，信任度低。

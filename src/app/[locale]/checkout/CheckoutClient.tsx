@@ -279,7 +279,7 @@ export default function CheckoutClient({ params }: CheckoutPageProps) {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!form.name || !form.phone || !form.email) return;
+    if (!form.name || !form.phone || !form.email || !form.address) return;
 
     setIsProcessing(true);
     setPaymentError(null);
@@ -406,8 +406,10 @@ export default function CheckoutClient({ params }: CheckoutPageProps) {
                       <input type="email" required autoComplete="email" value={form.email} onChange={(e) => handleChange('email', e.target.value)} placeholder={t.emailPlaceholder} className={inputClass} />
                     </div>
                     <div className="sm:col-span-2">
-                      <label className="block text-sm text-gray-600 mb-1">{t.address}</label>
-                      <input type="text" autoComplete="street-address" value={form.address} onChange={(e) => handleChange('address', e.target.value)} placeholder={t.addressPlaceholder} className={inputClass} />
+                      <label className="block text-sm text-gray-600 mb-1">
+                        {t.address} <span className="text-red-500">*</span>
+                      </label>
+                      <input type="text" required autoComplete="street-address" value={form.address} onChange={(e) => handleChange('address', e.target.value)} placeholder={t.addressPlaceholder} className={inputClass} />
                     </div>
                     <div className="sm:col-span-2">
                       <label className="block text-sm text-gray-600 mb-1">{t.notes}</label>

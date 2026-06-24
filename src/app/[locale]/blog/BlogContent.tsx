@@ -4,7 +4,7 @@ import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Locale } from '@/lib/seo';
-import { buyingGuides } from '@/data/buying-guides';
+import { blogPosts } from '@/data/blog-posts';
 import { products, getProductTitle, getProductDescription } from '@/data/products';
 import { convertPriceRangeString } from '@/lib/pricing';
 import { getProductMainImage } from '@/lib/product-image';
@@ -93,50 +93,7 @@ const translations: Record<string, {
   },
 };
 
-// 按 locale 映射 Blog 封面图（已处理的 AI 图片）
-const articleImagesByLocale: Record<string, Record<string, string>> = {
-  'zh-hk': {
-    'company-intro': '/images/blog/zh-hk/company-intro.webp',
-    'sticker-guide': '/images/blog/zh-hk/sticker-guide.webp',
-    'business-card-design': '/images/blog/zh-hk/business-card-design.webp',
-    'packaging-trends': '/images/blog/blog-packaging-trends-zh-hk.webp',
-    'hong-kong-printing-guide': '/images/blog/blog-sticker-guide-zh-hk.webp',
-    'design-file-specs': '/images/blog/blog-sticker-guide-zh-hk-2.webp',
-    'brand-materials-checklist': '/images/blog/blog-business-card-design-zh-hk.webp',
-    'mtr-advertising-specs': '/images/blog/blog-business-card-design-zh-hk-2.webp',
-    'cmyk-guide': '/images/blog/blog-sticker-guide-zh-hk.webp',
-    'paper-materials': '/images/blog/blog-packaging-trends-zh-hk.webp',
-    'eco-printing': '/images/blog/blog-packaging-trends-zh-hk-2.webp',
-  },
-  'en': {
-    'company-intro': '/images/blog/en/company-intro.webp',
-    'sticker-guide': '/images/blog/en/sticker-guide.webp',
-    'business-card-design': '/images/blog/en/business-card-design.webp',
-    'packaging-trends': '/images/blog/blog-sticker-guide-en.webp',
-    'hong-kong-printing-guide': '/images/blog/blog-sticker-guide-en-2.webp',
-    'design-file-specs': '/images/blog/blog-sticker-guide-en-3.webp',
-    'brand-materials-checklist': '/images/blog/blog-business-card-design-en.webp',
-    'mtr-advertising-specs': '/images/blog/blog-business-card-design-en-2.webp',
-    'cmyk-guide': '/images/blog/blog-business-card-design-en-3.webp',
-    'paper-materials': '/images/blog/blog-sticker-guide-en.webp',
-    'eco-printing': '/images/blog/blog-sticker-guide-en-2.webp',
-  },
-  'ja': {
-    'company-intro': '/images/blog/ja/company-intro.webp',
-    'sticker-guide': '/images/blog/ja/sticker-guide.webp',
-    'business-card-design': '/images/blog/ja/business-card-design.webp',
-    'packaging-trends': '/images/blog/blog-sticker-guide-ja.webp',
-    'hong-kong-printing-guide': '/images/blog/blog-sticker-guide-ja-2.webp',
-    'design-file-specs': '/images/blog/blog-sticker-guide-ja-3.webp',
-    'brand-materials-checklist': '/images/blog/blog-business-card-design-ja.webp',
-    'mtr-advertising-specs': '/images/blog/blog-business-card-design-ja-2.webp',
-    'cmyk-guide': '/images/blog/blog-business-card-design-ja-3.webp',
-    'paper-materials': '/images/blog/blog-sticker-guide-ja.webp',
-    'eco-printing': '/images/blog/blog-sticker-guide-ja-2.webp',
-  },
-};
-
-const defaultArticleImage = '/images/blog/zh-hk/sticker-guide.webp';
+// 封面图与 categoryKey 现已统一在 src/data/blog-posts.ts (2026-06-25)
 
 const categoryColors: Record<string, { bg: string; text: string }> = {
   'company-news': { bg: 'bg-red-50', text: 'text-red-600' },
@@ -160,18 +117,19 @@ export default function BlogContent({ locale }: { locale: Locale }) {
   const localePrefix = `/${locale}`;
   const [activeCategory, setActiveCategory] = useState<string>('all');
 
-  // 仅使用 buyingGuides (9 篇真博客). 硬编码 articles 数组已删除 (2026-06-25)
-  const guidePosts = buyingGuides.map((guide) => ({
-    slug: guide.slug,
-    title: guide.title[locale],
-    date: guide.date,
-    categoryKey: 'buying-guide',
-    categoryLabel: t.buyingGuideTag,
-    excerpt: guide.description[locale],
-    image: articleImagesByLocale[locale]?.[guide.slug] || articleImagesByLocale['zh-hk']?.[guide.slug] || defaultArticleImage,
+  // 19 篇统一从 @/data/blog-posts 读取 (9 选购指南 + 10 legacy 文章)
+  const allPosts = blogPosts.map((post) => ({
+    slug: post.slug,
+    title: post.title[locale],
+    date: post.date,
+    categoryKey: post.categoryKey,
+    categoryLabel:
+      post.categoryKey === 'buying-guide'
+        ? t.buyingGuideTag
+        : t.categories.find((c) => c.key === post.categoryKey)?.label || t.allArticles,
+    excerpt: post.excerpt[locale],
+    image: post.cover[locale] || post.cover['zh-hk'],
   }));
-
-  const allPosts = guidePosts;
 
   const filteredPosts = useMemo(() => {
     if (activeCategory === 'all') return allPosts;
