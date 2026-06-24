@@ -7,13 +7,14 @@ import { useState, useEffect } from 'react';
 import { Locale } from '@/lib/seo';
 import { CheckCircle2, Copy, Mail, Phone, MapPin, ShoppingBag, AlertCircle, ChevronUp, CreditCard, Clock, XCircle } from 'lucide-react';
 import { AirwallexDropIn } from '@/components/payment/AirwallexDropIn';
+import { BankTransferInfo, type WireTransferInfo } from '@/components/payment/BankTransferInfo';
 import type { SupabaseClient } from '@supabase/supabase-js';
 
 interface OrderConfirmationPageProps {
   params: { locale: string };
 }
 
-type OrderStatus = 'pending' | 'paid' | 'failed' | 'cancelled';
+type OrderStatus = 'pending' | 'awaiting_wire_transfer' | 'paid' | 'failed' | 'cancelled';
 
 interface DbOrder {
   id: string;
@@ -23,6 +24,11 @@ interface DbOrder {
   airwallex_payment_intent_id: string | null;
   quote_data: Record<string, unknown>;
   created_at: string;
+  // 2026-06-25: 银行转账字段
+  payment_method?: 'airwallex' | 'bank_transfer' | 'wechat_qr' | 'alipay_qr' | null;
+  payment_status?: 'pending' | 'awaiting_wire_transfer' | 'paid' | 'failed' | 'refunded';
+  order_number?: string;
+  wire_transfer_info?: WireTransferInfo | null;
 }
 
 const translations = {
@@ -64,6 +70,24 @@ const translations = {
     payOnline: '線上信用卡支付',
     payOnlineDesc: '安全加密，支持 Visa / MasterCard / JCB',
     loading: '載入中...',
+    // 2026-06-25: 银行转账 / 电汇
+    awaitingWire: '等待電匯',
+    awaitingWireHint: '請於 7 個工作天內完成電匯，並將水單電郵至 zprintpro@outlook.com',
+    // 2026-06-25: 银行转账下的 QR 码 fallback (国内客户)
+    domesticAlternative: '國內客戶？也可以直接用微信 / 支付寶掃碼付款（人民幣結算，無換匯手續費）',
+    domesticAlternativeHint: '完成後請將付款截圖電郵至 zprintpro@outlook.com',
+    // BankTransferInfo 三语
+    bankInfoTitle: '銀行電匯收款信息',
+    bankInfoSubtitle: '請使用以下信息完成跨境電匯，匯款備註請填寫訂單編號',
+    bankName: '收款銀行',
+    accountNumber: '銀行賬號',
+    accountHolder: '賬戶名稱',
+    swiftCode: 'SWIFT 代碼',
+    recipientAddress: '收款人地址',
+    reference: '匯款備註',
+    referenceHint: '請務必填寫，否則無法對賬',
+    amountLabel: '應匯金額',
+    bankNotice: '電匯完成後，請將水單（截圖）電郵至 zprintpro@outlook.com，郵件標題註明「電匯確認 + 訂單編號」。客服將於 1 個工作天內確認收款。',
   },
   en: {
     title: 'Order Confirmation',
@@ -103,6 +127,23 @@ const translations = {
     payOnline: 'Pay by Credit Card',
     payOnlineDesc: 'Secure encrypted payment. Visa / MasterCard / JCB accepted.',
     loading: 'Loading...',
+    // 2026-06-25: Bank Wire Transfer
+    awaitingWire: 'Awaiting Wire Transfer',
+    awaitingWireHint: 'Please complete the wire transfer within 7 business days and email the receipt to zprintpro@outlook.com',
+    // 2026-06-25: QR fallback under bank transfer (mainland China customers)
+    domesticAlternative: 'Mainland China customers? You can also pay via WeChat / Alipay QR code (CNY settlement, no FX fees).',
+    domesticAlternativeHint: 'After payment, please email the screenshot to zprintpro@outlook.com',
+    bankInfoTitle: 'Bank Wire Transfer Information',
+    bankInfoSubtitle: 'Please use the following details for cross-border wire transfer. Include the order number as payment reference.',
+    bankName: 'Receiving Bank',
+    accountNumber: 'Account Number',
+    accountHolder: 'Account Holder',
+    swiftCode: 'SWIFT Code',
+    recipientAddress: 'Recipient Address',
+    reference: 'Payment Reference',
+    referenceHint: 'Must be included — otherwise we cannot match your payment',
+    amountLabel: 'Amount to Wire',
+    bankNotice: 'After wiring, please email the bank receipt (screenshot) to zprintpro@outlook.com with subject "Wire Transfer Confirmation + Order Number". Our team will confirm receipt within 1 business day.',
   },
   ja: {
     title: '注文確認',
@@ -142,12 +183,30 @@ const translations = {
     payOnline: 'クレジットカード決済',
     payOnlineDesc: '安全な暗号化決済。Visa / MasterCard / JCB対応。',
     loading: '読み込み中...',
+    // 2026-06-25: 銀行振込
+    awaitingWire: '振込待ち',
+    awaitingWireHint: '7営業日以内に振込を完了し、振込控えを zprintpro@outlook.com までお送りください',
+    // 2026-06-25: 銀行振込時のQRフォールバック（中国本土のお客様向け）
+    domesticAlternative: '中国本土のお客様？微信 / 支付宝QRコードでもお支払いいただけます（人民元決済、為替手数料なし）',
+    domesticAlternativeHint: 'お支払い後、スクリーンショットを zprintpro@outlook.com までお送りください',
+    bankInfoTitle: '銀行振込先情報',
+    bankInfoSubtitle: '以下の情報でクロスボーダー送金を行ってください。注文番号を振込備考にご記入ください。',
+    bankName: '受取銀行',
+    accountNumber: '銀行口座番号',
+    accountHolder: '口座名義',
+    swiftCode: 'SWIFTコード',
+    recipientAddress: '受取人住所',
+    reference: '振込備考',
+    referenceHint: '必ずご記入ください — 入金照合に必要です',
+    amountLabel: '振込金額',
+    bankNotice: '振込完了後、振込控え（スクリーンショット）を zprintpro@outlook.com までお送りください。件名に「振込確認 + 注文番号」をご記入ください。担当者が1営業日以内に確認いたします。',
   },
 };
 
 const statusConfig: Record<OrderStatus, { icon: typeof CheckCircle2; color: string; bg: string }> = {
   paid: { icon: CheckCircle2, color: 'text-emerald-500', bg: 'bg-emerald-100' },
   pending: { icon: Clock, color: 'text-amber-500', bg: 'bg-amber-100' },
+  awaiting_wire_transfer: { icon: Clock, color: 'text-amber-500', bg: 'bg-amber-100' },
   failed: { icon: XCircle, color: 'text-red-500', bg: 'bg-red-100' },
   cancelled: { icon: XCircle, color: 'text-gray-500', bg: 'bg-gray-100' },
 };
@@ -263,8 +322,19 @@ export default function OrderConfirmationClient({ params }: OrderConfirmationPag
             <StatusIcon className={`w-8 h-8 ${statusColor}`} />
           </div>
           <h1 className="text-2xl md:text-3xl font-bold text-[#333333] mb-2">
-            {status === 'paid' ? t.paid : status === 'pending' ? t.pending : status === 'failed' ? t.failed : t.cancelled}
+            {status === 'paid'
+              ? t.paid
+              : status === 'awaiting_wire_transfer'
+              ? t.awaitingWire
+              : status === 'pending'
+              ? t.pending
+              : status === 'failed'
+              ? t.failed
+              : t.cancelled}
           </h1>
+          {(status === 'awaiting_wire_transfer' || (dbOrder?.payment_method === 'bank_transfer' && status === 'pending')) && (
+            <p className="text-sm text-amber-700 max-w-md mx-auto">{t.awaitingWireHint}</p>
+          )}
           <div className="inline-flex items-center gap-2 bg-white border border-gray-200 rounded-lg px-4 py-2">
             <span className="text-sm text-gray-500">{t.orderId}:</span>
             <span className="font-mono font-bold text-[#333333]">{orderId}</span>
@@ -345,95 +415,158 @@ export default function OrderConfirmationClient({ params }: OrderConfirmationPag
                     {isZh ? '感謝您的付款！我們將盡快處理您的訂單。' : locale === 'en' ? 'Thank you for your payment! We will process your order shortly.' : 'お支払いありがとうございます！注文を速やかに処理いたします。'}
                   </p>
                 </div>
-              ) : status === 'pending' ? (
-                /* Pending state: show both online + manual QR */
-                <>
-                  <h2 className="font-bold text-[#333333] mb-3">{t.paymentTitle}</h2>
+              ) : status === 'pending' || status === 'awaiting_wire_transfer' ? (
+                /* Pending state: branch on payment_method */
+                dbOrder?.payment_method === 'bank_transfer' && dbOrder.wire_transfer_info ? (
+                  /* 2026-06-25: 银行电汇 — 显示 DBS 账户信息 + 国内客户 QR 备用 */
+                  <>
+                    <h2 className="font-bold text-[#333333] mb-3">{t.bankInfoTitle}</h2>
+                    <BankTransferInfo
+                      wireTransferInfo={dbOrder.wire_transfer_info}
+                      orderNumber={dbOrder.order_number || dbOrder.id}
+                      amount={(dbOrder.amount || 0) / 100}
+                      currency={dbOrder.currency || 'HKD'}
+                      t={{
+                        title: t.bankInfoTitle,
+                        subtitle: t.bankInfoSubtitle,
+                        bankName: t.bankName,
+                        accountNumber: t.accountNumber,
+                        accountHolder: t.accountHolder,
+                        swiftCode: t.swiftCode,
+                        recipientAddress: t.recipientAddress,
+                        reference: t.reference,
+                        referenceHint: t.referenceHint,
+                        amountLabel: t.amountLabel,
+                        copy: t.copy,
+                        copied: t.copied,
+                        notice: t.bankNotice,
+                      }}
+                    />
 
-                  {/* Online Payment Option */}
-                  {dbOrder?.airwallex_payment_intent_id && (dbOrder.quote_data?._airwallex as any)?.client_secret && !showPayment && (
-                    <button
-                      onClick={() => setShowPayment(true)}
-                      className="w-full py-3 mb-4 rounded-lg bg-[#2873F5] text-white hover:bg-[#1E5FD1] transition-colors font-medium flex items-center justify-center gap-2"
-                    >
-                      <CreditCard className="w-4 h-4" />
-                      {t.payOnline}
-                    </button>
-                  )}
-
-                  {showPayment && dbOrder?.airwallex_payment_intent_id && (dbOrder.quote_data?._airwallex as any)?.client_secret && (
-                    <div className="mb-4">
-                      <AirwallexDropIn
-                        paymentIntentId={dbOrder.airwallex_payment_intent_id}
-                        clientSecret={(dbOrder.quote_data._airwallex as any).client_secret}
-                        onSuccess={() => window.location.reload()}
-                        onError={(err) => alert(err.message)}
-                      />
-                      <button
-                        onClick={() => setShowPayment(false)}
-                        className="mt-2 w-full py-2 text-sm text-gray-500 hover:text-gray-700"
-                      >
-                        Cancel
-                      </button>
-                    </div>
-                  )}
-
-                  {/* Manual QR Fallback */}
-                  <div className="mt-2">
-                    <p className="text-sm text-gray-500 mb-3">{t.paymentDesc}</p>
-                    <div className="space-y-3">
-                      {!showQr ? (
-                        <button onClick={() => setShowQr(true)} className="w-full py-3 rounded-lg border-2 border-dashed border-[#2873F5] text-[#2873F5] hover:bg-[#2873F5]/5 transition-colors font-medium flex items-center justify-center gap-2">
-                          <ShoppingBag className="w-4 h-4" />
-                          {t.showQr}
-                        </button>
+                    {/* 2026-06-25: 国内客户 QR 码 fallback (无换汇手续费) */}
+                    <div className="mt-5 pt-4 border-t border-gray-200">
+                      <p className="text-sm text-gray-700 mb-1 font-medium">
+                        💡 {t.domesticAlternative}
+                      </p>
+                      <p className="text-xs text-gray-500 mb-3">
+                        {t.domesticAlternativeHint}
+                      </p>
+                      {isZh ? (
+                        <div className="grid grid-cols-2 gap-3">
+                          <div className="bg-white rounded-lg border border-gray-200 p-3 text-center">
+                            <p className="text-xs text-gray-500 mb-2">{t.wechat}</p>
+                            <div className="aspect-square bg-gray-50 rounded overflow-hidden">
+                              <Image src="/images/payment-wechat.webp" alt="WeChat Pay" width={200} height={200} className="w-full h-full object-contain" unoptimized loading="lazy" decoding="async" />
+                            </div>
+                          </div>
+                          <div className="bg-white rounded-lg border border-gray-200 p-3 text-center">
+                            <p className="text-xs text-gray-500 mb-2">{t.alipay}</p>
+                            <div className="aspect-square bg-gray-50 rounded overflow-hidden">
+                              <Image src="/images/payment-alipay.webp" alt="Alipay" width={200} height={200} className="w-full h-full object-contain" unoptimized loading="lazy" decoding="async" />
+                            </div>
+                          </div>
+                        </div>
                       ) : (
-                        <div className="space-y-3 animate-in fade-in duration-300">
-                          {isZh ? (
-                            <div className="grid grid-cols-2 gap-3">
-                              <div className="bg-white rounded-lg border border-gray-200 p-3 text-center">
-                                <p className="text-xs text-gray-500 mb-2">{t.wechat}</p>
-                                <div className="aspect-square bg-gray-50 rounded overflow-hidden">
-                                  <Image src="/images/payment-wechat.webp" alt="WeChat" width={200} height={200} className="w-full h-full object-contain" unoptimized loading="lazy" decoding="async" />
-                                </div>
-                              </div>
-                              <div className="bg-white rounded-lg border border-gray-200 p-3 text-center">
-                                <p className="text-xs text-gray-500 mb-2">{t.alipay}</p>
-                                <div className="aspect-square bg-gray-50 rounded overflow-hidden">
-                                  <Image src="/images/payment-alipay.webp" alt="Alipay" width={200} height={200} className="w-full h-full object-contain" unoptimized loading="lazy" decoding="async" />
-                                </div>
-                              </div>
-                            </div>
-                          ) : (
-                            <div className="bg-white rounded-lg border border-gray-200 p-4 text-center">
-                              <p className="text-sm font-semibold text-gray-700 mb-1">{t.flash}</p>
-                              <p className="text-xs text-gray-500 mb-3">{locale === 'ja' ? '推奨支払方法' : 'Recommended'}</p>
-                              <div className="aspect-square bg-gray-50 rounded overflow-hidden max-w-[240px] mx-auto">
-                                <Image src="/images/payment-flash.webp" alt="Flash Receipt" width={240} height={240} className="w-full h-full object-contain" unoptimized loading="lazy" decoding="async" />
-                              </div>
-                            </div>
-                          )}
-                          <button onClick={() => setShowQr(false)} className="w-full py-2 text-sm text-gray-500 hover:text-gray-700 transition-colors flex items-center justify-center gap-1">
-                            <ChevronUp className="w-4 h-4" /> {t.hideQr}
-                          </button>
+                        <div className="bg-white rounded-lg border border-gray-200 p-4 text-center">
+                          <p className="text-sm font-semibold text-gray-700 mb-1">{t.flash}</p>
+                          <p className="text-xs text-gray-500 mb-3">{locale === 'ja' ? '推奨支払方法' : 'Recommended'}</p>
+                          <div className="aspect-square bg-gray-50 rounded overflow-hidden max-w-[240px] mx-auto">
+                            <Image src="/images/payment-flash.webp" alt="Flash Receipt" width={240} height={240} className="w-full h-full object-contain" unoptimized loading="lazy" decoding="async" />
+                          </div>
                         </div>
                       )}
                     </div>
-                  </div>
+                  </>
+                ) : (
+                  /* 原有: Airwallex 在线支付 + 微信/支付宝 QR 备用 */
+                  <>
+                    <h2 className="font-bold text-[#333333] mb-3">{t.paymentTitle}</h2>
 
-                  {/* Payment Notice */}
-                  <div className="mt-4 p-3 bg-amber-50 rounded-lg border border-amber-100">
-                    <h3 className="font-semibold text-amber-800 text-xs mb-2">{t.paymentNotice}</h3>
-                    <ul className="space-y-1.5">
-                      {t.paymentItems.map((item, i) => (
-                        <li key={i} className="flex items-start gap-1.5 text-xs text-amber-700">
-                          <AlertCircle className="w-3 h-3 mt-0.5 flex-shrink-0" />
-                          <span>{item}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </>
+                    {/* Online Payment Option */}
+                    {dbOrder?.airwallex_payment_intent_id && (dbOrder.quote_data?._airwallex as any)?.client_secret && !showPayment && (
+                      <button
+                        onClick={() => setShowPayment(true)}
+                        className="w-full py-3 mb-4 rounded-lg bg-[#2873F5] text-white hover:bg-[#1E5FD1] transition-colors font-medium flex items-center justify-center gap-2"
+                      >
+                        <CreditCard className="w-4 h-4" />
+                        {t.payOnline}
+                      </button>
+                    )}
+
+                    {showPayment && dbOrder?.airwallex_payment_intent_id && (dbOrder.quote_data?._airwallex as any)?.client_secret && (
+                      <div className="mb-4">
+                        <AirwallexDropIn
+                          paymentIntentId={dbOrder.airwallex_payment_intent_id}
+                          clientSecret={(dbOrder.quote_data._airwallex as any).client_secret}
+                          onSuccess={() => window.location.reload()}
+                          onError={(err) => alert(err.message)}
+                        />
+                        <button
+                          onClick={() => setShowPayment(false)}
+                          className="mt-2 w-full py-2 text-sm text-gray-500 hover:text-gray-700"
+                        >
+                          Cancel
+                        </button>
+                      </div>
+                    )}
+
+                    {/* Manual QR Fallback */}
+                    <div className="mt-2">
+                      <p className="text-sm text-gray-500 mb-3">{t.paymentDesc}</p>
+                      <div className="space-y-3">
+                        {!showQr ? (
+                          <button onClick={() => setShowQr(true)} className="w-full py-3 rounded-lg border-2 border-dashed border-[#2873F5] text-[#2873F5] hover:bg-[#2873F5]/5 transition-colors font-medium flex items-center justify-center gap-2">
+                            <ShoppingBag className="w-4 h-4" />
+                            {t.showQr}
+                          </button>
+                        ) : (
+                          <div className="space-y-3 animate-in fade-in duration-300">
+                            {isZh ? (
+                              <div className="grid grid-cols-2 gap-3">
+                                <div className="bg-white rounded-lg border border-gray-200 p-3 text-center">
+                                  <p className="text-xs text-gray-500 mb-2">{t.wechat}</p>
+                                  <div className="aspect-square bg-gray-50 rounded overflow-hidden">
+                                    <Image src="/images/payment-wechat.webp" alt="WeChat" width={200} height={200} className="w-full h-full object-contain" unoptimized loading="lazy" decoding="async" />
+                                  </div>
+                                </div>
+                                <div className="bg-white rounded-lg border border-gray-200 p-3 text-center">
+                                  <p className="text-xs text-gray-500 mb-2">{t.alipay}</p>
+                                  <div className="aspect-square bg-gray-50 rounded overflow-hidden">
+                                    <Image src="/images/payment-alipay.webp" alt="Alipay" width={200} height={200} className="w-full h-full object-contain" unoptimized loading="lazy" decoding="async" />
+                                  </div>
+                                </div>
+                              </div>
+                            ) : (
+                              <div className="bg-white rounded-lg border border-gray-200 p-4 text-center">
+                                <p className="text-sm font-semibold text-gray-700 mb-1">{t.flash}</p>
+                                <p className="text-xs text-gray-500 mb-3">{locale === 'ja' ? '推奨支払方法' : 'Recommended'}</p>
+                                <div className="aspect-square bg-gray-50 rounded overflow-hidden max-w-[240px] mx-auto">
+                                  <Image src="/images/payment-flash.webp" alt="Flash Receipt" width={240} height={240} className="w-full h-full object-contain" unoptimized loading="lazy" decoding="async" />
+                                </div>
+                              </div>
+                            )}
+                            <button onClick={() => setShowQr(false)} className="w-full py-2 text-sm text-gray-500 hover:text-gray-700 transition-colors flex items-center justify-center gap-1">
+                              <ChevronUp className="w-4 h-4" /> {t.hideQr}
+                            </button>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+
+                    {/* Payment Notice */}
+                    <div className="mt-4 p-3 bg-amber-50 rounded-lg border border-amber-100">
+                      <h3 className="font-semibold text-amber-800 text-xs mb-2">{t.paymentNotice}</h3>
+                      <ul className="space-y-1.5">
+                        {t.paymentItems.map((item, i) => (
+                          <li key={i} className="flex items-start gap-1.5 text-xs text-amber-700">
+                            <AlertCircle className="w-3 h-3 mt-0.5 flex-shrink-0" />
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </>
+                )
               ) : (
                 /* Failed / Cancelled */
                 <div className="text-center py-6">

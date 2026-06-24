@@ -21,12 +21,44 @@ export interface CreatePaymentSessionParams {
   amount: number;
   currency: string;
   file_url?: string;
+  /**
+   * 2026-06-25: 支付方式
+   * - 'airwallex' (默认): Airwallex 卡支付 Drop-in
+   * - 'bank_transfer': 银行电汇 (DBS HK Airwallex 收款账户)
+   */
+  payment_method?: 'airwallex' | 'bank_transfer';
+}
+
+/**
+ * 2026-06-25: 银行转账 / 电汇收款信息
+ * 来源: 后端 create-payment-session.ts bank_transfer 分支
+ *
+ * 跨境 SWIFT 电汇必填: bank_name / account_number / account_holder / swift_code
+ * HK 本地 RTGS 用:     bank_code / branch_code (跨境 SWIFT 不需要,UI 不显示但后台存)
+ * 部分国家电汇必填:    recipient_address
+ */
+export interface WireTransferInfo {
+  bank_name: string;
+  account_number: string;
+  account_holder: string;
+  swift_code: string;
+  bank_code?: string;
+  branch_code?: string;
+  recipient_address?: string;
+  reference_template: string;
+  snapshot_at: string;
 }
 
 export interface CreatePaymentSessionResponse {
-  clientSecret: string;
-  paymentIntentId: string;
+  /** Airwallex 卡支付: payment intent client secret | 银行转账: null */
+  clientSecret: string | null;
+  /** Airwallex 卡支付: payment intent id | 银行转账: null */
+  paymentIntentId: string | null;
   orderId: string;
+  /** 实际选择的支付方式 (后端回传,前端用来路由) */
+  paymentMethod: 'airwallex' | 'bank_transfer';
+  /** 仅银行转账时有值 */
+  wireTransferInfo?: WireTransferInfo;
 }
 
 const PAYMENT_API_URL = process.env.NEXT_PUBLIC_PAYMENT_API_URL || '/api/payment';

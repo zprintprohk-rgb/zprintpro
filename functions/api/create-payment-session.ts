@@ -21,6 +21,27 @@ interface CreateSessionRequest {
   amount: number;
   currency: string;
   file_url?: string;
+  /**
+   * 2026-06-25: 支付方式
+   * - 'airwallex' (默认): Airwallex 卡支付 Drop-in
+   * - 'bank_transfer': 银行电汇 (DBS HK Airwallex 收款账户)
+   */
+  payment_method?: 'airwallex' | 'bank_transfer';
+}
+
+interface WireTransferInfo {
+  bank_name: string;
+  account_number: string;
+  account_holder: string;
+  swift_code: string;
+  /** 2026-06-25: HK 本地 RTGS/CHATS 用 (跨境 SWIFT 不需要) */
+  bank_code?: string;
+  /** 2026-06-25: HK 本地 RTGS/CHATS 用 (跨境 SWIFT 不需要) */
+  branch_code?: string;
+  /** 2026-06-25: 部分国家跨境电汇必填的收款人地址 */
+  recipient_address?: string;
+  reference_template: string;
+  snapshot_at: string;
 }
 
 const AIRWALLEX_API_BASE = 'https://api.airwallex.com/api/v1';
@@ -91,6 +112,52 @@ export interface Env {
   AIRWALLEX_API_KEY: string;
   SUPABASE_URL: string;
   SUPABASE_SERVICE_ROLE_KEY: string;
+  // 2026-06-25: 银行转账收款账户信息 (DBS HK Airwallex 激活)
+  NEXT_PUBLIC_BANK_NAME?: string;
+  NEXT_PUBLIC_BANK_ACCOUNT?: string;
+  NEXT_PUBLIC_BANK_ACCOUNT_HOLDER?: string;
+  NEXT_PUBLIC_BANK_SWIFT?: string;
+  // 2026-06-25: HK 本地 RTGS 用 (跨境 SWIFT 不需要,可选)
+  NEXT_PUBLIC_BANK_CODE?: string;
+  NEXT_PUBLIC_BANK_BRANCH?: string;
+  // 2026-06-25: 部分国家跨境电汇必填的收款人地址 (可选,但建议填)
+  NEXT_PUBLIC_BANK_RECIPIENT_ADDRESS?: string;
+}
+
+/**
+ * 2026-06-25: 从 env 读取银行转账账户信息
+ *
+ * 必填: NAME / ACCOUNT / HOLDER / SWIFT (跨境 SWIFT 电汇核心 4 项)
+ * 可选: CODE / BRANCH (HK 本地 RTGS 用) / ADDRESS (部分国家电汇必填)
+ *
+ * 缺失必填项抛错,缺失可选项仅留空 (后台存但 UI 不显示)
+ */
+function getWireTransferInfo(env: Env): WireTransferInfo {
+  const {
+    NEXT_PUBLIC_BANK_NAME,
+    NEXT_PUBLIC_BANK_ACCOUNT,
+    NEXT_PUBLIC_BANK_ACCOUNT_HOLDER,
+    NEXT_PUBLIC_BANK_SWIFT,
+    NEXT_PUBLIC_BANK_CODE,
+    NEXT_PUBLIC_BANK_BRANCH,
+    NEXT_PUBLIC_BANK_RECIPIENT_ADDRESS,
+  } = env;
+  if (!NEXT_PUBLIC_BANK_NAME || !NEXT_PUBLIC_BANK_ACCOUNT || !NEXT_PUBLIC_BANK_ACCOUNT_HOLDER || !NEXT_PUBLIC_BANK_SWIFT) {
+    throw new Error(
+      'Wire transfer env not fully configured. Required: NEXT_PUBLIC_BANK_NAME, NEXT_PUBLIC_BANK_ACCOUNT, NEXT_PUBLIC_BANK_ACCOUNT_HOLDER, NEXT_PUBLIC_BANK_SWIFT'
+    );
+  }
+  return {
+    bank_name: NEXT_PUBLIC_BANK_NAME,
+    account_number: NEXT_PUBLIC_BANK_ACCOUNT,
+    account_holder: NEXT_PUBLIC_BANK_ACCOUNT_HOLDER,
+    swift_code: NEXT_PUBLIC_BANK_SWIFT,
+    bank_code: NEXT_PUBLIC_BANK_CODE,
+    branch_code: NEXT_PUBLIC_BANK_BRANCH,
+    recipient_address: NEXT_PUBLIC_BANK_RECIPIENT_ADDRESS,
+    reference_template: 'ZP-ORDER-{order_number}',
+    snapshot_at: new Date().toISOString(),
+  };
 }
 
 export async function onRequestPost(context: {
@@ -106,7 +173,7 @@ export async function onRequestPost(context: {
 
   try {
     const body: CreateSessionRequest = await context.request.json();
-    const { quote_data, amount, currency, file_url } = body;
+    const { quote_data, amount, currency, file_url, payment_method = 'airwallex' } = body;
 
     if (typeof amount !== 'number' || amount <= 0) {
       return new Response(
@@ -122,11 +189,10 @@ export async function onRequestPost(context: {
       );
     }
 
-    const apiKey = context.env.AIRWALLEX_API_KEY;
-    if (!apiKey) {
+    if (payment_method !== 'airwallex' && payment_method !== 'bank_transfer') {
       return new Response(
-        JSON.stringify({ error: 'AIRWALLEX_API_KEY is not configured' }),
-        { status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+        JSON.stringify({ error: `Invalid payment_method. Must be 'airwallex' or 'bank_transfer'.` }),
+        { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
       );
     }
 
@@ -140,8 +206,64 @@ export async function onRequestPost(context: {
     }
 
     const supabase = createClient(supabaseUrl, supabaseServiceKey);
-
     const orderId = crypto.randomUUID();
+
+    // ============================================================
+    // 2026-06-25: 银行转账分支 (不调 Airwallex,落库即返回)
+    // ============================================================
+    if (payment_method === 'bank_transfer') {
+      let wireTransferInfo: WireTransferInfo;
+      try {
+        wireTransferInfo = getWireTransferInfo(context.env);
+      } catch (e) {
+        return new Response(
+          JSON.stringify({ error: e instanceof Error ? e.message : 'Wire transfer env not configured' }),
+          { status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+        );
+      }
+
+      const { error: insertError } = await supabase.from('orders').insert({
+        id: orderId,
+        quote_data: quote_data,
+        file_url: file_url || null,
+        amount,
+        currency,
+        status: 'pending',
+        payment_status: 'awaiting_wire_transfer',
+        payment_method: 'bank_transfer',
+        wire_transfer_info: wireTransferInfo,
+      });
+
+      if (insertError) {
+        throw new Error(`Failed to create bank transfer order: ${insertError.message}`);
+      }
+
+      return new Response(
+        JSON.stringify({
+          clientSecret: null,
+          paymentIntentId: null,
+          orderId,
+          paymentMethod: 'bank_transfer',
+          wireTransferInfo,
+        }),
+        {
+          status: 200,
+          headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+        }
+      );
+    }
+
+    // ============================================================
+    // 默认分支: Airwallex 卡支付 (原有逻辑)
+    // ============================================================
+    const apiKey = context.env.AIRWALLEX_API_KEY;
+    if (!apiKey) {
+      return new Response(
+        JSON.stringify({ error: 'AIRWALLEX_API_KEY is not configured' }),
+        { status: 500, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
+      );
+    }
+
     const { error: insertError } = await supabase.from('orders').insert({
       id: orderId,
       quote_data: quote_data,
@@ -149,6 +271,8 @@ export async function onRequestPost(context: {
       amount,
       currency,
       status: 'pending',
+      payment_status: 'pending',
+      payment_method: 'airwallex',
       airwallex_payment_intent_id: null,
     });
 
@@ -186,6 +310,7 @@ export async function onRequestPost(context: {
         clientSecret: paymentIntent.client_secret,
         paymentIntentId: paymentIntent.id,
         orderId,
+        paymentMethod: 'airwallex',
       }),
       {
         status: 200,

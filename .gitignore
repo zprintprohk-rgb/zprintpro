@@ -166,3 +166,23 @@ _commit_*.py
 _fix_*.py
 _detailed_*.py
 _check_*.py
+
+
+# Audit reports, drafts, one-off scripts (added 2026-06-25)
+docs/audit/
+docs/drafts/
+docs/audit-*
+docs/ja-drafts-*
+docs/zh-hk-kana-scan.txt
+scripts/audit-*.py
+scripts/verify-*.py
+scripts/build-*.py
+scripts/check-slugs.py
+scripts/extract-*.py
+scripts/fix-*.py
+scripts/get-slugs.py
+scripts/inject-ja.py
+scripts/list-medium.py
+scripts/peek-*.py
+next-start.err
+scripts/verify-*.json

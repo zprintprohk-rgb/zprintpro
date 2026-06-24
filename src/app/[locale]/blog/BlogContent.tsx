@@ -138,48 +138,6 @@ const articleImagesByLocale: Record<string, Record<string, string>> = {
 
 const defaultArticleImage = '/images/blog/zh-hk/sticker-guide.webp';
 
-const articles: Record<string, { slug: string; title: string; date: string; category: string; excerpt: string }[]> = {
-  'zh-hk': [
-    { slug: 'company-intro', title: '智印雲印刷公司簡介：專業設備與一站式印刷服務', date: '2024-06-01', category: 'company-news', excerpt: '智印雲擁有海德堡6+1印刷機、HP數碼印刷機、馬天尼膠裝線等先進設備，提供從設計到印刷到後加工的一站式服務。' },
-    { slug: 'hong-kong-printing-guide', title: '香港印刷公司選擇完全指南：觀塘、九龍、新界哪裡最可靠？', date: '2024-05-20', category: 'hongkong', excerpt: '深入比較香港觀塘、九龍、新界的印刷公司，從價格、品質、交貨速度到客戶評價，幫您找到最適合的印刷合作夥伴。' },
-    { slug: 'design-file-specs', title: '印刷文件設計規範：出血位、分辨率、色彩模式一次搞懂', date: '2024-05-15', category: 'design', excerpt: '從出血位設置到色彩模式轉換，這篇指南將幫助設計師和企業避免最常見的印刷文件錯誤。' },
-    { slug: 'brand-materials-checklist', title: '企業品牌物料清單：從名片到展架的全套印刷方案', date: '2024-05-10', category: 'branding', excerpt: '無論是初創企業還是品牌升級，這份完整的品牌物料印刷清單將幫助您系統化地規劃所有印刷需求。' },
-    { slug: 'mtr-advertising-specs', title: '港鐵廣告印刷規格全解析：港島線、觀塘線、荃灣線投放指南', date: '2024-05-05', category: 'hongkong', excerpt: '詳細解析港鐵各線路廣告位的印刷規格、尺寸要求和投放策略。' },
-    { slug: 'sticker-guide', title: '香港貼紙印刷完全指南：材質、工藝與應用場景详解', date: '2024-04-15', category: 'sticker', excerpt: '深入了解香港貼紙印刷的各種材質選擇、表面處理工藝以及不同場景的應用建議。' },
-    { slug: 'business-card-design', title: '名片設計的10個黃金法則：打造令人難忘的專業形象', date: '2024-04-10', category: 'card', excerpt: '從排版到色彩搭配，掌握名片設計的核心技巧，助您打造令人印象深刻的專業名片。' },
-    { slug: 'packaging-trends', title: '2024包裝盒設計趨勢解析：讓產品在貨架上脫穎而出', date: '2024-04-05', category: 'packaging', excerpt: '探索2024年最新包裝盒設計趨勢，從極簡主義到環保材質，讓產品包裝成為品牌最佳代言人。' },
-    { slug: 'cmyk-guide', title: 'CMYK vs RGB：印刷色彩模式完全詳解', date: '2024-03-28', category: 'printing', excerpt: '理解CMYK和RGB色彩模式的區別，確保您的設計在印刷時呈現最佳效果。' },
-    { slug: 'paper-materials', title: '印刷紙材選擇指南：從銅版紙到特種紙', date: '2024-03-20', category: 'printing', excerpt: '不同紙材的特性與適用場景分析，幫助您為項目選擇最合適的印刷紙張。' },
-    { slug: 'eco-printing', title: '環保印刷：企業ESG與可持續包裝的未來', date: '2024-03-15', category: 'trends', excerpt: '了解環保印刷材料和工藝，為地球和品牌形象雙贏做出選擇。' },
-  ],
-  'en': [
-    { slug: 'company-intro', title: 'About ZprintPro: Professional Equipment & One-Stop Printing Services', date: '2024-06-01', category: 'company-news', excerpt: 'ZprintPro features Heidelberg 6+1 printing presses, HP digital printers, and Martini perfect binding lines for full-service printing.' },
-    { slug: 'hong-kong-printing-guide', title: 'Hong Kong Printing Company Guide: Kwun Tong, Kowloon & NT', date: '2024-05-20', category: 'hongkong', excerpt: 'Compare printing companies across Hong Kong from pricing to quality to find your ideal partner.' },
-    { slug: 'design-file-specs', title: 'Print File Design Specifications: Bleed, Resolution & Color Modes', date: '2024-05-15', category: 'design', excerpt: 'Master bleed settings, resolution requirements, and color mode conversions for perfect prints.' },
-    { slug: 'brand-materials-checklist', title: 'Corporate Brand Materials Checklist: From Cards to Displays', date: '2024-05-10', category: 'branding', excerpt: 'A complete checklist of printed brand materials for startups and brand refreshes.' },
-    { slug: 'mtr-advertising-specs', title: 'MTR Advertising Print Specs: Island, Kwun Tong & Tsuen Wan Lines', date: '2024-05-05', category: 'hongkong', excerpt: 'Detailed specifications and strategies for MTR advertising across Hong Kong.' },
-    { slug: 'sticker-guide', title: 'Complete Sticker Printing Guide: Materials, Finishes & Applications', date: '2024-04-15', category: 'sticker', excerpt: 'Deep dive into sticker material choices, surface treatments, and application scenarios.' },
-    { slug: 'business-card-design', title: '10 Golden Rules for Business Card Design', date: '2024-04-10', category: 'card', excerpt: 'Master the core techniques of business card design.' },
-    { slug: 'packaging-trends', title: '2024 Packaging Design Trends Analysis', date: '2024-04-05', category: 'packaging', excerpt: 'Explore latest packaging design trends.' },
-    { slug: 'cmyk-guide', title: 'CMYK vs RGB: Complete Guide to Print Color Modes', date: '2024-03-28', category: 'printing', excerpt: 'Understand color modes for optimal print results.' },
-    { slug: 'paper-materials', title: 'Paper Selection Guide: From Art Paper to Specialty Stock', date: '2024-03-20', category: 'printing', excerpt: 'Analysis of different paper characteristics.' },
-    { slug: 'eco-printing', title: 'Eco-Friendly Printing: The Future of Sustainable Packaging', date: '2024-03-15', category: 'trends', excerpt: 'Learn about eco-friendly printing materials.' },
-  ],
-  'ja': [
-    { slug: 'company-intro', title: 'ZprintPro会社概要：専門設備とワンストップ印刷サービス', date: '2024-06-01', category: 'company-news', excerpt: 'ZprintProはハイデルベルグ6+1印刷機、HPデジタル印刷機、マルティニ製本ラインなどの先進設備を保有しています。' },
-    { slug: 'hong-kong-printing-guide', title: '香港印刷会社選び完全ガイド：観塘、九龍、新界', date: '2024-05-20', category: 'hongkong', excerpt: '香港の観塘、九龍、新界の印刷会社を比較し、最適なパートナーを選びましょう。' },
-    { slug: 'design-file-specs', title: '印刷用デザインファイル仕様：裁ち落とし、解像度、カラーモード', date: '2024-05-15', category: 'design', excerpt: '裁ち落とし、解像度、カラーモードについて学びましょう。' },
-    { slug: 'brand-materials-checklist', title: '企業ブランド物料チェックリスト', date: '2024-05-10', category: 'branding', excerpt: '名刺から展示物まで、ブランド構築に必要な印刷物料を確認しましょう。' },
-    { slug: 'mtr-advertising-specs', title: 'MTR広告印刷仕様', date: '2024-05-05', category: 'hongkong', excerpt: '港島線、観塘線、荃湾線の広告印刷規格について解説します。' },
-    { slug: 'sticker-guide', title: 'ステッカー印刷完全ガイド：材質、加工と応用場面', date: '2024-04-15', category: 'sticker', excerpt: 'ステッカーの材質選び、表面加工、応用場面について深く理解しましょう。' },
-    { slug: 'business-card-design', title: '名刺デザインの10の黄金法則', date: '2024-04-10', category: 'card', excerpt: 'レイアウトから配色まで、名刺デザインの核心技術をマスターしましょう。' },
-    { slug: 'packaging-trends', title: '2024年パッケージデザイントレンド解析', date: '2024-04-05', category: 'packaging', excerpt: '最新のパッケージデザイントレンドを探ります。' },
-    { slug: 'cmyk-guide', title: 'CMYK vs RGB：印刷カラーモード完全解説', date: '2024-03-28', category: 'printing', excerpt: 'CMYKとRGBの違いを理解し、最適な印刷結果を得ましょう。' },
-    { slug: 'paper-materials', title: '印刷用紙選択ガイド：アート紙から特殊紙まで', date: '2024-03-20', category: 'printing', excerpt: '異なる紙の特性を分析し、最適な用紙を選びましょう。' },
-    { slug: 'eco-printing', title: 'エコ印刷：持続可能な包装の未来', date: '2024-03-15', category: 'trends', excerpt: '地球とブランドの両方のために、エコ印刷について学びましょう。' },
-  ],
-};
-
 const categoryColors: Record<string, { bg: string; text: string }> = {
   'company-news': { bg: 'bg-red-50', text: 'text-red-600' },
   'sticker': { bg: 'bg-pink-50', text: 'text-pink-600' },
@@ -202,8 +160,7 @@ export default function BlogContent({ locale }: { locale: Locale }) {
   const localePrefix = `/${locale}`;
   const [activeCategory, setActiveCategory] = useState<string>('all');
 
-  const legacyPosts = articles[locale] || articles['zh-hk'];
-
+  // 仅使用 buyingGuides (9 篇真博客). 硬编码 articles 数组已删除 (2026-06-25)
   const guidePosts = buyingGuides.map((guide) => ({
     slug: guide.slug,
     title: guide.title[locale],
@@ -214,17 +171,7 @@ export default function BlogContent({ locale }: { locale: Locale }) {
     image: articleImagesByLocale[locale]?.[guide.slug] || articleImagesByLocale['zh-hk']?.[guide.slug] || defaultArticleImage,
   }));
 
-  const legacyPostItems = legacyPosts.map((post) => ({
-    slug: post.slug,
-    title: post.title,
-    date: post.date,
-    categoryKey: post.category,
-    categoryLabel: t.categories.find((c) => c.key === post.category)?.label || post.category,
-    excerpt: post.excerpt,
-    image: articleImagesByLocale[locale]?.[post.slug] || articleImagesByLocale['zh-hk']?.[post.slug] || defaultArticleImage,
-  }));
-
-  const allPosts = [...guidePosts, ...legacyPostItems];
+  const allPosts = guidePosts;
 
   const filteredPosts = useMemo(() => {
     if (activeCategory === 'all') return allPosts;

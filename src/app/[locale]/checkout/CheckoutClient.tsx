@@ -7,7 +7,8 @@ import { Locale } from '@/lib/seo';
 import { Package, ArrowRight, Mail, Phone, MapPin, User, FileText, AlertCircle, ShoppingBag, CreditCard, Lock } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { AirwallexDropIn } from '@/components/payment/AirwallexDropIn';
-import { createPaymentSession } from '@/lib/airwallex';
+import { BankTransferInfo, type WireTransferInfo } from '@/components/payment/BankTransferInfo';
+import { createPaymentSession, type CreatePaymentSessionResponse } from '@/lib/airwallex';
 
 interface CheckoutPageProps {
   params: { locale: string };
@@ -44,6 +45,13 @@ const translations = {
     paymentError: '支付初始化失敗，請重試或聯絡客服',
     step1: '1. 確認訂單',
     step2: '2. 安全付款',
+    // 2026-06-25: 支付方式选择
+    paymentMethodTitle: '選擇付款方式',
+    paymentMethodCreditCard: '信用卡 / 線上支付',
+    paymentMethodCreditCardDesc: 'Visa / Mastercard / JCB 即時到賬',
+    paymentMethodBankTransfer: '銀行電匯',
+    paymentMethodBankTransferDesc: '適合大額訂單 / 30 天慢單 / 跨境 B2B',
+    processingBankTransfer: '正在生成訂單...',
   },
   en: {
     title: 'Checkout',
@@ -75,6 +83,13 @@ const translations = {
     paymentError: 'Payment initialization failed. Please try again or contact support.',
     step1: '1. Review Order',
     step2: '2. Secure Payment',
+    // 2026-06-25: 支付方式选择
+    paymentMethodTitle: 'Choose Payment Method',
+    paymentMethodCreditCard: 'Credit Card / Online',
+    paymentMethodCreditCardDesc: 'Visa / Mastercard / JCB instant processing',
+    paymentMethodBankTransfer: 'Bank Wire Transfer',
+    paymentMethodBankTransferDesc: 'Best for large orders / 30-day slow orders / cross-border B2B',
+    processingBankTransfer: 'Creating your order...',
   },
   ja: {
     title: 'レジ',
@@ -106,6 +121,13 @@ const translations = {
     paymentError: '決済の初期化に失敗しました。もう一度お試しいただくか、サポートにお問い合わせください。',
     step1: '1. 注文確認',
     step2: '2. 安全決済',
+    // 2026-06-25: 支払い方法選択
+    paymentMethodTitle: 'お支払い方法を選択',
+    paymentMethodCreditCard: 'クレジットカード / オンライン',
+    paymentMethodCreditCardDesc: 'Visa / Mastercard / JCB 即時処理',
+    paymentMethodBankTransfer: '銀行振込',
+    paymentMethodBankTransferDesc: '大口注文 / 30日スローオーダー / 越境B2B向け',
+    processingBankTransfer: '注文を作成中...',
   },
 };
 
@@ -149,9 +171,11 @@ export default function CheckoutClient({ params }: CheckoutPageProps) {
   const [uploading, setUploading] = useState(false);
 
   const [step, setStep] = useState<'form' | 'payment'>('form');
-  const [paymentData, setPaymentData] = useState<{ clientSecret: string; paymentIntentId: string; orderId: string } | null>(null);
+  const [paymentData, setPaymentData] = useState<CreatePaymentSessionResponse | null>(null);
   const [paymentError, setPaymentError] = useState<string | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
+  // 2026-06-25: 支付方式 (默认 airwallex, 大单/慢单可选 bank_transfer)
+  const [paymentMethod, setPaymentMethod] = useState<'airwallex' | 'bank_transfer'>('airwallex');
 
   const [mounted, setMounted] = useState(false);
 
@@ -276,6 +300,7 @@ export default function CheckoutClient({ params }: CheckoutPageProps) {
       const session = await createPaymentSession({
         amount: amountInSmallestUnit,
         currency,
+        payment_method: paymentMethod,
         quote_data: {
           items: items.map((item) => ({
             sku_code: item.sku_code,
@@ -289,6 +314,7 @@ export default function CheckoutClient({ params }: CheckoutPageProps) {
           contact: form,
           files: uploadedFiles,
           locale,
+          payment_method: paymentMethod, // 也存一份到 quote_data 里供后端日志
         },
       });
 
@@ -301,10 +327,20 @@ export default function CheckoutClient({ params }: CheckoutPageProps) {
         date: new Date().toISOString(),
         locale,
         paymentIntentId: session.paymentIntentId,
+        paymentMethod: session.paymentMethod,
       };
       localStorage.setItem('zprintpro-current-order', JSON.stringify(orderData));
 
       setPaymentData(session);
+
+      // 2026-06-25: 银行转账不需要 Drop-in,直接跳订单确认页
+      // 订单确认页会根据 paymentMethod=bank_transfer 显示 DBS 账户信息
+      if (session.paymentMethod === 'bank_transfer') {
+        clearCart();
+        router.push(`${localePrefix}/order-confirmation/?order=${session.orderId}`);
+        return;
+      }
+
       setStep('payment');
     } catch (err) {
       setPaymentError(err instanceof Error ? err.message : t.paymentError);
@@ -414,17 +450,80 @@ export default function CheckoutClient({ params }: CheckoutPageProps) {
                   </div>
                 )}
 
+                {/* 2026-06-25: 支付方式选择 (信用卡 / 银行电汇) */}
+                <div className="bg-white rounded-xl border border-gray-100 p-5">
+                  <h2 className="font-bold text-[#333333] mb-4 flex items-center gap-2">
+                    <CreditCard className="w-5 h-5 text-[#2873F5]" />
+                    {t.paymentMethodTitle}
+                  </h2>
+                  <div className="grid sm:grid-cols-2 gap-3">
+                    {/* 信用卡 */}
+                    <label
+                      className={`flex items-start gap-3 p-4 rounded-lg border-2 cursor-pointer transition-all ${
+                        paymentMethod === 'airwallex'
+                          ? 'border-[#2873F5] bg-[#2873F5]/5'
+                          : 'border-gray-200 hover:border-gray-300 bg-white'
+                      }`}
+                    >
+                      <input
+                        type="radio"
+                        name="paymentMethod"
+                        value="airwallex"
+                        checked={paymentMethod === 'airwallex'}
+                        onChange={() => setPaymentMethod('airwallex')}
+                        className="mt-1"
+                      />
+                      <div className="flex-1 min-w-0">
+                        <p className="font-medium text-[#333333] text-sm">
+                          {t.paymentMethodCreditCard}
+                        </p>
+                        <p className="text-xs text-gray-500 mt-1">
+                          {t.paymentMethodCreditCardDesc}
+                        </p>
+                      </div>
+                    </label>
+
+                    {/* 银行电汇 */}
+                    <label
+                      className={`flex items-start gap-3 p-4 rounded-lg border-2 cursor-pointer transition-all ${
+                        paymentMethod === 'bank_transfer'
+                          ? 'border-[#2873F5] bg-[#2873F5]/5'
+                          : 'border-gray-200 hover:border-gray-300 bg-white'
+                      }`}
+                    >
+                      <input
+                        type="radio"
+                        name="paymentMethod"
+                        value="bank_transfer"
+                        checked={paymentMethod === 'bank_transfer'}
+                        onChange={() => setPaymentMethod('bank_transfer')}
+                        className="mt-1"
+                      />
+                      <div className="flex-1 min-w-0">
+                        <p className="font-medium text-[#333333] text-sm">
+                          {t.paymentMethodBankTransfer}
+                        </p>
+                        <p className="text-xs text-gray-500 mt-1">
+                          {t.paymentMethodBankTransferDesc}
+                        </p>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+
                 <div className="flex flex-col sm:flex-row gap-3">
                   <button type="button" onClick={() => router.push(`${localePrefix}/cart/`)} className="flex-1 py-3 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors">
                     {t.backToCart}
                   </button>
                   <button type="submit" disabled={isProcessing} className="flex-1 py-3 bg-[#F87314] text-white rounded-lg font-bold hover:bg-[#E56203] transition-colors flex items-center justify-center gap-2 disabled:opacity-60">
-                    {isProcessing ? t.processing : (
-                      <>
-                        {t.submitOrder}
-                        <ArrowRight className="w-4 h-4" />
-                      </>
-                    )}
+                    {isProcessing
+                      ? (paymentMethod === 'bank_transfer' ? t.processingBankTransfer : t.processing)
+                      : (
+                        <>
+                          {t.submitOrder}
+                          <ArrowRight className="w-4 h-4" />
+                        </>
+                      )}
                   </button>
                 </div>
               </form>
@@ -438,8 +537,8 @@ export default function CheckoutClient({ params }: CheckoutPageProps) {
                   </div>
                   <p className="text-sm text-gray-500 mb-4">{t.paymentDesc}</p>
                   <AirwallexDropIn
-                    paymentIntentId={paymentData.paymentIntentId}
-                    clientSecret={paymentData.clientSecret}
+                    paymentIntentId={paymentData.paymentIntentId!}
+                    clientSecret={paymentData.clientSecret!}
                     locale={locale}
                     intentCurrency={currencyMap[locale]}
                     onSuccess={handlePaymentSuccess}
