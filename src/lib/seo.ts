@@ -747,10 +747,13 @@ export function generateProductJsonLd(
   };
 
   if (rating && rating.ratingValue) {
+    // 2026-06-24 修复: reviewCount 必须是 Integer (Google Search Console 报 "无效的整数" 在 aggregateRating.reviewCount)
+    // 之前 .toString() 把它转成字符串, Google 按 Schema.org 的 Integer 类型严格校验会失败.
+    // ratingValue Google 容忍字符串 (Spec 允许 Number/Text), 保留 .toString() 避免引入其他回归.
     schema.aggregateRating = {
       '@type': 'AggregateRating',
       ratingValue: rating.ratingValue.toString(),
-      reviewCount: (rating.reviewCount ?? 0).toString(),
+      reviewCount: rating.reviewCount ?? 0,
       bestRating: '5',
       worstRating: '1',
     };
@@ -964,10 +967,11 @@ export function generateProductReviewsJsonLd(
     '@type': 'Product',
     name: productName,
     url: `${siteConfig.url}/${locale}/product/${slug}/`,
+    // 2026-06-24 修复: reviewCount 必须是 Integer, 不能 .toString() (同上 generateProductJsonLd 的 bug)
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: rating.toString(),
-      reviewCount: reviewCount.toString(),
+      reviewCount: reviewCount,
       bestRating: '5',
       worstRating: '1',
     },
