@@ -22,11 +22,14 @@ interface CreateSessionRequest {
   currency: string;
   file_url?: string;
   /**
-   * 2026-06-25: 支付方式
-   * - 'airwallex' (默认): Airwallex 卡支付 Drop-in
-   * - 'bank_transfer': 银行电汇 (DBS HK Airwallex 收款账户)
+   * 2026-06-25 Phase 0 重构: 支付方式
+   * - 'bank_transfer' (主推): 银行电汇 (DBS HK 收款账户,海外/B2B 客户)
+   * - 'wechat_qr' (国内 B2B 兜底): 微信扫码,人民币结算
+   * - 'alipay_qr' (国内 B2B 兜底): 支付宝扫码,人民币结算
+   * - 'airwallex' (deprecated): 卡支付 — Airwallex 收单深圳主体无法开通,默认走银行电汇
+   * - 'paypal' (未来): PayPal 审核通过后启用
    */
-  payment_method?: 'airwallex' | 'bank_transfer';
+  payment_method?: 'bank_transfer' | 'wechat_qr' | 'alipay_qr' | 'airwallex' | 'paypal';
 }
 
 interface WireTransferInfo {
@@ -173,7 +176,8 @@ export async function onRequestPost(context: {
 
   try {
     const body: CreateSessionRequest = await context.request.json();
-    const { quote_data, amount, currency, file_url, payment_method = 'airwallex' } = body;
+    // 2026-06-25: 默认改 'bank_transfer' (Airwallex 卡支付通道下线)
+    const { quote_data, amount, currency, file_url, payment_method = 'bank_transfer' } = body;
 
     if (typeof amount !== 'number' || amount <= 0) {
       return new Response(
@@ -189,9 +193,10 @@ export async function onRequestPost(context: {
       );
     }
 
-    if (payment_method !== 'airwallex' && payment_method !== 'bank_transfer') {
+    const VALID_METHODS = ['bank_transfer', 'wechat_qr', 'alipay_qr', 'airwallex', 'paypal'] as const;
+    if (!(VALID_METHODS as readonly string[]).includes(payment_method)) {
       return new Response(
-        JSON.stringify({ error: `Invalid payment_method. Must be 'airwallex' or 'bank_transfer'.` }),
+        JSON.stringify({ error: `Invalid payment_method. Must be one of: ${VALID_METHODS.join(', ')}.` }),
         { status: 400, headers: { ...corsHeaders, 'Content-Type': 'application/json' } }
       );
     }
@@ -207,6 +212,43 @@ export async function onRequestPost(context: {
 
     const supabase = createClient(supabaseUrl, supabaseServiceKey);
     const orderId = crypto.randomUUID();
+
+    // ============================================================
+    // 2026-06-25 Phase 0: 微信/支付宝 QR 分支 (国内 B2B 客户,人民币结算)
+    //   流程: 落库 + 返回 orderId,前端跳 OrderConfirmation 显示 QR 码
+    //   支付确认: 客户扫码后支付宝/微信回调 → 客服后台人工对账 (暂不接自动回调)
+    // ============================================================
+    if (payment_method === 'wechat_qr' || payment_method === 'alipay_qr') {
+      // QR 支付走人民币,前端应根据 paymentMethod 在 UI 上提示客户扫码
+      const { error: insertError } = await supabase.from('orders').insert({
+        id: orderId,
+        quote_data: quote_data,
+        file_url: file_url || null,
+        amount,
+        currency: 'CNY', // QR 支付强制 CNY 结算 (无换汇)
+        status: 'pending',
+        payment_status: 'pending',
+        payment_method: payment_method,
+        airwallex_payment_intent_id: null,
+      });
+
+      if (insertError) {
+        throw new Error(`Failed to create QR order: ${insertError.message}`);
+      }
+
+      return new Response(
+        JSON.stringify({
+          clientSecret: null,
+          paymentIntentId: null,
+          orderId,
+          paymentMethod: payment_method,
+        }),
+        {
+          status: 200,
+          headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+        }
+      );
+    }
 
     // ============================================================
     // 2026-06-25: 银行转账分支 (不调 Airwallex,落库即返回)

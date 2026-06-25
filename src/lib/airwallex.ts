@@ -22,11 +22,14 @@ export interface CreatePaymentSessionParams {
   currency: string;
   file_url?: string;
   /**
-   * 2026-06-25: 支付方式
-   * - 'airwallex' (默认): Airwallex 卡支付 Drop-in
-   * - 'bank_transfer': 银行电汇 (DBS HK Airwallex 收款账户)
+   * 2026-06-25 Phase 0 重构: 支付方式
+   * - 'bank_transfer' (默认): 银行电汇 (DBS HK 收款账户,海外/B2B 客户)
+   * - 'wechat_qr' (国内 B2B 兜底): 微信扫码,人民币结算
+   * - 'alipay_qr' (国内 B2B 兜底): 支付宝扫码,人民币结算
+   * - 'airwallex' (deprecated): 卡支付 — Airwallex 收单深圳主体无法开通
+   * - 'paypal' (未来): PayPal 审核通过后启用
    */
-  payment_method?: 'airwallex' | 'bank_transfer';
+  payment_method?: 'bank_transfer' | 'wechat_qr' | 'alipay_qr' | 'airwallex' | 'paypal';
 }
 
 /**
@@ -50,16 +53,21 @@ export interface WireTransferInfo {
 }
 
 export interface CreatePaymentSessionResponse {
-  /** Airwallex 卡支付: payment intent client secret | 银行转账: null */
+  /** Airwallex 卡支付: payment intent client secret | 银行转账/QR: null */
   clientSecret: string | null;
-  /** Airwallex 卡支付: payment intent id | 银行转账: null */
+  /** Airwallex 卡支付: payment intent id | 银行转账/QR: null */
   paymentIntentId: string | null;
   orderId: string;
   /** 实际选择的支付方式 (后端回传,前端用来路由) */
-  paymentMethod: 'airwallex' | 'bank_transfer';
+  paymentMethod: 'bank_transfer' | 'wechat_qr' | 'alipay_qr' | 'airwallex' | 'paypal';
   /** 仅银行转账时有值 */
   wireTransferInfo?: WireTransferInfo;
 }
+
+// 2026-06-25 Phase 0 重构: Airwallex 卡支付通道下线 (深圳主体无法开通 Airwallex 收单),
+//   线上支付改走 PayPal (审核中) + 银行电汇 / 微信 / 支付宝。
+//   保留本文件以保持向后兼容,deprecated 接口在调用方替换为 wire-transfer 流程。
+// TODO: PayPal 审核通过后,删除 airwallex-payment-elements 依赖 + 此文件。
 
 const PAYMENT_API_URL = process.env.NEXT_PUBLIC_PAYMENT_API_URL || '/api/payment';
 const PAYMENT_SESSION_API_URL =

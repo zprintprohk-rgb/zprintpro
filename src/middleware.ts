@@ -248,7 +248,7 @@ async function thisResponseWithAbHeaders(request: NextRequest) {
   response.headers.set('Referrer-Policy', 'strict-origin-when-cross-origin');
   response.headers.set(
     'Content-Security-Policy',
-    "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://checkout.airwallex.com https://plausible.io; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://*.supabase.co https://api.airwallex.com https://plausible.io; frame-src https://checkout.airwallex.com;"
+    "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://plausible.io; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self' https://*.supabase.co https://plausible.io; frame-src 'self';"
   );
 
   // A/B 分组：Edge Config 优先，未配置时由 client getAbVariant 走 cookie

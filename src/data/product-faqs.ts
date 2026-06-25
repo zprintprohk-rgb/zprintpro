@@ -559,9 +559,9 @@ export const generalProductFAQs: FAQItem[] = [
       'ja': '支払い方法は何が利用できますか？',
     },
     answer: {
-      'zh-hk': '智印雲支援 Airwallex 多幣種結算：港幣 / 美元 / 日圓 / 人民幣，Visa / Mastercard / 銀聯 / FPS / PayMe / 支付寶香港 / 微信支付。企業客戶可申請 NET 30 月結賬期。',
-      'en': 'ZprintPro supports Airwallex multi-currency settlement: HKD / USD / JPY / CNY, with Visa / Mastercard / UnionPay / FPS / PayMe / Alipay HK / WeChat Pay. Corporate accounts can apply for NET 30 monthly billing.',
-      'ja': 'ZprintPro は Airwallex マルチ通貨決済対応：HKD / USD / JPY / CNY、Visa / Mastercard / UnionPay / FPS / PayMe / Alipay HK / WeChat Pay。法人顧客は NET 30 月締請求対応可。',
+      'zh-hk': '智印雲支援多幣種結算（港幣 / 美元 / 日圓 / 人民幣），付款方式涵蓋銀行電匯、微信、支付寶、PayPal。企業客戶可申請 NET 30 月結賬期。',
+      'en': 'ZprintPro supports multi-currency settlement (HKD / USD / JPY / CNY) via bank wire, WeChat Pay, Alipay, and PayPal. Corporate accounts can apply for NET 30 monthly billing.',
+      'ja': 'ZprintPro はマルチ通貨決済対応（HKD / USD / JPY / CNY）、銀行振込・微信支付・支付宝・PayPal がご利用可能。法人顧客は NET 30 月締請求対応可。',
     },
   },
   {

@@ -1,7 +1,7 @@
 import { createClient } from '@supabase/supabase-js';
 
 /**
- * 2026-06-25: 订单确认邮件 endpoint
+ * 2026-06-25 Phase 0: 订单确认邮件 endpoint
  *
  * 触发场景:
  *   - checkout 完成后 (前端可主动调)
@@ -10,8 +10,9 @@ import { createClient } from '@supabase/supabase-js';
  * Request body: { orderId: string, locale: 'zh-hk' | 'en' | 'ja' }
  *
  * 邮件内容根据 orders.payment_method 分支:
- *   - 'airwallex': 简短确认 + "我们正在处理您的支付"
- *   - 'bank_transfer': 附 DBS HK 银行账户 + 订单参考号 + 客服 1 工作日确认
+ *   - 'bank_transfer': 附 DBS HK 银行账户 + 订单参考号 + 客服 1 工作日确认 (主流程)
+ *   - 'wechat_qr' / 'alipay_qr': 简短确认 + 微信/支付宝已支付 + 客服 1 工作日确认
+ *   - 'airwallex' (deprecated): 降级为银行电汇邮件,不再走信用卡支付
  */
 
 interface Env {
@@ -56,8 +57,11 @@ interface MailLabels {
   totalAmount: string;
   amount: (currency: string, value: string) => string;
   paymentMethod: string;
-  // airwallex
-  airwallexNotice: string;
+  // 2026-06-25: 移除 airwallexNotice 字段,所有非银行转账订单 (wechat_qr / alipay_qr / 历史 airwallex) 都走简化邮件
+  /** @deprecated 不再发送 */
+  airwallexNotice?: string;
+  // QR 支付 (微信/支付宝国内客户)
+  qrPaidNotice: string;
   // bank transfer
   bankTitle: string;
   bankSubtitle: string;
@@ -81,7 +85,8 @@ const labels: Record<AllowedLocale, MailLabels> = {
     totalAmount: '應付總額',
     amount: (currency, value) => `${currency} $${value}`,
     paymentMethod: '付款方式',
-    airwallexNotice: '您已選擇信用卡線上支付。請於 30 分鐘內完成付款，否則訂單將被自動取消。',
+    airwallexNotice: '(deprecated — 不再使用)',
+    qrPaidNotice: '我們已收到您的微信支付訂單通知。請將支付截圖電郵至 zprintpro@outlook.com 以便對賬。客服將於 1 個工作天內確認收款並開始處理訂單。',
     bankTitle: '銀行電匯收款信息',
     bankSubtitle: '請於 7 個工作天內完成電匯，並將水單電郵至 zprintpro@outlook.com',
     bankName: '收款銀行',
@@ -102,7 +107,8 @@ const labels: Record<AllowedLocale, MailLabels> = {
     totalAmount: 'Total Amount',
     amount: (currency, value) => `${currency} $${value}`,
     paymentMethod: 'Payment Method',
-    airwallexNotice: 'You have selected credit card payment. Please complete the payment within 30 minutes, otherwise the order will be automatically cancelled.',
+    airwallexNotice: '(deprecated — no longer used)',
+    qrPaidNotice: 'We have received your WeChat Pay order notification. Please email the payment screenshot to zprintpro@outlook.com for reconciliation. Our team will confirm receipt and start processing your order within 1 business day.',
     bankTitle: 'Bank Wire Transfer Information',
     bankSubtitle: 'Please complete the wire transfer within 7 business days and email the receipt to zprintpro@outlook.com',
     bankName: 'Receiving Bank',
@@ -123,7 +129,8 @@ const labels: Record<AllowedLocale, MailLabels> = {
     totalAmount: 'お支払金額',
     amount: (currency, value) => `${currency} $${value}`,
     paymentMethod: 'お支払方法',
-    airwallexNotice: 'クレジットカード決済を選択されました。30分以内に決済を完了してください。完了しない場合、注文は自動的にキャンセルされます。',
+    airwallexNotice: '(deprecated — 廃止)',
+    qrPaidNotice: '微信支付のご注文通知を受領いたしました。照合のため、お支払いスクリーンショットを zprintpro@outlook.com までお送りください。担当者が1営業日以内に確認し、注文処理を開始いたします。',
     bankTitle: '銀行振込先情報',
     bankSubtitle: '7営業日以内に振込を完了し、振込控えを zprintpro@outlook.com までお送りください',
     bankName: '受取銀行',
@@ -153,6 +160,40 @@ function formatAmount(amountInSmallestUnit: number, currency: string): string {
   return value.toFixed(currency === 'JPY' ? 0 : 2);
 }
 
+function buildQrEmail(order: OrderRecord, l: MailLabels, method: 'wechat_qr' | 'alipay_qr'): string {
+  const name = escapeHtml(order.customer_name || 'Customer');
+  const orderNumber = escapeHtml(order.order_number || order.id);
+  const currency = escapeHtml(order.currency);
+  const amount = formatAmount(order.amount, order.currency);
+  const methodLabel = method === 'wechat_qr' ? (l as any).wechat || 'WeChat Pay' : (l as any).alipay || 'Alipay';
+  return `
+    <div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;color:#333">
+      <div style="background:linear-gradient(135deg,#2873F5,#1E5FD1);padding:24px;border-radius:12px 12px 0 0;color:white">
+        <h2 style="margin:0;font-size:20px">${l.subject}</h2>
+      </div>
+      <div style="background:#fff;padding:24px;border:1px solid #e5e7eb;border-top:none;border-radius:0 0 12px 12px">
+        <p>${l.greeting(name)}</p>
+        <p>${l.intro}</p>
+        <table style="width:100%;border-collapse:collapse;font-size:15px;margin:16px 0">
+          <tr style="border-bottom:1px solid #f3f4f6"><td style="padding:8px 0;color:#6b7280">${l.orderNumber}</td><td style="padding:8px 0;font-family:monospace;font-weight:bold">${orderNumber}</td></tr>
+          <tr style="border-bottom:1px solid #f3f4f6"><td style="padding:8px 0;color:#6b7280">${l.paymentMethod}</td><td style="padding:8px 0">${escapeHtml(methodLabel)} (QR)</td></tr>
+          <tr><td style="padding:8px 0;color:#6b7280">${l.totalAmount}</td><td style="padding:8px 0;font-weight:bold;color:#F87314">${l.amount(currency, amount)}</td></tr>
+        </table>
+        <div style="margin-top:16px;padding:12px;background:#FEF3C7;border-radius:8px;border:1px solid #FCD34D">
+          <p style="margin:0;font-size:14px;color:#78350F">${l.qrPaidNotice}</p>
+        </div>
+        <p style="margin-top:24px;font-size:14px;color:#6b7280">${l.contactCta}: <a href="mailto:zprintpro@outlook.com" style="color:#2873F5">zprintpro@outlook.com</a> | <a href="tel:+8619880851334" style="color:#2873F5">+86 198 8085 1334</a></p>
+        <p style="margin-top:24px;font-size:14px">${l.signature}</p>
+      </div>
+    </div>
+  `;
+}
+
+/**
+ * 2026-06-25: Airwallex 卡支付通道下线后,此函数保留为通用"占位"邮件,
+ *   实际不会再发送 (因为 payment_method !== 'bank_transfer' && !== 'qr' 的订单不会出现)。
+ *   保留代码以防历史订单追溯。
+ */
 function buildAirwallexEmail(order: OrderRecord, l: MailLabels): string {
   const name = escapeHtml(order.customer_name || 'Customer');
   const orderNumber = escapeHtml(order.order_number || order.id);
@@ -168,12 +209,9 @@ function buildAirwallexEmail(order: OrderRecord, l: MailLabels): string {
         <p>${l.intro}</p>
         <table style="width:100%;border-collapse:collapse;font-size:15px;margin:16px 0">
           <tr style="border-bottom:1px solid #f3f4f6"><td style="padding:8px 0;color:#6b7280">${l.orderNumber}</td><td style="padding:8px 0;font-family:monospace;font-weight:bold">${orderNumber}</td></tr>
-          <tr style="border-bottom:1px solid #f3f4f6"><td style="padding:8px 0;color:#6b7280">${l.paymentMethod}</td><td style="padding:8px 0">Credit Card / Airwallex</td></tr>
+          <tr style="border-bottom:1px solid #f3f4f6"><td style="padding:8px 0;color:#6b7280">${l.paymentMethod}</td><td style="padding:8px 0">${escapeHtml((l as any).paymentMethodLegacy || 'Pending verification')}</td></tr>
           <tr><td style="padding:8px 0;color:#6b7280">${l.totalAmount}</td><td style="padding:8px 0;font-weight:bold;color:#F87314">${l.amount(currency, amount)}</td></tr>
         </table>
-        <div style="margin-top:16px;padding:12px;background:#FFF7ED;border-radius:8px;border:1px solid #FED7AA">
-          <p style="margin:0;font-size:14px;color:#9A3412">${l.airwallexNotice}</p>
-        </div>
         <p style="margin-top:24px;font-size:14px;color:#6b7280">${l.contactCta}: <a href="mailto:zprintpro@outlook.com" style="color:#2873F5">zprintpro@outlook.com</a> | <a href="tel:+8619880851334" style="color:#2873F5">+86 198 8085 1334</a></p>
         <p style="margin-top:24px;font-size:14px">${l.signature}</p>
       </div>
@@ -285,10 +323,15 @@ export async function onRequestPost(context: { request: Request; env: Env }): Pr
     }
 
     const labelsForLocale = labels[normalizedLocale];
-    const html =
-      order.payment_method === 'bank_transfer'
-        ? buildBankTransferEmail(order, labelsForLocale)
-        : buildAirwallexEmail(order, labelsForLocale);
+    let html: string;
+    if (order.payment_method === 'bank_transfer') {
+      html = buildBankTransferEmail(order, labelsForLocale);
+    } else if (order.payment_method === 'wechat_qr' || order.payment_method === 'alipay_qr') {
+      html = buildQrEmail(order, labelsForLocale, order.payment_method);
+    } else {
+      // 历史 airwallex 订单 / 未知 payment_method → 降级为简化邮件
+      html = buildAirwallexEmail(order, labelsForLocale);
+    }
 
     const resendBody = {
       from: 'ZprintPro <noreply@zprintpro.com>',

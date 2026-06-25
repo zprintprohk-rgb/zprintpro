@@ -147,7 +147,6 @@ export default function RootLayout({
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://api.airwallex.com" />
         <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
         {/* 2026-06-17 Per-locale PWA manifest — 3 locale 分 manifest,Chrome 自动按 lang 匹配 */}
         <link rel="manifest" href={`/manifest.${safeLocale}.json`} />

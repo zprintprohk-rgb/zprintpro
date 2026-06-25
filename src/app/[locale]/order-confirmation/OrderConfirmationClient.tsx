@@ -5,8 +5,8 @@ import Link from 'next/link';
 import { useSearchParams } from 'next/navigation';
 import { useState, useEffect } from 'react';
 import { Locale } from '@/lib/seo';
-import { CheckCircle2, Copy, Mail, Phone, MapPin, ShoppingBag, AlertCircle, ChevronUp, CreditCard, Clock, XCircle } from 'lucide-react';
-import { AirwallexDropIn } from '@/components/payment/AirwallexDropIn';
+import { CheckCircle2, Copy, Mail, Phone, MapPin, ShoppingBag, AlertCircle, Clock, XCircle } from 'lucide-react';
+// 2026-06-25 Phase 0: Airwallex 卡支付下线,移除 AirwallexDropIn 引用
 import { BankTransferInfo, type WireTransferInfo } from '@/components/payment/BankTransferInfo';
 import type { SupabaseClient } from '@supabase/supabase-js';
 
@@ -21,11 +21,12 @@ interface DbOrder {
   status: OrderStatus;
   amount: number;
   currency: string;
+  /** @deprecated 2026-06-25 Airwallex 卡支付下线,字段保留兼容 */
   airwallex_payment_intent_id: string | null;
   quote_data: Record<string, unknown>;
   created_at: string;
-  // 2026-06-25: 银行转账字段
-  payment_method?: 'airwallex' | 'bank_transfer' | 'wechat_qr' | 'alipay_qr' | null;
+  // 2026-06-25 Phase 0: 银行电汇 / 微信 / 支付宝 三选一
+  payment_method?: 'bank_transfer' | 'wechat_qr' | 'alipay_qr' | 'airwallex' | null;
   payment_status?: 'pending' | 'awaiting_wire_transfer' | 'paid' | 'failed' | 'refunded';
   order_number?: string;
   wire_transfer_info?: WireTransferInfo | null;
@@ -220,8 +221,6 @@ export default function OrderConfirmationClient({ params }: OrderConfirmationPag
   const [dbOrder, setDbOrder] = useState<DbOrder | null>(null);
   const [localOrder, setLocalOrder] = useState<any>(null);
   const [loading, setLoading] = useState(true);
-  const [showQr, setShowQr] = useState(false);
-  const [showPayment, setShowPayment] = useState(false);
   const [copied, setCopied] = useState(false);
 
   /* ── try Supabase first, then fallback to localStorage ── */
@@ -477,83 +476,18 @@ export default function OrderConfirmationClient({ params }: OrderConfirmationPag
                       )}
                     </div>
                   </>
-                ) : (
-                  /* 原有: Airwallex 在线支付 + 微信/支付宝 QR 备用 */
+                ) : dbOrder?.payment_method === 'wechat_qr' ? (
+                  /* 2026-06-25 Phase 0: 微信支付 QR */
                   <>
-                    <h2 className="font-bold text-[#333333] mb-3">{t.paymentTitle}</h2>
-
-                    {/* Online Payment Option */}
-                    {dbOrder?.airwallex_payment_intent_id && (dbOrder.quote_data?._airwallex as any)?.client_secret && !showPayment && (
-                      <button
-                        onClick={() => setShowPayment(true)}
-                        className="w-full py-3 mb-4 rounded-lg bg-[#2873F5] text-white hover:bg-[#1E5FD1] transition-colors font-medium flex items-center justify-center gap-2"
-                      >
-                        <CreditCard className="w-4 h-4" />
-                        {t.payOnline}
-                      </button>
-                    )}
-
-                    {showPayment && dbOrder?.airwallex_payment_intent_id && (dbOrder.quote_data?._airwallex as any)?.client_secret && (
-                      <div className="mb-4">
-                        <AirwallexDropIn
-                          paymentIntentId={dbOrder.airwallex_payment_intent_id}
-                          clientSecret={(dbOrder.quote_data._airwallex as any).client_secret}
-                          onSuccess={() => window.location.reload()}
-                          onError={(err) => alert(err.message)}
-                        />
-                        <button
-                          onClick={() => setShowPayment(false)}
-                          className="mt-2 w-full py-2 text-sm text-gray-500 hover:text-gray-700"
-                        >
-                          Cancel
-                        </button>
-                      </div>
-                    )}
-
-                    {/* Manual QR Fallback */}
-                    <div className="mt-2">
-                      <p className="text-sm text-gray-500 mb-3">{t.paymentDesc}</p>
-                      <div className="space-y-3">
-                        {!showQr ? (
-                          <button onClick={() => setShowQr(true)} className="w-full py-3 rounded-lg border-2 border-dashed border-[#2873F5] text-[#2873F5] hover:bg-[#2873F5]/5 transition-colors font-medium flex items-center justify-center gap-2">
-                            <ShoppingBag className="w-4 h-4" />
-                            {t.showQr}
-                          </button>
-                        ) : (
-                          <div className="space-y-3 animate-in fade-in duration-300">
-                            {isZh ? (
-                              <div className="grid grid-cols-2 gap-3">
-                                <div className="bg-white rounded-lg border border-gray-200 p-3 text-center">
-                                  <p className="text-xs text-gray-500 mb-2">{t.wechat}</p>
-                                  <div className="aspect-square bg-gray-50 rounded overflow-hidden">
-                                    <Image src="/images/payment-wechat.webp" alt="WeChat" width={200} height={200} className="w-full h-full object-contain" unoptimized loading="lazy" decoding="async" />
-                                  </div>
-                                </div>
-                                <div className="bg-white rounded-lg border border-gray-200 p-3 text-center">
-                                  <p className="text-xs text-gray-500 mb-2">{t.alipay}</p>
-                                  <div className="aspect-square bg-gray-50 rounded overflow-hidden">
-                                    <Image src="/images/payment-alipay.webp" alt="Alipay" width={200} height={200} className="w-full h-full object-contain" unoptimized loading="lazy" decoding="async" />
-                                  </div>
-                                </div>
-                              </div>
-                            ) : (
-                              <div className="bg-white rounded-lg border border-gray-200 p-4 text-center">
-                                <p className="text-sm font-semibold text-gray-700 mb-1">{t.flash}</p>
-                                <p className="text-xs text-gray-500 mb-3">{locale === 'ja' ? '推奨支払方法' : 'Recommended'}</p>
-                                <div className="aspect-square bg-gray-50 rounded overflow-hidden max-w-[240px] mx-auto">
-                                  <Image src="/images/payment-flash.webp" alt="Flash Receipt" width={240} height={240} className="w-full h-full object-contain" unoptimized loading="lazy" decoding="async" />
-                                </div>
-                              </div>
-                            )}
-                            <button onClick={() => setShowQr(false)} className="w-full py-2 text-sm text-gray-500 hover:text-gray-700 transition-colors flex items-center justify-center gap-1">
-                              <ChevronUp className="w-4 h-4" /> {t.hideQr}
-                            </button>
-                          </div>
-                        )}
+                    <h2 className="font-bold text-[#333333] mb-3 flex items-center gap-2">
+                      <span className="text-[#07C160]">💬</span> {t.wechat}
+                    </h2>
+                    <div className="bg-white rounded-lg border-2 border-[#07C160] p-4 text-center">
+                      <p className="text-sm font-semibold text-gray-700 mb-3">{t.paymentDesc}</p>
+                      <div className="aspect-square bg-gray-50 rounded overflow-hidden max-w-[240px] mx-auto">
+                        <Image src="/images/payment-wechat.webp" alt="WeChat Pay" width={240} height={240} className="w-full h-full object-contain" unoptimized loading="lazy" decoding="async" />
                       </div>
                     </div>
-
-                    {/* Payment Notice */}
                     <div className="mt-4 p-3 bg-amber-50 rounded-lg border border-amber-100">
                       <h3 className="font-semibold text-amber-800 text-xs mb-2">{t.paymentNotice}</h3>
                       <ul className="space-y-1.5">
@@ -565,6 +499,66 @@ export default function OrderConfirmationClient({ params }: OrderConfirmationPag
                         ))}
                       </ul>
                     </div>
+                  </>
+                ) : dbOrder?.payment_method === 'alipay_qr' ? (
+                  /* 2026-06-25 Phase 0: 支付宝 QR */
+                  <>
+                    <h2 className="font-bold text-[#333333] mb-3 flex items-center gap-2">
+                      <span className="text-[#1677FF]">📱</span> {t.alipay}
+                    </h2>
+                    <div className="bg-white rounded-lg border-2 border-[#1677FF] p-4 text-center">
+                      <p className="text-sm font-semibold text-gray-700 mb-3">{t.paymentDesc}</p>
+                      <div className="aspect-square bg-gray-50 rounded overflow-hidden max-w-[240px] mx-auto">
+                        <Image src="/images/payment-alipay.webp" alt="Alipay" width={240} height={240} className="w-full h-full object-contain" unoptimized loading="lazy" decoding="async" />
+                      </div>
+                    </div>
+                    <div className="mt-4 p-3 bg-amber-50 rounded-lg border border-amber-100">
+                      <h3 className="font-semibold text-amber-800 text-xs mb-2">{t.paymentNotice}</h3>
+                      <ul className="space-y-1.5">
+                        {t.paymentItems.map((item, i) => (
+                          <li key={i} className="flex items-start gap-1.5 text-xs text-amber-700">
+                            <AlertCircle className="w-3 h-3 mt-0.5 flex-shrink-0" />
+                            <span>{item}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </>
+                ) : (
+                  /* Fallback: 历史 airwallex 订单 / 未知 payment_method → 银行电汇 (降级) */
+                  <>
+                    <h2 className="font-bold text-[#333333] mb-3">{t.bankInfoTitle}</h2>
+                    {dbOrder?.wire_transfer_info ? (
+                      <BankTransferInfo
+                        wireTransferInfo={dbOrder.wire_transfer_info}
+                        orderNumber={dbOrder.order_number || dbOrder.id}
+                        amount={(dbOrder.amount || 0) / 100}
+                        currency={dbOrder.currency || 'HKD'}
+                        t={{
+                          title: t.bankInfoTitle,
+                          subtitle: t.bankInfoSubtitle,
+                          bankName: t.bankName,
+                          accountNumber: t.accountNumber,
+                          accountHolder: t.accountHolder,
+                          swiftCode: t.swiftCode,
+                          recipientAddress: t.recipientAddress,
+                          reference: t.reference,
+                          referenceHint: t.referenceHint,
+                          amountLabel: t.amountLabel,
+                          copy: t.copy,
+                          copied: t.copied,
+                          notice: t.bankNotice,
+                        }}
+                      />
+                    ) : (
+                      <p className="text-sm text-gray-500">
+                        {isZh
+                          ? '請聯絡客服索取銀行賬戶信息。'
+                          : locale === 'en'
+                          ? 'Please contact customer service for bank account information.'
+                          : 'カスタマーサービスまでご連絡ください。'}
+                      </p>
+                    )}
                   </>
                 )
               ) : (

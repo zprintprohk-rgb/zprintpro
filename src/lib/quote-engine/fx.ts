@@ -19,7 +19,10 @@
 import type { Currency, Market } from './markets';
 
 export type RateSource = 'live' | 'locked_24h' | 'forward_30d';
-export type PaymentChannel = 'airwallex' | 'paypal' | 'bank_wire' | 'airwallex_locked';
+// 2026-06-25 Phase 0: Airwallex 卡支付下线(深圳主体无法开通),默认改为 'bank_wire'
+//   保留 'airwallex' / 'airwallex_locked' 用于历史订单的 FX 成本估算
+//   PayPal 审核通过后,'paypal' 将成为小单 B2C 默认
+export type PaymentChannel = 'bank_wire' | 'paypal' | 'airwallex' | 'airwallex_locked';
 
 /** 支付渠道费率 (实测 2026 Q1) */
 const PAYMENT_FEES: Record<PaymentChannel, { platformFeeRate: number; fxSpreadRate: number; fixedFeeUSD: number }> = {
@@ -171,7 +174,7 @@ export function calculateFX(input: {
   taxAmountLocal?: number;
   shippingCostHKD?: number;
 }): FXQuote {
-  const ch = input.paymentChannel || 'airwallex';
+  const ch = input.paymentChannel || 'bank_wire';
   const src = input.rateSource || 'live';
   const channel = ch === 'airwallex_locked' ? 'airwallex_locked' : ch;
   const fees = PAYMENT_FEES[channel];
@@ -256,13 +259,15 @@ export function calculateFX(input: {
   };
 }
 
-/** 选择最优支付渠道 (按 fromAmount + 期望速度) */
+/** 选择最优支付渠道 (按 fromAmount + 期望速度)
+ * 2026-06-25: Airwallex 卡支付下线,默认走 bank_wire
+ *   PayPal 审核通过后,小单 (instant) 可改回 paypal
+ */
 export function bestPaymentChannel(input: {
   fromAmount: number;
   speed: 'instant' | '24h' | '30d';
 }): PaymentChannel {
-  if (input.speed === '30d') return 'airwallex_locked';
-  if (input.fromAmount > 5000) return 'airwallex_locked'; // 大单锁汇
-  if (input.speed === 'instant') return 'airwallex';
-  return 'airwallex';
+  if (input.fromAmount > 5000) return 'bank_wire'; // 大单走电汇 (低费率 + 大额合规)
+  if (input.speed === 'instant') return 'bank_wire'; // instant 默认电汇(等 PayPal 审核过再切)
+  return 'bank_wire';
 }

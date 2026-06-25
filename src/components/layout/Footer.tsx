@@ -22,7 +22,7 @@ interface FooterProps {
 
 const translations = {
   'zh-hk': {
-    companyDesc: '智印雲 ZprintPro 是全球智能印刷定制平台，提供AI智能報價、在線文件上傳、Airwallex安全支付。從貼紙到包裝，30秒報價，72小時全球交付。',
+    companyDesc: '智印雲 ZprintPro 是全球智能印刷定制平台，提供AI智能報價、在線文件上傳、安全結算。支援銀行電匯、微信、支付寶、PayPal。從貼紙到包裝，30秒報價，72小時全球交付。',
     serviceArea: '全球跨境印刷服務',
     phone: '+86 198 8085 1334',
     email: 'zprintpro@outlook.com',
@@ -76,7 +76,7 @@ const translations = {
     copyright: '© 2026 智印雲 ZprintPro. 保留所有權利。',
   },
   en: {
-    companyDesc: 'ZprintPro is a global smart printing platform offering AI instant quotes, online file upload, and Airwallex secure payment. From stickers to packaging, get a quote in 30 seconds, delivered globally in 72 hours.',
+    companyDesc: 'ZprintPro is a global smart printing platform offering AI instant quotes, online file upload, and secure settlement via bank wire, WeChat Pay, Alipay, and PayPal. From stickers to packaging, get a quote in 30 seconds, delivered globally in 72 hours.',
     serviceArea: 'Global cross-border printing services',
     phone: '+86 198 8085 1334',
     email: 'zprintpro@outlook.com',
@@ -130,7 +130,7 @@ const translations = {
     copyright: '© 2026 ZprintPro. All rights reserved.',
   },
   ja: {
-    companyDesc: 'ZprintProはグローバルスマート印刷プラットフォームです。AI即時見積、オンラインファイルアップロード、Airwallex安全決済を提供。ステッカーからパッケージングまで、30秒で見積もり、72時間でグローバル配送。',
+    companyDesc: 'ZprintProはグローバルスマート印刷プラットフォームです。AI即時見積、オンラインファイルアップロード、銀行振込・微信支付・支付宝・PayPal決済を提供。ステッカーからパッケージングまで、30秒で見積もり、72時間でグローバル配送。',
     serviceArea: 'グローバル越境印刷サービス',
     phone: '+86 198 8085 1334',
     email: 'zprintpro@outlook.com',

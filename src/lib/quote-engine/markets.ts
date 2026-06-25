@@ -38,7 +38,7 @@ export interface Market {
   targetMargin: number;
   /** HKD 到本币的汇率 (1 HKD = X 本币) */
   exchangeRate: number;
-  /** 支付方式 (Airwallex / PayPal / Konbini / FPS / PayMe) */
+  /** 支付方式 (Wire-XXX / PayPal / WeChat / Alipay / Konbini / FPS / PayMe) */
   paymentMethods: string[];
   /** 汇率风险溢价 (0.5%-1.5%) - 客户付款时 vs 工厂结算时的波动 */
   fxRiskBuffer: number;
@@ -72,7 +72,7 @@ export const MARKETS: Record<MarketCode, Market> = {
     minimumOrder: 80,
     targetMargin: 0.25,
     exchangeRate: EXCHANGE_RATES.HKD,
-    paymentMethods: ['Airwallex-HKD', 'PayMe', 'FPS', 'Alipay-HK'],
+    paymentMethods: ['Wire-HKD', 'PayMe', 'FPS', 'Alipay-HK'],
     fxRiskBuffer: 0.005, // 香港本地免换汇
     displayName: '香港 / Hong Kong',
   },
@@ -88,7 +88,7 @@ export const MARKETS: Record<MarketCode, Market> = {
     minimumOrder: 15, // USD 15 起步
     targetMargin: 0.45, // 高利润
     exchangeRate: EXCHANGE_RATES.USD,
-    paymentMethods: ['Airwallex-USD', 'PayPal', 'ApplePay'],
+    paymentMethods: ['Wire-USD', 'PayPal', 'ApplePay'],
     fxRiskBuffer: 0.012, // USD/HKD 高波动 + 大市场
     displayName: 'United States',
   },
@@ -104,7 +104,7 @@ export const MARKETS: Record<MarketCode, Market> = {
     minimumOrder: 12,
     targetMargin: 0.35,
     exchangeRate: EXCHANGE_RATES.GBP,
-    paymentMethods: ['Airwallex-GBP', 'PayPal'],
+    paymentMethods: ['Wire-GBP', 'PayPal'],
     fxRiskBuffer: 0.015, // GBP 波动较大 + VAT 风险
     displayName: 'United Kingdom',
   },
@@ -120,7 +120,7 @@ export const MARKETS: Record<MarketCode, Market> = {
     minimumOrder: 20,
     targetMargin: 0.35,
     exchangeRate: EXCHANGE_RATES.AUD,
-    paymentMethods: ['Airwallex-AUD', 'PayPal', 'Afterpay'],
+    paymentMethods: ['Wire-AUD', 'PayPal', 'Afterpay'],
     fxRiskBuffer: 0.013,
     displayName: 'Australia',
   },
@@ -136,7 +136,7 @@ export const MARKETS: Record<MarketCode, Market> = {
     minimumOrder: 1500, // JPY
     targetMargin: 0.30,
     exchangeRate: EXCHANGE_RATES.JPY,
-    paymentMethods: ['Airwallex-JPY', 'Konbini', '银行振込'],
+    paymentMethods: ['Wire-JPY', 'Konbini', '银行振込'],
     fxRiskBuffer: 0.010, // JPY 相对稳定
     displayName: '日本',
   },
@@ -152,7 +152,7 @@ export const MARKETS: Record<MarketCode, Market> = {
     minimumOrder: 18,
     targetMargin: 0.35,
     exchangeRate: EXCHANGE_RATES.CAD,
-    paymentMethods: ['Airwallex-CAD', 'PayPal'],
+    paymentMethods: ['Wire-CAD', 'PayPal'],
     fxRiskBuffer: 0.012,
     displayName: 'Canada',
   },
@@ -168,7 +168,7 @@ export const MARKETS: Record<MarketCode, Market> = {
     minimumOrder: 60,
     targetMargin: 0.20,
     exchangeRate: EXCHANGE_RATES.CNY,
-    paymentMethods: ['WeChat-Pay', 'Alipay-CN', 'Airwallex-CNY'],
+    paymentMethods: ['WeChat-Pay', 'Alipay-CN', 'Wire-CNY'],
     fxRiskBuffer: 0.008, // CNY/HKD 稳定
     displayName: '中国大陆',
   },
@@ -184,7 +184,7 @@ export const MARKETS: Record<MarketCode, Market> = {
     minimumOrder: 20,
     targetMargin: 0.30,
     exchangeRate: EXCHANGE_RATES.SGD,
-    paymentMethods: ['Airwallex-SGD', 'PayPal', 'PayNow'],
+    paymentMethods: ['Wire-SGD', 'PayPal', 'PayNow'],
     fxRiskBuffer: 0.010,
     displayName: 'Singapore',
   },
@@ -200,7 +200,7 @@ export const MARKETS: Record<MarketCode, Market> = {
     minimumOrder: 22,
     targetMargin: 0.30,
     exchangeRate: EXCHANGE_RATES.NZD,
-    paymentMethods: ['Airwallex-NZD', 'PayPal'],
+    paymentMethods: ['Wire-NZD', 'PayPal'],
     fxRiskBuffer: 0.013,
     displayName: 'New Zealand',
   },

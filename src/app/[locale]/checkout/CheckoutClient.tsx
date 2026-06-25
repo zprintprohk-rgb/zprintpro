@@ -4,15 +4,16 @@ import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 import { useCart } from '@/lib/cart-context';
 import { Locale } from '@/lib/seo';
-import { Package, ArrowRight, Mail, Phone, MapPin, User, FileText, AlertCircle, ShoppingBag, CreditCard, Lock } from 'lucide-react';
+import { Package, ArrowRight, Mail, Phone, MapPin, User, FileText, ShoppingBag, Building2, Smartphone, MessageCircle, Wallet } from 'lucide-react';
 import { useState, useEffect } from 'react';
-import { AirwallexDropIn } from '@/components/payment/AirwallexDropIn';
 import { BankTransferInfo, type WireTransferInfo } from '@/components/payment/BankTransferInfo';
 import { createPaymentSession, type CreatePaymentSessionResponse } from '@/lib/airwallex';
 
 interface CheckoutPageProps {
   params: { locale: string };
 }
+
+type PaymentMethod = 'bank_transfer' | 'wechat_qr' | 'alipay_qr';
 
 const translations = {
   'zh-hk': {
@@ -31,27 +32,28 @@ const translations = {
     notesPlaceholder: '如有特殊要求請在此說明',
     fileUpload: '設計稿上傳',
     fileNote: '支持 PDF、AI、PSD、JPG、PNG 格式，單檔不超過 10MB',
-    submitOrder: '前往付款',
+    submitOrder: '提交訂單',
     backToCart: '返回購物車',
     required: '必填',
     subtotal: '小計',
     shipping: '運費',
     shippingNote: '結算後客服確認',
     total: '合計',
-    paymentTitle: '安全付款',
-    paymentDesc: '由 Airwallex 提供安全加密支付',
     processing: '處理中...',
-    payNow: '立即支付',
-    paymentError: '支付初始化失敗，請重試或聯絡客服',
-    step1: '1. 確認訂單',
-    step2: '2. 安全付款',
-    // 2026-06-25: 支付方式选择
+    paymentError: '提交失敗，請重試或聯絡客服',
+    // 2026-06-25 Phase 0: 支付方式选择 (银行电汇主推 + 微信/支付宝兜底)
     paymentMethodTitle: '選擇付款方式',
-    paymentMethodCreditCard: '信用卡 / 線上支付',
-    paymentMethodCreditCardDesc: 'Visa / Mastercard / JCB 即時到賬',
     paymentMethodBankTransfer: '銀行電匯',
-    paymentMethodBankTransferDesc: '適合大額訂單 / 30 天慢單 / 跨境 B2B',
-    processingBankTransfer: '正在生成訂單...',
+    paymentMethodBankTransferDesc: '適合跨境 B2B / 海外客戶，DBS HK 收款',
+    paymentMethodWechat: '微信支付',
+    paymentMethodWechatDesc: '適合中國內地客戶，人民幣結算無換匯',
+    paymentMethodAlipay: '支付寶',
+    paymentMethodAlipayDesc: '適合中國內地客戶，人民幣結算無換匯',
+    // PayPal (审核中)
+    paymentMethodPaypal: 'PayPal (即將上線)',
+    paymentMethodPaypalDesc: '審核中,稍後可用',
+    cnyHint: '選擇微信 / 支付寶將以人民幣結算',
+    secureNote: '提交訂單後,客服將於 1 個工作天內確認並發送收款信息。',
   },
   en: {
     title: 'Checkout',
@@ -69,29 +71,29 @@ const translations = {
     notesPlaceholder: 'Any special requirements',
     fileUpload: 'Design File Upload',
     fileNote: 'Supports PDF, AI, PSD, JPG, PNG. Max 10MB per file.',
-    submitOrder: 'Proceed to Payment',
+    submitOrder: 'Submit Order',
     backToCart: 'Back to Cart',
     required: 'Required',
     subtotal: 'Subtotal',
     shipping: 'Shipping',
     shippingNote: 'Confirmed by customer service',
     total: 'Total',
-    paymentTitle: 'Secure Payment',
-    paymentDesc: 'Secure encrypted payment powered by Airwallex',
     processing: 'Processing...',
-    payNow: 'Pay Now',
-    paymentError: 'Payment initialization failed. Please try again or contact support.',
-    step1: '1. Review Order',
-    step2: '2. Secure Payment',
-    // 2026-06-25: 支付方式选择
+    paymentError: 'Submission failed. Please try again or contact support.',
+    // 2026-06-25 Phase 0
     paymentMethodTitle: 'Choose Payment Method',
-    paymentMethodCreditCard: 'Credit Card / Online',
-    paymentMethodCreditCardDesc: 'Visa / Mastercard / JCB instant processing',
     paymentMethodBankTransfer: 'Bank Wire Transfer',
-    paymentMethodBankTransferDesc: 'Best for large orders / 30-day slow orders / cross-border B2B',
-    processingBankTransfer: 'Creating your order...',
+    paymentMethodBankTransferDesc: 'Cross-border B2B / overseas customers, DBS HK receiving',
+    paymentMethodWechat: 'WeChat Pay',
+    paymentMethodWechatDesc: 'Mainland China customers, CNY settlement no FX fees',
+    paymentMethodAlipay: 'Alipay',
+    paymentMethodAlipayDesc: 'Mainland China customers, CNY settlement no FX fees',
+    paymentMethodPaypal: 'PayPal (Coming Soon)',
+    paymentMethodPaypalDesc: 'Under review, available soon',
+    cnyHint: 'Selecting WeChat / Alipay will settle in CNY',
+    secureNote: 'After submission, our team will confirm within 1 business day and send payment instructions.',
   },
-  ja: {
+  'ja': {
     title: 'レジ',
     orderItems: '注文商品',
     contactInfo: '連絡先情報',
@@ -107,27 +109,27 @@ const translations = {
     notesPlaceholder: '特別なご要望があれば',
     fileUpload: 'デザインファイル',
     fileNote: 'PDF、AI、PSD、JPG、PNG対応。1ファイル最大10MB。',
-    submitOrder: 'お支払いへ進む',
+    submitOrder: '注文を確定',
     backToCart: 'カートに戻る',
     required: '必須',
     subtotal: '小計',
     shipping: '送料',
     shippingNote: '決済後に確認',
     total: '合計',
-    paymentTitle: '安全なお支払い',
-    paymentDesc: 'Airwallexによる安全な暗号化決済',
     processing: '処理中...',
-    payNow: '今すぐ支払う',
-    paymentError: '決済の初期化に失敗しました。もう一度お試しいただくか、サポートにお問い合わせください。',
-    step1: '1. 注文確認',
-    step2: '2. 安全決済',
-    // 2026-06-25: 支払い方法選択
+    paymentError: '送信に失敗しました。もう一度お試しいただくか、サポートまでご連絡ください。',
+    // 2026-06-25 Phase 0
     paymentMethodTitle: 'お支払い方法を選択',
-    paymentMethodCreditCard: 'クレジットカード / オンライン',
-    paymentMethodCreditCardDesc: 'Visa / Mastercard / JCB 即時処理',
     paymentMethodBankTransfer: '銀行振込',
-    paymentMethodBankTransferDesc: '大口注文 / 30日スローオーダー / 越境B2B向け',
-    processingBankTransfer: '注文を作成中...',
+    paymentMethodBankTransferDesc: '越境B2B / 海外のお客様向け、DBS HK 口座',
+    paymentMethodWechat: 'WeChat Pay',
+    paymentMethodWechatDesc: '中国本土のお客様、人民元決済で為替手数料なし',
+    paymentMethodAlipay: '支付宝 (Alipay)',
+    paymentMethodAlipayDesc: '中国本土のお客様、人民元決済で為替手数料なし',
+    paymentMethodPaypal: 'PayPal (近日公開)',
+    paymentMethodPaypalDesc: '審査中、近日ご利用可能',
+    cnyHint: 'WeChat / 支付宝を選択すると人民元で決済されます',
+    secureNote: '注文確定後、1営業日以内に担当者から確認とお支払い情報をお送りいたします。',
   },
 };
 
@@ -138,8 +140,10 @@ const currencyMap: Record<Locale, string> = {
 };
 
 /**
- * 2026-06-14 Phase B P0-5: JPY 没有小数位（最小单位 = 1 JPY），其他币种以分为单位传给 Airwallex。
+ * 2026-06-14 Phase B P0-5: JPY 没有小数位（最小单位 = 1 JPY），其他币种以分为单位传给后端。
  * 返回 - JPY: 实际金额（整数）；HKD/USD: 金额 × 100（分）。
+ *
+ * 2026-06-25 Phase 0 重构: 微信/支付宝走 CNY 结算,前端传 CNY 整数分给后端,币种和金额独立。
  */
 function toSmallestUnit(amount: number, currency: string): number {
   if (currency === 'JPY') return Math.round(amount);
@@ -170,12 +174,10 @@ export default function CheckoutClient({ params }: CheckoutPageProps) {
   const [uploadedFiles, setUploadedFiles] = useState<{ url: string; path: string; name: string }[]>([]);
   const [uploading, setUploading] = useState(false);
 
-  const [step, setStep] = useState<'form' | 'payment'>('form');
-  const [paymentData, setPaymentData] = useState<CreatePaymentSessionResponse | null>(null);
-  const [paymentError, setPaymentError] = useState<string | null>(null);
+  // 2026-06-25 Phase 0: 支付方式 (默认 bank_transfer, 大单/海外; wechat_qr / alipay_qr 兜底国内)
+  const [paymentMethod, setPaymentMethod] = useState<PaymentMethod>('bank_transfer');
   const [isProcessing, setIsProcessing] = useState(false);
-  // 2026-06-25: 支付方式 (默认 airwallex, 大单/慢单可选 bank_transfer)
-  const [paymentMethod, setPaymentMethod] = useState<'airwallex' | 'bank_transfer'>('airwallex');
+  const [paymentError, setPaymentError] = useState<string | null>(null);
 
   const [mounted, setMounted] = useState(false);
 
@@ -215,7 +217,6 @@ export default function CheckoutClient({ params }: CheckoutPageProps) {
     );
   }
 
-  // Mounted 但购物车为空：显示友好提示 + 返回购物车链接（不再卡 Loading）
   if (items.length === 0) {
     return (
       <main className="min-h-screen bg-gray-50 py-16">
@@ -292,8 +293,8 @@ export default function CheckoutClient({ params }: CheckoutPageProps) {
       address: form.address,
     }));
 
-    const currency = currencyMap[locale];
-    // 2026-06-14 P0-5: 区分币种最小单位（JPY 无小数位）
+    // 2026-06-25 Phase 0: 微信/支付宝走 CNY 结算,UI 价格仍按 locale 展示
+    const currency = paymentMethod === 'wechat_qr' || paymentMethod === 'alipay_qr' ? 'CNY' : currencyMap[locale];
     const amountInSmallestUnit = toSmallestUnit(totalPrice, currency);
 
     try {
@@ -314,11 +315,12 @@ export default function CheckoutClient({ params }: CheckoutPageProps) {
           contact: form,
           files: uploadedFiles,
           locale,
-          payment_method: paymentMethod, // 也存一份到 quote_data 里供后端日志
+          payment_method: paymentMethod,
+          display_currency: currencyMap[locale], // 客户 UI 看到的币种 (用于订单确认页)
         },
       });
 
-      // Also save to localStorage as fallback
+      // Save to localStorage as fallback (订单确认页 fallback)
       const orderData = {
         id: session.orderId,
         items,
@@ -326,33 +328,19 @@ export default function CheckoutClient({ params }: CheckoutPageProps) {
         form,
         date: new Date().toISOString(),
         locale,
-        paymentIntentId: session.paymentIntentId,
         paymentMethod: session.paymentMethod,
+        displayCurrency: currencyMap[locale],
       };
       localStorage.setItem('zprintpro-current-order', JSON.stringify(orderData));
 
-      setPaymentData(session);
-
-      // 2026-06-25: 银行转账不需要 Drop-in,直接跳订单确认页
-      // 订单确认页会根据 paymentMethod=bank_transfer 显示 DBS 账户信息
-      if (session.paymentMethod === 'bank_transfer') {
-        clearCart();
-        router.push(`${localePrefix}/order-confirmation/?order=${session.orderId}`);
-        return;
-      }
-
-      setStep('payment');
+      // 2026-06-25 Phase 0: 全部走 OrderConfirmation 页,无中间 step
+      // bank_transfer 显示 DBS 账户,wechat_qr / alipay_qr 显示对应 QR 码
+      clearCart();
+      router.push(`${localePrefix}/order-confirmation/?order=${session.orderId}`);
     } catch (err) {
       setPaymentError(err instanceof Error ? err.message : t.paymentError);
     } finally {
       setIsProcessing(false);
-    }
-  };
-
-  const handlePaymentSuccess = () => {
-    if (paymentData) {
-      clearCart();
-      router.push(`${localePrefix}/order-confirmation/?order=${paymentData.orderId}`);
     }
   };
 
@@ -364,203 +352,218 @@ export default function CheckoutClient({ params }: CheckoutPageProps) {
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="text-2xl md:text-3xl font-bold text-[#333333] mb-8">{t.title}</h1>
 
-        {/* Step indicator */}
-        <div className="flex items-center gap-4 mb-8">
-          <div className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium ${step === 'form' ? 'bg-[#2873F5] text-white' : 'bg-gray-200 text-gray-500'}`}>
-            <span>{t.step1}</span>
-          </div>
-          <div className="flex-1 h-0.5 bg-gray-200" />
-          <div className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium ${step === 'payment' ? 'bg-[#2873F5] text-white' : 'bg-gray-200 text-gray-500'}`}>
-            <span>{t.step2}</span>
-          </div>
-        </div>
-
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Form */}
           <div className="flex-1">
-            {step === 'form' ? (
-              <form onSubmit={handleSubmit} className="space-y-6">
-                {/* Contact Info */}
-                <div className="bg-white rounded-xl border border-gray-100 p-5">
-                  <h2 className="font-bold text-[#333333] mb-4 flex items-center gap-2">
-                    <User className="w-5 h-5 text-[#2873F5]" />
-                    {t.contactInfo}
-                  </h2>
-                  <div className="grid sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm text-gray-600 mb-1">
-                        {t.name} <span className="text-red-500">*</span>
-                      </label>
-                      <input type="text" required autoComplete="name" value={form.name} onChange={(e) => handleChange('name', e.target.value)} placeholder={t.namePlaceholder} className={inputClass} />
-                    </div>
-                    <div>
-                      <label className="block text-sm text-gray-600 mb-1">
-                        {t.phone} <span className="text-red-500">*</span>
-                      </label>
-                      <input type="tel" required autoComplete="tel" value={form.phone} onChange={(e) => handleChange('phone', e.target.value)} placeholder={t.phonePlaceholder} className={inputClass} />
-                    </div>
-                    <div className="sm:col-span-2">
-                      <label className="block text-sm text-gray-600 mb-1">
-                        {t.email} <span className="text-red-500">*</span>
-                      </label>
-                      <input type="email" required autoComplete="email" value={form.email} onChange={(e) => handleChange('email', e.target.value)} placeholder={t.emailPlaceholder} className={inputClass} />
-                    </div>
-                    <div className="sm:col-span-2">
-                      <label className="block text-sm text-gray-600 mb-1">
-                        {t.address} <span className="text-red-500">*</span>
-                      </label>
-                      <input type="text" required autoComplete="street-address" value={form.address} onChange={(e) => handleChange('address', e.target.value)} placeholder={t.addressPlaceholder} className={inputClass} />
-                    </div>
-                    <div className="sm:col-span-2">
-                      <label className="block text-sm text-gray-600 mb-1">{t.notes}</label>
-                      <textarea rows={3} value={form.notes} onChange={(e) => handleChange('notes', e.target.value)} placeholder={t.notesPlaceholder} className={inputClass} />
-                    </div>
+            <form onSubmit={handleSubmit} className="space-y-6">
+              {/* Contact Info */}
+              <div className="bg-white rounded-xl border border-gray-100 p-5">
+                <h2 className="font-bold text-[#333333] mb-4 flex items-center gap-2">
+                  <User className="w-5 h-5 text-[#2873F5]" />
+                  {t.contactInfo}
+                </h2>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm text-gray-600 mb-1">
+                      {t.name} <span className="text-red-500">*</span>
+                    </label>
+                    <input type="text" required autoComplete="name" value={form.name} onChange={(e) => handleChange('name', e.target.value)} placeholder={t.namePlaceholder} className={inputClass} />
+                  </div>
+                  <div>
+                    <label className="block text-sm text-gray-600 mb-1">
+                      {t.phone} <span className="text-red-500">*</span>
+                    </label>
+                    <input type="tel" required autoComplete="tel" value={form.phone} onChange={(e) => handleChange('phone', e.target.value)} placeholder={t.phonePlaceholder} className={inputClass} />
+                  </div>
+                  <div className="sm:col-span-2">
+                    <label className="block text-sm text-gray-600 mb-1">
+                      {t.email} <span className="text-red-500">*</span>
+                    </label>
+                    <input type="email" required autoComplete="email" value={form.email} onChange={(e) => handleChange('email', e.target.value)} placeholder={t.emailPlaceholder} className={inputClass} />
+                  </div>
+                  <div className="sm:col-span-2">
+                    <label className="block text-sm text-gray-600 mb-1">
+                      {t.address} <span className="text-red-500">*</span>
+                    </label>
+                    <input type="text" required autoComplete="street-address" value={form.address} onChange={(e) => handleChange('address', e.target.value)} placeholder={t.addressPlaceholder} className={inputClass} />
+                  </div>
+                  <div className="sm:col-span-2">
+                    <label className="block text-sm text-gray-600 mb-1">{t.notes}</label>
+                    <textarea rows={3} value={form.notes} onChange={(e) => handleChange('notes', e.target.value)} placeholder={t.notesPlaceholder} className={inputClass} />
                   </div>
                 </div>
+              </div>
 
-                {/* File Upload */}
-                <div className="bg-white rounded-xl border border-gray-100 p-5">
-                  <h2 className="font-bold text-[#333333] mb-4 flex items-center gap-2">
-                    <FileText className="w-5 h-5 text-[#2873F5]" />
-                    {t.fileUpload}
-                  </h2>
-                  <p className="text-sm text-gray-500 mb-3">{t.fileNote}</p>
-                  <input
-                    type="file"
-                    multiple
-                    accept=".pdf,.ai,.psd,.jpg,.jpeg,.png"
-                    onChange={handleFileUpload}
-                    disabled={uploading}
-                    className="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-medium file:bg-[#2873F5] file:text-white hover:file:bg-[#1E5FD1] disabled:opacity-50"
-                  />
-                  {uploading && <p className="text-sm text-gray-500 mt-2">Uploading...</p>}
-                  {uploadedFiles.length > 0 && (
-                    <div className="mt-3 space-y-2">
-                      {uploadedFiles.map((file, idx) => (
-                        <div key={idx} className="flex items-center justify-between bg-gray-50 rounded-lg px-3 py-2 text-sm">
-                          <span className="text-gray-700 truncate">{file.name}</span>
-                          <button type="button" onClick={() => removeFile(idx)} className="text-red-500 hover:text-red-700 text-xs ml-2">Remove</button>
-                        </div>
-                      ))}
-                    </div>
-                  )}
-                </div>
-
-                {paymentError && (
-                  <div className="bg-red-50 border border-red-100 rounded-xl p-4 text-sm text-red-700">
-                    {paymentError}
+              {/* File Upload */}
+              <div className="bg-white rounded-xl border border-gray-100 p-5">
+                <h2 className="font-bold text-[#333333] mb-4 flex items-center gap-2">
+                  <FileText className="w-5 h-5 text-[#2873F5]" />
+                  {t.fileUpload}
+                </h2>
+                <p className="text-sm text-gray-500 mb-3">{t.fileNote}</p>
+                <input
+                  type="file"
+                  multiple
+                  accept=".pdf,.ai,.psd,.jpg,.jpeg,.png"
+                  onChange={handleFileUpload}
+                  disabled={uploading}
+                  className="block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-lg file:border-0 file:text-sm file:font-medium file:bg-[#2873F5] file:text-white hover:file:bg-[#1E5FD1] disabled:opacity-50"
+                />
+                {uploading && <p className="text-sm text-gray-500 mt-2">Uploading...</p>}
+                {uploadedFiles.length > 0 && (
+                  <div className="mt-3 space-y-2">
+                    {uploadedFiles.map((file, idx) => (
+                      <div key={idx} className="flex items-center justify-between bg-gray-50 rounded-lg px-3 py-2 text-sm">
+                        <span className="text-gray-700 truncate">{file.name}</span>
+                        <button type="button" onClick={() => removeFile(idx)} className="text-red-500 hover:text-red-700 text-xs ml-2">Remove</button>
+                      </div>
+                    ))}
                   </div>
                 )}
+              </div>
 
-                {/* 2026-06-25: 支付方式选择 (信用卡 / 银行电汇) */}
-                <div className="bg-white rounded-xl border border-gray-100 p-5">
-                  <h2 className="font-bold text-[#333333] mb-4 flex items-center gap-2">
-                    <CreditCard className="w-5 h-5 text-[#2873F5]" />
-                    {t.paymentMethodTitle}
-                  </h2>
-                  <div className="grid sm:grid-cols-2 gap-3">
-                    {/* 信用卡 */}
-                    <label
-                      className={`flex items-start gap-3 p-4 rounded-lg border-2 cursor-pointer transition-all ${
-                        paymentMethod === 'airwallex'
-                          ? 'border-[#2873F5] bg-[#2873F5]/5'
-                          : 'border-gray-200 hover:border-gray-300 bg-white'
-                      }`}
-                    >
-                      <input
-                        type="radio"
-                        name="paymentMethod"
-                        value="airwallex"
-                        checked={paymentMethod === 'airwallex'}
-                        onChange={() => setPaymentMethod('airwallex')}
-                        className="mt-1"
-                      />
-                      <div className="flex-1 min-w-0">
-                        <p className="font-medium text-[#333333] text-sm">
-                          {t.paymentMethodCreditCard}
-                        </p>
-                        <p className="text-xs text-gray-500 mt-1">
-                          {t.paymentMethodCreditCardDesc}
-                        </p>
-                      </div>
-                    </label>
-
-                    {/* 银行电汇 */}
-                    <label
-                      className={`flex items-start gap-3 p-4 rounded-lg border-2 cursor-pointer transition-all ${
-                        paymentMethod === 'bank_transfer'
-                          ? 'border-[#2873F5] bg-[#2873F5]/5'
-                          : 'border-gray-200 hover:border-gray-300 bg-white'
-                      }`}
-                    >
-                      <input
-                        type="radio"
-                        name="paymentMethod"
-                        value="bank_transfer"
-                        checked={paymentMethod === 'bank_transfer'}
-                        onChange={() => setPaymentMethod('bank_transfer')}
-                        className="mt-1"
-                      />
-                      <div className="flex-1 min-w-0">
-                        <p className="font-medium text-[#333333] text-sm">
-                          {t.paymentMethodBankTransfer}
-                        </p>
-                        <p className="text-xs text-gray-500 mt-1">
-                          {t.paymentMethodBankTransferDesc}
-                        </p>
-                      </div>
-                    </label>
-                  </div>
+              {paymentError && (
+                <div className="bg-red-50 border border-red-100 rounded-xl p-4 text-sm text-red-700">
+                  {paymentError}
                 </div>
+              )}
 
-                <div className="flex flex-col sm:flex-row gap-3">
-                  <button type="button" onClick={() => router.push(`${localePrefix}/cart/`)} className="flex-1 py-3 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors">
-                    {t.backToCart}
-                  </button>
-                  <button type="submit" disabled={isProcessing} className="flex-1 py-3 bg-[#F87314] text-white rounded-lg font-bold hover:bg-[#E56203] transition-colors flex items-center justify-center gap-2 disabled:opacity-60">
-                    {isProcessing
-                      ? (paymentMethod === 'bank_transfer' ? t.processingBankTransfer : t.processing)
-                      : (
-                        <>
-                          {t.submitOrder}
-                          <ArrowRight className="w-4 h-4" />
-                        </>
-                      )}
-                  </button>
-                </div>
-              </form>
-            ) : (
-              /* Payment Step */
-              paymentData && (
-                <div className="bg-white rounded-xl border border-gray-100 p-5">
-                  <div className="flex items-center gap-2 mb-4">
-                    <Lock className="w-5 h-5 text-emerald-500" />
-                    <h2 className="font-bold text-[#333333]">{t.paymentTitle}</h2>
-                  </div>
-                  <p className="text-sm text-gray-500 mb-4">{t.paymentDesc}</p>
-                  <AirwallexDropIn
-                    paymentIntentId={paymentData.paymentIntentId!}
-                    clientSecret={paymentData.clientSecret!}
-                    locale={locale}
-                    intentCurrency={currencyMap[locale]}
-                    onSuccess={handlePaymentSuccess}
-                    onError={(err) => setPaymentError(err.message)}
-                  />
-                  {paymentError && (
-                    <div className="mt-4 bg-red-50 border border-red-100 rounded-xl p-4 text-sm text-red-700">
-                      {paymentError}
-                    </div>
-                  )}
-                  <button
-                    type="button"
-                    onClick={() => setStep('form')}
-                    className="mt-4 text-sm text-gray-500 hover:text-gray-700 underline"
+              {/* 2026-06-25 Phase 0: 支付方式选择 (银行电汇 + 微信 + 支付宝,PayPal 未来) */}
+              <div className="bg-white rounded-xl border border-gray-100 p-5">
+                <h2 className="font-bold text-[#333333] mb-4 flex items-center gap-2">
+                  <Wallet className="w-5 h-5 text-[#2873F5]" />
+                  {t.paymentMethodTitle}
+                </h2>
+                <div className="grid sm:grid-cols-2 gap-3">
+                  {/* 银行电汇 (默认主推) */}
+                  <label
+                    className={`flex items-start gap-3 p-4 rounded-lg border-2 cursor-pointer transition-all ${
+                      paymentMethod === 'bank_transfer'
+                        ? 'border-[#2873F5] bg-[#2873F5]/5'
+                        : 'border-gray-200 hover:border-gray-300 bg-white'
+                    }`}
                   >
-                    {t.backToCart}
-                  </button>
+                    <input
+                      type="radio"
+                      name="paymentMethod"
+                      value="bank_transfer"
+                      checked={paymentMethod === 'bank_transfer'}
+                      onChange={() => setPaymentMethod('bank_transfer')}
+                      className="mt-1"
+                    />
+                    <Building2 className="w-5 h-5 text-[#2873F5] flex-shrink-0 mt-0.5" />
+                    <div className="flex-1 min-w-0">
+                      <p className="font-medium text-[#333333] text-sm">
+                        {t.paymentMethodBankTransfer}
+                      </p>
+                      <p className="text-xs text-gray-500 mt-1">
+                        {t.paymentMethodBankTransferDesc}
+                      </p>
+                    </div>
+                  </label>
+
+                  {/* 微信支付 */}
+                  <label
+                    className={`flex items-start gap-3 p-4 rounded-lg border-2 cursor-pointer transition-all ${
+                      paymentMethod === 'wechat_qr'
+                        ? 'border-[#07C160] bg-[#07C160]/5'
+                        : 'border-gray-200 hover:border-gray-300 bg-white'
+                    }`}
+                  >
+                    <input
+                      type="radio"
+                      name="paymentMethod"
+                      value="wechat_qr"
+                      checked={paymentMethod === 'wechat_qr'}
+                      onChange={() => setPaymentMethod('wechat_qr')}
+                      className="mt-1"
+                    />
+                    <MessageCircle className="w-5 h-5 text-[#07C160] flex-shrink-0 mt-0.5" />
+                    <div className="flex-1 min-w-0">
+                      <p className="font-medium text-[#333333] text-sm">
+                        {t.paymentMethodWechat}
+                      </p>
+                      <p className="text-xs text-gray-500 mt-1">
+                        {t.paymentMethodWechatDesc}
+                      </p>
+                    </div>
+                  </label>
+
+                  {/* 支付宝 */}
+                  <label
+                    className={`flex items-start gap-3 p-4 rounded-lg border-2 cursor-pointer transition-all ${
+                      paymentMethod === 'alipay_qr'
+                        ? 'border-[#1677FF] bg-[#1677FF]/5'
+                        : 'border-gray-200 hover:border-gray-300 bg-white'
+                    }`}
+                  >
+                    <input
+                      type="radio"
+                      name="paymentMethod"
+                      value="alipay_qr"
+                      checked={paymentMethod === 'alipay_qr'}
+                      onChange={() => setPaymentMethod('alipay_qr')}
+                      className="mt-1"
+                    />
+                    <Smartphone className="w-5 h-5 text-[#1677FF] flex-shrink-0 mt-0.5" />
+                    <div className="flex-1 min-w-0">
+                      <p className="font-medium text-[#333333] text-sm">
+                        {t.paymentMethodAlipay}
+                      </p>
+                      <p className="text-xs text-gray-500 mt-1">
+                        {t.paymentMethodAlipayDesc}
+                      </p>
+                    </div>
+                  </label>
+
+                  {/* PayPal (审核中, 灰色禁用) */}
+                  <label
+                    className="flex items-start gap-3 p-4 rounded-lg border-2 border-gray-100 bg-gray-50 cursor-not-allowed opacity-60"
+                    title="PayPal 审核中"
+                  >
+                    <input
+                      type="radio"
+                      name="paymentMethod"
+                      value="paypal"
+                      disabled
+                      className="mt-1"
+                    />
+                    <div className="flex-1 min-w-0">
+                      <p className="font-medium text-[#333333] text-sm">
+                        {t.paymentMethodPaypal}
+                      </p>
+                      <p className="text-xs text-gray-500 mt-1">
+                        {t.paymentMethodPaypalDesc}
+                      </p>
+                    </div>
+                  </label>
                 </div>
-              )
-            )}
+                {(paymentMethod === 'wechat_qr' || paymentMethod === 'alipay_qr') && (
+                  <p className="text-xs text-amber-700 bg-amber-50 rounded-lg p-2 mt-3">
+                    💡 {t.cnyHint}
+                  </p>
+                )}
+                <p className="text-xs text-gray-500 mt-3 pt-3 border-t border-gray-100">
+                  🔒 {t.secureNote}
+                </p>
+              </div>
+
+              <div className="flex flex-col sm:flex-row gap-3">
+                <button type="button" onClick={() => router.push(`${localePrefix}/cart/`)} className="flex-1 py-3 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors">
+                  {t.backToCart}
+                </button>
+                <button type="submit" disabled={isProcessing} className="flex-1 py-3 bg-[#F87314] text-white rounded-lg font-bold hover:bg-[#E56203] transition-colors flex items-center justify-center gap-2 disabled:opacity-60">
+                  {isProcessing ? (
+                    t.processing
+                  ) : (
+                    <>
+                      {t.submitOrder}
+                      <ArrowRight className="w-4 h-4" />
+                    </>
+                  )}
+                </button>
+              </div>
+            </form>
           </div>
 
           {/* Order Summary */}
