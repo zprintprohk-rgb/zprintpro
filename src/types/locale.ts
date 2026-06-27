@@ -16,7 +16,7 @@ export const localeLabels: Record<Locale, string> = {
 export const hreflangMap: Record<Locale, string> = {
   'zh-hk': 'zh-HK',
   'en': 'en-US', // 英美澳共用，以 en-US 为主标签
-  'ja': 'ja',
+  'ja': 'ja-JP',
 };
 
 // HTML lang 属性映射

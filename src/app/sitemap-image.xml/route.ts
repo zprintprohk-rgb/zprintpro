@@ -9,17 +9,18 @@
  * Fix: expose it as an explicit App Router route that streams the
  * generated XML with the right Content-Type. This bypasses the
  * static-asset interception bug for non-standard sitemap filenames.
+ *
+ * Edge Runtime: cannot use node:fs, so we import the content as a
+ * static string from a build-time-generated TypeScript module.
  */
-import { readFile } from 'node:fs/promises';
-import { join } from 'node:path';
+import { SITEMAP_IMAGE_XML } from '@/generated/sitemap-content';
 
+export const runtime = 'edge';
 export const dynamic = 'force-static';
 export const revalidate = 3600;
 
 export async function GET(): Promise<Response> {
-  const filePath = join(process.cwd(), 'public', 'sitemap-image.xml');
-  const xml = await readFile(filePath, 'utf-8');
-  return new Response(xml, {
+  return new Response(SITEMAP_IMAGE_XML, {
     status: 200,
     headers: {
       'Content-Type': 'application/xml; charset=utf-8',

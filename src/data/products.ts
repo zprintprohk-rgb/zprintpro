@@ -17847,25 +17847,25 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>可以取消或退貨嗎？</strong></summary><p>印刷開始前可取消。品質問題(色差 / 印刷瑕疵)提供免費重印或全額退款。</p></details>
 
 <p><em>智印雲 (ZprintPro) 是深圳市彩龍印刷包裝有限公司營運的國際印刷服務品牌。深圳自營工廠 DHL Express 全球 2-4 日配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>`,
-      longDescriptionEn: `<h3>Specialized Printing for Doujin & Oshi-katsu Markets</h3>
+      longDescriptionEn: `<h3>Doujinshi Printing — Comiket & Doujin Event Specialized Service</h3>
 <p>Optimized for Comiket, doujin events, and creative exhibitions. Standard full-color cover + mono interior, with premium full-color cover-and-interior upgrades. Low MOQ of 10 books makes this accessible for individual circles and beginners. 24-hour rush production available before Comiket for last-minute reprints.</p>
 
 <h3>Specifications</h3>
 <table>
   <thead><tr><th>Spec</th><th>Details</th></tr></thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>Material</td><td>FSC認証 上質紙 90g/コート紙 90g (表紙)</td></tr>
-    <tr class="border-b border-gray-200"><td>Size</td><td>A5 (148×210mm) / B5 (182×257mm) / A4 (オプション)</td></tr>
-    <tr><td>Print Method</td><td>表紙: オフセット4色 / 本文: オンデマンド or オフセット</td></tr>
+    <tr class="border-b border-gray-200"><td>Material</td><td>FSC-certified woodfree paper 90g / coated paper 90g (cover)</td></tr>
+    <tr class="border-b border-gray-200"><td>Size</td><td>A5 (148×210mm) / B5 (182×257mm) / A4 (optional)</td></tr>
+    <tr><td>Print Method</td><td>Cover: offset 4-color / Interior: on-demand or offset</td></tr>
   </tbody>
 </table>
 
 <h3>24-Hour Rush Production Before Comiket</h3>
-<p>ZprintPro offers 24-hour rush production for last-minute reprints and Comiket merchandise. Our Shenzhen production facility ships via DHL Express to Japan in 2-4 business days, with Japanese-language support throughout.</p>
+<p>ZprintPro offers 24-hour rush production for last-minute reprints and Comiket doujinshi orders. Our Shenzhen production facility ships via DHL Express to Japan in 2-4 business days, with Japanese-language support throughout.</p>
 
 <h3>Frequently Asked Questions</h3>
-<details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>10 pieces. Individual circles and artists are welcome to order.</p></details>
-<details class="my-2"><summary><strong>Do you offer rush production before Comiket?</strong></summary><p>Yes, 24-hour rush is available for select SKUs (rush fee applies). Contact us via WhatsApp for details.</p></details>
+<details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>10 books. Individual circles and independent artists are welcome to order.</p></details>
+<details class="my-2"><summary><strong>Do you offer rush production before Comiket?</strong></summary><p>Yes, 24-hour rush is available for doujinshi (rush fee applies). Contact us via WhatsApp for details.</p></details>
 <details class="my-2"><summary><strong>How long does DHL Express shipping take to Japan?</strong></summary><p>2-4 business days from our Shenzhen production facility. Both Comiket venue pickup and home delivery are supported.</p></details>
 <details class="my-2"><summary><strong>What file formats do you accept?</strong></summary><p>Illustrator / Photoshop / PDF preferred, CMYK mode, 300dpi+ resolution. Free AI data check included.</p></details>
 <details class="my-2"><summary><strong>Can I cancel or return my order?</strong></summary><p>Cancellations accepted before printing starts. Quality issues (color drift, print defects) get free reprint or full refund.</p></details>
@@ -18008,8 +18008,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>可以取消或退貨嗎？</strong></summary><p>印刷開始前可取消。品質問題(色差 / 印刷瑕疵)提供免費重印或全額退款。</p></details>
 
 <p><em>智印雲 (ZprintPro) 是深圳市彩龍印刷包裝有限公司營運的國際印刷服務品牌。深圳自營工廠 DHL Express 全球 2-4 日配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>`,
-      longDescriptionEn: `<h3>Specialized Printing for Doujin & Oshi-katsu Markets</h3>
-<p>Custom acrylic keychains for anime, VTuber, and character merchandise. Fully customizable shapes — your VTuber logo or favorite character artwork becomes a wearable keychain. Choose 2mm or 3mm thickness for different price points and tactile feel. MOQ of 10 pcs makes it accessible for individual artists and doujin event participation. Optional accessories: safety pin, ball chain, or hook clasp.</p>
+      longDescriptionEn: `<h3>Acrylic Keychains — Custom Anime & VTuber Character Merch</h3>
+<p>Custom-shaped acrylic keychains for anime, VTuber, and character merchandise. Fully customizable shapes — your VTuber logo or favorite character artwork becomes a wearable keychain. Choose 2mm or 3mm thickness for different price points and tactile feel. MOQ of 10 pcs makes it accessible for individual artists and doujin event participation. Optional accessories: safety pin, ball chain, or hook clasp.</p>
 
 <h3>Specifications</h3>
 <table>
@@ -18021,12 +18021,12 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   </tbody>
 </table>
 
-<h3>24-Hour Rush Production Before Comiket</h3>
-<p>ZprintPro offers 24-hour rush production for last-minute reprints and Comiket merchandise. Our Shenzhen production facility ships via DHL Express to Japan in 2-4 business days, with Japanese-language support throughout.</p>
+<h3>Rush Production for Comiket & Events</h3>
+<p>ZprintPro offers rush production for acrylic keychain reorders and event merchandise. Our Shenzhen production facility ships via DHL Express to Japan in 2-4 business days, with Japanese-language support throughout.</p>
 
 <h3>Frequently Asked Questions</h3>
-<details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>10 pieces. Individual circles and artists are welcome to order.</p></details>
-<details class="my-2"><summary><strong>Do you offer rush production before Comiket?</strong></summary><p>Yes, 24-hour rush is available for select SKUs (rush fee applies). Contact us via WhatsApp for details.</p></details>
+<details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>10 pieces per design. Individual circles and artists are welcome to order.</p></details>
+<details class="my-2"><summary><strong>Do you offer rush production before Comiket?</strong></summary><p>Yes, rush production is available for acrylic keychains (rush fee applies). Contact us via WhatsApp for details.</p></details>
 <details class="my-2"><summary><strong>How long does DHL Express shipping take to Japan?</strong></summary><p>2-4 business days from our Shenzhen production facility. Both Comiket venue pickup and home delivery are supported.</p></details>
 <details class="my-2"><summary><strong>What file formats do you accept?</strong></summary><p>Illustrator / Photoshop / PDF preferred, CMYK mode, 300dpi+ resolution. Free AI data check included.</p></details>
 <details class="my-2"><summary><strong>Can I cancel or return my order?</strong></summary><p>Cancellations accepted before printing starts. Quality issues (color drift, print defects) get free reprint or full refund.</p></details>
@@ -18173,7 +18173,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>可以取消或退貨嗎？</strong></summary><p>印刷開始前可取消。品質問題(色差 / 印刷瑕疵)提供免費重印或全額退款。</p></details>
 
 <p><em>智印雲 (ZprintPro) 是深圳市彩龍印刷包裝有限公司營運的國際印刷服務品牌。深圳自營工廠 DHL Express 全球 2-4 日配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>`,
-      longDescriptionEn: `<h3>Specialized Printing for Doujin & Oshi-katsu Markets</h3>
+      longDescriptionEn: `<h3>Can Badge Printing — Comiket & Oshi-katsu Merchandise Essential</h3>
 <p>Essential can badges for Comiket, oshi-katsu, and VTuber merchandise. Three sizes: 57mm standard, 76mm large, 44mm mini. Full-color printing preserves illustration and logo details. Safety pin included for easy attachment to clothing or bags. Low MOQ of 10 pcs makes it accessible for individual circles. Rush production available before Comiket for last-minute orders.</p>
 
 <h3>Specifications</h3>
@@ -18186,12 +18186,12 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   </tbody>
 </table>
 
-<h3>24-Hour Rush Production Before Comiket</h3>
-<p>ZprintPro offers 24-hour rush production for last-minute reprints and Comiket merchandise. Our Shenzhen production facility ships via DHL Express to Japan in 2-4 business days, with Japanese-language support throughout.</p>
+<h3>Fast Turnaround for Event Merchandise</h3>
+<p>ZprintPro offers fast production for can badge reorders and event merchandise. Our Shenzhen production facility ships via DHL Express to Japan in 2-4 business days, with Japanese-language support throughout.</p>
 
 <h3>Frequently Asked Questions</h3>
-<details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>10 pieces. Individual circles and artists are welcome to order.</p></details>
-<details class="my-2"><summary><strong>Do you offer rush production before Comiket?</strong></summary><p>Yes, 24-hour rush is available for select SKUs (rush fee applies). Contact us via WhatsApp for details.</p></details>
+<details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>10 pieces per design. Individual circles and artists are welcome to order.</p></details>
+<details class="my-2"><summary><strong>Do you offer rush production before Comiket?</strong></summary><p>Yes, rush production is available for can badges (rush fee applies). Contact us via WhatsApp for details.</p></details>
 <details class="my-2"><summary><strong>How long does DHL Express shipping take to Japan?</strong></summary><p>2-4 business days from our Shenzhen production facility. Both Comiket venue pickup and home delivery are supported.</p></details>
 <details class="my-2"><summary><strong>What file formats do you accept?</strong></summary><p>Illustrator / Photoshop / PDF preferred, CMYK mode, 300dpi+ resolution. Free AI data check included.</p></details>
 <details class="my-2"><summary><strong>Can I cancel or return my order?</strong></summary><p>Cancellations accepted before printing starts. Quality issues (color drift, print defects) get free reprint or full refund.</p></details>
@@ -18336,7 +18336,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>可以取消或退貨嗎？</strong></summary><p>印刷開始前可取消。品質問題(色差 / 印刷瑕疵)提供免費重印或全額退款。</p></details>
 
 <p><em>智印雲 (ZprintPro) 是深圳市彩龍印刷包裝有限公司營運的國際印刷服務品牌。深圳自營工廠 DHL Express 全球 2-4 日配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>`,
-longDescriptionEn: `<h3>Specialized Printing for Doujin & Oshi-katsu Markets</h3>
+longDescriptionEn: `<h3>Postcard Sets — Washi-Style Art Cards for Character & VTuber Goods</h3>
 <p>Ideal postcard sets for character goods, VTuber illustrations, and signature event giveaways. Sold in 4-8 piece sets for collection appeal. Washi-style art paper matches Japanese-aesthetic and traditional artwork. Double-sided printing allows front illustration + back text/signature design. OPP sleeve packaging protects from scratches and dust.</p>
 
 <h3>Specifications</h3>
@@ -18349,12 +18349,12 @@ longDescriptionEn: `<h3>Specialized Printing for Doujin & Oshi-katsu Markets</h3
   </tbody>
 </table>
 
-<h3>24-Hour Rush Production Before Comiket</h3>
-<p>ZprintPro offers 24-hour rush production for last-minute reprints and Comiket merchandise. Our Shenzhen production facility ships via DHL Express to Japan in 2-4 business days, with Japanese-language support throughout.</p>
+<h3>Quick Production for Events & Giveaways</h3>
+<p>ZprintPro offers fast production for postcard set reorders and event merchandise. Our Shenzhen production facility ships via DHL Express to Japan in 2-4 business days, with Japanese-language support throughout.</p>
 
 <h3>Frequently Asked Questions</h3>
-<details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>4 pieces. Individual circles and artists are welcome to order.</p></details>
-<details class="my-2"><summary><strong>Do you offer rush production before Comiket?</strong></summary><p>Yes, 24-hour rush is available for select SKUs (rush fee applies). Contact us via WhatsApp for details.</p></details>
+<details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>4 sets minimum. Individual circles and artists are welcome to order.</p></details>
+<details class="my-2"><summary><strong>Do you offer rush production before Comiket?</strong></summary><p>Yes, rush production is available for postcard sets (rush fee applies). Contact us via WhatsApp for details.</p></details>
 <details class="my-2"><summary><strong>How long does DHL Express shipping take to Japan?</strong></summary><p>2-4 business days from our Shenzhen production facility. Both Comiket venue pickup and home delivery are supported.</p></details>
 <details class="my-2"><summary><strong>What file formats do you accept?</strong></summary><p>Illustrator / Photoshop / PDF preferred, CMYK mode, 300dpi+ resolution. Free AI data check included.</p></details>
 <details class="my-2"><summary><strong>Can I cancel or return my order?</strong></summary><p>Cancellations accepted before printing starts. Quality issues (color drift, print defects) get free reprint or full refund.</p></details>
@@ -18501,7 +18501,7 @@ longDescriptionEn: `<h3>Specialized Printing for Doujin & Oshi-katsu Markets</h3
 <details class="my-2"><summary><strong>可以取消或退貨嗎？</strong></summary><p>印刷開始前可取消。品質問題(色差 / 印刷瑕疵)提供免費重印或全額退款。</p></details>
 
 <p><em>智印雲 (ZprintPro) 是深圳市彩龍印刷包裝有限公司營運的國際印刷服務品牌。深圳自營工廠 DHL Express 全球 2-4 日配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>`,
-      longDescriptionEn: `<h3>Specialized Printing for Doujin & Oshi-katsu Markets</h3>
+      longDescriptionEn: `<h3>Eco Tote Bags — Organic Cotton Bags for Oshi-katsu & Corporate Gifting</h3>
 <p>Premium organic cotton tote bags for oshi-katsu, Comiket merchandise, and corporate gifting. FSC-certified 100% organic cotton supports ESG and sustainability narratives. Silk screen printing delivers crisp logos and illustrations; DTG full-color printing handles gradients and photos. A4-sized capacity adds practicality. MOQ 10 pcs accommodates small-batch needs.</p>
 
 <h3>Specifications</h3>
@@ -18514,12 +18514,12 @@ longDescriptionEn: `<h3>Specialized Printing for Doujin & Oshi-katsu Markets</h3
   </tbody>
 </table>
 
-<h3>24-Hour Rush Production Before Comiket</h3>
-<p>ZprintPro offers 24-hour rush production for last-minute reprints and Comiket merchandise. Our Shenzhen production facility ships via DHL Express to Japan in 2-4 business days, with Japanese-language support throughout.</p>
+<h3>Sustainable Merchandise with Fast Delivery</h3>
+<p>ZprintPro offers fast production for eco tote bag reorders and sustainable merchandise. Our Shenzhen production facility ships via DHL Express to Japan in 2-4 business days, with Japanese-language support throughout.</p>
 
 <h3>Frequently Asked Questions</h3>
-<details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>10 pieces. Individual circles and artists are welcome to order.</p></details>
-<details class="my-2"><summary><strong>Do you offer rush production before Comiket?</strong></summary><p>Yes, 24-hour rush is available for select SKUs (rush fee applies). Contact us via WhatsApp for details.</p></details>
+<details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>10 pieces. Individual circles, artists, and businesses are welcome to order.</p></details>
+<details class="my-2"><summary><strong>Do you offer rush production before Comiket?</strong></summary><p>Yes, rush production is available for eco tote bags (rush fee applies). Contact us via WhatsApp for details.</p></details>
 <details class="my-2"><summary><strong>How long does DHL Express shipping take to Japan?</strong></summary><p>2-4 business days from our Shenzhen production facility. Both Comiket venue pickup and home delivery are supported.</p></details>
 <details class="my-2"><summary><strong>What file formats do you accept?</strong></summary><p>Illustrator / Photoshop / PDF preferred, CMYK mode, 300dpi+ resolution. Free AI data check included.</p></details>
 <details class="my-2"><summary><strong>Can I cancel or return my order?</strong></summary><p>Cancellations accepted before printing starts. Quality issues (color drift, print defects) get free reprint or full refund.</p></details>

@@ -44,21 +44,32 @@ export function isJAForceJPYEnabled(): boolean {
 /**
  * 解析 locale 应当使用的结算币种。
  * - JA + feature flag on → JPY
+ * - en + region='GB'/'UK' → GBP（P0-E 多市场）
+ * - en + region='AU'/'NZ' → AUD（P0-E 多市场）
  * - 其他 locale → 用 locale 默认（zh-hk=HKD, en=USD, ja=JPY）
  */
-export function resolveSettlementCurrency(locale: string | undefined | null): 'HKD' | 'USD' | 'JPY' {
+export function resolveSettlementCurrency(locale: string | undefined | null, region?: string | null): 'HKD' | 'USD' | 'GBP' | 'AUD' | 'JPY' {
   if (isJALocale(locale) && isJAForceJPYEnabled()) return 'JPY';
   // 现有 mapping：zh-hk=HKD, en=USD, ja=JPY
   if (locale === 'zh-hk') return 'HKD';
-  if (locale === 'en') return 'USD';
+  if (locale === 'en') {
+    if (region) {
+      const r = region.toUpperCase();
+      if (r === 'GB' || r === 'UK') return 'GBP';
+      if (r === 'AU' || r === 'NZ') return 'AUD';
+    }
+    return 'USD';
+  }
   if (isJALocale(locale)) return 'JPY';
   return 'HKD';
 }
 
-/** 货币符号表（含可选 override） */
-const CURRENCY_SYMBOLS: Record<'HKD' | 'USD' | 'JPY', string> = {
+/** 货币符号表（含 GBP / AUD 多市场支持，P0-E） */
+const CURRENCY_SYMBOLS: Record<'HKD' | 'USD' | 'GBP' | 'AUD' | 'JPY', string> = {
   HKD: 'HK$',
   USD: 'US$',
+  GBP: '£',
+  AUD: 'A$',
   JPY: '¥',
 };
 
@@ -81,8 +92,9 @@ export function convertHKDTo(hkdAmount: number, target: 'HKD' | 'USD' | 'JPY'): 
 /**
  * 按 locale 输出价格字符串。
  * 集成 P0-5：当 JA locale + feature flag 开启时，使用 JPY 结算（覆盖原 ¥ 显示逻辑）。
+ * 集成 P0-E：支持 GBP / AUD（en-GB / en-AU 多市场）
  */
-export function formatPriceForLocale(priceHKD: number, locale: string | undefined | null): { amount: number; currency: 'HKD' | 'USD' | 'JPY'; symbol: string; text: string } {
+export function formatPriceForLocale(priceHKD: number, locale: string | undefined | null): { amount: number; currency: 'HKD' | 'USD' | 'GBP' | 'AUD' | 'JPY'; symbol: string; text: string } {
   const currency = resolveSettlementCurrency(locale);
   const symbol = CURRENCY_SYMBOLS[currency];
   let amount: number;
@@ -90,6 +102,12 @@ export function formatPriceForLocale(priceHKD: number, locale: string | undefine
   if (currency === 'JPY') {
     amount = convertHKDTo(priceHKD, 'JPY');
     text = `${symbol}${amount.toLocaleString()}`;
+  } else if (currency === 'GBP') {
+    amount = convertCurrency(priceHKD, 'GBP');
+    text = `£${amount.toFixed(2)}`;
+  } else if (currency === 'AUD') {
+    amount = convertCurrency(priceHKD, 'AUD');
+    text = `A$${amount.toFixed(2)}`;
   } else if (currency === 'USD') {
     amount = convertHKDTo(priceHKD, 'USD');
     text = `${symbol}${amount.toFixed(2)}`;
@@ -98,6 +116,44 @@ export function formatPriceForLocale(priceHKD: number, locale: string | undefine
     text = `${symbol}${amount.toFixed(2)}`;
   }
   return { amount, currency, symbol, text };
+}
+
+/**
+ * P0-E: 根据 region 解析 en locale 应该使用的货币。
+ * 优先顺序: explicit region param > URL 路径 hint > 默认 USD
+ * - region='GB' / 'UK' → GBP (£)
+ * - region='AU' / 'NZ' → AUD (A$)
+ * - 其他 → USD（默认美式英语市场）
+ *
+ * 用法: formatPriceForRegion(price, 'en', 'GB')
+ */
+export function formatPriceForRegion(
+  priceHKD: number,
+  locale: string | undefined | null,
+  region?: string | null
+): { amount: number; currency: 'HKD' | 'USD' | 'GBP' | 'AUD' | 'JPY'; symbol: string; text: string } {
+  // ja 强制 JPY（feature flag 控制）
+  if (locale && isJALocale(locale)) {
+    return formatPriceForLocale(priceHKD, locale);
+  }
+  // zh-hk 保持 HKD
+  if (locale === 'zh-hk') {
+    return formatPriceForLocale(priceHKD, locale);
+  }
+  // en locale 按 region 切
+  if (locale === 'en' && region) {
+    const r = region.toUpperCase();
+    if (r === 'GB' || r === 'UK') {
+      const amount = convertCurrency(priceHKD, 'GBP');
+      return { amount, currency: 'GBP', symbol: '£', text: `£${amount.toFixed(2)}` };
+    }
+    if (r === 'AU' || r === 'NZ') {
+      const amount = convertCurrency(priceHKD, 'AUD');
+      return { amount, currency: 'AUD', symbol: 'A$', text: `A$${amount.toFixed(2)}` };
+    }
+  }
+  // 默认 USD
+  return formatPriceForLocale(priceHKD, locale);
 }
 
 // ============================================================================

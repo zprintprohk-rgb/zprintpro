@@ -170,6 +170,7 @@ export function generateHomeMetadata(locale: Locale): Metadata {
 // 生成分類頁元數據
 // 分类页市场特定SEO数据（基于全球三大市场调研）
 const categorySeoData: Record<string, {
+  titles?: { 'zh-hk'?: string; en?: string; ja?: string };
   keywords: { 'zh-hk': string; en: string; ja: string };
   descriptions: { 'zh-hk': string; en: string; ja: string };
 }> = {
@@ -198,25 +199,31 @@ const categorySeoData: Record<string, {
     },
   },
   'flyers': {
+    titles: {
+      'zh-hk': '宣傳單張印刷 香港 | 智印雲 ZprintPro — A4/A5 傳單 / 摺頁 快印',
+    },
     keywords: {
       'zh-hk': '宣傳單張印刷,傳單印刷,傳單派發,A4單張,A5單張,摺頁傳單,開業傳單,餐廳傳單,活動傳單,電商傳單',
       en: 'flyer printing,leaflet printing,custom flyers,A4 flyers,A5 flyers,folded flyers,grand opening flyers,restaurant flyers,event flyers,real estate flyers,door hanger printing,direct mail flyers',
       ja: 'チラシ印刷,フライヤー印刷,パンフレット印刷,A4チラシ,A5チラシ,折りパンフレット,開業チラシ,飲食店チラシ,イベントチラシ,不動産チラシ',
     },
     descriptions: {
-      'zh-hk': '香港宣傳單張印刷專家，10張起訂。A4/A5/摺頁傳單，光粉紙/啞粉紙/書紙多種紙質。即日印刷速遞，免費設計。適合開業、活動、餐廳、選舉宣傳。',
+      'zh-hk': '香港宣傳單張印刷服務｜智印雲提供A4/A5單張、摺頁傳單、開業傳單印刷，多種紙質可選，價格優惠，質量保證。10張起訂，即日交貨！',
       en: 'Flyer & leaflet printing from 10 copies. A4/A5/folded formats, glossy/matte/uncoated paper. Rush printing available, global delivery. Free design. Perfect for grand openings, events, restaurants, campaigns.',
       ja: 'プロのチラシ印刷サービス。10枚から注文可能。A4/A5/折りパンフレット、光沢紙/マット紙/書籍紙に対応。即日印刷・配送。無料デザイン。開業・イベント・飲食店・選挙に最適。',
     },
   },
   'packaging': {
+    titles: {
+      'zh-hk': '食品包裝印刷 香港 | 智印雲 ZprintPro — 食品級包裝盒/袋 定制印刷',
+    },
     keywords: {
-      'zh-hk': '包裝盒印刷,禮品盒定制,化妝品包裝盒,食品包裝盒,手工皂盒,月餅盒,小批量包裝盒,產品包裝盒,紙盒印刷,彩盒印刷',
+      'zh-hk': '食品包裝印刷,食品包裝盒,食品袋印刷,食品級包裝,食品貼紙印刷,月餅盒,禮品盒,化妝品包裝盒,包裝盒定制,紙盒印刷',
       en: 'custom packaging boxes,box printing,gift box packaging,cosmetic packaging,food packaging boxes,product packaging,small batch packaging,corrugated boxes,paper box printing,retail packaging,mailer boxes',
       ja: 'パッケージ印刷,箱印刷,ギフト箱,化粧品パッケージ,食品箱,商品パッケージ,小ロットパッケージ,段ボール箱,紙箱印刷,梱包材',
     },
     descriptions: {
-      'zh-hk': '香港包裝盒訂製印刷，100個起訂，HK$4起/個。禮品盒、化妝品盒、食品包裝盒、月餅盒、磁吸盒。支持燙金、UV、凹凸、局部印刷。免費刀模設計，即日打樣。ISO9001+FSC認證。',
+      'zh-hk': '香港食品包裝印刷服務｜智印雲提供食品級包裝盒、食品袋、食品貼紙定制印刷，符合食品安全標準，支持小批量起訂。免費報價，3-5天交貨，立即查詢！',
       en: 'Custom packaging box printing from 100 units. Gift boxes, cosmetic boxes, food packaging, mooncake boxes. Foil stamping, UV, embossing. Free die-cut design, rush sampling. ISO9001 & FSC certified. Global shipping to US, UK, AU.',
       ja: 'プロのパッケージ印刷サービス。100個から注文可能。ギフト箱・化粧品箱・食品箱・月餅箱。箔押し・UV・エンボス対応。無料型設計、即日サンプル対応。ISO9001・FSC認証取得。全国配送。',
     },
@@ -234,13 +241,16 @@ const categorySeoData: Record<string, {
     },
   },
   'paper-bags': {
+    titles: {
+      'zh-hk': '紙袋印刷 香港 | 智印雲 ZprintPro — 牛皮紙袋 / 白卡紙袋 / 精品紙袋 定制',
+    },
     keywords: {
       'zh-hk': '紙袋印刷,牛皮紙袋,環保紙袋,手提紙袋,品牌紙袋,禮品紙袋,餐廳外賣紙袋,小批量紙袋,棉繩紙袋,白卡紙袋',
       en: 'paper bag printing,custom paper bags,kraft paper bags,eco friendly bags,branded paper bags,gift bags,retail bags,takeaway bags,small batch paper bags,twisted handle bags,white card paper bags',
       ja: '紙袋印刷,クラフト紙袋,エコ紙袋,手提げ紙袋,ブランド紙袋,ギフト袋,テイクアウト紙袋,小ロット紙袋,紙袋作成,ペーパーバッグ',
     },
     descriptions: {
-      'zh-hk': '香港紙袋印刷訂製，100個起訂，HK$1.8起/個。牛皮紙袋、環保紙袋、手提禮品袋、餐廳外賣袋。支援燙金、UV、凹凸、LOGO印刷。FSC環保認證紙張。適合零售、餐飲、活動、品牌推廣。即日交貨。',
+      'zh-hk': '香港紙袋印刷定制服務｜智印雲提供牛皮紙袋、白卡紙袋、環保紙袋、禮品紙袋等各類紙袋印刷，支持LOGO定制，小批量起訂。免費設計，即日交貨！',
       en: 'Custom paper bag printing from 100 units. Kraft bags, eco-friendly bags, retail & gift bags. Foil stamping, UV, embossing. FSC-certified paper, global delivery. Perfect for retail, F&B, events, branding.',
       ja: 'プロの紙袋印刷サービス。100個から注文可能。クラフト紙袋・エコ紙袋・手提げギフト袋。箔押し・UV・エンボス対応。FSC認証紙、即日納品。小売・飲食・イベント・ブランディングに最適。',
     },
@@ -255,6 +265,36 @@ const categorySeoData: Record<string, {
       'zh-hk': '同人誌及日系ACG周邊印刷專家。A5/B5 同人誌 10 本起印、亞克力鑰匙扣 / 立牌 / 罐型襟章 / 明信片套裝 / 環保托特袋。Comiket 前 24 小時特急対応,深圳工廠 DHL Express 2-4 日直送日本。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。繁體中文客服,日本在地支援。',
       en: 'Professional doujinshi & Japanese ACG merchandise printing. A5/B5 doujinshi (MOQ 10), acrylic keychains/stands, can badges, postcard sets, eco tote bags. 24-hour rush before Comiket. Ships from Shenzhen factory to Japan in 2-4 days via DHL Express. FSC paper, ISO 12647 color, ISO 9001 certified. Japanese-language support.',
       ja: '同人誌・推し活特化の印刷サービス。A5/B5 同人誌 10 部から対応、アクリルキーホルダー・スタンド・缶バッジ・ポストカード・エコトートバッグ。コミケ前 24 時間特急対応可能。深圳自社工場から DHL Express で 2-4 営業日でお届け。FSC 認証紙、ISO 12647 色彩管理、ISO 9001 取得。日本語サポート完備。',
+    },
+  },
+  'menus': {
+    titles: {
+      'zh-hk': '餐牌印刷 香港 | 智印雲 ZprintPro — 菜單 / 餐牌 / 酒水牌 定制印刷',
+    },
+    keywords: {
+      'zh-hk': '餐牌印刷,菜單印刷,酒水牌,PVC餐牌,過膠餐牌,皮革餐牌,餐廳餐牌,茶餐廳餐牌,酒吧餐牌,外賣餐牌',
+      en: 'menu printing,custom menus,restaurant menus,bar menus,PVC menus,laminated menus,leather menu covers,takeaway menus,food menus,drink menus',
+      ja: 'メニュー印刷,レストランメニュー,メニューブック,PVCメニュー,ラミネートメニュー,レザーメニュー,居酒屋メニュー,カフェメニュー',
+    },
+    descriptions: {
+      'zh-hk': '香港餐牌印刷定制服務｜智印雲提供PVC餐牌、過膠餐牌、皮革餐牌、菜單印刷，防水耐用，適合餐廳、茶餐廳、酒吧使用。免費設計，小批量起訂！',
+      en: 'Custom menu printing for restaurants, bars & cafes. PVC, laminated & leather menu covers. Waterproof & durable. Free design, small MOQ. Global shipping to US, UK, AU & worldwide.',
+      ja: 'プロのメニュー印刷サービス。レストラン・バー・カフェ向け。PVC・ラミネート・レザーカバー対応。防水・耐久性抜群。無料デザイン、小ロット対応。',
+    },
+  },
+  'red-packets': {
+    titles: {
+      'zh-hk': '利是封印刷 香港 | 智印雲 ZprintPro — 企業定制 / 婚慶 / 賀年 利是封',
+    },
+    keywords: {
+      'zh-hk': '利是封印刷,企業利是封,婚慶利是封,賀年利是封,定制利是封,燙金利是封,紅包印刷,新年利是封,結婚利是封,LOGO利是封',
+      en: 'red packet printing,custom red envelopes,Chinese New Year red packets,wedding red packets,corporate red packets,foil red packets,hong bao printing,new year red envelopes',
+      ja: 'ポチ袋印刷,オリジナルポチ袋,お年玉袋,結婚式ポチ袋,企業ポチ袋,箔押しポチ袋,紅包印刷,新年ポチ袋',
+    },
+    descriptions: {
+      'zh-hk': '香港利是封印刷定制服務｜智印雲提供企業LOGO利是封、婚慶利是封、賀年利是封印刷，支持燙金、UV等特殊工藝。小批量起訂，質量保證！',
+      en: 'Custom red packet printing for Chinese New Year, weddings & corporate branding. Foil stamping, UV & special finishes. Small MOQ, premium quality. Global shipping.',
+      ja: 'プロのポチ袋印刷サービス。お正月・結婚式・企業ブランディング向け。箔押し・UV・特殊加工対応。小ロット対応、高品質。全国配送。',
     },
   },
 };
@@ -292,11 +332,14 @@ export function generateCategoryMetadata(locale: Locale, categorySlug: string = 
   // 避免 layout 模板的 '| ZprintPro' 再次叠加后形成 "...| 智印雲 ZprintPro | ZprintPro"。
   // 2026-06-10：layout template 改为 '%s'（见 layout.tsx），此处由子页统一控制品牌后缀。
   const brandSuffix = locale === 'zh-hk' ? siteConfig.name : 'ZprintPro';
-  const categoryTitle = locale === 'zh-hk'
+  
+  // 优先使用自定义 title，没有则用默认格式
+  const customTitle = seoData.titles?.[locale];
+  const categoryTitle = customTitle || (locale === 'zh-hk'
     ? `${name} | 即日交貨 | ${brandSuffix}`
     : locale === 'en'
     ? `${name} | Global Shipping | ${brandSuffix}`
-    : `${name} | 配送対応 | ${brandSuffix}`;
+    : `${name} | 配送対応 | ${brandSuffix}`);
 
   return {
     title: categoryTitle,

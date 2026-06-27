@@ -5,17 +5,18 @@
  * template at /robots.txt by default, ignoring public/robots.txt.
  * We override it with an explicit App Router route that returns
  * our project robots.txt content.
+ *
+ * Edge Runtime: cannot use node:fs, so we import the content as a
+ * static string from a build-time-generated TypeScript module.
  */
-import { readFile } from 'node:fs/promises';
-import { join } from 'node:path';
+import { ROBOTS_TXT } from '@/generated/sitemap-content';
 
+export const runtime = 'edge';
 export const dynamic = 'force-static';
 export const revalidate = 3600;
 
 export async function GET(): Promise<Response> {
-  const filePath = join(process.cwd(), 'public', 'robots.txt');
-  const txt = await readFile(filePath, 'utf-8');
-  return new Response(txt, {
+  return new Response(ROBOTS_TXT, {
     status: 200,
     headers: {
       'Content-Type': 'text/plain; charset=utf-8',

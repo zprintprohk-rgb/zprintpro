@@ -97,6 +97,26 @@ export default function CategoryPage({
   // 获取分类名称
   const categoryName = getCategoryName(category, locale);
 
+  // 自定义 H1 映射（针对核心关键词优化）
+  const customH1Map: Record<string, Record<string, string>> = {
+    'packaging': {
+      'zh-hk': '香港食品包裝印刷定制 — 食品級包裝盒 / 食品袋 / 食品貼紙',
+    },
+    'paper-bags': {
+      'zh-hk': '香港紙袋印刷定制 — 牛皮紙袋 / 白卡紙袋 / 精品紙袋',
+    },
+    'flyers': {
+      'zh-hk': '香港宣傳單張印刷 — A4/A5 傳單 / 摺頁 / 開業傳單 快印',
+    },
+    'menus': {
+      'zh-hk': '香港餐牌印刷定制 — PVC餐牌 / 過膠餐牌 / 皮革餐牌',
+    },
+    'red-packets': {
+      'zh-hk': '香港利是封印刷定制 — 企業利是封 / 婚慶利是封 / 賀年利是封',
+    },
+  };
+  const pageH1 = customH1Map[slug]?.[locale] || categoryName;
+
   // 面包屑数据
   const breadcrumbItems = [
     { name: locale === 'zh-hk' ? '首頁' : locale === 'en' ? 'Home' : 'ホーム', url: `https://zprintpro.com/${locale}/` },
@@ -246,7 +266,7 @@ export default function CategoryPage({
                   <span className="text-white font-medium">{categoryName}</span>
                 </nav>
                 <h1 className="text-3xl md:text-4xl font-bold text-white drop-shadow-lg">
-                  {categoryName}
+                  {pageH1}
                 </h1>
                 <p className="text-white/90 text-base md:text-lg mt-2 drop-shadow-md max-w-2xl">
                   {t.bannerTitle}

@@ -37,9 +37,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "プレミアム名刺 | 箔押し UV 加工 | ZprintPro",
-        "description": "プレミアム名刺のプレミアム名刺は ZprintPro にお任せ。300g-400g マット/コットン/コート 高品質用紙、90×54mm 標準 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、1-3営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
-        "h1": " premium business cards",
-        "keywords": ["プレミアム名刺", "プレミアム名刺 印刷", "premium business cards"],
+        "description": "ZprintPro のプレミアム名刺印刷サービス。300g-400g のマット紙・コットン紙・コート紙に対応し、箔押し・スポットUV・エンボス加工が可能です。100 枚から対応、ISO 9001 認証取得工場で生産。香港直結で 1-3 営業日納品、全国配送承ります。無料見積もり、即日対応可能。",
+        "h1": "プレミアム名刺 | 箔押し・スポットUV加工",
+        "keywords": ["プレミアム名刺", "名刺印刷", "箔押し名刺", "高級名刺", "オリジナル名刺", "即日名刺"],
         "body": " same day delivery"
       }
     },
@@ -86,10 +86,10 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       
       },
       "ja": {
-        "title": "400g 厚口名刺 | 箔押し UV 加工 | ZprintPro",
-        "description": "400g 厚口名刺の400g 厚口名刺は ZprintPro にお任せ。300g-400g マット/コットン/コート 高品質用紙、90×54mm 標準 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、1-3営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
-        "h1": " designers",
-        "keywords": ["400g 厚口名刺", "400g 厚口名刺 印刷", "thick business cards 400g"],
+        "title": "400g 厚紙名刺 | 箔押し UV 加工 | ZprintPro",
+        "description": "ZprintPro の 400g 厚紙名刺印刷サービス。マット紙・コーンスターチ紙・アート紙に対応し、箔押し・UV 加工可能。弁護士・デザイナー・ハイエンドサービス向けに最適。100 枚から対応、香港直結で短納期、全国配送、ISO 9001 認証。",
+        "h1": "400g 厚紙名刺 | 重厚感プレミアムカード",
+        "keywords": ["400g 厚紙名刺", "厚紙名刺", "名刺印刷", "プレミアム名刺", "ハイエンド名刺", "即日名刺"],
         "body": " fast delivery."
       }
     },
@@ -138,9 +138,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "箔押し名刺 | 箔押し UV 加工 | ZprintPro",
-        "description": "箔押し名刺の箔押し名刺は ZprintPro にお任せ。300g-400g マット/コットン/コート 高品質用紙、90×54mm 標準 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、1-3営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
-        "h1": " luxury name cards",
-        "keywords": ["箔押し名刺", "箔押し名刺 印刷", "foil business cards"],
+        "description": "ZprintPro の箔押し名刺印刷サービス。金箔・銀箔・銅箔・ホログラム箔に対応し、300g-400g のアート紙・マット紙にプレス加工。法人名刺・パーソナルブランド向けに最適。100 枚から小ロット対応、香港直結で短納期納品。無料見積もり対応。",
+        "h1": "箔押し名刺 | 金箔・銀箔・ローズ金",
+        "keywords": ["箔押し名刺", "名刺印刷", "金箔名刺", "銀箔名刺", "ハイエンド名刺", "法人名刺"],
         "body": "箔押し名刺"
       }
     },

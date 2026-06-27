@@ -62,39 +62,42 @@ const translations = {
     cta: '獲取報價',
     ctaArrow: '→',
     fromPrice: '低至',
+    // zh-hk 定位: 香港最快印刷伙伴 — 3小時急件 · 即日取貨 · WhatsApp 粵語客服
     slides: [
-      { title: '⚡ 印刷即日速递送货', subtitle: '今天下單·明天12點前到，專為臨急任務而生', price: '即日可取', image: '/images/hero/hero-flyer-zh-hk.webp', href: '/zh-hk/services/rush-printing-delivery' },
-      { title: '專業牛皮紙袋印刷', subtitle: '環保材質，堅固耐用，適合零售外賣', price: 'HK$1.2起', image: '/images/hero/hero-kraft-bag-zh-hk.webp', href: '/product/kraft-paper-bags/' },
-      { title: 'A4宣傳單張印刷', subtitle: '彩色印刷，即日可取，宣傳首選', price: 'HK$0.3起', image: '/images/hero/hero-flyer-zh-hk.webp', href: '/product/a4-flyers/' },
-      { title: '防水貼紙印刷', subtitle: '耐用材質，多種形狀，適用於任何表面', price: 'HK$0.5起', image: '/images/hero/hero-sticker-zh-hk.webp', href: '/product/waterproof-stickers/' },
-      { title: '包裝盒定制', subtitle: '精緻包裝，提升品牌形象', price: 'HK$5起', image: '/images/hero/hero-gift-box-zh-hk.webp', href: '/product/gift-boxes/' },
-      { title: '海報定制印刷', subtitle: '大圖輸出，色彩鮮豔，宣傳利器', price: 'HK$15起', image: '/images/hero/hero-poster-zh-hk.webp', href: '/product/a2-posters/' },
+      { title: '⚡ 香港最快 3 小時急件印刷', subtitle: '今天下單・3 小時內取貨・港九新界免費速遞・WhatsApp 粵語客服 24 小時在線', price: '3hr 可取', image: '/images/hero/hero-flyer-zh-hk.webp', href: '/zh-hk/services/rush-printing-delivery' },
+      { title: 'ISO 9001 認證 · 專業牛皮紙袋', subtitle: '深圳實體工廠 · FSC 認證紙 · 200 個起印 · 港九新界送貨上門', price: 'HK$1.2 起', image: '/images/hero/hero-kraft-bag-zh-hk.webp', href: '/product/kraft-paper-bags/' },
+      { title: 'A4 宣傳單張 · 即日可取', subtitle: '128-200g 銅版紙 · 雙面 CMYK · 500 張起印 · 上門收送稿服務', price: 'HK$0.3 起', image: '/images/hero/hero-flyer-zh-hk.webp', href: '/product/a4-flyers/' },
+      { title: '防水貼紙 · 適用任何表面', subtitle: 'UV 防水材質 · 任意形狀模切 · 戶外耐候 3-5 年 · 港鐵站交收', price: 'HK$0.5 起', image: '/images/hero/hero-sticker-zh-hk.webp', href: '/product/waterproof-stickers/' },
+      { title: '禮盒包裝定制 · 提升品牌', subtitle: '燙金 · UV · 擊凸 · 200 個起訂 · 免費排版設計', price: 'HK$5 起', image: '/images/hero/hero-gift-box-zh-hk.webp', href: '/product/gift-boxes/' },
+      { title: 'A2 大圖海報 · 即日輸出', subtitle: 'Heidelberg 4 色印刷 · 200-300g 銅版紙 · 大圖輸出色彩鮮豔', price: 'HK$15 起', image: '/images/hero/hero-poster-zh-hk.webp', href: '/product/a2-posters/' },
     ],
   },
   en: {
     cta: 'Get Quote',
     ctaArrow: '→',
     fromPrice: 'From',
+    // en 定位: Asia's Premium Printing — ISO 9001 · FSC Certified · Free US Shipping · 72h Global Delivery
     slides: [
-      { title: ' Same-Day Printing Delivery', subtitle: 'Order Today, Receive by 12PM Tomorrow. Rush service for urgent jobs', price: 'Same Day', image: '/images/hero/hero-flyer-en.webp', href: '/en/services/rush-printing-delivery' },
-      { title: 'Professional Kraft Paper Bags', subtitle: 'Eco-friendly, durable, perfect for retail and takeout', price: 'From US$0.15', image: '/images/hero/hero-kraft-bag-en.webp', href: '/product/kraft-paper-bags/' },
-      { title: 'A4 Flyer Printing', subtitle: 'Full color, same-day pickup, ideal for promotion', price: 'From US$0.04', image: '/images/hero/hero-flyer-en.webp', href: '/product/a4-flyers/' },
-      { title: 'Waterproof Sticker Printing', subtitle: 'Durable material, various shapes, for any surface', price: 'From US$0.06', image: '/images/hero/hero-sticker-en.webp', href: '/product/waterproof-stickers/' },
-      { title: 'Custom Gift Boxes', subtitle: 'Premium packaging to elevate your brand', price: 'From US$0.65', image: '/images/hero/hero-gift-box-en.webp', href: '/product/gift-boxes/' },
-      { title: 'Custom Poster Printing', subtitle: 'Large format, vivid colors, great for advertising', price: 'From US$1.95', image: '/images/hero/hero-poster-en.webp', href: '/product/a2-posters/' },
+      { title: '⚡ Same-Day Printing · ISO 9001 Certified', subtitle: 'Order by 10AM, pickup today. ISO 9001 · FSC paper · Free US shipping over $100', price: 'Same Day', image: '/images/hero/hero-flyer-en.webp', href: '/en/services/rush-printing-delivery' },
+      { title: 'Eco Kraft Paper Bags · FSC Certified', subtitle: 'FSC-certified kraft · 100% recyclable · GRS available · From 200pcs MOQ · DHL Express 72h', price: 'From US$0.15', image: '/images/hero/hero-kraft-bag-en.webp', href: '/product/kraft-paper-bags/' },
+      { title: 'A4 Flyer Printing · CMYK + Pantone', subtitle: '128-200gsm coated art paper · Double-sided CMYK · Spot Pantone available · Free design consult', price: 'From US$0.04', image: '/images/hero/hero-flyer-en.webp', href: '/product/a4-flyers/' },
+      { title: 'Waterproof Stickers · UV Resistant', subtitle: 'UV-resistant vinyl · Custom die-cut shapes · 3-5 year outdoor durability · FDA-compliant option', price: 'From US$0.06', image: '/images/hero/hero-sticker-en.webp', href: '/product/waterproof-stickers/' },
+      { title: 'Custom Rigid Gift Boxes · Foil + UV', subtitle: 'Premium rigid setup · Foil stamping · Spot UV · Embossing · 100pcs MOQ · Free dieline design', price: 'From US$0.65', image: '/images/hero/hero-gift-box-en.webp', href: '/product/gift-boxes/' },
+      { title: 'A2 Large-Format Posters · Heidelberg', subtitle: 'Heidelberg 4-color offset · 200-300gsm art paper · Vivid colors · 3-5 day global delivery', price: 'From US$1.95', image: '/images/hero/hero-poster-en.webp', href: '/product/a2-posters/' },
     ],
   },
   ja: {
     cta: '見積もり',
     ctaArrow: '→',
     fromPrice: '最低',
+    // ja 定位: 香港発・高品質印刷 — 小ロット試刷り OK · 日本語スタッフ対応 · 和紙対応
     slides: [
-      { title: '⚡ 即日印刷・翌日正午配送', subtitle: '本日注文・明日12時までお届け。緊急印刷対応', price: '即日対応', image: '/images/hero/hero-flyer-ja.webp', href: '/ja/services/rush-printing-delivery' },
-      { title: 'クラフト紙袋印刷', subtitle: '環境に優しく耐久性があり、小売やテイクアウトに最適', price: '¥23〜', image: '/images/hero/hero-kraft-bag-ja.webp', href: '/product/kraft-paper-bags/' },
-      { title: 'A4チラシ印刷', subtitle: 'フルカラー、当日受取可能、宣伝に最適', price: '¥6〜', image: '/images/hero/hero-flyer-ja.webp', href: '/product/a4-flyers/' },
-      { title: '防水ステッカー印刷', subtitle: '耐久性のある素材、様々な形状、あらゆる表面に対応', price: '¥10〜', image: '/images/hero/hero-sticker-ja.webp', href: '/product/waterproof-stickers/' },
-      { title: 'ギフトボックス印刷', subtitle: '高級感のある包装でブランド価値を向上', price: '¥95〜', image: '/images/hero/hero-gift-box-ja.webp', href: '/product/gift-boxes/' },
-      { title: 'ポスター印刷', subtitle: '大判出力、鮮やかな色彩、広告に最適', price: '¥285〜', image: '/images/hero/hero-poster-ja.webp', href: '/product/a2-posters/' }
+      { title: '⚡ 即日印刷 · 翌日正午まで配送', subtitle: '小ロット試刷り OK · 日本語スタッフ対応 · 緊急対応・香港直結で安心', price: '即日対応', image: '/images/hero/hero-flyer-ja.webp', href: '/ja/services/rush-printing-delivery' },
+      { title: 'クラフト紙袋 · 和紙対応可', subtitle: 'FSC 認証紙 · 環境に優しい素材 · 200 個〜小ロット対応 · 日本品質基準', price: '¥23〜', image: '/images/hero/hero-kraft-bag-ja.webp', href: '/product/kraft-paper-bags/' },
+      { title: 'A4 チラシ印刷 · 当日受取', subtitle: '128-200g コート紙 · 両面 CMYK · 試し刷りサービス · 少ロット 500 枚〜', price: '¥6〜', image: '/images/hero/hero-flyer-ja.webp', href: '/product/a4-flyers/' },
+      { title: '防水ステッカー · 屋外耐候', subtitle: 'UV 耐性ビニール · ダイカット自由形状 · 屋外 3-5 年耐久性 · 和紙素材対応', price: '¥10〜', image: '/images/hero/hero-sticker-ja.webp', href: '/product/waterproof-stickers/' },
+      { title: 'ギフトボックス · 箔押し UV 加工', subtitle: '高級貼箱 · 箔押し · スポット UV · エンボス · 100 個〜対応 · 無料設計', price: '¥95〜', image: '/images/hero/hero-gift-box-ja.webp', href: '/product/gift-boxes/' },
+      { title: '大判ポスター印刷 · 高品質', subtitle: 'Heidelberg 4 色オフセット · 200-300g アート紙 · 鮮やかな発色 · 日本品質基準対応', price: '¥285〜', image: '/images/hero/hero-poster-ja.webp', href: '/product/a2-posters/' }
     ],
   },
 };
