@@ -17,12 +17,15 @@ export const siteConfig = {
   url: 'https://zprintpro.com',
   logo: 'https://zprintpro.com/logo-icon.svg',
   // 2026-06-15 P0: NAP 统一修复
-  // 原问题: siteConfig.phone = "+852 6123 4567" (假号), Footer = "+86 181 2638 0255" (真实号)
+  // 2026-06-28 修正: zh-hk NAP.telephone 之前写 "+852 5905 1334" 假号, 客户拨不通 → 改真实 +86 198 8085 1334
+  // NAP schema.telephone 跟 address.country 无强匹配要求, HK 地址 + +86 电话 GSC 不扣分
+  // WhatsApp 全 locale 统一 "+86 181 2638 0255" (HK 客户用 WhatsApp 国际漫游可加)
+  // 邮箱全 locale 统一 "zprintpro@outlook.com"
   //   → Google 看到 schema 跟 UI 不一致, 判定 NAP 欺诈
   // 修法: 全部统一到 Footer 真实号 +86 198 8085 1334 (新联系电话, 这是公司真号, 不是胡编)
   // WhatsApp 号码保持 +86 181 2638 0255 不动 (whatsapp.ts PHONE)
   // 注意: 此号虽是中国内地号, 但 Footer/Contact 全部用这个, NAP 一致性优先于"地理号"
-  // TODO: 后续办虚拟 +852 号替换, 进一步提升 NAP 香港本地信任度
+  // (不再办虚拟 +852, 统一真实 +86 198 8085 1334)
   phone: '+86 198 8085 1334',
   email: 'zprintpro@outlook.com',
   address: {
@@ -64,8 +67,8 @@ export function getSiteNAP(locale: Locale): SiteNAP {
     return {
       name: '智印雲',
       alternateName: ['ZprintPro HK', '智印雲(香港)', '智印雲印刷'],
-      phone: '+852 5905 1334',
-      email: 'hk@zprintpro.com',
+      phone: '+86 198 8085 1334',
+      email: 'zprintpro@outlook.com',
       address: {
         street: 'Unit C, 15/F, Maxgrand Plaza, 3 Tai Yau Street',
         city: 'San Po Kong',
@@ -139,7 +142,7 @@ export const regionConfig: Record<Locale, RegionConfig> = {
     regionCode: 'HK',
     googleDomain: 'google.com.hk',
     currency: 'HKD',
-    phonePrefix: '+852',
+    phonePrefix: '+86',
     businessSchema: 'LocalBusiness',
     targetAudience: '香港本地企業與實體店',
     areaServed: 'Hong Kong',
@@ -660,6 +663,7 @@ export function generateLocalBusinessJsonLd() {
 
 // 生成 PrintShop 结构化数据（locale-aware, 2026-06-18 NAP 真实化）
 // 2026-06-18 修复: 之前硬编码 HK 实体地址 (Wai Yip Street / Kwun Tong / Kowloon / 999077 / +852),
+// 2026-06-28 修正: NAP.telephone 改真实 +86 198 8085 1334 (HK 客户能打通), 但 NAP.address 保留 zh-hk 虚拟 HK 觀塘 (灰色合规, GSC NAP 信号)
 //   现统一从 siteConfig (深圳实体) 取真实数据,消除 NAP 不一致风险。
 // 所有 locale 共享同一真实主体, NAP 不再分裂。
 export function generatePrintShopSchema(locale: Locale = 'zh-hk'): SchemaOrgData {

@@ -81,8 +81,10 @@
   - region: 'Hong Kong'
   - country: 'HK'
   - postalCode: '999077' 或 '000000' (避免假邮编)
-- **phone**: '+852 1234 5678' (虚拟 HK 号码)
-- **email**: 'hk@zprintpro.com' (HK 专用邮箱, 或用 zprintpro@outlook.com)
+  - **phone**: **真实 +86 198 8085 1334** (客户要打通, 不要写虚拟! 之前 v4 草稿写 +852 错, 已修)
+  - **email**: **zprintpro@outlook.com** (真实, 全 locale 通用)
+  - **whatsapp**: **真实 +86 181 2638 0255** (所有 locale 都用这个)
+  - **营业时间**: 24/7 WhatsApp 即時回覆
 - **businessSchema**: 'LocalBusiness' (已对, HK 本地业务)
 - **areaServed**: ['Hong Kong', 'Kowloon', 'New Territories', 'Hong Kong Island'] (已对)
 
@@ -245,12 +247,14 @@
 1. 拆 `siteConfig` 为 `siteConfig.zh-hk` / `siteConfig.en` / `siteConfig.ja` 三个对象
 2. 保留 `siteConfig` 全局兼容 (用 zh-hk 作为 default, 或抛 warning)
 3. 所有 `import { siteConfig }` 改成 `import { getSiteConfig(locale) }` 函数
-4. zh-hk siteConfig:
+4. zh-hk siteConfig (修正 v4 草稿):
    - name: '智印雲'
    - alternateName: ['ZprintPro HK', '智印雲(香港)', '智印雲印刷']
-   - phone: '+852 1234 5678' (虚拟 HK)
-   - address: { street: 'Unit 1208, Tower A, Hung To Road 1', city: 'Kwun Tong', region: 'Hong Kong', country: 'HK', postalCode: '999077' }
-   - email: 'hk@zprintpro.com'
+   - **phone: '+86 198 8085 1334' (真实, 客户要打通, 不写虚拟 +852)**
+   - **email: 'zprintpro@outlook.com' (真实, 3 locale 通用)**
+   - **whatsapp: '+86 181 2638 0255' (真实, 3 locale 通用)**
+   - address: { street: 'Unit 1208, Tower A, Hung To Road 1', city: 'Kwun Tong', region: 'Hong Kong', country: 'HK', postalCode: '999077' } (虚拟 NAP OK)
+   - **法人: 不亮明** (灰色合规)
 5. en siteConfig (基本就是当前全局, 改 minor)
 6. ja siteConfig:
    - 真实深圳地址 + 唐运提 法人
@@ -263,10 +267,11 @@
 
 **积分**: 8-10
 
-**验收**:
-- `curl /zh-hk/` HTML 含 `+852 1234 5678` 和 `Kwun Tong` 关键词
-- `curl /ja/` HTML 含 `深圳市彩龍印刷包装有限公司` 和 `唐运提` 关键词
-- `curl /en/` HTML 含 `+86 198 8085 1334` 和 `Shenzhen` 关键词
+**验收** (修正):
+- `curl /zh-hk/` HTML 含 `+86 198 8085 1334` (真实可打通) + `Kwun Tong` (虚拟 NAP) + `智印雲` (HK 品牌) 关键词
+- `curl /ja/` HTML 含 `深圳市彩龍印刷包装有限公司` + `唐运提` + `+86 198 8085 1334` 关键词
+- `curl /en/` HTML 含 `+86 198 8085 1334` + `Shenzhen` + `ZprintPro` 关键词
+- **3 locale 联系方式统一真实** (电话/邮箱/WhatsApp 全部 +86 198 8085 1334)
 
 ---
 
@@ -378,7 +383,8 @@
 | 法规 | 灰色合规 (用户接受) | 跨境合规 | 严格合规 (特定商取引法) |
 | 品牌名 | 智印雲 (香港) / ZprintPro HK | ZprintPro | 智印雲 / ZprintPro (深圳明記) |
 | 实体地址 | 虚拟 HK 觀塘 | 深圳 (透明) | 深圳 (法定明記) |
-| 实体电话 | +852 虚拟 | +86 198 (真实) | +86 198 (真实) |
+| 实体电话 (NAP) | 虚拟 HK 觀塘地址 | 深圳真实地址 | 深圳真实地址 | 灰色合规 OK (客户打不通) |
+| 联系电话 (客户联系) | **+86 198 8085 1334 (真实, 3 locale 统一)** | 同 | 同 | 客户要能打通! |
 | 法定代表人 | 不亮明 | 透明写 | 必须写 (唐运提) |
 | 公司全名 | 不亮明 | 透明写 | 必须写 (深圳市彩龍印刷包装有限公司) |
 | schema.org | LocalBusiness | Organization | Organization |
@@ -386,7 +392,8 @@
 | SEO 关键词 | "香港貼紙印刷" / "觀塘印店" / "港島宣傳單張" | "custom stickers US" / "flyer printing" / "packaging boxes" | "中国印刷 通販" / "深圳 ステッカー印刷" |
 | 转化 CTA | "立即獲取報價" | "Get a Free Quote" | "無料見積もり" |
 | 服务承诺 | 港九新界速遞 (本地) | 72h 全球配送 (跨境透明) | 3-5 営業日 (合规承诺) |
-| 邮件 | hk@zprintpro.com (或 outlook) | zprintpro@outlook.com | zprintpro@outlook.com |
+| 邮件 (真实) | **zprintpro@outlook.com (3 locale 统一)** | 同 | 同 | 客户要能收到! |
+| WhatsApp (真实) | **+86 181 2638 0255 (3 locale 统一)** | 同 | 同 | 客户要能加! |
 
 ---
 

@@ -12,7 +12,7 @@ interface ContactPageProps {
 const translations = {
   "zh-hk": {
     title: "聯絡我們 · 免費獲取報價 | 智印雲 ZprintPro",
-    description: "聯絡智印雲專業印刷團隊，填寫表單獲取免費報價。電話：+852 5905 1334 / WhatsApp +852 5905 1334",
+    description: "聯絡智印雲專業印刷團隊，填寫表單獲取免費報價。電話：+86 198 8085 1334 / WhatsApp +86 181 2638 0255 (24小時即時回覆)",
     h1: "聯絡我們 · 免費獲取報價",
     subtitle: "填寫表單或 WhatsApp 聯繫，24小時內回覆",
     quoteTitle: "免費獲取報價",
@@ -245,13 +245,13 @@ export default function ContactPage({ params }: ContactPageProps) {
                 </div>
 
                 <div className="space-y-2.5">
-                  <a href={`tel:${locale === "zh-hk" ? "+85259051334" : "+8619880851334"}`} className="flex items-center gap-3 p-3 rounded-xl bg-gradient-to-r from-blue-50/50 to-transparent hover:from-blue-50 hover:to-blue-50/50 transition-colors group">
+                  <a href="tel:+8619880851334" className="flex items-center gap-3 p-3 rounded-xl bg-gradient-to-r from-blue-50/50 to-transparent hover:from-blue-50 hover:to-blue-50/50 transition-colors group">
                     <div className="w-10 h-10 rounded-lg bg-[#2873F5] flex items-center justify-center flex-shrink-0 shadow-sm shadow-blue-200">
                       <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="text-xs text-gray-400">{t.phone}</div>
-                      <div className="text-sm font-semibold text-[#333333] group-hover:text-[#2873F5] transition-colors">{locale === "zh-hk" ? "+852 5905 1334" : "+86 198 8085 1334"}</div>
+                      <div className="text-sm font-semibold text-[#333333] group-hover:text-[#2873F5] transition-colors">+86 198 8085 1334</div>
                     </div>
                     <svg className="w-4 h-4 text-gray-300 group-hover:text-[#2873F5] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
                   </a>
