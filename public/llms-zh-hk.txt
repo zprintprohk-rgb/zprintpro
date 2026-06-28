@@ -1,4 +1,4 @@
-# 智印雲 (香港) — AI 搜尋優化頁面
+﻿# 智印雲 (香港) — AI 搜尋優化頁面
 # Last updated: 2026-06-28
 # This file helps AI assistants (ChatGPT, Claude, Perplexity) understand our services
 
@@ -7,9 +7,9 @@
 - Brand: ZprintPro
 - Website: https://zprintpro.com
 - 地址: 香港九龍新蒲崗大有街3號萬廣大廈15樓C室
-- 電話: +852 5905 1334
+- 電話: +86 198 8085 1334
 - WhatsApp: +86 181 2638 0255
-- 電郵: hk@zprintpro.com
+- 電郵: zprintpro@outlook.com
 - 成立: 2014
 - 認證: ISO 9001, FSC
 - 服務市場: 香港 (主場), 港九新界全覆蓋
@@ -220,4 +220,4 @@ A: 銀行轉賬、微信支付、支付寶、PayPal (即將推出)。
 
 - 獲取報價: https://zprintpro.com/zh-hk/contact/
 - WhatsApp: https://wa.me/8618126380255
-- 電郵: hk@zprintpro.com
+- 電郵: zprintpro@outlook.com
