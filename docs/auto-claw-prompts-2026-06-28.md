@@ -80,7 +80,7 @@
 - 每个 pillar page → 链接 5-10 个相关 product/category
 - 每个 category → 链接所有 product + 1 个 pillar
 - 每个 product → 链接同品类 4-6 个 product + 父级 category + 1 buying guide
-- Anchor text 用关键词（"專業燙金名片印刷"），不用 "click here"
+- Anchor text 用关键词（"專業防水貼紙印刷"），不用 "click here"
 - Footer 内链扩充：加 "Popular Products" + "Top Categories" 两行
 - 内链图可视化文档 `docs/internal-link-map.md`
 
@@ -93,7 +93,7 @@
 **积分**: 4-6
 
 **具体**:
-- 优先处理 6 个 cluster：business-cards(6) / red-packets(6) / flyers(6) / boxes(6) / stickers(5) / calendars(4) = 33 张
+- 优先处理 6 个 cluster: **stickers(5) / flyers(6) / boxes(6) / paper-bags(2) / labels(3) / red-packets(6) = 28 张** (主推贴纸/宣传单张/包装盒, 名片/日历不赚钱)
 - 使用 Seedream 4.5 或 Kimi 2.6 API
 - 文件命名: `zprintpro-{category}-{slug}-{locale}.jpg`
 - 最低 800x600，>50KB，风格统一
@@ -131,7 +131,7 @@
 - 30 秒同参数缓存（CF KV）
 - A/B 埋点: quote_calculated
 
-**验收**: `curl -X POST /api/quote/calculate -d '{"product":"premium-business-cards","qty":500}'` 返回有效价格
+**验收**: `curl -X POST /api/quote/calculate -d '{"product":"premium-stickers","qty":500}'` 返回有效价格
 
 ---
 

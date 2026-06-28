@@ -134,7 +134,7 @@
 - areaServed 6 国家
 
 **SEO**:
-- 关键词: "custom printing US" / "business cards UK" / "stickers Australia"
+- 关键词: "custom stickers US" / "flyer printing UK" / "packaging boxes Australia" (主推贴纸/宣传单张/包装盒, 不写名片)
 - 不需要本地化 (美国/英国是跨境目的地)
 
 ---
@@ -383,7 +383,7 @@
 | 公司全名 | 不亮明 | 透明写 | 必须写 (深圳市彩龍印刷包装有限公司) |
 | schema.org | LocalBusiness | Organization | Organization |
 | areaServed | HK 4 区 | 6 国 (US/UK/AU/CA/NZ/SG) | Japan + Asia |
-| SEO 关键词 | "香港印刷" / "港島名片" | "custom printing US" | "中国印刷 通販" / "深圳 印刷" |
+| SEO 关键词 | "香港貼紙印刷" / "觀塘印店" / "港島宣傳單張" | "custom stickers US" / "flyer printing" / "packaging boxes" | "中国印刷 通販" / "深圳 ステッカー印刷" |
 | 转化 CTA | "立即獲取報價" | "Get a Free Quote" | "無料見積もり" |
 | 服务承诺 | 港九新界速遞 (本地) | 72h 全球配送 (跨境透明) | 3-5 営業日 (合规承诺) |
 | 邮件 | hk@zprintpro.com (或 outlook) | zprintpro@outlook.com | zprintpro@outlook.com |
