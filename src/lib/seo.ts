@@ -34,6 +34,87 @@ export const siteConfig = {
   },
 };
 
+// ============================================================================
+// v4: 3 Locale Independent NAP (Name / Address / Phone)
+// zh-hk: Virtual HK entity (gray compliance, user accepted)
+// en: Shenzhen cross-border (transparent)
+// ja: Shenzhen strict compliance (legal entity disclosed)
+// ============================================================================
+
+export interface SiteNAP {
+  name: string;
+  alternateName: string[];
+  phone: string;
+  email: string;
+  address: {
+    street: string;
+    city: string;
+    region: string;
+    country: string;
+    postalCode?: string;
+  };
+  businessSchema: 'LocalBusiness' | 'Organization';
+  areaServed: string[];
+  founder?: string;
+  legalEntityName?: string;
+}
+
+export function getSiteNAP(locale: Locale): SiteNAP {
+  if (locale === 'zh-hk') {
+    return {
+      name: '智印雲',
+      alternateName: ['ZprintPro HK', '智印雲(香港)', '智印雲印刷'],
+      phone: '+852 5905 1334',
+      email: 'hk@zprintpro.com',
+      address: {
+        street: 'Unit C, 15/F, Maxgrand Plaza, 3 Tai Yau Street',
+        city: 'San Po Kong',
+        region: 'Kowloon',
+        country: 'HK',
+        postalCode: undefined,
+      },
+      businessSchema: 'LocalBusiness',
+      areaServed: ['Hong Kong', 'Kowloon', 'New Territories', 'Hong Kong Island'],
+    };
+  }
+  if (locale === 'ja') {
+    return {
+      name: '智印雲',
+      alternateName: ['ZprintPro', '深セン印刷'],
+      phone: '+86 198 8085 1334',
+      email: 'zprintpro@outlook.com',
+      address: {
+        street: 'No.1 Jiacheng Road, Pinghu Street, Longgang District',
+        city: 'Shenzhen',
+        region: 'Guangdong',
+        country: 'CN',
+        postalCode: '518111',
+      },
+      businessSchema: 'Organization',
+      areaServed: ['Japan', 'China', 'Asia'],
+      founder: '唐运提',
+      legalEntityName: '深圳市彩龙印刷包装有限公司',
+    };
+  }
+  // en (default)
+  return {
+    name: 'ZprintPro',
+    alternateName: ['ZprintPro Global', 'ZprintPro'],
+    phone: '+86 198 8085 1334',
+    email: 'zprintpro@outlook.com',
+    address: {
+      street: 'No.1 Jiacheng Road, Pinghu Street, Longgang District',
+      city: 'Shenzhen',
+      region: 'Guangdong',
+      country: 'CN',
+      postalCode: '518111',
+    },
+    businessSchema: 'Organization',
+    areaServed: ['US', 'GB', 'AU', 'CA', 'NZ', 'SG'],
+  };
+}
+
+
 // 地區配置（三地區獨立SEO戰略）
 export interface RegionConfig {
   lang: string;
@@ -55,10 +136,10 @@ export interface RegionConfig {
 export const regionConfig: Record<Locale, RegionConfig> = {
   'zh-hk': {
     lang: 'zh-Hant-HK',
-    regionCode: 'CN',
+    regionCode: 'HK',
     googleDomain: 'google.com.hk',
     currency: 'HKD',
-    phonePrefix: '+86',
+    phonePrefix: '+852',
     businessSchema: 'LocalBusiness',
     targetAudience: '香港本地企業與實體店',
     areaServed: 'Hong Kong',
@@ -477,24 +558,25 @@ export function generateProductMetadata(
 
 // 生成地區化 Business 結構化數據（核心：按地區切換 LocalBusiness / Organization）
 export function generateBusinessJsonLd(locale: Locale) {
+  const nap = getSiteNAP(locale);
   const config = regionConfig[locale];
   const isLocalBusiness = config.businessSchema === 'LocalBusiness';
 
   const baseSchema: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': config.businessSchema,
-    name: siteConfig.name,
-    alternateName: siteConfig.alternateName,
+    name: nap.name,
+    alternateName: nap.alternateName,
     url: siteConfig.url,
     logo: siteConfig.logo,
     image: siteConfig.logo,
-    telephone: siteConfig.phone,
-    email: siteConfig.email,
+    telephone: nap.phone,
+    email: nap.email,
     priceRange: config.priceRange,
     areaServed: config.areaServed,
     contactPoint: {
       '@type': 'ContactPoint',
-      telephone: siteConfig.phone,
+      telephone: nap.phone,
       contactType: config.contactType,
       availableLanguage: locale === 'zh-hk'
         ? ['Chinese', 'English']
@@ -518,11 +600,11 @@ export function generateBusinessJsonLd(locale: Locale) {
       ],
       address: {
         '@type': 'PostalAddress',
-        streetAddress: siteConfig.address.street,
-        addressLocality: siteConfig.address.city,
-        addressRegion: siteConfig.address.region,
-        addressCountry: siteConfig.address.country,
-        postalCode: siteConfig.address.postalCode || undefined,
+        streetAddress: nap.address.street,
+        addressLocality: nap.address.city,
+        addressRegion: nap.address.region,
+        addressCountry: nap.address.country,
+        postalCode: nap.address.postalCode || undefined,
       },
       geo: config.geoCoordinates
         ? {
@@ -531,7 +613,7 @@ export function generateBusinessJsonLd(locale: Locale) {
             longitude: config.geoCoordinates.lng,
           }
         : undefined,
-      hasMap: `https://www.google.com/maps/search/?api=1&query=${siteConfig.address.city},${siteConfig.address.region}`,
+      hasMap: `https://www.google.com/maps/search/?api=1&query=${nap.address.city},${nap.address.region}`,
       openingHoursSpecification: [
         {
           '@type': 'OpeningHoursSpecification',
@@ -1193,16 +1275,16 @@ export function generateHreflangTags(path: string = '') {
 // 多语言 GEO 信号配置（兼容新类型系统）
 export const geoConfig: Record<Locale, import('@/types/seo').GeoSignals> = {
   'zh-hk': {
-    region: 'CN',
+    region: 'HK',
     currency: 'HKD',
     pricePrefix: 'HK$',
-    areaServed: ['Shenzhen', 'Guangdong', 'Longgang', 'Pinghu'],
+    areaServed: ['Hong Kong', 'Kowloon', 'New Territories', 'Hong Kong Island'],
     phone: siteConfig.phone,
     address: `${siteConfig.address.street}, ${siteConfig.address.city}, ${siteConfig.address.region}`,
     // 2026-06-18: 香港派送区域保留 (作为 areaServed),但移除"港鐵站/即日取"等暗示本地取货的词
     //   跨境模式下香港消费者通过顺丰/DHL 收件,不再有"地铁站交收"实体服务
     deliveryText: '跨境配送，香港島/九龍/新界均可送達',
-    geoKeywords: ['深圳', '龍崗', '平湖', '廣東', '華南', '中國印刷', '深圳印刷', '龍崗印刷'],
+    geoKeywords: ['香港', '九龍', '新界', '港島', '灣仔', '旺角', '銅鑼灣', '尖沙咐'],
   },
   'en': {
     region: 'US',
@@ -1230,13 +1312,14 @@ export const geoConfig: Record<Locale, import('@/types/seo').GeoSignals> = {
 import type { SchemaOrgData } from '@/types/seo';
 
 export function generateOrganizationSchema(locale: Locale): SchemaOrgData {
+  const nap = getSiteNAP(locale);
   const geo = geoConfig[locale];
   // 2026-06-14 Phase B P0-6: JA locale 优先用 NEXT_PUBLIC_JA_PHONE / JA 邮箱做 contactPoint
-  // 未配置时 fallback 到默认 siteConfig.phone
+  // 未配置时 fallback 到默认 nap.phone
   const jaPhone = process.env.NEXT_PUBLIC_JA_PHONE;
   const jaEmail = process.env.NEXT_PUBLIC_JA_EMAIL;
   const isJA = locale === 'ja';
-  const contactTelephone = isJA && jaPhone ? jaPhone : (geo.phone || siteConfig.phone);
+  const contactTelephone = isJA && jaPhone ? jaPhone : (geo.phone || nap.phone);
   const contactEmail = isJA && jaEmail ? jaEmail : (siteConfig as { email?: string }).email || undefined;
   return {
     '@context': 'https://schema.org',
@@ -1257,6 +1340,7 @@ export function generateOrganizationSchema(locale: Locale): SchemaOrgData {
 }
 
 export function generateLocalBusinessSchema(locale: Locale): SchemaOrgData {
+  const nap = getSiteNAP(locale);
   const geo = geoConfig[locale];
   return {
     '@context': 'https://schema.org',
@@ -1265,19 +1349,19 @@ export function generateLocalBusinessSchema(locale: Locale): SchemaOrgData {
     image: `${siteConfig.url}/images/hero/main-hero.webp`,
     '@id': `${siteConfig.url}/${locale}`,
     url: `${siteConfig.url}/${locale}`,
-    telephone: geo.phone || siteConfig.phone,
+    telephone: geo.phone || nap.phone,
     priceRange: geo.pricePrefix,
     address: {
       '@type': 'PostalAddress',
-      streetAddress: siteConfig.address.street,
-      addressLocality: siteConfig.address.city,
-      addressRegion: siteConfig.address.region,
+      streetAddress: nap.address.street,
+      addressLocality: nap.address.city,
+      addressRegion: nap.address.region,
       addressCountry: geo.region,
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: '22.5431',
-      longitude: '114.0579',
+      latitude: '22.3193',
+      longitude: '114.1694',
     },
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
