@@ -147,9 +147,9 @@ export default function ContactPage({ params }: ContactPageProps) {
 
   return (
     <main className="min-h-screen bg-gray-50 py-12 md:py-16">
-      <JsonLd data={businessJsonLd} />
-      <JsonLd data={contactPageJsonLd} />
-      <JsonLd data={localBusinessJsonLd} />
+      {/* 2026-06-28 fix(contact-500): next 14.2 + Edge Runtime 在连续 3 个独立 <JsonLd> + dangerouslySetInnerHTML 时 streaming 末尾抛错。
+          改用 home 同款 1 个 <JsonLd data={[array]}> 形式（home 200 ✅）。 */}
+      <JsonLd data={[businessJsonLd, contactPageJsonLd, localBusinessJsonLd]} />
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-10 md:mb-12">
