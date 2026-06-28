@@ -97,22 +97,59 @@ export default function CategoryPage({
   // 获取分类名称
   const categoryName = getCategoryName(category, locale);
 
-  // 自定义 H1 映射（针对核心关键词优化）
+  // 自定义 H1 映射（按 v5 doc, 10 category × 3 locale = 30 个 custom H1）
+  // 主营 6 (stickers/flyers/packaging/paper-bags/red-packets/labels-as-stickers-sub) + 次要 4 (posters/banners/menus/books/educational)
+  // 不优化 (P3 跳过): business-cards / calendars / envelopes / notebooks
   const customH1Map: Record<string, Record<string, string>> = {
     'packaging': {
-      'zh-hk': '香港食品包裝印刷定制 — 食品級包裝盒 / 食品袋 / 食品貼紙',
+      'zh-hk': '香港包裝盒定制 — 禮盒 / 化妝品盒 / 食品盒 / 快遞盒 / 天地蓋盒',
+      'en': 'Custom Packaging Boxes — Gift / Cosmetic / Food / Mailer / Rigid Boxes',
+      'ja': 'パッケージボックス カスタム — ギフト / 化粧 / 食品 / メール便 / 組み立て',
     },
     'paper-bags': {
-      'zh-hk': '香港紙袋印刷定制 — 牛皮紙袋 / 白卡紙袋 / 精品紙袋',
+      'zh-hk': '香港紙袋印刷定制 — 牛皮紙袋 / 白卡紙袋 / 精品紙袋 / 環保紙袋',
+      'en': 'Custom Paper Bags — Kraft / White Card / Eco-Friendly / Gift Bags',
+      'ja': '紙袋印刷 カスタム — クラフト / ホワイトカード / エコ / ギフト',
     },
     'flyers': {
-      'zh-hk': '香港宣傳單張印刷 — A4/A5 傳單 / 摺頁 / 開業傳單 快印',
+      'zh-hk': '香港宣傳單張印刷 — A4/A5 傳單 / 摺頁 / 開業傳單 / 加急',
+      'en': 'Flyer Printing — A4 / A5 / Folded Leaflets / Grand Opening / Rush',
+      'ja': 'チラシ印刷 — A4 / A5 / 折込 / 開業チラシ / 急ぎ対応',
     },
     'menus': {
-      'zh-hk': '香港餐牌印刷定制 — PVC餐牌 / 過膠餐牌 / 皮革餐牌',
+      'zh-hk': '香港菜單印刷 — PVC菜單 / 紙質菜單 / 精裝菜單 / 一次性菜單',
+      'en': 'Custom Menu Printing — PVC / Paper / Hardcover / Disposable',
+      'ja': 'メニュー印刷 カスタム — PVC / 紙 / ハードカバー / 使い捨て',
     },
     'red-packets': {
-      'zh-hk': '香港利是封印刷定制 — 企業利是封 / 婚慶利是封 / 賀年利是封',
+      'zh-hk': '香港紅包印刷 — 利是封 / 賀年紅包 / 燙金紅包 / 卡通紅包',
+      'en': 'Red Packet Printing — Chinese New Year / Foil Stamped / Cartoon / Custom',
+      'ja': '紅包印刷 — 旧正月 / 箔押し / キャラクター / カスタム',
+    },
+    'stickers': {
+      'zh-hk': '香港貼紙印刷定制 — 防水貼紙 / 透明貼紙 / 異形貼紙 / 標籤貼紙',
+      'en': 'Custom Sticker Printing — Waterproof / Transparent / Die-Cut / Product Labels',
+      'ja': 'ステッカー印刷 カスタム — 防水 / 透明 / ダイカット / 商品ラベル',
+    },
+    'posters': {
+      'zh-hk': '香港海報印刷定制 — A1/A2 海報 / 戶外海報 / 展覽海報 / 大圖輸出',
+      'en': 'Custom Poster Printing — A1/A2 / Outdoor / Exhibition / Large Format',
+      'ja': 'ポスター印刷 カスタム — A1/A2 / 屋外 / 展示 / 大判出力',
+    },
+    'banners': {
+      'zh-hk': '香港橫幅印刷 — 易拉寶 / 戶外橫幅 / 展覽橫幅 / 車身廣告',
+      'en': 'Custom Banner Printing — Roll-Up / Outdoor / Exhibition / Vehicle Wrap',
+      'ja': 'バナー印刷 カスタム — ロールアップ / 屋外 / 展示 / 車両広告',
+    },
+    'books': {
+      'zh-hk': '香港畫冊印刷 — 騎馬釘 / 膠裝書 / 精裝書 / 螺旋裝 / 兒童繪本',
+      'en': 'Custom Book Printing — Saddle Stitch / Perfect Bound / Hardcover / Spiral / Children',
+      'ja': '冊子印刷 カスタム — 中綴じ / 無線綴じ / 上製本 / スパイラル / 絵本',
+    },
+    'educational': {
+      'zh-hk': '香港校園教育印刷 — 證書 / 作業簿 / 教材 / 學業簿',
+      'en': 'Custom Education Printing — Certificates / Workbooks / Textbooks / School Stationery',
+      'ja': '教育印刷 カスタム — 証明書 / ワークブック / 教科書 / 学用品',
     },
   };
   const pageH1 = customH1Map[slug]?.[locale] || categoryName;
