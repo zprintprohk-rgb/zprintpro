@@ -1,204 +1,76 @@
-/**
- * Generate sitemap.xml for static export
- * Reads slugs from source files and outputs to public/sitemap.xml
- */
-
 const fs = require('fs');
 const path = require('path');
-
 const BASE_URL = 'https://zprintpro.com';
 const TODAY = new Date().toISOString().split('T')[0];
-
-// --- Extract data from TypeScript files using regex ---
 
 function extractSlugsFromTs(filePath, pattern) {
   const content = fs.readFileSync(filePath, 'utf-8');
   const slugs = [];
   let match;
-  while ((match = pattern.exec(content)) !== null) {
-    slugs.push(match[1]);
-  }
+  while ((match = pattern.exec(content)) !== null) { slugs.push(match[1]); }
   return [...new Set(slugs)];
 }
 
-// 1. Categories
-const categorySlugs = extractSlugsFromTs(
-  path.join(__dirname, '../src/data/products.ts'),
-  /slug:\s*['"]([^'"]+)['"],\s*name:/g
-);
+const categorySlugs = extractSlugsFromTs(path.join(__dirname, '../src/data/products.ts'), /slug:\s*['"]([^'"]+)['"],\s*name:/g);
+const productSlugs = extractSlugsFromTs(path.join(__dirname, '../src/data/products.ts'), /slug:\s*['"]([^'"]+)['"],\s*\n\s*category:/g);
 
-// 2. Products
-const productSlugs = extractSlugsFromTs(
-  path.join(__dirname, '../src/data/products.ts'),
-  /slug:\s*['"]([^'"]+)['"],\s*\n\s*category:/g
-);
-
-// 3. Blog legacy articles
-const blogSlugs = [
-  'company-intro',
-  'hong-kong-printing-guide',
-  'design-file-specs',
-  'brand-materials-checklist',
-  'mtr-advertising-specs',
-  'sticker-guide',
-  'business-card-design',
-  'packaging-trends',
-  'cmyk-guide',
-  'paper-materials',
-  'eco-printing',
-];
-
-// 4. Buying guides
-const guideSlugs = extractSlugsFromTs(
-  path.join(__dirname, '../src/data/buying-guides.ts'),
-  /slug:\s*['"]([^'"]+)['"],/g
-);
-
-// 5. Cluster articles
-const clusterSlugs = extractSlugsFromTs(
-  path.join(__dirname, '../src/data/pillar-content.ts'),
-  /slug:\s*['"]([^'"]+)['"],/g
-);
-
-// Combine all blog slugs (legacy + guides + clusters)
+const blogSlugs = ['company-intro','hong-kong-printing-guide','design-file-specs','brand-materials-checklist','mtr-advertising-specs','sticker-guide','business-card-design','packaging-trends','cmyk-guide','paper-materials','eco-printing'];
+const guideSlugs = extractSlugsFromTs(path.join(__dirname, '../src/data/buying-guides.ts'), /slug:\s*['"]([^'"]+)['"],/g);
+const clusterSlugs = extractSlugsFromTs(path.join(__dirname, '../src/data/pillar-content.ts'), /slug:\s*['"]([^'"]+)['"],/g);
 const allBlogSlugs = [...new Set([...blogSlugs, ...guideSlugs, ...clusterSlugs])];
 
-// 6. Static pages
-const staticPages = [
-  '',                          // home
-  'about/',
-  'guide/',
-  'case-studies/',
-  'contact/',
-  'faq/',
-  'help-center/',
-  'service-areas/',
-  'company-news/',
-  // services
-  'services/rush-printing-delivery/',
-  // commerce pages - lower priority
-  'cart/',
-  'checkout/',
-  'order-confirmation/',
-  'payment/success/',
-  // legal - noindex but include for completeness
-  'privacy/',
-  'terms/',
-];
+const staticPages = ['','about/','guide/','case-studies/','contact/','faq/','help-center/','service-areas/','company-news/','services/rush-printing-delivery/','cart/','checkout/','order-confirmation/','payment/success/','privacy/','terms/'];
 
-// Priority mapping
-function getPriority(urlPath) {
-  if (urlPath === '') return '1.0';
-  if (urlPath.startsWith('category/')) return '0.8';
-  if (urlPath.startsWith('product/')) return '0.9';
-  if (urlPath.startsWith('guide/')) return '0.7';
-  if (['about/', 'contact/', 'faq/', 'service-areas/', 'case-studies/'].includes(urlPath)) return '0.7';
-  if (['cart/', 'checkout/', 'order-confirmation/', 'payment/success/'].includes(urlPath)) return '0.3';
-  if (['privacy/', 'terms/'].includes(urlPath)) return '0.3';
-  return '0.5';
-}
+function getPriority(u) { if(u==='')return'1.0';if(u.startsWith('category/'))return'0.8';if(u.startsWith('product/'))return'0.9';if(u.startsWith('guide/'))return'0.7';if(['about/','contact/','faq/','service-areas/','case-studies/'].includes(u))return'0.7';if(['cart/','checkout/','order-confirmation/','payment/success/'].includes(u))return'0.3';if(['privacy/','terms/'].includes(u))return'0.3';return'0.5'; }
+function getChangefreq(u) { if(u==='')return'daily';if(u.startsWith('category/'))return'weekly';if(u.startsWith('product/'))return'weekly';if(u.startsWith('guide/'))return'monthly';return'monthly'; }
 
-function getChangefreq(urlPath) {
-  if (urlPath === '') return 'daily';
-  if (urlPath.startsWith('category/')) return 'weekly';
-  if (urlPath.startsWith('product/')) return 'weekly';
-  if (urlPath.startsWith('guide/')) return 'monthly';
-  return 'monthly';
-}
-
-const locales = ['zh-hk', 'en', 'ja'];
+const locales = ['zh-hk','en','ja'];
+function hl(locale) { return locale==='zh-hk'?'zh-Hant-HK':locale==='en'?'en':'ja-JP'; }
 
 const urls = [];
+locales.forEach(l => { urls.push({ loc: BASE_URL+'/'+l+'/', priority:'1.0', changefreq:'daily' }); });
+staticPages.forEach(p => { if(p==='')return; locales.forEach(l => { urls.push({ loc: BASE_URL+'/'+l+'/'+p, priority:getPriority(p), changefreq:getChangefreq(p) }); }); });
+categorySlugs.forEach(s => { locales.forEach(l => { urls.push({ loc: BASE_URL+'/'+l+'/category/'+s+'/', priority:'0.8', changefreq:'weekly' }); }); });
+productSlugs.forEach(s => { locales.forEach(l => { urls.push({ loc: BASE_URL+'/'+l+'/product/'+s+'/', priority:'0.9', changefreq:'weekly' }); }); });
+allBlogSlugs.forEach(s => { locales.forEach(l => { urls.push({ loc: BASE_URL+'/'+l+'/guide/'+s+'/', priority:'0.7', changefreq:'monthly' }); }); });
 
-// Home pages
-locales.forEach((locale) => {
-  urls.push({ loc: `${BASE_URL}/${locale}/`, priority: '1.0', changefreq: 'daily' });
-});
-
-// Static pages
-staticPages.forEach((page) => {
-  if (page === '') return; // already done as home
-  locales.forEach((locale) => {
-    urls.push({
-      loc: `${BASE_URL}/${locale}/${page}`,
-      priority: getPriority(page),
-      changefreq: getChangefreq(page),
-    });
+function buildXml(arr) {
+  let x = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n';
+  arr.forEach(u => {
+    x += '  <url>\n    <loc>'+u.loc+'</loc>\n    <lastmod>'+TODAY+'</lastmod>\n    <changefreq>'+u.changefreq+'</changefreq>\n    <priority>'+u.priority+'</priority>\n';
+    const sp = u.loc.replace(BASE_URL+'/','');
+    const [pp, qp] = sp.split('?');
+    const pwl = pp.replace(/^(zh-hk|en|ja)\//,'');
+    const qs = qp ? '?'+qp : '';
+    locales.forEach(l => { x += '    <xhtml:link rel="alternate" hreflang="'+hl(l)+'" href="'+BASE_URL+'/'+l+'/'+pwl+qs+'" />\n'; });
+    x += '    <xhtml:link rel="alternate" hreflang="x-default" href="'+BASE_URL+'/zh-hk/'+pwl+qs+'" />\n  </url>\n';
   });
+  x += '</urlset>\n';
+  return x;
+}
+
+// Unified
+fs.writeFileSync(path.join(__dirname,'../public/sitemap.xml'), buildXml(urls), 'utf-8');
+console.log('sitemap.xml: '+urls.length+' URLs');
+
+// Per-locale
+const files = [];
+locales.forEach(l => {
+  const lu = urls.filter(u => u.loc.startsWith(BASE_URL+'/'+l+'/'));
+  const fn = 'sitemap-'+l+'.xml';
+  fs.writeFileSync(path.join(__dirname,'../public/',fn), buildXml(lu), 'utf-8');
+  files.push({ locale:l, filename:fn, count:lu.length });
+  console.log(fn+': '+lu.length+' URLs');
 });
 
-// Category pages → 保留 category 路径，确认页面存在
-categorySlugs.forEach((slug) => {
-  locales.forEach((locale) => {
-    urls.push({
-      loc: `${BASE_URL}/${locale}/category/${slug}/`,
-      priority: '0.8',
-      changefreq: 'weekly',
-    });
-  });
-});
+// Index
+let ix = '<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  <sitemap>\n    <loc>'+BASE_URL+'/sitemap.xml</loc>\n    <lastmod>'+TODAY+'</lastmod>\n  </sitemap>\n';
+files.forEach(f => { ix += '  <sitemap>\n    <loc>'+BASE_URL+'/'+f.filename+'</loc>\n    <lastmod>'+TODAY+'</lastmod>\n  </sitemap>\n'; });
+ix += '</sitemapindex>\n';
+fs.writeFileSync(path.join(__dirname,'../public/sitemap-index.xml'), ix, 'utf-8');
+console.log('sitemap-index.xml: 4 sitemaps');
 
-// Product pages → 标准产品详情页 URL
-productSlugs.forEach((slug) => {
-  locales.forEach((locale) => {
-    urls.push({
-      loc: `${BASE_URL}/${locale}/product/${slug}/`,
-      priority: '0.9',
-      changefreq: 'weekly',
-    });
-  });
-});
-
-// Blog pages
-allBlogSlugs.forEach((slug) => {
-  locales.forEach((locale) => {
-    urls.push({
-      loc: `${BASE_URL}/${locale}/guide/${slug}/`,
-      priority: '0.7',
-      changefreq: 'monthly',
-    });
-  });
-});
-
-// Build XML
-let xml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-`;
-
-urls.forEach((url) => {
-  xml += `  <url>
-    <loc>${url.loc}</loc>
-    <lastmod>${TODAY}</lastmod>
-    <changefreq>${url.changefreq}</changefreq>
-    <priority>${url.priority}</priority>
-`;
-  // xhtml:link alternates
-  const slugPart = url.loc.replace(BASE_URL + '/', '');
-  // 分离路径和查询参数
-  const [pathPart, queryPart] = slugPart.split('?');
-  const pathWithoutLocale = pathPart.replace(/^(zh-hk|en|ja)\//, '');
-  // 保留查询参数（例如 ?product=xxx）用于 quote 页面
-  const queryString = queryPart ? '?' + queryPart : '';
-  locales.forEach((locale) => {
-    xml += `    <xhtml:link rel="alternate" hreflang="${locale === 'zh-hk' ? 'zh-Hant-HK' : locale === 'en' ? 'en' : 'ja-JP'}" href="${BASE_URL}/${locale}/${pathWithoutLocale}${queryString}" />
-`;
-  });
-  xml += `    <xhtml:link rel="alternate" hreflang="x-default" href="${BASE_URL}/zh-hk/${pathWithoutLocale}${queryString}" />
-  </url>
-`;
-});
-
-xml += `</urlset>
-`;
-
-const outputPath = path.join(__dirname, '../public/sitemap.xml');
-fs.writeFileSync(outputPath, xml, 'utf-8');
-
-console.log(`✅ Generated sitemap.xml with ${urls.length} URLs`);
-console.log(`   Categories: ${categorySlugs.length}`);
-console.log(`   Products: ${productSlugs.length}`);
-console.log(`   Blog posts: ${allBlogSlugs.length}`);
-console.log(`   Static pages: ${staticPages.length}`);
-console.log(`   Locales: ${locales.length}`);
-console.log(`   Total: ${urls.length}`);
+console.log('\n--- Summary ---');
+console.log('Categories: '+categorySlugs.length+', Products: '+productSlugs.length+', Blog: '+allBlogSlugs.length);
+console.log('Static: '+staticPages.length+', Locales: '+locales.length+', Total: '+urls.length);
+files.forEach(f => console.log('  '+f.locale+': '+f.count+' URLs'));

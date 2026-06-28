@@ -1,9 +1,8 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 import { Locale, siteConfig, generateBusinessJsonLd, generateLocalBusinessSchema } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
 import { generateContactPageJsonLd } from '@/lib/seo/schema-extensions';
 import { ContactFormWrapper } from './ContactFormWrapper';
-import Image from 'next/image';
 import { generateWhatsAppLink } from '@/lib/whatsapp';
 
 interface ContactPageProps {
@@ -304,14 +303,7 @@ export default function ContactPage({ params }: ContactPageProps) {
                   {/* 二维码: 120x120 居中 + 4 角绿色 L 装饰 (适中大小) */}
                   <div className="flex justify-center">
                     <div className="relative w-[120px] h-[120px] bg-white border border-slate-200 rounded-lg overflow-hidden flex items-center justify-center shadow-sm group/qr">
-                      <Image
-                        src="/whatsapp-qr.jpg"
-                        alt="WhatsApp QR Code | ZprintPro"
-                        width={112}
-                        height={112}
-                        className="object-contain transition-transform duration-300 group-hover/qr:scale-105"
-                        loading="lazy"
-                      />
+                      <img src="/whatsapp-qr.jpg" alt="WhatsApp QR Code | ZprintPro" width="112" height="112" className="object-contain transition-transform duration-300 group-hover/qr:scale-105" loading="lazy" />
                       {/* 4 角绿色 L 装饰 (适中) */}
                       <span className="absolute top-1 left-1 w-2.5 h-2.5 border-t-[2.5px] border-l-[2.5px] border-emerald-500"></span>
                       <span className="absolute top-1 right-1 w-2.5 h-2.5 border-t-[2.5px] border-r-[2.5px] border-emerald-500"></span>
@@ -350,9 +342,9 @@ export default function ContactPage({ params }: ContactPageProps) {
                   <rect x="200" y="160" width="100" height="40" fill="#E0E7FF" opacity="0.5" rx="2"/>
                   <rect x="380" y="170" width="90" height="30" fill="#FEF3C7" opacity="0.5" rx="2"/>
                   {/* 标签 */}
-                  <text x="200" y="40" fontSize="9" fill="#6B7280" opacity="0.6">觀塘</text>
-                  <text x="50" y="190" fontSize="9" fill="#6B7280" opacity="0.6">九龍灣</text>
-                  <text x="380" y="195" fontSize="9" fill="#6B7280" opacity="0.6">牛頭角</text>
+                  <text x="200" y="40" fontSize="9" fill="#6B7280" opacity="0.6">深圳</text>
+                  <text x="50" y="190" fontSize="9" fill="#6B7280" opacity="0.6">龍崗</text>
+                  <text x="380" y="195" fontSize="9" fill="#6B7280" opacity="0.6">平湖</text>
                   {/* 中心点 (公司位置) - 红色 pulse 圆 */}
                   <circle cx="340" cy="100" r="20" fill="#EF4444" opacity="0.2">
                     <animate attributeName="r" values="20;30;20" dur="2s" repeatCount="indefinite"/>
@@ -377,7 +369,7 @@ export default function ContactPage({ params }: ContactPageProps) {
                 </div>
                 {/* 右上角坐标 */}
                 <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm rounded-md px-2 py-1 text-[10px] font-mono text-gray-500 shadow-sm">
-                  22.3115°N · 114.2240°E
+                  22.5431°N · 114.0579°E
                 </div>
               </div>
 
@@ -395,7 +387,7 @@ export default function ContactPage({ params }: ContactPageProps) {
                 {/* 双按钮: 查看地图 + 规划路线 */}
                 <div className="grid grid-cols-2 gap-2">
                   <a
-                    href="https://www.google.com/maps/search/?api=1&query=182+Wai+Yip+Street+Kwun+Tong+Hong+Kong"
+                    href="https://www.google.com/maps/search/?api=1&query=No.1+Jiacheng+Road+Pinghu+Street+Longgang+District+Shenzhen+Guangdong+518111"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-1.5 py-2.5 px-3 bg-[#2873F5] hover:bg-[#1E5BD6] text-white text-sm font-medium rounded-lg transition-colors"
@@ -404,7 +396,7 @@ export default function ContactPage({ params }: ContactPageProps) {
                     {t.viewOnMap.replace(' →', '')}
                   </a>
                   <a
-                    href="https://www.google.com/maps/dir/?api=1&destination=22.3115,114.2240"
+                    href="https://www.google.com/maps/dir/?api=1&destination=22.5431,114.0579"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center justify-center gap-1.5 py-2.5 px-3 bg-white border-2 border-[#2873F5] text-[#2873F5] hover:bg-blue-50 text-sm font-medium rounded-lg transition-colors"

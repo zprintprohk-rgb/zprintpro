@@ -1,4 +1,4 @@
-import { Metadata } from 'next';
+﻿import { Metadata } from 'next';
 
 import type { Locale } from '@/types/locale';
 export type { Locale } from '@/types/locale';
@@ -55,23 +55,23 @@ export interface RegionConfig {
 export const regionConfig: Record<Locale, RegionConfig> = {
   'zh-hk': {
     lang: 'zh-Hant-HK',
-    regionCode: 'HK',
+    regionCode: 'CN',
     googleDomain: 'google.com.hk',
     currency: 'HKD',
-    phonePrefix: '+852',
+    phonePrefix: '+86',
     businessSchema: 'LocalBusiness',
     targetAudience: '香港本地企業與實體店',
     areaServed: 'Hong Kong',
     contactType: '香港本地客戶服務',
     priceRange: '$$',
-    geoCoordinates: { lat: 22.314577, lng: 114.227173 },
+    geoCoordinates: { lat: 22.5431, lng: 114.0579 },
   },
   'en': {
     lang: 'en',
     regionCode: 'GLOBAL',
     googleDomain: 'google.com',
     currency: 'USD',
-    phonePrefix: '+852',
+    phonePrefix: '+86',
     businessSchema: 'Organization',
     targetAudience: 'US/UK/AU businesses seeking premium printing services',
     areaServed: ['US', 'GB', 'AU', 'CA', 'NZ', 'SG'],
@@ -83,7 +83,7 @@ export const regionConfig: Record<Locale, RegionConfig> = {
     regionCode: 'JP',
     googleDomain: 'google.co.jp',
     currency: 'JPY',
-    phonePrefix: '+852',
+    phonePrefix: '+86',
     businessSchema: 'Organization',
     targetAudience: '日本企業向けプロフェッショナル印刷サービス',
     areaServed: 'Japan',
@@ -101,7 +101,7 @@ const homeMetadata: Record<Locale, { title: string; description: string; keyword
   },
   en: {
     title: 'Custom Printing Service Online — Stickers, Boxes, Business Cards | ZprintPro',
-    description: 'Custom printing service online for US / UK / AU / CA businesses. Stickers, packaging boxes, business cards, posters, books. 30-second AI instant quote. 72-hour worldwide delivery from Hong Kong factory. Free shipping on selected products.',
+    description: 'Custom printing service online for US / UK / AU / CA businesses. Stickers, packaging boxes, business cards, posters, books. 30-second AI instant quote. 72-hour worldwide delivery from Shenzhen factory. Free shipping on selected products.',
     keywords: 'custom printing service, online printing, custom stickers online, custom packaging boxes, business card printing, poster printing, custom book printing, rush printing service, same day printing, international printing, print quote online, custom labels, paper bags wholesale, eco friendly printing, hong kong printing service',
   },
   ja: {
@@ -1193,16 +1193,16 @@ export function generateHreflangTags(path: string = '') {
 // 多语言 GEO 信号配置（兼容新类型系统）
 export const geoConfig: Record<Locale, import('@/types/seo').GeoSignals> = {
   'zh-hk': {
-    region: 'HK',
+    region: 'CN',
     currency: 'HKD',
     pricePrefix: 'HK$',
-    areaServed: ['Hong Kong', 'Kowloon', 'New Territories', 'Hong Kong Island'],
+    areaServed: ['Shenzhen', 'Guangdong', 'Longgang', 'Pinghu'],
     phone: siteConfig.phone,
     address: `${siteConfig.address.street}, ${siteConfig.address.city}, ${siteConfig.address.region}`,
     // 2026-06-18: 香港派送区域保留 (作为 areaServed),但移除"港鐵站/即日取"等暗示本地取货的词
     //   跨境模式下香港消费者通过顺丰/DHL 收件,不再有"地铁站交收"实体服务
     deliveryText: '跨境配送，香港島/九龍/新界均可送達',
-    geoKeywords: ['香港', '九龍', '新界', '港島', '灣仔', '旺角', '銅鑼灣', '尖沙咀'],
+    geoKeywords: ['深圳', '龍崗', '平湖', '廣東', '華南', '中國印刷', '深圳印刷', '龍崗印刷'],
   },
   'en': {
     region: 'US',
@@ -1276,8 +1276,8 @@ export function generateLocalBusinessSchema(locale: Locale): SchemaOrgData {
     },
     geo: {
       '@type': 'GeoCoordinates',
-      latitude: '22.3193',
-      longitude: '114.1694',
+      latitude: '22.5431',
+      longitude: '114.0579',
     },
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
