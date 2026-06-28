@@ -1,535 +1,274 @@
-# ZprintPro 优化提示词 — AutoClaw GLM 5.2 攻坚任务 + Mavis M3 简单任务
+# ZprintPro 优化提示词 v3 — AutoClaw GLM 5.2 攻坚专用
 
-> **生成时间**: 2026-06-28 19:05 (Asia/Shanghai) — **v2 更新** (v1 是 18:55 写，**v1 错把 contact 当 500 修复无效**；v2 修正：contact fec0ac8 重构 + 0a5eca5 JsonLd 合并已 100% 生效，user 浏览器截图确认)
-> **作者**: Mavis (orchestrator)
-> **目标工具**: AutoClaw GLM 5.2 (积分有限，只攻最高价值) + Mavis M3 (执行小任务)
-> **业务目标**: zprintpro.com 月销 5 万美金
-> **当前阶段**: 技术架构就位 + 联系页已完成重构（4 组件生效） + 4 sitemap + schema 全。下一步攻 CRO 转化 + AI 搜索可见性 + 信任体系 + 实时报价
+> **生成时间**: 2026-06-28 19:30 (Asia/Shanghai) · **v3 重大修正**
+> **v2 错判**: 以为"大部分关键词已排首页"，实际 GSC 数据显示平均排名 27.7（第 3 页）
+> **v3 核心修正**: **流量是最大瓶颈，不是转化。SEO/GEO 攻坚优先于 CRO。**
 
 ---
 
-## 0.1 关键状态 (v2 重要修正)
+## 0. GSC 真实数据（2026-05-30 ~ 2026-06-26, 28 天）
 
-✅ **已生效** (user 浏览器截图 + curl 验证):
-- `/zh-hk/contact/` `/en/contact/` `/ja/contact/` — **3 locale 全部 200 OK**
-- **联系页 fec0ac8 重构** 4 组件全部生效: 4 指标信任栏 (500+/10+/72h/30+) / 140px QR / 简化地址卡片 (深圳龙岗平湖) / 双联系卡片 (电话+86 198 8085 1334 + 邮箱)
-- **0a5eca5 JsonLd 合并** 修复 next 14.2 + edge runtime RSC streaming 抛错 (3 个独立 `<JsonLd>` 合并为 1 个 `<JsonLd data={[array]}>` 形式)
-- 4 sitemap (`/sitemap.xml` `/sitemap-index.xml` `/sitemap-zh-hk.xml` `/sitemap-en.xml` `/sitemap-ja.xml`) 全 200
-- `/zh-hk/returns/` → 308 → `/zh-hk/help-center/`
-- OG description en 改 "from Shenzhen factory"
-- SVG 地图已删 (9ea4ef0 改地址)
-- NAP 统一深圳实体
-- 9ea4ef0 / 6ca47ff / 7ad6f2e / 0a5eca5 / 573c092 / 6a027d1 / 6438200 共 7 个 commit 已 push
-
-❌ **AutoClaw 不要重做** (v1 错误让 GLM 5.2 攻) :
-- ❌ 联系页基础重构 (已完成)
-- ❌ 修 contact 500 bug (已修，v1 误判)
-- ❌ 修 SVG 地图 HK→深圳 (已修)
-- ❌ 改 generate-sitemap.js 输出 4 份 (已修)
-- ❌ /returns/ 重定向 (已加)
-- ❌ OG description HK→Shenzhen (已修)
-
-🎯 **AutoClaw 真正要攻的 (v2 重排后)**:
-1. **联系页增强** (在 fec0ac8 基础上加 3 步表单向导 + 实时报价 + A/B 埋点)
-2. **首页 Hero + 主 CTA**
-3. **实时报价引擎** (SKU + 数量 + 加急)
-4. **AI 搜索 GEO 优化** (llms.txt / speakable)
-5. **信任体系** (客户 logo + 证书 + case study)
-6. **Core Web Vitals 90+**
-7. **站内 SEO 内链 hub-spoke**
-8. **SKU 批量生图**
-9. **询价表单 + 拖拽上传 + Turnstile**
-10. **Plausible + A/B testing**
-
----
-
-## 0. 一句话定位
-
-> **品牌**: 智印云 / ZprintPro（**不是"智印港"** — 竞品)
-> **主体**: 深圳市彩龙印刷包装有限公司（深圳，跨境接全球订单）
-> **官网**: https://zprintpro.com
-> **当前栈**: Next.js 14.2.35 + App Router (Edge runtime) + Tailwind + shadcn/ui + Supabase + Cloudflare Pages
-> **布局**: max-w-[1320px] | 3 locale: /zh-hk /en /ja
-> **规模**: 79 SKU × 3 locale = 237 产品页 / 4 sitemap / 12+ schema / Edge runtime
-
----
-
-## 1. 月销 5 万美金目标拆解
-
-| 指标 | 数值 | 反推 |
+| 指标 | 数值 | 含义 |
 |------|------|------|
-| 月 GMV | $50,000 | — |
-| 客单价 | ~$200 (跨境印刷批发平均) | 250 单/月 |
-| 转化率 | 2% (行业平均) | **12,500 访问/月** = ~417 访问/天 |
-| SEO 自然流量占比 | 70% | 292 访问/天 |
-| GSC 关键词覆盖 | 500+ 长尾词首页排名 | 主导流量入口 |
-| AI 搜索 (ChatGPT/Perplexity) 推荐 | 月 100+ 引用 | 第二流量入口 |
+| 总点击 | **67** | ~2.4 次/天 |
+| 总展示 | 6,610 | 有曝光但无点击 |
+| 平均 CTR | **1%** | 第 3 页水平 |
+| 平均排名 | **27.7** | 第 3 页，远未到首页 |
+| Top query | "香港印刷" | 1 点击 / 129 展示 / 排名 36.1 |
+| 展示峰值 | 6 月 11 日 | 波动大，不稳定 |
 
-**核心瓶颈**: 不是代码不够，是 **(a) 转化漏斗不丝滑、(b) AI 搜索几乎不引用我们、(c) 首页没有"立即询价"主 CTA 引导**
-
----
-
-## 2. 任务分工原则（AutoClaw 积分宝贵）
-
-| 难度等级 | 工具 | 任务类型 | 积分消耗 | 例 |
-|----------|------|----------|----------|----|
-| 🔴 架构/攻坚 | **GLM 5.2** | 多文件重构、跨模块设计、长链推理、需要业务判断 | 5-15 / 个 | 联系页完整重构 / A/B 埋点架构 / 实时报价引擎 |
-| 🟡 中等 | M3 (Mavis) | 改 1-2 个文件、有明确 spec | 1-3 / 个 | OG 描述修 / 单 schema 加 / 路径重定向 |
-| 🟢 简单 | M3 或 cron | 单字符改动 / 验证 curl / 提交 push | <1 / 个 | 改色 / 改字号 / ssg check |
-
-**AutoClaw 只接 GLM 5.2 任务。** M3 任务我自己来。
+**结论**: 排名第 3 页 = 没人点。需要把平均排名从 27.7 → <10。
 
 ---
 
-## 3. 🔴 GLM 5.2 攻坚任务清单（10 个，按价值排序）
+## 1. 已完成清单（AutoClaw 不要重复做）
 
-### 任务 1: 联系页**增强** (在 fec0ac8 基础上加 3 步表单 + 实时报价 + A/B 埋点)
-**价值**: 🔥🔥🔥🔥🔥 (P0，月增 30% 询价转化)
-**预估积分**: 6-9 (v1 估 8-12，但基础工作已做完)
-**v2 重要修正**: 联系页基础重构 (fec0ac8) **已完成且在生产生效**（user 浏览器截图确认）。**不要重做基础布局**，直接在现有基础上加增强功能。
-
-**已生效的基础** (fec0ac8, 不要改):
-- 4 指标信任栏 (500+/10+/72h/30+)
-- 3 段表单布局 (聯絡資訊 / 印刷需求 / 留言與附件)
-- 140px WhatsApp QR + 立即 WhatsApp 查詢 大按钮
-- 双联系卡片 (電話 +86 198 8085 1334 / 邮箱 zprintpro@outlook.com)
-- 简化地址卡片 (深圳龍崗區平湖街道嘉城路1號 518111)
-- Google Maps 查看 + 規劃路線 双按钮
-- 3 个 schema (ContactPage + LocalBusiness + Business) 已合并为 1 个 `<JsonLd data={[array]}>` 形式 (0a5eca5 修)
-
-**输入文件**:
-- `src/app/[locale]/contact/page.tsx` (现状 21kB, fec0ac8 后)
-- `src/app/[locale]/contact/ContactFormWrapper.tsx`
-- `src/components/quote/QuoteForm.tsx` (react-hook-form + zod, 已存在)
-- `src/lib/pricing.ts` (定价逻辑)
-- `src/data/products.ts` (79 SKU 报价基础)
-- `AUTO_CRAWL_GLM_CONTACT_PAGE_PROMPT.md` (19kB AutoCrawl 之前写的 spec, 可作输入)
-
-**增强要求 (在 fec0ac8 基础上加)**:
-1. **3 步表单向导** (Step 1: 选品类/数量 → Step 2: 联系信息 → Step 3: 附加需求) — 当前 QuoteForm 是 3 段式单页, 升级为可切换的 3 步向导
-2. **实时报价预览** (基于 SKU + 数量 + 加急自动算价, 浮动 ±15%) — 需要先做任务 3 的报价引擎
-3. **进度指示器** (顶部 Step 1/2/3 圆点 + 连接线, 移动端友好)
-4. **A/B 测试埋点** (至少 4 个事件: form_start, step_complete, form_submit, cta_click) — 配合任务 10 Plausible
-5. **保留所有现有内容** (4 指标信任栏 / 140px QR / 双联系卡片 / 地址 / Google Maps)
-
-**禁止**:
-- ❌ 重做基础布局 (fec0ac8 改的 4 组件已生效, 改回去会破坏)
-- ❌ 改基线颜色 (#2873F5 / #F87314 / #7C3AED / #2873F5 等)
-- ❌ 改 max-w-[1320px] 布局
-- ❌ 引入 framer-motion (用 CSS + Tailwind transitions)
-- ❌ 改 NAP (深圳实体已统一)
-- ❌ 改品牌名 (智印雲 / ZprintPro 已定)
-
-**输出**:
-- 1-2 个 commit (增强 + A/B 埋点)
-- 3 locale 截图 (3 步状态切换)
-- 部署后 **HTML 关键词 verify** (不只 curl 看 200) — 找 "Step 1" / "下一步" / "进度" 字符串在 HTML 里
+- ✅ 联系页 4 组件重构（信任栏/QR 放大/地址简化/双联系卡片）— fec0ac8
+- ✅ JsonLd 3→1 合并修复 Edge Runtime 500 — 0a5eca5
+- ✅ Hero HK 文案全清除（6 处）— fc43acf
+- ✅ 首页 SEO 标题 HK→深圳 — 4f2c75f
+- ✅ Sitemap 4 份 + sitemap-index.xml — 9ea4ef0
+- ✅ geoConfig 深圳化 + phonePrefix +86 — 9ea4ef0
+- ✅ OG description Shenzhen — 7ad6f2e
+- ✅ /returns/ 308 重定向 — 7ad6f2e
+- ✅ Hero zh-hk/en/ja 文案对齐跨境实体 — fc43acf
 
 ---
 
-### 任务 2: 首页 Hero + 主 CTA 重构
-**价值**: 🔥🔥🔥🔥🔥 (P0, 直接影响首屏转化)
-**预估积分**: 6-9
-**输入文件**:
-- `src/components/home/HeroBanner.tsx`
-- `src/app/[locale]/page.tsx` (home page)
+## 2. 🔴 GLM 5.2 攻坚任务（v3 重排序：SEO/GEO 优先）
+
+### 任务 1: AI 搜索 GEO 优化 ⭐⭐⭐⭐⭐ (最高优先级)
+**价值**: 给 ChatGPT/Claude/Perplexity 喂结构化数据，开辟全新流量源（0→1）
+**积分**: 8-10
+
+**要交付文件**:
+- `/public/llms.txt` — 列全部 79 SKU + 价格 + FAQ，喂 AI 训练抓取
+- `/public/llms-full.txt` — 完整产品目录 + schema 数据
+- 每产品页 `speakable` schema（语音搜索友好）
+- 每产品页 `HowTo` schema（工艺流程，结构化答案）
+- 每产品页 FAQ schema（3-5 问，直接回答搜索意图）
+- `robots.txt` 加 `Allow: /llms.txt`
+- Bing IndexNow API 集成（每次 push 自动 ping）
+- Bing Webmaster Tools 提交记录
+
+**验收**: `curl https://zprintpro.com/llms.txt` 200 + ChatGPT 搜索"zprintpro sticker printing"能引用
+
+---
+
+### 任务 2: Core Web Vitals 90+ ⭐⭐⭐⭐⭐
+**价值**: 直接 SEO 排名因子。平均排名 27.7，Web Vitals 差 = Google 不给排名
+**积分**: 6-8
+
+**具体目标**:
+- LCP < 2.5s（hero 图片 preload + webp 优化）
+- INP < 200ms（defer 非关键 JS）
+- CLS < 0.1（所有图片加 width/height + aspect-ratio）
+- 89 个产品 jpg → webp（q=80）+ blur placeholder
+- 字体 subset + preload + font-display:swap
+- 找出 top 3 大 JS chunk，拆分 + lazy load
+- `.lighthouserc.json` + CI 自动检测
+
+**验收**: Lighthouse 3 locale 首页 90+
+
+---
+
+### 任务 3: 站内 SEO 内链 hub-spoke ⭐⭐⭐⭐
+**价值**: 内链是 Google 理解网站结构的核心信号，影响爬虫深度和排名
+**积分**: 5-7
 
 **要求**:
-1. **强 Hero** (左: 大标题 + 副标题 + 主 CTA "立即獲取報價" / "Get a Free Quote" / "無料見積もり"; 右: 真实产品图 + 旋转/微动效)
-2. **3 个 micro-CTA** (WhatsApp / 计算器 / 上传文件)
-3. **多 locale 切换器** (右上角 dropdown, 不是链接, 而是真实 switcher)
-4. **实时通知 toast** (顶部: "5 分钟前 John from HK 提交了名片报价")
-5. **价格快速查询入口** (Hero 下方: 选品类 → 跳到 quote 页带预填)
-6. **移动端优化** (LG 以下 hero 高度 < 80vh, 按钮全宽)
-7. **A/B 测试埋点** (hero_cta_click, locale_switch, notification_dismiss)
+- 每个 pillar page → 链接 5-10 个相关 product/category
+- 每个 category → 链接所有 product + 1 个 pillar
+- 每个 product → 链接同品类 4-6 个 product + 父级 category + 1 buying guide
+- Anchor text 用关键词（"專業燙金名片印刷"），不用 "click here"
+- Footer 内链扩充：加 "Popular Products" + "Top Categories" 两行
+- 内链图可视化文档 `docs/internal-link-map.md`
 
-**当前 StatsBar/WhyChooseUs/KnowledgeSection 保留** (截图显示已做的不错)
-
-**输出**:
-- 1 commit
-- 3 locale 截图
-- LCP < 2.5s (Lighthouse 测试)
+**验收**: 每个产品页至少 8 个站内链（不含 nav/footer）
 
 ---
 
-### 任务 3: 实时报价引擎（基于 SKU + 数量 + 加急）
-**价值**: 🔥🔥🔥🔥🔥 (P0, 询价单 → 订单转化率 50%↑)
-**预估积分**: 10-15
-**输入文件**:
-- `src/lib/pricing.ts`
-- `src/data/products.ts` (79 SKU 价格区间)
-- `src/data/sku-seo-data.ts`
-- `src/components/quote/QuoteCalculator.tsx`
+### 任务 4: SKU 批量生图 ⭐⭐⭐⭐
+**价值**: 产品图质量直接影响搜索结果的图片展示（Google Images）和点击率
+**积分**: 4-6
+
+**具体**:
+- 优先处理 6 个 cluster：business-cards(6) / red-packets(6) / flyers(6) / boxes(6) / stickers(5) / calendars(4) = 33 张
+- 使用 Seedream 4.5 或 Kimi 2.6 API
+- 文件命名: `zprintpro-{category}-{slug}-{locale}.jpg`
+- 最低 800x600，>50KB，风格统一
+- 3 locale alt 文本（从 image-prompts.md 取）
+- 进度记录 `seedream-progress.json`
+- 失败重试 3 次，rate limit 退避
+
+**验收**: 33 张新图落地 `public/images/products/`
+
+---
+
+### 任务 5: 首页 Hero + 主 CTA 重构 ⭐⭐⭐⭐
+**价值**: 流量进来后第一眼决定跳不跳
+**积分**: 6-9
+
+**当前 Hero 基础已修完**（fc43acf 清除了 HK 文案），需要增强：
+1. 首页主 CTA "立即獲取報價" — 目前 hero 轮播图每张有 CTA 但不够突出
+2. 价格快速查询条（Hero 下方）：选品类 → 输入数量 → 显示预估价格 → 跳转 contact
+3. 多 locale switcher（真 dropdown，不是纯链接）
+4. 移动端优化（hero 高度 < 80vh，按钮全宽）
+
+**验收**: Google PageSpeed 检测 Hero LCP < 2.5s + 3 locale 截图
+
+---
+
+### 任务 6: 实时报价引擎 ⭐⭐⭐⭐
+**价值**: "30 秒 AI 报价"品牌承诺的实际交付
+**积分**: 10-15
 
 **要求**:
-1. **定价规则**: 基础价 + 数量阶梯折扣 + 加急费 + 工艺加价 (烫金/UV/异形)
-2. **多币种**: HKD / USD / JPY 自动按 locale 切换
-3. **价格浮动 ±15%** (给销售留空间, 显示 "起价" 标签)
-4. **Server API**: `/api/quote/calculate` (POST, 接受 product_slug + qty + options, 返回 JSON 价格)
-5. **Edge runtime 兼容** (不要 fs/Buffer)
-6. **缓存**: 同 SKU+qty 30 秒内返回缓存 (Cloudflare KV 可选)
-7. **A/B 埋点**: quote_calculated, quote_threshold_met (用户接受了价格)
+- 基础价 × 数量阶梯折扣 × 加急费率 × 工艺加价
+- HKD/USD/JPY 三币种
+- API: `/api/quote/calculate`（POST，Edge runtime 兼容）
+- 价格浮动 ±15%（留议价空间）
+- 30 秒同参数缓存（CF KV）
+- A/B 埋点: quote_calculated
 
-**输出**:
-- 1-2 commits
-- API curl test 样例
+**验收**: `curl -X POST /api/quote/calculate -d '{"product":"premium-business-cards","qty":500}'` 返回有效价格
 
 ---
 
-### 任务 4: AI 搜索 GEO 优化（让 ChatGPT/Claude/Perplexity 推荐我们）
-**价值**: 🔥🔥🔥🔥 (未来 12 个月最大流量入口)
-**预估积分**: 8-10
-**输入文件**:
-- `src/data/pillar-content.ts` (pillar content)
-- `src/data/cluster-content.ts` (cluster content)
-- `src/data/buying-guides.ts`
-- 79 个产品页
+### 任务 7: 信任体系 ⭐⭐⭐⭐
+**积分**: 7-10
 
 **要求**:
-1. **GEO 优化要素**:
-   - 每个产品页加 `speakable` schema (SpeechSynthesis 友好)
-   - 每个产品页加 `HowTo` schema (工艺流程, 已部分有, 补全)
-   - FAQ schema (每个产品 3-5 个高质量 FAQ, 引用 Wikipedia/Schema.org)
-   - Author schema (E-E-A-T, 引用真实人物 — 法定代表人唐运提)
-   - 实体声明 (NAP 统一: 深圳市彩龙印刷包装有限公司 + 唐运提)
-2. **Bing / Yandex sitemap 单独输出** (这两个搜索引擎 AI 引用更频繁)
-3. **llms.txt 文件** (新增 `/public/llms.txt`, 列出所有产品 + 价格 + FAQ, 喂给 AI 训练抓取)
-4. **ai.txt robots 允许** (`public/robots.txt` 加 `Allow: /llms.txt`)
-5. **多语言 hreflang 强化** (en-US / en-GB / en-AU 独立, 之前已做, verify)
-6. **Bing Webmaster Tools + IndexNow 集成** (每次 push 自动 ping)
+- 客户 logo 墙（12+ 真实行业 logo，灰度 hover 变彩色）
+- 证书徽章条（ISO 9001 / FSC / G7 / SEDEX + tooltip）
+- Case Study（3 个真实案例：行业/痛点/方案/结果，200 字 + 1 图）
+- Review/Testimonial（6-9 条客户评价，Schema: Review）
+- StatsBar 数据标注来源（或去掉无数据支撑的指标）
 
-**输出**:
-- 1-2 commits
-- `/public/llms.txt` 示例内容
-- Bing Webmaster 提交记录
+**验收**: Trust schema Rich Results Test 通过
 
 ---
 
-### 任务 5: 信任体系架构（证书 + 客户 logo + case study + review）
-**价值**: 🔥🔥🔥🔥 (B2B 印刷采购决策长, 信任 = 转化)
-**预估积分**: 7-10
-**输入文件**:
-- `src/components/home/TrustWaterfall.tsx` (现状有, 但只有数据, 没真实 logo)
-- `src/components/home/StatsBar.tsx` (有 4 指标)
-- `src/data/cluster-content.ts` (case study 数据)
+### 任务 8: 联系页增强（多步表单 + 埋点）⭐⭐⭐
+**积分**: 6-9（已降，因为基础已修完）
+
+**在 fec0ac8 基础上加**:
+- 3 步表单向导（Step1 选品类 → Step2 数量规格 → Step3 联系方式）
+- 进度指示器（圆点 + 连线，动画过渡）
+- 4 个 A/B 事件: form_start / step_complete / form_submit / cta_click
+- URL 预填充支持（`?product=slug&qty=1000`）
+
+**验收**: 3 locale 截图 + Plausible 事件数据
+
+---
+
+### 任务 9: 拖拽上传 + Turnstile ⭐⭐⭐
+**积分**: 4-6
 
 **要求**:
-1. **客户 logo 墙** (新增 `src/components/home/ClientLogoWall.tsx`, 12+ 真实或脱敏 logo, 灰度显示 hover 彩色)
-2. **证书徽章** (ISO 9001 / FSC / G7 / SEDEX, 加 tooltip 说明)
-3. **Case study section** (新增 `src/components/home/CaseStudyGrid.tsx`, 3 个真实案例: 行业/痛点/方案/结果, 各 200 字 + 1 张图)
-4. **Review/Testimonial** (新增 `src/components/home/ReviewSection.tsx`, 6-9 条客户评价, 含头像/公司/星级, schema: Review)
-5. **数据真实性自检** (15000+ 客户 / 99.5% 准时 / 4.9 评分 — 现在没数据来源, 要么 drop 要么 link 到真实数据后台, 不能假数据)
-6. **Schema: AggregateRating** (从 GSC "无效整数" 修过, verify 全站)
-7. **A/B 埋点**: trust_bar_view, case_study_click, review_expand
+- 拖拽上传（PDF/AI/PSD/PNG，max 10MB，最多 5 个）
+- Supabase Storage 存储
+- Cloudflare Turnstile 防 spam
+- Edge runtime 兼容
 
-**输出**:
-- 1-2 commits
-- 3 locale 截图
-- Trust schema verify (Google Rich Results Test)
+**验收**: 拖拽文件 → 上传成功 → Supabase 确认
 
 ---
 
-### 任务 6: Core Web Vitals 全面达标（LCP/INP/CLS 全面 90+）
-**价值**: 🔥🔥🔥🔥 (SEO 直接加分, 转化提升 10%+)
-**预估积分**: 6-8
-**输入**:
-- 79 产品页 × 3 locale = 237 页
-- `next.config.js`
-- `public/images/products/`
+### 任务 10: Plausible + A/B testing ⭐⭐⭐
+**积分**: 6-8
 
 **要求**:
-1. **LCP < 2.5s** (产品图 webp 优化, hero preload, font preload)
-2. **INP < 200ms** (defer non-critical JS, dynamic import client components)
-3. **CLS < 0.1** (固定图片 aspect-ratio, 字体 fallback, 避免 layout shift)
-4. **图片优化**: 89 张 products jpg → webp (q=80), 配 blur placeholder
-5. **字体优化**: subset + preload + `font-display: swap`
-6. **JS bundle 瘦身**: 找出 top 3 体积大的 chunk, 拆分 + lazy load
-7. **Lighthouse CI**: 加 `.lighthouserc.json`, PR 时自动跑
+- Plausible script 注入（no cookie，GDPR 友好）
+- 事件: hero_cta_click / product_view / quote_form_start / quote_form_submit / whatsapp_click / phone_click
+- Funnel: 首页 → 产品 → 联系 → 提交
+- Privacy policy 更新
+- 事件文档 `docs/analytics-events.md`
 
-**输出**:
-- 1-2 commits
-- Lighthouse 3 locale 首页 90+ 截图
-- 3 个产品页 90+ 截图
+**验收**: Plausible dashboard 显示数据
 
 ---
 
-### 任务 7: 多 locale 站内 SEO 内链架构（hub-spoke）
-**价值**: 🔥🔥🔥 (GSC 长尾词排名提升)
-**预估积分**: 5-7
-**输入**:
-- 79 SKU
-- 13 分类
-- 19 篇 pillar content
-- 11 篇 buying guide
-- cluster content
+## 3. 🟡 M3 简单任务（不消耗 AutoClaw）
 
-**要求**:
-1. **Hub-spoke 架构**: 每个 pillar page (cluster) → 链接到 5-10 个 product/category
-2. **Category page** → 链接到所有下属 product + 1 个 pillar content
-3. **Product page** → 链接到同类 4-6 个 product + 上级 category + 1 buying guide
-4. **Internal links 数据驱动**: 用 src/data/interlink-graph.ts 集中管理 (新增)
-5. **Anchor text 优化**: 不要 "click here", 用主关键词 ("专业烫金名片印刷")
-6. **Breadcrumb schema** (已做, verify)
-7. **Footer 链接升级**: 现状只有 4 列, 加 2 列: "Popular Products" + "Top Categories"
-
-**输出**:
-- 1-2 commits
-- 内链图可视化 (`docs/internal-link-map.md`)
+| 任务 | 耗时 |
+|------|------|
+| 单文件文案修改（任何 locale） | <5min |
+| Schema 单个修正 | <5min |
+| 308 重定向添加 | <5min |
+| 价格/货币显示验证 | <10min |
+| curl + HTML 关键词验证 | <5min |
+| push + 部署后监控 | 5min/次 |
+| 真实浏览器截图验证 | 5min/次 |
+| GSC 数据定期分析 | 30min/次 |
+| Nav/footer 链接微调 | <15min |
 
 ---
 
-### 任务 8: SKU 批量生图 Pipeline（Seedream 4.5 / Kimi 2.6）
-**价值**: 🔥🔥🔥 (65 SKU 缺图, 影响产品页转化)
-**预估积分**: 4-6
-**输入**:
-- `image-prompts.md` (3050 行, 78 SKU)
-- `seedream-prompts-all-skus.txt` (586KB, 79 SKU, GBK 编码)
-- `seedream-batch-v3.js` (已存在)
-- `public/images/products/` (88 张 jpg, 65 张是复制品)
+## 4. 已踩坑警告（22 条，每次执行前必读）
 
-**要求**:
-1. **优先级**: 6 大共用 cluster 先 (business-cards 6 / red-packets 6 / flyers 6 / boxes 6 / stickers 5 / calendars 4 = 33 张)
-2. **Seedream 4.5** 或 **Kimi 2.6 generate_image** API 批量调用
-3. **3 locale 命名**: `zprintpro-{category}-{slug}-{locale}.jpg` (zh-hk/en/ja)
-4. **Alt 文本**: 3 locale 全 (用 prompts 里的 Alt ZH/EN/JA)
-5. **质量门**: 至少 800x600, file size > 50KB, 风格统一 (与已有图保持)
-6. **占位图清理**: 生成的独立图替换复制品
-7. **进度跟踪**: 更新 `seedream-progress.json`
-8. **失败重试**: 最多 3 次, rate limit 退避
-
-**输出**:
-- 33-65 张新图
-- progress.json 更新
-- 部署 commit
-
----
-
-### 任务 9: 询价表单 + 文件上传 + WhatsApp 集成
-**价值**: 🔥🔥🔥 (询价漏斗核心)
-**预估积分**: 5-7
-**输入**:
-- `src/components/quote/QuoteForm.tsx`
-- `src/lib/whatsapp.ts`
-- Supabase storage
-
-**要求**:
-1. **文件拖拽上传** (PDF/AI/PSD/PNG, max 10MB, 进度条)
-2. **多文件** (最多 5 个)
-3. **Supabase storage** (上传到 `/quotes/{date}/{id}/`)
-4. **预填** (URL 参数: `?product=premium-business-cards&qty=1000&rush=24h`)
-5. **提交后**: (a) 落 Supabase (b) 发邮件通知 sales@zprintpro.com (c) 弹 WhatsApp 链接
-6. **spam 防护**: Cloudflare Turnstile (免费, 不像 reCAPTCHA 那样影响 UX)
-7. **Edge runtime 兼容**: 整个流程跑在 edge
-8. **错误处理**: 上传失败/网络断/重复提交
-
-**输出**:
-- 1-2 commits
-- Supabase migration
-- Turnstile 配置
+1. ❌ 品牌名写"智印港" → 永远是"智印雲/ZprintPro"
+2. ❌ 地址写 HK 观塘 → 实际深圳龙岗平湖
+3. ❌ OG 写 "Hong Kong factory" → 写 "Shenzhen factory"
+4. ❌ SVG `<animate>` + next/image → Edge Runtime streaming 崩溃
+5. ❌ 3 个独立 `<JsonLd dangerouslySetInnerHTML>` → RSC streaming 末尾崩溃
+6. ❌ react-hook-form + Edge Runtime → 必须 dynamic import + ssr:false
+7. ❌ Service Worker 缓存 → 当前已禁用
+8. ❌ buffer/fs/crypto node API → Edge Runtime 不可用
+9. ❌ iframe + CSP frame-src → OSM 嵌入失败
+10. ❌ placeholder.jpg 零字节 → 验证每个图片 mtime + size
+11. ❌ aggregateRating.reviewCount 非整数 → GSC "无效整数"警告
+12. ❌ hreflang 缺 x-default / en-GB / en-AU
+13. ❌ description 字符 < 70
+14. ❌ CF Pages Free plan 1046 rate limit → wrangler 频繁 deploy 触发
+15. ❌ PowerShell `&&` / `head` / `grep` → 用 `;` / `Select-Object` / `Select-String`
+16. ❌ PowerShell `[locale]` 方括号变通配符 → 用 `-LiteralPath`
+17. ❌ Remove-Item 默认拦截 → 用 mavis-trash
+18. ❌ CRLF 替换 LF → Python open(write) 加 `newline=''`
+19. ❌ CF Pages 构建状态 → GitHub check_runs API
+20. ❌ CDN 边缘节点缓存 → 加 cache buster 验证
+21. ❌ CDN 边缘节点同步延时 → 多地理节点 curl + 真实浏览器验证
+22. ❌ HTTP 200 不代表修复成功 → 必须 HTML 关键词 + 多节点 + 真实浏览器三重验证
 
 ---
 
-### 任务 10: 转化漏斗分析 + A/B Testing 平台
-**价值**: 🔥🔥🔥 (后续所有优化的数据基础)
-**预估积分**: 6-8
-**输入**:
-- 现有 GTM (无)
-- 现有 Plausible (无)
+## 5. 核心约束
 
-**要求**:
-1. **Plausible Analytics** (无 cookie, GDPR 友好, 9 USD/月 self-host 或 官方 19 USD/月)
-2. **关键事件埋点**:
-   - hero_cta_click
-   - product_view
-   - quote_form_start
-   - quote_form_step_complete
-   - quote_form_submit
-   - whatsapp_click
-   - phone_click
-   - trust_bar_view
-   - case_study_click
-3. **Funnel 报告**: 访问 → 询价 → 提交 (Plausible 自带)
-4. **A/B 测试框架**: 用 Plausible `experiments` feature 或自建 cookie split
-5. **Privacy policy 更新** (加 Plausible disclosure)
-6. **GTM 备选** (如果想接 Google Ads, 装 GTM 并行)
-
-**输出**:
-- 1 commit
-- Plausible 配置
-- 事件清单文档 `docs/analytics-events.md`
+- **Edge Runtime**: 不可用 fs/Buffer/crypto/node API
+- **No framer-motion**: 只 CSS transitions + Tailwind
+- **SEO**: hreflang 完整 / canonical 正确 / schema 验证
+- **i18n**: 3 locale 全覆盖，文案不硬编码，通过 translations 对象
+- **NAP**: 深圳实体统一（No.1 Jiacheng Road, +86 198 8085 1334, zprintpro@outlook.com）
+- **布局**: max-w-[1320px] 全局不变
+- **品牌色**: #2873F5 蓝 / #F87314 橙 / #7C3AED 紫 / #10B981 绿
 
 ---
 
-## 4. 🟡 M3 简单任务清单（我自己做）
+## 6. 执行工作流
 
-| 任务 | 估时 | commit 数 | 状态 |
-|------|------|-----------|------|
-| ~~修 contact 500 真因~~ | — | — | ✅ **已修好 (0a5eca5 JsonLd 合并)**，v1 误判 |
-| 单文件文案修复 (任何 locale) | <5 min | 1 | open |
-| sitemap 维护 | <10 min | 1 | open |
-| 单 schema 添加 | <5 min | 1 | open |
-| 路径 308 重定向 | <5 min | 1 | open |
-| 价格多币种切换验证 | <10 min | 1 | open |
-| 内部链接 check (curl + grep) | <5 min | 0 (脚本) | open |
-| push + **HTML 关键词 verify** | 5 min/次 | — | open |
-| 真实浏览器 verify (user 视角) | 5 min/次 | — | open |
-| cron 监控策略升级 (HTML 关键词 + 真实浏览器) | 30 min | 1 | **本次 v2 update 后做** |
+1. 读 AGENTS.md + 本文 §4 已踩坑 → 理解项目约定
+2. 读相关源文件 → 理解现有实现
+3. 写代码 → 每个 commit 单任务
+4. `npx next build` → 验证构建通过
+5. `git commit` + `git push origin_ssh main`
+6. 等 CF Pages 自动部署（~2min）
+7. 验证: `curl -s -o /dev/null -w '%{http_code}' https://zprintpro.com/{path}` + HTML 关键词 grep + 真实浏览器截图
 
 ---
 
-## 5. 已有资源（AutoClaw 直接用，不要重新生成）
-
-| 资源 | 路径 | 用途 |
-|------|------|------|
-| **SKU 完整 prompt (Midjourney + Kimi)** | `image-prompts.md` (3050 行) | 生图用 |
-| **Seedream 4.5 prompt block (3 locale)** | `seedream-prompts-all-skus.txt` (586KB, GBK) | 批量生图用 |
-| **批量执行脚本** | `seedream-batch-v3.js` | API 调用 |
-| **进度跟踪** | `seedream-progress.json` / `seedream-progress-v3.json` | 任务状态 |
-| **生图指南** | `SEEDREAM-GUIDE.md` | 工具用法 |
-| **SKU 详细数据** | `src/data/products.ts` (79 SKU) | 定价 / 分类 / slug |
-| **SKU SEO 数据** | `src/data/sku-seo-data.ts` (78 SKU) | title/desc/h1 |
-| **Pillar content** | `src/data/pillar-content.ts` | 长尾 SEO 文章 |
-| **Cluster content** | `src/data/cluster-content.ts` | 内部链接 |
-| **Buying guides** | `src/data/buying-guides.ts` | 选购指南 |
-| **现有 seedream-webp 资源** | `public/images/products/seedream-webp/` (1015 张) | 部分 SKU 有图 |
-| **Site config** | `src/lib/siteConfig.ts` (深圳实体 NAP) | Schema / OG |
-| **联系页 详细 spec** | `AUTO_CRAWL_GLM_CONTACT_PAGE_PROMPT.md` (19kB) | 任务 1 输入 |
-
----
-
-## 6. 已踩的坑（AutoClaw 必看，不能再犯）
-
-1. ❌ **品牌名写"智印港"** — 这是竞品, 全文过滤
-2. ❌ **地址写 HK 觀塘/九龍灣/牛頭角** — 真实主体是深圳龙岗平湖
-3. ❌ **OG 写 "from Hong Kong factory"** — 深圳主体写 Shenzhen
-4. ❌ **SVG `<animate>` + next/image** — edge runtime streaming 抛错
-5. ❌ **3 个独立 `<JsonLd dangerouslySetInnerHTML>`** — RSC streaming 末尾抛错 (home 用 1 个数组形式是 OK 的)
-6. ❌ **react-hook-form + edge runtime** — 需 `dynamic import + ssr:false`
-7. ❌ **Service Worker 缓存** — 迭代期禁用 (见 layout.tsx 注释)
-8. ❌ **buffer / fs / crypto node API** — edge runtime 不可用
-9. ❌ **iframe + CSP frame-src** — OSM 嵌入失败
-10. ❌ **"placeholder.jpg" 零字节** — 验证每个 image 资源 mtime + size
-11. ❌ **"aggregateRating.reviewCount" 非整数** — GSC 报"无效整数", 用 Number 不是 String
-12. ❌ **hreflang 缺 x-default / en-GB / en-AU** — 现在已修
-13. ❌ **description 字符 < 70** — 标题/描述太短 SEO 扣分
-14. ❌ **CF Pages Free plan 1046 限流** — wrangler 部署触发的 plan-level rate limit, 5b66c71 升级 next 时触发的
-15. ❌ **PowerShell `&&` / `head` / `grep`** — 用 `;` / `Select-Object` / `Select-String`
-16. ❌ **PowerShell `[locale]` 方括号当通配符** — 用 `-LiteralPath`
-17. ❌ **Remove-Item 默认拦截** — 用 mavis-trash
-18. ❌ **CRLF 替换 LF** — Python open(write) 必须 `newline=''`
-19. ❌ **CF Pages Git integration build 状态** — 不在 GitHub check_runs API 显示
-20. ❌ **CDN 边缘节点缓存** — 17:18 AutoCrawl 测 cache buster 看到 200 是缓存残留, 不是新 build 200
-21. ❌ **CF Pages CDN 边缘节点同步不均匀 (v2 新增, 严重)** — 一个 user 看到 200 / 另一个看到 500 (不同地理边缘节点同步时延差) — **cron 监控绝不能只看 HTTP code**, 必须 parse HTML 找关键内容关键词 (信任栏文字 / 主 CTA / schema 字段)
-22. ❌ **修复真伪判断 (v2 新增, 严重)** — HTTP 200 不代表真修好 (可能是 CDN 缓存的旧 build), HTTP 500 不代表真没好 (可能是边缘节点未同步新 build). **唯一可靠**: 真实浏览器 (user 视角) + HTML 关键词 + 多地理节点 curl + CF build manifest hash 一致
-
----
-
-## 7. 核心约束（GLM 5.2 必读）
-
-### 技术栈
-- **框架**: Next.js 14.2.35 App Router (Edge runtime)
-- **样式**: Tailwind CSS + shadcn/ui (无 framer-motion, 用 CSS transitions)
-- **数据库**: Supabase (Auth + DB + Storage)
-- **支付**: PayPal 审核中, 当前用银行电汇 + 微信 + 支付宝 3 选 1
-- **部署**: Cloudflare Pages (Git integration, 不要 wrangler 触发 1046)
-- **域名**: zprintpro.com
-- **布局**: max-w-[1320px] 全局
-
-### 性能约束
-- LCP < 2.5s
-- INP < 200ms
-- CLS < 0.1
-- Lighthouse 90+ (移动端 + 桌面)
-
-### SEO/GEO 约束
-- title 50-60 字符
-- description 150-160 字符
-- H1 唯一 + 含主关键词
-- Schema: Organization + LocalBusiness + Product + FAQPage + BreadcrumbList
-- hreflang: zh-Hant-HK / en / en-GB / en-AU / ja-JP / x-default
-- sitemaps: 4 个 (index + zh-hk + en + ja)
-- llms.txt: 新增, 喂 AI
-
-### 多语言
-- **zh-hk**: 主场 (香港/简体中文)
-- **en**: 全球英语 (美国/英国/澳洲共用)
-- **ja**: 日本市场
-- 翻译要地道, 不接受机翻
-- 货币 HKD / USD / JPY 自动按 locale
-
-### Edge runtime 兼容
-- ❌ `Buffer` / `fs` / `node:crypto` / `process.env` (除 NEXT_PUBLIC_*)
-- ✅ `fetch` / `URL` / `crypto.subtle` (Web Crypto)
-- ✅ client component 用 `dynamic import + ssr:false`
-- ✅ schema 用 JSON.stringify + dangerouslySetInnerHTML (但合并成 1 个 `<JsonLd>` 形式)
-
-### 数据约束
-- 不用假数据 (15000+ 客户要可追溯, 否则改成 <真实数字>)
-- NAP 统一深圳实体
-- 联系电话 +86 198 8085 1334 (显示)
-- WhatsApp +86 181 2638 0255 (专用)
-- 邮箱 zprintpro@outlook.com
-- 地址 广东省深圳市龙岗区平湖街道嘉城路 1 号 (518111)
-
----
-
-## 8. 完整工作流 (AutoClaw 必读, **v2 升级**)
+## 7. 执行顺序
 
 ```
-1. 读任务 spec + 已有 prompt 文件 + 已有 data 文件
-2. 写代码 → 本地 next build 验证编译
-3. commit (用 zprintprohk-rgb / zprintprohk@gmail.com, 注意 CRLF 用 `-c core.autocrlf=false`)
-4. push origin_ssh main → CF Pages 自动 build (3-5 min, 不会显示在 GitHub Actions)
-5. set cron monitor **HTML 关键词 + HTTP code** (v2 升级):
-   - 不能只 curl 看 200/500 (CDN 边缘节点假象, 踩坑 #21)
-   - 必须 parse HTML 找关键内容关键词 (信任栏文字 / 主 CTA / schema 字段)
-   - 5 min/次 × 6 ticks (30 min TTL)
-6. **多地理节点 verify** (v2 新增):
-   - 用 webfetch 走不同代理 / CF 边缘节点健康检查 API
-   - 或用 curl 从 3 个不同出口 IP 测
-   - 至少 user 所在地理区域 + 至少 2 个其他地理
-7. ALL 200 + HTML 关键词命中 → 报告 + 删 cron
-8. 仍 5xx 或 HTML 关键词缺失 → 升级 user, 列备选方案 (M3 接手二分法)
-9. 验证 24h 缓存过期后仍稳定 → 完成
+Phase 1: SEO 流量增长 ⚡ (当前瓶颈)
+  ① 任务 1 (AI GEO) + 任务 2 (Web Vitals) — 可并行
+  ② 任务 3 (内链 hub-spoke)
+  ③ 任务 4 (SKU 生图)
+
+Phase 2: 转化优化 🔥
+  ④ 任务 5 (Hero CTA) + 任务 7 (信任体系) — 可并行
+  ⑤ 任务 6 (定价引擎) → 任务 8 (联系页增强)
+
+Phase 3: 基础设施
+  ⑥ 任务 10 (Plausible)
+  ⑦ 任务 9 (拖拽上传)
 ```
-
-**v2 关键变化**: step 5 从"只看 HTTP code"升级到"HTTP code + HTML 关键词 + 多地理节点"。避免再次踩"cron 看 30 分钟 500 就报'修复无效'"的坑。
-
----
-
-## 9. 任务优先级 (按 ROI 排序)
-
-| # | 任务 | 价值 | 难度 | AutoClaw 优先级 |
-|---|------|------|------|----------------|
-| 1 | 联系页完整重构 | 🔥🔥🔥🔥🔥 | 高 | **#1 立即做** |
-| 2 | 首页 Hero + CTA | 🔥🔥🔥🔥🔥 | 中 | **#2** |
-| 3 | 实时报价引擎 | 🔥🔥🔥🔥🔥 | 高 | **#3** |
-| 4 | AI 搜索 GEO 优化 | 🔥🔥🔥🔥 | 中 | **#4** |
-| 5 | 信任体系 | 🔥🔥🔥🔥 | 中 | **#5** |
-| 6 | Core Web Vitals | 🔥🔥🔥🔥 | 中 | **#6** |
-| 7 | 站内 SEO 内链 | 🔥🔥🔥 | 低 | **#7 (M3 也可做)** |
-| 8 | SKU 批量生图 | 🔥🔥🔥 | 中 | **#8** |
-| 9 | 询价表单 + 上传 | 🔥🔥🔥 | 中 | **#9** |
-| 10 | 转化分析 + A/B | 🔥🔥🔥 | 中 | **#10 (基础, 优先做)** |
-
----
-
-## 10. 验收标准 (每任务必达)
-
-✅ **代码层**: commit + push 成功 + 本地 `npm run build` 通过
-✅ **线上层**: 3 locale 目标路径 HTTP 200 (cron monitor 30 min)
-✅ **性能层**: Lighthouse 90+ (移动 + 桌面)
-✅ **SEO 层**: Google Rich Results Test 通过 (主页面)
-✅ **i18n 层**: 3 locale 文案地道, 不接受机翻
-✅ **品牌层**: 全文无 "智印港" / 无 "HK 觀塘" (除非 zh-hk locale 特定)
-✅ **数据层**: NAP 统一深圳, 不混 HK
-✅ **A/B 埋点**: 关键事件埋了, Plausible 可见
-
----
-
-**AutoClaw 接到这个文件后，按 #1 → #10 顺序执行，每个任务完成后报告。**
-
-**AutoClaw 积分预算**: 10 个任务 × 平均 7 积分 = ~70 积分 (够用)
-**M3 后备**: 简单 bug fix + 验证 + 部署, 不消耗 AutoClaw 积分
-
-<media src="/absolute/path/to/this/file" />  <!-- placeholder, do not include -->
