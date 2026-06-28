@@ -880,7 +880,7 @@ export function generateProductImageJsonLd(
     ? `${productName} - ZPrintPro 深圳實體工廠專業印刷，${urls.length}張高清產品圖詳情展示`
     : locale === 'ja'
     ? `${productName} - ZPrintPro 深圳自社工場の專業印刷、${urls.length}枚の高画質商品画像`
-    : `${productName} - ZPrintPro professional printing from our Hong Kong factory, ${urls.length} detailed high-res product images`;
+    : `${productName} - ZPrintPro professional printing from our Shenzhen factory, ${urls.length} detailed high-res product images`;
 
   const creditText = locale === 'zh-hk'
     ? '© 智印雲 ZPrintPro 版權所有'

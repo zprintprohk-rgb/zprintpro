@@ -1,4 +1,4 @@
-/**
+﻿/**
  * 根布局组件
  * 包含全局样式、字体、SEO基础配置
  */
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     // 改用 '%s'，由各 page.tsx 的 generate*Metadata 统一控制品牌后缀。
     template: '%s',
   },
-  description: 'Custom printing service online for US, UK, AU markets. Stickers, packaging, paper bags, business cards, posters, books. 72h global delivery from Hong Kong factory. AI instant quote in 30s.',
+  description: 'Custom printing service online for US, UK, AU markets. Stickers, packaging, paper bags, business cards, posters, books. 72h global delivery from Shenzhen factory. AI instant quote in 30s.',
   keywords: ['custom printing', 'online printing service', 'sticker printing', 'packaging boxes', 'paper bags', 'business cards', 'custom posters', 'same day printing', 'global printing service'],
   authors: [{ name: 'ZprintPro' }],
   creator: 'ZprintPro',
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     url: 'https://zprintpro.com',
     siteName: 'ZprintPro',
     title: 'ZprintPro | Custom Printing Service Online — Global 72h Delivery',
-    description: 'Custom printing for US/UK/AU. Stickers, packaging, bags, books. AI instant quote, 72h global delivery from Hong Kong factory.',
+    description: 'Custom printing for US/UK/AU. Stickers, packaging, bags, books. AI instant quote, 72h global delivery from Shenzhen factory.',
     images: [
       {
         url: '/images/og-default.jpg',

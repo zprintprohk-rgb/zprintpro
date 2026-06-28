@@ -1,4 +1,4 @@
-/** @type {import('next').NextConfig} */
+﻿/** @type {import('next').NextConfig} */
 const path = require('path');
 
 // ============================================================================
@@ -49,6 +49,20 @@ function buildGuideRedirects() {
   //    该路由实际存在（构建路由表确认），GSC 报 404 是 CF 边缘缓存了旧 build 的 404
   //    处理方案：部署后到 CF Dashboard → Caching → Purge Everything，
   //    让新 build 的 200 响应覆盖旧缓存即可。
+
+  // returns/ → help-center/ (退货政策内容在 help-center 的 Returns tab)
+  for (const locale of LOCALES) {
+    rules.push({
+      source: `/${locale}/returns`,
+      destination: `/${locale}/help-center/`,
+      permanent: true,
+    });
+    rules.push({
+      source: `/${locale}/returns/`,
+      destination: `/${locale}/help-center/`,
+      permanent: true,
+    });
+  }
 
   return rules;
 }
