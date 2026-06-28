@@ -74,3 +74,17 @@ console.log('\n--- Summary ---');
 console.log('Categories: '+categorySlugs.length+', Products: '+productSlugs.length+', Blog: '+allBlogSlugs.length);
 console.log('Static: '+staticPages.length+', Locales: '+locales.length+', Total: '+urls.length);
 files.forEach(f => console.log('  '+f.locale+': '+f.count+' URLs'));
+// IndexNow ping to Bing after sitemap generation
+const INDEXNOW_KEY = 'b8f1c2d3e4a5f6b7c4d8e9f0f1a2b3c4d5';
+const https = require('https');
+locales.forEach(locale => {
+  const urlList = urls.filter(u => u.loc.startsWith(`${BASE_URL}/${locale}/`)).slice(0, 100).map(u => u.loc);
+  const data = JSON.stringify({ host: 'zprintpro.com', key: INDEXNOW_KEY, keyLocation: `https://zprintpro.com/${INDEXNOW_KEY}.txt`, urlList });
+  const req = https.request({ hostname: 'www.bing.com', path: '/indexnow', method: 'POST', headers: { 'Content-Type': 'application/json' } }, res => {
+    console.log(`IndexNow ping ${locale}: ${res.statusCode}`);
+  });
+  req.on('error', e => console.error(`IndexNow ${locale} error: ${e.message}`));
+  req.write(data);
+  req.end();
+});
+console.log('IndexNow pings sent for 3 locales');
