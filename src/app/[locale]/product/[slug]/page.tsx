@@ -1,4 +1,4 @@
-/**
+﻿/**
  * 产品详情页 (PDP - Product Detail Page)
  * 显示单个产品的详细信息、报价计算器、加入购物车
  */
@@ -197,7 +197,7 @@ export default function ProductPage({
   // 2026-06-10 Phase B 修复 P0-3：HowTo + Speakable 注入
   // 仅对 4 个主钻品类（packaging / paper-bags / books / calendars）的产品页注入 HowTo。
   // Speakable 通用注入（与 P0-3 任务说明一致：选 2-3 个核心 cssSelector）。
-  const mainDrillingCategories = ['packaging', 'paper-bags', 'books', 'calendars'];
+  const mainDrillingCategories = ['packaging', 'paper-bags', 'books', 'calendars', 'stickers', 'flyers', 'posters', 'business-cards', 'banners', 'menus', 'envelopes', 'red-packets', 'educational', 'japan-doujin'];
   const categoryHowto = mainDrillingCategories.includes(product.category_slug)
     ? getCategoryHowToSteps(product.category_slug, locale)
     : null;
