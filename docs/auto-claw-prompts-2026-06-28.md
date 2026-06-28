@@ -1,10 +1,45 @@
 # ZprintPro 优化提示词 — AutoClaw GLM 5.2 攻坚任务 + Mavis M3 简单任务
 
-> **生成时间**: 2026-06-28 18:55 (Asia/Shanghai)
+> **生成时间**: 2026-06-28 19:05 (Asia/Shanghai) — **v2 更新** (v1 是 18:55 写，**v1 错把 contact 当 500 修复无效**；v2 修正：contact fec0ac8 重构 + 0a5eca5 JsonLd 合并已 100% 生效，user 浏览器截图确认)
 > **作者**: Mavis (orchestrator)
 > **目标工具**: AutoClaw GLM 5.2 (积分有限，只攻最高价值) + Mavis M3 (执行小任务)
 > **业务目标**: zprintpro.com 月销 5 万美金
-> **当前阶段**: 技术架构基本就位 (Next 14.2 Edge runtime + 79 SKU × 3 locale = 237 产品页 + 4 sitemap + schema 全)，要补 CRO 转化 + AI 搜索可见性 + 信任体系
+> **当前阶段**: 技术架构就位 + 联系页已完成重构（4 组件生效） + 4 sitemap + schema 全。下一步攻 CRO 转化 + AI 搜索可见性 + 信任体系 + 实时报价
+
+---
+
+## 0.1 关键状态 (v2 重要修正)
+
+✅ **已生效** (user 浏览器截图 + curl 验证):
+- `/zh-hk/contact/` `/en/contact/` `/ja/contact/` — **3 locale 全部 200 OK**
+- **联系页 fec0ac8 重构** 4 组件全部生效: 4 指标信任栏 (500+/10+/72h/30+) / 140px QR / 简化地址卡片 (深圳龙岗平湖) / 双联系卡片 (电话+86 198 8085 1334 + 邮箱)
+- **0a5eca5 JsonLd 合并** 修复 next 14.2 + edge runtime RSC streaming 抛错 (3 个独立 `<JsonLd>` 合并为 1 个 `<JsonLd data={[array]}>` 形式)
+- 4 sitemap (`/sitemap.xml` `/sitemap-index.xml` `/sitemap-zh-hk.xml` `/sitemap-en.xml` `/sitemap-ja.xml`) 全 200
+- `/zh-hk/returns/` → 308 → `/zh-hk/help-center/`
+- OG description en 改 "from Shenzhen factory"
+- SVG 地图已删 (9ea4ef0 改地址)
+- NAP 统一深圳实体
+- 9ea4ef0 / 6ca47ff / 7ad6f2e / 0a5eca5 / 573c092 / 6a027d1 / 6438200 共 7 个 commit 已 push
+
+❌ **AutoClaw 不要重做** (v1 错误让 GLM 5.2 攻) :
+- ❌ 联系页基础重构 (已完成)
+- ❌ 修 contact 500 bug (已修，v1 误判)
+- ❌ 修 SVG 地图 HK→深圳 (已修)
+- ❌ 改 generate-sitemap.js 输出 4 份 (已修)
+- ❌ /returns/ 重定向 (已加)
+- ❌ OG description HK→Shenzhen (已修)
+
+🎯 **AutoClaw 真正要攻的 (v2 重排后)**:
+1. **联系页增强** (在 fec0ac8 基础上加 3 步表单向导 + 实时报价 + A/B 埋点)
+2. **首页 Hero + 主 CTA**
+3. **实时报价引擎** (SKU + 数量 + 加急)
+4. **AI 搜索 GEO 优化** (llms.txt / speakable)
+5. **信任体系** (客户 logo + 证书 + case study)
+6. **Core Web Vitals 90+**
+7. **站内 SEO 内链 hub-spoke**
+8. **SKU 批量生图**
+9. **询价表单 + 拖拽上传 + Turnstile**
+10. **Plausible + A/B testing**
 
 ---
 
@@ -48,39 +83,47 @@
 
 ## 3. 🔴 GLM 5.2 攻坚任务清单（10 个，按价值排序）
 
-### 任务 1: 联系页完整重构（多步表单 + 实时报价 + A/B 埋点）
+### 任务 1: 联系页**增强** (在 fec0ac8 基础上加 3 步表单 + 实时报价 + A/B 埋点)
 **价值**: 🔥🔥🔥🔥🔥 (P0，月增 30% 询价转化)
-**预估积分**: 8-12
+**预估积分**: 6-9 (v1 估 8-12，但基础工作已做完)
+**v2 重要修正**: 联系页基础重构 (fec0ac8) **已完成且在生产生效**（user 浏览器截图确认）。**不要重做基础布局**，直接在现有基础上加增强功能。
+
+**已生效的基础** (fec0ac8, 不要改):
+- 4 指标信任栏 (500+/10+/72h/30+)
+- 3 段表单布局 (聯絡資訊 / 印刷需求 / 留言與附件)
+- 140px WhatsApp QR + 立即 WhatsApp 查詢 大按钮
+- 双联系卡片 (電話 +86 198 8085 1334 / 邮箱 zprintpro@outlook.com)
+- 简化地址卡片 (深圳龍崗區平湖街道嘉城路1號 518111)
+- Google Maps 查看 + 規劃路線 双按钮
+- 3 个 schema (ContactPage + LocalBusiness + Business) 已合并为 1 个 `<JsonLd data={[array]}>` 形式 (0a5eca5 修)
+
 **输入文件**:
-- `src/app/[locale]/contact/page.tsx` (现状 21kB，有 500 bug)
+- `src/app/[locale]/contact/page.tsx` (现状 21kB, fec0ac8 后)
 - `src/app/[locale]/contact/ContactFormWrapper.tsx`
-- `src/components/quote/QuoteForm.tsx` (react-hook-form + zod)
+- `src/components/quote/QuoteForm.tsx` (react-hook-form + zod, 已存在)
 - `src/lib/pricing.ts` (定价逻辑)
 - `src/data/products.ts` (79 SKU 报价基础)
-- 之前 AutoCrawl 写的 `AUTO_CRAWL_GLM_CONTACT_PAGE_PROMPT.md` (19kB 详细 spec，可作输入)
+- `AUTO_CRAWL_GLM_CONTACT_PAGE_PROMPT.md` (19kB AutoCrawl 之前写的 spec, 可作输入)
 
-**要求**:
-1. **3 步表单向导** (Step 1: 选品类/数量 → Step 2: 联系信息 → Step 3: 附加需求)
-2. **实时报价预览** (基于 SKU + 数量 + 加急自动算价, 浮动 ±15%)
-3. **进度指示器** (顶部 Step 1/2/3)
-4. **4 指标信任栏** (500+/10+/72h/30+ 已做，保留)
-5. **WhatsApp CTA** + 放大的 QR code (140px, 已做)
-6. **A/B 测试埋点** (用 Plausible / 自建 / GTM, 至少 4 个事件: form_start, step_complete, form_submit, cta_click)
-7. **Edge runtime 兼容** (避开 Buffer/fs, dynamic import 客户端组件)
-8. **JSON-LD schema 保持** (ContactPage + LocalBusiness + Business)
-9. **解决 contact 500 bug** (在重构同时定位根因)
-10. **3 locale 全翻译** (zh-hk/en/ja, 不要硬编码)
+**增强要求 (在 fec0ac8 基础上加)**:
+1. **3 步表单向导** (Step 1: 选品类/数量 → Step 2: 联系信息 → Step 3: 附加需求) — 当前 QuoteForm 是 3 段式单页, 升级为可切换的 3 步向导
+2. **实时报价预览** (基于 SKU + 数量 + 加急自动算价, 浮动 ±15%) — 需要先做任务 3 的报价引擎
+3. **进度指示器** (顶部 Step 1/2/3 圆点 + 连接线, 移动端友好)
+4. **A/B 测试埋点** (至少 4 个事件: form_start, step_complete, form_submit, cta_click) — 配合任务 10 Plausible
+5. **保留所有现有内容** (4 指标信任栏 / 140px QR / 双联系卡片 / 地址 / Google Maps)
 
 **禁止**:
-- ❌ 改基线颜色 (#2873F5 等)
+- ❌ 重做基础布局 (fec0ac8 改的 4 组件已生效, 改回去会破坏)
+- ❌ 改基线颜色 (#2873F5 / #F87314 / #7C3AED / #2873F5 等)
 - ❌ 改 max-w-[1320px] 布局
-- ❌ 引入 framer-motion（用 CSS + Tailwind transitions）
-- ❌ 引入 framer 之类大库（用 CSS + Tailwind transitions）
+- ❌ 引入 framer-motion (用 CSS + Tailwind transitions)
+- ❌ 改 NAP (深圳实体已统一)
+- ❌ 改品牌名 (智印雲 / ZprintPro 已定)
 
 **输出**:
-- 1-2 个 commit (重构 + A/B 埋点)
-- 截图 (3 locale 首页/3 步状态)
-- 部署后 curl verify 3 locale 全 200
+- 1-2 个 commit (增强 + A/B 埋点)
+- 3 locale 截图 (3 步状态切换)
+- 部署后 **HTML 关键词 verify** (不只 curl 看 200) — 找 "Step 1" / "下一步" / "进度" 字符串在 HTML 里
 
 ---
 
@@ -319,19 +362,18 @@
 
 ## 4. 🟡 M3 简单任务清单（我自己做）
 
-| 任务 | 估时 | commit 数 |
-|------|------|-----------|
-| 修 contact 500 真因 (A2: 注释 ContactFormWrapper 测试) | 10 min | 1 |
-| 修 contact 500 真因 (A3: 注释 trust bar 测试) | 5 min | 1 |
-| 修 contact 500 真因 (A4: img 改 SVG inline) | 10 min | 1 |
-| 单文件文案修复 (任何 locale) | <5 min | 1 |
-| OG 描述 HK→Shenzhen 验证 (已做) | ✅ done | 7ad6f2e |
-| sitemap 维护 | <10 min | 1 |
-| 单 schema 添加 | <5 min | 1 |
-| 路径 308 重定向 | <5 min | 1 |
-| 价格多币种切换验证 | <10 min | 1 |
-| 内部链接 check (curl + grep) | <5 min | 0 (脚本) |
-| push + verify curl | 5 min/次 | — |
+| 任务 | 估时 | commit 数 | 状态 |
+|------|------|-----------|------|
+| ~~修 contact 500 真因~~ | — | — | ✅ **已修好 (0a5eca5 JsonLd 合并)**，v1 误判 |
+| 单文件文案修复 (任何 locale) | <5 min | 1 | open |
+| sitemap 维护 | <10 min | 1 | open |
+| 单 schema 添加 | <5 min | 1 | open |
+| 路径 308 重定向 | <5 min | 1 | open |
+| 价格多币种切换验证 | <10 min | 1 | open |
+| 内部链接 check (curl + grep) | <5 min | 0 (脚本) | open |
+| push + **HTML 关键词 verify** | 5 min/次 | — | open |
+| 真实浏览器 verify (user 视角) | 5 min/次 | — | open |
+| cron 监控策略升级 (HTML 关键词 + 真实浏览器) | 30 min | 1 | **本次 v2 update 后做** |
 
 ---
 
@@ -377,6 +419,8 @@
 18. ❌ **CRLF 替换 LF** — Python open(write) 必须 `newline=''`
 19. ❌ **CF Pages Git integration build 状态** — 不在 GitHub check_runs API 显示
 20. ❌ **CDN 边缘节点缓存** — 17:18 AutoCrawl 测 cache buster 看到 200 是缓存残留, 不是新 build 200
+21. ❌ **CF Pages CDN 边缘节点同步不均匀 (v2 新增, 严重)** — 一个 user 看到 200 / 另一个看到 500 (不同地理边缘节点同步时延差) — **cron 监控绝不能只看 HTTP code**, 必须 parse HTML 找关键内容关键词 (信任栏文字 / 主 CTA / schema 字段)
+22. ❌ **修复真伪判断 (v2 新增, 严重)** — HTTP 200 不代表真修好 (可能是 CDN 缓存的旧 build), HTTP 500 不代表真没好 (可能是边缘节点未同步新 build). **唯一可靠**: 真实浏览器 (user 视角) + HTML 关键词 + 多地理节点 curl + CF build manifest hash 一致
 
 ---
 
@@ -429,18 +473,27 @@
 
 ---
 
-## 8. 完整工作流（AutoClaw 必读）
+## 8. 完整工作流 (AutoClaw 必读, **v2 升级**)
 
 ```
 1. 读任务 spec + 已有 prompt 文件 + 已有 data 文件
 2. 写代码 → 本地 next build 验证编译
 3. commit (用 zprintprohk-rgb / zprintprohk@gmail.com, 注意 CRLF 用 `-c core.autocrlf=false`)
 4. push origin_ssh main → CF Pages 自动 build (3-5 min, 不会显示在 GitHub Actions)
-5. set cron monitor 3 locale 目标路径 5min/次 × 6 ticks (30 min TTL)
-6. ALL 200 → 报告 + 删 cron
-7. 仍 5xx → 升级 user, 列备选方案 (M3 接手二分法)
-8. 验证 24h 缓存过期后仍稳定 → 完成
+5. set cron monitor **HTML 关键词 + HTTP code** (v2 升级):
+   - 不能只 curl 看 200/500 (CDN 边缘节点假象, 踩坑 #21)
+   - 必须 parse HTML 找关键内容关键词 (信任栏文字 / 主 CTA / schema 字段)
+   - 5 min/次 × 6 ticks (30 min TTL)
+6. **多地理节点 verify** (v2 新增):
+   - 用 webfetch 走不同代理 / CF 边缘节点健康检查 API
+   - 或用 curl 从 3 个不同出口 IP 测
+   - 至少 user 所在地理区域 + 至少 2 个其他地理
+7. ALL 200 + HTML 关键词命中 → 报告 + 删 cron
+8. 仍 5xx 或 HTML 关键词缺失 → 升级 user, 列备选方案 (M3 接手二分法)
+9. 验证 24h 缓存过期后仍稳定 → 完成
 ```
+
+**v2 关键变化**: step 5 从"只看 HTTP code"升级到"HTTP code + HTML 关键词 + 多地理节点"。避免再次踩"cron 看 30 分钟 500 就报'修复无效'"的坑。
 
 ---
 
