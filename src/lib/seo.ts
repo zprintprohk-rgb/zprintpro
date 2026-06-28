@@ -95,9 +95,9 @@ export const regionConfig: Record<Locale, RegionConfig> = {
 // 多語言元數據（GEO優化版：三市場完全獨立SEO策略，不互相引用地區名）
 const homeMetadata: Record<Locale, { title: string; description: string; keywords: string }> = {
   'zh-hk': {
-    title: '智印雲 ZPrintPro | 香港印刷公司 | 急件印刷·即日交貨 | 貼紙/單張/包裝盒定制',
-    description: '香港智印雲印刷平台 — 專注急件印刷及即日交貨服務。提供高質素貼紙、宣傳單張、包裝盒定制、名片、海報等。線上30秒獲取初步報價，複雜需求由專人人工核價。全港免費送貨，最快即日交付，72小時快速交貨。',
-    keywords: '香港印刷,急件印刷,即日印刷,深圳實體印刷廠,貼紙印刷,宣傳單張印刷,包裝盒定制,數碼印刷,30秒報價,人工核價,跨境配送,免費送貨,名片印刷,海報印刷,香港印刷公司,印刷急單,小批量印刷,ZPrintPro,智印雲',
+    title: '智印雲 ZPrintPro | 深圳跨境印刷 | 急件印刷·即日交貨 | 貼紙/單張/包裝盒定制',
+    description: '智印雲跨境印刷平台 — 專注急件印刷及即日交貨服務。提供高質素貼紙、宣傳單張、包裝盒定制、名片、海報等。線上30秒獲取初步報價，複雜需求由專人人工核價。全港免費送貨，最快即日交付，72小時快速交貨。',
+    keywords: '香港印刷,急件印刷,即日印刷,深圳實體印刷廠,貼紙印刷,宣傳單張印刷,包裝盒定制,數碼印刷,30秒報價,人工核價,跨境配送,免費送貨,名片印刷,海報印刷,深圳跨境印刷,印刷急單,小批量印刷,ZPrintPro,智印雲',
   },
   en: {
     title: 'Custom Printing Service Online — Stickers, Boxes, Business Cards | ZprintPro',
@@ -889,7 +889,7 @@ export function generateProductImageJsonLd(
     : '© ZPrintPro All Rights Reserved';
 
   const keywords = locale === 'zh-hk'
-    ? `${productName} 香港印刷 ZPrintPro`
+    ? `${productName} 深圳印刷 ZprintPro`
     : locale === 'ja'
     ? `${productName} 印刷 ZPrintPro`
     : `${productName} Hong Kong printing ZPrintPro`;
