@@ -149,7 +149,22 @@ export default function CategoryPage({
     'educational': {
       'zh-hk': '香港校園教育印刷 — 證書 / 作業簿 / 教材 / 學業簿',
       'en': 'Custom Education Printing — Certificates / Workbooks / Textbooks / School Stationery',
-      'ja': '教育印刷 カスタム — 証明書 / ワークブック / 教科書 / 学用品',
+      ja: '教育印刷 カスタム — 証明書 / ワークブック / 教科書 / 学用品',
+    },
+    'envelopes': {
+      'zh-hk': '香港信封印刷定制 — 牛皮信封 / 開窗信封 / 彩色信封 / 企業LOGO信封',
+      en: 'Custom Envelope Printing — Kraft / Window / Colored / Corporate Branding',
+      ja: '封筒印刷 カスタム — クラフト / 窓付き / カラー / 企業ブランディング',
+    },
+    'calendars': {
+      'zh-hk': '香港年曆印刷定制 — 座檯年曆 / 掛曆 / 月曆 / 2027年曆 / 企業LOGO',
+      en: 'Custom Calendar Printing — Desk / Wall / Monthly / 2027 / Corporate Branding',
+      ja: 'カレンダー印刷 カスタム — デスク / 壁掛け / 月別 / 2027年 / 企業ロゴ',
+    },
+    'business-cards': {
+      'zh-hk': '香港咭片印刷定制 — 燙金名片 / UV名片 / 圓角名片 / 高檔名片',
+      en: 'Custom Business Card Printing — Foil Stamped / UV / Rounded Corner / Premium Cards',
+      ja: '名刺印刷 カスタム — 箔押し / UV / 丸角 / プレミアム名刺',
     },
   };
   const pageH1 = customH1Map[slug]?.[locale] || categoryName;
