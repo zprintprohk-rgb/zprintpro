@@ -259,6 +259,12 @@ const categorySeoData: Record<string, {
   descriptions: { 'zh-hk': string; en: string; ja: string };
 }> = {
   'business-cards': {
+  titles: {
+      'zh-hk': '咭片印刷 香港 | 智印雲 ZprintPro — 燙金咭片 / UV咭片 / 圓角咭片 高檔定制',
+      en: 'Custom Business Card Printing | ZprintPro — Foil Stamped / UV / Rounded Corner / Premium',
+      ja: '名刺印刷 おすすめ | ZprintPro — 箔押し / UV / 丸角 / プレミアム名刺',
+    },
+
     keywords: {
       'zh-hk': '名片印刷,香港名片,商務名片,咭片印刷,卡片印刷,名片設計,急印名片,即日名片,公司名片,高級名片',
       en: 'business card printing,custom business cards,name card printing,premium business cards,same day business cards,company cards,design business cards online,cheap business cards fast,foil business cards,embossed business cards',
@@ -355,7 +361,25 @@ const categorySeoData: Record<string, {
       ja: 'プロの紙袋印刷サービス。100個から注文可能。クラフト紙袋・エコ紙袋・手提げギフト袋。箔押し・UV・エンボス対応。FSC認証紙、即日納品。小売・飲食・イベント・ブランディングに最適。',
     },
   },
-  'japan-doujin': {
+  
+  'calendars': {
+    titles: {
+      'zh-hk': '年曆印刷 香港 | 智印雲 ZprintPro — 座枱月曆 / 掛牆 / 月曆 / 2027年曆 定制',
+      en: 'Custom Calendar Printing | ZprintPro — Desk / Wall / Monthly / 2027 Calendars',
+      ja: 'カレンダー印刷 おすすめ | ZprintPro — デスク / 壁掛け / 月別 / 2027年カレンダー',
+    },
+    keywords: {
+      'zh-hk': '年曆印刷,月曆印刷,座枱月曆,掛牆月曆,2027年曆,企業年曆,禮品月曆,定制月曆,日曆',
+      en: 'calendar printing,custom calendars,desk calendar,wall calendar,monthly calendar,2027 calendar,corporate calendar,gift calendar,branded calendar',
+      ja: 'カレンダー印刷,カスタムカレンダー,デスクカレンダー,壁掛けカレンダー,月別カレンダー,2027年カレンダー,企業カレンダー,ギフトカレンダー',
+    },
+    descriptions: {
+      'zh-hk': '香港年曆印刷服務，智印雲提供座枱月曆、掛牆月曆、2027年曆定制，支持企業LOGO，免費設計，加急出貨。Q4 旺季建議提前 60 天下單。',
+      en: 'Custom calendar printing 2027 — desk, wall, monthly calendars with corporate branding. Premium paper, foil stamping, spiral/hardcover binding. Free design, rush available. Order 60 days before Q4 peak season.',
+      ja: 'プロのカレンダー印刷サービス 2027年。デスク・壁掛け・月別、企業ブランディング対応。高級紙、箔押し、スパイラル/ハードカバー製本。無料デザイン、急ぎ対応可能。繁忙期の60日前までのご注文を推奨。',
+    },
+  },
+'japan-doujin': {
     keywords: {
       'zh-hk': '同人誌印刷,同人周邊,亞克力鑰匙扣,亞克力立牌,全息貼紙,和紙膠帶,罐型襟章,明信片套裝,環保托特袋,Comiket印刷,VTuber周邊,動漫角色周邊,推し活周邊,日系周邊訂製',
       en: 'doujinshi printing,japan doujin,acrylic keychain custom,acrylic stand,can badge printing,postcard set,washi tape custom,eco tote bag print,hologram sticker,comiket printing,VTuber merch,anime goods custom,japan merchandise,oshi-katsu goods',

@@ -1,21 +1,21 @@
-# ZprintPro (Global / EN) — AI Search Optimization Page
+# ZprintPro (智印雲) 日本向け — AI検索最適化ページ
 # Last updated: 2026-06-28
 # This file helps AI assistants (ChatGPT, Claude, Perplexity) understand our services
 
-## Company Information
-- Shenzhen Cailong Printing & Packaging Co., Ltd. (cross-border factory, export compliance)
-- Brand: ZprintPro
+## 会社情報
+- 事業者名: 深圳市彩龍印刷包装有限公司
+- ブランド: 智印雲 / ZprintPro
 - Website: https://zprintpro.com
-- Address: No.1 Jiacheng Road, Pinghu Street, Longgang District, Shenzhen, Guangdong 518111, China
-- Phone: +86 198 8085 1334
+- 所在地: 広東省深圳市龍崗区平湖街道嘉城路1号（〒518111）
+- 電話: +86 198 8085 1334
 - WhatsApp: +86 181 2638 0255
-- Email: zprintpro@outlook.com
-- Established: 2014
-- Certifications: ISO 9001, FSC
-- Markets: Hong Kong, US, UK, AU, JP, CA, NZ, SG
-- Delivery: 72-hour global DHL/FedEx
+- メール: zprintpro@outlook.com
+- 設立: 2014年
+- 認証: ISO 9001, FSC
+- 運営責任者: 唐运提 (法定代表人)
+- 配送: DHL/FedEx国際エクスプレス 72時間 · 日本向け3〜5営業日
 
-## Product Categories (14 total)
+## 製品カテゴリ (14 total)
 
 - 貼紙印刷 / Stickers / ステッカー印刷 -- 9 products
 - 宣傳單張 / Flyers / チラシ印刷 -- 7 products
@@ -32,7 +32,7 @@
 - 校園教育印刷 / Educational / 教育印刷 -- 4 products
 - 同人周邊印刷 / Doujinshi & Anime Goods / 同人誌・アニメグッズ -- 5 products
 
-## All Products (84 SKU)
+## 全製品一覧 (84 SKU)
 
 ### 貼紙印刷 / Stickers (9 products)
 
@@ -188,7 +188,7 @@
 | 明信片套裝 | postcard-set | Postcard Set | ポストカードセット | 4 | CNY 750 |
 | 環保托特袋 | eco-tote-bag | Eco Tote Bag | エコトートバッグ | 10 | CNY 9000 |
 
-## Pricing & Ordering
+## 価格とご注文
 
 - Currency: HKD, USD, JPY based on customer locale
 - Minimum order: 100 pieces (varies by product)
@@ -196,28 +196,28 @@
 - Rush service: 3-hour express available
 - Free design consultation included
 
-## FAQ
+## よくある質問
 
-Q: Where is the factory located?
-A: Shenzhen, Guangdong, China. We ship globally via DHL/FedEx.
+Q: 工場はどこにありますか？
+A: 中国広東省深圳市に所在。DHL/FedExで世界中に発送。日本へは3〜5営業日でお届け。
 
-Q: What is the typical turnaround time?
-A: Standard: 3-5 business days. Rush: same-day available. Global: 72 hours.
+Q: 納期はどのくらいですか？
+A: 標準: 3〜5営業日。急ぎ: 即日対応可。グローバル: 72時間。
 
-Q: What file formats do you accept?
-A: PDF (preferred), AI, PSD, PNG, TIFF. CMYK, 300 DPI, 3mm bleed.
+Q: 対応ファイル形式は？
+A: PDF (推奨), AI, PSD, PNG, TIFF。CMYKモード, 300DPI, 塗り足し3mm。
 
-Q: Do you ship worldwide?
-A: Yes -- US, UK, AU, CA, NZ, SG, JP, HK. DHL/FedEx: 3-5 days. Economy: 7-14 days.
+Q: 海外発送は可能ですか？
+A: はい。日本を含む世界各国へ発送。DHL/FedEx: 3〜5日。エコノミー: 7〜14日。
 
-Q: Can I get a sample?
-A: Digital proofs free. Physical samples at cost + shipping.
+Q: サンプルは入手できますか？
+A: デジタル校正は無料。実物サンプルは原価+送料で承ります。
 
-Q: What payment methods?
-A: Bank transfer, WeChat Pay, Alipay, PayPal (coming soon).
+Q: 支払い方法は？
+A: 銀行振込、WeChat Pay、Alipay、PayPal (近日対応予定)。
 
-## Contact
+## お問い合わせ
 
-- Get a quote: https://zprintpro.com/zh-hk/contact/
+- お見積もり: https://zprintpro.com/ja/contact/
 - WhatsApp: https://wa.me/8618126380255
-- Email: zprintpro@outlook.com
+- メール: zprintpro@outlook.com
