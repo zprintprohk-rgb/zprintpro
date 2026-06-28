@@ -186,3 +186,21 @@ scripts/list-medium.py
 scripts/peek-*.py
 next-start.err
 scripts/verify-*.json
+
+# 2026-06-28: AutoCrawl agent runtime state + configuration
+# These files belong to AutoCrawl's local runtime, NOT the zprintpro codebase.
+# Safe to keep locally for AutoCrawl re-runs, but never commit.
+.openclaw/
+HEARTBEAT.md
+IDENTITY.md
+SOUL.md
+TOOLS.md
+USER.md
+
+# 2026-06-28: build/runtime artifacts
+build-log.txt
+build-log-*.txt
+deploy-log.txt
+deploy-log-*.txt
+next-build.log
+next-build-*.log
