@@ -62,12 +62,12 @@ const translations = {
     cta: '獲取報價',
     ctaArrow: '→',
     fromPrice: '低至',
-    // zh-hk 定位: 深圳跨境直發香港 · 3小時急件出貨 · 跨境專線 · WhatsApp 中文客服
+    // zh-hk 定位: 香港本地印刷服務 · 3小時急件 · 港九新界速遞 · WhatsApp 中文客服
     slides: [
-      { title: '⚡ 3 小時急件印刷 · 深圳直發', subtitle: '今天下單 ・ 3 小時內出貨 ・ 深圳跨境專線直達 ・ WhatsApp 中文客服 24 小時在線', price: '3hr 可取', image: '/images/hero/hero-flyer-zh-hk.webp', href: '/zh-hk/services/rush-printing-delivery' },
-      { title: 'ISO 9001 認證 · 專業牛皮紙袋', subtitle: '深圳實體工廠 · FSC 認證紙 · 200 個起印 · 跨境專線送貨上門', price: 'HK$1.2 起', image: '/images/hero/hero-kraft-bag-zh-hk.webp', href: '/product/kraft-paper-bags/' },
+      { title: '⚡ 香港最速 3 小時急件印刷', subtitle: '今天下單 ・ 3 小時內取貨 ・ 港九新界免費速遞 ・ WhatsApp 中文客服 24 小時在線', price: '3hr 可取', image: '/images/hero/hero-flyer-zh-hk.webp', href: '/zh-hk/services/rush-printing-delivery' },
+      { title: 'ISO 9001 認證 · 專業牛皮紙袋', subtitle: '深圳實體工廠 · FSC 認證紙 · 200 個起印 · 港九新界送貨上門', price: 'HK$1.2 起', image: '/images/hero/hero-kraft-bag-zh-hk.webp', href: '/product/kraft-paper-bags/' },
       { title: 'A4 宣傳單張 · 即日可取', subtitle: '128-200g 銅版紙 · 雙面 CMYK · 500 張起印 · 上門收送稿服務', price: 'HK$0.3 起', image: '/images/hero/hero-flyer-zh-hk.webp', href: '/product/a4-flyers/' },
-      { title: '防水貼紙 · 適用任何表面', subtitle: 'UV 防水材質 · 任意形狀模切 · 戶外耐候 3-5 年 · 跨境配送上門', price: 'HK$0.5 起', image: '/images/hero/hero-sticker-zh-hk.webp', href: '/product/waterproof-stickers/' },
+      { title: '防水貼紙 · 適用任何表面', subtitle: 'UV 防水材質 · 任意形狀模切 · 戶外耐候 3-5 年 · 全港配送上門', price: 'HK$0.5 起', image: '/images/hero/hero-sticker-zh-hk.webp', href: '/product/waterproof-stickers/' },
       { title: '禮盒包裝定制 · 提升品牌', subtitle: '燙金 · UV · 擊凸 · 200 個起訂 · 免費排版設計', price: 'HK$5 起', image: '/images/hero/hero-gift-box-zh-hk.webp', href: '/product/gift-boxes/' },
       { title: 'A2 大圖海報 · 即日輸出', subtitle: 'Heidelberg 4 色印刷 · 200-300g 銅版紙 · 大圖輸出色彩鮮豔', price: 'HK$15 起', image: '/images/hero/hero-poster-zh-hk.webp', href: '/product/a2-posters/' },
     ],

@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+﻿import { Metadata } from "next";
 import { Locale, siteConfig, generateBusinessJsonLd, generateLocalBusinessSchema } from "@/lib/seo";
 import { JsonLd } from "@/components/JsonLd";
 import { generateContactPageJsonLd } from "@/lib/seo/schema-extensions";
@@ -26,7 +26,7 @@ const translations = {
     email: "電郵",
     website: "官網",
     addressLabel: "辦公室地址",
-    addressValue: "廣東省深圳市龍崗區平湖街道嘉城路1號（518111）· 深圳市彩龍印刷包裝有限公司",
+    addressValue: "香港九龍新蒲崗大有街3號萬廣大廈15樓C室",
     cta: "立即 WhatsApp 查詢",
     qrCaption: "掃碼即聊",
     online: "在線",
@@ -245,13 +245,13 @@ export default function ContactPage({ params }: ContactPageProps) {
                 </div>
 
                 <div className="space-y-2.5">
-                  <a href="tel:+8619880851334" className="flex items-center gap-3 p-3 rounded-xl bg-gradient-to-r from-blue-50/50 to-transparent hover:from-blue-50 hover:to-blue-50/50 transition-colors group">
+                  <a href={`tel:${locale === "zh-hk" ? "+85259051334" : "+8619880851334"}`} className="flex items-center gap-3 p-3 rounded-xl bg-gradient-to-r from-blue-50/50 to-transparent hover:from-blue-50 hover:to-blue-50/50 transition-colors group">
                     <div className="w-10 h-10 rounded-lg bg-[#2873F5] flex items-center justify-center flex-shrink-0 shadow-sm shadow-blue-200">
                       <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="text-xs text-gray-400">{t.phone}</div>
-                      <div className="text-sm font-semibold text-[#333333] group-hover:text-[#2873F5] transition-colors">+86 198 8085 1334</div>
+                      <div className="text-sm font-semibold text-[#333333] group-hover:text-[#2873F5] transition-colors">{locale === "zh-hk" ? "+852 5905 1334" : "+86 198 8085 1334"}</div>
                     </div>
                     <svg className="w-4 h-4 text-gray-300 group-hover:text-[#2873F5] transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
                   </a>
