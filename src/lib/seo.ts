@@ -271,6 +271,11 @@ const categorySeoData: Record<string, {
     },
   },
   'stickers': {
+    titles: {
+      'zh-hk': '貼紙印刷 香港 | 智印雲 ZprintPro — 防水貼紙 / 透明貼紙 / 異形貼紙 / 標籤貼紙 定制',
+      en: 'Custom Sticker Printing | ZprintPro — Waterproof / Transparent / Die-Cut / Product Labels',
+      ja: 'ステッカー印刷 カスタム | ZprintPro — 防水 / 透明 / ダイカット / 商品ラベル',
+    },
     keywords: {
       'zh-hk': '貼紙印刷,防水貼紙,標籤貼紙,透明貼紙,圓形貼紙,異形貼紙,產品標籤,食品標籤,電商貼紙,車身貼紙',
       en: 'sticker printing,custom stickers,waterproof stickers,die cut stickers,vinyl stickers,product labels,transparent stickers,round stickers,food labels,ecommerce stickers,bumper stickers,holographic stickers',
@@ -285,6 +290,8 @@ const categorySeoData: Record<string, {
   'flyers': {
     titles: {
       'zh-hk': '宣傳單張印刷 香港 | 智印雲 ZprintPro — A4/A5 傳單 / 摺頁 快印',
+      en: 'Flyer Printing Service | ZprintPro — A4 / A5 / Folded Leaflets / Grand Opening / Rush',
+      ja: 'チラシ印刷サービス | ZprintPro — A4 / A5 / 折込 / 開業チラシ / 急ぎ対応',
     },
     keywords: {
       'zh-hk': '宣傳單張印刷,傳單印刷,傳單派發,A4單張,A5單張,摺頁傳單,開業傳單,餐廳傳單,活動傳單,電商傳單',
@@ -300,6 +307,8 @@ const categorySeoData: Record<string, {
   'packaging': {
     titles: {
       'zh-hk': '食品包裝印刷 香港 | 智印雲 ZprintPro — 食品級包裝盒/袋 定制印刷',
+      en: 'Custom Packaging Boxes | ZprintPro — Gift / Cosmetic / Food / Mailer / Rigid Boxes',
+      ja: 'パッケージボックス カスタム | ZprintPro — ギフト / 化粧 / 食品 / メール便 / 組み立て',
     },
     keywords: {
       'zh-hk': '食品包裝印刷,食品包裝盒,食品袋印刷,食品級包裝,食品貼紙印刷,月餅盒,禮品盒,化妝品包裝盒,包裝盒定制,紙盒印刷',
@@ -313,6 +322,11 @@ const categorySeoData: Record<string, {
     },
   },
   'posters': {
+    titles: {
+      'zh-hk': '海報印刷 香港 | 智印雲 ZprintPro — A1/A2 海報 / 戶外海報 / 展覽海報 / 大圖輸出',
+      en: 'Custom Poster Printing | ZprintPro — A1/A2 / Outdoor / Exhibition / Large Format',
+      ja: 'ポスター印刷 カスタム | ZprintPro — A1/A2 / 屋外 / 展示 / 大判出力',
+    },
     keywords: {
       'zh-hk': '海報印刷,A1海報,A2海報,A0海報,戶外海報,展覽海報,餐廳海報,Backdrop背景板,PP海報裱貼,防水海報',
       en: 'poster printing,custom posters,A1 poster,A2 poster,A0 poster,outdoor posters,exhibition posters,event backdrops,PP laminated posters,waterproof posters,foam board printing,same day poster printing',
@@ -327,6 +341,8 @@ const categorySeoData: Record<string, {
   'paper-bags': {
     titles: {
       'zh-hk': '紙袋印刷 香港 | 智印雲 ZprintPro — 牛皮紙袋 / 白卡紙袋 / 精品紙袋 定制',
+      en: 'Custom Paper Bags | ZprintPro — Kraft / White Card / Eco-Friendly / Gift Bags',
+      ja: '紙袋印刷 カスタム | ZprintPro — クラフト / ホワイトカード / エコ / ギフト',
     },
     keywords: {
       'zh-hk': '紙袋印刷,牛皮紙袋,環保紙袋,手提紙袋,品牌紙袋,禮品紙袋,餐廳外賣紙袋,小批量紙袋,棉繩紙袋,白卡紙袋',
@@ -354,6 +370,8 @@ const categorySeoData: Record<string, {
   'menus': {
     titles: {
       'zh-hk': '餐牌印刷 香港 | 智印雲 ZprintPro — 菜單 / 餐牌 / 酒水牌 定制印刷',
+      en: 'Custom Menu Printing | ZprintPro — PVC / Paper / Hardcover / Disposable Menus',
+      ja: 'メニュー印刷 カスタム | ZprintPro — PVC / 紙 / ハードカバー / 使い捨て',
     },
     keywords: {
       'zh-hk': '餐牌印刷,菜單印刷,酒水牌,PVC餐牌,過膠餐牌,皮革餐牌,餐廳餐牌,茶餐廳餐牌,酒吧餐牌,外賣餐牌',
@@ -369,6 +387,8 @@ const categorySeoData: Record<string, {
   'red-packets': {
     titles: {
       'zh-hk': '利是封印刷 香港 | 智印雲 ZprintPro — 企業定制 / 婚慶 / 賀年 利是封',
+      en: 'Red Packet Printing | ZprintPro — Chinese New Year / Wedding / Corporate / Foil Stamped',
+      ja: 'ポチ袋印刷 カスタム | ZprintPro — 旧正月 / 結婚式 / 企業 / 箔押し',
     },
     keywords: {
       'zh-hk': '利是封印刷,企業利是封,婚慶利是封,賀年利是封,定制利是封,燙金利是封,紅包印刷,新年利是封,結婚利是封,LOGO利是封',
@@ -379,6 +399,57 @@ const categorySeoData: Record<string, {
       'zh-hk': '香港利是封印刷定制服務｜智印雲提供企業LOGO利是封、婚慶利是封、賀年利是封印刷，支持燙金、UV等特殊工藝。小批量起訂，質量保證！',
       en: 'Custom red packet printing for Chinese New Year, weddings & corporate branding. Foil stamping, UV & special finishes. Small MOQ, premium quality. Global shipping.',
       ja: 'プロのポチ袋印刷サービス。お正月・結婚式・企業ブランディング向け。箔押し・UV・特殊加工対応。小ロット対応、高品質。全国配送。',
+    },
+  },
+  'banners': {
+    titles: {
+      'zh-hk': '橫幅印刷 香港 | 智印雲 ZprintPro — 易拉寶 / 戶外橫幅 / 展覽橫幅 / 車身廣告',
+      en: 'Custom Banner Printing | ZprintPro — Roll-Up / Outdoor / Exhibition / Vehicle Wrap',
+      ja: 'バナー印刷 カスタム | ZprintPro — ロールアップ / 屋外 / 展示 / 車両広告',
+    },
+    keywords: {
+      'zh-hk': '橫幅印刷,易拉寶,戶外橫幅,展覽橫幅,車身廣告,X架,展架,燈箱廣告,噴繪廣告,商場橫幅',
+      en: 'banner printing,custom banners,roll up banners,outdoor banners,exhibition banners,vehicle wrap,x banner,standee,lightbox advertising,event banners',
+      ja: 'バナー印刷,カスタムバナー,ロールアップバナー,屋外バナー,展示バナー,車両広告,Xスタンド,スタンドバナー,イベントバナー',
+    },
+    descriptions: {
+      'zh-hk': '香港橫幅印刷服務｜智印雲提供易拉寶、戶外橫幅、展覽橫幅、車身廣告印刷，防水耐用，多種尺寸。免費設計，加急交貨，全球配送！',
+      en: 'Custom banner printing — roll-up stands, outdoor vinyl, exhibition backdrops, vehicle wraps. Waterproof & UV-resistant. Multiple sizes. Free design, rush production, global shipping.',
+      ja: 'プロのバナー印刷サービス。ロールアップスタンド、屋外用ビニール、展示背景、車両広告に対応。防水・耐UV。サイズ豊富、無料デザイン、即日納品、全国配送。',
+    },
+  },
+  'books': {
+    titles: {
+      'zh-hk': '畫冊印刷 香港 | 智印雲 ZprintPro — 騎馬釘 / 膠裝書 / 精裝書 / 螺旋裝 / 兒童繪本',
+      en: 'Custom Book Printing | ZprintPro — Saddle Stitch / Perfect Bound / Hardcover / Spiral / Children',
+      ja: '冊子印刷 カスタム | ZprintPro — 中綴じ / 無線綴じ / 上製本 / スパイラル / 絵本',
+    },
+    keywords: {
+      'zh-hk': '畫冊印刷,書籍印刷,騎馬釘,膠裝書,精裝書,螺旋裝,兒童繪本,同人誌,雜誌印刷,小批量書刊',
+      en: 'book printing,custom books,saddle stitch,perfect bound,hardcover,spiral bound,children books,doujinshi,magazine printing,small batch book printing',
+      ja: '冊子印刷,カスタム本,中綴じ,無線綴じ,上製本,スパイラル,絵本,同人誌,雑誌印刷,小ロット印刷',
+    },
+    descriptions: {
+      'zh-hk': '香港畫冊印刷服務｜智印雲提供騎馬釘、膠裝書、精裝書、螺旋裝、兒童繪本印刷，多種紙質可選，支持小批量起訂。免費設計，全球配送！',
+      en: 'Custom book printing — saddle stitch, perfect bound, hardcover, spiral & children books. Premium paper, foil stamping, UV. Free design, small MOQ, global shipping to US, UK, AU.',
+      ja: 'プロの冊子印刷サービス。中綴じ・無線綴じ・上製本・スパイラル・絵本に対応。高級紙、箔押し、UV対応。無料デザイン、小ロット対応、全国配送。',
+    },
+  },
+  'educational': {
+    titles: {
+      'zh-hk': '校園教育印刷 香港 | 智印雲 ZprintPro — 證書 / 作業簿 / 教材 / 學業簿 定制',
+      en: 'Custom Education Printing | ZprintPro — Certificates / Workbooks / Textbooks / School Stationery',
+      ja: '教育印刷 カスタム | ZprintPro — 証明書 / ワークブック / 教科書 / 学用品',
+    },
+    keywords: {
+      'zh-hk': '校園印刷,教育印刷,證書印刷,作業簿,教材印刷,學業簿,畢業證書,獎狀印刷,學校印刷,學生手冊',
+      en: 'education printing,school printing,certificate printing,workbook printing,textbook printing,diploma printing,award certificates,student handbooks,school stationery,academic printing',
+      ja: '教育印刷,学校印刷,証明書印刷,ワークブック,教材印刷,教科書,卒業証書,賞状印刷,学生手帳,学用品印刷',
+    },
+    descriptions: {
+      'zh-hk': '香港校園教育印刷服務｜智印雲提供證書、作業簿、教材、學業簿印刷，支持學校批量定制，價格優惠。免費設計，準時交貨！',
+      en: 'Custom education printing — certificates, workbooks, textbooks, student handbooks, award certificates. School bulk pricing. Free design, on-time delivery.',
+      ja: 'プロの教育印刷サービス。証明書・ワークブック・教科書・学生手帳・賞状に対応。学校一括割引対応。無料デザイン、納期厳守。',
     },
   },
 };
