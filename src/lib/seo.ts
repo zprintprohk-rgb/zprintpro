@@ -187,7 +187,7 @@ const homeMetadata: Record<Locale, { title: string; description: string; keyword
   },
   ja: {
     title: 'ZPrintPro | 印刷通販 | ステッカー・チラシ・パッケージ印刷 | 即日対応・最短3日納品',
-    description: 'ZPrintProはプロの印刷通販サービス。高品質ステッカー印刷、チラシ印刷、パッケージボックスカスタマイズ、名刺・ポスター印刷に対応。30秒でオンライン即時見積もり、複雑な案件も専門スタッフが丁寧に対応。最短即日発送可能、3〜5営業日でお届け。全国配送無料。',
+    description: 'ZPrintProはプロの印刷通販サービス。高品質ステッカー印刷、チラシ印刷、パッケージボックスカスタマイズ、紙袋・ラベル・ポスター印刷に対応。30秒でオンライン即時見積もり、複雑な案件も専門スタッフが丁寧に対応。最短即日発送可能、3〜5営業日でお届け。全国配送無料。',
     keywords: '印刷通販,ステッカー印刷,チラシ印刷,パッケージ印刷,ポスター印刷,即日印刷,ネット印刷,小ロット印刷,オリジナル印刷,格安印刷,高品質印刷,急ぎ印刷対応,最短3日納品,全国配送無料',
   },
 };
@@ -712,15 +712,16 @@ export function generatePrintShopSchema(locale: Locale = 'zh-hk'): SchemaOrgData
         { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': locale === 'ja' ? 'ステッカー印刷' : locale === 'en' ? 'Sticker Printing' : '貼紙印刷' } },
         { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': locale === 'ja' ? 'フライヤー印刷' : locale === 'en' ? 'Flyer Printing' : '宣傳單張印刷' } },
         { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': locale === 'ja' ? 'パッケージ印刷' : locale === 'en' ? 'Packaging Printing' : '包裝盒定制' } },
-        { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': locale === 'ja' ? '名刺印刷' : locale === 'en' ? 'Business Card Printing' : '名片印刷' } },
+        { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': locale === 'ja' ? 'ラベル印刷' : locale === 'en' ? 'Label Printing' : '標籤貼紙印刷' } },
+        { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': locale === 'ja' ? '紙袋印刷' : locale === 'en' ? 'Paper Bag Printing' : '紙袋印刷' } },
         { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': locale === 'ja' ? 'ポスター印刷' : locale === 'en' ? 'Poster Printing' : '海報印刷' } },
       ],
     },
     'description': locale === 'ja'
-      ? '深圳実体の国際印刷サービス。ステッカー・フライヤー・パッケージ・名刺・ポスターを高品質で世界中へ。30秒AI見積もり、72時間国際配送、日本語サポート対応。'
+      ? '深圳実体の国際印刷サービス。ステッカー・フライヤー・パッケージ・紙袋・ラベルを高品質で世界中へ。30秒AI見積もり、72時間国際配送、日本語サポート対応。'
       : locale === 'en'
-        ? 'Shenzhen-based international printing service. Stickers, flyers, packaging, business cards, posters — high quality, worldwide shipping. 30-second AI quote, 72-hour international delivery.'
-        : '深圳實體的國際印刷服務 — 為香港市場提供高質素貼紙、宣傳單張、包裝盒定制、紙袋、海報等。線上30秒獲取初步報價，複雜需求由專人人工核價。跨境配送，72小時快速交付。',
+        ? 'Shenzhen-based international printing service. Stickers, flyers, packaging, paper bags, labels — high quality, worldwide shipping. 30-second AI quote, 72-hour international delivery.'
+        : '深圳實體的國際印刷服務 — 為香港市場提供高質素貼紙、宣傳單張、包裝盒定制、紙袋、標籤貼紙等。線上30秒獲取初步報價，複雜需求由專人人工核價。跨境配送，72小時快速交付。',
   };
 }
 
@@ -1300,7 +1301,7 @@ export const geoConfig: Record<Locale, import('@/types/seo').GeoSignals> = {
     pricePrefix: '¥',
     areaServed: ['Japan'],
     deliveryText: '7-14営業日で全国へお届け。東京、大阪、名古屋など主要都市対応。最短即日発送も可能。',
-    geoKeywords: ['印刷通販', '名刺 印刷 オーダー', 'シール 印刷 カスタム', '箔押し 名刺', '和紙 印刷', '小ロット 印刷', 'ステッカー オーダー', 'パッケージ 印刷'],
+    geoKeywords: ['印刷通販', 'ステッカー 印刷 中国', 'シール 印刷 カスタム', '和紙 印刷', '小ロット 印刷', 'ステッカー オーダー', 'パッケージ 印刷', 'ラベル 印刷'],
   },
 };
 
