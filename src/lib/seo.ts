@@ -177,18 +177,18 @@ export const regionConfig: Record<Locale, RegionConfig> = {
 const homeMetadata: Record<Locale, { title: string; description: string; keywords: string }> = {
   'zh-hk': {
     title: '智印雲 ZPrintPro | 香港印刷公司 | 急件印刷·即日交貨 | 貼紙/單張/包裝盒定制',
-    description: '香港智印雲印刷平台 — 專注急件印刷及即日交貨服務。提供高質素貼紙、宣傳單張、包裝盒定制、名片、海報等。線上30秒獲取初步報價，複雜需求由專人人工核價。全港免費送貨，最快即日交付，72小時快速交貨。',
-    keywords: '香港印刷,急件印刷,即日印刷,深圳實體印刷廠,貼紙印刷,宣傳單張印刷,包裝盒定制,數碼印刷,30秒報價,人工核價,跨境配送,免費送貨,名片印刷,海報印刷,香港印刷公司,印刷急單,小批量印刷,ZPrintPro,智印雲',
+    description: '香港智印雲印刷平台 — 專注急件印刷及即日交貨服務。提供高質素貼紙、宣傳單張、包裝盒定制、紙袋、海報等。線上30秒獲取初步報價，複雜需求由專人人工核價。全港免費送貨，最快即日交付，72小時快速交貨。',
+    keywords: '香港印刷,急件印刷,即日印刷,貼紙印刷,宣傳單張印刷,包裝盒定制,數碼印刷,30秒報價,人工核價,免費送貨,紙袋印刷,海報印刷,香港印刷公司,印刷急單,小批量印刷,ZPrintPro,智印雲',
   },
   en: {
-    title: 'Custom Printing Service Online — Stickers, Boxes, Business Cards | ZprintPro',
+    title: 'Custom Printing Service Online — Stickers, Flyers, Packaging Boxes | ZprintPro',
     description: 'Custom printing service online for US / UK / AU / CA businesses. Stickers, packaging boxes, business cards, posters, books. 30-second AI instant quote. 72-hour worldwide delivery from Shenzhen factory. Free shipping on selected products.',
     keywords: 'custom printing service, online printing, custom stickers online, custom packaging boxes, business card printing, poster printing, custom book printing, rush printing service, same day printing, international printing, print quote online, custom labels, paper bags wholesale, eco friendly printing, hong kong printing service',
   },
   ja: {
     title: 'ZPrintPro | 印刷通販 | ステッカー・チラシ・パッケージ印刷 | 即日対応・最短3日納品',
     description: 'ZPrintProはプロの印刷通販サービス。高品質ステッカー印刷、チラシ印刷、パッケージボックスカスタマイズ、名刺・ポスター印刷に対応。30秒でオンライン即時見積もり、複雑な案件も専門スタッフが丁寧に対応。最短即日発送可能、3〜5営業日でお届け。全国配送無料。',
-    keywords: '印刷通販,ステッカー印刷,チラシ印刷,パッケージ印刷,名刺作成,ポスター印刷,即日印刷,ネット印刷,小ロット印刷,オリジナル印刷,格安印刷,高品質印刷,急ぎ印刷対応,最短3日納品,全国配送無料',
+    keywords: '印刷通販,ステッカー印刷,チラシ印刷,パッケージ印刷,ポスター印刷,即日印刷,ネット印刷,小ロット印刷,オリジナル印刷,格安印刷,高品質印刷,急ぎ印刷対応,最短3日納品,全国配送無料',
   },
 };
 
@@ -720,7 +720,7 @@ export function generatePrintShopSchema(locale: Locale = 'zh-hk'): SchemaOrgData
       ? '深圳実体の国際印刷サービス。ステッカー・フライヤー・パッケージ・名刺・ポスターを高品質で世界中へ。30秒AI見積もり、72時間国際配送、日本語サポート対応。'
       : locale === 'en'
         ? 'Shenzhen-based international printing service. Stickers, flyers, packaging, business cards, posters — high quality, worldwide shipping. 30-second AI quote, 72-hour international delivery.'
-        : '深圳實體的國際印刷服務 — 為香港市場提供高質素貼紙、宣傳單張、包裝盒定制、名片、海報等。線上30秒獲取初步報價，複雜需求由專人人工核價。跨境配送，72小時快速交付。',
+        : '深圳實體的國際印刷服務 — 為香港市場提供高質素貼紙、宣傳單張、包裝盒定制、紙袋、海報等。線上30秒獲取初步報價，複雜需求由專人人工核價。跨境配送，72小時快速交付。',
   };
 }
 
