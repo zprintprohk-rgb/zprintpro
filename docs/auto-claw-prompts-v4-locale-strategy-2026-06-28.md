@@ -32,12 +32,12 @@
 | **region** | 'HK' | 'US' | 'JP' | ✅ 已分 |
 | **country** | 'CN' (深圳在 CN) | 'US' | 'JP' | ❌ zh-hk 应 = 'HK' |
 | **areaServed** | ['Hong Kong', 'Kowloon', 'New Territories', 'Hong Kong Island'] | ['US', 'GB', 'AU', 'CA', 'NZ', 'SG'] | ['Japan'] | ❌ zh-hk 应保留 HK (已对) |
-| **phonePrefix** | '+852' | '+852' | '+852' | ❌ 全错, 应 zh-hk='+852' / en='+1' / ja='+81' (或 +86 真实) |
+| **phonePrefix** | '+86' (修后) | '+86' | '+86' | ✅ 2026-06-28 修: 3 locale 全 '+86' (电话要真实可打通, 不分 locale) |
 | **address.street** | 'No.1 Jiacheng Road, Pinghu Street, Longgang District' | 同 | 同 | ❌ zh-hk 应 = 'Unit X, X Floor, XXX Building, 觀塘...' (虚拟 HK) |
 | **address.city** | 'Shenzhen' | 'Shenzhen' | 'Shenzhen' | ❌ zh-hk 应 = 'Hong Kong' / Kwun Tong |
 | **address.region** | 'Guangdong' | 'Guangdong' | 'Guangdong' | ❌ zh-hk 应 = 'Hong Kong' |
 | **address.country** | 'CN' | 'CN' | 'CN' | ❌ zh-hk 应 = 'HK', ja='CN' |
-| **phone** | '+86 198 8085 1334' (深圳真实) | 同 | 同 | ❌ zh-hk 应 = '+852 XXXX XXXX' (虚拟 HK 号码) |
+| **phone** | '+86 198 8085 1334' (真实) | 同 | 同 | ✅ 2026-06-28 修: 3 locale 全真实 (客户要打通, NAP.telephone 跟 address.country 无强匹配) |
 | **OG description** | "from Shenzhen factory" (已修 7ad6f2e) | 同 | 同 | ⚠️ zh-hk 应 = "Hong Kong local printing service" |
 
 ### 1.2 已发生的错误 commit
@@ -383,7 +383,7 @@
 | 法规 | 灰色合规 (用户接受) | 跨境合规 | 严格合规 (特定商取引法) |
 | 品牌名 | 智印雲 (香港) / ZprintPro HK | ZprintPro | 智印雲 / ZprintPro (深圳明記) |
 | 实体地址 | 虚拟 HK 觀塘 | 深圳 (透明) | 深圳 (法定明記) |
-| 实体电话 (NAP) | 虚拟 HK 觀塘地址 | 深圳真实地址 | 深圳真实地址 | 灰色合规 OK (客户打不通) |
+| 实体电话 (NAP) | **+86 198 8085 1334 (3 locale 真实)** | 同 | 同 | ✅ 2026-06-28 修: 全 locale 真实, schema.telephone 跟 address.country 无强匹配要求 |
 | 联系电话 (客户联系) | **+86 198 8085 1334 (真实, 3 locale 统一)** | 同 | 同 | 客户要能打通! |
 | 法定代表人 | 不亮明 | 透明写 | 必须写 (唐运提) |
 | 公司全名 | 不亮明 | 透明写 | 必须写 (深圳市彩龍印刷包装有限公司) |
