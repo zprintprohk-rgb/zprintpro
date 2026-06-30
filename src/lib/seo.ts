@@ -60,6 +60,7 @@ export interface SiteNAP {
   areaServed: string[];
   founder?: string;
   legalEntityName?: string;
+  sameAs: string[];
 }
 
 export function getSiteNAP(locale: Locale): SiteNAP {
@@ -78,6 +79,15 @@ export function getSiteNAP(locale: Locale): SiteNAP {
       },
       businessSchema: 'LocalBusiness',
       areaServed: ['Hong Kong', 'Kowloon', 'New Territories', 'Hong Kong Island'],
+      // Backlinks / citation profiles (zh-hk market)
+      sameAs: [
+        // HK business directories (to be created)
+        // 'https://www.google.com/maps/place/ZprintPro',
+        // 'https://www.yellowpages.com.hk/',
+        // 'https://hk.asiaxpat.com/',
+        // 'https://hk.kompass.com/',
+        // 'https://www.hktdc.com/',
+      ],
     };
   }
   if (locale === 'ja') {
@@ -95,6 +105,15 @@ export function getSiteNAP(locale: Locale): SiteNAP {
       },
       businessSchema: 'Organization',
       areaServed: ['Japan', 'China', 'Asia'],
+      // Backlinks / citation profiles (ja market - 严格合规)
+      sameAs: [
+        // Japan business directories (to be created)
+        // 'https://www.google.com/maps/place/ZprintPro',
+        // 'https://itp.ne.jp/',
+        // 'https://www.ekiten.jp/',
+        // 'https://www.b-mall.ne.jp/',
+        // 'https://www.houjin-bangou.nta.go.jp/',
+      ],
       founder: '唐运提',
       legalEntityName: '深圳市彩龙印刷包装有限公司',
     };
@@ -114,6 +133,15 @@ export function getSiteNAP(locale: Locale): SiteNAP {
     },
     businessSchema: 'Organization',
     areaServed: ['US', 'GB', 'AU', 'CA', 'NZ', 'SG'],
+      // Backlinks / citation profiles (en/global market)
+      sameAs: [
+        // Global business directories (to be created)
+        // 'https://www.google.com/maps/place/ZprintPro',
+        // 'https://clutch.co/',
+        // 'https://www.trustpilot.com/',
+        // 'https://www.thomasnet.com/',
+        // 'https://www.alibaba.com/',
+      ],
   };
 }
 
@@ -684,7 +712,7 @@ export function generateBusinessJsonLd(locale: Locale) {
     },
     // 2026-06-17: sameAs 改为空 (用户没有真实社交账号, 不传假链接)
     // 实体识别主要靠 GBP (用户后续注册) + 真实外链
-    sameAs: [],
+    sameAs: nap.sameAs.length > 0 ? nap.sameAs : [],
   };
 
   if (isLocalBusiness) {
