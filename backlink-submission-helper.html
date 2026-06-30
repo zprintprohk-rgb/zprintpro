@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ZprintPro 全球外链提交助手</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;background:#f5f7fa;color:#1a1a2e;padding:20px}
+h1{font-size:1.5em;margin-bottom:8px}
+.container{max-width:1200px;margin:0 auto}
+.header{background:linear-gradient(135deg,#2873F5,#7C3AED);color:#fff;padding:24px;border-radius:12px;margin-bottom:20px}
+.header h1{font-size:1.8em}
+.header p{opacity:.8;margin-top:4px}
+.auto-results{background:#e8f5e9;border-left:4px solid #4caf50;padding:16px;border-radius:8px;margin-bottom:20px}
+.auto-results h3{color:#2e7d32;margin-bottom:8px}
+.auto-results ul{list-style:none;padding:0}
+.auto-results li:before{content:'✅';margin-right:8px}
+.locale-section{margin-bottom:24px}
+.locale-tabs{display:flex;gap:8px;margin-bottom:16px}
+.locale-tab{padding:10px 20px;border:none;border-radius:8px;cursor:pointer;font-size:14px;font-weight:600;background:#e8ecf1;color:#555;transition:all .2s}
+.locale-tab.active{background:#2873F5;color:#fff}
+.platform-card{background:#fff;border:1px solid #e8ecf1;border-radius:10px;padding:16px;margin-bottom:12px;display:flex;gap:16px;align-items:flex-start}
+.platform-card.p0{border-left:4px solid #ef4444}
+.platform-card.p1{border-left:4px solid #f59e0b}
+.platform-card.p2{border-left:4px solid #6b7280}
+.platform-info{flex:1;min-width:0}
+.platform-info h4{font-size:15px;margin-bottom:4px}
+.platform-info .url{color:#2873F5;font-size:13px;word-break:break-all}
+.platform-info .type{font-size:12px;color:#888;margin-top:2px}
+.copy-section{display:flex;flex-direction:column;gap:4px;min-width:120px}
+.copy-section button{background:#2873F5;color:#fff;border:none;padding:8px 12px;border-radius:6px;cursor:pointer;font-size:12px;font-weight:600;white-space:nowrap}
+.copy-section button:hover{background:#1E5BD6}
+.copy-section button.copied{background:#10B981}
+.copy-section button.copy-whatsapp{background:#25D366}
+.copy-section button.copy-whatsapp:hover{background:#1da851}
+.priority-badge{font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;display:inline-block;margin-left:8px}
+.priority-badge.p0{background:#fef2f2;color:#dc2626}
+.priority-badge.p1{background:#fffbeb;color:#d97706}
+.priority-badge.p2{background:#f3f4f6;color:#6b7280}
+.nap-display{background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;padding:12px;margin-top:12px;font-size:13px;line-height:1.8}
+.nap-display .label{color:#888;width:70px;display:inline-block}
+.nap-display .value{color:#1a1a2e;font-weight:500}
+.hidden{display:none}
+.stats{display:flex;gap:16px;margin-top:12px;flex-wrap:wrap}
+.stat{background:rgba(255,255,255,.15);padding:8px 16px;border-radius:8px}
+.stat .num{font-size:1.4em;font-weight:700}
+.stat .lbl{font-size:11px;opacity:.7}
+.toast{position:fixed;bottom:20px;right:20px;background:#1a1a2e;color:#fff;padding:12px 20px;border-radius:8px;font-size:14px;z-index:999;animation:slideIn .3s ease}
+@keyframes slideIn{from{transform:translateY(20px);opacity:0}to{transform:translateY(0);opacity:1}}
+</style>
+</head>
+<body>
+<div class="container">
+<div class="header">
+<h1>ZprintPro 全球外链提交助手</h1>
+<p>3 locale × 30+ 平台 · 一键复制 NAP 数据 · 打开链接注册</p>
+<div class="stats">
+<div class="stat"><div class="num">3/3</div><div class="lbl">Bing IndexNow (自动)</div></div>
+<div class="stat"><div class="num">32</div><div class="lbl">商业目录 (手动)</div></div>
+<div class="stat"><div class="num">~2h</div><div class="lbl">预计耗时</div></div>
+</div>
+</div>
+
+<div class="auto-results">
+<h3>✅ 已自动提交 (2026-07-01)</h3>
+<ul>
+<li>Bing IndexNow — zh-hk (202 accepted)</li>
+<li>Bing IndexNow — en (202 accepted)</li>
+<li>Bing IndexNow — ja (200 accepted)</li>
+</ul>
+<p style="color:#666;font-size:13px;margin-top:8px">其余平台需要浏览器手动注册（CAPTCHA/邮箱验证/账号创建），下方提供一键复制 NAP 数据</p>
+</div>
+
+<div class="locale-tabs">
+<button class="locale-tab active" onclick="switchLocale('zh-hk')">🇭🇰 香港 (zh-hk)</button>
+<button class="locale-tab" onclick="switchLocale('en')">🌍 English (en)</button>
+<button class="locale-tab" onclick="switchLocale('ja')">🇯🇵 日本 (ja)</button>
+</div>
+
+<div id="zh-hk" class="locale-section">
+<h2 style="margin-bottom:12px">🇭🇰 香港市场 — 11 个平台</h2>
+<div class="nap-display" style="margin-bottom:16px">
+<div><span class="label">公司名:</span><span class="value">智印雲 ZprintPro</span></div>
+<div><span class="label">地址:</span><span class="value">香港九龍新蒲崗大有街3號萬廣大廈15樓C室</span></div>
+<div><span class="label">电话:</span><span class="value">+852 5905 1334</span></div>
+<div><span class="label">网站:</span><span class="value">https://zprintpro.com/zh-hk/</span></div>
+<div><span class="label">邮箱:</span><span class="value">zprintpro@outlook.com</span></div>
+<div><span class="label">简介:</span><span class="value">香港專業印刷服務，貼紙/宣傳單張/包裝盒定制，即日交貨，港九新界免費速遞。ISO 9001 認證。</span></div>
+<div style="margin-top:8px"><button onclick="copyNap('zh-hk')">📋 一键复制全部 NAP</button></div>
+</div>
+
+<div class="platform-card p0"><div class="platform-info"><h4>Google Business Profile <span class="priority-badge p0">P0</span></h4><div class="url">business.google.com/create</div><div class="type">本地搜索 · 免费 · 需Google账号</div></div><div class="copy-section"><button onclick="openWindow('https://business.google.com/create')">打开注册</button></div></div>
+<div class="platform-card p0"><div class="platform-info"><h4>Bing Places <span class="priority-badge p0">P0</span></h4><div class="url">bingplaces.com</div><div class="type">Microsoft搜索 · 免费 · 需Microsoft账号</div></div><div class="copy-section"><button onclick="openWindow('https://www.bingplaces.com/')">打开注册</button></div></div>
+<div class="platform-card p0"><div class="platform-info"><h4>Kompass HK <span class="priority-badge p0">P0</span></h4><div class="url">hk.kompass.com</div><div class="type">B2B目录 · 免费listing</div></div><div class="copy-section"><button onclick="openWindow('https://hk.kompass.com/')">打开注册</button></div></div>
+<div class="platform-card p1"><div class="platform-info"><h4>HKTDC 香港贸易发展局 <span class="priority-badge p1">P1</span></h4><div class="url">hktdc.com</div><div class="type">贸易目录 · 免费</div></div><div class="copy-section"><button onclick="openWindow('https://www.hktdc.com/')">打开注册</button></div></div>
+<div class="platform-card p1"><div class="platform-info"><h4>Yellow Pages HK <span class="priority-badge p1">P1</span></h4><div class="url">yp.com.hk</div><div class="type">黄页目录 · 免费</div></div><div class="copy-section"><button onclick="openWindow('https://www.yp.com.hk/')">打开注册</button></div></div>
+<div class="platform-card p1"><div class="platform-info"><h4>AsiaXPAT <span class="priority-badge p1">P1</span></h4><div class="url">hk.asiaxpat.com</div><div class="type">商业目录 · 免费</div></div><div class="copy-section"><button onclick="openWindow('https://hk.asiaxpat.com/')">打开注册</button></div></div>
+<div class="platform-card p2"><div class="platform-info"><h4>88DB <span class="priority-badge p2">P2</span></h4><div class="url">88db.com.hk</div><div class="type">分类目录 · 免费</div></div><div class="copy-section"><button onclick="openWindow('https://www.88db.com.hk/')">打开注册</button></div></div>
+<div class="platform-card p2"><div class="platform-info"><h4>Google Maps HK <span class="priority-badge p2">P2</span></h4><div class="url">maps.google.com</div><div class="type">添加商家 · 免费</div></div><div class="copy-section"><button onclick="openWindow('https://www.google.com/maps/place/')">打开注册</button></div></div>
+<div class="platform-card p2"><div class="platform-info"><h4>Apple Maps Connect <span class="priority-badge p2">P2</span></h4><div class="url">mapsconnect.apple.com</div><div class="type">Apple地图 · 免费</div></div><div class="copy-section"><button onclick="openWindow('https://mapsconnect.apple.com/')">打开注册</button></div></div>
+<div class="platform-card p2"><div class="platform-info"><h4>WhatsApp Business <span class="priority-badge p2">P2</span></h4><div class="url">business.whatsapp.com</div><div class="type">商户profile · 免费</div></div><div class="copy-section"><button class="copy-whatsapp" onclick="openWindow('https://business.whatsapp.com/')">打开注册</button></div></div>
+<div class="platform-card p2"><div class="platform-info"><h4>OpenRice HK <span class="priority-badge p2">P2</span></h4><div class="url">openrice.com</div><div class="type">商户目录 · 免费</div></div><div class="copy-section"><button onclick="openWindow('https://www.openrice.com/zh/hongkong')">打开注册</button></div></div>
+</div>
+
+<div id="en" class="locale-section hidden">
+<h2 style="margin-bottom:12px">🌍 Global/EN Market — 10 platforms</h2>
+<div class="nap-display" style="margin-bottom:16px">
+<div><span class="label">Company:</span><span class="value">ZprintPro (Shenzhen Cailong Printing & Packaging Co., Ltd.)</span></div>
+<div><span class="label">Address:</span><span class="value">No.1 Jiacheng Road, Pinghu Street, Longgang District, Shenzhen, Guangdong 518111, China</span></div>
+<div><span class="label">Phone:</span><span class="value">+86 198 8085 1334</span></div>
+<div><span class="label">Website:</span><span class="value">https://zprintpro.com/en/</span></div>
+<div><span class="label">Email:</span><span class="value">zprintpro@outlook.com</span></div>
+<div><span class="label">Description:</span><span class="value">Custom printing service — stickers, flyers, packaging boxes. ISO 9001 certified. 72h global DHL delivery. 30-second AI instant quote.</span></div>
+<div style="margin-top:8px"><button onclick="copyNap('en')">📋 一键复制全部 NAP</button></div>
+</div>
+
+<div class="platform-card p0"><div class="platform-info"><h4>Google Business Profile <span class="priority-badge p0">P0</span></h4><div class="url">business.google.com/create</div><div class="type">Local search · Free · Google account required</div></div><div class="copy-section"><button onclick="openWindow('https://business.google.com/create')">Open</button></div></div>
+<div class="platform-card p0"><div class="platform-info"><h4>Bing Places <span class="priority-badge p0">P0</span></h4><div class="url">bingplaces.com</div><div class="type">Microsoft search · Free</div></div><div class="copy-section"><button onclick="openWindow('https://www.bingplaces.com/')">Open</button></div></div>
+<div class="platform-card p1"><div class="platform-info"><h4>Clutch <span class="priority-badge p1">P1</span></h4><div class="url">clutch.co</div><div class="type">B2B reviews · Free profile</div></div><div class="copy-section"><button onclick="openWindow('https://clutch.co/')">Open</button></div></div>
+<div class="platform-card p1"><div class="platform-info"><h4>ThomasNet <span class="priority-badge p1">P1</span></h4><div class="url">thomasnet.com</div><div class="type">Industrial directory · Free</div></div><div class="copy-section"><button onclick="openWindow('https://www.thomasnet.com/')">Open</button></div></div>
+<div class="platform-card p1"><div class="platform-info"><h4>Alibaba <span class="priority-badge p1">P1</span></h4><div class="url">alibaba.com</div><div class="type">Trade platform · Free</div></div><div class="copy-section"><button onclick="openWindow('https://www.alibaba.com/')">Open</button></div></div>
+<div class="platform-card p1"><div class="platform-info"><h4>Trustpilot <span class="priority-badge p1">P1</span></h4><div class="url">trustpilot.com</div><div class="type">Review platform · Free</div></div><div class="copy-section"><button onclick="openWindow('https://www.trustpilot.com/')">Open</button></div></div>
+<div class="platform-card p1"><div class="platform-info"><h4>Crunchbase <span class="priority-badge p1">P1</span></h4><div class="url">crunchbase.com</div><div class="type">Company database · Free</div></div><div class="copy-section"><button onclick="openWindow('https://www.crunchbase.com/')">Open</button></div></div>
+<div class="platform-card p2"><div class="platform-info"><h4>Manta <span class="priority-badge p2">P2</span></h4><div class="url">manta.com</div><div class="type">Small business dir · Free</div></div><div class="copy-section"><button onclick="openWindow('https://www.manta.com/')">Open</button></div></div>
+<div class="platform-card p2"><div class="platform-info"><h4>Yelp <span class="priority-badge p2">P2</span></h4><div class="url">yelp.com</div><div class="type">Review platform · Free</div></div><div class="copy-section"><button onclick="openWindow('https://www.yelp.com/')">Open</button></div></div>
+<div class="platform-card p2"><div class="platform-info"><h4>D&B / Dun & Bradstreet <span class="priority-badge p2">P2</span></h4><div class="url">dnb.com</div><div class="type">Business credit · Free DUNS</div></div><div class="copy-section"><button onclick="openWindow('https://www.dnb.com/')">Open</button></div></div>
+</div>
+
+<div id="ja" class="locale-section hidden">
+<h2 style="margin-bottom:12px">🇯🇵 日本市場 — 8 平台</h2>
+<div class="nap-display" style="margin-bottom:16px">
+<div><span class="label">事業者名:</span><span class="value">深圳市彩龍印刷包装有限公司 (ZprintPro)</span></div>
+<div><span class="label">所在地:</span><span class="value">広東省深圳市龍崗区平湖街道嘉城路1号（〒518111）</span></div>
+<div><span class="label">電話:</span><span class="value">+86 198 8085 1334</span></div>
+<div><span class="label">Web:</span><span class="value">https://zprintpro.com/ja/</span></div>
+<div><span class="label">メール:</span><span class="value">zprintpro@outlook.com</span></div>
+<div><span class="label">事業内容:</span><span class="value">ステッカー、チラシ、パッケージ印刷。深圳工場直結、ISO 9001認証。3〜5営業日納品。</span></div>
+<div style="margin-top:8px"><button onclick="copyNap('ja')">📋 一括コピー</button></div>
+</div>
+
+<div class="platform-card p0"><div class="platform-info"><h4>Google Business Profile <span class="priority-badge p0">P0</span></h4><div class="url">business.google.com/create</div><div class="type">ローカル検索 · 無料</div></div><div class="copy-section"><button onclick="openWindow('https://business.google.com/create')">開く</button></div></div>
+<div class="platform-card p0"><div class="platform-info"><h4>Bing Places <span class="priority-badge p0">P0</span></h4><div class="url">bingplaces.com</div><div class="type">Microsoft検索 · 無料</div></div><div class="copy-section"><button onclick="openWindow('https://www.bingplaces.com/')">開く</button></div></div>
+<div class="platform-card p1"><div class="platform-info"><h4>iタウンページ <span class="priority-badge p1">P1</span></h4><div class="url">itp.ne.jp</div><div class="type">電話帳 · 無料</div></div><div class="copy-section"><button onclick="openWindow('https://itp.ne.jp/')">開く</button></div></div>
+<div class="platform-card p1"><div class="platform-info"><h4>エキテン <span class="priority-badge p1">P1</span></h4><div class="url">ekiten.jp</div><div class="type">店舗レビュー · 無料</div></div><div class="copy-section"><button onclick="openWindow('https://www.ekiten.jp/')">開く</button></div></div>
+<div class="platform-card p1"><div class="platform-info"><h4>ビジネスモール <span class="priority-badge p1">P1</span></h4><div class="url">b-mall.ne.jp</div><div class="type">B2B · 無料</div></div><div class="copy-section"><button onclick="openWindow('https://www.b-mall.ne.jp/')">開く</button></div></div>
+<div class="platform-card p2"><div class="platform-info"><h4>全国法人情報 <span class="priority-badge p2">P2</span></h4><div class="url">houjin-bangou.nta.go.jp</div><div class="type">法人登記 · 公式</div></div><div class="copy-section"><button onclick="openWindow('https://www.houjin-bangou.nta.go.jp/')">開く</button></div></div>
+<div class="platform-card p2"><div class="platform-info"><h4>Google Maps JP <span class="priority-badge p2">P2</span></h4><div class="url">maps.google.com</div><div class="type">マップ · 無料</div></div><div class="copy-section"><button onclick="openWindow('https://www.google.com/maps/place/')">開く</button></div></div>
+<div class="platform-card p2"><div class="platform-info"><h4>Base / STORES <span class="priority-badge p2">P2</span></h4><div class="url">thebase.com</div><div class="type">ECプラットフォーム · 無料</div></div><div class="copy-section"><button onclick="openWindow('https://thebase.com/')">開く</button></div></div>
+</div>
+
+<div style="text-align:center;margin:24px 0;color:#888;font-size:13px">
+提交完成后, 把各平台 profile URL 填入 <code>src/lib/seo.ts</code> 的 <code>getSiteNAP().sameAs</code> 数组, JSON-LD 自动带上外链信号
+</div>
+
+</div>
+
+<script>
+const NAP_DATA = {
+  'zh-hk': `公司名: 智印雲 ZprintPro\n地址: 香港九龍新蒲崗大有街3號萬廣大廈15樓C室\n电话: +852 5905 1334\n网站: https://zprintpro.com/zh-hk/\n邮箱: zprintpro@outlook.com\n简介: 香港專業印刷服務，貼紙/宣傳單張/包裝盒定制，即日交貨，港九新界免費速遞。ISO 9001 認證。`,
+  'en': `Company: ZprintPro (Shenzhen Cailong Printing & Packaging Co., Ltd.)\nAddress: No.1 Jiacheng Road, Pinghu Street, Longgang District, Shenzhen, Guangdong 518111, China\nPhone: +86 198 8085 1334\nWebsite: https://zprintpro.com/en/\nEmail: zprintpro@outlook.com\nDescription: Custom printing service — stickers, flyers, packaging boxes. ISO 9001 certified. 72h global DHL delivery.`,
+  'ja': `事業者名: 深圳市彩龍印刷包装有限公司 (ZprintPro)\n所在地: 広東省深圳市龍崗区平湖街道嘉城路1号（〒518111）\n電話: +86 198 8085 1334\nWeb: https://zprintpro.com/ja/\nメール: zprintpro@outlook.com\n事業内容: ステッカー、チラシ、パッケージ印刷。深圳工場直結、ISO 9001認証。3〜5営業日納品。`
+};
+function switchLocale(locale) {
+  document.querySelectorAll('.locale-tab').forEach(t => t.classList.toggle('active', t.textContent.includes(locale === 'zh-hk' ? '香港' : locale === 'en' ? 'English' : '日本')));
+  document.querySelectorAll('.locale-section').forEach(s => s.classList.add('hidden'));
+  document.getElementById(locale).classList.remove('hidden');
+}
+function copyNap(locale) {
+  navigator.clipboard.writeText(NAP_DATA[locale]).then(() => {
+    const t = document.createElement('div'); t.className='toast'; t.textContent='✅ 已复制!'; document.body.appendChild(t);
+    setTimeout(() => t.remove(), 2000);
+  });
+}
+function openWindow(url) { window.open(url, '_blank'); }
+</script>
+
+</body>
+</html>
