@@ -519,9 +519,9 @@ const lpFoodPackaging: BlogPostMeta = {
     ja: '香港の飲食ブランド向け食品包装印刷完全ガイド。食品級素材、FDA/FSC認証、デザインのポイントと注文プロセスを解説。',
   },
   cover: {
-    'zh-hk': '/images/blog/zh-hk/sticker-guide.webp',
-    en: '/images/blog/zh-hk/sticker-guide.webp',
-    ja: '/images/blog/zh-hk/sticker-guide.webp',
+    'zh-hk': '/images/blog/zh-hk/food-packaging-printing-guide.webp',
+    en: '/images/blog/en/food-packaging-printing-guide.webp',
+    ja: '/images/blog/ja/food-packaging-printing-guide.webp',
   },
 };
 
@@ -541,9 +541,9 @@ const lpFlyerPrinting: BlogPostMeta = {
     ja: '香港チラシ印刷の専門ガイド。A4/A5サイズ、157g-300g用紙、48時間納品。AI即時見積り、500枚から注文可能。',
   },
   cover: {
-    'zh-hk': '/images/blog/zh-hk/sticker-guide.webp',
-    en: '/images/blog/zh-hk/sticker-guide.webp',
-    ja: '/images/blog/zh-hk/sticker-guide.webp',
+    'zh-hk': '/images/blog/zh-hk/flyer-printing-guide.webp',
+    en: '/images/blog/en/flyer-printing-guide.webp',
+    ja: '/images/blog/ja/flyer-printing-guide.webp',
   },
 };
 
