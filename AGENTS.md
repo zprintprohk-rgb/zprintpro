@@ -1,4 +1,4 @@
-﻿# ZprintPro（智印云）— AI 协作指南
+# ZprintPro（智印云）— AI 协作指南
 
 > **项目**: F:\zprintpro-nextjs\ (Next.js 印刷 SaaS)
 > **类型**: 8 locale 印刷电商 (zh-hk / en / ja)
@@ -278,3 +278,30 @@ Keep it to one short line at most. Do not echo on every turn — only when an ev
 - ❌ **绝对不要写名片/咭片/business cards/名刺** — 这不是 ZprintPro 的主营业务
 - 所有 SEO 标题、描述、关键词、产品文案、AI 训练文本中不得出现名片相关内容
 - 如果已有内容包含名片，应立即替换为貼紙/宣傳單張/包裝盒
+## 12. Push 安全协议（2026-07-02）
+
+### 写入规则
+- ❌ **禁止 PowerShell Set-Content 写 .ts/.tsx 文件**（默认编码不稳定，可能变 UTF-16）
+- ✅ **只用以下 3 种安全方式写入**:
+  1. `[System.IO.File]::WriteAllText(path, content, [System.Text.UTF8Encoding]::new($false))` — PowerShell 安全写入
+  2. `fs.writeFileSync(path, content, 'utf-8')` — Node.js 安全写入
+  3. `write` tool — 仅限 sandbox 内文件
+- ✅ 写入后必须立即校验: `node -e "const fs=require('fs');const b=fs.readFileSync('path');console.log('Size:',b.length,'BOM:',b[0]===0xFF)"`
+  - Size 接近预期的 2 倍 = UTF-16 污染，立即 git checkout 恢复
+  - BOM=true (0xFF) = UTF-16 LE，立即 git checkout 恢复
+
+### Commit 前校验
+```bash
+node scripts/check-encoding.js          # 检查 UTF-16 + CRLF
+node scripts/check-encoding.js --fix    # 自动修复 + 重新 stage
+npm run build 2>&1 | Select-String 'Compiled|Error'  # 确认构建通过
+```
+
+### Git 编码配置（已固化）
+- `.gitattributes`: 强制 LF + UTF-8 working-tree-encoding
+- `core.autocrlf=false`, `core.eol=lf`
+- `i18n.commitEncoding=utf-8`
+
+### 记住
+- **commit 前 3 问**: ① Size 合理? ② build 过了? ③ encoding check 过了?
+- 3 个全 YES 才 push，任一个 NO 立即修
