@@ -165,6 +165,9 @@ export default function RootLayout({
             __html: JSON.stringify(generateWebsiteJsonLd()),
           }}
         />
+        {/* 2026-07-02 Bing Webmaster Tools 站驗證 — zsprintpro.com (msvalidate.01)
+            保留，不要轻易移除 (即使驗證成功官方也不建議移除) */}
+        <meta name="msvalidate.01" content="E8317AC5B9BB7C684DDA79DFD66C0AEE" />
         {process.env.NEXT_PUBLIC_GA_ID && (
           <>
             <script
