@@ -1,4 +1,4 @@
-﻿const fs = require('fs');
+const fs = require('fs');
 let data = fs.readFileSync('src/data/pillar-content.ts', 'utf-8');
 
 function extractString(block, label) {

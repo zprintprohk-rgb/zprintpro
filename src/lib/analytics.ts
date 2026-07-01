@@ -1,4 +1,4 @@
-﻿/**
+/**
  * 18 个关键事件追踪 + Vercel Edge Config A/B 分组
  * GA4 + 降级到 console.log（开发环境调试）
  *

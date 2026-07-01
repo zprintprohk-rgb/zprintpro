@@ -1,4 +1,4 @@
-﻿const fs = require('fs');
+const fs = require('fs');
 const path = require('path');
 
 const extensions = ['.ts', '.tsx', '.json', '.css', '.md', '.js', '.html'];

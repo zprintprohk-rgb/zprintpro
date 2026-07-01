@@ -1,4 +1,4 @@
-﻿import { Metadata } from "next";
+import { Metadata } from "next";
 import { Locale, siteConfig, generateBusinessJsonLd, generateLocalBusinessSchema } from "@/lib/seo";
 import { JsonLd } from "@/components/JsonLd";
 import { generateContactPageJsonLd } from "@/lib/seo/schema-extensions";

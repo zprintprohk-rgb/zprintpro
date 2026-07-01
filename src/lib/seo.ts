@@ -1,4 +1,4 @@
-﻿import { Metadata } from 'next';
+import { Metadata } from 'next';
 
 import type { Locale } from '@/types/locale';
 export type { Locale } from '@/types/locale';
