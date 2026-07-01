@@ -499,78 +499,7 @@ const lpMtrSpecs: BlogPostMeta = {
 };
 
 // =============================================================================
-
-const lpPaperBagPrinting: BlogPostMeta = {
-  slug: 'paper-bag-printing-guide',
-  categoryKey: 'paper-bags',
-  source: 'legacy',
-  date: '2026-07-01',
-  title: {
-    'zh-hk': '紙袋印刷完整指南：材質、尺寸與設計要點 | 智印雲',
-    en: 'Paper Bag Printing Guide: Materials, Sizes & Design Tips | ZprintPro',
-    ja: '紙袋印刷完全ガイド：材質、サイズ、デザインのポイント | ZprintPro',
-  },
-  excerpt: {
-    'zh-hk': '香港紙袋印刷專業指南。牛皮紙、白卡紙、銅版紙多種材質，從設計到出貨全程跟進。AI即時報價，500個起訂，72小時配送。',
-    en: 'Hong Kong paper bag printing guide. Kraft paper, white cardboard, art paper options. AI instant quote, 500 min order, 72h delivery.',
-    ja: '香港紙袋印刷の専門ガイド。クラフト紙、白板紙、アート紙など多種材質。AI即時見積り、500個から注文可能、72時間配送。',
-  },
-  cover: {
-    'zh-hk': '/images/blog/zh-hk/paper-bag-printing-guide.webp',
-    en: '/images/blog/en/paper-bag-printing-guide.webp',
-    ja: '/images/blog/ja/paper-bag-printing-guide.webp',
-  },
-};
-// GSC-driven blog posts (2026-07-01)
-// Keywords from GSC: 食品包裝印刷 (rank 25.4, 108 impressions)
-// =============================================================================
-
-const lpFoodPackaging: BlogPostMeta = {
-  slug: 'food-packaging-printing-guide',
-  categoryKey: 'packaging',
-  source: 'legacy',
-  date: '2026-07-01',
-  title: {
-    'zh-hk': '香港食品包裝印刷指南：材質、認證與設計要點',
-    en: 'Food Packaging Printing Guide: Materials, Certifications & Design Tips',
-    ja: '食品包装印刷ガイド：材質、認証、デザインの要点',
-  },
-  excerpt: {
-    'zh-hk': '專為香港餐飲品牌打造的食品包裝印刷完整指南。了解食品級材質選擇、FDA/FSC認證要求、包裝設計要點及訂製流程。智印雲專業服務，72小時配送。',
-    en: 'A complete guide to food packaging printing for Hong Kong F&B brands. Learn about food-grade materials, FDA/FSC certifications, design tips and ordering process.',
-    ja: '香港の飲食ブランド向け食品包装印刷完全ガイド。食品級素材、FDA/FSC認証、デザインのポイントと注文プロセスを解説。',
-  },
-  cover: {
-    'zh-hk': '/images/blog/zh-hk/food-packaging-printing-guide.webp',
-    en: '/images/blog/en/food-packaging-printing-guide.webp',
-    ja: '/images/blog/ja/food-packaging-printing-guide.webp',
-  },
-};
-
-const lpFlyerPrinting: BlogPostMeta = {
-  slug: 'flyer-printing-guide',
-  categoryKey: 'printing',
-  source: 'legacy',
-  date: '2026-07-01',
-  title: {
-    'zh-hk': '宣傳單張印刷指南：尺寸、紙質與設計要點',
-    en: 'Flyer Printing Guide: Sizes, Paper & Design Tips for Hong Kong',
-    ja: 'チラシ印刷ガイド：サイズ、用紙、デザインのポイント',
-  },
-  excerpt: {
-    'zh-hk': '香港宣傳單張印刷專業指南。A4/A5尺寸、157g-300g多種紙質可選，48小時交貨。AI即時報價，500張起訂。深入了解傳單印刷的設計要點與訂製流程。',
-    en: 'Hong Kong flyer printing guide. A4/A5 sizes, 157g-300g paper options, 48h delivery. AI instant quote, 500 minimum. Learn design tips and ordering.',
-    ja: '香港チラシ印刷の専門ガイド。A4/A5サイズ、157g-300g用紙、48時間納品。AI即時見積り、500枚から注文可能。',
-  },
-  cover: {
-    'zh-hk': '/images/blog/zh-hk/flyer-printing-guide.webp',
-    en: '/images/blog/en/flyer-printing-guide.webp',
-    ja: '/images/blog/ja/flyer-printing-guide.webp',
-  },
-};
-
-// =============================================================================
-// Unified list (21 articles)
+// Unified list (19 articles)
 // =============================================================================
 
 export const blogPosts: BlogPostMeta[] = [
@@ -596,10 +525,6 @@ export const blogPosts: BlogPostMeta[] = [
   lpDesignFileSpecs,
   lpBrandChecklist,
   lpMtrSpecs,
-  // GSC-driven posts (2026-07-01)
-  lpFoodPackaging,
-  lpPaperBagPrinting,
-  lpFlyerPrinting,
 ];
 
 // =============================================================================
