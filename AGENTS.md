@@ -294,14 +294,27 @@ Keep it to one short line at most. Do not echo on every turn — only when an ev
 ```bash
 node scripts/check-encoding.js          # 检查 UTF-16 + CRLF
 node scripts/check-encoding.js --fix    # 自动修复 + 重新 stage
-npm run build 2>&1 | Select-String 'Compiled|Error'  # 确认构建通过
+npm run build 2>&1 | Select-String 'Compiled|Error'  # 确认构建通过（注意：Windows 本机 build 卡 fonts 网络,以 CF Pages 状态为准）
 ```
+
+### Push 后校验（最常遗漏的盲点）
+```bash
+node scripts/verify-deploy.mjs          # 自动查 CF Pages check-runs API status
+```
+- 退出码 0 = CF Pages build `success`（deploy 真生效）
+- 退出码 1 = build `failure`（**不能算完成，立刻修 build 错**）
+- 退出码 0 但 status `queued/in_progress` = 还在 build，等 1-2 分钟重跑
+
+**核心规则**: **push 成功 ≠ deploy 成功**。git log 显示 commit 已 push 不代表页面真的在线。要以 GitHub check-runs API 的 Cloudflare Pages 状态为准。
 
 ### Git 编码配置（已固化）
 - `.gitattributes`: 强制 LF + UTF-8 working-tree-encoding
 - `core.autocrlf=false`, `core.eol=lf`
 - `i18n.commitEncoding=utf-8`
+- `.git/hooks/pre-commit`: 自动调 `node scripts/check-encoding.js`，UTF-16/CRLF 直接拒绝 commit
 
-### 记住
-- **commit 前 3 问**: ① Size 合理? ② build 过了? ③ encoding check 过了?
-- 3 个全 YES 才 push，任一个 NO 立即修
+### 记住（push 5 步 SOP）
+- **commit 前 3 问**: ① Size 合理? ② encoding check 过了? ③ build 过了（或至少没新增错）?
+- **push 后 1 必做**: `node scripts/verify-deploy.mjs` 看 CF Pages 是否真 `success`
+- **再加 1 防线**: `node -e "const fs=require('fs');const b=fs.readFileSync(p);console.log('size:',b.length,'BOM:',b[0]===0xFF)"` spot check
+- 4-5 个全 YES 才报完成，任一个 NO 立即修（典型教训：见 `memory/Hermes 任务报告"写日志不上线"`）
