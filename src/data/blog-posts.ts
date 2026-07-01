@@ -499,6 +499,28 @@ const lpMtrSpecs: BlogPostMeta = {
 };
 
 // =============================================================================
+
+const lpPaperBagPrinting: BlogPostMeta = {
+  slug: 'paper-bag-printing-guide',
+  categoryKey: 'paper-bags',
+  source: 'legacy',
+  date: '2026-07-01',
+  title: {
+    'zh-hk': '紙袋印刷完整指南：材質、尺寸與設計要點 | 智印雲',
+    en: 'Paper Bag Printing Guide: Materials, Sizes & Design Tips | ZprintPro',
+    ja: '紙袋印刷完全ガイド：材質、サイズ、デザインのポイント | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '香港紙袋印刷專業指南。牛皮紙、白卡紙、銅版紙多種材質，從設計到出貨全程跟進。AI即時報價，500個起訂，72小時配送。',
+    en: 'Hong Kong paper bag printing guide. Kraft paper, white cardboard, art paper options. AI instant quote, 500 min order, 72h delivery.',
+    ja: '香港紙袋印刷の専門ガイド。クラフト紙、白板紙、アート紙など多種材質。AI即時見積り、500個から注文可能、72時間配送。',
+  },
+  cover: {
+    'zh-hk': '/images/blog/zh-hk/paper-bag-printing-guide.webp',
+    en: '/images/blog/en/paper-bag-printing-guide.webp',
+    ja: '/images/blog/ja/paper-bag-printing-guide.webp',
+  },
+};
 // GSC-driven blog posts (2026-07-01)
 // Keywords from GSC: 食品包裝印刷 (rank 25.4, 108 impressions)
 // =============================================================================
@@ -576,6 +598,7 @@ export const blogPosts: BlogPostMeta[] = [
   lpMtrSpecs,
   // GSC-driven posts (2026-07-01)
   lpFoodPackaging,
+  lpPaperBagPrinting,
   lpFlyerPrinting,
 ];
 

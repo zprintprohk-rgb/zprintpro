@@ -477,6 +477,12 @@ const posts: LegacyPostsBySite = {
 
 <p>立即透過 <a href="/zh-hk/category/flyers/">智印雲傳單印刷頁面</a> 獲得 AI 即時報價，或 <a href="https://wa.me/8618126380255" target="_blank">WhatsApp 聯絡智印雲</a> 獲取 1 對 1 設計建議。深圳總廠 + 香港自取點，為你提供 48 小時本地配送。</p>`,
     },
+    'paper-bag-printing-guide': {
+      title: '紙袋印刷完整指南：牛皮紙、白卡紙、設計要點',
+      description: '香港紙袋印刷專業指南。牛皮紙、白卡紙、銅版紙多種材質選擇。AI即時報價，500個起訂，72小時配送。',
+      date: '2026-07-01', category: '包裝知識',
+      content: `<p>紙袋印刷是香港零售和餐飲業最常見的包裝需求之一。</p><h3>一、材質對比</h3><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>牛皮紙</strong>：120g-200g，環保可降解</li><li><strong>白卡紙</strong>：200g-350g，表面光滑</li></ul><h3>二、印刷工藝</h3><ul class="list-disc pl-5 my-3 space-y-1"><li>單色/雙色印刷</li><li>四色全彩印刷</li><li>燙金/燙銀</li></ul><h3>FAQ</h3><p><strong>Q: 最低起訂量？</strong><br/>A: 500個。</p><p><strong>Q: 交期？</strong><br/>A: 7-10個工作日。</p><p>相關：<a href="/zh-hk/category/paper-bags/">紙袋印刷</a></p>`,
+    },
     },
   },
   en: {
@@ -752,7 +758,7 @@ const posts: LegacyPostsBySite = {
     },
   },
 };
-const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-specs', 'brand-materials-checklist', 'mtr-advertising-specs', 'sticker-guide', 'business-card-design', 'packaging-trends', 'cmyk-guide', 'paper-materials', 'eco-printing', 'food-packaging-printing-guide', 'flyer-printing-guide'];
+const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-specs', 'brand-materials-checklist', 'mtr-advertising-specs', 'sticker-guide', 'business-card-design', 'packaging-trends', 'cmyk-guide', 'paper-materials', 'eco-printing', 'food-packaging-printing-guide', 'flyer-printing-guide'], 'paper-bag-printing-guide'];
 const guideSlugs = getAllBuyingGuideSlugs();
 const clusterSlugs = getAllClusterSlugs();
 const allSlugs = [...articleSlugs, ...guideSlugs, ...clusterSlugs];
@@ -877,6 +883,18 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
         'ja': `${siteConfig.url}/ja/blog/${params.slug}/`,
         'x-default': `${siteConfig.url}/zh-hk/blog/${params.slug}/`,
       },
+    'paper-bag-printing-guide': {
+      title: 'Paper Bag Printing Guide: Kraft, Cardboard & Design Tips',
+      description: 'Hong Kong paper bag printing guide. Kraft paper, white cardboard, art paper options.',
+      date: '2026-07-01', category: 'Packaging Guide',
+      content: `<p>Paper bags are essential for retail and F&B businesses.</p><h3>Material Comparison</h3><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Kraft Paper</strong>: 120g-200g, eco-friendly</li><li><strong>White Cardboard</strong>: 200g-350g, smooth surface</li></ul><h3>Printing Options</h3><ul class="list-disc pl-5 my-3 space-y-1"><li>Single/dual color printing</li><li>Full-color CMYK printing</li><li>Foil stamping</li></ul><h3>FAQ</h3><p><strong>Q: Minimum order?</strong><br/>A: 500 pieces.</p><p><strong>Q: Turnaround?</strong><br/>A: 7-10 working days.</p><p>Related: <a href="/en/category/paper-bags/">Paper Bag Printing</a></p>`,
+    },
+    'paper-bag-printing-guide': {
+      title: '紙袋印刷完全ガイド：クラフト紙・白板紙・デザインのポイント',
+      description: '香港紙袋印刷の専門ガイド。クラフト紙、白板紙、アート紙など多種材質。',
+      date: '2026-07-01', category: '包装知識',
+      content: `<p>紙袋は小売・飲食業に欠かせない包装資材です。</p><h3>材質比較</h3><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>クラフト紙</strong>：120g-200g、エコ素材</li><li><strong>白板紙</strong>：200g-350g、平滑な表面</li></ul><h3>印刷オプション</h3><ul class="list-disc pl-5 my-3 space-y-1"><li>1色/2色印刷</li><li>フルカラーCMYK印刷</li><li>箔押し（金/銀）</li></ul><h3>よくある質問</h3><p><strong>Q: 最小注文数？</strong><br/>A: 500個。</p><p><strong>Q: 納期？</strong><br/>A: 7-10営業日。</p><p>関連：<a href="/ja/category/paper-bags/">紙袋印刷</a></p>`,
+    },
     },
   };
 }
