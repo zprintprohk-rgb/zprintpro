@@ -64,6 +64,20 @@ function buildGuideRedirects() {
     });
   }
 
+  // custom-gift-boxes → gift-boxes (旧 slug 已弃用)
+  for (const locale of LOCALES) {
+    rules.push({
+      source: `/${locale}/product/custom-gift-boxes`,
+      destination: `/${locale}/product/gift-boxes`,
+      permanent: true,
+    });
+    rules.push({
+      source: `/${locale}/product/custom-gift-boxes/`,
+      destination: `/${locale}/product/gift-boxes/`,
+      permanent: true,
+    });
+  }
+
   return rules;
 }
 

@@ -193,7 +193,16 @@ export async function middleware(request: NextRequest) {
     return NextResponse.redirect(url, 301);
   }
 
-  // 优先级3：缺少 locale 前缀 → 添加默认 locale（如 /about/ → /zh-hk/about/，301）
+  // 优先级3：locale 大小写归一化 — zh-HK/zh-hk/ 等统一为小写
+  // hreflang 声明中用 zh-HK（IANA 标签标准是大小写敏感的），
+  // 但路由只识别小写 zh-hk。Google 可能索引大写版本。
+  const localeMatchCase = pathname.match(/^\/(zh-HK|ZH-HK|Zh-Hk)\b/);
+  if (localeMatchCase) {
+    url.pathname = pathname.replace(/^\/(zh-HK|ZH-HK|Zh-Hk)\b/, '/zh-hk');
+    return NextResponse.redirect(url, 301);
+  }
+
+  // 优先级4：缺少 locale 前缀 → 添加默认 locale（如 /about/ → /zh-hk/about/，301）
   // 检查是否以已知 locale 开头
   const hasLocale = LOCALES.some(locale => pathname === locale.slice(0, -1) || pathname.startsWith(locale));
   if (!hasLocale && !isFile) {
