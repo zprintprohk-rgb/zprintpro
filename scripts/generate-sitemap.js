@@ -14,15 +14,31 @@ function extractSlugsFromTs(filePath, pattern) {
 const categorySlugs = extractSlugsFromTs(path.join(__dirname, '../src/data/products.ts'), /slug:\s*['"]([^'"]+)['"],\s*name:/g);
 const productSlugs = extractSlugsFromTs(path.join(__dirname, '../src/data/products.ts'), /slug:\s*['"]([^'"]+)['"],\s*\n\s*category:/g);
 
-const blogSlugs = ['company-intro','hong-kong-printing-guide','design-file-specs','brand-materials-checklist','mtr-advertising-specs','sticker-guide','business-card-design','packaging-trends','cmyk-guide','paper-materials','eco-printing'];
-const guideSlugs = extractSlugsFromTs(path.join(__dirname, '../src/data/buying-guides.ts'), /slug:\s*['"]([^'"]+)['"],/g);
+// === Blog slugs — dynamically read from blog-posts.ts (covers buying-guide + legacy + future additions) ===
+const legacyBlogSlugs = extractSlugsFromTs(path.join(__dirname, '../src/data/blog-posts.ts'), /slug:\s*['"]([^'"]+)['"],/g);
+// Also include cluster slugs from pillar-content (may overlap, deduped by Set)
 const clusterSlugs = extractSlugsFromTs(path.join(__dirname, '../src/data/pillar-content.ts'), /slug:\s*['"]([^'"]+)['"],/g);
-const allBlogSlugs = [...new Set([...blogSlugs, ...guideSlugs, ...clusterSlugs])];
+const allBlogSlugs = [...new Set([...legacyBlogSlugs, ...clusterSlugs])];
 
 const staticPages = ['','about/','guide/','case-studies/','contact/','faq/','help-center/','service-areas/','company-news/','services/rush-printing-delivery/','cart/','checkout/','order-confirmation/','payment/success/','privacy/','terms/'];
 
-function getPriority(u) { if(u==='')return'1.0';if(u.startsWith('category/'))return'0.8';if(u.startsWith('product/'))return'0.9';if(u.startsWith('guide/'))return'0.7';if(['about/','contact/','faq/','service-areas/','case-studies/'].includes(u))return'0.7';if(['cart/','checkout/','order-confirmation/','payment/success/'].includes(u))return'0.3';if(['privacy/','terms/'].includes(u))return'0.3';return'0.5'; }
-function getChangefreq(u) { if(u==='')return'daily';if(u.startsWith('category/'))return'weekly';if(u.startsWith('product/'))return'weekly';if(u.startsWith('guide/'))return'monthly';return'monthly'; }
+function getPriority(u) {
+  if(u==='')return'1.0';
+  if(u.startsWith('category/'))return'0.8';
+  if(u.startsWith('product/'))return'0.9';
+  if(u.startsWith('guide/') || u.startsWith('blog/'))return'0.7';
+  if(['about/','contact/','faq/','service-areas/','case-studies/'].includes(u))return'0.7';
+  if(['cart/','checkout/','order-confirmation/','payment/success/'].includes(u))return'0.3';
+  if(['privacy/','terms/'].includes(u))return'0.3';
+  return'0.5';
+}
+function getChangefreq(u) {
+  if(u==='')return'daily';
+  if(u.startsWith('category/'))return'weekly';
+  if(u.startsWith('product/'))return'weekly';
+  if(u.startsWith('guide/') || u.startsWith('blog/'))return'weekly'; // blog updated more often now
+  return'monthly';
+}
 
 const locales = ['zh-hk','en','ja'];
 function hl(locale) { return locale==='zh-hk'?'zh-Hant-HK':locale==='en'?'en':'ja-JP'; }
@@ -32,7 +48,8 @@ locales.forEach(l => { urls.push({ loc: BASE_URL+'/'+l+'/', priority:'1.0', chan
 staticPages.forEach(p => { if(p==='')return; locales.forEach(l => { urls.push({ loc: BASE_URL+'/'+l+'/'+p, priority:getPriority(p), changefreq:getChangefreq(p) }); }); });
 categorySlugs.forEach(s => { locales.forEach(l => { urls.push({ loc: BASE_URL+'/'+l+'/category/'+s+'/', priority:'0.8', changefreq:'weekly' }); }); });
 productSlugs.forEach(s => { locales.forEach(l => { urls.push({ loc: BASE_URL+'/'+l+'/product/'+s+'/', priority:'0.9', changefreq:'weekly' }); }); });
-allBlogSlugs.forEach(s => { locales.forEach(l => { urls.push({ loc: BASE_URL+'/'+l+'/guide/'+s+'/', priority:'0.7', changefreq:'monthly' }); }); });
+// Fix: sitemap now uses /blog/ paths (not /guide/) — matches actual routes
+allBlogSlugs.forEach(s => { locales.forEach(l => { urls.push({ loc: BASE_URL+'/'+l+'/blog/'+s+'/', priority:'0.7', changefreq:'weekly' }); }); });
 
 function buildXml(arr) {
   let x = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n';
