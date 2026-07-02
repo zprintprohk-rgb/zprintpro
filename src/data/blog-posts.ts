@@ -498,6 +498,72 @@ const lpMtrSpecs: BlogPostMeta = {
   },
 };
 
+const lpFlyerPrintingGuide: BlogPostMeta = {
+  slug: 'flyer-printing-guide',
+  categoryKey: 'printing',
+  source: 'legacy',
+  date: '2026-07-02',
+  title: {
+    'zh-hk': '香港傳單印刷完全指南：尺寸、紙質、設計到派發全攻略',
+    en: 'Flyer Printing Guide: Sizes, Paper, Design & Distribution in Hong Kong',
+    ja: '香港チラシ印刷完全ガイド：サイズ、用紙、デザイン、配布まで徹底解説',
+  },
+  excerpt: {
+    'zh-hk': '從A4傳單、A5傳單到三摺傳單，材質從銅版紙到書紙，智印雲為您拆解香港傳單印刷的尺寸選擇、紙質對比、設計要點與派發策略。',
+    en: 'From A4 to A5, bi-fold to tri-fold, art paper to book paper — a complete guide to flyer printing in Hong Kong for marketing impact.',
+    ja: 'A4、A5、二つ折り、三つ折り、コート紙から書籍用紙まで—香港チラシ印刷のサイズ、材質、デザイン、配布戦略を徹底解説。',
+  },
+  cover: {
+    'zh-hk': '/images/blog/zh-hk/flyer-printing-guide.webp',
+    en: '/images/blog/en/flyer-printing-guide.webp',
+    ja: '/images/blog/ja/flyer-printing-guide.webp',
+  },
+};
+
+const lpFoodPackagingGuide: BlogPostMeta = {
+  slug: 'food-packaging-printing-guide',
+  categoryKey: 'packaging',
+  source: 'legacy',
+  date: '2026-07-02',
+  title: {
+    'zh-hk': '食品包裝印刷完全指南：材質、安全、法規與設計實務',
+    en: 'Food Packaging Printing Guide: Materials, Safety & Compliance',
+    ja: '食品パッケージ印刷完全ガイド：材質、安全性、法規制とデザイン実務',
+  },
+  excerpt: {
+    'zh-hk': '食品級包裝印刷點樣揀？從牛皮紙盒到食品級淋膜，食品安全認證到設計實務，智印雲為您拆解食品包裝印刷的每個關鍵環節。',
+    en: 'Food-grade packaging printing essentials — from kraft boxes to food-safe lamination, certifications to design best practices.',
+    ja: '食品グレードパッケージ印刷の選び方—クラフト紙箱から食品対応ラミネート、認証からデザイン実務まで徹底解説。',
+  },
+  cover: {
+    'zh-hk': '/images/blog/zh-hk/food-packaging-printing-guide.webp',
+    en: '/images/blog/en/food-packaging-printing-guide.webp',
+    ja: '/images/blog/ja/food-packaging-printing-guide.webp',
+  },
+};
+
+const lpPaperBagPrintingGuide: BlogPostMeta = {
+  slug: 'paper-bag-printing-guide',
+  categoryKey: 'packaging',
+  source: 'legacy',
+  date: '2026-07-02',
+  title: {
+    'zh-hk': '香港紙袋印刷完全指南：材質、尺寸、手挽與設計趨勢',
+    en: 'Paper Bag Printing Guide: Materials, Sizes, Handles & Design Trends',
+    ja: '香港紙袋印刷完全ガイド：材質、サイズ、持ち手とデザイントレンド',
+  },
+  excerpt: {
+    'zh-hk': '牛皮紙袋、白卡紙袋、禮品紙袋、環保紙袋...紙袋印刷點樣揀？智印雲為您拆解香港紙袋印刷的材質、尺寸、手挽選擇與設計趨勢。',
+    en: 'Kraft bags, white card bags, gift bags, eco bags — a complete guide to paper bag printing in Hong Kong.',
+    ja: 'クラフト袋、白卡紙袋、ギフト袋、エコ袋—香港紙袋印刷の材質、サイズ、持ち手、デザイントレンドを徹底解説。',
+  },
+  cover: {
+    'zh-hk': '/images/blog/zh-hk/paper-bag-printing-guide.webp',
+    en: '/images/blog/en/paper-bag-printing-guide.webp',
+    ja: '/images/blog/ja/paper-bag-printing-guide.webp',
+  },
+};
+
 // =============================================================================
 // Unified list (19 articles)
 // =============================================================================
@@ -525,6 +591,9 @@ export const blogPosts: BlogPostMeta[] = [
   lpDesignFileSpecs,
   lpBrandChecklist,
   lpMtrSpecs,
+  lpFlyerPrintingGuide,
+  lpFoodPackagingGuide,
+  lpPaperBagPrintingGuide,
 ];
 
 // =============================================================================
