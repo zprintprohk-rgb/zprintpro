@@ -6,9 +6,9 @@
  * subcategory counts to all read 0) and the legacy `posts` object in
  * [slug]/page.tsx.
  *
- * 19 articles total:
+ * 20 articles total:
  *   - 9 Buying Guides (from @/data/buying-guides.ts)  → categoryKey='buying-guide'
- *   - 10 Legacy Posts (from [slug]/page.tsx posts)    → categoryKey from real category
+ *   - 11 Legacy Posts (from [slug]/page.tsx posts)    → categoryKey from real category
  *
  * Note: full article content (HTML strings) still lives in:
  *   - buying-guides.ts (for the 9 guides)
@@ -564,8 +564,31 @@ const lpPaperBagPrintingGuide: BlogPostMeta = {
   },
 };
 
+
+const lpPosterPrintingGuide: BlogPostMeta = {
+  slug: 'poster-printing-guide',
+  categoryKey: 'printing',
+  source: 'legacy',
+  date: '2026-07-02',
+  title: {
+    'zh-hk': '香港海報印刷完全指南：尺寸、紙質、工藝與設計要點',
+    en: 'Poster Printing Guide: Sizes, Paper, Finishes & Design Tips in Hong Kong',
+    ja: '香港ポスター印刷完全ガイド：サイズ、用紙、加工、デザインのポイント',
+  },
+  excerpt: {
+    'zh-hk': '從A3到A0，從銅版紙到PP膠片，從海報筒包裝到批量交貨，智印雲為您拆解香港海報印刷的尺寸選擇、紙質對比、工藝選項與設計要點。',
+    en: 'From A3 to A0, art paper to PP film, from tube packaging to bulk delivery — a comprehensive guide to poster printing in Hong Kong by ZprintPro.',
+    ja: 'A3からA0まで、アート紙からPPフィルムまで、ポスター筒包装から一括納品まで—香港ポスタープリントのサイズ、素材、加工、デザインのポイントを徹底解説。',
+  },
+  cover: {
+    'zh-hk': '/images/blog/zh-hk/poster-printing-guide.webp',
+    en: '/images/blog/en/poster-printing-guide.webp',
+    ja: '/images/blog/ja/poster-printing-guide.webp',
+  },
+};
+
 // =============================================================================
-// Unified list (19 articles)
+// Unified list (20 articles)
 // =============================================================================
 
 export const blogPosts: BlogPostMeta[] = [
@@ -579,7 +602,7 @@ export const blogPosts: BlogPostMeta[] = [
   bgBanner,
   bgBook,
   bgMenu,
-  // Legacy posts (10)
+  // Legacy posts (11)
   lpCompanyIntro,
   lpStickerGuide,
   lpBusinessCardDesign,
@@ -594,6 +617,7 @@ export const blogPosts: BlogPostMeta[] = [
   lpFlyerPrintingGuide,
   lpFoodPackagingGuide,
   lpPaperBagPrintingGuide,
+  lpPosterPrintingGuide,
 ];
 
 // =============================================================================
