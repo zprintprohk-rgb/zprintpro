@@ -56,7 +56,7 @@ const translations = {
         title: '幫助中心',
         links: [
           { label: '落單須知', href: '/help-center/#order' },
-          { label: '付款方式', href: `${localePrefix}/payment-methods/` },
+          { label: '付款方式', href: '/payment-methods/' },
           { label: '送貨安排', href: '/help-center/#shipping' },
           { label: '退換政策', href: '/help-center/#returns' },
         ],
@@ -110,7 +110,7 @@ const translations = {
         title: 'Help Center',
         links: [
           { label: 'How to Order', href: '/help-center/#order' },
-          { label: 'Payment Methods', href: `${localePrefix}/payment-methods/` },
+          { label: 'Payment Methods', href: '/payment-methods/' },
           { label: 'Shipping', href: '/help-center/#shipping' },
           { label: 'Return Policy', href: '/help-center/#returns' },
         ],
@@ -164,7 +164,7 @@ const translations = {
         title: 'ヘルプセンター',
         links: [
           { label: '注文方法', href: '/help-center/#order' },
-          { label: '支払い方法', href: `${localePrefix}/payment-methods/` },
+          { label: '支払い方法', href: '/payment-methods/' },
           { label: '配送', href: '/help-center/#shipping' },
           { label: '返品ポリシー', href: '/help-center/#returns' },
         ],
