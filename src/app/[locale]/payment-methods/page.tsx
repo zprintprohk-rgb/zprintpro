@@ -133,6 +133,7 @@ export default function PaymentMethodsPage({ params }: Props) {
             bullets={section.wechat.bullets}
             qrSrc="/images/payment-wechat.webp"
             qrLabel={section.wechat.qrLabel}
+            qrShowLabel={section.qrShowLabel}
             accent="bg-green-500/10 text-green-600"
           />
           {/* Alipay */}
@@ -151,6 +152,7 @@ export default function PaymentMethodsPage({ params }: Props) {
             bullets={section.alipay.bullets}
             qrSrc="/images/payment-alipay.webp"
             qrLabel={section.alipay.qrLabel}
+            qrShowLabel={section.qrShowLabel}
             accent="bg-blue-500/10 text-blue-600"
           />
           {/* PayPal */}
@@ -187,6 +189,8 @@ export default function PaymentMethodsPage({ params }: Props) {
             bullets={section.flash.bullets}
             qrSrc={locale === 'zh-hk' ? '/images/payment/shansu-collect-zh-hk.png' : '/images/payment/shansu-collect-en.png'}
             qrLabel={section.flash.qrLabel}
+            qrShowLabel={section.qrShowLabel}
+            qrSize="flash"
             providers={['Hanpass', 'PandaRemit', 'WireBarley', 'GmoneyTrans', 'Debunk', 'PayForex', 'koala transfer', 'Sendly', 'GME']}
             accent="bg-indigo-500/10 text-indigo-600"
           />
@@ -307,6 +311,8 @@ function ChannelCard(props: {
   accent: string;
   qrSrc?: string;
   qrLabel?: string;
+  qrShowLabel?: string;
+  qrSize?: 'default' | 'flash';
   providers?: string[];
   accountLabel?: string;
   account?: {
@@ -335,6 +341,8 @@ function ChannelCard(props: {
     accent,
     qrSrc,
     qrLabel,
+    qrShowLabel,
+    qrSize,
     providers,
     accountLabel,
     account,
@@ -413,22 +421,43 @@ function ChannelCard(props: {
       )}
 
       {qrSrc && qrLabel && (
-        <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-4 mt-auto">
-          <div className="flex flex-col items-center gap-2">
-            <div className="relative w-40 h-40 bg-white border-2 border-slate-200 rounded-xl overflow-hidden flex items-center justify-center shadow-md">
+        <details className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl overflow-hidden group mt-auto border border-gray-200/70">
+          <summary className="cursor-pointer list-none px-4 py-3 flex items-center justify-center gap-2 text-sm font-medium text-gray-700 hover:bg-white/60 transition-colors select-none">
+            <span>{qrShowLabel || 'Click to show QR'}</span>
+            <svg
+              className="w-4 h-4 text-[#F87314] group-open:rotate-180 transition-transform"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.2} d="M19 9l-7 7-7-7" />
+            </svg>
+          </summary>
+          <div className="flex flex-col items-center gap-2.5 p-4 border-t border-gray-200 bg-white/60">
+            <div
+              className={`relative ${
+                qrSize === 'flash' ? 'w-[179px] h-[179px]' : 'w-48 h-48'
+              } bg-white border-2 border-slate-200 rounded-xl overflow-hidden flex items-center justify-center shadow-md`}
+            >
               <img
                 src={qrSrc}
                 alt={qrLabel}
-                width={160}
-                height={160}
+                width={qrSize === 'flash' ? 179 : 192}
+                height={qrSize === 'flash' ? 179 : 192}
                 className="object-contain w-full h-full"
                 loading="lazy"
               />
             </div>
-            <div className="text-center w-full">
-              <div className="text-xs font-semibold text-gray-700">{qrLabel}</div>
+            <div className="text-center w-full space-y-1.5">
+              <div
+                className={`font-semibold text-gray-700 ${
+                  qrSize === 'flash' ? 'text-[13px]' : 'text-xs'
+                }`}
+              >
+                {qrLabel}
+              </div>
               {providers && (
-                <div className="flex flex-wrap gap-1 text-[10px] text-gray-600 mt-2 justify-center">
+                <div className="flex flex-wrap gap-1 text-[10px] text-gray-600 justify-center">
                   {providers.map((p) => (
                     <span key={p} className="bg-white border border-gray-200 px-1.5 py-0.5 rounded">
                       {p}
@@ -438,7 +467,7 @@ function ChannelCard(props: {
               )}
             </div>
           </div>
-        </div>
+        </details>
       )}
 
       {ctaHref && ctaLabel && (
@@ -470,6 +499,7 @@ const SECTIONS = {
     onlineLabel: '線上支付',
     onlineTitle: '5 大常用付款通道',
     onlineDesc: '從下單到收錢再到收貨，全程在線透明，無需面對面。',
+    qrShowLabel: '點擊顯示收款碼',
     bankAccountLabel: '帳戶資料 (HKD / USD 兩種)',
     bank: {
       name: '銀行電匯 (DBS HK)',
@@ -595,6 +625,7 @@ const SECTIONS = {
     onlineLabel: 'Online Channels',
     onlineTitle: '5 Standard Payment Methods',
     onlineDesc: 'End-to-end online: order, pay, produce, deliver — no in-person meeting required.',
+    qrShowLabel: 'Click to show QR code',
     bankAccountLabel: 'Account Details (HKD / USD)',
     bank: {
       name: 'Bank Wire (DBS HK)',
@@ -720,6 +751,7 @@ const SECTIONS = {
     onlineLabel: 'オンライン決済',
     onlineTitle: '5 つの主要決済方法',
     onlineDesc: '注文から入金、製造、配送までオンライン完結。対面不要。',
+    qrShowLabel: 'QRコードを表示',
     bankAccountLabel: '口座情報（HKD / USD）',
     bank: {
       name: '銀行振込（DBS HK）',
