@@ -431,7 +431,7 @@ export function Header({ locale }: HeaderProps) {
                       <div className="border-b border-transparent" />
                       <div className="flex-1 flex gap-4">
                         {['company-intro', 'sticker-guide', 'business-card-design'].map((slug, idx) => (
-                          <Link key={idx} href={`${localePrefix}/blog/`} className="block group flex-1 flex flex-col max-w-[180px]">
+                          <Link key={idx} href={`${localePrefix}/blog/`} className="block group flex-1 flex flex-col">
                             <div className="relative overflow-hidden rounded-t-lg h-[120px]">
                               <Image src={`/images/blog/${locale}/${slug}.webp`} alt="" fill className="object-cover object-center group-hover:scale-105 transition-transform" unoptimized loading="lazy" decoding="async" />
                             </div>
