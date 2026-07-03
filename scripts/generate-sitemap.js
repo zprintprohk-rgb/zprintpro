@@ -100,8 +100,13 @@ locales.forEach(locale => {
   const req = https.request({ hostname: 'www.bing.com', path: '/indexnow', method: 'POST', headers: { 'Content-Type': 'application/json' } }, res => {
     console.log(`IndexNow ping ${locale}: ${res.statusCode}`);
   });
-  req.on('error', e => console.error(`IndexNow ${locale} error: ${e.message}`));
+  req.on('error', () => {});
   req.write(data);
   req.end();
 });
 console.log('IndexNow pings sent for 3 locales');
+
+// Keep process alive briefly for async HTTP requests, then exit 0
+// (CF Pages build treats non-zero exit as failure, but IndexNow
+// errors must not block deploy.)
+setTimeout(() => process.exit(0), 100);
