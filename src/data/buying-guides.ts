@@ -85,8 +85,8 @@ export const buyingGuides: BuyingGuide[] = [
 <ul class="list-disc pl-5 my-3 space-y-1"><li><strong>予算限定</strong>：300g アート紙 + 片面、100 枚 HK$150 から</li><li><strong>質感重視</strong>：400g 厚口 + マットラミネート、印象的な触感</li><li><strong>高級ポジショニング</strong>：特殊紙 + 箔 / スポット UV、単価 HK$3-6</li><li><strong>エコ理念</strong>：FSC 認証再生紙 + 大豆インキ</li></ul>
 <h3>六、よくある質問</h3>
 <div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：名刺の最小注文数量は？</strong><br/>A：100 枚から — 業界標準最小です。</p><p><strong>Q：即日名刺は本当に当日受け取れますか？</strong><br/>A：はい。午前 11 時までにデータ確定で 300g アート紙当日受け取り可能。</p><p><strong>Q：両面名刺は透けますか？</strong><br/>A：300g 以上なら通常は透けません。</p><p><strong>Q：名刺デザインは自分でできますか？</strong><br/>A：はい。智印雲は無料テンプレートダウンロードを提供。</p></div>
-<p>お手頃な標準名刺から贅沢な箔押し名刺まで、今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 即時見積もり！</p>`
-    ,
+<p>お手頃な標準名刺から贅沢な箔押し名刺まで、今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 即時見積もり！</p>`,
+  },
   },
   // ========== STICKERS ==========
   {
@@ -152,8 +152,8 @@ export const buyingGuides: BuyingGuide[] = [
 <ul class="list-disc pl-5 my-3 space-y-1"><li><strong>デジタル印刷</strong>：100-500 枚、多色、高速、個別性</li><li><strong>フレキソ印刷</strong>：1000+ 枚、1-4 色、経済的</li><li><strong>UV 印刷</strong>：高彩度、特殊素材対応</li><li><strong>シルクスクリーン</strong>：1000+ 枚、厚インキ、視覚衝撃強</li></ul>
 <h3>六、よくある質問</h3>
 <div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：MOQ は？</strong><br/>A：標準 100 枚。特殊工程は 500 枚以上。</p><p><strong>Q：防水ステッカーは本当に防水？</strong><br/>A：はい。短時間浸水に耐えます。長期は追加ラミネート必要。</p><p><strong>Q：納期は？</strong><br/>A：標準 3-5 営業日、特急当日可。</p><p><strong>Q：必要なファイル形式は？</strong><br/>A：AI / PDF / EPS ベクター + 300dpi + CMYK。</p></div>
-<p>あらゆるステッカー印刷ニーズに対応、今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 専門アドバイス！</p>`
-    ,
+<p>あらゆるステッカー印刷ニーズに対応、今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 専門アドバイス！</p>`,
+  },
   },
   // ========== FLYERS ==========
   {
@@ -219,8 +219,8 @@ export const buyingGuides: BuyingGuide[] = [
 <ul class="list-disc pl-5 my-3 space-y-1"><li><strong>光沢ラミネート</strong>：明るい表面、色彩鮮やか、產品プロモに最適</li><li><strong>マットラミネート</strong>：落ち着いた質感、高級ブランド・メニューに最適</li><li><strong>スポット UV</strong>：ロゴや画像を強調</li><li><strong>箔押し（金 / 銀）</strong>：高級ブランドチラシ定番</li><li><strong>ミシン目 / 罫線</strong>：切り取り、折り畳み便利</li></ul>
 <h3>六、よくある質問</h3>
 <div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：チラシの最小印刷数量は？</strong><br/>A：100 枚から、500 枚以上で割引。</p><p><strong>Q：両面は透けますか？</strong><br/>A：157g 以上のアート紙なら通常透けません。濃い色は 200g 選択。</p><p><strong>Q：納期は？</strong><br/>A：標準 3-5 営業日、特急 24 時間対応可。</p><p><strong>Q：デザインテンプレートは？</strong><br/>A：智印雲は 100 種類以上の無料テンプレートをご提供。</p></div>
-<p>チラシ印刷をもっと知りたい？今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 見積もり！</p>`
-    ,
+<p>チラシ印刷をもっと知りたい？今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 見積もり！</p>`,
+  },
   },
   // ========== PACKAGING ==========
   {
@@ -286,8 +286,8 @@ export const buyingGuides: BuyingGuide[] = [
 <ul class="list-disc pl-5 my-3 space-y-1"><li><strong>4 色印刷（CMYK）</strong>：写真系デザイン、複雑なグラデーション</li><li><strong>特色印刷（Pantone）</strong>：ブランド標準色、メタリック、蛍光</li><li><strong>デジタル印刷</strong>：小ロット（100-500 個）、個別性</li><li><strong>フレキソ印刷</strong>：大ロット（1000+ 個）、低コスト</li><li><strong>シルク印刷</strong>：厚インキ、強い立体感</li></ul>
 <h3>六、よくある質問</h3>
 <div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：パッケージボックスの最小注文数量は？</strong><br/>A：標準ギフトボックスは 100 個から。</p><p><strong>Q：デザインサービスはありますか？</strong><br/>A：はい。HK$800/デザインから、3D モックアップを含む。</p><p><strong>Q：エコボックス素材は？</strong><br/>A：FSC 認証カード + 大豆インキ + PLA ラミネート。</p><p><strong>Q：特注形状は作れますか？</strong><br/>A：はい。特注トムソン抜き対応、型代が発生します。</p></div>
-<p>パッケージボックスカスタムをもっと知りたい？今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 見積もり！</p>`
-    ,
+<p>パッケージボックスカスタムをもっと知りたい？今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 見積もり！</p>`,
+  },
   },
   // ========== POSTERS ==========
   {
@@ -353,8 +353,8 @@ export const buyingGuides: BuyingGuide[] = [
 <ul class="list-disc pl-5 my-3 space-y-1"><li><strong>ロールアップ / X スタンド</strong>：展示会必須、繰り返し使用</li><li><strong>額 / 木枠</strong>：美術館、オフィス装飾</li><li><strong>マグネット / 粘着面</strong>：滑らかな壁に直貼り</li><li><strong>筒包装</strong>：輸送便利、折り損なし</li><li><strong>裁切 + 罫線</strong>：携帯・配布便利</li></ul>
 <h3>六、よくある質問</h3>
 <div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：A3 と A0 の価格差は？</strong><br/>A：A3 約 HK$8-15、A0 約 HK$60-120。差額の主因は用紙コスト。</p><p><strong>Q：PP フィルム vs アート紙？</strong><br/>A：PP は防水耐久屋外向き、アート紙は経済的屋内向き。</p><p><strong>Q：必要なファイル形式は？</strong><br/>A：AI / PDF ベクター + 300dpi + CMYK。A0 以上は 150dpi 可。</p><p><strong>Q：ロールアップスタンドも頼めますか？</strong><br/>A：はい。智印雲はポスター + スタンドのセットプランを提供。</p></div>
-<p>ポスター印刷をもっと知りたい？今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 見積もり＆デザイン提案！</p>`
-    ,
+<p>ポスター印刷をもっと知りたい？今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 見積もり＆デザイン提案！</p>`,
+  },
   },
   // ========== PAPER BAGS ==========
   {
@@ -420,8 +420,8 @@ export const buyingGuides: BuyingGuide[] = [
 <ul class="list-disc pl-5 my-3 space-y-1"><li><strong>エコ紙袋</strong>：FSC 認証再生紙がブランドの第一選択に</li><li><strong>ミニマルデザイン</strong>：少ない色 + 大面積余白、視覚高級感</li><li><strong>大面積箔押し</strong>：ロゴ + デザイン全面箔押し、視覚ラグジュアリー</li><li><strong>プレミアム持ち手</strong>：サテン、綿紐持ち手で質感を向上</li><li><strong>バリアブル印刷</strong>：袋ごとに異なる番号 / 名前、限定版マーケの切り札</li></ul>
 <h3>六、よくある質問</h3>
 <div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：紙袋の最小注文数量は？</strong><br/>A：100 個から。持ち手と印刷の複雑さが納期に影響。</p><p><strong>Q：クラフト紙 vs 白カード？</strong><br/>A：クラフトはエコレトロ、白カードは腰最強、色彩より鮮やか。</p><p><strong>Q：紙袋の耐荷重は？</strong><br/>A：紐 5-8kg、平 3-5kg、抜き 2-3kg、サテン 1-2kg。</p><p><strong>Q：FSC 認証紙袋はどれくらい高い？</strong><br/>A：通常より 10-20% 高いが ESG トレンドに合致。</p></div>
-<p>紙袋印刷をもっと知りたい？今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 見積もり＆デザイン提案！</p>`
-    ,
+<p>紙袋印刷をもっと知りたい？今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 見積もり＆デザイン提案！</p>`,
+  },
   },
 
   // ========== BANNERS ==========
@@ -488,8 +488,8 @@ export const buyingGuides: BuyingGuide[] = [
 <ul class="list-disc pl-5 my-3 space-y-1"><li><strong>PP 合成</strong>：経済的、短期展示会、屋内</li><li><strong>写真用紙</strong>：色彩鮮やか、高級感、重要な場面</li><li><strong>フレックスバナー</strong>：屋外大面積広告、防水耐久</li><li><strong>車両用 PVC</strong>：車両広告、糊残りなし剥離可</li><li><strong>アクリルライトボックス</strong>：バックライト看板、店舗定番</li><li><strong>黒 / 白 flex バナー</strong>：背景板、舞台</li></ul>
 <h3>六、よくある質問</h3>
 <div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：ロールアップは何回使えますか？</strong><br/>A：アルミフレームは 100 回以上、PP 用紙は保存状況で 5-10 回。</p><p><strong>Q：展示会バナー印刷の納期は？</strong><br/>A：5-7 営業日推奨、繁忙期は 2 週間。</p><p><strong>Q：屋外バナーは防水ですか？</strong><br/>A：PVC フレックスバナーは防水耐候、寿命 1-3 年。</p><p><strong>Q：智印雲は現場設置サービスを提供？</strong><br/>A：はい。香港エリアは別途料金で現場設置対応可。</p></div>
-<p>バナー広告をもっと知りたい？今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 展示会プラン！</p>`
-    ,
+<p>バナー広告をもっと知りたい？今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 展示会プラン！</p>`,
+  },
   },
 
   // ========== BOOKS ==========
@@ -556,8 +556,8 @@ export const buyingGuides: BuyingGuide[] = [
 <ul class="list-disc pl-5 my-3 space-y-1"><li><strong>ページ数計算</strong>：中綴じは 4 の倍数必須</li><li><strong>製本余白</strong>：無線綴じは 1.2cm 内側余白必要</li><li><strong>ブリード</strong>：4 辺 3mm、裁切後白縁回避</li><li><strong>色分解</strong>：CMYK モード、RGB 印刷不可</li><li><strong>画像解像度</strong>：300dpi 清晰</li><li><strong>フォント埋め込み / アウトライン化</strong>：フォント欠落防止</li></ul>
 <h3>六、よくある質問</h3>
 <div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：小ロット 50 部でも頼めますか？</strong><br/>A：可能。デジタル印刷が小ロット対応。ただし単価高め。</p><p><strong>Q：中綴じ vs 無線綴じ？</strong><br/>A：中綴じ低コストだがページ制限、無線綴じ大容量だが 1 部 HK$5-10 高。</p><p><strong>Q：必要なファイルは？</strong><br/>A：PDF 主（テキストアウトライン + フォント埋め込み）、AI / INDD も対応。</p><p><strong>Q：上製本の最高額は？</strong><br/>A：サイズ + 加工次第、HK$200-500/部 から。</p></div>
-<p>書籍印刷をもっと知りたい？今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 見積もり！</p>`
-    ,
+<p>書籍印刷をもっと知りたい？今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 見積もり！</p>`,
+  },
   },
 
   // ========== MENUS ==========
@@ -624,8 +624,8 @@ export const buyingGuides: BuyingGuide[] = [
 <ul class="list-disc pl-5 my-3 space-y-1"><li><strong>料理写真</strong>：自然光撮影、色温度 5000-6000K</li><li><strong>フォント階層</strong>：料理名大、価格中、説明小</li><li><strong>分類ロジック</strong>：前菜 / メイン / デザート明確に区分</li><li><strong>QR コード</strong>：電子メニュー、予約リンク</li><li><strong>ブランド統一</strong>：ロゴ + 標準色 + フォント一貫</li><li><strong>言語バージョン</strong>：日中英対訳、繁体簡体、多言語</li></ul>
 <h3>六、よくある質問</h3>
 <div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：メニューの最小注文数量は？</strong><br/>A：100 枚から。PVC メニューは 1 枚でもカスタム可。</p><p><strong>Q：PVC メニューは耐久性ありますか？</strong><br/>A：高品質 PVC は 2-3 年使える、防水防油拭ける。</p><p><strong>Q：必要なファイルは？</strong><br/>A：PDF（テキストアウトライン化）+ 300dpi 画像 + CMYK。</p><p><strong>Q：メニューに電子メニュー QR コードを入れられますか？</strong><br/>A：はい。智印雲は直接 QR コード印刷対応可。</p></div>
-<p>メニュー印刷をもっと知りたい？今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 見積もり！</p>`
-    ,
+<p>メニュー印刷をもっと知りたい？今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 見積もり！</p>`,
+  }
   }
 
 ];
