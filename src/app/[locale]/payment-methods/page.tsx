@@ -54,7 +54,7 @@ export default function PaymentMethodsPage({ params }: Props) {
     <main className="bg-gradient-to-b from-white via-gray-50 to-white">
       {/* Hero */}
       <section className="bg-[#1a1a2e] text-white">
-        <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+        <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-10 text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 text-xs font-medium mb-4">
             <span>💳</span>
             <span>{section.heroBadge}</span>
@@ -105,10 +105,15 @@ export default function PaymentMethodsPage({ params }: Props) {
             accountLabel={section.bankAccountLabel}
             account={{
               bank: section.bank.bankName,
+              bankCode: section.bank.bankCode,
+              branchCode: section.bank.branchCode,
               account: section.bank.accountNo,
               beneficiary: section.bank.beneficiary,
               swift: section.bank.swift,
               address: section.bank.bankAddress,
+              city: section.bank.city,
+              accountType: section.bank.accountType,
+              intermediaryBank: section.bank.intermediaryBank,
             }}
             accent="bg-emerald-500/10 text-emerald-600"
           />
@@ -304,7 +309,18 @@ function ChannelCard(props: {
   qrLabel?: string;
   providers?: string[];
   accountLabel?: string;
-  account?: { bank: string; account: string; beneficiary: string; swift: string; address: string };
+  account?: {
+    bank: string;
+    account: string;
+    beneficiary: string;
+    swift: string;
+    address: string;
+    bankCode?: string;
+    branchCode?: string;
+    city?: string;
+    accountType?: string;
+    intermediaryBank?: { bankName: string; swift: string; note?: string };
+  };
   ctaHref?: string;
   ctaLabel?: string;
 }) {
@@ -357,44 +373,70 @@ function ChannelCard(props: {
 
       {account && accountLabel && (
         <div className="bg-slate-50 border border-slate-200 rounded-xl p-3 text-xs space-y-1.5 mb-3">
-          <div className="font-semibold text-[#333333] mb-1">{accountLabel}</div>
-          <div className="grid grid-cols-3 gap-2">
-            <span className="text-gray-500 col-span-1">Bank</span>
-            <span className="col-span-2 font-mono text-[#333333]">{account.bank}</span>
-            <span className="text-gray-500 col-span-1">Account</span>
-            <span className="col-span-2 font-mono text-[#333333]">{account.account}</span>
-            <span className="text-gray-500 col-span-1">Beneficiary</span>
-            <span className="col-span-2 font-mono text-[#333333]">{account.beneficiary}</span>
-            <span className="text-gray-500 col-span-1">SWIFT</span>
-            <span className="col-span-2 font-mono text-[#333333]">{account.swift}</span>
+          <div className="font-semibold text-[#333333] mb-2 flex items-center gap-1.5">
+            <svg className="w-3.5 h-3.5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 10h18M5 6h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2zm4 10v2m6-2v2" /></svg>
+            {accountLabel}
           </div>
-          <div className="text-gray-500 pt-1 border-t border-slate-200 mt-1">{account.address}</div>
+          <div className="grid grid-cols-[88px_1fr] gap-x-2 gap-y-1">
+            <span className="text-gray-500">Bank</span>
+            <span className="font-mono font-semibold text-[#333333]">{account.bank}</span>
+            <span className="text-gray-500">Bank Code</span>
+            <span className="font-mono text-[#333333]">{account.bankCode || '016'}</span>
+            <span className="text-gray-500">Branch</span>
+            <span className="font-mono text-[#333333]">{account.branchCode || '478'}</span>
+            <span className="text-gray-500">Account</span>
+            <span className="font-mono font-semibold text-[#333333] break-all">{account.account}</span>
+            <span className="text-gray-500">Beneficiary</span>
+            <span className="font-mono text-[#333333] break-all">{account.beneficiary}</span>
+            <span className="text-gray-500">SWIFT</span>
+            <span className="font-mono font-semibold text-[#333333]">{account.swift}</span>
+          </div>
+          {account.intermediaryBank && (
+            <div className="bg-amber-50 border border-amber-200 rounded-lg p-2 mt-2 space-y-0.5">
+              <div className="font-semibold text-amber-800 flex items-center gap-1">
+                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                USD Cross-border Intermediary
+              </div>
+              <div className="grid grid-cols-[88px_1fr] gap-x-2 gap-y-0.5 text-[11px]">
+                <span className="text-amber-700">Bank</span>
+                <span className="font-mono text-amber-900">{account.intermediaryBank.bankName}</span>
+                <span className="text-amber-700">SWIFT</span>
+                <span className="font-mono font-semibold text-amber-900">{account.intermediaryBank.swift}</span>
+              </div>
+              {account.intermediaryBank.note && (
+                <div className="text-[10px] text-amber-700 mt-1">{account.intermediaryBank.note}</div>
+              )}
+            </div>
+          )}
+          <div className="text-gray-500 pt-1 border-t border-slate-200 mt-2 text-[11px] leading-relaxed">{account.address}</div>
         </div>
       )}
 
       {qrSrc && qrLabel && (
-        <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-4 flex gap-3 items-center mt-auto">
-          <div className="relative w-24 h-24 bg-white border border-slate-200 rounded-lg overflow-hidden flex items-center justify-center flex-shrink-0 shadow-sm">
-            <img
-              src={qrSrc}
-              alt={qrLabel}
-              width={88}
-              height={88}
-              className="object-contain w-full h-full"
-              loading="lazy"
-            />
-          </div>
-          <div className="flex-1 min-w-0">
-            <div className="text-xs text-gray-500 mb-0.5">{qrLabel}</div>
-            {providers && (
-              <div className="flex flex-wrap gap-1 text-[10px] text-gray-600 mt-1">
-                {providers.map((p) => (
-                  <span key={p} className="bg-white border border-gray-200 px-1.5 py-0.5 rounded">
-                    {p}
-                  </span>
-                ))}
-              </div>
-            )}
+        <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-4 mt-auto">
+          <div className="flex flex-col items-center gap-2">
+            <div className="relative w-40 h-40 bg-white border-2 border-slate-200 rounded-xl overflow-hidden flex items-center justify-center shadow-md">
+              <img
+                src={qrSrc}
+                alt={qrLabel}
+                width={160}
+                height={160}
+                className="object-contain w-full h-full"
+                loading="lazy"
+              />
+            </div>
+            <div className="text-center w-full">
+              <div className="text-xs font-semibold text-gray-700">{qrLabel}</div>
+              {providers && (
+                <div className="flex flex-wrap gap-1 text-[10px] text-gray-600 mt-2 justify-center">
+                  {providers.map((p) => (
+                    <span key={p} className="bg-white border border-gray-200 px-1.5 py-0.5 rounded">
+                      {p}
+                    </span>
+                  ))}
+                </div>
+              )}
+            </div>
           </div>
         </div>
       )}
@@ -428,7 +470,7 @@ const SECTIONS = {
     onlineLabel: '線上支付',
     onlineTitle: '5 大常用付款通道',
     onlineDesc: '從下單到收錢再到收貨，全程在線透明，無需面對面。',
-    bankAccountLabel: '帳戶資料',
+    bankAccountLabel: '帳戶資料 (HKD / USD 兩種)',
     bank: {
       name: '銀行電匯 (DBS HK)',
       tag: 'B2B 大額 / 公司轉帳',
@@ -436,16 +478,29 @@ const SECTIONS = {
       speed: 'T+1 工作天',
       bestFor: '香港 / 跨境 / B2B 大單',
       bullets: [
-        '支援 HKD/USD/CNY 多幣種',
-        '提供正式商業發票及合同',
+        '支援 HKD / USD 兩種收款帳戶',
+        'USD 跨境付款建議經代理行 (JP Morgan Chase Bank)',
+        '預付定金 40% 即可進入生產，餘款發貨前結清',
         '適合金額 HK$5,000 以上的訂單',
-        '匯率以匯出銀行當日牌價為準',
+        '提供正式商業發票及合同，匯率以匯出銀行當日牌價為準',
       ],
       bankName: 'DBS Bank (Hong Kong) Limited',
-      accountNo: '016-786-1234567890',
-      beneficiary: 'Shenzhen Cailong Printing & Packaging Co., Ltd.',
-      swift: 'DBSSSGSG',
-      bankAddress: '11/F, The Center, 99 Queen\'s Road Central, Central, HK',
+      bankCode: '016',
+      branchCode: '478',
+      accountNo: '016-478-7949835442',
+      rawAccount: '7949835442',
+      beneficiary: 'SHEN ZHEN SHI CAI LONG YIN SHUA BAO ZHUANG YOU XIAN GONG SI',
+      beneficiaryCn: '深圳市彩龍印刷包裝有限公司',
+      swift: 'DHBKHKHH',
+      bankAddress: 'Ground Floor, The Center, 99 Queen\'s Road Central, Central, HK',
+      city: 'Hong Kong SAR',
+      accountType: 'Current',
+      createdDate: '2026-06-24',
+      intermediaryBank: {
+        bankName: 'JP Morgan Chase Bank',
+        swift: 'CHASUS33',
+        note: 'USD 跨境電匯必填',
+      },
     },
     wechat: {
       name: '微信支付 (WeChat Pay)',
@@ -519,8 +574,9 @@ const SECTIONS = {
     faqs: [
       { q: '最低訂單金額是多少？', a: '無最低金額限制，HK$100 起即可下單，量大從優。' },
       { q: '跨境匯款要多久到賬？', a: '支付寶閃速收款：即時 - 24 小時；銀行電匯：T+1 工作天。' },
-      { q: '可不可以分批付款？', a: '可以。預付 30% 即可進入生產，餘款發貨前結清。' },
+      { q: '可不可以分批付款？', a: '可以。預付 40% 即可進入生產，餘款發貨前結清。' },
       { q: '有企業月結賬期嗎？', a: '有。企業客戶可申請 NET-30 賬期，需提交商業登記及最近 3 個月銀行流水。' },
+      { q: 'USD 跨境電匯要注意什麼？', a: '必須填寫代理行 (Intermediary Bank)：JP Morgan Chase Bank，SWIFT: CHASUS33。否則 USD 匯款會被退回。' },
       { q: 'PayPal 付款安全嗎？', a: '安全。PayPal 是全球最大第三方支付商，受 FCA (英國) / FinCEN (美國) 監管。' },
     ],
     ctaTitle: '還有付款問題？',
@@ -539,7 +595,7 @@ const SECTIONS = {
     onlineLabel: 'Online Channels',
     onlineTitle: '5 Standard Payment Methods',
     onlineDesc: 'End-to-end online: order, pay, produce, deliver — no in-person meeting required.',
-    bankAccountLabel: 'Account Details',
+    bankAccountLabel: 'Account Details (HKD / USD)',
     bank: {
       name: 'Bank Wire (DBS HK)',
       tag: 'B2B / Corporate',
@@ -547,16 +603,29 @@ const SECTIONS = {
       speed: 'T+1 business day',
       bestFor: 'HK / Cross-border B2B',
       bullets: [
-        'Multi-currency: HKD / USD / CNY',
-        'Commercial invoice + sales contract provided',
+        'Two collection accounts: HKD & USD',
+        'USD cross-border wires must route via intermediary (JP Morgan Chase Bank)',
+        '40% deposit to start production; balance due before shipment',
         'Best for orders HK$5,000+',
-        'FX rate: sender bank\'s day quote',
+        'Commercial invoice + sales contract provided; FX rate = sender bank\'s day quote',
       ],
       bankName: 'DBS Bank (Hong Kong) Limited',
-      accountNo: '016-786-1234567890',
-      beneficiary: 'Shenzhen Cailong Printing & Packaging Co., Ltd.',
-      swift: 'DBSSSGSG',
-      bankAddress: '11/F, The Center, 99 Queen\'s Road Central, Central, HK',
+      bankCode: '016',
+      branchCode: '478',
+      accountNo: '016-478-7949835442',
+      rawAccount: '7949835442',
+      beneficiary: 'SHEN ZHEN SHI CAI LONG YIN SHUA BAO ZHUANG YOU XIAN GONG SI',
+      beneficiaryCn: '深圳市彩龍印刷包裝有限公司',
+      swift: 'DHBKHKHH',
+      bankAddress: 'Ground Floor, The Center, 99 Queen\'s Road Central, Central, HK',
+      city: 'Hong Kong SAR',
+      accountType: 'Current',
+      createdDate: '2026-06-24',
+      intermediaryBank: {
+        bankName: 'JP Morgan Chase Bank',
+        swift: 'CHASUS33',
+        note: 'Required for USD cross-border wires',
+      },
     },
     wechat: {
       name: 'WeChat Pay',
@@ -630,8 +699,9 @@ const SECTIONS = {
     faqs: [
       { q: 'What is the minimum order value?', a: 'No minimum. Orders from HK$100 accepted. Volume discounts available.' },
       { q: 'How long does cross-border remittance take?', a: 'Alipay Flash Collect: instant - 24h. Bank wire: T+1 business day.' },
-      { q: 'Can we pay in installments?', a: 'Yes. Pay 30% upfront to start production; balance before shipment.' },
+      { q: 'Can we pay in installments?', a: 'Yes. Pay 40% upfront to start production; balance before shipment.' },
       { q: 'Do you offer NET-30 corporate terms?', a: 'Yes. Apply with business registration + last 3 months bank statements.' },
+      { q: 'Anything to note on USD cross-border wire?', a: 'You MUST fill the intermediary bank: JP Morgan Chase Bank, SWIFT: CHASUS33. Otherwise the USD wire will bounce back.' },
       { q: 'Is PayPal payment secure?', a: 'Yes. PayPal is regulated by FCA (UK) and FinCEN (US) — buyer protection enabled.' },
     ],
     ctaTitle: 'Still have questions?',
@@ -650,7 +720,7 @@ const SECTIONS = {
     onlineLabel: 'オンライン決済',
     onlineTitle: '5 つの主要決済方法',
     onlineDesc: '注文から入金、製造、配送までオンライン完結。対面不要。',
-    bankAccountLabel: '口座情報',
+    bankAccountLabel: '口座情報（HKD / USD）',
     bank: {
       name: '銀行振込（DBS HK）',
       tag: 'B2B / 法人',
@@ -658,16 +728,29 @@ const SECTIONS = {
       speed: 'T+1 営業日',
       bestFor: '香港 / 越境 / B2B',
       bullets: [
-        '多通貨対応：HKD / USD / CNY',
-        '商業請求書 + 契約書発行',
+        'HKD / USD 2 つの受取口座あり',
+        'USD クロスボーダー送金は代理行（JP Morgan Chase Bank）経由必須',
+        '前金 40% で生産開始、残額は出荷前にお支払い',
         'HK$5,000 以上の大口注文に最適',
-        '為替レートは送金の即日レート',
+        '商業請求書 + 契約書発行、為替レートは送金の即日レート',
       ],
       bankName: 'DBS Bank (Hong Kong) Limited',
-      accountNo: '016-786-1234567890',
-      beneficiary: 'Shenzhen Cailong Printing & Packaging Co., Ltd.',
-      swift: 'DBSSSGSG',
-      bankAddress: '11/F, The Center, 99 Queen\'s Road Central, Central, HK',
+      bankCode: '016',
+      branchCode: '478',
+      accountNo: '016-478-7949835442',
+      rawAccount: '7949835442',
+      beneficiary: 'SHEN ZHEN SHI CAI LONG YIN SHUA BAO ZHUANG YOU XIAN GONG SI',
+      beneficiaryCn: '深圳市彩龍印刷包裝有限公司',
+      swift: 'DHBKHKHH',
+      bankAddress: 'Ground Floor, The Center, 99 Queen\'s Road Central, Central, HK',
+      city: 'Hong Kong SAR',
+      accountType: 'Current',
+      createdDate: '2026-06-24',
+      intermediaryBank: {
+        bankName: 'JP Morgan Chase Bank',
+        swift: 'CHASUS33',
+        note: 'USD クロスボーダー送金に必須',
+      },
     },
     wechat: {
       name: 'WeChat Pay',
@@ -741,8 +824,9 @@ const SECTIONS = {
     faqs: [
       { q: '最小注文金額は？', a: '最小なし。HK$100 から発注可能、量大割引あり。' },
       { q: 'クロスボーダー送金はどのくらいで着金？', a: '支付宝フラッシュ送金：即時〜24 時間、銀行振込：T+1 営業日。' },
-      { q: '分割払いはできますか？', a: 'はい。前金 30% で生産開始、残額は出荷前までにお支払い。' },
+      { q: '分割払いはできますか？', a: 'はい。前金 40% で生産開始、残額は出荷前までにお支払い。' },
       { q: '法人掛け（NET-30）に対応していますか？', a: 'はい。商業登記と直近 3 ヶ月の銀行履歴をご提出ください。' },
+      { q: 'USD クロスボーダー送金の注意点は？', a: '代理行（Intermediary Bank）の記入必須：JP Morgan Chase Bank、SWIFT: CHASUS33。記入がないと USD 送金は差し戻されます。' },
       { q: 'PayPal 決済は安全ですか？', a: 'はい。PayPal は FCA（英国）・FinCEN（米国）規制の決済サービス。' },
     ],
     ctaTitle: '決済について質問がありますか？',
