@@ -1,0 +1,106 @@
+{
+  "version": "2026-07-04-v1",
+  "owner": "mavis orchestrator (user authorized)",
+  "policy": {
+    "priority_order": ["P0", "P1", "P2"],
+    "no_images_for_new_blogs": true,
+    "title_template": "<主关键词> · 深圳印刷指南 | 智印雲 ZprintPro",
+    "min_zh_words": 800,
+    "min_en_words": 250,
+    "min_ja_words": 250,
+    "faq_min": 4,
+    "internal_links_min": 3,
+    "internal_links_max": 5,
+    "rotation": "P0 → P1 → P2; 同 category 5 天内不重复同 SKU; GSC 已展示 >50 无着陆页 → 优先级 +1"
+  },
+  "tiers": {
+    "A": "高复购(月/周频次),跨境主力客群,优先铺 (12 个行业)",
+    "B": "中频(季/项目制),次铺 (8 个行业)",
+    "C": "低频(年/项目制),按需铺 (8 个行业)"
+  },
+  "industry_tier_a": [
+    "餐飲外賣", "零售精品", "跨境電商", "美妝護膚", "教育培訓",
+    "婚慶", "文創IP", "寵物", "母嬰", "茶飲食品", "物流快遞", "服裝"
+  ],
+  "industry_tier_b": [
+    "房地產", "酒店民宿", "醫藥保健", "汽車汽配",
+    "金融證券", "珠寶鐘錶", "母嬰食品", "體育賽事"
+  ],
+  "industry_tier_c": [
+    "工業機械", "五金工具", "化工", "建築工程",
+    "宗教文化", "政企", "影視IP", "同人周邊"
+  ],
+  "category_priority": {
+    "stickers": "P0",
+    "flyers": "P0",
+    "packaging": "P0",
+    "paper-bags": "P0",
+    "posters": "P1",
+    "books": "P1",
+    "educational": "P1",
+    "menus": "P1",
+    "red-packets": "P1",
+    "calendars": "P1",
+    "banners": "P2",
+    "envelopes": "P2",
+    "japan-doujin": "P2"
+  },
+  "business_cards_excluded": true,
+  "business_cards_excluded_reason": "AGENTS.md §11 主营品类约束 — 名片/咭片不属于 ZprintPro 主营业务",
+  "queue": [
+    {
+      "id": "Q-001",
+      "category": "flyers",
+      "sku": "a4-flyers",
+      "industry": "餐飲外賣",
+      "tier": "A",
+      "priority": "P0",
+      "slug": "restaurant-opening-flyer-printing-guide",
+      "title_zh": "餐廳開業傳單印刷指南 · 深圳印刷 | 智印雲 ZprintPro",
+      "title_en": "Restaurant Opening Flyer Printing Guide · Shenzhen Printing | ZprintPro",
+      "title_ja": "レストラン開業チラシ印刷ガイド · 深圳印刷 | ZprintPro",
+      "valid_internal_links": [
+        "/category/flyers/",
+        "/product/a4-flyers/",
+        "/product/a5-flyers/",
+        "/product/double-sided-flyers/",
+        "/product/thick-paper-flyers/",
+        "/quote/"
+      ],
+      "expected_words_zh": 850,
+      "expected_faqs": 4,
+      "queued_at": "2026-07-04"
+    },
+    {
+      "id": "Q-002",
+      "category": "packaging",
+      "sku": "gift-boxes",
+      "industry": "美妝護膚",
+      "tier": "A",
+      "priority": "P0",
+      "slug": "cosmetics-packaging-box-printing-guide",
+      "title_zh": "化妝品包裝盒印刷指南 · 深圳印刷 | 智印雲 ZprintPro",
+      "title_en": "Cosmetics Packaging Box Printing Guide · Shenzhen Printing | ZprintPro",
+      "title_ja": "化粧品パッケージ箱印刷ガイド · 深圳印刷 | ZprintPro",
+      "valid_internal_links": [
+        "/category/packaging/",
+        "/product/gift-boxes/",
+        "/product/cosmetic-boxes/",
+        "/product/rigid-boxes/",
+        "/quote/"
+      ],
+      "expected_words_zh": 850,
+      "expected_faqs": 4,
+      "queued_at": "2026-07-04"
+    }
+  ],
+  "covered": [],
+  "skipped": {
+    "business-cards": "AGENTS.md §11 主营品类约束"
+  },
+  "stats": {
+    "queue_size": 2,
+    "covered_count": 0,
+    "last_updated": "2026-07-04"
+  }
+}

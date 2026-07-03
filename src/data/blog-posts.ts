@@ -39,8 +39,12 @@ export interface BlogPostMeta {
   excerpt: Record<Locale, string>;
   date: string;
   categoryKey: BlogCategoryKey;
-  /** Cover image per locale. Falls back to `defaultCover` when locale missing. */
-  cover: Record<Locale, string>;
+  /**
+   * Cover image per locale. Optional since 2026-07-04 — 每日 SEO 深度博客 (no-image)
+   * 不写 cover,UI 会跳过 hero 图渲染,纯文字输出。当 cover 缺失或为空字符串时
+   * getBlogCover 返回 '',UI 用此判定是否渲染 hero。
+   */
+  cover?: Record<Locale, string>;
   source: BlogPostSource;
 }
 
@@ -587,8 +591,50 @@ const lpPosterPrintingGuide: BlogPostMeta = {
   },
 };
 
+const lpPackagingBoxCustomGuide: BlogPostMeta = {
+  slug: 'packaging-box-custom-guide',
+  categoryKey: 'packaging',
+  source: 'legacy',
+  date: '2026-07-03',
+  title: {
+    'zh-hk': '香港包裝盒訂製完全指南：盒型、材質、工藝與預算控制',
+    en: 'Custom Packaging Box Guide: Styles, Materials & Budget in Hong Kong',
+    ja: '香港パッケージ箱カスタム完全ガイド：箱型、材質、加工と予算管理',
+  },
+  excerpt: {
+    'zh-hk': '從天地盒到飛機盒，從白卡紙到特種紙，從燙金到擊凸——智印雲為您拆解香港包裝盒訂製的盒型選擇、紙材對比、工藝搭配與預算控制策略，助您用合理成本打造品牌專屬包裝。',
+    en: 'From lid-base boxes to shipping cartons, white card to specialty paper, foil stamping to embossing — ZprintPro decodes every aspect of custom packaging in Hong Kong for your brand.',
+    ja: '天地方向箱から航空便箱まで、白板紙から特殊紙まで、箔押しからエンボスまで—ZprintProが香港パッケージ箱カスタムの箱型、素材、加工、予算管理を徹底解説。',
+  },
+  cover: {
+    'zh-hk': '/images/blog/zh-hk/sticker-guide.webp',
+    en: '/images/blog/en/sticker-guide.webp',
+    ja: '/images/blog/ja/sticker-guide.webp',
+  },
+};
+
+// 2026-07-04 v2 純文字深度博客 (no cover, no inline img) — Tier A 行業 × P0 flyers 類目
+const lpRestaurantOpeningFlyer: BlogPostMeta = {
+  slug: 'restaurant-opening-flyer-printing-guide',
+  categoryKey: 'flyers',
+  source: 'legacy',
+  date: '2026-07-04',
+  title: {
+    'zh-hk': '餐廳開業傳單印刷指南 · 深圳印刷 | 智印雲 ZprintPro',
+    en: 'Restaurant Opening Flyer Printing Guide · Shenzhen Printing | ZprintPro',
+    ja: 'レストラン開業チラシ印刷ガイド · 深圳印刷 | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '深圳餐飲開業旺季,一張高質素傳單決定客人是否記得你的店。50-200 張小批量到 5,000 張大批量,3 個工作天交期,DHL 全球 2-4 天到貨。',
+    en: 'Shenzhen restaurant opening season: a high-quality flyer decides if customers remember your shop. 50-200 to 5,000 copies, 3-day turnaround, DHL global 2-4 day delivery.',
+    ja: '深圳レストラン開業シーズン。高品質チラシが顧客の記憶に残るかどうかを決める。50-200枚から5,000枚まで、3営業日納品、DHL世界2-4日配送。',
+  },
+  // 故意不写 cover 字段 — 純文字博客 (v2 硬约束 2026-07-04)
+  // getBlogCover 检测 meta.cover 为 undefined 时返回 '',page.tsx 据此跳过 hero 图渲染
+};
+
 // =============================================================================
-// Unified list (20 articles)
+// Unified list (22 articles)
 // =============================================================================
 
 export const blogPosts: BlogPostMeta[] = [
@@ -618,6 +664,9 @@ export const blogPosts: BlogPostMeta[] = [
   lpFoodPackagingGuide,
   lpPaperBagPrintingGuide,
   lpPosterPrintingGuide,
+  lpPackagingBoxCustomGuide,
+  // 2026-07-04 v2: 純文字深度博客上線
+  lpRestaurantOpeningFlyer,
 ];
 
 // =============================================================================
@@ -638,10 +687,11 @@ export function getBlogPostsByCategory(categoryKey: BlogCategoryKey): BlogPostMe
 
 /**
  * Resolve cover image for a slug in a given locale.
- * Falls back to zh-hk cover, then to defaultCover.
+ * 2026-07-04 修订：返回空字符串 '' 表示"无封面图",UI 据此跳过 hero 渲染。
+ * 老博客 (有 cover 字段) 仍走默认 fallback;新每日博客 (无 cover 字段) 返回 ''。
  */
 export function getBlogCover(slug: string, locale: Locale): string {
   const meta = getBlogPostMetaBySlug(slug);
-  if (!meta) return defaultCover[locale];
+  if (!meta || !meta.cover) return ''; // 无封面 → 纯文字博客
   return meta.cover[locale] || meta.cover['zh-hk'] || defaultCover[locale];
 }

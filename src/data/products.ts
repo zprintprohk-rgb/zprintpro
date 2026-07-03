@@ -8650,8 +8650,10 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'gift-boxes',
     category: 'packaging',
     category_slug: 'packaging',
-    name: '禮品盒定制', nameEn: 'Gift Boxes', nameJa: 'ギフトボックス', title_zh: '禮品盒訂製印刷 100個起印 HK$4.5/個 磁吸盒首選 | 智印雲',
-    description: '禮品盒訂製印刷，100個起印，HK$4.5起/個。磁吸盒天地盒抽屜盒，燙金UV壓凹工藝，免費刀模設計。適合品牌活動週年慶贈品，即日打樣，3-5天交貨。', descriptionEn: 'Exquisite gift boxes with foil stamping, UV and other processes., ISO 9001:2015 certified quality management system', descriptionJa: '精巧なギフトボックス、箔押し・UVなどの加工付き。', description_zh: '精緻禮品盒，配合燙金、UV等工藝。送禮首選，提升產品價值。',
+    name: '禮品盒定制', nameEn: 'Gift Boxes', nameJa: 'ギフトボックス', title_zh: '禮品盒訂製印刷 100個起印 化妝品/珠寶/婚慶/茶葉/電商通用 | 智印雲',
+    description: '禮品盒訂製印刷，100個起印，HK$4.5起/個。磁吸盒天地盒抽屜盒，燙金UV壓凹工藝，免費刀模設計。適合品牌活動週年慶贈品，即日打樣，3-5天交貨。**適配行業**: 化妝品/珠寶首飾/婚慶禮盒/茶葉食品/跨境電商/母嬰產品。', descriptionEn: 'Exquisite gift boxes with foil stamping, UV and other processes., ISO 9001:2015 certified quality management system. **Best for**: cosmetics / jewelry / wedding gifts / tea & food / cross-border e-commerce / baby & maternity products.', descriptionJa: '精巧なギフトボックス、箔押し・UVなどの加工付き。**適応業界**: 化粧品/宝石/ウェディングギフト/茶・食品/越境EC/ベビー用品。', description_zh: '精緻禮品盒，配合燙金、UV等工藝。送禮首選，提升產品價值。**適配行業**: 化妝品/珠寶首飾/婚慶禮盒/茶葉食品/跨境電商/母嬰產品。',
+    optimizedAt: '2026-07-04',
+    optimizationRound: 1,
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>

@@ -318,3 +318,70 @@ node scripts/verify-deploy.mjs          # 自动查 CF Pages check-runs API stat
 - **push 后 1 必做**: `node scripts/verify-deploy.mjs` 看 CF Pages 是否真 `success`
 - **再加 1 防线**: `node -e "const fs=require('fs');const b=fs.readFileSync(p);console.log('size:',b.length,'BOM:',b[0]===0xFF)"` spot check
 - 4-5 个全 YES 才报完成，任一个 NO 立即修（典型教训：见 `memory/Hermes 任务报告"写日志不上线"`）
+
+## 13. SEO 行业×SKU 矩阵自进化定时任务（2026-07-04 由 user 拍板）
+
+> **核心定位**: 把 SEO 自进化从 Hermes 抽象 cron 升级为 user 自己定时任务列表里可见、每天 10:15 跑的实体任务。
+> **目标**: 千行百业 × 主营类目,深度+广度双覆盖,纯文字博客无图,稳定运维不出现 404/301。
+
+### 13.1 4 条 cron 实体
+
+| Cron 名 | 触发 | 范围 |
+|---------|------|------|
+| `zprintpro-daily-content-evolve` | 每天 10:15 Asia/Shanghai | Blog (1-2 篇纯文字) + SKU (2-3 个优化) + Matrix tracking |
+| `zprintpro-weekly-meta-refresh` | 周一 11:00 | Tier B 行业 + 类目页 meta refresh |
+| `zprintpro-monthly-matrix-audit` | 每月 1 号 14:00 | 全 matrix 覆盖率审计 + Tier 切换判定 |
+| `zprintpro-gsc-feedback-loop` | 每周三 15:00 | 拉 GSC 数据 → 写回 matrix next_due 加权 |
+
+### 13.2 行业 Tier 分级（按印刷品复购频次，不是按市场规模）
+
+- **Tier A**（高复购，月/周，跨境主力，优先铺）: 餐飲外賣 / 零售精品 / 跨境電商 / 美妝護膚 / 教育培訓 / 婚慶 / 文創IP / 寵物 / 母嬰 / 茶飲食品 / 物流快遞 / 服裝
+- **Tier B**（中频，季/项目制，次铺）: 房地產 / 酒店民宿 / 醫藥保健 / 汽車汽配 / 金融證券 / 珠寶鐘錶 / 體育賽事
+- **Tier C**（低频，年/项目制，按需）: 工業機械 / 五金工具 / 化工 / 建築工程 / 宗教文化 / 政企 / 影視IP / 同人周邊
+
+### 13.3 类目优先级（P0/P1/P2）
+
+- **P0 主推**（先铺）: stickers / flyers / packaging / paper-bags
+- **P1 辅助**（次铺）: posters / books / educational / menus / red-packets / calendars
+- **P2 长尾**（按需）: banners / envelopes / japan-doujin
+- **禁区**（永不写）: business-cards（§11 主营品类约束）
+
+### 13.4 纯文字博客硬约束（v2）
+
+- ❌ **新博客 `cover` 字段不写**（`src/data/blog-posts.ts` BlogPostMeta.cover 改为可选）
+- ❌ **HTML content 不出现 `<img>` 标签**
+- ✅ **标题含"深圳"**: `<主关键词> · 深圳印刷指南 | 智印雲 ZprintPro`
+- ✅ 9 段结构（引子 / 行業概況 / 材質工藝 / 設計細節 / 選購決策 / 常見問題 / CTA + 隐式 schema）
+- ✅ zh-hk 800-1000 字 / en 250-350 词 / ja 250-350 词
+- ✅ 4 FAQ + Article + BreadcrumbList + FAQPage JSON-LD
+
+### 13.5 SKU 自进化优化
+
+- 直接编辑 `src/data/products.ts` 对应 SKU 对象的:
+  - `title_zh` / `title_en` / `title_ja` 加 1-2 个 Tier A 行业关键词
+  - `description` / `descriptionEn` / `descriptionJa` 末尾追加"适配行业"列表（5-8 个）
+  - `longDescription` 视情况补充行业场景（不加图）
+- **不改 slug、不改 schema、不改图片**
+- 加 `optimizedAt: 'YYYY-MM-DD'` + `optimizationRound: N` 字段
+
+### 13.6 链接完整性红线（稳定运维）
+
+- ❌ **新内容里不写任何会 404 的链接**
+- ❌ **新内容里不写任何会触发 301/302 重定向的链接**
+- ✅ **写链接前** 必须先在 matrix `valid_internal_links` 清单里核对
+- ✅ **写链接后** 必须 curl 验证每个内链返回 200
+- **有效路由模式**: `/{locale}/category/<slug>/`、`/{locale}/product/<slug>/`、`/{locale}/blog/<slug>/`、`/{locale}/quote/`、`/{locale}/contact/` 等（详见 context.md §8）
+- **禁止模式**: 无 locale 前缀、`/products/`（错路径，正确是 `/product/`）、未在 products.ts 注册的 slug、`/category/business-cards/`（禁区）
+
+### 13.7 矩阵跟踪
+
+- 矩阵文件: `F:\zprintpro-nextjs\.hermes\industry-keyword-matrix.json`
+- 字段: `queue` (待写列表) + `covered` (已写) + `category_priority` (类目 P0/P1/P2) + `industry_tier_a/b/c`
+- 调度算法: P0 优先 → 80% 铺完解锁 P1 → 同 category 5 天内不重复同 SKU → GSC 已展示无着陆页优先级 +1
+
+### 13.8 异常上报
+
+- CF build 失败 / push 报错 → 立即升级 user
+- 推送后任一 curl 返回 5xx 或 404 或 301 → 立即升级 user，不报完成
+- 新博客上线 7 天 GSC 仍无收录 → 升级 user，排查索引问题
+- matrix.json 损坏 / token > 50 万 → 升级 user

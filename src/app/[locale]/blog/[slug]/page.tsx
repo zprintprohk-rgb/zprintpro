@@ -291,11 +291,48 @@ const posts: Record<string, Record<string, { title: string; description: string;
       date: '2026-07-02', category: '包裝知識',
       content: `<p>紙袋（Paper Bag）是品牌包裝的重要組成部分。無論是零售購物、禮品包裝，還是活動紀念品，一個高質感的<a href="/product/kraft-paper-bags/">品牌紙袋</a>都能大幅提升客戶體驗和品牌檔次感。本文將為您系統拆解紙袋印刷的材質、尺寸、手挽與設計趨勢。</p><h3>一、紙袋材質怎麼選？</h3><p>紙袋的材質直接決定檔次感和成本：</p><table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">材質</th><th class="border p-2 text-left">特點</th><th class="border p-2 text-left">適合場景</th></tr></thead><tbody><tr><td class="border p-2">白牛皮紙</td><td class="border p-2">純白、挺度高、可染色</td><td class="border p-2">高檔品牌、化妝品、禮品</td></tr><tr><td class="border p-2">黃牛皮紙</td><td class="border p-2">環保、復古、價格實惠</td><td class="border p-2">咖啡店、有機品牌、零售</td></tr><tr><td class="border p-2">白卡紙</td><td class="border p-2">挺度最佳、表面光滑</td><td class="border p-2">奢侈品、珠寶、首飾</td></tr><tr><td class="border p-2">銅版紙</td><td class="border p-2">印刷精美、色彩鮮豔</td><td class="border p-2">促銷活動、節日禮品</td></tr><tr><td class="border p-2">黑卡紙</td><td class="border p-2">神秘高檔、質感獨特</td><td class="border p-2">高端品牌、限定產品</td></tr><tr><td class="border p-2">再生紙</td><td class="border p-2">環保認證、紋理獨特</td><td class="border p-2">環保品牌、有機產品</td></tr></tbody></table><h3>二、紙袋的常見尺寸</h3><p>香港紙袋最常見的尺寸（寬 × 高 × 側）：</p><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>小型：200 × 250 × 80mm</strong>：飾品、文具、小型禮品</li><li><strong>中型：280 × 350 × 100mm</strong>：化妝品、書籍、服飾</li><li><strong>大型：350 × 450 × 120mm</strong>：鞋盒、禮盒、購物</li><li><strong>特大型：450 × 550 × 150mm</strong>：多件商品、節日禮籃</li></ul><h3>三、紙袋手挽材質選擇</h3><p>手挽是紙袋的重要細節，直接影響使用體驗：</p><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>扭繩手挽（Twisted Rope Handle）</strong>：最經典，承重 5-8kg，適合大多數場景</li><li><strong>扁平手挽（Flat Ribbon Handle）</strong>：高檔質感，承重 3-5kg，適合禮品袋</li><li><strong>打孔手挽（Die-cut Handle）</strong>：經濟實惠，承重 2-3kg，適合促銷袋</li><li><strong>絲帶手挽（Satin Ribbon Handle）</strong>：極致高檔，婚禮、限定產品首選</li><li><strong>棉繩手挽（Cotton Rope Handle）</strong>：環保自然，文創、咖啡品牌常見</li></ul><h3>四、紙袋印刷工藝</h3><p>智印雲為您提供多種印刷和表面處理工藝：</p><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>四色印刷（CMYK）</strong>：標準印刷，色彩鮮豔</li><li><strong>專色印刷（Spot Color）</strong>：精準還原品牌色，如 Tiffany Blue</li><li><strong>燙金 / 燙銀</strong>：高檔品牌標識首選</li><li><strong>UV 局部上光</strong>：突出 logo，提升質感</li><li><strong>擊凸 / 壓凹</strong>：立體效果，奢侈品包裝必備</li></ul><h3>五、2026 紙袋設計趨勢</h3><ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>環保材質</strong>：再生紙、FSC 認證紙漿成為主流</li><li><strong>極簡設計</strong>：減少油墨使用面積，大面積留白顯檔次</li><li><strong>多用途設計</strong>：可重複使用的購物袋設計</li><li><strong>個性化手挽</strong>：定制手挽顏色、材質成為差異化點</li><li><strong>互動設計</strong>：QR Code、AR 互動印刷提升體驗</li></ol><p>智印雲提供從<a href="/product/kraft-paper-bags/">牛皮紙袋</a>、<a href="/product/white-card-bags/">白卡紙袋</a>到<a href="/product/gift-bags/">禮品紙袋</a>的全系列紙袋印刷服務。<a href="https://wa.me/8618126380255" target="_blank">立即 WhatsApp 獲取紙袋方案及報價</a>。</p><h3>六、常見問題 FAQ</h3><div class="bg-gray-50 rounded-lg p-4 my-4 space-y-1"><p><strong>Q: 紙袋印刷最小起訂量？</strong><br/>A: 一般 500 個起訂，特殊工藝如燙金需 1000 個起。</p><p><strong>Q: 紙袋定製交貨時間？</strong><br/>A: 標準 7-10 個工作日，急件可壓縮至 5 個工作日。</p><p><strong>Q: 紙袋可以承重幾多？</strong><br/>A: 標準牛皮紙袋可承重 5-8kg，加厚紙可達 10-15kg。</p><p><strong>Q: 可以自選手挽顏色嗎？</strong><br/>A: 可以，扭繩手挽提供 20+ 顏色選擇，絲帶手挽可定制任意 Pantone 色。</p></div>`,
     },
-    'poster-printing-guide': {
+'poster-printing-guide': {
       title: '香港海報印刷完全指南：尺寸、紙質、工藝與設計要點',
       description: '從A3海報到A0大型海報，從銅版紙到PP膠片，從UV印刷到燙金工藝，智印雲為您拆解香港海報印刷的尺寸選擇、紙質對比、表面處理與設計要點，助您打造視覺衝擊力最強的品牌形象宣傳品。',
       date: '2026-07-02', category: '印刷知識',
-      content: `<p>海報（Poster）是品牌傳播中最具視覺衝擊力的印刷品之一。無論是商場促銷活動、新產品發布、品牌形象展示，還是文化藝術展覽，一張高品質的<a href="/category/printing/">印刷海報</a>都能在瞬間抓住受眾注意力。本文將系統拆解香港海報印刷的尺寸標準、紙質選擇、工藝技術與設計要點。</p><h3>一、海報常見尺寸對比</h3><p>不同場景需要不同尺寸的海報。以下是香港最常見的海報尺寸：</p><table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">尺寸</th><th class="border p-2 text-left">適用場景</th><th class="border p-2 text-left">單價範圍</th></tr></thead><tbody><tr><td class="border p-2">A3（297 × 420mm）</td><td class="border p-2">商場櫥窗、餐廳內展示</td><td class="border p-2">HK$8-15</td></tr><tr><td class="border p-2">A2（420 × 594mm）</td><td class="border p-2">地鐵站內、電梯廣告</td><td class="border p-2">HK$15-30</td></tr><tr><td class="border p-2">A1（594 × 841mm）</td><td class="border p-2">品牌形象牆、展覽會場</td><td class="border p-2">HK$30-60</td></tr><tr><td class="border p-2">A0（841 × 1189mm）</td><td class="border p-2">大型活動、戶外廣告</td><td class="border p-2">HK$60-120</td></tr><tr><td class="border p-2">B2（500 × 707mm）</td><td class="border p-2">酒樓菜牌、展會背景板</td><td class="border p-2">HK$20-40</td></tr></tbody></table><h3>二、紙質選擇指南</h3><p>海報紙質直接決定最終效果和成本：</p><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>157g 銅版紙</strong>：最經濟，色彩還原度高，適合大部分室內海報</li><li><strong>200g 銅版紙</strong>：挺度更好，雙面印刷不穿底，適合高檔海報</li><li><strong>250g 銅版紙</strong>：接近咭片厚度，質感強烈，適合品牌形象海報</li><li><strong>PP 膠片（啞面/光面）</strong>：防水、耐用，適合長期展示或戶外使用</li><li><strong>油畫布</strong>：紋理質感，適合藝術展覽、畫廊</li><li><strong>防水相紙</strong>：高光澤、高飽和度，適合寫真類海報</li></ul><h3>三、海報表面處理工藝</h3><p>適當的表面處理可以大幅提升海報質感和耐用度：</p><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>啞膠 / 光膠過膠</strong>：延長使用壽命、防水防污，適合長期展示</li><li><strong>UV 局部光油</strong>：局部高光效果，凸顯品牌Logo或主視覺</li><li><strong>燙金 / 燙銀</strong>：金屬質感，適合高檔品牌形象海報</li><li><strong>擊凸</strong>：立體觸感，增加視覺層次與檔次感</li></ul><h3>四、設計要點</h3><ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>解像度</strong>：A3海報300dpi即可，A0以上可用150dpi（遠距離觀看）</li><li><strong>出血</strong>：四周保留至少3mm出血位，避免裁切後留白邊</li><li><strong>安全區域</strong>：重要文字和Logo放在離邊緣至少15mm內</li><li><strong>顏色模式</strong>：必須用CMYK，RGB轉CMYK後亮色會變暗</li><li><strong>字體大小</strong>：遠距離觀看的海報，正文不小於24pt，標題不小於72pt</li></ol><p>相關：<a href="/category/design/">設計服務</a> · <a href="/category/packaging/">包裝盒印刷</a> · <a href="/product/a4-flyers/">宣傳單張</a></p><p><strong>Q: 海報印刷起訂量是多少？</strong><br/>A: 數碼印刷1張起印，柯式印刷500張起。急單可安排24小時交貨。</p><p><strong>Q: PP膠片海報和銅版紙海報有什麼區別？</strong><br/>A: PP膠片防水耐用，適合戶外或長期展示；銅版紙色彩表現更好、成本更低，適合室內短期使用。</p><p><strong>Q: 可以免費校稿嗎？</strong><br/>A: 可以。AI系統30秒即時報價，我們將提供大樣確認後才生產。</p><p><strong>Q: 海報筒包裝要額外收費嗎？</strong><br/>A: 訂購10張以上免費提供海報筒包裝，確保運輸過程中不折損。</p><p>WhatsApp：+86 181 2638 0255 查詢即時報價！</p>`,
+      content: `<p>海報（Poster）是品牌傳播中最具視覺衝擊力的印刷品之一。無論是商場促銷活動、新產品發布、品牌形象展示，還是文化藝術展覽，一張高品質的<a href="/category/printing/">印刷海報</a>都能在瞬間抓住受眾注意力。本文將系統拆解香港海報印刷的尺寸標準、紙質選擇、工藝技術與設計要點。</p><h3>一、海報常見尺寸對比</h3><p>不同場景需要不同尺寸的海報。以下是香港最常見的海報尺寸：</p><table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">尺寸</th><th class="border p-2 text-left">適用場景</th><th class="border p-2 text-left">單價範圍</th></tr></thead><tbody><tr><td class="border p-2">A3（297 × 420mm）</td><td class="border p-2">商場櫥窗、餐廳內展示</td><td class="border p-2">HK$8-15</td></tr><tr><td class="border p-2">A2（420 × 594mm）</td><td class="border p-2">地鐵站內、電梯廣告</td><td class="border p-2">HK$15-30</td></tr><tr><td class="border p-2">A1（594 × 841mm）</td><td class="border p-2">品牌形象牆、展覽會場</td><td class="border p-2">HK$30-60</td></tr><tr><td class="border p-2">A0（841 × 1189mm）</td><td class="border p-2">大型活動、戶外廣告</td><td class="border p-2">HK$60-120</td></tr><tr><td class="border p-2">B2（500 × 707mm）</td><td class="border p-2">酒樓菜牌、展會背景板</td><td class="border p-2">HK$20-40</td></tr></tbody></table><h3>二、紙質選擇指南</h3><p>海報紙質直接決定最終效果和成本：</p><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>157g 銅版紙</strong>：最經濟，色彩還原度高，適合大部分室內海報</li><li><strong>200g 銅版紙</strong>：挺度更好，雙面印刷不穿底，適合高檔海報</li><li><strong>250g 銅版紙</strong>：接近咭片厚度，質感強烈，適合品牌形象海報</li><li><strong>PP 膠片（啞面/光面）</strong>：防水、耐用，適合長期展示或戶外使用</li><li><strong>油畫布</strong>：紋理質感，適合藝術展覽、畫廊</li><li><strong>防水相紙</strong>：高光澤、高飽和度，適合寫真類海報</li></ul><h3>三、海報表面處理工藝</h3><p>適當的表面處理可以大幅提升海報質感和耐用度：</p><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>啞膠 / 光膠過膠</strong>：延長使用壽命、防水防污，適合長期展示</li><li><strong>UV 局部光油</strong>：局部高光效果，凸顯品牌Logo或主視覺</li><li><strong>燙金 / 燙銀</strong>：金屬質感，適合高檔品牌形象海報</li><li><strong>擊凸</strong>：立體觸感，增加視覺層次與檔次感</li></ul><h3>四、設計要點</h3><ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>解像度</strong>：A3海報300dpi即可，A0以上可用150dpi（遠距離觀看）</li><li><strong>出血</strong>：四周保留至少3mm出血位，避免裁切後留白邊</li><li><strong>安全區域</strong>：重要文字和Log... (line truncated to 2000 chars)
+    'REPLACED
+    },
+    // 2026-07-04 純文字深度博客:餐廳開業傳單 (Tier A 行業 × P0 flyers 類目)
+    'restaurant-opening-flyer-printing-guide': {
+      title: '餐廳開業傳單印刷指南 · 深圳印刷 | 智印雲 ZprintPro',
+      description: '深圳餐飲開業旺季,一張高質素傳單決定客人是否記得你的店。50-200 張小批量到 5,000 張大批量,3 個工作天交期,DHL 全球 2-4 天到貨。完整拆解材質/工藝/設計/選購/交期。',
+      date: '2026-07-04', category: '餐飲傳單',
+      content: `<p>深圳餐飲開業旺季,一張高質素的傳單決定客人是否記得你的店。即香港行内講,開業首兩週派出去的傳單回頭客轉化率最高 — 比之後的網上廣告回報更實在。智印雲 ZprintPro 深圳自設廠房,主打 50-200 張小批量到 5,000 張大批量的餐廳開業傳單印刷,3 個工作天交期,DHL 全球 2-4 天到貨。本文從材質、工藝、設計、選購到交期,完整拆解餐廳開業傳單印刷的全流程。</p>
+<h3>一、行業概況:深圳餐飲開業傳單的真實需求</h3>
+<p>深圳餐飲市場 2025 年規模超過 HK$ 380 億(數據來源:深圳市餐飲協會),每月新增餐廳 800-1,200 家。即香港行内講,新餐廳開業的宣傳預算 60-70% 都花在開業首月 — 派街紙、街口傳單、外賣平台券。餐廳開業傳單的標準規格如下表:</p>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">場景</th><th class="border p-2 text-left">規格</th><th class="border p-2 text-left">印量</th><th class="border p-2 text-left">預算 (HK$)</th></tr></thead><tbody><tr class="border-b"><td class="border p-2">街口派發</td><td class="border p-2">A5 (148×210mm)</td><td class="border p-2">1,000 張</td><td class="border p-2">HK$ 580-880</td></tr><tr class="border-b"><td class="border p-2">樓宇信箱</td><td class="border p-2">A5 雙面</td><td class="border p-2">3,000 張</td><td class="border p-2">HK$ 1,400-2,200</td></tr><tr class="border-b"><td class="border p-2">店內桌牌</td><td class="border p-2">A4 厚紙</td><td class="border p-2">200 張</td><td class="border p-2">HK$ 320-500</td></tr><tr class="border-b"><td class="border p-2">外賣平台券</td><td class="border p-2">A6 (105×148mm)</td><td class="border p-2">5,000 張</td><td class="border p-2">HK$ 980-1,500</td></tr><tr><td class="border p-2">VIP 邀請函</td><td class="border p-2">A5 厚紙 + 燙金</td><td class="border p-2">100 張</td><td class="border p-2">HK$ 480-720</td></tr></tbody></table>
+<h3>二、材質規格對比:157g vs 200g vs 250g</h3>
+<p>餐廳開業傳單最常用 3 種紙張,各自適配不同場景和預算:</p>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">紙材</th><th class="border p-2 text-left">克重</th><th class="border p-2 text-left">手感</th><th class="border p-2 text-left">防水</th><th class="border p-2 text-left">適用場景</th></tr></thead><tbody><tr class="border-b"><td class="border p-2">銅版紙(光面)</td><td class="border p-2">157g</td><td class="border p-2">光滑鮮豔</td><td class="border p-2">需過膠</td><td class="border p-2">街口派發、信箱投放</td></tr><tr class="border-b"><td class="border p-2">銅版紙(啞面)</td><td class="border p-2">200g</td><td class="border p-2">沉穩高檔</td><td class="border p-2">需過膠</td><td class="border p-2">樓宇信箱、桌牌</td></tr><tr><td class="border p-2">咭紙</td><td class="border p-2">250g-300g</td><td class="border p-2">硬挺厚實</td><td class="border p-2">可選過膠</td><td class="border p-2">VIP 邀請、菜單立牌</td></tr></tbody></table>
+<p>註:深圳餐飲店雨季(4-9 月)派發的傳單建議一律過膠(霧面或亮面),否則遇水即溶。</p>
+<h3>三、工藝選項:從普通四色到燙金定位</h3>
+<p>餐廳開業傳單最常見 4 種工藝組合,不同預算搭配不同效果:</p>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>四色 CMYK + 雙面過膠</strong>:最常見配置,街口派發首選,防水耐磨</li><li><strong>四色 CMYK + 局部 UV</strong>:菜單圖片局部亮油,提升檔次感</li><li><strong>四色 CMYK + 燙金/燙銀</strong>:VIP 邀請、品牌發布會傳單</li><li><strong>四色 CMYK + 圓角模切</strong>:創意店鋪、設計師餐廳,獨特造型</li></ul>
+<h3>四、設計細節:餐廳開業傳單的 5 條核心建議</h3>
+<p>從深圳 100+ 餐廳開業傳單設計經驗中提煉:</p>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>主視覺佔 60% 面積</strong>:菜品照片或店面外觀要夠大,中環金融區設計師最愛的「破格排版」並不適用於街口派發場景</li><li><strong>優惠信息 3 秒內可讀</strong>:「8 折」「買一送一」「新張期 7 天」字號 ≥ 36pt,顏色對比強烈</li><li><strong>地址 + 地圖 + 營業時間</strong> 三項必備,缺一不可 — 派街紙時顧客沒有手機查地圖</li><li><strong>QR Code 連到 WhatsApp / IG / 大眾點評</strong>,方便顧客二次觸達</li><li><strong>避免深色背景大面積</strong>:深圳雨季+深色背景=看不清,影響轉化</li></ol>
+<h3>五、選購決策:4 種場景對應的傳單選擇</h3>
+<div class="bg-blue-50 border border-blue-200 rounded-xl p-4 my-4">
+<p class="font-bold mb-2">智印雲選購建議:</p>
+<ul class="text-sm space-y-1">
+<li><strong>街口派發 1,000 張:</strong> A5 雙面 + 157g 銅版紙 + 雙面過膠 — 預算 ~HK$ 580</li>
+<li><strong>樓宇信箱 3,000 張:</strong> A5 雙面 + 200g 銅版紙 + 雙面啞膠 — 預算 ~HK$ 1,800</li>
+<li><strong>VIP 邀請 100 張:</strong> A5 厚紙 + 250g + 燙金 + 圓角 — 預算 ~HK$ 600</li>
+<li><strong>店內桌牌 200 張:</strong> A4 + 250g 咭紙 + 雙面啞膠 + 摺疊 — 預算 ~HK$ 480</li>
+</ul>
+</div>
+<h3>六、常見問題 FAQ</h3>
+<p><strong>Q1:餐廳開業傳單最少印多少張?起印量多少?</strong><br/>A:智印雲 ZprintPro 餐廳開業傳單 100 張起印,A5 規格 100 張 HK$ 280 起。50 張小批量也支持(數碼印刷),但單價會貴約 30%。建議街口派發 1,000 張起步,單張成本可壓到 HK$ 0.5-0.6。</p>
+<p><strong>Q2:深圳雨季印刷要過膠嗎?膠面選霧面還是亮面?</strong><br/>A:深圳 4-9 月雨季 + 高濕度,強烈建議過膠。霧面啞膠(Matte Lamination)手感沉穩高檔,適合咖啡廳、餐酒館;亮面過膠(Gloss Lamination)色彩鮮豔,適合兒童餐廳、外賣券。兩種都能防水,霧面更防指紋。</p>
+<p><strong>Q3:餐廳開業傳單幾耐交貨?可以即日取嗎?</strong><br/>A:標準 3-5 個工作天;急件 24 小時(加 30% 急件費);1,000 張以下即日取件可議。智印雲深圳自設廠房出貨,DHL 香港 1-2 日到貨,海外 2-4 日 DDP 到門。</p>
+<p><strong>Q4:設計文件需要什麼格式?不會設計可以嗎?</strong><br/>A:接受 PDF (300dpi 出血 3mm)、AI、PSD、CDR。高清 JPG/PNG 也可但效果略遜。不會設計可加購 HK$ 380 起的設計服務,智印雲設計師團隊熟悉餐飲行業風格,3 天出稿,確認後直接印刷。</p>
+<p>相關閱讀: <a href="/category/flyers/">宣傳單張印刷全系列</a> · <a href="/product/a4-flyers/">A4 宣傳單張</a> · <a href="/product/a5-flyers/">A5 宣傳單張</a> · <a href="/product/double-sided-flyers/">雙面宣傳單張</a> · <a href="/product/thick-paper-flyers/">厚紙宣傳單張</a></p>`,
     },
 
   },
@@ -488,6 +525,43 @@ const posts: Record<string, Record<string, { title: string; description: string;
       content: `<p>Posters are one of the most visually impactful printed materials for brand communication. Whether you need mall promotions, product launches, brand displays, or cultural exhibitions, a high-quality <a href="/en/category/printing/">printed poster</a> captures audience attention instantly. This guide covers Hong Kong poster printing standards: sizes, paper, finishing techniques, and design tips.</p><h3>1. Common Poster Sizes</h3><p>Different scenarios require different poster dimensions:</p><table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Size</th><th class="border p-2 text-left">Best For</th><th class="border p-2 text-left">Unit Price</th></tr></thead><tbody><tr><td class="border p-2">A3 (297 × 420mm)</td><td class="border p-2">Store windows, restaurant displays</td><td class="border p-2">HK$8-15</td></tr><tr><td class="border p-2">A2 (420 × 594mm)</td><td class="border p-2">MTR stations, elevator ads</td><td class="border p-2">HK$15-30</td></tr><tr><td class="border p-2">A1 (594 × 841mm)</td><td class="border p-2">Brand walls, exhibition booths</td><td class="border p-2">HK$30-60</td></tr><tr><td class="border p-2">A0 (841 × 1189mm)</td><td class="border p-2">Large events, outdoor advertising</td><td class="border p-2">HK$60-120</td></tr><tr><td class="border p-2">B2 (500 × 707mm)</td><td class="border p-2">Restaurant menus, exhibition backdrops</td><td class="border p-2">HK$20-40</td></tr></tbody></table><h3>2. Paper Stock Guide</h3><p>Paper choice directly impacts visual effect and cost:</p><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>157g art paper</strong> — most economical, great color reproduction, ideal for most indoor posters</li><li><strong>200g art paper</strong> — better stiffness, no show-through on double-sided prints</li><li><strong>250g art paper</strong> — near-card thickness, premium feel for brand posters</li><li><strong>PP film (matte/glossy)</strong> — waterproof, durable, for long-term display or outdoor use</li><li><strong>Canvas</strong> — textured finish, perfect for art exhibitions and galleries</li><li><strong>Waterproof photo paper</strong> — high gloss, vivid saturation, ideal for photographic posters</li></ul><h3>3. Surface Finishing Options</h3><p>Proper finishing dramatically enhances poster quality and durability:</p><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Glossy / matte lamination</strong> — extends lifespan, waterproof, ideal for long-term display</li><li><strong>Spot UV</strong> — highlights logos or key visuals with glossy contrast</li><li><strong>Foil stamping (gold/silver)</strong> — metallic luxury finish for premium brand posters</li><li><strong>Embossing</strong> — 3D tactile effect, adds depth and sophistication</li></ul><h3>4. Design Tips</h3><ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>Resolution</strong>: A3 posters need 300dpi; A0+ can use 150dpi (viewed from distance)</li><li><strong>Bleed</strong>: Minimum 3mm bleed on all sides to avoid white edges after trimming</li><li><strong>Safe zone</strong>: Keep important text and logos at least 15mm from edges</li><li><strong>Color mode</strong>: Always use CMYK — RGB to CMYK conversion dulls bright colors</li><li><strong>Font size</strong>: For distance viewing, body text >=24pt, headlines >=72pt</li></ol><p>Related: <a href="/en/category/design/">Design Services</a> · <a href="/en/category/packaging/">Packaging Box Printing</a> · <a href="/en/product/a4-flyers/">Flyer Printing</a></p><p><strong>Q: What is the minimum order quantity?</strong><br/>A: Digital printing starts from 1 piece; offset printing starts from 500 pieces. Rush orders can be delivered within 24 hours.</p><p><strong>Q: What's the difference between PP film and art paper posters?</strong><br/>A: PP film is waterproof and durable for outdoor/long-term use; art paper offers better color reproduction and lower cost.</p><p><strong>Q: Can I get a free proof?</strong><br/>A: Yes. Our AI system provides instant quotes in 30 seconds, and we provide a proof for approval before production.</p><p><strong>Q: Is tube packaging included?</strong><br/>A: Free poster tube packaging for orders of 10+ posters, ensuring no damage during transport.</p><p>WhatsApp: +86 181 2638 0255 for instant quote!</p>`,
     },
 
+    // 2026-07-04 純文字深度博客: 餐廳開業傳單 (Tier A × P0 flyers) — 純文字・無圖
+    'restaurant-opening-flyer-printing-guide': {
+      title: 'Restaurant Opening Flyer Printing Guide · Shenzhen Printing | ZprintPro',
+      description: 'Shenzhen restaurant opening season: a high-quality flyer decides if customers remember your shop. 50-200 to 5,000 copies, 3-day turnaround, DHL global 2-4 day delivery.',
+      date: '2026-07-04', category: 'Restaurant Flyer',
+      content: `<p>Shenzhen restaurant opening season is peak. A premium flyer determines whether customers remember your shop. In the industry, flyers handed out in the first two weeks after opening convert at the highest return-customer rate — higher ROI than subsequent online ads. ZprintPro operates our own Shenzhen factory, offering 50-200 small-batch up to 5,000 bulk restaurant opening flyer printing with 3-day turnaround and DHL 2-4 day global delivery. This guide breaks down the complete restaurant opening flyer workflow — materials, finishing, design, selection and delivery.</p>
+<h3>1. Industry Overview: Real Restaurant Opening Flyer Demand in Shenzhen</h3>
+<p>Shenzhen's F&B market exceeded HK$ 380 billion in 2025 (source: Shenzhen Catering Association), with 800-1,200 new restaurants monthly. The industry knows that new restaurant opening budgets allocate 60-70% to the first month — street handouts, corner flyers, food delivery platform vouchers. Standard restaurant opening flyer specifications:</p>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Scenario</th><th class="border p-2 text-left">Size</th><th class="border p-2 text-left">Quantity</th><th class="border p-2 text-left">Budget (HK$)</th></tr></thead><tbody><tr class="border-b"><td class="border p-2">Street handout</td><td class="border p-2">A5 (148×210mm)</td><td class="border p-2">1,000 pcs</td><td class="border p-2">HK$ 580-880</td></tr><tr class="border-b"><td class="border p-2">Building mailboxes</td><td class="border p-2">A5 double-sided</td><td class="border p-2">3,000 pcs</td><td class="border p-2">HK$ 1,400-2,200</td></tr><tr class="border-b"><td class="border p-2">In-store table card</td><td class="border p-2">A4 thick paper</td><td class="border p-2">200 pcs</td><td class="border p-2">HK$ 320-500</td></tr><tr class="border-b"><td class="border p-2">Delivery platform voucher</td><td class="border p-2">A6 (105×148mm)</td><td class="border p-2">5,000 pcs</td><td class="border p-2">HK$ 980-1,500</td></tr><tr><td class="border p-2">VIP invitation</td><td class="border p-2">A5 thick + foil</td><td class="border p-2">100 pcs</td><td class="border p-2">HK$ 480-720</td></tr></tbody></table>
+<h3>2. Material Specifications: 157g vs 200g vs 250g</h3>
+<p>Restaurant opening flyers most commonly use 3 paper types, each suited to different scenarios and budgets:</p>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Paper</th><th class="border p-2 text-left">Weight</th><th class="border p-2 text-left">Feel</th><th class="border p-2 text-left">Waterproof</th><th class="border p-2 text-left">Best For</th></tr></thead><tbody><tr class="border-b"><td class="border p-2">Glossy art paper</td><td class="border p-2">157g</td><td class="border p-2">Smooth vibrant</td><td class="border p-2">Needs lamination</td><td class="border p-2">Street handouts, mailboxes</td></tr><tr class="border-b"><td class="border p-2">Matte art paper</td><td class="border p-2">200g</td><td class="border p-2">Refined premium</td><td class="border p-2">Needs lamination</td><td class="border p-2">Building mailboxes, table cards</td></tr><tr><td class="border p-2">Card stock</td><td class="border p-2">250g-300g</td><td class="border p-2">Sturdy substantial</td><td class="border p-2">Optional lamination</td><td class="border p-2">VIP invitations, menu stand</td></tr></tbody></table>
+<p>Note: Shenzhen rainy season (April-September) flyers should always be laminated (matte or gloss) or they dissolve on contact with water.</p>
+<h3>3. Finishing Options: From Standard CMYK to Foil Stamping</h3>
+<p>Restaurant opening flyers most often combine 4 finishing processes, with different effects at different budgets:</p>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>4C CMYK + double-sided lamination</strong>: most common config, street handout standard, water-resistant and durable</li><li><strong>4C CMYK + spot UV</strong>: localized gloss on menu images, elevates perceived quality</li><li><strong>4C CMYK + foil stamping (gold/silver)</strong>: VIP invitations, brand launch flyers</li><li><strong>4C CMYK + rounded corner die-cut</strong>: creative stores, designer restaurants, distinctive shapes</li></ul>
+<h3>4. Design Details: 5 Core Recommendations for Restaurant Opening Flyers</h3>
+<p>Distilled from ZprintPro's 100+ restaurant opening flyer design experiences in Shenzhen:</p>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>Hero visual occupies 60% of area</strong>: dish photos or storefront shots must be large. The "rule-breaking layout" favored by Central financial district designers doesn't apply to street handout scenarios.</li><li><strong>Promo info readable in 3 seconds</strong>: "20% off", "buy one get one", "opening week 7 days" — font size ≥ 36pt, strong color contrast</li><li><strong>Address + map + opening hours</strong> all three mandatory, none missing — street handout customers don't pull out phones to check maps</li><li><strong>QR Code links to WhatsApp / IG / Dianping</strong> for second-touch customer engagement</li><li><strong>Avoid large dark backgrounds</strong>: Shenzhen rainy season + dark background = unreadable, hurting conversion</li></ol>
+<h3>5. Selection Decision: 4 Scenarios, 4 Flyer Choices</h3>
+<div class="bg-blue-50 border border-blue-200 rounded-xl p-4 my-4">
+<p class="font-bold mb-2">ZprintPro Selection Recommendations:</p>
+<ul class="text-sm space-y-1">
+<li><strong>Street handout 1,000 pcs:</strong> A5 double-sided + 157g art paper + double-sided lamination — ~HK$ 580</li>
+<li><strong>Building mailboxes 3,000 pcs:</strong> A5 double-sided + 200g art paper + double-sided matte lamination — ~HK$ 1,800</li>
+<li><strong>VIP invitation 100 pcs:</strong> A5 thick paper + 250g + foil stamping + rounded corners — ~HK$ 600</li>
+<li><strong>In-store table card 200 pcs:</strong> A4 + 250g card stock + double-sided matte lamination + folded — ~HK$ 480</li>
+</ul>
+</div>
+<h3>6. Frequently Asked Questions FAQ</h3>
+<p><strong>Q1: What's the minimum order quantity (MOQ) for restaurant opening flyers?</strong><br/>A: ZprintPro restaurant opening flyers 100-copy MOQ, A5 size 100 pcs starts at HK$ 280. 50-copy small batches also supported (digital print), but unit cost ~30% higher. For street handout we recommend 1,000+ copies to bring unit cost down to HK$ 0.5-0.6 per piece.</p>
+<p><strong>Q2: Does Shenzhen rainy season printing need lamination? Matte or gloss?</strong><br/>A: Shenzhen April-September rainy season + high humidity, lamination strongly recommended. Matte lamination feels refined and premium, suits cafés and bistros; gloss lamination is more vibrant, suits kids' restaurants and delivery vouchers. Both are waterproof; matte resists fingerprints better.</p>
+<p><strong>Q3: Restaurant opening flyer turnaround? Same-day pickup available?</strong><br/>A: Standard 3-5 business days; rush 24 hours (+30% rush fee); same-day pickup negotiable for under 1,000 pcs. ZprintPro Shenzhen factory ships, DHL Hong Kong 1-2 days, overseas 2-4 days DDP door-to-door.</p>
+<p><strong>Q4: What file format do you need for design? Can you design it for us?</strong><br/>A: Accepts PDF (300dpi, 3mm bleed), AI, PSD, CDR. High-res JPG/PNG also accepted but slightly less ideal. Need us to design? Add-on design service from HK$ 380, ZprintPro design team knows F&B industry styles, 3-day draft delivery, print after confirmation.</p>
+<p>Related reading: <a href="/category/flyers/">Flyer Printing Full Series</a> · <a href="/product/a4-flyers/">A4 Flyers</a> · <a href="/product/a5-flyers/">A5 Flyers</a> · <a href="/product/double-sided-flyers/">Double-Sided Flyers</a> · <a href="/product/thick-paper-flyers/">Thick Paper Flyers</a></p>`,
+    },
+
   },
   ja: {
     'company-intro': { title: 'ZprintPro会社概要：専門設備とワンストップ印刷サービス', description: 'ZprintProはハイデルベルグ6+1印刷機、HPデジタル印刷機、マルティニ製本ラインなどの先進設備を保有し、ワンストップ印刷サービスを提供しています。', date: '2024-06-01', category: '会社ニュース', content: `<p>智印雲（ZprintPro）は深圳に本社を構え、世界中のお客様に印刷サービスを提供している総合印刷企業です。本記事では企業概要、主力設備、後加工体制、品質保証、越境サービス、そしてお問い合わせ方法を詳しくご紹介します。</p>
@@ -677,10 +751,47 @@ const posts: Record<string, Record<string, { title: string; description: string;
       content: `<p>ポスターはブランドコミュニケーションにおいて最も視覚的インパクトのある印刷物の一つです。商業施設のプロモーション、新製品発表、ブランド展示、文化展覧会など、高品質な<a href="/ja/category/printing/">印刷ポスター</a>は瞬時にターゲットの注目を集めます。本ガイドでは香港のポスター印刷に関するサイズ、用紙、加工技術、デザインのポイントを体系的に解説します。</p><h3>1. ポスターの主なサイズ</h3><p>用途に応じて適切なサイズを選びましょう：</p><table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">サイズ</th><th class="border p-2 text-left">最適な用途</th><th class="border p-2 text-left">単価目安</th></tr></thead><tbody><tr><td class="border p-2">A3（297 × 420mm）</td><td class="border p-2">店舗ウィンドウ、レストラン内展示</td><td class="border p-2">HK$8-15</td></tr><tr><td class="border p-2">A2（420 × 594mm）</td><td class="border p-2">MTR駅構内、エレベーター広告</td><td class="border p-2">HK$15-30</td></tr><tr><td class="border p-2">A1（594 × 841mm）</td><td class="border p-2">ブランド壁面、展示会ブース</td><td class="border p-2">HK$30-60</td></tr><tr><td class="border p-2">A0（841 × 1189mm）</td><td class="border p-2">大規模イベント、屋外広告</td><td class="border p-2">HK$60-120</td></tr><tr><td class="border p-2">B2（500 × 707mm）</td><td class="border p-2">レストランメニュー、展示背景</td><td class="border p-2">HK$20-40</td></tr></tbody></table><h3>2. 用紙選定ガイド</h3><p>ポスターの用紙選びは最終的な印象を左右します：</p><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>157g コート紙</strong> — 最も経済的、色彩再現良好、屋内用に最適</li><li><strong>200g コート紙</strong> — 高い剛性、両面印刷でも裏抜けしにくい</li><li><strong>250g コート紙</strong> — 厚紙感覚、プレミアムブランド向け</li><li><strong>PPフィルム（艶/マット）</strong> — 防水・耐久、長期展示や屋外に最適</li><li><strong>キャンバス</strong> — テクスチャー風合い、アート展やギャラリー向け</li><li><strong>防水写真用紙</strong> — 高光沢、高彩度、写真ポスターに最適</li></ul><h3>3. 表面加工オプション</h3><p>表面加工でポスターの質感と耐久性を大幅に向上できます：</p><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>艶/マットラミネート</strong> — 寿命延長、防水、長期展示に最適</li><li><strong>スポットUV</strong> — ロゴやキービジュアルを際立たせる</li><li><strong>箔押し（金/銀）</strong> — 高級感あふれるメタリック仕上げ</li><li><strong>エンボス</strong> — 3D触感効果、奥行きと高級感を追加</li></ul><h3>4. デザインポイント</h3><ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>解像度</strong>：A3は300dpi、A0以上は150dpiでOK（遠距離からの視認）</li><li><strong>裁ち落とし</strong>：四方3mm以上の余白を確保</li><li><strong>セーフゾーン</strong>：重要なテキストやロゴは端から15mm以上内側に</li><li><strong>カラーモード</strong>：必ずCMYKを使用、RGBからCMYK変換で色がくすむ</li><li><strong>フォントサイズ</strong>：遠距離視認の場合、本文24pt以上、見出し72pt以上</li></ol><p>関連：<a href="/ja/category/design/">デザインサービス</a> · <a href="/ja/category/packaging/">包装箱印刷</a> · <a href="/ja/product/a4-flyers/">チラシ印刷</a></p><p><strong>Q: 最小注文数は？</strong><br/>A: デジタル印刷は1枚から、オフセット印刷は500枚から承ります。急ぎは24時間納品が可能です。</p><p><strong>Q: PPフィルムとコート紙の違いは？</strong><br/>A: PPフィルムは防水で屋外や長期展示に最適、コート紙は色彩表現に優れコストも低めです。</p><p><strong>Q: 無料校正は可能ですか？</strong><br/>A: はい。AIシステムが30秒で即時見積もり、校正確認後に生産開始します。</p><p><strong>Q: ポスターの筒包装は含まれますか？</strong><br/>A: 10枚以上のご注文で無料のポスター筒包装を提供、輸送中の折れを防止します。</p><p>WhatsApp: +86 181 2638 0255 までお問い合わせください。</p>`,
     },
 
+    // 2026-07-04 純文字深度ブログ: レストラン開業チラシ (Tier A × P0 flyers) — 純文字・無図
+    'restaurant-opening-flyer-printing-guide': {
+      title: 'レストラン開業チラシ印刷ガイド · 深圳印刷 | ZprintPro',
+      description: '深圳レストラン開業シーズン。高品質チラシが顧客の記憶に残るかどうかを決める。50-200枚から5,000枚の大口まで、3営業日納品、DHL世界2-4日配送。',
+      date: '2026-07-04', category: '飲食チラシ',
+      content: `<p>深圳レストラン開業シーズン真っ只中。高品質なチラシが、お客様の記憶に残るかどうかを決めます。業界では、開業初週から2週間に配布したチラシのリピート来店率が最も高い — その後のオンライン広告よりROIが確実です。智印雲 ZprintProは深圳自社工場を運営し、50-200枚小ロットから5,000枚大口まで対応、3営業日納品、DHLで世界中へ2-4日配送。本ガイドでは、材質、加工、デザイン、選定、納期の全流程を完全解説します。</p>
+<h3>1. 業界概況:深圳レストラン開業チラシのリアルな需要</h3>
+<p>深圳飲食市場は2025年にHK$ 380億超(出典:深圳市餐飲協會)、毎月800-1,200軒の新規レストランが誕生。業界の常識では、新規開業予算の60-70%が開業初月に集中 — 街頭ビラ、店頭チラシ、デリバリー券。レストラン開業チラシの標準仕様は下表の通り:</p>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">シーン</th><th class="border p-2 text-left">規格</th><th class="border p-2 text-left">数量</th><th class="border p-2 text-left">予算 (HK$)</th></tr></thead><tbody><tr class="border-b"><td class="border p-2">街頭配布</td><td class="border p-2">A5 (148×210mm)</td><td class="border p-2">1,000枚</td><td class="border p-2">HK$ 580-880</td></tr><tr class="border-b"><td class="border p-2">ビル郵便受け</td><td class="border p-2">A5 両面</td><td class="border p-2">3,000枚</td><td class="border p-2">HK$ 1,400-2,200</td></tr><tr class="border-b"><td class="border p-2">店内卓上カード</td><td class="border p-2">A4 厚紙</td><td class="border p-2">200枚</td><td class="border p-2">HK$ 320-500</td></tr><tr class="border-b"><td class="border p-2">デリバリー券</td><td class="border p-2">A6 (105×148mm)</td><td class="border p-2">5,000枚</td><td class="border p-2">HK$ 980-1,500</td></tr><tr><td class="border p-2">VIP招待状</td><td class="border p-2">A5 厚紙 + 箔押し</td><td class="border p-2">100枚</td><td class="border p-2">HK$ 480-720</td></tr></tbody></table>
+<h3>2. 材質仕様比較:157g vs 200g vs 250g</h3>
+<p>レストラン開業チラシは主に3種類の用紙を使い分け、シーンと予算に合わせて選定します:</p>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">用紙</th><th class="border p-2 text-left">斤量</th><th class="border p-2 text-left">手触り</th><th class="border p-2 text-left">防水</th><th class="border p-2 text-left">最適シーン</th></tr></thead><tbody><tr class="border-b"><td class="border p-2">コート紙(光沢)</td><td class="border p-2">157g</td><td class="border p-2">なめらか鮮やか</td><td class="border p-2">ラミ必要</td><td class="border p-2">街頭配布、郵便受け</td></tr><tr class="border-b"><td class="border p-2">マットコート紙</td><td class="border p-2">200g</td><td class="border p-2">落ち着き高級感</td><td class="border p-2">ラミ必要</td><td class="border p-2">郵便受け、卓上カード</td></tr><tr><td class="border p-2">カード用紙</td><td class="border p-2">250g-300g</td><td class="border p-2">しっかり厚手</td><td class="border p-2">ラミ任意</td><td class="border p-2">VIP招待、メニュースタンド</td></tr></tbody></table>
+<p>注:深圳の雨季(4-9月)に配布するチラシは、必ずラミネート(マットまたは光沢)をかけてください。水で溶けます。</p>
+<h3>3. 加工オプション:標準4色から箔押しまで</h3>
+<p>レストラン開業チラシで最も多い4種の加工組み合わせ、予算別に効果を出し分けます:</p>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>4色CMYK + 両面ラミネート</strong>:最多構成、街頭配布の定番、防水耐久性</li><li><strong>4色CMYK + スポットUV</strong>:料理画像などに部分光沢、高級感アップ</li><li><strong>4色CMYK + 箔押し(金/銀)</strong>:VIP招待、ブランド発表会チラシ</li><li><strong>4色CMYK + 角丸型抜き</strong>:クリエイティブ店舗、デザイナー系レストラン、独特形状</li></ul>
+<h3>4. デザイン詳細:レストラン開業チラシ5つの重要ポイント</h3>
+<p>深圳で100軒以上のレストラン開業チラシを制作してきた経験から:</p>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>メインビジュアルは60%の面積を占有</strong>:料理写真や店構え写真を大きく。中環金融街のデザイナー好みの「崩しレイアウト」は街頭配布には不向き。</li><li><strong>お得情報は3秒で読める</strong>:「8割引」「1個買うと1個もらえる」「新装開店7日間」フォントサイズ ≥ 36pt、色のコントラスト強め</li><li><strong>住所 + 地図 + 営業時間</strong> 3点セット必須、欠落不可 — 街頭ビラでは顧客はスマホで地図を調べません</li><li><strong>QR コードは WhatsApp / Instagram / 大衆点評へリンク</strong>、二次接触用</li><li><strong>ダーク系の大きい地色は避ける</strong>:深圳雨季+ダーク地色=読めない、コンバージョン低下</li></ol>
+<h3>5. 選定判断:4つのシーンに対するチラシ選び</h3>
+<div class="bg-blue-50 border border-blue-200 rounded-xl p-4 my-4">
+<p class="font-bold mb-2">智印雲おすすめ構成:</p>
+<ul class="text-sm space-y-1">
+<li><strong>街頭配布 1,000枚:</strong> A5 両面 + 157g コート紙 + 両面ラミ — 予算 ~HK$ 580</li>
+<li><strong>ビル郵便受け 3,000枚:</strong> A5 両面 + 200g コート紙 + 両面マットラミ — 予算 ~HK$ 1,800</li>
+<li><strong>VIP招待 100枚:</strong> A5 厚紙 + 250g + 箔押し + 角丸 — 予算 ~HK$ 600</li>
+<li><strong>店内卓上カード 200枚:</strong> A4 + 250g カード用紙 + 両面マットラミ + 折加工 — 予算 ~HK$ 480</li>
+</ul>
+</div>
+<h3>6. よくあるご質問 FAQ</h3>
+<p><strong>Q1:レストラン開業チラシの最小注文数量(MOQ)は?</strong><br/>A:智印雲 ZprintProのレストラン開業チラシは100枚から対応、A5サイズ100枚でHK$ 280〜。50枚小ロットも対応(デジタル印刷)ですが、単価が約30%高くなります。街頭配布は1,000枚以上を推奨、1枚あたりHK$ 0.5-0.6にコストダウン可能。</p>
+<p><strong>Q2:深圳の雨季印刷はラミネートすべき?マットと光沢どっち?</strong><br/>A:深圳4-9月の雨季+高湿度、ラミネートを強く推奨。マットラミネートは落ち着いた高級感、喫茶店やビストロ向き。光沢ラミネートは色彩鮮やか、子供向けレストランやデリバリー券向き。どちらも防水ですが、マットの方が指紋が目立ちにくい。</p>
+<p><strong>Q3:レストラン開業チラシの納期は?当日受取は可能?</strong><br/>A:通常3-5営業日。お急ぎ24時間(特急料+30%で対応)。1,000枚以下は当日受取応相談。智印雲は深圳自社工場から出荷、DHL香港1-2日、海外2-4日DDP戸配。</p>
+<p><strong>Q4:デザインデータのファイル形式は?デザインも依頼できる?</strong><br/>A:PDF(300dpi、塗りたし3mm)、AI、PSD、CDR対応。高解像度JPG/PNGも対応しますがやや劣ります。デザインご依頼はHK$ 380〜の追加オプション、智印雲デザインチームは飲食業界スタイル熟知、3日で初稿、確定後そのまま印刷。</p>
+<p>関連リンク: <a href="/category/flyers/">チラシ印刷全シリーズ</a> · <a href="/product/a4-flyers/">A4 チラシ</a> · <a href="/product/a5-flyers/">A5 チラシ</a> · <a href="/product/double-sided-flyers/">両面チラシ</a> · <a href="/product/thick-paper-flyers/">厚紙チラシ</a></p>`,
+    },
+
   }
 };
 
-const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-specs', 'brand-materials-checklist', 'mtr-advertising-specs', 'sticker-guide', 'business-card-design', 'packaging-trends', 'cmyk-guide', 'paper-materials', 'eco-printing', 'flyer-printing-guide', 'food-packaging-printing-guide', 'paper-bag-printing-guide', 'poster-printing-guide'];
+const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-specs', 'brand-materials-checklist', 'mtr-advertising-specs', 'sticker-guide', 'business-card-design', 'packaging-trends', 'cmyk-guide', 'paper-materials', 'eco-printing', 'flyer-printing-guide', 'food-packaging-printing-guide', 'paper-bag-printing-guide', 'poster-printing-guide', 'restaurant-opening-flyer-printing-guide'];
 const guideSlugs = getAllBuyingGuideSlugs();
 const clusterSlugs = getAllClusterSlugs();
 const allSlugs = [...articleSlugs, ...guideSlugs, ...clusterSlugs];
@@ -831,11 +942,12 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
 
   // 2026-06-10 Phase B 修复 P0-3：使用 generateBlogArticleJsonLd（author = Person 类型，E-E-A-T 关键）
   // 旧实现：author = Organization 类型 → AI 抓取时无作者归属，信任度低。
+  // 2026-07-04 修订：纯文字博客无封面时,image 字段省略(schema-extensions.ts 内部 fallback 到 og-default.jpg)
   const articleJsonLd = generateBlogArticleJsonLd(
     {
       title: post.title,
       description: post.description,
-      image: `${siteConfig.url}${postImage}`,
+      image: postImage ? `${siteConfig.url}${postImage}` : undefined,
       publishedAt: post.date,
       updatedAt: post.date,
       url: canonical,
@@ -902,17 +1014,19 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
         <div className="flex gap-8 items-start">
           {/* Left: Article Content */}
           <article className="flex-1 bg-white rounded-xl border border-gray-100 overflow-hidden">
-            {/* Hero Image */}
-            <div className="aspect-[21/9] relative overflow-hidden bg-gray-100">
-              <Image
-                src={postImage}
-                alt={post.title}
-                fill
-                className="object-cover"
-                unoptimized
-                priority
-              />
-            </div>
+            {/* Hero Image - 仅当 postImage 非空时渲染 (2026-07-04 纯文字博客支持) */}
+            {postImage && (
+              <div className="aspect-[21/9] relative overflow-hidden bg-gray-100">
+                <Image
+                  src={postImage}
+                  alt={post.title}
+                  fill
+                  className="object-cover"
+                  unoptimized
+                  priority
+                />
+              </div>
+            )}
 
             <div className="p-8">
               <span className="text-xs font-medium text-[#F87314] bg-orange-50 px-2.5 py-1 rounded-full">
