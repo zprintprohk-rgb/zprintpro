@@ -1,0 +1,502 @@
+[
+  {
+    "slug": "packaging-trends",
+    "intro": {
+      "zh-hk": "在競爭激烈的零售市場中，包裝盒不僅是產品的保護殼，更是品牌與消費者的第一接觸點。2024-2026 年的包裝設計趨勢呈現出哪些新方向？本文將帶您系統解析極簡主義、可持續包裝、個性化定制、智能包裝、開箱體驗、選購指南 6 大維度。",
+      "en": "In competitive retail, packaging is both protection and a brand's first touchpoint with consumers. What new directions will packaging design take in 2024-2026? This article systematically analyzes minimalism, sustainable packaging, personalization, smart packaging, unboxing experience, and a buying guide across 6 dimensions.",
+      "ja": "競争激しい小売市場において、パッケージは商品の保護だけでなく、ブランドと消費者の最初の接点です。2024-2026 年のパッケージデザイントレンドはどんな方向へ？本記事ではミニマリズム、持続可能パッケージ、パーソナライズ、スマートパッケージ、開封体験、購入ガイドの 6 つの側面を体系的に分析します。"
+    },
+    "zh-hk": {
+      "sections": [
+        {
+          "tag": "h3",
+          "body": "趨勢一：極簡主義持續盛行"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "大面積留白，視覺舒適",
+            "單一主色（黑白 + 品牌色）",
+            "精煉的產品名稱（字體設計感強）",
+            "無裝飾圖案，以質感取勝",
+            "代表案例：Aesop、蘋果、無印良品"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "趨勢二：可持續包裝成為標配"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "環保材質",
+            "特性",
+            "適合產品"
+          ],
+          "rows": [
+            [
+              "再生紙板",
+              "FSC 認證、可回收",
+              "化妝品、食品、零售"
+            ],
+            [
+              "甘蔗渣紙塑",
+              "可堆肥、工業用",
+              "電子產品內襯"
+            ],
+            [
+              "植物基油墨",
+              "大豆油墨、環保油墨",
+              "所有印刷品"
+            ],
+            [
+              "水溶性膠水",
+              "可降解、無毒",
+              "盒身黏合"
+            ],
+            [
+              "PLA 淋膜",
+              "可降解塑膠替代",
+              "食品包裝"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "趨勢三：個性化與小批量定制"
+        },
+        {
+          "tag": "ol",
+          "items": [
+            "消費者渴望獨特體驗，小批量、多款式的定制包裝成為新常態",
+            "支持 100 個起訂的禮品盒定制，解決中小企業「無法承擔大單」的痛點",
+            "客製化印刷（每盒不同姓名 / 序號）成為限量版營銷利器",
+            "可變數據印刷（Variable Data Printing）成本逐年下降",
+            "節日限定包裝（如聖誕、新年）成為品牌年度爆款策略"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "趨勢四：智能包裝的興起"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>AR 擴增實境</strong>：掃描包裝即可查看動畫故事、使用教程",
+            "<strong>NFC 芯片</strong>：輕觸手機即可跳轉產品溯源頁面、品牌官網",
+            "<strong>溫度指示標籤</strong>：對食品、藥品冷鏈監控至關重要",
+            "<strong>防偽二維碼</strong>：消費者掃碼查驗真偽，提升品牌信任度"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "趨勢五：開箱體驗的情感設計"
+        },
+        {
+          "tag": "p",
+          "body": "包裝從「容器」進化為「品牌儀式」："
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>內襯設計</strong>：絨布、EVA、紙塑托盤，提升產品保護與觀感",
+            "<strong>感謝卡</strong>：手寫感印刷，傳遞品牌溫度",
+            "<strong>防偽貼紙</strong>：消費者首次拆封的紀念價值",
+            "<strong>二維碼禮品</strong>：掃碼領取優惠券、加入會員"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "熱門包裝類型推薦"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "包裝類型",
+            "適用產品",
+            "特點"
+          ],
+          "rows": [
+            [
+              "禮品盒",
+              "化妝品、首飾、電子產品",
+              "精美外觀，提升品牌檔次"
+            ],
+            [
+              "快遞盒",
+              "電商產品",
+              "堅固耐用，運輸安全"
+            ],
+            [
+              "化妝品盒",
+              "護膚品、彩妝",
+              "時尚設計，品牌加分"
+            ],
+            [
+              "食品盒",
+              "烘焙、零食、外賣",
+              "食品級材質，安全衛生"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "常見問題"
+        },
+        {
+          "tag": "faq",
+          "qas": [
+            {
+              "q": "包裝盒最少可以訂幾多個？",
+              "a": "100 個起訂，標準禮品盒適用。"
+            },
+            {
+              "q": "有無提供設計服務？",
+              "a": "提供，HK$800/款起，含 2 輪修改及 3D 模擬圖。"
+            },
+            {
+              "q": "環保材質係咪真係環保？",
+              "a": "FSC 認證紙板 + 大豆油墨，符合歐盟環保標準。"
+            },
+            {
+              "q": "可以製作特殊形狀嗎？",
+              "a": "可以，異形模切按客戶要求訂製，需開模費。"
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "body": "想為您的產品打造完美的包裝？立即 <a href=\"https://wa.me/8618126380255\" target=\"_blank\">WhatsApp 聯絡智印雲</a> 獲取免費設計方案！"
+        }
+      ]
+    },
+    "en": {
+      "sections": [
+        {
+          "tag": "h3",
+          "body": "Trend 1: Minimalism Continues to Dominate"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "Generous white space for visual comfort",
+            "Single dominant color (black/white + brand color)",
+            "Refined product name with strong typography",
+            "No decorative patterns — texture wins",
+            "Brand examples: Aesop, Apple, MUJI"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "Trend 2: Sustainable Packaging Becomes Standard"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "Eco Material",
+            "Features",
+            "Best For"
+          ],
+          "rows": [
+            [
+              "Recycled Cardboard",
+              "FSC certified, recyclable",
+              "Cosmetics, food, retail"
+            ],
+            [
+              "Bagasse Pulp Mold",
+              "Compostable, industrial",
+              "Electronics inner tray"
+            ],
+            [
+              "Plant-Based Ink",
+              "Soy ink, eco ink",
+              "All printed products"
+            ],
+            [
+              "Water-Soluble Glue",
+              "Biodegradable, non-toxic",
+              "Box assembly"
+            ],
+            [
+              "PLA Lamination",
+              "Biodegradable plastic alternative",
+              "Food packaging"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "Trend 3: Personalization & Small-Batch Customization"
+        },
+        {
+          "tag": "ol",
+          "items": [
+            "Consumers crave unique experiences — small-batch multi-SKU packaging becomes the new normal",
+            "100-piece minimum gift box customization solves SMB pain points",
+            "Variable data printing (different name/number per box) becomes limited-edition marketing tool",
+            "Variable data printing costs decreasing year-over-year",
+            "Holiday limited packaging (Christmas, New Year) becomes annual flagship strategy"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "Trend 4: Smart Packaging on the Rise"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>AR (Augmented Reality)</strong>: Scan packaging for animations, tutorials, brand stories",
+            "<strong>NFC Chips</strong>: Tap phone to redirect to product traceability or brand site",
+            "<strong>Temperature Indicators</strong>: Critical for food and pharma cold chain",
+            "<strong>Anti-Counterfeit QR</strong>: Consumer scan to verify authenticity, build trust"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "Trend 5: Unboxing Experience as Emotional Design"
+        },
+        {
+          "tag": "p",
+          "body": "Packaging evolves from \"container\" to \"brand ritual\":"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>Inner Tray Design</strong>: Velvet, EVA, molded pulp — boosts protection and perception",
+            "<strong>Thank-You Card</strong>: Hand-feel printing conveys brand warmth",
+            "<strong>Anti-Counterfeit Stickers</strong>: Memorabilia for first-open experience",
+            "<strong>QR Gift Codes</strong>: Scan to claim coupons or join membership"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "Popular Packaging Types"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "Type",
+            "Best For",
+            "Features"
+          ],
+          "rows": [
+            [
+              "Gift Box",
+              "Cosmetics, jewelry, electronics",
+              "Premium appearance, brand elevation"
+            ],
+            [
+              "Mailer Box",
+              "E-commerce products",
+              "Durable, shipping-safe"
+            ],
+            [
+              "Cosmetic Box",
+              "Skincare, makeup",
+              "Stylish, brand-positive"
+            ],
+            [
+              "Food Box",
+              "Bakery, snacks, takeaway",
+              "Food-grade material, hygienic"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "Frequently Asked Questions"
+        },
+        {
+          "tag": "faq",
+          "qas": [
+            {
+              "q": "What is the MOQ for packaging boxes?",
+              "a": "100 pieces for standard gift boxes."
+            },
+            {
+              "q": "Do you offer design services?",
+              "a": "Yes — from US$100/design, includes 2 revisions and 3D mockup."
+            },
+            {
+              "q": "Is eco-material truly eco-friendly?",
+              "a": "FSC certified cardboard + soy ink meets EU eco standards."
+            },
+            {
+              "q": "Can you produce custom shapes?",
+              "a": "Yes — custom die-cut available; tooling fee applies."
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "body": "Want the perfect packaging for your product? Contact <a href=\"https://wa.me/8618126380255\" target=\"_blank\">ZprintPro via WhatsApp</a> for a free design proposal!"
+        }
+      ]
+    },
+    "ja": {
+      "sections": [
+        {
+          "tag": "h3",
+          "body": "トレンド 1：ミニマリズムの継続"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "広めの余白、視覚的快適さ",
+            "単一主色（白黒 + ブランドカラー）",
+            "洗練された製品名（タイポグラフィーが強い）",
+            "装飾なし、質感が勝つ",
+            "代表例：Aesop、Apple、無印良品"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "トレンド 2：持続可能なパッケージが標準に"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "エコ素材",
+            "特徴",
+            "適用製品"
+          ],
+          "rows": [
+            [
+              "再生紙ボール",
+              "FSC 認証、リサイクル可能",
+              "化粧品、食品、小売"
+            ],
+            [
+              "バガス pulp",
+              "堆肥化可能、産業用",
+              "電子機器インナー"
+            ],
+            [
+              "植物性インキ",
+              "大豆インキ、エコインキ",
+              "全印刷物"
+            ],
+            [
+              "水溶性接着剤",
+              "生分解、無毒",
+              "箱組立"
+            ],
+            [
+              "PLA ラミネート",
+              "生分解性プラスチック代替",
+              "食品包装"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "トレンド 3：パーソナライズと小ロットカスタム"
+        },
+        {
+          "tag": "ol",
+          "items": [
+            "消費者が独自体験を求める中、小ロット多品種のパッケージが新常態に",
+            "100 個から対応するギフトボックスカスタムで中小企業のハードルを解消",
+            "バリアブル印刷（箱ごとに異なる名前 / 番号）が限定版マーケの切り札に",
+            "バリアブル印刷コストは年々低下",
+            "祝日限定パッケージ（クリスマス、新年）が年次主力戦略に"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "トレンド 4：スマートパッケージの台頭"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>AR（拡張現実）</strong>：パッケージをスキャンすると動画・使い方案内",
+            "<strong>NFC チップ</strong>：スマホをタップで商品トレーサビリティ・ブランドサイトへ",
+            "<strong>温度インジケータ</strong>：食品・医薬品のコールドチェーン監視に必須",
+            "<strong>偽造防止 QR</strong>：消費者がスキャンで真偽確認、ブランド信頼向上"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "トレンド 5：開封体験の感情設計"
+        },
+        {
+          "tag": "p",
+          "body": "パッケージは「容器」から「ブランド儀式」へ進化："
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>インナートレー設計</strong>：ベルベット、EVA、pulp 成形 — 保護性・観感向上",
+            "<strong>サンキューカード</strong>：手書き風印刷でブランド温かみを伝える",
+            "<strong>偽造防止ステッカー</strong>：初回開封の記念価値",
+            "<strong>QR ギフトコード</strong>：スキャンでクーポン、会員加入"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "人気パッケージタイプ"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "タイプ",
+            "適用製品",
+            "特徴"
+          ],
+          "rows": [
+            [
+              "ギフトボックス",
+              "化粧品、宝飾、電子機器",
+              "精美外観、ブランド格上げ"
+            ],
+            [
+              "メールボックス",
+              "EC 商品",
+              "堅牢、輸送安全"
+            ],
+            [
+              "コスメティックボックス",
+              "スキンケア、メイク",
+              "スタイリッシュ、ブランド加点"
+            ],
+            [
+              "フードボックス",
+              "ベーカリー、スナック、テイクアウト",
+              "食品グレード素材、安全衛生"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "よくある質問"
+        },
+        {
+          "tag": "faq",
+          "qas": [
+            {
+              "q": "パッケージボックスの最小注文数量は？",
+              "a": "標準ギフトボックスは 100 個から。"
+            },
+            {
+              "q": "デザインサービスはありますか？",
+              "a": "はい。HK$800/デザインから、2 回修正と 3D モックアップを含む。"
+            },
+            {
+              "q": "エコ素材は本当にエコですか？",
+              "a": "FSC 認証紙ボード + 大豆インキは EU エコ基準適合。"
+            },
+            {
+              "q": "特注形状は作れますか？",
+              "a": "はい。特注トムソン抜き対応、型代が発生します。"
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "body": "自社商品に完璧なパッケージを。今すぐ <a href=\"https://wa.me/8618126380255\" target=\"_blank\">WhatsApp で智印雲に連絡</a> 無料デザイン提案！"
+        }
+      ]
+    }
+  }
+]

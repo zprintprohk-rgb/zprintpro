@@ -1,0 +1,406 @@
+[
+  {
+    "slug": "business-card-design",
+    "intro": {
+      "zh-hk": "名片是商業交往中的第一印象。一張設計精良的名片不僅能傳遞聯繫方式，更能展現品牌專業度。本文將從留白、字體、色彩、材質、信息層級、雙面設計、二維碼應用、印刷規範等 10 個維度，為您系統拆解名片設計的黃金法則。",
+      "en": "A business card is your first impression in business interactions. A well-designed card conveys contact information while expressing your brand's professionalism. This guide breaks down 10 golden rules for business card design, covering white space, typography, color, materials, information hierarchy, double-sided design, QR code, and print specifications.",
+      "ja": "名刺はビジネス交流における第一印象です。精巧にデザインされた名刺は、連絡先の伝達だけでなく、ブランドの専門性を表現します。本記事では余白、タイポグラフィー、カラー、素材、情報階層、両面デザイン、QR コード、印刷仕様など 10 の側面から、名刺デザインの黄金法則を体系的に解説します。"
+    },
+    "zh-hk": {
+      "sections": [
+        {
+          "tag": "h3",
+          "body": "法則 1：留白是設計的靈魂"
+        },
+        {
+          "tag": "p",
+          "body": "不要試圖在名片上塞入所有信息。適當的留白能讓重點內容更加突出，給人簡潔專業的印象。建議信息區域佔用不超過名片面積的 60%。"
+        },
+        {
+          "tag": "h3",
+          "body": "法則 2：字體選擇與層級"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>字體種類</strong>：最多兩種字體，一種用於姓名 / 標題，一種用於聯繫信息",
+            "<strong>中英文混排</strong>：中文字體可選思源黑體、方正大黑；英文可選 Helvetica、Montserrat",
+            "<strong>字號對比</strong>：姓名 12pt、職位 9pt、公司 8pt、信息 7pt 形成清晰層級",
+            "<strong>字重使用</strong>：Bold 用於姓名 / 公司名，Regular 用於聯繫方式"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "法則 3：色彩心理學與品牌個性"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "色彩",
+            "心理暗示",
+            "適合行業"
+          ],
+          "rows": [
+            [
+              "藍色",
+              "專業、可信、穩重",
+              "金融、科技、B2B"
+            ],
+            [
+              "紅色",
+              "熱情、活力、醒目",
+              "銷售、餐飲、活動"
+            ],
+            [
+              "黑色",
+              "奢華、高端、簡約",
+              "奢侈品、設計師事務所"
+            ],
+            [
+              "綠色",
+              "環保、健康、自然",
+              "醫療、有機、ESG 品牌"
+            ],
+            [
+              "金色",
+              "尊貴、財富、傳統",
+              "地產、私人銀行、律師"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "法則 4：材質選擇與觸感設計"
+        },
+        {
+          "tag": "ol",
+          "items": [
+            "<strong>300g 銅版紙</strong>：經濟實惠，適合大量派發、銷售團隊、活動攤位",
+            "<strong>400g 厚身名片</strong>：厚實手感，彰顯尊貴品質，適合高管、律師、設計師",
+            "<strong>特種紙</strong>：萊妮紋、剛古紙、棉絮紙，獨特觸感，適合設計師、藝術家",
+            "<strong>再生紙</strong>：FSC 認證，環保理念，適合 ESG 企業"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "法則 5：雙面設計與二維碼應用"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>正面</strong>：姓名、職位、公司 Logo、聯繫方式 — 重點信息",
+            "<strong>背面</strong>：品牌宣言、產品服務 QR Code、地圖、英文翻譯 — 輔助信息",
+            "<strong>二維碼</strong>：加 WhatsApp / IG 二維碼，一掃即加，提升轉化率",
+            "<strong>圓角設計</strong>：R3-R5 圓角處理，設計感更強，避免邊角磨損"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "法則 6：印刷文件規範與常見錯誤"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>出血位不足</strong>：成品 90×54mm，設計 96×60mm（3mm 出血）",
+            "<strong>色彩模式錯誤</strong>：必須 CMYK，RGB 直接印刷會偏色",
+            "<strong>分辨率不足</strong>：圖片至少 300dpi，低分辨率印刷模糊",
+            "<strong>字體未轉曲線</strong>：AI / PDF 必須將文字轉外框"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "常見問題"
+        },
+        {
+          "tag": "faq",
+          "qas": [
+            {
+              "q": "名片最少可以印幾多張？",
+              "a": "100 張起訂。即香港行內，100 張係標準起訂量。"
+            },
+            {
+              "q": "即日名片真係當日可取嗎？",
+              "a": "上午 11 點前確認稿件，300g 銅版紙可當日取貨。特殊工藝加 1-2 個工作天。"
+            },
+            {
+              "q": "雙面名片會唔會透底？",
+              "a": "300g 或以上紙張一般不會透底。如有大面積深色，建議 400g 或加印白色打底。"
+            },
+            {
+              "q": "需要提供什麼格式的設計文件？",
+              "a": "AI / PDF（轉曲線）優先，CMYK，300dpi，含 3mm 出血。"
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "body": "準備好升級您的名片了嗎？立即 <a href=\"https://wa.me/8618126380255\" target=\"_blank\">WhatsApp 聯絡智印雲</a> 獲取設計建議和報價！"
+        }
+      ]
+    },
+    "en": {
+      "sections": [
+        {
+          "tag": "h3",
+          "body": "Rule 1: White Space Is the Soul of Design"
+        },
+        {
+          "tag": "p",
+          "body": "Don't try to fit everything onto one card. Proper white space makes important content stand out and conveys a clean, professional feel. Keep information area to under 60% of total card surface."
+        },
+        {
+          "tag": "h3",
+          "body": "Rule 2: Typography Selection & Hierarchy"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>Font Count</strong>: Maximum two — one for name/title, one for contact info",
+            "<strong>Bilingual Layout</strong>: Pair Noto Sans / Source Han Sans with Helvetica / Montserrat for clean CJK + Latin pairing",
+            "<strong>Size Hierarchy</strong>: Name 12pt, Title 9pt, Company 8pt, Contact 7pt",
+            "<strong>Weight</strong>: Bold for name and company; Regular for contact info"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "Rule 3: Color Psychology & Brand Personality"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "Color",
+            "Psychology",
+            "Best For"
+          ],
+          "rows": [
+            [
+              "Blue",
+              "Professional, trustworthy, stable",
+              "Finance, tech, B2B"
+            ],
+            [
+              "Red",
+              "Passionate, energetic, attention-grabbing",
+              "Sales, F&B, events"
+            ],
+            [
+              "Black",
+              "Luxurious, premium, minimalist",
+              "Luxury, design studios"
+            ],
+            [
+              "Green",
+              "Eco, healthy, natural",
+              "Healthcare, organic, ESG brands"
+            ],
+            [
+              "Gold",
+              "Premium, wealth, traditional",
+              "Real estate, private banking, law"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "Rule 4: Material Selection & Tactile Design"
+        },
+        {
+          "tag": "ol",
+          "items": [
+            "<strong>300g Art Paper</strong>: Economical, suitable for mass distribution",
+            "<strong>400g Thick Card</strong>: Substantial feel, conveys premium quality",
+            "<strong>Specialty Paper</strong>: Linen, cotton, textured — unique tactile experience",
+            "<strong>Recycled Paper</strong>: FSC certified, eco-conscious"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "Rule 5: Double-Sided Design & QR Code Usage"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>Front</strong>: Name, title, logo, primary contact — essential info",
+            "<strong>Back</strong>: Brand statement, product QR code, map, English translation — secondary",
+            "<strong>QR Code</strong>: Add WhatsApp / IG QR for one-scan connect, boost conversion",
+            "<strong>Rounded Corners</strong>: R3-R5 rounded corner treatment — designed, avoids wear"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "Rule 6: Print File Specifications & Common Mistakes"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>Insufficient Bleed</strong>: Final size 90×54mm, design at 96×60mm (3mm bleed)",
+            "<strong>Wrong Color Mode</strong>: Must be CMYK — RGB prints dull",
+            "<strong>Low Resolution</strong>: Minimum 300dpi for images",
+            "<strong>Unconverted Fonts</strong>: Convert text to outlines in AI/PDF"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "Frequently Asked Questions"
+        },
+        {
+          "tag": "faq",
+          "qas": [
+            {
+              "q": "What is the minimum order quantity?",
+              "a": "100 pieces — the industry standard minimum."
+            },
+            {
+              "q": "Can I get same-day business cards?",
+              "a": "Artwork confirmed before 11am yields same-day pickup for 300g art paper. Specialty finishes add 1-2 working days."
+            },
+            {
+              "q": "Will double-sided cards show through?",
+              "a": "At 300g+ paper, generally no. For heavy dark coverage, choose 400g or print white underlay."
+            },
+            {
+              "q": "What file format should I provide?",
+              "a": "AI / PDF (outlined fonts) preferred, CMYK, 300dpi, with 3mm bleed."
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "body": "Ready to upgrade your business cards? Contact <a href=\"https://wa.me/8618126380255\" target=\"_blank\">ZprintPro via WhatsApp</a> for design advice and a quote!"
+        }
+      ]
+    },
+    "ja": {
+      "sections": [
+        {
+          "tag": "h3",
+          "body": "法則 1：余白はデザインの魂"
+        },
+        {
+          "tag": "p",
+          "body": "名刺にあらゆる情報を詰め込まないでください。適切な余白は重要内容を際立たせ、クリーンでプロフェッショナルな印象を与えます。情報面積は名刺面積の 60% 未満に抑えましょう。"
+        },
+        {
+          "tag": "h3",
+          "body": "法則 2：フォント選択と階層"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>フォント数</strong>：最大 2 種類。1 つは氏名 / 役職、もう 1 つは連絡先情報",
+            "<strong>日中英混植</strong>：Noto Sans CJK / Source Han Sans と Helvetica / Montserrat の組み合わせが定番",
+            "<strong>サイズ階層</strong>：氏名 12pt、役職 9pt、会社名 8pt、連絡先 7pt",
+            "<strong>ウェイト</strong>：氏名・会社名は Bold、連絡先は Regular"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "法則 3：色彩心理学とブランド個性"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "カラー",
+            "心理効果",
+            "適用業界"
+          ],
+          "rows": [
+            [
+              "青",
+              "専門、信頼、安定",
+              "金融、テクノロジー、B2B"
+            ],
+            [
+              "赤",
+              "情熱、活力、醒目",
+              "セールス、飲餐饮、催事"
+            ],
+            [
+              "黒",
+              "ラグジュアリー、高級、ミニマル",
+              "ラグジュアリーデザイン事務所"
+            ],
+            [
+              "緑",
+              "エコ、健康、自然",
+              "医療、オーガニック、ESG"
+            ],
+            [
+              "金",
+              "高級、富、伝統",
+              "不動産、プライベートバンキング、法律事務所"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "法則 4：素材選択と触感デザイン"
+        },
+        {
+          "tag": "ol",
+          "items": [
+            "<strong>300g アート紙</strong>：経済的、大量配布向き",
+            "<strong>400g 厚口</strong>：重厚感、高級品質を伝える",
+            "<strong>特殊紙</strong>：リネン、コットン、テクスチャー紙 — 独特な触感",
+            "<strong>再生紙</strong>：FSC 認証、エコ意識"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "法則 5：両面デザインと QR コード活用"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>表面</strong>：氏名、役職、ロゴ、主要連絡先 — 必須情報",
+            "<strong>裏面</strong>：ブランドスローガン、製品 QR、地図、英語表記 — 補助情報",
+            "<strong>QR コード</strong>：WhatsApp / IG QR を追加、スキャンで友だち追加、コンバージョン向上",
+            "<strong>角丸加工</strong>：R3-R5 角丸処理、デザイン性向上、角の磨耗防止"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "法則 6：印刷ファイル仕様とよくあるミス"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>ブリード不足</strong>：仕上がり 90×54mm、デザイン 96×60mm（3mm ブリード）",
+            "<strong>カラーモード誤り</strong>：CMYK 必須、RGB 印刷は色がくすむ",
+            "<strong>解像度不足</strong>：画像は最低 300dpi",
+            "<strong>フォント未変換</strong>：AI / PDF で必ず文字をアウトライン化"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "よくある質問"
+        },
+        {
+          "tag": "faq",
+          "qas": [
+            {
+              "q": "最小注文数量は？",
+              "a": "100 枚から。業界の標準最小です。"
+            },
+            {
+              "q": "即日名刺は本当に当日受け取れますか？",
+              "a": "11時までにデータ確定で当日受け取り可能（300gアート紙）。特殊加工は 1-2 営業日追加。"
+            },
+            {
+              "q": "両面名刺は透けますか？",
+              "a": "300g 以上なら通常は透けません。濃い色を広範囲に使う場合は 400g または白下刷り。"
+            },
+            {
+              "q": "必要なファイル形式は？",
+              "a": "AI / PDF（テキストはアウトライン化）、CMYK、300dpi、3mm ブリード付き。"
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "body": "名刺をアップグレードしませんか？今すぐ <a href=\"https://wa.me/8618126380255\" target=\"_blank\">WhatsApp で智印雲に連絡</a> デザインアドバイス＆見積もり！"
+        }
+      ]
+    }
+  }
+]

@@ -59,298 +59,219 @@ const posts: Record<string, Record<string, { title: string; description: string;
       title: '智印雲印刷公司簡介：專業設備與一站式印刷服務',
       description: '智印雲擁有海德堡6+1印刷機、HP數碼印刷機、馬天尼膠裝線等先進設備，提供從設計到印刷到後加工的一站式服務，服務香港及大灣區客戶超過15年。',
       date: '2024-06-01', category: '公司新聞',
-      content: `<p>智印雲（ZprintPro）是一家專業的綜合性印刷服務企業，深耕香港及大灣區市場超過15年。我們致力於為企業客戶提供從設計、印刷到後加工的一站式解決方案，涵蓋商務印刷、包裝印刷、出版印刷及數碼印刷等多個領域。</p>
+      content: `<p>智印雲（ZprintPro）是一家紮根深圳、服務全球的綜合性印刷企業，超過15年深耕印刷產業。本文將帶您深入了解智印雲的企業概況、核心設備、後加工能力、品質承諾、跨境服務與聯繫方式。</p>
+<p>智印雲於深圳龍崗區設有 8,000+ 平方米現代化廠房，毗鄰香港物流樞紐，可高效服務香港本地、大灣區及全球客戶。團隊規模 200+ 人，年產能達數億印張，服務範疇橫跨商務印刷、包裝印刷、出版印刷與數碼快印四大業務線。</p>
 <h3>一、企業概況</h3>
-<p>智印雲總部位於深圳，毗鄰香港，擁有現代化標準廠房逾8,000平方米。公司配備了國際領先的印刷及後加工設備，年產能達到數億印張。我們的客戶遍及金融、地產、零售、教育、醫療等多個行業，為眾多知名企業提供長期穩定的印刷服務。</p>
-<div class="grid grid-cols-2 md:grid-cols-4 gap-4 my-6">
-  <div class="bg-gray-50 rounded-xl p-4 text-center">
-    <p class="text-2xl font-bold text-[#F87314]">8,000+</p>
-    <p class="text-sm text-gray-500 mt-1">平方米廠房面積</p>
-  </div>
-  <div class="bg-gray-50 rounded-xl p-4 text-center">
-    <p class="text-2xl font-bold text-[#F87314]">200+</p>
-    <p class="text-sm text-gray-500 mt-1">專業員工</p>
-  </div>
-  <div class="bg-gray-50 rounded-xl p-4 text-center">
-    <p class="text-2xl font-bold text-[#F87314]">50+</p>
-    <p class="text-sm text-gray-500 mt-1">台先進設備</p>
-  </div>
-  <div class="bg-gray-50 rounded-xl p-4 text-center">
-    <p class="text-2xl font-bold text-[#F87314]">15+</p>
-    <p class="text-sm text-gray-500 mt-1">年行業經驗</p>
-  </div>
-</div>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">指標</th><th class="border p-2 text-left">規模</th></tr></thead><tbody><tr><td class="border p-2">8,000+</td><td class="border p-2">平方米廠房</td></tr><tr><td class="border p-2">200+</td><td class="border p-2">專業員工</td></tr><tr><td class="border p-2">50+</td><td class="border p-2">台先進設備</td></tr><tr><td class="border p-2">15+</td><td class="border p-2">年行業經驗</td></tr></tbody></table>
 <h3>二、核心印刷設備</h3>
-<p>工欲善其事，必先利其器。智印雲始終堅持以最先進的設備保障出品質量，主要印刷設備包括：</p>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
-  <div class="rounded-xl overflow-hidden border border-gray-100">
-    <img loading="lazy" decoding="async" width="400" height="300" src="/images/factory/factory-heidelberg-6plus1.jpg" alt="海德堡全新6+1印刷機" class="w-full aspect-[4/3] object-cover"/>
-    <div class="p-3">
-      <p class="font-semibold text-sm text-[#333333]">海德堡全新6+1印刷機</p>
-      <p class="text-xs text-gray-500 mt-1">高精度色彩還原，適合高端商務印刷</p>
-    </div>
-  </div>
-  <div class="rounded-xl overflow-hidden border border-gray-100">
-    <img loading="lazy" decoding="async" width="400" height="300" src="/images/factory/factory-hp-digital.png" alt="HP數碼印刷機" class="w-full aspect-[4/3] object-cover"/>
-    <div class="p-3">
-      <p class="font-semibold text-sm text-[#333333]">HP數碼印刷機</p>
-      <p class="text-xs text-gray-500 mt-1">支持可變數據印刷，短版快印首選</p>
-    </div>
-  </div>
-  <div class="rounded-xl overflow-hidden border border-gray-100">
-    <img loading="lazy" decoding="async" width="400" height="300" src="/images/factory/factory-weigang-uv.jpg" alt="煒岡6色UV輪轉機" class="w-full aspect-[4/3] object-cover"/>
-    <div class="p-3">
-      <p class="font-semibold text-sm text-[#333333]">煒岡6色UV輪轉機</p>
-      <p class="text-xs text-gray-500 mt-1">UV固化技術，即印即乾，效率極高</p>
-    </div>
-  </div>
-  <div class="rounded-xl overflow-hidden border border-gray-100">
-    <img loading="lazy" decoding="async" width="400" height="300" src="/images/factory/factory-color-chart.jpg" alt="印刷機長色卡校對" class="w-full aspect-[4/3] object-cover"/>
-    <div class="p-3">
-      <p class="font-semibold text-sm text-[#333333]">專業色彩管理</p>
-      <p class="text-xs text-gray-500 mt-1">機長級色彩校對，確保批次一致性</p>
-    </div>
-  </div>
-</div>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>海德堡全新 6+1 印刷機</strong>：德國原裝高精度設備，色彩還原度極高，適合高端商務印刷</li><li><strong>HP Indigo 數碼印刷機</strong>：支持可變數據印刷、短版快印、樣書製作</li><li><strong>煒岡 6 色 UV 輪轉機</strong>：UV 固化技術即印即乾，支援不規則材質與特殊工藝</li><li><strong>專業色彩管理系統</strong>：機長級色彩校對，確保批次一致性</li></ul>
 <h3>三、後加工設備</h3>
-<p>除了強大的印刷能力，智印雲還配備了完善的後加工生產線，滿足客戶多樣化的工藝需求：</p>
-<ul class="list-disc pl-5 my-3 space-y-1">
-<li><strong>馬天尼膠裝線</strong>：全自動膠裝，適合書刊、畫冊的大量生產</li>
-<li><strong>海德堡折頁機群</strong>：多台聯動，支持多種折頁方式</li>
-<li><strong>全自動糊盒機</strong>：高效完成包裝盒的糊盒工序</li>
-<li><strong>模切、燙金、UV</strong>：多種表面處理工藝一站式完成</li>
-</ul>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6">
-  <div class="rounded-xl overflow-hidden border border-gray-100">
-    <img loading="lazy" decoding="async" width="400" height="300" src="/images/factory/factory-martini-1.jpg" alt="馬天尼膠裝車間" class="w-full aspect-[4/3] object-cover"/>
-    <div class="p-3">
-      <p class="font-semibold text-sm text-[#333333]">馬天尼膠裝車間</p>
-    </div>
-  </div>
-  <div class="rounded-xl overflow-hidden border border-gray-100">
-    <img loading="lazy" decoding="async" width="400" height="300" src="/images/factory/factory-heidelberg-folding.jpg" alt="海德堡折頁機群" class="w-full aspect-[4/3] object-cover"/>
-    <div class="p-3">
-      <p class="font-semibold text-sm text-[#333333]">海德堡折頁機群</p>
-    </div>
-  </div>
-  <div class="rounded-xl overflow-hidden border border-gray-100">
-    <img loading="lazy" decoding="async" width="400" height="300" src="/images/factory/factory-gluing.jpg" alt="糊盒機車間" class="w-full aspect-[4/3] object-cover"/>
-    <div class="p-3">
-      <p class="font-semibold text-sm text-[#333333]">全自動糊盒機車間</p>
-    </div>
-  </div>
-  <div class="rounded-xl overflow-hidden border border-gray-100">
-    <img loading="lazy" decoding="async" width="400" height="300" src="/images/factory/factory-manual.jpg" alt="手工工藝車間" class="w-full aspect-[4/3] object-cover"/>
-    <div class="p-3">
-      <p class="font-semibold text-sm text-[#333333]">手工精裝工藝車間</p>
-    </div>
-  </div>
-</div>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>馬天尼膠裝線</strong>：全自動膠裝，適合書刊、畫冊大批量生產</li><li><strong>海德堡折頁機群</strong>：多台聯動支援多種折頁方式</li><li><strong>全自動糊盒機</strong>：高效完成包裝盒的糊盒工序</li><li><strong>模切 / 燙金 / UV / 擊凸</strong>：多種表面處理工藝一站完成</li></ul>
 <h3>四、品質與服務承諾</h3>
-<p>智印雲始終堅持「品質第一、客戶至上」的經營理念：</p>
-<ul class="list-disc pl-5 my-3 space-y-1">
-<li>全線採用環保油墨及紙張，通過ISO9001質量管理體系認證</li>
-<li>專業跟單團隊一對一服務，從報價到交貨全程跟進</li>
-<li>香港地區滿HK$500免運費，支持送貨上門</li>
-<li>急件支持24小時內交貨，滿足緊急商務需求</li>
-</ul>
-<h3>五、聯繫我們</h3>
-<p>無論您是需要名片、傳單、畫冊，還是禮品盒、紙袋、標籤貼紙，智印雲都能為您提供專業的印刷解決方案。歡迎蒞臨參觀我們的工廠，或通過以下方式聯繫：</p>
-<div class="bg-gray-50 rounded-xl p-5 my-4 space-y-2">
-<p><strong>WhatsApp：</strong><a href="https://wa.me/8618126380255" target="_blank">+86 181 2638 0255</a>（唐先生）</p>
-<p><strong>服務時間：</strong>週一至週六 09:00 - 21:00（香港時間同步）</p>
-<p><strong>工廠地址：</strong>深圳市龍崗區平湖街道（毗鄰香港，物流便捷）</p>
-</div>`,
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>品質第一</strong>：全線採用環保油墨及紙張，通過 ISO 9001 質量管理體系認證</li><li><strong>極速交貨</strong>：香港急件可 24 小時內完成，常規單 3-5 個工作天</li><li><strong>專業跟單</strong>：一對一跟單團隊，由報價到交貨全程跟進</li><li><strong>透明收費</strong>：無隱藏費用，報價即最終價格</li><li><strong>跨境支援</strong>：熟悉跨境電商包裝需求，提供 DDP/DDU 物流建議</li></ol>
+<h3>五、跨境服務與海外市場</h3>
+<p>除香港本地外，智印雲服務覆蓋日本、東南亞、歐美及大洋洲。對於跨境訂單，我們熟悉各國海關申報要求與包裝檢疫標準，可協助客戶優化包裝設計以通過當地法規。</p>
+<h3>六、聯繫智印雲</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：智印雲可以製作多少數量?</strong><br/>A：100 張起即接，急件支持 1 張加急。</p><p><strong>Q：最快交貨時間?</strong><br/>A：上午 11 點前確認稿件可即日取貨（300g 銅版紙名片）。</p><p><strong>Q：提供跨境物流嗎?</strong><br/>A：提供 DHL / FedEx / SF International，到歐美 5-7 天。</p><p><strong>Q：可以提供設計服務嗎?</strong><br/>A：提供，HK$500/款起，含 2 輪修改。</p></div>
+<p>立即 <a href="https://wa.me/8618126380255" target="_blank">WhatsApp 聯絡智印雲</a> 獲取免費報價與專業建議！</p>`,
     },
     'sticker-guide': {
       title: '香港貼紙印刷完全指南：材質、工藝與應用場景详解',
       description: '深入了解香港貼紙印刷的各種材質選擇、表面處理工藝以及不同場景的應用建議。智印雲專家為您詳解防水貼紙、透明貼紙、燙金貼紙等熱門選項。',
       date: '2024-04-15', category: '貼紙知識',
-      content: `<p>貼紙是品牌宣傳和產品包裝中不可或缺的元素。無論是產品標籤、促銷宣傳還是個性化裝飾，選擇合適的貼紙材質和工藝都能大幅提升品牌形象。本文將為您詳細介紹香港貼紙印刷的各種選擇。</p>
+      content: `<p>貼紙是品牌宣傳和產品包裝中不可或缺的元素。無論是產品標籤、促銷宣傳還是個性化裝飾，選擇合適的貼紙材質與工藝都能大幅提升品牌形象。本文將為您系統拆解貼紙的材質、表面處理工藝、選擇決策框架、模切形狀、應用場景與常見問題。</p>
 <h3>一、常見貼紙材質對比</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">材質</th><th class="border p-2 text-left">特性</th><th class="border p-2 text-left">適用場景</th></tr></thead><tbody>
-<tr><td class="border p-2">銅版紙貼紙</td><td class="border p-2">成本低、色彩鮮豔</td><td class="border p-2">促銷標籤、臨時貼紙</td></tr>
-<tr><td class="border p-2">防水合成紙</td><td class="border p-2">防水防油、耐用</td><td class="border p-2">食品標籤、戶外使用</td></tr>
-<tr><td class="border p-2">透明PET</td><td class="border p-2">高透明、質感佳</td><td class="border p-2">玻璃瓶、高檔包裝</td></tr>
-<tr><td class="border p-2">雷射/全息貼紙</td><td class="border p-2">防偽、視覺效果好</td><td class="border p-2">防偽標籤、證書</td></tr>
-</tbody></table>
-<h3>二、表面處理工藝</h3>
-<p>貼紙的表面處理直接影響觸感和視覺效果：</p>
-<ul class="list-disc pl-5 my-3 space-y-1">
-<li><strong>光膠（Glossy Lamination）</strong>：表面光滑反光，色彩飽和度高，適合鮮豔設計</li>
-<li><strong>啞膠（Matte Lamination）</strong>：質感柔和不反光，給人高檔沉穩的感覺</li>
-<li><strong>燙金（Foil Stamping）</strong>：金屬光澤效果，提升品牌奢華感</li>
-<li><strong>UV局部上光</strong>：突出重點圖案，增加層次感</li>
-</ul>
+<p>不同材質直接影響耐用度、印刷效果與成本：</p>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">材質</th><th class="border p-2 text-left">特性</th><th class="border p-2 text-left">適合場景</th><th class="border p-2 text-left">參考價格</th></tr></thead><tbody><tr><td class="border p-2">銅版紙貼紙</td><td class="border p-2">成本低、色彩鮮豔</td><td class="border p-2">促銷標籤、臨時貼紙</td><td class="border p-2">HK$0.5-1.5/張</td></tr><tr><td class="border p-2">防水合成紙</td><td class="border p-2">防水防油、耐用</td><td class="border p-2">食品標籤、戶外使用</td><td class="border p-2">HK$1.2-3/張</td></tr><tr><td class="border p-2">透明 PET</td><td class="border p-2">高透明、質感佳</td><td class="border p-2">玻璃瓶、高檔包裝</td><td class="border p-2">HK$2-5/張</td></tr><tr><td class="border p-2">雷射 / 全息貼紙</td><td class="border p-2">防偽、視覺效果好</td><td class="border p-2">防偽標籤、證書</td><td class="border p-2">HK$3-8/張</td></tr><tr><td class="border p-2">牛皮紙貼紙</td><td class="border p-2">環保、復古</td><td class="border p-2">手工品牌、有機食品</td><td class="border p-2">HK$1.5-4/張</td></tr></tbody></table>
+<h3>二、表面處理工藝選擇</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>光膠（Glossy Lamination）</strong>：表面光滑反光，色彩飽和度高</li><li><strong>啞膠（Matte Lamination）</strong>：質感柔和不反光，給人高檔沉穩的感覺</li><li><strong>燙金（Foil Stamping）</strong>：金、銀、玫瑰金等金屬光澤效果，提升奢華質感</li><li><strong>UV 局部上光</strong>：突出重點圖案，增加層次感</li><li><strong>壓凸 / 壓凹</strong>：無油墨的立體觸感，極簡設計首選</li></ul>
 <h3>三、如何選擇適合的貼紙</h3>
-<p>選擇貼紙時需要考慮以下因素：</p>
-<ol class="list-decimal pl-5 my-3 space-y-1">
-<li><strong>使用環境</strong>：室內還是戶外？是否接觸水油？</li>
-<li><strong>貼附表面</strong>：紙張、塑膠、金屬還是玻璃？</li>
-<li><strong>使用期限</strong>：臨時使用還是長期標籤？</li>
-<li><strong>預算範圍</strong>：不同材質價格差異較大</li>
-</ol>
-<h3>四、智印雲貼紙印刷服務</h3>
-<p>智印雲提供全面的<a href="/product/waterproof-stickers/">防水貼紙印刷</a>服務，採用高品質合成紙材質，具有出色的防水防油性能，非常適合食品包裝、化妝品標籤等場景。我們的<a href="/product/transparent-stickers/">透明貼紙</a>採用PET材質，貼合後呈現無感效果，完美展現產品本身。</p>
-<p>對於追求獨特效果的客戶，我們的<a href="/product/die-cut-stickers/">異形模切貼紙</a>可以製作出任意形狀，讓您的品牌設計不受限制。而<a href="/product/foil-stickers/">燙金貼紙</a>則能為產品增添奢華質感，特別適合高端禮品和限量版產品。</p>
-<h3>五、常見問題</h3>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3">
-<p><strong>Q: 貼紙印刷的最小訂購量是多少？</strong><br/>A: 一般為100張起訂，部分特殊工藝需500張起。</p>
-<p><strong>Q: 防水貼紙真的可以泡水嗎？</strong><br/>A: 是的，我們的防水貼紙採用合成紙+防水膠水，可承受短時間浸泡。</p>
-<p><strong>Q: 貼紙的交貨時間多久？</strong><br/>A: 標準3-5個工作日，急件可安排即日交貨。</p>
-</div>
-<p>無論您需要哪種貼紙，智印雲都能為您提供專業建議和優質服務。立即<a href="https://wa.me/8618126380255" target="_blank">WhatsApp 聯繫我們</a>獲取免費報價！</p>`,
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>使用環境</strong>：室內 vs 戶外？是否接觸水油？冷藏？</li><li><strong>貼附表面</strong>：紙張、塑膠、金屬、玻璃、曲面？</li><li><strong>使用期限</strong>：臨時活動（3 個月）vs 長期標籤（1-3 年）？</li><li><strong>預算範圍</strong>：銅版紙最經濟，特殊材質 + 特殊工藝投入較高</li><li><strong>設計複雜度</strong>：簡單色塊 vs 多色漸層，影響印刷工藝選擇</li></ol>
+<h3>四、模切形狀與尺寸設計</h3>
+<p>貼紙的形狀直接影響視覺衝擊力與辨識度：</p>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>圓形 / 橢圓</strong>：經典、百搭，適合品牌 Logo</li><li><strong>方形 / 矩形</strong>：信息密集，適合條碼、產品標籤</li><li><strong>異形模切（Die-cut）</strong>：完全按形狀剪裁，視覺最強但成本高</li><li><strong>吻切（Kiss-cut）</strong>：背紙保留整體形狀，便於撕取與分發</li></ul>
+<h3>五、貼紙印刷的實際應用場景</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>食品包裝標籤</strong>：成分表、營養標示、有效日期</li><li><strong>化妝品瓶身貼</strong>：高檔品牌標識，使用透明 PET + 燙金</li><li><strong>產品促銷貼</strong>：限量編號、活動標識，使用銅版紙 + 光膠</li><li><strong>物流標籤</strong>：快遞面單、二維碼，使用防水合成紙</li><li><strong>個性化裝飾貼</strong>：手帳貼、兒童貼紙書，多色印刷 + 異形模切</li></ul>
+<h3>六、常見問題</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：貼紙印刷的最小訂購量是多少？</strong><br/>A：一般為 100 張起訂，部分特殊工藝需 500 張起。</p><p><strong>Q：防水貼紙真的可以泡水嗎？</strong><br/>A：是的，採用合成紙 + 防水膠水，可承受短時間浸泡與反覆水洗。</p><p><strong>Q：貼紙的交貨時間多久？</strong><br/>A：標準 3-5 個工作日，急件可安排即日交貨。</p><p><strong>Q：需要提供什麼格式的設計文件？</strong><br/>A：建議提供 AI / PDF / EPS 矢量檔，分辨率 300dpi，CMYK 色彩模式。</p></div>
+<p>無論您需要哪種貼紙，立即 <a href="https://wa.me/8618126380255" target="_blank">WhatsApp 聯絡智印雲</a> 獲取免費報價與專業建議！</p>`,
     },
     'business-card-design': {
       title: '名片設計的10個黃金法則：打造令人難忘的專業形象',
       description: '從排版到色彩搭配，掌握名片設計的核心技巧。智印雲設計專家分享10個黃金法則，助您打造令人印象深刻的專業名片。',
       date: '2024-04-10', category: '名片知識',
-      content: `<p>名片是商業交往中的第一印象。一張設計精良的名片不僅能傳遞聯繫方式，更能展現品牌專業度和個人品味。以下是智印雲設計團隊總結的10個名片設計黃金法則。</p>
-<h3>法則1：留白是設計的靈魂</h3>
-<p>不要試圖在名片上塞入所有信息。適當的留白能讓重點內容更加突出，給人簡潔專業的印象。建議信息區域佔用不超過名片面積的60%。</p>
-<h3>法則2：字體不超過兩種</h3>
-<p>名片上最多使用兩種字體：一種用於標題/姓名（如襯線體或粗體無襯線體），一種用於正文信息。過多字體會顯得雜亂無章。</p>
-<h3>法則3：色彩傳遞品牌個性</h3>
-<p>色彩心理學在名片設計中非常重要：</p>
-<ul class="list-disc pl-5 my-3 space-y-1">
-<li>藍色：專業、可信、穩重（適合金融、科技）</li>
-<li>紅色：熱情、活力、醒目（適合銷售、餐飲）</li>
-<li>黑色：奢華、高端、簡約（適合奢侈品、設計）</li>
-<li>綠色：環保、健康、自然（適合醫療、環保）</li>
-</ul>
-<h3>法則4：材質決定觸感</h3>
-<p>智印雲提供多種<a href="/product/premium-business-cards/">高級商務名片</a>材質選擇：</p>
-<ul class="list-disc pl-5 my-3 space-y-1">
-<li>300g銅版紙：經濟實惠，適合大量派發</li>
-<li><a href="/product/thick-business-cards-400g/">400g厚身名片</a>：厚實手感，彰顯尊貴品質</li>
-<li><a href="/product/foil-business-cards/">燙金名片</a>：高檔質感，奢華體驗</li>
-<li><a href="/product/spot-uv-business-cards/">局部UV名片</a>：立體效果，視覺層次豐富</li>
-</ul>
-<h3>法則5：信息層級分明</h3>
-<p>名片信息應按重要性排列：姓名 > 職位 > 公司名 > 聯繫方式。使用字號大小和粗細來區分層級。</p>
-<h3>法則6：雙面設計的妙用</h3>
-<p><a href="/product/double-sided-cards/">雙面名片</a>可以將聯繫信息放在正面，品牌宣言或產品服務放在背面，充分利用空間。</p>
-<h3>法則7：二維碼的現代化</h3>
-<p>在名片上添加個人微信/WhatsApp二維碼，讓對方一掃即可添加聯繫，提升轉化率。</p>
-<h3>法則8：圓角的柔和感</h3>
-<p><a href="/product/rounded-corner-cards/">圓角名片</a>比直角名片更具設計感和親和力，也能避免邊角磨損。</p>
-<h3>法則9：環保理念的體現</h3>
-<p>選擇<a href="/product/eco-business-cards/">環保名片</a>使用再生紙或大豆油墨，展現企業社會責任。</p>
-<h3>法則10：與印刷廠充分溝通</h3>
-<p>設計稿交付印刷前，務必確認出血位、色彩模式（CMYK）、分辨率（300dpi）等技術細節。智印雲提供免費打樣服務，確保成品符合預期。</p>
-<h3>立即行動</h3>
-<p>準備好升級您的名片了嗎？智印雲提供<a href="/product/same-day-business-cards/">即日名片印刷</a>服務，最快當天即可取貨。立即<a href="https://wa.me/8618126380255" target="_blank">WhatsApp 聯繫唐先生</a>獲取設計建議和報價！</p>`,
+      content: `<p>名片是商業交往中的第一印象。一張設計精良的名片不僅能傳遞聯繫方式，更能展現品牌專業度。本文將從留白、字體、色彩、材質、信息層級、雙面設計、二維碼應用、印刷規範等 10 個維度，為您系統拆解名片設計的黃金法則。</p>
+<h3>法則 1：留白是設計的靈魂</h3>
+<p>不要試圖在名片上塞入所有信息。適當的留白能讓重點內容更加突出，給人簡潔專業的印象。建議信息區域佔用不超過名片面積的 60%。</p>
+<h3>法則 2：字體選擇與層級</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>字體種類</strong>：最多兩種字體，一種用於姓名 / 標題，一種用於聯繫信息</li><li><strong>中英文混排</strong>：中文字體可選思源黑體、方正大黑；英文可選 Helvetica、Montserrat</li><li><strong>字號對比</strong>：姓名 12pt、職位 9pt、公司 8pt、信息 7pt 形成清晰層級</li><li><strong>字重使用</strong>：Bold 用於姓名 / 公司名，Regular 用於聯繫方式</li></ul>
+<h3>法則 3：色彩心理學與品牌個性</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">色彩</th><th class="border p-2 text-left">心理暗示</th><th class="border p-2 text-left">適合行業</th></tr></thead><tbody><tr><td class="border p-2">藍色</td><td class="border p-2">專業、可信、穩重</td><td class="border p-2">金融、科技、B2B</td></tr><tr><td class="border p-2">紅色</td><td class="border p-2">熱情、活力、醒目</td><td class="border p-2">銷售、餐飲、活動</td></tr><tr><td class="border p-2">黑色</td><td class="border p-2">奢華、高端、簡約</td><td class="border p-2">奢侈品、設計師事務所</td></tr><tr><td class="border p-2">綠色</td><td class="border p-2">環保、健康、自然</td><td class="border p-2">醫療、有機、ESG 品牌</td></tr><tr><td class="border p-2">金色</td><td class="border p-2">尊貴、財富、傳統</td><td class="border p-2">地產、私人銀行、律師</td></tr></tbody></table>
+<h3>法則 4：材質選擇與觸感設計</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>300g 銅版紙</strong>：經濟實惠，適合大量派發、銷售團隊、活動攤位</li><li><strong>400g 厚身名片</strong>：厚實手感，彰顯尊貴品質，適合高管、律師、設計師</li><li><strong>特種紙</strong>：萊妮紋、剛古紙、棉絮紙，獨特觸感，適合設計師、藝術家</li><li><strong>再生紙</strong>：FSC 認證，環保理念，適合 ESG 企業</li></ol>
+<h3>法則 5：雙面設計與二維碼應用</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>正面</strong>：姓名、職位、公司 Logo、聯繫方式 — 重點信息</li><li><strong>背面</strong>：品牌宣言、產品服務 QR Code、地圖、英文翻譯 — 輔助信息</li><li><strong>二維碼</strong>：加 WhatsApp / IG 二維碼，一掃即加，提升轉化率</li><li><strong>圓角設計</strong>：R3-R5 圓角處理，設計感更強，避免邊角磨損</li></ul>
+<h3>法則 6：印刷文件規範與常見錯誤</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>出血位不足</strong>：成品 90×54mm，設計 96×60mm（3mm 出血）</li><li><strong>色彩模式錯誤</strong>：必須 CMYK，RGB 直接印刷會偏色</li><li><strong>分辨率不足</strong>：圖片至少 300dpi，低分辨率印刷模糊</li><li><strong>字體未轉曲線</strong>：AI / PDF 必須將文字轉外框</li></ul>
+<h3>常見問題</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：名片最少可以印幾多張？</strong><br/>A：100 張起訂。即香港行內，100 張係標準起訂量。</p><p><strong>Q：即日名片真係當日可取嗎？</strong><br/>A：上午 11 點前確認稿件，300g 銅版紙可當日取貨。特殊工藝加 1-2 個工作天。</p><p><strong>Q：雙面名片會唔會透底？</strong><br/>A：300g 或以上紙張一般不會透底。如有大面積深色，建議 400g 或加印白色打底。</p><p><strong>Q：需要提供什麼格式的設計文件？</strong><br/>A：AI / PDF（轉曲線）優先，CMYK，300dpi，含 3mm 出血。</p></div>
+<p>準備好升級您的名片了嗎？立即 <a href="https://wa.me/8618126380255" target="_blank">WhatsApp 聯絡智印雲</a> 獲取設計建議和報價！</p>`,
     },
     'packaging-trends': {
       title: '2024包裝盒設計趨勢解析：讓產品在貨架上脫穎而出',
       description: '探索2024年最新包裝盒設計趨勢，從極簡主義到環保材質。智印雲為您解析如何讓產品包裝成為品牌最佳代言人。',
       date: '2024-04-05', category: '包裝知識',
-      content: `<p>在競爭激烈的零售市場中，包裝盒不僅是產品的保護殼，更是品牌與消費者的第一接觸點。2024年的包裝設計趨勢呈現出哪些新方向？讓我們一起探討。</p>
+      content: `<p>在競爭激烈的零售市場中，包裝盒不僅是產品的保護殼，更是品牌與消費者的第一接觸點。2024-2026 年的包裝設計趨勢呈現出哪些新方向？本文將帶您系統解析極簡主義、可持續包裝、個性化定制、智能包裝、開箱體驗、選購指南 6 大維度。</p>
 <h3>趨勢一：極簡主義持續盛行</h3>
-<p>少即是多（Less is More）的設計哲學在包裝領域越發明顯。消費者更傾向於選擇簡潔、信息清晰的包裝。大面積留白、單一主色、精煉的產品名稱成為主流。</p>
+<ul class="list-disc pl-5 my-3 space-y-1"><li>大面積留白，視覺舒適</li><li>單一主色（黑白 + 品牌色）</li><li>精煉的產品名稱（字體設計感強）</li><li>無裝飾圖案，以質感取勝</li><li>代表案例：Aesop、蘋果、無印良品</li></ul>
 <h3>趨勢二：可持續包裝成為標配</h3>
-<p>環保不再是加分項，而是基本要求。可降解材料、再生紙板、植物基油墨越來越受歡迎。智印雲的<a href="/product/eco-paper-bags/">環保紙袋</a>和可回收包裝盒選項，助您實現ESG目標。</p>
-<h3>趨勢三：個性化與定制化</h3>
-<p>消費者渴望獨特的產品體驗。小批量、多款式的定制包裝成為新常態。智印雲支持<a href="/product/gift-boxes/">禮品盒定制</a>，最低100個起訂，讓中小企業也能擁有專屬包裝。</p>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">環保材質</th><th class="border p-2 text-left">特性</th><th class="border p-2 text-left">適合產品</th></tr></thead><tbody><tr><td class="border p-2">再生紙板</td><td class="border p-2">FSC 認證、可回收</td><td class="border p-2">化妝品、食品、零售</td></tr><tr><td class="border p-2">甘蔗渣紙塑</td><td class="border p-2">可堆肥、工業用</td><td class="border p-2">電子產品內襯</td></tr><tr><td class="border p-2">植物基油墨</td><td class="border p-2">大豆油墨、環保油墨</td><td class="border p-2">所有印刷品</td></tr><tr><td class="border p-2">水溶性膠水</td><td class="border p-2">可降解、無毒</td><td class="border p-2">盒身黏合</td></tr><tr><td class="border p-2">PLA 淋膜</td><td class="border p-2">可降解塑膠替代</td><td class="border p-2">食品包裝</td></tr></tbody></table>
+<h3>趨勢三：個性化與小批量定制</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li>消費者渴望獨特體驗，小批量、多款式的定制包裝成為新常態</li><li>支持 100 個起訂的禮品盒定制，解決中小企業「無法承擔大單」的痛點</li><li>客製化印刷（每盒不同姓名 / 序號）成為限量版營銷利器</li><li>可變數據印刷（Variable Data Printing）成本逐年下降</li><li>節日限定包裝（如聖誕、新年）成為品牌年度爆款策略</li></ol>
 <h3>趨勢四：智能包裝的興起</h3>
-<p>AR擴增實境、NFC芯片、溫度指示標籤等技術開始融入包裝設計。掃描包裝即可查看產品溯源、使用教程或品牌故事。</p>
-<h3>趨勢五：情感化設計</h3>
-<p>包裝設計越來越注重情感連結。開箱體驗（Unboxing Experience）成為品牌營銷的重要環節。精心設計的內襯、感謝卡、防偽貼紙都能提升消費者好感度。</p>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>AR 擴增實境</strong>：掃描包裝即可查看動畫故事、使用教程</li><li><strong>NFC 芯片</strong>：輕觸手機即可跳轉產品溯源頁面、品牌官網</li><li><strong>溫度指示標籤</strong>：對食品、藥品冷鏈監控至關重要</li><li><strong>防偽二維碼</strong>：消費者掃碼查驗真偽，提升品牌信任度</li></ul>
+<h3>趨勢五：開箱體驗的情感設計</h3>
+<p>包裝從「容器」進化為「品牌儀式」：</p>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>內襯設計</strong>：絨布、EVA、紙塑托盤，提升產品保護與觀感</li><li><strong>感謝卡</strong>：手寫感印刷，傳遞品牌溫度</li><li><strong>防偽貼紙</strong>：消費者首次拆封的紀念價值</li><li><strong>二維碼禮品</strong>：掃碼領取優惠券、加入會員</li></ul>
 <h3>熱門包裝類型推薦</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">包裝類型</th><th class="border p-2 text-left">適用產品</th><th class="border p-2 text-left">特點</th></tr></thead><tbody>
-<tr><td class="border p-2"><a href="/product/gift-boxes/">禮品盒</a></td><td class="border p-2">化妝品、首飾、電子產品</td><td class="border p-2">精美外觀，提升品牌檔次</td></tr>
-<tr><td class="border p-2"><a href="/product/mailer-boxes/">快遞盒</a></td><td class="border p-2">電商產品</td><td class="border p-2">堅固耐用，運輸安全</td></tr>
-<tr><td class="border p-2"><a href="/product/cosmetic-boxes/">化妝品盒</a></td><td class="border p-2">護膚品、彩妝</td><td class="border p-2">時尚設計，品牌加分</td></tr>
-<tr><td class="border p-2"><a href="/product/food-boxes/">食品盒</a></td><td class="border p-2">烘焙、零食</td><td class="border p-2">食品級材質，安全衛生</td></tr>
-</tbody></table>
-<p>想為您的產品打造完美的包裝盒？智印雲提供從設計到印刷的一站式<a href="/product/packaging/">包裝盒定制</a>服務。立即<a href="https://wa.me/8618126380255" target="_blank">聯繫我們</a>獲取免費設計方案！</p>`,
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">包裝類型</th><th class="border p-2 text-left">適用產品</th><th class="border p-2 text-left">特點</th></tr></thead><tbody><tr><td class="border p-2">禮品盒</td><td class="border p-2">化妝品、首飾、電子產品</td><td class="border p-2">精美外觀，提升品牌檔次</td></tr><tr><td class="border p-2">快遞盒</td><td class="border p-2">電商產品</td><td class="border p-2">堅固耐用，運輸安全</td></tr><tr><td class="border p-2">化妝品盒</td><td class="border p-2">護膚品、彩妝</td><td class="border p-2">時尚設計，品牌加分</td></tr><tr><td class="border p-2">食品盒</td><td class="border p-2">烘焙、零食、外賣</td><td class="border p-2">食品級材質，安全衛生</td></tr></tbody></table>
+<h3>常見問題</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：包裝盒最少可以訂幾多個？</strong><br/>A：100 個起訂，標準禮品盒適用。</p><p><strong>Q：有無提供設計服務？</strong><br/>A：提供，HK$800/款起，含 2 輪修改及 3D 模擬圖。</p><p><strong>Q：環保材質係咪真係環保？</strong><br/>A：FSC 認證紙板 + 大豆油墨，符合歐盟環保標準。</p><p><strong>Q：可以製作特殊形狀嗎？</strong><br/>A：可以，異形模切按客戶要求訂製，需開模費。</p></div>
+<p>想為您的產品打造完美的包裝？立即 <a href="https://wa.me/8618126380255" target="_blank">WhatsApp 聯絡智印雲</a> 獲取免費設計方案！</p>`,
     },
     'cmyk-guide': {
       title: 'CMYK vs RGB：印刷色彩模式完全詳解',
       description: '理解CMYK和RGB色彩模式的區別，確保您的設計在印刷時呈現最佳效果。智印雲印刷專家為您詳解色彩管理。',
       date: '2024-03-28', category: '印刷工藝',
-      content: `<p>色彩管理是印刷品質的關鍵。許多客戶在收到印刷成品後發現顏色與屏幕顯示不一致，這往往源於對色彩模式的理解不足。本文將詳細解析 CMYK 與 RGB 的區別。</p>
-<h3>RGB 色彩模式</h3>
-<p>RGB（紅、綠、藍）是光學色彩模式，用於屏幕顯示。三種顏色光以不同強度混合，產生各種顏色。RGB 的色域（可顯示顏色範圍）非常廣泛，能呈現鮮豔明亮的顏色。</p>
-<h3>CMYK 色彩模式</h3>
-<p>CMYK（青、品紅、黃、黑）是印刷色彩模式。這四種油墨以不同比例混合，在紙張上呈現顏色。由於油墨的物理限制，CMYK 的色域比 RGB 窄，某些鮮豔的屏幕顏色無法完全還原。</p>
-<h3>為什麼印刷前必須轉 CMYK？</h3>
-<ol class="list-decimal pl-5 my-3 space-y-1">
-<li><strong>設備限制</strong>：印刷機使用 CMYK 四色油墨，無法直接輸出 RGB</li>
-<li><strong>色彩偏差</strong>：RGB 轉 CMYK 時，鮮豔顏色會變暗</li>
-<li><strong>預期管理</strong>：提前轉換可預見最終效果，避免失望</li>
-</ol>
-<h3>智印雲色彩管理服務</h3>
-<p>智印雲採用專業色彩管理系統，確保從屏幕到印刷的色彩一致性。我們提供免費打樣服務，讓您在批量印刷前確認顏色效果。</p>
-<p>想了解更多印刷知識？<a href="https://wa.me/8618126380255" target="_blank">聯繫智印雲</a>獲取專業建議。</p>`,
+      content: `<p>CMYK vs RGB 是印刷品質控制的基礎知識。許多客戶在收到印刷成品後發現顏色與屏幕顯示不一致，這往往源於對色彩模式的理解不足。本文將從 RGB、CMYK、ICC 色域管理、Pantone 專色、ΔE 色差控制、智印雲色彩管理服務 6 個維度出發，系統拆解印刷色彩。</p>
+<h3>一、RGB 色彩模式解析</h3>
+<p>RGB 是光的色彩模式——紅、綠、藍三原色光以不同強度疊加，形成屏幕顯示的所有顏色。RGB 色域非常廣，能呈現鮮豔明亮的顏色，但無法直接用印刷油墨還原所有 RGB 顏色。</p>
+<h3>二、CMYK 色彩模式解析</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>四色油墨</strong>：青（Cyan）、品紅（Magenta）、黃（Yellow）、黑（Key/Black）</li><li><strong>減法混色</strong>：四色油墨在紙上疊加，吸收光線，呈現顏色</li><li><strong>色域較窄</strong>：因油墨物理特性，部分 RGB 鮮色無法 100% 還原</li><li><strong>K 通道作用</strong>：黑色油墨用於文字、細節、暗部</li></ul>
+<h3>三、為什麼印刷前必須轉 CMYK</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">RGB 顏色</th><th class="border p-2 text-left">印刷問題</th><th class="border p-2 text-left">解決方案</th></tr></thead><tbody><tr><td class="border p-2">RGB 鮮紅</td><td class="border p-2">無法還原</td><td class="border p-2">建議改 CMYK 鮮紅 (M100+Y100) 或潘通專色</td></tr><tr><td class="border p-2">RGB 螢光色</td><td class="border p-2">幾乎完全丟失</td><td class="border p-2">必須用潘通專色 (Pantone)</td></tr><tr><td class="border p-2">RGB 淺藍</td><td class="border p-2">色相偏移</td><td class="border p-2">RGB → CMYK 後調飽和度</td></tr><tr><td class="border p-2">RGB 深紫</td><td class="border p-2">可能接近</td><td class="border p-2">測試後微調即可</td></tr></tbody></table>
+<h3>四、ICC 色彩管理與色差 ΔE</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>ICC Profile</strong>：每台印刷機、紙張、油墨組合都有專屬 ICC profile，定義色彩映射規則</li><li><strong>色差 ΔE 標準</strong>：ΔE ≤ 2 視為肉眼不可辨；ΔE 2-5 仔細看可辨；ΔE > 5 明顯色差</li><li><strong>智印雲設備</strong>：海德堡印刷機 + X-Rite eXact 測色儀，每批抽樣檢測 ΔE</li><li><strong>客戶端準備</strong>：設計文件嵌入 ISO Coated v2 或 GRACoL 標準 ICC profile</li></ol>
+<h3>五、Pantone 專色印刷</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>什麼是專色</strong>：使用預調好的特定顏色油墨（如 Pantone 185 C 鮮紅）</li><li><strong>適用場景</strong>：品牌標準色（可口可樂紅、星巴克綠）、金屬色、螢光色</li><li><strong>成本考慮</strong>：專色版需額外印刷單元，單價高 30-50%</li><li><strong>混合方案</strong>：CMYK + 1 個 Pantone 專色版是常見組合</li></ul>
+<h3>六、常見問題</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：RGB 文件可以直接印刷嗎？</strong><br/>A：不建議。RGB 印刷會偏色、變暗。請轉 CMYK 並提供 ICC profile。</p><p><strong>Q：為什麼印刷後顏色不夠鮮豔？</strong><br/>A：可能仍在用 RGB 模式，或 CMYK 設定不當。建議打樣確認。</p><p><strong>Q：Pantone 專色是否更準確？</strong><br/>A：是的，Pantone 預混油墨色彩穩定性優於 CMYK 疊印。</p><p><strong>Q：可以提供色樣打樣嗎？</strong><br/>A：可以，數碼打樣 HK$200/張，傳統打樣 HK$500/張。</p></div>
+<p>想了解更多色彩管理？立即 <a href="https://wa.me/8618126380255" target="_blank">WhatsApp 聯絡智印雲</a> 獲取專業建議！</p>`,
     },
     'paper-materials': {
       title: '印刷紙材選擇指南：從銅版紙到特種紙',
       description: '不同紙材的特性與適用場景分析，幫助您為項目選擇最合適的印刷紙張。智印雲300+種紙材任您選擇。',
       date: '2024-03-20', category: '印刷工藝',
-      content: `<p>紙張是印刷品的靈魂。不同的紙材不僅影響視覺效果，更決定了觸感和品質印象。本文將為您詳細介紹常見印刷紙材及其適用場景。</p>
-<h3>銅版紙（Art Paper）</h3>
-<p>最常用的高檔印刷紙，表面光滑，色彩還原度高。適合畫冊、海報、宣傳單等需要鮮豔色彩的產品。</p>
-<h3>道林紙（Woodfree Paper）</h3>
-<p>表面略帶紋理，給人自然質樸的感覺。適合書籍、筆記本、信紙等閱讀類產品。</p>
-<h3>牛皮紙（Kraft Paper）</h3>
-<p>環保、復古風格，強度高。常用於<a href="/product/kraft-paper-bags/">牛皮紙袋</a>、包裝盒、吊牌等。</p>
-<h3>特種紙（Specialty Paper）</h3>
-<p>包括珠光紙、萊妮紋紙、剛古紙等，具有獨特視覺和觸感效果。適合高端邀請卡、名片、年報等。</p>
-<h3>紙材選擇對照表</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">產品類型</th><th class="border p-2 text-left">推薦紙材</th><th class="border p-2 text-left">克重</th></tr></thead><tbody>
-<tr><td class="border p-2">名片</td><td class="border p-2">300g銅版紙 / 特种纸</td><td class="border p-2">300-400g</td></tr>
-<tr><td class="border p-2">宣傳單</td><td class="border p-2">157g銅版紙</td><td class="border p-2">128-200g</td></tr>
-<tr><td class="border p-2">畫冊</td><td class="border p-2">200g銅版紙封面 + 157g內頁</td><td class="border p-2">157-250g</td></tr>
-<tr><td class="border p-2">包裝盒</td><td class="border p-2">白卡紙 / 牛皮紙</td><td class="border p-2">250-400g</td></tr>
-</tbody></table>
-<p>智印雲提供超過300種紙材選擇，專業顧問為您推薦最適合的方案。立即<a href="https://wa.me/8618126380255" target="_blank">聯繫我們</a>獲取紙材樣本！</p>`,
+      content: `<p>紙張是印刷品的靈魂。不同紙材不僅影響視覺效果，更決定觸感和品質印象。智印雲提供 300+ 種紙材供您選擇。本文將從銅版紙、書紙、牛皮紙、特種紙、紙材選擇對照表、實際案例 6 個維度系統介紹常見印刷紙材，幫助您為項目選擇最合適的印刷紙張。</p>
+<h3>一、銅版紙（Art Paper）</h3>
+<p>最常用的高檔印刷紙，表面光滑、色彩還原度高。適合畫冊、海報、宣傳單等需要鮮豔色彩的產品。</p>
+<h3>二、書紙（Woodfree Paper）</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>表面紋理</strong>：略帶紋理，自然質感</li><li><strong>閱讀舒適度</strong>：不反光，長時間閱讀不疲勞</li><li><strong>典型應用</strong>：書籍、筆記本、信紙、發票、合同</li><li><strong>常見克重</strong>：80g、100g、120g</li></ul>
+<h3>三、牛皮紙（Kraft Paper）</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">紙材</th><th class="border p-2 text-left">特性</th><th class="border p-2 text-left">適合場景</th></tr></thead><tbody><tr><td class="border p-2">白牛皮紙</td><td class="border p-2">純白、挺度高、可染色</td><td class="border p-2">高檔品牌、化妝品、禮品</td></tr><tr><td class="border p-2">黃牛皮紙</td><td class="border p-2">環保、復古、價格實惠</td><td class="border p-2">咖啡店、有機品牌、零售</td></tr><tr><td class="border p-2">黑牛皮紙</td><td class="border p-2">神秘高檔、質感獨特</td><td class="border p-2">高端品牌、限定產品</td></tr><tr><td class="border p-2">再生牛皮紙</td><td class="border p-2">環保認證、紋理獨特</td><td class="border p-2">環保品牌、有機產品</td></tr></tbody></table>
+<h3>四、特種紙（Specialty Paper）</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>珠光紙</strong>：表面有珍珠光澤，適合化妝品、高端邀請卡</li><li><strong>萊妮紋紙</strong>：橫條紋理，手感強烈，適合畫冊封面</li><li><strong>剛古紙</strong>：典雅紋理，英倫風格，適合證書、菜牌</li><li><strong>棉絮紙</strong>：含棉纖維，觸感柔軟，適合高端名片</li><li><strong>充皮紙</strong>：仿皮紋理，適合精裝盒、邀請卡</li></ol>
+<h3>五、紙材選擇對照表</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">產品類型</th><th class="border p-2 text-left">推薦紙材</th><th class="border p-2 text-left">克重</th></tr></thead><tbody><tr><td class="border p-2">名片</td><td class="border p-2">300g 銅版紙 / 特種紙</td><td class="border p-2">300-400g</td></tr><tr><td class="border p-2">宣傳單</td><td class="border p-2">157g 銅版紙</td><td class="border p-2">128-200g</td></tr><tr><td class="border p-2">畫冊</td><td class="border p-2">200g 銅版封面 + 157g 內頁</td><td class="border p-2">157-250g</td></tr><tr><td class="border p-2">包裝盒</td><td class="border p-2">白卡紙 / 牛皮紙</td><td class="border p-2">250-400g</td></tr><tr><td class="border p-2">信封</td><td class="border p-2">100g 書紙 / 牛皮紙</td><td class="border p-2">100-120g</td></tr></tbody></table>
+<h3>六、常見問題</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：300+ 種紙材該怎麼挑？</strong><br/>A：智印雲提供免費紙樣樣本盒（HK$200 含郵），建議先看實物再決定。</p><p><strong>Q：銅版紙和書紙的差別？</strong><br/>A：銅版紙表面光滑反光、色彩鮮豔；書紙略帶紋理、適合文字閱讀。</p><p><strong>Q：可以混合紙材嗎？</strong><br/>A：可以。封面用 200g 銅版紙、內頁用 80g 書紙，常見於畫冊。</p><p><strong>Q：環保紙有哪些選擇？</strong><br/>A：FSC 認證再生紙、大麻紙、竹漿紙、棉花紙等，HK$200 起/款。</p></div>
+<p>想了解 300+ 種紙材？立即 <a href="https://wa.me/8618126380255" target="_blank">WhatsApp 聯絡智印雲</a> 獲取紙材樣本與報價！</p>`,
     },
     'eco-printing': {
       title: '環保印刷：企業ESG與可持續包裝的未來',
       description: '了解環保印刷材料和工藝，為地球和品牌形象雙贏做出選擇。智印雲助您實現綠色印刷目標。',
       date: '2024-03-15', category: '行業趨勢',
-      content: `<p>可持續發展已經成為全球趨勢。越來越多的企業將 ESG（環境、社會、治理）納入核心戰略，而環保印刷正是其中的重要一環。</p>
-<h3>什麼是環保印刷？</h3>
-<p>環保印刷是指在整个印刷過程中盡量減少對環境的負面影響，包括：</p>
-<ul class="list-disc pl-5 my-3 space-y-1">
-<li>使用再生紙或FSC認證紙張</li>
-<li>採用大豆油墨等環保油墨</li>
-<li>減少化學藥劑使用</li>
-<li>優化生產流程降低能耗</li>
-</ul>
-<h3>環保材質推薦</h3>
-<p>智印雲提供多種環保印刷選項：</p>
-<ul class="list-disc pl-5 my-3 space-y-1">
-<li><a href="/product/eco-paper-bags/">環保紙袋</a>：使用再生牛皮紙，可完全降解</li>
-<li><a href="/product/eco-business-cards/">環保名片</a>：再生紙+大豆油墨</li>
-<li><a href="/product/eco-flyers/">環保傳單</a>：FSC認證紙張</li>
-</ul>
-<p>想為您的品牌加入環保元素？<a href="https://wa.me/8618126380255" target="_blank">聯繫智印雲</a>獲取綠色印刷方案。</p>`,
+      content: `<p>可持續發展已成為全球趨勢。越來越多的企業將 ESG（環境、社會、治理）納入核心戰略，而環保印刷正是其中的關鍵環節。本文將從環保印刷定義、環保材質、工藝技術、認證標準、實務應用、ESG 報告策略 6 大維度，為企業提供系統化的綠色印刷指引。</p>
+<h3>一、什麼是環保印刷？</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>使用再生紙或 FSC 認證紙張</strong>：森林管理委員會（FSC）認證保證紙張來源可持續</li><li><strong>大豆油墨等環保油墨</strong>：VOC（揮發性有機物）含量低、可降解</li><li><strong>減少化學藥劑使用</strong>：傳統印刷用 IPA 酒精等有害溶劑，環保印刷用替代方案</li><li><strong>優化生產流程降低能耗</strong>：智能排版、廢料回收、節能設備</li><li><strong>減少廢棄物產生</strong>：精準計算紙張、減少切邊損耗</li></ul>
+<h3>二、環保材質推薦</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">環保材質</th><th class="border p-2 text-left">特性</th><th class="border p-2 text-left">應用</th></tr></thead><tbody><tr><td class="border p-2">再生紙</td><td class="border p-2">100% 回收紙漿，FSC 認證</td><td class="border p-2">信封、信紙、便箋</td></tr><tr><td class="border p-2">大豆油墨</td><td class="border p-2">可降解、低 VOC</td><td class="border p-2">所有印刷品</td></tr><tr><td class="border p-2">植物油墨</td><td class="border p-2">純植物配方</td><td class="border p-2">食品包裝</td></tr><tr><td class="border p-2">水性過膠</td><td class="border p-2">無溶劑</td><td class="border p-2">兒童產品</td></tr><tr><td class="border p-2">甘蔗渣紙塑</td><td class="border p-2">可堆肥</td><td class="border p-2">電子產品內襯</td></tr><tr><td class="border p-2">PLA 淋膜</td><td class="border p-2">可降解</td><td class="border p-2">食品包裝</td></tr></tbody></table>
+<h3>三、ESG 報告中的印刷策略</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>碳足跡披露</strong>：印刷品碳足跡計算（從紙漿到交貨）</li><li><strong>供應鏈透明</strong>：FSC CoC（Chain of Custody）認證可追溯紙漿來源</li><li><strong>減廢目標</strong>：每年減少 5% 印刷廢料，5 年累計 25%</li><li><strong>綠色採購政策</strong>：規定供應商必須提供環保認證</li><li><strong>客戶端展示</strong>：包裝上加綠色標識傳遞 ESG 承諾</li></ol>
+<h3>四、認證標準一覽</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>FSC（Forest Stewardship Council）</strong>：森林管理認證，全球最權威</li><li><strong>PEFC（Programme for the Endorsement of Forest Certification）</strong>：另一國際森林認證體系</li><li><strong>大豆油墨協會認證</strong>：Soy Ink Technical Board</li><li><strong>ISO 14001</strong>：環境管理體系認證</li><li><strong>中國環境標誌</strong>：十環認證，國內環保產品標識</li></ul>
+<h3>五、實際應用案例</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>ESG 報告印刷</strong>：上市公司年報、ESG 報告常用 100% 再生紙 + 大豆油墨</li><li><strong>品牌環保產品線</strong>：Patagonia、Allbirds 等品牌專用環保包裝</li><li><strong>活動紀念品</strong>：演唱會、馬拉松紀念 T 恤/海報用甘蔗渣紙塑</li><li><strong>兒童產品印刷</strong>：玩具外包裝、兒童書籍水性過膠無毒</li></ul>
+<h3>六、常見問題</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：環保印刷貴多少？</strong><br/>A：一般貴 10-30%，但隨着技術成熟已大幅下降。</p><p><strong>Q：FSC 認證紙張耐用嗎？</strong><br/>A：是的，FSC 認證只管來源，不影響紙張品質。</p><p><strong>Q：大豆油墨會褪色嗎？</strong><br/>A：不會。大豆油墨色彩穩定性與傳統油墨相當。</p><p><strong>Q：有 ESG 報告用的環保印刷方案嗎？</strong><br/>A：提供，100% 再生紙 + 大豆油墨 + 水性過膠成套方案。</p></div>
+<p>想為您的品牌加入環保元素？立即 <a href="https://wa.me/8618126380255" target="_blank">WhatsApp 聯絡智印雲</a> 獲取綠色印刷方案！</p>`,
     },
     'hong-kong-printing-guide': {
       title: '香港印刷公司選擇完全指南：觀塘、九龍、新界哪裡最可靠？',
       description: '深入比較香港觀塘、九龍、新界的印刷公司，從價格、品質、交貨速度到客戶評價，幫您找到最適合的印刷合作夥伴。',
       date: '2024-05-20', category: '香港本地',
-      content: `<p>香港作為國際商業中心，每天都有成千上萬的企業需要各類印刷服務。無論是<a href="/product/premium-business-cards/">名片印刷</a>、<a href="/product/a4-flyers/">宣傳單張</a>，還是<a href="/product/gift-boxes/">包裝盒定制</a>，選擇一家可靠的印刷公司至關重要。本文將為您詳細分析香港各區印刷公司的特點，特別是觀塘這個印刷業重鎮。</p><h3>一、香港各區印刷公司分佈概況</h3><p>香港的印刷業主要集中在以下幾個區域：</p><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>觀塘（Kwun Tong）</strong>：傳統工業區，印刷廠密度最高，價格競爭激烈，適合大批量訂單</li><li><strong>九龍灣（Kowloon Bay）</strong>：新興商業區，結合設計與印刷，適合品牌定制需求</li><li><strong>荃灣（Tsuen Wan）</strong>：新界西的中心，租金較低，性價比高</li><li><strong>上環/中環</strong>：高端商業區，主打精品印刷，價格較高</li></ul><h3>二、如何評估印刷公司的可靠性</h3><ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>設備水準</strong>：是否使用海德堡、小森等國際品牌印刷機？這直接影響色彩還原度</li><li><strong>色彩管理</strong>：是否有專業的色彩校準流程？能否提供數碼打樣？</li><li><strong>交貨時間</strong>：標準交貨是3-5天，急件能否做到24小時？</li><li><strong>客戶案例</strong>：是否服務過知名企業？有無實體樣品可以參考？</li><li><strong>售後服務</strong>：印刷出現問題時的處理機制如何？</li></ol><h3>三、觀塘印刷公司的優勢</h3><p>觀塘作為香港傳統的工業重鎮，擁有全港最密集的印刷產業鏈。這裡的印刷公司普遍具有以下優勢：</p><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>價格競爭力</strong>：由於廠家集中，成本控制較好，同品質下價格通常比中環便宜20-30%</li><li><strong>產能充足</strong>：大型印刷廠多，能夠承接萬級以上的大單</li><li><strong>交通便利</strong>：觀塘線直達，從觀塘站步行10分鐘即可到達大多數印刷廠</li><li><strong>配套完善</strong>：設計、印刷、後加工一條龍服務</li></ul><h3>四、智印雲的差異化優勢</h3><p>智印雲位於觀塘成業街，深耕香港印刷市場多年，我們的優勢包括：</p><ul class="list-disc pl-5 my-3 space-y-1"><li>採用德國海德堡印刷設備，確保色彩精準還原</li><li>支持24小時急件印刷，滿足香港快節奏商業需求</li><li>提供免費數碼打樣，大貨印刷前確認效果</li><li>滿HK$500免費送貨，覆蓋全港十八區</li><li>一站式服務：從設計、印刷到配送，全程無憂</li></ul><p>無論您在<a href="/product/premium-business-cards/">名片</a>、<a href="/product/a4-flyers/">傳單</a>、<a href="/product/kraft-paper-bags/">紙袋</a>還是<a href="/product/gift-boxes/">包裝盒</a>有任何印刷需求，歡迎<a href="https://wa.me/8618126380255" target="_blank">WhatsApp 聯繫智印雲</a>獲取免費報價和專業建議。</p>`,
+      content: `<p>香港作為國際商業中心，每天都有成千上萬的企業需要各類印刷服務。無論是名片、宣傳單張，還是禮品盒、紙袋，選擇一家可靠的印刷公司至關重要。本文將帶您系統分析香港各區印刷公司的特點、選擇要點、避坑指南、服務範疇及成本考量，幫您找到最適合的印刷合作夥伴。</p>
+<h3>一、香港印刷公司分佈概況</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">區域</th><th class="border p-2 text-left">特點</th><th class="border p-2 text-left">適合</th></tr></thead><tbody><tr><td class="border p-2">觀塘</td><td class="border p-2">傳統工業區、印刷廠密集</td><td class="border p-2">價格競爭激烈、適合大批量訂單</td></tr><tr><td class="border p-2">九龍灣</td><td class="border p-2">新興商業區、設計+印刷結合</td><td class="border p-2">適合品牌定制需求</td></tr><tr><td class="border p-2">荃灣</td><td class="border p-2">新界西中心、租金較低</td><td class="border p-2">性價比高</td></tr><tr><td class="border p-2">上環/中環</td><td class="border p-2">高端商業區、主打精品印刷</td><td class="border p-2">價格較高、適合高端品牌</td></tr></tbody></table>
+<h3>二、如何評估印刷公司的可靠性</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>設備水準</strong>：是否使用海德堡、小森等國際品牌印刷機？直接影響色彩還原度</li><li><strong>色彩管理</strong>：是否有專業的色彩校準流程？能否提供數碼打樣？</li><li><strong>交貨時間</strong>：標準交貨是 3-5 天，急件能否做到 24 小時？</li><li><strong>客戶案例</strong>：是否服務過知名企業？有無實體樣品可以參考？</li><li><strong>售後服務</strong>：印刷出現問題時的處理機制如何？</li></ul>
+<h3>三、觀塘印刷公司的優勢</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>價格競爭力</strong>：由於廠家集中，成本控制較好，同品質下價格通常比中環便宜 20-30%</li><li><strong>產能充足</strong>：大型印刷廠多，能夠承接萬級以上的大單</li><li><strong>交通便利</strong>：觀塘線直達，從觀塘站步行 10 分鐘即可到達大多數印刷廠</li><li><strong>配套完善</strong>：設計、印刷、後加工一條龍服務</li></ul>
+<h3>四、選擇印刷公司常見的坑</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li>報價過低 — 可能用劣質紙張或簡化色彩管理，最終質量差</li><li>無打樣服務 — 印刷結果與預期不符時無法補救</li><li>無固定電話 — 公司規模小，售後無保障</li><li>交貨不準時 — 影響業務時間節點</li><li>無合同 / 發票 — 商業糾紛時無依據</li></ol>
+<h3>五、智印雲的差異化優勢</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li>德國海德堡印刷設備，色彩精準還原</li><li>支持 24 小時急件印刷，滿足香港快節奏商業需求</li><li>免費數碼打樣，大貨印刷前確認效果</li><li>滿 HK$500 免費送貨，覆蓋全港十八區</li><li>一站式服務：從設計、印刷到配送，全程無憂</li></ul>
+<h3>六、常見問題</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：香港印刷公司集中在哪裡？</strong><br/>A：觀塘是傳統印刷重鎮，產能集中、價格有競爭力。</p><p><strong>Q：如何判斷印刷公司是否可靠？</strong><br/>A：看設備（海德堡 / 小森）、打樣服務、客戶案例、合同規範。</p><p><strong>Q：小型公司和大廠的差別？</strong><br/>A：小型更靈活但產能有限，大廠產能強但對小單不夠重視。</p><p><strong>Q：印刷出現問題怎麼處理？</strong><br/>A：智印雲承諾對質量負責，免費重印或退款。</p></div>
+<p>無論您需要名片、傳單、紙袋還是包裝盒，立即 <a href="https://wa.me/8618126380255" target="_blank">WhatsApp 聯絡智印雲</a> 獲取免費報價和專業建議。</p>`,
     },
     'design-file-specs': {
       title: '印刷文件設計規範：出血位、分辨率、色彩模式一次搞懂',
       description: '從出血位設置到色彩模式轉換，這篇指南將幫助設計師和企業避免最常見的印刷文件錯誤，確保印刷成品完美無瑕。',
       date: '2024-05-15', category: '設計技巧',
-      content: `<p>很多設計師和企業市場部在準備印刷文件時都會遇到各種問題：成品邊緣出現白邊、圖片模糊不清、顏色與屏幕顯示差異巨大……這些問題大多源於對印刷文件規範的不了解。本文將詳細講解出血位、分辨率和色彩模式這三個核心概念。</p><h3>一、什麼是出血位（Bleed）？</h3><p>出血位是指在設計稿中超出成品裁切線的部分。由於印刷後需要裁切，如果設計剛好到邊緣，任何微小的裁切誤差都會導致露出白邊。因此，我們通常需要在成品尺寸外預留<strong>3mm</strong>的出血位。</p><h4>常見產品的出血位設置</h4><table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">產品</th><th class="border p-2 text-left">成品尺寸</th><th class="border p-2 text-left">設計尺寸（含出血）</th></tr></thead><tbody><tr><td class="border p-2">標準名片</td><td class="border p-2">90 × 54mm</td><td class="border p-2">96 × 60mm</td></tr><tr><td class="border p-2">A4 傳單</td><td class="border p-2">210 × 297mm</td><td class="border p-2">216 × 303mm</td></tr><tr><td class="border p-2">A3 海報</td><td class="border p-2">297 × 420mm</td><td class="border p-2">303 × 426mm</td></tr></tbody></table><h3>二、分辨率：為什麼 300dpi 是標準？</h3><p>分辨率決定了印刷品的清晰度。屏幕上顯示通常只需要72dpi，但印刷需要<strong>至少300dpi</strong>才能保證圖片清晰銳利。</p><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>72dpi</strong>：僅適用於網頁、社交媒體</li><li><strong>150dpi</strong>：大型海報、遠距離觀看的印刷品可以接受的最低標準</li><li><strong>300dpi</strong>：名片、書刊、宣傳單等近距離觀看印刷品的標準</li></ul><h3>三、CMYK vs RGB</h3><p>屏幕使用 RGB 色彩模式（紅綠藍光疊加），而印刷使用 CMYK 色彩模式（青品黃黑油墨疊加）。RGB 的色域比 CMYK 廣，直接印刷 RGB 文件會導致顏色變暗、鮮豔度下降。</p><h3>四、文件格式建議</h3><ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>PDF/X-1a</strong>：最佳選擇，字體嵌入、色彩穩定</li><li><strong>AI（Adobe Illustrator）</strong>：矢量文件，適合 Logo 和圖形</li><li><strong>PSD（Photoshop）</strong>：點陣文件，適合照片類設計</li></ol><p>不確定您的文件是否符合印刷標準？<a href="https://wa.me/8618126380255" target="_blank">聯繫智印雲</a>，我們提供免費文件檢查服務。</p>`,
+      content: `<p>很多設計師和企業市場部在準備印刷文件時都會遇到各種問題：成品邊緣出現白邊、圖片模糊不清、顏色與屏幕顯示差異巨大……這些問題大多源於對印刷文件規範的不了解。本文將詳細講解出血位、分辨率、色彩模式、文件格式、字體處理、出血外設計 6 個核心概念，幫您一次性搞懂印刷文件規範。</p>
+<h3>一、什麼是出血位（Bleed）？</h3>
+<p>出血位是指在設計稿中超出成品裁切線的部分。由於印刷後需要裁切，如果設計剛好到邊緣，任何微小的裁切誤差都會導致露出白邊。因此，我們通常需要在成品尺寸外預留 3mm 的出血位。</p>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">產品</th><th class="border p-2 text-left">成品尺寸</th><th class="border p-2 text-left">設計尺寸（含出血）</th></tr></thead><tbody><tr><td class="border p-2">標準名片</td><td class="border p-2">90 × 54mm</td><td class="border p-2">96 × 60mm</td></tr><tr><td class="border p-2">A4 傳單</td><td class="border p-2">210 × 297mm</td><td class="border p-2">216 × 303mm</td></tr><tr><td class="border p-2">A3 海報</td><td class="border p-2">297 × 420mm</td><td class="border p-2">303 × 426mm</td></tr><tr><td class="border p-2">信封</td><td class="border p-2">220 × 110mm</td><td class="border p-2">226 × 116mm</td></tr></tbody></table>
+<h3>二、分辨率：為什麼 300dpi 是標準？</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>72dpi</strong>：僅適用於網頁、社交媒體</li><li><strong>150dpi</strong>：大型海報、遠距離觀看的印刷品可以接受的最低標準</li><li><strong>300dpi</strong>：名片、書刊、宣傳單等近距離觀看印刷品的標準</li><li><strong>600dpi</strong>：極精細印刷品（如藝術複製品、奢侈品包裝）</li></ul>
+<h3>三、CMYK vs RGB</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li>屏幕使用 RGB 色彩模式（紅綠藍光疊加），而印刷使用 CMYK 色彩模式（青品黃黑油墨疊加）</li><li>RGB 的色域比 CMYK 廣，直接印刷 RGB 文件會導致顏色變暗、鮮豔度下降</li><li>建議設計稿全程使用 CMYK，這樣可以提前預見印刷結果</li><li>圖片素材可保持 RGB 編輯，但最終導出 PDF 前必須轉 CMYK</li></ol>
+<h3>四、文件格式建議</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>PDF/X-1a</strong>：最佳選擇，字體嵌入、色彩穩定</li><li><strong>AI（Adobe Illustrator）</strong>：矢量文件，適合 Logo 和圖形</li><li><strong>PSD（Photoshop）</strong>：點陣文件，適合照片類設計</li><li><strong>EPS</strong>：通用矢量格式，兼容性強</li><li><strong>INDD（InDesign）</strong>：多頁排版專業格式</li></ul>
+<h3>五、字體處理與特殊效果</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>文字轉外框</strong>：AI / PDF 必須將文字轉外框，否則換電腦字體丟失</li><li><strong>嵌入字體</strong>：PDF 可選擇嵌入所有字體</li><li><strong>鏤空效果</strong>：避免小於 6pt 的細字（容易糊）</li><li><strong>極細線條</strong>：避免小於 0.25pt 的細線（容易斷）</li><li><strong>網格漸變</strong>：避免太密的網格，建議 200dpi 像素層次</li></ul>
+<h3>六、常見問題</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：設計文件需要什麼格式？</strong><br/>A：最佳是 PDF/X-1a（轉曲線 + 嵌入字體）。也接受 AI / EPS / PSD。</p><p><strong>Q：字體一定要轉外框嗎？</strong><br/>A：強烈建議。否則換電腦缺字體會亂碼。</p><p><strong>Q：圖片 300dpi 一定要做到嗎？</strong><br/>A：建議，小於 200dpi 印刷模糊。大型海報 150dpi 可接受。</p><p><strong>Q：RGB 文件能直接印刷嗎？</strong><br/>A：不建議。請在設計階段就轉 CMYK 並嵌入 ICC profile。</p></div>
+<p>不確定您的文件是否符合印刷標準？立即 <a href="https://wa.me/8618126380255" target="_blank">WhatsApp 聯絡智印雲</a>，我們提供免費文件檢查服務。</p>`,
     },
     'brand-materials-checklist': {
       title: '企業品牌物料清單：從名片到展架的全套印刷方案',
       description: '無論是初創企業還是品牌升級，這份完整的品牌物料印刷清單將幫助您系統化地規劃所有印刷需求，確保品牌形象的一致性。',
       date: '2024-05-10', category: '品牌建設',
-      content: `<p>品牌形象的建立需要系統化的物料支持。從一張<a href="/product/premium-business-cards/">名片</a>到一個<a href="/product/gift-boxes/">產品包裝盒</a>，每一個觸點都是品牌與客戶溝通的機會。本文將為您提供一份完整的企業品牌物料清單。</p><h3>一、基礎品牌識別物料</h3><ul class="list-disc pl-5 my-3 space-y-1"><li><a href="/product/premium-business-cards/">名片</a>：員工標配，建議準備雙面設計</li><li><a href="/product/envelopes/">信封</a>：正式商務溝通的必備品</li><li>信紙：合同、報價單等正式文件使用</li><li>文件夾：客戶會議、投標時使用，提升專業形象</li></ul><h3>二、市場推廣物料</h3><ul class="list-disc pl-5 my-3 space-y-1"><li><a href="/product/a4-flyers/">宣傳單張</a>：活動推廣、產品介紹</li><li><a href="/product/folded-leaflets/">摺頁/小冊子</a>：產品目錄、服務介紹</li><li><a href="/product/posters/">海報</a>：店內裝飾、活動宣傳</li><li><a href="/product/roll-up-banners/">易拉架</a>：展會、路演必備</li></ul><h3>三、產品包裝物料</h3><ul class="list-disc pl-5 my-3 space-y-1"><li><a href="/product/kraft-paper-bags/">紙袋</a>：零售購物袋，環保且有質感</li><li><a href="/product/gift-boxes/">禮品盒</a>：高端產品包裝，提升品牌檔次</li><li><a href="/product/mailer-boxes/">快遞盒</a>：電商發貨用</li></ul><h3>四、品牌物料規劃建議</h3><ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>統一設計語言</strong>：所有物料使用相同的色彩、字體和圖形元素</li><li><strong>分階段製作</strong>：初創企業先完成基礎物料，再逐步擴展</li><li><strong>選擇可靠供應商</strong>：與一家能夠提供全套服務的印刷公司合作，確保品質一致性</li></ol><p>智印雲提供一站式品牌物料印刷服務。<a href="https://wa.me/8618126380255" target="_blank">立即聯繫我們</a>獲取專屬品牌物料方案。</p>`,
+      content: `<p>品牌形象的建立需要系統化的物料支持。從一張名片到一個產品包裝盒，每一個觸點都是品牌與客戶溝通的機會。本文將為您提供一份完整的企業品牌物料清單，包括基礎識別、市場推廣、產品包裝、空間展示、內部辦公 5 大類別的系統化規劃建議，幫助您打造一致的品牌形象。</p>
+<h3>一、基礎品牌識別物料</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>名片</strong>：員工標配，建議準備雙面設計 + 不同職務版本</li><li><strong>信封</strong>：正式商務溝通的必備品，支持多規格</li><li><strong>信紙</strong>：合同、報價單等正式文件使用</li><li><strong>文件夾</strong>：客戶會議、投標時使用，提升專業形象</li><li><strong>員工證</strong>：含照片、姓名、工號、部門</li><li><strong>貼紙 / 標籤</strong>：用於包裝封口、產品標籤</li></ul>
+<h3>二、市場推廣物料</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">物料</th><th class="border p-2 text-left">用途</th><th class="border p-2 text-left">場景</th></tr></thead><tbody><tr><td class="border p-2">宣傳單張</td><td class="border p-2">A4/A5，活動推廣</td><td class="border p-2">街派、定向投放</td></tr><tr><td class="border p-2">摺頁 / 小冊子</td><td class="border p-2">產品目錄、服務介紹</td><td class="border p-2">展會、商務拜訪</td></tr><tr><td class="border p-2">海報</td><td class="border p-2">店內裝飾、活動宣傳</td><td class="border p-2">門店、辦公室</td></tr><tr><td class="border p-2">易拉架</td><td class="border p-2">展會、路演必備</td><td class="border p-2">展覽、活動現場</td></tr><tr><td class="border p-2">X 展架</td><td class="border p-2">可重複使用</td><td class="border p-2">展會、路演</td></tr><tr><td class="border p-2">禮品</td><td class="border p-2">活動紀念品</td><td class="border p-2">客戶答謝</td></tr></tbody></table>
+<h3>三、產品包裝物料</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>紙袋</strong>：零售購物袋，環保且有質感，分大 / 中 / 小 3 規格</li><li><strong>禮品盒</strong>：高端產品包裝，提升品牌檔次</li><li><strong>快遞盒</strong>：電商發貨用，3-5 層瓦楞 + 蜂窩結構</li><li><strong>產品標籤</strong>：成分、條碼、二維碼、品牌 Logo</li><li><strong>封口貼紙</strong>：防止拆封、提升開箱體驗</li><li><strong>感謝卡</strong>：手寫感印刷，傳遞品牌溫度</li></ul>
+<h3>四、空間展示與辦公物料</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>門牌 / 招牌</strong>：入口處標識品牌 Logo + 中英文名稱</li><li><strong>展示架 POP</strong>：店內陳列產品的紙質展示架</li><li><strong>牆面海報</strong>：辦公室裝飾 + 品牌價值觀傳遞</li><li><strong>指示牌</strong>：會議室、洗手間、緊急出口等</li><li><strong>員工 T 恤 / Polo 衫</strong>：絲網印刷或熱轉印，含 Logo</li><li><strong>員工筆記本</strong>：含品牌 Logo 的辦公用品</li></ol>
+<h3>五、品牌物料規劃建議</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>統一設計語言</strong>：所有物料使用相同的色彩、字體和圖形元素</li><li><strong>分階段製作</strong>：初創企業先完成基礎物料，再逐步擴展</li><li><strong>選擇可靠供應商</strong>：與一家能夠提供全套服務的印刷公司合作，確保品質一致性</li><li><strong>建立品牌手冊</strong>：記錄所有視覺規範，新物料製作時有據可依</li></ul>
+<h3>常見問題</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：初創企業應先製作哪些物料？</strong><br/>A：名片、信封、信紙、文件夾、產品包裝這 5 項是基本盤。</p><p><strong>Q：品牌物料應該多長時間更新一次？</strong><br/>A：Logo 不變但物料可每年更新，保持新鮮感。</p><p><strong>Q：絲網印刷 vs 數碼印刷哪個好？</strong><br/>A：小批量、個性化選數碼；大批量、簡單設計選絲網。</p><p><strong>Q：全套品牌物料打包優惠？</strong><br/>A：智印雲提供套餐，5 項 9 折 / 10 項 8.5 折。</p></div>
+<p>智印雲提供一站式品牌物料印刷服務。立即 <a href="https://wa.me/8618126380255" target="_blank">WhatsApp 聯絡智印雲</a> 獲取專屬品牌物料方案。</p>`,
     },
     'mtr-advertising-specs': {
       title: '港鐵廣告印刷規格全解析：港島線、觀塘線、荃灣線投放指南',
       description: '詳細解析港鐵各線路廣告位的印刷規格、尺寸要求和投放策略，助您在香港最繁忙的交通網絡中精準觸達目標客戶。',
       date: '2024-05-05', category: '香港本地',
-      content: `<p>香港港鐵（MTR）每天服務超過500萬人次，是香港最繁忙的公共交通系統。對於希望在<a href="/product/posters/">海報</a>和展示物料上投放廣告的企業來說，港鐵廣告無疑是極具性價比的選擇。</p><h3>一、港鐵廣告的主要形式</h3><h4>站內廣告</h4><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>月台燈箱（12-sheet / 48-sheet）</strong>：最常見的形式，位於月台牆面</li><li><strong>車站大堂燈箱</strong>：位於付費區大堂，人流量大</li><li><strong>月台門貼（Platform Screen Door）</strong>：新型廣告位，視覺衝擊力極強</li><li><strong>立柱包裝（Pillar Wrap）</strong>：將車站立柱包裹成廣告位</li></ul><h4>車廂廣告</h4><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>車廂內海報</strong>：車門上方和車廂連接處的標準海報位</li><li><strong>全車身廣告（Train Wrap）</strong>：整列車的外觀廣告，曝光率最高</li></ul><h3>二、主要廣告位印刷規格</h3><table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">廣告類型</th><th class="border p-2 text-left">尺寸（寬×高）</th><th class="border p-2 text-left">解析度要求</th></tr></thead><tbody><tr><td class="border p-2">12-sheet 燈箱</td><td class="border p-2">3000 × 1500mm</td><td class="border p-2">100dpi @ 實際尺寸</td></tr><tr><td class="border p-2">48-sheet 燈箱</td><td class="border p-2">6096 × 3048mm</td><td class="border p-2">72-100dpi</td></tr><tr><td class="border p-2">車廂內海報</td><td class="border p-2">1189 × 841mm (A0)</td><td class="border p-2">150dpi</td></tr></tbody></table><h3>三、各線路投放策略建議</h3><h4>港島線（Island Line）</h4><p>途經中環、金鐘、灣仔、銅鑼灣等核心商業區，受眾以白領、金融人士和遊客為主。</p><h4>觀塘線（Kwun Tong Line）</h4><p>連接觀塘、九龍灣等工業和商業混合區，以及旺角、油麻地等人流密集區。</p><h4>荃灣線（Tsuen Wan Line）</h4><p>貫穿新界和九龍，覆蓋住宅區和商業區。適合投放家庭消費品、教育和房地產廣告。</p><h3>四、印刷注意事項</h3><ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>色彩模式</strong>：必須使用 CMYK，RGB 文件會被拒收</li><li><strong>字體嵌入</strong>：PDF 文件必須嵌入所有字體</li><li><strong>材質</strong>：燈箱廣告使用背噴燈片（Backlit Film），車廂海報使用 PP 合成紙</li></ol><p>智印雲提供港鐵廣告物料的專業印刷服務。<a href="https://wa.me/8618126380255" target="_blank">聯繫我們</a>獲取報價。</p>`,
+      content: `<p>香港港鐵（MTR）每天服務超過 500 萬人次，是香港最繁忙的公共交通系統。對於希望在海報和展示物料上投放廣告的企業，港鐵廣告無疑是極具性價比的選擇。本文將從廣告形式、規格、線路策略、印刷要點、避坑指南 6 個維度詳細解析港鐵廣告投放，助您在香港最繁忙的交通網絡中精準觸達目標客戶。</p>
+<h3>一、港鐵廣告的主要形式</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">廣告類型</th><th class="border p-2 text-left">尺寸</th><th class="border p-2 text-left">位置</th></tr></thead><tbody><tr><td class="border p-2">12-sheet 燈箱</td><td class="border p-2">3000 × 1500mm</td><td class="border p-2">月台牆面，最常見</td></tr><tr><td class="border p-2">48-sheet 燈箱</td><td class="border p-2">6096 × 3048mm</td><td class="border p-2">車站大堂，人流大</td></tr><tr><td class="border p-2">月台門貼</td><td class="border p-2">依車站規格</td><td class="border p-2">新型廣告位，視覺衝擊力強</td></tr><tr><td class="border p-2">立柱包裝</td><td class="border p-2">依現場尺寸</td><td class="border p-2">車站立柱包裹</td></tr><tr><td class="border p-2">車廂內海報</td><td class="border p-2">1189 × 841mm</td><td class="border p-2">車門上方 + 車廂連接處</td></tr><tr><td class="border p-2">全車身廣告</td><td class="border p-2">整列車外觀</td><td class="border p-2">曝光率最高</td></tr></tbody></table>
+<h3>二、廣告位印刷規格詳解</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>12-sheet 燈箱</strong>：3000 × 1500mm，100dpi @ 實際尺寸</li><li><strong>48-sheet 燈箱</strong>：6096 × 3048mm，72-100dpi</li><li><strong>車廂內海報</strong>：1189 × 841mm (A0)，150dpi</li><li><strong>月台門貼</strong>：依車站規格而定，144dpi 起</li><li><strong>車廂包裝</strong>：整列車長度，150dpi 足夠</li></ul>
+<h3>三、各線路投放策略建議</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>港島線</strong>：途經中環、金鐘、灣仔、銅鑼灣，白領、金融、遊客為主</li><li><strong>觀塘線</strong>：連接觀塘、九龍灣等，旺角、油麻地人流密集區</li><li><strong>荃灣線</strong>：貫穿新界和九龍，住宅區和商業區，家庭消費品、教育、房地產</li><li><strong>東鐵線 / 西鐵線</strong>：連接新界北部、深圳過境口岸，跨境消費、旅遊</li><li><strong>南港島線 / 將軍澳線</strong>：住宅區為主，家庭、社區服務</li></ol>
+<h3>四、印刷注意事項</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>色彩模式</strong>：必須使用 CMYK，RGB 文件會被拒收</li><li><strong>字體嵌入</strong>：PDF 文件必須嵌入所有字體</li><li><strong>材質選擇</strong>：燈箱廣告使用背噴燈片（Backlit Film），車廂海報使用 PP 合成紙</li><li><strong>出血位</strong>：四周保留至少 5mm 出血位</li><li><strong>顏色飽和度</strong>：遠距離觀看，建議高飽和度色彩 + 大字體</li></ul>
+<h3>五、避免常見錯誤</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li>設計時忘記看實際規格 — 印刷出來才發現尺寸不對</li><li>CMYK 顏色偏暗 — 遠距離看不清楚</li><li>字體太小 — 3 米外就讀不到</li><li>留白過多 — 浪費寶貴廣告位</li><li>檔案太大 — 上傳 / 印刷時間延長</li></ul>
+<h3>六、常見問題</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：港鐵廣告投放需要多少預算？</strong><br/>A：12-sheet 燈箱月費約 HK$30,000-80,000，A0 海報月費約 HK$3,000-8,000。</p><p><strong>Q：需要提前多久申請？</strong><br/>A：建議提前 6-8 週申請，旺季（節日）需 3 個月。</p><p><strong>Q：可指定線路嗎？</strong><br/>A：可以，港鐵局允許指定車站或線路投放。</p><p><strong>Q：智印雲可代辦嗎？</strong><br/>A：可以，提供設計 + 印刷 + 代提交全套服務。</p></div>
+<p>智印雲提供港鐵廣告物料的專業印刷服務。立即 <a href="https://wa.me/8618126380255" target="_blank">WhatsApp 聯絡智印雲</a> 獲取報價。</p>`,
     },
     'flyer-printing-guide': {
       title: '香港傳單印刷完全指南：A4/A5 尺寸、紙質選擇與派發策略',
@@ -379,17 +300,169 @@ const posts: Record<string, Record<string, { title: string; description: string;
 
   },
   en: {
-    'company-intro': { title: 'About ZprintPro: Professional Equipment & One-Stop Printing Services', description: 'ZprintPro features Heidelberg 6+1 printing presses, HP digital printers, and Martini perfect binding lines for full-service printing solutions.', date: '2024-06-01', category: 'Company News', content: `<p>ZprintPro is a professional integrated printing service company with over 15 years of experience serving Hong Kong and the Greater Bay Area. We provide one-stop solutions from design to printing to post-processing.</p><h3>Company Overview</h3><p>Our modern factory covers over 8,000 square meters, equipped with international leading printing and post-processing equipment. We serve clients across finance, real estate, retail, education, and healthcare industries.</p><div class="grid grid-cols-2 md:grid-cols-4 gap-4 my-6"><div class="bg-gray-50 rounded-xl p-4 text-center"><p class="text-2xl font-bold text-[#F87314]">8,000+</p><p class="text-sm text-gray-500 mt-1">sqm Factory</p></div><div class="bg-gray-50 rounded-xl p-4 text-center"><p class="text-2xl font-bold text-[#F87314]">200+</p><p class="text-sm text-gray-500 mt-1">Staff</p></div><div class="bg-gray-50 rounded-xl p-4 text-center"><p class="text-2xl font-bold text-[#F87314]">50+</p><p class="text-sm text-gray-500 mt-1">Machines</p></div><div class="bg-gray-50 rounded-xl p-4 text-center"><p class="text-2xl font-bold text-[#F87314]">15+</p><p class="text-sm text-gray-500 mt-1">Years</p></div></div><h3>Core Printing Equipment</h3><div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6"><div class="rounded-xl overflow-hidden border border-gray-100"><img loading="lazy" decoding="async" width="400" height="300" src="/images/factory/factory-heidelberg-6plus1.jpg" alt="Heidelberg 6+1 Printing Machine" class="w-full aspect-[4/3] object-cover"/><div class="p-3"><p class="font-semibold text-sm text-[#333333]">Heidelberg 6+1 Printing Press</p><p class="text-xs text-gray-500 mt-1">High-precision color reproduction</p></div></div><div class="rounded-xl overflow-hidden border border-gray-100"><img loading="lazy" decoding="async" width="400" height="300" src="/images/factory/factory-hp-digital.png" alt="HP Digital Printer" class="w-full aspect-[4/3] object-cover"/><div class="p-3"><p class="font-semibold text-sm text-[#333333]">HP Digital Printer</p><p class="text-xs text-gray-500 mt-1">Variable data printing support</p></div></div><div class="rounded-xl overflow-hidden border border-gray-100"><img loading="lazy" decoding="async" width="400" height="300" src="/images/factory/factory-weigang-uv.jpg" alt="Weigang 6-Color UV Rotary Press" class="w-full aspect-[4/3] object-cover"/><div class="p-3"><p class="font-semibold text-sm text-[#333333]">Weigang 6-Color UV Rotary</p><p class="text-xs text-gray-500 mt-1">Instant UV curing technology</p></div></div><div class="rounded-xl overflow-hidden border border-gray-100"><img loading="lazy" decoding="async" width="400" height="300" src="/images/factory/factory-color-chart.jpg" alt="Color Management" class="w-full aspect-[4/3] object-cover"/><div class="p-3"><p class="font-semibold text-sm text-[#333333]">Professional Color Management</p><p class="text-xs text-gray-500 mt-1">Consistent batch quality</p></div></div></div><h3>Post-Processing Equipment</h3><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Martini Perfect Binding Line</strong>: Automated book binding</li><li><strong>Heidelberg Folding Machines</strong>: Multi-unit folding capacity</li><li><strong>Automatic Carton Gluing</strong>: Efficient packaging production</li><li><strong>Die-cutting, Foil, UV</strong>: Comprehensive finishing</li></ul><div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6"><div class="rounded-xl overflow-hidden border border-gray-100"><img loading="lazy" decoding="async" width="400" height="300" src="/images/factory/factory-martini-1.jpg" alt="Martini Binding Workshop" class="w-full aspect-[4/3] object-cover"/><div class="p-3"><p class="font-semibold text-sm text-[#333333]">Martini Perfect Binding Workshop</p></div></div><div class="rounded-xl overflow-hidden border border-gray-100"><img loading="lazy" decoding="async" width="400" height="300" src="/images/factory/factory-heidelberg-folding.jpg" alt="Heidelberg Folding" class="w-full aspect-[4/3] object-cover"/><div class="p-3"><p class="font-semibold text-sm text-[#333333]">Heidelberg Folding Machines</p></div></div><div class="rounded-xl overflow-hidden border border-gray-100"><img loading="lazy" decoding="async" width="400" height="300" src="/images/factory/factory-gluing.jpg" alt="Gluing Workshop" class="w-full aspect-[4/3] object-cover"/><div class="p-3"><p class="font-semibold text-sm text-[#333333]">Automatic Carton Gluing</p></div></div><div class="rounded-xl overflow-hidden border border-gray-100"><img loading="lazy" decoding="async" width="400" height="300" src="/images/factory/factory-manual.jpg" alt="Manual Workshop" class="w-full aspect-[4/3] object-cover"/><div class="p-3"><p class="font-semibold text-sm text-[#333333]">Handcraft Finishing Workshop</p></div></div></div><h3>Contact Us</h3><div class="bg-gray-50 rounded-xl p-5 my-4 space-y-2"><p><strong>WhatsApp:</strong> <a href="https://wa.me/8618126380255" target="_blank">+86 181 2638 0255</a></p><p><strong>Hours:</strong> Mon-Sat 09:00 - 21:00 (HKT)</p><p><strong>Address:</strong> Pinghu Street, Longgang District, Shenzhen</p></div>` },
-    'sticker-guide': { title: 'Complete Sticker Printing Guide: Materials, Finishes & Applications', description: 'Deep dive into sticker material choices, surface treatments, and application scenarios.', date: '2024-04-15', category: 'Sticker Guide', content: `<p>Stickers are essential elements in brand promotion and product packaging. This guide covers everything you need to know about sticker printing in Hong Kong.</p><h3>Material Comparison</h3><p>Choose from art paper, waterproof synthetic, transparent PET, and holographic options. Each material serves different purposes and environments.</p><h3>Surface Finishes</h3><p>Glossy, matte, foil stamping, and spot UV each create unique visual effects. Select based on your brand positioning.</p><p>Order your <a href="/en/product/waterproof-stickers/">waterproof stickers</a> or <a href="/en/product/transparent-stickers/">transparent stickers</a> today!</p>` },
-    'business-card-design': { title: '10 Golden Rules for Business Card Design', description: 'Master the core techniques of business card design.', date: '2024-04-10', category: 'Card Guide', content: `<p>Business cards create the first impression in commercial interactions. Here are 10 golden rules from ZprintPro design experts.</p><h3>Rule 1: White Space is Essential</h3><p>Don't overcrowd your card. Leave adequate breathing room for key information.</p><p>Order <a href="/en/product/premium-business-cards/">premium business cards</a> with professional design support.</p>` },
-    'packaging-trends': { title: '2024 Packaging Design Trends Analysis', description: 'Explore latest packaging design trends.', date: '2024-04-05', category: 'Packaging Guide', content: `<p>Packaging design is undergoing a revolution. Discover the top trends for 2024.</p><h3>Trend 1: Minimalism Continues</h3><p>Clean, simple designs with ample white space dominate the market.</p><p>Get your <a href="/en/product/gift-boxes/">custom gift boxes</a> today!</p>` },
-    'cmyk-guide': { title: 'CMYK vs RGB: Complete Guide to Print Color Modes', description: 'Understand color modes for optimal print results.', date: '2024-03-28', category: 'Printing Techniques', content: `<p>Color management is key to print quality. Learn the difference between RGB and CMYK.</p><h3>Why Convert to CMYK?</h3><p>Printers use CMYK inks. RGB colors must be converted, which can cause shifts in bright colors.</p>` },
-    'paper-materials': { title: 'Paper Selection Guide: From Art Paper to Specialty Stock', description: 'Analysis of different paper characteristics.', date: '2024-03-20', category: 'Printing Techniques', content: `<p>Paper is the soul of printed materials. Explore 300+ paper options at ZprintPro.</p><h3>Art Paper</h3><p>Smooth surface, high color reproduction. Ideal for catalogs and posters.</p>` },
-    'eco-printing': { title: 'Eco-Friendly Printing: The Future of Sustainable Packaging', description: 'Learn about eco-friendly printing materials.', date: '2024-03-15', category: 'Industry Trends', content: `<p>Sustainability has become a global trend. Discover eco-friendly printing options.</p><h3>Eco Materials</h3><p>Recycled paper, soy-based inks, and biodegradable options available.</p>` },
-    'hong-kong-printing-guide': { title: 'Hong Kong Printing Company Guide: Kwun Tong, Kowloon & NT', description: 'Compare printing companies across Hong Kong from pricing to quality to find your ideal partner.', date: '2024-05-20', category: 'Hong Kong Local', content: `<p>Hong Kong is a global business hub with thousands of companies needing printing services daily. This guide compares printing companies across Kwun Tong, Kowloon, and the New Territories.</p><h3>Hong Kong Printing Districts</h3><p>Kwun Tong remains the traditional industrial heartland with the highest concentration of printing factories. Kowloon Bay offers design-printing integration, while Tsuen Wan provides cost-effective solutions.</p><p><a href="https://wa.me/8618126380255" target="_blank">Contact ZprintPro</a> for a free quote.</p>` },
-    'design-file-specs': { title: 'Print File Design Specifications: Bleed, Resolution & Color Modes', description: 'Master bleed settings, resolution requirements, and color mode conversions for perfect prints.', date: '2024-05-15', category: 'Design Tips', content: `<p>Common print file mistakes include white edges, blurry images, and color shifts. This guide covers bleed, resolution, and color modes.</p><h3>Bleed Settings</h3><p>Always add 3mm bleed beyond the final trim size to avoid white edges after cutting.</p><h3>Resolution Standards</h3><p>300dpi is the standard for business cards and brochures. Large posters can use 150dpi.</p><p><a href="https://wa.me/8618126380255" target="_blank">Contact us</a> for free file checking.</p>` },
-    'brand-materials-checklist': { title: 'Corporate Brand Materials Checklist: From Cards to Displays', description: 'A complete checklist of printed brand materials for startups and brand refreshes.', date: '2024-05-10', category: 'Branding', content: `<p>Building a brand requires systematic material support. From <a href="/en/product/premium-business-cards/">business cards</a> to <a href="/en/product/gift-boxes/">packaging</a>, every touchpoint matters.</p><h3>Essential Brand Items</h3><ul class="list-disc pl-5 my-3 space-y-1"><li>Business cards, envelopes, letterheads</li><li>Flyers, brochures, posters, banners</li><li>Packaging: bags, boxes, labels</li></ul><p><a href="https://wa.me/8618126380255" target="_blank">Contact ZprintPro</a> for a custom brand package.</p>` },
-    'mtr-advertising-specs': { title: 'MTR Advertising Print Specs: Island, Kwun Tong & Tsuen Wan Lines', description: 'Detailed specifications and strategies for MTR advertising across Hong Kong.', date: '2024-05-05', category: 'Hong Kong Local', content: `<p>Hong Kong's MTR serves over 5 million passengers daily. This guide covers advertising specs and placement strategies.</p><h3>Advertising Formats</h3><ul class="list-disc pl-5 my-3 space-y-1"><li>Platform lightboxes (12-sheet / 48-sheet)</li><li>Concourse displays</li><li>Platform screen door ads</li><li>Train interior posters</li></ul><p><a href="https://wa.me/8618126380255" target="_blank">Contact us</a> for MTR advertising material printing.</p>` },
+    'company-intro': { title: 'About ZprintPro: Professional Equipment & One-Stop Printing Services', description: 'ZprintPro features Heidelberg 6+1 printing presses, HP digital printers, and Martini perfect binding lines for full-service printing solutions.', date: '2024-06-01', category: 'Company News', content: `<p>ZprintPro is a Shenzhen-rooted, globally-serving printing enterprise with 15+ years of expertise. From corporate stationery to retail packaging, this article gives an in-depth look at our company profile, core equipment, post-press capabilities, quality commitments, cross-border services, and contacts.</p>
+<p>ZprintPro operates an 8,000+ square-meter modern facility in Longgang District, Shenzhen — strategically positioned next to Hong Kong's logistics grid. With 200+ professionals, we deliver hundreds of millions of impressions annually across commercial, packaging, publishing, and digital print.</p>
+<h3>1. Company Profile</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Metric</th><th class="border p-2 text-left">Scale</th></tr></thead><tbody><tr><td class="border p-2">8,000+</td><td class="border p-2">sq.m Facility</td></tr><tr><td class="border p-2">200+</td><td class="border p-2">Professionals</td></tr><tr><td class="border p-2">50+</td><td class="border p-2">Advanced Machines</td></tr><tr><td class="border p-2">15+</td><td class="border p-2">Years of Expertise</td></tr></tbody></table>
+<h3>2. Core Printing Equipment</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Heidelberg 6+1 Press</strong>: German-engineered precision, superior color reproduction</li><li><strong>HP Indigo Digital Press</strong>: Variable-data, short runs, on-demand book production</li><li><strong>Weigang 6-color UV Rotary</strong>: Cures instantly, supports unusual substrates and specialty finishes</li><li><strong>Professional Color Management</strong>: Pressman-grade calibration</li></ul>
+<h3>3. Post-Press Capabilities</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Martini Perfect Binding Line</strong>: Automated binding for books, catalogs</li><li><strong>Heidelberg Folding Line</strong>: Multiple folding patterns</li><li><strong>Fully-Automatic Box Gluing</strong>: High-speed folding carton assembly</li><li><strong>Die-cutting / Foil / UV / Embossing</strong>: All specialty finishes under one roof</li></ul>
+<h3>4. Quality & Service Commitments</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>Quality First</strong>: Eco-friendly inks and papers, ISO 9001 certified</li><li><strong>Rush Delivery</strong>: 24-hour rush for HK, 3-5 days standard</li><li><strong>Dedicated Account Manager</strong>: One-on-one from quote to delivery</li><li><strong>Transparent Pricing</strong>: Quote equals final — no hidden fees</li><li><strong>Cross-Border Expertise</strong>: Familiar with e-com packaging and customs docs</li></ol>
+<h3>5. Cross-Border & Overseas Service</h3>
+<p>Beyond Hong Kong, we serve Japan, Southeast Asia, Europe, the Americas and Oceania. For cross-border orders, we know each country's customs requirements and packaging compliance — we help you design packaging that passes local regulations.</p>
+<h3>6. How to Contact ZprintPro</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：What is the minimum order quantity?</strong><br/>A：From 100 pieces. Rush from 1 piece supported.</p><p><strong>Q：How fast can I get my order?</strong><br/>A：Artwork confirmed before 11am — same-day pickup for 300g art paper.</p><p><strong>Q：Do you handle international shipping?</strong><br/>A：Yes — DHL / FedEx / SF International. Europe and US in 5-7 days.</p><p><strong>Q：Do you offer design services?</strong><br/>A：Yes — from HK$500/design, includes 2 rounds of revisions.</p></div>
+<p>Contact <a href="https://wa.me/8618126380255" target="_blank">ZprintPro via WhatsApp</a> for a free quote and expert advice!</p>` },
+    'sticker-guide': { title: 'Complete Sticker Printing Guide: Materials, Finishes & Applications', description: 'Deep dive into sticker material choices, surface treatments, and application scenarios.', date: '2024-04-15', category: 'Sticker Guide', content: `<p>Stickers are indispensable for brand promotion and product packaging. From product labels to promotional giveaways to personalized decoration, the right material and finish can dramatically elevate your brand. This guide covers sticker materials, surface finishes, selection framework, die-cut shapes, applications, and FAQs.</p>
+<h3>1. Sticker Material Comparison</h3>
+<p>Material choice directly affects durability, print quality, and cost:</p>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Material</th><th class="border p-2 text-left">Features</th><th class="border p-2 text-left">Best For</th><th class="border p-2 text-left">Price</th></tr></thead><tbody><tr><td class="border p-2">Art Paper</td><td class="border p-2">Low cost, vibrant colors</td><td class="border p-2">Promo labels, temporary use</td><td class="border p-2">US$0.06-0.20/pc</td></tr><tr><td class="border p-2">Waterproof Synthetic</td><td class="border p-2">Water/oil resistant, durable</td><td class="border p-2">Food labels, outdoor use</td><td class="border p-2">US$0.15-0.40/pc</td></tr><tr><td class="border p-2">Transparent PET</td><td class="border p-2">Crystal clear, premium feel</td><td class="border p-2">Glass bottles, luxury packaging</td><td class="border p-2">US$0.25-0.65/pc</td></tr><tr><td class="border p-2">Holographic</td><td class="border p-2">Anti-counterfeit, eye-catching</td><td class="border p-2">Security labels, certificates</td><td class="border p-2">US$0.40-1.00/pc</td></tr><tr><td class="border p-2">Kraft Paper</td><td class="border p-2">Eco, vintage look</td><td class="border p-2">Handcraft brands, organic food</td><td class="border p-2">US$0.20-0.50/pc</td></tr></tbody></table>
+<h3>2. Surface Finish Options</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Glossy Lamination</strong>: Smooth, reflective, vibrant color saturation</li><li><strong>Matte Lamination</strong>: Soft, non-reflective, premium understated feel</li><li><strong>Foil Stamping</strong>: Gold/silver/rose gold metallic shine, elevates luxury feel</li><li><strong>Spot UV</strong>: Highlights specific elements, adds dimensional depth</li><li><strong>Embossing / Debossing</strong>: Inkless dimensional texture, perfect for minimalist designs</li></ul>
+<h3>3. How to Choose the Right Sticker</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>Use Environment</strong>: Indoor vs outdoor? Water/oil contact? Cold storage?</li><li><strong>Adhesion Surface</strong>: Paper, plastic, metal, glass, curved?</li><li><strong>Usage Duration</strong>: Short-term promotion (3 months) vs long-term label (1-3 years)?</li><li><strong>Budget</strong>: Art paper is most economical; specialty materials cost more</li><li><strong>Design Complexity</strong>: Simple blocks vs multi-color gradients affects finish choice</li></ol>
+<h3>4. Die-Cut Shape & Size Design</h3>
+<p>Sticker shape directly impacts visual impact and brand recognition:</p>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Circle / Oval</strong>: Classic, versatile, ideal for brand logos</li><li><strong>Square / Rectangle</strong>: Information-dense, perfect for barcodes and product labels</li><li><strong>Die-cut</strong>: Cut to any shape — strongest visual but higher cost</li><li><strong>Kiss-cut</strong>: Backing paper stays intact — easier to peel and distribute</li></ul>
+<h3>5. Real-World Sticker Applications</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Food packaging labels</strong>: Ingredients, nutrition facts, expiry dates</li><li><strong>Cosmetic bottle labels</strong>: Premium branding with transparent PET + foil</li><li><strong>Promotional stickers</strong>: Limited edition numbers, event badges — art paper + gloss</li><li><strong>Shipping labels</strong>: Tracking labels, QR codes — waterproof synthetic</li><li><strong>Decorative stickers</strong>: Planner stickers, kids' sticker books — multi-color + die-cut</li></ul>
+<h3>6. Frequently Asked Questions</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：What is the minimum order quantity (MOQ)?</strong><br/>A：Standard 100 pieces. Some specialty finishes require 500+ pieces.</p><p><strong>Q：Can waterproof stickers really be submerged?</strong><br/>A：Yes — synthetic paper + waterproof adhesive withstands brief submersion and repeated washings.</p><p><strong>Q：How long does production take?</strong><br/>A：Standard 3-5 working days. Rush same-day pickup available.</p><p><strong>Q：What file format should I provide?</strong><br/>A：AI / PDF / EPS vector preferred. 300dpi resolution, CMYK color mode.</p></div>
+<p>For any sticker need, contact <a href="https://wa.me/8618126380255" target="_blank">ZprintPro via WhatsApp</a> for a free quote and expert advice!</p>` },
+    'business-card-design': { title: '10 Golden Rules for Business Card Design', description: 'Master the core techniques of business card design.', date: '2024-04-10', category: 'Card Guide', content: `<p>A business card is your first impression in business interactions. A well-designed card conveys contact information while expressing your brand's professionalism. This guide breaks down 10 golden rules for business card design, covering white space, typography, color, materials, information hierarchy, double-sided design, QR code, and print specifications.</p>
+<h3>Rule 1: White Space Is the Soul of Design</h3>
+<p>Don't try to fit everything onto one card. Proper white space makes important content stand out and conveys a clean, professional feel. Keep information area to under 60% of total card surface.</p>
+<h3>Rule 2: Typography Selection & Hierarchy</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Font Count</strong>: Maximum two — one for name/title, one for contact info</li><li><strong>Bilingual Layout</strong>: Pair Noto Sans / Source Han Sans with Helvetica / Montserrat for clean CJK + Latin pairing</li><li><strong>Size Hierarchy</strong>: Name 12pt, Title 9pt, Company 8pt, Contact 7pt</li><li><strong>Weight</strong>: Bold for name and company; Regular for contact info</li></ul>
+<h3>Rule 3: Color Psychology & Brand Personality</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Color</th><th class="border p-2 text-left">Psychology</th><th class="border p-2 text-left">Best For</th></tr></thead><tbody><tr><td class="border p-2">Blue</td><td class="border p-2">Professional, trustworthy, stable</td><td class="border p-2">Finance, tech, B2B</td></tr><tr><td class="border p-2">Red</td><td class="border p-2">Passionate, energetic, attention-grabbing</td><td class="border p-2">Sales, F&B, events</td></tr><tr><td class="border p-2">Black</td><td class="border p-2">Luxurious, premium, minimalist</td><td class="border p-2">Luxury, design studios</td></tr><tr><td class="border p-2">Green</td><td class="border p-2">Eco, healthy, natural</td><td class="border p-2">Healthcare, organic, ESG brands</td></tr><tr><td class="border p-2">Gold</td><td class="border p-2">Premium, wealth, traditional</td><td class="border p-2">Real estate, private banking, law</td></tr></tbody></table>
+<h3>Rule 4: Material Selection & Tactile Design</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>300g Art Paper</strong>: Economical, suitable for mass distribution</li><li><strong>400g Thick Card</strong>: Substantial feel, conveys premium quality</li><li><strong>Specialty Paper</strong>: Linen, cotton, textured — unique tactile experience</li><li><strong>Recycled Paper</strong>: FSC certified, eco-conscious</li></ol>
+<h3>Rule 5: Double-Sided Design & QR Code Usage</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Front</strong>: Name, title, logo, primary contact — essential info</li><li><strong>Back</strong>: Brand statement, product QR code, map, English translation — secondary</li><li><strong>QR Code</strong>: Add WhatsApp / IG QR for one-scan connect, boost conversion</li><li><strong>Rounded Corners</strong>: R3-R5 rounded corner treatment — designed, avoids wear</li></ul>
+<h3>Rule 6: Print File Specifications & Common Mistakes</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Insufficient Bleed</strong>: Final size 90×54mm, design at 96×60mm (3mm bleed)</li><li><strong>Wrong Color Mode</strong>: Must be CMYK — RGB prints dull</li><li><strong>Low Resolution</strong>: Minimum 300dpi for images</li><li><strong>Unconverted Fonts</strong>: Convert text to outlines in AI/PDF</li></ul>
+<h3>Frequently Asked Questions</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：What is the minimum order quantity?</strong><br/>A：100 pieces — the industry standard minimum.</p><p><strong>Q：Can I get same-day business cards?</strong><br/>A：Artwork confirmed before 11am yields same-day pickup for 300g art paper. Specialty finishes add 1-2 working days.</p><p><strong>Q：Will double-sided cards show through?</strong><br/>A：At 300g+ paper, generally no. For heavy dark coverage, choose 400g or print white underlay.</p><p><strong>Q：What file format should I provide?</strong><br/>A：AI / PDF (outlined fonts) preferred, CMYK, 300dpi, with 3mm bleed.</p></div>
+<p>Ready to upgrade your business cards? Contact <a href="https://wa.me/8618126380255" target="_blank">ZprintPro via WhatsApp</a> for design advice and a quote!</p>` },
+    'packaging-trends': { title: '2024 Packaging Design Trends Analysis', description: 'Explore latest packaging design trends.', date: '2024-04-05', category: 'Packaging Guide', content: `<p>In competitive retail, packaging is both protection and a brand's first touchpoint with consumers. What new directions will packaging design take in 2024-2026? This article systematically analyzes minimalism, sustainable packaging, personalization, smart packaging, unboxing experience, and a buying guide across 6 dimensions.</p>
+<h3>Trend 1: Minimalism Continues to Dominate</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li>Generous white space for visual comfort</li><li>Single dominant color (black/white + brand color)</li><li>Refined product name with strong typography</li><li>No decorative patterns — texture wins</li><li>Brand examples: Aesop, Apple, MUJI</li></ul>
+<h3>Trend 2: Sustainable Packaging Becomes Standard</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Eco Material</th><th class="border p-2 text-left">Features</th><th class="border p-2 text-left">Best For</th></tr></thead><tbody><tr><td class="border p-2">Recycled Cardboard</td><td class="border p-2">FSC certified, recyclable</td><td class="border p-2">Cosmetics, food, retail</td></tr><tr><td class="border p-2">Bagasse Pulp Mold</td><td class="border p-2">Compostable, industrial</td><td class="border p-2">Electronics inner tray</td></tr><tr><td class="border p-2">Plant-Based Ink</td><td class="border p-2">Soy ink, eco ink</td><td class="border p-2">All printed products</td></tr><tr><td class="border p-2">Water-Soluble Glue</td><td class="border p-2">Biodegradable, non-toxic</td><td class="border p-2">Box assembly</td></tr><tr><td class="border p-2">PLA Lamination</td><td class="border p-2">Biodegradable plastic alternative</td><td class="border p-2">Food packaging</td></tr></tbody></table>
+<h3>Trend 3: Personalization & Small-Batch Customization</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li>Consumers crave unique experiences — small-batch multi-SKU packaging becomes the new normal</li><li>100-piece minimum gift box customization solves SMB pain points</li><li>Variable data printing (different name/number per box) becomes limited-edition marketing tool</li><li>Variable data printing costs decreasing year-over-year</li><li>Holiday limited packaging (Christmas, New Year) becomes annual flagship strategy</li></ol>
+<h3>Trend 4: Smart Packaging on the Rise</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>AR (Augmented Reality)</strong>: Scan packaging for animations, tutorials, brand stories</li><li><strong>NFC Chips</strong>: Tap phone to redirect to product traceability or brand site</li><li><strong>Temperature Indicators</strong>: Critical for food and pharma cold chain</li><li><strong>Anti-Counterfeit QR</strong>: Consumer scan to verify authenticity, build trust</li></ul>
+<h3>Trend 5: Unboxing Experience as Emotional Design</h3>
+<p>Packaging evolves from "container" to "brand ritual":</p>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Inner Tray Design</strong>: Velvet, EVA, molded pulp — boosts protection and perception</li><li><strong>Thank-You Card</strong>: Hand-feel printing conveys brand warmth</li><li><strong>Anti-Counterfeit Stickers</strong>: Memorabilia for first-open experience</li><li><strong>QR Gift Codes</strong>: Scan to claim coupons or join membership</li></ul>
+<h3>Popular Packaging Types</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Type</th><th class="border p-2 text-left">Best For</th><th class="border p-2 text-left">Features</th></tr></thead><tbody><tr><td class="border p-2">Gift Box</td><td class="border p-2">Cosmetics, jewelry, electronics</td><td class="border p-2">Premium appearance, brand elevation</td></tr><tr><td class="border p-2">Mailer Box</td><td class="border p-2">E-commerce products</td><td class="border p-2">Durable, shipping-safe</td></tr><tr><td class="border p-2">Cosmetic Box</td><td class="border p-2">Skincare, makeup</td><td class="border p-2">Stylish, brand-positive</td></tr><tr><td class="border p-2">Food Box</td><td class="border p-2">Bakery, snacks, takeaway</td><td class="border p-2">Food-grade material, hygienic</td></tr></tbody></table>
+<h3>Frequently Asked Questions</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：What is the MOQ for packaging boxes?</strong><br/>A：100 pieces for standard gift boxes.</p><p><strong>Q：Do you offer design services?</strong><br/>A：Yes — from US$100/design, includes 2 revisions and 3D mockup.</p><p><strong>Q：Is eco-material truly eco-friendly?</strong><br/>A：FSC certified cardboard + soy ink meets EU eco standards.</p><p><strong>Q：Can you produce custom shapes?</strong><br/>A：Yes — custom die-cut available; tooling fee applies.</p></div>
+<p>Want the perfect packaging for your product? Contact <a href="https://wa.me/8618126380255" target="_blank">ZprintPro via WhatsApp</a> for a free design proposal!</p>` },
+    'cmyk-guide': { title: 'CMYK vs RGB: Complete Guide to Print Color Modes', description: 'Understand color modes for optimal print results.', date: '2024-03-28', category: 'Printing Techniques', content: `<p>CMYK vs RGB is foundational for print color quality control. Many clients discover their printed color doesn't match their screen — usually from misunderstanding color modes. This guide covers RGB, CMYK, ICC color management, Pantone spot color, Delta E color difference, and ZprintPro color management services across six dimensions.</p>
+<h3>1. RGB Color Mode Explained</h3>
+<p>RGB is additive light color — red, green, blue primaries mixing at different intensities to create all display colors. RGB has a wide gamut, but cannot be fully reproduced by print inks for all RGB colors.</p>
+<h3>2. CMYK Color Mode Explained</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Four Inks</strong>: Cyan (C), Magenta (M), Yellow (Y), Black (K)</li><li><strong>Subtractive Color</strong>: Four inks overprint on paper, absorb light, create color</li><li><strong>Narrower Gamut</strong>: Due to ink physics, some RGB vivid colors cannot be 100% reproduced</li><li><strong>K Channel Role</strong>: Black ink for text, fine detail, and shadow areas</li></ul>
+<h3>3. Why Files Must Be Converted to CMYK Before Print</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">RGB Color</th><th class="border p-2 text-left">Print Issue</th><th class="border p-2 text-left">Solution</th></tr></thead><tbody><tr><td class="border p-2">RGB Vivid Red</td><td class="border p-2">Cannot reproduce</td><td class="border p-2">Use CMYK red (M100+Y100) or Pantone</td></tr><tr><td class="border p-2">RGB Fluorescent</td><td class="border p-2">Almost entirely lost</td><td class="border p-2">Must use Pantone spot color</td></tr><tr><td class="border p-2">RGB Light Blue</td><td class="border p-2">Hue shift</td><td class="border p-2">Adjust saturation after RGB→CMYK</td></tr><tr><td class="border p-2">RGB Deep Purple</td><td class="border p-2">Often close</td><td class="border p-2">Test then fine-tune</td></tr></tbody></table>
+<h3>4. ICC Color Management & Delta E (ΔE)</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>ICC Profile</strong>: Each press/paper/ink combo has its own ICC profile defining color mapping</li><li><strong>ΔE Color Difference</strong>: ΔE ≤ 2 imperceptible; ΔE 2-5 noticeable on close inspection; ΔE > 5 visible difference</li><li><strong>ZprintPro Equipment</strong>: Heidelberg press + X-Rite eXact spectrophotometer, batch ΔE sampling</li><li><strong>Client Preparation</strong>: Embed ISO Coated v2 or GRACoL standard ICC profile in design files</li></ol>
+<h3>5. Pantone Spot Color Printing</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>What is Spot Color</strong>: Pre-mixed specific ink (e.g., Pantone 185 C vivid red)</li><li><strong>Use Cases</strong>: Brand standard colors (Coca-Cola red, Starbucks green), metallic, fluorescent</li><li><strong>Cost Consideration</strong>: Spot color requires extra print unit, +30-50% unit cost</li><li><strong>Hybrid Solution</strong>: CMYK + 1 Pantone spot plate is a common combination</li></ul>
+<h3>6. Frequently Asked Questions</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：Can RGB files be printed directly?</strong><br/>A：Not recommended. RGB print will shift color and darken. Convert to CMYK with ICC profile.</p><p><strong>Q：Why do prints look less vivid than screen?</strong><br/>A：May still be in RGB mode or CMYK settings off. Recommend a proof to confirm.</p><p><strong>Q：Is Pantone spot color more accurate?</strong><br/>A：Yes — Pantone pre-mixed inks have higher stability than CMYK overprint.</p><p><strong>Q：Can you provide a color proof?</strong><br/>A：Yes — digital proof US$25/sheet, traditional proof US$65/sheet.</p></div>
+<p>Want more on color management? Contact <a href="https://wa.me/8618126380255" target="_blank">ZprintPro via WhatsApp</a> for professional advice!</p>` },
+    'paper-materials': { title: 'Paper Selection Guide: From Art Paper to Specialty Stock', description: 'Analysis of different paper characteristics.', date: '2024-03-20', category: 'Printing Techniques', content: `<p>Paper is the soul of any print piece. Different paper stocks affect not only visual impact but also tactile impression. ZprintPro offers 300+ paper options. This article systematically covers six common paper categories — art paper, woodfree, kraft, specialty, paper selection table, and real cases — to help you pick the right stock for your project.</p>
+<h3>1. Art Paper</h3>
+<p>The most common premium print paper — smooth, vivid color reproduction. Ideal for catalogs, posters, flyers that need vibrant color.</p>
+<h3>2. Woodfree Paper</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Surface Texture</strong>: Subtle texture, natural feel</li><li><strong>Reading Comfort</strong>: Non-glossy, no eye strain on long reading</li><li><strong>Typical Uses</strong>: Books, notebooks, stationery, invoices, contracts</li><li><strong>Common Weights</strong>: 80g, 100g, 120g</li></ul>
+<h3>3. Kraft Paper</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Paper</th><th class="border p-2 text-left">Features</th><th class="border p-2 text-left">Best For</th></tr></thead><tbody><tr><td class="border p-2">White Kraft</td><td class="border p-2">Pure white, high stiffness, dye-able</td><td class="border p-2">Premium brands, cosmetics, gifts</td></tr><tr><td class="border p-2">Yellow Kraft</td><td class="border p-2">Eco, vintage, affordable</td><td class="border p-2">Coffee shops, organic brands, retail</td></tr><tr><td class="border p-2">Black Kraft</td><td class="border p-2">Mysterious premium, unique texture</td><td class="border p-2">High-end brands, limited editions</td></tr><tr><td class="border p-2">Recycled Kraft</td><td class="border p-2">Eco certified, distinctive texture</td><td class="border p-2">Eco brands, organic products</td></tr></tbody></table>
+<h3>4. Specialty Papers</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>Pearl Paper</strong>: Pearl shimmer surface — for cosmetics, premium invitations</li><li><strong>Linen Paper</strong>: Horizontal line texture, strong tactile — for catalog covers</li><li><strong>Conqueror Paper</strong>: Elegant texture, British style — for certificates, menus</li><li><strong>Cotton Paper</strong>: Cotton fibers, soft tactile — for premium business cards</li><li><strong>Leather Paper</strong>: Faux leather texture — for gift boxes, invitations</li></ol>
+<h3>5. Paper Selection Cheat Sheet</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Product</th><th class="border p-2 text-left">Recommended Paper</th><th class="border p-2 text-left">Weight</th></tr></thead><tbody><tr><td class="border p-2">Business Cards</td><td class="border p-2">300g art paper / specialty</td><td class="border p-2">300-400g</td></tr><tr><td class="border p-2">Flyers</td><td class="border p-2">157g art paper</td><td class="border p-2">128-200g</td></tr><tr><td class="border p-2">Catalogs</td><td class="border p-2">200g art cover + 157g inner</td><td class="border p-2">157-250g</td></tr><tr><td class="border p-2">Packaging Boxes</td><td class="border p-2">White card / kraft</td><td class="border p-2">250-400g</td></tr><tr><td class="border p-2">Envelopes</td><td class="border p-2">100g woodfree / kraft</td><td class="border p-2">100-120g</td></tr></tbody></table>
+<h3>6. Frequently Asked Questions</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：How do I pick among 300+ papers?</strong><br/>A：ZprintPro offers a free sample box (US$25 including shipping) — see physical samples before deciding.</p><p><strong>Q：What is the difference between art paper and woodfree?</strong><br/>A：Art paper is smooth and reflective, vivid colors. Woodfree is slightly textured, ideal for text reading.</p><p><strong>Q：Can I mix paper stocks?</strong><br/>A：Yes. 200g art cover with 80g woodfree inner pages is common in catalogs.</p><p><strong>Q：What eco-paper options are available?</strong><br/>A：FSC recycled, hemp, bamboo pulp, cotton paper — from US$25/stock.</p></div>
+<p>Want to see all 300+ papers? Contact <a href="https://wa.me/8618126380255" target="_blank">ZprintPro via WhatsApp</a> for samples and a quote!</p>` },
+    'eco-printing': { title: 'Eco-Friendly Printing: The Future of Sustainable Packaging', description: 'Learn about eco-friendly printing materials.', date: '2024-03-15', category: 'Industry Trends', content: `<p>Sustainability is now a global trend. More companies embed ESG (Environmental, Social, Governance) into core strategy, and eco-printing is a key part of that. This article provides systematic green printing guidance across six dimensions: definition, materials, processes, certifications, real applications, and ESG report strategy.</p>
+<h3>1. What is Eco-Printing?</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Recycled or FSC certified paper</strong>: FSC certification ensures sustainable paper sources</li><li><strong>Soy-based and plant-based inks</strong>: Low VOC, biodegradable</li><li><strong>Reduce chemicals</strong>: Eco-printing replaces IPA and other harmful solvents used in traditional printing</li><li><strong>Optimize production for lower energy use</strong>: Smart imposition, waste recycling, energy-efficient equipment</li><li><strong>Minimize waste</strong>: Precise paper calculation, reduce trim loss</li></ul>
+<h3>2. Eco-Material Recommendations</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Eco Material</th><th class="border p-2 text-left">Features</th><th class="border p-2 text-left">Applications</th></tr></thead><tbody><tr><td class="border p-2">Recycled paper</td><td class="border p-2">100% recycled pulp, FSC certified</td><td class="border p-2">Envelopes, stationery, memos</td></tr><tr><td class="border p-2">Soy ink</td><td class="border p-2">Biodegradable, low VOC</td><td class="border p-2">All printed products</td></tr><tr><td class="border p-2">Plant-based ink</td><td class="border p-2">Pure plant formula</td><td class="border p-2">Food packaging</td></tr><tr><td class="border p-2">Water-based lamination</td><td class="border p-2">Solvent-free</td><td class="border p-2">Children products</td></tr><tr><td class="border p-2">Bagasse pulp mold</td><td class="border p-2">Compostable</td><td class="border p-2">Electronics inner tray</td></tr><tr><td class="border p-2">PLA lamination</td><td class="border p-2">Biodegradable</td><td class="border p-2">Food packaging</td></tr></tbody></table>
+<h3>3. ESG Report Printing Strategy</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>Carbon footprint disclosure</strong>: Calculate paper-to-delivery carbon footprint for prints</li><li><strong>Supply chain transparency</strong>: FSC CoC (Chain of Custody) certification for traceable pulp source</li><li><strong>Waste reduction targets</strong>: 5% reduction per year, 25% over 5 years</li><li><strong>Green procurement policy</strong>: Mandate eco certification from suppliers</li><li><strong>Client-side branding</strong>: Add green identifiers on packaging to communicate ESG commitment</li></ol>
+<h3>4. Certification Standards</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>FSC</strong>: Forest Stewardship Council — most authoritative global standard</li><li><strong>PEFC</strong>: Programme for the Endorsement of Forest Certification — alternative international standard</li><li><strong>Soy Ink Association</strong>: Soy Ink Technical Board certification</li><li><strong>ISO 14001</strong>: Environmental management system certification</li><li><strong>China Environmental Labeling</strong>: Ten-Ring certification, domestic eco-product mark</li></ul>
+<h3>5. Real-World Application Cases</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>ESG report printing</strong>: Public companies' annual & ESG reports often use 100% recycled + soy ink</li><li><strong>Brand eco-product lines</strong>: Patagonia, Allbirds use eco-friendly packaging</li><li><strong>Event memorabilia</strong>: Concert/marathon T-shirts/posters use bagasse pulp mold</li><li><strong>Children's products</strong>: Toy packaging, children's books use non-toxic water-based lamination</li></ul>
+<h3>6. Frequently Asked Questions</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：How much more does eco-printing cost?</strong><br/>A：Typically 10-30% more, but costs have dropped significantly with maturing technology.</p><p><strong>Q：Is FSC certified paper as durable?</strong><br/>A：Yes — FSC certification covers source, not paper quality.</p><p><strong>Q：Will soy ink fade?</strong><br/>A：No. Soy ink color stability is comparable to traditional ink.</p><p><strong>Q：Any eco-package for ESG reports?</strong><br/>A：Yes — 100% recycled + soy ink + water-based lamination package available.</p></div>
+<p>Want to add eco to your brand? Contact <a href="https://wa.me/8618126380255" target="_blank">ZprintPro via WhatsApp</a> for green printing solutions!</p>` },
+    'hong-kong-printing-guide': { title: 'Hong Kong Printing Company Guide: Kwun Tong, Kowloon & NT', description: 'Compare printing companies across Hong Kong from pricing to quality to find your ideal partner.', date: '2024-05-20', category: 'Hong Kong Local', content: `<p>Hong Kong as an international business hub has thousands of enterprises needing printing services daily. From business cards to flyers, gift boxes to paper bags, choosing a reliable printer is critical. This article systematically analyzes HK district printing characteristics, selection criteria, pitfall avoidance, service range, and cost considerations to help you find your ideal print partner.</p>
+<h3>1. Hong Kong Printing District Overview</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">District</th><th class="border p-2 text-left">Features</th><th class="border p-2 text-left">Best For</th></tr></thead><tbody><tr><td class="border p-2">Kwun Tong</td><td class="border p-2">Traditional industrial zone, dense printer cluster</td><td class="border p-2">Price competitive, ideal for bulk orders</td></tr><tr><td class="border p-2">Kowloon Bay</td><td class="border p-2">Emerging commercial area, design+print combination</td><td class="border p-2">Good for brand customization</td></tr><tr><td class="border p-2">Tsuen Wan</td><td class="border p-2">NT West center, lower rent</td><td class="border p-2">Cost-effective</td></tr><tr><td class="border p-2">Sheung Wan/Central</td><td class="border p-2">Premium commercial zone, premium printing focus</td><td class="border p-2">Higher prices, suits premium brands</td></tr></tbody></table>
+<h3>2. How to Evaluate Printing Company Reliability</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Equipment</strong>: Do they use Heidelberg, Komori, or other international press brands? Directly impacts color reproduction</li><li><strong>Color Management</strong>: Professional calibration process? Digital proofing available?</li><li><strong>Delivery Time</strong>: Standard 3-5 days; can they do 24-hour rush?</li><li><strong>Client Case Studies</strong>: Have they served known companies? Physical samples to inspect?</li><li><strong>After-Sales</strong>: How do they handle print quality issues?</li></ul>
+<h3>3. Kwun Tong Printing Advantages</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Price Competitiveness</strong>: Due to dense competition, 20-30% cheaper than Central at the same quality</li><li><strong>Adequate Capacity</strong>: Many large plants can handle 10,000+ piece orders</li><li><strong>Convenient Transport</strong>: MTR Kwun Tong line direct access, 10-min walk to most printers</li><li><strong>Complete Ecosystem</strong>: Design, print, post-press one-stop</li></ul>
+<h3>4. Common Pitfalls When Choosing a Printer</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li>Quotes too low — may use cheap paper or simplified color management, quality suffers</li><li>No proofing service — no recourse if result doesn't match expectations</li><li>No landline — small operation, weak after-sales</li><li>Late delivery — disrupts business timeline</li><li>No contract/invoice — no basis for dispute resolution</li></ol>
+<h3>5. ZprintPro's Differentiation</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li>German Heidelberg presses for precise color reproduction</li><li>24-hour rush printing support for HK fast-paced business</li><li>Free digital proofing before bulk print</li><li>Free delivery over HK$500, covering all 18 HK districts</li><li>One-stop service: design, print, delivery — worry-free</li></ul>
+<h3>6. Frequently Asked Questions</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：Where is HK's printing industry concentrated?</strong><br/>A：Kwun Tong is the traditional hub, dense capacity and competitive pricing.</p><p><strong>Q：How do I judge if a printer is reliable?</strong><br/>A：Check equipment (Heidelberg/Komori), proofing service, client cases, contract standards.</p><p><strong>Q：Difference between small and large printer?</strong><br/>A：Small = more flexible but limited capacity; large = strong capacity but may deprioritize small orders.</p><p><strong>Q：What if there's a print quality issue?</strong><br/>A：ZprintPro commits to quality responsibility — free reprint or refund.</p></div>
+<p>Whether business cards, flyers, paper bags, or packaging boxes — contact <a href="https://wa.me/8618126380255" target="_blank">ZprintPro via WhatsApp</a> for a free quote and professional advice.</p>` },
+    'design-file-specs': { title: 'Print File Design Specifications: Bleed, Resolution & Color Modes', description: 'Master bleed settings, resolution requirements, and color mode conversions for perfect prints.', date: '2024-05-15', category: 'Design Tips', content: `<p>Many designers and corporate marketing teams face issues when preparing print files: white edges appearing on finished prints, blurry images, color vastly different from screen — most come from misunderstanding print specifications. This guide covers six core concepts: bleed, resolution, color mode, file formats, font handling, and special effects.</p>
+<h3>1. What is Bleed?</h3>
+<p>Bleed is the area beyond the trim line in your design file. Since print requires trimming after production, if your design hits the exact edge, even tiny trim error leaves white edges. Standard practice: 3mm bleed beyond final size.</p>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Product</th><th class="border p-2 text-left">Final Size</th><th class="border p-2 text-left">Design Size (with bleed)</th></tr></thead><tbody><tr><td class="border p-2">Standard Business Card</td><td class="border p-2">90 × 54mm</td><td class="border p-2">96 × 60mm</td></tr><tr><td class="border p-2">A4 Flyer</td><td class="border p-2">210 × 297mm</td><td class="border p-2">216 × 303mm</td></tr><tr><td class="border p-2">A3 Poster</td><td class="border p-2">297 × 420mm</td><td class="border p-2">303 × 426mm</td></tr><tr><td class="border p-2">Envelope</td><td class="border p-2">220 × 110mm</td><td class="border p-2">226 × 116mm</td></tr></tbody></table>
+<h3>2. Resolution: Why 300dpi is Standard?</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>72dpi</strong>: Web and social media only</li><li><strong>150dpi</strong>: Acceptable minimum for large posters and distant viewing</li><li><strong>300dpi</strong>: Standard for business cards, books, flyers viewed up close</li><li><strong>600dpi</strong>: Ultra-fine prints (art reproductions, luxury packaging)</li></ul>
+<h3>3. CMYK vs RGB</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li>Screens use RGB (additive light), print uses CMYK (subtractive ink overprint)</li><li>RGB gamut is wider than CMYK, printing RGB files directly causes color darkening</li><li>Recommend using CMYK throughout design for accurate print prediction</li><li>Keep image assets in RGB for editing, convert to CMYK when exporting PDF</li></ol>
+<h3>4. Recommended File Formats</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>PDF/X-1a</strong>: Best choice — fonts embedded, color stable</li><li><strong>AI (Adobe Illustrator)</strong>: Vector — ideal for logos and graphics</li><li><strong>PSD (Photoshop)</strong>: Raster — good for photo-based designs</li><li><strong>EPS</strong>: Universal vector — strong compatibility</li><li><strong>INDD (InDesign)</strong>: Multi-page layout professional format</li></ul>
+<h3>5. Font Handling & Special Effects</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Outline Text</strong>: AI / PDF must outline text, otherwise font missing on other computers causes garbled text</li><li><strong>Embed Fonts</strong>: PDF can opt to embed all fonts</li><li><strong>Knockout Text</strong>: Avoid text smaller than 6pt (smudges easily)</li><li><strong>Hairline Strokes</strong>: Avoid strokes thinner than 0.25pt (break easily)</li><li><strong>Mesh Gradients</strong>: Avoid overly dense mesh gradients; use 200dpi pixel layers</li></ul>
+<h3>6. Frequently Asked Questions</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：What format does my design file need?</strong><br/>A：Best: PDF/X-1a (outlined fonts, embedded fonts). AI / EPS / PSD also accepted.</p><p><strong>Q：Do fonts need outlining?</strong><br/>A：Strongly recommended. Otherwise font missing causes garbled text.</p><p><strong>Q：Must images be 300dpi?</strong><br/>A：Recommended. Below 200dpi prints blurry. Large posters 150dpi acceptable.</p><p><strong>Q：Can RGB files print directly?</strong><br/>A：Not recommended. Convert to CMYK with ICC profile during design stage.</p></div>
+<p>Unsure if your file meets print standards? Contact <a href="https://wa.me/8618126380255" target="_blank">ZprintPro via WhatsApp</a> for free file check service.</p>` },
+    'brand-materials-checklist': { title: 'Corporate Brand Materials Checklist: From Cards to Displays', description: 'A complete checklist of printed brand materials for startups and brand refreshes.', date: '2024-05-10', category: 'Branding', content: `<p>Brand image building needs systematic material support. From a business card to product packaging, every touchpoint is a brand-to-customer communication opportunity. This article provides a complete enterprise brand materials checklist covering five categories: foundational identity, marketing, product packaging, spatial display, and internal office materials.</p>
+<h3>1. Foundational Brand Identity Materials</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Business Cards</strong>: Standard for all employees; double-sided with multiple role versions</li><li><strong>Envelopes</strong>: Essential for formal business communication; multi-spec support</li><li><strong>Letterheads</strong>: Used for contracts, quotations, formal documents</li><li><strong>Folders</strong>: Client meetings and bids; enhance professional image</li><li><strong>Employee ID Cards</strong>: Photo, name, ID number, department</li><li><strong>Stickers / Labels</strong>: For package seals, product labels</li></ul>
+<h3>2. Marketing Materials</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Item</th><th class="border p-2 text-left">Use</th><th class="border p-2 text-left">Scene</th></tr></thead><tbody><tr><td class="border p-2">Flyers</td><td class="border p-2">A4/A5, event promotion</td><td class="border p-2">Street distribution, targeted drops</td></tr><tr><td class="border p-2">Brochures</td><td class="border p-2">Product catalog, service intro</td><td class="border p-2">Exhibitions, business visits</td></tr><tr><td class="border p-2">Posters</td><td class="border p-2">In-store decor, event promotion</td><td class="border p-2">Stores, offices</td></tr><tr><td class="border p-2">Roll-up Banners</td><td class="border p-2">Exhibition essentials</td><td class="border p-2">Exhibitions, events</td></tr><tr><td class="border p-2">X-stands</td><td class="border p-2">Reusable</td><td class="border p-2">Exhibitions, roadshows</td></tr><tr><td class="border p-2">Gifts</td><td class="border p-2">Event memorabilia</td><td class="border p-2">Client appreciation</td></tr></tbody></table>
+<h3>3. Product Packaging Materials</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Paper Bags</strong>: Retail shopping bags, eco + quality feel; small/medium/large 3 specs</li><li><strong>Gift Boxes</strong>: Premium product packaging, brand elevation</li><li><strong>Shipping Boxes</strong>: E-commerce, 3-5 layer corrugated + honeycomb structure</li><li><strong>Product Labels</strong>: Ingredients, barcodes, QR codes, brand logo</li><li><strong>Seal Stickers</strong>: Prevent tampering, enhance unboxing experience</li><li><strong>Thank-You Cards</strong>: Hand-feel printing, brand warmth</li></ul>
+<h3>4. Spatial Display & Office Materials</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>Door Signs</strong>: Brand logo + bilingual name at entrance</li><li><strong>POP Displays</strong>: Paper displays for in-store product showcase</li><li><strong>Wall Posters</strong>: Office decor + brand value communication</li><li><strong>Direction Signs</strong>: Meeting rooms, restrooms, emergency exits</li><li><strong>Staff T-shirts / Polos</strong>: Screen print or heat transfer with logo</li><li><strong>Staff Notebooks</strong>: Branded office supplies</li></ol>
+<h3>5. Brand Material Planning Recommendations</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Unified Design Language</strong>: All materials use the same colors, fonts, graphic elements</li><li><strong>Phased Production</strong>: Startups complete basics first, then expand</li><li><strong>Choose Reliable Supplier</strong>: Partner with one printer offering full services for consistency</li><li><strong>Build a Brand Manual</strong>: Document all visual standards for new material reference</li></ul>
+<h3>Frequently Asked Questions</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：Which materials should a startup prioritize?</strong><br/>A：Business cards, envelopes, letterheads, folders, product packaging — the foundational 5.</p><p><strong>Q：How often should brand materials update?</strong><br/>A：Logo stays; materials can refresh annually for freshness.</p><p><strong>Q：Screen print vs digital print — which?</strong><br/>A：Small batch / personalized: digital; large batch / simple design: screen.</p><p><strong>Q：Bundle discount for full brand package?</strong><br/>A：ZprintPro offers 10% off for 5 items / 15% off for 10 items.</p></div>
+<p>ZprintPro provides one-stop brand material printing service. Contact <a href="https://wa.me/8618126380255" target="_blank">ZprintPro via WhatsApp</a> for a custom brand material package.</p>` },
+    'mtr-advertising-specs': { title: 'MTR Advertising Print Specs: Island, Kwun Tong & Tsuen Wan Lines', description: 'Detailed specifications and strategies for MTR advertising across Hong Kong.', date: '2024-05-05', category: 'Hong Kong Local', content: `<p>Hong Kong MTR serves over 5 million passengers daily — the busiest public transport system in Hong Kong. For businesses wanting to advertise on posters and display materials, MTR advertising offers excellent cost-effectiveness. This article details MTR advertising placement across six dimensions: formats, specifications, line strategy, print notes, and pitfall avoidance.</p>
+<h3>1. Main MTR Advertising Formats</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Ad Type</th><th class="border p-2 text-left">Size</th><th class="border p-2 text-left">Location</th></tr></thead><tbody><tr><td class="border p-2">12-sheet Lightbox</td><td class="border p-2">3000 × 1500mm</td><td class="border p-2">Platform walls, most common</td></tr><tr><td class="border p-2">48-sheet Lightbox</td><td class="border p-2">6096 × 3048mm</td><td class="border p-2">Station concourse, high traffic</td></tr><tr><td class="border p-2">Platform Screen Door</td><td class="border p-2">Per station spec</td><td class="border p-2">New format, strong visual impact</td></tr><tr><td class="border p-2">Pillar Wrap</td><td class="border p-2">Per site spec</td><td class="border p-2">Station pillar wrap</td></tr><tr><td class="border p-2">In-train Poster</td><td class="border p-2">1189 × 841mm</td><td class="border p-2">Above doors + train connector</td></tr><tr><td class="border p-2">Full Train Wrap</td><td class="border p-2">Whole train exterior</td><td class="border p-2">Highest exposure</td></tr></tbody></table>
+<h3>2. Advertising Slot Print Specifications</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>12-sheet Lightbox</strong>: 3000 × 1500mm, 100dpi @ actual size</li><li><strong>48-sheet Lightbox</strong>: 6096 × 3048mm, 72-100dpi</li><li><strong>In-train Poster</strong>: 1189 × 841mm (A0), 150dpi</li><li><strong>Platform Screen Door</strong>: Per station spec, 144dpi minimum</li><li><strong>Train Wrap</strong>: Whole train length, 150dpi sufficient</li></ul>
+<h3>3. Line-by-Line Strategy Recommendations</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>Island Line</strong>: Central, Admiralty, Wan Chai, Causeway Bay — white-collar, finance, tourists</li><li><strong>Kwun Tong Line</strong>: Connects Kwun Tong, Kowloon Bay — Mong Kok, Yau Ma Tei dense areas</li><li><strong>Tsuen Wan Line</strong>: Spans NT and Kowloon — residential and commercial, FMCG, education, real estate</li><li><strong>East Rail / West Rail</strong>: NT North, Shenzhen border crossings — cross-border shopping, tourism</li><li><strong>South Island / Tseung Kwan O</strong>: Mostly residential — family, community services</li></ol>
+<h3>4. Print Notes</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Color Mode</strong>: CMYK required — RGB files rejected</li><li><strong>Font Embedding</strong>: PDF must embed all fonts</li><li><strong>Material</strong>: Lightbox ads use Backlit Film, train posters use PP synthetic paper</li><li><strong>Bleed</strong>: Minimum 5mm bleed on all four sides</li><li><strong>Color Saturation</strong>: Distant viewing — recommend high saturation + large font</li></ul>
+<h3>5. Common Errors to Avoid</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li>Forgetting to check actual specs — wrong size discovered at print</li><li>CMYK colors too dark — unclear at distance</li><li>Font too small — unreadable from 3 meters</li><li>Too much white space — wasting valuable ad real estate</li><li>Files too large — upload/print time extends</li></ul>
+<h3>6. Frequently Asked Questions</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：What budget is needed for MTR advertising?</strong><br/>A：12-sheet lightbox US$4,000-10,000/month; A0 poster US$400-1,000/month.</p><p><strong>Q：How far in advance to apply?</strong><br/>A：Recommend 6-8 weeks ahead; peak season (holidays) needs 3 months.</p><p><strong>Q：Can I target specific lines?</strong><br/>A：Yes — MTR authority allows specifying station or line.</p><p><strong>Q：Can ZprintPro handle submission?</strong><br/>A：Yes — design + print + submission full-service available.</p></div>
+<p>ZprintPro provides professional MTR advertising material printing. Contact <a href="https://wa.me/8618126380255" target="_blank">ZprintPro via WhatsApp</a> for a quote.</p>` },
     'flyer-printing-guide': {
       title: 'Flyer Printing Guide: Sizes, Paper, Design & Distribution in Hong Kong',
       description: 'From A4 to A5, bi-fold to tri-fold, art paper to book paper — a complete guide to flyer printing in Hong Kong.',
@@ -417,17 +490,169 @@ const posts: Record<string, Record<string, { title: string; description: string;
 
   },
   ja: {
-    'company-intro': { title: 'ZprintPro会社概要：専門設備とワンストップ印刷サービス', description: 'ZprintProはハイデルベルグ6+1印刷機、HPデジタル印刷機、マルティニ製本ラインなどの先進設備を保有し、ワンストップ印刷サービスを提供しています。', date: '2024-06-01', category: '会社ニュース', content: `<p>ZprintProは香港および大湾エリアで15年以上の実績を持つ総合印刷サービス企業です。デザインから印刷、後加工までワンストップでご提供いたします。</p><h3>企業概要</h3><p>深圳に本社を置き、8,000平方メートル以上の現代工場を保有。金融、不動産、小売、教育、医療など幅広い業界のお客様にご利用いただいております。</p><div class="grid grid-cols-2 md:grid-cols-4 gap-4 my-6"><div class="bg-gray-50 rounded-xl p-4 text-center"><p class="text-2xl font-bold text-[#F87314]">8,000+</p><p class="text-sm text-gray-500 mt-1">平方メートル</p></div><div class="bg-gray-50 rounded-xl p-4 text-center"><p class="text-2xl font-bold text-[#F87314]">200+</p><p class="text-sm text-gray-500 mt-1">従業員</p></div><div class="bg-gray-50 rounded-xl p-4 text-center"><p class="text-2xl font-bold text-[#F87314]">50+</p><p class="text-sm text-gray-500 mt-1">設備</p></div><div class="bg-gray-50 rounded-xl p-4 text-center"><p class="text-2xl font-bold text-[#F87314]">15+</p><p class="text-sm text-gray-500 mt-1">年の実績</p></div></div><h3>主要印刷設備</h3><div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6"><div class="rounded-xl overflow-hidden border border-gray-100"><img loading="lazy" decoding="async" width="400" height="300" src="/images/factory/factory-heidelberg-6plus1.jpg" alt="ハイデルベルグ6+1印刷機" class="w-full aspect-[4/3] object-cover"/><div class="p-3"><p class="font-semibold text-sm text-[#333333]">ハイデルベルグ6+1印刷機</p><p class="text-xs text-gray-500 mt-1">高精度カラー再現</p></div></div><div class="rounded-xl overflow-hidden border border-gray-100"><img loading="lazy" decoding="async" width="400" height="300" src="/images/factory/factory-hp-digital.png" alt="HPデジタル印刷機" class="w-full aspect-[4/3] object-cover"/><div class="p-3"><p class="font-semibold text-sm text-[#333333]">HPデジタル印刷機</p><p class="text-xs text-gray-500 mt-1">可変データ印刷対応</p></div></div><div class="rounded-xl overflow-hidden border border-gray-100"><img loading="lazy" decoding="async" width="400" height="300" src="/images/factory/factory-weigang-uv.jpg" alt="煒岡6色UV輪転機" class="w-full aspect-[4/3] object-cover"/><div class="p-3"><p class="font-semibold text-sm text-[#333333]">煒岡6色UV輪転機</p><p class="text-xs text-gray-500 mt-1">UV硬化技術</p></div></div><div class="rounded-xl overflow-hidden border border-gray-100"><img loading="lazy" decoding="async" width="400" height="300" src="/images/factory/factory-color-chart.jpg" alt="カラー管理" class="w-full aspect-[4/3] object-cover"/><div class="p-3"><p class="font-semibold text-sm text-[#333333]">プロフェッショナルカラー管理</p><p class="text-xs text-gray-500 mt-1">バッチ品質の一貫性</p></div></div></div><h3>後加工設備</h3><ul class="list-disc pl-5 my-3 space-y-1"><li><strong>マルティニ製本ライン</strong>：自動化された無線綴じ</li><li><strong>ハイデルベルグ折り機</strong>：複数台連動</li><li><strong>全自動箱貼り機</strong>：効率的な包装生産</li><li><strong>型抜き、箔押し、UV</strong>：総合的な仕上げ</li></ul><div class="grid grid-cols-1 sm:grid-cols-2 gap-4 my-6"><div class="rounded-xl overflow-hidden border border-gray-100"><img loading="lazy" decoding="async" width="400" height="300" src="/images/factory/factory-martini-1.jpg" alt="マルティニ製本工場" class="w-full aspect-[4/3] object-cover"/><div class="p-3"><p class="font-semibold text-sm text-[#333333]">マルティニ製本工場</p></div></div><div class="rounded-xl overflow-hidden border border-gray-100"><img loading="lazy" decoding="async" width="400" height="300" src="/images/factory/factory-heidelberg-folding.jpg" alt="ハイデルベルグ折り機" class="w-full aspect-[4/3] object-cover"/><div class="p-3"><p class="font-semibold text-sm text-[#333333]">ハイデルベルグ折り機群</p></div></div><div class="rounded-xl overflow-hidden border border-gray-100"><img loading="lazy" decoding="async" width="400" height="300" src="/images/factory/factory-gluing.jpg" alt="箱貼り工場" class="w-full aspect-[4/3] object-cover"/><div class="p-3"><p class="font-semibold text-sm text-[#333333]">全自動箱貼り工場</p></div></div><div class="rounded-xl overflow-hidden border border-gray-100"><img loading="lazy" decoding="async" width="400" height="300" src="/images/factory/factory-manual.jpg" alt="手工芸工場" class="w-full aspect-[4/3] object-cover"/><div class="p-3"><p class="font-semibold text-sm text-[#333333]">手作り仕上げ工場</p></div></div></div><h3>お問い合わせ</h3><div class="bg-gray-50 rounded-xl p-5 my-4 space-y-2"><p><strong>WhatsApp:</strong> <a href="https://wa.me/8618126380255" target="_blank">+86 181 2638 0255</a></p><p><strong>営業時間:</strong> 月〜土 09:00 - 21:00（香港時間）</p><p><strong>工場所在地:</strong> 深圳市龍崗区平湖街道</p></div>` },
-    'sticker-guide': { title: 'ステッカー印刷完全ガイド：材質、加工と応用場面', description: 'ステッカーの材質選び、表面加工、応用場面について深く理解しましょう。', date: '2024-04-15', category: 'ステッカー知識', content: `<p>ステッカーはブランド宣伝に欠かせない要素です。材質、加工、応用場面を詳しく解説します。</p><h3>材質比較</h3><p>アート紙、防水合成紙、透明PET、ホログラムなど、目的に応じて選択しましょう。</p><p><a href="/ja/product/waterproof-stickers/">防水ステッカー</a>を今すぐ注文！</p>` },
-    'business-card-design': { title: '名刺デザインの10の黄金法則', description: 'レイアウトから配色まで、名刺デザインの核心技術をマスターしましょう。', date: '2024-04-10', category: '名刺知識', content: `<p>名刺はビジネスでの第一印象を作ります。ZprintProデザイン専門家の10の黄金法則をご紹介。</p><p><a href="/ja/product/premium-business-cards/">高級名刺</a>を注文する</p>` },
-    'packaging-trends': { title: '2024年パッケージデザイントレンド解析', description: '最新のパッケージデザイントレンドを探ります。', date: '2024-04-05', category: '包装知識', content: `<p>パッケージデザインに革命が起きています。2024年のトップトレンドを発見。</p><p><a href="/ja/product/gift-boxes/">ギフトボックス</a>をカスタマイズ</p>` },
-    'cmyk-guide': { title: 'CMYK vs RGB：印刷カラーモード完全解説', description: 'CMYKとRGBの違いを理解し、最適な印刷結果を得ましょう。', date: '2024-03-28', category: '印刷技術', content: `<p>カラーマネージメントは印刷品質の鍵です。RGBとCMYKの違いを学びましょう。</p>` },
-    'paper-materials': { title: '印刷用紙選択ガイド：アート紙から特殊紙まで', description: '異なる紙の特性を分析し、最適な用紙を選びましょう。', date: '2024-03-20', category: '印刷技術', content: `<p>紙は印刷物の魂です。ZprintProで300種類以上の用紙からお選びいただけます。</p>` },
-    'eco-printing': { title: 'エコ印刷：持続可能な包装の未来', description: '地球とブランドの両方のために、エコ印刷について学びましょう。', date: '2024-03-15', category: '業界トレンド', content: `<p>持続可能性は世界的なトレンドになっています。エコ印刷オプションをご紹介。</p>` },
-    'hong-kong-printing-guide': { title: '香港印刷会社選び完全ガイド', description: '香港の観塘、九龍、新界の印刷会社を比較し、最適なパートナーを選びましょう。', date: '2024-05-20', category: '香港ローカル', content: `<p>香港には数多くの印刷会社がありますが、信頼できるパートナーを見つけるのは容易ではありません。</p>` },
-    'design-file-specs': { title: '印刷用デザインファイル仕様', description: '裁ち落とし、解像度、カラーモードについて学びましょう。', date: '2024-05-15', category: 'デザインチップ', content: `<p>印刷用ファイルを正しく作成することは、高品質な印刷を確保するために不可欠です。</p>` },
-    'brand-materials-checklist': { title: '企業ブランド物料チェックリスト', description: '名刺から展示物まで、ブランド構築に必要な印刷物料を確認しましょう。', date: '2024-05-10', category: 'ブランディング', content: `<p>一貫性のあるブランド物料は、企業のプロフェッショナリズムを示します。</p>` },
-    'mtr-advertising-specs': { title: 'MTR広告印刷仕様', description: '港島線、観塘線、荃湾線の広告印刷規格について解説します。', date: '2024-05-05', category: '香港ローカル', content: `<p>香港のMTRは毎日数百万人の乗客を運んでおり、効果的な広告媒体です。</p>` },
+    'company-intro': { title: 'ZprintPro会社概要：専門設備とワンストップ印刷サービス', description: 'ZprintProはハイデルベルグ6+1印刷機、HPデジタル印刷機、マルティニ製本ラインなどの先進設備を保有し、ワンストップ印刷サービスを提供しています。', date: '2024-06-01', category: '会社ニュース', content: `<p>智印雲（ZprintPro）は深圳に本社を構え、世界中のお客様に印刷サービスを提供している総合印刷企業です。本記事では企業概要、主力設備、後加工体制、品質保証、越境サービス、そしてお問い合わせ方法を詳しくご紹介します。</p>
+<p>深圳龍崗区に 8,000 平方メートル以上の近代的な工場を運営。香港物流拠点に隣接し、香港、大湾区、世界のお客様に効率的なサービスをご提供。従業員 200 名以上、年印刷能力は数億枚。</p>
+<h3>一、企業概要</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">指標</th><th class="border p-2 text-left">規模</th></tr></thead><tbody><tr><td class="border p-2">8,000+</td><td class="border p-2">平方メートル</td></tr><tr><td class="border p-2">200+</td><td class="border p-2">スタッフ</td></tr><tr><td class="border p-2">50+</td><td class="border p-2">先進設備</td></tr><tr><td class="border p-2">15+</td><td class="border p-2">業界経験年数</td></tr></tbody></table>
+<h3>二、主力印刷設備</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Heidelberg 6+1 印刷機</strong>：ドイツ製高精度設備、優れた色再現</li><li><strong>HP Indigo デジタル</strong>：バリアブル印刷、少部数印刷、オンデマンド書籍</li><li><strong>Weigang 6 色 UV 輪転機</strong>：UV 硬化で即乾燥、特殊素材対応</li><li><strong>專業色彩管理</strong>：印刷責任者レベルの色校正</li></ul>
+<h3>三、後加工設備</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Martini 無線綴じライン</strong>：書籍、カタログの大量生産</li><li><strong>Heidelberg 折機ライン</strong>：多種折加工</li><li><strong>全自動製箱機</strong>：パッケージ箱の高効率組立</li><li><strong>トムソン抜き / 箔 / UV / エンボス</strong>：あらゆる特殊加工を一貫対応</li></ul>
+<h3>四、品質とサービス保証</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>品質第一</strong>：エコ対応インキと用紙、ISO 9001 認証</li><li><strong>短納期</strong>：香港エリア 24 時間特急、通常 3-5 営業日</li><li><strong>専任担当</strong>：見積から納品まで 1 対 1</li><li><strong>透明価格</strong>：隠れた費用なし、見積＝最終価格</li><li><strong>越境対応</strong>：EC 包装要件に精通、DDP/DDU 物流</li></ol>
+<h3>五、越境サービスと海外市場</h3>
+<p>香港以外にも日本、東南アジア、欧米、オーストラリア・ニュージーランドに対応。各国の通関申告要件と包装検疫基準を理解し、現地法規制に適合した包装設計をサポート。</p>
+<h3>六、お問い合わせ</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：最小注文数量は？</strong><br/>A：100 枚から。特急は 1 枚から対応可。</p><p><strong>Q：最短納期は？</strong><br/>A：午前 11 時までにデータ確定で当日引取可能。</p><p><strong>Q：国際配送は可能ですか？</strong><br/>A：DHL / FedEx / SF International、欧米 5-7 日。</p><p><strong>Q：デザインサービスも？</strong><br/>A：はい。HK$500/デザインから、2 回修正まで含む。</p></div>
+<p>今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a>、無料見積もり＆専門アドバイス！</p>` },
+    'sticker-guide': { title: 'ステッカー印刷完全ガイド：材質、加工と応用場面', description: 'ステッカーの材質選び、表面加工、応用場面について深く理解しましょう。', date: '2024-04-15', category: 'ステッカー知識', content: `<p>ステッカーはブランドプロモーションと商品パッケージに欠かせない要素です。商品ラベル、プロモーション、個性装飾まで、適切な材質と加工を選ぶことで、ブランドイメージを大幅に高められます。本記事では材質、表面加工、選定フレームワーク、ダイカット形状、実用例、よくある質問を体系的に解説します。</p>
+<h3>一、主なステッカー材質比較</h3>
+<p>材質は耐久性と印刷効果、コストに直接影響します：</p>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">材質</th><th class="border p-2 text-left">特徴</th><th class="border p-2 text-left">適用シーン</th><th class="border p-2 text-left">参考価格</th></tr></thead><tbody><tr><td class="border p-2">アート紙ステッカー</td><td class="border p-2">低コスト、色彩鮮やか</td><td class="border p-2">プロモ用ラベル、一時的利用</td><td class="border p-2">HK$0.5-1.5/枚</td></tr><tr><td class="border p-2">防水合成紙</td><td class="border p-2">防水防油、耐久</td><td class="border p-2">食品ラベル、屋外使用</td><td class="border p-2">HK$1.2-3/枚</td></tr><tr><td class="border p-2">透明 PET</td><td class="border p-2">高透明、質感良好</td><td class="border p-2">ガラス瓶、高級パッケージ</td><td class="border p-2">HK$2-5/枚</td></tr><tr><td class="border p-2">ホログラム</td><td class="border p-2">偽造防止、視覚効果</td><td class="border p-2">セキュリティラベル、証書</td><td class="border p-2">HK$3-8/枚</td></tr><tr><td class="border p-2">クラフト紙ステッカー</td><td class="border p-2">エコ、レトロ感</td><td class="border p-2">ハンドメイド、有機食品</td><td class="border p-2">HK$1.5-4/枚</td></tr></tbody></table>
+<h3>二、表面加工の選択</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>光沢ラミネート</strong>：表面がつややか、色彩が鮮やか</li><li><strong>マットラミネート</strong>：落ち着いた質感、高級感</li><li><strong>箔押し</strong>：金・銀・rose gold の金属的光沢、高級感アップ</li><li><strong>スポット UV</strong>：特定部分のみグロス処理、立体感</li><li><strong>エンボス / デボス</strong>：インクなしの立体触感、ミニマルデザインに最適</li></ul>
+<h3>三、ステッカー選定の意思決定</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>使用環境</strong>：屋内 vs 屋外？水・油接触？冷蔵？</li><li><strong>貼付面</strong>：紙、プラスチック、金属、ガラス、曲面？</li><li><strong>使用期間</strong>：短期プロモーション（3 ヶ月）vs 長期ラベル（1-3 年）？</li><li><strong>予算</strong>：アート紙が最安、特殊材質は割高</li><li><strong>デザイン複雑度</strong>：単色 vs 多色グラデーションで加工選定が変わる</li></ol>
+<h3>四、ダイカット形状とサイズ設計</h3>
+<p>ステッカーの形状は視覚的インパクトとブランド認知度に直結：</p>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>円形 / 楕円</strong>：定番、万能、ブランドのロゴに最適</li><li><strong>正方形 / 長方形</strong>：情報密度高い、バーコード・商品ラベルに最適</li><li><strong>ダイカット</strong>：任意形状にカット、視覚最大だがコスト高</li><li><strong>キスカット</strong>：台紙はそのまま、剥がしやすく配りやすい</li></ul>
+<h3>五、ステッカー印刷の実用例</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>食品パッケージラベル</strong>：成分表、栄養表示、賞味期限</li><li><strong>化粧品ボトルラベル</strong>：高級ブランド标识、透明 PET + 箔押し</li><li><strong>プロモーションステッカー</strong>：限定ナンバー、イベントバッジ、アート紙 + 光沢</li><li><strong>物流ラベル</strong>：送り状、QRコード、防水合成紙</li><li><strong>装飾ステッカー</strong>：手帳用、子供のステッカーブック、多色 + ダイカット</li></ul>
+<h3>六、よくある質問</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：最小注文数量（MOQ）は？</strong><br/>A：通常 100 枚から。特殊加工は 500 枚以上必要な場合があります。</p><p><strong>Q：防水ステッカーは本当に水に漬けられますか？</strong><br/>A：はい。合成紙 + 防水粘着剤で短時間の浸水と反復水洗に耐えられます。</p><p><strong>Q：納期はどのくらい？</strong><br/>A：通常 3-5 営業日。特急で当日仕上げ対応可。</p><p><strong>Q：必要なファイル形式は？</strong><br/>A：AI / PDF / EPS（ベクターデータ）推奨。解像度 300dpi、CMYK。</p></div>
+<p>あらゆるステッカー印刷ニーズに対応、今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 無料見積もり＆専門アドバイス！</p>` },
+    'business-card-design': { title: '名刺デザインの10の黄金法則', description: 'レイアウトから配色まで、名刺デザインの核心技術をマスターしましょう。', date: '2024-04-10', category: '名刺知識', content: `<p>名刺はビジネス交流における第一印象です。精巧にデザインされた名刺は、連絡先の伝達だけでなく、ブランドの専門性を表現します。本記事では余白、タイポグラフィー、カラー、素材、情報階層、両面デザイン、QR コード、印刷仕様など 10 の側面から、名刺デザインの黄金法則を体系的に解説します。</p>
+<h3>法則 1：余白はデザインの魂</h3>
+<p>名刺にあらゆる情報を詰め込まないでください。適切な余白は重要内容を際立たせ、クリーンでプロフェッショナルな印象を与えます。情報面積は名刺面積の 60% 未満に抑えましょう。</p>
+<h3>法則 2：フォント選択と階層</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>フォント数</strong>：最大 2 種類。1 つは氏名 / 役職、もう 1 つは連絡先情報</li><li><strong>日中英混植</strong>：Noto Sans CJK / Source Han Sans と Helvetica / Montserrat の組み合わせが定番</li><li><strong>サイズ階層</strong>：氏名 12pt、役職 9pt、会社名 8pt、連絡先 7pt</li><li><strong>ウェイト</strong>：氏名・会社名は Bold、連絡先は Regular</li></ul>
+<h3>法則 3：色彩心理学とブランド個性</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">カラー</th><th class="border p-2 text-left">心理効果</th><th class="border p-2 text-left">適用業界</th></tr></thead><tbody><tr><td class="border p-2">青</td><td class="border p-2">専門、信頼、安定</td><td class="border p-2">金融、テクノロジー、B2B</td></tr><tr><td class="border p-2">赤</td><td class="border p-2">情熱、活力、醒目</td><td class="border p-2">セールス、飲餐饮、催事</td></tr><tr><td class="border p-2">黒</td><td class="border p-2">ラグジュアリー、高級、ミニマル</td><td class="border p-2">ラグジュアリーデザイン事務所</td></tr><tr><td class="border p-2">緑</td><td class="border p-2">エコ、健康、自然</td><td class="border p-2">医療、オーガニック、ESG</td></tr><tr><td class="border p-2">金</td><td class="border p-2">高級、富、伝統</td><td class="border p-2">不動産、プライベートバンキング、法律事務所</td></tr></tbody></table>
+<h3>法則 4：素材選択と触感デザイン</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>300g アート紙</strong>：経済的、大量配布向き</li><li><strong>400g 厚口</strong>：重厚感、高級品質を伝える</li><li><strong>特殊紙</strong>：リネン、コットン、テクスチャー紙 — 独特な触感</li><li><strong>再生紙</strong>：FSC 認証、エコ意識</li></ol>
+<h3>法則 5：両面デザインと QR コード活用</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>表面</strong>：氏名、役職、ロゴ、主要連絡先 — 必須情報</li><li><strong>裏面</strong>：ブランドスローガン、製品 QR、地図、英語表記 — 補助情報</li><li><strong>QR コード</strong>：WhatsApp / IG QR を追加、スキャンで友だち追加、コンバージョン向上</li><li><strong>角丸加工</strong>：R3-R5 角丸処理、デザイン性向上、角の磨耗防止</li></ul>
+<h3>法則 6：印刷ファイル仕様とよくあるミス</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>ブリード不足</strong>：仕上がり 90×54mm、デザイン 96×60mm（3mm ブリード）</li><li><strong>カラーモード誤り</strong>：CMYK 必須、RGB 印刷は色がくすむ</li><li><strong>解像度不足</strong>：画像は最低 300dpi</li><li><strong>フォント未変換</strong>：AI / PDF で必ず文字をアウトライン化</li></ul>
+<h3>よくある質問</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：最小注文数量は？</strong><br/>A：100 枚から。業界の標準最小です。</p><p><strong>Q：即日名刺は本当に当日受け取れますか？</strong><br/>A：11時までにデータ確定で当日受け取り可能（300gアート紙）。特殊加工は 1-2 営業日追加。</p><p><strong>Q：両面名刺は透けますか？</strong><br/>A：300g 以上なら通常は透けません。濃い色を広範囲に使う場合は 400g または白下刷り。</p><p><strong>Q：必要なファイル形式は？</strong><br/>A：AI / PDF（テキストはアウトライン化）、CMYK、300dpi、3mm ブリード付き。</p></div>
+<p>名刺をアップグレードしませんか？今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> デザインアドバイス＆見積もり！</p>` },
+    'packaging-trends': { title: '2024年パッケージデザイントレンド解析', description: '最新のパッケージデザイントレンドを探ります。', date: '2024-04-05', category: '包装知識', content: `<p>競争激しい小売市場において、パッケージは商品の保護だけでなく、ブランドと消費者の最初の接点です。2024-2026 年のパッケージデザイントレンドはどんな方向へ？本記事ではミニマリズム、持続可能パッケージ、パーソナライズ、スマートパッケージ、開封体験、購入ガイドの 6 つの側面を体系的に分析します。</p>
+<h3>トレンド 1：ミニマリズムの継続</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li>広めの余白、視覚的快適さ</li><li>単一主色（白黒 + ブランドカラー）</li><li>洗練された製品名（タイポグラフィーが強い）</li><li>装飾なし、質感が勝つ</li><li>代表例：Aesop、Apple、無印良品</li></ul>
+<h3>トレンド 2：持続可能なパッケージが標準に</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">エコ素材</th><th class="border p-2 text-left">特徴</th><th class="border p-2 text-left">適用製品</th></tr></thead><tbody><tr><td class="border p-2">再生紙ボール</td><td class="border p-2">FSC 認証、リサイクル可能</td><td class="border p-2">化粧品、食品、小売</td></tr><tr><td class="border p-2">バガス pulp</td><td class="border p-2">堆肥化可能、産業用</td><td class="border p-2">電子機器インナー</td></tr><tr><td class="border p-2">植物性インキ</td><td class="border p-2">大豆インキ、エコインキ</td><td class="border p-2">全印刷物</td></tr><tr><td class="border p-2">水溶性接着剤</td><td class="border p-2">生分解、無毒</td><td class="border p-2">箱組立</td></tr><tr><td class="border p-2">PLA ラミネート</td><td class="border p-2">生分解性プラスチック代替</td><td class="border p-2">食品包装</td></tr></tbody></table>
+<h3>トレンド 3：パーソナライズと小ロットカスタム</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li>消費者が独自体験を求める中、小ロット多品種のパッケージが新常態に</li><li>100 個から対応するギフトボックスカスタムで中小企業のハードルを解消</li><li>バリアブル印刷（箱ごとに異なる名前 / 番号）が限定版マーケの切り札に</li><li>バリアブル印刷コストは年々低下</li><li>祝日限定パッケージ（クリスマス、新年）が年次主力戦略に</li></ol>
+<h3>トレンド 4：スマートパッケージの台頭</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>AR（拡張現実）</strong>：パッケージをスキャンすると動画・使い方案内</li><li><strong>NFC チップ</strong>：スマホをタップで商品トレーサビリティ・ブランドサイトへ</li><li><strong>温度インジケータ</strong>：食品・医薬品のコールドチェーン監視に必須</li><li><strong>偽造防止 QR</strong>：消費者がスキャンで真偽確認、ブランド信頼向上</li></ul>
+<h3>トレンド 5：開封体験の感情設計</h3>
+<p>パッケージは「容器」から「ブランド儀式」へ進化：</p>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>インナートレー設計</strong>：ベルベット、EVA、pulp 成形 — 保護性・観感向上</li><li><strong>サンキューカード</strong>：手書き風印刷でブランド温かみを伝える</li><li><strong>偽造防止ステッカー</strong>：初回開封の記念価値</li><li><strong>QR ギフトコード</strong>：スキャンでクーポン、会員加入</li></ul>
+<h3>人気パッケージタイプ</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">タイプ</th><th class="border p-2 text-left">適用製品</th><th class="border p-2 text-left">特徴</th></tr></thead><tbody><tr><td class="border p-2">ギフトボックス</td><td class="border p-2">化粧品、宝飾、電子機器</td><td class="border p-2">精美外観、ブランド格上げ</td></tr><tr><td class="border p-2">メールボックス</td><td class="border p-2">EC 商品</td><td class="border p-2">堅牢、輸送安全</td></tr><tr><td class="border p-2">コスメティックボックス</td><td class="border p-2">スキンケア、メイク</td><td class="border p-2">スタイリッシュ、ブランド加点</td></tr><tr><td class="border p-2">フードボックス</td><td class="border p-2">ベーカリー、スナック、テイクアウト</td><td class="border p-2">食品グレード素材、安全衛生</td></tr></tbody></table>
+<h3>よくある質問</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：パッケージボックスの最小注文数量は？</strong><br/>A：標準ギフトボックスは 100 個から。</p><p><strong>Q：デザインサービスはありますか？</strong><br/>A：はい。HK$800/デザインから、2 回修正と 3D モックアップを含む。</p><p><strong>Q：エコ素材は本当にエコですか？</strong><br/>A：FSC 認証紙ボード + 大豆インキは EU エコ基準適合。</p><p><strong>Q：特注形状は作れますか？</strong><br/>A：はい。特注トムソン抜き対応、型代が発生します。</p></div>
+<p>自社商品に完璧なパッケージを。今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 無料デザイン提案！</p>` },
+    'cmyk-guide': { title: 'CMYK vs RGB：印刷カラーモード完全解説', description: 'CMYKとRGBの違いを理解し、最適な印刷結果を得ましょう。', date: '2024-03-28', category: '印刷技術', content: `<p>CMYK vs RGB は印刷品質管理の基礎知識です。印刷仕上がりと画面表示の色が一致しないことに悩むクライアントも多く、原因はカラーモードへの理解不足です。本記事では RGB、CMYK、ICC カラーマネジメント、Pantone 特色、ΔE 色差、智印雲の色彩管理サービスという 6 つの側面から体系的に解説します。</p>
+<h3>一、RGB カラーモードとは</h3>
+<p>RGB は光のカラーモード — 赤・緑・青の三原色光を異なる強度で重ね合わせ、画面表示の全色を生成します。RGB は広色域ですが、印刷インキでは全ての RGB 色を再現できません。</p>
+<h3>二、CMYK カラーモードとは</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>四色インキ</strong>：シアン（C）、マゼンタ（M）、イエロー（Y）、ブラック（K）</li><li><strong>減法混色</strong>：四色インキを紙に重ね、光を吸収して色を生成</li><li><strong>狭色域</strong>：インキの物理的特性上、RGB の鮮やかな色の一部は 100% 再現不可</li><li><strong>K チャンネルの役割</strong>：黒インキはテキスト、微細部、影に使用</li></ul>
+<h3>三、なぜ印刷前に CMYK 変換が必須か</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">RGB 色</th><th class="border p-2 text-left">印刷問題</th><th class="border p-2 text-left">解決策</th></tr></thead><tbody><tr><td class="border p-2">RGB 鮮赤</td><td class="border p-2">再現不可</td><td class="border p-2">CMYK 赤（M100+Y100）または Pantone 使用</td></tr><tr><td class="border p-2">RGB 蛍光色</td><td class="border p-2">ほぼ消失</td><td class="border p-2">Pantone スポットカラー必須</td></tr><tr><td class="border p-2">RGB 薄青</td><td class="border p-2">色相シフト</td><td class="border p-2">RGB→CMYK 後彩度調整</td></tr><tr><td class="border p-2">RGB 深紫</td><td class="border p-2">近いことが多い</td><td class="border p-2">テスト後微調整</td></tr></tbody></table>
+<h3>四、ICC カラーマネジメントと ΔE</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>ICC プロファイル</strong>：印刷機 / 用紙 / インキ毎に専用 ICC プロファイルがあり、色マッピングを定義</li><li><strong>ΔE 色差基準</strong>：ΔE ≤ 2 は肉眼不可視、ΔE 2-5 は注意して見える、ΔE > 5 は明確な色差</li><li><strong>智印雲の設備</strong>：Heidelberg 印刷機 + X-Rite eXact 分光測色計でバッチ毎 ΔE チェック</li><li><strong>クライアント準備</strong>：デザインファイルに ISO Coated v2 または GRACoL ICC 埋め込み</li></ol>
+<h3>五、Pantone 特色印刷</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>特色とは</strong>：事前混合済み特定インキ（例：Pantone 185 C 鮮赤）</li><li><strong>適用場面</strong>：ブランド標準色（コカ・コーラ赤、スターバックス緑）、メタリック、蛍光</li><li><strong>コスト</strong>：特色版は追加印刷ユニットが必要、単価 +30-50%</li><li><strong>ハイブリッド</strong>：CMYK + 1 特色版の組み合わせが一般的</li></ul>
+<h3>六、よくある質問</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：RGB ファイルはそのまま印刷できますか？</strong><br/>A：非推奨。RGB 印刷は色シフトと暗い仕上がりになります。ICC 付きで CMYK 変換を。</p><p><strong>Q：画面より印刷が鮮やかに見えない理由は？</strong><br/>A：RGB モードのままか、CMYK 設定不備の可能性。試し刷りで確認推奨。</p><p><strong>Q：Pantone 特色はより正確ですか？</strong><br/>A：はい。Pantone 予混合インキは CMYK 重ね刷りより安定。</p><p><strong>Q：色校正は可能ですか？</strong><br/>A：可能。デジタル校正 HK$200/枚、従来校正 HK$500/枚。</p></div>
+<p>色彩管理をもっと知りたい？今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 専門アドバイス！</p>` },
+    'paper-materials': { title: '印刷用紙選択ガイド：アート紙から特殊紙まで', description: '異なる紙の特性を分析し、最適な用紙を選びましょう。', date: '2024-03-20', category: '印刷技術', content: `<p>用紙は印刷物の魂です。異なる用紙は視覚効果だけでなく、触覚的印象も決定します。智印雲は 300 種類以上を取り扱い。本記事ではアート紙、書籍用紙、クラフト紙、特殊紙、用紙選定表、実例という 6 つの側面から一般的な印刷用紙を体系的に解説します。</p>
+<h3>一、アート紙</h3>
+<p>最も一般的な高級印刷用紙 — 表面平滑、色彩再現度高。カタログ、ポスター、チラシなど鮮やかな色彩が必要な製品に最適。</p>
+<h3>二、書籍用紙（Woodfree Paper）</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>表面テクスチャ</strong>：ややテクスチャあり、自然な質感</li><li><strong>読みやすさ</strong>：非光沢、長時間読んでも目が疲れない</li><li><strong>典型用途</strong>：書籍、ノート、便箋、領収書、契約書</li><li><strong>一般的な米坪</strong>：80g、100g、120g</li></ul>
+<h3>三、クラフト紙</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">用紙</th><th class="border p-2 text-left">特徴</th><th class="border p-2 text-left">適用</th></tr></thead><tbody><tr><td class="border p-2">白クラフト</td><td class="border p-2">純白、高腰、染色可</td><td class="border p-2">高級ブランド、化粧品、ギフト</td></tr><tr><td class="border p-2">黄クラフト</td><td class="border p-2">エコ、レトロ、低価格</td><td class="border p-2">カフェ、オーガニックブランド、小売</td></tr><tr><td class="border p-2">黒クラフト</td><td class="border p-2">神秘的、高級、独特質感</td><td class="border p-2">ハイエンド、限定品</td></tr><tr><td class="border p-2">再生クラフト</td><td class="border p-2">エコ認証、独特テクスチャ</td><td class="border p-2">エコブランド、オーガニック製品</td></tr></tbody></table>
+<h3>四、特殊紙</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>パール紙</strong>：真珠光沢表面 — 化粧品、高級招待状に最適</li><li><strong>リネン紙</strong>：横線テクスチャ、強い触感 — カタログ表紙に</li><li><strong>コンカラー紙</strong>：優雅なテクスチャ、英国風 — 証書、メニューに</li><li><strong>コットン紙</strong>：綿繊維、柔らかい触感 — 高級名刺に</li><li><strong>フェイクレザー紙</strong>：擬革テクスチャ — ギフトボックス、招待状に</li></ol>
+<h3>五、用紙選定早見表</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">製品</th><th class="border p-2 text-left">推奨用紙</th><th class="border p-2 text-left">米坪</th></tr></thead><tbody><tr><td class="border p-2">名刺</td><td class="border p-2">300g アート紙 / 特殊紙</td><td class="border p-2">300-400g</td></tr><tr><td class="border p-2">チラシ</td><td class="border p-2">157g アート紙</td><td class="border p-2">128-200g</td></tr><tr><td class="border p-2">カタログ</td><td class="border p-2">200g アート表紙 + 157g 本文</td><td class="border p-2">157-250g</td></tr><tr><td class="border p-2">パッケージ箱</td><td class="border p-2">白カード / クラフト</td><td class="border p-2">250-400g</td></tr><tr><td class="border p-2">封筒</td><td class="border p-2">100g 書籍用紙 / クラフト</td><td class="border p-2">100-120g</td></tr></tbody></table>
+<h3>六、よくある質問</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：300 種類以上からどう選ぶ？</strong><br/>A：智印雲は無料サンプルボックス（HK$200 送料込み）をご提供、現物確認後に決定推奨。</p><p><strong>Q：アート紙と書籍用紙の違いは？</strong><br/>A：アート紙は平滑反射で色彩鮮やか、書籍用紙はわずかなテクスチャで文字向き。</p><p><strong>Q：用紙をミックスできますか？</strong><br/>A：はい。表紙 200g アート紙 + 本文 80g 書籍用紙は一般的。</p><p><strong>Q：エコ用紙の選択肢は？</strong><br/>A：FSC 認証再生紙、麻紙、竹パルプ紙、綿紙など、HK$200/種から。</p></div>
+<p>300 種類以上の用紙をもっと知りたい？今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> サンプル＆見積もり！</p>` },
+    'eco-printing': { title: 'エコ印刷：持続可能な包装の未来', description: '地球とブランドの両方のために、エコ印刷について学びましょう。', date: '2024-03-15', category: '業界トレンド', content: `<p>持続可能性はグローバルトレンドになりました。ESG（環境・社会・ガバナンス）をコア戦略に組み込む企業が増えており、エコ印刷はその重要な要素です。本記事はエコ印刷の定義、エコ素材、工程技術、認証基準、実装、ESG レポート戦略の 6 つの側面から、体系的なグリーン印刷指引をご提供します。</p>
+<h3>一、エコ印刷とは？</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>再生紙または FSC 認証紙</strong>：FSC 認証は持続可能な紙資源を保証</li><li><strong>大豆インク等のエコインキ</strong>：VOC 低、生分解性</li><li><strong>化学薬品削減</strong>：従来印刷の IPA 等有害溶剤をエコ代替</li><li><strong>省エネ工程最適化</strong>：スマート版面、廃材回収、省エネ設備</li><li><strong>廃棄物の最小化</strong>：精緻な用紙計算、トリムロス削減</li></ul>
+<h3>二、エコ素材のご提案</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">エコ素材</th><th class="border p-2 text-left">特徴</th><th class="border p-2 text-left">用途</th></tr></thead><tbody><tr><td class="border p-2">再生紙</td><td class="border p-2">100% 再生パルプ、FSC 認証</td><td class="border p-2">封筒、便箋、メモ</td></tr><tr><td class="border p-2">大豆インキ</td><td class="border p-2">生分解、低 VOC</td><td class="border p-2">全印刷物</td></tr><tr><td class="border p-2">植物性インキ</td><td class="border p-2">純植物処方</td><td class="border p-2">食品包装</td></tr><tr><td class="border p-2">水性ラミネート</td><td class="border p-2">溶剤フリー</td><td class="border p-2">子供向け製品</td></tr><tr><td class="border p-2">バガス pulp 成形</td><td class="border p-2">堆肥化可能</td><td class="border p-2">電子機器インナー</td></tr><tr><td class="border p-2">PLA ラミネート</td><td class="border p-2">生分解性</td><td class="border p-2">食品包装</td></tr></tbody></table>
+<h3>三、ESG レポート印刷戦略</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>カーボンフットプリント開示</strong>：パルプから納品までの印刷物 CO2 計算</li><li><strong>サプライチェーン透明性</strong>：FSC CoC（Chain of Custody）認証でパルプ源を追跡</li><li><strong>廃棄物削減目標</strong>：年間 5% 削減、5 年累計 25%</li><li><strong>グリーン調達ポリシー</strong>：供給者にエコ認証を義務化</li><li><strong>顧客側ブランディング</strong>：ESG コミットメントを包装上のグリーン标识で伝達</li></ol>
+<h3>四、認証基準一覧</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>FSC</strong>：森林管理協議会 — 最も権威ある国際基準</li><li><strong>PEFC</strong>：Programme for the Endorsement of Forest Certification — 代替国際基準</li><li><strong>Soy Ink 協会認証</strong>：Soy Ink Technical Board</li><li><strong>ISO 14001</strong>：環境マネジメントシステム認証</li><li><strong>中国環境ラベル</strong>：十環認証、国内エコ製品マーク</li></ul>
+<h3>五、実装事例</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>ESG レポート印刷</strong>：上場企業の年次・ESG レポートは 100% 再生紙 + 大豆インキが定番</li><li><strong>ブランドエコ製品ライン</strong>：Patagonia、Allbirds 等はエコ包装を採用</li><li><strong>イベント記念品</strong>：コンサート・マラソン記念 T シャツ / ポスターにバガス pulp</li><li><strong>子供向け製品</strong>：玩具包装、子供書籍は無毒水性ラミネート</li></ul>
+<h3>六、よくある質問</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：エコ印刷はどれくらい高い？</strong><br/>A：通常 10-30% 高ですが、技術成熟で大幅低下。</p><p><strong>Q：FSC 認証紙は耐久性大丈夫？</strong><br/>A：はい。FSC は供給源のみ管理、用紙品質には影響なし。</p><p><strong>Q：大豆インキは色褪せますか？</strong><br/>A：いいえ。色安定性は従来インキ同等。</p><p><strong>Q：ESG レポート用エコパッケージは？</strong><br/>A：100% 再生紙 + 大豆インキ + 水性ラミネートのセット提供可能。</p></div>
+<p>ブランドにエコ要素を加えませんか？今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> グリーン印刷方案！</p>` },
+    'hong-kong-printing-guide': { title: '香港印刷会社選び完全ガイド', description: '香港の観塘、九龍、新界の印刷会社を比較し、最適なパートナーを選びましょう。', date: '2024-05-20', category: '香港ローカル', content: `<p>香港は国際ビジネスハブとして、毎日何千もの企業が印刷サービスを必要としています。名刺からチラシ、ギフトボックスから紙袋まで、信頼できる印刷会社の選択が重要です。本記事は香港各区の印刷会社の特徴、選定基準、落とし穴回避、サービス範囲、コスト考慮を体系的に分析し、最適な印刷パートナーをサポートします。</p>
+<h3>一、香港印刷会社の分布概況</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">エリア</th><th class="border p-2 text-left">特徴</th><th class="border p-2 text-left">適用</th></tr></thead><tbody><tr><td class="border p-2">観塘</td><td class="border p-2">伝統的な工業区、印刷会社密集</td><td class="border p-2">価格競争激しい、大口注文向き</td></tr><tr><td class="border p-2">九龍湾</td><td class="border p-2">新興商業区、デザイン+印刷の組合せ</td><td class="border p-2">ブランドカスタムニーズ向き</td></tr><tr><td class="border p-2">荃湾</td><td class="border p-2">新界西中心、家賃安い</td><td class="border p-2">コストパフォーマンス高</td></tr><tr><td class="border p-2">上環/中環</td><td class="border p-2">高級商業区、高品質印刷中心</td><td class="border p-2">価格高、高級ブランド向き</td></tr></tbody></table>
+<h3>二、印刷会社の信頼性評価方法</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>設備水準</strong>：Heidelberg、Komori 等国際ブランド印刷機を使用しているか？色彩再現に直接影響</li><li><strong>カラーマネジメント</strong>：専門の色校正プロセスがあるか？デジタル校正対応か？</li><li><strong>納期</strong>：標準 3-5 日、特急 24 時間対応可否</li><li><strong>クライアント事例</strong>：有名企業への提供実績、現物サンプル閲覧可か</li><li><strong>アフターサービス</strong>：印刷品質問題の対応メカニズム</li></ul>
+<h3>三、観塘印刷会社の優位性</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>価格競争力</strong>：密集によるコスト削減、同品質で中環より 20-30% 安</li><li><strong>十分な生産能力</strong>：大規模工場が多く、万単位の大口対応可</li><li><strong>交通便利</strong>：MTR 観塘線直通、観塘駅から徒歩 10 分で大多数の印刷会社に到達</li><li><strong>完全なエコシステム</strong>：デザイン、印刷、後加工の一貫サービス</li></ul>
+<h3>四、印刷会社選択の落とし穴</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li>見積が安すぎる — 安い用紙や簡略化された色管理の可能性、最終品質が低下</li><li>校正サービスなし — 期待不一致時の救済手段なし</li><li>固定電話なし — 会社規模小さい、アフター弱い</li><li>納期遅れ — ビジネススケジュールに影響</li><li>契約書・領収書なし — 紛争時の根拠なし</li></ol>
+<h3>五、智印雲の差別化優位性</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li>ドイツ Heidelberg 印刷機で色彩精緻に再現</li><li>24 時間特急印刷対応、香港の速いビジネスニーズに対応</li><li>大貨印刷前に無料デジタル校正</li><li>HK$500 以上で無料配送、香港 18 区全域カバー</li><li>ワンストップ：デザイン、印刷、配送まで安心</li></ul>
+<h3>六、よくある質問</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：香港の印刷会社はどこに集中？</strong><br/>A：観塘は伝統的な中心地、生産能力集中、価格競争力あり。</p><p><strong>Q：印刷会社の信頼性をどう判断？</strong><br/>A：設備（Heidelberg/Komori）、校正サービス、クライアント事例、契約基準を確認。</p><p><strong>Q：小会社と大工場の違いは？</strong><br/>A：小＝柔軟だが生産能力限、大＝生産能力強いが小口軽視傾向。</p><p><strong>Q：印刷品質問題が発生したら？</strong><br/>A：智印雲は品質責任、無料再印刷または返金対応。</p></div>
+<p>名刺、チラシ、紙袋、パッケージ — 今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 無料見積もり＆専門アドバイス。</p>` },
+    'design-file-specs': { title: '印刷用デザインファイル仕様', description: '裁ち落とし、解像度、カラーモードについて学びましょう。', date: '2024-05-15', category: 'デザインチップ', content: `<p>多くのデザイナーや企業マーケティング担当が印刷ファイル準備時に問題に直面：仕上がり端の白縁、画像ぼやけ、画面表示と大きな色差 — 多くは印刷ファイル仕様への理解不足が原因。本記事ではブリード、解像度、カラーモード、ファイル形式、フォント処理、特殊効果という 6 つの核心概念を詳解します。</p>
+<h3>一、ブリードとは？</h3>
+<p>ブリードとはデザインデータの仕上がり切断線を越えた領域を指します。印刷後に切断が必要なため、デザインが正確に端まであると微細な切断誤差で白縁が出ます。標準的には仕上がりサイズ外に 3mm のブリードを確保します。</p>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">製品</th><th class="border p-2 text-left">仕上がりサイズ</th><th class="border p-2 text-left">デザインサイズ（ブリード込み）</th></tr></thead><tbody><tr><td class="border p-2">標準名刺</td><td class="border p-2">90 × 54mm</td><td class="border p-2">96 × 60mm</td></tr><tr><td class="border p-2">A4 チラシ</td><td class="border p-2">210 × 297mm</td><td class="border p-2">216 × 303mm</td></tr><tr><td class="border p-2">A3 ポスター</td><td class="border p-2">297 × 420mm</td><td class="border p-2">303 × 426mm</td></tr><tr><td class="border p-2">封筒</td><td class="border p-2">220 × 110mm</td><td class="border p-2">226 × 116mm</td></tr></tbody></table>
+<h3>二、解像度：なぜ 300dpi が基準？</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>72dpi</strong>：ウェブ、ソーシャルメディア専用</li><li><strong>150dpi</strong>：大型ポスター、遠距離視認印刷品の最低許容基準</li><li><strong>300dpi</strong>：名刺、書籍、チラシなど近距離視認印刷品の基準</li><li><strong>600dpi</strong>：極精細印刷品（アート複製品、ラグジュアリー包装）</li></ul>
+<h3>三、CMYK vs RGB</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li>画面は RGB（光の加法混色）、印刷は CMYK（インキ減法混色）</li><li>RGB 色域は CMYK より広く、RGB ファイル直接印刷で色暗淡化</li><li>デザイン段階から CMYK 使用、印刷結果事前予測可</li><li>画像素材は RGB 編集可、PDF 出力時に CMYK 変換</li></ol>
+<h3>四、推奨ファイル形式</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>PDF/X-1a</strong>：最良選択 — フォント埋め込み、色安定</li><li><strong>AI（Adobe Illustrator）</strong>：ベクター — ロゴ・グラフィックに最適</li><li><strong>PSD（Photoshop）</strong>：ラスター — 写真系デザイン向き</li><li><strong>EPS</strong>：汎用ベクター — 互換性高い</li><li><strong>INDD（InDesign）</strong>：多ページ組版専門形式</li></ul>
+<h3>五、フォント処理と特殊効果</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>テキストのアウトライン化</strong>：AI / PDF で必ずアウトライン化、別 PC でフォント欠落を防ぐ</li><li><strong>フォント埋め込み</strong>：PDF で全フォント埋め込み選択可</li><li><strong>極小文字</strong>：6pt 以下のテキストは避ける（潰れやすい）</li><li><strong>極細線</strong>：0.25pt 以下の細線は避ける（切れやすい）</li><li><strong>メッシュグラデーション</strong>：過密メッシュを避け、200dpi ピクセルレイヤーを使用</li></ul>
+<h3>六、よくある質問</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：デザインファイル形式は？</strong><br/>A：最良は PDF/X-1a（テキストアウトライン化、フォント埋め込み）。AI / EPS / PSD も対応可。</p><p><strong>Q：フォントは必ずアウトライン化？</strong><br/>A：強く推奨。フォント欠落で文字化け防止。</p><p><strong>Q：画像は必ず 300dpi？</strong><br/>A：推奨。200dpi 以下は印刷ぼやけ。大型ポスターは 150dpi 可。</p><p><strong>Q：RGB ファイルは直接印刷できますか？</strong><br/>A：非推奨。デザイン段階から ICC 付きで CMYK 変換。</p></div>
+<p>ファイルが印刷基準に合うかご不明？今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 無料ファイルチェックサービス！</p>` },
+    'brand-materials-checklist': { title: '企業ブランド物料チェックリスト', description: '名刺から展示物まで、ブランド構築に必要な印刷物料を確認しましょう。', date: '2024-05-10', category: 'ブランディング', content: `<p>ブランドイメージ構築には体系的な物料サポートが必要です。名刺から製品パッケージまで、すべてのタッチポイントがブランドと顧客のコミュニケーション機会。本記事では基礎識別、マーケティング、製品パッケージ、空間展示、内部オフィスという 5 つのカテゴリーから完全な企業ブランド物料チェックリストをご提供します。</p>
+<h3>一、基礎ブランド識別物料</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>名刺</strong>：従業員标配、両面デザイン + 役職別バージョン推奨</li><li><strong>封筒</strong>：正式ビジネスコミュニケーション必須、多規格対応</li><li><strong>便箋</strong>：契約書、見積書など正式文書に使用</li><li><strong>フォルダー</strong>：顧客会議、応札時使用、専門性向上</li><li><strong>社員証</strong>：写真、氏名、社員番号、部署</li><li><strong>ステッカー / ラベル</strong>：包装封緘、製品ラベル用</li></ul>
+<h3>二、マーケティング物料</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">物品</th><th class="border p-2 text-left">用途</th><th class="border p-2 text-left">シーン</th></tr></thead><tbody><tr><td class="border p-2">チラシ</td><td class="border p-2">A4/A5、イベントプロモ</td><td class="border p-2">街頭配布、ターゲティング</td></tr><tr><td class="border p-2">パンフレット</td><td class="border p-2">製品カタログ、サービス紹介</td><td class="border p-2">展示会、ビジネス訪問</td></tr><tr><td class="border p-2">ポスター</td><td class="border p-2">店内装飾、イベントプロモ</td><td class="border p-2">店舗、オフィス</td></tr><tr><td class="border p-2">ロールアップバナー</td><td class="border p-2">展示会必須</td><td class="border p-2">展示会、イベント</td></tr><tr><td class="border p-2">X スタンド</td><td class="border p-2">繰り返し使用可</td><td class="border p-2">展示会、ロードショー</td></tr><tr><td class="border p-2">ギフト</td><td class="border p-2">イベント記念品</td><td class="border p-2">顧客謝礼</td></tr></tbody></table>
+<h3>三、製品パッケージ物料</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>紙袋</strong>：小売ショッピングバッグ、エコ + 質感、3 サイズ</li><li><strong>ギフトボックス</strong>：高級製品包装、ブランド格上げ</li><li><strong>配送箱</strong>：EC 配送用、3-5 層コルゲート + ハニカム構造</li><li><strong>製品ラベル</strong>：成分、バーコード、QR コード、ブランドロゴ</li><li><strong>封緘ステッカー</strong>：開封防止、開封体験向上</li><li><strong>サンキューカード</strong>：手書き風印刷、ブランド温かみ</li></ul>
+<h3>四、空間展示＆オフィス物料</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>看板</strong>：入口にブランドロゴ + 日英名表記</li><li><strong>POP ディスプレイ</strong>：店内陳列用の紙製展示架</li><li><strong>壁面ポスター</strong>：オフィス装飾 + ブランド価値観伝達</li><li><strong>誘導サイン</strong>：会議室、トイレ、非常口など</li><li><strong>スタッフ T シャツ / ポロシャツ</strong>：シルク印刷または熱転写、ロゴ付き</li><li><strong>スタッフノート</strong>：ロゴ付きオフィス用品</li></ol>
+<h3>五、ブランド物料企画のご提案</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>統一デザイン言語</strong>：全物料で同じ色、フォント、グラフィック要素使用</li><li><strong>段階的制作</strong>：起業時は基礎物料から、段階的に拡張</li><li><strong>信頼できる供給者選定</strong>：全サービス対応できる印刷会社と提携、品質一貫性確保</li><li><strong>ブランドマニュアル構築</strong>：ビジュアル基準を記録、新物料制作時の根拠</li></ul>
+<h3>よくある質問</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：起業時はどの物料から作るべき？</strong><br/>A：名刺、封筒、便箋、フォルダー、製品包装の 5 項目が基盤。</p><p><strong>Q：ブランド物料の更新頻度は？</strong><br/>A：ロゴは不変でも物料は毎年更新で新鮮さを保つ。</p><p><strong>Q：シルク印刷 vs デジタル印刷どっち？</strong><br/>A：小ロット・個別性：デジタル、大ロット・シンプルデザイン：シルク。</p><p><strong>Q：セット割引はありますか？</strong><br/>A：智印雲はパッケージ提供：5 項目 9 折 / 10 項目 8.5 折。</p></div>
+<p>智印雲はワンストップのブランド物料印刷サービスをご提供。今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 専属ブランド物料方案！</p>` },
+    'mtr-advertising-specs': { title: 'MTR広告印刷仕様', description: '港島線、観塘線、荃湾線の広告印刷規格について解説します。', date: '2024-05-05', category: '香港ローカル', content: `<p>香港 MTR は毎日 500 万人以上を輸送する香港最繁忙の公共交通システム。ポスターや展示物料で広告を出したい企業にとって、MTR 広告は極めてコストパフォーマンスの高い選択肢。本記事は広告形式、規格、路線戦略、印刷要点、落とし穴回避の 6 つの側面から MTR 広告投放を詳細解説します。</p>
+<h3>一、MTR 広告の主要形式</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">広告タイプ</th><th class="border p-2 text-left">寸法</th><th class="border p-2 text-left">位置</th></tr></thead><tbody><tr><td class="border p-2">12-sheet ライトボックス</td><td class="border p-2">3000 × 1500mm</td><td class="border p-2">プラットフォーム壁面、最多</td></tr><tr><td class="border p-2">48-sheet ライトボックス</td><td class="border p-2">6096 × 3048mm</td><td class="border p-2">駅コンコース、人流大</td></tr><tr><td class="border p-2">PSD ステッカー</td><td class="border p-2">駅ごと規格</td><td class="border p-2">新型広告枠、視覚衝撃強</td></tr><tr><td class="border p-2">ピラー包装</td><td class="border p-2">現場ごと寸法</td><td class="border p-2">駅支柱包装</td></tr><tr><td class="border p-2">車内ポスター</td><td class="border p-2">1189 × 841mm</td><td class="border p-2">車両ドア上 + 連結部</td></tr><tr><td class="border p-2">車両全体広告</td><td class="border p-2">列車全体外観</td><td class="border p-2">露出率最高</td></tr></tbody></table>
+<h3>二、広告枠印刷規格詳細</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>12-sheet ライトボックス</strong>：3000 × 1500mm、100dpi @ 実寸</li><li><strong>48-sheet ライトボックス</strong>：6096 × 3048mm、72-100dpi</li><li><strong>車内ポスター</strong>：1189 × 841mm (A0)、150dpi</li><li><strong>PSD ステッカー</strong>：駅ごと規格、144dpi 以上</li><li><strong>車両包装</strong>：列車全長、150dpi で十分</li></ul>
+<h3>三、路線別投放戦略</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>港島線</strong>：中環、金鐘、湾仔、銅鑼湾 — ホワイトカラー、金融、旅行者</li><li><strong>観塘線</strong>：観塘、九龍湾など — 旺角、油麻地の人流密集区</li><li><strong>荃湾線</strong>：新界と九龍横断 — 住宅・商業、日用品、教育、不動産</li><li><strong>東鉄線 / 西鉄線</strong>：新界北部、深圳口岸接続 — 越境消費、観光</li><li><strong>南港島線 / 将軍澳線</strong>：住宅区中心 — 家庭、社区サービス</li></ol>
+<h3>四、印刷注意事項</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>カラーモード</strong>：CMYK 必須、RGB ファイルは却下</li><li><strong>フォント埋め込み</strong>：PDF は全フォント埋め込み必須</li><li><strong>素材</strong>：ライトボックスはバックリットフィルム、車内ポスターは PP 合成紙</li><li><strong>ブリード</strong>：4 辺最低 5mm ブリード</li><li><strong>彩度</strong>：遠距離視認 — 高彩度 + 大フォント推奨</li></ul>
+<h3>五、避けるべきエラー</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li>実寸規格確認忘れ — 印刷後にサイズ違い発覚</li><li>CMYK 色暗淡 — 遠距離で不明瞭</li><li>フォント小 — 3m 先で読めない</li><li>余白過多 — 貴重な広告枠の無駄</li><li>ファイル過大 — アップロード/印刷時間延長</li></ul>
+<h3>六、よくある質問</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：MTR 広告の必要予算は？</strong><br/>A：12-sheet ライトボックス月額 HK$30,000-80,000、A0 ポスター HK$3,000-8,000。</p><p><strong>Q：何週間前に申請？</strong><br/>A：6-8 週間前推奨、繁忙期（祝日）は 3 ヶ月前。</p><p><strong>Q：路線を指定できますか？</strong><br/>A：はい。MTR 局は駅または路線の指定投放を許可。</p><p><strong>Q：智印雲は代理申請できますか？</strong><br/>A：はい。デザイン + 印刷 + 申請代行の全套サービス対応。</p></div>
+<p>智印雲は MTR 広告物料の專業印刷サービスをご提供。今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 見積もり！</p>` },
     'flyer-printing-guide': {
       title: '香港チラシ印刷完全ガイド：サイズ、用紙、設計、配布戦略',
       description: 'A4・A5、二つ折り・三つ折り、コート紙・書籍用紙まで、香港でのチラシ印刷を徹底解説。', date: '2026-07-02', category: '印刷知識',

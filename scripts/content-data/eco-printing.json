@@ -1,0 +1,406 @@
+[
+  {
+    "slug": "eco-printing",
+    "intro": {
+      "zh-hk": "可持續發展已成為全球趨勢。越來越多的企業將 ESG（環境、社會、治理）納入核心戰略，而環保印刷正是其中的關鍵環節。本文將從環保印刷定義、環保材質、工藝技術、認證標準、實務應用、ESG 報告策略 6 大維度，為企業提供系統化的綠色印刷指引。",
+      "en": "Sustainability is now a global trend. More companies embed ESG (Environmental, Social, Governance) into core strategy, and eco-printing is a key part of that. This article provides systematic green printing guidance across six dimensions: definition, materials, processes, certifications, real applications, and ESG report strategy.",
+      "ja": "持続可能性はグローバルトレンドになりました。ESG（環境・社会・ガバナンス）をコア戦略に組み込む企業が増えており、エコ印刷はその重要な要素です。本記事はエコ印刷の定義、エコ素材、工程技術、認証基準、実装、ESG レポート戦略の 6 つの側面から、体系的なグリーン印刷指引をご提供します。"
+    },
+    "zh-hk": {
+      "sections": [
+        {
+          "tag": "h3",
+          "body": "一、什麼是環保印刷？"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>使用再生紙或 FSC 認證紙張</strong>：森林管理委員會（FSC）認證保證紙張來源可持續",
+            "<strong>大豆油墨等環保油墨</strong>：VOC（揮發性有機物）含量低、可降解",
+            "<strong>減少化學藥劑使用</strong>：傳統印刷用 IPA 酒精等有害溶劑，環保印刷用替代方案",
+            "<strong>優化生產流程降低能耗</strong>：智能排版、廢料回收、節能設備",
+            "<strong>減少廢棄物產生</strong>：精準計算紙張、減少切邊損耗"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "二、環保材質推薦"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "環保材質",
+            "特性",
+            "應用"
+          ],
+          "rows": [
+            [
+              "再生紙",
+              "100% 回收紙漿，FSC 認證",
+              "信封、信紙、便箋"
+            ],
+            [
+              "大豆油墨",
+              "可降解、低 VOC",
+              "所有印刷品"
+            ],
+            [
+              "植物油墨",
+              "純植物配方",
+              "食品包裝"
+            ],
+            [
+              "水性過膠",
+              "無溶劑",
+              "兒童產品"
+            ],
+            [
+              "甘蔗渣紙塑",
+              "可堆肥",
+              "電子產品內襯"
+            ],
+            [
+              "PLA 淋膜",
+              "可降解",
+              "食品包裝"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "三、ESG 報告中的印刷策略"
+        },
+        {
+          "tag": "ol",
+          "items": [
+            "<strong>碳足跡披露</strong>：印刷品碳足跡計算（從紙漿到交貨）",
+            "<strong>供應鏈透明</strong>：FSC CoC（Chain of Custody）認證可追溯紙漿來源",
+            "<strong>減廢目標</strong>：每年減少 5% 印刷廢料，5 年累計 25%",
+            "<strong>綠色採購政策</strong>：規定供應商必須提供環保認證",
+            "<strong>客戶端展示</strong>：包裝上加綠色標識傳遞 ESG 承諾"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "四、認證標準一覽"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>FSC（Forest Stewardship Council）</strong>：森林管理認證，全球最權威",
+            "<strong>PEFC（Programme for the Endorsement of Forest Certification）</strong>：另一國際森林認證體系",
+            "<strong>大豆油墨協會認證</strong>：Soy Ink Technical Board",
+            "<strong>ISO 14001</strong>：環境管理體系認證",
+            "<strong>中國環境標誌</strong>：十環認證，國內環保產品標識"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "五、實際應用案例"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>ESG 報告印刷</strong>：上市公司年報、ESG 報告常用 100% 再生紙 + 大豆油墨",
+            "<strong>品牌環保產品線</strong>：Patagonia、Allbirds 等品牌專用環保包裝",
+            "<strong>活動紀念品</strong>：演唱會、馬拉松紀念 T 恤/海報用甘蔗渣紙塑",
+            "<strong>兒童產品印刷</strong>：玩具外包裝、兒童書籍水性過膠無毒"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "六、常見問題"
+        },
+        {
+          "tag": "faq",
+          "qas": [
+            {
+              "q": "環保印刷貴多少？",
+              "a": "一般貴 10-30%，但隨着技術成熟已大幅下降。"
+            },
+            {
+              "q": "FSC 認證紙張耐用嗎？",
+              "a": "是的，FSC 認證只管來源，不影響紙張品質。"
+            },
+            {
+              "q": "大豆油墨會褪色嗎？",
+              "a": "不會。大豆油墨色彩穩定性與傳統油墨相當。"
+            },
+            {
+              "q": "有 ESG 報告用的環保印刷方案嗎？",
+              "a": "提供，100% 再生紙 + 大豆油墨 + 水性過膠成套方案。"
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "body": "想為您的品牌加入環保元素？立即 <a href=\"https://wa.me/8618126380255\" target=\"_blank\">WhatsApp 聯絡智印雲</a> 獲取綠色印刷方案！"
+        }
+      ]
+    },
+    "en": {
+      "sections": [
+        {
+          "tag": "h3",
+          "body": "1. What is Eco-Printing?"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>Recycled or FSC certified paper</strong>: FSC certification ensures sustainable paper sources",
+            "<strong>Soy-based and plant-based inks</strong>: Low VOC, biodegradable",
+            "<strong>Reduce chemicals</strong>: Eco-printing replaces IPA and other harmful solvents used in traditional printing",
+            "<strong>Optimize production for lower energy use</strong>: Smart imposition, waste recycling, energy-efficient equipment",
+            "<strong>Minimize waste</strong>: Precise paper calculation, reduce trim loss"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "2. Eco-Material Recommendations"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "Eco Material",
+            "Features",
+            "Applications"
+          ],
+          "rows": [
+            [
+              "Recycled paper",
+              "100% recycled pulp, FSC certified",
+              "Envelopes, stationery, memos"
+            ],
+            [
+              "Soy ink",
+              "Biodegradable, low VOC",
+              "All printed products"
+            ],
+            [
+              "Plant-based ink",
+              "Pure plant formula",
+              "Food packaging"
+            ],
+            [
+              "Water-based lamination",
+              "Solvent-free",
+              "Children products"
+            ],
+            [
+              "Bagasse pulp mold",
+              "Compostable",
+              "Electronics inner tray"
+            ],
+            [
+              "PLA lamination",
+              "Biodegradable",
+              "Food packaging"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "3. ESG Report Printing Strategy"
+        },
+        {
+          "tag": "ol",
+          "items": [
+            "<strong>Carbon footprint disclosure</strong>: Calculate paper-to-delivery carbon footprint for prints",
+            "<strong>Supply chain transparency</strong>: FSC CoC (Chain of Custody) certification for traceable pulp source",
+            "<strong>Waste reduction targets</strong>: 5% reduction per year, 25% over 5 years",
+            "<strong>Green procurement policy</strong>: Mandate eco certification from suppliers",
+            "<strong>Client-side branding</strong>: Add green identifiers on packaging to communicate ESG commitment"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "4. Certification Standards"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>FSC</strong>: Forest Stewardship Council — most authoritative global standard",
+            "<strong>PEFC</strong>: Programme for the Endorsement of Forest Certification — alternative international standard",
+            "<strong>Soy Ink Association</strong>: Soy Ink Technical Board certification",
+            "<strong>ISO 14001</strong>: Environmental management system certification",
+            "<strong>China Environmental Labeling</strong>: Ten-Ring certification, domestic eco-product mark"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "5. Real-World Application Cases"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>ESG report printing</strong>: Public companies' annual & ESG reports often use 100% recycled + soy ink",
+            "<strong>Brand eco-product lines</strong>: Patagonia, Allbirds use eco-friendly packaging",
+            "<strong>Event memorabilia</strong>: Concert/marathon T-shirts/posters use bagasse pulp mold",
+            "<strong>Children's products</strong>: Toy packaging, children's books use non-toxic water-based lamination"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "6. Frequently Asked Questions"
+        },
+        {
+          "tag": "faq",
+          "qas": [
+            {
+              "q": "How much more does eco-printing cost?",
+              "a": "Typically 10-30% more, but costs have dropped significantly with maturing technology."
+            },
+            {
+              "q": "Is FSC certified paper as durable?",
+              "a": "Yes — FSC certification covers source, not paper quality."
+            },
+            {
+              "q": "Will soy ink fade?",
+              "a": "No. Soy ink color stability is comparable to traditional ink."
+            },
+            {
+              "q": "Any eco-package for ESG reports?",
+              "a": "Yes — 100% recycled + soy ink + water-based lamination package available."
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "body": "Want to add eco to your brand? Contact <a href=\"https://wa.me/8618126380255\" target=\"_blank\">ZprintPro via WhatsApp</a> for green printing solutions!"
+        }
+      ]
+    },
+    "ja": {
+      "sections": [
+        {
+          "tag": "h3",
+          "body": "一、エコ印刷とは？"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>再生紙または FSC 認証紙</strong>：FSC 認証は持続可能な紙資源を保証",
+            "<strong>大豆インク等のエコインキ</strong>：VOC 低、生分解性",
+            "<strong>化学薬品削減</strong>：従来印刷の IPA 等有害溶剤をエコ代替",
+            "<strong>省エネ工程最適化</strong>：スマート版面、廃材回収、省エネ設備",
+            "<strong>廃棄物の最小化</strong>：精緻な用紙計算、トリムロス削減"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "二、エコ素材のご提案"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "エコ素材",
+            "特徴",
+            "用途"
+          ],
+          "rows": [
+            [
+              "再生紙",
+              "100% 再生パルプ、FSC 認証",
+              "封筒、便箋、メモ"
+            ],
+            [
+              "大豆インキ",
+              "生分解、低 VOC",
+              "全印刷物"
+            ],
+            [
+              "植物性インキ",
+              "純植物処方",
+              "食品包装"
+            ],
+            [
+              "水性ラミネート",
+              "溶剤フリー",
+              "子供向け製品"
+            ],
+            [
+              "バガス pulp 成形",
+              "堆肥化可能",
+              "電子機器インナー"
+            ],
+            [
+              "PLA ラミネート",
+              "生分解性",
+              "食品包装"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "三、ESG レポート印刷戦略"
+        },
+        {
+          "tag": "ol",
+          "items": [
+            "<strong>カーボンフットプリント開示</strong>：パルプから納品までの印刷物 CO2 計算",
+            "<strong>サプライチェーン透明性</strong>：FSC CoC（Chain of Custody）認証でパルプ源を追跡",
+            "<strong>廃棄物削減目標</strong>：年間 5% 削減、5 年累計 25%",
+            "<strong>グリーン調達ポリシー</strong>：供給者にエコ認証を義務化",
+            "<strong>顧客側ブランディング</strong>：ESG コミットメントを包装上のグリーン标识で伝達"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "四、認証基準一覧"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>FSC</strong>：森林管理協議会 — 最も権威ある国際基準",
+            "<strong>PEFC</strong>：Programme for the Endorsement of Forest Certification — 代替国際基準",
+            "<strong>Soy Ink 協会認証</strong>：Soy Ink Technical Board",
+            "<strong>ISO 14001</strong>：環境マネジメントシステム認証",
+            "<strong>中国環境ラベル</strong>：十環認証、国内エコ製品マーク"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "五、実装事例"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>ESG レポート印刷</strong>：上場企業の年次・ESG レポートは 100% 再生紙 + 大豆インキが定番",
+            "<strong>ブランドエコ製品ライン</strong>：Patagonia、Allbirds 等はエコ包装を採用",
+            "<strong>イベント記念品</strong>：コンサート・マラソン記念 T シャツ / ポスターにバガス pulp",
+            "<strong>子供向け製品</strong>：玩具包装、子供書籍は無毒水性ラミネート"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "六、よくある質問"
+        },
+        {
+          "tag": "faq",
+          "qas": [
+            {
+              "q": "エコ印刷はどれくらい高い？",
+              "a": "通常 10-30% 高ですが、技術成熟で大幅低下。"
+            },
+            {
+              "q": "FSC 認証紙は耐久性大丈夫？",
+              "a": "はい。FSC は供給源のみ管理、用紙品質には影響なし。"
+            },
+            {
+              "q": "大豆インキは色褪せますか？",
+              "a": "いいえ。色安定性は従来インキ同等。"
+            },
+            {
+              "q": "ESG レポート用エコパッケージは？",
+              "a": "100% 再生紙 + 大豆インキ + 水性ラミネートのセット提供可能。"
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "body": "ブランドにエコ要素を加えませんか？今すぐ <a href=\"https://wa.me/8618126380255\" target=\"_blank\">WhatsApp で智印雲に連絡</a> グリーン印刷方案！"
+        }
+      ]
+    }
+  }
+]

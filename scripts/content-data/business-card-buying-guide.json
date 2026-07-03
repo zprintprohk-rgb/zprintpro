@@ -1,0 +1,505 @@
+[
+  {
+    "slug": "business-card-buying-guide",
+    "intro": {
+      "zh-hk": "名片是商業交往中的「第一張臉」。即香港行內講嘅，一張好名片要「睇得、摸得、留得住」。但面對市場上琳瑯滿目的材質和工藝選擇，很多企業主和設計師都會感到困惑。本文將從材質、工藝、價格、行業適配 4 大維度，為您詳細拆解名片印刷的選購要點。",
+      "en": "Your business card is your first impression in commercial interactions. From 300g art paper to 400g thick stock, from foil stamping to spot UV, this guide covers everything you need to know about choosing business cards in Hong Kong — materials, finishes, pricing, and industry fit.",
+      "ja": "名刺はビジネス交流における「最初の顔」。香港の業界では「見て、触れて、記憶に残る」名刺が必要。本記事は材質、加工、価格、業種適応の 4 つの側面から、名刺印刷の選び方を詳しく解説します。"
+    },
+    "zh-hk": {
+      "sections": [
+        {
+          "tag": "h3",
+          "body": "一、名片紙質材質對比"
+        },
+        {
+          "tag": "p",
+          "body": "紙質是名片的靈魂，直接決定觸感和視覺印象："
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "材質",
+            "克重",
+            "特性",
+            "適合人群",
+            "參考價格"
+          ],
+          "rows": [
+            [
+              "銅版紙",
+              "300g",
+              "經濟實惠、色彩鮮豔",
+              "初創企業、銷售團隊",
+              "HK$150-300/100 張"
+            ],
+            [
+              "厚身咭紙",
+              "400g",
+              "厚實手感、尊貴質感",
+              "律師、設計師、高管",
+              "HK$250-450/100 張"
+            ],
+            [
+              "環保再生紙",
+              "300g",
+              "環保認證、自然紋理",
+              "ESG 企業、文創品牌",
+              "HK$180-350/100 張"
+            ],
+            [
+              "特種紙",
+              "250-350g",
+              "獨特觸感、高端定位",
+              "奢侈品牌、藝術家",
+              "HK$300-600/100 張"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "二、名片表面工藝詳解"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>燙金（Foil Stamping）</strong>：金、銀、玫瑰金等金屬色燙印，適合金融、地產",
+            "<strong>局部 UV（Spot UV）</strong>：在特定圖案上覆蓋光油，明暗對比",
+            "<strong>啞膠 / 光膠</strong>：啞膠沉穩高檔，光膠色彩飽和鮮豔",
+            "<strong>凹凸壓印（Embossing）</strong>：無油墨立體壓紋，觸感強烈",
+            "<strong>圓角（Rounded Corners）</strong>：R3-R5 圓角處理，避免邊角磨損"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "三、名片設計與印刷規範"
+        },
+        {
+          "tag": "ol",
+          "items": [
+            "<strong>出血位</strong>：成品 90×54mm，設計稿 96×60mm（預留 3mm 出血位）",
+            "<strong>字體轉曲線</strong>：AI / PDF 必須將文字轉外框，否則無字體會亂碼",
+            "<strong>色彩模式</strong>：必須 CMYK，RGB 直接印刷會偏色",
+            "<strong>分辨率</strong>：圖片至少 300dpi，低分辨率印刷模糊"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "四、不同行業名片選購建議"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "行業",
+            "推薦組合",
+            "定位"
+          ],
+          "rows": [
+            [
+              "金融 / 法律",
+              "400g 厚紙 + 啞膠 + 燙金",
+              "正式、信任感"
+            ],
+            [
+              "設計 / 創意",
+              "特種紙 + UV + 圓角",
+              "個性化、辨識度"
+            ],
+            [
+              "銷售 / 地產",
+              "300g 銅版紙 + 光膠",
+              "成本可控、親和力"
+            ],
+            [
+              "科技 / IT",
+              "300g 銅版紙 + 啞膠 + 局部 UV",
+              "簡約、現代"
+            ],
+            [
+              "醫療 / 健康",
+              "環保再生紙 + 啞膠",
+              "安全、環保"
+            ],
+            [
+              "教育 / 文化",
+              "特種紙 + 壓凹",
+              "文藝、質感"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "五、選購決策框架"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>預算有限</strong>：300g 銅版紙 + 單面印刷，100 張約 HK$150 起",
+            "<strong>追求質感</strong>：400g 厚紙 + 啞膠，厚實手感令人印象深刻",
+            "<strong>高端定位</strong>：特種紙 + 燙金 / 局部 UV，單張成本 HK$3-6",
+            "<strong>環保理念</strong>：FSC 認證再生紙 + 大豆油墨"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "六、常見問題"
+        },
+        {
+          "tag": "faq",
+          "qas": [
+            {
+              "q": "名片最少可以印幾多張？",
+              "a": "100 張起印。100 張係標準起訂量，因為開機費同人工成本固定。"
+            },
+            {
+              "q": "即日名片係咪真係當日可取？",
+              "a": "只要上午 11 點前確認稿件，300g 銅版紙名片可以當日取貨。"
+            },
+            {
+              "q": "雙面名片會唔會透底？",
+              "a": "選用 300g 或以上紙張一般不會透底。"
+            },
+            {
+              "q": "名片設計可以自己做嗎？",
+              "a": "可以。智印雲提供免費模板下載，符合印刷規範。"
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "body": "無論您需要經濟實惠的標準名片，還是尊貴非凡的燙金名片，立即 <a href=\"https://wa.me/8618126380255\" target=\"_blank\">WhatsApp 聯絡智印雲</a> 獲取即時報價！"
+        }
+      ]
+    },
+    "en": {
+      "sections": [
+        {
+          "tag": "h3",
+          "body": "1. Business Card Material Comparison"
+        },
+        {
+          "tag": "p",
+          "body": "Paper is the soul of a business card — directly determining tactile feel and visual impression:"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "Material",
+            "Weight",
+            "Features",
+            "Best For",
+            "Price"
+          ],
+          "rows": [
+            [
+              "Art Paper",
+              "300g",
+              "Affordable, vibrant colors",
+              "Startups, sales teams",
+              "US$20-40/100pcs"
+            ],
+            [
+              "Thick Card",
+              "400g",
+              "Substantial feel, premium",
+              "Lawyers, designers, execs",
+              "US$32-58/100pcs"
+            ],
+            [
+              "Recycled Eco",
+              "300g",
+              "FSC certified, natural texture",
+              "ESG companies, creative",
+              "US$23-45/100pcs"
+            ],
+            [
+              "Specialty Paper",
+              "250-350g",
+              "Unique tactile, premium",
+              "Luxury brands, artists",
+              "US$38-78/100pcs"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "2. Business Card Surface Finish Details"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>Foil Stamping</strong>: Gold/silver/rose gold metallic — great for finance, real estate",
+            "<strong>Spot UV</strong>: Gloss oil on selected areas creates contrast",
+            "<strong>Matte / Glossy Lamination</strong>: Matte = stable premium feel; Glossy = saturated colors",
+            "<strong>Embossing</strong>: Inkless dimensional relief, strong tactile",
+            "<strong>Rounded Corners</strong>: R3-R5 rounded treatment, prevents wear"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "3. Design & Print Specifications"
+        },
+        {
+          "tag": "ol",
+          "items": [
+            "<strong>Bleed</strong>: Final 90×54mm; design file must be 96×60mm (3mm bleed)",
+            "<strong>Font Conversion</strong>: AI/PDF must outline text or risk garbled text",
+            "<strong>Color Mode</strong>: Must use CMYK; RGB prints shift colors",
+            "<strong>Resolution</strong>: Images minimum 300dpi"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "4. Industry-Specific Recommendations"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "Industry",
+            "Recommended Combo",
+            "Positioning"
+          ],
+          "rows": [
+            [
+              "Finance / Legal",
+              "400g thick + matte + foil",
+              "Formal, trust"
+            ],
+            [
+              "Design / Creative",
+              "Specialty + UV + rounded",
+              "Personalized, identity"
+            ],
+            [
+              "Sales / Real Estate",
+              "300g art + glossy",
+              "Cost control, friendly"
+            ],
+            [
+              "Tech / IT",
+              "300g art + matte + spot UV",
+              "Minimalist, modern"
+            ],
+            [
+              "Medical / Health",
+              "Recycled + matte",
+              "Safe, eco"
+            ],
+            [
+              "Education / Culture",
+              "Specialty + emboss",
+              "Literary, tactile"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "5. Selection Decision Framework"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>Limited Budget</strong>: 300g art paper + single-sided, from US$20/100pcs",
+            "<strong>Quality Focus</strong>: 400g thick + matte lamination, impressive tactile",
+            "<strong>Premium Positioning</strong>: Specialty paper + foil/spot UV, US$0.40-0.80/pc",
+            "<strong>Eco Principles</strong>: FSC recycled + soy ink"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "6. Frequently Asked Questions"
+        },
+        {
+          "tag": "faq",
+          "qas": [
+            {
+              "q": "What is the MOQ for business cards?",
+              "a": "100 pieces — industry standard minimum."
+            },
+            {
+              "q": "Can I get same-day business cards?",
+              "a": "Yes, if artwork confirmed before 11am for 300g art paper."
+            },
+            {
+              "q": "Will double-sided cards show through?",
+              "a": "300g+ generally no. For heavy dark coverage, choose 400g or print white underlay."
+            },
+            {
+              "q": "Can I design cards myself?",
+              "a": "Yes. ZprintPro offers free template downloads."
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "body": "Whether standard or premium foil cards, contact <a href=\"https://wa.me/8618126380255\" target=\"_blank\">ZprintPro via WhatsApp</a> for an instant quote!"
+        }
+      ]
+    },
+    "ja": {
+      "sections": [
+        {
+          "tag": "h3",
+          "body": "一、名刺用紙材質の比較"
+        },
+        {
+          "tag": "p",
+          "body": "用紙は名刺の魂であり、触感・視覚印象を直接決定します："
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "材質",
+            "米坪",
+            "特徴",
+            "対象",
+            "参考価格"
+          ],
+          "rows": [
+            [
+              "アート紙",
+              "300g",
+              "経済的、色彩鮮やか",
+              "スタートアップ、営業チーム",
+              "HK$150-300/100 枚"
+            ],
+            [
+              "厚口",
+              "400g",
+              "重厚感、高級感",
+              "弁護士、デザイナー、経営層",
+              "HK$250-450/100 枚"
+            ],
+            [
+              "エコ再生紙",
+              "300g",
+              "エコ認証、自然なテクスチャ",
+              "ESG 企業、クリエイティブ",
+              "HK$180-350/100 枚"
+            ],
+            [
+              "特殊紙",
+              "250-350g",
+              "独特触感、高品質",
+              "ラグジュアリーブランド、芸術家",
+              "HK$300-600/100 枚"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "二、名刺表面加工詳細"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>箔押し</strong>：金・銀・rose gold の金属色印刷、金融・不動産に最適",
+            "<strong>スポット UV</strong>：特定図案にグロスオイル、明暗対比",
+            "<strong>マット / 光沢ラミネート</strong>：マットは安定高級感、光沢は色彩彩度高い",
+            "<strong>エンボス</strong>：インクなしの立体圧痕、強い触感",
+            "<strong>角丸</strong>：R3-R5 角丸処理、磨耗防止、デザイン感向上"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "三、名刺デザインと印刷仕様"
+        },
+        {
+          "tag": "ol",
+          "items": [
+            "<strong>ブリード</strong>：仕上がり 90×54mm、デザイン 96×60mm（3mm ブリード）",
+            "<strong>フォント変換</strong>：AI / PDF でフォント未変換は文字化けリスク",
+            "<strong>カラーモード</strong>：CMYK 必須、RGB は色シフト",
+            "<strong>解像度</strong>：画像は最低 300dpi"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "四、業種別推奨"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "業種",
+            "推奨構成",
+            "ポジショニング"
+          ],
+          "rows": [
+            [
+              "金融 / 法律",
+              "400g 厚口 + マット + 箔",
+              "正式、信頼感"
+            ],
+            [
+              "デザイン / クリエイティブ",
+              "特殊紙 + UV + 角丸",
+              "個性、識別性"
+            ],
+            [
+              "セールス / 不動産",
+              "300g アート + 光沢",
+              "コスト管理、親しみ"
+            ],
+            [
+              "テクノロジー / IT",
+              "300g アート + マット + スポット UV",
+              "ミニマル、モダン"
+            ],
+            [
+              "医療 / 健康",
+              "エコ再生 + マット",
+              "安全、エコ"
+            ],
+            [
+              "教育 / 文化",
+              "特殊紙 + エンボス",
+              "文芸、質感"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "五、選定意思決定フレームワーク"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>予算限定</strong>：300g アート紙 + 片面、100 枚 HK$150 から",
+            "<strong>質感重視</strong>：400g 厚口 + マットラミネート、印象的な触感",
+            "<strong>高級ポジショニング</strong>：特殊紙 + 箔 / スポット UV、単価 HK$3-6",
+            "<strong>エコ理念</strong>：FSC 認証再生紙 + 大豆インキ"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "六、よくある質問"
+        },
+        {
+          "tag": "faq",
+          "qas": [
+            {
+              "q": "名刺の最小注文数量は？",
+              "a": "100 枚から — 業界標準最小です。"
+            },
+            {
+              "q": "即日名刺は本当に当日受け取れますか？",
+              "a": "はい。午前 11 時までにデータ確定で 300g アート紙当日受け取り可能。"
+            },
+            {
+              "q": "両面名刺は透けますか？",
+              "a": "300g 以上なら通常は透けません。"
+            },
+            {
+              "q": "名刺デザインは自分でできますか？",
+              "a": "はい。智印雲は無料テンプレートダウンロードを提供。"
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "body": "お手頃な標準名刺から贅沢な箔押し名刺まで、今すぐ <a href=\"https://wa.me/8618126380255\" target=\"_blank\">WhatsApp で智印雲に連絡</a> 即時見積もり！"
+        }
+      ]
+    }
+  }
+]

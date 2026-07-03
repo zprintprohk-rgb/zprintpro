@@ -1,0 +1,76 @@
+[
+  {
+    "slug": "company-intro",
+    "title": {"zh-hk": "智印雲印刷公司簡介：專業設備與一站式印刷服務", "en": "About ZprintPro: Professional Equipment & One-Stop Printing Services", "ja": "ZprintPro 会社概要：専門設備とワンストップ印刷サービス"},
+    "intro": {"zh-hk": "智印雲（ZprintPro）是一家紮根深圳、服務全球的綜合性印刷企業，超過15年深耕印刷產業。本文將帶您深入了解智印雲的企業概況、核心設備、後加工能力、品質承諾、跨境服務與聯繫方式。", "en": "ZprintPro is a Shenzhen-rooted, globally-serving printing enterprise with 15+ years of expertise. From corporate stationery to retail packaging, this article gives an in-depth look at our company profile, core equipment, post-press capabilities, quality commitments, cross-border services, and contacts.", "ja": "智印雲（ZprintPro）は深圳に本社を構え、世界中のお客様に印刷サービスを提供している総合印刷企業です。本記事では企業概要、主力設備、後加工体制、品質保証、越境サービス、そしてお問い合わせ方法を詳しくご紹介します。"},
+    "zh-hk": {
+      "sections": [
+        {"tag": "p", "body": "智印雲於深圳龍崗區設有 8,000+ 平方米現代化廠房，毗鄰香港物流樞紐，可高效服務香港本地、大灣區及全球客戶。團隊規模 200+ 人，年產能達數億印張，服務範疇橫跨商務印刷、包裝印刷、出版印刷與數碼快印四大業務線。"},
+        {"tag": "h3", "body": "一、企業概況"},
+        {"tag": "table", "headers": ["指標","規模"], "rows": [["8,000+", "平方米廠房"], ["200+", "專業員工"], ["50+", "台先進設備"], ["15+", "年行業經驗"]]},
+        {"tag": "h3", "body": "二、核心印刷設備"},
+        {"tag": "ul", "items": ["<strong>海德堡全新 6+1 印刷機</strong>：德國原裝高精度設備，色彩還原度極高，適合高端商務印刷", "<strong>HP Indigo 數碼印刷機</strong>：支持可變數據印刷、短版快印、樣書製作", "<strong>煒岡 6 色 UV 輪轉機</strong>：UV 固化技術即印即乾，支援不規則材質與特殊工藝", "<strong>專業色彩管理系統</strong>：機長級色彩校對，確保批次一致性"]},
+        {"tag": "h3", "body": "三、後加工設備"},
+        {"tag": "ul", "items": ["<strong>馬天尼膠裝線</strong>：全自動膠裝，適合書刊、畫冊大批量生產", "<strong>海德堡折頁機群</strong>：多台聯動支援多種折頁方式", "<strong>全自動糊盒機</strong>：高效完成包裝盒的糊盒工序", "<strong>模切 / 燙金 / UV / 擊凸</strong>：多種表面處理工藝一站完成"]},
+        {"tag": "h3", "body": "四、品質與服務承諾"},
+        {"tag": "ol", "items": ["<strong>品質第一</strong>：全線採用環保油墨及紙張，通過 ISO 9001 質量管理體系認證", "<strong>極速交貨</strong>：香港急件可 24 小時內完成，常規單 3-5 個工作天", "<strong>專業跟單</strong>：一對一跟單團隊，由報價到交貨全程跟進", "<strong>透明收費</strong>：無隱藏費用，報價即最終價格", "<strong>跨境支援</strong>：熟悉跨境電商包裝需求，提供 DDP/DDU 物流建議"]},
+        {"tag": "h3", "body": "五、跨境服務與海外市場"},
+        {"tag": "p", "body": "除香港本地外，智印雲服務覆蓋日本、東南亞、歐美及大洋洲。對於跨境訂單，我們熟悉各國海關申報要求與包裝檢疫標準，可協助客戶優化包裝設計以通過當地法規。"},
+        {"tag": "h3", "body": "六、聯繫智印雲"},
+        {"tag": "faq", "qas": [
+          {"q": "智印雲可以製作多少數量?", "a": "100 張起即接，急件支持 1 張加急。"},
+          {"q": "最快交貨時間?", "a": "上午 11 點前確認稿件可即日取貨（300g 銅版紙名片）。"},
+          {"q": "提供跨境物流嗎?", "a": "提供 DHL / FedEx / SF International，到歐美 5-7 天。"},
+          {"q": "可以提供設計服務嗎?", "a": "提供，HK$500/款起，含 2 輪修改。"}
+        ]},
+        {"tag": "p", "body": "立即 <a href=\"https://wa.me/8618126380255\" target=\"_blank\">WhatsApp 聯絡智印雲</a> 獲取免費報價與專業建議！"}
+      ]
+    },
+    "en": {
+      "sections": [
+        {"tag": "p", "body": "ZprintPro operates an 8,000+ square-meter modern facility in Longgang District, Shenzhen — strategically positioned next to Hong Kong's logistics grid. With 200+ professionals, we deliver hundreds of millions of impressions annually across commercial, packaging, publishing, and digital print."},
+        {"tag": "h3", "body": "1. Company Profile"},
+        {"tag": "table", "headers": ["Metric","Scale"], "rows": [["8,000+", "sq.m Facility"], ["200+", "Professionals"], ["50+", "Advanced Machines"], ["15+", "Years of Expertise"]]},
+        {"tag": "h3", "body": "2. Core Printing Equipment"},
+        {"tag": "ul", "items": ["<strong>Heidelberg 6+1 Press</strong>: German-engineered precision, superior color reproduction", "<strong>HP Indigo Digital Press</strong>: Variable-data, short runs, on-demand book production", "<strong>Weigang 6-color UV Rotary</strong>: Cures instantly, supports unusual substrates and specialty finishes", "<strong>Professional Color Management</strong>: Pressman-grade calibration"]},
+        {"tag": "h3", "body": "3. Post-Press Capabilities"},
+        {"tag": "ul", "items": ["<strong>Martini Perfect Binding Line</strong>: Automated binding for books, catalogs", "<strong>Heidelberg Folding Line</strong>: Multiple folding patterns", "<strong>Fully-Automatic Box Gluing</strong>: High-speed folding carton assembly", "<strong>Die-cutting / Foil / UV / Embossing</strong>: All specialty finishes under one roof"]},
+        {"tag": "h3", "body": "4. Quality & Service Commitments"},
+        {"tag": "ol", "items": ["<strong>Quality First</strong>: Eco-friendly inks and papers, ISO 9001 certified", "<strong>Rush Delivery</strong>: 24-hour rush for HK, 3-5 days standard", "<strong>Dedicated Account Manager</strong>: One-on-one from quote to delivery", "<strong>Transparent Pricing</strong>: Quote equals final — no hidden fees", "<strong>Cross-Border Expertise</strong>: Familiar with e-com packaging and customs docs"]},
+        {"tag": "h3", "body": "5. Cross-Border & Overseas Service"},
+        {"tag": "p", "body": "Beyond Hong Kong, we serve Japan, Southeast Asia, Europe, the Americas and Oceania. For cross-border orders, we know each country's customs requirements and packaging compliance — we help you design packaging that passes local regulations."},
+        {"tag": "h3", "body": "6. How to Contact ZprintPro"},
+        {"tag": "faq", "qas": [
+          {"q": "What is the minimum order quantity?", "a": "From 100 pieces. Rush from 1 piece supported."},
+          {"q": "How fast can I get my order?", "a": "Artwork confirmed before 11am — same-day pickup for 300g art paper."},
+          {"q": "Do you handle international shipping?", "a": "Yes — DHL / FedEx / SF International. Europe and US in 5-7 days."},
+          {"q": "Do you offer design services?", "a": "Yes — from HK$500/design, includes 2 rounds of revisions."}
+        ]},
+        {"tag": "p", "body": "Contact <a href=\"https://wa.me/8618126380255\" target=\"_blank\">ZprintPro via WhatsApp</a> for a free quote and expert advice!"}
+      ]
+    },
+    "ja": {
+      "sections": [
+        {"tag": "p", "body": "深圳龍崗区に 8,000 平方メートル以上の近代的な工場を運営。香港物流拠点に隣接し、香港、大湾区、世界のお客様に効率的なサービスをご提供。従業員 200 名以上、年印刷能力は数億枚。"},
+        {"tag": "h3", "body": "一、企業概要"},
+        {"tag": "table", "headers": ["指標","規模"], "rows": [["8,000+", "平方メートル"], ["200+", "スタッフ"], ["50+", "先進設備"], ["15+", "業界経験年数"]]},
+        {"tag": "h3", "body": "二、主力印刷設備"},
+        {"tag": "ul", "items": ["<strong>Heidelberg 6+1 印刷機</strong>：ドイツ製高精度設備、優れた色再現", "<strong>HP Indigo デジタル</strong>：バリアブル印刷、少部数印刷、オンデマンド書籍", "<strong>Weigang 6 色 UV 輪転機</strong>：UV 硬化で即乾燥、特殊素材対応", "<strong>專業色彩管理</strong>：印刷責任者レベルの色校正"]},
+        {"tag": "h3", "body": "三、後加工設備"},
+        {"tag": "ul", "items": ["<strong>Martini 無線綴じライン</strong>：書籍、カタログの大量生産", "<strong>Heidelberg 折機ライン</strong>：多種折加工", "<strong>全自動製箱機</strong>：パッケージ箱の高効率組立", "<strong>トムソン抜き / 箔 / UV / エンボス</strong>：あらゆる特殊加工を一貫対応"]},
+        {"tag": "h3", "body": "四、品質とサービス保証"},
+        {"tag": "ol", "items": ["<strong>品質第一</strong>：エコ対応インキと用紙、ISO 9001 認証", "<strong>短納期</strong>：香港エリア 24 時間特急、通常 3-5 営業日", "<strong>専任担当</strong>：見積から納品まで 1 対 1", "<strong>透明価格</strong>：隠れた費用なし、見積＝最終価格", "<strong>越境対応</strong>：EC 包装要件に精通、DDP/DDU 物流"]},
+        {"tag": "h3", "body": "五、越境サービスと海外市場"},
+        {"tag": "p", "body": "香港以外にも日本、東南アジア、欧米、オーストラリア・ニュージーランドに対応。各国の通関申告要件と包装検疫基準を理解し、現地法規制に適合した包装設計をサポート。"},
+        {"tag": "h3", "body": "六、お問い合わせ"},
+        {"tag": "faq", "qas": [
+          {"q": "最小注文数量は？", "a": "100 枚から。特急は 1 枚から対応可。"},
+          {"q": "最短納期は？", "a": "午前 11 時までにデータ確定で当日引取可能。"},
+          {"q": "国際配送は可能ですか？", "a": "DHL / FedEx / SF International、欧米 5-7 日。"},
+          {"q": "デザインサービスも？", "a": "はい。HK$500/デザインから、2 回修正まで含む。"}
+        ]},
+        {"tag": "p", "body": "今すぐ <a href=\"https://wa.me/8618126380255\" target=\"_blank\">WhatsApp で智印雲に連絡</a>、無料見積もり＆専門アドバイス！"}
+      ]
+    }
+  }
+]

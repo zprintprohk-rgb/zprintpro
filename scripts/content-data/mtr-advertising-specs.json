@@ -1,0 +1,66 @@
+[
+  {
+    "slug": "mtr-advertising-specs",
+    "intro": {"zh-hk": "香港港鐵（MTR）每天服務超過 500 萬人次，是香港最繁忙的公共交通系統。對於希望在海報和展示物料上投放廣告的企業，港鐵廣告無疑是極具性價比的選擇。本文將從廣告形式、規格、線路策略、印刷要點、避坑指南 6 個維度詳細解析港鐵廣告投放，助您在香港最繁忙的交通網絡中精準觸達目標客戶。", "en": "Hong Kong MTR serves over 5 million passengers daily — the busiest public transport system in Hong Kong. For businesses wanting to advertise on posters and display materials, MTR advertising offers excellent cost-effectiveness. This article details MTR advertising placement across six dimensions: formats, specifications, line strategy, print notes, and pitfall avoidance.", "ja": "香港 MTR は毎日 500 万人以上を輸送する香港最繁忙の公共交通システム。ポスターや展示物料で広告を出したい企業にとって、MTR 広告は極めてコストパフォーマンスの高い選択肢。本記事は広告形式、規格、路線戦略、印刷要点、落とし穴回避の 6 つの側面から MTR 広告投放を詳細解説します。"},
+    "zh-hk": {"sections": [
+      {"tag": "h3", "body": "一、港鐵廣告的主要形式"},
+      {"tag": "table", "headers": ["廣告類型","尺寸","位置"], "rows": [["12-sheet 燈箱","3000 × 1500mm","月台牆面，最常見"],["48-sheet 燈箱","6096 × 3048mm","車站大堂，人流大"],["月台門貼","依車站規格","新型廣告位，視覺衝擊力強"],["立柱包裝","依現場尺寸","車站立柱包裹"],["車廂內海報","1189 × 841mm","車門上方 + 車廂連接處"],["全車身廣告","整列車外觀","曝光率最高"]]},
+      {"tag": "h3", "body": "二、廣告位印刷規格詳解"},
+      {"tag": "ul", "items": ["<strong>12-sheet 燈箱</strong>：3000 × 1500mm，100dpi @ 實際尺寸", "<strong>48-sheet 燈箱</strong>：6096 × 3048mm，72-100dpi", "<strong>車廂內海報</strong>：1189 × 841mm (A0)，150dpi", "<strong>月台門貼</strong>：依車站規格而定，144dpi 起", "<strong>車廂包裝</strong>：整列車長度，150dpi 足夠"]},
+      {"tag": "h3", "body": "三、各線路投放策略建議"},
+      {"tag": "ol", "items": ["<strong>港島線</strong>：途經中環、金鐘、灣仔、銅鑼灣，白領、金融、遊客為主", "<strong>觀塘線</strong>：連接觀塘、九龍灣等，旺角、油麻地人流密集區", "<strong>荃灣線</strong>：貫穿新界和九龍，住宅區和商業區，家庭消費品、教育、房地產", "<strong>東鐵線 / 西鐵線</strong>：連接新界北部、深圳過境口岸，跨境消費、旅遊", "<strong>南港島線 / 將軍澳線</strong>：住宅區為主，家庭、社區服務"]},
+      {"tag": "h3", "body": "四、印刷注意事項"},
+      {"tag": "ul", "items": ["<strong>色彩模式</strong>：必須使用 CMYK，RGB 文件會被拒收", "<strong>字體嵌入</strong>：PDF 文件必須嵌入所有字體", "<strong>材質選擇</strong>：燈箱廣告使用背噴燈片（Backlit Film），車廂海報使用 PP 合成紙", "<strong>出血位</strong>：四周保留至少 5mm 出血位", "<strong>顏色飽和度</strong>：遠距離觀看，建議高飽和度色彩 + 大字體"]},
+      {"tag": "h3", "body": "五、避免常見錯誤"},
+      {"tag": "ul", "items": ["設計時忘記看實際規格 — 印刷出來才發現尺寸不對", "CMYK 顏色偏暗 — 遠距離看不清楚", "字體太小 — 3 米外就讀不到", "留白過多 — 浪費寶貴廣告位", "檔案太大 — 上傳 / 印刷時間延長"]},
+      {"tag": "h3", "body": "六、常見問題"},
+      {"tag": "faq", "qas": [
+        {"q": "港鐵廣告投放需要多少預算？", "a": "12-sheet 燈箱月費約 HK$30,000-80,000，A0 海報月費約 HK$3,000-8,000。"},
+        {"q": "需要提前多久申請？", "a": "建議提前 6-8 週申請，旺季（節日）需 3 個月。"},
+        {"q": "可指定線路嗎？", "a": "可以，港鐵局允許指定車站或線路投放。"},
+        {"q": "智印雲可代辦嗎？", "a": "可以，提供設計 + 印刷 + 代提交全套服務。"}
+      ]},
+      {"tag": "p", "body": "智印雲提供港鐵廣告物料的專業印刷服務。立即 <a href=\"https://wa.me/8618126380255\" target=\"_blank\">WhatsApp 聯絡智印雲</a> 獲取報價。"}
+    ]},
+    "en": {"sections": [
+      {"tag": "h3", "body": "1. Main MTR Advertising Formats"},
+      {"tag": "table", "headers": ["Ad Type","Size","Location"], "rows": [["12-sheet Lightbox","3000 × 1500mm","Platform walls, most common"],["48-sheet Lightbox","6096 × 3048mm","Station concourse, high traffic"],["Platform Screen Door","Per station spec","New format, strong visual impact"],["Pillar Wrap","Per site spec","Station pillar wrap"],["In-train Poster","1189 × 841mm","Above doors + train connector"],["Full Train Wrap","Whole train exterior","Highest exposure"]]},
+      {"tag": "h3", "body": "2. Advertising Slot Print Specifications"},
+      {"tag": "ul", "items": ["<strong>12-sheet Lightbox</strong>: 3000 × 1500mm, 100dpi @ actual size", "<strong>48-sheet Lightbox</strong>: 6096 × 3048mm, 72-100dpi", "<strong>In-train Poster</strong>: 1189 × 841mm (A0), 150dpi", "<strong>Platform Screen Door</strong>: Per station spec, 144dpi minimum", "<strong>Train Wrap</strong>: Whole train length, 150dpi sufficient"]},
+      {"tag": "h3", "body": "3. Line-by-Line Strategy Recommendations"},
+      {"tag": "ol", "items": ["<strong>Island Line</strong>: Central, Admiralty, Wan Chai, Causeway Bay — white-collar, finance, tourists", "<strong>Kwun Tong Line</strong>: Connects Kwun Tong, Kowloon Bay — Mong Kok, Yau Ma Tei dense areas", "<strong>Tsuen Wan Line</strong>: Spans NT and Kowloon — residential and commercial, FMCG, education, real estate", "<strong>East Rail / West Rail</strong>: NT North, Shenzhen border crossings — cross-border shopping, tourism", "<strong>South Island / Tseung Kwan O</strong>: Mostly residential — family, community services"]},
+      {"tag": "h3", "body": "4. Print Notes"},
+      {"tag": "ul", "items": ["<strong>Color Mode</strong>: CMYK required — RGB files rejected", "<strong>Font Embedding</strong>: PDF must embed all fonts", "<strong>Material</strong>: Lightbox ads use Backlit Film, train posters use PP synthetic paper", "<strong>Bleed</strong>: Minimum 5mm bleed on all four sides", "<strong>Color Saturation</strong>: Distant viewing — recommend high saturation + large font"]},
+      {"tag": "h3", "body": "5. Common Errors to Avoid"},
+      {"tag": "ul", "items": ["Forgetting to check actual specs — wrong size discovered at print", "CMYK colors too dark — unclear at distance", "Font too small — unreadable from 3 meters", "Too much white space — wasting valuable ad real estate", "Files too large — upload/print time extends"]},
+      {"tag": "h3", "body": "6. Frequently Asked Questions"},
+      {"tag": "faq", "qas": [
+        {"q": "What budget is needed for MTR advertising?", "a": "12-sheet lightbox US$4,000-10,000/month; A0 poster US$400-1,000/month."},
+        {"q": "How far in advance to apply?", "a": "Recommend 6-8 weeks ahead; peak season (holidays) needs 3 months."},
+        {"q": "Can I target specific lines?", "a": "Yes — MTR authority allows specifying station or line."},
+        {"q": "Can ZprintPro handle submission?", "a": "Yes — design + print + submission full-service available."}
+      ]},
+      {"tag": "p", "body": "ZprintPro provides professional MTR advertising material printing. Contact <a href=\"https://wa.me/8618126380255\" target=\"_blank\">ZprintPro via WhatsApp</a> for a quote."}
+    ]},
+    "ja": {"sections": [
+      {"tag": "h3", "body": "一、MTR 広告の主要形式"},
+      {"tag": "table", "headers": ["広告タイプ","寸法","位置"], "rows": [["12-sheet ライトボックス","3000 × 1500mm","プラットフォーム壁面、最多"],["48-sheet ライトボックス","6096 × 3048mm","駅コンコース、人流大"],["PSD ステッカー","駅ごと規格","新型広告枠、視覚衝撃強"],["ピラー包装","現場ごと寸法","駅支柱包装"],["車内ポスター","1189 × 841mm","車両ドア上 + 連結部"],["車両全体広告","列車全体外観","露出率最高"]]},
+      {"tag": "h3", "body": "二、広告枠印刷規格詳細"},
+      {"tag": "ul", "items": ["<strong>12-sheet ライトボックス</strong>：3000 × 1500mm、100dpi @ 実寸", "<strong>48-sheet ライトボックス</strong>：6096 × 3048mm、72-100dpi", "<strong>車内ポスター</strong>：1189 × 841mm (A0)、150dpi", "<strong>PSD ステッカー</strong>：駅ごと規格、144dpi 以上", "<strong>車両包装</strong>：列車全長、150dpi で十分"]},
+      {"tag": "h3", "body": "三、路線別投放戦略"},
+      {"tag": "ol", "items": ["<strong>港島線</strong>：中環、金鐘、湾仔、銅鑼湾 — ホワイトカラー、金融、旅行者", "<strong>観塘線</strong>：観塘、九龍湾など — 旺角、油麻地の人流密集区", "<strong>荃湾線</strong>：新界と九龍横断 — 住宅・商業、日用品、教育、不動産", "<strong>東鉄線 / 西鉄線</strong>：新界北部、深圳口岸接続 — 越境消費、観光", "<strong>南港島線 / 将軍澳線</strong>：住宅区中心 — 家庭、社区サービス"]},
+      {"tag": "h3", "body": "四、印刷注意事項"},
+      {"tag": "ul", "items": ["<strong>カラーモード</strong>：CMYK 必須、RGB ファイルは却下", "<strong>フォント埋め込み</strong>：PDF は全フォント埋め込み必須", "<strong>素材</strong>：ライトボックスはバックリットフィルム、車内ポスターは PP 合成紙", "<strong>ブリード</strong>：4 辺最低 5mm ブリード", "<strong>彩度</strong>：遠距離視認 — 高彩度 + 大フォント推奨"]},
+      {"tag": "h3", "body": "五、避けるべきエラー"},
+      {"tag": "ul", "items": ["実寸規格確認忘れ — 印刷後にサイズ違い発覚", "CMYK 色暗淡 — 遠距離で不明瞭", "フォント小 — 3m 先で読めない", "余白過多 — 貴重な広告枠の無駄", "ファイル過大 — アップロード/印刷時間延長"]},
+      {"tag": "h3", "body": "六、よくある質問"},
+      {"tag": "faq", "qas": [
+        {"q": "MTR 広告の必要予算は？", "a": "12-sheet ライトボックス月額 HK$30,000-80,000、A0 ポスター HK$3,000-8,000。"},
+        {"q": "何週間前に申請？", "a": "6-8 週間前推奨、繁忙期（祝日）は 3 ヶ月前。"},
+        {"q": "路線を指定できますか？", "a": "はい。MTR 局は駅または路線の指定投放を許可。"},
+        {"q": "智印雲は代理申請できますか？", "a": "はい。デザイン + 印刷 + 申請代行の全套サービス対応。"}
+      ]},
+      {"tag": "p", "body": "智印雲は MTR 広告物料の專業印刷サービスをご提供。今すぐ <a href=\"https://wa.me/8618126380255\" target=\"_blank\">WhatsApp で智印雲に連絡</a> 見積もり！"}
+    ]}
+  }
+]

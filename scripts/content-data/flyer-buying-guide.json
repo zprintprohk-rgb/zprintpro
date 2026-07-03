@@ -1,0 +1,469 @@
+[
+  {
+    "slug": "flyer-buying-guide",
+    "intro": {
+      "zh-hk": "傳單是香港中小企業最常用的營銷工具之一。相比數碼廣告，印刷傳單具有成本可控、觸達精準、無需依賴演算法等優勢。本文從尺寸、紙質、摺法、派發策略、表面工藝、QR 設計 6 個維度為您拆解香港傳單印刷選購全攻略。",
+      "en": "Flyers are one of the most used marketing tools for SMEs. Compared to digital ads, printed flyers offer controllable cost, precise reach, no algorithm dependency. This article breaks down HK flyer printing selection across 6 dimensions: size, paper, folding, distribution, surface finish, QR design.",
+      "ja": "チラシは香港の中小企業で最も使われるマーケティングツールの一つです。デジタル広告より、印刷チラシはコスト管理可能、ターゲット精度高い、アルゴリズム依存なしという利点。本記事はサイズ、用紙、折り、配布戦略、表面加工、QR デザインの 6 つの側面から香港チラシ印刷選定を解説します。"
+    },
+    "zh-hk": {
+      "sections": [
+        {
+          "tag": "h3",
+          "body": "一、傳單尺寸怎麼選？"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "尺寸",
+            "適合場景",
+            "單張成本"
+          ],
+          "rows": [
+            [
+              "A4 單面",
+              "活動推廣、新品發佈",
+              "HK$0.15-0.30"
+            ],
+            [
+              "A4 雙面",
+              "菜單、產品目錄、服務介紹",
+              "HK$0.25-0.50"
+            ],
+            [
+              "A5 單面",
+              "折扣券、優惠券、街派",
+              "HK$0.08-0.18"
+            ],
+            [
+              "A5 雙面",
+              "小型目錄、活動邀請",
+              "HK$0.15-0.30"
+            ],
+            [
+              "三摺 DL",
+              "高階服務介紹、B2B",
+              "HK$0.30-0.60"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "二、紙質選擇全攻略"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>128g 銅版紙</strong>：最經濟實惠，街派首選",
+            "<strong>157g 銅版紙</strong>：色彩還原度好，標準選擇",
+            "<strong>200g 銅版紙</strong>：高檔感，雙面印刷不易透",
+            "<strong>80g 書紙</strong>：環保紙張，適合文字密集型傳單",
+            "<strong>100g 書紙</strong>：略厚書紙，更顯品質"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "三、摺法與設計變化"
+        },
+        {
+          "tag": "ol",
+          "items": [
+            "<strong>單張無摺</strong>：A4/A5 標準，無摺工序成本最低",
+            "<strong>對摺</strong>：A3 對摺成 A4，多一個摺工序 +30% 成本",
+            "<strong>三摺 DL</strong>：A4 三摺成 DL 信封尺寸，B2B 報告常用",
+            "<strong>風琴摺</strong>：多摺展開成連續信息，適合產品目錄",
+            "<strong>異形摺</strong>：階梯摺、十字摺等趣味摺法"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "四、派發策略與 ROI 提升"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "策略",
+            "做法",
+            "效益"
+          ],
+          "rows": [
+            [
+              "目標人群定向",
+              "根據客戶畫像選地點",
+              "地鐵站、商場、社區"
+            ],
+            [
+              "結合 QR Code",
+              "WhatsApp / IG 二維碼",
+              "將線下導入線上"
+            ],
+            [
+              "限時優惠",
+              "「限 7 天」「憑傳單」",
+              "刺激即時轉化"
+            ],
+            [
+              "A/B 測試",
+              "兩版傳單對比效果",
+              "優化 ROI"
+            ],
+            [
+              "數據追蹤",
+              "不同 QR Code 分流",
+              "評估渠道效果"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "五、表面處理工藝"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>光膠（Glossy Lamination）</strong>：表面光亮，色彩更鮮豔，適合產品推廣",
+            "<strong>啞膠（Matte Lamination）</strong>：質感柔和，適合高檔品牌、餐廳菜單",
+            "<strong>UV 局部上光</strong>：突出 Logo 或圖片",
+            "<strong>燙金 / 燙銀</strong>：高階品牌傳單首選",
+            "<strong>打孔 / 摺線</strong>：便於撕取、折疊"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "六、常見問題"
+        },
+        {
+          "tag": "faq",
+          "qas": [
+            {
+              "q": "傳單最小印量？",
+              "a": "100 張起，多 500 張有折扣。"
+            },
+            {
+              "q": "雙面會透底嗎？",
+              "a": "157g 以上銅版紙一般不會，深色設計選 200g。"
+            },
+            {
+              "q": "交貨時間？",
+              "a": "標準 3-5 個工作日，急件可 24 小時。"
+            },
+            {
+              "q": "設計有模板嗎？",
+              "a": "智印雲提供 100+ 款免費模板。"
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "body": "想了解更多傳單印刷？立即 <a href=\"https://wa.me/8618126380255\" target=\"_blank\">WhatsApp 聯絡智印雲</a> 獲取報價！"
+        }
+      ]
+    },
+    "en": {
+      "sections": [
+        {
+          "tag": "h3",
+          "body": "1. How to Choose Flyer Size"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "Size",
+            "Best For",
+            "Unit Cost"
+          ],
+          "rows": [
+            [
+              "A4 single-sided",
+              "Event promo, new product launch",
+              "US$0.02-0.04"
+            ],
+            [
+              "A4 double-sided",
+              "Menu, product catalog, service intro",
+              "US$0.03-0.06"
+            ],
+            [
+              "A5 single-sided",
+              "Discount coupon, voucher, street",
+              "US$0.01-0.02"
+            ],
+            [
+              "A5 double-sided",
+              "Small catalog, invitation",
+              "US$0.02-0.04"
+            ],
+            [
+              "Tri-fold DL",
+              "Premium service intro, B2B",
+              "US$0.04-0.08"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "2. Paper Selection"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>128g Art Paper</strong>: Most economical, ideal for street distribution",
+            "<strong>157g Art Paper</strong>: Good color reproduction, standard",
+            "<strong>200g Art Paper</strong>: Premium feel, no show-through",
+            "<strong>80g Woodfree</strong>: Eco, ideal for text-heavy flyers",
+            "<strong>100g Woodfree</strong>: Slightly thicker woodfree, more quality"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "3. Folding & Design Variations"
+        },
+        {
+          "tag": "ol",
+          "items": [
+            "<strong>Flat (no fold)</strong>: A4/A5 standard, lowest cost",
+            "<strong>Bi-fold</strong>: A3 folded to A4, +30% folding cost",
+            "<strong>Tri-fold DL</strong>: A4 folded into DL envelope size, B2B common",
+            "<strong>Accordion Fold</strong>: Multi-fold continuous info, ideal for product catalogs",
+            "<strong>Specialty Folds</strong>: Step, cross, etc. creative folds"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "4. Distribution Strategy & ROI Improvement"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "Strategy",
+            "Method",
+            "Benefit"
+          ],
+          "rows": [
+            [
+              "Target Audience",
+              "Pick location by customer profile",
+              "MTR, mall, community"
+            ],
+            [
+              "QR Code",
+              "WhatsApp / IG QR",
+              "Offline-to-online"
+            ],
+            [
+              "Limited-time Offer",
+              "\"7-day only\" / \"With flyer\"",
+              "Drive immediate conversion"
+            ],
+            [
+              "A/B Testing",
+              "Compare two flyer versions",
+              "Optimize ROI"
+            ],
+            [
+              "Data Tracking",
+              "Different QR codes per channel",
+              "Evaluate channel efficacy"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "5. Surface Finish Options"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>Glossy Lamination</strong>: Bright surface, vibrant colors, ideal for product promo",
+            "<strong>Matte Lamination</strong>: Soft texture, ideal for premium brands and menus",
+            "<strong>Spot UV</strong>: Highlight logo or image",
+            "<strong>Foil Stamping (Gold/Silver)</strong>: Premium brand flyers favorite",
+            "<strong>Perforation / Score Lines</strong>: Easy tear, fold"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "6. Frequently Asked Questions"
+        },
+        {
+          "tag": "faq",
+          "qas": [
+            {
+              "q": "What is the MOQ for flyers?",
+              "a": "100 pieces minimum; discounts over 500."
+            },
+            {
+              "q": "Will double-sided show through?",
+              "a": "157g+ art paper generally no. Choose 200g for dark designs."
+            },
+            {
+              "q": "Delivery time?",
+              "a": "Standard 3-5 working days; rush 24 hours available."
+            },
+            {
+              "q": "Any design templates?",
+              "a": "ZprintPro offers 100+ free templates."
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "body": "Want more on flyer printing? Contact <a href=\"https://wa.me/8618126380255\" target=\"_blank\">ZprintPro via WhatsApp</a> for a quote!"
+        }
+      ]
+    },
+    "ja": {
+      "sections": [
+        {
+          "tag": "h3",
+          "body": "一、チラシサイズの選び方"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "サイズ",
+            "適用シーン",
+            "単価"
+          ],
+          "rows": [
+            [
+              "A4 片面",
+              "イベントプロモ、新商品発表",
+              "HK$0.15-0.30"
+            ],
+            [
+              "A4 両面",
+              "メニュー、製品カタログ、サービス紹介",
+              "HK$0.25-0.50"
+            ],
+            [
+              "A5 片面",
+              "割引券、クーポン、街頭配布",
+              "HK$0.08-0.18"
+            ],
+            [
+              "A5 両面",
+              "小型カタログ、招待状",
+              "HK$0.15-0.30"
+            ],
+            [
+              "三つ折り DL",
+              "高級サービス紹介、B2B",
+              "HK$0.30-0.60"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "二、用紙選定完全ガイド"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>128g アート紙</strong>：最安、街頭配布に最適",
+            "<strong>157g アート紙</strong>：色彩再現良好、標準選択",
+            "<strong>200g アート紙</strong>：高級感、両面透けなし",
+            "<strong>80g 書籍用紙</strong>：エコ、文字密集型チラシ向き",
+            "<strong>100g 書籍用紙</strong>：やや厚い書籍用紙、質感向上"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "三、折りとデザインのバリエーション"
+        },
+        {
+          "tag": "ol",
+          "items": [
+            "<strong>無折り</strong>：A4/A5 標準、折り工程コスト最小",
+            "<strong>二つ折り</strong>：A3 を A4 に二つ折り、折り工程 +30%",
+            "<strong>三つ折り DL</strong>：A4 を DL 封筒サイズに三つ折り、B2B 定番",
+            "<strong>アコーディオン折り</strong>：連続情報展開、製品カタログ向き",
+            "<strong>特殊折り</strong>：階段、十字など面白い折り"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "四、配布戦略と ROI 向上"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "戦略",
+            "方法",
+            "効果"
+          ],
+          "rows": [
+            [
+              "ターゲット選別",
+              "顧客プロファイルで場所選択",
+              "MTR、ショッピングモール、住宅街"
+            ],
+            [
+              "QR コード",
+              "WhatsApp / IG QR",
+              "オフライン→オンライン"
+            ],
+            [
+              "期間限定オファー",
+              "「7 日限定」「チラシ持参で」",
+              "即時転換促進"
+            ],
+            [
+              "A/B テスト",
+              "2 バージョン比較効果",
+              "ROI 最適化"
+            ],
+            [
+              "データ追跡",
+              "QR コード分流",
+              "チャネル効果評価"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "五、表面加工オプション"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>光沢ラミネート</strong>：明るい表面、色彩鮮やか、產品プロモに最適",
+            "<strong>マットラミネート</strong>：落ち着いた質感、高級ブランド・メニューに最適",
+            "<strong>スポット UV</strong>：ロゴや画像を強調",
+            "<strong>箔押し（金 / 銀）</strong>：高級ブランドチラシ定番",
+            "<strong>ミシン目 / 罫線</strong>：切り取り、折り畳み便利"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "六、よくある質問"
+        },
+        {
+          "tag": "faq",
+          "qas": [
+            {
+              "q": "チラシの最小印刷数量は？",
+              "a": "100 枚から、500 枚以上で割引。"
+            },
+            {
+              "q": "両面は透けますか？",
+              "a": "157g 以上のアート紙なら通常透けません。濃い色は 200g 選択。"
+            },
+            {
+              "q": "納期は？",
+              "a": "標準 3-5 営業日、特急 24 時間対応可。"
+            },
+            {
+              "q": "デザインテンプレートは？",
+              "a": "智印雲は 100 種類以上の無料テンプレートをご提供。"
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "body": "チラシ印刷をもっと知りたい？今すぐ <a href=\"https://wa.me/8618126380255\" target=\"_blank\">WhatsApp で智印雲に連絡</a> 見積もり！"
+        }
+      ]
+    }
+  }
+]

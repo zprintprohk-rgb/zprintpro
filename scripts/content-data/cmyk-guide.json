@@ -1,0 +1,352 @@
+[
+  {
+    "slug": "cmyk-guide",
+    "intro": {
+      "zh-hk": "CMYK vs RGB 是印刷品質控制的基礎知識。許多客戶在收到印刷成品後發現顏色與屏幕顯示不一致，這往往源於對色彩模式的理解不足。本文將從 RGB、CMYK、ICC 色域管理、Pantone 專色、ΔE 色差控制、智印雲色彩管理服務 6 個維度出發，系統拆解印刷色彩。",
+      "en": "CMYK vs RGB is foundational for print color quality control. Many clients discover their printed color doesn't match their screen — usually from misunderstanding color modes. This guide covers RGB, CMYK, ICC color management, Pantone spot color, Delta E color difference, and ZprintPro color management services across six dimensions.",
+      "ja": "CMYK vs RGB は印刷品質管理の基礎知識です。印刷仕上がりと画面表示の色が一致しないことに悩むクライアントも多く、原因はカラーモードへの理解不足です。本記事では RGB、CMYK、ICC カラーマネジメント、Pantone 特色、ΔE 色差、智印雲の色彩管理サービスという 6 つの側面から体系的に解説します。"
+    },
+    "zh-hk": {
+      "sections": [
+        {
+          "tag": "h3",
+          "body": "一、RGB 色彩模式解析"
+        },
+        {
+          "tag": "p",
+          "body": "RGB 是光的色彩模式——紅、綠、藍三原色光以不同強度疊加，形成屏幕顯示的所有顏色。RGB 色域非常廣，能呈現鮮豔明亮的顏色，但無法直接用印刷油墨還原所有 RGB 顏色。"
+        },
+        {
+          "tag": "h3",
+          "body": "二、CMYK 色彩模式解析"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>四色油墨</strong>：青（Cyan）、品紅（Magenta）、黃（Yellow）、黑（Key/Black）",
+            "<strong>減法混色</strong>：四色油墨在紙上疊加，吸收光線，呈現顏色",
+            "<strong>色域較窄</strong>：因油墨物理特性，部分 RGB 鮮色無法 100% 還原",
+            "<strong>K 通道作用</strong>：黑色油墨用於文字、細節、暗部"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "三、為什麼印刷前必須轉 CMYK"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "RGB 顏色",
+            "印刷問題",
+            "解決方案"
+          ],
+          "rows": [
+            [
+              "RGB 鮮紅",
+              "無法還原",
+              "建議改 CMYK 鮮紅 (M100+Y100) 或潘通專色"
+            ],
+            [
+              "RGB 螢光色",
+              "幾乎完全丟失",
+              "必須用潘通專色 (Pantone)"
+            ],
+            [
+              "RGB 淺藍",
+              "色相偏移",
+              "RGB → CMYK 後調飽和度"
+            ],
+            [
+              "RGB 深紫",
+              "可能接近",
+              "測試後微調即可"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "四、ICC 色彩管理與色差 ΔE"
+        },
+        {
+          "tag": "ol",
+          "items": [
+            "<strong>ICC Profile</strong>：每台印刷機、紙張、油墨組合都有專屬 ICC profile，定義色彩映射規則",
+            "<strong>色差 ΔE 標準</strong>：ΔE ≤ 2 視為肉眼不可辨；ΔE 2-5 仔細看可辨；ΔE > 5 明顯色差",
+            "<strong>智印雲設備</strong>：海德堡印刷機 + X-Rite eXact 測色儀，每批抽樣檢測 ΔE",
+            "<strong>客戶端準備</strong>：設計文件嵌入 ISO Coated v2 或 GRACoL 標準 ICC profile"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "五、Pantone 專色印刷"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>什麼是專色</strong>：使用預調好的特定顏色油墨（如 Pantone 185 C 鮮紅）",
+            "<strong>適用場景</strong>：品牌標準色（可口可樂紅、星巴克綠）、金屬色、螢光色",
+            "<strong>成本考慮</strong>：專色版需額外印刷單元，單價高 30-50%",
+            "<strong>混合方案</strong>：CMYK + 1 個 Pantone 專色版是常見組合"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "六、常見問題"
+        },
+        {
+          "tag": "faq",
+          "qas": [
+            {
+              "q": "RGB 文件可以直接印刷嗎？",
+              "a": "不建議。RGB 印刷會偏色、變暗。請轉 CMYK 並提供 ICC profile。"
+            },
+            {
+              "q": "為什麼印刷後顏色不夠鮮豔？",
+              "a": "可能仍在用 RGB 模式，或 CMYK 設定不當。建議打樣確認。"
+            },
+            {
+              "q": "Pantone 專色是否更準確？",
+              "a": "是的，Pantone 預混油墨色彩穩定性優於 CMYK 疊印。"
+            },
+            {
+              "q": "可以提供色樣打樣嗎？",
+              "a": "可以，數碼打樣 HK$200/張，傳統打樣 HK$500/張。"
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "body": "想了解更多色彩管理？立即 <a href=\"https://wa.me/8618126380255\" target=\"_blank\">WhatsApp 聯絡智印雲</a> 獲取專業建議！"
+        }
+      ]
+    },
+    "en": {
+      "sections": [
+        {
+          "tag": "h3",
+          "body": "1. RGB Color Mode Explained"
+        },
+        {
+          "tag": "p",
+          "body": "RGB is additive light color — red, green, blue primaries mixing at different intensities to create all display colors. RGB has a wide gamut, but cannot be fully reproduced by print inks for all RGB colors."
+        },
+        {
+          "tag": "h3",
+          "body": "2. CMYK Color Mode Explained"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>Four Inks</strong>: Cyan (C), Magenta (M), Yellow (Y), Black (K)",
+            "<strong>Subtractive Color</strong>: Four inks overprint on paper, absorb light, create color",
+            "<strong>Narrower Gamut</strong>: Due to ink physics, some RGB vivid colors cannot be 100% reproduced",
+            "<strong>K Channel Role</strong>: Black ink for text, fine detail, and shadow areas"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "3. Why Files Must Be Converted to CMYK Before Print"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "RGB Color",
+            "Print Issue",
+            "Solution"
+          ],
+          "rows": [
+            [
+              "RGB Vivid Red",
+              "Cannot reproduce",
+              "Use CMYK red (M100+Y100) or Pantone"
+            ],
+            [
+              "RGB Fluorescent",
+              "Almost entirely lost",
+              "Must use Pantone spot color"
+            ],
+            [
+              "RGB Light Blue",
+              "Hue shift",
+              "Adjust saturation after RGB→CMYK"
+            ],
+            [
+              "RGB Deep Purple",
+              "Often close",
+              "Test then fine-tune"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "4. ICC Color Management & Delta E (ΔE)"
+        },
+        {
+          "tag": "ol",
+          "items": [
+            "<strong>ICC Profile</strong>: Each press/paper/ink combo has its own ICC profile defining color mapping",
+            "<strong>ΔE Color Difference</strong>: ΔE ≤ 2 imperceptible; ΔE 2-5 noticeable on close inspection; ΔE > 5 visible difference",
+            "<strong>ZprintPro Equipment</strong>: Heidelberg press + X-Rite eXact spectrophotometer, batch ΔE sampling",
+            "<strong>Client Preparation</strong>: Embed ISO Coated v2 or GRACoL standard ICC profile in design files"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "5. Pantone Spot Color Printing"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>What is Spot Color</strong>: Pre-mixed specific ink (e.g., Pantone 185 C vivid red)",
+            "<strong>Use Cases</strong>: Brand standard colors (Coca-Cola red, Starbucks green), metallic, fluorescent",
+            "<strong>Cost Consideration</strong>: Spot color requires extra print unit, +30-50% unit cost",
+            "<strong>Hybrid Solution</strong>: CMYK + 1 Pantone spot plate is a common combination"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "6. Frequently Asked Questions"
+        },
+        {
+          "tag": "faq",
+          "qas": [
+            {
+              "q": "Can RGB files be printed directly?",
+              "a": "Not recommended. RGB print will shift color and darken. Convert to CMYK with ICC profile."
+            },
+            {
+              "q": "Why do prints look less vivid than screen?",
+              "a": "May still be in RGB mode or CMYK settings off. Recommend a proof to confirm."
+            },
+            {
+              "q": "Is Pantone spot color more accurate?",
+              "a": "Yes — Pantone pre-mixed inks have higher stability than CMYK overprint."
+            },
+            {
+              "q": "Can you provide a color proof?",
+              "a": "Yes — digital proof US$25/sheet, traditional proof US$65/sheet."
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "body": "Want more on color management? Contact <a href=\"https://wa.me/8618126380255\" target=\"_blank\">ZprintPro via WhatsApp</a> for professional advice!"
+        }
+      ]
+    },
+    "ja": {
+      "sections": [
+        {
+          "tag": "h3",
+          "body": "一、RGB カラーモードとは"
+        },
+        {
+          "tag": "p",
+          "body": "RGB は光のカラーモード — 赤・緑・青の三原色光を異なる強度で重ね合わせ、画面表示の全色を生成します。RGB は広色域ですが、印刷インキでは全ての RGB 色を再現できません。"
+        },
+        {
+          "tag": "h3",
+          "body": "二、CMYK カラーモードとは"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>四色インキ</strong>：シアン（C）、マゼンタ（M）、イエロー（Y）、ブラック（K）",
+            "<strong>減法混色</strong>：四色インキを紙に重ね、光を吸収して色を生成",
+            "<strong>狭色域</strong>：インキの物理的特性上、RGB の鮮やかな色の一部は 100% 再現不可",
+            "<strong>K チャンネルの役割</strong>：黒インキはテキスト、微細部、影に使用"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "三、なぜ印刷前に CMYK 変換が必須か"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "RGB 色",
+            "印刷問題",
+            "解決策"
+          ],
+          "rows": [
+            [
+              "RGB 鮮赤",
+              "再現不可",
+              "CMYK 赤（M100+Y100）または Pantone 使用"
+            ],
+            [
+              "RGB 蛍光色",
+              "ほぼ消失",
+              "Pantone スポットカラー必須"
+            ],
+            [
+              "RGB 薄青",
+              "色相シフト",
+              "RGB→CMYK 後彩度調整"
+            ],
+            [
+              "RGB 深紫",
+              "近いことが多い",
+              "テスト後微調整"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "四、ICC カラーマネジメントと ΔE"
+        },
+        {
+          "tag": "ol",
+          "items": [
+            "<strong>ICC プロファイル</strong>：印刷機 / 用紙 / インキ毎に専用 ICC プロファイルがあり、色マッピングを定義",
+            "<strong>ΔE 色差基準</strong>：ΔE ≤ 2 は肉眼不可視、ΔE 2-5 は注意して見える、ΔE > 5 は明確な色差",
+            "<strong>智印雲の設備</strong>：Heidelberg 印刷機 + X-Rite eXact 分光測色計でバッチ毎 ΔE チェック",
+            "<strong>クライアント準備</strong>：デザインファイルに ISO Coated v2 または GRACoL ICC 埋め込み"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "五、Pantone 特色印刷"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>特色とは</strong>：事前混合済み特定インキ（例：Pantone 185 C 鮮赤）",
+            "<strong>適用場面</strong>：ブランド標準色（コカ・コーラ赤、スターバックス緑）、メタリック、蛍光",
+            "<strong>コスト</strong>：特色版は追加印刷ユニットが必要、単価 +30-50%",
+            "<strong>ハイブリッド</strong>：CMYK + 1 特色版の組み合わせが一般的"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "六、よくある質問"
+        },
+        {
+          "tag": "faq",
+          "qas": [
+            {
+              "q": "RGB ファイルはそのまま印刷できますか？",
+              "a": "非推奨。RGB 印刷は色シフトと暗い仕上がりになります。ICC 付きで CMYK 変換を。"
+            },
+            {
+              "q": "画面より印刷が鮮やかに見えない理由は？",
+              "a": "RGB モードのままか、CMYK 設定不備の可能性。試し刷りで確認推奨。"
+            },
+            {
+              "q": "Pantone 特色はより正確ですか？",
+              "a": "はい。Pantone 予混合インキは CMYK 重ね刷りより安定。"
+            },
+            {
+              "q": "色校正は可能ですか？",
+              "a": "可能。デジタル校正 HK$200/枚、従来校正 HK$500/枚。"
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "body": "色彩管理をもっと知りたい？今すぐ <a href=\"https://wa.me/8618126380255\" target=\"_blank\">WhatsApp で智印雲に連絡</a> 専門アドバイス！"
+        }
+      ]
+    }
+  }
+]

@@ -41,111 +41,52 @@ export const buyingGuides: BuyingGuide[] = [
     date: '2025-01-15',
     relatedProducts: ['premium-business-cards', 'thick-business-cards-400g', 'foil-business-cards', 'spot-uv-business-cards', 'matte-business-cards', 'rounded-corner-cards', 'double-sided-cards', 'eco-business-cards'],
     content: {
-      'zh-hk': `<p>名片是商業交往中的「第一張臉」。即香港行內講嘅，一張好名片要「睇得、摸得、留得住」。但面對市場上琳瑯滿目的材質和工藝選擇，很多企業主和設計師都會感到困惑。本文將從材質、工藝、價格三個維度，為您詳細拆解名片印刷的選購要點。</p>
-
+      'zh-hk': `<p>名片是商業交往中的「第一張臉」。即香港行內講嘅，一張好名片要「睇得、摸得、留得住」。但面對市場上琳瑯滿目的材質和工藝選擇，很多企業主和設計師都會感到困惑。本文將從材質、工藝、價格、行業適配 4 大維度，為您詳細拆解名片印刷的選購要點。</p>
 <h3>一、名片紙質材質對比</h3>
-<p>紙質是名片的靈魂，直接決定觸感和視覺印象。即香港印刷行內講嘅「咭紙」硬度，就是指紙張的克重和挺度：</p>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">材質</th><th class="border p-2 text-left">克重</th><th class="border p-2 text-left">特性</th><th class="border p-2 text-left">適合人群</th><th class="border p-2 text-left">參考價格</th></tr></thead><tbody>
-<tr><td class="border p-2">銅版紙</td><td class="border p-2">300g</td><td class="border p-2">經濟實惠、色彩鮮豔</td><td class="border p-2">初創企業、銷售團隊</td><td class="border p-2">HK$150-300/100張</td></tr>
-<tr><td class="border p-2">厚身咭紙</td><td class="border p-2">400g</td><td class="border p-2">厚實手感、尊貴質感</td><td class="border p-2">律師、設計師、高管</td><td class="border p-2">HK$250-450/100張</td></tr>
-<tr><td class="border p-2">環保再生紙</td><td class="border p-2">300g</td><td class="border p-2">環保認證、自然紋理</td><td class="border p-2">ESG企業、文創品牌</td><td class="border p-2">HK$180-350/100張</td></tr>
-<tr><td class="border p-2">特種紙</td><td class="border p-2">250-350g</td><td class="border p-2">獨特觸感、高端定位</td><td class="border p-2">奢侈品牌、藝術家</td><td class="border p-2">HK$300-600/100張</td></tr>
-</tbody></table>
-
+<p>紙質是名片的靈魂，直接決定觸感和視覺印象：</p>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">材質</th><th class="border p-2 text-left">克重</th><th class="border p-2 text-left">特性</th><th class="border p-2 text-left">適合人群</th><th class="border p-2 text-left">參考價格</th></tr></thead><tbody><tr><td class="border p-2">銅版紙</td><td class="border p-2">300g</td><td class="border p-2">經濟實惠、色彩鮮豔</td><td class="border p-2">初創企業、銷售團隊</td><td class="border p-2">HK$150-300/100 張</td></tr><tr><td class="border p-2">厚身咭紙</td><td class="border p-2">400g</td><td class="border p-2">厚實手感、尊貴質感</td><td class="border p-2">律師、設計師、高管</td><td class="border p-2">HK$250-450/100 張</td></tr><tr><td class="border p-2">環保再生紙</td><td class="border p-2">300g</td><td class="border p-2">環保認證、自然紋理</td><td class="border p-2">ESG 企業、文創品牌</td><td class="border p-2">HK$180-350/100 張</td></tr><tr><td class="border p-2">特種紙</td><td class="border p-2">250-350g</td><td class="border p-2">獨特觸感、高端定位</td><td class="border p-2">奢侈品牌、藝術家</td><td class="border p-2">HK$300-600/100 張</td></tr></tbody></table>
 <h3>二、名片表面工藝詳解</h3>
-<p>工藝是名片的「化妝術」，適當的後加工能讓普通名片脫穎而出：</p>
-<ul class="list-disc pl-5 my-3 space-y-2">
-<li><strong>燙金（Foil Stamping）</strong>：金、銀、玫瑰金等金屬色燙印，適合金融、地產、高端服務業。燙金名片喺香港中環商業區最常見，因為佢代表「財氣」同「專業」。</li>
-<li><strong>局部UV（Spot UV）</strong>：在特定圖案上覆蓋光油，形成明暗對比。適合Logo、圖形元素突出的設計。</li>
-<li><strong>啞膠/光膠（Lamination）</strong>：啞膠給人沉穩高檔感，光膠則色彩飽和鮮豔。即香港行內講，做金融嘅多數揀啞膠，做創意嘅偏好光膠。</li>
-<li><strong>凹凸壓印（Embossing）</strong>：無油墨的立體壓紋，觸感強烈，適合極簡設計。</li>
-<li><strong>圓角（Rounded Corners）</strong>：R3-R5圓角處理，避免邊角磨損，增加設計感。</li>
-</ul>
-
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>燙金（Foil Stamping）</strong>：金、銀、玫瑰金等金屬色燙印，適合金融、地產</li><li><strong>局部 UV（Spot UV）</strong>：在特定圖案上覆蓋光油，明暗對比</li><li><strong>啞膠 / 光膠</strong>：啞膠沉穩高檔，光膠色彩飽和鮮豔</li><li><strong>凹凸壓印（Embossing）</strong>：無油墨立體壓紋，觸感強烈</li><li><strong>圓角（Rounded Corners）</strong>：R3-R5 圓角處理，避免邊角磨損</li></ul>
 <h3>三、名片設計與印刷規範</h3>
-<p>即香港印刷廠每日接幾百張名片單，最常見嘅錯誤包括：</p>
-<ol class="list-decimal pl-5 my-3 space-y-1">
-<li><strong>出血位不足</strong>：標準名片成品尺寸90x54mm，設計稿必須做到96x60mm（預留3mm出血位）</li>
-<li><strong>字體未轉曲線</strong>：交付AI或PDF時必須將文字轉為外框，否則印刷廠無該字體會亂碼</li>
-<li><strong>色彩模式錯誤</strong>：必須用CMYK，RGB直接印刷會偏色</li>
-<li><strong>分辨率不足</strong>：圖片至少300dpi，低分辨率圖片印刷會模糊</li>
-</ol>
-
-<h3>四、選購決策框架</h3>
-<div class="bg-blue-50 rounded-lg p-5 my-4">
-<p class="font-semibold text-blue-800 mb-2">智印雲選購建議</p>
-<ul class="list-disc pl-5 space-y-1 text-blue-900">
-<li><strong>預算有限</strong>：選300g銅版紙+單面印刷，100張約HK$150起</li>
-<li><strong>追求質感</strong>：選400g厚紙+啞膠，厚實手感令人印象深刻</li>
-<li><strong>高端定位</strong>：選特種紙+燙金/局部UV，單張成本HK$3-6</li>
-<li><strong>環保理念</strong>：選FSC認證再生紙+大豆油墨</li>
-</ul>
-</div>
-
-<h3>五、常見問題</h3>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3">
-<p><strong>Q: 名片最少可以印幾多張？</strong><br/>A: 智印雲最低100張起印。即香港行內，100張係標準起訂量，因為開機費同人工成本固定。</p>
-<p><strong>Q: 即日名片係咪真係當日可取？</strong><br/>A: 只要上午11點前確認稿件，300g銅版紙名片可以即日取貨。燙金、UV等特殊工藝需額外1-2個工作日。</p>
-<p><strong>Q: 雙面名片會唔會透底？</strong><br/>A: 選用300g或以上紙張一般不會透底。如果設計有大面積深色，建議選400g厚紙或加印白色打底。</p>
-<p><strong>Q: 名片設計可以自己做嗎？</strong><br/>A: 可以。智印雲提供免費模板下載，符合出血位和安全線規範。我們也提供專業設計服務，HK$500起。</p>
-</div>
-
-<p>無論您需要經濟實惠的<a href="/product/premium-business-cards/">標準名片</a>，還是尊貴非凡的<a href="/product/foil-business-cards/">燙金名片</a>，智印雲都能為您提供專業建議和優質印刷。立即<a href="/quote/">獲取即時報價</a>或<a href="https://wa.me/8618126380255" target="_blank">WhatsApp聯繫我們</a>！</p>`,
-      en: `<p>Your business card is your first impression in commercial interactions. From 300g art paper to 400g thick stock, from foil stamping to spot UV, this guide covers everything you need to know about choosing business cards in Hong Kong.</p>
-<h3>Business Card Material Comparison</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Material</th><th class="border p-2 text-left">Weight</th><th class="border p-2 text-left">Features</th><th class="border p-2 text-left">Best For</th><th class="border p-2 text-left">Price</th></tr></thead><tbody>
-<tr><td class="border p-2">Art Paper</td><td class="border p-2">300g</td><td class="border p-2">Economical, vibrant colors</td><td class="border p-2">Startups, sales teams</td><td class="border p-2">From HK$150/100pcs</td></tr>
-<tr><td class="border p-2">Thick Card</td><td class="border p-2">400g</td><td class="border p-2">Substantial feel, premium</td><td class="border p-2">Lawyers, designers, executives</td><td class="border p-2">From HK$250/100pcs</td></tr>
-<tr><td class="border p-2">Eco Recycled</td><td class="border p-2">300g</td><td class="border p-2">FSC certified, natural texture</td><td class="border p-2">ESG companies, creatives</td><td class="border p-2">From HK$180/100pcs</td></tr>
-</tbody></table>
-<h3>Finishing Techniques</h3>
-<ul class="list-disc pl-5 my-3 space-y-2">
-<li><strong>Foil Stamping</strong>: Gold, silver, rose gold metallic finish. Perfect for finance and luxury services.</li>
-<li><strong>Spot UV</strong>: Glossy highlight on specific patterns, creating contrast.</li>
-<li><strong>Matte/Gloss Lamination</strong>: Matte for sophistication, gloss for vibrant colors.</li>
-<li><strong>Embossing</strong>: Inkless 3D texture, ideal for minimalist designs.</li>
-<li><strong>Rounded Corners</strong>: R3-R5 radius, prevents wear, adds design flair.</li>
-</ul>
-<h3>Design Tips</h3>
-<ol class="list-decimal pl-5 my-3 space-y-1">
-<li><strong>Bleed</strong>: Design at 96x60mm for final 90x54mm card</li>
-<li><strong>Fonts</strong>: Convert text to outlines before submission</li>
-<li><strong>Color Mode</strong>: Always use CMYK, not RGB</li>
-<li><strong>Resolution</strong>: Images must be 300dpi minimum</li>
-</ol>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3">
-<p><strong>Q: What is the minimum order quantity?</strong><br/>A: 100 pieces is the standard minimum.</p>
-<p><strong>Q: Can I get same-day business cards?</strong><br/>A: Yes, confirm artwork before 11 AM for same-day 300g art paper cards.</p>
-</div>
-<p>Order your <a href="/en/product/premium-business-cards/">premium business cards</a> or <a href="/en/product/foil-business-cards/">foil stamped cards</a> today. <a href="/en/quote/">Get an instant quote</a>!</p>`,
-      ja: `<p>名刺はビジネスでの第一印象を作ります。300gアート紙から400g厚紙まで、箔押しから局部UVまで—このガイドで香港名刺印刷のすべてを解説します。</p>
-<h3>名刺材質比較</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">材質</th><th class="border p-2 text-left">厚さ</th><th class="border p-2 text-left">特徴</th><th class="border p-2 text-left">おすすめ</th><th class="border p-2 text-left">価格</th></tr></thead><tbody>
-<tr><td class="border p-2">アート紙</td><td class="border p-2">300g</td><td class="border p-2">コスパ良し、発色鮮やか</td><td class="border p-2">スタートアップ、営業</td><td class="border p-2">HK$150~/100枚</td></tr>
-<tr><td class="border p-2">厚紙</td><td class="border p-2">400g</td><td class="border p-2">重厚な質感、高級感</td><td class="border p-2">弁護士、デザイナー</td><td class="border p-2">HK$250~/100枚</td></tr>
-<tr><td class="border p-2">再生紙</td><td class="border p-2">300g</td><td class="border p-2">FSC認証、自然な風合い</td><td class="border p-2">ESG企業、クリエイター</td><td class="border p-2">HK$180~/100枚</td></tr>
-</tbody></table>
-<h3>加工技術</h3>
-<ul class="list-disc pl-5 my-3 space-y-2">
-<li><strong>箔押し</strong>：ゴールド、シルバー、ローズゴールド。金融・高級サービスに最適。</li>
-<li><strong>局部UV</strong>：特定のパターンに光沢を出し、コントラストを演出。</li>
-<li><strong>マット/グロスラミネーション</strong>：マットは落ち着いた高級感、グロスは鮮やかな発色。</li>
-<li><strong>エンボス</strong>：インクレスの立体加工、ミニマルデザインに最適。</li>
-<li><strong>丸角</strong>：R3-R5の丸角加工、摩耗防止とデザイン性向上。</li>
-</ul>
-<h3>デザインのポイント</h3>
-<ol class="list-decimal pl-5 my-3 space-y-1">
-<li><strong>裁ち落とし</strong>：仕上がり90x54mmに対し、デザインは96x60mm</li>
-<li><strong>フォント</strong>：提出前にアウトライン化</li>
-<li><strong>カラーモード</strong>：必ずCMYKを使用</li>
-<li><strong>解像度</strong>：画像は最低300dpi</li>
-</ol>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3">
-<p><strong>Q: 最小注文数は？</strong><br/>A: 標準は100枚から。</p>
-<p><strong>Q: 即日名刺は本当に当日可取？</strong><br/>A: 午前11時までに原稿確認できれば、300gアート紙名刺は当日配送可能。</p>
-</div>
-<p><a href="/ja/product/premium-business-cards/">高級名刺</a>や<a href="/ja/product/foil-business-cards/">箔押し名刺</a>を今すぐ注文。<a href="/ja/quote/">即時見積もり</a>を取得！</p>`,
-    },
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>出血位</strong>：成品 90×54mm，設計稿 96×60mm（預留 3mm 出血位）</li><li><strong>字體轉曲線</strong>：AI / PDF 必須將文字轉外框，否則無字體會亂碼</li><li><strong>色彩模式</strong>：必須 CMYK，RGB 直接印刷會偏色</li><li><strong>分辨率</strong>：圖片至少 300dpi，低分辨率印刷模糊</li></ol>
+<h3>四、不同行業名片選購建議</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">行業</th><th class="border p-2 text-left">推薦組合</th><th class="border p-2 text-left">定位</th></tr></thead><tbody><tr><td class="border p-2">金融 / 法律</td><td class="border p-2">400g 厚紙 + 啞膠 + 燙金</td><td class="border p-2">正式、信任感</td></tr><tr><td class="border p-2">設計 / 創意</td><td class="border p-2">特種紙 + UV + 圓角</td><td class="border p-2">個性化、辨識度</td></tr><tr><td class="border p-2">銷售 / 地產</td><td class="border p-2">300g 銅版紙 + 光膠</td><td class="border p-2">成本可控、親和力</td></tr><tr><td class="border p-2">科技 / IT</td><td class="border p-2">300g 銅版紙 + 啞膠 + 局部 UV</td><td class="border p-2">簡約、現代</td></tr><tr><td class="border p-2">醫療 / 健康</td><td class="border p-2">環保再生紙 + 啞膠</td><td class="border p-2">安全、環保</td></tr><tr><td class="border p-2">教育 / 文化</td><td class="border p-2">特種紙 + 壓凹</td><td class="border p-2">文藝、質感</td></tr></tbody></table>
+<h3>五、選購決策框架</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>預算有限</strong>：300g 銅版紙 + 單面印刷，100 張約 HK$150 起</li><li><strong>追求質感</strong>：400g 厚紙 + 啞膠，厚實手感令人印象深刻</li><li><strong>高端定位</strong>：特種紙 + 燙金 / 局部 UV，單張成本 HK$3-6</li><li><strong>環保理念</strong>：FSC 認證再生紙 + 大豆油墨</li></ul>
+<h3>六、常見問題</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：名片最少可以印幾多張？</strong><br/>A：100 張起印。100 張係標準起訂量，因為開機費同人工成本固定。</p><p><strong>Q：即日名片係咪真係當日可取？</strong><br/>A：只要上午 11 點前確認稿件，300g 銅版紙名片可以當日取貨。</p><p><strong>Q：雙面名片會唔會透底？</strong><br/>A：選用 300g 或以上紙張一般不會透底。</p><p><strong>Q：名片設計可以自己做嗎？</strong><br/>A：可以。智印雲提供免費模板下載，符合印刷規範。</p></div>
+<p>無論您需要經濟實惠的標準名片，還是尊貴非凡的燙金名片，立即 <a href="https://wa.me/8618126380255" target="_blank">WhatsApp 聯絡智印雲</a> 獲取即時報價！</p>`,
+      'en': `<p>Your business card is your first impression in commercial interactions. From 300g art paper to 400g thick stock, from foil stamping to spot UV, this guide covers everything you need to know about choosing business cards in Hong Kong — materials, finishes, pricing, and industry fit.</p>
+<h3>1. Business Card Material Comparison</h3>
+<p>Paper is the soul of a business card — directly determining tactile feel and visual impression:</p>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Material</th><th class="border p-2 text-left">Weight</th><th class="border p-2 text-left">Features</th><th class="border p-2 text-left">Best For</th><th class="border p-2 text-left">Price</th></tr></thead><tbody><tr><td class="border p-2">Art Paper</td><td class="border p-2">300g</td><td class="border p-2">Affordable, vibrant colors</td><td class="border p-2">Startups, sales teams</td><td class="border p-2">US$20-40/100pcs</td></tr><tr><td class="border p-2">Thick Card</td><td class="border p-2">400g</td><td class="border p-2">Substantial feel, premium</td><td class="border p-2">Lawyers, designers, execs</td><td class="border p-2">US$32-58/100pcs</td></tr><tr><td class="border p-2">Recycled Eco</td><td class="border p-2">300g</td><td class="border p-2">FSC certified, natural texture</td><td class="border p-2">ESG companies, creative</td><td class="border p-2">US$23-45/100pcs</td></tr><tr><td class="border p-2">Specialty Paper</td><td class="border p-2">250-350g</td><td class="border p-2">Unique tactile, premium</td><td class="border p-2">Luxury brands, artists</td><td class="border p-2">US$38-78/100pcs</td></tr></tbody></table>
+<h3>2. Business Card Surface Finish Details</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Foil Stamping</strong>: Gold/silver/rose gold metallic — great for finance, real estate</li><li><strong>Spot UV</strong>: Gloss oil on selected areas creates contrast</li><li><strong>Matte / Glossy Lamination</strong>: Matte = stable premium feel; Glossy = saturated colors</li><li><strong>Embossing</strong>: Inkless dimensional relief, strong tactile</li><li><strong>Rounded Corners</strong>: R3-R5 rounded treatment, prevents wear</li></ul>
+<h3>3. Design & Print Specifications</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>Bleed</strong>: Final 90×54mm; design file must be 96×60mm (3mm bleed)</li><li><strong>Font Conversion</strong>: AI/PDF must outline text or risk garbled text</li><li><strong>Color Mode</strong>: Must use CMYK; RGB prints shift colors</li><li><strong>Resolution</strong>: Images minimum 300dpi</li></ol>
+<h3>4. Industry-Specific Recommendations</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Industry</th><th class="border p-2 text-left">Recommended Combo</th><th class="border p-2 text-left">Positioning</th></tr></thead><tbody><tr><td class="border p-2">Finance / Legal</td><td class="border p-2">400g thick + matte + foil</td><td class="border p-2">Formal, trust</td></tr><tr><td class="border p-2">Design / Creative</td><td class="border p-2">Specialty + UV + rounded</td><td class="border p-2">Personalized, identity</td></tr><tr><td class="border p-2">Sales / Real Estate</td><td class="border p-2">300g art + glossy</td><td class="border p-2">Cost control, friendly</td></tr><tr><td class="border p-2">Tech / IT</td><td class="border p-2">300g art + matte + spot UV</td><td class="border p-2">Minimalist, modern</td></tr><tr><td class="border p-2">Medical / Health</td><td class="border p-2">Recycled + matte</td><td class="border p-2">Safe, eco</td></tr><tr><td class="border p-2">Education / Culture</td><td class="border p-2">Specialty + emboss</td><td class="border p-2">Literary, tactile</td></tr></tbody></table>
+<h3>5. Selection Decision Framework</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Limited Budget</strong>: 300g art paper + single-sided, from US$20/100pcs</li><li><strong>Quality Focus</strong>: 400g thick + matte lamination, impressive tactile</li><li><strong>Premium Positioning</strong>: Specialty paper + foil/spot UV, US$0.40-0.80/pc</li><li><strong>Eco Principles</strong>: FSC recycled + soy ink</li></ul>
+<h3>6. Frequently Asked Questions</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：What is the MOQ for business cards?</strong><br/>A：100 pieces — industry standard minimum.</p><p><strong>Q：Can I get same-day business cards?</strong><br/>A：Yes, if artwork confirmed before 11am for 300g art paper.</p><p><strong>Q：Will double-sided cards show through?</strong><br/>A：300g+ generally no. For heavy dark coverage, choose 400g or print white underlay.</p><p><strong>Q：Can I design cards myself?</strong><br/>A：Yes. ZprintPro offers free template downloads.</p></div>
+<p>Whether standard or premium foil cards, contact <a href="https://wa.me/8618126380255" target="_blank">ZprintPro via WhatsApp</a> for an instant quote!</p>`,
+      'ja': `<p>名刺はビジネス交流における「最初の顔」。香港の業界では「見て、触れて、記憶に残る」名刺が必要。本記事は材質、加工、価格、業種適応の 4 つの側面から、名刺印刷の選び方を詳しく解説します。</p>
+<h3>一、名刺用紙材質の比較</h3>
+<p>用紙は名刺の魂であり、触感・視覚印象を直接決定します：</p>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">材質</th><th class="border p-2 text-left">米坪</th><th class="border p-2 text-left">特徴</th><th class="border p-2 text-left">対象</th><th class="border p-2 text-left">参考価格</th></tr></thead><tbody><tr><td class="border p-2">アート紙</td><td class="border p-2">300g</td><td class="border p-2">経済的、色彩鮮やか</td><td class="border p-2">スタートアップ、営業チーム</td><td class="border p-2">HK$150-300/100 枚</td></tr><tr><td class="border p-2">厚口</td><td class="border p-2">400g</td><td class="border p-2">重厚感、高級感</td><td class="border p-2">弁護士、デザイナー、経営層</td><td class="border p-2">HK$250-450/100 枚</td></tr><tr><td class="border p-2">エコ再生紙</td><td class="border p-2">300g</td><td class="border p-2">エコ認証、自然なテクスチャ</td><td class="border p-2">ESG 企業、クリエイティブ</td><td class="border p-2">HK$180-350/100 枚</td></tr><tr><td class="border p-2">特殊紙</td><td class="border p-2">250-350g</td><td class="border p-2">独特触感、高品質</td><td class="border p-2">ラグジュアリーブランド、芸術家</td><td class="border p-2">HK$300-600/100 枚</td></tr></tbody></table>
+<h3>二、名刺表面加工詳細</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>箔押し</strong>：金・銀・rose gold の金属色印刷、金融・不動産に最適</li><li><strong>スポット UV</strong>：特定図案にグロスオイル、明暗対比</li><li><strong>マット / 光沢ラミネート</strong>：マットは安定高級感、光沢は色彩彩度高い</li><li><strong>エンボス</strong>：インクなしの立体圧痕、強い触感</li><li><strong>角丸</strong>：R3-R5 角丸処理、磨耗防止、デザイン感向上</li></ul>
+<h3>三、名刺デザインと印刷仕様</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>ブリード</strong>：仕上がり 90×54mm、デザイン 96×60mm（3mm ブリード）</li><li><strong>フォント変換</strong>：AI / PDF でフォント未変換は文字化けリスク</li><li><strong>カラーモード</strong>：CMYK 必須、RGB は色シフト</li><li><strong>解像度</strong>：画像は最低 300dpi</li></ol>
+<h3>四、業種別推奨</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">業種</th><th class="border p-2 text-left">推奨構成</th><th class="border p-2 text-left">ポジショニング</th></tr></thead><tbody><tr><td class="border p-2">金融 / 法律</td><td class="border p-2">400g 厚口 + マット + 箔</td><td class="border p-2">正式、信頼感</td></tr><tr><td class="border p-2">デザイン / クリエイティブ</td><td class="border p-2">特殊紙 + UV + 角丸</td><td class="border p-2">個性、識別性</td></tr><tr><td class="border p-2">セールス / 不動産</td><td class="border p-2">300g アート + 光沢</td><td class="border p-2">コスト管理、親しみ</td></tr><tr><td class="border p-2">テクノロジー / IT</td><td class="border p-2">300g アート + マット + スポット UV</td><td class="border p-2">ミニマル、モダン</td></tr><tr><td class="border p-2">医療 / 健康</td><td class="border p-2">エコ再生 + マット</td><td class="border p-2">安全、エコ</td></tr><tr><td class="border p-2">教育 / 文化</td><td class="border p-2">特殊紙 + エンボス</td><td class="border p-2">文芸、質感</td></tr></tbody></table>
+<h3>五、選定意思決定フレームワーク</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>予算限定</strong>：300g アート紙 + 片面、100 枚 HK$150 から</li><li><strong>質感重視</strong>：400g 厚口 + マットラミネート、印象的な触感</li><li><strong>高級ポジショニング</strong>：特殊紙 + 箔 / スポット UV、単価 HK$3-6</li><li><strong>エコ理念</strong>：FSC 認証再生紙 + 大豆インキ</li></ul>
+<h3>六、よくある質問</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：名刺の最小注文数量は？</strong><br/>A：100 枚から — 業界標準最小です。</p><p><strong>Q：即日名刺は本当に当日受け取れますか？</strong><br/>A：はい。午前 11 時までにデータ確定で 300g アート紙当日受け取り可能。</p><p><strong>Q：両面名刺は透けますか？</strong><br/>A：300g 以上なら通常は透けません。</p><p><strong>Q：名刺デザインは自分でできますか？</strong><br/>A：はい。智印雲は無料テンプレートダウンロードを提供。</p></div>
+<p>お手頃な標準名刺から贅沢な箔押し名刺まで、今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 即時見積もり！</p>`
+    ,
   },
   // ========== STICKERS ==========
   {
@@ -170,89 +111,49 @@ export const buyingGuides: BuyingGuide[] = [
     date: '2025-01-15',
     relatedProducts: ['waterproof-stickers', 'transparent-stickers', 'die-cut-stickers', 'foil-stickers', 'removable-stickers', 'security-stickers', 'small-batch-stickers'],
     content: {
-      'zh-hk': `<p>貼紙係香港印刷市場上最靈活嘅宣傳工具之一。無論係產品標籤、包裝封口、品牌宣傳定係活動推廣，一張設計精美、材質合適嘅貼紙都能夠事半功倍。但市面上貼紙種類繁多，點樣揀先最啱自己？即香港行內講嘅「貼紙要睇膠水、睇紙質、睇形狀」，本文為您一一拆解。</p>
-
-<h3>一、貼紙材質選購對照表</h3>
-<p>貼紙材質決定耐用性、質感和價格。即香港印刷廠最常用嘅幾種材質包括：</p>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">材質</th><th class="border p-2 text-left">特性</th><th class="border p-2 text-left">適用場景</th><th class="border p-2 text-left">耐用度</th></tr></thead><tbody>
-<tr><td class="border p-2">銅版紙貼紙</td><td class="border p-2">色彩鮮豔、成本低</td><td class="border p-2">促銷標籤、臨時貼紙</td><td class="border p-2">室內短期</td></tr>
-<tr><td class="border p-2">防水合成紙（PP）</td><td class="border p-2">防水防油、撕不爛</td><td class="border p-2">食品標籤、浴室用品</td><td class="border p-2">長期戶外</td></tr>
-<tr><td class="border p-2">透明PET</td><td class="border p-2">高透明、無感貼合</td><td class="border p-2">玻璃瓶、高檔包裝</td><td class="border p-2">長期</td></tr>
-<tr><td class="border p-2">易碎紙</td><td class="border p-2">一撕即碎、防拆防偽</td><td class="border p-2">保固標籤、封條</td><td class="border p-2">一次性</td></tr>
-<tr><td class="border p-2">雷射/全息貼紙</td><td class="border p-2">彩虹光澤、防偽性強</td><td class="border p-2">證書、高價商品</td><td class="border p-2">長期</td></tr>
-</tbody></table>
-
-<h3>二、貼紙形狀與切割工藝</h3>
-<p>貼紙形狀直接影響視覺效果和應用靈活性：</p>
-<ul class="list-disc pl-5 my-3 space-y-2">
-<li><strong>方形/圓形（標準形狀）</strong>：成本最低，適合簡單標籤和Logo貼紙</li>
-<li><strong>異形模切（Die-Cut）</strong>：按圖案輪廓切割，設計自由度最大。即香港文創品牌最鍾意用異形貼紙做周邊產品</li>
-<li><strong>吻切（Kiss-Cut）</strong>：只切穿面材不切穿底紙，方便單張撕取。適合貼紙簿和零售包裝</li>
-<li><strong>單張（Sheet）</strong>：多個設計排在一張A4/A3紙上，適合活動派發和樣品展示</li>
-</ul>
-
-<h3>三、貼紙表面處理選擇</h3>
-<p>表面處理唔單止影響外觀，更影響使用壽命：</p>
-<ol class="list-decimal pl-5 my-3 space-y-1">
-<li><strong>光膜（Glossy）</strong>：表面光滑反光，顏色飽和度高，但容易留下指紋</li>
-<li><strong>啞膜（Matte）</strong>：質感柔和，不反光，觸感高級，適合簡約設計</li>
-<li><strong>燙金/燙銀</strong>：金屬光澤，適合節日限定、高端產品標籤</li>
-<li><strong>UV局部上光</strong>：突出重點圖案，增加層次感和觸感</li>
-</ol>
-
-<h3>四、選購決策流程</h3>
-<div class="bg-blue-50 rounded-lg p-5 my-4">
-<p class="font-semibold text-blue-800 mb-2">智印雲選購建議</p>
-<ul class="list-disc pl-5 space-y-1 text-blue-900">
-<li><strong>產品標籤</strong>：選防水合成紙+啞膜，耐用且專業</li>
-<li><strong>品牌周邊</strong>：選異形模切+光膜，設計感強</li>
-<li><strong>活動派發</strong>：選銅版紙+光膜，成本最低</li>
-<li><strong>高端包裝</strong>：選透明PET或燙金工藝</li>
-<li><strong>防偽用途</strong>：選易碎紙或全息雷射貼紙</li>
-</ul>
-</div>
-
-<h3>五、常見問題</h3>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3">
-<p><strong>Q: 貼紙最小訂購量係幾多？</strong><br/>A: 標準貼紙100張起印，小批量貼紙50張起。即香港印刷廠一般開機費固定，量越少單價越高。</p>
-<p><strong>Q: 防水貼紙可以貼喺邊度？</strong><br/>A: 防水合成紙貼紙可以貼喺玻璃、塑膠、金屬表面，甚至短時間浸水都冇問題。但長期浸水建議選用3M材質。</p>
-<p><strong>Q: 模切貼紙同普通貼紙有咩分別？</strong><br/>A: 模切貼紙係按圖案形狀切割，邊緣就係圖案輪廓；普通貼紙係標準方形或圓形，圖案印喺中間。</p>
-<p><strong>Q: 貼紙設計有咩要留意？</strong><br/>A: 出血位至少2mm，文字同邊緣保持3mm安全距離。複雜模切圖案需要有足夠粗細嘅線條，太細會切斷。</p>
-</div>
-
-<p>無論您需要<a href="/product/waterproof-stickers/">防水貼紙</a>、<a href="/product/transparent-stickers/">透明貼紙</a>定係<a href="/product/die-cut-stickers/">異形模切貼紙</a>，智印雲都能提供專業建議和優質印刷。立即<a href="/quote/">獲取報價</a>或<a href="https://wa.me/8618126380255" target="_blank">WhatsApp聯繫我們</a>！</p>`,
-      en: `<p>Stickers are one of the most flexible promotional tools in the Hong Kong printing market. This guide covers materials, shapes, and finishes to help you choose the perfect sticker.</p>
-<h3>Sticker Material Comparison</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Material</th><th class="border p-2 text-left">Features</th><th class="border p-2 text-left">Best For</th><th class="border p-2 text-left">Durability</th></tr></thead><tbody>
-<tr><td class="border p-2">Art Paper</td><td class="border p-2">Vibrant, economical</td><td class="border p-2">Promotional labels</td><td class="border p-2">Short-term indoor</td></tr>
-<tr><td class="border p-2">Waterproof PP</td><td class="border p-2">Water/oil resistant</td><td class="border p-2">Food labels, outdoor</td><td class="border p-2">Long-term outdoor</td></tr>
-<tr><td class="border p-2">Clear PET</td><td class="border p-2">High transparency</td><td class="border p-2">Glass, premium packaging</td><td class="border p-2">Long-term</td></tr>
-<tr><td class="border p-2">Holographic</td><td class="border p-2">Rainbow effect, anti-fake</td><td class="border p-2">Certificates, luxury</td><td class="border p-2">Long-term</td></tr>
-</tbody></table>
-<h3>Shapes & Cutting</h3>
-<ul class="list-disc pl-5 my-3 space-y-2">
-<li><strong>Standard shapes</strong>: Lowest cost, suitable for simple labels</li>
-<li><strong>Die-cut</strong>: Cut to pattern outline, maximum design freedom</li>
-<li><strong>Kiss-cut</strong>: Cut face only, easy peel. Great for sticker sheets</li>
-</ul>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3">
-<p><strong>Q: What is the minimum order?</strong><br/>A: 100 pieces standard, 50 pieces for small batches.</p>
-<p><strong>Q: Can waterproof stickers be submerged?</strong><br/>A: Yes, our waterproof stickers can handle short-term water exposure.</p>
-</div>
-<p>Order <a href="/en/product/waterproof-stickers/">waterproof stickers</a> or <a href="/en/product/die-cut-stickers/">die-cut stickers</a> today. <a href="/en/quote/">Get a quote</a>!</p>`,
-      ja: `<p>ステッカーは香港印刷市場で最も柔軟な宣伝ツールの一つです。このガイドで材質、形状、加工について解説します。</p>
-<h3>ステッカー材質比較</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">材質</th><th class="border p-2 text-left">特徴</th><th class="border p-2 text-left">おすすめ</th><th class="border p-2 text-left">耐久性</th></tr></thead><tbody>
-<tr><td class="border p-2">アート紙</td><td class="border p-2">発色鮮やか、コスパ良し</td><td class="border p-2">プロモーションラベル</td><td class="border p-2">短期屋内</td></tr>
-<tr><td class="border p-2">防水PP</td><td class="border p-2">防水防油</td><td class="border p-2">食品ラベル、屋外</td><td class="border p-2">長期屋外</td></tr>
-<tr><td class="border p-2">透明PET</td><td class="border p-2">高透明</td><td class="border p-2">ガラス、高級包装</td><td class="border p-2">長期</td></tr>
-</tbody></table>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3">
-<p><strong>Q: 最小注文数は？</strong><br/>A: 標準100枚から、小ロットは50枚から。</p>
-<p><strong>Q: 防水ステッカーは水に浸かっても大丈夫？</strong><br/>A: はい、短時間の水没に耐えられます。</p>
-</div>
-<p><a href="/ja/product/waterproof-stickers/">防水ステッカー</a>や<a href="/ja/product/die-cut-stickers/">ダイカットステッカー</a>を今すぐ注文。<a href="/ja/quote/">見積もり</a>を取得！</p>`,
-    },
+      'zh-hk': `<p>貼紙印刷是品牌推廣中 CP 值最高的投資之一。無論是產品標籤、促銷宣傳還是個性化裝飾，智印雲都能提供專業方案。本文從材質、表面處理、模切形狀、應用場景、印刷工藝、選購決策 6 大維度為您系統拆解貼紙選購，助您用最低成本達到最佳品牌推廣效果。</p>
+<h3>一、貼紙材質分類與對比</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">材質</th><th class="border p-2 text-left">特性</th><th class="border p-2 text-left">適合</th><th class="border p-2 text-left">參考價格</th></tr></thead><tbody><tr><td class="border p-2">銅版紙貼紙</td><td class="border p-2">成本低、色彩鮮豔</td><td class="border p-2">短期使用</td><td class="border p-2">HK$0.5-1.5/張</td></tr><tr><td class="border p-2">防水合成紙</td><td class="border p-2">防水防油、耐用</td><td class="border p-2">戶外、食品</td><td class="border p-2">HK$1.2-3/張</td></tr><tr><td class="border p-2">透明 PET</td><td class="border p-2">高透明、質感佳</td><td class="border p-2">高檔包裝</td><td class="border p-2">HK$2-5/張</td></tr><tr><td class="border p-2">雷射 / 全息</td><td class="border p-2">防偽、視覺強</td><td class="border p-2">證書、品牌</td><td class="border p-2">HK$3-8/張</td></tr><tr><td class="border p-2">牛皮紙</td><td class="border p-2">環保、復古</td><td class="border p-2">手工品牌</td><td class="border p-2">HK$1.5-4/張</td></tr></tbody></table>
+<h3>二、表面處理工藝詳解</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>光膠（Glossy Lamination）</strong>：表面光亮、色彩飽和鮮豔</li><li><strong>啞膠（Matte Lamination）</strong>：質感柔和，給人高檔沉穩感</li><li><strong>燙金 / 燙銀</strong>：金屬光澤，提升品牌奢華感</li><li><strong>UV 局部上光</strong>：突出重點圖案，增加層次感</li><li><strong>壓凸 / 壓凹</strong>：無油墨的立體觸感</li></ul>
+<h3>三、模切形狀選擇</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>方形 / 矩形</strong>：標準化、信息密集、適合條碼</li><li><strong>圓形 / 橢圓</strong>：經典、百搭、適合 Logo</li><li><strong>異形模切（Die-cut）</strong>：完全按形狀剪裁，視覺衝擊力最強</li><li><strong>吻切（Kiss-cut）</strong>：背紙保留整體形狀，便於撕取</li><li><strong>連續模切</strong>：多張連在一起，便於批量派發</li></ol>
+<h3>四、應用場景與材質對應</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">場景</th><th class="border p-2 text-left">推薦材質</th><th class="border p-2 text-left">用途</th></tr></thead><tbody><tr><td class="border p-2">食品標籤</td><td class="border p-2">防水合成紙</td><td class="border p-2">成分表、營養標示</td></tr><tr><td class="border p-2">化妝品標籤</td><td class="border p-2">透明 PET + 燙金</td><td class="border p-2">高檔瓶身</td></tr><tr><td class="border p-2">產品促銷</td><td class="border p-2">銅版紙 + 光膠</td><td class="border p-2">限期標識</td></tr><tr><td class="border p-2">物流標籤</td><td class="border p-2">防水合成紙</td><td class="border p-2">快遞面單</td></tr><tr><td class="border p-2">手帳 / 個性化</td><td class="border p-2">異形模切</td><td class="border p-2">DIY 裝飾</td></tr><tr><td class="border p-2">兒童貼紙</td><td class="border p-2">銅版紙 + 光膠</td><td class="border p-2">教育、玩具</td></tr></tbody></table>
+<h3>五、印刷工藝選擇</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>數碼印刷</strong>：100-500 張，多色、快速、個性化</li><li><strong>柔版印刷（Flexo）</strong>：1000+ 張，單色到 4 色，經濟實惠</li><li><strong>UV 印刷</strong>：高飽和度，支持特殊材質</li><li><strong>絲網印刷</strong>：1000+ 張，厚油墨層、視覺衝擊力強</li></ul>
+<h3>六、常見問題</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：最小訂購量是多少？</strong><br/>A：標準 100 張。特殊工藝需 500 張起。</p><p><strong>Q：防水貼紙真的防水嗎？</strong><br/>A：是的，可承受短時間浸泡。長期浸泡需額外覆膜。</p><p><strong>Q：交貨時間多久？</strong><br/>A：標準 3-5 個工作日，急件即日可取。</p><p><strong>Q：需要什麼文件格式？</strong><br/>A：AI / PDF / EPS 矢量檔 + 300dpi + CMYK。</p></div>
+<p>無論您需要哪種貼紙，立即 <a href="https://wa.me/8618126380255" target="_blank">WhatsApp 聯絡智印雲</a> 獲取專業建議！</p>`,
+      'en': `<p>Sticker printing is one of the highest-ROI brand investments. Whether product labels, promo giveaways, or personalized decoration, ZprintPro delivers professional solutions. This article systematically breaks down sticker selection across 6 dimensions: materials, finishes, die-cut shapes, applications, printing processes, and decision framework.</p>
+<h3>1. Sticker Material Categories & Comparison</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Material</th><th class="border p-2 text-left">Features</th><th class="border p-2 text-left">Best For</th><th class="border p-2 text-left">Price</th></tr></thead><tbody><tr><td class="border p-2">Art Paper Sticker</td><td class="border p-2">Low cost, vibrant colors</td><td class="border p-2">Short-term use</td><td class="border p-2">US$0.06-0.20/pc</td></tr><tr><td class="border p-2">Waterproof Synthetic</td><td class="border p-2">Water/oil resistant, durable</td><td class="border p-2">Outdoor, food</td><td class="border p-2">US$0.15-0.40/pc</td></tr><tr><td class="border p-2">Transparent PET</td><td class="border p-2">Crystal clear, premium feel</td><td class="border p-2">Premium packaging</td><td class="border p-2">US$0.25-0.65/pc</td></tr><tr><td class="border p-2">Holographic</td><td class="border p-2">Anti-counterfeit, visual impact</td><td class="border p-2">Certificates, brands</td><td class="border p-2">US$0.40-1.00/pc</td></tr><tr><td class="border p-2">Kraft Paper</td><td class="border p-2">Eco, vintage</td><td class="border p-2">Handcraft brands</td><td class="border p-2">US$0.20-0.50/pc</td></tr></tbody></table>
+<h3>2. Surface Finishes in Detail</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Glossy Lamination</strong>: Smooth surface, saturated colors</li><li><strong>Matte Lamination</strong>: Soft texture, premium feel</li><li><strong>Foil Stamping (Gold/Silver)</strong>: Metallic shine, luxury feel</li><li><strong>Spot UV</strong>: Highlights designs, dimensional depth</li><li><strong>Embossing / Debossing</strong>: Inkless dimensional texture</li></ul>
+<h3>3. Die-Cut Shape Selection</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>Square / Rectangle</strong>: Standardized, info-dense, ideal for barcodes</li><li><strong>Circle / Oval</strong>: Classic, versatile, ideal for logos</li><li><strong>Die-cut</strong>: Custom shape — strongest visual impact</li><li><strong>Kiss-cut</strong>: Backing paper stays intact — easy peel</li><li><strong>Continuous Cut</strong>: Multiple stickers connected — bulk distribution</li></ol>
+<h3>4. Application & Material Mapping</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Scene</th><th class="border p-2 text-left">Recommended</th><th class="border p-2 text-left">Use</th></tr></thead><tbody><tr><td class="border p-2">Food Labels</td><td class="border p-2">Waterproof synthetic</td><td class="border p-2">Ingredients, nutrition</td></tr><tr><td class="border p-2">Cosmetic Labels</td><td class="border p-2">Transparent PET + foil</td><td class="border p-2">Premium bottle</td></tr><tr><td class="border p-2">Promo Stickers</td><td class="border p-2">Art paper + glossy</td><td class="border p-2">Limited-time</td></tr><tr><td class="border p-2">Shipping Labels</td><td class="border p-2">Waterproof synthetic</td><td class="border p-2">Tracking labels</td></tr><tr><td class="border p-2">Planner / Personalized</td><td class="border p-2">Die-cut</td><td class="border p-2">DIY decoration</td></tr><tr><td class="border p-2">Kids Stickers</td><td class="border p-2">Art paper + glossy</td><td class="border p-2">Education, toys</td></tr></tbody></table>
+<h3>5. Printing Process Options</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Digital Print</strong>: 100-500 pieces, multi-color, fast, personalized</li><li><strong>Flexo Print</strong>: 1000+ pieces, 1-4 color, economical</li><li><strong>UV Print</strong>: High saturation, supports special materials</li><li><strong>Screen Print</strong>: 1000+ pieces, thick ink, strong visual</li></ul>
+<h3>6. Frequently Asked Questions</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：What is the MOQ?</strong><br/>A：Standard 100 pieces. Specialty processes require 500+.</p><p><strong>Q：Are waterproof stickers really waterproof?</strong><br/>A：Yes — withstand brief submersion. Long submersion needs extra lamination.</p><p><strong>Q：How long does production take?</strong><br/>A：Standard 3-5 working days; rush same-day available.</p><p><strong>Q：What file format needed?</strong><br/>A：AI / PDF / EPS vector + 300dpi + CMYK.</p></div>
+<p>For any sticker need, contact <a href="https://wa.me/8618126380255" target="_blank">ZprintPro via WhatsApp</a> for professional advice!</p>`,
+      'ja': `<p>ステッカー印刷はブランド投資の中でも ROI が高い分野です。商品ラベル、プロモーション、個性を問わず、智印雲はプロフェッショナルなソリューションをご提供。本記事は材質、表面加工、ダイカット形状、応用、印刷工程、選定意思決定の 6 つの側面からステッカー選定を体系的に整理します。</p>
+<h3>一、ステッカー材質分類と比較</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">材質</th><th class="border p-2 text-left">特徴</th><th class="border p-2 text-left">適用</th><th class="border p-2 text-left">参考価格</th></tr></thead><tbody><tr><td class="border p-2">アート紙ステッカー</td><td class="border p-2">低コスト、色彩鮮やか</td><td class="border p-2">短期利用</td><td class="border p-2">HK$0.5-1.5/枚</td></tr><tr><td class="border p-2">防水合成紙</td><td class="border p-2">防水防油、耐久</td><td class="border p-2">屋外、食品</td><td class="border p-2">HK$1.2-3/枚</td></tr><tr><td class="border p-2">透明 PET</td><td class="border p-2">高透明、質感良好</td><td class="border p-2">高級パッケージ</td><td class="border p-2">HK$2-5/枚</td></tr><tr><td class="border p-2">ホログラム</td><td class="border p-2">偽造防止、視覚強</td><td class="border p-2">証書、ブランド</td><td class="border p-2">HK$3-8/枚</td></tr><tr><td class="border p-2">クラフト紙</td><td class="border p-2">エコ、レトロ</td><td class="border p-2">手工ブランド</td><td class="border p-2">HK$1.5-4/枚</td></tr></tbody></table>
+<h3>二、表面加工詳細</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>光沢ラミネート</strong>：表面光亮、色彩彩度高い</li><li><strong>マットラミネート</strong>：落ち着いた質感、高級感</li><li><strong>箔押し（金 / 銀）</strong>：金属光沢、ブランド高級感</li><li><strong>スポット UV</strong>：重点部分強調、立体感</li><li><strong>エンボス / デボス</strong>：インクなしの立体触感</li></ul>
+<h3>三、ダイカット形状の選択</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>正方形 / 長方形</strong>：標準化、密度高、バーコード向き</li><li><strong>円形 / 楕円</strong>：定番、万能、ロゴ向き</li><li><strong>ダイカット</strong>：任意形状カット、視覚衝撃最大</li><li><strong>キスカット</strong>：台紙そのまま、剥がしやすい</li><li><strong>連続カット</strong>：複数連結、批量配布向き</li></ol>
+<h3>四、応用シーンと材質の対応表</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">シーン</th><th class="border p-2 text-left">推奨材質</th><th class="border p-2 text-left">用途</th></tr></thead><tbody><tr><td class="border p-2">食品ラベル</td><td class="border p-2">防水合成紙</td><td class="border p-2">成分表、栄養表示</td></tr><tr><td class="border p-2">化粧品ラベル</td><td class="border p-2">透明 PET + 箔</td><td class="border p-2">高級ボトル</td></tr><tr><td class="border p-2">プロモステッカー</td><td class="border p-2">アート紙 + 光沢</td><td class="border p-2">期間限定标识</td></tr><tr><td class="border p-2">物流ラベル</td><td class="border p-2">防水合成紙</td><td class="border p-2">送り状</td></tr><tr><td class="border p-2">手帳 / 個性化</td><td class="border p-2">ダイカット</td><td class="border p-2">DIY 装飾</td></tr><tr><td class="border p-2">子供ステッカー</td><td class="border p-2">アート紙 + 光沢</td><td class="border p-2">教育、玩具</td></tr></tbody></table>
+<h3>五、印刷工程の選択</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>デジタル印刷</strong>：100-500 枚、多色、高速、個別性</li><li><strong>フレキソ印刷</strong>：1000+ 枚、1-4 色、経済的</li><li><strong>UV 印刷</strong>：高彩度、特殊素材対応</li><li><strong>シルクスクリーン</strong>：1000+ 枚、厚インキ、視覚衝撃強</li></ul>
+<h3>六、よくある質問</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：MOQ は？</strong><br/>A：標準 100 枚。特殊工程は 500 枚以上。</p><p><strong>Q：防水ステッカーは本当に防水？</strong><br/>A：はい。短時間浸水に耐えます。長期は追加ラミネート必要。</p><p><strong>Q：納期は？</strong><br/>A：標準 3-5 営業日、特急当日可。</p><p><strong>Q：必要なファイル形式は？</strong><br/>A：AI / PDF / EPS ベクター + 300dpi + CMYK。</p></div>
+<p>あらゆるステッカー印刷ニーズに対応、今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 専門アドバイス！</p>`
+    ,
   },
   // ========== FLYERS ==========
   {
@@ -277,83 +178,49 @@ export const buyingGuides: BuyingGuide[] = [
     date: '2025-01-15',
     relatedProducts: ['a4-flyers', 'a5-flyers', 'double-sided-flyers', 'folded-leaflets', 'thick-paper-flyers', 'same-day-flyers', 'eco-flyers'],
     content: {
-      'zh-hk': `<p>傳單係香港最傳統但最有效嘅地面推廣工具之一。即香港行內講，「傳單要靚、要快、要抵」，三樣缺一不可。無論係餐廳派發、樓盤宣傳、活動推廣定係產品介紹，選對傳單規格都能夠大幅提升宣傳效果。本文從尺寸、紙質、摺法三個維度，為您拆解傳單印刷的選購要點。</p>
-
-<h3>一、傳單尺寸選擇</h3>
-<p>傳單尺寸直接影響派發便利性和信息承載量：</p>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">尺寸</th><th class="border p-2 text-left">規格</th><th class="border p-2 text-left">適用場景</th><th class="border p-2 text-left">優點</th></tr></thead><tbody>
-<tr><td class="border p-2">A4</td><td class="border p-2">210x297mm</td><td class="border p-2">產品目錄、活動詳情</td><td class="border p-2">信息量大、專業感強</td></tr>
-<tr><td class="border p-2">A5</td><td class="border p-2">148x210mm</td><td class="border p-2">餐廳餐牌、促銷傳單</td><td class="border p-2">便於攜帶、成本較低</td></tr>
-<tr><td class="border p-2">A6/DL</td><td class="border p-2">105x148mm / 99x210mm</td><td class="border p-2">活動邀請、優惠券</td><td class="border p-2">可放入口袋、派發效率高</td></tr>
-</tbody></table>
-
-<h3>二、傳單紙質與克重</h3>
-<p>即香港印刷廠最常用嘅傳單紙質包括：</p>
-<ul class="list-disc pl-5 my-3 space-y-2">
-<li><strong>128g銅版紙</strong>：最經濟選擇，適合大量派發的促銷傳單。即行內講「派街紙」多數用128g</li>
-<li><strong>157g銅版紙</strong>：標準傳單紙，手感適中，色彩還原好。餐廳餐牌、樓盤傳單多用此規格</li>
-<li><strong>200g-250g銅版紙</strong>：厚實挺括，給人高檔感。適合品牌宣傳冊、產品目錄</li>
-<li><strong>環保紙</strong>：FSC認證，啞面質感。適合ESG企業和文化機構</li>
-</ul>
-
-<h3>三、摺頁傳單的種類</h3>
-<p>摺頁傳單可以將更多信息濃縮在小巧尺寸中：</p>
-<ol class="list-decimal pl-5 my-3 space-y-1">
-<li><strong>對摺（Bi-fold）</strong>：A3對摺成A4，或A4對摺成A5。適合簡單的產品介紹</li>
-<li><strong>三摺頁（Tri-fold / Z-fold）</strong>：A4摺成DL尺寸，打開有三個版面。即香港最常見嘅摺頁形式</li>
-<li><strong>四摺頁（Gate-fold）</strong>：兩邊向中間摺，打開有驚喜感。適合高端邀請函</li>
-<li><strong>風琴摺（Z-fold）</strong>：連續Z形摺疊，適合多頁產品目錄</li>
-</ol>
-
-<h3>四、選購建議</h3>
-<div class="bg-blue-50 rounded-lg p-5 my-4">
-<p class="font-semibold text-blue-800 mb-2">智印雲選購建議</p>
-<ul class="list-disc pl-5 space-y-1 text-blue-900">
-<li><strong>街頭派發</strong>：選A5單面+128g銅版紙，成本最低</li>
-<li><strong>餐廳/零售</strong>：選A4雙面+157g銅版紙，信息充足</li>
-<li><strong>品牌宣傳</strong>：選200g厚紙+啞膜，質感高檔</li>
-<li><strong>產品目錄</strong>：選三摺頁+200g紙，容量大且便攜</li>
-</ul>
-</div>
-
-<h3>五、常見問題</h3>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3">
-<p><strong>Q: 傳單最少印幾多張？</strong><br/>A: 智印雲最低500張起印。即香港行內，500張係傳單嘅標準起訂量。</p>
-<p><strong>Q: 單面定雙面印刷好？</strong><br/>A: 雙面印刷每張只貴幾毫子，但信息量增加一倍。除非預算極度緊張，否則建議雙面。</p>
-<p><strong>Q: 傳單設計有咩要留意？</strong><br/>A: 標題要醒目、電話/WhatsApp要放大、地址要清晰。避免文字過細（最少8pt），否則街頭派發時長者睇唔到。</p>
-</div>
-
-<p>無論您需要<a href="/product/a4-flyers/">A4傳單</a>、<a href="/product/folded-leaflets/">摺頁傳單</a>定係<a href="/product/same-day-flyers/">即日傳單</a>，智印雲都能提供專業建議和優質印刷。立即<a href="/quote/">獲取報價</a>！</p>`,
-      en: `<p>Flyers remain one of the most effective ground marketing tools in Hong Kong. This guide covers sizes, paper weights, and folding options to maximize your promotional impact.</p>
-<h3>Flyer Size Options</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Size</th><th class="border p-2 text-left">Dimensions</th><th class="border p-2 text-left">Best For</th><th class="border p-2 text-left">Advantages</th></tr></thead><tbody>
-<tr><td class="border p-2">A4</td><td class="border p-2">210x297mm</td><td class="border p-2">Product catalogs, events</td><td class="border p-2">High info capacity</td></tr>
-<tr><td class="border p-2">A5</td><td class="border p-2">148x210mm</td><td class="border p-2">Menus, promotions</td><td class="border p-2">Portable, lower cost</td></tr>
-<tr><td class="border p-2">A6/DL</td><td class="border p-2">105x148mm / 99x210mm</td><td class="border p-2">Invitations, coupons</td><td class="border p-2">Pocket-sized</td></tr>
-</tbody></table>
-<h3>Paper Weight Guide</h3>
-<ul class="list-disc pl-5 my-3 space-y-2">
-<li><strong>128g art paper</strong>: Most economical, ideal for mass distribution</li>
-<li><strong>157g art paper</strong>: Standard flyer weight, good color reproduction</li>
-<li><strong>200g-250g</strong>: Premium feel, ideal for brand brochures</li>
-</ul>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3">
-<p><strong>Q: What is the minimum order?</strong><br/>A: 500 pieces is the standard minimum for flyers.</p>
-<p><strong>Q: Single or double-sided?</strong><br/>A: Double-sided adds minimal cost but doubles your information space.</p>
-</div>
-<p>Order <a href="/en/product/a4-flyers/">A4 flyers</a> or <a href="/en/product/folded-leaflets/">folded leaflets</a> today. <a href="/en/quote/">Get a quote</a>!</p>`,
-      ja: `<p>チラシは香港で最も効果的な地面販促ツールの一つです。このガイドでサイズ、用紙、折り方について解説します。</p>
-<h3>チラシサイズ</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">サイズ</th><th class="border p-2 text-left">寸法</th><th class="border p-2 text-left">おすすめ</th><th class="border p-2 text-left">メリット</th></tr></thead><tbody>
-<tr><td class="border p-2">A4</td><td class="border p-2">210x297mm</td><td class="border p-2">製品カタログ、イベント</td><td class="border p-2">情報量が多い</td></tr>
-<tr><td class="border p-2">A5</td><td class="border p-2">148x210mm</td><td class="border p-2">メニュー、プロモーション</td><td class="border p-2">持ち運び便利</td></tr>
-</tbody></table>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3">
-<p><strong>Q: 最小注文数は？</strong><br/>A: 標準は500枚から。</p>
-<p><strong>Q: 片面と両面どちらが良い？</strong><br/>A: 両面はわずかに高いですが、情報量が2倍になります。</p>
-</div>
-<p><a href="/ja/product/a4-flyers/">A4チラシ</a>や<a href="/ja/product/folded-leaflets/">折りパンフレット</a>を今すぐ注文。<a href="/ja/quote/">見積もり</a>を取得！</p>`,
-    },
+      'zh-hk': `<p>傳單是香港中小企業最常用的營銷工具之一。相比數碼廣告，印刷傳單具有成本可控、觸達精準、無需依賴演算法等優勢。本文從尺寸、紙質、摺法、派發策略、表面工藝、QR 設計 6 個維度為您拆解香港傳單印刷選購全攻略。</p>
+<h3>一、傳單尺寸怎麼選？</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">尺寸</th><th class="border p-2 text-left">適合場景</th><th class="border p-2 text-left">單張成本</th></tr></thead><tbody><tr><td class="border p-2">A4 單面</td><td class="border p-2">活動推廣、新品發佈</td><td class="border p-2">HK$0.15-0.30</td></tr><tr><td class="border p-2">A4 雙面</td><td class="border p-2">菜單、產品目錄、服務介紹</td><td class="border p-2">HK$0.25-0.50</td></tr><tr><td class="border p-2">A5 單面</td><td class="border p-2">折扣券、優惠券、街派</td><td class="border p-2">HK$0.08-0.18</td></tr><tr><td class="border p-2">A5 雙面</td><td class="border p-2">小型目錄、活動邀請</td><td class="border p-2">HK$0.15-0.30</td></tr><tr><td class="border p-2">三摺 DL</td><td class="border p-2">高階服務介紹、B2B</td><td class="border p-2">HK$0.30-0.60</td></tr></tbody></table>
+<h3>二、紙質選擇全攻略</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>128g 銅版紙</strong>：最經濟實惠，街派首選</li><li><strong>157g 銅版紙</strong>：色彩還原度好，標準選擇</li><li><strong>200g 銅版紙</strong>：高檔感，雙面印刷不易透</li><li><strong>80g 書紙</strong>：環保紙張，適合文字密集型傳單</li><li><strong>100g 書紙</strong>：略厚書紙，更顯品質</li></ul>
+<h3>三、摺法與設計變化</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>單張無摺</strong>：A4/A5 標準，無摺工序成本最低</li><li><strong>對摺</strong>：A3 對摺成 A4，多一個摺工序 +30% 成本</li><li><strong>三摺 DL</strong>：A4 三摺成 DL 信封尺寸，B2B 報告常用</li><li><strong>風琴摺</strong>：多摺展開成連續信息，適合產品目錄</li><li><strong>異形摺</strong>：階梯摺、十字摺等趣味摺法</li></ol>
+<h3>四、派發策略與 ROI 提升</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">策略</th><th class="border p-2 text-left">做法</th><th class="border p-2 text-left">效益</th></tr></thead><tbody><tr><td class="border p-2">目標人群定向</td><td class="border p-2">根據客戶畫像選地點</td><td class="border p-2">地鐵站、商場、社區</td></tr><tr><td class="border p-2">結合 QR Code</td><td class="border p-2">WhatsApp / IG 二維碼</td><td class="border p-2">將線下導入線上</td></tr><tr><td class="border p-2">限時優惠</td><td class="border p-2">「限 7 天」「憑傳單」</td><td class="border p-2">刺激即時轉化</td></tr><tr><td class="border p-2">A/B 測試</td><td class="border p-2">兩版傳單對比效果</td><td class="border p-2">優化 ROI</td></tr><tr><td class="border p-2">數據追蹤</td><td class="border p-2">不同 QR Code 分流</td><td class="border p-2">評估渠道效果</td></tr></tbody></table>
+<h3>五、表面處理工藝</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>光膠（Glossy Lamination）</strong>：表面光亮，色彩更鮮豔，適合產品推廣</li><li><strong>啞膠（Matte Lamination）</strong>：質感柔和，適合高檔品牌、餐廳菜單</li><li><strong>UV 局部上光</strong>：突出 Logo 或圖片</li><li><strong>燙金 / 燙銀</strong>：高階品牌傳單首選</li><li><strong>打孔 / 摺線</strong>：便於撕取、折疊</li></ul>
+<h3>六、常見問題</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：傳單最小印量？</strong><br/>A：100 張起，多 500 張有折扣。</p><p><strong>Q：雙面會透底嗎？</strong><br/>A：157g 以上銅版紙一般不會，深色設計選 200g。</p><p><strong>Q：交貨時間？</strong><br/>A：標準 3-5 個工作日，急件可 24 小時。</p><p><strong>Q：設計有模板嗎？</strong><br/>A：智印雲提供 100+ 款免費模板。</p></div>
+<p>想了解更多傳單印刷？立即 <a href="https://wa.me/8618126380255" target="_blank">WhatsApp 聯絡智印雲</a> 獲取報價！</p>`,
+      'en': `<p>Flyers are one of the most used marketing tools for SMEs. Compared to digital ads, printed flyers offer controllable cost, precise reach, no algorithm dependency. This article breaks down HK flyer printing selection across 6 dimensions: size, paper, folding, distribution, surface finish, QR design.</p>
+<h3>1. How to Choose Flyer Size</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Size</th><th class="border p-2 text-left">Best For</th><th class="border p-2 text-left">Unit Cost</th></tr></thead><tbody><tr><td class="border p-2">A4 single-sided</td><td class="border p-2">Event promo, new product launch</td><td class="border p-2">US$0.02-0.04</td></tr><tr><td class="border p-2">A4 double-sided</td><td class="border p-2">Menu, product catalog, service intro</td><td class="border p-2">US$0.03-0.06</td></tr><tr><td class="border p-2">A5 single-sided</td><td class="border p-2">Discount coupon, voucher, street</td><td class="border p-2">US$0.01-0.02</td></tr><tr><td class="border p-2">A5 double-sided</td><td class="border p-2">Small catalog, invitation</td><td class="border p-2">US$0.02-0.04</td></tr><tr><td class="border p-2">Tri-fold DL</td><td class="border p-2">Premium service intro, B2B</td><td class="border p-2">US$0.04-0.08</td></tr></tbody></table>
+<h3>2. Paper Selection</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>128g Art Paper</strong>: Most economical, ideal for street distribution</li><li><strong>157g Art Paper</strong>: Good color reproduction, standard</li><li><strong>200g Art Paper</strong>: Premium feel, no show-through</li><li><strong>80g Woodfree</strong>: Eco, ideal for text-heavy flyers</li><li><strong>100g Woodfree</strong>: Slightly thicker woodfree, more quality</li></ul>
+<h3>3. Folding & Design Variations</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>Flat (no fold)</strong>: A4/A5 standard, lowest cost</li><li><strong>Bi-fold</strong>: A3 folded to A4, +30% folding cost</li><li><strong>Tri-fold DL</strong>: A4 folded into DL envelope size, B2B common</li><li><strong>Accordion Fold</strong>: Multi-fold continuous info, ideal for product catalogs</li><li><strong>Specialty Folds</strong>: Step, cross, etc. creative folds</li></ol>
+<h3>4. Distribution Strategy & ROI Improvement</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Strategy</th><th class="border p-2 text-left">Method</th><th class="border p-2 text-left">Benefit</th></tr></thead><tbody><tr><td class="border p-2">Target Audience</td><td class="border p-2">Pick location by customer profile</td><td class="border p-2">MTR, mall, community</td></tr><tr><td class="border p-2">QR Code</td><td class="border p-2">WhatsApp / IG QR</td><td class="border p-2">Offline-to-online</td></tr><tr><td class="border p-2">Limited-time Offer</td><td class="border p-2">"7-day only" / "With flyer"</td><td class="border p-2">Drive immediate conversion</td></tr><tr><td class="border p-2">A/B Testing</td><td class="border p-2">Compare two flyer versions</td><td class="border p-2">Optimize ROI</td></tr><tr><td class="border p-2">Data Tracking</td><td class="border p-2">Different QR codes per channel</td><td class="border p-2">Evaluate channel efficacy</td></tr></tbody></table>
+<h3>5. Surface Finish Options</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Glossy Lamination</strong>: Bright surface, vibrant colors, ideal for product promo</li><li><strong>Matte Lamination</strong>: Soft texture, ideal for premium brands and menus</li><li><strong>Spot UV</strong>: Highlight logo or image</li><li><strong>Foil Stamping (Gold/Silver)</strong>: Premium brand flyers favorite</li><li><strong>Perforation / Score Lines</strong>: Easy tear, fold</li></ul>
+<h3>6. Frequently Asked Questions</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：What is the MOQ for flyers?</strong><br/>A：100 pieces minimum; discounts over 500.</p><p><strong>Q：Will double-sided show through?</strong><br/>A：157g+ art paper generally no. Choose 200g for dark designs.</p><p><strong>Q：Delivery time?</strong><br/>A：Standard 3-5 working days; rush 24 hours available.</p><p><strong>Q：Any design templates?</strong><br/>A：ZprintPro offers 100+ free templates.</p></div>
+<p>Want more on flyer printing? Contact <a href="https://wa.me/8618126380255" target="_blank">ZprintPro via WhatsApp</a> for a quote!</p>`,
+      'ja': `<p>チラシは香港の中小企業で最も使われるマーケティングツールの一つです。デジタル広告より、印刷チラシはコスト管理可能、ターゲット精度高い、アルゴリズム依存なしという利点。本記事はサイズ、用紙、折り、配布戦略、表面加工、QR デザインの 6 つの側面から香港チラシ印刷選定を解説します。</p>
+<h3>一、チラシサイズの選び方</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">サイズ</th><th class="border p-2 text-left">適用シーン</th><th class="border p-2 text-left">単価</th></tr></thead><tbody><tr><td class="border p-2">A4 片面</td><td class="border p-2">イベントプロモ、新商品発表</td><td class="border p-2">HK$0.15-0.30</td></tr><tr><td class="border p-2">A4 両面</td><td class="border p-2">メニュー、製品カタログ、サービス紹介</td><td class="border p-2">HK$0.25-0.50</td></tr><tr><td class="border p-2">A5 片面</td><td class="border p-2">割引券、クーポン、街頭配布</td><td class="border p-2">HK$0.08-0.18</td></tr><tr><td class="border p-2">A5 両面</td><td class="border p-2">小型カタログ、招待状</td><td class="border p-2">HK$0.15-0.30</td></tr><tr><td class="border p-2">三つ折り DL</td><td class="border p-2">高級サービス紹介、B2B</td><td class="border p-2">HK$0.30-0.60</td></tr></tbody></table>
+<h3>二、用紙選定完全ガイド</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>128g アート紙</strong>：最安、街頭配布に最適</li><li><strong>157g アート紙</strong>：色彩再現良好、標準選択</li><li><strong>200g アート紙</strong>：高級感、両面透けなし</li><li><strong>80g 書籍用紙</strong>：エコ、文字密集型チラシ向き</li><li><strong>100g 書籍用紙</strong>：やや厚い書籍用紙、質感向上</li></ul>
+<h3>三、折りとデザインのバリエーション</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>無折り</strong>：A4/A5 標準、折り工程コスト最小</li><li><strong>二つ折り</strong>：A3 を A4 に二つ折り、折り工程 +30%</li><li><strong>三つ折り DL</strong>：A4 を DL 封筒サイズに三つ折り、B2B 定番</li><li><strong>アコーディオン折り</strong>：連続情報展開、製品カタログ向き</li><li><strong>特殊折り</strong>：階段、十字など面白い折り</li></ol>
+<h3>四、配布戦略と ROI 向上</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">戦略</th><th class="border p-2 text-left">方法</th><th class="border p-2 text-left">効果</th></tr></thead><tbody><tr><td class="border p-2">ターゲット選別</td><td class="border p-2">顧客プロファイルで場所選択</td><td class="border p-2">MTR、ショッピングモール、住宅街</td></tr><tr><td class="border p-2">QR コード</td><td class="border p-2">WhatsApp / IG QR</td><td class="border p-2">オフライン→オンライン</td></tr><tr><td class="border p-2">期間限定オファー</td><td class="border p-2">「7 日限定」「チラシ持参で」</td><td class="border p-2">即時転換促進</td></tr><tr><td class="border p-2">A/B テスト</td><td class="border p-2">2 バージョン比較効果</td><td class="border p-2">ROI 最適化</td></tr><tr><td class="border p-2">データ追跡</td><td class="border p-2">QR コード分流</td><td class="border p-2">チャネル効果評価</td></tr></tbody></table>
+<h3>五、表面加工オプション</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>光沢ラミネート</strong>：明るい表面、色彩鮮やか、產品プロモに最適</li><li><strong>マットラミネート</strong>：落ち着いた質感、高級ブランド・メニューに最適</li><li><strong>スポット UV</strong>：ロゴや画像を強調</li><li><strong>箔押し（金 / 銀）</strong>：高級ブランドチラシ定番</li><li><strong>ミシン目 / 罫線</strong>：切り取り、折り畳み便利</li></ul>
+<h3>六、よくある質問</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：チラシの最小印刷数量は？</strong><br/>A：100 枚から、500 枚以上で割引。</p><p><strong>Q：両面は透けますか？</strong><br/>A：157g 以上のアート紙なら通常透けません。濃い色は 200g 選択。</p><p><strong>Q：納期は？</strong><br/>A：標準 3-5 営業日、特急 24 時間対応可。</p><p><strong>Q：デザインテンプレートは？</strong><br/>A：智印雲は 100 種類以上の無料テンプレートをご提供。</p></div>
+<p>チラシ印刷をもっと知りたい？今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 見積もり！</p>`
+    ,
   },
   // ========== PACKAGING ==========
   {
@@ -378,87 +245,49 @@ export const buyingGuides: BuyingGuide[] = [
     date: '2025-01-15',
     relatedProducts: ['gift-boxes', 'cosmetic-boxes', 'food-boxes', 'mailer-boxes', 'folding-boxes', 'rigid-boxes'],
     content: {
-      'zh-hk': `<p>包裝盒係產品嘅「無聲推銷員」。即香港零售業行內講，「貨賣一張皮」，包裝盒嘅質感同設計直接影響消費者對品牌嘅第一印象。無論係電商發貨、實體零售定係禮品贈送，選對包裝盒都能夠提升產品價值感。本文從盒型、材質、工藝三個維度，為您拆解包裝盒定制的選購要點。</p>
-
-<h3>一、常見包裝盒型對比</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">盒型</th><th class="border p-2 text-left">結構</th><th class="border p-2 text-left">適用產品</th><th class="border p-2 text-left">特點</th></tr></thead><tbody>
-<tr><td class="border p-2">天地蓋盒</td><td class="border p-2">上蓋+下盒分離</td><td class="border p-2">手機、首飾、禮品</td><td class="border p-2">開合儀式感強、高端</td></tr>
-<tr><td class="border p-2">書型盒</td><td class="border p-2">側邊磁吸開合</td><td class="border p-2">相冊、高端禮品</td><td class="border p-2">像書本一樣翻開</td></tr>
-<tr><td class="border p-2">飛機盒</td><td class="border p-2">一體成型摺疊</td><td class="border p-2">電商產品、快遞</td><td class="border p-2">成本低、組裝快</td></tr>
-<tr><td class="border p-2">摺疊盒</td><td class="border p-2">平攤摺疊成型</td><td class="border p-2">化妝品、食品</td><td class="border p-2">省倉儲空間</td></tr>
-<tr><td class="border p-2">抽屜盒</td><td class="border p-2">抽拉式開合</td><td class="border p-2">茶葉、精品</td><td class="border p-2">層次感、神秘感十足</td></tr>
-</tbody></table>
-
-<h3>二、包裝盒材質選擇</h3>
-<p>包裝盒材質決定保護性、質感和成本：</p>
-<ul class="list-disc pl-5 my-3 space-y-2">
-<li><strong>白卡紙（350g-400g）</strong>：表面光滑，印刷效果佳。即香港最常見嘅包裝盒材質，化妝品盒、食品盒多用此規格</li>
-<li><strong>牛皮紙（250g-350g）</strong>：環保復古風格，強度高。適合手工皂、茶葉、文創產品</li>
-<li><strong>瓦楞紙（E-flute / B-flute）</strong>：緩衝保護性強，適合電商快遞盒、易碎品包裝</li>
-<li><strong>灰板裱糊（1.5mm-3mm）</strong>：剛性極強，適合高端禮品盒、首飾盒</li>
-</ul>
-
-<h3>三、表面工藝與裝飾</h3>
-<ol class="list-decimal pl-5 my-3 space-y-1">
-<li><strong>覆膜（Lamination）</strong>：啞膜高檔、光膜鮮豔。能夠保護印刷面，增加耐磨性</li>
-<li><strong>燙金/燙銀</strong>：品牌Logo燙金，即香港行內講「燙個Logo」係提升檔次嘅最快方法</li>
-<li><strong>UV局部上光</strong>：突出重點圖案，常見於化妝品盒同酒盒</li>
-<li><strong>凹凸壓紋</strong>：無油墨立體效果，適合簡約高端設計</li>
-<li><strong>絲帶/磁吸扣</strong>：功能性裝飾，增加開盒體驗</li>
-</ol>
-
-<h3>四、選購建議</h3>
-<div class="bg-blue-50 rounded-lg p-5 my-4">
-<p class="font-semibold text-blue-800 mb-2">智印雲選購建議</p>
-<ul class="list-disc pl-5 space-y-1 text-blue-900">
-<li><strong>電商發貨</strong>：選E坑瓦楞飛機盒，輕便且保護性好</li>
-<li><strong>化妝品/護膚品</strong>：選白卡紙摺疊盒+燙金Logo，精美且省空間</li>
-<li><strong>高端禮品</strong>：選灰板天地蓋盒+絲帶，開盒儀式感強</li>
-<li><strong>食品包裝</strong>：選食品級白卡紙+覆膜，安全衛生</li>
-</ul>
-</div>
-
-<h3>五、常見問題</h3>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3">
-<p><strong>Q: 包裝盒最低訂幾多個？</strong><br/>A: 摺疊盒最低500個起，硬盒（天地蓋）最低300個起。即香港印刷廠一般開模費固定，量越多單價越低。</p>
-<p><strong>Q: 包裝盒設計要預留邊位嗎？</strong><br/>A: 摺盒需要預留粘口位（一般15-20mm），設計稿需要包含刀模圖。智印雲提供免費刀模設計服務。</p>
-<p><strong>Q: 包裝盒交貨要幾耐？</strong><br/>A: 標準摺疊盒7-10個工作日，硬盒10-15個工作日。急件可加快至5-7個工作日。</p>
-</div>
-
-<p>無論您需要<a href="/product/gift-boxes/">禮品盒</a>、<a href="/product/mailer-boxes/">快遞盒</a>定係<a href="/product/cosmetic-boxes/">化妝品盒</a>，智印雲都能提供專業建議和優質印刷。立即<a href="/quote/">獲取報價</a>！</p>`,
-      en: `<p>Packaging is your product's silent salesman. This guide covers box styles, materials, and finishes for custom packaging in Hong Kong.</p>
-<h3>Box Style Comparison</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Style</th><th class="border p-2 text-left">Structure</th><th class="border p-2 text-left">Best For</th><th class="border p-2 text-left">Features</th></tr></thead><tbody>
-<tr><td class="border p-2">Lid & Base</td><td class="border p-2">Separate lid and box</td><td class="border p-2">Phones, jewelry, gifts</td><td class="border p-2">Premium unboxing feel</td></tr>
-<tr><td class="border p-2">Mailer Box</td><td class="border p-2">One-piece foldable</td><td class="border p-2">E-commerce, shipping</td><td class="border p-2">Low cost, quick assembly</td></tr>
-<tr><td class="border p-2">Folding Box</td><td class="border p-2">Flat-fold assembly</td><td class="border p-2">Cosmetics, food</td><td class="border p-2">Saves storage space</td></tr>
-<tr><td class="border p-2">Drawer Box</td><td class="border p-2">Slide-out opening</td><td class="border p-2">Tea, premium items</td><td class="border p-2">Layered, mysterious feel</td></tr>
-</tbody></table>
-<h3>Material Options</h3>
-<ul class="list-disc pl-5 my-3 space-y-2">
-<li><strong>White card (350-400g)</strong>: Smooth surface, excellent print quality</li>
-<li><strong>Kraft paper (250-350g)</strong>: Eco-friendly, vintage style</li>
-<li><strong>Corrugated (E/B-flute)</strong>: Strong protection for shipping</li>
-<li><strong>Greyboard (1.5-3mm)</strong>: Rigid, ideal for luxury gift boxes</li>
-</ul>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3">
-<p><strong>Q: What is the minimum order?</strong><br/>A: Folding boxes from 500pcs, rigid boxes from 300pcs.</p>
-<p><strong>Q: How long does production take?</strong><br/>A: Standard folding boxes 7-10 days, rigid boxes 10-15 days.</p>
-</div>
-<p>Order <a href="/en/product/gift-boxes/">gift boxes</a> or <a href="/en/product/mailer-boxes/">mailer boxes</a> today. <a href="/en/quote/">Get a quote</a>!</p>`,
-      ja: `<p>パッケージは製品の「無口なセールスマン」です。このガイドで箱型、材質、加工について解説します。</p>
-<h3>箱型比較</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">箱型</th><th class="border p-2 text-left">構造</th><th class="border p-2 text-left">おすすめ</th><th class="border p-2 text-left">特徴</th></tr></thead><tbody>
-<tr><td class="border p-2">天地蓋</td><td class="border p-2">蓋と箱が分離</td><td class="border p-2">スマホ、アクセサリー</td><td class="border p-2">高級な開封感</td></tr>
-<tr><td class="border p-2">メーラーボックス</td><td class="border p-2">ワンピース折りたたみ</td><td class="border p-2">EC、配送用</td><td class="border p-2">低コスト、組立簡単</td></tr>
-<tr><td class="border p-2">組み立て箱</td><td class="border p-2">平置き折りたたみ</td><td class="border p-2">化粧品、食品</td><td class="border p-2">保管スペース節約</td></tr>
-</tbody></table>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3">
-<p><strong>Q: 最小注文数は？</strong><br/>A: 組み立て箱は500個から、化粧箱は300個から。</p>
-<p><strong>Q: 納期はどのくらい？</strong><br/>A: 標準組み立て箱7〜10日、化粧箱10〜15日。</p>
-</div>
-<p><a href="/ja/product/gift-boxes/">ギフトボックス</a>や<a href="/ja/product/mailer-boxes/">メーラーボックス</a>を今すぐ注文。<a href="/ja/quote/">見積もり</a>を取得！</p>`,
-    },
+      'zh-hk': `<p>包裝盒定製是品牌升級的重要環節。面對琳瑯滿目的盒型、材質和工藝選擇，企業主常感到困惑。本文從盒型分類、材質選擇、表面工藝、應用場景、印刷工藝、選購決策 6 個維度為您系統拆解香港包裝盒定製選購全攻略。</p>
+<h3>一、常見盒型分類</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">盒型</th><th class="border p-2 text-left">特點</th><th class="border p-2 text-left">典型應用</th></tr></thead><tbody><tr><td class="border p-2">天地蓋盒</td><td class="border p-2">上下分開，高端禮品常用</td><td class="border p-2">高檔禮品、首飾</td></tr><tr><td class="border p-2">書型盒</td><td class="border p-2">翻蓋式，像書本打開</td><td class="border p-2">高端品牌、收藏品</td></tr><tr><td class="border p-2">抽屜盒</td><td class="border p-2">抽拉式設計，神秘感</td><td class="border p-2">珠寶、限量版</td></tr><tr><td class="border p-2">翻蓋盒</td><td class="border p-2">單蓋板開啟，簡潔</td><td class="border p-2">電子產品、文具</td></tr><tr><td class="border p-2">開窗盒</td><td class="border p-2">盒子有透明窗</td><td class="border p-2">食品、化妝品展示</td></tr><tr><td class="border p-2">普通摺盒</td><td class="border p-2">瓦楞紙 / 卡紙摺成</td><td class="border p-2">快遞盒、外賣盒</td></tr></tbody></table>
+<h3>二、材質選擇詳解</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>白卡紙 250-400g</strong>：白色挺度高，適合作畫冊型、禮品盒</li><li><strong>灰板裱紙</strong>：灰芯紙 + 表面裱印刷紙，結構穩固</li><li><strong>瓦楞紙 3-7 層</strong>：緩衝性佳，適合快遞盒、運輸包裝</li><li><strong>特種紙裱盒</strong>：珠光紙、棉絮紙裱面，高端禮品盒首選</li><li><strong>牛皮紙</strong>：環保復古風，常用於禮品盒外層</li><li><strong>PET / PP 膠片</strong>：透明 / 半透明，視窗盒、開窗盒</li></ul>
+<h3>三、表面處理工藝</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>光膠 / 啞膠</strong>：最基礎的表面保護，提升觸感與耐用度</li><li><strong>UV 局部上光</strong>：突出 Logo、圖案，增加視覺層次</li><li><strong>燙金 / 燙銀</strong>：金屬光澤，提升品牌奢華感</li><li><strong>擊凸 / 壓凹</strong>：無油墨立體壓紋，極簡設計首選</li><li><strong>絲網印刷 UV</strong>：厚油墨層，觸感強烈</li></ol>
+<h3>四、應用場景與盒型對應</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">行業</th><th class="border p-2 text-left">推薦盒型</th><th class="border p-2 text-left">材質組合</th></tr></thead><tbody><tr><td class="border p-2">化妝品</td><td class="border p-2">天地蓋盒 / 開窗盒</td><td class="border p-2">白卡 + 燙金</td></tr><tr><td class="border p-2">首飾 / 珠寶</td><td class="border p-2">書型盒 / 抽屜盒</td><td class="border p-2">特種紙 + 絨布內襯</td></tr><tr><td class="border p-2">食品</td><td class="border p-2">開窗盒 / 普通摺盒</td><td class="border p-2">食品級白卡 + 淋膜</td></tr><tr><td class="border p-2">電子產品</td><td class="border p-2">書型盒 / 翻蓋盒</td><td class="border p-2">EVA 內襯 + 燙金</td></tr><tr><td class="border p-2">服飾</td><td class="border p-2">普通摺盒 / 抽屜盒</td><td class="border p-2">銅版紙 + 啞膠</td></tr><tr><td class="border p-2">禮品 / 紀念品</td><td class="border p-2">天地蓋盒 + 燙金</td><td class="border p-2">特種紙裱 + 手挽</td></tr></tbody></table>
+<h3>五、印刷工藝選擇</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>四色印刷（CMYK）</strong>：照片類設計、複雜漸變</li><li><strong>專色印刷（Pantone）</strong>：品牌標準色、金屬色、螢光色</li><li><strong>數碼印刷</strong>：小批量（100-500 個）、個性化</li><li><strong>柔版印刷</strong>：大批量（1000+ 個）、成本低</li><li><strong>絲網印刷</strong>：厚油墨、強立體感</li></ul>
+<h3>六、常見問題</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：包裝盒最少訂幾多個？</strong><br/>A：100 個起。禮品盒標準起訂量。</p><p><strong>Q：有無提供設計服務？</strong><br/>A：提供，HK$800/款起，含 3D 模擬圖。</p><p><strong>Q：環保盒材質有咩選擇？</strong><br/>A：FSC 認證紙板 + 大豆油墨 + PLA 淋膜。</p><p><strong>Q：可以製作特殊形狀嗎？</strong><br/>A：可以，異形模切按客戶要求訂製。</p></div>
+<p>想了解更多包裝盒定製？立即 <a href="https://wa.me/8618126380255" target="_blank">WhatsApp 聯絡智印雲</a> 獲取報價！</p>`,
+      'en': `<p>Custom packaging is critical for brand upgrades. With diverse box types, materials, and finishes, business owners often feel confused. This article systematically breaks down HK custom packaging selection across 6 dimensions: box types, materials, finishes, applications, printing processes, and decision framework.</p>
+<h3>1. Common Box Type Categories</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Box Type</th><th class="border p-2 text-left">Features</th><th class="border p-2 text-left">Typical Use</th></tr></thead><tbody><tr><td class="border p-2">Telescope Box</td><td class="border p-2">Top + bottom separated, premium gifts</td><td class="border p-2">Premium gifts, jewelry</td></tr><tr><td class="border p-2">Book Box</td><td class="border p-2">Opens like a book, flip cover</td><td class="border p-2">Premium brands, collectibles</td></tr><tr><td class="border p-2">Drawer Box</td><td class="border p-2">Pull-out design, mysterious</td><td class="border p-2">Jewelry, limited editions</td></tr><tr><td class="border p-2">Flip Cover</td><td class="border p-2">Single flap opening, clean</td><td class="border p-2">Electronics, stationery</td></tr><tr><td class="border p-2">Window Box</td><td class="border p-2">Transparent window</td><td class="border p-2">Food, cosmetics display</td></tr><tr><td class="border p-2">Standard Folding</td><td class="border p-2">Corrugated / card folded</td><td class="border p-2">Shipping, takeaway</td></tr></tbody></table>
+<h3>2. Material Selection</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>White Card 250-400g</strong>: White stiffness, ideal for book-style and gift boxes</li><li><strong>Grey Board Laminated</strong>: Grey core + surface laminated, sturdy structure</li><li><strong>Corrugated 3-7 layer</strong>: Good cushioning, ideal for shipping and transport</li><li><strong>Specialty Paper Laminated</strong>: Pearl, cotton-paper laminated surface, premium gift boxes</li><li><strong>Kraft Paper</strong>: Eco vintage, common for gift box outer layer</li><li><strong>PET / PP Film</strong>: Transparent / semi-transparent, window boxes</li></ul>
+<h3>3. Surface Finishes</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>Glossy / Matte Lamination</strong>: Basic protection, tactile and durability boost</li><li><strong>Spot UV</strong>: Highlight logo and design, visual depth</li><li><strong>Foil Stamping (Gold/Silver)</strong>: Metallic shine, luxury feel</li><li><strong>Embossing / Debossing</strong>: Inkless dimensional relief, minimalist favorite</li><li><strong>Screen Print UV</strong>: Thick ink layer, strong tactile</li></ol>
+<h3>4. Application & Box Type Mapping</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Industry</th><th class="border p-2 text-left">Recommended Box</th><th class="border p-2 text-left">Material Combo</th></tr></thead><tbody><tr><td class="border p-2">Cosmetics</td><td class="border p-2">Telescope / window box</td><td class="border p-2">White card + foil</td></tr><tr><td class="border p-2">Jewelry</td><td class="border p-2">Book / drawer box</td><td class="border p-2">Specialty + velvet interior</td></tr><tr><td class="border p-2">Food</td><td class="border p-2">Window / standard fold</td><td class="border p-2">Food-grade white card + lamination</td></tr><tr><td class="border p-2">Electronics</td><td class="border p-2">Book / flip cover</td><td class="border p-2">EVA interior + foil</td></tr><tr><td class="border p-2">Apparel</td><td class="border p-2">Standard fold / drawer</td><td class="border p-2">Art paper + matte</td></tr><tr><td class="border p-2">Gift / Souvenir</td><td class="border p-2">Telescope + foil</td><td class="border p-2">Specialty laminated + handle</td></tr></tbody></table>
+<h3>5. Printing Process Options</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>4-color (CMYK)</strong>: Photo designs, complex gradients</li><li><strong>Spot Color (Pantone)</strong>: Brand standard, metallic, fluorescent</li><li><strong>Digital Print</strong>: Small batch (100-500), personalized</li><li><strong>Flexo Print</strong>: Large batch (1000+), low cost</li><li><strong>Screen Print</strong>: Thick ink, strong dimensional feel</li></ul>
+<h3>6. Frequently Asked Questions</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：What is the MOQ for packaging boxes?</strong><br/>A：100 pieces for standard gift boxes.</p><p><strong>Q：Do you offer design services?</strong><br/>A：Yes — from US$100/design, includes 3D mockup.</p><p><strong>Q：What eco-box materials are available?</strong><br/>A：FSC card + soy ink + PLA lamination.</p><p><strong>Q：Can you produce custom shapes?</strong><br/>A：Yes — custom die-cut available; tooling fee applies.</p></div>
+<p>Want more on custom packaging? Contact <a href="https://wa.me/8618126380255" target="_blank">ZprintPro via WhatsApp</a> for a quote!</p>`,
+      'ja': `<p>パッケージボックスカスタムはブランドアップグレードの重要な環節。多様な箱型、材質、加工の選択に、企業主は困惑することも。本記事は箱型分類、材質選択、表面加工、応用、印刷工程、選定意思決定の 6 つの側面から香港パッケージボックスカスタムを体系的に整理します。</p>
+<h3>一、主な箱型分類</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">箱型</th><th class="border p-2 text-left">特徴</th><th class="border p-2 text-left">典型用途</th></tr></thead><tbody><tr><td class="border p-2">天地箱</td><td class="border p-2">上下分離、高級ギフト定番</td><td class="border p-2">高級ギフト、宝石</td></tr><tr><td class="border p-2">ブック型箱</td><td class="border p-2">蓋付き、本のように開く</td><td class="border p-2">高級ブランド、コレクション</td></tr><tr><td class="border p-2">引き出し箱</td><td class="border p-2">引き出し式、神秘的</td><td class="border p-2">宝石、リミテッド</td></tr><tr><td class="border p-2">フラップカバー</td><td class="border p-2">単蓋、シンプル</td><td class="border p-2">電子機器、文具</td></tr><tr><td class="border p-2">窓付き箱</td><td class="border p-2">透明窓付き</td><td class="border p-2">食品、化粧品展示</td></tr><tr><td class="border p-2">標準組立箱</td><td class="border p-2">段ボール / カード組立</td><td class="border p-2">配送、テイクアウト</td></tr></tbody></table>
+<h3>二、材質選択詳細</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>白カード 250-400g</strong>：白で腰強い、ブック型・ギフトボックス向き</li><li><strong>灰板ラミネート</strong>：灰芯 + 表面ラミネート、構造しっかり</li><li><strong>段ボール 3-7 層</strong>：緩衝性よし、輸送包装向き</li><li><strong>特殊紙ラミネート箱</strong>：パール、コットン紙ラミネート、高級ギフトボックス定番</li><li><strong>クラフト紙</strong>：エコレトロ、ギフトボックス外層に多い</li><li><strong>PET / PP フィルム</strong>：透明 / 半透明、窓付き箱</li></ul>
+<h3>三、表面加工</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>光沢 / マットラミネート</strong>：基本保護、触感・耐久性向上</li><li><strong>スポット UV</strong>：ロゴ・図案強調、視覚階層</li><li><strong>箔押し（金 / 銀）</strong>：金属光沢、高級感向上</li><li><strong>エンボス / デボス</strong>：インクなし立体圧痕、ミニマルデザイン向き</li><li><strong>シルク印刷 UV</strong>：厚インキ、強い触感</li></ol>
+<h3>四、応用シーンと箱型対応</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">業界</th><th class="border p-2 text-left">推奨箱型</th><th class="border p-2 text-left">材質組合せ</th></tr></thead><tbody><tr><td class="border p-2">化粧品</td><td class="border p-2">天地箱 / 窓付箱</td><td class="border p-2">白カード + 箔</td></tr><tr><td class="border p-2">宝石</td><td class="border p-2">ブック型 / 引き出し箱</td><td class="border p-2">特殊紙 + ベルベット内装</td></tr><tr><td class="border p-2">食品</td><td class="border p-2">窓付 / 標準組立</td><td class="border p-2">食品対応白カード + ラミネート</td></tr><tr><td class="border p-2">電子機器</td><td class="border p-2">ブック型 / フラップカバー</td><td class="border p-2">EVA 内装 + 箔</td></tr><tr><td class="border p-2">アパレル</td><td class="border p-2">標準組立 / 引き出し</td><td class="border p-2">アート紙 + マット</td></tr><tr><td class="border p-2">ギフト / 記念品</td><td class="border p-2">天地箱 + 箔</td><td class="border p-2">特殊紙ラミネート + 持ち手</td></tr></tbody></table>
+<h3>五、印刷工程の選択</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>4 色印刷（CMYK）</strong>：写真系デザイン、複雑なグラデーション</li><li><strong>特色印刷（Pantone）</strong>：ブランド標準色、メタリック、蛍光</li><li><strong>デジタル印刷</strong>：小ロット（100-500 個）、個別性</li><li><strong>フレキソ印刷</strong>：大ロット（1000+ 個）、低コスト</li><li><strong>シルク印刷</strong>：厚インキ、強い立体感</li></ul>
+<h3>六、よくある質問</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：パッケージボックスの最小注文数量は？</strong><br/>A：標準ギフトボックスは 100 個から。</p><p><strong>Q：デザインサービスはありますか？</strong><br/>A：はい。HK$800/デザインから、3D モックアップを含む。</p><p><strong>Q：エコボックス素材は？</strong><br/>A：FSC 認証カード + 大豆インキ + PLA ラミネート。</p><p><strong>Q：特注形状は作れますか？</strong><br/>A：はい。特注トムソン抜き対応、型代が発生します。</p></div>
+<p>パッケージボックスカスタムをもっと知りたい？今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 見積もり！</p>`
+    ,
   },
   // ========== POSTERS ==========
   {
@@ -483,89 +312,49 @@ export const buyingGuides: BuyingGuide[] = [
     date: '2025-01-15',
     relatedProducts: ['a2-posters', 'a1-posters', 'outdoor-posters', 'display-posters', 'art-posters', 'adhesive-posters'],
     content: {
-      'zh-hk': `<p>海報係視覺傳播中最直接、最有衝擊力嘅媒介之一。即香港廣告行內講，「一張好海報要隔十米都睇到」。無論係店內裝飾、活動宣傳、展覽展示定係戶外廣告，選對海報規格都能夠大幅提升視覺效果。本文從尺寸、紙質、用途三個維度，為您拆解海報印刷的選購要點。</p>
-
-<h3>一、海報尺寸對比</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">尺寸</th><th class="border p-2 text-left">規格</th><th class="border p-2 text-left">適用場景</th><th class="border p-2 text-left">觀看距離</th></tr></thead><tbody>
-<tr><td class="border p-2">A3</td><td class="border p-2">297x420mm</td><td class="border p-2">店內公告、小型活動</td><td class="border p-2">1-2米</td></tr>
-<tr><td class="border p-2">A2</td><td class="border p-2">420x594mm</td><td class="border p-2">餐廳菜單、促銷海報</td><td class="border p-2">2-5米</td></tr>
-<tr><td class="border p-2">A1</td><td class="border p-2">594x841mm</td><td class="border p-2">展覽、舞台背景</td><td class="border p-2">5-10米</td></tr>
-<tr><td class="border p-2">A0</td><td class="border p-2">841x1189mm</td><td class="border p-2">大型活動、戶外廣告</td><td class="border p-2">10米以上</td></tr>
-<tr><td class="border p-2">自定義</td><td class="border p-2">任意尺寸</td><td class="border p-2">特殊展示空間</td><td class="border p-2">視情況</td></tr>
-</tbody></table>
-
-<h3>二、海報紙質選擇</h3>
-<p>即香港海報印刷廠常用嘅紙質包括：</p>
-<ul class="list-disc pl-5 my-3 space-y-2">
-<li><strong>157g銅版紙</strong>：標準海報紙，色彩鮮豔，成本低。適合室內短期展示</li>
-<li><strong>200g-250g銅版紙</strong>：厚實挺括，不易捲曲。適合長期展示和高檔活動</li>
-<li><strong>PP合成紙</strong>：防水防撕，可重複使用。適合戶外海報和潮濕環境</li>
-<li><strong>背膠PP</strong>：自帶背膠，可直接粘貼。適合櫥窗、玻璃、牆面</li>
-<li><strong>燈片（Backlit Film）</strong>：透光性好，適合燈箱和LED展示</li>
-<li><strong>油畫布</strong>：藝術質感，適合藝術展覽和高檔裝飾</li>
-</ul>
-
-<h3>三、海報表面處理</h3>
-<ol class="list-decimal pl-5 my-3 space-y-1">
-<li><strong>光膜（Glossy）</strong>：色彩飽和度高，反光效果強。適合鮮豔的商業海報</li>
-<li><strong>啞膜（Matte）</strong>：不反光，觀看舒適。適合藝術海報和長時間閱讀</li>
-<li><strong>無處理</strong>：最經濟，適合短期一次性使用</li>
-</ol>
-
-<h3>四、選購建議</h3>
-<div class="bg-blue-50 rounded-lg p-5 my-4">
-<p class="font-semibold text-blue-800 mb-2">智印雲選購建議</p>
-<ul class="list-disc pl-5 space-y-1 text-blue-900">
-<li><strong>店內裝飾</strong>：選A2+157g銅版紙+啞膜，美觀且經濟</li>
-<li><strong>戶外廣告</strong>：選A1+PP合成紙，防水防曬</li>
-<li><strong>展覽展示</strong>：選A1+250g厚紙+啞膜，專業感強</li>
-<li><strong>藝術作品</strong>：選油畫布或藝術紙，質感獨特</li>
-<li><strong>櫥窗貼紙</strong>：選背膠PP，即貼即用</li>
-</ul>
-</div>
-
-<h3>五、常見問題</h3>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3">
-<p><strong>Q: 海報最少印幾多張？</strong><br/>A: 智印雲海報最低10張起印。即香港行內，海報係少批量高頻次嘅印刷品。</p>
-<p><strong>Q: 戶外海報可以維持幾耐？</strong><br/>A: PP合成紙戶外海報可以維持3-6個月（視乎日照和風雨情況）。長期戶外展示建議選用戶外專用墨水。</p>
-<p><strong>Q: 海報設計有咩要留意？</strong><br/>A: 標題字體要大（建議最小36pt），圖片分辨率150dpi（大尺寸海報可接受72-100dpi），色彩用CMYK。</p>
-</div>
-
-<p>無論您需要<a href="/product/a1-posters/">A1海報</a>、<a href="/product/outdoor-posters/">戶外海報</a>定係<a href="/product/art-posters/">藝術海報</a>，智印雲都能提供專業建議和優質印刷。立即<a href="/quote/">獲取報價</a>！</p>`,
-      en: `<p>Posters are one of the most direct and impactful visual communication media. This guide covers sizes, paper types, and applications for poster printing in Hong Kong.</p>
-<h3>Poster Size Comparison</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Size</th><th class="border p-2 text-left">Dimensions</th><th class="border p-2 text-left">Best For</th><th class="border p-2 text-left">Viewing Distance</th></tr></thead><tbody>
-<tr><td class="border p-2">A3</td><td class="border p-2">297x420mm</td><td class="border p-2">Store notices, small events</td><td class="border p-2">1-2m</td></tr>
-<tr><td class="border p-2">A2</td><td class="border p-2">420x594mm</td><td class="border p-2">Restaurant menus, promotions</td><td class="border p-2">2-5m</td></tr>
-<tr><td class="border p-2">A1</td><td class="border p-2">594x841mm</td><td class="border p-2">Exhibitions, stage backdrops</td><td class="border p-2">5-10m</td></tr>
-<tr><td class="border p-2">A0</td><td class="border p-2">841x1189mm</td><td class="border p-2">Large events, outdoor ads</td><td class="border p-2">10m+</td></tr>
-</tbody></table>
-<h3>Paper Options</h3>
-<ul class="list-disc pl-5 my-3 space-y-2">
-<li><strong>157g art paper</strong>: Standard poster paper, vibrant colors, low cost</li>
-<li><strong>200g-250g art paper</strong>: Thick, won't curl, ideal for long-term display</li>
-<li><strong>PP synthetic</strong>: Waterproof, tear-resistant, reusable</li>
-<li><strong>Adhesive PP</strong>: Self-adhesive, stick directly to surfaces</li>
-<li><strong>Canvas</strong>: Artistic texture for exhibitions and decor</li>
-</ul>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3">
-<p><strong>Q: What is the minimum order?</strong><br/>A: Posters from 10 pieces minimum.</p>
-<p><strong>Q: How long do outdoor posters last?</strong><br/>A: PP synthetic posters last 3-6 months outdoors.</p>
-</div>
-<p>Order <a href="/en/product/a1-posters/">A1 posters</a> or <a href="/en/product/outdoor-posters/">outdoor posters</a> today. <a href="/en/quote/">Get a quote</a>!</p>`,
-      ja: `<p>ポスターは視覚伝達において最も直接的でインパクトのある媒体です。このガイドでサイズ、用紙、用途について解説します。</p>
-<h3>ポスターサイズ</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">サイズ</th><th class="border p-2 text-left">寸法</th><th class="border p-2 text-left">おすすめ</th><th class="border p-2 text-left">視認距離</th></tr></thead><tbody>
-<tr><td class="border p-2">A3</td><td class="border p-2">297x420mm</td><td class="border p-2">店内告知、小規模イベント</td><td class="border p-2">1-2m</td></tr>
-<tr><td class="border p-2">A2</td><td class="border p-2">420x594mm</td><td class="border p-2">レストランメニュー、プロモーション</td><td class="border p-2">2-5m</td></tr>
-<tr><td class="border p-2">A1</td><td class="border p-2">594x841mm</td><td class="border p-2">展示会、舞台背景</td><td class="border p-2">5-10m</td></tr>
-</tbody></table>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3">
-<p><strong>Q: 最小注文数は？</strong><br/>A: ポスターは10枚から。</p>
-<p><strong>Q: 屋外ポスターはどのくらい持ちますか？</strong><br/>A: PP合成紙の屋外ポスターは3〜6ヶ月持ちます。</p>
-</div>
-<p><a href="/ja/product/a1-posters/">A1ポスター</a>や<a href="/ja/product/outdoor-posters/">屋外ポスター</a>を今すぐ注文。<a href="/ja/quote/">見積もり</a>を取得！</p>`,
-    },
+      'zh-hk': `<p>海報是品牌傳播中最具視覺衝擊力的印刷品之一。無論是商場促銷、新產品發布、品牌形象展示，還是文化藝術展覽，一張高品質的印刷海報都能在瞬間抓住受眾注意力。本文從尺寸、紙質、表面工藝、設計要點、加工方案、選購決策 6 個維度為您系統拆解香港海報印刷選購全攻略。</p>
+<h3>一、海報常見尺寸對比</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">尺寸</th><th class="border p-2 text-left">適用場景</th><th class="border p-2 text-left">單價範圍</th></tr></thead><tbody><tr><td class="border p-2">A3（297 × 420mm）</td><td class="border p-2">商場櫥窗、餐廳內展示</td><td class="border p-2">HK$8-15</td></tr><tr><td class="border p-2">A2（420 × 594mm）</td><td class="border p-2">地鐵站內、電梯廣告</td><td class="border p-2">HK$15-30</td></tr><tr><td class="border p-2">A1（594 × 841mm）</td><td class="border p-2">品牌形象牆、展覽會場</td><td class="border p-2">HK$30-60</td></tr><tr><td class="border p-2">A0（841 × 1189mm）</td><td class="border p-2">大型活動、戶外廣告</td><td class="border p-2">HK$60-120</td></tr><tr><td class="border p-2">B2（500 × 707mm）</td><td class="border p-2">酒樓菜牌、展會背景板</td><td class="border p-2">HK$20-40</td></tr></tbody></table>
+<h3>二、紙質選擇指南</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>157g 銅版紙</strong>：最經濟，色彩還原度高，適合大部分室內海報</li><li><strong>200g 銅版紙</strong>：挺度更好，雙面印刷不穿底，適合高檔海報</li><li><strong>250g 銅版紙</strong>：接近咭片厚度，質感強烈，適合品牌形象海報</li><li><strong>PP 膠片（啞面/光面）</strong>：防水、耐用，適合長期展示或戶外使用</li><li><strong>油畫布</strong>：紋理質感，適合藝術展覽、畫廊</li><li><strong>防水相紙</strong>：高光澤、高飽和度，適合寫真類海報</li></ul>
+<h3>三、海報表面處理工藝</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>啞膠 / 光膠過膠</strong>：延長使用壽命、防水防污，適合長期展示</li><li><strong>UV 局部光油</strong>：局部高光效果，凸顯品牌 Logo 或主視覺</li><li><strong>燙金 / 燙銀</strong>：金屬質感，適合高檔品牌形象海報</li><li><strong>擊凸</strong>：立體觸感，增加視覺層次與檔次感</li></ol>
+<h3>四、設計要點</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">設計要素</th><th class="border p-2 text-left">標準</th><th class="border p-2 text-left">注意</th></tr></thead><tbody><tr><td class="border p-2">解像度</td><td class="border p-2">A3 用 300dpi，A0 以上可用 150dpi</td><td class="border p-2">遠距離觀看可降解析度</td></tr><tr><td class="border p-2">出血</td><td class="border p-2">四周保留至少 3mm</td><td class="border p-2">避免裁切後留白邊</td></tr><tr><td class="border p-2">安全區域</td><td class="border p-2">重要文字 / Logo 距邊至少 5mm</td><td class="border p-2">不要被裁切破壞</td></tr><tr><td class="border p-2">色彩</td><td class="border p-2">CMYK 模式</td><td class="border p-2">不要用 RGB 印刷</td></tr><tr><td class="border p-2">字體</td><td class="border p-2">最小可讀字號 12pt (A3)</td><td class="border p-2">戶外海報需更大字</td></tr></tbody></table>
+<h3>五、加工方案與展示</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>易拉架 / X 展架</strong>：展會必備，可重複使用</li><li><strong>畫框 / 木框</strong>：畫廊、辦公室裝飾</li><li><strong>磁吸貼 / 背膠</strong>：光滑牆面直接貼</li><li><strong>圓筒包裝</strong>：便於運輸、不易折損</li><li><strong>裁切 + 摺痕</strong>：便於手提攜帶派發</li></ul>
+<h3>六、常見問題</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：A3 和 A0 海報價差幾多？</strong><br/>A：A3 約 HK$8-15，A0 約 HK$60-120。差價主要來自紙張成本。</p><p><strong>Q：PP 膠片 vs 銅版紙？</strong><br/>A：PP 防水耐用適合戶外，銅版紙經濟適合室內。</p><p><strong>Q：需要什麼文件格式？</strong><br/>A：AI / PDF 矢量檔 + 300dpi + CMYK。A0 以上可用 150dpi。</p><p><strong>Q：可以加易拉架嗎？</strong><br/>A：可以，智印雲提供海報 + 易拉架配套方案。</p></div>
+<p>想了解更多海報印刷？立即 <a href="https://wa.me/8618126380255" target="_blank">WhatsApp 聯絡智印雲</a> 獲取報價與設計建議！</p>`,
+      'en': `<p>Posters are among the most visually impactful printed items for brand communication. From mall promotions and product launches to brand image campaigns and cultural art exhibitions, a high-quality printed poster captures audience attention instantly. This article systematically breaks down HK poster printing selection across 6 dimensions: size, paper, finish, design tips, processing options, and decision framework.</p>
+<h3>1. Common Poster Sizes Comparison</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Size</th><th class="border p-2 text-left">Best For</th><th class="border p-2 text-left">Price Range</th></tr></thead><tbody><tr><td class="border p-2">A3 (297 × 420mm)</td><td class="border p-2">Mall windows, restaurant interior</td><td class="border p-2">US$1-2</td></tr><tr><td class="border p-2">A2 (420 × 594mm)</td><td class="border p-2">MTR station, elevator ads</td><td class="border p-2">US$2-4</td></tr><tr><td class="border p-2">A1 (594 × 841mm)</td><td class="border p-2">Brand wall, exhibition</td><td class="border p-2">US$4-8</td></tr><tr><td class="border p-2">A0 (841 × 1189mm)</td><td class="border p-2">Large events, outdoor</td><td class="border p-2">US$8-15</td></tr><tr><td class="border p-2">B2 (500 × 707mm)</td><td class="border p-2">Restaurant menus, exhibition backdrops</td><td class="border p-2">US$2.5-5</td></tr></tbody></table>
+<h3>2. Paper Selection Guide</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>157g Art Paper</strong>: Most economical, vivid color reproduction, suitable for most indoor posters</li><li><strong>200g Art Paper</strong>: Better stiffness, no show-through, premium posters</li><li><strong>250g Art Paper</strong>: Near card thickness, strong tactile, brand image posters</li><li><strong>PP Film (matte/gloss)</strong>: Waterproof, durable, suitable for long-term display or outdoor</li><li><strong>Canvas</strong>: Textured, ideal for art exhibitions</li><li><strong>Waterproof Photo Paper</strong>: High gloss, saturation, photo-style posters</li></ul>
+<h3>3. Surface Finishes</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>Matte / Glossy Lamination</strong>: Extended lifespan, waterproof, suitable for long display</li><li><strong>Spot UV</strong>: Localized highlight, elevate logo or main visual</li><li><strong>Foil Stamping (Gold/Silver)</strong>: Metallic feel, suitable for premium brand posters</li><li><strong>Embossing</strong>: Dimensional tactile, add visual layer</li></ol>
+<h3>4. Design Tips</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Element</th><th class="border p-2 text-left">Standard</th><th class="border p-2 text-left">Note</th></tr></thead><tbody><tr><td class="border p-2">Resolution</td><td class="border p-2">300dpi for A3, 150dpi for A0+</td><td class="border p-2">Distant viewing can lower resolution</td></tr><tr><td class="border p-2">Bleed</td><td class="border p-2">Min 3mm all sides</td><td class="border p-2">Avoid white edge after cutting</td></tr><tr><td class="border p-2">Safe Zone</td><td class="border p-2">Important text/logos 5mm from edge</td><td class="border p-2">Don't get cut</td></tr><tr><td class="border p-2">Color</td><td class="border p-2">CMYK mode</td><td class="border p-2">Don't print RGB</td></tr><tr><td class="border p-2">Font</td><td class="border p-2">Min readable 12pt for A3</td><td class="border p-2">Outdoor posters need larger font</td></tr></tbody></table>
+<h3>5. Processing & Display</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Roll-up / X-stand</strong>: Exhibition essential, reusable</li><li><strong>Picture / Wood Frame</strong>: Gallery, office decor</li><li><strong>Magnetic / Adhesive Back</strong>: Direct stick on smooth wall</li><li><strong>Tube Packaging</strong>: Easy to transport, less prone to damage</li><li><strong>Cut + Fold Lines</strong>: Easy to carry and distribute</li></ul>
+<h3>6. Frequently Asked Questions</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：What's the price difference between A3 and A0?</strong><br/>A：A3 around US$1-2; A0 around US$8-15. Difference mainly from paper cost.</p><p><strong>Q：PP film vs art paper?</strong><br/>A：PP is waterproof/durable for outdoor; art paper is economical for indoor.</p><p><strong>Q：What file format is needed?</strong><br/>A：AI / PDF vector + 300dpi + CMYK. A0+ can use 150dpi.</p><p><strong>Q：Can you provide roll-up stands?</strong><br/>A：Yes, ZprintPro offers poster + roll-up stand bundles.</p></div>
+<p>Want more on poster printing? Contact <a href="https://wa.me/8618126380255" target="_blank">ZprintPro via WhatsApp</a> for a quote and design tips!</p>`,
+      'ja': `<p>ポスターはブランドコミュニケーションの中で最も視覚的インパクトのある印刷物です。商業施設のプロモ、新製品発表、ブランドイメージキャンペーンから文化芸術展まで、高品質な印刷ポスターは一瞬で観客の注意を引きます。本記事はサイズ、用紙、表面加工、デザイン要点、加工方案、選定意思決定の 6 つの側面から香港ポスター印刷選定を体系的に整理します。</p>
+<h3>一、主なポスターサイズ比較</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">サイズ</th><th class="border p-2 text-left">適用シーン</th><th class="border p-2 text-left">単価</th></tr></thead><tbody><tr><td class="border p-2">A3 (297 × 420mm)</td><td class="border p-2">ショッピングモール窓、餐饮店内展示</td><td class="border p-2">HK$8-15</td></tr><tr><td class="border p-2">A2 (420 × 594mm)</td><td class="border p-2">MTR 構内、エレベーター広告</td><td class="border p-2">HK$15-30</td></tr><tr><td class="border p-2">A1 (594 × 841mm)</td><td class="border p-2">ブランドウォール、展示会</td><td class="border p-2">HK$30-60</td></tr><tr><td class="border p-2">A0 (841 × 1189mm)</td><td class="border p-2">大型イベント、屋外</td><td class="border p-2">HK$60-120</td></tr><tr><td class="border p-2">B2 (500 × 707mm)</td><td class="border p-2">レストラン、展示会背景板</td><td class="border p-2">HK$20-40</td></tr></tbody></table>
+<h3>二、用紙選定ガイド</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>157g アート紙</strong>：最安、色彩再現度高、屋内ポスター向き</li><li><strong>200g アート紙</strong>：腰強い、両面透けなし、高級ポスター向き</li><li><strong>250g アート紙</strong>：カード並の厚み、強い触感、ブランドイメージ向き</li><li><strong>PP フィルム（マット/光沢）</strong>：防水、耐久、長期展示 / 屋外向き</li><li><strong>キャンバス</strong>：テクスチャ感、美術館向き</li><li><strong>防水写真紙</strong>：高光沢、高彩度、写真系ポスター向き</li></ul>
+<h3>三、表面加工</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>マット / 光沢ラミネート</strong>：寿命延長、防水防汚、長期展示向き</li><li><strong>スポット UV 光油</strong>：局部ハイライト、ロゴや主視覚を強調</li><li><strong>箔押し（金 / 銀）</strong>：金属感、高級ブランドポスター向き</li><li><strong>エンボス</strong>：立体触感、視覚階層と品質感を向上</li></ol>
+<h3>四、デザイン要点</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">要素</th><th class="border p-2 text-left">基準</th><th class="border p-2 text-left">注意</th></tr></thead><tbody><tr><td class="border p-2">解像度</td><td class="border p-2">A3 は 300dpi、A0 以上は 150dpi</td><td class="border p-2">遠距離視認は解像度下げ可</td></tr><tr><td class="border p-2">ブリード</td><td class="border p-2">4 辺最低 3mm</td><td class="border p-2">裁切後の白縁を避ける</td></tr><tr><td class="border p-2">安全領域</td><td class="border p-2">重要文字 / ロゴは辺から 5mm</td><td class="border p-2">切断破壊を避ける</td></tr><tr><td class="border p-2">色</td><td class="border p-2">CMYK モード</td><td class="border p-2">RGB で印刷しない</td></tr><tr><td class="border p-2">フォント</td><td class="border p-2">最小可読文字サイズ 12pt (A3)</td><td class="border p-2">屋外ポスターはより大きい文字</td></tr></tbody></table>
+<h3>五、加工方案と展示</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>ロールアップ / X スタンド</strong>：展示会必須、繰り返し使用</li><li><strong>額 / 木枠</strong>：美術館、オフィス装飾</li><li><strong>マグネット / 粘着面</strong>：滑らかな壁に直貼り</li><li><strong>筒包装</strong>：輸送便利、折り損なし</li><li><strong>裁切 + 罫線</strong>：携帯・配布便利</li></ul>
+<h3>六、よくある質問</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：A3 と A0 の価格差は？</strong><br/>A：A3 約 HK$8-15、A0 約 HK$60-120。差額の主因は用紙コスト。</p><p><strong>Q：PP フィルム vs アート紙？</strong><br/>A：PP は防水耐久屋外向き、アート紙は経済的屋内向き。</p><p><strong>Q：必要なファイル形式は？</strong><br/>A：AI / PDF ベクター + 300dpi + CMYK。A0 以上は 150dpi 可。</p><p><strong>Q：ロールアップスタンドも頼めますか？</strong><br/>A：はい。智印雲はポスター + スタンドのセットプランを提供。</p></div>
+<p>ポスター印刷をもっと知りたい？今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 見積もり＆デザイン提案！</p>`
+    ,
   },
   // ========== PAPER BAGS ==========
   {
@@ -590,95 +379,49 @@ export const buyingGuides: BuyingGuide[] = [
     date: '2025-01-15',
     relatedProducts: ['kraft-paper-bags', 'white-card-bags', 'gift-bags', 'eco-paper-bags', 'handle-bags', 'small-bags', 'large-bags'],
     content: {
-      'zh-hk': `<p>紙袋係零售業不可或缺嘅品牌觸點。即香港零售行內講，「顧客拎住個紙袋行街，就係幫你打免費廣告」。一個設計精美、質感良好嘅紙袋，不僅能夠承載商品，更能夠傳遞品牌價值。本文從紙質、尺寸、手挽三個維度，為您拆解紙袋印刷的選購要點。</p>
-
-<h3>一、紙袋紙質對比</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">紙質</th><th class="border p-2 text-left">克重</th><th class="border p-2 text-left">特性</th><th class="border p-2 text-left">適合行業</th></tr></thead><tbody>
-<tr><td class="border p-2">牛皮紙</td><td class="border p-2">120-200g</td><td class="border p-2">環保、復古、強度高</td><td class="border p-2">咖啡、烘焙、文創</td></tr>
-<tr><td class="border p-2">白卡紙</td><td class="border p-2">200-300g</td><td class="border p-2">表面光滑、印刷精細</td><td class="border p-2">化妝品、服裝、精品</td></tr>
-<tr><td class="border p-2">特種紙</td><td class="border p-2">150-250g</td><td class="border p-2">獨特紋理、高檔質感</td><td class="border p-2">奢侈品、禮品、藝術</td></tr>
-<tr><td class="border p-2">再生紙</td><td class="border p-2">150-200g</td><td class="border p-2">FSC認證、環保形象</td><td class="border p-2">ESG企業、有機品牌</td></tr>
-</tbody></table>
-
-<h3>二、紙袋尺寸選擇</h3>
-<p>紙袋尺寸要根據裝載物品和行業習慣來選擇：</p>
-<ul class="list-disc pl-5 my-3 space-y-2">
-<li><strong>小型紙袋（150x200x80mm）</strong>：適合首飾、化妝品、小禮品。即香港精品店最常見嘅尺寸</li>
-<li><strong>中型紙袋（250x300x100mm）</strong>：適合服裝、鞋履、一般零售商品。百貨公司標準尺寸</li>
-<li><strong>大型紙袋（350x400x120mm）</strong>：適合外套、禮品套裝、多件商品。節日購物旺季常用</li>
-<li><strong>橫版紙袋（300x220x100mm）</strong>：適合書籍、文件、扁平物品。書店和文具店常用</li>
-</ul>
-
-<h3>三、手挽（提手）種類</h3>
-<p>手挽係紙袋嘅「靈魂」，直接影響使用體驗：</p>
-<ol class="list-decimal pl-5 my-3 space-y-1">
-<li><strong>紙繩手挽</strong>：環保、成本低、承重一般。適合輕量商品，即香港最常見嘅手挽類型</li>
-<li><strong>棉繩手挽</strong>：質感柔軟、手感舒適。適合中高檔品牌</li>
-<li><strong>絲帶手挽</strong>：奢華感強，適合禮品袋和高端零售</li>
-<li><strong>扁紙手挽</strong>：寬版紙質手挽，承重較好。適合書籍和重物</li>
-<li><strong>無手挽（紙袋盒）</strong>：頂部開口式，類似紙盒。適合外賣食品</li>
-</ol>
-
-<h3>四、選購建議</h3>
-<div class="bg-blue-50 rounded-lg p-5 my-4">
-<p class="font-semibold text-blue-800 mb-2">智印雲選購建議</p>
-<ul class="list-disc pl-5 space-y-1 text-blue-900">
-<li><strong>咖啡店/烘焙店</strong>：選牛皮紙袋+紙繩手挽，環保且成本可控</li>
-<li><strong>服裝店/百貨</strong>：選白卡紙袋+棉繩手挽，品牌感強</li>
-<li><strong>化妝品/精品</strong>：選白卡紙袋+絲帶手挽+燙金Logo，奢華感滿分</li>
-<li><strong>環保品牌</strong>：選再生紙袋+紙繩手挽，ESG形象突出</li>
-</ul>
-</div>
-
-<h3>五、常見問題</h3>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3">
-<p><strong>Q: 紙袋最低訂幾多個？</strong><br/>A: 智印雲紙袋最低500個起訂。即香港印刷廠一般開機費固定，量越多單價越低。1000個以上價格明顯優惠。</p>
-<p><strong>Q: 紙袋可以承重幾多？</strong><br/>A: 一般紙袋承重2-5kg。如需承載更重物品，建議選用250g以上厚紙+加固底板。</p>
-<p><strong>Q: 紙袋設計有咩要留意？</strong><br/>A: 印刷區域要避開手挽穿孔位（一般距離袋口3cm），Logo建議放在正中或側面顯眼位置。出血位3mm。</p>
-</div>
-
-<p>無論您需要<a href="/product/kraft-paper-bags/">牛皮紙袋</a>、<a href="/product/white-card-bags/">白卡紙袋</a>定係<a href="/product/gift-bags/">禮品紙袋</a>，智印雲都能提供專業建議和優質印刷。立即<a href="/quote/">獲取報價</a>！</p>`,
-      en: `<p>Paper bags are an essential brand touchpoint in retail. This guide covers materials, sizes, and handle options for paper bag printing in Hong Kong.</p>
-<h3>Paper Bag Material Comparison</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Material</th><th class="border p-2 text-left">Weight</th><th class="border p-2 text-left">Features</th><th class="border p-2 text-left">Best For</th></tr></thead><tbody>
-<tr><td class="border p-2">Kraft Paper</td><td class="border p-2">120-200g</td><td class="border p-2">Eco, vintage, strong</td><td class="border p-2">Coffee, bakery, creative</td></tr>
-<tr><td class="border p-2">White Card</td><td class="border p-2">200-300g</td><td class="border p-2">Smooth, fine print</td><td class="border p-2">Cosmetics, fashion, gifts</td></tr>
-<tr><td class="border p-2">Specialty Paper</td><td class="border p-2">150-250g</td><td class="border p-2">Unique texture, luxury</td><td class="border p-2">Luxury, art, premium</td></tr>
-<tr><td class="border p-2">Recycled</td><td class="border p-2">150-200g</td><td class="border p-2">FSC certified, eco</td><td class="border p-2">ESG brands, organic</td></tr>
-</tbody></table>
-<h3>Handle Options</h3>
-<ul class="list-disc pl-5 my-3 space-y-2">
-<li><strong>Paper rope</strong>: Eco, low cost, standard capacity</li>
-<li><strong>Cotton rope</strong>: Soft, comfortable, premium feel</li>
-<li><strong>Ribbon</strong>: Luxurious, ideal for gift bags</li>
-<li><strong>Flat paper</strong>: Wide, better weight capacity</li>
-</ul>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3">
-<p><strong>Q: What is the minimum order?</strong><br/>A: Paper bags from 500 pieces. Price improves significantly at 1000+.</p>
-<p><strong>Q: How much weight can paper bags hold?</strong><br/>A: Standard bags hold 2-5kg. For heavier items, use 250g+ paper with reinforced base.</p>
-</div>
-<p>Order <a href="/en/product/kraft-paper-bags/">kraft paper bags</a> or <a href="/en/product/gift-bags/">gift bags</a> today. <a href="/en/quote/">Get a quote</a>!</p>`,
-      ja: `<p>紙袋は小売業において欠かせないブランド接点です。このガイドで材質、サイズ、持ち手について解説します。</p>
-<h3>紙袋材質比較</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">材質</th><th class="border p-2 text-left">厚さ</th><th class="border p-2 text-left">特徴</th><th class="border p-2 text-left">おすすめ</th></tr></thead><tbody>
-<tr><td class="border p-2">クラフト紙</td><td class="border p-2">120-200g</td><td class="border p-2">エコ、レトロ、強度高い</td><td class="border p-2">カフェ、ベーカリー</td></tr>
-<tr><td class="border p-2">白卡紙</td><td class="border p-2">200-300g</td><td class="border p-2">表面滑らか、印刷綺麗</td><td class="border p-2">化粧品、ファッション</td></tr>
-<tr><td class="border p-2">特殊紙</td><td class="border p-2">150-250g</td><td class="border p-2">独特な風合い、高級感</td><td class="border p-2">高級品、ギフト</td></tr>
-<tr><td class="border p-2">再生紙</td><td class="border p-2">150-200g</td><td class="border p-2">FSC認証、エコ</td><td class="border p-2">ESG企業、オーガニック</td></tr>
-</tbody></table>
-<h3>持ち手の種類</h3>
-<ul class="list-disc pl-5 my-3 space-y-2">
-<li><strong>紙紐</strong>：エコ、低コスト、標準耐荷重</li>
-<li><strong>綿紐</strong>：柔らかい、高級感</li>
-<li><strong>リボン</strong>：豪華、ギフト袋に最適</li>
-<li><strong>平紐</strong>：幅広、耐荷重向上</li>
-</ul>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3">
-<p><strong>Q: 最小注文数は？</strong><br/>A: 紙袋は500個から。1000個以上で単価が大幅に改善。</p>
-<p><strong>Q: 紙袋はどのくらいの重さを支えられますか？</strong><br/>A: 標準の紙袋は2〜5kg。重い物には250g以上の紙を使用。</p>
-</div>
-<p><a href="/ja/product/kraft-paper-bags/">クラフト紙袋</a>や<a href="/ja/product/gift-bags/">ギフト袋</a>を今すぐ注文。<a href="/ja/quote/">見積もり</a>を取得！</p>`,
-    },
+      'zh-hk': `<p>紙袋是品牌包裝的重要組成部分。無論是零售購物、禮品包裝，還是活動紀念品，一個高質感的品牌紙袋都能大幅提升客戶體驗和品牌檔次感。本文從材質、尺寸、手挽、印刷工藝、設計趨勢、選購決策 6 個維度為您拆解香港紙袋印刷選購全攻略。</p>
+<h3>一、紙袋材質怎麼選？</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">材質</th><th class="border p-2 text-left">特點</th><th class="border p-2 text-left">適合場景</th></tr></thead><tbody><tr><td class="border p-2">白牛皮紙</td><td class="border p-2">純白、挺度高、可染色</td><td class="border p-2">高檔品牌、化妝品、禮品</td></tr><tr><td class="border p-2">黃牛皮紙</td><td class="border p-2">環保、復古、價格實惠</td><td class="border p-2">咖啡店、有機品牌、零售</td></tr><tr><td class="border p-2">白卡紙</td><td class="border p-2">挺度最佳、表面光滑</td><td class="border p-2">奢侈品、珠寶、首飾</td></tr><tr><td class="border p-2">銅版紙</td><td class="border p-2">印刷精美、色彩鮮豔</td><td class="border p-2">促銷活動、節日禮品</td></tr><tr><td class="border p-2">黑卡紙</td><td class="border p-2">神秘高檔、質感獨特</td><td class="border p-2">高端品牌、限定產品</td></tr><tr><td class="border p-2">再生紙</td><td class="border p-2">環保認證、紋理獨特</td><td class="border p-2">環保品牌、有機產品</td></tr></tbody></table>
+<h3>二、紙袋的常見尺寸</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>小型：200 × 250 × 80mm</strong>：飾品、文具、小型禮品</li><li><strong>中型：280 × 350 × 100mm</strong>：化妝品、書籍、服飾</li><li><strong>大型：350 × 450 × 120mm</strong>：鞋盒、禮盒、購物</li><li><strong>特大型：450 × 550 × 150mm</strong>：多件商品、節日禮籃</li></ul>
+<h3>三、紙袋手挽材質選擇</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>扭繩手挽（Twisted Rope Handle）</strong>：最經典，承重 5-8kg，適合大多數場景</li><li><strong>扁平手挽（Flat Ribbon Handle）</strong>：高檔質感，承重 3-5kg，適合禮品袋</li><li><strong>打孔手挽（Die-cut Handle）</strong>：經濟實惠，承重 2-3kg，適合促銷袋</li><li><strong>絲帶手挽（Satin Ribbon Handle）</strong>：極致高檔，婚禮、限定產品首選</li><li><strong>棉繩手挽（Cotton Rope Handle）</strong>：環保自然，文創、咖啡品牌常見</li></ol>
+<h3>四、紙袋印刷工藝</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">工藝</th><th class="border p-2 text-left">特點</th><th class="border p-2 text-left">適合</th></tr></thead><tbody><tr><td class="border p-2">四色印刷（CMYK）</td><td class="border p-2">色彩豐富、照片級</td><td class="border p-2">品牌 Logo、活動圖</td></tr><tr><td class="border p-2">專色印刷（Pantone）</td><td class="border p-2">品牌標準色精準還原</td><td class="border p-2">品牌標準色定制</td></tr><tr><td class="border p-2">燙金 / 燙銀</td><td class="border p-2">金屬質感、高檔</td><td class="border p-2">高檔禮品袋</td></tr><tr><td class="border p-2">UV 局部上光</td><td class="border p-2">局部高光、視覺重點</td><td class="border p-2">Logo、圖案強調</td></tr><tr><td class="border p-2">擊凸 / 壓凹</td><td class="border p-2">立體觸感</td><td class="border p-2">高端品牌</td></tr><tr><td class="border p-2">上光（Glossy Varnish）</td><td class="border p-2">基礎保護、低成本</td><td class="border p-2">大批量促銷</td></tr></tbody></table>
+<h3>五、紙袋設計趨勢 2026</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>環保紙袋</strong>：FSC 認證再生紙已成為品牌首選</li><li><strong>極簡設計</strong>：少色 + 大面積留白，視覺高級</li><li><strong>大面積燙金</strong>：Logo + 圖案全部燙金，視覺奢華</li><li><strong>特殊手挽</strong>：絲帶、棉繩等高檔手挽提升質感</li><li><strong>可變數據印刷</strong>：每袋不同編號 / 名字，限量版營銷利器</li></ul>
+<h3>六、常見問題</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：紙袋最少印幾多個？</strong><br/>A：100 個起訂。手挽和印刷複雜度會影響交期。</p><p><strong>Q：牛皮紙 vs 白卡紙？</strong><br/>A：牛皮紙環保復古，白卡紙挺度最佳，印刷色彩更鮮豔。</p><p><strong>Q：紙袋能承重幾多？</strong><br/>A：扭繩 5-8kg、扁平 3-5kg、打孔 2-3kg、絲帶 1-2kg。</p><p><strong>Q：FSC 認證紙袋貴幾多？</strong><br/>A：比常規紙袋貴 10-20%，但符合 ESG 趨勢。</p></div>
+<p>想了解更多紙袋印刷？立即 <a href="https://wa.me/8618126380255" target="_blank">WhatsApp 聯絡智印雲</a> 獲取報價與設計建議！</p>`,
+      'en': `<p>Paper bags are key to brand packaging. Whether retail shopping, gift packaging, or event memorabilia, a quality branded paper bag dramatically elevates customer experience and brand premium. This article systematically breaks down HK paper bag printing selection across 6 dimensions: materials, sizes, handles, printing processes, design trends, and decision framework.</p>
+<h3>1. How to Choose Paper Bag Material</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Material</th><th class="border p-2 text-left">Features</th><th class="border p-2 text-left">Best For</th></tr></thead><tbody><tr><td class="border p-2">White Kraft</td><td class="border p-2">Pure white, high stiffness, dye-able</td><td class="border p-2">Premium brands, cosmetics, gifts</td></tr><tr><td class="border p-2">Yellow Kraft</td><td class="border p-2">Eco, vintage, affordable</td><td class="border p-2">Coffee shops, organic brands, retail</td></tr><tr><td class="border p-2">White Card</td><td class="border p-2">Best stiffness, smooth surface</td><td class="border p-2">Luxury, jewelry</td></tr><tr><td class="border p-2">Art Paper</td><td class="border p-2">Vivid colors, fine printing</td><td class="border p-2">Promotions, holiday gifts</td></tr><tr><td class="border p-2">Black Card</td><td class="border p-2">Mysterious premium, unique texture</td><td class="border p-2">High-end, limited editions</td></tr><tr><td class="border p-2">Recycled</td><td class="border p-2">Eco certified, distinctive texture</td><td class="border p-2">Eco brands, organic products</td></tr></tbody></table>
+<h3>2. Common Paper Bag Sizes</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Small: 200 × 250 × 80mm</strong>: Jewelry, stationery, small gifts</li><li><strong>Medium: 280 × 350 × 100mm</strong>: Cosmetics, books, apparel</li><li><strong>Large: 350 × 450 × 120mm</strong>: Shoe boxes, gift boxes, shopping</li><li><strong>Extra Large: 450 × 550 × 150mm</strong>: Multi-product, festive gift baskets</li></ul>
+<h3>3. Paper Bag Handle Options</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>Twisted Rope Handle</strong>: Most classic, 5-8kg load, suitable for most scenarios</li><li><strong>Flat Ribbon Handle</strong>: Premium feel, 3-5kg load, ideal for gift bags</li><li><strong>Die-cut Handle</strong>: Economical, 2-3kg load, ideal for promo bags</li><li><strong>Satin Ribbon Handle</strong>: Ultimate premium, weddings and limited editions</li><li><strong>Cotton Rope Handle</strong>: Eco natural, common in cultural/creative and coffee brands</li></ol>
+<h3>4. Paper Bag Printing Processes</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Process</th><th class="border p-2 text-left">Features</th><th class="border p-2 text-left">Best For</th></tr></thead><tbody><tr><td class="border p-2">4-color (CMYK)</td><td class="border p-2">Rich colors, photo-level</td><td class="border p-2">Brand logos, event graphics</td></tr><tr><td class="border p-2">Spot Color (Pantone)</td><td class="border p-2">Brand standard color accurate</td><td class="border p-2">Brand standard color custom</td></tr><tr><td class="border p-2">Foil Stamping (Gold/Silver)</td><td class="border p-2">Metallic feel, premium</td><td class="border p-2">Premium gift bags</td></tr><tr><td class="border p-2">Spot UV</td><td class="border p-2">Local highlight, visual focus</td><td class="border p-2">Logo, design emphasis</td></tr><tr><td class="border p-2">Embossing / Debossing</td><td class="border p-2">Dimensional tactile</td><td class="border p-2">High-end brands</td></tr><tr><td class="border p-2">Varnish</td><td class="border p-2">Basic protection, low cost</td><td class="border p-2">Bulk promotions</td></tr></tbody></table>
+<h3>5. Paper Bag Design Trends 2026</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Eco Paper Bags</strong>: FSC certified recycled paper now the brand-first choice</li><li><strong>Minimalist Design</strong>: Few colors + large white space, premium visuals</li><li><strong>Large Area Foil</strong>: All logo + design foil-stamped, visual luxury</li><li><strong>Premium Handles</strong>: Satin, cotton rope handles enhance tactile quality</li><li><strong>Variable Data Printing</strong>: Each bag different number/name, limited edition marketing tool</li></ul>
+<h3>6. Frequently Asked Questions</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：What is the MOQ for paper bags?</strong><br/>A：100 pieces. Handle and printing complexity affect lead time.</p><p><strong>Q：Kraft paper vs white card?</strong><br/>A：Kraft is eco-vintage; white card has best stiffness and more vivid print.</p><p><strong>Q：How much weight can paper bags hold?</strong><br/>A：Twisted 5-8kg, flat 3-5kg, die-cut 2-3kg, satin 1-2kg.</p><p><strong>Q：How much more expensive are FSC certified bags?</strong><br/>A：10-20% more than standard bags, but aligned with ESG trends.</p></div>
+<p>Want more on paper bag printing? Contact <a href="https://wa.me/8618126380255" target="_blank">ZprintPro via WhatsApp</a> for a quote and design tips!</p>`,
+      'ja': `<p>紙袋はブランドパッケージの重要な構成要素です。小売ショッピング、ギフト包装、イベント記念品まで、高品質なブランド紙袋は顧客体験とブランドプレミアムを大幅に高めます。本記事は材質、サイズ、持ち手、印刷工程、デザイントレンド、選定意思決定の 6 つの側面から香港紙袋印刷選定を体系的に整理します。</p>
+<h3>一、紙袋材質の選び方</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">材質</th><th class="border p-2 text-left">特徴</th><th class="border p-2 text-left">適用シーン</th></tr></thead><tbody><tr><td class="border p-2">白クラフト</td><td class="border p-2">純白、高腰、染色可</td><td class="border p-2">高級ブランド、化粧品、ギフト</td></tr><tr><td class="border p-2">黄クラフト</td><td class="border p-2">エコ、レトロ、低価格</td><td class="border p-2">カフェ、オーガニックブランド、小売</td></tr><tr><td class="border p-2">白カード</td><td class="border p-2">腰最強、表面平滑</td><td class="border p-2">ラグジュアリー、宝飾</td></tr><tr><td class="border p-2">アート紙</td><td class="border p-2">精美印刷、色彩鮮やか</td><td class="border p-2">プロモーション、祝日ギフト</td></tr><tr><td class="border p-2">黒カード</td><td class="border p-2">神秘的、独特質感</td><td class="border p-2">ハイエンド、限定品</td></tr><tr><td class="border p-2">再生紙</td><td class="border p-2">エコ認証、独特テクスチャ</td><td class="border p-2">エコブランド、オーガニック</td></tr></tbody></table>
+<h3>二、主な紙袋サイズ</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>小型：200 × 250 × 80mm</strong>：宝飾、文具、小型ギフト</li><li><strong>中型：280 × 350 × 100mm</strong>：化粧品、書籍、アパレル</li><li><strong>大型：350 × 450 × 120mm</strong>：靴箱、ギフト箱、ショッピング</li><li><strong>特大型：450 × 550 × 150mm</strong>：多品商品、祝日ギフトバスケット</li></ul>
+<h3>三、紙袋の持ち手材質選択</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>紐手提げ（Twisted Rope Handle）</strong>：最も定番、耐荷重 5-8kg、ほとんどの場面に対応</li><li><strong>平手提げ（Flat Ribbon Handle）</strong>：高級感、耐荷重 3-5kg、ギフトバッグ向き</li><li><strong>抜き手提げ（Die-cut Handle）</strong>：経済的、耐荷重 2-3kg、プロモバッグ向き</li><li><strong>サテンリボン手提げ（Satin Ribbon Handle）</strong>：最高級、ウェディング・限定品</li><li><strong>綿紐手提げ（Cotton Rope Handle）</strong>：エコ自然、文創・コーヒーブランド定番</li></ol>
+<h3>四、紙袋印刷工程</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">工程</th><th class="border p-2 text-left">特徴</th><th class="border p-2 text-left">適用</th></tr></thead><tbody><tr><td class="border p-2">4 色印刷（CMYK）</td><td class="border p-2">色彩豊富、写真レベル</td><td class="border p-2">ブランドロゴ、イベント図</td></tr><tr><td class="border p-2">特色印刷（Pantone）</td><td class="border p-2">ブランド標準色精緻再現</td><td class="border p-2">ブランド標準色カスタム</td></tr><tr><td class="border p-2">箔押し（金 / 銀）</td><td class="border p-2">金属感、高級</td><td class="border p-2">高級ギフトバッグ</td></tr><tr><td class="border p-2">スポット UV</td><td class="border p-2">局部光沢、視覚重点</td><td class="border p-2">ロゴ、デザイン強調</td></tr><tr><td class="border p-2">エンボス / デボス</td><td class="border p-2">立体触感</td><td class="border p-2">高級ブランド</td></tr><tr><td class="border p-2">ニス（Glossy Varnish）</td><td class="border p-2">基本保護、低コスト</td><td class="border p-2">大量プロモ</td></tr></tbody></table>
+<h3>五、紙袋デザイントレンド 2026</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>エコ紙袋</strong>：FSC 認証再生紙がブランドの第一選択に</li><li><strong>ミニマルデザイン</strong>：少ない色 + 大面積余白、視覚高級感</li><li><strong>大面積箔押し</strong>：ロゴ + デザイン全面箔押し、視覚ラグジュアリー</li><li><strong>プレミアム持ち手</strong>：サテン、綿紐持ち手で質感を向上</li><li><strong>バリアブル印刷</strong>：袋ごとに異なる番号 / 名前、限定版マーケの切り札</li></ul>
+<h3>六、よくある質問</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：紙袋の最小注文数量は？</strong><br/>A：100 個から。持ち手と印刷の複雑さが納期に影響。</p><p><strong>Q：クラフト紙 vs 白カード？</strong><br/>A：クラフトはエコレトロ、白カードは腰最強、色彩より鮮やか。</p><p><strong>Q：紙袋の耐荷重は？</strong><br/>A：紐 5-8kg、平 3-5kg、抜き 2-3kg、サテン 1-2kg。</p><p><strong>Q：FSC 認証紙袋はどれくらい高い？</strong><br/>A：通常より 10-20% 高いが ESG トレンドに合致。</p></div>
+<p>紙袋印刷をもっと知りたい？今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 見積もり＆デザイン提案！</p>`
+    ,
   },
 
   // ========== BANNERS ==========
@@ -704,52 +447,49 @@ export const buyingGuides: BuyingGuide[] = [
     date: '2025-02-01',
     relatedProducts: ['x-stand-banners', 'roll-up-banners', 'backdrop-banners', 'outdoor-banners'],
     content: {
-      'zh-hk': `<p>噴繪廣告係企業展覽、活動推廣、店鋪宣傳不可或缺嘅視覺工具。無論係室內展覽會嘅 X 展架，定係戶外建築工地嘅大型橫幅，選擇合適嘅材質同尺寸都直接影響展示效果。本文從展示形式、材質選擇、尺寸規劃三個維度，為您拆解噴繪廣告的選購要點。</p>
-
-<h3>一、常見噴繪廣告形式</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">形式</th><th class="border p-2 text-left">尺寸</th><th class="border p-2 text-left">特點</th><th class="border p-2 text-left">適合場景</th></tr></thead><tbody>
-<tr><td class="border p-2">X 展架</td><td class="border p-2">60×160cm / 80×180cm</td><td class="border p-2">輕便、低成本、即開即用</td><td class="border p-2">展覽會、店內促銷、臨時活動</td></tr>
-<tr><td class="border p-2">易拉寶</td><td class="border p-2">80×200cm / 85×200cm</td><td class="border p-2">帶收納箱、更平整、可重複使用</td><td class="border p-2">會議、路演、頻繁使用場合</td></tr>
-<tr><td class="border p-2">背景板</td><td class="border p-2">2.2–3m 高 × 2–6m 寬</td><td class="border p-2">大氣、適合影相、可拼接</td><td class="border p-2">發布會、婚禮、舞台背景</td></tr>
-<tr><td class="border p-2">戶外橫幅</td><td class="border p-2">自定義，最大 3.2m 寬</td><td class="border p-2">防水抗 UV、大面積曝光</td><td class="border p-2">建築圍板、戶外廣告、活動現場</td></tr>
-</tbody></table>
-
-<h3>二、材質選擇指南</h3>
-<p>室內展示推薦 PP 合成紙或相紙，色彩還原佳且不易反光。戶外必須選擇 PVC 燈布或網布，防水防 UV 確保 1–2 年不褪色。網布因透風特性，特別適合大面積戶外懸掛。</p>
-
-<h3>三、解析度與文件準備</h3>
-<p>小尺寸（&lt;1m）建議 150dpi；中尺寸（1–3m）100dpi 即可；大尺寸（&gt;3m）72dpi 足夠。過高解析度不會提升視覺效果，反而增加文件大小和處理時間。文件格式推薦 AI 或 PDF，並預留 3mm 出血位。</p>`,
-      'en': `<p>Banners are essential visual tools for exhibitions, event promotions, and store advertising. From indoor X-stands to large outdoor building hoardings, choosing the right material and size directly impacts display effectiveness. This guide covers display types, material selection, and size planning.</p>
-
-<h3>1. Common Banner Types</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Type</th><th class="border p-2 text-left">Size</th><th class="border p-2 text-left">Features</th><th class="border p-2 text-left">Best For</th></tr></thead><tbody>
-<tr><td class="border p-2">X-Stand</td><td class="border p-2">60×160cm / 80×180cm</td><td class="border p-2">Lightweight, low cost, instant setup</td><td class="border p-2">Exhibitions, in-store promos, temporary events</td></tr>
-<tr><td class="border p-2">Roll-up</td><td class="border p-2">80×200cm / 85×200cm</td><td class="border p-2">Carrying case, flatter surface, reusable</td><td class="border p-2">Conferences, roadshows, frequent use</td></tr>
-<tr><td class="border p-2">Backdrop</td><td class="border p-2">2.2–3m × 2–6m</td><td class="border p-2">Grand, photo-friendly, seamable</td><td class="border p-2">Press events, weddings, stage backdrops</td></tr>
-<tr><td class="border p-2">Outdoor Banner</td><td class="border p-2">Custom, max 3.2m width</td><td class="border p-2">Waterproof, UV-resistant, large exposure</td><td class="border p-2">Building hoardings, outdoor ads, event sites</td></tr>
-</tbody></table>
-
-<h3>2. Material Selection</h3>
-<p>Indoor displays suit PP synthetic paper or photo paper with excellent color reproduction and minimal reflection. Outdoor use requires PVC banner fabric or mesh — waterproof and UV-resistant for 1–2 years without fading. Mesh is ideal for large outdoor悬挂 due to wind permeability.</p>
-
-<h3>3. Resolution & File Preparation</h3>
-<p>Small sizes (&lt;1m): 150dpi recommended; medium (1–3m): 100dpi sufficient; large (&gt;3m): 72dpi adequate. Excessively high resolution increases file size without improving visual effect. AI or PDF recommended with 3mm bleed.</p>`,
-      'ja': `<p>バナーは展示会、イベントプロモーション、店舗広告に欠かせない視覚ツールです。屋内のXスタンドから屋外の大型建築囲いまで、適切な材質とサイズの選択が展示効果に直接影響します。このガイドでは展示タイプ、材質選択、サイズ計画を解説します。</p>
-
-<h3>1. 一般的なバナータイプ</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">タイプ</th><th class="border p-2 text-left">サイズ</th><th class="border p-2 text-left">特徴</th><th class="border p-2 text-left">最適な用途</th></tr></thead><tbody>
-<tr><td class="border p-2">Xスタンド</td><td class="border p-2">60×160cm / 80×180cm</td><td class="border p-2">軽量｜低コスト｜即設置</td><td class="border p-2">展示会｜店内プロモ｜臨時イベント</td></tr>
-<tr><td class="border p-2">ロールアップ</td><td class="border p-2">80×200cm / 85×200cm</td><td class="border p-2">収納ケース付き｜平坦｜再利用可</td><td class="border p-2">会議｜ロードショー｜頻繁な使用</td></tr>
-<tr><td class="border p-2">背景板</td><td class="border p-2">2.2–3m × 2–6m</td><td class="border p-2">迫力｜写真向き｜継ぎ目可能</td><td class="border p-2">記者会見｜結婚式｜舞台背景</td></tr>
-<tr><td class="border p-2">屋外バナー</td><td class="border p-2">カスタム、最大3.2m幅</td><td class="border p-2">防水｜UV耐性｜大面積露出</td><td class="border p-2">建築囲い｜屋外広告｜イベント現場</td></tr>
-</tbody></table>
-
-<h3>2. 材質選択</h3>
-<p>屋内展示にはPP合成紙や写真用紙が適し、色彩再現が良く反射が少ないです。屋外使用にはPVCバナー生地やメッシュが必要で、防水・UV耐性により1–2年褪色しません。メッシュは通風性があるため、大規模な屋外吊り下げに最適です。</p>
-
-<h3>3. 解像度とファイル準備</h3>
-<p>小サイズ（&lt;1m）：150dpi推奨。中サイズ（1–3m）：100dpiで十分。大サイズ（&gt;3m）：72dpiで足ります。過度に高い解像度はファイルサイズを増加させるだけで視覚効果は改善されません。AIまたはPDFを推奨し、3mmのbleedを設けてください。</p>`,
-  },
+      'zh-hk': `<p>噴繪廣告是商業活動不可或缺的視覺利器。無論是 X 展架、易拉寶還是背景板、戶外大橫幅，噴繪廣告都能在短時間內吸引大量目光。本文從 X 展架、易拉寶、背景板、戶外橫幅、材質工藝、選購決策 6 個維度為您系統拆解香港噴繪廣告印刷選購全攻略。</p>
+<h3>一、X 展架印刷</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">尺寸</th><th class="border p-2 text-left">用途</th><th class="border p-2 text-left">配套</th></tr></thead><tbody><tr><td class="border p-2">60 × 160cm</td><td class="border p-2">小型展位、店內促銷</td><td class="border p-2">X 展架架</td></tr><tr><td class="border p-2">80 × 180cm</td><td class="border p-2">標準展位、展會</td><td class="border p-2">X 展架架</td></tr><tr><td class="border p-2">100 × 200cm</td><td class="border p-2">大型展位、簽到牆</td><td class="border p-2">X 展架架</td></tr></tbody></table>
+<h3>二、易拉寶 / Roll-up Banner 印刷</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>標準尺寸：80 × 200cm</strong>：最常見，展會首選</li><li><strong>小型：60 × 160cm</strong>：店內、接待區</li><li><strong>雙面易拉寶</strong>：正反兩面，360 度可看</li><li><strong>鋁合金支架</strong>：穩固耐用，可重複使用</li><li><strong>PP 合成紙 / 相紙</strong>：防水、色彩鮮豔</li></ul>
+<h3>三、背景板 / Backdrop 印刷</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>標準尺寸：3 × 2m / 4 × 2.5m</strong>：可拼接</li><li><strong>材質</strong>：黑 / 白 / 銀噴繪布、PVC 板、珍珠布</li><li><strong>應用</strong>：簽到牆、舞台背景、媒體採訪背景</li><li><strong>支撐</strong>：鐵架、鋁架、易拉式支架</li><li><strong>拼接</strong>：多塊拼接，運輸方便</li></ol>
+<h3>四、戶外大橫幅印刷</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">類型</th><th class="border p-2 text-left">尺寸</th><th class="border p-2 text-left">材質</th><th class="border p-2 text-left">使用</th></tr></thead><tbody><tr><td class="border p-2">燈布（Flex Banner）</td><td class="border p-2">按需定制</td><td class="border p-2">PVC 塗層布</td><td class="border p-2">戶外建築外牆</td></tr><tr><td class="border p-2">車身貼</td><td class="border p-2">按需定制</td><td class="border p-2">車貼專用 PVC</td><td class="border p-2">車身廣告</td></tr><tr><td class="border p-2">電梯廣告</td><td class="border p-2">按需定制</td><td class="border p-2">啞面 PP 膠片</td><td class="border p-2">辦公樓、商場</td></tr><tr><td class="border p-2">地鐵燈箱</td><td class="border p-2">按需定制</td><td class="border p-2">背噴燈片</td><td class="border p-2">地鐵廣告位</td></tr><tr><td class="border p-2">店招 / 招牌</td><td class="border p-2">按需定制</td><td class="border p-2">亞克力燈箱</td><td class="border p-2">店鋪招牌</td></tr></tbody></table>
+<h3>五、材質與工藝選擇</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>PP 合成紙</strong>：經濟、適合短期展會，室內使用</li><li><strong>相紙（Photo Paper）</strong>：色彩鮮豔、質感高檔，重要場合</li><li><strong>燈布（Flex Banner）</strong>：戶外大面積廣告，防水耐用</li><li><strong>車貼專用 PVC</strong>：車身廣告，可移除不留膠</li><li><strong>亞克力燈片</strong>：背打光燈箱，店招常用</li><li><strong>黑 / 白噴繪布</strong>：背景板、舞台背景</li></ul>
+<h3>六、常見問題</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：易拉寶可以用幾多次？</strong><br/>A：鋁合金支架可用 100+ 次，PP 紙張視乎保存情況可重複使用 5-10 次。</p><p><strong>Q：展會用嘅噴繪要提前幾耐製作？</strong><br/>A：建議 5-7 個工作天，旺季需 2 週。</p><p><strong>Q：戶外大橫幅可以防風雨嗎？</strong><br/>A：PVC 燈布防水防曬，正常 1-3 年壽命。</p><p><strong>Q：智印雲提供現場安裝嗎？</strong><br/>A：香港地區提供場內安裝服務（另收費）。</p></div>
+<p>想了解更多噴繪廣告？立即 <a href="https://wa.me/8618126380255" target="_blank">WhatsApp 聯絡智印雲</a> 獲取展會方案！</p>`,
+      'en': `<p>Banner advertising is an essential visual tool for commercial activities. From X-stands and roll-ups to backdrops and outdoor banners, banner ads attract massive attention quickly. This article systematically breaks down HK banner advertising printing across 6 dimensions: X-stands, roll-ups, backdrops, outdoor, material/process, and decision framework.</p>
+<h3>1. X-Stand Printing</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Size</th><th class="border p-2 text-left">Use</th><th class="border p-2 text-left">Bundle</th></tr></thead><tbody><tr><td class="border p-2">60 × 160cm</td><td class="border p-2">Small booth, in-store promo</td><td class="border p-2">X-stand frame</td></tr><tr><td class="border p-2">80 × 180cm</td><td class="border p-2">Standard booth, exhibition</td><td class="border p-2">X-stand frame</td></tr><tr><td class="border p-2">100 × 200cm</td><td class="border p-2">Large booth, sign-in wall</td><td class="border p-2">X-stand frame</td></tr></tbody></table>
+<h3>2. Roll-up Banner Printing</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Standard 80 × 200cm</strong>: Most common, exhibition favorite</li><li><strong>Small 60 × 160cm</strong>: In-store, reception</li><li><strong>Double-sided Roll-up</strong>: Both sides, 360° viewing</li><li><strong>Aluminum Frame</strong>: Stable and durable, reusable</li><li><strong>PP Synthetic / Photo Paper</strong>: Waterproof, vibrant colors</li></ul>
+<h3>3. Backdrop Printing</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>Standard 3 × 2m / 4 × 2.5m</strong>: Splittable</li><li><strong>Material</strong>: Black/white/silver flex banner, PVC board, pearl banner</li><li><strong>Application</strong>: Sign-in wall, stage backdrop, media interview backdrop</li><li><strong>Support</strong>: Iron stand, aluminum stand, pull-up stand</li><li><strong>Splicing</strong>: Multi-piece for transport</li></ol>
+<h3>4. Outdoor Banner Printing</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Type</th><th class="border p-2 text-left">Size</th><th class="border p-2 text-left">Material</th><th class="border p-2 text-left">Use</th></tr></thead><tbody><tr><td class="border p-2">Flex Banner</td><td class="border p-2">Custom</td><td class="border p-2">PVC coated</td><td class="border p-2">Building exterior</td></tr><tr><td class="border p-2">Vehicle Wrap</td><td class="border p-2">Custom</td><td class="border p-2">Car-grade PVC</td><td class="border p-2">Vehicle ad</td></tr><tr><td class="border p-2">Elevator Ad</td><td class="border p-2">Custom</td><td class="border p-2">Matte PP film</td><td class="border p-2">Office, mall</td></tr><tr><td class="border p-2">MTR Lightbox</td><td class="border p-2">Custom</td><td class="border p-2">Backlit film</td><td class="border p-2">MTR ad slot</td></tr><tr><td class="border p-2">Store Signage</td><td class="border p-2">Custom</td><td class="border p-2">Acrylic lightbox</td><td class="border p-2">Store signage</td></tr></tbody></table>
+<h3>5. Material & Process Selection</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>PP Synthetic</strong>: Economical, short-term exhibition, indoor</li><li><strong>Photo Paper</strong>: Vibrant colors, premium feel, important occasions</li><li><strong>Flex Banner</strong>: Outdoor large area ads, waterproof durable</li><li><strong>Vehicle-grade PVC</strong>: Car wrap, removable</li><li><strong>Acrylic Lightbox</strong>: Backlit lightbox, common signage</li><li><strong>Black/White Flex Banner</strong>: Backdrop, stage</li></ul>
+<h3>6. Frequently Asked Questions</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：How many times can a roll-up be reused?</strong><br/>A：Aluminum frame 100+ times; PP paper 5-10 times depending on storage.</p><p><strong>Q：How long does exhibition banner printing take?</strong><br/>A：Recommend 5-7 working days; peak season 2 weeks.</p><p><strong>Q：Are outdoor banners weatherproof?</strong><br/>A：PVC flex banner is waterproof and UV-resistant, 1-3 year lifespan.</p><p><strong>Q：Does ZprintPro offer on-site installation?</strong><br/>A：Yes, HK area installation service available (additional fee).</p></div>
+<p>Want more on banner advertising? Contact <a href="https://wa.me/8618126380255" target="_blank">ZprintPro via WhatsApp</a> for an exhibition package!</p>`,
+      'ja': `<p>バナー広告は商業活動に必須のビジュアルツールです。X スタンド、ロールアップ、背景板、屋外横断幕まで、短時間で大量の注目を集めます。本記事は X スタンド、ロールアップ、背景板、屋外、素材/工程、選定意思決定の 6 つの側面から香港バナー広告印刷選定を体系的に整理します。</p>
+<h3>一、X スタンド印刷</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">サイズ</th><th class="border p-2 text-left">用途</th><th class="border p-2 text-left">セット</th></tr></thead><tbody><tr><td class="border p-2">60 × 160cm</td><td class="border p-2">小型ブース、店舗プロモ</td><td class="border p-2">X スタンドフレーム</td></tr><tr><td class="border p-2">80 × 180cm</td><td class="border p-2">標準ブース、展示会</td><td class="border p-2">X スタンドフレーム</td></tr><tr><td class="border p-2">100 × 200cm</td><td class="border p-2">大型ブース、サインウォール</td><td class="border p-2">X スタンドフレーム</td></tr></tbody></table>
+<h3>二、ロールアップバナー印刷</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>標準 80 × 200cm</strong>：最も一般的、展示会の定番</li><li><strong>小型 60 × 160cm</strong>：店内、受付</li><li><strong>両面ロールアップ</strong>：両面、360° 視認</li><li><strong>アルミフレーム</strong>：安定耐久、繰り返し使用可</li><li><strong>PP 合成 / 写真用紙</strong>：防水、色彩鮮やか</li></ul>
+<h3>三、背景板印刷</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>標準 3 × 2m / 4 × 2.5m</strong>：分割可</li><li><strong>材質</strong>：黒 / 白 / 銀 flex バナー、PVC ボード、パールバナー</li><li><strong>用途</strong>：サインヲール、舞台背景、メディア取材背景</li><li><strong>サポート</strong>：鉄フレーム、アルミフレーム、引上げ式</li><li><strong>接合</strong>：複数ピースで輸送便利</li></ol>
+<h3>四、屋外バナー印刷</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">タイプ</th><th class="border p-2 text-left">サイズ</th><th class="border p-2 text-left">材質</th><th class="border p-2 text-left">用途</th></tr></thead><tbody><tr><td class="border p-2">フレックスバナー</td><td class="border p-2">カスタム</td><td class="border p-2">PVC コーティング</td><td class="border p-2">ビル外壁</td></tr><tr><td class="border p-2">車両ラッピング</td><td class="border p-2">カスタム</td><td class="border p-2">車用 PVC</td><td class="border p-2">車両広告</td></tr><tr><td class="border p-2">エレベーター広告</td><td class="border p-2">カスタム</td><td class="border p-2">マット PP フィルム</td><td class="border p-2">オフィス、ショッピングモール</td></tr><tr><td class="border p-2">MTR ライトボックス</td><td class="border p-2">カスタム</td><td class="border p-2">バックリットフィルム</td><td class="border p-2">MTR 広告枠</td></tr><tr><td class="border p-2">店舗サイン</td><td class="border p-2">カスタム</td><td class="border p-2">アクリルライトボックス</td><td class="border p-2">店舗看板</td></tr></tbody></table>
+<h3>五、材質と工程の選択</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>PP 合成</strong>：経済的、短期展示会、屋内</li><li><strong>写真用紙</strong>：色彩鮮やか、高級感、重要な場面</li><li><strong>フレックスバナー</strong>：屋外大面積広告、防水耐久</li><li><strong>車両用 PVC</strong>：車両広告、糊残りなし剥離可</li><li><strong>アクリルライトボックス</strong>：バックライト看板、店舗定番</li><li><strong>黒 / 白 flex バナー</strong>：背景板、舞台</li></ul>
+<h3>六、よくある質問</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：ロールアップは何回使えますか？</strong><br/>A：アルミフレームは 100 回以上、PP 用紙は保存状況で 5-10 回。</p><p><strong>Q：展示会バナー印刷の納期は？</strong><br/>A：5-7 営業日推奨、繁忙期は 2 週間。</p><p><strong>Q：屋外バナーは防水ですか？</strong><br/>A：PVC フレックスバナーは防水耐候、寿命 1-3 年。</p><p><strong>Q：智印雲は現場設置サービスを提供？</strong><br/>A：はい。香港エリアは別途料金で現場設置対応可。</p></div>
+<p>バナー広告をもっと知りたい？今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 展示会プラン！</p>`
+    ,
   },
 
   // ========== BOOKS ==========
@@ -775,52 +515,49 @@ export const buyingGuides: BuyingGuide[] = [
     date: '2025-02-05',
     relatedProducts: ['saddle-stitch-books', 'perfect-bound-books', 'hardcover-books', 'catalogs', 'annual-reports'],
     content: {
-      'zh-hk': `<p>書籍印刷係出版、企業宣傳、藝術展示嘅重要環節。無論係一本自費出版的小說，定係企業年度畫冊，選擇合適的裝訂方式、紙張和封面工藝都直接影響成品質感和閱讀體驗。本文從裝訂方式、紙張選擇、封面工藝三個維度，為您拆解書籍印刷的選購要點。</p>
-
-<h3>一、裝訂方式對比</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">裝訂方式</th><th class="border p-2 text-left">頁數範圍</th><th class="border p-2 text-left">特點</th><th class="border p-2 text-left">適合類型</th></tr></thead><tbody>
-<tr><td class="border p-2">騎馬釘</td><td class="border p-2">8–64 頁</td><td class="border p-2">經濟、可完全攤平</td><td class="border p-2">雜誌、說明書、薄畫冊</td></tr>
-<tr><td class="border p-2">無線膠裝</td><td class="border p-2">64–200 頁</td><td class="border p-2">書脊平整、可標題</td><td class="border p-2">小說、教科書、企業年報</td></tr>
-<tr><td class="border p-2">鎖線膠裝</td><td class="border p-2">200+ 頁</td><td class="border p-2">耐久、不散頁、可完全攤平</td><td class="border p-2">工具書、攝影集、厚畫冊</td></tr>
-<tr><td class="border p-2">精裝書</td><td class="border p-2">不限</td><td class="border p-2">硬殼封面、最高級感、最耐久</td><td class="border p-2">收藏書、限量版、品牌畫冊</td></tr>
-</tbody></table>
-
-<h3>二、紙張選擇指南</h3>
-<p>文字為主的書籍推薦 80–100g 書紙，輕便且閱讀舒適；圖片為主的畫冊推薦 128–157g 銅版紙，色彩還原極佳。封面建議 250g 以上銅版紙或特種紙，配合覆膜或燙金工藝提升質感。</p>
-
-<h3>三、封面工藝推薦</h3>
-<p>燙金／燙銀適合品牌名稱和標題，增添高級感；局部 UV 可凸顯重點圖案；凹凸壓紋提供觸感記憶。精裝書可選擇布面或皮面封面，配合書腰和防塵套設計。</p>`,
-      'en': `<p>Book printing is a crucial element for publishing, corporate promotion, and art exhibitions. Whether it is a self-published novel or a corporate annual catalog, choosing the right binding method, paper, and cover finish directly affects the finished product quality and reading experience. This guide covers binding methods, paper selection, and cover finishes.</p>
-
-<h3>1. Binding Method Comparison</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Binding</th><th class="border p-2 text-left">Page Range</th><th class="border p-2 text-left">Features</th><th class="border p-2 text-left">Best For</th></tr></thead><tbody>
-<tr><td class="border p-2">Saddle-Stitch</td><td class="border p-2">8–64 pages</td><td class="border p-2">Economical, lays fully flat</td><td class="border p-2">Magazines, manuals, thin catalogs</td></tr>
-<tr><td class="border p-2">Perfect Binding</td><td class="border p-2">64–200 pages</td><td class="border p-2">Flat spine, title printable</td><td class="border p-2">Novels, textbooks, annual reports</td></tr>
-<tr><td class="border p-2">Sewn Binding</td><td class="border p-2">200+ pages</td><td class="border p-2">Durable, pages wont fall out</td><td class="border p-2">Reference books, photo collections</td></tr>
-<tr><td class="border p-2">Hardcover</td><td class="border p-2">Any</td><td class="border p-2">Rigid cover, premium, most durable</td><td class="border p-2">Collectibles, limited editions</td></tr>
-</tbody></table>
-
+      'zh-hk': `<p>書籍印刷是文化傳承的重要載體。無論是公司年報、品牌手冊、教輔材料還是個人出版，選擇合適的裝訂方式、紙張材質和印刷工藝都是關鍵。本文從裝訂方式、紙張選擇、封面工藝、印量價格、設計要點、印刷廠選擇 6 個維度為您系統拆解香港書籍印刷選購全攻略。</p>
+<h3>一、常見裝訂方式對比</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">裝訂方式</th><th class="border p-2 text-left">特點</th><th class="border p-2 text-left">適合</th></tr></thead><tbody><tr><td class="border p-2">騎馬釘</td><td class="border p-2">成本最低、平整好翻</td><td class="border p-2">畫冊、雜誌、小冊子 32-64 頁</td></tr><tr><td class="border p-2">膠裝（無線膠裝）</td><td class="border p-2">美觀、容量大</td><td class="border p-2">書刊、教材、論文 60+ 頁</td></tr><tr><td class="border p-2">精裝（硬殼）</td><td class="border p-2">高端、保護強</td><td class="border p-2">精裝書、紀念冊、收藏品</td></tr><tr><td class="border p-2">螺旋裝訂</td><td class="border p-2">可 360 度翻</td><td class="border p-2">筆記本、食譜、便攜手冊</td></tr><tr><td class="border p-2">活頁裝訂</td><td class="border p-2">可拆卸增頁</td><td class="border p-2">教學手冊、工作手冊</td></tr><tr><td class="border p-2">鎖線膠裝</td><td class="border p-2">結實耐用、可平攤</td><td class="border p-2">高檔書刊、字典</td></tr></tbody></table>
+<h3>二、紙張選擇詳解</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>封面紙：250-300g 銅版紙 / 啞膠過膠</strong>：標準</li><li><strong>封面紙：特種紙 + 燙金</strong>：高端書籍首選</li><li><strong>內頁紙：80g 書紙</strong>：經濟、長篇小說</li><li><strong>內頁紙：105g 書紙</strong>：教材、工具書</li><li><strong>內頁紙：128g 銅版紙</strong>：畫冊、雜誌</li><li><strong>內頁紙：157g 銅版紙</strong>：高檔畫冊</li></ul>
+<h3>三、封面工藝選擇</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>光膠 / 啞膠</strong>：基礎保護，最經濟</li><li><strong>UV 局部上光</strong>：突出 Logo 和主視覺</li><li><strong>燙金 / 燙銀</strong>：書名 + Logo 高檔呈現</li><li><strong>擊凸 / 壓凹</strong>：立體觸感，獨特品牌記憶</li><li><strong>燙金 + 擊凸</strong>：極致高檔組合，工藝品級</li><li><strong>布面精裝</strong>：布紋裱殼，古典書籍</li></ol>
+<h3>四、印量與價格對應</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">印量</th><th class="border p-2 text-left">單本成本</th><th class="border p-2 text-left">適合</th></tr></thead><tbody><tr><td class="border p-2">50-100 本</td><td class="border p-2">HK$80-150/本</td><td class="border p-2">個人出版、紀念冊</td></tr><tr><td class="border p-2">200-500 本</td><td class="border p-2">HK$40-80/本</td><td class="border p-2">品牌手冊、公司刊物</td></tr><tr><td class="border p-2">500-1000 本</td><td class="border p-2">HK$25-50/本</td><td class="border p-2">教材、行業報告</td></tr><tr><td class="border p-2">2000+ 本</td><td class="border p-2">HK$15-30/本</td><td class="border p-2">大規模商業印刷</td></tr></tbody></table>
+<h3>五、設計要點</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>頁碼計算</strong>：騎馬釘頁數必須是 4 的倍數</li><li><strong>裝訂線預留</strong>：膠裝需預留 1.2cm 內邊距</li><li><strong>出血位</strong>：四周 3mm，避免裁切後白邊</li><li><strong>分色與色彩</strong>：CMYK 模式，RGB 不可印刷</li><li><strong>圖片解析度</strong>：300dpi 保證清晰</li><li><strong>字體嵌入 / 轉曲線</strong>：避免字體丟失</li></ul>
+<h3>六、常見問題</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：小批量 50 本可以印嗎？</strong><br/>A：可以，數碼印刷可少量。但每本單價較高。</p><p><strong>Q：騎馬釘 vs 膠裝？</strong><br/>A：騎馬釘成本低但限頁數，膠裝容量大但單本貴 HK$5-10。</p><p><strong>Q：需要什麼文件？</strong><br/>A：PDF 為主（轉曲線 + 嵌入字體），AI / INDD 可接受。</p><p><strong>Q：精裝書最貴多少？</strong><br/>A：視乎尺寸 + 工藝，HK$200-500/本起。</p></div>
+<p>想了解更多書籍印刷？立即 <a href="https://wa.me/8618126380255" target="_blank">WhatsApp 聯絡智印雲</a> 獲取報價！</p>`,
+      'en': `<p>Book printing is an important vehicle for cultural heritage. Whether corporate reports, brand manuals, training materials, or self-publishing, choosing the right binding, paper, and printing processes is critical. This article systematically breaks down HK book printing across 6 dimensions: binding, paper, cover finish, quantity/pricing, design tips, and printer selection.</p>
+<h3>1. Common Binding Options</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Binding</th><th class="border p-2 text-left">Features</th><th class="border p-2 text-left">Best For</th></tr></thead><tbody><tr><td class="border p-2">Saddle Stitch</td><td class="border p-2">Lowest cost, lays flat</td><td class="border p-2">Catalogs, magazines, 32-64 page booklets</td></tr><tr><td class="border p-2">Perfect Binding</td><td class="border p-2">Aesthetic, high capacity</td><td class="border p-2">Books, textbooks, 60+ page theses</td></tr><tr><td class="border p-2">Hardcover</td><td class="border p-2">Premium, strong protection</td><td class="border p-2">Hardcover books, commemorative, collector</td></tr><tr><td class="border p-2">Spiral Binding</td><td class="border p-2">360° lay-flat</td><td class="border p-2">Notebooks, recipes, portable manuals</td></tr><tr><td class="border p-2">Loose-leaf</td><td class="border p-2">Removable add pages</td><td class="border p-2">Teaching manuals, work manuals</td></tr><tr><td class="border p-2">Sewn Perfect</td><td class="border p-2">Sturdy, lay-flat</td><td class="border p-2">Premium books, dictionaries</td></tr></tbody></table>
 <h3>2. Paper Selection</h3>
-<p>Text-heavy books suit 80–100gsm book paper — lightweight and comfortable to read. Image-heavy catalogs suit 128–157gsm art paper for excellent color reproduction. Covers recommend 250gsm+ art or specialty paper with lamination or foil stamping.</p>
-
-<h3>3. Cover Finish Recommendations</h3>
-<p>Foil stamping suits brand names and titles for premium feel. Spot UV highlights key visuals. Embossing provides tactile memory. Hardcovers can choose cloth or leather covers with dust jacket designs.</p>`,
-      'ja': `<p>書籍印刷は出版、企業宣伝、美術展示において重要な要素です。自費出版の小説であれ、企業の年次カタログであれ、適切な製本方式、紙、表紙加工の選択が完成品の質感と読書体験に直接影響します。このガイドでは製本方式、紙の選択、表紙加工を解説します。</p>
-
-<h3>1. 製本方式比較</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">製本方式</th><th class="border p-2 text-left">ページ範囲</th><th class="border p-2 text-left">特徴</th><th class="border p-2 text-left">最適な用途</th></tr></thead><tbody>
-<tr><td class="border p-2">中綴じ</td><td class="border p-2">8–64ページ</td><td class="border p-2">手頃｜完全に開ける</td><td class="border p-2">雑誌｜説明書｜薄い画集</td></tr>
-<tr><td class="border p-2">無線綴じ</td><td class="border p-2">64–200ページ</td><td class="border p-2">背が平ら｜タイトル印刷可</td><td class="border p-2">小説｜教科書｜年次報告書</td></tr>
-<tr><td class="border p-2">糸かがり綴じ</td><td class="border p-2">200ページ以上</td><td class="border p-2">耐久｜散りにくい｜完全に開ける</td><td class="border p-2">辞書｜写真集｜厚い画集</td></tr>
-<tr><td class="border p-2">上製本</td><td class="border p-2">制限なし</td><td class="border p-2">硬い表紙｜最高級｜最耐久</td><td class="border p-2">コレクション｜限定版</td></tr>
-</tbody></table>
-
-<h3>2. 紙の選択</h3>
-<p>文字中心の本には80–100gの書籍紙が適し、軽量で読みやすいです。画像中心の画集には128–157gのコート紙が適し、色彩再現が抜群です。表紙は250g以上のコート紙または特殊紙を推奨し、ラミネートや箔押しで質感を向上させます。</p>
-
-<h3>3. 表紙加工の推奨</h3>
-<p>箔押しはブランド名やタイトルに高級感を演出します。局部UVは重要なビジュアルを強調します。エンボスは触感の記憶を残します。上製本は布地や革の表紙を選べ、帯や防塵カバーのデザインも可能です。</p>`,
-  },
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Cover: 250-300g art paper / matte lamination</strong>: Standard</li><li><strong>Cover: Specialty paper + foil</strong>: Premium choice</li><li><strong>Inner: 80g woodfree</strong>: Economical, novels</li><li><strong>Inner: 105g woodfree</strong>: Textbooks, reference</li><li><strong>Inner: 128g art paper</strong>: Catalogs, magazines</li><li><strong>Inner: 157g art paper</strong>: Premium catalogs</li></ul>
+<h3>3. Cover Finishes</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>Glossy / Matte Lamination</strong>: Basic protection, most economical</li><li><strong>Spot UV</strong>: Highlight logo and main visuals</li><li><strong>Foil Stamping (Gold/Silver)</strong>: Title + logo premium</li><li><strong>Embossing / Debossing</strong>: Dimensional tactile, unique brand memory</li><li><strong>Foil + Emboss</strong>: Ultimate premium combination, craftwork level</li><li><strong>Cloth Hardcover</strong>: Cloth-wrapped shell, classic books</li></ol>
+<h3>4. Quantity & Pricing</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Quantity</th><th class="border p-2 text-left">Per Copy</th><th class="border p-2 text-left">Best For</th></tr></thead><tbody><tr><td class="border p-2">50-100 copies</td><td class="border p-2">US$10-20/copy</td><td class="border p-2">Self-publishing, commemorative</td></tr><tr><td class="border p-2">200-500 copies</td><td class="border p-2">US$5-10/copy</td><td class="border p-2">Brand manual, corporate publications</td></tr><tr><td class="border p-2">500-1000 copies</td><td class="border p-2">US$3-6/copy</td><td class="border p-2">Textbooks, industry reports</td></tr><tr><td class="border p-2">2000+ copies</td><td class="border p-2">US$2-4/copy</td><td class="border p-2">Large-scale commercial print</td></tr></tbody></table>
+<h3>5. Design Tips</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Page Count</strong>: Saddle stitch must be multiple of 4</li><li><strong>Binding Allowance</strong>: Perfect binding needs 1.2cm inner margin</li><li><strong>Bleed</strong>: 3mm all sides, avoid white edges</li><li><strong>Color Separation</strong>: CMYK mode, RGB not printable</li><li><strong>Image Resolution</strong>: 300dpi for clarity</li><li><strong>Font Embedding / Outline</strong>: Avoid missing fonts</li></ul>
+<h3>6. Frequently Asked Questions</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：Can I print 50 copies only?</strong><br/>A：Yes, digital printing suits small quantity. But per-copy cost higher.</p><p><strong>Q：Saddle stitch vs perfect binding?</strong><br/>A：Saddle stitch cheaper but limit pages; perfect binding higher capacity but +US$0.5-1.5/copy.</p><p><strong>Q：What files are needed?</strong><br/>A：PDF primarily (outlined + embedded fonts); AI / INDD also accepted.</p><p><strong>Q：What's the most expensive for hardcover?</strong><br/>A：Depending on size + finish, starts from US$25-65/copy.</p></div>
+<p>Want more on book printing? Contact <a href="https://wa.me/8618126380255" target="_blank">ZprintPro via WhatsApp</a> for a quote!</p>`,
+      'ja': `<p>書籍印刷は文化継承の重要な担い手です。企業レポート、ブランドマニュアル、教材、個人出版まで、適切な製本、用紙、印刷工程の選択が重要です。本記事は製本、用紙選択、表紙加工、部数/価格、デザイン要点、印刷会社選択の 6 つの側面から香港書籍印刷を体系的に整理します。</p>
+<h3>一、主な製本方式の比較</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">製本</th><th class="border p-2 text-left">特徴</th><th class="border p-2 text-left">適用</th></tr></thead><tbody><tr><td class="border p-2">中綴じ</td><td class="border p-2">コスト最低、平置</td><td class="border p-2">カタログ、雑誌、32-64 ページ冊子</td></tr><tr><td class="border p-2">無線綴じ</td><td class="border p-2">美しい、大容量</td><td class="border p-2">書籍、教材、論文 60+ ページ</td></tr><tr><td class="border p-2">上製本（ハードカバー）</td><td class="border p-2">高級、保護力強</td><td class="border p-2">上製本、記念冊、コレクション</td></tr><tr><td class="border p-2">スパイラル製本</td><td class="border p-2">360 度平置</td><td class="border p-2">ノート、レシピ、ポータブルマニュアル</td></tr><tr><td class="border p-2">ルーズリーフ</td><td class="border p-2">取り外し追加可</td><td class="border p-2">教学マニュアル、ワークマニュアル</td></tr><tr><td class="border p-2">糸かがり無線綴じ</td><td class="border p-2">丈夫、平置</td><td class="border p-2">高級書籍、辞書</td></tr></tbody></table>
+<h3>二、用紙選択詳細</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>表紙：250-300g アート紙 / マットラミネート</strong>：標準</li><li><strong>表紙：特殊紙 + 箔押し</strong>：高級書籍定番</li><li><strong>本文：80g 書籍用紙</strong>：経済的、長編小説</li><li><strong>本文：105g 書籍用紙</strong>：教材、参考書</li><li><strong>本文：128g アート紙</strong>：カタログ、雑誌</li><li><strong>本文：157g アート紙</strong>：高級カタログ</li></ul>
+<h3>三、表紙加工選択</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>光沢 / マットラミネート</strong>：基本保護、最経済</li><li><strong>スポット UV</strong>：ロゴ・主視覚を強調</li><li><strong>箔押し（金 / 銀）</strong>：書名 + ロゴの高級呈示</li><li><strong>エンボス / デボス</strong>：立体触感、独特ブランド記憶</li><li><strong>箔 + エンボス</strong>：究極高級組合せ、工芸品級</li><li><strong>布クロス</strong>：布張り表紙、古典書籍</li></ol>
+<h3>四、部数と価格対応</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">部数</th><th class="border p-2 text-left">単価</th><th class="border p-2 text-left">適用</th></tr></thead><tbody><tr><td class="border p-2">50-100 部</td><td class="border p-2">1 部 HK$80-150</td><td class="border p-2">個人出版、記念冊</td></tr><tr><td class="border p-2">200-500 部</td><td class="border p-2">1 部 HK$40-80</td><td class="border p-2">ブランドマニュアル、社内出版物</td></tr><tr><td class="border p-2">500-1000 部</td><td class="border p-2">1 部 HK$25-50</td><td class="border p-2">教材、業界レポート</td></tr><tr><td class="border p-2">2000+ 部</td><td class="border p-2">1 部 HK$15-30</td><td class="border p-2">大規模商業印刷</td></tr></tbody></table>
+<h3>五、デザイン要点</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>ページ数計算</strong>：中綴じは 4 の倍数必須</li><li><strong>製本余白</strong>：無線綴じは 1.2cm 内側余白必要</li><li><strong>ブリード</strong>：4 辺 3mm、裁切後白縁回避</li><li><strong>色分解</strong>：CMYK モード、RGB 印刷不可</li><li><strong>画像解像度</strong>：300dpi 清晰</li><li><strong>フォント埋め込み / アウトライン化</strong>：フォント欠落防止</li></ul>
+<h3>六、よくある質問</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：小ロット 50 部でも頼めますか？</strong><br/>A：可能。デジタル印刷が小ロット対応。ただし単価高め。</p><p><strong>Q：中綴じ vs 無線綴じ？</strong><br/>A：中綴じ低コストだがページ制限、無線綴じ大容量だが 1 部 HK$5-10 高。</p><p><strong>Q：必要なファイルは？</strong><br/>A：PDF 主（テキストアウトライン + フォント埋め込み）、AI / INDD も対応。</p><p><strong>Q：上製本の最高額は？</strong><br/>A：サイズ + 加工次第、HK$200-500/部 から。</p></div>
+<p>書籍印刷をもっと知りたい？今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 見積もり！</p>`
+    ,
   },
 
   // ========== MENUS ==========
@@ -846,52 +583,49 @@ export const buyingGuides: BuyingGuide[] = [
     date: '2025-02-10',
     relatedProducts: ['pvc-menus', 'laminated-menus', 'hard-sleeve-menus', 'leather-menus', 'wooden-menus'],
     content: {
-      'zh-hk': `<p>餐牌係餐廳與顧客之間嘅第一道溝通橋樑。一個設計精美、耐用易清潔嘅餐牌，不僅能夠提升顧客點餐體驗，更能夠傳遞品牌格調。本文從材質選擇、工藝加工、耐用度維護三個維度，為您拆解餐牌印刷的選購要點。</p>
-
-<h3>一、餐牌材質對比</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">材質</th><th class="border p-2 text-left">特點</th><th class="border p-2 text-left">優點</th><th class="border p-2 text-left">適合餐廳</th></tr></thead><tbody>
-<tr><td class="border p-2">PVC 餐牌</td><td class="border p-2">塑料材質、完全防水</td><td class="border p-2">最耐用、可擦洗、最經濟</td><td class="border p-2">茶餐廳、快餐店、酒樓</td></tr>
-<tr><td class="border p-2">過膠餐牌</td><td class="border p-2">紙張覆膜、防水防污</td><td class="border p-2">色彩鮮豔、質感較好</td><td class="border p-2">西餐廳、甜品店、酒吧</td></tr>
-<tr><td class="border p-2">硬膠套餐牌</td><td class="border p-2">硬質保護、可更換內頁</td><td class="border p-2">長期使用、內容可更新</td><td class="border p-2">連鎖餐廳、酒店、會所</td></tr>
-<tr><td class="border p-2">皮革餐牌</td><td class="border p-2">真皮或仿皮封面</td><td class="border p-2">最高級感、品牌提升</td><td class="border p-2">高級西餐、日本料理、精品咖啡</td></tr>
-</tbody></table>
-
-<h3>二、工藝加工推薦</h3>
-<p>圓角裁切避免刮傷顧客；燙金餐廳名稱提升品牌辨識度；QR Code 電子菜單整合減少印刷成本。對於需要頻繁更新價格的餐廳，硬膠套或活頁夾設計是最佳選擇。</p>
-
-<h3>三、耐用度與維護</h3>
-<p>PVC 和過膠餐牌可用濕布直接擦拭清潔；皮革餐牌需定期使用皮革護理劑保養；木質餐牌避免長時間浸泡。建議每 6–12 個月檢查餐牌狀態，及時更換破損頁面。</p>`,
-      'en': `<p>A menu is the first communication bridge between a restaurant and its customers. A well-designed, durable, and easy-to-clean menu not only enhances the ordering experience but also conveys brand sophistication. This guide covers material selection, finishing options, and durability maintenance.</p>
-
-<h3>1. Menu Material Comparison</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Material</th><th class="border p-2 text-left">Features</th><th class="border p-2 text-left">Advantages</th><th class="border p-2 text-left">Best For</th></tr></thead><tbody>
-<tr><td class="border p-2">PVC Menu</td><td class="border p-2">Plastic, fully waterproof</td><td class="border p-2">Most durable, wipeable, most economical</td><td class="border p-2">Cha chaan teng, fast food, restaurants</td></tr>
-<tr><td class="border p-2">Laminated Menu</td><td class="border p-2">Paper with lamination</td><td class="border p-2">Vibrant colors, better feel</td><td class="border p-2">Western restaurants, dessert shops, bars</td></tr>
-<tr><td class="border p-2">Hard Plastic Sleeve</td><td class="border p-2">Rigid protection, replaceable inserts</td><td class="border p-2">Long-term use, content updatable</td><td class="border p-2">Chain restaurants, hotels, clubs</td></tr>
-<tr><td class="border p-2">Leather Menu</td><td class="border p-2">Genuine or faux leather cover</td><td class="border p-2">Premium feel, brand elevation</td><td class="border p-2">Fine dining, Japanese cuisine, boutique cafes</td></tr>
-</tbody></table>
-
-<h3>2. Finishing Recommendations</h3>
-<p>Rounded corners prevent customer scratches; foil-stamped restaurant names boost brand recognition; QR code digital menu integration reduces printing costs. For restaurants needing frequent price updates, hard plastic sleeves or binder designs are optimal.</p>
-
-<h3>3. Durability & Maintenance</h3>
-<p>PVC and laminated menus can be wiped clean with a damp cloth; leather menus require periodic conditioning; wooden menus avoid prolonged soaking. Inspect menu condition every 6–12 months and replace damaged pages promptly.</p>`,
-      'ja': `<p>メニューはレストランと顧客の間の最初のコミュニケーション橋渡しです。デザインが美しく、耐久性があり、お手入れが簡単なメニューは、注文体験を向上させるだけでなく、ブランドの格调を伝えます。このガイドでは材質選択、加工オプション、耐久性の維持を解説します。</p>
-
-<h3>1. メニュー材質比較</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">材質</th><th class="border p-2 text-left">特徴</th><th class="border p-2 text-left">利点</th><th class="border p-2 text-left">最適なレストラン</th></tr></thead><tbody>
-<tr><td class="border p-2">PVCメニュー</td><td class="border p-2">プラスチック、完全防水</td><td class="border p-2">最も耐久｜拭き取り可｜最も手頃</td><td class="border p-2">茶餐廳｜ファストフード｜飲茶</td></tr>
-<tr><td class="border p-2">ラミネートメニュー</td><td class="border p-2">紙にラミネート</td><td class="border p-2">発色鮮やか｜質感良好</td><td class="border p-2">洋食｜スイーツ｜バー</td></tr>
-<tr><td class="border p-2">硬質プラスチックケース</td><td class="border p-2">硬質保護｜中身交換可</td><td class="border p-2">長期使用｜内容更新可</td><td class="border p-2">チェーン店｜ホテル｜クラブ</td></tr>
-<tr><td class="border p-2">革メニュー</td><td class="border p-2">本革または合成革</td><td class="border p-2">最高級感｜ブランド向上</td><td class="border p-2">高級洋食｜日本料理｜ブティック</td></tr>
-</tbody></table>
-
-<h3>2. 加工の推奨</h3>
-<p>丸角裁切は顧客の傷つきを防ぎます。箔押しのレストラン名はブランド認知度を向上させます。QRコード電子メニューの統合は印刷コストを削減します。価格を頻繁に更新する必要があるレストランには、硬質ケースやバインダー設計が最適です。</p>
-
-<h3>3. 耐久性とメンテナンス</h3>
-<p>PVCとラミネートメニューは湿った布で拭き取り可能です。革メニューは定期的なケアが必要です。木製メニューは長時間の浸水を避けてください。6–12ヶ月ごとにメニューの状態を確認し、破損したページを速やかに交換してください。</p>`,
-  },
+      'zh-hk': `<p>餐牌印刷是餐廳品牌的視覺名片。一份高質感的餐牌不僅能讓菜品看起來更美味，還能提升整體用餐體驗和品牌形象。本文從材質、尺寸、防水處理、印刷工藝、設計要點、選購決策 6 個維度為您系統拆解香港餐牌印刷選購全攻略。</p>
+<h3>一、餐牌材質選擇</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">材質</th><th class="border p-2 text-left">特點</th><th class="border p-2 text-left">適合</th></tr></thead><tbody><tr><td class="border p-2">PVC 餐牌</td><td class="border p-2">防水、防油、可擦拭</td><td class="border p-2">火鍋、茶餐廳、海鮮酒樓</td></tr><tr><td class="border p-2">過膠餐牌</td><td class="border p-2">防水、耐磨、價格實惠</td><td class="border p-2">快餐、食肆、咖啡店</td></tr><tr><td class="border p-2">硬膠套餐牌</td><td class="border p-2">可換內頁、經濟</td><td class="border p-2">經常更換菜單的餐廳</td></tr><tr><td class="border p-2">皮革餐牌</td><td class="border p-2">高檔、質感優秀</td><td class="border p-2">高端餐廳、酒店、會所</td></tr><tr><td class="border p-2">銅版紙過膠</td><td class="border p-2">色彩鮮豔、傳統</td><td class="border p-2">西餐、咖啡店、輕食</td></tr><tr><td class="border p-2">絨布裱餐牌</td><td class="border p-2">極致高檔、觸感柔軟</td><td class="border p-2">米芝蓮、私房菜</td></tr></tbody></table>
+<h3>二、餐牌尺寸</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>A4 (210 × 297mm)</strong>：最常用，西餐菜單</li><li><strong>A5 (148 × 210mm)</strong>：輕食、咖啡店、套餐</li><li><strong>A3 (297 × 420mm)</strong>：火鍋、酒樓大菜單</li><li><strong>三摺 (DL)</strong>：便於桌邊放置</li><li><strong>雙面</strong>：菜單 + 飲品單 / 甜品單</li><li><strong>多頁書本型</strong>：含前菜 / 主菜 / 甜品</li></ul>
+<h3>三、防水處理方式</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>雙面過膠</strong>：最經濟的防水方式，可擦拭</li><li><strong>單面啞膠 / 光膠</strong>：基本防護</li><li><strong>PVC 全包邊</strong>：圓角處理，防磨損</li><li><strong>PVC 餐牌 + 替換內頁</strong>：內頁用普通紙張，外殼防水耐用</li><li><strong>防水銅版紙</strong>：內頁直接防水，但造價較高</li><li><strong>防水塑封 (Holographic)</strong>：視覺高檔</li></ol>
+<h3>四、印刷工藝選擇</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">工藝</th><th class="border p-2 text-left">特點</th><th class="border p-2 text-left">適合</th></tr></thead><tbody><tr><td class="border p-2">四色印刷（CMYK）</td><td class="border p-2">色彩豐富、照片級</td><td class="border p-2">菜品照片展示</td></tr><tr><td class="border p-2">專色印刷（Pantone）</td><td class="border p-2">品牌標準色精準</td><td class="border p-2">品牌 Logo 統一</td></tr><tr><td class="border p-2">UV 局部上光</td><td class="border p-2">菜品照片局部亮光</td><td class="border p-2">突出主推菜品</td></tr><tr><td class="border p-2">燙金 / 燙銀</td><td class="border p-2">高檔、品牌升級</td><td class="border p-2">高端餐廳</td></tr><tr><td class="border p-2">圓角處理</td><td class="border p-2">手感柔和、防磨損</td><td class="border p-2">所有餐牌</td></tr><tr><td class="border p-2">打孔 / 活頁</td><td class="border p-2">可拆卸替換</td><td class="border p-2">多頁餐牌</td></tr></tbody></table>
+<h3>五、設計要點</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>菜品攝影</strong>：自然光拍攝，色溫 5000-6000K</li><li><strong>字體層次</strong>：菜名大、價格中、描述小</li><li><strong>分類邏輯</strong>：前菜 / 主菜 / 甜品清晰分區</li><li><strong>QR Code</strong>：電子菜單、預訂連結</li><li><strong>品牌統一</strong>：餐廳 Logo + 標準色 + 字體一致</li><li><strong>語言版本</strong>：中英對照、繁簡對照、多語言</li></ul>
+<h3>六、常見問題</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：餐牌最少可以印幾多張？</strong><br/>A：100 張起訂，PVC 餐牌可單張訂製。</p><p><strong>Q：PVC 餐牌耐用嗎？</strong><br/>A：好的 PVC 餐牌可用 2-3 年，防水防油可擦拭。</p><p><strong>Q：需要什麼文件？</strong><br/>A：PDF（轉曲線）+ 300dpi 圖片 + CMYK。</p><p><strong>Q：餐牌可以包含電子菜單 QR Code 嗎？</strong><br/>A：可以。智印雲可直接加入 QR Code 印刷。</p></div>
+<p>想了解更多餐牌印刷？立即 <a href="https://wa.me/8618126380255" target="_blank">WhatsApp 聯絡智印雲</a> 獲取報價！</p>`,
+      'en': `<p>Menu printing is the visual calling card of a restaurant brand. A premium menu not only makes dishes look more appetizing but also elevates the overall dining experience and brand image. This article systematically breaks down HK menu printing across 6 dimensions: material, size, waterproofing, printing process, design tips, and decision framework.</p>
+<h3>1. Menu Material Selection</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Material</th><th class="border p-2 text-left">Features</th><th class="border p-2 text-left">Best For</th></tr></thead><tbody><tr><td class="border p-2">PVC Menu</td><td class="border p-2">Waterproof, oil-proof, wipeable</td><td class="border p-2">Hotpot, cha chaan teng, seafood</td></tr><tr><td class="border p-2">Laminated Menu</td><td class="border p-2">Waterproof, durable, affordable</td><td class="border p-2">Fast food, casual dining, coffee shop</td></tr><tr><td class="border p-2">Plastic Sleeve</td><td class="border p-2">Replaceable inner pages, economical</td><td class="border p-2">Restaurants with frequent menu changes</td></tr><tr><td class="border p-2">Leather Menu</td><td class="border p-2">Premium, fine texture</td><td class="border p-2">High-end restaurants, hotels, clubs</td></tr><tr><td class="border p-2">Laminated Art Paper</td><td class="border p-2">Vibrant, traditional</td><td class="border p-2">Western dining, coffee, light meals</td></tr><tr><td class="border p-2">Velvet-Laminated</td><td class="border p-2">Ultimate premium, soft tactile</td><td class="border p-2">Michelin, private kitchen</td></tr></tbody></table>
+<h3>2. Menu Sizes</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>A4 (210 × 297mm)</strong>: Most common, Western menu</li><li><strong>A5 (148 × 210mm)</strong>: Light meals, coffee, set meals</li><li><strong>A3 (297 × 420mm)</strong>: Hotpot, large restaurant menus</li><li><strong>Tri-fold (DL)</strong>: Easy to place at table</li><li><strong>Double-sided</strong>: Menu + drinks/desserts</li><li><strong>Multi-page Booklet</strong>: Appetizers/mains/desserts</li></ul>
+<h3>3. Waterproofing Methods</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>Double-sided Lamination</strong>: Most economical waterproof, wipeable</li><li><strong>Single-side Matte / Glossy Lamination</strong>: Basic protection</li><li><strong>PVC Full Wrap</strong>: Rounded corners, abrasion-resistant</li><li><strong>PVC Outer + Replaceable Inner</strong>: Inner regular paper, outer waterproof durable</li><li><strong>Waterproof Art Paper</strong>: Inner directly waterproof, higher cost</li><li><strong>Holographic Lamination</strong>: Premium visuals</li></ol>
+<h3>4. Printing Processes</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Process</th><th class="border p-2 text-left">Features</th><th class="border p-2 text-left">Best For</th></tr></thead><tbody><tr><td class="border p-2">4-color (CMYK)</td><td class="border p-2">Rich colors, photo-level</td><td class="border p-2">Dish photo display</td></tr><tr><td class="border p-2">Spot Color (Pantone)</td><td class="border p-2">Brand standard color accurate</td><td class="border p-2">Unified brand logo</td></tr><tr><td class="border p-2">Spot UV</td><td class="border p-2">Local glossy on dish photo</td><td class="border p-2">Highlight featured dishes</td></tr><tr><td class="border p-2">Foil Stamping (Gold/Silver)</td><td class="border p-2">Premium, brand upgrade</td><td class="border p-2">High-end restaurants</td></tr><tr><td class="border p-2">Rounded Corners</td><td class="border p-2">Soft tactile, anti-wear</td><td class="border p-2">All menus</td></tr><tr><td class="border p-2">Hole Punch / Loose-leaf</td><td class="border p-2">Replaceable</td><td class="border p-2">Multi-page menus</td></tr></tbody></table>
+<h3>5. Design Tips</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Food Photography</strong>: Natural light, color temp 5000-6000K</li><li><strong>Font Hierarchy</strong>: Dish name large, price medium, description small</li><li><strong>Category Logic</strong>: Clear appetizer / main / dessert sections</li><li><strong>QR Code</strong>: E-menu, reservation link</li><li><strong>Brand Consistency</strong>: Logo + standard colors + fonts aligned</li><li><strong>Language Versions</strong>: Bilingual, traditional/simplified, multilingual</li></ul>
+<h3>6. Frequently Asked Questions</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：What is the MOQ for menus?</strong><br/>A：100 pieces; PVC menu can be single-piece custom.</p><p><strong>Q：Are PVC menus durable?</strong><br/>A：Quality PVC menu lasts 2-3 years, waterproof and oil-proof wipeable.</p><p><strong>Q：What files are needed?</strong><br/>A：PDF (outlined) + 300dpi images + CMYK.</p><p><strong>Q：Can the menu include QR code for e-menu?</strong><br/>A：Yes, ZprintPro can directly print QR codes.</p></div>
+<p>Want more on menu printing? Contact <a href="https://wa.me/8618126380255" target="_blank">ZprintPro via WhatsApp</a> for a quote!</p>`,
+      'ja': `<p>メニュー印刷はレストランブランドのビジュアル名刺。高品質なメニューは料理をより美味しく見せ、食事体験とブランドイメージ全体を向上させます。本記事は材質、サイズ、防水処理、印刷工程、デザイン要点、選定意思決定の 6 つの側面から香港メニュー印刷を体系的に整理します。</p>
+<h3>一、メニュー材質選択</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">材質</th><th class="border p-2 text-left">特徴</th><th class="border p-2 text-left">適用</th></tr></thead><tbody><tr><td class="border p-2">PVC メニュー</td><td class="border p-2">防水、防油、拭ける</td><td class="border p-2">火鍋、香港式、海鮮</td></tr><tr><td class="border p-2">ラミネートメニュー</td><td class="border p-2">防水、耐久、低価格</td><td class="border p-2">ファーストフード、カジュアル、コーヒー</td></tr><tr><td class="border p-2">プラスチックスリーブ</td><td class="border p-2">差し替え可能、経済的</td><td class="border p-2">メニュー頻繁変更店舗</td></tr><tr><td class="border p-2">革メニュー</td><td class="border p-2">高級、優秀質感</td><td class="border p-2">高級レストラン、ホテル、クラブ</td></tr><tr><td class="border p-2">アート紙ラミネート</td><td class="border p-2">色彩鮮やか、伝統的</td><td class="border p-2">洋食、コーヒー、ライトミール</td></tr><tr><td class="border p-2">ベルベットラミネート</td><td class="border p-2">究極高級、柔らか触感</td><td class="border p-2">ミシュラン、プライベートキッチン</td></tr></tbody></table>
+<h3>二、メニューサイズ</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>A4 (210 × 297mm)</strong>：最も一般的、洋食メニュー</li><li><strong>A5 (148 × 210mm)</strong>：ライトミール、コーヒー、セット</li><li><strong>A3 (297 × 420mm)</strong>：火鍋、大型レストランメニュー</li><li><strong>三つ折り（DL）</strong>：テーブル設置便利</li><li><strong>両面</strong>：メニュー + ドリンク / デザート</li><li><strong>多ページ冊子型</strong>：前菜 / メイン / デザート含む</li></ul>
+<h3>三、防水処理方式</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>両面ラミネート</strong>：最も経済的防水、拭ける</li><li><strong>片面マット / 光沢ラミネート</strong>：基本保護</li><li><strong>PVC 全包</strong>：角丸処理、耐摩耗</li><li><strong>PVC 外 + 差し替え内</strong>：内は普通用紙、外は防水耐久</li><li><strong>防水アート紙</strong>：内直接防水、高価格</li><li><strong>ホログラムラミネート</strong>：視覚高級感</li></ol>
+<h3>四、印刷工程の選択</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">工程</th><th class="border p-2 text-left">特徴</th><th class="border p-2 text-left">適用</th></tr></thead><tbody><tr><td class="border p-2">4 色印刷（CMYK）</td><td class="border p-2">色彩豊富、写真レベル</td><td class="border p-2">料理写真展示</td></tr><tr><td class="border p-2">特色印刷（Pantone）</td><td class="border p-2">ブランド標準色精緻</td><td class="border p-2">ブランドロゴ統一</td></tr><tr><td class="border p-2">スポット UV</td><td class="border p-2">料理写真局部光沢</td><td class="border p-2">推し料理強調</td></tr><tr><td class="border p-2">箔押し（金 / 銀）</td><td class="border p-2">高級、ブランド格上げ</td><td class="border p-2">高級レストラン</td></tr><tr><td class="border p-2">角丸処理</td><td class="border p-2">柔らか触感、耐摩耗</td><td class="border p-2">全メニュー</td></tr><tr><td class="border p-2">穴あけ / ルーズリーフ</td><td class="border p-2">差し替え可</td><td class="border p-2">多ページメニュー</td></tr></tbody></table>
+<h3>五、デザイン要点</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>料理写真</strong>：自然光撮影、色温度 5000-6000K</li><li><strong>フォント階層</strong>：料理名大、価格中、説明小</li><li><strong>分類ロジック</strong>：前菜 / メイン / デザート明確に区分</li><li><strong>QR コード</strong>：電子メニュー、予約リンク</li><li><strong>ブランド統一</strong>：ロゴ + 標準色 + フォント一貫</li><li><strong>言語バージョン</strong>：日中英対訳、繁体簡体、多言語</li></ul>
+<h3>六、よくある質問</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：メニューの最小注文数量は？</strong><br/>A：100 枚から。PVC メニューは 1 枚でもカスタム可。</p><p><strong>Q：PVC メニューは耐久性ありますか？</strong><br/>A：高品質 PVC は 2-3 年使える、防水防油拭ける。</p><p><strong>Q：必要なファイルは？</strong><br/>A：PDF（テキストアウトライン化）+ 300dpi 画像 + CMYK。</p><p><strong>Q：メニューに電子メニュー QR コードを入れられますか？</strong><br/>A：はい。智印雲は直接 QR コード印刷対応可。</p></div>
+<p>メニュー印刷をもっと知りたい？今すぐ <a href="https://wa.me/8618126380255" target="_blank">WhatsApp で智印雲に連絡</a> 見積もり！</p>`
+    ,
   }
 
 ];

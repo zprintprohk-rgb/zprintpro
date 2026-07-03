@@ -1,0 +1,478 @@
+[
+  {
+    "slug": "book-buying-guide",
+    "intro": {
+      "zh-hk": "書籍印刷是文化傳承的重要載體。無論是公司年報、品牌手冊、教輔材料還是個人出版，選擇合適的裝訂方式、紙張材質和印刷工藝都是關鍵。本文從裝訂方式、紙張選擇、封面工藝、印量價格、設計要點、印刷廠選擇 6 個維度為您系統拆解香港書籍印刷選購全攻略。",
+      "en": "Book printing is an important vehicle for cultural heritage. Whether corporate reports, brand manuals, training materials, or self-publishing, choosing the right binding, paper, and printing processes is critical. This article systematically breaks down HK book printing across 6 dimensions: binding, paper, cover finish, quantity/pricing, design tips, and printer selection.",
+      "ja": "書籍印刷は文化継承の重要な担い手です。企業レポート、ブランドマニュアル、教材、個人出版まで、適切な製本、用紙、印刷工程の選択が重要です。本記事は製本、用紙選択、表紙加工、部数/価格、デザイン要点、印刷会社選択の 6 つの側面から香港書籍印刷を体系的に整理します。"
+    },
+    "zh-hk": {
+      "sections": [
+        {
+          "tag": "h3",
+          "body": "一、常見裝訂方式對比"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "裝訂方式",
+            "特點",
+            "適合"
+          ],
+          "rows": [
+            [
+              "騎馬釘",
+              "成本最低、平整好翻",
+              "畫冊、雜誌、小冊子 32-64 頁"
+            ],
+            [
+              "膠裝（無線膠裝）",
+              "美觀、容量大",
+              "書刊、教材、論文 60+ 頁"
+            ],
+            [
+              "精裝（硬殼）",
+              "高端、保護強",
+              "精裝書、紀念冊、收藏品"
+            ],
+            [
+              "螺旋裝訂",
+              "可 360 度翻",
+              "筆記本、食譜、便攜手冊"
+            ],
+            [
+              "活頁裝訂",
+              "可拆卸增頁",
+              "教學手冊、工作手冊"
+            ],
+            [
+              "鎖線膠裝",
+              "結實耐用、可平攤",
+              "高檔書刊、字典"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "二、紙張選擇詳解"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>封面紙：250-300g 銅版紙 / 啞膠過膠</strong>：標準",
+            "<strong>封面紙：特種紙 + 燙金</strong>：高端書籍首選",
+            "<strong>內頁紙：80g 書紙</strong>：經濟、長篇小說",
+            "<strong>內頁紙：105g 書紙</strong>：教材、工具書",
+            "<strong>內頁紙：128g 銅版紙</strong>：畫冊、雜誌",
+            "<strong>內頁紙：157g 銅版紙</strong>：高檔畫冊"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "三、封面工藝選擇"
+        },
+        {
+          "tag": "ol",
+          "items": [
+            "<strong>光膠 / 啞膠</strong>：基礎保護，最經濟",
+            "<strong>UV 局部上光</strong>：突出 Logo 和主視覺",
+            "<strong>燙金 / 燙銀</strong>：書名 + Logo 高檔呈現",
+            "<strong>擊凸 / 壓凹</strong>：立體觸感，獨特品牌記憶",
+            "<strong>燙金 + 擊凸</strong>：極致高檔組合，工藝品級",
+            "<strong>布面精裝</strong>：布紋裱殼，古典書籍"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "四、印量與價格對應"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "印量",
+            "單本成本",
+            "適合"
+          ],
+          "rows": [
+            [
+              "50-100 本",
+              "HK$80-150/本",
+              "個人出版、紀念冊"
+            ],
+            [
+              "200-500 本",
+              "HK$40-80/本",
+              "品牌手冊、公司刊物"
+            ],
+            [
+              "500-1000 本",
+              "HK$25-50/本",
+              "教材、行業報告"
+            ],
+            [
+              "2000+ 本",
+              "HK$15-30/本",
+              "大規模商業印刷"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "五、設計要點"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>頁碼計算</strong>：騎馬釘頁數必須是 4 的倍數",
+            "<strong>裝訂線預留</strong>：膠裝需預留 1.2cm 內邊距",
+            "<strong>出血位</strong>：四周 3mm，避免裁切後白邊",
+            "<strong>分色與色彩</strong>：CMYK 模式，RGB 不可印刷",
+            "<strong>圖片解析度</strong>：300dpi 保證清晰",
+            "<strong>字體嵌入 / 轉曲線</strong>：避免字體丟失"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "六、常見問題"
+        },
+        {
+          "tag": "faq",
+          "qas": [
+            {
+              "q": "小批量 50 本可以印嗎？",
+              "a": "可以，數碼印刷可少量。但每本單價較高。"
+            },
+            {
+              "q": "騎馬釘 vs 膠裝？",
+              "a": "騎馬釘成本低但限頁數，膠裝容量大但單本貴 HK$5-10。"
+            },
+            {
+              "q": "需要什麼文件？",
+              "a": "PDF 為主（轉曲線 + 嵌入字體），AI / INDD 可接受。"
+            },
+            {
+              "q": "精裝書最貴多少？",
+              "a": "視乎尺寸 + 工藝，HK$200-500/本起。"
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "body": "想了解更多書籍印刷？立即 <a href=\"https://wa.me/8618126380255\" target=\"_blank\">WhatsApp 聯絡智印雲</a> 獲取報價！"
+        }
+      ]
+    },
+    "en": {
+      "sections": [
+        {
+          "tag": "h3",
+          "body": "1. Common Binding Options"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "Binding",
+            "Features",
+            "Best For"
+          ],
+          "rows": [
+            [
+              "Saddle Stitch",
+              "Lowest cost, lays flat",
+              "Catalogs, magazines, 32-64 page booklets"
+            ],
+            [
+              "Perfect Binding",
+              "Aesthetic, high capacity",
+              "Books, textbooks, 60+ page theses"
+            ],
+            [
+              "Hardcover",
+              "Premium, strong protection",
+              "Hardcover books, commemorative, collector"
+            ],
+            [
+              "Spiral Binding",
+              "360° lay-flat",
+              "Notebooks, recipes, portable manuals"
+            ],
+            [
+              "Loose-leaf",
+              "Removable add pages",
+              "Teaching manuals, work manuals"
+            ],
+            [
+              "Sewn Perfect",
+              "Sturdy, lay-flat",
+              "Premium books, dictionaries"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "2. Paper Selection"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>Cover: 250-300g art paper / matte lamination</strong>: Standard",
+            "<strong>Cover: Specialty paper + foil</strong>: Premium choice",
+            "<strong>Inner: 80g woodfree</strong>: Economical, novels",
+            "<strong>Inner: 105g woodfree</strong>: Textbooks, reference",
+            "<strong>Inner: 128g art paper</strong>: Catalogs, magazines",
+            "<strong>Inner: 157g art paper</strong>: Premium catalogs"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "3. Cover Finishes"
+        },
+        {
+          "tag": "ol",
+          "items": [
+            "<strong>Glossy / Matte Lamination</strong>: Basic protection, most economical",
+            "<strong>Spot UV</strong>: Highlight logo and main visuals",
+            "<strong>Foil Stamping (Gold/Silver)</strong>: Title + logo premium",
+            "<strong>Embossing / Debossing</strong>: Dimensional tactile, unique brand memory",
+            "<strong>Foil + Emboss</strong>: Ultimate premium combination, craftwork level",
+            "<strong>Cloth Hardcover</strong>: Cloth-wrapped shell, classic books"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "4. Quantity & Pricing"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "Quantity",
+            "Per Copy",
+            "Best For"
+          ],
+          "rows": [
+            [
+              "50-100 copies",
+              "US$10-20/copy",
+              "Self-publishing, commemorative"
+            ],
+            [
+              "200-500 copies",
+              "US$5-10/copy",
+              "Brand manual, corporate publications"
+            ],
+            [
+              "500-1000 copies",
+              "US$3-6/copy",
+              "Textbooks, industry reports"
+            ],
+            [
+              "2000+ copies",
+              "US$2-4/copy",
+              "Large-scale commercial print"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "5. Design Tips"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>Page Count</strong>: Saddle stitch must be multiple of 4",
+            "<strong>Binding Allowance</strong>: Perfect binding needs 1.2cm inner margin",
+            "<strong>Bleed</strong>: 3mm all sides, avoid white edges",
+            "<strong>Color Separation</strong>: CMYK mode, RGB not printable",
+            "<strong>Image Resolution</strong>: 300dpi for clarity",
+            "<strong>Font Embedding / Outline</strong>: Avoid missing fonts"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "6. Frequently Asked Questions"
+        },
+        {
+          "tag": "faq",
+          "qas": [
+            {
+              "q": "Can I print 50 copies only?",
+              "a": "Yes, digital printing suits small quantity. But per-copy cost higher."
+            },
+            {
+              "q": "Saddle stitch vs perfect binding?",
+              "a": "Saddle stitch cheaper but limit pages; perfect binding higher capacity but +US$0.5-1.5/copy."
+            },
+            {
+              "q": "What files are needed?",
+              "a": "PDF primarily (outlined + embedded fonts); AI / INDD also accepted."
+            },
+            {
+              "q": "What's the most expensive for hardcover?",
+              "a": "Depending on size + finish, starts from US$25-65/copy."
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "body": "Want more on book printing? Contact <a href=\"https://wa.me/8618126380255\" target=\"_blank\">ZprintPro via WhatsApp</a> for a quote!"
+        }
+      ]
+    },
+    "ja": {
+      "sections": [
+        {
+          "tag": "h3",
+          "body": "一、主な製本方式の比較"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "製本",
+            "特徴",
+            "適用"
+          ],
+          "rows": [
+            [
+              "中綴じ",
+              "コスト最低、平置",
+              "カタログ、雑誌、32-64 ページ冊子"
+            ],
+            [
+              "無線綴じ",
+              "美しい、大容量",
+              "書籍、教材、論文 60+ ページ"
+            ],
+            [
+              "上製本（ハードカバー）",
+              "高級、保護力強",
+              "上製本、記念冊、コレクション"
+            ],
+            [
+              "スパイラル製本",
+              "360 度平置",
+              "ノート、レシピ、ポータブルマニュアル"
+            ],
+            [
+              "ルーズリーフ",
+              "取り外し追加可",
+              "教学マニュアル、ワークマニュアル"
+            ],
+            [
+              "糸かがり無線綴じ",
+              "丈夫、平置",
+              "高級書籍、辞書"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "二、用紙選択詳細"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>表紙：250-300g アート紙 / マットラミネート</strong>：標準",
+            "<strong>表紙：特殊紙 + 箔押し</strong>：高級書籍定番",
+            "<strong>本文：80g 書籍用紙</strong>：経済的、長編小説",
+            "<strong>本文：105g 書籍用紙</strong>：教材、参考書",
+            "<strong>本文：128g アート紙</strong>：カタログ、雑誌",
+            "<strong>本文：157g アート紙</strong>：高級カタログ"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "三、表紙加工選択"
+        },
+        {
+          "tag": "ol",
+          "items": [
+            "<strong>光沢 / マットラミネート</strong>：基本保護、最経済",
+            "<strong>スポット UV</strong>：ロゴ・主視覚を強調",
+            "<strong>箔押し（金 / 銀）</strong>：書名 + ロゴの高級呈示",
+            "<strong>エンボス / デボス</strong>：立体触感、独特ブランド記憶",
+            "<strong>箔 + エンボス</strong>：究極高級組合せ、工芸品級",
+            "<strong>布クロス</strong>：布張り表紙、古典書籍"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "四、部数と価格対応"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "部数",
+            "単価",
+            "適用"
+          ],
+          "rows": [
+            [
+              "50-100 部",
+              "1 部 HK$80-150",
+              "個人出版、記念冊"
+            ],
+            [
+              "200-500 部",
+              "1 部 HK$40-80",
+              "ブランドマニュアル、社内出版物"
+            ],
+            [
+              "500-1000 部",
+              "1 部 HK$25-50",
+              "教材、業界レポート"
+            ],
+            [
+              "2000+ 部",
+              "1 部 HK$15-30",
+              "大規模商業印刷"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "五、デザイン要点"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>ページ数計算</strong>：中綴じは 4 の倍数必須",
+            "<strong>製本余白</strong>：無線綴じは 1.2cm 内側余白必要",
+            "<strong>ブリード</strong>：4 辺 3mm、裁切後白縁回避",
+            "<strong>色分解</strong>：CMYK モード、RGB 印刷不可",
+            "<strong>画像解像度</strong>：300dpi 清晰",
+            "<strong>フォント埋め込み / アウトライン化</strong>：フォント欠落防止"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "六、よくある質問"
+        },
+        {
+          "tag": "faq",
+          "qas": [
+            {
+              "q": "小ロット 50 部でも頼めますか？",
+              "a": "可能。デジタル印刷が小ロット対応。ただし単価高め。"
+            },
+            {
+              "q": "中綴じ vs 無線綴じ？",
+              "a": "中綴じ低コストだがページ制限、無線綴じ大容量だが 1 部 HK$5-10 高。"
+            },
+            {
+              "q": "必要なファイルは？",
+              "a": "PDF 主（テキストアウトライン + フォント埋め込み）、AI / INDD も対応。"
+            },
+            {
+              "q": "上製本の最高額は？",
+              "a": "サイズ + 加工次第、HK$200-500/部 から。"
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "body": "書籍印刷をもっと知りたい？今すぐ <a href=\"https://wa.me/8618126380255\" target=\"_blank\">WhatsApp で智印雲に連絡</a> 見積もり！"
+        }
+      ]
+    }
+  }
+]

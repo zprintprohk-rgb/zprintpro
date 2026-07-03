@@ -1,0 +1,385 @@
+[
+  {
+    "slug": "design-file-specs",
+    "intro": {
+      "zh-hk": "很多設計師和企業市場部在準備印刷文件時都會遇到各種問題：成品邊緣出現白邊、圖片模糊不清、顏色與屏幕顯示差異巨大……這些問題大多源於對印刷文件規範的不了解。本文將詳細講解出血位、分辨率、色彩模式、文件格式、字體處理、出血外設計 6 個核心概念，幫您一次性搞懂印刷文件規範。",
+      "en": "Many designers and corporate marketing teams face issues when preparing print files: white edges appearing on finished prints, blurry images, color vastly different from screen — most come from misunderstanding print specifications. This guide covers six core concepts: bleed, resolution, color mode, file formats, font handling, and special effects.",
+      "ja": "多くのデザイナーや企業マーケティング担当が印刷ファイル準備時に問題に直面：仕上がり端の白縁、画像ぼやけ、画面表示と大きな色差 — 多くは印刷ファイル仕様への理解不足が原因。本記事ではブリード、解像度、カラーモード、ファイル形式、フォント処理、特殊効果という 6 つの核心概念を詳解します。"
+    },
+    "zh-hk": {
+      "sections": [
+        {
+          "tag": "h3",
+          "body": "一、什麼是出血位（Bleed）？"
+        },
+        {
+          "tag": "p",
+          "body": "出血位是指在設計稿中超出成品裁切線的部分。由於印刷後需要裁切，如果設計剛好到邊緣，任何微小的裁切誤差都會導致露出白邊。因此，我們通常需要在成品尺寸外預留 3mm 的出血位。"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "產品",
+            "成品尺寸",
+            "設計尺寸（含出血）"
+          ],
+          "rows": [
+            [
+              "標準名片",
+              "90 × 54mm",
+              "96 × 60mm"
+            ],
+            [
+              "A4 傳單",
+              "210 × 297mm",
+              "216 × 303mm"
+            ],
+            [
+              "A3 海報",
+              "297 × 420mm",
+              "303 × 426mm"
+            ],
+            [
+              "信封",
+              "220 × 110mm",
+              "226 × 116mm"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "二、分辨率：為什麼 300dpi 是標準？"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>72dpi</strong>：僅適用於網頁、社交媒體",
+            "<strong>150dpi</strong>：大型海報、遠距離觀看的印刷品可以接受的最低標準",
+            "<strong>300dpi</strong>：名片、書刊、宣傳單等近距離觀看印刷品的標準",
+            "<strong>600dpi</strong>：極精細印刷品（如藝術複製品、奢侈品包裝）"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "三、CMYK vs RGB"
+        },
+        {
+          "tag": "ol",
+          "items": [
+            "屏幕使用 RGB 色彩模式（紅綠藍光疊加），而印刷使用 CMYK 色彩模式（青品黃黑油墨疊加）",
+            "RGB 的色域比 CMYK 廣，直接印刷 RGB 文件會導致顏色變暗、鮮豔度下降",
+            "建議設計稿全程使用 CMYK，這樣可以提前預見印刷結果",
+            "圖片素材可保持 RGB 編輯，但最終導出 PDF 前必須轉 CMYK"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "四、文件格式建議"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>PDF/X-1a</strong>：最佳選擇，字體嵌入、色彩穩定",
+            "<strong>AI（Adobe Illustrator）</strong>：矢量文件，適合 Logo 和圖形",
+            "<strong>PSD（Photoshop）</strong>：點陣文件，適合照片類設計",
+            "<strong>EPS</strong>：通用矢量格式，兼容性強",
+            "<strong>INDD（InDesign）</strong>：多頁排版專業格式"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "五、字體處理與特殊效果"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>文字轉外框</strong>：AI / PDF 必須將文字轉外框，否則換電腦字體丟失",
+            "<strong>嵌入字體</strong>：PDF 可選擇嵌入所有字體",
+            "<strong>鏤空效果</strong>：避免小於 6pt 的細字（容易糊）",
+            "<strong>極細線條</strong>：避免小於 0.25pt 的細線（容易斷）",
+            "<strong>網格漸變</strong>：避免太密的網格，建議 200dpi 像素層次"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "六、常見問題"
+        },
+        {
+          "tag": "faq",
+          "qas": [
+            {
+              "q": "設計文件需要什麼格式？",
+              "a": "最佳是 PDF/X-1a（轉曲線 + 嵌入字體）。也接受 AI / EPS / PSD。"
+            },
+            {
+              "q": "字體一定要轉外框嗎？",
+              "a": "強烈建議。否則換電腦缺字體會亂碼。"
+            },
+            {
+              "q": "圖片 300dpi 一定要做到嗎？",
+              "a": "建議，小於 200dpi 印刷模糊。大型海報 150dpi 可接受。"
+            },
+            {
+              "q": "RGB 文件能直接印刷嗎？",
+              "a": "不建議。請在設計階段就轉 CMYK 並嵌入 ICC profile。"
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "body": "不確定您的文件是否符合印刷標準？立即 <a href=\"https://wa.me/8618126380255\" target=\"_blank\">WhatsApp 聯絡智印雲</a>，我們提供免費文件檢查服務。"
+        }
+      ]
+    },
+    "en": {
+      "sections": [
+        {
+          "tag": "h3",
+          "body": "1. What is Bleed?"
+        },
+        {
+          "tag": "p",
+          "body": "Bleed is the area beyond the trim line in your design file. Since print requires trimming after production, if your design hits the exact edge, even tiny trim error leaves white edges. Standard practice: 3mm bleed beyond final size."
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "Product",
+            "Final Size",
+            "Design Size (with bleed)"
+          ],
+          "rows": [
+            [
+              "Standard Business Card",
+              "90 × 54mm",
+              "96 × 60mm"
+            ],
+            [
+              "A4 Flyer",
+              "210 × 297mm",
+              "216 × 303mm"
+            ],
+            [
+              "A3 Poster",
+              "297 × 420mm",
+              "303 × 426mm"
+            ],
+            [
+              "Envelope",
+              "220 × 110mm",
+              "226 × 116mm"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "2. Resolution: Why 300dpi is Standard?"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>72dpi</strong>: Web and social media only",
+            "<strong>150dpi</strong>: Acceptable minimum for large posters and distant viewing",
+            "<strong>300dpi</strong>: Standard for business cards, books, flyers viewed up close",
+            "<strong>600dpi</strong>: Ultra-fine prints (art reproductions, luxury packaging)"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "3. CMYK vs RGB"
+        },
+        {
+          "tag": "ol",
+          "items": [
+            "Screens use RGB (additive light), print uses CMYK (subtractive ink overprint)",
+            "RGB gamut is wider than CMYK, printing RGB files directly causes color darkening",
+            "Recommend using CMYK throughout design for accurate print prediction",
+            "Keep image assets in RGB for editing, convert to CMYK when exporting PDF"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "4. Recommended File Formats"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>PDF/X-1a</strong>: Best choice — fonts embedded, color stable",
+            "<strong>AI (Adobe Illustrator)</strong>: Vector — ideal for logos and graphics",
+            "<strong>PSD (Photoshop)</strong>: Raster — good for photo-based designs",
+            "<strong>EPS</strong>: Universal vector — strong compatibility",
+            "<strong>INDD (InDesign)</strong>: Multi-page layout professional format"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "5. Font Handling & Special Effects"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>Outline Text</strong>: AI / PDF must outline text, otherwise font missing on other computers causes garbled text",
+            "<strong>Embed Fonts</strong>: PDF can opt to embed all fonts",
+            "<strong>Knockout Text</strong>: Avoid text smaller than 6pt (smudges easily)",
+            "<strong>Hairline Strokes</strong>: Avoid strokes thinner than 0.25pt (break easily)",
+            "<strong>Mesh Gradients</strong>: Avoid overly dense mesh gradients; use 200dpi pixel layers"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "6. Frequently Asked Questions"
+        },
+        {
+          "tag": "faq",
+          "qas": [
+            {
+              "q": "What format does my design file need?",
+              "a": "Best: PDF/X-1a (outlined fonts, embedded fonts). AI / EPS / PSD also accepted."
+            },
+            {
+              "q": "Do fonts need outlining?",
+              "a": "Strongly recommended. Otherwise font missing causes garbled text."
+            },
+            {
+              "q": "Must images be 300dpi?",
+              "a": "Recommended. Below 200dpi prints blurry. Large posters 150dpi acceptable."
+            },
+            {
+              "q": "Can RGB files print directly?",
+              "a": "Not recommended. Convert to CMYK with ICC profile during design stage."
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "body": "Unsure if your file meets print standards? Contact <a href=\"https://wa.me/8618126380255\" target=\"_blank\">ZprintPro via WhatsApp</a> for free file check service."
+        }
+      ]
+    },
+    "ja": {
+      "sections": [
+        {
+          "tag": "h3",
+          "body": "一、ブリードとは？"
+        },
+        {
+          "tag": "p",
+          "body": "ブリードとはデザインデータの仕上がり切断線を越えた領域を指します。印刷後に切断が必要なため、デザインが正確に端まであると微細な切断誤差で白縁が出ます。標準的には仕上がりサイズ外に 3mm のブリードを確保します。"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "製品",
+            "仕上がりサイズ",
+            "デザインサイズ（ブリード込み）"
+          ],
+          "rows": [
+            [
+              "標準名刺",
+              "90 × 54mm",
+              "96 × 60mm"
+            ],
+            [
+              "A4 チラシ",
+              "210 × 297mm",
+              "216 × 303mm"
+            ],
+            [
+              "A3 ポスター",
+              "297 × 420mm",
+              "303 × 426mm"
+            ],
+            [
+              "封筒",
+              "220 × 110mm",
+              "226 × 116mm"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "二、解像度：なぜ 300dpi が基準？"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>72dpi</strong>：ウェブ、ソーシャルメディア専用",
+            "<strong>150dpi</strong>：大型ポスター、遠距離視認印刷品の最低許容基準",
+            "<strong>300dpi</strong>：名刺、書籍、チラシなど近距離視認印刷品の基準",
+            "<strong>600dpi</strong>：極精細印刷品（アート複製品、ラグジュアリー包装）"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "三、CMYK vs RGB"
+        },
+        {
+          "tag": "ol",
+          "items": [
+            "画面は RGB（光の加法混色）、印刷は CMYK（インキ減法混色）",
+            "RGB 色域は CMYK より広く、RGB ファイル直接印刷で色暗淡化",
+            "デザイン段階から CMYK 使用、印刷結果事前予測可",
+            "画像素材は RGB 編集可、PDF 出力時に CMYK 変換"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "四、推奨ファイル形式"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>PDF/X-1a</strong>：最良選択 — フォント埋め込み、色安定",
+            "<strong>AI（Adobe Illustrator）</strong>：ベクター — ロゴ・グラフィックに最適",
+            "<strong>PSD（Photoshop）</strong>：ラスター — 写真系デザイン向き",
+            "<strong>EPS</strong>：汎用ベクター — 互換性高い",
+            "<strong>INDD（InDesign）</strong>：多ページ組版専門形式"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "五、フォント処理と特殊効果"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>テキストのアウトライン化</strong>：AI / PDF で必ずアウトライン化、別 PC でフォント欠落を防ぐ",
+            "<strong>フォント埋め込み</strong>：PDF で全フォント埋め込み選択可",
+            "<strong>極小文字</strong>：6pt 以下のテキストは避ける（潰れやすい）",
+            "<strong>極細線</strong>：0.25pt 以下の細線は避ける（切れやすい）",
+            "<strong>メッシュグラデーション</strong>：過密メッシュを避け、200dpi ピクセルレイヤーを使用"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "六、よくある質問"
+        },
+        {
+          "tag": "faq",
+          "qas": [
+            {
+              "q": "デザインファイル形式は？",
+              "a": "最良は PDF/X-1a（テキストアウトライン化、フォント埋め込み）。AI / EPS / PSD も対応可。"
+            },
+            {
+              "q": "フォントは必ずアウトライン化？",
+              "a": "強く推奨。フォント欠落で文字化け防止。"
+            },
+            {
+              "q": "画像は必ず 300dpi？",
+              "a": "推奨。200dpi 以下は印刷ぼやけ。大型ポスターは 150dpi 可。"
+            },
+            {
+              "q": "RGB ファイルは直接印刷できますか？",
+              "a": "非推奨。デザイン段階から ICC 付きで CMYK 変換。"
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "body": "ファイルが印刷基準に合うかご不明？今すぐ <a href=\"https://wa.me/8618126380255\" target=\"_blank\">WhatsApp で智印雲に連絡</a> 無料ファイルチェックサービス！"
+        }
+      ]
+    }
+  }
+]

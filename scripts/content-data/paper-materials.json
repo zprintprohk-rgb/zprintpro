@@ -1,0 +1,433 @@
+[
+  {
+    "slug": "paper-materials",
+    "intro": {
+      "zh-hk": "紙張是印刷品的靈魂。不同紙材不僅影響視覺效果，更決定觸感和品質印象。智印雲提供 300+ 種紙材供您選擇。本文將從銅版紙、書紙、牛皮紙、特種紙、紙材選擇對照表、實際案例 6 個維度系統介紹常見印刷紙材，幫助您為項目選擇最合適的印刷紙張。",
+      "en": "Paper is the soul of any print piece. Different paper stocks affect not only visual impact but also tactile impression. ZprintPro offers 300+ paper options. This article systematically covers six common paper categories — art paper, woodfree, kraft, specialty, paper selection table, and real cases — to help you pick the right stock for your project.",
+      "ja": "用紙は印刷物の魂です。異なる用紙は視覚効果だけでなく、触覚的印象も決定します。智印雲は 300 種類以上を取り扱い。本記事ではアート紙、書籍用紙、クラフト紙、特殊紙、用紙選定表、実例という 6 つの側面から一般的な印刷用紙を体系的に解説します。"
+    },
+    "zh-hk": {
+      "sections": [
+        {
+          "tag": "h3",
+          "body": "一、銅版紙（Art Paper）"
+        },
+        {
+          "tag": "p",
+          "body": "最常用的高檔印刷紙，表面光滑、色彩還原度高。適合畫冊、海報、宣傳單等需要鮮豔色彩的產品。"
+        },
+        {
+          "tag": "h3",
+          "body": "二、書紙（Woodfree Paper）"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>表面紋理</strong>：略帶紋理，自然質感",
+            "<strong>閱讀舒適度</strong>：不反光，長時間閱讀不疲勞",
+            "<strong>典型應用</strong>：書籍、筆記本、信紙、發票、合同",
+            "<strong>常見克重</strong>：80g、100g、120g"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "三、牛皮紙（Kraft Paper）"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "紙材",
+            "特性",
+            "適合場景"
+          ],
+          "rows": [
+            [
+              "白牛皮紙",
+              "純白、挺度高、可染色",
+              "高檔品牌、化妝品、禮品"
+            ],
+            [
+              "黃牛皮紙",
+              "環保、復古、價格實惠",
+              "咖啡店、有機品牌、零售"
+            ],
+            [
+              "黑牛皮紙",
+              "神秘高檔、質感獨特",
+              "高端品牌、限定產品"
+            ],
+            [
+              "再生牛皮紙",
+              "環保認證、紋理獨特",
+              "環保品牌、有機產品"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "四、特種紙（Specialty Paper）"
+        },
+        {
+          "tag": "ol",
+          "items": [
+            "<strong>珠光紙</strong>：表面有珍珠光澤，適合化妝品、高端邀請卡",
+            "<strong>萊妮紋紙</strong>：橫條紋理，手感強烈，適合畫冊封面",
+            "<strong>剛古紙</strong>：典雅紋理，英倫風格，適合證書、菜牌",
+            "<strong>棉絮紙</strong>：含棉纖維，觸感柔軟，適合高端名片",
+            "<strong>充皮紙</strong>：仿皮紋理，適合精裝盒、邀請卡"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "五、紙材選擇對照表"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "產品類型",
+            "推薦紙材",
+            "克重"
+          ],
+          "rows": [
+            [
+              "名片",
+              "300g 銅版紙 / 特種紙",
+              "300-400g"
+            ],
+            [
+              "宣傳單",
+              "157g 銅版紙",
+              "128-200g"
+            ],
+            [
+              "畫冊",
+              "200g 銅版封面 + 157g 內頁",
+              "157-250g"
+            ],
+            [
+              "包裝盒",
+              "白卡紙 / 牛皮紙",
+              "250-400g"
+            ],
+            [
+              "信封",
+              "100g 書紙 / 牛皮紙",
+              "100-120g"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "六、常見問題"
+        },
+        {
+          "tag": "faq",
+          "qas": [
+            {
+              "q": "300+ 種紙材該怎麼挑？",
+              "a": "智印雲提供免費紙樣樣本盒（HK$200 含郵），建議先看實物再決定。"
+            },
+            {
+              "q": "銅版紙和書紙的差別？",
+              "a": "銅版紙表面光滑反光、色彩鮮豔；書紙略帶紋理、適合文字閱讀。"
+            },
+            {
+              "q": "可以混合紙材嗎？",
+              "a": "可以。封面用 200g 銅版紙、內頁用 80g 書紙，常見於畫冊。"
+            },
+            {
+              "q": "環保紙有哪些選擇？",
+              "a": "FSC 認證再生紙、大麻紙、竹漿紙、棉花紙等，HK$200 起/款。"
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "body": "想了解 300+ 種紙材？立即 <a href=\"https://wa.me/8618126380255\" target=\"_blank\">WhatsApp 聯絡智印雲</a> 獲取紙材樣本與報價！"
+        }
+      ]
+    },
+    "en": {
+      "sections": [
+        {
+          "tag": "h3",
+          "body": "1. Art Paper"
+        },
+        {
+          "tag": "p",
+          "body": "The most common premium print paper — smooth, vivid color reproduction. Ideal for catalogs, posters, flyers that need vibrant color."
+        },
+        {
+          "tag": "h3",
+          "body": "2. Woodfree Paper"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>Surface Texture</strong>: Subtle texture, natural feel",
+            "<strong>Reading Comfort</strong>: Non-glossy, no eye strain on long reading",
+            "<strong>Typical Uses</strong>: Books, notebooks, stationery, invoices, contracts",
+            "<strong>Common Weights</strong>: 80g, 100g, 120g"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "3. Kraft Paper"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "Paper",
+            "Features",
+            "Best For"
+          ],
+          "rows": [
+            [
+              "White Kraft",
+              "Pure white, high stiffness, dye-able",
+              "Premium brands, cosmetics, gifts"
+            ],
+            [
+              "Yellow Kraft",
+              "Eco, vintage, affordable",
+              "Coffee shops, organic brands, retail"
+            ],
+            [
+              "Black Kraft",
+              "Mysterious premium, unique texture",
+              "High-end brands, limited editions"
+            ],
+            [
+              "Recycled Kraft",
+              "Eco certified, distinctive texture",
+              "Eco brands, organic products"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "4. Specialty Papers"
+        },
+        {
+          "tag": "ol",
+          "items": [
+            "<strong>Pearl Paper</strong>: Pearl shimmer surface — for cosmetics, premium invitations",
+            "<strong>Linen Paper</strong>: Horizontal line texture, strong tactile — for catalog covers",
+            "<strong>Conqueror Paper</strong>: Elegant texture, British style — for certificates, menus",
+            "<strong>Cotton Paper</strong>: Cotton fibers, soft tactile — for premium business cards",
+            "<strong>Leather Paper</strong>: Faux leather texture — for gift boxes, invitations"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "5. Paper Selection Cheat Sheet"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "Product",
+            "Recommended Paper",
+            "Weight"
+          ],
+          "rows": [
+            [
+              "Business Cards",
+              "300g art paper / specialty",
+              "300-400g"
+            ],
+            [
+              "Flyers",
+              "157g art paper",
+              "128-200g"
+            ],
+            [
+              "Catalogs",
+              "200g art cover + 157g inner",
+              "157-250g"
+            ],
+            [
+              "Packaging Boxes",
+              "White card / kraft",
+              "250-400g"
+            ],
+            [
+              "Envelopes",
+              "100g woodfree / kraft",
+              "100-120g"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "6. Frequently Asked Questions"
+        },
+        {
+          "tag": "faq",
+          "qas": [
+            {
+              "q": "How do I pick among 300+ papers?",
+              "a": "ZprintPro offers a free sample box (US$25 including shipping) — see physical samples before deciding."
+            },
+            {
+              "q": "What is the difference between art paper and woodfree?",
+              "a": "Art paper is smooth and reflective, vivid colors. Woodfree is slightly textured, ideal for text reading."
+            },
+            {
+              "q": "Can I mix paper stocks?",
+              "a": "Yes. 200g art cover with 80g woodfree inner pages is common in catalogs."
+            },
+            {
+              "q": "What eco-paper options are available?",
+              "a": "FSC recycled, hemp, bamboo pulp, cotton paper — from US$25/stock."
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "body": "Want to see all 300+ papers? Contact <a href=\"https://wa.me/8618126380255\" target=\"_blank\">ZprintPro via WhatsApp</a> for samples and a quote!"
+        }
+      ]
+    },
+    "ja": {
+      "sections": [
+        {
+          "tag": "h3",
+          "body": "一、アート紙"
+        },
+        {
+          "tag": "p",
+          "body": "最も一般的な高級印刷用紙 — 表面平滑、色彩再現度高。カタログ、ポスター、チラシなど鮮やかな色彩が必要な製品に最適。"
+        },
+        {
+          "tag": "h3",
+          "body": "二、書籍用紙（Woodfree Paper）"
+        },
+        {
+          "tag": "ul",
+          "items": [
+            "<strong>表面テクスチャ</strong>：ややテクスチャあり、自然な質感",
+            "<strong>読みやすさ</strong>：非光沢、長時間読んでも目が疲れない",
+            "<strong>典型用途</strong>：書籍、ノート、便箋、領収書、契約書",
+            "<strong>一般的な米坪</strong>：80g、100g、120g"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "三、クラフト紙"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "用紙",
+            "特徴",
+            "適用"
+          ],
+          "rows": [
+            [
+              "白クラフト",
+              "純白、高腰、染色可",
+              "高級ブランド、化粧品、ギフト"
+            ],
+            [
+              "黄クラフト",
+              "エコ、レトロ、低価格",
+              "カフェ、オーガニックブランド、小売"
+            ],
+            [
+              "黒クラフト",
+              "神秘的、高級、独特質感",
+              "ハイエンド、限定品"
+            ],
+            [
+              "再生クラフト",
+              "エコ認証、独特テクスチャ",
+              "エコブランド、オーガニック製品"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "四、特殊紙"
+        },
+        {
+          "tag": "ol",
+          "items": [
+            "<strong>パール紙</strong>：真珠光沢表面 — 化粧品、高級招待状に最適",
+            "<strong>リネン紙</strong>：横線テクスチャ、強い触感 — カタログ表紙に",
+            "<strong>コンカラー紙</strong>：優雅なテクスチャ、英国風 — 証書、メニューに",
+            "<strong>コットン紙</strong>：綿繊維、柔らかい触感 — 高級名刺に",
+            "<strong>フェイクレザー紙</strong>：擬革テクスチャ — ギフトボックス、招待状に"
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "五、用紙選定早見表"
+        },
+        {
+          "tag": "table",
+          "headers": [
+            "製品",
+            "推奨用紙",
+            "米坪"
+          ],
+          "rows": [
+            [
+              "名刺",
+              "300g アート紙 / 特殊紙",
+              "300-400g"
+            ],
+            [
+              "チラシ",
+              "157g アート紙",
+              "128-200g"
+            ],
+            [
+              "カタログ",
+              "200g アート表紙 + 157g 本文",
+              "157-250g"
+            ],
+            [
+              "パッケージ箱",
+              "白カード / クラフト",
+              "250-400g"
+            ],
+            [
+              "封筒",
+              "100g 書籍用紙 / クラフト",
+              "100-120g"
+            ]
+          ]
+        },
+        {
+          "tag": "h3",
+          "body": "六、よくある質問"
+        },
+        {
+          "tag": "faq",
+          "qas": [
+            {
+              "q": "300 種類以上からどう選ぶ？",
+              "a": "智印雲は無料サンプルボックス（HK$200 送料込み）をご提供、現物確認後に決定推奨。"
+            },
+            {
+              "q": "アート紙と書籍用紙の違いは？",
+              "a": "アート紙は平滑反射で色彩鮮やか、書籍用紙はわずかなテクスチャで文字向き。"
+            },
+            {
+              "q": "用紙をミックスできますか？",
+              "a": "はい。表紙 200g アート紙 + 本文 80g 書籍用紙は一般的。"
+            },
+            {
+              "q": "エコ用紙の選択肢は？",
+              "a": "FSC 認証再生紙、麻紙、竹パルプ紙、綿紙など、HK$200/種から。"
+            }
+          ]
+        },
+        {
+          "tag": "p",
+          "body": "300 種類以上の用紙をもっと知りたい？今すぐ <a href=\"https://wa.me/8618126380255\" target=\"_blank\">WhatsApp で智印雲に連絡</a> サンプル＆見積もり！"
+        }
+      ]
+    }
+  }
+]

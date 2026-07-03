@@ -1,0 +1,72 @@
+[
+  {
+    "slug": "sticker-guide",
+    "intro": {"zh-hk": "貼紙是品牌宣傳和產品包裝中不可或缺的元素。無論是產品標籤、促銷宣傳還是個性化裝飾，選擇合適的貼紙材質與工藝都能大幅提升品牌形象。本文將為您系統拆解貼紙的材質、表面處理工藝、選擇決策框架、模切形狀、應用場景與常見問題。", "en": "Stickers are indispensable for brand promotion and product packaging. From product labels to promotional giveaways to personalized decoration, the right material and finish can dramatically elevate your brand. This guide covers sticker materials, surface finishes, selection framework, die-cut shapes, applications, and FAQs.", "ja": "ステッカーはブランドプロモーションと商品パッケージに欠かせない要素です。商品ラベル、プロモーション、個性装飾まで、適切な材質と加工を選ぶことで、ブランドイメージを大幅に高められます。本記事では材質、表面加工、選定フレームワーク、ダイカット形状、実用例、よくある質問を体系的に解説します。"},
+    "zh-hk": {"sections": [
+      {"tag": "h3", "body": "一、常見貼紙材質對比"},
+      {"tag": "p", "body": "不同材質直接影響耐用度、印刷效果與成本："},
+      {"tag": "table", "headers": ["材質","特性","適合場景","參考價格"], "rows": [["銅版紙貼紙","成本低、色彩鮮豔","促銷標籤、臨時貼紙","HK$0.5-1.5/張"],["防水合成紙","防水防油、耐用","食品標籤、戶外使用","HK$1.2-3/張"],["透明 PET","高透明、質感佳","玻璃瓶、高檔包裝","HK$2-5/張"],["雷射 / 全息貼紙","防偽、視覺效果好","防偽標籤、證書","HK$3-8/張"],["牛皮紙貼紙","環保、復古","手工品牌、有機食品","HK$1.5-4/張"]]},
+      {"tag": "h3", "body": "二、表面處理工藝選擇"},
+      {"tag": "ul", "items": ["<strong>光膠（Glossy Lamination）</strong>：表面光滑反光，色彩飽和度高", "<strong>啞膠（Matte Lamination）</strong>：質感柔和不反光，給人高檔沉穩的感覺", "<strong>燙金（Foil Stamping）</strong>：金、銀、玫瑰金等金屬光澤效果，提升奢華質感", "<strong>UV 局部上光</strong>：突出重點圖案，增加層次感", "<strong>壓凸 / 壓凹</strong>：無油墨的立體觸感，極簡設計首選"]},
+      {"tag": "h3", "body": "三、如何選擇適合的貼紙"},
+      {"tag": "ol", "items": ["<strong>使用環境</strong>：室內 vs 戶外？是否接觸水油？冷藏？", "<strong>貼附表面</strong>：紙張、塑膠、金屬、玻璃、曲面？", "<strong>使用期限</strong>：臨時活動（3 個月）vs 長期標籤（1-3 年）？", "<strong>預算範圍</strong>：銅版紙最經濟，特殊材質 + 特殊工藝投入較高", "<strong>設計複雜度</strong>：簡單色塊 vs 多色漸層，影響印刷工藝選擇"]},
+      {"tag": "h3", "body": "四、模切形狀與尺寸設計"},
+      {"tag": "p", "body": "貼紙的形狀直接影響視覺衝擊力與辨識度："},
+      {"tag": "ul", "items": ["<strong>圓形 / 橢圓</strong>：經典、百搭，適合品牌 Logo", "<strong>方形 / 矩形</strong>：信息密集，適合條碼、產品標籤", "<strong>異形模切（Die-cut）</strong>：完全按形狀剪裁，視覺最強但成本高", "<strong>吻切（Kiss-cut）</strong>：背紙保留整體形狀，便於撕取與分發"]},
+      {"tag": "h3", "body": "五、貼紙印刷的實際應用場景"},
+      {"tag": "ul", "items": ["<strong>食品包裝標籤</strong>：成分表、營養標示、有效日期", "<strong>化妝品瓶身貼</strong>：高檔品牌標識，使用透明 PET + 燙金", "<strong>產品促銷貼</strong>：限量編號、活動標識，使用銅版紙 + 光膠", "<strong>物流標籤</strong>：快遞面單、二維碼，使用防水合成紙", "<strong>個性化裝飾貼</strong>：手帳貼、兒童貼紙書，多色印刷 + 異形模切"]},
+      {"tag": "h3", "body": "六、常見問題"},
+      {"tag": "faq", "qas": [
+        {"q": "貼紙印刷的最小訂購量是多少？", "a": "一般為 100 張起訂，部分特殊工藝需 500 張起。"},
+        {"q": "防水貼紙真的可以泡水嗎？", "a": "是的，採用合成紙 + 防水膠水，可承受短時間浸泡與反覆水洗。"},
+        {"q": "貼紙的交貨時間多久？", "a": "標準 3-5 個工作日，急件可安排即日交貨。"},
+        {"q": "需要提供什麼格式的設計文件？", "a": "建議提供 AI / PDF / EPS 矢量檔，分辨率 300dpi，CMYK 色彩模式。"}
+      ]},
+      {"tag": "p", "body": "無論您需要哪種貼紙，立即 <a href=\"https://wa.me/8618126380255\" target=\"_blank\">WhatsApp 聯絡智印雲</a> 獲取免費報價與專業建議！"}
+    ]},
+    "en": {"sections": [
+      {"tag": "h3", "body": "1. Sticker Material Comparison"},
+      {"tag": "p", "body": "Material choice directly affects durability, print quality, and cost:"},
+      {"tag": "table", "headers": ["Material","Features","Best For","Price"], "rows": [["Art Paper","Low cost, vibrant colors","Promo labels, temporary use","US$0.06-0.20/pc"],["Waterproof Synthetic","Water/oil resistant, durable","Food labels, outdoor use","US$0.15-0.40/pc"],["Transparent PET","Crystal clear, premium feel","Glass bottles, luxury packaging","US$0.25-0.65/pc"],["Holographic","Anti-counterfeit, eye-catching","Security labels, certificates","US$0.40-1.00/pc"],["Kraft Paper","Eco, vintage look","Handcraft brands, organic food","US$0.20-0.50/pc"]]},
+      {"tag": "h3", "body": "2. Surface Finish Options"},
+      {"tag": "ul", "items": ["<strong>Glossy Lamination</strong>: Smooth, reflective, vibrant color saturation", "<strong>Matte Lamination</strong>: Soft, non-reflective, premium understated feel", "<strong>Foil Stamping</strong>: Gold/silver/rose gold metallic shine, elevates luxury feel", "<strong>Spot UV</strong>: Highlights specific elements, adds dimensional depth", "<strong>Embossing / Debossing</strong>: Inkless dimensional texture, perfect for minimalist designs"]},
+      {"tag": "h3", "body": "3. How to Choose the Right Sticker"},
+      {"tag": "ol", "items": ["<strong>Use Environment</strong>: Indoor vs outdoor? Water/oil contact? Cold storage?", "<strong>Adhesion Surface</strong>: Paper, plastic, metal, glass, curved?", "<strong>Usage Duration</strong>: Short-term promotion (3 months) vs long-term label (1-3 years)?", "<strong>Budget</strong>: Art paper is most economical; specialty materials cost more", "<strong>Design Complexity</strong>: Simple blocks vs multi-color gradients affects finish choice"]},
+      {"tag": "h3", "body": "4. Die-Cut Shape & Size Design"},
+      {"tag": "p", "body": "Sticker shape directly impacts visual impact and brand recognition:"},
+      {"tag": "ul", "items": ["<strong>Circle / Oval</strong>: Classic, versatile, ideal for brand logos", "<strong>Square / Rectangle</strong>: Information-dense, perfect for barcodes and product labels", "<strong>Die-cut</strong>: Cut to any shape — strongest visual but higher cost", "<strong>Kiss-cut</strong>: Backing paper stays intact — easier to peel and distribute"]},
+      {"tag": "h3", "body": "5. Real-World Sticker Applications"},
+      {"tag": "ul", "items": ["<strong>Food packaging labels</strong>: Ingredients, nutrition facts, expiry dates", "<strong>Cosmetic bottle labels</strong>: Premium branding with transparent PET + foil", "<strong>Promotional stickers</strong>: Limited edition numbers, event badges — art paper + gloss", "<strong>Shipping labels</strong>: Tracking labels, QR codes — waterproof synthetic", "<strong>Decorative stickers</strong>: Planner stickers, kids' sticker books — multi-color + die-cut"]},
+      {"tag": "h3", "body": "6. Frequently Asked Questions"},
+      {"tag": "faq", "qas": [
+        {"q": "What is the minimum order quantity (MOQ)?", "a": "Standard 100 pieces. Some specialty finishes require 500+ pieces."},
+        {"q": "Can waterproof stickers really be submerged?", "a": "Yes — synthetic paper + waterproof adhesive withstands brief submersion and repeated washings."},
+        {"q": "How long does production take?", "a": "Standard 3-5 working days. Rush same-day pickup available."},
+        {"q": "What file format should I provide?", "a": "AI / PDF / EPS vector preferred. 300dpi resolution, CMYK color mode."}
+      ]},
+      {"tag": "p", "body": "For any sticker need, contact <a href=\"https://wa.me/8618126380255\" target=\"_blank\">ZprintPro via WhatsApp</a> for a free quote and expert advice!"}
+    ]},
+    "ja": {"sections": [
+      {"tag": "h3", "body": "一、主なステッカー材質比較"},
+      {"tag": "p", "body": "材質は耐久性と印刷効果、コストに直接影響します："},
+      {"tag": "table", "headers": ["材質","特徴","適用シーン","参考価格"], "rows": [["アート紙ステッカー","低コスト、色彩鮮やか","プロモ用ラベル、一時的利用","HK$0.5-1.5/枚"],["防水合成紙","防水防油、耐久","食品ラベル、屋外使用","HK$1.2-3/枚"],["透明 PET","高透明、質感良好","ガラス瓶、高級パッケージ","HK$2-5/枚"],["ホログラム","偽造防止、視覚効果","セキュリティラベル、証書","HK$3-8/枚"],["クラフト紙ステッカー","エコ、レトロ感","ハンドメイド、有機食品","HK$1.5-4/枚"]]},
+      {"tag": "h3", "body": "二、表面加工の選択"},
+      {"tag": "ul", "items": ["<strong>光沢ラミネート</strong>：表面がつややか、色彩が鮮やか", "<strong>マットラミネート</strong>：落ち着いた質感、高級感", "<strong>箔押し</strong>：金・銀・rose gold の金属的光沢、高級感アップ", "<strong>スポット UV</strong>：特定部分のみグロス処理、立体感", "<strong>エンボス / デボス</strong>：インクなしの立体触感、ミニマルデザインに最適"]},
+      {"tag": "h3", "body": "三、ステッカー選定の意思決定"},
+      {"tag": "ol", "items": ["<strong>使用環境</strong>：屋内 vs 屋外？水・油接触？冷蔵？", "<strong>貼付面</strong>：紙、プラスチック、金属、ガラス、曲面？", "<strong>使用期間</strong>：短期プロモーション（3 ヶ月）vs 長期ラベル（1-3 年）？", "<strong>予算</strong>：アート紙が最安、特殊材質は割高", "<strong>デザイン複雑度</strong>：単色 vs 多色グラデーションで加工選定が変わる"]},
+      {"tag": "h3", "body": "四、ダイカット形状とサイズ設計"},
+      {"tag": "p", "body": "ステッカーの形状は視覚的インパクトとブランド認知度に直結："},
+      {"tag": "ul", "items": ["<strong>円形 / 楕円</strong>：定番、万能、ブランドのロゴに最適", "<strong>正方形 / 長方形</strong>：情報密度高い、バーコード・商品ラベルに最適", "<strong>ダイカット</strong>：任意形状にカット、視覚最大だがコスト高", "<strong>キスカット</strong>：台紙はそのまま、剥がしやすく配りやすい"]},
+      {"tag": "h3", "body": "五、ステッカー印刷の実用例"},
+      {"tag": "ul", "items": ["<strong>食品パッケージラベル</strong>：成分表、栄養表示、賞味期限", "<strong>化粧品ボトルラベル</strong>：高級ブランド标识、透明 PET + 箔押し", "<strong>プロモーションステッカー</strong>：限定ナンバー、イベントバッジ、アート紙 + 光沢", "<strong>物流ラベル</strong>：送り状、QRコード、防水合成紙", "<strong>装飾ステッカー</strong>：手帳用、子供のステッカーブック、多色 + ダイカット"]},
+      {"tag": "h3", "body": "六、よくある質問"},
+      {"tag": "faq", "qas": [
+        {"q": "最小注文数量（MOQ）は？", "a": "通常 100 枚から。特殊加工は 500 枚以上必要な場合があります。"},
+        {"q": "防水ステッカーは本当に水に漬けられますか？", "a": "はい。合成紙 + 防水粘着剤で短時間の浸水と反復水洗に耐えられます。"},
+        {"q": "納期はどのくらい？", "a": "通常 3-5 営業日。特急で当日仕上げ対応可。"},
+        {"q": "必要なファイル形式は？", "a": "AI / PDF / EPS（ベクターデータ）推奨。解像度 300dpi、CMYK。"}
+      ]},
+      {"tag": "p", "body": "あらゆるステッカー印刷ニーズに対応、今すぐ <a href=\"https://wa.me/8618126380255\" target=\"_blank\">WhatsApp で智印雲に連絡</a> 無料見積もり＆専門アドバイス！"}
+    ]}
+  }
+]
