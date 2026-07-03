@@ -45,6 +45,10 @@ const translations = {
     visitUs: "蒞臨參觀",
     features: ["24小時內回覆", "免費設計諮詢", "專屬客戶經理", "量大價優"],
     orScan: "或掃碼",
+    altPayTitle: "如不便在線付款?",
+    altPayDesc: "海外客戶可使用支付寶閃速收款跨境匯款,9 大跨境匯款 APP 支援",
+    altPayCta: "查看所有付款方式",
+    altPayQrCaption: "唐运提 (智印雲法人) 官方收款碼",
   },
   en: {
     title: "Free Custom Printing Quote · 30s Response | ZprintPro USA / UK / AU",
@@ -81,6 +85,10 @@ const translations = {
     visitUs: "Visit Us",
     features: ["24h response", "Free design consult", "Dedicated manager", "Volume pricing"],
     orScan: "or scan",
+    altPayTitle: "Can't pay online easily?",
+    altPayDesc: "Overseas clients can use Alipay Flash Collect for cross-border remittance — 9 providers supported.",
+    altPayCta: "See all payment methods",
+    altPayQrCaption: "Official QR by Mr. Tang (founder)",
   },
   ja: {
     title: "無料お見積もり · 30秒返信 | 智印雲 ZprintPro",
@@ -117,6 +125,10 @@ const translations = {
     visitUs: "ご来社",
     features: ["24時間以内返信", "無料デザイン相談", "専属マネージャー", "大量割引"],
     orScan: "またはスキャン",
+    altPayTitle: "オンライン決済が不便ですか？",
+    altPayDesc: "海外のお客様は支付宝フラッシュ送金でクロスボーダー送金可能 — 9 機関対応。",
+    altPayCta: "すべてのお支払い方法を見る",
+    altPayQrCaption: "唐运提 (創業者) 公式 QR",
   },
 };
 
@@ -144,6 +156,7 @@ export default function ContactPage({ params }: ContactPageProps) {
   const contactPageUrl = `${siteConfig.url}/${locale}/contact/`;
   const contactPageJsonLd = generateContactPageJsonLd(locale, contactPageUrl, t.description);
   const localBusinessJsonLd = generateLocalBusinessSchema(locale);
+  const localePrefix = `/${locale}`;
 
   return (
     <main className="min-h-screen bg-gray-50 py-12 md:py-16">
@@ -338,6 +351,41 @@ export default function ContactPage({ params }: ContactPageProps) {
             </div>
           </div>
         </div>
+
+        {/* 2026-07-03 Cross-border remittance payment block
+            - For overseas clients unable to pay via bank wire / WeChat / Alipay
+            - Static QR reference; not an inline checkout payment */}
+        <section className="mt-8 rounded-2xl border border-indigo-100 bg-gradient-to-br from-indigo-50 via-white to-blue-50 p-6 md:p-8">
+          <div className="flex flex-col md:flex-row gap-6 items-center">
+            <div className="relative w-32 h-32 md:w-40 md:h-40 bg-white border border-indigo-200 rounded-2xl overflow-hidden flex items-center justify-center shadow-md flex-shrink-0">
+              <img
+                src={locale === 'zh-hk' ? '/images/payment/shansu-collect-zh-hk.png' : '/images/payment/shansu-collect-en.png'}
+                alt="Alipay Flash Collect QR"
+                width={140}
+                height={140}
+                className="object-contain w-full h-full"
+                loading="lazy"
+              />
+            </div>
+            <div className="flex-1 min-w-0 text-center md:text-left">
+              <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-indigo-100 text-indigo-700 text-xs font-semibold mb-2">
+                <span>Alipay Flash Collect</span>
+              </div>
+              <h2 className="text-xl md:text-2xl font-bold text-[#333333] mb-2">{t.altPayTitle}</h2>
+              <p className="text-sm text-gray-600 leading-relaxed mb-3">{t.altPayDesc}</p>
+              <p className="text-xs text-gray-500 mb-4">{t.altPayQrCaption}</p>
+              <Link
+                href={`${localePrefix}/payment-methods/`}
+                className="inline-flex items-center gap-1.5 px-4 py-2 bg-[#2873F5] hover:bg-[#1E5BD6] text-white text-sm font-semibold rounded-lg transition-colors"
+              >
+                {t.altPayCta}
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </Link>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
   );

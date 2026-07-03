@@ -56,7 +56,7 @@ const translations = {
         title: '幫助中心',
         links: [
           { label: '落單須知', href: '/help-center/#order' },
-          { label: '付款方式', href: '/help-center/#payment' },
+          { label: '付款方式', href: `${localePrefix}/payment-methods/` },
           { label: '送貨安排', href: '/help-center/#shipping' },
           { label: '退換政策', href: '/help-center/#returns' },
         ],
@@ -110,7 +110,7 @@ const translations = {
         title: 'Help Center',
         links: [
           { label: 'How to Order', href: '/help-center/#order' },
-          { label: 'Payment Methods', href: '/help-center/#payment' },
+          { label: 'Payment Methods', href: `${localePrefix}/payment-methods/` },
           { label: 'Shipping', href: '/help-center/#shipping' },
           { label: 'Return Policy', href: '/help-center/#returns' },
         ],
@@ -164,7 +164,7 @@ const translations = {
         title: 'ヘルプセンター',
         links: [
           { label: '注文方法', href: '/help-center/#order' },
-          { label: '支払い方法', href: '/help-center/#payment' },
+          { label: '支払い方法', href: `${localePrefix}/payment-methods/` },
           { label: '配送', href: '/help-center/#shipping' },
           { label: '返品ポリシー', href: '/help-center/#returns' },
         ],
@@ -276,6 +276,39 @@ export function Footer({ locale }: FooterProps) {
                   <span className="text-sm">{t.serviceArea}</span>
                 </div>
               )}
+
+              {/* 2026-07-03 Cross-border remittance QR — Alipay Flash Collect
+                  - 静态展示，不参与在线结算
+                  - zh-hk 与 en 显示不同语言版本 */}
+              <Link
+                href={`${localePrefix}/payment-methods/`}
+                className="mt-4 pt-3 border-t border-white/10 flex items-center gap-3 hover:opacity-90 transition-opacity"
+                aria-label="Cross-border remittance QR — Alipay Flash Collect"
+              >
+                <div className="relative w-14 h-14 bg-white rounded-lg overflow-hidden flex items-center justify-center flex-shrink-0 shadow-sm">
+                  <img
+                    src={locale === 'zh-hk' ? '/images/payment/shansu-collect-zh-hk.png' : '/images/payment/shansu-collect-en.png'}
+                    alt="Alipay Flash Collect QR"
+                    width={56}
+                    height={56}
+                    className="object-contain"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+                <div className="flex-1 min-w-0">
+                  <div className="text-xs text-gray-300 font-semibold leading-tight">
+                    {locale === 'zh-hk' && '支付寶閃速收款 · 跨境匯款'}
+                    {locale === 'en' && 'Alipay Flash Collect · Cross-border'}
+                    {locale === 'ja' && '支付宝フラッシュ送金 · クロスボーダー'}
+                  </div>
+                  <div className="text-[10px] text-gray-500 mt-0.5">
+                    {locale === 'zh-hk' && '9 大跨境匯款機構'}
+                    {locale === 'en' && '9 cross-border remittance providers'}
+                    {locale === 'ja' && '9 つのクロスボーダー送金機関'}
+                  </div>
+                </div>
+              </Link>
             </div>
           </div>
 
