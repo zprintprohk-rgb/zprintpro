@@ -8,6 +8,8 @@ import { Inter, Noto_Sans_JP, Noto_Sans_SC } from 'next/font/google';
 import '../globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
+// 2026-07-05 加：右下角浮动询盘按钮（修复 en 高点击低询盘问题，详情见组件注释）
+import { FloatingQuoteCTA } from '@/components/layout/FloatingQuoteCTA';
 import { BreadcrumbNav } from '@/components/breadcrumb-nav';
 import { CartProvider } from '@/lib/cart-context';
 import { htmlLangMap } from '@/types/locale';
@@ -211,6 +213,7 @@ export default function RootLayout({
           <BreadcrumbNav locale={safeLocale} />
           {children}
           <Footer locale={safeLocale} />
+          <FloatingQuoteCTA locale={safeLocale} />
         </CartProvider>
       </body>
     </html>

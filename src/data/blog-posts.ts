@@ -625,12 +625,14 @@ const lpRestaurantOpeningFlyer: BlogPostMeta = {
   source: 'legacy',
   date: '2026-07-04',
   title: {
-    'zh-hk': '餐廳開業傳單印刷指南 · 深圳印刷 | 智印雲 ZprintPro',
+    // 2026-07-05 修：zh-hk 用户市场是香港/澳门/台湾/海外華人圈，「深圳印刷」对繁体用户是「内地」概念，无认同感。
+    // 改为香港餐飲市場视角；en/ja 保留深圳 supplier origin（用户来自 US/AU/JP，深圳是供应地没问题）。
+    'zh-hk': '餐廳開業傳單印刷完全攻略 · 2026 香港餐飲開業旺季 | 智印雲 ZprintPro',
     en: 'Restaurant Opening Flyer Printing Guide · Shenzhen Printing | ZprintPro',
     ja: 'レストラン開業チラシ印刷ガイド · 深圳印刷 | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '深圳餐飲開業旺季,一張高質素傳單決定客人是否記得你的店。50-200 張小批量到 5,000 張大批量,3 個工作天交期,DHL 全球 2-4 天到貨。',
+    'zh-hk': '2026 年香港餐飲開業旺季,一張高質素傳單決定客人是否記得你的店。智印雲為香港餐廳老闆提供 50-200 張小批量到 5,000 張大批量傳單印刷,3 個工作天交期,DHL 全球 2-4 天到貨,順豐本地同日取貨。',
     en: 'Shenzhen restaurant opening season: a high-quality flyer decides if customers remember your shop. 50-200 to 5,000 copies, 3-day turnaround, DHL global 2-4 day delivery.',
     ja: '深圳レストラン開業シーズン。高品質チラシが顧客の記憶に残るかどうかを決める。50-200枚から5,000枚まで、3営業日納品、DHL世界2-4日配送。',
   },
