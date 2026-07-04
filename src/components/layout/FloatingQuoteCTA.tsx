@@ -91,10 +91,11 @@ export function FloatingQuoteCTA({ locale }: { locale: string }) {
   }
 
   // en / ja: 弹 mini email form
+  const tEn = t as typeof TEXTS['en'];
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!form.name.trim() || !form.email.trim()) {
-      alert(t.errorEmpty);
+      alert(tEn.errorEmpty);
       return;
     }
     // 构建 mailto 链接 — 简单实现，无需新 API
@@ -132,7 +133,7 @@ export function FloatingQuoteCTA({ locale }: { locale: string }) {
       {open && (
         <div className="bg-white rounded-2xl shadow-2xl p-6 w-[340px] border border-gray-100">
           <div className="flex items-center justify-between mb-4">
-            <h3 className="text-lg font-bold text-gray-900">{t.formTitle}</h3>
+            <h3 className="text-lg font-bold text-gray-900">{tEn.formTitle}</h3>
             <button
               onClick={() => { setOpen(false); setSubmitted(false); }}
               className="text-gray-400 hover:text-gray-700 text-2xl leading-none"
@@ -145,12 +146,12 @@ export function FloatingQuoteCTA({ locale }: { locale: string }) {
           {submitted ? (
             <div className="py-8 text-center">
               <div className="text-2xl text-green-600 mb-2">✓</div>
-              <p className="text-sm text-gray-700">{t.success}</p>
+              <p className="text-sm text-gray-700">{tEn.success}</p>
             </div>
           ) : (
             <form onSubmit={handleSubmit} className="space-y-3">
               <div>
-                <label className="text-xs font-medium text-gray-700 block mb-1">{t.nameLabel}</label>
+                <label className="text-xs font-medium text-gray-700 block mb-1">{tEn.nameLabel}</label>
                 <input
                   type="text"
                   value={form.name}
@@ -159,7 +160,7 @@ export function FloatingQuoteCTA({ locale }: { locale: string }) {
                 />
               </div>
               <div>
-                <label className="text-xs font-medium text-gray-700 block mb-1">{t.emailLabel}</label>
+                <label className="text-xs font-medium text-gray-700 block mb-1">{tEn.emailLabel}</label>
                 <input
                   type="email"
                   value={form.email}
@@ -168,7 +169,7 @@ export function FloatingQuoteCTA({ locale }: { locale: string }) {
                 />
               </div>
               <div>
-                <label className="text-xs font-medium text-gray-700 block mb-1">{t.productLabel}</label>
+                <label className="text-xs font-medium text-gray-700 block mb-1">{tEn.productLabel}</label>
                 <textarea
                   rows={2}
                   value={form.product}
@@ -180,9 +181,9 @@ export function FloatingQuoteCTA({ locale }: { locale: string }) {
                 type="submit"
                 className="w-full bg-[#2873F5] hover:bg-[#1E5FD1] text-white font-semibold py-2.5 rounded-md text-sm transition-colors"
               >
-                {t.submit}
+                {tEn.submit}
               </button>
-              <p className="text-[10px] text-gray-500 text-center pt-1">{t.trustLine}</p>
+              <p className="text-[10px] text-gray-500 text-center pt-1">{tEn.trustLine}</p>
             </form>
           )}
         </div>
