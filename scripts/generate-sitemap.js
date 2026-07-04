@@ -1,7 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 const BASE_URL = 'https://zprintpro.com';
-const TODAY = new Date().toISOString().split('T')[0];
+// Use Asia/Shanghai local date, not UTC — fixes bug where UTC late-evening
+// produces yesterday's date when run during Asia/Shanghai daytime hours.
+const TODAY = new Date().toLocaleDateString('sv-SE', { timeZone: 'Asia/Shanghai' });
 
 function extractSlugsFromTs(filePath, pattern) {
   const content = fs.readFileSync(filePath, 'utf-8');
