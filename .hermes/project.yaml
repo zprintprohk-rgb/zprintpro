@@ -1,0 +1,69 @@
+# ZprintPro 项目元数据 (Hermes 实例配置)
+# user 维护,hermes cron job 读取 workdir 字段时参考
+
+project:
+  id: zprintpro
+  name: 智印云 / ZprintPro 印刷外贸独立站
+  category: operations  # 运营类,无部署权限
+  root: F:\zprintpro-nextjs
+
+  # 真实主体 (user-facing 披露)
+  business:
+    legal_name: 深圳市彩龙印刷包装有限公司
+    legal_rep: 唐运提
+    address: 广东省深圳市龙岗区平湖街道嘉城路1号
+    postal_code: "518111"
+    phone_display: "+86 198 8085 1334"
+    whatsapp: "+86 181 2638 0255"
+    email: zprintpro@outlook.com
+    brand: 智印云 / ZprintPro
+    excluded_brand: 智印港  # 竞品,禁止使用
+
+  # 工具集白名单
+  toolsets:
+    enabled:
+      - file          # 读写 .hermes/logs/
+      - terminal      # 跑 scripts/*.py
+      - skills        # seo, seo_geo_full_pipeline
+      - web           # 竞品监控
+      - memory        # 读 F:\zprintpro-nextjs\.hermes\memory\
+    disabled:
+      - cronjob       # 子实例不能再起 cron
+      - delegation    # 不派生 worker (单兵作战)
+
+  # 部署权限 (2026-07-04 修订 — 跟 context.md v2 对齐)
+  # 历史: 旧版 forbidden 含 git push,导致 hermes 6/27~7/1 产出 3 篇博客只写日志不上线
+  # v2: 允许 git add/commit/push origin_ssh main (CF Pages 自动构建),
+  #     但禁止直接 wrangler/npm run cf-deploy (本地 SWC/Node 网络 3 重阻塞)
+  deployment:
+    can_deploy: true
+    deploy_commands_allowed:
+      - "git add"
+      - "git commit"
+      - "git push origin_ssh main"
+    deploy_commands_forbidden:
+      - "wrangler deploy"
+      - "npm run cf-deploy"
+      - "npm run deploy"
+      - "git push origin main"  # 只允许 push 到 origin_ssh,不允许 origin (旧 remote)
+      - "git push --force"
+    required_approval: high_risk_only  # 高风险改动需 user 拍板 (schema批量改写 / 类目页 H1 改 / 首页结构)
+
+  # 触发配置
+  cron:
+    job_id: zprintpro-daily-seo
+    schedule: "15 10 * * *"  # 每天 10:15
+    duration_max_minutes: 120  # 最长 2 小时,超时自动终止
+    ttl_days: 14  # 日志保留 14 天
+
+  # 产出
+  output:
+    logs_dir: F:\zprintpro-nextjs\.hermes\logs
+    backup_dir: F:\zprintpro-nextjs\.hermes\backup
+    naming_pattern: "YYYY-MM-DD-{任务名}.md"
+
+  # 模型
+  models:
+    default: deepseek-v4-flash
+    advance: deepseek-v4-pro
+    hard: glm-5.2-coding  # 需 user 批准
