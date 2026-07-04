@@ -128,7 +128,7 @@ export default function BlogContent({ locale }: { locale: Locale }) {
         ? t.buyingGuideTag
         : t.categories.find((c) => c.key === post.categoryKey)?.label || t.allArticles,
     excerpt: post.excerpt[locale],
-    image: post.cover[locale] || post.cover['zh-hk'],
+    image: post.cover?.[locale] || post.cover?.['zh-hk'] || '',
   }));
 
   const filteredPosts = useMemo(() => {
