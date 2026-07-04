@@ -490,3 +490,25 @@ if (locale === 'zh-hk') {
 ```
 
 **此模式适用于所有 `translations[locale]` 联合类型场景。**
+## 13.13 3 Locale 内容本地化铁律（2026-07-05，血泪教训）
+
+### 核心原则
+**3 locale 不是"翻译"关系，是"3 个独立市场的内容策略"关系。**
+
+| Locale | Target Market | 语言 | 标题规则 | 内容规则 |
+|--------|-------------|------|---------|---------|
+| zh-hk | 香港/澳门/台湾/海外華人圈 | 繁体中文 | 香港本地场景词 | 不出现"深圳" |
+| en | US/UK/AU/CA/NZ/SG | 英文 | 全球通用卖点 | 不硬塞"Shenzhen""Hong Kong" |
+| ja | 日本 | 日文 | 日本市场卖点 | 不出现"深圳""中国"前缀 |
+
+### 禁止事项
+- ❌ **机械翻译**：zh-hk 内容直接机翻成 en/ja 就上线
+- ❌ **标题塞 supplier origin**："Shenzhen Printing""深圳印刷"等工厂地点不准出现在 en/ja 标题
+- ❌ **跨市场混用**：zh-hk 的"香港本地服务"文案直接复制到 en/ja
+- ❌ **只修一处**：blog-posts.ts 和 page.tsx 的标题/描述必须**同时修复**，修了列表页不修详情页 = 没修
+
+### 修复清单（每次改博客内容后必须确认）
+1. `src/data/blog-posts.ts` — 列表页 title/excerpt ✅ 已修复？
+2. `src/app/[locale]/blog/[slug]/page.tsx` — 详情页 posts 对象 title/description ✅ 已修复？
+3. `public/blog-data/{locale}.json` — JSON 正文内容 ✅ 无"Shenzhen/深圳"残留？
+4. zh-hk: 标题是繁体中文？en: 标题是英文？ja: 标题是日文？✅？

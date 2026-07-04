@@ -198,8 +198,8 @@ const posts: Record<string, Record<string, { title: string; description: string;
 
     // 2026-07-04 純文字深度博客: 餐廳開業傳單 (Tier A × P0 flyers) — 純文字・無圖
     'restaurant-opening-flyer-printing-guide': {
-      title: 'Restaurant Opening Flyer Printing Guide · Shenzhen Printing | ZprintPro',
-      description: 'Shenzhen restaurant opening season: a high-quality flyer decides if customers remember your shop. 50-200 to 5,000 copies, 3-day turnaround, DHL global 2-4 day delivery.',
+      title: '餐廳開業傳單印刷完全攻略 · 2026 香港餐飲開業旺季 | 智印雲 ZprintPro',
+      description: '2026 年香港餐飲開業旺季,一張高質素傳單決定客人是否記得你的店。智印雲為香港餐廳老闆提供 50-200 張小批量到 5,000 張大批量傳單印刷,3 個工作天交期,DHL 全球 2-4 天到貨。',
       date: '2026-07-04', category: 'Restaurant Flyer',
       content: '',
     },
@@ -243,8 +243,8 @@ const posts: Record<string, Record<string, { title: string; description: string;
 
     // 2026-07-04 純文字深度ブログ: レストラン開業チラシ (Tier A × P0 flyers) — 純文字・無図
     'restaurant-opening-flyer-printing-guide': {
-      title: 'レストラン開業チラシ印刷ガイド · 深圳印刷 | ZprintPro',
-      description: '深圳レストラン開業シーズン。高品質チラシが顧客の記憶に残るかどうかを決める。50-200枚から5,000枚の大口まで、3営業日納品、DHL世界2-4日配送。',
+      title: 'レストラン開業チラシ印刷ガイド：サイズ・用紙・デザインの徹底解説 | ZprintPro',
+      description: '飲食店開業を応援。高品質チラシが walk-in 顧客の記憶に残るかどうかを決める。50-200枚小ロットから5,000枚大量注文まで、3営業日納品、アジア工場からDHL 2-4日全世界配送。',
       date: '2026-07-04', category: '飲食チラシ',
       content: '',
     },
