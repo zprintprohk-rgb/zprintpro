@@ -11,7 +11,7 @@ import {
 import { JsonLd } from '@/components/JsonLd';
 import { getBuyingGuideBySlug, getAllBuyingGuideSlugs } from '@/data/buying-guides';
 import { getClusterBySlug, getAllClusterSlugs } from '@/data/pillar-content';
-import { getBlogCover } from '@/data/blog-posts';
+import { getBlogCover, getBlogPostMetaBySlug } from '@/data/blog-posts';
 import { products, getProductTitle, getProductDescription, getProductBySlug } from '@/data/products';
 import { convertPriceRangeString } from '@/lib/pricing';
 import { getProductMainImage } from '@/lib/product-image';
@@ -259,11 +259,15 @@ const clusterSlugs = getAllClusterSlugs();
 const allSlugs = [...articleSlugs, ...guideSlugs, ...clusterSlugs];
 
 function getPostData(locale: Locale, slug: string) {
+  // 2026-07-05 fix: 优先从 blog-posts.ts meta 拿 title/desc/date/category
+  // 修 H1 显示 slug bug — legacyPost 缺失 (如 packaging-box-custom-guide) 时
+  // legacyPost=undefined → src.title=undefined → fallback 到 slug 字符串
+  const meta = getBlogPostMetaBySlug(slug);
   const legacyPost = posts[locale]?.[slug];
   // 2026-07-04 修复：content 改为从 src/data/blog-data JSON 读
   // 改写：legacyPost 不存在时也走 JSON fallback（en block 缺失时也救场）
   const jsonEntry = blogContentsByLocale[locale]?.[slug];
-  if (legacyPost || jsonEntry) {
+  if (meta || legacyPost || jsonEntry) {
     let content = getContentFromJson(locale, slug);
     // Fallback: legacy inline content (用于过渡期)
     if (!content && legacyPost) content = legacyPost.content || '';
@@ -273,13 +277,16 @@ function getPostData(locale: Locale, slug: string) {
     content = content.replace(/href="\/category\//g, `href="/${locale}/category/`);
     content = content.replace(/href="\/(en|ja)\/category\//g, `href="/${locale}/category/`);
 
-    // legacy 优先提供 title/desc/date/category；legacy 缺失则从 JSON 借
-    const src = legacyPost || jsonEntry;
+    // 2026-07-05 fix: 优先级 meta (本地化标题) > legacyPost > slug fallback
+    const title = meta?.title?.[locale] || legacyPost?.title || (jsonEntry && jsonEntry.content ? slug : '');
+    const description = meta?.description?.[locale] || legacyPost?.description || '';
+    const date = meta?.date || legacyPost?.date || '2024-01-01';
+    const category = meta?.categoryKey || legacyPost?.category || '';
     return {
-      title: src.title || (jsonEntry && jsonEntry.content ? slug : ''),
-      description: src.description || '',
-      date: src.date || '2024-01-01',
-      category: src.category || '',
+      title,
+      description,
+      date,
+      category,
       content,
       keywords: '',
       isBuyingGuide: false,
