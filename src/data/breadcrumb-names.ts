@@ -4,6 +4,7 @@
  */
 
 import { Locale } from '@/types/locale';
+import { getBlogPostMetaBySlug } from '@/data/blog-posts';
 
 // =============================================================================
 // 通用路径段映射
@@ -267,7 +268,14 @@ export function getSegmentName(segment: string, locale: Locale): string {
     return legacyBlogNames[segment][locale];
   }
 
-  // 6. 兜底：返回原样（但首字母大写美化）
+  // 6. 2026-07-05 fix: blog-posts.ts meta 拿标题（修复面包屑 fallback 到驼峰化 slug 的问题）
+  // 优先于驼峰化 fallback, 避免 "Packaging Box Custom Guide" 这种英文 slug 显示
+  const blogMeta = getBlogPostMetaBySlug(segment);
+  if (blogMeta?.title?.[locale]) {
+    return blogMeta.title[locale];
+  }
+
+  // 7. 兜底：返回原样（但首字母大写美化）
   return segment
     .split('-')
     .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
