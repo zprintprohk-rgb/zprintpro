@@ -259,23 +259,26 @@ const allSlugs = [...articleSlugs, ...guideSlugs, ...clusterSlugs];
 
 function getPostData(locale: Locale, slug: string) {
   const legacyPost = posts[locale]?.[slug];
-  if (legacyPost) {
-    // 2026-07-04 修复:content 改为从 public/blog-data JSON 读
+  // 2026-07-04 修复：content 改为从 src/data/blog-data JSON 读
+  // 改写：legacyPost 不存在时也走 JSON fallback（en block 缺失时也救场）
+  const jsonEntry = blogContentsByLocale[locale]?.[slug];
+  if (legacyPost || jsonEntry) {
     let content = getContentFromJson(locale, slug);
     // Fallback: legacy inline content (用于过渡期)
-    if (!content) content = legacyPost.content || '';
-    // Fix hardcoded paths without locale prefix
+    if (!content && legacyPost) content = legacyPost.content || '';
+    // Apply content transformations
     content = content.replace(/href="\/product\//g, `href="/${locale}/product/`);
-    // Replace /en/product/ or /ja/product/ with correct locale
     content = content.replace(/href="\/(en|ja)\/product\//g, `href="/${locale}/product/`);
-    // Replace /category/ with /{locale}/category/
     content = content.replace(/href="\/category\//g, `href="/${locale}/category/`);
     content = content.replace(/href="\/(en|ja)\/category\//g, `href="/${locale}/category/`);
+
+    // legacy 优先提供 title/desc/date/category；legacy 缺失则从 JSON 借
+    const src = legacyPost || jsonEntry;
     return {
-      title: legacyPost.title,
-      description: legacyPost.description,
-      date: legacyPost.date,
-      category: legacyPost.category,
+      title: src.title || (jsonEntry && jsonEntry.content ? slug : ''),
+      description: src.description || '',
+      date: src.date || '2024-01-01',
+      category: src.category || '',
       content,
       keywords: '',
       isBuyingGuide: false,
