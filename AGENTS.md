@@ -346,11 +346,15 @@ node scripts/verify-deploy.mjs          # 自动查 CF Pages check-runs API stat
 - **P2 长尾**（按需）: banners / envelopes / japan-doujin
 - **禁区**（永不写）: business-cards（§11 主营品类约束）
 
-### 13.4 纯文字博客硬约束（v2）
+### 13.4 纯文字博客硬约束（v2，2026-07-05 修订）
 
 - ❌ **新博客 `cover` 字段不写**（`src/data/blog-posts.ts` BlogPostMeta.cover 改为可选）
 - ❌ **HTML content 不出现 `<img>` 标签**
-- ✅ **标题含"深圳"**: `<主关键词> · 深圳印刷指南 | 智印雲 ZprintPro`
+- ❌ **标题硬塞 supplier origin**（如 "· 深圳印刷 / · 中国深圳 / · Shenzhen Printing"）—— **v2 旧规则作废，见 §13.10 NAP vs SEO 内容脱钩**
+- ✅ **标题按 locale 本地化（按 §13.10）**:
+  - zh-hk → 香港 / 澳门 / 華人圈场景关键词
+  - en → 全球通用卖点（size/paper/design/material）+ 不带地区后缀，或带目标市场（US/UK/AU）通用词
+  - ja → 日本市场卖点 + 不带"中国/深圳"前缀
 - ✅ 9 段结构（引子 / 行業概況 / 材質工藝 / 設計細節 / 選購決策 / 常見問題 / CTA + 隐式 schema）
 - ✅ zh-hk 800-1000 字 / en 250-350 词 / ja 250-350 词
 - ✅ 4 FAQ + Article + BreadcrumbList + FAQPage JSON-LD
@@ -385,3 +389,104 @@ node scripts/verify-deploy.mjs          # 自动查 CF Pages check-runs API stat
 - 推送后任一 curl 返回 5xx 或 404 或 301 → 立即升级 user，不报完成
 - 新博客上线 7 天 GSC 仍无收录 → 升级 user，排查索引问题
 - matrix.json 损坏 / token > 50 万 → 升级 user
+
+### 13.9 矩阵跟踪 cron 监控
+
+- 监控 cron 必须有 3 个 hard-coded 出口: (a) TTL 过期自删 (b) 报告落盘自删 (c) 静默阈值触达升级用户
+- cron 监控 `cf-build-monitor-<sha>` 默认 TTL 30 分钟, 超时自动升级 user
+- 部署 cron 监控 `zprintpro-daily-content-evolve` 默认 TTL 90 分钟
+
+### 13.10 NAP vs SEO 内容脱钩原则（2026-07-05 user 拍板）
+
+**核心**（v4 提示词 3-locale 策略的执行层）：**法务真实 ≠ SEO 内容**。两个层必须分开。
+
+| 层 | 写真实 | 例 |
+|---|--------|----|
+| **NAP 层**（法务合规，必须真实） | ✅ 写深圳 | footer address / contact page / legal disclosure / Schema Organization.address / email signature / WhatsApp 自动回复 |
+| **SEO 内容层**（用户体验 / 认同感 / CTR） | ❌ **不写 supplier origin 城市** | blog 标题 / excerpt / hero / CTA / 列表卡片 / FAQ |
+
+**NAP 真实地址**（法务公示用，所有 locale 一致）：
+- 公司全名: 深圳市彩龍印刷包裝有限公司
+- 地址: 広東省深圳市龍崗区平湖街道嘉城路1号 (〒518111)
+- 电话: +86 198 8085 1334（显示）/ +86 181 2638 0255（WhatsApp 专用）
+- 邮箱: zprintpro@outlook.com
+- 法人: 唐运提
+
+**SEO 内容本地化矩阵**：
+
+| Locale | 目标市场 | blog 标题/excerpt 应含 | 不应含 |
+|--------|---------|---------------------|--------|
+| **zh-hk** | 香港 / 澳门 / 台湾 / 海外華人圈 | 香港场景 (餐飲旺季 / 包裝盒 / 印刷旺季 / MTR / 順豐本地) | "深圳" 作主关键词前缀 |
+| **en** | US / UK / AU / CA / NZ / SG | 全球通用卖点 (sizes / paper / design / material / DHL 2-4 days / Asia factory) | "Shenzhen Printing" / "in Hong Kong" / "China factory" 作标题前缀 |
+| **ja** | 日本市場 (東京 / 大阪 / 名古屋) | 日本市场卖点 (品質 / 短納期 / 日本向け / 中国印刷 通販) | "深圳印刷" / "中国深圳" / "深セン" 作标题前缀 |
+
+**supplier origin 在 SEO 内容的正确写法**：
+- ✅ 正文/FAQ/Schema 中提及 "亚洲工厂 + DHL 全球 2-4 天配送"（佐证品质 + 物流）
+- ✅ CTA 按钮: "Get Quote" / "Free Sample" / "WhatsApp Us"（不绑城市）
+- ✅ Schema Organization.address 写真实深圳（法务）
+- ❌ 标题主关键词前面塞 "· 深圳印刷"（破坏 CTR）
+- ❌ 列表卡片 excerpt 写 "Shenzhen restaurant opening season"（用户跳出）
+
+**机械翻译 = 死罪的反例**（a38dc93 commit 错判，2026-07-05 user 纠正）：
+- ❌ `zh-hk: 香港包裝盒訂製...` → `en: Custom Packaging Box Guide: ... in Hong Kong` → `ja: 香港パッケージ箱...`
+- ❌ `zh-hk: 餐廳開業...深圳印刷` → `en: Restaurant Opening Flyer ... Shenzhen Printing` → `ja: レストラン開業 ... 深圳印刷`
+- ❌ 老博客 24 条全部 excerpt 含 "in Hong Kong"（v1 时代 zh-hk 模板直接英译，Phase 2 排程清洗）
+
+**判断 SOP**（任何新 blog/SKU 内容上架前自查）：
+1. 打开 blog-posts.ts 的 title / excerpt 3 locale 字段
+2. 检查 en/ja 标题是否含 supplier origin 城市（Shenzhen / 深圳 / 深セン / 中国）
+3. 检查 en/ja 标题是否含 zh-hk 残留地区词（Hong Kong / 香港 / 香港）
+4. 检查 en/ja excerpt 是否含 "Shenzhen" / "Hong Kong" 等硬塞词
+5. 任一命中 → 改成本地化卖点（size/paper/design/material/scenario）
+
+**应用范围**：
+- blog-posts.ts 所有 BlogPostMeta.title / excerpt 3 locale 字段
+- products.ts 所有 Product.title_zh/en/ja / description / descriptionEn / descriptionJa / longDescription
+- category/[slug]/page.tsx hero 标题 + description
+- 任何 `pages/blog/` JSON content (en.json / ja.json)
+- Schema Article.author / BlogPosting 字段
+## 13.10 NAP vs SEO 内容脱钩原则（2026-07-05，教训来自 a38dc93 踩坑）
+
+**核心错误**：把"法务真实地址（NAP）"和"用户认知（SEO 标题/excerpt/正文）"混在一起。
+
+| 层 | 用途 | 规则 |
+|----|------|------|
+| **NAP 层** (footer/schema/contact/email/tel) | 法务合规 | 必须真实（zh-hk=HK / en=Shenzhen / ja=Shenzhen） |
+| **SEO 内容层** (blog 标题/excerpt/正文/hero/CTA) | 用户认知、认同感、CTR | 必须本地化，按 target market 写，不按 factory location |
+
+**zh-hk SEO 内容**：target market = 香港/澳门/台湾/海外華人圈
+- ❌ 标题写"深圳印刷"——繁体用户视"深圳"为内地概念，无认同感，CTR 低
+- ✅ 写香港本地场景词："香港餐飲開業旺季""港九新界速遞"
+
+**en SEO 内容**：target market = US/UK/AU
+- ❌ 标题写"Shenzhen Printing"——美国用户看到直接跳出
+- ✅ supplier origin 藏在正文："DHL 2-4 day from Asia factory"
+
+**ja SEO 内容**：target market = 日本
+- ❌ 标题写"深圳印刷"——日本用户不搜这个词
+- ✅ 写日本市场卖点，不带中国/深圳前缀
+
+## 13.11 Pre-commit 校验清单（2026-07-05，防重复踩坑）
+
+**每次 commit 前 5 问**：
+1. `node scripts/check-encoding.js` — 编码检查（UTF-16/CRLF）✅？
+2. `npm run build` — 本地编译通过（Compiled successfully + 无 TS error）✅？
+3. 新增 blog slug 是否已加入 `articleSlugs` 数组？✅？
+4. zh-hk 标题/excerpt 是否写了 target market（香港）而非 factory location（深圳）？✅？
+5. en/ja 标题/excerpt 是否避免了机械翻译污染（"in Hong Kong""香港"等硬塞词）？✅？
+
+**5 问全过才 push。任一项不过立即修，不推。**
+
+## 13.12 TS 联合类型窄化模式（2026-07-05）
+
+**问题**：`TEXTS[locale]` 返回联合类型，分支内 TS 不确定具体类型。
+
+**修复模式**（见 `FloatingQuoteCTA.tsx`）：
+```ts
+if (locale === 'zh-hk') {
+  const tZh = t as typeof TEXTS['zh-hk'];  // 强制窄化
+  // 现在可以访问 zh-hk 独有的字段
+}
+```
+
+**此模式适用于所有 `translations[locale]` 联合类型场景。**

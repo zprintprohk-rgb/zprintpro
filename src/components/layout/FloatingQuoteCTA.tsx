@@ -68,7 +68,9 @@ export function FloatingQuoteCTA({ locale }: { locale: string }) {
 
   // zh-hk: 直接 WhatsApp 跳转，不弹 form
   if (locale === 'zh-hk') {
-    const waUrl = `https://wa.me/8619880851334?text=${encodeURIComponent(t.whatsappMsg + ' ')}`;
+    // 2026-07-05 修：t 是联合类型，zh-hk 分支内强制断言避免 TS 报错
+    const tZh = t as typeof TEXTS['zh-hk'];
+    const waUrl = `https://wa.me/8619880851334?text=${encodeURIComponent(tZh.whatsappMsg + ' ')}`;
     return (
       <a
         href={waUrl}

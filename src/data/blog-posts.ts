@@ -601,15 +601,18 @@ const lpPackagingBoxCustomGuide: BlogPostMeta = {
   categoryKey: 'packaging',
   source: 'legacy',
   date: '2026-07-03',
+  // 2026-07-05 fix (NAP vs SEO 内容脱钩): zh-hk 用户市场 = 香港 (保留 HK 视角);
+  // en/ja 用户市场 = US/UK/AU/JP, 标题里硬塞"in Hong Kong / 香港" = 机械翻译, 无认同感.
+  // en: 全球通用 + 强调"6 盒型对比 + 2026 最新"; ja: 强调"6 つの箱型徹底比較"
   title: {
     'zh-hk': '香港包裝盒訂製完全指南：盒型、材質、工藝與預算控制',
-    en: 'Custom Packaging Box Guide: Styles, Materials & Budget in Hong Kong',
-    ja: '香港パッケージ箱カスタム完全ガイド：箱型、材質、加工と予算管理',
+    en: 'Custom Packaging Box Guide 2026: 6 Box Styles, Materials & Finishes Compared | ZprintPro',
+    ja: 'パッケージ箱カスタム完全ガイド2026：6つの箱型・素材・加工を徹底比較 | ZprintPro',
   },
   excerpt: {
     'zh-hk': '從天地盒到飛機盒，從白卡紙到特種紙，從燙金到擊凸——智印雲為您拆解香港包裝盒訂製的盒型選擇、紙材對比、工藝搭配與預算控制策略，助您用合理成本打造品牌專屬包裝。',
-    en: 'From lid-base boxes to shipping cartons, white card to specialty paper, foil stamping to embossing — ZprintPro decodes every aspect of custom packaging in Hong Kong for your brand.',
-    ja: '天地方向箱から航空便箱まで、白板紙から特殊紙まで、箔押しからエンボスまで—ZprintProが香港パッケージ箱カスタムの箱型、素材、加工、予算管理を徹底解説。',
+    en: 'Lid-base, book-style, drawer, mailer, magnetic — 6 main box styles compared side by side. Pick the right box for your brand and budget, with paper tier and finish recommendations.',
+    ja: '天地蓋箱・ブック型・引き出し箱・メールナー箱・マグネット式——6つの主要箱型を横並びで徹底比較。ブランドと予算に合った箱を、素材と加工の提案とともにお届け。',
   },
   cover: {
     'zh-hk': '/images/blog/zh-hk/sticker-guide.webp',
@@ -625,16 +628,18 @@ const lpRestaurantOpeningFlyer: BlogPostMeta = {
   source: 'legacy',
   date: '2026-07-04',
   title: {
-    // 2026-07-05 修：zh-hk 用户市场是香港/澳门/台湾/海外華人圈，「深圳印刷」对繁体用户是「内地」概念，无认同感。
-    // 改为香港餐飲市場视角；en/ja 保留深圳 supplier origin（用户来自 US/AU/JP，深圳是供应地没问题）。
+    // 2026-07-05 fix (NAP vs SEO 内容脱钩): zh-hk 用户市场 = 香港 (保留 HK 视角);
+    // en/ja 用户市场 = US/UK/AU/JP, 标题硬塞"Shenzhen Printing / 深圳印刷" = 机械翻译, 无认同感.
+    // a38dc93 之前判断"en/ja 保留深圳 supplier origin"是错的——supplier origin 应在正文 (DHL/全球配送) 提及,
+    // 不应塞标题主关键词前面. 改为全球通用 + 强调卖点 (size/paper/design)
     'zh-hk': '餐廳開業傳單印刷完全攻略 · 2026 香港餐飲開業旺季 | 智印雲 ZprintPro',
-    en: 'Restaurant Opening Flyer Printing Guide · Shenzhen Printing | ZprintPro',
-    ja: 'レストラン開業チラシ印刷ガイド · 深圳印刷 | ZprintPro',
+    en: 'Restaurant Opening Flyer Printing Guide: Sizes, Paper & Design Tips | ZprintPro',
+    ja: 'レストラン開業チラシ印刷ガイド：サイズ・用紙・デザインの徹底解説 | ZprintPro',
   },
   excerpt: {
     'zh-hk': '2026 年香港餐飲開業旺季,一張高質素傳單決定客人是否記得你的店。智印雲為香港餐廳老闆提供 50-200 張小批量到 5,000 張大批量傳單印刷,3 個工作天交期,DHL 全球 2-4 天到貨,順豐本地同日取貨。',
-    en: 'Shenzhen restaurant opening season: a high-quality flyer decides if customers remember your shop. 50-200 to 5,000 copies, 3-day turnaround, DHL global 2-4 day delivery.',
-    ja: '深圳レストラン開業シーズン。高品質チラシが顧客の記憶に残るかどうかを決める。50-200枚から5,000枚まで、3営業日納品、DHL世界2-4日配送。',
+    en: 'Opening a new restaurant? A premium flyer decides whether walk-ins remember your shop. From 50-200 small batches to 5,000 bulk prints, 3-day turnaround, DHL 2-4 day global delivery from Asia factory.',
+    ja: '新規オープン飲食店様へ。高品質チラシが walk-in 顧客の記憶に残るかどうかを決める。50-200枚小ロットから5,000枚大批注まで、3営業日納品、アジア工場から DHL 2-4日全世界配送。',
   },
   // 故意不写 cover 字段 — 純文字博客 (v2 硬约束 2026-07-04)
   // getBlogCover 检测 meta.cover 为 undefined 时返回 '',page.tsx 据此跳过 hero 图渲染
