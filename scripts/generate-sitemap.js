@@ -108,6 +108,99 @@ locales.forEach(locale => {
 });
 console.log('IndexNow pings sent for 3 locales');
 
+// === Image sitemap (Google Images) — Week 1 SEO 修复 ===
+// Auto-generated from product image directories. Naming rules:
+//   seedream-webp/: zprintpro-{category}-{slug}-{locale}[-N].webp
+//   japan/        : {slug}.webp (japan-doujin category, shared across locales)
+//                    JA-zprintpro-{category}-{slug}-{locale}-{N}.jpg (locale-specific)
+//   blog/{locale}/: blog cover images
+function buildImageSitemap() {
+  const fsx = require('fs');
+  const pathx = require('path');
+  const imgDir = pathx.join(__dirname, '../public/images');
+
+  // Known category slugs (from src/data/products.ts)
+  const knownCategories = ['stickers','flyers','packaging','posters','paper-bags','business-cards','banners','books','menus','envelopes','calendars','red-packets','educational','japan-doujin'];
+
+  // Index images by product (slug → { locale: [{url, title}] })
+  const productsImg = {};
+
+  // 1. seedream-webp — main product images
+  const seedDir = pathx.join(imgDir, 'products/seedream-webp');
+  if (fsx.existsSync(seedDir)) {
+    // Build regex with explicit category alternation
+    const catPattern = knownCategories.join('|');
+    const seedRe = new RegExp(`^zprintpro-(${catPattern})-([a-z0-9\\-]+)-(zh-hk|en|ja)(-\\d+)?\\.(webp|jpg|png)$`);
+    fsx.readdirSync(seedDir).forEach((f) => {
+      const m = f.match(seedRe);
+      if (!m) return;
+      const [, category, slug, locale] = m;
+      if (!productsImg[slug]) productsImg[slug] = {};
+      if (!productsImg[slug][locale]) productsImg[slug][locale] = [];
+      const titleBase = slug.split('-').map((s) => s.charAt(0).toUpperCase() + s.slice(1)).join(' ');
+      productsImg[slug][locale].push({
+        url: `/images/products/seedream-webp/${f}`,
+        title: `${titleBase} | ZprintPro`,
+      });
+    });
+  }
+
+  // 2. japan/ — japan-doujin category, simpler naming
+  const japanDir = pathx.join(imgDir, 'japan');
+  if (fsx.existsSync(japanDir)) {
+    fsx.readdirSync(japanDir).forEach((f) => {
+      let m = f.match(/^([a-z0-9\-]+)\.webp$/);
+      if (m) {
+        const slug = m[1];
+        ['zh-hk', 'en', 'ja'].forEach((locale) => {
+          if (!productsImg[slug]) productsImg[slug] = {};
+          if (!productsImg[slug][locale]) productsImg[slug][locale] = [];
+          const titleBase = slug.split('-').map((s) => s.charAt(0).toUpperCase() + s.slice(1)).join(' ');
+          productsImg[slug][locale].push({
+            url: `/images/japan/${f}`,
+            title: `${titleBase} | ZprintPro`,
+          });
+        });
+        return;
+      }
+      m = f.match(/^JA-zprintpro-japan-doujin-([a-z0-9\-]+)-(ja)-\d+\.(jpg|webp)$/);
+      if (m) {
+        const slug = m[1];
+        if (!productsImg[slug]) productsImg[slug] = {};
+        if (!productsImg[slug]['ja']) productsImg[slug]['ja'] = [];
+        const titleBase = slug.split('-').map((s) => s.charAt(0).toUpperCase() + s.slice(1)).join(' ');
+        productsImg[slug]['ja'].push({
+          url: `/images/japan/${f}`,
+          title: `${titleBase} | ZprintPro`,
+        });
+      }
+    });
+  }
+
+  // Build XML
+  const locales = ['zh-hk', 'en', 'ja'];
+  let xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n';
+  let urlCount = 0;
+  Object.keys(productsImg).sort().forEach((slug) => {
+    locales.forEach((locale) => {
+      const imgs = productsImg[slug][locale] || [];
+      if (imgs.length === 0) return;
+      urlCount++;
+      xml += `  <url>\n    <loc>${BASE_URL}/${locale}/product/${slug}/</loc>\n    <lastmod>${TODAY}</lastmod>\n`;
+      imgs.forEach((img) => {
+        xml += `    <image:image>\n      <image:loc>${BASE_URL}${img.url}</image:loc>\n      <image:title>${img.title}</image:title>\n    </image:image>\n`;
+      });
+      xml += `  </url>\n`;
+    });
+  });
+  xml += '</urlset>\n';
+
+  fsx.writeFileSync(pathx.join(__dirname, '../public/sitemap-image.xml'), xml, 'utf-8');
+  console.log(`sitemap-image.xml: ${urlCount} product URLs (${Object.keys(productsImg).length} unique products)`);
+}
+
+buildImageSitemap();
+
 // Keep process alive briefly for async HTTP requests, then exit 0
 // (CF Pages build treats non-zero exit as failure, but IndexNow
 // errors must not block deploy.)

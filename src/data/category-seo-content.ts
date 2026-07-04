@@ -3929,6 +3929,287 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
   },
 };
 
+// === Week 1 SEO 修复：japan-doujin category 补 PillarContent（之前缺位） ===
+// 内容设计依据：AGENTS.md §13 P2 长尾类目 + §11 永不写 business-cards 约束
+const japanDoujinContent: Record<string, CategoryLocaleContent> = {
+  'zh-hk': {
+    h2: '同人周邊印刷 — 同人誌 / 貼紙 / 海報 / 壓克力周邊 香港跨境特化',
+    coreAdvantages: {
+      title: '核心競爭優勢',
+      items: [
+        {
+          heading: '1. 同人場景特化：A5/B5 同人誌 + 異形周邊貼紙 + A3 海報，一條龍覆蓋',
+          points: [
+            '同人誌、貼紙（異形／PVC 防水／燙金）、海報（A3 / A2 PP 裱貼）、壓克力立牌、紙袋包裝等核心品類全覆蓋',
+            'Comiket / 即售會活動場景預設模板：A5/B5 標書尺寸 + 24h 特急対応',
+            '支援個人社團 / 新手作者的小批量起印（10 本起），無需湊 MOQ',
+          ],
+        },
+        {
+          heading: '2. 跨境友好：深圳工廠直發日本 DHL 2-4 工作天，含稅到門方案',
+          points: [
+            'DHL Express / EMS / 順豐國際多管道靈活組合，跨境配送最優化',
+            '支持日本消費税進口含稅方案（DDP），收件人零稅務負擔',
+            '日文 + 繁體中文雙語客服，跨境支付（PayPal / 銀行匯款）齊備',
+          ],
+        },
+        {
+          heading: '3. 高品質色彩還原：柯式 CMYK + ICC profile 管理，插畫色彩不偏色',
+          points: [
+            '海德堡柯式印刷機 + 專業分色 + ICC profile 色彩管理',
+            '原畫 RGB / sRGB 自動轉 CMYK，最佳化插畫色彩飽和度與漸層還原度',
+            '支持特殊色：螢光色、金屬色、珠光色（pantone coated / uncoated）',
+          ],
+        },
+      ],
+    },
+    materialTable: {
+      title: '材質工藝詳解',
+      subtitle: '同人周邊常用材質對照',
+      columns: ['周邊類型', '推薦材質', '適用場景'],
+      rows: [
+        { material: '同人誌 封面', features: '銅版紙 200g / 雪銅紙 120g | 柯式四色', scenarios: 'Comiket / 即售會' },
+        { material: '同人誌 內頁', features: '道林紙 90g / 蒙肯紙 80g | 單色或四色', scenarios: '漫畫 / 插畫本' },
+        { material: '周邊貼紙', features: 'PVC 防水 / 透明 PET / 燙金 | 模切異形', scenarios: '角色貼 / LOGO 貼 / 贈品' },
+        { material: '海報 / 立牌', features: 'PP 裱貼 / 雪銅紙 200g / 壓克力 5mm', scenarios: '展會裝飾 / 店面陳列' },
+        { material: '周邊包裝', features: '氣泡信封 / 牛皮紙信封 / 客製化紙盒', scenarios: '跨境運輸 / 禮贈包裝' },
+      ],
+    },
+    specialOptions: {
+      title: '特殊加工選項',
+      items: [
+        { name: '燙金 / 燙銀', description: 'LOGO 或角色圖案金屬光澤，提升收藏價值。' },
+        { name: 'UV 局部上光', description: '凸顯重點插畫元素，觸感立體。' },
+        { name: '異形模切', description: '角色輪廓 / 不規則形狀貼紙，創意無限。' },
+        { name: 'PP 裱貼（霧面 / 亮面）', description: '海報防水防潮，長期保存不易褪色。' },
+        { name: '壓克力立牌', description: 'UV 直噴 + 壓克力 5mm，背面印製角色資訊。' },
+        { name: '折頁工藝', description: '同人誌特殊裝訂：折頁 + 膠裝 + 騎馬釘三選一。' },
+      ],
+    },
+    techSpecs: {
+      title: '技術參數詳解',
+      items: [
+        { label: '起訂量', value: '同人誌 10 本起 / 貼紙 50 張起 / 海報 10 張起 / 壓克力 5 個起' },
+        { label: '交期', value: '同人誌常規 5 天 / 貼紙 3-5 天 / 海報 3 天 / 加急 2-3 天' },
+        { label: '檔案要求', value: 'AI / PDF（CMYK，300dpi，含出血 3mm），RGB 自動轉 CMYK 校色' },
+        { label: '色彩管理', value: 'ICC profile (GRACoL / Fogra) + 海德堡分色，插畫色彩精準還原' },
+        { label: '跨境配送', value: 'DHL Express 2-4 工作天到日本 / EMS 5-7 天 / 順豐國際 4-6 天' },
+      ],
+    },
+    serviceNodes: {
+      title: '同人創作者服務節點',
+      items: [
+        { title: '旺角打樣中心', description: '可預約查看實際紙質 + 色彩樣本（Comiket 前樣書特急対応）。' },
+        { title: '深圳工廠直發日本', description: 'DHL Express 含稅到門（DDP）方案，收件人零稅務負擔。' },
+        { title: '小批量加急服務', description: '同人誌 5 本加急 3 天出貨，Comiket 前 24 小時特急対応。' },
+      ],
+    },
+    buyingGuide: {
+      title: '同人周邊選購指南',
+      paragraphs: [
+        '同人誌印刷首先要確定裝訂方式：騎馬釘適合 16-32 頁輕薄本，膠裝適合 40 頁以上中厚本，精裝適合 100 頁以上的商業級同人誌。預算有限選騎馬釘，品質優先選膠裝，紀念性質選精裝。',
+        '周邊貼紙優先選 PVC 防水材質，異形模切需提前確認刀模線（我們提供免費刀模設計）。壓克力立牌注意厚度（建議 5mm 起，太薄易碎）和 UV 直噴色彩還原度，預算允許優先選霧面 PP 裱貼。',
+        '跨境配送到日本 / 美國 / 東南亞，DHL Express 含稅到門（DDP）是收件人最便利的方案。如需省運費可選 EMS 或順豐國際，但收件人可能需自行處理進口稅務。同人創作建議預留 2 週物流緩衝期，避免活動前趕不上。',
+        '在香港市場經營同人周邊，可同時開拓 Comiket 同好圈 + 本地動漫周邊店 + 跨境電商三條渠道。Comiket 前 4-6 週開始印刷預備，本地活動 2-3 週前下單，跨境電商隨時補貨。',
+      ],
+    },
+    faq: [
+      { q: '同人誌印刷最低多少本起訂？', a: '10 本起印，採用數碼印刷支持小批量。50 本以上建議柯式印刷，單價更低、色彩更穩定。' },
+      { q: 'Comiket 前特急対応可以嗎？', a: '可以。同人誌 5 本特急 3 天出貨，10 本特急 2 天出貨。建議 Comiket 前 2 週下單預留緩衝。' },
+      { q: '插畫色彩會不會偏色？', a: '採用 ICC profile 色彩管理（GRACoL / Fogra39）+ 海德堡柯式機，原畫 RGB 自動轉 CMYK 校色，色彩還原度達 95%+。可先打樣確認。' },
+      { q: '異形貼紙可以切嗎？', a: '可以。任意形狀模切（含圓角、不規則、角色輪廓），我們提供免費刀模設計服務，起訂 50 張。' },
+      { q: '跨境配送到日本要多久？', a: 'DHL Express 2-4 個工作天到日本主要城市（東京 / 大阪 / 京都 / 福岡）。支持 DDP 含稅到門方案，收件人零稅務負擔。' },
+      { q: '壓克力立牌厚度怎麼選？', a: '建議 5mm 起，太薄易碎；10mm+ 更有質感但成本高。標準尺寸 A5（148×210mm）或角色立繪定制尺寸皆可。' },
+      { q: '同人誌裝訂方式怎麼選？', a: '騎馬釘適合 16-32 頁輕薄本；膠裝適合 40-100 頁中厚本；精裝適合 100+ 頁商業級同人誌。預算優先騎馬釘，品質優先膠裝。' },
+      { q: '周邊包裝可以客製化嗎？', a: '可以。氣泡信封、牛皮紙信封、客製化紙盒（印 LOGO）皆可。跨境運輸建議加 5mm 厚瓦楞內襯防壓。' },
+    ],
+  },
+  en: {
+    h2: 'Doujinshi & Anime Goods Printing — A5/B5 Books / Stickers / Posters / Acrylic Stands',
+    coreAdvantages: {
+      title: 'Why Choose ZprintPro for Doujin Goods?',
+      items: [
+        {
+          heading: '1. Doujin-Scene Specialization: A5/B5 Books + Die-Cut Stickers + A3 Posters',
+          points: [
+            'Complete coverage: doujinshi books, stickers (die-cut / PVC waterproof / foil), posters (A3/A2 PP laminated), acrylic stands, paper bag packaging.',
+            'Comiket / doujin event pre-set templates: A5/B5 standard sizes + 24h rush service.',
+            'Low MOQ (10 books) for individual circles / first-time creators.',
+          ],
+        },
+        {
+          heading: '2. Cross-Border Friendly: Shenzhen Factory Direct to Japan via DHL 2-4 Working Days',
+          points: [
+            'DHL Express / EMS / SF International flexible combinations for optimized cross-border delivery.',
+            'Japan consumption tax DDP (Delivered Duty Paid) option — recipient zero customs burden.',
+            'Japanese + Traditional Chinese bilingual customer service. Cross-border payment (PayPal / bank transfer) supported.',
+          ],
+        },
+        {
+          heading: '3. High-Quality Color Reproduction: Offset CMYK + ICC Profile Management',
+          points: [
+            'Heidelberg offset printing + professional color separation + ICC profile color management.',
+            'Original RGB / sRGB auto-converted to CMYK, optimizing illustration color saturation and gradient restoration.',
+            'Pantone coated / uncoated special color support.',
+          ],
+        },
+      ],
+    },
+    materialTable: {
+      title: 'Material & Craftsmanship Guide',
+      subtitle: 'Common Doujin Goods Materials',
+      columns: ['Product Type', 'Recommended Material', 'Best For'],
+      rows: [
+        { material: 'Doujinshi Cover', features: 'Art paper 200g / Snow paper 120g | Offset CMYK', scenarios: 'Comiket / Doujin events' },
+        { material: 'Doujinshi Interior', features: 'Woodfree paper 90g / Munken paper 80g | Mono or CMYK', scenarios: 'Manga / Illustration books' },
+        { material: 'Goods Stickers', features: 'PVC waterproof / Clear PET / Foil | Die-cut custom', scenarios: 'Character / LOGO / Gifts' },
+        { material: 'Posters / Stands', features: 'PP laminated / Snow paper 200g / Acrylic 5mm', scenarios: 'Event decor / Retail display' },
+        { material: 'Goods Packaging', features: 'Bubble mailer / Kraft envelope / Custom paper box', scenarios: 'Cross-border shipping / Gifts' },
+      ],
+    },
+    specialOptions: {
+      title: 'Special Finishing Options',
+      items: [
+        { name: 'Foil Stamping (Gold/Silver)', description: 'Metallic shine on LOGOs or character art — boosts collectible value.' },
+        { name: 'Spot UV Coating', description: 'Highlight key illustration elements with raised, tactile glossy finish.' },
+        { name: 'Die-Cut Custom Shape', description: 'Character silhouettes / irregular shapes — unlimited creativity.' },
+        { name: 'PP Lamination (Matte / Gloss)', description: 'Waterproof + fade-resistant for long-lasting poster preservation.' },
+        { name: 'Acrylic Stand', description: 'UV direct print + 5mm acrylic, character info printed on reverse.' },
+        { name: 'Special Binding', description: 'Fold + perfect binding + saddle stitch — three choices for doujinshi.' },
+      ],
+    },
+    techSpecs: {
+      title: 'Technical Specifications',
+      items: [
+        { label: 'Minimum Order', value: '10 books / 50 stickers / 10 posters / 5 acrylic stands' },
+        { label: 'Turnaround', value: 'Books 5 days standard / Stickers 3-5 days / Posters 3 days / Rush 2-3 days' },
+        { label: 'File Requirements', value: 'AI / PDF (CMYK, 300dpi, 3mm bleed). RGB auto-converted to CMYK with color proofing.' },
+        { label: 'Color Management', value: 'ICC profile (GRACoL / Fogra) + Heidelberg color separation, 95%+ color accuracy.' },
+        { label: 'Cross-Border Shipping', value: 'DHL Express 2-4 days to Japan / EMS 5-7 days / SF International 4-6 days' },
+      ],
+    },
+    serviceNodes: {
+      title: 'Doujin Creator Service Points',
+      items: [
+        { title: 'Mong Kok Prototyping Center', description: 'Book an appointment to view physical samples (paper + color). Pre-Comiket rush sample support.' },
+        { title: 'Shenzhen Factory → Japan Direct', description: 'DHL Express DDP (Delivered Duty Paid) — recipient zero customs burden.' },
+        { title: 'Small-Batch Rush Service', description: '5-book rush in 3 days, 10-book rush in 2 days. Comiket 24h emergency support.' },
+      ],
+    },
+    buyingGuide: {
+      title: 'Doujin Goods Buying Guide',
+      paragraphs: [
+        'For doujinshi printing, first determine the binding: saddle stitch suits 16-32 page thin books, perfect binding for 40+ page medium-thick books, hardcover for 100+ page commercial-grade works. Budget-conscious choose saddle stitch, quality-first choose perfect binding, commemorative choose hardcover.',
+        'Goods stickers prioritize PVC waterproof material. Die-cut custom shapes need confirmed die-cut lines (we provide free die-cut design). Acrylic stands need 5mm+ thickness (thinner breaks easily) and UV direct print color accuracy. Matte PP lamination is preferred when budget allows.',
+        'Cross-border shipping to Japan / US / Southeast Asia — DHL Express DDP (Delivered Duty Paid) is the most convenient for recipients. For cheaper shipping, EMS or SF International, but recipients may need to handle import customs themselves. Doujin creators should reserve 2-week logistics buffer before events.',
+        "Operating in Hong Kong's doujin market, you can develop three channels simultaneously: Comiket peer circle + local anime goods stores + cross-border e-commerce. Start printing preparation 4-6 weeks before Comiket, place orders 2-3 weeks before local events, replenish cross-border e-commerce anytime.",
+      ],
+    },
+    faq: [
+      { q: 'What is the minimum doujinshi print order?', a: '10 books minimum using digital printing. 50+ books recommended for offset printing — lower unit price and more stable color.' },
+      { q: 'Can you handle pre-Comiket rush orders?', a: 'Yes. 5-book rush in 3 days, 10-book rush in 2 days. Place orders 2 weeks before Comiket for buffer.' },
+      { q: 'Will my illustration colors shift?', a: 'ICC profile color management (GRACoL / Fogra39) + Heidelberg offset press. Original RGB auto-converted to CMYK with 95%+ color accuracy. Sample proofing available.' },
+      { q: 'Can I get custom die-cut stickers?', a: 'Yes. Any shape die-cut (rounded, irregular, character silhouette). Free die-cut design service, MOQ 50 stickers.' },
+      { q: 'How long is cross-border shipping to Japan?', a: 'DHL Express 2-4 working days to major Japan cities (Tokyo / Osaka / Kyoto / Fukuoka). DDP option available.' },
+      { q: 'What acrylic stand thickness should I choose?', a: '5mm+ recommended (thinner breaks easily); 10mm+ feels more premium but costs more. Standard A5 (148×210mm) or custom sizes.' },
+      { q: 'How do I choose doujinshi binding?', a: 'Saddle stitch for 16-32 page thin books; perfect binding for 40-100 page medium-thick books; hardcover for 100+ page commercial-grade.' },
+      { q: 'Can I customize goods packaging?', a: 'Yes. Bubble mailers, kraft envelopes, custom paper boxes (with LOGO print). For cross-border, add 5mm corrugated inner liner for crush protection.' },
+    ],
+  },
+  ja: {
+    h2: '同人誌・アニメグッズ印刷 — A5/B5 / ステッカー / ポスター / アクリルスタンド',
+    coreAdvantages: {
+      title: 'ZprintPro 同人グッズの強み',
+      items: [
+        {
+          heading: '1. 同人シーン特化：A5/B5 同人誌 + 異形ステッカー + A3 ポスター',
+          points: [
+            '同人誌、ステッカー（異形／PVC防水／箔押し）、ポスター（A3／A2 PPラミネート）、アクリルスタンド、紙袋パッケージまで全カバー。',
+            'Comiket／即売会向けプリセットテンプレート：A5/B5標準サイズ＋24時間特急対応。',
+            '個人サークル・新人作家向けの少ロット対応（10部から）。',
+          ],
+        },
+        {
+          heading: '2. 越境対応：深セン工場からDHL 2-4営業日で日本直送、消費税込み（DDP）対応',
+          points: [
+            'DHL Express／EMS／SF国際の柔軟な組み合わせで越境配送を最適化。',
+            '日本の消費税込みDDP（Delivered Duty Paid）対応で受取人様の通関手続き不要。',
+            '日本語＋繁体中国語バイリンガルカスタマーサポート。越境決済（PayPal／銀行振込）対応。',
+          ],
+        },
+        {
+          heading: '3. 高品質カラー再現：オフセットCMYK＋ICCプロファイル管理',
+          points: [
+            'ハイデルベルグオフセット印刷＋專業分色＋ICCプロファイルカラーマネジメント。',
+            '原画RGB／sRGBを自動CMYK変換、イラストの彩度とグラデーション再現度を最適化。',
+            'Pantone coated／uncoated特殊色対応。',
+          ],
+        },
+      ],
+    },
+    materialTable: {
+      title: '材質・工法ガイド',
+      subtitle: '同人グッズよく使われる材質',
+      columns: ['製品タイプ', '推奨材質', '最適な用途'],
+      rows: [
+        { material: '同人誌 表紙', features: 'コート紙200g／スノーペーパー120g｜オフセットCMYK', scenarios: 'コミケ／即売会' },
+        { material: '同人誌 本文', features: '上質紙90g／ムンケンペーパー80g｜モノクロまたはCMYK', scenarios: 'マンガ／イラスト本' },
+        { material: 'グッズステッカー', features: 'PVC防水／透明PET／箔押し｜異形抜き', scenarios: 'キャラクター／LOGO／特典' },
+        { material: 'ポスター／スタンド', features: 'PPラミネート／スノーペーパー200g／アクリル5mm', scenarios: 'イベント装飾／店舗陳列' },
+        { material: 'グッズ包装', features: 'プチプチ封筒／クラフト封筒／カスタム紙箱', scenarios: '越境配送／ギフト包装' },
+      ],
+    },
+    specialOptions: {
+      title: '特殊加工オプション',
+      items: [
+        { name: '箔押し（金／銀）', description: 'ロゴやキャラクターアートに金属光沢、コレクション価値アップ。' },
+        { name: 'UV局部コーティング', description: '重要なイラスト要素を立体的な光沢で強調。' },
+        { name: '異形型抜き', description: 'キャラクターシルエット／不規則形状 — クリエイティブ無限大。' },
+        { name: 'PPラミネート（マット／グロス）', description: '防水・防退色でポスターを長期保存。' },
+        { name: 'アクリルスタンド', description: 'UV直噴印刷＋5mmアクリル、キャラクター情報裏面印刷。' },
+        { name: '特殊製本', description: '折り＋無線綴じ＋中綴じ — 同人誌3つの選択肢。' },
+      ],
+    },
+    techSpecs: {
+      title: '技術仕様',
+      items: [
+        { label: '最小発注数', value: '同人誌10部／ステッカー50枚／ポスター10枚／アクリル5個' },
+        { label: '納期', value: '同人誌通常5日／ステッカー3-5日／ポスター3日／急行2-3日' },
+        { label: 'ファイル要件', value: 'AI／PDF（CMYK、300dpi、3mm塗りたし）。RGB自動CMYK変換＋色校正。' },
+        { label: 'カラーマネジメント', value: 'ICCプロファイル（GRACoL／Fogra）＋ハイデルベルグ分色、色再現度95%以上。' },
+        { label: '越境配送', value: 'DHL Express 2-4日で日本主要都市／EMS 5-7日／SF国際 4-6日' },
+      ],
+    },
+    serviceNodes: {
+      title: '同人クリエイターサービス拠点',
+      items: [
+        { title: '旺角サンプルセンター', description: '実物サンプル（紙質＋カラー）をご覧いただけます（コミケ前特急サンプル対応）。' },
+        { title: '深セン工場 → 日本直送', description: 'DHL Express DDP（Delivered Duty Paid） — 受取人様の通関手続き不要。' },
+        { title: '少ロット急行サービス', description: '同人誌5部急行3日、10部急行2日出荷。コミケ前24時間特急対応。' },
+      ],
+    },
+    buyingGuide: {
+      title: '同人グッズ選び方ガイド',
+      paragraphs: [
+        '同人誌印刷は、まず製本方式を決めましょう。中綴じは16-32ページの薄い本に、無線綴じは40ページ以上の中厚本に、上製本は100ページ以上の商業級同人誌に適しています。予算優先なら中綴じ、品質優先なら無線綴じ、記念性なら上製本を選びましょう。',
+        'グッズステッカーはPVC防水マテリアル優先。異形型抜きは事前に型線確認が必要（無料型設計サービス）。アクリルスタンドは厚み（5mm以上推奨、薄すぎると破損）とUV直噴の色再現度がポイント。予算が許せばマットPPラミネートを優先。',
+        '日本／米国／東南アジアへの越境配送 — DHL Express DDP（Delivered Duty Paid）が受取人様にとって最も便利。安価配送はEMS／SF国際ですが、受取人様が通関手続きを行う必要があります。同人創作はイベント前2週間の物流バッファを確保しましょう。',
+        '香港市場で同人グッズを展開する場合、Comiket同好サークル＋ローカルアニメグッズ店＋越境ECの3チャネル同時展開が可能。Comiket前は4-6週間前から印刷準備、ローカルイベントは2-3週間前発注、越境ECは随時補充。',
+      ],
+    },
+    faq: [
+      { q: '同人誌印刷の最小発注数は？', a: '10部から（デジタル印刷）。50部以上はオフセット印刷推奨 — 単価が安く、色彩も安定。' },
+      { q: 'コミケ前特急対応できますか？', a: 'はい。同人誌5部特急3日、10部特急2日出荷。コミケ前2週間発注でバッファ確保推奨。' },
+      { q: 'イラストの色彩は色褪せしますか？', a: 'ICCプロファイルカラーマネジメント（GRACoL／Fogra39）＋ハイデルベルグオフセット印刷機。原画RGBを自動CMYK変換、色再現度95%以上。事前サンプル校正可能。' },
+      { q: '異形ステッカーはできますか？', a: 'はい。任意形状の型抜き（丸角、不規則、キャラクターシルエット）対応。無料型設計サービス、最小50枚。' },
+      { q: '日本への越境配送はどのくらい？', a: 'DHL Express 2-4営業日で日本主要都市（東京／大阪／京都／福岡）。DDPオプション対応。' },
+      { q: 'アクリルスタンドの厚みは？', a: '5mm以上推奨（薄すぎる破損リスク）。10mm+は質感アップだがコスト増。標準A5（148×210mm）またはカスタムサイズ対応。' },
+      { q: '同人誌の製本方式は？', a: '中綴じ16-32ページ、無線綴じ40-100ページ、上製本100+ページ商業級。予算優先中綴じ、品質優先無線綴じ。' },
+      { q: 'グッズ包装はカスタマイズできますか？', a: 'はい。プチプチ封筒、クラフト封筒、カスタム紙箱（LOGO印刷）対応。越境配送は5mmコルゲート内装箱で圧縮防止推奨。' },
+    ],
+  },
+};
+
 export const categorySeoContent: CategorySeoData = {
   packaging: packagingContent,
   'business-cards': businessCardsContent,
@@ -3943,4 +4224,5 @@ export const categorySeoContent: CategorySeoData = {
   calendars: calendarsContent,
   'red-packets': redPacketsContent,
   educational: educationalContent,
+  'japan-doujin': japanDoujinContent,
 };
