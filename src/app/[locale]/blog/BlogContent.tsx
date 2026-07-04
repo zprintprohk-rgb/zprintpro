@@ -8,7 +8,7 @@ import { blogPosts } from '@/data/blog-posts';
 import { products, getProductTitle, getProductDescription } from '@/data/products';
 import { convertPriceRangeString } from '@/lib/pricing';
 import { getProductMainImage } from '@/lib/product-image';
-import { ChevronRight } from 'lucide-react';
+import { ChevronRight, Calendar, Tag } from 'lucide-react';
 
 const translations: Record<string, {
   h1: string;
@@ -20,6 +20,9 @@ const translations: Record<string, {
   buyingGuideTag: string;
   datePrefix: string;
   author: string;
+  featured: string;
+  moreArticles: string;
+  readMore: string;
   categories: { key: string; label: string }[];
 }> = {
   'zh-hk': {
@@ -32,6 +35,9 @@ const translations: Record<string, {
     buyingGuideTag: '選購指南',
     datePrefix: '發布於',
     author: '智印雲印刷專家',
+    featured: '本週精選',
+    moreArticles: '更多文章',
+    readMore: '閱讀全文 →',
     categories: [
       { key: 'company-news', label: '公司新聞' },
       { key: 'sticker', label: '貼紙知識' },
@@ -55,6 +61,9 @@ const translations: Record<string, {
     buyingGuideTag: 'Buying Guide',
     datePrefix: 'Published',
     author: 'ZprintPro Experts',
+    featured: 'Featured This Week',
+    moreArticles: 'More Articles',
+    readMore: 'Read more →',
     categories: [
       { key: 'company-news', label: 'Company News' },
       { key: 'sticker', label: 'Sticker Guide' },
@@ -78,6 +87,9 @@ const translations: Record<string, {
     buyingGuideTag: '選び方ガイド',
     datePrefix: '公開日',
     author: 'ZprintPro専門家',
+    featured: '今週のおすすめ',
+    moreArticles: 'もっと記事を見る',
+    readMore: '続きを読む →',
     categories: [
       { key: 'company-news', label: '会社ニュース' },
       { key: 'sticker', label: 'ステッカー知識' },
@@ -93,8 +105,6 @@ const translations: Record<string, {
   },
 };
 
-// 封面图与 categoryKey 现已统一在 src/data/blog-posts.ts (2026-06-25)
-
 const categoryColors: Record<string, { bg: string; text: string }> = {
   'company-news': { bg: 'bg-red-50', text: 'text-red-600' },
   'sticker': { bg: 'bg-pink-50', text: 'text-pink-600' },
@@ -106,35 +116,57 @@ const categoryColors: Record<string, { bg: string; text: string }> = {
   'hongkong': { bg: 'bg-blue-50', text: 'text-blue-600' },
   'trends': { bg: 'bg-green-50', text: 'text-green-600' },
   'buying-guide': { bg: 'bg-orange-50', text: 'text-orange-600' },
+  'flyers': { bg: 'bg-rose-50', text: 'text-rose-600' },
+  'food-packaging': { bg: 'bg-lime-50', text: 'text-lime-700' },
+  'paper-bags': { bg: 'bg-amber-50', text: 'text-amber-700' },
+  'posters': { bg: 'bg-violet-50', text: 'text-violet-600' },
+  'restaurant-flyer': { bg: 'bg-orange-50', text: 'text-orange-700' },
 };
 
 function getCategoryColor(key: string) {
-  return categoryColors[key] || { bg: 'bg-orange-50', text: 'text-orange-600' };
+  return categoryColors[key] || { bg: 'bg-gray-50', text: 'text-gray-600' };
 }
+
+/**
+ * Top 2 = "Featured" (hero cards with cover images, big & visual).
+ * Rest = compact text list (no image) — saves vertical space, easy to scan
+ * when article count grows to hundreds.
+ *
+ * Sort: by date DESC (latest = most recent and most relevant).
+ * No analytics -> use latest as proxy for "popular/new".
+ */
+const FEATURED_COUNT = 2;
 
 export default function BlogContent({ locale }: { locale: Locale }) {
   const t = translations[locale];
   const localePrefix = `/${locale}`;
   const [activeCategory, setActiveCategory] = useState<string>('all');
 
-  // 19 篇统一从 @/data/blog-posts 读取 (9 选购指南 + 10 legacy 文章)
-  const allPosts = blogPosts.map((post) => ({
-    slug: post.slug,
-    title: post.title[locale],
-    date: post.date,
-    categoryKey: post.categoryKey,
-    categoryLabel:
-      post.categoryKey === 'buying-guide'
-        ? t.buyingGuideTag
-        : t.categories.find((c) => c.key === post.categoryKey)?.label || t.allArticles,
-    excerpt: post.excerpt[locale],
-    image: post.cover?.[locale] || post.cover?.['zh-hk'] || '',
-  }));
+  const allPosts = useMemo(() => blogPosts
+    .map((post) => ({
+      slug: post.slug,
+      title: post.title[locale],
+      date: post.date,
+      categoryKey: post.categoryKey,
+      categoryLabel:
+        post.categoryKey === 'buying-guide'
+          ? t.buyingGuideTag
+          : t.categories.find((c) => c.key === post.categoryKey)?.label || t.allArticles,
+      excerpt: post.excerpt[locale],
+      image: post.cover?.[locale] || post.cover?.['zh-hk'] || '',
+    }))
+    // Newest first
+    .sort((a, b) => (b.date || '').localeCompare(a.date || '')),
+    [locale, t]
+  );
 
   const filteredPosts = useMemo(() => {
     if (activeCategory === 'all') return allPosts;
     return allPosts.filter((post) => post.categoryKey === activeCategory);
   }, [activeCategory, allPosts]);
+
+  const featured = filteredPosts.slice(0, FEATURED_COUNT);
+  const rest = filteredPosts.slice(FEATURED_COUNT);
 
   const categoryCounts = useMemo(() => {
     const counts: Record<string, number> = {};
@@ -230,42 +262,134 @@ export default function BlogContent({ locale }: { locale: Locale }) {
                 : `${t.categories.find((c) => c.key === activeCategory)?.label} · ${filteredPosts.length} ${countSuffix}`}
             </p>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              {filteredPosts.map((post) => {
-                const colors = getCategoryColor(post.categoryKey);
-                return (
+            {/* Featured articles (top 2 with cover) — only when not filtering, so users see something */}
+            {featured.length > 0 && activeCategory === 'all' && (
+              <section className="mb-10">
+                <h2 className="text-xl font-bold text-[#333333] mb-5 flex items-center gap-2">
+                  <span className="w-1.5 h-6 bg-[#2873F5] rounded-full"></span>
+                  {t.featured}
+                </h2>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {featured.map((post) => {
+                    const colors = getCategoryColor(post.categoryKey);
+                    const hasImage = !!post.image;
+                    return (
+                      <Link
+                        key={post.slug}
+                        href={`${localePrefix}/blog/${post.slug}/`}
+                        className="group bg-white rounded-xl border border-gray-100 overflow-hidden hover:shadow-xl transition-all"
+                      >
+                        {hasImage ? (
+                          <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
+                            <Image
+                              src={post.image}
+                              alt={post.title}
+                              fill
+                              className="object-cover group-hover:scale-105 transition-transform duration-500"
+                              unoptimized
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </div>
+                        ) : (
+                          <div className="aspect-[16/10] relative overflow-hidden bg-gradient-to-br from-[#2873F5]/10 via-[#F87314]/10 to-transparent flex items-center justify-center">
+                            <span className="text-3xl font-bold text-[#2873F5]/20">Z</span>
+                          </div>
+                        )}
+                        <div className="p-6">
+                          <div className="flex items-center gap-2 mb-3">
+                            <span className={`inline-flex items-center gap-1 px-2.5 py-1 text-xs font-semibold rounded-md ${colors.bg} ${colors.text}`}>
+                              <Tag className="w-3 h-3" />
+                              {post.categoryLabel}
+                            </span>
+                            <span className="text-xs text-gray-400 inline-flex items-center gap-1">
+                              <Calendar className="w-3 h-3" />
+                              {post.date}
+                            </span>
+                          </div>
+                          <h3 className="text-lg font-bold text-[#333333] group-hover:text-[#2873F5] transition-colors line-clamp-2 leading-snug">
+                            {post.title}
+                          </h3>
+                          <p className="mt-3 text-sm text-gray-500 line-clamp-3 leading-relaxed">
+                            {post.excerpt}
+                          </p>
+                          <p className="mt-4 text-sm font-medium text-[#2873F5] group-hover:underline">
+                            {t.readMore}
+                          </p>
+                        </div>
+                      </Link>
+                    );
+                  })}
+                </div>
+              </section>
+            )}
+
+            {/* Rest of articles — compact text list, no images */}
+            {rest.length > 0 && (
+              <section>
+                {activeCategory === 'all' && (
+                  <h2 className="text-xl font-bold text-[#333333] mb-5 flex items-center gap-2">
+                    <span className="w-1.5 h-6 bg-[#2873F5] rounded-full"></span>
+                    {t.moreArticles}
+                  </h2>
+                )}
+                <div className="bg-white rounded-xl border border-gray-100 divide-y divide-gray-100">
+                  {rest.map((post) => {
+                    const colors = getCategoryColor(post.categoryKey);
+                    return (
+                      <Link
+                        key={post.slug}
+                        href={`${localePrefix}/blog/${post.slug}/`}
+                        className="group flex items-start gap-4 px-5 py-4 hover:bg-gray-50 transition-colors"
+                      >
+                        <span className={`flex-shrink-0 inline-flex items-center px-2.5 py-1 text-xs font-semibold rounded-md ${colors.bg} ${colors.text} max-w-[120px] truncate`}>
+                          {post.categoryLabel}
+                        </span>
+                        <div className="flex-1 min-w-0">
+                          <h3 className="text-sm sm:text-base font-semibold text-[#333333] group-hover:text-[#2873F5] transition-colors line-clamp-2 leading-snug">
+                            {post.title}
+                          </h3>
+                          <p className="mt-1 text-xs sm:text-sm text-gray-500 line-clamp-1 leading-relaxed hidden sm:block">
+                            {post.excerpt}
+                          </p>
+                        </div>
+                        <span className="flex-shrink-0 text-xs text-gray-400 w-24 text-right hidden md:inline">
+                          {post.date}
+                        </span>
+                        <ChevronRight className="flex-shrink-0 w-4 h-4 text-gray-300 group-hover:text-[#2873F5] transition-colors mt-1" />
+                      </Link>
+                    );
+                  })}
+                </div>
+              </section>
+            )}
+
+            {/* Edge case: filter has only featured-suitable articles — render them as compact rows too */}
+            {activeCategory !== 'all' && featured.length > 0 && rest.length === 0 && featured.map((post) => {
+              const colors = getCategoryColor(post.categoryKey);
+              return (
+                <div key={post.slug} className="bg-white rounded-xl border border-gray-100 divide-y divide-gray-100">
                   <Link
-                    key={post.slug}
                     href={`${localePrefix}/blog/${post.slug}/`}
-                    className="group bg-white rounded-xl border border-gray-100 overflow-hidden hover:shadow-lg transition-all"
+                    className="group flex items-start gap-4 px-5 py-4 hover:bg-gray-50 transition-colors"
                   >
-                    <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
-                      <Image
-                        src={post.image}
-                        alt={post.title}
-                        fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-500"
-                        unoptimized
-                        loading="lazy"
-                        decoding="async"
-                      />
-                    </div>
-                    <div className="p-5">
-                      <span className={`inline-block px-2.5 py-1 text-xs font-semibold rounded-md ${colors.bg} ${colors.text}`}>
-                        {post.categoryLabel}
-                      </span>
-                      <h2 className="mt-3 text-base font-bold text-[#333333] group-hover:text-[#2873F5] transition-colors line-clamp-2 leading-snug">
+                    <span className={`flex-shrink-0 inline-flex items-center px-2.5 py-1 text-xs font-semibold rounded-md ${colors.bg} ${colors.text} max-w-[120px] truncate`}>
+                      {post.categoryLabel}
+                    </span>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-sm sm:text-base font-semibold text-[#333333] group-hover:text-[#2873F5] transition-colors line-clamp-2 leading-snug">
                         {post.title}
-                      </h2>
-                      <p className="mt-2 text-sm text-gray-500 line-clamp-2 leading-relaxed">
+                      </h3>
+                      <p className="mt-1 text-xs sm:text-sm text-gray-500 line-clamp-1 leading-relaxed hidden sm:block">
                         {post.excerpt}
                       </p>
-                      <p className="mt-3 text-xs text-gray-400">{post.date}</p>
                     </div>
+                    <span className="flex-shrink-0 text-xs text-gray-400 w-24 text-right hidden md:inline">{post.date}</span>
+                    <ChevronRight className="flex-shrink-0 w-4 h-4 text-gray-300 group-hover:text-[#2873F5] transition-colors mt-1" />
                   </Link>
-                );
-              })}
-            </div>
+                </div>
+              );
+            })}
 
             {filteredPosts.length === 0 && (
               <div className="text-center py-20 text-gray-400">
