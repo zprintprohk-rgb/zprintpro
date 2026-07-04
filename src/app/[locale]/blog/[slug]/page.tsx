@@ -16,6 +16,21 @@ import { products, getProductTitle, getProductDescription, getProductBySlug } fr
 import { convertPriceRangeString } from '@/lib/pricing';
 import { getProductMainImage } from '@/lib/product-image';
 
+// 2026-07-04 修复:博客正文从 posts 对象空 content (commit 98abbb2) 改为从 src/data/blog-data 读真实内容
+import blogContentsZhHk from '@/data/blog-data/zh-hk.json';
+import blogContentsEn from '@/data/blog-data/en.json';
+import blogContentsJa from '@/data/blog-data/ja.json';
+
+const blogContentsByLocale: Record<string, Record<string, { content: string }>> = {
+  'zh-hk': blogContentsZhHk as Record<string, { content: string }>,
+  en: blogContentsEn as Record<string, { content: string }>,
+  ja: blogContentsJa as Record<string, { content: string }>,
+};
+
+function getContentFromJson(locale: string, slug: string): string {
+  return blogContentsByLocale[locale]?.[slug]?.content ?? '';
+}
+
 interface BlogPostPageProps {
   params: { locale: string; slug: string };
 }
@@ -245,9 +260,11 @@ const allSlugs = [...articleSlugs, ...guideSlugs, ...clusterSlugs];
 function getPostData(locale: Locale, slug: string) {
   const legacyPost = posts[locale]?.[slug];
   if (legacyPost) {
+    // 2026-07-04 修复:content 改为从 public/blog-data JSON 读
+    let content = getContentFromJson(locale, slug);
+    // Fallback: legacy inline content (用于过渡期)
+    if (!content) content = legacyPost.content || '';
     // Fix hardcoded paths without locale prefix
-    let content = legacyPost.content;
-    // Replace /product/ with /{locale}/product/
     content = content.replace(/href="\/product\//g, `href="/${locale}/product/`);
     // Replace /en/product/ or /ja/product/ with correct locale
     content = content.replace(/href="\/(en|ja)\/product\//g, `href="/${locale}/product/`);
