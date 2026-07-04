@@ -35,6 +35,8 @@ export interface Product {
     en?: string[];
     ja?: string[];
   };
+  optimizedAt?: string;
+  optimizationRound?: number;
   seoImages?: {
     filename: { 'zh-hk': string; en: string; ja: string };
     alt: { 'zh-hk': string; en: string; ja: string };

@@ -29,6 +29,11 @@ export type BlogCategoryKey =
   | 'branding'
   | 'hongkong'
   | 'trends'
+  | 'flyers'
+  | 'food-packaging'
+  | 'paper-bags'
+  | 'posters'
+  | 'restaurant-flyer'
   | 'buying-guide';
 
 export type BlogPostSource = 'buying-guide' | 'legacy';
