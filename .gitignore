@@ -197,6 +197,9 @@ SOUL.md
 TOOLS.md
 USER.md
 
+# 2026-07-06: zprintpro SEO self-evolution temp scripts (not committed)
+.hermes/tmp/
+
 # 2026-06-28: build/runtime artifacts
 build-log.txt
 build-log-*.txt

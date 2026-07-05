@@ -21,12 +21,15 @@
 - ❌ **禁止**: 写到 .hermes/logs 然后停手 (那是"产出完毕"的反义词,不是产物)
 - ❌ **禁止**: 新博客里写 `<img>` 标签或写 `cover` 字段 (user 2026-07-04 硬约束 — 纯文字深度,无图)
 - ❌ **禁止**: 写名片/咭片/business-cards 任何相关 SKU/博客 (AGENTS.md §11 主营品类约束)
+- ❌ **禁止**: 标题硬塞 "深圳" / "Shenzhen Printing" / "深圳印刷" 作 supplier origin 前缀 (**2026-07-05 user 拍板修正**: NAP vs SEO 脱钩,见 AGENTS.md §13.10)
+  - ✅ **正确**: zh-hk 标题本地化香港场景,en 标题全球通用卖点 (sizes/paper/design/material),ja 标题日本市场卖点
+  - ✅ **NAP 真实地址**写在 footer / contact / legal / schema (法务),不写 SEO 内容
 - ✅ **必须 (自检清单)**: 每个 user-facing 文案 (开发信 / 博客 / FAQ) 在 git push 之前自检:
   - ≥800 字中文 (en / ja 各 ≥250 词)
   - 含 4 个 FAQ + Article + BreadcrumbList + FAQPage JSON-LD schema
   - **3 locale 各自纯文字内容 (无 cover,无内联 img)**
   - **内链 3-5 个到真实存在的页面 (写前先用 `valid_internal_links` 清单核对,绝不写 404/301 链接)**
-  - 标题含 "深圳" 关键词
+  - **标题按 locale 本地化,3 locale 不能机械翻译 (见 AGENTS.md §13.10)**
   - 行业关键词按 Tier A 优先 (高复购频次)
 
 ## 2. 真实主体 (对外披露用)
@@ -194,6 +197,71 @@ def pick_next_blog_topic(matrix, gsc_signals, last_3_days_written):
 
 ---
 
-**Updated**: 2026-07-04 (v2 — 4-cron 自进化 + 链接完整性红线)
-**Previous**: 2026-07-01 (v1 — 产出即上线)
+## 12. 豆包 SEO 自进化 4 项能力 (2026-07-05 落地到 4 条 cron)
+
+### 12.1 内链自生长能力 → zprintpro-weekly-meta-refresh (周一)
+
+**问题**: 现有体系只有新博客链向旧页面,没有反向链接补充,导致 PageRank 单向流动,旧页面权重衰减。
+**每周一 11:00 cron 必跑**:
+1. 扫全站已发布博客 (blog-posts.ts) + 类目页 (categories.ts) + SKU 页 (products.ts)
+2. 计算"主题相似度矩阵": tag 词频 + 类目归属 + Tier A 行业关键词重叠度
+3. 给相关旧页面 (top 5 相似度 >0.3) 补充指向新博客的内链,加到正文"延伸阅读"区块
+4. 每周新增内链 ≥ 5 条 (目标: 整站内链密度均匀提升,权重传递效率更高)
+5. 6 步 verify + 报告落盘
+
+### 12.2 内容质量自迭代能力 → zprintpro-monthly-matrix-audit (每月 1 号)
+
+**问题**: 大量薄页拉低整站质量分,GSC 数据是滞后反馈(月级)。
+**每月 1 号 14:00 cron 必跑**:
+1. 拉过去 30 天 GSC,筛"零展示 + 零点击"的博客 (orphan 内容)
+2. 对孤儿内容自动补充:
+   - 加 200-300 字深度 (基于同主题 top 3 博客的内容 gap)
+   - 补充 2-3 个 FAQ (从 Google PAA / 相关搜索抓)
+   - 加 3-5 个新内链 (交叉到同类目已铺博客)
+   - 优化 H1 / meta description (从 GSC CTR 倒推)
+3. 月度输出"内容质量分报告":薄页率 / 孤儿内容比例 / 平均停留时长
+4. 不动已铺博客的 slug / schema 结构
+
+### 12.3 本地语义优化能力 → zprintpro-daily-content-evolve (每天,每 3 天轮换)
+
+**问题**: 三大市场语言习惯不同,机械翻译不本地化。
+**每天 10:15 cron 每 3 天轮换跑**:
+- **Day 1 (繁中本地化)**: 扫近 7 天新博客,自动融入粤语口语化表达 ("邊間印刷廠好啲" / "即日交貨" / "免費設計")
+- **Day 2 (英文本地化)**: 扫近 7 天新博客,补充环保/小批量/快交期属性词 (eco-friendly / small batch / fast turnaround / waterproof)
+- **Day 3 (日文本地化)**: 扫近 7 天新博客,匹配本地印刷行业惯用表述 (オフセット印刷 / フルカラー / 小ロット / 納期厳守 / 高品質)
+- 输出: `.hermes/logs/YYYY-MM-DD-本地语义优化.md`
+
+### 12.4 运维稳定性兜底 → zprintpro-daily-content-evolve (每天必跑)
+
+**问题**: SWC 编译 bug / push 失败 / SW 缓存导致 user 端看到旧 500。
+**每天 10:15 cron 必跑 (在 commit + push 之前强制执行)**:
+1. **本地编译预检**: `node scripts/check-encoding.js --fix` (编码/CRLF 修复)
+2. **TypeScript 类型检查**: `npx tsc --noEmit` (零错误才能进下一步)
+3. **SWC 编译预演**: `npm run build 2>&1 | grep -E "Compiled|Error"` (必须看到 "Compiled successfully")
+4. **Git push 严格模式**: 只 `git push origin_ssh main`,禁止 `git push --force` / 跳过 hooks
+5. **CF Pages 部署验证**: push 后等 90s,跑 `node scripts/verify-deploy.mjs` 看 status = `success` 才算真上线
+6. **7 步 verify 流水线** (升级版,从原 6 步加一步):
+   1. `git status -sb` 无 ahead (push 真成功)
+   2. `find public/sitemap*.xml -mtime -1` (sitemap 是今天的)
+   3. `curl -sI https://zprintpro.com/<locale>/blog/<slug>/` 返回 200 (3 locale 各一次)
+   4. `curl -s <url> | grep -c <主关键词>` ≥ 1 (内容含关键词)
+   5. `curl -s <url> | grep -E "Article|BreadcrumbList|FAQPage"` ≥ 3 (schema JSON-LD 注入)
+   6. **新增**: `curl -s <url> | grep -E "<img|cover"` 返回 0 (硬约束无图)
+   7. 逐个 curl matrix valid_internal_links, 全部 200 不 301/302/404
+
+### 12.5 能力 → cron 映射矩阵
+
+| 能力 | 触发频率 | 归属 cron | 输出文件 |
+|------|---------|---------|---------|
+| 内链自生长 | 每周一 | zprintpro-weekly-meta-refresh | `.hermes/logs/YYYY-MM-DD-weekly-meta.md` |
+| 内容质量自迭代 | 每月 1 号 | zprintpro-monthly-matrix-audit | `.hermes/logs/YYYY-MM-monthly-matrix-audit.md` |
+| 本地语义优化 | 每天 (每 3 天轮换 locale) | zprintpro-daily-content-evolve | `.hermes/logs/YYYY-MM-DD-本地语义优化.md` |
+| 运维稳定性兜底 | 每天 (commit/push 前必跑) | zprintpro-daily-content-evolve | `.hermes/logs/YYYY-MM-DD-日运营报告.md` |
+
+**升级机制**: 4 项能力是 2026-07-05 user 拍板新增,任何 hermes cron 在执行时必须把这些作为标准 SOP,不要做了一半跳过。
+
+---
+
+**Updated**: 2026-07-05 (v3 — 豆包 4 项能力 + 标题本地化 + 内链矩阵)
+**Previous**: 2026-07-04 (v2 — 4-cron 自进化 + 链接完整性红线)
 **Author**: mavis orchestrator (user 授权)

@@ -196,10 +196,14 @@ const posts: Record<string, Record<string, { title: string; description: string;
       content: '',
     },
 
-    // 2026-07-04 純文字深度博客: 餐廳開業傳單 (Tier A × P0 flyers) — 純文字・無圖
+    // 2026-07-04 純文字深度博客: Restaurant Opening Flyer (Tier A × P0 flyers) — 純文字・無圖
+    // 2026-07-05 fix (NAP vs SEO 内容脱钩): zh-hk 用户市场 = 香港 (保留 HK 视角);
+    // en/ja 用户市场 = US/UK/AU/JP, 标题硬塞"Shenzhen Printing" = 机械翻译, 无认同感.
+    // a38dc93 之前判断"en/ja 保留深圳 supplier origin"是错的——supplier origin 应在正文 (DHL/全球配送) 提及.
+    // 改为全球通用卖点 (size/paper/design turnaround) — 与 §13.10 本地化铁律一致.
     'restaurant-opening-flyer-printing-guide': {
-      title: '餐廳開業傳單印刷完全攻略 · 2026 香港餐飲開業旺季 | 智印雲 ZprintPro',
-      description: '2026 年香港餐飲開業旺季,一張高質素傳單決定客人是否記得你的店。智印雲為香港餐廳老闆提供 50-200 張小批量到 5,000 張大批量傳單印刷,3 個工作天交期,DHL 全球 2-4 天到貨。',
+      title: 'Restaurant Opening Flyer Printing Guide: Sizes, Paper & Design Tips | ZprintPro',
+      description: 'Opening a new restaurant? A premium flyer decides whether walk-in customers remember your shop. From 50-200 small batches to 5,000 bulk prints, 3-day turnaround, DHL 2-4 day global delivery from Asia factory.',
       date: '2026-07-04', category: 'Restaurant Flyer',
       content: '',
     },
