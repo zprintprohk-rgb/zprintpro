@@ -96,13 +96,41 @@
       "queued_at": "2026-07-04"
     }
   ],
-  "covered": [],
+  "covered": [
+    {
+      "id": "Q-001",
+      "slug": "restaurant-opening-flyer-printing-guide",
+      "category": "flyers",
+      "sku": "a4-flyers",
+      "industry": "餐飲外賣",
+      "tier": "A",
+      "priority": "P0",
+      "covered_at": "2026-07-06",
+      "deployed_commit": "4478f11",
+      "deployed_at": "2026-07-06T01:25:00+08:00",
+      "cf_build_run": "85244378307",
+      "verify_status": "PASS",
+      "verify_steps": "7/7",
+      "locale_chars": {
+        "zh-hk": 3449,
+        "en": 6435,
+        "ja": 3910
+      },
+      "nap_decoupled": true,
+      "internal_links_count": 5
+    }
+  ],
   "skipped": {
     "business-cards": "AGENTS.md §11 主营品类约束"
   },
   "stats": {
-    "queue_size": 2,
-    "covered_count": 0,
-    "last_updated": "2026-07-04"
+    "queue_size": 1,
+    "covered_count": 1,
+    "p0_coverage_pct": 0.4,
+    "p1_coverage_pct": 0,
+    "p2_coverage_pct": 0,
+    "total_524_target": 524,
+    "covered_524_pct": 0.19,
+    "last_updated": "2026-07-06"
   }
 }

@@ -200,6 +200,14 @@ USER.md
 # 2026-07-06: zprintpro SEO self-evolution temp scripts (not committed)
 .hermes/tmp/
 
+# 2026-07-06: OpenCode/Autoclaw runtime residue (not committed)
+.cluster/
+.openclaw/
+.openclaw-attachments/
+
+# 2026-07-06: .hermes runtime scripts (don't commit script artifacts)
+.hermes/scripts/
+
 # 2026-06-28: build/runtime artifacts
 build-log.txt
 build-log-*.txt

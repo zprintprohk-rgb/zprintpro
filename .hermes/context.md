@@ -62,7 +62,11 @@
 - 强制约束:
   - ❌ **不写** `cover` 字段 (blog-posts.ts 已支持可选)
   - ❌ **HTML content 里不出现** `<img>` 标签
-  - ✅ **标题强制带"深圳"**:`<主关键词> · 深圳印刷指南 | 智印雲 ZprintPro`
+  - ✅ **标题按 locale 本地化**（AGENTS.md §13.13 铁律,3 locale = 3 独立市场,**非"深圳"市场**）:
+    - **zh-hk** → 香港 / 台灣 繁中市場場景詞（餐飲旺季 / MTR / 順豐本地 / 港九新界）
+    - **en** → 全球通用賣點（sizes / paper / design / material / fast turnaround）,不寫地區後綴
+    - **ja** → 日本市場賣點（小ロット / 納期厳守 / 高品質 / オフセット）,不寫"中国/深圳"
+  - ❌ **禁止硬塞** "深圳" / "Shenzhen Printing" / "深圳印刷" 作 supplier origin 前缀（NAP vs SEO 脫鉤,AGENTS.md §13.10,2026-07-06 user 拍板修正 §4 v2 残留）
   - ✅ 800-1000 字 zh-hk,250-350 词 en/ja
   - ✅ 4 FAQ + Article + Breadcrumb + FAQPage schema
   - ✅ 9 段结构 (引子/行业概况/材質工艺/选购决策/FAQ/CTA)
@@ -135,8 +139,12 @@ def pick_next_blog_topic(matrix, gsc_signals, last_3_days_written):
     if gsc_signals.has_orphan(cat.next_due_slug):
         cat.priority_boost += 1
 
-    # Rule 4: 标题必须含"深圳"
-    cat.title_template = "<kw> · 深圳印刷指南 | 智印雲 ZprintPro"
+    # Rule 4: 标题按 locale 本地化（AGENTS.md §13.13 铁律,3 locale = 3 独立市场,非"深圳"市场）
+    #   - zh-hk → 香港 / 台灣 繁中市場場景詞
+    #   - en → 全球通用賣點 (sizes/paper/design/material)
+    #   - ja → 日本市場賣點
+    # ❌ 禁止硬塞 "深圳" / "Shenzhen Printing" / "深圳印刷" (NAP vs SEO 脫鉤,AGENTS.md §13.10)
+    cat.title_template = matrix.queue_entry.title_template_<locale>  # 见 matrix.json policy.title_template_zh/en/ja
 
     # Rule 5: 输出无图
     cat.no_images = True
