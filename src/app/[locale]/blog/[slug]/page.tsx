@@ -263,6 +263,26 @@ const clusterSlugs = getAllClusterSlugs();
 const allSlugs = [...articleSlugs, ...guideSlugs, ...clusterSlugs];
 
 function getPostData(locale: Locale, slug: string) {
+  // 2026-07-06 fix: 优先检查 buying-guide (9 个 SEO 重要资产)
+  // 之前 bug: blog-posts.ts meta 命中时 (categoryKey='buying-guide') 走 JSON 路径,
+  // 但 src/data/blog-data/*.json 没有 buying-guide slugs → content 空 → 27 页面全部 prose 空白
+  // 修复: buying-guide 优先, 用 buying-guides.ts 的完整 title/desc/content/keywords/relatedProducts
+  const guide = getBuyingGuideBySlug(slug);
+  if (guide) {
+    // meta (blog-posts.ts) 的 title 在 buying-guide 上有时更新更频繁 (NAP 脱钩修正),
+    // 优先 meta.title[locale] > guide.title[locale]
+    const meta = getBlogPostMetaBySlug(slug);
+    return {
+      title: meta?.title?.[locale] || guide.title[locale],
+      description: guide.description[locale],
+      date: guide.date,
+      category: guide.category[locale],
+      content: guide.content[locale],
+      keywords: Array.isArray(guide.keywords[locale]) ? guide.keywords[locale].join(',') : guide.keywords[locale],
+      isBuyingGuide: true,
+      linkedProducts: guide.relatedProducts || [],
+    };
+  }
   // 2026-07-05 fix: 优先从 blog-posts.ts meta 拿 title/desc/date/category
   // 修 H1 显示 slug bug — legacyPost 缺失 (如 packaging-box-custom-guide) 时
   // legacyPost=undefined → src.title=undefined → fallback 到 slug 字符串
@@ -295,19 +315,6 @@ function getPostData(locale: Locale, slug: string) {
       keywords: '',
       isBuyingGuide: false,
       linkedProducts: [] as string[],
-    };
-  }
-  const guide = getBuyingGuideBySlug(slug);
-  if (guide) {
-    return {
-      title: guide.title[locale],
-      description: guide.description[locale],
-      date: guide.date,
-      category: guide.category[locale],
-      content: guide.content[locale],
-      keywords: guide.keywords[locale],
-      isBuyingGuide: true,
-      linkedProducts: guide.relatedProducts || [],
     };
   }
   const cluster = getClusterBySlug(slug);
