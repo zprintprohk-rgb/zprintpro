@@ -24,6 +24,12 @@
 .DS_Store
 *.pem
 
+# Google Cloud / GSC (credentials never committed; key file at C:\Users\Administrator\gsc-key.json)
+.gcloud/
+credentials.json
+*.boto
+GoogleCloudSDKInstaller.exe
+
 # debug
 npm-debug.log*
 yarn-debug.log*

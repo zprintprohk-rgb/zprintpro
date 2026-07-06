@@ -34,8 +34,9 @@ def load_env() -> dict:
     env = {}
     env_path = ROOT / ".env"
     if env_path.exists():
+        # 用 utf-8-sig 自动 strip BOM (PowerShell WriteAllText 默认加 BOM)
         try:
-            content = env_path.read_text(encoding="utf-8")
+            content = env_path.read_text(encoding="utf-8-sig")
         except UnicodeDecodeError:
             content = env_path.read_text(encoding="gbk", errors="replace")
         for line in content.splitlines():
@@ -77,9 +78,33 @@ def ensure_auth(env: dict) -> tuple[bool, str, str, str]:
 
 
 def build_client(key_file: str, delegated_email: str):
-    """构建 Search Console API client (OAuth2 service account)."""
+    """构建 Search Console API client (OAuth2 service account).
+
+    注意: 在国内网络环境下, Google API endpoint 直连经常超时.
+    推荐在 .env 加 GOOGLE_API_PROXY=http://127.0.0.1:7892 让 httplib2 用 HTTP CONNECT proxy.
+    """
     from google.oauth2 import service_account
     from googleapiclient import discovery
+
+    http = None
+    proxy = os.environ.get("GOOGLE_API_PROXY") or os.environ.get("HTTPS_PROXY") or os.environ.get("HTTP_PROXY")
+    if proxy:
+        try:
+            import httplib2
+            import socks  # PySocks package, gives PROXY_TYPE_HTTP constant
+
+            # parse "http://127.0.0.1:7892"
+            proto, rest = proxy.split("://", 1)
+            host_port = rest.rstrip("/").split(":")
+            host = host_port[0]
+            port = int(host_port[1])
+            http = httplib2.Http(proxy_info=httplib2.ProxyInfo(
+                socks.PROXY_TYPE_HTTP, host, port,
+            ))
+            print(f"   using proxy: {host}:{port}")
+        except Exception as e:
+            print(f"!! proxy setup failed: {e}; falling back to direct")
+            http = None
 
     SCOPES = ["https://www.googleapis.com/auth/webmasters.readonly"]
     credentials = service_account.Credentials.from_service_account_file(
@@ -87,6 +112,13 @@ def build_client(key_file: str, delegated_email: str):
     )
     if delegated_email:
         credentials = credentials.with_subject(delegated_email)
+    if http is not None:
+        # Wrap our httplib2 Http through google_auth_httplib2 so credentials auto-refresh work
+        from google_auth_httplib2 import AuthorizedHttp
+        authed_http = AuthorizedHttp(credentials, http=http)
+        return discovery.build(
+            "searchconsole", "v1", http=authed_http, cache_discovery=False
+        )
     return discovery.build(
         "searchconsole", "v1", credentials=credentials, cache_discovery=False
     )

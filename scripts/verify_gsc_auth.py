@@ -21,7 +21,9 @@ def load_env_simple() -> dict:
     p = ROOT / ".env"
     if not p.exists():
         return env
-    for line in p.read_text(encoding="utf-8", errors="replace").splitlines():
+    # 用 utf-8-sig 自动去掉 BOM (PowerShell WriteAllText 会加 BOM)
+    raw_text = p.read_text(encoding="utf-8-sig", errors="replace")
+    for line in raw_text.splitlines():
         line = line.strip()
         if not line or line.startswith("#") or "=" not in line:
             continue
@@ -31,7 +33,7 @@ def load_env_simple() -> dict:
     example = ROOT / ".env.example"
     example_vals = {}
     if example.exists():
-        for line in example.read_text(encoding="utf-8", errors="replace").splitlines():
+        for line in example.read_text(encoding="utf-8-sig", errors="replace").splitlines():
             line = line.strip()
             if not line or line.startswith("#") or "=" not in line:
                 continue
