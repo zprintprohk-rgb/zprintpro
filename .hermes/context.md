@@ -237,6 +237,29 @@ def pick_next_blog_topic(matrix, gsc_signals, last_3_days_written):
 - CF build 失败 / push 报错 / curl 5xx → 立即升级 user
 - **新博客上线后 7 天 GSC 仍无收录** → 升级 user,排查索引问题
 
+## 11.5 CF Pages 月度 build quota 约束 (2026-07-06 user 拍板)
+
+> **【硬约束】** Cloudflare Pages 免费方案每月有明确 build 次数限制 (典型 500 次/月)。**每次 git push 触发 1 次 build**, build quota 是稀缺资源, 不可滥用。
+
+**触发规则**:
+- ❌ **禁止**: trivial commit 单独 push (typo 修正 / 注释 / 单行格式调整 / 一句话 README 改动) — 这些会浪费 1 次 build
+- ❌ **禁止**: 每天 push 超过 1 次非紧急 commit (除非 cron 自动触发)
+- ✅ **必须**: **攒 commit 批量 push** — 多个子任务改动攒一起, 1 push 触发 1 build 验证全部
+- ✅ **必须**: **本地预检** — push 前跑 `npx tsc --noEmit` + `node scripts/check-encoding.js --fix` + 关键脚本 smoke test, 确保 build 大概率过
+- ✅ **必须**: **每次 push 前预算剩余 build quota** — 用 `gh api repos/.../actions/runs?per_page=20` 查本月已用次数
+
+**例外** (可单独 push, 不计 quota):
+- 紧急修复 (线上 500 / 404 / 死链)
+- cron 自动 commit (每天 10:15 daily + 每周一 11:00 weekly + 每月 1 号 monthly + 每周三 15:00 gsc)
+- 跨项目 bug fix (影响其他项目)
+
+**本地预检 3 步** (push 前必跑):
+1. `node scripts/check-encoding.js --fix` (UTF-8 + LF)
+2. `npx tsc --noEmit` (TS 类型零错误)
+3. `npm run build 2>&1 | grep -E "Compiled|Error"` (必须 "Compiled successfully")
+
+3 步全过才允许 push。任一不过 = 修复后再 push, **不**靠 build 试错。
+
 ---
 
 ## 12. 豆包 SEO 自进化 4 项能力 (2026-07-05 落地到 4 条 cron)

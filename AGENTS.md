@@ -15,7 +15,24 @@
 - ✅ **质量风险**: 通过 commit + push + verify 流水线兜底,**不**通过偷工减料
 
 适用范围: zprintpro 全部 cron + manual session。任何 sub-task 都不能用"时间"做借口。
->
+
+## ⛔ Cloudflare Pages 月度 build quota 约束 (2026-07-06 user 拍板)
+
+> **【硬约束】** Cloudflare Pages 免费方案每月有明确 build 次数限制 (典型 500 次/月)。**每次 git push 触发 1 次 build**, build quota 是稀缺资源, 不可滥用。
+
+- ❌ **禁止**: trivial commit 单独 push (typo 修正 / 注释 / 单行格式调整 / 一句话 README 改动) — 浪费 1 次 build
+- ❌ **禁止**: 每天 push 超过 1 次非紧急 commit (除非 cron 自动触发)
+- ✅ **必须**: **攒 commit 批量 push** — 多个子任务改动攒一起, 1 push 触发 1 build 验证全部
+- ✅ **必须**: **本地预检 3 步** — push 前跑 (1) `node scripts/check-encoding.js --fix` (2) `npx tsc --noEmit` (3) 关键脚本 smoke test, 3 步全过才允许 push
+- ✅ **必须**: **预测 quota 影响** — push 前算当月已用次数, 用 `gh api repos/.../actions/runs?per_page=20` 查本月 build 数
+
+**例外** (可单独 push, 不算浪费 quota):
+- 紧急修复 (线上 500 / 404 / 死链)
+- cron 自动 commit (daily 10:15 / weekly 11:00 / monthly 1 号 / gsc 周三 15:00)
+- 跨项目 bug fix (影响其他项目)
+
+**2026-07-06 实际数据**: 一天 6 次 build (P1-1 / P1-2 / P0-3 / P0-4 / P2-3 / weekly 补救) = 1.2% 月度 quota。问题不在配额, 而在节奏不健康 — 5 个独立 cron 任务 + 1 个手动补救 = 6 次/天过于分散。改进后: 攒批量 + 1 push/天, 预计 build 次数降低到 1-2 次/天。
+
 > **真实主体 (2026-06-18 user-corrected)**: 深圳市彩龙印刷包装有限公司
 > **法定代表人**: 唐运提
 > **真实地址**: 広東省深圳市龍崗区平湖街道嘉城路1号（〒518111）
