@@ -62,8 +62,6 @@ project:
     backup_dir: F:\zprintpro-nextjs\.hermes\backup
     naming_pattern: "YYYY-MM-DD-{任务名}.md"
 
-  # 模型
+  # 模型 (2026-07-06 user 拍板: 唯一 mavis / MiniMax-M3, 删多模型分级)
   models:
-    default: deepseek-v4-flash
-    advance: deepseek-v4-pro
-    hard: glm-5.2-coding  # 需 user 批准
+    default: mavis/MiniMax-M3  # mavis orchestrator 默认, thinking variant

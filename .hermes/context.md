@@ -5,12 +5,34 @@
 > **落地产物**: **真实源码 + 自动部署上线** (通过 git push 触发 CF Pages 自动构建)
 > **不再只写 .hermes/logs** — 那只是中间记录,不是产物
 
+## ⛔ 强制执行约束 (2026-07-06 user 拍板 · 次高优先级)
+
+> **【强制执行约束】不得因深夜/时段原因简化或延后任务,当次调度必须完整执行全部流程。**
+
+- ❌ **禁止**: 用 "现在太晚了" / "我已工作 6h+ 犯困" / "ROI 评估应该延后" 等理由简化或拆分任务
+- ❌ **禁止**: 当次只做部分任务,把剩余任务推到明天
+- ✅ **必须**: 当次调度(user 给出的任务清单)完整执行全部子项,不偷工不减料
+- ✅ **必须**: 即使 token / 时间预算紧张,也按 user 拍板顺序全部做完,不能跳过
+- ✅ **质量下降风险** → 通过 commit + push + verify 流水线兜底,**不**通过偷工减料
+
+适用范围: zprintpro 全部 cron + manual session。任何 sub-task 都不能用"时间"做借口。
+
 ---
 
-## 0. 核心模式变更 (2026-07-04 v2 — zprintpro-daily-content-evolve)
+## 自进化动态约束区（每日自动更新，禁止手动修改核心原则）
+<!-- 以下内容由每日规则自进化任务自动维护 -->
+<!-- AUTO_EVOLVE_START -->
+（初始为空，每日自动追加违规反面案例）
+<!-- AUTO_EVOLVE_END -->
+
+---
+
+## 0. 核心模式变更
 
 **v1 (2026-07-01)**: 4 天里 cron 产出 3 篇博客只写 .hermes/logs → 改为"产出即上线"。
 **v2 (2026-07-04)**: 不只写 blog,还要持续优化 SKU + 类目页 + Matrix 调度。Blog 强制纯文字无图。SKU 优化 = 加行业关键词到现有 title/description。
+**v3 (2026-07-05)**: 豆包 4 项能力 (内链自生长 / 内容质量自迭代 / 本地语义优化 / 运维兜底) + 标题本地化 + 内链矩阵。
+**v4 (2026-07-06)**: 180 天压缩节奏 (半年 730 篇); cron prompts 硬约束段去重 (单一真源在 AGENTS.md §11/§13.4/§13.10/§13.13 + .hermes/context.md §1/§4); 关键路径 bug 修复 (写到 `src/data/blog-data/<locale>.json` 不是 `public/blog-data/`); 进程验收标准 (cron 完成判定 = log + ground truth + 7 步 verify 一致,见 §13)。
 
 ---
 
@@ -178,13 +200,12 @@ def pick_next_blog_topic(matrix, gsc_signals, last_3_days_written):
 - `/<locale>/help-center/` `/<locale>/faq/` `/<locale>/legal/`
 - `/<locale>/terms/` `/<locale>/privacy/` `/<locale>/press-kit/`
 
-## 9. 模型分级 (按 user 拍板)
+## 9. 模型统一 (2026-07-06 user 拍板: 删除多模型分级)
 
-| 场景 | 模型 | 备注 |
-|---|---|---|
-| 普通检索 / 文案 / 数据整理 | **deepseek-v4-flash** | 默认主力 |
-| SEO 方案 / 邮件润色 / 架构优化 | **deepseek-v4-pro** | 攻坚场景自动切换 |
-| 高转化开发信终审 / 核心页面架构 | GLM 5.2 Coding | **必须 user 批准**,通过后调用 |
+- **唯一模型**: `mavis / MiniMax-M3` (mavis orchestrator 默认,thinking variant)
+- ❌ **删除**: `deepseek-v4-flash` / `deepseek-v4-pro` / `GLM 5.2 Coding` 等多模型分级
+- ❌ **不再**: 在 cron prompt / context / README 里出现任何 "默认/攻坚/疑难" 三级模型描述
+- ✅ **理由**: zprintpro cron 跑在 mavis agent 上,不需要在每个 prompt 重复模型说明 (唯一模型已固化在 mavis session 里)
 
 ## 10. 产出命名规范 (v2)
 
@@ -270,6 +291,57 @@ def pick_next_blog_topic(matrix, gsc_signals, last_3_days_written):
 
 ---
 
-**Updated**: 2026-07-05 (v3 — 豆包 4 项能力 + 标题本地化 + 内链矩阵)
-**Previous**: 2026-07-04 (v2 — 4-cron 自进化 + 链接完整性红线)
+## 13. 进程验收标准 (v4 新增, 2026-07-06)
+
+cron / 后台 agent / 跨进程 worker 自报 "完成 / Shipped / Done" **永远不采信**,必须 orchestrator 按以下 6 步 verify 流水线独立 verify:
+
+### 13.1 完成判定 6 步流水线 (任一不过 = 不算完成, 升级 user)
+
+1. **log 报告 vs ground truth 一致**: cron 写完 .hermes/logs/*.md 后, 报告里的 `deployed_commit` / `deployed_at` / `cf_build_run` 字段必须能 grep 到对应 git commit hash + CF Pages build run
+2. **git push 真成功**: `git status -sb` 无 ahead (origin_ssh/main = HEAD)
+3. **sitemap 是今天的**: `find public/sitemap*.xml -mtime -1` 有输出
+4. **curl 关键 URL 200**: 3 locale × 新增 URL = 9 次 curl (blog 任务) 或 3 次 (其他任务), 全部 200
+5. **content 含主关键词**: `curl -s <url> | grep -c <主关键词>` ≥ 1
+6. **schema JSON-LD 注入**: `curl -s <url> | grep -E "Article|BreadcrumbList|FAQPage"` ≥ 3
+7. **matrix covered 与 git log 反查一致**: 如果 cron 报"matrix.json 更新 covered[] 追加 X", 那 matrix.json 的 covered[] 必须确实有 X, 且 X 对应的 blog slug 在 `git log --all --grep=X` 能查到 commit
+
+### 13.2 反例 (失败案例 — 永远不能犯)
+
+- ❌ "commit 完成但未 push" (2026-07-02 togthr 踩坑): git status -sb 显示 ahead → auto-deploy 没触发 → user 浏览器无变化
+- ❌ "写 .hermes/logs/*.md 但 src/ 没动" (2026-07-01 4 天 3 篇博客只写日志 GSC 零收录)
+- ❌ "写到 `public/blog-data/<locale>.json` 但 page.tsx import 走 tsconfig paths 解析到 `src/data/blog-data/`" (2026-07-06 发现, prod 不显示)
+- ❌ "verify 只跑 cron 自己,orchestrator 没独立 curl" (CDN 边缘节点假象, 不同地理节点时延不一致)
+- ❌ "GH Actions API `?head_sha=<sha>` filter 返回 0 就报失败" (API 索引延迟, 直接用 `?per_page=5` 无 filter 拿最近 5 个 run)
+
+### 13.3 cron / worker 退出条件 (R6 协议 + v4 升级)
+
+每个 cron 必须有 3 个 hard-coded 出口:
+- (a) **TTL 过期自删**: 每次启动检查日期/时间窗口, 跳过本次 + 累积 N 次 → mavis cron delete self
+- (b) **报告落盘自删**: 如果 .hermes/logs/YYYY-MM-DD-*.md 存在且 24h 内 → 本次立即退出 (避免重复跑)
+- (c) **静默阈值升级**: 如果连续 N 次本 cron verify 失败 → 升级 user, **不**继续静默 tick
+
+### 13.4 升级阈值 (token / 算力 / 失败次数)
+
+| 信号 | 阈值 | 动作 |
+|------|------|------|
+| cron 单次 token 消耗 | > 50 万 | 暂停, 升级 user 问是否继续 |
+| cron 单次 verify 失败 | 1 次 | 重试 1 次 |
+| cron 连续 verify 失败 | 2-3 次 | 升级 user |
+| cron 静默超过算力阈值 | 上午 20min / 下午 40min | kill worker + force-spawn replacement, 不重发原指令 |
+| matrix.json token 数 | > 50 万 | 暂停, 升级 user |
+| cron 跳过累积次数 | weekly: 4 / monthly: 12 | mavis cron delete self |
+
+---
+
+## 14. Changelog
+
+- **2026-07-06 v4**: 180 天压缩节奏 (半年 730 篇); cron prompts 硬约束段去重 (单一真源在 AGENTS.md §11/§13.4/§13.10/§13.13 + .hermes/context.md §1/§4); 关键路径 bug 修复; §13 进程验收标准; §14 Changelog 新增
+- **2026-07-05 v3**: 豆包 4 项能力 (内链自生长 / 内容质量自迭代 / 本地语义优化 / 运维兜底) + 标题本地化 (NAP 脱钩) + 内链矩阵
+- **2026-07-04 v2**: 4-cron 自进化 + 链接完整性红线
+- **2026-07-01 v1**: "产出即上线" 模式 (4 天 3 篇只写日志的教训)
+
+---
+
+**Updated**: 2026-07-06 (v4 — 180 天压缩 + cron 硬约束去重 + 关键路径 bug + 进程验收标准)
+**Previous**: 2026-07-05 (v3 — 豆包 4 项能力 + 标题本地化 + 内链矩阵)
 **Author**: mavis orchestrator (user 授权)
