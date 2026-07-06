@@ -701,7 +701,63 @@ const lpCrossBorderShipping: BlogPostMeta = {
 };
 
 // =============================================================================
-// Unified list (22 articles)
+// 2026-07-06 weekly-meta-refresh: Tier B 行业 + P0 categories 纯文字深度博客
+// (手动补救: 11:00 weekly cron 跑但 session LLM API GOAWAY 崩了, 0 产出)
+// =============================================================================
+
+const lpRealEstateBrochureBox: BlogPostMeta = {
+  slug: 'real-estate-brochure-box-printing-guide',
+  categoryKey: 'packaging',
+  source: 'legacy',
+  date: '2026-07-06',
+  title: {
+    'zh-hk': '香港新盤樓書印刷指南 · 豪宅資料匣與硬皮畫冊定制 | 智印雲 ZprintPro',
+    en: 'Real Estate Brochure & Property Box Printing Guide: Materials, Finishes & Luxury Tips | ZprintPro',
+    ja: '不動産パンフレット・資料箱カスタム印刷ガイド：素材・加工・高級感演出 | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '發展商、中介、項目策展方必睇。一本高質素的樓書 + 一個硬皮資料匣決定準買家對項目的第一印象。智印雲為香港地產商提供騎馬釘、膠裝、精裝樓書 + 硬殼天地蓋資料匣,100-5,000 套小至大批量,5-10 個工作天交付,DHL 全球 2-4 天配送。',
+    en: 'Property developers, agencies, and showroom curators — a premium brochure + rigid property box decides the first impression with serious buyers. ZprintPro delivers saddle stitch, perfect bound, hardcover brochures + rigid telescopic boxes, 100-5,000 piece runs, 5-10 working day delivery, DHL 2-4 day worldwide shipping.',
+    ja: 'デベロッパー・仲介・ショールーム運営者様へ。プレミアムパンフレット＋ハードケース資料箱が本気で購入検討する顧客への第一印象を決める。中綴じ・無線綴じ・上製本＋ハードケース天地蓋箱、100-5,000セット対応、5-10営業日納品、DHL 2-4日国際配送。',
+  },
+};
+
+const lpPharmaceuticalLabel: BlogPostMeta = {
+  slug: 'pharmaceutical-label-printing-guide',
+  categoryKey: 'sticker',
+  source: 'legacy',
+  date: '2026-07-06',
+  title: {
+    'zh-hk': '香港藥品標籤印刷指南 · GMP 認證 + 防偽追溯碼定制 | 智印雲 ZprintPro',
+    en: 'Pharmaceutical Label Printing Guide: GMP-Grade, FDA/EMA Compliance & Tamper-Evident | ZprintPro',
+    ja: '医薬品ラベル印刷ガイド：GMP準拠・FDA/EMA対応・改ざん防止 | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '藥廠、保健品品牌、臨床試驗機構必睇。一張符合 GMP 規範、可追溯、防偽的藥品標籤直接影響註冊審批。智印雲提供 FDA 21 CFR / EU GMP Annex 15 合規標籤,1,000-500,000 枚小至大批量,7-15 個工作天交付,DHL 全球 2-4 天配送。',
+    en: 'Pharma manufacturers, supplement brands, and clinical trial operators — a GMP-compliant, traceable, tamper-evident label decides regulatory approval. ZprintPro delivers FDA 21 CFR / EU GMP Annex 15 compliant labels, 1,000-500,000 piece runs, 7-15 working day delivery, DHL 2-4 day shipping.',
+    ja: '製薬会社・サプリメントブランド・臨床試験機関様へ。GMP準拠・トレーサブル・改ざん防止ラベルが承認審査の鍵。FDA 21 CFR / EU GMP Annex 15準拠ラベルを提供、1,000-500,000枚対応、7-15営業日納品、DHL 2-4日国際配送。',
+  },
+};
+
+const lpJewelleryShoppingBag: BlogPostMeta = {
+  slug: 'jewellery-shopping-bag-printing-guide',
+  categoryKey: 'paper-bags',
+  source: 'legacy',
+  date: '2026-07-06',
+  title: {
+    'zh-hk': '香港珠寶鐘錶品牌紙袋印刷指南 · 黑卡燙金 + 絲帶手挽定制 | 智印雲 ZprintPro',
+    en: 'Jewellery & Watch Brand Paper Bag Printing Guide: Black Card, Foil & Satin Ribbon | ZprintPro',
+    ja: '宝飾・腕時計ブランド紙袋印刷ガイド：ブラックカード・箔押し・サテンリボン | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '珠寶鐘錶品牌、買手店、奢侈品經銷商必睇。一個高質感的品牌紙袋決定客人離開店後的 1 小時曝光。智印雲為珠寶鐘錶品牌提供黑卡紙、白卡紙、燙金、UV 局部、絲帶手挽全套紙袋定制,200-50,000 枚小至大批量,7-15 個工作天交付,DHL 全球 2-4 天配送。',
+    en: 'Jewellery, watch, and luxury boutique owners — a premium branded paper bag decides the 1-hour post-purchase exposure. ZprintPro delivers black card, white card, foil stamping, spot UV, satin ribbon handles, 200-50,000 piece runs, 7-15 working day delivery, DHL 2-4 day shipping.',
+    ja: '宝飾・腕時計・ラグジュアリーブティックオーナー様へ。プレミアム感のあるブランド紙袋が購入後1時間の露出を決める。ZprintProはブラックカード・ホワイトカード・箔押し・スポットUV・サテンリボン持ち手を提供、200-50,000枚対応、7-15営業日納品、DHL 2-4日国際配送。',
+  },
+};
+
+// =============================================================================
+// Unified list (25 articles)
 // =============================================================================
 
 export const blogPosts: BlogPostMeta[] = [
@@ -741,6 +797,13 @@ export const blogPosts: BlogPostMeta[] = [
   lpPetFoodSticker,
   lpApparelShoppingBag,
   lpCrossBorderShipping,
+  // 2026-07-06 v3 weekly-meta-refresh (手动补救: 11:00 weekly cron 跑了但 session LLM API GOAWAY 崩了, 0 产出; 现在手动补 3 篇 Tier B)
+  // - lpRealEstateBrochureBox: packaging × 房地產 (Tier B T1)
+  // - lpPharmaceuticalLabel: stickers × 醫藥保健 (Tier B T2)
+  // - lpJewelleryShoppingBag: paper-bags × 珠寶鐘錶 (Tier B T3)
+  lpRealEstateBrochureBox,
+  lpPharmaceuticalLabel,
+  lpJewelleryShoppingBag,
 ];
 
 // =============================================================================
