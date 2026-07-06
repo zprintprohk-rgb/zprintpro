@@ -97,7 +97,8 @@
       ],
       "expected_words_zh": 850,
       "expected_faqs": 4,
-      "queued_at": "2026-07-04"
+      "queued_at": "2026-07-04",
+      "priority_boost": 1
     },
     {
       "id": "Q-002",
@@ -119,7 +120,8 @@
       ],
       "expected_words_zh": 850,
       "expected_faqs": 4,
-      "queued_at": "2026-07-04"
+      "queued_at": "2026-07-04",
+      "priority_boost": 1
     },
     {
       "id": "Q-003",
@@ -141,7 +143,8 @@
       ],
       "expected_words_zh": 900,
       "expected_faqs": 4,
-      "queued_at": "2026-07-06"
+      "queued_at": "2026-07-06",
+      "priority_boost": 2
     },
     {
       "id": "Q-004",
@@ -163,7 +166,8 @@
       ],
       "expected_words_zh": 1000,
       "expected_faqs": 4,
-      "queued_at": "2026-07-06"
+      "queued_at": "2026-07-06",
+      "priority_boost": 1
     },
     {
       "id": "Q-005",
@@ -185,7 +189,8 @@
       ],
       "expected_words_zh": 1000,
       "expected_faqs": 4,
-      "queued_at": "2026-07-06"
+      "queued_at": "2026-07-06",
+      "priority_boost": 2
     },
     {
       "id": "T-B-01",
@@ -206,7 +211,8 @@
       ],
       "expected_words_zh": 700,
       "expected_faqs": 4,
-      "queued_at": "2026-07-06"
+      "queued_at": "2026-07-06",
+      "priority_boost": 0
     },
     {
       "id": "T-B-02",
@@ -227,7 +233,8 @@
       ],
       "expected_words_zh": 700,
       "expected_faqs": 4,
-      "queued_at": "2026-07-06"
+      "queued_at": "2026-07-06",
+      "priority_boost": 0
     },
     {
       "id": "T-B-03",
@@ -249,7 +256,8 @@
       ],
       "expected_words_zh": 700,
       "expected_faqs": 4,
-      "queued_at": "2026-07-06"
+      "queued_at": "2026-07-06",
+      "priority_boost": 1
     }
   ],
   "covered": [
@@ -438,6 +446,69 @@
     "total_524_target": 524,
     "covered_524_pct": 1.34,
     "last_updated": "2026-07-06",
-    "last_updated_event": "weekly-meta-refresh v3 recovery + 内部链接自生长 + 3 类别 meta refresh"
-  }
+    "last_updated_event": "gsc-feedback-loop manual run by orchestrator (cron spawned manually); 6 priority_boost delta, 1 strong / 11 orphan / 11 high-potential"
+  },
+  "priority_boost_history": [
+    {
+      "date": "2026-07-06",
+      "trigger": "manual gsc-feedback-loop run",
+      "by_orchestrator": true,
+      "changes": [],
+      "rules_applied": {
+        "strong_orphan": "+2",
+        "orphan": "+1",
+        "high_potential": "+1",
+        "weak_30d_zero": "n/a (single snapshot)"
+      }
+    },
+    {
+      "date": "2026-07-06",
+      "trigger": "manual gsc-feedback-loop run",
+      "by_orchestrator": true,
+      "changes": [
+        {
+          "id": "Q-001",
+          "old": 0,
+          "new": 1,
+          "slug": "restaurant-opening-flyer-printing-guide"
+        },
+        {
+          "id": "Q-002",
+          "old": 0,
+          "new": 1,
+          "slug": "cosmetics-packaging-box-printing-guide"
+        },
+        {
+          "id": "Q-003",
+          "old": 0,
+          "new": 2,
+          "slug": "pet-food-sticker-printing-guide"
+        },
+        {
+          "id": "Q-004",
+          "old": 0,
+          "new": 1,
+          "slug": "apparel-shopping-bag-printing-guide"
+        },
+        {
+          "id": "Q-005",
+          "old": 0,
+          "new": 2,
+          "slug": "cross-border-ecommerce-shipping-box-guide"
+        },
+        {
+          "id": "T-B-03",
+          "old": 0,
+          "new": 1,
+          "slug": "jewellery-shopping-bag-printing-guide"
+        }
+      ],
+      "rules_applied": {
+        "strong_orphan": "+2",
+        "orphan": "+1",
+        "high_potential": "+1",
+        "weak_30d_zero": "n/a (single snapshot)"
+      }
+    }
+  ]
 }
