@@ -311,14 +311,14 @@ const categorySeoData: Record<string, {
       ja: 'ステッカー印刷 カスタム | ZprintPro — 防水 / 透明 / ダイカット / 商品ラベル',
     },
     keywords: {
-      'zh-hk': '貼紙印刷,防水貼紙,標籤貼紙,透明貼紙,圓形貼紙,異形貼紙,產品標籤,食品標籤,電商貼紙,車身貼紙',
-      en: 'sticker printing,custom stickers,waterproof stickers,die cut stickers,vinyl stickers,product labels,transparent stickers,round stickers,food labels,ecommerce stickers,bumper stickers,holographic stickers',
-      ja: 'シール印刷,ステッカー印刷,防水シール,透明シール,円形シール,ダイカットシール,商品ラベル,食品ラベル,梱包用シール,ホログラムシール',
+      'zh-hk': '貼紙印刷,防水貼紙,標籤貼紙,透明貼紙,圓形貼紙,異形貼紙,產品標籤,食品標籤,電商貼紙,車身貼紙,藥品標籤,GMP認證標籤,保健品標籤,防偽標籤',
+      en: 'sticker printing,custom stickers,waterproof stickers,die cut stickers,vinyl stickers,product labels,transparent stickers,round stickers,food labels,ecommerce stickers,bumper stickers,holographic stickers,pharmaceutical labels,GMP labels,FDA compliant labels,tamper evident labels',
+      ja: 'シール印刷,ステッカー印刷,防水シール,透明シール,円形シール,ダイカットシール,商品ラベル,食品ラベル,梱包用シール,ホログラムシール,医薬品ラベル,GMPラベル,改ざん防止ラベル',
     },
     descriptions: {
-      'zh-hk': '香港貼紙印刷訂製，50張起訂，防水防曬耐用。支援圓形、異形、透明、食品標籤、LOGO標籤等全系列貼紙。電商包裝、產品標籤、活動贈品首選。免費設計，全港送貨，即日交貨。',
-      en: 'Custom sticker printing — waterproof, UV-resistant, durable. Die-cut, round, transparent, food-safe labels. 50 pcs minimum, rush production available. Free design, ships to US, UK, AU & worldwide.',
-      ja: 'プロのシール印刷サービス。防水・耐UV・耐久性抜群。ダイカット・円形・透明・食品対応ラベル。50枚から注文可能、即日発送対応。無料デザイン、全国配送。',
+      'zh-hk': '香港貼紙印刷訂製，50張起訂，防水防曬耐用。支援圓形、異形、透明、食品標籤、LOGO標籤等全系列貼紙。電商包裝、產品標籤、活動贈品首選；藥品標籤符合 GMP 認證 + FDA 21 CFR 合規，可追溯防偽。免費設計，全港送貨，即日交貨。',
+      en: 'Custom sticker printing — waterproof, UV-resistant, durable. Die-cut, round, transparent, food-safe labels. 50 pcs minimum, rush production available. Pharmaceutical labels: GMP-compliant, FDA 21 CFR / EU GMP Annex 15, tamper-evident and traceable. Free design, ships to US, UK, AU & worldwide.',
+      ja: 'プロのシール印刷サービス。防水・耐UV・耐久性抜群。ダイカット・円形・透明・食品対応ラベル。50枚から注文可能、即日発送対応。医薬品ラベル：GMP準拠・FDA 21 CFR / EU GMP Annex 15・改ざん防止・トレーサブル対応。無料デザイン、全国配送。',
     },
   },
   'flyers': {
@@ -345,14 +345,14 @@ const categorySeoData: Record<string, {
       ja: 'パッケージボックス カスタム | ZprintPro — ギフト / 化粧 / 食品 / メール便 / 組み立て',
     },
     keywords: {
-      'zh-hk': '食品包裝印刷,食品包裝盒,食品袋印刷,食品級包裝,食品貼紙印刷,月餅盒,禮品盒,化妝品包裝盒,包裝盒定制,紙盒印刷',
-      en: 'custom packaging boxes,box printing,gift box packaging,cosmetic packaging,food packaging boxes,product packaging,small batch packaging,corrugated boxes,paper box printing,retail packaging,mailer boxes',
-      ja: 'パッケージ印刷,箱印刷,ギフト箱,化粧品パッケージ,食品箱,商品パッケージ,小ロットパッケージ,段ボール箱,紙箱印刷,梱包材',
+      'zh-hk': '食品包裝印刷,食品包裝盒,食品袋印刷,食品級包裝,食品貼紙印刷,月餅盒,禮品盒,化妝品包裝盒,包裝盒定制,紙盒印刷,樓書印刷,資料匣,新盤樓書,豪宅畫冊,精裝樓書',
+      en: 'custom packaging boxes,box printing,gift box packaging,cosmetic packaging,food packaging boxes,product packaging,small batch packaging,corrugated boxes,paper box printing,retail packaging,mailer boxes,real estate brochure,property box,developer brochure,luxury brochure box,rigid telescopic box',
+      ja: 'パッケージ印刷,箱印刷,ギフト箱,化粧品パッケージ,食品箱,商品パッケージ,小ロットパッケージ,段ボール箱,紙箱印刷,梱包材,不動産パンフレット,資料箱,デベロッパーパンフ,上製本,ハードケース箱',
     },
     descriptions: {
-      'zh-hk': '香港食品包裝印刷服務｜智印雲提供食品級包裝盒、食品袋、食品貼紙定制印刷，符合食品安全標準，支持小批量起訂。免費報價，3-5天交貨，立即查詢！',
-      en: 'Custom packaging box printing from 100 units. Gift boxes, cosmetic boxes, food packaging, mooncake boxes. Foil stamping, UV, embossing. Free die-cut design, rush sampling. ISO9001 & FSC certified. Global shipping to US, UK, AU.',
-      ja: 'プロのパッケージ印刷サービス。100個から注文可能。ギフト箱・化粧品箱・食品箱・月餅箱。箔押し・UV・エンボス対応。無料型設計、即日サンプル対応。ISO9001・FSC認証取得。全国配送。',
+      'zh-hk': '香港食品包裝印刷服務｜智印雲提供食品級包裝盒、食品袋、食品貼紙定制印刷，符合食品安全標準，支持小批量起訂。地產商新盤樓書 + 硬殼天地蓋資料匣：騎馬釘、膠裝、精裝樓書 100-5,000 套，5-10 天交付。免費報價，立即查詢！',
+      en: 'Custom packaging box printing from 100 units. Gift boxes, cosmetic boxes, food packaging, mooncake boxes. Foil stamping, UV, embossing. Free die-cut design, rush sampling. ISO9001 & FSC certified. Real estate brochures + rigid telescopic property boxes for developers: saddle stitch / perfect bound / hardcover, 100-5,000 sets, 5-10 working day delivery. Global shipping to US, UK, AU.',
+      ja: 'プロのパッケージ印刷サービス。100個から注文可能。ギフト箱・化粧品箱・食品箱・月餅箱。箔押し・UV・エンボス対応。無料型設計、即日サンプル対応。ISO9001・FSC認証取得。不動産パンフレット＋ハードケース天地蓋資料箱：中綴じ・無線綴じ・上製本、100〜5,000セット、5-10営業日納品。全国配送。',
     },
   },
   'posters': {
@@ -379,14 +379,14 @@ const categorySeoData: Record<string, {
       ja: '紙袋印刷 カスタム | ZprintPro — クラフト / ホワイトカード / エコ / ギフト',
     },
     keywords: {
-      'zh-hk': '紙袋印刷,牛皮紙袋,環保紙袋,手提紙袋,品牌紙袋,禮品紙袋,餐廳外賣紙袋,小批量紙袋,棉繩紙袋,白卡紙袋',
-      en: 'paper bag printing,custom paper bags,kraft paper bags,eco friendly bags,branded paper bags,gift bags,retail bags,takeaway bags,small batch paper bags,twisted handle bags,white card paper bags',
-      ja: '紙袋印刷,クラフト紙袋,エコ紙袋,手提げ紙袋,ブランド紙袋,ギフト袋,テイクアウト紙袋,小ロット紙袋,紙袋作成,ペーパーバッグ',
+      'zh-hk': '紙袋印刷,牛皮紙袋,環保紙袋,手提紙袋,品牌紙袋,禮品紙袋,餐廳外賣紙袋,小批量紙袋,棉繩紙袋,白卡紙袋,珠寶紙袋,鐘錶紙袋,奢侈品紙袋,黑卡紙袋,絲帶手挽',
+      en: 'paper bag printing,custom paper bags,kraft paper bags,eco friendly bags,branded paper bags,gift bags,retail bags,takeaway bags,small batch paper bags,twisted handle bags,white card paper bags,jewellery paper bag,luxury paper bag,black card paper bag,satin ribbon handle,foil stamped bag',
+      ja: '紙袋印刷,クラフト紙袋,エコ紙袋,手提げ紙袋,ブランド紙袋,ギフト袋,テイクアウト紙袋,小ロット紙袋,紙袋作成,ペーパーバッグ,宝飾紙袋,腕時計紙袋,ラグジュアリー紙袋,ブラックカード紙袋,サテンリボン持ち手',
     },
     descriptions: {
-      'zh-hk': '香港紙袋印刷定制服務｜智印雲提供牛皮紙袋、白卡紙袋、環保紙袋、禮品紙袋等各類紙袋印刷，支持LOGO定制，小批量起訂。免費設計，即日交貨！',
-      en: 'Custom paper bag printing from 100 units. Kraft bags, eco-friendly bags, retail & gift bags. Foil stamping, UV, embossing. FSC-certified paper, global delivery. Perfect for retail, F&B, events, branding.',
-      ja: 'プロの紙袋印刷サービス。100個から注文可能。クラフト紙袋・エコ紙袋・手提げギフト袋。箔押し・UV・エンボス対応。FSC認証紙、即日納品。小売・飲食・イベント・ブランディングに最適。',
+      'zh-hk': '香港紙袋印刷定制服務｜智印雲提供牛皮紙袋、白卡紙袋、環保紙袋、禮品紙袋等各類紙袋印刷，支持LOGO定制，小批量起訂。珠寶鐘錶品牌紙袋：黑卡紙 + 燙金 + 絲帶手挽 200-50,000 枚，7-15 天交付。免費設計，即日交貨！',
+      en: 'Custom paper bag printing from 100 units. Kraft bags, eco-friendly bags, retail & gift bags. Foil stamping, UV, embossing. FSC-certified paper, global delivery. Jewellery & watch brand bags: black card + foil + satin ribbon, 200-50,000 pieces, 7-15 day delivery. Perfect for retail, F&B, events, branding.',
+      ja: 'プロの紙袋印刷サービス。100個から注文可能。クラフト紙袋・エコ紙袋・手提げギフト袋。箔押し・UV・エンボス対応。FSC認証紙、即日納品。宝飾・腕時計ブランド紙袋：ブラックカード＋箔押し＋サテンリボン、200〜50,000枚、7-15営業日納品。小売・飲食・イベント・ブランディングに最適。',
     },
   },
   
