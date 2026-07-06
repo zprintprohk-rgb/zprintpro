@@ -47,8 +47,17 @@
 
 > 完整 Sub-task 见 `.hermes/context.md §4`;本节列 gsc 专属动作 (= 拉数据 + 应用规则 + 日报 + matrix 更新)
 
-## 1. 拉过去 7 天 GSC 数据 (15 min)
-- 跑 scripts/seo-weekly-analyzer.py 取过去 7 天
+## 0. 拉过去 90 天 GSC 数据 (5 min, API 直连替代手动 export) — **2026-07-06 新增, 永久前置**
+- 跑 `python scripts/verify_gsc_auth.py` 检查 auth 配置
+  - 缺 key → 立即升级 user (按 docs/GSC-API-SETUP.md 5 步 setup); 不跑 cron, **跳过本次** (出口 (c) 静默阈值升级 user)
+  - 全部 PASS → 继续
+- 跑 `python scripts/fetch_gsc_data.py --days 90` 拉 90 天真实数据 → 写到 `gsc_data.csv`
+  - API 默认 90 天窗口 (GSC API 上限); 站点上线 2026-05-06, today 7-6 = ~60 天实际数据, 但 90 天 rolling window 是 GSC API 标准
+  - 输出 schema 与原 6/17 manual export 完全一致 (热门查询,点击次数,展示,点击率(%),排名) → 后续 sub-task 不变
+- 跨项目 memory: GSC API data freshness 通常滞后 2-3 天 (Google 处理时间)
+
+## 1. 拉过去 7 天 GSC 数据 (15 min, API 7-day filter)
+- 跑 scripts/seo-weekly-analyzer.py 取过去 7 天 (在 90 天窗口基础上 filter)
 - 过滤 "智印港" / "智印印港" 竞品词 (AGENTS.md §1 硬规则)
 - 按展示 / 点击 / 排名分组:
   - orphan: 展示 ≥ 50 但无着陆页
