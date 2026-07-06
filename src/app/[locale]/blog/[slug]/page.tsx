@@ -208,6 +208,30 @@ const posts: Record<string, Record<string, { title: string; description: string;
       content: '',
     },
 
+    // 2026-07-06 v4 純文字深度ブログ: ペットフードステッカー (Tier A × P0 stickers) — 純文字・無図
+    'pet-food-sticker-printing-guide': {
+      title: 'Pet Food Sticker Printing Guide: Waterproof, Food-Safe Labels | ZprintPro',
+      description: 'Pet food and pet care brand owners — waterproof and oil-resistant, FDA-compliant label materials. 1,000 to 100,000-piece runs, 5-7 working day delivery from Asia factory.',
+      date: '2026-07-06', category: 'Pet Stickers',
+      content: '',
+    },
+
+    // 2026-07-06 v4 純文字深度ブログ: アパレルショッピングバッグ (Tier A × P0 paper-bags) — 純文字・無図
+    'apparel-shopping-bag-printing-guide': {
+      title: 'Apparel Shopping Bag Printing Guide: Materials, Sizes & Logo Tips | ZprintPro',
+      description: 'Apparel and fashion brand owners — kraft, white card, handle materials compared. 500-piece small batches to 100,000 bulk, 5-10 working day delivery from Asia factory.',
+      date: '2026-07-06', category: 'Apparel Bags',
+      content: '',
+    },
+
+    // 2026-07-06 v4 純文字深度ブログ: 越境EC配送箱 (Tier A × P0 packaging) — 純文字・無図
+    'cross-border-ecommerce-shipping-box-guide': {
+      title: 'Cross-Border E-commerce Shipping Box Guide: DHL 2-4 Day Delivery | ZprintPro',
+      description: 'Shopify, Amazon FBA and DTC brand owners — durable 3-ply corrugated, DHL/FedEx compatible, small to bulk runs, 3-7 working day delivery from Asia factory, FSC-certified materials.',
+      date: '2026-07-06', category: 'Cross-Border E-commerce',
+      content: '',
+    },
+
   },
   ja: {
     'company-intro': { title: 'ZprintPro会社概要：専門設備とワンストップ印刷サービス', description: 'ZprintProはハイデルベルグ6+1印刷機、HPデジタル印刷機、マルティニ製本ラインなどの先進設備を保有し、ワンストップ印刷サービスを提供しています。', date: '2024-06-01', category: '会社ニュース', content: '' },
@@ -253,11 +277,35 @@ const posts: Record<string, Record<string, { title: string; description: string;
       content: '',
     },
 
+    // 2026-07-06 v4 純文字深度ブログ: ペットフードステッカー (Tier A × P0 stickers) — 純文字・無図
+    'pet-food-sticker-printing-guide': {
+      title: 'ペットフードブランドステッカー印刷ガイド：防水・FDA準拠ラベル | ZprintPro',
+      description: 'ペットフード・ペット用品ブランド向け。防水・耐油・FDA準拠素材、1000枚〜100,000枚量産まで小〜大ロット対応、5-7営業日納品。',
+      date: '2026-07-06', category: 'ペットステッカー',
+      content: '',
+    },
+
+    // 2026-07-06 v4 純文字深度ブログ: アパレルショッピングバッグ (Tier A × P0 paper-bags) — 純文字・無図
+    'apparel-shopping-bag-printing-guide': {
+      title: 'アパレルブランドショッピングバッグ印刷ガイド：素材・サイズ・ロゴ | ZprintPro',
+      description: 'アパレル・ファッションブランド向けショッピングバッグ完全解説。クラフト紙・白カード・ハンドル素材別、500枚小ロットから10万枚量産、5-10営業日納品。',
+      date: '2026-07-06', category: 'アパレルバッグ',
+      content: '',
+    },
+
+    // 2026-07-06 v4 純文字深度ブログ: 越境EC配送箱 (Tier A × P0 packaging) — 純文字・無図
+    'cross-border-ecommerce-shipping-box-guide': {
+      title: '越境EC配送箱カスタムガイド：DHL 2-4日配送・ロゴ印刷 | ZprintPro',
+      description: '越境EC・Shopify・Amazon FBAブランド向け配送箱完全攻略。丈夫な3層構造、DHL/FedEx互換、小〜大ロット対応、3-7営業日納品、認証取得済み素材。',
+      date: '2026-07-06', category: '越境EC配送',
+      content: '',
+    },
+
   }
 };
 
 // 2026-07-05 修：补 packaging-box-custom-guide（之前 src/data/blog-data 已加 content，但 articleSlugs 缺位导致 generateStaticParams 不生成该 slug → Post not found）
-const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-specs', 'brand-materials-checklist', 'mtr-advertising-specs', 'sticker-guide', 'business-card-design', 'packaging-trends', 'cmyk-guide', 'paper-materials', 'eco-printing', 'flyer-printing-guide', 'food-packaging-printing-guide', 'paper-bag-printing-guide', 'poster-printing-guide', 'restaurant-opening-flyer-printing-guide', 'packaging-box-custom-guide'];
+const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-specs', 'brand-materials-checklist', 'mtr-advertising-specs', 'sticker-guide', 'business-card-design', 'packaging-trends', 'cmyk-guide', 'paper-materials', 'eco-printing', 'flyer-printing-guide', 'food-packaging-printing-guide', 'paper-bag-printing-guide', 'poster-printing-guide', 'restaurant-opening-flyer-printing-guide', 'packaging-box-custom-guide', 'pet-food-sticker-printing-guide', 'apparel-shopping-bag-printing-guide', 'cross-border-ecommerce-shipping-box-guide'];
 const guideSlugs = getAllBuyingGuideSlugs();
 const clusterSlugs = getAllClusterSlugs();
 const allSlugs = [...articleSlugs, ...guideSlugs, ...clusterSlugs];

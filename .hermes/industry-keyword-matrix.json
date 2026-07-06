@@ -2,7 +2,11 @@
   "version": "2026-07-04-v1",
   "owner": "mavis orchestrator (user authorized)",
   "policy": {
-    "priority_order": ["P0", "P1", "P2"],
+    "priority_order": [
+      "P0",
+      "P1",
+      "P2"
+    ],
     "no_images_for_new_blogs": true,
     "title_template_zh": "<主关键词> · 香港場景深度指南 | 智印雲 ZprintPro",
     "title_template_en": "<Main Keyword> · Sizes, Paper, Design & Materials Guide | ZprintPro",
@@ -21,16 +25,38 @@
     "C": "低频(年/项目制),按需铺 (8 个行业)"
   },
   "industry_tier_a": [
-    "餐飲外賣", "零售精品", "跨境電商", "美妝護膚", "教育培訓",
-    "婚慶", "文創IP", "寵物", "母嬰", "茶飲食品", "物流快遞", "服裝"
+    "餐飲外賣",
+    "零售精品",
+    "跨境電商",
+    "美妝護膚",
+    "教育培訓",
+    "婚慶",
+    "文創IP",
+    "寵物",
+    "母嬰",
+    "茶飲食品",
+    "物流快遞",
+    "服裝"
   ],
   "industry_tier_b": [
-    "房地產", "酒店民宿", "醫藥保健", "汽車汽配",
-    "金融證券", "珠寶鐘錶", "母嬰食品", "體育賽事"
+    "房地產",
+    "酒店民宿",
+    "醫藥保健",
+    "汽車汽配",
+    "金融證券",
+    "珠寶鐘錶",
+    "母嬰食品",
+    "體育賽事"
   ],
   "industry_tier_c": [
-    "工業機械", "五金工具", "化工", "建築工程",
-    "宗教文化", "政企", "影視IP", "同人周邊"
+    "工業機械",
+    "五金工具",
+    "化工",
+    "建築工程",
+    "宗教文化",
+    "政企",
+    "影視IP",
+    "同人周邊"
   ],
   "category_priority": {
     "stickers": "P0",
@@ -94,6 +120,72 @@
       "expected_words_zh": 850,
       "expected_faqs": 4,
       "queued_at": "2026-07-04"
+    },
+    {
+      "id": "Q-003",
+      "category": "stickers",
+      "sku": "waterproof-stickers",
+      "industry": "寵物",
+      "tier": "A",
+      "priority": "P0",
+      "slug": "pet-food-sticker-printing-guide",
+      "title_zh": "香港寵物食品品牌貼紙印刷指南 · 防水防油 FDA 認證 | 智印雲 ZprintPro",
+      "title_en": "Pet Food Brand Sticker Printing Guide: Waterproof, Food-Safe Labels | ZprintPro",
+      "title_ja": "ペットフードステッカー印刷ガイド：防水・FDA準拠ラベル素材 | ZprintPro",
+      "valid_internal_links": [
+        "/category/stickers/",
+        "/product/waterproof-stickers/",
+        "/product/die-cut-stickers/",
+        "/product/transparent-stickers/",
+        "/quote/"
+      ],
+      "expected_words_zh": 900,
+      "expected_faqs": 4,
+      "queued_at": "2026-07-06"
+    },
+    {
+      "id": "Q-004",
+      "category": "paper-bags",
+      "sku": "kraft-paper-bags",
+      "industry": "服裝",
+      "tier": "A",
+      "priority": "P0",
+      "slug": "apparel-shopping-bag-printing-guide",
+      "title_zh": "香港服裝品牌紙袋印刷指南 · 環保購物袋品牌升級 | 智印雲 ZprintPro",
+      "title_en": "Apparel Brand Shopping Bag Printing Guide: Materials, Sizes & Logo Tips | ZprintPro",
+      "title_ja": "アパレルブランドショッピングバッグ印刷ガイド：素材・サイズ・ロゴ | ZprintPro",
+      "valid_internal_links": [
+        "/category/paper-bags/",
+        "/product/kraft-paper-bags/",
+        "/product/white-card-bags/",
+        "/product/gift-bags/",
+        "/product/eco-paper-bags/"
+      ],
+      "expected_words_zh": 1000,
+      "expected_faqs": 4,
+      "queued_at": "2026-07-06"
+    },
+    {
+      "id": "Q-005",
+      "category": "packaging",
+      "sku": "mailer-boxes",
+      "industry": "跨境電商",
+      "tier": "A",
+      "priority": "P0",
+      "slug": "cross-border-ecommerce-shipping-box-guide",
+      "title_zh": "跨境電商快遞盒印刷指南 · DHL 全球 2-4 天送達 | 智印雲 ZprintPro",
+      "title_en": "Cross-Border E-commerce Shipping Box Guide: DHL 2-4 Day Global Delivery | ZprintPro",
+      "title_ja": "越境EC配送箱カスタムガイド：DHL 2-4日グローバル配送 | ZprintPro",
+      "valid_internal_links": [
+        "/category/packaging/",
+        "/product/mailer-boxes/",
+        "/product/folding-boxes/",
+        "/product/kraft-paper-packaging-box/",
+        "/quote/"
+      ],
+      "expected_words_zh": 1000,
+      "expected_faqs": 4,
+      "queued_at": "2026-07-06"
     }
   ],
   "covered": [
@@ -118,19 +210,83 @@
       },
       "nap_decoupled": true,
       "internal_links_count": 5
+    },
+    {
+      "id": "Q-003",
+      "slug": "pet-food-sticker-printing-guide",
+      "category": "stickers",
+      "sku": "waterproof-stickers",
+      "industry": "寵物",
+      "tier": "A",
+      "priority": "P0",
+      "covered_at": "2026-07-06",
+      "deployed_at": "2026-07-06T10:30:00+08:00",
+      "deploy_method": "git push origin_ssh main → CF Pages auto-deploy",
+      "verify_status": "PENDING_VERIFY",
+      "locale_chars": {
+        "zh-hk": 0,
+        "en": 0,
+        "ja": 0
+      },
+      "nap_decoupled": true,
+      "internal_links_count": 5,
+      "no_images": true
+    },
+    {
+      "id": "Q-004",
+      "slug": "apparel-shopping-bag-printing-guide",
+      "category": "paper-bags",
+      "sku": "kraft-paper-bags",
+      "industry": "服裝",
+      "tier": "A",
+      "priority": "P0",
+      "covered_at": "2026-07-06",
+      "deployed_at": "2026-07-06T10:30:00+08:00",
+      "deploy_method": "git push origin_ssh main → CF Pages auto-deploy",
+      "verify_status": "PENDING_VERIFY",
+      "locale_chars": {
+        "zh-hk": 0,
+        "en": 0,
+        "ja": 0
+      },
+      "nap_decoupled": true,
+      "internal_links_count": 5,
+      "no_images": true
+    },
+    {
+      "id": "Q-005",
+      "slug": "cross-border-ecommerce-shipping-box-guide",
+      "category": "packaging",
+      "sku": "mailer-boxes",
+      "industry": "跨境電商",
+      "tier": "A",
+      "priority": "P0",
+      "covered_at": "2026-07-06",
+      "deployed_at": "2026-07-06T10:30:00+08:00",
+      "deploy_method": "git push origin_ssh main → CF Pages auto-deploy",
+      "verify_status": "PENDING_VERIFY",
+      "locale_chars": {
+        "zh-hk": 0,
+        "en": 0,
+        "ja": 0
+      },
+      "nap_decoupled": true,
+      "internal_links_count": 5,
+      "no_images": true
     }
   ],
   "skipped": {
     "business-cards": "AGENTS.md §11 主营品类约束"
   },
   "stats": {
-    "queue_size": 1,
-    "covered_count": 1,
-    "p0_coverage_pct": 0.4,
+    "queue_size": 5,
+    "covered_count": 4,
+    "unique_ids": 5,
+    "p0_coverage_pct": 0.44,
     "p1_coverage_pct": 0,
     "p2_coverage_pct": 0,
     "total_524_target": 524,
-    "covered_524_pct": 0.19,
+    "covered_524_pct": 0.8,
     "last_updated": "2026-07-06"
   }
 }

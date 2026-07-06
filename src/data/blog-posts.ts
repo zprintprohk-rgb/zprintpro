@@ -645,6 +645,61 @@ const lpRestaurantOpeningFlyer: BlogPostMeta = {
   // getBlogCover 检测 meta.cover 为 undefined 时返回 '',page.tsx 据此跳过 hero 图渲染
 };
 
+// 2026-07-06 v4 純文字深度博客 (no cover) — Tier A 寵物 × P0 stickers 類目
+const lpPetFoodSticker: BlogPostMeta = {
+  slug: 'pet-food-sticker-printing-guide',
+  categoryKey: 'sticker',
+  source: 'legacy',
+  date: '2026-07-06',
+  title: {
+    // NAP vs SEO 脱钩: zh-hk = 香港本地場景詞 (MTR/順豐/Pet Mart); en/ja = 全球通用 (waterproof/FDA/material)
+    'zh-hk': '香港寵物食品品牌貼紙印刷指南 · 防水防油 FDA 認證 | 智印雲 ZprintPro',
+    en: 'Pet Food Brand Sticker Printing Guide: Waterproof, Food-Safe Labels | ZprintPro',
+    ja: 'ペットフードステッカー印刷ガイド：防水・FDA準拠ラベル素材 | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '2026 年香港寵物市場規模突破 35 億,寵物食品、保健品、零食品牌爭相推新。一張高質素、防水防油的寵物食品貼紙決定貨架轉化率。智印雲為香港本地及跨境寵物品牌提供 FDA 認證食品級貼紙,1,000-100,000 枚小至大批量,5-7 個工作天,DHL 全球 2-4 天到貨。',
+    en: 'Pet food, treat, supplement brand owners — premium waterproof and food-safe stickers decide shelf conversion. FDA-compliant label materials, 1,000 to 100,000-piece runs, 5-7 working day delivery from Asia factory with DHL 2-4 day global shipping.',
+    ja: 'ペットフード・おやつ・サプリメントブランドオーナー様へ。防水・食品衛生基準準拠ステッカーが棚前転換率を決める。FDA 準拠素材、1,000〜100,000枚小〜大ロット、5-7営業日納品、DHL 2-4日全世界配送。',
+  },
+};
+
+// 2026-07-06 v4 純文字深度博客 (no cover) — Tier A 服裝 × P0 paper-bags 類目
+const lpApparelShoppingBag: BlogPostMeta = {
+  slug: 'apparel-shopping-bag-printing-guide',
+  categoryKey: 'paper-bags',
+  source: 'legacy',
+  date: '2026-07-06',
+  title: {
+    'zh-hk': '香港服裝品牌紙袋印刷指南 · 環保購物袋品牌升級 | 智印雲 ZprintPro',
+    en: 'Apparel Brand Shopping Bag Printing Guide: Materials, Sizes & Logo Tips | ZprintPro',
+    ja: 'アパレルブランドショッピングバッグ印刷ガイド：素材・サイズ・ロゴ | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '服裝、潮牌、買手店老闆必睇。從白卡紙到黃牛皮、從棉繩到絲帶手挽、從燙金到 UV 局部,一個高質感的品牌紙袋決定客人是否會在 Instagram 打卡。智印雲為時裝品牌提供 500-100,000 枚小至大批量紙袋,5-10 個工作天交付。',
+    en: 'Apparel, streetwear, and boutique owners — a premium branded shopping bag decides whether customers post on Instagram. Kraft, white card, cotton rope handles, foil stamping, 500-100,000 piece runs, 5-10 working day delivery from Asia factory.',
+    ja: 'アパレル・ストリートウェア・セレクトショップオーナー様へ。プレミアム感のあるブランドショッピングバッグが Instagram 投稿を決める。クラフト紙・白カード・綿ロープ持ち手・箔押し、500〜100,000枚対応、5-10営業日納品。',
+  },
+};
+
+// 2026-07-06 v4 純文字深度博客 (no cover) — Tier A 跨境電商 × P0 packaging 類目
+const lpCrossBorderShipping: BlogPostMeta = {
+  slug: 'cross-border-ecommerce-shipping-box-guide',
+  categoryKey: 'packaging',
+  source: 'legacy',
+  date: '2026-07-06',
+  title: {
+    'zh-hk': '跨境電商快遞盒印刷指南 · DHL 全球 2-4 天送達 | 智印雲 ZprintPro',
+    en: 'Cross-Border E-commerce Shipping Box Guide: DHL 2-4 Day Global Delivery | ZprintPro',
+    ja: '越境EC配送箱カスタムガイド：DHL 2-4日グローバル配送 | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': 'Shopify、Amazon FBA、獨立站賣家必睇。一個高質素、印刷精美的快遞盒決定客戶開箱體驗和回購率。智印雲提供 3 層 B 瓦楞抗壓結構、DHL/FedEx/UPS 全兼容尺寸、FSC 認證紙材,500-50,000 個小至大批量,3-7 個工作天交付。',
+    en: 'Shopify, Amazon FBA, and DTC brand owners — a premium printed shipping box decides unboxing experience and repeat purchase. Durable 3-ply B-flute, DHL/FedEx/UPS-compatible sizes, FSC-certified materials, 500-50,000 piece runs, 3-7 working day delivery.',
+    ja: 'Shopify、Amazon FBA、独立系 EC ブランドオーナー様へ。プレミアム感のある配送箱が開封体験とリピート率を決める。3層 B フルート耐圧構造、DHL/FedEx/UPS 互換サイズ、FSC 認証素材、500〜50,000個小〜大ロット、3-7営業日納品。',
+  },
+};
+
 // =============================================================================
 // Unified list (22 articles)
 // =============================================================================
@@ -679,6 +734,13 @@ export const blogPosts: BlogPostMeta[] = [
   lpPackagingBoxCustomGuide,
   // 2026-07-04 v2: 純文字深度博客上線
   lpRestaurantOpeningFlyer,
+  // 2026-07-06 v4: 半年压縮鑽石版每天 3 篇博客 (P0 categories × Tier A industries)
+  // - lpPetFoodSticker: stickers × 寵物 (Q-003)
+  // - lpApparelShoppingBag: paper-bags × 服裝 (Q-004)
+  // - lpCrossBorderShipping: packaging × 跨境電商 (Q-005)
+  lpPetFoodSticker,
+  lpApparelShoppingBag,
+  lpCrossBorderShipping,
 ];
 
 // =============================================================================
