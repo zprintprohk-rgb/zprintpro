@@ -45,31 +45,13 @@
 
 > 完整 Sub-task 流程见 `.hermes/context.md §4`,本节只列 daily 专属拆分。
 
-## Sub-task A1: Blog #1 P0 行业深度 (60 min) — §4 Sub-task A 第 1 篇
-1. 读 .hermes/industry-keyword-matrix.json 取 queue 第 1 条 P0 未覆盖
-2. 选题确认 (Tier A 行业优先: 餐飲外賣 / 零售精品 / 跨境電商 / 美妝護膚 / 教育培訓)
-3. 严格按 AGENTS.md §13.4 v2 写内容:
-   - ≥800 字 zh-hk / ≥250 词 en / ≥250 词 ja
-   - 4 FAQ 用 <p><strong>Q:...</strong><br/>A:...</p> 格式
-   - 标题按 locale 本地化 (见硬约束 §13.10 + §13.13)
-   - 内链只从 matrix valid_internal_links 清单里选 (3-5 个,严禁 404/301)
-   - 3 locale 各自纯文字,无 cover 无内联 img
-   - 9 段结构 (引子/行业概况/材質工艺/设计细节/选购决策/FAQ/CTA + 隐式 schema)
-4. 写到 `src/data/blog-data/<locale>.json` (本 cron 专属硬约束 #2, 关键路径!)
-5. 同时更新 src/data/blog-posts.ts (BlogPostMeta + blogPosts 数组追加)
-6. 加 `slug` 到 src/app/[locale]/blog/[slug]/page.tsx 的 `articleSlugs` 数组 (如未在)
-7. 跑 scripts/generate-sitemap.js 重建 sitemap
-8. git add + commit + push origin_ssh main (严禁只 commit 不 push)
-9. 等 90s, 跑 scripts/verify-deploy.mjs 看 status = `success`
+## Sub-task A: Blog 3 篇生产 (180 min · A1+A2+A3)
+> **【通用模板引用】** 详细步骤见 `.hermes/context.md §4 Sub-task A` 通用模板 (字数/FAQ/标题本地化/内链/段数/路径/verify 全部统一)。
+> 本 cron 只配置 daily 差异化: 3 篇 (P0+P0+P1), Tier A 行业优先 (餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓), 800-1000 字 zh-hk / 250-350 词 en/ja。
 
-## Sub-task A2: Blog #2 P0 行业深度 (60 min) — §4 Sub-task A 第 2 篇
-- 同 Sub-task A1, 选题 queue 第 2 条 P0
-- 复用 A1 的 content 模板, 节省 5-10 min
-- 优先与 A1 不同 SKU (避免 PageRank 集中)
-
-## Sub-task A3: Blog #3 P1 行业深度 (45 min) — §4 Sub-task A 第 3 篇
-- 同 Sub-task A1, 选题 queue 第 3 条 P1
-- 可以缩到 700 字 zh-hk (P1 优先级低于 P0)
+- A1: Blog #1 P0 60 min (queue 第 1 条)
+- A2: Blog #2 P0 60 min (queue 第 2 条, 复用 A1 模板省 5-10 min, 优先不同 SKU)
+- A3: Blog #3 P1 45 min (queue 第 3 条, 可缩 700 字 zh-hk)
 
 ## Sub-task B: SKU 自进化优化 (15 min · 3 个 SKU) — §4 Sub-task B
 1. 读 matrix queue 取 P0 类目下"未优化" SKU
@@ -96,20 +78,17 @@
 - §4 Sub-task C (Category Meta Refresh) → zprintpro-weekly-meta-refresh (周一)
 - §4 Sub-task D (内链自生长) → zprintpro-weekly-meta-refresh (周一)
 
-【7 步 verify 流水线 (豆包 §12.4 升级版,任一不过 = 不算完成,升级 user)】
-0. node scripts/check-encoding.js --fix (CRLF/UTF-16 预检)
-1. git status -sb 无 ahead (push 真成功)
-2. find public/sitemap*.xml -mtime -1 (sitemap 是今天的)
-3. curl -sI https://zprintpro.com/<locale>/blog/<slug>/ 返回 200 (3 locale × 3 blog = 9 次)
-4. curl -s <url> | grep -c <主关键词> ≥ 1 (内容含关键词)
-5. curl -s <url> | grep -E "Article|BreadcrumbList|FAQPage" ≥ 3 (schema JSON-LD 注入)
-6. curl -s <url> | grep -E "<img|cover" 返回 0 (硬约束无图,新增)
-7. 逐个 curl matrix valid_internal_links, 全部 200 不 301/302/404
+【7 步 verify 流水线 (本 cron 差异化)】
+> 通用流水线见 `.hermes/context.md §13.1` 完成判定 6 步 + 升级阈值 §13.4。本 cron 特定差异:
+- step 3 curl: **3 locale × 3 blog = 9 次** (3 篇博客)
+- step 6 加固: 额外 grep `<img|cover` 返回 0 (硬约束无图)
+- step 7 内链: 逐个 curl matrix valid_internal_links, 全部 200
 
-【3 个硬编码 cron 出口 (R6 协议,缺一不可)】
-(a) TTL 过期自删: 每次启动检查, 如果今天已完成 3 篇 + 3 SKU + 1 matrix.json commit → 写日报落盘后退出
-(b) 报告落盘自删: 如果 .hermes/logs/YYYY-MM-DD-日运营报告.md 存在且 24h 内 → 本次 cron 立即退出 (避免重复跑)
-(c) 静默阈值升级: 如果连续 3 次本 cron verify 第 1-3 步全失败 → 升级 user (不继续静默 tick)
+【3 个硬编码 cron 出口 (R6 协议)】
+- 通用协议见 `.hermes/context.md §13.3` (TTL 自删 / 报告落盘自删 / 静默阈值升级)
+- 本 cron 特定 (a): 如果今天已完成 3 篇 + 3 SKU + 1 matrix.json commit → 写日报落盘后退出
+- 本 cron 特定 (b): `.hermes/logs/YYYY-MM-DD-日运营报告.md` 存在且 24h 内 → 立即退出
+- 本 cron 特定 (c): 连续 3 次本 cron verify 第 1-3 步全失败 → 升级 user
 
 【异常上报 (升级 user, 不报完成)】
 - CF build 失败 / push 报错 / curl 5xx → 立即升级
@@ -120,22 +99,10 @@
 - 同 category 5 天内已写相同 SKU → 调度冲突, 升级
 - **路径 bug 警告**: 检测到内容写到 `public/blog-data/` 而不是 `src/data/blog-data/` → 立即修正 + 升级
 
-【模型说明】
-- 本 cron 跑在 mavis agent (Mavis-M3 model), 不切换其他模型
-- 单次 token 预算 50 万 (R11 异常上报阈值), 超出暂停升级 user
-
 【完成标准 (v4 升级版)】
 - ✅ 至少 3 篇博客真实部署上线 (commit + push + CF build success + 7 步 verify 全过)
 - ✅ 至少 3 个 SKU 优化上线
 - ✅ matrix.json 更新 (covered[] 追加 3 条)
 - ✅ 日报写到 F:\zprintpro-nextjs\.hermes\logs\YYYY-MM-DD-日运营报告.md
-
-【生成前自检要求】
-输出最终内容前，先对照顶部卡帕西四原则自检：
-1. 是否包含完整的 <thinking> 推理过程？
-2. 是否只实现了需求要求的功能，没有私自扩展？
-3. 涉及代码修改是否附带了精确 diff？
-4. 是否给出了明确的验收验证步骤？
-自检不通过禁止输出最终结果。
 
 启动后立即读 .hermes/context.md + .hermes/industry-keyword-matrix.json + AGENTS.md, 然后开干。

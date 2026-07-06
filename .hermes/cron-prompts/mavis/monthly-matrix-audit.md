@@ -58,16 +58,13 @@
 - 读 .hermes/logs/ 过去 30 天 daily 报告
 
 ## 2. 内容质量自迭代 (豆包 §12.2, 90 min, 每月必跑, v3 加深到 10 篇)
-- 拉过去 30 天 GSC,筛"零展示 + 零点击"的博客 (orphan 内容)
-- 排序优先级: GSC 零展示 > CTR < 1% > 排名 50+
-- 对 top 10 孤儿博客自动补充:
-  - 加 200-300 字深度 (基于同主题 top 3 博客的内容 gap)
-  - 补充 2-3 个 FAQ (从 Google PAA / 相关搜索抓)
-  - 加 3-5 个新内链 (交叉到同类目已铺博客)
-  - 优化 H1 / meta description (从 GSC CTR 倒推)
-- 不动已铺博客的 slug / schema 结构
-- 写到 `src/data/blog-data/<locale>.json` (本 cron 专属硬约束 #3, 关键路径!)
-- 每月输出"内容质量分报告": 薄页率 / 孤儿内容比例 / 平均停留时长
+> **【通用模板引用】** 基础步骤见 `.hermes/context.md §4 Sub-task A` 通用模板 (字数/FAQ/标题本地化/内链/段数/路径/verify)。
+> 本 cron 差异化: **不是新写博客**, 而是对 orphan top 10 博客做"内容补充 + FAQ 加 + 内链加 + H1/meta 优化" (豆包 §12.2 流程):
+- 拉过去 30 天 GSC,筛"零展示 + 零点击"的博客 (orphan)
+- 排序: GSC 零展示 > CTR < 1% > 排名 50+
+- 对 top 10 补充 200-300 字深度 + 2-3 FAQ + 3-5 内链 + H1/meta 优化
+- 不动 slug / schema 结构
+- 关键路径仍走 `src/data/blog-data/<locale>.json`
 
 ## 3. 覆盖率审计 (20 min)
 - P0 / P1 / P2 覆盖率计算 (covered_count / queue_size by priority)
@@ -91,20 +88,20 @@
   - 下月 30 天规划 (queue 扩容 / 内容主题 / 行业侧重)
   - 异常 / 待办 / 风险
 
-【7 步 verify (对 matrix.json + 内容迭代变更)】
-0. node scripts/check-encoding.js --fix
-1. git status -sb 无 ahead
-2. matrix.json 是今天的
-3. JSON 语法 valid (node -e "JSON.parse(require('fs').readFileSync('.hermes/industry-keyword-matrix.json'))")
-4. queue / covered / stats 三字段都更新
-5. 月报存在且非空
-6. version 字段已 bump (e.g. 2026-07-04-v1 → 2026-08-01-v1)
-7. 内容质量迭代的孤儿博客 ≥ 10 篇已 commit + push + verify 200
+【7 步 verify 流水线 (本 cron 差异化)】
+> 通用流水线见 `.hermes/context.md §13.1` 完成判定 6 步 + 升级阈值 §13.4。本 cron 特定差异 (matrix.json + 内容迭代):
+- step 2: matrix.json 是今天的
+- step 3 加固: JSON 语法 valid
+- step 4 加固: queue / covered / stats 三字段都更新
+- step 5 加固: 月报存在且非空
+- step 6 加固: version 字段已 bump (e.g. 2026-07-04-v1 → 2026-08-01-v1)
+- step 7 加固: 内容质量迭代的孤儿博客 ≥ 10 篇已 commit + push + verify 200
 
 【3 个硬编码 cron 出口 (R6 协议)】
-(a) TTL 过期自删: 如果今天不是 1 号 → 跳过本次, 累积 12 次跳过 (1 年) → mavis cron delete mavis zprintpro-monthly-matrix-audit
-(b) 报告落盘自删: 如果本月月报已存在 → 立即退出 (避免重复跑)
-(c) 静默阈值升级: 如果连续 2 次本 cron 月报生成失败 → 升级 user
+- 通用协议见 `.hermes/context.md §13.3`
+- 本 cron 特定 (a): 今天不是 1 号 → 跳过本次, 累积 12 次跳过 (1 年) → mavis cron delete mavis zprintpro-monthly-matrix-audit
+- 本 cron 特定 (b): 本月月报已存在 → 立即退出
+- 本 cron 特定 (c): 连续 2 次本 cron 月报生成失败 → 升级 user
 
 【异常上报】
 - matrix.json 损坏 → 立即备份 + 升级 user, 不自动修复

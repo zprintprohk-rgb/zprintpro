@@ -78,10 +78,13 @@
 
 ## 4. 每日固定执行流程 (v2 — 4 sub-task)
 
-### Sub-task A: Blog 纯文字深度生产 (60 min)
-- 从 `industry-keyword-matrix.json` 读 queue
-- 取 P0 → P1 顺序下一个未覆盖组合
-- 强制约束:
+### Sub-task A: Blog 纯文字深度生产 (通用模板, daily/weekly/monthly 共享)
+
+> **【通用模板】** 任何 cron (daily / weekly / monthly) 写博客都按本模板走,cron prompt 只配置**数量/优先级/行业 Tier**等差异,详细步骤不重复。
+
+- **数据源**: 从 `.hermes/industry-keyword-matrix.json` 读 queue
+- **选题**: 取 P0 → P1 顺序下一个未覆盖组合
+- **强制约束** (单一真源, cron prompt 不重复):
   - ❌ **不写** `cover` 字段 (blog-posts.ts 已支持可选)
   - ❌ **HTML content 里不出现** `<img>` 标签
   - ✅ **标题按 locale 本地化**（AGENTS.md §13.13 铁律,3 locale = 3 独立市场,**非"深圳"市场**）:
@@ -92,8 +95,18 @@
   - ✅ 800-1000 字 zh-hk,250-350 词 en/ja
   - ✅ 4 FAQ + Article + Breadcrumb + FAQPage schema
   - ✅ 9 段结构 (引子/行业概况/材質工艺/选购决策/FAQ/CTA)
-- 写 src/data/blog-posts.ts + page.tsx (3 locale)
-- sitemap → commit + push → 6 步 verify (curl 200 + 关键词命中 + 无 404 内链)
+- **关键路径** (2026-07-06 user 拍板, 2026-07-01 4 天 3 篇只写日志 + 2026-07-06 path 错位 教训):
+  - 内容写到 `src/data/blog-data/<locale>.json` (tsconfig paths 解析),**不是** `public/blog-data/` (dead code)
+  - 同时更新 `src/data/blog-posts.ts` (BlogPostMeta) + `src/app/[locale]/blog/[slug]/page.tsx` (`articleSlugs` 数组)
+  - 跑 `scripts/generate-sitemap.js` 重建 sitemap
+- **完成**: commit + push origin_ssh main + 7 步 verify 全过 (见 §13.1)
+
+**Cron 差异化配置** (各 cron 在本 Sub-task 上的差异):
+| Cron | 数量 | 优先级 | 行业 Tier | 字数 |
+|------|------|--------|----------|------|
+| daily | 3 篇 | P0/P0/P1 | A 优先 | 800-1000 zh-hk |
+| weekly | 5 篇 | T1-T5 顺序 | B 优先 | 700-900 zh-hk (可缩) |
+| monthly | 0 篇 (重写而非新写) | orphan top 10 | A/B/C 混合 | 200-300 字补充 (豆包 §12.2) |
 
 ### Sub-task B: SKU 自进化优化 (45 min · 2-3 个 SKU)
 - 从 matrix 读 P0 类目下"未优化"的 SKU

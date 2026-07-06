@@ -53,12 +53,9 @@
 - 优先级: GSC orphan keyword > priority_boost ≥ 3 > 矩阵 round-robin
 
 ## 2. Tier B 5 篇博客生产 (125 min, 每篇 25 min) — §4 Sub-task A 批量模式
-- Sub-task T1-T5: 5 篇 Tier B 博客,每篇 25 min
-- 内容结构同 daily cron Sub-task A1,但字数可缩到 700 字 zh-hk (Tier B 优先级低于 P0)
-- 4 FAQ + 9 段 + NAP 脱钩 + 内链 3-5 + schema JSON-LD
-- 写到 `src/data/blog-data/<locale>.json` (本 cron 专属硬约束 #2, 关键路径!)
-- 同时更新 src/data/blog-posts.ts BlogPostMeta
-- 每篇完成后 commit + push (5 个独立 commit, 失败 rollback 容易)
+> **【通用模板引用】** 详细步骤见 `.hermes/context.md §4 Sub-task A` 通用模板。
+> 本 cron 差异化: 5 篇 (T1-T5 顺序), Tier B 行业优先 (房地產/酒店民宿/醫藥保健/汽車汽配/金融證券/珠寶鐘錶/體育賽事), 可缩 700-900 字 zh-hk。
+- 每篇完成后独立 commit + push (5 个 commit, 失败 rollback 容易)
 
 ## 3. 类目页 meta refresh (30 min, 豆包建议) — §4 Sub-task C
 - 对 GSC 流量 top 3 类目:
@@ -85,20 +82,17 @@
   - KPI 7 天滚动 / 周环比流量
   - 异常 / 待办 / 下周一选题预排
 
-【7 步 verify】
-0. node scripts/check-encoding.js --fix
-1. git status -sb 无 ahead
-2. find public/sitemap*.xml -mtime -3 (sitemap 是本周的)
-3. curl -sI <类目页 URL> 返回 200 (3 locale)
-4. curl -s <url> | grep -c <Tier B 行业关键词> ≥ 1
-5. curl -s <url> | grep -E "Article|BreadcrumbList|FAQPage" ≥ 3
-6. 逐个 curl 5 篇 Tier B 博客 (3 locale × 5 = 15 个 URL) + 新增内链, 全部 200 不 301/302/404
-7. 新增内链总数 ≥ 5 条 (统计 grep -c "href" 增量)
+【7 步 verify 流水线 (本 cron 差异化)】
+> 通用流水线见 `.hermes/context.md §13.1` 完成判定 6 步 + 升级阈值 §13.4。本 cron 特定差异:
+- step 2 sitemap: `-mtime -3` (sitemap 是本周的)
+- step 3-6 curl: 类目页 3 locale + Tier B 5 篇博客 3 locale × 5 = 15 URL + 新增内链, 全部 200
+- step 7 加固: 新增内链总数 ≥ 5 条 (统计 grep -c "href" 增量)
 
 【3 个硬编码 cron 出口 (R6 协议)】
-(a) TTL 过期自删: 如果今天不是周一 → 跳过本次, 累积 4 次跳过 → mavis cron delete mavis zprintpro-weekly-meta-refresh
-(b) 报告落盘自删: 如果 .hermes/logs/YYYY-MM-DD-weekly-meta.md 存在且 7 天内 → 本次立即退出
-(c) 静默阈值升级: 如果连续 2 次 verify 第 1-3 步失败 → 升级 user
+- 通用协议见 `.hermes/context.md §13.3`
+- 本 cron 特定 (a): 今天不是周一 → 跳过本次, 累积 4 次跳过 → mavis cron delete mavis zprintpro-weekly-meta-refresh
+- 本 cron 特定 (b): `.hermes/logs/YYYY-MM-DD-weekly-meta.md` 存在且 7 天内 → 立即退出
+- 本 cron 特定 (c): 连续 2 次 verify 第 1-3 步失败 → 升级 user
 
 【异常上报】
 - CF build 失败 / GSC API 拉取失败 → 升级 user
@@ -112,13 +106,5 @@
 - ✅ 周一新增内链 ≥ 5 条
 - ✅ matrix.json 已更新
 - ✅ 周报落盘
-
-【生成前自检要求】
-输出最终内容前，先对照顶部卡帕西四原则自检：
-1. 是否包含完整的 <thinking> 推理过程？
-2. 是否只实现了需求要求的功能，没有私自扩展？
-3. 涉及代码修改是否附带了精确 diff？
-4. 是否给出了明确的验收验证步骤？
-自检不通过禁止输出最终结果。
 
 启动后立即读 .hermes/context.md + .hermes/industry-keyword-matrix.json + AGENTS.md, 然后开干。
