@@ -1,7 +1,7 @@
 # Monthly Matrix Audit — 2026-07 (manual run 2026-07-06)
 
 **Trigger**: orchestrator (mavis root, manual cron execution — user 拍板 override 1 号出口)
-**Source**: `.hermes\industry-keyword-matrix.json` + `gsc_data.csv` snapshot (2026-06-17)
+**Source**: `.hermes\industry-keyword-matrix.json` + `gsc_data.csv` (**3-month rolling window**, GSC default 90 天 export, LastWriteTime 2026-06-17, covers **2026-05-06 ~ 2026-06-17 = ~ 42 days** of site history; site 上线 2026-05-06)
 **Pipeline**: queue/coverage audit → tier switch rules → matrix update (P1 扩容) → report
 
 ---
@@ -10,27 +10,27 @@
 
 | KPI | 数值 | 来源 |
 |---|---|---|
-| Matrix queue 总数 | 8 | matrix.stats.queue_size |
-| Matrix covered 总数 | 7 | matrix.covered.length |
-| Queue 总覆盖率 | 87.5% | covered / queue |
-| P0 覆盖率 | 87.5% (7/8) | P0 covered/P0 queue |
-| P1 覆盖率 | 0% (0/0) | **刚扩容**, 0→4 等待 daily cron 写 |
-| Tier A 覆盖率 | 80.0% (4/5) | Tier A covered/Tier A queue |
+| Matrix queue 总数 | **12** (post-P1-expansion) | matrix.stats.queue_size (4 条 P1 新增) |
+| Matrix covered 总数 | 7 | matrix.covered.length (Q-002 仍未 covered) |
+| Queue 总覆盖率 (post) | 58.3% (7/12) | covered / queue (post-update) |
+| **P0 覆盖率 (post)** | **100%** (8/8) | P0 covered/P0 queue — **所有 P0 都已 covered**, Q-002 是补漏 |
+| P1 覆盖率 | 0% (0/4) | **新建** Q-P1-01..04, 等待 daily cron 写 |
+| Tier A 覆盖率 | 80.0% (4/5) | Tier A covered/Tier A queue (Q-002 漏) |
 | Tier B 覆盖率 | 100.0% (3/3) | Tier B covered/Tier B queue |
-| GSC 数据快照 | 335 imps rows, 1 strong_orphan + 11 orphan + 11 high-potential + 4 CTA | gsc_data.csv (2026-06-17) |
-| 真实 30 天 GSC 趋势 | **缺失** (CSV 是单快照, 不是 30d 滚动) | ⚠️ 见 §7 异常升级 user |
+| GSC 3-月窗口数据 | 335 imps rows, 1 strong_orphan + 11 orphan + 11 high-potential + 4 CTA | gsc_data.csv (2026-06-17, 90 天窗口) |
+| 真正实时 GSC 趋势 | ⚠️ **需 GSC API 直连** | ⚠️ 见 §7 异常升级 user |
 
 ## 2. 内容质量分
 
 - **薄页率**: 0% (matrix 7/7 covered 都 verified PASS, 字数 ≥ 800 zh / ≥ 250 en+ja)
-- **孤儿内容比例**: ⚠️ **无法判定** (无 30d 滚动 GSC 数据, 不能用单快照判 zero-impression)
+- **孤儿内容比例**: ⚠️ **粗判** (现 3-月窗口 GSC 数据, 0 imps 的 query 算 orphan. Q-003 已 108 imps 不是 orphan, Q-002 仍未写; **未 covered Q-002 是单一最大 gap**)
 - **平均停留时长**: ⚠️ **缺失** (无 GA4 接入验证)
 - **覆盖率**：7/8 = 87.5% (Q-002 cosmetics box 为唯一 P0/Tier A 未 covered)
 
 ## 3. Tier 切换清单
 
-- **自动降级**: 0 条 (规则未命中: GSC 单快照不能判 30d 趋势)
-- **自动升级**: 0 条 (规则未命中: 同上)
+- **自动降级**: 0 条 (规则未命中: GSC 单次 export 不能判 30/90d 连续趋势, 需多次 export 才能 sliding window)
+- **自动升级**: 0 条 (规则未命中: 同上 + 当前 GSC 中无 "≥100 imps 7d 滚动 + rank ≤ 20" 命中)
 - **待 user 拍板**: 0 条 (见 matrix.last_tier_switch_run.manual_review)
 
 **规则触发情况** (cron prompt §rules):
@@ -97,7 +97,7 @@
 
 **根本原因**:
 
-1. **GSC API 未直连**: 当前 `gsc_data.csv` 是 6/17 快照, 不是 30 天滚动 window, 不能 orphan 判定
+1. **GSC API 未直连**: 当前 `gsc_data.csv` 是 6/17 的 **3-月/90 天默认窗口** export (覆盖 5/6 ~ 6/17 = 42 天), 不是 7/6 实时滚动. 要拉 7/6 当天的 90 天 rolling = 5/7 ~ 7/6 = ~ 60 天数据, 需 GSC API 直连.
 2. **矩阵太薄**: queue 8 个 P0 + 4 个 P1 (刚加), 没有 'Tier C + 中频' 队列铺底 → daily/monthly 可选题太少
 3. **GA4 未接入**: 内容质量分 (薄页率/停留时长) 不能自动计算
 

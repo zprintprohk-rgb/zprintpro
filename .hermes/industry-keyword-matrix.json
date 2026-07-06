@@ -540,7 +540,7 @@
     "total_524_target": 524,
     "covered_524_pct": 1.34,
     "last_updated": "2026-07-06",
-    "last_updated_event": "monthly-matrix-audit manual run 2026-07-06 by orchestrator; +4 P1 queue entries added (Q-P1-01..04); P0 coverage 87.5%, P1 coverage 0% (queue just added, awaiting daily cron).",
+    "last_updated_event": "monthly-matrix-audit manual run 2026-07-06 by orchestrator; +4 P1 queue entries added (Q-P1-01..04); P0 coverage 87.5%, P1 coverage 0% (queue just added, awaiting daily cron). [口径校准: 7-day single snapshot → 3-month rolling window]",
     "next_daily_recommendations": [
       {
         "id": "Q-002",
@@ -566,7 +566,7 @@
     },
     {
       "date": "2026-07-06",
-      "trigger": "manual gsc-feedback-loop run",
+      "trigger": "manual gsc-feedback-loop run (3-month window clarified)",
       "by_orchestrator": true,
       "changes": [
         {
@@ -610,8 +610,16 @@
         "strong_orphan": "+2",
         "orphan": "+1",
         "high_potential": "+1",
-        "weak_30d_zero": "n/a (single snapshot)"
+        "weak_30d_zero": "n/a (single 90-day GSC export on 2026-06-17; need multi-export time series for 30/90d trending)",
+        "window_clarified": "3-month rolling / 90-day default (site 上线 2026-05-06, 6/17 export covers ~42 days)"
       }
+    },
+    {
+      "date": "2026-07-06",
+      "trigger": "meta: clarify window口径 to 3-month rolling (per user feedback)",
+      "by_orchestrator": true,
+      "no_value_change": true,
+      "note": "priority_boost deltas unchanged from initial run; only口径 (snapshot → 3-month rolling) clarified in history + log + monthly report"
     }
   ],
   "last_tier_switch_run": {
