@@ -208,6 +208,12 @@ USER.md
 # 2026-07-06: .hermes runtime scripts (don't commit script artifacts)
 .hermes/scripts/
 
+# 2026-07-06: local archive (debug temp files moved here, never commit)
+.archive/
+
+# 2026-07-06: Windows reserved device name accidentally created by old PowerShell redirect
+nul
+
 # 2026-06-28: build/runtime artifacts
 build-log.txt
 build-log-*.txt
