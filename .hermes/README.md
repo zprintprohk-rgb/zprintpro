@@ -55,9 +55,7 @@ Get-ChildItem F:\zprintpro-nextjs\.hermes\logs\ -Filter "$(Get-Date -Format 'yyy
 
 ## 模型使用
 
-- 默认: `deepseek-v4-flash`
-- 攻坚(自动): `deepseek-v4-pro`
-- 疑难(需 user 批准): GLM 5.2 Coding
+- **唯一**: `mavis / MiniMax-M3` (mavis orchestrator 默认,thinking variant)
 
 ---
 
