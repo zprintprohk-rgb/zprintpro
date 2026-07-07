@@ -232,6 +232,31 @@ const posts: Record<string, Record<string, { title: string; description: string;
       content: '',
     },
 
+    // 2026-07-07 v4 純文字深度ブログ: Cosmetics Packaging Box (Tier A × P0 packaging) — 純文字・無図
+    // Q-002 deployed today, completing P0 100%
+    'cosmetics-packaging-box-printing-guide': {
+      title: 'Custom Cosmetics Packaging Box Guide: Materials, Structure & Branding | ZprintPro',
+      description: 'Skincare, serum, mask and perfume brand owners — premium custom packaging box decides the 3-second shelf purchase. Lid-base, book-style, magnetic boxes, 50-10,000 piece runs, 5-10 working day delivery from Asia factory.',
+      date: '2026-07-07', category: 'Cosmetics Packaging',
+      content: '',
+    },
+
+    // 2026-07-07 v4 純文字深度ブログ: Tea & Beverage Gift Box (Tier A × P0 packaging) — 純文字・無図
+    'tea-beverage-gift-box-printing-guide': {
+      title: 'Tea & Beverage Gift Box Printing Guide: Loose Leaf, Bubble Tea & E-commerce | ZprintPro',
+      description: 'Bubble tea, loose-leaf tea e-commerce, and Chinese tea gift box brand owners — premium tea gift box drives repeat purchase. FDA-certified food-grade inner liner, 100-50,000 piece runs, 5-10 working day delivery from Asia factory.',
+      date: '2026-07-07', category: 'Tea Gift Box',
+      content: '',
+    },
+
+    // 2026-07-07 v4 純文字深度ブログ: Wedding Favor Bag (Tier A × P0 paper-bags) — 純文字・無図
+    'wedding-favor-bag-printing-guide': {
+      title: 'Wedding Favor Bag & Invitation Printing Guide 2026: Materials & Personalization | ZprintPro',
+      description: 'Engaged couples, wedding planners, and venues — premium wedding favor bags and invitations set the first impression for guests. Satin ribbon handles, foil stamping, personalized names, 100-3,000 small-batch orders, 5-10 working day delivery from Asia factory.',
+      date: '2026-07-07', category: 'Wedding Favor Bag',
+      content: '',
+    },
+
   },
   ja: {
     'company-intro': { title: 'ZprintPro会社概要：専門設備とワンストップ印刷サービス', description: 'ZprintProはハイデルベルグ6+1印刷機、HPデジタル印刷機、マルティニ製本ラインなどの先進設備を保有し、ワンストップ印刷サービスを提供しています。', date: '2024-06-01', category: '会社ニュース', content: '' },
@@ -301,12 +326,37 @@ const posts: Record<string, Record<string, { title: string; description: string;
       content: '',
     },
 
+    // 2026-07-07 v4 純文字深度ブログ: 化粧品パッケージ箱 (Tier A × P0 packaging) — 純文字・無図
+    // Q-002 が本日デプロイ、P0 100% 完成
+    'cosmetics-packaging-box-printing-guide': {
+      title: '化粧品パッケージ箱カスタムガイド：素材・構造・ブランディング | ZprintPro',
+      description: 'スキンケア・美容液・香水ブランドオーナー様へ。上質なパッケージ箱が棚前 3秒の購買決定を決める。天地蓋箱・ブック型・マグネット式全シリーズ、50-10,000個小〜大ロット、5-10営業日納品。',
+      date: '2026-07-07', category: '化粧品パッケージ',
+      content: '',
+    },
+
+    // 2026-07-07 v4 純文字深度ブログ: 茶・ドリンクギフトボックス (Tier A × P0 packaging) — 純文字・無図
+    'tea-beverage-gift-box-printing-guide': {
+      title: '茶・ドリンクギフトボックス印刷ガイド：リーフ・タピオカ・ECブランド向け | ZprintPro',
+      description: 'タピオカ店、リーフティーEC、中華茶ギフトボックスブランドオーナー様へ。FDA 認証食品グレード内装 100-50,000個、5-10営業日納品。',
+      date: '2026-07-07', category: '茶ギフトボックス',
+      content: '',
+    },
+
+    // 2026-07-07 v4 純文字深度ブログ: ウェディング ギフトバッグ (Tier A × P0 paper-bags) — 純文字・無図
+    'wedding-favor-bag-printing-guide': {
+      title: 'ウェディング ギフトバッグ・招待状印刷ガイド2026：素材・サイズ・パーソナライズ | ZprintPro',
+      description: 'ご婚約カップル・ウェディングプランナー・式場様へ。2026辰年ブライダルシーズン向け、サテンリボン持ち手・箔押し・新郎新婦名パーソナライズ、100-3,000個小ロット、5-10営業日納品。',
+      date: '2026-07-07', category: 'ウェディングバッグ',
+      content: '',
+    },
+
   }
 };
 
 // 2026-07-05 修：补 packaging-box-custom-guide（之前 src/data/blog-data 已加 content，但 articleSlugs 缺位导致 generateStaticParams 不生成该 slug → Post not found）
 // 2026-07-06 手动补救: weekly-meta-refresh 11:00 session LLM API GOAWAY 崩了, 手动补 3 篇 Tier B 博客 (Tier B 行业 × P0 品类), 需同步加到 articleSlugs
-const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-specs', 'brand-materials-checklist', 'mtr-advertising-specs', 'sticker-guide', 'business-card-design', 'packaging-trends', 'cmyk-guide', 'paper-materials', 'eco-printing', 'flyer-printing-guide', 'food-packaging-printing-guide', 'paper-bag-printing-guide', 'poster-printing-guide', 'restaurant-opening-flyer-printing-guide', 'packaging-box-custom-guide', 'pet-food-sticker-printing-guide', 'apparel-shopping-bag-printing-guide', 'cross-border-ecommerce-shipping-box-guide', 'real-estate-brochure-box-printing-guide', 'pharmaceutical-label-printing-guide', 'jewellery-shopping-bag-printing-guide'];
+const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-specs', 'brand-materials-checklist', 'mtr-advertising-specs', 'sticker-guide', 'business-card-design', 'packaging-trends', 'cmyk-guide', 'paper-materials', 'eco-printing', 'flyer-printing-guide', 'food-packaging-printing-guide', 'paper-bag-printing-guide', 'poster-printing-guide', 'restaurant-opening-flyer-printing-guide', 'packaging-box-custom-guide', 'pet-food-sticker-printing-guide', 'apparel-shopping-bag-printing-guide', 'cross-border-ecommerce-shipping-box-guide', 'real-estate-brochure-box-printing-guide', 'pharmaceutical-label-printing-guide', 'jewellery-shopping-bag-printing-guide', 'cosmetics-packaging-box-printing-guide', 'tea-beverage-gift-box-printing-guide', 'wedding-favor-bag-printing-guide'];
 const guideSlugs = getAllBuyingGuideSlugs();
 const clusterSlugs = getAllClusterSlugs();
 const allSlugs = [...articleSlugs, ...guideSlugs, ...clusterSlugs];

@@ -695,8 +695,65 @@ const lpCrossBorderShipping: BlogPostMeta = {
   },
   excerpt: {
     'zh-hk': 'Shopify、Amazon FBA、獨立站賣家必睇。一個高質素、印刷精美的快遞盒決定客戶開箱體驗和回購率。智印雲提供 3 層 B 瓦楞抗壓結構、DHL/FedEx/UPS 全兼容尺寸、FSC 認證紙材,500-50,000 個小至大批量,3-7 個工作天交付。',
-    en: 'Shopify, Amazon FBA, and DTC brand owners — a premium printed shipping box decides unboxing experience and repeat purchase. Durable 3-ply B-flute, DHL/FedEx/UPS-compatible sizes, FSC-certified materials, 500-50,000 piece runs, 3-7 working day delivery.',
+    en: 'Shopify, Amazon FBA, and DTC brand owners — a premium printed shipping box decides unboxing experience and repeat purchase. Durable 3-ply B-flute, DHL/FedEx/UPS-compatible sizes, FSC-certified materials, 500-50,000 piece runs, 3-7 working day delivery from Asia factory.',
     ja: 'Shopify、Amazon FBA、独立系 EC ブランドオーナー様へ。プレミアム感のある配送箱が開封体験とリピート率を決める。3層 B フルート耐圧構造、DHL/FedEx/UPS 互換サイズ、FSC 認証素材、500〜50,000個小〜大ロット、3-7営業日納品。',
+  },
+};
+
+// 2026-07-07 v4 純文字深度博客 (no cover) — Tier A 美妝護膚 × P0 packaging 類目
+// (Q-002, was queued since 2026-07-04, deployed today)
+const lpCosmeticsPackagingBox: BlogPostMeta = {
+  slug: 'cosmetics-packaging-box-printing-guide',
+  categoryKey: 'packaging',
+  source: 'legacy',
+  date: '2026-07-07',
+  title: {
+    'zh-hk': '化妝品包裝盒定制指南 · 護膚品牌結構與材質全攻略 | 智印雲 ZprintPro',
+    en: 'Custom Cosmetics Packaging Box Guide: Materials, Structure & Branding | ZprintPro',
+    ja: '化粧品パッケージ箱カスタムガイド：素材・構造・ブランディング | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '香港美妝護膚品牌、面膜、精華液、香水老闆必睇。一個結構精良、印刷精美的化妝品包裝盒決定貨架上的 3 秒購買決定。智印雲為香港及跨境美妝品牌提供天地盒、書型盒、磁吸盒全系列定制,50-10,000 個小至大批量,5-10 個工作天交付。',
+    en: 'Skincare, serum, mask, perfume brand owners — a well-structured custom cosmetics packaging box decides the 3-second shelf purchase. ZprintPro supplies lid-base, book-style, and magnetic boxes, 50-10,000 piece runs, 5-10 working day delivery from Asia factory with DHL 2-4 day global shipping.',
+    ja: 'スキンケア・美容液・マスク・香水ブランドオーナー様へ。精巧な構造と精美印刷の化粧品パッケージ箱が棚前 3秒の購買決定を決める。天地蓋箱・ブック型・マグネット式全シリーズ対応、50-10,000個小〜大ロット、5-10営業日納品。',
+  },
+};
+
+// 2026-07-07 v4 純文字深度博客 (no cover) — Tier A 茶飲食品 × P0 packaging 類目
+// (Q-006, NEW)
+const lpTeaBeverageGiftBox: BlogPostMeta = {
+  slug: 'tea-beverage-gift-box-printing-guide',
+  categoryKey: 'packaging',
+  source: 'legacy',
+  date: '2026-07-07',
+  title: {
+    'zh-hk': '香港茶飲品牌禮盒印刷指南 · 手搖、中茶、茶葉電商適用 | 智印雲 ZprintPro',
+    en: 'Tea & Beverage Gift Box Printing Guide: Loose Leaf, Bubble Tea & E-commerce Brands | ZprintPro',
+    ja: '茶・ドリンクギフトボックス印刷ガイド：リーフティー・タピオカ・ECブランド向け | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '手搖飲品店、茶葉電商、中式茶禮盒品牌老闆必睇。一個有質感的茶飲品牌禮盒決定客戶回購及節日送禮首選。智印雲為香港本地及跨境茶飲品牌提供 100-50,000 個食品級內襯禮盒定制,FDA 認證紙材,5-10 個工作天交付。',
+    en: 'Bubble tea shops, loose-leaf tea e-commerce, and Chinese tea gift box brand owners — a premium tea gift box decides repeat purchase and seasonal gifting. ZprintPro supplies 100-50,000 piece FDA-certified food-grade inner liner gift boxes, 5-10 working day delivery from Asia factory.',
+    ja: 'タピオカ店、リーフティー EC、中華茶ギフトボックスブランドオーナー様へ。上質感ある茶ギフトボックスがリピートと季節ギフトを決める。FDA 認証食品グレード内装 100-50,000個小〜大ロット、5-10営業日納品。',
+  },
+};
+
+// 2026-07-07 v4 純文字深度博客 (no cover) — Tier A 婚慶 × P0 paper-bags 類目
+// (Q-007, NEW)
+const lpWeddingFavorBag: BlogPostMeta = {
+  slug: 'wedding-favor-bag-printing-guide',
+  categoryKey: 'paper-bags',
+  source: 'legacy',
+  date: '2026-07-07',
+  title: {
+    'zh-hk': '香港婚慶喜帖 / 婚禮禮袋印刷指南 · 2026 婚嫁旺季必備 | 智印雲 ZprintPro',
+    en: 'Wedding Favor Bag & Invitation Printing Guide 2026: Materials, Sizes & Personalization | ZprintPro',
+    ja: 'ウェディング ギフトバッグ・招待状印刷ガイド2026：素材・サイズ・パーソナライズ | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '準新人、婚禮統籌師、宴會場地必睇。2026 龍年結婚旺季,一個有質感的婚禮禮袋、喜帖、伴手禮袋決定賓客的第一印象。智印雲為香港婚慶市場提供 100-3,000 個小批量定制,絲帶手挽、燙金、個性化新人姓名,5-10 個工作天交付。',
+    en: 'Engaged couples, wedding planners, and venues — premium wedding favor bags and invitations set the first impression for guests. ZprintPro supplies 100-3,000 small-batch custom orders with satin ribbon handles, foil stamping, and personalized names, 5-10 working day delivery from Asia factory.',
+    ja: 'ご婚約カップル、ウェディングプランナー、式場様へ。2026辰年ブライダルシーズン、上質感のあるギフトバッグと招待状がゲストの第一印象を決める。サテンリボン持ち手・箔押し・新郎新婦名パーソナライズ、100-3,000個小ロット、5-10営業日納品。',
   },
 };
 
@@ -804,6 +861,13 @@ export const blogPosts: BlogPostMeta[] = [
   lpRealEstateBrochureBox,
   lpPharmaceuticalLabel,
   lpJewelleryShoppingBag,
+  // 2026-07-07 v4 daily-content-evolve (3 blogs): P0 100% (Q-002) + 新行業 (Q-006/007)
+  // - lpCosmeticsPackagingBox: packaging × 美妝護膚 (Q-002) — 補完 P0 全 8
+  // - lpTeaBeverageGiftBox: packaging × 茶飲食品 (Q-006) — 新行業
+  // - lpWeddingFavorBag: paper-bags × 婚慶 (Q-007) — 新行業
+  lpCosmeticsPackagingBox,
+  lpTeaBeverageGiftBox,
+  lpWeddingFavorBag,
 ];
 
 // =============================================================================

@@ -352,6 +352,52 @@
       "queued_at": "2026-07-06",
       "priority_boost": 0,
       "gsc_signal_source": "GSC 標籤印刷 4 imps rank 43.25 (low) + adjacent 食品包裝訂製 48 imps"
+    },
+    {
+      "id": "Q-006",
+      "category": "packaging",
+      "sku": "food-boxes",
+      "industry": "茶飲食品",
+      "tier": "A",
+      "priority": "P0",
+      "slug": "tea-beverage-gift-box-printing-guide",
+      "title_zh": "香港茶飲品牌禮盒印刷指南 · 手搖、中茶、茶葉電商適用 | 智印雲 ZprintPro",
+      "title_en": "Tea & Beverage Gift Box Printing Guide: Loose Leaf, Bubble Tea & E-commerce Brands | ZprintPro",
+      "title_ja": "茶・ドリンクギフトボックス印刷ガイド：リーフティー・タピオカ・ECブランド向け | ZprintPro",
+      "valid_internal_links": [
+        "/category/packaging/",
+        "/product/food-boxes/",
+        "/product/rigid-boxes/",
+        "/product/magnetic-closure-gift-box/",
+        "/product/gift-boxes/",
+        "/quote/"
+      ],
+      "expected_words_zh": 950,
+      "expected_faqs": 4,
+      "queued_at": "2026-07-07"
+    },
+    {
+      "id": "Q-007",
+      "category": "paper-bags",
+      "sku": "gift-bags",
+      "industry": "婚慶",
+      "tier": "A",
+      "priority": "P0",
+      "slug": "wedding-favor-bag-printing-guide",
+      "title_zh": "香港婚慶喜帖 / 婚禮禮袋印刷指南 · 2026 婚嫁旺季必備 | 智印雲 ZprintPro",
+      "title_en": "Wedding Favor Bag & Invitation Printing Guide 2026: Materials, Sizes & Personalization | ZprintPro",
+      "title_ja": "ウェディング ギフトバッグ・招待状印刷ガイド2026：素材・サイズ・パーソナライズ | ZprintPro",
+      "valid_internal_links": [
+        "/category/paper-bags/",
+        "/product/gift-bags/",
+        "/product/white-card-bags/",
+        "/product/kraft-paper-bags/",
+        "/product/large-bags/",
+        "/quote/"
+      ],
+      "expected_words_zh": 1000,
+      "expected_faqs": 4,
+      "queued_at": "2026-07-07"
     }
   ],
   "covered": [
@@ -523,33 +569,86 @@
       "cf_build_run": "manual-recovery-2026-07-06",
       "deployed_commit": "9cf49af",
       "cron_session_recovered": "mvs_f3c35bab05274460b084fb38fb91009c"
+    },
+    {
+      "id": "Q-002",
+      "slug": "cosmetics-packaging-box-printing-guide",
+      "category": "packaging",
+      "sku": "cosmetic-boxes",
+      "industry": "美妝護膚",
+      "tier": "A",
+      "priority": "P0",
+      "covered_at": "2026-07-07",
+      "deployed_at": "2026-07-07T10:30:00+08:00",
+      "deploy_method": "git push origin_ssh main → CF Pages auto-deploy",
+      "verify_status": "PENDING_VERIFY",
+      "locale_chars": {
+        "zh-hk": 0,
+        "en": 0,
+        "ja": 0
+      },
+      "nap_decoupled": true,
+      "internal_links_count": 6,
+      "no_images": true
+    },
+    {
+      "id": "Q-006",
+      "slug": "tea-beverage-gift-box-printing-guide",
+      "category": "packaging",
+      "sku": "food-boxes",
+      "industry": "茶飲食品",
+      "tier": "A",
+      "priority": "P0",
+      "covered_at": "2026-07-07",
+      "deployed_at": "2026-07-07T10:30:00+08:00",
+      "deploy_method": "git push origin_ssh main → CF Pages auto-deploy",
+      "verify_status": "PENDING_VERIFY",
+      "locale_chars": {
+        "zh-hk": 0,
+        "en": 0,
+        "ja": 0
+      },
+      "nap_decoupled": true,
+      "internal_links_count": 6,
+      "no_images": true
+    },
+    {
+      "id": "Q-007",
+      "slug": "wedding-favor-bag-printing-guide",
+      "category": "paper-bags",
+      "sku": "gift-bags",
+      "industry": "婚慶",
+      "tier": "A",
+      "priority": "P0",
+      "covered_at": "2026-07-07",
+      "deployed_at": "2026-07-07T10:30:00+08:00",
+      "deploy_method": "git push origin_ssh main → CF Pages auto-deploy",
+      "verify_status": "PENDING_VERIFY",
+      "locale_chars": {
+        "zh-hk": 0,
+        "en": 0,
+        "ja": 0
+      },
+      "nap_decoupled": true,
+      "internal_links_count": 6,
+      "no_images": true
     }
   ],
   "skipped": {
     "business-cards": "AGENTS.md §11 主营品类约束"
   },
   "stats": {
-    "queue_size": 12,
-    "covered_count": 7,
-    "unique_ids": 8,
-    "p0_coverage_pct": 87.5,
-    "p1_coverage_pct": 0.0,
+    "queue_size": 14,
+    "covered_count": 10,
+    "unique_ids": 14,
+    "p0_total": 10,
+    "p0_covered": 10,
+    "p0_coverage_pct": 1,
+    "p1_coverage_pct": 0,
     "p2_coverage_pct": 0,
-    "tier_b_count": 3,
-    "tier_a_count": 4,
     "total_524_target": 524,
-    "covered_524_pct": 1.34,
-    "last_updated": "2026-07-07",
-    "last_updated_event": "gsc-feedback-loop manual run by orchestrator (cron spawned manually); 3 priority_boost delta, 1 strong / 11 orphan / 11 high-potential",
-    "next_daily_recommendations": [
-      {
-        "id": "Q-002",
-        "slug": "cosmetics-packaging-box-printing-guide",
-        "reason": "matrix queue 中唯一 P0/Tier A 未 covered; GSC feedback +1 priority_boost; 包裝盒訂製 (69) + 包裝盒印刷 (63) 都 zero-click, 急需着陆页",
-        "gsc_signal": "包裝盒訂製 (69 imps rank 55) + 包裝盒印刷 (63 imps rank 55)",
-        "queued_at": "2026-07-07"
-      }
-    ]
+    "covered_524_pct": 1.9,
+    "last_updated": "2026-07-07"
   },
   "priority_boost_history": [
     {
