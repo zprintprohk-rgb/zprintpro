@@ -579,17 +579,20 @@
       "tier": "A",
       "priority": "P0",
       "covered_at": "2026-07-07",
-      "deployed_at": "2026-07-07T10:30:00+08:00",
+      "deployed_at": "2026-07-07T10:36:00+08:00",
       "deploy_method": "git push origin_ssh main → CF Pages auto-deploy",
-      "verify_status": "PENDING_VERIFY",
+      "verify_status": "PASS",
       "locale_chars": {
-        "zh-hk": 0,
-        "en": 0,
-        "ja": 0
+        "zh-hk": 3500,
+        "en": 4300,
+        "ja": 3500
       },
       "nap_decoupled": true,
       "internal_links_count": 6,
-      "no_images": true
+      "no_images": true,
+      "verify_steps": "7/7 (http200, schema x3, faq_4, no_img, no_shenzhen, kw)",
+      "cf_build_run": "85524561518",
+      "deployed_commit": "0e07200"
     },
     {
       "id": "Q-006",
@@ -600,17 +603,20 @@
       "tier": "A",
       "priority": "P0",
       "covered_at": "2026-07-07",
-      "deployed_at": "2026-07-07T10:30:00+08:00",
+      "deployed_at": "2026-07-07T10:36:00+08:00",
       "deploy_method": "git push origin_ssh main → CF Pages auto-deploy",
-      "verify_status": "PENDING_VERIFY",
+      "verify_status": "PASS",
       "locale_chars": {
-        "zh-hk": 0,
-        "en": 0,
-        "ja": 0
+        "zh-hk": 3500,
+        "en": 4500,
+        "ja": 3800
       },
       "nap_decoupled": true,
       "internal_links_count": 6,
-      "no_images": true
+      "no_images": true,
+      "verify_steps": "7/7",
+      "cf_build_run": "85524561518",
+      "deployed_commit": "0e07200"
     },
     {
       "id": "Q-007",
@@ -621,17 +627,20 @@
       "tier": "A",
       "priority": "P0",
       "covered_at": "2026-07-07",
-      "deployed_at": "2026-07-07T10:30:00+08:00",
+      "deployed_at": "2026-07-07T10:36:00+08:00",
       "deploy_method": "git push origin_ssh main → CF Pages auto-deploy",
-      "verify_status": "PENDING_VERIFY",
+      "verify_status": "PASS",
       "locale_chars": {
-        "zh-hk": 0,
-        "en": 0,
-        "ja": 0
+        "zh-hk": 3700,
+        "en": 4800,
+        "ja": 4000
       },
       "nap_decoupled": true,
       "internal_links_count": 6,
-      "no_images": true
+      "no_images": true,
+      "verify_steps": "7/7",
+      "cf_build_run": "85524561518",
+      "deployed_commit": "0e07200"
     }
   ],
   "skipped": {
