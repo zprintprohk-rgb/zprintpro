@@ -17,6 +17,7 @@ import {
   generateCategoryMetadata,
   generateBreadcrumbJsonLd,
   generateBusinessJsonLd,
+  CATEGORY_INDUSTRIES,
   Locale
 } from '@/lib/seo';
 import {
@@ -392,6 +393,9 @@ export default function CategoryPage({
         {/* Pillar Content — SEO支柱内容区 */}
         <CategoryPillarContent locale={locale} categorySlug={slug} />
 
+        {/* 服务行业 (2026-07-08 Layer A SEO 升级) — 类目页 hub, cross-link 到已铺矩阵博客 */}
+        <CategoryIndustries locale={locale} categorySlug={slug} />
+
         {/* 地區化內容區域 — CTA + 信任信號 */}
         <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 pb-16 pt-12">
           <div className="bg-gradient-to-b from-white to-blue-50/50 rounded-3xl border border-blue-100 p-8 md:p-12 space-y-8">
@@ -487,6 +491,193 @@ function BuyingGuideCta({ locale, categorySlug }: { locale: Locale; categorySlug
           </span>
         </div>
       </a>
+    </div>
+  );
+}
+
+// ============================================================================
+// 服务行业 / Industries We Serve 区块 (2026-07-08 Layer A SEO 升级)
+// 设计目标:
+// 1) 类目页 = hub, 列出该类目适配的 Tier A 行业 (从 CATEGORY_INDUSTRIES 读)
+// 2) 已铺矩阵博客 = spoke, 交叉链接到这里建立 hub-and-spoke
+// 3) 还没铺的类目 → 显示「更多行業內容將陸續更新」placeholder, 不破坏 layout
+// 4) locale-aware, zh-hk/en/ja 各一套 label
+// ============================================================================
+
+// 已覆盖 (matrix covered) 的 industry_blog_slug → 各 locale 一致 (slug 是跨 locale 通用)
+// 来自 .hermes/industry-keyword-matrix.json covered[] 字段 (GSC verify 已 7/7 PASS)
+const categoryCoveredBlogSlugsMap: Record<string, { slug: string; industry: string; tier: string }[]> = {
+  'flyers': [
+    { slug: 'restaurant-opening-flyer-printing-guide', industry: '餐飲外賣', tier: 'A' },
+  ],
+  'packaging': [
+    { slug: 'cosmetics-packaging-box-printing-guide', industry: '美妝護膚', tier: 'A' },
+    { slug: 'cross-border-ecommerce-shipping-box-guide', industry: '跨境電商', tier: 'A' },
+    { slug: 'real-estate-brochure-box-printing-guide', industry: '房地產', tier: 'B' },
+    { slug: 'tea-beverage-gift-box-printing-guide', industry: '茶飲食品', tier: 'A' },
+  ],
+  'stickers': [
+    { slug: 'pet-food-sticker-printing-guide', industry: '寵物食品', tier: 'A' },
+    { slug: 'pharmaceutical-label-printing-guide', industry: '醫藥保健', tier: 'B' },
+  ],
+  'paper-bags': [
+    { slug: 'apparel-shopping-bag-printing-guide', industry: '服裝', tier: 'A' },
+    { slug: 'jewellery-shopping-bag-printing-guide', industry: '珠寶鐘錶', tier: 'B' },
+    { slug: 'wedding-favor-bag-printing-guide', industry: '婚慶', tier: 'A' },
+  ],
+  'posters': [
+    { slug: 'retail-shop-poster-printing-guide', industry: '零售精品', tier: 'A' },
+  ],
+  'menus': [
+    { slug: 'restaurant-menu-printing-guide', industry: '餐飲外賣', tier: 'A' },
+  ],
+  'red-packets': [
+    { slug: 'wedding-red-packet-printing-guide', industry: '婚慶', tier: 'A' },
+  ],
+  // categories without covered blogs yet (cron 会持续覆盖)
+  'calendars': [],
+  'banners': [],
+  'books': [],
+  'envelopes': [],
+  'educational': [],  // graduation-yearbook 博客待 cron 生产
+  'business-cards': [],  // §11 禁区, 不生产博客
+  'japan-doujin': [],
+};
+
+// Industry 名称 → locale-aware 翻译 (用于 cross-link 卡片显示)
+// 数据源: matrix covered[] industry 字段 + CATEGORY_INDUSTRIES 名
+const industryI18nMap: Record<string, { 'zh-hk': string; en: string; ja: string }> = {
+  '餐飲外賣': { 'zh-hk': '餐飲外賣', en: 'Restaurant & F&B', ja: '飲食店' },
+  '美妝護膚': { 'zh-hk': '美妝護膚', en: 'Beauty & Skincare', ja: '化粧品' },
+  '寵物': { 'zh-hk': '寵物食品', en: 'Pet Food Brands', ja: 'ペットフード' },
+  '服裝': { 'zh-hk': '服飾品牌', en: 'Fashion & Apparel', ja: 'アパレル' },
+  '跨境電商': { 'zh-hk': '跨境電商', en: 'Cross-Border E-commerce', ja: '越境EC' },
+  '房地產': { 'zh-hk': '房地產', en: 'Real Estate', ja: '不動産' },
+  '醫藥保健': { 'zh-hk': '醫藥保健', en: 'Pharmaceutical', ja: '医薬品' },
+  '茶飲食品': { 'zh-hk': '茶飲食品', en: 'Tea & Beverage', ja: '茶・ドリンク' },
+  '婚慶': { 'zh-hk': '婚慶', en: 'Wedding', ja: 'ウェディング' },
+  '零售精品': { 'zh-hk': '零售精品', en: 'Retail & Lifestyle', ja: '小売' },
+  '珠寶鐘錶': { 'zh-hk': '珠寶鐘錶', en: 'Jewellery & Watches', ja: '宝飾・腕時計' },
+  '教育培訓': { 'zh-hk': '教育培訓', en: 'Education', ja: '教育' },
+  '補習社': { 'zh-hk': '補習社', en: 'Tutoring Centers', ja: '塾・予備校' },
+  '餐廳開業': { 'zh-hk': '餐廳開業', en: 'Restaurant Opening', ja: '飲食店開業' },
+  '同人IP': { 'zh-hk': '同人 IP 周邊', en: 'Doujinshi & Anime Goods', ja: '同人・アニメグッズ' },
+};
+
+// Tier A/B 视觉标识 - 边色区分 Tier B (高价值但不是主战场)
+const tierColor: Record<string, string> = {
+  A: 'border-blue-200 bg-blue-50/40',
+  B: 'border-amber-200 bg-amber-50/40',
+};
+
+function CategoryIndustries({ locale, categorySlug }: { locale: Locale; categorySlug: string }) {
+  const industries = CATEGORY_INDUSTRIES[categorySlug]?.[locale] || [];
+  const blogs = categoryCoveredBlogSlugsMap[categorySlug] || [];
+
+  if (industries.length === 0 && blogs.length === 0) {
+    return null; // 没数据就别占位 (例如 business-cards §11 禁区)
+  }
+
+  const localePrefix = `/${locale}`;
+  const t = {
+    'zh-hk': {
+      title: '服務行業與應用場景',
+      subtitle: '智印雲針對每個印刷類目, 深度覆蓋 Tier A 高復購行業 + Tier B 中頻行業',
+      tierALabel: '主力行業',
+      tierBLabel: '次鋪行業',
+      readMore: '閱讀完整指南 →',
+      placeholder: '更多行業內容將陸續更新, 敬請期待。',
+    },
+    'en': {
+      title: 'Industries We Serve',
+      subtitle: 'For each printing category, ZprintPro deeply covers Tier A high-repeat industries plus Tier B mid-frequency industries.',
+      tierALabel: 'Primary Industry',
+      tierBLabel: 'Secondary Industry',
+      readMore: 'Read Full Guide →',
+      placeholder: 'More industry guides are coming soon.',
+    },
+    'ja': {
+      title: '取り扱い業界',
+      subtitle: '各印刷カテゴリについて、ZprintPro は Tier A 高頻度業界と Tier B 中頻度業界を深くカバーしています。',
+      tierALabel: '主力業界',
+      tierBLabel: 'サブ業界',
+      readMore: 'ガイドを読む →',
+      placeholder: '今後さらに業界ガイドを追加予定です。',
+    },
+  }[locale];
+
+  return (
+    <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <div className="bg-white rounded-2xl border border-gray-200 p-6 md:p-8 shadow-sm">
+        <h3 className="text-xl md:text-2xl font-bold text-[#333333] mb-2">
+          {t.title}
+        </h3>
+        <p className="text-gray-500 text-sm md:text-base mb-6">{t.subtitle}</p>
+
+        {/* Industry tags - 静态列表 (从 CATEGORY_INDUSTRIES 读) */}
+        {industries.length > 0 && (
+          <div className="flex flex-wrap gap-2 mb-6">
+            {industries.slice(0, 8).map((industry, idx) => {
+              const nativeIndustry = industry;
+              const tier = idx < 5 ? 'A' : 'B'; // 前 5 个 = Tier A, 后 3 = Tier B
+              return (
+                <span
+                  key={`${industry}-${idx}`}
+                  className={`inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-xs md:text-sm font-medium border ${
+                    tier === 'A'
+                      ? 'border-blue-200 bg-blue-50 text-blue-900'
+                      : 'border-amber-200 bg-amber-50 text-amber-900'
+                  }`}
+                >
+                  <span className="font-semibold">{tier === 'A' ? '●' : '◇'}</span>
+                  {industry}
+                </span>
+              );
+            })}
+          </div>
+        )}
+
+        {/* Industry blog cards - 已铺矩阵博客 cross-link (hub-and-spoke) */}
+        {blogs.length > 0 ? (
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {blogs.map((blog) => {
+              const industryLocalized = industryI18nMap[blog.industry]?.[locale] || blog.industry;
+              return (
+                <a
+                  key={blog.slug}
+                  href={`${localePrefix}/blog/${blog.slug}/`}
+                  className={`block rounded-xl border p-4 hover:shadow-md transition-shadow ${tierColor[blog.tier] || 'border-gray-200 bg-white'}`}
+                >
+                  <div className="flex items-start justify-between mb-2">
+                    <span className={`inline-flex items-center px-2 py-0.5 rounded text-xs font-medium ${
+                      blog.tier === 'A'
+                        ? 'bg-blue-100 text-blue-800'
+                        : 'bg-amber-100 text-amber-800'
+                    }`}>
+                      {blog.tier === 'A' ? `Tier ${t.tierALabel}` : `Tier ${t.tierBLabel}`}
+                    </span>
+                  </div>
+                  <h4 className="font-semibold text-gray-900 mb-1 text-sm md:text-base">
+                    {industryLocalized}
+                  </h4>
+                  <p className="text-xs text-gray-500 mb-3">
+                    {locale === 'zh-hk'
+                      ? `智印雲針對 ${industryLocalized} 場景的印刷指南`
+                      : locale === 'en'
+                      ? `ZprintPro printing guide for ${industryLocalized}`
+                      : `${industryLocalized} 向け ZprintPro 印刷ガイド`}
+                  </p>
+                  <span className="text-xs text-[#2873F5] font-medium">
+                    {t.readMore}
+                  </span>
+                </a>
+              );
+            })}
+          </div>
+        ) : (
+          <p className="text-sm text-gray-400 italic">{t.placeholder}</p>
+        )}
+      </div>
     </div>
   );
 }

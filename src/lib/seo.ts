@@ -522,24 +522,112 @@ function getDefaultCategorySeo(categoryName: string, categoryNameEn: string, cat
   };
 }
 
+// ============================================================================
+// Layer A 服務行業列表 (2026-07-08 落地)
+// 给 13 个 categorySeoData 入口分别注入 5 个 Tier A 行业, 让类目页 TDK + 服务行业
+// 区块都建立「类目 hub」叙事。13 类目 × 3 locale = 39 行业映射表。
+// 规则:
+// - 不写"深圳"/"Shenzhen" (NAP 脱钩, AGENTS.md §13.10)
+// - 走 industry_keyword_matrix.json 的 industry_tier_a + 部分 tier_b 长尾
+// - 不写 business-cards (AGENTS.md §11 主营品类约束)
+// - Tier 排序 = 复购频次: 餐飲 > 零售 > 美妝 > 母婴 > 教育 > ...
+// ============================================================================
+
+export const CATEGORY_INDUSTRIES: Record<string, {
+  'zh-hk': string[];
+  en: string[];
+  ja: string[];
+}> = {
+  'stickers': {
+    'zh-hk': ['寵物食品', '藥品標籤', '美妝護膚', '母嬰用品', '跨境電商'],
+    en: ['Pet food brands', 'Pharmaceutical labels', 'Beauty & skincare', 'Mother & baby products', 'Cross-border e-commerce'],
+    ja: ['ペットフード', '医薬品ラベル', '化粧品・スキンケア', 'ベビー用品', '越境EC'],
+  },
+  'flyers': {
+    'zh-hk': ['餐廳開業', '房地產新盤', '補習社宣傳', '活動展覽', '婚慶喜帖'],
+    en: ['Restaurant openings', 'Real estate launches', 'Tutoring centers', 'Events & exhibitions', 'Wedding invitations'],
+    ja: ['飲食店開業', '不動産プロモ', '塾・予備校', 'イベント・展示会', '結婚式招待'],
+  },
+  'packaging': {
+    'zh-hk': ['美妝護膚品牌', '跨境電商品牌', '茶飲食品', '房地產樓書', '婚慶禮盒'],
+    en: ['Beauty & skincare brands', 'Cross-border e-commerce', 'Tea & beverage brands', 'Real estate brochures', 'Wedding & corporate gifts'],
+    ja: ['化粧品ブランド', '越境ECブランド', '茶・ドリンク', '不動産パンフレット', '結婚式・企業ギフト'],
+  },
+  'paper-bags': {
+    'zh-hk': ['服飾品牌', '珠寶鐘錶', '婚慶禮品', '美妝精品', '零售餐飲'],
+    en: ['Fashion & apparel brands', 'Jewellery & watches', 'Wedding gifts', 'Beauty & cosmetics', 'Retail & F&B'],
+    ja: ['アパレルブランド', '宝飾・腕時計', 'ウェディングギフト', '化粧品・コスメ', '小売・飲食'],
+  },
+  'posters': {
+    'zh-hk': ['零售店面', '展覽活動', '補習社宣傳', '房地產海報', '餐廳推廣'],
+    en: ['Retail storefronts', 'Exhibitions & events', 'Tutoring & education', 'Real estate promotion', 'Restaurant marketing'],
+    ja: ['小売店', '展示会・イベント', '塾・教育', '不動産プロモ', '飲食店マーケティング'],
+  },
+  'calendars': {
+    'zh-hk': ['企業禮品', '學校定制', '房地產送禮', '汽車汽配', '金融客戶'],
+    en: ['Corporate gifts', 'School printing', 'Real estate gifts', 'Auto & parts', 'Financial clients'],
+    ja: ['企業ギフト', '学校印刷', '不動産ギフト', '自動車・部品', '金融クライアント'],
+  },
+  'menus': {
+    'zh-hk': ['茶餐廳', '西餐廳', '酒吧', '咖啡店', '外賣平台'],
+    en: ['Cha chaan teng & cafes', 'Western restaurants', 'Bars & pubs', 'Coffee shops', 'Food delivery platforms'],
+    ja: ['香港式茶餐廳', '西洋料理', 'バー・パブ', 'カフェ', 'デリバリー'],
+  },
+  'red-packets': {
+    'zh-hk': ['婚慶喜宴', '企業年會', '卡通 IP 授權', '茶飲品牌', '銀行客戶'],
+    en: ['Wedding banquets', 'Corporate events', 'Cartoon IP licensing', 'Tea & beverage brands', 'Banking clients'],
+    ja: ['結婚式', '企業イベント', 'キャラクターIP', '茶・ドリンク', '銀行クライアント'],
+  },
+  'banners': {
+    'zh-hk': ['展覽活動', '房地產戶外', '汽車展廳', '商場促銷', '學校開放日'],
+    en: ['Trade shows', 'Outdoor real estate', 'Auto showrooms', 'Mall promotions', 'School open days'],
+    ja: ['展示会', '屋外不動産', '自動車ショールーム', 'モール・販促', '学校説明会'],
+  },
+  'books': {
+    'zh-hk': ['補習社教材', '同人誌創作', '企業畫冊', '兒童繪本', '精裝紀念冊'],
+    en: ['Tutoring textbooks', 'Doujinshi creators', 'Corporate brochures', 'Children picture books', 'Premium hardcover yearbooks'],
+    ja: ['塾・予備校教材', '同人誌', '企業パンフレット', '絵本', '上製本記念アルバム'],
+  },
+  'envelopes': {
+    'zh-hk': ['企業商務', '金融信封', '補習社通告', '物流面單', '會員活動'],
+    en: ['Corporate business', 'Financial mailing', 'School notices', 'Logistics & shipping labels', 'Member events'],
+    ja: ['企業', '金融', '塾・学校', '物流', '会員イベント'],
+  },
+  'educational': {
+    'zh-hk': ['中學大學畢業紀念冊', '補習社皇牌教材', '學校批量定制', '家長會活動', '獎狀證書'],
+    en: ['Graduation yearbooks (secondary & university)', 'Tutoring textbook series', 'School bulk printing', 'Parent-teacher events', 'Award certificates'],
+    ja: ['卒業記念アルバム（中高大）', '塾・予備校教材', '学校一括印刷', '保護者会イベント', '賞状・証明書'],
+  },
+  'business-cards': {
+    'zh-hk': ['商務人士', '房地產代理', '專業服務業'],
+    en: ['Business professionals', 'Real estate agents', 'Professional services'],
+    ja: ['ビジネスパーソン', '不動産エージェント', 'プロフェッショナル'],
+  },
+  'japan-doujin': {
+    'zh-hk': ['同人誌創作', '動漫周邊', 'VTuber 推し活', 'Comiket 委託', '原創 IP 周邊'],
+    en: ['Doujinshi creators', 'Anime merchandise', 'VTuber fan goods', 'Comiket commissions', 'Original IP merch'],
+    ja: ['同人誌創作', 'アニメグッズ', 'VTuber 推し活', 'コミケ委託', 'オリジナルIPグッズ'],
+  },
+};
+
 export function generateCategoryMetadata(locale: Locale, categorySlug: string = '', categoryName: string = '', categoryNameEn: string = '', categoryNameJa: string = ''): Metadata {
   // 2026-06-20 fix B2: 直接使用传入的真实 slug（避免 nameEn 反向派生在含特殊字符时指向 404）
   const slug = categorySlug;
   const seoData = categorySeoData[slug] || getDefaultCategorySeo(categoryName, categoryNameEn, categoryNameJa);
-  
+
   const names = { 'zh-hk': categoryName, en: categoryNameEn, ja: categoryNameJa };
   const rawName = names[locale];
   const name = rawName && !rawName.endsWith('印刷') && locale === 'zh-hk' ? `${rawName}印刷` : rawName;
-  const description = seoData.descriptions[locale];
+  const baseDescription = seoData.descriptions[locale];
   const keywords = seoData.keywords[locale];
   const lang = locale === 'zh-hk' ? 'zh-HK' : locale;
-  
+
   // 分类标题按市场区分
   // 2026-06-10 Phase B 修复 P0-2：en/ja 分支末尾使用纯英文品牌 'ZprintPro'（无中文），
   // 避免 layout 模板的 '| ZprintPro' 再次叠加后形成 "...| 智印雲 ZprintPro | ZprintPro"。
   // 2026-06-10：layout template 改为 '%s'（见 layout.tsx），此处由子页统一控制品牌后缀。
   const brandSuffix = locale === 'zh-hk' ? siteConfig.name : 'ZprintPro';
-  
+
   // 优先使用自定义 title，没有则用默认格式
   const customTitle = seoData.titles?.[locale];
   const categoryTitle = customTitle || (locale === 'zh-hk'
@@ -547,6 +635,18 @@ export function generateCategoryMetadata(locale: Locale, categorySlug: string = 
     : locale === 'en'
     ? `${name} | Global Shipping | ${brandSuffix}`
     : `${name} | 配送対応 | ${brandSuffix}`);
+
+  // 2026-07-08 Layer A: 描述末尾追加行业 hook, 让类目页主题集中度 ↑
+  // 仅在 CATEGORY_INDUSTRIES 注册的类目才注入, 其他走 baseDescription 不变
+  const industriesForCategory = CATEGORY_INDUSTRIES[slug]?.[locale];
+  const industriesSuffix = industriesForCategory && industriesForCategory.length > 0
+    ? (locale === 'zh-hk'
+        ? ` 适配行业: ${industriesForCategory.slice(0, 5).join('、')}。`
+        : locale === 'en'
+        ? ` Industries: ${industriesForCategory.slice(0, 5).join(', ')}.`
+        : ` 業界: ${industriesForCategory.slice(0, 5).join('・')}。`)
+    : '';
+  const description = baseDescription + industriesSuffix;
 
   return {
     title: categoryTitle,

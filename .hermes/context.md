@@ -154,9 +154,14 @@ P2 长尾类目 (按需): banners / envelopes / japan-doujin
 禁区: business-cards (AGENTS.md §11)
 ```
 
-## 7. 自进化调度算法 (写进 SKILL.md §3.8)
+## 7. 自进化调度算法
+
+> **单源已迁移到 SKILL.md (§3.8)** — `C:\Users\Administrator\.mavis\agents\mavis\skills\zprintpro-seo-evolve\SKILL.md`
+>
+> 创建时间: 2026-07-08, 落实 user "context.md §7 写进 SKILL.md §3.8" 要求。context.md §7 留作摘要引用, 完整算法以 SKILL.md §3.8 为准 (cron prompt 加载 SKILL.md 后会直接读 §3.8)。
 
 ```python
+# 完整版见 SKILL.md §3.8; 此处仅供 context.md 内部 reference
 def pick_next_blog_topic(matrix, gsc_signals, last_3_days_written):
     # Rule 1: P0 优先,P0 铺到 80% 才解锁 P1
     if matrix.p0_coverage < 0.8:

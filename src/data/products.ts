@@ -16929,6 +16929,85 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
       ],
     },
     },
+  // ===== 校園教育印刷擴展 (ED-005 graduation-yearbook, 2026-07-08 Layer A SKU 拓點) =====
+  {
+    id: 'ED-005',
+    sku_code: 'ED-005',
+    slug: 'graduation-yearbook',
+    category: 'educational',
+    category_slug: 'educational',
+    name: '畢業紀念冊', nameEn: 'Graduation Yearbook', nameJa: '卒業記念アルバム', title_zh: '畢業紀念冊',
+    description: '中學大學畢業紀念冊定制，騎馬釘 / 膠裝 / 精裝三種裝訂, 支持個人班級照片、師長題詞、學校 logo 全頁。香港本地、深圳亞洲工廠生產, 補習社、國際學校、家長會常用。', descriptionEn: 'Custom graduation yearbooks — saddle stitch / perfect bound / hardcover, supporting class photos, faculty messages, school logos. Asia factory direct, DHL Express global 2-4 day delivery.', descriptionJa: '卒業記念アルバムカスタム印刷 — 中綴じ / 無線綴じ / 上製本, クラス写真・先生メッセージ・学校ロゴ全面対応。中国深セ自社工場・DHL 国際配送 2-4 日。', description_zh: '中學大學畢業紀念冊定制, 騎馬釘 / 膠裝 / 精裝三種裝訂, 支持班級照片、師長題詞、學校 logo 全頁。',
+    longDescription: `<h3>三種裝訂工藝對比</h3>
+<p>畢業紀念冊常用 3 種裝訂方式, 頁數與預算決定最佳方案:</p>
+<table>
+  <thead><tr><th>裝訂</th><th>頁數範圍</th><th>特性</th><th>適用場景</th></tr></thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>騎馬釘</td><td>32-80 頁</td><td>對摺後鐵絲訂, 成本最低, 書脊平展可跨頁照片</td><td>小學畢業紀念冊、補習社年度相簿</td></tr>
+    <tr class="border-b border-gray-200"><td>無線膠裝 (PUR)</td><td>80-200 頁</td><td>PUR 強力膠, 書脊可印刷, 翻頁舒適</td><td>中學畢業紀念冊、大學系會紀念冊</td></tr>
+    <tr><td>精裝 (Hardcover)</td><td>80-400 頁</td><td>2.5mm 灰板裱特種紙, 燙金 / 燙銀封面, 收藏級</td><td>大學畢業紀念冊、學校年度紀念冊</td></tr>
+  </tbody>
+</table>
+
+<h3>紙張材質與色彩選擇</h3>
+<p>內頁常用 200-250g 銅版紙; 想要護眼或復古感可選 100g 米黃書紙; 畢業紀念冊封面建議 250-300g 銅版紙裱 2.5mm 灰板。四色柯式印刷 + 局部 UV 上光, 個別頁面可加燙金燙銀突出校徽、畢業年份、班級名。</p>
+
+<h3>常見特殊工藝</h3>
+<ul>
+  <li>封面燙金 / 燙銀 / 燙玫瑰金 (校徽、畢業年份、班名)</li>
+  <li>局部 UV 上光 (班徽、紀念文字、班級合照)</li>
+  <li>封面擊凸 / 壓紋 (校訓、紀念圖案)</li>
+  <li>書口刷金邊 (精裝版本升級, 提升收藏價值)</li>
+  <li>封套書衣 (精裝版可加腰封 / 護封, 保護收藏)</li>
+</ul>
+
+<h3>排版流程 (從照片到成品)</h3>
+<ol>
+  <li>收集班級 / 系會合照、個人照、活動照 (300dpi 為佳)</li>
+  <li>提供題詞 (師長、家長、班主任)、校訓、班名、畢業年份</li>
+  <li>排版設計 (智印雲免費協助首頁及章節頁模板)</li>
+  <li>數碼打樣 → 校對確認 → 上機印刷</li>
+  <li>騎馬釘 / 膠裝 / 精裝 → 品質檢驗 → DHL 全球配送</li>
+</ol>
+
+<h3>已服務的本地客戶</h3>
+<p>智印雲 (ZprintPro) 已為多所香港中學、台灣大專院校、澳門國際學校、補習社年度相簿提供印刷服務。50 本起印, 深圳自設廠房直送, DHL Express / FedEx 國際配送。</p>
+
+<h3>常見問題 (FAQ)</h3>
+<details class="my-2"><summary><strong>智印雲 ZprintPro 畢業紀念冊的最低起印量是多少？</strong></summary><p>畢業紀念冊 50 本起印, 騎馬釘 / 膠裝 100 本起印享階段折扣。每頁 1-2 張照片為最佳密度, 200 頁以內建議用膠裝, 200 頁以上建議精裝或分冊。</p></details>
+<details class="my-2"><summary><strong>畢業紀念冊印刷交貨期需要多久？</strong></summary><p>標準訂單 7-10 個工作天完成, 含設計 + 打樣 + 印刷 + 裝訂。特急可壓縮到 5 個工作天 (額外加價 30%)。國際訂單透過 DHL Express 全球 2-4 個工作天配送。</p></details>
+<details class="my-2"><summary><strong>是否可以只提供照片由你們排版？</strong></summary><p>支持。智印雲提供免費首頁及章節頁模板, 客戶只需提供照片 + 文字, 設計團隊協助排版 1-2 個工作天交付打樣。複雜設計另外報價。</p></details>
+<details class="my-2"><summary><strong>可以加燙金 / 局部 UV 等特殊工藝嗎？</strong></summary><p>支持。封面燙金 (校徽 / 畢業年份) + 局部 UV (班徽 / 紀念文字) 是畢業紀念冊最熱門的組合, 提升質感與收藏價值。每頁單獨加 UV 可以批量下單。</p></details>
+`,
+    price_range: 'HK$45-180/本',
+    basePrice: 45,
+    weight_score: 88,
+    isHot: true,
+    isNew: true,
+    minQuantity: 50,
+    images: ['/images/products/yearbook.jpg'],
+  imagesByLocale: {
+    'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-educational-graduation-yearbook-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-educational-graduation-yearbook-zh-hk-2.webp',
+    ],
+    'en': [
+      '/images/products/seedream-webp/zprintpro-educational-graduation-yearbook-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-educational-graduation-yearbook-en-2.webp',
+    ],
+    'ja': [
+      '/images/products/seedream-webp/zprintpro-educational-graduation-yearbook-ja-1.webp',
+    ],
+  },
+  seoImages: {
+    filename: { 'zh-hk': 'zprintpro-educational-graduation-yearbook-zh-hk-1.webp', en: 'zprintpro-educational-graduation-yearbook-en-1.webp', ja: 'zprintpro-educational-graduation-yearbook-ja-1.webp' },
+    alt: {
+      'zh-hk': '香港畢業紀念冊印刷 騎馬釘 膠裝 精裝 燙金封面',
+      en: 'Graduation Yearbook Printing Saddle Stitch Perfect Bound Hardcover',
+      ja: '卒業記念アルバム印刷 中綴じ 無線綴じ 上製本'
+    },
+  },
+  },
   // ===== 新增包裝盒產品（SEO重點布局） =====
   {
     id: 'PKG-007',
@@ -17641,6 +17720,80 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     },
   },
     },
+  // ===== 化妝品包裝盒 (PKG-011 cosmetics-packaging-box, 2026-07-08 Layer A SKU 拓點) =====
+  {
+    id: 'PKG-011',
+    sku_code: 'PKG-011',
+    slug: 'cosmetics-packaging-box',
+    category: 'packaging',
+    category_slug: 'packaging',
+    name: '化妝品包裝盒', nameEn: 'Cosmetics Packaging Box', nameJa: '化粧品パッケージボックス', title_zh: '化妝品包裝盒',
+    description: '美妝護膚品牌化妝品盒定制 — 精裝天地蓋 / 磁吸翻蓋 / 抽取式抽屜盒, 燙金 + 局部 UV + 內襯緞布。香港 / 跨境美妝電商 / 日本市場適用, 深圳亞洲工廠生產, DHL 全球 2-4 天送達。', descriptionEn: 'Custom cosmetics packaging boxes — rigid lift-off lid / magnetic closure / drawer style with foil stamping, spot UV, satin lining. For beauty brands, cross-border e-commerce, Japan market. Asia factory + DHL 2-4 day global delivery.', descriptionJa: '化粧品パッケージボックス カスタム — ハードケース天地蓋 / マグネット蓋 / 引き出し式で箔押し・スポット UV・ 裏面サテン。美容ブランド・越境 EC ・日本市場向け。中国深セ自社工場・DHL 国際配送 2-4 日。', description_zh: '美妝護膚品牌化妝品盒定制 — 精裝天地蓋 / 磁吸翻蓋 / 抽取式抽屜盒, 燙金 + 局部 UV + 內襯緞布。',
+    longDescription: `<h3>材質與結構對比</h3>
+<p>化妝品包裝盒常用 4 種盒型, 對應不同預算與品牌定位:</p>
+<table>
+  <thead><tr><th>盒型</th><th>結構</th><th>特性</th><th>適用品牌</th></tr></thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>天地蓋盒</td><td>上下蓋對開</td><td>經典結構, 開盒儀式感強, 內襯可加 EVA / 絨布</td><td>護膚品、香水、中高端美妝</td></tr>
+    <tr class="border-b border-gray-200"><td>磁吸翻蓋盒</td><td>單蓋磁吸扣</td><td>開合順滑, 高端精品常用, 結構穩固</td><td>高端護膚、禮盒套裝、彩妝盤</td></tr>
+    <tr class="border-b border-gray-200"><td>抽屜式盒</td><td>內抽屜滑入</td><td>互動體驗強, 細長盒型適合口紅 / 唇釉</td><td>口紅、唇釉、香水管</td></tr>
+    <tr><td>書型盒</td><td>側翻對開</td><td>書籍造型, 開盒像翻書, 內襯可展示多件產品</td><td>護膚套裝、彩妝禮盒、節日限定</td></tr>
+  </tbody>
+</table>
+
+<h3>紙材與裱面工藝</h3>
+<p>化妝品盒通常採用 1200-1500g 灰板裱糊特種紙 / 銅版紙 / 觸感紙 / 珠光紙。四色柯式印刷 + 局部 UV 上光 (Logo、圖案) + 燙金燙銀 (品牌字、品牌符號) 是化妝品盒的三大基礎工藝。追求環保可選 FSC 認證紙 + 大豆油墨。</p>
+
+<h3>內襯選擇</h3>
+<ul>
+  <li><strong>EVA 內襯</strong>: 成本中等, 可塑性強, 適合異形產品</li>
+  <li><strong>絨布內襯</strong>: 高端質感, 觸感細膩, 適合禮盒套裝</li>
+  <li><strong>海綿內襯</strong>: 經濟實惠, 適合標準瓶型</li>
+  <li><strong>紙質內襯</strong>: 100% 可回收, 環保認證品牌首選</li>
+</ul>
+
+<h3>已服務的本地客戶</h3>
+<p>智印雲 (ZprintPro) 為多個香港本地美妝品牌、台灣電商品牌、東南亞跨境美妝品牌、日本進口品牌提供化妝品盒 OEM / ODM 服務。100 個起印, 深圳自設廠房直送, DHL Express 全球 2-4 個工作天配送, ISO 9001 品質認證。</p>
+
+<h3>常見問題 (FAQ)</h3>
+<details class="my-2"><summary><strong>化妝品包裝盒的最低起印量是多少？</strong></summary><p>化妝品盒 100 個起印, 100-500 個享 9 折優惠, 500-1000 個 8.5 折, 1000 個以上另議。樣品盒 5-10 個可單獨打樣, 樣品費可批量後抵扣。</p></details>
+<details class="my-2"><summary><strong>化妝品盒生產交貨期需要多久？</strong></summary><p>標準訂單 7-12 個工作天完成, 含結構打樣 + 紙裱打樣 + 上機印刷 + 內襯製作 + 品質檢驗。特急可壓縮到 5-7 個工作天 (加價 30%)。國際訂單 DHL Express 全球 2-4 個工作天配送。</p></details>
+<details class="my-2"><summary><strong>可以定制開模嗎？造型尺寸完全自訂？</strong></summary><p>支持。智印雲提供免費結構設計打樣 (1-2 個工作天出 3D 圖), 確認後開模生產。圓角、異形、磁吸、抽屜等特殊結構都可在 7-10 天內完成開模。</p></details>
+<details class="my-2"><summary><strong>能否加燙金 / 局部 UV / 擊凸？</strong></summary><p>支持。化妝品盒常見工藝組合: 燙金 (品牌名) + 局部 UV (Logo) + 擊凸 (品牌符號)。三種工藝可同時使用, 效果疊加提升品牌質感。技術細節由結構工程師免費評估。</p></details>
+`,
+    price_range: 'HK$18-85/個',
+    basePrice: 18,
+    weight_score: 96,
+    isHot: true,
+    isNew: true,
+    minQuantity: 100,
+    images: ['/images/products/cosmetic-box.jpg'],
+  imagesByLocale: {
+    'zh-hk': [
+      '/images/products/seedream-webp/zprintpro-packaging-cosmetics-packaging-box-zh-hk-1.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-cosmetics-packaging-box-zh-hk-2.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-cosmetics-packaging-box-zh-hk-3.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-cosmetics-packaging-box-zh-hk-4.webp',
+    ],
+    'en': [
+      '/images/products/seedream-webp/zprintpro-packaging-cosmetics-packaging-box-en-1.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-cosmetics-packaging-box-en-2.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-cosmetics-packaging-box-en-3.webp',
+    ],
+    'ja': [
+      '/images/products/seedream-webp/zprintpro-packaging-cosmetics-packaging-box-ja-1.webp',
+      '/images/products/seedream-webp/zprintpro-packaging-cosmetics-packaging-box-ja-2.webp',
+    ],
+  },
+  seoImages: {
+    filename: { 'zh-hk': 'zprintpro-packaging-cosmetics-packaging-box-zh-hk-1.webp', en: 'zprintpro-packaging-cosmetics-packaging-box-en-1.webp', ja: 'zprintpro-packaging-cosmetics-packaging-box-ja-1.webp' },
+    alt: {
+      'zh-hk': '香港化妝品包裝盒印刷 天地蓋 磁吸 抽屜 燙金 局部 UV',
+      en: 'Cosmetics Packaging Box Printing Lift-off Magnetic Drawer Foil UV',
+      ja: '化粧品パッケージボックス印刷 天地蓋 マグネット 引き出し 箔押し スポットUV'
+    },
+  },
+  },
   // ===== 新增貼紙產品（SEO長尾詞覆盖） =====
   {
     id: 'ST-009',
