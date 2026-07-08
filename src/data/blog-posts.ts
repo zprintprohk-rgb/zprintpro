@@ -34,7 +34,9 @@ export type BlogCategoryKey =
   | 'paper-bags'
   | 'posters'
   | 'restaurant-flyer'
-  | 'buying-guide';
+  | 'buying-guide'
+  | 'menus'
+  | 'red-packets';
 
 export type BlogPostSource = 'buying-guide' | 'legacy';
 
