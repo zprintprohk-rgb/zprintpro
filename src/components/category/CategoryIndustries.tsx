@@ -314,6 +314,293 @@ const categoryIndustryScenarios: Record<string, IndustryScenario[]> = {
       priority: 2, tier: 'B',
     },
   ],
+  // ========================================================================
+  // 6 個 P1/P2 類目 — 行業場景數據補全 (2026-07-09)
+  // calendars / banners / books / envelopes / educational / japan-doujin
+  // 數據來源: CATEGORY_INDUSTRIES + GSC 查詢詞 + industry-keyword-matrix.json
+  // ========================================================================
+  calendars: [
+    {
+      key: 'corporate_gift',
+      scenarios: {
+        'zh-hk': ['企業年曆 · 品牌定制', '公司 LOGO + 燙金年份', '100 本起 · 座檯/掛牆可選'],
+        en: ['Corporate calendar · branded', 'Company logo + foil-stamped year', 'From 100 · desk or wall mount'],
+        ja: ['企業カレンダー・ブランド入り', '社名ロゴ + 年号箔押し', '100部から・卓上/壁掛け選択可'],
+      },
+      priority: 0, tier: 'A',
+    },
+    {
+      key: 'school',
+      scenarios: {
+        'zh-hk': ['學校定制年曆 · 校徽校訓', '學生/家長人手一本', 'A4/A5 尺寸 · 500 本起優惠'],
+        en: ['School custom calendar · crest & motto', 'One per student/family', 'A4/A5 · bulk from 500'],
+        ja: ['学校カレンダー・校章入り', '生徒/保護者に配布', 'A4/A5サイズ・500部から割引'],
+      },
+      priority: 1, tier: 'A',
+    },
+    {
+      key: 'realestate',
+      scenarios: {
+        'zh-hk': ['地產送禮年曆 · 豪宅款', '燙金封套 + 精裝硬皮', '客戶關係回饋首選'],
+        en: ['Real estate gift calendar · luxury', 'Foil jacket + hardcover binding', 'Client appreciation top choice'],
+        ja: ['不動産ギフトカレンダー・高級仕様', '箔押しカバー + 上製本', '顧客関係強化に最適'],
+      },
+      priority: 2, tier: 'A',
+    },
+    {
+      key: 'auto',
+      scenarios: {
+        'zh-hk': ['汽車品牌年曆 · 高清印刷', '車型寫真 + 品牌色精準', '4S 店客戶贈品 · 300 本起'],
+        en: ['Auto brand calendar · HD print', 'Car model photos + brand color accuracy', 'Dealership gifts · from 300'],
+        ja: ['自動車ブランドカレンダー・高精細', '車種写真 + ブランドカラー忠実再現', 'ディーラー配布・300部から'],
+      },
+      priority: 3, tier: 'B',
+    },
+    {
+      key: 'finance',
+      scenarios: {
+        'zh-hk': ['銀行/金融客戶年曆', 'QR Code 連結手機銀行', '合規審查通過 · 批量配送'],
+        en: ['Banking/finance client calendar', 'QR code linking to mobile banking', 'Compliance-approved · bulk delivery'],
+        ja: ['銀行・金融顧客カレンダー', 'QRコードでモバイルバンキング連携', 'コンプライアンス対応・一括配送'],
+      },
+      priority: 4, tier: 'B',
+    },
+  ],
+  banners: [
+    {
+      key: 'trade_show',
+      scenarios: {
+        'zh-hk': ['展會易拉寶/X展架', '輕便便攜 · 3分鐘搭建', '展前急單 48 小時交貨'],
+        en: ['Trade show roll-up / X-frame', 'Lightweight portable · 3-min setup', 'Pre-show rush: 48hr delivery'],
+        ja: ['展示会ロールアップ/Xスタンド', '軽量ポータブル・3分設営', '展示前特急48時間納品'],
+      },
+      priority: 0, tier: 'A',
+    },
+    {
+      key: 'outdoor_ad',
+      scenarios: {
+        'zh-hk': ['戶外橫幅/圍板廣告', '防水帆布 · 抗 UV 3 年+', '大型尺寸 3m+ 無接縫'],
+        en: ['Outdoor banner/hoarding ad', 'Waterproof canvas · anti-UV 3yr+', 'Large format 3m+ seamless'],
+        ja: ['屋外バナー/工事囲い広告', '防水キャンバス・抗UV 3年+', '大型3m+ シームレス出力'],
+      },
+      priority: 1, tier: 'A',
+    },
+    {
+      key: 'auto_showroom',
+      scenarios: {
+        'zh-hk': ['汽車展廳展示噴繪', '高精度彩色輸出', '磁性貼合 · 可反覆更換'],
+        en: ['Auto showroom display print', 'High-precision color output', 'Magnetic adhesion · reusable'],
+        ja: ['自動車ショールーム展示', '高精細カラー出力', 'マグネット貼付・再利用可能'],
+      },
+      priority: 2, tier: 'B',
+    },
+    {
+      key: 'mall_promo',
+      scenarios: {
+        'zh-hk': ['商場/門店促銷橫幅', 'PP 合成紙 · 防水不反光', '節日限定快速換版'],
+        en: ['Mall/store promo banner', 'PP synthetic · waterproof non-glare', 'Seasonal fast reprint'],
+        ja: ['モール/店舗販促バナー', 'PP合成紙・防水非光沢', '季節限定クイック再版'],
+      },
+      priority: 3, tier: 'A',
+    },
+    {
+      key: 'school_event',
+      scenarios: {
+        'zh-hk': ['學校開放日/校運會橫幅', '彩色數碼印刷 · 色彩亮麗', '批量優惠 · 5 條起'],
+        en: ['School open day/sports day banner', 'Digital color · vibrant output', 'Bulk discount · from 5'],
+        ja: ['学校説明会/運動会バナー', 'デジタルカラー・鮮やか発色', '大量割引・5枚から'],
+      },
+      priority: 4, tier: 'A',
+    },
+  ],
+  books: [
+    {
+      key: 'tutoring_textbook',
+      scenarios: {
+        'zh-hk': ['補習社皇牌教材印刷', '道林紙 80g · 閱讀舒適', '無線膠裝 · 50 本起 · 7 天交貨'],
+        en: ['Tutoring textbook printing', 'Woodfree 80gsm · eye-comfort', 'Perfect bound · from 50 · 7-day'],
+        ja: ['塾教材印刷', '上質紙80g・読みやすい', '無線綴じ・50冊から・7日納品'],
+      },
+      priority: 0, tier: 'A',
+    },
+    {
+      key: 'doujin',
+      scenarios: {
+        'zh-hk': ['同人誌/原創漫畫印刷', '騎馬釘/PUR 無線裝可選', '10 本起 · 小量也可印'],
+        en: ['Doujinshi/original comic printing', 'Saddle stitch/PUR perfect bound', 'From 10 · small batch OK'],
+        ja: ['同人誌/オリジナル漫画印刷', '中綴じ/PUR無線綴じ選択可', '10冊から・小ロット歓迎'],
+      },
+      priority: 1, tier: 'A',
+    },
+    {
+      key: 'corp_brochure',
+      scenarios: {
+        'zh-hk': ['企業畫冊/產品型錄', '精裝硬皮 + 燙金燙銀', '封面 4C 印刷 · 內頁高質'],
+        en: ['Corporate brochure/product catalog', 'Hardcover + foil stamping', '4C cover · premium interior'],
+        ja: ['企業パンフ/製品カタログ', '上製本 + 箔押し', '4C表紙・高品質内頁'],
+      },
+      priority: 2, tier: 'A',
+    },
+    {
+      key: 'children_book',
+      scenarios: {
+        'zh-hk': ['兒童繪本/親子共讀書', '圓角裁切 · 安全不刮手', '厚紙板書可選 · 100 本起'],
+        en: ['Children picture book/family read', 'Rounded corners · child-safe', 'Board book option · from 100'],
+        ja: ['絵本/親子読み聞かせ', '丸角裁切・安全設計', 'ボードブック選択可・100冊から'],
+      },
+      priority: 3, tier: 'B',
+    },
+    {
+      key: 'yearbook',
+      scenarios: {
+        'zh-hk': ['紀念冊/畢業年刊', '精裝布面或皮面封面', '全彩內頁 · ISBN 出版支援'],
+        en: ['Memory book/graduation yearbook', 'Cloth or leather hardcover', 'Full-color interior · ISBN support'],
+        ja: ['記念アルバム/卒業年鑑', '布張り/革張り上製本', 'フルカラー内頁・ISBN出版支援'],
+      },
+      priority: 4, tier: 'B',
+    },
+  ],
+  envelopes: [
+    {
+      key: 'corp_business',
+      scenarios: {
+        'zh-hk': ['企業商務信封 · 開窗/不開窗', '燙金 LOGO + 公司地址', '500 個起 · 5 天交貨'],
+        en: ['Corporate business envelope · window/plain', 'Foil logo + company address', 'From 500 · 5-day delivery'],
+        ja: ['企業封筒・窓付き/窓なし', '箔押しロゴ + 社名住所', '500枚から・5日納品'],
+      },
+      priority: 0, tier: 'A',
+    },
+    {
+      key: 'finance_mail',
+      scenarios: {
+        'zh-hk': ['銀行/金融對賬信封', '安全自黏封口 · 防透視', '合規印刷 · 大批量優惠'],
+        en: ['Bank/finance statement envelope', 'Security self-seal · opaque', 'Compliant printing · bulk discount'],
+        ja: ['銀行/金融取引明細封筒', 'セキュリティ封口・不透視', 'コンプライアンス印刷・大口割引'],
+      },
+      priority: 1, tier: 'A',
+    },
+    {
+      key: 'school_notice',
+      scenarios: {
+        'zh-hk': ['補習社/學校通告信封', '彩色印刷 · 校徽客製', '1000 個起 · 開學檔期優惠'],
+        en: ['Tutoring/school notice envelope', 'Color print · custom school crest', 'From 1000 · term opening deal'],
+        ja: ['塾/学校通知用封筒', 'カラー印刷・校章カスタム', '1000枚から・新学期割引'],
+      },
+      priority: 2, tier: 'A',
+    },
+    {
+      key: 'logistics',
+      scenarios: {
+        'zh-hk': ['物流快遞信封/運單套', '防水牛皮紙 · 耐撕耐磨', '條碼窗口 · 1000 個起'],
+        en: ['Logistics courier envelope/waybill', 'Waterproof kraft · tear-resistant', 'Barcode window · from 1000'],
+        ja: ['物流配送封筒/送り状ケース', '防水クラフト・耐引裂', 'バーコード窓・1000枚から'],
+      },
+      priority: 3, tier: 'B',
+    },
+    {
+      key: 'member_event',
+      scenarios: {
+        'zh-hk': ['會員活動/邀請函信封', '高級紙質 · 蠟封可選', '燙金內襯 · 尊貴感滿分'],
+        en: ['Member event/invitation envelope', 'Premium paper · wax seal option', 'Foil liner · luxury feel'],
+        ja: ['会員イベント/招待状封筒', '高級紙・封蝋選択可', '箔押し内装・高級感演出'],
+      },
+      priority: 4, tier: 'B',
+    },
+  ],
+  educational: [
+    {
+      key: 'graduation',
+      scenarios: {
+        'zh-hk': ['畢業紀念冊印刷 · 精裝', '布面硬皮 + 燙金校名', '全彩內頁 · 100 本起'],
+        en: ['Graduation yearbook · hardcover', 'Cloth cover + foil school name', 'Full-color · from 100'],
+        ja: ['卒業記念アルバム・上製本', '布張り表紙 + 校名箔押し', 'フルカラー・100冊から'],
+      },
+      priority: 0, tier: 'A',
+    },
+    {
+      key: 'workbook',
+      scenarios: {
+        'zh-hk': ['補習社皇牌教材印刷', '道林紙 80g · 長時間閱讀舒適', '無線膠裝 · 封面燙金'],
+        en: ['Tutoring textbook series', 'Woodfree 80gsm · eye-comfort', 'Perfect bound · foil cover'],
+        ja: ['塾教材シリーズ印刷', '上質紙80g・長時間読書向け', '無線綴じ・表紙箔押し'],
+      },
+      priority: 1, tier: 'A',
+    },
+    {
+      key: 'school_bulk',
+      scenarios: {
+        'zh-hk': ['學校批量印刷 · 全校教材', 'FSC 認證紙張 · 大豆油墨', 'NET 30 賬期 · 門市打樣'],
+        en: ['School bulk printing · all-grade', 'FSC certified paper · soy ink', 'NET 30 terms · in-store proofs'],
+        ja: ['学校一括印刷・全校教材', 'FSC認証紙・大豆インク', 'NET 30支払・店頭校正'],
+      },
+      priority: 2, tier: 'A',
+    },
+    {
+      key: 'pta_event',
+      scenarios: {
+        'zh-hk': ['家長會/校慶活動印刷', '邀請卡 + 場刊 + 海報', '一站式配套 · 節省溝通成本'],
+        en: ['PTA/school event printing', 'Invites + program + posters', 'One-stop package · save coordination'],
+        ja: ['保護者会/学校行事印刷', '招待状 + プログラム + ポスター', 'ワンストップ・調整工数削減'],
+      },
+      priority: 3, tier: 'B',
+    },
+    {
+      key: 'certificates',
+      scenarios: {
+        'zh-hk': ['獎狀/證書印刷', '燙金校名 + 防偽水印', 'A4 尺寸 · 50 張起'],
+        en: ['Award certificate printing', 'Foil school name + anti-fraud watermark', 'A4 size · from 50'],
+        ja: ['賞状/証明書印刷', '校名箔押し + 偽造防止透かし', 'A4サイズ・50枚から'],
+      },
+      priority: 4, tier: 'B',
+    },
+  ],
+  'japan-doujin': [
+    {
+      key: 'doujinshi',
+      scenarios: {
+        'zh-hk': ['同人誌 · 騎馬釘/無線膠裝', 'B5/A5 尺寸 · 封面 4C', '10 本起 · 日本直送可'],
+        en: ['Doujinshi · saddle stitch/perfect', 'B5/A5 · 4C cover', 'From 10 · Japan direct ship'],
+        ja: ['同人誌・中綴じ/無線綴じ', 'B5/A5・表紙4C', '10冊から・日本直送可'],
+      },
+      priority: 0, tier: 'A',
+    },
+    {
+      key: 'anime_goods',
+      scenarios: {
+        'zh-hk': ['動漫周邊 · 貼紙/吊飾/立牌', '模切異形 · 燙金可選', '100 張起 · 快速打樣'],
+        en: ['Anime merch · stickers/charms/standees', 'Die-cut shapes · foil option', 'From 100 · fast proofs'],
+        ja: ['アニメグッズ・ステッカー/チャーム/スタンド', 'ダイカット・箔押し選択可', '100枚から・迅速校正'],
+      },
+      priority: 1, tier: 'A',
+    },
+    {
+      key: 'vtuber',
+      scenarios: {
+        'zh-hk': ['VTuber 應援周邊印刷', '螢光色/透明貼紙 · 應援扇', '50 張起 · 活動急單可接'],
+        en: ['VTuber fan goods printing', 'Fluorescent/transparent stickers · fans', 'From 50 · event rush OK'],
+        ja: ['VTuber応援グッズ印刷', '蛍光/透明ステッカー・応援うちわ', '50枚から・イベント特急対応'],
+      },
+      priority: 2, tier: 'A',
+    },
+    {
+      key: 'comiket',
+      scenarios: {
+        'zh-hk': ['Comiket 委託印刷 · 香港發', '日本 Comiket 檔期對接', 'PUR 無線裝 · 200 本起'],
+        en: ['Comiket commission · from HK', 'Japan Comiket deadline sync', 'PUR perfect bound · from 200'],
+        ja: ['コミケ委託印刷・香港発', '日本のコミケ締切に合わせ', 'PUR無線綴じ・200冊から'],
+      },
+      priority: 3, tier: 'B',
+    },
+    {
+      key: 'original_ip',
+      scenarios: {
+        'zh-hk': ['原創 IP 周邊全套印刷', '同人本 + 周邊 + 包裝', '一站式生產 · 降低物流成本'],
+        en: ['Original IP full merch print', 'Doujinshi + goods + packaging', 'One-stop production · lower logistics'],
+        ja: ['オリジナルIPグッズ一式印刷', '同人誌 + グッズ + パッケージ', '一括生産・物流コスト削減'],
+      },
+      priority: 4, tier: 'B',
+    },
+  ],
 };
 
 // Blog slugs that are covered (used to decide "link to blog" or "coming soon")
