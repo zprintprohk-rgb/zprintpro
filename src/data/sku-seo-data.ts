@@ -1951,53 +1951,58 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
   },
   "cosmetic-boxes": {
     "name": {
-      "zh-hk": "化妝品盒",
-      "en": "Cosmetic Boxes",
-      "ja": "化粧品箱"
+      "zh-hk": "化妝品包裝盒",
+      "en": "Cosmetic Packaging Boxes",
+      "ja": "化粧品パッケージボックス"
     },
     "seo": {
       "zh-hk": {
-        "title": "化妝品盒 | 燙金 UV 100%訂製 | 智印雲 ZprintPro",
-        "description": "化妝品盒/化妝品盒 100 個起。採用 白卡/牛皮紙/灰板 高品質材質，支援 訂製尺寸 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。7-10 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
-        
-        "h1": "化妝品盒",
-        "keywords": ["化妝品盒", "包裝盒印刷"],
-        "body": " customizable inner tray. ZprintPro offers professional Cosmetic Boxes services in Hong Kong. High quality"
+        "title": "化妝品包裝盒 4 種盒型 100 個起印 · 磁吸翻蓋 / 天地蓋 / 抽屜式 / 書型 | 智印雲 ZprintPro",
+        "description": "化妝品包裝盒 100 個起印. 4 種盒型 (天地蓋 / 磁吸翻蓋 / 抽屜式 / 書型) + 內托 EVA / 紙漿 / PET 吸塑可定制. 燙金 + 局部 UV + 緞布內襯. 香港 + 跨境美妝電商 + 日本市場. ISO 9001 + FSC 認證, 4 色柯式印刷, 30 秒 AI 即時報價, DHL 全球 2-4 天配送.",
+
+        "h1": "化妝品包裝盒 — 4 種盒型 · 內托定制",
+        "keywords": ["化妝品包裝盒", "化妝品盒", "包裝盒印刷", "護膚品盒", "彩妝盒", "美妝品牌", "天地蓋盒", "磁吸翻蓋盒", "抽屜盒", "書型盒", "化妝品OEM", "香港化妝品印刷"],
+        "body": " 4 種盒型 + 內托定制. ZprintPro offers professional 化妝品包裝盒 services in Hong Kong with 100-unit MOQ. 4 box styles (天地蓋 / 磁吸 / 抽屜 / 書型) + custom EVA / paper / PET inner trays."
       },
       "en": {
-        "title": "Cosmetic Boxes | Custom Magnetic | Free US Ship | ZprintPro",
-        "description": "Custom cosmetic boxes from ZprintPro Hong Kong. Custom Magnetic, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
-        "h1": "Cosmetic Boxes 100+ | Custom Magnetic | ZprintPro",
-        "keywords": ["cosmetic boxes","custom cosmetic boxes","cosmetic boxes printing hong kong","cosmetic boxes free shipping","cosmetic boxes USD","bulk cosmetic boxes","cosmetic boxes DHL","bespoke cosmetic boxes","cosmetic boxes wholesale","cosmetic boxes pricing"],
-        "body": "ZprintPro Cosmetic Boxes for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Custom Magnetic, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
-      
+        "title": "Cosmetic Packaging Boxes 100 MOQ | 4 Box Styles Magnetic / Drawer / Book | ZprintPro",
+        "description": "Cosmetic packaging boxes from 100 units. 4 box styles (lift-off lid, magnetic closure, drawer-style, book-style) with custom EVA, molded pulp, or PET inner trays. Foil stamping, spot UV, satin lining. Beauty and skincare brands, cross-border e-commerce, Japan market ready. ISO 9001 + FSC certified. Free DHL Express 2-4 day global shipping. 30-second AI quote.",
+
+        "h1": "Cosmetic Packaging Boxes — 4 Box Styles · Custom Inner Tray",
+        "keywords": ["cosmetic packaging boxes","cosmetic boxes","makeup boxes","skincare boxes","beauty brand packaging","custom box styles","magnetic closure boxes","drawer boxes","book-style boxes","cosmetic boxes printing","cosmetic OEM","香港 cosmetic packaging"],
+        "body": " ZprintPro Cosmetic Packaging Boxes for retail, e-commerce, beauty brands, and global markets. 4 box styles, custom inner trays, foil + UV, 100-MOQ, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       },
       "ja": {
-        "title": "化粧品箱 | 特注 高級パッケージ | ZprintPro",
-        "description": "化粧品箱の化粧品箱は ZprintPro にお任せ。白カード/クラフト/グレー台紙 高品質用紙、カスタムサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
-        "h1": "Specially designed for cosmetics",
-        "keywords": ["化粧品箱", "化粧品箱 印刷", "cosmetic boxes"],
-        "body": " fast delivery."
+        "title": "化粧品パッケージボックス 4 種類 100 個〜 | マグネット蓋・引き出し・ブック型 | ZprintPro",
+        "description": "化粧品パッケージボックス 100 個から対応. 4 種類 (天地蓋 / マグネット蓋 / 引き出し式 / ブック型) + 内装 EVA / 紙 / PET 吸塑カスタム. 箔押し + スポット UV + サテン裏地. 美容・スキンケアブランド、越境 EC、日本市場対応. ISO 9001 + FSC 認証. DHL 国際配送 2-4 日. 30 秒 AI 即時見積.",
+
+        "h1": "化粧品パッケージボックス — 4 種類 · 内装カスタム",
+        "keywords": ["化粧品パッケージボックス","化粧品箱","コスメボックス","スキンケアボックス","カスタム箱型","マグネット蓋","引き出し式","ブック型","化粧品OEM","香港 cosmetic packaging"],
+        "body": " 4 種類 + 内装カスタム. ZprintPro は 100 個から対応. 天地蓋 / マグネット / 引き出し / ブック型の 4 種類 + EVA / 紙 / PET 内装吸塑."
       }
     },
     "faqs": [
       {
-        "q": "化粧品専用設計、カスタマイズ可能な内側トレイ。 ZprintProは香港で化粧品箱サービスを提供。高品質、透明な価格、迅速な納品。",
-        "a": "專業化妝品盒服務 | 智印雲"
+        "q": "化妝品包裝盒 4 種盒型如何選擇?天地蓋/磁吸翻蓋/抽屜式/書型盒型的區別、內托定制方式,以及香港+跨境美妝電商如何選購?",
+        "a": "化妝品包裝盒 100 個起印. 天地蓋盒經典儀式感強,磁吸翻蓋盒開合順滑高端精品適用,抽屜式盒互動體驗強適合口紅 / 唇釉,書型盒適合護膚套裝 / 彩妝禮盒. 內托可選 EVA / 紙漿 / PET 吸塑. ISO 9001 + FSC 認證, 4 色柯式印刷, 30 秒 AI 即時報價, DHL 全球 2-4 天配送."
       },
       {
-        "q": "",
-        "a": ""
+        "q": "化妝品包裝盒的最低起印量?可以定制開模嗎?100 個起能否印 4 種盒型?",
+        "a": "化妝品包裝盒 100 個起印, 100-500 個享 9 折, 500-1000 個 8.5 折, 1000 個以上另議. 4 種盒型 (天地蓋 / 磁吸翻蓋 / 抽屜式 / 書型) 全部可選, 免費結構設計打樣 (1-2 天出 3D 圖), 確認後 7-10 天開模生產."
       },
       {
-        "q": "專為化妝品設計，內托可定制，支持印刷即日速遞送貨。適合護膚品、彩妝品牌。智印雲提供專業的化妝品盒服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。",
-        "a": ""
+        "q": "化妝品包裝盒能加燙金 / 局部 UV / 擊凸嗎?化妝品盒工藝組合與價格?",
+        "a": "化妝品包裝盒支持燙金 (品牌名) + 局部 UV (Logo) + 擊凸 (品牌符號) 三種工藝同時使用. 常見組合: 燙金 + 局部 UV = 燙金玫瑰金 + UV 品牌標誌. 4 色柯式 + 工藝疊加提升品牌質感,技術細節由結構工程師免費評估."
+      },
+      {
+        "q": "化妝品包裝盒生產交貨期多久?香港本地 + 國際訂單如何安排?",
+        "a": "標準訂單 7-12 個工作天, 含結構打樣 + 紙裱打樣 + 上機印刷 + 內襯製作 + 品質檢驗. 特急可壓縮到 5-7 個工作天 (加價 30%). 香港本地 + 跨境美妝電商 + 日本市場, DHL 全球 2-4 個工作天配送, ISO 9001 認證品質保證."
       }
     ],
     "imageAlt": {
-      "zh-hk": "包裝盒的最小訂購量是多少？",
-      "en": "Custom cosmetic boxes with custom magnetic, premium materials — ZprintPro",
-      "ja": "可以定制包裝盒的尺寸和結構嗎？"
+      "zh-hk": "化妝品包裝盒 4 種盒型 100 個起印 FDA 級安全 燙金 UV",
+      "en": "Cosmetic packaging boxes 4 box styles 100 MOQ FDA food-safe foil UV",
+      "ja": "化粧品パッケージボックス 4 種類 100 個〜 FDA対応 箔押し UV"
     }
   },
   "food-boxes": {
