@@ -19,7 +19,7 @@ const translations = {
         subtitleColor: 'text-blue-500',
         bgColor: 'bg-blue-50',
         iconColor: 'text-blue-500',
-        description: '深圳市彩龍印刷包裝有限公司旗下品牌，深圳自有工廠生產，品質可控',
+        description: '彩龍印刷旗下品牌，深圳自有工廠生產，品質可控',
       },
       {
         icon: Zap,
@@ -78,7 +78,7 @@ const translations = {
         subtitleColor: 'text-blue-500',
         bgColor: 'bg-blue-50',
         iconColor: 'text-blue-500',
-        description: 'Owned production facility in Shenzhen, operated by Shenzhen Cailong Printing & Packaging Co., Ltd. ISO-certified quality manufacturing.',
+        description: 'Owned production facility in Shenzhen, operated by Cailong Printing. ISO-certified quality manufacturing.',
       },
       {
         icon: Zap,
@@ -137,7 +137,7 @@ const translations = {
         subtitleColor: 'text-blue-500',
         bgColor: 'bg-blue-50',
         iconColor: 'text-blue-500',
-        description: '深圳市彩龍印刷包装有限公司が運営する深圳自社工場、ISO認証取得の品質管理',
+        description: '彩龍印刷が運営する深圳自社工場、ISO認証取得の品質管理',
       },
       {
         icon: Zap,
