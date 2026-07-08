@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-07-06T12:15:19.084Z",
+  "all_pass": false,
+  "results": [
+    {
+      "step": 1,
+      "name": "git status no ahead",
+      "pass": true,
+      "detail": "## main...origin_ssh/main"
+    },
+    {
+      "step": 2,
+      "name": "sitemap mtime < 3 days",
+      "pass": true,
+      "detail": "6/6 recent"
+    },
+    {
+      "step": 3,
+      "name": "category page 200 (3 locale × 3 cat = 9 URL)",
+      "pass": true,
+      "detail": "zh-hk/packaging=200, en/packaging=200, ja/packaging=200, zh-hk/stickers=200, en/stickers=200, ja/stickers=200, zh-hk/paper-bags=200, en/paper-bags=200, ja/paper-bags=200"
+    },
+    {
+      "step": 4,
+      "name": "Tier B blog HTTP 200 (9 URL)",
+      "pass": true,
+      "detail": "real-estate-brochure-box-printing-guide=200, real-estate-brochure-box-printing-guide=200, real-estate-brochure-box-printing-guide=200, pharmaceutical-label-printing-guide=200, pharmaceutical-label-printing-guide=200, pharmaceutical-label-printing-guide=200, jewellery-shopping-bag-printing-guide=200, jewellery-shopping-bag-printing-guide=200, jewellery-shopping-bag-printing-guide=200"
+    },
+    {
+      "step": 5,
+      "name": "Tier B blog keyword present (9/9)",
+      "pass": false,
+      "detail": "kw_hit=8/9"
+    },
+    {
+      "step": 6,
+      "name": "Tier B blog schema JSON-LD (>=3 schemas each)",
+      "pass": true,
+      "detail": "schema_avg=3.0"
+    },
+    {
+      "step": 7,
+      "name": "internal links self-growth ≥ 5",
+      "pass": true,
+      "detail": "12 related-reading boxes (15 forward links)"
+    }
+  ]
+}
