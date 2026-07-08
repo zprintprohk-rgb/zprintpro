@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-07-v1",
+  "version": "2026-07-08-v1",
   "owner": "mavis orchestrator (user authorized)",
   "policy": {
     "priority_order": [
@@ -350,8 +350,8 @@
       "expected_words_zh": 800,
       "expected_faqs": 4,
       "queued_at": "2026-07-06",
-      "priority_boost": 0,
-      "gsc_signal_source": "GSC 標籤印刷 4 imps rank 43.25 (low) + adjacent 食品包裝訂製 48 imps"
+      "priority_boost": 1,
+      "gsc_signal_source": "GSC 標籤印刷 4 imps rank 43.25 (low) + adjacent 食品包裝訂製 48 imps rank 22.88 (high_potential +1 applied 2026-07-08)"
     },
     {
       "id": "Q-006",
@@ -736,7 +736,7 @@
     "total_524_target": 524,
     "covered_524_pct": 2.48,
     "last_updated": "2026-07-08",
-    "last_updated_event": "v4 daily 3-blog pack P1 unlock: Q-P1-01/02/03 + 3 SKU optimizations (PO-001/RP-001/MN-001)"
+    "last_updated_event": "Wed GSC feedback loop: Q-P1-04 priority_boost 0→1 (high_potential 食品包裝訂製 imps 48 rank 22.88). All other uncovered Q/IDs already covered 2026-07-06/07/08; no further boost applied."
   },
   "priority_boost_history": [
     {
@@ -874,6 +874,38 @@
         "orphan": "+1",
         "high_potential": "+1",
         "weak_30d_zero": "n/a (single snapshot)"
+      }
+    },
+    {
+      "date": "2026-07-08",
+      "trigger": "cron zprintpro-gsc-feedback-loop (Wed 15:00)",
+      "by_orchestrator": true,
+      "data_source": "gsc_data.csv (snapshot 2026-06-17, 90-day default export)",
+      "changes": [
+        {
+          "id": "Q-P1-04",
+          "old": 0,
+          "new": 1,
+          "slug": "product-label-printing-guide",
+          "trigger_keyword": "食品包裝訂製",
+          "trigger_impressions": 48,
+          "trigger_rank": 22.88,
+          "rule": "high_potential (imps≥20 rank 20-50)",
+          "note": "Q-P1-04 是唯一已 queued 但未 covered 的 P1 queue entry；7-6/7-7 已权重的 12 个 Q 全部 covered，本轮无重复加权。"
+        }
+      ],
+      "rules_applied": {
+        "strong_orphan": "+2 (食品包裝印刷 108 imps rank 25.45 — 已映射到已 covered Q-002/Q-003/Q-005/Q-006, 无新增加权)",
+        "orphan": "+1 (11 词 — 全部已 mapped 到 covered Q-001/Q-002/Q-003/Q-004/Q-005/Q-P1-01, 无新增加权)",
+        "high_potential": "+1 (11 词 — 10 个已 mapped, 食品包裝訂製 48 imps rank 22.88 命中 Q-P1-04 +1)",
+        "cta_keywords": "4 个 (蛍光ステッカー / paper bag printing / sticker printing hong kong / a2 size printing near me) — 全部已 covered pages, 维持现状",
+        "weak_30d_zero": "n/a (单快照不能判定 30/90 天连续零展示, 跳过 -1/-3 减权)"
+      },
+      "next_daily_recommendation": {
+        "primary": "Q-P1-04 (product-label-printing-guide, 跨境電商 product-labels, 現 +1 boost, 未 covered)",
+        "secondary": "P2 unlock candidates: posters/banners/envelopes/japan-doujin — P0/P1 已饱和 (P0 100% / P1 75%)",
+        "rationale": "Q-P1-04 is the LAST uncovered P1 in queue. P0 fully covered 2026-07-06/07; P1 3/4 covered 2026-07-08 daily (Q-P1-01/02/03); Q-P1-04 needs filling.",
+        "constraint": "30/90 天减权跳过 (single snapshot 不能判趋势)"
       }
     }
   ],

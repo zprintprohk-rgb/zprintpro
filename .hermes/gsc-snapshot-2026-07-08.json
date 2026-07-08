@@ -1,0 +1,158 @@
+{
+  "generated_at": "2026-07-08T07:06:48.353Z",
+  "total_rows": 357,
+  "strong_orphan": [
+    {
+      "keyword": "食品包裝印刷",
+      "impressions": 108,
+      "rank": 25.45
+    }
+  ],
+  "orphan": [
+    {
+      "keyword": "海報與印刷",
+      "impressions": 93,
+      "rank": 57.32
+    },
+    {
+      "keyword": "紙袋印刷",
+      "impressions": 92,
+      "rank": 17.8
+    },
+    {
+      "keyword": "宣傳單張",
+      "impressions": 84,
+      "rank": 42.9
+    },
+    {
+      "keyword": "紙袋訂製",
+      "impressions": 81,
+      "rank": 60.32
+    },
+    {
+      "keyword": "宣傳單張印刷",
+      "impressions": 73,
+      "rank": 40.42
+    },
+    {
+      "keyword": "包裝盒訂製",
+      "impressions": 69,
+      "rank": 55.04
+    },
+    {
+      "keyword": "海報印刷",
+      "impressions": 65,
+      "rank": 38.31
+    },
+    {
+      "keyword": "包裝盒印刷",
+      "impressions": 63,
+      "rank": 55.52
+    },
+    {
+      "keyword": "紙盒訂製",
+      "impressions": 59,
+      "rank": 66.58
+    },
+    {
+      "keyword": "印海報",
+      "impressions": 58,
+      "rank": 38.43
+    },
+    {
+      "keyword": "貼紙印刷",
+      "impressions": 51,
+      "rank": 52.63
+    }
+  ],
+  "high_potential": [
+    {
+      "keyword": "食品包裝訂製",
+      "impressions": 48,
+      "rank": 22.88
+    },
+    {
+      "keyword": "印紙袋",
+      "impressions": 44,
+      "rank": 26
+    },
+    {
+      "keyword": "印刷紙袋",
+      "impressions": 44,
+      "rank": 26.73
+    },
+    {
+      "keyword": "紙袋印製",
+      "impressions": 44,
+      "rank": 27.86
+    },
+    {
+      "keyword": "餐牌印刷",
+      "impressions": 43,
+      "rank": 20.56
+    },
+    {
+      "keyword": "利是封印刷",
+      "impressions": 43,
+      "rank": 34.7
+    },
+    {
+      "keyword": "訂做紙袋",
+      "impressions": 42,
+      "rank": 41.29
+    },
+    {
+      "keyword": "紙袋訂造",
+      "impressions": 40,
+      "rank": 33.42
+    },
+    {
+      "keyword": "poster 印刷",
+      "impressions": 35,
+      "rank": 38.66
+    },
+    {
+      "keyword": "食品印刷",
+      "impressions": 22,
+      "rank": 39.55
+    },
+    {
+      "keyword": "戶外貼紙",
+      "impressions": 21,
+      "rank": 35.38
+    }
+  ],
+  "cta_keywords": [
+    {
+      "keyword": "蛍光ステッカー",
+      "clicks": 1,
+      "impressions": 3,
+      "rank": 40,
+      "ctr": 33.33
+    },
+    {
+      "keyword": "paper bag printing",
+      "clicks": 1,
+      "impressions": 1,
+      "rank": 4,
+      "ctr": 100
+    },
+    {
+      "keyword": "sticker printing hong kong",
+      "clicks": 1,
+      "impressions": 1,
+      "rank": 8,
+      "ctr": 100
+    },
+    {
+      "keyword": "a2 size printing near me",
+      "clicks": 1,
+      "impressions": 1,
+      "rank": 12,
+      "ctr": 100
+    }
+  ],
+  "filtered_competitor": [
+    "智印港"
+  ]
+}
