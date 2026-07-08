@@ -757,6 +757,61 @@ const lpWeddingFavorBag: BlogPostMeta = {
   },
 };
 
+// 2026-07-08 v4 純文字深度博客 (no cover) — P1 unlock 開始
+// Q-P1-01 (posters × 零售精品)
+const lpRetailPoster: BlogPostMeta = {
+  slug: 'retail-shop-poster-printing-guide',
+  categoryKey: 'posters',
+  source: 'legacy',
+  date: '2026-07-08',
+  title: {
+    'zh-hk': '香港零售精品店海報印刷指南 · 2026 開窗季檔期必備 | 智印雲 ZprintPro',
+    en: 'Retail Shop Poster Printing Guide 2026: Sizes, Paper & Display Tips | ZprintPro',
+    ja: '小売・セレクトショップ ポスター印刷ガイド2026：サイズ・用紙・ディスプレイ | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '零售精品店、品牌 pop-up store、商場快閃店主理人必睇。一個高質素的店內海報決定顧客逗留時間與銷售轉化。智印雲為香港零售市場提供 10-1,000 張小至大批量海報印刷,A3/A2/A1/A0 全尺寸 + 防水 PP 膠片,3-5 個工作天交付。',
+    en: 'Boutique, brand pop-up store, and mall retail owners — premium in-store posters decide customer dwell time and conversion. ZprintPro supplies 10-1,000 piece runs, A3/A2/A1/A0 full sizes, waterproof PP film options, 3-5 working day delivery from Asia factory.',
+    ja: 'ブティック・ブランド pop-up・モール小売オーナー様へ。高品質店内ポスターが顧客滞在時間とコンバージョンを決める。ZprintProは10-1,000枚小〜大ロット、A3/A2/A1/A0 全サイズ、防水 PP フィルム、3-5営業日納品。',
+  },
+};
+
+// Q-P1-02 (menus × 餐飲外賣)
+const lpRestaurantMenu: BlogPostMeta = {
+  slug: 'restaurant-menu-printing-guide',
+  categoryKey: 'menus',
+  source: 'legacy',
+  date: '2026-07-08',
+  title: {
+    'zh-hk': '香港餐廳菜單印刷指南 · 2026 餐飲旺季防水防油首選 | 智印雲 ZprintPro',
+    en: 'Restaurant Menu Printing Guide 2026: Waterproof, Fold & Material Tips | ZprintPro',
+    ja: 'レストランメニュー印刷ガイド2026：防水・折りたたみ・素材 | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '餐廳老闆、咖啡店、甜品店、酒樓必睇。一個高質素的菜單是顧客下單決定的最後一關,也是品牌形象的延伸。智印雲為香港餐飲市場提供 50-5,000 張小至大批量菜單印刷,防水 PP 過膠 / 硬皮精裝 / 紙巾式拋棄菜單全系列,5-7 個工作天交付。',
+    en: 'Restaurant, cafe, dessert shop, and banquet owners — a premium menu is the last gate before order and an extension of brand identity. ZprintPro supplies 50-5,000 piece runs, waterproof PP lamination, hardcover, and disposable paper menus, 5-7 working day delivery from Asia factory.',
+    ja: 'レストラン・カフェ・デザート店・宴会オーナー様へ。高品質メニューが注文決定の最後の関門でありブランドアイデンティティの延長。ZprintProは50-5,000枚小〜大ロット、防水 PP ラミネート・ハードカバー・使い捨て紙メニュー全シリーズ、5-7営業日納品。',
+  },
+};
+
+// Q-P1-03 (red-packets × 婚慶)
+const lpWeddingRedPacket: BlogPostMeta = {
+  slug: 'wedding-red-packet-printing-guide',
+  categoryKey: 'red-packets',
+  source: 'legacy',
+  date: '2026-07-08',
+  title: {
+    'zh-hk': '香港婚禮利是封印刷指南 · 2026 龍年婚嫁旺季必備 | 智印雲 ZprintPro',
+    en: 'Wedding Red Packet Printing Guide 2026: Materials, Personalization & Bulk | ZprintPro',
+    ja: 'ウエディング レッド packet 印刷ガイド2026：素材・パーソナライズ・大量印刷 | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '準新人、婚禮統籌師、宴會場地必睇。2026 龍年結婚旺季,一套精美的婚禮利是封決定賓客對婚禮的第一印象。智印雲為香港婚慶市場提供 100-10,000 個小至大批量定制,燙金新人姓名、個性化祝福語、繁體中文工藝,5-10 個工作天交付。',
+    en: 'Engaged couples, wedding planners, and venues — premium wedding red packets set the first impression for guests. ZprintPro supplies 100-10,000 piece custom orders with foil-stamped couple names, personalized blessings, 5-10 working day delivery from Asia factory.',
+    ja: 'ご婚約カップル・ウェディングプランナー・式場様へ。2026辰年ブライダルシーズン、精致な結婚祝儀袋がゲストの第一印象を決める。ZprintProは100-10,000個カスタムオーダー対応、箔押し新郎新婦名・パーソナライズ祝福・繁体字工芸、5-10営業日納品。',
+  },
+};
+
 // =============================================================================
 // 2026-07-06 weekly-meta-refresh: Tier B 行业 + P0 categories 纯文字深度博客
 // (手动补救: 11:00 weekly cron 跑但 session LLM API GOAWAY 崩了, 0 产出)
@@ -868,6 +923,13 @@ export const blogPosts: BlogPostMeta[] = [
   lpCosmeticsPackagingBox,
   lpTeaBeverageGiftBox,
   lpWeddingFavorBag,
+  // 2026-07-08 v4 daily-content-evolve (3 blogs): P1 unlock 開始 (matrix 4 P1 排隊)
+  // - lpRetailPoster: posters × 零售精品 (Q-P1-01) — P1 unlock 第 1 篇
+  // - lpRestaurantMenu: menus × 餐飲外賣 (Q-P1-02) — 同行業 menu 補完
+  // - lpWeddingRedPacket: red-packets × 婚慶 (Q-P1-03) — 婚慶行業第 2 篇
+  lpRetailPoster,
+  lpRestaurantMenu,
+  lpWeddingRedPacket,
 ];
 
 // =============================================================================

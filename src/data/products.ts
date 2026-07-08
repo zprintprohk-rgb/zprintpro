@@ -7383,8 +7383,10 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'a2-posters',
     category: 'posters',
     category_slug: 'posters',
-    name: 'A2海報印刷', nameEn: 'A2 Posters', nameJa: 'A2ポスター', title_zh: 'A2海報印刷 1張起印 HK$8/張 雙面彩印 防水 | 智印雲 ZprintPro',
-    description: 'A2海報印刷訂製，1張起印，HK$8起/張。200g銅版紙/PP合成紙，雙面四色印刷，防水防曬耐用。適合地產活動展覽店舖推廣，48小時交貨，全港送貨。', descriptionEn: 'Standard A2 size, first choice for event promotion. 157g glossy paper, vibrant colors, same-day delivery.', descriptionJa: '標準A2サイズ、イベント宣伝の第一選択。157gコート紙、鮮やかな色彩、即日納品。', description_zh: '標準A2尺寸，活動宣傳、產品推廣首選。157g銅版紙，色彩鮮豔，即日交貨。',
+    name: 'A2海報印刷', nameEn: 'A2 Posters', nameJa: 'A2ポスター', title_zh: 'A2海報印刷 1張起印 HK$8/張 雙面彩印 防水 | 零售精品/餐飲外賣/教育培訓 | 智印雲 ZprintPro',
+    description: 'A2海報印刷訂製，1張起印，HK$8起/張。200g銅版紙/PP合成紙，雙面四色印刷，防水防曬耐用。適合地產活動展覽店舖推廣，48小時交貨，全港送貨。**適配行業**:零售精品店、品牌 pop-up、商場快閃、餐廳菜單推廣、咖啡店、教育培訓機構、藝廊展覽、婚慶活動。', descriptionEn: 'Standard A2 size, first choice for event promotion. 157g glossy paper, vibrant colors, same-day delivery. **Best for**: retail boutique, brand pop-up, mall flash store, restaurant menu promo, cafe, education training, gallery exhibition, wedding events.', descriptionJa: '標準A2サイズ、イベント宣伝の第一選択。157gコート紙、鮮やかな色彩、即日納品。**適用業界**:小売セレクト、ブランド pop-up、ショッピングモール フラッシュ、レストランメニュー、カフェ、教育研修、ギャラリー展示、ブライダルイベント。', description_zh: '標準A2尺寸，活動宣傳、產品推廣首選。157g銅版紙，色彩鮮豔，即日交貨。',
+    optimizedAt: '2026-07-08',
+    optimizationRound: 1,
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -9944,8 +9946,10 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'foil-red-packets',
     category: 'red-packets',
     category_slug: 'red-packets',
-    name: '燙金利是封', nameEn: 'Foil Red Packets', nameJa: '箔押しポチ袋', title_zh: '燙金利是封',
-    description: '傳統燙金工藝，喜慶大方。多種吉祥圖案可選，也可定制專屬設計。適合企業派發、節日營銷。', descriptionEn: 'Traditional foil stamping, festive and elegant. Multiple auspicious patterns or custom designs.', descriptionJa: '伝統的な箔押し加工、縁起が良く上品。複数の縁起の良い柄またはカスタムデザイン。', description_zh: '傳統燙金工藝，喜慶大方。多種吉祥圖案可選，也可定制專屬設計。適合企業派發、節日營銷。',
+    name: '燙金利是封', nameEn: 'Foil Red Packets', nameJa: '箔押しポチ袋', title_zh: '燙金利是封 · 婚慶/年會/品牌活動定制 | 智印雲 ZprintPro',
+    description: '傳統燙金工藝，喜慶大方。多種吉祥圖案可選，也可定制專屬設計。適合企業派發、節日營銷。**適配行業**:婚慶喜宴、企業年會、品牌活動、春節促銷、客戶禮贈、酒店開業、金融證券回饋、奢侈品品牌營銷。', descriptionEn: 'Traditional foil stamping, festive and elegant. Multiple auspicious patterns or custom designs. **Best for**: wedding banquets, corporate annual events, brand activations, Spring Festival promos, client gifting, hotel openings, financial client rewards, luxury brand marketing.', descriptionJa: '伝統的な箔押し加工、縁起が良く上品。複数の縁起の良い柄またはカスタムデザイン。**適用業界**:ブライダル宴会、企業年会、ブランドアクティベーション、春節促销、クライアントギフト、ホテル開業、金融顧客還元、ラグジュアリーブランド マーケティング。', description_zh: '傳統燙金工藝，喜慶大方。多種吉祥圖案可選，也可定制專屬設計。適合企業派發、節日營銷。',
+    optimizedAt: '2026-07-08',
+    optimizationRound: 1,
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -12374,8 +12378,10 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'pvc-menus',
     category: 'menus',
     category_slug: 'menus',
-    name: 'PVC餐牌', nameEn: 'PVC Menus', nameJa: 'PVCメニュー', title_zh: 'PVC餐牌',
-    description: '防水防油PVC材質，易清潔耐用。餐廳、咖啡店首選。', descriptionEn: 'Waterproof and oil-resistant PVC material, easy to clean and durable.', descriptionJa: '防水・耐油性PVC素材、お手入れ簡単で耐久性あり。', description_zh: '防水防油PVC材質，易清潔耐用。餐廳、咖啡店首選。',
+    name: 'PVC餐牌', nameEn: 'PVC Menus', nameJa: 'PVCメニュー', title_zh: 'PVC餐牌 · 防水防油可水洗 | 餐廳/咖啡店/酒吧 | 智印雲 ZprintPro',
+    description: '防水防油PVC材質，易清潔耐用。餐廳、咖啡店首選。**適配行業**:餐廳、咖啡店、酒吧、茶餐廳、火鍋店、居酒屋、酒店餐廳、婚宴酒樓。', descriptionEn: 'Waterproof and oil-resistant PVC material, easy to clean and durable. **Best for**: restaurants, cafes, bars, cha chaan teng, hot pot, izakaya, hotel restaurants, wedding banquet halls.', descriptionJa: '防水・耐油性PVC素材、お手入れ簡単で耐久性あり。**適用業界**:レストラン、カフェ、バー、茶餐廳 (香港スタイル食堂)、火鍋店、居酒屋、ホテルレストラン、ブライダル宴会。', description_zh: '防水防油PVC材質，易清潔耐用。餐廳、咖啡店首選。',
+    optimizedAt: '2026-07-08',
+    optimizationRound: 1,
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>

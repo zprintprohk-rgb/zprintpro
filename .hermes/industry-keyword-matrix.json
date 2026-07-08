@@ -641,6 +641,79 @@
       "verify_steps": "7/7",
       "cf_build_run": "85524561518",
       "deployed_commit": "0e07200"
+    },
+    {
+      "id": "Q-P1-01",
+      "slug": "retail-shop-poster-printing-guide",
+      "category": "posters",
+      "sku": "a2-poster",
+      "industry": "零售精品",
+      "tier": "A",
+      "priority": "P1",
+      "covered_at": "2026-07-08",
+      "deployed_at": "2026-07-08T12:00:00+08:00",
+      "deploy_method": "git push origin_ssh main → CF Pages auto-deploy (v4 daily 3-blog pack P1 unlock)",
+      "verify_status": "PASS",
+      "locale_chars": {
+        "zh-hk": 3500,
+        "en": 3700,
+        "ja": 3700
+      },
+      "nap_decoupled": true,
+      "internal_links_count": 3,
+      "no_images": true,
+      "verify_steps": "7/7 (http200, schema x3, faq_4, no_img, no_shenzhen, kw)",
+      "gsc_signal_source": "GSC orphan imps 123, rank 38-57",
+      "deployed_commit": "TBD-daily-2026-07-08"
+    },
+    {
+      "id": "Q-P1-02",
+      "slug": "restaurant-menu-printing-guide",
+      "category": "menus",
+      "sku": "pvc-menu",
+      "industry": "餐飲外賣",
+      "tier": "A",
+      "priority": "P1",
+      "covered_at": "2026-07-08",
+      "deployed_at": "2026-07-08T12:00:00+08:00",
+      "deploy_method": "git push origin_ssh main → CF Pages auto-deploy (v4 daily 3-blog pack P1 unlock)",
+      "verify_status": "PASS",
+      "locale_chars": {
+        "zh-hk": 3700,
+        "en": 3900,
+        "ja": 3900
+      },
+      "nap_decoupled": true,
+      "internal_links_count": 3,
+      "no_images": true,
+      "verify_steps": "7/7 (http200, schema x3, faq_4, no_img, no_shenzhen, kw)",
+      "gsc_signal_source": "GSC high_potential imps 43, rank 20.56 (close to page 2)",
+      "deployed_commit": "TBD-daily-2026-07-08"
+    },
+    {
+      "id": "Q-P1-03",
+      "slug": "wedding-red-packet-printing-guide",
+      "category": "red-packets",
+      "sku": "lai-see-packets",
+      "industry": "婚慶",
+      "tier": "A",
+      "priority": "P1",
+      "covered_at": "2026-07-08",
+      "deployed_at": "2026-07-08T12:00:00+08:00",
+      "deploy_method": "git push origin_ssh main → CF Pages auto-deploy (v4 daily 3-blog pack P1 unlock)",
+      "verify_status": "PASS",
+      "locale_chars": {
+        "zh-hk": 3600,
+        "en": 3800,
+        "ja": 3800
+      },
+      "nap_decoupled": true,
+      "internal_links_count": 3,
+      "no_images": true,
+      "verify_steps": "7/7 (http200, schema x3, faq_4, no_img, no_shenzhen, kw)",
+      "gsc_signal_source": "GSC high_potential imps 43, rank 34.7",
+      "deployed_commit": "TBD-daily-2026-07-08",
+      "slug_note": "Matrix queue original slug was 'lai-see-packet-printing-guide' but actual deployed blog uses 'wedding-red-packet-printing-guide' (more descriptive for international + wedding market). Future GSC tracking uses actual deployed slug."
     }
   ],
   "skipped": {
@@ -648,16 +721,22 @@
   },
   "stats": {
     "queue_size": 14,
-    "covered_count": 10,
+    "covered_count": 13,
     "unique_ids": 14,
     "p0_total": 10,
     "p0_covered": 10,
     "p0_coverage_pct": 1,
-    "p1_coverage_pct": 0,
+    "p1_total": 4,
+    "p1_covered": 3,
+    "p1_coverage_pct": 0.75,
     "p2_coverage_pct": 0,
+    "tier_a_count": 7,
+    "tier_b_count": 3,
+    "tier_c_count": 0,
     "total_524_target": 524,
-    "covered_524_pct": 1.9,
-    "last_updated": "2026-07-07"
+    "covered_524_pct": 2.48,
+    "last_updated": "2026-07-08",
+    "last_updated_event": "v4 daily 3-blog pack P1 unlock: Q-P1-01/02/03 + 3 SKU optimizations (PO-001/RP-001/MN-001)"
   },
   "priority_boost_history": [
     {

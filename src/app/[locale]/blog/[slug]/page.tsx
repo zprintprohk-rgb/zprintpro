@@ -257,6 +257,30 @@ const posts: Record<string, Record<string, { title: string; description: string;
       content: '',
     },
 
+    // 2026-07-08 v4 純文字深度ブログ: Retail Poster (P1 unlock × 零售精品) — 純文字・無図
+    'retail-shop-poster-printing-guide': {
+      title: 'Retail Shop Poster Printing Guide 2026: Sizes, Paper & Display Tips | ZprintPro',
+      description: 'Boutique, brand pop-up store, and mall retail owners — premium in-store posters decide customer dwell time and conversion. ZprintPro supplies 10-1,000 piece runs, A3/A2/A1/A0 full sizes, waterproof PP film, 3-5 working day delivery from Asia factory.',
+      date: '2026-07-08', category: 'Retail Poster',
+      content: '',
+    },
+
+    // 2026-07-08 v4 純文字深度ブログ: Restaurant Menu (P1 unlock × 餐飲外賣) — 純文字・無図
+    'restaurant-menu-printing-guide': {
+      title: 'Restaurant Menu Printing Guide 2026: Waterproof, Fold & Material Tips | ZprintPro',
+      description: 'Restaurant, cafe, dessert shop, and banquet owners — premium menu is the last gate before order and brand identity. ZprintPro supplies 50-5,000 piece runs, waterproof PP lamination, hardcover, disposable menus, 5-7 working day delivery from Asia factory.',
+      date: '2026-07-08', category: 'Restaurant Menu',
+      content: '',
+    },
+
+    // 2026-07-08 v4 純文字深度ブログ: Wedding Red Packet (P1 unlock × 婚慶) — 純文字・無図
+    'wedding-red-packet-printing-guide': {
+      title: 'Wedding Red Packet Printing Guide 2026: Materials, Personalization & Bulk | ZprintPro',
+      description: 'Engaged couples, wedding planners, and venues — premium wedding red packets set the first impression for guests. ZprintPro supplies 100-10,000 piece custom orders with foil-stamped couple names, personalized blessings, 5-10 working day delivery from Asia factory.',
+      date: '2026-07-08', category: 'Wedding Red Packet',
+      content: '',
+    },
+
   },
   ja: {
     'company-intro': { title: 'ZprintPro会社概要：専門設備とワンストップ印刷サービス', description: 'ZprintProはハイデルベルグ6+1印刷機、HPデジタル印刷機、マルティニ製本ラインなどの先進設備を保有し、ワンストップ印刷サービスを提供しています。', date: '2024-06-01', category: '会社ニュース', content: '' },
@@ -351,12 +375,36 @@ const posts: Record<string, Record<string, { title: string; description: string;
       content: '',
     },
 
+    // 2026-07-08 v4 純文字深度ブログ: 小売ポスター (P1 unlock × 零售精品) — 純文字・無図
+    'retail-shop-poster-printing-guide': {
+      title: '小売・セレクトショップ ポスター印刷ガイド2026：サイズ・用紙・ディスプレイ | ZprintPro',
+      description: 'ブティック・ブランド pop-up・モール小売オーナー様へ。高品質店内ポスターが顧客滞在時間とコンバージョンを決める。ZprintProは10-1,000枚小〜大ロット、A3/A2/A1/A0 全サイズ、防水 PP フィルム、3-5営業日納品。',
+      date: '2026-07-08', category: '小売ポスター',
+      content: '',
+    },
+
+    // 2026-07-08 v4 純文字深度ブログ: レストランメニュー (P1 unlock × 餐飲外賣) — 純文字・無図
+    'restaurant-menu-printing-guide': {
+      title: 'レストランメニュー印刷ガイド2026：防水・折りたたみ・素材 | ZprintPro',
+      description: 'レストラン・カフェ・デザート店・宴会オーナー様へ。高品質メニューが注文決定の最後の関門でありブランドアイデンティティの延長。ZprintProは50-5,000枚小〜大ロット、防水 PP ラミネート・ハードカバー・使い捨て紙メニュー全シリーズ、5-7営業日納品。',
+      date: '2026-07-08', category: 'レストランメニュー',
+      content: '',
+    },
+
+    // 2026-07-08 v4 純文字深度ブログ: ウエディング レッド packet (P1 unlock × 婚慶) — 純文字・無図
+    'wedding-red-packet-printing-guide': {
+      title: 'ウエディング レッド packet 印刷ガイド2026：素材・パーソナライズ・大量印刷 | ZprintPro',
+      description: 'ご婚約カップル・ウェディングプランナー・式場様へ。2026辰年ブライダルシーズン、精致な結婚祝儀袋がゲストの第一印象を決める。ZprintProは100-10,000個カスタムオーダー対応、箔押し新郎新婦名・パーソナライズ祝福・繁体字工芸、5-10営業日納品。',
+      date: '2026-07-08', category: 'ウエディング祝儀',
+      content: '',
+    },
+
   }
 };
 
 // 2026-07-05 修：补 packaging-box-custom-guide（之前 src/data/blog-data 已加 content，但 articleSlugs 缺位导致 generateStaticParams 不生成该 slug → Post not found）
 // 2026-07-06 手动补救: weekly-meta-refresh 11:00 session LLM API GOAWAY 崩了, 手动补 3 篇 Tier B 博客 (Tier B 行业 × P0 品类), 需同步加到 articleSlugs
-const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-specs', 'brand-materials-checklist', 'mtr-advertising-specs', 'sticker-guide', 'business-card-design', 'packaging-trends', 'cmyk-guide', 'paper-materials', 'eco-printing', 'flyer-printing-guide', 'food-packaging-printing-guide', 'paper-bag-printing-guide', 'poster-printing-guide', 'restaurant-opening-flyer-printing-guide', 'packaging-box-custom-guide', 'pet-food-sticker-printing-guide', 'apparel-shopping-bag-printing-guide', 'cross-border-ecommerce-shipping-box-guide', 'real-estate-brochure-box-printing-guide', 'pharmaceutical-label-printing-guide', 'jewellery-shopping-bag-printing-guide', 'cosmetics-packaging-box-printing-guide', 'tea-beverage-gift-box-printing-guide', 'wedding-favor-bag-printing-guide'];
+const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-specs', 'brand-materials-checklist', 'mtr-advertising-specs', 'sticker-guide', 'business-card-design', 'packaging-trends', 'cmyk-guide', 'paper-materials', 'eco-printing', 'flyer-printing-guide', 'food-packaging-printing-guide', 'paper-bag-printing-guide', 'poster-printing-guide', 'restaurant-opening-flyer-printing-guide', 'packaging-box-custom-guide', 'pet-food-sticker-printing-guide', 'apparel-shopping-bag-printing-guide', 'cross-border-ecommerce-shipping-box-guide', 'real-estate-brochure-box-printing-guide', 'pharmaceutical-label-printing-guide', 'jewellery-shopping-bag-printing-guide', 'cosmetics-packaging-box-printing-guide', 'tea-beverage-gift-box-printing-guide', 'wedding-favor-bag-printing-guide', 'retail-shop-poster-printing-guide', 'restaurant-menu-printing-guide', 'wedding-red-packet-printing-guide'];
 const guideSlugs = getAllBuyingGuideSlugs();
 const clusterSlugs = getAllClusterSlugs();
 const allSlugs = [...articleSlugs, ...guideSlugs, ...clusterSlugs];
