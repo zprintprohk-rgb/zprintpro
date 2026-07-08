@@ -306,9 +306,9 @@ const categorySeoData: Record<string, {
   },
   'stickers': {
     titles: {
-      'zh-hk': '貼紙印刷 香港 | 智印雲 ZprintPro — 防水貼紙 / 透明貼紙 / 異形貼紙 / 標籤貼紙 定制',
-      en: 'Custom Sticker Printing | ZprintPro — Waterproof / Transparent / Die-Cut / Product Labels',
-      ja: 'ステッカー印刷 カスタム | ZprintPro — 防水 / 透明 / ダイカット / 商品ラベル',
+      'zh-hk': '貼紙印刷 50張起印 · 防水/透明/異形 食品級FDA合規 | 智印雲',
+      en: 'Custom Sticker Printing 50 MOQ | Waterproof FDA-Compliant | ZprintPro',
+      ja: 'ステッカー印刷 50枚〜 防水・透明・異形 FDA対応 | ZprintPro',
     },
     keywords: {
       'zh-hk': '貼紙印刷,防水貼紙,標籤貼紙,透明貼紙,圓形貼紙,異形貼紙,產品標籤,食品標籤,電商貼紙,車身貼紙,藥品標籤,GMP認證標籤,保健品標籤,防偽標籤',
@@ -316,16 +316,16 @@ const categorySeoData: Record<string, {
       ja: 'シール印刷,ステッカー印刷,防水シール,透明シール,円形シール,ダイカットシール,商品ラベル,食品ラベル,梱包用シール,ホログラムシール,医薬品ラベル,GMPラベル,改ざん防止ラベル',
     },
     descriptions: {
-      'zh-hk': '香港貼紙印刷訂製，50張起訂，防水防曬耐用。支援圓形、異形、透明、食品標籤、LOGO標籤等全系列貼紙。電商包裝、產品標籤、活動贈品首選；藥品標籤符合 GMP 認證 + FDA 21 CFR 合規，可追溯防偽。免費設計，全港送貨，即日交貨。',
-      en: 'Custom sticker printing — waterproof, UV-resistant, durable. Die-cut, round, transparent, food-safe labels. 50 pcs minimum, rush production available. Pharmaceutical labels: GMP-compliant, FDA 21 CFR / EU GMP Annex 15, tamper-evident and traceable. Free design, ships to US, UK, AU & worldwide.',
-      ja: 'プロのシール印刷サービス。防水・耐UV・耐久性抜群。ダイカット・円形・透明・食品対応ラベル。50枚から注文可能、即日発送対応。医薬品ラベル：GMP準拠・FDA 21 CFR / EU GMP Annex 15・改ざん防止・トレーサブル対応。無料デザイン、全国配送。',
+      'zh-hk': '貼紙印刷 50 張起印. 防水 / 透明 / 異形 / 標籤貼紙, FDA 食品接觸級 + SGS 認證. 香港 + 跨境電商 + 日本市場. 30 秒 AI 即時報價, ISO 9001 認證, 4 色柯式印刷.',
+      en: 'Custom sticker printing 50 MOQ. Waterproof, transparent, die-cut, product label stickers. FDA food-contact + SGS certified. Free design + DHL 2-4 day global delivery.',
+      ja: 'ステッカー印刷 50 枚から対応. 防水・透明・ダイカット・商品ラベル. FDA 食品接触基準 + SGS 認証. 無料デザイン + DHL 国際配送 2-4 日.',
     },
   },
   'flyers': {
     titles: {
-      'zh-hk': '宣傳單張印刷 香港 | 智印雲 ZprintPro — A4/A5 傳單 / 摺頁 快印',
-      en: 'Flyer Printing Service | ZprintPro — A4 / A5 / Folded Leaflets / Grand Opening / Rush',
-      ja: 'チラシ印刷サービス | ZprintPro — A4 / A5 / 折込 / 開業チラシ / 急ぎ対応',
+      'zh-hk': '宣傳單張印刷 100張起印 即日交貨 A3/A4/A5摺頁傳單 | 智印雲',
+      en: 'Flyer Printing 100 MOQ Same-Day | A3/A4/A5 Folded Leaflets | ZprintPro',
+      ja: 'チラシ印刷 A4/A5 100枚〜 即日 折込・二つ折り | ZprintPro',
     },
     keywords: {
       'zh-hk': '宣傳單張印刷,傳單印刷,傳單派發,A4單張,A5單張,摺頁傳單,開業傳單,餐廳傳單,活動傳單,電商傳單',
@@ -333,16 +333,16 @@ const categorySeoData: Record<string, {
       ja: 'チラシ印刷,フライヤー印刷,パンフレット印刷,A4チラシ,A5チラシ,折りパンフレット,開業チラシ,飲食店チラシ,イベントチラシ,不動産チラシ',
     },
     descriptions: {
-      'zh-hk': '香港宣傳單張印刷服務｜智印雲提供A4/A5單張、摺頁傳單、開業傳單印刷，多種紙質可選，價格優惠，質量保證。10張起訂，即日交貨！',
-      en: 'Flyer & leaflet printing from 10 copies. A4/A5/folded formats, glossy/matte/uncoated paper. Rush printing available, global delivery. Free design. Perfect for grand openings, events, restaurants, campaigns.',
-      ja: 'プロのチラシ印刷サービス。10枚から注文可能。A4/A5/折りパンフレット、光沢紙/マット紙/書籍紙に対応。即日印刷・配送。無料デザイン。開業・イベント・飲食店・選挙に最適。',
+      'zh-hk': '宣傳單張印刷 100 張起印. A4/A5/A6 摺頁, 開業傳單 + 餐廳單張 + 補習社單張. 即日交貨, 30 秒 AI 即時報價, 全球 DHL 2-4 天配送.',
+      en: 'Custom flyer printing 100 MOQ. A4/A5 fold, restaurant & event flyers. Same-day production + global DHL 2-4 day shipping. 30-second AI instant quote.',
+      ja: 'チラシ印刷 A4/A5 100 枚から対応. 飲食店・開業・イベントの チラシ. 即日印刷 + DHL 国際配送 2-4 日.',
     },
   },
   'packaging': {
     titles: {
-      'zh-hk': '食品包裝印刷 香港 | 智印雲 ZprintPro — 食品級包裝盒/袋 定制印刷',
-      en: 'Custom Packaging Boxes | ZprintPro — Gift / Cosmetic / Food / Mailer / Rigid Boxes',
-      ja: 'パッケージボックス カスタム | ZprintPro — ギフト / 化粧 / 食品 / メール便 / 組み立て',
+      'zh-hk': '食品包裝印刷 100個起印 · FDA級安全 化妝品/食品/禮盒 4種盒型 | 智印雲',
+      en: 'Custom Packaging Boxes 100 MOQ | FDA Food-Safe 4 Box Styles | ZprintPro',
+      ja: 'パッケージ印刷 100個〜 FDA対応 OEM 食品・化粧品・ギフト | ZprintPro',
     },
     keywords: {
       'zh-hk': '食品包裝印刷,食品包裝盒,食品袋印刷,食品級包裝,食品貼紙印刷,月餅盒,禮品盒,化妝品包裝盒,包裝盒定制,紙盒印刷,樓書印刷,資料匣,新盤樓書,豪宅畫冊,精裝樓書',
@@ -350,16 +350,16 @@ const categorySeoData: Record<string, {
       ja: 'パッケージ印刷,箱印刷,ギフト箱,化粧品パッケージ,食品箱,商品パッケージ,小ロットパッケージ,段ボール箱,紙箱印刷,梱包材,不動産パンフレット,資料箱,デベロッパーパンフ,上製本,ハードケース箱',
     },
     descriptions: {
-      'zh-hk': '香港食品包裝印刷服務｜智印雲提供食品級包裝盒、食品袋、食品貼紙定制印刷，符合食品安全標準，支持小批量起訂。地產商新盤樓書 + 硬殼天地蓋資料匣：騎馬釘、膠裝、精裝樓書 100-5,000 套，5-10 天交付。免費報價，立即查詢！',
-      en: 'Custom packaging box printing from 100 units. Gift boxes, cosmetic boxes, food packaging, mooncake boxes. Foil stamping, UV, embossing. Free die-cut design, rush sampling. ISO9001 & FSC certified. Real estate brochures + rigid telescopic property boxes for developers: saddle stitch / perfect bound / hardcover, 100-5,000 sets, 5-10 working day delivery. Global shipping to US, UK, AU.',
-      ja: 'プロのパッケージ印刷サービス。100個から注文可能。ギフト箱・化粧品箱・食品箱・月餅箱。箔押し・UV・エンボス対応。無料型設計、即日サンプル対応。ISO9001・FSC認証取得。不動産パンフレット＋ハードケース天地蓋資料箱：中綴じ・無線綴じ・上製本、100〜5,000セット、5-10営業日納品。全国配送。',
+      'zh-hk': '食品包裝印刷 100 個起印, FDA 級安全 + 化妝品盒 4 種盒型 (天地蓋/磁吸/抽屜/書型). 香港本地 + 跨境美妝電商 + 日本市場. DHL 全球 2-4 天, 30 秒 AI 即時報價.',
+      en: 'Custom packaging boxes from 100 units. FDA food-safe + cosmetic-grade 4 box styles (lift-off lid, magnetic, drawer, book-style). Asia factory direct + DHL Express 2-4 day global delivery.',
+      ja: 'パッケージ印刷 100 個から対応. FDA 対応 + 化粧品グレード 4 箱型 (天地蓋・マグネット・引き出し・ブック型). アジア自社工場 + DHL 国際配送 2-4 日.',
     },
   },
   'posters': {
     titles: {
-      'zh-hk': '海報印刷 香港 | 智印雲 ZprintPro — A1/A2 海報 / 戶外海報 / 展覽海報 / 大圖輸出',
-      en: 'Custom Poster Printing | ZprintPro — A1/A2 / Outdoor / Exhibition / Large Format',
-      ja: 'ポスター印刷 カスタム | ZprintPro — A1/A2 / 屋外 / 展示 / 大判出力',
+      'zh-hk': '海報印刷 1張起打 · A1/A2 戶外防水 展覽背板 | 智印雲',
+      en: 'Custom Poster Printing A1/A2 | 1 MOQ Outdoor Waterproof | ZprintPro',
+      ja: 'ポスター印刷 A1/A2 1枚〜 屋外防水 展示バナー | ZprintPro',
     },
     keywords: {
       'zh-hk': '海報印刷,A1海報,A2海報,A0海報,戶外海報,展覽海報,餐廳海報,Backdrop背景板,PP海報裱貼,防水海報',
@@ -367,16 +367,16 @@ const categorySeoData: Record<string, {
       ja: 'ポスター印刷,A1ポスター,A2ポスター,A0ポスター,屋外用ポスター,展示会用ポスター,イベントバックドロップ,PPラミネートポスター,防水ポスター,即日ポスター印刷',
     },
     descriptions: {
-      'zh-hk': '香港海報印刷專家，A0/A1/A2/A3全尺寸。戶外防水海報、展覽Backdrop、PP裱貼。10張起訂，最快4小時交貨。光粉紙/相紙/帆布多種材質。',
-      en: 'Poster printing — A0/A1/A2/A3 sizes. Outdoor waterproof posters, exhibition backdrops, PP lamination. 10 copies minimum, rush production available. Ships worldwide. Glossy / photo paper / canvas options.',
-      ja: 'プロのポスター印刷サービス。A0/A1/A2/A3サイズ対応。屋外用防水ポスター・展示会用バックドロップ・PPラミネート。10枚から、最短4時間で対応。光沢紙・写真用紙・キャンバス対応。',
+      'zh-hk': '海報印刷 1 張起打, A1/A2/A3 戶外防水 + 展覽背板 + 餐廳海報. 香港 + 全球, 30 秒 AI 即時報價, 4 色柯式, 7 天交付.',
+      en: 'Custom poster printing 1 MOQ. A1/A2/A3 outdoor waterproof + exhibition backdrops + restaurant posters. Free design + global DHL 2-4 day shipping.',
+      ja: 'ポスター印刷 1 枚から対応. A1/A2/A3 屋外防水 + 展示背景 + 飲食店ポスター. 無料デザイン + DHL 国際配送 2-4 日.',
     },
   },
   'paper-bags': {
     titles: {
-      'zh-hk': '紙袋印刷 香港 | 智印雲 ZprintPro — 牛皮紙袋 / 白卡紙袋 / 精品紙袋 定制',
-      en: 'Custom Paper Bags | ZprintPro — Kraft / White Card / Eco-Friendly / Gift Bags',
-      ja: '紙袋印刷 カスタム | ZprintPro — クラフト / ホワイトカード / エコ / ギフト',
+      'zh-hk': '紙袋印刷 100個起印 HK$1.8起/個 · FSC認證牛皮紙/白卡紙袋 | 智印雲',
+      en: 'Paper Bag Printing 100 MOQ HK$1.8+ | FSC Kraft & White Card | ZprintPro',
+      ja: '紙袋印刷 100個〜 FSC認証クラフト・白カード・エコ | ZprintPro',
     },
     keywords: {
       'zh-hk': '紙袋印刷,牛皮紙袋,環保紙袋,手提紙袋,品牌紙袋,禮品紙袋,餐廳外賣紙袋,小批量紙袋,棉繩紙袋,白卡紙袋,珠寶紙袋,鐘錶紙袋,奢侈品紙袋,黑卡紙袋,絲帶手挽',
@@ -384,9 +384,9 @@ const categorySeoData: Record<string, {
       ja: '紙袋印刷,クラフト紙袋,エコ紙袋,手提げ紙袋,ブランド紙袋,ギフト袋,テイクアウト紙袋,小ロット紙袋,紙袋作成,ペーパーバッグ,宝飾紙袋,腕時計紙袋,ラグジュアリー紙袋,ブラックカード紙袋,サテンリボン持ち手',
     },
     descriptions: {
-      'zh-hk': '香港紙袋印刷定制服務｜智印雲提供牛皮紙袋、白卡紙袋、環保紙袋、禮品紙袋等各類紙袋印刷，支持LOGO定制，小批量起訂。珠寶鐘錶品牌紙袋：黑卡紙 + 燙金 + 絲帶手挽 200-50,000 枚，7-15 天交付。免費設計，即日交貨！',
-      en: 'Custom paper bag printing from 100 units. Kraft bags, eco-friendly bags, retail & gift bags. Foil stamping, UV, embossing. FSC-certified paper, global delivery. Jewellery & watch brand bags: black card + foil + satin ribbon, 200-50,000 pieces, 7-15 day delivery. Perfect for retail, F&B, events, branding.',
-      ja: 'プロの紙袋印刷サービス。100個から注文可能。クラフト紙袋・エコ紙袋・手提げギフト袋。箔押し・UV・エンボス対応。FSC認証紙、即日納品。宝飾・腕時計ブランド紙袋：ブラックカード＋箔押し＋サテンリボン、200〜50,000枚、7-15営業日納品。小売・飲食・イベント・ブランディングに最適。',
+      'zh-hk': '紙袋印刷 100 個起印, FSC 認證環保牛皮紙袋 + 白卡紙袋 + 精品禮品袋. 香港深圳廠直送 + DHL 全球 2-4 天送達. 即日打樣, 30 秒 AI 即時報價, ISO 9001 認證品質.',
+      en: 'Custom paper bags from 100 units. FSC-certified kraft, white card & eco-friendly gift bags. Free die-cut design + DHL Express 2-4 day global delivery. 30-second AI instant quote, ISO 9001.',
+      ja: '紙袋印刷 100 個から対応. FSC 認証クラフト・白カード・エコ・ギフト袋. 無料サンプル+型設計 + DHL 国際配送 2-4 日. 30 秒 AI 即時見積.',
     },
   },
   
@@ -421,9 +421,9 @@ const categorySeoData: Record<string, {
   },
   'menus': {
     titles: {
-      'zh-hk': '餐牌印刷 香港 | 智印雲 ZprintPro — 菜單 / 餐牌 / 酒水牌 定制印刷',
-      en: 'Custom Menu Printing | ZprintPro — PVC / Paper / Hardcover / Disposable Menus',
-      ja: 'メニュー印刷 カスタム | ZprintPro — PVC / 紙 / ハードカバー / 使い捨て',
+      'zh-hk': '餐牌印刷 100本起 · 防水PVC/紙質菜單 餐廳茶餐廳適用 | 智印雲',
+      en: 'Custom Menu Printing 100 MOQ | Waterproof PVC & Paper Menus | ZprintPro',
+      ja: 'メニュー印刷 100部〜 防水PVC・紙メニュー 飲食店向け | ZprintPro',
     },
     keywords: {
       'zh-hk': '餐牌印刷,菜單印刷,酒水牌,PVC餐牌,過膠餐牌,皮革餐牌,餐廳餐牌,茶餐廳餐牌,酒吧餐牌,外賣餐牌',
@@ -431,16 +431,16 @@ const categorySeoData: Record<string, {
       ja: 'メニュー印刷,レストランメニュー,メニューブック,PVCメニュー,ラミネートメニュー,レザーメニュー,居酒屋メニュー,カフェメニュー',
     },
     descriptions: {
-      'zh-hk': '香港餐牌印刷定制服務｜智印雲提供PVC餐牌、過膠餐牌、皮革餐牌、菜單印刷，防水耐用，適合餐廳、茶餐廳、酒吧使用。免費設計，小批量起訂！',
-      en: 'Custom menu printing for restaurants, bars & cafes. PVC, laminated & leather menu covers. Waterproof & durable. Free design, small MOQ. Global shipping to US, UK, AU & worldwide.',
-      ja: 'プロのメニュー印刷サービス。レストラン・バー・カフェ向け。PVC・ラミネート・レザーカバー対応。防水・耐久性抜群。無料デザイン、小ロット対応。',
+      'zh-hk': '餐牌印刷 100 本起印. 防水 PVC / 紙質菜單 / 精裝 / 一次性, 餐廳茶餐廳酒吧適用. 香港本地 + DHL 全球, ISO 9001 認證. 即日打樣, 30 秒 AI 即時報價.',
+      en: 'Custom menu printing 100 MOQ. Waterproof PVC, paper, hardcover, disposable menus for restaurants, cafes, bars. Free design + rush production. 30-second AI instant quote.',
+      ja: 'メニュー印刷 100 部から対応. 防水 PVC・紙・ハードカバー・使い捨て, レストラン・カフェ・バー向け. 無料デザイン + 短納期対応.',
     },
   },
   'red-packets': {
     titles: {
-      'zh-hk': '利是封印刷 香港 | 智印雲 ZprintPro — 企業定制 / 婚慶 / 賀年 利是封',
-      en: 'Red Packet Printing | ZprintPro — Chinese New Year / Wedding / Corporate / Foil Stamped',
-      ja: 'ポチ袋印刷 カスタム | ZprintPro — 旧正月 / 結婚式 / 企業 / 箔押し',
+      'zh-hk': '利是封印刷 100個起 · 燙金UV 婚慶/新年/企業LOGO定制 | 智印雲',
+      en: 'Custom Lai See Printing 100 MOQ | Foil Wedding & New Year | ZprintPro',
+      ja: 'ポチ袋印刷 100個〜 箔押し 婚礼・企業・お正月 | ZprintPro',
     },
     keywords: {
       'zh-hk': '利是封印刷,企業利是封,婚慶利是封,賀年利是封,定制利是封,燙金利是封,紅包印刷,新年利是封,結婚利是封,LOGO利是封',
@@ -448,9 +448,9 @@ const categorySeoData: Record<string, {
       ja: 'ポチ袋印刷,オリジナルポチ袋,お年玉袋,結婚式ポチ袋,企業ポチ袋,箔押しポチ袋,紅包印刷,新年ポチ袋',
     },
     descriptions: {
-      'zh-hk': '香港利是封印刷定制服務｜智印雲提供企業LOGO利是封、婚慶利是封、賀年利是封印刷，支持燙金、UV等特殊工藝。小批量起訂，質量保證！',
-      en: 'Custom red packet printing for Chinese New Year, weddings & corporate branding. Foil stamping, UV & special finishes. Small MOQ, premium quality. Global shipping.',
-      ja: 'プロのポチ袋印刷サービス。お正月・結婚式・企業ブランディング向け。箔押し・UV・特殊加工対応。小ロット対応、高品質。全国配送。',
+      'zh-hk': '利是封印刷 100 個起印. 燙金 / 局部 UV / 婚慶 / 賀年 / 企業 LOGO 定制. 香港茶餐廳銀行客戶喜愛. 30 秒 AI 即時報價, 4 色印刷, 7 天交付.',
+      en: 'Custom red packet printing 100 MOQ. Foil stamping, spot UV, wedding & corporate Chinese New Year red envelopes. Free design + DHL global shipping.',
+      ja: 'ポチ袋印刷 100 個から対応. 箔押し・スポット UV・婚礼・お正月・企業 LOGO. 無料デザイン + DHL 国際配送.',
     },
   },
   'banners': {
