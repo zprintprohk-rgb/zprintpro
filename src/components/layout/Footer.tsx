@@ -60,6 +60,9 @@ const translations = {
           { label: '付款方式', href: '/payment-methods/' },
           { label: '送貨安排', href: '/help-center/#shipping' },
           { label: '退換政策', href: '/help-center/#returns' },
+          // 2026-07-08: 隱私政策 + 使用條款 从底部 strip 移到 幫助中心 (zh-hk 不需要「經營者資訊披露」按鍵)
+          { label: '隱私政策', href: '/privacy/' },
+          { label: '使用條款', href: '/terms/' },
         ],
       },
       {
@@ -114,6 +117,9 @@ const translations = {
           { label: 'Payment Methods', href: '/payment-methods/' },
           { label: 'Shipping', href: '/help-center/#shipping' },
           { label: 'Return Policy', href: '/help-center/#returns' },
+          // 2026-07-08: Privacy + Terms moved here from bottom strip (en also doesn't need Legal Disclosure)
+          { label: 'Privacy Policy', href: '/privacy/' },
+          { label: 'Terms of Service', href: '/terms/' },
         ],
       },
       {
@@ -168,6 +174,9 @@ const translations = {
           { label: '支払い方法', href: '/payment-methods/' },
           { label: '配送', href: '/help-center/#shipping' },
           { label: '返品ポリシー', href: '/help-center/#returns' },
+          // 2026-07-08: プライバシーポリシー + 利用規約 もここに集約 (ja は 特定商取引法表記のみ底部保持)
+          { label: 'プライバシーポリシー', href: '/privacy/' },
+          { label: '利用規約', href: '/terms/' },
         ],
       },
       {
@@ -383,29 +392,23 @@ export function Footer({ locale }: FooterProps) {
           </div>
         </div>
 
-        {/* 2026-06-18 Phase 0: Legal disclosure / privacy / terms links */}
-        <div className="mt-4 pt-4 border-t border-white/10">
-          <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-gray-400">
-            <Link
-              href={`${localePrefix}/legal/`}
-              className="hover:text-white transition-colors"
-            >
-              {t.legalLabel}
-            </Link>
-            <Link
-              href={`${localePrefix}/privacy/`}
-              className="hover:text-white transition-colors"
-            >
-              {t.privacyLabel}
-            </Link>
-            <Link
-              href={`${localePrefix}/terms/`}
-              className="hover:text-white transition-colors"
-            >
-              {t.termsLabel}
-            </Link>
+        {/* 2026-06-18 Phase 0: Legal disclosure / privacy / terms links
+            2026-07-08: zh-hk + en 不再顯示「經營者資訊披露」按鍵 (跨境無實體, 無法律義務);
+                         隱私政策 + 使用條款 已移到「幫助中心」欄;
+                         ja 保留「特定商取引法に基づく表記」(日本特定商取引法要求)
+        */}
+        {locale === 'ja' && (
+          <div className="mt-4 pt-4 border-t border-white/10">
+            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-gray-400">
+              <Link
+                href={`${localePrefix}/legal/`}
+                className="hover:text-white transition-colors"
+              >
+                {t.legalLabel}
+              </Link>
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </footer>
   );

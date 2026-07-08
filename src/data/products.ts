@@ -828,7 +828,7 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>深圳自社工場から DHL Express で 2-3 営業日納品、沖縄・離島も 2-4 営業日。追跡番号は発送後 24 時間以内にお届け。100 枚以上のご注文は送料無料で全国配送対応。</p></details>
 <details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能です。品質問題（箔剥がれ・色ズレ）は無料で再印刷または全額返金いたします。100% 満足保証でご提供します。</p></details>
 
-<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
+<p><em>智印雲 (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
     features: [
       '【85×54mm標準尺寸】兼容全球名片夾與卡套',
       '【四色柯式印刷】網點細膩，色彩飽和度≥90%',
@@ -1144,7 +1144,7 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>深圳自社工場から DHL Express で 2-3 営業日納品、沖縄・離島も 2-4 営業日。100 枚以上のご注文は送料無料で全国配送対応。</p></details>
 <details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能。品質問題 (UV 剥がれ・色ズレ) は無料で再印刷または全額返金、100% 満足保証。</p></details>
 
-<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
+<p><em>智印雲 (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
     features: [
       '【85×54mm標準尺寸】兼容全球名片夾與卡套',
       '【四色柯式印刷】網點細膩，色彩飽和度≥90%',
@@ -1456,7 +1456,7 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>深圳自社工場から DHL Express で 2-3 営業日納品、100 枚以上のご注文は送料無料で全国配送対応。</p></details>
 <details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能。品質問題 (ラミネート剥がれ・色ズレ) は無料で再印刷または全額返金、100% 満足保証。</p></details>
 
-<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
+<p><em>智印雲 (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
     features: [
       '【85×54mm標準尺寸】兼容全球名片夾與卡套',
       '【四色柯式印刷】網點細膩，色彩飽和度≥90%',
@@ -1770,7 +1770,7 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>深圳自社工場から DHL Express で 2-3 営業日納品、100 枚以上のご注文は送料無料で全国配送対応。</p></details>
 <details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能。品質問題 (角丸精度・色ズレ) は無料で再印刷または全額返金、100% 満足保証。</p></details>
 
-<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
+<p><em>智印雲 (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
     features: [
       '【85×54mm標準尺寸】兼容全球名片夾與卡套',
       '【四色柯式印刷】網點細膩，色彩飽和度≥90%',
@@ -2555,7 +2555,7 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>カスタム形状に対応できますか？</strong></summary><p>はい。10×10mm〜500×500mm までのカスタム形状に対応いたします。丸・四角・楕円・星・ハート・ロゴ輪郭いずれも対応可能です。型抜きラインを AI または PDF 形式で ご入稿ください。</p></details>
 <details class="my-2"><summary><strong>可変データ印刷に対応していますか？</strong></summary><p>はい。1 枚ごとの QR コード・シリアル番号・連番印刷に対応いたします。レンタル管理・イベントチェックイン・短期キャンペーンのトラッキング用途に最適で、データは Excel / CSV 形式で ご入稿ください。</p></details>
 
-<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>
+<p><em>智印雲 (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>
 `,
     features: [
       '【可移膠】移除不留殘膠，保護車漆與玻璃表面',
@@ -3531,7 +3531,7 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>箔押しと通常印刷を組合せできますか？</strong></summary><p>はい。最も人気は「カラー印刷背景 + 箔押しロゴ」の組合せ。「白印刷 + 箔押し枠」「クラフト紙 + 箔押しテキスト」も対応。</p></details>
 <details class="my-2"><summary><strong>耐久年数はどのくらいですか？</strong></summary><p>ビニール箔押しステッカーは屋外 3-5 年、屋内では無期限。紙基材箔押しは屋内 2-3 年。ラミネ加工でさらに耐久性が向上します。</p></details>
 
-<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>
+<p><em>智印雲 (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>
 `,
     features: [
       '多色箔可選（金／銀／玫瑰金等）',
@@ -3847,7 +3847,7 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>ホログラムの改ざん防止性はどのくらいですか？</strong></summary><p>ホログラムシールは視覚的偽造防止（複製困難）と粘着剤の改ざん検知（剥がすと破壊）を併せ持ちます。中〜高セキュリティ向けに最適です。</p></details>
 <details class="my-2"><summary><strong>バーコードや RFID との連動はできますか？</strong></summary><p>1D / 2D バーコード（Code 128 / QR / Data Matrix）に対応、シリアル番号の事前印刷も可能です。RFID inlay 組込みは 5,000 枚以上のご注文で対応いたします。</p></details>
 
-<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。FDA 21 CFR Part 11 / ISO 12931 / REACH / RoHS 準拠。</em></p>
+<p><em>智印雲 (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。FDA 21 CFR Part 11 / ISO 12931 / REACH / RoHS 準拠。</em></p>
 `,
     features: [
       '易碎／VOID 等防拆材可選',
@@ -5297,7 +5297,7 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>カスタムサイズに対応できますか？</strong></summary><p>はい。6×4×1.5 インチ（小型石鹸）から 16×12×5 インチ（大容量 grocery）まで対応。ご要望のサイズをお知らせください、お見積もりいたします。</p></details>
 <details class="my-2"><summary><strong>カーボンオフセットはどう対応していますか？</strong></summary><p>ご注文毎のカーボンフットプリント計算をご提供いたします。検証済みのオフセットプロジェクト（再森林化・再生可能エネルギー）と連携し、証明書を発行いたします。</p></details>
 
-<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>
+<p><em>智印雲 (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>
 `,
     features: [
       '可選 FSC 認證與再生紙材',
@@ -5621,7 +5621,7 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>特急製作に対応していますか？</strong></summary><p>はい。5,000 枚までのご注文で 3-5 日特急製作対応。11 時（HKT）までのデータ確定で当日製作開始、次日発送いたします。</p></details>
 <details class="my-2"><summary><strong>食品接触に対応していますか？</strong></summary><p>間接食品接触（パン・ pastry を個別包装して入れる場合）は対応可能です。直接食品接触には別料金で FDA 準拠インナーライナーをご用意いたします。</p></details>
 
-<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>
+<p><em>智印雲 (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>
 `,
     features: [
       '手挽加固，承重更佳',
@@ -5940,7 +5940,7 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>非常に重い商品用に補強できますか？</strong></summary><p>20kg を超える場合は段ボール箱のご検討を推奨いたします。15-20kg の紙袋には、二重段ボールベースインサート + 補強ハンドル取付で対応いたします。</p></details>
 <details class="my-2"><summary><strong>箔押しや内側印刷に対応していますか？</strong></summary><p>はい、いずれも対応可能です。箔押し（金・銀・ローズゴールド・ホログラム）と内側片面またはフルカラー印刷は製作期間 1-2 日追加、デザイン複雑性に応じたお見積もりとなります。</p></details>
 
-<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>
+<p><em>智印雲 (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>
 `,
     features: [
       '【320×120×380mm】加大尺寸，適合外套、鞋盒、大型禮品',
@@ -17905,7 +17905,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>データ入稿の形式は？</strong></summary><p>Illustrator / Photoshop / PDF 形式推奨、CMYK モード、解像度 300dpi 以上。無料 AI データチェックで対応。</p></details>
 <details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能です。品質問題 (色ズレ・印刷ミス) は無料で再印刷または全額返金いたします。</p></details>
 
-<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
+<p><em>智印雲 (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
       price_range: '¥7,500〜/部〜',
       basePrice: 7500,
       weight_score: 0.7,
@@ -18066,7 +18066,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>データ入稿の形式は？</strong></summary><p>Illustrator / Photoshop / PDF 形式推奨、CMYK モード、解像度 300dpi 以上。無料 AI データチェックで対応。</p></details>
 <details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能です。品質問題 (色ズレ・印刷ミス) は無料で再印刷または全額返金いたします。</p></details>
 
-<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
+<p><em>智印雲 (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
       price_range: '¥2,275〜/個〜',
       basePrice: 2275,
       weight_score: 0.5,
@@ -18231,7 +18231,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>データ入稿の形式は？</strong></summary><p>Illustrator / Photoshop / PDF 形式推奨、CMYK モード、解像度 300dpi 以上。無料 AI データチェックで対応。</p></details>
 <details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能です。品質問題 (色ズレ・印刷ミス) は無料で再印刷または全額返金いたします。</p></details>
 
-<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
+<p><em>智印雲 (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
       price_range: '¥1,200〜/個〜',
       basePrice: 1200,
       weight_score: 0.4,
@@ -18394,7 +18394,7 @@ longDescriptionEn: `<h3>Postcard Sets — Washi-Style Art Cards for Character & 
 <details class="my-2"><summary><strong>データ入稿の形式は？</strong></summary><p>Illustrator / Photoshop / PDF 形式推奨、CMYK モード、解像度 300dpi 以上。無料 AI データチェックで対応。</p></details>
 <details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能です。品質問題 (色ズレ・印刷ミス) は無料で再印刷または全額返金いたします。</p></details>
 
-<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
+<p><em>智印雲 (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
       price_range: '¥750〜/枚〜',
       basePrice: 750,
       weight_score: 0.3,
@@ -18559,7 +18559,7 @@ longDescriptionEn: `<h3>Postcard Sets — Washi-Style Art Cards for Character & 
 <details class="my-2"><summary><strong>データ入稿の形式は？</strong></summary><p>Illustrator / Photoshop / PDF 形式推奨、CMYK モード、解像度 300dpi 以上。無料 AI データチェックで対応。</p></details>
 <details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能です。品質問題 (色ズレ・印刷ミス) は無料で再印刷または全額返金いたします。</p></details>
 
-<p><em>智印雲 (ZprintPro) は深圳彩龍印刷包装有限公司が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
+<p><em>智印雲 (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
       price_range: '¥9,000〜/個〜',
       basePrice: 9000,
       weight_score: 0.6,
