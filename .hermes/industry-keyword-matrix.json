@@ -423,31 +423,6 @@
       "queued_at": "2026-07-08",
       "priority_boost": 1,
       "note": "2026-07-08 Layer A SKU 拓點 — graduation-yearbook 配合 13 类目页教育类服务行业区块"
-    },
-    {
-      "id": "Q-009",
-      "category": "packaging",
-      "sku": "cosmetics-packaging-box",
-      "industry": "美妝護膚",
-      "tier": "A",
-      "priority": "P1",
-      "slug": "cosmetics-packaging-box-printing-guide",
-      "title_zh": "化妝品包裝盒定制指南 · 天地蓋磁吸抽屜盒材質工藝 | 智印雲 ZprintPro",
-      "title_en": "Custom Cosmetics Packaging Box Guide: Box Style, Finishes & Branding Materials | ZprintPro",
-      "title_ja": "化粧品パッケージボックスカスタムガイド：箱型・加工・ブランディング素材 | ZprintPro",
-      "valid_internal_links": [
-        "/category/packaging/",
-        "/product/cosmetics-packaging-box/",
-        "/product/cosmetic-boxes/",
-        "/product/gift-boxes/",
-        "/product/rigid-boxes/",
-        "/quote/"
-      ],
-      "expected_words_zh": 850,
-      "expected_faqs": 4,
-      "queued_at": "2026-07-08",
-      "priority_boost": 1,
-      "note": "2026-07-08 Layer A SKU 拓點 — cosmetics-packaging-box 配合 13 类目页包裝盒服务行业区块"
     }
   ],
   "covered": [
@@ -770,15 +745,15 @@
     "business-cards": "AGENTS.md §11 主营品类约束"
   },
   "stats": {
-    "queue_size": 16,
+    "queue_size": 15,
     "covered_count": 13,
-    "unique_ids": 16,
+    "unique_ids": 15,
     "p0_total": 10,
     "p0_covered": 10,
     "p0_coverage_pct": 1,
-    "p1_total": 6,
+    "p1_total": 5,
     "p1_covered": 3,
-    "p1_coverage_pct": 0.5,
+    "p1_coverage_pct": 0.6,
     "p2_coverage_pct": 0,
     "tier_a_count": 7,
     "tier_b_count": 3,
@@ -786,7 +761,7 @@
     "total_524_target": 524,
     "covered_524_pct": 2.48,
     "last_updated": "2026-07-08",
-    "last_updated_event": "Layer A 13 类目页拓点: Q-008 (educational/graduation-yearbook) + Q-009 (packaging/cosmetics-packaging-box) 加入 P1 队列, 等待 cron 写博客覆盖. P0 仍 100% 覆盖, P1 队列从 4 → 6 (covered 3 不变)."
+    "last_updated_event": "Layer A 23:45 user pivot: Q-009 (cosmetics-packaging-box) removed; PK-002 cosmetic-boxes 已升级为化妝品包裝盒 (slug 不变, 4 種盒型 + 內托定制). P1 队列: 5 条 (Q-008 graduation-yearbook + Q-P1-01/02/03/04). covered 13/13 P0 + 3/5 P1."
   },
   "priority_boost_history": [
     {

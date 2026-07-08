@@ -8856,109 +8856,125 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'cosmetic-boxes',
     category: 'packaging',
     category_slug: 'packaging',
-    name: '化妝品盒', nameEn: 'Cosmetic Boxes', nameJa: '化粧品箱', title_zh: '化妝品盒',
-    description: '專為化妝品設計，內托可定制。適合護膚品、彩妝品牌。', descriptionEn: 'Specially designed for cosmetics, customizable inner tray.', descriptionJa: '化粧品専用設計、カスタマイズ可能な内側トレイ。', description_zh: '專為化妝品設計，內托可定制。適合護膚品、彩妝品牌。',
-    longDescription: `化妝品盒需同時滿足法規標示區、瓶器防震與櫃檯陳列美學。外盒多採高挺白卡加啞膠或觸感膜，內托可選 EVA 挖槽、紙漿托或 PET 吸塑以固定玻璃瓶與彩盤。Logo 區常用燙金細線或局部 UV 提升精緻度。與分類頁一致：包裝盒、白卡紙、覆膜、燙金、內托。設計稿請預留成分表與批次號印刷區，並在打樣階段實測跌落與開合磨損。<h3>化妝品包裝盒型對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">盒型</th><th class="p-2 text-center">防震性</th><th class="p-2 text-center">陳列效果</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用品牌</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">化妝品盒（內托）</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">護膚品牌、高端彩妝</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">摺疊盒</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">平價彩妝、試用套裝</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">磁吸禮盒</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★</td><td class="p-2">奢侈品牌、節慶限定</td></tr></tbody></table><h3>化妝品包裝盒型對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">盒型</th><th class="p-2 text-center">防震性</th><th class="p-2 text-center">陳列效果</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用品牌</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">化妝品盒（內托）</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">護膚品牌、高端彩妝</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">摺疊盒</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">平價彩妝、試用套裝</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">磁吸禮盒</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★</td><td class="p-2">奢侈品牌、節慶限定</td></tr></tbody></table>
+    name: '化妝品包裝盒', nameEn: 'Cosmetic Packaging Boxes', nameJa: '化粧品パッケージボックス', title_zh: '化妝品包裝盒',
+    description: '美妝護膚品牌化妝品包裝盒定制, 天地蓋 / 磁吸翻蓋 / 抽屜式 / 書型 4 種盒型, 內托 EVA / 紙托 / 吸塑可定制, 燙金 + 局部 UV + 內襯緞布。香港本地、跨境美妝電商、日本市場適用。', descriptionEn: 'Custom cosmetic packaging boxes for beauty and skincare brands — 4 box styles (lift-off lid, magnetic, drawer, book-style) with EVA/molded pulp/PET inner trays. Foil stamping, spot UV, satin lining. Hong Kong, cross-border e-commerce, Japan market ready.', descriptionJa: '化粧品パッケージボックス カスタム — 天地蓋 / マグネット蓋 / 引き出し式 / ブック型の 4 種類, EVA / 紙 / ペット内装トレイ選択可。箔押し・スポット UV ・サテン裏地対応。香港・越境 EC ・日本市場向け。', description_zh: '美妝護膚品牌化妝品包裝盒定制, 天地蓋 / 磁吸翻蓋 / 抽屜式 / 書型 4 種盒型, 內托可定制, 燙金 + 局部 UV + 內襯緞布。',
+    longDescription: `<h3>4 種化妝品包裝盒型對比</h3>
+<p>化妝品包裝盒按開合結構分 4 種主流盒型, 對應不同預算、品牌定位與用戶體驗:</p>
+<table>
+  <thead><tr><th>盒型</th><th>結構</th><th>特性</th><th>適用品牌</th></tr></thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>天地蓋盒</td><td>上下蓋對開</td><td>經典結構, 開盒儀式感強, 內襯可加 EVA / 絨布</td><td>護膚品、香水、中高端美妝</td></tr>
+    <tr class="border-b border-gray-200"><td>磁吸翻蓋盒</td><td>單蓋磁吸扣</td><td>開合順滑, 高端精品常用, 結構穩固</td><td>高端護膚、禮盒套裝、彩妝盤</td></tr>
+    <tr class="border-b border-gray-200"><td>抽屜式盒</td><td>內抽屜滑入</td><td>互動體驗強, 細長盒型適合口紅 / 唇釉</td><td>口紅、唇釉、香水管</td></tr>
+    <tr><td>書型盒</td><td>側翻對開</td><td>書籍造型, 開盒像翻書, 內襯可展示多件產品</td><td>護膚套裝、彩妝禮盒、節日限定</td></tr>
+  </tbody>
+</table>
 
-**智印雲 國際印刷**：深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。
+<h3>內托材質與選擇</h3>
+<p>化妝品包裝盒同時需滿足法規標示區、瓶器防震與櫃檯陳列美學。內托可選三種方案對應不同預算:</p>
+<ul>
+  <li><strong>EVA 挖槽</strong>: 可塑性強, 緊密貼合異形瓶器, 適合高端禮盒與玻璃瓶護膚品。</li>
+  <li><strong>紙漿模塑托</strong>: 100% 可回收, 環保品牌首選, 適合大眾彩妝與電商包裝。</li>
+  <li><strong>PET 吸塑</strong>: 透明可視, 展示產品外觀, 適合開架彩妝與試用套裝。</li>
+</ul>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<h3>外盒材質與裱面工藝</h3>
+<p>外盒多採 1200-1500g 灰板裱糊白卡 / 觸感紙 / 珠光紙 / 銅版紙。表面工藝: <strong>啞膠覆膜</strong> (主流高端) / <strong>觸感膜</strong> (絨面) / <strong>光膠覆膜</strong> (色彩鮮明)。Logo 區加燙金細線或局部 UV 提升精緻度。</p>
+
+<h3>法規標示與批次號印刷區</h3>
+<p>設計稿請預留成分表與批次號印刷區 (藥機法 / FDA 21 CFR / EU 1223/2013 合規)。打樣階段實測跌落與開合磨損, 確保瓶器在高溫 + 跨境運輸條件下無位移破損。</p>
+
+<h3>已服務的本地客戶</h3>
+<p>智印雲 (ZprintPro) 為多個香港本地美妝品牌、台灣電商品牌、東南亞跨境美妝品牌、日本進口品牌提供化妝品包裝盒 OEM / ODM 服務。100 個起印, 深圳自設廠房直送, DHL Express 全球 2-4 個工作天配送, ISO 9001 品質認證。</p>
+
+<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、名片/信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>化妝品包裝盒的最低起印量是多少？</strong></summary><p>化妝品盒 100 個起印, 100-500 個享 9 折優惠, 500-1000 個 8.5 折, 1000 個以上另議。樣品盒 5-10 個可單獨打樣, 樣品費可批量後抵扣。快遞盒因結構較簡單, 樣品 + 量產均能 5-7 天交付。</p></details>
+<details class="my-2"><summary><strong>化妝品包裝盒生產交貨期需要多久？</strong></summary><p>標準訂單 7-12 個工作天完成, 含結構打樣 + 紙裱打樣 + 上機印刷 + 內襯製作 + 品質檢驗。特急可壓縮到 5-7 個工作天 (加價 30%)。國際訂單 DHL Express 全球 2-4 個工作天配送。</p></details>
+<details class="my-2"><summary><strong>可以定制開模嗎？4 種盒型 (天地蓋 / 磁吸 / 抽屜 / 書型) 都能做嗎？</strong></summary><p>4 種盒型全部可選。智印雲提供免費結構設計打樣 (1-2 個工作天出 3D 圖), 確認後開模生產。圓角、異形、磁吸扣、絲帶拉手等特殊結構都可在 7-10 天內完成開模。</p></details>
+<details class="my-2"><summary><strong>能否加燙金 / 局部 UV / 擊凸？</strong></summary><p>支持。化妝品包裝盒常見工藝組合: 燙金 (品牌名) + 局部 UV (Logo) + 擊凸 (品牌符號)。三種工藝可同時使用, 效果疊加提升品牌質感。技術細節由結構工程師免費評估。</p></details>
 `,
-    longDescriptionEn: `<h3>Cosmetic Packaging Boxes with Customizable Inner Tray</h3>
-<p>ZprintPro cosmetic boxes are precision-engineered for skincare, fragrance, and beauty brands that need a premium unboxing experience. Rigid setup boxes with custom EVA foam or molded pulp inner trays hold bottles, jars, and tubes securely. Choose from magnetic closure, ribbon pull, lift-off lid, or drawer-style opening. Full-color CMYK + spot color printing with optional soft-touch lamination, foil stamping, and embossing for a luxury finish. 100-box MOQ, white-glove DHL Express shipping.</p>
-
-<h3>Material & Adhesive Comparison</h3>
+    longDescriptionEn: `<h3>4 Cosmetic Box Styles for Beauty & Skincare Brands</h3>
+<p>Cosmetic packaging boxes come in 4 primary opening mechanisms, each tuned for different unboxing experiences and brand tiers:</p>
 <table class="w-full border-collapse my-4 text-sm">
   <thead>
     <tr class="bg-[#2873F5] text-white">
-      <th class="p-2 text-left">Material</th>
-      <th class="p-2 text-center">Transparency</th>
-      <th class="p-2 text-center">Adhesion</th>
-      <th class="p-2 text-center">Cost</th>
+      <th class="p-2 text-left">Box Style</th>
+      <th class="p-2 text-left">Mechanism</th>
       <th class="p-2 text-left">Best For</th>
     </tr>
   </thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Rigid Setup Box</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Luxury skincare, fragrance gift sets</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Folding Carton</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">Mid-tier skincare, retail shelf-ready</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Drawer-Style Box</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">Subscription boxes, sample kits</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Magnetic Closure Box</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">Premium gift sets, PR packaging</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Lift-Off Lid (天地蓋)</td><td class="p-2">Top + base separate, classic reveal</td><td class="p-2">Skincare, fragrance, mid-to-high tier beauty</td></tr>
+    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Magnetic Closure (磁吸翻蓋)</td><td class="p-2">Single lid with magnet, smooth open/close</td><td class="p-2">Premium skincare, gift sets, palettes</td></tr>
+    <tr class="border-b"><td class="p-2 font-medium">Drawer-Style (抽屜式)</td><td class="p-2">Inner slide-out drawer</td><td class="p-2">Lipstick, lip gloss, fragrance vials</td></tr>
+    <tr class="bg-gray-50"><td class="p-2 font-medium">Book-Style (書型)</td><td class="p-2">Side-flip lid opens like a book</td><td class="p-2">Skincare sets, beauty kits, holiday editions</td></tr>
   </tbody>
 </table>
 
-<h3>Printing & Finishing Options</h3>
-<table class="w-full border-collapse my-4 text-sm">
-  <thead>
-    <tr class="bg-[#2873F5] text-white">
-      <th class="p-2 text-left">Finish</th>
-      <th class="p-2 text-left">Effect</th>
-      <th class="p-2 text-center">Lead Time</th>
-      <th class="p-2 text-center">Cost Add</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Soft-Touch Lamination</td><td class="p-2">Velvety matte feel, fingerprint resistant, premium perception</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Gloss Lamination</td><td class="p-2">High-shine, vibrant color saturation</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">Foil Stamping (Gold/Silver/Rose)</td><td class="p-2">Metallic logo accents, luxury positioning</td><td class="p-2 text-center">+2 days</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Embossing / Debossing</td><td class="p-2">Tactile depth on logo or pattern</td><td class="p-2 text-center">+2 days</td><td class="p-2 text-center">$$</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">Spot UV</td><td class="p-2">Selective glossy highlights on logos or graphics</td><td class="p-2 text-center">+1 day</td><td class="p-2 text-center">$</td></tr>
-  </tbody>
-</table>
-
-<h3>Why Choose ZprintPro?</h3>
+<h3>Inner Tray Engineering</h3>
+<p>The inner tray is critical for cosmetic box integrity during shipping and at retail display. Three materials cover the full premium-to-eco spectrum:</p>
 <ul>
-  <li><strong>Custom inner tray engineering:</strong> EVA foam, molded pulp, or paperboard inserts tailored to your exact bottle and jar dimensions. Protects product during shipping; elevates unboxing perception.</li>
-  <li><strong>100-box MOQ with volume pricing:</strong> 15% off at 500+, 25% off at 1,000+, 35% off at 5,000+ for product launches, retail rollouts, and gifting campaigns.</li>
-  <li><strong>Full-color CMYK + spot color:</strong> Heidelberg 6-color offset with Pantone matching for brand-accurate reproduction. Spot UV, foil, and embossing on the same press pass.</li>
-  <li><strong>Free structural design service:</strong> Our packaging engineers create 3D mockups and dieline templates for your product. Iterate until the unboxing feels right.</li>
+  <li><strong>EVA foam</strong>: Moldable around irregular bottle silhouettes. Best for fragile glass droppers, serum bottles.</li>
+  <li><strong>Molded pulp</strong>: 100% recyclable, curbside-compostable. Preferred by clean beauty and B-Corp brands.</li>
+  <li><strong>PET vacuum-formed</strong>: Crystal-clear visibility. Showcases product through the tray, ideal for retail-shelf ready boxes and sample kits.</li>
+</ul>
+
+<h3>Material & Surface Finishing</h3>
+<p>Outer wrap uses 1200-1500g grey board laminated with white card, soft-touch paper, pearlescent stock, or coated art paper. Surface options: <strong>matte lamination</strong> (flagship premium), <strong>soft-touch film</strong> (velvety suede-like grip), or <strong>gloss lamination</strong> (vivid saturation for color-heavy designs). Logo zones typically combine foil stamping with spot UV for tactile depth.</p>
+
+<h3>Compliance & Batch Number Area</h3>
+<p>Pre-press design reserves legal-mandated ingredient panels and batch/lot number zones per FDA 21 CFR, EU Regulation 1223/2013, and JP 薬機法. Production testing covers drop-test, hinge-cycle, and tropical-climate transit simulation. All boxes engineered to keep bottles and jars secure across hot, humid cross-border shipping lanes.</p>
+
+<h3>Why Choose ZprintPro for Cosmetic Packaging</h3>
+<ul>
+  <li><strong>Free structural design + 3D mockup</strong>: Our packaging engineers iterate dieline until the unboxing feels right for your specific product dimensions. First round within 24-48 hours.</li>
+  <li><strong>100-box MOQ with volume pricing</strong>: 15% off at 500+, 25% off at 1,000+, 35% off at 5,000+. Designed for product launches, retail rollouts, and seasonal gifting campaigns.</li>
+  <li><strong>Heidelberg 6-color offset + Pantone matching</strong>: Brand-accurate color reproduction across spot color runs. Foil stamping, embossing, and spot UV on the same press pass.</li>
+  <li><strong>Full-system integration</strong>: Pair your cosmetic box with matching stickers, paper bags, and mailer boxes for a unified brand unboxing. Order across categories in one consolidated shipment.</li>
 </ul>
 
 <p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>ISO 9001:2015</strong> certified lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and Heidelberg 4-color offset. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
 
 <h3>Use Cases & Industries</h3>
-<p>Cosmetic packaging boxes are the first physical touchpoint of any beauty brand. Best fit for indie skincare brands launching serums or moisturizers in glass dropper bottles, fragrance houses preparing PR gift sets for media editors, and subscription beauty boxes shipping curated assortments. Also ideal for direct-to-consumer beauty brands building unboxing experiences that drive social sharing, and luxury hotel amenity programs seeking elevated guest gifts. International orders ship via DHL Express in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
+<p>Cosmetic packaging boxes are the first physical touchpoint of any beauty brand. Best fit for indie skincare brands launching serums or moisturizers in glass dropper bottles, fragrance houses preparing PR gift sets for media editors, and subscription beauty boxes shipping curated assortments. Also ideal for direct-to-consumer beauty brands building unboxing experiences that drive social sharing, luxury hotel amenity programs seeking elevated guest gifts, and J-beauty / K-beauty brands expanding into global markets. International orders ship via DHL Express in 2-4 days to UK, Australia, Korea, Singapore, UAE, and worldwide.</p>
 
 <h3>Frequently Asked Questions</h3>
-<details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>100 boxes. Sample orders of 5-25 boxes are available with custom dieline and white sample proofing (rush fee applies).</p></details>
-<details class="my-2"><summary><strong>How long does production take?</strong></summary><p>Standard production is 10-15 business days after artwork approval (longer than flat products due to rigid construction and inner tray fabrication). Rush production (5-7 days) is available for orders up to 500 boxes.</p></details>
-<details class="my-2"><summary><strong>Do you provide the inner tray insert?</strong></summary><p>Yes. Custom EVA foam, molded pulp, or paperboard inserts are included. Send your product dimensions and we engineer the tray to hold bottles, jars, and tubes securely.</p></details>
-<details class="my-2"><summary><strong>Can I print inside the box as well?</strong></summary><p>Yes. Inside printing is available on rigid setup and drawer-style boxes. Common for brand storytelling, usage instructions, or premium patterns visible when the lid is opened.</p></details>
-<details class="my-2"><summary><strong>How is shipping calculated to my country?</strong></summary><p>US orders over $200 ship free via DHL Express (3-5 business days, flat-pack). UK/AU orders over £150 / AU$300 ship free. KR/SG/AE ship via DHL Express at standard rates (calculated at checkout). Tracking provided for all shipments.</p></details>
+<details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>100 boxes. Sample orders of 5-25 boxes are available with custom dieline and white sample proofing (rush fee applies). MOQ for magnetic closure and book-style boxes starts at 200 due to structural complexity.</p></details>
+<details class="my-2"><summary><strong>How long does production take?</strong></summary><p>Standard production is 7-12 business days after artwork approval (rigid construction + inner tray fabrication). Rush production (5-7 days) is available for orders up to 500 boxes. Folding carton styles ship in 3-5 days.</p></details>
+<details class="my-2"><summary><strong>Do you provide the inner tray insert?</strong></summary><p>Yes. EVA foam, molded pulp, and PET vacuum-formed inserts are all in-house. Send your product dimensions and we engineer the tray to hold bottles, jars, tubes, or palettes securely without shifting during transit.</p></details>
+<details class="my-2"><summary><strong>Can I print inside the box as well?</strong></summary><p>Yes. Inside printing is available on all 4 box styles — lid interior, drawer inside, and book-style covers. Common for brand storytelling, usage instructions, ingredient panels, or premium patterns visible when the lid is opened.</p></details>
+<details class="my-2"><summary><strong>How is shipping calculated to my country?</strong></summary><p>US orders over $200 ship free via DHL Express (3-5 business days, flat-pack). UK/AU orders over £150 / AU$300 ship free. KR/SG/AE ship via DHL Express at standard rates. Tracking provided for all shipments.</p></details>
 <details class="my-2"><summary><strong>What if I'm not happy with the print quality?</strong></summary><p>We provide free digital color proofing and physical white sample before production. If the final print drifts from approved proof, we reprint at no cost or refund in full. Your satisfaction is guaranteed.</p></details>`,
-    longDescriptionJa: `化妝品パッケージボックスをZprintProでご注文。専用内装（EVAフォーム/サテン生地）+箔押し・スポットUV対応の化粧品OEMパッケージです。スキンケア・メイクアップ・香水・フレグランス・美容EC・OEMメーカー向けに、ブランドの世界観を表現する専用設計で、少量OEM・テスト販売から量産・百貨店展開まで対応可能です。【専用サイズ】30ml/50ml/100ml/200mlボトル対応、表面はアート紙/クラフト/メタル調/皮革調から選択。【構造】差込蓋・天地蓋・引出し式・観音開きの4種類から選択可能、【内装オプション】EVAフォーム成形（ボトル形状に合わせてカット）、サテン生地（黒/白/ピンク/ベージュ）、ブリスタートレイ（複数アイテム収納）。【表面仕上げ】箔押し（金/銀+特殊色）、スポットUV（ロゴ・装飾）、エンボス/デボス、ラグジュアリー系のコスメブランドで多数の実績があります。【コンプライアンス】薬機法準拠の全成分表示スペース設計をサポート、業界基準（縦1.5mm以上の文字サイズ等）を満たすレイアウトをご提案。リサイクルマーク・材質表示対応。【納期】30個から対応、最短10営業日で出荷。内装カスタマイズや特殊加工を含む場合は14-21営業日。お急ぎの場合は特急プラン（有償）もございます。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
+    longDescriptionJa: `化妝品パッケージボックスは智印雲（ZprintPro）のカスタム印刷サービス。4種類のボックススタイル（天地蓋・マグネット蓋・引き出し式・ブック型）から選択でき、EVA・紙・PET 内装トレイと箔押し・スポット UV ・サテン裏地を組み合わせて、美容ブランドの世界観を表現するプレミアムパッケージを製作します。スキンケア・メイクアップ・香水・フレグランス・美容 EC・OEM メーカー向けに、少量 OEM・テスト販売から量産・百貨店展開まで対応可能です。【専用サイズ】30ml/50ml/100ml/200ml ボトル対応、表面はアート紙/クラフト/メタル調/皮革調から選択。【構造】天地蓋・マグネット蓋・引き出し式・ブック型の4種類から選択可能、【内装オプション】EVAフォーム成形（ボトル形状に合わせてカット）、サテン生地（黒/白/ピンク/ベージュ）、ブリスタートレイ（複数アイテム収納）、PET 真空成形（透明可視）。【表面仕上げ】箔押し（金/銀+特殊色）、スポットUV（ロゴ・装飾）、エンボス/デボス、ラグジュアリー系のコスメブランドで多数の実績があります。【コンプライアンス】薬機法準拠の全成分表示スペース設計をサポート、業界基準（縦1.5mm以上の文字サイズ等）を満たすレイアウトをご提案。リサイクルマーク・材質表示対応。【納期】100個から対応、最短7-12営業日で出荷。内装カスタマイズや特殊加工を含む場合は14-21営業日。お急ぎの場合は特急プラン（有償）もございます。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、名刺・封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
-<details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
-<details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>化妝品パッケージボックスの最小注文数量は？</strong></summary><p>100 個から対応。天地蓋・マグネット蓋・ブック型は構造上、200個からを推奨。サンプル注文 5-25 個も対応可能（特急料金あり）。</p></details>
+<details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 7-12 営業日で完成。校正 PDF 承認後、内装カスタマイズや特殊加工を含む場合は14-21営業日。特急印刷は最短 5-7 営業日（DHL / FedEx 国際速達便で日本全国 2-4 日配送）。大口注文は優先スケジュール対応。</p></details>
+<details class="my-2"><summary><strong>4 種類のボックススタイルの選び方は？</strong></summary><p>プレミアム感を出すなら マグネット蓋、伝統と安定感なら天地蓋、ユニーク体験なら引き出し式、複数アイテムを見せるならブック型。予算とブランドイメージに応じて担当者がご提案します。無料で3D モックアップと構造設計を提供。</p></details>
+<details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>内装は EVA・紙・PET の3種類、表面素材はアート紙・マット紙・クラフト紙・ピーチスキン・メタリック調など。加工は4色オフセット印刷、箔押し（金/銀/ローズ金/ホログラム）、スポット UV、エンボス/デボス、型抜き、サテン裏地、ラベル貼り等多種対応、無料サンプル。</p></details>
+<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$200 以上のご注文で米国向け送料無料、£150 / AU$300 以上で英豪向け送料無料。追跡番号付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認、本サンプル校正付き。</p></details>
 `,
     features: [
-      '護膚／彩妝瓶器防震內托可選',
-      '高挺白卡＋覆膜保護墨層',
-      '燙金、局部 UV 強化精品感',
-      '預留法規標示與批次印刷區',
-      '適合專櫃與電商禮盒線',
-      '刀模實物打樣驗證開合',
-      '可與外箱貼紙／封套配套',
+      '【4 種盒型】天地蓋 / 磁吸翻蓋 / 抽屜式 / 書型, 全部可選',
+      '【內托定制】EVA 挖槽 / 紙漿模塑 / PET 吸塑 3 種材質',
+      '【法規標示】藥機法 / FDA 21 CFR / EU 1223/2013 合規',
+      '【表面工藝】啞膠 / 觸感膜 / 光膠 + 燙金細線 + 局部 UV',
+      '【內襯升級】黑 / 白 / 粉 / 米 EVA 或緞布可選',
+      '【DHL 全球】國際訂單 2-4 個工作天送達',
+      '【小批量】100 個起印, 500+ 享 85 折, 1000+ 享 7 折',
     ],
     specs: {
-      material: '白卡／硬紙板；內托 EVA／紙托／吸塑',
-      size: '依瓶器三維客製或選小／中／大',
-      printMethod: '四色＋專色；可逆向 UV',
-      finishing: '覆膜、燙金、局部 UV、擊凸、糊盒',
+      material: '1200-1500g 灰板裱糊 白卡 / 觸感紙 / 珠光紙; 內托 EVA / 紙漿 / PET 吸塑',
+      size: '依瓶器三維客製; 標準 50×50×30mm 至 250×250×120mm',
+      printMethod: '四色柯式 + 專色; 可逆向 UV',
+      finishing: '覆膜 (啞/觸感/光) + 燙金 (金/銀/玫瑰金) + 局部 UV + 擊凸 + 糊盒',
     },
-    price_range: 'HK$6-32/個',
-    basePrice: 6,
-    weight_score: 92,
+    price_range: 'HK$8-65/個',
+    basePrice: 8,
+    weight_score: 96,
     isHot: true,
     isNew: false,
     minQuantity: 100,
@@ -8972,14 +8988,14 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
       '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-zh-hk-5.webp',
       '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-zh-hk-6.webp',
     ],
-    'en': [
+    en: [
       '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-en.webp',
       '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-en-2.webp',
       '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-en-3.webp',
       '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-en-4.webp',
       '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-en-5.webp',
     ],
-    'ja': [
+    ja: [
       '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-ja.webp',
       '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-ja-2.webp',
       '/images/products/seedream-webp/zprintpro-packaging-cosmetic-boxes-ja-3.webp',
@@ -9014,9 +9030,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-packaging-cosmetic-boxes-zh-hk.webp', en: 'zprintpro-packaging-cosmetic-boxes-en.webp', ja: 'zprintpro-packaging-cosmetic-boxes-ja.webp' },
     alt: {
-      'zh-hk': '香港化妝品盒印刷 白卡／硬紙板 覆膜',
-      en: 'Cosmetic Boxes | Professional Packaging Hong Kong',
-      ja: '化粧品箱 | オリジナルパッケージ・最短3日 | ZprintPro'
+      'zh-hk': '香港化妝品包裝盒印刷 4 種盒型 天地蓋磁吸抽屜書型 內托定制',
+      en: 'Cosmetic Packaging Boxes | 4 Box Styles | Custom Inner Tray | ZprintPro Hong Kong',
+      ja: '化粧品パッケージボックス | 4 種類ボックススタイル | 内装カスタム | ZprintPro'
     },
   },
   },
@@ -17720,80 +17736,6 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     },
   },
     },
-  // ===== 化妝品包裝盒 (PKG-011 cosmetics-packaging-box, 2026-07-08 Layer A SKU 拓點) =====
-  {
-    id: 'PKG-011',
-    sku_code: 'PKG-011',
-    slug: 'cosmetics-packaging-box',
-    category: 'packaging',
-    category_slug: 'packaging',
-    name: '化妝品包裝盒', nameEn: 'Cosmetics Packaging Box', nameJa: '化粧品パッケージボックス', title_zh: '化妝品包裝盒',
-    description: '美妝護膚品牌化妝品盒定制 — 精裝天地蓋 / 磁吸翻蓋 / 抽取式抽屜盒, 燙金 + 局部 UV + 內襯緞布。香港 / 跨境美妝電商 / 日本市場適用, 深圳亞洲工廠生產, DHL 全球 2-4 天送達。', descriptionEn: 'Custom cosmetics packaging boxes — rigid lift-off lid / magnetic closure / drawer style with foil stamping, spot UV, satin lining. For beauty brands, cross-border e-commerce, Japan market. Asia factory + DHL 2-4 day global delivery.', descriptionJa: '化粧品パッケージボックス カスタム — ハードケース天地蓋 / マグネット蓋 / 引き出し式で箔押し・スポット UV・ 裏面サテン。美容ブランド・越境 EC ・日本市場向け。中国深セ自社工場・DHL 国際配送 2-4 日。', description_zh: '美妝護膚品牌化妝品盒定制 — 精裝天地蓋 / 磁吸翻蓋 / 抽取式抽屜盒, 燙金 + 局部 UV + 內襯緞布。',
-    longDescription: `<h3>材質與結構對比</h3>
-<p>化妝品包裝盒常用 4 種盒型, 對應不同預算與品牌定位:</p>
-<table>
-  <thead><tr><th>盒型</th><th>結構</th><th>特性</th><th>適用品牌</th></tr></thead>
-  <tbody>
-    <tr class="border-b border-gray-200"><td>天地蓋盒</td><td>上下蓋對開</td><td>經典結構, 開盒儀式感強, 內襯可加 EVA / 絨布</td><td>護膚品、香水、中高端美妝</td></tr>
-    <tr class="border-b border-gray-200"><td>磁吸翻蓋盒</td><td>單蓋磁吸扣</td><td>開合順滑, 高端精品常用, 結構穩固</td><td>高端護膚、禮盒套裝、彩妝盤</td></tr>
-    <tr class="border-b border-gray-200"><td>抽屜式盒</td><td>內抽屜滑入</td><td>互動體驗強, 細長盒型適合口紅 / 唇釉</td><td>口紅、唇釉、香水管</td></tr>
-    <tr><td>書型盒</td><td>側翻對開</td><td>書籍造型, 開盒像翻書, 內襯可展示多件產品</td><td>護膚套裝、彩妝禮盒、節日限定</td></tr>
-  </tbody>
-</table>
-
-<h3>紙材與裱面工藝</h3>
-<p>化妝品盒通常採用 1200-1500g 灰板裱糊特種紙 / 銅版紙 / 觸感紙 / 珠光紙。四色柯式印刷 + 局部 UV 上光 (Logo、圖案) + 燙金燙銀 (品牌字、品牌符號) 是化妝品盒的三大基礎工藝。追求環保可選 FSC 認證紙 + 大豆油墨。</p>
-
-<h3>內襯選擇</h3>
-<ul>
-  <li><strong>EVA 內襯</strong>: 成本中等, 可塑性強, 適合異形產品</li>
-  <li><strong>絨布內襯</strong>: 高端質感, 觸感細膩, 適合禮盒套裝</li>
-  <li><strong>海綿內襯</strong>: 經濟實惠, 適合標準瓶型</li>
-  <li><strong>紙質內襯</strong>: 100% 可回收, 環保認證品牌首選</li>
-</ul>
-
-<h3>已服務的本地客戶</h3>
-<p>智印雲 (ZprintPro) 為多個香港本地美妝品牌、台灣電商品牌、東南亞跨境美妝品牌、日本進口品牌提供化妝品盒 OEM / ODM 服務。100 個起印, 深圳自設廠房直送, DHL Express 全球 2-4 個工作天配送, ISO 9001 品質認證。</p>
-
-<h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>化妝品包裝盒的最低起印量是多少？</strong></summary><p>化妝品盒 100 個起印, 100-500 個享 9 折優惠, 500-1000 個 8.5 折, 1000 個以上另議。樣品盒 5-10 個可單獨打樣, 樣品費可批量後抵扣。</p></details>
-<details class="my-2"><summary><strong>化妝品盒生產交貨期需要多久？</strong></summary><p>標準訂單 7-12 個工作天完成, 含結構打樣 + 紙裱打樣 + 上機印刷 + 內襯製作 + 品質檢驗。特急可壓縮到 5-7 個工作天 (加價 30%)。國際訂單 DHL Express 全球 2-4 個工作天配送。</p></details>
-<details class="my-2"><summary><strong>可以定制開模嗎？造型尺寸完全自訂？</strong></summary><p>支持。智印雲提供免費結構設計打樣 (1-2 個工作天出 3D 圖), 確認後開模生產。圓角、異形、磁吸、抽屜等特殊結構都可在 7-10 天內完成開模。</p></details>
-<details class="my-2"><summary><strong>能否加燙金 / 局部 UV / 擊凸？</strong></summary><p>支持。化妝品盒常見工藝組合: 燙金 (品牌名) + 局部 UV (Logo) + 擊凸 (品牌符號)。三種工藝可同時使用, 效果疊加提升品牌質感。技術細節由結構工程師免費評估。</p></details>
-`,
-    price_range: 'HK$18-85/個',
-    basePrice: 18,
-    weight_score: 96,
-    isHot: true,
-    isNew: true,
-    minQuantity: 100,
-    images: ['/images/products/cosmetic-box.jpg'],
-  imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-packaging-cosmetics-packaging-box-zh-hk-1.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-cosmetics-packaging-box-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-cosmetics-packaging-box-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-cosmetics-packaging-box-zh-hk-4.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-packaging-cosmetics-packaging-box-en-1.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-cosmetics-packaging-box-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-cosmetics-packaging-box-en-3.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-packaging-cosmetics-packaging-box-ja-1.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-cosmetics-packaging-box-ja-2.webp',
-    ],
-  },
-  seoImages: {
-    filename: { 'zh-hk': 'zprintpro-packaging-cosmetics-packaging-box-zh-hk-1.webp', en: 'zprintpro-packaging-cosmetics-packaging-box-en-1.webp', ja: 'zprintpro-packaging-cosmetics-packaging-box-ja-1.webp' },
-    alt: {
-      'zh-hk': '香港化妝品包裝盒印刷 天地蓋 磁吸 抽屜 燙金 局部 UV',
-      en: 'Cosmetics Packaging Box Printing Lift-off Magnetic Drawer Foil UV',
-      ja: '化粧品パッケージボックス印刷 天地蓋 マグネット 引き出し 箔押し スポットUV'
-    },
-  },
-  },
   // ===== 新增貼紙產品（SEO長尾詞覆盖） =====
   {
     id: 'ST-009',
