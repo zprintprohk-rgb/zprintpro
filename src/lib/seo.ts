@@ -316,9 +316,9 @@ const categorySeoData: Record<string, {
       ja: 'シール印刷,ステッカー印刷,防水シール,透明シール,円形シール,ダイカットシール,商品ラベル,食品ラベル,梱包用シール,ホログラムシール,医薬品ラベル,GMPラベル,改ざん防止ラベル',
     },
     descriptions: {
-      'zh-hk': '貼紙印刷 50 張起印. 防水 / 透明 / 異形 / 標籤貼紙, FDA 食品接觸級 + SGS 認證. 香港 + 跨境電商 + 日本市場. 30 秒 AI 即時報價, ISO 9001 認證, 4 色柯式印刷.',
-      en: 'Custom sticker printing 50 MOQ. Waterproof, transparent, die-cut, product label stickers. FDA food-contact + SGS certified. Free design + DHL 2-4 day global delivery.',
-      ja: 'ステッカー印刷 50 枚から対応. 防水・透明・ダイカット・商品ラベル. FDA 食品接触基準 + SGS 認証. 無料デザイン + DHL 国際配送 2-4 日.',
+      'zh-hk': '貼紙印刷 50 張起印. 防水 / 透明 / 異形 / 標籤貼紙, FDA 食品接觸級 + SGS 認證. 30 秒 AI 即時報價 + DHL 全球 2-4 天配送 + ISO 9001 認證 + 4 色柯式印刷.',
+      en: 'Custom sticker printing 50 MOQ. Waterproof, transparent, die-cut, product label stickers. FDA food-contact + SGS certified. 30-second AI quote + DHL 2-4 day global + ISO 9001.',
+      ja: 'ステッカー印刷 50 枚から対応. 防水・透明・ダイカット・商品ラベル. FDA 食品接触基準 + SGS 認証. 30 秒 AI 即時見積 + DHL 国際配送 2-4 日 + ISO 9001.',
     },
   },
   'flyers': {
@@ -328,9 +328,10 @@ const categorySeoData: Record<string, {
       ja: 'チラシ印刷 A4/A5 100枚〜 即日 折込・二つ折り | ZprintPro',
     },
     keywords: {
-      'zh-hk': '宣傳單張印刷,傳單印刷,傳單派發,A4單張,A5單張,摺頁傳單,開業傳單,餐廳傳單,活動傳單,電商傳單',
-      en: 'flyer printing,leaflet printing,custom flyers,A4 flyers,A5 flyers,folded flyers,grand opening flyers,restaurant flyers,event flyers,real estate flyers,door hanger printing,direct mail flyers',
-      ja: 'チラシ印刷,フライヤー印刷,パンフレット印刷,A4チラシ,A5チラシ,折りパンフレット,開業チラシ,飲食店チラシ,イベントチラシ,不動産チラシ',
+      'zh-hk': '宣傳單張印刷,傳單印刷,傳單派發,A4單張,A5單張,摺頁傳單,開業傳單,餐廳傳單,活動傳單,電商傳單,補習社單張,地產傳單,婚禮傳單,急印傳單',
+      en: 'flyer printing,leaflet printing,custom flyers,A4 flyers,A5 flyers,folded flyers,grand opening flyers,restaurant flyers,event flyers,real estate flyers,door hanger printing,direct mail flyers,tutoring flyers,same-day flyers',
+      ja: 'チラシ印刷,フライヤー印刷,パンフレット印刷,A4チラシ,A5チラシ,折りパンフレット,開業チラシ,飲食店チラシ,イベントチラシ,不動産チラシ,塾チラシ,即納チラシ,ダイレクトメール',
+    
     },
     descriptions: {
       'zh-hk': '宣傳單張印刷 100 張起印. A4/A5/A6 摺頁, 開業傳單 + 餐廳單張 + 補習社單張. 即日交貨, 30 秒 AI 即時報價, 全球 DHL 2-4 天配送.',
@@ -362,14 +363,14 @@ const categorySeoData: Record<string, {
       ja: 'ポスター印刷 A1/A2 1枚〜 屋外防水 展示バナー | ZprintPro',
     },
     keywords: {
-      'zh-hk': '海報印刷,A1海報,A2海報,A0海報,戶外海報,展覽海報,餐廳海報,Backdrop背景板,PP海報裱貼,防水海報',
-      en: 'poster printing,custom posters,A1 poster,A2 poster,A0 poster,outdoor posters,exhibition posters,event backdrops,PP laminated posters,waterproof posters,foam board printing,same day poster printing',
-      ja: 'ポスター印刷,A1ポスター,A2ポスター,A0ポスター,屋外用ポスター,展示会用ポスター,イベントバックドロップ,PPラミネートポスター,防水ポスター,即日ポスター印刷',
+      'zh-hk': '海報印刷,A1海報,A2海報,A0海報,戶外海報,展覽海報,餐廳海報,Backdrop背景板,PP海報裱貼,防水海報,易拉寶海報,燈箱片,婚禮海報',
+      en: 'poster printing,custom posters,A1 poster,A2 poster,A0 poster,outdoor posters,exhibition posters,event backdrops,PP laminated posters,waterproof posters,foam board printing,same day poster printing,wedding posters,menu board',
+      ja: 'ポスター印刷,A1ポスター,A2ポスター,A0ポスター,屋外用ポスター,展示会用ポスター,イベントバックドロップ,PPラミネートポスター,防水ポスター,即日ポスター印刷,結婚式ポスター,メニューボード',
     },
     descriptions: {
-      'zh-hk': '海報印刷 1 張起打, A1/A2/A3 戶外防水 + 展覽背板 + 餐廳海報. 香港 + 全球, 30 秒 AI 即時報價, 4 色柯式, 7 天交付.',
-      en: 'Custom poster printing 1 MOQ. A1/A2/A3 outdoor waterproof + exhibition backdrops + restaurant posters. Free design + global DHL 2-4 day shipping.',
-      ja: 'ポスター印刷 1 枚から対応. A1/A2/A3 屋外防水 + 展示背景 + 飲食店ポスター. 無料デザイン + DHL 国際配送 2-4 日.',
+      'zh-hk': '海報印刷 1 張起打. A1/A2/A3 戶外防水 + 展覽背板 + 餐廳海報. ISO 9001 認證 + 30 秒 AI 即時報價 + DHL 全球 2-4 天配送 + 4 色柯式 + 7 天交付.',
+      en: 'Custom poster printing 1 MOQ. A1/A2/A3 outdoor waterproof + exhibition backdrops + restaurant posters. ISO 9001 + 30-second AI quote + DHL 2-4 day global + 4C offset + 7-day delivery.',
+      ja: 'ポスター印刷 1 枚から対応. A1/A2/A3 屋外防水 + 展示背景 + 飲食店ポスター. ISO 9001 認証 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日 + 4 色印刷 + 7 日納期.',
     },
   },
   'paper-bags': {
@@ -392,22 +393,27 @@ const categorySeoData: Record<string, {
   
   'calendars': {
     titles: {
-      'zh-hk': '年曆印刷 香港 | 智印雲 ZprintPro — 座枱月曆 / 掛牆 / 月曆 / 2027年曆 定制',
-      en: 'Custom Calendar Printing | ZprintPro — Desk / Wall / Monthly / 2027 Calendars',
-      ja: 'カレンダー印刷 おすすめ | ZprintPro — デスク / 壁掛け / 月別 / 2027年カレンダー',
+      'zh-hk': '年曆印刷 100本起 · 座檯/掛牆/2027 燙金精裝 ISO認證 DHL 2-4天 | 智印雲',
+      en: 'Calendar Printing 100 MOQ · Desk/Wall/2027 Hardcover Foil ISO Cert | ZprintPro',
+      ja: 'カレンダー印刷 100部〜 · デスク/壁掛け/2027 箔押し上製本 ISO認証 | ZprintPro',
     },
     keywords: {
-      'zh-hk': '年曆印刷,月曆印刷,座枱月曆,掛牆月曆,2027年曆,企業年曆,禮品月曆,定制月曆,日曆',
-      en: 'calendar printing,custom calendars,desk calendar,wall calendar,monthly calendar,2027 calendar,corporate calendar,gift calendar,branded calendar',
-      ja: 'カレンダー印刷,カスタムカレンダー,デスクカレンダー,壁掛けカレンダー,月別カレンダー,2027年カレンダー,企業カレンダー,ギフトカレンダー',
+      'zh-hk': '年曆印刷,月曆印刷,座檯月曆,掛牆月曆,2027年曆,企業年曆,禮品月曆,定制月曆,燙金月曆,精裝月曆,日曆印刷,教師月曆,辦公文具',
+      en: 'calendar printing,custom calendars,desk calendar,wall calendar,monthly calendar,2027 calendar,corporate calendar,gift calendar,branded calendar,hardcover calendar,foil stamped calendar,school calendar,office stationery',
+      ja: 'カレンダー印刷,カスタムカレンダー,デスクカレンダー,壁掛けカレンダー,月別カレンダー,2027年カレンダー,企業カレンダー,ギフトカレンダー,箔押しカレンダー,上製本カレンダー,学校カレンダー,事務用品',
     },
     descriptions: {
-      'zh-hk': '香港年曆印刷服務，智印雲提供座枱月曆、掛牆月曆、2027年曆定制，支持企業LOGO，免費設計，加急出貨。Q4 旺季建議提前 60 天下單。',
-      en: 'Custom calendar printing 2027 — desk, wall, monthly calendars with corporate branding. Premium paper, foil stamping, spiral/hardcover binding. Free design, rush available. Order 60 days before Q4 peak season.',
-      ja: 'プロのカレンダー印刷サービス 2027年。デスク・壁掛け・月別、企業ブランディング対応。高級紙、箔押し、スパイラル/ハードカバー製本。無料デザイン、急ぎ対応可能。繁忙期の60日前までのご注文を推奨。',
+      'zh-hk': '年曆印刷 100 本起印. 座檯/掛牆/2027 + 燙金精裝 + 企業 LOGO. ISO 9001 認證 + 30 秒 AI 即時報價 + DHL 全球 2-4 天配送. Q4 旺季建議提前 60 天下單.',
+      en: 'Custom calendar printing 100 MOQ. Desk/wall/monthly + foil hardcover + corporate branding. ISO 9001 certified + 30-second AI instant quote + DHL 2-4 day global. Order 60 days before Q4 peak.',
+      ja: 'カレンダー印刷 100 部から対応. デスク・壁掛け・月別 + 箔押し上製本 + 企業 LOGO. ISO 9001 認証 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日. 繁忙期の 60 日前までのご注文を推奨.',
     },
   },
 'japan-doujin': {
+    titles: {
+      'zh-hk': '同人周邊印刷 10本起 · 同人誌/亞克力/缶バッヂ/明信片 Comiket 24h特急 | 智印雲',
+      en: 'Doujinshi Printing 10 MOQ · Acrylic/Can Badge/Postcard Comiket 24h Rush | ZprintPro',
+      ja: '同人誌印刷 10部〜 · アクリル/缶バッジ/ポストカード コミケ24時間特急 | ZprintPro',
+    },
     keywords: {
       'zh-hk': '同人誌印刷,同人周邊,亞克力鑰匙扣,亞克力立牌,全息貼紙,和紙膠帶,罐型襟章,明信片套裝,環保托特袋,Comiket印刷,VTuber周邊,動漫角色周邊,推し活周邊,日系周邊訂製',
       en: 'doujinshi printing,japan doujin,acrylic keychain custom,acrylic stand,can badge printing,postcard set,washi tape custom,eco tote bag print,hologram sticker,comiket printing,VTuber merch,anime goods custom,japan merchandise,oshi-katsu goods',
@@ -419,6 +425,23 @@ const categorySeoData: Record<string, {
       ja: '同人誌・推し活特化の印刷サービス。A5/B5 同人誌 10 部から対応、アクリルキーホルダー・スタンド・缶バッジ・ポストカード・エコトートバッグ。コミケ前 24 時間特急対応可能。深圳自社工場から DHL Express で 2-4 営業日でお届け。FSC 認証紙、ISO 12647 色彩管理、ISO 9001 取得。日本語サポート完備。',
     },
   },
+  'envelopes': {
+    titles: {
+      'zh-hk': '信封印刷 100個起 · 牛皮/開窗/彩色/企業LOGO ISO認證 DHL 2-4天 | 智印雲',
+      en: 'Envelope Printing 100 MOQ · Kraft/Window/Colored/Corporate Branding ISO | ZprintPro',
+      ja: '封筒印刷 100個〜 · クラフト/窓付き/カラー/企業ロゴ ISO認証 DHL | ZprintPro',
+    },
+    keywords: {
+      'zh-hk': '信封印刷,牛皮信封,開窗信封,彩色信封,企業信封,LOGO信封,定制信封,中式信封,西式信封,航空信封,印刷信封,郵寄信封',
+      en: 'envelope printing,custom envelopes,kraft envelope,window envelope,colored envelope,corporate envelope,branded envelope,DL envelope,C5 envelope,airmail envelope,printing envelopes,business envelopes',
+      ja: '封筒印刷,カスタム封筒,クラフト封筒,窓付き封筒,カラー封筒,企業封筒,ロゴ封筒,長3封筒,洋形封筒,エアメール封筒,印刷封筒,社名入り封筒',
+    },
+    descriptions: {
+      'zh-hk': '信封印刷 100 個起印. 牛皮/開窗/彩色/中式/西式 + 企業 LOGO 定制. ISO 9001 認證紙材 + 30 秒 AI 即時報價 + DHL 全球 2-4 天配送.',
+      en: 'Custom envelope printing 100 MOQ. Kraft / window / colored / DL / C5 + corporate branding. ISO 9001 certified + 30-second AI quote + DHL 2-4 day global.',
+      ja: '封筒印刷 100 個から対応. クラフト・窓付き・カラー・長 3・洋形 + 企業ロゴ. ISO 9001 認証 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日.',
+    },
+  },
   'menus': {
     titles: {
       'zh-hk': '餐牌印刷 100本起 · 防水PVC/紙質菜單 餐廳茶餐廳適用 | 智印雲',
@@ -426,14 +449,14 @@ const categorySeoData: Record<string, {
       ja: 'メニュー印刷 100部〜 防水PVC・紙メニュー 飲食店向け | ZprintPro',
     },
     keywords: {
-      'zh-hk': '餐牌印刷,菜單印刷,酒水牌,PVC餐牌,過膠餐牌,皮革餐牌,餐廳餐牌,茶餐廳餐牌,酒吧餐牌,外賣餐牌',
-      en: 'menu printing,custom menus,restaurant menus,bar menus,PVC menus,laminated menus,leather menu covers,takeaway menus,food menus,drink menus',
-      ja: 'メニュー印刷,レストランメニュー,メニューブック,PVCメニュー,ラミネートメニュー,レザーメニュー,居酒屋メニュー,カフェメニュー',
+      'zh-hk': '餐牌印刷,菜單印刷,酒水牌,PVC餐牌,過膠餐牌,皮革餐牌,餐廳餐牌,茶餐廳餐牌,酒吧餐牌,外賣餐牌,甜品餐牌,咖啡店餐牌,酒店菜單',
+      en: 'menu printing,custom menus,restaurant menus,bar menus,PVC menus,laminated menus,leather menu covers,takeaway menus,food menus,drink menus,dessert menu,cafe menu,hotel menu',
+      ja: 'メニュー印刷,レストランメニュー,メニューブック,PVCメニュー,ラミネートメニュー,レザーメニュー,居酒屋メニュー,カフェメニュー,デザートメニュー,ホテルメニュー',
     },
     descriptions: {
-      'zh-hk': '餐牌印刷 100 本起印. 防水 PVC / 紙質菜單 / 精裝 / 一次性, 餐廳茶餐廳酒吧適用. 香港本地 + DHL 全球, ISO 9001 認證. 即日打樣, 30 秒 AI 即時報價.',
-      en: 'Custom menu printing 100 MOQ. Waterproof PVC, paper, hardcover, disposable menus for restaurants, cafes, bars. Free design + rush production. 30-second AI instant quote.',
-      ja: 'メニュー印刷 100 部から対応. 防水 PVC・紙・ハードカバー・使い捨て, レストラン・カフェ・バー向け. 無料デザイン + 短納期対応.',
+      'zh-hk': '餐牌印刷 100 本起印. 防水 PVC / 紙質菜單 / 精裝 / 一次性, 餐廳茶餐廳酒吧適用. ISO 9001 認證 + 30 秒 AI 即時報價 + DHL 全球 2-4 天配送.',
+      en: 'Custom menu printing 100 MOQ. Waterproof PVC / paper / hardcover / disposable menus for restaurants, cafes, bars. ISO 9001 + 30-second AI quote + DHL 2-4 day global.',
+      ja: 'メニュー印刷 100 部から対応. 防水 PVC・紙・ハードカバー・使い捨て, レストラン・カフェ・バー向け. ISO 9001 認証 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日.',
     },
   },
   'red-packets': {
@@ -443,65 +466,65 @@ const categorySeoData: Record<string, {
       ja: 'ポチ袋印刷 100個〜 箔押し 婚礼・企業・お正月 | ZprintPro',
     },
     keywords: {
-      'zh-hk': '利是封印刷,企業利是封,婚慶利是封,賀年利是封,定制利是封,燙金利是封,紅包印刷,新年利是封,結婚利是封,LOGO利是封',
-      en: 'red packet printing,custom red envelopes,Chinese New Year red packets,wedding red packets,corporate red packets,foil red packets,hong bao printing,new year red envelopes',
-      ja: 'ポチ袋印刷,オリジナルポチ袋,お年玉袋,結婚式ポチ袋,企業ポチ袋,箔押しポチ袋,紅包印刷,新年ポチ袋',
+      'zh-hk': '利是封印刷,企業利是封,婚慶利是封,賀年利是封,定制利是封,燙金利是封,紅包印刷,新年利是封,結婚利是封,LOGO利是封,生肖利是封,銀行利是封,卡通利是封',
+      en: 'red packet printing,custom red envelopes,Chinese New Year red packets,wedding red packets,corporate red packets,foil red packets,hong bao printing,new year red envelopes,zodiac red packet,bank red packet,cartoon red packet',
+      ja: 'ポチ袋印刷,オリジナルポチ袋,お年玉袋,結婚式ポチ袋,企業ポチ袋,箔押しポチ袋,紅包印刷,新年ポチ袋,干支ポチ袋,銀行ポチ袋,キャラクターポチ袋',
     },
     descriptions: {
-      'zh-hk': '利是封印刷 100 個起印. 燙金 / 局部 UV / 婚慶 / 賀年 / 企業 LOGO 定制. 香港茶餐廳銀行客戶喜愛. 30 秒 AI 即時報價, 4 色印刷, 7 天交付.',
-      en: 'Custom red packet printing 100 MOQ. Foil stamping, spot UV, wedding & corporate Chinese New Year red envelopes. Free design + DHL global shipping.',
-      ja: 'ポチ袋印刷 100 個から対応. 箔押し・スポット UV・婚礼・お正月・企業 LOGO. 無料デザイン + DHL 国際配送.',
+      'zh-hk': '利是封印刷 100 個起印. 燙金 / 局部 UV / 婚慶 / 賀年 / 企業 LOGO 定制. ISO 9001 認證 + 30 秒 AI 即時報價 + DHL 全球 2-4 天配送 + 4 色印刷.',
+      en: 'Custom red packet printing 100 MOQ. Foil / spot UV / wedding / CNY / corporate branding. ISO 9001 + 30-second AI quote + DHL 2-4 day global + 4C offset.',
+      ja: 'ポチ袋印刷 100 個から対応. 箔押し・スポット UV・婚礼・お正月・企業 LOGO. ISO 9001 認証 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日 + 4 色印刷.',
     },
   },
   'banners': {
     titles: {
-      'zh-hk': '橫幅印刷 香港 | 智印雲 ZprintPro — 易拉寶 / 戶外橫幅 / 展覽橫幅 / 車身廣告',
-      en: 'Custom Banner Printing | ZprintPro — Roll-Up / Outdoor / Exhibition / Vehicle Wrap',
-      ja: 'バナー印刷 カスタム | ZprintPro — ロールアップ / 屋外 / 展示 / 車両広告',
+      'zh-hk': '易拉寶印刷 1個起 · X架/展覽橫幅/車身廣告 防水防UV ISO認證 | 智印雲',
+      en: 'Banner Printing 1 MOQ · Roll-Up/X-Stand/Vehicle Wrap Waterproof UV | ZprintPro',
+      ja: 'バナー印刷 1枚〜 · ロールアップ/Xスタンド/車両広告 防水UV ISO認証 | ZprintPro',
     },
     keywords: {
-      'zh-hk': '橫幅印刷,易拉寶,戶外橫幅,展覽橫幅,車身廣告,X架,展架,燈箱廣告,噴繪廣告,商場橫幅',
-      en: 'banner printing,custom banners,roll up banners,outdoor banners,exhibition banners,vehicle wrap,x banner,standee,lightbox advertising,event banners',
-      ja: 'バナー印刷,カスタムバナー,ロールアップバナー,屋外バナー,展示バナー,車両広告,Xスタンド,スタンドバナー,イベントバナー',
+      'zh-hk': '橫幅印刷,易拉寶,戶外橫幅,展覽橫幅,車身廣告,X架,展架,燈箱廣告,噴繪廣告,商場橫幅,防水橫幅,防UV橫幅',
+      en: 'banner printing,custom banners,roll up banners,outdoor banners,exhibition banners,vehicle wrap,x banner,standee,lightbox advertising,event banners,waterproof banner,UV resistant banner',
+      ja: 'バナー印刷,カスタムバナー,ロールアップバナー,屋外バナー,展示バナー,車両広告,Xスタンド,スタンドバナー,イベントバナー,防水バナー,UV耐性バナー',
     },
     descriptions: {
-      'zh-hk': '香港橫幅印刷服務｜智印雲提供易拉寶、戶外橫幅、展覽橫幅、車身廣告印刷，防水耐用，多種尺寸。免費設計，加急交貨，全球配送！',
-      en: 'Custom banner printing — roll-up stands, outdoor vinyl, exhibition backdrops, vehicle wraps. Waterproof & UV-resistant. Multiple sizes. Free design, rush production, global shipping.',
-      ja: 'プロのバナー印刷サービス。ロールアップスタンド、屋外用ビニール、展示背景、車両広告に対応。防水・耐UV。サイズ豊富、無料デザイン、即日納品、全国配送。',
+      'zh-hk': '易拉寶印刷 1 個起印. X 架/展覽/車身廣告 + 防水防 UV + 多種尺寸. ISO 9001 認證 + 30 秒 AI 即時報價 + DHL 全球 2-4 天配送.',
+      en: 'Custom banner printing 1 MOQ. Roll-up / X-stand / vehicle wraps, waterproof & UV-resistant, multiple sizes. ISO 9001 + 30-second AI instant quote + DHL 2-4 day global.',
+      ja: 'バナー印刷 1 枚から対応. ロールアップ・X スタンド・車両広告, 防水・耐 UV. ISO 9001 認証 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日.',
     },
   },
   'books': {
     titles: {
-      'zh-hk': '畫冊印刷 香港 | 智印雲 ZprintPro — 騎馬釘 / 膠裝書 / 精裝書 / 螺旋裝 / 兒童繪本',
-      en: 'Custom Book Printing | ZprintPro — Saddle Stitch / Perfect Bound / Hardcover / Spiral / Children',
-      ja: '冊子印刷 カスタム | ZprintPro — 中綴じ / 無線綴じ / 上製本 / スパイラル / 絵本',
+      'zh-hk': '畫冊印刷 50本起 · 騎馬釘/膠裝/精裝/兒童繪本 FSC認證 DHL 2-4天 | 智印雲',
+      en: 'Book Printing 50 MOQ · Saddle/Perfect/Hardcover/Children FSC Certified | ZprintPro',
+      ja: '冊子印刷 50部〜 · 中綴じ/無線綴じ/上製本/絵本 FSC認証 DHL 2-4日 | ZprintPro',
     },
     keywords: {
-      'zh-hk': '畫冊印刷,書籍印刷,騎馬釘,膠裝書,精裝書,螺旋裝,兒童繪本,同人誌,雜誌印刷,小批量書刊',
-      en: 'book printing,custom books,saddle stitch,perfect bound,hardcover,spiral bound,children books,doujinshi,magazine printing,small batch book printing',
-      ja: '冊子印刷,カスタム本,中綴じ,無線綴じ,上製本,スパイラル,絵本,同人誌,雑誌印刷,小ロット印刷',
+      'zh-hk': '畫冊印刷,書籍印刷,騎馬釘,膠裝書,精裝書,螺旋裝,兒童繪本,同人誌,雜誌印刷,小批量書刊,企業畫冊,產品型錄,作品集',
+      en: 'book printing,custom books,saddle stitch,perfect bound,hardcover,spiral bound,children books,doujinshi,magazine printing,small batch book printing,company profile,catalog printing,portfolio book',
+      ja: '冊子印刷,カスタム本,中綴じ,無線綴じ,上製本,スパイラル,絵本,同人誌,雑誌印刷,小ロット印刷,会社案内,カタログ印刷,作品集',
     },
     descriptions: {
-      'zh-hk': '香港畫冊印刷服務｜智印雲提供騎馬釘、膠裝書、精裝書、螺旋裝、兒童繪本印刷，多種紙質可選，支持小批量起訂。免費設計，全球配送！',
-      en: 'Custom book printing — saddle stitch, perfect bound, hardcover, spiral & children books. Premium paper, foil stamping, UV. Free design, small MOQ, global shipping to US, UK, AU.',
-      ja: 'プロの冊子印刷サービス。中綴じ・無線綴じ・上製本・スパイラル・絵本に対応。高級紙、箔押し、UV対応。無料デザイン、小ロット対応、全国配送。',
+      'zh-hk': '畫冊印刷 50 本起印. 騎馬釘/膠裝/精裝/螺旋裝 + 兒童繪本 + 同人誌 + 企業畫冊. FSC 認證紙材 + ISO 9001 品質 + 30 秒 AI 即時報價 + DHL 全球 2-4 天配送.',
+      en: 'Custom book printing 50 MOQ. Saddle / perfect / hardcover / spiral + children books + doujinshi + company profiles. FSC certified paper + ISO 9001 quality + 30-second AI quote + DHL 2-4 day global.',
+      ja: '冊子印刷 50 部から対応. 中綴じ・無線綴じ・上製本・スパイラル + 絵本 + 同人誌 + 会社案内. FSC 認証紙 + ISO 9001 品質 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日.',
     },
   },
   'educational': {
     titles: {
-      'zh-hk': '校園教育印刷 香港 | 智印雲 ZprintPro — 證書 / 作業簿 / 教材 / 學業簿 定制',
-      en: 'Custom Education Printing | ZprintPro — Certificates / Workbooks / Textbooks / School Stationery',
-      ja: '教育印刷 カスタム | ZprintPro — 証明書 / ワークブック / 教科書 / 学用品',
+      'zh-hk': '校園教育印刷 100本起 · 證書/作業簿/教材 學校批量優惠 FSC認證 | 智印雲',
+      en: 'Education Printing 100 MOQ · Certificates/Workbooks/Textbooks Bulk FSC | ZprintPro',
+      ja: '教育印刷 100部〜 · 証明書/ワークブック/教科書 学校一括割引 FSC認証 | ZprintPro',
     },
     keywords: {
-      'zh-hk': '校園印刷,教育印刷,證書印刷,作業簿,教材印刷,學業簿,畢業證書,獎狀印刷,學校印刷,學生手冊',
-      en: 'education printing,school printing,certificate printing,workbook printing,textbook printing,diploma printing,award certificates,student handbooks,school stationery,academic printing',
-      ja: '教育印刷,学校印刷,証明書印刷,ワークブック,教材印刷,教科書,卒業証書,賞状印刷,学生手帳,学用品印刷',
+      'zh-hk': '校園印刷,教育印刷,證書印刷,作業簿,教材印刷,學業簿,畢業證書,獎狀印刷,學校印刷,學生手冊,導師手冊,學位證書,幼稚園教材',
+      en: 'education printing,school printing,certificate printing,workbook printing,textbook printing,diploma printing,award certificates,student handbooks,school stationery,academic printing,teacher handbook,kindergarten materials',
+      ja: '教育印刷,学校印刷,証明書印刷,ワークブック,教材印刷,教科書,卒業証書,賞状印刷,学生手帳,学用品印刷,教師用ガイド,幼稚園教材',
     },
     descriptions: {
-      'zh-hk': '香港校園教育印刷服務｜智印雲提供證書、作業簿、教材、學業簿印刷，支持學校批量定制，價格優惠。免費設計，準時交貨！',
-      en: 'Custom education printing — certificates, workbooks, textbooks, student handbooks, award certificates. School bulk pricing. Free design, on-time delivery.',
-      ja: 'プロの教育印刷サービス。証明書・ワークブック・教科書・学生手帳・賞状に対応。学校一括割引対応。無料デザイン、納期厳守。',
+      'zh-hk': '校園教育印刷 100 本起印. 證書/作業簿/教材/學業簿 + 學校批量定制折扣. FSC 認證紙材 + ISO 9001 品質 + 30 秒 AI 即時報價 + DHL 全球 2-4 天配送.',
+      en: 'Custom education printing 100 MOQ. Certificates / workbooks / textbooks / student handbooks + school bulk pricing. FSC certified + ISO 9001 + 30-second AI quote + DHL 2-4 day global.',
+      ja: '教育印刷 100 部から対応. 証明書・ワークブック・教科書・学生手帳 + 学校一括割引. FSC 認証紙 + ISO 9001 品質 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日.',
     },
   },
 };
