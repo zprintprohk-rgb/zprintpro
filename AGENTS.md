@@ -539,4 +539,71 @@ if (locale === 'zh-hk') {
 1. `src/data/blog-posts.ts` — 列表页 title/excerpt ✅ 已修复？
 2. `src/app/[locale]/blog/[slug]/page.tsx` — 详情页 posts 对象 title/description ✅ 已修复？
 3. `public/blog-data/{locale}.json` — JSON 正文内容 ✅ 无"Shenzhen/深圳"残留？
-4. zh-hk: 标题是繁体中文？en: 标题是英文？ja: 标题是日文？✅？
+4. zh-hk: 标题是繁体中文？en: 标题是英文？ja: 标题是日文？✅？## 13.14 Footer 合规分层（2026-07-08 user 拍板）
+
+### 3 Locale 法规对 Footer 的差异要求
+
+| Locale | 底部「經營者資訊披露」按鈕 | 原因 |
+|---|---|---|
+| **zh-hk** | ❌ 不顯示 | 跨境電商無 HK 實體門市, 強加日本式披露 = 偽合規 |
+| **en** | ❌ 不顯示 | 同 zh-hk, 跨境無需強制 Legal Disclosure 入口 |
+| **ja** | ✅ **必顯示**「特定商取引法に基づく表記」 | 日本《特定商取引法》第3条 + 施行規則第2条 必須記載事項 11 項 |
+
+### 隱私政策 + 使用條款 的位置（**全部 3 locale 統一**）
+
+- ❌ **不在底部獨立 legal strip**（用戶觀感差, 容易和法律披露混淆）
+- ✅ **移到「幫助中心」column** 作為普通 help item（落單須知 / 付款方式 / 送貨安排 / 退換政策 / 隱私政策 / 使用條款）
+
+### 实施模板 (Footer.tsx)
+
+```tsx
+// 幫助中心 column 各 locale 統一加隱私 + 條款
+{
+  title: '幫助中心',  // en: 'Help Center', ja: 'ヘルプセンター'
+  links: [
+    { label: '落單須知', href: '/help-center/#order' },
+    { label: '付款方式', href: '/payment-methods/' },
+    { label: '送貨安排', href: '/help-center/#shipping' },
+    { label: '退換政策', href: '/help-center/#returns' },
+    { label: '隱私政策', href: '/privacy/' },     // ADD
+    { label: '使用條款', href: '/terms/' },        // ADD
+  ],
+},
+
+// 底部 legal strip 只對 ja 渲染 (僅保留「特定商取引法に基づく表記」)
+{locale === 'ja' && (
+  <div className="mt-4 pt-4 border-t border-white/10">
+    <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-gray-400">
+      <Link href={`${localePrefix}/legal/`} className="hover:text-white transition-colors">
+        {t.legalLabel}
+      </Link>
+    </div>
+  </div>
+)}
+```
+
+### SKU 品牌故事 supplier origin 简化（跨 locale 通用）
+
+| Locale | 旧 full entity name pattern | 新 shortened |
+|---|---|---|
+| zh-hk (繁體) | `深圳彩龍印刷包裝有限公司` | `彩龍印刷` |
+| ja (簡體) | `深圳彩龍印刷包装有限公司` | `彩龍印刷` |
+| en | 无完整公司全称 pattern（保持 "Shenzhen-rooted" 短语）| - |
+
+⚠️ **保留 `深圳自社工場` 等 supplier origin 短语** — ja 用戶视深圳為製造基地常識，不抵觸 §13.10 (只限制 title 不限制 body)。
+
+### 验证清单 (改 Footer 后必须跑)
+
+1. curl `https://zprintpro.com/zh-hk/` → grep `經營者資訊披露` 应为 0
+2. curl `https://zprintpro.com/en/` → grep `Legal Disclosure` 应为 0
+3. curl `https://zprintpro.com/ja/` → grep `特定商取引法に基づく表記` 应为 ≥1
+4. 三 locale footer「幫助中心」column 各含 `隱私政策` / `使用條款` (en: Privacy Policy / Terms of Service)
+5. ja SKU page grep `深圳彩龍印刷包装有限公司` 应为 0, `彩龍印刷` 应为 ≥1
+
+### 踩坑教训（2026-07-08 真实事故）
+
+- ❌ **3 locale Footer 共享同一份底部 legal links 渲染逻辑** = zh-hk/en 用户看到日本式「經營者資訊披露」按鈕（伪合规 + 视觉冗余）
+- ✅ **Footer 法律元素按 locale 条件渲染** — 不是「全部 locale 都加，按 locale 隐藏文案」(文案泄露信息)
+- ✅ **幫助中心 column 是隐私/条款的合理归属**（合 faq + 退换 + 物流 同列）
+
+应用范围: 任何跨境电商 Footer 都应先做「法规矩阵」, 后做 UI 设计, 不要拿单一司法辖区模板套全部 locale。
