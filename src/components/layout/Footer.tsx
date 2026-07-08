@@ -26,7 +26,8 @@ const translations = {
     serviceArea: '全球跨境印刷服務',
     phone: '+86 198 8085 1334',
     email: 'zprintpro@outlook.com',
-    address: '廣東省深圳市龍崗區平湖街道嘉城路1號（518111）',
+    // 2026-07-08: zh-hk 显示 HK 虚拟办公地址（合规: 跨境展示不暴露深圳实体地址）
+    address: '香港九龍新蒲崗大有街3號萬廣大廈15樓C室',
     legalLabel: '經營者資訊披露',
     privacyLabel: '隱私政策',
     termsLabel: '使用條款',
