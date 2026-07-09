@@ -145,26 +145,26 @@ export function HowItWorks({ locale }: HowItWorksProps) {
   const heading = HEADING[locale] || HEADING['en'];
 
   return (
-    <section
-      className="bg-gradient-to-b from-slate-50 to-white py-12 md:py-20"
+<section
+      className="bg-gradient-to-b from-slate-50 to-white py-8 md:py-12"
       aria-label="How it works - 5 steps"
       data-testid="how-it-works"
     >
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-10 md:mb-14">
-          <h2 className="text-2xl md:text-4xl font-bold text-slate-900 mb-3">
+        <div className="text-center mb-6 md:mb-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-2">
             {heading.title}
           </h2>
-          <p className="text-base md:text-lg text-slate-600 max-w-3xl mx-auto">
+          <p className="text-sm md:text-base text-slate-600 max-w-3xl mx-auto">
             {heading.subtitle}
           </p>
         </div>
 
-        <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 md:gap-4 relative">
+        <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 md:gap-4 relative">
           {steps.map((step, idx) => (
             <li
               key={step.num}
-              className="relative bg-white rounded-2xl border border-slate-200 p-6 shadow-sm hover:shadow-md transition-shadow"
+              className="relative bg-white rounded-xl border border-slate-200 p-4 shadow-sm hover:shadow-md transition-shadow"
             >
               {/* Connector arrow for desktop (between steps) */}
               {idx < steps.length - 1 && (
@@ -176,17 +176,17 @@ export function HowItWorks({ locale }: HowItWorksProps) {
                 </div>
               )}
 
-              <div className="flex items-center gap-3 mb-4">
-                <span className="flex-shrink-0 w-10 h-10 rounded-full bg-[#2873F5] text-white font-bold text-lg flex items-center justify-center">
+              <div className="flex items-center gap-2 mb-3">
+                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#2873F5] text-white font-bold text-base flex items-center justify-center">
                   {step.num}
                 </span>
-                <span className="text-3xl" aria-hidden="true">{step.icon}</span>
+                <span className="text-2xl" aria-hidden="true">{step.icon}</span>
               </div>
 
-              <h3 className="text-lg font-bold text-slate-900 mb-2">
+              <h3 className="text-base font-bold text-slate-900 mb-1.5">
                 {step.title}
               </h3>
-              <p className="text-sm text-slate-600 leading-relaxed">
+              <p className="text-xs md:text-sm text-slate-600 leading-relaxed">
                 {step.desc}
               </p>
             </li>
@@ -194,8 +194,8 @@ export function HowItWorks({ locale }: HowItWorksProps) {
         </ol>
 
         {/* Bottom trust CTA bar */}
-        <div className="mt-10 md:mt-14 text-center">
-          <p className="text-sm text-slate-500 mb-3">
+        <div className="mt-6 md:mt-8 text-center">
+          <p className="text-xs md:text-sm text-slate-500 mb-2">
             {locale === 'zh-hk'
               ? '15+ 年印刷經驗 · ISO 9001 認證 · 5000+ 全球客戶 · 100+ 國家發貨'
               : locale === 'ja'
@@ -204,7 +204,7 @@ export function HowItWorks({ locale }: HowItWorksProps) {
           </p>
           <a
             href={`/${locale}/quote/`}
-            className="inline-flex items-center gap-2 bg-[#2873F5] hover:bg-[#1E5BD6] text-white font-bold py-3 px-7 rounded-xl transition-colors shadow-md"
+            className="inline-flex items-center gap-2 bg-[#2873F5] hover:bg-[#1E5BD6] text-white font-bold py-2.5 px-6 rounded-xl transition-colors shadow-md text-sm"
           >
             {locale === 'zh-hk' ? '免費獲取報價' : locale === 'ja' ? '無料見積もり' : 'Get Free Quote'}
             <span aria-hidden="true">→</span>
