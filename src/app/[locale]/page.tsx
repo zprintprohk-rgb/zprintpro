@@ -14,6 +14,7 @@ import { WhyChooseUs } from '@/components/home/WhyChooseUs';
 import { KnowledgeSection } from '@/components/home/KnowledgeSection';
 import { TrustWaterfall } from '@/components/home/TrustWaterfall';
 import { HowItWorks } from '@/components/home/HowItWorks';
+import { TrustBadges } from '@/components/TrustBadges';
 import { DoujinSKU } from '@/components/japan/DoujinSKU';
 
 // 生成静态参数
@@ -67,6 +68,8 @@ export default function HomePage({
         <StatsBar locale={locale} />
         <WhyChooseUs locale={locale} />
         <KnowledgeSection locale={locale} />
+        {/* 2026-07-09 P1.3: 8 个诚实信任信号 (替代 Trustpilot widget 冷启动) */}
+        <TrustBadges locale={locale} />
         {locale === 'ja' && <DoujinSKU locale={locale} />}
 
         {/* Floating CTA Bar - server-rendered, visible in initial HTML */}
