@@ -322,21 +322,24 @@ const categorySeoData: Record<string, {
     },
   },
   'flyers': {
+    // 2026-07-09 SEO 复盘 v3 强化: 把「即日 + 數碼印刷 + 數碼快印」sharp hook 集中到 flyers 类目页
+    // 竞品 z-printpro.com 实证: 即日名片印刷 CTR 6.56%, A2 名片 即日 CTR 7.02%, 24小時名片 CTR 4-7%
+    // 分散在 nav 独立栏目的反模式已移除, 全部权重归 flyers
     titles: {
-      'zh-hk': '宣傳單張印刷 100張起印 即日交貨 A3/A4/A5摺頁傳單 | 智印雲',
-      en: 'Flyer Printing 100 MOQ Same-Day | A3/A4/A5 Folded Leaflets | ZprintPro',
-      ja: 'チラシ印刷 A4/A5 100枚〜 即日 折込・二つ折り | ZprintPro',
+      'zh-hk': '即日宣傳單張印刷 100張起 · A4/A5 數碼快印 + 柯式印刷 加急 24小時 | 智印雲',
+      en: 'Same-Day Flyer Printing 100 MOQ | A4/A5 Digital + Offset Rush 24h | ZprintPro',
+      ja: '即日チラシ印刷 100枚〜 · A4/A5 デジタル+オフセット 急ぎ24時間 | ZprintPro',
     },
     keywords: {
-      'zh-hk': '宣傳單張印刷,傳單印刷,傳單派發,A4單張,A5單張,摺頁傳單,開業傳單,餐廳傳單,活動傳單,電商傳單,補習社單張,地產傳單,婚禮傳單,急印傳單',
-      en: 'flyer printing,leaflet printing,custom flyers,A4 flyers,A5 flyers,folded flyers,grand opening flyers,restaurant flyers,event flyers,real estate flyers,door hanger printing,direct mail flyers,tutoring flyers,same-day flyers',
-      ja: 'チラシ印刷,フライヤー印刷,パンフレット印刷,A4チラシ,A5チラシ,折りパンフレット,開業チラシ,飲食店チラシ,イベントチラシ,不動産チラシ,塾チラシ,即納チラシ,ダイレクトメール',
-    
+      // 加長尾: 數碼印刷 / 數碼快印 / 急印傳單 / 即日傳單 / 數位印刷 / 加急傳單 / 短版印刷
+      'zh-hk': '宣傳單張印刷,傳單印刷,即日傳單,數碼印刷,數碼快印,數位印刷,急印傳單,加急傳單,短版印刷,A4單張,A5單張,A3單張,摺頁傳單,開業傳單,餐廳傳單,活動傳單,補習社單張,地產傳單,婚禮傳單,24小時傳單,當日傳單',
+      en: 'flyer printing,leaflet printing,custom flyers,same day flyers,digital printing,digital flyer printing,rush flyer printing,24 hour flyers,A4 flyers,A5 flyers,A3 flyers,folded flyers,grand opening flyers,restaurant flyers,event flyers,real estate flyers,door hanger printing,direct mail flyers,tutoring flyers,short run flyer printing',
+      ja: 'チラシ印刷,フライヤー印刷,即納チラシ,デジタル印刷,オンデマンド印刷,急ぎチラシ,A4チラシ,A5チラシ,A3チラシ,折りパンフレット,開業チラシ,飲食店チラシ,イベントチラシ,不動産チラシ,塾チラシ,ダイレクトメール,短納期チラシ',
     },
     descriptions: {
-      'zh-hk': '宣傳單張印刷 100 張起印. A4/A5/A6 摺頁, 開業傳單 + 餐廳單張 + 補習社單張. 即日交貨, 30 秒 AI 即時報價, 全球 DHL 2-4 天配送.',
-      en: 'Custom flyer printing 100 MOQ. A4/A5 fold, restaurant & event flyers. Same-day production + global DHL 2-4 day shipping. 30-second AI instant quote.',
-      ja: 'チラシ印刷 A4/A5 100 枚から対応. 飲食店・開業・イベントの チラシ. 即日印刷 + DHL 国際配送 2-4 日.',
+      'zh-hk': '即日宣傳單張印刷 100 張起印, A4/A5/A6 摺頁 + 數碼快印 + 柯式印刷. 開業傳單 + 餐廳單張 + 補習社單張 + 24 小時急件. 30 秒 AI 即時報價, 全球 DHL 2-4 天配送, ISO 9001 認證.',
+      en: 'Same-day flyer printing from 100 MOQ. A4/A5/A6 folded leaflets + digital + offset. Restaurant, event, tutoring, grand opening flyers + 24h rush. 30-second AI quote + DHL 2-4 day global + ISO 9001.',
+      ja: '即日チラシ印刷 100 枚から対応. A4/A5/A6 折込・二つ折り・デジタル印刷・オフセット印刷. 飲食店・開業・イベントのチラシ + 24 時間特急. 30 秒 AI 即時見積 + DHL 国際配送 2-4 日 + ISO 9001.',
     },
   },
   'packaging': {

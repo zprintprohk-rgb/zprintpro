@@ -113,10 +113,11 @@ export default function CategoryPage({
       'en': 'Custom Paper Bags — Kraft / White Card / Eco-Friendly / Gift Bags',
       'ja': '紙袋印刷 カスタム — クラフト / ホワイトカード / エコ / ギフト',
     },
-    'flyers': {
-      'zh-hk': '香港宣傳單張印刷 — A4/A5 傳單 / 摺頁 / 開業傳單 / 加急',
-      'en': 'Flyer Printing — A4 / A5 / Folded Leaflets / Grand Opening / Rush',
-      'ja': 'チラシ印刷 — A4 / A5 / 折込 / 開業チラシ / 急ぎ対応',
+'flyers': {
+      // 2026-07-09 SEO 复盘 v3: 即日 + 數碼快印前置 (吸收原本独立 nav 「即日服務」权重)
+      'zh-hk': '香港即日宣傳單張印刷 — A4/A5 數碼快印 / 摺頁 / 開業傳單 / 24 小時急件',
+      en: 'Same-Day Flyer Printing Hong Kong — A4/A5 Digital + Folded Leaflets / Grand Opening / 24h Rush',
+      ja: '香港即日チラシ印刷 — A4/A5 デジタル+オフセット / 折込 / 開業チラシ / 24時間特急',
     },
     'menus': {
       'zh-hk': '香港菜單印刷 — PVC菜單 / 紙質菜單 / 精裝菜單 / 一次性菜單',

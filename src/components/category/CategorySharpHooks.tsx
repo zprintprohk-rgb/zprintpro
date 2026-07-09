@@ -41,20 +41,22 @@ const categoryIndustryScenarios: Record<string, {
     }},
   ],
   flyers: [
+    // 2026-07-09 SEO 复盘 v3: 第一场景「數碼快印 + 即日 24 小時」吸收原本 nav 「即日服務」权重
+    // 竞品 sharp hook 实证: 即日名片印刷 CTR 6.56%, A2 名片 即日 CTR 7.02%, 24小時急件 CTR 4-7%
+    { key: 'digital_sameday', scenarios: {
+      'zh-hk': ['數碼快印 · 即日 24 小時可取', 'A4/A5 單張 · 100 張起印', '小批量無版費 · 1 本起'],
+      en: ['Digital printing · same-day 24h pickup', 'A4/A5 single sheet · from 100', 'Small batch · no plate fee · 1 copy'],
+      ja: ['デジタル印刷 · 即日 24 時間受取', 'A4/A5 チラシ · 100枚から', '小ロット・版代不要・1枚から'],
+    }},
     { key: 'restaurant', scenarios: {
-      'zh-hk': ['A5 外賣菜單 + 開業傳單', '防水塗層 · 油漬一抹即淨', '500 張起 · 翌日交貨'],
-      en: ['A5 takeaway menu + opening flyer', 'Waterproof coating · wipe-clean', 'From 500 · next-day delivery'],
-      ja: ['A5テイクアウトメニュー + 開業チラシ', '防水コート・油汚れも拭き取り', '500枚から・翌日納品'],
+      'zh-hk': ['餐廳開業 / 餐牌傳單', 'A5 防水塗層 · 油漬一抹即淨', '500 張起 · 即日打樣'],
+      en: ['Restaurant opening / menu flyers', 'A5 waterproof · wipe-clean', 'From 500 · same-day proof'],
+      ja: ['飲食店開業 / メニューチラシ', 'A5防水コート・油汚れも拭き取り', '500枚から・即日校正'],
     }},
     { key: 'tutoring', scenarios: {
       'zh-hk': ['補習社皇牌課程單張', 'A4 雙面 4 色 · 派發效率高', '即日打樣 · 彈性加印'],
       en: ['Tutoring center flagship flyers', 'A4 duplex 4C · high distribution', 'Same-day proof · flexible reprint'],
       ja: ['塾・予備校の主力コースチラシ', 'A4両面4色・配布効率高', '即日校正・柔軟増刷'],
-    }},
-    { key: 'event', scenarios: {
-      'zh-hk': ['展會/活動單張 · 摺頁可選', 'A3 大尺寸 · 雙面滿版', '3 天急件可接'],
-      en: ['Exhibition/event flyers · folded', 'A3 large format · full-bleed duplex', '3-day rush available'],
-      ja: ['展示会/イベントチラシ・折込可', 'A3大判・両面フルブリード', '3日特急対応可'],
     }},
   ],
   packaging: [

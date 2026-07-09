@@ -340,11 +340,12 @@ export function Header({ locale }: HeaderProps) {
         <nav className="hidden lg:block bg-[#2873F5]">
           <div className="px-0">
             <div className="flex items-center h-[46px]">
-              <Link href={`${localePrefix}/`} className={navLinkClass(pathname === `${localePrefix}/`)}>{t.home}</Link>
+<Link href={`${localePrefix}/`} className={navLinkClass(pathname === `${localePrefix}/`)}>{t.home}</Link>
 
-              <Link href={`${localePrefix}/services/rush-printing-delivery`} className={navLinkClass(pathname.includes('/services/rush-printing-delivery'))}>
-                {locale === 'zh-hk' ? '即日服務' : locale === 'en' ? 'Rush' : '即日'}
-              </Link>
+              {/* 2026-07-09 SEO 复盘: 移除顶部独立「即日服務」导航栏
+                  GSC 数据证明分散权重的反模式 — 竞品 z-printpro.com 把「即日」全部落在类目页 (e.g. /products/poster-printing/24hour-poster-printing-* CTR 4-7%),
+                  我们把 nav 权重集中到 14 类目页, 让 flyers 类目页接收「即日 + 数码印刷」权重
+                  服务页 /services/rush-printing-delivery/ 保留 (不删 URL 避免 GSC rank 流失), 仅移除 nav 入口 */}
 
               {t.navOrder.map((catSlug) => (
                 <div key={catSlug} className="relative h-full flex-1" onMouseEnter={() => setActiveDropdown(catSlug)} onMouseLeave={() => setActiveDropdown(null)}>
@@ -468,9 +469,6 @@ export function Header({ locale }: HeaderProps) {
               />
             </div>
             <Link href={`${localePrefix}/`} className="block font-medium text-[#333333] py-2">{t.home}</Link>
-            <Link href={`${localePrefix}/services/rush-printing-delivery`} className="block font-medium text-[#333333] py-2">
-              {locale === 'zh-hk' ? '⚡ 即日服務' : locale === 'en' ? '⚡ Rush' : '⚡ 即日'}
-            </Link>
             {t.navOrder.map((catSlug) => (
               <Link key={catSlug} href={`${localePrefix}/category/${catSlug}/`} className="block font-medium text-[#333333] py-2">{t.categories[catSlug]}</Link>
             ))}
