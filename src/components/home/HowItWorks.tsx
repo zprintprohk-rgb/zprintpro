@@ -69,7 +69,7 @@ const STEPS: Record<Locale, Step[]> = {
     {
       num: 2,
       title: '上傳設計檔案',
-      desc: '拖放 PDF / PNG / AI 檔案 (最大 100MB)。設計團隊可協助排版, 美國訂單免費基本設計服務.',
+      desc: '拖放 PDF / PNG / AI 檔案 (最大 100MB)。設計團隊可協助排版, 首次落單免費基本設計服務.',
       icon: '📤',
     },
     {
@@ -81,13 +81,13 @@ const STEPS: Record<Locale, Step[]> = {
     {
       num: 4,
       title: '確認並安全付款',
-      desc: '30 秒安全結帳. Stripe / PayPal / 銀行匯款 / 微信. 256-bit SSL 加密. 零隱藏費用.',
+      desc: '30 秒安全結帳. Stripe / PayPal / 銀行匯款 / 微信 / 支付寶. 256-bit SSL 加密. 零隱藏費用.',
       icon: '💳',
     },
     {
       num: 5,
-      title: '美國 $99+ 免費送貨',
-      desc: 'DHL Express 5-7 天門到門送達美國. FedEx Ground 可選. DDP 關稅預付, 沒有意外稅費.',
+      title: '港九新界免費速遞',
+      desc: '順豐本地速遞 / DHL Express 5-7 天全球送達. 港九新界 $500+ 免費上門, 24 小時急件可選. DDP 關稅預付, 沒有意外稅費.',
       icon: '📦',
     },
   ],
@@ -101,7 +101,7 @@ const STEPS: Record<Locale, Step[]> = {
     {
       num: 2,
       title: 'デザインをアップロード',
-      desc: 'PDF / PNG / AI ファイルをドラッグ&ドロップ (最大 100MB)。デザインサポートも無料 (米国注文).',
+      desc: 'PDF / PNG / AI ファイルをドラッグ&ドロップ (最大 100MB)。デザインサポートも無料 (全注文対応).',
       icon: '📤',
     },
     {
@@ -113,13 +113,13 @@ const STEPS: Record<Locale, Step[]> = {
     {
       num: 4,
       title: '確認して安全決済',
-      desc: '30 秒で安全チェックアウト. Stripe / PayPal / 銀行振込 / WeChat. 256-bit SSL 暗号化.',
+      desc: '30 秒で安全チェックアウト. クレジットカード / PayPal / 銀行振込 / コンビニ決済. 256-bit SSL 暗号化.',
       icon: '💳',
     },
     {
       num: 5,
-      title: '米国 $99+ 送料無料',
-      desc: 'DHL Express 5-7 日でドア・ツー・ドア配送. FedEx Ground 選択可. DDP 関税先払い対応.',
+      title: '日本全国送料無料',
+      desc: 'ヤマト運輸 / DHL Express 5-7 日でドア・ツー・ドア. 全国送料 0 円 / 沖縄・北海道も同料金. FedEx / ゆうパック 選択可. DDP 関税先払い対応.',
       icon: '📦',
     },
   ],
@@ -132,11 +132,11 @@ const HEADING: Record<Locale, { title: string; subtitle: string }> = {
   },
   'zh-hk': {
     title: '印刷流程',
-    subtitle: '5 步由訂單到送達. 美國 $99+ 免費送貨. 4 小時免費打稿. 100% 滿意保證.',
+    subtitle: '5 步由訂單到送達. 港九新界 $500+ 免費速遞. 4 小時免費打稿. 100% 滿意保證.',
   },
   ja: {
     title: 'ご注文の流れ',
-    subtitle: '5 ステップで注文から納品まで. 米国 $99+ 送料無料. 4 時間無料校正. 100% 満足保証.',
+    subtitle: '5 ステップで注文から納品まで. 全国送料 0 円. 4 時間無料校正. 100% 満足保証.',
   },
 };
 

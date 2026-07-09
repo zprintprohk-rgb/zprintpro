@@ -58,8 +58,8 @@ const BADGES: Record<Locale, Badge[]> = {
   'zh-hk': [
     { icon: 'award', title: 'ISO 9001:2015 認證', subtitle: '國際品質管理標準' },
     { icon: 'building', title: '9 年印刷經驗', subtitle: '2017 年起, 5000+ 訂單完成' },
-    { icon: 'globe', title: '100+ 國家發貨', subtitle: 'DHL · FedEx · ePacket' },
-    { icon: 'truck', title: '美國 $99+ 免費送貨', subtitle: '5-7 天門到門' },
+    { icon: 'globe', title: '100+ 國家發貨', subtitle: 'DHL · FedEx · 順豐' },
+    { icon: 'truck', title: '港九新界免費速遞', subtitle: '$500+ 免費 / 順豐本地' },
     { icon: 'clock', title: '4 小時免費打稿', subtitle: '人工審稿, 不限修改' },
     { icon: 'shield', title: '100% 滿意保證', subtitle: '不滿意免費重印' },
     { icon: 'badge', title: 'DHL Express 認證', subtitle: '即時追蹤, 自動清關' },
@@ -68,8 +68,8 @@ const BADGES: Record<Locale, Badge[]> = {
   ja: [
     { icon: 'award', title: 'ISO 9001:2015 認証', subtitle: '国際品質マネジメント規格' },
     { icon: 'building', title: '9 年の実績', subtitle: '2017 年創業, 5000+ 注文完了' },
-    { icon: 'globe', title: '100+ 国へ発送', subtitle: 'DHL · FedEx · ePacket' },
-    { icon: 'truck', title: '米国 $99+ 送料無料', subtitle: '5-7 日ドア・ツー・ドア' },
+    { icon: 'globe', title: '100+ 国へ発送', subtitle: 'DHL · FedEx · ヤマト運輸' },
+    { icon: 'truck', title: '日本全国送料無料', subtitle: '沖縄・北海道も同料金' },
     { icon: 'clock', title: '4 時間無料校正', subtitle: '人による校正, 無制限' },
     { icon: 'shield', title: '100% 満足保証', subtitle: 'ご納得いただけない場合再印刷' },
     { icon: 'badge', title: 'DHL Express 認定', subtitle: 'リアルタイム追跡, 通関自動化' },
@@ -79,8 +79,8 @@ const BADGES: Record<Locale, Badge[]> = {
 
 const HEADING: Record<Locale, string> = {
   en: 'Why USA Businesses Trust ZprintPro',
-  'zh-hk': '為何美國企業信賴智印雲',
-  ja: 'なぜ米国有力企業が智印雲を信頼するか',
+  'zh-hk': '為何全球企業信賴智印雲',
+  ja: 'なぜグローバル企業が智印雲を選ぶのか',
 };
 
 const SUBHEADING: Record<Locale, string> = {
