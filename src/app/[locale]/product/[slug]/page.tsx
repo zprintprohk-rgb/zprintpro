@@ -33,6 +33,7 @@ import {
 import { JsonLd } from '@/components/JsonLd';
 import { ProductGallery } from '@/components/ProductGallery';
 import { QuoteCalculator } from '@/components/quote/QuoteCalculator';
+import { QuantityTierTable } from '@/components/QuantityTierTable';
 import { ProductTabs } from '@/components/ProductTabs';
 import { RelatedProducts } from '@/components/RelatedProducts';
 import { ProductFaq } from '@/components/ProductFaq';
@@ -422,6 +423,15 @@ export default function ProductPage({
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">{t.specifications}</h3>
                 <QuoteCalculator product={product} locale={locale} />
               </div>
+
+              {/* 2026-07-09 P0.4: 价格梯度表 (en-US market local optimization, "Buy More Save More")
+                  显式 5 档定价表, 鼓励用户多买. 仅当 product.variables.quantities 有数据时显示 (37% SKU).
+                  没数据的 SKU 自动隐藏 — 不破坏现有 UI. 数据层补全是 P1 backlog. */}
+              <QuantityTierTable
+                quantities={product.variables?.quantities}
+                basePrice={product.basePrice}
+                locale={locale}
+              />
               
               {/* SKU & 最低订购量 (2026-06-07: 靠右对齐 + 减右 padding 2/3) */}
               <div className="flex items-center justify-end gap-3 text-xs text-gray-400 mb-4 pr-2">

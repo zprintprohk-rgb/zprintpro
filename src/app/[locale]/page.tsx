@@ -13,6 +13,7 @@ import { StatsBar } from '@/components/home/StatsBar';
 import { WhyChooseUs } from '@/components/home/WhyChooseUs';
 import { KnowledgeSection } from '@/components/home/KnowledgeSection';
 import { TrustWaterfall } from '@/components/home/TrustWaterfall';
+import { HowItWorks } from '@/components/home/HowItWorks';
 import { DoujinSKU } from '@/components/japan/DoujinSKU';
 
 // 生成静态参数
@@ -60,6 +61,8 @@ export default function HomePage({
       <main className="min-h-screen">
         <HeroBanner locale={locale} />
         <TrustWaterfall locale={locale} />
+        {/* 2026-07-09 P0.3: 5 步流程图 — en-US market local optimization (PM × UX × SEO research) */}
+        <HowItWorks locale={locale} />
         <HotProducts locale={locale} />
         <StatsBar locale={locale} />
         <WhyChooseUs locale={locale} />
