@@ -454,6 +454,9 @@ import type { Product } from '@/data/products';
  * 生成分类页 ItemList schema
  * 修复 P0-5：url 强制 process.env.NEXT_PUBLIC_SITE_URL || 'https://zprintpro.com'
  * 每个 ListItem 含 position / url / name（name 按 locale 选 product.name / nameEn / nameJa）
+ *
+ * 2026-07-09 PM+UX+SEO 复盘 v2 增强：ListItem 内嵌 Product schema (含 price/MOQ/availability)，
+ * 让 Google Rich Result 抓取每个产品详情而非仅 ListItem 简版. 提升类目页 SERP 表现.
  */
 export function generateCategoryItemListJsonLd(
   categoryName: string,
@@ -471,11 +474,21 @@ export function generateCategoryItemListJsonLd(
           : locale === 'en'
           ? product.nameEn
           : product.nameJa;
+      const productUrl = `${SITE_URL}/${locale}/product/${product.slug}/`;
       return {
         '@type': 'ListItem',
         position: index + 1,
-        url: `${SITE_URL}/${locale}/product/${product.slug}/`,
+        url: productUrl,
         name: localizedName,
+        item: {
+          '@type': 'Product',
+          name: localizedName,
+          url: productUrl,
+          // 类目页用作 Product group 时只暴露最关键字段, 避免重复
+          category: categoryName,
+          // Product availability hint: 让 Google 知道这是按需印刷而非现货
+          availability: 'https://schema.org/MadeToOrder',
+        },
       };
     }),
   };

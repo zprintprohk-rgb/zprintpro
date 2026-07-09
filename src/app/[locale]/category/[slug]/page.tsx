@@ -33,6 +33,7 @@ import { CategoryProductCard } from '@/components/category/CategoryProductCard';
 import { Pagination } from '@/components/Pagination';
 import { CategoryPillarContent, generateFaqSchema } from '@/components/CategoryPillarContent';
 import { CategoryIndustries } from '@/components/category/CategoryIndustries';
+import { CategorySharpHooks } from '@/components/category/CategorySharpHooks';
 import { RegionalContent, RegionalCta, RegionalTrustBadges } from '@/components/seo/RegionalContent';
 
 // 生成静态参数 - 13分类 × 3语言 = 39个路径
@@ -166,6 +167,14 @@ export default function CategoryPage({
       'zh-hk': '香港咭片印刷定制 — 燙金名片 / UV名片 / 圓角名片 / 高檔名片',
       en: 'Custom Business Card Printing — Foil Stamped / UV / Rounded Corner / Premium Cards',
       ja: '名刺印刷 カスタム — 箔押し / UV / 丸角 / プレミアム名刺',
+    },
+    // 2026-07-09 PM+UX+SEO 复盘: japan-doujin 是 14 类目里唯一缺 customH1 的,
+    // 走 fallback `categoryName` = 「同人周邊印刷」, 不够 sharp hook.
+    // 加 NAP-脱钩 sharp hook: 10本起 / A5+B5 / Comiket 24h特急 / 5 周邊類型
+    'japan-doujin': {
+      'zh-hk': '同人周邊印刷 10本起 · A5/B5 同人誌 / 亞克力 / 缶バッジ / 明信片 Comiket 24h 特急',
+      en: 'Doujinshi Printing 10 MOQ · A5 / B5 / Acrylic / Can Badge / Postcard Comiket 24h Rush',
+      ja: '同人誌印刷 10部〜 · A5/B5 / アクリル / 缶バッジ / ポストカード コミケ 24時間特急',
     },
   };
   const pageH1 = customH1Map[slug]?.[locale] || categoryName;
@@ -328,6 +337,11 @@ export default function CategoryPage({
             </div>
           </div>
         </div>
+
+        {/* Sharp Hook 视觉锚点 (2026-07-09 PM+UX+SEO 复盘) — banner 之后、产品列表之前
+            修复 paper-bags 类目页 749 imps / 0.13% CTR 的核心问题：用户进类目页看不到"我能印什么"
+            复用 CategoryIndustries 同源数据的前 3 个 Tier A 场景，紧凑呈现 */}
+        <CategorySharpHooks locale={locale} categorySlug={slug} />
 
         {/* 主内容区 - 左侧分类 + 右侧产品 */}
         <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-8">

@@ -385,9 +385,11 @@ const categorySeoData: Record<string, {
       ja: '紙袋印刷,クラフト紙袋,エコ紙袋,手提げ紙袋,ブランド紙袋,ギフト袋,テイクアウト紙袋,小ロット紙袋,紙袋作成,ペーパーバッグ,宝飾紙袋,腕時計紙袋,ラグジュアリー紙袋,ブラックカード紙袋,サテンリボン持ち手',
     },
     descriptions: {
-      'zh-hk': '紙袋印刷 100 個起印, FSC 認證環保牛皮紙袋 + 白卡紙袋 + 精品禮品袋. 香港深圳廠直送 + DHL 全球 2-4 天送達. 即日打樣, 30 秒 AI 即時報價, ISO 9001 認證品質.',
-      en: 'Custom paper bags from 100 units. FSC-certified kraft, white card & eco-friendly gift bags. Free die-cut design + DHL Express 2-4 day global delivery. 30-second AI instant quote, ISO 9001.',
-      ja: '紙袋印刷 100 個から対応. FSC 認証クラフト・白カード・エコ・ギフト袋. 無料サンプル+型設計 + DHL 国際配送 2-4 日. 30 秒 AI 即時見積.',
+      // 2026-07-09 PM+UX+SEO 复盘: 移除"香港深圳廠直送"违反 §13.10 NAP 脱钩,
+      // 改用"亞洲工廠"+(具体场景效益)提升 CTR + 满足 zh-hk 跨境合规
+      'zh-hk': '紙袋印刷 100 個起印, FSC 認證環保牛皮紙袋 + 白卡紙袋 + 精品禮品袋. 服飾/婚慶/烘焙/珠寶 4 大行業適用, 即日打樣 + DHL 全球 2-4 天配送. ISO 9001 認證品質, 30 秒 AI 即時報價.',
+      en: 'Custom paper bags from 100 units. FSC-certified kraft, white card & eco-friendly gift bags. Perfect for fashion / wedding / bakery / jewellery brands. Free die-cut design + DHL Express 2-4 day global delivery. 30-second AI quote, ISO 9001.',
+      ja: '紙袋印刷 100 個から対応. FSC 認証クラフト・白カード・エコ・ギフト袋. アパレル・ウェディング・ベーカリー・宝飾ブランド向け. 無料サンプル+型設計 + DHL 国際配送 2-4 日. 30 秒 AI 即時見積.',
     },
   },
   
