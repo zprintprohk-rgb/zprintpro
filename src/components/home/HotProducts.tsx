@@ -243,7 +243,7 @@ export function HotProducts({ locale }: HotProductsProps) {
               </div>
               {/* 社交证明 (Fusion Plan 规范) */}
               <div className="text-center pt-3 border-t border-white/20">
-                <p className="text-xs text-white/90 font-medium leading-relaxed">{t.trustBadge}</p>
+                <p className="text-xs text-white/90 font-medium leading-[1.76]">{t.trustBadge}</p>
               </div>
             </div>
           </div>

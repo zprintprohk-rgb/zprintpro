@@ -198,7 +198,7 @@ export function KnowledgeSection({ locale }: KnowledgeSectionProps) {
                 <h3 className="font-bold text-[#333333] text-base group-hover:text-[#2873F5] transition-colors line-clamp-2 mb-2 leading-snug">
                   {article.title}
                 </h3>
-                <p className="text-sm text-gray-500 line-clamp-2 leading-relaxed">
+                <p className="text-sm text-gray-500 line-clamp-2 leading-[1.76]">
                   {article.description}
                 </p>
               </div>

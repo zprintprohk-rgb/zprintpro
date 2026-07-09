@@ -186,7 +186,7 @@ export function HowItWorks({ locale }: HowItWorksProps) {
               <h3 className="text-base font-bold text-slate-900 mb-1.5">
                 {step.title}
               </h3>
-              <p className="text-xs md:text-sm text-slate-600 leading-relaxed">
+              <p className="text-xs md:text-sm text-slate-600 leading-[1.76]">
                 {step.desc}
               </p>
             </li>

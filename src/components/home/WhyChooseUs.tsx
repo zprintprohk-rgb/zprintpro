@@ -215,7 +215,7 @@ export function WhyChooseUs({ locale }: WhyChooseUsProps) {
               </div>
               <h3 className="font-bold text-[#333333] text-lg mb-1.5">{feature.title}</h3>
               <p className={`text-sm font-semibold ${feature.subtitleColor} mb-3`}>{feature.subtitle}</p>
-              <p className="text-sm text-gray-500 leading-relaxed">{feature.description}</p>
+              <p className="text-sm text-gray-500 leading-[1.76]">{feature.description}</p>
             </div>
           ))}
         </div>

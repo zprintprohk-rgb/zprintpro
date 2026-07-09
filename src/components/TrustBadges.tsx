@@ -127,7 +127,7 @@ export function TrustBadges({ locale, compact = false }: TrustBadgesProps) {
                   <h3 className="text-sm md:text-base font-bold text-slate-900 leading-tight">
                     {badge.title}
                   </h3>
-                  <p className="text-xs md:text-sm text-slate-600 leading-snug">
+                  <p className="text-xs md:text-sm text-slate-600 leading-[1.485]">
                     {badge.subtitle}
                   </p>
                 </div>
