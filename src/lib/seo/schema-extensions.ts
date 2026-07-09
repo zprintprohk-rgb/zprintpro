@@ -545,7 +545,7 @@ export function generateAboutPageJsonLd(
   locale: Locale,
   url: string,
   description: string,
-  foundingDate: string = '2014'
+  foundingDate: string = '2012'
 ): SchemaOrgData {
   return {
     '@context': 'https://schema.org',

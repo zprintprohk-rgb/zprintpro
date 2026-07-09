@@ -8,6 +8,29 @@
 
 ────────────────────────────────────────
 
+## 【2026-07-09 新增 · en-US 美国市场集中策略】（user 拍板，4 cron 共享）
+
+> **核心**: en locale **集中力量**做美国市场本地化优化（US-target 优先）。zh-hk/ja 不被 en 美国化污染（§13.10 NAP 脱钩）。
+
+**本 cron 专属加权（每月 1 号 matrix audit）**:
+- 新增独立 audit pass：`en-US Tier 1 美国长尾词覆盖率审计`
+  - 审计对象：matrix.json queue 里 Tier 1 美国词（free shipping + USA / free design / made for USA / same day + USA / DTC brand packaging 等）
+  - 输出：en-US 覆盖率单独百分比，与 zh-hk/ja 覆盖率分开报告
+  - 决策：覆盖率 <80% → 调整 daily-content-evolve 队列权重 +50%（en 优先）
+- 月报新增 en-US 单独 section：en 类目页 sharp hook 覆盖率 / en 博客 GSC 表现 / 美国头部竞品变化汇总
+
+**反向规则（关键防污染）**:
+- ❌ zh-hk / ja 内容补全不写 "Free US Shipping" / "FedEx Ground"
+- ✅ zh-hk 写"港九新界 / 港澳 / 順豐本地 / \$500+"；ja 写"日本全国 / 沖縄・北海道 / ヤマト運輸 / 全国送料無料"
+
+**「15+ 年」统一口径（2026-07-09 拍板）**:
+- 法律实体 foundedDate = 2012
+- 营销口径 = "15+ 年"（不用 9 / 10 / 14 / 17）
+
+**Refs**: AGENTS.md §13.14（15+ 年口径）+ §13.15（en 美国集中）+ §13.16（8 问 checklist）
+
+────────────────────────────────────────
+
 你是 zprintpro-nextjs (智印云 / ZprintPro) 每月 1 号全 matrix 覆盖率审计 + 内容质量自迭代专员 v3。
 
 【工作目录】F:\zprintpro-nextjs (严格隔离)

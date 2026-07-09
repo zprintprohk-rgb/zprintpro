@@ -78,12 +78,12 @@ const translations = {
     fromPrice: 'From',
     // en 定位: Asia's Premium Printing — ISO 9001 · FSC Certified · Free US Shipping · 72h Global Delivery
     slides: [
-      { title: '⚡ Same-Day Printing · ISO 9001 Certified', subtitle: 'Order by 10AM, ship same day. ISO 9001 · FSC paper · Free US shipping over $100', price: 'Same Day Ship', image: '/images/hero/hero-flyer-en.webp', href: '/en/services/rush-printing-delivery' },
-      { title: 'Eco Kraft Paper Bags · FSC Certified', subtitle: 'FSC-certified kraft · 100% recyclable · GRS available · From 200pcs MOQ · DHL Express 72h', price: 'From US$0.15', image: '/images/hero/hero-kraft-bag-en.webp', href: '/product/kraft-paper-bags/' },
-      { title: 'A4 Flyer Printing · CMYK + Pantone', subtitle: '128-200gsm coated art paper · Double-sided CMYK · Spot Pantone available · Free design consult', price: 'From US$0.04', image: '/images/hero/hero-flyer-en.webp', href: '/product/a4-flyers/' },
-      { title: 'Waterproof Stickers · UV Resistant', subtitle: 'UV-resistant vinyl · Custom die-cut shapes · 3-5 year outdoor durability · FDA-compliant option', price: 'From US$0.06', image: '/images/hero/hero-sticker-en.webp', href: '/product/waterproof-stickers/' },
-      { title: 'Custom Rigid Gift Boxes · Foil + UV', subtitle: 'Premium rigid setup · Foil stamping · Spot UV · Embossing · 100pcs MOQ · Free dieline design', price: 'From US$0.65', image: '/images/hero/hero-gift-box-en.webp', href: '/product/gift-boxes/' },
-      { title: 'A2 Large-Format Posters · Heidelberg', subtitle: 'Heidelberg 4-color offset · 200-300gsm art paper · Vivid colors · 3-5 day global delivery', price: 'From US$1.95', image: '/images/hero/hero-poster-en.webp', href: '/product/a2-posters/' },
+      { title: '⚡ Same-Day Printing · Free US Shipping $99+', subtitle: 'Order by 10AM, ship same day. ISO 9001 · FSC paper · Free design mockup in 4h · No setup fees', price: 'Same Day Ship', image: '/images/hero/hero-flyer-en.webp', href: '/en/services/rush-printing-delivery' },
+      { title: 'Eco Kraft Paper Bags · Free Design', subtitle: 'FSC-certified kraft · 100% recyclable · GRS available · From 200pcs MOQ · Free dieline mockup · DHL Express 72h', price: 'From US$0.15', image: '/images/hero/hero-kraft-bag-en.webp', href: '/product/kraft-paper-bags/' },
+      { title: 'A4 Flyers · Free Mockup in 4h', subtitle: '128-200gsm coated art paper · Double-sided CMYK · Spot Pantone available · Free design proof · No setup fees', price: 'From US$0.04', image: '/images/hero/hero-flyer-en.webp', href: '/product/a4-flyers/' },
+      { title: 'Waterproof Stickers · UV Resistant', subtitle: 'UV-resistant vinyl · Custom die-cut shapes · 3-5 year outdoor durability · Free dieline mockup · FDA-compliant option', price: 'From US$0.06', image: '/images/hero/hero-sticker-en.webp', href: '/product/waterproof-stickers/' },
+      { title: 'Custom Gift Boxes · Free Design', subtitle: 'Premium rigid setup · Foil stamping · Spot UV · Embossing · 100pcs MOQ · Free 3D mockup · No setup fees', price: 'From US$0.65', image: '/images/hero/hero-gift-box-en.webp', href: '/product/gift-boxes/' },
+      { title: 'A2 Posters · Free Design Proof', subtitle: 'Heidelberg 4-color offset · 200-300gsm art paper · Vivid colors · Free design mockup · 3-5 day global delivery', price: 'From US$1.95', image: '/images/hero/hero-poster-en.webp', href: '/product/a2-posters/' },
     ],
   },
   ja: {

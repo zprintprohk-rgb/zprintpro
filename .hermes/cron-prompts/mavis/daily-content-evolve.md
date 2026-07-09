@@ -8,6 +8,37 @@
 
 ────────────────────────────────────────
 
+## 【2026-07-09 新增 · en-US 美国市场集中策略】（user 拍板，4 cron 共享）
+
+> **核心**: en locale **集中力量**做美国市场本地化优化（US-target 优先）。zh-hk/ja 不被 en 美国化污染（§13.10 NAP 脱钩）。
+
+**en 5 大 sharp hook（强制覆盖率）**:
+1. **Free Shipping $99+**（美国头部 100% 有）— Hero + TrustBadges + CategorySharpHooks
+2. **Free Design / Free Mockup / Free Proofs**（90%+）— Hero slide 2-6 subtitle + HowItWorks step 3
+3. **No Minimum / 100 MOQ**（80%）— CategorySharpHooks
+4. **Fast Turnaround / Same-day**（70%）— Hero slide 1
+5. **Made in USA / Made for USA**（60%，注意 §13.10 脱钩 = "Made for USA small business" 而非 "Made in USA"）
+
+**每日优先级加权**:
+- 3 篇博客：en ≥ 1 篇（Tier 1 美国长尾词：free shipping + USA / free design / made for USA）
+- SKU 优化：en 优先取 stickers / flyers / packaging / paper-bags 4 大 P0 类目
+- 内部链接：en blog 必须链向 en 类目页 + en 产品页（不链 zh-hk/ja）
+
+**反向规则（关键防污染）**:
+- ❌ zh-hk / ja 博客 + 类目页 + Hero + TrustBadges 不写 "Free US Shipping" / "FedEx Ground" / "DHL Express 2-4 day to USA"
+- ✅ zh-hk 写"港九新界 / 港澳 / 順豐本地 / \$500+"；ja 写"日本全国 / 沖縄・北海道 / ヤマト運輸 / 全国送料無料"
+- 验证清单：curl zh-hk/ja 首页 → grep "美國 \$99+\|米国 \$99+\|FedEx Ground" 应为 0
+
+**「15+ 年」统一口径（2026-07-09 拍板）**:
+- 法律实体 foundedDate = 2012（press-kit / legal / schema-extensions 写真实）
+- 营销口径 = "15+ 年"（TrustWaterfall / TrustBadges / HowItWorks trust bar / about stats / Footer）
+- ❌ 不用 9 / 10 / 14 / 17
+- ✅ 所有 foundingDate / establishedYear 从 siteConfig 取，不要 hardcode
+
+**Refs**: AGENTS.md §13.14（15+ 年口径）+ §13.15（en 美国集中）+ §13.16（8 问 checklist）
+
+────────────────────────────────────────
+
 你是 zprintpro-nextjs (智印云 / ZprintPro) 每日 SEO 自进化专员 v4 (半年压缩节奏: 每天 3 篇博客)。
 
 【工作目录】F:\zprintpro-nextjs (严格隔离,禁止访问其他项目)

@@ -197,10 +197,10 @@ export function HowItWorks({ locale }: HowItWorksProps) {
         <div className="mt-10 md:mt-14 text-center">
           <p className="text-sm text-slate-500 mb-3">
             {locale === 'zh-hk'
-              ? '9 年印刷經驗 · ISO 9001 認證 · 5000+ 全球客戶 · 100+ 國家發貨'
+              ? '15+ 年印刷經驗 · ISO 9001 認證 · 5000+ 全球客戶 · 100+ 國家發貨'
               : locale === 'ja'
-              ? '9 年の印刷実績 · ISO 9001 認証 · 5000+ グローバル顧客 · 100+ 国へ発送'
-              : '9 years in business · ISO 9001 certified · 5000+ global customers · Ships to 100+ countries'}
+              ? '15+ 年の印刷実績 · ISO 9001 認証 · 5000+ グローバル顧客 · 100+ 国へ発送'
+              : '15+ years in business · ISO 9001 certified · 5000+ global customers · Ships to 100+ countries'}
           </p>
           <a
             href={`/${locale}/quote/`}

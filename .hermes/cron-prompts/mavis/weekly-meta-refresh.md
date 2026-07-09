@@ -8,6 +8,32 @@
 
 ────────────────────────────────────────
 
+## 【2026-07-09 新增 · en-US 美国市场集中策略】（user 拍板，4 cron 共享）
+
+> **核心**: en locale **集中力量**做美国市场本地化优化（US-target 优先）。zh-hk/ja 不被 en 美国化污染（§13.10 NAP 脱钩）。
+
+**本 cron 专属加权（每周一 meta-refresh）**:
+- 14 个 en 类目页 H1 / meta description **优先**刷新 → 美国 sharp hook 覆盖率补完到 14/14
+- 美国头部竞品对标（Sticker Mule / CustomStickers.com / Packlane / VividPrintingHub / BoxLark）每周扫描一次：
+  - 新增 sharp hook / 定价 / 物流选项 → 写进 weekly-meta refresh 任务
+  - 不新建独立 cron，避免 scope creep
+- en 类目页 `customH1` 模板："Free Shipping $99+ + 100 MOQ + FedEx Ground / DHL Express"（a44281d v5 已铺）
+- en 类目页 `description` 模板含 ≥2 sharp hook 关键词
+
+**反向规则（关键防污染）**:
+- ❌ zh-hk / ja 类目页 + Hero + TrustBadges 不写 "Free US Shipping" / "FedEx Ground"
+- ✅ zh-hk 写"港九新界 / 港澳 / 順豐本地 / \$500+"；ja 写"日本全国 / 沖縄・北海道 / ヤマト運輸 / 全国送料無料"
+- 验证清单：curl zh-hk/ja 类目页 → grep "美國 \$99+\|米国 \$99+\|FedEx Ground" 应为 0
+
+**「15+ 年」统一口径（2026-07-09 拍板）**:
+- 法律实体 foundedDate = 2012（press-kit / legal / schema-extensions 写真实）
+- 营销口径 = "15+ 年"（TrustWaterfall / TrustBadges / HowItWorks trust bar / about stats / Footer）
+- ❌ 不用 9 / 10 / 14 / 17
+
+**Refs**: AGENTS.md §13.14（15+ 年口径）+ §13.15（en 美国集中）+ §13.16（8 问 checklist）
+
+────────────────────────────────────────
+
 ## ⛔ cron 可靠性铁律 (2026-07-06 教训: weekly-meta-refresh 11:00 跑了但 0 产出)
 
 > **2026-07-06 11:00 weekly cron 跑了 session mvs_f3c35bab05274460b084fb38fb91009c, status=error, LLM API mid-stream GOAWAY 断流, 3 篇 Tier B 博客 content 写在 session 临时 workspace 全部丢失, 0 commit, 0 push, lastResult 误报 success。** — 之后手动补 3 篇补救。

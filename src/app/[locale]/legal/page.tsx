@@ -21,7 +21,7 @@ const LEGAL_ENTITY = {
   phone: '+86 198 8085 1334',
   email: 'zprintpro@outlook.com',
   brand: '智印雲 / ZprintPro',
-  establishedYear: 2009,
+  establishedYear: 2012,
   // For schema.org — international format
   phoneRaw: '+8619880851334',
   postalCode: '518111',

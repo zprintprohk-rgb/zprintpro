@@ -606,4 +606,152 @@ if (locale === 'zh-hk') {
 - ✅ **Footer 法律元素按 locale 条件渲染** — 不是「全部 locale 都加，按 locale 隐藏文案」(文案泄露信息)
 - ✅ **幫助中心 column 是隐私/条款的合理归属**（合 faq + 退换 + 物流 同列）
 
-应用范围: 任何跨境电商 Footer 都应先做「法规矩阵」, 后做 UI 设计, 不要拿单一司法辖区模板套全部 locale。
+应用范围: 任何跨境电商 Footer 都应先做「法规矩阵」, 后做 UI 设计, 不要拿单一司法辖区模板套全部 locale。## 13.14 「15+ 年」统一口径（2026-07-09 user 拍板）
+
+> **核心**：法律实体真实成立年份 = **2012 年**；对外营销口径统一写 **"15+ 年"**（2012 → 2026 = 14 年，对外"15+" 合理；也避开"17 年"的过度宣传风险）。
+
+### 两层口径
+
+| 层 | 数值 | 出现位置 | 规则 |
+|---|---|---|---|
+| **法律实体层** (NAP) | 2012 | `/legal/` `establishedYear` / `/press-kit/` aboutText / schema.org `foundingDate` | ✅ 写真实，3 locale 同步 |
+| **营销口径层** (SEO) | "15+ 年" | Hero `TrustWaterfall` / `TrustBadges` / `HowItWorks` trust bar / `/about/` stats / Footer | ✅ 统一用 "15+"，不用 9/10/14/17 |
+
+### 强制检查项（修改 history 后跑）
+
+| 检查 | 命令 | 期望 |
+|---|---|---|
+| 残留 9 年 | `grep -rn "9 Years\|9 年\|9年\|9 years" src/` | 0 hit |
+| 残留 2017 | `grep -rn "2017 年\|founded 2017\|since 2017" src/ docs/` | 0 hit |
+| 残留 2014（about 用错的旧年份）| `grep -rn "2014" src/app/\[locale\]/about/` | 0 hit（除注释） |
+| 残留 10+（stats） | `grep -rn "stats.*10+\|'years'.*10+" src/` | 0 hit |
+| 残留 2009（旧 foundingYear）| `grep -rn "2009 年起\|establishedYear.*2009\|founded in 2009" src/ docs/` | 0 hit |
+| 15+ 年同步 | `grep -rn "15+ 年\|15+ Years\|15+ 年の\|15+ years" src/` | ≥5 hit（TrustBadges + HowItWorks + TrustWaterfall + about + schema） |
+
+### 唯一例外
+
+- `press-kit/` 内部行 1: "成立於 2012" → 写真实，不写"15+"
+- `legal/` 行 1: `establishedYear: 2012` → 写真实
+
+### 教训（2026-07-09 真实事故）
+
+- ❌ about/page.tsx L137 `foundingDate: '2014'`（与 legal/press-kit 的 2009 矛盾，且 legal 改成 2012 后又错位）
+- ✅ 所有 `foundingDate` / `establishedYear` 必须从 **同一个常量** 取（`siteConfig.foundingDate`），不要 hardcode 在多个文件
+- ✅ "15+" 写法比 "14" 安全（"14 years" 听感不足，"16 years" 又过头）
+
+## 13.15 en 美国市场集中优化策略（2026-07-09 user 拍板）
+
+> **核心**：en locale **集中力量**做美国市场本地化优化（US-target 优先），不分散到 UK/AU/CA/NZ。zh-hk/ja 不被 en 美国化污染（§13.10）。
+
+### 美国市场优先级（与 GSC 实测长尾词流量挂钩）
+
+| Tier | 优先级 | 含义 |
+|---|---|---|
+| **Tier 1 (P0)** | 最高 | "Free Shipping stickers USA" / "Custom packaging boxes free shipping" / "Free design mockup flyers" / "Made for USA small business" |
+| **Tier 2 (P1)** | 高 | "Same day print and ship" / "FedEx Ground poster printing" / "No setup fee packaging" / "DTC brand packaging USA" |
+| **Tier 3 (P2)** | 中 | "Trade show banners USA" / "100 MOQ stickers" / "FDA-compliant labels" / "Amazon FBA packaging" |
+
+### 5 大美国 sharp hook（强制覆盖率）
+
+| Sharp hook | 美国头部覆盖率 | 我们 en 现状 | 优化位置 |
+|---|---|---|---|
+| **Free Shipping $99+** | 100% | ✅ Hero + TrustBadges + CategorySharpHooks | 保持 |
+| **Free Design / Free Mockup / Free Proofs** | 90%+ | ✅ Hero slide 2-6 subtitle + TrustBadges + HowItWorks step 3 | 强化覆盖率到 14/14 类目 |
+| **No Minimum / 100 MOQ** | 80% | ✅ CategorySharpHooks | 保持 |
+| **Fast Turnaround** (Same-day / 24h) | 70% | ✅ Hero slide 1 + Services page | 保持 |
+| **Made in USA / Made for USA** | 60% | ⚠️ "Made for USA small business"（§13.10 脱钩后）| ✅ 分散在 CategorySharpHooks |
+
+### en 美国 sharp hook 集中化部署规则
+
+1. **Hero slide 6/6 都至少带 1 个 sharp hook**（Free Shipping / Free Design / Fast Turnaround 之一）
+2. **类目页 H1 必须带 "Free Shipping $99+ + 100 MOQ + [FedEx Ground/DHL Express]" 之一**（a44281d v5 已铺）
+3. **类目页 description 必须包含 ≥2 个 sharp hook 关键词**（a44281d v5 已铺）
+4. **产品页 Tier 表 max discount ≥20%** 时显示 "Best Value" emerald ring（bf4b0ef P0.4 已铺）
+
+### 反向规则（en 美国优化不能污染其他 locale）
+
+| Locale | en 美国化文案 | 错误案例 | 正确写法 |
+|---|---|---|---|
+| zh-hk | "Free US Shipping $99+" | ❌ zh-hk step 5 "美國 $99+ 免費送貨" | ✅ "港九新界免費速遞 / \$500+" |
+| ja | "FedEx Ground 5-7 day" | ❌ ja step 5 "米国 \$99+ 送料無料" | ✅ "日本全国送料無料 / 沖縄・北海道も同料金" |
+
+### 4 个 cron 实体 en 美国优先级（2026-07-09 加权）
+
+| Cron | en 美国加权 |
+|---|---|
+| `zprintpro-daily-content-evolve` (每天 10:15) | en blog / en SKU priority → +50% (Tier 1 美国长尾词每日至少 1 篇 en blog) |
+| `zprintpro-weekly-meta-refresh` (周一 11:00) | en 14 类目页 meta → +30% (sharp hook 覆盖率补完) |
+| `zprintpro-monthly-matrix-audit` (每月 1 号 14:00) | en Tier 1 美国词覆盖率审计 → 新增独立 audit pass |
+| `zprintpro-gsc-feedback-loop` (每周三 15:00) | en 页面 CTR/impression 数据加权 ×2（相对 zh-hk/ja） |
+
+### 不新建第 5 个 cron 的判断
+
+考虑过 `zprintpro-en-us-competitor-monitor`（每周一扫描 Sticker Mule / CustomStickers.com / Packlane / VividPrintingHub 头部变化），但：
+- ❌ scope creep — 4 个现有 cron 已经能 cover
+- ✅ 通过 `weekly-meta-refresh` prompt 里加 "美国头部竞品对标" 模块实现
+- ✅ 节省 1 个 cron slot（避免 daemon 负载）
+
+未来如果美国竞品有大动作（如 Sticker Mule 大改 pricing / 新功能），单独 spawn verifier 不走 cron。
+
+### verify 清单（en 美国 sharp hook 部署后）
+
+1. curl `https://zprintpro.com/en/` → grep `Free US Shipping\|Free design mockup\|No setup fees` 各 ≥1
+2. curl `https://zprintpro.com/en/category/stickers/` → H1 含 "Free Shipping\|Free Design\|No Minimum" 之一
+3. 14/14 en 类目页 description 含 "Free Shipping\|Free Design" 之一
+4. Hero slide 6/6 至少含 1 sharp hook
+5. zh-hk/ja 首页不应出现 "美國 \$99+" / "米国 \$99+" 等污染（§13.10）
+
+## 13.16 Pre-commit 校验清单 v2（2026-07-09 强化版）
+
+> 在 §13.11 v1 基础上加 3 项 en 美国集中 + 15 年口径检查。
+
+**每次 commit 前 8 问**：
+1. `node scripts/check-encoding.js` — 编码检查（UTF-16/CRLF）✅？
+2. `npm run build` — 本地编译通过（Compiled successfully + 无 TS error）✅？
+3. 新增 blog slug 是否已加入 `articleSlugs` 数组？✅？
+4. zh-hk 标题/excerpt 是否写了 target market（香港）而非 factory location（深圳）？✅？
+5. en/ja 标题/excerpt 是否避免了机械翻译污染（"in Hong Kong""米国"等硬塞词）？✅？
+6. **en 改动是否触动了 5 大 sharp hook 之一**（Free Shipping / Free Design / No Minimum / Fast Turnaround / Made for USA）？✅？
+7. **未引入 "9 年 / 2017 / 2014 / 2009 / 10+ year" 残留**（必须用 15+ / 2012）✅？
+8. **zh-hk/ja 首页未被 en 美国化污染**（grep "美國 \$99\|米国 \$99" = 0）✅？
+
+**8 问全过才 push。任一项不过立即修，不推。**
+
+## 13.17 PM × UX × SEO 3-perspective 复盘模板（任何 en 美国优化前必跑）
+
+> 2026-07-09 en 美国优化 v5/v6 用过的复盘模板，已写入 `docs/competitor-analysis/en-us-market-optimization-pm-ux-seo-2026-07-09.md`。
+
+### 模板（每次 en 美国类目/产品/Hero 改动前 30 分钟跑）
+
+```markdown
+## 一、美国市场头部竞品 sharp hook 调研（≥5 个头部）
+| Sharp hook | 代表竞品 | 覆盖率 |
+|---|---|---|
+| Free Shipping | Sticker Mule / CustomStickers.com / Packlane / VividPrintingHub | ___% |
+| Free Design / Free Mockup | Packlane / VividPrintingHub / CustomStickers.com | ___% |
+| Made in USA / America | RogueStickers / EverPrint / USCustomStickers | ___% |
+| No Minimum / Low MOQ | CustomStickers.com / Packlane | ___% |
+| Fast Turnaround | samedaycalendars.com / FlyersASAP | ___% |
+
+## 二、我们 en 站点 4 大缺口诊断
+| Sharp hook | 美国头部 | 我们 en 现状 | 问题 |
+|---|---|---|---|
+
+## 三、本轮改动
+| # | 文件 | 改动 | 影响 |
+
+## 四、verify 结果
+| 检查 | 结果 |
+|---|---|
+
+## 五、踩坑避免
+- ✅ §13.10 NAP 脱钩
+- ✅ §11 名片禁区
+- ✅ §13.14 15+ 年口径
+
+## 六、保留的差异化优势
+- ✅ 30-second AI quote (全行业唯一)
+- ✅ ISO 9001 / FSC 认证
+```
+
+**应用范围**：每次 en 美国类目/产品/Hero/H1/description 改动前必跑 30 分钟模板 → commit message 引用模板结论。

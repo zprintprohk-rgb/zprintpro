@@ -20,7 +20,7 @@ const translations = {
     contactPhone: '+86 181 2638 0255',
     contactNote: '媒體查詢優先處理，24小時內回覆',
     about: '公司簡介',
-    aboutText: `ZprintPro 智印雲成立於2009年，總部位於中華人民共和國廣東省深圳市龍崗區平湖街道嘉城路1號，是面向香港及全球市場的國際印刷服務品牌。我們為全球超過3,000家企業提供高品質印刷解決方案，產品涵蓋名片、傳單、貼紙、包裝盒、紙袋、海報、書籍、利是封等79個品類。我們的使命是讓每一位客戶都能以合理的價格，獲得超出預期的印刷品質。`,
+    aboutText: `ZprintPro 智印雲成立於2012年，總部位於中華人民共和國廣東省深圳市龍崗區平湖街道嘉城路1號，是面向香港及全球市場的國際印刷服務品牌。我們為全球超過3,000家企業提供高品質印刷解決方案，產品涵蓋名片、傳單、貼紙、包裝盒、紙袋、海報、書籍、利是封等79個品類。我們的使命是讓每一位客戶都能以合理的價格，獲得超出預期的印刷品質。`,
     stats: '核心數據',
     statItems: [
       { value: '3,000+', label: '服務企業' },
@@ -45,7 +45,7 @@ const translations = {
     factSheet: '事實資料表',
     factItems: [
       { label: '公司全名', value: 'ZprintPro 智印雲' },
-      { label: '成立年份', value: '2009年' },
+      { label: '成立年份', value: '2012年' },
       { label: '總部地址', value: '中國廣東省深圳市龍崗區平湖街道嘉城路1號' },
       { label: '服務範圍', value: '香港、中國內地、日本、美國、英國、澳大利亞' },
       { label: '核心產品', value: '名片、傳單、貼紙、包裝盒、紙袋、海報、書籍' },
@@ -67,7 +67,7 @@ const translations = {
     contactPhone: '+86 181 2638 0255',
     contactNote: 'Media inquiries receive priority response within 24 hours',
     about: 'Company Overview',
-    aboutText: `Founded in 2009 and headquartered in Shenzhen, Guangdong, China, ZprintPro is an international printing service brand serving Hong Kong and global markets. We serve over 3,000 businesses worldwide with high-quality printing solutions across 79 product categories, including business cards, flyers, stickers, packaging boxes, paper bags, posters, books, and red packets. Our mission is to help every client achieve exceptional print quality at a fair price.`,
+    aboutText: `Founded in 2012 and headquartered in Shenzhen, Guangdong, China, ZprintPro is an international printing service brand serving Hong Kong and global markets. We serve over 3,000 businesses worldwide with high-quality printing solutions across 79 product categories, including business cards, flyers, stickers, packaging boxes, paper bags, posters, books, and red packets. Our mission is to help every client achieve exceptional print quality at a fair price.`,
     stats: 'Key Metrics',
     statItems: [
       { value: '3,000+', label: 'Business Clients' },
@@ -92,7 +92,7 @@ const translations = {
     factSheet: 'Fact Sheet',
     factItems: [
       { label: 'Company Name', value: 'ZprintPro' },
-      { label: 'Founded', value: '2009' },
+      { label: 'Founded', value: '2012' },
       { label: 'Headquarters', value: 'No.1 Jiacheng Road, Pinghu Street, Longgang District, Shenzhen, Guangdong, China' },
       { label: 'Service Areas', value: 'Hong Kong, Mainland China, Japan, USA, UK, Australia' },
       { label: 'Core Products', value: 'Business cards, flyers, stickers, boxes, bags, posters, books' },
@@ -114,7 +114,7 @@ const translations = {
     contactPhone: '+86 181 2638 0255',
     contactNote: 'メディアからのお問い合わせは24時間以内に優先対応',
     about: '会社概要',
-    aboutText: `2009年に設立され、中華人民共和国広東省深圳市龍崗区平湖街道嘉城路1号に本社を構えるZprintProは、香港を含む世界市場向けの国際印刷サービスブランドです。世界中の3,000社以上の企業に高品質な印刷ソリューションを提供しており、名刺、チラシ、ステッカー、包装箱、紙袋、ポスター、書籍、紅包など79の製品カテゴリーを展開しています。私たちのミッションは、すべてのクライアントが適正な価格で期待を超える印刷品質を得られるようにすることです。`,
+    aboutText: `2012年に設立され、中華人民共和国広東省深圳市龍崗区平湖街道嘉城路1号に本社を構えるZprintProは、香港を含む世界市場向けの国際印刷サービスブランドです。世界中の3,000社以上の企業に高品質な印刷ソリューションを提供しており、名刺、チラシ、ステッカー、包装箱、紙袋、ポスター、書籍、紅包など79の製品カテゴリーを展開しています。私たちのミッションは、すべてのクライアントが適正な価格で期待を超える印刷品質を得られるようにすることです。`,
     stats: '主要指標',
     statItems: [
       { value: '3,000+', label: '企業クライアント' },
@@ -139,7 +139,7 @@ const translations = {
     factSheet: 'ファクトシート',
     factItems: [
       { label: '会社名', value: 'ZprintPro 智印雲' },
-      { label: '設立', value: '2009年' },
+      { label: '設立', value: '2012年' },
       { label: '本社所在地', value: '中華人民共和国広東省深圳市龍崗区平湖街道嘉城路1号' },
       { label: 'サービスエリア', value: '香港、中国本土、日本、米国、英国、オーストラリア' },
       { label: '主要製品', value: '名刺、チラシ、ステッカー、包装箱、紙袋、ポスター、書籍' },
