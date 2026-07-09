@@ -2967,8 +2967,8 @@ export const products: Product[] = [
     slug: 'die-cut-stickers',
     category: 'stickers',
     category_slug: 'stickers',
-    name: '異形模切貼紙', nameEn: 'Die-cut Stickers', nameJa: '型抜きステッカー', title_zh: '異形模切貼紙',
-    description: '任意形狀模切，讓創意不受限制。可切出Logo形狀、卡通形象等獨特輪廓。', descriptionEn: 'Any shape die-cutting, creativity without limits. Can cut logo shapes, cartoon characters, unique contours.', descriptionJa: '任意形状の型抜き、創作の自由を制限しません。', description_zh: '任意形狀模切，讓創意不受限制。可切出Logo形狀、卡通形象等獨特輪廓。',
+    name: '異形模切貼紙', nameEn: 'Die-cut Stickers', nameJa: '型抜きステッカー', title_zh: '異形模切貼紙 · 文創IP角色造型模切定制 | 智印雲 ZprintPro',
+    description: '任意形狀模切，讓創意不受限制。可切出Logo形狀、卡通形象等獨特輪廓。**適配行業**: 文創IP / VTuber / 動漫周邊 / 個人插畫師 / 品牌吉祥物 / 同人誌 / 活動贈品。', descriptionEn: 'Any shape die-cutting, creativity without limits. Can cut logo shapes, cartoon characters, unique contours. **Best for**: creator IP / VTuber / anime merch / illustrators / brand mascots / doujinshi / event giveaways.', descriptionJa: '任意形状の型抜き、創作の自由を制限しません。**適用業界**: クリエイターIP / VTuber / アニメ周边 / 個人イラストレーター / ブランドマスコット / 同人誌 / イベント赠り物。', description_zh: '任意形狀模切，讓創意不受限制。可切出Logo形狀、卡通形象等獨特輪廓。**適配行業**: 文創IP / VTuber / 動漫周邊 / 個人插畫師 / 品牌吉祥物 / 同人誌 / 活動贈品。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -3287,6 +3287,8 @@ export const products: Product[] = [
       ja: '型抜きステッカー | 防水対応・オリジナル形状 | ZprintPro'
     },
   },
+  optimizedAt: '2026-07-09',
+  optimizationRound: 1,
   },
   {
     id: 'ST-006',
@@ -16952,8 +16954,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'graduation-yearbook',
     category: 'educational',
     category_slug: 'educational',
-    name: '畢業紀念冊', nameEn: 'Graduation Yearbook', nameJa: '卒業記念アルバム', title_zh: '畢業紀念冊',
-    description: '中學大學畢業紀念冊定制，騎馬釘 / 膠裝 / 精裝三種裝訂, 支持個人班級照片、師長題詞、學校 logo 全頁。香港本地、深圳亞洲工廠生產, 補習社、國際學校、家長會常用。', descriptionEn: 'Custom graduation yearbooks — saddle stitch / perfect bound / hardcover, supporting class photos, faculty messages, school logos. Asia factory direct, DHL Express global 2-4 day delivery.', descriptionJa: '卒業記念アルバムカスタム印刷 — 中綴じ / 無線綴じ / 上製本, クラス写真・先生メッセージ・学校ロゴ全面対応。中国深セ自社工場・DHL 国際配送 2-4 日。', description_zh: '中學大學畢業紀念冊定制, 騎馬釘 / 膠裝 / 精裝三種裝訂, 支持班級照片、師長題詞、學校 logo 全頁。',
+    name: '畢業紀念冊', nameEn: 'Graduation Yearbook', nameJa: '卒業記念アルバム', title_zh: '畢業紀念冊訂製 · 香港教育培訓年度紀念冊定制 | 智印雲 ZprintPro',
+    description: '中學大學畢業紀念冊定制，騎馬釘 / 膠裝 / 精裝三種裝訂, 支持個人班級照片、師長題詞、學校 logo 全頁。香港本地、深圳亞洲工廠生產, 補習社、國際學校、家長會常用。**適配行業**: 教育培訓 / 中學 / 大學 / 補習社 / 國際學校 / 家長會 / 校友會 / 同學會紀念冊。', descriptionEn: 'Custom graduation yearbooks — saddle stitch / perfect bound / hardcover, supporting class photos, faculty messages, school logos. Asia factory direct, DHL Express global 2-4 day delivery. **Best for**: education / high school / university / cram school / international school / PTA / alumni association / class reunion yearbooks.', descriptionJa: '卒業記念アルバムカスタム印刷 — 中綴じ / 無線綴じ / 上製本, クラス写真・先生メッセージ・学校ロゴ全面対応。中国深セ自社工場・DHL 国際配送 2-4 日。**適用業界**: 教育研修 / 中学 / 大学 / 予備校 / インターナショナルスクール / PTA / 同窓会 / クラス会記念アルバム。', description_zh: '中學大學畢業紀念冊定制, 騎馬釘 / 膠裝 / 精裝三種裝訂, 支持班級照片、師長題詞、學校 logo 全頁。**適配行業**: 教育培訓 / 中學 / 大學 / 補習社 / 國際學校 / 家長會 / 校友會 / 同學會紀念冊。',
     longDescription: `<h3>三種裝訂工藝對比</h3>
 <p>畢業紀念冊常用 3 種裝訂方式, 頁數與預算決定最佳方案:</p>
 <table>
@@ -17023,7 +17025,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
       ja: '卒業記念アルバム印刷 中綴じ 無線綴じ 上製本'
     },
   },
-  },
+  optimizedAt: '2026-07-09',
+  optimizationRound: 1,
+},
   // ===== 新增包裝盒產品（SEO重點布局） =====
   {
     id: 'PKG-007',
@@ -17743,8 +17747,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'fruit-food-label-stickers',
     category: 'stickers',
     category_slug: 'stickers',
-    name: '水果貼紙食品標籤印刷', nameEn: 'Fruit & Food Label Stickers', nameJa: 'フルーツ・食品ラベルシール', title_zh: '水果貼紙食品標籤印刷',
-    description: '防水防油的水果貼紙和食品標籤，適合生鮮、烘焙、飲料包裝。符合食品安全標準。', descriptionEn: 'Waterproof and oil-resistant fruit stickers and food labels for fresh produce, bakery, beverage packaging. Food-safe compliant.', descriptionJa: '耐水耐油のフルーツシールと食品ラベル。生鮮食品、ベーカリー、飲料包装に最適。食品衛生基準適合。', description_zh: '防水防油的水果貼紙和食品標籤，適合生鮮、烘焙、飲料包裝。符合食品安全標準。',
+    name: '水果貼紙食品標籤印刷', nameEn: 'Fruit & Food Label Stickers', nameJa: 'フルーツ・食品ラベルシール', title_zh: '水果貼紙食品標籤印刷 · FDA 食品級跨境電商 SKU 標貼 | 智印雲 ZprintPro',
+    description: '防水防油的水果貼紙和食品標籤，適合生鮮、烘焙、飲料包裝。符合食品安全標準。**適配行業**: 跨境電商 SKU 標籤 / 生鮮水果品牌 / 烘焙食品 / 茶飲品牌 / 保健食品 / GS1 條碼貼標。', descriptionEn: 'Waterproof and oil-resistant fruit stickers and food labels for fresh produce, bakery, beverage packaging. Food-safe compliant. **Best for**: cross-border e-commerce SKU labels / fresh fruit brands / bakery / beverage / health food / GS1 barcode labels.', descriptionJa: '耐水耐油のフルーツシールと食品ラベル。生鮮食品、ベーカリー、飲料包装に最適。食品衛生基準適合。**適用業界**: 越境EC SKU ラベル / 生鮮フルーツブランド / ベーカリー / ドリンク / 健康食品 / GS1 バーコードラベル。', description_zh: '防水防油的水果貼紙和食品標籤，適合生鮮、烘焙、飲料包裝。符合食品安全標準。**適配行業**: 跨境電商 SKU 標籤 / 生鮮水果品牌 / 烘焙食品 / 茶飲品牌 / 保健食品 / GS1 條碼貼標。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -17913,8 +17917,10 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
       ja: 'フルーツ・食品ラベルシール | 防水対応・オリジナル形状 | ZprintPro'
     },
   },
-    },
-    {
+  optimizedAt: '2026-07-09',
+  optimizationRound: 1,
+},
+{
       id: 'DJ-001',
       sku_code: 'DJ-001',
       slug: 'doujinshi-printing',

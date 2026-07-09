@@ -423,6 +423,30 @@
       "queued_at": "2026-07-08",
       "priority_boost": 1,
       "note": "2026-07-08 Layer A SKU 拓點 — graduation-yearbook 配合 13 类目页教育类服务行业区块"
+    },
+    {
+      "id": "Q-009",
+      "category": "stickers",
+      "sku": "die-cut-stickers",
+      "industry": "文創IP",
+      "tier": "A",
+      "priority": "P1",
+      "slug": "ip-character-sticker-printing-guide",
+      "title_zh": "文創IP角色造型貼紙印刷指南 · 香港同人品牌模切定制方案 | 智印雲 ZprintPro",
+      "title_en": "IP Character Sticker Printing Guide: Die-Cut Shapes, Custom Designs & Creator Brand Boost | ZprintPro",
+      "title_ja": "IP キャラクター型抜きステッカー印刷ガイド：カスタム形状・素材・工法の全解説 | 智印雲 ZprintPro",
+      "valid_internal_links": [
+        "/category/stickers/",
+        "/product/die-cut-stickers/",
+        "/product/foil-stickers/",
+        "/product/transparent-stickers/",
+        "/quote/"
+      ],
+      "expected_words_zh": 850,
+      "expected_faqs": 4,
+      "queued_at": "2026-07-09",
+      "priority_boost": 1,
+      "note": "2026-07-09 daily cron NEW Q entry — 文創IP Tier A 行業首次覆蓋 (cover 3/3 全字母 純文字 P1 unlock)"
     }
   ],
   "covered": [
@@ -739,29 +763,104 @@
       "gsc_signal_source": "GSC high_potential imps 43, rank 34.7",
       "deployed_commit": "TBD-daily-2026-07-08",
       "slug_note": "Matrix queue original slug was 'lai-see-packet-printing-guide' but actual deployed blog uses 'wedding-red-packet-printing-guide' (more descriptive for international + wedding market). Future GSC tracking uses actual deployed slug."
+    },
+    {
+      "id": "Q-P1-04",
+      "slug": "product-label-printing-guide",
+      "category": "stickers",
+      "sku": "fruit-food-label-stickers",
+      "industry": "跨境電商",
+      "tier": "A",
+      "priority": "P1",
+      "covered_at": "2026-07-09",
+      "deployed_at": "2026-07-09T10:35:00+08:00",
+      "deploy_method": "git push origin_ssh main → CF Pages auto-deploy (v4 daily 3-blog pack P1 unlock final)",
+      "verify_status": "pending-verify",
+      "locale_chars": {
+        "zh-hk": 2927,
+        "en": 8251,
+        "ja": 5705
+      },
+      "nap_decoupled": true,
+      "internal_links_count": 6,
+      "no_images": true,
+      "verify_steps": "pending-7-step",
+      "gsc_signal_source": "GSC high_potential 食品包裝訂製 48 imps rank 22.88 → +1 boost 2026-07-08",
+      "cf_build_run": "pending-cf-build-2026-07-09",
+      "deployed_commit": "pending-commit-2026-07-09"
+    },
+    {
+      "id": "Q-008",
+      "slug": "graduation-yearbook-printing-guide",
+      "category": "educational",
+      "sku": "graduation-yearbook",
+      "industry": "教育培訓",
+      "tier": "A",
+      "priority": "P1",
+      "covered_at": "2026-07-09",
+      "deployed_at": "2026-07-09T10:35:00+08:00",
+      "deploy_method": "git push origin_ssh main → CF Pages auto-deploy (v4 daily 3-blog pack Q-008 P1 fill)",
+      "verify_status": "pending-verify",
+      "locale_chars": {
+        "zh-hk": 2554,
+        "en": 8348,
+        "ja": 5334
+      },
+      "nap_decoupled": true,
+      "internal_links_count": 6,
+      "no_images": true,
+      "verify_steps": "pending-7-step",
+      "note": "2026-07-08 Layer A SKU 拓點 — graduation-yearbook (educational) 配合 Q-008 ID 教育培訓行業首次覆蓋",
+      "cf_build_run": "pending-cf-build-2026-07-09",
+      "deployed_commit": "pending-commit-2026-07-09"
+    },
+    {
+      "id": "Q-009",
+      "slug": "ip-character-sticker-printing-guide",
+      "category": "stickers",
+      "sku": "die-cut-stickers",
+      "industry": "文創IP",
+      "tier": "A",
+      "priority": "P1",
+      "covered_at": "2026-07-09",
+      "deployed_at": "2026-07-09T10:35:00+08:00",
+      "deploy_method": "git push origin_ssh main → CF Pages auto-deploy (v4 daily 3-blog pack Q-009 NEW 文創IP 拓點)",
+      "verify_status": "pending-verify",
+      "locale_chars": {
+        "zh-hk": 2931,
+        "en": 9614,
+        "ja": 6017
+      },
+      "nap_decoupled": true,
+      "internal_links_count": 6,
+      "no_images": true,
+      "verify_steps": "pending-7-step",
+      "note": "NEW Q entry 2026-07-09 拓點 — 文創IP Tier A 行業首次覆蓋 (comics / VTuber / 動漫周邊 / 個人插畫 / 品牌吉祥物 / 同人誌)",
+      "cf_build_run": "pending-cf-build-2026-07-09",
+      "deployed_commit": "pending-commit-2026-07-09"
     }
   ],
   "skipped": {
     "business-cards": "AGENTS.md §11 主营品类约束"
   },
   "stats": {
-    "queue_size": 15,
-    "covered_count": 13,
-    "unique_ids": 15,
+    "queue_size": 16,
+    "covered_count": 16,
+    "unique_ids": 16,
     "p0_total": 10,
     "p0_covered": 10,
     "p0_coverage_pct": 1,
-    "p1_total": 5,
-    "p1_covered": 3,
-    "p1_coverage_pct": 0.6,
+    "p1_total": 6,
+    "p1_covered": 6,
+    "p1_coverage_pct": 1,
     "p2_coverage_pct": 0,
     "tier_a_count": 7,
     "tier_b_count": 3,
     "tier_c_count": 0,
     "total_524_target": 524,
-    "covered_524_pct": 2.48,
-    "last_updated": "2026-07-08",
-    "last_updated_event": "Layer A 23:45 user pivot: Q-009 (cosmetics-packaging-box) removed; PK-002 cosmetic-boxes 已升级为化妝品包裝盒 (slug 不变, 4 種盒型 + 內托定制). P1 队列: 5 条 (Q-008 graduation-yearbook + Q-P1-01/02/03/04). covered 13/13 P0 + 3/5 P1."
+    "covered_524_pct": "3.05",
+    "last_updated": "2026-07-09",
+    "last_updated_event": "cron zprintpro-daily-content-evolve 2026-07-09: Q-P1-04 fill (P1 收尾) + Q-008 fill (教育培訓拓點) + Q-009 NEW (文創IP 拓點). P1 6/6 covered. covered 16/16 (3 P0 + 13 P1)."
   },
   "priority_boost_history": [
     {

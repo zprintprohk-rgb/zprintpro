@@ -36,7 +36,10 @@ export type BlogCategoryKey =
   | 'restaurant-flyer'
   | 'buying-guide'
   | 'menus'
-  | 'red-packets';
+  | 'red-packets'
+  | 'cross-border'
+  | 'education'
+  | 'creator-ip';
 
 export type BlogPostSource = 'buying-guide' | 'legacy';
 
@@ -871,7 +874,59 @@ const lpJewelleryShoppingBag: BlogPostMeta = {
 };
 
 // =============================================================================
-// Unified list (25 articles)
+// 2026-07-09 v4 daily-content-evolve add 3 (Q-P1-04 + Q-008 + Q-009 new)
+const lpProductLabel: BlogPostMeta = {
+  slug: 'product-label-printing-guide',
+  categoryKey: 'cross-border',
+  source: 'legacy',
+  date: '2026-07-09',
+  title: {
+    'zh-hk': '跨境電商產品標籤印刷指南 · GS1 條碼 + FDA 認證 SKU 標貼 | 智印雲 ZprintPro',
+    en: 'E-commerce Product Label Printing Guide: GS1 Barcodes, FDA-Compliant SKU Labels | ZprintPro',
+    ja: '越境EC製品ラベル印刷ガイド：GS1 バーコード・FDA 準拠 SKU ラベル | 智印雲 ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '亞馬遜 FBA、Shopify 獨立站、Etsy、速賣通賣家必睇。一張合規的 SKU 產品標籤決定平台審核通過率與買家第一印象。智印雲為跨境電商提供 GS1 EAN/UPC 條碼 + FDA 食品級材質 + 防水防撕 SKU 標貼,1,000-500,000 枚小至大批量,5-7 個工作天交付。',
+    en: 'Amazon FBA, Shopify, Etsy, AliExpress sellers — a compliant SKU product label decides your platform audit pass rate and first buyer impression. ZprintPro delivers GS1 EAN/UPC barcodes, FDA food-safe materials, waterproof tear-resistant SKU labels for 1,000-500,000 piece runs with 5-7 working day turnaround.',
+    ja: 'Amazon FBA、Shopify 独立 station、Etsy、AliExpress セラーへ。コンプライアンス適合の SKU ラベルがプラットフォーム審査通過率と第一印象を決定。智印雲は GS1 EAN/UPC バーコード、FDA 食品衛生素材、防水耐裂 SKU ラベルを 1,000-500,000 枚規模で 5-7 営業日納品。',
+  },
+};
+
+const lpGraduationYearbook: BlogPostMeta = {
+  slug: 'graduation-yearbook-printing-guide',
+  categoryKey: 'education',
+  source: 'legacy',
+  date: '2026-07-09',
+  title: {
+    'zh-hk': '畢業紀念冊印刷指南 · 香港中學大學院校定制方案 | 智印雲 ZprintPro',
+    en: 'Graduation Yearbook Printing Guide: Binding Styles, Paper & Personalization | ZprintPro',
+    ja: '卒業記念アルバム印刷ガイド：製本・用紙・パーソナライズ完全解説 | 智印雲 ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '中學、大學、補習社、國際學校、家長會必睇。一本高質素的畢業紀念冊是學生時代的永恆回憶,也是校友網絡凝聚的起點。智印雲為香港教育市場提供騎馬釘 / 膠裝 / 精裝三種裝訂 + 個人班級照片 + 師長題詞 + 學校 logo 全頁客製化方案,50-500 本小批量,5-10 個工作天交付。',
+    en: 'High schools, universities, cram schools, international schools, PTAs — a premium graduation yearbook is a timeless keepsake and the first node of an alumni network. ZprintPro delivers saddle stitch / perfect bound / hardcover bindings with class photos, faculty tributes, full-bleed school logos for 50-500 copy runs in 5-10 working days.',
+    ja: '中学校、大学、予備校、インターナショナルスクール、PTA へ。高品質卒業記念アルバムは永遠の思い出と同窓ネットワーク形成の起点。智印雲は中綴じ / 無線綴じ / 上製本の 3 種類装丁 + クラス写真 + 教員メッセージ + 学校ロゴ全面カスタマイズを 50-500 部小ロットで 5-10 営業日納品。',
+  },
+};
+
+const lpIpCharacterSticker: BlogPostMeta = {
+  slug: 'ip-character-sticker-printing-guide',
+  categoryKey: 'creator-ip',
+  source: 'legacy',
+  date: '2026-07-09',
+  title: {
+    'zh-hk': '文創IP角色造型貼紙印刷指南 · 香港同人品牌模切定制方案 | 智印雲 ZprintPro',
+    en: 'IP Character Sticker Printing Guide: Die-Cut Shapes, Custom Designs & Creator Brand Boost | ZprintPro',
+    ja: 'IP キャラクター型抜きステッカー印刷ガイド：カスタム形状・素材・工法の全解説 | 智印雲 ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '插畫師、漫畫家、文創品牌、VTuber、動漫周邊設計師必睇。一張極具辨識度的 IP 角色造型貼紙決定品牌粉絲忠誠度與商品溢價能力。智印雲為香港及跨境文創市場提供任意形狀模切 + UV 印刷 + 多材質 + 燙金工藝全套定制,100-100,000 枚小至大批量,5-7 個工作天交付。',
+    en: 'Illustrators, mangaka, creator brands, VTubers, anime-merch designers — a recognizable IP character sticker decides fan loyalty and merchandise premium. ZprintPro delivers arbitrary-shape die cut, UV printing, multi-material, foil finishing for 100-100,000 piece runs in 5-7 working days with DHL worldwide.',
+    ja: 'イラストレーター・漫画家・クリエイターブランド・VTuber・アニメ周辺デザイナーへ。認知度の高い IP キャラクター型ステッカーがファンロイヤルティと商品プレミアムを決定。智印雲は任意形状型抜き、UV 印刷、複数素材、箔押し工法を 100-100,000 枚規模で 5-7 営業日納品、DHL 国際配送対応。',
+  },
+};
+
+// Unified list (28 articles)
 // =============================================================================
 
 export const blogPosts: BlogPostMeta[] = [
@@ -932,6 +987,13 @@ export const blogPosts: BlogPostMeta[] = [
   lpRetailPoster,
   lpRestaurantMenu,
   lpWeddingRedPacket,
+  // 2026-07-09 v4 daily-content-evolve (3 blogs): Q-P1-04 收尾 + P1 補完 (Q-008) + 新行業 (Q-009 new)
+  // - lpProductLabel: stickers × 跨境電商 (Q-P1-04) — GSC high_potential 食品包裝訂製 48 imps rank 22.88 命中補完
+  // - lpGraduationYearbook: educational × 教育培訓 (Q-008) — P1 補完
+  // - lpIpCharacterSticker: stickers × 文創IP (Q-009 new) — 新行業 Tier A
+  lpProductLabel,
+  lpGraduationYearbook,
+  lpIpCharacterSticker,
 ];
 
 // =============================================================================
