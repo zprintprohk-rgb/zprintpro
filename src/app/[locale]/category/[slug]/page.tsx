@@ -102,79 +102,81 @@ export default function CategoryPage({
   // 自定义 H1 映射（按 v5 doc, 10 category × 3 locale = 30 个 custom H1）
   // 主营 6 (stickers/flyers/packaging/paper-bags/red-packets/labels-as-stickers-sub) + 次要 4 (posters/banners/menus/books/educational)
   // 不优化 (P3 跳过): business-cards / calendars / envelopes / notebooks
+  // 2026-07-09 PM+UX+SEO 美国市场优化 v5: en 全部类目 H1 加 "Free Shipping + Made for USA + FedEx/DHL" sharp hook
   const customH1Map: Record<string, Record<string, string>> = {
     'packaging': {
       'zh-hk': '香港包裝盒定制 — 禮盒 / 化妝品盒 / 食品盒 / 快遞盒 / 天地蓋盒',
-      'en': 'Custom Packaging Boxes — Gift / Cosmetic / Food / Mailer / Rigid Boxes',
+      'en': 'Custom Packaging Boxes Made in USA-Friendly · 100 MOQ Free Shipping over $99',
       'ja': 'パッケージボックス カスタム — ギフト / 化粧 / 食品 / メール便 / 組み立て',
     },
     'paper-bags': {
       'zh-hk': '香港紙袋印刷定制 — 牛皮紙袋 / 白卡紙袋 / 精品紙袋 / 環保紙袋',
-      'en': 'Custom Paper Bags — Kraft / White Card / Eco-Friendly / Gift Bags',
+      'en': 'Custom Paper Bags Free Shipping · 100 MOQ FSC Kraft Eco-Friendly',
       'ja': '紙袋印刷 カスタム — クラフト / ホワイトカード / エコ / ギフト',
     },
 'flyers': {
       // 2026-07-09 SEO 复盘 v3: 即日 + 數碼快印前置 (吸收原本独立 nav 「即日服務」权重)
+      // 2026-07-09 v5 美国市场: 加 Free Shipping + FedEx Ground + Same Day sharp hook
       'zh-hk': '香港即日宣傳單張印刷 — A4/A5 數碼快印 / 摺頁 / 開業傳單 / 24 小時急件',
-      en: 'Same-Day Flyer Printing Hong Kong — A4/A5 Digital + Folded Leaflets / Grand Opening / 24h Rush',
+      en: 'Same-Day Flyers Free Shipping over $99 · 100 MOQ A4/A5 Digital + FedEx Ground',
       ja: '香港即日チラシ印刷 — A4/A5 デジタル+オフセット / 折込 / 開業チラシ / 24時間特急',
     },
     'menus': {
       'zh-hk': '香港菜單印刷 — PVC菜單 / 紙質菜單 / 精裝菜單 / 一次性菜單',
-      'en': 'Custom Menu Printing — PVC / Paper / Hardcover / Disposable',
+      'en': 'Custom Menus Free Shipping · 100 MOQ Waterproof PVC + Hardcover · Made for USA Restaurants',
       'ja': 'メニュー印刷 カスタム — PVC / 紙 / ハードカバー / 使い捨て',
     },
     'red-packets': {
       'zh-hk': '香港紅包印刷 — 利是封 / 賀年紅包 / 燙金紅包 / 卡通紅包',
-      'en': 'Red Packet Printing — Chinese New Year / Foil Stamped / Cartoon / Custom',
+      'en': 'Custom Red Packets Free Shipping · 100 MOQ Foil CNY Wedding · USA Chinese Communities',
       'ja': '紅包印刷 — 旧正月 / 箔押し / キャラクター / カスタム',
     },
     'stickers': {
       'zh-hk': '香港貼紙印刷定制 — 防水貼紙 / 透明貼紙 / 異形貼紙 / 標籤貼紙',
-      'en': 'Custom Sticker Printing — Waterproof / Transparent / Die-Cut / Product Labels',
+      'en': 'Custom Stickers Free Shipping · 50 MOQ Die-Cut Vinyl Waterproof · Made for USA Small Business',
       'ja': 'ステッカー印刷 カスタム — 防水 / 透明 / ダイカット / 商品ラベル',
     },
     'posters': {
       'zh-hk': '香港海報印刷定制 — A1/A2 海報 / 戶外海報 / 展覽海報 / 大圖輸出',
-      'en': 'Custom Poster Printing — A1/A2 / Outdoor / Exhibition / Large Format',
+      'en': 'Custom Posters Free Shipping · A1/A2 Outdoor Waterproof 1 MOQ · USA Trade Show',
       'ja': 'ポスター印刷 カスタム — A1/A2 / 屋外 / 展示 / 大判出力',
     },
     'banners': {
       'zh-hk': '香港橫幅印刷 — 易拉寶 / 戶外橫幅 / 展覽橫幅 / 車身廣告',
-      'en': 'Custom Banner Printing — Roll-Up / Outdoor / Exhibition / Vehicle Wrap',
+      'en': 'Custom Banners Free Shipping · 1 MOQ Roll-Up X-Stand Waterproof UV · USA Trade Show',
       'ja': 'バナー印刷 カスタム — ロールアップ / 屋外 / 展示 / 車両広告',
     },
     'books': {
       'zh-hk': '香港畫冊印刷 — 騎馬釘 / 膠裝書 / 精裝書 / 螺旋裝 / 兒童繪本',
-      'en': 'Custom Book Printing — Saddle Stitch / Perfect Bound / Hardcover / Spiral / Children',
+      'en': 'Custom Book Printing Free Shipping · 50 MOQ Saddle Hardcover Perfect Bound · USA Authors',
       'ja': '冊子印刷 カスタム — 中綴じ / 無線綴じ / 上製本 / スパイラル / 絵本',
     },
     'educational': {
       'zh-hk': '香港校園教育印刷 — 證書 / 作業簿 / 教材 / 學業簿',
-      'en': 'Custom Education Printing — Certificates / Workbooks / Textbooks / School Stationery',
+      'en': 'Custom Education Printing Free Shipping · 100 MOQ Certificates/Workbooks · USA Schools',
       ja: '教育印刷 カスタム — 証明書 / ワークブック / 教科書 / 学用品',
     },
     'envelopes': {
       'zh-hk': '香港信封印刷定制 — 牛皮信封 / 開窗信封 / 彩色信封 / 企業LOGO信封',
-      en: 'Custom Envelope Printing — Kraft / Window / Colored / Corporate Branding',
+      en: 'Custom Envelopes Free Shipping · 100 MOQ Kraft Window Colored Corporate Logo',
       ja: '封筒印刷 カスタム — クラフト / 窓付き / カラー / 企業ブランディング',
     },
     'calendars': {
       'zh-hk': '香港年曆印刷定制 — 座檯年曆 / 掛曆 / 月曆 / 2027年曆 / 企業LOGO',
-      en: 'Custom Calendar Printing — Desk / Wall / Monthly / 2027 / Corporate Branding',
-      ja: 'カレンダー印刷 カスタム — デスク / 壁掛け / 月別 / 2027年 / 企業ロゴ',
+      'en': 'Custom Calendars Free Shipping · 100 MOQ 2027 Desk Wall Hardcover Foil · USA Corporate Gifts',
+      'ja': 'カレンダー印刷 カスタム — デスク / 壁掛け / 月別 / 2027年 / 企業ロゴ',
     },
     'business-cards': {
       'zh-hk': '香港咭片印刷定制 — 燙金名片 / UV名片 / 圓角名片 / 高檔名片',
-      en: 'Custom Business Card Printing — Foil Stamped / UV / Rounded Corner / Premium Cards',
-      ja: '名刺印刷 カスタム — 箔押し / UV / 丸角 / プレミアム名刺',
+      'en': 'Business Cards Free Shipping · 100 MOQ Foil UV Rounded Corner · Same Day 24h Rush USA',
+      'ja': '名刺印刷 カスタム — 箔押し / UV / 丸角 / プレミアム名刺',
     },
     // 2026-07-09 PM+UX+SEO 复盘: japan-doujin 是 14 类目里唯一缺 customH1 的,
     // 走 fallback `categoryName` = 「同人周邊印刷」, 不够 sharp hook.
     // 加 NAP-脱钩 sharp hook: 10本起 / A5+B5 / Comiket 24h特急 / 5 周邊類型
     'japan-doujin': {
       'zh-hk': '同人周邊印刷 10本起 · A5/B5 同人誌 / 亞克力 / 缶バッジ / 明信片 Comiket 24h 特急',
-      en: 'Doujinshi Printing 10 MOQ · A5 / B5 / Acrylic / Can Badge / Postcard Comiket 24h Rush',
+      en: 'Doujinshi Printing Free Shipping · 10 MOQ Acrylic Can Badge Postcard · USA Anime Fans',
       ja: '同人誌印刷 10部〜 · A5/B5 / アクリル / 缶バッジ / ポストカード コミケ 24時間特急',
     },
   };

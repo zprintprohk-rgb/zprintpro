@@ -24,72 +24,76 @@ const categoryIndustryScenarios: Record<string, {
   scenarios: Record<'zh-hk' | 'en' | 'ja', string[]>;
 }[]> = {
   stickers: [
+    // 2026-07-09 v5 美国市场: en 场景加 Free Shipping + Made for USA small business
     { key: 'pet_food', scenarios: {
       'zh-hk': ['防水防油 FDA 食品級標籤', '異形模切吸引貨架目光', '100 張起印 · 即日打樣'],
-      en: ['Waterproof FDA-grade food labels', 'Die-cut shapes for shelf appeal', 'From 100 sheets · same-day proof'],
+      en: ['Waterproof FDA-grade food labels', 'Die-cut shapes for shelf appeal', 'From 50 · USA artisan brands'],
       ja: ['防水・耐油 FDA 食品グレードラベル', 'ダイカットで棚の注目度アップ', '100枚から・即日サンプル'],
     }},
     { key: 'beauty', scenarios: {
       'zh-hk': ['燙金 LOGO · 啞光質感', '透明貼紙展示玻璃瓶身', '小批量試產 50 張起'],
-      en: ['Foil stamped logo · matte finish', 'Transparent stickers for glass bottles', 'Small batch from 50 sheets'],
+      en: ['Foil logo · matte finish', 'Transparent stickers for glass bottles', 'From 50 · free shipping over $99'],
       ja: ['箔押しロゴ・マット仕上げ', '透明ステッカーでガラス瓶を見せる', '50枚からの小ロット試作'],
     }},
     { key: 'ecommerce', scenarios: {
       'zh-hk': ['SKU 條碼標籤 + GS1 合規', '跨境物流防水耐磨', '可移除背膠 · 不留殘膠'],
-      en: ['SKU barcode labels + GS1 compliance', 'Cross-border waterproof & durable', 'Removable adhesive · no residue'],
+      en: ['SKU barcode labels + GS1 compliance', 'Waterproof & durable for shipping', 'Removable adhesive · no residue'],
       ja: ['SKUバーコード + GS1準拠', '越境物流・防水耐久', '再剥離タイプ・跡残りなし'],
     }},
   ],
   flyers: [
     // 2026-07-09 SEO 复盘 v3: 第一场景「數碼快印 + 即日 24 小時」吸收原本 nav 「即日服務」权重
     // 竞品 sharp hook 实证: 即日名片印刷 CTR 6.56%, A2 名片 即日 CTR 7.02%, 24小時急件 CTR 4-7%
+    // 2026-07-09 v5 美国市场优化: en 加 Free Shipping + FedEx/DHL + Made for USA
     { key: 'digital_sameday', scenarios: {
       'zh-hk': ['數碼快印 · 即日 24 小時可取', 'A4/A5 單張 · 100 張起印', '小批量無版費 · 1 本起'],
-      en: ['Digital printing · same-day 24h pickup', 'A4/A5 single sheet · from 100', 'Small batch · no plate fee · 1 copy'],
+      en: ['Free shipping over $99 · same-day rush', 'Digital print + offset available', '100 MOQ · no plate fee · USA small business'],
       ja: ['デジタル印刷 · 即日 24 時間受取', 'A4/A5 チラシ · 100枚から', '小ロット・版代不要・1枚から'],
     }},
     { key: 'restaurant', scenarios: {
       'zh-hk': ['餐廳開業 / 餐牌傳單', 'A5 防水塗層 · 油漬一抹即淨', '500 張起 · 即日打樣'],
-      en: ['Restaurant opening / menu flyers', 'A5 waterproof · wipe-clean', 'From 500 · same-day proof'],
+      en: ['Restaurant opening / menu flyers', 'Waterproof A5 · wipe-clean surface', 'From 500 · USA restaurant marketing'],
       ja: ['飲食店開業 / メニューチラシ', 'A5防水コート・油汚れも拭き取り', '500枚から・即日校正'],
     }},
-    { key: 'tutoring', scenarios: {
-      'zh-hk': ['補習社皇牌課程單張', 'A4 雙面 4 色 · 派發效率高', '即日打樣 · 彈性加印'],
-      en: ['Tutoring center flagship flyers', 'A4 duplex 4C · high distribution', 'Same-day proof · flexible reprint'],
-      ja: ['塾・予備校の主力コースチラシ', 'A4両面4色・配布効率高', '即日校正・柔軟増刷'],
+    { key: 'event', scenarios: {
+      'zh-hk': ['展會/活動單張 · 摺頁可選', 'A3 大尺寸 · 雙面滿版', '3 天急件可接'],
+      en: ['Trade show / event flyers · folded', 'A3 large format · full-bleed duplex', 'DHL Express 2-4 day to USA'],
+      ja: ['展示会/イベントチラシ・折込可', 'A3大判・両面フルブリード', '3日特急対応可'],
     }},
   ],
   packaging: [
+    // 2026-07-09 v5 美国市场: en 场景加 Free Shipping + Free 3D Mockup + USA DTC brands
     { key: 'beauty', scenarios: {
       'zh-hk': ['化妝品盒 4 種盒型 · 天地蓋/磁吸', '燙金 LOGO · 啞面 PP 覆膜', '100 個起 · FDA 級安全'],
-      en: ['4 cosmetic box styles · lift-off/magnetic', 'Foil logo · matte PP lamination', 'From 100 · FDA food-safe'],
+      en: ['4 cosmetic box styles · lift-off/magnetic', 'Foil logo · matte PP lamination', 'From 100 · USA DTC beauty brands'],
       ja: ['化粧品箱4種・天地蓋/マグネット', '箔押しロゴ・マットPPラミ', '100個から・FDA対応'],
     }},
     { key: 'ecommerce', scenarios: {
       'zh-hk': ['跨境電商快遞盒 · 雙層瓦楞', 'SKU 條碼 + GS1 合規印刷', '500 個起 · 全球 DHL 配送'],
-      en: ['Cross-border mailer boxes · 2-ply corrugated', 'SKU barcode + GS1 compliant', 'From 500 · global DHL'],
+      en: ['Mailer boxes · 2-ply corrugated', 'SKU barcode + GS1 compliant', 'From 500 · free shipping over $99 USA'],
       ja: ['越境ECメール便箱・複層段ボール', 'SKUバーコード+GS1準拠', '500個から・国際DHL配送'],
     }},
     { key: 'tea_beverage', scenarios: {
       'zh-hk': ['茶飲品牌禮盒 · 天地蓋', '燙金 + 局部 UV · 高檔質感', '200 個起 · 月餅盒適用'],
-      en: ['Tea brand gift boxes · lift-off lid', 'Foil + spot UV · premium finish', 'From 200 · mooncake-ready'],
+      en: ['Tea/coffee gift boxes · lift-off lid', 'Foil + spot UV · premium finish', 'From 200 · free 3D mockup'],
       ja: ['茶ブランドギフト箱・天地蓋', '箔押し+スポットUV・高級感', '200個から・月餅箱対応'],
     }},
   ],
   'paper-bags': [
+    // 2026-07-09 v5 美国市场: en 场景加 Free Shipping + USA boutique brands
     { key: 'fashion', scenarios: {
       'zh-hk': ['服飾品牌紙袋 · 牛皮/白卡', '棉繩/絲帶手挽 · 燙金可選', '100 個起 · HK$1.8 起/個'],
-      en: ['Fashion brand bags · kraft/white card', 'Cotton/satin handles · foil option', 'From 100 · HK$1.8+ each'],
+      en: ['Fashion brand bags · kraft/white card', 'Cotton/satin handles · foil option', 'From 100 · free shipping over $99'],
       ja: ['アパレルブランド紙袋・クラフト/白カード', '綿/サテンリボン・箔押し選択可', '100個から・HK$1.8〜'],
     }},
     { key: 'wedding', scenarios: {
       'zh-hk': ['婚慶禮品紙袋 · 燙金婚禮 logo', '白卡紙/黑卡紙高檔質感', '50 個起 · 婚禮主題配色'],
-      en: ['Wedding favor bags · foil-stamped logo', 'White card / black card premium', 'From 50 · wedding color match'],
+      en: ['Wedding favor bags · foil logo', 'White card / black card premium', 'From 50 · USA wedding planners'],
       ja: ['ウェディングギフト紙袋・箔押しロゴ', '白カード/黒カード高級感', '50個から・結婚式配色'],
     }},
     { key: 'bakery', scenarios: {
       'zh-hk': ['烘焙店外賣紙袋 · 防油塗層', '牛皮紙 · 透氣孔設計', '100 個起 · 麵包/蛋糕店適用'],
-      en: ['Bakery takeaway bags · oil-resistant', 'Kraft paper · vented design', 'From 100 · bread/cake shops'],
+      en: ['Bakery takeaway bags · oil-resistant', 'Kraft paper · vented design', 'From 100 · USA artisan bakeries'],
       ja: ['ベーカリー持ち帰り紙袋・耐油加工', 'クラフト紙・通気孔設計', '100個から・パン/ケーキ店対応'],
     }},
   ],
@@ -111,19 +115,20 @@ const categoryIndustryScenarios: Record<string, {
     }},
   ],
   calendars: [
+    // 2026-07-09 v5 美国市场: en 场景加 USA corporate gifts + free shipping
     { key: 'corporate', scenarios: {
       'zh-hk': ['企業 LOGO 年曆 · 燙金精裝', '座檯/掛牆 · 12 頁雙面', '100 本起 · Q4 旺季建議 60 天前下單'],
-      en: ['Corporate logo calendars · foil hardcover', 'Desk/wall · 12-page duplex', 'From 100 · order 60d before Q4 peak'],
+      en: ['Corporate logo calendars · foil hardcover', 'Desk/wall · 12-page duplex', 'From 100 · USA corporate gifts'],
       ja: ['企業ロゴカレンダー・箔押し上製本', 'デスク/壁掛け・12ページ両面', '100部から・繁忙期60日前発注推奨'],
     }},
     { key: 'school', scenarios: {
       'zh-hk': ['學校定制年曆 · 批量折扣', '校徽 LOGO + 校園照片', '500 本起 · 教師節禮品'],
-      en: ['School custom calendars · bulk discount', 'Crest logo + campus photos', 'From 500 · Teacher\'s Day gifts'],
+      en: ['School custom calendars · bulk discount', 'Crest logo + campus photos', 'From 500 · USA school districts'],
       ja: ['学校カスタムカレンダー・大量割引', '校章ロゴ+キャンパス写真', '500部から・教師の日ギフト'],
     }},
     { key: 'real_estate', scenarios: {
       'zh-hk': ['房地產客戶禮品年曆', '高端燙金 + 項目 LOGO', '200 本起 · 客戶維繫'],
-      en: ['Real estate client gift calendars', 'Premium foil + project logo', 'From 200 · client retention'],
+      en: ['Real estate client gift calendars', 'Premium foil + project logo', 'From 200 · USA real estate agent gifts'],
       ja: ['不動産クライアントギフトカレンダー', '高級箔押し+プロジェクトロゴ', '200部から・顧客維持'],
     }},
   ],
