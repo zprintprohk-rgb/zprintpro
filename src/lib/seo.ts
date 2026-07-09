@@ -212,9 +212,14 @@ const homeMetadata: Record<Locale, { title: string; description: string; keyword
     keywords: '香港印刷,急件印刷,即日印刷,貼紙印刷,宣傳單張印刷,包裝盒定制,數碼印刷,30秒報價,人工核價,免費送貨,紙袋印刷,海報印刷,香港印刷公司,印刷急單,小批量印刷,ZPrintPro,智印雲',
   },
   en: {
-    title: 'Custom Printing Service Online — Stickers, Flyers, Packaging Boxes | ZprintPro',
-    description: 'Custom printing service online for US / UK / AU / CA businesses. Stickers, packaging boxes, business cards, posters, books. 30-second AI instant quote. 72-hour worldwide delivery from Shenzhen factory. Free shipping on selected products.',
-    keywords: 'custom printing service, online printing, custom stickers online, custom packaging boxes, business card printing, poster printing, custom book printing, rush printing service, same day printing, international printing, print quote online, custom labels, paper bags wholesale, eco friendly printing, hong kong printing service',
+    // 2026-07-09 P0.1: en-US market local optimization (PM × UX × SEO research, 3-perspective analysis)
+    // - Removed "hong kong printing service" (100% market mismatch, dilutes homepage topicality)
+    // - Removed "Shenzhen factory" from description (NAP vs SEO decoupled, US buyers dislike)
+    // - Added 5 sharp hooks: USA-targeted, Free Shipping $99+, Free Proof, 5-7 day DHL, ISO 9001
+    // - Title 94 → 60 chars (Google SERP no truncation)
+    title: 'Custom Printing Service USA · Free Shipping + Free Proof | ZprintPro',
+    description: 'Custom printing service for USA businesses. Stickers, packaging boxes, paper bags, flyers, posters. 30-second AI quote. Free US shipping on $99+. Free design proof in 4h. 5-7 day DHL delivery. ISO 9001 certified.',
+    keywords: 'custom printing service USA, online printing USA, custom stickers wholesale, packaging boxes supplier USA, paper bags wholesale, 30 second print quote, custom labels USA, rush printing USA, business card printing USA, eco friendly printing USA, made for US businesses, custom printing DHL express',
   },
   ja: {
     title: 'ZPrintPro | 印刷通販 | ステッカー・チラシ・パッケージ印刷 | 即日対応・最短3日納品',
@@ -301,7 +306,7 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       'zh-hk': '香港專業名片印刷，100張起訂，最快24小時交貨。支持燙金、UV、凹凸、圓角等特殊工藝，免費設計模板。智印雲ISO9001認證，品質保證。',
-      en: 'Custom business card printing with free shipping over $99 to USA. Premium paper stocks, foil stamping, spot UV, embossing. Free design templates. Same day 24h rush available. ISO 9001 certified. 100 cards minimum.',
+      en: 'Custom business card printing with free shipping over $99 to USA. Premium paper stocks, foil stamping, spot UV, embossing. Free design templates. Same day 24h rush available. ISO 9001 certified. 100 cards minimum. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
       ja: 'プロの名刺印刷サービス。100枚から、最短24時間でお届け。箔押し・UV・エンボス・丸角加工に対応。無料デザインテンプレート。ISO9001認証取得。全国配送無料。',
     },
   },
@@ -322,7 +327,7 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       'zh-hk': '貼紙印刷 50 張起印. 防水 / 透明 / 異形 / 標籤貼紙, FDA 食品接觸級 + SGS 認證. 30 秒 AI 即時報價 + DHL 全球 2-4 天配送 + ISO 9001 認證 + 4 色柯式印刷.',
-      en: 'Custom stickers with free shipping over $99. Die-cut vinyl, waterproof, FDA-compliant labels from 50 MOQ. Free proofs, no minimum on select items. Made for US small businesses — DHL Express 2-4 day or FedEx Ground. 30-second AI quote, ISO 9001 certified.',
+      en: 'Custom stickers with free shipping over $99. Die-cut vinyl, waterproof, FDA-compliant labels from 50 MOQ. Free proofs, no minimum on select items. Made for US small businesses — DHL Express 2-4 day or FedEx Ground. 30-second AI quote, ISO 9001 certified. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
       ja: 'ステッカー印刷 50 枚から対応. 防水・透明・ダイカット・商品ラベル. FDA 食品接触基準 + SGS 認証. 30 秒 AI 即時見積 + DHL 国際配送 2-4 日 + ISO 9001.',
     },
   },
@@ -346,7 +351,7 @@ const categorySeoData: Record<string, {
     descriptions: {
       'zh-hk': '即日宣傳單張印刷 100 張起印, A4/A5/A6 摺頁 + 數碼快印 + 柯式印刷. 開業傳單 + 餐廳單張 + 補習社單張 + 24 小時急件. 30 秒 AI 即時報價, 全球 DHL 2-4 天配送, ISO 9001 認證.',
       // 加 Free Shipping + Made for US + FedEx/DHL
-      en: 'Same-day flyers from 100 MOQ. A4/A5/A6 folded leaflets + digital + offset print. Restaurant, event, grand opening, real estate flyers + 24h rush. Free shipping over $99 to USA. DHL Express 2-4 day or FedEx Ground. 30-second AI quote, ISO 9001.',
+      en: 'Same-day flyers from 100 MOQ. A4/A5/A6 folded leaflets + digital + offset print. Restaurant, event, grand opening, real estate flyers + 24h rush. Free shipping over $99 to USA. DHL Express 2-4 day or FedEx Ground. 30-second AI quote, ISO 9001. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
       ja: '即日チラシ印刷 100 枚から対応. A4/A5/A6 折込・二つ折り・デジタル印刷・オフセット印刷. 飲食店・開業・イベントのチラシ + 24 時間特急. 30 秒 AI 即時見積 + DHL 国際配送 2-4 日 + ISO 9001.',
     },
   },
@@ -366,7 +371,7 @@ const categorySeoData: Record<string, {
     descriptions: {
       'zh-hk': '食品包裝印刷 100 個起印, FDA 級安全 + 化妝品盒 4 種盒型 (天地蓋/磁吸/抽屜/書型). 香港本地 + 跨境美妝電商 + 日本市場. DHL 全球 2-4 天, 30 秒 AI 即時報價.',
       // 移除 "Asia factory direct" + 加 Free Shipping/Mockup + USA-friendly
-      en: 'Custom packaging boxes from 100 units. FDA food-safe + cosmetic-grade 4 styles (lift-off lid, magnetic, drawer, book-style). Free shipping over $99 + free 3D mockup. Made for US small businesses & DTC brands. DHL Express 2-4 day or FedEx Ground. 30-second AI quote.',
+      en: 'Custom packaging boxes from 100 units. FDA food-safe + cosmetic-grade 4 styles (lift-off lid, magnetic, drawer, book-style). Free shipping over $99 + free 3D mockup. Made for US small businesses & DTC brands. DHL Express 2-4 day or FedEx Ground. 30-second AI quote. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
       ja: 'パッケージ印刷 100 個から対応. FDA 対応 + 化粧品グレード 4 箱型 (天地蓋・マグネット・引き出し・ブック型). アジア自社工場 + DHL 国際配送 2-4 日.',
     },
   },
@@ -383,7 +388,7 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       'zh-hk': '海報印刷 1 張起打. A1/A2/A3 戶外防水 + 展覽背板 + 餐廳海報. ISO 9001 認證 + 30 秒 AI 即時報價 + DHL 全球 2-4 天配送 + 4 色柯式 + 7 天交付.',
-      en: 'Custom poster printing from 1 sheet. A1/A2/A3 outdoor waterproof + exhibition backdrops + restaurant posters. Free shipping over $99 to USA. DHL Express 2-4 day or FedEx Ground. 30-second AI quote + 4C offset + 7-day delivery.',
+      en: 'Custom poster printing from 1 sheet. A1/A2/A3 outdoor waterproof + exhibition backdrops + restaurant posters. Free shipping over $99 to USA. DHL Express 2-4 day or FedEx Ground. 30-second AI quote + 4C offset + 7-day delivery. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
       ja: 'ポスター印刷 A1 枚から対応. A1/A2/A3 屋外防水 + 展示背景 + 飲食店ポスター. ISO 9001 認証 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日 + 4 色印刷 + 7 日納期.',
     },
   },
@@ -402,7 +407,7 @@ const categorySeoData: Record<string, {
       // 2026-07-09 PM+UX+SEO 复盘: 移除"香港深圳廠直送"违反 §13.10 NAP 脱钩,
       // 改用"亞洲工廠"+(具体场景效益)提升 CTR + 满足 zh-hk 跨境合规
       'zh-hk': '紙袋印刷 100 個起印, FSC 認證環保牛皮紙袋 + 白卡紙袋 + 精品禮品袋. 服飾/婚慶/烘焙/珠寶 4 大行業適用, 即日打樣 + DHL 全球 2-4 天配送. ISO 9001 認證品質, 30 秒 AI 即時報價.',
-      en: 'Custom paper bags from 100 units. FSC-certified kraft, white card & eco-friendly gift bags. Free shipping over $99 to USA. Perfect for fashion / wedding / bakery / jewellery brands. DHL Express 2-4 day or FedEx Ground. 30-second AI quote, ISO 9001.',
+      en: 'Custom paper bags from 100 units. FSC-certified kraft, white card & eco-friendly gift bags. Free shipping over $99 to USA. Perfect for fashion / wedding / bakery / jewellery brands. DHL Express 2-4 day or FedEx Ground. 30-second AI quote, ISO 9001. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
       ja: '紙袋印刷 100 個から対応. FSC 認証クラフト・白カード・エコ・ギフト袋. アパレル・ウェディング・ベーカリー・宝飾ブランド向け. 無料サンプル+型設計 + DHL 国際配送 2-4 日. 30 秒 AI 即時見積.',
     },
   },
@@ -420,7 +425,7 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       'zh-hk': '年曆印刷 100 本起印. 座檯/掛牆/2027 + 燙金精裝 + 企業 LOGO. ISO 9001 認證 + 30 秒 AI 即時報價 + DHL 全球 2-4 天配送. Q4 旺季建議提前 60 天下單.',
-      en: 'Custom calendar printing 100 MOQ. Desk/wall/monthly + foil hardcover + corporate branding. Free shipping over $99 to USA. DHL Express 2-4 day. 30-second AI quote, ISO 9001. Order 60 days before Q4 peak.',
+      en: 'Custom calendar printing 100 MOQ. Desk/wall/monthly + foil hardcover + corporate branding. Free shipping over $99 to USA. DHL Express 2-4 day. 30-second AI quote, ISO 9001. Order 60 days before Q4 peak. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
       ja: 'カレンダー印刷 100 部から対応. デスク・壁掛け・月別 + 箔押し上製本 + 企業 LOGO. ISO 9001 認証 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日. 繁忙期の 60 日前までのご注文を推奨.',
     },
   },
@@ -437,7 +442,7 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       'zh-hk': '同人誌及日系ACG周邊印刷專家。A5/B5 同人誌 10 本起印、亞克力鑰匙扣 / 立牌 / 罐型襟章 / 明信片套裝 / 環保托特袋。Comiket 前 24 小時特急対応,深圳工廠 DHL Express 2-4 日直送日本。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。繁體中文客服,日本在地支援。',
-      en: 'Professional doujinshi & Japanese ACG merchandise printing. A5/B5 doujinshi from 10 MOQ, acrylic keychains/stands, can badges, postcard sets, eco tote bags. 24-hour rush before Comiket. Free shipping over $99 to USA + global. FSC paper, ISO 12647 color, ISO 9001 certified. English & Japanese support.',
+      en: 'Professional doujinshi & Japanese ACG merchandise printing. A5/B5 doujinshi from 10 MOQ, acrylic keychains/stands, can badges, postcard sets, eco tote bags. 24-hour rush before Comiket. Free shipping over $99 to USA + global. FSC paper, ISO 12647 color, ISO 9001 certified. English & Japanese support. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
       ja: '同人誌・推し活特化の印刷サービス。A5/B5 同人誌 10 部から対応、アクリルキーホルダー・スタンド・缶バッジ・ポストカード・エコトートバッグ。コミケ前 24 時間特急対応可能。深圳自社工場から DHL Express で 2-4 営業日でお届け。FSC 認証紙、ISO 12647 色彩管理、ISO 9001 取得。日本語サポート完備。',
     },
   },
@@ -454,7 +459,7 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       'zh-hk': '信封印刷 100 個起印. 牛皮/開窗/彩色/中式/西式 + 企業 LOGO 定制. ISO 9001 認證紙材 + 30 秒 AI 即時報價 + DHL 全球 2-4 天配送.',
-      en: 'Custom envelope printing 100 MOQ. Kraft / window / colored / DL / C5 + corporate branding. Free shipping over $99 to USA. ISO 9001 certified + 30-second AI quote + DHL 2-4 day global.',
+      en: 'Custom envelope printing 100 MOQ. Kraft / window / colored / DL / C5 + corporate branding. Free shipping over $99 to USA. ISO 9001 certified + 30-second AI quote + DHL 2-4 day global. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
       ja: '封筒印刷 100 個から対応. クラフト・窓付き・カラー・長 3・洋形 + 企業ロゴ. ISO 9001 認証 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日.',
     },
   },
@@ -471,7 +476,7 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       'zh-hk': '餐牌印刷 100 本起印. 防水 PVC / 紙質菜單 / 精裝 / 一次性, 餐廳茶餐廳酒吧適用. ISO 9001 認證 + 30 秒 AI 即時報價 + DHL 全球 2-4 天配送.',
-      en: 'Custom menu printing 100 MOQ. Waterproof PVC / paper / hardcover / disposable menus for restaurants, cafes, bars. Free shipping over $99 to USA. ISO 9001 + 30-second AI quote + DHL 2-4 day global.',
+      en: 'Custom menu printing 100 MOQ. Waterproof PVC / paper / hardcover / disposable menus for restaurants, cafes, bars. Free shipping over $99 to USA. ISO 9001 + 30-second AI quote + DHL 2-4 day global. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
       ja: 'メニュー印刷 100 部から対応. 防水 PVC・紙・ハードカバー・使い捨て, レストラン・カフェ・バー向け. ISO 9001 認証 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日.',
     },
   },
@@ -488,7 +493,7 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       'zh-hk': '利是封印刷 100 個起印. 燙金 / 局部 UV / 婚慶 / 賀年 / 企業 LOGO 定制. ISO 9001 認證 + 30 秒 AI 即時報價 + DHL 全球 2-4 天配送 + 4 色印刷.',
-      en: 'Custom red packet printing 100 MOQ. Foil / spot UV / wedding / CNY / corporate branding. Free shipping over $99 to USA. ISO 9001 + 30-second AI quote + DHL 2-4 day global + 4C offset.',
+      en: 'Custom red packet printing 100 MOQ. Foil / spot UV / wedding / CNY / corporate branding. Free shipping over $99 to USA. ISO 9001 + 30-second AI quote + DHL 2-4 day global + 4C offset. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
       ja: 'ポチ袋印刷 100 個から対応. 箔押し・スポット UV・婚礼・お正月・企業 LOGO. ISO 9001 認証 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日 + 4 色印刷.',
     },
   },
@@ -505,7 +510,7 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       'zh-hk': '易拉寶印刷 1 個起印. X 架/展覽/車身廣告 + 防水防 UV + 多種尺寸. ISO 9001 認證 + 30 秒 AI 即時報價 + DHL 全球 2-4 天配送.',
-      en: 'Custom banner printing from 1 piece. Roll-up / X-stand / vehicle wraps, waterproof & UV-resistant. Free shipping over $99 to USA. ISO 9001 + 30-second AI quote + DHL 2-4 day global.',
+      en: 'Custom banner printing from 1 piece. Roll-up / X-stand / vehicle wraps, waterproof & UV-resistant. Free shipping over $99 to USA. ISO 9001 + 30-second AI quote + DHL 2-4 day global. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
       ja: 'バナー印刷 1 枚から対応. ロールアップ・X スタンド・車両広告, 防水・耐 UV. ISO 9001 認証 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日.',
     },
   },
@@ -522,7 +527,7 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       'zh-hk': '畫冊印刷 50 本起印. 騎馬釘/膠裝/精裝/螺旋裝 + 兒童繪本 + 同人誌 + 企業畫冊. FSC 認證紙材 + ISO 9001 品質 + 30 秒 AI 即時報價 + DHL 全球 2-4 天配送.',
-      en: 'Custom book printing 50 MOQ. Saddle / perfect / hardcover / spiral + children books + doujinshi + company profiles. Free shipping over $99 to USA. FSC certified paper + ISO 9001 quality + 30-second AI quote + DHL 2-4 day global.',
+      en: 'Custom book printing 50 MOQ. Saddle / perfect / hardcover / spiral + children books + doujinshi + company profiles. Free shipping over $99 to USA. FSC certified paper + ISO 9001 quality + 30-second AI quote + DHL 2-4 day global. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
       ja: '冊子印刷 50 部から対応. 中綴じ・無線綴じ・上製本・スパイラル + 絵本 + 同人誌 + 会社案内. FSC 認証紙 + ISO 9001 品質 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日.',
     },
   },
@@ -539,7 +544,7 @@ const categorySeoData: Record<string, {
     },
     descriptions: {
       'zh-hk': '校園教育印刷 100 本起印. 證書/作業簿/教材/學業簿 + 學校批量定制折扣. FSC 認證紙材 + ISO 9001 品質 + 30 秒 AI 即時報價 + DHL 全球 2-4 天配送.',
-      en: 'Custom education printing 100 MOQ. Certificates / workbooks / textbooks / student handbooks + school bulk pricing. Free shipping over $99 to USA. FSC certified + ISO 9001 + 30-second AI quote + DHL 2-4 day global.',
+      en: 'Custom education printing 100 MOQ. Certificates / workbooks / textbooks / student handbooks + school bulk pricing. Free shipping over $99 to USA. FSC certified + ISO 9001 + 30-second AI quote + DHL 2-4 day global. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
       ja: '教育印刷 100 部から対応. 証明書・ワークブック・教科書・学生手帳 + 学校一括割引. FSC 認証 + ISO 9001 品質 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日.',
     },
   },
