@@ -39,7 +39,10 @@ export type BlogCategoryKey =
   | 'red-packets'
   | 'cross-border'
   | 'education'
-  | 'creator-ip';
+  | 'creator-ip'
+  | 'banners'
+  | 'wedding-envelope'
+  | 'japan-doujin';
 
 export type BlogPostSource = 'buying-guide' | 'legacy';
 
@@ -926,7 +929,62 @@ const lpIpCharacterSticker: BlogPostMeta = {
   },
 };
 
-// Unified list (28 articles)
+// 2026-07-10 v4 daily-content-evolve P2 unlock (matrix P0/P1 100% 饱和后 SKILL.md §3.8 P2 fallback)
+// Q-P2-01 (banners × 跨境電商)
+const lpTradeShowBanner: BlogPostMeta = {
+  slug: 'trade-show-banner-printing-guide',
+  categoryKey: 'banners',
+  source: 'legacy',
+  date: '2026-07-10',
+  title: {
+    'zh-hk': '香港貿易展易拉寶印刷指南 · 跨境電商品牌展會佈局 | 智印雲 ZprintPro',
+    en: 'Trade Show Banner Printing Guide 2026: Retractable, Backdrop & USA Shipping | ZprintPro',
+    ja: '展示会バナー印刷ガイド2026：ロールアップ・バックドロップ・短期納品 | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '跨境電商、Amazon 賣家、Etsy 創作者、Comic-Con 同人攤位、品牌 pop-up 主理人必睇。一個高質素易拉寶決定展位 3 秒第一印象。智印雲提供 100-2,000 套 Roll-up 易拉寶 + X 型展架 + 背板舞台全套定制,3-7 個工作天交付,順豐本地港九新界 + DHL 全球配送。',
+    en: 'US small business owners, Etsy / Shopify brands, Comic-Con / Anime Expo exhibitors — a premium retractable or backdrop banner decides booth traffic and brand recall. Free design, 100 MOQ, 5-7 business day production, free shipping over US$99, DHL Express 2-4 day delivery to US ZIP codes.',
+    ja: '米国中小企業・Etsy/Shopify ブランド・Comic-Con / Anime Expo 出展者向け。高品質ロールアップバナー / バックドロップがブース動員とブランド想起を決定。無料デザイン・100 MOQ・5-7 営業日生産・US$99 以上無料配送・DHL Express 2-4 日米国配送。',
+  },
+};
+
+// Q-P2-02 (envelopes × 婚慶)
+const lpWeddingEnvelope: BlogPostMeta = {
+  slug: 'wedding-invitation-envelope-printing-guide',
+  categoryKey: 'wedding-envelope',
+  source: 'legacy',
+  date: '2026-07-10',
+  title: {
+    'zh-hk': '香港婚禮邀請信封印刷指南 · 2026 龍年婚嫁旺季必備 | 智印雲 ZprintPro',
+    en: 'Wedding Invitation Envelope Printing Guide 2026: Pearl, Foil-Lined & Custom Sizes | ZprintPro',
+    ja: 'ウエディング招待状封筒印刷ガイド2026：パール・箔押し内側・カスタムサイズ | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '準新人、婚禮統籌師、酒店宴會場地必睇。一個精緻嘅婚禮邀請信封決定賓客對婚禮嘅第一印象。智印雲為香港婚慶市場提供珍珠白、象牙白、燙金內襯、玫瑰金閃粉等 6 大材質,DL / A7 / C6 / 自訂尺寸全套定制,100-3,000 個小批量,5-10 個工作天交付,順豐本地港九新界免運費。',
+    en: 'Engaged couples, wedding planners, stationery designers — premium pearl, foil-lined, custom-sized wedding invitation envelopes set the first impression. Free design, 100 MOQ, 5-10 business day production, DHL Express 2-4 day global shipping.',
+    ja: 'ご婚約カップル・ウェディングプランナー・ステーショナリーデザイナー向け。上質パール・箔押し内側・カスタムサイズ封筒が第一印象を決定。無料デザイン・100 MOQ・5-10 営業日生産・DHL Express 国際配送対応。',
+  },
+};
+
+// Q-P2-03 (japan-doujin × 文創IP)
+const lpDoujinCircle: BlogPostMeta = {
+  slug: 'doujin-circle-printing-guide',
+  categoryKey: 'japan-doujin',
+  source: 'legacy',
+  date: '2026-07-10',
+  title: {
+    'zh-hk': '同人誌 / 同人周邊印刷指南 · 香港創作者小批量定制 | 智印雲 ZprintPro',
+    en: 'Doujin Circle Printing Guide: Small-Batch Booklets, Fast Turnaround & Premium Quality for Indie Creators | ZprintPro',
+    ja: '同人誌印刷ガイド：小ロット・少部数・高品質対応・短納期 | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '插畫師、漫畫家、Comic-Con 同人攤位、VTuber 周邊設計師、文創品牌必睇。一本高質素同人誌決定品牌辨識度與粉絲忠誠度。智印雲為香港同人市場提供 30 本起印 + 5 大裝訂 + 燙金封面 + 5-7 個工作天交付,DHL 全球 2-4 天配送至 Comiket、Anime Expo 等國際活動會場。',
+    en: 'Indie comic creators, zine makers, Comic-Con Artist Alley exhibitors, indie game studios — premium small-batch doujin booklet printing with 30-copy MOQ, 5-7 business day production, free design mockup, and DHL Express global shipping.',
+    ja: '同人作家・zine 作家・Comic-Con Artist Alley 出展者・インディーゲームスタジオ向け。プレミアム同人誌印刷 30 部 MOQ・5-7 営業日生産・無料デザインモックアップ・DHL Express 国際配送対応。',
+  },
+};
+
+// Unified list (31 articles)
 // =============================================================================
 
 export const blogPosts: BlogPostMeta[] = [
@@ -994,6 +1052,10 @@ export const blogPosts: BlogPostMeta[] = [
   lpProductLabel,
   lpGraduationYearbook,
   lpIpCharacterSticker,
+  // 2026-07-10 v4 daily-content-evolve P2 unlock (3 P2 blogs)
+  lpTradeShowBanner,
+  lpWeddingEnvelope,
+  lpDoujinCircle,
 ];
 
 // =============================================================================

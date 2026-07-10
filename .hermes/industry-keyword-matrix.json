@@ -447,6 +447,78 @@
       "queued_at": "2026-07-09",
       "priority_boost": 1,
       "note": "2026-07-09 daily cron NEW Q entry — 文創IP Tier A 行業首次覆蓋 (cover 3/3 全字母 純文字 P1 unlock)"
+    },
+    {
+      "id": "Q-P2-01",
+      "category": "banners",
+      "sku": "roll-up-banners",
+      "industry": "跨境電商",
+      "tier": "A",
+      "priority": "P2",
+      "slug": "trade-show-banner-printing-guide",
+      "title_zh": "香港貿易展易拉寶印刷指南 · 跨境電商品牌展會佈局 | 智印雲 ZprintPro",
+      "title_en": "Trade Show Banner Printing Guide 2026: Retractable, Backdrop, USA Shipping & Fast Turnaround | ZprintPro",
+      "title_ja": "展示会バナー印刷ガイド2026：ロールアップ・バックドロップ・短期納品 | ZprintPro",
+      "valid_internal_links": [
+        "/category/banners/",
+        "/product/roll-up-banners/",
+        "/product/outdoor-vinyl-banners/",
+        "/product/mesh-banners/",
+        "/quote/"
+      ],
+      "expected_words_zh": 850,
+      "expected_faqs": 4,
+      "queued_at": "2026-07-10",
+      "priority_boost": 1,
+      "note": "2026-07-10 daily cron P2 unlock 第 1 篇 — banners × 跨境電商 (en US 集中 Tier 1: free shipping $99+ / fast turnaround)"
+    },
+    {
+      "id": "Q-P2-02",
+      "category": "envelopes",
+      "sku": "pearl-envelopes",
+      "industry": "婚慶",
+      "tier": "A",
+      "priority": "P2",
+      "slug": "wedding-invitation-envelope-printing-guide",
+      "title_zh": "香港婚禮邀請信封印刷指南 · 2026 龍年婚嫁旺季必備 | 智印雲 ZprintPro",
+      "title_en": "Wedding Invitation Envelope Printing Guide 2026: Pearl, Foil-Lined & Custom Sizes | ZprintPro",
+      "title_ja": "ウエディング招待状封筒印刷ガイド2026：パール・箔押し内側・カスタムサイズ | ZprintPro",
+      "valid_internal_links": [
+        "/category/envelopes/",
+        "/product/pearl-envelopes/",
+        "/product/colored-envelopes/",
+        "/product/business-envelopes/",
+        "/quote/"
+      ],
+      "expected_words_zh": 800,
+      "expected_faqs": 4,
+      "queued_at": "2026-07-10",
+      "priority_boost": 1,
+      "note": "2026-07-10 daily cron P2 unlock 第 2 篇 — envelopes × 婚慶 (zh-hk 香港婚慶旺季 + 繁中本地化)"
+    },
+    {
+      "id": "Q-P2-03",
+      "category": "japan-doujin",
+      "sku": "doujin-booklets",
+      "industry": "文創IP",
+      "tier": "A",
+      "priority": "P2",
+      "slug": "doujin-circle-printing-guide",
+      "title_zh": "同人誌 / 同人周邊印刷指南 · 香港創作者小批量定制方案 | 智印雲 ZprintPro",
+      "title_en": "Doujin Circle Printing Guide: Small-Batch Booklets, Fast Turnaround & Premium Quality for Indie Creators | ZprintPro",
+      "title_ja": "同人誌印刷ガイド：小ロット・少部数・高品質対応・短納期 | ZprintPro",
+      "valid_internal_links": [
+        "/category/japan-doujin/",
+        "/product/doujin-booklets/",
+        "/product/doujin-badges/",
+        "/product/doujin-postcards/",
+        "/quote/"
+      ],
+      "expected_words_zh": 850,
+      "expected_faqs": 4,
+      "queued_at": "2026-07-10",
+      "priority_boost": 2,
+      "note": "2026-07-10 daily cron P2 unlock 第 3 篇 — japan-doujin × 文創IP (ja market 集中 + 小ロット)"
     }
   ],
   "covered": [
@@ -838,6 +910,81 @@
       "note": "NEW Q entry 2026-07-09 拓點 — 文創IP Tier A 行業首次覆蓋 (comics / VTuber / 動漫周邊 / 個人插畫 / 品牌吉祥物 / 同人誌)",
       "cf_build_run": "pending-cf-build-2026-07-09",
       "deployed_commit": "pending-commit-2026-07-09"
+    },
+    {
+      "id": "Q-P2-01",
+      "slug": "trade-show-banner-printing-guide",
+      "category": "banners",
+      "sku": "roll-up-banners",
+      "industry": "跨境電商",
+      "tier": "A",
+      "priority": "P2",
+      "covered_at": "2026-07-10",
+      "deployed_at": "TBD-cf-build-2026-07-10",
+      "deploy_method": "git push origin_ssh main → CF Pages auto-deploy (v4 daily 3-blog pack P2 unlock 第 1 篇)",
+      "verify_status": "pending-7-step",
+      "locale_chars": {
+        "zh-hk": 0,
+        "en": 0,
+        "ja": 0
+      },
+      "nap_decoupled": true,
+      "internal_links_count": 4,
+      "no_images": true,
+      "verify_steps": "pending-7-step",
+      "note": "2026-07-10 daily cron P2 unlock 第 1 篇 — banners × 跨境電商 (en US 集中 Tier 1 sharp hooks)",
+      "cf_build_run": "TBD-cf-build-2026-07-10",
+      "deployed_commit": "TBD-commit-2026-07-10"
+    },
+    {
+      "id": "Q-P2-02",
+      "slug": "wedding-invitation-envelope-printing-guide",
+      "category": "envelopes",
+      "sku": "pearl-envelopes",
+      "industry": "婚慶",
+      "tier": "A",
+      "priority": "P2",
+      "covered_at": "2026-07-10",
+      "deployed_at": "TBD-cf-build-2026-07-10",
+      "deploy_method": "git push origin_ssh main → CF Pages auto-deploy (v4 daily 3-blog pack P2 unlock 第 2 篇)",
+      "verify_status": "pending-7-step",
+      "locale_chars": {
+        "zh-hk": 0,
+        "en": 0,
+        "ja": 0
+      },
+      "nap_decoupled": true,
+      "internal_links_count": 4,
+      "no_images": true,
+      "verify_steps": "pending-7-step",
+      "note": "2026-07-10 daily cron P2 unlock 第 2 篇 — envelopes × 婚慶 (zh-hk 龍年婚嫁旺季 + 繁中本地化)",
+      "cf_build_run": "TBD-cf-build-2026-07-10",
+      "deployed_commit": "TBD-commit-2026-07-10"
+    },
+    {
+      "id": "Q-P2-03",
+      "slug": "doujin-circle-printing-guide",
+      "category": "japan-doujin",
+      "sku": "doujin-booklets",
+      "industry": "文創IP",
+      "tier": "A",
+      "priority": "P2",
+      "covered_at": "2026-07-10",
+      "deployed_at": "TBD-cf-build-2026-07-10",
+      "deploy_method": "git push origin_ssh main → CF Pages auto-deploy (v4 daily 3-blog pack P2 unlock 第 3 篇)",
+      "verify_status": "pending-7-step",
+      "locale_chars": {
+        "zh-hk": 0,
+        "en": 0,
+        "ja": 0
+      },
+      "nap_decoupled": true,
+      "internal_links_count": 4,
+      "no_images": true,
+      "verify_steps": "pending-7-step",
+      "note": "2026-07-10 daily cron P2 unlock 第 3 篇 — japan-doujin × 文創IP (ja market 集中 + 小ロット/少部数/短納期)",
+      "cf_build_run": "TBD-cf-build-2026-07-10",
+      "deployed_commit": "TBD-commit-2026-07-10"
     }
   ],
   "skipped": {
