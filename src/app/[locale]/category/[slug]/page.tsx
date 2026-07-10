@@ -357,10 +357,13 @@ export default function CategoryPage({
             {/* 右侧产品列表 */}
             <div className="flex-1">
               {/* 排序栏 */}
-              <div className="flex items-center justify-between mb-6 bg-white rounded-lg border border-gray-200 px-4 py-3">
-                <span className="text-gray-500 text-sm">
-                  {t.productsCount}
-                </span>
+              <div className="flex items-center justify-between mb-6 gap-3">
+                <div className="bg-[#2873F5] text-white px-4 py-3 rounded-t-lg flex items-center gap-2 flex-1 sm:flex-none">
+                  <div className="w-1 h-5 bg-white/60 rounded-full" />
+                  <span className="font-semibold text-base whitespace-nowrap">
+                    {t.productsCount}
+                  </span>
+                </div>
                 <select
                   className="border rounded-lg px-3 py-1.5 text-sm focus:ring-2 focus:ring-[#2873F5] focus:border-transparent bg-white"
                   defaultValue="popularity"
