@@ -193,9 +193,9 @@ export function HowItWorks({ locale }: HowItWorksProps) {
           ))}
         </ol>
 
-        {/* Bottom trust CTA bar */}
-        <div className="mt-6 md:mt-8 text-center">
-          <p className="text-xs md:text-sm text-slate-500 mb-2">
+        {/* Bottom trust + CTA bar — 单行蓝色色条 (2026-07-11 PM+UX 复盘: 紧凑一行, 高度同 Hero CTA, 放在产品分类上方) */}
+        <div className="mt-6 md:mt-8 bg-[#2873F5] rounded-xl py-3 px-5 md:px-6 flex flex-col sm:flex-row items-center justify-between gap-2 shadow-md">
+          <p className="text-white text-xs sm:text-sm font-medium leading-snug text-center sm:text-left">
             {locale === 'zh-hk'
               ? '15+ 年印刷經驗 · ISO 9001 認證 · 5000+ 全球客戶 · 100+ 國家發貨'
               : locale === 'ja'
@@ -204,7 +204,7 @@ export function HowItWorks({ locale }: HowItWorksProps) {
           </p>
           <a
             href={`/${locale}/quote/`}
-            className="inline-flex items-center gap-2 bg-[#2873F5] hover:bg-[#1E5BD6] text-white font-bold py-2.5 px-6 rounded-xl transition-colors shadow-md text-sm"
+            className="inline-flex items-center gap-1.5 text-white text-sm font-bold whitespace-nowrap hover:underline"
           >
             {locale === 'zh-hk' ? '免費獲取報價' : locale === 'ja' ? '無料見積もり' : 'Get Free Quote'}
             <span aria-hidden="true">→</span>
