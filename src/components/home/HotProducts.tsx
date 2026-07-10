@@ -139,20 +139,7 @@ export function HotProducts({ locale }: HotProductsProps) {
   return (
     <section className="pt-4 pb-6 bg-gray-50">
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-3 mb-5">
-          <div className="relative left-[-5px]">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#333333]">{t.title}</h2>
-            <p className="text-gray-500 mt-1">{t.subtitle}</p>
-          </div>
-          <Link
-            href={`${localePrefix}/category/business-cards/`}
-            className="relative right-[-5px] inline-flex items-center gap-1 text-[#2873F5] hover:text-[#1E5FD1] font-medium transition-colors text-sm"
-          >
-            {t.viewAll}
-            <ArrowRight className="w-4 h-4" />
-          </Link>
-        </div>
+        {/* Section Header 已移除 (2026-07-11 PM+UX 复盘: header 行无实际作用, 占用版面, 影响直接观看 SKU 产品图) */}
 
         {/* Two Column Layout */}
         <div className="flex gap-6 items-start">

@@ -321,15 +321,20 @@ export function CategorySharpHooks({
   return (
     <section className="bg-gradient-to-b from-white via-blue-50/20 to-gray-50 border-b border-gray-200">
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
-        {/* Section header — compact, no H2 to keep this as visual anchor not article section */}
-        <div className="mb-4 sm:mb-5">
-          <p className="text-xs sm:text-sm font-semibold text-[#2873F5] uppercase tracking-wider mb-1">
-            {locale === 'zh-hk' ? '快速開始' : locale === 'en' ? 'Quick Start' : 'クイックスタート'}
-          </p>
-          <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-1">
-            {t.title}
-          </h3>
-          <p className="text-xs sm:text-sm text-gray-500">{t.subtitle}</p>
+        {/* Section header — h3 + view-all 同行 (2026-07-11 PM+UX 复盘: 删"快速开始"小字, view-all 移至 h3 行最右) */}
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2 mb-4 sm:mb-5">
+          <div>
+            <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-1">
+              {t.title}
+            </h3>
+            <p className="text-xs sm:text-sm text-gray-500">{t.subtitle}</p>
+          </div>
+          <a
+            href="#industries"
+            className="inline-flex items-center text-sm font-medium text-[#2873F5] hover:text-[#1E5FD1] transition-colors whitespace-nowrap sm:pb-0.5"
+          >
+            {t.moreLink}
+          </a>
         </div>
 
         {/* 3-column sharp hook cards */}
@@ -369,15 +374,7 @@ export function CategorySharpHooks({
           })}
         </div>
 
-        {/* "View more" link — cross-link to CategoryIndustries detail section below */}
-        <div className="mt-4 text-center">
-          <a
-            href="#industries"
-            className="inline-flex items-center text-sm font-medium text-[#2873F5] hover:text-[#1E5FD1] transition-colors"
-          >
-            {t.moreLink}
-          </a>
-        </div>
+        {/* "View more" link 已移至 Section header 行最右 (2026-07-11 PM+UX 复盘) */}
       </div>
     </section>
   );
