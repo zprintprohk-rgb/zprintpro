@@ -466,6 +466,7 @@ export function generateCategoryItemListJsonLd(
   // 2026-07-11 修复 GSC 「应指定 offers、review 或 aggregateRating」错误
   // 原因: nested @type:Product 缺少 offers 字段, Google 拒绝展示富媒体搜索结果
   // 修复: 用 product.basePrice + locale 对应货币构造 offers, 消除 GSC 17 items 报错
+  // 2026-07-11 追加修复: 补全 image(严重) + description + https://availability
   const currency = locale === 'zh-hk' ? 'HKD' : locale === 'ja' ? 'JPY' : 'USD';
   return {
     '@context': 'https://schema.org',
@@ -478,7 +479,18 @@ export function generateCategoryItemListJsonLd(
           : locale === 'en'
           ? product.nameEn
           : product.nameJa;
+      const localizedDesc =
+        locale === 'zh-hk'
+          ? product.description
+          : locale === 'en'
+          ? product.descriptionEn
+          : product.descriptionJa;
       const productUrl = `${SITE_URL}/${locale}/product/${product.slug}/`;
+      // 图片 fallback: locale专属 → 通用 → placeholder
+      const localeImg = product.imagesByLocale?.[locale]?.[0];
+      const generalImg = product.images?.[0];
+      const imageUrl = localeImg || generalImg || '/images/placeholder.jpg';
+      const fullImageUrl = imageUrl.startsWith('http') ? imageUrl : `${SITE_URL}${imageUrl}`;
       return {
         '@type': 'ListItem',
         position: index + 1,
@@ -488,6 +500,8 @@ export function generateCategoryItemListJsonLd(
           '@type': 'Product',
           name: localizedName,
           url: productUrl,
+          image: fullImageUrl,
+          description: localizedDesc.slice(0, 500),
           category: categoryName,
           offers: {
             '@type': 'Offer',
