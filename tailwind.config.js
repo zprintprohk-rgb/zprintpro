@@ -16,11 +16,13 @@ module.exports = {
       },
     },
     extend: {
-      // 2026-06-14 Phase B P0-4: 多语言字体集（tailwind font-ja / font-zh / font-sans）
+      // 多语言字体集: Inter(英文) + 系统字体(日文/中文)
+      // 2026-07-11 性能优化: 移除 Noto Sans JP/SC 的 next/font 加载,
+      // 改用系统字体节省 567KB render-blocking CSS.
       fontFamily: {
         sans: ['var(--font-inter)', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
-        ja: ['var(--font-noto-jp)', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', 'Noto Sans JP', 'sans-serif'],
-        zh: ['var(--font-noto-sc)', 'PingFang HK', 'Microsoft JhengHei', 'Hiragino Sans GB', 'Noto Sans SC', 'sans-serif'],
+        ja: ['Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', 'Noto Sans JP', 'sans-serif'],
+        zh: ['PingFang HK', 'Microsoft JhengHei', 'Hiragino Sans GB', 'Noto Sans SC', 'Noto Sans HK', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

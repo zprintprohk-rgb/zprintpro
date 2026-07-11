@@ -36,17 +36,13 @@ body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang HK', 'Microsoft JhengHei', 'Hiragino Sans GB', 'Noto Sans SC', sans-serif;
 }
 
-/* 2026-06-14 Phase B P0-4: 按 html data-locale 切字体优先级
-   - ja → 优先 Noto Sans JP（含假名 + 漢字），fallback 到日文系统字体
-   - zh-hk → 优先 Noto Sans SC（中文），fallback 到 PingFang HK / 微軟正黑體
-   - 默认 → Inter
-   注：next/font 把 Noto Sans JP 暴露为 .__variable_<name> CSS 类。
-   用 data-locale + 通用 font-family override 避免每个组件都要手动加 className。 */
+/* 按 html data-locale 切字体 — 系统字体优先（不再加载 web font）
+   2026-07-11 性能优化: 移除 Noto Sans JP/SC 的 next/font，节省 567KB CSS */
 html[data-locale='ja'] body {
-  font-family: var(--font-noto-jp), 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', 'Noto Sans JP', sans-serif;
+  font-family: 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Yu Gothic', 'Meiryo', 'Noto Sans JP', sans-serif;
 }
 html[data-locale='zh-hk'] body {
-  font-family: var(--font-noto-sc), 'PingFang HK', 'Microsoft JhengHei', 'Hiragino Sans GB', 'Noto Sans SC', sans-serif;
+  font-family: 'PingFang HK', 'Microsoft JhengHei', 'Hiragino Sans GB', 'Noto Sans SC', 'Noto Sans HK', sans-serif;
 }
 
 a {
