@@ -463,6 +463,10 @@ export function generateCategoryItemListJsonLd(
   productList: Product[],
   locale: Locale
 ): SchemaOrgData {
+  // 2026-07-11 修复 GSC 「应指定 offers、review 或 aggregateRating」错误
+  // 原因: nested @type:Product 缺少 offers 字段, Google 拒绝展示富媒体搜索结果
+  // 修复: 用 product.basePrice + locale 对应货币构造 offers, 消除 GSC 17 items 报错
+  const currency = locale === 'zh-hk' ? 'HKD' : locale === 'ja' ? 'JPY' : 'USD';
   return {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
@@ -484,10 +488,15 @@ export function generateCategoryItemListJsonLd(
           '@type': 'Product',
           name: localizedName,
           url: productUrl,
-          // 类目页用作 Product group 时只暴露最关键字段, 避免重复
           category: categoryName,
-          // Product availability hint: 让 Google 知道这是按需印刷而非现货
-          availability: 'https://schema.org/MadeToOrder',
+          offers: {
+            '@type': 'Offer',
+            price: product.basePrice,
+            priceCurrency: currency,
+            priceValidUntil: '2027-12-31',
+            availability: 'https://schema.org/MadeToOrder',
+            url: productUrl,
+          },
         },
       };
     }),
