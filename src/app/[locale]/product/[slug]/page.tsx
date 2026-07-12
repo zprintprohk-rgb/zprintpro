@@ -32,7 +32,9 @@ import {
 } from '@/lib/seo/schema-extensions';
 import { JsonLd } from '@/components/JsonLd';
 import { ProductGallery } from '@/components/ProductGallery';
-import { ProductQuoteSection } from '@/components/quote/ProductQuoteSection';
+import { ProductQuoteProvider } from '@/components/quote/ProductQuoteProvider';
+import { QuantityTierInteractive } from '@/components/quote/QuantityTierInteractive';
+import { QuoteCalculator } from '@/components/quote/QuoteCalculator';
 import { ProductTabs } from '@/components/ProductTabs';
 import { RelatedProducts } from '@/components/RelatedProducts';
 import { ProductFaq } from '@/components/ProductFaq';
@@ -325,8 +327,12 @@ export default function ProductPage({
         
         {/* 产品详情区 */}
         <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          {/* 2026-07-13 v3: ProductQuoteProvider 包住整个 grid, 让左 column 备注栏下面的
+              QuantityTierInteractive 跟右 column QuoteCalculator 通过 context 共享 selectedQuantity
+              实现点色块 → 同步右栏 quantity; 点右栏 quantity → 同步色块高亮 */}
+          <ProductQuoteProvider product={product}>
           <div className="grid grid-cols-1 lg:grid-cols-[62%_38%] gap-8 justify-between">
-            {/* 左侧：产品图片 + 上传 + 备注 */}
+            {/* 左侧：产品图片 + 上传 + 备注 + 备注栏下面的批量折扣色块 */}
             <div>
               <ProductGallery
                 images={getProductImages(product, locale)}
@@ -363,6 +369,13 @@ export default function ProductPage({
                   />
                 </div>
               </details>
+
+              {/* 2026-07-13 v3: 批量折扣色块放在备注栏下面 (跟 备注栏 + 上傳 同宽度),
+                  跟右栏 QuoteCalculator 通过 ProductQuoteProvider context 联动
+                  高度自适应内容 (5 档 = 约 200px, 3 档 = 约 180px) */}
+              <div className="mt-6">
+                <QuantityTierInteractive locale={locale} />
+              </div>
             </div>
             
             {/* 右侧：产品信息和报价计算器 */}
@@ -417,18 +430,15 @@ export default function ProductPage({
                 </div>
               </div>
 
-              {/* 报价 + 批量折扣 联动区块 (2026-07-13 v2 重构)
-                  左: QuantityTierInteractive (批量折扣色块) 高度撑满
-                  右: QuoteCalculator (报价 + 订购) 高度撑满
-                  两者 items-stretch 对齐底边
-                  点色块 5 档卡片 -> 同步右栏 quantity -> 重算报价 */}
+              {/* 报价计算器 (2026-07-13 v3: 单独渲染, 跟左 column 备注栏下面的
+                  QuantityTierInteractive 通过 ProductQuoteProvider 共享 selectedQuantity) */}
               <div className="mb-5">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">{t.specifications}</h3>
-                <ProductQuoteSection product={product} locale={locale} />
+                <QuoteCalculator product={product} locale={locale} />
               </div>
 
               {/* SKU & 最低订购量 (2026-06-07: 靠右对齐 + 减右 padding 2/3)
-                  2026-07-13: QuantityTierTable 已从右栏移除, 集成到 ProductQuoteSection 左半边 */}
+                  2026-07-13 v3: QuantityTier 已从右栏移除, 放在左 column 备注栏下面 */}
               <div className="flex items-center justify-end gap-3 text-xs text-gray-400 mb-4 pr-2">
                 <span>{t.sku}: <span className="font-mono text-gray-500">{product.sku_code}</span></span>
                 <span className="w-px h-3 bg-gray-300"></span>
@@ -436,6 +446,7 @@ export default function ProductPage({
               </div>
             </div>
           </div>
+          </ProductQuoteProvider>
           
           {/* 产品详情Tabs — 上方加 trust badges (2026-06-07) */}
           <div className="mt-12">

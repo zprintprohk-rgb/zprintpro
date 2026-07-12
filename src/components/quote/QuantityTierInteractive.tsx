@@ -6,10 +6,9 @@
  *       (复用 basePrice + quantity.discount, 跟 QuoteCalculator useMemo 公式一致).
  *
  * Props:
- *   - product: Product
  *   - locale: Locale
- *   - currentQuantity: 当前选中的 quantity (受父控)
- *   - onSelect: (quantity: number) => void — 点卡片时触发
+ *
+ * 数据从 useProductQuote() context 取 (2026-07-13 v3: 通过 ProductQuoteProvider 共享 quantity state)
  *
  * 设计:
  *   - 高度: h-full flex flex-col, 由父级 items-stretch 拉平
@@ -21,14 +20,11 @@
 'use client';
 
 import { useMemo } from 'react';
-import { Product } from '@/data/products';
 import { Locale } from '@/lib/seo';
+import { useProductQuote } from './ProductQuoteProvider';
 
 interface QuantityTierInteractiveProps {
-  product: Product;
   locale: Locale;
-  currentQuantity: number;
-  onSelect: (quantity: number) => void;
 }
 
 const CURRENCY: Record<Locale, { symbol: string; suffix: string; pcLabel: string; saveLabel: string }> = {
@@ -46,12 +42,8 @@ function tierGridCols(n: number): string {
   return 'grid-cols-2 sm:grid-cols-3 lg:grid-cols-5';
 }
 
-export function QuantityTierInteractive({
-  product,
-  locale,
-  currentQuantity,
-  onSelect,
-}: QuantityTierInteractiveProps) {
+export function QuantityTierInteractive({ locale }: QuantityTierInteractiveProps) {
+  const { product, selectedQuantity, setSelectedQuantity } = useProductQuote();
   const quantities = product.variables?.quantities;
 
   // Guard: 无 quantity 数据时不渲染
@@ -129,13 +121,13 @@ export function QuantityTierInteractive({
           const isFirst = idx === 0;
           const isLast = idx === displayTiers.length - 1 && maxDiscount > 0;
           const isBestValue = isLast && savePct >= 20;
-          const isSelected = currentQuantity === tier.value;
+          const isSelected = selectedQuantity === tier.value;
 
           return (
             <li key={tier.value} className="flex">
               <button
                 type="button"
-                onClick={() => onSelect(tier.value)}
+                onClick={() => setSelectedQuantity(tier.value)}
                 aria-pressed={isSelected}
                 className={`relative w-full bg-white rounded-xl border p-2.5 md:p-3 flex flex-col items-center justify-center text-center transition-all hover:shadow-md hover:-translate-y-0.5 active:translate-y-0 cursor-pointer ${
                   isSelected

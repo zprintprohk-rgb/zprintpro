@@ -19,19 +19,11 @@ import { translateVariableLabel } from '@/lib/variable-i18n';
 import { Check, MessageCircle, ShoppingCart, Zap, ChevronRight } from 'lucide-react';
 import { trackQuoteStart, trackQuoteSubmit, trackContactFormSubmit, trackCalculatorInteraction, trackWhatsappClick } from '@/lib/analytics';
 import { generateWhatsAppLink } from '@/lib/whatsapp';
+import { useProductQuote } from './ProductQuoteProvider';
 
 interface QuoteCalculatorProps {
   product: Product;
   locale: Locale;
-  /**
-   * 2026-07-13: 外部 controlled quantity.
-   * - 传了: 内部 config.quantity 受外部控, 外部变化时 useEffect 同步
-   * - 不传: 维持原 self-contained 行为, 内部 useState 自己管
-   *
-   * 配套 onQuantityChange 在用户点内部 quantity 按钮时回调, 让父组件知道当前 quantity.
-   */
-  externalQuantity?: number;
-  onQuantityChange?: (quantity: number) => void;
 }
 
 interface QuoteConfig {
@@ -41,7 +33,10 @@ interface QuoteConfig {
   quantity: number;
 }
 
-export function QuoteCalculator({ product, locale, externalQuantity, onQuantityChange }: QuoteCalculatorProps) {
+export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
+  // 2026-07-13 v3: 从 ProductQuoteProvider context 读 quantity (联动源)
+  // context 提供了 selectedQuantity + setSelectedQuantity
+  const { selectedQuantity, setSelectedQuantity } = useProductQuote();
   const [config, setConfig] = useState<QuoteConfig>({
     size: product.variables?.sizes?.[0]?.value || 'standard',
     material: product.variables?.materials?.[0]?.value || 'standard',
@@ -50,14 +45,11 @@ export function QuoteCalculator({ product, locale, externalQuantity, onQuantityC
   });
   const [activeTab, setActiveTab] = useState<'order' | 'quote'>('quote');
 
-  // 2026-07-13: 外部 controlled quantity 同步
-  // 当 externalQuantity 变化时, 同步到内部 config.quantity
-  // 仅在 externalQuantity 真正变化时 sync, 避免无限循环
+  // 2026-07-13 v3: context quantity 同步到内部 config.quantity
+  // 当 QuantityTierInteractive 点卡片改 context 时, 同步到 config
   useEffect(() => {
-    if (externalQuantity !== undefined && externalQuantity !== config.quantity) {
-      setConfig((prev) => ({ ...prev, quantity: externalQuantity }));
-    }
-  }, [externalQuantity]); // eslint-disable-line react-hooks/exhaustive-deps
+    setConfig((prev) => (prev.quantity === selectedQuantity ? prev : { ...prev, quantity: selectedQuantity }));
+  }, [selectedQuantity]);
 
   // 翻译
   const translations = {
@@ -209,9 +201,9 @@ export function QuoteCalculator({ product, locale, externalQuantity, onQuantityC
     setConfig(prev => ({ ...prev, [key]: value }));
     // 数据飞轮：跟踪用户与计算器交互
     trackCalculatorInteraction(key, String(value));
-    // 2026-07-13: quantity 变更时通知父组件 (用于左栏批量折扣卡片高亮同步)
-    if (key === 'quantity' && onQuantityChange) {
-      onQuantityChange(value as number);
+    // 2026-07-13 v3: quantity 变更时同步到 context (让 QuantityTierInteractive 高亮)
+    if (key === 'quantity') {
+      setSelectedQuantity(value as number);
     }
   };
 
