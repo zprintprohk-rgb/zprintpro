@@ -13,6 +13,8 @@
 import { products } from '@/data/products';
 import { NextRequest } from 'next/server';
 
+export const runtime = 'edge';
+
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://zprintpro.com';
 
 const localeConfig = {
