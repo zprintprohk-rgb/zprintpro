@@ -60,6 +60,15 @@ const CURRENCY: Record<Locale, { symbol: string; suffix: string; pcLabel: string
   },
 };
 
+// Dynamic grid columns based on tier count (instead of fixed grid-cols-5)
+function tierGridCols(n: number): string {
+  if (n <= 1) return 'grid-cols-1';
+  if (n === 2) return 'grid-cols-2';
+  if (n === 3) return 'grid-cols-2 sm:grid-cols-3';
+  if (n === 4) return 'grid-cols-2 sm:grid-cols-4';
+  return 'grid-cols-2 sm:grid-cols-3 lg:grid-cols-5';
+}
+
 export function QuantityTierTable({ quantities, basePrice, locale }: QuantityTierTableProps) {
   // Guard: only render if quantities data exists
   if (!quantities || quantities.length === 0) {
@@ -103,8 +112,8 @@ export function QuantityTierTable({ quantities, basePrice, locale }: QuantityTie
         )}
       </div>
 
-      {/* Desktop: 5 col grid | Mobile: 1 col stacked */}
-      <ol className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 md:gap-3">
+      {/* Dynamic grid: cols based on displayTiers.length, items-stretch ensures equal height */}
+      <ol className={`grid ${tierGridCols(displayTiers.length)} gap-2 md:gap-3 items-stretch`}>
         {displayTiers.map((tier, idx) => {
           const unitPrice = fullPrice * tier.discount;
           const savePct = Math.round((1 - tier.discount) * 100);
@@ -115,23 +124,31 @@ export function QuantityTierTable({ quantities, basePrice, locale }: QuantityTie
           return (
             <li
               key={tier.value}
-              className={`relative bg-white rounded-xl border p-3 md:p-4 ${
+              className={`relative bg-white rounded-xl border p-3 md:p-4 flex flex-col ${
                 isBestValue
                   ? 'border-emerald-400 ring-2 ring-emerald-200'
-                  : isFirst
-                  ? 'border-slate-200'
                   : 'border-slate-200'
               }`}
             >
-              {isBestValue && (
-                <span className="absolute -top-2 left-1/2 -translate-x-1/2 bg-emerald-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide">
-                  {locale === 'zh-hk' ? '最划算' : locale === 'ja' ? 'ベスト' : 'Best Value'}
-                </span>
+              {/* BEST VALUE label: inline-block (not absolute), so it sits at top of its OWN card uniformly */}
+              {isBestValue ? (
+                <div className="h-5 -mt-1 mb-1 flex items-center justify-center">
+                  <span className="bg-emerald-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full uppercase tracking-wide whitespace-nowrap">
+                    {locale === 'zh-hk' ? '最划算' : locale === 'ja' ? 'ベスト' : 'Best Value'}
+                  </span>
+                </div>
+              ) : (
+                /* Reserved space for non-best cards so all cards align identically */
+                <div className="h-5 -mt-1 mb-1" aria-hidden="true" />
               )}
-              <div className="text-center">
-                <p className="text-xs text-slate-500 mb-1">
-                  {tier.value.toLocaleString()} {cur.pcLabel}
-                </p>
+
+              {/* Quantity label */}
+              <p className="text-xs text-slate-500 mb-1 text-center">
+                {tier.value.toLocaleString()} {cur.pcLabel}
+              </p>
+
+              {/* Price block: min-h keeps all cards uniform regardless of digit count */}
+              <div className="min-h-[3.25rem] flex flex-col items-center justify-center text-center">
                 <p className="text-lg md:text-xl font-extrabold text-slate-900 leading-tight">
                   {cur.symbol}
                   {unitPrice < 1
