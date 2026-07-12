@@ -503,13 +503,51 @@ export function generateCategoryItemListJsonLd(
           image: fullImageUrl,
           description: localizedDesc.slice(0, 500),
           category: categoryName,
+          // GSC「商家信息」要求: 提供全局品牌标识符
+          brand: {
+            '@type': 'Brand',
+            name: locale === 'zh-hk' ? '智印雲 ZprintPro' : 'ZprintPro',
+          },
           offers: {
             '@type': 'Offer',
             price: product.basePrice,
             priceCurrency: currency,
+            // GSC「商家信息」要求: 提供报价有效期起始日
+            validFrom: '2026-01-01',
             priceValidUntil: '2027-12-31',
-            availability: 'https://schema.org/MadeToOrder',
+            // Google 不支持 MadeToOrder 枚举值，使用 InStock 表示可下单
+            availability: 'https://schema.org/InStock',
             url: productUrl,
+            // GSC「商家信息」要求: 退换货政策（定制印刷品通常不接受退货）
+            hasMerchantReturnPolicy: {
+              '@type': 'MerchantReturnPolicy',
+              applicableCountry: locale === 'zh-hk' ? 'HK' : locale === 'ja' ? 'JP' : 'US',
+              returnPolicyCategory: 'https://schema.org/MerchantReturnNotPermitted',
+              merchantReturnDays: 0,
+            },
+            // GSC「商家信息」要求: 配送详情，按地区差异化
+            shippingDetails: {
+              '@type': 'OfferShippingDetails',
+              shippingDestination: {
+                '@type': 'DefinedRegion',
+                addressCountry: locale === 'zh-hk' ? 'HK' : locale === 'ja' ? 'JP' : 'US',
+              },
+              deliveryTime: {
+                '@type': 'ShippingDeliveryTime',
+                handlingTime: {
+                  '@type': 'QuantitativeValue',
+                  minValue: locale === 'zh-hk' ? 1 : 1,
+                  maxValue: locale === 'zh-hk' ? 2 : 3,
+                  unitCode: 'DAY',
+                },
+                transitTime: {
+                  '@type': 'QuantitativeValue',
+                  minValue: locale === 'zh-hk' ? 1 : 3,
+                  maxValue: locale === 'zh-hk' ? 2 : locale === 'ja' ? 5 : 7,
+                  unitCode: 'DAY',
+                },
+              },
+            },
           },
         },
       };
