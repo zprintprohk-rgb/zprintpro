@@ -193,9 +193,9 @@ export function HowItWorks({ locale }: HowItWorksProps) {
           ))}
         </ol>
 
-        {/* Bottom trust + CTA bar — 单行浅蓝条 + 橙色 CTA 按钮 (2026-07-11 PM+UX 复盘 v2: 浅蓝 65%, CTA 橙色同导航栏选中状态, 去色条下方空白紧贴产品分类) */}
-        <div className="mt-6 md:mt-8 -mb-6 md:-mb-8 bg-blue-400 rounded-xl py-3 px-5 md:px-6 flex flex-col sm:flex-row items-center justify-between gap-2">
-          <p className="text-white text-xs sm:text-sm font-medium leading-snug text-center sm:text-left">
+        {/* Bottom trust + CTA bar — 单行浅灰条 + 橙色 CTA 按钮 (2026-07-13 v3: 浅蓝 65% 改很浅的中性灰 gray-100, 灰橙无缝拼接同 category sort bar 样式) */}
+        <div className="mt-6 md:mt-8 -mb-6 md:-mb-8 bg-gray-100 rounded-xl overflow-hidden flex flex-col sm:flex-row items-stretch">
+          <p className="text-slate-700 text-xs sm:text-sm font-medium leading-snug text-center sm:text-left px-5 md:px-6 py-3 flex-1 flex items-center justify-center sm:justify-start">
             {locale === 'zh-hk'
               ? '15+ 年印刷經驗 · ISO 9001 認證 · 5000+ 全球客戶 · 100+ 國家發貨'
               : locale === 'ja'
@@ -204,7 +204,7 @@ export function HowItWorks({ locale }: HowItWorksProps) {
           </p>
           <a
             href={`/${locale}/quote/`}
-            className="inline-flex items-center gap-1.5 bg-[#F87314] hover:bg-[#E06613] text-white text-base font-bold whitespace-nowrap px-4 py-1.5 rounded-lg transition-colors shadow-sm"
+            className="bg-[#F87314] hover:bg-[#E06613] text-white text-[22px] font-bold whitespace-nowrap px-5 py-3 flex items-center justify-center gap-1.5 transition-colors flex-shrink-0 leading-none"
           >
             {locale === 'zh-hk' ? '免費獲取報價' : locale === 'ja' ? '無料見積もり' : 'Get Free Quote'}
             <span aria-hidden="true">→</span>

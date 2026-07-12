@@ -30,6 +30,7 @@ import Image from 'next/image';
 import { JsonLd } from '@/components/JsonLd';
 import { CategorySidebar } from '@/components/category/CategorySidebar';
 import { CategoryProductCard } from '@/components/category/CategoryProductCard';
+import { CategorySortSelect } from '@/components/category/CategorySortSelect';
 import { Pagination } from '@/components/Pagination';
 import { CategoryPillarContent, generateFaqSchema } from '@/components/CategoryPillarContent';
 import { CategoryIndustries } from '@/components/category/CategoryIndustries';
@@ -87,11 +88,37 @@ export default function CategoryPage({
   // 获取分类下的产品
   const categoryProducts = getProductsByCategory(slug);
 
+  // 排序 — 2026-07-13 真正接上 sort 功能 (URL ?sort=price-asc/price-desc/popularity)
+  // popularity = 默认, 按 products 数组原顺序 (跟 server-side default 一致)
+  // price-asc / price-desc: parse price_range 字符串取起始价数字, 转 Number 排序
+  const sortKey = (searchParams.sort || 'popularity').toLowerCase();
+
+  // 提取 price_range 起价作为排序 key (e.g. "HK$0.38-0.80/張" -> 0.38)
+  // 处理 "HK$"、"US$"、"¥"、逗号分隔符 (100,000 等)
+  const parseMinPrice = (priceRange: string): number => {
+    const match = priceRange.match(/[\d,.]+/);
+    if (!match) return 0;
+    const numStr = match[0].replace(/,/g, '');
+    const num = parseFloat(numStr);
+    return isNaN(num) ? 0 : num;
+  };
+
+  const sortedProducts = [...categoryProducts].sort((a, b) => {
+    if (sortKey === 'price-asc') {
+      return parseMinPrice(a.price_range) - parseMinPrice(b.price_range);
+    }
+    if (sortKey === 'price-desc') {
+      return parseMinPrice(b.price_range) - parseMinPrice(a.price_range);
+    }
+    // popularity / default: 保留 server 返回的原始顺序
+    return 0;
+  });
+
   // 分页 - 每页最多6个SKU（引流分类不赚钱，不展示太多）
   const currentPage = parseInt(searchParams.page || '1', 10);
   const productsPerPage = 12;
-  const totalPages = Math.ceil(categoryProducts.length / productsPerPage);
-  const paginatedProducts = categoryProducts.slice(
+  const totalPages = Math.ceil(sortedProducts.length / productsPerPage);
+  const paginatedProducts = sortedProducts.slice(
     (currentPage - 1) * productsPerPage,
     currentPage * productsPerPage
   );
@@ -265,6 +292,13 @@ export default function CategoryPage({
   const t = translations[locale];
   const localePrefix = `/${locale}`;
 
+  // Sort options — 必须在 t 声明后 (依赖 t.popularity / t.priceAsc / t.priceDesc)
+  const sortOptions: { value: string; label: string }[] = [
+    { value: 'popularity', label: t.popularity },
+    { value: 'price-asc', label: t.priceAsc },
+    { value: 'price-desc', label: t.priceDesc },
+  ];
+
   // 分类 Banner 背景图映射（按 locale 动态匹配 hero webp）
   const categoryBannerMap: Record<string, string> = {
     'paper-bags': 'hero-kraft-bag',
@@ -356,7 +390,7 @@ export default function CategoryPage({
 
             {/* 右侧产品列表 */}
             <div className="flex-1">
-              {/* 排序栏 — 蓝条（共 N 款產品 + 熱門程度下拉）+ 橙色 CTA 无缝拼接 (2026-07-13 user v3: SKU 上移 8px, 蓝条内嵌 select, 右侧加 免費獲取報價 按钮) */}
+              {/* 排序栏 — 蓝条（共 N 款產品 + 熱門程度下拉）+ 橙色 CTA 无缝拼接 (2026-07-13 v3: SKU 上移 8px, 蓝条内嵌 select 真正排序, 右侧加 免費獲取報價 按钮) */}
               <div className="flex items-stretch mb-4 gap-0 rounded-t-lg overflow-hidden">
                 <div className="bg-[#2873F5] text-white px-4 py-3 flex items-center gap-3 flex-1 min-w-0">
                   <div className="w-1 h-5 bg-white/60 rounded-full flex-shrink-0" />
@@ -365,15 +399,11 @@ export default function CategoryPage({
                   </span>
                   <div className="ml-auto flex items-center gap-2 min-w-0">
                     <span className="text-white/80 text-sm whitespace-nowrap hidden sm:inline">{t.sortBy}:</span>
-                    <select
-                      className="bg-white/15 hover:bg-white/25 text-white text-sm font-medium border border-white/30 rounded-md pl-3 pr-8 py-1 focus:outline-none focus:ring-2 focus:ring-white/50 cursor-pointer transition-colors appearance-none bg-no-repeat bg-right"
-                      style={{ backgroundImage: "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.5'><polyline points='6 9 12 15 18 9'/></svg>\")", backgroundPosition: "right 0.5rem center", backgroundSize: "12px" }}
-                      defaultValue="popularity"
-                    >
-                      <option value="popularity" className="text-gray-900 bg-white">{t.popularity}</option>
-                      <option value="price-asc" className="text-gray-900 bg-white">{t.priceAsc}</option>
-                      <option value="price-desc" className="text-gray-900 bg-white">{t.priceDesc}</option>
-                    </select>
+                    <CategorySortSelect
+                      defaultValue={sortKey}
+                      options={sortOptions}
+                      className="bg-white/15 hover:bg-white/25 text-white text-sm font-medium border border-white/30 rounded-md pl-3 pr-8 py-1 focus:outline-none focus:ring-2 focus:ring-white/50 cursor-pointer transition-colors appearance-none bg-no-repeat bg-right disabled:opacity-60"
+                    />
                   </div>
                 </div>
                 <a

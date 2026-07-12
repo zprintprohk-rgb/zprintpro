@@ -424,16 +424,8 @@ export default function ProductPage({
                 <QuoteCalculator product={product} locale={locale} />
               </div>
 
-              {/* 2026-07-09 P0.4: 价格梯度表 (en-US market local optimization, "Buy More Save More")
-                  显式 5 档定价表, 鼓励用户多买. 仅当 product.variables.quantities 有数据时显示 (37% SKU).
-                  没数据的 SKU 自动隐藏 — 不破坏现有 UI. 数据层补全是 P1 backlog. */}
-              <QuantityTierTable
-                quantities={product.variables?.quantities}
-                basePrice={product.basePrice}
-                locale={locale}
-              />
-              
-              {/* SKU & 最低订购量 (2026-06-07: 靠右对齐 + 减右 padding 2/3) */}
+              {/* SKU & 最低订购量 (2026-06-07: 靠右对齐 + 减右 padding 2/3)
+                  2026-07-13: QuantityTierTable 已移出右栏到 ProductTabs 下面 (full-width) */}
               <div className="flex items-center justify-end gap-3 text-xs text-gray-400 mb-4 pr-2">
                 <span>{t.sku}: <span className="font-mono text-gray-500">{product.sku_code}</span></span>
                 <span className="w-px h-3 bg-gray-300"></span>
@@ -447,6 +439,15 @@ export default function ProductPage({
             <TrustWaterfall locale={locale} />
             <ProductTabs product={product} locale={locale} />
           </div>
+
+          {/* 2026-07-13: 价格梯度表 (QuantityTierTable) 从右栏移出, 放 ProductTabs 下面 full-width 横铺
+              解决 user 反馈"色块塞在右栏 1/3 宽, 左边大片空白"问题
+              5 档卡片横向各占 1/5, 跟左半边详情区底部对齐 */}
+          <QuantityTierTable
+            quantities={product.variables?.quantities}
+            basePrice={product.basePrice}
+            locale={locale}
+          />
           
           {/* 长描述 SEO 内容 */}
           {longDesc && (
