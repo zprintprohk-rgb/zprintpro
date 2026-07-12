@@ -356,22 +356,33 @@ export default function CategoryPage({
 
             {/* 右侧产品列表 */}
             <div className="flex-1">
-              {/* 排序栏 */}
-              <div className="flex items-center justify-between mb-6 gap-3">
-                <div className="bg-[#2873F5] text-white px-4 py-3 rounded-t-lg flex items-center gap-2 flex-1 sm:flex-none">
-                  <div className="w-1 h-5 bg-white/60 rounded-full" />
+              {/* 排序栏 — 蓝条（共 N 款產品 + 熱門程度下拉）+ 橙色 CTA 无缝拼接 (2026-07-13 user v3: SKU 上移 8px, 蓝条内嵌 select, 右侧加 免費獲取報價 按钮) */}
+              <div className="flex items-stretch mb-4 gap-0 rounded-t-lg overflow-hidden">
+                <div className="bg-[#2873F5] text-white px-4 py-3 flex items-center gap-3 flex-1 min-w-0">
+                  <div className="w-1 h-5 bg-white/60 rounded-full flex-shrink-0" />
                   <span className="font-semibold text-base whitespace-nowrap">
                     {t.productsCount}
                   </span>
+                  <div className="ml-auto flex items-center gap-2 min-w-0">
+                    <span className="text-white/80 text-sm whitespace-nowrap hidden sm:inline">{t.sortBy}:</span>
+                    <select
+                      className="bg-white/15 hover:bg-white/25 text-white text-sm font-medium border border-white/30 rounded-md pl-3 pr-8 py-1 focus:outline-none focus:ring-2 focus:ring-white/50 cursor-pointer transition-colors appearance-none bg-no-repeat bg-right"
+                      style={{ backgroundImage: "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2.5'><polyline points='6 9 12 15 18 9'/></svg>\")", backgroundPosition: "right 0.5rem center", backgroundSize: "12px" }}
+                      defaultValue="popularity"
+                    >
+                      <option value="popularity" className="text-gray-900 bg-white">{t.popularity}</option>
+                      <option value="price-asc" className="text-gray-900 bg-white">{t.priceAsc}</option>
+                      <option value="price-desc" className="text-gray-900 bg-white">{t.priceDesc}</option>
+                    </select>
+                  </div>
                 </div>
-                <select
-                  className="border rounded-lg px-3 py-1.5 text-sm focus:ring-2 focus:ring-[#2873F5] focus:border-transparent bg-white"
-                  defaultValue="popularity"
+                <a
+                  href={`/${locale}/quote/`}
+                  className="bg-[#F87314] hover:bg-[#E06613] text-white font-bold px-5 py-3 flex items-center gap-1.5 whitespace-nowrap transition-colors flex-shrink-0 text-[22px] leading-none"
                 >
-                  <option value="popularity">{t.popularity}</option>
-                  <option value="price-asc">{t.priceAsc}</option>
-                  <option value="price-desc">{t.priceDesc}</option>
-                </select>
+                  {locale === 'zh-hk' ? '免費獲取報價' : locale === 'ja' ? '無料見積もり' : 'Get Free Quote'}
+                  <span aria-hidden="true">→</span>
+                </a>
               </div>
 
               {/* 产品网格 - 3列，最多12条单页显示 */}
