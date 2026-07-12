@@ -7,7 +7,7 @@
 
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { Product } from '@/data/products';
 import { Locale } from '@/lib/seo';
@@ -23,6 +23,15 @@ import { generateWhatsAppLink } from '@/lib/whatsapp';
 interface QuoteCalculatorProps {
   product: Product;
   locale: Locale;
+  /**
+   * 2026-07-13: 外部 controlled quantity.
+   * - 传了: 内部 config.quantity 受外部控, 外部变化时 useEffect 同步
+   * - 不传: 维持原 self-contained 行为, 内部 useState 自己管
+   *
+   * 配套 onQuantityChange 在用户点内部 quantity 按钮时回调, 让父组件知道当前 quantity.
+   */
+  externalQuantity?: number;
+  onQuantityChange?: (quantity: number) => void;
 }
 
 interface QuoteConfig {
@@ -32,7 +41,7 @@ interface QuoteConfig {
   quantity: number;
 }
 
-export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
+export function QuoteCalculator({ product, locale, externalQuantity, onQuantityChange }: QuoteCalculatorProps) {
   const [config, setConfig] = useState<QuoteConfig>({
     size: product.variables?.sizes?.[0]?.value || 'standard',
     material: product.variables?.materials?.[0]?.value || 'standard',
@@ -40,6 +49,15 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
     quantity: product.variables?.quantities?.[0]?.value || (product.minQuantity || 100),
   });
   const [activeTab, setActiveTab] = useState<'order' | 'quote'>('quote');
+
+  // 2026-07-13: 外部 controlled quantity 同步
+  // 当 externalQuantity 变化时, 同步到内部 config.quantity
+  // 仅在 externalQuantity 真正变化时 sync, 避免无限循环
+  useEffect(() => {
+    if (externalQuantity !== undefined && externalQuantity !== config.quantity) {
+      setConfig((prev) => ({ ...prev, quantity: externalQuantity }));
+    }
+  }, [externalQuantity]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // 翻译
   const translations = {
@@ -191,6 +209,10 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
     setConfig(prev => ({ ...prev, [key]: value }));
     // 数据飞轮：跟踪用户与计算器交互
     trackCalculatorInteraction(key, String(value));
+    // 2026-07-13: quantity 变更时通知父组件 (用于左栏批量折扣卡片高亮同步)
+    if (key === 'quantity' && onQuantityChange) {
+      onQuantityChange(value as number);
+    }
   };
 
   // 是否有对应的选项数据

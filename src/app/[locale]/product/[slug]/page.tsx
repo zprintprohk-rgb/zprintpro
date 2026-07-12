@@ -32,8 +32,7 @@ import {
 } from '@/lib/seo/schema-extensions';
 import { JsonLd } from '@/components/JsonLd';
 import { ProductGallery } from '@/components/ProductGallery';
-import { QuoteCalculator } from '@/components/quote/QuoteCalculator';
-import { QuantityTierTable } from '@/components/QuantityTierTable';
+import { ProductQuoteSection } from '@/components/quote/ProductQuoteSection';
 import { ProductTabs } from '@/components/ProductTabs';
 import { RelatedProducts } from '@/components/RelatedProducts';
 import { ProductFaq } from '@/components/ProductFaq';
@@ -418,14 +417,18 @@ export default function ProductPage({
                 </div>
               </div>
 
-              {/* 报价计算器 — 无边框简洁 */}
+              {/* 报价 + 批量折扣 联动区块 (2026-07-13 v2 重构)
+                  左: QuantityTierInteractive (批量折扣色块) 高度撑满
+                  右: QuoteCalculator (报价 + 订购) 高度撑满
+                  两者 items-stretch 对齐底边
+                  点色块 5 档卡片 -> 同步右栏 quantity -> 重算报价 */}
               <div className="mb-5">
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">{t.specifications}</h3>
-                <QuoteCalculator product={product} locale={locale} />
+                <ProductQuoteSection product={product} locale={locale} />
               </div>
 
               {/* SKU & 最低订购量 (2026-06-07: 靠右对齐 + 减右 padding 2/3)
-                  2026-07-13: QuantityTierTable 已移出右栏到 ProductTabs 下面 (full-width) */}
+                  2026-07-13: QuantityTierTable 已从右栏移除, 集成到 ProductQuoteSection 左半边 */}
               <div className="flex items-center justify-end gap-3 text-xs text-gray-400 mb-4 pr-2">
                 <span>{t.sku}: <span className="font-mono text-gray-500">{product.sku_code}</span></span>
                 <span className="w-px h-3 bg-gray-300"></span>
@@ -440,15 +443,7 @@ export default function ProductPage({
             <ProductTabs product={product} locale={locale} />
           </div>
 
-          {/* 2026-07-13: 价格梯度表 (QuantityTierTable) 从右栏移出, 放 ProductTabs 下面 full-width 横铺
-              解决 user 反馈"色块塞在右栏 1/3 宽, 左边大片空白"问题
-              5 档卡片横向各占 1/5, 跟左半边详情区底部对齐 */}
-          <QuantityTierTable
-            quantities={product.variables?.quantities}
-            basePrice={product.basePrice}
-            locale={locale}
-          />
-          
+
           {/* 长描述 SEO 内容 */}
           {longDesc && (
             <section className="mt-12 bg-white rounded-xl border border-gray-100 p-8">
