@@ -984,7 +984,25 @@ const lpDoujinCircle: BlogPostMeta = {
   },
 };
 
-// Unified list (31 articles)
+// Q-010 (stickers × 酒店民宿) - 2026-07-13 daily
+const lpHotelAmenitySticker: BlogPostMeta = {
+  slug: 'hotel-amenity-sticker-printing-guide',
+  categoryKey: 'sticker',
+  source: 'legacy',
+  date: '2026-07-13',
+  title: {
+    'zh-hk': '酒店民宿迎賓貼紙印刷指南 · 行李標籤 / 房卡套 / 客用品定制 | 智印雲 ZprintPro',
+    en: 'Hotel & Resort Amenity Sticker Printing Guide: Luggage Tags, Welcome Kits & Branded Service for US Properties | ZprintPro',
+    ja: 'ホテル・リゾート アメニティステッカー印刷ガイド：荷物タグ・ウェルカムキット・ロゴステッカー | 智印雲 ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '香港酒店業、半島、洲際、悅榕庄、精品酒店同 B&B 民宿必睇。100 個起印 + 防水 PVC + 燙金 logo + 順豐本地配送 + 5-7 個工作天交貨。',
+    en: 'US hotels, B&Bs, Airbnb hosts, resorts, spa properties: Free Shipping $99+ Continental US, 100 MOQ, Free Design Mockup, waterproof PVC + foil logo, 5-7 business day delivery.',
+    ja: 'ホテル・旅館・民泊オーナー向け。100 個から小ロット + 防水 PVC + 箔押しロゴ + 日本全国 2-4 日配送 + 沖縄・北海道も同料金。',
+  },
+};
+
+// Unified list (32 articles)
 // =============================================================================
 
 export const blogPosts: BlogPostMeta[] = [
@@ -1056,6 +1074,8 @@ export const blogPosts: BlogPostMeta[] = [
   lpTradeShowBanner,
   lpWeddingEnvelope,
   lpDoujinCircle,
+  // 2026-07-13 daily-content-evolve Tier B 拓點 (酒店民宿)
+  lpHotelAmenitySticker,
 ];
 
 // =============================================================================
