@@ -1002,7 +1002,78 @@ const lpHotelAmenitySticker: BlogPostMeta = {
   },
 };
 
-// Unified list (32 articles)
+// Q-011 (paper-bags × 金融證券) - 2026-07-13 weekly
+const lpFinanceSummitGiftBag: BlogPostMeta = {
+  slug: 'finance-summit-gift-bag-printing-guide',
+  categoryKey: 'paper-bags',
+  source: 'legacy',
+  date: '2026-07-13',
+  title: {
+    'zh-hk': '香港金融峰會禮品袋印刷指南 · 銀行財富管理活動贊助商紙袋定制 | 智印雲 ZprintPro',
+    en: 'Financial Summit Gift Bag Printing Guide: FSC, Foil Logo & VIP Bags for US Wealth Management | ZprintPro',
+    ja: '金融サミット ギフトバッグ印刷ガイド：FSC認証・箔押し・VIPバッグ 日本ウェルス・マネジメント向け | 智印雲 ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '香港金融機構、銀行、財富管理公司、券商、保險公司、家族辦公室必睇。FSC 認證環保牛皮紙袋，100 個起印，燙金 logo，港九中環 IFC / 灣仔 / 金鐘本地速遞，5-7 個工作天交貨。',
+    en: 'US banks, wealth management firms, broker-dealers, insurance carriers, family offices: FSC-certified kraft + white card + magnetic closure, 100 MOQ, foil-stamped logo, 5-7 business day delivery to US ZIP codes.',
+    ja: '日本の銀行、ウェルス・マネジメント会社、証券会社、保険会社、ファミリーオフィス向け。FSC 認証クラフト・白カード・磁石クロージャー、100 個から小ロット対応、5-7 営業日生産、全国送料無料。',
+  },
+};
+
+// Q-012 (posters × 體育賽事) - 2026-07-13 weekly
+const lpMarathonEventPoster: BlogPostMeta = {
+  slug: 'marathon-event-poster-printing-guide',
+  categoryKey: 'posters',
+  source: 'legacy',
+  date: '2026-07-13',
+  title: {
+    'zh-hk': '馬拉松賽事海報印刷指南 · 防水 A1/A2 跑手包 + 起跑拱門 | 智印雲 ZprintPro',
+    en: 'Marathon Event Poster Printing Guide: Waterproof A1/A2 Race Posters, Runner Packets & Start-Line Arches | ZprintPro',
+    ja: 'マラソン大会ポスター印刷ガイド：防水 A1/A2 レースポスター・ランナーパケット・スタートアーチ | 智印雲 ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '香港渣打馬拉松、街馬、半馬拉松、學界田徑必睇。100 張起印，A1/A2 防水 PP + 13oz 戶外燈布起跑拱門，順豐本地港九新界免運費，3-5 個工作天交貨。',
+    en: 'US race directors, running clubs, charity foundations: 100 MOQ, waterproof A1/A2 + 13oz vinyl start arches, runner packet inserts, sponsor recognition walls, 3-5 business day delivery to US ZIP codes.',
+    ja: '日本のレースディレクター、ランニングクラブ、チャリティ財団向け。100 枚から対応、防水 A1/A2 + 13oz ビニール スタートアーチ、ランナーパケット挿入物、3-5 営業日生産、全国送料無料。',
+  },
+};
+
+// T-B-04 (stickers × 汽車汽配) - 2026-07-13 weekly
+const lpCarDealershipAmenitySticker: BlogPostMeta = {
+  slug: 'car-dealership-amenity-sticker-printing-guide',
+  categoryKey: 'sticker',
+  source: 'legacy',
+  date: '2026-07-13',
+  title: {
+    'zh-hk': '汽車 4S 店 / 二手車行貼紙印刷指南 · 防水 PVC 試駕車身貼 + 服務提醒 | 智印雲 ZprintPro',
+    en: 'Car Dealership Amenity Sticker Printing Guide: Waterproof PVC, Test Drive Decals & Service Reminders for US Auto Industry | ZprintPro',
+    ja: '自動車ディーラー アメニティステッカー印刷ガイド：防水 PVC・試乗デカール・サービス注意喚起 日本自動車業界向け | 智印雲 ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '香港 4S 店、二手車行、汽車美容、輪胎中心、維修工場必睇。100 張起印，防水 PVC + 透明 BOPP + 耐油 PVC，順豐本地港九新界免運費，3-5 個工作天交貨。',
+    en: 'US car dealerships, auto body shops, tire centers, quick lubes, EV brand experience studios: 100 MOQ, waterproof PVC + transparent BOPP + oil-resistant vinyl, 3-5 business day delivery to US ZIP codes.',
+    ja: '日本の自動車ディーラー、鈑金塗装工場、タイヤセンター、Quick Lube、EV ブランド体験スタジオ向け。100 枚から対応、防水 PVC + 透明 BOPP + 耐油ビニール、3-5 営業日生産、全国送料無料。',
+  },
+};
+
+// T-B-09 (stickers × 酒店拓點) - 2026-07-13 weekly
+const lpHotelKeycardSleeve: BlogPostMeta = {
+  slug: 'hotel-keycard-sleeve-printing-guide',
+  categoryKey: 'sticker',
+  source: 'legacy',
+  date: '2026-07-13',
+  title: {
+    'zh-hk': '酒店房卡套 + 行李牌印刷指南 · 軟觸啞面 + 燙金 logo 客用品包裝 | 智印雲 ZprintPro',
+    en: 'Hotel Key Card Sleeve & Luggage Tag Printing Guide: Soft-Touch Matte, Foil Logo & Glass Welcome Signs for US Hospitality | ZprintPro',
+    ja: 'ホテル ルームキー スリーブ・荷物タグ印刷ガイド：ソフトタッチマット・箔押し・ガラス ウェルカム 日本ホテル業界向け | 智印雲 ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '香港五星級酒店、精品酒店、B&B 民宿、Airbnb 短租必睇。100 張起印，軟觸啞面 PVC + 燙金箔 + 局部 UV，順豐本地港九新界免運費，3-5 個工作天交貨。',
+    en: 'US five-star hotels, boutique hotels, B&Bs, Airbnb hosts, resort spas: 100 MOQ, soft-touch matte PVC + foil + spot UV, room key sleeves, luggage tags, turn-down seals, 3-5 business day delivery to US ZIP codes.',
+    ja: '日本の五つ星ホテル、ブティックホテル、B&B、民泊、リゾートスパ向け。100 枚から対応、ソフトタッチマット PVC + 箔押し + スポット UV、ルームキー スリーブ、荷物タグ、3-5 営業日生産、全国送料無料。',
+  },
+};
+// Unified list (36 articles)
 // =============================================================================
 
 export const blogPosts: BlogPostMeta[] = [
@@ -1076,6 +1147,11 @@ export const blogPosts: BlogPostMeta[] = [
   lpDoujinCircle,
   // 2026-07-13 daily-content-evolve Tier B 拓點 (酒店民宿)
   lpHotelAmenitySticker,
+  // 2026-07-13 weekly-meta-refresh Tier B 拓點 (金融證券 / 體育賽事 / 汽車汽配 / 酒店拓點)
+  lpFinanceSummitGiftBag,
+  lpMarathonEventPoster,
+  lpCarDealershipAmenitySticker,
+  lpHotelKeycardSleeve,
 ];
 
 // =============================================================================
