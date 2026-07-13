@@ -30,7 +30,7 @@ const TEXT: Record<Locale, string> = {
     '越境EC形式でサービスを提供し、香港向けは順豐速運で 48 時間配達、海外は DHL Express で 2-4 日配送しております。' +
     'サービス対象地域はアメリカ（United States）、イギリス（United Kingdom）、オーストラリア（Australia）、日本（Japan）で、' +
     '多言語カスタマーサポートと現地決済に対応しています。' +
-    '香港観塘、ニューヨーク、ロンドン、シドニー、東京のいずれにお住まいでも、ZPrintPro の専門印刷サービスと 72 時間グローバル配送をお受け取りいただけます。',
+    '香港、ニューヨーク、ロンドン、シドニー、東京のいずれにお住まいでも、ZPrintPro の専門印刷サービスと 72 時間グローバル配送をお受け取りいただけます。',
 };
 
 export function GeoFooterText({ locale }: GeoFooterTextProps) {
