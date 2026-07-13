@@ -589,9 +589,9 @@ export const CATEGORY_INDUSTRIES: Record<string, {
   ja: string[];
 }> = {
   'stickers': {
-    'zh-hk': ['寵物食品', '藥品標籤', '美妝護膚', '母嬰用品', '跨境電商'],
-    en: ['Pet food brands', 'Pharmaceutical labels', 'Beauty & skincare', 'Mother & baby products', 'Cross-border e-commerce'],
-    ja: ['ペットフード', '医薬品ラベル', '化粧品・スキンケア', 'ベビー用品', '越境EC'],
+    'zh-hk': ['寵物食品', '藥品標籤', '美妝護膚', '汽車 4S 店 + 酒店房卡套', '跨境電商'],
+    en: ['Pet food brands', 'Pharmaceutical labels', 'Beauty & skincare', 'Car dealership + Hotel keycard sleeve', 'Cross-border e-commerce'],
+    ja: ['ペットフード', '医薬品ラベル', '化粧品・スキンケア', '自動車 4S 店 + ホテル ルームキー', '越境EC'],
   },
   'flyers': {
     'zh-hk': ['餐廳開業', '房地產新盤', '補習社宣傳', '活動展覽', '婚慶喜帖'],
@@ -599,14 +599,14 @@ export const CATEGORY_INDUSTRIES: Record<string, {
     ja: ['飲食店開業', '不動産プロモ', '塾・予備校', 'イベント・展示会', '結婚式招待'],
   },
   'packaging': {
-    'zh-hk': ['美妝護膚品牌', '跨境電商品牌', '茶飲食品', '房地產樓書', '婚慶禮盒'],
-    en: ['Beauty & skincare brands', 'Cross-border e-commerce', 'Tea & beverage brands', 'Real estate brochures', 'Wedding & corporate gifts'],
-    ja: ['化粧品ブランド', '越境ECブランド', '茶・ドリンク', '不動産パンフレット', '結婚式・企業ギフト'],
+    'zh-hk': ['美妝護膚品牌', '跨境電商品牌', '茶飲食品', '醫藥保健合規盒 + 金融峰會禮品', '婚慶禮盒'],
+    en: ['Beauty & skincare brands', 'Cross-border e-commerce', 'Tea & beverage brands', 'Pharmaceutical + Financial summit gifts', 'Wedding & corporate gifts'],
+    ja: ['化粧品ブランド', '越境ECブランド', '茶・ドリンク', '医薬保健コンプライアンス + 金融サミット', '結婚式・企業ギフト'],
   },
   'paper-bags': {
-    'zh-hk': ['服飾品牌', '珠寶鐘錶', '婚慶禮品', '美妝精品', '零售餐飲'],
-    en: ['Fashion & apparel brands', 'Jewellery & watches', 'Wedding gifts', 'Beauty & cosmetics', 'Retail & F&B'],
-    ja: ['アパレルブランド', '宝飾・腕時計', 'ウェディングギフト', '化粧品・コスメ', '小売・飲食'],
+    'zh-hk': ['服飾品牌', '珠寶鐘錶', '金融峰會禮品 + 體育賽事紀念', '美妝精品', '零售餐飲'],
+    en: ['Fashion & apparel brands', 'Jewellery & watches', 'Financial summit + Sports events', 'Beauty & cosmetics', 'Retail & F&B'],
+    ja: ['アパレルブランド', '宝飾・腕時計', '金融サミット + スポーツイベント', '化粧品・コスメ', '小売・飲食'],
   },
   'posters': {
     'zh-hk': ['零售店面', '展覽活動', '補習社宣傳', '房地產海報', '餐廳推廣'],

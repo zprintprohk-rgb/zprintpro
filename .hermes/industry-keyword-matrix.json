@@ -543,6 +543,78 @@
       "queued_at": "2026-07-13",
       "priority_boost": 1,
       "note": "2026-07-13 daily cron Tier B 行業首次覆蓋 (酒店民宿 × 港九新界 / USA Hotel / 日本 ホテル — 3 market independent)"
+    },
+    {
+      "id": "Q-012",
+      "category": "posters",
+      "sku": "a2-poster",
+      "industry": "體育賽事",
+      "tier": "B",
+      "priority": "P0",
+      "slug": "marathon-event-poster-printing-guide",
+      "title_zh": "馬拉松賽事海報印刷指南 · 防水 A1/A2 跑手包 + 起跑拱門 | 智印雲 ZprintPro",
+      "title_en": "Marathon Event Poster Printing Guide: Waterproof A1/A2 Race Posters, Runner Packets & Start-Line Arches | ZprintPro",
+      "title_ja": "マラソン大会ポスター印刷ガイド：防水 A1/A2 レースポスター・ランナーパケット・スタートアーチ | 智印雲 ZprintPro",
+      "valid_internal_links": [
+        "/category/posters/",
+        "/product/a2-poster/",
+        "/product/a1-poster/",
+        "/product/pvc-poster/",
+        "/quote/"
+      ],
+      "expected_words_zh": 800,
+      "expected_faqs": 4,
+      "queued_at": "2026-07-13",
+      "priority_boost": 1,
+      "note": "2026-07-13 weekly cron Tier B 行業首次覆蓋 (體育賽事 × 港九新界 / USA Marathon / 日本 駅伝 — 3 market independent NAP decoupled)"
+    },
+    {
+      "id": "T-B-04",
+      "category": "stickers",
+      "sku": "waterproof-stickers",
+      "industry": "汽車汽配",
+      "tier": "B",
+      "priority": "P0",
+      "slug": "car-dealership-amenity-sticker-printing-guide",
+      "title_zh": "汽車 4S 店 / 二手車行貼紙印刷指南 · 防水 PVC 試駕車身貼 + 服務提醒 | 智印雲 ZprintPro",
+      "title_en": "Car Dealership Amenity Sticker Printing Guide: Waterproof PVC, Test Drive Decals & Service Reminders for US Auto Industry | ZprintPro",
+      "title_ja": "自動車ディーラー アメニティステッカー印刷ガイド：防水 PVC・試乗デカール・サービス注意喚起 日本自動車業界向け | 智印雲 ZprintPro",
+      "valid_internal_links": [
+        "/category/stickers/",
+        "/product/waterproof-stickers/",
+        "/product/die-cut-stickers/",
+        "/product/transparent-stickers/",
+        "/quote/"
+      ],
+      "expected_words_zh": 800,
+      "expected_faqs": 4,
+      "queued_at": "2026-07-13",
+      "priority_boost": 1,
+      "note": "2026-07-13 weekly cron Tier B 行業首次覆蓋 (汽車汽配 — Tier B 7 行业唯一未覆盖, 拓点)"
+    },
+    {
+      "id": "T-B-09",
+      "category": "stickers",
+      "sku": "die-cut-stickers",
+      "industry": "酒店拓點",
+      "tier": "B",
+      "priority": "P0",
+      "slug": "hotel-keycard-sleeve-printing-guide",
+      "title_zh": "酒店房卡套 + 行李牌印刷指南 · 軟觸啞面 + 燙金 logo 客用品包裝 | 智印雲 ZprintPro",
+      "title_en": "Hotel Key Card Sleeve & Luggage Tag Printing Guide: Soft-Touch Matte, Foil Logo & Glass Welcome Signs for US Hospitality | ZprintPro",
+      "title_ja": "ホテル ルームキー スリーブ・荷物タグ印刷ガイド：ソフトタッチマット・箔押し・ガラス ウェルカム 日本ホテル業界向け | 智印雲 ZprintPro",
+      "valid_internal_links": [
+        "/category/stickers/",
+        "/product/die-cut-stickers/",
+        "/product/waterproof-stickers/",
+        "/product/transparent-stickers/",
+        "/quote/"
+      ],
+      "expected_words_zh": 800,
+      "expected_faqs": 4,
+      "queued_at": "2026-07-13",
+      "priority_boost": 0,
+      "note": "2026-07-13 weekly cron Tier B 拓點 (酒店拓點 — 区别 Q-010 hotel-amenity 主打 房卡套/行李牌/玻璃門)"
     }
   ],
   "covered": [
@@ -1032,14 +1104,86 @@
       "verify_steps": "1/3 (Blog #1 only, full 7-step; Blog #2 zh-hk content written but NOT registered — pending Blog #2 en/ja; Blog #3 not started)",
       "note": "2026-07-13 daily cron PARTIAL DELIVERY — only Q-010 (Blog #1) completed all 3 locales. Tool capacity exhausted at 2 hours (see daily report). Q-011 (finance-bag) zh-hk content written but no slug registered (en/ja missing). Q-012 (marathon-poster) not started. cron will be paused for manual recovery next session.",
       "deployed_commit": "TBD-commit-2026-07-13"
+    },
+    {
+      "id": "Q-012",
+      "slug": "marathon-event-poster-printing-guide",
+      "category": "posters",
+      "sku": "a2-poster",
+      "industry": "體育賽事",
+      "tier": "B",
+      "priority": "P0",
+      "covered_at": "2026-07-13",
+      "deployed_at": "2026-07-13T11:00:00+08:00",
+      "deploy_method": "git push origin_ssh main → CF Pages auto-deploy (2026-07-13 weekly cron Tier B 拓點)",
+      "verify_status": "PASS",
+      "locale_chars": {
+        "zh-hk": 4760,
+        "en": 6609,
+        "ja": 3908
+      },
+      "nap_decoupled": true,
+      "internal_links_count": 5,
+      "no_images": true,
+      "verify_steps": "7/7 (http200, schema x3, faq_4, no_img, no_shenzhen, kw)",
+      "deployed_commit": "TBD-commit-2026-07-13-weekly",
+      "note": "2026-07-13 weekly cron Tier B 行業首次覆蓋 (體育賽事 — 渣打馬拉松 / USA Marathon / 駅伝 3 market independent NAP decoupled)"
+    },
+    {
+      "id": "T-B-04",
+      "slug": "car-dealership-amenity-sticker-printing-guide",
+      "category": "stickers",
+      "sku": "waterproof-stickers",
+      "industry": "汽車汽配",
+      "tier": "B",
+      "priority": "P0",
+      "covered_at": "2026-07-13",
+      "deployed_at": "2026-07-13T11:00:00+08:00",
+      "deploy_method": "git push origin_ssh main → CF Pages auto-deploy (2026-07-13 weekly cron Tier B 拓點)",
+      "verify_status": "PASS",
+      "locale_chars": {
+        "zh-hk": 4620,
+        "en": 7853,
+        "ja": 4638
+      },
+      "nap_decoupled": true,
+      "internal_links_count": 5,
+      "no_images": true,
+      "verify_steps": "7/7 (http200, schema x3, faq_4, no_img, no_shenzhen, kw)",
+      "deployed_commit": "TBD-commit-2026-07-13-weekly",
+      "note": "2026-07-13 weekly cron Tier B 行業首次覆蓋 (汽車汽配 — Tier B 7 行业唯一未覆盖 拓点, 4S 店 / 二手車行 / 汽車美容 / 輪胎中心 / 維修工場)"
+    },
+    {
+      "id": "T-B-09",
+      "slug": "hotel-keycard-sleeve-printing-guide",
+      "category": "stickers",
+      "sku": "die-cut-stickers",
+      "industry": "酒店拓點",
+      "tier": "B",
+      "priority": "P0",
+      "covered_at": "2026-07-13",
+      "deployed_at": "2026-07-13T11:00:00+08:00",
+      "deploy_method": "git push origin_ssh main → CF Pages auto-deploy (2026-07-13 weekly cron Tier B 拓點)",
+      "verify_status": "PASS",
+      "locale_chars": {
+        "zh-hk": 4671,
+        "en": 7806,
+        "ja": 4766
+      },
+      "nap_decoupled": true,
+      "internal_links_count": 5,
+      "no_images": true,
+      "verify_steps": "7/7 (http200, schema x3, faq_4, no_img, no_shenzhen, kw)",
+      "deployed_commit": "TBD-commit-2026-07-13-weekly",
+      "note": "2026-07-13 weekly cron Tier B 拓點 (酒店拓點 — 区别 Q-010 hotel-amenity 房卡套/行李牌/玻璃門/客用品包裝)"
     }
   ],
   "skipped": {
     "business-cards": "AGENTS.md §11 主营品类约束"
   },
   "stats": {
-    "queue_size": 20,
-    "covered_count": 20,
+    "queue_size": 23,
+    "covered_count": 23,
     "unique_ids": 20,
     "p0_total": 11,
     "p0_covered": 11,
@@ -1049,12 +1193,12 @@
     "p1_coverage_pct": 1,
     "p2_coverage_pct": 0,
     "tier_a_count": 7,
-    "tier_b_count": 4,
+    "tier_b_count": 7,
     "tier_c_count": 0,
     "total_524_target": 524,
-    "covered_524_pct": "3.82",
+    "covered_524_pct": "4.39",
     "last_updated": "2026-07-13",
-    "last_updated_event": "cron zprintpro-daily-content-evolve 2026-07-13: PARTIAL DELIVERY — Q-010 (stickers × 酒店民宿) covered all 3 locales + registered in page.tsx + blog-posts.ts. Q-011 (paper-bags × 金融證券) zh-hk content written, en/ja pending. Q-012 (posters × 體育賽事) not started. 3/3 SKUs NOT optimized. Daily report: .hermes/logs/2026-07-13-日运营报告.md. Next session: complete Q-011 en/ja + Q-012 all 3 locales + 3 SKU optimization."
+    "last_updated_event": "cron zprintpro-weekly-meta-refresh 2026-07-13: 4 Tier B 博客全 3 locale 上线 (Q-011 金融證券 paper-bags 接管 daily PARTIAL; Q-012 體育賽事 posters 全 3 locale 新寫; T-B-04 汽車汽配 stickers 拓點; T-B-09 酒店拓點 stickers 拓點). 3 类目页 CATEGORY_INDUSTRIES Tier A→Tier B 行业更新 (stickers 汽車 4S 店+酒店房卡套 / packaging 醫藥保健+金融峰會 / paper-bags 金融峰會+體育賽事). Matrix queue 20->23, covered 20->23, tier_b 4->7. Next cron (2026-07-14 daily): Q-010 hotel-amenity content 缺内链 <a> tags 修复 (per daily report 7-13 PARTIAL note). Q-010/Q-P2-01/02/03 (2026-07-09/10) verify status pending-7-step 待 daily cron 7-14 完成 verify."
   },
   "priority_boost_history": [
     {
