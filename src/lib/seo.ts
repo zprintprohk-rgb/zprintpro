@@ -762,7 +762,8 @@ export function generateProductMetadata(
   // Description: 150-160字符，含長尾關鍵詞+價格+行動號召
   // 2026-06-12 Phase B-P1 修复 P1-1：扩大 descPrefix 到 100 字符，确保 baseDesc 短时仍能凑足 150+
   // 之前 descPrefix.slice(0, 80) + descSuffix 在 baseDesc 短时只能拼到 ~80-100 字符
-  const priceText = priceRange ? ` ${priceRange.split('/')[0]}起。` : ' ';
+  // 2026-07-13 修复：priceText 只在 zh-hk locale 拼接（priceRange 是 HKD + 繁中"起"后缀，硬塞 en/ja og:description 会导致 §13.10 NAP 脱钩违规）
+  const priceText = (priceRange && locale === 'zh-hk') ? ` ${priceRange.split('/')[0]}起。` : '';
   const descPrefix = baseDesc.slice(0, 100);
   const descSuffix = locale === 'zh-hk' 
     ? `立即查詢報價，滿$500免運費，即日交貨。`
