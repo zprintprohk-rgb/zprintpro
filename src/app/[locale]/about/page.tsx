@@ -33,9 +33,9 @@ const translations = {
     h1: '關於智印雲 ZprintPro',
     subtitle: '扎根香港超過15年，專注高品質印刷服務',
     storyTitle: '品牌故事',
-    story: `智印雲 ZprintPro 於2012年在香港成立，最初是一間專注於名片與宣傳單張的小型印刷工作室。創辦人憑藉對色彩管理的執著與對客戶需求的敏銳洞察，逐步將業務拓展至包裝盒、貼紙、海報、書籍等全方位印刷領域。
+    story: `智印雲 ZprintPro 為香港領先的綜合性印刷服務提供商，專注於為企業、教育機構及個人提供高品質、定制化的印刷解決方案。我們憑藉先進工藝、多元材質與智能技術，覆蓋商務、宣傳、包裝、教育等全場景需求，助力客戶高效傳遞品牌價值，提升市場競爭力。
 
-十五年來，我們見證了香港印刷行業從傳統柯式印刷向數碼印刷轉型的全過程。我們率先引入海德堡四色柯式印刷機與HP Indigo數碼印刷系統，建立了完整的ICC色彩管理流程，確保每一張成品都精準還原品牌色彩。我們累計服務超過1000家香港本地及海外企業，涵蓋金融、法律、餐飲、零售、教育及創意產業。`,
+以「智印未來」為願景，我們通過智能化生產流程、個性化定制與環保材質，為客戶打造差異化、高質感的印刷品，全面提升品牌形象與市場競爭力。十五年來，從商務印品到創意包裝，從校園刊物到企業年報，我們已累計服務超過1000家本地及全球客戶，成為香港企業及機構可信賴的印刷合作夥伴。`,
     advantageTitle: '核心優勢',
     advantages: [
       { title: '品質保證', desc: 'ISO 9001質量管理體系認證，海德堡四色柯式印刷，ICC色彩管理，Delta E ≤3色彩誤差控制。從印前到印後，每個環節均有專人檢查。' },
@@ -63,9 +63,9 @@ const translations = {
     h1: 'About ZprintPro',
     subtitle: 'Premium printing service shipping to 50+ countries from Hong Kong since 2012',
     storyTitle: 'Our Story',
-    story: `ZprintPro was founded in Hong Kong in 2012, starting as a small printing studio focused on business cards and flyers. The founder's obsession with color management and keen insight into client needs gradually expanded the business into packaging, stickers, posters, books, and comprehensive printing services.
+    story: `ZprintPro is a Hong Kong-rooted, global printing partner trusted by 1,000+ businesses, schools, and creative teams across 50+ countries. From business essentials to custom packaging, from school publications to corporate reports, we deliver premium custom printing with advanced craft, diverse materials, and smart technology — all backed by ISO 9001 + FSC certification, no minimums, free design mockups, and 30-second AI quotes.
 
-Over the past decade, we have witnessed Hong Kong's printing industry transform from traditional offset to digital printing. We pioneered the introduction of Heidelberg 4-color offset presses and HP Indigo digital systems, establishing complete ICC color management workflows to ensure every piece precisely reproduces brand colors. We have served over 1,000 local and overseas businesses across finance, legal, F&B, retail, education, and creative industries.`,
+Our vision is "Smarter Printing, Brighter Future." Through intelligent production workflows, fully personalized customization, and eco-friendly materials, we help every brand stand out with distinctive, high-quality print that lifts recognition and competitiveness. Every order — whether 100 stickers for a DTC startup, 5,000 flyers for a community event, or 50,000 retail-ready packaging units — gets the same dedication to color accuracy, fast turnaround, and worldwide delivery to your door.`,
     advantageTitle: 'Core Advantages',
     advantages: [
       { title: 'Quality Assurance', desc: 'ISO 9001 + FSC certified. Heidelberg 4-color offset + HP Indigo digital printing. ICC color management with Delta E ≤3 control. Every order inspected by dedicated prepress and postpress teams before shipping.' },
@@ -93,9 +93,9 @@ Over the past decade, we have witnessed Hong Kong's printing industry transform 
     h1: 'ZprintProについて',
     subtitle: '香港で15年以上、高品質印刷に専念',
     storyTitle: 'ブランドストーリー',
-    story: `智印雲 ZprintProは2012年に香港で設立され、当初は名刺とチラシに特化した小さな印刷スタジオでした。創業者は色彩管理へのこだわりと顧客ニーズへの鋭い洞察力により、段階的にパッケージ、ステッカー、ポスター、書籍などの総合印刷領域へ事業を拡大しました。
+    story: `智印雲 ZprintPro は、香港を起点にグローバル展開する総合印刷サービスプロバイダーです。企業、教育機関、クリエイターの皆様に、高品質でカスタマイズ可能な印刷ソリューションを提供しており、ビジネス、プロモーション、パッケージ、教育まで幅広いシーンをカバー。先進的な工芸、多様な素材、智能的なテクノロジーを活かし、お客様のブランド価値伝達と市場競争力向上を支援しています。
 
-10年間、香港の印刷業界が伝統的なオフセットからデジタル印刷へと変貌する過程を目の当たりにしてきました。私たちはハイデルベルク4色オフセット印刷機とHP Indigoデジタル印刷システムを率先して導入し、ICCカラーマネジメントワークフローを構築しました。これにより、すべての製品がブランドカラーを正確に再現することを保証しています。金融、法律、飲食、小売、教育、クリエイティブ業界を含む、1000社以上の香港および海外企業にサービスを提供しています。`,
+「智印未来」（より聪明な印刷、より明るい未来）をビジョンに、智能化された生産プロセス、フルオーダーメイド、エコ素材を通じて、他にない高品質な印刷物でブランドイメージと市場競争力を高めます。創立から15年、1000社以上のお客様にサービスを提供し、東京・大阪・名古屋など日本全国、ならびにアジア・米国・欧州・オーストラリアへの迅速配送で、グローバル規模の印刷パートナーとして信頼を集めてまいりました。`,
     advantageTitle: '核心強み',
     advantages: [
       { title: '品質保証', desc: 'ISO 9001品質管理システム認証、ハイデルベルク4色オフセット印刷、ICCカラーマネジメント、Delta E ≤3の色彩誤差管理。印前から印後まで、各工程に専任者が検査を行います。' },

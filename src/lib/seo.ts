@@ -16,6 +16,11 @@ export const siteConfig = {
   alternateName: ['ZprintPro', 'ZprintPro HK', '智印雲印刷'],
   url: 'https://zprintpro.com',
   logo: 'https://zprintpro.com/logo-icon.svg',
+  // 2026-07-13: 全站 canonical 1 句品牌描述 (per-locale 文案以 translations.<locale>.metaDesc 為準)
+  // 用於 Schema.org default og:description / email signature / press-kit fallback
+  // 注意 NAP vs SEO 脫鉤 (§13.10): 不寫 supplier origin 城市, 用 "Hong Kong-rooted" 品牌定位
+  description:
+    'ZprintPro is a Hong Kong-rooted, global printing partner for businesses, schools, and creative teams — premium custom printing with ISO 9001 + FSC certification, 30-second AI quotes, free design mockups, no minimums, and worldwide delivery to 50+ countries.',
   // 2026-06-15 P0: NAP 统一修复
   // 2026-06-28 修正: zh-hk NAP.telephone 之前写 "+852 5905 1334" 假号, 客户拨不通 → 改真实 +86 198 8085 1334
   // NAP schema.telephone 跟 address.country 无强匹配要求, HK 地址 + +86 电话 GSC 不扣分
