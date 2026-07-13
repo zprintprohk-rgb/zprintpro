@@ -113,12 +113,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
       date: '2024-03-15', category: '行業趨勢',
       content: '',
     },
-    'hong-kong-printing-guide': {
-      title: '香港印刷公司選擇完全指南：觀塘、九龍、新界哪裡最可靠？',
-      description: '深入比較香港觀塘、九龍、新界的印刷公司，從價格、品質、交貨速度到客戶評價，幫您找到最適合的印刷合作夥伴。',
-      date: '2024-05-20', category: '香港本地',
-      content: '',
-    },
+    'hong-kong-printing-guide': { title: 'Custom Sticker & Packaging Printing Guide for US Small Business | MOQ, Materials, FedEx Ground 5-7 Day', description: 'Complete guide to custom stickers, packaging boxes, and labels for US small business. Compare vinyl/PVC/Kraft/clear materials, 50-1000 MOQ, Free shipping over $99, FedEx Ground 5-7 day or DHL Express 2-4 day, ISO 9001 certified factory-direct pricing.', date: '2024-05-20', category: 'Printing Guide', content: '' },
     'design-file-specs': {
       title: '印刷文件設計規範：出血位、分辨率、色彩模式一次搞懂',
       description: '從出血位設置到色彩模式轉換，這篇指南將幫助設計師和企業避免最常見的印刷文件錯誤，確保印刷成品完美無瑕。',
@@ -131,18 +126,8 @@ const posts: Record<string, Record<string, { title: string; description: string;
       date: '2024-05-10', category: '品牌建設',
       content: '',
     },
-    'mtr-advertising-specs': {
-      title: '港鐵廣告印刷規格全解析：港島線、觀塘線、荃灣線投放指南',
-      description: '詳細解析港鐵各線路廣告位的印刷規格、尺寸要求和投放策略，助您在香港最繁忙的交通網絡中精準觸達目標客戶。',
-      date: '2024-05-05', category: '香港本地',
-      content: '',
-    },
-    'flyer-printing-guide': {
-      title: '香港傳單印刷完全指南：A4/A5 尺寸、紙質選擇與派發策略',
-      description: '從 A4、A5 傳單尺寸到銅版紙、書紙材質，從設計要點到派發渠道，智印雲為您拆解香港傳單印刷的每個關鍵環節，助您用最低成本觸達最多客戶。',
-      date: '2026-07-02', category: '印刷工藝',
-      content: '',
-    },
+    'mtr-advertising-specs': { title: 'Event Poster & Trade Show Print Specs for US B2B | Sizes, Paper, Finishes, FedEx 2-Day', description: 'Event poster and trade show print specs for US B2B and conference organizers. Standard sizes (A3/A2/A1/A0/24x36"), paper (gloss/matte/PP/canvas), finishing (lamination/hole/grommet), bulk 50-1000 runs, FedEx 2-Day or DHL Express 2-4 day from Asia factory.', date: '2024-05-05', category: 'Printing Guide', content: '' },
+    'flyer-printing-guide': { title: 'Custom Flyer Printing Guide for US Small Business: Sizes, Paper, Design | Free Shipping $99+', description: 'Custom flyer printing guide for US small business. Standard sizes (4x6 / 5x7 / 8.5x11 / A4), paper (glossy/matte/recycled/silk), finishing (UV coating/lamination/folding), 25-5000 MOQ, Free shipping over $99 USA, 3-5 day turnaround from Asia factory.', date: '2026-07-02', category: 'Printing Guide', content: '' },
     'food-packaging-printing-guide': {
       title: '食品包裝印刷完全指南：材質、安全認證與設計實務',
       description: '食品級包裝印刷點樣揀？從牛皮紙盒到食品級淋膜，食品安全認證到設計實務，智印雲為您拆解食品包裝印刷的每個關鍵環節。',
@@ -155,12 +140,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
       date: '2026-07-02', category: '包裝知識',
       content: '',
     },
-'poster-printing-guide': {
-      title: '香港海報印刷完全指南：尺寸、紙質、工藝與設計要點',
-      description: '從A3海報到A0大型海報，從銅版紙到PP膠片，從UV印刷到燙金工藝，智印雲為您拆解香港海報印刷的尺寸選擇、紙質對比、表面處理與設計要點，助您打造視覺衝擊力最強的品牌形象宣傳品。',
-      date: '2026-07-02', category: '印刷知識',
-      content: '',
-    },'company-intro': { title: 'About ZprintPro: Professional Equipment & One-Stop Printing Services', description: 'ZprintPro features Heidelberg 6+1 printing presses, HP digital printers, and Martini perfect binding lines for full-service printing solutions.', date: '2024-06-01', category: 'Company News', content: '' },
+    'poster-printing-guide': { title: 'Custom Poster Printing Guide for US Events & Retail: Sizes, Paper, Finishes | Free Shipping', description: 'Custom poster printing guide for US event organizers and retail. Standard sizes (A3/A2/A1/A0/18x24"/24x36"), paper (gloss/matte/PP film/canvas), finishing (UV/lamination/edge tape), 25-1000 MOQ, Free shipping over $99 USA, 3-5 day turnaround from Asia factory.', date: '2026-07-02', category: 'Printing Guide', content: '' },
     'sticker-guide': { title: 'Complete Sticker Printing Guide: Materials, Finishes & Applications', description: 'Deep dive into sticker material choices, surface treatments, and application scenarios.', date: '2024-04-15', category: 'Sticker Guide', content: '' },
     'business-card-design': { title: '10 Golden Rules for Business Card Design', description: 'Master the core techniques of business card design.', date: '2024-04-10', category: 'Card Guide', content: '' },
     'packaging-trends': { title: '2024 Packaging Design Trends Analysis', description: 'Explore latest packaging design trends.', date: '2024-04-05', category: 'Packaging Guide', content: '' },
@@ -290,33 +270,19 @@ const posts: Record<string, Record<string, { title: string; description: string;
     'cmyk-guide': { title: 'CMYK vs RGB：印刷カラーモード完全解説', description: 'CMYKとRGBの違いを理解し、最適な印刷結果を得ましょう。', date: '2024-03-28', category: '印刷技術', content: '' },
     'paper-materials': { title: '印刷用紙選択ガイド：アート紙から特殊紙まで', description: '異なる紙の特性を分析し、最適な用紙を選びましょう。', date: '2024-03-20', category: '印刷技術', content: '' },
     'eco-printing': { title: 'エコ印刷：持続可能な包装の未来', description: '地球とブランドの両方のために、エコ印刷について学びましょう。', date: '2024-03-15', category: '業界トレンド', content: '' },
-    'hong-kong-printing-guide': { title: '香港印刷会社選び完全ガイド', description: '香港の観塘、九龍、新界の印刷会社を比較し、最適なパートナーを選びましょう。', date: '2024-05-20', category: '香港ローカル', content: '' },
+    'hong-kong-printing-guide': { title: 'オリジナルステッカー・パッケージ印刷ガイド：小ロット・短納期・データ入稿 | ZprintPro', description: 'オリジナルステッカー・パッケージ・印刷物の完全ガイド。素材（ビニール・PVC・クラフト・透明・箔押し）・小ロット（30枚〜）・短納期（最短3日出荷）・全国送料込み・DHL国際配送対応。中小企業・D2Cブランド・同人サークル向け。', date: '2024-05-20', category: '印刷知識', content: '' },
     'design-file-specs': { title: '印刷用デザインファイル仕様', description: '裁ち落とし、解像度、カラーモードについて学びましょう。', date: '2024-05-15', category: 'デザインチップ', content: '' },
     'brand-materials-checklist': { title: '企業ブランド物料チェックリスト', description: '名刺から展示物まで、ブランド構築に必要な印刷物料を確認しましょう。', date: '2024-05-10', category: 'ブランディング', content: '' },
-    'mtr-advertising-specs': { title: 'MTR広告印刷仕様', description: '港島線、観塘線、荃湾線の広告印刷規格について解説します。', date: '2024-05-05', category: '香港ローカル', content: '' },
-    'flyer-printing-guide': {
-      title: '香港チラシ印刷完全ガイド：サイズ、用紙、設計、配布戦略',
-      description: 'A4・A5、二つ折り・三つ折り、コート紙・書籍用紙まで、香港でのチラシ印刷を徹底解説。', date: '2026-07-02', category: '印刷知識',
-      content: '',
-    },
+    'mtr-advertising-specs': { title: 'イベントポスター・展示パネル印刷仕様：サイズ・用紙・加工・短納期 | ZprintPro', description: 'イベントポスター・展示パネル・展示会の印刷仕様。標準サイズ（A3/A2/A1/A0/24x36インチ）・用紙（光沢・マット・PP・キャンバス）・加工（UVラミネート・穴あけ・グロメット）・短納期（3日〜7日出荷）・DHL国際配送対応。展示会主催・イベント企画会社向け。', date: '2024-05-05', category: '印刷知識', content: '' },
+    'flyer-printing-guide': { title: 'オリジナルチラシ印刷ガイド：サイズ・用紙・デザイン・配布戦略 | 小ロット対応', description: 'オリジナルチラシ印刷完全ガイド。標準サイズ（A4・A5・B5・A6）・用紙（コート紙・マット紙・上質紙・再生紙）・加工（両面印刷・折り・PP加工）・小ロット対応（30枚〜5000枚）・短納期（3日〜7日出荷）。飲食店・小売・不動産・イベント主催者向け。', date: '2026-07-02', category: '印刷知識', content: '' },
     'food-packaging-printing-guide': {
       title: '食品パッケージ印刷完全ガイド：素材、安全認証、設計',
       description: '食品グレード包装印刷の全て — クラフト箱から食品対応ラミネート、認証、設計のベストプラクティスまで徹底解説。',
       date: '2026-07-02', category: '包装知識',
       content: '',
     },
-    'paper-bag-printing-guide': {
-      title: '香港紙袋印刷完全ガイド：素材、サイズ、持ち手と2026年トレンド',
-      description: 'クラフト紙袋、白カード紙袋、ギフト紙袋、エコバッグまで、香港の boutique・カフェ・小売向けに紙袋印刷を徹底解説。',
-      date: '2026-07-02', category: '包装知識',
-      content: '',
-    },
-    'poster-printing-guide': {
-      title: '香港ポスター印刷完全ガイド：サイズ、用紙、加工、デザインのポイント',
-      description: 'A3からA0まで、アート紙からPPフィルムまで、UV印刷から箔押しまで—ZprintProがポスタープリントのサイズ、素材、表面加工、デザインのポイントを徹底解説。',
-      date: '2026-07-02', category: '印刷知識',
-      content: '',
-    },
+    'paper-bag-printing-guide': { title: 'オリジナル紙袋印刷完全ガイド：素材・サイズ・持ち手と2026年トレンド | 小ロット対応', description: 'クラフト紙袋、白カード紙袋、ギフト紙袋、エコバッグまで、日本の boutique・カフェ・小売向けに紙袋印刷を徹底解説。30枚〜、短納期（3日〜7日出荷）、全国送料込み。', date: '2026-07-02', category: '包装知識', content: '' },
+    'poster-printing-guide': { title: 'オリジナルポスター印刷ガイド：サイズ・用紙・加工・デザイン | 短納期対応', description: 'オリジナルポスター印刷完全ガイド。標準サイズ（A3・A2・A1・A0・B1・B2）・用紙（光沢紙・マット紙・合成紙・耐水PP・キャンバス）・加工（UVラミネート・PP加工・周囲テープ）・短納期（3日〜7日出荷）。イベント主催・展示会・小売店・不動産向け。', date: '2026-07-02', category: '印刷知識', content: '' },
 
     // 2026-07-04 純文字深度ブログ: レストラン開業チラシ (Tier A × P0 flyers) — 純文字・無図
     'restaurant-opening-flyer-printing-guide': {

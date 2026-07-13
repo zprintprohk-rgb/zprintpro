@@ -434,13 +434,13 @@ const lpHKPrintingGuide: BlogPostMeta = {
   date: '2024-05-20',
   title: {
     'zh-hk': '香港印刷公司選擇完全指南：觀塘、九龍、新界哪裡最可靠？',
-    en: 'Hong Kong Printing Company Guide: Kwun Tong, Kowloon & NT',
-    ja: '香港印刷会社選択完全ガイド',
+    en: 'Custom Sticker & Packaging Printing Guide for US Small Business | MOQ, Materials, FedEx Ground 5-7 Day',
+    ja: 'オリジナルステッカー・パッケージ印刷ガイド：小ロット・短納期・データ入稿 | ZprintPro',
   },
   excerpt: {
     'zh-hk': '深入比較香港觀塘、九龍、新界的印刷公司，從價格、品質、交貨速度到客戶評價，幫您找到最適合的印刷合作夥伴。',
-    en: 'Compare printing companies across Hong Kong from pricing to quality to find your ideal partner.',
-    ja: '香港各区の印刷会社を価格、品質、納期から比較。',
+    en: 'Complete guide to custom stickers, packaging boxes, and labels for US small business. Compare vinyl/PVC/Kraft/clear materials, 50-1000 MOQ, Free shipping over $99, FedEx Ground 5-7 day or DHL Express 2-4 day, ISO 9001 certified factory-direct pricing.',
+    ja: 'オリジナルステッカー・パッケージ・印刷物の完全ガイド。素材（ビニール・PVC・クラフト・透明・箔押し）・小ロット（30枚〜）・短納期（最短3日出荷）・全国送料込み・DHL国際配送対応。中小企業・D2Cブランド・同人サークル向け。',
   },
   cover: {
     'zh-hk': '/images/blog/blog-sticker-guide-zh-hk.webp',
@@ -500,13 +500,13 @@ const lpMtrSpecs: BlogPostMeta = {
   date: '2024-05-05',
   title: {
     'zh-hk': '港鐵廣告印刷規格全解析：港島線、觀塘線、荃灣線投放指南',
-    en: 'MTR Advertising Print Specs: Island, Kwun Tong & Tsuen Wan Lines',
-    ja: 'MTR広告印刷規格全解析',
+    en: 'Event Poster & Trade Show Print Specs for US B2B | Sizes, Paper, Finishes, FedEx 2-Day',
+    ja: 'イベントポスター・展示パネル印刷仕様：サイズ・用紙・加工・短納期 | ZprintPro',
   },
   excerpt: {
     'zh-hk': '詳細解析港鐵各線路廣告位的印刷規格、尺寸要求和投放策略，助您在香港最繁忙的交通網絡中精準觸達目標客戶。',
-    en: 'Detailed specifications and strategies for MTR advertising across Hong Kong.',
-    ja: 'MTR各路線の広告枠の印刷規格、サイズ要件、投放戦略を詳しく解説。',
+    en: 'Event poster and trade show print specs for US B2B and conference organizers. Standard sizes (A3/A2/A1/A0/24x36"), paper (gloss/matte/PP/canvas), finishing (lamination/hole/grommet), bulk 50-1000 runs, FedEx 2-Day or DHL Express 2-4 day from Asia factory.',
+    ja: 'イベントポスター・展示パネル・展示会の印刷仕様。標準サイズ（A3/A2/A1/A0/24x36インチ）・用紙（光沢・マット・PP・キャンバス）・加工（UVラミネート・穴あけ・グロメット）・短納期（3日〜7日出荷）・DHL国際配送対応。展示会主催・イベント企画会社向け。',
   },
   cover: {
     'zh-hk': '/images/blog/blog-business-card-design-zh-hk-2.webp',
@@ -522,13 +522,13 @@ const lpFlyerPrintingGuide: BlogPostMeta = {
   date: '2026-07-02',
   title: {
     'zh-hk': '香港傳單印刷完全指南：尺寸、紙質、設計到派發全攻略',
-    en: 'Flyer Printing Guide: Sizes, Paper, Design & Distribution in Hong Kong',
-    ja: '香港チラシ印刷完全ガイド：サイズ、用紙、デザイン、配布まで徹底解説',
+    en: 'Custom Flyer Printing Guide for US Small Business: Sizes, Paper, Design | Free Shipping $99+',
+    ja: 'オリジナルチラシ印刷ガイド：サイズ・用紙・デザイン・配布戦略 | 小ロット対応',
   },
   excerpt: {
     'zh-hk': '從A4傳單、A5傳單到三摺傳單，材質從銅版紙到書紙，智印雲為您拆解香港傳單印刷的尺寸選擇、紙質對比、設計要點與派發策略。',
-    en: 'From A4 to A5, bi-fold to tri-fold, art paper to book paper — a complete guide to flyer printing in Hong Kong for marketing impact.',
-    ja: 'A4、A5、二つ折り、三つ折り、コート紙から書籍用紙まで—香港チラシ印刷のサイズ、材質、デザイン、配布戦略を徹底解説。',
+    en: 'Custom flyer printing guide for US small business. Standard sizes (4x6 / 5x7 / 8.5x11 / A4), paper (glossy/matte/recycled/silk), finishing (UV coating/lamination/folding), 25-5000 MOQ, Free shipping over $99 USA, 3-5 day turnaround from Asia factory.',
+    ja: 'オリジナルチラシ印刷完全ガイド。標準サイズ（A4・A5・B5・A6）・用紙（コート紙・マット紙・上質紙・再生紙）・加工（両面印刷・折り・PP加工）・小ロット対応（30枚〜5000枚）・短納期（3日〜7日出荷）。飲食店・小売・不動産・イベント主催者向け。',
   },
   cover: {
     'zh-hk': '/images/blog/zh-hk/flyer-printing-guide.webp',
@@ -567,12 +567,12 @@ const lpPaperBagPrintingGuide: BlogPostMeta = {
   title: {
     'zh-hk': '香港紙袋印刷完全指南：材質、尺寸、手挽與設計趨勢',
     en: 'Paper Bag Printing Guide: Materials, Sizes, Handles & Design Trends',
-    ja: '香港紙袋印刷完全ガイド：材質、サイズ、持ち手とデザイントレンド',
+    ja: 'オリジナル紙袋印刷完全ガイド：素材・サイズ・持ち手と2026年トレンド | 小ロット対応',
   },
   excerpt: {
     'zh-hk': '牛皮紙袋、白卡紙袋、禮品紙袋、環保紙袋...紙袋印刷點樣揀？智印雲為您拆解香港紙袋印刷的材質、尺寸、手挽選擇與設計趨勢。',
     en: 'Kraft bags, white card bags, gift bags, eco bags — a complete guide to paper bag printing in Hong Kong.',
-    ja: 'クラフト袋、白卡紙袋、ギフト袋、エコ袋—香港紙袋印刷の材質、サイズ、持ち手、デザイントレンドを徹底解説。',
+    ja: 'クラフト紙袋、白カード紙袋、ギフト紙袋、エコバッグまで、日本の boutique・カフェ・小売向けに紙袋印刷を徹底解説。30枚〜、短納期（3日〜7日出荷）、全国送料込み。',
   },
   cover: {
     'zh-hk': '/images/blog/zh-hk/paper-bag-printing-guide.webp',
@@ -589,13 +589,13 @@ const lpPosterPrintingGuide: BlogPostMeta = {
   date: '2026-07-02',
   title: {
     'zh-hk': '香港海報印刷完全指南：尺寸、紙質、工藝與設計要點',
-    en: 'Poster Printing Guide: Sizes, Paper, Finishes & Design Tips in Hong Kong',
-    ja: '香港ポスター印刷完全ガイド：サイズ、用紙、加工、デザインのポイント',
+    en: 'Custom Poster Printing Guide for US Events & Retail: Sizes, Paper, Finishes | Free Shipping',
+    ja: 'オリジナルポスター印刷ガイド：サイズ・用紙・加工・デザイン | 短納期対応',
   },
   excerpt: {
     'zh-hk': '從A3到A0，從銅版紙到PP膠片，從海報筒包裝到批量交貨，智印雲為您拆解香港海報印刷的尺寸選擇、紙質對比、工藝選項與設計要點。',
-    en: 'From A3 to A0, art paper to PP film, from tube packaging to bulk delivery — a comprehensive guide to poster printing in Hong Kong by ZprintPro.',
-    ja: 'A3からA0まで、アート紙からPPフィルムまで、ポスター筒包装から一括納品まで—香港ポスタープリントのサイズ、素材、加工、デザインのポイントを徹底解説。',
+    en: 'Custom poster printing guide for US event organizers and retail. Standard sizes (A3/A2/A1/A0/18x24"/24x36"), paper (gloss/matte/PP film/canvas), finishing (UV/lamination/edge tape), 25-1000 MOQ, Free shipping over $99 USA, 3-5 day turnaround from Asia factory.',
+    ja: 'オリジナルポスター印刷完全ガイド。標準サイズ（A3・A2・A1・A0・B1・B2）・用紙（光沢紙・マット紙・合成紙・耐水PP・キャンバス）・加工（UVラミネート・PP加工・周囲テープ）・短納期（3日〜7日出荷）。イベント主催・展示会・小売店・不動産向け。',
   },
   cover: {
     'zh-hk': '/images/blog/zh-hk/poster-printing-guide.webp',

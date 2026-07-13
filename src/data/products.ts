@@ -17402,7 +17402,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     category: 'educational',
     category_slug: 'educational',
     name: '香港畢業紀念冊 — 畢業紀念冊 / 校史特刊 / 校友會刊 / 社團特刊', nameEn: 'Graduation Yearbooks, School Anniversary & Alumni Publications', nameJa: '卒業記念アルバム — 卒業記念・校史特刊・同窓会誌・クラブ特刊', title_zh: '香港畢業紀念冊 — 畢業紀念冊 / 校史特刊 / 校友會刊 / 社團特刊',
-    description: '香港畢業紀念冊/校史特刊/校友會刊/社團特刊定制，騎馬釘/膠裝/精裝三種裝訂，支持班級照片、師長題詞、學校 logo 全頁。香港本地 48 小時交付，DHL 全球 2-4 天。', descriptionEn: 'Graduation yearbooks, school anniversary & alumni publication printing — saddle stitch / perfect bound / hardcover, supporting class photos, faculty messages, school logos. Free design mockup, 100 MOQ, DHL Express global 2-4 day delivery from Asia factory.', descriptionJa: '卒業記念アルバム・校史特刊・同窓会誌・クラブ特刊印刷、中綴じ/無線綴じ/上製本の3方式、クラス写真・先生メッセージ・学校ロゴ全面対応。無料デザインモックアップ、100冊〜、深圳自社工場からDHL国際速達2-4日。', description_zh: '香港畢業紀念冊/校史特刊/校友會刊/社團特刊定制，騎馬釘/膠裝/精裝三種裝訂，支持班級照片、師長題詞、學校 logo 全頁。香港本地 48 小時交付，DHL 全球 2-4 天。',
+    description: '香港畢業紀念冊/校史特刊/校友會刊/社團特刊定制，騎馬釘/膠裝/精裝三種裝訂，支持班級照片、師長題詞、學校 logo 全頁。香港本地 48 小時交付，DHL 全球 2-4 天。', descriptionEn: 'Graduation yearbooks, school anniversary & alumni publication printing — saddle stitch / perfect bound / hardcover, supporting class photos, faculty messages, school logos. Free design mockup, 100 MOQ, DHL Express global 2-4 day delivery from Asia factory.', descriptionJa: '卒業記念アルバム・校史特刊・同窓会誌・クラブ特刊印刷、中綴じ/無線綴じ/上製本の3方式、クラス写真・先生メッセージ・学校ロゴ全面対応。無料デザインモックアップ、100冊〜、アジア自社工場からDHL国際速達2-4日。', description_zh: '香港畢業紀念冊/校史特刊/校友會刊/社團特刊定制，騎馬釘/膠裝/精裝三種裝訂，支持班級照片、師長題詞、學校 logo 全頁。香港本地 48 小時交付，DHL 全球 2-4 天。',
     longDescription: `<h3>三種裝訂工藝對比</h3>
 <p>畢業紀念冊常用 3 種裝訂方式, 頁數與預算決定最佳方案:</p>
 <table>
