@@ -478,14 +478,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "防水貼紙 | 防水 PVC 異形切割 | 智印雲 ZprintPro",
         "description": "防水貼紙/防水貼紙 100 張起。採用 防水 PVC/銅版紙/透明料 高品質材質，支援 圓/方/異形 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "防水貼紙 | PVC/PP合成紙 異形切割",
-        "keywords": ["防水貼紙", "防水 貼紙 印刷", "防水 pvc 貼紙"],
+        "keywords": ["防水貼紙", "防水 貼紙 印刷", "防水 pvc 貼紙", "貼紙印刷", "不干膠印刷", "透明貼紙", "異形貼紙", "標籤貼紙", "定制貼紙", "小批量貼紙", "防水不干膠", "卷筒標籤"],
         "body": " food labels"
       },
       "en": {
         "title": "Waterproof Stickers | Durable PVC | Free US Ship | ZprintPro",
         "description": "Waterproof stickers for outdoor labels. PVC, gloss lamination, die-cut. 100-MOQ, 3-5 year. Free US shipping over $100, DHL Express. SGS tested. Get a quote.",
         "h1": "Waterproof Stickers | Outdoor PVC | ZprintPro",
-        "keywords": ["waterproof stickers","custom waterproof stickers","waterproof sticker printing","vinyl stickers waterproof","die cut stickers outdoor","PVC stickers durable","waterproof stickers free shipping","bulk waterproof stickers","stickers USD","bespoke stickers UK"],
+        "keywords": ["waterproof stickers", "custom waterproof stickers", "waterproof sticker printing", "vinyl stickers waterproof", "die cut stickers outdoor", "PVC stickers durable", "waterproof stickers free shipping", "bulk waterproof stickers", "stickers USD", "bespoke stickers UK", "sticker printing", "custom stickers", "vinyl stickers", "die-cut stickers", "transparent stickers", "removable stickers", "bulk stickers", "label printing", "product stickers"],
         "body": "ZprintPro Custom Waterproof Sticker Printing for outdoor labels, product packaging, car decals, and equipment tags across the US and global markets. PVC or PP synthetic facestock with matte or gloss lamination, die-cut shapes, and variable QR codes. 100-sticker MOQ, Free US shipping over $100, SGS migration tested."
       
       
@@ -494,7 +494,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "防水ステッカー | 防水 PVC ダイカット | ZprintPro",
         "description": "防水ステッカーの防水ステッカーは ZprintPro にお任せ。防水 PVC/コート/透明 高品質用紙、丸/角/型抜き 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " outdoor stickers",
-        "keywords": ["防水ステッカー", "防水ステッカー 印刷", "waterproof stickers"],
+        "keywords": ["防水ステッカー", "防水ステッカー 印刷", "waterproof stickers", "ステッカー印刷", "オリジナルステッカー", "小ロットステッカー", "ダイカットステッカー", "透明ステッカー", "商品ラベル", "カスタムステッカー", "剥がせるステッカー", "ロゴステッカー"],
         "body": " same day delivery"
       }
     },
@@ -530,14 +530,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "description": "透明貼紙/透明貼紙 100 張起。採用 防水 PVC/銅版紙/透明料 高品質材質，支援 圓/方/異形 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "透明貼紙",
-        "keywords": ["透明貼紙", "透明貼", "貼紙印刷"],
+        "keywords": ["透明貼紙", "透明貼", "貼紙印刷", "不干膠印刷", "防水貼紙", "異形貼紙", "標籤貼紙", "定制貼紙", "小批量貼紙", "防水不干膠", "卷筒標籤"],
         "body": " food packaging"
       },
       "en": {
         "title": "Transparent Stickers | Die-Cut Vinyl | ZprintPro",
         "description": "Custom transparent stickers from ZprintPro Hong Kong. Die-Cut Vinyl, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
         "h1": "Transparent Stickers 100+ | ZprintPro",
-        "keywords": ["transparent stickers","custom transparent stickers","transparent stickers printing hong kong","transparent stickers free shipping","transparent stickers USD","bulk transparent stickers","transparent stickers DHL","bespoke transparent stickers","transparent stickers wholesale","transparent stickers pricing"],
+        "keywords": ["transparent stickers", "custom transparent stickers", "transparent stickers printing hong kong", "transparent stickers free shipping", "transparent stickers USD", "bulk transparent stickers", "transparent stickers DHL", "bespoke transparent stickers", "transparent stickers wholesale", "transparent stickers pricing", "sticker printing", "custom stickers", "waterproof stickers", "vinyl stickers", "die-cut stickers", "removable stickers", "bulk stickers", "label printing", "product stickers"],
         "body": "ZprintPro Transparent Stickers for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Die-Cut Vinyl, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -545,7 +545,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "透明ステッカー | 防水 PVC ダイカット | ZprintPro",
         "description": "透明ステッカーの透明ステッカーは ZprintPro にお任せ。防水 PVC/コート/透明 高品質用紙、丸/角/型抜き 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": "Transparent PET material creates invisible effect when applied. Perfect for cosmetics",
-        "keywords": ["透明ステッカー", "透明ステッカー 印刷", "transparent stickers"],
+        "keywords": ["透明ステッカー", "透明ステッカー 印刷", "transparent stickers", "ステッカー印刷", "防水ステッカー", "オリジナルステッカー", "小ロットステッカー", "ダイカットステッカー", "商品ラベル", "カスタムステッカー", "剥がせるステッカー", "ロゴステッカー"],
         "body": " transparent pricing"
       }
     },
@@ -580,14 +580,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "可移貼紙 | 防水 PVC 異形切割 | 智印雲 ZprintPro",
         "description": "可移貼紙/不殘膠貼紙 100 張起。採用 防水 PVC/銅版紙/透明料 高品質材質，支援 圓/方/異形 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "特殊背膠設計，移除後不留殘膠，保護貼附表面。適合車窗、玻璃櫥窗、短期展覽。智印雲提供專業可移貼紙(無殘膠)服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["可移貼紙", "不殘膠貼紙", "貼紙印刷"],
+        "keywords": ["可移貼紙", "不殘膠貼紙", "貼紙印刷", "不干膠印刷", "防水貼紙", "透明貼紙", "異形貼紙", "標籤貼紙", "定制貼紙", "小批量貼紙", "防水不干膠", "卷筒標籤"],
         "body": " short-term exhibitions. ZprintPro offers professional Removable Stickers services in Hong Kong. High quality"
       },
       "en": {
         "title": "Removable Stickers | No Residue | Free US Ship | ZprintPro",
         "description": "Removable stickers that peel off cleanly. Vinyl or PP, repositionable adhesive. 100-MOQ, 90-day removal. Free US shipping over $100, DHL Express. Quote.",
         "h1": "Removable Stickers 100+ | No Residue | ZprintPro",
-        "keywords": ["removable stickers","no residue stickers","repositionable stickers","window decals removable","wall stickers removable","temporary stickers","rental equipment tags","removable adhesive labels","stickers free shipping","bulk removable stickers"],
+        "keywords": ["removable stickers", "no residue stickers", "repositionable stickers", "window decals removable", "wall stickers removable", "temporary stickers", "rental equipment tags", "removable adhesive labels", "stickers free shipping", "bulk removable stickers", "sticker printing", "custom stickers", "waterproof stickers", "vinyl stickers", "die-cut stickers", "transparent stickers", "bulk stickers", "label printing", "product stickers"],
         "body": "ZprintPro Removable Sticker Printing for retail windows, events, rental equipment, and short-term campaigns across US and global markets. Vinyl or PP facestock with low-tack repositionable adhesive that removes cleanly within 90 days. 100-sticker MOQ, Free US shipping over $100, 11 colors in stock."
       
       
@@ -596,7 +596,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "再剥離ステッカー | 防水 PVC ダイカット | ZprintPro",
         "description": "再剥離ステッカーの再剥離ステッカーは ZprintPro にお任せ。防水 PVC/コート/透明 高品質用紙、丸/角/型抜き 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " glass displays",
-        "keywords": ["再剥離ステッカー", "再剥離ステッカー 印刷", "removable stickers"],
+        "keywords": ["再剥離ステッカー", "再剥離ステッカー 印刷", "removable stickers", "ステッカー印刷", "防水ステッカー", "オリジナルステッカー", "小ロットステッカー", "ダイカットステッカー", "透明ステッカー", "商品ラベル", "カスタムステッカー", "剥がせるステッカー", "ロゴステッカー"],
         "body": " fast delivery."
       }
     },
@@ -631,14 +631,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "小批量貼紙 | 防水 PVC 異形切割 | 智印雲 ZprintPro",
         "description": "小批量貼紙/貼紙印刷 100 張起。採用 防水 PVC/銅版紙/透明料 高品質材質，支援 圓/方/異形 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "最低A4尺寸起印，無需大量庫存壓力。適合初創品牌、活動宣傳、個人創作。智印雲提供專業小批量貼紙服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["小批量貼紙", "貼紙印刷", "貼紙訂製", "印貼紙"],
+        "keywords": ["小批量貼紙", "貼紙印刷", "貼紙訂製", "印貼紙", "不干膠印刷", "防水貼紙", "透明貼紙", "異形貼紙", "標籤貼紙", "定制貼紙", "防水不干膠", "卷筒標籤"],
         "body": " event promotion"
       },
       "en": {
         "title": "Small Batch Stickers | 50+ MOQ | Free US Ship | ZprintPro",
         "description": "Small batch stickers for startups and creators. Vinyl, paper, holographic, foil. 50-MOQ, 3-5 day. Free US shipping over $100, DHL Express. No setup fees.",
         "h1": "Small Batch Stickers 50+ | No Setup | ZprintPro",
-        "keywords": ["small batch stickers","custom stickers small quantity","50 stickers minimum","startup stickers","indie brand stickers","creator stickers","holographic stickers","foil stickers small","stickers free shipping","bulk custom stickers"],
+        "keywords": ["small batch stickers", "custom stickers small quantity", "50 stickers minimum", "startup stickers", "indie brand stickers", "creator stickers", "holographic stickers", "foil stickers small", "stickers free shipping", "bulk custom stickers", "sticker printing", "custom stickers", "waterproof stickers", "vinyl stickers", "die-cut stickers", "transparent stickers", "removable stickers", "bulk stickers", "label printing", "product stickers"],
         "body": "ZprintPro Small Batch Sticker Printing for startups, indie brands, creators, weddings, and event favors across US and global markets. 50-sticker minimum for vinyl/clear, 100 for paper/kraft/foil, with no setup fees. Available in vinyl, clear, holographic, kraft, and metallic foil. 3-5 day production, Free US shipping over $100."
       
       
@@ -647,7 +647,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "小ロットステッカー | 防水 PVC ダイカット | ZprintPro",
         "description": "小ロットステッカーの小ロットステッカーは ZprintPro にお任せ。防水 PVC/コート/透明 高品質用紙、丸/角/型抜き 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " no bulk inventory pressure. Perfect for startups",
-        "keywords": ["小ロットステッカー", "小ロットステッカー 印刷", "small batch stickers"],
+        "keywords": ["小ロットステッカー", "小ロットステッカー 印刷", "small batch stickers", "ステッカー印刷", "防水ステッカー", "オリジナルステッカー", "ダイカットステッカー", "透明ステッカー", "商品ラベル", "カスタムステッカー", "剥がせるステッカー", "ロゴステッカー"],
         "body": " transparent pricing"
       }
     },
@@ -682,14 +682,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "異形模切貼紙 | 防水 PVC 異形切割 | 智印雲 ZprintPro",
         "description": "異形模切貼紙/貼紙印刷 100 張起。採用 防水 PVC/銅版紙/透明料 高品質材質，支援 圓/方/異形 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "任意形狀模切，讓創意不受限制。可切出Logo形狀、卡通形象等獨特輪廓。智印雲提供專業異形模切貼紙服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["異形模切貼紙", "貼紙印刷", "貼紙訂製", "異形貼紙"],
+        "keywords": ["異形模切貼紙", "貼紙印刷", "貼紙訂製", "異形貼紙", "不干膠印刷", "防水貼紙", "透明貼紙", "標籤貼紙", "定制貼紙", "小批量貼紙", "防水不干膠", "卷筒標籤"],
         "body": " cartoon characters"
       },
       "en": {
         "title": "Die-Cut Stickers | Custom Shape | Free US Ship | ZprintPro",
         "description": "Custom die-cut stickers in any shape. Vinyl, holographic, foil, ±0.2mm precision. 100-MOQ. Free US shipping over $100, DHL Express. Outdoor 3-5yr. Quote.",
         "h1": "Die-Cut Stickers 100+ | Custom Shape | ZprintPro",
-        "keywords": ["die cut stickers","custom shape stickers","die cut vinyl stickers","kiss cut stickers","logo stickers custom","holographic die cut","foil die cut stickers","stickers free shipping","bulk die cut stickers","bespoke sticker shapes"],
+        "keywords": ["die cut stickers", "custom shape stickers", "die cut vinyl stickers", "kiss cut stickers", "logo stickers custom", "holographic die cut", "foil die cut stickers", "stickers free shipping", "bulk die cut stickers", "bespoke sticker shapes", "sticker printing", "custom stickers", "waterproof stickers", "vinyl stickers", "die-cut stickers", "transparent stickers", "removable stickers", "bulk stickers", "label printing", "product stickers"],
         "body": "ZprintPro Die-Cut Sticker Printing for brand logos, packaging seals, laptop decals, and promotional merchandise across US and global markets. Digital cutting with ±0.2mm precision for vinyl, holographic, clear, and metallic foil. 100-sticker MOQ, Free US shipping over $100, outdoor durability 3-5 years."
       
       
@@ -698,7 +698,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "ダイカットステッカー | 防水 PVC ダイカット | ZprintPro",
         "description": "ダイカットステッカーのダイカットステッカーは ZprintPro にお任せ。防水 PVC/コート/透明 高品質用紙、丸/角/型抜き 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " creativity without limits. Can cut logo shapes",
-        "keywords": ["ダイカットステッカー", "ダイカットステッカー 印刷", "die cut stickers"],
+        "keywords": ["ダイカットステッカー", "ダイカットステッカー 印刷", "die cut stickers", "ステッカー印刷", "防水ステッカー", "オリジナルステッカー", "小ロットステッカー", "透明ステッカー", "商品ラベル", "カスタムステッカー", "剥がせるステッカー", "ロゴステッカー"],
         "body": " transparent pricing"
       }
     },
@@ -733,14 +733,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "燙金貼紙 | 防水 PVC 異形切割 | 智印雲 ZprintPro",
         "description": "燙金貼紙/燙金貼紙 100 張起。採用 防水 PVC/銅版紙/透明料 高品質材質，支援 圓/方/異形 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮品包裝、VIP標識。智印雲提供專業燙金貼紙服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["燙金貼紙", "貼紙印刷"],
+        "keywords": ["燙金貼紙", "貼紙印刷", "不干膠印刷", "防水貼紙", "透明貼紙", "異形貼紙", "標籤貼紙", "定制貼紙", "小批量貼紙", "防水不干膠", "卷筒標籤"],
         "body": " VIP badges. ZprintPro offers professional Foil Stickers services in Hong Kong. High quality"
       },
       "en": {
         "title": "Foil Stickers | Gold Silver Rose | Free US Ship | ZprintPro",
         "description": "Foil stickers with metallic shine. Gold, silver, rose gold, copper, holographic. Hot stamp foil. 100-MOQ. Free US shipping over $100, DHL Express. Quote.",
         "h1": "Foil Stickers 100+ | Hot Stamp | ZprintPro",
-        "keywords": ["foil stickers","gold foil stickers","silver foil stickers","rose gold foil","holographic foil stickers","metallic stickers","luxury stickers","foil labels custom","stickers free shipping","bulk foil stickers"],
+        "keywords": ["foil stickers", "gold foil stickers", "silver foil stickers", "rose gold foil", "holographic foil stickers", "metallic stickers", "luxury stickers", "foil labels custom", "stickers free shipping", "bulk foil stickers", "sticker printing", "custom stickers", "waterproof stickers", "vinyl stickers", "die-cut stickers", "transparent stickers", "removable stickers", "bulk stickers", "label printing", "product stickers"],
         "body": "ZprintPro Foil Sticker Printing for cosmetics, weddings, luxury packaging, and limited edition branding across US and global markets. Hot stamp foil in gold, silver, rose gold, copper, holographic, and brushed metal on vinyl or paper. 100-sticker MOQ, Free US shipping over $100, dishwasher-safe lamination available."
       
       
@@ -749,7 +749,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "箔押しステッカー | 防水 PVC ダイカット | ZprintPro",
         "description": "箔押しステッカーの箔押しステッカーは ZprintPro にお任せ。防水 PVC/コート/透明 高品質用紙、丸/角/型抜き 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " gift packaging",
-        "keywords": ["箔押しステッカー", "箔押しステッカー 印刷", "foil stickers"],
+        "keywords": ["箔押しステッカー", "箔押しステッカー 印刷", "foil stickers", "ステッカー印刷", "防水ステッカー", "オリジナルステッカー", "小ロットステッカー", "ダイカットステッカー", "透明ステッカー", "商品ラベル", "カスタムステッカー", "剥がせるステッカー", "ロゴステッカー"],
         "body": " fast delivery."
       }
     },
@@ -784,14 +784,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "防偽貼紙 | 防水 PVC 異形切割 | 智印雲 ZprintPro",
         "description": "防偽貼紙/防偽貼紙 100 張起。採用 防水 PVC/銅版紙/透明料 高品質材質，支援 圓/方/異形 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "特殊防偽工藝，包括雷射標籤、易碎紙等，保護品牌免受假冒。智印雲提供專業防偽貼紙服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["防偽貼紙", "貼紙印刷"],
+        "keywords": ["防偽貼紙", "貼紙印刷", "不干膠印刷", "防水貼紙", "透明貼紙", "異形貼紙", "標籤貼紙", "定制貼紙", "小批量貼紙", "防水不干膠", "卷筒標籤"],
         "body": " protecting brands from counterfeiting. ZprintPro offers professional Security Stickers services in Hong Kong. High quality"
       },
       "en": {
         "title": "Security Stickers | Tamper Seal | Free US Ship | ZprintPro",
         "description": "Security stickers for anti-counterfeit. Void-release, destructible, holographic, serialized QR. 100-MOQ. Free US shipping over $100, DHL. FDA, ISO compliant.",
         "h1": "Security Stickers | Anti-Counterfeit | ZprintPro",
-        "keywords": ["security stickers","tamper evident stickers","void release labels","anti counterfeit stickers","security seals","QR code security","pharma security labels","electronics warranty seals","stickers free shipping","bulk security stickers"],
+        "keywords": ["security stickers", "tamper evident stickers", "void release labels", "anti counterfeit stickers", "security seals", "QR code security", "pharma security labels", "electronics warranty seals", "stickers free shipping", "bulk security stickers", "sticker printing", "custom stickers", "waterproof stickers", "vinyl stickers", "die-cut stickers", "transparent stickers", "removable stickers", "bulk stickers", "label printing", "product stickers"],
         "body": "ZprintPro Security Sticker Printing for pharmaceutical, electronics, luxury goods, food and beverage, and government applications across US and global markets. Void-release, destructible vinyl, holographic seals, and serialized QR codes for track-and-trace. 100-sticker MOQ, Free US shipping over $100, FDA 21 CFR Part 11 compliant."
       
       
@@ -800,7 +800,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "セキュリティステッカー | 防水 PVC ダイカット | ZprintPro",
         "description": "セキュリティステッカーのセキュリティステッカーは ZprintPro にお任せ。防水 PVC/コート/透明 高品質用紙、丸/角/型抜き 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " fragile paper",
-        "keywords": ["セキュリティステッカー", "セキュリティステッカー 印刷", "security stickers"],
+        "keywords": ["セキュリティステッカー", "セキュリティステッカー 印刷", "security stickers", "ステッカー印刷", "防水ステッカー", "オリジナルステッカー", "小ロットステッカー", "ダイカットステッカー", "透明ステッカー", "商品ラベル", "カスタムステッカー", "剥がせるステッカー", "ロゴステッカー"],
         "body": " fast delivery."
       }
     },
@@ -835,14 +835,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "螢光貼紙 | 防水 PVC 異形切割 | 智印雲 ZprintPro",
         "description": "螢光貼紙/螢光貼紙 100 張起。採用 防水 PVC/銅版紙/透明料 高品質材質，支援 圓/方/異形 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "螢光色彩，在光線下格外醒目。適合促銷標籤、安全標識、活動裝飾。智印雲提供專業螢光貼紙服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["螢光貼紙", "貼紙印刷"],
+        "keywords": ["螢光貼紙", "貼紙印刷", "不干膠印刷", "防水貼紙", "透明貼紙", "異形貼紙", "標籤貼紙", "定制貼紙", "小批量貼紙", "防水不干膠", "卷筒標籤"],
         "body": " safety signs"
       },
       "en": {
         "title": "Fluorescent Stickers | Neon UV | Free US Ship | ZprintPro",
         "description": "Fluorescent stickers with neon colors and UV glow. Pink, orange, yellow, green, blue. 100-MOQ. Free US shipping over $100, DHL Express. 3-5 day turnaround.",
         "h1": "Fluorescent Stickers 100+ | Neon UV | ZprintPro",
-        "keywords": ["fluorescent stickers","neon stickers","UV glow stickers","blacklight stickers","fluorescent pink stickers","safety stickers neon","event stickers neon","club stickers UV","stickers free shipping","bulk fluorescent stickers"],
+        "keywords": ["fluorescent stickers", "neon stickers", "UV glow stickers", "blacklight stickers", "fluorescent pink stickers", "safety stickers neon", "event stickers neon", "club stickers UV", "stickers free shipping", "bulk fluorescent stickers", "sticker printing", "custom stickers", "waterproof stickers", "vinyl stickers", "die-cut stickers", "transparent stickers", "removable stickers", "bulk stickers", "label printing", "product stickers"],
         "body": "ZprintPro Fluorescent Sticker Printing for events, nightclubs, retail sale signage, safety warnings, and youth-targeted branding across US and global markets. Day-glo fluorescent pigments layered under CMYK in 6 neon colors with UV-reactive blacklight glow. 100-sticker MOQ, Free US shipping over $100, 3-5 day production."
       
       
@@ -851,7 +851,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "蛍光ステッカー | 防水 PVC ダイカット | ZprintPro",
         "description": "蛍光ステッカーの蛍光ステッカーは ZprintPro にお任せ。防水 PVC/コート/透明 高品質用紙、丸/角/型抜き 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " highly visible under light. Perfect for promotional labels",
-        "keywords": ["蛍光ステッカー", "蛍光ステッカー 印刷", "fluorescent stickers"],
+        "keywords": ["蛍光ステッカー", "蛍光ステッカー 印刷", "fluorescent stickers", "ステッカー印刷", "防水ステッカー", "オリジナルステッカー", "小ロットステッカー", "ダイカットステッカー", "透明ステッカー", "商品ラベル", "カスタムステッカー", "剥がせるステッカー", "ロゴステッカー"],
         "body": " transparent pricing"
       }
     },
@@ -887,14 +887,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "description": "牛皮紙袋印刷訂製，100個起印，HK$1.8起/個。FSC環保認證紙材，多尺寸多規格，免費刀模設計，支援燙金UV局部。即日交貨，全港送貨，零售餐飲活動品牌推廣。",
         
         "h1": "牛皮紙袋",
-        "keywords": ["牛皮紙袋", "紙袋印刷", "紙袋訂製", "印刷紙袋"],
+        "keywords": ["牛皮紙袋", "紙袋印刷", "紙袋訂製", "印刷紙袋", "手提紙袋", "購物紙袋", "環保紙袋", "婚禮紙袋", "禮品紙袋", "定製LOGO紙袋", "精品紙袋", "白卡紙袋"],
         "body": " natural and rustic"
       },
       "en": {
         "title": "Kraft Paper Bags | Eco-Friendly | Free US Ship | ZprintPro",
         "description": "Custom kraft paper bags for retail and gift shops. 120-300g kraft with cotton rope handles. 100-MOQ. Free US shipping over $100, DHL Express. FSC. Get a quote.",
         "h1": "Kraft Paper Bags 100+ | Eco-Friendly | ZprintPro",
-        "keywords": ["kraft paper bags","custom kraft paper bags","kraft paper bags printing","eco friendly kraft bags","kraft bags with handles","brown paper bags wholesale","kraft paper bags free shipping","bulk kraft bags","kraft bags USD","bespoke paper bags"],
+        "keywords": ["kraft paper bags", "custom kraft paper bags", "kraft paper bags printing", "eco friendly kraft bags", "kraft bags with handles", "brown paper bags wholesale", "kraft paper bags free shipping", "bulk kraft bags", "kraft bags USD", "bespoke paper bags", "paper bag printing", "shopping bags", "eco bags", "gift bags", "custom paper bags", "handle bags", "white card bags", "large paper bags", "recycled bags"],
         "body": "ZprintPro Custom Kraft Paper Bag Printing for retail, gift, coffee, and fashion brands across US and global markets. 120-300g natural brown or white kraft with cotton rope handles, foil stamping, and spot UV. 100-bag MOQ, Free US shipping over $100, FSC certified, soy ink."
       
       
@@ -903,7 +903,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "クラフト紙袋 | エコ素材 多サイズ | ZprintPro",
         "description": "クラフト紙袋のクラフト紙袋は ZprintPro にお任せ。白カード/クラフト/コート 高品質用紙、マルチサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": "Eco-friendly kraft paper",
-        "keywords": ["クラフト紙袋", "クラフト紙袋 印刷", "kraft paper bags"],
+        "keywords": ["クラフト紙袋", "クラフト紙袋 印刷", "kraft paper bags", "紙袋印刷", "ショッピングバッグ", "エコバッグ", "ギフトバッグ", "カスタム紙袋", "ハンドルバッグ", "大判紙袋", "再生紙バッグ", "ロゴ入り紙袋"],
         "body": " gift shops"
       }
     },
@@ -939,14 +939,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "description": "白卡紙袋/白卡紙袋 100 個起。採用 白卡/牛皮紙/銅版紙 高品質材質，支援 多尺寸 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "白卡紙袋",
-        "keywords": ["白卡紙袋", "紙袋訂製"],
+        "keywords": ["白卡紙袋", "紙袋訂製", "紙袋印刷", "手提紙袋", "購物紙袋", "牛皮紙袋", "環保紙袋", "婚禮紙袋", "禮品紙袋", "定製LOGO紙袋", "精品紙袋"],
         "body": " smooth surface"
       },
       "en": {
         "title": "White Card Bags | Premium Custom | Free US Ship | ZprintPro",
         "description": "Custom white card bags from ZprintPro Hong Kong. Premium Custom, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
         "h1": "White Card Bags 100+ | Premium Custom | ZprintPro",
-        "keywords": ["white card bags","custom white card bags","white card bags printing hong kong","white card bags free shipping","white card bags USD","bulk white card bags","white card bags DHL","bespoke white card bags","white card bags wholesale","white card bags pricing"],
+        "keywords": ["white card bags", "custom white card bags", "white card bags printing hong kong", "white card bags free shipping", "white card bags USD", "bulk white card bags", "white card bags DHL", "bespoke white card bags", "white card bags wholesale", "white card bags pricing", "paper bag printing", "kraft paper bags", "shopping bags", "eco bags", "gift bags", "custom paper bags", "handle bags", "large paper bags", "recycled bags"],
         "body": "ZprintPro White Card Bags for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Premium Custom, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -954,7 +954,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "白カード紙袋 | エコ素材 多サイズ | ZprintPro",
         "description": "白カード紙袋の白カード紙袋は ZprintPro にお任せ。白カード/クラフト/コート 高品質用紙、マルチサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": "White card paper",
-        "keywords": ["白カード紙袋", "白カード紙袋 印刷", "white card bags"],
+        "keywords": ["白カード紙袋", "白カード紙袋 印刷", "white card bags", "紙袋印刷", "ショッピングバッグ", "クラフト紙袋", "エコバッグ", "ギフトバッグ", "カスタム紙袋", "ハンドルバッグ", "大判紙袋", "再生紙バッグ", "ロゴ入り紙袋"],
         "body": " cosmetic stores. ZprintPro offers professional White Card Bags services in Hong Kong. High quality"
       }
     },
@@ -990,14 +990,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "description": "禮品紙袋印刷訂製，100個起印，HK$3.5起/個。棉繩緞帶手挽，燙金UV壓凹工藝，支援多尺寸客製LOGO。適合品牌活動週年慶贈品，即日交貨，全港免費送貨。",
         
         "h1": "禮品紙袋",
-        "keywords": ["禮品紙袋", "紙袋訂製", "禮盒訂製", "禮物盒訂製"],
+        "keywords": ["禮品紙袋", "紙袋訂製", "禮盒訂製", "禮物盒訂製", "紙袋印刷", "手提紙袋", "購物紙袋", "牛皮紙袋", "環保紙袋", "婚禮紙袋", "定製LOGO紙袋", "精品紙袋", "白卡紙袋"],
         "body": " UV and other processes. Essential for gifting"
       },
       "en": {
         "title": "Gift Paper Bags | Foil Stamping | Free US Ship | ZprintPro",
         "description": "Premium gift paper bags for boutiques and brands. 210-300g art card, ribbon or cotton handles, foil stamping. 100-MOQ. Free US shipping over $100, DHL. FSC.",
         "h1": "Gift Paper Bags 100+ | Premium Ribbon | ZprintPro",
-        "keywords": ["gift paper bags","custom gift bags","premium gift bags","branded gift bags","ribbon handle gift bags","foil stamped gift bags","gift bags free shipping","bulk gift bags","gift bags USD","bespoke gift packaging"],
+        "keywords": ["gift paper bags", "custom gift bags", "premium gift bags", "branded gift bags", "ribbon handle gift bags", "foil stamped gift bags", "gift bags free shipping", "bulk gift bags", "gift bags USD", "bespoke gift packaging", "paper bag printing", "kraft paper bags", "shopping bags", "eco bags", "gift bags", "custom paper bags", "handle bags", "white card bags", "large paper bags", "recycled bags"],
         "body": "ZprintPro Custom Gift Paper Bag Printing for boutiques, jewelers, chocolatiers, and corporate gifting across US and global markets. 210-300g art card with soft-touch lamination, ribbon or cotton rope handles, foil stamping, magnetic closures. 100-bag MOQ, Free US shipping over $100, FSC certified."
       
       
@@ -1006,7 +1006,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "ギフトバッグ | エコ素材 多サイズ | ZprintPro",
         "description": "ギフトバッグのギフトバッグは ZprintPro にお任せ。白カード/クラフト/コート 高品質用紙、マルチサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": "Exquisite design with foil stamping",
-        "keywords": ["ギフトバッグ", "ギフトバッグ 印刷", "gift bags"],
+        "keywords": ["ギフトバッグ", "ギフトバッグ 印刷", "gift bags", "紙袋印刷", "ショッピングバッグ", "クラフト紙袋", "エコバッグ", "カスタム紙袋", "ハンドルバッグ", "大判紙袋", "再生紙バッグ", "ロゴ入り紙袋"],
         "body": " transparent pricing"
       }
     },
@@ -1041,14 +1041,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "環保紙袋 | 100%環保 多尺寸 | 智印雲 ZprintPro",
         "description": "環保紙袋印刷訂製，100個起印，HK$2.2起/個。FSC再生認證紙材，可完全降解，支援燙金UV印刷。適合ESG品牌碳審計、減塑徵費合規，即日交貨，全港送貨。",
         "h1": "FSC認證環保紙張，可持續發展。適合注重環保的品牌。智印雲提供專業環保紙袋服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["環保紙袋", "紙袋印刷", "紙袋訂製"],
+        "keywords": ["環保紙袋", "紙袋印刷", "紙袋訂製", "手提紙袋", "購物紙袋", "牛皮紙袋", "婚禮紙袋", "禮品紙袋", "定製LOGO紙袋", "精品紙袋", "白卡紙袋"],
         "body": " transparent pricing"
       },
       "en": {
         "title": "Eco Paper Bags | FSC Recycled | Free US Ship | ZprintPro",
         "description": "Eco-friendly paper bags for sustainable brands. 100% recycled or FSC kraft, soy inks, GOTS cotton. 100-MOQ. Free US shipping over $100, DHL. Carbon-neutral.",
         "h1": "Eco Paper Bags 100+ | FSC Recycled | ZprintPro",
-        "keywords": ["eco paper bags","eco friendly paper bags","recycled paper bags","FSC paper bags","sustainable gift bags","kraft paper bags eco","compostable bags","eco bags free shipping","bulk eco bags","bespoke eco packaging"],
+        "keywords": ["eco paper bags", "eco friendly paper bags", "recycled paper bags", "FSC paper bags", "sustainable gift bags", "kraft paper bags eco", "compostable bags", "eco bags free shipping", "bulk eco bags", "bespoke eco packaging", "paper bag printing", "kraft paper bags", "shopping bags", "eco bags", "gift bags", "custom paper bags", "handle bags", "white card bags", "large paper bags", "recycled bags"],
         "body": "ZprintPro Eco Paper Bag Printing for organic food retailers, sustainable fashion, clean beauty, and zero-waste brands across US and global markets. 100% recycled or FSC-certified kraft with GOTS organic cotton handles, soy inks, water-based coatings. 100-bag MOQ, Free US shipping over $100, carbon-neutral offset."
       
       
@@ -1057,7 +1057,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "エコ紙袋 | エコ素材 多サイズ | ZprintPro",
         "description": "エコ紙袋のエコ紙袋は ZprintPro にお任せ。白カード/クラフト/コート 高品質用紙、マルチサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " sustainable development. Perfect for environmentally conscious brands. ZprintPro offers professional Eco Paper Bags services in Hong Kong. High quality",
-        "keywords": ["エコ紙袋", "エコ紙袋 印刷", "eco paper bags"],
+        "keywords": ["エコ紙袋", "エコ紙袋 印刷", "eco paper bags", "紙袋印刷", "ショッピングバッグ", "クラフト紙袋", "エコバッグ", "ギフトバッグ", "カスタム紙袋", "ハンドルバッグ", "大判紙袋", "再生紙バッグ", "ロゴ入り紙袋"],
         "body": "FSC認証の環境に優しい紙、持続可能な開発。環境に配慮するブランドに最適。 ZprintProは香港でエコ紙袋サービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
@@ -1092,14 +1092,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "環保手挽袋 | 100%環保 多尺寸 | 智印雲 ZprintPro",
         "description": "手挽袋/紙袋 100 個起。採用 白卡/牛皮紙/銅版紙 高品質材質，支援 多尺寸 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "堅固手挽設計，承重能力強。適合購物中心、超市。智印雲提供專業手挽紙袋服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["手挽袋", "紙袋", "紙袋訂製"],
+        "keywords": ["手挽袋", "紙袋", "紙袋訂製", "紙袋印刷", "手提紙袋", "購物紙袋", "牛皮紙袋", "環保紙袋", "婚禮紙袋", "禮品紙袋", "定製LOGO紙袋", "精品紙袋", "白卡紙袋"],
         "body": " supermarkets. ZprintPro offers professional Handle Bags services in Hong Kong. High quality"
       },
       "en": {
         "title": "Handle Paper Bags | 11 Colors | Free US Ship | ZprintPro",
         "description": "Custom handle paper bags for retail. 120-200g kraft, cotton rope or flat handles, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC. Quote.",
         "h1": "Handle Paper Bags 100+ | Cotton Rope | ZprintPro",
-        "keywords": ["handle paper bags","paper bags with handles","cotton rope handle bags","custom paper bags retail","shopping paper bags","flat handle bags","paper bags free shipping","bulk paper bags","paper bags USD","bespoke shopping bags"],
+        "keywords": ["handle paper bags", "paper bags with handles", "cotton rope handle bags", "custom paper bags retail", "shopping paper bags", "flat handle bags", "paper bags free shipping", "bulk paper bags", "paper bags USD", "bespoke shopping bags", "paper bag printing", "kraft paper bags", "shopping bags", "eco bags", "gift bags", "custom paper bags", "handle bags", "white card bags", "large paper bags", "recycled bags"],
         "body": "ZprintPro Custom Handle Paper Bag Printing for retail, apparel, gift shops, cafés, and takeaways across US and global markets. 120-200g brown or white kraft with 11 cotton rope colors, paper rope, or flat handles in S/M/L/XL sizes. 100-bag MOQ, Free US shipping over $100, FSC certified, 3-5 day rush available."
       
       
@@ -1108,7 +1108,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "ハンドルバッグ | エコ素材 多サイズ | ZprintPro",
         "description": "ハンドルバッグのハンドルバッグは ZprintPro にお任せ。白カード/クラフト/コート 高品質用紙、マルチサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " strong load-bearing capacity. Perfect for shopping centers",
-        "keywords": ["ハンドルバッグ", "ハンドルバッグ 印刷", "handle bags"],
+        "keywords": ["ハンドルバッグ", "ハンドルバッグ 印刷", "handle bags", "紙袋印刷", "ショッピングバッグ", "クラフト紙袋", "エコバッグ", "ギフトバッグ", "カスタム紙袋", "大判紙袋", "再生紙バッグ", "ロゴ入り紙袋"],
         "body": " fast delivery."
       }
     },
@@ -1193,14 +1193,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "大號紙袋 | 100%環保 多尺寸 | 智印雲 ZprintPro",
         "description": "大號紙袋/大號紙袋 100 個起。採用 白卡/牛皮紙/銅版紙 高品質材質，支援 多尺寸 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "加大尺寸，適合服裝、鞋類等大件商品。智印雲提供專業大號紙袋服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["大號紙袋", "紙袋批發", "紙袋訂製"],
+        "keywords": ["大號紙袋", "紙袋批發", "紙袋訂製", "紙袋印刷", "手提紙袋", "購物紙袋", "牛皮紙袋", "環保紙袋", "婚禮紙袋", "禮品紙袋", "定製LOGO紙袋", "精品紙袋", "白卡紙袋"],
         "body": " shoes and other large items. ZprintPro offers professional Large Bags services in Hong Kong. High quality"
       },
       "en": {
         "title": "Large Paper Bags | 12-20kg Load | Free US Ship | ZprintPro",
         "description": "Large reinforced paper bags for apparel and gifts. 200-300g kraft, 12-20kg load. 100-MOQ. Free US shipping over $100, DHL Express. FSC certified. Order today.",
         "h1": "Large Paper Bags 100+ | Heavy-Duty | ZprintPro",
-        "keywords": ["large paper bags","oversized paper bags","heavy duty paper bags","apparel shopping bags","gift hamper bags","twin pack bags","large kraft bags","paper bags free shipping","bulk large bags","bespoke large packaging"],
+        "keywords": ["large paper bags", "oversized paper bags", "heavy duty paper bags", "apparel shopping bags", "gift hamper bags", "twin pack bags", "large kraft bags", "paper bags free shipping", "bulk large bags", "bespoke large packaging", "paper bag printing", "kraft paper bags", "shopping bags", "eco bags", "gift bags", "custom paper bags", "handle bags", "white card bags", "recycled bags"],
         "body": "ZprintPro Large Paper Bag Printing for apparel brands, footwear retailers, gift hampers, home goods, and corporate gifting across US and global markets. 200-300g reinforced kraft with twin cotton rope handles, double-glued base, and gusseted sides supporting 12-20kg. 100-bag MOQ, Free US shipping over $100, FSC certified."
       
       
@@ -1209,7 +1209,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "大型紙袋 | エコ素材 多サイズ | ZprintPro",
         "description": "大型紙袋の大型紙袋は ZprintPro にお任せ。白カード/クラフト/コート 高品質用紙、マルチサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " perfect for clothing",
-        "keywords": ["大型紙袋", "大型紙袋 印刷", "large bags"],
+        "keywords": ["大型紙袋", "大型紙袋 印刷", "large bags", "紙袋印刷", "ショッピングバッグ", "クラフト紙袋", "エコバッグ", "ギフトバッグ", "カスタム紙袋", "ハンドルバッグ", "大判紙袋", "再生紙バッグ", "ロゴ入り紙袋"],
         "body": " fast delivery."
       }
     },
@@ -1245,14 +1245,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "description": "A4傳單印刷訂製，100張起印，HK$0.3起/張。157g銅版紙雙面四色印刷，免費設計打樣。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。",
         
         "h1": "A4宣傳單張",
-        "keywords": ["A4 宣傳單張", "宣傳單張", "宣傳單張印刷", "印刷公司"],
+        "keywords": ["A4 宣傳單張", "宣傳單張", "宣傳單張印刷", "印刷公司", "單張印刷", "彩頁印刷", "折頁印刷", "A4單張", "A5單張", "DM單", "三折頁", "宣傳單設計", "彩色單張"],
         "body": " most common flyer format. 157g glossy paper"
       },
       "en": {
         "title": "A4 Flyers 100+ | Same-Day CMYK | Free US Ship | ZprintPro",
         "description": "A4 flyer printing for events. 128g-300g gloss paper, double-sided CMYK. 100-MOQ, same-day 500+. Free US shipping over $100, DHL Express. FSC. Get a quote.",
         "h1": "A4 Flyers 100+ | Same-Day CMYK | ZprintPro",
-        "keywords": ["a4 flyers","custom a4 flyers","a4 flyer printing","double sided flyers","a4 flyers same day","cheap a4 flyers bulk","a4 flyers free shipping","flyers USD","real estate flyers","bespoke flyers UK"],
+        "keywords": ["a4 flyers", "custom a4 flyers", "a4 flyer printing", "double sided flyers", "a4 flyers same day", "cheap a4 flyers bulk", "a4 flyers free shipping", "flyers USD", "real estate flyers", "bespoke flyers UK", "flyer printing", "leaflet printing", "A4 flyers", "A5 flyers", "custom flyers", "bulk flyers", "color flyers", "folded flyers", "promotional flyers", "same day flyers"],
         "body": "ZprintPro Custom A4 Flyer Printing for product launches, real estate, events, and restaurants across the US and global markets. 128g-300g gloss or matte art paper with double-sided full-color CMYK. 100-flyer MOQ, same-day available for 500+, Free US shipping over $100."
       
       
@@ -1261,7 +1261,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "A4 チラシ | 両面フルカラー 100枚〜 | ZprintPro",
         "description": "A4 チラシのA4 チラシは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": "Standard A4 size",
-        "keywords": ["A4 チラシ", "A4 チラシ 印刷", "a4 flyers"],
+        "keywords": ["A4 チラシ", "A4 チラシ 印刷", "a4 flyers", "チラシ印刷", "フライヤー印刷", "A4チラシ", "A5チラシ", "折込チラシ", "三つ折り", "カラーチラシ", "カスタムチラシ", "即日チラシ", "イベントチラシ"],
         "body": " vibrant colors. ZprintPro offers professional A4 Flyers services in Hong Kong. High quality"
       }
     },
@@ -1297,14 +1297,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "description": "A5傳單印刷訂製，100張起印，HK$0.18起/張。157g銅版紙雙面四色，免費設計排版。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。",
         
         "h1": "A5宣傳單張",
-        "keywords": ["A5 宣傳單張", "宣傳單張", "宣傳單張印刷"],
+        "keywords": ["A5 宣傳單張", "宣傳單張", "宣傳單張印刷", "單張印刷", "彩頁印刷", "折頁印刷", "A4單張", "A5單張", "DM單", "三折頁", "宣傳單設計", "彩色單張"],
         "body": " economical"
       },
       "en": {
         "title": "A5 Flyers | Same-Day Printing | Free US Ship | ZprintPro",
         "description": "Custom a5 flyers from ZprintPro Hong Kong. Same-Day Printing, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
         "h1": "A5 Flyers 100+ | Same-Day Printing | ZprintPro",
-        "keywords": ["a5 flyers","custom a5 flyers","a5 flyers printing hong kong","a5 flyers free shipping","a5 flyers USD","bulk a5 flyers","a5 flyers DHL","bespoke a5 flyers","a5 flyers wholesale","a5 flyers pricing"],
+        "keywords": ["a5 flyers", "custom a5 flyers", "a5 flyers printing hong kong", "a5 flyers free shipping", "a5 flyers USD", "bulk a5 flyers", "a5 flyers DHL", "bespoke a5 flyers", "a5 flyers wholesale", "a5 flyers pricing", "flyer printing", "leaflet printing", "A4 flyers", "A5 flyers", "custom flyers", "bulk flyers", "color flyers", "folded flyers", "promotional flyers", "same day flyers"],
         "body": "ZprintPro A5 Flyers for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Same-Day Printing, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -1312,7 +1312,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "A5 チラシ | 両面フルカラー 100枚〜 | ZprintPro",
         "description": "A5 チラシのA5 チラシは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": "A5 size",
-        "keywords": ["A5 チラシ", "A5 チラシ 印刷", "a5 flyers"],
+        "keywords": ["A5 チラシ", "A5 チラシ 印刷", "a5 flyers", "チラシ印刷", "フライヤー印刷", "A4チラシ", "A5チラシ", "折込チラシ", "三つ折り", "カラーチラシ", "カスタムチラシ", "即日チラシ", "イベントチラシ"],
         "body": " flash events. ZprintPro offers professional A5 Flyers services in Hong Kong. High quality"
       }
     },
@@ -1348,14 +1348,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "description": "雙面宣傳單張/宣傳單張 100 張起。採用 157g-300g 銅版紙 高品質材質，支援 A4/A5/A6/DL 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。即日-2 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "雙面宣傳單張",
-        "keywords": ["雙面宣傳單張", "宣傳單張", "宣傳單張印刷"],
+        "keywords": ["雙面宣傳單張", "宣傳單張", "宣傳單張印刷", "單張印刷", "彩頁印刷", "折頁印刷", "A4單張", "A5單張", "DM單", "三折頁", "宣傳單設計", "彩色單張"],
         "body": " doubled information capacity. ZprintPro offers professional Double-sided Flyers services in Hong Kong. High quality"
       },
       "en": {
         "title": "Double-sided Flyers | Same-Day Printing | ZprintPro",
         "description": "Custom double-sided flyers from ZprintPro Hong Kong. Same-Day Printing, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certif.",
         "h1": "Double-sided Flyers 100+ | ZprintPro",
-        "keywords": ["double-sided flyers","custom double sided flyers","double sided flyers printing hong kong","double-sided flyers free shipping","double-sided flyers USD","bulk double-sided flyers","double-sided flyers DHL","bespoke double-sided flyers","custom double-sided flyers","double sided flyers wholesale"],
+        "keywords": ["double-sided flyers", "custom double sided flyers", "double sided flyers printing hong kong", "double-sided flyers free shipping", "double-sided flyers USD", "bulk double-sided flyers", "double-sided flyers DHL", "bespoke double-sided flyers", "custom double-sided flyers", "double sided flyers wholesale", "flyer printing", "leaflet printing", "A4 flyers", "A5 flyers", "custom flyers", "bulk flyers", "color flyers", "folded flyers", "promotional flyers", "same day flyers"],
         "body": "ZprintPro Double-sided Flyers for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Same-Day Printing, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -1363,7 +1363,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "両面チラシ | 両面フルカラー 100枚〜 | ZprintPro",
         "description": "両面チラシの両面チラシは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": "Double-sided full color printing",
-        "keywords": ["両面チラシ", "両面チラシ 印刷", "double sided flyers"],
+        "keywords": ["両面チラシ", "両面チラシ 印刷", "double sided flyers", "チラシ印刷", "フライヤー印刷", "A4チラシ", "A5チラシ", "折込チラシ", "三つ折り", "カラーチラシ", "カスタムチラシ", "即日チラシ", "イベントチラシ"],
         "body": " fast delivery."
       }
     },
@@ -1398,14 +1398,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "摺頁單張 | 雙面四色 100張起 | 智印雲 ZprintPro",
         "description": "三摺雙摺宣傳單印刷訂製，100張起印，HK$0.45起/張。157g-250g銅版紙，免費摺頁設計排版。適合企業簡介產品目錄活動宣傳，3-5天交貨，全港送貨。",
         "h1": "對摺或三摺設計，可展示更多信息。適合產品目錄、服務介紹。智印雲提供專業摺疊宣傳單張服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["摺頁單張", "宣傳單張", "摺頁"],
+        "keywords": ["摺頁單張", "宣傳單張", "摺頁", "宣傳單張印刷", "單張印刷", "彩頁印刷", "折頁印刷", "A4單張", "A5單張", "DM單", "三折頁", "宣傳單設計", "彩色單張"],
         "body": " transparent pricing"
       },
       "en": {
         "title": "Folded Leaflets | Tri-Fold Design | Free US Ship | ZprintPro",
         "description": "Custom folded leaflets from ZprintPro Hong Kong. Tri-Fold Design, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
         "h1": "Folded Leaflets 100+ | Tri-Fold Design | ZprintPro",
-        "keywords": ["folded leaflets","custom folded leaflets","folded leaflets printing hong kong","folded leaflets free shipping","folded leaflets USD","bulk folded leaflets","folded leaflets DHL","bespoke folded leaflets","folded leaflets wholesale","folded leaflets pricing"],
+        "keywords": ["folded leaflets", "custom folded leaflets", "folded leaflets printing hong kong", "folded leaflets free shipping", "folded leaflets USD", "bulk folded leaflets", "folded leaflets DHL", "bespoke folded leaflets", "folded leaflets wholesale", "folded leaflets pricing", "flyer printing", "leaflet printing", "A4 flyers", "A5 flyers", "custom flyers", "bulk flyers", "color flyers", "folded flyers", "promotional flyers", "same day flyers"],
         "body": "ZprintPro Folded Leaflets for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Tri-Fold Design, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -1413,7 +1413,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "折りパンフレット | 両面フルカラー 100枚〜 | ZprintPro",
         "description": "折りパンフレットの折りパンフレットは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " can display more information. ZprintPro offers professional Folded Leaflets services in Hong Kong. High quality",
-        "keywords": ["折りパンフレット", "折りパンフレット 印刷", "folded leaflets"],
+        "keywords": ["折りパンフレット", "折りパンフレット 印刷", "folded leaflets", "チラシ印刷", "フライヤー印刷", "A4チラシ", "A5チラシ", "折込チラシ", "三つ折り", "カラーチラシ", "カスタムチラシ", "即日チラシ", "イベントチラシ"],
         "body": "二つ折りまたは三つ折りデザイン、より多くの情報を表示可能。 ZprintProは香港で折りたたみパンフレットサービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
@@ -1448,14 +1448,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "厚身單張 | 雙面四色 100張起 | 智印雲 ZprintPro",
         "description": "厚身單張/宣傳單張 100 張起。採用 157g-300g 銅版紙 高品質材質，支援 A4/A5/A6/DL 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。即日-2 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "200g以上厚紙，質感更佳，不易折損。適合高端產品宣傳。智印雲提供專業厚紙宣傳單張服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["厚身單張", "宣傳單張", "宣傳單張印刷"],
+        "keywords": ["厚身單張", "宣傳單張", "宣傳單張印刷", "單張印刷", "彩頁印刷", "折頁印刷", "A4單張", "A5單張", "DM單", "三折頁", "宣傳單設計", "彩色單張"],
         "body": " not easily damaged. ZprintPro offers professional Thick Paper Flyers services in Hong Kong. High quality"
       },
       "en": {
         "title": "Thick Paper Flyers | Same-Day Printing | ZprintPro",
         "description": "Custom thick paper flyers from ZprintPro Hong Kong. Same-Day Printing, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certifi.",
         "h1": "Thick Paper Flyers 100+ | ZprintPro",
-        "keywords": ["thick paper flyers","custom thick paper flyers","thick paper flyers printing hong kong","thick paper flyers free shipping","thick paper flyers USD","bulk thick paper flyers","thick paper flyers DHL","bespoke thick paper flyers","thick paper flyers wholesale","thick paper flyers pricing"],
+        "keywords": ["thick paper flyers", "custom thick paper flyers", "thick paper flyers printing hong kong", "thick paper flyers free shipping", "thick paper flyers USD", "bulk thick paper flyers", "thick paper flyers DHL", "bespoke thick paper flyers", "thick paper flyers wholesale", "thick paper flyers pricing", "flyer printing", "leaflet printing", "A4 flyers", "A5 flyers", "custom flyers", "bulk flyers", "color flyers", "folded flyers", "promotional flyers", "same day flyers"],
         "body": "ZprintPro Thick Paper Flyers for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Same-Day Printing, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -1463,7 +1463,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "厚口チラシ | 両面フルカラー 100枚〜 | ZprintPro",
         "description": "厚口チラシの厚口チラシは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " better texture",
-        "keywords": ["厚口チラシ", "厚口チラシ 印刷", "thick paper flyers"],
+        "keywords": ["厚口チラシ", "厚口チラシ 印刷", "thick paper flyers", "チラシ印刷", "フライヤー印刷", "A4チラシ", "A5チラシ", "折込チラシ", "三つ折り", "カラーチラシ", "カスタムチラシ", "即日チラシ", "イベントチラシ"],
         "body": " fast delivery."
       }
     },
@@ -1499,14 +1499,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "description": "即日單張/即日印刷 100 張起。採用 157g-300g 銅版紙 高品質材質，支援 A4/A5/A6/DL 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。即日-2 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "即日宣傳單張",
-        "keywords": ["即日單張", "即日印刷", "宣傳單張", "即日速遞"],
+        "keywords": ["即日單張", "即日印刷", "宣傳單張", "即日速遞", "宣傳單張印刷", "單張印刷", "彩頁印刷", "折頁印刷", "A4單張", "A5單張", "DM單", "三折頁", "宣傳單設計", "彩色單張"],
         "body": " same-day delivery available. ZprintPro offers professional Same-day Flyers services in Hong Kong. High quality"
       },
       "en": {
         "title": "Same-day Flyers | Same-Day Printing | ZprintPro | ZprintPro",
         "description": "Custom same-day flyers from ZprintPro Hong Kong. Same-Day Printing, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
         "h1": "Same-day Flyers 100+ | ZprintPro",
-        "keywords": ["same day flyers","custom same day flyers","same day flyers printing hong kong","same-day flyers free shipping","same-day flyers USD","bulk same-day flyers","same-day flyers DHL","bespoke same-day flyers","custom same-day flyers","same day flyers wholesale"],
+        "keywords": ["same day flyers", "custom same day flyers", "same day flyers printing hong kong", "same-day flyers free shipping", "same-day flyers USD", "bulk same-day flyers", "same-day flyers DHL", "bespoke same-day flyers", "custom same-day flyers", "same day flyers wholesale", "flyer printing", "leaflet printing", "A4 flyers", "A5 flyers", "custom flyers", "bulk flyers", "color flyers", "folded flyers", "promotional flyers"],
         "body": "ZprintPro Same-day Flyers for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Same-Day Printing, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -1514,7 +1514,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "即日チラシ | 両面フルカラー 100枚〜 | ZprintPro",
         "description": "即日チラシの即日チラシは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": "First choice for emergency events",
-        "keywords": ["即日チラシ", "即日チラシ 印刷", "same day flyers"],
+        "keywords": ["即日チラシ", "即日チラシ 印刷", "same day flyers", "チラシ印刷", "フライヤー印刷", "A4チラシ", "A5チラシ", "折込チラシ", "三つ折り", "カラーチラシ", "カスタムチラシ", "イベントチラシ"],
         "body": " fast delivery."
       }
     },
@@ -1549,14 +1549,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "環保宣傳單張 | 雙面四色 100張起 | 智印雲 ZprintPro",
         "description": "環保宣傳單張/環保印刷 100 張起。採用 157g-300g 銅版紙 高品質材質，支援 A4/A5/A6/DL 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。即日-2 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "環保紙張印刷，展現企業責任。適合環保主題活動。智印雲提供專業環保宣傳單張服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["環保宣傳單張", "環保印刷", "宣傳單張"],
+        "keywords": ["環保宣傳單張", "環保印刷", "宣傳單張", "宣傳單張印刷", "單張印刷", "彩頁印刷", "折頁印刷", "A4單張", "A5單張", "DM單", "三折頁", "宣傳單設計", "彩色單張"],
         "body": " transparent pricing"
       },
       "en": {
         "title": "Eco Flyers | Same-Day Printing | Free US Ship | ZprintPro",
         "description": "Custom eco flyers from ZprintPro Hong Kong. Same-Day Printing, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
         "h1": "Eco Flyers 100+ | Same-Day Printing | ZprintPro",
-        "keywords": ["eco flyers","custom eco flyers","eco flyers printing hong kong","eco flyers free shipping","eco flyers USD","bulk eco flyers","eco flyers DHL","bespoke eco flyers","eco flyers wholesale","eco flyers pricing"],
+        "keywords": ["eco flyers", "custom eco flyers", "eco flyers printing hong kong", "eco flyers free shipping", "eco flyers USD", "bulk eco flyers", "eco flyers DHL", "bespoke eco flyers", "eco flyers wholesale", "eco flyers pricing", "flyer printing", "leaflet printing", "A4 flyers", "A5 flyers", "custom flyers", "bulk flyers", "color flyers", "folded flyers", "promotional flyers", "same day flyers"],
         "body": "ZprintPro Eco Flyers for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Same-Day Printing, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -1564,7 +1564,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "エコチラシ | 両面フルカラー 100枚〜 | ZprintPro",
         "description": "エコチラシのエコチラシは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " showing corporate responsibility. ZprintPro offers professional Eco Flyers services in Hong Kong. High quality",
-        "keywords": ["エコチラシ", "エコチラシ 印刷", "eco flyers"],
+        "keywords": ["エコチラシ", "エコチラシ 印刷", "eco flyers", "チラシ印刷", "フライヤー印刷", "A4チラシ", "A5チラシ", "折込チラシ", "三つ折り", "カラーチラシ", "カスタムチラシ", "即日チラシ", "イベントチラシ"],
         "body": "環境に優しい紙の印刷、企業の責任を示す。 ZprintProは香港でエコチラシサービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
@@ -1600,14 +1600,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "description": "A2海報印刷訂製，1張起印，HK$8起/張。200g銅版紙/PP合成紙，雙面四色印刷，防水防曬耐用。適合地產活動展覽店舖推廣，48小時交貨，全港送貨。",
         
         "h1": "A2海報印刷",
-        "keywords": ["A2 海報印刷", "海報印刷", "a2 海報 印刷", "印海報"],
+        "keywords": ["A2 海報印刷", "海報印刷", "a2 海報 印刷", "印海報", "A1海報", "A2海報", "戶外海報", "展覽海報", "大圖輸出", "防水海報", "門店海報", "POP海報", "活動海報"],
         "body": " first choice for event promotion. 157g glossy paper"
       },
       "en": {
         "title": "A2 Posters | 420x594mm | Free US Ship | ZprintPro",
         "description": "A2 posters (420x594mm) for retail and events. 150-300g gloss or matte art paper. 100-MOQ. Free US shipping over $100, DHL Express. 2-3 day. FSC certified.",
         "h1": "A2 Posters 100+ | Retail & Events | ZprintPro",
-        "keywords": ["A2 posters","A2 poster printing","420x594 posters","event posters A2","retail posters","sale posters","A2 posters free shipping","bulk A2 posters","A2 posters USD","bespoke A2 signage"],
+        "keywords": ["A2 posters", "A2 poster printing", "420x594 posters", "event posters A2", "retail posters", "sale posters", "A2 posters free shipping", "bulk A2 posters", "A2 posters USD", "bespoke A2 signage", "poster printing", "A1 posters", "outdoor posters", "exhibition posters", "large format printing", "waterproof posters", "display posters", "event posters"],
         "body": "ZprintPro A2 Poster Printing (420x594mm) for retail stores, events, real estate, restaurants, gyms, and small businesses across US and global markets. 150-300g gloss or matte art paper with 4-color CMYK printing and optional lamination. 100-poster MOQ, Free US shipping over $100, 2-3 day production."
       
       
@@ -1616,7 +1616,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "A2 ポスター | 防水 翌日配送 | ZprintPro",
         "description": "A2 ポスターのA2 ポスターは ZprintPro にお任せ。157g-300g コート紙/PP/写真用紙 高品質用紙、A1/A2/A3/A4 各種対応。4色 CMYK 印刷、デザイン自由。10枚〜〜、翌日-3営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": "Standard A2 size",
-        "keywords": ["A2 ポスター", "A2 ポスター 印刷", "a2 posters"],
+        "keywords": ["A2 ポスター", "A2 ポスター 印刷", "a2 posters", "ポスター印刷", "A1ポスター", "A2ポスター", "屋外ポスター", "展示会ポスター", "大判出力", "防水ポスター", "イベントポスター", "店舗ポスター", "POPポスター"],
         "body": " same-day delivery. ZprintPro offers professional A2 Posters services in Hong Kong. High quality"
       }
     },
@@ -1652,14 +1652,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "description": "A1 大幅海報/海報印刷 10 張起。採用 157g-300g 銅版紙/PP 紙/相紙 高品質材質，支援 A1/A2/A3/A4 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。即日-3 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "A1大幅海報",
-        "keywords": ["A1 大幅海報", "海報印刷", "a2 海報 印刷", "印海報"],
+        "keywords": ["A1 大幅海報", "海報印刷", "a2 海報 印刷", "印海報", "A1海報", "A2海報", "戶外海報", "展覽海報", "大圖輸出", "防水海報", "門店海報", "POP海報", "活動海報"],
         "body": " strong visual impact. Perfect for exhibitions"
       },
       "en": {
         "title": "A1 Posters | 594x841mm | Free US Ship | ZprintPro",
         "description": "A1 posters (594x841mm) for retail and trade shows. 200-300g matte or photo paper. 50-MOQ. Free US shipping over $100, DHL Express. Mounting included. Quote.",
         "h1": "A1 Posters 50+ | Trade Show | ZprintPro",
-        "keywords": ["A1 posters","A1 poster printing","594x841 posters","large posters","trade show posters","movie posters A1","window posters","A1 posters free shipping","bulk A1 posters","bespoke A1 signage"],
+        "keywords": ["A1 posters", "A1 poster printing", "594x841 posters", "large posters", "trade show posters", "movie posters A1", "window posters", "A1 posters free shipping", "bulk A1 posters", "bespoke A1 signage", "poster printing", "A2 posters", "outdoor posters", "exhibition posters", "large format printing", "waterproof posters", "display posters", "event posters", "retail posters"],
         "body": "ZprintPro A1 Poster Printing (594x841mm) for retail windows, movie and entertainment, art galleries, trade shows, real estate, and corporate offices across US and global markets. 200-300g matte, photo paper, or premium matte with mounting on foam board, gator board, or sintra. 50-poster MOQ, Free US shipping over $100."
       
       
@@ -1668,7 +1668,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "A1 ポスター | 防水 翌日配送 | ZprintPro",
         "description": "A1 ポスターのA1 ポスターは ZprintPro にお任せ。157g-300g コート紙/PP/写真用紙 高品質用紙、A1/A2/A3/A4 各種対応。4色 CMYK 印刷、デザイン自由。10枚〜〜、翌日-3営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": "A1 large size",
-        "keywords": ["A1 ポスター", "A1 ポスター 印刷", "a1 posters"],
+        "keywords": ["A1 ポスター", "A1 ポスター 印刷", "a1 posters", "ポスター印刷", "A1ポスター", "A2ポスター", "屋外ポスター", "展示会ポスター", "大判出力", "防水ポスター", "イベントポスター", "店舗ポスター", "POPポスター"],
         "body": " transparent pricing"
       }
     },
@@ -1704,14 +1704,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "description": "戶外海報/戶外海報 10 張起。採用 157g-300g 銅版紙/PP 紙/相紙 高品質材質，支援 A1/A2/A3/A4 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。即日-3 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "戶外海報",
-        "keywords": ["戶外海報", "海報印刷"],
+        "keywords": ["戶外海報", "海報印刷", "A1海報", "A2海報", "展覽海報", "大圖輸出", "防水海報", "門店海報", "POP海報", "活動海報"],
         "body": " no fading for outdoor use. ZprintPro offers professional Outdoor Posters services in Hong Kong. High quality"
       },
       "en": {
         "title": "Outdoor Posters | UV Resistant | Free US Ship | ZprintPro",
         "description": "Outdoor posters for storefronts and events. PVC banner, vinyl, weatherproof. 50-MOQ. Free US shipping over $100, DHL Express. 6-12 month fade resistance.",
         "h1": "Outdoor Posters 50+ | UV Resistant | ZprintPro",
-        "keywords": ["outdoor posters","weatherproof posters","PVC banner posters","vinyl outdoor signs","construction posters","event outdoor signage","UV resistant posters","outdoor posters free shipping","bulk outdoor posters","bespoke outdoor signage"],
+        "keywords": ["outdoor posters", "weatherproof posters", "PVC banner posters", "vinyl outdoor signs", "construction posters", "event outdoor signage", "UV resistant posters", "outdoor posters free shipping", "bulk outdoor posters", "bespoke outdoor signage", "poster printing", "A1 posters", "A2 posters", "exhibition posters", "large format printing", "waterproof posters", "display posters", "event posters", "retail posters"],
         "body": "ZprintPro Outdoor Poster Printing for storefronts, construction sites, events, sports venues, political campaigns, and tourism across US and global markets. PVC banner, vinyl sticker, weatherproof paper, or mesh banner with UV lamination for 6-12 month fade resistance. 50-poster MOQ, Free US shipping over $100, free grommet installation."
       
       
@@ -1720,7 +1720,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "屋外ポスター | 防水 翌日配送 | ZprintPro",
         "description": "屋外ポスターの屋外ポスターは ZprintPro にお任せ。157g-300g コート紙/PP/写真用紙 高品質用紙、A1/A2/A3/A4 各種対応。4色 CMYK 印刷、デザイン自由。10枚〜〜、翌日-3営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": "Waterproof and UV-resistant material",
-        "keywords": ["屋外ポスター", "屋外ポスター 印刷", "outdoor posters"],
+        "keywords": ["屋外ポスター", "屋外ポスター 印刷", "outdoor posters", "ポスター印刷", "A1ポスター", "A2ポスター", "展示会ポスター", "大判出力", "防水ポスター", "イベントポスター", "店舗ポスター", "POPポスター"],
         "body": " fast delivery."
       }
     },
@@ -1755,14 +1755,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "展架海報 | 防水材質 即日速遞 | 智印雲 ZprintPro",
         "description": "展架海報/海報印刷 10 張起。採用 157g-300g 銅版紙/PP 紙/相紙 高品質材質，支援 A1/A2/A3/A4 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。即日-3 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "配合X展架或易拉寶使用，便攜易裝。展會、路演必備。智印雲提供專業展架海報服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["展架海報", "海報印刷"],
+        "keywords": ["展架海報", "海報印刷", "A1海報", "A2海報", "戶外海報", "展覽海報", "大圖輸出", "防水海報", "門店海報", "POP海報", "活動海報"],
         "body": " transparent pricing"
       },
       "en": {
         "title": "Display Posters | Foam Board | Free US Ship | ZprintPro",
         "description": "Display posters on foam board or gator board for trade shows. 50-MOQ. Free US shipping over $100, DHL Express. Mounting and lamination included. Get a quote.",
         "h1": "Display Posters 50+ | Foam & Gator | ZprintPro",
-        "keywords": ["display posters","foam board posters","gator board prints","trade show posters","retail display posters","event booth signs","mounted posters","display posters free shipping","bulk display posters","bespoke display signs"],
+        "keywords": ["display posters", "foam board posters", "gator board prints", "trade show posters", "retail display posters", "event booth signs", "mounted posters", "display posters free shipping", "bulk display posters", "bespoke display signs", "poster printing", "A1 posters", "A2 posters", "outdoor posters", "exhibition posters", "large format printing", "waterproof posters", "event posters", "retail posters"],
         "body": "ZprintPro Display Poster Printing for trade show exhibitors, retail pop-ups, event companies, corporate conferences, and product launches across US and global markets. Foam board, gator board, or PVC sintra mounting with lamination standard. 50-poster MOQ, Free US shipping over $100, free booth layout service."
       
       
@@ -1771,7 +1771,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "ディスプレイポスター | 防水 翌日配送 | ZprintPro",
         "description": "ディスプレイポスターのディスプレイポスターは ZprintPro にお任せ。157g-300g コート紙/PP/写真用紙 高品質用紙、A1/A2/A3/A4 各種対応。4色 CMYK 印刷、デザイン自由。10枚〜〜、翌日-3営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " portable and easy to install. ZprintPro offers professional Display Posters services in Hong Kong. High quality",
-        "keywords": ["ディスプレイポスター", "ディスプレイポスター 印刷", "display posters"],
+        "keywords": ["ディスプレイポスター", "ディスプレイポスター 印刷", "display posters", "ポスター印刷", "A1ポスター", "A2ポスター", "屋外ポスター", "展示会ポスター", "大判出力", "防水ポスター", "イベントポスター", "店舗ポスター", "POPポスター"],
         "body": "Xスタンドまたはロールアップバナーと互換、持ち運び可能で設置簡単。 ZprintProは香港で展示用ポスターサービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
@@ -1806,14 +1806,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "藝術海報 | 防水材質 即日速遞 | 智印雲 ZprintPro",
         "description": "藝術海報印刷訂製，1張起印，HK$15起/張。200g美術紙/啞粉紙/RC相紙，Giclée級色彩管理。適合攝影師藝術家畫廊展覽，3-5天交貨，全球配送。",
         "h1": "高級藝術紙張，色彩還原度高。適合藝術展覽、攝影作品。智印雲提供專業藝術海報服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["藝術海報", "海報印刷", "印poster"],
+        "keywords": ["藝術海報", "海報印刷", "印poster", "A1海報", "A2海報", "戶外海報", "展覽海報", "大圖輸出", "防水海報", "門店海報", "POP海報", "活動海報"],
         "body": " photography works. ZprintPro offers professional Art Posters services in Hong Kong. High quality"
       },
       "en": {
         "title": "Art Posters | Archival 200yr | Free US Ship | ZprintPro",
         "description": "Museum-quality art posters. Matte cotton, satin photo, Hahnemuhle. 25-MOQ. Free US shipping over $100, DHL Express. 200-year archival ink. COA included.",
         "h1": "Art Posters 25+ | Archival Pigment | ZprintPro",
-        "keywords": ["art posters","museum quality prints","archival posters","fine art prints","photography prints","gallery posters","limited edition prints","art posters free shipping","bulk art prints","bespoke art reproductions"],
+        "keywords": ["art posters", "museum quality prints", "archival posters", "fine art prints", "photography prints", "gallery posters", "limited edition prints", "art posters free shipping", "bulk art prints", "bespoke art reproductions", "poster printing", "A1 posters", "A2 posters", "outdoor posters", "exhibition posters", "large format printing", "waterproof posters", "display posters", "event posters", "retail posters"],
         "body": "ZprintPro Art Poster Printing for independent artists, photographers, illustrators, galleries, curators, and interior designers across US and global markets. Matte cotton, satin photo, or Hahnemuhle Photo Rag with 200+ year archival pigment inks. 25-poster MOQ, Free US shipping over $100, free hand inspection and Certificate of Authenticity."
       
       
@@ -1822,7 +1822,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "アートポスター | 防水 翌日配送 | ZprintPro",
         "description": "アートポスターのアートポスターは ZprintPro にお任せ。157g-300g コート紙/PP/写真用紙 高品質用紙、A1/A2/A3/A4 各種対応。4色 CMYK 印刷、デザイン自由。10枚〜〜、翌日-3営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " high color accuracy. Perfect for art exhibitions",
-        "keywords": ["アートポスター", "アートポスター 印刷", "art posters"],
+        "keywords": ["アートポスター", "アートポスター 印刷", "art posters", "ポスター印刷", "A1ポスター", "A2ポスター", "屋外ポスター", "展示会ポスター", "大判出力", "防水ポスター", "イベントポスター", "店舗ポスター", "POPポスター"],
         "body": " fast delivery."
       }
     },
@@ -1857,14 +1857,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "背膠海報 | 防水材質 即日速遞 | 智印雲 ZprintPro",
         "description": "背膠海報/海報印刷 10 張起。採用 157g-300g 銅版紙/PP 紙/相紙 高品質材質，支援 A1/A2/A3/A4 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。即日-3 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "自帶背膠，可直接粘貼。適合店鋪櫥窗、牆面裝飾。智印雲提供專業背膠海報服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["背膠海報", "海報印刷", "印海報"],
+        "keywords": ["背膠海報", "海報印刷", "印海報", "A1海報", "A2海報", "戶外海報", "展覽海報", "大圖輸出", "防水海報", "門店海報", "POP海報", "活動海報"],
         "body": " wall decoration. ZprintPro offers professional Adhesive Posters services in Hong Kong. High quality"
       },
       "en": {
         "title": "Adhesive Posters | Peel & Stick | Free US Ship | ZprintPro",
         "description": "Peel-and-stick adhesive posters for windows, walls, vehicles. Vinyl, clear, fabric. 50-MOQ. Free US shipping over $100, DHL Express. CMYK + white ink option.",
         "h1": "Adhesive Posters 50+ | Vinyl Decals | ZprintPro",
-        "keywords": ["adhesive posters","peel and stick posters","window decals","wall stickers custom","vinyl posters","vehicle decals","removable wall art","adhesive posters free shipping","bulk adhesive prints","bespoke wall murals"],
+        "keywords": ["adhesive posters", "peel and stick posters", "window decals", "wall stickers custom", "vinyl posters", "vehicle decals", "removable wall art", "adhesive posters free shipping", "bulk adhesive prints", "bespoke wall murals", "poster printing", "A1 posters", "A2 posters", "outdoor posters", "exhibition posters", "large format printing", "waterproof posters", "display posters", "event posters", "retail posters"],
         "body": "ZprintPro Adhesive Poster Printing for retail windows, vehicle advertising, event signage, corporate offices, restaurants, real estate, and home decor across US and global markets. White vinyl, clear vinyl, translucent vinyl, or fabric wallpaper with CMYK + white ink option. 50-poster MOQ, Free US shipping over $100, free installation guide."
       
       
@@ -1873,7 +1873,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "粘着ポスター | 防水 翌日配送 | ZprintPro",
         "description": "粘着ポスターの粘着ポスターは ZprintPro にお任せ。157g-300g コート紙/PP/写真用紙 高品質用紙、A1/A2/A3/A4 各種対応。4色 CMYK 印刷、デザイン自由。10枚〜〜、翌日-3営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " can be directly applied. Perfect for shop windows",
-        "keywords": ["粘着ポスター", "粘着ポスター 印刷", "adhesive posters"],
+        "keywords": ["粘着ポスター", "粘着ポスター 印刷", "adhesive posters", "ポスター印刷", "A1ポスター", "A2ポスター", "屋外ポスター", "展示会ポスター", "大判出力", "防水ポスター", "イベントポスター", "店舗ポスター", "POPポスター"],
         "body": " fast delivery."
       }
     },
@@ -1909,14 +1909,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "description": "禮品盒訂製印刷，100個起印，HK$4.5起/個。磁吸盒天地盒抽屜盒，燙金UV壓凹工藝，免費刀模設計。適合品牌活動週年慶贈品，即日打樣，3-5天交貨。",
         
         "h1": "禮品盒定制",
-        "keywords": ["禮品盒", "禮盒訂製", "禮物盒訂製", "包裝盒印刷"],
+        "keywords": ["禮品盒", "禮盒訂製", "禮物盒訂製", "包裝盒印刷", "瓦楞紙盒", "定制包裝", "化妝品盒", "食品盒", "快遞盒", "天地蓋盒", "紙盒定制", "高檔禮盒"],
         "body": " UV and other processes. ZprintPro offers professional Gift Boxes services in Hong Kong. High quality"
       },
       "en": {
         "title": "Gift Boxes | Rigid Magnetic | Free US Ship | ZprintPro",
         "description": "Custom gift boxes for premium brands. Rigid setup, folding carton, magnetic closure, foil stamping. 100-MOQ. Free US shipping over $100, DHL. FSC. Get a quote.",
         "h1": "Gift Boxes 100+ | Rigid Magnetic | ZprintPro",
-        "keywords": ["custom gift boxes","rigid gift boxes","folding carton boxes","magnetic closure boxes","luxury gift boxes","foil stamped gift boxes","premium packaging","gift boxes free shipping","bulk gift boxes","bespoke gift packaging"],
+        "keywords": ["custom gift boxes", "rigid gift boxes", "folding carton boxes", "magnetic closure boxes", "luxury gift boxes", "foil stamped gift boxes", "premium packaging", "gift boxes free shipping", "bulk gift boxes", "bespoke gift packaging", "packaging box printing", "gift boxes", "cosmetic boxes", "food boxes", "mailer boxes", "corrugated boxes", "custom packaging", "rigid boxes", "folding cartons", "product boxes"],
         "body": "ZprintPro Custom Gift Box Printing for jewelry, cosmetics, gourmet food, spirits, and corporate gifting across US and global markets. Rigid setup, folding carton, magnetic closure with foil stamping, embossing, and inside printing. 100-box MOQ, Free US shipping over $100, FSC certified, free dieline design."
       
       
@@ -1925,7 +1925,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "ギフトボックス | 特注 高級パッケージ | ZprintPro",
         "description": "ギフトボックスのギフトボックスは ZprintPro にお任せ。白カード/クラフト/グレー台紙 高品質用紙、カスタムサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": "Exquisite gift boxes with foil stamping",
-        "keywords": ["ギフトボックス", "ギフトボックス 印刷", "gift boxes"],
+        "keywords": ["ギフトボックス", "ギフトボックス 印刷", "gift boxes", "パッケージボックス印刷", "化粧箱", "食品箱", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱"],
         "body": " fast delivery."
       }
     },
@@ -1961,7 +1961,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "description": "化妝品包裝盒 100 個起印. 4 種盒型 (天地蓋 / 磁吸翻蓋 / 抽屜式 / 書型) + 內托 EVA / 紙漿 / PET 吸塑可定制. 燙金 + 局部 UV + 緞布內襯. 香港 + 跨境美妝電商 + 日本市場. ISO 9001 + FSC 認證, 4 色柯式印刷, 30 秒 AI 即時報價, DHL 全球 2-4 天配送.",
 
         "h1": "化妝品包裝盒 — 4 種盒型 · 內托定制",
-        "keywords": ["化妝品包裝盒", "化妝品盒", "包裝盒印刷", "護膚品盒", "彩妝盒", "美妝品牌", "天地蓋盒", "磁吸翻蓋盒", "抽屜盒", "書型盒", "化妝品OEM", "香港化妝品印刷"],
+        "keywords": ["化妝品包裝盒", "化妝品盒", "包裝盒印刷", "護膚品盒", "彩妝盒", "美妝品牌", "天地蓋盒", "磁吸翻蓋盒", "抽屜盒", "書型盒", "化妝品OEM", "香港化妝品印刷", "瓦楞紙盒", "禮品盒", "定制包裝", "食品盒", "快遞盒", "紙盒定制", "高檔禮盒"],
         "body": " 4 種盒型 + 內托定制. ZprintPro offers professional 化妝品包裝盒 services in Hong Kong with 100-unit MOQ. 4 box styles (天地蓋 / 磁吸 / 抽屜 / 書型) + custom EVA / paper / PET inner trays."
       },
       "en": {
@@ -1969,7 +1969,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "description": "Cosmetic packaging boxes from 100 units. 4 box styles (lift-off lid, magnetic closure, drawer-style, book-style) with custom EVA, molded pulp, or PET inner trays. Foil stamping, spot UV, satin lining. Beauty and skincare brands, cross-border e-commerce, Japan market ready. ISO 9001 + FSC certified. Free DHL Express 2-4 day global shipping. 30-second AI quote.",
 
         "h1": "Cosmetic Packaging Boxes — 4 Box Styles · Custom Inner Tray",
-        "keywords": ["cosmetic packaging boxes","cosmetic boxes","makeup boxes","skincare boxes","beauty brand packaging","custom box styles","magnetic closure boxes","drawer boxes","book-style boxes","cosmetic boxes printing","cosmetic OEM","香港 cosmetic packaging"],
+        "keywords": ["cosmetic packaging boxes", "cosmetic boxes", "makeup boxes", "skincare boxes", "beauty brand packaging", "custom box styles", "magnetic closure boxes", "drawer boxes", "book-style boxes", "cosmetic boxes printing", "cosmetic OEM", "香港 cosmetic packaging", "packaging box printing", "gift boxes", "food boxes", "mailer boxes", "corrugated boxes", "custom packaging", "rigid boxes", "folding cartons", "product boxes"],
         "body": " ZprintPro Cosmetic Packaging Boxes for retail, e-commerce, beauty brands, and global markets. 4 box styles, custom inner trays, foil + UV, 100-MOQ, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       },
       "ja": {
@@ -1977,7 +1977,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "description": "化粧品パッケージボックス 100 個から対応. 4 種類 (天地蓋 / マグネット蓋 / 引き出し式 / ブック型) + 内装 EVA / 紙 / PET 吸塑カスタム. 箔押し + スポット UV + サテン裏地. 美容・スキンケアブランド、越境 EC、日本市場対応. ISO 9001 + FSC 認証. DHL 国際配送 2-4 日. 30 秒 AI 即時見積.",
 
         "h1": "化粧品パッケージボックス — 4 種類 · 内装カスタム",
-        "keywords": ["化粧品パッケージボックス","化粧品箱","コスメボックス","スキンケアボックス","カスタム箱型","マグネット蓋","引き出し式","ブック型","化粧品OEM","香港 cosmetic packaging"],
+        "keywords": ["化粧品パッケージボックス", "化粧品箱", "コスメボックス", "スキンケアボックス", "カスタム箱型", "マグネット蓋", "引き出し式", "ブック型", "化粧品OEM", "香港 cosmetic packaging", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱"],
         "body": " 4 種類 + 内装カスタム. ZprintPro は 100 個から対応. 天地蓋 / マグネット / 引き出し / ブック型の 4 種類 + EVA / 紙 / PET 内装吸塑."
       }
     },
@@ -2016,14 +2016,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "食品包裝盒 | 燙金 UV 100%訂製 | 智印雲 ZprintPro",
         "description": "食品包裝盒印刷訂製，100個起印，HK$4起/個。FDA級食品接觸安全材質，牛皮紙白卡紙可選，支援燙金UV印刷。適合糕點茶葉巧克力月餅食品品牌，3-5天交貨。",
         "h1": "食品級材質，安全環保。適合糕點、茶葉、保健品。智印雲提供專業食品包裝盒服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["食品包裝盒", "食品包裝印刷", "食品包裝訂製", "包裝盒印刷"],
+        "keywords": ["食品包裝盒", "食品包裝印刷", "食品包裝訂製", "包裝盒印刷", "瓦楞紙盒", "禮品盒", "定制包裝", "化妝品盒", "食品盒", "快遞盒", "天地蓋盒", "紙盒定制", "高檔禮盒"],
         "body": " transparent pricing"
       },
       "en": {
         "title": "Food Boxes 100+ | Food-Grade | Free US Ship | ZprintPro",
         "description": "Food boxes for pastries. 350g-400g food-grade card, PE/PLA lining. 100-MOQ, grease resistant. Free US shipping over $100, DHL. FDA, LFGB, SGS. Get a quote.",
         "h1": "Food Boxes 100+ | Food-Grade | ZprintPro",
-        "keywords": ["food boxes","custom food boxes","food packaging boxes","food grade boxes","takeout boxes custom","bakery boxes wholesale","food boxes free shipping","bulk food packaging","food boxes USD","bespoke food packaging"],
+        "keywords": ["food boxes", "custom food boxes", "food packaging boxes", "food grade boxes", "takeout boxes custom", "bakery boxes wholesale", "food boxes free shipping", "bulk food packaging", "food boxes USD", "bespoke food packaging", "packaging box printing", "gift boxes", "cosmetic boxes", "mailer boxes", "corrugated boxes", "custom packaging", "rigid boxes", "folding cartons", "product boxes"],
         "body": "ZprintPro Custom Food Packaging Box Printing for pastries, tea, health supplements, and gift packaging across the US and global markets. 350g-400g food-grade white card with PE or PLA biodegradable lining, window design, and foil-stamped logos. 100-box MOQ, Free US shipping over $100, FDA, LFGB, SGS certified."
       
       
@@ -2032,7 +2032,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "食品パッケージ | 特注 高級パッケージ | ZprintPro",
         "description": "食品パッケージの食品パッケージは ZprintPro にお任せ。白カード/クラフト/グレー台紙 高品質用紙、カスタムサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " safe and eco-friendly. ZprintPro offers professional Food Boxes services in Hong Kong. High quality",
-        "keywords": ["食品パッケージ", "食品パッケージ 印刷", "food boxes"],
+        "keywords": ["食品パッケージ", "食品パッケージ 印刷", "food boxes", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱"],
         "body": "食品グレード素材、安全で環境に優しい。 ZprintProは香港で食品包装箱サービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
@@ -2068,14 +2068,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "description": "郵寄盒/郵寄盒 100 個起。採用 白卡/牛皮紙/灰板 高品質材質，支援 訂製尺寸 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。7-10 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "快遞盒/飛機盒",
-        "keywords": ["郵寄盒", "包裝盒印刷"],
+        "keywords": ["郵寄盒", "包裝盒印刷", "瓦楞紙盒", "禮品盒", "定制包裝", "化妝品盒", "食品盒", "快遞盒", "天地蓋盒", "紙盒定制", "高檔禮盒"],
         "body": " first choice for e-commerce shipping. ZprintPro offers professional Mailer Boxes services in Hong Kong. High quality"
       },
       "en": {
         "title": "Mailer Boxes | E-Commerce | Free US Ship | ZprintPro",
         "description": "Mailer boxes for e-commerce. Self-locking, 70% storage save, kraft or white. 100-MOQ. Free US shipping over $100, DHL Express. FSC certified. Get a quote.",
         "h1": "Mailer Boxes 100+ | Self-Lock | ZprintPro",
-        "keywords": ["mailer boxes","e-commerce mailers","self locking boxes","corrugated mailers","folding carton mailers","DTC shipping boxes","subscription boxes","mailer boxes free shipping","bulk mailers","bespoke shipping boxes"],
+        "keywords": ["mailer boxes", "e-commerce mailers", "self locking boxes", "corrugated mailers", "folding carton mailers", "DTC shipping boxes", "subscription boxes", "mailer boxes free shipping", "bulk mailers", "bespoke shipping boxes", "packaging box printing", "gift boxes", "cosmetic boxes", "food boxes", "corrugated boxes", "custom packaging", "rigid boxes", "folding cartons", "product boxes"],
         "body": "ZprintPro Mailer Box Printing for DTC e-commerce brands shipping apparel, beauty, food, electronics, home goods, and subscription services across US and global markets. Self-locking tuck-front design, 5-second assembly, no tape needed. 100-box MOQ, Free US shipping over $100, FSC certified."
       
       
@@ -2084,7 +2084,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "メーラーボックス | 特注 高級パッケージ | ZprintPro",
         "description": "メーラーボックスのメーラーボックスは ZprintPro にお任せ。白カード/クラフト/グレー台紙 高品質用紙、カスタムサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": "Sturdy and durable",
-        "keywords": ["メーラーボックス", "メーラーボックス 印刷", "mailer boxes"],
+        "keywords": ["メーラーボックス", "メーラーボックス 印刷", "mailer boxes", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱"],
         "body": " fast delivery."
       }
     },
@@ -2119,14 +2119,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "折疊禮盒 | 燙金 UV 100%訂製 | 智印雲 ZprintPro",
         "description": "折疊禮盒/折疊盒 100 個起。採用 白卡/牛皮紙/灰板 高品質材質，支援 訂製尺寸 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。7-10 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "可折疊設計，節省倉儲空間。適合大量存貨的電商賣家。智印雲提供專業折疊盒服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["折疊禮盒", "折疊盒", "禮盒訂製", "包裝盒印刷"],
+        "keywords": ["折疊禮盒", "折疊盒", "禮盒訂製", "包裝盒印刷", "瓦楞紙盒", "禮品盒", "定制包裝", "化妝品盒", "食品盒", "快遞盒", "天地蓋盒", "紙盒定制", "高檔禮盒"],
         "body": " transparent pricing"
       },
       "en": {
         "title": "Folding Boxes | Retail Packaging | Free US Ship | ZprintPro",
         "description": "Folding boxes for retail. Tuck-end, auto-lock bottom, 350-400g card. 100-MOQ. Free US shipping over $100, DHL Express. FSC, FDA food-safe. Order today.",
         "h1": "Folding Boxes 100+ | Auto-Lock | ZprintPro",
-        "keywords": ["folding boxes","folding cartons","tuck end boxes","auto lock bottom boxes","retail packaging boxes","cosmetic boxes","food boxes folding","folding boxes free shipping","bulk folding boxes","bespoke folding cartons"],
+        "keywords": ["folding boxes", "folding cartons", "tuck end boxes", "auto lock bottom boxes", "retail packaging boxes", "cosmetic boxes", "food boxes folding", "folding boxes free shipping", "bulk folding boxes", "bespoke folding cartons", "packaging box printing", "gift boxes", "food boxes", "mailer boxes", "corrugated boxes", "custom packaging", "rigid boxes", "product boxes"],
         "body": "ZprintPro Folding Box Printing for cosmetics, pharmaceuticals, food and beverage, electronics, retail apparel, candles, and small goods across US and global markets. Tuck-end, reverse tuck-end, auto-lock bottom, pillow box, and sleeve box styles. 100-box MOQ, Free US shipping over $100, FSC certified, FDA-compliant for food contact."
       
       
@@ -2135,7 +2135,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "折り畳み箱 | 特注 高級パッケージ | ZprintPro",
         "description": "折り畳み箱の折り畳み箱は ZprintPro にお任せ。白カード/クラフト/グレー台紙 高品質用紙、カスタムサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " saves warehouse space. ZprintPro offers professional Folding Boxes services in Hong Kong. High quality",
-        "keywords": ["折り畳み箱", "折り畳み箱 印刷", "folding boxes"],
+        "keywords": ["折り畳み箱", "折り畳み箱 印刷", "folding boxes", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱"],
         "body": "折りたたみ可能なデザイン、倉庫スペースを節約。 ZprintProは香港で折りたたみ箱サービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
@@ -2170,14 +2170,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "精裝禮盒 | 燙金 UV 100%訂製 | 智印雲 ZprintPro",
         "description": "精品盒訂製印刷，100個起印，HK$8起/個。硬殼天地盒磁吸盒，灰板裱藝術紙，燙金UV壓凹工藝。適合化妝品珠寶首飾高端品牌，5-7天交貨，全球配送。",
         "h1": "硬殼精裝，高檔奢華。適合高端產品、限量版商品。智印雲提供專業精裝盒服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["精裝禮盒", "精裝盒", "禮盒訂製", "包裝盒印刷"],
+        "keywords": ["精裝禮盒", "精裝盒", "禮盒訂製", "包裝盒印刷", "瓦楞紙盒", "禮品盒", "定制包裝", "化妝品盒", "食品盒", "快遞盒", "天地蓋盒", "紙盒定制", "高檔禮盒"],
         "body": " transparent pricing"
       },
       "en": {
         "title": "Rigid Boxes | Luxury Setup | Free US Ship | ZprintPro",
         "description": "Luxury rigid setup boxes. 800-1500gsm greyboard, magnetic closure, leatherette. 250-MOQ. Free US shipping over $100, DHL Express. 10-15 day production. Quote.",
         "h1": "Rigid Boxes 250+ | Magnetic Closure | ZprintPro",
-        "keywords": ["rigid boxes","rigid setup boxes","luxury packaging boxes","magnetic closure boxes","leatherette boxes","jewelry boxes","premium gift boxes","rigid boxes free shipping","bulk rigid boxes","bespoke rigid packaging"],
+        "keywords": ["rigid boxes", "rigid setup boxes", "luxury packaging boxes", "magnetic closure boxes", "leatherette boxes", "jewelry boxes", "premium gift boxes", "rigid boxes free shipping", "bulk rigid boxes", "bespoke rigid packaging", "packaging box printing", "gift boxes", "cosmetic boxes", "food boxes", "mailer boxes", "corrugated boxes", "custom packaging", "folding cartons", "product boxes"],
         "body": "ZprintPro Rigid Setup Box Printing for jewelry, watches, premium spirits, luxury cosmetics, gourmet food, and corporate awards across US and global markets. 800-1500gsm greyboard wrapped in art paper, specialty paper, or leatherette with foil, embossing, and magnetic closures. 250-box MOQ, Free US shipping over $100, 10-15 day production."
       
       
@@ -2186,7 +2186,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "リジッドボックス | 特注 高級パッケージ | ZprintPro",
         "description": "リジッドボックスのリジッドボックスは ZprintPro にお任せ。白カード/クラフト/グレー台紙 高品質用紙、カスタムサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " luxurious and premium. ZprintPro offers professional Rigid Boxes services in Hong Kong. High quality",
-        "keywords": ["リジッドボックス", "リジッドボックス 印刷", "rigid boxes"],
+        "keywords": ["リジッドボックス", "リジッドボックス 印刷", "rigid boxes", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱"],
         "body": "硬い上製本構造、豪華でプレミアム。 ZprintProは香港で上製本箱サービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
@@ -2222,14 +2222,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "description": "燙金利是封/利是封 100 個起。採用 157g 紅金紙/銅版紙 高品質材質，支援 標準/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "燙金利是封",
-        "keywords": ["燙金利是封", "利是封", "燙金"],
+        "keywords": ["燙金利是封", "利是封", "燙金", "春聯", "中秋賀卡", "聖誕卡", "婚禮請柬", "嬰兒滿月卡", "感謝卡", "燙金紅包", "卡通紅包", "新年賀卡"],
         "body": " festive and elegant. Multiple auspicious patterns or custom designs. ZprintPro offers professional Foil Red Packets services in Hong Kong. High quality"
       },
       "en": {
         "title": "Foil Red Packets | Gold Foil Print | ZprintPro | ZprintPro",
         "description": "Custom foil red packets from ZprintPro Hong Kong. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
         "h1": "Foil Red Packets 100+ | ZprintPro",
-        "keywords": ["foil red packets","custom foil red packets","foil red packets printing hong kong","foil red packets free shipping","foil red packets USD","bulk foil red packets","foil red packets DHL","bespoke foil red packets","foil red packets wholesale","foil red packets pricing"],
+        "keywords": ["foil red packets", "custom foil red packets", "foil red packets printing hong kong", "foil red packets free shipping", "foil red packets USD", "bulk foil red packets", "foil red packets DHL", "bespoke foil red packets", "foil red packets wholesale", "foil red packets pricing", "red packet printing", "CNY red packets", "lai see", "wedding invitations", "Christmas cards", "Chinese New Year cards", "custom red packets", "embossed red packets", "greeting cards"],
         "body": "ZprintPro Foil Red Packets for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Gold Foil Print, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -2237,7 +2237,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "箔押し年賀状 | 箔押し UV エンボス | ZprintPro",
         "description": "箔押し年賀状の箔押し年賀状は ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": "Traditional foil stamping",
-        "keywords": ["箔押し年賀状", "箔押し年賀状 印刷", "foil red packets"],
+        "keywords": ["箔押し年賀状", "箔押し年賀状 印刷", "foil red packets", "紅包印刷", "旧正月", "結婚式招待状", "クリスマスカード", "年賀状", "箔押し紅包", "オリジナル紅包", "キャラクター紅包", "中華風招待状", "挨拶状"],
         "body": " fast delivery."
       }
     },
@@ -2272,14 +2272,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "浮雕利是封 | 燙金 UV 壓紋 | 智印雲 ZprintPro",
         "description": "浮雕利是封/利是封 100 個起。採用 157g 紅金紙/銅版紙 高品質材質，支援 標準/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "浮雕工藝，立體觸感，高檔奢華。展現品牌誠意，適合VIP客戶、高端送禮。智印雲提供專業浮雕利是封服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["浮雕利是封", "利是封", "燙金", "浮雕"],
+        "keywords": ["浮雕利是封", "利是封", "燙金", "浮雕", "春聯", "中秋賀卡", "聖誕卡", "婚禮請柬", "嬰兒滿月卡", "感謝卡", "燙金紅包", "卡通紅包", "新年賀卡"],
         "body": " luxurious feel. ZprintPro offers professional Embossed Red Packets services in Hong Kong. High quality"
       },
       "en": {
         "title": "Embossed Red Packets | Gold Foil Print | ZprintPro",
         "description": "Custom embossed red packets from ZprintPro Hong Kong. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certifi.",
         "h1": "Embossed Red Packets 100+ | ZprintPro",
-        "keywords": ["embossed red packets","custom embossed red packets","embossed red packets printing hong kong","embossed red packets free shipping","embossed red packets USD","bulk embossed red packets","embossed red packets DHL","bespoke embossed red packets","embossed red packets wholesale","embossed red packets pricing"],
+        "keywords": ["embossed red packets", "custom embossed red packets", "embossed red packets printing hong kong", "embossed red packets free shipping", "embossed red packets USD", "bulk embossed red packets", "embossed red packets DHL", "bespoke embossed red packets", "embossed red packets wholesale", "embossed red packets pricing", "red packet printing", "CNY red packets", "lai see", "wedding invitations", "Christmas cards", "Chinese New Year cards", "foil red packets", "custom red packets", "greeting cards"],
         "body": "ZprintPro Embossed Red Packets for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Gold Foil Print, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -2287,7 +2287,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "エンボス年賀状 | 箔押し UV エンボス | ZprintPro",
         "description": "エンボス年賀状のエンボス年賀状は ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " dimensional texture",
-        "keywords": ["エンボス年賀状", "エンボス年賀状 印刷", "embossed red packets"],
+        "keywords": ["エンボス年賀状", "エンボス年賀状 印刷", "embossed red packets", "紅包印刷", "旧正月", "結婚式招待状", "クリスマスカード", "年賀状", "箔押し紅包", "オリジナル紅包", "キャラクター紅包", "中華風招待状", "挨拶状"],
         "body": " fast delivery."
       }
     },
@@ -2323,14 +2323,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "description": "custom red packets/利是封 100 個起。採用 157g 紅金紙/銅版紙 高品質材質，支援 標準/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "定制利是封",
-        "keywords": ["custom red packets", "利是封", "利是封印刷", "訂製利是封"],
+        "keywords": ["custom red packets", "利是封", "利是封印刷", "訂製利是封", "春聯", "中秋賀卡", "聖誕卡", "婚禮請柬", "嬰兒滿月卡", "感謝卡", "燙金紅包", "卡通紅包", "新年賀卡"],
         "body": " transparent pricing"
       },
       "en": {
         "title": "Custom Red Packets | Gold Foil Print | ZprintPro",
         "description": "Custom custom red packets from ZprintPro Hong Kong. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
         "h1": "Custom Red Packets 100+ | ZprintPro",
-        "keywords": ["custom red packets","custom custom red packets","custom red packets printing hong kong","custom red packets free shipping","custom red packets USD","bulk custom red packets","custom red packets DHL","bespoke custom red packets","custom red packets wholesale","custom red packets pricing"],
+        "keywords": ["custom red packets", "custom custom red packets", "custom red packets printing hong kong", "custom red packets free shipping", "custom red packets USD", "bulk custom red packets", "custom red packets DHL", "bespoke custom red packets", "custom red packets wholesale", "custom red packets pricing", "red packet printing", "CNY red packets", "lai see", "wedding invitations", "Christmas cards", "Chinese New Year cards", "foil red packets", "embossed red packets", "greeting cards"],
         "body": "ZprintPro Custom Red Packets for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Gold Foil Print, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -2338,7 +2338,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "custom red packets | 箔押し UV エンボス | ZprintPro",
         "description": "custom red packetsのcustom red packetsは ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": "Exclusive design with company logo and greetings. Strengthens brand impression. ZprintPro offers professional Custom Red Packets services in Hong Kong. High quality",
-        "keywords": ["custom red packets", "custom red packets 印刷"],
+        "keywords": ["custom red packets", "custom red packets 印刷", "紅包印刷", "旧正月", "結婚式招待状", "クリスマスカード", "年賀状", "箔押し紅包", "オリジナル紅包", "キャラクター紅包", "中華風招待状", "挨拶状"],
         "body": "独占的なデザイン、会社ロゴと祝福の言葉。ブランドイメージを強化。 ZprintProは香港でオリジナルポチ袋サービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
@@ -2373,14 +2373,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "卡通利是封 | 燙金 UV 壓紋 | 智印雲 ZprintPro",
         "description": "卡通利是封/卡通利是封 100 個起。採用 157g 紅金紙/銅版紙 高品質材質，支援 標準/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "可愛卡通設計，深受年輕人喜愛。適合親子品牌、教育機構、兒童產品。智印雲提供專業卡通利是封服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["卡通利是封", "利是封", "利是封印刷"],
+        "keywords": ["卡通利是封", "利是封", "利是封印刷", "春聯", "中秋賀卡", "聖誕卡", "婚禮請柬", "嬰兒滿月卡", "感謝卡", "燙金紅包", "卡通紅包", "新年賀卡"],
         "body": " transparent pricing"
       },
       "en": {
         "title": "Cartoon Red Packets | Gold Foil Print | ZprintPro",
         "description": "Custom cartoon red packets from ZprintPro Hong Kong. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
         "h1": "Cartoon Red Packets 100+ | ZprintPro",
-        "keywords": ["cartoon red packets","custom cartoon red packets","cartoon red packets printing hong kong","cartoon red packets free shipping","cartoon red packets USD","bulk cartoon red packets","cartoon red packets DHL","bespoke cartoon red packets","cartoon red packets wholesale","cartoon red packets pricing"],
+        "keywords": ["cartoon red packets", "custom cartoon red packets", "cartoon red packets printing hong kong", "cartoon red packets free shipping", "cartoon red packets USD", "bulk cartoon red packets", "cartoon red packets DHL", "bespoke cartoon red packets", "cartoon red packets wholesale", "cartoon red packets pricing", "red packet printing", "CNY red packets", "lai see", "wedding invitations", "Christmas cards", "Chinese New Year cards", "foil red packets", "custom red packets", "embossed red packets", "greeting cards"],
         "body": "ZprintPro Cartoon Red Packets for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Gold Foil Print, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -2388,7 +2388,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "イラスト年賀状 | 箔押し UV エンボス | ZprintPro",
         "description": "イラスト年賀状のイラスト年賀状は ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " loved by young people. ZprintPro offers professional Cartoon Red Packets services in Hong Kong. High quality",
-        "keywords": ["イラスト年賀状", "イラスト年賀状 印刷", "cartoon red packets"],
+        "keywords": ["イラスト年賀状", "イラスト年賀状 印刷", "cartoon red packets", "紅包印刷", "旧正月", "結婚式招待状", "クリスマスカード", "年賀状", "箔押し紅包", "オリジナル紅包", "キャラクター紅包", "中華風招待状", "挨拶状"],
         "body": "かわいいキャラクターデザイン、若者に人気。 ZprintProは香港でキャラクターポチ袋サービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
@@ -2423,14 +2423,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "環保利是封 | 燙金 UV 壓紋 | 智印雲 ZprintPro",
         "description": "環保利是封/利是封 100 個起。採用 157g 紅金紙/銅版紙 高品質材質，支援 標準/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "採用環保紙張和油墨，可持續發展理念。適合注重環保的企業。智印雲提供專業環保利是封服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["環保利是封", "利是封", "利是封印刷", "利是封訂製"],
+        "keywords": ["環保利是封", "利是封", "利是封印刷", "利是封訂製", "春聯", "中秋賀卡", "聖誕卡", "婚禮請柬", "嬰兒滿月卡", "感謝卡", "燙金紅包", "卡通紅包", "新年賀卡"],
         "body": " transparent pricing"
       },
       "en": {
         "title": "Eco Red Packets | Gold Foil Print | Free US Ship | ZprintPro",
         "description": "Custom eco red packets from ZprintPro Hong Kong. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
         "h1": "Eco Red Packets 100+ | Gold Foil Print | ZprintPro",
-        "keywords": ["eco red packets","custom eco red packets","eco red packets printing hong kong","eco red packets free shipping","eco red packets USD","bulk eco red packets","eco red packets DHL","bespoke eco red packets","eco red packets wholesale","eco red packets pricing"],
+        "keywords": ["eco red packets", "custom eco red packets", "eco red packets printing hong kong", "eco red packets free shipping", "eco red packets USD", "bulk eco red packets", "eco red packets DHL", "bespoke eco red packets", "eco red packets wholesale", "eco red packets pricing", "red packet printing", "CNY red packets", "lai see", "wedding invitations", "Christmas cards", "Chinese New Year cards", "foil red packets", "custom red packets", "embossed red packets", "greeting cards"],
         "body": "ZprintPro Eco Red Packets for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Gold Foil Print, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -2438,7 +2438,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "エコ年賀状 | 箔押し UV エンボス | ZprintPro",
         "description": "エコ年賀状のエコ年賀状は ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " sustainable development concept. ZprintPro offers professional Eco Red Packets services in Hong Kong. High quality",
-        "keywords": ["エコ年賀状", "エコ年賀状 印刷", "eco red packets"],
+        "keywords": ["エコ年賀状", "エコ年賀状 印刷", "eco red packets", "紅包印刷", "旧正月", "結婚式招待状", "クリスマスカード", "年賀状", "箔押し紅包", "オリジナル紅包", "キャラクター紅包", "中華風招待状", "挨拶状"],
         "body": "環境に優しい紙とインク、持続可能な開発の理念。 ZprintProは香港でエコポチ袋サービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
@@ -2473,14 +2473,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "大利是封 | 燙金 UV 壓紋 | 智印雲 ZprintPro",
         "description": "大利是封/大利是封 100 個起。採用 157g 紅金紙/銅版紙 高品質材質，支援 標準/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "加大尺寸，可放入更多鈔票或禮品卡。實用大氣，送禮更有面子。智印雲提供專業大號利是封服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["大利是封", "利是封", "利是封印刷"],
+        "keywords": ["大利是封", "利是封", "利是封印刷", "春聯", "中秋賀卡", "聖誕卡", "婚禮請柬", "嬰兒滿月卡", "感謝卡", "燙金紅包", "卡通紅包", "新年賀卡"],
         "body": " transparent pricing"
       },
       "en": {
         "title": "Large Red Packets | Gold Foil Print | ZprintPro | ZprintPro",
         "description": "Custom large red packets from ZprintPro Hong Kong. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
         "h1": "Large Red Packets 100+ | ZprintPro",
-        "keywords": ["large red packets","custom large red packets","large red packets printing hong kong","large red packets free shipping","large red packets USD","bulk large red packets","large red packets DHL","bespoke large red packets","large red packets wholesale","large red packets pricing"],
+        "keywords": ["large red packets", "custom large red packets", "large red packets printing hong kong", "large red packets free shipping", "large red packets USD", "bulk large red packets", "large red packets DHL", "bespoke large red packets", "large red packets wholesale", "large red packets pricing", "red packet printing", "CNY red packets", "lai see", "wedding invitations", "Christmas cards", "Chinese New Year cards", "foil red packets", "custom red packets", "embossed red packets", "greeting cards"],
         "body": "ZprintPro Large Red Packets for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Gold Foil Print, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -2488,7 +2488,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "大型年賀状 | 箔押し UV エンボス | ZprintPro",
         "description": "大型年賀状の大型年賀状は ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " can hold more cash or gift cards. ZprintPro offers professional Large Red Packets services in Hong Kong. High quality",
-        "keywords": ["大型年賀状", "大型年賀状 印刷", "large red packets"],
+        "keywords": ["大型年賀状", "大型年賀状 印刷", "large red packets", "紅包印刷", "旧正月", "結婚式招待状", "クリスマスカード", "年賀状", "箔押し紅包", "オリジナル紅包", "キャラクター紅包", "中華風招待状", "挨拶状"],
         "body": "大きなサイズ、より多くの現金やギフトカードを入れられます。 ZprintProは香港で大判ポチ袋サービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
@@ -2524,14 +2524,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "description": "掛牆年曆/掛牆年曆 50 本起。採用 250g 銅版紙/啞面 高品質材質，支援 A5/A4/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。7-10 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "掛牆年曆",
-        "keywords": ["掛牆年曆", "年曆", "相框年曆"],
+        "keywords": ["掛牆年曆", "年曆", "相框年曆", "桌曆", "掛曆", "月曆", "企業年曆", "迷你口袋曆", "環保再生曆", "定製節日曆", "2027年曆", "照片年曆", "翻頁式桌曆"],
         "body": " 13-page design. Perfect for home and office use. ZprintPro offers professional Wall Calendars services in Hong Kong. High quality"
       },
       "en": {
         "title": "Wall Calendars | Wire-Bound Spiral | ZprintPro | ZprintPro",
         "description": "Custom wall calendars from ZprintPro Hong Kong. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
         "h1": "Wall Calendars 100+ | ZprintPro",
-        "keywords": ["wall calendars","custom wall calendars","wall calendars printing hong kong","wall calendars free shipping","wall calendars USD","bulk wall calendars","wall calendars DHL","bespoke wall calendars","wall calendars wholesale","wall calendars pricing"],
+        "keywords": ["wall calendars", "custom wall calendars", "wall calendars printing hong kong", "wall calendars free shipping", "wall calendars USD", "bulk wall calendars", "wall calendars DHL", "bespoke wall calendars", "wall calendars wholesale", "wall calendars pricing", "calendar printing", "desk calendars", "2027 calendars", "custom calendars", "corporate calendars", "mini calendars", "photo calendars", "eco calendars", "flip calendars"],
         "body": "ZprintPro Wall Calendars for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Wire-Bound Spiral, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -2539,7 +2539,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "壁掛けカレンダー | ノベルティ 各種サイズ | ZprintPro",
         "description": "壁掛けカレンダーの壁掛けカレンダーは ZprintPro にお任せ。250g コート/マット 高品質用紙、A5/A4/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": "Standard A3 or A2 wall calendars",
-        "keywords": ["壁掛けカレンダー", "壁掛けカレンダー 印刷", "wall calendars"],
+        "keywords": ["壁掛けカレンダー", "壁掛けカレンダー 印刷", "wall calendars", "カレンダー印刷", "卓上カレンダー", "2027年カレンダー", "企業カレンダー", "オリジナルカレンダー", "ミニカレンダー", "写真カレンダー", "エコカレンダー", "日めくりカレンダー"],
         "body": " fast delivery."
       }
     },
@@ -2575,14 +2575,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "description": "座檯年曆/座檯年曆 50 本起。採用 250g 銅版紙/啞面 高品質材質，支援 A5/A4/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。7-10 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "座檯年曆",
-        "keywords": ["座檯年曆", "年曆", "calendar"],
+        "keywords": ["座檯年曆", "年曆", "calendar", "桌曆", "掛曆", "月曆", "企業年曆", "迷你口袋曆", "環保再生曆", "定製節日曆", "2027年曆", "照片年曆", "翻頁式桌曆"],
         "body": " stable and beautiful. Perfect for office desk display. ZprintPro offers professional Desk Calendars services in Hong Kong. High quality"
       },
       "en": {
         "title": "Desk Calendars | Wire-Bound Spiral | ZprintPro | ZprintPro",
         "description": "Custom desk calendars from ZprintPro Hong Kong. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
         "h1": "Desk Calendars 100+ | ZprintPro",
-        "keywords": ["desk calendars","custom desk calendars","desk calendars printing hong kong","desk calendars free shipping","desk calendars USD","bulk desk calendars","desk calendars DHL","bespoke desk calendars","desk calendars wholesale","desk calendars pricing"],
+        "keywords": ["desk calendars", "custom desk calendars", "desk calendars printing hong kong", "desk calendars free shipping", "desk calendars USD", "bulk desk calendars", "desk calendars DHL", "bespoke desk calendars", "desk calendars wholesale", "desk calendars pricing", "calendar printing", "wall calendars", "2027 calendars", "custom calendars", "corporate calendars", "mini calendars", "photo calendars", "eco calendars", "flip calendars"],
         "body": "ZprintPro Desk Calendars for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Wire-Bound Spiral, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -2590,7 +2590,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "デスクカレンダー | ノベルティ 各種サイズ | ZprintPro",
         "description": "デスクカレンダーのデスクカレンダーは ZprintPro にお任せ。250g コート/マット 高品質用紙、A5/A4/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": "Triangular desk design",
-        "keywords": ["デスクカレンダー", "デスクカレンダー 印刷", "desk calendars"],
+        "keywords": ["デスクカレンダー", "デスクカレンダー 印刷", "desk calendars", "カレンダー印刷", "卓上カレンダー", "壁掛けカレンダー", "2027年カレンダー", "企業カレンダー", "オリジナルカレンダー", "ミニカレンダー", "写真カレンダー", "エコカレンダー", "日めくりカレンダー"],
         "body": " fast delivery."
       }
     },
@@ -2625,14 +2625,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "定制年曆 | 企業禮品 多款式 | 智印雲 ZprintPro",
         "description": "定制年曆/定制年曆 50 本起。採用 250g 銅版紙/啞面 高品質材質，支援 A5/A4/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。7-10 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "專屬設計，每頁可印公司產品或服務。企業禮品首選，送客戶最佳選擇。智印雲提供專業定制年曆服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["定制年曆", "年曆"],
+        "keywords": ["定制年曆", "年曆", "桌曆", "掛曆", "月曆", "企業年曆", "迷你口袋曆", "環保再生曆", "定製節日曆", "2027年曆", "照片年曆", "翻頁式桌曆"],
         "body": " transparent pricing"
       },
       "en": {
         "title": "Custom Calendars | Wire-Bound Spiral | ZprintPro",
         "description": "Custom custom calendars from ZprintPro Hong Kong. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
         "h1": "Custom Calendars 100+ | ZprintPro",
-        "keywords": ["custom calendars","custom custom calendars","custom calendars printing hong kong","custom calendars free shipping","custom calendars USD","bulk custom calendars","custom calendars DHL","bespoke custom calendars","custom calendars wholesale","custom calendars pricing"],
+        "keywords": ["custom calendars", "custom custom calendars", "custom calendars printing hong kong", "custom calendars free shipping", "custom calendars USD", "bulk custom calendars", "custom calendars DHL", "bespoke custom calendars", "custom calendars wholesale", "custom calendars pricing", "calendar printing", "wall calendars", "desk calendars", "2027 calendars", "corporate calendars", "mini calendars", "photo calendars", "eco calendars", "flip calendars"],
         "body": "ZprintPro Custom Calendars for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Wire-Bound Spiral, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -2640,7 +2640,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "カスタムカレンダー | ノベルティ 各種サイズ | ZprintPro",
         "description": "カスタムカレンダーのカスタムカレンダーは ZprintPro にお任せ。250g コート/マット 高品質用紙、A5/A4/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " each page can feature company products or services. ZprintPro offers professional Custom Calendars services in Hong Kong. High quality",
-        "keywords": ["カスタムカレンダー", "カスタムカレンダー 印刷", "custom calendars"],
+        "keywords": ["カスタムカレンダー", "カスタムカレンダー 印刷", "custom calendars", "カレンダー印刷", "卓上カレンダー", "壁掛けカレンダー", "2027年カレンダー", "企業カレンダー", "オリジナルカレンダー", "ミニカレンダー", "写真カレンダー", "エコカレンダー", "日めくりカレンダー"],
         "body": "独占的なデザイン、各ページに会社の製品やサービスを掲載可能。 ZprintProは香港でオリジナルカレンダーサービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
@@ -2675,14 +2675,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "迷你年曆 | 企業禮品 多款式 | 智印雲 ZprintPro",
         "description": "迷你年曆/迷你年曆 50 本起。採用 250g 銅版紙/啞面 高品質材質，支援 A5/A4/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。7-10 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "小巧便攜，可放入錢包或口袋。創意禮品，年輕人喜愛。智印雲提供專業迷你年曆服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["迷你年曆", "年曆"],
+        "keywords": ["迷你年曆", "年曆", "桌曆", "掛曆", "月曆", "企業年曆", "迷你口袋曆", "環保再生曆", "定製節日曆", "2027年曆", "照片年曆", "翻頁式桌曆"],
         "body": " transparent pricing"
       },
       "en": {
         "title": "Mini Calendars | Wire-Bound Spiral | ZprintPro | ZprintPro",
         "description": "Custom mini calendars from ZprintPro Hong Kong. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
         "h1": "Mini Calendars 100+ | ZprintPro",
-        "keywords": ["mini calendars","custom mini calendars","mini calendars printing hong kong","mini calendars free shipping","mini calendars USD","bulk mini calendars","mini calendars DHL","bespoke mini calendars","mini calendars wholesale","mini calendars pricing"],
+        "keywords": ["mini calendars", "custom mini calendars", "mini calendars printing hong kong", "mini calendars free shipping", "mini calendars USD", "bulk mini calendars", "mini calendars DHL", "bespoke mini calendars", "mini calendars wholesale", "mini calendars pricing", "calendar printing", "wall calendars", "desk calendars", "2027 calendars", "custom calendars", "corporate calendars", "photo calendars", "eco calendars", "flip calendars"],
         "body": "ZprintPro Mini Calendars for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Wire-Bound Spiral, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -2690,7 +2690,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "ミニカレンダー | ノベルティ 各種サイズ | ZprintPro",
         "description": "ミニカレンダーのミニカレンダーは ZprintPro にお任せ。250g コート/マット 高品質用紙、A5/A4/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " fits in wallet or pocket. ZprintPro offers professional Mini Calendars services in Hong Kong. High quality",
-        "keywords": ["ミニカレンダー", "ミニカレンダー 印刷", "mini calendars"],
+        "keywords": ["ミニカレンダー", "ミニカレンダー 印刷", "mini calendars", "カレンダー印刷", "卓上カレンダー", "壁掛けカレンダー", "2027年カレンダー", "企業カレンダー", "オリジナルカレンダー", "写真カレンダー", "エコカレンダー", "日めくりカレンダー"],
         "body": "コンパクトで持ち運び可能、財布やポケットに入ります。 ZprintProは香港でミニカレンダーサービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
@@ -2725,14 +2725,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "相框年曆 | 企業禮品 多款式 | 智印雲 ZprintPro",
         "description": "相框年曆/相框年曆 50 本起。採用 250g 銅版紙/啞面 高品質材質，支援 A5/A4/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。7-10 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "結合相框功能，可替換照片。實用美觀，家庭必備。智印雲提供專業相框年曆服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["相框年曆", "年曆"],
+        "keywords": ["相框年曆", "年曆", "桌曆", "掛曆", "月曆", "企業年曆", "迷你口袋曆", "環保再生曆", "定製節日曆", "2027年曆", "照片年曆", "翻頁式桌曆"],
         "body": " transparent pricing"
       },
       "en": {
         "title": "Photo Frame Calendars | Wire-Bound Spiral | ZprintPro",
         "description": "Custom photo frame calendars from ZprintPro Hong Kong. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 cert.",
         "h1": "Photo Frame Calendars 100+ | ZprintPro",
-        "keywords": ["photo frame calendars","custom photo frame calendars","photo frame calendars printing hong kong","photo frame calendars free shipping","photo frame calendars USD","bulk photo frame calendars","photo frame calendars DHL","bespoke photo frame calendars","photo frame calendars wholesale","photo frame calendars pricing"],
+        "keywords": ["photo frame calendars", "custom photo frame calendars", "photo frame calendars printing hong kong", "photo frame calendars free shipping", "photo frame calendars USD", "bulk photo frame calendars", "photo frame calendars DHL", "bespoke photo frame calendars", "photo frame calendars wholesale", "photo frame calendars pricing", "calendar printing", "wall calendars", "desk calendars", "2027 calendars", "custom calendars", "corporate calendars", "mini calendars", "photo calendars", "eco calendars", "flip calendars"],
         "body": "ZprintPro Photo Frame Calendars for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Wire-Bound Spiral, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -2740,7 +2740,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "フォトフレームカレンダー | ノベルティ 各種サイズ | ZprintPro",
         "description": "フォトフレームカレンダーのフォトフレームカレンダーは ZprintPro にお任せ。250g コート/マット 高品質用紙、A5/A4/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " photos can be replaced. ZprintPro offers professional Photo Frame Calendars services in Hong Kong. High quality",
-        "keywords": ["フォトフレームカレンダー", "フォトフレームカレンダー 印刷", "photo frame calendars"],
+        "keywords": ["フォトフレームカレンダー", "フォトフレームカレンダー 印刷", "photo frame calendars", "カレンダー印刷", "卓上カレンダー", "壁掛けカレンダー", "2027年カレンダー", "企業カレンダー", "オリジナルカレンダー", "ミニカレンダー", "写真カレンダー", "エコカレンダー", "日めくりカレンダー"],
         "body": "フォトフレーム機能付き、写真を交換可能。 ZprintProは香港でフォトフレームカレンダーサービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
@@ -2775,14 +2775,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "磁吸年曆 | 企業禮品 多款式 | 智印雲 ZprintPro",
         "description": "磁吸年曆/磁吸年曆 50 本起。採用 250g 銅版紙/啞面 高品質材質，支援 A5/A4/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。7-10 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "磁石背膠，可貼於冰箱等金屬表面。每日多次接觸，品牌曝光率高。智印雲提供專業磁石年曆服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["磁吸年曆", "年曆"],
+        "keywords": ["磁吸年曆", "年曆", "桌曆", "掛曆", "月曆", "企業年曆", "迷你口袋曆", "環保再生曆", "定製節日曆", "2027年曆", "照片年曆", "翻頁式桌曆"],
         "body": " transparent pricing"
       },
       "en": {
         "title": "Magnetic Calendars | Wire-Bound Spiral | ZprintPro",
         "description": "Custom magnetic calendars from ZprintPro Hong Kong. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certifi.",
         "h1": "Magnetic Calendars 100+ | ZprintPro",
-        "keywords": ["magnetic calendars","custom magnetic calendars","magnetic calendars printing hong kong","magnetic calendars free shipping","magnetic calendars USD","bulk magnetic calendars","magnetic calendars DHL","bespoke magnetic calendars","magnetic calendars wholesale","magnetic calendars pricing"],
+        "keywords": ["magnetic calendars", "custom magnetic calendars", "magnetic calendars printing hong kong", "magnetic calendars free shipping", "magnetic calendars USD", "bulk magnetic calendars", "magnetic calendars DHL", "bespoke magnetic calendars", "magnetic calendars wholesale", "magnetic calendars pricing", "calendar printing", "wall calendars", "desk calendars", "2027 calendars", "custom calendars", "corporate calendars", "mini calendars", "photo calendars", "eco calendars", "flip calendars"],
         "body": "ZprintPro Magnetic Calendars for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Wire-Bound Spiral, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -2790,7 +2790,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "マグネットカレンダー | ノベルティ 各種サイズ | ZprintPro",
         "description": "マグネットカレンダーのマグネットカレンダーは ZprintPro にお任せ。250g コート/マット 高品質用紙、A5/A4/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " can stick to refrigerator and other metal surfaces. ZprintPro offers professional Magnetic Calendars services in Hong Kong. High quality",
-        "keywords": ["マグネットカレンダー", "マグネットカレンダー 印刷", "magnetic calendars"],
+        "keywords": ["マグネットカレンダー", "マグネットカレンダー 印刷", "magnetic calendars", "カレンダー印刷", "卓上カレンダー", "壁掛けカレンダー", "2027年カレンダー", "企業カレンダー", "オリジナルカレンダー", "ミニカレンダー", "写真カレンダー", "エコカレンダー", "日めくりカレンダー"],
         "body": "マグネット背面、冷蔵庫などの金属面に貼付可能。 ZprintProは香港でマグネットカレンダーサービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
@@ -2826,14 +2826,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "description": "PVC 餐牌/餐牌印刷 50 本起。採用 250g 銅版紙/防水覆膜 高品質材質，支援 A4/A5/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "PVC餐牌",
-        "keywords": ["PVC 餐牌", "餐牌印刷", "pvc 餐牌", "膠卡餐牌"],
+        "keywords": ["PVC 餐牌", "餐牌印刷", "pvc 餐牌", "膠卡餐牌", "防水餐牌", "PVC餐牌", "紙質菜單", "精裝菜單", "一次性菜單", "杯套印刷", "打包盒", "餐廳宣傳單", "飲品單"],
         "body": " easy to clean and durable. ZprintPro offers professional PVC Menus services in Hong Kong. High quality"
       },
       "en": {
         "title": "PVC Menus | Laminated Durable | Free US Ship | ZprintPro",
         "description": "Custom pvc menus from ZprintPro Hong Kong. Laminated Durable, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
         "h1": "PVC Menus 100+ | Laminated Durable | ZprintPro",
-        "keywords": ["pvc menus","custom pvc menus","pvc menus printing hong kong","pvc menus free shipping","pvc menus USD","bulk pvc menus","pvc menus DHL","bespoke pvc menus","pvc menus wholesale","pvc menus pricing"],
+        "keywords": ["pvc menus", "custom pvc menus", "pvc menus printing hong kong", "pvc menus free shipping", "pvc menus USD", "bulk pvc menus", "pvc menus DHL", "bespoke pvc menus", "pvc menus wholesale", "pvc menus pricing", "menu printing", "restaurant menus", "waterproof menus", "PVC menus", "custom menus", "takeout menus", "drink menus", "laminated menus", "disposable menus", "catering menus"],
         "body": "ZprintPro PVC Menus for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Laminated Durable, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -2841,7 +2841,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "PVC menu | 防水 ラミネート | ZprintPro",
         "description": "PVC menuのPVC menuは ZprintPro にお任せ。250g コート/防水ラミネート 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": "Waterproof and oil-resistant PVC material",
-        "keywords": ["PVC menu", "PVC menu 印刷", "pvc menus"],
+        "keywords": ["PVC menu", "PVC menu 印刷", "pvc menus", "メニュー印刷", "防水メニュー", "レストランメニュー", "PVCメニュー", "テイクアウトメニュー", "ドリンクメニュー", "使い捨てメニュー", "カフェメニュー", "高級メニュー", "宴会メニュー"],
         "body": " fast delivery."
       }
     },
@@ -2877,14 +2877,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "description": "過膠餐牌/餐牌印刷 50 本起。採用 250g 銅版紙/防水覆膜 高品質材質，支援 A4/A5/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "過膠餐牌",
-        "keywords": ["過膠餐牌", "餐牌印刷"],
+        "keywords": ["過膠餐牌", "餐牌印刷", "防水餐牌", "PVC餐牌", "紙質菜單", "精裝菜單", "一次性菜單", "杯套印刷", "打包盒", "餐廳宣傳單", "飲品單"],
         "body": " waterproof and durable at lower cost. ZprintPro offers professional Laminated Menus services in Hong Kong. High quality"
       },
       "en": {
         "title": "Laminated Menus | Laminated Durable | ZprintPro | ZprintPro",
         "description": "Custom laminated menus from ZprintPro Hong Kong. Laminated Durable, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
         "h1": "Laminated Menus 100+ | ZprintPro",
-        "keywords": ["laminated menus","custom laminated menus","laminated menus printing hong kong","laminated menus free shipping","laminated menus USD","bulk laminated menus","laminated menus DHL","bespoke laminated menus","laminated menus wholesale","laminated menus pricing"],
+        "keywords": ["laminated menus", "custom laminated menus", "laminated menus printing hong kong", "laminated menus free shipping", "laminated menus USD", "bulk laminated menus", "laminated menus DHL", "bespoke laminated menus", "laminated menus wholesale", "laminated menus pricing", "menu printing", "restaurant menus", "waterproof menus", "PVC menus", "custom menus", "takeout menus", "drink menus", "disposable menus", "catering menus"],
         "body": "ZprintPro Laminated Menus for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Laminated Durable, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -2892,7 +2892,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "ラミネート menu | 防水 ラミネート | ZprintPro",
         "description": "ラミネート menuのラミネート menuは ZprintPro にお任せ。250g コート/防水ラミネート 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": "Paper with lamination",
-        "keywords": ["ラミネート menu", "ラミネート menu 印刷", "laminated menus"],
+        "keywords": ["ラミネート menu", "ラミネート menu 印刷", "laminated menus", "メニュー印刷", "防水メニュー", "レストランメニュー", "PVCメニュー", "テイクアウトメニュー", "ドリンクメニュー", "使い捨てメニュー", "カフェメニュー", "高級メニュー", "宴会メニュー"],
         "body": " fast delivery."
       }
     },
@@ -2928,14 +2928,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "description": "精裝餐牌/精裝餐牌 50 本起。採用 250g 銅版紙/防水覆膜 高品質材質，支援 A4/A5/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "精裝餐牌",
-        "keywords": ["精裝餐牌", "餐牌印刷"],
+        "keywords": ["精裝餐牌", "餐牌印刷", "防水餐牌", "PVC餐牌", "紙質菜單", "精裝菜單", "一次性菜單", "杯套印刷", "打包盒", "餐廳宣傳單", "飲品單"],
         "body": " elegant and grand. Perfect for fine dining restaurants"
       },
       "en": {
         "title": "Hardcover Menus | Laminated Durable | ZprintPro | ZprintPro",
         "description": "Custom hardcover menus from ZprintPro Hong Kong. Laminated Durable, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
         "h1": "Hardcover Menus 100+ | ZprintPro",
-        "keywords": ["hardcover menus","custom hardcover menus","hardcover menus printing hong kong","hardcover menus free shipping","hardcover menus USD","bulk hardcover menus","hardcover menus DHL","bespoke hardcover menus","hardcover menus wholesale","hardcover menus pricing"],
+        "keywords": ["hardcover menus", "custom hardcover menus", "hardcover menus printing hong kong", "hardcover menus free shipping", "hardcover menus USD", "bulk hardcover menus", "hardcover menus DHL", "bespoke hardcover menus", "hardcover menus wholesale", "hardcover menus pricing", "menu printing", "restaurant menus", "waterproof menus", "PVC menus", "custom menus", "takeout menus", "drink menus", "laminated menus", "disposable menus", "catering menus"],
         "body": "ZprintPro Hardcover Menus for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Laminated Durable, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -2943,7 +2943,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "ハードカバー menu | 防水 ラミネート | ZprintPro",
         "description": "ハードカバー menuのハードカバー menuは ZprintPro にお任せ。250g コート/防水ラミネート 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": "Hardcover binding",
-        "keywords": ["ハードカバー menu", "ハードカバー menu 印刷", "hardcover menus"],
+        "keywords": ["ハードカバー menu", "ハードカバー menu 印刷", "hardcover menus", "メニュー印刷", "防水メニュー", "レストランメニュー", "PVCメニュー", "テイクアウトメニュー", "ドリンクメニュー", "使い捨てメニュー", "カフェメニュー", "高級メニュー", "宴会メニュー"],
         "body": " transparent pricing"
       }
     },
@@ -2978,14 +2978,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "餐廳酒水牌 | 防水 覆膜 50本起 | 智印雲 ZprintPro",
         "description": "酒水牌/酒水牌 50 本起。採用 250g 銅版紙/防水覆膜 高品質材質，支援 A4/A5/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "專為酒水設計，可立式或手持。酒吧、餐廳必備。智印雲提供專業酒水牌服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["酒水牌", "餐牌印刷"],
+        "keywords": ["酒水牌", "餐牌印刷", "防水餐牌", "PVC餐牌", "紙質菜單", "精裝菜單", "一次性菜單", "杯套印刷", "打包盒", "餐廳宣傳單", "飲品單"],
         "body": " transparent pricing"
       },
       "en": {
         "title": "Drink Menus | Laminated Durable | Free US Ship | ZprintPro",
         "description": "Custom drink menus from ZprintPro Hong Kong. Laminated Durable, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
         "h1": "Drink Menus 100+ | Laminated Durable | ZprintPro",
-        "keywords": ["drink menus","custom drink menus","drink menus printing hong kong","drink menus free shipping","drink menus USD","bulk drink menus","drink menus DHL","bespoke drink menus","drink menus wholesale","drink menus pricing"],
+        "keywords": ["drink menus", "custom drink menus", "drink menus printing hong kong", "drink menus free shipping", "drink menus USD", "bulk drink menus", "drink menus DHL", "bespoke drink menus", "drink menus wholesale", "drink menus pricing", "menu printing", "restaurant menus", "waterproof menus", "PVC menus", "custom menus", "takeout menus", "laminated menus", "disposable menus", "catering menus"],
         "body": "ZprintPro Drink Menus for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Laminated Durable, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -2993,7 +2993,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "ドリンクメニュー | 防水 ラミネート | ZprintPro",
         "description": "ドリンクメニューのドリンクメニューは ZprintPro にお任せ。250g コート/防水ラミネート 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " can be standing or handheld. ZprintPro offers professional Drink Menus services in Hong Kong. High quality",
-        "keywords": ["ドリンクメニュー", "ドリンクメニュー 印刷", "drink menus"],
+        "keywords": ["ドリンクメニュー", "ドリンクメニュー 印刷", "drink menus", "メニュー印刷", "防水メニュー", "レストランメニュー", "PVCメニュー", "テイクアウトメニュー", "使い捨てメニュー", "カフェメニュー", "高級メニュー", "宴会メニュー"],
         "body": "ドリンク専用設計、立てかけまたは手持ち可能。 ZprintProは香港でドリンクメニューサービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
@@ -3028,14 +3028,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "一次性餐牌 | 防水 覆膜 50本起 | 智印雲 ZprintPro",
         "description": "一次性餐牌/餐牌印刷 50 本起。採用 250g 銅版紙/防水覆膜 高品質材質，支援 A4/A5/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "經濟紙質，適合快餐店、外賣店。可頻繁更換內容。智印雲提供專業一次性餐牌服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["一次性餐牌", "餐牌印刷"],
+        "keywords": ["一次性餐牌", "餐牌印刷", "防水餐牌", "PVC餐牌", "紙質菜單", "精裝菜單", "一次性菜單", "杯套印刷", "打包盒", "餐廳宣傳單", "飲品單"],
         "body": " transparent pricing"
       },
       "en": {
         "title": "Disposable Menus | Laminated Durable | ZprintPro",
         "description": "Custom disposable menus from ZprintPro Hong Kong. Laminated Durable, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
         "h1": "Disposable Menus 100+ | ZprintPro",
-        "keywords": ["disposable menus","custom disposable menus","disposable menus printing hong kong","disposable menus free shipping","disposable menus USD","bulk disposable menus","disposable menus DHL","bespoke disposable menus","disposable menus wholesale","disposable menus pricing"],
+        "keywords": ["disposable menus", "custom disposable menus", "disposable menus printing hong kong", "disposable menus free shipping", "disposable menus USD", "bulk disposable menus", "disposable menus DHL", "bespoke disposable menus", "disposable menus wholesale", "disposable menus pricing", "menu printing", "restaurant menus", "waterproof menus", "PVC menus", "custom menus", "takeout menus", "drink menus", "laminated menus", "catering menus"],
         "body": "ZprintPro Disposable Menus for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Laminated Durable, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -3043,7 +3043,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "使い捨てメニュー | 防水 ラミネート | ZprintPro",
         "description": "使い捨てメニューの使い捨てメニューは ZprintPro にお任せ。250g コート/防水ラミネート 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " perfect for fast food and takeaway shops. ZprintPro offers professional Disposable Menus services in Hong Kong. High quality",
-        "keywords": ["使い捨てメニュー", "使い捨てメニュー 印刷", "disposable menus"],
+        "keywords": ["使い捨てメニュー", "使い捨てメニュー 印刷", "disposable menus", "メニュー印刷", "防水メニュー", "レストランメニュー", "PVCメニュー", "テイクアウトメニュー", "ドリンクメニュー", "カフェメニュー", "高級メニュー", "宴会メニュー"],
         "body": "経済的な紙、ファストフードやテイクアウト店に最適。 ZprintProは香港で使い捨てメニューサービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
@@ -3079,14 +3079,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "description": "戶外橫幅/易拉架 1 個起。採用 PP 合成紙/PVC 高品質材質，支援 80×200cm 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。1-3 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "戶外燈布噴繪",
-        "keywords": ["戶外橫幅", "易拉架", "易拉架印刷"],
+        "keywords": ["戶外橫幅", "易拉架", "易拉架印刷", "噴繪印刷", "易拉寶", "展覽橫幅", "廣告牌", "燈箱", "旗幟印刷", "車身貼", "舞台背景", "門型展架"],
         "body": " waterproof and UV-resistant"
       },
       "en": {
         "title": "Outdoor Vinyl Banners | Wind-Resistant | ZprintPro",
         "description": "Custom outdoor vinyl banners from ZprintPro Hong Kong. Wind-Resistant, 4-color CMYK. 1-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
         "h1": "Outdoor Vinyl Banners 1+ | ZprintPro",
-        "keywords": ["outdoor vinyl banners","custom outdoor vinyl banners","outdoor vinyl banners printing hong kong","outdoor vinyl banners free shipping","outdoor vinyl banners USD","bulk outdoor vinyl banners","outdoor vinyl banners DHL","bespoke outdoor vinyl banners","outdoor vinyl banners wholesale","outdoor vinyl banners pricing"],
+        "keywords": ["outdoor vinyl banners", "custom outdoor vinyl banners", "outdoor vinyl banners printing hong kong", "outdoor vinyl banners free shipping", "outdoor vinyl banners USD", "bulk outdoor vinyl banners", "outdoor vinyl banners DHL", "bespoke outdoor vinyl banners", "outdoor vinyl banners wholesale", "outdoor vinyl banners pricing", "banner printing", "roll-up banners", "outdoor banners", "exhibition banners", "vinyl banners", "X-stand banners", "mesh banners", "vehicle wraps", "stage backdrops", "adhesive banners"],
         "body": "ZprintPro Outdoor Vinyl Banners for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Wind-Resistant, 4-color CMYK, premium materials. 1-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -3094,7 +3094,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "屋外ビニールバナー | アルミスタンド 高画質 | ZprintPro",
         "description": "屋外ビニールバナーの屋外ビニールバナーは ZprintPro にお任せ。PP 合成紙/PVC 高品質用紙、80×200cm 各種対応。4色 CMYK 印刷、デザイン自由。1個〜〜、1-3営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": "Large outdoor vinyl banners",
-        "keywords": ["屋外ビニールバナー", "屋外ビニールバナー 印刷", "outdoor vinyl banners"],
+        "keywords": ["屋外ビニールバナー", "屋外ビニールバナー 印刷", "outdoor vinyl banners", "バナー印刷", "ロールアップバナー", "屋外バナー", "展示バナー", "横断幕", "懸垂幕", "メッシュバナー", "車両広告", "ステージ背景", "広告バナー"],
         "body": " transparent pricing"
       }
     },
@@ -3130,14 +3130,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "description": "易拉寶/易拉架 1 個起。採用 PP 合成紙/PVC 高品質材質，支援 80×200cm 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。1-3 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "易拉寶",
-        "keywords": ["易拉寶", "易拉架", "易拉架印刷", "易拉架訂製"],
+        "keywords": ["易拉寶", "易拉架", "易拉架印刷", "易拉架訂製", "噴繪印刷", "戶外橫幅", "展覽橫幅", "廣告牌", "燈箱", "旗幟印刷", "車身貼", "舞台背景", "門型展架"],
         "body": " easy to install. Essential for exhibitions and roadshows. ZprintPro offers professional Roll-up Banners services in Hong Kong. High quality"
       },
       "en": {
         "title": "Roll-up Banners | Wind-Resistant | Free US Ship | ZprintPro",
         "description": "Custom roll-up banners from ZprintPro Hong Kong. Wind-Resistant, 4-color CMYK. 1-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
         "h1": "Roll-up Banners 1+ | Wind-Resistant | ZprintPro",
-        "keywords": ["roll-up banners","custom roll up banners","roll up banners printing hong kong","roll-up banners free shipping","roll-up banners USD","bulk roll-up banners","roll-up banners DHL","bespoke roll-up banners","custom roll-up banners","roll up banners wholesale"],
+        "keywords": ["roll-up banners", "custom roll up banners", "roll up banners printing hong kong", "roll-up banners free shipping", "roll-up banners USD", "bulk roll-up banners", "roll-up banners DHL", "bespoke roll-up banners", "custom roll-up banners", "roll up banners wholesale", "banner printing", "outdoor banners", "exhibition banners", "vinyl banners", "X-stand banners", "mesh banners", "vehicle wraps", "stage backdrops", "adhesive banners"],
         "body": "ZprintPro Roll-up Banners for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Wind-Resistant, 4-color CMYK, premium materials. 1-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -3145,7 +3145,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "ロールアップバナー | アルミスタンド 高画質 | ZprintPro",
         "description": "ロールアップバナーのロールアップバナーは ZprintPro にお任せ。PP 合成紙/PVC 高品質用紙、80×200cm 各種対応。4色 CMYK 印刷、デザイン自由。1個〜〜、1-3営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": "Portable roll-up banner stands",
-        "keywords": ["ロールアップバナー", "ロールアップバナー 印刷", "roll up banners"],
+        "keywords": ["ロールアップバナー", "ロールアップバナー 印刷", "roll up banners", "バナー印刷", "屋外バナー", "展示バナー", "横断幕", "懸垂幕", "メッシュバナー", "車両広告", "ステージ背景", "広告バナー"],
         "body": " fast delivery."
       }
     },
@@ -3180,14 +3180,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "背膠噴繪 | 鋁合金支架 高清 | 智印雲 ZprintPro",
         "description": "背膠噴繪/噴繪 1 個起。採用 PP 合成紙/PVC 高品質材質，支援 80×200cm 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。1-3 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "自帶背膠，可直接粘貼於牆面或玻璃。適合店鋪裝飾、活動佈置。智印雲提供專業背膠噴繪服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["背膠噴繪", "噴繪", "易拉架"],
+        "keywords": ["背膠噴繪", "噴繪", "易拉架", "噴繪印刷", "易拉寶", "戶外橫幅", "展覽橫幅", "廣告牌", "燈箱", "旗幟印刷", "車身貼", "舞台背景", "門型展架"],
         "body": " transparent pricing"
       },
       "en": {
         "title": "Adhesive Banners | Wind-Resistant | Free US Ship | ZprintPro",
         "description": "Custom adhesive banners from ZprintPro Hong Kong. Wind-Resistant, 4-color CMYK. 1-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
         "h1": "Adhesive Banners 1+ | Wind-Resistant | ZprintPro",
-        "keywords": ["adhesive banners","custom adhesive banners","adhesive banners printing hong kong","adhesive banners free shipping","adhesive banners USD","bulk adhesive banners","adhesive banners DHL","bespoke adhesive banners","adhesive banners wholesale","adhesive banners pricing"],
+        "keywords": ["adhesive banners", "custom adhesive banners", "adhesive banners printing hong kong", "adhesive banners free shipping", "adhesive banners USD", "bulk adhesive banners", "adhesive banners DHL", "bespoke adhesive banners", "adhesive banners wholesale", "adhesive banners pricing", "banner printing", "roll-up banners", "outdoor banners", "exhibition banners", "vinyl banners", "X-stand banners", "mesh banners", "vehicle wraps", "stage backdrops"],
         "body": "ZprintPro Adhesive Banners for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Wind-Resistant, 4-color CMYK, premium materials. 1-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -3195,7 +3195,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "粘着バナー | アルミスタンド 高画質 | ZprintPro",
         "description": "粘着バナーの粘着バナーは ZprintPro にお任せ。PP 合成紙/PVC 高品質用紙、80×200cm 各種対応。4色 CMYK 印刷、デザイン自由。1個〜〜、1-3営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " can be directly applied to walls or glass. ZprintPro offers professional Adhesive Banners services in Hong Kong. High quality",
-        "keywords": ["粘着バナー", "粘着バナー 印刷", "adhesive banners"],
+        "keywords": ["粘着バナー", "粘着バナー 印刷", "adhesive banners", "バナー印刷", "ロールアップバナー", "屋外バナー", "展示バナー", "横断幕", "懸垂幕", "メッシュバナー", "車両広告", "ステージ背景", "広告バナー"],
         "body": "自己粘着、壁やガラスに直接貼付可能。 ZprintProは香港で粘着バナーサービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
@@ -3230,14 +3230,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "汽車車身貼 | 車身廣告 全車包覆 | 智印雲 ZprintPro",
         "description": "車身貼/車身貼 1 套起。採用 車身貼 PVC 高品質材質，支援 訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "專用車身貼紙，耐候性強，移除不留痕。流動廣告，曝光率高。智印雲提供專業車身廣告服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["車身貼", "車身廣告"],
+        "keywords": ["車身貼", "車身廣告", "噴繪印刷", "易拉寶", "戶外橫幅", "展覽橫幅", "廣告牌", "燈箱", "旗幟印刷", "舞台背景", "門型展架"],
         "body": " no residue when removed. ZprintPro offers professional Vehicle Wraps services in Hong Kong. High quality"
       },
       "en": {
         "title": "Vehicle Wraps | 3M Vinyl Wrap | Free US Ship | ZprintPro",
         "description": "Custom vehicle wraps from ZprintPro Hong Kong. 3M Vinyl Wrap, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
         "h1": "Vehicle Wraps 100+ | 3M Vinyl Wrap | ZprintPro",
-        "keywords": ["vehicle wraps","custom vehicle wraps","vehicle wraps printing hong kong","vehicle wraps free shipping","vehicle wraps USD","bulk vehicle wraps","vehicle wraps DHL","bespoke vehicle wraps","vehicle wraps wholesale","vehicle wraps pricing"],
+        "keywords": ["vehicle wraps", "custom vehicle wraps", "vehicle wraps printing hong kong", "vehicle wraps free shipping", "vehicle wraps USD", "bulk vehicle wraps", "vehicle wraps DHL", "bespoke vehicle wraps", "vehicle wraps wholesale", "vehicle wraps pricing", "banner printing", "roll-up banners", "outdoor banners", "exhibition banners", "vinyl banners", "X-stand banners", "mesh banners", "stage backdrops", "adhesive banners"],
         "body": "ZprintPro Vehicle Wraps for retail, e-commerce, corporate gifting, events, and small business across US and global markets. 3M Vinyl Wrap, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -3245,7 +3245,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "車両ラッピング | 車両フルラップ カスタム | ZprintPro",
         "description": "車両ラッピングの車両ラッピングは ZprintPro にお任せ。車体 wrap PVC 高品質用紙、カスタム 各種対応。4色 CMYK 印刷、デザイン自由。1セット〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " strong weather resistance",
-        "keywords": ["車両ラッピング", "車両ラッピング 印刷", "vehicle wraps"],
+        "keywords": ["車両ラッピング", "車両ラッピング 印刷", "vehicle wraps", "バナー印刷", "ロールアップバナー", "屋外バナー", "展示バナー", "横断幕", "懸垂幕", "メッシュバナー", "車両広告", "ステージ背景", "広告バナー"],
         "body": " fast delivery."
       }
     },
@@ -3280,14 +3280,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "網孔布易拉寶 | 鋁合金支架 高清 | 智印雲 ZprintPro",
         "description": "網孔布易拉寶/易拉架 1 個起。採用 PP 合成紙/PVC 高品質材質，支援 80×200cm 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。1-3 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "網格設計，透光透風。適合大型戶外廣告、建築圍板。智印雲提供專業網格布噴繪服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["網孔布易拉寶", "易拉架", "網孔布"],
+        "keywords": ["網孔布易拉寶", "易拉架", "網孔布", "噴繪印刷", "易拉寶", "戶外橫幅", "展覽橫幅", "廣告牌", "燈箱", "旗幟印刷", "車身貼", "舞台背景", "門型展架"],
         "body": " transparent pricing"
       },
       "en": {
         "title": "Mesh Banners | Wind-Resistant | Free US Ship | ZprintPro",
         "description": "Custom mesh banners from ZprintPro Hong Kong. Wind-Resistant, 4-color CMYK. 1-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified. Quote tod",
         "h1": "Mesh Banners 1+ | Wind-Resistant | ZprintPro",
-        "keywords": ["mesh banners","custom mesh banners","mesh banners printing hong kong","mesh banners free shipping","mesh banners USD","bulk mesh banners","mesh banners DHL","bespoke mesh banners","mesh banners wholesale","mesh banners pricing"],
+        "keywords": ["mesh banners", "custom mesh banners", "mesh banners printing hong kong", "mesh banners free shipping", "mesh banners USD", "bulk mesh banners", "mesh banners DHL", "bespoke mesh banners", "mesh banners wholesale", "mesh banners pricing", "banner printing", "roll-up banners", "outdoor banners", "exhibition banners", "vinyl banners", "X-stand banners", "vehicle wraps", "stage backdrops", "adhesive banners"],
         "body": "ZprintPro Mesh Banners for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Wind-Resistant, 4-color CMYK, premium materials. 1-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -3295,7 +3295,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "メッシュバナー | アルミスタンド 高画質 | ZprintPro",
         "description": "メッシュバナーのメッシュバナーは ZprintPro にお任せ。PP 合成紙/PVC 高品質用紙、80×200cm 各種対応。4色 CMYK 印刷、デザイン自由。1個〜〜、1-3営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " light and air permeable. Perfect for large outdoor advertising. ZprintPro offers professional Mesh Banners services in Hong Kong. High quality",
-        "keywords": ["メッシュバナー", "メッシュバナー 印刷", "mesh banners"],
+        "keywords": ["メッシュバナー", "メッシュバナー 印刷", "mesh banners", "バナー印刷", "ロールアップバナー", "屋外バナー", "展示バナー", "横断幕", "懸垂幕", "車両広告", "ステージ背景", "広告バナー"],
         "body": "メッシュデザイン、光と空気を通す。大型屋外広告に最適。 ZprintProは香港でメッシュバナーサービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
@@ -3583,14 +3583,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "description": "公司信封/公司信封 100 個起。採用 100g 書寫紙/白牛皮 高品質材質，支援 DL/C5/C4 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "公司信封",
-        "keywords": ["公司信封", "信封 印刷", "信封訂製"],
+        "keywords": ["公司信封", "信封 印刷", "信封訂製", "信封印刷", "牛皮信封", "開窗信封", "彩色信封", "企業LOGO信封", "信紙信封套裝", "C6信封", "DL信封", "中式信封", "氣泡信封"],
         "body": " essential for business. ZprintPro offers professional Business Envelopes services in Hong Kong. High quality"
       },
       "en": {
         "title": "Business Envelopes | Foil-Lined Premium | ZprintPro",
         "description": "Custom business envelopes from ZprintPro Hong Kong. Foil-Lined Premium, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certif.",
         "h1": "Business Envelopes 100+ | ZprintPro",
-        "keywords": ["business envelopes","custom business envelopes","business envelopes printing hong kong","business envelopes free shipping","business envelopes USD","bulk business envelopes","business envelopes DHL","bespoke business envelopes","business envelopes wholesale","business envelopes pricing"],
+        "keywords": ["business envelopes", "custom business envelopes", "business envelopes printing hong kong", "business envelopes free shipping", "business envelopes USD", "bulk business envelopes", "business envelopes DHL", "bespoke business envelopes", "business envelopes wholesale", "business envelopes pricing", "envelope printing", "custom envelopes", "window envelopes", "colored envelopes", "kraft envelopes", "logo envelopes", "corporate envelopes", "C6 envelopes", "DL envelopes"],
         "body": "ZprintPro Business Envelopes for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Foil-Lined Premium, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -3598,7 +3598,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "会社封筒 | 両面印刷 マルチサイズ | ZprintPro",
         "description": "会社封筒の会社封筒は ZprintPro にお任せ。100g 筆記用紙/白クラフト 高品質用紙、DL/C5/C4 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": "Custom business envelopes with logo and address. Professional image",
-        "keywords": ["会社封筒", "会社封筒 印刷", "business envelopes"],
+        "keywords": ["会社封筒", "会社封筒 印刷", "business envelopes", "封筒印刷", "カスタム封筒", "窓付き封筒", "クラフト封筒", "企業封筒", "ロゴ封筒", "長形封筒", "洋形封筒", "和封筒", "社名入り封筒"],
         "body": " fast delivery."
       }
     },
@@ -3634,14 +3634,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "description": "彩色信封/彩色信封 100 個起。採用 100g 書寫紙/白牛皮 高品質材質，支援 DL/C5/C4 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "彩色信封",
-        "keywords": ["彩色信封", "信封 印刷", "信封訂製"],
+        "keywords": ["彩色信封", "信封 印刷", "信封訂製", "信封印刷", "牛皮信封", "開窗信封", "企業LOGO信封", "信紙信封套裝", "C6信封", "DL信封", "中式信封", "氣泡信封"],
         "body": " strong visual appeal. Perfect for invitations"
       },
       "en": {
         "title": "Colored Envelopes | Foil-Lined Premium | ZprintPro",
         "description": "Custom colored envelopes from ZprintPro Hong Kong. Foil-Lined Premium, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certifi.",
         "h1": "Colored Envelopes 100+ | ZprintPro",
-        "keywords": ["colored envelopes","custom colored envelopes","colored envelopes printing hong kong","colored envelopes free shipping","colored envelopes USD","bulk colored envelopes","colored envelopes DHL","bespoke colored envelopes","colored envelopes wholesale","colored envelopes pricing"],
+        "keywords": ["colored envelopes", "custom colored envelopes", "colored envelopes printing hong kong", "colored envelopes free shipping", "colored envelopes USD", "bulk colored envelopes", "colored envelopes DHL", "bespoke colored envelopes", "colored envelopes wholesale", "colored envelopes pricing", "envelope printing", "custom envelopes", "business envelopes", "window envelopes", "kraft envelopes", "logo envelopes", "corporate envelopes", "C6 envelopes", "DL envelopes"],
         "body": "ZprintPro Colored Envelopes for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Foil-Lined Premium, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -3649,7 +3649,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "カラー封筒 | 両面印刷 マルチサイズ | ZprintPro",
         "description": "カラー封筒のカラー封筒は ZprintPro にお任せ。100g 筆記用紙/白クラフト 高品質用紙、DL/C5/C4 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": "Colorful printing",
-        "keywords": ["カラー封筒", "カラー封筒 印刷", "colored envelopes"],
+        "keywords": ["カラー封筒", "カラー封筒 印刷", "colored envelopes", "封筒印刷", "カスタム封筒", "窓付き封筒", "クラフト封筒", "企業封筒", "ロゴ封筒", "長形封筒", "洋形封筒", "和封筒", "社名入り封筒"],
         "body": " transparent pricing"
       }
     },
@@ -3684,14 +3684,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "大號信封 | 雙面印刷 多規格 | 智印雲 ZprintPro",
         "description": "大號信封/大號信封 100 個起。採用 100g 書寫紙/白牛皮 高品質材質，支援 DL/C5/C4 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "A4尺寸大信封，可裝入文件、合同。辦公室必備。智印雲提供專業大號信封服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["大號信封", "信封 印刷", "信封訂製"],
+        "keywords": ["大號信封", "信封 印刷", "信封訂製", "信封印刷", "牛皮信封", "開窗信封", "彩色信封", "企業LOGO信封", "信紙信封套裝", "C6信封", "DL信封", "中式信封", "氣泡信封"],
         "body": " transparent pricing"
       },
       "en": {
         "title": "Large Envelopes | Foil-Lined Premium | ZprintPro",
         "description": "Custom large envelopes from ZprintPro Hong Kong. Foil-Lined Premium, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
         "h1": "Large Envelopes 100+ | ZprintPro",
-        "keywords": ["large envelopes","custom large envelopes","large envelopes printing hong kong","large envelopes free shipping","large envelopes USD","bulk large envelopes","large envelopes DHL","bespoke large envelopes","large envelopes wholesale","large envelopes pricing"],
+        "keywords": ["large envelopes", "custom large envelopes", "large envelopes printing hong kong", "large envelopes free shipping", "large envelopes USD", "bulk large envelopes", "large envelopes DHL", "bespoke large envelopes", "large envelopes wholesale", "large envelopes pricing", "envelope printing", "custom envelopes", "business envelopes", "window envelopes", "colored envelopes", "kraft envelopes", "logo envelopes", "corporate envelopes", "C6 envelopes", "DL envelopes"],
         "body": "ZprintPro Large Envelopes for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Foil-Lined Premium, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -3699,7 +3699,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "大型封筒 | 両面印刷 マルチサイズ | ZprintPro",
         "description": "大型封筒の大型封筒は ZprintPro にお任せ。100g 筆記用紙/白クラフト 高品質用紙、DL/C5/C4 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " can hold documents and contracts. Office essential. ZprintPro offers professional Large Envelopes services in Hong Kong. High quality",
-        "keywords": ["大型封筒", "大型封筒 印刷", "large envelopes"],
+        "keywords": ["大型封筒", "大型封筒 印刷", "large envelopes", "封筒印刷", "カスタム封筒", "窓付き封筒", "クラフト封筒", "企業封筒", "ロゴ封筒", "長形封筒", "洋形封筒", "和封筒", "社名入り封筒"],
         "body": "A4サイズの大きな封筒、書類や契約書を入れられます。オフィスに必須。 ZprintProは香港で大判封筒サービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
@@ -3734,14 +3734,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "珍珠光信封 | 雙面印刷 多規格 | 智印雲 ZprintPro",
         "description": "珍珠光信封/信封 印刷 100 個起。採用 100g 書寫紙/白牛皮 高品質材質，支援 DL/C5/C4 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "珠光紙張，閃耀質感。適合婚禮邀請、高端活動。智印雲提供專業珠光信封服務，香港本地印刷，品質保證，價格透明。",
-        "keywords": ["珍珠光信封", "信封 印刷", "信封訂製"],
+        "keywords": ["珍珠光信封", "信封 印刷", "信封訂製", "信封印刷", "牛皮信封", "開窗信封", "彩色信封", "企業LOGO信封", "信紙信封套裝", "C6信封", "DL信封", "中式信封", "氣泡信封"],
         "body": " high-end events. ZprintPro offers professional Pearl Envelopes services in Hong Kong. High quality"
       },
       "en": {
         "title": "Pearl Envelopes | Foil-Lined Premium | ZprintPro",
         "description": "Custom pearl envelopes from ZprintPro Hong Kong. Foil-Lined Premium, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
         "h1": "Pearl Envelopes 100+ | ZprintPro",
-        "keywords": ["pearl envelopes","custom pearl envelopes","pearl envelopes printing hong kong","pearl envelopes free shipping","pearl envelopes USD","bulk pearl envelopes","pearl envelopes DHL","bespoke pearl envelopes","pearl envelopes wholesale","pearl envelopes pricing"],
+        "keywords": ["pearl envelopes", "custom pearl envelopes", "pearl envelopes printing hong kong", "pearl envelopes free shipping", "pearl envelopes USD", "bulk pearl envelopes", "pearl envelopes DHL", "bespoke pearl envelopes", "pearl envelopes wholesale", "pearl envelopes pricing", "envelope printing", "custom envelopes", "business envelopes", "window envelopes", "colored envelopes", "kraft envelopes", "logo envelopes", "corporate envelopes", "C6 envelopes", "DL envelopes"],
         "body": "ZprintPro Pearl Envelopes for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Foil-Lined Premium, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -3749,7 +3749,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "パール封筒 | 両面印刷 マルチサイズ | ZprintPro",
         "description": "パール封筒のパール封筒は ZprintPro にお任せ。100g 筆記用紙/白クラフト 高品質用紙、DL/C5/C4 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
         "h1": " shimmering quality. Perfect for wedding invitations",
-        "keywords": ["パール封筒", "パール封筒 印刷", "pearl envelopes"],
+        "keywords": ["パール封筒", "パール封筒 印刷", "pearl envelopes", "封筒印刷", "カスタム封筒", "窓付き封筒", "クラフト封筒", "企業封筒", "ロゴ封筒", "長形封筒", "洋形封筒", "和封筒", "社名入り封筒"],
         "body": " fast delivery."
       }
     },
@@ -3987,14 +3987,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "磁吸翻蓋禮盒印刷 | 高端定制 48 小時交貨 | 智印雲 ZprintPro",
         "description": "磁吸翻蓋禮盒印刷 100 個起, 採用 1200g 高密度灰板外裱特種紙, 磁吸開合儀式感強, 適合高端產品包裝、珠寶、奢侈品、月餅。48 小時快遞 (順豐香港本地派送)。**智印雲 香港本地印刷 非智印港**: 灰板通過 FSC 認證, 免費打樣, 支持燙金、壓凹、局部光油。",
         "h1": "磁吸翻蓋禮盒",
-        "keywords": ["磁吸翻蓋禮盒", "禮盒印刷", "高端禮盒", "包裝盒印刷"],
+        "keywords": ["磁吸翻蓋禮盒", "禮盒印刷", "高端禮盒", "包裝盒印刷", "瓦楞紙盒", "禮品盒", "定制包裝", "化妝品盒", "食品盒", "快遞盒", "天地蓋盒", "紙盒定制", "高檔禮盒"],
         "body": " magnetic closure gift box"
       },
       "en": {
         "title": "Magnetic Closure Gift Box | Premium Custom | ZprintPro",
         "description": "Custom magnetic closure gift box from ZprintPro Hong Kong. Premium Custom, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 cer.",
         "h1": "Magnetic Closure Gift Box 100+ | ZprintPro",
-        "keywords": ["magnetic closure gift box","custom magnetic closure gift box","magnetic closure gift box free shipping","magnetic closure gift box USD","bulk magnetic closure gift box","magnetic closure gift box DHL","bespoke magnetic closure gift box","magnetic closure gift box wholesale","magnetic closure gift box pricing","magnetic closure gift box bulk"],
+        "keywords": ["magnetic closure gift box", "custom magnetic closure gift box", "magnetic closure gift box free shipping", "magnetic closure gift box USD", "bulk magnetic closure gift box", "magnetic closure gift box DHL", "bespoke magnetic closure gift box", "magnetic closure gift box wholesale", "magnetic closure gift box pricing", "magnetic closure gift box bulk", "packaging box printing", "gift boxes", "cosmetic boxes", "food boxes", "mailer boxes", "corrugated boxes", "custom packaging", "rigid boxes", "folding cartons", "product boxes"],
         "body": "ZprintPro Magnetic Closure Gift Box for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Premium Custom, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -4002,7 +4002,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "マグネット式ギフトボックス | カスタム印刷 | ZprintPro",
         "description": "マグネット式ギフトボックスのカスタム印刷は ZprintPro にお任せ。香港直結、安心品質。",
         "h1": " magnetic closure gift box",
-        "keywords": ["マグネット式ギフトボックス", "magnetic closure gift box"],
+        "keywords": ["マグネット式ギフトボックス", "magnetic closure gift box", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱"],
         "body": " magnetic closure gift box"
       }
     },
@@ -4029,14 +4029,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "電子產品包裝盒印刷 | 3C 數碼 EVA 內襯 | 智印雲 ZprintPro",
         "description": "電子產品包裝盒印刷 100 個起, 採用瓦楞紙板或白卡紙, EVA 海棉內襯, 適合 3C 數碼、手機配件、智能設備包裝。48 小時快遞 (順豐香港本地派送)。**智印雲 香港本地印刷 非智印港**: 緩衝抗震設計, 支持多款規格尺寸, 免費結構設計打樣。",
         "h1": "電子產品包裝盒",
-        "keywords": ["電子產品包裝盒", "3C 包裝", "數碼包裝盒", "包裝盒印刷"],
+        "keywords": ["電子產品包裝盒", "3C 包裝", "數碼包裝盒", "包裝盒印刷", "瓦楞紙盒", "禮品盒", "定制包裝", "化妝品盒", "食品盒", "快遞盒", "天地蓋盒", "紙盒定制", "高檔禮盒"],
         "body": " electronics packaging box"
       },
       "en": {
         "title": "Electronics Packaging Box | Eco-Friendly Material",
         "description": "Custom electronics packaging box from ZprintPro Hong Kong. Eco-Friendly Material, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9.",
         "h1": "Electronics Packaging Box 100+ | ZprintPro",
-        "keywords": ["electronics packaging box","custom electronics packaging box","electronics packaging box free shipping","electronics packaging box USD","bulk electronics packaging box","electronics packaging box DHL","bespoke electronics packaging box","electronics packaging box wholesale","electronics packaging box pricing","electronics packaging box bulk"],
+        "keywords": ["electronics packaging box", "custom electronics packaging box", "electronics packaging box free shipping", "electronics packaging box USD", "bulk electronics packaging box", "electronics packaging box DHL", "bespoke electronics packaging box", "electronics packaging box wholesale", "electronics packaging box pricing", "electronics packaging box bulk", "packaging box printing", "gift boxes", "cosmetic boxes", "food boxes", "mailer boxes", "corrugated boxes", "custom packaging", "rigid boxes", "folding cartons", "product boxes"],
         "body": "ZprintPro Electronics Packaging Box for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Eco-Friendly Material, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -4044,7 +4044,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "電子製品包装箱 | カスタム印刷 | ZprintPro",
         "description": "電子製品包装箱のカスタム印刷は ZprintPro にお任せ。香港直結、安心品質。",
         "h1": " electronics packaging box",
-        "keywords": ["電子製品包装箱", "electronics packaging box"],
+        "keywords": ["電子製品包装箱", "electronics packaging box", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱"],
         "body": " electronics packaging box"
       }
     },
@@ -4071,14 +4071,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "牛皮紙包裝印刷盒 | 環保材質 多尺寸 | 智印雲 ZprintPro",
         "description": "牛皮紙包裝印刷盒 100 個起, 採用 250g-350g 進口牛皮紙, 印刷 Logo 清晰自然, 適合茶葉、月餅、禮品、烘焙產品包裝。48 小時快遞 (順豐香港本地派送)。**智印雲 香港本地印刷 非智印港**: 紙材通過 FSC 環保認證, 100% 可回收, 支持燙金、壓凹、局部光油。",
         "h1": "牛皮紙包裝印刷盒",
-        "keywords": ["牛皮紙包裝盒", "環保包裝盒", "禮品包裝", "包裝盒印刷"],
+        "keywords": ["牛皮紙包裝盒", "環保包裝盒", "禮品包裝", "包裝盒印刷", "瓦楞紙盒", "禮品盒", "定制包裝", "化妝品盒", "食品盒", "快遞盒", "天地蓋盒", "紙盒定制", "高檔禮盒"],
         "body": " kraft paper packaging box"
       },
       "en": {
         "title": "Kraft Paper Packaging Box | Eco-Friendly Material",
         "description": "Custom kraft paper packaging box from ZprintPro Hong Kong. Eco-Friendly Material, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9.",
         "h1": "Kraft Paper Packaging Box 100+ | ZprintPro",
-        "keywords": ["kraft paper packaging box","custom kraft paper packaging box","kraft paper packaging box free shipping","kraft paper packaging box USD","bulk kraft paper packaging box","kraft paper packaging box DHL","bespoke kraft paper packaging box","kraft paper packaging box wholesale","kraft paper packaging box pricing","kraft paper packaging box bulk"],
+        "keywords": ["kraft paper packaging box", "custom kraft paper packaging box", "kraft paper packaging box free shipping", "kraft paper packaging box USD", "bulk kraft paper packaging box", "kraft paper packaging box DHL", "bespoke kraft paper packaging box", "kraft paper packaging box wholesale", "kraft paper packaging box pricing", "kraft paper packaging box bulk", "packaging box printing", "gift boxes", "cosmetic boxes", "food boxes", "mailer boxes", "corrugated boxes", "custom packaging", "rigid boxes", "folding cartons", "product boxes"],
         "body": "ZprintPro Kraft Paper Packaging Box for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Eco-Friendly Material, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -4086,7 +4086,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "クラフト紙包装箱 | カスタム印刷 | ZprintPro",
         "description": "クラフト紙包装箱のカスタム印刷は ZprintPro にお任せ。香港直結、安心品質。",
         "h1": " kraft paper packaging box",
-        "keywords": ["クラフト紙包装箱", "kraft paper packaging box"],
+        "keywords": ["クラフト紙包装箱", "kraft paper packaging box", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱"],
         "body": " kraft paper packaging box"
       }
     },
@@ -4113,14 +4113,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "抽屜式禮盒印刷 | 高端滑動開合 定制結構 | 智印雲 ZprintPro",
         "description": "抽屜式禮盒印刷 100 個起, 採用 1200g 灰板外裱特種紙, 滑動開合設計, 結構新穎有儀式感, 適合高端首飾、手錶、化妝品禮盒。48 小時快遞 (順豐香港本地派送)。**智印雲 香港本地印刷 非智印港**: 免費結構設計打樣, 支持燙金、壓凹、局部光油、絲帶提手。",
         "h1": "抽屜式禮盒印刷",
-        "keywords": ["抽屜式禮盒", "滑動禮盒", "高端禮盒", "包裝盒印刷"],
+        "keywords": ["抽屜式禮盒", "滑動禮盒", "高端禮盒", "包裝盒印刷", "瓦楞紙盒", "禮品盒", "定制包裝", "化妝品盒", "食品盒", "快遞盒", "天地蓋盒", "紙盒定制", "高檔禮盒"],
         "body": " drawer slide gift box"
       },
       "en": {
         "title": "Drawer Slide Gift Box | Ribbon Pull | ZprintPro | ZprintPro",
         "description": "Custom drawer slide gift box from ZprintPro Hong Kong. Ribbon Pull, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
         "h1": "Drawer Slide Gift Box 100+ | ZprintPro",
-        "keywords": ["drawer slide gift box","custom drawer slide gift box","drawer slide gift box free shipping","drawer slide gift box USD","bulk drawer slide gift box","drawer slide gift box DHL","bespoke drawer slide gift box","drawer slide gift box wholesale","drawer slide gift box pricing","drawer slide gift box bulk"],
+        "keywords": ["drawer slide gift box", "custom drawer slide gift box", "drawer slide gift box free shipping", "drawer slide gift box USD", "bulk drawer slide gift box", "drawer slide gift box DHL", "bespoke drawer slide gift box", "drawer slide gift box wholesale", "drawer slide gift box pricing", "drawer slide gift box bulk", "packaging box printing", "gift boxes", "cosmetic boxes", "food boxes", "mailer boxes", "corrugated boxes", "custom packaging", "rigid boxes", "folding cartons", "product boxes"],
         "body": "ZprintPro Drawer Slide Gift Box for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Ribbon Pull, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -4128,7 +4128,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "引き出し式ギフトボックス | カスタム印刷 | ZprintPro",
         "description": "引き出し式ギフトボックスのカスタム印刷は ZprintPro にお任せ。香港直結、安心品質。",
         "h1": " drawer slide gift box",
-        "keywords": ["引き出し式ギフトボックス", "drawer slide gift box"],
+        "keywords": ["引き出し式ギフトボックス", "drawer slide gift box", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱"],
         "body": " drawer slide gift box"
       }
     },
@@ -4155,14 +4155,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "水果及食品標籤印刷 | 防水防油 SGS 認證 | 智印雲 ZprintPro",
         "description": "水果及食品標籤印刷 500 張起, 採用防水 PVC 或 PP 合成紙, 通過 SGS 食品接觸安全認證, 適合水果店、有機食品、烘焙店、外賣包裝。48 小時快遞 (順豐香港本地派送)。**智印雲 香港本地印刷 非智印港**: 耐低溫防霧氣設計, 表面防水防油, 支持可變序號、二維碼。",
         "h1": "水果及食品標籤印刷",
-        "keywords": ["水果標籤", "食品標籤", "防水標籤", "標籤印刷"],
+        "keywords": ["水果標籤", "食品標籤", "防水標籤", "標籤印刷", "貼紙印刷", "不干膠印刷", "防水貼紙", "透明貼紙", "異形貼紙", "標籤貼紙", "定制貼紙", "小批量貼紙", "防水不干膠", "卷筒標籤"],
         "body": " fruit food label stickers"
       },
       "en": {
         "title": "Fruit & Food Label Stickers | Die-Cut Vinyl | ZprintPro",
         "description": "Custom fruit & food label stickers from ZprintPro Hong Kong. Die-Cut Vinyl, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 ce.",
         "h1": "Fruit & Food Label Stickers 100+ | ZprintPro",
-        "keywords": ["fruit & food label stickers","custom fruit & food label stickers","fruit & food label stickers free shipping","fruit & food label stickers USD","bulk fruit & food label stickers","fruit & food label stickers DHL","bespoke fruit & food label stickers","fruit food label stickers wholesale","fruit food label stickers pricing","fruit food label stickers bulk"],
+        "keywords": ["fruit & food label stickers", "custom fruit & food label stickers", "fruit & food label stickers free shipping", "fruit & food label stickers USD", "bulk fruit & food label stickers", "fruit & food label stickers DHL", "bespoke fruit & food label stickers", "fruit food label stickers wholesale", "fruit food label stickers pricing", "fruit food label stickers bulk", "sticker printing", "custom stickers", "waterproof stickers", "vinyl stickers", "die-cut stickers", "transparent stickers", "removable stickers", "bulk stickers", "label printing", "product stickers"],
         "body": "ZprintPro Fruit & Food Label Stickers for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Die-Cut Vinyl, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -4170,7 +4170,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "フルーツ・食品ラベル印刷 | カスタム印刷 | ZprintPro",
         "description": "フルーツ・食品ラベル印刷のカスタム印刷は ZprintPro にお任せ。香港直結、安心品質。",
         "h1": " fruit & food label stickers",
-        "keywords": ["フルーツ・食品ラベル印刷", "fruit & food label stickers"],
+        "keywords": ["フルーツ・食品ラベル印刷", "fruit & food label stickers", "ステッカー印刷", "防水ステッカー", "オリジナルステッカー", "小ロットステッカー", "ダイカットステッカー", "透明ステッカー", "商品ラベル", "カスタムステッカー", "剥がせるステッカー", "ロゴステッカー"],
         "body": " fruit & food label stickers"
       }
     },

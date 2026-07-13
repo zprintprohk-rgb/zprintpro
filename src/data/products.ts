@@ -1847,7 +1847,7 @@ export const products: Product[] = [
     slug: 'waterproof-stickers',
     category: 'stickers',
     category_slug: 'stickers',
-    name: '防水貼紙', nameEn: 'Waterproof Stickers', nameJa: '防水ステッカー', title_zh: '防水貼紙',
+    name: '防水貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Waterproof Stickers | Waterproof & Die-Cut Stickers', nameJa: '防水ステッカー | 防水ステッカー / ダイカット', title_zh: '防水貼紙',
     description: 'PVC材質防水貼紙，具有出色的防水、防曬、耐磨性能。適合戶外使用、產品標籤、車身貼紙等場景。', descriptionEn: 'PVC waterproof stickers with excellent water, UV, and abrasion resistance. Perfect for outdoor use, product labels, car decals. Free shipping over $99 USA · Free design mockup · 50 MOQ · Fast 4-day turnaround to USA small business & DTC brands.', descriptionJa: 'PVC防水ステッカー、優れた防水・UV・耐摩耗性。屋外使用、製品ラベル、車用ステッカーに最適。。全国送料込み・30枚から対応・最短3日出荷。D2Cブランド・小売店・食品業界向け。', description_zh: 'PVC材質防水貼紙，具有出色的防水、防曬、耐磨性能。適合戶外使用、產品標籤、車身貼紙等場景。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -2140,9 +2140,9 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-stickers-waterproof-stickers-zh-hk.webp', en: 'zprintpro-stickers-waterproof-stickers-en.webp', ja: 'zprintpro-stickers-waterproof-stickers-ja.webp' },
     alt: {
-      'zh-hk': '香港防水貼紙印刷 PVC 防水／PP 合成紙 模切',
-      en: 'Waterproof Stickers | Professional Stickers Hong Kong',
-      ja: '防水ステッカー | 防水対応・オリジナル形状 | ZprintPro'
+      'zh-hk': '防水貼紙 / 不干膠印刷 | 香港防水貼紙印刷 PVC 防水／PP 合成紙 模切',
+      en: 'Waterproof Stickers & Custom Vinyl | Waterproof Stickers | Professional Stickers Hong Kong',
+      ja: '防水ステッカー / ダイカットステッカー | 防水ステッカー | 防水対応・オリジナル形状 | ZprintPro'
     },
   },
     variables: {
@@ -2173,7 +2173,7 @@ export const products: Product[] = [
     slug: 'transparent-stickers',
     category: 'stickers',
     category_slug: 'stickers',
-    name: '透明貼紙', nameEn: 'Transparent Stickers', nameJa: '透明ステッカー', title_zh: '透明貼紙',
+    name: '透明貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Transparent Stickers | Waterproof & Die-Cut Stickers', nameJa: '透明ステッカー | 防水ステッカー / ダイカット', title_zh: '透明貼紙',
     description: '透明PET材質，貼合後呈現無感效果，完美展現產品本身。適合化妝品、食品包裝、玻璃貼飾。', descriptionEn: 'Transparent PET material creates invisible effect when applied. Perfect for cosmetics, food packaging, glass decoration.', descriptionJa: '透明PET素材、貼り付け後無感効果。化粧品、食品包装、ガラス装飾に最適。', description_zh: '透明PET材質，貼合後呈現無感效果，完美展現產品本身。適合化妝品、食品包裝、玻璃貼飾。',
     longDescription: `透明 PET 貼紙在玻璃瓶、塑膠瓶與透明包裝上能呈現「無底紙感」，僅保留圖案與文字，特別適合美妝精華、香水、飲品與禮盒封口貼。白墨托底可選，用於深色瓶身仍能還原飽和色彩。建議避免過細的反白線條，並為模切預留安全距離。可搭配啞膜減少指紋、光膜提升鮮豔度。與分類頁術語一致：透明 PET、局部 UV、覆膜、模切。香港零售與展會陳列常見應用包括試用裝標籤與限量貼紙。<h3>貼紙材質對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">材質</th><th class="p-2 text-center">透明度</th><th class="p-2 text-center">防水性</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用場景</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">透明 PET</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">瓶身標籤、禮盒封條</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">PVC 防水</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">戶外標籤、食品外賣</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">銅版紙</td><td class="p-2 text-center">★★</td><td class="p-2 text-center">★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">促銷貼紙、臨時標籤</td></tr></tbody></table><h3>貼紙材質對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">材質</th><th class="p-2 text-center">透明度</th><th class="p-2 text-center">防水性</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用場景</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">透明 PET</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">瓶身標籤、禮盒封條</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">PVC 防水</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">戶外標籤、食品外賣</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">銅版紙</td><td class="p-2 text-center">★★</td><td class="p-2 text-center">★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">促銷貼紙、臨時標籤</td></tr></tbody></table>
 
@@ -2328,9 +2328,9 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-stickers-transparent-stickers-zh-hk-1.webp', en: 'zprintpro-stickers-transparent-stickers-en.webp', ja: 'zprintpro-stickers-transparent-stickers-ja.webp' },
     alt: {
-      'zh-hk': '香港透明貼紙印刷 透明 PET 覆膜（啞膜／光膜）',
-      en: 'Hong Kong Transparent Stickers Printing Clear PET Laminated',
-      ja: '透明ステッカー | 防水対応・オリジナル形状 | ZprintPro'
+      'zh-hk': '防水貼紙 / 不干膠印刷 | 香港透明貼紙印刷 透明 PET 覆膜（啞膜／光膜）',
+      en: 'Waterproof Stickers & Custom Vinyl | Hong Kong Transparent Stickers Printing Clear PET Laminated',
+      ja: '防水ステッカー / ダイカットステッカー | 透明ステッカー | 防水対応・オリジナル形状 | ZprintPro'
     },
   },
   },
@@ -2340,7 +2340,7 @@ export const products: Product[] = [
     slug: 'removable-stickers',
     category: 'stickers',
     category_slug: 'stickers',
-    name: '可移貼紙(無殘膠)', nameEn: 'Removable Stickers', nameJa: 'はがせるステッカー', title_zh: '可移貼紙(無殘膠)',
+    name: '可移貼紙(無殘膠) | 防水貼紙 / 異形貼紙', nameEn: 'Removable Stickers | Waterproof & Die-Cut Stickers', nameJa: 'はがせるステッカー | 防水ステッカー / ダイカット', title_zh: '可移貼紙(無殘膠)',
     description: '特殊背膠設計，移除後不留殘膠，保護貼附表面。適合車窗、玻璃櫥窗、短期展覽。', descriptionEn: 'Special adhesive design leaves no residue when removed. Perfect for car windows, glass displays, short-term exhibitions.', descriptionJa: '特殊粘着設計、剥がしても残りません。車窓、ガラス展示、短期展示会に最適。', description_zh: '特殊背膠設計，移除後不留殘膠，保護貼附表面。適合車窗、玻璃櫥窗、短期展覽。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -2642,9 +2642,9 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-stickers-removable-stickers-zh-hk.webp', en: 'zprintpro-stickers-removable-stickers-en.webp', ja: 'zprintpro-stickers-removable-stickers-ja.webp' },
     alt: {
-      'zh-hk': '香港可移貼紙(無殘膠)印刷 PP 合成紙／PET 透明膜 模切',
-      en: 'Removable Stickers | Professional Stickers Hong Kong',
-      ja: 'はがせるステッカー | 防水対応・オリジナル形状 | ZprintPro'
+      'zh-hk': '防水貼紙 / 不干膠印刷 | 香港可移貼紙(無殘膠)印刷 PP 合成紙／PET 透明膜 模切',
+      en: 'Waterproof Stickers & Custom Vinyl | Removable Stickers | Professional Stickers Hong Kong',
+      ja: '防水ステッカー / ダイカットステッカー | はがせるステッカー | 防水対応・オリジナル形状 | ZprintPro'
     },
   },
   },
@@ -2654,7 +2654,7 @@ export const products: Product[] = [
     slug: 'small-batch-stickers',
     category: 'stickers',
     category_slug: 'stickers',
-    name: '小批量貼紙', nameEn: 'Small Batch Stickers', nameJa: '小ロットステッカー', title_zh: '小批量貼紙',
+    name: '小批量貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Small Batch Stickers | Waterproof & Die-Cut Stickers', nameJa: '小ロットステッカー | 防水ステッカー / ダイカット', title_zh: '小批量貼紙',
     description: '最低A4尺寸起印，無需大量庫存壓力。適合初創品牌、活動宣傳、個人創作。', descriptionEn: 'Minimum A4 size order, no bulk inventory pressure. Perfect for startups, event promotion, personal creations.', descriptionJa: '最小A4サイズから、大量在庫の心配なし。スタートアップ、イベント宣伝、個人創作に最適。', description_zh: '最低A4尺寸起印，無需大量庫存壓力。適合初創品牌、活動宣傳、個人創作。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -2977,9 +2977,9 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-stickers-small-batch-stickers-zh-hk.webp', en: 'zprintpro-stickers-small-batch-stickers-en.webp', ja: 'zprintpro-stickers-small-batch-stickers-ja.webp' },
     alt: {
-      'zh-hk': '香港小批量貼紙印刷 銅版紙／PP 合成紙／透明 PVC／Kr 模切',
-      en: 'Small Batch Stickers | Professional Stickers Hong Kong',
-      ja: '小ロットステッカー | 防水対応・オリジナル形状 | ZprintPro'
+      'zh-hk': '防水貼紙 / 不干膠印刷 | 香港小批量貼紙印刷 銅版紙／PP 合成紙／透明 PVC／Kr 模切',
+      en: 'Waterproof Stickers & Custom Vinyl | Small Batch Stickers | Professional Stickers Hong Kong',
+      ja: '防水ステッカー / ダイカットステッカー | 小ロットステッカー | 防水対応・オリジナル形状 | ZprintPro'
     },
   },
   },
@@ -2989,7 +2989,7 @@ export const products: Product[] = [
     slug: 'die-cut-stickers',
     category: 'stickers',
     category_slug: 'stickers',
-    name: '異形模切貼紙', nameEn: 'Die-cut Stickers', nameJa: '型抜きステッカー', title_zh: '異形模切貼紙 · 文創IP角色造型模切定制 | 智印雲 ZprintPro',
+    name: '異形模切貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Die-cut Stickers | Waterproof & Die-Cut Stickers', nameJa: '型抜きステッカー | 防水ステッカー / ダイカット', title_zh: '異形模切貼紙 · 文創IP角色造型模切定制 | 智印雲 ZprintPro',
     description: '任意形狀模切，讓創意不受限制。可切出Logo形狀、卡通形象等獨特輪廓。**適配行業**: 文創IP / VTuber / 動漫周邊 / 個人插畫師 / 品牌吉祥物 / 同人誌 / 活動贈品。', descriptionEn: 'Any shape die-cutting, creativity without limits. Can cut logo shapes, cartoon characters, unique contours. **Best for**: creator IP / VTuber / anime merch / illustrators / brand mascots / doujinshi / event giveaways. Free die-cut setup · Free shipping over $99 USA · 50 MOQ · Custom shapes for product labels, packaging, and promotional use.', descriptionJa: '任意形状の型抜き、創作の自由を制限しません。**適用業界**: クリエイターIP / VTuber / アニメ周边 / 個人イラストレーター / ブランドマスコット / 同人誌 / イベント赠り物。。型代無料・全国送料込み・50枚から。製品ラベル・パッケージ・プロモーション用カスタム形状。', description_zh: '任意形狀模切，讓創意不受限制。可切出Logo形狀、卡通形象等獨特輪廓。**適配行業**: 文創IP / VTuber / 動漫周邊 / 個人插畫師 / 品牌吉祥物 / 同人誌 / 活動贈品。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -3306,9 +3306,9 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-stickers-die-cut-stickers-zh-hk.webp', en: 'zprintpro-stickers-die-cut-stickers-en.webp', ja: 'zprintpro-stickers-die-cut-stickers-ja.webp' },
     alt: {
-      'zh-hk': '香港異形模切貼紙印刷 PVC／PP 合成紙／透明 PET 模切（全切／吻切）',
-      en: 'Die-cut Stickers | Professional Stickers Hong Kong',
-      ja: '型抜きステッカー | 防水対応・オリジナル形状 | ZprintPro'
+      'zh-hk': '防水貼紙 / 不干膠印刷 | 香港異形模切貼紙印刷 PVC／PP 合成紙／透明 PET 模切（全切／吻切）',
+      en: 'Waterproof Stickers & Custom Vinyl | Die-cut Stickers | Professional Stickers Hong Kong',
+      ja: '防水ステッカー / ダイカットステッカー | 型抜きステッカー | 防水対応・オリジナル形状 | ZprintPro'
     },
   },
   optimizedAt: '2026-07-09',
@@ -3320,7 +3320,7 @@ export const products: Product[] = [
     slug: 'foil-stickers',
     category: 'stickers',
     category_slug: 'stickers',
-    name: '燙金貼紙', nameEn: 'Foil Stickers', nameJa: '箔押しステッカー', title_zh: '燙金貼紙',
+    name: '燙金貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Foil Stickers | Waterproof & Die-Cut Stickers', nameJa: '箔押しステッカー | 防水ステッカー / ダイカット', title_zh: '燙金貼紙',
     description: '燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮品包裝、VIP標識。', descriptionEn: 'Foil stamping gives stickers premium quality feel. Perfect for luxury product labels, gift packaging, VIP badges. Gold/silver foil · 50 MOQ · Free design proof · Fast 4-day turnaround. Perfect for beauty brands, wedding favors, premium packaging.', descriptionJa: '箔押し加工でステッカーに高級感。高級製品ラベル、ギフト包装、VIPバッジに最適。。金箔/銀箔・50枚から・校正無料・最短4日出荷。美容ブランド・ウェディング・プレミアムパッケージに最適。', description_zh: '燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮品包裝、VIP標識。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -3628,9 +3628,9 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-stickers-foil-stickers-zh-hk.webp', en: 'zprintpro-stickers-foil-stickers-en.webp', ja: 'zprintpro-stickers-foil-stickers-ja.webp' },
     alt: {
-      'zh-hk': '香港燙金貼紙印刷 銅版紙／合成紙 燙金／燙銀',
-      en: 'Foil Stickers | Professional Stickers Hong Kong',
-      ja: '箔押しステッカー | 防水対応・オリジナル形状 | ZprintPro'
+      'zh-hk': '防水貼紙 / 不干膠印刷 | 香港燙金貼紙印刷 銅版紙／合成紙 燙金／燙銀',
+      en: 'Waterproof Stickers & Custom Vinyl | Foil Stickers | Professional Stickers Hong Kong',
+      ja: '防水ステッカー / ダイカットステッカー | 箔押しステッカー | 防水対応・オリジナル形状 | ZprintPro'
     },
   },
   },
@@ -3640,7 +3640,7 @@ export const products: Product[] = [
     slug: 'security-stickers',
     category: 'stickers',
     category_slug: 'stickers',
-    name: '防偽貼紙', nameEn: 'Security Stickers', nameJa: 'セキュリティステッカー', title_zh: '防偽貼紙',
+    name: '防偽貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Security Stickers | Waterproof & Die-Cut Stickers', nameJa: 'セキュリティステッカー | 防水ステッカー / ダイカット', title_zh: '防偽貼紙',
     description: '特殊防偽工藝，包括雷射標籤、易碎紙等，保護品牌免受假冒。', descriptionEn: 'Special anti-counterfeiting processes including holographic labels, fragile paper, protecting brands from counterfeiting.', descriptionJa: '特殊な偽造防止加工、ホログラムラベル、壊れやすい紙など。', description_zh: '特殊防偽工藝，包括雷射標籤、易碎紙等，保護品牌免受假冒。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -3946,9 +3946,9 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-stickers-security-stickers-zh-hk.webp', en: 'zprintpro-stickers-security-stickers-en.webp', ja: 'zprintpro-stickers-security-stickers-ja.webp' },
     alt: {
-      'zh-hk': '香港防偽貼紙印刷 易碎紙／VOID／合成紙＋全息膜等（依方 模切',
-      en: 'Security Stickers | Professional Stickers Hong Kong',
-      ja: 'セキュリティステッカー | 防水対応・オリジナル形状 | ZprintPro'
+      'zh-hk': '防水貼紙 / 不干膠印刷 | 香港防偽貼紙印刷 易碎紙／VOID／合成紙＋全息膜等（依方 模切',
+      en: 'Waterproof Stickers & Custom Vinyl | Security Stickers | Professional Stickers Hong Kong',
+      ja: '防水ステッカー / ダイカットステッカー | セキュリティステッカー | 防水対応・オリジナル形状 | ZprintPro'
     },
   },
   },
@@ -3958,7 +3958,7 @@ export const products: Product[] = [
     slug: 'fluorescent-stickers',
     category: 'stickers',
     category_slug: 'stickers',
-    name: '螢光貼紙', nameEn: 'Fluorescent Stickers', nameJa: '蛍光ステッカー', title_zh: '螢光貼紙',
+    name: '螢光貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Fluorescent Stickers | Waterproof & Die-Cut Stickers', nameJa: '蛍光ステッカー | 防水ステッカー / ダイカット', title_zh: '螢光貼紙',
     description: '螢光色彩，在光線下格外醒目。適合促銷標籤、安全標識、活動裝飾。', descriptionEn: 'Fluorescent colors, highly visible under light. Perfect for promotional labels, safety signs, event decoration.', descriptionJa: '蛍光色、光の下で非常に目立ちます。プロモーションラベル、安全標識、イベント装飾に最適。', description_zh: '螢光色彩，在光線下格外醒目。適合促銷標籤、安全標識、活動裝飾。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -4251,9 +4251,9 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-stickers-fluorescent-stickers-zh-hk.webp', en: 'zprintpro-stickers-fluorescent-stickers-en.webp', ja: 'zprintpro-stickers-fluorescent-stickers-ja.webp' },
     alt: {
-      'zh-hk': '香港螢光貼紙印刷 螢光 PVC 膜／螢光紙 模切',
-      en: 'Fluorescent Stickers | Professional Stickers Hong Kong',
-      ja: '蛍光ステッカー | 防水対応・オリジナル形状 | ZprintPro'
+      'zh-hk': '防水貼紙 / 不干膠印刷 | 香港螢光貼紙印刷 螢光 PVC 膜／螢光紙 模切',
+      en: 'Waterproof Stickers & Custom Vinyl | Fluorescent Stickers | Professional Stickers Hong Kong',
+      ja: '防水ステッカー / ダイカットステッカー | 蛍光ステッカー | 防水対応・オリジナル形状 | ZprintPro'
     },
   },
   },
@@ -4264,7 +4264,7 @@ export const products: Product[] = [
     slug: 'kraft-paper-bags',
     category: 'paper-bags',
     category_slug: 'paper-bags',
-    name: '牛皮紙袋', nameEn: 'Kraft Paper Bags', nameJa: 'クラフト紙袋', title_zh: '牛皮紙袋印刷訂製 100個起印 免費刀模 FSC認證 | 智印雲 ZprintPro',
+    name: '牛皮紙袋 | 紙袋 / 牛皮紙袋 / 手提袋', nameEn: 'Kraft Paper Bags | Paper Bags & Kraft Bags', nameJa: 'クラフト紙袋 | 紙袋 / クラフト紙袋 / ハンドル', title_zh: '牛皮紙袋印刷訂製 100個起印 免費刀模 FSC認證 | 智印雲 ZprintPro',
     description: '牛皮紙袋印刷訂製，100個起印，HK$1.8起/個。FSC環保認證紙材，多尺寸多規格，免費刀模設計，支援燙金UV局部。即日交貨，全港送貨，零售餐飲活動品牌推廣。', descriptionEn: 'Eco-friendly kraft paper, natural and rustic, loved by consumers. Perfect for clothing stores, gift shops, coffee shops., ISO 9001:2015 certified quality management system. Eco-friendly kraft · 100 MOQ · Twisted/ribbon handle options · Free shipping over $99 USA. Perfect for retail, bakery, fashion brands.', descriptionJa: '環境に優しいクラフト紙、質朴で自然、消費者に人気。衣料品店、ギフトショップ、コーヒーショップに最適。。エコクラフト紙・100枚から・紐/リボン手提げ選択可・全国送料込み。小売・ベーカリー・アパレルブランドに最適。', description_zh: '環保牛皮紙材質，質樸自然，深受消費者喜愛。適合服裝店、禮品店、咖啡店。多種尺寸可選，可定制Logo印刷。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -4558,9 +4558,9 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-paper-bags-kraft-paper-bags-zh-hk.webp', en: 'zprintpro-paper-bags-kraft-paper-bags-en.webp', ja: 'zprintpro-paper-bags-kraft-paper-bags-ja.webp' },
     alt: {
-      'zh-hk': '香港牛皮紙袋印刷 牛皮紙 120–200g 級（依報價） 燙金／燙銀',
-      en: 'Kraft Paper Bags | Professional Paper Bags Hong Kong',
-      ja: 'クラフト紙袋 | エコ素材対応・小ロットOK | ZprintPro'
+      'zh-hk': '紙袋印刷 / 牛皮紙袋 / 手提紙袋 | 香港牛皮紙袋印刷 牛皮紙 120–200g 級（依報價） 燙金／燙銀',
+      en: 'Paper Bag Printing & Kraft Bags | Kraft Paper Bags | Professional Paper Bags Hong Kong',
+      ja: '紙袋印刷 / クラフト紙袋 / ショッピング | クラフト紙袋 | エコ素材対応・小ロットOK | ZprintPro'
     },
   },
     variables: {
@@ -4593,7 +4593,7 @@ export const products: Product[] = [
     slug: 'white-card-bags',
     category: 'paper-bags',
     category_slug: 'paper-bags',
-    name: '白卡紙袋', nameEn: 'White Card Bags', nameJa: '白カード紙袋', title_zh: '白卡紙袋',
+    name: '白卡紙袋 | 紙袋 / 牛皮紙袋 / 手提袋', nameEn: 'White Card Bags | Paper Bags & Kraft Bags', nameJa: '白カード紙袋 | 紙袋 / クラフト紙袋 / ハンドル', title_zh: '白卡紙袋',
     description: '白卡紙材質，表面平整光滑，印刷效果佳。適合高端品牌、化妝品店。', descriptionEn: 'White card paper, smooth surface, excellent printing effect. Perfect for high-end brands, cosmetic stores.', descriptionJa: '白カード紙、表面が滑らかで印刷効果が抜群。高級ブランド、化粧品店に最適。', description_zh: '白卡紙材質，表面平整光滑，印刷效果佳。適合高端品牌、化妝品店。',
     longDescription: `白卡紙袋表面平滑、挺度高，四色印刷色彩飽和，是美妝、珠寶與精品服飾首選的「可行走廣告」。可搭配啞膠／光膠覆膜保護墨層，並以燙金、局部 UV 或凹凸壓紋強化 Logo 層次。手挽可選緞帶、棉繩或扁紙手挽以匹配品牌調性。與分類頁一致：白卡紙、燙金、覆膜、手挽。建議在刀模階段確認穿孔位與圖案安全距離，避免提袋時撕裂；大批量可評估柯式以降低單價。<h3>紙袋材質對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">材質</th><th class="p-2 text-center">挺度</th><th class="p-2 text-center">印刷效果</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用品牌</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">白卡紙袋</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">美妝、珠寶、精品服飾</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">牛皮紙袋</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">文創、咖啡、有機食品</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">銅版紙袋</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">百貨專櫃、促銷活動</td></tr></tbody></table><h3>紙袋材質對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">材質</th><th class="p-2 text-center">挺度</th><th class="p-2 text-center">印刷效果</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用品牌</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">白卡紙袋</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">美妝、珠寶、精品服飾</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">牛皮紙袋</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">文創、咖啡、有機食品</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">銅版紙袋</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">百貨專櫃、促銷活動</td></tr></tbody></table>
 
@@ -4738,9 +4738,9 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-paper-bags-white-card-bags-zh-hk.webp', en: 'zprintpro-paper-bags-white-card-bags-en.webp', ja: 'zprintpro-paper-bags-white-card-bags-ja.webp' },
     alt: {
-      'zh-hk': '香港白卡紙袋印刷 白卡紙 200–300g 級（依報價） 覆膜',
-      en: 'White Card Bags | Professional Paper Bags Hong Kong',
-      ja: '白カード紙袋 | エコ素材対応・小ロットOK | ZprintPro'
+      'zh-hk': '紙袋印刷 / 牛皮紙袋 / 手提紙袋 | 香港白卡紙袋印刷 白卡紙 200–300g 級（依報價） 覆膜',
+      en: 'Paper Bag Printing & Kraft Bags | White Card Bags | Professional Paper Bags Hong Kong',
+      ja: '紙袋印刷 / クラフト紙袋 / ショッピング | 白カード紙袋 | エコ素材対応・小ロットOK | ZprintPro'
     },
   },
   },
@@ -4750,7 +4750,7 @@ export const products: Product[] = [
     slug: 'gift-bags',
     category: 'paper-bags',
     category_slug: 'paper-bags',
-    name: '禮品紙袋', nameEn: 'Gift Bags', nameJa: 'ギフト紙袋', title_zh: '禮品紙袋印刷訂製 高檔禮品袋 100個起印 燙金LOGO | 智印雲',
+    name: '禮品紙袋 | 紙袋 / 牛皮紙袋 / 手提袋', nameEn: 'Gift Bags | Paper Bags & Kraft Bags', nameJa: 'ギフト紙袋 | 紙袋 / クラフト紙袋 / ハンドル', title_zh: '禮品紙袋印刷訂製 高檔禮品袋 100個起印 燙金LOGO | 智印雲',
     description: '禮品紙袋印刷訂製，100個起印，HK$3.5起/個。棉繩緞帶手挽，燙金UV壓凹工藝，支援多尺寸客製LOGO。適合品牌活動週年慶贈品，即日交貨，全港免費送貨。', descriptionEn: 'Exquisite design with foil stamping, UV and other processes. Essential for gifting, elevates gift quality., ISO 9001:2015 certified quality management system. Custom printed gift bags · 100 MOQ · Foil logo option · Wedding favor, retail, event bags. Free design mockup.', descriptionJa: '精巧なデザイン、箔押し・UVなどの加工付き。ギフトに必須、ギフトの質を向上。。オリジナルギフト紙袋・100枚から・箔押し選択可。ウェディング・小売・イベント用。校正無料。', description_zh: '精美設計，配合燙金、UV等工藝。送禮必備，提升禮品檔次。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -5084,9 +5084,9 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-paper-bags-gift-bags-zh-hk.webp', en: 'zprintpro-paper-bags-gift-bags-en.webp', ja: 'zprintpro-paper-bags-gift-bags-ja.webp' },
     alt: {
-      'zh-hk': '香港禮品紙袋印刷 白卡／特種紙／珠光紙（依稿） 燙金',
-      en: 'Gift Bags | Professional Paper Bags Hong Kong',
-      ja: 'ギフト紙袋 | エコ素材対応・小ロットOK | ZprintPro'
+      'zh-hk': '紙袋印刷 / 牛皮紙袋 / 手提紙袋 | 香港禮品紙袋印刷 白卡／特種紙／珠光紙（依稿） 燙金',
+      en: 'Paper Bag Printing & Kraft Bags | Gift Bags | Professional Paper Bags Hong Kong',
+      ja: '紙袋印刷 / クラフト紙袋 / ショッピング | ギフト紙袋 | エコ素材対応・小ロットOK | ZprintPro'
     },
   },
   },
@@ -5096,7 +5096,7 @@ export const products: Product[] = [
     slug: 'eco-paper-bags',
     category: 'paper-bags',
     category_slug: 'paper-bags',
-    name: '環保紙袋', nameEn: 'Eco Paper Bags', nameJa: 'エコ紙袋', title_zh: '環保紙袋印刷訂製 FSC再生認證 100個起印 | 智印雲 ZprintPro',
+    name: '環保紙袋 | 紙袋 / 牛皮紙袋 / 手提袋', nameEn: 'Eco Paper Bags | Paper Bags & Kraft Bags', nameJa: 'エコ紙袋 | 紙袋 / クラフト紙袋 / ハンドル', title_zh: '環保紙袋印刷訂製 FSC再生認證 100個起印 | 智印雲 ZprintPro',
     description: '環保紙袋印刷訂製，100個起印，HK$2.2起/個。FSC再生認證紙材，可完全降解，支援燙金UV印刷。適合ESG品牌碳審計、減塑徵費合規，即日交貨，全港送貨。', descriptionEn: 'FSC-certified eco-friendly paper, sustainable development. Perfect for environmentally conscious brands., ISO 9001:2015 certified quality management system. 100% recycled paper · 50 MOQ · FSC certified · Sustainable packaging for eco-conscious brands.', descriptionJa: 'FSC認証の環境に優しい紙、持続可能な開発。環境に配慮するブランドに最適。。再生紙100%・50枚から・FSC認証。エコロジーブランド向けサステナブルパッケージ。', description_zh: 'FSC認證環保紙張，可持續發展。適合注重環保的品牌。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -5410,9 +5410,9 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-paper-bags-eco-paper-bags-zh-hk.webp', en: 'zprintpro-paper-bags-eco-paper-bags-en.webp', ja: 'zprintpro-paper-bags-eco-paper-bags-ja.webp' },
     alt: {
-      'zh-hk': '香港環保紙袋印刷 FSC 牛皮／再生紙（依供應） 手挽',
-      en: 'Eco Paper Bags | Professional Paper Bags Hong Kong',
-      ja: 'エコ紙袋 | エコ素材対応・小ロットOK | ZprintPro'
+      'zh-hk': '紙袋印刷 / 牛皮紙袋 / 手提紙袋 | 香港環保紙袋印刷 FSC 牛皮／再生紙（依供應） 手挽',
+      en: 'Paper Bag Printing & Kraft Bags | Eco Paper Bags | Professional Paper Bags Hong Kong',
+      ja: '紙袋印刷 / クラフト紙袋 / ショッピング | エコ紙袋 | エコ素材対応・小ロットOK | ZprintPro'
     },
   },
   },
@@ -5422,7 +5422,7 @@ export const products: Product[] = [
     slug: 'handle-bags',
     category: 'paper-bags',
     category_slug: 'paper-bags',
-    name: '手挽紙袋', nameEn: 'Handle Bags', nameJa: '手提げ紙袋', title_zh: '手挽紙袋',
+    name: '手挽紙袋 | 紙袋 / 牛皮紙袋 / 手提袋', nameEn: 'Handle Bags | Paper Bags & Kraft Bags', nameJa: '手提げ紙袋 | 紙袋 / クラフト紙袋 / ハンドル', title_zh: '手挽紙袋',
     description: '堅固手挽設計，承重能力強。適合購物中心、超市。', descriptionEn: 'Sturdy handle design, strong load-bearing capacity. Perfect for shopping centers, supermarkets., ISO 9001:2015 certified quality management system', descriptionJa: '頑丈な持ち手デザイン、強い耐荷重能力。ショッピングセンター、スーパーに最適。', description_zh: '堅固手挽設計，承重能力強。適合購物中心、超市。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -5731,9 +5731,9 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-paper-bags-handle-bags-zh-hk.webp', en: 'zprintpro-paper-bags-handle-bags-en.webp', ja: 'zprintpro-paper-bags-handle-bags-ja.webp' },
     alt: {
-      'zh-hk': '香港手挽紙袋印刷 牛皮／白卡 穿孔打釘',
-      en: 'Handle Bags | Professional Paper Bags Hong Kong',
-      ja: '手提げ紙袋 | エコ素材対応・小ロットOK | ZprintPro'
+      'zh-hk': '紙袋印刷 / 牛皮紙袋 / 手提紙袋 | 香港手挽紙袋印刷 牛皮／白卡 穿孔打釘',
+      en: 'Paper Bag Printing & Kraft Bags | Handle Bags | Professional Paper Bags Hong Kong',
+      ja: '紙袋印刷 / クラフト紙袋 / ショッピング | 手提げ紙袋 | エコ素材対応・小ロットOK | ZprintPro'
     },
   },
   },
@@ -5743,7 +5743,7 @@ export const products: Product[] = [
     slug: 'large-bags',
     category: 'paper-bags',
     category_slug: 'paper-bags',
-    name: '大號紙袋', nameEn: 'Large Bags', nameJa: '大判紙袋', title_zh: '大號紙袋',
+    name: '大號紙袋 | 紙袋 / 牛皮紙袋 / 手提袋', nameEn: 'Large Bags | Paper Bags & Kraft Bags', nameJa: '大判紙袋 | 紙袋 / クラフト紙袋 / ハンドル', title_zh: '大號紙袋',
     description: '加大尺寸，適合服裝、鞋類等大件商品。', descriptionEn: 'Large size, perfect for clothing, shoes and other large items., ISO 9001:2015 certified quality management system', descriptionJa: '大きなサイズ、衣類、靴などの大物に最適。', description_zh: '加大尺寸，適合服裝、鞋類等大件商品。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -6031,9 +6031,9 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-paper-bags-large-bags-zh-hk.webp', en: 'zprintpro-paper-bags-large-bags-en.webp', ja: 'zprintpro-paper-bags-large-bags-ja.webp' },
     alt: {
-      'zh-hk': '香港大號紙袋印刷 250g 白卡紙／300g 牛皮紙／28 燙金／燙銀',
-      en: 'Large Bags | Professional Paper Bags Hong Kong',
-      ja: '大判紙袋 | エコ素材対応・小ロットOK | ZprintPro'
+      'zh-hk': '紙袋印刷 / 牛皮紙袋 / 手提紙袋 | 香港大號紙袋印刷 250g 白卡紙／300g 牛皮紙／28 燙金／燙銀',
+      en: 'Paper Bag Printing & Kraft Bags | Large Bags | Professional Paper Bags Hong Kong',
+      ja: '紙袋印刷 / クラフト紙袋 / ショッピング | 大判紙袋 | エコ素材対応・小ロットOK | ZprintPro'
     },
   },
   },
@@ -6044,7 +6044,7 @@ export const products: Product[] = [
     slug: 'a4-flyers',
     category: 'flyers',
     category_slug: 'flyers',
-    name: 'A4宣傳單張', nameEn: 'A4 Flyers', nameJa: 'A4チラシ', title_zh: 'A4傳單印刷 100張起印 HK$0.3/張 雙面彩印 | 智印雲 ZprintPro',
+    name: 'A4宣傳單張 | 宣傳單張 / 折頁 / A4/A5', nameEn: 'A4 Flyers | A4/A5 Flyers & Leaflets', nameJa: 'A4チラシ | A4/A5 チラシ・フライヤー', title_zh: 'A4傳單印刷 100張起印 HK$0.3/張 雙面彩印 | 智印雲 ZprintPro',
     description: 'A4傳單印刷訂製，100張起印，HK$0.3起/張。157g銅版紙雙面四色印刷，免費設計打樣。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。', descriptionEn: 'Standard A4 size, most common flyer format. 157g glossy paper, 4-color printing, vibrant colors., ISO 9001:2015 certified quality management system', descriptionJa: '標準A4サイズ、最も一般的なチラシ形式。157gコート紙、4色印刷、鮮やかな色彩。', description_zh: '標準A4尺寸，最常用的宣傳單張規格。157g銅版紙，四色印刷，色彩鮮豔。適合產品推廣、活動宣傳。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -6340,9 +6340,9 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-flyers-a4-flyers-zh-hk.webp', en: 'zprintpro-flyers-a4-flyers-en.webp', ja: 'zprintpro-flyers-a4-flyers-ja.webp' },
     alt: {
-      'zh-hk': '香港A4宣傳單張印刷 157g銅版紙 覆膜（啞膜／光膜可選）',
-      en: 'A4 Flyers | Professional Flyers Hong Kong',
-      ja: 'A4チラシ | 高画質オフセット・短納期対応 | ZprintPro'
+      'zh-hk': '宣傳單張 / 折頁 / 彩頁 | 香港A4宣傳單張印刷 157g銅版紙 覆膜（啞膜／光膜可選）',
+      en: 'Flyer Printing & Leaflet Design | A4 Flyers | Professional Flyers Hong Kong',
+      ja: 'チラシ印刷 / 折込フライヤー | A4チラシ | 高画質オフセット・短納期対応 | ZprintPro'
     },
   },
     variables: {
@@ -6375,7 +6375,7 @@ export const products: Product[] = [
     slug: 'a5-flyers',
     category: 'flyers',
     category_slug: 'flyers',
-    name: 'A5宣傳單張', nameEn: 'A5 Flyers', nameJa: 'A5チラシ', title_zh: 'A5傳單印刷 100張起印 雙面四色 免費設計 | 智印雲 ZprintPro',
+    name: 'A5宣傳單張 | 宣傳單張 / 折頁 / A4/A5', nameEn: 'A5 Flyers | A4/A5 Flyers & Leaflets', nameJa: 'A5チラシ | A4/A5 チラシ・フライヤー', title_zh: 'A5傳單印刷 100張起印 雙面四色 免費設計 | 智印雲 ZprintPro',
     description: 'A5傳單印刷訂製，100張起印，HK$0.18起/張。157g銅版紙雙面四色，免費設計排版。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。', descriptionEn: 'A5 size, economical, perfect for mass distribution. First choice for food delivery, flash events.', descriptionJa: 'A5サイズ、経済的、大量配布に最適。フードデリバリー、フラッシュイベントの第一選択。', description_zh: 'A5尺寸，經濟實惠，適合大量派發。餐飲外賣、快閃活動首選。',
     longDescription: `智印雲A5宣傳單張採用128g銅版紙或100g書紙，配合四色數碼印刷，經濟實惠且色彩鮮豔。A5尺寸（148×210mm）適合大量派發，成本較A4降低約40%，是餐飲外賣、快閃活動及社區宣傳的首選。可選單面或雙面印刷，並支援二維碼與優惠券設計。我們提供免費排版與出血檢查，確保裁切精準。與分類頁內容一致，材質關鍵詞包含：A5單張、銅版紙、書紙、數碼印刷。<h3>傳單尺寸對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">尺寸</th><th class="p-2 text-center">資訊容量</th><th class="p-2 text-center">派發效率</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用場景</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">A4 (210×297mm)</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">詳細產品目錄、課程介紹</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5 (148×210mm)</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">餐飲外賣、活動宣傳</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">A6 (105×148mm)</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">街頭派發、外賣插頁</td></tr></tbody></table><h3>傳單尺寸對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">尺寸</th><th class="p-2 text-center">資訊容量</th><th class="p-2 text-center">派發效率</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用場景</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">A4 (210×297mm)</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">詳細產品目錄、課程介紹</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5 (148×210mm)</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">餐飲外賣、活動宣傳</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">A6 (105×148mm)</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">街頭派發、外賣插頁</td></tr></tbody></table>
 
@@ -6533,9 +6533,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-flyers-a5-flyers-zh-hk.webp', en: 'zprintpro-flyers-a5-flyers-en.webp', ja: 'zprintpro-flyers-a5-flyers-ja.webp' },
     alt: {
-      'zh-hk': '香港A5宣傳單張印刷 128g銅版紙 覆膜（啞膜／光膜可選）',
-      en: 'A5 Flyers | Professional Flyers Hong Kong',
-      ja: 'A5チラシ | 高画質オフセット・短納期対応 | ZprintPro'
+      'zh-hk': '宣傳單張 / 折頁 / 彩頁 | 香港A5宣傳單張印刷 128g銅版紙 覆膜（啞膜／光膜可選）',
+      en: 'Flyer Printing & Leaflet Design | A5 Flyers | Professional Flyers Hong Kong',
+      ja: 'チラシ印刷 / 折込フライヤー | A5チラシ | 高画質オフセット・短納期対応 | ZprintPro'
     },
   },
   },
@@ -6545,7 +6545,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'double-sided-flyers',
     category: 'flyers',
     category_slug: 'flyers',
-    name: '雙面宣傳單張', nameEn: 'Double-sided Flyers', nameJa: '両面チラシ', title_zh: '雙面宣傳單張',
+    name: '雙面宣傳單張 | 宣傳單張 / 折頁 / A4/A5', nameEn: 'Double-sided Flyers | A4/A5 Flyers & Leaflets', nameJa: '両面チラシ | A4/A5 チラシ・フライヤー', title_zh: '雙面宣傳單張',
     description: '雙面全彩印刷，信息容量翻倍。正面吸引眼球，背面詳細介紹。', descriptionEn: 'Double-sided full color printing, doubled information capacity.', descriptionJa: '両面フルカラー印刷、情報容量が2倍。', description_zh: '雙面全彩印刷，信息容量翻倍。正面吸引眼球，背面詳細介紹。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -6717,9 +6717,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-flyers-double-sided-flyers-zh-hk.webp', en: 'zprintpro-flyers-double-sided-flyers-en.webp', ja: 'zprintpro-flyers-double-sided-flyers-ja.webp' },
     alt: {
-      'zh-hk': '香港雙面宣傳單張印刷 157g銅版紙 覆膜（啞膜／光膜可選）',
-      en: 'Double-sided Flyers | Professional Flyers Hong Kong',
-      ja: '両面チラシ | 高画質オフセット・短納期対応 | ZprintPro'
+      'zh-hk': '宣傳單張 / 折頁 / 彩頁 | 香港雙面宣傳單張印刷 157g銅版紙 覆膜（啞膜／光膜可選）',
+      en: 'Flyer Printing & Leaflet Design | Double-sided Flyers | Professional Flyers Hong Kong',
+      ja: 'チラシ印刷 / 折込フライヤー | 両面チラシ | 高画質オフセット・短納期対応 | ZprintPro'
     },
   },
   },
@@ -6729,7 +6729,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'folded-leaflets',
     category: 'flyers',
     category_slug: 'flyers',
-    name: '摺疊宣傳單張', nameEn: 'Folded Leaflets', nameJa: '折りたたみパンフレット', title_zh: '三摺雙摺宣傳單印刷 100張起印 企業簡介摺頁 | 智印雲',
+    name: '摺疊宣傳單張 | 宣傳單張 / 折頁 / A4/A5', nameEn: 'Folded Leaflets | A4/A5 Flyers & Leaflets', nameJa: '折りたたみパンフレット | A4/A5 チラシ・フライヤー', title_zh: '三摺雙摺宣傳單印刷 100張起印 企業簡介摺頁 | 智印雲',
     description: '三摺雙摺宣傳單印刷訂製，100張起印，HK$0.45起/張。157g-250g銅版紙，免費摺頁設計排版。適合企業簡介產品目錄活動宣傳，3-5天交貨，全港送貨。', descriptionEn: 'Bi-fold or tri-fold design, can display more information.', descriptionJa: '二つ折りまたは三つ折りデザイン、より多くの情報を表示可能。', description_zh: '對摺或三摺設計，可展示更多信息。適合產品目錄、服務介紹。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -6899,9 +6899,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-flyers-folded-leaflets-zh-hk.webp', en: 'zprintpro-flyers-folded-leaflets-en.webp', ja: 'zprintpro-flyers-folded-leaflets-ja.webp' },
     alt: {
-      'zh-hk': '香港摺疊宣傳單張印刷 157g 壓線',
-      en: 'Folded Leaflets | Professional Flyers Hong Kong',
-      ja: '折りたたみパンフレット | 高画質オフセット・短納期対応 | ZprintPro'
+      'zh-hk': '宣傳單張 / 折頁 / 彩頁 | 香港摺疊宣傳單張印刷 157g 壓線',
+      en: 'Flyer Printing & Leaflet Design | Folded Leaflets | Professional Flyers Hong Kong',
+      ja: 'チラシ印刷 / 折込フライヤー | 折りたたみパンフレット | 高画質オフセット・短納期対応 | ZprintPro'
     },
   },
   },
@@ -6911,7 +6911,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'thick-paper-flyers',
     category: 'flyers',
     category_slug: 'flyers',
-    name: '厚紙宣傳單張', nameEn: 'Thick Paper Flyers', nameJa: '厚紙チラシ', title_zh: '厚紙宣傳單張',
+    name: '厚紙宣傳單張 | 宣傳單張 / 折頁 / A4/A5', nameEn: 'Thick Paper Flyers | A4/A5 Flyers & Leaflets', nameJa: '厚紙チラシ | A4/A5 チラシ・フライヤー', title_zh: '厚紙宣傳單張',
     description: '200g以上厚紙，質感更佳，不易折損。適合高端產品宣傳。', descriptionEn: '200g+ thick paper, better texture, not easily damaged. From 25 pieces · Free shipping over $99 USA · 24h rush available. Ideal for restaurant opening, retail promo, event marketing.', descriptionJa: '200g以上の厚紙、質感が良く折れにくい。。25枚から対応・全国送料込み・翌日特急対応。飲食店開業・小売プロモーション・イベント营销に最適。', description_zh: '200g以上厚紙，質感更佳，不易折損。適合高端產品宣傳。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -7081,9 +7081,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-flyers-thick-paper-flyers-zh-hk.webp', en: 'zprintpro-flyers-thick-paper-flyers-en.webp', ja: 'zprintpro-flyers-thick-paper-flyers-ja.webp' },
     alt: {
-      'zh-hk': '香港厚紙宣傳單張印刷 200g 覆膜（啞膜／光膜可選）',
-      en: 'Thick Paper Flyers | Professional Flyers Hong Kong',
-      ja: '厚紙チラシ | 高画質オフセット・短納期対応 | ZprintPro'
+      'zh-hk': '宣傳單張 / 折頁 / 彩頁 | 香港厚紙宣傳單張印刷 200g 覆膜（啞膜／光膜可選）',
+      en: 'Flyer Printing & Leaflet Design | Thick Paper Flyers | Professional Flyers Hong Kong',
+      ja: 'チラシ印刷 / 折込フライヤー | 厚紙チラシ | 高画質オフセット・短納期対応 | ZprintPro'
     },
   },
   },
@@ -7093,7 +7093,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'eco-flyers',
     category: 'flyers',
     category_slug: 'flyers',
-    name: '環保宣傳單張', nameEn: 'Eco Flyers', nameJa: 'エコチラシ', title_zh: '環保宣傳單張',
+    name: '環保宣傳單張 | 宣傳單張 / 折頁 / A4/A5', nameEn: 'Eco Flyers | A4/A5 Flyers & Leaflets', nameJa: 'エコチラシ | A4/A5 チラシ・フライヤー', title_zh: '環保宣傳單張',
     description: '環保紙張印刷，展現企業責任。適合環保主題活動。', descriptionEn: 'Eco-friendly paper printing, showing corporate responsibility. 100% recycled paper · 50 MOQ · Free shipping over $99 USA. Eco-friendly marketing for sustainable brands.', descriptionJa: '環境に優しい紙の印刷、企業の責任を示す。。再生紙100%・50枚から・全国送料込み。サステナブルブランド向けエコマーケティング。', description_zh: '環保紙張印刷，展現企業責任。適合環保主題活動。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -7266,9 +7266,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-flyers-eco-flyers-zh-hk.webp', en: 'zprintpro-flyers-eco-flyers-en.webp', ja: 'zprintpro-flyers-eco-flyers-ja.webp' },
     alt: {
-      'zh-hk': '香港環保宣傳單張印刷 FSC認證再生紙 無覆膜（環保）或水性光油',
-      en: 'Eco Flyers | Professional Flyers Hong Kong',
-      ja: 'エコチラシ | 高画質オフセット・短納期対応 | ZprintPro'
+      'zh-hk': '宣傳單張 / 折頁 / 彩頁 | 香港環保宣傳單張印刷 FSC認證再生紙 無覆膜（環保）或水性光油',
+      en: 'Flyer Printing & Leaflet Design | Eco Flyers | Professional Flyers Hong Kong',
+      ja: 'チラシ印刷 / 折込フライヤー | エコチラシ | 高画質オフセット・短納期対応 | ZprintPro'
     },
   },
   },
@@ -7278,7 +7278,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'same-day-flyers',
     category: 'flyers',
     category_slug: 'flyers',
-    name: '即日宣傳單張', nameEn: 'Same-day Flyers', nameJa: '即日チラシ', title_zh: '即日宣傳單張',
+    name: '即日宣傳單張 | 宣傳單張 / 折頁 / A4/A5', nameEn: 'Same-day Flyers | A4/A5 Flyers & Leaflets', nameJa: '即日チラシ | A4/A5 チラシ・フライヤー', title_zh: '即日宣傳單張',
     description: '緊急活動首選，最快當天交貨。即日印刷、即日快遞出貨，急件不擔心。', descriptionEn: 'First choice for emergency events, same-day printing and courier delivery available.', descriptionJa: '緊急イベントの第一選択、最短当日印刷・宅配便発送。', description_zh: '緊急活動首選，最快當天交貨。即日印刷、即日快遞出貨，急件不擔心。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -7428,9 +7428,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-flyers-same-day-flyers-zh-hk.webp', en: 'zprintpro-flyers-same-day-flyers-en.webp', ja: 'zprintpro-flyers-same-day-flyers-ja.webp' },
     alt: {
-      'zh-hk': '香港即日宣傳單張印刷 157g銅版紙 無覆膜或啞膜（加時）',
-      en: 'Same-day Flyers | Professional Flyers Hong Kong',
-      ja: '即日チラシ | 高画質オフセット・短納期対応 | ZprintPro'
+      'zh-hk': '宣傳單張 / 折頁 / 彩頁 | 香港即日宣傳單張印刷 157g銅版紙 無覆膜或啞膜（加時）',
+      en: 'Flyer Printing & Leaflet Design | Same-day Flyers | Professional Flyers Hong Kong',
+      ja: 'チラシ印刷 / 折込フライヤー | 即日チラシ | 高画質オフセット・短納期対応 | ZprintPro'
     },
   },
   },
@@ -7441,7 +7441,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'a2-posters',
     category: 'posters',
     category_slug: 'posters',
-    name: 'A2海報印刷', nameEn: 'A2 Posters', nameJa: 'A2ポスター', title_zh: 'A2海報印刷 1張起印 HK$8/張 雙面彩印 防水 | 零售精品/餐飲外賣/教育培訓 | 智印雲 ZprintPro',
+    name: 'A2海報印刷 | A1/A2 海報 / 展覽海報', nameEn: 'A2 Posters | A1/A2 Posters & Exhibition', nameJa: 'A2ポスター | A1/A2 ポスター / 展示会', title_zh: 'A2海報印刷 1張起印 HK$8/張 雙面彩印 防水 | 零售精品/餐飲外賣/教育培訓 | 智印雲 ZprintPro',
     description: 'A2海報印刷訂製，1張起印，HK$8起/張。200g銅版紙/PP合成紙，雙面四色印刷，防水防曬耐用。適合地產活動展覽店舖推廣，48小時交貨，全港送貨。**適配行業**:零售精品店、品牌 pop-up、商場快閃、餐廳菜單推廣、咖啡店、教育培訓機構、藝廊展覽、婚慶活動。', descriptionEn: 'Standard A2 size, first choice for event promotion. 157g glossy paper, vibrant colors, same-day delivery. **Best for**: retail boutique, brand pop-up, mall flash store, restaurant menu promo, cafe, education training, gallery exhibition, wedding events.', descriptionJa: '標準A2サイズ、イベント宣伝の第一選択。157gコート紙、鮮やかな色彩、即日納品。**適用業界**:小売セレクト、ブランド pop-up、ショッピングモール フラッシュ、レストランメニュー、カフェ、教育研修、ギャラリー展示、ブライダルイベント。', description_zh: '標準A2尺寸，活動宣傳、產品推廣首選。157g銅版紙，色彩鮮豔，即日交貨。',
     optimizedAt: '2026-07-08',
     optimizationRound: 1,
@@ -7745,9 +7745,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-posters-a2-posters-zh-hk.webp', en: 'zprintpro-posters-a2-posters-en.webp', ja: 'zprintpro-posters-a2-posters-ja.webp' },
     alt: {
-      'zh-hk': '香港A2海報印刷印刷 157g 銅版紙（可升 200g／相紙） PP 裱貼',
-      en: 'A2 Posters | Professional Posters Hong Kong',
-      ja: 'A2ポスター | 屋内屋外対応・大判印刷 | ZprintPro'
+      'zh-hk': '海報印刷 / A1/A2 / 防水海報 | 香港A2海報印刷印刷 157g 銅版紙（可升 200g／相紙） PP 裱貼',
+      en: 'Poster Printing A1/A2 / Waterproof | A2 Posters | Professional Posters Hong Kong',
+      ja: 'ポスター印刷 / A1/A2 / 防水 | A2ポスター | 屋内屋外対応・大判印刷 | ZprintPro'
     },
   },
     variables: {
@@ -7779,7 +7779,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'a1-posters',
     category: 'posters',
     category_slug: 'posters',
-    name: 'A1大幅海報', nameEn: 'A1 Large Posters', nameJa: 'A1大型ポスター', title_zh: 'A1大幅海報',
+    name: 'A1大幅海報 | A1/A2 海報 / 展覽海報', nameEn: 'A1 Large Posters | A1/A2 Posters & Exhibition', nameJa: 'A1大型ポスター | A1/A2 ポスター / 展示会', title_zh: 'A1大幅海報',
     description: 'A1大尺寸，視覺衝擊力強。適合展覽、會場佈置。', descriptionEn: 'A1 large size, strong visual impact. Perfect for exhibitions, venue decoration., ISO 9001:2015 certified quality management system', descriptionJa: 'A1大きなサイズ、強い視覚的インパクト。展示会、会場装飾に最適。', description_zh: 'A1大尺寸，視覺衝擊力強。適合展覽、會場佈置。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -7964,9 +7964,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-posters-a1-posters-zh-hk.webp', en: 'zprintpro-posters-a1-posters-en.webp', ja: 'zprintpro-posters-a1-posters-ja.webp' },
     alt: {
-      'zh-hk': '香港A1大幅海報印刷 157–200g 銅版 PP 護膜',
-      en: 'A1 Large Posters | Professional Posters Hong Kong',
-      ja: 'A1大型ポスター | 屋内屋外対応・大判印刷 | ZprintPro'
+      'zh-hk': '海報印刷 / A1/A2 / 防水海報 | 香港A1大幅海報印刷 157–200g 銅版 PP 護膜',
+      en: 'Poster Printing A1/A2 / Waterproof | A1 Large Posters | Professional Posters Hong Kong',
+      ja: 'ポスター印刷 / A1/A2 / 防水 | A1大型ポスター | 屋内屋外対応・大判印刷 | ZprintPro'
     },
   },
   },
@@ -7976,7 +7976,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'outdoor-posters',
     category: 'posters',
     category_slug: 'posters',
-    name: '戶外海報', nameEn: 'Outdoor Posters', nameJa: '屋外ポスター', title_zh: '戶外海報',
+    name: '戶外海報 | A1/A2 海報 / 展覽海報', nameEn: 'Outdoor Posters | A1/A2 Posters & Exhibition', nameJa: '屋外ポスター | A1/A2 ポスター / 展示会', title_zh: '戶外海報',
     description: '防水防曬材質，戶外使用不褪色。適合戶外廣告、建築圍板。', descriptionEn: 'Waterproof and UV-resistant material, no fading for outdoor use.', descriptionJa: '防水・UV耐性素材、屋外使用でも色褪せません。', description_zh: '防水防曬材質，戶外使用不褪色。適合戶外廣告、建築圍板。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -8151,9 +8151,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-posters-outdoor-posters-zh-hk.webp', en: 'zprintpro-posters-outdoor-posters-en.webp', ja: 'zprintpro-posters-outdoor-posters-ja.webp' },
     alt: {
-      'zh-hk': '香港戶外海報印刷 戶外 PVC／PET／合成紙 霧面護膜',
-      en: 'Outdoor Posters | Professional Posters Hong Kong',
-      ja: '屋外ポスター | 屋内屋外対応・大判印刷 | ZprintPro'
+      'zh-hk': '海報印刷 / A1/A2 / 防水海報 | 香港戶外海報印刷 戶外 PVC／PET／合成紙 霧面護膜',
+      en: 'Poster Printing A1/A2 / Waterproof | Outdoor Posters | Professional Posters Hong Kong',
+      ja: 'ポスター印刷 / A1/A2 / 防水 | 屋外ポスター | 屋内屋外対応・大判印刷 | ZprintPro'
     },
   },
   },
@@ -8163,7 +8163,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'display-posters',
     category: 'posters',
     category_slug: 'posters',
-    name: '展架海報', nameEn: 'Display Posters', nameJa: '展示用ポスター', title_zh: '展架海報',
+    name: '展架海報 | A1/A2 海報 / 展覽海報', nameEn: 'Display Posters | A1/A2 Posters & Exhibition', nameJa: '展示用ポスター | A1/A2 ポスター / 展示会', title_zh: '展架海報',
     description: '配合X展架或易拉寶使用，便攜易裝。展會、路演必備。', descriptionEn: 'Compatible with X-stands or roll-up banners, portable and easy to install.', descriptionJa: 'Xスタンドまたはロールアップバナーと互換、持ち運び可能で設置簡単。', description_zh: '配合X展架或易拉寶使用，便攜易裝。展會、路演必備。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -8345,9 +8345,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-posters-display-posters-zh-hk.webp', en: 'zprintpro-posters-display-posters-en.webp', ja: 'zprintpro-posters-display-posters-ja.webp' },
     alt: {
-      'zh-hk': '香港展架海報印刷 180g–200g PP 合成紙／背膠  覆膜（啞膜／光膜）',
-      en: 'Display Posters | Professional Posters Hong Kong',
-      ja: '展示用ポスター | 屋内屋外対応・大判印刷 | ZprintPro'
+      'zh-hk': '海報印刷 / A1/A2 / 防水海報 | 香港展架海報印刷 180g–200g PP 合成紙／背膠  覆膜（啞膜／光膜）',
+      en: 'Poster Printing A1/A2 / Waterproof | Display Posters | Professional Posters Hong Kong',
+      ja: 'ポスター印刷 / A1/A2 / 防水 | 展示用ポスター | 屋内屋外対応・大判印刷 | ZprintPro'
     },
   },
   },
@@ -8357,7 +8357,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'art-posters',
     category: 'posters',
     category_slug: 'posters',
-    name: '藝術海報', nameEn: 'Art Posters', nameJa: 'アートポスター', title_zh: '藝術海報印刷 1張起印 美術紙/相紙 高端畫冊 | 智印雲',
+    name: '藝術海報 | A1/A2 海報 / 展覽海報', nameEn: 'Art Posters | A1/A2 Posters & Exhibition', nameJa: 'アートポスター | A1/A2 ポスター / 展示会', title_zh: '藝術海報印刷 1張起印 美術紙/相紙 高端畫冊 | 智印雲',
     description: '藝術海報印刷訂製，1張起印，HK$15起/張。200g美術紙/啞粉紙/RC相紙，Giclée級色彩管理。適合攝影師藝術家畫廊展覽，3-5天交貨，全球配送。', descriptionEn: 'Premium art paper, high color accuracy. Perfect for art exhibitions, photography works.', descriptionJa: '高級アート紙、高い色再現性。美術展、写真作品に最適。', description_zh: '高級藝術紙張，色彩還原度高。適合藝術展覽、攝影作品。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -8539,9 +8539,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-posters-art-posters-zh-hk.webp', en: 'zprintpro-posters-art-posters-en.webp', ja: 'zprintpro-posters-art-posters-ja.webp' },
     alt: {
-      'zh-hk': '香港藝術海報印刷 200g–250g 啞粉藝術紙／260g 啞面／絲絨面／半光面',
-      en: 'Art Posters | Professional Posters Hong Kong',
-      ja: 'アートポスター | 屋内屋外対応・大判印刷 | ZprintPro'
+      'zh-hk': '海報印刷 / A1/A2 / 防水海報 | 香港藝術海報印刷 200g–250g 啞粉藝術紙／260g 啞面／絲絨面／半光面',
+      en: 'Poster Printing A1/A2 / Waterproof | Art Posters | Professional Posters Hong Kong',
+      ja: 'ポスター印刷 / A1/A2 / 防水 | アートポスター | 屋内屋外対応・大判印刷 | ZprintPro'
     },
   },
   },
@@ -8551,7 +8551,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'adhesive-posters',
     category: 'posters',
     category_slug: 'posters',
-    name: '背膠海報', nameEn: 'Adhesive Posters', nameJa: '粘着ポスター', title_zh: '背膠海報',
+    name: '背膠海報 | A1/A2 海報 / 展覽海報', nameEn: 'Adhesive Posters | A1/A2 Posters & Exhibition', nameJa: '粘着ポスター | A1/A2 ポスター / 展示会', title_zh: '背膠海報',
     description: '自帶背膠，可直接粘貼。適合店鋪櫥窗、牆面裝飾。', descriptionEn: 'Self-adhesive, can be directly applied. Perfect for shop windows, wall decoration.', descriptionJa: '自己粘着、直接貼付可能。店舗の窓、壁の装飾に最適。', description_zh: '自帶背膠，可直接粘貼。適合店鋪櫥窗、牆面裝飾。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -8711,9 +8711,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-posters-adhesive-posters-zh-hk.webp', en: 'zprintpro-posters-adhesive-posters-en.webp', ja: 'zprintpro-posters-adhesive-posters-ja.webp' },
     alt: {
-      'zh-hk': '香港背膠海報印刷 150g–180g 背膠 PP／鑄造級  模切',
-      en: 'Adhesive Posters | Professional Posters Hong Kong',
-      ja: '粘着ポスター | 屋内屋外対応・大判印刷 | ZprintPro'
+      'zh-hk': '海報印刷 / A1/A2 / 防水海報 | 香港背膠海報印刷 150g–180g 背膠 PP／鑄造級  模切',
+      en: 'Poster Printing A1/A2 / Waterproof | Adhesive Posters | Professional Posters Hong Kong',
+      ja: 'ポスター印刷 / A1/A2 / 防水 | 粘着ポスター | 屋内屋外対応・大判印刷 | ZprintPro'
     },
   },
   },
@@ -8724,7 +8724,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'gift-boxes',
     category: 'packaging',
     category_slug: 'packaging',
-    name: '禮品盒定制', nameEn: 'Gift Boxes', nameJa: 'ギフトボックス', title_zh: '禮品盒訂製印刷 100個起印 化妝品/珠寶/婚慶/茶葉/電商通用 | 智印雲',
+    name: '禮品盒定制 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Gift Boxes | Gift Boxes & Custom Packaging', nameJa: 'ギフトボックス | パッケージボックス・化粧箱', title_zh: '禮品盒訂製印刷 100個起印 化妝品/珠寶/婚慶/茶葉/電商通用 | 智印雲',
     description: '禮品盒訂製印刷，100個起印，HK$4.5起/個。磁吸盒天地盒抽屜盒，燙金UV壓凹工藝，免費刀模設計。適合品牌活動週年慶贈品，即日打樣，3-5天交貨。**適配行業**: 化妝品/珠寶首飾/婚慶禮盒/茶葉食品/跨境電商/母嬰產品。', descriptionEn: 'Exquisite gift boxes with foil stamping, UV and other processes., ISO 9001:2015 certified quality management system. **Best for**: cosmetics / jewelry / wedding gifts / tea & food / cross-border e-commerce / baby & maternity products. Free design mockup · 100 MOQ · 4 box styles · Foil logo & matte lamination. Perfect for beauty gift, wedding favor, retail packaging.', descriptionJa: '精巧なギフトボックス、箔押し・UVなどの加工付き。**適応業界**: 化粧品/宝石/ウェディングギフト/茶・食品/越境EC/ベビー用品。。校正無料・100個から・4種盒型・箔押し+マットPP。ギフト・ウェディング・小売パッケージに最適。', description_zh: '精緻禮品盒，配合燙金、UV等工藝。送禮首選，提升產品價值。**適配行業**: 化妝品/珠寶首飾/婚慶禮盒/茶葉食品/跨境電商/母嬰產品。',
     optimizedAt: '2026-07-04',
     optimizationRound: 1,
@@ -8893,9 +8893,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-packaging-gift-boxes-zh-hk.webp', en: 'zprintpro-packaging-gift-boxes-en.webp', ja: 'zprintpro-packaging-gift-boxes-ja.webp' },
     alt: {
-      'zh-hk': '香港禮品盒定制印刷 白卡紙／牛皮裱面／硬紙板結構（依報價） 覆膜',
-      en: 'Gift Boxes | Professional Packaging Hong Kong',
-      ja: 'ギフトボックス | オリジナルパッケージ・最短3日 | ZprintPro'
+      'zh-hk': '包裝盒 / 禮品盒 / 定制包裝 | 香港禮品盒定制印刷 白卡紙／牛皮裱面／硬紙板結構（依報價） 覆膜',
+      en: 'Custom Packaging Boxes & Gift Boxes | Gift Boxes | Professional Packaging Hong Kong',
+      ja: 'パッケージボックス / ギフトボックス | ギフトボックス | オリジナルパッケージ・最短3日 | ZprintPro'
     },
   },
     variables: {
@@ -8928,7 +8928,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'cosmetic-boxes',
     category: 'packaging',
     category_slug: 'packaging',
-    name: '化妝品包裝盒', nameEn: 'Cosmetic Packaging Boxes', nameJa: '化粧品パッケージボックス', title_zh: '化妝品包裝盒',
+    name: '化妝品包裝盒 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Cosmetic Packaging Boxes | Gift Boxes & Custom Packaging', nameJa: '化粧品パッケージボックス | パッケージボックス・化粧箱', title_zh: '化妝品包裝盒',
     description: '美妝護膚品牌化妝品包裝盒定制, 天地蓋 / 磁吸翻蓋 / 抽屜式 / 書型 4 種盒型, 內托 EVA / 紙托 / 吸塑可定制, 燙金 + 局部 UV + 內襯緞布。香港本地、跨境美妝電商、日本市場適用。', descriptionEn: 'Custom cosmetic packaging boxes for beauty and skincare brands — 4 box styles (lift-off lid, magnetic, drawer, book-style) with EVA/molded pulp/PET inner trays. Foil stamping, spot UV, satin lining. Hong Kong, cross-border e-commerce, Japan market ready.', descriptionJa: '化粧品パッケージボックス カスタム — 天地蓋 / マグネット蓋 / 引き出し式 / ブック型の 4 種類, EVA / 紙 / ペット内装トレイ選択可。箔押し・スポット UV ・サテン裏地対応。香港・越境 EC ・日本市場向け。', description_zh: '美妝護膚品牌化妝品包裝盒定制, 天地蓋 / 磁吸翻蓋 / 抽屜式 / 書型 4 種盒型, 內托可定制, 燙金 + 局部 UV + 內襯緞布。',
     longDescription: `<h3>4 種化妝品包裝盒型對比</h3>
 <p>化妝品包裝盒按開合結構分 4 種主流盒型, 對應不同預算、品牌定位與用戶體驗:</p>
@@ -9104,9 +9104,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-packaging-cosmetic-boxes-zh-hk.webp', en: 'zprintpro-packaging-cosmetic-boxes-en.webp', ja: 'zprintpro-packaging-cosmetic-boxes-ja.webp' },
     alt: {
-      'zh-hk': '香港化妝品包裝盒印刷 4 種盒型 天地蓋磁吸抽屜書型 內托定制',
-      en: 'Cosmetic Packaging Boxes | 4 Box Styles | Custom Inner Tray | ZprintPro Hong Kong',
-      ja: '化粧品パッケージボックス | 4 種類ボックススタイル | 内装カスタム | ZprintPro'
+      'zh-hk': '包裝盒 / 禮品盒 / 定制包裝 | 香港化妝品包裝盒印刷 4 種盒型 天地蓋磁吸抽屜書型 內托定制',
+      en: 'Custom Packaging Boxes & Gift Boxes | Cosmetic Packaging Boxes | 4 Box Styles | Custom Inner Tray | ZprintPro Hong Kong',
+      ja: 'パッケージボックス / ギフトボックス | 化粧品パッケージボックス | 4 種類ボックススタイル | 内装カスタム | ZprintPro'
     },
   },
   },
@@ -9116,7 +9116,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'food-boxes',
     category: 'packaging',
     category_slug: 'packaging',
-    name: '食品包裝盒', nameEn: 'Food Boxes', nameJa: '食品包装箱', title_zh: '食品包裝盒印刷訂製 100個起印 HK$4起/個 FDA級 | 智印雲',
+    name: '食品包裝盒 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Food Boxes | Gift Boxes & Custom Packaging', nameJa: '食品包装箱 | パッケージボックス・化粧箱', title_zh: '食品包裝盒印刷訂製 100個起印 HK$4起/個 FDA級 | 智印雲',
     description: '食品包裝盒印刷訂製，100個起印，HK$4起/個。FDA級食品接觸安全材質，牛皮紙白卡紙可選，支援燙金UV印刷。適合糕點茶葉巧克力月餅食品品牌，3-5天交貨。', descriptionEn: 'Food-grade material, safe and eco-friendly., ISO 9001:2015 certified quality management system', descriptionJa: '食品グレード素材、安全で環境に優しい。', description_zh: '食品級材質，安全環保。適合糕點、茶葉、保健品。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -9435,9 +9435,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-packaging-food-boxes-zh-hk.webp', en: 'zprintpro-packaging-food-boxes-en.webp', ja: 'zprintpro-packaging-food-boxes-ja.webp' },
     alt: {
-      'zh-hk': '香港食品包裝盒印刷 350g 食品級白卡／400g 灰底白板 燙金／燙銀',
-      en: 'Food Boxes | Professional Packaging Hong Kong',
-      ja: '食品包装箱 | オリジナルパッケージ・最短3日 | ZprintPro'
+      'zh-hk': '包裝盒 / 禮品盒 / 定制包裝 | 香港食品包裝盒印刷 350g 食品級白卡／400g 灰底白板 燙金／燙銀',
+      en: 'Custom Packaging Boxes & Gift Boxes | Food Boxes | Professional Packaging Hong Kong',
+      ja: 'パッケージボックス / ギフトボックス | 食品包装箱 | オリジナルパッケージ・最短3日 | ZprintPro'
     },
   },
   },
@@ -9447,7 +9447,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'mailer-boxes',
     category: 'packaging',
     category_slug: 'packaging',
-    name: '快遞盒/飛機盒', nameEn: 'Mailer Boxes', nameJa: '発送箱', title_zh: '快遞盒/飛機盒',
+    name: '快遞盒/飛機盒 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Mailer Boxes | Gift Boxes & Custom Packaging', nameJa: '発送箱 | パッケージボックス・化粧箱', title_zh: '快遞盒/飛機盒',
     description: '堅固耐用，電商發貨首選。可印品牌Logo，提升開箱體驗。', descriptionEn: 'Sturdy and durable, first choice for e-commerce shipping., ISO 9001:2015 certified quality management system', descriptionJa: '頑丈で耐久性があり、EC発送の第一選択。', description_zh: '堅固耐用，電商發貨首選。可印品牌Logo，提升開箱體驗。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -9636,9 +9636,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-packaging-mailer-boxes-zh-hk.webp', en: 'zprintpro-packaging-mailer-boxes-en.webp', ja: 'zprintpro-packaging-mailer-boxes-ja.webp' },
     alt: {
-      'zh-hk': '香港快遞盒/飛機盒印刷 E／B 坑瓦楞 模切',
-      en: 'Mailer Boxes | Professional Packaging Hong Kong',
-      ja: '発送箱 | オリジナルパッケージ・最短3日 | ZprintPro'
+      'zh-hk': '包裝盒 / 禮品盒 / 定制包裝 | 香港快遞盒/飛機盒印刷 E／B 坑瓦楞 模切',
+      en: 'Custom Packaging Boxes & Gift Boxes | Mailer Boxes | Professional Packaging Hong Kong',
+      ja: 'パッケージボックス / ギフトボックス | 発送箱 | オリジナルパッケージ・最短3日 | ZprintPro'
     },
   },
   },
@@ -9648,7 +9648,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'folding-boxes',
     category: 'packaging',
     category_slug: 'packaging',
-    name: '折疊盒', nameEn: 'Folding Boxes', nameJa: '折りたたみ箱', title_zh: '折疊盒',
+    name: '折疊盒 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Folding Boxes | Gift Boxes & Custom Packaging', nameJa: '折りたたみ箱 | パッケージボックス・化粧箱', title_zh: '折疊盒',
     description: '可折疊設計，節省倉儲空間。適合大量存貨的電商賣家。', descriptionEn: 'Foldable design, saves warehouse space. Custom size · 100 MOQ · Eco kraft options · Free shipping over $99 USA. Fits DTC ecommerce, tea/beverage, food packaging.', descriptionJa: '折りたたみ可能なデザイン、倉庫スペースを節約。。カスタムサイズ・100個から・クラフト紙対応・全国送料込み。D2C EC・茶/飲料・食品パッケージに適合。', description_zh: '可折疊設計，節省倉儲空間。適合大量存貨的電商賣家。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -9835,9 +9835,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-packaging-folding-boxes-zh-hk.webp', en: 'zprintpro-packaging-folding-boxes-en.webp', ja: 'zprintpro-packaging-folding-boxes-ja.webp' },
     alt: {
-      'zh-hk': '香港折疊盒印刷 300g–350g 白卡紙／E 坑瓦楞紙 覆膜（啞膜／光膜）',
-      en: 'Folding Boxes | Professional Packaging Hong Kong',
-      ja: '折りたたみ箱 | オリジナルパッケージ・最短3日 | ZprintPro'
+      'zh-hk': '包裝盒 / 禮品盒 / 定制包裝 | 香港折疊盒印刷 300g–350g 白卡紙／E 坑瓦楞紙 覆膜（啞膜／光膜）',
+      en: 'Custom Packaging Boxes & Gift Boxes | Folding Boxes | Professional Packaging Hong Kong',
+      ja: 'パッケージボックス / ギフトボックス | 折りたたみ箱 | オリジナルパッケージ・最短3日 | ZprintPro'
     },
   },
   },
@@ -9847,7 +9847,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'rigid-boxes',
     category: 'packaging',
     category_slug: 'packaging',
-    name: '精裝盒', nameEn: 'Rigid Boxes', nameJa: '上製本箱', title_zh: '精品盒訂製印刷 100個起印 HK$8起/個 高端禮盒 | 智印雲',
+    name: '精裝盒 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Rigid Boxes | Gift Boxes & Custom Packaging', nameJa: '上製本箱 | パッケージボックス・化粧箱', title_zh: '精品盒訂製印刷 100個起印 HK$8起/個 高端禮盒 | 智印雲',
     description: '精品盒訂製印刷，100個起印，HK$8起/個。硬殼天地盒磁吸盒，灰板裱藝術紙，燙金UV壓凹工藝。適合化妝品珠寶首飾高端品牌，5-7天交貨，全球配送。', descriptionEn: 'Hardcover rigid construction, luxurious and premium. Premium setup box · 100 MOQ · Magnetic closure available · Foil + spot UV finish. Luxury packaging for jewelry, electronics, high-end gifts.', descriptionJa: '硬い上製本構造、豪華でプレミアム。。プレミアムセットアップ箱・100個から・マグネット式・箔押し+スポットUV。宝飾/電子機器/高級ギフト向けラグジュアリーパッケージ。', description_zh: '硬殼精裝，高檔奢華。適合高端產品、限量版商品。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -10031,9 +10031,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-packaging-rigid-boxes-zh-hk.webp', en: 'zprintpro-packaging-rigid-boxes-en.webp', ja: 'zprintpro-packaging-rigid-boxes-ja.webp' },
     alt: {
-      'zh-hk': '香港精裝盒印刷 灰板＋特種裱面紙 燙金',
-      en: 'Rigid Boxes | Professional Packaging Hong Kong',
-      ja: '上製本箱 | オリジナルパッケージ・最短3日 | ZprintPro'
+      'zh-hk': '包裝盒 / 禮品盒 / 定制包裝 | 香港精裝盒印刷 灰板＋特種裱面紙 燙金',
+      en: 'Custom Packaging Boxes & Gift Boxes | Rigid Boxes | Professional Packaging Hong Kong',
+      ja: 'パッケージボックス / ギフトボックス | 上製本箱 | オリジナルパッケージ・最短3日 | ZprintPro'
     },
   },
   },
@@ -10044,7 +10044,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'foil-red-packets',
     category: 'red-packets',
     category_slug: 'red-packets',
-    name: '燙金利是封', nameEn: 'Foil Red Packets', nameJa: '箔押しポチ袋', title_zh: '燙金利是封 · 婚慶/年會/品牌活動定制 | 智印雲 ZprintPro',
+    name: '燙金利是封 | 利是封 / 春聯 / 燙金', nameEn: 'Foil Red Packets | CNY Red Packets & Foil', nameJa: '箔押しポチ袋 | 紅包 / 旧正月 / 箔押し', title_zh: '燙金利是封 · 婚慶/年會/品牌活動定制 | 智印雲 ZprintPro',
     description: '傳統燙金工藝，喜慶大方。多種吉祥圖案可選，也可定制專屬設計。適合企業派發、節日營銷。**適配行業**:婚慶喜宴、企業年會、品牌活動、春節促銷、客戶禮贈、酒店開業、金融證券回饋、奢侈品品牌營銷。', descriptionEn: 'Traditional foil stamping, festive and elegant. Multiple auspicious patterns or custom designs. **Best for**: wedding banquets, corporate annual events, brand activations, Spring Festival promos, client gifting, hotel openings, financial client rewards, luxury brand marketing.', descriptionJa: '伝統的な箔押し加工、縁起が良く上品。複数の縁起の良い柄またはカスタムデザイン。**適用業界**:ブライダル宴会、企業年会、ブランドアクティベーション、春節促销、クライアントギフト、ホテル開業、金融顧客還元、ラグジュアリーブランド マーケティング。', description_zh: '傳統燙金工藝，喜慶大方。多種吉祥圖案可選，也可定制專屬設計。適合企業派發、節日營銷。',
     optimizedAt: '2026-07-08',
     optimizationRound: 1,
@@ -10327,9 +10327,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-red-packets-foil-red-packets-zh-hk.webp', en: 'zprintpro-red-packets-foil-red-packets-en.webp', ja: 'zprintpro-red-packets-foil-red-packets-ja.webp' },
     alt: {
-      'zh-hk': '香港燙金利是封印刷 120g紅色紙張 燙金',
-      en: 'Foil Red Packets | Professional Red Packets Hong Kong',
-      ja: '箔押しポチ袋 | 箔押し・オリジナル印刷 | ZprintPro'
+      'zh-hk': '利是封印刷 / 燙金 / 春節紅包 | 香港燙金利是封印刷 120g紅色紙張 燙金',
+      en: 'Red Packet Printing / Foil / CNY | Foil Red Packets | Professional Red Packets Hong Kong',
+      ja: '紅包印刷 / 旧正月 / 箔押し | 箔押しポチ袋 | 箔押し・オリジナル印刷 | ZprintPro'
     },
   },
   },
@@ -10339,7 +10339,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'embossed-red-packets',
     category: 'red-packets',
     category_slug: 'red-packets',
-    name: '浮雕利是封', nameEn: 'Embossed Red Packets', nameJa: 'エンボスポチ袋', title_zh: '浮雕利是封',
+    name: '浮雕利是封 | 利是封 / 春聯 / 燙金', nameEn: 'Embossed Red Packets | CNY Red Packets & Foil', nameJa: 'エンボスポチ袋 | 紅包 / 旧正月 / 箔押し', title_zh: '浮雕利是封',
     description: '浮雕工藝，立體觸感，高檔奢華。展現品牌誠意，適合VIP客戶、高端送禮。', descriptionEn: 'Embossed craftsmanship, dimensional texture, luxurious feel.', descriptionJa: 'エンボス加工、立体的な触感、豪華な質感。', description_zh: '浮雕工藝，立體觸感，高檔奢華。展現品牌誠意，適合VIP客戶、高端送禮。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -10514,9 +10514,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-red-packets-embossed-red-packets-zh-hk.webp', en: 'zprintpro-red-packets-embossed-red-packets-en.webp', ja: 'zprintpro-red-packets-embossed-red-packets-ja.webp' },
     alt: {
-      'zh-hk': '香港浮雕利是封印刷 150g紅色紙張 浮雕',
-      en: 'Embossed Red Packets | Professional Red Packets Hong Kong',
-      ja: 'エンボスポチ袋 | 箔押し・オリジナル印刷 | ZprintPro'
+      'zh-hk': '利是封印刷 / 燙金 / 春節紅包 | 香港浮雕利是封印刷 150g紅色紙張 浮雕',
+      en: 'Red Packet Printing / Foil / CNY | Embossed Red Packets | Professional Red Packets Hong Kong',
+      ja: '紅包印刷 / 旧正月 / 箔押し | エンボスポチ袋 | 箔押し・オリジナル印刷 | ZprintPro'
     },
   },
   },
@@ -10526,7 +10526,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'custom-red-packets',
     category: 'red-packets',
     category_slug: 'red-packets',
-    name: '定制利是封', nameEn: 'Custom Red Packets', nameJa: 'オリジナルポチ袋', title_zh: '定制利是封',
+    name: '定制利是封 | 利是封 / 春聯 / 燙金', nameEn: 'Custom Red Packets | CNY Red Packets & Foil', nameJa: 'オリジナルポチ袋 | 紅包 / 旧正月 / 箔押し', title_zh: '定制利是封',
     description: '專屬設計，印上公司Logo和祝福語。強化品牌印象，節日營銷必備。', descriptionEn: 'Exclusive design with company logo and greetings. Strengthens brand impression.', descriptionJa: '独占的なデザイン、会社ロゴと祝福の言葉。ブランドイメージを強化。', description_zh: '專屬設計，印上公司Logo和祝福語。強化品牌印象，節日營銷必備。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -10701,9 +10701,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-red-packets-custom-red-packets-zh-hk.webp', en: 'zprintpro-red-packets-custom-red-packets-en.webp', ja: 'zprintpro-red-packets-custom-red-packets-ja.webp' },
     alt: {
-      'zh-hk': '香港定制利是封印刷 120g–150g紅色 燙金',
-      en: 'Custom Red Packets | Professional Red Packets Hong Kong',
-      ja: 'オリジナルポチ袋 | 箔押し・オリジナル印刷 | ZprintPro'
+      'zh-hk': '利是封印刷 / 燙金 / 春節紅包 | 香港定制利是封印刷 120g–150g紅色 燙金',
+      en: 'Red Packet Printing / Foil / CNY | Custom Red Packets | Professional Red Packets Hong Kong',
+      ja: '紅包印刷 / 旧正月 / 箔押し | オリジナルポチ袋 | 箔押し・オリジナル印刷 | ZprintPro'
     },
   },
   },
@@ -10713,7 +10713,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'cartoon-red-packets',
     category: 'red-packets',
     category_slug: 'red-packets',
-    name: '卡通利是封', nameEn: 'Cartoon Red Packets', nameJa: 'キャラクターポチ袋', title_zh: '卡通利是封',
+    name: '卡通利是封 | 利是封 / 春聯 / 燙金', nameEn: 'Cartoon Red Packets | CNY Red Packets & Foil', nameJa: 'キャラクターポチ袋 | 紅包 / 旧正月 / 箔押し', title_zh: '卡通利是封',
     description: '可愛卡通設計，深受年輕人喜愛。適合親子品牌、教育機構、兒童產品。', descriptionEn: 'Cute cartoon design, loved by young people.', descriptionJa: 'かわいいキャラクターデザイン、若者に人気。', description_zh: '可愛卡通設計，深受年輕人喜愛。適合親子品牌、教育機構、兒童產品。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -10886,9 +10886,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-red-packets-cartoon-red-packets-zh-hk.webp', en: 'zprintpro-red-packets-cartoon-red-packets-en.webp', ja: 'zprintpro-red-packets-cartoon-red-packets-ja.webp' },
     alt: {
-      'zh-hk': '香港卡通利是封印刷 120g銅版紙 燙金',
-      en: 'Cartoon Red Packets | Professional Red Packets Hong Kong',
-      ja: 'キャラクターポチ袋 | 箔押し・オリジナル印刷 | ZprintPro'
+      'zh-hk': '利是封印刷 / 燙金 / 春節紅包 | 香港卡通利是封印刷 120g銅版紙 燙金',
+      en: 'Red Packet Printing / Foil / CNY | Cartoon Red Packets | Professional Red Packets Hong Kong',
+      ja: '紅包印刷 / 旧正月 / 箔押し | キャラクターポチ袋 | 箔押し・オリジナル印刷 | ZprintPro'
     },
   },
   },
@@ -10898,7 +10898,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'eco-red-packets',
     category: 'red-packets',
     category_slug: 'red-packets',
-    name: '環保利是封', nameEn: 'Eco Red Packets', nameJa: 'エコポチ袋', title_zh: '環保利是封',
+    name: '環保利是封 | 利是封 / 春聯 / 燙金', nameEn: 'Eco Red Packets | CNY Red Packets & Foil', nameJa: 'エコポチ袋 | 紅包 / 旧正月 / 箔押し', title_zh: '環保利是封',
     description: '採用環保紙張和油墨，可持續發展理念。適合注重環保的企業。', descriptionEn: 'Eco-friendly paper and ink, sustainable development concept.', descriptionJa: '環境に優しい紙とインク、持続可能な開発の理念。', description_zh: '採用環保紙張和油墨，可持續發展理念。適合注重環保的企業。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -11073,9 +11073,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-red-packets-eco-red-packets-zh-hk.webp', en: 'zprintpro-red-packets-eco-red-packets-en.webp', ja: 'zprintpro-red-packets-eco-red-packets-ja.webp' },
     alt: {
-      'zh-hk': '香港環保利是封印刷 FSC認證再生紙 無覆膜（環保）',
-      en: 'Eco Red Packets | Professional Red Packets Hong Kong',
-      ja: 'エコポチ袋 | 箔押し・オリジナル印刷 | ZprintPro'
+      'zh-hk': '利是封印刷 / 燙金 / 春節紅包 | 香港環保利是封印刷 FSC認證再生紙 無覆膜（環保）',
+      en: 'Red Packet Printing / Foil / CNY | Eco Red Packets | Professional Red Packets Hong Kong',
+      ja: '紅包印刷 / 旧正月 / 箔押し | エコポチ袋 | 箔押し・オリジナル印刷 | ZprintPro'
     },
   },
   },
@@ -11085,7 +11085,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'large-red-packets',
     category: 'red-packets',
     category_slug: 'red-packets',
-    name: '大號利是封', nameEn: 'Large Red Packets', nameJa: '大判ポチ袋', title_zh: '大號利是封',
+    name: '大號利是封 | 利是封 / 春聯 / 燙金', nameEn: 'Large Red Packets | CNY Red Packets & Foil', nameJa: '大判ポチ袋 | 紅包 / 旧正月 / 箔押し', title_zh: '大號利是封',
     description: '加大尺寸，可放入更多鈔票或禮品卡。實用大氣，送禮更有面子。', descriptionEn: 'Larger size, can hold more cash or gift cards.', descriptionJa: '大きなサイズ、より多くの現金やギフトカードを入れられます。', description_zh: '加大尺寸，可放入更多鈔票或禮品卡。實用大氣，送禮更有面子。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -11260,9 +11260,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-red-packets-large-red-packets-zh-hk.webp', en: 'zprintpro-red-packets-large-red-packets-en.webp', ja: 'zprintpro-red-packets-large-red-packets-ja.webp' },
     alt: {
-      'zh-hk': '香港大號利是封印刷 150g–200g紅色紙張 燙金',
-      en: 'Large Red Packets | Professional Red Packets Hong Kong',
-      ja: '大判ポチ袋 | 箔押し・オリジナル印刷 | ZprintPro'
+      'zh-hk': '利是封印刷 / 燙金 / 春節紅包 | 香港大號利是封印刷 150g–200g紅色紙張 燙金',
+      en: 'Red Packet Printing / Foil / CNY | Large Red Packets | Professional Red Packets Hong Kong',
+      ja: '紅包印刷 / 旧正月 / 箔押し | 大判ポチ袋 | 箔押し・オリジナル印刷 | ZprintPro'
     },
   },
   },
@@ -11273,7 +11273,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'wall-calendars',
     category: 'calendars',
     category_slug: 'calendars',
-    name: '掛牆年曆', nameEn: 'Wall Calendars', nameJa: '壁掛けカレンダー', title_zh: '掛牆年曆',
+    name: '掛牆年曆 | 桌曆 / 掛曆 / 2027年曆', nameEn: 'Wall Calendars | Wall & Desk Calendars 2027', nameJa: '壁掛けカレンダー | 卓上カレンダー / 壁掛け 2027', title_zh: '掛牆年曆',
     description: '標準A3或A2掛牆年曆，13頁設計（封面+12個月）。適合家庭、辦公室使用，全年品牌曝光。', descriptionEn: 'Standard A3 or A2 wall calendars, 13-page design. Perfect for home and office use.', descriptionJa: '標準A3またはA2壁掛けカレンダー、13ページデザイン。家庭やオフィスに最適。', description_zh: '標準A3或A2掛牆年曆，13頁設計（封面+12個月）。適合家庭、辦公室使用，全年品牌曝光。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -11436,9 +11436,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-calendars-wall-calendars-zh-hk.webp', en: 'zprintpro-calendars-wall-calendars-en.webp', ja: 'zprintpro-calendars-wall-calendars-ja.webp' },
     alt: {
-      'zh-hk': '香港掛牆年曆印刷 250g–300g銅版紙 金屬圈裝訂',
-      en: 'Wall Calendars | Professional Calendars Hong Kong',
-      ja: '壁掛けカレンダー | 壁掛け・卓上・写真タイプ | ZprintPro'
+      'zh-hk': '年曆 / 桌曆 / 掛曆 / 2027年曆 | 香港掛牆年曆印刷 250g–300g銅版紙 金屬圈裝訂',
+      en: 'Calendar Printing / Wall / Desk / 2027 | Wall Calendars | Professional Calendars Hong Kong',
+      ja: 'カレンダー印刷 / 卓上 / 壁掛け 2027 | 壁掛けカレンダー | 壁掛け・卓上・写真タイプ | ZprintPro'
     },
   },
   },
@@ -11448,7 +11448,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'desk-calendars',
     category: 'calendars',
     category_slug: 'calendars',
-    name: '座檯年曆', nameEn: 'Desk Calendars', nameJa: '卓上カレンダー', title_zh: '座檯年曆',
+    name: '座檯年曆 | 桌曆 / 掛曆 / 2027年曆', nameEn: 'Desk Calendars | Wall & Desk Calendars 2027', nameJa: '卓上カレンダー | 卓上カレンダー / 壁掛け 2027', title_zh: '座檯年曆',
     description: '三角形座檯設計，穩固美觀。適合辦公桌擺放，每日品牌接觸。', descriptionEn: 'Triangular desk design, stable and beautiful. Perfect for office desk display.', descriptionJa: '三角形の卓上デザイン、安定して美しい。オフィスデスクに最適。', description_zh: '三角形座檯設計，穩固美觀。適合辦公桌擺放，每日品牌接觸。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -11620,9 +11620,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-calendars-desk-calendars-zh-hk.webp', en: 'zprintpro-calendars-desk-calendars-en.webp', ja: 'zprintpro-calendars-desk-calendars-ja.webp' },
     alt: {
-      'zh-hk': '香港座檯年曆印刷 200g–250g銅版紙 三角座架',
-      en: 'Desk Calendars | Professional Calendars Hong Kong',
-      ja: '卓上カレンダー | 壁掛け・卓上・写真タイプ | ZprintPro'
+      'zh-hk': '年曆 / 桌曆 / 掛曆 / 2027年曆 | 香港座檯年曆印刷 200g–250g銅版紙 三角座架',
+      en: 'Calendar Printing / Wall / Desk / 2027 | Desk Calendars | Professional Calendars Hong Kong',
+      ja: 'カレンダー印刷 / 卓上 / 壁掛け 2027 | 卓上カレンダー | 壁掛け・卓上・写真タイプ | ZprintPro'
     },
   },
   },
@@ -11632,7 +11632,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'custom-calendars',
     category: 'calendars',
     category_slug: 'calendars',
-    name: '定制年曆', nameEn: 'Custom Calendars', nameJa: 'オリジナルカレンダー', title_zh: '定制年曆',
+    name: '定制年曆 | 桌曆 / 掛曆 / 2027年曆', nameEn: 'Custom Calendars | Wall & Desk Calendars 2027', nameJa: 'オリジナルカレンダー | 卓上カレンダー / 壁掛け 2027', title_zh: '定制年曆',
     description: '專屬設計，每頁可印公司產品或服務。企業禮品首選，送客戶最佳選擇。', descriptionEn: 'Exclusive design, each page can feature company products or services.', descriptionJa: '独占的なデザイン、各ページに会社の製品やサービスを掲載可能。', description_zh: '專屬設計，每頁可印公司產品或服務。企業禮品首選，送客戶最佳選擇。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -11810,9 +11810,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-calendars-custom-calendars-zh-hk.webp', en: 'zprintpro-calendars-custom-calendars-en.webp', ja: 'zprintpro-calendars-custom-calendars-ja.webp' },
     alt: {
-      'zh-hk': '香港定制年曆印刷 250g–300g藝術紙 燙金',
-      en: 'Custom Calendars | Professional Calendars Hong Kong',
-      ja: 'オリジナルカレンダー | 壁掛け・卓上・写真タイプ | ZprintPro'
+      'zh-hk': '年曆 / 桌曆 / 掛曆 / 2027年曆 | 香港定制年曆印刷 250g–300g藝術紙 燙金',
+      en: 'Calendar Printing / Wall / Desk / 2027 | Custom Calendars | Professional Calendars Hong Kong',
+      ja: 'カレンダー印刷 / 卓上 / 壁掛け 2027 | オリジナルカレンダー | 壁掛け・卓上・写真タイプ | ZprintPro'
     },
   },
   },
@@ -11822,7 +11822,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'mini-calendars',
     category: 'calendars',
     category_slug: 'calendars',
-    name: '迷你年曆', nameEn: 'Mini Calendars', nameJa: 'ミニカレンダー', title_zh: '迷你年曆',
+    name: '迷你年曆 | 桌曆 / 掛曆 / 2027年曆', nameEn: 'Mini Calendars | Wall & Desk Calendars 2027', nameJa: 'ミニカレンダー | 卓上カレンダー / 壁掛け 2027', title_zh: '迷你年曆',
     description: '小巧便攜，可放入錢包或口袋。創意禮品，年輕人喜愛。', descriptionEn: 'Compact and portable, fits in wallet or pocket.', descriptionJa: 'コンパクトで持ち運び可能、財布やポケットに入ります。', description_zh: '小巧便攜，可放入錢包或口袋。創意禮品，年輕人喜愛。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -12011,9 +12011,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-calendars-mini-calendars-zh-hk.webp', en: 'zprintpro-calendars-mini-calendars-en.webp', ja: 'zprintpro-calendars-mini-calendars-ja.webp' },
     alt: {
-      'zh-hk': '香港迷你年曆印刷 150g–200g銅版紙 騎馬釘或單張裁切',
-      en: 'Mini Calendars | Professional Calendars Hong Kong',
-      ja: 'ミニカレンダー | 壁掛け・卓上・写真タイプ | ZprintPro'
+      'zh-hk': '年曆 / 桌曆 / 掛曆 / 2027年曆 | 香港迷你年曆印刷 150g–200g銅版紙 騎馬釘或單張裁切',
+      en: 'Calendar Printing / Wall / Desk / 2027 | Mini Calendars | Professional Calendars Hong Kong',
+      ja: 'カレンダー印刷 / 卓上 / 壁掛け 2027 | ミニカレンダー | 壁掛け・卓上・写真タイプ | ZprintPro'
     },
   },
   },
@@ -12023,7 +12023,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'photo-frame-calendars',
     category: 'calendars',
     category_slug: 'calendars',
-    name: '相框年曆', nameEn: 'Photo Frame Calendars', nameJa: 'フォトフレームカレンダー', title_zh: '相框年曆',
+    name: '相框年曆 | 桌曆 / 掛曆 / 2027年曆', nameEn: 'Photo Frame Calendars | Wall & Desk Calendars 2027', nameJa: 'フォトフレームカレンダー | 卓上カレンダー / 壁掛け 2027', title_zh: '相框年曆',
     description: '結合相框功能，可替換照片。實用美觀，家庭必備。', descriptionEn: 'Combined photo frame function, photos can be replaced.', descriptionJa: 'フォトフレーム機能付き、写真を交換可能。', description_zh: '結合相框功能，可替換照片。實用美觀，家庭必備。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -12247,9 +12247,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-calendars-photo-frame-calendars-zh-hk.webp', en: 'zprintpro-calendars-photo-frame-calendars-en.webp', ja: 'zprintpro-calendars-photo-frame-calendars-ja.webp' },
     alt: {
-      'zh-hk': '香港相框年曆印刷 250g–300g銅版紙 硬紙板相架底座',
-      en: 'Photo Frame Calendars | Professional Calendars Hong Kong',
-      ja: 'フォトフレームカレンダー | 壁掛け・卓上・写真タイプ | ZprintPro'
+      'zh-hk': '年曆 / 桌曆 / 掛曆 / 2027年曆 | 香港相框年曆印刷 250g–300g銅版紙 硬紙板相架底座',
+      en: 'Calendar Printing / Wall / Desk / 2027 | Photo Frame Calendars | Professional Calendars Hong Kong',
+      ja: 'カレンダー印刷 / 卓上 / 壁掛け 2027 | フォトフレームカレンダー | 壁掛け・卓上・写真タイプ | ZprintPro'
     },
   },
   },
@@ -12259,7 +12259,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'magnetic-calendars',
     category: 'calendars',
     category_slug: 'calendars',
-    name: '磁石年曆', nameEn: 'Magnetic Calendars', nameJa: 'マグネットカレンダー', title_zh: '磁石年曆',
+    name: '磁石年曆 | 桌曆 / 掛曆 / 2027年曆', nameEn: 'Magnetic Calendars | Wall & Desk Calendars 2027', nameJa: 'マグネットカレンダー | 卓上カレンダー / 壁掛け 2027', title_zh: '磁石年曆',
     description: '磁石背膠，可貼於冰箱等金屬表面。每日多次接觸，品牌曝光率高。', descriptionEn: 'Magnetic backing, can stick to refrigerator and other metal surfaces.', descriptionJa: 'マグネット背面、冷蔵庫などの金属面に貼付可能。', description_zh: '磁石背膠，可貼於冰箱等金屬表面。每日多次接觸，品牌曝光率高。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -12487,9 +12487,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-calendars-magnetic-calendars-zh-hk.webp', en: 'zprintpro-calendars-magnetic-calendars-en.webp', ja: 'zprintpro-calendars-magnetic-calendars-ja.webp' },
     alt: {
-      'zh-hk': '香港磁石年曆印刷 200g–250g銅版紙 軟磁片貼合',
-      en: 'Magnetic Calendars | Professional Calendars Hong Kong',
-      ja: 'マグネットカレンダー | 壁掛け・卓上・写真タイプ | ZprintPro'
+      'zh-hk': '年曆 / 桌曆 / 掛曆 / 2027年曆 | 香港磁石年曆印刷 200g–250g銅版紙 軟磁片貼合',
+      en: 'Calendar Printing / Wall / Desk / 2027 | Magnetic Calendars | Professional Calendars Hong Kong',
+      ja: 'カレンダー印刷 / 卓上 / 壁掛け 2027 | マグネットカレンダー | 壁掛け・卓上・写真タイプ | ZprintPro'
     },
   },
   },
@@ -12500,7 +12500,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'pvc-menus',
     category: 'menus',
     category_slug: 'menus',
-    name: 'PVC餐牌', nameEn: 'PVC Menus', nameJa: 'PVCメニュー', title_zh: 'PVC餐牌 · 防水防油可水洗 | 餐廳/咖啡店/酒吧 | 智印雲 ZprintPro',
+    name: 'PVC餐牌 | 餐牌 / 菜單 / 防水PVC', nameEn: 'PVC Menus | Restaurant Menus & PVC', nameJa: 'PVCメニュー | レストランメニュー / 防水', title_zh: 'PVC餐牌 · 防水防油可水洗 | 餐廳/咖啡店/酒吧 | 智印雲 ZprintPro',
     description: '防水防油PVC材質，易清潔耐用。餐廳、咖啡店首選。**適配行業**:餐廳、咖啡店、酒吧、茶餐廳、火鍋店、居酒屋、酒店餐廳、婚宴酒樓。', descriptionEn: 'Waterproof and oil-resistant PVC material, easy to clean and durable. **Best for**: restaurants, cafes, bars, cha chaan teng, hot pot, izakaya, hotel restaurants, wedding banquet halls.', descriptionJa: '防水・耐油性PVC素材、お手入れ簡単で耐久性あり。**適用業界**:レストラン、カフェ、バー、茶餐廳 (香港スタイル食堂)、火鍋店、居酒屋、ホテルレストラン、ブライダル宴会。', description_zh: '防水防油PVC材質，易清潔耐用。餐廳、咖啡店首選。',
     optimizedAt: '2026-07-08',
     optimizationRound: 1,
@@ -12662,9 +12662,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-menus-pvc-menus-zh-hk.webp', en: 'zprintpro-menus-pvc-menus-en.webp', ja: 'zprintpro-menus-pvc-menus-ja.webp' },
     alt: {
-      'zh-hk': '香港PVC餐牌印刷 0.5mm–1.0mm透明 圓角或直角裁切',
-      en: 'PVC Menus | Professional Menus Hong Kong',
-      ja: 'PVCメニュー | 防水ラミネート・店舗向け | ZprintPro'
+      'zh-hk': '餐牌印刷 / 防水PVC / 精裝菜單 | 香港PVC餐牌印刷 0.5mm–1.0mm透明 圓角或直角裁切',
+      en: 'Menu Printing / PVC / Waterproof | PVC Menus | Professional Menus Hong Kong',
+      ja: 'メニュー印刷 / 防水 / ハードカバー | PVCメニュー | 防水ラミネート・店舗向け | ZprintPro'
     },
   },
   },
@@ -12674,7 +12674,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'laminated-menus',
     category: 'menus',
     category_slug: 'menus',
-    name: '過膠餐牌', nameEn: 'Laminated Menus', nameJa: 'ラミネートメニュー', title_zh: '過膠餐牌',
+    name: '過膠餐牌 | 餐牌 / 菜單 / 防水PVC', nameEn: 'Laminated Menus | Restaurant Menus & PVC', nameJa: 'ラミネートメニュー | レストランメニュー / 防水', title_zh: '過膠餐牌',
     description: '紙質過膠處理，防水耐用且成本較低。經濟實惠之選。', descriptionEn: 'Paper with lamination, waterproof and durable at lower cost.', descriptionJa: 'ラミネート加工紙、防水で耐久性がありコストも低い。', description_zh: '紙質過膠處理，防水耐用且成本較低。經濟實惠之選。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -12855,9 +12855,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-menus-laminated-menus-zh-hk.webp', en: 'zprintpro-menus-laminated-menus-en.webp', ja: 'zprintpro-menus-laminated-menus-ja.webp' },
     alt: {
-      'zh-hk': '香港過膠餐牌印刷 200g–250g銅版紙 覆膜（啞膠／光膠）',
-      en: 'Laminated Menus | Professional Menus Hong Kong',
-      ja: 'ラミネートメニュー | 防水ラミネート・店舗向け | ZprintPro'
+      'zh-hk': '餐牌印刷 / 防水PVC / 精裝菜單 | 香港過膠餐牌印刷 200g–250g銅版紙 覆膜（啞膠／光膠）',
+      en: 'Menu Printing / PVC / Waterproof | Laminated Menus | Professional Menus Hong Kong',
+      ja: 'メニュー印刷 / 防水 / ハードカバー | ラミネートメニュー | 防水ラミネート・店舗向け | ZprintPro'
     },
   },
   },
@@ -12867,7 +12867,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'hardcover-menus',
     category: 'menus',
     category_slug: 'menus',
-    name: '精裝餐牌', nameEn: 'Hardcover Menus', nameJa: '高級メニュー', title_zh: '精裝餐牌',
+    name: '精裝餐牌 | 餐牌 / 菜單 / 防水PVC', nameEn: 'Hardcover Menus | Restaurant Menus & PVC', nameJa: '高級メニュー | レストランメニュー / 防水', title_zh: '精裝餐牌',
     description: '硬殼精裝，高檔大氣。適合高級餐廳、酒店。', descriptionEn: 'Hardcover binding, elegant and grand. Perfect for fine dining restaurants, hotels.', descriptionJa: '上製本装丁、エレガントで格式高い。高級レストラン、ホテルに最適。', description_zh: '硬殼精裝，高檔大氣。適合高級餐廳、酒店。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -13049,9 +13049,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-menus-hardcover-menus-zh-hk.webp', en: 'zprintpro-menus-hardcover-menus-en.webp', ja: 'zprintpro-menus-hardcover-menus-ja.webp' },
     alt: {
-      'zh-hk': '香港精裝餐牌印刷 硬紙板封面裱糊銅版紙 燙金',
-      en: 'Hardcover Menus | Professional Menus Hong Kong',
-      ja: '高級メニュー | 防水ラミネート・店舗向け | ZprintPro'
+      'zh-hk': '餐牌印刷 / 防水PVC / 精裝菜單 | 香港精裝餐牌印刷 硬紙板封面裱糊銅版紙 燙金',
+      en: 'Menu Printing / PVC / Waterproof | Hardcover Menus | Professional Menus Hong Kong',
+      ja: 'メニュー印刷 / 防水 / ハードカバー | 高級メニュー | 防水ラミネート・店舗向け | ZprintPro'
     },
   },
   },
@@ -13061,7 +13061,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'drink-menus',
     category: 'menus',
     category_slug: 'menus',
-    name: '酒水牌', nameEn: 'Drink Menus', nameJa: 'ドリンクメニュー', title_zh: '酒水牌',
+    name: '酒水牌 | 餐牌 / 菜單 / 防水PVC', nameEn: 'Drink Menus | Restaurant Menus & PVC', nameJa: 'ドリンクメニュー | レストランメニュー / 防水', title_zh: '酒水牌',
     description: '專為酒水設計，可立式或手持。酒吧、餐廳必備。', descriptionEn: 'Specially designed for drinks, can be standing or handheld.', descriptionJa: 'ドリンク専用設計、立てかけまたは手持ち可能。', description_zh: '專為酒水設計，可立式或手持。酒吧、餐廳必備。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -13240,9 +13240,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-menus-drink-menus-zh-hk.webp', en: 'zprintpro-menus-drink-menus-en.webp', ja: 'zprintpro-menus-drink-menus-ja.webp' },
     alt: {
-      'zh-hk': '香港酒水牌印刷 200g–250g銅版紙 覆膜（啞膠）',
-      en: 'Drink Menus | Professional Menus Hong Kong',
-      ja: 'ドリンクメニュー | 防水ラミネート・店舗向け | ZprintPro'
+      'zh-hk': '餐牌印刷 / 防水PVC / 精裝菜單 | 香港酒水牌印刷 200g–250g銅版紙 覆膜（啞膠）',
+      en: 'Menu Printing / PVC / Waterproof | Drink Menus | Professional Menus Hong Kong',
+      ja: 'メニュー印刷 / 防水 / ハードカバー | ドリンクメニュー | 防水ラミネート・店舗向け | ZprintPro'
     },
   },
   },
@@ -13252,7 +13252,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'disposable-menus',
     category: 'menus',
     category_slug: 'menus',
-    name: '一次性餐牌', nameEn: 'Disposable Menus', nameJa: '使い捨てメニュー', title_zh: '一次性餐牌',
+    name: '一次性餐牌 | 餐牌 / 菜單 / 防水PVC', nameEn: 'Disposable Menus | Restaurant Menus & PVC', nameJa: '使い捨てメニュー | レストランメニュー / 防水', title_zh: '一次性餐牌',
     description: '經濟紙質，適合快餐店、外賣店。可頻繁更換內容。', descriptionEn: 'Economical paper, perfect for fast food and takeaway shops.', descriptionJa: '経済的な紙、ファストフードやテイクアウト店に最適。', description_zh: '經濟紙質，適合快餐店、外賣店。可頻繁更換內容。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -13430,9 +13430,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-menus-disposable-menus-zh-hk.webp', en: 'zprintpro-menus-disposable-menus-en.webp', ja: 'zprintpro-menus-disposable-menus-ja.webp' },
     alt: {
-      'zh-hk': '香港一次性餐牌印刷 100g–120g書紙 無覆膜（即棄）',
-      en: 'Disposable Menus | Professional Menus Hong Kong',
-      ja: '使い捨てメニュー | 防水ラミネート・店舗向け | ZprintPro'
+      'zh-hk': '餐牌印刷 / 防水PVC / 精裝菜單 | 香港一次性餐牌印刷 100g–120g書紙 無覆膜（即棄）',
+      en: 'Menu Printing / PVC / Waterproof | Disposable Menus | Professional Menus Hong Kong',
+      ja: 'メニュー印刷 / 防水 / ハードカバー | 使い捨てメニュー | 防水ラミネート・店舗向け | ZprintPro'
     },
   },
   },
@@ -13443,7 +13443,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'outdoor-vinyl-banners',
     category: 'banners',
     category_slug: 'banners',
-    name: '戶外燈布噴繪', nameEn: 'Outdoor Vinyl Banners', nameJa: '屋外バナー', title_zh: '戶外燈布噴繪',
+    name: '戶外燈布噴繪 | 易拉寶 / 戶外橫幅 / 噴繪', nameEn: 'Outdoor Vinyl Banners | Roll-up & Outdoor Banners', nameJa: '屋外バナー | ロールアップバナー / 屋外バナー', title_zh: '戶外燈布噴繪',
     description: '大型戶外燈布，防水防曬，耐候性強。適合戶外廣告牌、建築圍板。', descriptionEn: 'Large outdoor vinyl banners, waterproof and UV-resistant, strong weather resistance.', descriptionJa: '大型屋外ビニールバナー、防水・UV耐性、強い耐候性。', description_zh: '大型戶外燈布，防水防曬，耐候性強。適合戶外廣告牌、建築圍板。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -13608,9 +13608,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-banners-outdoor-vinyl-banners-zh-hk.webp', en: 'zprintpro-banners-outdoor-vinyl-banners-en.webp', ja: 'zprintpro-banners-outdoor-vinyl-banners-ja.webp' },
     alt: {
-      'zh-hk': '香港戶外燈布噴繪印刷 外光／內光 PVC 燈布（依場景） 打扣',
-      en: 'Outdoor Vinyl Banners | Professional Banners Hong Kong',
-      ja: '屋外バナー | 屋外耐久・防炎加工対応 | ZprintPro'
+      'zh-hk': '噴繪印刷 / 易拉寶 / 戶外橫幅 | 香港戶外燈布噴繪印刷 外光／內光 PVC 燈布（依場景） 打扣',
+      en: 'Banner Printing / Roll-up / X-Stand | Outdoor Vinyl Banners | Professional Banners Hong Kong',
+      ja: 'バナー印刷 / ロールアップ / 屋外 | 屋外バナー | 屋外耐久・防炎加工対応 | ZprintPro'
     },
   },
   },
@@ -13620,7 +13620,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'roll-up-banners',
     category: 'banners',
     category_slug: 'banners',
-    name: '易拉寶', nameEn: 'Roll-up Banners', nameJa: 'ロールアップバナー', title_zh: '易拉寶',
+    name: '易拉寶 | 易拉寶 / 戶外橫幅 / 噴繪', nameEn: 'Roll-up Banners | Roll-up & Outdoor Banners', nameJa: 'ロールアップバナー | ロールアップバナー / 屋外バナー', title_zh: '易拉寶',
     description: '便攜易拉寶展架，安裝簡便。展會、路演必備。', descriptionEn: 'Portable roll-up banner stands, easy to install. Essential for exhibitions and roadshows.', descriptionJa: 'ポータブルロールアップバナースタンド、設置簡単。展示会やロードショーに必須。', description_zh: '便攜易拉寶展架，安裝簡便。展會、路演必備。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -13808,9 +13808,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-banners-roll-up-banners-zh-hk.webp', en: 'zprintpro-banners-roll-up-banners-en.webp', ja: 'zprintpro-banners-roll-up-banners-ja.webp' },
     alt: {
-      'zh-hk': '香港易拉寶印刷 PET／PVC 片 加重桿',
-      en: 'Roll-up Banners | Professional Banners Hong Kong',
-      ja: 'ロールアップバナー | 屋外耐久・防炎加工対応 | ZprintPro'
+      'zh-hk': '噴繪印刷 / 易拉寶 / 戶外橫幅 | 香港易拉寶印刷 PET／PVC 片 加重桿',
+      en: 'Banner Printing / Roll-up / X-Stand | Roll-up Banners | Professional Banners Hong Kong',
+      ja: 'バナー印刷 / ロールアップ / 屋外 | ロールアップバナー | 屋外耐久・防炎加工対応 | ZprintPro'
     },
   },
   },
@@ -13820,7 +13820,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'adhesive-banners',
     category: 'banners',
     category_slug: 'banners',
-    name: '背膠噴繪', nameEn: 'Adhesive Banners', nameJa: '粘着バナー', title_zh: '背膠噴繪',
+    name: '背膠噴繪 | 易拉寶 / 戶外橫幅 / 噴繪', nameEn: 'Adhesive Banners | Roll-up & Outdoor Banners', nameJa: '粘着バナー | ロールアップバナー / 屋外バナー', title_zh: '背膠噴繪',
     description: '自帶背膠，可直接粘貼於牆面或玻璃。適合店鋪裝飾、活動佈置。', descriptionEn: 'Self-adhesive, can be directly applied to walls or glass.', descriptionJa: '自己粘着、壁やガラスに直接貼付可能。', description_zh: '自帶背膠，可直接粘貼於牆面或玻璃。適合店鋪裝飾、活動佈置。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -13999,9 +13999,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-banners-adhesive-banners-zh-hk.webp', en: 'zprintpro-banners-adhesive-banners-en.webp', ja: 'zprintpro-banners-adhesive-banners-ja.webp' },
     alt: {
-      'zh-hk': '香港背膠噴繪印刷 PVC 車貼／可移膠／透明膜（依場景） 霧面護膜',
-      en: 'Adhesive Banners | Professional Banners Hong Kong',
-      ja: '粘着バナー | 屋外耐久・防炎加工対応 | ZprintPro'
+      'zh-hk': '噴繪印刷 / 易拉寶 / 戶外橫幅 | 香港背膠噴繪印刷 PVC 車貼／可移膠／透明膜（依場景） 霧面護膜',
+      en: 'Banner Printing / Roll-up / X-Stand | Adhesive Banners | Professional Banners Hong Kong',
+      ja: 'バナー印刷 / ロールアップ / 屋外 | 粘着バナー | 屋外耐久・防炎加工対応 | ZprintPro'
     },
   },
   },
@@ -14011,7 +14011,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'vehicle-wraps',
     category: 'banners',
     category_slug: 'banners',
-    name: '車身廣告', nameEn: 'Vehicle Wraps', nameJa: 'カーラッピング', title_zh: '車身廣告',
+    name: '車身廣告 | 易拉寶 / 戶外橫幅 / 噴繪', nameEn: 'Vehicle Wraps | Roll-up & Outdoor Banners', nameJa: 'カーラッピング | ロールアップバナー / 屋外バナー', title_zh: '車身廣告',
     description: '專用車身貼紙，耐候性強，移除不留痕。流動廣告，曝光率高。', descriptionEn: 'Specialized vehicle wrap vinyl, strong weather resistance, no residue when removed.', descriptionJa: '専用車体ラップビニール、強い耐候性、剥がしても残りません。', description_zh: '專用車身貼紙，耐候性強，移除不留痕。流動廣告，曝光率高。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -14189,9 +14189,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-banners-vehicle-wraps-zh-hk.webp', en: 'zprintpro-banners-vehicle-wraps-en.webp', ja: 'zprintpro-banners-vehicle-wraps-ja.webp' },
     alt: {
-      'zh-hk': '香港車身廣告印刷 鑄造級 PVC 車貼 80–100 微米 亮面／啞面覆膜',
-      en: 'Vehicle Wraps | Professional Banners Hong Kong',
-      ja: 'カーラッピング | 屋外耐久・防炎加工対応 | ZprintPro'
+      'zh-hk': '噴繪印刷 / 易拉寶 / 戶外橫幅 | 香港車身廣告印刷 鑄造級 PVC 車貼 80–100 微米 亮面／啞面覆膜',
+      en: 'Banner Printing / Roll-up / X-Stand | Vehicle Wraps | Professional Banners Hong Kong',
+      ja: 'バナー印刷 / ロールアップ / 屋外 | カーラッピング | 屋外耐久・防炎加工対応 | ZprintPro'
     },
   },
   },
@@ -14201,7 +14201,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'mesh-banners',
     category: 'banners',
     category_slug: 'banners',
-    name: '網格布噴繪', nameEn: 'Mesh Banners', nameJa: 'メッシュバナー', title_zh: '網格布噴繪',
+    name: '網格布噴繪 | 易拉寶 / 戶外橫幅 / 噴繪', nameEn: 'Mesh Banners | Roll-up & Outdoor Banners', nameJa: 'メッシュバナー | ロールアップバナー / 屋外バナー', title_zh: '網格布噴繪',
     description: '網格設計，透光透風。適合大型戶外廣告、建築圍板。', descriptionEn: 'Mesh design, light and air permeable. Perfect for large outdoor advertising.', descriptionJa: 'メッシュデザイン、光と空気を通す。大型屋外広告に最適。', description_zh: '網格設計，透光透風。適合大型戶外廣告、建築圍板。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -14379,9 +14379,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-banners-mesh-banners-zh-hk.webp', en: 'zprintpro-banners-mesh-banners-en.webp', ja: 'zprintpro-banners-mesh-banners-ja.webp' },
     alt: {
-      'zh-hk': '香港網格布噴繪印刷 270g–350g PVC 網格夾網布 熱封邊',
-      en: 'Mesh Banners | Professional Banners Hong Kong',
-      ja: 'メッシュバナー | 屋外耐久・防炎加工対応 | ZprintPro'
+      'zh-hk': '噴繪印刷 / 易拉寶 / 戶外橫幅 | 香港網格布噴繪印刷 270g–350g PVC 網格夾網布 熱封邊',
+      en: 'Banner Printing / Roll-up / X-Stand | Mesh Banners | Professional Banners Hong Kong',
+      ja: 'バナー印刷 / ロールアップ / 屋外 | メッシュバナー | 屋外耐久・防炎加工対応 | ZprintPro'
     },
   },
   },
@@ -15489,7 +15489,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'business-envelopes',
     category: 'envelopes',
     category_slug: 'envelopes',
-    name: '公司信封', nameEn: 'Business Envelopes', nameJa: 'ビジネス封筒', title_zh: '公司信封',
+    name: '公司信封 | 信封 / 牛皮信封 / 開窗', nameEn: 'Business Envelopes | Envelopes & Kraft', nameJa: 'ビジネス封筒 | 封筒 / クラフト封筒 / 窓付き', title_zh: '公司信封',
     description: '定制公司信封，印上Logo和地址。專業形象，商務必備。', descriptionEn: 'Custom business envelopes with logo and address. Professional image, essential for business.', descriptionJa: 'カスタムビジネス封筒、ロゴと住所を印刷。プロフェッショナルなイメージ。', description_zh: '定制公司信封，印上Logo和地址。專業形象，商務必備。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -15651,9 +15651,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-envelopes-business-envelopes-zh-hk.webp', en: 'zprintpro-envelopes-business-envelopes-en.webp', ja: 'zprintpro-envelopes-business-envelopes-ja.webp' },
     alt: {
-      'zh-hk': '香港公司信封印刷 80–120g 書紙／本白書紙 自黏封口',
-      en: 'Business Envelopes | Professional Envelopes Hong Kong',
-      ja: 'ビジネス封筒 | 窓付き対応・オリジナル印刷 | ZprintPro'
+      'zh-hk': '信封印刷 / 牛皮信封 / 企業LOGO | 香港公司信封印刷 80–120g 書紙／本白書紙 自黏封口',
+      en: 'Envelope Printing / Kraft / Business | Business Envelopes | Professional Envelopes Hong Kong',
+      ja: '封筒印刷 / クラフト / 企業 | ビジネス封筒 | 窓付き対応・オリジナル印刷 | ZprintPro'
     },
   },
   },
@@ -15663,7 +15663,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'colored-envelopes',
     category: 'envelopes',
     category_slug: 'envelopes',
-    name: '彩色信封', nameEn: 'Colored Envelopes', nameJa: 'カラー封筒', title_zh: '彩色信封',
+    name: '彩色信封 | 信封 / 牛皮信封 / 開窗', nameEn: 'Colored Envelopes | Envelopes & Kraft', nameJa: 'カラー封筒 | 封筒 / クラフト封筒 / 窓付き', title_zh: '彩色信封',
     description: '彩色印刷，視覺吸引力強。適合邀請函、賀卡、營銷郵件。', descriptionEn: 'Colorful printing, strong visual appeal. Perfect for invitations, greeting cards.', descriptionJa: 'カラフルな印刷、強い視覚的アピール。招待状、グリーティングカードに最適。', description_zh: '彩色印刷，視覺吸引力強。適合邀請函、賀卡、營銷郵件。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -15824,9 +15824,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-envelopes-colored-envelopes-zh-hk-1.webp', en: 'zprintpro-envelopes-colored-envelopes-en-1.webp', ja: 'zprintpro-envelopes-colored-envelopes-ja-1.webp' },
     alt: {
-      'zh-hk': '香港彩色信封印刷 120g雙膠紙 四色印刷',
-      en: 'Hong Kong Colored Envelopes Printing 120g Offset Paper 4-Color',
-      ja: 'カラー封筒 | 窓付き対応・オリジナル印刷 | ZprintPro'
+      'zh-hk': '信封印刷 / 牛皮信封 / 企業LOGO | 香港彩色信封印刷 120g雙膠紙 四色印刷',
+      en: 'Envelope Printing / Kraft / Business | Hong Kong Colored Envelopes Printing 120g Offset Paper 4-Color',
+      ja: '封筒印刷 / クラフト / 企業 | カラー封筒 | 窓付き対応・オリジナル印刷 | ZprintPro'
     },
   },
     variables: {
@@ -15858,7 +15858,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'large-envelopes',
     category: 'envelopes',
     category_slug: 'envelopes',
-    name: '大號信封', nameEn: 'Large Envelopes', nameJa: '大判封筒', title_zh: '大號信封',
+    name: '大號信封 | 信封 / 牛皮信封 / 開窗', nameEn: 'Large Envelopes | Envelopes & Kraft', nameJa: '大判封筒 | 封筒 / クラフト封筒 / 窓付き', title_zh: '大號信封',
     description: 'A4尺寸大信封，可裝入文件、合同。辦公室必備。', descriptionEn: 'A4 size large envelopes, can hold documents and contracts. Office essential.', descriptionJa: 'A4サイズの大きな封筒、書類や契約書を入れられます。オフィスに必須。', description_zh: 'A4尺寸大信封，可裝入文件、合同。辦公室必備。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -16012,9 +16012,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-envelopes-large-envelopes-zh-hk-1.webp', en: 'zprintpro-envelopes-large-envelopes-en-1.webp', ja: 'zprintpro-envelopes-large-envelopes-ja-1.webp' },
     alt: {
-      'zh-hk': '香港大號信封印刷 150g牛皮紙 耐用厚實',
-      en: 'Hong Kong Large Envelopes Printing 150g Kraft Paper Durable',
-      ja: '大判封筒 | 窓付き対応・オリジナル印刷 | ZprintPro'
+      'zh-hk': '信封印刷 / 牛皮信封 / 企業LOGO | 香港大號信封印刷 150g牛皮紙 耐用厚實',
+      en: 'Envelope Printing / Kraft / Business | Hong Kong Large Envelopes Printing 150g Kraft Paper Durable',
+      ja: '封筒印刷 / クラフト / 企業 | 大判封筒 | 窓付き対応・オリジナル印刷 | ZprintPro'
     },
   },
     variables: {
@@ -16046,7 +16046,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'pearl-envelopes',
     category: 'envelopes',
     category_slug: 'envelopes',
-    name: '珠光信封', nameEn: 'Pearl Envelopes', nameJa: 'パール封筒', title_zh: '珠光信封',
+    name: '珠光信封 | 信封 / 牛皮信封 / 開窗', nameEn: 'Pearl Envelopes | Envelopes & Kraft', nameJa: 'パール封筒 | 封筒 / クラフト封筒 / 窓付き', title_zh: '珠光信封',
     description: '珠光紙張，閃耀質感。適合婚禮邀請、高端活動。', descriptionEn: 'Pearl paper, shimmering quality. Perfect for wedding invitations, high-end events.', descriptionJa: 'パール紙、輝く質感。結婚式の招待状、高級イベントに最適。', description_zh: '珠光紙張，閃耀質感。適合婚禮邀請、高端活動。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -16199,9 +16199,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-envelopes-pearl-envelopes-zh-hk-1.webp', en: 'zprintpro-envelopes-pearl-envelopes-en-1.webp', ja: 'zprintpro-envelopes-pearl-envelopes-ja-1.webp' },
     alt: {
-      'zh-hk': '香港珠光信封印刷 120g珠光紙 高檔質感',
-      en: 'Hong Kong Pearl Envelopes Printing 120g Pearl Paper Premium',
-      ja: 'パール封筒 | 窓付き対応・オリジナル印刷 | ZprintPro'
+      'zh-hk': '信封印刷 / 牛皮信封 / 企業LOGO | 香港珠光信封印刷 120g珠光紙 高檔質感',
+      en: 'Envelope Printing / Kraft / Business | Hong Kong Pearl Envelopes Printing 120g Pearl Paper Premium',
+      ja: '封筒印刷 / クラフト / 企業 | パール封筒 | 窓付き対応・オリジナル印刷 | ZprintPro'
     },
   },
     variables: {
@@ -17495,7 +17495,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'magnetic-closure-gift-box',
     category: 'packaging',
     category_slug: 'packaging',
-    name: '磁吸翻蓋禮盒印刷', nameEn: 'Magnetic Closure Gift Box', nameJa: 'マグネット蓋ギフトボックス', title_zh: '磁吸翻蓋禮盒印刷',
+    name: '磁吸翻蓋禮盒印刷 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Magnetic Closure Gift Box | Gift Boxes & Custom Packaging', nameJa: 'マグネット蓋ギフトボックス | パッケージボックス・化粧箱', title_zh: '磁吸翻蓋禮盒印刷',
     description: '高檔磁吸翻蓋硬盒，適合奢侈品、化妝品、電子產品包裝。支持燙金、UV、壓紋工藝。', descriptionEn: 'Premium magnetic closure rigid boxes for luxury goods, cosmetics, electronics. Foil stamping, UV, embossing available.', descriptionJa: '高級マグネット蓋硬箱。高級品、化粧品、電子機器の包装に最適。箔押し、UV、エンボス加工対応。', description_zh: '高檔磁吸翻蓋硬盒，適合奢侈品、化妝品、電子產品包裝。支持燙金、UV、壓紋工藝。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -17705,9 +17705,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-packaging-magnetic-closure-gift-box-zh-hk-1.webp', en: 'zprintpro-packaging-magnetic-closure-gift-box-en-1.webp', ja: 'zprintpro-packaging-magnetic-closure-gift-box-ja-1.webp' },
     alt: {
-      'zh-hk': '香港磁吸翻蓋禮盒印刷 350g白卡紙 燙金Logo',
-      en: 'Hong Kong Magnetic Closure Gift Box Printing 350g White Card Foil Logo',
-      ja: 'マグネット蓋ギフトボックス | オリジナルパッケージ・最短3日 | ZprintPro'
+      'zh-hk': '包裝盒 / 禮品盒 / 定制包裝 | 香港磁吸翻蓋禮盒印刷 350g白卡紙 燙金Logo',
+      en: 'Custom Packaging Boxes & Gift Boxes | Hong Kong Magnetic Closure Gift Box Printing 350g White Card Foil Logo',
+      ja: 'パッケージボックス / ギフトボックス | マグネット蓋ギフトボックス | オリジナルパッケージ・最短3日 | ZprintPro'
     },
   },
     },
@@ -17717,7 +17717,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'electronics-packaging-box',
     category: 'packaging',
     category_slug: 'packaging',
-    name: '電子產品包裝盒定制', nameEn: 'Electronics Packaging Box', nameJa: '電子機器包装箱', title_zh: '電子產品包裝盒定制',
+    name: '電子產品包裝盒定制 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Electronics Packaging Box | Gift Boxes & Custom Packaging', nameJa: '電子機器包装箱 | パッケージボックス・化粧箱', title_zh: '電子產品包裝盒定制',
     description: '手機、耳機、充電器等3C產品包裝盒。EVA內托、吸塑、紙托多種內襯選擇。支持環保材質。', descriptionEn: 'Packaging boxes for phones, earphones, chargers. EVA foam, blister, paper tray inserts. Eco-friendly options.', descriptionJa: 'スマホ、イヤホン、充電器等のパッケージ箱。EVAフォーム、ブリスター、紙トレイ内装。環境配慮素材対応。', description_zh: '手機、耳機、充電器等3C產品包裝盒。EVA內托、吸塑、紙托多種內襯選擇。支持環保材質。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -17875,9 +17875,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-packaging-electronics-packaging-box-zh-hk-1.webp', en: 'zprintpro-packaging-electronics-packaging-box-en-1.webp', ja: 'zprintpro-packaging-electronics-packaging-box-ja-1.webp' },
     alt: {
-      'zh-hk': '香港電子產品包裝盒印刷 400g灰板紙 防靜電設計',
-      en: 'Hong Kong Electronics Packaging Box Printing 400g Grey Board Anti-static',
-      ja: '電子機器包装箱 | オリジナルパッケージ・最短3日 | ZprintPro'
+      'zh-hk': '包裝盒 / 禮品盒 / 定制包裝 | 香港電子產品包裝盒印刷 400g灰板紙 防靜電設計',
+      en: 'Custom Packaging Boxes & Gift Boxes | Hong Kong Electronics Packaging Box Printing 400g Grey Board Anti-static',
+      ja: 'パッケージボックス / ギフトボックス | 電子機器包装箱 | オリジナルパッケージ・最短3日 | ZprintPro'
     },
   },
     variables: {
@@ -17910,7 +17910,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'kraft-paper-packaging-box',
     category: 'packaging',
     category_slug: 'packaging',
-    name: '牛皮紙盒印刷定制', nameEn: 'Kraft Paper Packaging Box', nameJa: 'クラフト紙箱印刷', title_zh: '牛皮紙盒印刷定制',
+    name: '牛皮紙盒印刷定制 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Kraft Paper Packaging Box | Gift Boxes & Custom Packaging', nameJa: 'クラフト紙箱印刷 | パッケージボックス・化粧箱', title_zh: '牛皮紙盒印刷定制',
     description: '環保牛皮紙盒，適合食品、茶葉、手工皂包裝。可印刷Logo，支持多種尺寸。', descriptionEn: 'Eco-friendly kraft paper boxes for food, tea, handmade soap packaging. Custom logo printing, multiple sizes.', descriptionJa: '環境に優しいクラフト紙箱。食品、お茶、手作り石鹸の包装に最適。ロゴ印刷、サイズ豊富。', description_zh: '環保牛皮紙盒，適合食品、茶葉、手工皂包裝。可印刷Logo，支持多種尺寸。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -18066,9 +18066,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-packaging-kraft-paper-packaging-box-zh-hk-1.webp', en: 'zprintpro-packaging-kraft-paper-packaging-box-en-1.webp', ja: 'zprintpro-packaging-kraft-paper-packaging-box-ja-1.webp' },
     alt: {
-      'zh-hk': '香港牛皮紙包裝盒印刷 300g牛皮紙 環保材質',
-      en: 'Hong Kong Kraft Paper Packaging Box Printing 300g Kraft Paper Eco-friendly',
-      ja: 'クラフト紙箱印刷 | オリジナルパッケージ・最短3日 | ZprintPro'
+      'zh-hk': '包裝盒 / 禮品盒 / 定制包裝 | 香港牛皮紙包裝盒印刷 300g牛皮紙 環保材質',
+      en: 'Custom Packaging Boxes & Gift Boxes | Hong Kong Kraft Paper Packaging Box Printing 300g Kraft Paper Eco-friendly',
+      ja: 'パッケージボックス / ギフトボックス | クラフト紙箱印刷 | オリジナルパッケージ・最短3日 | ZprintPro'
     },
   },
     variables: {
@@ -18101,7 +18101,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'drawer-slide-gift-box',
     category: 'packaging',
     category_slug: 'packaging',
-    name: '抽屜禮盒滑軌盒印刷', nameEn: 'Drawer Slide Gift Box', nameJa: '引き出し式ギフトボックス', title_zh: '抽屜禮盒滑軌盒印刷',
+    name: '抽屜禮盒滑軌盒印刷 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Drawer Slide Gift Box | Gift Boxes & Custom Packaging', nameJa: '引き出し式ギフトボックス | パッケージボックス・化粧箱', title_zh: '抽屜禮盒滑軌盒印刷',
     description: '精緻抽屜式禮盒，絲帶拉手設計。適合茶葉、月餅、珠寶首飾包裝。', descriptionEn: 'Exquisite drawer-style gift boxes with ribbon pull. Perfect for tea, mooncakes, jewelry packaging.', descriptionJa: '精巧な引き出し式ギフトボックス。リボン引手付き。お茶、月餅、宝石類の包装に最適。', description_zh: '精緻抽屜式禮盒，絲帶拉手設計。適合茶葉、月餅、珠寶首飾包裝。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -18256,9 +18256,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-packaging-drawer-slide-gift-box-zh-hk-1.webp', en: 'zprintpro-packaging-drawer-slide-gift-box-en-1.webp', ja: 'zprintpro-packaging-drawer-slide-gift-box-ja-1.webp' },
     alt: {
-      'zh-hk': '香港抽屜式禮盒印刷 350g白卡紙 緞帶拉手',
-      en: 'Hong Kong Drawer Slide Gift Box Printing 350g White Card Ribbon Pull',
-      ja: '引き出し式ギフトボックス | オリジナルパッケージ・最短3日 | ZprintPro'
+      'zh-hk': '包裝盒 / 禮品盒 / 定制包裝 | 香港抽屜式禮盒印刷 350g白卡紙 緞帶拉手',
+      en: 'Custom Packaging Boxes & Gift Boxes | Hong Kong Drawer Slide Gift Box Printing 350g White Card Ribbon Pull',
+      ja: 'パッケージボックス / ギフトボックス | 引き出し式ギフトボックス | オリジナルパッケージ・最短3日 | ZprintPro'
     },
   },
     },
@@ -18269,7 +18269,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'fruit-food-label-stickers',
     category: 'stickers',
     category_slug: 'stickers',
-    name: '水果貼紙食品標籤印刷', nameEn: 'Fruit & Food Label Stickers', nameJa: 'フルーツ・食品ラベルシール', title_zh: '水果貼紙食品標籤印刷 · FDA 食品級跨境電商 SKU 標貼 | 智印雲 ZprintPro',
+    name: '水果貼紙食品標籤印刷 | 防水貼紙 / 異形貼紙', nameEn: 'Fruit & Food Label Stickers | Waterproof & Die-Cut Stickers', nameJa: 'フルーツ・食品ラベルシール | 防水ステッカー / ダイカット', title_zh: '水果貼紙食品標籤印刷 · FDA 食品級跨境電商 SKU 標貼 | 智印雲 ZprintPro',
     description: '防水防油的水果貼紙和食品標籤，適合生鮮、烘焙、飲料包裝。符合食品安全標準。**適配行業**: 跨境電商 SKU 標籤 / 生鮮水果品牌 / 烘焙食品 / 茶飲品牌 / 保健食品 / GS1 條碼貼標。', descriptionEn: 'Waterproof and oil-resistant fruit stickers and food labels for fresh produce, bakery, beverage packaging. Food-safe compliant. **Best for**: cross-border e-commerce SKU labels / fresh fruit brands / bakery / beverage / health food / GS1 barcode labels.', descriptionJa: '耐水耐油のフルーツシールと食品ラベル。生鮮食品、ベーカリー、飲料包装に最適。食品衛生基準適合。**適用業界**: 越境EC SKU ラベル / 生鮮フルーツブランド / ベーカリー / ドリンク / 健康食品 / GS1 バーコードラベル。', description_zh: '防水防油的水果貼紙和食品標籤，適合生鮮、烘焙、飲料包裝。符合食品安全標準。**適配行業**: 跨境電商 SKU 標籤 / 生鮮水果品牌 / 烘焙食品 / 茶飲品牌 / 保健食品 / GS1 條碼貼標。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -18436,9 +18436,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-stickers-fruit-food-label-stickers-zh-hk-1.webp', en: 'zprintpro-stickers-fruit-food-label-stickers-en-1.webp', ja: 'zprintpro-stickers-fruit-food-label-stickers-ja-1.webp' },
     alt: {
-      'zh-hk': '香港水果食品標籤貼紙印刷 防水材質 食品安全級',
-      en: 'Hong Kong Fruit Food Label Stickers Printing Waterproof Food-safe',
-      ja: 'フルーツ・食品ラベルシール | 防水対応・オリジナル形状 | ZprintPro'
+      'zh-hk': '防水貼紙 / 不干膠印刷 | 香港水果食品標籤貼紙印刷 防水材質 食品安全級',
+      en: 'Waterproof Stickers & Custom Vinyl | Hong Kong Fruit Food Label Stickers Printing Waterproof Food-safe',
+      ja: '防水ステッカー / ダイカットステッカー | フルーツ・食品ラベルシール | 防水対応・オリジナル形状 | ZprintPro'
     },
   },
   optimizedAt: '2026-07-09',
