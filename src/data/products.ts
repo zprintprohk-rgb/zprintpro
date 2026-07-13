@@ -17389,74 +17389,107 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `<h3>Premium Magnetic Closure Gift Boxes</h3>
-<p>ZprintPro's magnetic closure gift boxes are designed for luxury brands, cosmetics, and electronics packaging. These rigid boxes feature a book-style design with hidden magnets for a one-handed, elegant opening experience. The touch films used in the construction help reduce fingerprints, while rounded corners add durability and a refined aesthetic. The liners can be customized with one-piece EVA or dual-layer paper trays to securely hold products and accessories such as cables. Our team can advise on magnet grades and air-freight needs to ensure compliance with security screening requirements.</p>
-
-<h3>Material & GSM Specifications</h3>
-<table class="w-full border-collapse my-4 text-sm">
-  <thead>
-    <tr class="bg-[#2873F5] text-white">
-      <th class="p-2 text-left">Box Type</th>
-      <th class="p-2 text-center">Material</th>
-      <th class="p-2 text-center">Durability</th>
-      <th class="p-2 text-center">Best For</th>
-    </tr>
-  </thead>
+    longDescriptionEn: `<h3>Three Binding Types Compared</h3>
+<p>Graduation yearbooks use 3 main binding types. The right choice depends on page count, budget, and intended use (display vs. archival keepsake).</p>
+<table>
+  <thead><tr><th>Binding</th><th>Page Range</th><th>Features</th><th>Best For</th></tr></thead>
   <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Rigid Box</td><td class="p-2 text-center">Greyboard</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">Luxury goods</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Magnetic Box</td><td class="p-2 text-center">Art Paper</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">Cosmetics</td></tr>
-    <tr class="border-b"><td class="p-2 font-medium">EVA Tray</td><td class="p-2 text-center">EVA Foam</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">Electronics</td></tr>
+    <tr class="border-b border-gray-200"><td>Saddle-stitch</td><td>32-80 pages</td><td>Folded + wire-stitched; lowest cost; flat spine for cross-page photos</td><td>Elementary school yearbooks, tutoring cohort albums</td></tr>
+    <tr class="border-b border-gray-200"><td>Perfect-Bound (PUR)</td><td>80-200 pages</td><td>PUR adhesive spine; printable spine; smooth page turn</td><td>High school yearbooks, university department commemoratives</td></tr>
+    <tr><td>Hardcover</td><td>80-400 pages</td><td>2.5mm gray board + art paper wrap; foil-stamped cover; archival quality</td><td>University yearbooks, school anniversary keepsakes, alumni collections</td></tr>
   </tbody>
 </table>
 
-<h3>Printing & Finishing Processes</h3>
-<p>Our gift boxes are printed using high-quality offset printing with options for gold or silver foil stamping, spot UV, and embossing to add a touch of luxury. The surface finishes include matte, gloss, and soft-touch for a premium feel.</p>
-
-<h3>Size / Format / MOQ Table</h3>
-<table class="w-full border-collapse my-4 text-sm">
-  <thead>
-    <tr class="bg-[#2873F5] text-white">
-      <th class="p-2 text-left">Size (inches)</th>
-      <th class="p-2 text-center">MOQ</th>
-      <th class="p-2 text-center">Turnaround</th>
-      <th class="p-2 text-center">Unit Price</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">6 x 6 x 2</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$3.00</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font-medium">8 x 8 x 3</td><td class="p-2 text-center">200</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$4.50</td></tr>
-  </tbody>
-</table>
-
-<h3>Use Cases / Applications</h3>
-<p>Our magnetic closure gift boxes are perfect for:</p>
+<h3>Paper Material &amp; Color Options</h3>
+<p>Inner pages are typically printed on:</p>
 <ul>
-  <li>Luxury cosmetics packaging</li>
-  <li>High-end electronics packaging</li>
-  <li>Premium corporate gifts</li>
-  <li>Jewelry and watch boxes</li>
+  <li>157g matte art paper — most common, anti-glare, photo-friendly</li>
+  <li>200g glossy art paper — vibrant colors, premium feel</li>
+  <li>120g wood-free paper — economical, suitable for text-heavy yearbooks</li>
+  <li>200g specialty paper (pearl / metallic / textured) — commemorative editions</li>
+</ul>
+<p>Cover options include 250-300g coated art paper with matte or gloss lamination, or specialty boards with foil-stamped cover for premium editions.</p>
+
+<h3>Common Special Finishes</h3>
+<ul>
+  <li>Cover foil stamping (gold / silver / rose gold) — for school crest, graduation year, class name</li>
+  <li>Spot UV varnish (class emblem, memorial text, class photo) — adds dimensional contrast</li>
+  <li>Cover debossing / embossing (school motto, commemorative emblem)</li>
+  <li>Gilded page edges (hardcover premium upgrade, enhances collectible value)</li>
+  <li>Book jacket / dust cover (hardcover edition with belly band, archival protection)</li>
 </ul>
 
-<h3>Quality, Compliance, and Shipping</h3>
-<p>ZprintPro ensures top-quality printing with FSC-certified materials and ISO 9001 manufacturing standards. We offer DHL Express global shipping, delivering to the US, UK, Australia, and more in 2-4 days. Our 30-second AI quote system provides instant pricing without the need for sign-up.</p>
+<h3>Layout Workflow (From Photos to Print)</h3>
+<ol>
+  <li>Collect class / cohort group photos, individual portraits, activity photos (300dpi recommended)</li>
+  <li>Provide dedications (faculty, parents, advisors), school motto, class name, graduation year</li>
+  <li>Layout design (ZprintPro free service for cover and section templates)</li>
+  <li>Digital proofing — review &amp; confirm — production</li>
+  <li>Saddle-stitch / perfect-bound / hardcover — quality check — DHL global delivery</li>
+</ol>
+
+<h3>Global Clients Served</h3>
+<p>ZprintPro has produced graduation yearbooks and class commemoratives for secondary schools, universities, international schools, and tutoring center cohorts across the US, UK, Canada, Australia, Hong Kong, Taiwan, and Singapore. Minimum 50 copies, fast 7-10 working day turnaround, with optional express 5-day production (additional 30% rush fee). International orders ship via DHL Express with 2-4 day delivery from our Asia factory. Free design mockup, 100 MOQ tier for cohort reprints.</p>
 
 <h3>Best For — Industries &amp; Use Cases</h3>
 <p>This graduation yearbook printing service fits:</p>
 <ul>
   <li><strong>High schools &amp; universities</strong> — graduating class yearbooks, full 6-year / 4-year memory books</li>
-  <li><strong>Tutoring centers</strong> — DSE graduating class keepsakes, mock-exam study buddy mementos</li>
+  <li><strong>Tutoring centers</strong> — graduating class keepsakes, mock-exam study buddy mementos</li>
   <li><strong>International schools</strong> — IB / IGCSE class yearbooks, study-abroad prep cohort memories</li>
   <li><strong>PTAs &amp; parents</strong> — parent appreciation yearbooks, teacher-family collaborative editions</li>
   <li><strong>Alumni &amp; reunions</strong> — N-year anniversary commemoratives, cross-cohort combined editions, alumni gatherings</li>
 </ul>
-`,
-    longDescriptionJa: `磁気フラップギフトボックスをZprintProでご注文。片手で静かに開閉できるハードケース磁気蓋構造で、ラグジュアリーブランド・化粧品・宝飾・高級食品の贈答包装に最適なプレミアムパッケージです。磁石位置は左右2点または全面密封式から選択でき、開閉の儀式感と高級感を演出します。【構造】ハードケース（厚紙+グレー台紙）+磁石、サイズは5cm～40cmまでカスタマイズ対応。【表面仕上げ】特殊紙貼り（アート紙/クラフト紙/模様紙）、箔押し（金・銀・銅 + 特殊箔）、エンボス/デボス（凹凸ロゴ）、スポットUV（部分的光沢）、マット/光沢PP ラミネート。【内装オプション】サテン生地（黒/白/ベージュ/カスタム色）、EVAフォーム成形（化粧品・ボトル形状に合わせてカット）、ブリスタートレイ（精密機器・複数アイテム収納）。【利用シーン】化粧品・スキンケア、宝飾・アクセサリー、高級食品（贈答用）、精密機器・電子製品、周年記念品。【サンプル】本制作前に白サンプル（無印刷）とフルカラープロトタイプ（有償）の2種類をご用意。色・質感・磁石の開閉感など実物でご確認いただけます。【データ入稿】展開図データ形式（Illustrator/PDF）、ロゴ・テキスト位置を明確に指定。スタッフが入稿時に無料でデータチェックを行います。【納期】データ確定後、最短10営業日で出荷。形状カスタマイズや特殊加工を含む場合は14-21営業日。お急ぎの場合は特急プラン（有償）もございます。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<h3>Frequently Asked Questions (FAQ)</h3>
+<details class="my-2"><summary><strong>What is the minimum order for ZprintPro graduation yearbooks?</strong></summary><p>ZprintPro graduation yearbooks start at 50 copies. Saddle-stitch and perfect-bound editions receive tiered discounts at 100+ copies. We recommend 1-2 photos per page for optimal density; perfect-bound suits yearbooks under 200 pages, while hardcover or split volumes work best above 200 pages.</p></details>
+<details class="my-2"><summary><strong>What is the typical production lead time?</strong></summary><p>Standard orders complete in 7-10 working days, including design, proofing, printing, and binding. Express production compresses this to 5 working days (additional 30% rush fee). International orders ship via DHL Express with 2-4 day delivery worldwide. Get a 30-second AI quote instantly with no signup required.</p></details>
+<details class="my-2"><summary><strong>Can I provide only photos and have you handle layout?</strong></summary><p>Yes. ZprintPro offers free cover and section page templates. Clients only need to provide photos and text, and our design team delivers a digital proof within 1-2 working days. Complex custom layouts are quoted separately. Free design mockup included on all orders.</p></details>
+<details class="my-2"><summary><strong>Can you add foil stamping, spot UV, or other special finishes?</strong></summary><p>Yes. Foil stamping (school crest, graduation year) plus spot UV (class emblem, memorial text) is the most popular combination for graduation yearbooks, enhancing both tactile quality and collectible value. Per-page spot UV can be batch-ordered at volume pricing.</p></details>`,
+    longDescriptionJa: `<h3>3 種類製本方式の比較</h3>
+<p>卒業記念アルバムは主に 3 種類の製本方式を使用します。ページ数、予算、用途（展示用か保存用か）によって最適な選択が異なります。</p>
+<table>
+  <thead><tr><th>製本</th><th>ページ範囲</th><th>特徴</th><th>適用シーン</th></tr></thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>中綴じ</td><td>32-80 ページ</td><td>折って針金綴じ、コスト最安、フラット背で見開き写真向き</td><td>小学校卒業記念アルバム、予備校コホートアルバム</td></tr>
+    <tr class="border-b border-gray-200"><td>無線綴じ (PUR)</td><td>80-200 ページ</td><td>PUR 接着背、印刷可能背表紙、ページめくり快適</td><td>中学校・高校卒業記念、大学学部記念アルバム</td></tr>
+    <tr><td>上製本 (ハードカバー)</td><td>80-400 ページ</td><td>2.5mm 厚紙 + アート紙、箔押し表紙、長期保存品質</td><td>大学卒業記念アルバム、学校周年纪念、同窓会保存版</td></tr>
+  </tbody>
+</table>
 
+<h3>用紙材質とカラー選択</h3>
+<p>内頁は通常以下の用紙で印刷：</p>
+<ul>
+  <li>157g マットアート紙 — 最も一般的、反射防止、写真向き</li>
+  <li>200g 光沢アート紙 — 鮮やかな色彩、プレミアム感</li>
+  <li>120g 上質紙 — 経済的、文字中心の卒業記念冊向き</li>
+  <li>200g 特殊紙 (パール / メタリック / テクスチャ) — 記念版向け</li>
+</ul>
+<p>表紙オプションは 250-300g コート紙にマット / 光沢ラミネート、または特殊ボードに箔押し表紙（プレミアム版）。</p>
+
+<h3>一般的特殊加工</h3>
+<ul>
+  <li>表紙箔押し (金 / 銀 / ピンクゴールド) — 学校紋章、卒業年度、クラス名</li>
+  <li>スポット UV (クラスエンブレム、記念文字、クラス写真) — 立体感あるコントラスト</li>
+  <li>表紙エンボス / デボス (校訓、記念エンブレム)</li>
+  <li>三方金箔 (ハードカバー プレミアム仕様、收藏価値向上)</li>
+  <li>ブックジャケット / カバー (ハードカバー版 + 帯、保護用)</li>
+</ul>
+
+<h3>レイアウトフロー (写真から印刷まで)</h3>
+<ol>
+  <li>クラス / コホート集合写真、個人写真、活动写真を収集 (300dpi 推奨)</li>
+  <li>題辞 (先生、保護者、担任)、校訓、クラス名、卒業年度を提供</li>
+  <li>レイアウトデザイン (智印雲の無料サービスで表紙とセクション テンプレート)</li>
+  <li>デジタル校正 — 確認 — 印刷</li>
+  <li>中綴じ / 無線綴じ / 上製本 — 品質検査 — DHL 国際配送</li>
+</ol>
+
+<h3>サービス提供実績</h3>
+<p>智印雲は中学校、高校、大学、インターナショナルスクール、予備校コホート向けに卒業記念アルバムとクラス纪念品を製作してまいりました。東京・大阪・名古屋・福岡など日本全国、ならびに米国・欧州・オーストラリア向け、最小 50 部から、7-10 営業日の迅速対応。特急 5 日制作（追加 30%）も対応。国際注文は DHL Express でアジア工場から 2-4 日配送。無料デザインモックアップ、100 冊〜の段階割引対応。</p>
 
 <h3>適用業界・利用シーン</h3>
-<p>本製品は以下の業界・シーンに適しています：</p>
+<p>本サービスは以下の業界・シーンに適しています：</p>
 <ul>
   <li><strong>中学校・高校・大学</strong> — 卒業記念アルバム、6 年制 / 4 年制の完全な思い出</li>
   <li><strong>予備校・塾</strong> — 受験卒業生記念アルバム、模擬試験仲間記念</li>
@@ -17464,13 +17497,12 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>PTA・保護者会</strong> — 保護者感謝記念アルバム、師生共同編集記念</li>
   <li><strong>同窓会・クラス会</strong> — 卒業 N 周年記念、跨期合同号、同窓再会</li>
 </ul>
+
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、名刺・封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
-<details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
-<details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
-`,
+<details class="my-2"><summary><strong>智印雲の卒業記念アルバムの最低注文数量は？</strong></summary><p>智印雲の卒業記念アルバムは 50 部から対応。中綴じと無線綴じ版は 100 部以上で段階割引。1 ページあたり 1-2 枚の写真が最適密度。200 ページ以内は無線綴じ、200 ページ以上は上製本または分冊を推奨。</p></details>
+<details class="my-2"><summary><strong>制作納期は？特急対応は最短何日？</strong></summary><p>標準注文は 7-10 営業日で完成（デザイン + 校正 + 印刷 + 製本込み）。特急制作は 5 営業日に短縮可能（追加 30%）。国際注文は DHL Express で世界中 2-4 日配送。30 秒 AI 見積もりで即時価格取得、登録不要。</p></details>
+<details class="my-2"><summary><strong>写真のみ提供してレイアウトをお願いできますか？</strong></summary><p>はい。智印雲は表紙とセクションページのテンプレートを無料で提供。クライアントは写真とテキストを提供するだけで、デザイン チームが 1-2 営業日以内にデジタル校正を納品。複雑なカスタム レイアウトは別途見積もり。全注文無料デザインモックアップ付き。</p></details>
+<details class="my-2"><summary><strong>箔押し、スポット UV などの特殊加工を追加できますか？</strong></summary><p>はい。箔押し (学校紋章、卒業年度) とスポット UV (クラスエンブレム、記念文字) は卒業記念アルバムで最も人気の高い組み合わせで、触覚品質と收藏価値を高めます。ページ単位のスポット UV は大量注文でバッチ価格対応可。</p></details>`,
     features: [
       '磁吸翻蓋，單手開合體驗佳',
       '硬盒結構＋觸感覆膜可選',
