@@ -100,6 +100,53 @@ export function setFXProvider(provider: FXRateProvider) {
   activeProvider = provider;
 }
 
+/**
+ * open.er-api.com provider - free, no API key needed
+ * API endpoint: https://open.er-api.com/v6/latest/HKD
+ * Response shape: { result: "success", base_code: "HKD", time_last_update_utc: "...", rates: { USD: 0.127555, JPY: 20.65, ... } }
+ *   - rates.X means "1 HKD = X CCY"
+ *   - STATIC_LIVE_RATES_HKD convention: "1 CCY = X HKD"
+ *   - So we invert: 1 USD = 1/rates.USD HKD
+ * Refresh: API updates every 1h (per their docs)
+ * 2026-07-13 Step 2: 接入实时汇率, 替代硬编码 STATIC_LIVE_RATES_HKD
+ */
+export const OpenERAPIProvider: FXRateProvider = {
+  name: 'open-er-api',
+  lastUpdated: '',
+  async fetchLiveRates() {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 5000);
+    try {
+      const res = await fetch('https://open.er-api.com/v6/latest/HKD', {
+        signal: controller.signal,
+        headers: { 'User-Agent': 'ZprintPro/1.0 (+https://zprintpro.com)' },
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const data = await res.json();
+      if (data.result !== 'success' || !data.rates) {
+        throw new Error(`API error: ${data['error-type'] || 'unknown'}`);
+      }
+      const r = data.rates;
+      this.lastUpdated = data.time_last_update_utc_unix
+        ? new Date(data.time_last_update_utc_unix * 1000).toISOString()
+        : new Date().toISOString();
+      return {
+        HKD: 1.0,
+        USD: 1 / r.USD,
+        JPY: 1 / r.JPY,
+        GBP: r.GBP ? 1 / r.GBP : STATIC_LIVE_RATES_HKD.GBP,
+        AUD: r.AUD ? 1 / r.AUD : STATIC_LIVE_RATES_HKD.AUD,
+        CAD: r.CAD ? 1 / r.CAD : STATIC_LIVE_RATES_HKD.CAD,
+        SGD: r.SGD ? 1 / r.SGD : STATIC_LIVE_RATES_HKD.SGD,
+        NZD: r.NZD ? 1 / r.NZD : STATIC_LIVE_RATES_HKD.NZD,
+        CNY: r.CNY ? 1 / r.CNY : STATIC_LIVE_RATES_HKD.CNY,
+      };
+    } finally {
+      clearTimeout(timer);
+    }
+  },
+};
+
 /** 动态拉取 (带 1 小时缓存) */
 let rateCache: { rates: Record<Currency, number>; cachedAt: number } | null = null;
 const CACHE_TTL_MS = 60 * 60 * 1000; // 1 小时
@@ -123,6 +170,29 @@ export async function getLiveRatesHKD(): Promise<Record<Currency, number>> {
 export function getLiveRatesHKDLocal(): Record<Currency, number> {
   if (rateCache) return rateCache.rates;
   return STATIC_LIVE_RATES_HKD;
+}
+
+/**
+ * Bootstrap - 启动时调用一次, 把 activeProvider 切到 OpenERAPIProvider 并预热缓存
+ * 失败时静默回退到 STATIC_LIVE_RATES_HKD (不影响生产)
+ * 2026-07-13 Step 2: 通过 src/instrumentation.ts 在 Next.js 启动时调用
+ */
+let bootstrapDone = false;
+export async function bootstrapLiveFxRates(): Promise<void> {
+  if (bootstrapDone) return;
+  bootstrapDone = true;
+  try {
+    setFXProvider(OpenERAPIProvider);
+    const rates = await getLiveRatesHKD();
+    console.log('[FX] live rates bootstrapped via open.er-api.com:', {
+      USD: rates.USD?.toFixed(4),
+      JPY: rates.JPY?.toFixed(4),
+      GBP: rates.GBP?.toFixed(4),
+      timestamp: OpenERAPIProvider.lastUpdated,
+    });
+  } catch (e) {
+    console.error('[FX] bootstrap failed, falling back to static rates:', e instanceof Error ? e.message : e);
+  }
 }
 
 export interface FXQuote {

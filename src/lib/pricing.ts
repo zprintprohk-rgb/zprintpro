@@ -13,6 +13,35 @@
  */
 
 import { Locale } from './seo';
+import { getLiveRatesHKDLocal } from './quote-engine/fx';
+
+// 2026-07-13 Step 2: 实时汇率 (with 静态 fallback)
+// pricing.ts 历史用硬编码汇率 (USD 0.128, JPY 19.5, GBP 0.101, AUD 0.195).
+// 实际 open.er-api.com 拉到的汇率会差 1-5%, 用实时汇率精度更高.
+// 首次启动 bootstrapLiveFxRates() 会预热缓存; 未命中缓存时回退硬编码值.
+const LIVE_FX_RATES_FALLBACK = {
+  HKD: 1,
+  USD: 0.128,
+  GBP: 0.101,
+  AUD: 0.195,
+  JPY: 19.5,
+} as const;
+
+function getLiveFxRates(): Record<keyof typeof LIVE_FX_RATES_FALLBACK, number> {
+  try {
+    const live = getLiveRatesHKDLocal();
+    // live 是 "1 CCY = X HKD" 形式, 我们要 "1 HKD = X CCY", 需要 invert
+    return {
+      HKD: 1,
+      USD: live.USD ? 1 / live.USD : LIVE_FX_RATES_FALLBACK.USD,
+      JPY: live.JPY ? 1 / live.JPY : LIVE_FX_RATES_FALLBACK.JPY,
+      GBP: live.GBP ? 1 / live.GBP : LIVE_FX_RATES_FALLBACK.GBP,
+      AUD: live.AUD ? 1 / live.AUD : LIVE_FX_RATES_FALLBACK.AUD,
+    };
+  } catch {
+    return { ...LIVE_FX_RATES_FALLBACK };
+  }
+}
 
 // ============================================================================
 // 2026-06-14 Phase B 修复 P0-5：JA locale JPY 结算强制化
@@ -76,13 +105,10 @@ const CURRENCY_SYMBOLS: Record<'HKD' | 'USD' | 'GBP' | 'AUD' | 'JPY', string> = 
 /**
  * 将基础 HKD 价格转换成目标币种（按汇率）。
  * 注意：与 convertCurrency 不同，本函数允许外部传任意目标币种，封装层使用。
+ * 2026-07-13 Step 2: 用 getLiveFxRates() 取代硬编码 (USD 0.128, JPY 19.5).
  */
 export function convertHKDTo(hkdAmount: number, target: 'HKD' | 'USD' | 'JPY'): number {
-  const rates: Record<'HKD' | 'USD' | 'JPY', number> = {
-    HKD: 1,
-    USD: 0.128,
-    JPY: 19.5,
-  };
+  const rates = getLiveFxRates();
   if (target === 'JPY') {
     return Math.round(hkdAmount * rates.JPY);
   }
@@ -808,14 +834,9 @@ export function calculatePrice(data: QuotationFormData): PriceBreakdown {
 }
 
 // 货币转换（显示用，结算用HKD）
+// 2026-07-13 Step 2: 用 getLiveFxRates() 取代硬编码
 export function convertCurrency(hkdAmount: number, targetCurrency: 'HKD' | 'USD' | 'GBP' | 'AUD' | 'JPY'): number {
-  const rates: Record<string, number> = {
-    'HKD': 1,
-    'USD': 0.128,
-    'GBP': 0.101,
-    'AUD': 0.195,
-    'JPY': 19.5,
-  };
+  const rates = getLiveFxRates();
   // JPY 用整数（无小数币种）；其他币种保留 2 位小数
   if (targetCurrency === 'JPY') {
     return Math.round(hkdAmount * rates.JPY);
