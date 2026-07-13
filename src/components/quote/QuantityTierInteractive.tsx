@@ -21,6 +21,7 @@
 
 import { useMemo } from 'react';
 import { Locale } from '@/lib/seo';
+import { getLocaleBasePriceAmount } from '@/lib/pricing';
 import { useProductQuote } from './ProductQuoteProvider';
 
 interface QuantityTierInteractiveProps {
@@ -60,7 +61,8 @@ export function QuantityTierInteractive({ locale }: QuantityTierInteractiveProps
   );
 
   const displayTiers = tiers.slice(0, 5);
-  const fullPrice = product.basePrice;
+  // 2026-07-13 Step 1.4: per-locale basePrice (USD for en, JPY for ja, HKD for zh-hk)
+  const fullPrice = getLocaleBasePriceAmount(product, locale);
   const maxDiscount = Math.max(...tiers.map(t => 1 - t.discount));
 
   // 文案

@@ -12,7 +12,7 @@ import { useRouter } from 'next/navigation';
 import { Product } from '@/data/products';
 import { Locale } from '@/lib/seo';
 import { getProductTitle } from '@/data/products';
-import { convertPriceRangeString } from '@/lib/pricing';
+import { convertPriceRangeString, getLocaleBasePrice, getLocaleBasePriceAmount } from '@/lib/pricing';
 import { getProductMainImage } from '@/lib/product-image';
 import { useCart } from '@/lib/cart-context';
 import { translateVariableLabel } from '@/lib/variable-i18n';
@@ -163,6 +163,10 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
   const inCart = items.find((i) => i.sku_code === product.sku_code);
   const inCartQty = inCart?.quantity || 0;
 
+  // 2026-07-13 Step 1.5: per-locale basePrice (USD for en, JPY for ja, HKD for zh-hk)
+  const localeBasePrice = getLocaleBasePriceAmount(product, locale);
+  const localeCurrency = getLocaleBasePrice(product, locale);
+
   // 计算价格
   const calculatedPrice = useMemo(() => {
     const sizeMultiplier = product.variables?.sizes?.find(s => s.value === config.size)?.multiplier || 1;
@@ -172,16 +176,25 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
 
     const minQty = product.minQuantity || 100;
     // basePrice 是单价，materialSurcharge 是每批(minQuantity)附加费，需转换为单价
+    // 2026-07-13: basePrice 用 locale-aware 值 (USD/JPY/HKD)
     const surchargePerUnit = minQty > 0 ? materialSurcharge / minQty : materialSurcharge;
     const finishingPerUnit = minQty > 0 ? finishingSurcharge / minQty : finishingSurcharge;
-    const unitPrice = (product.basePrice + surchargePerUnit + finishingPerUnit) * sizeMultiplier * quantityDiscount;
+    const unitPrice = (localeBasePrice + surchargePerUnit + finishingPerUnit) * sizeMultiplier * quantityDiscount;
     const totalPrice = unitPrice * config.quantity;
 
+    // JPY 用整数 (无小数币种); 其他币种保留 2 位小数
+    const roundFn = locale === 'ja' ? Math.round : (n: number) => Math.round(n * 100) / 100;
     return {
-      unitPrice: Math.round(unitPrice * 100) / 100,
-      totalPrice: Math.round(totalPrice * 100) / 100,
+      unitPrice: roundFn(unitPrice),
+      totalPrice: roundFn(totalPrice),
     };
-  }, [config, product]);
+  }, [config, product, locale, localeBasePrice]);
+
+  // 格式化金额 (JPY 整数, 其他币种 2 位小数)
+  const formatAmount = (amount: number): string => {
+    if (locale === 'ja') return Math.round(amount).toLocaleString();
+    return (Math.round(amount * 100) / 100).toFixed(2);
+  };
 
   const handleWhatsApp = () => {
     const link = generateWhatsAppLink(locale, {
@@ -304,7 +317,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
                   </div>
                   {material.surcharge > 0 && (
                     <span className="text-xs text-gray-400">
-                      +HK${Math.round((material.surcharge / (product.minQuantity || 100)) * 100) / 100}/{locale === 'zh-hk' ? '張' : locale === 'en' ? 'pc' : '枚'}
+                      +{localeCurrency.symbol}{formatAmount(material.surcharge / (product.minQuantity || 100))}/{locale === 'zh-hk' ? '張' : locale === 'en' ? 'pc' : '枚'}
                     </span>
                   )}
                 </button>
@@ -343,7 +356,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
                 </div>
                 {finishing.surcharge > 0 && (
                   <span className="text-xs text-gray-400">
-                    +HK${Math.round((finishing.surcharge / (product.minQuantity || 100)) * 100) / 100}/{locale === 'zh-hk' ? '張' : locale === 'en' ? 'pc' : '枚'}
+                    +{localeCurrency.symbol}{formatAmount(finishing.surcharge / (product.minQuantity || 100))}/{locale === 'zh-hk' ? '張' : locale === 'en' ? 'pc' : '枚'}
                   </span>
                 )}
               </button>
@@ -435,15 +448,15 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-gray-500">{t.subtotal}</span>
-                  <span className="font-medium text-gray-900">HK${(product.basePrice * config.quantity).toFixed(2)}</span>
+                  <span className="font-medium text-gray-900">{localeCurrency.symbol}{formatAmount(localeBasePrice * config.quantity)}</span>
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-gray-500">{t.processing}</span>
-                  <span className="font-medium text-gray-900">HK${(calculatedPrice.totalPrice - product.basePrice * config.quantity).toFixed(2)}</span>
+                  <span className="font-medium text-gray-900">{localeCurrency.symbol}{formatAmount(calculatedPrice.totalPrice - localeBasePrice * config.quantity)}</span>
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-gray-500">{t.designFee}</span>
-                  <span className="font-medium text-gray-900">HK$0.00</span>
+                  <span className="font-medium text-gray-900">{localeCurrency.symbol}0{locale === 'ja' ? '' : '.00'}</span>
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-gray-500">{t.shippingLabel}</span>
@@ -456,7 +469,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
                       key={calculatedPrice.totalPrice}
                       className="text-xl font-bold text-[#F87314] tabular-nums transition-all duration-300 ease-out animate-price-pop"
                     >
-                      HK${calculatedPrice.totalPrice.toLocaleString()}
+                      {localeCurrency.symbol}{locale === 'ja' ? Math.round(calculatedPrice.totalPrice).toLocaleString() : calculatedPrice.totalPrice.toLocaleString()}
                     </span>
                   </div>
                 </div>
@@ -536,15 +549,15 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-gray-500">{t.subtotal}</span>
-                  <span className="font-medium text-gray-900">HK${(product.basePrice * config.quantity).toFixed(2)}</span>
+                  <span className="font-medium text-gray-900">{localeCurrency.symbol}{formatAmount(localeBasePrice * config.quantity)}</span>
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-gray-500">{t.processing}</span>
-                  <span className="font-medium text-gray-900">HK${(calculatedPrice.totalPrice - product.basePrice * config.quantity).toFixed(2)}</span>
+                  <span className="font-medium text-gray-900">{localeCurrency.symbol}{formatAmount(calculatedPrice.totalPrice - localeBasePrice * config.quantity)}</span>
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-gray-500">{t.designFee}</span>
-                  <span className="font-medium text-gray-900">HK$0.00</span>
+                  <span className="font-medium text-gray-900">{localeCurrency.symbol}0{locale === 'ja' ? '' : '.00'}</span>
                 </div>
                 <div className="flex justify-between text-sm">
                   <span className="text-gray-500">{t.shippingLabel}</span>
@@ -557,7 +570,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
                       key={calculatedPrice.totalPrice}
                       className="text-xl font-bold text-[#F87314] tabular-nums transition-all duration-300 ease-out animate-price-pop"
                     >
-                      HK${calculatedPrice.totalPrice.toLocaleString()}
+                      {localeCurrency.symbol}{locale === 'ja' ? Math.round(calculatedPrice.totalPrice).toLocaleString() : calculatedPrice.totalPrice.toLocaleString()}
                     </span>
                   </div>
                 </div>
