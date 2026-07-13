@@ -14268,8 +14268,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'catalog-printing',
     category: 'books',
     category_slug: 'books',
-    name: '畫冊印刷', nameEn: 'Catalog Printing', nameJa: 'カタログ印刷', title_zh: '畫冊印刷',
-    description: '高級畫冊，色彩還原度高。適合產品目錄、企業年報、藝術作品集。', descriptionEn: 'Premium catalogs with high color accuracy. Perfect for product catalogs, annual reports.', descriptionJa: '高級カタログ、高い色再現性。製品カタログ、年次報告書に最適。', description_zh: '高級畫冊，色彩還原度高。適合產品目錄、企業年報、藝術作品集。',
+    name: '香港畫冊印刷 — 攝影集 / 展覽圖錄 / 產品型錄 / 藝術作品集定制', nameEn: 'Custom Book Printing for Catalogs, Photo Books & Exhibition Lookbooks', nameJa: 'カタログ印刷 — 写真集・作品集・プロダクトカタログ', title_zh: '香港畫冊印刷 — 攝影集 / 展覽圖錄 / 產品型錄 / 藝術作品集定制',
+    description: '香港畫冊/攝影集/產品型錄印刷服務，色彩還原度達 95%+。適合藝術展覽圖錄、品牌作品集、攝影集、企業年報、珍藏紀念冊。50 本起印，48 小時香港本地速遞。', descriptionEn: 'Catalog, photo book & exhibition lookbook printing with 95%+ color accuracy. Ideal for art exhibition lookbooks, brand portfolios, photography books, annual reports, keepsake albums. 100 MOQ, free design mockup, 30-second AI quote.', descriptionJa: 'カタログ・写真集・作品集印刷サービス、色再現性95%+。美術展作品集、ブランドポートフォリオ、写真集、企業年報、記念アルバムに最適。100冊〜、無料デザインモックアップ、30秒 AI 見積もり。', description_zh: '香港畫冊/攝影集/產品型錄印刷服務，色彩還原度達 95%+。適合藝術展覽圖錄、品牌作品集、攝影集、企業年報、珍藏紀念冊。50 本起印，48 小時香港本地速遞。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -14438,8 +14438,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'saddle-stitch-booklets',
     category: 'books',
     category_slug: 'books',
-    name: '騎馬釘小冊子', nameEn: 'Saddle Stitch Booklets', nameJa: '中綴じ冊子', title_zh: '騎馬釘小冊子',
-    description: '經濟裝訂方式，適合頁數較少的冊子。產品說明書、活動手冊首選。', descriptionEn: 'Economical binding method, perfect for booklets with fewer pages.', descriptionJa: '経済的な製本方法、ページ数の少ない冊子に最適。', description_zh: '經濟裝訂方式，適合頁數較少的冊子。產品說明書、活動手冊首選。',
+    name: '香港騎馬釘小冊子 — 企業文化手冊 / 活動場刊 / 文學作品集 / 社團特刊', nameEn: 'Saddle-Stitch Booklets for Corporate Brochures, Event Programs & Literary Collections', nameJa: '中綴じ冊子 — 企業文化手册・イベント場刊・文學作品集・社団特刊', title_zh: '香港騎馬釘小冊子 — 企業文化手冊 / 活動場刊 / 文學作品集 / 社團特刊',
+    description: '騎馬釘小冊子印刷，企業文化手冊、活動場刊、文學作品集、社團特刊、培訓手冊首選。8-64 頁可平攤 180°翻閱，紙張厚度均勻不反光。', descriptionEn: 'Saddle-stitch booklet printing for corporate brochures, event programs, literary collections, club publications, training manuals. 8-64 pages, lays flat at 180°, uniform paper weight, non-glare finish.', descriptionJa: '中綴じ冊子印刷、企業文化手册、イベント場刊、文學作品集、サークル誌、研修マニュアルに最適。8-64頁、180°フラット開き、均一紙厚、反射防止仕上げ。', description_zh: '騎馬釘小冊子印刷，企業文化手冊、活動場刊、文學作品集、社團特刊、培訓手冊首選。8-64 頁可平攤 180°翻閱。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -14632,8 +14632,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'perfect-bound-books',
     category: 'books',
     category_slug: 'books',
-    name: '無線膠裝書籍', nameEn: 'Perfect Bound Books', nameJa: '無線綴じ本', title_zh: '無線膠裝書籍',
-    description: '平整書脊，可印刷書名。適合頁數較多的書籍、雜誌。', descriptionEn: 'Flat spine, can print book title. Perfect for books and magazines with more pages.', descriptionJa: '平らな背表紙、書名を印刷可能。ページ数の多い本や雑誌に最適。', description_zh: '平整書脊，可印刷書名。適合頁數較多的書籍、雜誌。',
+    name: '香港無線膠裝書籍 — 學術論文集 / 年度報告 / CSR 社會責任報告 / 文學作品集', nameEn: 'Perfect-Bound Books for Academic Papers, Annual Reports & CSR Publications', nameJa: '無線綴じ書籍 — 學術論文集・年次報告書・CSR レポート・文學作品集', title_zh: '香港無線膠裝書籍 — 學術論文集 / 年度報告 / CSR 社會責任報告 / 文學作品集',
+    description: '無線膠裝書籍印刷，學術論文集、年度報告、CSR 社會責任報告、文學作品集首選。48-400 頁，書脊平整牢固，可印書名/條碼/ISBN。', descriptionEn: 'Perfect-bound book printing for academic papers, annual reports, CSR reports, literary collections. 48-400 pages, sturdy flat spine, can print title/barcode/ISBN for archival quality.', descriptionJa: '無線綴じ書籍印刷、學術論文集、年次報告書、CSR レポート、文學作品集に最適。48-400頁、堅牢な背表紙、書名・バーコード・ISBN印刷対応、長期保存可。', description_zh: '無線膠裝書籍印刷，學術論文集、年度報告、CSR 社會責任報告、文學作品集首選。48-400 頁，書脊平整牢固，可印書名/條碼/ISBN。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -14819,8 +14819,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'hardcover-books',
     category: 'books',
     category_slug: 'books',
-    name: '精裝書籍', nameEn: 'Hardcover Books', nameJa: '上製本', title_zh: '精裝書籍',
-    description: '硬殼精裝，高檔耐用。適合珍藏版書籍、企業年鑑。', descriptionEn: 'Hardcover binding, luxurious and durable. Perfect for collector\'s editions.', descriptionJa: '上製本装丁、豪華で耐久性あり。愛蔵版、企業年鑑に最適。', description_zh: '硬殼精裝，高檔耐用。適合珍藏版書籍、企業年鑑。',
+    name: '香港精裝書籍 — 婚慶紀念書 / 家族史冊 / 畢業紀念冊 / 校友會刊', nameEn: 'Hardcover Books for Wedding Albums, Family Histories & Graduation Yearbooks', nameJa: 'ハードカバー書籍 — 結婚記念アルバム・家族史・卒業記念アルバム・同窓会誌', title_zh: '香港精裝書籍 — 婚慶紀念書 / 家族史冊 / 畢業紀念冊 / 校友會刊',
+    description: '精裝書籍印刷，婚慶紀念書、家族史冊、畢業紀念冊、校史特刊首選。2.5mm 灰紙板封面硬挺高檔，可加燙金書名與絲帶書籤。', descriptionEn: 'Hardcover book printing for wedding albums, family histories, graduation yearbooks, school anniversary publications. 2.5mm gray board cover with foil-stamped titles and ribbon bookmarks.', descriptionJa: 'ハードカバー書籍印刷、結婚記念アルバム、家族史、卒業記念アルバム、校史特刊に最適。2.5mm 厚紙ボード表紙、箔押しタイトルとリボン栞付き。', description_zh: '精裝書籍印刷，婚慶紀念書、家族史冊、畢業紀念冊、校史特刊首選。2.5mm 灰紙板封面硬挺高檔，可加燙金書名與絲帶書籤。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -15002,8 +15002,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'spiral-notebooks',
     category: 'books',
     category_slug: 'books',
-    name: '線圈筆記本', nameEn: 'Spiral Notebooks', nameJa: 'リングノート', title_zh: '線圈筆記本',
-    description: '線圈裝訂，可180度平攤。適合筆記本、工作手冊。', descriptionEn: 'Spiral binding, can lay flat at 180 degrees. Perfect for notebooks, workbooks.', descriptionJa: 'スパイラル製本、180度に開く。ノート、ワークブックに最適。', description_zh: '線圈裝訂，可180度平攤。適合筆記本、工作手冊。',
+    name: '香港線圈筆記本 — 企業禮品 / 補習社教材 / 活頁筆記本 / 校園紀念本', nameEn: 'Spiral Notebooks for Corporate Gifts, Training Materials & School Mementos', nameJa: 'スパイラルノート — 企業ギフト・研修教材・スクール記念・リングノート', title_zh: '香港線圈筆記本 — 企業禮品 / 補習社教材 / 活頁筆記本 / 校園紀念本',
+    description: '線圈筆記本印刷，企業禮品、補習社教材、培訓手冊、校園紀念本首選。金屬/塑料 YO 圈可拆卸重組，100 本起印。', descriptionEn: 'Spiral notebook printing for corporate gifts, training materials, school mementos, classroom supplies. Metal/plastic YO rings, pages fully removable, 100 MOQ.', descriptionJa: 'スパイラルノート印刷、企業ギフト、研修教材、學校記念品、教材用に最適。金属・プラスチック YO リングでページ交換可能、100冊〜。', description_zh: '線圈筆記本印刷，企業禮品、補習社教材、培訓手冊、校園紀念本首選。金屬/塑料 YO 圈可拆卸重組，100 本起印。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -15927,8 +15927,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'exercise-books',
     category: 'educational',
     category_slug: 'educational',
-    name: '作業簿印刷', nameEn: 'Exercise Books', nameJa: 'ワークブック印刷', title_zh: '作業簿印刷',
-    description: '學校作業簿，可定制封面和內頁格式。適合中小學、補習社。', descriptionEn: 'School exercise books, customizable cover and inner page formats. Perfect for schools.', descriptionJa: '学校のワークブック、カスタマイズ可能な表紙と内側ページ形式。小中校、塾に最適。', description_zh: '學校作業簿，可定制封面和內頁格式。適合中小學、補習社。',
+    name: '香港練習簿印刷 — 補習社教材 / K12 練習簿 / 學年作業本 / 校園訂製', nameEn: 'Exercise Book Printing for Tutoring Centers, K12 Schools & Custom School Programs', nameJa: '練習帳印刷 — 補習校教材・K12 練習帳・学年内ノート・學校オーダー', title_zh: '香港練習簿印刷 — 補習社教材 / K12 練習簿 / 學年作業本 / 校園訂製',
+    description: '練習簿印刷服務，補習社教材、K12 練習簿、學年作業本、校園訂製首選。書紙/道林紙輕薄不反光，內頁可加方格/橫線/空白。', descriptionEn: 'Exercise book printing for tutoring centers, K12 schools, grade-level workbooks, custom school programs. Bookwood/woodfree paper, lightweight non-glare, inner pages available in grid/line/blank.', descriptionJa: '練習帳印刷サービス、補習校教材、K12 練習帳、学年別教材、學校オリジナル製作に最適。上質紙・薄手で反射防止、内側罫線（マス・横罫・無地）選択可。', description_zh: '練習簿印刷服務，補習社教材、K12 練習簿、學年作業本、校園訂製首選。書紙/道林紙輕薄不反光。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -16097,8 +16097,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'certificates',
     category: 'educational',
     category_slug: 'educational',
-    name: '證書印刷', nameEn: 'Certificates', nameJa: '賞状印刷', title_zh: '證書印刷',
-    description: '精美證書，配合燙金、壓紋等工藝。畢業證書、獎狀、資格證明。', descriptionEn: 'Exquisite certificates with foil stamping, embossing and other processes.', descriptionJa: '精巧な賞状、箔押し・エンボスなどの加工付き。卒業証書、賞状、資格証明。', description_zh: '精美證書，配合燙金、壓紋等工藝。畢業證書、獎狀、資格證明。',
+    name: '香港證書印刷 — 畢業證書 / 獎狀 / 校友會證書 / 培訓證書', nameEn: 'Certificate Printing for Diplomas, Awards & Training Programs', nameJa: '証明書印刷 — 卒業証書・賞状・同窓会証書・研修証明書', title_zh: '香港證書印刷 — 畢業證書 / 獎狀 / 校友會證書 / 培訓證書',
+    description: '證書印刷服務，畢業證書、獎狀、校友會證書、培訓證書、榮譽證書首選。封面可加燙金/壓凹/UV 局部工藝。', descriptionEn: 'Certificate printing service for diplomas, awards, alumni certificates, training certificates, honor certificates. Foil stamping, embossing & spot UV available.', descriptionJa: '証明書印刷サービス、卒業証書、賞状、同窓会証書、研修証明書、栄誉証明書に最適。箔押し・エンボス・スポット UV 加工対応。', description_zh: '證書印刷服務，畢業證書、獎狀、校友會證書、培訓證書、榮譽證書首選。封面可加燙金/壓凹/UV 局部工藝。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -16291,8 +16291,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'school-flyers',
     category: 'educational',
     category_slug: 'educational',
-    name: '學校單張', nameEn: 'School Flyers', nameJa: '学校チラシ', title_zh: '學校單張',
-    description: '學校通告、活動宣傳單張。經濟實惠，大量印刷。', descriptionEn: 'School notices, event promotional flyers. Economical, bulk printing.', descriptionJa: '学校の通知、イベント宣伝チラシ。経済的、大量印刷。', description_zh: '學校通告、活動宣傳單張。經濟實惠，大量印刷。',
+    name: '香港學校單張 — 校刊 / 通告 / 校史特刊 / 校友會刊', nameEn: 'School Flyers for Newsletters, Announcements & Alumni Publications', nameJa: '学校フライヤー — 学校新聞・お知らせ・校史特刊・同窓会誌', title_zh: '香港學校單張 — 校刊 / 通告 / 校史特刊 / 校友會刊',
+    description: '學校單張印刷，校刊、通告、校史特刊、校友會刊、活動宣傳單張首選。100 張起印，48 小時香港本地速遞。', descriptionEn: 'School flyer printing for newsletters, announcements, school anniversary publications, alumni magazines, event flyers. 100 MOQ, 48-hour Hong Kong local delivery.', descriptionJa: '学校フライヤー印刷、学校新聞、お知らせ、校史特刊、同窓会誌、イベント案内に最適。100枚〜、48時間香港本地速達対応。', description_zh: '學校單張印刷，校刊、通告、校史特刊、校友會刊、活動宣傳單張首選。100 張起印，48 小時香港本地速遞。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -16484,8 +16484,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'textbooks',
     category: 'educational',
     category_slug: 'educational',
-    name: '教科書印刷', nameEn: 'Textbooks', nameJa: '教科書印刷', title_zh: '教科書印刷',
-    description: '教科書印刷 50 本起, 道林紙・ISBN 支援, 香港本地智印雲 ZprintPro 教育印刷專家。', descriptionEn: 'Textbook printing from 50 copies. Wood-free paper, ISBN support, Hong Kong-based ZprintPro education printing expert.', descriptionJa: '教科書印刷 50冊から対応。道林紙・無線綴じ・ISBN 取得サポート。深圳自社工場の智印雲（ZprintPro）。', description_zh: '教科書印刷 50 本起, 道林紙・ISBN 支援, 香港本地智印雲 ZprintPro 教育印刷專家。',
+    name: '香港教科書印刷 — K12 教科書 / 補習社教材 / 學年教材 / 培訓手冊', nameEn: 'Textbook Printing for K12 Schools, Tutoring Centers & Training Manuals', nameJa: '教科書印刷 — K12 教科書・補習校教材・学年内教材・研修マニュアル', title_zh: '香港教科書印刷 — K12 教科書 / 補習社教材 / 學年教材 / 培訓手冊',
+    description: '教科書印刷服務，K12 教科書、補習社教材、學年教材、培訓手冊、練習題庫首選。書紙/道林紙護眼，可加 ISBN/條碼。', descriptionEn: 'Textbook printing service for K12 schools, tutoring centers, grade-level curricula, training manuals, exercise workbooks. Wood-free eye-friendly paper, ISBN/barcode support available.', descriptionJa: '教科書印刷サービス、K12 教科書、補習校教材、学年別教材、研修マニュアル、問題集に最適。目に優しい上質紙、ISBN・バーコード対応。', description_zh: '教科書印刷服務，K12 教科書、補習社教材、學年教材、培訓手冊、練習題庫首選。書紙/道林紙護眼。',
     longDescription: `<h3>紙張材質對比</h3>
 <p>教科書常用 3 種紙材，分別適用不同預算、頁數與閱讀體驗。智印雲 ZprintPro 所有紙張均通過 FSC 森林管理委員會認證。智印雲 ZprintPro 教科書印刷服務亦可依學校 ESG 採購指引，彈性調整紙材結構：</p>
 <table>
@@ -16954,8 +16954,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'graduation-yearbook',
     category: 'educational',
     category_slug: 'educational',
-    name: '畢業紀念冊', nameEn: 'Graduation Yearbook', nameJa: '卒業記念アルバム', title_zh: '畢業紀念冊訂製 · 香港教育培訓年度紀念冊定制 | 智印雲 ZprintPro',
-    description: '中學大學畢業紀念冊定制，騎馬釘 / 膠裝 / 精裝三種裝訂, 支持個人班級照片、師長題詞、學校 logo 全頁。香港本地、深圳亞洲工廠生產, 補習社、國際學校、家長會常用。**適配行業**: 教育培訓 / 中學 / 大學 / 補習社 / 國際學校 / 家長會 / 校友會 / 同學會紀念冊。', descriptionEn: 'Custom graduation yearbooks — saddle stitch / perfect bound / hardcover, supporting class photos, faculty messages, school logos. Asia factory direct, DHL Express global 2-4 day delivery. **Best for**: education / high school / university / cram school / international school / PTA / alumni association / class reunion yearbooks.', descriptionJa: '卒業記念アルバムカスタム印刷 — 中綴じ / 無線綴じ / 上製本, クラス写真・先生メッセージ・学校ロゴ全面対応。中国深セ自社工場・DHL 国際配送 2-4 日。**適用業界**: 教育研修 / 中学 / 大学 / 予備校 / インターナショナルスクール / PTA / 同窓会 / クラス会記念アルバム。', description_zh: '中學大學畢業紀念冊定制, 騎馬釘 / 膠裝 / 精裝三種裝訂, 支持班級照片、師長題詞、學校 logo 全頁。**適配行業**: 教育培訓 / 中學 / 大學 / 補習社 / 國際學校 / 家長會 / 校友會 / 同學會紀念冊。',
+    name: '香港畢業紀念冊 — 畢業紀念冊 / 校史特刊 / 校友會刊 / 社團特刊', nameEn: 'Graduation Yearbooks, School Anniversary & Alumni Publications', nameJa: '卒業記念アルバム — 卒業記念・校史特刊・同窓会誌・クラブ特刊', title_zh: '香港畢業紀念冊 — 畢業紀念冊 / 校史特刊 / 校友會刊 / 社團特刊',
+    description: '香港畢業紀念冊/校史特刊/校友會刊/社團特刊定制，騎馬釘/膠裝/精裝三種裝訂，支持班級照片、師長題詞、學校 logo 全頁。香港本地 48 小時交付，DHL 全球 2-4 天。', descriptionEn: 'Graduation yearbooks, school anniversary & alumni publication printing — saddle stitch / perfect bound / hardcover, supporting class photos, faculty messages, school logos. Free design mockup, 100 MOQ, DHL Express global 2-4 day delivery from Asia factory.', descriptionJa: '卒業記念アルバム・校史特刊・同窓会誌・クラブ特刊印刷、中綴じ/無線綴じ/上製本の3方式、クラス写真・先生メッセージ・学校ロゴ全面対応。無料デザインモックアップ、100冊〜、深圳自社工場からDHL国際速達2-4日。', description_zh: '香港畢業紀念冊/校史特刊/校友會刊/社團特刊定制，騎馬釘/膠裝/精裝三種裝訂，支持班級照片、師長題詞、學校 logo 全頁。香港本地 48 小時交付，DHL 全球 2-4 天。',
     longDescription: `<h3>三種裝訂工藝對比</h3>
 <p>畢業紀念冊常用 3 種裝訂方式, 頁數與預算決定最佳方案:</p>
 <table>
