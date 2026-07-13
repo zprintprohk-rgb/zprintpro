@@ -1,0 +1,59 @@
+{
+  "competitor": "Menus.net (via Menufy)",
+  "slug": "menus-net",
+  "category": "menus",
+  "categoryName": {
+    "en": "Restaurant Menus",
+    "ja": "メニュー印刷",
+    "zh-hk": "餐牌印刷"
+  },
+  "url": "https://www.menus.net/",
+  "currency": "USD",
+  "basePrice": 0.45,
+  "basePriceUnit": "per-piece",
+  "priceRange": {
+    "min": 0.28,
+    "max": 2.2
+  },
+  "priceRangeText": "$0.28 - $2.20 per menu (8.5x11 / 11x17 / 4x9, 50-2000 qty, single/tri-fold)",
+  "moq": 50,
+  "leadTime": {
+    "minDays": 3,
+    "maxDays": 7,
+    "productionDays": 2,
+    "shippingDays": 2
+  },
+  "sharpHooks": [
+    "Restaurant Menu Specialist",
+    "Free Design Templates",
+    "Lamination & Waterproof Options",
+    "Lamination Add-on",
+    "Free Proof Approval"
+  ],
+  "materialOptions": [
+    "Glossy Cardstock 80lb",
+    "Matte Cardstock 100lb",
+    "Waterproof Synthetic",
+    "Laminated (Gloss/Matte)",
+    "Tri-fold / Bi-fold",
+    "Single-page"
+  ],
+  "sizes": [
+    "8.5x11 (US Letter)",
+    "11x17 (Tabloid)",
+    "4x9 (Bi-fold)",
+    "5.5x8.5 (Half Letter)",
+    "Custom"
+  ],
+  "freeShippingThreshold": 100,
+  "paymentMethods": [
+    "Visa",
+    "Mastercard",
+    "Amex",
+    "PayPal"
+  ],
+  "globalShipping": true,
+  "capturedAt": "2026-07-13T20:00:00+08:00",
+  "dataSource": "https://www.menus.net/ + industry knowledge (US top menu printer)",
+  "notes": "US top restaurant menu specialist. Lamination/waterproof options critical for restaurants (spills). Bi-fold and tri-fold common. Menufy parent company also provides online menu software. Strong with restaurants, cafes, bars."
+}

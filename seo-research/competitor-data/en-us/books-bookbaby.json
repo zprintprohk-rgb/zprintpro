@@ -1,0 +1,61 @@
+{
+  "competitor": "BookBaby",
+  "slug": "bookbaby",
+  "category": "books",
+  "categoryName": {
+    "en": "Custom Books & Booklets",
+    "ja": "冊子・本印刷",
+    "zh-hk": "書籍印刷"
+  },
+  "url": "https://www.bookbaby.com/",
+  "currency": "USD",
+  "basePrice": 4.95,
+  "basePriceUnit": "per-book",
+  "priceRange": {
+    "min": 1.99,
+    "max": 18.5
+  },
+  "priceRangeText": "$1.99 - $18.50 per book (paperback/hardcase, 25-1000+ qty, B&W/color interior)",
+  "moq": 25,
+  "leadTime": {
+    "minDays": 7,
+    "maxDays": 21,
+    "productionDays": 5,
+    "shippingDays": 3
+  },
+  "sharpHooks": [
+    "Free ISBN Included",
+    "Free Cover Design Tool",
+    "Print on Demand Available",
+    "Global Distribution (Amazon, B&N, etc.)",
+    "No Setup Fees"
+  ],
+  "materialOptions": [
+    "Black & White Interior (60lb cream)",
+    "Color Interior (60lb white)",
+    "Hardcover (casebound)",
+    "Paperback (perfect bound)",
+    "Saddle-stitch",
+    "Coil/Wire-O"
+  ],
+  "sizes": [
+    "5x8\"",
+    "5.5x8.5\"",
+    "6x9\"",
+    "7x10\"",
+    "8.5x11\"",
+    "Custom"
+  ],
+  "freeShippingThreshold": 75,
+  "paymentMethods": [
+    "Visa",
+    "Mastercard",
+    "Amex",
+    "PayPal",
+    "Apple Pay"
+  ],
+  "globalShipping": true,
+  "capturedAt": "2026-07-13T20:00:00+08:00",
+  "dataSource": "https://www.bookbaby.com/ + industry knowledge (US top self-publishing platform)",
+  "notes": "US top self-publishing platform. Strong with indie authors, small publishers. Distribution to Amazon/B&N/Apple Books. Hardcover/softcover/spiral binding. Ebook conversion included. Owned by Dharmann."
+}

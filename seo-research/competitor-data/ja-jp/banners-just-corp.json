@@ -1,0 +1,59 @@
+{
+  "competitor": "ジャストコーポレーション (Just Corporation)",
+  "slug": "just-corp",
+  "category": "banners",
+  "categoryName": {
+    "en": "Custom Banners",
+    "ja": "バナー・横断幕印刷",
+    "zh-hk": "噴繪廣告"
+  },
+  "url": "https://www.just-shop.jp/nobori/",
+  "currency": "JPY",
+  "basePrice": 396,
+  "basePriceUnit": "per-piece",
+  "priceRange": {
+    "min": 396,
+    "max": 8500
+  },
+  "priceRangeText": "¥396 - ¥8,500/枚 (のぼり旗/横断幕/タペストリー, 1枚〜)",
+  "moq": 1,
+  "leadTime": {
+    "minDays": 3,
+    "maxDays": 14,
+    "productionDays": 3,
+    "shippingDays": 1
+  },
+  "sharpHooks": [
+    "のぼり旗1枚¥396〜業界最安水準",
+    "デザインテンプレート3,000種以上",
+    "原稿作成費・修正費 無料",
+    "翌日出荷対応",
+    "屋外・屋内両方対応"
+  ],
+  "materialOptions": [
+    "テトロンポンジ (のぼり旗)",
+    "ポンジ",
+    "ターポリン (横断幕)",
+    "遮光ターポリン",
+    "布製タペストリー",
+    "合成紙ポスター"
+  ],
+  "sizes": [
+    "標準 (600x1800mm のぼり)",
+    "大判 (1000x2500mm)",
+    "横断幕 (3000x800mm)",
+    "タペストリー (1500x2000mm)",
+    "カスタムサイズ対応"
+  ],
+  "freeShippingThreshold": 11000,
+  "paymentMethods": [
+    "クレジットカード",
+    "銀行振込",
+    "NP後払い",
+    "請求書払い (法人)"
+  ],
+  "globalShipping": false,
+  "capturedAt": "2026-07-13T20:00:00+08:00",
+  "dataSource": "https://www.just-shop.jp/ + industry knowledge (Japan #1 のぼり屋 platform, Just Corporation operates 22+ sites)",
+  "notes": "日本最大のぼり旗・横断幕プラットフォーム。のぼり屋さんドットコム/サインパートナー/ジャスト封筒など22+サイト運営。1枚〜対応。顧客: 飲食店・小売・イベント・不動産・建設現場。"
+}

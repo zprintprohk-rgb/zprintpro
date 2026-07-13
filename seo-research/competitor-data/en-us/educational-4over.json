@@ -1,0 +1,62 @@
+{
+  "competitor": "4over Educational",
+  "slug": "4over",
+  "category": "educational",
+  "categoryName": {
+    "en": "Educational Print",
+    "ja": "教材・教育印刷",
+    "zh-hk": "校園教育印刷"
+  },
+  "url": "https://www.4over.com/category/educational-printing",
+  "currency": "USD",
+  "basePrice": 0.08,
+  "basePriceUnit": "per-piece",
+  "priceRange": {
+    "min": 0.04,
+    "max": 0.85
+  },
+  "priceRangeText": "$0.04 - $0.85 per piece (workbooks, worksheets, posters, bookmarks, 100-10000 qty)",
+  "moq": 100,
+  "leadTime": {
+    "minDays": 4,
+    "maxDays": 10,
+    "productionDays": 3,
+    "shippingDays": 2
+  },
+  "sharpHooks": [
+    "Trade Printer (Wholesale Pricing)",
+    "Bulk Discount (50%+ off retail)",
+    "Wide Product Range (700+ SKUs)",
+    "Rush Production Available",
+    "Free Digital Proof"
+  ],
+  "materialOptions": [
+    "Standard 60lb Offset (workbook interior)",
+    "100lb Gloss Cover",
+    "100lb Matte Cover",
+    "Cardstock 80lb",
+    "Lamination (Gloss/Matte)",
+    "Spiral/Coil Binding",
+    "Saddle-stitch"
+  ],
+  "sizes": [
+    "US Letter 8.5x11",
+    "Tabloid 11x17",
+    "Legal 8.5x14",
+    "A4 (8.27x11.69\")",
+    "A5 (5.83x8.27\")",
+    "Custom"
+  ],
+  "freeShippingThreshold": null,
+  "paymentMethods": [
+    "Visa",
+    "Mastercard",
+    "Amex",
+    "PayPal",
+    "Net 30 (B2B)"
+  ],
+  "globalShipping": true,
+  "capturedAt": "2026-07-13T20:00:00+08:00",
+  "dataSource": "https://www.4over.com/ + industry knowledge (US top trade printer for educational)",
+  "notes": "US #1 trade printer. Serves print brokers, schools, educational publishers. 50%+ off retail pricing for resellers. Wide product range. Net 30 payment terms for B2B. Strong with educational publishers, homeschool co-ops, after-school programs."
+}

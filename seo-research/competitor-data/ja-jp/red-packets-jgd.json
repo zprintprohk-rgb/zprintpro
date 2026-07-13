@@ -1,0 +1,57 @@
+{
+  "competitor": "ジャパングッドデザイン (Japan Good Design)",
+  "slug": "jgd",
+  "category": "red-packets",
+  "categoryName": {
+    "en": "Custom Red Packets",
+    "ja": "ポチ袋印刷",
+    "zh-hk": "利是封印刷"
+  },
+  "url": "https://www.jgd.co.jp/pochibukuro/",
+  "currency": "JPY",
+  "basePrice": 75,
+  "basePriceUnit": "per-piece",
+  "priceRange": {
+    "min": 45,
+    "max": 320
+  },
+  "priceRangeText": "¥45 - ¥320/枚 (ポチ袋・のし袋、100枚〜、箔押し/印刷対応)",
+  "moq": 100,
+  "leadTime": {
+    "minDays": 7,
+    "maxDays": 21,
+    "productionDays": 5,
+    "shippingDays": 1
+  },
+  "sharpHooks": [
+    "ポチ袋・のし袋専門",
+    "箔押し加工対応",
+    "和風/洋風デザイン両方",
+    "法人名入れ対応",
+    "結婚式/出産祝い対応"
+  ],
+  "materialOptions": [
+    "和紙 (奉書紙/雲竜紙)",
+    "高級紙 (ケント紙/アート紙)",
+    "箔押し (金/銀/カラー)",
+    "印刷 (特色/DIC指定)",
+    "封筒型/カード型",
+    "のし付き"
+  ],
+  "sizes": [
+    "標準ポチ袋 (90x140mm)",
+    "のし袋 (180x270mm)",
+    "三方折り",
+    "大判祝儀袋 (220x320mm)"
+  ],
+  "freeShippingThreshold": 10000,
+  "paymentMethods": [
+    "クレジットカード",
+    "銀行振込",
+    "コンビニ払い"
+  ],
+  "globalShipping": false,
+  "capturedAt": "2026-07-13T20:00:00+08:00",
+  "dataSource": "https://www.jgd.co.jp/ + industry knowledge (Japan ポチ袋・のし袋 specialist)",
+  "notes": "日本ポチ袋・のし袋印刷専門。お年玉用ポチ袋、結婚式の祝儀袋、出産祝い、各種記念品。箔押し・特色印刷で高級感。和風/洋風両方。法人向け名入れ対応。"
+}

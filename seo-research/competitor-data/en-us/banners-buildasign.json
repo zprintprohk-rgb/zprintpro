@@ -1,0 +1,61 @@
+{
+  "competitor": "BuildASign",
+  "slug": "buildasign",
+  "category": "banners",
+  "categoryName": {
+    "en": "Custom Banners",
+    "ja": "バナー・横断幕印刷",
+    "zh-hk": "噴繪廣告"
+  },
+  "url": "https://www.buildasign.com/banners",
+  "currency": "USD",
+  "basePrice": 1.85,
+  "basePriceUnit": "per-sqft",
+  "priceRange": {
+    "min": 1.25,
+    "max": 8.5
+  },
+  "priceRangeText": "$1.25 - $8.50 per sqft (vinyl banner, 13oz-18oz, grommet/hem options, single/double-sided)",
+  "moq": 1,
+  "leadTime": {
+    "minDays": 3,
+    "maxDays": 7,
+    "productionDays": 1,
+    "shippingDays": 2
+  },
+  "sharpHooks": [
+    "No Minimum Order",
+    "Free Design Tool",
+    "Free Grommets Included",
+    "Free Hemming",
+    "Same Day Production Available"
+  ],
+  "materialOptions": [
+    "13oz Vinyl (standard indoor/outdoor)",
+    "18oz Heavy-Duty Vinyl",
+    "Mesh Vinyl (wind-permeable)",
+    "Fabric/Polyester",
+    "Adhesive Vinyl",
+    "Reflective Vinyl"
+  ],
+  "sizes": [
+    "2x4 ft",
+    "3x6 ft",
+    "4x8 ft",
+    "5x10 ft",
+    "6x12 ft",
+    "Custom (any size up to 10x100 ft)"
+  ],
+  "freeShippingThreshold": 99,
+  "paymentMethods": [
+    "Visa",
+    "Mastercard",
+    "Amex",
+    "PayPal",
+    "Apple Pay"
+  ],
+  "globalShipping": true,
+  "capturedAt": "2026-07-13T20:00:00+08:00",
+  "dataSource": "https://www.buildasign.com/ + industry knowledge (US #1 custom sign/banner platform)",
+  "notes": "US #1 custom sign platform. No minimums is key sharp hook. Real estate, event, retail, construction. Also does decals, yard signs, magnetic signs. Acquired Signs.com brand. Strong with small business."
+}

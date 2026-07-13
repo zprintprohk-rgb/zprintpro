@@ -1,0 +1,60 @@
+{
+  "competitor": "名刺印刷.com (Meishi Insatsu.com)",
+  "slug": "meishi-com",
+  "category": "business-cards",
+  "categoryName": {
+    "en": "Business Cards",
+    "ja": "名刺印刷",
+    "zh-hk": "咭片印刷"
+  },
+  "url": "https://www.meishi-insatsu.com/",
+  "currency": "JPY",
+  "basePrice": 15,
+  "basePriceUnit": "per-piece",
+  "priceRange": {
+    "min": 7,
+    "max": 80
+  },
+  "priceRangeText": "¥7 - ¥80/枚 (名刺 100枚〜両面カラー/モノクロ/特殊加工)",
+  "moq": 100,
+  "leadTime": {
+    "minDays": 2,
+    "maxDays": 5,
+    "productionDays": 1,
+    "shippingDays": 1
+  },
+  "sharpHooks": [
+    "業界最安水準",
+    "100枚から対応",
+    "最短当日出荷",
+    "テンプレート1000種以上",
+    "データ入稿無料"
+  ],
+  "materialOptions": [
+    "標準紙 (180kg/200kg/220kg)",
+    "高級紙 (ケント紙/アート紙)",
+    "特殊紙 (和紙/ホログラム/メタリック)",
+    "PP加工",
+    "箔押し (金/銀/カラー)",
+    "エンボス/デボス"
+  ],
+  "sizes": [
+    "標準 (91x55mm)",
+    "アメリカサイズ (89x51mm)",
+    "正方形 (55x55mm)",
+    "変形サイズ対応"
+  ],
+  "freeShippingThreshold": null,
+  "paymentMethods": [
+    "クレジットカード",
+    "銀行振込",
+    "コンビニ払い",
+    "NP後払い"
+  ],
+  "globalShipping": false,
+  "capturedAt": "2026-07-13T20:00:00+08:00",
+  "dataSource": "https://www.meishi-insatsu.com/ + industry knowledge (Japan #1 名刺印刷 specialist)",
+  "notes": "[researchOnly - AGENTS.md §11 名刺禁区] 日本名刺印刷業界シェアNo.1。ラクスルと並ぶ二強。100枚〜、当日出荷対応。テンプレート豊富。DON'T cite in marketing copy.",
+  "researchOnly": true,
+  "researchOnlyReason": "AGENTS.md §11 主营业务约束 - 咭片/business-cards is excluded from primary product line; do not write to SKU title/description"
+}

@@ -1,0 +1,59 @@
+{
+  "competitor": "ラクスル カレンダー印刷 (Raksul Calendars)",
+  "slug": "raksul-calendars",
+  "category": "calendars",
+  "categoryName": {
+    "en": "Custom Calendars",
+    "ja": "カレンダー印刷",
+    "zh-hk": "年曆印刷"
+  },
+  "url": "https://www.raksul.com/printing/calendar/",
+  "currency": "JPY",
+  "basePrice": 250,
+  "basePriceUnit": "per-piece",
+  "priceRange": {
+    "min": 180,
+    "max": 980
+  },
+  "priceRangeText": "¥180 - ¥980/部 (壁掛け/卓上カレンダー、30部〜、A4/B5/A5/正方形)",
+  "moq": 30,
+  "leadTime": {
+    "minDays": 5,
+    "maxDays": 10,
+    "productionDays": 4,
+    "shippingDays": 1
+  },
+  "sharpHooks": [
+    "全国送料無料",
+    "卓上/壁掛け両方対応",
+    "30部から対応",
+    "短納期対応 (10営業日以内)",
+    "オリジナル写真データ対応"
+  ],
+  "materialOptions": [
+    "壁掛けカレンダー (13枚)",
+    "卓上カレンダー (リング式/スパイラル)",
+    "表紙 + 本文12ヶ月",
+    "PP加工",
+    "ホログラム加工",
+    "箔押し"
+  ],
+  "sizes": [
+    "A4 (210x297mm) 壁掛け",
+    "A5 (148x210mm) 卓上",
+    "B5 (182x257mm) 壁掛け",
+    "正方形 (200x200mm)",
+    "カスタムサイズ"
+  ],
+  "freeShippingThreshold": null,
+  "paymentMethods": [
+    "クレジットカード",
+    "銀行振込",
+    "コンビニ払い",
+    "NP請求書払い"
+  ],
+  "globalShipping": false,
+  "capturedAt": "2026-07-13T20:00:00+08:00",
+  "dataSource": "https://www.raksul.com/printing/calendar/",
+  "notes": "ラクスルのカレンダー印刷。法人ノベルティ/オリジナルフォトカレンダー/新年の挨拶用。壁掛け・卓上・ポケットサイズ対応。30部〜。"
+}

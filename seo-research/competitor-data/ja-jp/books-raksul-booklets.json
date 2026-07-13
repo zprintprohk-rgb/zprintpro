@@ -1,0 +1,60 @@
+{
+  "competitor": "ラクスル 冊子印刷 (Raksul Booklets)",
+  "slug": "raksul-booklets",
+  "category": "books",
+  "categoryName": {
+    "en": "Custom Books & Booklets",
+    "ja": "冊子・本印刷",
+    "zh-hk": "書籍印刷"
+  },
+  "url": "https://www.raksul.com/printing/booklet/",
+  "currency": "JPY",
+  "basePrice": 45,
+  "basePriceUnit": "per-book",
+  "priceRange": {
+    "min": 30,
+    "max": 280
+  },
+  "priceRangeText": "¥30 - ¥280/冊 (中綴じ冊子, A5/B5/A4, 8-64ページ, 100冊〜)",
+  "moq": 100,
+  "leadTime": {
+    "minDays": 3,
+    "maxDays": 7,
+    "productionDays": 2,
+    "shippingDays": 1
+  },
+  "sharpHooks": [
+    "全国送料無料",
+    "最短当日出荷対応",
+    "価格と納期がすぐわかる",
+    "100冊から対応",
+    "テンプレート・入稿ガイド充実"
+  ],
+  "materialOptions": [
+    "中綴じ冊子",
+    "無線綴じ冊子",
+    "表紙 (コート紙/マット紙/特殊紙)",
+    "本文 (上質紙/コート紙/再生紙)",
+    "PP加工 (表紙)",
+    "箔押し/特色"
+  ],
+  "sizes": [
+    "A4 (210x297mm)",
+    "A5 (148x210mm)",
+    "B5 (182x257mm)",
+    "A6 (105x148mm)",
+    "正方形 (200x200mm)",
+    "カスタムサイズ"
+  ],
+  "freeShippingThreshold": null,
+  "paymentMethods": [
+    "クレジットカード",
+    "銀行振込",
+    "コンビニ払い",
+    "NP請求書払い"
+  ],
+  "globalShipping": false,
+  "capturedAt": "2026-07-13T20:00:00+08:00",
+  "dataSource": "https://www.raksul.com/printing/booklet/",
+  "notes": "ラクスルの冊子印刷。企業カタログ・社内報・プログラム・ZINE・同人誌に強い。中綴じ100冊〜/無線綴じ100冊〜対応。当日出荷対応でイベント向け短納期需要に強み。"
+}

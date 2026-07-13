@@ -1848,7 +1848,7 @@ export const products: Product[] = [
     category: 'stickers',
     category_slug: 'stickers',
     name: '防水貼紙', nameEn: 'Waterproof Stickers', nameJa: '防水ステッカー', title_zh: '防水貼紙',
-    description: 'PVC材質防水貼紙，具有出色的防水、防曬、耐磨性能。適合戶外使用、產品標籤、車身貼紙等場景。', descriptionEn: 'PVC waterproof stickers with excellent water, UV, and abrasion resistance. Perfect for outdoor use, product labels, car decals.', descriptionJa: 'PVC防水ステッカー、優れた防水・UV・耐摩耗性。屋外使用、製品ラベル、車用ステッカーに最適。', description_zh: 'PVC材質防水貼紙，具有出色的防水、防曬、耐磨性能。適合戶外使用、產品標籤、車身貼紙等場景。',
+    description: 'PVC材質防水貼紙，具有出色的防水、防曬、耐磨性能。適合戶外使用、產品標籤、車身貼紙等場景。', descriptionEn: 'PVC waterproof stickers with excellent water, UV, and abrasion resistance. Perfect for outdoor use, product labels, car decals. Free shipping over $99 USA · Free design mockup · 50 MOQ · Fast 4-day turnaround to USA small business & DTC brands.', descriptionJa: 'PVC防水ステッカー、優れた防水・UV・耐摩耗性。屋外使用、製品ラベル、車用ステッカーに最適。。全国送料込み・30枚から対応・最短3日出荷。D2Cブランド・小売店・食品業界向け。', description_zh: 'PVC材質防水貼紙，具有出色的防水、防曬、耐磨性能。適合戶外使用、產品標籤、車身貼紙等場景。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -2990,7 +2990,7 @@ export const products: Product[] = [
     category: 'stickers',
     category_slug: 'stickers',
     name: '異形模切貼紙', nameEn: 'Die-cut Stickers', nameJa: '型抜きステッカー', title_zh: '異形模切貼紙 · 文創IP角色造型模切定制 | 智印雲 ZprintPro',
-    description: '任意形狀模切，讓創意不受限制。可切出Logo形狀、卡通形象等獨特輪廓。**適配行業**: 文創IP / VTuber / 動漫周邊 / 個人插畫師 / 品牌吉祥物 / 同人誌 / 活動贈品。', descriptionEn: 'Any shape die-cutting, creativity without limits. Can cut logo shapes, cartoon characters, unique contours. **Best for**: creator IP / VTuber / anime merch / illustrators / brand mascots / doujinshi / event giveaways.', descriptionJa: '任意形状の型抜き、創作の自由を制限しません。**適用業界**: クリエイターIP / VTuber / アニメ周边 / 個人イラストレーター / ブランドマスコット / 同人誌 / イベント赠り物。', description_zh: '任意形狀模切，讓創意不受限制。可切出Logo形狀、卡通形象等獨特輪廓。**適配行業**: 文創IP / VTuber / 動漫周邊 / 個人插畫師 / 品牌吉祥物 / 同人誌 / 活動贈品。',
+    description: '任意形狀模切，讓創意不受限制。可切出Logo形狀、卡通形象等獨特輪廓。**適配行業**: 文創IP / VTuber / 動漫周邊 / 個人插畫師 / 品牌吉祥物 / 同人誌 / 活動贈品。', descriptionEn: 'Any shape die-cutting, creativity without limits. Can cut logo shapes, cartoon characters, unique contours. **Best for**: creator IP / VTuber / anime merch / illustrators / brand mascots / doujinshi / event giveaways. Free die-cut setup · Free shipping over $99 USA · 50 MOQ · Custom shapes for product labels, packaging, and promotional use.', descriptionJa: '任意形状の型抜き、創作の自由を制限しません。**適用業界**: クリエイターIP / VTuber / アニメ周边 / 個人イラストレーター / ブランドマスコット / 同人誌 / イベント赠り物。。型代無料・全国送料込み・50枚から。製品ラベル・パッケージ・プロモーション用カスタム形状。', description_zh: '任意形狀模切，讓創意不受限制。可切出Logo形狀、卡通形象等獨特輪廓。**適配行業**: 文創IP / VTuber / 動漫周邊 / 個人插畫師 / 品牌吉祥物 / 同人誌 / 活動贈品。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -3321,7 +3321,7 @@ export const products: Product[] = [
     category: 'stickers',
     category_slug: 'stickers',
     name: '燙金貼紙', nameEn: 'Foil Stickers', nameJa: '箔押しステッカー', title_zh: '燙金貼紙',
-    description: '燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮品包裝、VIP標識。', descriptionEn: 'Foil stamping gives stickers premium quality feel. Perfect for luxury product labels, gift packaging, VIP badges.', descriptionJa: '箔押し加工でステッカーに高級感。高級製品ラベル、ギフト包装、VIPバッジに最適。', description_zh: '燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮品包裝、VIP標識。',
+    description: '燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮品包裝、VIP標識。', descriptionEn: 'Foil stamping gives stickers premium quality feel. Perfect for luxury product labels, gift packaging, VIP badges. Gold/silver foil · 50 MOQ · Free design proof · Fast 4-day turnaround. Perfect for beauty brands, wedding favors, premium packaging.', descriptionJa: '箔押し加工でステッカーに高級感。高級製品ラベル、ギフト包装、VIPバッジに最適。。金箔/銀箔・50枚から・校正無料・最短4日出荷。美容ブランド・ウェディング・プレミアムパッケージに最適。', description_zh: '燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮品包裝、VIP標識。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -4265,7 +4265,7 @@ export const products: Product[] = [
     category: 'paper-bags',
     category_slug: 'paper-bags',
     name: '牛皮紙袋', nameEn: 'Kraft Paper Bags', nameJa: 'クラフト紙袋', title_zh: '牛皮紙袋印刷訂製 100個起印 免費刀模 FSC認證 | 智印雲 ZprintPro',
-    description: '牛皮紙袋印刷訂製，100個起印，HK$1.8起/個。FSC環保認證紙材，多尺寸多規格，免費刀模設計，支援燙金UV局部。即日交貨，全港送貨，零售餐飲活動品牌推廣。', descriptionEn: 'Eco-friendly kraft paper, natural and rustic, loved by consumers. Perfect for clothing stores, gift shops, coffee shops., ISO 9001:2015 certified quality management system', descriptionJa: '環境に優しいクラフト紙、質朴で自然、消費者に人気。衣料品店、ギフトショップ、コーヒーショップに最適。', description_zh: '環保牛皮紙材質，質樸自然，深受消費者喜愛。適合服裝店、禮品店、咖啡店。多種尺寸可選，可定制Logo印刷。',
+    description: '牛皮紙袋印刷訂製，100個起印，HK$1.8起/個。FSC環保認證紙材，多尺寸多規格，免費刀模設計，支援燙金UV局部。即日交貨，全港送貨，零售餐飲活動品牌推廣。', descriptionEn: 'Eco-friendly kraft paper, natural and rustic, loved by consumers. Perfect for clothing stores, gift shops, coffee shops., ISO 9001:2015 certified quality management system. Eco-friendly kraft · 100 MOQ · Twisted/ribbon handle options · Free shipping over $99 USA. Perfect for retail, bakery, fashion brands.', descriptionJa: '環境に優しいクラフト紙、質朴で自然、消費者に人気。衣料品店、ギフトショップ、コーヒーショップに最適。。エコクラフト紙・100枚から・紐/リボン手提げ選択可・全国送料込み。小売・ベーカリー・アパレルブランドに最適。', description_zh: '環保牛皮紙材質，質樸自然，深受消費者喜愛。適合服裝店、禮品店、咖啡店。多種尺寸可選，可定制Logo印刷。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -4751,7 +4751,7 @@ export const products: Product[] = [
     category: 'paper-bags',
     category_slug: 'paper-bags',
     name: '禮品紙袋', nameEn: 'Gift Bags', nameJa: 'ギフト紙袋', title_zh: '禮品紙袋印刷訂製 高檔禮品袋 100個起印 燙金LOGO | 智印雲',
-    description: '禮品紙袋印刷訂製，100個起印，HK$3.5起/個。棉繩緞帶手挽，燙金UV壓凹工藝，支援多尺寸客製LOGO。適合品牌活動週年慶贈品，即日交貨，全港免費送貨。', descriptionEn: 'Exquisite design with foil stamping, UV and other processes. Essential for gifting, elevates gift quality., ISO 9001:2015 certified quality management system', descriptionJa: '精巧なデザイン、箔押し・UVなどの加工付き。ギフトに必須、ギフトの質を向上。', description_zh: '精美設計，配合燙金、UV等工藝。送禮必備，提升禮品檔次。',
+    description: '禮品紙袋印刷訂製，100個起印，HK$3.5起/個。棉繩緞帶手挽，燙金UV壓凹工藝，支援多尺寸客製LOGO。適合品牌活動週年慶贈品，即日交貨，全港免費送貨。', descriptionEn: 'Exquisite design with foil stamping, UV and other processes. Essential for gifting, elevates gift quality., ISO 9001:2015 certified quality management system. Custom printed gift bags · 100 MOQ · Foil logo option · Wedding favor, retail, event bags. Free design mockup.', descriptionJa: '精巧なデザイン、箔押し・UVなどの加工付き。ギフトに必須、ギフトの質を向上。。オリジナルギフト紙袋・100枚から・箔押し選択可。ウェディング・小売・イベント用。校正無料。', description_zh: '精美設計，配合燙金、UV等工藝。送禮必備，提升禮品檔次。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -5097,7 +5097,7 @@ export const products: Product[] = [
     category: 'paper-bags',
     category_slug: 'paper-bags',
     name: '環保紙袋', nameEn: 'Eco Paper Bags', nameJa: 'エコ紙袋', title_zh: '環保紙袋印刷訂製 FSC再生認證 100個起印 | 智印雲 ZprintPro',
-    description: '環保紙袋印刷訂製，100個起印，HK$2.2起/個。FSC再生認證紙材，可完全降解，支援燙金UV印刷。適合ESG品牌碳審計、減塑徵費合規，即日交貨，全港送貨。', descriptionEn: 'FSC-certified eco-friendly paper, sustainable development. Perfect for environmentally conscious brands., ISO 9001:2015 certified quality management system', descriptionJa: 'FSC認証の環境に優しい紙、持続可能な開発。環境に配慮するブランドに最適。', description_zh: 'FSC認證環保紙張，可持續發展。適合注重環保的品牌。',
+    description: '環保紙袋印刷訂製，100個起印，HK$2.2起/個。FSC再生認證紙材，可完全降解，支援燙金UV印刷。適合ESG品牌碳審計、減塑徵費合規，即日交貨，全港送貨。', descriptionEn: 'FSC-certified eco-friendly paper, sustainable development. Perfect for environmentally conscious brands., ISO 9001:2015 certified quality management system. 100% recycled paper · 50 MOQ · FSC certified · Sustainable packaging for eco-conscious brands.', descriptionJa: 'FSC認証の環境に優しい紙、持続可能な開発。環境に配慮するブランドに最適。。再生紙100%・50枚から・FSC認証。エコロジーブランド向けサステナブルパッケージ。', description_zh: 'FSC認證環保紙張，可持續發展。適合注重環保的品牌。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -6912,7 +6912,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     category: 'flyers',
     category_slug: 'flyers',
     name: '厚紙宣傳單張', nameEn: 'Thick Paper Flyers', nameJa: '厚紙チラシ', title_zh: '厚紙宣傳單張',
-    description: '200g以上厚紙，質感更佳，不易折損。適合高端產品宣傳。', descriptionEn: '200g+ thick paper, better texture, not easily damaged.', descriptionJa: '200g以上の厚紙、質感が良く折れにくい。', description_zh: '200g以上厚紙，質感更佳，不易折損。適合高端產品宣傳。',
+    description: '200g以上厚紙，質感更佳，不易折損。適合高端產品宣傳。', descriptionEn: '200g+ thick paper, better texture, not easily damaged. From 25 pieces · Free shipping over $99 USA · 24h rush available. Ideal for restaurant opening, retail promo, event marketing.', descriptionJa: '200g以上の厚紙、質感が良く折れにくい。。25枚から対応・全国送料込み・翌日特急対応。飲食店開業・小売プロモーション・イベント营销に最適。', description_zh: '200g以上厚紙，質感更佳，不易折損。適合高端產品宣傳。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -7094,7 +7094,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     category: 'flyers',
     category_slug: 'flyers',
     name: '環保宣傳單張', nameEn: 'Eco Flyers', nameJa: 'エコチラシ', title_zh: '環保宣傳單張',
-    description: '環保紙張印刷，展現企業責任。適合環保主題活動。', descriptionEn: 'Eco-friendly paper printing, showing corporate responsibility.', descriptionJa: '環境に優しい紙の印刷、企業の責任を示す。', description_zh: '環保紙張印刷，展現企業責任。適合環保主題活動。',
+    description: '環保紙張印刷，展現企業責任。適合環保主題活動。', descriptionEn: 'Eco-friendly paper printing, showing corporate responsibility. 100% recycled paper · 50 MOQ · Free shipping over $99 USA. Eco-friendly marketing for sustainable brands.', descriptionJa: '環境に優しい紙の印刷、企業の責任を示す。。再生紙100%・50枚から・全国送料込み。サステナブルブランド向けエコマーケティング。', description_zh: '環保紙張印刷，展現企業責任。適合環保主題活動。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -8725,7 +8725,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     category: 'packaging',
     category_slug: 'packaging',
     name: '禮品盒定制', nameEn: 'Gift Boxes', nameJa: 'ギフトボックス', title_zh: '禮品盒訂製印刷 100個起印 化妝品/珠寶/婚慶/茶葉/電商通用 | 智印雲',
-    description: '禮品盒訂製印刷，100個起印，HK$4.5起/個。磁吸盒天地盒抽屜盒，燙金UV壓凹工藝，免費刀模設計。適合品牌活動週年慶贈品，即日打樣，3-5天交貨。**適配行業**: 化妝品/珠寶首飾/婚慶禮盒/茶葉食品/跨境電商/母嬰產品。', descriptionEn: 'Exquisite gift boxes with foil stamping, UV and other processes., ISO 9001:2015 certified quality management system. **Best for**: cosmetics / jewelry / wedding gifts / tea & food / cross-border e-commerce / baby & maternity products.', descriptionJa: '精巧なギフトボックス、箔押し・UVなどの加工付き。**適応業界**: 化粧品/宝石/ウェディングギフト/茶・食品/越境EC/ベビー用品。', description_zh: '精緻禮品盒，配合燙金、UV等工藝。送禮首選，提升產品價值。**適配行業**: 化妝品/珠寶首飾/婚慶禮盒/茶葉食品/跨境電商/母嬰產品。',
+    description: '禮品盒訂製印刷，100個起印，HK$4.5起/個。磁吸盒天地盒抽屜盒，燙金UV壓凹工藝，免費刀模設計。適合品牌活動週年慶贈品，即日打樣，3-5天交貨。**適配行業**: 化妝品/珠寶首飾/婚慶禮盒/茶葉食品/跨境電商/母嬰產品。', descriptionEn: 'Exquisite gift boxes with foil stamping, UV and other processes., ISO 9001:2015 certified quality management system. **Best for**: cosmetics / jewelry / wedding gifts / tea & food / cross-border e-commerce / baby & maternity products. Free design mockup · 100 MOQ · 4 box styles · Foil logo & matte lamination. Perfect for beauty gift, wedding favor, retail packaging.', descriptionJa: '精巧なギフトボックス、箔押し・UVなどの加工付き。**適応業界**: 化粧品/宝石/ウェディングギフト/茶・食品/越境EC/ベビー用品。。校正無料・100個から・4種盒型・箔押し+マットPP。ギフト・ウェディング・小売パッケージに最適。', description_zh: '精緻禮品盒，配合燙金、UV等工藝。送禮首選，提升產品價值。**適配行業**: 化妝品/珠寶首飾/婚慶禮盒/茶葉食品/跨境電商/母嬰產品。',
     optimizedAt: '2026-07-04',
     optimizationRound: 1,
     longDescription: `<h3>材質與紙張對比</h3>
@@ -9649,7 +9649,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     category: 'packaging',
     category_slug: 'packaging',
     name: '折疊盒', nameEn: 'Folding Boxes', nameJa: '折りたたみ箱', title_zh: '折疊盒',
-    description: '可折疊設計，節省倉儲空間。適合大量存貨的電商賣家。', descriptionEn: 'Foldable design, saves warehouse space.', descriptionJa: '折りたたみ可能なデザイン、倉庫スペースを節約。', description_zh: '可折疊設計，節省倉儲空間。適合大量存貨的電商賣家。',
+    description: '可折疊設計，節省倉儲空間。適合大量存貨的電商賣家。', descriptionEn: 'Foldable design, saves warehouse space. Custom size · 100 MOQ · Eco kraft options · Free shipping over $99 USA. Fits DTC ecommerce, tea/beverage, food packaging.', descriptionJa: '折りたたみ可能なデザイン、倉庫スペースを節約。。カスタムサイズ・100個から・クラフト紙対応・全国送料込み。D2C EC・茶/飲料・食品パッケージに適合。', description_zh: '可折疊設計，節省倉儲空間。適合大量存貨的電商賣家。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -9848,7 +9848,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     category: 'packaging',
     category_slug: 'packaging',
     name: '精裝盒', nameEn: 'Rigid Boxes', nameJa: '上製本箱', title_zh: '精品盒訂製印刷 100個起印 HK$8起/個 高端禮盒 | 智印雲',
-    description: '精品盒訂製印刷，100個起印，HK$8起/個。硬殼天地盒磁吸盒，灰板裱藝術紙，燙金UV壓凹工藝。適合化妝品珠寶首飾高端品牌，5-7天交貨，全球配送。', descriptionEn: 'Hardcover rigid construction, luxurious and premium.', descriptionJa: '硬い上製本構造、豪華でプレミアム。', description_zh: '硬殼精裝，高檔奢華。適合高端產品、限量版商品。',
+    description: '精品盒訂製印刷，100個起印，HK$8起/個。硬殼天地盒磁吸盒，灰板裱藝術紙，燙金UV壓凹工藝。適合化妝品珠寶首飾高端品牌，5-7天交貨，全球配送。', descriptionEn: 'Hardcover rigid construction, luxurious and premium. Premium setup box · 100 MOQ · Magnetic closure available · Foil + spot UV finish. Luxury packaging for jewelry, electronics, high-end gifts.', descriptionJa: '硬い上製本構造、豪華でプレミアム。。プレミアムセットアップ箱・100個から・マグネット式・箔押し+スポットUV。宝飾/電子機器/高級ギフト向けラグジュアリーパッケージ。', description_zh: '硬殼精裝，高檔奢華。適合高端產品、限量版商品。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>

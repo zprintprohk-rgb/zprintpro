@@ -1,0 +1,61 @@
+{
+  "competitor": "プリントパック (Printpac)",
+  "slug": "printpac",
+  "category": "flyers",
+  "categoryName": {
+    "en": "Custom Flyers",
+    "ja": "チラシ・フライヤー印刷",
+    "zh-hk": "宣傳單張"
+  },
+  "url": "https://www.printpac.co.jp/",
+  "currency": "JPY",
+  "basePrice": 7,
+  "basePriceUnit": "per-piece",
+  "priceRange": {
+    "min": 5,
+    "max": 35
+  },
+  "priceRangeText": "¥5 - ¥35/枚 (A4/B5/A5 チラシ、両面カラー、100枚〜)",
+  "moq": 100,
+  "leadTime": {
+    "minDays": 3,
+    "maxDays": 7,
+    "productionDays": 2,
+    "shippingDays": 1
+  },
+  "sharpHooks": [
+    "業界最安水準",
+    "最短当日出荷対応",
+    "100枚から注文OK",
+    "翌日配送 (東京23区内)",
+    "データ入稿無料"
+  ],
+  "materialOptions": [
+    "コート紙 90kg/110kg/135kg",
+    "マット紙",
+    "上質紙",
+    "再生紙",
+    "両面印刷",
+    "PP加工"
+  ],
+  "sizes": [
+    "A4 (210x297mm)",
+    "A5 (148x210mm)",
+    "A6 (105x148mm)",
+    "B5 (182x257mm)",
+    "B4 (257x364mm)",
+    "ハガキサイズ",
+    "カスタムサイズ"
+  ],
+  "freeShippingThreshold": 5000,
+  "paymentMethods": [
+    "クレジットカード",
+    "銀行振込",
+    "コンビニ払い",
+    "NP後払い"
+  ],
+  "globalShipping": false,
+  "capturedAt": "2026-07-13T20:00:00+08:00",
+  "dataSource": "https://www.printpac.co.jp/ + industry knowledge (Japan #2 flyer printer, 業界最安水準 positioning)",
+  "notes": "日本フライヤー印刷業界2位、1位ラクスルと競合。100枚から対応、当日出荷対応で短納期に強い。顧客: 中小企業・店舗・イベント主催者。"
+}

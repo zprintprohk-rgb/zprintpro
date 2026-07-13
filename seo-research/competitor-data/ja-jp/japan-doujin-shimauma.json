@@ -1,0 +1,60 @@
+{
+  "competitor": "しまうまプリント (Shimauma Print)",
+  "slug": "shimauma",
+  "category": "japan-doujin",
+  "categoryName": {
+    "en": "Doujinshi & Anime Goods",
+    "ja": "同人誌・アニメグッズ",
+    "zh-hk": "同人周邊印刷"
+  },
+  "url": "https://www.shimauma.co.jp/",
+  "currency": "JPY",
+  "basePrice": 165,
+  "basePriceUnit": "per-book",
+  "priceRange": {
+    "min": 110,
+    "max": 980
+  },
+  "priceRangeText": "¥110 - ¥980/冊 (同人誌オフセット印刷, A5/B5/B6, 24-400ページ, 30部〜)",
+  "moq": 30,
+  "leadTime": {
+    "minDays": 10,
+    "maxDays": 30,
+    "productionDays": 7,
+    "shippingDays": 2
+  },
+  "sharpHooks": [
+    "同人誌オフセット印刷専門",
+    "30部〜少部数対応",
+    "全6セット (とらのあな/メロンブックス提携)",
+    "イベント直搬入対応 (コミケ/サンシャイン)",
+    "入稿から印刷まで無料ガイド"
+  ],
+  "materialOptions": [
+    "本文用紙 (上質紙/コート紙/コミック紙)",
+    "表紙 (アート紙/特殊紙/マット紙)",
+    "無線綴じ",
+    "中綴じ",
+    "表紙カラー/単色",
+    "PP加工",
+    "箔押し"
+  ],
+  "sizes": [
+    "A5 (148x210mm) - 同人誌標準",
+    "B5 (182x257mm) - 大判",
+    "B6 (128x182mm) - 文庫",
+    "A4 (210x297mm) - 特大",
+    "新書判"
+  ],
+  "freeShippingThreshold": 10000,
+  "paymentMethods": [
+    "クレジットカード",
+    "銀行振込",
+    "コンビニ払い",
+    "同人誌ショップ提携 (とらのあな/メロンブックス)"
+  ],
+  "globalShipping": false,
+  "capturedAt": "2026-07-13T20:00:00+08:00",
+  "dataSource": "https://www.shimauma.co.jp/ + industry knowledge (Japan top 3 doujinshi printer)",
+  "notes": "日本同人誌オフセット印刷大手3社 (しまうま/ねこのしっぽ/大陽出版) のひとつ。30部〜少部数オフセット対応。コミケ・サンシャインシティ・SUPER COMIC CITY等の同人イベント直搬入対応。同人誌作家/サークル・インディーズ漫画家に強い。"
+}

@@ -1,0 +1,62 @@
+{
+  "competitor": "Moo.com",
+  "slug": "moo",
+  "category": "business-cards",
+  "categoryName": {
+    "en": "Business Cards",
+    "ja": "名刺印刷",
+    "zh-hk": "咭片印刷"
+  },
+  "url": "https://www.moo.com/products/business-cards",
+  "currency": "USD",
+  "basePrice": 24.99,
+  "basePriceUnit": "per-50-cards",
+  "priceRange": {
+    "min": 19.99,
+    "max": 109.99
+  },
+  "priceRangeText": "$19.99 - $109.99 per 50 cards (Original/Luxe/Pearlescent, 50-500 qty)",
+  "moq": 50,
+  "leadTime": {
+    "minDays": 2,
+    "maxDays": 5,
+    "productionDays": 1,
+    "shippingDays": 2
+  },
+  "sharpHooks": [
+    "Printfinity (different design on every card)",
+    "Free Speedy Delivery on All Orders",
+    "FSC Certified Paper",
+    "Premium Finishes (Spot Gloss, Gold/Silver Foil)",
+    "20% Off First Order Signup"
+  ],
+  "materialOptions": [
+    "Original (16pt uncoated, smooth)",
+    "Luxe (32pt triple-layered, premium)",
+    "Pearlescent (metallic shimmer)",
+    "Super (32pt+ with edge paint)",
+    "Recycled Matte",
+    "Cotton"
+  ],
+  "sizes": [
+    "Standard US (3.5x2\")",
+    "Square (2.5x2.5\")",
+    "MiniCard (2.75x1.10\")",
+    "Oval (2.5x1.5\")",
+    "European (85x55mm)"
+  ],
+  "freeShippingThreshold": null,
+  "paymentMethods": [
+    "Visa",
+    "Mastercard",
+    "Amex",
+    "PayPal",
+    "Apple Pay"
+  ],
+  "globalShipping": true,
+  "capturedAt": "2026-07-13T20:00:00+08:00",
+  "dataSource": "https://www.moo.com/ + web search 2026-07-13 (UK starting £19.00)",
+  "notes": "[researchOnly - AGENTS.md §11 名刺禁区] Premium positioning, design-led. Printfinity different-back-per-card is unique. Strong with creative agencies, startups. Don't cite in marketing copy.",
+  "researchOnly": true,
+  "researchOnlyReason": "AGENTS.md §11 主营业务约束 - 咭片/business-cards is excluded from primary product line; do not write to SKU title/description"
+}

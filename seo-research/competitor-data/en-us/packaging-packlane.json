@@ -1,0 +1,60 @@
+{
+  "competitor": "Packlane",
+  "slug": "packlane",
+  "category": "packaging",
+  "categoryName": {
+    "en": "Custom Packaging Boxes",
+    "ja": "パッケージ・箱印刷",
+    "zh-hk": "包裝盒定制"
+  },
+  "url": "https://packlane.com/",
+  "currency": "USD",
+  "basePrice": 1.85,
+  "basePriceUnit": "per-piece",
+  "priceRange": {
+    "min": 0.99,
+    "max": 5.5
+  },
+  "priceRangeText": "$0.99 - $5.50 per box (corrugated mailer box, 100-1000+ qty)",
+  "moq": 30,
+  "leadTime": {
+    "minDays": 8,
+    "maxDays": 15,
+    "productionDays": 5,
+    "shippingDays": 3
+  },
+  "sharpHooks": [
+    "Free Design Tool (Packlane Design)",
+    "No Die & Plate Charges",
+    "Custom Inserts Available",
+    "Free Shipping on Bulk Orders (US)",
+    "3D Mockup Preview"
+  ],
+  "materialOptions": [
+    "Corrugated Cardboard",
+    "Paperboard",
+    "Kraft",
+    "Rigid (Setup) Box",
+    "Folding Carton",
+    "Mailer Box",
+    "Tuck End Box",
+    "Display Box"
+  ],
+  "sizes": [
+    "Custom (any LxWxH up to 24\"x18\"x12\")",
+    "Standard Mailer (10x8x2)",
+    "Standard Mailer (12x9x3)",
+    "Standard Mailer (15x12x4)"
+  ],
+  "freeShippingThreshold": 500,
+  "paymentMethods": [
+    "Visa",
+    "Mastercard",
+    "Amex",
+    "PayPal"
+  ],
+  "globalShipping": true,
+  "capturedAt": "2026-07-13T20:00:00+08:00",
+  "dataSource": "https://packlane.com/ + industry knowledge (US top custom packaging brand, eco-friendly focus)",
+  "notes": "Top US custom packaging platform. Strong for e-commerce (DTC, Amazon FBA). No setup fees, free design tool. Acquired by Cart.com 2024 for ecosystem expansion. 5-7 day production typical."
+}

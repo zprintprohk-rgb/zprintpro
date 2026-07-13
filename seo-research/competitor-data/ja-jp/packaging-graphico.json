@@ -1,0 +1,57 @@
+{
+  "competitor": "グラフィコ (Graphico)",
+  "slug": "graphico",
+  "category": "packaging",
+  "categoryName": {
+    "en": "Custom Packaging Boxes",
+    "ja": "パッケージ・箱印刷",
+    "zh-hk": "包裝盒定制"
+  },
+  "url": "https://www.graphico.ne.jp/package/",
+  "currency": "JPY",
+  "basePrice": 95,
+  "basePriceUnit": "per-piece",
+  "priceRange": {
+    "min": 65,
+    "max": 380
+  },
+  "priceRangeText": "¥65 - ¥380/個 (化粧箱・パッケージ、100個〜フルオーダー)",
+  "moq": 100,
+  "leadTime": {
+    "minDays": 10,
+    "maxDays": 21,
+    "productionDays": 7,
+    "shippingDays": 2
+  },
+  "sharpHooks": [
+    "化粧箱・パッケージ専門",
+    "小ロット対応 (100個〜)",
+    "フルオーダー (サイズ・素材・印刷すべて自由)",
+    "サンプル作成対応",
+    "3Dデザインビュー"
+  ],
+  "materialOptions": [
+    "紙器 (白ボール)",
+    "コート紙",
+    "マット紙",
+    "クラフト紙",
+    "特殊紙 (ホログラム・メタリック)",
+    "表面加工 (PP/UV/箔押し/エンボス)"
+  ],
+  "sizes": [
+    "完全カスタムサイズ",
+    "小型 (50x50x20mm〜)",
+    "中型 (100x100x50mm〜)",
+    "大型 (200x200x100mm〜)"
+  ],
+  "freeShippingThreshold": 30000,
+  "paymentMethods": [
+    "クレジットカード",
+    "銀行振込",
+    "請求書払い (法人)"
+  ],
+  "globalShipping": true,
+  "capturedAt": "2026-07-13T20:00:00+08:00",
+  "dataSource": "https://www.graphico.ne.jp/package/ + industry knowledge (Japan #1 cosmetic/gift box specialist)",
+  "notes": "日本パッケージ印刷専門。化粧品・健康食品・ギフト・食品向け化粧箱に強い。フルオーダー 100個〜対応。顧客: D2C ブランド・健康食品・化粧品メーカー。"
+}

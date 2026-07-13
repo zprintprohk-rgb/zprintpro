@@ -1,0 +1,66 @@
+{
+  "competitor": "Sticker Mule",
+  "slug": "sticker-mule",
+  "category": "stickers",
+  "categoryName": {
+    "en": "Custom Stickers",
+    "ja": "ステッカー・シール印刷",
+    "zh-hk": "貼紙印刷"
+  },
+  "url": "https://www.stickermule.com/stickers",
+  "currency": "USD",
+  "basePrice": 0.32,
+  "basePriceUnit": "per-piece",
+  "priceRange": {
+    "min": 0.32,
+    "max": 2.5
+  },
+  "priceRangeText": "$0.32 - $2.50 per sticker (3x3 to 6x6 vinyl, die-cut)",
+  "moq": 10,
+  "leadTime": {
+    "minDays": 4,
+    "maxDays": 9,
+    "productionDays": 2,
+    "shippingDays": 2
+  },
+  "sharpHooks": [
+    "Free Shipping (US orders)",
+    "Free Online Proofs",
+    "Free Worldwide Shipping",
+    "Fast Turnaround (4-9 days)",
+    "60-Second Ordering",
+    "100% Satisfaction Guarantee"
+  ],
+  "materialOptions": [
+    "Vinyl",
+    "Holographic",
+    "Glitter",
+    "Clear",
+    "Gloss Lamination",
+    "Matte Lamination",
+    "Chrome",
+    "Prismatic",
+    "Glow in the Dark"
+  ],
+  "sizes": [
+    "1x1",
+    "2x2",
+    "3x3",
+    "4x4",
+    "5x5",
+    "6x6",
+    "Custom"
+  ],
+  "freeShippingThreshold": null,
+  "paymentMethods": [
+    "Visa",
+    "Mastercard",
+    "Amex",
+    "PayPal",
+    "Apple Pay"
+  ],
+  "globalShipping": true,
+  "capturedAt": "2026-07-13T20:00:00+08:00",
+  "dataSource": "https://www.stickermule.com/ + industry knowledge (US market leader, well-documented)",
+  "notes": "US market leader, premium positioning. 25-30% higher than mid-tier like CustomStickers.com. Free die cut on all orders. Acquired Rockin Monkey 2024."
+}

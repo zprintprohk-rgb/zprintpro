@@ -1,0 +1,60 @@
+{
+  "competitor": "PaperBagShop",
+  "slug": "paperbagshop",
+  "category": "paper-bags",
+  "categoryName": {
+    "en": "Custom Paper Bags",
+    "ja": "紙袋印刷",
+    "zh-hk": "紙袋印刷"
+  },
+  "url": "https://www.paperbagshop.com/",
+  "currency": "USD",
+  "basePrice": 0.45,
+  "basePriceUnit": "per-piece",
+  "priceRange": {
+    "min": 0.28,
+    "max": 2.8
+  },
+  "priceRangeText": "$0.28 - $2.80 per bag (small kraft to large custom printed, 100-5000 qty)",
+  "moq": 100,
+  "leadTime": {
+    "minDays": 7,
+    "maxDays": 14,
+    "productionDays": 5,
+    "shippingDays": 3
+  },
+  "sharpHooks": [
+    "Custom Printed Paper Bags",
+    "Eco-Friendly Kraft Options",
+    "Wholesale Pricing",
+    "Free Sample Pack",
+    "Multiple Handle Types"
+  ],
+  "materialOptions": [
+    "Brown Kraft (90gsm, 110gsm, 150gsm)",
+    "White Kraft",
+    "Recycled Paper",
+    "Laminated Paper (Gloss/Matte)",
+    "Ribbon Handle",
+    "Twisted Handle",
+    "Flat Handle"
+  ],
+  "sizes": [
+    "Small (5.5x3x8.5\")",
+    "Medium (8x4x10\")",
+    "Large (10x5x13\")",
+    "Wine Bag (5x3x13\")",
+    "Custom Sizes"
+  ],
+  "freeShippingThreshold": 300,
+  "paymentMethods": [
+    "Visa",
+    "Mastercard",
+    "Amex",
+    "PayPal"
+  ],
+  "globalShipping": true,
+  "capturedAt": "2026-07-13T20:00:00+08:00",
+  "dataSource": "https://www.paperbagshop.com/ + industry knowledge (US top custom paper bag platform)",
+  "notes": "US leading custom paper bag specialist. Strong with retail, restaurants, events. Eco-friendly kraft focus. Twisted/ribbon/flat handle options. Good alternative to plastic bags for sustainability-focused brands."
+}

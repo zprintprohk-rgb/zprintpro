@@ -1,0 +1,59 @@
+{
+  "competitor": "グラフィック メニュー印刷 (Graphic Menu)",
+  "slug": "graphic-menu",
+  "category": "menus",
+  "categoryName": {
+    "en": "Restaurant Menus",
+    "ja": "メニュー印刷",
+    "zh-hk": "餐牌印刷"
+  },
+  "url": "https://www.graphic.co.jp/menu/",
+  "currency": "JPY",
+  "basePrice": 75,
+  "basePriceUnit": "per-piece",
+  "priceRange": {
+    "min": 50,
+    "max": 320
+  },
+  "priceRangeText": "¥50 - ¥320/枚 (A4/B5/A5 メニュー, 両面カラー, 50枚〜PP加工/ラミネート対応)",
+  "moq": 50,
+  "leadTime": {
+    "minDays": 5,
+    "maxDays": 10,
+    "productionDays": 3,
+    "shippingDays": 1
+  },
+  "sharpHooks": [
+    "飲食業界向けメニュー専門",
+    "PP加工/ラミネート無料対応",
+    "短期/長期メニュー分け対応",
+    "抗菌・耐水オプション",
+    "テンプレート豊富"
+  ],
+  "materialOptions": [
+    "コート紙 135kg/180kg",
+    "マット紙",
+    "アート紙",
+    "PP加工 (光沢/マット)",
+    "ラミネート加工 (PET)",
+    "抗菌コーティング",
+    "和紙/特殊紙"
+  ],
+  "sizes": [
+    "A4 (210x297mm)",
+    "A5 (148x210mm)",
+    "B5 (182x257mm)",
+    "A3 (297x420mm) 二つ折り",
+    "二つ折り/三つ折り対応"
+  ],
+  "freeShippingThreshold": null,
+  "paymentMethods": [
+    "クレジットカード",
+    "銀行振込",
+    "請求書払い (法人)"
+  ],
+  "globalShipping": false,
+  "capturedAt": "2026-07-13T20:00:00+08:00",
+  "dataSource": "https://www.graphic.co.jp/ + industry knowledge (Japan menu printing specialist)",
+  "notes": "日本メニュー印刷専門。飲食店・カフェ・居酒屋向け。PP加工/ラミネートで水・油汚れ対応。短期メニュー/グランドメニュー両方対応。顧客: 個人飲食店〜チェーン店。"
+}

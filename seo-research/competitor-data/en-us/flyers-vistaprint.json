@@ -1,0 +1,63 @@
+{
+  "competitor": "Vistaprint",
+  "slug": "vistaprint",
+  "category": "flyers",
+  "categoryName": {
+    "en": "Custom Flyers",
+    "ja": "チラシ・フライヤー印刷",
+    "zh-hk": "宣傳單張"
+  },
+  "url": "https://www.vistaprint.com/marketing-materials/flyers",
+  "currency": "USD",
+  "basePrice": 0.18,
+  "basePriceUnit": "per-piece",
+  "priceRange": {
+    "min": 0.13,
+    "max": 1.2
+  },
+  "priceRangeText": "$0.13 - $1.20 per flyer (4x6 to 8.5x11, 100-5000 qty, gloss/matte)",
+  "moq": 25,
+  "leadTime": {
+    "minDays": 3,
+    "maxDays": 8,
+    "productionDays": 2,
+    "shippingDays": 2
+  },
+  "sharpHooks": [
+    "15% Off First Order (Code: NEW15)",
+    "Free Design Services",
+    "100% Satisfaction Guarantee",
+    "Bulk Discount Tiered Pricing",
+    "Same Day Pickup (select cities)"
+  ],
+  "materialOptions": [
+    "Glossy Cardstock",
+    "Matte Cardstock",
+    "Premium Cardstock",
+    "Recycled Paper",
+    "Uncoated",
+    "Silk Lamination",
+    "UV Coating"
+  ],
+  "sizes": [
+    "4x6",
+    "5x7",
+    "8.5x11",
+    "A4 (8.27x11.69)",
+    "A5 (5.83x8.27)",
+    "A6 (4.13x5.83)",
+    "Custom"
+  ],
+  "freeShippingThreshold": null,
+  "paymentMethods": [
+    "Visa",
+    "Mastercard",
+    "Amex",
+    "PayPal",
+    "Apple Pay"
+  ],
+  "globalShipping": true,
+  "capturedAt": "2026-07-13T20:00:00+08:00",
+  "dataSource": "https://www.vistaprint.com/ + industry knowledge (Vistaprint is the US/EU printing market leader since 1995)",
+  "notes": "Vistaprint is the de facto US flyer market standard. Strong in SMB/enterprise. 99designs integration for design services. VistaCreate free design tool. Free shipping promo frequently available."
+}

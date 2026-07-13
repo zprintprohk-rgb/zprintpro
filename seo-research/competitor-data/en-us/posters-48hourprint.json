@@ -1,0 +1,63 @@
+{
+  "competitor": "48HourPrint",
+  "slug": "48hourprint",
+  "category": "posters",
+  "categoryName": {
+    "en": "Custom Posters",
+    "ja": "ポスター印刷",
+    "zh-hk": "定制海報"
+  },
+  "url": "https://www.48hourprint.com/posters",
+  "currency": "USD",
+  "basePrice": 1.25,
+  "basePriceUnit": "per-piece",
+  "priceRange": {
+    "min": 0.89,
+    "max": 8.5
+  },
+  "priceRangeText": "$0.89 - $8.50 per poster (11x17 to 24x36, gloss/matte, 50-1000 qty)",
+  "moq": 25,
+  "leadTime": {
+    "minDays": 2,
+    "maxDays": 5,
+    "productionDays": 1,
+    "shippingDays": 1
+  },
+  "sharpHooks": [
+    "48-Hour Turnaround Guarantee",
+    "Free Lamination Options",
+    "Same-Day Production Available",
+    "Free File Review",
+    "No Setup Fees"
+  ],
+  "materialOptions": [
+    "Glossy Photo Paper",
+    "Matte Photo Paper",
+    "Satin Photo Paper",
+    "Premium Luster",
+    "Cardstock",
+    "Mounted Foam Board",
+    "Canvas"
+  ],
+  "sizes": [
+    "11x17",
+    "12x18",
+    "16x20",
+    "18x24",
+    "24x36",
+    "27x40",
+    "Custom"
+  ],
+  "freeShippingThreshold": 99,
+  "paymentMethods": [
+    "Visa",
+    "Mastercard",
+    "Amex",
+    "PayPal",
+    "Apple Pay"
+  ],
+  "globalShipping": true,
+  "capturedAt": "2026-07-13T20:00:00+08:00",
+  "dataSource": "https://www.48hourprint.com/ + industry knowledge (US speed leader for posters and event printing)",
+  "notes": "Speed leader for event posters, trade show, retail. 48-hour guarantee is a major sharp hook. Owned by PrintingForLess parent. Strong with event organizers, photographers, real estate agents."
+}

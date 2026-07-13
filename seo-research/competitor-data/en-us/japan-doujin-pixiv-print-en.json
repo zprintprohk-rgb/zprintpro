@@ -1,0 +1,59 @@
+{
+  "competitor": "Pixiv Print (Pixiv Booth EN)",
+  "slug": "pixiv-print-en",
+  "category": "japan-doujin",
+  "categoryName": {
+    "en": "Doujinshi & Anime Goods",
+    "ja": "同人誌・アニメグッズ",
+    "zh-hk": "同人周邊印刷"
+  },
+  "url": "https://booth.pixiv.net/",
+  "currency": "USD",
+  "basePrice": 5.5,
+  "basePriceUnit": "per-book",
+  "priceRange": {
+    "min": 3.5,
+    "max": 25.0
+  },
+  "priceRangeText": "$3.50 - $25.00 per doujinshi (A5/B5, 24-200 pages, 1-1000 copies, on-demand print)",
+  "moq": 1,
+  "leadTime": {
+    "minDays": 7,
+    "maxDays": 21,
+    "productionDays": 5,
+    "shippingDays": 7
+  },
+  "sharpHooks": [
+    "On-Demand Print (1 copy MOQ)",
+    "Direct Artist Sales Channel",
+    "International Shipping (Print-on-Demand)",
+    "Digital Asset + Print Bundle",
+    "Artist-Buyer Direct (No Middleman)"
+  ],
+  "materialOptions": [
+    "B&W Interior (book paper)",
+    "Color Interior (high quality)",
+    "Premium Cover (Coated)",
+    "Special Paper (kraft, colored)",
+    "Soft Cover (Glossy/Matte)",
+    "Dust Jacket"
+  ],
+  "sizes": [
+    "A5 (148x210mm) - Most Common",
+    "B5 (182x257mm)",
+    "A4 (210x297mm)",
+    "A6 (105x148mm) - Mini",
+    "B6 (128x182mm)"
+  ],
+  "freeShippingThreshold": null,
+  "paymentMethods": [
+    "Credit Card",
+    "PayPal",
+    "Booth Points",
+    "Bank Transfer (Japan)"
+  ],
+  "globalShipping": true,
+  "capturedAt": "2026-07-13T20:00:00+08:00",
+  "dataSource": "https://booth.pixiv.net/ + industry knowledge (Pixiv is the global anime/doujin creator platform)",
+  "notes": "EN-market on-demand doujinshi. Serves international anime fan community. Print-on-demand model is unique (1 copy MOQ). Lower price per unit than JP domestic due to on-demand. Strong with international anime/manga fandom, indie creators, illustrators. [Note: also serves ja-jp, but listed here for international market]"
+}

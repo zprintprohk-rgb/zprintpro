@@ -1,0 +1,60 @@
+{
+  "competitor": "PrintRunner Calendars",
+  "slug": "printrunner",
+  "category": "calendars",
+  "categoryName": {
+    "en": "Custom Calendars",
+    "ja": "カレンダー印刷",
+    "zh-hk": "年曆印刷"
+  },
+  "url": "https://www.printrunner.com/calendars",
+  "currency": "USD",
+  "basePrice": 4.5,
+  "basePriceUnit": "per-piece",
+  "priceRange": {
+    "min": 2.85,
+    "max": 18.5
+  },
+  "priceRangeText": "$2.85 - $18.50 per calendar (8.5x11 wall / 5.5x8.5 desk / 4x8 mini, 25-1000 qty)",
+  "moq": 25,
+  "leadTime": {
+    "minDays": 4,
+    "maxDays": 9,
+    "productionDays": 3,
+    "shippingDays": 2
+  },
+  "sharpHooks": [
+    "Free Design Templates",
+    "Bulk Discount Tiered Pricing",
+    "Free Digital Proof",
+    "Same Day Production Available",
+    "Hole Drilling / Coil Bound Options"
+  ],
+  "materialOptions": [
+    "Glossy Cover + Matte Interior",
+    "Matte Cover + Matte Interior",
+    "Premium Cardstock 100lb",
+    "Coil Bound (Wire-O)",
+    "Saddle-stitched",
+    "Hole Drilled for Hanging"
+  ],
+  "sizes": [
+    "8.5x11 (Wall Calendar, 12 pages + cover)",
+    "11x17 (Large Wall)",
+    "5.5x8.5 (Desk Calendar)",
+    "4x8 (Mini Pocket)",
+    "Custom"
+  ],
+  "freeShippingThreshold": 99,
+  "paymentMethods": [
+    "Visa",
+    "Mastercard",
+    "Amex",
+    "PayPal",
+    "Apple Pay"
+  ],
+  "globalShipping": true,
+  "capturedAt": "2026-07-13T20:00:00+08:00",
+  "dataSource": "https://www.printrunner.com/ + industry knowledge (US top calendar printer)",
+  "notes": "US top calendar printer. Wall/desk/pocket calendar formats. Strong with corporate gifts, schools, real estate, photographers. Coil binding and hole drilling common. PrintRunner parent owns multiple printing brands."
+}

@@ -1,0 +1,58 @@
+{
+  "competitor": "共立印刷 (Kyoritsu Printing)",
+  "slug": "kyoritsu",
+  "category": "educational",
+  "categoryName": {
+    "en": "Educational Print",
+    "ja": "教材・教育印刷",
+    "zh-hk": "校園教育印刷"
+  },
+  "url": "https://www.kyoritsu-p.co.jp/",
+  "currency": "JPY",
+  "basePrice": 18,
+  "basePriceUnit": "per-piece",
+  "priceRange": {
+    "min": 8,
+    "max": 95
+  },
+  "priceRangeText": "¥8 - ¥95/枚 (テキスト・ワークブック・プリント教材, 100部〜, A4/B5)",
+  "moq": 100,
+  "leadTime": {
+    "minDays": 7,
+    "maxDays": 21,
+    "productionDays": 5,
+    "shippingDays": 2
+  },
+  "sharpHooks": [
+    "教材・教科書印刷専門",
+    "学校・塾・教育機関向け",
+    "少部数対応 (100部〜)",
+    "特殊製本対応 (無線綴じ/中綴じ/リング)",
+    "データ入稿から印刷まで一貫"
+  ],
+  "materialOptions": [
+    "本文用紙 (上質紙/コート紙/再生紙)",
+    "表紙 (アート紙/特殊紙)",
+    "無線綴じ",
+    "中綴じ",
+    "リング製本",
+    "PP加工",
+    "穴あけ加工"
+  ],
+  "sizes": [
+    "A4 (210x297mm)",
+    "B5 (182x257mm)",
+    "A5 (148x210mm)",
+    "B4 (257x364mm)",
+    "カスタムサイズ対応"
+  ],
+  "freeShippingThreshold": 20000,
+  "paymentMethods": [
+    "銀行振込",
+    "請求書払い (学校/法人)"
+  ],
+  "globalShipping": false,
+  "capturedAt": "2026-07-13T20:00:00+08:00",
+  "dataSource": "https://www.kyoritsu-p.co.jp/ + industry knowledge (Japan 教材印刷 specialist)",
+  "notes": "日本教材・教科書・塾テキスト印刷専門。学習塾・予備校・学校・通信教育向け。少部数100部〜対応、各種製本方式対応。品質重視の中〜大規模印刷向き。"
+}

@@ -1,0 +1,60 @@
+{
+  "competitor": "ラクスル ポスター印刷 (Raksul Posters)",
+  "slug": "raksul-posters",
+  "category": "posters",
+  "categoryName": {
+    "en": "Custom Posters",
+    "ja": "ポスター印刷",
+    "zh-hk": "定制海報"
+  },
+  "url": "https://www.raksul.com/printing/poster/",
+  "currency": "JPY",
+  "basePrice": 65,
+  "basePriceUnit": "per-piece",
+  "priceRange": {
+    "min": 45,
+    "max": 320
+  },
+  "priceRangeText": "¥45 - ¥320/枚 (A3/B2/A1 ポスター、100枚〜光沢紙/マット紙)",
+  "moq": 100,
+  "leadTime": {
+    "minDays": 3,
+    "maxDays": 7,
+    "productionDays": 2,
+    "shippingDays": 1
+  },
+  "sharpHooks": [
+    "全国送料無料",
+    "最短当日出荷対応商品あり",
+    "A1・B2サイズ対応",
+    "屋外耐水ポスター対応",
+    "イベント・展示会・店内POP"
+  ],
+  "materialOptions": [
+    "光沢紙 (フォト)",
+    "マット紙",
+    "半光沢紙 (サテン)",
+    "合成紙 (屋外耐水)",
+    "厚口コート紙",
+    "PP加工"
+  ],
+  "sizes": [
+    "A3 (297x420mm)",
+    "A2 (420x594mm)",
+    "A1 (594x841mm)",
+    "B2 (515x728mm)",
+    "B1 (728x1030mm)",
+    "カスタムサイズ"
+  ],
+  "freeShippingThreshold": null,
+  "paymentMethods": [
+    "クレジットカード",
+    "銀行振込",
+    "コンビニ払い",
+    "NP請求書払い"
+  ],
+  "globalShipping": false,
+  "capturedAt": "2026-07-13T20:00:00+08:00",
+  "dataSource": "https://www.raksul.com/printing/poster/",
+  "notes": "ラクスルのポスター印刷部門。イベント・展示会・店頭POP・不動産業界に強い。屋外耐水ポスターは屋外看板代替需要に対応。"
+}

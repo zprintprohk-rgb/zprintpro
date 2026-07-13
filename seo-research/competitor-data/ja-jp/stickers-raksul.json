@@ -1,0 +1,58 @@
+{
+  "competitor": "ラクスル (Raksul)",
+  "slug": "raksul",
+  "category": "stickers",
+  "categoryName": {
+    "en": "Custom Stickers",
+    "ja": "ステッカー・シール印刷",
+    "zh-hk": "貼紙印刷"
+  },
+  "url": "https://www.raksul.com/printing/sticker/",
+  "currency": "JPY",
+  "basePrice": 28,
+  "basePriceUnit": "per-piece",
+  "priceRange": {
+    "min": 28,
+    "max": 85
+  },
+  "priceRangeText": "¥28 - ¥85/枚 (ステッカー・シール印刷、100枚〜)",
+  "moq": 30,
+  "leadTime": {
+    "minDays": 3,
+    "maxDays": 7,
+    "productionDays": 2,
+    "shippingDays": 1
+  },
+  "sharpHooks": [
+    "全国送料無料",
+    "最短翌日出荷対応商品あり",
+    "価格と最短出荷日がすぐわかる",
+    "365日24時間いつでも注文可能",
+    "1枚の小ロットから1000枚以上まで対応"
+  ],
+  "materialOptions": [
+    "紙製シール",
+    "フィルムステッカー（透明）",
+    "ホログラムステッカー",
+    "再剥離ステッカー",
+    "訂正シール",
+    "PP加工"
+  ],
+  "sizes": [
+    "正方形 (30x30mm, 50x50mm, 70x70mm)",
+    "長方形 (60x30mm, 80x50mm)",
+    "円形 (φ30mm, φ50mm, φ80mm)",
+    "カスタムサイズ対応"
+  ],
+  "freeShippingThreshold": null,
+  "paymentMethods": [
+    "クレジットカード",
+    "銀行振込",
+    "コンビニ払い",
+    "NP請求書払い"
+  ],
+  "globalShipping": false,
+  "capturedAt": "2026-07-13T20:00:00+08:00",
+  "dataSource": "https://www.raksul.com/printing/sticker/ (Japan #1 printing marketplace)",
+  "notes": "日本最大の印刷通販プラットフォーム。ステッカー・シール印刷、フライヤー、名刺、Tシャツ、冊子など全印刷カテゴリをカバー。顧客: 中小企業・個人事業主・イベント主催者。"
+}

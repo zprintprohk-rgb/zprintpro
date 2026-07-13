@@ -1,0 +1,58 @@
+{
+  "competitor": "てさげネット (Tesage.net)",
+  "slug": "tesage-net",
+  "category": "paper-bags",
+  "categoryName": {
+    "en": "Custom Paper Bags",
+    "ja": "紙袋印刷",
+    "zh-hk": "紙袋印刷"
+  },
+  "url": "https://www.tesage.net/",
+  "currency": "JPY",
+  "basePrice": 90,
+  "basePriceUnit": "per-piece",
+  "priceRange": {
+    "min": 30,
+    "max": 175
+  },
+  "priceRangeText": "¥30 - ¥175/枚 (フルオーダー/セミオーダー紙袋、500枚〜/100枚〜)",
+  "moq": 100,
+  "leadTime": {
+    "minDays": 5,
+    "maxDays": 30,
+    "productionDays": 5,
+    "shippingDays": 2
+  },
+  "sharpHooks": [
+    "小ロット紙袋販売量日本一",
+    "工場ダイレクト低価格",
+    "最短5営業日出荷",
+    "フルオーダー/セミオーダー/大ロット輪転",
+    "専属プランナー無料対応"
+  ],
+  "materialOptions": [
+    "コート紙",
+    "マット紙",
+    "上質紙",
+    "クラフト紙 (茶/白)",
+    "特殊紙",
+    "PP加工 (光沢/マット)",
+    "箔押し",
+    "エンボス"
+  ],
+  "sizes": [
+    "カスタムサイズ (A4 縦/横, ボトルサイズ他)",
+    "規格サイズ各種",
+    "ミニサイズ (小物用)"
+  ],
+  "freeShippingThreshold": null,
+  "paymentMethods": [
+    "クレジットカード",
+    "銀行振込",
+    "請求書払い (法人)"
+  ],
+  "globalShipping": true,
+  "capturedAt": "2026-07-13T20:00:00+08:00",
+  "dataSource": "https://www.tesage.net/ + industry knowledge (Japan #1 小ロット紙袋 specialist)",
+  "notes": "日本一の小ロット紙袋販売量。国内外100社以上の協力工場ネットワーク。フルオーダー500枚〜/セミオーダー100枚〜/輪転5000枚〜の3プラン。顧客: アパレル・小売・飲食・化粧品・ギフト。"
+}

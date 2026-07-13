@@ -1,0 +1,61 @@
+{
+  "competitor": "ラクスル 封筒印刷 (Raksul Envelopes)",
+  "slug": "raksul-envelopes",
+  "category": "envelopes",
+  "categoryName": {
+    "en": "Custom Envelopes",
+    "ja": "封筒印刷",
+    "zh-hk": "信封印刷"
+  },
+  "url": "https://www.raksul.com/printing/envelope/",
+  "currency": "JPY",
+  "basePrice": 18,
+  "basePriceUnit": "per-piece",
+  "priceRange": {
+    "min": 12,
+    "max": 95
+  },
+  "priceRangeText": "¥12 - ¥95/枚 (長3/角2/A4/洋封筒、50枚〜、単色/両面印刷)",
+  "moq": 50,
+  "leadTime": {
+    "minDays": 4,
+    "maxDays": 8,
+    "productionDays": 3,
+    "shippingDays": 1
+  },
+  "sharpHooks": [
+    "全国送料無料",
+    "最短当日出荷対応",
+    "50枚から対応",
+    "窓付き封筒対応",
+    "テンプレート・入稿ガイド充実"
+  ],
+  "materialOptions": [
+    "クラフト封筒 (茶/白)",
+    "白封筒 (封筒用紙)",
+    "洋封筒 (厚口)",
+    "窓付き封筒",
+    "DM向け封筒",
+    "特注サイズ対応"
+  ],
+  "sizes": [
+    "長3 (120x235mm)",
+    "長4 (90x205mm)",
+    "角2 (240x332mm)",
+    "角3 (216x277mm)",
+    "洋2 (114x162mm)",
+    "A4 (210x297mm)",
+    "カスタムサイズ"
+  ],
+  "freeShippingThreshold": null,
+  "paymentMethods": [
+    "クレジットカード",
+    "銀行振込",
+    "コンビニ払い",
+    "NP請求書払い"
+  ],
+  "globalShipping": false,
+  "capturedAt": "2026-07-13T20:00:00+08:00",
+  "dataSource": "https://www.raksul.com/printing/envelope/",
+  "notes": "ラクスルの封筒印刷。法人向けDM/請求/納品書用から個人向け招待状まで。窓付き封筒対応。当日出荷対応で短納期需要に強み。"
+}

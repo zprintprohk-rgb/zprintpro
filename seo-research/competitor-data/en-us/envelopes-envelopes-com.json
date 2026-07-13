@@ -1,0 +1,63 @@
+{
+  "competitor": "Envelopes.com",
+  "slug": "envelopes-com",
+  "category": "envelopes",
+  "categoryName": {
+    "en": "Custom Envelopes",
+    "ja": "封筒印刷",
+    "zh-hk": "信封印刷"
+  },
+  "url": "https://www.envelopes.com/",
+  "currency": "USD",
+  "basePrice": 0.18,
+  "basePriceUnit": "per-piece",
+  "priceRange": {
+    "min": 0.08,
+    "max": 1.45
+  },
+  "priceRangeText": "$0.08 - $1.45 per envelope (#10 business, A2/A6/A7/A9 announcement, 50-10000 qty)",
+  "moq": 50,
+  "leadTime": {
+    "minDays": 3,
+    "maxDays": 7,
+    "productionDays": 2,
+    "shippingDays": 2
+  },
+  "sharpHooks": [
+    "Custom Printed Envelopes Specialist",
+    "No Minimum Custom Print",
+    "Free Digital Proof",
+    "Quick Turnaround (3-5 days)",
+    "Eco-Friendly Recycled Options"
+  ],
+  "materialOptions": [
+    "24lb White Wove",
+    "28lb White Wove (Premium)",
+    "Recycled Kraft",
+    "Lined Envelopes",
+    "Window Envelopes",
+    "Security Tint (pattern printed inside)"
+  ],
+  "sizes": [
+    "#10 Business (4.125x9.5\")",
+    "#9 Business (3.875x8.875\")",
+    "A2 (4.375x5.75\")",
+    "A6 (4.75x6.5\")",
+    "A7 (5.25x7.25\")",
+    "A9 (5.75x8.75\")",
+    "Square (6.5x6.5\")",
+    "Custom"
+  ],
+  "freeShippingThreshold": 100,
+  "paymentMethods": [
+    "Visa",
+    "Mastercard",
+    "Amex",
+    "PayPal",
+    "Apple Pay"
+  ],
+  "globalShipping": true,
+  "capturedAt": "2026-07-13T20:00:00+08:00",
+  "dataSource": "https://www.envelopes.com/ + industry knowledge (US top custom envelope platform)",
+  "notes": "US top custom envelope platform. Wide size coverage (#10 business to A9 announcement). No minimums is key sharp hook. Wedding invitation envelopes, business mailings, direct mail. Strong with small business, wedding planners."
+}

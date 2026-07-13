@@ -1,0 +1,58 @@
+{
+  "competitor": "LuckyEnvelope",
+  "slug": "luckyenvelope",
+  "category": "red-packets",
+  "categoryName": {
+    "en": "Custom Red Packets",
+    "ja": "ポチ袋印刷",
+    "zh-hk": "利是封印刷"
+  },
+  "url": "https://www.luckyenvelope.com/",
+  "currency": "USD",
+  "basePrice": 0.65,
+  "basePriceUnit": "per-piece",
+  "priceRange": {
+    "min": 0.32,
+    "max": 3.2
+  },
+  "priceRangeText": "$0.32 - $3.20 per envelope (custom red packet, foil/gold printing, 50-5000 qty)",
+  "moq": 50,
+  "leadTime": {
+    "minDays": 7,
+    "maxDays": 14,
+    "productionDays": 5,
+    "shippingDays": 3
+  },
+  "sharpHooks": [
+    "Red Packet Specialist",
+    "Gold Foil Hot Stamping",
+    "Custom Designs (Logo, Year)",
+    "Asian Cultural Events (Lunar New Year)",
+    "Bulk Discount"
+  ],
+  "materialOptions": [
+    "Red Cardstock (Premium)",
+    "Gold Foil Hot Stamping",
+    "Embossing/Debossing",
+    "Ribbon Tie",
+    "Window Cutout",
+    "Embossed Pattern"
+  ],
+  "sizes": [
+    "Standard Chinese (3.5x6.5\")",
+    "Vietnamese Lì Xì (small)",
+    "Korean Bokjumeoni (3.5x7\")",
+    "Custom Asian Style"
+  ],
+  "freeShippingThreshold": 200,
+  "paymentMethods": [
+    "Visa",
+    "Mastercard",
+    "Amex",
+    "PayPal"
+  ],
+  "globalShipping": true,
+  "capturedAt": "2026-07-13T20:00:00+08:00",
+  "dataSource": "https://www.luckyenvelope.com/ + industry knowledge (US top custom red packet platform, niche market)",
+  "notes": "US niche market - custom red packets primarily for Asian-American communities (Lunar New Year, weddings). Limited competition. Strong with Asian restaurants, cultural event organizers, banks (CNY promo), wedding planners. High-margin specialty product."
+}
