@@ -157,6 +157,43 @@ export function formatPriceForRegion(
 }
 
 // ============================================================================
+// 2026-07-13 Step 1: per-locale basePrice helper
+// 优先用 product.basePrice_en / product.basePrice_ja（locale-optimized 竞品对标价）
+// Fallback: convertHKDTo(product.basePrice, 'USD' / 'JPY') 用静态汇率
+// ============================================================================
+
+/** 取 Product 在指定 locale 下的 (list price) basePrice */
+export function getLocaleBasePrice(
+  product: { basePrice: number; basePrice_en?: number; basePrice_ja?: number },
+  locale: string | undefined | null
+): { amount: number; currency: 'HKD' | 'USD' | 'JPY'; symbol: string; text: string } {
+  if (locale === 'zh-hk') {
+    return { amount: product.basePrice, currency: 'HKD', symbol: 'HK$', text: `HK$${product.basePrice.toFixed(2)}` };
+  }
+  if (locale === 'en') {
+    const usd = product.basePrice_en ?? convertHKDTo(product.basePrice, 'USD');
+    return { amount: usd, currency: 'USD', symbol: '$', text: `$${usd.toFixed(2)}` };
+  }
+  if (isJALocale(locale)) {
+    const jpy = product.basePrice_ja ?? convertHKDTo(product.basePrice, 'JPY');
+    return { amount: jpy, currency: 'JPY', symbol: '¥', text: `¥${jpy.toLocaleString()}` };
+  }
+  // Unknown locale: fall back to HKD
+  return { amount: product.basePrice, currency: 'HKD', symbol: 'HK$', text: `HK$${product.basePrice.toFixed(2)}` };
+}
+
+/** 取 Product 在指定 locale 下的 basePrice amount (仅数值, 用于计算) */
+export function getLocaleBasePriceAmount(
+  product: { basePrice: number; basePrice_en?: number; basePrice_ja?: number },
+  locale: string | undefined | null
+): number {
+  if (locale === 'zh-hk') return product.basePrice;
+  if (locale === 'en') return product.basePrice_en ?? convertHKDTo(product.basePrice, 'USD');
+  if (isJALocale(locale)) return product.basePrice_ja ?? convertHKDTo(product.basePrice, 'JPY');
+  return product.basePrice;
+}
+
+// ============================================================================
 // 原有报价计算（书籍/画册类）
 // ============================================================================
 
