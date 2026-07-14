@@ -41,14 +41,28 @@ interface SkuAudit {
 // 本 audit 职责分离: 只检 重复/NAP/长度/FAQ/超长/CTA/堆砌, 简体字交给 scan-simplified.mjs
 const SIMPLIFIED_CHARS = new Set(); // 故意空集 (职责分离)
 
+// CLI 参数 (2026-07-15 P3 扩展支持 en/ja)
+const localeArg = process.argv.find(a => a.startsWith('--locale='))?.split('=')[1] as 'zh-hk' | 'en' | 'ja' | undefined;
+const ACTIVE_LOCALE: 'zh-hk' | 'en' | 'ja' = (localeArg && ['zh-hk', 'en', 'ja'].includes(localeArg)) ? localeArg : 'zh-hk';
+
 // 禁区词 (NAP 污染 §13.10)
 const FORBIDDEN_NAP = ['深圳', 'Shenzhen', '深セン', '智印港', '智印印港'];
 
-// FAQ 触发词 (zh-hk)
-const FAQ_TRIGGERS_ZHHK = ['多少', '什么', '哪裡', '哪些', '如何', '怎么', '可以嗎', '嗎', '呢', '這款', '這是', '能否'];
+// FAQ 触发词 (按 locale 区分, 2026-07-15 P3 扩展)
+const FAQ_TRIGGERS_BY_LOCALE: Record<string, string[]> = {
+  'zh-hk': ['多少', '什么', '哪裡', '哪些', '如何', '怎么', '可以嗎', '嗎', '呢', '這款', '這是', '能否'],
+  'en': ['how many', 'how much', 'what is', 'where', 'which', 'can i', 'do you', 'are there', '?'],
+  'ja': ['どのくらい', 'どこ', '何です', 'ですか', 'ますか', 'できますか', '？', 'どう'],
+};
+const FAQ_TRIGGERS_ZHHK = FAQ_TRIGGERS_BY_LOCALE[ACTIVE_LOCALE];
 
-// CTA 触发词
-const CTA_TRIGGERS_ZHHK = ['報價', '查詢', '聯絡', 'WhatsApp', '聯繫', '即時', '免費', '點擊', '獲取', '下單'];
+// CTA 触发词 (按 locale 区分, 2026-07-15 P3 扩展)
+const CTA_TRIGGERS_BY_LOCALE: Record<string, string[]> = {
+  'zh-hk': ['報價', '查詢', '聯絡', 'WhatsApp', '聯繫', '即時', '免費', '點擊', '獲取', '下單'],
+  'en': ['Free Shipping', 'Free Design', 'Free Mockup', 'No Minimum', 'No MOQ', 'Same Day', 'Fast Turnaround', 'Made in USA', 'Made for USA', 'Get Quote', 'Order Now', '100 MOQ'],
+  'ja': ['無料', 'デザイン', '見積もり', '即納', '100枚', '高品質', '短納期', 'DHL', '日本向け', 'FSC認証', '小ロット', 'ご注文'],
+};
+const CTA_TRIGGERS_ZHHK = CTA_TRIGGERS_BY_LOCALE[ACTIVE_LOCALE];
 
 // 流量分类启发式 (按 SKU 类型)
 function classifyTraffic(p: any): 'high' | 'mid' | 'low' {
@@ -220,9 +234,9 @@ for (const p of products) {
   }
 
   const entry = skuSeoData[slug];
-  const title = entry.seo['zh-hk']?.title;
-  const meta = entry.seo['zh-hk']?.description;
-  const alt = entry.imageAlt?.['zh-hk'];
+  const title = entry.seo[ACTIVE_LOCALE]?.title;
+  const meta = entry.seo[ACTIVE_LOCALE]?.description;
+  const alt = entry.imageAlt?.[ACTIVE_LOCALE];
 
   audit.title = title;
   audit.meta = meta;
@@ -248,7 +262,7 @@ for (const p of products) {
 
 // === 输出报告 ===
 console.log('='.repeat(80));
-console.log('P1 全局 SEO 元数据审计报告 (zh-hk)');
+console.log(`P1 全局 SEO 元数据审计报告 (${ACTIVE_LOCALE})`);
 console.log('='.repeat(80));
 console.log(`总 SKU 数: ${products.length}`);
 console.log(`已审计: ${audits.length} (跳过 ${audits.filter(a => !a.hasSkuSeo).length} 个无 sku-seo 条目)`);
@@ -294,10 +308,10 @@ if (highTrafficIssues > 5) {
 
 // === 写报告到 docs/ ===
 const reportLines: string[] = [];
-reportLines.push('# P1 全局 SEO 元数据审计报告 (zh-hk)');
+reportLines.push(`# P1 全局 SEO 元数据审计报告 (${ACTIVE_LOCALE})`);
 reportLines.push('');
-reportLines.push('**日期**: 2026-07-14');
-reportLines.push('**范围**: 79 SKU × zh-hk (Title + Meta Description + Image Alt)');
+reportLines.push('**日期**: 2026-07-15');
+reportLines.push(`**范围**: 79 SKU × ${ACTIVE_LOCALE} (Title + Meta Description + Image Alt)`);
 reportLines.push('**遵循**: AGENTS.md §11 (主营) / §13.10 (NAP 脱钩) / §13.16.1 (繁体字)');
 reportLines.push('');
 reportLines.push('## 📊 总览');
@@ -393,5 +407,5 @@ reportLines.push('');
 
 // 末尾：写报告 (顶层 await 在 CJS 下不支持,包成 async IIFE)
 import { writeFileSync } from 'node:fs';
-writeFileSync('docs/audit-zhhk-seo-2026-07-14.md', reportLines.join('\n'), 'utf8');
-console.log('\n报告已写入: docs/audit-zhhk-seo-2026-07-14.md');
+writeFileSync(`docs/audit-${ACTIVE_LOCALE}-seo-2026-07-15.md`, reportLines.join('\n'), 'utf8');
+console.log(`\n报告已写入: docs/audit-${ACTIVE_LOCALE}-seo-2026-07-15.md`);
