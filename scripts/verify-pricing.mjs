@@ -1,4 +1,4 @@
-import { getIndependentPrice, convertPriceRangeString } from '../src/lib/pricing.ts';
+﻿import { getIndependentPrice, convertPriceRangeString } from '../src/lib/pricing.ts';
 
 const testSlugs = [
   'a4-flyers', 'waterproof-stickers', 'a2-posters',

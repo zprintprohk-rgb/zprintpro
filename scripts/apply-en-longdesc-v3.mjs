@@ -1,4 +1,4 @@
-/**
+﻿/**
  * apply-en-longdesc-v3.mjs — 5 P0 SKU 的 EN longDescription 教科書 v3 增强
  *
  * 设计：把 5 个 SKU 的 longDescriptionEn 从纯文本升级为 zh 教科書 v3 验证过的 6 H3 + 2 table 结构

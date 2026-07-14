@@ -491,7 +491,8 @@ export function buildProductH1En(
   productTitle: string,
   catSlug: string
 ): string {
-  const hook = getHookEn(catSlug);
+  const sellingPoint = getHookEn(catSlug);
+  const regionHook = 'Global Shipping';
 
   // 智能截断：长标题在 "for "/" — "/"," 处截断取前半段
   let title = productTitle;
@@ -516,11 +517,22 @@ export function buildProductH1En(
     }
   }
 
-  const variant1 = `${title} · ${hook} · ZprintPro`;
+  // 去重逻辑：如果 title 已含 sellingPoint，跳过 sellingPoint
+  const titleLower = title.toLowerCase();
+  const sellingPointLower = sellingPoint.toLowerCase();
+  let sellingPointToUse = sellingPoint;
+  if (titleLower.includes(sellingPointLower)) {
+    sellingPointToUse = '';
+  }
+
+  const variant1 = `${title}${sellingPointToUse ? ` · ${sellingPointToUse}` : ''}${regionHook ? ` · ${regionHook}` : ''} · ZprintPro`;
   if (variant1.length <= MAX_H1_CHARS_EN) return variant1;
 
-  const variant2 = `${title} · ZprintPro`;
-  return variant2;
+  const variant2 = `${title}${sellingPointToUse ? ` · ${sellingPointToUse}` : ''} · ZprintPro`;
+  if (variant2.length <= MAX_H1_CHARS_EN) return variant2;
+
+  const variant3 = `${title} · ZprintPro`;
+  return variant3;
 }
 
 // ============================================================================
@@ -544,12 +556,22 @@ export function buildProductH1Ja(
   productTitle: string,
   catSlug: string
 ): string {
-  const hook = getHookJa(catSlug);
+  const sellingPoint = getHookJa(catSlug);
+  const regionHook = '香港の印刷専門家';
   const title = productTitle;
 
-  const variant1 = `${title} · ${hook} · ZprintPro`;
+  // 去重逻辑：如果 title 已含 sellingPoint，跳过 sellingPoint
+  let sellingPointToUse = sellingPoint;
+  if (title.includes(sellingPoint)) {
+    sellingPointToUse = '';
+  }
+
+  const variant1 = `${title}${sellingPointToUse ? ` · ${sellingPointToUse}` : ''}${regionHook ? ` · ${regionHook}` : ''} · ZprintPro`;
   if (variant1.length <= MAX_H1_CHARS_JA) return variant1;
 
-  const variant2 = `${title} · ZprintPro`;
-  return variant2;
+  const variant2 = `${title}${sellingPointToUse ? ` · ${sellingPointToUse}` : ''} · ZprintPro`;
+  if (variant2.length <= MAX_H1_CHARS_JA) return variant2;
+
+  const variant3 = `${title} · ZprintPro`;
+  return variant3;
 }

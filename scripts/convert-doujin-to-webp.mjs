@@ -1,4 +1,4 @@
-/**
+﻿/**
  * 将 DoujinSKU 5 张代表图转为 webp，目标 ~100KB
  * 用法：node scripts/convert-doujin-to-webp.mjs
  */

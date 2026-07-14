@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+﻿#!/usr/bin/env node
 /**
  * Manual recovery script for 2026-07-06 weekly cron crash.
  * Inject 3 Tier B blogs (zh-hk / en / ja) into src/data/blog-data/{locale}.json

@@ -1,4 +1,4 @@
-/**
+﻿/**
  * 把 messages/_legal-content.json 的内容合并到 8 个 locale json 的 legal 节点
  * 策略：只补缺失的 key，不覆盖已有翻译（保护已翻译内容）
  *

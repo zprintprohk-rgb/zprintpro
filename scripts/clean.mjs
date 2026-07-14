@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+﻿#!/usr/bin/env node
 /**
  * 跨平台 .next 清理脚本
  * 2026-06-07 创建

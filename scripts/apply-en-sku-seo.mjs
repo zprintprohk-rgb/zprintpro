@@ -1,4 +1,4 @@
-/**
+﻿/**
  * apply-en-sku-seo.mjs — 29 SKU 的 EN SEO 字段批量部署器 (v4 — 长度校准)
  *
  * v4 修复：

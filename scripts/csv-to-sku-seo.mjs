@@ -1,4 +1,4 @@
-/**
+﻿/**
  * 把 zprintpro-sku-seo-data.csv 转成 src/data/sku-seo-data.ts
  * 用法：node scripts/csv-to-sku-seo.mjs
  * 输出：src/data/sku-seo-data.ts (slug → {zh-hk, en, ja} → SEO metadata)

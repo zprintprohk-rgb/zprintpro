@@ -1,9 +1,0 @@
-P0: 集成 DoujinSKU 到日本首页
-
-- src/app/[locale]/page.tsx:
-  * locale === 'ja' 时挂载 DoujinSKU 组件
-  * 位置：KnowledgeSection 之后（首页底部）
-  * 不动 zh-hk/en locale（保排名）
-- 其他 locale 完全不动
-
-Co-Authored-By: MiniMax <noreply@MiniMax.dev>

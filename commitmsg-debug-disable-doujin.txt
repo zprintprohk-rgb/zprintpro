@@ -1,8 +1,0 @@
-debug: 临时禁用 DoujinSKU 排查 JA 首页 500
-
-- DoujinSKU 是 JA 首页 500 的嫌疑组件
-- 其他 JA 页 (category/stickers, product, blog) 都 200
-- 禁用验证后 JA 首页应恢复 200, 然后定位根因
-- 确认是 DoujinSKU 后: 永久修复 + 恢复挂载
-
-Co-Authored-By: MiniMax <noreply@MiniMax.dev>

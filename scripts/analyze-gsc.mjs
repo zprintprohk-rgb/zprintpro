@@ -1,4 +1,4 @@
-// 替代 auto_patch_backup.py 的核心逻辑
+﻿// 替代 auto_patch_backup.py 的核心逻辑
 // 因为本机没 Python，用 Node 跑同样的：读 GSC CSV → 找高潜力词 → 提 FAQ 建议
 import fs from 'node:fs';
 import path from 'node:path';

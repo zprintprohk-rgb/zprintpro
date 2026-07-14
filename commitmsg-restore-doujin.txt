@@ -1,9 +1,0 @@
-restore: DoujinSKU 完整功能 (5 SKU + img + onClick + WhatsApp CTA)
-
-- 保留 'use client' directive + inline window.gtag 修法
-- 完整恢复 5 SKU 卡片 (img + 价格 + 标签 + 渐变 hover)
-- 底部 WhatsApp CTA 按钮
-- 之前几个 debug commit 保留作为审计 trail
-- Tsc 0 errors
-
-Co-Authored-By: MiniMax <noreply@MiniMax.dev>

@@ -1,9 +1,0 @@
-P1.1: A/B 实际接入 HeroBanner（战略高度 8.5→9+）
-
-- 客户端 useEffect 读 zp_ab_bucket cookie
-- CTA 文案按 variant 切换：免費獲取報價 vs 30秒獲取報價
-- 加 hero_ab_exposure + hero_cta_click 2 个事件埋点
-- 桌面端 + 移动端按钮都接入
-- A/B 变化无侵入：layout/SEO/Schema 全保留
-
-Co-Authored-By: MiniMax <noreply@MiniMax.dev>

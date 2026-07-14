@@ -1,4 +1,4 @@
-// Robust rewrite: process LOCALE in dependency order (zh-hk first, then en, then ja),
+﻿// Robust rewrite: process LOCALE in dependency order (zh-hk first, then en, then ja),
 // but each locale section is processed in isolation with fresh indices.
 // Do buying-guides.ts separately.
 

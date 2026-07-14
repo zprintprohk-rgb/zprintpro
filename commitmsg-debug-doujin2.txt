@@ -1,9 +1,0 @@
-debug: DoujinSKU 极简化（只保留标题）定位 500 根因
-
-- 第一次尝试: <img> 替代 next/image, 仍然 500
-- 现在: 移除 5 SKU 网格 + WhatsApp CTA, 只保留标题
-- 推到 CF Pages 后: JA 首页应该 200
-- 然后用二分法逐步加回原内容, 找到 500 的最小触发点
-- 一旦定位, 永久修复 + 恢复完整 DoujinSKU
-
-Co-Authored-By: MiniMax <noreply@MiniMax.dev>
