@@ -4,10 +4,11 @@ import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { CreditCard, Tag, ShoppingBag, FileText, ImageIcon, Package, BookOpen, Flag, Calendar, Mail, Gift, GraduationCap, Box } from 'lucide-react';
-import { Product } from '@/data/products';
+import { Product, categories } from '@/data/products';
 import { Locale } from '@/lib/seo';
 import { shouldShowPrice, convertPriceRangeString } from '@/lib/pricing';
 import { getProductMainImage } from '@/lib/product-image';
+import { buildProductH1ZhHk } from '@/lib/h1-builder';
 
 interface CategoryProductCardProps {
   product: Product;
@@ -49,13 +50,24 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
   const hasImage = imageSrc && !imgError;
 
   const getName = () => {
-    // 2026-07-15 列表页标题同步: zh-hk 优先用 V8 优化版 title_zh (无 KW 重复, 含 cat KW + sharp hook)
-    // 14 类目页全用 CategoryProductCard, 改 1 处覆盖所有 14 cat
-    // en/ja 暂时保持 nameEn/nameJa (V6 模板, 留 P3 WARN 收尾)
+    // 2026-07-15 列表页标题同步 V8 优化版:
+    //   1. zh-hk 优先用 title_zh (V8 优化, 已有 47/85 SKU 补了)
+    //   2. fallback 用 h1-builder v2 buildProductH1ZhHk 实时生成 (覆盖 38 没 title_zh 的 SKU)
+    //   3. 14 类目页全用 CategoryProductCard, 1 处覆盖
+    //   4. en/ja 保持 nameEn/nameJa (留 P3 WARN 收尾)
     switch (locale) {
       case 'en': return product.nameEn;
       case 'ja': return product.nameJa;
-      default: return (product as any).title_zh || product.name;
+      default: {
+        if ((product as any).title_zh) return (product as any).title_zh;
+        const cat = categories.find(c => c.slug === product.category);
+        return buildProductH1ZhHk(
+          product.name,
+          (cat as any)?.name_zh || (cat as any)?.name || product.category,
+          product.category,
+          product.slug
+        );
+      }
     }
   };
 

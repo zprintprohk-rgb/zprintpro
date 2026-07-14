@@ -5,7 +5,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Star, CreditCard, Tag, ShoppingBag, FileText, ImageIcon, Package, BookOpen, Flag, Calendar, Mail, Gift, GraduationCap, Box } from 'lucide-react';
 import { Locale } from '@/lib/seo';
-import { Product } from '@/data/products';
+import { Product, categories } from '@/data/products';
+import { buildProductH1ZhHk } from '@/lib/h1-builder';
 
 interface ProductCardProps {
   product: Product;
@@ -55,13 +56,23 @@ export function ProductCard({ product, locale }: ProductCardProps) {
   const [imgError, setImgError] = useState(false);
 
   const getProductName = () => {
-    // 2026-07-15 列表页标题同步: zh-hk 优先用 V8 优化版 title_zh (无 KW 重复, 含 cat KW + sharp hook)
-    // 避免 V6 模板 product.name 出现 "A2海報印刷 | A1/A2 海報 / 展覽海報" 4次 "海報" 重复
-    // en/ja 暂时保持 nameEn/nameJa (V6 模板, 留 P3 WARN 收尾)
+    // 2026-07-15 列表页标题同步 V8 优化版:
+    //   1. zh-hk 优先用 title_zh (V8 优化, 已有 47/85 SKU 补了)
+    //   2. fallback 用 h1-builder v2 buildProductH1ZhHk 实时生成 (覆盖 38 没 title_zh 的 SKU)
+    //   3. en/ja 保持 nameEn/nameJa (留 P3 WARN 收尾, 不在本次范围)
     switch (locale) {
       case 'en': return product.nameEn;
       case 'ja': return product.nameJa;
-      default: return (product as any).title_zh || product.name;
+      default: {
+        if ((product as any).title_zh) return (product as any).title_zh;
+        const cat = categories.find(c => c.slug === product.category);
+        return buildProductH1ZhHk(
+          product.name,
+          (cat as any)?.name_zh || (cat as any)?.name || product.category,
+          product.category,
+          product.slug
+        );
+      }
     }
   };
 
