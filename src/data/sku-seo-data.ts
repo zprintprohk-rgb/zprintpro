@@ -58,7 +58,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "300g premium glossy paper with professional 4-color printing. Optional matte or glossy lamination for a refined touch. ZprintPro offers professional Premium Business Cards services in Hong Kong. High quality",
+      "zh-hk": "專業商務印刷 / 專業商務印刷 | 香港專業商務印刷訂製 300g銅版紙或250g啞粉藝術紙 | ZprintPro智印雲",
       "en": "Premium business cards with foil stamping and spot UV on 300g-400g matte or cotton paper — ZprintPro",
       "ja": " fast delivery."
     }
@@ -108,7 +108,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "這款名片的起訂量是多少？",
+      "zh-hk": "專業商務印刷 / 專業商務印刷 | 香港專業商務印刷訂製 400g超厚銅版紙 | ZprintPro智印雲",
       "en": "Custom thick business cards 400g with foil uv multi-finish, premium materials — ZprintPro",
       "ja": "名片印刷需要多長時間？"
     }
@@ -261,7 +261,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "名片印刷需要多長時間？",
+      "zh-hk": "專業商務印刷 / 專業商務印刷 | 香港專業商務印刷訂製 300g啞粉紙或環保紙 | ZprintPro智印雲",
       "en": "Matte laminated business cards with soft-touch finish and fingerprint resistance, 300-400g art card — ZprintPro",
       "ja": "可以免費設計名片嗎？"
     }
@@ -564,7 +564,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "",
+      "zh-hk": "透明貼紙 / 不干膠 | 香港透明貼紙印刷 透明 PET | ZprintPro智印雲",
       "en": "Custom transparent stickers with die-cut vinyl, premium materials — ZprintPro",
       "ja": "一般為100張起訂，部分特殊工藝需500張起。"
     }
@@ -615,7 +615,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "這款貼紙的最小訂購量是多少？",
+      "zh-hk": "可移貼紙(無殘膠) / 不干膠 | 香港可移貼紙(無殘膠)印刷 PP 合成紙／PET 透明膜 | ZprintPro智印雲",
       "en": "Removable stickers on vinyl with repositionable adhesive, peels off cleanly within 90 days — ZprintPro",
       "ja": "貼紙可以模切成任意形狀嗎？"
     }
@@ -666,7 +666,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "",
+      "zh-hk": "小批量貼紙 / 不干膠 | 香港小批量貼紙印刷 PVC 防水／PP 合成紙 | ZprintPro智印雲",
       "en": "Small batch custom stickers in vinyl, holographic, kraft, and metallic foil, 50+ minimum — ZprintPro",
       "ja": "一般為100張起訂，部分特殊工藝需500張起。"
     }
@@ -717,7 +717,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "",
+      "zh-hk": "異形模切貼紙 / 不干膠 | 香港異形模切貼紙印刷 PVC／PP 合成紙／透明 PET | ZprintPro智印雲",
       "en": "Custom die-cut stickers in vinyl and holographic with precision digital cutting, any shape — ZprintPro",
       "ja": "一般為100張起訂，部分特殊工藝需500張起。"
     }
@@ -768,7 +768,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "這款貼紙的最小訂購量是多少？",
+      "zh-hk": "燙金貼紙 / 不干膠 | 香港燙金貼紙印刷 銅版紙／合成紙 | ZprintPro智印雲",
       "en": "Foil stickers in gold, silver, rose gold, copper, and holographic, hot stamp foil — ZprintPro",
       "ja": "貼紙可以模切成任意形狀嗎？"
     }
@@ -819,7 +819,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "這款貼紙的最小訂購量是多少？",
+      "zh-hk": "防偽貼紙 / 不干膠 | 香港防偽貼紙印刷 易碎紙／VOID／合成紙＋全息膜等（依方案） | ZprintPro智印雲",
       "en": "Security stickers with void-release pattern, destructible vinyl, and serialized QR codes for track-and-trace — ZprintPro",
       "ja": "貼紙可以模切成任意形狀嗎？"
     }
@@ -870,7 +870,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "",
+      "zh-hk": "螢光貼紙 / 不干膠 | 香港螢光貼紙印刷 螢光 PVC 膜／螢光紙 | ZprintPro智印雲",
       "en": "Fluorescent stickers in neon pink, orange, yellow, green, blue, and red with UV-reactive glow — ZprintPro",
       "ja": "一般為100張起訂，部分特殊工藝需500張起。"
     }
@@ -922,7 +922,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "環保牛皮紙材質，質樸自然，深受消費者喜愛，支持印刷即日速遞送貨。適合服裝店、禮品店、咖啡店。多種尺寸可選，可定制Logo印刷。智印雲提供專業的牛皮紙袋服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。",
+      "zh-hk": "牛皮紙袋 / 環保 | 香港牛皮紙袋印刷 牛皮紙 120–200g 級（依報價） | ZprintPro智印雲",
       "en": "Custom kraft paper bags with cotton rope handles, 120-300g FSC certified — ZprintPro",
       "ja": ""
     }
@@ -973,7 +973,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "",
+      "zh-hk": "白卡紙袋 / 環保 | 香港白卡紙袋印刷 白卡紙 200–300g 級（依報價） | ZprintPro智印雲",
       "en": "Custom white card bags with premium custom, premium materials — ZprintPro",
       "ja": "紙袋的最小訂購量是多少？"
     }
@@ -1025,7 +1025,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "",
+      "zh-hk": "禮品紙袋 / 環保 | 香港禮品紙袋印刷 白卡／特種紙／珠光紙（依稿） | ZprintPro智印雲",
       "en": "Custom gift paper bags with ribbon or cotton rope handles, 210-300g art card, foil stamping — ZprintPro",
       "ja": "一般為100個起訂，大批量訂單價格更優惠。"
     }
@@ -1127,7 +1127,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "紙袋的最小訂購量是多少？",
+      "zh-hk": "手挽紙袋 / 環保 | 香港手挽紙袋印刷 牛皮／白卡 | ZprintPro智印雲",
       "en": "Custom handle paper bags with cotton rope or flat paper handles, 120-200g kraft, 4-color CMYK — ZprintPro",
       "ja": "可以定制紙袋的尺寸和顏色嗎？"
     }
@@ -1228,7 +1228,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "紙袋的最小訂購量是多少？",
+      "zh-hk": "大號紙袋 / 環保 | 香港大號紙袋印刷 FSC 認證紙 | ZprintPro智印雲",
       "en": "Large reinforced paper bags with twin cotton rope handles and double-glued base, 200-300g kraft, 12-20kg load — ZprintPro",
       "ja": "可以定制紙袋的尺寸和顏色嗎？"
     }
@@ -1280,7 +1280,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "",
+      "zh-hk": "A4宣傳單張 / 雙面四色 | 香港A4宣傳單張印刷 157g銅版紙或128g啞粉紙 | ZprintPro智印雲",
       "en": "Custom A4 flyers with gloss or matte art paper, double-sided CMYK, 100-flyer MOQ — ZprintPro",
       "ja": "傳單的最小訂購量是多少？"
     }
@@ -1331,7 +1331,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "",
+      "zh-hk": "A5宣傳單張 / 雙面四色 | 香港A5宣傳單張印刷 128g銅版紙或100g書紙 | ZprintPro智印雲",
       "en": "Custom a5 flyers with same-day printing, premium materials — ZprintPro",
       "ja": "傳單的最小訂購量是多少？"
     }
@@ -1382,7 +1382,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "傳單的最小訂購量是多少？",
+      "zh-hk": "雙面宣傳單張 / 雙面四色 | 香港雙面宣傳單張印刷 157g銅版紙或128g啞粉紙 | ZprintPro智印雲",
       "en": "Custom double sided flyers with same-day printing, premium materials — ZprintPro",
       "ja": "傳單支持雙面印刷嗎？"
     }
@@ -1482,7 +1482,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "傳單的最小訂購量是多少？",
+      "zh-hk": "厚紙宣傳單張 / 雙面四色 | 香港厚紙宣傳單張印刷 200g或250g銅版紙 | ZprintPro智印雲",
       "en": "Custom thick paper flyers with same-day printing, premium materials — ZprintPro",
       "ja": "傳單支持雙面印刷嗎？"
     }
@@ -1533,7 +1533,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "傳單的最小訂購量是多少？",
+      "zh-hk": "即日宣傳單張 / 雙面四色 | 香港即日宣傳單張印刷 157g銅版紙 | ZprintPro智印雲",
       "en": "Custom same day flyers with same-day printing, premium materials — ZprintPro",
       "ja": "傳單支持雙面印刷嗎？"
     }
@@ -1635,7 +1635,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "",
+      "zh-hk": "A2海報印刷 / 防水材質 | 香港A2海報印刷 157g 銅版紙（可升 200g／相紙） | ZprintPro智印雲",
       "en": "A2 posters in gloss or matte art paper, 420x594mm, 4-color CMYK printing for retail and events — ZprintPro",
       "ja": "海報的最大尺寸可以做到多大？"
     }
@@ -1687,7 +1687,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "",
+      "zh-hk": "A1大幅海報 / 防水材質 | 香港A1大幅海報印刷 157–200g 銅版或相紙 | ZprintPro智印雲",
       "en": "A1 posters on premium matte or photo paper with foam board mounting for retail and trade shows — ZprintPro",
       "ja": "我們支持最大A0尺寸（841×1189mm），更大尺寸可定制拼接。"
     }
@@ -1739,7 +1739,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "海報的最大尺寸可以做到多大？",
+      "zh-hk": "戶外海報 / 防水材質 | 香港戶外海報印刷 戶外 PVC／PET／合成紙 | ZprintPro智印雲",
       "en": "Outdoor posters on PVC banner or vinyl with UV lamination and grommets for storefront and event use — ZprintPro",
       "ja": "海報適合戶外使用嗎？"
     }
@@ -1841,7 +1841,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "海報的最大尺寸可以做到多大？",
+      "zh-hk": "藝術海報 / 防水材質 | 香港藝術海報印刷 PP 合成紙 | ZprintPro智印雲",
       "en": "Museum-quality art posters on matte cotton or Hahnemuhle Photo Rag with archival pigment inks — ZprintPro",
       "ja": "海報適合戶外使用嗎？"
     }
@@ -1892,7 +1892,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "海報的最大尺寸可以做到多大？",
+      "zh-hk": "背膠海報 / 防水材質 | 香港背膠海報印刷 150g–180g 背膠 PP／鑄造級 PVC | ZprintPro智印雲",
       "en": "Adhesive posters on vinyl with peel-and-stick backing for windows, walls, and vehicles — ZprintPro",
       "ja": "海報適合戶外使用嗎？"
     }
@@ -1944,7 +1944,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "包裝盒的最小訂購量是多少？",
+      "zh-hk": "禮品盒定製 / 訂製 | 香港禮品盒定製訂製 白卡紙／牛皮裱面／硬紙板結構（依報價） | ZprintPro智印雲",
       "en": "Custom gift boxes in rigid setup with magnetic closure and foil-stamped logos — ZprintPro",
       "ja": "可以定制包裝盒的尺寸和結構嗎？"
     }
@@ -2103,7 +2103,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "包裝盒的最小訂購量是多少？",
+      "zh-hk": "快遞盒/飛機盒 / 訂製 | 香港快遞盒/飛機盒訂製 E／B 坑瓦楞或白卡裱瓦（依載重） | ZprintPro智印雲",
       "en": "Custom mailer boxes with self-locking tuck-front design, kraft or full-color print — ZprintPro",
       "ja": "可以定制包裝盒的尺寸和結構嗎？"
     }
@@ -2256,7 +2256,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "利是封的最小訂購量是多少？",
+      "zh-hk": "燙金利是封 / 燙金 UV | 香港燙金利是封印刷 120g紅色紙張 | ZprintPro智印雲",
       "en": "Custom foil red packets with gold foil print, premium materials — ZprintPro",
       "ja": "可以燙金定制公司Logo嗎？"
     }
@@ -2306,7 +2306,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "利是封的最小訂購量是多少？",
+      "zh-hk": "浮雕利是封 / 燙金 UV | 香港浮雕利是封印刷 150g紅色紙張 | ZprintPro智印雲",
       "en": "Custom embossed red packets with gold foil print, premium materials — ZprintPro",
       "ja": "可以燙金定制公司Logo嗎？"
     }
@@ -2558,7 +2558,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "年曆的最小訂購量是多少？",
+      "zh-hk": "掛牆年曆 / 企業禮品 | 香港掛牆年曆印刷 250g–300g銅版紙或啞粉紙 | ZprintPro智印雲",
       "en": "Custom wall calendars with wire-bound spiral, premium materials — ZprintPro",
       "ja": "可以定制年曆的內頁設計嗎？"
     }
@@ -2609,7 +2609,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "年曆的最小訂購量是多少？",
+      "zh-hk": "座檯年曆 / 企業禮品 | 香港座檯年曆印刷 200g–250g銅版紙或卡紙 | ZprintPro智印雲",
       "en": "Custom desk calendars with wire-bound spiral, premium materials — ZprintPro",
       "ja": "可以定制年曆的內頁設計嗎？"
     }
@@ -2860,7 +2860,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "餐牌的最小訂購量是多少？",
+      "zh-hk": "PVC餐牌 / 防水覆膜 | 香港PVC餐牌製作 0.5mm–1.0mm透明或白色PVC膠片 | ZprintPro智印雲",
       "en": "Custom pvc menus with laminated durable, premium materials — ZprintPro",
       "ja": "餐牌防水嗎？"
     }
@@ -2911,7 +2911,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "餐牌的最小訂購量是多少？",
+      "zh-hk": "過膠餐牌 / 防水覆膜 | 香港過膠餐牌製作 200g–250g銅版紙或啞粉紙 | ZprintPro智印雲",
       "en": "Custom laminated menus with laminated durable, premium materials — ZprintPro",
       "ja": "餐牌防水嗎？"
     }
@@ -2962,7 +2962,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "",
+      "zh-hk": "精裝餐牌 / 防水覆膜 | 香港精裝餐牌製作 硬紙板封面裱糊銅版紙 | ZprintPro智印雲",
       "en": "Custom hardcover menus with laminated durable, premium materials — ZprintPro",
       "ja": "一般為50個起訂，一次性餐牌可接受10個起。"
     }
@@ -3113,7 +3113,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "",
+      "zh-hk": "戶外燈布噴繪 / 高清噴繪 | 香港戶外燈布噴繪製作 外光／內光 PVC 燈布（依場景） | ZprintPro智印雲",
       "en": "Custom outdoor vinyl banners with wind-resistant, premium materials — ZprintPro",
       "ja": "我們支持最寬5米的無縫拼接，長度不限。"
     }
@@ -3164,7 +3164,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "橫幅的最大尺寸可以做到多大？",
+      "zh-hk": "易拉寶 / 高清噴繪 | 香港易拉寶製作 PET／PVC 片或防水合成紙 | ZprintPro智印雲",
       "en": "Custom roll up banners with wind-resistant, premium materials — ZprintPro",
       "ja": "戶外橫幅防曬防水嗎？"
     }
@@ -3264,7 +3264,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "橫幅的最大尺寸可以做到多大？",
+      "zh-hk": "車身廣告 / 高清噴繪 | 香港車身廣告製作 鑄造級 PVC 車貼 80–100 微米 | ZprintPro智印雲",
       "en": "Custom vehicle wraps with 3m vinyl wrap, premium materials — ZprintPro",
       "ja": "戶外橫幅防曬防水嗎？"
     }
@@ -3365,7 +3365,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "書籍的最小訂購量是多少？",
+      "zh-hk": "香港畫冊印刷 / 精裝膠裝 | 香港畫冊印刷裝訂 內頁157g–200g銅版紙 | ZprintPro智印雲",
       "en": "Custom catalog printing with saddle-stitched, premium materials — ZprintPro",
       "ja": "支持哪些裝訂方式？"
     }
@@ -3416,7 +3416,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "書籍的最小訂購量是多少？",
+      "zh-hk": "香港騎馬釘小冊子 / 精裝膠裝 | 香港騎馬釘小冊子裝訂 128g–157g銅版紙或書紙 | ZprintPro智印雲",
       "en": "Custom saddle stitch booklets with premium custom, premium materials — ZprintPro",
       "ja": "支持哪些裝訂方式？"
     }
@@ -3566,7 +3566,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "書籍的最小訂購量是多少？",
+      "zh-hk": "香港線圈筆記本 / 精裝膠裝 | 香港線圈筆記本裝訂 內頁80g–100g書紙或道林紙 | ZprintPro智印雲",
       "en": "Custom spiral notebooks with perfect bound, premium materials — ZprintPro",
       "ja": "支持哪些裝訂方式？"
     }
@@ -3617,7 +3617,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "信封的最小訂購量是多少？",
+      "zh-hk": "公司信封 / 開窗信封 | 香港公司信封印刷 80–120g 書紙／本白書紙 | ZprintPro智印雲",
       "en": "Custom business envelopes with foil-lined premium, premium materials — ZprintPro",
       "ja": "可以定制信封的尺寸嗎？"
     }
@@ -3668,7 +3668,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "",
+      "zh-hk": "彩色信封 / 開窗信封 | 香港彩色信封印刷 80–120g 書紙／彩色書紙 | ZprintPro智印雲",
       "en": "Custom colored envelopes with foil-lined premium, premium materials — ZprintPro",
       "ja": "一般為500個起訂，彩色和特殊材質需1000個起。"
     }
@@ -3768,7 +3768,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "信封的最小訂購量是多少？",
+      "zh-hk": "珠光信封 / 開窗信封 | 香港珠光信封印刷 珠光／冰白特種書紙 | ZprintPro智印雲",
       "en": "Custom pearl envelopes with foil-lined premium, premium materials — ZprintPro",
       "ja": "可以定制信封的尺寸嗎？"
     }
@@ -3819,7 +3819,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "校園印刷的最小訂購量是多少？",
+      "zh-hk": "香港練習簿印刷 / 校園印刷 | 香港練習簿印刷 80g–100g書紙或道林紙 | ZprintPro智印雲",
       "en": "Custom exercise books with perfect bound, premium materials — ZprintPro",
       "ja": "支持學校採購流程嗎？"
     }
@@ -3870,7 +3870,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "校園印刷的最小訂購量是多少？",
+      "zh-hk": "香港證書印刷 / 校園印刷 | 香港證書印刷 200g–250g水印紙或棉質紙 | ZprintPro智印雲",
       "en": "Custom certificates with embossed seal, premium materials — ZprintPro",
       "ja": "支持學校採購流程嗎？"
     }
@@ -3920,7 +3920,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "校園印刷的最小訂購量是多少？",
+      "zh-hk": "香港學校單張 / 校園印刷 | 香港學校單張印刷 128g–157g銅版紙或書紙 | ZprintPro智印雲",
       "en": "Custom school flyers with same-day printing, premium materials — ZprintPro",
       "ja": "支持學校採購流程嗎？"
     }
@@ -3970,7 +3970,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "校園印刷的最小訂購量是多少？",
+      "zh-hk": "香港教科書印刷 / 校園印刷 | 香港教科書印刷 80g–100g道林紙或書紙 | ZprintPro智印雲",
       "en": "Custom textbooks with perfect bound, premium materials — ZprintPro",
       "ja": "支持學校採購流程嗎？"
     }
