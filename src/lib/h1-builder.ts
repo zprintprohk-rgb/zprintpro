@@ -370,6 +370,23 @@ function traditionalizeZh(s: string): string {
     .replace(/发/g, '發').replace(/台/g, '臺').replace(/适/g, '適');
 }
 
+/**
+ * v7: 检测两个字符串是否有 minLen+ 字的公共子串
+ * 用于子串级别去重（不只是完全匹配）
+ * 例：hasCommonSubstring('透明貼紙', '防水貼紙', 2) → true（公共子串"貼紙"）
+ *     hasCommonSubstring('透明貼紙', '防水貼紙', 3) → false（无 3 字公共子串）
+ */
+function hasCommonSubstring(a: string, b: string, minLen: number): boolean {
+  const aSimp = simplifyZh(a);
+  const bSimp = simplifyZh(b);
+  for (let len = minLen; len <= Math.min(aSimp.length, bSimp.length); len++) {
+    for (let i = 0; i <= aSimp.length - len; i++) {
+      if (bSimp.includes(aSimp.substring(i, i + len))) return true;
+    }
+  }
+  return false;
+}
+
 // ============================================================================
 // H1 Builder: zh-hk
 // ============================================================================
@@ -407,42 +424,46 @@ export function buildProductH1ZhHk(
   const title = traditionalizeZh(productTitle);
   const cat = traditionalizeZh(categoryName);
 
-  // v6 核心去重：title 包含 kw1 → 用 kw2 替代（不浪费 slot）
-  const titleHasKw1 = simplifyZh(productTitle).includes(simplifyZh(kw1));
-  const titleHasKw2 = kw2 ? simplifyZh(productTitle).includes(simplifyZh(kw2)) : false;
+  // v8 核心去重：2+ 字子串检测（"貼紙""紙袋""信封"等 2 字词就是完全冗余）
+  const titleHasKw1 = hasCommonSubstring(productTitle, kw1, 2);
+  const titleHasKw2 = kw2 ? hasCommonSubstring(productTitle, kw2, 2) : false;
 
   let kwToUse: string;
   if (!titleHasKw1) {
     kwToUse = ` · ${kw1}`;
   } else if (kw2 && !titleHasKw2) {
-    kwToUse = ` · ${kw2}`;  // v6: kw1 已在 title 中 → 用 kw2
+    kwToUse = ` · ${kw2}`;  // kw1 与 title 有 3+ 字子串重叠 → 用 kw2
   } else {
-    kwToUse = '';  // 两个 kw 都在 title 中 → 跳过
+    kwToUse = '';  // 两个 kw 都与 title 有 3+ 字重叠 → 跳过
   }
 
-  // v6.1 hook 去重：hook 已在 title 或 kw 中 → 用 category 级 fallback hook
-  const titleSimple = simplifyZh(productTitle);
-  const kwSimple = simplifyZh(kwToUse);
-  const hookSimple = simplifyZh(hook);
-  const hookInTitle = titleSimple.includes(hookSimple);
-  const hookInKw = kwSimple.includes(hookSimple);
-
+  // v7 hook 去重：2+ 字子串重叠 → 尝试 category 级 hook，仍重叠则跳过
+  const kwUsed = kwToUse.replace(/^ · /, '');  // 去掉前缀 " · " 用于比较
   let hookToUse = hook;
-  if (hookInTitle || hookInKw) {
-    // 尝试 category 级 hook (不取 SKU sellingPoint)
+  if (hasCommonSubstring(productTitle, hook, 2) || (kwUsed && hasCommonSubstring(kwUsed, hook, 2))) {
     const catHook = SHARP_HOOKS_MAP_ZH_HK[catSlug] || DEFAULT_HOOK_ZH_HK[catSlug] || '香港印刷';
-    const catHookSimple = simplifyZh(catHook);
-    if (!titleSimple.includes(catHookSimple) && !kwSimple.includes(catHookSimple)) {
+    if (!hasCommonSubstring(productTitle, catHook, 2) && (!kwUsed || !hasCommonSubstring(kwUsed, catHook, 2))) {
       hookToUse = traditionalizeZh(catHook);
     } else {
-      hookToUse = '';  // 都重复了 → 跳过 hook
+      hookToUse = '';
     }
   }
 
-  const variant1 = `${title}${kwToUse}${hookToUse ? ` · ${hookToUse}` : ''} · 香港${cat}專家 · 智印雲`;
+  // v8 專家後綴去重：3 層降級
+  // 1) title 含 "香港" 或 "印刷" → 用 "品質保證"（避開兩詞重複 + 品牌詞重複）
+  // 2) title 與 cat 有 2+ 字重疊 → 去類目詞用 "香港印刷專家"
+  // 3) 無重疊 → 保持 "香港${cat}專家"
+  const titleHasCat = hasCommonSubstring(productTitle, cat, 2);
+  const titleSimp = simplifyZh(productTitle);
+  const titleHasHkOrPrint = titleSimp.includes('香港') || titleSimp.includes('印刷');
+  const expertSuffix = titleHasHkOrPrint
+    ? '品質保證'
+    : (titleHasCat ? '香港印刷專家' : `香港${cat}專家`);
+
+  const variant1 = `${title}${kwToUse}${hookToUse ? ` · ${hookToUse}` : ''} · ${expertSuffix} · 智印雲`;
   if (variant1.length <= MAX_H1_CHARS_ZH) return variant1;
 
-  const variant2 = `${title}${kwToUse} · 香港${cat}專家 · 智印雲`;
+  const variant2 = `${title}${kwToUse} · ${expertSuffix} · 智印雲`;
   if (variant2.length <= MAX_H1_CHARS_ZH) return variant2;
 
   const variant3 = `${title}${kwToUse} · 智印雲`;
