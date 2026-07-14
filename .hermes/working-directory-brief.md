@@ -368,6 +368,63 @@ F:\zprintpro-nextjs\
 
 ---
 
-**Updated**: 2026-07-14 (v1 — 工作目录开机速查)
+**Updated**: 2026-07-14 (v1.1 — + P1+P2 SEO 全局审计实战经验)
 **Source 真源**: `.hermes/context.md` v4 (2026-07-06) + `AGENTS.md` §11/§13.x + `SKILL.md` (2026-07-08) + `docs/audit-en-multi-market-2026-06-19.md`
 **Author**: Mavis orchestrator (user 授权)
+
+---
+
+## 🆕 实战经验 (2026-07-14 P1+P2 SEO 全局审计)
+
+> 完整 SOP 见 `MEMORY.md` (跨项目可借鉴), 本节只列速查。
+
+### 5 阶段 P1+P2 流水线 (新增)
+| 阶段 | 输出 | 工具 | 实战数据 |
+|---|---|---|---|
+| **1. 全局审计** | 85 SKU × 3 元素 (Title/Meta/ALT) 报告 | `audit-seo-meta.ts` | 24 高流量严重 + 65 有问题 |
+| **2. P1 imageAlt 修复** | 47 SKU alt 重写 (FAQ + 缺失 + 超长 + BC 中性化) | `clean-faq-alt.ts` | 32 FAQ + 8 缺失 + 2 超长 → 0 |
+| **3. P1 description NAP 修** | 5 SKU "非智印港" → "15+ 年自有品牌" + DJ-001 跨境 | `Edit sku-seo-data.ts` | ERROR 6 → 0 |
+| **4. P2 WARN 4 mode 修复** | 22 SKU description/alt 边界值 (meta-short/overlong/cta/alt-short) | `fix-meta-warn.ts` | 23 WARN → 0 |
+| **5. ED-005 数据缺失补** | 1 SKU 完整 3 locale seo (zh-hk/en/ja) | `Edit sku-seo-data.ts` | 0 跳过 → 0 |
+
+### 新增 tools (P1+P2 工具链 SSoT)
+| Tool | 路径 | 用途 |
+|---|---|---|
+| **audit-seo-meta.ts** | `scripts/audit-seo-meta.ts` | P1 全局 SEO 元数据审计 (3 元素) |
+| **clean-faq-alt.ts** | `scripts/clean-faq-alt.ts` | P1 imageAlt FAQ + BC 批量修复 |
+| **fix-meta-warn.ts** | `scripts/fix-meta-warn.ts` | P2 4 mode 批量修复 (meta-overlong/short/cta/alt-short) |
+| **verify-meta.mjs** | `scripts/verify-meta.mjs` | 通用 description NAP/字符数验证 |
+
+### 7 条新强制约束 (今晚踩的坑, 2026-07-14)
+1. **C9 攒批**: 1 commit + 1 force-push = 1 build quota. 严禁 trivial commit 拆 push. (c5fd5f1/d326b4f/beb1d0f 三 commit → 3 build, 严格说 3 push 浪费 2 build. 实际 1 amend 节省 1 build = 2 build 总)
+2. **C11 P1 截断阈值**: `fixMetaOverlong` 截断点 `lastDot > 80` 太早, 砍 65 字. 修正: `> 100` 留更多主体. (cosmetic-boxes 152→160 修复)
+3. **C12 CTA 短句**: 追加 CTA 47 字 ("wa.me/...") 导致 7 SKU 全部超长. 修正: 改 7 字 "| 即時報價". 严格 160 字上限.
+4. **C13 BC SKU 中性化**: `fixAltShort` 必须先检测 `catSlug === 'business-cards'` 走 `專業商務印刷` 模板, 避免咭片/名片污染.
+5. **C14 数据缺失补条目**: ED-005 类缺 sku-seo 条目 SKU 必须补完整 3 locale seo (zh-hk/en/ja), 不能只补 1 locale 走 generateProductMetadata fallback (违反 §13.13 3 locale 独立策略).
+6. **C15 amend 节省 quota**: 单 SKU 边界值修复用 `git commit --amend` + `push --force-with-lease`, 不增加 build quota. 但 self-reminder cron 监控的 SHA 会失效, 需手动重设或依赖 verify-deploy 用 HEAD 自动认.
+7. **C16 P2 阈值修正**: `fixMetaShort` 阈值 `≥80` 漏掉 80 字边界值 (PB-001 80 字报偏短). 修正: 阈值改 `≥120` 或 audit 阈值改 `[80, 120)` = "偏短" 但不强制修.
+
+### 实战数据汇总 (2026-07-14 23:00-23:48)
+- **P1**: 19/85 → 61/85 合规 (高流量严重 24 → 0)
+- **P2**: 61/85 → **85/85 (100% PASS)** (WARN 23 → 0)
+- **3 commit**: c5fd5f1 (P1 alt) + d326b4f (P1 NAP) + beb1d0f (P2 + ED-005 amend)
+- **2 build quota 实际消耗** (amend 节省 1): 1 push (P1 imageAlt) + 1 force-push (P1 NAP) + 0 (P2 amend)
+- **工具链 4 件** 全部入库 + commit 进 scripts/
+
+### 7 步 verify 流水线扩展 (P1+P2 适用)
+| Step | 命令 | P1 适用 | P2 适用 |
+|---|---|---|---|
+| 1 | `git status -sb` | ✅ | ✅ |
+| 2 | `npx tsx scripts/audit-seo-meta.ts` | ✅ | ✅ (重跑确认 PASS) |
+| 3 | `node scripts/verify-deploy.mjs` | ✅ | ✅ |
+| 4 | `curl <url> \| grep "alt="` (imageAlt 验) | ✅ | ✅ |
+| 5 | `curl <url> \| grep "description"` (Meta 验) | — | ✅ |
+| 6 | `curl <url> \| grep "智印港"` (NAP 验) | ✅ | ✅ |
+| 7 | `node -e "JSON.parse(require('fs').readFileSync(skuSeoData))"` (TS 解析验) | — | ✅ |
+
+### next_due (P3 启动条件)
+- GSC 7 天稳定 (核心词排名波动 < ±5%)
+- 白天 9-18 操作
+- en/ja 同步按 §13.15 美国集中 + §13.13 日本市场卖点
+- 单次 commit ≤3 SKU
+- 1 push = 1 build quota, 攒批
