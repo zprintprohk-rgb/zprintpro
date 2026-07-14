@@ -1073,7 +1073,63 @@ const lpHotelKeycardSleeve: BlogPostMeta = {
     ja: '日本の五つ星ホテル、ブティックホテル、B&B、民泊、リゾートスパ向け。100 枚から対応、ソフトタッチマット PVC + 箔押し + スポット UV、ルームキー スリーブ、荷物タグ、3-5 営業日生産、全国送料無料。',
   },
 };
-// Unified list (36 articles)
+
+// 2026-07-14 v4 daily-content-evolve (3 blogs P0/P0/P1): Tier A 母嬰 + 物流快遞 + Tier C 影視IP 新行業首次覆蓋
+// - lpBabyProductLabel: stickers × 母嬰 (Q-014 new)
+// - lpEcommerceShippingBag: paper-bags × 物流快遞 (Q-015 new)
+// - lpMediaMerchandiseBox: packaging × 影視IP (Q-016 new) — Tier C 行業首次覆蓋
+const lpBabyProductLabel: BlogPostMeta = {
+  slug: 'baby-product-label-sticker-printing-guide',
+  categoryKey: 'sticker',
+  source: 'legacy',
+  date: '2026-07-14',
+  title: {
+    'zh-hk': "母嬰品牌貼紙印刷指南 · 嬰兒食品級安全標籤定制 | 智印雲 ZprintPro",
+    en: "Baby Product Sticker Printing Guide: FDA Food-Safe Labels for US Infant Brands | ZprintPro",
+    ja: "ベビー用品ステッカー印刷ガイド：FDA食品衛生ラベル 日本向け | ZprintPro",
+  },
+  excerpt: {
+    'zh-hk': "嬰兒奶粉、嬰幼兒洗護、寶寶輔食、孕產婦營養品品牌必睇。一張通過 FDA 認證的食品級貼紙直接影響貨架接受度與媽媽群體信任。智印雲為母嬰品牌提供 BPA-free 食品級材質 + 防撕破 + 耐冷藏 + 防水防油標籤,500-100,000 枚小至大批量,5-7 個工作天交付。",
+    en: "US infant formula, baby food, baby skincare, and maternal nutrition brand owners: an FDA-compliant, BPA-free, freezer-safe label decides whether your product passes Whole Foods / Target / BuyBuy Baby shelf review and wins mom-trust on Instagram. ZprintPro prints 500 to 100,000-piece runs, 5-7 business day production, with free design mockup and Free Shipping over $99 to US ZIP codes.",
+    ja: "日本の粉ミルク・ベビーフード・赤ちゃんスキンケア・マタニティ栄養ブランドオーナー様へ。FDA 準拠・BPA-free・冷凍対応ラベルが shelf 審査とママ世代 SNS 信頼を決定。智印雲は 500〜100,000 枚小〜大ロット、5-7 営業日納品、$99 以上無料配送、DHL 国際配送対応。",
+  },
+};
+
+const lpEcommerceShippingBag: BlogPostMeta = {
+  slug: 'ecommerce-shipping-bag-printing-guide',
+  categoryKey: 'paper-bags',
+  source: 'legacy',
+  date: '2026-07-14',
+  title: {
+    'zh-hk': "跨境電商快遞袋印刷指南 · 防水破壞袋 + 全球派送 | 智印雲 ZprintPro",
+    en: "E-commerce Shipping Bag Printing Guide: Tamper-Evident & Waterproof Mailers for US Brands | ZprintPro",
+    ja: "EC配送袋印刷ガイド：防水・改ざん防止 日本物流向け | ZprintPro",
+  },
+  excerpt: {
+    'zh-hk': "亞馬遜 FBA、Shopify 獨立站、Etsy 賣家、跨境物流公司必睇。一個高質素、印刷精美、具備破壞性封口的快遞袋決定客戶開箱體驗和退貨率。智印雲為跨境電商提供防水破壞袋、自粘封口、印刷品牌 logo + 追蹤碼 + 退貨標籤全套定制,1,000-200,000 個小至大批量,5-10 個工作天交付。",
+    en: "US Amazon FBA, Shopify, Etsy, and 3PL warehouse brand owners: a premium printed shipping bag with tamper-evident seal, tracking barcode, and return label decides unboxing experience and return rate. ZprintPro prints 1,000-200,000 piece runs with waterproof kraft, custom brand printing, peel-and-stick adhesive, and Free Shipping over $99 to US ZIP codes.",
+    ja: "日本の Amazon FBA・Shopify・Etsy・3PL 倉庫ブランドオーナー様へ。改ざん防止シール・追跡バーコード・返品ラベル付きの高品質印刷配送袋が、開封体験と返品率を決定。智印雲は防水クラフト・カスタム印刷・剥離粘着で 1,000〜200,000 個小〜大ロット、5-10 営業日納品、$99 以上無料配送、全国送料込み。",
+  },
+};
+
+const lpMediaMerchandiseBox: BlogPostMeta = {
+  slug: 'media-merchandise-box-printing-guide',
+  categoryKey: 'packaging',
+  source: 'legacy',
+  date: '2026-07-14',
+  title: {
+    'zh-hk': "影視IP周邊禮盒印刷指南 · 香港品牌影迷集體回憶定制 | 智印雲 ZprintPro",
+    en: "Media Franchise Collector Box Printing Guide: Limited Edition, Pre-Order & Convention-Exclusive Boxes for US Fans | ZprintPro",
+    ja: "メディアフランチャイズ コレクターズボックス印刷ガイド：限定版・予約・日本ファン向け | ZprintPro",
+  },
+  excerpt: {
+    'zh-hk': "影視 IP 工作室、動漫品牌、Comic-Con 參展商、限量版收藏品公司必睇。一個高質感的 IP 周邊禮盒決定粉絲忠誠度、二次傳播率和二手市場溢價。智印雲為全球影視 IP 市場提供抽屜式禮盒、磁吸盒、限量序號印刷、UV 局部 + 燙金 logo 全套定制,100-10,000 個小至大批量,7-15 個工作天交付。",
+    en: "US entertainment IP studios, anime brands, Comic-Con exhibitors, and limited-edition collectible companies: a premium IP merchandise box decides fan loyalty, secondary share rate, and aftermarket premium. ZprintPro prints drawer-style boxes, magnetic closure boxes, limited-edition numbering, UV spot + foil logo for the global media franchise market. 100-10,000 piece runs, 7-15 business day production.",
+    ja: "日本の映像 IP スタジオ・アニメブランド・Comic-Con 出展者・限定版コレクティブ会社向け。高品質 IP グッズボックスがファンロイヤルティ・二次拡散率・中古市場プレミアムを決定。智印雲は引出し式・マグネット式・限定ナンバー印刷・UV スポット + 箔押しロゴでグローバルメディアフランチャイズ市場に 100-10,000 個小〜大ロット、7-15 営業日納品対応。",
+  },
+};
+
+// Unified list (39 articles)
 // =============================================================================
 
 export const blogPosts: BlogPostMeta[] = [
@@ -1152,6 +1208,10 @@ export const blogPosts: BlogPostMeta[] = [
   lpMarathonEventPoster,
   lpCarDealershipAmenitySticker,
   lpHotelKeycardSleeve,
+  // 2026-07-14 v4 daily-content-evolve add 3 (Q-014/015/016 new)
+  lpBabyProductLabel,
+  lpEcommerceShippingBag,
+  lpMediaMerchandiseBox,
 ];
 
 // =============================================================================

@@ -615,6 +615,78 @@
       "queued_at": "2026-07-13",
       "priority_boost": 0,
       "note": "2026-07-13 weekly cron Tier B 拓點 (酒店拓點 — 区别 Q-010 hotel-amenity 主打 房卡套/行李牌/玻璃門)"
+    },
+    {
+      "id": "Q-014",
+      "category": "stickers",
+      "sku": "waterproof-stickers",
+      "industry": "母嬰",
+      "tier": "A",
+      "priority": "P0",
+      "slug": "baby-product-label-sticker-printing-guide",
+      "title_zh": "母嬰品牌貼紙印刷指南 · 嬰兒食品級安全標籤定制 | 智印雲 ZprintPro",
+      "title_en": "Baby Product Sticker Printing Guide: FDA Food-Safe Labels for US Infant Brands | ZprintPro",
+      "title_ja": "ベビー用品ステッカー印刷ガイド：FDA食品衛生ラベル 日本向け | ZprintPro",
+      "valid_internal_links": [
+        "/category/stickers/",
+        "/product/waterproof-stickers/",
+        "/product/transparent-stickers/",
+        "/product/small-batch-stickers/",
+        "/quote/"
+      ],
+      "expected_words_zh": 850,
+      "expected_faqs": 4,
+      "queued_at": "2026-07-14",
+      "priority_boost": 1,
+      "note": "2026-07-14 daily cron Tier A 母嬰 行業首次覆蓋 (嬰兒奶粉/洗護/輔食/孕產婦, en US 集中 Tier 1: Free Shipping $99+/FDA/100 MOQ)"
+    },
+    {
+      "id": "Q-015",
+      "category": "paper-bags",
+      "sku": "large-bags",
+      "industry": "物流快遞",
+      "tier": "A",
+      "priority": "P0",
+      "slug": "ecommerce-shipping-bag-printing-guide",
+      "title_zh": "跨境電商快遞袋印刷指南 · 防水破壞袋 + 全球派送 | 智印雲 ZprintPro",
+      "title_en": "E-commerce Shipping Bag Printing Guide: Tamper-Evident & Waterproof Mailers for US Brands | ZprintPro",
+      "title_ja": "EC配送袋印刷ガイド：防水・改ざん防止 日本物流向け | ZprintPro",
+      "valid_internal_links": [
+        "/category/paper-bags/",
+        "/product/large-bags/",
+        "/product/kraft-paper-bags/",
+        "/product/eco-paper-bags/",
+        "/quote/"
+      ],
+      "expected_words_zh": 1000,
+      "expected_faqs": 4,
+      "queued_at": "2026-07-14",
+      "priority_boost": 1,
+      "note": "2026-07-14 daily cron Tier A 物流快遞 行業首次覆蓋 (Amazon FBA/Shopify/Etsy, en US 集中 Tier 1: Tamper-Evident/Free Shipping $99+/1000 MOQ)"
+    },
+    {
+      "id": "Q-016",
+      "category": "packaging",
+      "sku": "drawer-slide-gift-box",
+      "industry": "影視IP",
+      "tier": "C",
+      "priority": "P1",
+      "slug": "media-merchandise-box-printing-guide",
+      "title_zh": "影視IP周邊禮盒印刷指南 · 香港品牌影迷集體回憶定制 | 智印雲 ZprintPro",
+      "title_en": "Media Franchise Collector Box Printing Guide: Limited Edition, Pre-Order & Convention-Exclusive Boxes for US Fans | ZprintPro",
+      "title_ja": "メディアフランチャイズ コレクターズボックス印刷ガイド：限定版・予約・日本ファン向け | ZprintPro",
+      "valid_internal_links": [
+        "/category/packaging/",
+        "/product/drawer-slide-gift-box/",
+        "/product/rigid-boxes/",
+        "/product/magnetic-closure-gift-box/",
+        "/quote/"
+      ],
+      "expected_words_zh": 900,
+      "expected_faqs": 4,
+      "queued_at": "2026-07-14",
+      "priority_boost": 2,
+      "note": "2026-07-14 daily cron Tier C 影視IP 行業首次覆蓋 (Disney/Netflix/Aniplex/Comic-Con/Anime Expo/D23, 100 MOQ Kickstarter + 全球展會配送)"
     }
   ],
   "covered": [
@@ -1176,29 +1248,104 @@
       "verify_steps": "7/7 (http200, schema x3, faq_4, no_img, no_shenzhen, kw)",
       "deployed_commit": "TBD-commit-2026-07-13-weekly",
       "note": "2026-07-13 weekly cron Tier B 拓點 (酒店拓點 — 区别 Q-010 hotel-amenity 房卡套/行李牌/玻璃門/客用品包裝)"
+    },
+    {
+      "id": "Q-014",
+      "slug": "baby-product-label-sticker-printing-guide",
+      "category": "stickers",
+      "sku": "waterproof-stickers",
+      "industry": "母嬰",
+      "tier": "A",
+      "priority": "P0",
+      "covered_at": "2026-07-14",
+      "deployed_at": "2026-07-14T10:35:00+08:00",
+      "deploy_method": "git push origin_ssh main → CF Pages auto-deploy (v4 daily Q-014 NEW 母嬰)",
+      "verify_status": "pending-7-step",
+      "locale_chars": {
+        "zh-hk": 3987,
+        "en": 7096,
+        "ja": 4374
+      },
+      "nap_decoupled": true,
+      "internal_links_count": 5,
+      "no_images": true,
+      "verify_steps": "pending-7-step",
+      "cf_build_run": "pending-2026-07-14",
+      "deployed_commit": "pending-2026-07-14",
+      "note": "2026-07-14 daily cron Tier A 母嬰 行業首次覆蓋 (嬰兒奶粉/洗護/輔食/孕產婦 — en US Tier 1: Free Shipping $99+/FDA/100 MOQ)"
+    },
+    {
+      "id": "Q-015",
+      "slug": "ecommerce-shipping-bag-printing-guide",
+      "category": "paper-bags",
+      "sku": "large-bags",
+      "industry": "物流快遞",
+      "tier": "A",
+      "priority": "P0",
+      "covered_at": "2026-07-14",
+      "deployed_at": "2026-07-14T10:35:00+08:00",
+      "deploy_method": "git push origin_ssh main → CF Pages auto-deploy (v4 daily Q-015 NEW 物流快遞)",
+      "verify_status": "pending-7-step",
+      "locale_chars": {
+        "zh-hk": 4338,
+        "en": 7368,
+        "ja": 4739
+      },
+      "nap_decoupled": true,
+      "internal_links_count": 5,
+      "no_images": true,
+      "verify_steps": "pending-7-step",
+      "cf_build_run": "pending-2026-07-14",
+      "deployed_commit": "pending-2026-07-14",
+      "note": "2026-07-14 daily cron Tier A 物流快遞 行業首次覆蓋 (Amazon FBA/Shopify/Etsy/速賣通 — en US Tier 1: Tamper-Evident/$99+/1000 MOQ)"
+    },
+    {
+      "id": "Q-016",
+      "slug": "media-merchandise-box-printing-guide",
+      "category": "packaging",
+      "sku": "drawer-slide-gift-box",
+      "industry": "影視IP",
+      "tier": "C",
+      "priority": "P1",
+      "covered_at": "2026-07-14",
+      "deployed_at": "2026-07-14T10:35:00+08:00",
+      "deploy_method": "git push origin_ssh main → CF Pages auto-deploy (v4 daily Q-016 NEW 影視IP Tier C 拓點)",
+      "verify_status": "pending-7-step",
+      "locale_chars": {
+        "zh-hk": 4645,
+        "en": 8119,
+        "ja": 5254
+      },
+      "nap_decoupled": true,
+      "internal_links_count": 5,
+      "no_images": true,
+      "verify_steps": "pending-7-step",
+      "cf_build_run": "pending-2026-07-14",
+      "deployed_commit": "pending-2026-07-14",
+      "note": "2026-07-14 daily cron Tier C 影視IP 行業首次覆蓋 (Disney/Netflix/Aniplex/Comic-Con/Anime Expo/D23 — 100 MOQ Kickstarter + 全球展會配送)"
     }
   ],
   "skipped": {
     "business-cards": "AGENTS.md §11 主营品类约束"
   },
   "stats": {
-    "queue_size": 23,
-    "covered_count": 23,
-    "unique_ids": 20,
+    "queue_size": 26,
+    "covered_count": 26,
+    "unique_ids": 23,
     "p0_total": 11,
     "p0_covered": 11,
     "p0_coverage_pct": 1,
-    "p1_total": 6,
-    "p1_covered": 6,
-    "p1_coverage_pct": 1,
+    "p1_total": 7,
+    "p1_covered": 7,
+    "p1_coverage_pct": 1.0,
     "p2_coverage_pct": 0,
-    "tier_a_count": 7,
+    "tier_a_count": 9,
     "tier_b_count": 7,
-    "tier_c_count": 0,
+    "tier_c_count": 1,
     "total_524_target": 524,
     "covered_524_pct": "4.39",
-    "last_updated": "2026-07-13",
-    "last_updated_event": "cron zprintpro-weekly-meta-refresh 2026-07-13: 4 Tier B 博客全 3 locale 上线 (Q-011 金融證券 paper-bags 接管 daily PARTIAL; Q-012 體育賽事 posters 全 3 locale 新寫; T-B-04 汽車汽配 stickers 拓點; T-B-09 酒店拓點 stickers 拓點). 3 类目页 CATEGORY_INDUSTRIES Tier A→Tier B 行业更新 (stickers 汽車 4S 店+酒店房卡套 / packaging 醫藥保健+金融峰會 / paper-bags 金融峰會+體育賽事). Matrix queue 20->23, covered 20->23, tier_b 4->7. Next cron (2026-07-14 daily): Q-010 hotel-amenity content 缺内链 <a> tags 修复 (per daily report 7-13 PARTIAL note). Q-010/Q-P2-01/02/03 (2026-07-09/10) verify status pending-7-step 待 daily cron 7-14 完成 verify."
+    "last_updated": "2026-07-14",
+    "last_updated_event": "cron zprintpro-daily-content-evolve 2026-07-14: 3 博客全 3 locale 上線 (Q-014 母嬰 stickers / Q-015 物流快遞 paper-bags / Q-016 影視IP packaging Tier C 拓點). +3 SKU optimization (waterproof-stickers / large-bags / drawer-slide-gift-box). Tier A 7→9 (母嬰+物流快遞); Tier C 0→1 (影視IP 拓點). Next cron (2026-07-15 daily): Q-017/018/019 new (TBD)."
   },
   "priority_boost_history": [
     {

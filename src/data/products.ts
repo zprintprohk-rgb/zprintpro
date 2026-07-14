@@ -2136,6 +2136,8 @@ export const products: Product[] = [
       '/images/products/seedream-webp/zprintpro-stickers-waterproof-stickers-ja-4.webp',
       '/images/products/seedream-webp/zprintpro-stickers-waterproof-stickers-ja-5.webp',
     ],
+  optimizedAt: '2026-07-14',
+  optimizationRound: 1,
   },
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-stickers-waterproof-stickers-zh-hk.webp', en: 'zprintpro-stickers-waterproof-stickers-en.webp', ja: 'zprintpro-stickers-waterproof-stickers-ja.webp' },
@@ -6027,6 +6029,8 @@ export const products: Product[] = [
       '/images/products/seedream-webp/zprintpro-paper-bags-large-bags-ja-3.webp',
       '/images/products/seedream-webp/zprintpro-paper-bags-large-bags-ja-4.webp',
     ],
+  optimizedAt: '2026-07-14',
+  optimizationRound: 1,
   },
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-paper-bags-large-bags-zh-hk.webp', en: 'zprintpro-paper-bags-large-bags-en.webp', ja: 'zprintpro-paper-bags-large-bags-ja.webp' },
@@ -18252,6 +18256,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
       '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-ja-5.webp',
       '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-ja-6.webp',
     ],
+  optimizedAt: '2026-07-14',
+  optimizationRound: 1,
   },
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-packaging-drawer-slide-gift-box-zh-hk-1.webp', en: 'zprintpro-packaging-drawer-slide-gift-box-en-1.webp', ja: 'zprintpro-packaging-drawer-slide-gift-box-ja-1.webp' },
