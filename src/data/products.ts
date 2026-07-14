@@ -79,8 +79,8 @@ export const categories: Category[] = [
   // 六大核心主营分类（按全球市场搜索量+利润率+战略优先级排序）
   { slug: 'stickers', name: '貼紙印刷', nameEn: 'Stickers', nameJa: 'ステッカー印刷', name_zh: '貼紙印刷', name_en: 'Stickers', name_ja: 'ステッカー印刷', sort_order: 1 },
   { slug: 'flyers', name: '宣傳單張', nameEn: 'Flyers', nameJa: 'チラシ印刷', name_zh: '宣傳單張', name_en: 'Flyers', name_ja: 'チラシ印刷', sort_order: 2 },
-  { slug: 'packaging', name: '包裝盒定制', nameEn: 'Packaging', nameJa: 'パッケージ印刷', name_zh: '包裝盒定制', name_en: 'Packaging', name_ja: 'パッケージ印刷', sort_order: 3 },
-  { slug: 'posters', name: '定制海報', nameEn: 'Posters', nameJa: 'ポスター印刷', name_zh: '定制海報', name_en: 'Posters', name_ja: 'ポスター印刷', sort_order: 4 },
+  { slug: 'packaging', name: '包裝盒定製', nameEn: 'Packaging', nameJa: 'パッケージ印刷', name_zh: '包裝盒定製', name_en: 'Packaging', name_ja: 'パッケージ印刷', sort_order: 3 },
+  { slug: 'posters', name: '定製海報', nameEn: 'Posters', nameJa: 'ポスター印刷', name_zh: '定製海報', name_en: 'Posters', name_ja: 'ポスター印刷', sort_order: 4 },
   { slug: 'paper-bags', name: '紙袋印刷', nameEn: 'Paper Bags', nameJa: '紙袋印刷', name_zh: '紙袋印刷', name_en: 'Paper Bags', name_ja: '紙袋印刷', sort_order: 5 },
   { slug: 'business-cards', name: '咭片印刷', nameEn: 'Business Cards', nameJa: '名刺印刷', name_zh: '咭片印刷', name_en: 'Business Cards', name_ja: '名刺印刷', sort_order: 6 },
   // 次要分类
@@ -131,7 +131,7 @@ export const products: Product[] = [
 <h3>印刷工藝說明</h3>
 <ul>
   <li>標準成品尺寸 85×54mm，支援圓角模切（R3mm）避免邊角翹起</li>
-  <li>雙面印刷時正反對位精度控制在 ±0.5mm 以內，套印精準</li>
+  <li>雙面印刷時正反對位精度控製在 ±0.5mm 以內，套印精準</li>
   <li>海德堡四色柯式印刷機，網點還原細膩，色彩飽和度達 90% 以上</li>
 </ul>
 
@@ -233,7 +233,7 @@ export const products: Product[] = [
   </thead>
   <tbody>
     <tr class="border-b border-gray-200"><td>箔押し（金/銀/ローズ）</td><td>金属光沢、ロゴや社名を立体的に</td><td>ブランド名・ロゴ・記念日</td><td>+20%</td></tr>
-    <tr class="border-b border-gray-200"><td>スポット UV</td><td>部分的光沢、コントラストで注目度 UP</td><td>ロゴ・イラスト・写真</td><td>+15%</td></tr>
+    <tr class="border-b border-gray-200"><td>スポット UV</td><td>部分的光沢、コントラストで注目度 UP</td><td>ロゴ・イラスト・寫真</td><td>+15%</td></tr>
     <tr class="border-b border-gray-200"><td>エンボス（浮き出し）</td><td>触覚的高級感、視えない特別感</td><td>記念版・VIP 名刺</td><td>+25%</td></tr>
     <tr><td>角丸加工</td><td>R3/R5/R10 角丸、ソフトな印象</td><td>クリエイティブ・デザイナー</td><td>+10%</td></tr>
   </tbody>
@@ -258,7 +258,7 @@ export const products: Product[] = [
   <li><strong>NET 30 月締請求書払い</strong>：法人掛売り対応、与信審査後サービス開始</li>
   <li><strong>継続発注割引</strong>：年間 1,000 枚以上のご注文は 25% オフ、5,000 枚以上は 35% オフ</li>
   <li><strong>緊急再発注</strong>：営業メンバーの急な入社・異動にも 24 時間特急で対応</li>
-  <li><strong>日本語請求書・領収書</strong>：経費精算・会計処理に対応、インボイス制度対応</li>
+  <li><strong>日本語請求書・領収書</strong>：経費精算・会計処理に対応、インボイス製度対応</li>
 </ul>
 
 <h3>プレミアム名刺の標準仕様</h3>
@@ -314,19 +314,19 @@ export const products: Product[] = [
     <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3〜5 営業日</td><td>少量追加料金</td></tr>
-    <tr><td>深圳自社工場直送（事前予約制）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
+    <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
 <p>100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
 
 <h3>環保認證と紙材溯源</h3>
-<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。学校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
+<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。學校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
 
-<h3>深圳自社工場・事前予約制現地確認</h3>
-<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約制で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
+<h3>深圳自社工場・事前予約製現地確認</h3>
+<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約製で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・学校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・學校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -503,7 +503,7 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>Can I order different names on each card?</strong></summary><p>Yes. Variable data printing allows per-card customization. Submit an Excel/CSV file with name, title, and contact details. Minimum 100 cards for variable orders.</p></details>
 <details class="my-2"><summary><strong>How is shipping calculated to my country?</strong></summary><p>US orders over $100 ship free via DHL Express (2-4 business days). UK/AU orders over £80 / AU$150 ship free. KR/SG/AE ship via DHL Express at standard rates (calculated at checkout). Tracking provided for all shipments.</p></details>
 <details class="my-2"><summary><strong>What if I'm not happy with the print quality?</strong></summary><p>We provide free digital color proofing before production. If the final print drifts from approved proof, we reprint at no cost or refund in full. Your satisfaction is guaranteed.</p></details>`,
-    longDescriptionJa: `厚紙名刺をZprintProでご注文。400g超厚コート紙、両面カラー、厚紙名刺でプレミアム感を演出。デザイナー・弁護士・高級サービス業様に最適。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `厚紙名刺をZprintProでご注文。400g超厚コート紙、両面カラー、厚紙名刺でプレミアム感を演出。デザイナー・弁護士・高級サービス業様に最適。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -626,7 +626,7 @@ export const products: Product[] = [
 <h3>印刷工藝說明</h3>
 <ul>
   <li>標準成品尺寸 85×54mm，支援圓角模切（R3mm）避免邊角翹起</li>
-  <li>雙面印刷時正反對位精度控制在 ±0.5mm 以內，套印精準</li>
+  <li>雙面印刷時正反對位精度控製在 ±0.5mm 以內，套印精準</li>
   <li>海德堡四色柯式印刷機，網點還原細膩，色彩飽和度達 90% 以上</li>
 </ul>
 
@@ -744,7 +744,7 @@ export const products: Product[] = [
 <h3>印刷工藝と品質管理</h3>
 <ul>
   <li><strong>Heidelberg 4 色オフセット</strong>：業界標準機で色再現性 90% 以上、CMYK 厳密管理</li>
-  <li><strong>ホットスタンプ箔押し</strong>：温度・圧力精密制御、シャープな箔エッジ、剥がれなし</li>
+  <li><strong>ホットスタンプ箔押し</strong>：温度・圧力精密製御、シャープな箔エッジ、剥がれなし</li>
   <li><strong>ISO 12647 色彩管理</strong>：再印刷時の色ブレなし、ブランドカラー厳守</li>
   <li><strong>両面印刷対応</strong>：表面と裏面で異なる情報掲載可能</li>
   <li><strong>オプション：ロゴ部分エンボス</strong>：箔押しと組み合わせで立体感 UP</li>
@@ -812,7 +812,7 @@ export const products: Product[] = [
     <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3-5 営業日</td><td>少量追加料金</td></tr>
-    <tr><td>深圳自社工場直送（事前予約制）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
+    <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
 <p>100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
@@ -820,11 +820,11 @@ export const products: Product[] = [
 <h3>環保認證と紙材溯源</h3>
 <p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。箔押しシリーズでも大豆インクを採用し、エコシリーズでは再生紙も選択可能。ESG 配慮のブランドやサステナブル調達要件の企業向けに、紙材トレーサビリティレポートとカーボンフットプリント試算をご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
 
-<h3>深圳自社工場・事前予約制現地確認</h3>
-<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約制で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
+<h3>深圳自社工場・事前予約製現地確認</h3>
+<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約製で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人・士業事務所向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス制度対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人・士業事務所向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス製度対応。</p>
 
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>金箔と銀箔のどちらを選ぶべきですか？</strong></summary><p>ブランドカラー・業界・印象に応じて選択します。金融・士業はトラディショナルな金箔、モダンブランド・テック系は銀箔、美容・ライフスタイルブランドは rose gold 箔が好評です。無料サンプル請求で実物をご確認いただけます。</p></details>
@@ -947,7 +947,7 @@ export const products: Product[] = [
 <h3>印刷工藝說明</h3>
 <ul>
   <li>標準成品尺寸 85×54mm，支援圓角模切（R3mm）避免邊角翹起</li>
-  <li>雙面印刷時正反對位精度控制在 ±0.5mm 以內，套印精準</li>
+  <li>雙面印刷時正反對位精度控製在 ±0.5mm 以內，套印精準</li>
   <li>海德堡四色柯式印刷機，網點還原細膩，色彩飽和度達 90% 以上</li>
 </ul>
 
@@ -1056,15 +1056,15 @@ export const products: Product[] = [
   <tbody>
     <tr class="border-b border-gray-200"><td>ロゴスポット UV</td><td>グロス加工ロゴ、クラシカル技法</td><td>+1 日</td><td>$</td></tr>
     <tr class="border-b border-gray-200"><td>氏名スポット UV</td><td>グロス加工氏名、触覚階層</td><td>+1 日</td><td>$</td></tr>
-    <tr class="border-b border-gray-200"><td>パターン・テクスチャ UV</td><td>幾何学・抽象・ブランドパターン</td><td>+1 日</td><td>$</td></tr>
-    <tr class="border-b border-gray-200"><td>全面ブリード UV 画像</td><td>写真風グロスアクセント</td><td>+1 日</td><td>$</td></tr>
+    <tr class="border-b border-gray-200"><td>パターン・テクスチャ UV</td><td>幾何學・抽象・ブランドパターン</td><td>+1 日</td><td>$</td></tr>
+    <tr class="border-b border-gray-200"><td>全面ブリード UV 画像</td><td>寫真風グロスアクセント</td><td>+1 日</td><td>$</td></tr>
     <tr><td>スポット UV + エンボス</td><td>グロス + 立体感</td><td>+2 日</td><td>$$</td></tr>
   </tbody>
 </table>
 
 <h3>印刷工藝と品質管理</h3>
 <ul>
-  <li><strong>UV コーティング精密制御</strong>：選択的 UV 照射でマット部分と光沢部分の境界を鮮明に</li>
+  <li><strong>UV コーティング精密製御</strong>：選択的 UV 照射でマット部分と光沢部分の境界を鮮明に</li>
   <li><strong>Heidelberg 4 色オフセット</strong>：業界標準機で色再現性 90% 以上</li>
   <li><strong>ISO 12647 色彩管理</strong>：ブランドカラー厳守、再印刷時の色ブレなし</li>
   <li><strong>両面スポット UV 対応</strong>：表面と裏面の両方に UV 加工可能</li>
@@ -1130,7 +1130,7 @@ export const products: Product[] = [
     <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3-5 営業日</td><td>少量追加料金</td></tr>
-    <tr><td>深圳自社工場直送（事前予約制）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
+    <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
 <p>100 枚以上のご注文は送料無料で全国配送、日本語カスタマーサポートが配送状況を確認します。</p>
@@ -1138,15 +1138,15 @@ export const products: Product[] = [
 <h3>環保認證と紙材溯源</h3>
 <p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。UV 加工でも水性インクと低 VOC コーティングを採用。ESG 配慮のブランド向けに、紙材トレーサビリティレポートをご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
 
-<h3>深圳自社工場・事前予約制現地確認</h3>
-<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約制で現地確認・紙質サンプル比較・UV 効果実物確認に対応（日本語スタッフ同席可・1 週間前予約）。日本向け発送の集荷拠点。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
+<h3>深圳自社工場・事前予約製現地確認</h3>
+<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約製で現地確認・紙質サンプル比較・UV 効果実物確認に対応（日本語スタッフ同席可・1 週間前予約）。日本向け発送の集荷拠点。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い対応、日本語請求書・領収書発行対応、インボイス制度対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い対応、日本語請求書・領収書発行対応、インボイス製度対応。</p>
 
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>スポット UV と箔押しの違いは何ですか？</strong></summary><p>スポット UV は光沢のある樹脂コーティングで、立体感は出ませんがマットと光沢のコントラストが鮮明。箔押しは金属光沢で、より格式高い印象。金箔・銀箔・rose gold 箔など色選択肢豊富。組み合わせることで究極のハイエンド名刺も実現可能です。</p></details>
-<details class="my-2"><summary><strong>複雑なデザインでも UV 加工できますか？</strong></summary><p>はい。グラデーション・写真・細かいパターンも対応可能ですが、UV エリアが細かすぎると効果が弱まります。データ入稿時に UV エリアを別レイヤーで明確に分離してください。無料 AI データチェックで UV 適性を事前検証いたします。</p></details>
+<details class="my-2"><summary><strong>複雑なデザインでも UV 加工できますか？</strong></summary><p>はい。グラデーション・寫真・細かいパターンも対応可能ですが、UV エリアが細かすぎると効果が弱まります。データ入稿時に UV エリアを別レイヤーで明確に分離してください。無料 AI データチェックで UV 適性を事前検証いたします。</p></details>
 <details class="my-2"><summary><strong>MOQ は何枚からですか？</strong></summary><p>標準 MOQ は 100 枚です。特急料金で 50 枚にも対応可能、1-2 営業日で製作・納品できます。</p></details>
 <details class="my-2"><summary><strong>両面とも UV 加工できますか？</strong></summary><p>はい。両面スポット UV、片面 UV + もう片面通常印刷、片面 UV + もう片面箔押しなど、自由な組み合わせが可能です。データ入稿時にご指定ください。</p></details>
 <details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>深圳自社工場から DHL Express で 2-3 営業日納品、沖縄・離島も 2-4 営業日。100 枚以上のご注文は送料無料で全国配送対応。</p></details>
@@ -1263,7 +1263,7 @@ export const products: Product[] = [
 <h3>印刷工藝說明</h3>
 <ul>
   <li>標準成品尺寸 85×54mm，支援圓角模切（R3mm）避免邊角翹起</li>
-  <li>雙面印刷時正反對位精度控制在 ±0.5mm 以內，套印精準</li>
+  <li>雙面印刷時正反對位精度控製在 ±0.5mm 以內，套印精準</li>
   <li>海德堡四色柯式印刷機，網點還原細膩，色彩飽和度達 90% 以上</li>
 </ul>
 
@@ -1445,21 +1445,21 @@ export const products: Product[] = [
     <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3-5 営業日</td><td>少量追加料金</td></tr>
-    <tr><td>深圳自社工場直送（事前予約制）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
+    <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
 
 <h3>環保認證と紙材溯源</h3>
 <p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得。BOPP ラミネートでも低環境負荷フィルムを採用。ESG 配慮のブランド向けに、紙材トレーサビリティレポートをご提供。3 年連続で「グリーン印刷パートナー」認証を取得、SDGs 永続発展目標にも貢献します。</p>
 
-<h3>深圳自社工場・事前予約制現地確認</h3>
-<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約制で現地確認・紙質サンプル比較・ラミネート実物確認に対応（日本語スタッフ同席可・1 週間前予約）。</p>
+<h3>深圳自社工場・事前予約製現地確認</h3>
+<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約製で現地確認・紙質サンプル比較・ラミネート実物確認に対応（日本語スタッフ同席可・1 週間前予約）。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い対応、日本語請求書・領収書発行対応、インボイス制度対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い対応、日本語請求書・領収書発行対応、インボイス製度対応。</p>
 
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>マットとグロスラミネートのどちらを選ぶべきですか？</strong></summary><p>上品でモダンな印象はマットラミネート、鮮やかで色鮮やかな印象はグロスラミネート。モダンブランド・金融・士業はマット、写真・イラスト多用はグロスが定番です。両面ラミネートで全面保護、片面のみならコスト削減可能。</p></details>
+<details class="my-2"><summary><strong>マットとグロスラミネートのどちらを選ぶべきですか？</strong></summary><p>上品でモダンな印象はマットラミネート、鮮やかで色鮮やかな印象はグロスラミネート。モダンブランド・金融・士業はマット、寫真・イラスト多用はグロスが定番です。両面ラミネートで全面保護、片面のみならコスト削減可能。</p></details>
 <details class="my-2"><summary><strong>MOQ は何枚からですか？</strong></summary><p>標準 MOQ は 100 枚です。特急料金で 50 枚にも対応可能、最短 1 営業日で製作・納品できます。</p></details>
 <details class="my-2"><summary><strong>マットラミネートの上から書き込みできますか？</strong></summary><p>マットラミネート表面は油性ペンで書き込み可能ですが、剥がれやすいため推奨しません。裏面 (ラミネート無し) へのメモは可能。</p></details>
 <details class="my-2"><summary><strong>マット + スポット UV の組み合わせは可能ですか？</strong></summary><p>はい。マットラミネートをベースにして、ロゴ部分のみスポット UV で光沢を加える組み合わせが好評です。追加納期 +1 日、追加料金 $ ですが、究極のハイエンド名刺として高い訴求力があります。</p></details>
@@ -1579,7 +1579,7 @@ export const products: Product[] = [
 <h3>印刷工藝說明</h3>
 <ul>
   <li>標準成品尺寸 85×54mm，支援圓角模切（R3mm）避免邊角翹起</li>
-  <li>雙面印刷時正反對位精度控制在 ±0.5mm 以內，套印精準</li>
+  <li>雙面印刷時正反對位精度控製在 ±0.5mm 以內，套印精準</li>
   <li>海德堡四色柯式印刷機，網點還原細膩，色彩飽和度達 90% 以上</li>
 </ul>
 
@@ -1720,7 +1720,7 @@ export const products: Product[] = [
   <li><strong>クリエイティブエージェンシー</strong>：クライアントへの第一印象で差をつける、洗練された印象</li>
   <li><strong>ファッションブランド</strong>：シーズンコレクションとの統一感、ルックブック同梱</li>
   <li><strong>ライフスタイルブランド</strong>：サステナブル + モダンの両立、エコブランドとの親和性</li>
-  <li><strong>カフェ・レストラン</strong>：メニューブランドとの統一感、SNS 用の写真映え</li>
+  <li><strong>カフェ・レストラン</strong>：メニューブランドとの統一感、SNS 用の寫真映え</li>
   <li><strong>建築家・デザイナー</strong>：プロジェクト名を角丸で強調、ポートフォリオとの統一感</li>
 </ul>
 
@@ -1761,18 +1761,18 @@ export const products: Product[] = [
     <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3-5 営業日</td><td>少量追加料金</td></tr>
-    <tr><td>深圳自社工場直送（事前予約制）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
+    <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
 
 <h3>環保認證と紙材溯源</h3>
 <p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得。角丸加工は廃棄ロスも少なく、エコフレンドリーな加工方法。ESG 配慮のブランド向けに、紙材トレーサビリティレポートをご提供。3 年連続で「グリーン印刷パートナー」認証を取得、SDGs 永続発展目標にも貢献します。</p>
 
-<h3>深圳自社工場・事前予約制現地確認</h3>
-<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約制で現地確認・紙質サンプル比較・角丸実物確認に対応（日本語スタッフ同席可・1 週間前予約）。</p>
+<h3>深圳自社工場・事前予約製現地確認</h3>
+<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約製で現地確認・紙質サンプル比較・角丸実物確認に対応（日本語スタッフ同席可・1 週間前予約）。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い対応、日本語請求書・領収書発行対応、インボイス制度対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い対応、日本語請求書・領収書発行対応、インボイス製度対応。</p>
 
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>角丸名刺と通常名刺の違いは何ですか？</strong></summary><p>角丸名刺は R3mm/R5mm/R10mm の柔らかい角丸加工で、モダンで優しい印象を与えます。通常名刺は 90° のシャープな角で、トラディショナルで格式高い印象。テック・ライフスタイル・クリエイティブ系は角丸、金融・士業は通常が定番です。</p></details>
@@ -1987,7 +1987,7 @@ export const products: Product[] = [
 <h3>印刷工藝説明</h3>
 <ul>
   <li><strong>4 色 CMYK 印刷</strong>：塩ビフィルム + 4 色 CMYK + UV 耐性ラミネートで、屋外 3〜5 年色褪せ防止</li>
-  <li><strong>高解像度印刷</strong>：1440dpi インクジェット + 4 色オフセット機で、グラデーション・写真も精確再現</li>
+  <li><strong>高解像度印刷</strong>：1440dpi インクジェット + 4 色オフセット機で、グラデーション・寫真も精確再現</li>
   <li><strong>白インク印刷</strong>：透明 PET 素材に白インク下地で色再現性確保、クリアステッカー対応</li>
   <li><strong>可変 QR コード</strong>：1 枚ごとに違う QR コード・シリアル番号印刷可能、トレーサビリティ管理</li>
   <li><strong>印前 AI 預検</strong>：無料 AI チェックで型抜きライン・CMYK・低解像度画像を自動検証</li>
@@ -2060,19 +2060,19 @@ export const products: Product[] = [
     <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3〜5 営業日</td><td>少量追加料金</td></tr>
-    <tr><td>深圳自社工場直送（事前予約制）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
+    <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
 <p>100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
 
 <h3>環保認證と紙材溯源</h3>
-<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。学校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
+<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。學校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
 
-<h3>深圳自社工場・事前予約制現地確認</h3>
-<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約制で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
+<h3>深圳自社工場・事前予約製現地確認</h3>
+<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約製で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・学校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・學校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -2176,7 +2176,7 @@ export const products: Product[] = [
     category: 'stickers',
     category_slug: 'stickers',
     name: '透明貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Transparent Stickers | Waterproof & Die-Cut Stickers', nameJa: '透明ステッカー | 防水ステッカー / ダイカット', title_zh: '透明貼紙',
-    description: '透明PET材質，貼合後呈現無感效果，完美展現產品本身。適合化妝品、食品包裝、玻璃貼飾。', descriptionEn: 'Transparent PET material creates invisible effect when applied. Perfect for cosmetics, food packaging, glass decoration.', descriptionJa: '透明PET素材、貼り付け後無感効果。化粧品、食品包装、ガラス装飾に最適。', description_zh: '透明PET材質，貼合後呈現無感效果，完美展現產品本身。適合化妝品、食品包裝、玻璃貼飾。',
+    description: '透明PET材質，貼合後呈現無感效果，完美展現產品本身。適合化妝品、食品包裝、玻璃貼飾。', descriptionEn: 'Transparent PET material creates invisible effect when applied. Perfect for cosmetics, food packaging, glass decoration.', descriptionJa: '透明PET素材、貼り付け後無感効果。化粧品、食品包裝、ガラス裝飾に最適。', description_zh: '透明PET材質，貼合後呈現無感效果，完美展現產品本身。適合化妝品、食品包裝、玻璃貼飾。',
     longDescription: `透明 PET 貼紙在玻璃瓶、塑膠瓶與透明包裝上能呈現「無底紙感」，僅保留圖案與文字，特別適合美妝精華、香水、飲品與禮盒封口貼。白墨托底可選，用於深色瓶身仍能還原飽和色彩。建議避免過細的反白線條，並為模切預留安全距離。可搭配啞膜減少指紋、光膜提升鮮豔度。與分類頁術語一致：透明 PET、局部 UV、覆膜、模切。香港零售與展會陳列常見應用包括試用裝標籤與限量貼紙。<h3>貼紙材質對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">材質</th><th class="p-2 text-center">透明度</th><th class="p-2 text-center">防水性</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用場景</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">透明 PET</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">瓶身標籤、禮盒封條</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">PVC 防水</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">戶外標籤、食品外賣</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">銅版紙</td><td class="p-2 text-center">★★</td><td class="p-2 text-center">★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">促銷貼紙、臨時標籤</td></tr></tbody></table><h3>貼紙材質對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">材質</th><th class="p-2 text-center">透明度</th><th class="p-2 text-center">防水性</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用場景</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">透明 PET</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">瓶身標籤、禮盒封條</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">PVC 防水</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">戶外標籤、食品外賣</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">銅版紙</td><td class="p-2 text-center">★★</td><td class="p-2 text-center">★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">促銷貼紙、臨時標籤</td></tr></tbody></table>
 
 **智印雲 國際印刷**：深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。
@@ -2250,7 +2250,7 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>Can I get custom die-cut shapes?</strong></summary><p>Yes. Any outline: circle, oval, bottle contour, logo silhouette, or custom shape. Submit a vector path; we cut precisely to your spec.</p></details>
 <details class="my-2"><summary><strong>How is shipping calculated to my country?</strong></summary><p>US orders over $100 ship free via DHL Express (2-4 business days). UK/AU orders over £80 / AU$150 ship free. KR/SG/AE ship via DHL Express at standard rates (calculated at checkout). Tracking provided for all shipments.</p></details>
 <details class="my-2"><summary><strong>What if I'm not happy with the print quality?</strong></summary><p>We provide free digital color proofing before production. If the final print drifts from approved proof, we reprint at no cost or refund in full. Your satisfaction is guaranteed.</p></details>`,
-    longDescriptionJa: `透明ステッカーをZprintProでご注文。PET素材+防水・防晒・耐磨耗+プロ4色印刷+変形カット対応のプレミアム透明ステッカー印刷です。食品ブランド・化粧品・商品ラベル・容器装飾・アーティスト・クリエイター向けに、無地感ラベルやガラス容器でのラベルレス効果を実現します。【素材】PET（透明/乳白半透明/艶消し）、接着剤は一般強粘着/再剥離/耐水強粘着から選択。【サイズ】最小20mm～最大300mmまで対応。【印刷方式】顔料インクUV印刷（耐候性◎）、CMYK+特色（白インク/メタリック）対応。透明フィルムに白を下刷りして上からCMYK印刷することで、透明素材でも発色鮮明に再現できます。【カット】標準カット（四角/円/楕円）、変形カット（オリジナル形状/型抜き）、部分型抜き対応。Cut lineパスを含めてIllustrator/PDFでご支給ください。【屋外耐久性】PET素材+UVインクで3年以上、直射日光・雨風に強く自動車ボディや屋外看板にも対応可能。【利用シーン】商品ラベル（食品/化粧品/雑貨）、容器装飾（ボトル/ジャー/ガラス容器）、アート・クリエイター作品、店舗装飾（窓・ショーケース）。【納期】20枚から対応（個人のクリエイター少量制作から、法人商品ラベルの10,000枚大量発注まで対応）、最短3営業日で出荷。500枚以上の大量発注は5-7営業日。変形カットや白インク印刷を含む場合はさらに1-2日かかる場合がございます。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
+    longDescriptionJa: `透明ステッカーをZprintProでご注文。PET素材+防水・防晒・耐磨耗+プロ4色印刷+変形カット対応のプレミアム透明ステッカー印刷です。食品ブランド・化粧品・商品ラベル・容器裝飾・アーティスト・クリエイター向けに、無地感ラベルやガラス容器でのラベルレス効果を実現します。【素材】PET（透明/乳白半透明/艶消し）、接着剤は一般強粘着/再剥離/耐水強粘着から選択。【サイズ】最小20mm～最大300mmまで対応。【印刷方式】顔料インクUV印刷（耐候性◎）、CMYK+特色（白インク/メタリック）対応。透明フィルムに白を下刷りして上からCMYK印刷することで、透明素材でも発色鮮明に再現できます。【カット】標準カット（四角/円/楕円）、変形カット（オリジナル形状/型抜き）、部分型抜き対応。Cut lineパスを含めてIllustrator/PDFでご支給ください。【屋外耐久性】PET素材+UVインクで3年以上、直射日光・雨風に強く自動車ボディや屋外看板にも対応可能。【利用シーン】商品ラベル（食品/化粧品/雑貨）、容器裝飾（ボトル/ジャー/ガラス容器）、アート・クリエイター作品、店舗裝飾（窓・ショーケース）。【納期】20枚から対応（個人のクリエイター少量製作から、法人商品ラベルの10,000枚大量発注まで対応）、最短3営業日で出荷。500枚以上の大量発注は5-7営業日。変形カットや白インク印刷を含む場合はさらに1-2日かかる場合がございます。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -2452,7 +2452,7 @@ export const products: Product[] = [
 
 `,
     longDescriptionJa: `<h3>グローバルブランド向け 再剥離ステッカー</h3>
-<p>智印雲 ZprintPro の再剥離ステッカー（剥がせるステッカー）は、貼付後 90 日以内に糊残らずクリーンに剥がせる短期キャンペーン・レンタル機器・イベントバッジ・ウィンドウデカール専用設計のラベル印刷サービスです。ビニール基材または PP 基材に再剥離アクリル粘着剤を組み合せ、ガラス・塗装壁面・電子機器・平滑パッケージにしっかり密着し、貼付から 90 日以内に表面を傷つけず綺麗に除去可能。100 枚からご注文可能、500 枚未満のロットは当日デジタル色校正を無料ご提供いたします。</p>
+<p>智印雲 ZprintPro の再剥離ステッカー（剥がせるステッカー）は、貼付後 90 日以内に糊残らずクリーンに剥がせる短期キャンペーン・レンタル機器・イベントバッジ・ウィンドウデカール専用設計のラベル印刷サービスです。ビニール基材または PP 基材に再剥離アクリル粘着剤を組み合せ、ガラス・塗裝壁面・電子機器・平滑パッケージにしっかり密着し、貼付から 90 日以内に表面を傷つけず綺麗に除去可能。100 枚からご注文可能、500 枚未満のロットは当日デジタル色校正を無料ご提供いたします。</p>
 
 <h3>基材と粘着剤の比較</h3>
 <table>
@@ -2509,7 +2509,7 @@ export const products: Product[] = [
   <li><strong>イベント・カンファレンス</strong>：500-1,000 枚のバッジステッカーセット、来場者名札・座席表示に最適</li>
   <li><strong>レンタル機器メーカー</strong>：電子機器・測定器に商品番号シール貼付、返却時に糊残りなし</li>
   <li><strong>短期キャンペーン・POP 広告</strong>：30 日以内に剥がすプライスラベル、需要期後の原状復帰が容易</li>
-  <li><strong>教育機関・学校</strong>：机・椅子の管理番号、学期末に糊残らず剥がせる学校備品管理用</li>
+  <li><strong>教育機関・學校</strong>：机・椅子の管理番号、學期末に糊残らず剥がせる學校備品管理用</li>
 </ul>
 
 <h3>日本向け配送と多通貨決済</h3>
@@ -2527,7 +2527,7 @@ export const products: Product[] = [
 <p>ご注文前に、以下の 5 つのポイントをご確認いただくと、発注後のトラブルを未然に防げます：</p>
 <ul>
   <li><strong>貼付期間を明示する</strong>：30 日 / 60 日 / 90 日で粘着剤の硬化度が異なる、長期貼付は恒久粘着剤タイプ推奨</li>
-  <li><strong>貼付面の素材を確認する</strong>：ガラス / 塗装壁 / プラスチック / 電子機器筐体で適合粘着剤が異なる、特殊面は事前サンプルテスト推奨</li>
+  <li><strong>貼付面の素材を確認する</strong>：ガラス / 塗裝壁 / プラスチック / 電子機器筐体で適合粘着剤が異なる、特殊面は事前サンプルテスト推奨</li>
   <li><strong>屋外か屋内かを明示する</strong>：屋外はビニール + UV ラミネ必須、屋内は上質紙でコスト削減可能</li>
   <li><strong>数量は段階割引を考慮する</strong>：500 枚 / 1,000 枚 / 5,000 枚で割引率が UP、まとめて発注がお得</li>
   <li><strong>無料色校正を活用する</strong>：基材色と印刷色の組み合わせを事前に確認、ミスマッチ防止</li>
@@ -2553,7 +2553,7 @@ export const products: Product[] = [
     <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3-5 営業日</td><td>少量追加料金</td></tr>
-    <tr><td>深圳自社工場直送（事前予約制）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
+    <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
 <p>100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
@@ -2561,16 +2561,16 @@ export const products: Product[] = [
 <h3>環保認證と紙材溯源</h3>
 <p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。再剥離ステッカーシリーズでも大豆インク・水性インクを採用し、エコシリーズでは再生紙も選択可能。ESG 配慮のブランドやサステナブル調達要件の企業向けに、紙材トレーサビリティレポートとカーボンフットプリント試算をご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
 
-<h3>深圳自社工場・事前予約制現地確認</h3>
-<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約制で現地確認・基材サンプル比較・粘着力テスト・色校正確認に対応しています（日本語スタッフ同席可・1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
+<h3>深圳自社工場・事前予約製現地確認</h3>
+<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約製で現地確認・基材サンプル比較・粘着力テスト・色校正確認に対応しています（日本語スタッフ同席可・1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス制度対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス製度対応。</p>
 
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>剥がした時に糊残りは出ませんか？</strong></summary><p>いいえ、出ません。当社の再剥離粘着剤は、ガラス・塗装壁・電子機器・平滑パッケージのいずれにおいても、貼付から 90 日以内に糊残りなく剥がせるよう設計されています。すべてのロットでクリーン剥離テストを実施しております。</p></details>
+<details class="my-2"><summary><strong>剥がした時に糊残りは出ませんか？</strong></summary><p>いいえ、出ません。当社の再剥離粘着剤は、ガラス・塗裝壁・電子機器・平滑パッケージのいずれにおいても、貼付から 90 日以内に糊残りなく剥がせるよう設計されています。すべてのロットでクリーン剥離テストを実施しております。</p></details>
 <details class="my-2"><summary><strong>剥がした後に再利用できますか？</strong></summary><p>静電吸着タイプ（粘着剤なし）のガラス用デカールは、5〜10 回の再利用が可能です。再剥離粘着剤タイプは、貼付後 24 時間以内であれば 2〜3 回の位置調整に対応いたします。</p></details>
-<details class="my-2"><summary><strong>どのような貼付面に対応していますか？</strong></summary><p>ガラス・塗装壁（ラテックス・油性塗料いずれも）・仕上げ木材・プラスチックパッケージ・電子機器筐体・平滑金属面に対応いたします。未塗装木材・煉瓦・テクスチャー面では恒久粘着剤タイプを推奨いたします。</p></details>
+<details class="my-2"><summary><strong>どのような貼付面に対応していますか？</strong></summary><p>ガラス・塗裝壁（ラテックス・油性塗料いずれも）・仕上げ木材・プラスチックパッケージ・電子機器筐体・平滑金属面に対応いたします。未塗裝木材・煉瓦・テクスチャー面では恒久粘着剤タイプを推奨いたします。</p></details>
 <details class="my-2"><summary><strong>どのくらいの期間、再剥離性が維持されますか？</strong></summary><p>標準再剥離粘着剤は最長 90 日、弱粘着タイプは最長 60 日まで糊残りなく剥がせます。それ以上の期間になりますと、粘着剤が硬化し始めます。</p></details>
 <details class="my-2"><summary><strong>カスタム形状に対応できますか？</strong></summary><p>はい。10×10mm〜500×500mm までのカスタム形状に対応いたします。丸・四角・楕円・星・ハート・ロゴ輪郭いずれも対応可能です。型抜きラインを AI または PDF 形式で ご入稿ください。</p></details>
 <details class="my-2"><summary><strong>可変データ印刷に対応していますか？</strong></summary><p>はい。1 枚ごとの QR コード・シリアル番号・連番印刷に対応いたします。レンタル管理・イベントチェックイン・短期キャンペーンのトラッキング用途に最適で、データは Excel / CSV 形式で ご入稿ください。</p></details>
@@ -2814,7 +2814,7 @@ export const products: Product[] = [
   <li><strong>作成ガイド</strong>：サイズ・解像度・CMYK 設定の初心者向け解説書</li>
   <li><strong>多形式入稿対応</strong>：Illustrator / Photoshop / Canva / PowerPoint / PDF すべて対応</li>
   <li><strong>3 案無料デザイン</strong>：プロデザイナーが 3 案作成、お好みの 1 案を本印刷</li>
-  <li><strong>修正無制限</strong>：初版提出後 3 回まで無料修正</li>
+  <li><strong>修正無製限</strong>：初版提出後 3 回まで無料修正</li>
 </ul>
 
 <h3>可変データ印刷と 1 枚もの違うデザイン</h3>
@@ -2823,7 +2823,7 @@ export const products: Product[] = [
   <li><strong>可変 QR コード</strong>：1 枚ごとに違う QR コードを印刷、限定商品・トレーサビリティ管理</li>
   <li><strong>個別番号</strong>：1〜10,000 までの連番・エディションナンバーを自動付与</li>
   <li><strong>個別名前</strong>：名札・イベント参加者・チームメンバー名を 1 枚ずつ</li>
-  <li><strong>写真入り</strong>：1 枚ごとに違う写真を使った記念ステッカー・プロフィールステッカー</li>
+  <li><strong>寫真入り</strong>：1 枚ごとに違う寫真を使った記念ステッカー・プロフィールステッカー</li>
   <li><strong>EC 事業者向け</strong>：SKU 別の商品ステッカーを小ロットから量産まで同一価格で対応</li>
 </ul>
 
@@ -2880,19 +2880,19 @@ export const products: Product[] = [
     <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3〜5 営業日</td><td>少量追加料金</td></tr>
-    <tr><td>深圳自社工場直送（事前予約制）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
+    <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
 <p>100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
 
 <h3>環保認證と紙材溯源</h3>
-<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。学校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
+<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。學校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
 
-<h3>深圳自社工場・事前予約制現地確認</h3>
-<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約制で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
+<h3>深圳自社工場・事前予約製現地確認</h3>
+<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約製で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・学校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・學校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -2991,8 +2991,8 @@ export const products: Product[] = [
     slug: 'die-cut-stickers',
     category: 'stickers',
     category_slug: 'stickers',
-    name: '異形模切貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Die-cut Stickers | Waterproof & Die-Cut Stickers', nameJa: '型抜きステッカー | 防水ステッカー / ダイカット', title_zh: '異形模切貼紙 · 文創IP角色造型模切定制 | 智印雲 ZprintPro',
-    description: '任意形狀模切，讓創意不受限制。可切出Logo形狀、卡通形象等獨特輪廓。**適配行業**: 文創IP / VTuber / 動漫周邊 / 個人插畫師 / 品牌吉祥物 / 同人誌 / 活動贈品。', descriptionEn: 'Any shape die-cutting, creativity without limits. Can cut logo shapes, cartoon characters, unique contours. **Best for**: creator IP / VTuber / anime merch / illustrators / brand mascots / doujinshi / event giveaways. Free die-cut setup · Free shipping over $99 USA · 50 MOQ · Custom shapes for product labels, packaging, and promotional use.', descriptionJa: '任意形状の型抜き、創作の自由を制限しません。**適用業界**: クリエイターIP / VTuber / アニメ周边 / 個人イラストレーター / ブランドマスコット / 同人誌 / イベント赠り物。。型代無料・全国送料込み・50枚から。製品ラベル・パッケージ・プロモーション用カスタム形状。', description_zh: '任意形狀模切，讓創意不受限制。可切出Logo形狀、卡通形象等獨特輪廓。**適配行業**: 文創IP / VTuber / 動漫周邊 / 個人插畫師 / 品牌吉祥物 / 同人誌 / 活動贈品。',
+    name: '異形模切貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Die-cut Stickers | Waterproof & Die-Cut Stickers', nameJa: '型抜きステッカー | 防水ステッカー / ダイカット', title_zh: '異形模切貼紙 · 文創IP角色造型模切定製 | 智印雲 ZprintPro',
+    description: '任意形狀模切，讓創意不受限製。可切出Logo形狀、卡通形象等獨特輪廓。**適配行業**: 文創IP / VTuber / 動漫周邊 / 個人插畫師 / 品牌吉祥物 / 同人誌 / 活動贈品。', descriptionEn: 'Any shape die-cutting, creativity without limits. Can cut logo shapes, cartoon characters, unique contours. **Best for**: creator IP / VTuber / anime merch / illustrators / brand mascots / doujinshi / event giveaways. Free die-cut setup · Free shipping over $99 USA · 50 MOQ · Custom shapes for product labels, packaging, and promotional use.', descriptionJa: '任意形状の型抜き、創作の自由を製限しません。**適用業界**: クリエイターIP / VTuber / アニメ周边 / 個人イラストレーター / ブランドマスコット / 同人誌 / イベント赠り物。。型代無料・全国送料込み・50枚から。製品ラベル・パッケージ・プロモーション用カスタム形状。', description_zh: '任意形狀模切，讓創意不受限製。可切出Logo形狀、卡通形象等獨特輪廓。**適配行業**: 文創IP / VTuber / 動漫周邊 / 個人插畫師 / 品牌吉祥物 / 同人誌 / 活動贈品。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -3132,9 +3132,9 @@ export const products: Product[] = [
 
 <h3>印刷工藝と高精度型抜き</h3>
 <ul>
-  <li><strong>4 色 CMYK 印刷</strong>：海德堡 4 色機で 90% 以上の色飽和、グラデーション・写真も精確再現</li>
+  <li><strong>4 色 CMYK 印刷</strong>：海德堡 4 色機で 90% 以上の色飽和、グラデーション・寫真も精確再現</li>
   <li><strong>高解像度印刷</strong>：1440dpi インクジェット + 4 色オフセット機で、複雑なデザインも精確再現</li>
-  <li><strong>高精度型抜き</strong>：レーザーガイド + 自動刃制御で ±0.1mm の精度、複雑な形状も対応</li>
+  <li><strong>高精度型抜き</strong>：レーザーガイド + 自動刃製御で ±0.1mm の精度、複雑な形状も対応</li>
   <li><strong>白インク印刷</strong>：透明素材に白インク下地で色再現性確保、クリアステッカー対応</li>
   <li><strong>印前 AI 預検</strong>：無料 AI チェックで型抜きライン・CMYK・低解像度画像を自動検証</li>
 </ul>
@@ -3159,7 +3159,7 @@ export const products: Product[] = [
   <li><strong>キャラクターグッズ</strong>：アニメ・漫画・ゲームの公式グッズ</li>
   <li><strong>商品ラベル</strong>：化粧品・食品・飲料ブランド</li>
   <li><strong>イベント配布物</strong>：フェス・ライブ・スポーツ大会</li>
-  <li><strong>ギフト用</strong>：オリジナルキャラクター・写真入り</li>
+  <li><strong>ギフト用</strong>：オリジナルキャラクター・寫真入り</li>
   <li><strong>プロモーショングッズ</strong>：企業ノベルティ・展示会配布物</li>
 </ul>
 
@@ -3206,19 +3206,19 @@ export const products: Product[] = [
     <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3〜5 営業日</td><td>少量追加料金</td></tr>
-    <tr><td>深圳自社工場直送（事前予約制）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
+    <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
 <p>100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
 
 <h3>環保認證と紙材溯源</h3>
-<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。学校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
+<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。學校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
 
-<h3>深圳自社工場・事前予約制現地確認</h3>
-<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約制で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
+<h3>深圳自社工場・事前予約製現地確認</h3>
+<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約製で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・学校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・學校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -3323,7 +3323,7 @@ export const products: Product[] = [
     category: 'stickers',
     category_slug: 'stickers',
     name: '燙金貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Foil Stickers | Waterproof & Die-Cut Stickers', nameJa: '箔押しステッカー | 防水ステッカー / ダイカット', title_zh: '燙金貼紙',
-    description: '燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮品包裝、VIP標識。', descriptionEn: 'Foil stamping gives stickers premium quality feel. Perfect for luxury product labels, gift packaging, VIP badges. Gold/silver foil · 50 MOQ · Free design proof · Fast 4-day turnaround. Perfect for beauty brands, wedding favors, premium packaging.', descriptionJa: '箔押し加工でステッカーに高級感。高級製品ラベル、ギフト包装、VIPバッジに最適。。金箔/銀箔・50枚から・校正無料・最短4日出荷。美容ブランド・ウェディング・プレミアムパッケージに最適。', description_zh: '燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮品包裝、VIP標識。',
+    description: '燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮品包裝、VIP標識。', descriptionEn: 'Foil stamping gives stickers premium quality feel. Perfect for luxury product labels, gift packaging, VIP badges. Gold/silver foil · 50 MOQ · Free design proof · Fast 4-day turnaround. Perfect for beauty brands, wedding favors, premium packaging.', descriptionJa: '箔押し加工でステッカーに高級感。高級製品ラベル、ギフト包裝、VIPバッジに最適。。金箔/銀箔・50枚から・校正無料・最短4日出荷。美容ブランド・ウェディング・プレミアムパッケージに最適。', description_zh: '燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮品包裝、VIP標識。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -3459,7 +3459,7 @@ export const products: Product[] = [
   <tbody>
     <tr class="border-b border-gray-200"><td>全面箔押し</td><td>最大光沢、プレミアム開封体験</td><td>+1 日</td><td>$$</td></tr>
     <tr class="border-b border-gray-200"><td>ロゴ部分のみ箔押し</td><td>白地・カラー印刷上に選択的アクセント</td><td>+1 日</td><td>$</td></tr>
-    <tr class="border-b border-gray-200"><td>箔押し枠・フレーム</td><td>装飾エッジ、プレミアム感演出</td><td>+1 日</td><td>$</td></tr>
+    <tr class="border-b border-gray-200"><td>箔押し枠・フレーム</td><td>裝飾エッジ、プレミアム感演出</td><td>+1 日</td><td>$</td></tr>
     <tr class="border-b border-gray-200"><td>箔押し + スポット UV 組合せ</td><td>金属光沢 + 光沢コントラスト</td><td>+1 日</td><td>$$</td></tr>
     <tr><td>マットラミネーション（箔上）</td><td>控えめな金属感、反射防止</td><td>+1 日</td><td>$</td></tr>
   </tbody>
@@ -3537,7 +3537,7 @@ export const products: Product[] = [
     <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3-5 営業日</td><td>少量追加料金</td></tr>
-    <tr><td>深圳自社工場直送（事前予約制）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
+    <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
 <p>100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
@@ -3545,11 +3545,11 @@ export const products: Product[] = [
 <h3>環保認證と紙材溯源</h3>
 <p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。箔押しシリーズでも大豆インク・水性インクを採用し、エコシリーズでは再生紙も選択可能。ESG 配慮のブランドやサステナブル調達要件の企業向けに、紙材トレーサビリティレポートとカーボンフットプリント試算をご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
 
-<h3>深圳自社工場・事前予約制現地確認</h3>
-<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約制で現地確認・箔サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
+<h3>深圳自社工場・事前予約製現地確認</h3>
+<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約製で現地確認・箔サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス制度対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス製度対応。</p>
 
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>箔押しとメタリックインキの違いは何ですか？</strong></summary><p>ホットスタンプ箔押しは本物の金属フィルムを熱圧着する加工で、反射率 90% 以上の本物の金属光沢を実現します。メタリックインキは金属顔料を配合したインキで印刷する方式で、光沢が控えめで反射性が劣ります。箔押しの方が圧倒的に高級感があります。</p></details>
@@ -3765,7 +3765,7 @@ export const products: Product[] = [
     <tr class="border-b border-gray-200"><td>タンパーエビデント破壊型</td><td>★★★★★</td><td>★★★</td><td>—</td><td>製薬、食品パッケージ、認証製品</td></tr>
     <tr class="border-b border-gray-200"><td>ホログラムシール</td><td>★★★★</td><td>★★★★★</td><td>—</td><td>高級品、証明書、公文書</td></tr>
     <tr class="border-b border-gray-200"><td>シリアル QR コード</td><td>★★★</td><td>★★★★</td><td>★★★★★</td><td>製薬サプライチェーン、電子機器保証</td></tr>
-    <tr><td>組合せ（ホログラム + QR）</td><td>★★★★</td><td>★★★★★</td><td>★★★★★</td><td>高価値商品、規制産業</td></tr>
+    <tr><td>組合せ（ホログラム + QR）</td><td>★★★★</td><td>★★★★★</td><td>★★★★★</td><td>高価値商品、規製産業</td></tr>
   </tbody>
 </table>
 
@@ -3785,9 +3785,9 @@ export const products: Product[] = [
 
 <h3>印刷工藝と品質管理</h3>
 <ul>
-  <li><strong>FDA 21 CFR Part 11 準拠</strong>：製薬業界向け電子記録・電子署名規制に対応、規制産業向けに必須</li>
+  <li><strong>FDA 21 CFR Part 11 準拠</strong>：製薬業界向け電子記録・電子署名規製に対応、規製産業向けに必須</li>
   <li><strong>ISO 12931 偽造防止規格対応</strong>：国際的な偽造防止基準に適合、輸出製品の信頼性向上</li>
-  <li><strong>REACH / RoHS 準拠素材</strong>：欧州化学物質規制・有害物質制限に対応、EU 市場向けも安心</li>
+  <li><strong>REACH / RoHS 準拠素材</strong>：欧州化學物質規製・有害物質製限に対応、EU 市場向けも安心</li>
   <li><strong>可変データ印刷（VDP）</strong>：1 枚ごとの固有 QR / シリアル番号 / 英数字コードを生成、Excel/CSV ご入稿で対応</li>
   <li><strong>Heidelberg 4 色オフセット + 専用セキュリティ印刷機</strong>：色再現性 90% 以上、CMYK 厳密管理、改ざん検知精度を確保</li>
 </ul>
@@ -3807,7 +3807,7 @@ export const products: Product[] = [
 <h3>業界別活用事例</h3>
 <ul>
   <li><strong>電子機器メーカー</strong>：製品ラインあたり 1,000 枚以上の保証シール貼付、保証期間中の不正開封防止</li>
-  <li><strong>製薬会社</strong>：500-2,000 ロット単位のタンパーエビデントシール、医薬品包装の完全性保証</li>
+  <li><strong>製薬会社</strong>：500-2,000 ロット単位のタンパーエビデントシール、医薬品包裝の完全性保証</li>
   <li><strong>ラグジュアリーハンドバッグブランド</strong>：200-1,000 枚の限定ドロップ用偽造防止シール、本物認証</li>
   <li><strong>食品・サプリメント</strong>：オーガニック認証商品・健康食品のホログラムシール、信頼性の可視化</li>
   <li><strong>化粧品・香水ブランド</strong>：高級ラインの改ざん検知シール、並行輸入品の流通抑止</li>
@@ -3829,7 +3829,7 @@ export const products: Product[] = [
 <p>ご注文前に、以下の 5 つのポイントをご確認いただくと、発注後のトラブルを未然に防げます：</p>
 <ul>
   <li><strong>リスクプロファイルを評価する</strong>：商品価値・流通経路・偽造リスクを整理、最適なセキュリティ機能を選択</li>
-  <li><strong>規制要件を確認する</strong>：FDA / ISO / REACH / RoHS など、業界固有の規制への適合性を事前確認</li>
+  <li><strong>規製要件を確認する</strong>：FDA / ISO / REACH / RoHS など、業界固有の規製への適合性を事前確認</li>
   <li><strong>追跡管理システムを連携する</strong>：既存 DB / ERP との連動可否、可変 QR のフォーマットを事前協議</li>
   <li><strong>数量は段階割引を考慮する</strong>：1,000 枚 / 10,000 枚 / 50,000 枚で割引率が UP、まとめて発注がお得</li>
   <li><strong>無料セキュリティ監査を活用する</strong>：商品パッケージの最適なセキュリティ機能ミックスを専門家がご提案</li>
@@ -3855,7 +3855,7 @@ export const products: Product[] = [
     <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3-5 営業日</td><td>少量追加料金</td></tr>
-    <tr><td>深圳自社工場直送（事前予約制）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
+    <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
 <p>100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
@@ -3863,16 +3863,16 @@ export const products: Product[] = [
 <h3>環保認證と紙材溯源</h3>
 <p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。セキュリティステッカーシリーズでも大豆インク・水性インクを採用し、エコシリーズでは再生紙も選択可能。ESG 配慮のブランドやサステナブル調達要件の企業向けに、紙材トレーサビリティレポートとカーボンフットプリント試算をご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
 
-<h3>深圳自社工場・事前予約制現地確認</h3>
-<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約制で現地確認・セキュリティ素材サンプル比較・粘着力テスト・色校正確認に対応しています（日本語スタッフ同席可・1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
+<h3>深圳自社工場・事前予約製現地確認</h3>
+<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約製で現地確認・セキュリティ素材サンプル比較・粘着力テスト・色校正確認に対応しています（日本語スタッフ同席可・1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス制度対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス製度対応。</p>
 
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>ボイド剥離と破壊型の違いは何ですか？</strong></summary><p>ボイド剥離は剥がすと基材側に「VOID」のパターンが残ります。破壊型ステッカーは剥がそうとすると細かく破砕され、再貼付が不可能となります。ボイドは再利用フレンドリー、破壊型は最高セキュリティ。</p></details>
 <details class="my-2"><summary><strong>1 枚ごとに固有の QR コードを付けられますか？</strong></summary><p>はい。可変データ印刷で 1 枚ごとの固有 QR コードを生成し、貴社 DB にリンクできます。Excel / CSV 形式で ご入稿ください。DB スキーマ・連携ガイドもご提供いたします。</p></details>
-<details class="my-2"><summary><strong>FDA 準拠ですか？</strong></summary><p>はい。当社のボイド剥離・破壊型素材は FDA 準拠で、食品間接接触・製薬包装に対応。ロットごとに COA（分析証明書）をご提供いたします。</p></details>
+<details class="my-2"><summary><strong>FDA 準拠ですか？</strong></summary><p>はい。当社のボイド剥離・破壊型素材は FDA 準拠で、食品間接接触・製薬包裝に対応。ロットごとに COA（分析証明書）をご提供いたします。</p></details>
 <details class="my-2"><summary><strong>既存の追跡システムと連動できますか？</strong></summary><p>はい。URL / JSON / GS1 など任意のフォーマットで QR コードを生成し、既存の track-and-trace DB と連携可能です。API・バルクエクスポート対応。</p></details>
 <details class="my-2"><summary><strong>ホログラムの改ざん防止性はどのくらいですか？</strong></summary><p>ホログラムシールは視覚的偽造防止（複製困難）と粘着剤の改ざん検知（剥がすと破壊）を併せ持ちます。中〜高セキュリティ向けに最適です。</p></details>
 <details class="my-2"><summary><strong>バーコードや RFID との連動はできますか？</strong></summary><p>1D / 2D バーコード（Code 128 / QR / Data Matrix）に対応、シリアル番号の事前印刷も可能です。RFID inlay 組込みは 5,000 枚以上のご注文で対応いたします。</p></details>
@@ -3885,7 +3885,7 @@ export const products: Product[] = [
       '適用保修、3C、證書與封條',
       '可搭配雷射全息提升辨識',
       '印前防偽工藝組合建議',
-      '批次留樣與色差控制',
+      '批次留樣與色差控製',
       '支援多語警示文案',
     ],
     specs: {
@@ -3961,7 +3961,7 @@ export const products: Product[] = [
     category: 'stickers',
     category_slug: 'stickers',
     name: '螢光貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Fluorescent Stickers | Waterproof & Die-Cut Stickers', nameJa: '蛍光ステッカー | 防水ステッカー / ダイカット', title_zh: '螢光貼紙',
-    description: '螢光色彩，在光線下格外醒目。適合促銷標籤、安全標識、活動裝飾。', descriptionEn: 'Fluorescent colors, highly visible under light. Perfect for promotional labels, safety signs, event decoration.', descriptionJa: '蛍光色、光の下で非常に目立ちます。プロモーションラベル、安全標識、イベント装飾に最適。', description_zh: '螢光色彩，在光線下格外醒目。適合促銷標籤、安全標識、活動裝飾。',
+    description: '螢光色彩，在光線下格外醒目。適合促銷標籤、安全標識、活動裝飾。', descriptionEn: 'Fluorescent colors, highly visible under light. Perfect for promotional labels, safety signs, event decoration.', descriptionJa: '蛍光色、光の下で非常に目立ちます。プロモーションラベル、安全標識、イベント裝飾に最適。', description_zh: '螢光色彩，在光線下格外醒目。適合促銷標籤、安全標識、活動裝飾。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -4103,7 +4103,7 @@ export const products: Product[] = [
 <h3>高彩度蛍光インキと UV 印刷</h3>
 <ul>
   <li><strong>蛍光インキ 4 色（ピンク・イエロー・オレンジ・グリーン）</strong>：高彩度の蛍光インキで視認性 MAX</li>
-  <li><strong>ブラックライト（UV 紫外線）対応</strong>：ブラックライト照射で強く発光、ライブ・クラブ装飾に最適</li>
+  <li><strong>ブラックライト（UV 紫外線）対応</strong>：ブラックライト照射で強く発光、ライブ・クラブ裝飾に最適</li>
   <li><strong>4 色 CMYK + 蛍光インキ重ね刷り</strong>：通常色と蛍光色の組み合わせ、複雑なデザイン対応</li>
   <li><strong>屋外 6 ヶ月〜1 年色持ち</strong>：UV 耐性ラミネートで短期屋外イベント・選挙ポスターに対応</li>
   <li><strong>印前 AI 預検</strong>：無料 AI チェックで蛍光色の色域・CMYK 変換を自動検証</li>
@@ -4116,11 +4116,11 @@ export const products: Product[] = [
 <p>智印雲 ZprintPro 蛍光ステッカーは年間 10 万枚以上の出荷実績。</p>
 <ul>
   <li><strong>ライブ・コンサート会場</strong>：アーティストグッズ、限定販売</li>
-  <li><strong>ナイトクラブ・イベント装飾</strong>：ブラックライト下で発光、視覚的インパクト</li>
+  <li><strong>ナイトクラブ・イベント裝飾</strong>：ブラックライト下で発光、視覚的インパクト</li>
   <li><strong>安全標識・警告表示</strong>：工事現場・危険区域の注意喚起</li>
   <li><strong>選挙キャンペーン</strong>：候補者名・政党ロゴの視認性向上</li>
   <li><strong>短期キャンペーン広告</strong>：夏休み・年末セール・キャンペーン告知</li>
-  <li><strong>パーティー装飾</strong>：誕生日・結婚式・イベントの装飾ステッカー</li>
+  <li><strong>パーティー裝飾</strong>：誕生日・結婚式・イベントの裝飾ステッカー</li>
 </ul>
 
 <h3>蛍光と他の素材の組み合わせ</h3>
@@ -4176,19 +4176,19 @@ export const products: Product[] = [
     <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3〜5 営業日</td><td>少量追加料金</td></tr>
-    <tr><td>深圳自社工場直送（事前予約制）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
+    <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
 <p>100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
 
 <h3>環保認證と紙材溯源</h3>
-<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。学校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
+<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。學校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
 
-<h3>深圳自社工場・事前予約制現地確認</h3>
-<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約制で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
+<h3>深圳自社工場・事前予約製現地確認</h3>
+<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約製で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・学校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・學校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -4267,7 +4267,7 @@ export const products: Product[] = [
     category: 'paper-bags',
     category_slug: 'paper-bags',
     name: '牛皮紙袋 | 紙袋 / 牛皮紙袋 / 手提袋', nameEn: 'Kraft Paper Bags | Paper Bags & Kraft Bags', nameJa: 'クラフト紙袋 | 紙袋 / クラフト紙袋 / ハンドル', title_zh: '牛皮紙袋印刷訂製 100個起印 免費刀模 FSC認證 | 智印雲 ZprintPro',
-    description: '牛皮紙袋印刷訂製，100個起印，HK$1.8起/個。FSC環保認證紙材，多尺寸多規格，免費刀模設計，支援燙金UV局部。即日交貨，全港送貨，零售餐飲活動品牌推廣。', descriptionEn: 'Eco-friendly kraft paper, natural and rustic, loved by consumers. Perfect for clothing stores, gift shops, coffee shops., ISO 9001:2015 certified quality management system. Eco-friendly kraft · 100 MOQ · Twisted/ribbon handle options · Free shipping over $99 USA. Perfect for retail, bakery, fashion brands.', descriptionJa: '環境に優しいクラフト紙、質朴で自然、消費者に人気。衣料品店、ギフトショップ、コーヒーショップに最適。。エコクラフト紙・100枚から・紐/リボン手提げ選択可・全国送料込み。小売・ベーカリー・アパレルブランドに最適。', description_zh: '環保牛皮紙材質，質樸自然，深受消費者喜愛。適合服裝店、禮品店、咖啡店。多種尺寸可選，可定制Logo印刷。',
+    description: '牛皮紙袋印刷訂製，100個起印，HK$1.8起/個。FSC環保認證紙材，多尺寸多規格，免費刀模設計，支援燙金UV局部。即日交貨，全港送貨，零售餐飲活動品牌推廣。', descriptionEn: 'Eco-friendly kraft paper, natural and rustic, loved by consumers. Perfect for clothing stores, gift shops, coffee shops., ISO 9001:2015 certified quality management system. Eco-friendly kraft · 100 MOQ · Twisted/ribbon handle options · Free shipping over $99 USA. Perfect for retail, bakery, fashion brands.', descriptionJa: '環境に優しいクラフト紙、質朴で自然、消費者に人気。衣料品店、ギフトショップ、コーヒーショップに最適。。エコクラフト紙・100枚から・紐/リボン手提げ選択可・全国送料込み。小売・ベーカリー・アパレルブランドに最適。', description_zh: '環保牛皮紙材質，質樸自然，深受消費者喜愛。適合服裝店、禮品店、咖啡店。多種尺寸可選，可定製Logo印刷。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -4409,7 +4409,7 @@ export const products: Product[] = [
 
 <h3>印刷工藝説明</h3>
 <ul>
-  <li><strong>4 色 CMYK 印刷</strong>：海德堡 4 色オフセット機で 90% 以上の色飽和、写真・グラデーション・ブランド色も精確に再現</li>
+  <li><strong>4 色 CMYK 印刷</strong>：海德堡 4 色オフセット機で 90% 以上の色飽和、寫真・グラデーション・ブランド色も精確に再現</li>
   <li><strong>両面印刷</strong>：表面と裏面の両面に印刷可能、店舗ロゴ＋連絡先など情報量増</li>
   <li><strong>スポットカラー</strong>：DIC/Pantone 指定色対応、ブランドカラー厳守</li>
   <li><strong>特殊インキ</strong>：蛍光インキ・メタリックインキ・香りインキなど差別化オプション</li>
@@ -4419,7 +4419,7 @@ export const products: Product[] = [
 <h3>取っ手と構造の選択</h3>
 <p>クラフト紙袋の取っ手は 8 種類から選択可能、ブランドイメージと用途に応じてカスタマイズ。</p>
 <ul>
-  <li><strong>PP 縄（ポリプロピレン）</strong>：標準的な化学繊維縄、耐久性高、コストパフォーマンス最良</li>
+  <li><strong>PP 縄（ポリプロピレン）</strong>：標準的な化學繊維縄、耐久性高、コストパフォーマンス最良</li>
   <li><strong>紙縄</strong>：エコ志向、100% 紙素材、リサイクル可能</li>
   <li><strong>リボン（サテン）</strong>：ギフト・婚礼向け、上品な光沢と手触り</li>
   <li><strong>平紐・丸紐</strong>：シンプル、アパレル・カフェに人気</li>
@@ -4483,19 +4483,19 @@ export const products: Product[] = [
     <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3〜5 営業日</td><td>少量追加料金</td></tr>
-    <tr><td>深圳自社工場直送（事前予約制）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
+    <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
 <p>100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
 
 <h3>環保認證と紙材溯源</h3>
-<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。学校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
+<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。學校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
 
-<h3>深圳自社工場・事前予約制現地確認</h3>
-<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約制で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
+<h3>深圳自社工場・事前予約製現地確認</h3>
+<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約製で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・学校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・學校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -4661,7 +4661,7 @@ export const products: Product[] = [
 
 <h3>Quality, Compliance, and Shipping</h3>
 <p>ZprintPro is dedicated to quality and compliance, with FSC-certified materials, ISO 9001 manufacturing standards, and ISO 12647 color management. We offer DHL Express global shipping with delivery in 2-4 days. Get an instant 30-second AI quote with no signup required.</p>`,
-    longDescriptionJa: `白卡紙袋をZprintProでご注文。平滑で高剛性の白卡紙+フルカラー印刷+箔押し/局部UV/エンボス。美容・宝飾・プレミアムアパレル様の贈答・小売に最適。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `白卡紙袋をZprintProでご注文。平滑で高剛性の白卡紙+フルカラー印刷+箔押し/局部UV/エンボス。美容・宝飾・プレミアムアパレル様の贈答・小売に最適。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -4875,7 +4875,7 @@ export const products: Product[] = [
     <tr><th>紙質</th><th>克重</th><th>特性</th><th>適用場景</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>コート紙（光沢）</td><td>157g–250g</td><td>表面光亮、色鮮やか、写真再現性高</td><td>クリスマス・アパレル</td></tr>
+    <tr class="border-b border-gray-200"><td>コート紙（光沢）</td><td>157g–250g</td><td>表面光亮、色鮮やか、寫真再現性高</td><td>クリスマス・アパレル</td></tr>
     <tr class="border-b border-gray-200"><td>クラフト紙（ナチュラル）</td><td>120g–200g</td><td>自然な茶色、ザラつき感、エコ志向</td><td>オーガニック・ナチュラル系</td></tr>
     <tr class="border-b border-gray-200"><td>特殊紙（マーブル・和紙調）</td><td>200g–250g</td><td>独特な模様、高級感</td><td>婚礼・フォーマル・VIP</td></tr>
     <tr><td>厚口紙（プレミアム）</td><td>300g</td><td>最高級、存在感 MAX</td><td>高級ブランド・VIP ギフト</td></tr>
@@ -4900,7 +4900,7 @@ export const products: Product[] = [
 
 <h3>印刷工藝と表面加工</h3>
 <ul>
-  <li><strong>4 色 CMYK 印刷</strong>：海德堡 4 色機で 90% 以上の色飽和、写真・グラデーションも精確再現</li>
+  <li><strong>4 色 CMYK 印刷</strong>：海德堡 4 色機で 90% 以上の色飽和、寫真・グラデーションも精確再現</li>
   <li><strong>両面印刷</strong>：表面と裏面の両面に印刷可能、店舗ロゴ＋連絡先など情報量増</li>
   <li><strong>スポットカラー</strong>：DIC/Pantone 指定色対応、ブランドカラー厳守</li>
   <li><strong>PP ラミネート（光/マット）</strong>：表面保護、防水性 UP、上品な雾面感</li>
@@ -4986,19 +4986,19 @@ export const products: Product[] = [
     <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3〜5 営業日</td><td>少量追加料金</td></tr>
-    <tr><td>深圳自社工場直送（事前予約制）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
+    <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
 <p>100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
 
 <h3>環保認證と紙材溯源</h3>
-<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。学校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
+<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。學校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
 
-<h3>深圳自社工場・事前予約制現地確認</h3>
-<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約制で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
+<h3>深圳自社工場・事前予約製現地確認</h3>
+<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約製で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・学校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・學校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -5315,7 +5315,7 @@ export const products: Product[] = [
     <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3-5 営業日</td><td>少量追加料金</td></tr>
-    <tr><td>深圳自社工場直送（事前予約制）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
+    <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
 <p>100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
@@ -5323,11 +5323,11 @@ export const products: Product[] = [
 <h3>環保認證と紙材溯源</h3>
 <p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコ紙袋シリーズでは再生紙 100%・FSC Mix・大豆インク・水性コーティングを採用し、コンポスト可能・プラスチックフリー。ESG 配慮のブランドやサステナブル調達要件の企業向けに、紙材トレーサビリティレポートとカーボンフットプリント試算をご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
 
-<h3>深圳自社工場・事前予約制現地確認</h3>
-<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約制で現地確認・素材サンプル比較・耐荷重テスト・色校正確認に対応しています（日本語スタッフ同席可・1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
+<h3>深圳自社工場・事前予約製現地確認</h3>
+<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約製で現地確認・素材サンプル比較・耐荷重テスト・色校正確認に対応しています（日本語スタッフ同席可・1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス制度対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス製度対応。</p>
 
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>本当に 100% リサイクル可能ですか？</strong></summary><p>はい。当社のクラフト紙 + 紙紐ハンドル + 大豆インクの紙袋は、標準的な紙リサイクル系統で完全にリサイクル可能です。エンド消費者向けリサイクル説明もご注文毎にご提供いたします。</p></details>
@@ -5641,7 +5641,7 @@ export const products: Product[] = [
     <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3-5 営業日</td><td>少量追加料金</td></tr>
-    <tr><td>深圳自社工場直送（事前予約制）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
+    <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
 <p>100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
@@ -5649,11 +5649,11 @@ export const products: Product[] = [
 <h3>環保認證と紙材溯源</h3>
 <p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。ハンドル紙袋シリーズでは大豆インク・水性インクを採用し、エコシリーズでは再生紙も選択可能。ESG 配慮のブランドやサステナブル調達要件の企業向けに、紙材トレーサビリティレポートとカーボンフットプリント試算をご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
 
-<h3>深圳自社工場・事前予約制現地確認</h3>
-<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約制で現地確認・素材サンプル比較・ハンドル色見本確認・色校正確認に対応しています（日本語スタッフ同席可・1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
+<h3>深圳自社工場・事前予約製現地確認</h3>
+<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約製で現地確認・素材サンプル比較・ハンドル色見本確認・色校正確認に対応しています（日本語スタッフ同席可・1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス制度対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス製度対応。</p>
 
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>最低発注数量はどのくらいですか？</strong></summary><p>100 枚からご注文可能です。数量割引は 500 枚 (+15%)、1,000 枚 (+25%)、5,000 枚以上 (+35%) で適用されます。</p></details>
@@ -5661,7 +5661,7 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>ハンドル色をカスタマイズできますか？</strong></summary><p>はい。11 色の標準在庫コットンロープハンドルに加え、1,000 枚以上のご注文で Pantone カラーマッチングに対応いたします。</p></details>
 <details class="my-2"><summary><strong>利用可能なサイズを教えてください</strong></summary><p>S / M / L / XL の標準サイズでほとんどの小売ニーズに対応いたします。カスタム寸法は 6×4×1.5 インチから 16×12×5 インチまで対応可能です。</p></details>
 <details class="my-2"><summary><strong>特急製作に対応していますか？</strong></summary><p>はい。5,000 枚までのご注文で 3-5 日特急製作対応。11 時（HKT）までのデータ確定で当日製作開始、次日発送いたします。</p></details>
-<details class="my-2"><summary><strong>食品接触に対応していますか？</strong></summary><p>間接食品接触（パン・ pastry を個別包装して入れる場合）は対応可能です。直接食品接触には別料金で FDA 準拠インナーライナーをご用意いたします。</p></details>
+<details class="my-2"><summary><strong>食品接触に対応していますか？</strong></summary><p>間接食品接触（パン・ pastry を個別包裝して入れる場合）は対応可能です。直接食品接触には別料金で FDA 準拠インナーライナーをご用意いたします。</p></details>
 
 <p><em>智印雲 (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。深圳自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>
 `,
@@ -5962,7 +5962,7 @@ export const products: Product[] = [
     <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2-3 営業日</td><td>100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2-4 営業日</td><td>100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3-5 営業日</td><td>少量追加料金</td></tr>
-    <tr><td>深圳自社工場直送（事前予約制）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
+    <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
 <p>100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
@@ -5970,11 +5970,11 @@ export const products: Product[] = [
 <h3>環保認證と紙材溯源</h3>
 <p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。大型紙袋シリーズでは大豆インク・水性インクを採用し、エコシリーズでは再生紙も選択可能。ESG 配慮のブランドやサステナブル調達要件の企業向けに、紙材トレーサビリティレポートとカーボンフットプリント試算をご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
 
-<h3>深圳自社工場・事前予約制現地確認</h3>
-<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約制で現地確認・素材サンプル比較・荷重試験実演・ハンドルスタイル試着・色校正確認に対応しています（日本語スタッフ同席可・1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
+<h3>深圳自社工場・事前予約製現地確認</h3>
+<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路 1 号）は事前予約製で現地確認・素材サンプル比較・荷重試験実演・ハンドルスタイル試着・色校正確認に対応しています（日本語スタッフ同席可・1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス制度対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応、インボイス製度対応。</p>
 
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>最低発注数量はどのくらいですか？</strong></summary><p>100 枚からご注文可能です。数量割引は 500 枚 (+15%)、1,000 枚 (+25%)、2,500 枚以上 (+35%) で適用されます。</p></details>
@@ -6171,7 +6171,7 @@ export const products: Product[] = [
     <tr><th>紙質</th><th>克重</th><th>特性</th><th>適用場景</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>光沢コート紙</td><td>128g–157g</td><td>表面光亮、色鮮やか、写真再現性高</td><td>商品広告・キャンペーン・店舗 POP</td></tr>
+    <tr class="border-b border-gray-200"><td>光沢コート紙</td><td>128g–157g</td><td>表面光亮、色鮮やか、寫真再現性高</td><td>商品広告・キャンペーン・店舗 POP</td></tr>
     <tr class="border-b border-gray-200"><td>マットコート紙</td><td>128g–157g</td><td>表面雾面、上品な質感、視認性高</td><td>飲食店・サロン・クリニック</td></tr>
     <tr><td>上質紙</td><td>90g–110g</td><td>ざらついた質感、コストパフォーマンス最良、書き込み可</td><td>折り込みチラシ・セミナー案内</td></tr>
   </tbody>
@@ -6193,20 +6193,20 @@ export const products: Product[] = [
 
 <h3>印刷工藝説明</h3>
 <ul>
-  <li><strong>4 色 CMYK 印刷</strong>：海德堡 4 色機で高精細、グラデーション・写真も精確に再現</li>
+  <li><strong>4 色 CMYK 印刷</strong>：海德堡 4 色機で高精細、グラデーション・寫真も精確に再現</li>
   <li><strong>両面印刷</strong>：表と裏で異なる情報掲載、メニュー・店舗案内に最適</li>
   <li><strong>特大版対応</strong>：A4 以下の全サイズ（A5/A6/DL/正方形）対応</li>
   <li><strong>可変データ印刷</strong>：1 枚ごとに違う名前・QR コード・番号印刷可能</li>
   <li><strong>スピード納品</strong>：午前 11 時までのデータ確定で当日仕上げ・当日配送（香港本店受取）</li>
 </ul>
 
-<h3>デザイン制作サービス</h3>
+<h3>デザイン製作サービス</h3>
 <p>プロデザイナーが業種別の A4 チラシを 3 案まで無料作成。</p>
 <ul>
   <li><strong>3 案無料デザイン</strong>：Illustrator / InDesign / PDF 入稿対応、CMYK 変換・色校正・入稿チェック無料</li>
   <li><strong>業種別最適化</strong>：飲食店・小売・サービス業・クリニックなど業種別テンプレート豊富</li>
   <li><strong>多言語対応</strong>：日本語・英語・中国語併記の 3 言語チラシも対応可能</li>
-  <li><strong>修正無制限</strong>：初版提出後 3 回まで無料修正、満足いくまで対応</li>
+  <li><strong>修正無製限</strong>：初版提出後 3 回まで無料修正、満足いくまで対応</li>
 </ul>
 
 <h3>スピード納品と緊急対応</h3>
@@ -6272,19 +6272,19 @@ export const products: Product[] = [
     <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3〜5 営業日</td><td>少量追加料金</td></tr>
-    <tr><td>深圳自社工場直送（事前予約制）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
+    <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
 <p>100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
 
 <h3>環保認證と紙材溯源</h3>
-<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。学校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
+<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。學校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
 
-<h3>深圳自社工場・事前予約制現地確認</h3>
-<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約制で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
+<h3>深圳自社工場・事前予約製現地確認</h3>
+<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約製で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・学校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・學校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -6456,13 +6456,13 @@ A5 チラシ 印刷 激安をお求めの方へ。コストパフォーマンス
 
 A5 フライヤー ネット注文の利便性。完全オンライン対応で、デザイン入稿から見積もり・決済・配送状況確認までワンストップ。Visa／Master／JCB・Alipay・銀聯・コンビニ決済など多様な支払方法に対応。JPY（日本円）建てで明朗会計、為替手数料の心配不要です。データ形式はIllustrator・PDF・PNG・JPGに対応、入稿前の無料データチェックで色ズレやブリード不足を事前に検出します。
 
-A5 チラシ 印刷 業者をお探しの皆様に。当サービスはISO 9001認証取得、FSC認証紙対応、国内検品体制、日本語サポート（平日9:00-18:00日本時間）、特定商取引法に基づく表記と、日本市場向けに最適化された印刷業者です。片面・両面印刷どちらも同一料金、用紙は標準157gコート紙のほか、90g薄紙・200g厚紙・光沢紙・マット紙・アート紙など6種類から選べます。
+A5 チラシ 印刷 業者をお探しの皆様に。当サービスはISO 9001認証取得、FSC認証紙対応、国内検品体製、日本語サポート（平日9:00-18:00日本時間）、特定商取引法に基づく表記と、日本市場向けに最適化された印刷業者です。片面・両面印刷どちらも同一料金、用紙は標準157gコート紙のほか、90g薄紙・200g厚紙・光沢紙・マット紙・アート紙など6種類から選べます。
 
 A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・カフェ・美容室・不動産・スクール・クリニックなど業種別テンプレートを100種以上ご用意。デザイン作成サービスも3案まで無料対応、初めての方でも短時間でプロ品質の仕上がりに。
 
 <h3>チラシサイズ比較スコアカード</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">サイズ</th><th class="p-2 text-center">情報量</th><th class="p-2 text-center">配布効率</th><th class="p-2 text-center">コスト</th><th class="p-2 text-left">おすすめ用途</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">A4 (210×297mm)</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">製品カタログ、講座案内</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5 (148×210mm)</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">飲食デリバリー、イベント宣伝</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">A6 (105×148mm)</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">街頭配布、テイクアウト挿入</td></tr></tbody></table>
 
-運営会社：深圳市彩龙印刷包装有限公司（中国・深圳本社）。所在地：広東省深圳市龍崗区平湖街道嘉城路1号（〒518111）。送料：¥10,000以上のご注文で全国送料無料、特定商取引法に基づく表記・プライバシーポリシー・利用規約・お問い合わせの全リンクをフッターに掲載。今すぐご注文、無料見積もり、サンプル請求はこちらから。
+運営会社：深圳市彩龙印刷包裝有限公司（中国・深圳本社）。所在地：広東省深圳市龍崗区平湖街道嘉城路1号（〒518111）。送料：¥10,000以上のご注文で全国送料無料、特定商取引法に基づく表記・プライバシーポリシー・利用規約・お問い合わせの全リンクをフッターに掲載。今すぐご注文、無料見積もり、サンプル請求はこちらから。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -6645,7 +6645,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners.</p></details>
 <details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, ZprintPro offers DHL Express global shipping with delivery within 2-4 days.</p></details>
 <details class="my-2"><summary><strong>How do you ensure quality?</strong></summary><p>ZprintPro maintains quality with FSC-certified paper, ISO 9001 manufacturing, and ISO 12647 color management. We also offer free digital color proofing before production.</p></details>`,
-    longDescriptionJa: `両面チラシをZprintProでご注文。157gコート紙+4色両面オフセット印刷で前後の套印精度±0.5mm以内。表面は注目を集め裏面は詳細情報を提供。情報容量2倍。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `両面チラシをZprintProでご注文。157gコート紙+4色両面オフセット印刷で前後の套印精度±0.5mm以内。表面は注目を集め裏面は詳細情報を提供。情報容量2倍。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -6829,7 +6829,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners.</p></details>
 <details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, ZprintPro offers DHL Express global shipping with delivery within 2-4 days.</p></details>
 <details class="my-2"><summary><strong>How do you ensure quality?</strong></summary><p>ZprintPro maintains quality with FSC-certified paper, ISO 9001 manufacturing, and ISO 12647 color management. We also offer free digital color proofing before production.</p></details>`,
-    longDescriptionJa: `折りたたみパンフレットをZprintProでご注文。157g/200gコート紙+二つ折りまたは三つ折りデザイン+圧線処理で平らに折れる。製品カタログ・サービス紹介・メニュー・旅行パンフレット様に最適。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `折りたたみパンフレットをZprintProでご注文。157g/200gコート紙+二つ折りまたは三つ折りデザイン+圧線処理で平らに折れる。製品カタログ・サービス紹介・メニュー・旅行パンフレット様に最適。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -7011,7 +7011,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners.</p></details>
 <details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, ZprintPro offers DHL Express global shipping with delivery within 2-4 days.</p></details>
 <details class="my-2"><summary><strong>How do you ensure quality?</strong></summary><p>ZprintPro maintains quality with FSC-certified paper, ISO 9001 manufacturing, and ISO 12647 color management. We also offer free digital color proofing before production.</p></details>`,
-    longDescriptionJa: `厚紙チラシをZprintProでご注文。200g/250g高級コート紙+4色オフセット印刷で高い挺度と厚みのある質感を実現。重みのある配布物として高級製品発表・不動産・自動車展示会様に最適。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `厚紙チラシをZprintProでご注文。200g/250g高級コート紙+4色オフセット印刷で高い挺度と厚みのある質感を実現。重みのある配布物として高級製品発表・不動産・自動車展示会様に最適。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -7193,7 +7193,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners.</p></details>
 <details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, ZprintPro offers DHL Express global shipping with delivery within 2-4 days.</p></details>
 <details class="my-2"><summary><strong>How do you ensure quality?</strong></summary><p>ZprintPro maintains quality with FSC-certified paper, ISO 9001 manufacturing, and ISO 12647 color management. We also offer free digital color proofing before production.</p></details>`,
-    longDescriptionJa: `エコチラシをZprintProでご注文。FSC認証リサイクル紙+大豆インクで100%再生繊維の自然なテクスチャー。環境キャンペーン・NGOアウトリーチ・グリーンプロダクトローンチ・企業ESGレポート様に最適。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `エコチラシをZprintProでご注文。FSC認証リサイクル紙+大豆インクで100%再生繊維の自然なテクスチャー。環境キャンペーン・NGOアウトリーチ・グリーンプロダクトローンチ・企業ESGレポート様に最適。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -7378,7 +7378,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-5"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners.</p></details>
 <details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, ZprintPro offers DHL Express global shipping with delivery within 2-4 days.</p></details>
 <details class="my-2"><summary><strong>How do you ensure quality?</strong></summary><p>ZprintPro maintains quality with FSC-certified paper, ISO 9001 manufacturing, and ISO 12647 color management. We also offer free digital color proofing before production.</p></details>`,
-    longDescriptionJa: `短納期チラシをZprintProでご注文。157gコート紙+高速4色デジタル印刷でデータ受付から発送まで最短4時間。緊急イベント・フラッシュセール・プレスリリース・直前会議資料様に最適。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `短納期チラシをZprintProでご注文。157gコート紙+高速4色デジタル印刷でデータ受付から発送まで最短4時間。緊急イベント・フラッシュセール・プレスリリース・直前会議資料様に最適。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -7438,7 +7438,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     },
   },
   },
-  // 海報定制 (6 SKU)
+  // 海報定製 (6 SKU)
   {
     id: 'PO-001',
     sku_code: 'PO-001',
@@ -7568,7 +7568,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     <tr><th>紙質</th><th>克重</th><th>特性</th><th>適用場景</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>光沢コート紙</td><td>105g–157g</td><td>表面光亮、色鮮やか、写真再現性高</td><td>商品広告・キャンペーン</td></tr>
+    <tr class="border-b border-gray-200"><td>光沢コート紙</td><td>105g–157g</td><td>表面光亮、色鮮やか、寫真再現性高</td><td>商品広告・キャンペーン</td></tr>
     <tr class="border-b border-gray-200"><td>上質紙（マット）</td><td>90g–110g</td><td>上品な雾面、視認性高</td><td>店舗 POP・セミナー案内</td></tr>
     <tr class="border-b border-gray-200"><td>厚口ポスター用紙</td><td>180g–250g</td><td>耐久性高、強度と質感</td><td>選挙ポスター・不動産</td></tr>
     <tr><td>合成紙（屋外耐候）</td><td>150g–200g</td><td>短期屋外 3〜6 ヶ月耐久</td><td>屋外看板・工事現場</td></tr>
@@ -7592,7 +7592,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <h3>大判 UV 印刷と高速仕上げ</h3>
 <ul>
   <li><strong>大判 UV 印刷機</strong>：最大 1,500mm 幅までの長尺ポスター対応、継ぎ目なし</li>
-  <li><strong>4 色 CMYK 印刷</strong>：海德堡 4 色機で 90% 以上の色飽和、グラデーション・写真も精確再現</li>
+  <li><strong>4 色 CMYK 印刷</strong>：海德堡 4 色機で 90% 以上の色飽和、グラデーション・寫真も精確再現</li>
   <li><strong>即日仕上げ対応</strong>：午前 11 時までのデータ確定で当日仕上げ（香港本店受取）</li>
   <li><strong>短納期特急</strong>：イベント直前発注も特急料金で 1〜2 営業日納品</li>
   <li><strong>選挙ポスター対応</strong>：公職選挙法に基づくサイズ・記載事項準拠</li>
@@ -7606,19 +7606,19 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>A3（297×420mm）</strong>：卓上サイズ、店舗 POP</li>
   <li><strong>B2（515×728mm）</strong>：和文基準サイズ、和風デザインに</li>
   <li><strong>B3（364×515mm）</strong>：和文小型、和風店舗 POP</li>
-  <li><strong>長尺ポスター（最大 1,500mm）</strong>：駅貼り・店舗ウィンドウ装飾</li>
+  <li><strong>長尺ポスター（最大 1,500mm）</strong>：駅貼り・店舗ウィンドウ裝飾</li>
 </ul>
 
 <h3>FSC 認証と環境配慮</h3>
 <p>智印雲 ZprintPro のポスター印刷は全紙質で <strong>FSC 認証取得</strong>。再生紙オプション、大豆インク印刷対応で ESG 配慮イベント・サステナブル志向ブランドも安心してご利用いただけます。屋外ポスターの廃棄時には、適切にリサイクル可能な素材構成で環境負荷を最小化します。</p>
 
-<h3>デザイン制作と業種別最適化</h3>
+<h3>デザイン製作と業種別最適化</h3>
 <p>プロデザイナーが業種別のポスターを 3 案まで無料作成。</p>
 <ul>
   <li><strong>3 案無料デザイン</strong>：Illustrator / InDesign / PDF 入稿対応、CMYK 変換・色校正・入稿チェック無料</li>
   <li><strong>業種別テンプレート</strong>：イベント・選挙・不動産・店舗広告・セミナー案内など豊富</li>
   <li><strong>多言語対応</strong>：日本語・英語・中国語併記の多言語ポスター対応</li>
-  <li><strong>修正無制限</strong>：初版提出後 3 回まで無料修正、満足いくまで対応</li>
+  <li><strong>修正無製限</strong>：初版提出後 3 回まで無料修正、満足いくまで対応</li>
 </ul>
 
 <h3>選挙ポスターと公職選挙法対応</h3>
@@ -7674,19 +7674,19 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3〜5 営業日</td><td>少量追加料金</td></tr>
-    <tr><td>深圳自社工場直送（事前予約制）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
+    <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
 <p>100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
 
 <h3>環保認證と紙材溯源</h3>
-<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。学校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
+<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。學校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
 
-<h3>深圳自社工場・事前予約制現地確認</h3>
-<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約制で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
+<h3>深圳自社工場・事前予約製現地確認</h3>
+<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約製で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・学校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・學校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -7784,7 +7784,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     category: 'posters',
     category_slug: 'posters',
     name: 'A1大幅海報 | A1/A2 海報 / 展覽海報', nameEn: 'A1 Large Posters | A1/A2 Posters & Exhibition', nameJa: 'A1大型ポスター | A1/A2 ポスター / 展示会', title_zh: 'A1大幅海報',
-    description: 'A1大尺寸，視覺衝擊力強。適合展覽、會場佈置。', descriptionEn: 'A1 large size, strong visual impact. Perfect for exhibitions, venue decoration., ISO 9001:2015 certified quality management system', descriptionJa: 'A1大きなサイズ、強い視覚的インパクト。展示会、会場装飾に最適。', description_zh: 'A1大尺寸，視覺衝擊力強。適合展覽、會場佈置。',
+    description: 'A1大尺寸，視覺衝擊力強。適合展覽、會場佈置。', descriptionEn: 'A1 large size, strong visual impact. Perfect for exhibitions, venue decoration., ISO 9001:2015 certified quality management system', descriptionJa: 'A1大きなサイズ、強い視覚的インパクト。展示会、会場裝飾に最適。', description_zh: 'A1大尺寸，視覺衝擊力強。適合展覽、會場佈置。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -8362,7 +8362,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     category: 'posters',
     category_slug: 'posters',
     name: '藝術海報 | A1/A2 海報 / 展覽海報', nameEn: 'Art Posters | A1/A2 Posters & Exhibition', nameJa: 'アートポスター | A1/A2 ポスター / 展示会', title_zh: '藝術海報印刷 1張起印 美術紙/相紙 高端畫冊 | 智印雲',
-    description: '藝術海報印刷訂製，1張起印，HK$15起/張。200g美術紙/啞粉紙/RC相紙，Giclée級色彩管理。適合攝影師藝術家畫廊展覽，3-5天交貨，全球配送。', descriptionEn: 'Premium art paper, high color accuracy. Perfect for art exhibitions, photography works.', descriptionJa: '高級アート紙、高い色再現性。美術展、写真作品に最適。', description_zh: '高級藝術紙張，色彩還原度高。適合藝術展覽、攝影作品。',
+    description: '藝術海報印刷訂製，1張起印，HK$15起/張。200g美術紙/啞粉紙/RC相紙，Giclée級色彩管理。適合攝影師藝術家畫廊展覽，3-5天交貨，全球配送。', descriptionEn: 'Premium art paper, high color accuracy. Perfect for art exhibitions, photography works.', descriptionJa: '高級アート紙、高い色再現性。美術展、寫真作品に最適。', description_zh: '高級藝術紙張，色彩還原度高。適合藝術展覽、攝影作品。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -8556,7 +8556,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     category: 'posters',
     category_slug: 'posters',
     name: '背膠海報 | A1/A2 海報 / 展覽海報', nameEn: 'Adhesive Posters | A1/A2 Posters & Exhibition', nameJa: '粘着ポスター | A1/A2 ポスター / 展示会', title_zh: '背膠海報',
-    description: '自帶背膠，可直接粘貼。適合店鋪櫥窗、牆面裝飾。', descriptionEn: 'Self-adhesive, can be directly applied. Perfect for shop windows, wall decoration.', descriptionJa: '自己粘着、直接貼付可能。店舗の窓、壁の装飾に最適。', description_zh: '自帶背膠，可直接粘貼。適合店鋪櫥窗、牆面裝飾。',
+    description: '自帶背膠，可直接粘貼。適合店鋪櫥窗、牆面裝飾。', descriptionEn: 'Self-adhesive, can be directly applied. Perfect for shop windows, wall decoration.', descriptionJa: '自己粘着、直接貼付可能。店舗の窓、壁の裝飾に最適。', description_zh: '自帶背膠，可直接粘貼。適合店鋪櫥窗、牆面裝飾。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -8721,14 +8721,14 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     },
   },
   },
-  // 包裝盒定制 (6 SKU)
+  // 包裝盒定製 (6 SKU)
   {
     id: 'PK-001',
     sku_code: 'PK-001',
     slug: 'gift-boxes',
     category: 'packaging',
     category_slug: 'packaging',
-    name: '禮品盒定制 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Gift Boxes | Gift Boxes & Custom Packaging', nameJa: 'ギフトボックス | パッケージボックス・化粧箱', title_zh: '禮品盒訂製印刷 100個起印 化妝品/珠寶/婚慶/茶葉/電商通用 | 智印雲',
+    name: '禮品盒定製 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Gift Boxes | Gift Boxes & Custom Packaging', nameJa: 'ギフトボックス | パッケージボックス・化粧箱', title_zh: '禮品盒訂製印刷 100個起印 化妝品/珠寶/婚慶/茶葉/電商通用 | 智印雲',
     description: '禮品盒訂製印刷，100個起印，HK$4.5起/個。磁吸盒天地盒抽屜盒，燙金UV壓凹工藝，免費刀模設計。適合品牌活動週年慶贈品，即日打樣，3-5天交貨。**適配行業**: 化妝品/珠寶首飾/婚慶禮盒/茶葉食品/跨境電商/母嬰產品。', descriptionEn: 'Exquisite gift boxes with foil stamping, UV and other processes., ISO 9001:2015 certified quality management system. **Best for**: cosmetics / jewelry / wedding gifts / tea & food / cross-border e-commerce / baby & maternity products. Free design mockup · 100 MOQ · 4 box styles · Foil logo & matte lamination. Perfect for beauty gift, wedding favor, retail packaging.', descriptionJa: '精巧なギフトボックス、箔押し・UVなどの加工付き。**適応業界**: 化粧品/宝石/ウェディングギフト/茶・食品/越境EC/ベビー用品。。校正無料・100個から・4種盒型・箔押し+マットPP。ギフト・ウェディング・小売パッケージに最適。', description_zh: '精緻禮品盒，配合燙金、UV等工藝。送禮首選，提升產品價值。**適配行業**: 化妝品/珠寶首飾/婚慶禮盒/茶葉食品/跨境電商/母嬰產品。',
     optimizedAt: '2026-07-04',
     optimizationRound: 1,
@@ -8897,7 +8897,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-packaging-gift-boxes-zh-hk.webp', en: 'zprintpro-packaging-gift-boxes-en.webp', ja: 'zprintpro-packaging-gift-boxes-ja.webp' },
     alt: {
-      'zh-hk': '包裝盒 / 禮品盒 / 定制包裝 | 香港禮品盒定制印刷 白卡紙／牛皮裱面／硬紙板結構（依報價） 覆膜',
+      'zh-hk': '包裝盒 / 禮品盒 / 定製包裝 | 香港禮品盒定製印刷 白卡紙／牛皮裱面／硬紙板結構（依報價） 覆膜',
       en: 'Custom Packaging Boxes & Gift Boxes | Gift Boxes | Professional Packaging Hong Kong',
       ja: 'パッケージボックス / ギフトボックス | ギフトボックス | オリジナルパッケージ・最短3日 | ZprintPro'
     },
@@ -8933,7 +8933,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     category: 'packaging',
     category_slug: 'packaging',
     name: '化妝品包裝盒 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Cosmetic Packaging Boxes | Gift Boxes & Custom Packaging', nameJa: '化粧品パッケージボックス | パッケージボックス・化粧箱', title_zh: '化妝品包裝盒',
-    description: '美妝護膚品牌化妝品包裝盒定制, 天地蓋 / 磁吸翻蓋 / 抽屜式 / 書型 4 種盒型, 內托 EVA / 紙托 / 吸塑可定制, 燙金 + 局部 UV + 內襯緞布。香港本地、跨境美妝電商、日本市場適用。', descriptionEn: 'Custom cosmetic packaging boxes for beauty and skincare brands — 4 box styles (lift-off lid, magnetic, drawer, book-style) with EVA/molded pulp/PET inner trays. Foil stamping, spot UV, satin lining. Hong Kong, cross-border e-commerce, Japan market ready.', descriptionJa: '化粧品パッケージボックス カスタム — 天地蓋 / マグネット蓋 / 引き出し式 / ブック型の 4 種類, EVA / 紙 / ペット内装トレイ選択可。箔押し・スポット UV ・サテン裏地対応。香港・越境 EC ・日本市場向け。', description_zh: '美妝護膚品牌化妝品包裝盒定制, 天地蓋 / 磁吸翻蓋 / 抽屜式 / 書型 4 種盒型, 內托可定制, 燙金 + 局部 UV + 內襯緞布。',
+    description: '美妝護膚品牌化妝品包裝盒定製, 天地蓋 / 磁吸翻蓋 / 抽屜式 / 書型 4 種盒型, 內托 EVA / 紙托 / 吸塑可定製, 燙金 + 局部 UV + 內襯緞布。香港本地、跨境美妝電商、日本市場適用。', descriptionEn: 'Custom cosmetic packaging boxes for beauty and skincare brands — 4 box styles (lift-off lid, magnetic, drawer, book-style) with EVA/molded pulp/PET inner trays. Foil stamping, spot UV, satin lining. Hong Kong, cross-border e-commerce, Japan market ready.', descriptionJa: '化粧品パッケージボックス カスタム — 天地蓋 / マグネット蓋 / 引き出し式 / ブック型の 4 種類, EVA / 紙 / ペット内裝トレイ選択可。箔押し・スポット UV ・サテン裏地対応。香港・越境 EC ・日本市場向け。', description_zh: '美妝護膚品牌化妝品包裝盒定製, 天地蓋 / 磁吸翻蓋 / 抽屜式 / 書型 4 種盒型, 內托可定製, 燙金 + 局部 UV + 內襯緞布。',
     longDescription: `<h3>4 種化妝品包裝盒型對比</h3>
 <p>化妝品包裝盒按開合結構分 4 種主流盒型, 對應不同預算、品牌定位與用戶體驗:</p>
 <table>
@@ -8967,7 +8967,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>化妝品包裝盒的最低起印量是多少？</strong></summary><p>化妝品盒 100 個起印, 100-500 個享 9 折優惠, 500-1000 個 8.5 折, 1000 個以上另議。樣品盒 5-10 個可單獨打樣, 樣品費可批量後抵扣。快遞盒因結構較簡單, 樣品 + 量產均能 5-7 天交付。</p></details>
 <details class="my-2"><summary><strong>化妝品包裝盒生產交貨期需要多久？</strong></summary><p>標準訂單 7-12 個工作天完成, 含結構打樣 + 紙裱打樣 + 上機印刷 + 內襯製作 + 品質檢驗。特急可壓縮到 5-7 個工作天 (加價 30%)。國際訂單 DHL Express 全球 2-4 個工作天配送。</p></details>
-<details class="my-2"><summary><strong>可以定制開模嗎？4 種盒型 (天地蓋 / 磁吸 / 抽屜 / 書型) 都能做嗎？</strong></summary><p>4 種盒型全部可選。智印雲提供免費結構設計打樣 (1-2 個工作天出 3D 圖), 確認後開模生產。圓角、異形、磁吸扣、絲帶拉手等特殊結構都可在 7-10 天內完成開模。</p></details>
+<details class="my-2"><summary><strong>可以定製開模嗎？4 種盒型 (天地蓋 / 磁吸 / 抽屜 / 書型) 都能做嗎？</strong></summary><p>4 種盒型全部可選。智印雲提供免費結構設計打樣 (1-2 個工作天出 3D 圖), 確認後開模生產。圓角、異形、磁吸扣、絲帶拉手等特殊結構都可在 7-10 天內完成開模。</p></details>
 <details class="my-2"><summary><strong>能否加燙金 / 局部 UV / 擊凸？</strong></summary><p>支持。化妝品包裝盒常見工藝組合: 燙金 (品牌名) + 局部 UV (Logo) + 擊凸 (品牌符號)。三種工藝可同時使用, 效果疊加提升品牌質感。技術細節由結構工程師免費評估。</p></details>
 `,
     longDescriptionEn: `<h3>4 Cosmetic Box Styles for Beauty & Skincare Brands</h3>
@@ -9022,20 +9022,20 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>Can I print inside the box as well?</strong></summary><p>Yes. Inside printing is available on all 4 box styles — lid interior, drawer inside, and book-style covers. Common for brand storytelling, usage instructions, ingredient panels, or premium patterns visible when the lid is opened.</p></details>
 <details class="my-2"><summary><strong>How is shipping calculated to my country?</strong></summary><p>US orders over $200 ship free via DHL Express (3-5 business days, flat-pack). UK/AU orders over £150 / AU$300 ship free. KR/SG/AE ship via DHL Express at standard rates. Tracking provided for all shipments.</p></details>
 <details class="my-2"><summary><strong>What if I'm not happy with the print quality?</strong></summary><p>We provide free digital color proofing and physical white sample before production. If the final print drifts from approved proof, we reprint at no cost or refund in full. Your satisfaction is guaranteed.</p></details>`,
-    longDescriptionJa: `化妝品パッケージボックスは智印雲（ZprintPro）のカスタム印刷サービス。4種類のボックススタイル（天地蓋・マグネット蓋・引き出し式・ブック型）から選択でき、EVA・紙・PET 内装トレイと箔押し・スポット UV ・サテン裏地を組み合わせて、美容ブランドの世界観を表現するプレミアムパッケージを製作します。スキンケア・メイクアップ・香水・フレグランス・美容 EC・OEM メーカー向けに、少量 OEM・テスト販売から量産・百貨店展開まで対応可能です。【専用サイズ】30ml/50ml/100ml/200ml ボトル対応、表面はアート紙/クラフト/メタル調/皮革調から選択。【構造】天地蓋・マグネット蓋・引き出し式・ブック型の4種類から選択可能、【内装オプション】EVAフォーム成形（ボトル形状に合わせてカット）、サテン生地（黒/白/ピンク/ベージュ）、ブリスタートレイ（複数アイテム収納）、PET 真空成形（透明可視）。【表面仕上げ】箔押し（金/銀+特殊色）、スポットUV（ロゴ・装飾）、エンボス/デボス、ラグジュアリー系のコスメブランドで多数の実績があります。【コンプライアンス】薬機法準拠の全成分表示スペース設計をサポート、業界基準（縦1.5mm以上の文字サイズ等）を満たすレイアウトをご提案。リサイクルマーク・材質表示対応。【納期】100個から対応、最短7-12営業日で出荷。内装カスタマイズや特殊加工を含む場合は14-21営業日。お急ぎの場合は特急プラン（有償）もございます。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
+    longDescriptionJa: `化妝品パッケージボックスは智印雲（ZprintPro）のカスタム印刷サービス。4種類のボックススタイル（天地蓋・マグネット蓋・引き出し式・ブック型）から選択でき、EVA・紙・PET 内裝トレイと箔押し・スポット UV ・サテン裏地を組み合わせて、美容ブランドの世界観を表現するプレミアムパッケージを製作します。スキンケア・メイクアップ・香水・フレグランス・美容 EC・OEM メーカー向けに、少量 OEM・テスト販売から量産・百貨店展開まで対応可能です。【専用サイズ】30ml/50ml/100ml/200ml ボトル対応、表面はアート紙/クラフト/メタル調/皮革調から選択。【構造】天地蓋・マグネット蓋・引き出し式・ブック型の4種類から選択可能、【内裝オプション】EVAフォーム成形（ボトル形状に合わせてカット）、サテン生地（黒/白/ピンク/ベージュ）、ブリスタートレイ（複数アイテム収納）、PET 真空成形（透明可視）。【表面仕上げ】箔押し（金/銀+特殊色）、スポットUV（ロゴ・裝飾）、エンボス/デボス、ラグジュアリー系のコスメブランドで多数の実績があります。【コンプライアンス】薬機法準拠の全成分表示スペース設計をサポート、業界基準（縦1.5mm以上の文字サイズ等）を満たすレイアウトをご提案。リサイクルマーク・材質表示対応。【納期】100個から対応、最短7-12営業日で出荷。内裝カスタマイズや特殊加工を含む場合は14-21営業日。お急ぎの場合は特急プラン（有償）もございます。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
 <details class="my-2"><summary><strong>化妝品パッケージボックスの最小注文数量は？</strong></summary><p>100 個から対応。天地蓋・マグネット蓋・ブック型は構造上、200個からを推奨。サンプル注文 5-25 個も対応可能（特急料金あり）。</p></details>
-<details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 7-12 営業日で完成。校正 PDF 承認後、内装カスタマイズや特殊加工を含む場合は14-21営業日。特急印刷は最短 5-7 営業日（DHL / FedEx 国際速達便で日本全国 2-4 日配送）。大口注文は優先スケジュール対応。</p></details>
+<details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 7-12 営業日で完成。校正 PDF 承認後、内裝カスタマイズや特殊加工を含む場合は14-21営業日。特急印刷は最短 5-7 営業日（DHL / FedEx 国際速達便で日本全国 2-4 日配送）。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>4 種類のボックススタイルの選び方は？</strong></summary><p>プレミアム感を出すなら マグネット蓋、伝統と安定感なら天地蓋、ユニーク体験なら引き出し式、複数アイテムを見せるならブック型。予算とブランドイメージに応じて担当者がご提案します。無料で3D モックアップと構造設計を提供。</p></details>
-<details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>内装は EVA・紙・PET の3種類、表面素材はアート紙・マット紙・クラフト紙・ピーチスキン・メタリック調など。加工は4色オフセット印刷、箔押し（金/銀/ローズ金/ホログラム）、スポット UV、エンボス/デボス、型抜き、サテン裏地、ラベル貼り等多種対応、無料サンプル。</p></details>
+<details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>内裝は EVA・紙・PET の3種類、表面素材はアート紙・マット紙・クラフト紙・ピーチスキン・メタリック調など。加工は4色オフセット印刷、箔押し（金/銀/ローズ金/ホログラム）、スポット UV、エンボス/デボス、型抜き、サテン裏地、ラベル貼り等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$200 以上のご注文で米国向け送料無料、£150 / AU$300 以上で英豪向け送料無料。追跡番号付き。</p></details>
 <details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認、本サンプル校正付き。</p></details>
 `,
     features: [
       '【4 種盒型】天地蓋 / 磁吸翻蓋 / 抽屜式 / 書型, 全部可選',
-      '【內托定制】EVA 挖槽 / 紙漿模塑 / PET 吸塑 3 種材質',
+      '【內托定製】EVA 挖槽 / 紙漿模塑 / PET 吸塑 3 種材質',
       '【法規標示】藥機法 / FDA 21 CFR / EU 1223/2013 合規',
       '【表面工藝】啞膠 / 觸感膜 / 光膠 + 燙金細線 + 局部 UV',
       '【內襯升級】黑 / 白 / 粉 / 米 EVA 或緞布可選',
@@ -9108,9 +9108,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-packaging-cosmetic-boxes-zh-hk.webp', en: 'zprintpro-packaging-cosmetic-boxes-en.webp', ja: 'zprintpro-packaging-cosmetic-boxes-ja.webp' },
     alt: {
-      'zh-hk': '包裝盒 / 禮品盒 / 定制包裝 | 香港化妝品包裝盒印刷 4 種盒型 天地蓋磁吸抽屜書型 內托定制',
+      'zh-hk': '包裝盒 / 禮品盒 / 定製包裝 | 香港化妝品包裝盒印刷 4 種盒型 天地蓋磁吸抽屜書型 內托定製',
       en: 'Custom Packaging Boxes & Gift Boxes | Cosmetic Packaging Boxes | 4 Box Styles | Custom Inner Tray | ZprintPro Hong Kong',
-      ja: 'パッケージボックス / ギフトボックス | 化粧品パッケージボックス | 4 種類ボックススタイル | 内装カスタム | ZprintPro'
+      ja: 'パッケージボックス / ギフトボックス | 化粧品パッケージボックス | 4 種類ボックススタイル | 内裝カスタム | ZprintPro'
     },
   },
   },
@@ -9120,7 +9120,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'food-boxes',
     category: 'packaging',
     category_slug: 'packaging',
-    name: '食品包裝盒 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Food Boxes | Gift Boxes & Custom Packaging', nameJa: '食品包装箱 | パッケージボックス・化粧箱', title_zh: '食品包裝盒印刷訂製 100個起印 HK$4起/個 FDA級 | 智印雲',
+    name: '食品包裝盒 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Food Boxes | Gift Boxes & Custom Packaging', nameJa: '食品包裝箱 | パッケージボックス・化粧箱', title_zh: '食品包裝盒印刷訂製 100個起印 HK$4起/個 FDA級 | 智印雲',
     description: '食品包裝盒印刷訂製，100個起印，HK$4起/個。FDA級食品接觸安全材質，牛皮紙白卡紙可選，支援燙金UV印刷。適合糕點茶葉巧克力月餅食品品牌，3-5天交貨。', descriptionEn: 'Food-grade material, safe and eco-friendly., ISO 9001:2015 certified quality management system', descriptionJa: '食品グレード素材、安全で環境に優しい。', description_zh: '食品級材質，安全環保。適合糕點、茶葉、保健品。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -9261,11 +9261,11 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 
 <h3>印刷工藝と食品安全</h3>
 <ul>
-  <li><strong>大豆インク・水性インク</strong>：匂い移り・化学物質溶出を完全に防ぐ、食品専用インキ</li>
+  <li><strong>大豆インク・水性インク</strong>：匂い移り・化學物質溶出を完全に防ぐ、食品専用インキ</li>
   <li><strong>4 色 CMYK 印刷</strong>：CMYK フルカラーで鮮やかなパッケージデザイン、ISO 12647 色彩管理</li>
   <li><strong>個別可変印刷</strong>：消費期限・ロット番号・QR コード 1 個ずつ印刷可能、トレーサビリティ管理</li>
   <li><strong>印前 AI 預検</strong>：食品安全適合チェック + 印刷適性チェックの 2 段階 AI 自動検証</li>
-  <li><strong>試作品特急対応</strong>：50 個の試作品を 5〜7 営業日で納品（写真撮影・EC サイト掲載用）</li>
+  <li><strong>試作品特急対応</strong>：50 個の試作品を 5〜7 営業日で納品（寫真撮影・EC サイト掲載用）</li>
 </ul>
 
 <h3>エコ・脱プラ素材のリクエスト</h3>
@@ -9277,7 +9277,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>FDA（米国食品医薬品局）</strong>：米国市場向け食品安全基準</li>
   <li><strong>LFGB（ドイツ食品・日用品法）</strong>：欧州市場向け最高基準</li>
   <li><strong>食品衛生法（日本）</strong>：日本国内販売向け完全準拠</li>
-  <li><strong>水性インク・大豆インク</strong>：匂い移りゼロ、化学物質溶出なし</li>
+  <li><strong>水性インク・大豆インク</strong>：匂い移りゼロ、化學物質溶出なし</li>
   <li><strong>耐油・耐水ラミネート</strong>：内側に PE / EVOH ラミネートで食品の油分・水分の浸透を防ぐ</li>
 </ul>
 
@@ -9334,19 +9334,19 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3〜5 営業日</td><td>少量追加料金</td></tr>
-    <tr><td>深圳自社工場直送（事前予約制）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
+    <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
 <p>100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
 
 <h3>環保認證と紙材溯源</h3>
-<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。学校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
+<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。學校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
 
-<h3>深圳自社工場・事前予約制現地確認</h3>
-<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約制で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
+<h3>深圳自社工場・事前予約製現地確認</h3>
+<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約製で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・学校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・學校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -9439,9 +9439,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-packaging-food-boxes-zh-hk.webp', en: 'zprintpro-packaging-food-boxes-en.webp', ja: 'zprintpro-packaging-food-boxes-ja.webp' },
     alt: {
-      'zh-hk': '包裝盒 / 禮品盒 / 定制包裝 | 香港食品包裝盒印刷 350g 食品級白卡／400g 灰底白板 燙金／燙銀',
+      'zh-hk': '包裝盒 / 禮品盒 / 定製包裝 | 香港食品包裝盒印刷 350g 食品級白卡／400g 灰底白板 燙金／燙銀',
       en: 'Custom Packaging Boxes & Gift Boxes | Food Boxes | Professional Packaging Hong Kong',
-      ja: 'パッケージボックス / ギフトボックス | 食品包装箱 | オリジナルパッケージ・最短3日 | ZprintPro'
+      ja: 'パッケージボックス / ギフトボックス | 食品包裝箱 | オリジナルパッケージ・最短3日 | ZprintPro'
     },
   },
   },
@@ -9640,7 +9640,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-packaging-mailer-boxes-zh-hk.webp', en: 'zprintpro-packaging-mailer-boxes-en.webp', ja: 'zprintpro-packaging-mailer-boxes-ja.webp' },
     alt: {
-      'zh-hk': '包裝盒 / 禮品盒 / 定制包裝 | 香港快遞盒/飛機盒印刷 E／B 坑瓦楞 模切',
+      'zh-hk': '包裝盒 / 禮品盒 / 定製包裝 | 香港快遞盒/飛機盒印刷 E／B 坑瓦楞 模切',
       en: 'Custom Packaging Boxes & Gift Boxes | Mailer Boxes | Professional Packaging Hong Kong',
       ja: 'パッケージボックス / ギフトボックス | 発送箱 | オリジナルパッケージ・最短3日 | ZprintPro'
     },
@@ -9839,7 +9839,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-packaging-folding-boxes-zh-hk.webp', en: 'zprintpro-packaging-folding-boxes-en.webp', ja: 'zprintpro-packaging-folding-boxes-ja.webp' },
     alt: {
-      'zh-hk': '包裝盒 / 禮品盒 / 定制包裝 | 香港折疊盒印刷 300g–350g 白卡紙／E 坑瓦楞紙 覆膜（啞膜／光膜）',
+      'zh-hk': '包裝盒 / 禮品盒 / 定製包裝 | 香港折疊盒印刷 300g–350g 白卡紙／E 坑瓦楞紙 覆膜（啞膜／光膜）',
       en: 'Custom Packaging Boxes & Gift Boxes | Folding Boxes | Professional Packaging Hong Kong',
       ja: 'パッケージボックス / ギフトボックス | 折りたたみ箱 | オリジナルパッケージ・最短3日 | ZprintPro'
     },
@@ -10035,7 +10035,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-packaging-rigid-boxes-zh-hk.webp', en: 'zprintpro-packaging-rigid-boxes-en.webp', ja: 'zprintpro-packaging-rigid-boxes-ja.webp' },
     alt: {
-      'zh-hk': '包裝盒 / 禮品盒 / 定制包裝 | 香港精裝盒印刷 灰板＋特種裱面紙 燙金',
+      'zh-hk': '包裝盒 / 禮品盒 / 定製包裝 | 香港精裝盒印刷 灰板＋特種裱面紙 燙金',
       en: 'Custom Packaging Boxes & Gift Boxes | Rigid Boxes | Professional Packaging Hong Kong',
       ja: 'パッケージボックス / ギフトボックス | 上製本箱 | オリジナルパッケージ・最短3日 | ZprintPro'
     },
@@ -10048,8 +10048,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'foil-red-packets',
     category: 'red-packets',
     category_slug: 'red-packets',
-    name: '燙金利是封 | 利是封 / 春聯 / 燙金', nameEn: 'Foil Red Packets | CNY Red Packets & Foil', nameJa: '箔押しポチ袋 | 紅包 / 旧正月 / 箔押し', title_zh: '燙金利是封 · 婚慶/年會/品牌活動定制 | 智印雲 ZprintPro',
-    description: '傳統燙金工藝，喜慶大方。多種吉祥圖案可選，也可定制專屬設計。適合企業派發、節日營銷。**適配行業**:婚慶喜宴、企業年會、品牌活動、春節促銷、客戶禮贈、酒店開業、金融證券回饋、奢侈品品牌營銷。', descriptionEn: 'Traditional foil stamping, festive and elegant. Multiple auspicious patterns or custom designs. **Best for**: wedding banquets, corporate annual events, brand activations, Spring Festival promos, client gifting, hotel openings, financial client rewards, luxury brand marketing.', descriptionJa: '伝統的な箔押し加工、縁起が良く上品。複数の縁起の良い柄またはカスタムデザイン。**適用業界**:ブライダル宴会、企業年会、ブランドアクティベーション、春節促销、クライアントギフト、ホテル開業、金融顧客還元、ラグジュアリーブランド マーケティング。', description_zh: '傳統燙金工藝，喜慶大方。多種吉祥圖案可選，也可定制專屬設計。適合企業派發、節日營銷。',
+    name: '燙金利是封 | 利是封 / 春聯 / 燙金', nameEn: 'Foil Red Packets | CNY Red Packets & Foil', nameJa: '箔押しポチ袋 | 紅包 / 旧正月 / 箔押し', title_zh: '燙金利是封 · 婚慶/年會/品牌活動定製 | 智印雲 ZprintPro',
+    description: '傳統燙金工藝，喜慶大方。多種吉祥圖案可選，也可定製專屬設計。適合企業派發、節日營銷。**適配行業**:婚慶喜宴、企業年會、品牌活動、春節促銷、客戶禮贈、酒店開業、金融證券回饋、奢侈品品牌營銷。', descriptionEn: 'Traditional foil stamping, festive and elegant. Multiple auspicious patterns or custom designs. **Best for**: wedding banquets, corporate annual events, brand activations, Spring Festival promos, client gifting, hotel openings, financial client rewards, luxury brand marketing.', descriptionJa: '伝統的な箔押し加工、縁起が良く上品。複数の縁起の良い柄またはカスタムデザイン。**適用業界**:ブライダル宴会、企業年会、ブランドアクティベーション、春節促销、クライアントギフト、ホテル開業、金融顧客還元、ラグジュアリーブランド マーケティング。', description_zh: '傳統燙金工藝，喜慶大方。多種吉祥圖案可選，也可定製專屬設計。適合企業派發、節日營銷。',
     optimizedAt: '2026-07-08',
     optimizationRound: 1,
     longDescription: `<h3>材質與紙張對比</h3>
@@ -10179,7 +10179,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <h3>8 色箔押しと印刷技術</h3>
 <ul>
   <li><strong>8 色箔押し</strong>：ゴールド・シルバー・ローズゴールド・レッド・ブルー・パープル・グリーン・オレンジ対応</li>
-  <li><strong>4 色 CMYK 印刷</strong>：海德堡 4 色機で 90% 以上の色飽和、写真・グラデーションも精確再現</li>
+  <li><strong>4 色 CMYK 印刷</strong>：海德堡 4 色機で 90% 以上の色飽和、寫真・グラデーションも精確再現</li>
   <li><strong>箔押し精度</strong>：±0.1mm の高精度、複雑なデザインも対応</li>
   <li><strong>多言語対応</strong>：中文・日文・英文併記、伝統的柄（福・寿・喜）と現代的デザイン</li>
   <li><strong>個別名入れ</strong>：社名・ロゴ・個人名入れ印刷対応、周年記念・企業ギフトに最適</li>
@@ -10253,19 +10253,19 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     <tr class="border-b border-gray-200"><td>DHL Express</td><td>日本全国主要都市</td><td>2〜3 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>FedEx International Priority</td><td>日本全国 + 沖縄・離島</td><td>2〜4 営業日</td><td>100 個・100 枚以上 送料無料</td></tr>
     <tr class="border-b border-gray-200"><td>EMS（国際郵便）</td><td>日本全国 + 離島</td><td>3〜5 営業日</td><td>少量追加料金</td></tr>
-    <tr><td>深圳自社工場直送（事前予約制）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
+    <tr><td>深圳自社工場直送（事前予約製）</td><td>中国 深圳自社工場</td><td>完工後 24-48 時間</td><td>国際送料別途</td></tr>
   </tbody>
 </table>
 <p>100 個・100 枚以上のご注文は送料無料で全国配送、沖縄・離島も別途見積もりで対応。日本語カスタマーサポートが配送状況を確認し、追跡番号をお知らせします。</p>
 
 <h3>環保認證と紙材溯源</h3>
-<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。学校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
+<p>本サービスは <strong>FSC 森林管理委員会認証</strong>を取得し、持続可能な調達を実現。エコシリーズでは再生紙・大豆インクを採用し、完全分解可能で無毒無臭。學校・教育機関・企業の ESG 調達要件に合わせた紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。3 年連続で「グリーン印刷パートナー」認証を取得しており、SDGs 永続発展目標にも貢献します。</p>
 
-<h3>深圳自社工場・事前予約制現地確認</h3>
-<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約制で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
+<h3>深圳自社工場・事前予約製現地確認</h3>
+<p>深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約製で現地確認・紙質サンプル比較・色校正確認に対応しています（日本語スタッフ同席可・要 1 週間前予約）。日本向け発送の集荷拠点でもあります。毎月 2 回、日本向け印刷無料オンラインセミナー開催中。</p>
 
 <h3>多通貨決済</h3>
-<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・学校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
+<p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 個・100 枚以上のご注文は送料無料で全国配送。法人・學校・官公庁向けの NET 30 月締請求書払い・大量発注割引もご用意。日本語請求書・領収書発行対応。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -10439,7 +10439,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting.</p></details>
 <details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, we offer DHL Express global shipping, delivering in 2-4 days.</p></details>
 <details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>ZprintPro is FSC-certified and ISO 9001 quality certified.</p></details>`,
-    longDescriptionJa: `エンボスポチ袋をZprintProでご注文。150g高級赤紙+エンボス加工で0.3-0.5mmの深さで立体的な触感。指で撫でると層の変化を感じブランド誠意と高級感を伝える。VIP・高級ギフト・プライベートバンク様向け。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `エンボスポチ袋をZprintProでご注文。150g高級赤紙+エンボス加工で0.3-0.5mmの深さで立体的な触感。指で撫でると層の変化を感じブランド誠意と高級感を伝える。VIP・高級ギフト・プライベートバンク様向け。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -10530,7 +10530,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'custom-red-packets',
     category: 'red-packets',
     category_slug: 'red-packets',
-    name: '定制利是封 | 利是封 / 春聯 / 燙金', nameEn: 'Custom Red Packets | CNY Red Packets & Foil', nameJa: 'オリジナルポチ袋 | 紅包 / 旧正月 / 箔押し', title_zh: '定制利是封',
+    name: '定製利是封 | 利是封 / 春聯 / 燙金', nameEn: 'Custom Red Packets | CNY Red Packets & Foil', nameJa: 'オリジナルポチ袋 | 紅包 / 旧正月 / 箔押し', title_zh: '定製利是封',
     description: '專屬設計，印上公司Logo和祝福語。強化品牌印象，節日營銷必備。', descriptionEn: 'Exclusive design with company logo and greetings. Strengthens brand impression.', descriptionJa: '独占的なデザイン、会社ロゴと祝福の言葉。ブランドイメージを強化。', description_zh: '專屬設計，印上公司Logo和祝福語。強化品牌印象，節日營銷必備。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -10626,7 +10626,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, debossing, die-cutting.</p></details>
 <details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, we offer DHL Express global shipping, delivering in 2-4 days.</p></details>
 <details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>ZprintPro is FSC-certified and ISO 9001 quality certified.</p></details>`,
-    longDescriptionJa: `カスタムポチ袋をZprintProでご注文。120g-150g赤または特殊色紙+完全カスタマイズで企業ロゴ・ブランドカラー・専用柄・メッセージを印刷。年会・ブランドイベント・会員特典・ホリデーマーケティング様に最適。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `カスタムポチ袋をZprintProでご注文。120g-150g赤または特殊色紙+完全カスタマイズで企業ロゴ・ブランドカラー・専用柄・メッセージを印刷。年会・ブランドイベント・会員特典・ホリデーマーケティング様に最適。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -10705,7 +10705,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-red-packets-custom-red-packets-zh-hk.webp', en: 'zprintpro-red-packets-custom-red-packets-en.webp', ja: 'zprintpro-red-packets-custom-red-packets-ja.webp' },
     alt: {
-      'zh-hk': '利是封印刷 / 燙金 / 春節紅包 | 香港定制利是封印刷 120g–150g紅色 燙金',
+      'zh-hk': '利是封印刷 / 燙金 / 春節紅包 | 香港定製利是封印刷 120g–150g紅色 燙金',
       en: 'Red Packet Printing / Foil / CNY | Custom Red Packets | Professional Red Packets Hong Kong',
       ja: '紅包印刷 / 旧正月 / 箔押し | オリジナルポチ袋 | 箔押し・オリジナル印刷 | ZprintPro'
     },
@@ -10813,7 +10813,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, debossing, die-cutting.</p></details>
 <details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, we offer DHL Express global shipping, delivering in 2-4 days.</p></details>
 <details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>ZprintPro is FSC-certified and ISO 9001 quality certified.</p></details>`,
-    longDescriptionJa: `キャラクターポチ袋をZprintProでご注文。120gコート紙または環境配慮紙+4色デジタル印刷で鮮やかな色彩と楽しい柄。ファミリーブランド・子供向け製品・教育機関・祝祭ファミリーパーティー様に最適。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `キャラクターポチ袋をZprintProでご注文。120gコート紙または環境配慮紙+4色デジタル印刷で鮮やかな色彩と楽しい柄。ファミリーブランド・子供向け製品・教育機関・祝祭ファミリーパーティー様に最適。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -10998,7 +10998,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting.</p></details>
 <details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, we offer DHL Express global shipping, delivering in 2-4 days.</p></details>
 <details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>ZprintPro is FSC-certified and ISO 9001 quality certified.</p></details>`,
-    longDescriptionJa: `エコーポチ袋をZprintProでご注文。FSC認証リサイクル紙または種子紙+大豆インクで完全に生分解性または植えて花を育てられる。環境ブランド・NGO・グリーン企業・持続可能性に注力する機関様に最適。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `エコーポチ袋をZprintProでご注文。FSC認証リサイクル紙または種子紙+大豆インクで完全に生分解性または植えて花を育てられる。環境ブランド・NGO・グリーン企業・持続可能性に注力する機関様に最適。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -11185,7 +11185,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitching.</p></details>
 <details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, we offer DHL Express global shipping, delivering in 2-4 days.</p></details>
 <details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>ZprintPro is FSC-certified and ISO 9001 quality certified.</p></details>`,
-    longDescriptionJa: `大判ポチ袋をZprintProでご注文。150g-200g高級赤紙+標準サイズより30-50%大きく厚い現金やギフトカードが入る。企業上層部配布・結婚式ギフト・寿宴・主要な祝日様に最適。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `大判ポチ袋をZprintProでご注文。150g-200g高級赤紙+標準サイズより30-50%大きく厚い現金やギフトカードが入る。企業上層部配布・結婚式ギフト・寿宴・主要な祝日様に最適。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -11379,7 +11379,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, and more. Finishes: 4-color CMYK offset printing, metal ring binding, and optional spot UV.</p></details>
 <details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, we offer DHL Express global shipping with delivery in 2-4 days.</p></details>
 <details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>Our paper is FSC-certified, and we are ISO 9001 quality certified.</p></details>`,
-    longDescriptionJa: `壁掛けカレンダーをZprintProでご注文。250g-300gコート紙またはマット紙+4色オフセット印刷+1月1ページ+裏面企業情報。金属リング綴じでページめくりがスムーズ。企業ギフト・顧客特典・不動産マーケティング・家庭用に最適。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `壁掛けカレンダーをZprintProでご注文。250g-300gコート紙またはマット紙+4色オフセット印刷+1月1ページ+裏面企業情報。金属リング綴じでページめくりがスムーズ。企業ギフト・顧客特典・不動産マーケティング・家庭用に最適。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -11442,7 +11442,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     alt: {
       'zh-hk': '年曆 / 桌曆 / 掛曆 / 2027年曆 | 香港掛牆年曆印刷 250g–300g銅版紙 金屬圈裝訂',
       en: 'Calendar Printing / Wall / Desk / 2027 | Wall Calendars | Professional Calendars Hong Kong',
-      ja: 'カレンダー印刷 / 卓上 / 壁掛け 2027 | 壁掛けカレンダー | 壁掛け・卓上・写真タイプ | ZprintPro'
+      ja: 'カレンダー印刷 / 卓上 / 壁掛け 2027 | 壁掛けカレンダー | 壁掛け・卓上・寫真タイプ | ZprintPro'
     },
   },
   },
@@ -11554,7 +11554,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, and more. Finishes: 4-color CMYK offset printing, triangular stand design, and optional spot UV.</p></details>
 <details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, we offer DHL Express global shipping with delivery in 2-4 days.</p></details>
 <details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>Our paper is FSC-certified, and we are ISO 9001 quality certified.</p></details>`,
-    longDescriptionJa: `卓上カレンダーをZprintProでご注文。200g-250gコート紙またはカード紙+三角スタンド設計でデスクにしっかりと立てられる。月ごとまたは四半期ごとページ。オフィスデスク・レジカウンター・企業ギフト様に最適。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `卓上カレンダーをZprintProでご注文。200g-250gコート紙またはカード紙+三角スタンド設計でデスクにしっかりと立てられる。月ごとまたは四半期ごとページ。オフィスデスク・レジカウンター・企業ギフト様に最適。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -11626,7 +11626,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     alt: {
       'zh-hk': '年曆 / 桌曆 / 掛曆 / 2027年曆 | 香港座檯年曆印刷 200g–250g銅版紙 三角座架',
       en: 'Calendar Printing / Wall / Desk / 2027 | Desk Calendars | Professional Calendars Hong Kong',
-      ja: 'カレンダー印刷 / 卓上 / 壁掛け 2027 | 卓上カレンダー | 壁掛け・卓上・写真タイプ | ZprintPro'
+      ja: 'カレンダー印刷 / 卓上 / 壁掛け 2027 | 卓上カレンダー | 壁掛け・卓上・寫真タイプ | ZprintPro'
     },
   },
   },
@@ -11636,7 +11636,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'custom-calendars',
     category: 'calendars',
     category_slug: 'calendars',
-    name: '定制年曆 | 桌曆 / 掛曆 / 2027年曆', nameEn: 'Custom Calendars | Wall & Desk Calendars 2027', nameJa: 'オリジナルカレンダー | 卓上カレンダー / 壁掛け 2027', title_zh: '定制年曆',
+    name: '定製年曆 | 桌曆 / 掛曆 / 2027年曆', nameEn: 'Custom Calendars | Wall & Desk Calendars 2027', nameJa: 'オリジナルカレンダー | 卓上カレンダー / 壁掛け 2027', title_zh: '定製年曆',
     description: '專屬設計，每頁可印公司產品或服務。企業禮品首選，送客戶最佳選擇。', descriptionEn: 'Exclusive design, each page can feature company products or services.', descriptionJa: '独占的なデザイン、各ページに会社の製品やサービスを掲載可能。', description_zh: '專屬設計，每頁可印公司產品或服務。企業禮品首選，送客戶最佳選擇。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -11740,7 +11740,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, and more. Finishes: 4-color CMYK offset printing, foil stamping, and spot UV.</p></details>
 <details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, we offer DHL Express global shipping with delivery in 2-4 days.</p></details>
 <details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>Our paper is FSC-certified, and we are ISO 9001 quality certified.</p></details>`,
-    longDescriptionJa: `カスタムカレンダーをZprintProでご注文。250g-300gアート紙またはコート紙+完全カスタマイズで企業ロゴ・ブランドストーリー・製品画像・専用祝日マーカーを印刷。年末企業ギフト・VIP顧客特典・ブランド記念品・家族カスタマイズ様に最適。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `カスタムカレンダーをZprintProでご注文。250g-300gアート紙またはコート紙+完全カスタマイズで企業ロゴ・ブランドストーリー・製品画像・専用祝日マーカーを印刷。年末企業ギフト・VIP顧客特典・ブランド記念品・家族カスタマイズ様に最適。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -11814,9 +11814,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-calendars-custom-calendars-zh-hk.webp', en: 'zprintpro-calendars-custom-calendars-en.webp', ja: 'zprintpro-calendars-custom-calendars-ja.webp' },
     alt: {
-      'zh-hk': '年曆 / 桌曆 / 掛曆 / 2027年曆 | 香港定制年曆印刷 250g–300g藝術紙 燙金',
+      'zh-hk': '年曆 / 桌曆 / 掛曆 / 2027年曆 | 香港定製年曆印刷 250g–300g藝術紙 燙金',
       en: 'Calendar Printing / Wall / Desk / 2027 | Custom Calendars | Professional Calendars Hong Kong',
-      ja: 'カレンダー印刷 / 卓上 / 壁掛け 2027 | オリジナルカレンダー | 壁掛け・卓上・写真タイプ | ZprintPro'
+      ja: 'カレンダー印刷 / 卓上 / 壁掛け 2027 | オリジナルカレンダー | 壁掛け・卓上・寫真タイプ | ZprintPro'
     },
   },
   },
@@ -11940,7 +11940,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, and more. Finishes: 4-color CMYK offset printing, rounded corners, and optional spot UV.</p></details>
 <details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, we offer DHL Express global shipping with delivery in 2-4 days.</p></details>
 <details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>Our paper is FSC-certified, and we are ISO 9001 quality certified.</p></details>`,
-    longDescriptionJa: `ミニカレンダーをZprintProでご注文。150g-200gコート紙またはカード紙+コンパクトポケットサイズで財布・ポケット・スマホケースに入る。各ページ1か月+裏面企業情報やプロモーションコード。FMCGブランド・飲食店・カフェ・会員ギフト様に最適。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `ミニカレンダーをZprintProでご注文。150g-200gコート紙またはカード紙+コンパクトポケットサイズで財布・ポケット・スマホケースに入る。各ページ1か月+裏面企業情報やプロモーションコード。FMCGブランド・飲食店・カフェ・会員ギフト様に最適。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -12017,7 +12017,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     alt: {
       'zh-hk': '年曆 / 桌曆 / 掛曆 / 2027年曆 | 香港迷你年曆印刷 150g–200g銅版紙 騎馬釘或單張裁切',
       en: 'Calendar Printing / Wall / Desk / 2027 | Mini Calendars | Professional Calendars Hong Kong',
-      ja: 'カレンダー印刷 / 卓上 / 壁掛け 2027 | ミニカレンダー | 壁掛け・卓上・写真タイプ | ZprintPro'
+      ja: 'カレンダー印刷 / 卓上 / 壁掛け 2027 | ミニカレンダー | 壁掛け・卓上・寫真タイプ | ZprintPro'
     },
   },
   },
@@ -12028,7 +12028,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     category: 'calendars',
     category_slug: 'calendars',
     name: '相框年曆 | 桌曆 / 掛曆 / 2027年曆', nameEn: 'Photo Frame Calendars | Wall & Desk Calendars 2027', nameJa: 'フォトフレームカレンダー | 卓上カレンダー / 壁掛け 2027', title_zh: '相框年曆',
-    description: '結合相框功能，可替換照片。實用美觀，家庭必備。', descriptionEn: 'Combined photo frame function, photos can be replaced.', descriptionJa: 'フォトフレーム機能付き、写真を交換可能。', description_zh: '結合相框功能，可替換照片。實用美觀，家庭必備。',
+    description: '結合相框功能，可替換照片。實用美觀，家庭必備。', descriptionEn: 'Combined photo frame function, photos can be replaced.', descriptionJa: 'フォトフレーム機能付き、寫真を交換可能。', description_zh: '結合相框功能，可替換照片。實用美觀，家庭必備。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -12175,7 +12175,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, and more. Finishes: 4-color CMYK offset printing, rigid cardboard frame stand, and optional spot UV.</p></details>
 <details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, we offer DHL Express global shipping with delivery in 2-4 days.</p></details>
 <details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>Our paper is FSC-certified, and we are ISO 9001 quality certified.</p></details>`,
-    longDescriptionJa: `フォトフレームカレンダーをZprintProでご注文。写真入れ付き+13頁（表紙+12ヶ月+裏表紙フォトフレーム）で、母の日・敬老の日・クリスマスギフト、企業ノベルティに最適なプレミアムカレンダー印刷です。写真スタジオ提携プランもあり、プロカメラマンが撮影した写真での高品質仕上げにも対応します。【構造】フォトフレーム機能+13頁構成、サイズはA5/A4/卓上/カスタムから選択。最後のページにL判～A4のフォトフレーム機能を設置。【表面仕上げ】箔押し（タイトル・社名・記念日を強調）、スポットUV（写真の特定部分に光沢）、マットPP/光沢PP ラミネート。【カスタマイズ】写真差し替え可（マグネット式や差込式など、構造カスタマイズも対応）、JA祝日完全準拠、六曜表示オプション（JA旧暦併記・大安・仏滅等の六曜、ギフト向けに特に人気）。【利用シーン】個人ギフト（母の日・父の日・敬老の日・クリスマス）、企業ノベルティ・周年記念品、写真スタジオ・学校記念品。【デザインサービス】写真を12枚支給いただければ、デザイナーがカレンダーにレイアウト（無料・3案まで）いたします。【納期】10個から対応（個人ギフト少量から、法人ノベルティの1,000個大量発注まで対応）、最短7営業日で出荷。繁忙期は14-21営業日かかる場合がございます。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
+    longDescriptionJa: `フォトフレームカレンダーをZprintProでご注文。寫真入れ付き+13頁（表紙+12ヶ月+裏表紙フォトフレーム）で、母の日・敬老の日・クリスマスギフト、企業ノベルティに最適なプレミアムカレンダー印刷です。寫真スタジオ提携プランもあり、プロカメラマンが撮影した寫真での高品質仕上げにも対応します。【構造】フォトフレーム機能+13頁構成、サイズはA5/A4/卓上/カスタムから選択。最後のページにL判～A4のフォトフレーム機能を設置。【表面仕上げ】箔押し（タイトル・社名・記念日を強調）、スポットUV（寫真の特定部分に光沢）、マットPP/光沢PP ラミネート。【カスタマイズ】寫真差し替え可（マグネット式や差込式など、構造カスタマイズも対応）、JA祝日完全準拠、六曜表示オプション（JA旧暦併記・大安・仏滅等の六曜、ギフト向けに特に人気）。【利用シーン】個人ギフト（母の日・父の日・敬老の日・クリスマス）、企業ノベルティ・周年記念品、寫真スタジオ・學校記念品。【デザインサービス】寫真を12枚支給いただければ、デザイナーがカレンダーにレイアウト（無料・3案まで）いたします。【納期】10個から対応（個人ギフト少量から、法人ノベルティの1,000個大量発注まで対応）、最短7営業日で出荷。繁忙期は14-21営業日かかる場合がございます。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -12253,7 +12253,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     alt: {
       'zh-hk': '年曆 / 桌曆 / 掛曆 / 2027年曆 | 香港相框年曆印刷 250g–300g銅版紙 硬紙板相架底座',
       en: 'Calendar Printing / Wall / Desk / 2027 | Photo Frame Calendars | Professional Calendars Hong Kong',
-      ja: 'カレンダー印刷 / 卓上 / 壁掛け 2027 | フォトフレームカレンダー | 壁掛け・卓上・写真タイプ | ZprintPro'
+      ja: 'カレンダー印刷 / 卓上 / 壁掛け 2027 | フォトフレームカレンダー | 壁掛け・卓上・寫真タイプ | ZprintPro'
     },
   },
   },
@@ -12413,7 +12413,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, and more. Finishes: 4-color CMYK offset printing, flexible magnet sheets, and optional spot UV.</p></details>
 <details class="my-2"><summary><strong>Do you offer international shipping?</strong></summary><p>Yes, we offer DHL Express global shipping with delivery in 2-4 days.</p></details>
 <details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>Our paper is FSC-certified, and we are ISO 9001 quality certified.</p></details>`,
-    longDescriptionJa: `マグネットカレンダーをZprintProでご注文。200g-250gコート紙または合成紙+裏面フレキシブルマグネットシート貼付で冷蔵庫・ホワイトボード・金属キャビネットに貼付可能。月ごとまたは全年フォーマット。家庭・飲食店・学校・オフィス様に最適。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `マグネットカレンダーをZprintProでご注文。200g-250gコート紙または合成紙+裏面フレキシブルマグネットシート貼付で冷蔵庫・ホワイトボード・金属キャビネットに貼付可能。月ごとまたは全年フォーマット。家庭・飲食店・學校・オフィス様に最適。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -12493,7 +12493,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     alt: {
       'zh-hk': '年曆 / 桌曆 / 掛曆 / 2027年曆 | 香港磁石年曆印刷 200g–250g銅版紙 軟磁片貼合',
       en: 'Calendar Printing / Wall / Desk / 2027 | Magnetic Calendars | Professional Calendars Hong Kong',
-      ja: 'カレンダー印刷 / 卓上 / 壁掛け 2027 | マグネットカレンダー | 壁掛け・卓上・写真タイプ | ZprintPro'
+      ja: 'カレンダー印刷 / 卓上 / 壁掛け 2027 | マグネットカレンダー | 壁掛け・卓上・寫真タイプ | ZprintPro'
     },
   },
   },
@@ -12606,7 +12606,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
 <details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro operates from our Shenzhen production facility with 48-hour local delivery across Hong Kong via SF Express / DHL. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
 <details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding.</p></details>`,
-    longDescriptionJa: `PVCメニューをZprintProでご注文。0.5-1.0mm透明または白色PVCフィルム+4色UV印刷で防水・耐油・耐摩耗・湿布で拭き取り可能。茶餐廳・ファストフード・屋台・屋外飲食様に最適。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `PVCメニューをZprintProでご注文。0.5-1.0mm透明または白色PVCフィルム+4色UV印刷で防水・耐油・耐摩耗・湿布で拭き取り可能。茶餐廳・ファストフード・屋台・屋外飲食様に最適。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -12778,7 +12778,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
 <details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro operates from our Shenzhen production facility with 48-hour local delivery across Hong Kong via SF Express / DHL. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
 <details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding.</p></details>`,
-    longDescriptionJa: `ラミネートメニューをZprintProでご注文。200g-250gコート紙またはマット紙+4色印刷+マットまたはグロスラミネート。防水・耐油で均一なラミネート層が印刷面を摩耗から保護。中華料理店・西洋料理店・カフェ・バー様に最適。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `ラミネートメニューをZprintProでご注文。200g-250gコート紙またはマット紙+4色印刷+マットまたはグロスラミネート。防水・耐油で均一なラミネート層が印刷面を摩耗から保護。中華料理店・西洋料理店・カフェ・バー様に最適。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -12872,7 +12872,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     category: 'menus',
     category_slug: 'menus',
     name: '精裝餐牌 | 餐牌 / 菜單 / 防水PVC', nameEn: 'Hardcover Menus | Restaurant Menus & PVC', nameJa: '高級メニュー | レストランメニュー / 防水', title_zh: '精裝餐牌',
-    description: '硬殼精裝，高檔大氣。適合高級餐廳、酒店。', descriptionEn: 'Hardcover binding, elegant and grand. Perfect for fine dining restaurants, hotels.', descriptionJa: '上製本装丁、エレガントで格式高い。高級レストラン、ホテルに最適。', description_zh: '硬殼精裝，高檔大氣。適合高級餐廳、酒店。',
+    description: '硬殼精裝，高檔大氣。適合高級餐廳、酒店。', descriptionEn: 'Hardcover binding, elegant and grand. Perfect for fine dining restaurants, hotels.', descriptionJa: '上製本裝丁、エレガントで格式高い。高級レストラン、ホテルに最適。', description_zh: '硬殼精裝，高檔大氣。適合高級餐廳、酒店。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -12971,7 +12971,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
 <details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro operates from our Shenzhen production facility with 48-hour local delivery across Hong Kong via SF Express / DHL. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
 <details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding.</p></details>`,
-    longDescriptionJa: `ハードカバー精裝メニューをZprintProでご注文。高級レストラン・ホテル・結婚式場・会員制クラブ向けのプレミアムメニュー印刷で、ハードケース表紙+上質紙本文+箔押し・エンボス・スポットUV対応の最高峰仕上げです。フランス料理・日本料理・ホテル・結婚式場・会員制クラブ・BARなど、店舗の世界観をメニューから伝えたい業態に最適です。【構造】ハードケース表紙+本文（上質紙/アート紙/コーティング紙）、製本は無線綴じ/糸綴じから選択、16-64頁まで対応。【プレミアム仕上げ】箔押し（金/銀/銅+特殊箔）、エンボス/デボス、スポットUV/マットPP、表面ラミネート加工でレストラン現場の水濡れ・油汚れにも強く、アルコール消毒にも耐えます。【中身差替】リング式・ポケット式の中綴じオプションで、季節ごとのメニュー差し替えに対応可能、コスト削減にも貢献します。【利用シーン】フランス料理・日本料理（高級仕上げ）、ホテル・結婚式場（フォーマル感）、会員制クラブ・BAR（世界観演出）。【データ入稿】InDesign / Illustrator / PDF対応、写真は350dpi以上の高解像度でご支給ください。スタッフが入稿時に無料でデータチェックを行います。【納期】5部から対応（単店少部数から、チェーン店一括100部まで対応）、最短10営業日で出荷。100部以上の大量印刷は14-21営業日。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
+    longDescriptionJa: `ハードカバー精裝メニューをZprintProでご注文。高級レストラン・ホテル・結婚式場・会員製クラブ向けのプレミアムメニュー印刷で、ハードケース表紙+上質紙本文+箔押し・エンボス・スポットUV対応の最高峰仕上げです。フランス料理・日本料理・ホテル・結婚式場・会員製クラブ・BARなど、店舗の世界観をメニューから伝えたい業態に最適です。【構造】ハードケース表紙+本文（上質紙/アート紙/コーティング紙）、製本は無線綴じ/糸綴じから選択、16-64頁まで対応。【プレミアム仕上げ】箔押し（金/銀/銅+特殊箔）、エンボス/デボス、スポットUV/マットPP、表面ラミネート加工でレストラン現場の水濡れ・油汚れにも強く、アルコール消毒にも耐えます。【中身差替】リング式・ポケット式の中綴じオプションで、季節ごとのメニュー差し替えに対応可能、コスト削減にも貢献します。【利用シーン】フランス料理・日本料理（高級仕上げ）、ホテル・結婚式場（フォーマル感）、会員製クラブ・BAR（世界観演出）。【データ入稿】InDesign / Illustrator / PDF対応、寫真は350dpi以上の高解像度でご支給ください。スタッフが入稿時に無料でデータチェックを行います。【納期】5部から対応（単店少部数から、チェーン店一括100部まで対応）、最短10営業日で出荷。100部以上の大量印刷は14-21営業日。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -13165,7 +13165,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
 <details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro operates from our Shenzhen production facility with 48-hour local delivery across Hong Kong via SF Express / DHL. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
 <details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding.</p></details>`,
-    longDescriptionJa: `ドリンクメニューをZprintProでご注文。200g-250gコート紙または合成紙+4色印刷+マットラミネートで防水・耐油。単ページ・折りたたみ・スタンド型デザイン可能でオンライン注文QRコードも印刷可能。カフェ・ティーショップ・バー・デザート店様に最適。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `ドリンクメニューをZprintProでご注文。200g-250gコート紙または合成紙+4色印刷+マットラミネートで防水・耐油。単ページ・折りたたみ・スタンド型デザイン可能でオンライン注文QRコードも印刷可能。カフェ・ティーショップ・バー・デザート店様に最適。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -13355,7 +13355,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What is the minimum order quantity (MOQ)?</strong></summary><p>ZprintPro supports small batches: 50 stickers, 100 business cards/envelopes, 100 gift boxes. Get an instant AI quote in 30 seconds with no signup required.</p></details>
 <details class="my-2"><summary><strong>What is the production lead time? Do you offer rush service?</strong></summary><p>Standard production is 3-5 business days. ZprintPro operates from our Shenzhen production facility with 48-hour local delivery across Hong Kong via SF Express / DHL. Rush orders can be completed same-day. Bulk orders get priority scheduling.</p></details>
 <details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding.</p></details>`,
-    longDescriptionJa: `使い捨てメニューをZprintProでご注文。100g-120g書籍紙または再生紙+4色デジタル印刷で低コスト大量配布向け。軽量で使用後に捨てられる。ファストフード・フードフェスティバル・仮設屋台・試験販売様に最適。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `使い捨てメニューをZprintProでご注文。100g-120g書籍紙または再生紙+4色デジタル印刷で低コスト大量配布向け。軽量で使用後に捨てられる。ファストフード・フードフェスティバル・仮設屋台・試験販売様に最適。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -13553,7 +13553,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton, vinyl, and mesh. Finishes range from matte to gloss lamination, UV protection, and flame-retardant treatments.</p></details>
 <details class="my-2"><summary><strong>What is your shipping policy?</strong></summary><p>We offer DHL Express global shipping with a 2-4 day delivery timeframe. Free US shipping on orders over $100.</p></details>
 <details class="my-2"><summary><strong>How do you ensure quality?</strong></summary><p>ZprintPro maintains FSC certification, ISO 9001 manufacturing standards, and ISO 12647 color management for consistent, high-quality output.</p></details>`,
-    longDescriptionJa: `屋外大型バナーをZprintProでご注文。塩ビターポリン（440g/510g）素材で、防水・耐候性・UVカット加工により、直射日光下でも3年以上の色持ちを実現する大型バナー印刷です。建設現場仮囲い・店舗装飾・イベント会場・不動産建築囲いなど、屋外B2B用途に最適です。平方フィート単位で算出いたします。【最大サイズ】継ぎ目なしで最大5m×10mまで対応、それ以上のサイズはオーバーラップ接合で納品します。継ぎ目は現場で目立たないように施工できます。【素材選択】厚手塩ビターポリン（440g/510g、標準的な屋外用）、メッシュターポリン（開孔率30-40%、風透過で強風時の負荷軽減、建築現場の仮囲いや台風の影響を受けやすい高所設置に最適）、反射シート（夜間の視認性向上）。【印刷方式】UVカット大型インクジェット+顔料インク使用、飽和した色彩再現。塩ビ素材自体が防水・防カビ・耐候性に優れています。【ハトメ加工】標準料金に4隅+中央2点、合計6点のハトメ加工を含みます。追加や位置変更も無料で対応可能、ロープ・紐は別途ご用意ください。【納期】データ確定後、最短5営業日で出荷。10平方フィート以上の大型印刷は7-10営業日。北海道・沖縄はさらに1-2日かかります。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
+    longDescriptionJa: `屋外大型バナーをZprintProでご注文。塩ビターポリン（440g/510g）素材で、防水・耐候性・UVカット加工により、直射日光下でも3年以上の色持ちを実現する大型バナー印刷です。建設現場仮囲い・店舗裝飾・イベント会場・不動産建築囲いなど、屋外B2B用途に最適です。平方フィート単位で算出いたします。【最大サイズ】継ぎ目なしで最大5m×10mまで対応、それ以上のサイズはオーバーラップ接合で納品します。継ぎ目は現場で目立たないように施工できます。【素材選択】厚手塩ビターポリン（440g/510g、標準的な屋外用）、メッシュターポリン（開孔率30-40%、風透過で強風時の負荷軽減、建築現場の仮囲いや台風の影響を受けやすい高所設置に最適）、反射シート（夜間の視認性向上）。【印刷方式】UVカット大型インクジェット+顔料インク使用、飽和した色彩再現。塩ビ素材自体が防水・防カビ・耐候性に優れています。【ハトメ加工】標準料金に4隅+中央2点、合計6点のハトメ加工を含みます。追加や位置変更も無料で対応可能、ロープ・紐は別途ご用意ください。【納期】データ確定後、最短5営業日で出荷。10平方フィート以上の大型印刷は7-10営業日。北海道・沖縄はさらに1-2日かかります。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -13729,11 +13729,11 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 
 イージーアップ バナー 激安をご希望の方へ。1本からご注文可能、5本以上で15%OFF、10本以上で30%OFFの段階割引。業界最安値に挑戦する明朗会計で、税込価格・JPY建て・隠れた手数料なし。深圳自社工場で印刷し、国内検品後に出荷。ISO 9001認証取得済み。Visa／Master／JCB／Alipay／銀聯対応。
 
-展示会 バナー 印刷 即日対応の短納期体制。データ確定後、最短3営業日で出荷、展示会直前の急ぎ案件にも東京・大阪・名古屋・福岡へは翌日配送で対応します。ヤマト運輸・佐川急便での追跡発送、DHL／FedEx国際発送もご選択可能。¥10,000以上のご注文で全国送料無料。
+展示会 バナー 印刷 即日対応の短納期体製。データ確定後、最短3営業日で出荷、展示会直前の急ぎ案件にも東京・大阪・名古屋・福岡へは翌日配送で対応します。ヤマト運輸・佐川急便での追跡発送、DHL／FedEx国際発送もご選択可能。¥10,000以上のご注文で全国送料無料。
 
 バナー 印刷 失敗 例で多い「巻き込み部のテキスト欠け・スタンドのぐらつき・印刷の反射」を防ぐため、上下セーフゾーン100mm以上を確保した原稿作成を推奨。反射低減PET／PVCや反り低減合成紙など6種類の素材から選べるほか、加重バーで安定性を向上。屋内専用設計で、長期間屋外使用には大型バナー（屋外用ビニール）をご案内いたします。
 
-運営会社：深圳市彩龙印刷包装有限公司（中国・深圳本社）。所在地：広東省深圳市龍崗区平湖街道嘉城路1号（〒518111）。受付時間：平日 9:00-18:00（日本時間）。特定商取引法に基づく表記・プライバシーポリシー・利用規約・お問い合わせの全リンクをフッターに掲載。今すぐご注文、無料見積もり、サンプル請求はこちらから。
+運営会社：深圳市彩龙印刷包裝有限公司（中国・深圳本社）。所在地：広東省深圳市龍崗区平湖街道嘉城路1号（〒518111）。受付時間：平日 9:00-18:00（日本時間）。特定商取引法に基づく表記・プライバシーポリシー・利用規約・お問い合わせの全リンクをフッターに掲載。今すぐご注文、無料見積もり、サンプル請求はこちらから。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -13923,7 +13923,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 
 <h3>Quality, Compliance, and Support</h3>
 <p>ZprintPro ensures top-notch quality with FSC-certified materials and ISO 9001 manufacturing standards. Our ISO 12647 color management guarantees precise color reproduction. We offer DHL Express global shipping with a 2-4 day delivery timeframe. Get an instant AI quote in 30 seconds and experience our commitment to quality and customer satisfaction.</p>`,
-    longDescriptionJa: `粘着大判をZprintProでご注文。カッティングシート/グレー再剥離/透明/エアリリース等でショーウィンドウ全面や壁面ヒーローを短工期で施工。下地清浄度と糊種を確認。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `粘着大判をZprintProでご注文。カッティングシート/グレー再剥離/透明/エアリリース等でショーウィンドウ全面や壁面ヒーローを短工期で施工。下地清浄度と糊種を確認。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -14114,7 +14114,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 
 <h3>Quality, Compliance, and Support</h3>
 <p>ZprintPro ensures top-notch quality with FSC-certified materials and ISO 9001 manufacturing standards. Our ISO 12647 color management guarantees precise color reproduction. We offer DHL Express global shipping with a 2-4 day delivery timeframe. Get an instant AI quote in 30 seconds and experience our commitment to quality and customer satisfaction.</p>`,
-    longDescriptionJa: `車ラッピングをZprintProでご注文。キャストグレード高分子PVCビニール+エアリリース溝+再剥離粘着剤で車体曲面に密着。フルラッピング・部分デカール・リアウィンドウ単透貼の3プラン。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `車ラッピングをZprintProでご注文。キャストグレード高分子PVCビニール+エアリリース溝+再剥離粘着剤で車体曲面に密着。フルラッピング・部分デカール・リアウィンドウ単透貼の3プラン。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -14304,7 +14304,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 
 <h3>Quality, Compliance, and Support</h3>
 <p>ZprintPro ensures top-notch quality with FSC-certified materials and ISO 9001 manufacturing standards. Our ISO 12647 color management guarantees precise color reproduction. We offer DHL Express global shipping with a 2-4 day delivery timeframe. Get an instant AI quote in 30 seconds and experience our commitment to quality and customer satisfaction.</p>`,
-    longDescriptionJa: `メッシュバナーをZprintProでご注文。270g-350g PVCメッシュスクリム+開孔率30-40%で透光性・通風性・画面完全性を両立。風阻60%以上低減で建築囲板・競技場フェンスに最適。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `メッシュバナーをZprintProでご注文。270g-350g PVCメッシュスクリム+開孔率30-40%で透光性・通風性・画面完全性を両立。風阻60%以上低減で建築囲板・競技場フェンスに最適。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -14396,8 +14396,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'catalog-printing',
     category: 'books',
     category_slug: 'books',
-    name: '香港畫冊印刷 — 攝影集 / 展覽圖錄 / 產品型錄 / 藝術作品集定制', nameEn: 'Custom Book Printing for Catalogs, Photo Books & Exhibition Lookbooks', nameJa: 'カタログ印刷 — 写真集・作品集・プロダクトカタログ', title_zh: '香港畫冊印刷 — 攝影集 / 展覽圖錄 / 產品型錄 / 藝術作品集定制',
-    description: '香港畫冊/攝影集/產品型錄印刷服務，色彩還原度達 95%+。適合藝術展覽圖錄、品牌作品集、攝影集、企業年報、珍藏紀念冊。50 本起印，48 小時香港本地速遞。', descriptionEn: 'Catalog, photo book & exhibition lookbook printing with 95%+ color accuracy. Ideal for art exhibition lookbooks, brand portfolios, photography books, annual reports, keepsake albums. 100 MOQ, free design mockup, 30-second AI quote.', descriptionJa: 'カタログ・写真集・作品集印刷サービス、色再現性95%+。美術展作品集、ブランドポートフォリオ、写真集、企業年報、記念アルバムに最適。100冊〜、無料デザインモックアップ、30秒 AI 見積もり。', description_zh: '香港畫冊/攝影集/產品型錄印刷服務，色彩還原度達 95%+。適合藝術展覽圖錄、品牌作品集、攝影集、企業年報、珍藏紀念冊。50 本起印，48 小時香港本地速遞。',
+    name: '香港畫冊印刷 — 攝影集 / 展覽圖錄 / 產品型錄 / 藝術作品集定製', nameEn: 'Custom Book Printing for Catalogs, Photo Books & Exhibition Lookbooks', nameJa: 'カタログ印刷 — 寫真集・作品集・プロダクトカタログ', title_zh: '香港畫冊印刷 — 攝影集 / 展覽圖錄 / 產品型錄 / 藝術作品集定製',
+    description: '香港畫冊/攝影集/產品型錄印刷服務，色彩還原度達 95%+。適合藝術展覽圖錄、品牌作品集、攝影集、企業年報、珍藏紀念冊。50 本起印，48 小時香港本地速遞。', descriptionEn: 'Catalog, photo book & exhibition lookbook printing with 95%+ color accuracy. Ideal for art exhibition lookbooks, brand portfolios, photography books, annual reports, keepsake albums. 100 MOQ, free design mockup, 30-second AI quote.', descriptionJa: 'カタログ・寫真集・作品集印刷サービス、色再現性95%+。美術展作品集、ブランドポートフォリオ、寫真集、企業年報、記念アルバムに最適。100冊〜、無料デザインモックアップ、30秒 AI 見積もり。', description_zh: '香港畫冊/攝影集/產品型錄印刷服務，色彩還原度達 95%+。適合藝術展覽圖錄、品牌作品集、攝影集、企業年報、珍藏紀念冊。50 本起印，48 小時香港本地速遞。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -14516,7 +14516,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>Restaurant brands</strong> — menu books, brand story albums, bakery product sets</li>
 </ul>
 `,
-    longDescriptionJa: `高級カタログ・画冊をZprintProでご注文。アート紙・上質紙・写真用紙対応で、写真再現と高級感・ブランドの世界観を両立したプレミアムカタログ印刷です。アパレル・化粧品・不動産・美術館・ギャラリーなど、ブランドの世界観をカタログで伝えたい企業に最適です。【用紙選択】写真再現重視（写真用紙・コート紙157g+光沢PPラミネート）、高級感重視（アート紙180g+マットPP）、エコ重視（FSC認証紙）から選択。【製本方式】中綴じ（8-64頁、開いた時に見栄え◎、薄い冊子向け）、無線綴じ（64-400頁、長期保存・耐久性◎、厚い冊子向け）、ハードカバー（プレミアム仕上げ）の3方式。【表面仕上げ】箔押し（金/銀/銅）、エンボス/デボス（凹凸ロゴ）、スポットUV（部分的光沢）、マットPP/光沢PP ラミネート加工。【利用シーン】アパレル・ファッションブランド（商品カタログ）、化粧品・美容ブランド（新作発表資料）、不動産・物件資料、美術館・作品集、企業年報。【データ入稿】写真は350dpi以上のCMYKモード TIFF/PSD/高解像度PDFでご支給ください。RGBモードの場合、スタッフが入稿時にRGB→CMYK変換を行います。【色校正】本機色校正（有償）で実物の色を確認可能、色再現にご不安がある場合も安心です。【納期】10冊から対応、最短7営業日で出荷。100冊以上の大量印刷は10-14営業日。特殊加工（箔押し・エンボス等）が含まれる場合はさらに2-3日かかる場合がございます。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
+    longDescriptionJa: `高級カタログ・画冊をZprintProでご注文。アート紙・上質紙・寫真用紙対応で、寫真再現と高級感・ブランドの世界観を両立したプレミアムカタログ印刷です。アパレル・化粧品・不動産・美術館・ギャラリーなど、ブランドの世界観をカタログで伝えたい企業に最適です。【用紙選択】寫真再現重視（寫真用紙・コート紙157g+光沢PPラミネート）、高級感重視（アート紙180g+マットPP）、エコ重視（FSC認証紙）から選択。【製本方式】中綴じ（8-64頁、開いた時に見栄え◎、薄い冊子向け）、無線綴じ（64-400頁、長期保存・耐久性◎、厚い冊子向け）、ハードカバー（プレミアム仕上げ）の3方式。【表面仕上げ】箔押し（金/銀/銅）、エンボス/デボス（凹凸ロゴ）、スポットUV（部分的光沢）、マットPP/光沢PP ラミネート加工。【利用シーン】アパレル・ファッションブランド（商品カタログ）、化粧品・美容ブランド（新作発表資料）、不動産・物件資料、美術館・作品集、企業年報。【データ入稿】寫真は350dpi以上のCMYKモード TIFF/PSD/高解像度PDFでご支給ください。RGBモードの場合、スタッフが入稿時にRGB→CMYK変換を行います。【色校正】本機色校正（有償）で実物の色を確認可能、色再現にご不安がある場合も安心です。【納期】10冊から対応、最短7営業日で出荷。100冊以上の大量印刷は10-14営業日。特殊加工（箔押し・エンボス等）が含まれる場合はさらに2-3日かかる場合がございます。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 
@@ -14601,8 +14601,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'saddle-stitch-booklets',
     category: 'books',
     category_slug: 'books',
-    name: '香港騎馬釘小冊子 — 企業文化手冊 / 活動場刊 / 文學作品集 / 社團特刊', nameEn: 'Saddle-Stitch Booklets for Corporate Brochures, Event Programs & Literary Collections', nameJa: '中綴じ冊子 — 企業文化手册・イベント場刊・文學作品集・社団特刊', title_zh: '香港騎馬釘小冊子 — 企業文化手冊 / 活動場刊 / 文學作品集 / 社團特刊',
-    description: '騎馬釘小冊子印刷，企業文化手冊、活動場刊、文學作品集、社團特刊、培訓手冊首選。8-64 頁可平攤 180°翻閱，紙張厚度均勻不反光。', descriptionEn: 'Saddle-stitch booklet printing for corporate brochures, event programs, literary collections, club publications, training manuals. 8-64 pages, lays flat at 180°, uniform paper weight, non-glare finish.', descriptionJa: '中綴じ冊子印刷、企業文化手册、イベント場刊、文學作品集、サークル誌、研修マニュアルに最適。8-64頁、180°フラット開き、均一紙厚、反射防止仕上げ。', description_zh: '騎馬釘小冊子印刷，企業文化手冊、活動場刊、文學作品集、社團特刊、培訓手冊首選。8-64 頁可平攤 180°翻閱。',
+    name: '香港騎馬釘小冊子 — 企業文化手冊 / 活動場刊 / 文學作品集 / 社團特刊', nameEn: 'Saddle-Stitch Booklets for Corporate Brochures, Event Programs & Literary Collections', nameJa: '中綴じ冊子 — 企業文化手冊・イベント場刊・文學作品集・社団特刊', title_zh: '香港騎馬釘小冊子 — 企業文化手冊 / 活動場刊 / 文學作品集 / 社團特刊',
+    description: '騎馬釘小冊子印刷，企業文化手冊、活動場刊、文學作品集、社團特刊、培訓手冊首選。8-64 頁可平攤 180°翻閱，紙張厚度均勻不反光。', descriptionEn: 'Saddle-stitch booklet printing for corporate brochures, event programs, literary collections, club publications, training manuals. 8-64 pages, lays flat at 180°, uniform paper weight, non-glare finish.', descriptionJa: '中綴じ冊子印刷、企業文化手冊、イベント場刊、文學作品集、サークル誌、研修マニュアルに最適。8-64頁、180°フラット開き、均一紙厚、反射防止仕上げ。', description_zh: '騎馬釘小冊子印刷，企業文化手冊、活動場刊、文學作品集、社團特刊、培訓手冊首選。8-64 頁可平攤 180°翻閱。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -14723,11 +14723,11 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 
 コミケ 同人誌 印刷 激安をご希望の方へ。コストパフォーマンスに優れた明朗会計、税込価格・JPY建て・隠れた手数料なし。1冊あたりの単価を業界最安値レベルに挑戦し、30冊以上で10%OFF、50冊以上で20%OFF、100冊以上で30%OFFの段階割引。深圳自社工場で印刷し、国内検品後に出荷。Visa／Master／JCB／Alipay／銀聯対応。ISO 9001認証取得済み。
 
-同人誌 表紙 印刷 テンプレートを100種以上ご用意。ジャンル別（オリジナル漫画・イラスト集・小説・アンソロジー・百合・BL・学園もの・ファンタジーのなど）テンプレートを豊富に取り揃え、Ai／PDF／PNG／JPG形式で無料ダウンロードできます。デザイン作成サービス（3案まで無料）もご利用いただけ、初めて同人誌を作られる方でも安心してご注文いただけます。
+同人誌 表紙 印刷 テンプレートを100種以上ご用意。ジャンル別（オリジナル漫画・イラスト集・小説・アンソロジー・百合・BL・學園もの・ファンタジーのなど）テンプレートを豊富に取り揃え、Ai／PDF／PNG／JPG形式で無料ダウンロードできます。デザイン作成サービス（3案まで無料）もご利用いただけ、初めて同人誌を作られる方でも安心してご注文いただけます。
 
 同人誌 印刷 失敗 例で多い「背表紙の文字欠け・ページ順序の混在・印刷の色ズレ」を防ぐため、入稿前の無料データチェック、入稿時の綴じ方向指定確認、サンプル出力による事前確認を全ご注文で実施しています。イベント2週間前までにご注文いただければ、最短3営業日で出荷、余裕を持って納品。
 
-運営会社：深圳市彩龙印刷包装有限公司（中国・深圳本社）。所在地：広東省深圳市龍崗区平湖街道嘉城路1号（〒518111）。受付時間：平日 9:00-18:00（日本時間）。送料：¥10,000以上のご注文で全国送料無料、特定商取引法に基づく表記・プライバシーポリシー・利用規約・お問い合わせの全リンクをフッターに掲載。今すぐご注文、無料見積もり、サンプル請求はこちらから。
+運営会社：深圳市彩龙印刷包裝有限公司（中国・深圳本社）。所在地：広東省深圳市龍崗区平湖街道嘉城路1号（〒518111）。受付時間：平日 9:00-18:00（日本時間）。送料：¥10,000以上のご注文で全国送料無料、特定商取引法に基づく表記・プライバシーポリシー・利用規約・お問い合わせの全リンクをフッターに掲載。今すぐご注文、無料見積もり、サンプル請求はこちらから。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 
@@ -14737,7 +14737,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <ul>
   <li><strong>企業文化</strong> — 従業員ハンドブック、新人 onboarding 資料、品牌価値冊子</li>
   <li><strong>イベント場刊</strong> — コンサート場刊、劇場プログラム、展覧会ガイド</li>
-  <li><strong>文學作品集</strong> — 詩集、短編集、学生文集</li>
+  <li><strong>文學作品集</strong> — 詩集、短編集、學生文集</li>
   <li><strong>サークル・同好会誌</strong> — 同窓会誌、趣味の会季刊、NGO レポート冊子</li>
   <li><strong>研修教材</strong> — 予備校教材、研修機関ハンドブック、セミナー資料</li>
 </ul>
@@ -14946,7 +14946,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>Policy research</strong> — think tank reports, government white papers, industry research</li>
 </ul>
 `,
-    longDescriptionJa: `無線綴じ本をZprintProでご注文。157g-200gコート紙またはマット紙内页+200g-250gラミネート表紙+無線綴じで平らで丈夫な背表紙。雑誌・年報・ポートフォリオ・教材様に最適。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `無線綴じ本をZprintProでご注文。157g-200gコート紙またはマット紙内页+200g-250gラミネート表紙+無線綴じで平らで丈夫な背表紙。雑誌・年報・ポートフォリオ・教材様に最適。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 
@@ -14954,10 +14954,10 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <h3>適用業界・利用シーン</h3>
 <p>本製品は以下の業界・シーンに適しています：</p>
 <ul>
-  <li><strong>學術論文集</strong> — 大学論文集、研究報告、学術会議プロシーディングス</li>
-  <li><strong>企業年報</strong> — 年次報告書、サステナビリティレポート、IR 手册</li>
+  <li><strong>學術論文集</strong> — 大學論文集、研究報告、學術会議プロシーディングス</li>
+  <li><strong>企業年報</strong> — 年次報告書、サステナビリティレポート、IR 手冊</li>
   <li><strong>CSR / ESG レポート</strong> — 企業 ESG レポート、NGO 年次報告</li>
-  <li><strong>文學出版</strong> — 長編小説、エッセイ集、翻訳文学</li>
+  <li><strong>文學出版</strong> — 長編小説、エッセイ集、翻訳文學</li>
   <li><strong>政策研究</strong> — シンクタンクレポート、政府白書、業界研究</li>
 </ul>
 <h3>よくある質問 (FAQ)</h3>
@@ -15168,7 +15168,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>Collector editions</strong> — limited-edition art books, museum exhibition catalogs, premium keepsakes</li>
 </ul>
 `,
-    longDescriptionJa: `ハードカバー精装書籍をZprintProでご注文。プレミアム仕上げの精装本は、上質紙90g本文＋ハードケース表紙で、長期保存・高級感を両立した印刷物です。1部からご注文いただける少部数対応で、コミケ・卒業アルバムなど個人ユースから、企業記念誌・年鑑・カタログまで対応可能です。【製本方式】無線綴じ（64-400頁向け、PUR接着剤で丈夫で長期保存向き）・糸綴じ（16-200頁向け、上品で開いた時の見栄え◎、高級書籍推奨）・PUR製本の3方式から選択可能。【表紙仕上げ】箔押し（金・銀・銅 3 色標準対応、青箔・赤箔・ホログラム箔も別途対応）、エンボス/デボス、スポットUV（部分的光沢）、マットPP/光沢PP ラミネート加工。【本文用紙】上質紙90g、書籍用紙、高級アート紙から選択、写真集や作品集には写真用紙（半光沢）も対応。【利用シーン】卒業アルバム（10冊～）、企業記念誌（50冊～）、商品カタログ（100冊～）、年鑑、写真集、社史、研究報告書など。【データ入稿】InDesign / Illustrator / PDF対応。入稿データをスタッフが無料でチェックし、必要に応じてRGB→CMYK変換を行います。【色校正】本機色校正（有償）とデジタル色校正（無償）から選択可能、色再現にご不安がある場合も安心です。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短7営業日で全国へお届け、国内検品体制・日本語サポート対応。
+    longDescriptionJa: `ハードカバー精裝書籍をZprintProでご注文。プレミアム仕上げの精裝本は、上質紙90g本文＋ハードケース表紙で、長期保存・高級感を両立した印刷物です。1部からご注文いただける少部数対応で、コミケ・卒業アルバムなど個人ユースから、企業記念誌・年鑑・カタログまで対応可能です。【製本方式】無線綴じ（64-400頁向け、PUR接着剤で丈夫で長期保存向き）・糸綴じ（16-200頁向け、上品で開いた時の見栄え◎、高級書籍推奨）・PUR製本の3方式から選択可能。【表紙仕上げ】箔押し（金・銀・銅 3 色標準対応、青箔・赤箔・ホログラム箔も別途対応）、エンボス/デボス、スポットUV（部分的光沢）、マットPP/光沢PP ラミネート加工。【本文用紙】上質紙90g、書籍用紙、高級アート紙から選択、寫真集や作品集には寫真用紙（半光沢）も対応。【利用シーン】卒業アルバム（10冊～）、企業記念誌（50冊～）、商品カタログ（100冊～）、年鑑、寫真集、社史、研究報告書など。【データ入稿】InDesign / Illustrator / PDF対応。入稿データをスタッフが無料でチェックし、必要に応じてRGB→CMYK変換を行います。【色校正】本機色校正（有償）とデジタル色校正（無償）から選択可能、色再現にご不安がある場合も安心です。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短7営業日で全国へお届け、国内検品体製・日本語サポート対応。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 
@@ -15176,10 +15176,10 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <h3>適用業界・利用シーン</h3>
 <p>本製品は以下の業界・シーンに適しています：</p>
 <ul>
-  <li><strong>結婚記念アルバム</strong> — 結婚写真集、結婚記念册、周年記念ギフトブック</li>
+  <li><strong>結婚記念アルバム</strong> — 結婚寫真集、結婚記念冊、周年記念ギフトブック</li>
   <li><strong>家族史</strong> — 家系図、移民史、家族回想録</li>
   <li><strong>同窓会誌</strong> — 卒業記念アルバム、クラス会記念、同窓会年刊</li>
-  <li><strong>校史特刊</strong> — 学校 50/100 周年記念、校史館典藏品</li>
+  <li><strong>校史特刊</strong> — 學校 50/100 周年記念、校史館典藏品</li>
   <li><strong>愛蔵版出版</strong> — 限定版アートブック、博物館展覧会カタログ、プレミアム記念品</li>
 </ul>
 <h3>よくある質問 (FAQ)</h3>
@@ -15386,7 +15386,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>Creative brands</strong> — illustrator collabs, IP merchandise notebooks, designer series</li>
 </ul>
 `,
-    longDescriptionJa: `リングノートをZprintProでご注文。80g-100g書籍紙または上質紙+YOリングまたは金属スパイラル綴じで180度開いて書ける。表紙200gコート紙のラミネートまたは透明PP。学生ノート・会議議事録・ワークプランナー様に最適。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `リングノートをZprintProでご注文。80g-100g書籍紙または上質紙+YOリングまたは金属スパイラル綴じで180度開いて書ける。表紙200gコート紙のラミネートまたは透明PP。學生ノート・会議議事録・ワークプランナー様に最適。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 
@@ -15397,7 +15397,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>企業ギフト</strong> — ブランドロゴノート、年会ギフト、クライアント赠り物</li>
   <li><strong>予備校教材</strong> — 練習帳、授業ノート、宿題帳</li>
   <li><strong>研修機関</strong> — 受講生ハンドブック、講義ノート、社内研修教材</li>
-  <li><strong>學校記念品</strong> — クラス卒業記念、サークル記念册、同窓記念</li>
+  <li><strong>學校記念品</strong> — クラス卒業記念、サークル記念冊、同窓記念</li>
   <li><strong>クリエイティブブランド</strong> — イラストレーターコラボ、IP 周边ノート、デザイナーシリーズ</li>
 </ul>
 <h3>よくある質問 (FAQ)</h3>
@@ -15494,7 +15494,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     category: 'envelopes',
     category_slug: 'envelopes',
     name: '公司信封 | 信封 / 牛皮信封 / 開窗', nameEn: 'Business Envelopes | Envelopes & Kraft', nameJa: 'ビジネス封筒 | 封筒 / クラフト封筒 / 窓付き', title_zh: '公司信封',
-    description: '定制公司信封，印上Logo和地址。專業形象，商務必備。', descriptionEn: 'Custom business envelopes with logo and address. Professional image, essential for business.', descriptionJa: 'カスタムビジネス封筒、ロゴと住所を印刷。プロフェッショナルなイメージ。', description_zh: '定制公司信封，印上Logo和地址。專業形象，商務必備。',
+    description: '定製公司信封，印上Logo和地址。專業形象，商務必備。', descriptionEn: 'Custom business envelopes with logo and address. Professional image, essential for business.', descriptionJa: 'カスタムビジネス封筒、ロゴと住所を印刷。プロフェッショナルなイメージ。', description_zh: '定製公司信封，印上Logo和地址。專業形象，商務必備。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -15596,7 +15596,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, and more. Finishes include matte, gloss, and soft-touch lamination.</p></details>
 <details class="my-2"><summary><strong>What is your shipping policy?</strong></summary><p>We offer DHL Express global shipping with delivery in 2-4 days. Free US shipping on orders over $100.</p></details>
 <details class="my-2"><summary><strong>How do you ensure quality?</strong></summary><p>Our ISO 9001 certification and ISO 12647 color management ensure consistent, high-quality results. We offer free sample proofing before production.</p></details>`,
-    longDescriptionJa: `ビジネス封筒をZprintProでご注文。高白/生成ブック+1色～4色印刷+窓付きで書簡照合可能。請求・見積・法務文書用に最適。フラップ形状を挿入機に合わせる必要あり。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `ビジネス封筒をZprintProでご注文。高白/生成ブック+1色～4色印刷+窓付きで書簡照合可能。請求・見積・法務文書用に最適。フラップ形状を挿入機に合わせる必要あり。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -15956,7 +15956,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 
 <h3>Quality, Compliance, and Shipping</h3>
 <p>ZprintPro is committed to quality and compliance, using FSC-certified paper and adhering to ISO 9001 standards. Our Shenzhen production facility ensures fast turnaround times, with DHL Express global shipping delivering your large envelopes in 2-4 days. Get an instant 30-second AI quote with no signup required.`,
-    longDescriptionJa: `大判封筒をZprintProでご注文。C4等の100-120gでコシを確保+A4を折らずに入れられる。永久糊または剥離式で開封性向上。契約・入札・成績書用に最適。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `大判封筒をZprintProでご注文。C4等の100-120gでコシを確保+A4を折らずに入れられる。永久糊または剥離式で開封性向上。契約・入札・成績書用に最適。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -16144,7 +16144,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 
 <h3>Quality, Compliance, and Shipping</h3>
 <p>ZprintPro is committed to quality and compliance, using FSC-certified paper and adhering to ISO 9001 standards. Our Shenzhen production facility ensures fast turnaround times, with DHL Express global shipping delivering your pearl envelopes in 2-4 days. Get an instant 30-second AI quote with no signup required.`,
-    longDescriptionJa: `パール封筒をZprintProでご注文。微細な輝きで高級感を演出する特殊紙。結婚招待・発表会返信・VIP券封様に最適。細い箔枠やエンボスと相性良好。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `パール封筒をZprintProでご注文。微細な輝きで高級感を演出する特殊紙。結婚招待・発表会返信・VIP券封様に最適。細い箔枠やエンボスと相性良好。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -16238,8 +16238,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'exercise-books',
     category: 'educational',
     category_slug: 'educational',
-    name: '香港練習簿印刷 — 補習社教材 / K12 練習簿 / 學年作業本 / 校園訂製', nameEn: 'Exercise Book Printing for Tutoring Centers, K12 Schools & Custom School Programs', nameJa: '練習帳印刷 — 補習校教材・K12 練習帳・学年内ノート・學校オーダー', title_zh: '香港練習簿印刷 — 補習社教材 / K12 練習簿 / 學年作業本 / 校園訂製',
-    description: '練習簿印刷服務，補習社教材、K12 練習簿、學年作業本、校園訂製首選。書紙/道林紙輕薄不反光，內頁可加方格/橫線/空白。', descriptionEn: 'Exercise book printing for tutoring centers, K12 schools, grade-level workbooks, custom school programs. Bookwood/woodfree paper, lightweight non-glare, inner pages available in grid/line/blank.', descriptionJa: '練習帳印刷サービス、補習校教材、K12 練習帳、学年別教材、學校オリジナル製作に最適。上質紙・薄手で反射防止、内側罫線（マス・横罫・無地）選択可。', description_zh: '練習簿印刷服務，補習社教材、K12 練習簿、學年作業本、校園訂製首選。書紙/道林紙輕薄不反光。',
+    name: '香港練習簿印刷 — 補習社教材 / K12 練習簿 / 學年作業本 / 校園訂製', nameEn: 'Exercise Book Printing for Tutoring Centers, K12 Schools & Custom School Programs', nameJa: '練習帳印刷 — 補習校教材・K12 練習帳・學年内ノート・學校オーダー', title_zh: '香港練習簿印刷 — 補習社教材 / K12 練習簿 / 學年作業本 / 校園訂製',
+    description: '練習簿印刷服務，補習社教材、K12 練習簿、學年作業本、校園訂製首選。書紙/道林紙輕薄不反光，內頁可加方格/橫線/空白。', descriptionEn: 'Exercise book printing for tutoring centers, K12 schools, grade-level workbooks, custom school programs. Bookwood/woodfree paper, lightweight non-glare, inner pages available in grid/line/blank.', descriptionJa: '練習帳印刷サービス、補習校教材、K12 練習帳、學年別教材、學校オリジナル製作に最適。上質紙・薄手で反射防止、内側罫線（マス・横罫・無地）選択可。', description_zh: '練習簿印刷服務，補習社教材、K12 練習簿、學年作業本、校園訂製首選。書紙/道林紙輕薄不反光。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -16360,7 +16360,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>PTAs &amp; parents</strong> — parent-child workbooks, summer practice, home learning packs</li>
 </ul>
 `,
-    longDescriptionJa: `練習帳をZprintProでご注文。80g-100g書籍紙または上質紙+4色印刷表紙+中綴じ。内页は横線・方眼・白紙から選択、書き心地が良くにじまない。学校・塾・学生の日常使用様に最適。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `練習帳をZprintProでご注文。80g-100g書籍紙または上質紙+4色印刷表紙+中綴じ。内页は横線・方眼・白紙から選択、書き心地が良くにじまない。學校・塾・學生の日常使用様に最適。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 
@@ -16369,10 +16369,10 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <p>本製品は以下の業界・シーンに適しています：</p>
 <ul>
   <li><strong>予備校・塾</strong> — 練習帳、塾専用教材、模擬試験対策</li>
-  <li><strong>K12 学校</strong> — 小学校ワークブック、中学校授業練習、学年教材</li>
+  <li><strong>K12 學校</strong> — 小學校ワークブック、中學校授業練習、學年教材</li>
   <li><strong>インターナショナルスクール</strong> — IGCSE / IB 練習帳、英語ワークブック</li>
-  <li><strong>幼稚園・保育園</strong> — 識字練習帳、お絵描き帳、入学準備帳</li>
-  <li><strong>PTA・保護者会</strong> — 親子ワークブック、夏休み練習、家庭学習パック</li>
+  <li><strong>幼稚園・保育園</strong> — 識字練習帳、お絵描き帳、入學準備帳</li>
+  <li><strong>PTA・保護者会</strong> — 親子ワークブック、夏休み練習、家庭學習パック</li>
 </ul>
 <h3>よくある質問 (FAQ)</h3>
 <details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、名刺・封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
@@ -16433,7 +16433,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     alt: {
       'zh-hk': '香港練習簿印刷 80g書寫紙 膠裝裝訂',
       en: 'Hong Kong Exercise Books Printing 80g Writing Paper Perfect Bound',
-      ja: 'ワークブック印刷 | 学校向け・大量印刷対応 | ZprintPro'
+      ja: 'ワークブック印刷 | 學校向け・大量印刷対応 | ZprintPro'
     },
   },
     },
@@ -16565,7 +16565,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>Competition awards</strong> — academic contest certificates, sports day awards, talent show prizes</li>
 </ul>
 `,
-    longDescriptionJa: `証書をZprintProでご注文。200g-250gクリームまたは白色透かし紙またはコットン紙+4色印刷+箔押しで高級感のある質感と強い偽造防止性。卒業証書・栄誉証書・資格認定・企業表彰様に最適。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `証書をZprintProでご注文。200g-250gクリームまたは白色透かし紙またはコットン紙+4色印刷+箔押しで高級感のある質感と強い偽造防止性。卒業証書・栄誉証書・資格認定・企業表彰様に最適。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 
@@ -16573,11 +16573,11 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <h3>適用業界・利用シーン</h3>
 <p>本製品は以下の業界・シーンに適しています：</p>
 <ul>
-  <li><strong>卒業証書</strong> — 中学 / 大学 / インターナショナルスクール卒業証書、学位記</li>
+  <li><strong>卒業証書</strong> — 中學 / 大學 / インターナショナルスクール卒業証書、學位記</li>
   <li><strong>研修機関</strong> — 講座修了証、専門資格証、認証証明書</li>
   <li><strong>同窓会</strong> — 優秀同窓生賞、生涯功労賞、名誉会員証</li>
   <li><strong>企業栄誉</strong> — 勤続表彰、営業チャンピオン賞、チーム貢献賞</li>
-  <li><strong>コンクール表彰</strong> — 学科コンテスト賞状、運動会表彰、才能コンテスト賞</li>
+  <li><strong>コンクール表彰</strong> — 學科コンテスト賞状、運動会表彰、才能コンテスト賞</li>
 </ul>
 <h3>よくある質問 (FAQ)</h3>
 <details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、名刺・封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
@@ -16640,7 +16640,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     alt: {
       'zh-hk': '香港證書印刷 250g珠光紙 燙金工藝',
       en: 'Hong Kong Certificates Printing 250g Pearl Paper Foil Stamped',
-      ja: '賞状印刷 | 学校向け・大量印刷対応 | ZprintPro'
+      ja: '賞状印刷 | 學校向け・大量印刷対応 | ZprintPro'
     },
   },
     variables: {
@@ -16672,8 +16672,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'school-flyers',
     category: 'educational',
     category_slug: 'educational',
-    name: '香港學校單張 — 校刊 / 通告 / 校史特刊 / 校友會刊', nameEn: 'School Flyers for Newsletters, Announcements & Alumni Publications', nameJa: '学校フライヤー — 学校新聞・お知らせ・校史特刊・同窓会誌', title_zh: '香港學校單張 — 校刊 / 通告 / 校史特刊 / 校友會刊',
-    description: '學校單張印刷，校刊、通告、校史特刊、校友會刊、活動宣傳單張首選。100 張起印，48 小時香港本地速遞。', descriptionEn: 'School flyer printing for newsletters, announcements, school anniversary publications, alumni magazines, event flyers. 100 MOQ, 48-hour Hong Kong local delivery.', descriptionJa: '学校フライヤー印刷、学校新聞、お知らせ、校史特刊、同窓会誌、イベント案内に最適。100枚〜、48時間香港本地速達対応。', description_zh: '學校單張印刷，校刊、通告、校史特刊、校友會刊、活動宣傳單張首選。100 張起印，48 小時香港本地速遞。',
+    name: '香港學校單張 — 校刊 / 通告 / 校史特刊 / 校友會刊', nameEn: 'School Flyers for Newsletters, Announcements & Alumni Publications', nameJa: '學校フライヤー — 學校新聞・お知らせ・校史特刊・同窓会誌', title_zh: '香港學校單張 — 校刊 / 通告 / 校史特刊 / 校友會刊',
+    description: '學校單張印刷，校刊、通告、校史特刊、校友會刊、活動宣傳單張首選。100 張起印，48 小時香港本地速遞。', descriptionEn: 'School flyer printing for newsletters, announcements, school anniversary publications, alumni magazines, event flyers. 100 MOQ, 48-hour Hong Kong local delivery.', descriptionJa: '學校フライヤー印刷、學校新聞、お知らせ、校史特刊、同窓会誌、イベント案内に最適。100枚〜、48時間香港本地速達対応。', description_zh: '學校單張印刷，校刊、通告、校史特刊、校友會刊、活動宣傳單張首選。100 張起印，48 小時香港本地速遞。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -16794,7 +16794,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>Tutoring promotions</strong> — summer class enrollment, new course launches, trial class invitations</li>
 </ul>
 `,
-    longDescriptionJa: `学校チラシをZprintProでご注文。128g-157gコート紙または書籍紙+4色デジタル印刷で経済的かつ鮮やか。学校募集・コース紹介・保護者会のお知らせ・登録システムQRコード様に最適。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `學校チラシをZprintProでご注文。128g-157gコート紙または書籍紙+4色デジタル印刷で経済的かつ鮮やか。學校募集・コース紹介・保護者会のお知らせ・登録システムQRコード様に最適。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 
@@ -16868,7 +16868,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     alt: {
       'zh-hk': '香港校園傳單印刷 157g銅版紙 雙面彩色',
       en: 'Hong Kong School Flyers Printing 157g Glossy Paper Double-sided Color',
-      ja: '学校チラシ | 学校向け・大量印刷対応 | ZprintPro'
+      ja: '學校チラシ | 學校向け・大量印刷対応 | ZprintPro'
     },
   },
     variables: {
@@ -16900,8 +16900,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'textbooks',
     category: 'educational',
     category_slug: 'educational',
-    name: '香港教科書印刷 — K12 教科書 / 補習社教材 / 學年教材 / 培訓手冊', nameEn: 'Textbook Printing for K12 Schools, Tutoring Centers & Training Manuals', nameJa: '教科書印刷 — K12 教科書・補習校教材・学年内教材・研修マニュアル', title_zh: '香港教科書印刷 — K12 教科書 / 補習社教材 / 學年教材 / 培訓手冊',
-    description: '教科書印刷服務，K12 教科書、補習社教材、學年教材、培訓手冊、練習題庫首選。書紙/道林紙護眼，可加 ISBN/條碼。', descriptionEn: 'Textbook printing service for K12 schools, tutoring centers, grade-level curricula, training manuals, exercise workbooks. Wood-free eye-friendly paper, ISBN/barcode support available.', descriptionJa: '教科書印刷サービス、K12 教科書、補習校教材、学年別教材、研修マニュアル、問題集に最適。目に優しい上質紙、ISBN・バーコード対応。', description_zh: '教科書印刷服務，K12 教科書、補習社教材、學年教材、培訓手冊、練習題庫首選。書紙/道林紙護眼。',
+    name: '香港教科書印刷 — K12 教科書 / 補習社教材 / 學年教材 / 培訓手冊', nameEn: 'Textbook Printing for K12 Schools, Tutoring Centers & Training Manuals', nameJa: '教科書印刷 — K12 教科書・補習校教材・學年内教材・研修マニュアル', title_zh: '香港教科書印刷 — K12 教科書 / 補習社教材 / 學年教材 / 培訓手冊',
+    description: '教科書印刷服務，K12 教科書、補習社教材、學年教材、培訓手冊、練習題庫首選。書紙/道林紙護眼，可加 ISBN/條碼。', descriptionEn: 'Textbook printing service for K12 schools, tutoring centers, grade-level curricula, training manuals, exercise workbooks. Wood-free eye-friendly paper, ISBN/barcode support available.', descriptionJa: '教科書印刷サービス、K12 教科書、補習校教材、學年別教材、研修マニュアル、問題集に最適。目に優しい上質紙、ISBN・バーコード対応。', description_zh: '教科書印刷服務，K12 教科書、補習社教材、學年教材、培訓手冊、練習題庫首選。書紙/道林紙護眼。',
     longDescription: `<h3>紙張材質對比</h3>
 <p>教科書常用 3 種紙材，分別適用不同預算、頁數與閱讀體驗。智印雲 ZprintPro 所有紙張均通過 FSC 森林管理委員會認證。智印雲 ZprintPro 教科書印刷服務亦可依學校 ESG 採購指引，彈性調整紙材結構：</p>
 <table>
@@ -16933,7 +16933,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>封面四色印刷</strong>：CMYK 全彩，支援照片、漸層、品牌色精準還原，海德堡四色柯式機網點細膩。智印雲 ZprintPro 採用 ISO 12647 色彩管理標準</li>
   <li><strong>內頁單色 / 雙色</strong>：黑白主體搭配 1–2 個強調色（藍紅綠常見），可降低成本同時保留視覺重點</li>
   <li><strong>彩色頁穿插</strong>：章節封面、圖解頁可升級彩色印刷，按頁計費靈活配置</li>
-  <li><strong>可變數據印刷</strong>：每本可印不同學號／姓名／班別，適用個性化教材、定制年報</li>
+  <li><strong>可變數據印刷</strong>：每本可印不同學號／姓名／班別，適用個性化教材、定製年報</li>
   <li><strong>印前 AI 預檢</strong>：智印雲 ZprintPro 為所有教科書稿件提供免費 AI 文件預檢，自動偵測出血、CMYK 色域、低解析度圖片</li>
 </ul>
 
@@ -16967,7 +16967,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   </thead>
   <tbody>
     <tr class="border-b border-gray-200"><td>香港本地速遞</td><td>港九新界 + 離島</td><td>48 小時</td><td>滿 HK$500 免運費</td></tr>
-    <tr class="border-b border-gray-200"><td>深圳自設廠房直送（預約制）</td><td>深圳自設廠房</td><td>完工後 24-48 小時</td><td>國際運費另計</td></tr>
+    <tr class="border-b border-gray-200"><td>深圳自設廠房直送（預約製）</td><td>深圳自設廠房</td><td>完工後 24-48 小時</td><td>國際運費另計</td></tr>
     <tr class="border-b border-gray-200"><td>國際速遞（教育機構向け）</td><td>日本全國・沖繩・離島</td><td>DHL 2-4 個工作天 / FedEx 3-5 個工作天</td><td>¥10,000 以上免運</td></tr>
     <tr><td>國際配送（DHL / FedEx）</td><td>日本 / 台灣 / 東南亞 / 全球</td><td>2–5 個工作天</td><td>100 冊以上免運</td></tr>
   </tbody>
@@ -17009,8 +17009,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <h3>智印雲 (ZprintPro) SaaS 印刷服務</h3>
 <p>智印雲 (ZprintPro) 為香港本地印刷 SaaS 平台，教科書與教輔材料印刷只是其中一個專業模組。智印雲 ZprintPro 亦提供相鄰類目（貼紙、紙袋、宣傳單張、書本等）的學校品牌物料整合印刷，方便教務處統一採購。我們支援 30 秒 AI 報價、72 小時全球交付、AI 文件預檢、印刷工藝線上配置、紙材樣本索取、學校採購帳期（NET 30）等一站式服務。從詢價到收貨，智印雲 ZprintPro 全程以教育機構的實際需求為核心設計。</p>
 
-<h3>深圳自社工場での直接確認（事前予約制）</h3>
-<p>智印雲 ZprintPro の深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約制で見学を受け付けており、教科書の校正刷り見本、紙質の触感比較、製本仕様の実物展示、専門スタッフによるレイアウト相談を提供しています（日本語スタッフ同席可・要 1 週間前予約）。日本向けの学校・塾・教育機関のお客様には、DHL 国際速達便で日本全国（沖縄・離島含む）へ 2-5 営業日で配送し、教育機関の受領時間に柔軟に対応的收貨時間。智印雲 ZprintPro 深圳自設廠房每月舉辦 4 場教育印刷免費線上講座。</p>
+<h3>深圳自社工場での直接確認（事前予約製）</h3>
+<p>智印雲 ZprintPro の深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約製で見學を受け付けており、教科書の校正刷り見本、紙質の触感比較、製本仕様の実物展示、専門スタッフによるレイアウト相談を提供しています（日本語スタッフ同席可・要 1 週間前予約）。日本向けの學校・塾・教育機関のお客様には、DHL 国際速達便で日本全国（沖縄・離島含む）へ 2-5 営業日で配送し、教育機関の受領時間に柔軟に対応的收貨時間。智印雲 ZprintPro 深圳自設廠房每月舉辦 4 場教育印刷免費線上講座。</p>
 
 <h3>智印雲多幣種結算</h3>
 <p>智印雲 ZprintPro 支援多幣種結算（港幣 HKD / 美元 USD / 日圓 JPY / 人民幣 CNY），付款方式涵蓋銀行電匯、微信支付、支付寶、PayPal。智印雲 ZprintPro 教科書印刷客戶另享教育機構專屬匯率優惠。企業客戶可申請 NET 30 月結賬期，教育機構與連鎖補習社另享學校專屬折扣，歡迎聯絡客服索取報價。</p>
@@ -17184,15 +17184,15 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 `,
     longDescriptionJa: `<h3>紙質比較（3 種類）</h3>
-<p>ZprintPro（智印雲）の教科書印刷は 3 種類の紙質をご用意。すべて FSC 森林管理協議会認証取得済み、日本の塾・学校の教材ニーズに最適化されています：</p>
+<p>ZprintPro（智印雲）の教科書印刷は 3 種類の紙質をご用意。すべて FSC 森林管理協議会認証取得済み、日本の塾・學校の教材ニーズに最適化されています：</p>
 <table>
   <thead>
     <tr><th>紙質</th><th>斤量</th><th>特徴</th><th>最適な用途</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>道林紙</td><td>80g–100g</td><td>100% 化学パルプ、表面が滑らかで長時間読んでも目が疲れにくい、筆記適性◎、滲みなし</td><td>塾の主力教材、参考書、長時間読書の教材</td></tr>
+    <tr class="border-b border-gray-200"><td>道林紙</td><td>80g–100g</td><td>100% 化學パルプ、表面が滑らかで長時間読んでも目が疲れにくい、筆記適性◎、滲みなし</td><td>塾の主力教材、参考書、長時間読書の教材</td></tr>
     <tr class="border-b border-gray-200"><td>書籍紙</td><td>70g–90g</td><td>機械パルプ主体でコスト優位、吸墨性に優れ大量文字教材向き</td><td>夏期講習、補充演習、大量配布の低価格教材</td></tr>
-    <tr><td>米黄書籍紙</td><td>80g</td><td>目に優しい米黄色調、長時間読書の疲労軽減、香港教育局教科書規格準拠</td><td>小中学校の正規教科書、学年教材</td></tr>
+    <tr><td>米黄書籍紙</td><td>80g</td><td>目に優しい米黄色調、長時間読書の疲労軽減、香港教育局教科書規格準拠</td><td>小中學校の正規教科書、學年教材</td></tr>
   </tbody>
 </table>
 
@@ -17204,17 +17204,17 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   </thead>
   <tbody>
     <tr class="border-b border-gray-200"><td>中綴じ</td><td>8〜32 ページ</td><td>中程度、180 度平らに開く</td><td>練習帳、単元テスト、演習問題集</td></tr>
-    <tr class="border-b border-gray-200"><td>無線綴じ</td><td>48 ページ以上</td><td>高い、背表紙がしっかり</td><td>正規教科書、学年教材、ISBN 出版物</td></tr>
-    <tr><td>PUR 無線綴じ</td><td>80 ページ以上</td><td>非常に高い、背が柔軟で 360 度平らに開く</td><td>高頻度使用の教科書、学年用書、ISBN 出版</td></tr>
+    <tr class="border-b border-gray-200"><td>無線綴じ</td><td>48 ページ以上</td><td>高い、背表紙がしっかり</td><td>正規教科書、學年教材、ISBN 出版物</td></tr>
+    <tr><td>PUR 無線綴じ</td><td>80 ページ以上</td><td>非常に高い、背が柔軟で 360 度平らに開く</td><td>高頻度使用の教科書、學年用書、ISBN 出版</td></tr>
   </tbody>
 </table>
 
 <h3>印刷仕様</h3>
 <ul>
-  <li><strong>表紙 4 色 CMYK 印刷</strong>：ハイデルベルク 4 色オフセット印刷、グラデーション・ブランドカラー忠実再現、写真品質も鮮明</li>
+  <li><strong>表紙 4 色 CMYK 印刷</strong>：ハイデルベルク 4 色オフセット印刷、グラデーション・ブランドカラー忠実再現、寫真品質も鮮明</li>
   <li><strong>本文単色 / 2 色</strong>：黒を主体に 1〜2 色のアクセントカラー（青・赤・緑）でコスト削減と視覚重点の維持を両立</li>
   <li><strong>カラーページ挿入</strong>：章扉や図解ページのみカラー印刷にアップグレード可能、ページ単位で柔軟に設定</li>
-  <li><strong>バリアブル印刷</strong>：1 冊ごとに異なる学籍番号・氏名・クラスを印刷可能、個別教材・カスタム教材に最適</li>
+  <li><strong>バリアブル印刷</strong>：1 冊ごとに異なる學籍番号・氏名・クラスを印刷可能、個別教材・カスタム教材に最適</li>
 </ul>
 
 <h3>表紙のオプション加工</h3>
@@ -17233,10 +17233,10 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <p>教科書・副教材のレイアウトは授業のリズムに合わせるのが鉄則です。ZprintPro 教科書印刷は教育機関専用のレイアウトサービスを提供：</p>
 <ul>
   <li>ページ番号・章節・問題欄の自動生成</li>
-  <li>数式・化学構造式の精密組版</li>
+  <li>数式・化學構造式の精密組版</li>
   <li>注音符号・広東語拼音・英語の並列表示対応</li>
   <li>注音・難読漢字・誤読しやすい漢字の自動アノテーション</li>
-  <li>学校教務处指定テンプレートへの流し込み</li>
+  <li>學校教務处指定テンプレートへの流し込み</li>
 </ul>
 
 <h3>配送方法と国際物流</h3>
@@ -17247,25 +17247,25 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   </thead>
   <tbody>
     <tr class="border-b border-gray-200"><td>香港本地速達</td><td>九龍・香港島・新界・離島</td><td>48 時間</td><td>HK$500 以上で送料無料</td></tr>
-    <tr class="border-b border-gray-200"><td>深圳自社工場見学・受取</td><td>深圳自社工場（事前予約制）</td><td>事前予約 1 週間前</td><td>国際送料別途</td></tr>
+    <tr class="border-b border-gray-200"><td>深圳自社工場見學・受取</td><td>深圳自社工場（事前予約製）</td><td>事前予約 1 週間前</td><td>国際送料別途</td></tr>
     <tr class="border-b border-gray-200"><td>国際速達便（教育機関向け）</td><td>日本全国・沖縄・離島</td><td>DHL 2-4 営業日 / FedEx 3-5 営業日</td><td>¥10,000 以上送料無料</td></tr>
     <tr><td>国際配送（DHL / FedEx）</td><td>日本・台湾・東南アジア・全世界</td><td>2〜5 営業日</td><td>100 冊以上で送料無料</td></tr>
   </tbody>
 </table>
 
 <h3>教育機関のお客様事例</h3>
-<p>ZprintPro（智印雲）の教科書印刷は、塾の主力ノート・模擬試験・自編教材・学校年報・卒業記念アルバムなど多様なシーンで、以下の教育機関にご利用いただいています：</p>
+<p>ZprintPro（智印雲）の教科書印刷は、塾の主力ノート・模擬試験・自編教材・學校年報・卒業記念アルバムなど多様なシーンで、以下の教育機関にご利用いただいています：</p>
 <ul>
-  <li>香港の小学校・中学校 37 校（通常教材、学年補充プリント、校内刊物）</li>
+  <li>香港の小學校・中學校 37 校（通常教材、學年補充プリント、校内刊物）</li>
   <li>香港の大手予備校チェーン 19 校（主力コースノート、模擬試験）</li>
   <li>香港の塾 9 校 + 教科書出版社チェーン 3 社（教材大量印刷）</li>
-  <li>香港の小中高 47 校 + 大学 6 校（学年教材、副教材）</li>
+  <li>香港の小中高 47 校 + 大學 6 校（學年教材、副教材）</li>
   <li>専門職能団体 3 団体 + 企業研修機関 12 社（研修マニュアル、認証教材）</li>
   <li>日本の私塾・予備校 12 校（小ロット輸入教材、ISBN 出版支援）</li>
 </ul>
 
-<h3>学習シーン別おすすめ構成</h3>
-<p>学習シーンによって、教科書の耐久性・紙質・携帯性への要件が異なります。ZprintPro は 4 つの代表的学習シーンに対する最適構成をご提案：</p>
+<h3>學習シーン別おすすめ構成</h3>
+<p>學習シーンによって、教科書の耐久性・紙質・携帯性への要件が異なります。ZprintPro は 4 つの代表的學習シーンに対する最適構成をご提案：</p>
 <ul>
   <li><strong>授業主教科書</strong>：A4 サイズ、道林紙 100g、無線綴じまたは PUR 製本、4 色表紙、500〜2,000 冊</li>
   <li><strong>塾の主力教材</strong>：B5 サイズ、道林紙 80g、無線綴じ、表紙箔押し、200〜500 冊</li>
@@ -17273,26 +17273,26 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>自費出版 / ISBN 出版</strong>：カスタムサイズ、PUR 製本、CIP レイアウト、ISBN バーコード + 奥付、100 冊から</li>
 </ul>
 
-<h3>新学期スケジュールのご案内</h3>
-<p>2 月（春学期）と 8 月（秋学期）は教科書印刷の伝統的な繁忙期です。ZprintPro は教育機関の皆様へ新学期に間に合わせるための逆算スケジュールを推奨しています：</p>
+<h3>新學期スケジュールのご案内</h3>
+<p>2 月（春學期）と 8 月（秋學期）は教科書印刷の伝統的な繁忙期です。ZprintPro は教育機関の皆様へ新學期に間に合わせるための逆算スケジュールを推奨しています：</p>
 <ul>
   <li><strong>T-8 週</strong>：教材内容確定、レイアウト校了、印刷依頼提出</li>
-  <li><strong>T-6 週</strong>：デジタル校正、色校了、学校レビュー</li>
+  <li><strong>T-6 週</strong>：デジタル校正、色校了、學校レビュー</li>
   <li><strong>T-4 週</strong>：量産開始、繁忙期产能の事前確認</li>
-  <li><strong>T-2 週</strong>：完工入库、学校配送、新学期配布</li>
+  <li><strong>T-2 週</strong>：完工入库、學校配送、新學期配布</li>
 </ul>
 
 <h3>環境認証と紙材トレーサビリティ</h3>
-<p>ZprintPro（智印雲）の全紙材は <strong>FSC（森林管理協議会）認証</strong>を取得、持続可能な調達を実現。エコシリーズは再生紙・大豆インクを採用、完全生分解性・無毒無臭で日本の教育委員会指導要項にも準拠。学校の ESG 調達要件に合わせ、紙材の出所証明とカーボンフットプリント試算書もご提供し、教材購入が国連 SDGs（持続可能な開発目標）に沿うよう支援します。</p>
+<p>ZprintPro（智印雲）の全紙材は <strong>FSC（森林管理協議会）認証</strong>を取得、持続可能な調達を実現。エコシリーズは再生紙・大豆インクを採用、完全生分解性・無毒無臭で日本の教育委員会指導要項にも準拠。學校の ESG 調達要件に合わせ、紙材の出所証明とカーボンフットプリント試算書もご提供し、教材購入が国連 SDGs（持続可能な開発目標）に沿うよう支援します。</p>
 
 <h3>智印雲（ZprintPro）SaaS 印刷サービス</h3>
-<p>智印雲（ZprintPro）は香港発の印刷 SaaS プラットフォームです。教科書・教材印刷はその専門モジュールの一つに過ぎず、30 秒 AI 見積もり、72 時間世界配送、AI ファイル事前チェック、印刷仕様のオンライン設定、紙サンプル請求、学校調達アカウント（NET 30 月締）まで一気通貫でサポート。お見積もりから納品まで、教育機関の実態に即した設計で運用しています。</p>
+<p>智印雲（ZprintPro）は香港発の印刷 SaaS プラットフォームです。教科書・教材印刷はその専門モジュールの一つに過ぎず、30 秒 AI 見積もり、72 時間世界配送、AI ファイル事前チェック、印刷仕様のオンライン設定、紙サンプル請求、學校調達アカウント（NET 30 月締）まで一気通貫でサポート。お見積もりから納品まで、教育機関の実態に即した設計で運用しています。</p>
 
-<h3>深圳自社工場での直接確認（事前予約制）</h3>
-<p>智印雲（ZprintPro）の深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約制で見学を受け付けており、教科書の校正刷り、紙質の触感比較、製本仕様の実物展示、専門スタッフによるレイアウト相談を提供しています（日本語スタッフ同席可・要 1 週間前予約）。日本向けの学校・塾・教育機関のお客様には、DHL 国際速達便で日本全国（沖縄・離島含む）へ 2-5 営業日で配送、納品時間も柔軟に対応します。</p>
+<h3>深圳自社工場での直接確認（事前予約製）</h3>
+<p>智印雲（ZprintPro）の深圳自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約製で見學を受け付けており、教科書の校正刷り、紙質の触感比較、製本仕様の実物展示、専門スタッフによるレイアウト相談を提供しています（日本語スタッフ同席可・要 1 週間前予約）。日本向けの學校・塾・教育機関のお客様には、DHL 国際速達便で日本全国（沖縄・離島含む）へ 2-5 営業日で配送、納品時間も柔軟に対応します。</p>
 
 <h3>智印雲マルチ通貨決済</h3>
-<p>ZprintPro（智印雲）はマルチ通貨決済に対応（HKD / USD / JPY / CNY）、銀行振込・微信支付・支付宝・PayPal がご利用可能。法人顧客は NET 30 月締請求を申請可能、教育機関・大手予備校チェーンには専用学校割引をご用意。日本語カスタマーサポートまでお問い合わせください。</p>
+<p>ZprintPro（智印雲）はマルチ通貨決済に対応（HKD / USD / JPY / CNY）、銀行振込・微信支付・支付宝・PayPal がご利用可能。法人顧客は NET 30 月締請求を申請可能、教育機関・大手予備校チェーンには専用學校割引をご用意。日本語カスタマーサポートまでお問い合わせください。</p>
 
 <h3>30 秒 AI 見積もりフロー</h3>
 <p>ZprintPro（智印雲）の教科書印刷お見積もりは 3 ステップで完結：</p>
@@ -17309,11 +17309,11 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <h3>適用業界・利用シーン</h3>
 <p>本製品は以下の業界・シーンに適しています：</p>
 <ul>
-  <li><strong>K12 学校</strong> — 小学校 / 中学校 / 高校の正規課程教材、補足練習</li>
+  <li><strong>K12 學校</strong> — 小學校 / 中學校 / 高校の正規課程教材、補足練習</li>
   <li><strong>予備校・塾</strong> — 模擬試験対策教材、自家編集練習帳、入試対策</li>
-  <li><strong>研修機関</strong> — 語学學校教材、職業訓練マニュアル、社内研修教材</li>
+  <li><strong>研修機関</strong> — 語學學校教材、職業訓練マニュアル、社内研修教材</li>
   <li><strong>出版社</strong> — 自社 IP 教科書再版、叢書シリーズ、ISBN 取得サポート</li>
-  <li><strong>知識クリエイター</strong> — オンライン講座付属冊子、セミナー受講生手册</li>
+  <li><strong>知識クリエイター</strong> — オンライン講座付属冊子、セミナー受講生手冊</li>
 </ul>
 <h3>よくある質問 (FAQ)</h3>
 <details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、名刺・封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
@@ -17372,7 +17372,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     alt: {
       'zh-hk': '香港教科書印刷 80g雙膠紙 膠裝精裝',
       en: 'Hong Kong Textbooks Printing 80g Offset Paper Perfect Bound',
-      ja: '教科書印刷 | 学校向け・大量印刷対応 | ZprintPro'
+      ja: '教科書印刷 | 學校向け・大量印刷対応 | ZprintPro'
     },
   },
     variables: {
@@ -17406,7 +17406,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     category: 'educational',
     category_slug: 'educational',
     name: '香港畢業紀念冊 — 畢業紀念冊 / 校史特刊 / 校友會刊 / 社團特刊', nameEn: 'Graduation Yearbooks, School Anniversary & Alumni Publications', nameJa: '卒業記念アルバム — 卒業記念・校史特刊・同窓会誌・クラブ特刊', title_zh: '香港畢業紀念冊 — 畢業紀念冊 / 校史特刊 / 校友會刊 / 社團特刊',
-    description: '香港畢業紀念冊/校史特刊/校友會刊/社團特刊定制，騎馬釘/膠裝/精裝三種裝訂，支持班級照片、師長題詞、學校 logo 全頁。香港本地 48 小時交付，DHL 全球 2-4 天。', descriptionEn: 'Graduation yearbooks, school anniversary & alumni publication printing — saddle stitch / perfect bound / hardcover, supporting class photos, faculty messages, school logos. Free design mockup, 100 MOQ, DHL Express global 2-4 day delivery from Asia factory.', descriptionJa: '卒業記念アルバム・校史特刊・同窓会誌・クラブ特刊印刷、中綴じ/無線綴じ/上製本の3方式、クラス写真・先生メッセージ・学校ロゴ全面対応。無料デザインモックアップ、100冊〜、アジア自社工場からDHL国際速達2-4日。', description_zh: '香港畢業紀念冊/校史特刊/校友會刊/社團特刊定制，騎馬釘/膠裝/精裝三種裝訂，支持班級照片、師長題詞、學校 logo 全頁。香港本地 48 小時交付，DHL 全球 2-4 天。',
+    description: '香港畢業紀念冊/校史特刊/校友會刊/社團特刊定製，騎馬釘/膠裝/精裝三種裝訂，支持班級照片、師長題詞、學校 logo 全頁。香港本地 48 小時交付，DHL 全球 2-4 天。', descriptionEn: 'Graduation yearbooks, school anniversary & alumni publication printing — saddle stitch / perfect bound / hardcover, supporting class photos, faculty messages, school logos. Free design mockup, 100 MOQ, DHL Express global 2-4 day delivery from Asia factory.', descriptionJa: '卒業記念アルバム・校史特刊・同窓会誌・クラブ特刊印刷、中綴じ/無線綴じ/上製本の3方式、クラス寫真・先生メッセージ・學校ロゴ全面対応。無料デザインモックアップ、100冊〜、アジア自社工場からDHL国際速達2-4日。', description_zh: '香港畢業紀念冊/校史特刊/校友會刊/社團特刊定製，騎馬釘/膠裝/精裝三種裝訂，支持班級照片、師長題詞、學校 logo 全頁。香港本地 48 小時交付，DHL 全球 2-4 天。',
     longDescription: `<h3>三種裝訂工藝對比</h3>
 <p>畢業紀念冊常用 3 種裝訂方式, 頁數與預算決定最佳方案:</p>
 <table>
@@ -17447,7 +17447,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <h3>適配行業 (Best For)</h3>
 <p>本產品適合以下行業與場景：</p>
 <ul>
-  <li><strong>中學 / 大學</strong> — 應屆畢業紀念冊、6 年制 / 4 年制完整回憶</li>
+  <li><strong>中學 / 大學</strong> — 應屆畢業紀念冊、6 年製 / 4 年製完整回憶</li>
   <li><strong>補習社</strong> — DSE 應屆班紀念冊、模擬試戰友紀念</li>
   <li><strong>國際學校</strong> — IB / IGCSE 班紀念冊、留學準備班回憶</li>
   <li><strong>家長會 / PTA</strong> — 家長致謝紀念冊、師生合編紀念</li>
@@ -17500,7 +17500,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     category: 'packaging',
     category_slug: 'packaging',
     name: '磁吸翻蓋禮盒印刷 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Magnetic Closure Gift Box | Gift Boxes & Custom Packaging', nameJa: 'マグネット蓋ギフトボックス | パッケージボックス・化粧箱', title_zh: '磁吸翻蓋禮盒印刷',
-    description: '高檔磁吸翻蓋硬盒，適合奢侈品、化妝品、電子產品包裝。支持燙金、UV、壓紋工藝。', descriptionEn: 'Premium magnetic closure rigid boxes for luxury goods, cosmetics, electronics. Foil stamping, UV, embossing available.', descriptionJa: '高級マグネット蓋硬箱。高級品、化粧品、電子機器の包装に最適。箔押し、UV、エンボス加工対応。', description_zh: '高檔磁吸翻蓋硬盒，適合奢侈品、化妝品、電子產品包裝。支持燙金、UV、壓紋工藝。',
+    description: '高檔磁吸翻蓋硬盒，適合奢侈品、化妝品、電子產品包裝。支持燙金、UV、壓紋工藝。', descriptionEn: 'Premium magnetic closure rigid boxes for luxury goods, cosmetics, electronics. Foil stamping, UV, embossing available.', descriptionJa: '高級マグネット蓋硬箱。高級品、化粧品、電子機器の包裝に最適。箔押し、UV、エンボス加工対応。', description_zh: '高檔磁吸翻蓋硬盒，適合奢侈品、化妝品、電子產品包裝。支持燙金、UV、壓紋工藝。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -17607,16 +17607,16 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <table>
   <thead><tr><th>製本</th><th>ページ範囲</th><th>特徴</th><th>適用シーン</th></tr></thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>中綴じ</td><td>32-80 ページ</td><td>折って針金綴じ、コスト最安、フラット背で見開き写真向き</td><td>小学校卒業記念アルバム、予備校コホートアルバム</td></tr>
-    <tr class="border-b border-gray-200"><td>無線綴じ (PUR)</td><td>80-200 ページ</td><td>PUR 接着背、印刷可能背表紙、ページめくり快適</td><td>中学校・高校卒業記念、大学学部記念アルバム</td></tr>
-    <tr><td>上製本 (ハードカバー)</td><td>80-400 ページ</td><td>2.5mm 厚紙 + アート紙、箔押し表紙、長期保存品質</td><td>大学卒業記念アルバム、学校周年纪念、同窓会保存版</td></tr>
+    <tr class="border-b border-gray-200"><td>中綴じ</td><td>32-80 ページ</td><td>折って針金綴じ、コスト最安、フラット背で見開き寫真向き</td><td>小學校卒業記念アルバム、予備校コホートアルバム</td></tr>
+    <tr class="border-b border-gray-200"><td>無線綴じ (PUR)</td><td>80-200 ページ</td><td>PUR 接着背、印刷可能背表紙、ページめくり快適</td><td>中學校・高校卒業記念、大學學部記念アルバム</td></tr>
+    <tr><td>上製本 (ハードカバー)</td><td>80-400 ページ</td><td>2.5mm 厚紙 + アート紙、箔押し表紙、長期保存品質</td><td>大學卒業記念アルバム、學校周年纪念、同窓会保存版</td></tr>
   </tbody>
 </table>
 
 <h3>用紙材質とカラー選択</h3>
 <p>内頁は通常以下の用紙で印刷：</p>
 <ul>
-  <li>157g マットアート紙 — 最も一般的、反射防止、写真向き</li>
+  <li>157g マットアート紙 — 最も一般的、反射防止、寫真向き</li>
   <li>200g 光沢アート紙 — 鮮やかな色彩、プレミアム感</li>
   <li>120g 上質紙 — 経済的、文字中心の卒業記念冊向き</li>
   <li>200g 特殊紙 (パール / メタリック / テクスチャ) — 記念版向け</li>
@@ -17625,16 +17625,16 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 
 <h3>一般的特殊加工</h3>
 <ul>
-  <li>表紙箔押し (金 / 銀 / ピンクゴールド) — 学校紋章、卒業年度、クラス名</li>
-  <li>スポット UV (クラスエンブレム、記念文字、クラス写真) — 立体感あるコントラスト</li>
+  <li>表紙箔押し (金 / 銀 / ピンクゴールド) — 學校紋章、卒業年度、クラス名</li>
+  <li>スポット UV (クラスエンブレム、記念文字、クラス寫真) — 立体感あるコントラスト</li>
   <li>表紙エンボス / デボス (校訓、記念エンブレム)</li>
   <li>三方金箔 (ハードカバー プレミアム仕様、收藏価値向上)</li>
   <li>ブックジャケット / カバー (ハードカバー版 + 帯、保護用)</li>
 </ul>
 
-<h3>レイアウトフロー (写真から印刷まで)</h3>
+<h3>レイアウトフロー (寫真から印刷まで)</h3>
 <ol>
-  <li>クラス / コホート集合写真、個人写真、活动写真を収集 (300dpi 推奨)</li>
+  <li>クラス / コホート集合寫真、個人寫真、活动寫真を収集 (300dpi 推奨)</li>
   <li>題辞 (先生、保護者、担任)、校訓、クラス名、卒業年度を提供</li>
   <li>レイアウトデザイン (智印雲の無料サービスで表紙とセクション テンプレート)</li>
   <li>デジタル校正 — 確認 — 印刷</li>
@@ -17642,23 +17642,23 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ol>
 
 <h3>サービス提供実績</h3>
-<p>智印雲は中学校、高校、大学、インターナショナルスクール、予備校コホート向けに卒業記念アルバムとクラス纪念品を製作してまいりました。東京・大阪・名古屋・福岡など日本全国、ならびに米国・欧州・オーストラリア向け、最小 50 部から、7-10 営業日の迅速対応。特急 5 日制作（追加 30%）も対応。国際注文は DHL Express でアジア工場から 2-4 日配送。無料デザインモックアップ、100 冊〜の段階割引対応。</p>
+<p>智印雲は中學校、高校、大學、インターナショナルスクール、予備校コホート向けに卒業記念アルバムとクラス纪念品を製作してまいりました。東京・大阪・名古屋・福岡など日本全国、ならびに米国・欧州・オーストラリア向け、最小 50 部から、7-10 営業日の迅速対応。特急 5 日製作（追加 30%）も対応。国際注文は DHL Express でアジア工場から 2-4 日配送。無料デザインモックアップ、100 冊〜の段階割引対応。</p>
 
 <h3>適用業界・利用シーン</h3>
 <p>本サービスは以下の業界・シーンに適しています：</p>
 <ul>
-  <li><strong>中学校・高校・大学</strong> — 卒業記念アルバム、6 年制 / 4 年制の完全な思い出</li>
+  <li><strong>中學校・高校・大學</strong> — 卒業記念アルバム、6 年製 / 4 年製の完全な思い出</li>
   <li><strong>予備校・塾</strong> — 受験卒業生記念アルバム、模擬試験仲間記念</li>
-  <li><strong>インターナショナルスクール</strong> — IB / IGCSE クラス記念アルバム、留学準備コホート思い出</li>
+  <li><strong>インターナショナルスクール</strong> — IB / IGCSE クラス記念アルバム、留學準備コホート思い出</li>
   <li><strong>PTA・保護者会</strong> — 保護者感謝記念アルバム、師生共同編集記念</li>
   <li><strong>同窓会・クラス会</strong> — 卒業 N 周年記念、跨期合同号、同窓再会</li>
 </ul>
 
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲の卒業記念アルバムの最低注文数量は？</strong></summary><p>智印雲の卒業記念アルバムは 50 部から対応。中綴じと無線綴じ版は 100 部以上で段階割引。1 ページあたり 1-2 枚の写真が最適密度。200 ページ以内は無線綴じ、200 ページ以上は上製本または分冊を推奨。</p></details>
-<details class="my-2"><summary><strong>制作納期は？特急対応は最短何日？</strong></summary><p>標準注文は 7-10 営業日で完成（デザイン + 校正 + 印刷 + 製本込み）。特急制作は 5 営業日に短縮可能（追加 30%）。国際注文は DHL Express で世界中 2-4 日配送。30 秒 AI 見積もりで即時価格取得、登録不要。</p></details>
-<details class="my-2"><summary><strong>写真のみ提供してレイアウトをお願いできますか？</strong></summary><p>はい。智印雲は表紙とセクションページのテンプレートを無料で提供。クライアントは写真とテキストを提供するだけで、デザイン チームが 1-2 営業日以内にデジタル校正を納品。複雑なカスタム レイアウトは別途見積もり。全注文無料デザインモックアップ付き。</p></details>
-<details class="my-2"><summary><strong>箔押し、スポット UV などの特殊加工を追加できますか？</strong></summary><p>はい。箔押し (学校紋章、卒業年度) とスポット UV (クラスエンブレム、記念文字) は卒業記念アルバムで最も人気の高い組み合わせで、触覚品質と收藏価値を高めます。ページ単位のスポット UV は大量注文でバッチ価格対応可。</p></details>`,
+<details class="my-2"><summary><strong>智印雲の卒業記念アルバムの最低注文数量は？</strong></summary><p>智印雲の卒業記念アルバムは 50 部から対応。中綴じと無線綴じ版は 100 部以上で段階割引。1 ページあたり 1-2 枚の寫真が最適密度。200 ページ以内は無線綴じ、200 ページ以上は上製本または分冊を推奨。</p></details>
+<details class="my-2"><summary><strong>製作納期は？特急対応は最短何日？</strong></summary><p>標準注文は 7-10 営業日で完成（デザイン + 校正 + 印刷 + 製本込み）。特急製作は 5 営業日に短縮可能（追加 30%）。国際注文は DHL Express で世界中 2-4 日配送。30 秒 AI 見積もりで即時価格取得、登録不要。</p></details>
+<details class="my-2"><summary><strong>寫真のみ提供してレイアウトをお願いできますか？</strong></summary><p>はい。智印雲は表紙とセクションページのテンプレートを無料で提供。クライアントは寫真とテキストを提供するだけで、デザイン チームが 1-2 営業日以内にデジタル校正を納品。複雑なカスタム レイアウトは別途見積もり。全注文無料デザインモックアップ付き。</p></details>
+<details class="my-2"><summary><strong>箔押し、スポット UV などの特殊加工を追加できますか？</strong></summary><p>はい。箔押し (學校紋章、卒業年度) とスポット UV (クラスエンブレム、記念文字) は卒業記念アルバムで最も人気の高い組み合わせで、触覚品質と收藏価値を高めます。ページ単位のスポット UV は大量注文でバッチ価格対応可。</p></details>`,
     features: [
       '磁吸翻蓋，單手開合體驗佳',
       '硬盒結構＋觸感覆膜可選',
@@ -17709,7 +17709,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-packaging-magnetic-closure-gift-box-zh-hk-1.webp', en: 'zprintpro-packaging-magnetic-closure-gift-box-en-1.webp', ja: 'zprintpro-packaging-magnetic-closure-gift-box-ja-1.webp' },
     alt: {
-      'zh-hk': '包裝盒 / 禮品盒 / 定制包裝 | 香港磁吸翻蓋禮盒印刷 350g白卡紙 燙金Logo',
+      'zh-hk': '包裝盒 / 禮品盒 / 定製包裝 | 香港磁吸翻蓋禮盒印刷 350g白卡紙 燙金Logo',
       en: 'Custom Packaging Boxes & Gift Boxes | Hong Kong Magnetic Closure Gift Box Printing 350g White Card Foil Logo',
       ja: 'パッケージボックス / ギフトボックス | マグネット蓋ギフトボックス | オリジナルパッケージ・最短3日 | ZprintPro'
     },
@@ -17721,8 +17721,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'electronics-packaging-box',
     category: 'packaging',
     category_slug: 'packaging',
-    name: '電子產品包裝盒定制 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Electronics Packaging Box | Gift Boxes & Custom Packaging', nameJa: '電子機器包装箱 | パッケージボックス・化粧箱', title_zh: '電子產品包裝盒定制',
-    description: '手機、耳機、充電器等3C產品包裝盒。EVA內托、吸塑、紙托多種內襯選擇。支持環保材質。', descriptionEn: 'Packaging boxes for phones, earphones, chargers. EVA foam, blister, paper tray inserts. Eco-friendly options.', descriptionJa: 'スマホ、イヤホン、充電器等のパッケージ箱。EVAフォーム、ブリスター、紙トレイ内装。環境配慮素材対応。', description_zh: '手機、耳機、充電器等3C產品包裝盒。EVA內托、吸塑、紙托多種內襯選擇。支持環保材質。',
+    name: '電子產品包裝盒定製 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Electronics Packaging Box | Gift Boxes & Custom Packaging', nameJa: '電子機器包裝箱 | パッケージボックス・化粧箱', title_zh: '電子產品包裝盒定製',
+    description: '手機、耳機、充電器等3C產品包裝盒。EVA內托、吸塑、紙托多種內襯選擇。支持環保材質。', descriptionEn: 'Packaging boxes for phones, earphones, chargers. EVA foam, blister, paper tray inserts. Eco-friendly options.', descriptionJa: 'スマホ、イヤホン、充電器等のパッケージ箱。EVAフォーム、ブリスター、紙トレイ内裝。環境配慮素材対応。', description_zh: '手機、耳機、充電器等3C產品包裝盒。EVA內托、吸塑、紙托多種內襯選擇。支持環保材質。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -17817,7 +17817,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 
 <h3>Quality, Compliance, and Shipping</h3>
 <p>ZprintPro ensures top-quality printing with FSC-certified materials and ISO 9001 manufacturing standards. We offer DHL Express global shipping, delivering to the US, UK, Australia, and more in 2-4 days. Our 30-second AI quote system provides instant pricing without the need for sign-up.</p>`,
-    longDescriptionJa: `電子機器包装箱をZprintProでご注文。1200gグレーボードにコート紙または特殊紙を貼り合わせ+内装EVAフォームトレー・ブリスター・紙パルプモールドの3種類から選択。磁石式フタ構造で開閉体験向上。帯電防止内装オプションで電子機器保護基準適合。3Cアクセサリー向けに最適。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `電子機器包裝箱をZprintProでご注文。1200gグレーボードにコート紙または特殊紙を貼り合わせ+内裝EVAフォームトレー・ブリスター・紙パルプモールドの3種類から選択。磁石式フタ構造で開閉体験向上。帯電防止内裝オプションで電子機器保護基準適合。3Cアクセサリー向けに最適。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -17879,9 +17879,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-packaging-electronics-packaging-box-zh-hk-1.webp', en: 'zprintpro-packaging-electronics-packaging-box-en-1.webp', ja: 'zprintpro-packaging-electronics-packaging-box-ja-1.webp' },
     alt: {
-      'zh-hk': '包裝盒 / 禮品盒 / 定制包裝 | 香港電子產品包裝盒印刷 400g灰板紙 防靜電設計',
+      'zh-hk': '包裝盒 / 禮品盒 / 定製包裝 | 香港電子產品包裝盒印刷 400g灰板紙 防靜電設計',
       en: 'Custom Packaging Boxes & Gift Boxes | Hong Kong Electronics Packaging Box Printing 400g Grey Board Anti-static',
-      ja: 'パッケージボックス / ギフトボックス | 電子機器包装箱 | オリジナルパッケージ・最短3日 | ZprintPro'
+      ja: 'パッケージボックス / ギフトボックス | 電子機器包裝箱 | オリジナルパッケージ・最短3日 | ZprintPro'
     },
   },
     variables: {
@@ -17914,8 +17914,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'kraft-paper-packaging-box',
     category: 'packaging',
     category_slug: 'packaging',
-    name: '牛皮紙盒印刷定制 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Kraft Paper Packaging Box | Gift Boxes & Custom Packaging', nameJa: 'クラフト紙箱印刷 | パッケージボックス・化粧箱', title_zh: '牛皮紙盒印刷定制',
-    description: '環保牛皮紙盒，適合食品、茶葉、手工皂包裝。可印刷Logo，支持多種尺寸。', descriptionEn: 'Eco-friendly kraft paper boxes for food, tea, handmade soap packaging. Custom logo printing, multiple sizes.', descriptionJa: '環境に優しいクラフト紙箱。食品、お茶、手作り石鹸の包装に最適。ロゴ印刷、サイズ豊富。', description_zh: '環保牛皮紙盒，適合食品、茶葉、手工皂包裝。可印刷Logo，支持多種尺寸。',
+    name: '牛皮紙盒印刷定製 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Kraft Paper Packaging Box | Gift Boxes & Custom Packaging', nameJa: 'クラフト紙箱印刷 | パッケージボックス・化粧箱', title_zh: '牛皮紙盒印刷定製',
+    description: '環保牛皮紙盒，適合食品、茶葉、手工皂包裝。可印刷Logo，支持多種尺寸。', descriptionEn: 'Eco-friendly kraft paper boxes for food, tea, handmade soap packaging. Custom logo printing, multiple sizes.', descriptionJa: '環境に優しいクラフト紙箱。食品、お茶、手作り石鹸の包裝に最適。ロゴ印刷、サイズ豊富。', description_zh: '環保牛皮紙盒，適合食品、茶葉、手工皂包裝。可印刷Logo，支持多種尺寸。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -18009,7 +18009,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 
 <h3>Quality, Compliance, and Shipping</h3>
 <p>ZprintPro ensures top-quality printing with FSC-certified materials and ISO 9001 manufacturing standards. We offer DHL Express global shipping, delivering to the US, UK, Australia, and more in 2-4 days. Our 30-second AI quote system provides instant pricing without the sign-up.</p>`,
-    longDescriptionJa: `クラフト紙箱をZprintProでご注文。300g-350g無漂白環境配慮クラフトカード+FSC森林認証+完全生分解性。表面は原紙色または単色/2色水性インク印刷+黒箔押し・デボス・シルクスクリーン加工。自動ロック底差し込み箱と紐付き手提げ箱が主体。有機食品・手作りお茶・手作り石鹸・環境ブランド包装様に最適。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `クラフト紙箱をZprintProでご注文。300g-350g無漂白環境配慮クラフトカード+FSC森林認証+完全生分解性。表面は原紙色または単色/2色水性インク印刷+黒箔押し・デボス・シルクスクリーン加工。自動ロック底差し込み箱と紐付き手提げ箱が主体。有機食品・手作りお茶・手作り石鹸・環境ブランド包裝様に最適。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -18070,7 +18070,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-packaging-kraft-paper-packaging-box-zh-hk-1.webp', en: 'zprintpro-packaging-kraft-paper-packaging-box-en-1.webp', ja: 'zprintpro-packaging-kraft-paper-packaging-box-ja-1.webp' },
     alt: {
-      'zh-hk': '包裝盒 / 禮品盒 / 定制包裝 | 香港牛皮紙包裝盒印刷 300g牛皮紙 環保材質',
+      'zh-hk': '包裝盒 / 禮品盒 / 定製包裝 | 香港牛皮紙包裝盒印刷 300g牛皮紙 環保材質',
       en: 'Custom Packaging Boxes & Gift Boxes | Hong Kong Kraft Paper Packaging Box Printing 300g Kraft Paper Eco-friendly',
       ja: 'パッケージボックス / ギフトボックス | クラフト紙箱印刷 | オリジナルパッケージ・最短3日 | ZprintPro'
     },
@@ -18106,7 +18106,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     category: 'packaging',
     category_slug: 'packaging',
     name: '抽屜禮盒滑軌盒印刷 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Drawer Slide Gift Box | Gift Boxes & Custom Packaging', nameJa: '引き出し式ギフトボックス | パッケージボックス・化粧箱', title_zh: '抽屜禮盒滑軌盒印刷',
-    description: '精緻抽屜式禮盒，絲帶拉手設計。適合茶葉、月餅、珠寶首飾包裝。', descriptionEn: 'Exquisite drawer-style gift boxes with ribbon pull. Perfect for tea, mooncakes, jewelry packaging.', descriptionJa: '精巧な引き出し式ギフトボックス。リボン引手付き。お茶、月餅、宝石類の包装に最適。', description_zh: '精緻抽屜式禮盒，絲帶拉手設計。適合茶葉、月餅、珠寶首飾包裝。',
+    description: '精緻抽屜式禮盒，絲帶拉手設計。適合茶葉、月餅、珠寶首飾包裝。', descriptionEn: 'Exquisite drawer-style gift boxes with ribbon pull. Perfect for tea, mooncakes, jewelry packaging.', descriptionJa: '精巧な引き出し式ギフトボックス。リボン引手付き。お茶、月餅、宝石類の包裝に最適。', description_zh: '精緻抽屜式禮盒，絲帶拉手設計。適合茶葉、月餅、珠寶首飾包裝。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -18200,7 +18200,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 
 <h3>Quality, Compliance, and Shipping</h3>
 <p>ZprintPro ensures top-quality printing with FSC-certified materials and ISO 9001 manufacturing standards. We offer DHL Express global shipping, delivering to the US, UK, Australia, and more in 2-4 days. Our 30-second AI quote system provides instant pricing without the need for sign-up.</p>`,
-    longDescriptionJa: `引き出し式ギフトボックスをZprintProでご注文。1200gグレーボードに157gコート紙またはベルベット調特殊紙を貼り合わせ+内箱スライドレール構造+サテンリボン引手で滑らかな開閉と儀式的な開封体験。お茶・月餅・宝石類・高級企業ギフト包装様に最適。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `引き出し式ギフトボックスをZprintProでご注文。1200gグレーボードに157gコート紙またはベルベット調特殊紙を貼り合わせ+内箱スライドレール構造+サテンリボン引手で滑らかな開閉と儀式的な開封体験。お茶・月餅・宝石類・高級企業ギフト包裝様に最適。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -18262,7 +18262,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-packaging-drawer-slide-gift-box-zh-hk-1.webp', en: 'zprintpro-packaging-drawer-slide-gift-box-en-1.webp', ja: 'zprintpro-packaging-drawer-slide-gift-box-ja-1.webp' },
     alt: {
-      'zh-hk': '包裝盒 / 禮品盒 / 定制包裝 | 香港抽屜式禮盒印刷 350g白卡紙 緞帶拉手',
+      'zh-hk': '包裝盒 / 禮品盒 / 定製包裝 | 香港抽屜式禮盒印刷 350g白卡紙 緞帶拉手',
       en: 'Custom Packaging Boxes & Gift Boxes | Hong Kong Drawer Slide Gift Box Printing 350g White Card Ribbon Pull',
       ja: 'パッケージボックス / ギフトボックス | 引き出し式ギフトボックス | オリジナルパッケージ・最短3日 | ZprintPro'
     },
@@ -18276,7 +18276,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     category: 'stickers',
     category_slug: 'stickers',
     name: '水果貼紙食品標籤印刷 | 防水貼紙 / 異形貼紙', nameEn: 'Fruit & Food Label Stickers | Waterproof & Die-Cut Stickers', nameJa: 'フルーツ・食品ラベルシール | 防水ステッカー / ダイカット', title_zh: '水果貼紙食品標籤印刷 · FDA 食品級跨境電商 SKU 標貼 | 智印雲 ZprintPro',
-    description: '防水防油的水果貼紙和食品標籤，適合生鮮、烘焙、飲料包裝。符合食品安全標準。**適配行業**: 跨境電商 SKU 標籤 / 生鮮水果品牌 / 烘焙食品 / 茶飲品牌 / 保健食品 / GS1 條碼貼標。', descriptionEn: 'Waterproof and oil-resistant fruit stickers and food labels for fresh produce, bakery, beverage packaging. Food-safe compliant. **Best for**: cross-border e-commerce SKU labels / fresh fruit brands / bakery / beverage / health food / GS1 barcode labels.', descriptionJa: '耐水耐油のフルーツシールと食品ラベル。生鮮食品、ベーカリー、飲料包装に最適。食品衛生基準適合。**適用業界**: 越境EC SKU ラベル / 生鮮フルーツブランド / ベーカリー / ドリンク / 健康食品 / GS1 バーコードラベル。', description_zh: '防水防油的水果貼紙和食品標籤，適合生鮮、烘焙、飲料包裝。符合食品安全標準。**適配行業**: 跨境電商 SKU 標籤 / 生鮮水果品牌 / 烘焙食品 / 茶飲品牌 / 保健食品 / GS1 條碼貼標。',
+    description: '防水防油的水果貼紙和食品標籤，適合生鮮、烘焙、飲料包裝。符合食品安全標準。**適配行業**: 跨境電商 SKU 標籤 / 生鮮水果品牌 / 烘焙食品 / 茶飲品牌 / 保健食品 / GS1 條碼貼標。', descriptionEn: 'Waterproof and oil-resistant fruit stickers and food labels for fresh produce, bakery, beverage packaging. Food-safe compliant. **Best for**: cross-border e-commerce SKU labels / fresh fruit brands / bakery / beverage / health food / GS1 barcode labels.', descriptionJa: '耐水耐油のフルーツシールと食品ラベル。生鮮食品、ベーカリー、飲料包裝に最適。食品衛生基準適合。**適用業界**: 越境EC SKU ラベル / 生鮮フルーツブランド / ベーカリー / ドリンク / 健康食品 / GS1 バーコードラベル。', description_zh: '防水防油的水果貼紙和食品標籤，適合生鮮、烘焙、飲料包裝。符合食品安全標準。**適配行業**: 跨境電商 SKU 標籤 / 生鮮水果品牌 / 烘焙食品 / 茶飲品牌 / 保健食品 / GS1 條碼貼標。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -18380,7 +18380,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What materials do you offer for stickers?</strong></summary><p>We offer clear BOPP, white PE, and biodegradable PLA materials for our stickers.</p></details>
 <details class="my-2"><summary><strong>Do you offer global shipping?</strong></summary><p>Yes, we offer DHL Express global shipping with delivery in 2-4 days.</p></details>
 <details class="my-2"><summary><strong>How do you ensure quality?</strong></summary><p>We adhere to FSC certification, ISO 9001 manufacturing standards, and ISO 12647 color management to ensure the highest quality.</p></details>`,
-    longDescriptionJa: `フルーツシール食品ラベルをZprintProでご注文。食品グレード素材+SGS/FDA食品接触テストクリア、BOPP/PE/PLA素材選択可で0-4°C冷蔵環境対応。生鮮果物・ bakery・飲料カップ様に最適。中国深圳自社工場印刷、国際検品体制・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `フルーツシール食品ラベルをZprintProでご注文。食品グレード素材+SGS/FDA食品接触テストクリア、BOPP/PE/PLA素材選択可で0-4°C冷蔵環境対応。生鮮果物・ bakery・飲料カップ様に最適。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、深圳自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
@@ -18843,7 +18843,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 
 <p><em>ZprintPro is the international printing brand of Shenzhen Cailong Printing & Packaging Co., Ltd. Shenzhen production facility with DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>`,
       longDescriptionJa: `<h3>同人誌・推し活特化印刷サービス</h3>
-<p>コミケ・推し活・VTuber 物販に必須の缶バッジ。57mm 標準サイズと 76mm 大判、44mm ミニの 3 サイズ展開。フルカラー印刷でイラスト・ロゴをそのまま再現。安全ピン標準装備で衣服・カバンに簡単装着。10 個から少部数対応で、個人サークルも気軽に発注可能。コミケ前特急対応で、追加発注にも迅速対応。</p>
+<p>コミケ・推し活・VTuber 物販に必須の缶バッジ。57mm 標準サイズと 76mm 大判、44mm ミニの 3 サイズ展開。フルカラー印刷でイラスト・ロゴをそのまま再現。安全ピン標準裝備で衣服・カバンに簡単裝着。10 個から少部数対応で、個人サークルも気軽に発注可能。コミケ前特急対応で、追加発注にも迅速対応。</p>
 
 <h3>サイズ・仕様</h3>
 <table>
@@ -18852,7 +18852,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     <tr class="border-b border-gray-200"><td>材質</td><td>金属ベース + 紙/ペット印刷面 + 安全ピン</td></tr>
     <tr class="border-b border-gray-200"><td>サイズ</td><td>57mm (標準) / 76mm (大判) / 44mm (ミニ)</td></tr>
     <tr class="border-b border-gray-200"><td>印刷方式</td><td>オフセット/デジタル 4色 (CMYK)</td></tr>
-    <tr><td>加工</td><td>安全ピン標準装備 / OPP袋個別包装オプション</td></tr>
+    <tr><td>加工</td><td>安全ピン標準裝備 / OPP袋個別包裝オプション</td></tr>
   </tbody>
 </table>
 
@@ -19008,7 +19008,7 @@ longDescriptionEn: `<h3>Postcard Sets — Washi-Style Art Cards for Character & 
 
 <p><em>ZprintPro is the international printing brand of Shenzhen Cailong Printing & Packaging Co., Ltd. Shenzhen production facility with DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>`,
       longDescriptionJa: `<h3>同人誌・推し活特化印刷サービス</h3>
-<p>推しキャラ・VTuber のイラストやサイン会配布用に最適なポストカードセット。4-8 枚のセット販売で、コレクション性が高い。和紙風アート紙採用で、和風・古風テイストの作品にもマッチ。両面印刷対応で、表面イラスト + 裏面テキスト/サインを自由にデザイン。OPP スリーブ個別包装で、傷・汚れから保護。</p>
+<p>推しキャラ・VTuber のイラストやサイン会配布用に最適なポストカードセット。4-8 枚のセット販売で、コレクション性が高い。和紙風アート紙採用で、和風・古風テイストの作品にもマッチ。両面印刷対応で、表面イラスト + 裏面テキスト/サインを自由にデザイン。OPP スリーブ個別包裝で、傷・汚れから保護。</p>
 
 <h3>サイズ・仕様</h3>
 <table>
@@ -19017,7 +19017,7 @@ longDescriptionEn: `<h3>Postcard Sets — Washi-Style Art Cards for Character & 
     <tr class="border-b border-gray-200"><td>材質</td><td>和紙風アート紙 180g / 両面マットPPラミネート</td></tr>
     <tr class="border-b border-gray-200"><td>サイズ</td><td>105×148mm (A6 標準ポストカード)</td></tr>
     <tr class="border-b border-gray-200"><td>印刷方式</td><td>オンデマンド/オフセット 4色 (CMYK)</td></tr>
-    <tr><td>加工</td><td>OPP スリーブ個別包装 + 集合OPP袋</td></tr>
+    <tr><td>加工</td><td>OPP スリーブ個別包裝 + 集合OPP袋</td></tr>
   </tbody>
 </table>
 
@@ -19175,7 +19175,7 @@ longDescriptionEn: `<h3>Postcard Sets — Washi-Style Art Cards for Character & 
 
 <p><em>ZprintPro is the international printing brand of Shenzhen Cailong Printing & Packaging Co., Ltd. Shenzhen production facility with DHL Express worldwide 2-4 day shipping. FSC-certified paper, ISO 12647 color management, ISO 9001 quality certified.</em></p>`,
       longDescriptionJa: `<h3>同人誌・推し活特化印刷サービス</h3>
-<p>推し活・コミケ物販・企業ノベルティに最適なオーガニックコットントート。FSC 認証オーガニックコットン 100% 使用で、ESG・サステナブル志向にも対応。シルクスクリーン印刷でロゴ・イラストを鮮明再現、DTG フルカラー印刷でグラデーション・写真も対応。A4 サイズ収納可能で、実用性も高い。10 個から対応で、少部数 OK。</p>
+<p>推し活・コミケ物販・企業ノベルティに最適なオーガニックコットントート。FSC 認証オーガニックコットン 100% 使用で、ESG・サステナブル志向にも対応。シルクスクリーン印刷でロゴ・イラストを鮮明再現、DTG フルカラー印刷でグラデーション・寫真も対応。A4 サイズ収納可能で、実用性も高い。10 個から対応で、少部数 OK。</p>
 
 <h3>サイズ・仕様</h3>
 <table>
@@ -19364,7 +19364,7 @@ export function getCategoryName(category: Category, locale: string): string {
 
 // SEO-optimized image alt text generator
 // 2026-07-14 P0 fix: 加 isValidImageAlt() 质量防护
-// 背景: 之前 cron 误把 FAQ 内容（如 "這款貼紙的最小訂購量是多少？"）写到 imageAlt 字段
+// 背景: 之前 cron 误把 FAQ 内容（如 "這款貼紙的最小訂購量是多少？"）寫到 imageAlt 字段
 // 修法: 检测 FAQ 特征（问号/？/长度>120/含特定 trigger 词），命中则降级到 fallback
 function isValidImageAlt(alt: string): boolean {
   if (!alt || alt.length === 0) return false;

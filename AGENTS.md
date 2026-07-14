@@ -717,6 +717,40 @@ if (locale === 'zh-hk') {
 
 **8 问全过才 push。任一项不过立即修，不推。**
 
+## 13.16.1 zh-hk 繁体字最高原则（2026-07-14 user 拍板）
+
+### 最高原则
+**zh-hk 输出 = 100% 繁体中文，零简体字泄漏。**
+
+### 铁律
+- ❌ **禁止**: 简体字出现在任何 zh-hk 输出（title_zh / H1 / Meta / Product page / Hero / Breadcrumb）
+- ✅ **必须**: 所有 zh-hk 输出必须经过 `traditionalizeZh()` 转换
+- ✅ **必须**: 所有源文件必须无简体字残留（`node scripts/scan-simplified.mjs` 通过）
+
+### 验收标准
+1. `node scripts/scan-simplified.mjs` — 退出码 0（无简体字残留）
+2. `node scripts/test-traditionalize.mjs` — 10/10 测试通过
+3. `curl https://zprintpro.com/zh-hk/` — grep 简体字 = 0
+4. 所有产品页 H1 = 繁体（live verify）
+
+### 违规后果
+- 简体字泄漏 = 严重 SEO 降权（Google 判定为低质量内容）
+- 简体字泄漏 = 用户信任度下降（香港用户视"简体"为内地概念）
+- 简体字泄漏 = AGENTS.md 最高原则违约（P0 级修复）
+
+### 自动化防御
+- `scripts/scan-simplified.mjs` — 每次运行，报简体字位置
+- `src/lib/h1-builder.ts` — 强制调用 `traditionalizeZh()` 转换
+- `src/data/products.ts` — 所有 title_zh 必须繁体
+
+### 修复流程
+1. `node scripts/scan-simplified.mjs` 定位问题
+2. 修复源文件（products.ts / h1-builder.ts / category-config.ts）
+3. `node scripts/test-traditionalize.mjs` 验证
+4. `npm run build` 本地通过
+5. Commit + Push + Verify deploy
+6. Live curl 验证繁体输出
+
 ## 13.17 PM × UX × SEO 3-perspective 复盘模板（任何 en 美国优化前必跑）
 
 > 2026-07-09 en 美国优化 v5/v6 用过的复盘模板，已写入 `docs/competitor-analysis/en-us-market-optimization-pm-ux-seo-2026-07-09.md`。
