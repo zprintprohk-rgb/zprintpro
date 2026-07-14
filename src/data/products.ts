@@ -19310,17 +19310,28 @@ export function getProductsByCategory(categorySlug: string): Product[] {
 export { searchProducts, searchCategories, searchAll } from './search-helpers';
 
 // 获取产品标题（根据语言）
+// 2026-07-14 P0 fix: name 字段结构是 "短名 | 短名 / 类目长尾"，如 "防水貼紙 | 防水貼紙 / 異形貼紙"
+// 之前直接 return product.name 会让 H1 / breadcrumb / image alt 出现 3x 重复
+// 修法: 按 '|' split 取 [0] 短名（去重 + 干净），影响 9 个用法（page.tsx / ProductCard / RelatedProducts / HotProducts / QuoteCalculator / guide / not-found / blog / BlogContent）
 export function getProductTitle(product: Product, locale: string): string {
+  let raw: string;
   switch (locale) {
     case 'zh-hk':
-      return product.name;
+      raw = product.name;
+      break;
     case 'en':
-      return product.nameEn;
+      raw = product.nameEn;
+      break;
     case 'ja':
-      return product.nameJa;
+      raw = product.nameJa;
+      break;
     default:
-      return product.name;
+      raw = product.name;
   }
+  // 短名化: 按 '|' split 取 [0]（处理 "A | B" 或 "A | B / C" 两种 pattern）
+  // 注意: 拆完再做 trim 避免 "A | B" → " A" 残留
+  const short = raw.split('|')[0].trim();
+  return short || raw;  // 极端 fallback（空 short 时回退原 name）
 }
 
 // 获取产品描述（根据语言）
@@ -19352,16 +19363,38 @@ export function getCategoryName(category: Category, locale: string): string {
 }
 
 // SEO-optimized image alt text generator
+// 2026-07-14 P0 fix: 加 isValidImageAlt() 质量防护
+// 背景: 之前 cron 误把 FAQ 内容（如 "這款貼紙的最小訂購量是多少？"）写到 imageAlt 字段
+// 修法: 检测 FAQ 特征（问号/？/长度>120/含特定 trigger 词），命中则降级到 fallback
+function isValidImageAlt(alt: string): boolean {
+  if (!alt || alt.length === 0) return false;
+  if (alt.length > 120) return false;  // 正常 alt < 80 字符
+  // FAQ 特征：问号开头 或 含 FAQ 触发词
+  if (/^[？?]/.test(alt.trim())) return false;
+  if (/[？?]$/.test(alt.trim())) return false;  // 也拒绝句末问号
+  const faqTriggers = ['多少', '什么', '哪裡', '哪些', '如何', '怎么', '可以嗎', '嗎', '呢', 'what is', 'how to', 'why', 'when', 'where'];
+  const lower = alt.toLowerCase();
+  for (const t of faqTriggers) {
+    if (lower.includes(t)) return false;
+  }
+  return true;
+}
+
 export function getProductImageAlt(product: Product, locale: string): string {
   // 优先：从 sku-seo-data 取（78 个 SKU 的高质量 alt）
   const sku = getSkuSeo(product.slug);
-  if (sku?.imageAlt?.[locale as 'zh-hk' | 'en' | 'ja']) {
-    return sku.imageAlt[locale as 'zh-hk' | 'en' | 'ja'];
+  const candidate = sku?.imageAlt?.[locale as 'zh-hk' | 'en' | 'ja'];
+  if (candidate && isValidImageAlt(candidate)) {
+    return candidate;
   }
+  // 降级: 走短名（避免 product.name 出现 3x 重复）+ description 截断
+  const shortName = (product.name.split('|')[0] || product.name).trim();
+  const shortNameEn = (product.nameEn.split('|')[0] || product.nameEn).trim();
+  const shortNameJa = (product.nameJa.split('|')[0] || product.nameJa).trim();
   const titles: Record<string, string> = {
-    'zh-hk': `香港${product.name}印刷 | ${product.description.slice(0, 25)} | ZprintPro智印雲`,
-    en: `${product.nameEn} Printing Hong Kong | ${product.descriptionEn.slice(0, 35)} | ZprintPro`,
-    ja: `香港${product.nameJa} | ${product.descriptionJa.slice(0, 25)} | ZprintPro`,
+    'zh-hk': `香港${shortName}印刷 | ${product.description.slice(0, 25)} | ZprintPro智印雲`,
+    en: `${shortNameEn} Printing Hong Kong | ${product.descriptionEn.slice(0, 35)} | ZprintPro`,
+    ja: `香港${shortNameJa} | ${product.descriptionJa.slice(0, 25)} | ZprintPro`,
   };
   return titles[locale] || titles['zh-hk'];
 }
