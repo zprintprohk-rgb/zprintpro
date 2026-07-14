@@ -60,6 +60,7 @@ export const SHARP_HOOKS_MAP_ZH_HK: Record<string, string> = {
   'red-packets':'燙金工藝',
   educational:  '校徽定制',
   books:        '膠裝精裝',
+  'japan-doujin':   '小批量印',
 };
 
 /**
@@ -139,7 +140,7 @@ export const SKU_SELLING_POINT_ZH_HK: Record<string, string> = {
   'hardcover-books': '精裝硬殼',
   // calendars
   'desk-calendars': '桌曆直立',
-  'wall-calendars': '掛牆年曆',
+  'wall-calendars': '高質掛畫',
   // red-packets
   'gold-foil-red-packets': '燙金工藝',
   'embossed-red-packets': '壓紋立體',
@@ -419,7 +420,26 @@ export function buildProductH1ZhHk(
     kwToUse = '';  // 两个 kw 都在 title 中 → 跳过
   }
 
-  const variant1 = `${title}${kwToUse} · ${hook} · 香港${cat}專家 · 智印雲`;
+  // v6.1 hook 去重：hook 已在 title 或 kw 中 → 用 category 级 fallback hook
+  const titleSimple = simplifyZh(productTitle);
+  const kwSimple = simplifyZh(kwToUse);
+  const hookSimple = simplifyZh(hook);
+  const hookInTitle = titleSimple.includes(hookSimple);
+  const hookInKw = kwSimple.includes(hookSimple);
+
+  let hookToUse = hook;
+  if (hookInTitle || hookInKw) {
+    // 尝试 category 级 hook (不取 SKU sellingPoint)
+    const catHook = SHARP_HOOKS_MAP_ZH_HK[catSlug] || DEFAULT_HOOK_ZH_HK[catSlug] || '香港印刷';
+    const catHookSimple = simplifyZh(catHook);
+    if (!titleSimple.includes(catHookSimple) && !kwSimple.includes(catHookSimple)) {
+      hookToUse = traditionalizeZh(catHook);
+    } else {
+      hookToUse = '';  // 都重复了 → 跳过 hook
+    }
+  }
+
+  const variant1 = `${title}${kwToUse}${hookToUse ? ` · ${hookToUse}` : ''} · 香港${cat}專家 · 智印雲`;
   if (variant1.length <= MAX_H1_CHARS_ZH) return variant1;
 
   const variant2 = `${title}${kwToUse} · 香港${cat}專家 · 智印雲`;
