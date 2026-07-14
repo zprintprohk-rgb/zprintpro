@@ -4464,7 +4464,13 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       "zh-hk": "香港畢業紀念冊 / 校園印刷 | 香港畢業紀念冊印刷 環保紙 | ZprintPro智印雲",
       "en": "Graduation Yearbook Printing / School Publication | Free Design Mockup Free Shipping | ZprintPro",
       "ja": "卒業記念アルバム / 校園印刷 | 香港卒業記念アルバム印刷 環保紙 | ZprintPro智印雲"
-    }
+    },
+    "faqs": [
+      { "q": "畢業紀念冊印刷", "a": "香港畢業紀念冊 50 本起印, 騎馬釘 / 膠裝 / 精裝三種裝訂可選" },
+      { "q": "校史特刊訂製", "a": "校友會刊 / 社團特刊 100 本起印, 支持班級照片 + 師長題詞 + 學校 logo 全頁" },
+      { "q": "膠裝精裝比較", "a": "騎馬釘 32-80 頁 / 無線膠裝 80-200 頁 / 精裝 80-400 頁, 依頁數 + 預算選最佳方案" },
+      { "q": "DHL 全球配送", "a": "亞洲工廠直送 DHL Express 2-4 天到全球, 香港本地 48 小時交付" }
+    ]
   },
 };
 
