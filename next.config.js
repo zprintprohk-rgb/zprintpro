@@ -38,9 +38,11 @@ function buildGuideRedirects() {
     // 2) /guide/<slug>/ → /blog/<slug>/（通配）
     //    用 :slug+ 强制至少 1 个字符，避免吞掉裸 /guide/（虽然上面已经处理了，双保险）
     //    destination 同样以 / 结尾，跟 trailingSlash: true 对齐
+    //    2026-07-15 修 GSC "重定向错误"（87 个 /<locale>/guide/* 报 2 跳链）:
+    //    destination 必须带尾斜杠，避免 trailingSlash 二次 308
     rules.push({
       source: `/${locale}/guide/:slug+`,
-      destination: `/${locale}/blog/:slug+`,
+      destination: `/${locale}/blog/:slug+/`,
       permanent: true,
     });
   }
