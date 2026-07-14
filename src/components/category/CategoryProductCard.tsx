@@ -49,10 +49,13 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
   const hasImage = imageSrc && !imgError;
 
   const getName = () => {
+    // 2026-07-15 列表页标题同步: zh-hk 优先用 V8 优化版 title_zh (无 KW 重复, 含 cat KW + sharp hook)
+    // 14 类目页全用 CategoryProductCard, 改 1 处覆盖所有 14 cat
+    // en/ja 暂时保持 nameEn/nameJa (V6 模板, 留 P3 WARN 收尾)
     switch (locale) {
       case 'en': return product.nameEn;
       case 'ja': return product.nameJa;
-      default: return product.name;
+      default: return (product as any).title_zh || product.name;
     }
   };
 

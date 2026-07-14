@@ -55,10 +55,13 @@ export function ProductCard({ product, locale }: ProductCardProps) {
   const [imgError, setImgError] = useState(false);
 
   const getProductName = () => {
+    // 2026-07-15 列表页标题同步: zh-hk 优先用 V8 优化版 title_zh (无 KW 重复, 含 cat KW + sharp hook)
+    // 避免 V6 模板 product.name 出现 "A2海報印刷 | A1/A2 海報 / 展覽海報" 4次 "海報" 重复
+    // en/ja 暂时保持 nameEn/nameJa (V6 模板, 留 P3 WARN 收尾)
     switch (locale) {
       case 'en': return product.nameEn;
       case 'ja': return product.nameJa;
-      default: return product.name;
+      default: return (product as any).title_zh || product.name;
     }
   };
 
