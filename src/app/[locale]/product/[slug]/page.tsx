@@ -14,7 +14,7 @@ import {
   getProductImageAlt,
   products
 } from '@/lib/products';
-import { buildProductH1ZhHk } from '@/lib/h1-builder';
+import { buildProductH1ZhHk, buildProductH1En, buildProductH1Ja } from '@/lib/h1-builder';
 import { 
   generateProductMetadata, 
   generateProductJsonLd,
@@ -383,10 +383,10 @@ export default function ProductPage({
             <div>
               <h1 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
                 {locale === 'zh-hk'
-                  ? buildProductH1ZhHk(productTitle, categoryName, product.category_slug)
+                  ? buildProductH1ZhHk(productTitle, categoryName, product.category_slug, product.slug)
                   : locale === 'en'
-                  ? `${productTitle} | Global Shipping | ZprintPro`
-                  : `${productTitle} | 日本向け高品質印刷 | ZprintPro`}
+                  ? buildProductH1En(productTitle, product.category_slug)
+                  : buildProductH1Ja(productTitle, product.category_slug)}
               </h1>
               
               {['flyers', 'posters', 'stickers', 'business-cards', 'books', 'banners'].includes(product.category_slug) && (

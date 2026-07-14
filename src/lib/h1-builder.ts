@@ -1,17 +1,28 @@
 /**
  * H1 builder for product pages.
- * 2026-07-14 v5: zh-hk 全繁体输出 + 简繁体智能去重
+ * 2026-07-14 v6:
+ * - zh-hk: kw1→kw2 替代（不再浪费副关键词 slot）+ SKU 级 sellingPoint 动态化
+ * - en: 新增 buildProductH1En() 带 sharp hooks (Free Shipping / No MOQ / Free Design)
+ * - ja: 新增 buildProductH1Ja() 带日本市场卖点 (送料無料 / 100枚から / 無料デザイン)
  *
- * 最高原则：
+ * 最高原则（§13.13 3 Locale 内容本地化铁律）：
  * - zh-hk: 100% 繁體中文輸出（productTitle 传入简体也必须转为繁体）
- * - en: 100% English（无中文/日文残留）
- * - ja: 100% 日本語（无中文/英文残留）
+ * - en: 100% English（无中文/日文残留）— target market: US/UK/AU
+ * - ja: 100% 日本語（无中文/英文残留）— target market: 日本
  *
- * H1 模板 v2: ${title} · ${kw} · ${hook} · 香港${cat}專家 · 智印雲
+ * H1 模板:
+ *   zh-hk: ${title} · ${kw} · ${hook} · 香港${cat}專家 · 智印雲  (<= 60 chars)
+ *   en:    ${title} · ${hook} · ZprintPro                       (<= 70 chars)
+ *   ja:    ${title} · ${hook} · ZprintPro                       (<= 70 chars)
+ *
  * 60 字符阈值（Google H1 最佳实践）
  */
 
 export type Locale = 'zh-hk' | 'en' | 'ja';
+
+// ============================================================================
+// zh-hk 数据表
+// ============================================================================
 
 /**
  * 主 KW (产品类型) + 副 KW (sharp hook / 工艺 / 卖点)
@@ -90,7 +101,150 @@ export const DEFAULT_HOOK_ZH_HK: Record<string, string> = {
   'gift-boxes': '定制',
 };
 
-const MAX_H1_CHARS = 60;  // v2: 从 80 收紧到 60 (Google H1 最佳实践推荐)
+/**
+ * v6 新增：SKU 级 sellingPoint 覆盖映射表 (zh-hk)
+ * 当 SKU 有独特卖点时，覆盖 category 级 hook
+ * 例：fruit-stickers 的卖点是「食品級」而非泛 stickers 的「100張起印」
+ */
+export const SKU_SELLING_POINT_ZH_HK: Record<string, string> = {
+  // stickers — 食品级/透明/烫金/镭射 差异化
+  'fruit-stickers': '食品級',
+  'transparent-stickers': '透明底',
+  'gold-foil-stickers': '燙金工藝',
+  'holographic-stickers': '鐳射效果',
+  'vinyl-stickers': '戶外耐用',
+  'kiss-cut-stickers': '異形切割',
+  'waterproof-stickers': '戶外耐用',
+  'pvc-stickers': '防水材質',
+  ' reflective-stickers': '反光材質',
+  // packaging — 盒型差异
+  'drawer-slide-gift-box': '滑軌盒',
+  'magnetic-gift-box': '磁吸盒',
+  'rigid-box': '硬盒定制',
+  'corrugated-box': '瓦楞紙',
+  'folding-carton': '摺盒定制',
+  // paper-bags — 材质差异
+  'large-bags': '大號容量',
+  'kraft-paper-bags': '牛皮紙',
+  'glossy-paper-bags': '亮面處理',
+  'matte-paper-bags': '霧面處理',
+  // flyers/posters — 尺寸差异
+  'a4-flyers': 'A4標準',
+  'a5-flyers': '雙面彩色',
+  'a2-posters': '防水材質',
+  'a1-posters': '高清噴繪',
+  // books — 装订差异
+  'perfect-binding-books': '無線膠裝',
+  'saddle-stitch-books': '騎馬釘',
+  'hardcover-books': '精裝硬殼',
+  // calendars
+  'desk-calendars': '桌曆直立',
+  'wall-calendars': '掛牆年曆',
+  // red-packets
+  'gold-foil-red-packets': '燙金工藝',
+  'embossed-red-packets': '壓紋立體',
+  // educational
+  'exercise-books': '練習冊',
+  'workbooks': '作業簿',
+};
+
+// ============================================================================
+// EN 数据表 (v6 新增)
+// ============================================================================
+
+/**
+ * EN sharp hooks per category — §13.15 美国市场 5 大 sharp hook 覆盖
+ * Free Shipping / Free Design / No MOQ / Fast Turnaround / Made for USA
+ */
+export const SHARP_HOOKS_MAP_EN: Record<string, string> = {
+  stickers:     'Free Design',
+  flyers:       'Same-Day Print',
+  packaging:    'Free Mockup',
+  posters:      'No Setup Fee',
+  'paper-bags': 'Eco-Friendly',
+  banners:      'Free Shipping',
+  envelopes:    '100 MOQ',
+  calendars:    '2027 Edition',
+  'red-packets':'Gold Foil',
+  educational:  'School Bulk',
+  books:        'Perfect Bound',
+  menus:        'Laminated',
+  'gift-boxes': 'Free Mockup',
+  'japan-doujin':   'Short Run',
+};
+
+export const DEFAULT_HOOK_EN: Record<string, string> = {
+  stickers:     'No Minimum',
+  flyers:       'Free Shipping',
+  packaging:    'No Setup Fee',
+  posters:      'Fast Turnaround',
+  'paper-bags': 'Eco-Friendly',
+  banners:      'Same-Day',
+  envelopes:    'No Minimum',
+  calendars:    'Bulk Discount',
+  'red-packets':'Gold Foil',
+  educational:  'Bulk Order',
+  books:        'Short Run',
+  menus:        'Waterproof',
+  'gift-boxes': 'Free Mockup',
+  'japan-doujin':   'Short Run',
+  'business-cards': 'No Minimum',
+};
+
+// ============================================================================
+// JA 数据表 (v6 新增)
+// ============================================================================
+
+/**
+ * JA sharp hooks per category — 日本市场卖点
+ * 送料無料 / 100枚から / 無料デザイン / 即日印刷 / 少部数OK
+ */
+export const SHARP_HOOKS_MAP_JA: Record<string, string> = {
+  stickers:     '無料デザイン',
+  flyers:       '即日印刷',
+  packaging:    '無料サンプル',
+  posters:      '防水素材',
+  'paper-bags': '環境配慮',
+  banners:      '送料無料',
+  envelopes:    '100枚から',
+  calendars:    '2027年版',
+  'red-packets':'箔押し',
+  educational:  '学校向け',
+  books:        '無線綴じ',
+  menus:        'ラミネート',
+  'gift-boxes': '無料サンプル',
+  'japan-doujin':   '少部数OK',
+};
+
+export const DEFAULT_HOOK_JA: Record<string, string> = {
+  stickers:     '100枚から',
+  flyers:       '送料無料',
+  packaging:    '無料打稿',
+  posters:      '高画質',
+  'paper-bags': '100枚から',
+  banners:      '即日対応',
+  envelopes:    '100枚から',
+  calendars:    '企業向け',
+  'red-packets':'春節限定',
+  educational:  '学校向け',
+  books:        '少部数OK',
+  menus:        '防水加工',
+  'gift-boxes': '無料打稿',
+  'japan-doujin':   '少部数OK',
+  'business-cards': '100枚から',
+};
+
+// ============================================================================
+// 常量
+// ============================================================================
+
+const MAX_H1_CHARS_ZH = 60;  // Google H1 最佳实践推荐
+const MAX_H1_CHARS_EN = 70;  // 英文 H1 允许稍长
+const MAX_H1_CHARS_JA = 70;  // 日文 H1 允许稍长
+
+// ============================================================================
+// 工具函数
+// ============================================================================
 
 function escapeRegExp(s: string): string {
   return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
@@ -100,9 +254,23 @@ function getKw(catSlug: string): [string, string] {
   return CAT_KW_MAP_ZH_HK[catSlug] || DEFAULT_KW_MAP_ZH_HK[catSlug] || ['產品', '印刷'];
 }
 
-function getHook(catSlug: string): string {
+/**
+ * zh-hk hook: 优先 SKU 级 sellingPoint, 回退 category 级 hook
+ */
+function getHookZh(catSlug: string, productSlug?: string): string {
+  if (productSlug && SKU_SELLING_POINT_ZH_HK[productSlug]) {
+    return traditionalizeZh(SKU_SELLING_POINT_ZH_HK[productSlug]);
+  }
   const hook = SHARP_HOOKS_MAP_ZH_HK[catSlug] || DEFAULT_HOOK_ZH_HK[catSlug] || '香港印刷';
-  return traditionalizeZh(hook);  // 修 v5.2: hook 也转繁体（确保常量表简体字被转换）
+  return traditionalizeZh(hook);
+}
+
+function getHookEn(catSlug: string): string {
+  return SHARP_HOOKS_MAP_EN[catSlug] || DEFAULT_HOOK_EN[catSlug] || 'Free Shipping';
+}
+
+function getHookJa(catSlug: string): string {
+  return SHARP_HOOKS_MAP_JA[catSlug] || DEFAULT_HOOK_JA[catSlug] || '高品質印刷';
 }
 
 /**
@@ -201,45 +369,146 @@ function traditionalizeZh(s: string): string {
     .replace(/发/g, '發').replace(/台/g, '臺').replace(/适/g, '適');
 }
 
+// ============================================================================
+// H1 Builder: zh-hk
+// ============================================================================
+
 /**
- * Build H1 for zh-hk product page. v5 模板.
+ * Build H1 for zh-hk product page. v6 模板.
  *
  * 最高原則：zh-hk H1 輸出必須 100% 繁體中文。
  * 即使 productTitle 數據源傳入簡體，traditionalizeZh() 會轉為繁體。
+ *
+ * v6 改进：
+ * 1. kw1→kw2 替代：title 已含 kw1 → 用 kw2（不浪费副关键词 slot）
+ * 2. SKU 级 sellingPoint：productSlug 传入后优先取 SKU 专属卖点
  *
  * 模板優先級（按字符長度降級）:
  *   1. ${title} · ${kw} · ${hook} · 香港${cat}專家 · 智印雲   (理想, <= 60 chars)
  *   2. ${title} · ${kw} · 香港${cat}專家 · 智印雲              (去 hook)
  *   3. ${title} · ${kw} · 智印雲                              (去「專家」)
  *
- * 去重優化 v5：如果 productTitle 歸一化後已包含 kw，則跳過 kw 拼接
- *
  * @param productTitle   - 來自 product.name (zh-hk, 已經過 .split('|')[0] 短名化)
  * @param categoryName   - 來自 getCategoryName(category, 'zh-hk')
  * @param catSlug        - 來自 product.category_slug
+ * @param productSlug    - 來自 product.slug（v6 新增：用于 SKU 级 sellingPoint）
  */
 export function buildProductH1ZhHk(
   productTitle: string,
   categoryName: string,
-  catSlug: string
+  catSlug: string,
+  productSlug?: string
 ): string {
-  const [kw] = getKw(catSlug);
-  const hook = getHook(catSlug);
+  const [kw1, kw2] = getKw(catSlug);
+  const hook = getHookZh(catSlug, productSlug);
 
   // 最高原則：zh-hk 輸出 100% 繁體
   const title = traditionalizeZh(productTitle);
-  const cat = traditionalizeZh(categoryName);  // 修 v5.1: categoryName 也转繁体
+  const cat = traditionalizeZh(categoryName);
 
-  // v5 核心去重：如果 productTitle 歸一化後已包含 kw，跳過 kw 拼接
-  const titleIncludesKw = simplifyZh(productTitle).includes(simplifyZh(kw));
-  const kwToUse = titleIncludesKw ? '' : ` · ${kw}`;
+  // v6 核心去重：title 包含 kw1 → 用 kw2 替代（不浪费 slot）
+  const titleHasKw1 = simplifyZh(productTitle).includes(simplifyZh(kw1));
+  const titleHasKw2 = kw2 ? simplifyZh(productTitle).includes(simplifyZh(kw2)) : false;
+
+  let kwToUse: string;
+  if (!titleHasKw1) {
+    kwToUse = ` · ${kw1}`;
+  } else if (kw2 && !titleHasKw2) {
+    kwToUse = ` · ${kw2}`;  // v6: kw1 已在 title 中 → 用 kw2
+  } else {
+    kwToUse = '';  // 两个 kw 都在 title 中 → 跳过
+  }
 
   const variant1 = `${title}${kwToUse} · ${hook} · 香港${cat}專家 · 智印雲`;
-  if (variant1.length <= MAX_H1_CHARS) return variant1;
+  if (variant1.length <= MAX_H1_CHARS_ZH) return variant1;
 
   const variant2 = `${title}${kwToUse} · 香港${cat}專家 · 智印雲`;
-  if (variant2.length <= MAX_H1_CHARS) return variant2;
+  if (variant2.length <= MAX_H1_CHARS_ZH) return variant2;
 
   const variant3 = `${title}${kwToUse} · 智印雲`;
   return variant3;
+}
+
+// ============================================================================
+// H1 Builder: en (v6 新增)
+// ============================================================================
+
+/**
+ * Build H1 for en product page.
+ *
+ * §13.15 美国市场优化：sharp hook 覆盖 (Free Shipping / Free Design / No MOQ)
+ * §13.10 NAP 脱钩：不写 "Shenzhen Printing" / "Hong Kong"
+ *
+ * 模板:
+ *   1. ${title} · ${hook} · ZprintPro  (理想, <= 70 chars)
+ *   2. ${title} · ZprintPro            (去 hook)
+ *
+ * @param productTitle - 來自 product.nameEn (已短名化)
+ * @param catSlug      - 來自 product.category_slug
+ */
+export function buildProductH1En(
+  productTitle: string,
+  catSlug: string
+): string {
+  const hook = getHookEn(catSlug);
+
+  // 智能截断：长标题在 "for "/" — "/"," 处截断取前半段
+  let title = productTitle;
+  const titleOnlyLen = title.length + ' · ZprintPro'.length; // 最短 variant
+  if (titleOnlyLen > MAX_H1_CHARS_EN) {
+    // 尝试在 " for " 处截断
+    const forIdx = title.toLowerCase().indexOf(' for ');
+    if (forIdx > 10) {
+      title = title.substring(0, forIdx);
+    } else {
+      // 尝试在 " — " 处截断
+      const dashIdx = title.indexOf(' — ');
+      if (dashIdx > 10) {
+        title = title.substring(0, dashIdx);
+      } else {
+        // 尝试在 "," 处截断
+        const commaIdx = title.indexOf(',');
+        if (commaIdx > 10) {
+          title = title.substring(0, commaIdx);
+        }
+      }
+    }
+  }
+
+  const variant1 = `${title} · ${hook} · ZprintPro`;
+  if (variant1.length <= MAX_H1_CHARS_EN) return variant1;
+
+  const variant2 = `${title} · ZprintPro`;
+  return variant2;
+}
+
+// ============================================================================
+// H1 Builder: ja (v6 新增)
+// ============================================================================
+
+/**
+ * Build H1 for ja product page.
+ *
+ * §13.10 NAP 脱钩：不写 "深圳印刷" / "中国深圳"
+ * 日本市场卖点：送料無料 / 100枚から / 無料デザイン / 即日印刷
+ *
+ * 模板:
+ *   1. ${title} · ${hook} · ZprintPro  (理想, <= 70 chars)
+ *   2. ${title} · ZprintPro            (去 hook)
+ *
+ * @param productTitle - 來自 product.nameJa (已短名化)
+ * @param catSlug      - 來自 product.category_slug
+ */
+export function buildProductH1Ja(
+  productTitle: string,
+  catSlug: string
+): string {
+  const hook = getHookJa(catSlug);
+  const title = productTitle;
+
+  const variant1 = `${title} · ${hook} · ZprintPro`;
+  if (variant1.length <= MAX_H1_CHARS_JA) return variant1;
+
+  const variant2 = `${title} · ZprintPro`;
+  return variant2;
 }
