@@ -333,7 +333,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Double-sided Cards | Premium Custom | ZprintPro | ZprintPro",
-        "description": "Custom double-sided cards from ZprintPro Hong Kong. Premium Custom, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom double-sided cards from ZprintPro Hong Kong. Premium Custom, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Double-sided Cards 100+ | ZprintPro",
         "keywords": ["double-sided cards","custom double sided cards","double sided cards printing hong kong","double-sided cards free shipping","double-sided cards USD","bulk double-sided cards","double-sided cards DHL","bespoke double-sided cards","custom double-sided cards","double sided cards wholesale"],
         "body": "ZprintPro Double-sided Cards for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Premium Custom, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -433,7 +433,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Eco-friendly Recycled Cards | Foil UV Multi-Finish",
-        "description": "Custom eco-friendly recycled cards from ZprintPro Hong Kong. Foil UV Multi-Finish, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO.",
+        "description": "Custom eco-friendly recycled cards from ZprintPro Hong Kong. Foil UV Multi-Finish, 4-color CMYK. 100-MOQ | Free Design | 100 MOQ",
         "h1": "Eco-friendly Recycled Cards 100+ | ZprintPro",
         "keywords": ["eco business cards","custom eco business cards","eco business cards printing hong kong","eco-friendly recycled cards free shipping","eco-friendly recycled cards USD","bulk eco-friendly recycled cards","eco-friendly recycled cards DHL","bespoke eco-friendly recycled cards","custom eco-friendly recycled cards","eco business cards wholesale"],
         "body": "ZprintPro Eco-friendly Recycled Cards for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Foil UV Multi-Finish, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -585,7 +585,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Removable Stickers | No Residue | Free US Ship | ZprintPro",
-        "description": "Removable stickers that peel off cleanly. Vinyl or PP, repositionable adhesive. 100-MOQ, 90-day removal. Free US shipping over $100, DHL Express. Quote.",
+        "description": "Removable stickers that peel off cleanly. Vinyl or PP, repositionable adhesive. 100-MOQ, 90-day removal | Free Design | 100 MOQ | Free Shipping $99+",
         "h1": "Removable Stickers 100+ | No Residue | ZprintPro",
         "keywords": ["removable stickers", "no residue stickers", "repositionable stickers", "window decals removable", "wall stickers removable", "temporary stickers", "rental equipment tags", "removable adhesive labels", "stickers free shipping", "bulk removable stickers", "sticker printing", "custom stickers", "waterproof stickers", "vinyl stickers", "die-cut stickers", "transparent stickers", "bulk stickers", "label printing", "product stickers", "1000 stickers", "A4 sticker", "Etsy sticker", "QR code sticker", "expiry date sticker", "no residue", "scannable sticker", "removable sticker", "round sticker", "wedding sticker", "student sticker", "custom sticker", "ingredient label", "ingredient label sticker", "label sticker printing", "event interaction", "logistics tracking", "glass sticker", "birthday sticker", "die-cut sticker", "economy sticker", "welcome sign sticker", "transparent sticker printing", "food-grade sticker", "high-transparent sticker"],
         "body": "ZprintPro Removable Sticker Printing for retail windows, events, rental equipment, and short-term campaigns across US and global markets. Vinyl or PP facestock with low-tack repositionable adhesive that removes cleanly within 90 days. 100-sticker MOQ, Free US shipping over $100, 11 colors in stock."
@@ -738,7 +738,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Foil Stickers | Gold Silver Rose | Free US Ship | ZprintPro",
-        "description": "Foil stickers with metallic shine. Gold, silver, rose gold, copper, holographic. Hot stamp foil. 100-MOQ. Free US shipping over $100, DHL Express. Quote.",
+        "description": "Foil stickers with metallic shine. Gold, silver, rose gold, copper, holographic. Hot stamp foil. 100-MOQ | Free Design | 100 MOQ | Free Shipping $99+",
         "h1": "Foil Stickers 100+ | Hot Stamp | ZprintPro",
         "keywords": ["foil stickers", "gold foil stickers", "silver foil stickers", "rose gold foil", "holographic foil stickers", "metallic stickers", "luxury stickers", "foil labels custom", "stickers free shipping", "bulk foil stickers", "sticker printing", "custom stickers", "waterproof stickers", "vinyl stickers", "die-cut stickers", "transparent stickers", "removable stickers", "bulk stickers", "label printing", "product stickers", "1000 stickers", "A4 sticker", "Etsy sticker", "QR code sticker", "expiry date sticker", "no residue", "scannable sticker", "removable sticker", "round sticker", "wedding sticker", "student sticker", "custom sticker", "ingredient label", "ingredient label sticker", "label sticker printing", "event interaction", "logistics tracking", "glass sticker", "birthday sticker", "die-cut sticker", "economy sticker", "welcome sign sticker", "transparent sticker printing", "food-grade sticker", "high-transparent sticker"],
         "body": "ZprintPro Foil Sticker Printing for cosmetics, weddings, luxury packaging, and limited edition branding across US and global markets. Hot stamp foil in gold, silver, rose gold, copper, holographic, and brushed metal on vinyl or paper. 100-sticker MOQ, Free US shipping over $100, dishwasher-safe lamination available."
@@ -892,7 +892,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Kraft Paper Bags | Eco-Friendly | Free US Ship | ZprintPro",
-        "description": "Custom kraft paper bags for retail and gift shops. 120-300g kraft with cotton rope handles. 100-MOQ. Free US shipping over $100, DHL Express. FSC. Get a quote.",
+        "description": "Custom kraft paper bags for retail and gift shops. 120-300g kraft with cotton rope handles. 100-MOQ | Free Design | 100 MOQ",
         "h1": "Kraft Paper Bags 100+ | Eco-Friendly | ZprintPro",
         "keywords": ["kraft paper bags", "custom kraft paper bags", "kraft paper bags printing", "eco friendly kraft bags", "kraft bags with handles", "brown paper bags wholesale", "kraft paper bags free shipping", "bulk kraft bags", "kraft bags USD", "bespoke paper bags", "paper bag printing", "shopping bags", "eco bags", "gift bags", "custom paper bags", "handle bags", "white card bags", "large paper bags", "recycled bags", "100pcs MOQ", "2h pickup", "48h turnaround", "50pcs MOQ", "free proof", "free design", "SF Express HK delivery", "wedding paper bag", "small batch paper bag", "affordable paper bag", "fast paper bag printing", "rope handle bag", "foil logo", "kraft paper bag", "eco paper bag", "white card bag", "boutique paper bag", "paper bag production", "paper bag factory", "custom paper bag"],
         "body": "ZprintPro Custom Kraft Paper Bag Printing for retail, gift, coffee, and fashion brands across US and global markets. 120-300g natural brown or white kraft with cotton rope handles, foil stamping, and spot UV. 100-bag MOQ, Free US shipping over $100, FSC certified, soy ink."
@@ -944,7 +944,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "White Card Bags | Premium Custom | Free US Ship | ZprintPro",
-        "description": "Custom white card bags from ZprintPro Hong Kong. Premium Custom, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom white card bags from ZprintPro Hong Kong. Premium Custom, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "White Card Bags 100+ | Premium Custom | ZprintPro",
         "keywords": ["white card bags", "custom white card bags", "white card bags printing hong kong", "white card bags free shipping", "white card bags USD", "bulk white card bags", "white card bags DHL", "bespoke white card bags", "white card bags wholesale", "white card bags pricing", "paper bag printing", "kraft paper bags", "shopping bags", "eco bags", "gift bags", "custom paper bags", "handle bags", "large paper bags", "recycled bags", "100pcs MOQ", "2h pickup", "48h turnaround", "50pcs MOQ", "free proof", "free design", "SF Express HK delivery", "wedding paper bag", "small batch paper bag", "affordable paper bag", "fast paper bag printing", "rope handle bag", "foil logo", "kraft paper bag", "eco paper bag", "white card bag", "boutique paper bag", "paper bag production", "paper bag factory", "custom paper bag"],
         "body": "ZprintPro White Card Bags for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Premium Custom, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -995,7 +995,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Gift Paper Bags | Foil Stamping | Free US Ship | ZprintPro",
-        "description": "Premium gift paper bags for boutiques and brands. 210-300g art card, ribbon or cotton handles, foil stamping. 100-MOQ. Free US shipping over $100, DHL. FSC.",
+        "description": "Premium gift paper bags for boutiques and brands. 210-300g art card, ribbon or cotton handles, foil stamping. 100-MOQ | Free Design | 100 MOQ",
         "h1": "Gift Paper Bags 100+ | Premium Ribbon | ZprintPro",
         "keywords": ["gift paper bags", "custom gift bags", "premium gift bags", "branded gift bags", "ribbon handle gift bags", "foil stamped gift bags", "gift bags free shipping", "bulk gift bags", "gift bags USD", "bespoke gift packaging", "paper bag printing", "kraft paper bags", "shopping bags", "eco bags", "gift bags", "custom paper bags", "handle bags", "white card bags", "large paper bags", "recycled bags", "100pcs MOQ", "2h pickup", "48h turnaround", "50pcs MOQ", "free proof", "free design", "SF Express HK delivery", "wedding paper bag", "small batch paper bag", "affordable paper bag", "fast paper bag printing", "rope handle bag", "foil logo", "kraft paper bag", "eco paper bag", "white card bag", "boutique paper bag", "paper bag production", "paper bag factory", "custom paper bag"],
         "body": "ZprintPro Custom Gift Paper Bag Printing for boutiques, jewelers, chocolatiers, and corporate gifting across US and global markets. 210-300g art card with soft-touch lamination, ribbon or cotton rope handles, foil stamping, magnetic closures. 100-bag MOQ, Free US shipping over $100, FSC certified."
@@ -1046,7 +1046,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Eco Paper Bags | FSC Recycled | Free US Ship | ZprintPro",
-        "description": "Eco-friendly paper bags for sustainable brands. 100% recycled or FSC kraft, soy inks, GOTS cotton. 100-MOQ. Free US shipping over $100, DHL. Carbon-neutral.",
+        "description": "Eco-friendly paper bags for sustainable brands. 100% recycled or FSC kraft, soy inks, GOTS cotton. 100-MOQ | Free Design | 100 MOQ",
         "h1": "Eco Paper Bags 100+ | FSC Recycled | ZprintPro",
         "keywords": ["eco paper bags", "eco friendly paper bags", "recycled paper bags", "FSC paper bags", "sustainable gift bags", "kraft paper bags eco", "compostable bags", "eco bags free shipping", "bulk eco bags", "bespoke eco packaging", "paper bag printing", "kraft paper bags", "shopping bags", "eco bags", "gift bags", "custom paper bags", "handle bags", "white card bags", "large paper bags", "recycled bags", "100pcs MOQ", "2h pickup", "48h turnaround", "50pcs MOQ", "free proof", "free design", "SF Express HK delivery", "wedding paper bag", "small batch paper bag", "affordable paper bag", "fast paper bag printing", "rope handle bag", "foil logo", "kraft paper bag", "eco paper bag", "white card bag", "boutique paper bag", "paper bag production", "paper bag factory", "custom paper bag"],
         "body": "ZprintPro Eco Paper Bag Printing for organic food retailers, sustainable fashion, clean beauty, and zero-waste brands across US and global markets. 100% recycled or FSC-certified kraft with GOTS organic cotton handles, soy inks, water-based coatings. 100-bag MOQ, Free US shipping over $100, carbon-neutral offset."
@@ -1097,7 +1097,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Handle Paper Bags | 11 Colors | Free US Ship | ZprintPro",
-        "description": "Custom handle paper bags for retail. 120-200g kraft, cotton rope or flat handles, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC. Quote.",
+        "description": "Custom handle paper bags for retail. 120-200g kraft, cotton rope or flat handles, 4-color CMYK. 100-MOQ | Free Design | 100 MOQ",
         "h1": "Handle Paper Bags 100+ | Cotton Rope | ZprintPro",
         "keywords": ["handle paper bags", "paper bags with handles", "cotton rope handle bags", "custom paper bags retail", "shopping paper bags", "flat handle bags", "paper bags free shipping", "bulk paper bags", "paper bags USD", "bespoke shopping bags", "paper bag printing", "kraft paper bags", "shopping bags", "eco bags", "gift bags", "custom paper bags", "handle bags", "white card bags", "large paper bags", "recycled bags", "100pcs MOQ", "2h pickup", "48h turnaround", "50pcs MOQ", "free proof", "free design", "SF Express HK delivery", "wedding paper bag", "small batch paper bag", "affordable paper bag", "fast paper bag printing", "rope handle bag", "foil logo", "kraft paper bag", "eco paper bag", "white card bag", "boutique paper bag", "paper bag production", "paper bag factory", "custom paper bag"],
         "body": "ZprintPro Custom Handle Paper Bag Printing for retail, apparel, gift shops, cafés, and takeaways across US and global markets. 120-200g brown or white kraft with 11 cotton rope colors, paper rope, or flat handles in S/M/L/XL sizes. 100-bag MOQ, Free US shipping over $100, FSC certified, 3-5 day rush available."
@@ -1148,7 +1148,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Small Bags | Premium Custom | Free US Ship | ZprintPro",
-        "description": "Custom small bags from ZprintPro Hong Kong. Premium Custom, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified. Quote tod",
+        "description": "Custom small bags from ZprintPro Hong Kong. Premium Custom, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Small Bags 100+ | Premium Custom | ZprintPro",
         "keywords": ["small paper bags","custom small bags","small bags printing hong kong","small bags free shipping","small bags USD","bulk small bags","small bags DHL","bespoke small bags","small bags wholesale","small bags pricing"],
         "body": "ZprintPro Small Bags for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Premium Custom, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -1198,7 +1198,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Large Paper Bags | 12-20kg Load | Free US Ship | ZprintPro",
-        "description": "Large reinforced paper bags for apparel and gifts. 200-300g kraft, 12-20kg load. 100-MOQ. Free US shipping over $100, DHL Express. FSC certified. Order today.",
+        "description": "Large reinforced paper bags for apparel and gifts. 200-300g kraft, 12-20kg load. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Large Paper Bags 100+ | Heavy-Duty | ZprintPro",
         "keywords": ["large paper bags", "oversized paper bags", "heavy duty paper bags", "apparel shopping bags", "gift hamper bags", "twin pack bags", "large kraft bags", "paper bags free shipping", "bulk large bags", "bespoke large packaging", "paper bag printing", "kraft paper bags", "shopping bags", "eco bags", "gift bags", "custom paper bags", "handle bags", "white card bags", "recycled bags", "100pcs MOQ", "2h pickup", "48h turnaround", "50pcs MOQ", "free proof", "free design", "SF Express HK delivery", "wedding paper bag", "small batch paper bag", "affordable paper bag", "fast paper bag printing", "rope handle bag", "foil logo", "kraft paper bag", "eco paper bag", "white card bag", "boutique paper bag", "paper bag production", "paper bag factory", "custom paper bag"],
         "body": "ZprintPro Large Paper Bag Printing for apparel brands, footwear retailers, gift hampers, home goods, and corporate gifting across US and global markets. 200-300g reinforced kraft with twin cotton rope handles, double-glued base, and gusseted sides supporting 12-20kg. 100-bag MOQ, Free US shipping over $100, FSC certified."
@@ -1250,7 +1250,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "A4 Flyers 100+ | Same-Day CMYK | Free US Ship | ZprintPro",
-        "description": "A4 flyer printing for events. 128g-300g gloss paper, double-sided CMYK. 100-MOQ, same-day 500+. Free US shipping over $100, DHL Express. FSC. Get a quote.",
+        "description": "A4 flyer printing for events. 128g-300g gloss paper, double-sided CMYK. 100-MOQ, same-day 500+. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "A4 Flyers 100+ | Same-Day CMYK | ZprintPro",
         "keywords": ["a4 flyers", "custom a4 flyers", "a4 flyer printing", "double sided flyers", "a4 flyers same day", "cheap a4 flyers bulk", "a4 flyers free shipping", "flyers USD", "real estate flyers", "bespoke flyers UK", "flyer printing", "leaflet printing", "A4 flyers", "A5 flyers", "custom flyers", "bulk flyers", "color flyers", "folded flyers", "promotional flyers", "same day flyers", "2h express print", "from HK$0.5", "free layout", "same day shipping", "same day pickup", "same day design", "foil certificate", "award certificate printing", "same day", "security paper"],
         "body": "ZprintPro Custom A4 Flyer Printing for product launches, real estate, events, and restaurants across the US and global markets. 128g-300g gloss or matte art paper with double-sided full-color CMYK. 100-flyer MOQ, same-day available for 500+, Free US shipping over $100."
@@ -1302,7 +1302,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "A5 Flyers | Same-Day Printing | Free US Ship | ZprintPro",
-        "description": "Custom a5 flyers from ZprintPro Hong Kong. Same-Day Printing, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom a5 flyers from ZprintPro Hong Kong. Same-Day Printing, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "A5 Flyers 100+ | Same-Day Printing | ZprintPro",
         "keywords": ["a5 flyers", "custom a5 flyers", "a5 flyers printing hong kong", "a5 flyers free shipping", "a5 flyers USD", "bulk a5 flyers", "a5 flyers DHL", "bespoke a5 flyers", "a5 flyers wholesale", "a5 flyers pricing", "flyer printing", "leaflet printing", "A4 flyers", "A5 flyers", "custom flyers", "bulk flyers", "color flyers", "folded flyers", "promotional flyers", "same day flyers", "2h express print", "from HK$0.5", "free layout", "same day shipping", "same day pickup", "same day design", "foil certificate", "award certificate printing", "same day", "security paper"],
         "body": "ZprintPro A5 Flyers for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Same-Day Printing, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -1353,7 +1353,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Double-sided Flyers | Same-Day Printing | ZprintPro",
-        "description": "Custom double-sided flyers from ZprintPro Hong Kong. Same-Day Printing, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certif.",
+        "description": "Custom double-sided flyers from ZprintPro Hong Kong. Same-Day Printing, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Double-sided Flyers 100+ | ZprintPro",
         "keywords": ["double-sided flyers", "custom double sided flyers", "double sided flyers printing hong kong", "double-sided flyers free shipping", "double-sided flyers USD", "bulk double-sided flyers", "double-sided flyers DHL", "bespoke double-sided flyers", "custom double-sided flyers", "double sided flyers wholesale", "flyer printing", "leaflet printing", "A4 flyers", "A5 flyers", "custom flyers", "bulk flyers", "color flyers", "folded flyers", "promotional flyers", "same day flyers", "2h express print", "from HK$0.5", "free layout", "same day shipping", "same day pickup", "same day design", "foil certificate", "award certificate printing", "same day", "security paper"],
         "body": "ZprintPro Double-sided Flyers for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Same-Day Printing, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -1403,7 +1403,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Folded Leaflets | Tri-Fold Design | Free US Ship | ZprintPro",
-        "description": "Custom folded leaflets from ZprintPro Hong Kong. Tri-Fold Design, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom folded leaflets from ZprintPro Hong Kong. Tri-Fold Design, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Folded Leaflets 100+ | Tri-Fold Design | ZprintPro",
         "keywords": ["folded leaflets", "custom folded leaflets", "folded leaflets printing hong kong", "folded leaflets free shipping", "folded leaflets USD", "bulk folded leaflets", "folded leaflets DHL", "bespoke folded leaflets", "folded leaflets wholesale", "folded leaflets pricing", "flyer printing", "leaflet printing", "A4 flyers", "A5 flyers", "custom flyers", "bulk flyers", "color flyers", "folded flyers", "promotional flyers", "same day flyers", "2h express print", "from HK$0.5", "free layout", "same day shipping", "same day pickup", "same day design", "foil certificate", "award certificate printing", "same day", "security paper"],
         "body": "ZprintPro Folded Leaflets for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Tri-Fold Design, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -1453,7 +1453,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Thick Paper Flyers | Same-Day Printing | ZprintPro",
-        "description": "Custom thick paper flyers from ZprintPro Hong Kong. Same-Day Printing, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certifi.",
+        "description": "Custom thick paper flyers from ZprintPro Hong Kong. Same-Day Printing, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Thick Paper Flyers 100+ | ZprintPro",
         "keywords": ["thick paper flyers", "custom thick paper flyers", "thick paper flyers printing hong kong", "thick paper flyers free shipping", "thick paper flyers USD", "bulk thick paper flyers", "thick paper flyers DHL", "bespoke thick paper flyers", "thick paper flyers wholesale", "thick paper flyers pricing", "flyer printing", "leaflet printing", "A4 flyers", "A5 flyers", "custom flyers", "bulk flyers", "color flyers", "folded flyers", "promotional flyers", "same day flyers", "2h express print", "from HK$0.5", "free layout", "same day shipping", "same day pickup", "same day design", "foil certificate", "award certificate printing", "same day", "security paper"],
         "body": "ZprintPro Thick Paper Flyers for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Same-Day Printing, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -1504,7 +1504,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Same-day Flyers | Same-Day Printing | Free US Ship | ZprintPro",
-        "description": "Custom same-day flyers from ZprintPro Hong Kong. Same-Day Printing, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom same-day flyers from ZprintPro Hong Kong. Same-Day Printing, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Same-day Flyers 100+ | ZprintPro",
         "keywords": ["same day flyers", "custom same day flyers", "same day flyers printing hong kong", "same-day flyers free shipping", "same-day flyers USD", "bulk same-day flyers", "same-day flyers DHL", "bespoke same-day flyers", "custom same-day flyers", "same day flyers wholesale", "flyer printing", "leaflet printing", "A4 flyers", "A5 flyers", "custom flyers", "bulk flyers", "color flyers", "folded flyers", "promotional flyers", "2h express print", "from HK$0.5", "free layout", "same day shipping", "same day pickup", "same day design", "foil certificate", "award certificate printing", "same day", "security paper"],
         "body": "ZprintPro Same-day Flyers for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Same-Day Printing, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -1554,7 +1554,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Eco Flyers | Same-Day Printing | Free US Ship | ZprintPro",
-        "description": "Custom eco flyers from ZprintPro Hong Kong. Same-Day Printing, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom eco flyers from ZprintPro Hong Kong. Same-Day Printing, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Eco Flyers 100+ | Same-Day Printing | ZprintPro",
         "keywords": ["eco flyers", "custom eco flyers", "eco flyers printing hong kong", "eco flyers free shipping", "eco flyers USD", "bulk eco flyers", "eco flyers DHL", "bespoke eco flyers", "eco flyers wholesale", "eco flyers pricing", "flyer printing", "leaflet printing", "A4 flyers", "A5 flyers", "custom flyers", "bulk flyers", "color flyers", "folded flyers", "promotional flyers", "same day flyers", "2h express print", "from HK$0.5", "free layout", "same day shipping", "same day pickup", "same day design", "foil certificate", "award certificate printing", "same day", "security paper"],
         "body": "ZprintPro Eco Flyers for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Same-Day Printing, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -1657,7 +1657,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "A1 Posters | 594x841mm | Free US Ship | ZprintPro",
-        "description": "A1 posters (594x841mm) for retail and trade shows. 200-300g matte or photo paper. 50-MOQ. Free US shipping over $100, DHL Express. Mounting included. Quote.",
+        "description": "A1 posters (594x841mm) for retail and trade shows. 200-300g matte or photo paper. 50-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "A1 Posters 50+ | Trade Show | ZprintPro",
         "keywords": ["A1 posters", "A1 poster printing", "594x841 posters", "large posters", "trade show posters", "movie posters A1", "window posters", "A1 posters free shipping", "bulk A1 posters", "bespoke A1 signage", "poster printing", "A2 posters", "outdoor posters", "exhibition posters", "large format printing", "waterproof posters", "display posters", "event posters", "retail posters", "24h poster printing", "2h express print", "A0 poster", "A1 poster", "A2 poster", "promo poster", "homework poster", "same day shipping", "same day design", "wedding poster printing", "wedding photo wall", "wedding photo poster", "student poster printing", "photo poster", "photo poster printing", "event poster printing", "poster price", "poster layout", "poster design printing", "festival decoration", "presentation poster", "welcome sign printing", "restaurant poster printing"],
         "body": "ZprintPro A1 Poster Printing (594x841mm) for retail windows, movie and entertainment, art galleries, trade shows, real estate, and corporate offices across US and global markets. 200-300g matte, photo paper, or premium matte with mounting on foam board, gator board, or sintra. 50-poster MOQ, Free US shipping over $100."
@@ -1709,7 +1709,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Outdoor Posters | UV Resistant | Free US Ship | ZprintPro",
-        "description": "Outdoor posters for storefronts and events. PVC banner, vinyl, weatherproof. 50-MOQ. Free US shipping over $100, DHL Express. 6-12 month fade resistance.",
+        "description": "Outdoor posters for storefronts and events. PVC banner, vinyl, weatherproof. 50-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Outdoor Posters 50+ | UV Resistant | ZprintPro",
         "keywords": ["outdoor posters", "weatherproof posters", "PVC banner posters", "vinyl outdoor signs", "construction posters", "event outdoor signage", "UV resistant posters", "outdoor posters free shipping", "bulk outdoor posters", "bespoke outdoor signage", "poster printing", "A1 posters", "A2 posters", "exhibition posters", "large format printing", "waterproof posters", "display posters", "event posters", "retail posters", "24h poster printing", "2h express print", "A0 poster", "A1 poster", "A2 poster", "promo poster", "homework poster", "same day shipping", "same day design", "wedding poster printing", "wedding photo wall", "wedding photo poster", "student poster printing", "photo poster", "photo poster printing", "event poster printing", "poster price", "poster layout", "poster design printing", "festival decoration", "presentation poster", "welcome sign printing", "restaurant poster printing"],
         "body": "ZprintPro Outdoor Poster Printing for storefronts, construction sites, events, sports venues, political campaigns, and tourism across US and global markets. PVC banner, vinyl sticker, weatherproof paper, or mesh banner with UV lamination for 6-12 month fade resistance. 50-poster MOQ, Free US shipping over $100, free grommet installation."
@@ -1760,7 +1760,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Display Posters | Foam Board | Free US Ship | ZprintPro",
-        "description": "Display posters on foam board or gator board for trade shows. 50-MOQ. Free US shipping over $100, DHL Express. Mounting and lamination included. Get a quote.",
+        "description": "Display posters on foam board or gator board for trade shows. 50-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Display Posters 50+ | Foam & Gator | ZprintPro",
         "keywords": ["display posters", "foam board posters", "gator board prints", "trade show posters", "retail display posters", "event booth signs", "mounted posters", "display posters free shipping", "bulk display posters", "bespoke display signs", "poster printing", "A1 posters", "A2 posters", "outdoor posters", "exhibition posters", "large format printing", "waterproof posters", "event posters", "retail posters", "24h poster printing", "2h express print", "A0 poster", "A1 poster", "A2 poster", "promo poster", "homework poster", "same day shipping", "same day design", "wedding poster printing", "wedding photo wall", "wedding photo poster", "student poster printing", "photo poster", "photo poster printing", "event poster printing", "poster price", "poster layout", "poster design printing", "festival decoration", "presentation poster", "welcome sign printing", "restaurant poster printing"],
         "body": "ZprintPro Display Poster Printing for trade show exhibitors, retail pop-ups, event companies, corporate conferences, and product launches across US and global markets. Foam board, gator board, or PVC sintra mounting with lamination standard. 50-poster MOQ, Free US shipping over $100, free booth layout service."
@@ -1862,7 +1862,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Adhesive Posters | Peel & Stick | Free US Ship | ZprintPro",
-        "description": "Peel-and-stick adhesive posters for windows, walls, vehicles. Vinyl, clear, fabric. 50-MOQ. Free US shipping over $100, DHL Express. CMYK + white ink option.",
+        "description": "Peel-and-stick adhesive posters for windows, walls, vehicles. Vinyl, clear, fabric. 50-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Adhesive Posters 50+ | Vinyl Decals | ZprintPro",
         "keywords": ["adhesive posters", "peel and stick posters", "window decals", "wall stickers custom", "vinyl posters", "vehicle decals", "removable wall art", "adhesive posters free shipping", "bulk adhesive prints", "bespoke wall murals", "poster printing", "A1 posters", "A2 posters", "outdoor posters", "exhibition posters", "large format printing", "waterproof posters", "display posters", "event posters", "retail posters", "24h poster printing", "2h express print", "A0 poster", "A1 poster", "A2 poster", "promo poster", "homework poster", "same day shipping", "same day design", "wedding poster printing", "wedding photo wall", "wedding photo poster", "student poster printing", "photo poster", "photo poster printing", "event poster printing", "poster price", "poster layout", "poster design printing", "festival decoration", "presentation poster", "welcome sign printing", "restaurant poster printing"],
         "body": "ZprintPro Adhesive Poster Printing for retail windows, vehicle advertising, event signage, corporate offices, restaurants, real estate, and home decor across US and global markets. White vinyl, clear vinyl, translucent vinyl, or fabric wallpaper with CMYK + white ink option. 50-poster MOQ, Free US shipping over $100, free installation guide."
@@ -1914,7 +1914,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Gift Boxes | Rigid Magnetic | Free US Ship | ZprintPro",
-        "description": "Custom gift boxes for premium brands. Rigid setup, folding carton, magnetic closure, foil stamping. 100-MOQ. Free US shipping over $100, DHL. FSC. Get a quote.",
+        "description": "Custom gift boxes for premium brands. Rigid setup, folding carton, magnetic closure, foil stamping. 100-MOQ | Free Design | 100 MOQ",
         "h1": "Gift Boxes 100+ | Rigid Magnetic | ZprintPro",
         "keywords": ["custom gift boxes", "rigid gift boxes", "folding carton boxes", "magnetic closure boxes", "luxury gift boxes", "foil stamped gift boxes", "premium packaging", "gift boxes free shipping", "bulk gift boxes", "bespoke gift packaging", "packaging box printing", "gift boxes", "cosmetic boxes", "food boxes", "mailer boxes", "corrugated boxes", "custom packaging", "rigid boxes", "folding cartons", "product boxes", "100pcs MOQ", "2-day turnaround", "FSC certified", "HK DOH compliance", "QR code packaging", "mid-autumn gift box printing", "health supplement packaging", "free proof", "free layout", "export packaging", "cosmetic packaging box", "instant quote", "compostable packaging", "small batch packaging box", "industrial packaging", "color box printing", "drawer color box", "sustainable packaging", "silver foil printing", "eco packaging box", "corrugated box", "corrugated box printing", "magnetic box", "gift color box", "window design", "festival packaging box", "green printing", "rush printing", "beauty packaging", "pharmaceutical packaging box", "moisture-proof packaging", "food-grade box"],
         "body": "ZprintPro Custom Gift Box Printing for jewelry, cosmetics, gourmet food, spirits, and corporate gifting across US and global markets. Rigid setup, folding carton, magnetic closure with foil stamping, embossing, and inside printing. 100-box MOQ, Free US shipping over $100, FSC certified, free dieline design."
@@ -1974,7 +1974,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "化粧品パッケージボックス 4 種類 100 個〜 | マグネット蓋・引き出し・ブック型 | ZprintPro",
-        "description": "化粧品パッケージボックス 100 個から対応. 4 種類 (天地蓋 / マグネット蓋 / 引き出し式 / ブック型) + 内装 EVA / 紙 / PET 吸塑カスタム. 箔押し + スポット UV + サテン裏地. 美容・スキンケアブランド、越境 EC、日本市場対応. ISO 9001 + FSC 認証. DHL 国際配送 2-4 日. 30 秒 AI 即時見積.",
+        "description": "化粧品パッケージボックス 100 個から対応. 4 種類 (天地蓋 / マグネット蓋 / 引き出し式 / ブック型) + 内装 EVA / 紙 / PET 吸塑カスタム. 箔押し + スポット UV + サテン裏地. 美容・スキンケアブランド、越境 EC、日本市場対応 | 無料デザイン | 100枚〜",
 
         "h1": "化粧品パッケージボックス — 4 種類 · 内装カスタム",
         "keywords": ["化粧品パッケージボックス", "化粧品箱", "コスメボックス", "スキンケアボックス", "カスタム箱型", "マグネット蓋", "引き出し式", "ブック型", "化粧品OEM", "香港 cosmetic packaging", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "香港衛生署", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
@@ -2021,7 +2021,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Food Boxes 100+ | Food-Grade | Free US Ship | ZprintPro",
-        "description": "Food boxes for pastries. 350g-400g food-grade card, PE/PLA lining. 100-MOQ, grease resistant. Free US shipping over $100, DHL. FDA, LFGB, SGS. Get a quote.",
+        "description": "Food boxes for pastries. 350g-400g food-grade card, PE/PLA lining. 100-MOQ, grease resistant. Free US shipping over $100, DHL | Free Design | 100 MOQ",
         "h1": "Food Boxes 100+ | Food-Grade | ZprintPro",
         "keywords": ["food boxes", "custom food boxes", "food packaging boxes", "food grade boxes", "takeout boxes custom", "bakery boxes wholesale", "food boxes free shipping", "bulk food packaging", "food boxes USD", "bespoke food packaging", "packaging box printing", "gift boxes", "cosmetic boxes", "mailer boxes", "corrugated boxes", "custom packaging", "rigid boxes", "folding cartons", "product boxes", "100pcs MOQ", "2-day turnaround", "FSC certified", "HK DOH compliance", "QR code packaging", "mid-autumn gift box printing", "health supplement packaging", "free proof", "free layout", "export packaging", "cosmetic packaging box", "instant quote", "compostable packaging", "small batch packaging box", "industrial packaging", "color box printing", "drawer color box", "sustainable packaging", "silver foil printing", "eco packaging box", "corrugated box", "corrugated box printing", "magnetic box", "gift color box", "window design", "festival packaging box", "green printing", "rush printing", "beauty packaging", "pharmaceutical packaging box", "moisture-proof packaging", "food-grade box"],
         "body": "ZprintPro Custom Food Packaging Box Printing for pastries, tea, health supplements, and gift packaging across the US and global markets. 350g-400g food-grade white card with PE or PLA biodegradable lining, window design, and foil-stamped logos. 100-box MOQ, Free US shipping over $100, FDA, LFGB, SGS certified."
@@ -2073,7 +2073,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Mailer Boxes | E-Commerce | Free US Ship | ZprintPro",
-        "description": "Mailer boxes for e-commerce. Self-locking, 70% storage save, kraft or white. 100-MOQ. Free US shipping over $100, DHL Express. FSC certified. Get a quote.",
+        "description": "Mailer boxes for e-commerce. Self-locking, 70% storage save, kraft or white. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Mailer Boxes 100+ | Self-Lock | ZprintPro",
         "keywords": ["mailer boxes", "e-commerce mailers", "self locking boxes", "corrugated mailers", "folding carton mailers", "DTC shipping boxes", "subscription boxes", "mailer boxes free shipping", "bulk mailers", "bespoke shipping boxes", "packaging box printing", "gift boxes", "cosmetic boxes", "food boxes", "corrugated boxes", "custom packaging", "rigid boxes", "folding cartons", "product boxes", "100pcs MOQ", "2-day turnaround", "FSC certified", "HK DOH compliance", "QR code packaging", "mid-autumn gift box printing", "health supplement packaging", "free proof", "free layout", "export packaging", "cosmetic packaging box", "instant quote", "compostable packaging", "small batch packaging box", "industrial packaging", "color box printing", "drawer color box", "sustainable packaging", "silver foil printing", "eco packaging box", "corrugated box", "corrugated box printing", "magnetic box", "gift color box", "window design", "festival packaging box", "green printing", "rush printing", "beauty packaging", "pharmaceutical packaging box", "moisture-proof packaging", "food-grade box"],
         "body": "ZprintPro Mailer Box Printing for DTC e-commerce brands shipping apparel, beauty, food, electronics, home goods, and subscription services across US and global markets. Self-locking tuck-front design, 5-second assembly, no tape needed. 100-box MOQ, Free US shipping over $100, FSC certified."
@@ -2175,7 +2175,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Rigid Boxes | Luxury Setup | Free US Ship | ZprintPro",
-        "description": "Luxury rigid setup boxes. 800-1500gsm greyboard, magnetic closure, leatherette. 250-MOQ. Free US shipping over $100, DHL Express. 10-15 day production. Quote.",
+        "description": "Luxury rigid setup boxes. 800-1500gsm greyboard, magnetic closure, leatherette. 250-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Rigid Boxes 250+ | Magnetic Closure | ZprintPro",
         "keywords": ["rigid boxes", "rigid setup boxes", "luxury packaging boxes", "magnetic closure boxes", "leatherette boxes", "jewelry boxes", "premium gift boxes", "rigid boxes free shipping", "bulk rigid boxes", "bespoke rigid packaging", "packaging box printing", "gift boxes", "cosmetic boxes", "food boxes", "mailer boxes", "corrugated boxes", "custom packaging", "folding cartons", "product boxes", "100pcs MOQ", "2-day turnaround", "FSC certified", "HK DOH compliance", "QR code packaging", "mid-autumn gift box printing", "health supplement packaging", "free proof", "free layout", "export packaging", "cosmetic packaging box", "instant quote", "compostable packaging", "small batch packaging box", "industrial packaging", "color box printing", "drawer color box", "sustainable packaging", "silver foil printing", "eco packaging box", "corrugated box", "corrugated box printing", "magnetic box", "gift color box", "window design", "festival packaging box", "green printing", "rush printing", "beauty packaging", "pharmaceutical packaging box", "moisture-proof packaging", "food-grade box"],
         "body": "ZprintPro Rigid Setup Box Printing for jewelry, watches, premium spirits, luxury cosmetics, gourmet food, and corporate awards across US and global markets. 800-1500gsm greyboard wrapped in art paper, specialty paper, or leatherette with foil, embossing, and magnetic closures. 250-box MOQ, Free US shipping over $100, 10-15 day production."
@@ -2227,7 +2227,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Foil Red Packets | Gold Foil Print | Free US Ship | ZprintPro",
-        "description": "Custom foil red packets from ZprintPro Hong Kong. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom foil red packets from ZprintPro Hong Kong. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Foil Red Packets 100+ | ZprintPro",
         "keywords": ["foil red packets", "custom foil red packets", "foil red packets printing hong kong", "foil red packets free shipping", "foil red packets USD", "bulk foil red packets", "foil red packets DHL", "bespoke foil red packets", "foil red packets wholesale", "foil red packets pricing", "red packet printing", "CNY red packets", "lai see", "wedding invitations", "Christmas cards", "Chinese New Year cards", "custom red packets", "embossed red packets", "greeting cards", "100pcs MOQ", "24h turnaround", "2h pickup", "50pcs MOQ", "from HK$0.5", "UV wedding card", "free proof", "free design", "same day shipping", "wedding card design printing", "wedding card design", "thank you card printing", "foil red packet", "foil wedding card", "same day print", "ribbon hole envelope"],
         "body": "ZprintPro Foil Red Packets for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Gold Foil Print, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -2277,7 +2277,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Embossed Red Packets | Gold Foil Print | ZprintPro",
-        "description": "Custom embossed red packets from ZprintPro Hong Kong. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certifi.",
+        "description": "Custom embossed red packets from ZprintPro Hong Kong. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Embossed Red Packets 100+ | ZprintPro",
         "keywords": ["embossed red packets", "custom embossed red packets", "embossed red packets printing hong kong", "embossed red packets free shipping", "embossed red packets USD", "bulk embossed red packets", "embossed red packets DHL", "bespoke embossed red packets", "embossed red packets wholesale", "embossed red packets pricing", "red packet printing", "CNY red packets", "lai see", "wedding invitations", "Christmas cards", "Chinese New Year cards", "foil red packets", "custom red packets", "greeting cards", "100pcs MOQ", "24h turnaround", "2h pickup", "50pcs MOQ", "from HK$0.5", "UV wedding card", "free proof", "free design", "same day shipping", "wedding card design printing", "wedding card design", "thank you card printing", "foil red packet", "foil wedding card", "same day print", "ribbon hole envelope"],
         "body": "ZprintPro Embossed Red Packets for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Gold Foil Print, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -2328,7 +2328,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Custom Red Packets | Gold Foil Print | ZprintPro",
-        "description": "Custom custom red packets from ZprintPro Hong Kong. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom custom red packets from ZprintPro Hong Kong. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Custom Red Packets 100+ | ZprintPro",
         "keywords": ["custom red packets", "custom custom red packets", "custom red packets printing hong kong", "custom red packets free shipping", "custom red packets USD", "bulk custom red packets", "custom red packets DHL", "bespoke custom red packets", "custom red packets wholesale", "custom red packets pricing", "red packet printing", "CNY red packets", "lai see", "wedding invitations", "Christmas cards", "Chinese New Year cards", "foil red packets", "embossed red packets", "greeting cards", "100pcs MOQ", "24h turnaround", "2h pickup", "50pcs MOQ", "from HK$0.5", "UV wedding card", "free proof", "free design", "same day shipping", "wedding card design printing", "wedding card design", "thank you card printing", "foil red packet", "foil wedding card", "same day print", "ribbon hole envelope"],
         "body": "ZprintPro Custom Red Packets for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Gold Foil Print, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -2378,7 +2378,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Cartoon Red Packets | Gold Foil Print | ZprintPro",
-        "description": "Custom cartoon red packets from ZprintPro Hong Kong. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom cartoon red packets from ZprintPro Hong Kong. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Cartoon Red Packets 100+ | ZprintPro",
         "keywords": ["cartoon red packets", "custom cartoon red packets", "cartoon red packets printing hong kong", "cartoon red packets free shipping", "cartoon red packets USD", "bulk cartoon red packets", "cartoon red packets DHL", "bespoke cartoon red packets", "cartoon red packets wholesale", "cartoon red packets pricing", "red packet printing", "CNY red packets", "lai see", "wedding invitations", "Christmas cards", "Chinese New Year cards", "foil red packets", "custom red packets", "embossed red packets", "greeting cards", "100pcs MOQ", "24h turnaround", "2h pickup", "50pcs MOQ", "from HK$0.5", "UV wedding card", "free proof", "free design", "same day shipping", "wedding card design printing", "wedding card design", "thank you card printing", "foil red packet", "foil wedding card", "same day print", "ribbon hole envelope"],
         "body": "ZprintPro Cartoon Red Packets for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Gold Foil Print, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -2428,7 +2428,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Eco Red Packets | Gold Foil Print | Free US Ship | ZprintPro",
-        "description": "Custom eco red packets from ZprintPro Hong Kong. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom eco red packets from ZprintPro Hong Kong. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Eco Red Packets 100+ | Gold Foil Print | ZprintPro",
         "keywords": ["eco red packets", "custom eco red packets", "eco red packets printing hong kong", "eco red packets free shipping", "eco red packets USD", "bulk eco red packets", "eco red packets DHL", "bespoke eco red packets", "eco red packets wholesale", "eco red packets pricing", "red packet printing", "CNY red packets", "lai see", "wedding invitations", "Christmas cards", "Chinese New Year cards", "foil red packets", "custom red packets", "embossed red packets", "greeting cards", "100pcs MOQ", "24h turnaround", "2h pickup", "50pcs MOQ", "from HK$0.5", "UV wedding card", "free proof", "free design", "same day shipping", "wedding card design printing", "wedding card design", "thank you card printing", "foil red packet", "foil wedding card", "same day print", "ribbon hole envelope"],
         "body": "ZprintPro Eco Red Packets for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Gold Foil Print, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -2478,7 +2478,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Large Red Packets | Gold Foil Print | Free US Ship | ZprintPro",
-        "description": "Custom large red packets from ZprintPro Hong Kong. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom large red packets from ZprintPro Hong Kong. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Large Red Packets 100+ | ZprintPro",
         "keywords": ["large red packets", "custom large red packets", "large red packets printing hong kong", "large red packets free shipping", "large red packets USD", "bulk large red packets", "large red packets DHL", "bespoke large red packets", "large red packets wholesale", "large red packets pricing", "red packet printing", "CNY red packets", "lai see", "wedding invitations", "Christmas cards", "Chinese New Year cards", "foil red packets", "custom red packets", "embossed red packets", "greeting cards", "100pcs MOQ", "24h turnaround", "2h pickup", "50pcs MOQ", "from HK$0.5", "UV wedding card", "free proof", "free design", "same day shipping", "wedding card design printing", "wedding card design", "thank you card printing", "foil red packet", "foil wedding card", "same day print", "ribbon hole envelope"],
         "body": "ZprintPro Large Red Packets for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Gold Foil Print, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -2529,7 +2529,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Wall Calendars | Wire-Bound Spiral | Free US Ship | ZprintPro",
-        "description": "Custom wall calendars from ZprintPro Hong Kong. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom wall calendars from ZprintPro Hong Kong. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Wall Calendars 100+ | ZprintPro",
         "keywords": ["wall calendars", "custom wall calendars", "wall calendars printing hong kong", "wall calendars free shipping", "wall calendars USD", "bulk wall calendars", "wall calendars DHL", "bespoke wall calendars", "wall calendars wholesale", "wall calendars pricing", "calendar printing", "desk calendars", "2027 calendars", "custom calendars", "corporate calendars", "mini calendars", "photo calendars", "eco calendars", "flip calendars", "2026 desktop calendar", "A5 daily calendar", "corporate wall calendar custom", "desktop calendar printing", "eco wall calendar", "festive calendar"],
         "body": "ZprintPro Wall Calendars for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Wire-Bound Spiral, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -2580,7 +2580,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Desk Calendars | Wire-Bound Spiral | Free US Ship | ZprintPro",
-        "description": "Custom desk calendars from ZprintPro Hong Kong. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom desk calendars from ZprintPro Hong Kong. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Desk Calendars 100+ | ZprintPro",
         "keywords": ["desk calendars", "custom desk calendars", "desk calendars printing hong kong", "desk calendars free shipping", "desk calendars USD", "bulk desk calendars", "desk calendars DHL", "bespoke desk calendars", "desk calendars wholesale", "desk calendars pricing", "calendar printing", "wall calendars", "2027 calendars", "custom calendars", "corporate calendars", "mini calendars", "photo calendars", "eco calendars", "flip calendars", "2026 desktop calendar", "A5 daily calendar", "corporate wall calendar custom", "desktop calendar printing", "eco wall calendar", "festive calendar"],
         "body": "ZprintPro Desk Calendars for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Wire-Bound Spiral, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -2630,7 +2630,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Custom Calendars | Wire-Bound Spiral | ZprintPro",
-        "description": "Custom custom calendars from ZprintPro Hong Kong. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom custom calendars from ZprintPro Hong Kong. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Custom Calendars 100+ | ZprintPro",
         "keywords": ["custom calendars", "custom custom calendars", "custom calendars printing hong kong", "custom calendars free shipping", "custom calendars USD", "bulk custom calendars", "custom calendars DHL", "bespoke custom calendars", "custom calendars wholesale", "custom calendars pricing", "calendar printing", "wall calendars", "desk calendars", "2027 calendars", "corporate calendars", "mini calendars", "photo calendars", "eco calendars", "flip calendars", "2026 desktop calendar", "A5 daily calendar", "corporate wall calendar custom", "desktop calendar printing", "eco wall calendar", "festive calendar"],
         "body": "ZprintPro Custom Calendars for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Wire-Bound Spiral, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -2680,7 +2680,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Mini Calendars | Wire-Bound Spiral | Free US Ship | ZprintPro",
-        "description": "Custom mini calendars from ZprintPro Hong Kong. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom mini calendars from ZprintPro Hong Kong. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Mini Calendars 100+ | ZprintPro",
         "keywords": ["mini calendars", "custom mini calendars", "mini calendars printing hong kong", "mini calendars free shipping", "mini calendars USD", "bulk mini calendars", "mini calendars DHL", "bespoke mini calendars", "mini calendars wholesale", "mini calendars pricing", "calendar printing", "wall calendars", "desk calendars", "2027 calendars", "custom calendars", "corporate calendars", "photo calendars", "eco calendars", "flip calendars", "2026 desktop calendar", "A5 daily calendar", "corporate wall calendar custom", "desktop calendar printing", "eco wall calendar", "festive calendar"],
         "body": "ZprintPro Mini Calendars for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Wire-Bound Spiral, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -2730,7 +2730,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Photo Frame Calendars | Wire-Bound Spiral | ZprintPro",
-        "description": "Custom photo frame calendars from ZprintPro Hong Kong. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 cert.",
+        "description": "Custom photo frame calendars from ZprintPro Hong Kong. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Photo Frame Calendars 100+ | ZprintPro",
         "keywords": ["photo frame calendars", "custom photo frame calendars", "photo frame calendars printing hong kong", "photo frame calendars free shipping", "photo frame calendars USD", "bulk photo frame calendars", "photo frame calendars DHL", "bespoke photo frame calendars", "photo frame calendars wholesale", "photo frame calendars pricing", "calendar printing", "wall calendars", "desk calendars", "2027 calendars", "custom calendars", "corporate calendars", "mini calendars", "photo calendars", "eco calendars", "flip calendars", "2026 desktop calendar", "A5 daily calendar", "corporate wall calendar custom", "desktop calendar printing", "eco wall calendar", "festive calendar"],
         "body": "ZprintPro Photo Frame Calendars for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Wire-Bound Spiral, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -2780,7 +2780,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Magnetic Calendars | Wire-Bound Spiral | ZprintPro",
-        "description": "Custom magnetic calendars from ZprintPro Hong Kong. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certifi.",
+        "description": "Custom magnetic calendars from ZprintPro Hong Kong. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Magnetic Calendars 100+ | ZprintPro",
         "keywords": ["magnetic calendars", "custom magnetic calendars", "magnetic calendars printing hong kong", "magnetic calendars free shipping", "magnetic calendars USD", "bulk magnetic calendars", "magnetic calendars DHL", "bespoke magnetic calendars", "magnetic calendars wholesale", "magnetic calendars pricing", "calendar printing", "wall calendars", "desk calendars", "2027 calendars", "custom calendars", "corporate calendars", "mini calendars", "photo calendars", "eco calendars", "flip calendars", "2026 desktop calendar", "A5 daily calendar", "corporate wall calendar custom", "desktop calendar printing", "eco wall calendar", "festive calendar"],
         "body": "ZprintPro Magnetic Calendars for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Wire-Bound Spiral, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -2831,7 +2831,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "PVC Menus | Laminated Durable | Free US Ship | ZprintPro",
-        "description": "Custom pvc menus from ZprintPro Hong Kong. Laminated Durable, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom pvc menus from ZprintPro Hong Kong. Laminated Durable, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "PVC Menus 100+ | Laminated Durable | ZprintPro",
         "keywords": ["pvc menus", "custom pvc menus", "pvc menus printing hong kong", "pvc menus free shipping", "pvc menus USD", "bulk pvc menus", "pvc menus DHL", "bespoke pvc menus", "pvc menus wholesale", "pvc menus pricing", "menu printing", "restaurant menus", "waterproof menus", "PVC menus", "custom menus", "takeout menus", "drink menus", "laminated menus", "disposable menus", "catering menus"],
         "body": "ZprintPro PVC Menus for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Laminated Durable, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -2882,7 +2882,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Laminated Menus | Laminated Durable | Free US Ship | ZprintPro",
-        "description": "Custom laminated menus from ZprintPro Hong Kong. Laminated Durable, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom laminated menus from ZprintPro Hong Kong. Laminated Durable, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Laminated Menus 100+ | ZprintPro",
         "keywords": ["laminated menus", "custom laminated menus", "laminated menus printing hong kong", "laminated menus free shipping", "laminated menus USD", "bulk laminated menus", "laminated menus DHL", "bespoke laminated menus", "laminated menus wholesale", "laminated menus pricing", "menu printing", "restaurant menus", "waterproof menus", "PVC menus", "custom menus", "takeout menus", "drink menus", "disposable menus", "catering menus"],
         "body": "ZprintPro Laminated Menus for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Laminated Durable, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -2933,7 +2933,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Hardcover Menus | Laminated Durable | Free US Ship | ZprintPro",
-        "description": "Custom hardcover menus from ZprintPro Hong Kong. Laminated Durable, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom hardcover menus from ZprintPro Hong Kong. Laminated Durable, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Hardcover Menus 100+ | ZprintPro",
         "keywords": ["hardcover menus", "custom hardcover menus", "hardcover menus printing hong kong", "hardcover menus free shipping", "hardcover menus USD", "bulk hardcover menus", "hardcover menus DHL", "bespoke hardcover menus", "hardcover menus wholesale", "hardcover menus pricing", "menu printing", "restaurant menus", "waterproof menus", "PVC menus", "custom menus", "takeout menus", "drink menus", "laminated menus", "disposable menus", "catering menus"],
         "body": "ZprintPro Hardcover Menus for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Laminated Durable, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -2983,7 +2983,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Drink Menus | Laminated Durable | Free US Ship | ZprintPro",
-        "description": "Custom drink menus from ZprintPro Hong Kong. Laminated Durable, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom drink menus from ZprintPro Hong Kong. Laminated Durable, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Drink Menus 100+ | Laminated Durable | ZprintPro",
         "keywords": ["drink menus", "custom drink menus", "drink menus printing hong kong", "drink menus free shipping", "drink menus USD", "bulk drink menus", "drink menus DHL", "bespoke drink menus", "drink menus wholesale", "drink menus pricing", "menu printing", "restaurant menus", "waterproof menus", "PVC menus", "custom menus", "takeout menus", "laminated menus", "disposable menus", "catering menus"],
         "body": "ZprintPro Drink Menus for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Laminated Durable, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -3033,7 +3033,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Disposable Menus | Laminated Durable | ZprintPro",
-        "description": "Custom disposable menus from ZprintPro Hong Kong. Laminated Durable, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom disposable menus from ZprintPro Hong Kong. Laminated Durable, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Disposable Menus 100+ | ZprintPro",
         "keywords": ["disposable menus", "custom disposable menus", "disposable menus printing hong kong", "disposable menus free shipping", "disposable menus USD", "bulk disposable menus", "disposable menus DHL", "bespoke disposable menus", "disposable menus wholesale", "disposable menus pricing", "menu printing", "restaurant menus", "waterproof menus", "PVC menus", "custom menus", "takeout menus", "drink menus", "laminated menus", "catering menus"],
         "body": "ZprintPro Disposable Menus for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Laminated Durable, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -3084,7 +3084,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Outdoor Vinyl Banners | Wind-Resistant | ZprintPro",
-        "description": "Custom outdoor vinyl banners from ZprintPro Hong Kong. Wind-Resistant, 4-color CMYK. 1-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom outdoor vinyl banners from ZprintPro Hong Kong. Wind-Resistant, 4-color CMYK. 1-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Outdoor Vinyl Banners 1+ | ZprintPro",
         "keywords": ["outdoor vinyl banners", "custom outdoor vinyl banners", "outdoor vinyl banners printing hong kong", "outdoor vinyl banners free shipping", "outdoor vinyl banners USD", "bulk outdoor vinyl banners", "outdoor vinyl banners DHL", "bespoke outdoor vinyl banners", "outdoor vinyl banners wholesale", "outdoor vinyl banners pricing", "banner printing", "roll-up banners", "outdoor banners", "exhibition banners", "vinyl banners", "X-stand banners", "mesh banners", "vehicle wraps", "stage backdrops", "adhesive banners", "A0 large format", "fence banner", "floor sticker banner", "exhibition banner", "exhibition backdrop printing", "opening banner"],
         "body": "ZprintPro Outdoor Vinyl Banners for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Wind-Resistant, 4-color CMYK, premium materials. 1-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -3135,7 +3135,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Roll-up Banners | Wind-Resistant | Free US Ship | ZprintPro",
-        "description": "Custom roll-up banners from ZprintPro Hong Kong. Wind-Resistant, 4-color CMYK. 1-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom roll-up banners from ZprintPro Hong Kong. Wind-Resistant, 4-color CMYK. 1-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Roll-up Banners 1+ | Wind-Resistant | ZprintPro",
         "keywords": ["roll-up banners", "custom roll up banners", "roll up banners printing hong kong", "roll-up banners free shipping", "roll-up banners USD", "bulk roll-up banners", "roll-up banners DHL", "bespoke roll-up banners", "custom roll-up banners", "roll up banners wholesale", "banner printing", "outdoor banners", "exhibition banners", "vinyl banners", "X-stand banners", "mesh banners", "vehicle wraps", "stage backdrops", "adhesive banners", "A0 large format", "fence banner", "floor sticker banner", "exhibition banner", "exhibition backdrop printing", "opening banner"],
         "body": "ZprintPro Roll-up Banners for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Wind-Resistant, 4-color CMYK, premium materials. 1-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -3185,7 +3185,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Adhesive Banners | Wind-Resistant | Free US Ship | ZprintPro",
-        "description": "Custom adhesive banners from ZprintPro Hong Kong. Wind-Resistant, 4-color CMYK. 1-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom adhesive banners from ZprintPro Hong Kong. Wind-Resistant, 4-color CMYK. 1-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Adhesive Banners 1+ | Wind-Resistant | ZprintPro",
         "keywords": ["adhesive banners", "custom adhesive banners", "adhesive banners printing hong kong", "adhesive banners free shipping", "adhesive banners USD", "bulk adhesive banners", "adhesive banners DHL", "bespoke adhesive banners", "adhesive banners wholesale", "adhesive banners pricing", "banner printing", "roll-up banners", "outdoor banners", "exhibition banners", "vinyl banners", "X-stand banners", "mesh banners", "vehicle wraps", "stage backdrops", "A0 large format", "fence banner", "floor sticker banner", "exhibition banner", "exhibition backdrop printing", "opening banner"],
         "body": "ZprintPro Adhesive Banners for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Wind-Resistant, 4-color CMYK, premium materials. 1-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -3235,7 +3235,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Vehicle Wraps | 3M Vinyl Wrap | Free US Ship | ZprintPro",
-        "description": "Custom vehicle wraps from ZprintPro Hong Kong. 3M Vinyl Wrap, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom vehicle wraps from ZprintPro Hong Kong. 3M Vinyl Wrap, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Vehicle Wraps 100+ | 3M Vinyl Wrap | ZprintPro",
         "keywords": ["vehicle wraps", "custom vehicle wraps", "vehicle wraps printing hong kong", "vehicle wraps free shipping", "vehicle wraps USD", "bulk vehicle wraps", "vehicle wraps DHL", "bespoke vehicle wraps", "vehicle wraps wholesale", "vehicle wraps pricing", "banner printing", "roll-up banners", "outdoor banners", "exhibition banners", "vinyl banners", "X-stand banners", "mesh banners", "stage backdrops", "adhesive banners", "A0 large format", "fence banner", "floor sticker banner", "exhibition banner", "exhibition backdrop printing", "opening banner"],
         "body": "ZprintPro Vehicle Wraps for retail, e-commerce, corporate gifting, events, and small business across US and global markets. 3M Vinyl Wrap, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -3285,7 +3285,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Mesh Banners | Wind-Resistant | Free US Ship | ZprintPro",
-        "description": "Custom mesh banners from ZprintPro Hong Kong. Wind-Resistant, 4-color CMYK. 1-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified. Quote tod",
+        "description": "Custom mesh banners from ZprintPro Hong Kong. Wind-Resistant, 4-color CMYK. 1-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Mesh Banners 1+ | Wind-Resistant | ZprintPro",
         "keywords": ["mesh banners", "custom mesh banners", "mesh banners printing hong kong", "mesh banners free shipping", "mesh banners USD", "bulk mesh banners", "mesh banners DHL", "bespoke mesh banners", "mesh banners wholesale", "mesh banners pricing", "banner printing", "roll-up banners", "outdoor banners", "exhibition banners", "vinyl banners", "X-stand banners", "vehicle wraps", "stage backdrops", "adhesive banners", "A0 large format", "fence banner", "floor sticker banner", "exhibition banner", "exhibition backdrop printing", "opening banner"],
         "body": "ZprintPro Mesh Banners for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Wind-Resistant, 4-color CMYK, premium materials. 1-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -3336,7 +3336,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Catalog Printing | Saddle-Stitched | Free US Ship | ZprintPro",
-        "description": "Custom catalog printing from ZprintPro Hong Kong. Saddle-Stitched, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom catalog printing from ZprintPro Hong Kong. Saddle-Stitched, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Catalog Printing 100+ | ZprintPro",
         "keywords": ["catalog printing","custom catalog printing","catalog printing printing hong kong","catalog printing free shipping","catalog printing USD","bulk catalog printing","catalog printing DHL","bespoke catalog printing","catalog printing wholesale","catalog printing pricing"],
         "body": "ZprintPro Catalog Printing for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Saddle-Stitched, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -3387,7 +3387,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Saddle Stitch Booklets | Premium Custom | ZprintPro",
-        "description": "Custom saddle stitch booklets from ZprintPro Hong Kong. Premium Custom, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certif.",
+        "description": "Custom saddle stitch booklets from ZprintPro Hong Kong. Premium Custom, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Saddle Stitch Booklets 100+ | ZprintPro",
         "keywords": ["saddle stitch booklets","custom saddle stitch booklets","saddle stitch booklets printing hong kong","saddle stitch booklets free shipping","saddle stitch booklets USD","bulk saddle stitch booklets","saddle stitch booklets DHL","bespoke saddle stitch booklets","saddle stitch booklets wholesale","saddle stitch booklets pricing"],
         "body": "ZprintPro Saddle Stitch Booklets for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Premium Custom, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -3437,7 +3437,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Perfect Bound Books | Perfect Bound | Free US Ship | ZprintPro",
-        "description": "Custom perfect bound books from ZprintPro Hong Kong. Perfect Bound, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom perfect bound books from ZprintPro Hong Kong. Perfect Bound, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Perfect Bound Books 100+ | ZprintPro",
         "keywords": ["perfect bound books","custom perfect bound books","perfect bound books printing hong kong","perfect bound books free shipping","perfect bound books USD","bulk perfect bound books","perfect bound books DHL","bespoke perfect bound books","perfect bound books wholesale","perfect bound books pricing"],
         "body": "ZprintPro Perfect Bound Books for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Perfect Bound, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -3487,7 +3487,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Hardcover Books | Perfect Bound | Free US Ship | ZprintPro",
-        "description": "Custom hardcover books from ZprintPro Hong Kong. Perfect Bound, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom hardcover books from ZprintPro Hong Kong. Perfect Bound, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Hardcover Books 100+ | Perfect Bound | ZprintPro",
         "keywords": ["hardcover books","custom hardcover books","hardcover books printing hong kong","hardcover books free shipping","hardcover books USD","bulk hardcover books","hardcover books DHL","bespoke hardcover books","hardcover books wholesale","hardcover books pricing"],
         "body": "ZprintPro Hardcover Books for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Perfect Bound, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -3537,7 +3537,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Spiral Notebooks | Perfect Bound | Free US Ship | ZprintPro",
-        "description": "Custom spiral notebooks from ZprintPro Hong Kong. Perfect Bound, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom spiral notebooks from ZprintPro Hong Kong. Perfect Bound, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Spiral Notebooks 100+ | Perfect Bound | ZprintPro",
         "keywords": ["spiral notebooks","custom spiral notebooks","spiral notebooks printing hong kong","spiral notebooks free shipping","spiral notebooks USD","bulk spiral notebooks","spiral notebooks DHL","bespoke spiral notebooks","spiral notebooks wholesale","spiral notebooks pricing"],
         "body": "ZprintPro Spiral Notebooks for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Perfect Bound, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -3588,7 +3588,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Business Envelopes | Foil-Lined Premium | ZprintPro",
-        "description": "Custom business envelopes from ZprintPro Hong Kong. Foil-Lined Premium, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certif.",
+        "description": "Custom business envelopes from ZprintPro Hong Kong. Foil-Lined Premium, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Business Envelopes 100+ | ZprintPro",
         "keywords": ["business envelopes", "custom business envelopes", "business envelopes printing hong kong", "business envelopes free shipping", "business envelopes USD", "bulk business envelopes", "business envelopes DHL", "bespoke business envelopes", "business envelopes wholesale", "business envelopes pricing", "envelope printing", "custom envelopes", "window envelopes", "colored envelopes", "kraft envelopes", "logo envelopes", "corporate envelopes", "C6 envelopes", "DL envelopes", "100pcs MOQ", "50pcs MOQ", "C5 envelope", "C6 envelope", "C7 envelope", "Excel envelope", "from HK$0.5", "from HK$0.8", "UV envelope", "confidential envelope", "envelope price", "company envelope printing", "recycled paper envelope", "variable data envelope", "compostable envelope", "wedding card envelope", "address printing", "wedding envelope printing", "school envelope printing", "custom envelope printing", "lawyer envelope printing", "report card envelope", "bulk envelope", "letterhead envelope", "Mongkok envelope", "accounting envelope", "school crest folder", "foil logo", "foil envelope", "specialty paper envelope", "eco envelope printing", "same day", "ribbon hole envelope", "mini envelope", "notice letter printing", "premium envelope"],
         "body": "ZprintPro Business Envelopes for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Foil-Lined Premium, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -3639,7 +3639,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Colored Envelopes | Foil-Lined Premium | ZprintPro",
-        "description": "Custom colored envelopes from ZprintPro Hong Kong. Foil-Lined Premium, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certifi.",
+        "description": "Custom colored envelopes from ZprintPro Hong Kong. Foil-Lined Premium, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Colored Envelopes 100+ | ZprintPro",
         "keywords": ["colored envelopes", "custom colored envelopes", "colored envelopes printing hong kong", "colored envelopes free shipping", "colored envelopes USD", "bulk colored envelopes", "colored envelopes DHL", "bespoke colored envelopes", "colored envelopes wholesale", "colored envelopes pricing", "envelope printing", "custom envelopes", "business envelopes", "window envelopes", "kraft envelopes", "logo envelopes", "corporate envelopes", "C6 envelopes", "DL envelopes", "100pcs MOQ", "50pcs MOQ", "C5 envelope", "C6 envelope", "C7 envelope", "Excel envelope", "from HK$0.5", "from HK$0.8", "UV envelope", "confidential envelope", "envelope price", "company envelope printing", "recycled paper envelope", "variable data envelope", "compostable envelope", "wedding card envelope", "address printing", "wedding envelope printing", "school envelope printing", "custom envelope printing", "lawyer envelope printing", "report card envelope", "bulk envelope", "letterhead envelope", "Mongkok envelope", "accounting envelope", "school crest folder", "foil logo", "foil envelope", "specialty paper envelope", "eco envelope printing", "same day", "ribbon hole envelope", "mini envelope", "notice letter printing", "premium envelope"],
         "body": "ZprintPro Colored Envelopes for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Foil-Lined Premium, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -3689,7 +3689,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Large Envelopes | Foil-Lined Premium | ZprintPro",
-        "description": "Custom large envelopes from ZprintPro Hong Kong. Foil-Lined Premium, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom large envelopes from ZprintPro Hong Kong. Foil-Lined Premium, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Large Envelopes 100+ | ZprintPro",
         "keywords": ["large envelopes", "custom large envelopes", "large envelopes printing hong kong", "large envelopes free shipping", "large envelopes USD", "bulk large envelopes", "large envelopes DHL", "bespoke large envelopes", "large envelopes wholesale", "large envelopes pricing", "envelope printing", "custom envelopes", "business envelopes", "window envelopes", "colored envelopes", "kraft envelopes", "logo envelopes", "corporate envelopes", "C6 envelopes", "DL envelopes", "100pcs MOQ", "50pcs MOQ", "C5 envelope", "C6 envelope", "C7 envelope", "Excel envelope", "from HK$0.5", "from HK$0.8", "UV envelope", "confidential envelope", "envelope price", "company envelope printing", "recycled paper envelope", "variable data envelope", "compostable envelope", "wedding card envelope", "address printing", "wedding envelope printing", "school envelope printing", "custom envelope printing", "lawyer envelope printing", "report card envelope", "bulk envelope", "letterhead envelope", "Mongkok envelope", "accounting envelope", "school crest folder", "foil logo", "foil envelope", "specialty paper envelope", "eco envelope printing", "same day", "ribbon hole envelope", "mini envelope", "notice letter printing", "premium envelope"],
         "body": "ZprintPro Large Envelopes for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Foil-Lined Premium, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -3739,7 +3739,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Pearl Envelopes | Foil-Lined Premium | ZprintPro",
-        "description": "Custom pearl envelopes from ZprintPro Hong Kong. Foil-Lined Premium, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom pearl envelopes from ZprintPro Hong Kong. Foil-Lined Premium, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Pearl Envelopes 100+ | ZprintPro",
         "keywords": ["pearl envelopes", "custom pearl envelopes", "pearl envelopes printing hong kong", "pearl envelopes free shipping", "pearl envelopes USD", "bulk pearl envelopes", "pearl envelopes DHL", "bespoke pearl envelopes", "pearl envelopes wholesale", "pearl envelopes pricing", "envelope printing", "custom envelopes", "business envelopes", "window envelopes", "colored envelopes", "kraft envelopes", "logo envelopes", "corporate envelopes", "C6 envelopes", "DL envelopes", "100pcs MOQ", "50pcs MOQ", "C5 envelope", "C6 envelope", "C7 envelope", "Excel envelope", "from HK$0.5", "from HK$0.8", "UV envelope", "confidential envelope", "envelope price", "company envelope printing", "recycled paper envelope", "variable data envelope", "compostable envelope", "wedding card envelope", "address printing", "wedding envelope printing", "school envelope printing", "custom envelope printing", "lawyer envelope printing", "report card envelope", "bulk envelope", "letterhead envelope", "Mongkok envelope", "accounting envelope", "school crest folder", "foil logo", "foil envelope", "specialty paper envelope", "eco envelope printing", "same day", "ribbon hole envelope", "mini envelope", "notice letter printing", "premium envelope"],
         "body": "ZprintPro Pearl Envelopes for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Foil-Lined Premium, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -3790,7 +3790,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Exercise Books | Perfect Bound | Free US Ship | ZprintPro",
-        "description": "Custom exercise books from ZprintPro Hong Kong. Perfect Bound, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom exercise books from ZprintPro Hong Kong. Perfect Bound, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Exercise Books 100+ | Perfect Bound | ZprintPro",
         "keywords": ["exercise books", "custom exercise books", "exercise books printing hong kong", "exercise books free shipping", "exercise books USD", "bulk exercise books", "exercise books DHL", "bespoke exercise books", "exercise books wholesale", "exercise books pricing", "homework bag printing", "student handbook printing", "teacher self-made materials", "award certificate printing", "class name bag", "graduation yearbook", "graduation certificate printing", "subject file folder", "perfect bound notes", "saddle-stitch materials"],
         "body": "ZprintPro Exercise Books for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Perfect Bound, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -3841,7 +3841,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Certificates | Embossed Seal | Free US Ship | ZprintPro",
-        "description": "Custom certificates from ZprintPro Hong Kong. Embossed Seal, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified. Quote to",
+        "description": "Custom certificates from ZprintPro Hong Kong. Embossed Seal, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Certificates 100+ | Embossed Seal | ZprintPro",
         "keywords": ["certificate printing", "custom certificates", "certificates printing hong kong", "certificates free shipping", "certificates USD", "bulk certificates", "certificates DHL", "bespoke certificates", "certificates wholesale", "certificates pricing", "homework bag printing", "student handbook printing", "teacher self-made materials", "award certificate printing", "class name bag", "graduation yearbook", "graduation certificate printing", "subject file folder", "perfect bound notes", "saddle-stitch materials"],
         "body": "ZprintPro Certificates for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Embossed Seal, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -3891,7 +3891,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "School Flyers | Same-Day Printing | Free US Ship | ZprintPro",
-        "description": "Custom school flyers from ZprintPro Hong Kong. Same-Day Printing, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom school flyers from ZprintPro Hong Kong. Same-Day Printing, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "School Flyers 100+ | Same-Day Printing | ZprintPro",
         "keywords": ["school flyers", "custom school flyers", "school flyers printing hong kong", "school flyers free shipping", "school flyers USD", "bulk school flyers", "school flyers DHL", "bespoke school flyers", "school flyers wholesale", "school flyers pricing", "homework bag printing", "student handbook printing", "teacher self-made materials", "award certificate printing", "class name bag", "graduation yearbook", "graduation certificate printing", "subject file folder", "perfect bound notes", "saddle-stitch materials"],
         "body": "ZprintPro School Flyers for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Same-Day Printing, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -3941,7 +3941,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Textbooks | Perfect Bound | Free US Ship | ZprintPro",
-        "description": "Custom textbooks from ZprintPro Hong Kong. Perfect Bound, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified. Quote today",
+        "description": "Custom textbooks from ZprintPro Hong Kong. Perfect Bound, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Textbooks 100+ | Perfect Bound | ZprintPro",
         "keywords": ["textbooks", "custom textbooks", "textbooks printing hong kong", "textbooks free shipping", "textbooks USD", "bulk textbooks", "textbooks DHL", "bespoke textbooks", "textbooks wholesale", "textbooks pricing", "homework bag printing", "student handbook printing", "teacher self-made materials", "award certificate printing", "class name bag", "graduation yearbook", "graduation certificate printing", "subject file folder", "perfect bound notes", "saddle-stitch materials"],
         "body": "ZprintPro Textbooks for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Perfect Bound, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -4000,7 +4000,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "マグネット式ギフトボックス | カスタム印刷 | ZprintPro",
-        "description": "マグネット式ギフトボックスのカスタム印刷は ZprintPro にお任せ。香港直結、安心品質。",
+        "description": "マグネット式ギフトボックスのカスタム印刷は ZprintPro にお任せ。香港直結、安心品質 | 無料デザイン | 100枚〜",
         "h1": " magnetic closure gift box",
         "keywords": ["マグネット式ギフトボックス", "magnetic closure gift box", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "香港衛生署", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
         "body": " magnetic closure gift box"
@@ -4034,7 +4034,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Electronics Packaging Box | Eco-Friendly Material",
-        "description": "Custom electronics packaging box from ZprintPro Hong Kong. Eco-Friendly Material, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9.",
+        "description": "Custom electronics packaging box from ZprintPro Hong Kong. Eco-Friendly Material, 4-color CMYK. 100-MOQ | Free Design | 100 MOQ",
         "h1": "Electronics Packaging Box 100+ | ZprintPro",
         "keywords": ["electronics packaging box", "custom electronics packaging box", "electronics packaging box free shipping", "electronics packaging box USD", "bulk electronics packaging box", "electronics packaging box DHL", "bespoke electronics packaging box", "electronics packaging box wholesale", "electronics packaging box pricing", "electronics packaging box bulk", "packaging box printing", "gift boxes", "cosmetic boxes", "food boxes", "mailer boxes", "corrugated boxes", "custom packaging", "rigid boxes", "folding cartons", "product boxes", "100pcs MOQ", "2-day turnaround", "FSC certified", "HK DOH compliance", "QR code packaging", "mid-autumn gift box printing", "health supplement packaging", "free proof", "free layout", "export packaging", "cosmetic packaging box", "instant quote", "compostable packaging", "small batch packaging box", "industrial packaging", "color box printing", "drawer color box", "sustainable packaging", "silver foil printing", "eco packaging box", "corrugated box", "corrugated box printing", "magnetic box", "gift color box", "window design", "festival packaging box", "green printing", "rush printing", "beauty packaging", "pharmaceutical packaging box", "moisture-proof packaging", "food-grade box"],
         "body": "ZprintPro Electronics Packaging Box for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Eco-Friendly Material, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -4042,7 +4042,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "電子製品包装箱 | カスタム印刷 | ZprintPro",
-        "description": "電子製品包装箱のカスタム印刷は ZprintPro にお任せ。香港直結、安心品質。",
+        "description": "電子製品包装箱のカスタム印刷は ZprintPro にお任せ。香港直結、安心品質 | 無料デザイン | 100枚〜",
         "h1": " electronics packaging box",
         "keywords": ["電子製品包装箱", "electronics packaging box", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "香港衛生署", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
         "body": " electronics packaging box"
@@ -4076,7 +4076,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Kraft Paper Packaging Box | Eco-Friendly Material",
-        "description": "Custom kraft paper packaging box from ZprintPro Hong Kong. Eco-Friendly Material, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9.",
+        "description": "Custom kraft paper packaging box from ZprintPro Hong Kong. Eco-Friendly Material, 4-color CMYK. 100-MOQ | Free Design | 100 MOQ",
         "h1": "Kraft Paper Packaging Box 100+ | ZprintPro",
         "keywords": ["kraft paper packaging box", "custom kraft paper packaging box", "kraft paper packaging box free shipping", "kraft paper packaging box USD", "bulk kraft paper packaging box", "kraft paper packaging box DHL", "bespoke kraft paper packaging box", "kraft paper packaging box wholesale", "kraft paper packaging box pricing", "kraft paper packaging box bulk", "packaging box printing", "gift boxes", "cosmetic boxes", "food boxes", "mailer boxes", "corrugated boxes", "custom packaging", "rigid boxes", "folding cartons", "product boxes", "100pcs MOQ", "2-day turnaround", "FSC certified", "HK DOH compliance", "QR code packaging", "mid-autumn gift box printing", "health supplement packaging", "free proof", "free layout", "export packaging", "cosmetic packaging box", "instant quote", "compostable packaging", "small batch packaging box", "industrial packaging", "color box printing", "drawer color box", "sustainable packaging", "silver foil printing", "eco packaging box", "corrugated box", "corrugated box printing", "magnetic box", "gift color box", "window design", "festival packaging box", "green printing", "rush printing", "beauty packaging", "pharmaceutical packaging box", "moisture-proof packaging", "food-grade box"],
         "body": "ZprintPro Kraft Paper Packaging Box for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Eco-Friendly Material, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -4084,7 +4084,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "クラフト紙包装箱 | カスタム印刷 | ZprintPro",
-        "description": "クラフト紙包装箱のカスタム印刷は ZprintPro にお任せ。香港直結、安心品質。",
+        "description": "クラフト紙包装箱のカスタム印刷は ZprintPro にお任せ。香港直結、安心品質 | 無料デザイン | 100枚〜",
         "h1": " kraft paper packaging box",
         "keywords": ["クラフト紙包装箱", "kraft paper packaging box", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "香港衛生署", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
         "body": " kraft paper packaging box"
@@ -4118,7 +4118,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Drawer Slide Gift Box | Ribbon Pull | Free US Ship | ZprintPro",
-        "description": "Custom drawer slide gift box from ZprintPro Hong Kong. Ribbon Pull, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Custom drawer slide gift box from ZprintPro Hong Kong. Ribbon Pull, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Drawer Slide Gift Box 100+ | ZprintPro",
         "keywords": ["drawer slide gift box", "custom drawer slide gift box", "drawer slide gift box free shipping", "drawer slide gift box USD", "bulk drawer slide gift box", "drawer slide gift box DHL", "bespoke drawer slide gift box", "drawer slide gift box wholesale", "drawer slide gift box pricing", "drawer slide gift box bulk", "packaging box printing", "gift boxes", "cosmetic boxes", "food boxes", "mailer boxes", "corrugated boxes", "custom packaging", "rigid boxes", "folding cartons", "product boxes", "100pcs MOQ", "2-day turnaround", "FSC certified", "HK DOH compliance", "QR code packaging", "mid-autumn gift box printing", "health supplement packaging", "free proof", "free layout", "export packaging", "cosmetic packaging box", "instant quote", "compostable packaging", "small batch packaging box", "industrial packaging", "color box printing", "drawer color box", "sustainable packaging", "silver foil printing", "eco packaging box", "corrugated box", "corrugated box printing", "magnetic box", "gift color box", "window design", "festival packaging box", "green printing", "rush printing", "beauty packaging", "pharmaceutical packaging box", "moisture-proof packaging", "food-grade box"],
         "body": "ZprintPro Drawer Slide Gift Box for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Ribbon Pull, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -4126,7 +4126,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "引き出し式ギフトボックス | カスタム印刷 | ZprintPro",
-        "description": "引き出し式ギフトボックスのカスタム印刷は ZprintPro にお任せ。香港直結、安心品質。",
+        "description": "引き出し式ギフトボックスのカスタム印刷は ZprintPro にお任せ。香港直結、安心品質 | 無料デザイン | 100枚〜",
         "h1": " drawer slide gift box",
         "keywords": ["引き出し式ギフトボックス", "drawer slide gift box", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "香港衛生署", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
         "body": " drawer slide gift box"
@@ -4168,7 +4168,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "フルーツ・食品ラベル印刷 | カスタム印刷 | ZprintPro",
-        "description": "フルーツ・食品ラベル印刷のカスタム印刷は ZprintPro にお任せ。香港直結、安心品質。",
+        "description": "フルーツ・食品ラベル印刷のカスタム印刷は ZprintPro にお任せ。香港直結、安心品質 | 無料デザイン | 100枚〜",
         "h1": " fruit & food label stickers",
         "keywords": ["フルーツ・食品ラベル印刷", "fruit & food label stickers", "ステッカー印刷", "防水ステッカー", "オリジナルステッカー", "小ロットステッカー", "ダイカットステッカー", "透明ステッカー", "商品ラベル", "カスタムステッカー", "剥がせるステッカー", "ロゴステッカー", "1000枚ステッカー", "A4 ステッカー", "Etsy ステッカー", "QR コードステッカー", "賞味期限ステッカー", "ノーリボン残留", "残留なし", "スキャン可能ステッカー", "円形ステッカー", "ウェディングステッカー", "学生ステッカー", "成分表示", "成分表示ステッカー", "ラベルステッカー印刷", "イベント双方向", "物流追跡", "ガラスステッカー", "誕生日ステッカー", "エコノミーステッカー", "ウェルカムステッカー", "透明ステッカー印刷", "食品グレードステッカー", "高透明ステッカー"],
         "body": " fruit & food label stickers"
@@ -4202,14 +4202,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Doujinshi Printing Comiket | 24h Rush Available",
-        "description": "Comiket-ready doujinshi printing service. A5/B5 sizes, full-color cover + mono interior. Low MOQ 10 books, 24-hour rush before Comiket. Japanese support, DHL Express worldwide 2-4 days.",
+        "description": "Comiket-ready doujinshi printing service. A5/B5 sizes, full-color cover + mono interior. Low MOQ 10 books, 24-hour rush before Comiket | Free Design | 100 MOQ",
         "h1": "Doujinshi Printing for Comiket & Doujin Events",
         "keywords": ["doujinshi printing", "comiket", "doujinshi", "doujin event", "self publishing", "A5 booklet", "low MOQ printing", "rush printing"],
         "body": "<p>Optimized for Comiket, doujin events, and creative exhibitions. Standard full-color cover + mono interior, with premium full-color cover-and-interior upgrades. Low MOQ of 10 books makes this accessible for individual circles and beginners. 24-hour rush production available before Comiket for last-minute reprints.</p><h3>Specifications</h3><p>Material: FSC-certified fine paper 90g / coated paper 90g (cover). Size: A5 (148×210mm) / B5 (182×257mm) / A4 (optional). Print method: Cover: offset 4-color / Interior: on-demand or offset.</p>"
       },
       "ja": {
         "title": "同人誌印刷 コミケ対応 | 即日発送 24時間特急",
-        "description": "コミケ・即売会向け同人誌印刷専門。A5/B5 サイズ、表紙フルカラー、本文モノクロ。10 部から対応、コミケ前 24 時間特急対応。日本語サポート、DHL Express 日本直送 2-4 日。",
+        "description": "コミケ・即売会向け同人誌印刷専門。A5/B5 サイズ、表紙フルカラー、本文モノクロ。10 部から対応、コミケ前 24 時間特急対応。日本語サポート、DHL Express 日本直送 2-4 日 | 無料デザイン | 100枚〜",
         "h1": "同人誌印刷 コミケ・即売会対応",
         "keywords": ["同人誌印刷", "コミケ", "同人誌", "即売会", "印刷", "A5同人誌", "少部数印刷", "コミケ前特急", "即売会印刷"],
         "body": "<p>コミケ・即売会・創作イベント向けに最適化された同人誌印刷。表紙フルカラー + 本文モノクロの標準構成から、表紙本文ともにフルカラーのプレミアム構成まで対応。本文 10 部からの少部数対応で、個人サークル・初心者も気軽に発注可能。コミケ開催前は 24 時間特急対応で、在庫切れの追加印刷も迅速対応。</p><h3>サイズ・仕様</h3><p>材質: FSC認証 上質紙 90g/コート紙 90g (表紙)。サイズ: A5 (148×210mm) / B5 (182×257mm) / A4 (オプション)。印刷方式: 表紙: オフセット4色 / 本文: オンデマンド or オフセット。加工: 無線綴じ / 中綴じ (8-64p) / 背表紙。</p>"
@@ -4258,7 +4258,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "アクリルキーホルダー キャラクター形 推し活応援 | 10個から",
-        "description": "推し活応援・VTuber 向けアクリルキーホルダー。完全カスタム形状、2mm/3mm 選択、透明/白/満版印刷対応。10 個から対応、安全ピン オプション。DHL Express 日本直送 2-4 日。",
+        "description": "推し活応援・VTuber 向けアクリルキーホルダー。完全カスタム形状、2mm/3mm 選択、透明/白/満版印刷対応。10 個から対応、安全ピン オプション。DHL Express 日本直送 2-4 日 | 無料デザイン | 100枚〜",
         "h1": "アクリルキーホルダー キャラクター形 推し活応援",
         "keywords": ["アクリルキーホルダー", "キャラキーホルダー", "推し活", "VTuber グッズ", "アニメ グッズ", "カスタム キーホルダー", "同人グッズ", "オタク グッズ"],
         "body": "<p>推し活応援・キャラクターグッズ・アクリルスタンドの小型版。完全なカスタム形状対応 — VTuber のロゴ、推しキャラのイラストをそのままキーホルダー化。2mm と 3mm 厚で価格・手触りが異なる。10 個から対応で、個人作家・同人イベント参加にも最適。</p><h3>サイズ・仕様</h3><p>材質: 透明アクリル板 2mm/3mm (オプション: 白ベース/満版印刷)。サイズ: 30-80mm (カスタム形状可、Illustrator パスデータ入稿)。印刷方式: UV インクジェット 4色 (CMYK + 白インク)。加工: 安全ピン/ボールチェーン/ナスカン/ヘッダーOPP袋封入。</p>"
@@ -4300,14 +4300,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Custom Can Badges 57mm & 76mm | Comiket & VTuber",
-        "description": "Custom can badge printing. 57mm standard, 76mm large, 44mm mini. Safety pin included, full-color printing, MOQ 10 pcs. Ideal for Comiket, oshi-katsu, merchandise sales. DHL Express worldwide 2-4 days.",
+        "description": "Custom can badge printing. 57mm standard, 76mm large, 44mm mini. Safety pin included, full-color printing, MOQ 10 pcs | Free Design | 100 MOQ",
         "h1": "Can Badge Printing 57mm & 76mm | Comiket Ready",
         "keywords": ["can badge printing", "pin badge", "anime badge", "oshi-katsu", "comiket badge", "VTuber goods", "anime merchandise", "safety pin badge"],
         "body": "<p>Essential can badges for Comiket, oshi-katsu, and VTuber merchandise. Three sizes: 57mm standard, 76mm large, 44mm mini. Full-color printing preserves illustration and logo details. Safety pin included for easy attachment to clothing or bags. Low MOQ of 10 pcs makes it accessible for individual circles.</p><h3>Specifications</h3><p>Material: Metal base + paper/PET print surface + safety pin. Size: 57mm (standard) / 76mm (large) / 44mm (mini). Print method: Offset/digital 4-color (CMYK).</p>"
       },
       "ja": {
         "title": "缶バッジ印刷 57mm 76mm | 推し活応援 コミケ対応",
-        "description": "缶バッジ印刷専門。57mm 標準 + 76mm 大判 + 44mm ミニ。安全扣付き、フルカラー印刷、10 個から対応。コミケ・推し活応援・物販用に最適。DHL Express 日本直送 2-4 日。",
+        "description": "缶バッジ印刷専門。57mm 標準 + 76mm 大判 + 44mm ミニ。安全扣付き、フルカラー印刷、10 個から対応。コミケ・推し活応援・物販用に最適。DHL Express 日本直送 2-4 日 | 無料デザイン | 100枚〜",
         "h1": "缶バッジ印刷 57mm 76mm コミケ・推し活応援",
         "keywords": ["缶バッジ印刷", "缶バッジ", "バッジ", "推し活", "コミケ", "VTuber グッズ", "アニメ グッズ", "安全ピン バッジ"],
         "body": "<p>コミケ・推し活・VTuber 物販に必須の缶バッジ。57mm 標準サイズと 76mm 大判、44mm ミニの 3 サイズ展開。フルカラー印刷でイラスト・ロゴをそのまま再現。安全ピン標準装備で衣服・カバンに簡単装着。10 個から少部数対応で、個人サークルも気軽に発注可能。</p><h3>サイズ・仕様</h3><p>材質: 金属ベース + 紙/ペット印刷面 + 安全ピン。サイズ: 57mm (標準) / 76mm (大判) / 44mm (ミニ)。印刷方式: オフセット/デジタル 4色 (CMYK)。加工: 安全ピン標準装備 / OPP袋個別包装オプション。</p>"
@@ -4349,14 +4349,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Washi Postcard Sets 4-8 pcs | Character Goods",
-        "description": "Washi-style postcard sets in 4-8 piece collections. Ideal for character goods, VTuber, illustration collections. 105×148mm standard, double-sided print, OPP sleeve packaging. 3-5 day production, DHL Express worldwide 2-4 days.",
+        "description": "Washi-style postcard sets in 4-8 piece collections. Ideal for character goods, VTuber, illustration collections | Free Design | 100 MOQ",
         "h1": "Washi-style Postcard Sets | 4-8 Piece Collections",
         "keywords": ["postcard set", "postcards", "character postcards", "oshi-katsu", "VTuber", "illustration goods", "doujin merchandise", "signature event"],
         "body": "<p>Ideal postcard sets for character goods, VTuber illustrations, and signature event giveaways. Sold in 4-8 piece sets for collection appeal. Washi-style art paper matches Japanese-aesthetic and traditional artwork. Double-sided printing allows front illustration + back text/signature design.</p><h3>Specifications</h3><p>Material: Washi-style art paper 180g / double-sided matte PP laminate. Size: 105×148mm (A6 standard postcard). Print method: On-demand/offset 4-color (CMYK).</p>"
       },
       "ja": {
         "title": "ポストカードセット 4-8枚 和紙風 | 推し活応援",
-        "description": "和紙風ポストカードセット 4-8 枚入。推しキャラ・VTuber・イラストコレクション向け。105×148mm 標準、両面印刷、OPP スリーブ封入。3-5 営業日納品、DHL Express 日本直送 2-4 日。",
+        "description": "和紙風ポストカードセット 4-8 枚入。推しキャラ・VTuber・イラストコレクション向け。105×148mm 標準、両面印刷、OPP スリーブ封入。3-5 営業日納品、DHL Express 日本直送 2-4 日 | 無料デザイン | 100枚〜",
         "h1": "ポストカードセット 4-8 枚 和紙風",
         "keywords": ["ポストカードセット", "ポストカード", "絵葉書", "推し活", "VTuber", "イラスト グッズ", "同人グッズ", "サイン会"],
         "body": "<p>推しキャラ・VTuber のイラストやサイン会配布用に最適なポストカードセット。4-8 枚のセット販売で、コレクション性が高い。和紙風アート紙採用で、和風・古風テイストの作品にもマッチ。両面印刷対応で、表面イラスト + 裏面テキスト/サインを自由にデザイン。OPP スリーブ個別包装で、傷・汚れから保護。</p><h3>サイズ・仕様</h3><p>材質: 和紙風アート紙 180g / 両面マットPPラミネート。サイズ: 105×148mm (A6 標準ポストカード)。印刷方式: オンデマンド/オフセット 4色 (CMYK)。加工: OPP スリーブ個別包装 + 集合OPP袋。</p>"
@@ -4398,14 +4398,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Organic Cotton Eco Tote Bag | Oshi-katsu Comiket",
-        "description": "100% organic cotton tote bags. Silk/DTG printing options, ideal for oshi-katsu, Comiket merchandise, ESG-friendly corporate gifts. FSC-certified fabric, A4 capacity, MOQ 10 pcs. DHL Express worldwide 2-4 days.",
+        "description": "100% organic cotton tote bags. Silk/DTG printing options, ideal for oshi-katsu, Comiket merchandise, ESG-friendly corporate gifts | Free Design | 100 MOQ",
         "h1": "Eco Tote Bag Organic Cotton | Oshi-katsu & Comiket",
         "keywords": ["eco tote bag", "tote bag", "organic cotton", "oshi-katsu", "comiket", "ESG merchandise", "corporate gift", "FSC certified"],
         "body": "<p>Premium organic cotton tote bags for oshi-katsu, Comiket merchandise, and corporate gifting. FSC-certified 100% organic cotton supports ESG and sustainability narratives. Silk screen printing delivers crisp logos and illustrations; DTG full-color printing handles gradients and photos.</p><h3>Specifications</h3><p>Material: 100% organic cotton / 12oz heavy canvas. Size: 38×42×10cm (A4 capacity) / gusset 10cm. Print method: Silk screen (1-3 colors) / DTG full-color.</p>"
       },
       "ja": {
         "title": "エコトートバッグ オーガニックコットン | 推し活 コミケ",
-        "description": "オーガニックコットン 100% トートバッグ。シルク/DTG 印刷対応、推し活・コミケ物販・ESG ノベルティ向け。FSC 認証生地使用、A4 収納可能、10 個から対応。DHL Express 日本直送 2-4 日。",
+        "description": "オーガニックコットン 100% トートバッグ。シルク/DTG 印刷対応、推し活・コミケ物販・ESG ノベルティ向け。FSC 認証生地使用、A4 収納可能、10 個から対応。DHL Express 日本直送 2-4 日 | 無料デザイン | 100枚〜",
         "h1": "エコトートバッグ オーガニックコットン 推し活・コミケ",
         "keywords": ["エコトートバッグ", "トートバッグ", "オーガニックコットン", "推し活", "コミケ", "ESG ノベルティ", "企業物販", "FSC 認証"],
         "body": "<p>推し活・コミケ物販・企業ノベルティに最適なオーガニックコットントート。FSC 認証オーガニックコットン 100% 使用で、ESG・サステナブル志向にも対応。シルクスクリーン印刷でロゴ・イラストを鮮明再現、DTG フルカラー印刷でグラデーション・写真も対応。A4 サイズ収納可能で、実用性も高い。10 個から対応で、少部数 OK。</p><h3>サイズ・仕様</h3><p>材質: オーガニックコットン 100% / 12oz 厚手キャンバス。サイズ: 38×42×10cm (A4 収納可) / マチ 10cm。印刷方式: シルクスクリーン印刷 (1-3 色) / DTG フルカラー印刷。加工: 内ポケット / 底板補強 / 名入れ刺繍 (オプション)。</p>"
@@ -4447,7 +4447,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Graduation Yearbook Printing 50 MOQ | Saddle / Perfect / Hardcover | ZprintPro",
-        "description": "Graduation yearbook, school anniversary and alumni publication printing from 50 copies. 3 binding options (saddle stitch / perfect bound / hardcover) with class photos, faculty messages, and school logos. Free DHL Express 2-4 day global shipping. 30-second AI quote.",
+        "description": "Graduation yearbook, school anniversary and alumni publication printing from 50 copies | Free Design | 100 MOQ",
         "h1": "Graduation Yearbook Printing — 50 MOQ · 3 Binding Options",
         "keywords": ["graduation yearbook printing", "school anniversary publication", "alumni magazine", "yearbook binding", "perfect bound yearbook", "hardcover yearbook", "saddle stitch book", "FSC certified", "Free Design Mockup", "Free Shipping"],
         "body": "3 binding options for graduation yearbooks: saddle stitch (32-80 pages, lowest cost, spreads across pages) / perfect bound PUR (80-200 pages, printable spine) / hardcover (80-400 pages, grey board with art paper, foil-stamped, archival quality)."
