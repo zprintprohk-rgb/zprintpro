@@ -281,24 +281,6 @@ const posts: Record<string, Record<string, { title: string; description: string;
       content: '',
     },
 
-    'thick-paper-flyer-printing-restaurant-takeout-guide': {
-      title: '厚紙傳單印刷指南 · 香港餐廳外賣單張厚紙選材攻略 | 智印雲 ZprintPro',
-      description: '香港餐廳旺季前必睇。200g-400g 全規格厚紙傳單,5,000 張 250g 銅版紙 A4 雙面四色 + 雙面過膠 HK$0.65/張 起。100 張起印,5-7 個工作天交貨,順豐本地派送港九新界。',
-      date: '2026-07-15', category: '厚紙傳單',
-      content: '',
-    },
-    'magnetic-closure-gift-box-ecommerce-brand-guide': {
-      title: '磁吸禮盒定制指南 · 跨境電商品牌升級包裝方案 | 智印雲 ZprintPro',
-      description: '亞馬遜 FBA、Shopify 獨立站、Etsy 手作店、Kickstarter 群眾募資、訂閱盒 DTC 品牌必睇。157g 灰板 + 128g 雙銅紙磁吸禮盒,500 個 350×250×100mm 天地蓋 + 觸感啞膠 + 燙金 logo + EVA 內托 HK$22/個 起,DHL 全球 2-4 日送達,DDP 完稅到門。',
-      date: '2026-07-15', category: '磁吸禮盒',
-      content: '',
-    },
-    'folding-box-cosmetics-brand-eco-friendly-guide': {
-      title: '折疊盒定制指南 · 美妝護膚品牌環保包裝攻略 | 智印雲 ZprintPro',
-      description: '美妝護膚品牌、面膜品牌、精華液品牌、口紅品牌、彩妝品牌、手作護膚品品牌必睇。300g 牛卡 / 350g 白卡 / 400g 雙面白卡 / 300g 再生紙 / 350g 黑卡 5 款折疊盒材質,FSC 認證 + 大豆油墨 + 可回收標誌全套,500 個 130×60×25mm 折疊盒 + 4 色 CMYK + 啞面過膠 HK$0.85/個 起。',
-      date: '2026-07-15', category: '環保折疊盒',
-      content: '',
-    },
   },
   ja: {
     'company-intro': { title: 'ZprintPro会社概要：専門設備とワンストップ印刷サービス', description: 'ZprintProはハイデルベルグ6+1印刷機、HPデジタル印刷機、マルティニ製本ラインなどの先進設備を保有し、ワンストップ印刷サービスを提供しています。', date: '2024-06-01', category: '会社ニュース', content: '' },
@@ -407,24 +389,6 @@ const posts: Record<string, Record<string, { title: string; description: string;
     'baby-product-label-sticker-printing-guide': { title: "ベビー用品ステッカー印刷ガイド：FDA食品衛生ラベル 日本向け | ZprintPro", description: "日本の粉ミルク・ベビーフード・赤ちゃんスキンケア・マタニティ栄養ブランドオーナー様へ。FDA 準拠・BPA-free・冷凍対応ラベルが shelf 審査とママ世代 SNS 信頼を獲得。智印雲は 500〜100,000 枚小〜大ロット、5-7 営業日納品、$99 以上無料配送、DHL 国際配送対応。", date: '2026-07-14', category: 'ベビーステッカー', content: '' },
     'ecommerce-shipping-bag-printing-guide': { title: "EC配送袋印刷ガイド：防水・改ざん防止 日本物流向け | ZprintPro", description: "日本の Amazon FBA・Shopify・Etsy・3PL 倉庫ブランドオーナー様へ。改ざん防止シール・追跡バーコード・返品ラベル付きの高品質印刷配送袋が、開封体験と返品率を決定。智印雲は防水クラフト・カスタム印刷・剥離粘着で 1,000〜200,000 個小〜大ロット、5-10 営業日納品、$99 以上無料配送、全国送料込み。", date: '2026-07-14', category: '配送袋', content: '' },
     'media-merchandise-box-printing-guide': { title: "メディアフランチャイズ コレクターズボックス印刷ガイド：限定版・予約・日本ファン向け | ZprintPro", description: "日本の映像 IP スタジオ・アニメブランド・Comic-Con 出展者・限定版コレクティブ会社向け。高品質 IP グッズボックスがファンロイヤルティ・二次拡散率・中古市場プレミアムを決定。智印雲は引出し式・マグネット式・限定ナンバー印刷・UV スポット + 箔押しロゴでグローバルメディアフランチャイズ市場に 100-10,000 個小〜大ロット、7-15 営業日納品対応。", date: '2026-07-14', category: '映像IPグッズ', content: '' },
-    'thick-paper-flyer-printing-restaurant-takeout-guide': {
-      title: '厚紙チラシ印刷ガイド · 飲食店メニュー・テイクアウト向け完全解説 | ZprintPro',
-      description: '日本のレストラン・居酒屋・カフェ・テイクアウト専門店・デリバリーキッチン様へ。200gsm〜400gsm 全規格厚紙チラシ、100 枚試刷から 200,000 枚チェーン展開まで対応、4 営業日国内生産、$99 以上で全国無料配送、ヤマト運輸・DHL 国際配送対応。',
-      date: '2026-07-15', category: '厚紙チラシ',
-      content: '',
-    },
-    'magnetic-closure-gift-box-ecommerce-brand-guide': {
-      title: 'マグネット式ギフト ボックス カスタムガイド · 越境EC・DTC ブランド向けプレミアム包装 | ZprintPro',
-      description: '日本の Shopify、Amazon FBA、Etsy、Kickstarter、Subscription Box DTC ブランドオーナー様へ。100 個 Kickstarter 試作から 50,000 個チェーン展開まで対応、157gsm グレー ボード + 128gsm アート紙 / 特殊紙 マグネット ボックス、5-10 営業日生産、DHL 2-4 日国内配送、ヤマト運輸・DHL 国際配送対応。',
-      date: '2026-07-15', category: 'マグネット ボックス',
-      content: '',
-    },
-    'folding-box-cosmetics-brand-eco-friendly-guide': {
-      title: '折り畳み箱 カスタム ガイド · 化粧品・スキンケア ブランド向けエコ包装 | ZprintPro',
-      description: '日本のスキンケア、美容液、シート マスク、口紅、メイク、手作り化粧品ブランドオーナー様へ。5 素材折り畳み箱:300gsm クラフト / 350gsm 白カード / 400gsm 両面白カード / 300gsm 再生紙 / 350gsm 黒カード。FSC 認証 + 大豆インク + リサイクル マーク完備、500 個 130×60×25mm 1 個 20 円〜。',
-      date: '2026-07-15', category: 'エコ 折り畳み箱',
-      content: '',
-    },
 
   }
 };
@@ -439,9 +403,6 @@ const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-
   'baby-product-label-sticker-printing-guide',
   'ecommerce-shipping-bag-printing-guide',
   'media-merchandise-box-printing-guide',
-  'thick-paper-flyer-printing-restaurant-takeout-guide',
-  'magnetic-closure-gift-box-ecommerce-brand-guide',
-  'folding-box-cosmetics-brand-eco-friendly-guide',
 ];
 const guideSlugs = getAllBuyingGuideSlugs();
 const clusterSlugs = getAllClusterSlugs();
