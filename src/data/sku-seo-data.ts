@@ -1966,7 +1966,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Cosmetic Boxes | 100 MOQ | Free US Ship | ZprintPro",
-        "description": "Cosmetic Boxes custom printing, premium rigid paperboard. Free design mockup, 100 MOQ, free shipping $99+. Fast 4-day USA delivery for beauty & skincare brands. | ZprintPro",
+        "description": "Cosmetic Boxes, premium rigid paperboard. Free Design, 100 MOQ, Free Shipping $99+. 4-day USA delivery for beauty & skincare brands. | ZprintPro",
 
         "h1": "Cosmetic Packaging Boxes — 4 Box Styles · Custom Inner Tray",
         "keywords": ["cosmetic packaging boxes", "cosmetic boxes", "makeup boxes", "skincare boxes", "beauty brand packaging", "custom box styles", "magnetic closure boxes", "drawer boxes", "book-style boxes", "cosmetic boxes printing", "cosmetic OEM", "香港 cosmetic packaging", "packaging box printing", "gift boxes", "food boxes", "mailer boxes", "corrugated boxes", "custom packaging", "rigid boxes", "folding cartons", "product boxes", "100pcs MOQ", "2-day turnaround", "FSC certified", "HK DOH compliance", "QR code packaging", "mid-autumn gift box printing", "health supplement packaging", "free proof", "free layout", "export packaging", "cosmetic packaging box", "instant quote", "compostable packaging", "small batch packaging box", "industrial packaging", "color box printing", "drawer color box", "sustainable packaging", "silver foil printing", "eco packaging box", "corrugated box", "corrugated box printing", "magnetic box", "gift color box", "window design", "festival packaging box", "green printing", "rush printing", "beauty packaging", "pharmaceutical packaging box", "moisture-proof packaging", "food-grade box"],
@@ -3849,7 +3849,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "賞状印刷 | プロ印刷 高品質 | ZprintPro",
-        "description": "賞状印刷サービス、高品質紙に金箔・銀箔オプション可能。学校・企業・スポーツ大会向け表彰状・感謝状、50枚〜即日発送対応、日本語縦書き対応、日本向けDHL配送2-4日。無料デザインサポート、複数回修正OK。| ZprintPro智印雲",
+        "description": "賞状印刷サービス、高品質紙に金箔・銀箔オプション可能。学校・企業・スポーツ大会向け表彰状・感謝状、50枚〜即日発送対応、縦書き横書き両対応可能。日本向けDHL配送2-4日追跡番号付き。無料デザインサポート、複数回修正対応、深夜受付OK。| ZprintPro智印雲",
         "h1": "Exquisite certificates with foil stamping",
         "keywords": ["賞状印刷", "賞状印刷 印刷", "certificates", "宿題バッグ印刷", "学生手帳印刷", "教師自作教材", "表彰状印刷", "クラス名札バッグ", "卒業記念アルバム", "卒業証書印刷", "科目分類フォルダー", "無線綴じレジュメ", "中綴じ教材"],
         "body": " fast delivery."
@@ -4042,7 +4042,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "電子製品包装箱 | カスタム印刷 | ZprintPro",
-        "description": "電子製品パッケージボックス印刷サービス、静電気防止加工オプション。EC・D2Cブランド・精密機器メーカー向け、100個〜少量対応、日本向けDHL短納期配送2-4日。無料サンプル対応、安全素材採用で商品保護強化。| ZprintPro智印雲",
+        "description": "電子製品パッケージボックス印刷サービス、静電気防止加工オプション標準装備。EC・D2Cブランド・精密機器メーカー向け、100個〜少量対応、日本向けDHL短納期配送2-4日追跡番号付き。無料デザインサポート、安全素材採用で商品保護強化、複数回修正OK。| ZprintPro智印雲",
         "h1": " electronics packaging box",
         "keywords": ["電子製品包装箱", "electronics packaging box", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "香港衛生署", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
         "body": " electronics packaging box"
@@ -4160,7 +4160,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Fruit & Food Label Stickers | Die-Cut Vinyl | ZprintPro",
-        "description": "Fruit Food Label Stickers, FDA-compliant. Free Design, 100 MOQ, Free Shipping $99+. 4-day USA delivery. | ZprintPro",
+        "description": "Fruit Food Label Stickers, FDA-compliant. Free Design, 100 MOQ, Free Shipping $99+. 4-day USA delivery for food brands. | ZprintPro",
         "h1": "Fruit & Food Label Stickers 100+ | ZprintPro",
         "keywords": ["fruit & food label stickers", "custom fruit & food label stickers", "fruit & food label stickers free shipping", "fruit & food label stickers USD", "bulk fruit & food label stickers", "fruit & food label stickers DHL", "bespoke fruit & food label stickers", "fruit food label stickers wholesale", "fruit food label stickers pricing", "fruit food label stickers bulk", "sticker printing", "custom stickers", "waterproof stickers", "vinyl stickers", "die-cut stickers", "transparent stickers", "removable stickers", "bulk stickers", "label printing", "product stickers", "1000 stickers", "A4 sticker", "Etsy sticker", "QR code sticker", "expiry date sticker", "no residue", "scannable sticker", "removable sticker", "round sticker", "wedding sticker", "student sticker", "custom sticker", "ingredient label", "ingredient label sticker", "label sticker printing", "event interaction", "logistics tracking", "glass sticker", "birthday sticker", "die-cut sticker", "economy sticker", "welcome sign sticker", "transparent sticker printing", "food-grade sticker", "high-transparent sticker"],
         "body": "ZprintPro Fruit & Food Label Stickers for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Die-Cut Vinyl, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -4168,7 +4168,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "フルーツ・食品ラベル印刷 | カスタム印刷 | ZprintPro",
-        "description": "フルーツ食品ラベルステッカー印刷サービス、食品FDA認証素材採用で果物・食品ブランドに最適。防水・耐油加工、剥がしやすく糊残なし、100枚〜即日発送対応、日本向けDHL配送2-4日。無料デザインサポート。| ZprintPro智印雲",
+        "description": "フルーツ食品ラベルステッカー印刷サービス、食品FDA認証素材採用で果物・食品ブランドに最適。防水・耐油加工で冷蔵庫保管対応、剥がしやすく糊残なし特殊粘着、100枚〜即日発送対応、日本向けDHL配送2-4日追跡番号付き。無料デザインサポート、複数回修正OK。| ZprintPro智印雲",
         "h1": " fruit & food label stickers",
         "keywords": ["フルーツ・食品ラベル印刷", "fruit & food label stickers", "ステッカー印刷", "防水ステッカー", "オリジナルステッカー", "小ロットステッカー", "ダイカットステッカー", "透明ステッカー", "商品ラベル", "カスタムステッカー", "剥がせるステッカー", "ロゴステッカー", "1000枚ステッカー", "A4 ステッカー", "Etsy ステッカー", "QR コードステッカー", "賞味期限ステッカー", "ノーリボン残留", "残留なし", "スキャン可能ステッカー", "円形ステッカー", "ウェディングステッカー", "学生ステッカー", "成分表示", "成分表示ステッカー", "ラベルステッカー印刷", "イベント双方向", "物流追跡", "ガラスステッカー", "誕生日ステッカー", "エコノミーステッカー", "ウェルカムステッカー", "透明ステッカー印刷", "食品グレードステッカー", "高透明ステッカー"],
         "body": " fruit & food label stickers"
@@ -4209,7 +4209,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "同人誌印刷 コミケ対応 | 即日発送 24時間特急",
-        "description": "同人誌印刷サービス、無線綴じ・中綴じ・PUR製本対応。A5/B5サイズ表紙フルカラー本文モノクロ。コミケ・即売会向け50冊〜少部数対応、即日発送オプション、日本全国DHL配送2-4日。無料デザインサポート。| ZprintPro智印雲",
+        "description": "同人誌印刷サービス、無線綴じ・中綴じ・PUR製本対応。A5/B5サイズ表紙フルカラー本文モノクロ印刷。コミケ・即売会向け50冊〜少部数対応、即日発送オプション、日本全国DHL配送2-4日追跡番号付き。無料デザインサポート、24時間特急対応可能。| ZprintPro智印雲",
         "h1": "同人誌印刷 コミケ・即売会対応",
         "keywords": ["同人誌印刷", "コミケ", "同人誌", "即売会", "印刷", "A5同人誌", "少部数印刷", "コミケ前特急", "即売会印刷"],
         "body": "<p>コミケ・即売会・創作イベント向けに最適化された同人誌印刷。表紙フルカラー + 本文モノクロの標準構成から、表紙本文ともにフルカラーのプレミアム構成まで対応。本文 10 部からの少部数対応で、個人サークル・初心者も気軽に発注可能。コミケ開催前は 24 時間特急対応で、在庫切れの追加印刷も迅速対応。</p><h3>サイズ・仕様</h3><p>材質: FSC認証 上質紙 90g/コート紙 90g (表紙)。サイズ: A5 (148×210mm) / B5 (182×257mm) / A4 (オプション)。印刷方式: 表紙: オフセット4色 / 本文: オンデマンド or オフセット。加工: 無線綴じ / 中綴じ (8-64p) / 背表紙。</p>"
@@ -4251,14 +4251,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Custom Acrylic Keychain VTuber Character Goods | MOQ 10",
-        "description": "Acrylic Keychain custom printing, 2mm/3mm clear acrylic. Free design mockup, 50 MOQ, free shipping $99+. Fast 4-day USA delivery for anime & creator brands. | ZprintPro",
+        "description": "Acrylic Keychain, 2mm/3mm clear acrylic. Free Design, 50 MOQ, Free Shipping $99+. 4-day USA delivery for anime & creator brands. | ZprintPro",
         "h1": "Custom Acrylic Keychain — Anime & VTuber Character Goods",
         "keywords": ["acrylic keychain", "character keychain", "anime merchandise", "oshi-katsu", "VTuber goods", "anime goods", "custom keychain", "doujin merchandise"],
         "body": "<p>Custom acrylic keychains for anime, VTuber, and character merchandise. Fully customizable shapes — your VTuber logo or favorite character artwork becomes a wearable keychain. Choose 2mm or 3mm thickness for different price points and tactile feel. MOQ of 10 pcs makes it accessible for individual artists and doujin event participation.</p><h3>Specifications</h3><p>Material: Clear acrylic 2mm/3mm (white base / full-color print optional). Size: 30-80mm (custom shapes via Illustrator path data). Print method: UV inkjet 4-color (CMYK + white ink).</p>"
       },
       "ja": {
         "title": "アクリルキーホルダー キャラクター形 推し活応援 | 10個から",
-        "description": "アクリルキーホルダー印刷サービス、高透明2mm/3mmアクリル採用で完全カスタム形状対応。日本同人・アニメ・VTuber・推し活ブランド向け、50個〜即日発送、日本向けDHL配送2-4日。無料デザインサポート。| ZprintPro智印雲",
+        "description": "アクリルキーホルダー印刷サービス、高透明2mm/3mmアクリル採用で完全カスタム形状対応。日本同人・アニメ・VTuber・推し活ブランド向け、50個〜即日発送対応、日本向けDHL配送2-4日追跡番号付き。無料デザインサポート、複数回修正OK、安全ピンオプション。| ZprintPro智印雲",
         "h1": "アクリルキーホルダー キャラクター形 推し活応援",
         "keywords": ["アクリルキーホルダー", "キャラキーホルダー", "推し活", "VTuber グッズ", "アニメ グッズ", "カスタム キーホルダー", "同人グッズ", "オタク グッズ"],
         "body": "<p>推し活応援・キャラクターグッズ・アクリルスタンドの小型版。完全なカスタム形状対応 — VTuber のロゴ、推しキャラのイラストをそのままキーホルダー化。2mm と 3mm 厚で価格・手触りが異なる。10 個から対応で、個人作家・同人イベント参加にも最適。</p><h3>サイズ・仕様</h3><p>材質: 透明アクリル板 2mm/3mm (オプション: 白ベース/満版印刷)。サイズ: 30-80mm (カスタム形状可、Illustrator パスデータ入稿)。印刷方式: UV インクジェット 4色 (CMYK + 白インク)。加工: 安全ピン/ボールチェーン/ナスカン/ヘッダーOPP袋封入。</p>"
@@ -4447,7 +4447,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Graduation Yearbook | 50 MOQ | Free US Ship | ZprintPro",
-        "description": "Graduation Yearbook custom printing, hardcover & softcover binding. Free design mockup, 50 book MOQ, free shipping $99+. Fast 4-day USA delivery for schools. | ZprintPro",
+        "description": "Graduation Yearbook, hardcover & softcover binding. Free Design, 50 MOQ, Free Shipping $99+. 4-day USA delivery for schools. | ZprintPro",
         "h1": "Graduation Yearbook Printing — 50 MOQ · 3 Binding Options",
         "keywords": ["graduation yearbook printing", "school anniversary publication", "alumni magazine", "yearbook binding", "perfect bound yearbook", "hardcover yearbook", "saddle stitch book", "FSC certified", "Free Design Mockup", "Free Shipping"],
         "body": "3 binding options for graduation yearbooks: saddle stitch (32-80 pages, lowest cost, spreads across pages) / perfect bound PUR (80-200 pages, printable spine) / hardcover (80-400 pages, grey board with art paper, foil-stamped, archival quality)."
