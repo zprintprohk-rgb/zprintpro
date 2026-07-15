@@ -148,6 +148,7 @@ export default function ProductPage({
   // 获取产品信息
   const productTitle = getProductTitle(product, locale);
   const productDescription = getProductDescription(product, locale);
+  const skuSeo = getSkuSeo(slug);
   
   // 面包屑数据
   const breadcrumbItems = [
@@ -506,7 +507,14 @@ export default function ProductPage({
           
           {/* 地區化內容區域 */}
           <div className="mt-16 pt-10 border-t border-gray-200 space-y-8">
-            <ProductWhyChooseUs locale={locale} />
+            {skuSeo?.seo?.[locale]?.body && (
+            <div className="prose prose-gray max-w-none">
+              <div className="text-gray-700 leading-relaxed whitespace-pre-line text-base">
+                {skuSeo.seo[locale].body}
+              </div>
+            </div>
+          )}
+          <ProductWhyChooseUs locale={locale} />
             <div className="p-6">
               <p className="text-gray-600 text-sm leading-relaxed">
                 <RegionalContent locale={locale} type="expertIntro" />
