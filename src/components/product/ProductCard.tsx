@@ -34,6 +34,11 @@ const translations = {
   },
 };
 
+// 2026-07-15: 防御性 helper - 清理 title_zh / buildProductH1ZhHk 输出中可能的多余空白
+// 同时充当 real source change 强制 Next.js 重新 bundle ProductCard chunk
+// (cae8fad component 改动 + 2 次空 commit rebuild 仍 hit 增量缓存, 需实质改动触发 re-compile)
+const normalizeTitle = (s: string): string => s.replace(/\s+/g, ' ').trim();
+
 const categoryFallbacks: Record<string, { icon: typeof Box; gradient: string; iconColor: string }> = {
   'business-cards': { icon: CreditCard, gradient: 'from-blue-500/15 to-indigo-600/15', iconColor: 'text-blue-500' },
   'stickers': { icon: Tag, gradient: 'from-orange-500/15 to-red-500/15', iconColor: 'text-orange-500' },
@@ -138,7 +143,7 @@ export function ProductCard({ product, locale }: ProductCardProps) {
       {/* Product Info */}
       <div className="p-4">
         <h3 className="font-semibold text-[#333333] group-hover:text-[#2873F5] transition-colors line-clamp-1">
-          {getProductName()}
+          {normalizeTitle(getProductName())}
         </h3>
         <p className="text-sm text-[#666666] mt-1 line-clamp-2">
           {getProductDescription()}

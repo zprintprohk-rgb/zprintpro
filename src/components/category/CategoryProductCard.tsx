@@ -39,6 +39,11 @@ const translations = {
   'ja': { hot: '人気', getQuote: '今すぐ注文', viewMore: '詳細を見る', from: 'から' },
 };
 
+// 2026-07-15: 防御性 helper - 清理 title_zh / buildProductH1ZhHk 输出中可能的多余空白
+// 同时充当 real source change 强制 Next.js 重新 bundle CategoryProductCard chunk
+// (cae8fad component 改动 + 2 次空 commit rebuild 仍 hit 增量缓存, 需实质改动触发 re-compile)
+const normalizeTitle = (s: string): string => s.replace(/\s+/g, ' ').trim();
+
 export function CategoryProductCard({ product, locale, index }: CategoryProductCardProps) {
   const t = translations[locale];
   const localePrefix = `/${locale}`;
@@ -117,7 +122,7 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
 
       {/* product name + desc */}
       <div className="px-4 pt-2">
-        <h3 className="text-lg font-bold text-[#333333] text-center">{getName()}</h3>
+        <h3 className="text-lg font-bold text-[#333333] text-center">{normalizeTitle(getName())}</h3>
         <p className="text-sm text-gray-500 text-center mt-1 line-clamp-2 h-[40px]">{shortDesc}</p>
       </div>
 
