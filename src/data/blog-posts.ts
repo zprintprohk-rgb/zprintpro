@@ -1212,7 +1212,66 @@ export const blogPosts: BlogPostMeta[] = [
   lpBabyProductLabel,
   lpEcommerceShippingBag,
   lpMediaMerchandiseBox,
+  // 2026-07-15 daily-content-evolve add 3 (Q-017/018/019 new)
+  lpThickPaperFlyer,
+  lpMagneticClosureGiftBox,
+  lpFoldingBoxCosmetics,
 ];
+
+// =============================================================================
+// Q-017/018/019 entries
+// =============================================================================
+
+const lpThickPaperFlyer: BlogPostMeta = {
+  slug: 'thick-paper-flyer-printing-restaurant-takeout-guide',
+  categoryKey: 'flyers',
+  source: 'daily',
+  date: '2026-07-15',
+  title: {
+    'zh-hk': '厚紙傳單印刷指南 · 香港餐廳外賣單張厚紙選材攻略 | 智印雲 ZprintPro',
+    en: 'Thick Paper Flyer Printing Guide · Restaurant Menu Inserts & Takeout for US Food Service | ZprintPro',
+    ja: '厚紙チラシ印刷ガイド · 飲食店メニュー・テイクアウト向け完全解説 | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '香港餐廳旺季前必睇。200g-400g 全規格厚紙傳單,5,000 張 250g 銅版紙 A4 雙面四色 + 雙面過膠 HK$0.65/張 起。100 張起印,5-7 個工作天交貨,順豐本地派送港九新界。',
+    en: 'US restaurant chains, ghost kitchens, and QSR owners: a 250gsm thick paper flyer with logo + weekly special + QR code + loyalty stamp is the cheapest repeat-customer driver. ZprintPro supplies 200gsm to 400gsm full-range stocks.',
+    ja: '日本のレストラン・居酒屋・カフェ・テイクアウト专卖店様へ。200gsm〜400gsm 全規格厚紙チラシ、100 枚試刷から 200,000 枚チェーン展開まで対応、4 営業日国内生産、$99 以上で全国無料配送。',
+  },
+};
+
+const lpMagneticClosureGiftBox: BlogPostMeta = {
+  slug: 'magnetic-closure-gift-box-ecommerce-brand-guide',
+  categoryKey: 'packaging',
+  source: 'daily',
+  date: '2026-07-15',
+  title: {
+    'zh-hk': '磁吸禮盒定制指南 · 跨境電商品牌升級包裝方案 | 智印雲 ZprintPro',
+    en: 'Magnetic Closure Gift Box Guide · Cross-Border E-commerce Premium Packaging for US DTC Brands | ZprintPro',
+    ja: 'マグネット式ギフト ボックス カスタムガイド · 越境EC・DTC ブランド向けプレミアム包装 | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '亞馬遜 FBA、Shopify 獨立站，Etsy 手作店、Kickstarter 群眾募資、訂閱盒 DTC 品牌必睇。157g 灰板 + 128g 雙銅紙磁吸禮盒,500 個 HK$22/個 起,DHL 全球 2-4 日送達,DDP 完稅到門。',
+    en: 'US Shopify, Amazon FBA, Etsy, Kickstarter, subscription box DTC brands: magnetic closure box with crisp snap + foil logo + soft-touch lamination is the fastest premium differentiator. ZprintPro supplies 100-piece trials to 50,000-piece rollouts.',
+    ja: '日本の Shopify、Amazon FBA、Etsy、Kickstarter、Subscription Box DTC ブランドオーナー様へ。100 個 Kickstarter 試作から 50,000 個チェーン展開まで対応、5-10 営業日生産。',
+  },
+};
+
+const lpFoldingBoxCosmetics: BlogPostMeta = {
+  slug: 'folding-box-cosmetics-brand-eco-friendly-guide',
+  categoryKey: 'packaging',
+  source: 'daily',
+  date: '2026-07-15',
+  title: {
+    'zh-hk': '折疊盒定制指南 · 美妝護膚品牌環保包裝攻略 | 智印雲 ZprintPro',
+    en: 'Folding Box Printing Guide · Eco-Friendly Cosmetics Brand Packaging for US Skincare & Beauty | ZprintPro',
+    ja: '折り畳み箱 カスタム ガイド · 化粧品・スキンケア ブランド向けエコ包装 | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '美妝護膚品牌、面膜品牌、精華液品牌、口紅品牌、彩妝品牌，手作護膚品品牌必睇。300g 牛卡 / 350g 白卡 / 400g 雙面白卡 / 300g 再生紙 / 350g 黑卡 5 款折疊盒材質,FSC 認證 + 大豆油墨 + 可回收標誌全套。',
+    en: 'US skincare, serum, sheet mask, lipstick, makeup brands: 5 eco-friendly folding box materials — 300gsm kraft / 350gsm white card / 400gsm duplex / 300gsm recycled / 350gsm black card. FSC certified + soy ink + recyclable mark.',
+    ja: '日本のスキンケア、美容液、シート マスク、口紅、メイク、手作り化粧品ブランドオーナー様へ。5 素材折り畳み箱、FSC 認証 + 大豆インク + リサイクル マーク完備。',
+  },
+};
 
 // =============================================================================
 // Helpers
