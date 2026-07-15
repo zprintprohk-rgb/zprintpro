@@ -55,19 +55,22 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
   const hasImage = imageSrc && !imgError;
 
   const getName = () => {
-    // 2026-07-15 列表页标题同步 V8 优化版:
-    //   1. zh-hk 优先用 title_zh (V8 优化, 已有 47/85 SKU 补了)
-    //   2. fallback 用 h1-builder v2 buildProductH1ZhHk 实时生成 (覆盖 38 没 title_zh 的 SKU)
-    //   3. 14 类目页全用 CategoryProductCard, 1 处覆盖
-    //   4. en/ja 保持 nameEn/nameJa (留 P3 WARN 收尾)
+    // 2026-07-15 列表页标题同步 V8 优化版 (rev 2: 修 cae8fad root cause):
+    //   1. zh-hk 永远走 buildProductH1ZhHk 实时生成 V8 32字优化版
+    //   2. base input 优先用 title_zh (短名 4-9 字, V8 期间补的)
+    //   3. fallback 用 product.name.split('|')[0].trim() (V6 短名)
+    //   4. 关键: 旧 cae8fad "if (title_zh) return title_zh" 是错的
+    //      - title_zh 只是 4-9 字短名, 不是 V8 32字优化版
+    //      - V8 32字必须由 buildProductH1ZhHk 运行时生成
+    //   5. en/ja 保持 nameEn/nameJa (留 P3 WARN 收尾)
     switch (locale) {
       case 'en': return product.nameEn;
       case 'ja': return product.nameJa;
       default: {
-        if ((product as any).title_zh) return (product as any).title_zh;
+        const baseTitle = (product as any).title_zh || product.name.split('|')[0].trim();
         const cat = categories.find(c => c.slug === product.category);
         return buildProductH1ZhHk(
-          product.name,
+          baseTitle,
           (cat as any)?.name_zh || (cat as any)?.name || product.category,
           product.category,
           product.slug
