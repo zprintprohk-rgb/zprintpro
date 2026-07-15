@@ -28,7 +28,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Premium Business Cards | Foil UV | Free US Ship | ZprintPro",
-        "description": "Premium business card printing. 300g-400g matte paper, foil stamping, spot UV. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001. Get a quote.",
+        "description": "Premium Business Cards, 350gsm premium paper. Free Design, 100 MOQ, Free Shipping $99+. 4-day USA delivery for small business. | ZprintPro",
         "h1": "Premium Business Cards | Luxury Foil | ZprintPro",
         "keywords": ["premium business cards","custom premium business cards","premium business cards printing","foil stamped business cards","thick 400gsm business cards","matte finish business cards","premium business cards free shipping","luxury business cards online","business cards USD","bespoke business cards UK"],
         "body": "ZprintPro Premium Business Card Printing for executives, finance, legal, and creative professionals across the US and global markets. 300g-400g matte, cotton, or coated paper with foil stamping, spot UV, embossing, and rounded corner options. 100-card MOQ, Free US shipping over $100, FSC paper, ISO 9001 certified."
@@ -60,7 +60,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "專業商務印刷 / 專業商務印刷 | 香港專業商務印刷訂製 300g銅版紙或250g啞粉藝術紙 | ZprintPro智印雲",
       "en": "Premium business cards with foil stamping and spot UV on 300g-400g matte or cotton paper — ZprintPro",
-      "ja": " fast delivery."
+      "ja": "プレミアム名刺 / 高級紙 | プレミアム名刺印刷 プレミアム紙 100枚〜 日本向け | ZprintPro智印雲"
     }
   },
   "thick-business-cards-400g": {
@@ -79,7 +79,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Thick Business Cards (400g) | Foil UV Multi-Finish",
-        "description": "Custom thick business cards (400g) from ZprintPro Hong Kong. Foil UV Multi-Finish, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO.",
+        "description": "Thick Business Cards 400gsm custom printing, ultra-thick premium paper. Free design mockup, 100 MOQ, free shipping $99+. Fast 4-day USA delivery. | ZprintPro",
         "h1": "Thick Business Cards (400g) 100+ | ZprintPro",
         "keywords": ["400g thick business cards","custom thick business cards 400g","thick business cards 400g printing hong kong","thick business cards (400g) free shipping","thick business cards (400g) USD","bulk thick business cards (400g)","thick business cards (400g) DHL","bespoke thick business cards (400g)","custom thick business cards (400g)","thick business cards 400g wholesale"],
         "body": "ZprintPro Thick Business Cards (400g) for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Foil UV Multi-Finish, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -129,7 +129,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Foil Business Cards | Gold Silver | Free US Ship | ZprintPro",
-        "description": "Foil stamped business cards in gold, silver, rose gold, copper, holographic. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified. Quote.",
+        "description": "Foil Business Cards with gold/silver foil stamping. Free Design, 100 MOQ, Free Shipping $99+. 4-day USA turnaround. | ZprintPro",
         "h1": "Foil Business Cards | Hot Stamp | ZprintPro",
         "keywords": ["foil business cards","gold foil business cards","silver foil cards","rose gold business cards","hot foil stamping","luxury business cards","foil cards custom","cards free shipping","bulk foil cards","bespoke foil stationery"],
         "body": "ZprintPro Foil Stamped Business Card Printing for executives, finance, law, luxury real estate, and corporate gifting across US and global markets. Hot stamp foil in gold, silver, rose gold, copper, holographic, and black on 350-600g matte, cotton, or uncoated card. 100-card MOQ, Free US shipping over $100, FSC certified."
@@ -180,7 +180,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Spot UV Business Cards | Matte+UV | Free US Ship | ZprintPro",
-        "description": "Spot UV business cards with glossy logo contrast. Matte base + UV coating. 100-MOQ. Free US shipping over $100, DHL Express. ±0.2mm precision. Order today.",
+        "description": "Spot UV Business Cards, glossy UV coating on logos. Free Design, 100 MOQ, Free Shipping $99+. 4-day USA delivery. | ZprintPro",
         "h1": "Spot UV Business Cards | Matte + Gloss | ZprintPro",
         "keywords": ["spot UV business cards","spot UV cards","matte gloss business cards","glossy logo cards","modern business cards","creative business cards","UV coating cards","cards free shipping","bulk spot UV cards","bespoke UV stationery"],
         "body": "ZprintPro Spot UV Business Card Printing for creative agencies, designers, tech startups, and modern brands across US and global markets. Matte lamination base with glossy UV coating on selected areas (logo, name, pattern) for striking dimensional contrast. 100-card MOQ, Free US shipping over $100, ±0.2mm registration precision."
@@ -231,7 +231,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Matte Business Cards | Soft-Touch | Free US Ship | ZprintPro",
-        "description": "Matte laminated business cards, soft-touch and fingerprint-resistant. 300-400g card stock. 100-MOQ. Free US shipping over $100, DHL Express. 2-3 day turnaround.",
+        "description": "Matte Business Cards custom printing, 300gsm matte paper. Free design mockup, 100 MOQ, Free Shipping $99+. 4-day USA delivery for premium brands. | ZprintPro",
         "h1": "Matte Business Cards | Soft-Touch | ZprintPro",
         "keywords": ["matte business cards","matte laminated cards","soft touch business cards","modern business cards","professional business cards","fingerprint resistant cards","cards free shipping","bulk matte cards","matte cards USD","bespoke matte stationery"],
         "body": "ZprintPro Matte Laminated Business Card Printing for creative agencies, designers, tech startups, finance, law, and modern professionals across US and global markets. 300-400g art card with soft-touch matte lamination, fingerprint resistant, sophisticated color reproduction. 100-card MOQ, Free US shipping over $100, 2-3 day production."
@@ -282,7 +282,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Rounded Corner Cards | R3 R5 R10 | Free US Ship | ZprintPro",
-        "description": "Rounded corner business cards. R3, R5, or R10mm radius. Matte or gloss finish. 100-MOQ. Free US shipping over $100, DHL Express. Modern + durable. Quote.",
+        "description": "Rounded Corner Cards custom printing, smooth 4-corner radius finishing. Free design mockup, 100 MOQ, Free Shipping $99+. 4-day USA delivery. | ZprintPro",
         "h1": "Rounded Corner Cards | R3 R5 R10 | ZprintPro",
         "keywords": ["rounded corner business cards","rounded corner cards","R3mm cards","R5mm business cards","modern business cards","creative cards","soft corner cards","cards free shipping","bulk rounded cards","bespoke rounded stationery"],
         "body": "ZprintPro Rounded Corner Business Card Printing for creative agencies, tech startups, modern lifestyle brands, and contemporary professionals across US and global markets. R3mm, R5mm, or R10mm radius on 300-400g matte, gloss, or uncoated card. 100-card MOQ, Free US shipping over $100, free design optimization."
@@ -314,7 +314,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": " fast delivery. | 香港印刷 | ZprintPro智印雲",
       "en": "Rounded corner business cards in matte or gloss finish with R3/R5/R10mm radius options — ZprintPro",
-      "ja": "時尚圓角名片定制 | 智印雲"
+      "ja": "角丸名刺 / 角丸加工 | 角丸名刺印刷 角丸加工 100枚〜 即日発送 | ZprintPro智印雲"
     }
   },
   "double-sided-cards": {
@@ -483,7 +483,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Waterproof Stickers | Durable PVC | Free US Ship | ZprintPro",
-        "description": "Waterproof stickers for outdoor labels. PVC, gloss lamination, die-cut. 100-MOQ, 3-5 year. Free US shipping over $100, DHL Express. SGS tested. Get a quote.",
+        "description": "Waterproof Stickers custom printing, PVC UV-resistant material. Free design mockup, 100 MOQ, Free Shipping $99+. 4-day USA delivery for DTC brands. | ZprintPro",
         "h1": "Waterproof Stickers | Outdoor PVC | ZprintPro",
         "keywords": ["waterproof stickers", "custom waterproof stickers", "waterproof sticker printing", "vinyl stickers waterproof", "die cut stickers outdoor", "PVC stickers durable", "waterproof stickers free shipping", "bulk waterproof stickers", "stickers USD", "bespoke stickers UK", "sticker printing", "custom stickers", "vinyl stickers", "die-cut stickers", "transparent stickers", "removable stickers", "bulk stickers", "label printing", "product stickers", "1000 stickers", "A4 sticker", "Etsy sticker", "QR code sticker", "expiry date sticker", "no residue", "scannable sticker", "removable sticker", "round sticker", "wedding sticker", "student sticker", "custom sticker", "ingredient label", "ingredient label sticker", "label sticker printing", "event interaction", "logistics tracking", "glass sticker", "birthday sticker", "die-cut sticker", "economy sticker", "welcome sign sticker", "transparent sticker printing", "food-grade sticker", "high-transparent sticker"],
         "body": "ZprintPro Custom Waterproof Sticker Printing for outdoor labels, product packaging, car decals, and equipment tags across the US and global markets. PVC or PP synthetic facestock with matte or gloss lamination, die-cut shapes, and variable QR codes. 100-sticker MOQ, Free US shipping over $100, SGS migration tested."
@@ -535,7 +535,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Transparent Stickers | Die-Cut Vinyl | ZprintPro",
-        "description": "Custom transparent stickers from ZprintPro Hong Kong. Die-Cut Vinyl, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 certified.",
+        "description": "Transparent Stickers custom printing, clear PET material. Free design mockup, 100 MOQ, Free Shipping $99+. 4-day USA delivery for product labels. | ZprintPro",
         "h1": "Transparent Stickers 100+ | ZprintPro",
         "keywords": ["transparent stickers", "custom transparent stickers", "transparent stickers printing hong kong", "transparent stickers free shipping", "transparent stickers USD", "bulk transparent stickers", "transparent stickers DHL", "bespoke transparent stickers", "transparent stickers wholesale", "transparent stickers pricing", "sticker printing", "custom stickers", "waterproof stickers", "vinyl stickers", "die-cut stickers", "removable stickers", "bulk stickers", "label printing", "product stickers", "1000 stickers", "A4 sticker", "Etsy sticker", "QR code sticker", "expiry date sticker", "no residue", "scannable sticker", "removable sticker", "round sticker", "wedding sticker", "student sticker", "custom sticker", "ingredient label", "ingredient label sticker", "label sticker printing", "event interaction", "logistics tracking", "glass sticker", "birthday sticker", "die-cut sticker", "economy sticker", "welcome sign sticker", "transparent sticker printing", "food-grade sticker", "high-transparent sticker"],
         "body": "ZprintPro Transparent Stickers for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Die-Cut Vinyl, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -636,7 +636,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Small Batch Stickers | 50+ MOQ | Free US Ship | ZprintPro",
-        "description": "Small batch stickers for startups and creators. Vinyl, paper, holographic, foil. 50-MOQ, 3-5 day. Free US shipping over $100, DHL Express. No setup fees.",
+        "description": "Small Batch Stickers custom printing, low 50 MOQ. Free design mockup, free shipping $99+. Fast 4-day USA delivery for small business & startups. | ZprintPro",
         "h1": "Small Batch Stickers 50+ | No Setup | ZprintPro",
         "keywords": ["small batch stickers", "custom stickers small quantity", "50 stickers minimum", "startup stickers", "indie brand stickers", "creator stickers", "holographic stickers", "foil stickers small", "stickers free shipping", "bulk custom stickers", "sticker printing", "custom stickers", "waterproof stickers", "vinyl stickers", "die-cut stickers", "transparent stickers", "removable stickers", "bulk stickers", "label printing", "product stickers", "1000 stickers", "A4 sticker", "Etsy sticker", "QR code sticker", "expiry date sticker", "no residue", "scannable sticker", "removable sticker", "round sticker", "wedding sticker", "student sticker", "custom sticker", "ingredient label", "ingredient label sticker", "label sticker printing", "event interaction", "logistics tracking", "glass sticker", "birthday sticker", "die-cut sticker", "economy sticker", "welcome sign sticker", "transparent sticker printing", "food-grade sticker", "high-transparent sticker"],
         "body": "ZprintPro Small Batch Sticker Printing for startups, indie brands, creators, weddings, and event favors across US and global markets. 50-sticker minimum for vinyl/clear, 100 for paper/kraft/foil, with no setup fees. Available in vinyl, clear, holographic, kraft, and metallic foil. 3-5 day production, Free US shipping over $100."
@@ -687,7 +687,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Die-Cut Stickers | Custom Shape | Free US Ship | ZprintPro",
-        "description": "Custom die-cut stickers in any shape. Vinyl, holographic, foil, ±0.2mm precision. 100-MOQ. Free US shipping over $100, DHL Express. Outdoor 3-5yr. Quote.",
+        "description": "Die-Cut Stickers custom printing, any shape cutting. Free design mockup, 100 MOQ, free shipping $99+. Fast 4-day USA delivery for creative brands. | ZprintPro",
         "h1": "Die-Cut Stickers 100+ | Custom Shape | ZprintPro",
         "keywords": ["die cut stickers", "custom shape stickers", "die cut vinyl stickers", "kiss cut stickers", "logo stickers custom", "holographic die cut", "foil die cut stickers", "stickers free shipping", "bulk die cut stickers", "bespoke sticker shapes", "sticker printing", "custom stickers", "waterproof stickers", "vinyl stickers", "die-cut stickers", "transparent stickers", "removable stickers", "bulk stickers", "label printing", "product stickers", "1000 stickers", "A4 sticker", "Etsy sticker", "QR code sticker", "expiry date sticker", "no residue", "scannable sticker", "removable sticker", "round sticker", "wedding sticker", "student sticker", "custom sticker", "ingredient label", "ingredient label sticker", "label sticker printing", "event interaction", "logistics tracking", "glass sticker", "birthday sticker", "die-cut sticker", "economy sticker", "welcome sign sticker", "transparent sticker printing", "food-grade sticker", "high-transparent sticker"],
         "body": "ZprintPro Die-Cut Sticker Printing for brand logos, packaging seals, laptop decals, and promotional merchandise across US and global markets. Digital cutting with ±0.2mm precision for vinyl, holographic, clear, and metallic foil. 100-sticker MOQ, Free US shipping over $100, outdoor durability 3-5 years."
@@ -789,7 +789,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Security Stickers | Tamper Seal | Free US Ship | ZprintPro",
-        "description": "Security stickers for anti-counterfeit. Void-release, destructible, holographic, serialized QR. 100-MOQ. Free US shipping over $100, DHL. FDA, ISO compliant.",
+        "description": "Security Stickers, VOID tamper-evident material. Free Design, 100 MOQ, Free Shipping $99+. 4-day USA delivery for asset tracking. | ZprintPro",
         "h1": "Security Stickers | Anti-Counterfeit | ZprintPro",
         "keywords": ["security stickers", "tamper evident stickers", "void release labels", "anti counterfeit stickers", "security seals", "QR code security", "pharma security labels", "electronics warranty seals", "stickers free shipping", "bulk security stickers", "sticker printing", "custom stickers", "waterproof stickers", "vinyl stickers", "die-cut stickers", "transparent stickers", "removable stickers", "bulk stickers", "label printing", "product stickers", "1000 stickers", "A4 sticker", "Etsy sticker", "QR code sticker", "expiry date sticker", "no residue", "scannable sticker", "removable sticker", "round sticker", "wedding sticker", "student sticker", "custom sticker", "ingredient label", "ingredient label sticker", "label sticker printing", "event interaction", "logistics tracking", "glass sticker", "birthday sticker", "die-cut sticker", "economy sticker", "welcome sign sticker", "transparent sticker printing", "food-grade sticker", "high-transparent sticker"],
         "body": "ZprintPro Security Sticker Printing for pharmaceutical, electronics, luxury goods, food and beverage, and government applications across US and global markets. Void-release, destructible vinyl, holographic seals, and serialized QR codes for track-and-trace. 100-sticker MOQ, Free US shipping over $100, FDA 21 CFR Part 11 compliant."
@@ -840,7 +840,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Fluorescent Stickers | Neon UV | Free US Ship | ZprintPro",
-        "description": "Fluorescent stickers with neon colors and UV glow. Pink, orange, yellow, green, blue. 100-MOQ. Free US shipping over $100, DHL Express. 3-5 day turnaround.",
+        "description": "Fluorescent Stickers custom printing, UV-reactive neon colors. Free design mockup, 100 MOQ, Free Shipping $99+. 4-day USA delivery for events. | ZprintPro",
         "h1": "Fluorescent Stickers 100+ | Neon UV | ZprintPro",
         "keywords": ["fluorescent stickers", "neon stickers", "UV glow stickers", "blacklight stickers", "fluorescent pink stickers", "safety stickers neon", "event stickers neon", "club stickers UV", "stickers free shipping", "bulk fluorescent stickers", "sticker printing", "custom stickers", "waterproof stickers", "vinyl stickers", "die-cut stickers", "transparent stickers", "removable stickers", "bulk stickers", "label printing", "product stickers", "1000 stickers", "A4 sticker", "Etsy sticker", "QR code sticker", "expiry date sticker", "no residue", "scannable sticker", "removable sticker", "round sticker", "wedding sticker", "student sticker", "custom sticker", "ingredient label", "ingredient label sticker", "label sticker printing", "event interaction", "logistics tracking", "glass sticker", "birthday sticker", "die-cut sticker", "economy sticker", "welcome sign sticker", "transparent sticker printing", "food-grade sticker", "high-transparent sticker"],
         "body": "ZprintPro Fluorescent Sticker Printing for events, nightclubs, retail sale signage, safety warnings, and youth-targeted branding across US and global markets. Day-glo fluorescent pigments layered under CMYK in 6 neon colors with UV-reactive blacklight glow. 100-sticker MOQ, Free US shipping over $100, 3-5 day production."
@@ -1230,7 +1230,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "大號紙袋 / 環保 | 香港大號紙袋印刷 FSC 認證紙 | ZprintPro智印雲",
       "en": "Large paper bags printing 12-20kg load 100 MOQ | Free US Ship $99+ | 2-4 day DHL | ZprintPro",
-      "ja": "可以定制紙袋的尺寸和顏色嗎？"
+      "ja": "大型紙袋 / 高耐久素材 | 大型紙袋印刷 強化素材 100個〜 即日発送 | ZprintPro智印雲"
     }
   },
   "a4-flyers": {
@@ -1484,7 +1484,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "厚紙宣傳單張 / 雙面四色 | 香港厚紙宣傳單張印刷 200g或250g銅版紙 | ZprintPro智印雲",
       "en": "Custom thick paper flyers with same-day printing, premium materials — ZprintPro",
-      "ja": "傳單支持雙面印刷嗎？"
+      "ja": "厚口チラシ / 高耐久 | 厚口チラシ印刷 高耐久 100枚〜 即日発送 | ZprintPro智印雲"
     }
   },
   "same-day-flyers": {
@@ -1605,7 +1605,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "A2 Posters | 420x594mm | Free US Ship | ZprintPro",
-        "description": "A2 posters (420x594mm) for retail and events. 150-300g gloss or matte art paper. 100-MOQ. Free US shipping over $100, DHL Express. 2-3 day. FSC certified.",
+        "description": "A2 Posters custom printing, 200gsm coated paper. Free design mockup, 50 MOQ, free shipping $99+. Fast 4-day USA delivery for event & retail display. | ZprintPro",
         "h1": "A2 Posters 100+ | Retail & Events | ZprintPro",
         "keywords": ["A2 posters", "A2 poster printing", "420x594 posters", "event posters A2", "retail posters", "sale posters", "A2 posters free shipping", "bulk A2 posters", "A2 posters USD", "bespoke A2 signage", "poster printing", "A1 posters", "outdoor posters", "exhibition posters", "large format printing", "waterproof posters", "display posters", "event posters", "24h poster printing", "2h express print", "A0 poster", "A1 poster", "A2 poster", "promo poster", "homework poster", "same day shipping", "same day design", "wedding poster printing", "wedding photo wall", "wedding photo poster", "student poster printing", "photo poster", "photo poster printing", "event poster printing", "poster price", "poster layout", "poster design printing", "festival decoration", "presentation poster", "welcome sign printing", "restaurant poster printing"],
         "body": "ZprintPro A2 Poster Printing (420x594mm) for retail stores, events, real estate, restaurants, gyms, and small businesses across US and global markets. 150-300g gloss or matte art paper with 4-color CMYK printing and optional lamination. 100-poster MOQ, Free US shipping over $100, 2-3 day production."
@@ -1811,7 +1811,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Art Posters | Archival 200yr | Free US Ship | ZprintPro",
-        "description": "Museum-quality art posters. Matte cotton, satin photo, Hahnemuhle. 25-MOQ. Free US shipping over $100, DHL Express. 200-year archival ink. COA included.",
+        "description": "Art Posters custom printing, premium matte art paper. Free design mockup, 50 MOQ, Free Shipping $99+. 4-day USA delivery for artists. | ZprintPro",
         "h1": "Art Posters 25+ | Archival Pigment | ZprintPro",
         "keywords": ["art posters", "museum quality prints", "archival posters", "fine art prints", "photography prints", "gallery posters", "limited edition prints", "art posters free shipping", "bulk art prints", "bespoke art reproductions", "poster printing", "A1 posters", "A2 posters", "outdoor posters", "exhibition posters", "large format printing", "waterproof posters", "display posters", "event posters", "retail posters", "24h poster printing", "2h express print", "A0 poster", "A1 poster", "A2 poster", "promo poster", "homework poster", "same day shipping", "same day design", "wedding poster printing", "wedding photo wall", "wedding photo poster", "student poster printing", "photo poster", "photo poster printing", "event poster printing", "poster price", "poster layout", "poster design printing", "festival decoration", "presentation poster", "welcome sign printing", "restaurant poster printing"],
         "body": "ZprintPro Art Poster Printing for independent artists, photographers, illustrators, galleries, curators, and interior designers across US and global markets. Matte cotton, satin photo, or Hahnemuhle Photo Rag with 200+ year archival pigment inks. 25-poster MOQ, Free US shipping over $100, free hand inspection and Certificate of Authenticity."
@@ -1843,7 +1843,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "藝術海報 / 防水材質 | 香港藝術海報印刷 PP 合成紙 | ZprintPro智印雲",
       "en": "Museum-quality art posters on matte cotton or Hahnemuhle Photo Rag with archival pigment inks — ZprintPro",
-      "ja": "海報適合戶外使用嗎？"
+      "ja": "アートポスター / 防水 | アートポスター印刷 防水紙 翌日配送 | ZprintPro智印雲"
     }
   },
   "adhesive-posters": {
@@ -1894,7 +1894,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "背膠海報 / 防水材質 | 香港背膠海報印刷 150g–180g 背膠 PP／鑄造級 PVC | ZprintPro智印雲",
       "en": "Adhesive posters on vinyl with peel-and-stick backing for windows, walls, and vehicles — ZprintPro",
-      "ja": "海報適合戶外使用嗎？"
+      "ja": "粘着ポスター / 防水 | 粘着ポスター印刷 防水紙 翌日配送 | ZprintPro智印雲"
     }
   },
   "gift-boxes": {
@@ -1946,7 +1946,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "禮品盒定製 / 訂製 | 香港禮品盒定製訂製 白卡紙／牛皮裱面／硬紙板結構（依報價） | ZprintPro智印雲",
       "en": "Custom gift boxes in rigid setup with magnetic closure and foil-stamped logos — ZprintPro",
-      "ja": "可以定制包裝盒的尺寸和結構嗎？"
+      "ja": "ギフトボックス / 高級感 | ギフトボックス印刷 高級紙 100個〜 日本向け | ZprintPro智印雲"
     }
   },
   "cosmetic-boxes": {
@@ -1965,8 +1965,8 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": " 4 種盒型 + 內托定制. ZprintPro offers professional 化妝品包裝盒 services in Hong Kong with 100-unit MOQ. 4 box styles (天地蓋 / 磁吸 / 抽屜 / 書型) + custom EVA / paper / PET inner trays."
       },
       "en": {
-        "title": "Cosmetic Packaging Boxes 100 MOQ | 4 Box Styles Magnetic / Drawer / Book | ZprintPro",
-        "description": "Cosmetic packaging boxes from 100 units. 4 box styles (lift-off lid, magnetic closure, drawer-style, book-style) with custom EVA, molded pulp, or PET inner trays. Foil stamping, spot UV, satin lining. Beauty and skincare brands, cross-border e-commerce, Japan market ready. ISO 9001 + FSC certified. Free DHL Express 2-4 day global shipping. 30-second AI quote.",
+        "title": "Cosmetic Boxes | 100 MOQ | Free US Ship | ZprintPro",
+        "description": "Cosmetic Boxes custom printing, premium rigid paperboard. Free design mockup, 100 MOQ, free shipping $99+. Fast 4-day USA delivery for beauty & skincare brands. | ZprintPro",
 
         "h1": "Cosmetic Packaging Boxes — 4 Box Styles · Custom Inner Tray",
         "keywords": ["cosmetic packaging boxes", "cosmetic boxes", "makeup boxes", "skincare boxes", "beauty brand packaging", "custom box styles", "magnetic closure boxes", "drawer boxes", "book-style boxes", "cosmetic boxes printing", "cosmetic OEM", "香港 cosmetic packaging", "packaging box printing", "gift boxes", "food boxes", "mailer boxes", "corrugated boxes", "custom packaging", "rigid boxes", "folding cartons", "product boxes", "100pcs MOQ", "2-day turnaround", "FSC certified", "HK DOH compliance", "QR code packaging", "mid-autumn gift box printing", "health supplement packaging", "free proof", "free layout", "export packaging", "cosmetic packaging box", "instant quote", "compostable packaging", "small batch packaging box", "industrial packaging", "color box printing", "drawer color box", "sustainable packaging", "silver foil printing", "eco packaging box", "corrugated box", "corrugated box printing", "magnetic box", "gift color box", "window design", "festival packaging box", "green printing", "rush printing", "beauty packaging", "pharmaceutical packaging box", "moisture-proof packaging", "food-grade box"],
@@ -2105,7 +2105,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "快遞盒/飛機盒 / 訂製 | 香港快遞盒/飛機盒訂製 E／B 坑瓦楞或白卡裱瓦（依載重） | ZprintPro智印雲",
       "en": "Custom mailer boxes with self-locking tuck-front design, kraft or full-color print — ZprintPro",
-      "ja": "可以定制包裝盒的尺寸和結構嗎？"
+      "ja": "メーラーボックス / 宅配対応 | メーラーボックス印刷 厚紙 100個〜 日本向け | ZprintPro智印雲"
     }
   },
   "folding-boxes": {
@@ -2124,7 +2124,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Folding Boxes | Retail Packaging | Free US Ship | ZprintPro",
-        "description": "Folding boxes for retail. Tuck-end, auto-lock bottom, 350-400g card. 100-MOQ. Free US shipping over $100, DHL Express. FSC, FDA food-safe. Order today.",
+        "description": "Folding Boxes custom printing, eco-friendly kraft paper. Free design mockup, 100 MOQ, Free Shipping $99+. 4-day USA delivery for retail packaging. | ZprintPro",
         "h1": "Folding Boxes 100+ | Auto-Lock | ZprintPro",
         "keywords": ["folding boxes", "folding cartons", "tuck end boxes", "auto lock bottom boxes", "retail packaging boxes", "cosmetic boxes", "food boxes folding", "folding boxes free shipping", "bulk folding boxes", "bespoke folding cartons", "packaging box printing", "gift boxes", "food boxes", "mailer boxes", "corrugated boxes", "custom packaging", "rigid boxes", "product boxes", "100pcs MOQ", "2-day turnaround", "FSC certified", "HK DOH compliance", "QR code packaging", "mid-autumn gift box printing", "health supplement packaging", "free proof", "free layout", "export packaging", "cosmetic packaging box", "instant quote", "compostable packaging", "small batch packaging box", "industrial packaging", "color box printing", "drawer color box", "sustainable packaging", "silver foil printing", "eco packaging box", "corrugated box", "corrugated box printing", "magnetic box", "gift color box", "window design", "festival packaging box", "green printing", "rush printing", "beauty packaging", "pharmaceutical packaging box", "moisture-proof packaging", "food-grade box"],
         "body": "ZprintPro Folding Box Printing for cosmetics, pharmaceuticals, food and beverage, electronics, retail apparel, candles, and small goods across US and global markets. Tuck-end, reverse tuck-end, auto-lock bottom, pillow box, and sleeve box styles. 100-box MOQ, Free US shipping over $100, FSC certified, FDA-compliant for food contact."
@@ -2258,7 +2258,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "燙金利是封 / 燙金 UV | 香港燙金利是封印刷 120g紅色紙張 | ZprintPro智印雲",
       "en": "Custom foil red packets with gold foil print, premium materials — ZprintPro",
-      "ja": "可以燙金定制公司Logo嗎？"
+      "ja": "箔押し年賀状 / 箔押し | 箔押し年賀状印刷 箔押し加工 100個〜 | ZprintPro智印雲"
     }
   },
   "embossed-red-packets": {
@@ -2308,7 +2308,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "浮雕利是封 / 燙金 UV | 香港浮雕利是封印刷 150g紅色紙張 | ZprintPro智印雲",
       "en": "Custom embossed red packets with gold foil print, premium materials — ZprintPro",
-      "ja": "可以燙金定制公司Logo嗎？"
+      "ja": "エンボス年賀状 / エンボス | エンボス年賀状印刷 エンボス加工 100個〜 | ZprintPro智印雲"
     }
   },
   "custom-red-packets": {
@@ -2560,7 +2560,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "掛牆年曆 / 企業禮品 | 香港掛牆年曆印刷 250g–300g銅版紙或啞粉紙 | ZprintPro智印雲",
       "en": "Custom wall calendars with wire-bound spiral, premium materials — ZprintPro",
-      "ja": "可以定制年曆的內頁設計嗎？"
+      "ja": "壁掛けカレンダー / 高品質 | 壁掛けカレンダー印刷 高品質紙 翌日配送 | ZprintPro智印雲"
     }
   },
   "desk-calendars": {
@@ -2611,7 +2611,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "座檯年曆 / 企業禮品 | 香港座檯年曆印刷 200g–250g銅版紙或卡紙 | ZprintPro智印雲",
       "en": "Custom desk calendars with wire-bound spiral, premium materials — ZprintPro",
-      "ja": "可以定制年曆的內頁設計嗎？"
+      "ja": "デスクカレンダー / 高品質 | デスクカレンダー印刷 高品質紙 翌日配送 | ZprintPro智印雲"
     }
   },
   "custom-calendars": {
@@ -2862,7 +2862,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "PVC餐牌 / 防水覆膜 | 香港PVC餐牌製作 0.5mm–1.0mm透明或白色PVC膠片 | ZprintPro智印雲",
       "en": "Custom pvc menus with laminated durable, premium materials — ZprintPro",
-      "ja": "餐牌防水嗎？"
+      "ja": "PVC menu / 防水ラミネート | PVC menu印刷 防水ラミネート 翌日配送 | ZprintPro智印雲"
     }
   },
   "laminated-menus": {
@@ -2913,7 +2913,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "過膠餐牌 / 防水覆膜 | 香港過膠餐牌製作 200g–250g銅版紙或啞粉紙 | ZprintPro智印雲",
       "en": "Custom laminated menus with laminated durable, premium materials — ZprintPro",
-      "ja": "餐牌防水嗎？"
+      "ja": "ラミネート menu / 防水 | ラミネート menu印刷 防水加工 翌日配送 | ZprintPro智印雲"
     }
   },
   "hardcover-menus": {
@@ -3115,7 +3115,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "戶外燈布噴繪 / 高清噴繪 | 香港戶外燈布噴繪製作 外光／內光 PVC 燈布（依場景） | ZprintPro智印雲",
       "en": "Custom outdoor vinyl banners with wind-resistant, premium materials — ZprintPro",
-      "ja": "我們支持最寬5米的無縫拼接，長度不限。"
+      "ja": "屋外ビニールバナー / 防水 | 屋外ビニールバナー印刷 防水・耐光 翌日配送 | ZprintPro智印雲"
     }
   },
   "roll-up-banners": {
@@ -3166,7 +3166,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "易拉寶 / 高清噴繪 | 香港易拉寶製作 PET／PVC 片或防水合成紙 | ZprintPro智印雲",
       "en": "Custom roll up banners with wind-resistant, premium materials — ZprintPro",
-      "ja": "戶外橫幅防曬防水嗎？"
+      "ja": "ロールアップバナー / アルミ | ロールアップバナー印刷 アルミスタンド 高画質 | ZprintPro智印雲"
     }
   },
   "adhesive-banners": {
@@ -3266,7 +3266,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "車身廣告 / 高清噴繪 | 香港車身廣告製作 鑄造級 PVC 車貼 80–100 微米 | ZprintPro智印雲",
       "en": "Custom vehicle wraps with 3m vinyl wrap, premium materials — ZprintPro",
-      "ja": "戶外橫幅防曬防水嗎？"
+      "ja": "車両ラッピング / カスタム | 車両ラッピング印刷 車両フルラップ カスタム | ZprintPro智印雲"
     }
   },
   "mesh-banners": {
@@ -3367,7 +3367,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "香港畫冊印刷 / 精裝膠裝 | 香港畫冊印刷裝訂 內頁157g–200g銅版紙 | ZprintPro智印雲",
       "en": "Custom catalog printing with saddle-stitched, premium materials — ZprintPro",
-      "ja": "支持哪些裝訂方式？"
+      "ja": "カタログ印刷 / 高品質 | カタログ印刷 高品質オフセット 50冊〜 日本向け | ZprintPro智印雲"
     }
   },
   "saddle-stitch-booklets": {
@@ -3418,7 +3418,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "香港騎馬釘小冊子 / 精裝膠裝 | 香港騎馬釘小冊子裝訂 128g–157g銅版紙或書紙 | ZprintPro智印雲",
       "en": "Custom saddle stitch booklets with premium custom, premium materials — ZprintPro",
-      "ja": "支持哪些裝訂方式？"
+      "ja": "中綴じ冊子 / 中綴じ | 中綴じ冊子印刷 中綴じ/無線綴じ 50冊〜 即日発送 | ZprintPro智印雲"
     }
   },
   "perfect-bound-books": {
@@ -3568,7 +3568,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "香港線圈筆記本 / 精裝膠裝 | 香港線圈筆記本裝訂 內頁80g–100g書紙或道林紙 | ZprintPro智印雲",
       "en": "Custom spiral notebooks with perfect bound, premium materials — ZprintPro",
-      "ja": "支持哪些裝訂方式？"
+      "ja": "スパイラルノート / リング | スパイラルノート印刷 リング製本 50冊〜 | ZprintPro智印雲"
     }
   },
   "business-envelopes": {
@@ -3619,7 +3619,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "公司信封 / 開窗信封 | 香港公司信封印刷 80–120g 書紙／本白書紙 | ZprintPro智印雲",
       "en": "Custom business envelopes with foil-lined premium, premium materials — ZprintPro",
-      "ja": "可以定制信封的尺寸嗎？"
+      "ja": "会社封筒 / 両面印刷 | 会社封筒印刷 両面4色 マルチサイズ 即日発送 | ZprintPro智印雲"
     }
   },
   "colored-envelopes": {
@@ -3770,7 +3770,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "珠光信封 / 開窗信封 | 香港珠光信封印刷 珠光／冰白特種書紙 | ZprintPro智印雲",
       "en": "Custom pearl envelopes with foil-lined premium, premium materials — ZprintPro",
-      "ja": "可以定制信封的尺寸嗎？"
+      "ja": "パール封筒 / 高級感 | パール封筒印刷 パール紙 マルチサイズ 即日発送 | ZprintPro智印雲"
     }
   },
   "exercise-books": {
@@ -3821,7 +3821,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "香港練習簿印刷 / 校園印刷 | 香港練習簿印刷 80g–100g書紙或道林紙 | ZprintPro智印雲",
       "en": "Custom exercise books with perfect bound, premium materials — ZprintPro",
-      "ja": "支持學校採購流程嗎？"
+      "ja": "練習帳 / 學校向け | 練習帳印刷 中綴じ/無線綴じ 50冊〜 學校向け | ZprintPro智印雲"
     }
   },
   "certificates": {
@@ -3849,7 +3849,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "賞状印刷 | プロ印刷 高品質 | ZprintPro",
-        "description": "賞状印刷の賞状印刷は ZprintPro にお任せ。157g コート紙 高品質用紙、標準/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "賞状印刷サービス、高品質紙に金箔・銀箔オプション可能。学校・企業・スポーツ大会向け表彰状・感謝状、50枚〜即日発送対応、日本語縦書き対応、日本向けDHL配送2-4日。無料デザインサポート、複数回修正OK。| ZprintPro智印雲",
         "h1": "Exquisite certificates with foil stamping",
         "keywords": ["賞状印刷", "賞状印刷 印刷", "certificates", "宿題バッグ印刷", "学生手帳印刷", "教師自作教材", "表彰状印刷", "クラス名札バッグ", "卒業記念アルバム", "卒業証書印刷", "科目分類フォルダー", "無線綴じレジュメ", "中綴じ教材"],
         "body": " fast delivery."
@@ -3872,7 +3872,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "香港證書印刷 / 校園印刷 | 香港證書印刷 200g–250g水印紙或棉質紙 | ZprintPro智印雲",
       "en": "Custom certificates with embossed seal, premium materials — ZprintPro",
-      "ja": "支持學校採購流程嗎？"
+      "ja": "賞状印刷 / 高品質 | 賞状印刷 高品質紙 金箔オプション 50枚〜 | ZprintPro智印雲"
     }
   },
   "school-flyers": {
@@ -3922,7 +3922,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "香港學校單張 / 校園印刷 | 香港學校單張印刷 128g–157g銅版紙或書紙 | ZprintPro智印雲",
       "en": "Custom school flyers with same-day printing, premium materials — ZprintPro",
-      "ja": "支持學校採購流程嗎？"
+      "ja": "学校チラシ / 學校向け | 学校チラシ印刷 両面4色 100枚〜 學校向け | ZprintPro智印雲"
     }
   },
   "textbooks": {
@@ -3972,7 +3972,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "香港教科書印刷 / 校園印刷 | 香港教科書印刷 80g–100g道林紙或書紙 | ZprintPro智印雲",
       "en": "Custom textbooks with perfect bound, premium materials — ZprintPro",
-      "ja": "支持學校採購流程嗎？"
+      "ja": "教科書 / 高品質 | 教科書印刷 高品質オフセット 50冊〜 學校向け | ZprintPro智印雲"
     }
   },
 
@@ -3992,7 +3992,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Magnetic Closure Gift Box | Premium Custom | ZprintPro",
-        "description": "Custom magnetic closure gift box from ZprintPro Hong Kong. Premium Custom, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 cer.",
+        "description": "Magnetic Gift Box, premium rigid board. Free Design, 100 MOQ, Free Shipping $99+. 4-day USA delivery for premium brands. | ZprintPro",
         "h1": "Magnetic Closure Gift Box 100+ | ZprintPro",
         "keywords": ["magnetic closure gift box", "custom magnetic closure gift box", "magnetic closure gift box free shipping", "magnetic closure gift box USD", "bulk magnetic closure gift box", "magnetic closure gift box DHL", "bespoke magnetic closure gift box", "magnetic closure gift box wholesale", "magnetic closure gift box pricing", "magnetic closure gift box bulk", "packaging box printing", "gift boxes", "cosmetic boxes", "food boxes", "mailer boxes", "corrugated boxes", "custom packaging", "rigid boxes", "folding cartons", "product boxes", "100pcs MOQ", "2-day turnaround", "FSC certified", "HK DOH compliance", "QR code packaging", "mid-autumn gift box printing", "health supplement packaging", "free proof", "free layout", "export packaging", "cosmetic packaging box", "instant quote", "compostable packaging", "small batch packaging box", "industrial packaging", "color box printing", "drawer color box", "sustainable packaging", "silver foil printing", "eco packaging box", "corrugated box", "corrugated box printing", "magnetic box", "gift color box", "window design", "festival packaging box", "green printing", "rush printing", "beauty packaging", "pharmaceutical packaging box", "moisture-proof packaging", "food-grade box"],
         "body": "ZprintPro Magnetic Closure Gift Box for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Premium Custom, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -4000,7 +4000,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "マグネット式ギフトボックス | カスタム印刷 | ZprintPro",
-        "description": "マグネット式ギフトボックスのカスタム印刷は ZprintPro にお任せ。香港直結、安心品質 | 無料デザイン | 100枚〜",
+        "description": "マグネット式ギフトボックス印刷サービス、高品質特殊紙採用でマグネット蓋がピタッと閉まる高級感。ギフトブランド・アパレル向け短納期対応、100個〜少量対応、日本向けDHL配送2-4日。無料デザインサポート、複数回修正OK。| ZprintPro智印雲",
         "h1": " magnetic closure gift box",
         "keywords": ["マグネット式ギフトボックス", "magnetic closure gift box", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "香港衛生署", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
         "body": " magnetic closure gift box"
@@ -4042,7 +4042,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "電子製品包装箱 | カスタム印刷 | ZprintPro",
-        "description": "電子製品包装箱のカスタム印刷は ZprintPro にお任せ。香港直結、安心品質 | 無料デザイン | 100枚〜",
+        "description": "電子製品パッケージボックス印刷サービス、静電気防止加工オプション。EC・D2Cブランド・精密機器メーカー向け、100個〜少量対応、日本向けDHL短納期配送2-4日。無料サンプル対応、安全素材採用で商品保護強化。| ZprintPro智印雲",
         "h1": " electronics packaging box",
         "keywords": ["電子製品包装箱", "electronics packaging box", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "香港衛生署", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
         "body": " electronics packaging box"
@@ -4084,7 +4084,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "クラフト紙包装箱 | カスタム印刷 | ZprintPro",
-        "description": "クラフト紙包装箱のカスタム印刷は ZprintPro にお任せ。香港直結、安心品質 | 無料デザイン | 100枚〜",
+        "description": "クラフト紙パッケージボックス印刷サービス、FSC認証クラフト紙採用でエコ志向ブランドに最適。100個〜即日発送対応、ナチュラル・北欧・カフェブランド向けカスタム印刷、日本向けDHL配送2-4日。無料デザインサポート。| ZprintPro智印雲",
         "h1": " kraft paper packaging box",
         "keywords": ["クラフト紙包装箱", "kraft paper packaging box", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "香港衛生署", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
         "body": " kraft paper packaging box"
@@ -4126,7 +4126,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "引き出し式ギフトボックス | カスタム印刷 | ZprintPro",
-        "description": "引き出し式ギフトボックスのカスタム印刷は ZprintPro にお任せ。香港直結、安心品質 | 無料デザイン | 100枚〜",
+        "description": "引き出し式ギフトボックス印刷サービス、高級特殊紙採用でスルスル引き心地滑らか。ギフトブランド・ジュエリー・化粧品向け短納期対応、100個〜少量対応、日本向けDHL配送2-4日。無料デザインサポート、複数回修正OK。| ZprintPro智印雲",
         "h1": " drawer slide gift box",
         "keywords": ["引き出し式ギフトボックス", "drawer slide gift box", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "香港衛生署", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
         "body": " drawer slide gift box"
@@ -4160,7 +4160,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Fruit & Food Label Stickers | Die-Cut Vinyl | ZprintPro",
-        "description": "Custom fruit & food label stickers from ZprintPro Hong Kong. Die-Cut Vinyl, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001 ce.",
+        "description": "Fruit Food Label Stickers, FDA-compliant. Free Design, 100 MOQ, Free Shipping $99+. 4-day USA delivery. | ZprintPro",
         "h1": "Fruit & Food Label Stickers 100+ | ZprintPro",
         "keywords": ["fruit & food label stickers", "custom fruit & food label stickers", "fruit & food label stickers free shipping", "fruit & food label stickers USD", "bulk fruit & food label stickers", "fruit & food label stickers DHL", "bespoke fruit & food label stickers", "fruit food label stickers wholesale", "fruit food label stickers pricing", "fruit food label stickers bulk", "sticker printing", "custom stickers", "waterproof stickers", "vinyl stickers", "die-cut stickers", "transparent stickers", "removable stickers", "bulk stickers", "label printing", "product stickers", "1000 stickers", "A4 sticker", "Etsy sticker", "QR code sticker", "expiry date sticker", "no residue", "scannable sticker", "removable sticker", "round sticker", "wedding sticker", "student sticker", "custom sticker", "ingredient label", "ingredient label sticker", "label sticker printing", "event interaction", "logistics tracking", "glass sticker", "birthday sticker", "die-cut sticker", "economy sticker", "welcome sign sticker", "transparent sticker printing", "food-grade sticker", "high-transparent sticker"],
         "body": "ZprintPro Fruit & Food Label Stickers for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Die-Cut Vinyl, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
@@ -4168,7 +4168,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "フルーツ・食品ラベル印刷 | カスタム印刷 | ZprintPro",
-        "description": "フルーツ・食品ラベル印刷のカスタム印刷は ZprintPro にお任せ。香港直結、安心品質 | 無料デザイン | 100枚〜",
+        "description": "フルーツ食品ラベルステッカー印刷サービス、食品FDA認証素材採用で果物・食品ブランドに最適。防水・耐油加工、剥がしやすく糊残なし、100枚〜即日発送対応、日本向けDHL配送2-4日。無料デザインサポート。| ZprintPro智印雲",
         "h1": " fruit & food label stickers",
         "keywords": ["フルーツ・食品ラベル印刷", "fruit & food label stickers", "ステッカー印刷", "防水ステッカー", "オリジナルステッカー", "小ロットステッカー", "ダイカットステッカー", "透明ステッカー", "商品ラベル", "カスタムステッカー", "剥がせるステッカー", "ロゴステッカー", "1000枚ステッカー", "A4 ステッカー", "Etsy ステッカー", "QR コードステッカー", "賞味期限ステッカー", "ノーリボン残留", "残留なし", "スキャン可能ステッカー", "円形ステッカー", "ウェディングステッカー", "学生ステッカー", "成分表示", "成分表示ステッカー", "ラベルステッカー印刷", "イベント双方向", "物流追跡", "ガラスステッカー", "誕生日ステッカー", "エコノミーステッカー", "ウェルカムステッカー", "透明ステッカー印刷", "食品グレードステッカー", "高透明ステッカー"],
         "body": " fruit & food label stickers"
@@ -4209,7 +4209,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "同人誌印刷 コミケ対応 | 即日発送 24時間特急",
-        "description": "コミケ・即売会向け同人誌印刷専門。A5/B5 サイズ、表紙フルカラー、本文モノクロ。10 部から対応、コミケ前 24 時間特急対応。日本語サポート、DHL Express 日本直送 2-4 日 | 無料デザイン | 100枚〜",
+        "description": "同人誌印刷サービス、無線綴じ・中綴じ・PUR製本対応。A5/B5サイズ表紙フルカラー本文モノクロ。コミケ・即売会向け50冊〜少部数対応、即日発送オプション、日本全国DHL配送2-4日。無料デザインサポート。| ZprintPro智印雲",
         "h1": "同人誌印刷 コミケ・即売会対応",
         "keywords": ["同人誌印刷", "コミケ", "同人誌", "即売会", "印刷", "A5同人誌", "少部数印刷", "コミケ前特急", "即売会印刷"],
         "body": "<p>コミケ・即売会・創作イベント向けに最適化された同人誌印刷。表紙フルカラー + 本文モノクロの標準構成から、表紙本文ともにフルカラーのプレミアム構成まで対応。本文 10 部からの少部数対応で、個人サークル・初心者も気軽に発注可能。コミケ開催前は 24 時間特急対応で、在庫切れの追加印刷も迅速対応。</p><h3>サイズ・仕様</h3><p>材質: FSC認証 上質紙 90g/コート紙 90g (表紙)。サイズ: A5 (148×210mm) / B5 (182×257mm) / A4 (オプション)。印刷方式: 表紙: オフセット4色 / 本文: オンデマンド or オフセット。加工: 無線綴じ / 中綴じ (8-64p) / 背表紙。</p>"
@@ -4251,14 +4251,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Custom Acrylic Keychain VTuber Character Goods | MOQ 10",
-        "description": "Custom acrylic keychains for anime and VTuber character goods. Fully custom shapes, 2mm/3mm thickness, clear/white/full-color print options. MOQ 10 pcs, safety pin accessory available. DHL Express worldwide 2-4 days.",
+        "description": "Acrylic Keychain custom printing, 2mm/3mm clear acrylic. Free design mockup, 50 MOQ, free shipping $99+. Fast 4-day USA delivery for anime & creator brands. | ZprintPro",
         "h1": "Custom Acrylic Keychain — Anime & VTuber Character Goods",
         "keywords": ["acrylic keychain", "character keychain", "anime merchandise", "oshi-katsu", "VTuber goods", "anime goods", "custom keychain", "doujin merchandise"],
         "body": "<p>Custom acrylic keychains for anime, VTuber, and character merchandise. Fully customizable shapes — your VTuber logo or favorite character artwork becomes a wearable keychain. Choose 2mm or 3mm thickness for different price points and tactile feel. MOQ of 10 pcs makes it accessible for individual artists and doujin event participation.</p><h3>Specifications</h3><p>Material: Clear acrylic 2mm/3mm (white base / full-color print optional). Size: 30-80mm (custom shapes via Illustrator path data). Print method: UV inkjet 4-color (CMYK + white ink).</p>"
       },
       "ja": {
         "title": "アクリルキーホルダー キャラクター形 推し活応援 | 10個から",
-        "description": "推し活応援・VTuber 向けアクリルキーホルダー。完全カスタム形状、2mm/3mm 選択、透明/白/満版印刷対応。10 個から対応、安全ピン オプション。DHL Express 日本直送 2-4 日 | 無料デザイン | 100枚〜",
+        "description": "アクリルキーホルダー印刷サービス、高透明2mm/3mmアクリル採用で完全カスタム形状対応。日本同人・アニメ・VTuber・推し活ブランド向け、50個〜即日発送、日本向けDHL配送2-4日。無料デザインサポート。| ZprintPro智印雲",
         "h1": "アクリルキーホルダー キャラクター形 推し活応援",
         "keywords": ["アクリルキーホルダー", "キャラキーホルダー", "推し活", "VTuber グッズ", "アニメ グッズ", "カスタム キーホルダー", "同人グッズ", "オタク グッズ"],
         "body": "<p>推し活応援・キャラクターグッズ・アクリルスタンドの小型版。完全なカスタム形状対応 — VTuber のロゴ、推しキャラのイラストをそのままキーホルダー化。2mm と 3mm 厚で価格・手触りが異なる。10 個から対応で、個人作家・同人イベント参加にも最適。</p><h3>サイズ・仕様</h3><p>材質: 透明アクリル板 2mm/3mm (オプション: 白ベース/満版印刷)。サイズ: 30-80mm (カスタム形状可、Illustrator パスデータ入稿)。印刷方式: UV インクジェット 4色 (CMYK + 白インク)。加工: 安全ピン/ボールチェーン/ナスカン/ヘッダーOPP袋封入。</p>"
@@ -4307,7 +4307,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "缶バッジ印刷 57mm 76mm | 推し活応援 コミケ対応",
-        "description": "缶バッジ印刷専門。57mm 標準 + 76mm 大判 + 44mm ミニ。安全扣付き、フルカラー印刷、10 個から対応。コミケ・推し活応援・物販用に最適。DHL Express 日本直送 2-4 日 | 無料デザイン | 100枚〜",
+        "description": "缶バッジ印刷サービス、高品質アルミ素材採用で57mm標準+76mm大判+44mmミニ対応。安全ピン付き、フルカラー印刷、日本同人・アニメ・推し活・物販ブランド向け、50個〜即日発送、日本向けDHL配送2-4日。無料デザインサポート。| ZprintPro智印雲",
         "h1": "缶バッジ印刷 57mm 76mm コミケ・推し活応援",
         "keywords": ["缶バッジ印刷", "缶バッジ", "バッジ", "推し活", "コミケ", "VTuber グッズ", "アニメ グッズ", "安全ピン バッジ"],
         "body": "<p>コミケ・推し活・VTuber 物販に必須の缶バッジ。57mm 標準サイズと 76mm 大判、44mm ミニの 3 サイズ展開。フルカラー印刷でイラスト・ロゴをそのまま再現。安全ピン標準装備で衣服・カバンに簡単装着。10 個から少部数対応で、個人サークルも気軽に発注可能。</p><h3>サイズ・仕様</h3><p>材質: 金属ベース + 紙/ペット印刷面 + 安全ピン。サイズ: 57mm (標準) / 76mm (大判) / 44mm (ミニ)。印刷方式: オフセット/デジタル 4色 (CMYK)。加工: 安全ピン標準装備 / OPP袋個別包装オプション。</p>"
@@ -4446,8 +4446,8 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "body": "畢業紀念冊常用 3 種裝訂方式: 騎馬釘 (32-80 頁, 成本最低, 跨頁照片) / 無線膠裝 PUR (80-200 頁, 書脊可印刷) / 精裝 (80-400 頁, 灰板裱特種紙, 燙金收藏級)。"
       },
       "en": {
-        "title": "Graduation Yearbook Printing 50 MOQ | Saddle / Perfect / Hardcover | ZprintPro",
-        "description": "Graduation yearbook, school anniversary and alumni publication printing from 50 copies | Free Design | 100 MOQ",
+        "title": "Graduation Yearbook | 50 MOQ | Free US Ship | ZprintPro",
+        "description": "Graduation Yearbook custom printing, hardcover & softcover binding. Free design mockup, 50 book MOQ, free shipping $99+. Fast 4-day USA delivery for schools. | ZprintPro",
         "h1": "Graduation Yearbook Printing — 50 MOQ · 3 Binding Options",
         "keywords": ["graduation yearbook printing", "school anniversary publication", "alumni magazine", "yearbook binding", "perfect bound yearbook", "hardcover yearbook", "saddle stitch book", "FSC certified", "Free Design Mockup", "Free Shipping"],
         "body": "3 binding options for graduation yearbooks: saddle stitch (32-80 pages, lowest cost, spreads across pages) / perfect bound PUR (80-200 pages, printable spine) / hardcover (80-400 pages, grey board with art paper, foil-stamped, archival quality)."

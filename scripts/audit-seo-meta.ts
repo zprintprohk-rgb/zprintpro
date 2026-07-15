@@ -147,8 +147,9 @@ function checkMeta(meta: string): FieldIssue[] {
     issues.push({ field: 'meta', severity: 'info', msg: `Meta 偏短 (${len} 字符, 建议 120-160)` });
   }
 
-  // 4. CTA 缺失
-  const hasCTA = CTA_TRIGGERS_ZHHK.some(t => meta.includes(t));
+  // 4. CTA 缺失 (case-insensitive, 2026-07-15 fix: Google 检索不区分大小写)
+  const metaLower = meta.toLowerCase();
+  const hasCTA = CTA_TRIGGERS_ZHHK.some(t => metaLower.includes(t.toLowerCase()));
   if (!hasCTA) {
     issues.push({ field: 'meta', severity: 'warn', msg: `CTA 缺失 (无 ${CTA_TRIGGERS_ZHHK.slice(0, 4).join('/')} 等关键词)` });
   }
