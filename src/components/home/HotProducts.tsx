@@ -8,7 +8,7 @@ import { ArrowRight, ChevronRight, Search, ShoppingBag, FileText, Tag, Package, 
 import { Locale } from '@/lib/seo';
 import { shouldShowPrice, getQuoteLabel, convertPriceRangeString } from '@/lib/pricing';
 import { getProductMainImage } from '@/lib/product-image';
-import { products, categories, getProductTitle, getProductDescription, getProductImageAlt } from '@/data/products';
+import { products, categories, getProductDisplayTitle, getProductDescription, getProductImageAlt } from '@/data/products';
 import { getWhatsAppLinkProps } from '@/lib/whatsapp';
 
 interface HotProductsProps {
@@ -239,7 +239,7 @@ export function HotProducts({ locale }: HotProductsProps) {
           <div className="flex-1 relative right-[-5px]">
             <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4">
               {hotProducts.map((product, index) => {
-                const productName = getProductTitle(product, locale);
+                const productName = getProductDisplayTitle(product, locale);
                 const productDesc = getProductDescription(product, locale);
                 const imageSrc = getProductMainImage(product, locale);
                 return (

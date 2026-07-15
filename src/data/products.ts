@@ -3,6 +3,8 @@
  * 从CSV加载84个SKU产品数据
  * 提供分类、搜索、筛选功能
  */
+
+import { buildProductH1ZhHk, buildProductH1En, buildProductH1Ja } from '@/lib/h1-builder';
 import { getSkuSeo } from '@/data/sku-seo-data';
 
 export interface Product {
@@ -19332,6 +19334,37 @@ export function getProductTitle(product: Product, locale: string): string {
   // 注意: 拆完再做 trim 避免 "A | B" → " A" 残留
   const short = raw.split('|')[0].trim();
   return short || raw;  // 极端 fallback（空 short 时回退原 name）
+}
+
+// V8 优化版 display title (SSoT for ALL display contexts: 首页/搜索/RelatedProducts/QuoteCalculator)
+// 2026-07-15 修首页短标题 root cause: 4 caller 之前直接用 getProductTitle 返 V6 短名
+//   - HotProducts.tsx (首页)
+//   - src/components/ProductCard.tsx (search page, capital P)
+//   - RelatedProducts.tsx (PDP 推荐)
+//   - QuoteCalculator.tsx (报价计算器)
+//
+// 修法: 新加此函数永远返 V8 (走 h1-builder for 3 locale), 4 caller 切换即可.
+// page.tsx (PDP) 仍用 getProductTitle (V6) 因为 h1-builder input 需要短名, 不能 V8 → V8 builder.
+export function getProductDisplayTitle(product: Product, locale: string): string {
+  const baseTitle = getProductTitle(product, locale); // V6 短名
+  switch (locale) {
+    case 'en':
+      return buildProductH1En(baseTitle, product.category_slug);
+    case 'ja':
+      return buildProductH1Ja(baseTitle, product.category_slug);
+    case 'zh-hk':
+    default: {
+      // 优先用 title_zh 字段 (Cline V8 期间补的短名), 没有再 fallback 到 getProductTitle
+      const shortBase = (product as any).title_zh || baseTitle;
+      const cat = categories.find(c => c.slug === product.category);
+      return buildProductH1ZhHk(
+        shortBase,
+        (cat as any)?.name_zh || (cat as any)?.name || product.category,
+        product.category,
+        product.slug
+      );
+    }
+  }
 }
 
 // 获取产品描述（根据语言）

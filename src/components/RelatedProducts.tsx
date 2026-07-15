@@ -5,7 +5,7 @@
 
 import { Product } from '@/data/products';
 import { Locale } from '@/lib/seo';
-import { getProductsByCategory, getProductTitle, getProductImageAlt } from '@/data/products';
+import { getProductsByCategory, getProductDisplayTitle, getProductImageAlt } from '@/data/products';
 import { getProductMainImage } from '@/lib/product-image';
 
 interface RelatedProductsProps {
@@ -57,7 +57,7 @@ export function RelatedProducts({ currentProduct, locale }: RelatedProductsProps
             </div>
             <div className="p-3">
               <h3 className="text-lg font-medium text-gray-900 line-clamp-1 group-hover:text-[#2873F5]">
-                {getProductTitle(product, locale)}
+                {getProductDisplayTitle(product, locale)}
               </h3>
               <p className="text-sm text-[#F87314] font-semibold mt-1">{product.price_range}</p>
             </div>

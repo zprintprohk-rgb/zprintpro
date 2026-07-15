@@ -10,7 +10,7 @@ import Image from 'next/image';
 import { CreditCard, Tag, ShoppingBag, FileText, ImageIcon, Package, BookOpen, Flag, Calendar, Mail, Gift, GraduationCap, Box } from 'lucide-react';
 import { Product } from '@/data/products';
 import { Locale } from '@/lib/seo';
-import { getProductTitle, getProductDescription, getProductImageAlt } from '@/data/products';
+import { getProductDisplayTitle, getProductDescription, getProductImageAlt } from '@/data/products';
 import { getProductMainImage } from '@/lib/product-image';
 
 interface ProductCardProps {
@@ -35,7 +35,7 @@ const categoryFallbacks: Record<string, { icon: typeof Box; gradient: string; ic
 };
 
 export function ProductCard({ product, locale }: ProductCardProps) {
-  const title = getProductTitle(product, locale);
+  const title = getProductDisplayTitle(product, locale);
   const description = getProductDescription(product, locale);
   const [imgError, setImgError] = useState(false);
   

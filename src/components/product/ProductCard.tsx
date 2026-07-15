@@ -5,8 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { Star, CreditCard, Tag, ShoppingBag, FileText, ImageIcon, Package, BookOpen, Flag, Calendar, Mail, Gift, GraduationCap, Box } from 'lucide-react';
 import { Locale } from '@/lib/seo';
-import { Product, categories } from '@/data/products';
-import { buildProductH1ZhHk } from '@/lib/h1-builder';
+import { Product, getProductDisplayTitle } from '@/data/products';
 
 interface ProductCardProps {
   product: Product;
@@ -61,28 +60,10 @@ export function ProductCard({ product, locale }: ProductCardProps) {
   const [imgError, setImgError] = useState(false);
 
   const getProductName = () => {
-    // 2026-07-15 列表页标题同步 V8 优化版 (rev 2: 修 cae8fad root cause):
-    //   1. zh-hk 永远走 buildProductH1ZhHk 实时生成 V8 32字优化版
-    //   2. base input 优先用 title_zh (短名 4-9 字, V8 期间补的)
-    //   3. fallback 用 product.name.split('|')[0].trim() (V6 短名)
-    //   4. 关键: 旧 cae8fad "if (title_zh) return title_zh" 是错的
-    //      - title_zh 只是 4-9 字短名, 不是 V8 32字优化版
-    //      - V8 32字必须由 buildProductH1ZhHk 运行时生成
-    //   5. en/ja 保持 nameEn/nameJa (留 P3 WARN 收尾)
-    switch (locale) {
-      case 'en': return product.nameEn;
-      case 'ja': return product.nameJa;
-      default: {
-        const baseTitle = (product as any).title_zh || product.name.split('|')[0].trim();
-        const cat = categories.find(c => c.slug === product.category);
-        return buildProductH1ZhHk(
-          baseTitle,
-          (cat as any)?.name_zh || (cat as any)?.name || product.category,
-          product.category,
-          product.slug
-        );
-      }
-    }
+    // 2026-07-15 列表页标题同步 V8 优化版 (rev 3: SSoT getProductDisplayTitle):
+    //   修 c924465 → 全部 caller 统一到 getProductDisplayTitle (含 en/ja V8)
+    //   旧: en/ja 直接返 nameEn/nameJa (V6 短名), 现: en/ja 走 buildProductH1En/Ja
+    return getProductDisplayTitle(product, locale);
   };
 
   const getProductDescription = () => {
