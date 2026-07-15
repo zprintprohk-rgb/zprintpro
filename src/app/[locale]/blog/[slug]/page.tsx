@@ -280,6 +280,10 @@ const posts: Record<string, Record<string, { title: string; description: string;
       date: '2026-07-14', category: 'Media Merchandise',
       content: '',
     },
+    // 2026-07-15 daily-content-evolve: Q-017/018/019 new blogs
+    'thick-paper-flyer-printing-restaurant-takeout-guide': { title: "Thick Paper Flyer Printing Guide - Restaurant Menu Inserts & Takeout for US Food Service | ZprintPro", description: "US restaurant chains, ghost kitchens, and QSR owners: a 250gsm thick paper flyer with logo + weekly special + QR code is the cheapest repeat-customer driver. ZprintPro supplies 200gsm to 400gsm full-range stocks, 100-piece test runs to 200,000-piece chain rollouts.", date: '2026-07-15', category: 'Thick Paper Flyer', content: '' },
+    'magnetic-closure-gift-box-ecommerce-brand-guide': { title: "Magnetic Closure Gift Box Guide - Cross-Border E-commerce Premium Packaging for US DTC Brands | ZprintPro", description: "US Shopify, Amazon FBA, Etsy, Kickstarter, subscription box DTC brands: magnetic closure box with crisp snap + foil logo is the fastest premium differentiator. ZprintPro supplies 100-piece trials to 50,000-piece rollouts.", date: '2026-07-15', category: 'Magnetic Gift Box', content: '' },
+    'folding-box-cosmetics-brand-eco-friendly-guide': { title: "Folding Box Printing Guide - Eco-Friendly Cosmetics Brand Packaging for US Skincare & Beauty | ZprintPro", description: "US skincare, serum, sheet mask, lipstick, makeup brands: 5 eco-friendly folding box materials. FSC certified + soy ink + recyclable mark. 500-piece from $0.13/box, 5-10 business day production.", date: '2026-07-15', category: 'Eco Folding Box', content: '' },
 
   },
   ja: {
@@ -389,6 +393,10 @@ const posts: Record<string, Record<string, { title: string; description: string;
     'baby-product-label-sticker-printing-guide': { title: "ベビー用品ステッカー印刷ガイド：FDA食品衛生ラベル 日本向け | ZprintPro", description: "日本の粉ミルク・ベビーフード・赤ちゃんスキンケア・マタニティ栄養ブランドオーナー様へ。FDA 準拠・BPA-free・冷凍対応ラベルが shelf 審査とママ世代 SNS 信頼を獲得。智印雲は 500〜100,000 枚小〜大ロット、5-7 営業日納品、$99 以上無料配送、DHL 国際配送対応。", date: '2026-07-14', category: 'ベビーステッカー', content: '' },
     'ecommerce-shipping-bag-printing-guide': { title: "EC配送袋印刷ガイド：防水・改ざん防止 日本物流向け | ZprintPro", description: "日本の Amazon FBA・Shopify・Etsy・3PL 倉庫ブランドオーナー様へ。改ざん防止シール・追跡バーコード・返品ラベル付きの高品質印刷配送袋が、開封体験と返品率を決定。智印雲は防水クラフト・カスタム印刷・剥離粘着で 1,000〜200,000 個小〜大ロット、5-10 営業日納品、$99 以上無料配送、全国送料込み。", date: '2026-07-14', category: '配送袋', content: '' },
     'media-merchandise-box-printing-guide': { title: "メディアフランチャイズ コレクターズボックス印刷ガイド：限定版・予約・日本ファン向け | ZprintPro", description: "日本の映像 IP スタジオ・アニメブランド・Comic-Con 出展者・限定版コレクティブ会社向け。高品質 IP グッズボックスがファンロイヤルティ・二次拡散率・中古市場プレミアムを決定。智印雲は引出し式・マグネット式・限定ナンバー印刷・UV スポット + 箔押しロゴでグローバルメディアフランチャイズ市場に 100-10,000 個小〜大ロット、7-15 営業日納品対応。", date: '2026-07-14', category: '映像IPグッズ', content: '' },
+    // 2026-07-15 daily-content-evolve: Q-017/018/019 new blogs (ja locale)
+    'thick-paper-flyer-printing-restaurant-takeout-guide': { title: "厚紙チラシ印刷ガイド - 飲食店メニュー・テイクアウト向け完全解説 | ZprintPro", description: "日本のレストラン・居酒屋・カフェ・テイクアウト专卖店様へ。200gsm〜400gsm 全規格厚紙チラシ、100 枚試刷から 200,000 枚チェーン展開まで対応、4 営業日国内生産、$99 以上で全国無料配送。", date: '2026-07-15', category: '厚紙チラシ', content: '' },
+    'magnetic-closure-gift-box-ecommerce-brand-guide': { title: "マグネット式ギフト ボックス カスタムガイド - 越境EC・DTC ブランド向けプレミアム包装 | ZprintPro", description: "日本の Shopify、Amazon FBA、Etsy、Kickstarter、Subscription Box DTC ブランドオーナー様へ。100 個 Kickstarter 試作から 50,000 個チェーン展開まで対応、5-10 営業日生産。", date: '2026-07-15', category: 'マグネット ボックス', content: '' },
+    'folding-box-cosmetics-brand-eco-friendly-guide': { title: "折り畳み箱 カスタム ガイド - 化粧品・スキンケア ブランド向けエコ包装 | ZprintPro", description: "日本のスキンケア、美容液、シート マスク、口紅、メイク、手作り化粧品ブランドオーナー様へ。5 素材折り畳み箱、FSC 認証 + 大豆インク + リサイクル マーク完備。", date: '2026-07-15', category: 'エコ 折り畳み箱', content: '' },
 
   }
 };
