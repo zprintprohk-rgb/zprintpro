@@ -75,8 +75,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
       shippingNote: '結算時算價',
       totalAmount: '應收金額',
       estDelivery: '預計交貨期',
-      uploadDesign: '上傳設計稿',
-      designNote: '支持 PDF, AI, PSD, PNG, JPG 格式（最大50MB）',
+      // uploadDesign + designNote removed 2026-07-16 — unified via /contact/
       deliveryTime: '預計交貨',
       days: '工作日',
       priceNote: '價格以客服確認為準',
@@ -109,8 +108,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
       shippingNote: 'Calculated at checkout',
       totalAmount: 'Total Amount',
       estDelivery: 'Est. Delivery',
-      uploadDesign: 'Upload Design',
-      designNote: 'Support PDF, AI, PSD, PNG, JPG (max 50MB)',
+      // uploadDesign + designNote removed 2026-07-16 — unified via /contact/
       deliveryTime: 'Est. Delivery',
       days: 'business days',
       priceNote: 'Price subject to confirmation',
@@ -143,8 +141,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
       shippingNote: '決済時に計算',
       totalAmount: '合計金額',
       estDelivery: '予定納期',
-      uploadDesign: 'デザインをアップロード',
-      designNote: 'PDF, AI, PSD, PNG, JPG対応（最大50MB）',
+      // uploadDesign + designNote removed 2026-07-16 — unified via /contact/
       deliveryTime: '予定納期',
       days: '営業日',
       priceNote: '価格は確認が必要です',
