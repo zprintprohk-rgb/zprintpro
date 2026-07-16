@@ -451,6 +451,10 @@ const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-
   'restaurant-opening-flyer-printing-guide',
   'cosmetics-packaging-box-printing-guide',
   'pet-food-sticker-printing-guide',
+  // 2026-07-16 fix: Q-017/018/019 daily blog routing (之前 42ddb10/e1bda86 failed, 根因 = articleSlugs 缺位)
+  'thick-paper-flyer-printing-restaurant-takeout-guide',
+  'magnetic-closure-gift-box-ecommerce-brand-guide',
+  'folding-box-cosmetics-brand-eco-friendly-guide',
 ];
 const guideSlugs = getAllBuyingGuideSlugs();
 const clusterSlugs = getAllClusterSlugs();
