@@ -1129,7 +1129,7 @@ const lpMediaMerchandiseBox: BlogPostMeta = {
   },
 };
 
-// Unified list (39 articles)
+// Unified list (42 articles)
 // =============================================================================
 
 
@@ -1272,6 +1272,10 @@ export const blogPosts: BlogPostMeta[] = [
   lpThickPaperFlyer,
   lpMagneticClosureGiftBox,
   lpFoldingBoxCosmetics,
+  // 2026-07-16 v4 daily-content-evolve add 3 (Q-001/002/003 P0 SKU)
+  lpRestaurantOpeningFlyer,
+  lpCosmeticsPackagingBox,
+  lpPetFoodSticker,
 ];
 
 // =============================================================================

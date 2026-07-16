@@ -98,7 +98,10 @@
       "expected_words_zh": 850,
       "expected_faqs": 4,
       "queued_at": "2026-07-04",
-      "priority_boost": 1
+      "priority_boost": 1,
+      "status": "completed",
+      "completed_at": "2026-07-16",
+      "completed_slug": "restaurant-opening-flyer-printing-guide"
     },
     {
       "id": "Q-002",
@@ -121,7 +124,10 @@
       "expected_words_zh": 850,
       "expected_faqs": 4,
       "queued_at": "2026-07-04",
-      "priority_boost": 1
+      "priority_boost": 1,
+      "status": "completed",
+      "completed_at": "2026-07-16",
+      "completed_slug": "cosmetics-packaging-box-printing-guide"
     },
     {
       "id": "Q-003",
@@ -144,7 +150,10 @@
       "expected_words_zh": 900,
       "expected_faqs": 4,
       "queued_at": "2026-07-06",
-      "priority_boost": 2
+      "priority_boost": 2,
+      "status": "completed",
+      "completed_at": "2026-07-16",
+      "completed_slug": "pet-food-sticker-printing-guide"
     },
     {
       "id": "Q-004",
@@ -1323,6 +1332,30 @@
       "cf_build_run": "pending-2026-07-14",
       "deployed_commit": "pending-2026-07-14",
       "note": "2026-07-14 daily cron Tier C 影視IP 行業首次覆蓋 (Disney/Netflix/Aniplex/Comic-Con/Anime Expo/D23 — 100 MOQ Kickstarter + 全球展會配送)"
+    },
+    {
+      "slug": "restaurant-opening-flyer-printing-guide",
+      "date": "2026-07-16",
+      "qid": "Q-001",
+      "category": "餐飲外賣",
+      "tier": "A",
+      "priority": "P0"
+    },
+    {
+      "slug": "cosmetics-packaging-box-printing-guide",
+      "date": "2026-07-16",
+      "qid": "Q-002",
+      "category": "美妝護膚",
+      "tier": "A",
+      "priority": "P0"
+    },
+    {
+      "slug": "pet-food-sticker-printing-guide",
+      "date": "2026-07-16",
+      "qid": "Q-003",
+      "category": "寵物",
+      "tier": "A",
+      "priority": "P0"
     }
   ],
   "skipped": {
@@ -1526,5 +1559,6 @@
     "upgrades": [],
     "manual_review": [],
     "reason_no_apply": "GSC CSV snapshot (6/17) 不能判 30/90 天连续趋势, 跳过自动 Tier 切换"
-  }
+  },
+  "lastUpdated": "2026-07-16"
 }

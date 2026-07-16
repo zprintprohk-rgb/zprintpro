@@ -284,6 +284,24 @@ const posts: Record<string, Record<string, { title: string; description: string;
     'thick-paper-flyer-printing-restaurant-takeout-guide': { title: "Thick Paper Flyer Printing Guide - Restaurant Menu Inserts & Takeout for US Food Service | ZprintPro", description: "US restaurant chains, ghost kitchens, and QSR owners: a 250gsm thick paper flyer with logo + weekly special + QR code is the cheapest repeat-customer driver. ZprintPro supplies 200gsm to 400gsm full-range stocks, 100-piece test runs to 200,000-piece chain rollouts.", date: '2026-07-15', category: 'Thick Paper Flyer', content: '' },
     'magnetic-closure-gift-box-ecommerce-brand-guide': { title: "Magnetic Closure Gift Box Guide - Cross-Border E-commerce Premium Packaging for US DTC Brands | ZprintPro", description: "US Shopify, Amazon FBA, Etsy, Kickstarter, subscription box DTC brands: magnetic closure box with crisp snap + foil logo is the fastest premium differentiator. ZprintPro supplies 100-piece trials to 50,000-piece rollouts.", date: '2026-07-15', category: 'Magnetic Gift Box', content: '' },
     'folding-box-cosmetics-brand-eco-friendly-guide': { title: "Folding Box Printing Guide - Eco-Friendly Cosmetics Brand Packaging for US Skincare & Beauty | ZprintPro", description: "US skincare, serum, sheet mask, lipstick, makeup brands: 5 eco-friendly folding box materials. FSC certified + soy ink + recyclable mark. 500-piece from $0.13/box, 5-10 business day production.", date: '2026-07-15', category: 'Eco Folding Box', content: '' },
+    'restaurant-opening-flyer-printing-guide': {
+      title: '餐廳開業傳單印刷指南 · 香港餐飲旺季速遞方案 | 智印雲 ZprintPro',
+      description: '香港新餐廳開業如何用 A4 傳單吸客？本文整理旺季速遞、紙張選擇、單／雙面印刷、摺疊款實戰策略，附 4 條餐飲東主常見 FAQ，協助茶餐廳／私房菜／外賣小店精準觸及街坊與上班族。',
+      date: '2026-07-16', category: '餐飲外賣',
+      content: '',
+    },
+    'cosmetics-packaging-box-printing-guide': {
+      title: '化妝品包裝盒定制指南 · 護膚品牌結構與材質全攻略 | 智印雲 ZprintPro',
+      description: '護膚品新品牌如何揀包裝盒？比較天地盒、磁吸盒、摺疊盒 3 大結構，分析銅版紙、灰板、密度板等材質特性，附 4 條品牌創辦人常見 FAQ，協助 100-10,000 件 MOQ 精準控成本。',
+      date: '2026-07-16', category: '美妝護膚',
+      content: '',
+    },
+    'pet-food-sticker-printing-guide': {
+      title: '香港寵物食品品牌貼紙印刷指南 · 防水防油 FDA 認證 | 智印雲 ZprintPro',
+      description: '寵物食品新品牌點樣印合格標籤？比較防水貼紙、防油貼紙、透明貼紙 3 種材質，分析 FDA 食品級認證、BPA-free 油墨、QR Code 追溯系統，附 4 條品牌創辦人 FAQ，協助 100-10,000 件 MOQ。',
+      date: '2026-07-16', category: '寵物',
+      content: '',
+    },
 
   },
   ja: {
@@ -397,6 +415,24 @@ const posts: Record<string, Record<string, { title: string; description: string;
     'thick-paper-flyer-printing-restaurant-takeout-guide': { title: "厚紙チラシ印刷ガイド - 飲食店メニュー・テイクアウト向け完全解説 | ZprintPro", description: "日本のレストラン・居酒屋・カフェ・テイクアウト专卖店様へ。200gsm〜400gsm 全規格厚紙チラシ、100 枚試刷から 200,000 枚チェーン展開まで対応、4 営業日国内生産、$99 以上で全国無料配送。", date: '2026-07-15', category: '厚紙チラシ', content: '' },
     'magnetic-closure-gift-box-ecommerce-brand-guide': { title: "マグネット式ギフト ボックス カスタムガイド - 越境EC・DTC ブランド向けプレミアム包装 | ZprintPro", description: "日本の Shopify、Amazon FBA、Etsy、Kickstarter、Subscription Box DTC ブランドオーナー様へ。100 個 Kickstarter 試作から 50,000 個チェーン展開まで対応、5-10 営業日生産。", date: '2026-07-15', category: 'マグネット ボックス', content: '' },
     'folding-box-cosmetics-brand-eco-friendly-guide': { title: "折り畳み箱 カスタム ガイド - 化粧品・スキンケア ブランド向けエコ包装 | ZprintPro", description: "日本のスキンケア、美容液、シート マスク、口紅、メイク、手作り化粧品ブランドオーナー様へ。5 素材折り畳み箱、FSC 認証 + 大豆インク + リサイクル マーク完備。", date: '2026-07-15', category: 'エコ 折り畳み箱', content: '' },
+    'restaurant-opening-flyer-printing-guide': {
+      title: 'レストラン開業チラシ印刷ガイド · サイズ・用紙・短期納品 | ZprintPro',
+      description: '新規オープンする飲食店向けに、A4 チラシのサイズ、用紙（128/157/250gsm）、両面印刷、折り加工を解説。店内飲食とテイクアウト両方に対応した 4 つの FAQ 付きで、香港・日本・東南アジア市場向け。',
+      date: '2026-07-16', category: '餐飲外賣',
+      content: '',
+    },
+    'cosmetics-packaging-box-printing-guide': {
+      title: '化粧品パッケージ箱カスタムガイド · 素材・構造・ブランディング | ZprintPro',
+      description: 'スキンケアブランド向けに、天地箱・マグネット式・折り箱の 3 構造を比較。素材（コート紙・グレー板・密度板）、印刷加工、最低発注数量まで解説。ブランド創業者からよくある質問 4 件付き。',
+      date: '2026-07-16', category: '美妝護膚',
+      content: '',
+    },
+    'pet-food-sticker-printing-guide': {
+      title: 'ペットフードステッカー印刷ガイド：防水・FDA 準拠ラベル素材 | ZprintPro',
+      description: 'ペットフードブランドの FDA 準拠ラベル印刷方法を解説。防水・透明・ダイカットの 3 素材比較、BPA フリーインク、QR コードトレーサビリティ、ブランド創業者 FAQ 4 件付きで、グローバル市場向け MOQ 戦略も。',
+      date: '2026-07-16', category: '寵物',
+      content: '',
+    },
 
   }
 };
@@ -411,6 +447,10 @@ const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-
   'baby-product-label-sticker-printing-guide',
   'ecommerce-shipping-bag-printing-guide',
   'media-merchandise-box-printing-guide',
+  // 2026-07-16 v4 daily-content-evolve add 3 (Q-001/002/003)
+  'restaurant-opening-flyer-printing-guide',
+  'cosmetics-packaging-box-printing-guide',
+  'pet-food-sticker-printing-guide',
 ];
 const guideSlugs = getAllBuyingGuideSlugs();
 const clusterSlugs = getAllClusterSlugs();
