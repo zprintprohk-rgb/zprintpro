@@ -161,7 +161,7 @@ export function CategorySidebar({ locale, currentCategorySlug }: CategorySidebar
         <div className="flex flex-col items-center gap-1.5 mb-4">
           <div className="w-[120px] h-[120px] bg-white border border-white/30 rounded-lg overflow-hidden flex items-center justify-center shadow-md">
             <Image
-              src="/whatsapp-qr.jpg"
+              src="/whatsapp-qr.jpg?v=2"
               alt="WhatsApp QR Code | ZprintPro"
               width={120}
               height={120}
