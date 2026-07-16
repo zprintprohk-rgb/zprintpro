@@ -329,12 +329,10 @@ export default function ProductPage({
         
         {/* 产品详情区 */}
         <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-8">
-          {/* 2026-07-13 v3: ProductQuoteProvider 包住整个 grid, 让左 column 备注栏下面的
-              QuantityTierInteractive 跟右 column QuoteCalculator 通过 context 共享 selectedQuantity
-              实现点色块 → 同步右栏 quantity; 点右栏 quantity → 同步色块高亮 */}
+          {/* 2026-07-13 v3: ProductQuoteProvider 包住整个 grid, 跟右 column QuoteCalculator 通过 context 共享 selectedQuantity; 2026-07-16 左 column 上传/备注移除 */}
           <ProductQuoteProvider product={product}>
           <div className="grid grid-cols-1 lg:grid-cols-[62%_38%] gap-8 justify-between">
-            {/* 左侧：产品图片 + 上传 + 备注 + 备注栏下面的批量折扣色块 */}
+            {/* 左侧：产品图片 + 批量折扣色块 (上传/备注已移除，统一走 /contact/) */}
             <div>
               <ProductGallery
                 images={getProductImages(product, locale)}
@@ -342,39 +340,7 @@ export default function ProductPage({
                 alt={getProductImageAlt(product, locale)}
               />
 
-              {/* 上传设计稿 */}
-              <div className="mt-6 border-2 border-dashed border-gray-300 rounded-xl p-5 text-center hover:border-[#2873F5] transition-colors cursor-pointer bg-white">
-                <input type="file" accept=".pdf,.ai,.psd,.png,.jpg,.jpeg" className="hidden" id="design-upload-pdp" />
-                <label htmlFor="design-upload-pdp" className="cursor-pointer block">
-                  <div className="text-gray-400 mb-2">
-                    <svg className="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
-                    </svg>
-                  </div>
-                  <p className="text-sm font-medium text-gray-700">{locale === 'zh-hk' ? '上傳設計稿' : locale === 'en' ? 'Upload Design' : 'デザインをアップロード'}</p>
-                  <p className="text-xs text-gray-400 mt-1">{locale === 'zh-hk' ? '支持 PDF, AI, PSD, PNG, JPG 格式（最大50MB）' : locale === 'en' ? 'Support PDF, AI, PSD, PNG, JPG (max 50MB)' : 'PDF, AI, PSD, PNG, JPG対応（最大50MB）'}</p>
-                </label>
-              </div>
-
-              {/* 备注栏 */}
-              <details className="mt-6 bg-white rounded-xl border border-gray-200 overflow-hidden group">
-                <summary className="flex items-center justify-between px-5 py-4 cursor-pointer list-none hover:bg-gray-50 transition-colors">
-                  <span className="font-semibold text-gray-900">{locale === 'zh-hk' ? '備註' : locale === 'en' ? 'Notes' : '備考'}</span>
-                  <span className="text-sm text-[#2873F5] group-open:hidden">{locale === 'zh-hk' ? '添加' : locale === 'en' ? 'Add' : '追加'}</span>
-                  <span className="text-sm text-gray-400 hidden group-open:block">{locale === 'zh-hk' ? '收起' : locale === 'en' ? 'Collapse' : '閉じる'}</span>
-                </summary>
-                <div className="px-5 pb-4">
-                  <textarea
-                    className="w-full p-3 border border-gray-200 rounded-lg text-sm text-gray-700 focus:outline-none focus:border-[#2873F5] focus:ring-1 focus:ring-[#2873F5] resize-none"
-                    rows={3}
-                    placeholder={locale === 'zh-hk' ? '請輸入訂單備註...' : locale === 'en' ? 'Enter order notes...' : '注文備考を入力...'}
-                  />
-                </div>
-              </details>
-
-              {/* 2026-07-13 v3: 批量折扣色块放在备注栏下面 (跟 备注栏 + 上傳 同宽度),
-                  跟右栏 QuoteCalculator 通过 ProductQuoteProvider context 联动
-                  高度自适应内容 (5 档 = 约 200px, 3 档 = 约 180px) */}
+              {/* 2026-07-16: 上传设计稿 + 备注栏已移除 — 文件上传统一走 /contact/; 批量折扣色块通过 ProductQuoteProvider context 联动右栏 QuoteCalculator */}
               <div className="mt-6">
                 <QuantityTierInteractive locale={locale} />
               </div>
