@@ -298,7 +298,7 @@ export default function ContactPage({ params }: ContactPageProps) {
                   {/* QR Code - enlarged to 140x140 */}
                   <div className="flex items-center gap-4 mt-4 p-3 rounded-xl bg-gray-50 border border-gray-100">
                     <div className="relative w-[140px] h-[140px] bg-white border border-slate-200 rounded-lg overflow-hidden flex items-center justify-center shadow-sm group/qr flex-shrink-0">
-                      <img src="/whatsapp-qr.jpg?v=2" alt="WhatsApp QR Code | ZprintPro" width="132" height="132" className="object-contain transition-transform duration-300 group-hover/qr:scale-105" loading="lazy" />
+                      <img src="/whatsapp-qr.jpg" alt="WhatsApp QR Code | ZprintPro" width="132" height="132" className="object-contain transition-transform duration-300 group-hover/qr:scale-105" loading="lazy" />
                     </div>
                     <div className="flex-1 min-w-0">
                       <div className="text-sm font-semibold text-[#333333] mb-1">{t.orScan}</div>
