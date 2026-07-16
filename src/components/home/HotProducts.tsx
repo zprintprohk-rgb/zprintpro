@@ -259,10 +259,10 @@ export function HotProducts({ locale }: HotProductsProps) {
 
                     {/* Info */}
                     <div className="p-4">
-                      <h3 className="font-semibold text-lg text-[#333333] text-center mb-1">
+                      <h3 className="font-semibold text-lg text-[#333333] text-center mb-1 line-clamp-3 h-[72px] leading-6">
                         {productName}
                       </h3>
-                      <p className="text-sm text-gray-500 line-clamp-2 mb-2 text-center h-[40px]">
+                      <p className="text-sm text-gray-500 line-clamp-2 mb-2 text-center h-[40px] leading-5">
                         {productDesc}
                       </p>
                       {/* price area — fixed height for alignment, clickable to PDP */}

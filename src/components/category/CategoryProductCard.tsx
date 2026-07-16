@@ -106,8 +106,8 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
 
       {/* product name + desc */}
       <div className="px-4 pt-2">
-        <h3 className="text-lg font-bold text-[#333333] text-center">{normalizeTitle(getName())}</h3>
-        <p className="text-sm text-gray-500 text-center mt-1 line-clamp-2 h-[40px]">{shortDesc}</p>
+        <h3 className="text-lg font-bold text-[#333333] text-center line-clamp-3 h-[72px] leading-6">{normalizeTitle(getName())}</h3>
+        <p className="text-sm text-gray-500 text-center mt-1 line-clamp-2 h-[40px] leading-5">{shortDesc}</p>
       </div>
 
       {/* divider */}
