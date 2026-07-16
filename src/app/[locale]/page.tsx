@@ -83,7 +83,7 @@ export default function HomePage({
               {locale === 'zh-hk' ? '免費獲取報價' : locale === 'ja' ? '無料お見積もり' : 'Get Free Quote'}
             </a>
             <a
-              href={`https://wa.me/8618126380255?text=${encodeURIComponent(locale === 'zh-hk' ? '你好，我想咨詢印刷報價' : locale === 'ja' ? 'こんにちは、印刷の見積もりをお願いします' : 'Hi, I would like a printing quote')}`}
+              href={`https://wa.me/8619880851334?text=${encodeURIComponent(locale === 'zh-hk' ? '你好，我想咨詢印刷報價' : locale === 'ja' ? 'こんにちは、印刷の見積もりをお願いします' : 'Hi, I would like a printing quote')}`}
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-1.5 bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3 px-4 rounded-xl text-sm transition-colors shadow-lg shadow-emerald-200 flex-shrink-0"

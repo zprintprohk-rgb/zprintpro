@@ -278,7 +278,7 @@ export default function PaymentMethodsPage({ params }: Props) {
           <p className="text-gray-300 mb-6 max-w-2xl mx-auto">{section.ctaDesc}</p>
           <div className="flex flex-wrap gap-3 justify-center">
             <a
-              href={`https://wa.me/8618126380255`}
+              href={`https://wa.me/8619880851334`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-6 py-3 bg-[#25D366] hover:bg-[#1FB855] text-white rounded-full font-semibold transition-colors"

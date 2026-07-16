@@ -76,7 +76,7 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
     teams: [
       { title: 'Founder', desc: '15 years of printing industry experience, formerly with top international printing groups, expert in color management and prepress processes.' },
       { title: 'Prepress Engineers', desc: 'Average 8 years experience, specializing in AI/PDF file checking, die-cut design, ICC color profiling, and digital proofing.' },
-      { title: 'Customer Service', desc: 'Fluent English-speaking team (Mandarin, Cantonese, Japanese available). 24-hour response commitment, dedicated WhatsApp support at +86 181 2638 0255. Assisting clients from quote to after-sales.' },
+      { title: 'Customer Service', desc: 'Fluent English-speaking team (Mandarin, Cantonese, Japanese available). 24-hour response commitment, dedicated WhatsApp support at +8619880851334. Assisting clients from quote to after-sales.' },
     ],
     certTitle: 'Certifications',
     certs: [

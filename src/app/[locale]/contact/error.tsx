@@ -76,7 +76,7 @@ export default function ContactError({
         {/* Contact channels */}
         <div className="space-y-3 mb-8">
           <a
-            href="https://wa.me/8618126380255?text=Hi%20ZprintPro"
+            href="https://wa.me/8619880851334?text=Hi%20ZprintPro"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 w-full bg-emerald-500 hover:bg-emerald-600 text-white font-semibold py-3 px-6 rounded-xl transition-colors"

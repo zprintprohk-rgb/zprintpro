@@ -13,7 +13,7 @@ export interface WhatsAppContext {
   phone?: string;  // 覆盖默认 PHONE（例：香港号 85290616204）
 }
 
-const PHONE = '8618126380255'; // +86 181 2638 0255，去掉 +
+const PHONE = '8619880851334'; // +8619880851334，去掉 +
 
 const TEMPLATE: Record<string, (ctx: WhatsAppContext) => string> = {
   'zh-hk': (ctx) => {
