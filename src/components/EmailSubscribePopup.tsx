@@ -39,7 +39,7 @@ const COPY: Record<Locale, {
 }> = {
   en: {
     title: 'Get 10% Off Your First Order',
-    subtitle: 'Plus free US shipping on $99+ orders. Join 5,000+ global SMBs.',
+    subtitle: 'Plus free US shipping on $99+ orders. Join 15,000+ global customers.',
     placeholder: 'your@email.com',
     cta: 'Send My 10% Off Code',
     perks: [
@@ -53,7 +53,7 @@ const COPY: Record<Locale, {
   },
   'zh-hk': {
     title: '首次落單立減 10%',
-    subtitle: '港澳 $500+ 訂單免費速遞. 加入 5000+ 全球中小企行列.',
+    subtitle: '港澳 $500+ 訂單免費速遞. 加入 15,000+ 全球客戶行列.',
     placeholder: 'your@email.com',
     cta: '發送 10% 折扣碼',
     perks: [
@@ -67,7 +67,7 @@ const COPY: Record<Locale, {
   },
   ja: {
     title: '初回注文 10% OFF',
-    subtitle: '日本全国送料 0 円. 5000+ グローバル SMB に仲間入り.',
+    subtitle: '日本全国送料 0 円. 15,000+ グローバル顧客に仲間入り.',
     placeholder: 'your@email.com',
     cta: '10% OFF コードを送信',
     perks: [

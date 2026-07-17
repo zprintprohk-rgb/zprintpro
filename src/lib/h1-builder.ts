@@ -557,7 +557,7 @@ export function buildProductH1Ja(
   catSlug: string
 ): string {
   const sellingPoint = getHookJa(catSlug);
-  const regionHook = '香港の印刷専門家';
+  const regionHook = '印刷の専門家';
   const title = productTitle;
 
   // 去重逻辑：如果 title 已含 sellingPoint，跳过 sellingPoint

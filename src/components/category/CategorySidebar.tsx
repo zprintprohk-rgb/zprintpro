@@ -44,7 +44,7 @@ const translations = {
     contactUs: '聯繫我們 →',
     whatsapp: 'WhatsApp 查詢',
     qrScan: '掃碼即時查詢',
-    trustBadge: '已有 500+ 企業客戶選擇智印雲',
+    trustBadge: '已有 15,000+ 客戶選擇智印雲',
   },
   'en': {
     title: 'Product Categories',
@@ -56,7 +56,7 @@ const translations = {
     contactUs: 'Contact Us →',
     whatsapp: 'WhatsApp Inquiry',
     qrScan: 'Scan to Chat',
-    trustBadge: 'Trusted by 500+ brands',
+    trustBadge: 'Trusted by 15,000+ customers',
   },
   'ja': {
     title: '製品カテゴリー',
@@ -68,7 +68,7 @@ const translations = {
     contactUs: 'お問い合わせ →',
     whatsapp: 'WhatsApp 問い合わせ',
     qrScan: 'QRで即時問い合わせ',
-    trustBadge: '500社以上の企業様に選ばれています',
+    trustBadge: '15,000人以上のお客様に選ばれています',
   },
 };
 

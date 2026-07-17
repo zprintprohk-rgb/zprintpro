@@ -209,10 +209,10 @@ export function HowItWorks({ locale }: HowItWorksProps) {
         <div className="mt-6 md:mt-8 -mb-6 md:-mb-8 bg-gray-100 rounded-xl overflow-hidden flex flex-col sm:flex-row items-stretch">
           <p className="text-slate-700 text-xs sm:text-sm font-medium leading-snug text-center sm:text-left px-5 md:px-6 py-3 flex-1 flex items-center justify-center sm:justify-start">
             {locale === 'zh-hk'
-              ? '15+ 年印刷經驗 · ISO 9001 認證 · 5000+ 全球客戶 · 100+ 國家發貨'
+              ? '15+ 年印刷經驗 · ISO 9001 認證 · 15,000+ 全球客戶 · 100+ 國家發貨'
               : locale === 'ja'
-              ? '15+ 年の印刷実績 · ISO 9001 認証 · 5000+ グローバル顧客 · 100+ 国へ発送'
-              : '15+ years in business · ISO 9001 certified · 5000+ global customers · Ships to 100+ countries'}
+              ? '15+ 年の印刷実績 · ISO 9001 認証 · 15,000+ グローバル顧客 · 100+ 国へ発送'
+              : '15+ years in business · ISO 9001 certified · 15,000+ global customers · Ships to 100+ countries'}
           </p>
           <a
             href={`/${locale}/quote/`}

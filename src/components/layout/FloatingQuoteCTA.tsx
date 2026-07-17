@@ -82,7 +82,7 @@ export function FloatingQuoteCTA({ locale }: { locale: string }) {
         href={waUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-50 group inline-flex items-center gap-3 bg-[#25D366] hover:bg-[#1FAD52] text-white pl-4 pr-5 py-3.5 rounded-full shadow-2xl hover:scale-105 transition-all"
+        className="hidden lg:inline-flex fixed bottom-24 right-6 z-40 group items-center gap-3 bg-[#25D366] hover:bg-[#1FAD52] text-white pl-4 pr-5 py-3.5 rounded-full shadow-2xl hover:scale-105 transition-all"
         aria-label="WhatsApp 即時查詢"
       >
         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -123,7 +123,7 @@ export function FloatingQuoteCTA({ locale }: { locale: string }) {
   const waUrl = `https://wa.me/8619880851334?text=${encodeURIComponent('Hi, I would like to inquire about printing services.')}`;
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="hidden lg:block fixed bottom-24 right-6 z-40">
       {!open && (
         <button
           onClick={() => setOpen(true)}

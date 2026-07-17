@@ -29,6 +29,7 @@ interface TrustBadgesProps {
 
 interface Badge {
   icon: 'award' | 'globe' | 'truck' | 'shield' | 'clock' | 'badge' | 'star' | 'building';
+  color: 'blue' | 'orange' | 'green' | 'purple'; // 认证=蓝 / 经验=橙 / 物流=绿 / 信任=紫
   title: string;
   subtitle: string;
 }
@@ -44,36 +45,56 @@ const ICON_MAP = {
   building: Building2,
 };
 
+// 语义分色: 低饱和底色 + 中饱和图标色
+const COLOR_MAP: Record<Badge['color'], { bg: string; icon: string }> = {
+  blue: { bg: 'bg-blue-50', icon: 'text-blue-600' },
+  orange: { bg: 'bg-orange-50', icon: 'text-orange-600' },
+  green: { bg: 'bg-emerald-50', icon: 'text-emerald-600' },
+  purple: { bg: 'bg-purple-50', icon: 'text-purple-600' },
+};
+
+// 数字放大: 标题中的 15+ / 100+ / 100% / $99+ 等数字 token 用品牌蓝加粗放大
+function renderTitle(title: string) {
+  const parts = title.split(/(\$?\d[\d,]*\+?%?)/g);
+  return parts.map((part, i) =>
+    /^\$?\d[\d,]*\+?%?$/.test(part) ? (
+      <span key={i} className="text-lg font-extrabold text-[#2873F5]">{part}</span>
+    ) : (
+      <span key={i}>{part}</span>
+    )
+  );
+}
+
 const BADGES: Record<Locale, Badge[]> = {
   en: [
-    { icon: 'award', title: 'ISO 9001:2015 Certified', subtitle: 'Global quality standard' },
-    { icon: 'building', title: '15+ Years in Business', subtitle: 'Since 2012, 5000+ orders delivered' },
-    { icon: 'globe', title: 'Ships to 100+ Countries', subtitle: 'DHL Express · FedEx · USPS' },
-    { icon: 'truck', title: 'Free US Shipping $99+', subtitle: '5-7 day door-to-door to USA' },
-    { icon: 'clock', title: 'Free Proof in 4 Hours', subtitle: 'Human review, unlimited revisions' },
-    { icon: 'shield', title: '100% Satisfaction Guarantee', subtitle: 'Free reprint if not satisfied' },
-    { icon: 'badge', title: 'DHL Express Authorized', subtitle: 'Real-time tracking, customs cleared' },
-    { icon: 'star', title: 'Trusted by Global SMBs', subtitle: 'Brands from USA, UK, EU, AU, JP' },
+    { icon: 'award', color: 'blue', title: 'ISO 9001:2015 Certified', subtitle: 'Global quality standard' },
+    { icon: 'building', color: 'orange', title: '15+ Years in Business', subtitle: 'Since 2012, 5000+ orders delivered' },
+    { icon: 'globe', color: 'green', title: 'Ships to 100+ Countries', subtitle: 'DHL Express · FedEx · USPS' },
+    { icon: 'truck', color: 'green', title: 'Free US Shipping $99+', subtitle: '5-7 day door-to-door to USA' },
+    { icon: 'clock', color: 'orange', title: 'Free Proof in 4 Hours', subtitle: 'Human review, unlimited revisions' },
+    { icon: 'shield', color: 'purple', title: '100% Satisfaction Guarantee', subtitle: 'Free reprint if not satisfied' },
+    { icon: 'badge', color: 'blue', title: 'DHL Express Authorized', subtitle: 'Real-time tracking, customs cleared' },
+    { icon: 'star', color: 'purple', title: 'Trusted by Global SMBs', subtitle: 'Brands from USA, UK, EU, AU, JP' },
   ],
   'zh-hk': [
-    { icon: 'award', title: 'ISO 9001:2015 認證', subtitle: '國際品質管理標準' },
-    { icon: 'building', title: '15+ 年印刷經驗', subtitle: '2012 年起, 5000+ 訂單完成' },
-    { icon: 'globe', title: '100+ 國家發貨', subtitle: 'DHL · FedEx · 順豐' },
-    { icon: 'truck', title: '港九新界免費速遞', subtitle: '$500+ 免費 / 順豐本地' },
-    { icon: 'clock', title: '4 小時免費打稿', subtitle: '人工審稿, 不限修改' },
-    { icon: 'shield', title: '100% 滿意保證', subtitle: '不滿意免費重印' },
-    { icon: 'badge', title: 'DHL Express 認證', subtitle: '即時追蹤, 自動清關' },
-    { icon: 'star', title: '全球 SMB 信賴', subtitle: '美 / 英 / 歐 / 澳 / 日客戶' },
+    { icon: 'award', color: 'blue', title: 'ISO 9001:2015 認證', subtitle: '國際品質管理標準' },
+    { icon: 'building', color: 'orange', title: '15+ 年印刷經驗', subtitle: '2012 年起, 5000+ 訂單完成' },
+    { icon: 'globe', color: 'green', title: '100+ 國家發貨', subtitle: 'DHL · FedEx · 順豐' },
+    { icon: 'truck', color: 'green', title: '港九新界免費速遞', subtitle: '$500+ 免費 / 順豐本地' },
+    { icon: 'clock', color: 'orange', title: '4 小時免費打稿', subtitle: '人工審稿, 不限修改' },
+    { icon: 'shield', color: 'purple', title: '100% 滿意保證', subtitle: '不滿意免費重印' },
+    { icon: 'badge', color: 'blue', title: 'DHL Express 認證', subtitle: '即時追蹤, 自動清關' },
+    { icon: 'star', color: 'purple', title: '全球 SMB 信賴', subtitle: '美 / 英 / 歐 / 澳 / 日客戶' },
   ],
   ja: [
-    { icon: 'award', title: 'ISO 9001:2015 認証', subtitle: '国際品質マネジメント規格' },
-    { icon: 'building', title: '15+ 年の実績', subtitle: '2012 年創業, 5000+ 注文完了' },
-    { icon: 'globe', title: '100+ 国へ発送', subtitle: 'DHL · FedEx · ヤマト運輸' },
-    { icon: 'truck', title: '日本全国送料無料', subtitle: '沖縄・北海道も同料金' },
-    { icon: 'clock', title: '4 時間無料校正', subtitle: '人による校正, 無制限' },
-    { icon: 'shield', title: '100% 満足保証', subtitle: 'ご納得いただけない場合再印刷' },
-    { icon: 'badge', title: 'DHL Express 認定', subtitle: 'リアルタイム追跡, 通関自動化' },
-    { icon: 'star', title: 'グローバル SMB 信頼', subtitle: '米 / 英 / 欧 / 豪 / 日のお客様' },
+    { icon: 'award', color: 'blue', title: 'ISO 9001:2015 認証', subtitle: '国際品質マネジメント規格' },
+    { icon: 'building', color: 'orange', title: '15+ 年の実績', subtitle: '2012 年創業, 5000+ 注文完了' },
+    { icon: 'globe', color: 'green', title: '100+ 国へ発送', subtitle: 'DHL · FedEx · ヤマト運輸' },
+    { icon: 'truck', color: 'green', title: '日本全国送料無料', subtitle: '沖縄・北海道も同料金' },
+    { icon: 'clock', color: 'orange', title: '4 時間無料校正', subtitle: '人による校正, 無制限' },
+    { icon: 'shield', color: 'purple', title: '100% 満足保証', subtitle: 'ご納得いただけない場合再印刷' },
+    { icon: 'badge', color: 'blue', title: 'DHL Express 認定', subtitle: 'リアルタイム追跡, 通関自動化' },
+    { icon: 'star', color: 'purple', title: 'グローバル SMB 信頼', subtitle: '米 / 英 / 欧 / 豪 / 日のお客様' },
   ],
 };
 
@@ -115,19 +136,20 @@ export function TrustBadges({ locale, compact = false }: TrustBadgesProps) {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
           {badges.map((badge, idx) => {
             const Icon = ICON_MAP[badge.icon];
+            const color = COLOR_MAP[badge.color];
             return (
               <div
                 key={idx}
-                className="bg-white rounded-xl border border-slate-200 p-4 md:p-5 hover:border-[#2873F5] hover:shadow-md transition-all"
+                className="bg-white rounded-xl border border-slate-200 p-4 md:p-5 hover:border-[#2873F5] hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
               >
                 <div className="flex flex-col items-center text-center gap-2">
-                  <div className="w-10 h-10 md:w-12 md:h-12 rounded-full bg-gradient-to-br from-[#2873F5] to-emerald-500 flex items-center justify-center flex-shrink-0">
-                    <Icon className="w-5 h-5 md:w-6 md:h-6 text-white" aria-hidden="true" />
+                  <div className={`w-10 h-10 md:w-12 md:h-12 rounded-full ${color.bg} flex items-center justify-center flex-shrink-0`}>
+                    <Icon className={`w-5 h-5 md:w-6 md:h-6 ${color.icon}`} aria-hidden="true" />
                   </div>
                   <h3 className="text-sm md:text-base font-bold text-slate-900 leading-tight">
-                    {badge.title}
+                    {renderTitle(badge.title)}
                   </h3>
-                  <p className="text-xs md:text-sm text-slate-600 leading-[1.485]">
+                  <p className="text-xs text-slate-600 leading-[1.485]">
                     {badge.subtitle}
                   </p>
                 </div>

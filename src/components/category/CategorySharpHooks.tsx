@@ -235,20 +235,21 @@ const categoryIndustryScenarios: Record<string, {
     }},
   ],
   'business-cards': [
-    { key: 'business_pro', scenarios: {
-      'zh-hk': ['商務人士名片 · 300g 高檔紙', '燙金/UV/圓角可選', '100 張起 · 24 小時交貨'],
-      en: ['Business pro cards · 300g premium', 'Foil/UV/rounded corner option', 'From 100 · 24-hour delivery'],
-      ja: ['ビジネスパーソン名刺・300g高級紙', '箔押し/UV/丸角選択可', '100枚から・24時間納品'],
+    // 2026-07-19 user 拍板: 推荐位撤名片 → 贺卡 (greeting cards, 美国站情绪价值品类)
+    { key: 'birthday', scenarios: {
+      'zh-hk': ['生日賀卡 · 燙金祝福語', '300g 厚卡 · 信封配套', '50 張起 · 自訂內頁祝福'],
+      en: ['Birthday cards · foil greetings', '300gsm thick stock · envelopes included', 'From 50 · custom inside message'],
+      ja: ['バースデーカード・箔押しメッセージ', '300g厚紙・封筒セット', '50枚から・内側メッセージ自由'],
     }},
-    { key: 'real_estate', scenarios: {
-      'zh-hk': ['房地產代理名片 · 雙面 4 色', '高克重啞粉紙 · 局部 UV', '200 張起 · 專業形象'],
-      en: ['Real estate agent cards · duplex 4C', 'Heavy matte art paper · spot UV', 'From 200 · professional image'],
-      ja: ['不動産エージェント名刺・両面4色', '高厚マット紙・スポットUV', '200枚から・プロフェッショナル'],
+    { key: 'holiday', scenarios: {
+      'zh-hk': ['節日賀卡 · 聖誕/新年/感恩節', '珠光紙 · 局部 UV', '100 張起 · 企業批量折扣'],
+      en: ['Holiday cards · Christmas/New Year/Thanksgiving', 'Pearlescent stock · spot UV', 'From 100 · corporate bulk discount'],
+      ja: ['季節グリーティングカード・クリスマス/新年/感謝祭', 'パール紙・スポットUV', '100枚から・法人割引'],
     }},
-    { key: 'professional', scenarios: {
-      'zh-hk': ['專業服務名片 · 剛古紙', '含棉纖維 · 紋理奢華', '100 張起 · 高端行業適用'],
-      en: ['Professional services cards · conqueror paper', 'Cotton fiber · luxury texture', 'From 100 · premium industries'],
-      ja: ['プロフェッショナル名刺・コンカラー紙', '綿繊維・豪華な質感', '100枚から・ハイエンド業界'],
+    { key: 'thankyou', scenarios: {
+      'zh-hk': ['感謝卡 · 婚禮/品牌隨盒卡', '棉紙質感 · 燙金 LOGO', '100 張起 · DTC 品牌適用'],
+      en: ['Thank-you cards · weddings/brand inserts', 'Cotton texture · foil logo', 'From 100 · made for DTC brands'],
+      ja: ['サンキューカード・ウェディング/同梱カード', 'コットン紙・箔押しロゴ', '100枚から・D2Cブランド向け'],
     }},
   ],
   'japan-doujin': [

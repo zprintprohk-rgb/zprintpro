@@ -37,7 +37,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "プレミアム名刺 | 箔押し UV 加工 | ZprintPro",
-        "description": "ZprintPro のプレミアム名刺印刷サービス。300g-400g のマット紙・コットン紙・コート紙に対応し、箔押し・スポットUV・エンボス加工が可能です。100 枚から対応、ISO 9001 認証取得工場で生産。香港直結で 1-3 営業日納品、全国配送承ります。無料見積もり、即日対応可能。",
+        "description": "ZprintPro のプレミアム名刺印刷サービス。300g-400g のマット紙・コットン紙・コート紙に対応し、箔押し・スポットUV・エンボス加工が可能です。100 枚から対応、ISO 9001 認証取得工場で生産。アジア自社工場直結で 1-3 営業日納品、全国配送承ります。無料見積もり、即日対応可能。",
         "h1": "プレミアム名刺 | 箔押し・スポットUV加工",
         "keywords": ["プレミアム名刺", "名刺印刷", "箔押し名刺", "高級名刺", "オリジナル名刺", "即日名刺"],
         "body": " same day delivery"
@@ -46,7 +46,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "faqs": [
       {
         "q": "名刺印刷",
-        "a": "香港名刺"
+        "a": "高級名刺"
       },
       {
         "q": "高級名刺",
@@ -81,13 +81,13 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Thick Business Cards (400g) | Foil UV Multi-Finish",
         "description": "Thick Business Cards 400gsm custom printing, ultra-thick premium paper. Free design mockup, 100 MOQ, free shipping $99+. Fast 4-day USA delivery. | ZprintPro",
         "h1": "Thick Business Cards (400g) 100+ | ZprintPro",
-        "keywords": ["400g thick business cards","custom thick business cards 400g","thick business cards 400g printing hong kong","thick business cards (400g) free shipping","thick business cards (400g) USD","bulk thick business cards (400g)","thick business cards (400g) DHL","bespoke thick business cards (400g)","custom thick business cards (400g)","thick business cards 400g wholesale"],
+        "keywords": ["400g thick business cards","custom thick business cards 400g","thick business cards 400g printing online","thick business cards (400g) free shipping","thick business cards (400g) USD","bulk thick business cards (400g)","thick business cards (400g) DHL","bespoke thick business cards (400g)","custom thick business cards (400g)","thick business cards 400g wholesale"],
         "body": "ZprintPro Thick Business Cards (400g) for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Foil UV Multi-Finish, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "400g 厚紙名刺 | 箔押し UV 加工 | ZprintPro",
-        "description": "ZprintPro の 400g 厚紙名刺印刷サービス。マット紙・コーンスターチ紙・アート紙に対応し、箔押し・UV 加工可能。弁護士・デザイナー・ハイエンドサービス向けに最適。100 枚から対応、香港直結で短納期、全国配送、ISO 9001 認証。",
+        "description": "ZprintPro の 400g 厚紙名刺印刷サービス。マット紙・コーンスターチ紙・アート紙に対応し、箔押し・UV 加工可能。弁護士・デザイナー・ハイエンドサービス向けに最適。100 枚から対応、アジア自社工場直結で短納期、全国配送、ISO 9001 認証。",
         "h1": "400g 厚紙名刺 | 重厚感プレミアムカード",
         "keywords": ["400g 厚紙名刺", "厚紙名刺", "名刺印刷", "プレミアム名刺", "ハイエンド名刺", "即日名刺"],
         "body": " fast delivery."
@@ -95,7 +95,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [
       {
-        "q": "400g超厚紙、重厚な質感。高級サービス業、デザイナー、弁護士向け。 ZprintProは香港で厚紙名刺(400g)サービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "400g超厚紙、重厚な質感。高級サービス業、デザイナー、弁護士向け。 ZprintProは厚紙名刺(400g)サービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業厚身咭片(400g)服務 | 智印雲"
       },
       {
@@ -138,7 +138,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "箔押し名刺 | 箔押し UV 加工 | ZprintPro",
-        "description": "ZprintPro の箔押し名刺印刷サービス。金箔・銀箔・銅箔・ホログラム箔に対応し、300g-400g のアート紙・マット紙にプレス加工。法人名刺・パーソナルブランド向けに最適。100 枚から小ロット対応、香港直結で短納期納品。無料見積もり対応。",
+        "description": "ZprintPro の箔押し名刺印刷サービス。金箔・銀箔・銅箔・ホログラム箔に対応し、300g-400g のアート紙・マット紙にプレス加工。法人名刺・パーソナルブランド向けに最適。100 枚から小ロット対応、アジア自社工場直結で短納期納品。無料見積もり対応。",
         "h1": "箔押し名刺 | 金箔・銀箔・ローズ金",
         "keywords": ["箔押し名刺", "名刺印刷", "金箔名刺", "銀箔名刺", "ハイエンド名刺", "法人名刺"],
         "body": "箔押し名刺"
@@ -151,7 +151,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       {
         "q": "ゴールド foil",
-        "a": "香港 箔押し"
+        "a": "箔押し"
       },
       {
         "q": "即日配送",
@@ -161,7 +161,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": " shining under light to elevate brand image. Available in gold",
       "en": "Foil stamped business cards in gold, silver, and rose gold with hot stamp foil on premium matte card — ZprintPro",
-      "ja": " rose gold. ZprintPro offers professional Foil Stamped Business Cards services in Hong Kong. High quality"
+      "ja": " rose gold. ZprintPro offers professional Foil Stamped Business Cards services worldwide. High quality"
     }
   },
   "spot-uv-business-cards": {
@@ -189,7 +189,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "スポットUV名刺 | 箔押し UV 加工 | ZprintPro",
-        "description": "スポットUV名刺のスポットUV名刺は ZprintPro にお任せ。300g-400g マット/コットン/コート 高品質用紙、90×54mm 標準 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、1-3営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "スポットUV名刺のスポットUV名刺は ZprintPro にお任せ。300g-400g マット/コットン/コート 高品質用紙、90×54mm 標準 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、1-3営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": " textured name cards",
         "keywords": ["スポットUV名刺", "スポットUV名刺 印刷", "spot uv business cards"],
         "body": "局部UV名刺"
@@ -212,7 +212,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": " transparent pricing",
       "en": "Spot UV business cards with matte base and glossy UV coating on logo for dimensional contrast — ZprintPro",
-      "ja": "部分UVコーティングでロゴやデザインに立体的な光沢効果。クリエイティブ業界向け。 ZprintProは香港で局部UV名刺サービスを提供。高品質、透明な価格、迅速な納品。"
+      "ja": "部分UVコーティングでロゴやデザインに立体的な光沢効果。クリエイティブ業界向け。 ZprintProは局部UV名刺サービスを提供。高品質、透明な価格、迅速な納品。"
     }
   },
   "matte-business-cards": {
@@ -240,7 +240,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "マット名刺 | 箔押し UV 加工 | ZprintPro",
-        "description": "マット名刺のマット名刺は ZprintPro にお任せ。300g-400g マット/コットン/コート 高品質用紙、90×54mm 標準 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、1-3営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "マット名刺のマット名刺は ZprintPro にお任せ。300g-400g マット/コットン/コート 高品質用紙、90×54mm 標準 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、1-3営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": " transparent pricing",
         "keywords": ["マット名刺", "マット名刺 印刷", "matte business cards"],
         "body": "專業啞膠咭片服務 | 智印雲"
@@ -291,7 +291,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "角丸カード | 箔押し UV 加工 | ZprintPro",
-        "description": "角丸カードの角丸カードは ZprintPro にお任せ。300g-400g マット/コットン/コート 高品質用紙、90×54mm 標準 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、1-3営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "角丸カードの角丸カードは ZprintPro にお任せ。300g-400g マット/コットン/コート 高品質用紙、90×54mm 標準 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、1-3営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": " die cut cards",
         "keywords": ["角丸カード", "角丸カード 印刷", "rounded corner cards"],
         "body": "安全エッジ名刺"
@@ -308,7 +308,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       {
         "q": "Rounded corners for soft aesthetics and durability. Shows unique taste",
-        "a": " perfect for creative industries. ZprintPro offers professional Rounded Corner Cards services in Hong Kong. High quality"
+        "a": " perfect for creative industries. ZprintPro offers professional Rounded Corner Cards services worldwide. High quality"
       }
     ],
     "imageAlt": {
@@ -333,15 +333,15 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Double-sided Cards | Premium Custom | ZprintPro | ZprintPro",
-        "description": "Custom double-sided cards from ZprintPro Hong Kong. Premium Custom, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
+        "description": "Custom double-sided cards from ZprintPro. Premium Custom, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Double-sided Cards 100+ | ZprintPro",
-        "keywords": ["double-sided cards","custom double sided cards","double sided cards printing hong kong","double-sided cards free shipping","double-sided cards USD","bulk double-sided cards","double-sided cards DHL","bespoke double-sided cards","custom double-sided cards","double sided cards wholesale"],
+        "keywords": ["double-sided cards","custom double sided cards","double sided cards printing online","double-sided cards free shipping","double-sided cards USD","bulk double-sided cards","double-sided cards DHL","bespoke double-sided cards","custom double-sided cards","double sided cards wholesale"],
         "body": "ZprintPro Double-sided Cards for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Premium Custom, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "両面カード | 箔押し UV 加工 | ZprintPro",
-        "description": "両面カードの両面カードは ZprintPro にお任せ。300g-400g マット/コットン/コート 高品質用紙、90×54mm 標準 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、1-3営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "両面カードの両面カードは ZprintPro にお任せ。300g-400g マット/コットン/コート 高品質用紙、90×54mm 標準 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、1-3営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": " products",
         "keywords": ["両面カード", "両面カード 印刷", "double sided cards"],
         "body": " fast delivery."
@@ -349,7 +349,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [
       {
-        "q": "両面フルカラー印刷で情報スペースを最大限に活用。 ZprintProは香港で両面名刺サービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "両面フルカラー印刷で情報スペースを最大限に活用。 ZprintProは両面名刺サービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業雙面咭片服務 | 智印雲"
       },
       {
@@ -383,15 +383,15 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Same-day Business Cards | Foil UV Multi-Finish | ZprintPro",
-        "description": "Custom same-day business cards from ZprintPro Hong Kong. Foil UV Multi-Finish, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001.",
+        "description": "Custom same-day business cards from ZprintPro. Foil UV Multi-Finish, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express. FSC, ISO 9001.",
         "h1": "Same-day Business Cards 100+ | ZprintPro",
-        "keywords": ["same day business cards","custom same day business cards","same day business cards printing hong kong","same-day business cards free shipping","same-day business cards USD","bulk same-day business cards","same-day business cards DHL","bespoke same-day business cards","custom same-day business cards","same day business cards wholesale"],
+        "keywords": ["same day business cards","custom same day business cards","same day business cards printing online","same-day business cards free shipping","same-day business cards USD","bulk same-day business cards","same-day business cards DHL","bespoke same-day business cards","custom same-day business cards","same day business cards wholesale"],
         "body": "ZprintPro Same-day Business Cards for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Foil UV Multi-Finish, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "即日名刺 | 箔押し UV 加工 | ZprintPro",
-        "description": "即日名刺の即日名刺は ZprintPro にお任せ。300g-400g マット/コットン/コート 高品質用紙、90×54mm 標準 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、1-3営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "即日名刺の即日名刺は ZprintPro にお任せ。300g-400g マット/コットン/コート 高品質用紙、90×54mm 標準 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、1-3営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "Emergency orders",
         "keywords": ["即日名刺", "即日名刺 印刷", "same day business cards"],
         "body": " transparent pricing"
@@ -400,7 +400,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "faqs": [
       {
         "q": " fast delivery.",
-        "a": "緊急注文に最適、最短4時間で受取。品質を損なわず。 ZprintProは香港で即日名刺サービスを提供。高品質、透明な価格、迅速な納品。"
+        "a": "緊急注文に最適、最短4時間で受取。品質を損なわず。 ZprintProは即日名刺サービスを提供。高品質、透明な価格、迅速な納品。"
       },
       {
         "q": "專業即日咭片印刷服務 | 智印雲",
@@ -433,15 +433,15 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "en": {
         "title": "Eco-friendly Recycled Cards | Foil UV Multi-Finish",
-        "description": "Custom eco-friendly recycled cards from ZprintPro Hong Kong. Foil UV Multi-Finish, 4-color CMYK. 100-MOQ | Free Design | 100 MOQ",
+        "description": "Custom eco-friendly recycled cards from ZprintPro. Foil UV Multi-Finish, 4-color CMYK. 100-MOQ | Free Design | 100 MOQ",
         "h1": "Eco-friendly Recycled Cards 100+ | ZprintPro",
-        "keywords": ["eco business cards","custom eco business cards","eco business cards printing hong kong","eco-friendly recycled cards free shipping","eco-friendly recycled cards USD","bulk eco-friendly recycled cards","eco-friendly recycled cards DHL","bespoke eco-friendly recycled cards","custom eco-friendly recycled cards","eco business cards wholesale"],
+        "keywords": ["eco business cards","custom eco business cards","eco business cards printing online","eco-friendly recycled cards free shipping","eco-friendly recycled cards USD","bulk eco-friendly recycled cards","eco-friendly recycled cards DHL","bespoke eco-friendly recycled cards","custom eco-friendly recycled cards","eco business cards wholesale"],
         "body": "ZprintPro Eco-friendly Recycled Cards for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Foil UV Multi-Finish, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "エコ名刺 | 箔押し UV 加工 | ZprintPro",
-        "description": "エコ名刺のエコ名刺は ZprintPro にお任せ。300g-400g マット/コットン/コート 高品質用紙、90×54mm 標準 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、1-3営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "エコ名刺のエコ名刺は ZprintPro にお任せ。300g-400g マット/コットン/コート 高品質用紙、90×54mm 標準 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、1-3営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": " transparent pricing",
         "keywords": ["エコ名刺", "エコ名刺 印刷", "eco business cards"],
         "body": "專業環保再生紙咭片服務 | 智印雲"
@@ -492,7 +492,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "防水ステッカー | 防水 PVC ダイカット | ZprintPro",
-        "description": "防水ステッカーの防水ステッカーは ZprintPro にお任せ。防水 PVC/コート/透明 高品質用紙、丸/角/型抜き 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "防水ステッカーの防水ステッカーは ZprintPro にお任せ。防水 PVC/コート/透明 高品質用紙、丸/角/型抜き 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": " outdoor stickers",
         "keywords": ["防水ステッカー", "防水ステッカー 印刷", "waterproof stickers", "ステッカー印刷", "オリジナルステッカー", "小ロットステッカー", "ダイカットステッカー", "透明ステッカー", "商品ラベル", "カスタムステッカー", "剥がせるステッカー", "ロゴステッカー", "1000枚ステッカー", "A4 ステッカー", "Etsy ステッカー", "QR コードステッカー", "賞味期限ステッカー", "ノーリボン残留", "残留なし", "スキャン可能ステッカー", "円形ステッカー", "ウェディングステッカー", "学生ステッカー", "成分表示", "成分表示ステッカー", "ラベルステッカー印刷", "イベント双方向", "物流追跡", "ガラスステッカー", "誕生日ステッカー", "エコノミーステッカー", "ウェルカムステッカー", "透明ステッカー印刷", "食品グレードステッカー", "高透明ステッカー"],
         "body": "カスタム 防水ステッカー — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FDA 認可接着剤（間接食品接触対応）、SGS 移行テスト済み。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\n防水ステッカー は 食品ラベル・FDA 準拠パッケージ、屋外サイン・設備デカール、小売商品ラベル・DTC ブランドステッカー の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。stickers 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに 防水ステッカー サービスの設計思想です。\n\n素材は PVC ビニール（3.4 mil、UV 耐性インク）（日常大量使用）、BOPP 透明フィルム（2.6 mil、防水）（プレミアム用途、主力選択）、コート紙（70lb、短期プロモーション用）（特殊プロジェクト）の 3 種類。すべて FDA 認可接着剤（間接食品接触対応） および SGS 移行テスト済み 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、stickers 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: ステッカーの屋外耐久年数は？**\nPVC ビニールステッカーは屋外で 3-5 年、屋内では 1-2 年の耐久性があります。マットラミネート加工で紫外線耐性も確保。BOPP フィルムも同等の耐久性を実現し、透明ラベルに最適です。すべての素材は UV 耐性インク使用で日焼けによる色褪せを防止します。\n\n**Q2: 最小注文数量は？**\n100 枚から対応、版代・型代ゼロ。スモールバッチシリーズは 50 枚まで対応可能。標準納期は 3-5 営業日、沖縄・北海道含む日本全国送料無料、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前にデジタル校正は確認できますか？**\nはい — データ提出から 2 時間以内に無料デジタル校正 PDF を提供。無料修正は 2 回まで対応可能です。実物サンプルは有償（¥2,980）で素材・加工見本セットを DHL Express でお届けします。\n\n**Q4: 日本への配送はどのくらいですか？**\n日本全国送料無料、沖縄県・北海道も同料金、DHL 国際配送で 2-4 日納品。お急ぎ便（48 時間制作 + 1 日配送）は 30% 増で対応。沖縄・北海道も追加料金一切なし。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
@@ -508,7 +508,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "a": "食品ラベル"
       },
       {
-        "q": "香港 ステッカー印刷",
+        "q": "ステッカー印刷",
         "a": "即日配送"
       }
     ],
@@ -537,13 +537,13 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Custom Transparent Stickers | Free Shipping $99+ | ZprintPro",
         "description": "Transparent Stickers custom printing, clear PET material. Free design mockup, 100 MOQ, Free Shipping $99+. 4-day USA delivery for product labels. | ZprintPro",
         "h1": "Transparent Stickers 100+ | ZprintPro",
-        "keywords": ["transparent stickers","custom transparent stickers","transparent stickers printing hong kong","transparent stickers free shipping","transparent stickers USD","bulk transparent stickers","transparent stickers DHL","bespoke transparent stickers","transparent stickers wholesale","transparent stickers pricing","sticker printing","custom stickers","waterproof stickers","vinyl stickers","die-cut stickers","removable stickers","bulk stickers","label printing","product stickers","1000 stickers","A4 sticker","Etsy sticker","QR code sticker","expiry date sticker","no residue","scannable sticker","removable sticker","round sticker","wedding sticker","student sticker","custom sticker","ingredient label","ingredient label sticker","label sticker printing","event interaction","logistics tracking","glass sticker","birthday sticker","die-cut sticker","economy sticker","welcome sign sticker","transparent sticker printing","food-grade sticker","high-transparent sticker","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
+        "keywords": ["transparent stickers","custom transparent stickers","transparent stickers printing online","transparent stickers free shipping","transparent stickers USD","bulk transparent stickers","transparent stickers DHL","bespoke transparent stickers","transparent stickers wholesale","transparent stickers pricing","sticker printing","custom stickers","waterproof stickers","vinyl stickers","die-cut stickers","removable stickers","bulk stickers","label printing","product stickers","1000 stickers","A4 sticker","Etsy sticker","QR code sticker","expiry date sticker","no residue","scannable sticker","removable sticker","round sticker","wedding sticker","student sticker","custom sticker","ingredient label","ingredient label sticker","label sticker printing","event interaction","logistics tracking","glass sticker","birthday sticker","die-cut sticker","economy sticker","welcome sign sticker","transparent sticker printing","food-grade sticker","high-transparent sticker","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
         "body": "Custom transparent stickers designed for US small business, DTC brands, and cross-border e-commerce. Free design mockup, no setup fees, and Free Shipping on US orders over $99. Every order ships from our Asia factory with 4-day delivery to the lower 48 states. ISO 9001 certified production with full FDA compliance where applicable.\n\nTransparent Stickers are widely used across pet food labels and FDA-compliant packaging, outdoor signage and equipment decals, and retail product labels and DTC brand stickers — whether you are launching a new product line, refreshing your retail shelf presence, or shipping promotional materials to a nationwide customer base. The stickers market rewards brands that ship fast, iterate often, and stay under tight unit-cost targets — that is exactly what our transparent stickers service is built for.\n\nMaterial options include PVC vinyl (3.4 mil, UV-resistant ink) for everyday high-volume use, BOPP clear film (2.6 mil, waterproof) for premium applications, and Coated paper (70lb, budget short-run) for specialty projects. All three are FDA-compliant adhesive (safe for indirect food contact) and SGS migration tested, so you can ship into the US market without compliance friction. Print finishes include matte lamination, gloss lamination, spot UV, foil stamping, and full-color CMYK plus white ink where supported.\n\nSubmit print-ready files (300 DPI, CMYK, 3mm bleed, outlined fonts) and we ship a free digital proof within 2 hours. If you do not have design files yet, our in-house design team will mock up your concept at no charge — just share your brand colors, logo, and any reference photos via WhatsApp. We also offer free dieline templates for every standard size.\n\nPricing is transparent: 100-piece minimum, no setup fees, no plate fees, and Free Shipping on US orders over $99. Standard turnaround is 4 business days for production plus 4-day USA delivery. Rush orders (24-hour proof plus 2-day production) available for an additional 20%. Get an instant quote via the 30-second AI estimator on the product page, or message us on WhatsApp for a custom run.\n\n**FAQ**\n\n**Q1: How long do stickers last outdoors?**\nPVC vinyl stickers last 3-5 years outdoors with matte lamination, and 1-2 years for indoor applications. BOPP film offers similar durability for transparent labels. All our sticker materials include UV-resistant ink to prevent fading under sunlight.\n\n**Q2: What is the minimum order quantity?**\n100 stickers minimum, with no setup fees and no plate fees. We support 50-sticker MOQ for the small-batch line. Standard quantities ship in 4 business days production plus 4-day USA delivery.\n\n**Q3: Can I get a digital proof before placing a bulk order?**\nYes — we send a free digital proof within 2 hours of file submission. You can request up to 2 free revisions. For physical samples, we offer a paid sample kit ($29) with material and finish samples shipped via DHL Express.\n\n**Q4: How fast is shipping to the US?**\nFree US shipping over $99 via DHL Express (4-day delivery to the lower 48 states). For orders under $99, shipping is $9.95 flat. Rush 2-day shipping available for an additional $15. We also ship to Canada, UK, AU, and 200+ countries worldwide.\n\nReady to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA pickup available for orders placed before 11 AM EST in major US cities."
       
       },
       "ja": {
         "title": "透明ステッカー | 防水 PVC ダイカット | ZprintPro",
-        "description": "透明ステッカーの透明ステッカーは ZprintPro にお任せ。防水 PVC/コート/透明 高品質用紙、丸/角/型抜き 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "透明ステッカーの透明ステッカーは ZprintPro にお任せ。防水 PVC/コート/透明 高品質用紙、丸/角/型抜き 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "Transparent PET material creates invisible effect when applied. Perfect for cosmetics",
         "keywords": ["透明ステッカー", "透明ステッカー 印刷", "transparent stickers", "ステッカー印刷", "防水ステッカー", "オリジナルステッカー", "小ロットステッカー", "ダイカットステッカー", "商品ラベル", "カスタムステッカー", "剥がせるステッカー", "ロゴステッカー", "1000枚ステッカー", "A4 ステッカー", "Etsy ステッカー", "QR コードステッカー", "賞味期限ステッカー", "ノーリボン残留", "残留なし", "スキャン可能ステッカー", "円形ステッカー", "ウェディングステッカー", "学生ステッカー", "成分表示", "成分表示ステッカー", "ラベルステッカー印刷", "イベント双方向", "物流追跡", "ガラスステッカー", "誕生日ステッカー", "エコノミーステッカー", "ウェルカムステッカー", "透明ステッカー印刷", "食品グレードステッカー", "高透明ステッカー"],
         "body": "カスタム 透明ステッカー — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FDA 認可接着剤（間接食品接触対応）、SGS 移行テスト済み。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\n透明ステッカー は 食品ラベル・FDA 準拠パッケージ、屋外サイン・設備デカール、小売商品ラベル・DTC ブランドステッカー の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。stickers 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに 透明ステッカー サービスの設計思想です。\n\n素材は PVC ビニール（3.4 mil、UV 耐性インク）（日常大量使用）、BOPP 透明フィルム（2.6 mil、防水）（プレミアム用途、主力選択）、コート紙（70lb、短期プロモーション用）（特殊プロジェクト）の 3 種類。すべて FDA 認可接着剤（間接食品接触対応） および SGS 移行テスト済み 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、stickers 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: ステッカーの屋外耐久年数は？**\nPVC ビニールステッカーは屋外で 3-5 年、屋内では 1-2 年の耐久性があります。マットラミネート加工で紫外線耐性も確保。BOPP フィルムも同等の耐久性を実現し、透明ラベルに最適です。すべての素材は UV 耐性インク使用で日焼けによる色褪せを防止します。\n\n**Q2: 最小注文数量は？**\n100 枚から対応、版代・型代ゼロ。スモールバッチシリーズは 50 枚まで対応可能。標準納期は 3-5 営業日、沖縄・北海道含む日本全国送料無料、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前にデジタル校正は確認できますか？**\nはい — データ提出から 2 時間以内に無料デジタル校正 PDF を提供。無料修正は 2 回まで対応可能です。実物サンプルは有償（¥2,980）で素材・加工見本セットを DHL Express でお届けします。\n\n**Q4: 日本への配送はどのくらいですか？**\n日本全国送料無料、沖縄県・北海道も同料金、DHL 国際配送で 2-4 日納品。お急ぎ便（48 時間制作 + 1 日配送）は 30% 増で対応。沖縄・北海道も追加料金一切なし。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
@@ -552,7 +552,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "faqs": [
       {
         "q": " fast delivery.",
-        "a": "透明PET素材、貼り付け後無感効果。化粧品、食品包装、ガラス装飾に最適。 ZprintProは香港で透明ステッカーサービスを提供。高品質、透明な価格、迅速な納品。"
+        "a": "透明PET素材、貼り付け後無感効果。化粧品、食品包装、ガラス装飾に最適。 ZprintProは透明ステッカーサービスを提供。高品質、透明な価格、迅速な納品。"
       },
       {
         "q": "專業透明貼紙服務 | 智印雲",
@@ -594,7 +594,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "再剥離ステッカー | 防水 PVC ダイカット | ZprintPro",
-        "description": "再剥離ステッカーの再剥離ステッカーは ZprintPro にお任せ。防水 PVC/コート/透明 高品質用紙、丸/角/型抜き 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "再剥離ステッカーの再剥離ステッカーは ZprintPro にお任せ。防水 PVC/コート/透明 高品質用紙、丸/角/型抜き 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": " glass displays",
         "keywords": ["再剥離ステッカー", "再剥離ステッカー 印刷", "removable stickers", "ステッカー印刷", "防水ステッカー", "オリジナルステッカー", "小ロットステッカー", "ダイカットステッカー", "透明ステッカー", "商品ラベル", "カスタムステッカー", "剥がせるステッカー", "ロゴステッカー", "1000枚ステッカー", "A4 ステッカー", "Etsy ステッカー", "QR コードステッカー", "賞味期限ステッカー", "ノーリボン残留", "残留なし", "スキャン可能ステッカー", "円形ステッカー", "ウェディングステッカー", "学生ステッカー", "成分表示", "成分表示ステッカー", "ラベルステッカー印刷", "イベント双方向", "物流追跡", "ガラスステッカー", "誕生日ステッカー", "エコノミーステッカー", "ウェルカムステッカー", "透明ステッカー印刷", "食品グレードステッカー", "高透明ステッカー"],
         "body": "カスタム はがせるステッカー — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FDA 認可接着剤（間接食品接触対応）、SGS 移行テスト済み。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\nはがせるステッカー は 食品ラベル・FDA 準拠パッケージ、屋外サイン・設備デカール、小売商品ラベル・DTC ブランドステッカー の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。stickers 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに はがせるステッカー サービスの設計思想です。\n\n素材は PVC ビニール（3.4 mil、UV 耐性インク）（日常大量使用）、BOPP 透明フィルム（2.6 mil、防水）（プレミアム用途、主力選択）、コート紙（70lb、短期プロモーション用）（特殊プロジェクト）の 3 種類。すべて FDA 認可接着剤（間接食品接触対応） および SGS 移行テスト済み 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、stickers 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: ステッカーの屋外耐久年数は？**\nPVC ビニールステッカーは屋外で 3-5 年、屋内では 1-2 年の耐久性があります。マットラミネート加工で紫外線耐性も確保。BOPP フィルムも同等の耐久性を実現し、透明ラベルに最適です。すべての素材は UV 耐性インク使用で日焼けによる色褪せを防止します。\n\n**Q2: 最小注文数量は？**\n100 枚から対応、版代・型代ゼロ。スモールバッチシリーズは 50 枚まで対応可能。標準納期は 3-5 営業日、沖縄・北海道含む日本全国送料無料、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前にデジタル校正は確認できますか？**\nはい — データ提出から 2 時間以内に無料デジタル校正 PDF を提供。無料修正は 2 回まで対応可能です。実物サンプルは有償（¥2,980）で素材・加工見本セットを DHL Express でお届けします。\n\n**Q4: 日本への配送はどのくらいですか？**\n日本全国送料無料、沖縄県・北海道も同料金、DHL 国際配送で 2-4 日納品。お急ぎ便（48 時間制作 + 1 日配送）は 30% 増で対応。沖縄・北海道も追加料金一切なし。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
@@ -602,7 +602,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [
       {
-        "q": "特殊粘着設計、剥がしても残りません。車窓、ガラス展示、短期展示会に最適。 ZprintProは香港ではがせるステッカーサービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "特殊粘着設計、剥がしても残りません。車窓、ガラス展示、短期展示会に最適。 ZprintProははがせるステッカーサービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業可移貼紙(無殘膠)服務 | 智印雲"
       },
       {
@@ -645,7 +645,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "小ロットステッカー | 防水 PVC ダイカット | ZprintPro",
-        "description": "小ロットステッカーの小ロットステッカーは ZprintPro にお任せ。防水 PVC/コート/透明 高品質用紙、丸/角/型抜き 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "小ロットステッカーの小ロットステッカーは ZprintPro にお任せ。防水 PVC/コート/透明 高品質用紙、丸/角/型抜き 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": " no bulk inventory pressure. Perfect for startups",
         "keywords": ["小ロットステッカー", "小ロットステッカー 印刷", "small batch stickers", "ステッカー印刷", "防水ステッカー", "オリジナルステッカー", "ダイカットステッカー", "透明ステッカー", "商品ラベル", "カスタムステッカー", "剥がせるステッカー", "ロゴステッカー", "1000枚ステッカー", "A4 ステッカー", "Etsy ステッカー", "QR コードステッカー", "賞味期限ステッカー", "ノーリボン残留", "残留なし", "スキャン可能ステッカー", "円形ステッカー", "ウェディングステッカー", "学生ステッカー", "成分表示", "成分表示ステッカー", "ラベルステッカー印刷", "イベント双方向", "物流追跡", "ガラスステッカー", "誕生日ステッカー", "エコノミーステッカー", "ウェルカムステッカー", "透明ステッカー印刷", "食品グレードステッカー", "高透明ステッカー"],
         "body": "カスタム 小ロットステッカー — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FDA 認可接着剤（間接食品接触対応）、SGS 移行テスト済み。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\n小ロットステッカー は 食品ラベル・FDA 準拠パッケージ、屋外サイン・設備デカール、小売商品ラベル・DTC ブランドステッカー の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。stickers 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに 小ロットステッカー サービスの設計思想です。\n\n素材は PVC ビニール（3.4 mil、UV 耐性インク）（日常大量使用）、BOPP 透明フィルム（2.6 mil、防水）（プレミアム用途、主力選択）、コート紙（70lb、短期プロモーション用）（特殊プロジェクト）の 3 種類。すべて FDA 認可接着剤（間接食品接触対応） および SGS 移行テスト済み 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、stickers 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: ステッカーの屋外耐久年数は？**\nPVC ビニールステッカーは屋外で 3-5 年、屋内では 1-2 年の耐久性があります。マットラミネート加工で紫外線耐性も確保。BOPP フィルムも同等の耐久性を実現し、透明ラベルに最適です。すべての素材は UV 耐性インク使用で日焼けによる色褪せを防止します。\n\n**Q2: 最小注文数量は？**\n100 枚から対応、版代・型代ゼロ。スモールバッチシリーズは 50 枚まで対応可能。標準納期は 3-5 営業日、沖縄・北海道含む日本全国送料無料、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前にデジタル校正は確認できますか？**\nはい — データ提出から 2 時間以内に無料デジタル校正 PDF を提供。無料修正は 2 回まで対応可能です。実物サンプルは有償（¥2,980）で素材・加工見本セットを DHL Express でお届けします。\n\n**Q4: 日本への配送はどのくらいですか？**\n日本全国送料無料、沖縄県・北海道も同料金、DHL 国際配送で 2-4 日納品。お急ぎ便（48 時間制作 + 1 日配送）は 30% 増で対応。沖縄・北海道も追加料金一切なし。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
@@ -654,7 +654,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "faqs": [
       {
         "q": " fast delivery.",
-        "a": "最小A4サイズから、大量在庫の心配なし。スタートアップ、イベント宣伝、個人創作に最適。 ZprintProは香港で小ロットステッカーサービスを提供。高品質、透明な価格、迅速な納品。"
+        "a": "最小A4サイズから、大量在庫の心配なし。スタートアップ、イベント宣伝、個人創作に最適。 ZprintProは小ロットステッカーサービスを提供。高品質、透明な価格、迅速な納品。"
       },
       {
         "q": "專業小批量貼紙服務 | 智印雲",
@@ -696,7 +696,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "ダイカットステッカー | 防水 PVC ダイカット | ZprintPro",
-        "description": "ダイカットステッカーのダイカットステッカーは ZprintPro にお任せ。防水 PVC/コート/透明 高品質用紙、丸/角/型抜き 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "ダイカットステッカーのダイカットステッカーは ZprintPro にお任せ。防水 PVC/コート/透明 高品質用紙、丸/角/型抜き 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": " creativity without limits. Can cut logo shapes",
         "keywords": ["ダイカットステッカー", "ダイカットステッカー 印刷", "die cut stickers", "ステッカー印刷", "防水ステッカー", "オリジナルステッカー", "小ロットステッカー", "透明ステッカー", "商品ラベル", "カスタムステッカー", "剥がせるステッカー", "ロゴステッカー", "1000枚ステッカー", "A4 ステッカー", "Etsy ステッカー", "QR コードステッカー", "賞味期限ステッカー", "ノーリボン残留", "残留なし", "スキャン可能ステッカー", "円形ステッカー", "ウェディングステッカー", "学生ステッカー", "成分表示", "成分表示ステッカー", "ラベルステッカー印刷", "イベント双方向", "物流追跡", "ガラスステッカー", "誕生日ステッカー", "エコノミーステッカー", "ウェルカムステッカー", "透明ステッカー印刷", "食品グレードステッカー", "高透明ステッカー"],
         "body": "カスタム 型抜きステッカー — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FDA 認可接着剤（間接食品接触対応）、SGS 移行テスト済み。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\n型抜きステッカー は 食品ラベル・FDA 準拠パッケージ、屋外サイン・設備デカール、小売商品ラベル・DTC ブランドステッカー の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。stickers 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに 型抜きステッカー サービスの設計思想です。\n\n素材は PVC ビニール（3.4 mil、UV 耐性インク）（日常大量使用）、BOPP 透明フィルム（2.6 mil、防水）（プレミアム用途、主力選択）、コート紙（70lb、短期プロモーション用）（特殊プロジェクト）の 3 種類。すべて FDA 認可接着剤（間接食品接触対応） および SGS 移行テスト済み 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、stickers 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: ステッカーの屋外耐久年数は？**\nPVC ビニールステッカーは屋外で 3-5 年、屋内では 1-2 年の耐久性があります。マットラミネート加工で紫外線耐性も確保。BOPP フィルムも同等の耐久性を実現し、透明ラベルに最適です。すべての素材は UV 耐性インク使用で日焼けによる色褪せを防止します。\n\n**Q2: 最小注文数量は？**\n100 枚から対応、版代・型代ゼロ。スモールバッチシリーズは 50 枚まで対応可能。標準納期は 3-5 営業日、沖縄・北海道含む日本全国送料無料、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前にデジタル校正は確認できますか？**\nはい — データ提出から 2 時間以内に無料デジタル校正 PDF を提供。無料修正は 2 回まで対応可能です。実物サンプルは有償（¥2,980）で素材・加工見本セットを DHL Express でお届けします。\n\n**Q4: 日本への配送はどのくらいですか？**\n日本全国送料無料、沖縄県・北海道も同料金、DHL 国際配送で 2-4 日納品。お急ぎ便（48 時間制作 + 1 日配送）は 30% 増で対応。沖縄・北海道も追加料金一切なし。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
@@ -705,7 +705,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "faqs": [
       {
         "q": " fast delivery.",
-        "a": "任意形状の型抜き、創作の自由を制限しません。 ZprintProは香港で型抜きステッカーサービスを提供。高品質、透明な価格、迅速な納品。"
+        "a": "任意形状の型抜き、創作の自由を制限しません。 ZprintProは型抜きステッカーサービスを提供。高品質、透明な価格、迅速な納品。"
       },
       {
         "q": "專業異形模切貼紙服務 | 智印雲",
@@ -747,7 +747,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "箔押しステッカー | 防水 PVC ダイカット | ZprintPro",
-        "description": "箔押しステッカーの箔押しステッカーは ZprintPro にお任せ。防水 PVC/コート/透明 高品質用紙、丸/角/型抜き 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "箔押しステッカーの箔押しステッカーは ZprintPro にお任せ。防水 PVC/コート/透明 高品質用紙、丸/角/型抜き 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": " gift packaging",
         "keywords": ["箔押しステッカー", "箔押しステッカー 印刷", "foil stickers", "ステッカー印刷", "防水ステッカー", "オリジナルステッカー", "小ロットステッカー", "ダイカットステッカー", "透明ステッカー", "商品ラベル", "カスタムステッカー", "剥がせるステッカー", "ロゴステッカー", "1000枚ステッカー", "A4 ステッカー", "Etsy ステッカー", "QR コードステッカー", "賞味期限ステッカー", "ノーリボン残留", "残留なし", "スキャン可能ステッカー", "円形ステッカー", "ウェディングステッカー", "学生ステッカー", "成分表示", "成分表示ステッカー", "ラベルステッカー印刷", "イベント双方向", "物流追跡", "ガラスステッカー", "誕生日ステッカー", "エコノミーステッカー", "ウェルカムステッカー", "透明ステッカー印刷", "食品グレードステッカー", "高透明ステッカー"],
         "body": "カスタム 箔押しステッカー — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FDA 認可接着剤（間接食品接触対応）、SGS 移行テスト済み。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\n箔押しステッカー は 食品ラベル・FDA 準拠パッケージ、屋外サイン・設備デカール、小売商品ラベル・DTC ブランドステッカー の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。stickers 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに 箔押しステッカー サービスの設計思想です。\n\n素材は PVC ビニール（3.4 mil、UV 耐性インク）（日常大量使用）、BOPP 透明フィルム（2.6 mil、防水）（プレミアム用途、主力選択）、コート紙（70lb、短期プロモーション用）（特殊プロジェクト）の 3 種類。すべて FDA 認可接着剤（間接食品接触対応） および SGS 移行テスト済み 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、stickers 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: ステッカーの屋外耐久年数は？**\nPVC ビニールステッカーは屋外で 3-5 年、屋内では 1-2 年の耐久性があります。マットラミネート加工で紫外線耐性も確保。BOPP フィルムも同等の耐久性を実現し、透明ラベルに最適です。すべての素材は UV 耐性インク使用で日焼けによる色褪せを防止します。\n\n**Q2: 最小注文数量は？**\n100 枚から対応、版代・型代ゼロ。スモールバッチシリーズは 50 枚まで対応可能。標準納期は 3-5 営業日、沖縄・北海道含む日本全国送料無料、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前にデジタル校正は確認できますか？**\nはい — データ提出から 2 時間以内に無料デジタル校正 PDF を提供。無料修正は 2 回まで対応可能です。実物サンプルは有償（¥2,980）で素材・加工見本セットを DHL Express でお届けします。\n\n**Q4: 日本への配送はどのくらいですか？**\n日本全国送料無料、沖縄県・北海道も同料金、DHL 国際配送で 2-4 日納品。お急ぎ便（48 時間制作 + 1 日配送）は 30% 増で対応。沖縄・北海道も追加料金一切なし。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
@@ -755,7 +755,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [
       {
-        "q": "箔押し加工でステッカーに高級感。高級製品ラベル、ギフト包装、VIPバッジに最適。 ZprintProは香港で箔押しステッカーサービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "箔押し加工でステッカーに高級感。高級製品ラベル、ギフト包装、VIPバッジに最適。 ZprintProは箔押しステッカーサービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業燙金貼紙服務 | 智印雲"
       },
       {
@@ -798,7 +798,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "セキュリティステッカー | 防水 PVC ダイカット | ZprintPro",
-        "description": "セキュリティステッカーのセキュリティステッカーは ZprintPro にお任せ。防水 PVC/コート/透明 高品質用紙、丸/角/型抜き 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "セキュリティステッカーのセキュリティステッカーは ZprintPro にお任せ。防水 PVC/コート/透明 高品質用紙、丸/角/型抜き 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": " fragile paper",
         "keywords": ["セキュリティステッカー", "セキュリティステッカー 印刷", "security stickers", "ステッカー印刷", "防水ステッカー", "オリジナルステッカー", "小ロットステッカー", "ダイカットステッカー", "透明ステッカー", "商品ラベル", "カスタムステッカー", "剥がせるステッカー", "ロゴステッカー", "1000枚ステッカー", "A4 ステッカー", "Etsy ステッカー", "QR コードステッカー", "賞味期限ステッカー", "ノーリボン残留", "残留なし", "スキャン可能ステッカー", "円形ステッカー", "ウェディングステッカー", "学生ステッカー", "成分表示", "成分表示ステッカー", "ラベルステッカー印刷", "イベント双方向", "物流追跡", "ガラスステッカー", "誕生日ステッカー", "エコノミーステッカー", "ウェルカムステッカー", "透明ステッカー印刷", "食品グレードステッカー", "高透明ステッカー"],
         "body": "カスタム セキュリティステッカー — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FDA 認可接着剤（間接食品接触対応）、SGS 移行テスト済み。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\nセキュリティステッカー は 食品ラベル・FDA 準拠パッケージ、屋外サイン・設備デカール、小売商品ラベル・DTC ブランドステッカー の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。stickers 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに セキュリティステッカー サービスの設計思想です。\n\n素材は PVC ビニール（3.4 mil、UV 耐性インク）（日常大量使用）、BOPP 透明フィルム（2.6 mil、防水）（プレミアム用途、主力選択）、コート紙（70lb、短期プロモーション用）（特殊プロジェクト）の 3 種類。すべて FDA 認可接着剤（間接食品接触対応） および SGS 移行テスト済み 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、stickers 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: ステッカーの屋外耐久年数は？**\nPVC ビニールステッカーは屋外で 3-5 年、屋内では 1-2 年の耐久性があります。マットラミネート加工で紫外線耐性も確保。BOPP フィルムも同等の耐久性を実現し、透明ラベルに最適です。すべての素材は UV 耐性インク使用で日焼けによる色褪せを防止します。\n\n**Q2: 最小注文数量は？**\n100 枚から対応、版代・型代ゼロ。スモールバッチシリーズは 50 枚まで対応可能。標準納期は 3-5 営業日、沖縄・北海道含む日本全国送料無料、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前にデジタル校正は確認できますか？**\nはい — データ提出から 2 時間以内に無料デジタル校正 PDF を提供。無料修正は 2 回まで対応可能です。実物サンプルは有償（¥2,980）で素材・加工見本セットを DHL Express でお届けします。\n\n**Q4: 日本への配送はどのくらいですか？**\n日本全国送料無料、沖縄県・北海道も同料金、DHL 国際配送で 2-4 日納品。お急ぎ便（48 時間制作 + 1 日配送）は 30% 増で対応。沖縄・北海道も追加料金一切なし。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
@@ -806,7 +806,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [
       {
-        "q": "特殊な偽造防止加工、ホログラムラベル、壊れやすい紙など。 ZprintProは香港でセキュリティステッカーサービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "特殊な偽造防止加工、ホログラムラベル、壊れやすい紙など。 ZprintProはセキュリティステッカーサービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業防偽貼紙服務 | 智印雲"
       },
       {
@@ -849,7 +849,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "蛍光ステッカー | 防水 PVC ダイカット | ZprintPro",
-        "description": "蛍光ステッカーの蛍光ステッカーは ZprintPro にお任せ。防水 PVC/コート/透明 高品質用紙、丸/角/型抜き 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "蛍光ステッカーの蛍光ステッカーは ZprintPro にお任せ。防水 PVC/コート/透明 高品質用紙、丸/角/型抜き 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": " highly visible under light. Perfect for promotional labels",
         "keywords": ["蛍光ステッカー", "蛍光ステッカー 印刷", "fluorescent stickers", "ステッカー印刷", "防水ステッカー", "オリジナルステッカー", "小ロットステッカー", "ダイカットステッカー", "透明ステッカー", "商品ラベル", "カスタムステッカー", "剥がせるステッカー", "ロゴステッカー", "1000枚ステッカー", "A4 ステッカー", "Etsy ステッカー", "QR コードステッカー", "賞味期限ステッカー", "ノーリボン残留", "残留なし", "スキャン可能ステッカー", "円形ステッカー", "ウェディングステッカー", "学生ステッカー", "成分表示", "成分表示ステッカー", "ラベルステッカー印刷", "イベント双方向", "物流追跡", "ガラスステッカー", "誕生日ステッカー", "エコノミーステッカー", "ウェルカムステッカー", "透明ステッカー印刷", "食品グレードステッカー", "高透明ステッカー"],
         "body": "カスタム 蛍光ステッカー — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FDA 認可接着剤（間接食品接触対応）、SGS 移行テスト済み。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\n蛍光ステッカー は 食品ラベル・FDA 準拠パッケージ、屋外サイン・設備デカール、小売商品ラベル・DTC ブランドステッカー の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。stickers 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに 蛍光ステッカー サービスの設計思想です。\n\n素材は PVC ビニール（3.4 mil、UV 耐性インク）（日常大量使用）、BOPP 透明フィルム（2.6 mil、防水）（プレミアム用途、主力選択）、コート紙（70lb、短期プロモーション用）（特殊プロジェクト）の 3 種類。すべて FDA 認可接着剤（間接食品接触対応） および SGS 移行テスト済み 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、stickers 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: ステッカーの屋外耐久年数は？**\nPVC ビニールステッカーは屋外で 3-5 年、屋内では 1-2 年の耐久性があります。マットラミネート加工で紫外線耐性も確保。BOPP フィルムも同等の耐久性を実現し、透明ラベルに最適です。すべての素材は UV 耐性インク使用で日焼けによる色褪せを防止します。\n\n**Q2: 最小注文数量は？**\n100 枚から対応、版代・型代ゼロ。スモールバッチシリーズは 50 枚まで対応可能。標準納期は 3-5 営業日、沖縄・北海道含む日本全国送料無料、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前にデジタル校正は確認できますか？**\nはい — データ提出から 2 時間以内に無料デジタル校正 PDF を提供。無料修正は 2 回まで対応可能です。実物サンプルは有償（¥2,980）で素材・加工見本セットを DHL Express でお届けします。\n\n**Q4: 日本への配送はどのくらいですか？**\n日本全国送料無料、沖縄県・北海道も同料金、DHL 国際配送で 2-4 日納品。お急ぎ便（48 時間制作 + 1 日配送）は 30% 増で対応。沖縄・北海道も追加料金一切なし。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
@@ -858,7 +858,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "faqs": [
       {
         "q": " fast delivery.",
-        "a": "蛍光色、光の下で非常に目立ちます。プロモーションラベル、安全標識、イベント装飾に最適。 ZprintProは香港で蛍光ステッカーサービスを提供。高品質、透明な価格、迅速な納品。"
+        "a": "蛍光色、光の下で非常に目立ちます。プロモーションラベル、安全標識、イベント装飾に最適。 ZprintProは蛍光ステッカーサービスを提供。高品質、透明な価格、迅速な納品。"
       },
       {
         "q": "專業螢光貼紙服務 | 智印雲",
@@ -894,27 +894,27 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Custom Kraft Paper Bags | Free Shipping $99+ | ZprintPro",
         "description": "Custom kraft paper bags for retail and gift shops. 120-300g kraft with cotton rope handles. 100-MOQ | Free Design | 100 MOQ",
         "h1": "Kraft Paper Bags 100+ | Eco-Friendly | ZprintPro",
-        "keywords": ["kraft paper bags","custom kraft paper bags","kraft paper bags printing","eco friendly kraft bags","kraft bags with handles","brown paper bags wholesale","kraft paper bags free shipping","bulk kraft bags","kraft bags USD","bespoke paper bags","paper bag printing","shopping bags","eco bags","gift bags","custom paper bags","handle bags","white card bags","large paper bags","recycled bags","100pcs MOQ","2h pickup","48h turnaround","50pcs MOQ","free proof","free design","SF Express HK delivery","wedding paper bag","small batch paper bag","affordable paper bag","fast paper bag printing","rope handle bag","foil logo","kraft paper bag","eco paper bag","white card bag","boutique paper bag","paper bag production","paper bag factory","custom paper bag","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
+        "keywords": ["kraft paper bags","custom kraft paper bags","kraft paper bags printing","eco friendly kraft bags","kraft bags with handles","brown paper bags wholesale","kraft paper bags free shipping","bulk kraft bags","kraft bags USD","bespoke paper bags","paper bag printing","shopping bags","eco bags","gift bags","custom paper bags","handle bags","white card bags","large paper bags","recycled bags","100pcs MOQ","2h pickup","48h turnaround","50pcs MOQ","free proof","free design","international express delivery","wedding paper bag","small batch paper bag","affordable paper bag","fast paper bag printing","rope handle bag","foil logo","kraft paper bag","eco paper bag","white card bag","boutique paper bag","paper bag production","paper bag factory","custom paper bag","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
         "body": "Custom kraft paper bags designed for US small business, DTC brands, and cross-border e-commerce. Free design mockup, no setup fees, and Free Shipping on US orders over $99. Every order ships from our Asia factory with 4-day delivery to the lower 48 states. ISO 9001 certified production with full FDA compliance where applicable.\n\nKraft Paper Bags are widely used across retail shopping bags and boutique packaging, gift bags and event giveaways, and restaurant takeaway and food delivery bags — whether you are launching a new product line, refreshing your retail shelf presence, or shipping promotional materials to a nationwide customer base. The paper bags market rewards brands that ship fast, iterate often, and stay under tight unit-cost targets — that is exactly what our kraft paper bags service is built for.\n\nMaterial options include Brown kraft paper 150g (eco-friendly standard) for everyday high-volume use, White card stock 210g (premium retail) for premium applications, and Art paper 170g with matte lamination (luxury gift) for specialty projects. All three are FSC-certified paper, 100% recyclable and Reinforced twisted-paper or cotton cord handles, so you can ship into the US market without compliance friction. Print finishes include matte lamination, gloss lamination, spot UV, foil stamping, and full-color CMYK plus white ink where supported.\n\nSubmit print-ready files (300 DPI, CMYK, 3mm bleed, outlined fonts) and we ship a free digital proof within 2 hours. If you do not have design files yet, our in-house design team will mock up your concept at no charge — just share your brand colors, logo, and any reference photos via WhatsApp. We also offer free dieline templates for every standard size.\n\nPricing is transparent: 100-piece minimum, no setup fees, no plate fees, and Free Shipping on US orders over $99. Standard turnaround is 4 business days for production plus 4-day USA delivery. Rush orders (24-hour proof plus 2-day production) available for an additional 20%. Get an instant quote via the 30-second AI estimator on the product page, or message us on WhatsApp for a custom run.\n\n**FAQ**\n\n**Q1: What sizes and handle types are available?**\nStandard sizes: Small (8\"x10\"), Medium (12\"x14\"), Large (16\"x18\"), and Custom (any size up to 24\"x24\"). Handle options: Twisted paper cord (eco), Cotton cord (premium feel), Ribbon (luxury), and Flat tape (extra-durable for heavy items).\n\n**Q2: What is the minimum order quantity?**\n100 bags minimum. Standard production 5-7 business days plus 4-day USA delivery. Bulk discounts at 500 / 1,000 / 5,000 quantities.\n\n**Q3: Can I get a 3D mockup before bulk order?**\nYes — free 3D render within 4 hours. For physical samples, we offer a paid sample pack ($29) with material and handle samples shipped via DHL Express.\n\n**Q4: Are paper bags food-safe?**\nOur kraft paper bags use food-grade ink and are safe for indirect food contact (bakery, takeaway, dry snacks). For hot food / grease / liquid, we offer inner PE or PLA bio-lining at an additional 15-20%.\n\nReady to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA pickup available for orders placed before 11 AM EST in major US cities."
       
       
       },
       "ja": {
         "title": "クラフト紙袋 | エコ素材 多サイズ | ZprintPro",
-        "description": "クラフト紙袋のクラフト紙袋は ZprintPro にお任せ。白カード/クラフト/コート 高品質用紙、マルチサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "クラフト紙袋のクラフト紙袋は ZprintPro にお任せ。白カード/クラフト/コート 高品質用紙、マルチサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "Eco-friendly kraft paper",
-        "keywords": ["クラフト紙袋", "クラフト紙袋 印刷", "kraft paper bags", "紙袋印刷", "ショッピングバッグ", "エコバッグ", "ギフトバッグ", "カスタム紙袋", "ハンドルバッグ", "大判紙袋", "再生紙バッグ", "ロゴ入り紙袋", "100個〜", "2時間受取", "48時間出荷", "50個〜", "無料校正", "無料デザイン", "香港 SF Express 直送", "ウェディング紙袋", "小ロット紙袋", "低価格紙袋印刷", "快速紙袋印刷", "手提げ紙袋", "箔押しロゴ", "エコ紙袋", "ホワイトカード紙袋", "ブティック紙袋", "紙袋製作", "紙袋工場", "紙袋オーダー"],
+        "keywords": ["クラフト紙袋", "クラフト紙袋 印刷", "kraft paper bags", "紙袋印刷", "ショッピングバッグ", "エコバッグ", "ギフトバッグ", "カスタム紙袋", "ハンドルバッグ", "大判紙袋", "再生紙バッグ", "ロゴ入り紙袋", "100個〜", "2時間受取", "48時間出荷", "50個〜", "無料校正", "無料デザイン", "DHL Express 直送", "ウェディング紙袋", "小ロット紙袋", "低価格紙袋印刷", "快速紙袋印刷", "手提げ紙袋", "箔押しロゴ", "エコ紙袋", "ホワイトカード紙袋", "ブティック紙袋", "紙袋製作", "紙袋工場", "紙袋オーダー"],
         "body": "カスタム クラフト紙袋 — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FSC 認証紙、100% リサイクル可能、強化つなぎ紙・綿コードハンドル。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\nクラフト紙袋 は 小売ショッピングバッグ・ブティックパッケージ、ギフトバッグ・イベント景品、レストラン テイクアウト・食品配達バッグ の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。paper bags 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに クラフト紙袋 サービスの設計思想です。\n\n素材は 茶色クラフト紙 150g（エコ標準）（日常大量使用）、白カード 210g（プレミアム小売）（プレミアム用途、主力選択）、アート紙 170g + マットラミネート（高級ギフト）（特殊プロジェクト）の 3 種類。すべて FSC 認証紙、100% リサイクル可能 および 強化つなぎ紙・綿コードハンドル 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、paper bags 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: サイズとハンドル種類は？**\n標準サイズ：S（8\"x10\"）、M（12\"x14\"）、L（16\"x18\"）、カスタム（最大 24\"x24\"）。ハンドル：つなぎ紙（エコ）、綿コード（プレミアム感）、リボン（高級）、平テープ（重量物対応）。\n\n**Q2: 最小注文数量は？**\n100 個から対応。標準納期 5-7 営業日、DHL 国際配送で 2-4 日納品。500 / 1,000 / 5,000 数量で段階割引。\n\n**Q3: 本注文前に 3D モックアップは見られますか？**\nはい — 無料 3D レンダリング 4 時間以内。実物サンプルは有償（¥2,980）で素材・ハンドル見本セットを DHL Express でお届け。\n\n**Q4: 食品接触対応ですか？**\nクラフト紙袋は食品グレードインク使用、間接食品接触（ベーカリー、テイクアウト、乾物スナック）対応。熱食品 / 油脂 / 液体向けには PE または PLA バイオライニングを 15-20% 増で承ります。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
       }
     },
     "faqs": [
       {
-        "q": " coffee shops. ZprintPro offers professional Kraft Paper Bags services in Hong Kong. High quality",
+        "q": " coffee shops. ZprintPro offers professional Kraft Paper Bags services worldwide. High quality",
         "a": " transparent pricing"
       },
       {
         "q": " fast delivery.",
-        "a": "環境に優しいクラフト紙、質朴で自然、消費者に人気。衣料品店、ギフトショップ、コーヒーショップに最適。 ZprintProは香港でクラフト紙袋サービスを提供。高品質、透明な価格、迅速な納品。"
+        "a": "環境に優しいクラフト紙、質朴で自然、消費者に人気。衣料品店、ギフトショップ、コーヒーショップに最適。 ZprintProはクラフト紙袋サービスを提供。高品質、透明な価格、迅速な納品。"
       },
       {
         "q": "專業牛皮紙袋服務 | 智印雲",
@@ -946,15 +946,15 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Custom White Card Bags | Free Shipping $99+ | ZprintPro",
         "description": "Custom white card bags from ZprintPro the US. Premium Custom, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "White Card Bags 100+ | Premium Custom | ZprintPro",
-        "keywords": ["white card bags","custom white card bags","white card bags printing hong kong","white card bags free shipping","white card bags USD","bulk white card bags","white card bags DHL","bespoke white card bags","white card bags wholesale","white card bags pricing","paper bag printing","kraft paper bags","shopping bags","eco bags","gift bags","custom paper bags","handle bags","large paper bags","recycled bags","100pcs MOQ","2h pickup","48h turnaround","50pcs MOQ","free proof","free design","SF Express HK delivery","wedding paper bag","small batch paper bag","affordable paper bag","fast paper bag printing","rope handle bag","foil logo","kraft paper bag","eco paper bag","white card bag","boutique paper bag","paper bag production","paper bag factory","custom paper bag","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
+        "keywords": ["white card bags","custom white card bags","white card bags printing online","white card bags free shipping","white card bags USD","bulk white card bags","white card bags DHL","bespoke white card bags","white card bags wholesale","white card bags pricing","paper bag printing","kraft paper bags","shopping bags","eco bags","gift bags","custom paper bags","handle bags","large paper bags","recycled bags","100pcs MOQ","2h pickup","48h turnaround","50pcs MOQ","free proof","free design","international express delivery","wedding paper bag","small batch paper bag","affordable paper bag","fast paper bag printing","rope handle bag","foil logo","kraft paper bag","eco paper bag","white card bag","boutique paper bag","paper bag production","paper bag factory","custom paper bag","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
         "body": "Custom white card bags designed for US small business, DTC brands, and cross-border e-commerce. Free design mockup, no setup fees, and Free Shipping on US orders over $99. Every order ships from our Asia factory with 4-day delivery to the lower 48 states. ISO 9001 certified production with full FDA compliance where applicable.\n\nWhite Card Bags are widely used across retail shopping bags and boutique packaging, gift bags and event giveaways, and restaurant takeaway and food delivery bags — whether you are launching a new product line, refreshing your retail shelf presence, or shipping promotional materials to a nationwide customer base. The paper bags market rewards brands that ship fast, iterate often, and stay under tight unit-cost targets — that is exactly what our white card bags service is built for.\n\nMaterial options include Brown kraft paper 150g (eco-friendly standard) for everyday high-volume use, White card stock 210g (premium retail) for premium applications, and Art paper 170g with matte lamination (luxury gift) for specialty projects. All three are FSC-certified paper, 100% recyclable and Reinforced twisted-paper or cotton cord handles, so you can ship into the US market without compliance friction. Print finishes include matte lamination, gloss lamination, spot UV, foil stamping, and full-color CMYK plus white ink where supported.\n\nSubmit print-ready files (300 DPI, CMYK, 3mm bleed, outlined fonts) and we ship a free digital proof within 2 hours. If you do not have design files yet, our in-house design team will mock up your concept at no charge — just share your brand colors, logo, and any reference photos via WhatsApp. We also offer free dieline templates for every standard size.\n\nPricing is transparent: 100-piece minimum, no setup fees, no plate fees, and Free Shipping on US orders over $99. Standard turnaround is 4 business days for production plus 4-day USA delivery. Rush orders (24-hour proof plus 2-day production) available for an additional 20%. Get an instant quote via the 30-second AI estimator on the product page, or message us on WhatsApp for a custom run.\n\n**FAQ**\n\n**Q1: What sizes and handle types are available?**\nStandard sizes: Small (8\"x10\"), Medium (12\"x14\"), Large (16\"x18\"), and Custom (any size up to 24\"x24\"). Handle options: Twisted paper cord (eco), Cotton cord (premium feel), Ribbon (luxury), and Flat tape (extra-durable for heavy items).\n\n**Q2: What is the minimum order quantity?**\n100 bags minimum. Standard production 5-7 business days plus 4-day USA delivery. Bulk discounts at 500 / 1,000 / 5,000 quantities.\n\n**Q3: Can I get a 3D mockup before bulk order?**\nYes — free 3D render within 4 hours. For physical samples, we offer a paid sample pack ($29) with material and handle samples shipped via DHL Express.\n\n**Q4: Are paper bags food-safe?**\nOur kraft paper bags use food-grade ink and are safe for indirect food contact (bakery, takeaway, dry snacks). For hot food / grease / liquid, we offer inner PE or PLA bio-lining at an additional 15-20%.\n\nReady to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA pickup available for orders placed before 11 AM EST in major US cities."
       
       },
       "ja": {
         "title": "白カード紙袋 | エコ素材 多サイズ | ZprintPro",
-        "description": "白カード紙袋の白カード紙袋は ZprintPro にお任せ。白カード/クラフト/コート 高品質用紙、マルチサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "白カード紙袋の白カード紙袋は ZprintPro にお任せ。白カード/クラフト/コート 高品質用紙、マルチサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "White card paper",
-        "keywords": ["白カード紙袋", "白カード紙袋 印刷", "white card bags", "紙袋印刷", "ショッピングバッグ", "クラフト紙袋", "エコバッグ", "ギフトバッグ", "カスタム紙袋", "ハンドルバッグ", "大判紙袋", "再生紙バッグ", "ロゴ入り紙袋", "100個〜", "2時間受取", "48時間出荷", "50個〜", "無料校正", "無料デザイン", "香港 SF Express 直送", "ウェディング紙袋", "小ロット紙袋", "低価格紙袋印刷", "快速紙袋印刷", "手提げ紙袋", "箔押しロゴ", "エコ紙袋", "ホワイトカード紙袋", "ブティック紙袋", "紙袋製作", "紙袋工場", "紙袋オーダー"],
+        "keywords": ["白カード紙袋", "白カード紙袋 印刷", "white card bags", "紙袋印刷", "ショッピングバッグ", "クラフト紙袋", "エコバッグ", "ギフトバッグ", "カスタム紙袋", "ハンドルバッグ", "大判紙袋", "再生紙バッグ", "ロゴ入り紙袋", "100個〜", "2時間受取", "48時間出荷", "50個〜", "無料校正", "無料デザイン", "DHL Express 直送", "ウェディング紙袋", "小ロット紙袋", "低価格紙袋印刷", "快速紙袋印刷", "手提げ紙袋", "箔押しロゴ", "エコ紙袋", "ホワイトカード紙袋", "ブティック紙袋", "紙袋製作", "紙袋工場", "紙袋オーダー"],
         "body": "カスタム 白カード紙袋 — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FSC 認証紙、100% リサイクル可能、強化つなぎ紙・綿コードハンドル。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\n白カード紙袋 は 小売ショッピングバッグ・ブティックパッケージ、ギフトバッグ・イベント景品、レストラン テイクアウト・食品配達バッグ の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。paper bags 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに 白カード紙袋 サービスの設計思想です。\n\n素材は 茶色クラフト紙 150g（エコ標準）（日常大量使用）、白カード 210g（プレミアム小売）（プレミアム用途、主力選択）、アート紙 170g + マットラミネート（高級ギフト）（特殊プロジェクト）の 3 種類。すべて FSC 認証紙、100% リサイクル可能 および 強化つなぎ紙・綿コードハンドル 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、paper bags 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: サイズとハンドル種類は？**\n標準サイズ：S（8\"x10\"）、M（12\"x14\"）、L（16\"x18\"）、カスタム（最大 24\"x24\"）。ハンドル：つなぎ紙（エコ）、綿コード（プレミアム感）、リボン（高級）、平テープ（重量物対応）。\n\n**Q2: 最小注文数量は？**\n100 個から対応。標準納期 5-7 営業日、DHL 国際配送で 2-4 日納品。500 / 1,000 / 5,000 数量で段階割引。\n\n**Q3: 本注文前に 3D モックアップは見られますか？**\nはい — 無料 3D レンダリング 4 時間以内。実物サンプルは有償（¥2,980）で素材・ハンドル見本セットを DHL Express でお届け。\n\n**Q4: 食品接触対応ですか？**\nクラフト紙袋は食品グレードインク使用、間接食品接触（ベーカリー、テイクアウト、乾物スナック）対応。熱食品 / 油脂 / 液体向けには PE または PLA バイオライニングを 15-20% 増で承ります。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
       }
     },
@@ -964,7 +964,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "a": " fast delivery."
       },
       {
-        "q": "白カード紙、表面が滑らかで印刷効果が抜群。高級ブランド、化粧品店に最適。 ZprintProは香港で白カード紙袋サービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "白カード紙、表面が滑らかで印刷効果が抜群。高級ブランド、化粧品店に最適。 ZprintProは白カード紙袋サービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業白卡紙袋服務 | 智印雲"
       },
       {
@@ -997,23 +997,23 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Custom Gift Paper Bags | Free Shipping $99+ | ZprintPro",
         "description": "Premium gift paper bags for boutiques and brands. 210-300g art card, ribbon or cotton handles, foil stamping. 100-MOQ | Free Design | 100 MOQ",
         "h1": "Gift Paper Bags 100+ | Premium Ribbon | ZprintPro",
-        "keywords": ["gift paper bags","custom gift bags","premium gift bags","branded gift bags","ribbon handle gift bags","foil stamped gift bags","gift bags free shipping","bulk gift bags","gift bags USD","bespoke gift packaging","paper bag printing","kraft paper bags","shopping bags","eco bags","gift bags","custom paper bags","handle bags","white card bags","large paper bags","recycled bags","100pcs MOQ","2h pickup","48h turnaround","50pcs MOQ","free proof","free design","SF Express HK delivery","wedding paper bag","small batch paper bag","affordable paper bag","fast paper bag printing","rope handle bag","foil logo","kraft paper bag","eco paper bag","white card bag","boutique paper bag","paper bag production","paper bag factory","custom paper bag","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
+        "keywords": ["gift paper bags","custom gift bags","premium gift bags","branded gift bags","ribbon handle gift bags","foil stamped gift bags","gift bags free shipping","bulk gift bags","gift bags USD","bespoke gift packaging","paper bag printing","kraft paper bags","shopping bags","eco bags","gift bags","custom paper bags","handle bags","white card bags","large paper bags","recycled bags","100pcs MOQ","2h pickup","48h turnaround","50pcs MOQ","free proof","free design","international express delivery","wedding paper bag","small batch paper bag","affordable paper bag","fast paper bag printing","rope handle bag","foil logo","kraft paper bag","eco paper bag","white card bag","boutique paper bag","paper bag production","paper bag factory","custom paper bag","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
         "body": "Custom gift bags designed for US small business, DTC brands, and cross-border e-commerce. Free design mockup, no setup fees, and Free Shipping on US orders over $99. Every order ships from our Asia factory with 4-day delivery to the lower 48 states. ISO 9001 certified production with full FDA compliance where applicable.\n\nGift Bags are widely used across retail shopping bags and boutique packaging, gift bags and event giveaways, and restaurant takeaway and food delivery bags — whether you are launching a new product line, refreshing your retail shelf presence, or shipping promotional materials to a nationwide customer base. The paper bags market rewards brands that ship fast, iterate often, and stay under tight unit-cost targets — that is exactly what our gift bags service is built for.\n\nMaterial options include Brown kraft paper 150g (eco-friendly standard) for everyday high-volume use, White card stock 210g (premium retail) for premium applications, and Art paper 170g with matte lamination (luxury gift) for specialty projects. All three are FSC-certified paper, 100% recyclable and Reinforced twisted-paper or cotton cord handles, so you can ship into the US market without compliance friction. Print finishes include matte lamination, gloss lamination, spot UV, foil stamping, and full-color CMYK plus white ink where supported.\n\nSubmit print-ready files (300 DPI, CMYK, 3mm bleed, outlined fonts) and we ship a free digital proof within 2 hours. If you do not have design files yet, our in-house design team will mock up your concept at no charge — just share your brand colors, logo, and any reference photos via WhatsApp. We also offer free dieline templates for every standard size.\n\nPricing is transparent: 100-piece minimum, no setup fees, no plate fees, and Free Shipping on US orders over $99. Standard turnaround is 4 business days for production plus 4-day USA delivery. Rush orders (24-hour proof plus 2-day production) available for an additional 20%. Get an instant quote via the 30-second AI estimator on the product page, or message us on WhatsApp for a custom run.\n\n**FAQ**\n\n**Q1: What sizes and handle types are available?**\nStandard sizes: Small (8\"x10\"), Medium (12\"x14\"), Large (16\"x18\"), and Custom (any size up to 24\"x24\"). Handle options: Twisted paper cord (eco), Cotton cord (premium feel), Ribbon (luxury), and Flat tape (extra-durable for heavy items).\n\n**Q2: What is the minimum order quantity?**\n100 bags minimum. Standard production 5-7 business days plus 4-day USA delivery. Bulk discounts at 500 / 1,000 / 5,000 quantities.\n\n**Q3: Can I get a 3D mockup before bulk order?**\nYes — free 3D render within 4 hours. For physical samples, we offer a paid sample pack ($29) with material and handle samples shipped via DHL Express.\n\n**Q4: Are paper bags food-safe?**\nOur kraft paper bags use food-grade ink and are safe for indirect food contact (bakery, takeaway, dry snacks). For hot food / grease / liquid, we offer inner PE or PLA bio-lining at an additional 15-20%.\n\nReady to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA pickup available for orders placed before 11 AM EST in major US cities."
       
       
       },
       "ja": {
         "title": "ギフトバッグ | エコ素材 多サイズ | ZprintPro",
-        "description": "ギフトバッグのギフトバッグは ZprintPro にお任せ。白カード/クラフト/コート 高品質用紙、マルチサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "ギフトバッグのギフトバッグは ZprintPro にお任せ。白カード/クラフト/コート 高品質用紙、マルチサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "Exquisite design with foil stamping",
-        "keywords": ["ギフトバッグ", "ギフトバッグ 印刷", "gift bags", "紙袋印刷", "ショッピングバッグ", "クラフト紙袋", "エコバッグ", "カスタム紙袋", "ハンドルバッグ", "大判紙袋", "再生紙バッグ", "ロゴ入り紙袋", "100個〜", "2時間受取", "48時間出荷", "50個〜", "無料校正", "無料デザイン", "香港 SF Express 直送", "ウェディング紙袋", "小ロット紙袋", "低価格紙袋印刷", "快速紙袋印刷", "手提げ紙袋", "箔押しロゴ", "エコ紙袋", "ホワイトカード紙袋", "ブティック紙袋", "紙袋製作", "紙袋工場", "紙袋オーダー"],
+        "keywords": ["ギフトバッグ", "ギフトバッグ 印刷", "gift bags", "紙袋印刷", "ショッピングバッグ", "クラフト紙袋", "エコバッグ", "カスタム紙袋", "ハンドルバッグ", "大判紙袋", "再生紙バッグ", "ロゴ入り紙袋", "100個〜", "2時間受取", "48時間出荷", "50個〜", "無料校正", "無料デザイン", "DHL Express 直送", "ウェディング紙袋", "小ロット紙袋", "低価格紙袋印刷", "快速紙袋印刷", "手提げ紙袋", "箔押しロゴ", "エコ紙袋", "ホワイトカード紙袋", "ブティック紙袋", "紙袋製作", "紙袋工場", "紙袋オーダー"],
         "body": "カスタム ギフト紙袋 — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FSC 認証紙、100% リサイクル可能、強化つなぎ紙・綿コードハンドル。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\nギフト紙袋 は 小売ショッピングバッグ・ブティックパッケージ、ギフトバッグ・イベント景品、レストラン テイクアウト・食品配達バッグ の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。paper bags 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに ギフト紙袋 サービスの設計思想です。\n\n素材は 茶色クラフト紙 150g（エコ標準）（日常大量使用）、白カード 210g（プレミアム小売）（プレミアム用途、主力選択）、アート紙 170g + マットラミネート（高級ギフト）（特殊プロジェクト）の 3 種類。すべて FSC 認証紙、100% リサイクル可能 および 強化つなぎ紙・綿コードハンドル 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、paper bags 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: サイズとハンドル種類は？**\n標準サイズ：S（8\"x10\"）、M（12\"x14\"）、L（16\"x18\"）、カスタム（最大 24\"x24\"）。ハンドル：つなぎ紙（エコ）、綿コード（プレミアム感）、リボン（高級）、平テープ（重量物対応）。\n\n**Q2: 最小注文数量は？**\n100 個から対応。標準納期 5-7 営業日、DHL 国際配送で 2-4 日納品。500 / 1,000 / 5,000 数量で段階割引。\n\n**Q3: 本注文前に 3D モックアップは見られますか？**\nはい — 無料 3D レンダリング 4 時間以内。実物サンプルは有償（¥2,980）で素材・ハンドル見本セットを DHL Express でお届け。\n\n**Q4: 食品接触対応ですか？**\nクラフト紙袋は食品グレードインク使用、間接食品接触（ベーカリー、テイクアウト、乾物スナック）対応。熱食品 / 油脂 / 液体向けには PE または PLA バイオライニングを 15-20% 増で承ります。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
       }
     },
     "faqs": [
       {
         "q": " fast delivery.",
-        "a": "精巧なデザイン、箔押し・UVなどの加工付き。ギフトに必須、ギフトの質を向上。 ZprintProは香港でギフト紙袋サービスを提供。高品質、透明な価格、迅速な納品。"
+        "a": "精巧なデザイン、箔押し・UVなどの加工付き。ギフトに必須、ギフトの質を向上。 ZprintProはギフト紙袋サービスを提供。高品質、透明な価格、迅速な納品。"
       },
       {
         "q": "專業禮品紙袋服務 | 智印雲",
@@ -1048,16 +1048,16 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Custom Eco Paper Bags | Free Shipping $99+ | ZprintPro",
         "description": "Eco-friendly paper bags for sustainable brands. 100% recycled or FSC kraft, soy inks, GOTS cotton. 100-MOQ | Free Design | 100 MOQ",
         "h1": "Eco Paper Bags 100+ | FSC Recycled | ZprintPro",
-        "keywords": ["eco paper bags","eco friendly paper bags","recycled paper bags","FSC paper bags","sustainable gift bags","kraft paper bags eco","compostable bags","eco bags free shipping","bulk eco bags","bespoke eco packaging","paper bag printing","kraft paper bags","shopping bags","eco bags","gift bags","custom paper bags","handle bags","white card bags","large paper bags","recycled bags","100pcs MOQ","2h pickup","48h turnaround","50pcs MOQ","free proof","free design","SF Express HK delivery","wedding paper bag","small batch paper bag","affordable paper bag","fast paper bag printing","rope handle bag","foil logo","kraft paper bag","eco paper bag","white card bag","boutique paper bag","paper bag production","paper bag factory","custom paper bag","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
+        "keywords": ["eco paper bags","eco friendly paper bags","recycled paper bags","FSC paper bags","sustainable gift bags","kraft paper bags eco","compostable bags","eco bags free shipping","bulk eco bags","bespoke eco packaging","paper bag printing","kraft paper bags","shopping bags","eco bags","gift bags","custom paper bags","handle bags","white card bags","large paper bags","recycled bags","100pcs MOQ","2h pickup","48h turnaround","50pcs MOQ","free proof","free design","international express delivery","wedding paper bag","small batch paper bag","affordable paper bag","fast paper bag printing","rope handle bag","foil logo","kraft paper bag","eco paper bag","white card bag","boutique paper bag","paper bag production","paper bag factory","custom paper bag","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
         "body": "Custom eco paper bags designed for US small business, DTC brands, and cross-border e-commerce. Free design mockup, no setup fees, and Free Shipping on US orders over $99. Every order ships from our Asia factory with 4-day delivery to the lower 48 states. ISO 9001 certified production with full FDA compliance where applicable.\n\nEco Paper Bags are widely used across retail shopping bags and boutique packaging, gift bags and event giveaways, and restaurant takeaway and food delivery bags — whether you are launching a new product line, refreshing your retail shelf presence, or shipping promotional materials to a nationwide customer base. The paper bags market rewards brands that ship fast, iterate often, and stay under tight unit-cost targets — that is exactly what our eco paper bags service is built for.\n\nMaterial options include Brown kraft paper 150g (eco-friendly standard) for everyday high-volume use, White card stock 210g (premium retail) for premium applications, and Art paper 170g with matte lamination (luxury gift) for specialty projects. All three are FSC-certified paper, 100% recyclable and Reinforced twisted-paper or cotton cord handles, so you can ship into the US market without compliance friction. Print finishes include matte lamination, gloss lamination, spot UV, foil stamping, and full-color CMYK plus white ink where supported.\n\nSubmit print-ready files (300 DPI, CMYK, 3mm bleed, outlined fonts) and we ship a free digital proof within 2 hours. If you do not have design files yet, our in-house design team will mock up your concept at no charge — just share your brand colors, logo, and any reference photos via WhatsApp. We also offer free dieline templates for every standard size.\n\nPricing is transparent: 100-piece minimum, no setup fees, no plate fees, and Free Shipping on US orders over $99. Standard turnaround is 4 business days for production plus 4-day USA delivery. Rush orders (24-hour proof plus 2-day production) available for an additional 20%. Get an instant quote via the 30-second AI estimator on the product page, or message us on WhatsApp for a custom run.\n\n**FAQ**\n\n**Q1: What sizes and handle types are available?**\nStandard sizes: Small (8\"x10\"), Medium (12\"x14\"), Large (16\"x18\"), and Custom (any size up to 24\"x24\"). Handle options: Twisted paper cord (eco), Cotton cord (premium feel), Ribbon (luxury), and Flat tape (extra-durable for heavy items).\n\n**Q2: What is the minimum order quantity?**\n100 bags minimum. Standard production 5-7 business days plus 4-day USA delivery. Bulk discounts at 500 / 1,000 / 5,000 quantities.\n\n**Q3: Can I get a 3D mockup before bulk order?**\nYes — free 3D render within 4 hours. For physical samples, we offer a paid sample pack ($29) with material and handle samples shipped via DHL Express.\n\n**Q4: Are paper bags food-safe?**\nOur kraft paper bags use food-grade ink and are safe for indirect food contact (bakery, takeaway, dry snacks). For hot food / grease / liquid, we offer inner PE or PLA bio-lining at an additional 15-20%.\n\nReady to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA pickup available for orders placed before 11 AM EST in major US cities."
       
       
       },
       "ja": {
         "title": "エコ紙袋 | エコ素材 多サイズ | ZprintPro",
-        "description": "エコ紙袋のエコ紙袋は ZprintPro にお任せ。白カード/クラフト/コート 高品質用紙、マルチサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
-        "h1": " sustainable development. Perfect for environmentally conscious brands. ZprintPro offers professional Eco Paper Bags services in Hong Kong. High quality",
-        "keywords": ["エコ紙袋", "エコ紙袋 印刷", "eco paper bags", "紙袋印刷", "ショッピングバッグ", "クラフト紙袋", "エコバッグ", "ギフトバッグ", "カスタム紙袋", "ハンドルバッグ", "大判紙袋", "再生紙バッグ", "ロゴ入り紙袋", "100個〜", "2時間受取", "48時間出荷", "50個〜", "無料校正", "無料デザイン", "香港 SF Express 直送", "ウェディング紙袋", "小ロット紙袋", "低価格紙袋印刷", "快速紙袋印刷", "手提げ紙袋", "箔押しロゴ", "ホワイトカード紙袋", "ブティック紙袋", "紙袋製作", "紙袋工場", "紙袋オーダー"],
+        "description": "エコ紙袋のエコ紙袋は ZprintPro にお任せ。白カード/クラフト/コート 高品質用紙、マルチサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
+        "h1": " sustainable development. Perfect for environmentally conscious brands. ZprintPro offers professional Eco Paper Bags services worldwide. High quality",
+        "keywords": ["エコ紙袋", "エコ紙袋 印刷", "eco paper bags", "紙袋印刷", "ショッピングバッグ", "クラフト紙袋", "エコバッグ", "ギフトバッグ", "カスタム紙袋", "ハンドルバッグ", "大判紙袋", "再生紙バッグ", "ロゴ入り紙袋", "100個〜", "2時間受取", "48時間出荷", "50個〜", "無料校正", "無料デザイン", "DHL Express 直送", "ウェディング紙袋", "小ロット紙袋", "低価格紙袋印刷", "快速紙袋印刷", "手提げ紙袋", "箔押しロゴ", "ホワイトカード紙袋", "ブティック紙袋", "紙袋製作", "紙袋工場", "紙袋オーダー"],
         "body": "カスタム エコ紙袋 — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FSC 認証紙、100% リサイクル可能、強化つなぎ紙・綿コードハンドル。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\nエコ紙袋 は 小売ショッピングバッグ・ブティックパッケージ、ギフトバッグ・イベント景品、レストラン テイクアウト・食品配達バッグ の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。paper bags 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに エコ紙袋 サービスの設計思想です。\n\n素材は 茶色クラフト紙 150g（エコ標準）（日常大量使用）、白カード 210g（プレミアム小売）（プレミアム用途、主力選択）、アート紙 170g + マットラミネート（高級ギフト）（特殊プロジェクト）の 3 種類。すべて FSC 認証紙、100% リサイクル可能 および 強化つなぎ紙・綿コードハンドル 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、paper bags 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: サイズとハンドル種類は？**\n標準サイズ：S（8\"x10\"）、M（12\"x14\"）、L（16\"x18\"）、カスタム（最大 24\"x24\"）。ハンドル：つなぎ紙（エコ）、綿コード（プレミアム感）、リボン（高級）、平テープ（重量物対応）。\n\n**Q2: 最小注文数量は？**\n100 個から対応。標準納期 5-7 営業日、DHL 国際配送で 2-4 日納品。500 / 1,000 / 5,000 数量で段階割引。\n\n**Q3: 本注文前に 3D モックアップは見られますか？**\nはい — 無料 3D レンダリング 4 時間以内。実物サンプルは有償（¥2,980）で素材・ハンドル見本セットを DHL Express でお届け。\n\n**Q4: 食品接触対応ですか？**\nクラフト紙袋は食品グレードインク使用、間接食品接触（ベーカリー、テイクアウト、乾物スナック）対応。熱食品 / 油脂 / 液体向けには PE または PLA バイオライニングを 15-20% 増で承ります。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
       }
     },
@@ -1099,22 +1099,22 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Custom Handle Bags | Free Shipping $99+ | ZprintPro",
         "description": "Custom handle paper bags for retail. 120-200g kraft, cotton rope or flat handles, 4-color CMYK. 100-MOQ | Free Design | 100 MOQ",
         "h1": "Handle Paper Bags 100+ | Cotton Rope | ZprintPro",
-        "keywords": ["handle paper bags","paper bags with handles","cotton rope handle bags","custom paper bags retail","shopping paper bags","flat handle bags","paper bags free shipping","bulk paper bags","paper bags USD","bespoke shopping bags","paper bag printing","kraft paper bags","shopping bags","eco bags","gift bags","custom paper bags","handle bags","white card bags","large paper bags","recycled bags","100pcs MOQ","2h pickup","48h turnaround","50pcs MOQ","free proof","free design","SF Express HK delivery","wedding paper bag","small batch paper bag","affordable paper bag","fast paper bag printing","rope handle bag","foil logo","kraft paper bag","eco paper bag","white card bag","boutique paper bag","paper bag production","paper bag factory","custom paper bag","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
+        "keywords": ["handle paper bags","paper bags with handles","cotton rope handle bags","custom paper bags retail","shopping paper bags","flat handle bags","paper bags free shipping","bulk paper bags","paper bags USD","bespoke shopping bags","paper bag printing","kraft paper bags","shopping bags","eco bags","gift bags","custom paper bags","handle bags","white card bags","large paper bags","recycled bags","100pcs MOQ","2h pickup","48h turnaround","50pcs MOQ","free proof","free design","international express delivery","wedding paper bag","small batch paper bag","affordable paper bag","fast paper bag printing","rope handle bag","foil logo","kraft paper bag","eco paper bag","white card bag","boutique paper bag","paper bag production","paper bag factory","custom paper bag","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
         "body": "Custom handle bags designed for US small business, DTC brands, and cross-border e-commerce. Free design mockup, no setup fees, and Free Shipping on US orders over $99. Every order ships from our Asia factory with 4-day delivery to the lower 48 states. ISO 9001 certified production with full FDA compliance where applicable.\n\nHandle Bags are widely used across retail shopping bags and boutique packaging, gift bags and event giveaways, and restaurant takeaway and food delivery bags — whether you are launching a new product line, refreshing your retail shelf presence, or shipping promotional materials to a nationwide customer base. The paper bags market rewards brands that ship fast, iterate often, and stay under tight unit-cost targets — that is exactly what our handle bags service is built for.\n\nMaterial options include Brown kraft paper 150g (eco-friendly standard) for everyday high-volume use, White card stock 210g (premium retail) for premium applications, and Art paper 170g with matte lamination (luxury gift) for specialty projects. All three are FSC-certified paper, 100% recyclable and Reinforced twisted-paper or cotton cord handles, so you can ship into the US market without compliance friction. Print finishes include matte lamination, gloss lamination, spot UV, foil stamping, and full-color CMYK plus white ink where supported.\n\nSubmit print-ready files (300 DPI, CMYK, 3mm bleed, outlined fonts) and we ship a free digital proof within 2 hours. If you do not have design files yet, our in-house design team will mock up your concept at no charge — just share your brand colors, logo, and any reference photos via WhatsApp. We also offer free dieline templates for every standard size.\n\nPricing is transparent: 100-piece minimum, no setup fees, no plate fees, and Free Shipping on US orders over $99. Standard turnaround is 4 business days for production plus 4-day USA delivery. Rush orders (24-hour proof plus 2-day production) available for an additional 20%. Get an instant quote via the 30-second AI estimator on the product page, or message us on WhatsApp for a custom run.\n\n**FAQ**\n\n**Q1: What sizes and handle types are available?**\nStandard sizes: Small (8\"x10\"), Medium (12\"x14\"), Large (16\"x18\"), and Custom (any size up to 24\"x24\"). Handle options: Twisted paper cord (eco), Cotton cord (premium feel), Ribbon (luxury), and Flat tape (extra-durable for heavy items).\n\n**Q2: What is the minimum order quantity?**\n100 bags minimum. Standard production 5-7 business days plus 4-day USA delivery. Bulk discounts at 500 / 1,000 / 5,000 quantities.\n\n**Q3: Can I get a 3D mockup before bulk order?**\nYes — free 3D render within 4 hours. For physical samples, we offer a paid sample pack ($29) with material and handle samples shipped via DHL Express.\n\n**Q4: Are paper bags food-safe?**\nOur kraft paper bags use food-grade ink and are safe for indirect food contact (bakery, takeaway, dry snacks). For hot food / grease / liquid, we offer inner PE or PLA bio-lining at an additional 15-20%.\n\nReady to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA pickup available for orders placed before 11 AM EST in major US cities."
       
       
       },
       "ja": {
         "title": "ハンドルバッグ | エコ素材 多サイズ | ZprintPro",
-        "description": "ハンドルバッグのハンドルバッグは ZprintPro にお任せ。白カード/クラフト/コート 高品質用紙、マルチサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "ハンドルバッグのハンドルバッグは ZprintPro にお任せ。白カード/クラフト/コート 高品質用紙、マルチサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": " strong load-bearing capacity. Perfect for shopping centers",
-        "keywords": ["ハンドルバッグ", "ハンドルバッグ 印刷", "handle bags", "紙袋印刷", "ショッピングバッグ", "クラフト紙袋", "エコバッグ", "ギフトバッグ", "カスタム紙袋", "大判紙袋", "再生紙バッグ", "ロゴ入り紙袋", "100個〜", "2時間受取", "48時間出荷", "50個〜", "無料校正", "無料デザイン", "香港 SF Express 直送", "ウェディング紙袋", "小ロット紙袋", "低価格紙袋印刷", "快速紙袋印刷", "手提げ紙袋", "箔押しロゴ", "エコ紙袋", "ホワイトカード紙袋", "ブティック紙袋", "紙袋製作", "紙袋工場", "紙袋オーダー"],
+        "keywords": ["ハンドルバッグ", "ハンドルバッグ 印刷", "handle bags", "紙袋印刷", "ショッピングバッグ", "クラフト紙袋", "エコバッグ", "ギフトバッグ", "カスタム紙袋", "大判紙袋", "再生紙バッグ", "ロゴ入り紙袋", "100個〜", "2時間受取", "48時間出荷", "50個〜", "無料校正", "無料デザイン", "DHL Express 直送", "ウェディング紙袋", "小ロット紙袋", "低価格紙袋印刷", "快速紙袋印刷", "手提げ紙袋", "箔押しロゴ", "エコ紙袋", "ホワイトカード紙袋", "ブティック紙袋", "紙袋製作", "紙袋工場", "紙袋オーダー"],
         "body": "カスタム 手提げ紙袋 — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FSC 認証紙、100% リサイクル可能、強化つなぎ紙・綿コードハンドル。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\n手提げ紙袋 は 小売ショッピングバッグ・ブティックパッケージ、ギフトバッグ・イベント景品、レストラン テイクアウト・食品配達バッグ の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。paper bags 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに 手提げ紙袋 サービスの設計思想です。\n\n素材は 茶色クラフト紙 150g（エコ標準）（日常大量使用）、白カード 210g（プレミアム小売）（プレミアム用途、主力選択）、アート紙 170g + マットラミネート（高級ギフト）（特殊プロジェクト）の 3 種類。すべて FSC 認証紙、100% リサイクル可能 および 強化つなぎ紙・綿コードハンドル 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、paper bags 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: サイズとハンドル種類は？**\n標準サイズ：S（8\"x10\"）、M（12\"x14\"）、L（16\"x18\"）、カスタム（最大 24\"x24\"）。ハンドル：つなぎ紙（エコ）、綿コード（プレミアム感）、リボン（高級）、平テープ（重量物対応）。\n\n**Q2: 最小注文数量は？**\n100 個から対応。標準納期 5-7 営業日、DHL 国際配送で 2-4 日納品。500 / 1,000 / 5,000 数量で段階割引。\n\n**Q3: 本注文前に 3D モックアップは見られますか？**\nはい — 無料 3D レンダリング 4 時間以内。実物サンプルは有償（¥2,980）で素材・ハンドル見本セットを DHL Express でお届け。\n\n**Q4: 食品接触対応ですか？**\nクラフト紙袋は食品グレードインク使用、間接食品接触（ベーカリー、テイクアウト、乾物スナック）対応。熱食品 / 油脂 / 液体向けには PE または PLA バイオライニングを 15-20% 増で承ります。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
       }
     },
     "faqs": [
       {
-        "q": "頑丈な持ち手デザイン、強い耐荷重能力。ショッピングセンター、スーパーに最適。 ZprintProは香港で手提げ紙袋サービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "頑丈な持ち手デザイン、強い耐荷重能力。ショッピングセンター、スーパーに最適。 ZprintProは手提げ紙袋サービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業手挽紙袋服務 | 智印雲"
       },
       {
@@ -1150,13 +1150,13 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Custom Small Paper Bags | Free Shipping $99+ | ZprintPro",
         "description": "Custom small bags from ZprintPro the US. Premium Custom, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Small Bags 100+ | Premium Custom | ZprintPro",
-        "keywords": ["small paper bags","custom small bags","small bags printing hong kong","small bags free shipping","small bags USD","bulk small bags","small bags DHL","bespoke small bags","small bags wholesale","small bags pricing","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
+        "keywords": ["small paper bags","custom small bags","small bags printing online","small bags free shipping","small bags USD","bulk small bags","small bags DHL","bespoke small bags","small bags wholesale","small bags pricing","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
         "body": "ZprintPro Small Bags for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Premium Custom, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "小型紙袋 | エコ素材 多サイズ | ZprintPro",
-        "description": "小型紙袋の小型紙袋は ZprintPro にお任せ。白カード/クラフト/コート 高品質用紙、マルチサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "小型紙袋の小型紙袋は ZprintPro にお任せ。白カード/クラフト/コート 高品質用紙、マルチサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": " perfect for jewelry",
         "keywords": ["小型紙袋", "小型紙袋 印刷", "small bags"],
         "body": " fast delivery."
@@ -1164,7 +1164,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [
       {
-        "q": "コンパクトなサイズ、アクセサリー、化粧品などの小物に最適。 ZprintProは香港で小判紙袋サービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "コンパクトなサイズ、アクセサリー、化粧品などの小物に最適。 ZprintProは小判紙袋サービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業小號紙袋服務 | 智印雲"
       },
       {
@@ -1200,22 +1200,22 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Custom Large Paper Bags | Free Shipping $99+ | ZprintPro",
         "description": "Large reinforced paper bags for apparel and gifts. 200-300g kraft, 12-20kg load. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Large Paper Bags 100+ | Heavy-Duty | ZprintPro",
-        "keywords": ["large paper bags","oversized paper bags","heavy duty paper bags","apparel shopping bags","gift hamper bags","twin pack bags","large kraft bags","paper bags free shipping","bulk large bags","bespoke large packaging","paper bag printing","kraft paper bags","shopping bags","eco bags","gift bags","custom paper bags","handle bags","white card bags","recycled bags","100pcs MOQ","2h pickup","48h turnaround","50pcs MOQ","free proof","free design","SF Express HK delivery","wedding paper bag","small batch paper bag","affordable paper bag","fast paper bag printing","rope handle bag","foil logo","kraft paper bag","eco paper bag","white card bag","boutique paper bag","paper bag production","paper bag factory","custom paper bag","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
+        "keywords": ["large paper bags","oversized paper bags","heavy duty paper bags","apparel shopping bags","gift hamper bags","twin pack bags","large kraft bags","paper bags free shipping","bulk large bags","bespoke large packaging","paper bag printing","kraft paper bags","shopping bags","eco bags","gift bags","custom paper bags","handle bags","white card bags","recycled bags","100pcs MOQ","2h pickup","48h turnaround","50pcs MOQ","free proof","free design","international express delivery","wedding paper bag","small batch paper bag","affordable paper bag","fast paper bag printing","rope handle bag","foil logo","kraft paper bag","eco paper bag","white card bag","boutique paper bag","paper bag production","paper bag factory","custom paper bag","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
         "body": "Custom large bags designed for US small business, DTC brands, and cross-border e-commerce. Free design mockup, no setup fees, and Free Shipping on US orders over $99. Every order ships from our Asia factory with 4-day delivery to the lower 48 states. ISO 9001 certified production with full FDA compliance where applicable.\n\nLarge Bags are widely used across retail shopping bags and boutique packaging, gift bags and event giveaways, and restaurant takeaway and food delivery bags — whether you are launching a new product line, refreshing your retail shelf presence, or shipping promotional materials to a nationwide customer base. The paper bags market rewards brands that ship fast, iterate often, and stay under tight unit-cost targets — that is exactly what our large bags service is built for.\n\nMaterial options include Brown kraft paper 150g (eco-friendly standard) for everyday high-volume use, White card stock 210g (premium retail) for premium applications, and Art paper 170g with matte lamination (luxury gift) for specialty projects. All three are FSC-certified paper, 100% recyclable and Reinforced twisted-paper or cotton cord handles, so you can ship into the US market without compliance friction. Print finishes include matte lamination, gloss lamination, spot UV, foil stamping, and full-color CMYK plus white ink where supported.\n\nSubmit print-ready files (300 DPI, CMYK, 3mm bleed, outlined fonts) and we ship a free digital proof within 2 hours. If you do not have design files yet, our in-house design team will mock up your concept at no charge — just share your brand colors, logo, and any reference photos via WhatsApp. We also offer free dieline templates for every standard size.\n\nPricing is transparent: 100-piece minimum, no setup fees, no plate fees, and Free Shipping on US orders over $99. Standard turnaround is 4 business days for production plus 4-day USA delivery. Rush orders (24-hour proof plus 2-day production) available for an additional 20%. Get an instant quote via the 30-second AI estimator on the product page, or message us on WhatsApp for a custom run.\n\n**FAQ**\n\n**Q1: What sizes and handle types are available?**\nStandard sizes: Small (8\"x10\"), Medium (12\"x14\"), Large (16\"x18\"), and Custom (any size up to 24\"x24\"). Handle options: Twisted paper cord (eco), Cotton cord (premium feel), Ribbon (luxury), and Flat tape (extra-durable for heavy items).\n\n**Q2: What is the minimum order quantity?**\n100 bags minimum. Standard production 5-7 business days plus 4-day USA delivery. Bulk discounts at 500 / 1,000 / 5,000 quantities.\n\n**Q3: Can I get a 3D mockup before bulk order?**\nYes — free 3D render within 4 hours. For physical samples, we offer a paid sample pack ($29) with material and handle samples shipped via DHL Express.\n\n**Q4: Are paper bags food-safe?**\nOur kraft paper bags use food-grade ink and are safe for indirect food contact (bakery, takeaway, dry snacks). For hot food / grease / liquid, we offer inner PE or PLA bio-lining at an additional 15-20%.\n\nReady to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA pickup available for orders placed before 11 AM EST in major US cities."
       
       
       },
       "ja": {
         "title": "大型紙袋 | エコ素材 多サイズ | ZprintPro",
-        "description": "大型紙袋の大型紙袋は ZprintPro にお任せ。白カード/クラフト/コート 高品質用紙、マルチサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "大型紙袋の大型紙袋は ZprintPro にお任せ。白カード/クラフト/コート 高品質用紙、マルチサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": " perfect for clothing",
-        "keywords": ["大型紙袋", "大型紙袋 印刷", "large bags", "紙袋印刷", "ショッピングバッグ", "クラフト紙袋", "エコバッグ", "ギフトバッグ", "カスタム紙袋", "ハンドルバッグ", "大判紙袋", "再生紙バッグ", "ロゴ入り紙袋", "100個〜", "2時間受取", "48時間出荷", "50個〜", "無料校正", "無料デザイン", "香港 SF Express 直送", "ウェディング紙袋", "小ロット紙袋", "低価格紙袋印刷", "快速紙袋印刷", "手提げ紙袋", "箔押しロゴ", "エコ紙袋", "ホワイトカード紙袋", "ブティック紙袋", "紙袋製作", "紙袋工場", "紙袋オーダー"],
+        "keywords": ["大型紙袋", "大型紙袋 印刷", "large bags", "紙袋印刷", "ショッピングバッグ", "クラフト紙袋", "エコバッグ", "ギフトバッグ", "カスタム紙袋", "ハンドルバッグ", "大判紙袋", "再生紙バッグ", "ロゴ入り紙袋", "100個〜", "2時間受取", "48時間出荷", "50個〜", "無料校正", "無料デザイン", "DHL Express 直送", "ウェディング紙袋", "小ロット紙袋", "低価格紙袋印刷", "快速紙袋印刷", "手提げ紙袋", "箔押しロゴ", "エコ紙袋", "ホワイトカード紙袋", "ブティック紙袋", "紙袋製作", "紙袋工場", "紙袋オーダー"],
         "body": "カスタム 大判紙袋 — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FSC 認証紙、100% リサイクル可能、強化つなぎ紙・綿コードハンドル。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\n大判紙袋 は 小売ショッピングバッグ・ブティックパッケージ、ギフトバッグ・イベント景品、レストラン テイクアウト・食品配達バッグ の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。paper bags 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに 大判紙袋 サービスの設計思想です。\n\n素材は 茶色クラフト紙 150g（エコ標準）（日常大量使用）、白カード 210g（プレミアム小売）（プレミアム用途、主力選択）、アート紙 170g + マットラミネート（高級ギフト）（特殊プロジェクト）の 3 種類。すべて FSC 認証紙、100% リサイクル可能 および 強化つなぎ紙・綿コードハンドル 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、paper bags 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: サイズとハンドル種類は？**\n標準サイズ：S（8\"x10\"）、M（12\"x14\"）、L（16\"x18\"）、カスタム（最大 24\"x24\"）。ハンドル：つなぎ紙（エコ）、綿コード（プレミアム感）、リボン（高級）、平テープ（重量物対応）。\n\n**Q2: 最小注文数量は？**\n100 個から対応。標準納期 5-7 営業日、DHL 国際配送で 2-4 日納品。500 / 1,000 / 5,000 数量で段階割引。\n\n**Q3: 本注文前に 3D モックアップは見られますか？**\nはい — 無料 3D レンダリング 4 時間以内。実物サンプルは有償（¥2,980）で素材・ハンドル見本セットを DHL Express でお届け。\n\n**Q4: 食品接触対応ですか？**\nクラフト紙袋は食品グレードインク使用、間接食品接触（ベーカリー、テイクアウト、乾物スナック）対応。熱食品 / 油脂 / 液体向けには PE または PLA バイオライニングを 15-20% 増で承ります。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
       }
     },
     "faqs": [
       {
-        "q": "大きなサイズ、衣類、靴などの大物に最適。 ZprintProは香港で大判紙袋サービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "大きなサイズ、衣類、靴などの大物に最適。 ZprintProは大判紙袋サービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業大號紙袋服務 | 智印雲"
       },
       {
@@ -1259,7 +1259,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "A4 チラシ | 両面フルカラー 100枚〜 | ZprintPro",
-        "description": "A4 チラシのA4 チラシは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "A4 チラシのA4 チラシは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "Standard A4 size",
         "keywords": ["A4 チラシ", "A4 チラシ 印刷", "a4 flyers", "チラシ印刷", "フライヤー印刷", "A4チラシ", "A5チラシ", "折込チラシ", "三つ折り", "カラーチラシ", "カスタムチラシ", "即日チラシ", "イベントチラシ", "2時間急速印刷", "HK$0.5〜", "無料レイアウト", "当日出荷", "当日受取", "当日デザイン", "箔押し証書", "表彰状印刷", "偽造防止用紙"],
         "body": "カスタム a4チラシ — 日本市場向け高品質短納期印刷サービス。100 枚から対応、CMYK フルカラー + 特色（ホワイトインク）対応、FSC 認証紙、持続可能な資源。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\nA4チラシ は レストランメニュー・テイクアウトプロモ、イベントフライヤー・クラブ/コンサート配布物、小売新作発表・グランドオープン の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。flyers 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに a4チラシ サービスの設計思想です。\n\n素材は 128g グロスアート紙（標準フライヤーストック）（日常大量使用）、157g シルク / マットコート紙（プレミアム感）（プレミアム用途、主力選択）、300g カードストック（高級メニュー / カード）（特殊プロジェクト）の 3 種類。すべて CMYK フルカラー + 特色（ホワイトインク）対応 および FSC 認証紙、持続可能な資源 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、flyers 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: フライヤーの用紙厚さはどう選べば？**\n128g はプロモ用の標準。157g シルク / マットは当店一番人気 — 予算内に収まりつつ質感も高い。300g カードは高級メニューやブランド配布物に最適。200g 以上のラミネート加工で防水メニューも対応可能。\n\n**Q2: 最小注文数量は？**\n100 枚から対応、版代ゼロ。500 / 1,000 / 5,000 / 10,000 数量で段階割引あり。標準納期は 3-5 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前にデジタル校正は確認できますか？**\nはい — データ提出から 2 時間以内に無料デジタル校正 PDF を提供。無料修正は 2 回まで対応。複雑なレイアウトには有償（¥2,980）実物校正を DHL Express で対応。\n\n**Q4: 日本への配送はどのくらいですか？**\n日本全国送料無料、沖縄県・北海道も同料金、DHL 国際配送で 2-4 日納品。お急ぎ便（同日制作 + 即日配送）は 50% 増で対応可能。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
@@ -1271,7 +1271,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "a": " fast delivery."
       },
       {
-        "q": "標準A4サイズ、最も一般的なチラシ形式。157gコート紙、4色印刷、鮮やかな色彩。 ZprintProは香港でA4チラシサービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "標準A4サイズ、最も一般的なチラシ形式。157gコート紙、4色印刷、鮮やかな色彩。 ZprintProはA4チラシサービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業A4宣傳單張服務 | 智印雲"
       },
       {
@@ -1304,13 +1304,13 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "A5 Flyers for Holiday Cards | Free Shipping $99+ | ZprintPro",
         "description": "Custom a5 flyers from ZprintPro the US. Same-Day Printing, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "A5 Flyers 100+ | Same-Day Printing | ZprintPro",
-        "keywords": ["a5 flyers","custom a5 flyers","a5 flyers printing hong kong","a5 flyers free shipping","a5 flyers USD","bulk a5 flyers","a5 flyers DHL","bespoke a5 flyers","a5 flyers wholesale","a5 flyers pricing","flyer printing","leaflet printing","A4 flyers","A5 flyers","custom flyers","bulk flyers","color flyers","folded flyers","promotional flyers","same day flyers","2h express print","from HK$0.5","free layout","same day shipping","same day pickup","same day design","foil certificate","award certificate printing","same day","security paper","custom holiday card","personalized greeting card","Mother's Day card","wedding invitation","save the date","business holiday card","photo greeting card","foil greeting card","luxury invitation card"],
+        "keywords": ["a5 flyers","custom a5 flyers","a5 flyers printing online","a5 flyers free shipping","a5 flyers USD","bulk a5 flyers","a5 flyers DHL","bespoke a5 flyers","a5 flyers wholesale","a5 flyers pricing","flyer printing","leaflet printing","A4 flyers","A5 flyers","custom flyers","bulk flyers","color flyers","folded flyers","promotional flyers","same day flyers","2h express print","from HK$0.5","free layout","same day shipping","same day pickup","same day design","foil certificate","award certificate printing","same day","security paper","custom holiday card","personalized greeting card","Mother's Day card","wedding invitation","save the date","business holiday card","photo greeting card","foil greeting card","luxury invitation card"],
         "body": "Custom a5 flyers designed for US small business, DTC brands, and cross-border e-commerce. Free design mockup, no setup fees, and Free Shipping on US orders over $99. Every order ships from our Asia factory with 4-day delivery to the lower 48 states. ISO 9001 certified production with full FDA compliance where applicable.\n\nA5 Flyers are widely used across restaurant menus and takeout promotions, event flyers and club/concert handouts, and retail product launches and grand-opening promotions — whether you are launching a new product line, refreshing your retail shelf presence, or shipping promotional materials to a nationwide customer base. The flyers market rewards brands that ship fast, iterate often, and stay under tight unit-cost targets — that is exactly what our a5 flyers service is built for.\n\nMaterial options include 128g gloss art paper (standard flyer stock) for everyday high-volume use, 157g silk/matte coated paper (premium feel) for premium applications, and 300g card stock (luxury / takeaway menus) for specialty projects. All three are Full-color CMYK + 5th color (white ink) available and FSC-certified paper from sustainable sources, so you can ship into the US market without compliance friction. Print finishes include matte lamination, gloss lamination, spot UV, foil stamping, and full-color CMYK plus white ink where supported.\n\nSubmit print-ready files (300 DPI, CMYK, 3mm bleed, outlined fonts) and we ship a free digital proof within 2 hours. If you do not have design files yet, our in-house design team will mock up your concept at no charge — just share your brand colors, logo, and any reference photos via WhatsApp. We also offer free dieline templates for every standard size.\n\nPricing is transparent: 100-piece minimum, no setup fees, no plate fees, and Free Shipping on US orders over $99. Standard turnaround is 4 business days for production plus 4-day USA delivery. Rush orders (24-hour proof plus 2-day production) available for an additional 20%. Get an instant quote via the 30-second AI estimator on the product page, or message us on WhatsApp for a custom run.\n\n**FAQ**\n\n**Q1: What paper weight should I choose for flyers?**\n128g is the standard flyer weight for most promotions. 157g silk/matte is our most popular choice — it feels premium without breaking the budget. 300g card stock is for menu cards or luxury brand handouts. We can also laminate 200g+ stock for waterproof menus.\n\n**Q2: What is the minimum order quantity?**\n100 flyers minimum, with no setup fees. Bulk discounts kick in at 500 / 1,000 / 5,000 / 10,000 quantities. Standard production is 4 business days plus 4-day USA delivery.\n\n**Q3: Can I get a digital proof before bulk order?**\nYes — we send a free digital proof within 2 hours of file submission. Up to 2 free revisions included. For complex layouts, we offer a $29 paid physical proof shipped via DHL Express.\n\n**Q4: How fast is shipping to the US?**\nFree US shipping over $99 via DHL Express (4-day delivery). Same-day printing available for orders placed before 11am EST, with same-day courier pickup in major US cities for an additional $25.\n\nReady to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA pickup available for orders placed before 11 AM EST in major US cities."
       
       },
       "ja": {
         "title": "A5 チラシ | 両面フルカラー 100枚〜 | ZprintPro",
-        "description": "A5 チラシのA5 チラシは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "A5 チラシのA5 チラシは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "A5 size",
         "keywords": ["A5 チラシ", "A5 チラシ 印刷", "a5 flyers", "チラシ印刷", "フライヤー印刷", "A4チラシ", "A5チラシ", "折込チラシ", "三つ折り", "カラーチラシ", "カスタムチラシ", "即日チラシ", "イベントチラシ", "2時間急速印刷", "HK$0.5〜", "無料レイアウト", "当日出荷", "当日受取", "当日デザイン", "箔押し証書", "表彰状印刷", "偽造防止用紙"],
         "body": "カスタム a5チラシ — 日本市場向け高品質短納期印刷サービス。100 枚から対応、CMYK フルカラー + 特色（ホワイトインク）対応、FSC 認証紙、持続可能な資源。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\nA5チラシ は レストランメニュー・テイクアウトプロモ、イベントフライヤー・クラブ/コンサート配布物、小売新作発表・グランドオープン の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。flyers 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに a5チラシ サービスの設計思想です。\n\n素材は 128g グロスアート紙（標準フライヤーストック）（日常大量使用）、157g シルク / マットコート紙（プレミアム感）（プレミアム用途、主力選択）、300g カードストック（高級メニュー / カード）（特殊プロジェクト）の 3 種類。すべて CMYK フルカラー + 特色（ホワイトインク）対応 および FSC 認証紙、持続可能な資源 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、flyers 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: フライヤーの用紙厚さはどう選べば？**\n128g はプロモ用の標準。157g シルク / マットは当店一番人気 — 予算内に収まりつつ質感も高い。300g カードは高級メニューやブランド配布物に最適。200g 以上のラミネート加工で防水メニューも対応可能。\n\n**Q2: 最小注文数量は？**\n100 枚から対応、版代ゼロ。500 / 1,000 / 5,000 / 10,000 数量で段階割引あり。標準納期は 3-5 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前にデジタル校正は確認できますか？**\nはい — データ提出から 2 時間以内に無料デジタル校正 PDF を提供。無料修正は 2 回まで対応。複雑なレイアウトには有償（¥2,980）実物校正を DHL Express で対応。\n\n**Q4: 日本への配送はどのくらいですか？**\n日本全国送料無料、沖縄県・北海道も同料金、DHL 国際配送で 2-4 日納品。お急ぎ便（同日制作 + 即日配送）は 50% 増で対応可能。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
@@ -1322,7 +1322,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "a": " fast delivery."
       },
       {
-        "q": "A5サイズ、経済的、大量配布に最適。フードデリバリー、フラッシュイベントの第一選択。 ZprintProは香港でA5チラシサービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "A5サイズ、経済的、大量配布に最適。フードデリバリー、フラッシュイベントの第一選択。 ZprintProはA5チラシサービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業A5宣傳單張服務 | 智印雲"
       },
       {
@@ -1355,13 +1355,13 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Double-Sided Flyers | Free Shipping $99+ | ZprintPro",
         "description": "Custom double-sided flyers from ZprintPro the US. Same-Day Printing, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Double-sided Flyers 100+ | ZprintPro",
-        "keywords": ["double-sided flyers","custom double sided flyers","double sided flyers printing hong kong","double-sided flyers free shipping","double-sided flyers USD","bulk double-sided flyers","double-sided flyers DHL","bespoke double-sided flyers","custom double-sided flyers","double sided flyers wholesale","flyer printing","leaflet printing","A4 flyers","A5 flyers","custom flyers","bulk flyers","color flyers","folded flyers","promotional flyers","same day flyers","2h express print","from HK$0.5","free layout","same day shipping","same day pickup","same day design","foil certificate","award certificate printing","same day","security paper","custom holiday card","personalized greeting card","Mother's Day card","wedding invitation","save the date","business holiday card","photo greeting card","foil greeting card","luxury invitation card"],
+        "keywords": ["double-sided flyers","custom double sided flyers","double sided flyers printing online","double-sided flyers free shipping","double-sided flyers USD","bulk double-sided flyers","double-sided flyers DHL","bespoke double-sided flyers","custom double-sided flyers","double sided flyers wholesale","flyer printing","leaflet printing","A4 flyers","A5 flyers","custom flyers","bulk flyers","color flyers","folded flyers","promotional flyers","same day flyers","2h express print","from HK$0.5","free layout","same day shipping","same day pickup","same day design","foil certificate","award certificate printing","same day","security paper","custom holiday card","personalized greeting card","Mother's Day card","wedding invitation","save the date","business holiday card","photo greeting card","foil greeting card","luxury invitation card"],
         "body": "Custom double-sided flyers designed for US small business, DTC brands, and cross-border e-commerce. Free design mockup, no setup fees, and Free Shipping on US orders over $99. Every order ships from our Asia factory with 4-day delivery to the lower 48 states. ISO 9001 certified production with full FDA compliance where applicable.\n\nDouble-sided Flyers are widely used across restaurant menus and takeout promotions, event flyers and club/concert handouts, and retail product launches and grand-opening promotions — whether you are launching a new product line, refreshing your retail shelf presence, or shipping promotional materials to a nationwide customer base. The flyers market rewards brands that ship fast, iterate often, and stay under tight unit-cost targets — that is exactly what our double-sided flyers service is built for.\n\nMaterial options include 128g gloss art paper (standard flyer stock) for everyday high-volume use, 157g silk/matte coated paper (premium feel) for premium applications, and 300g card stock (luxury / takeaway menus) for specialty projects. All three are Full-color CMYK + 5th color (white ink) available and FSC-certified paper from sustainable sources, so you can ship into the US market without compliance friction. Print finishes include matte lamination, gloss lamination, spot UV, foil stamping, and full-color CMYK plus white ink where supported.\n\nSubmit print-ready files (300 DPI, CMYK, 3mm bleed, outlined fonts) and we ship a free digital proof within 2 hours. If you do not have design files yet, our in-house design team will mock up your concept at no charge — just share your brand colors, logo, and any reference photos via WhatsApp. We also offer free dieline templates for every standard size.\n\nPricing is transparent: 100-piece minimum, no setup fees, no plate fees, and Free Shipping on US orders over $99. Standard turnaround is 4 business days for production plus 4-day USA delivery. Rush orders (24-hour proof plus 2-day production) available for an additional 20%. Get an instant quote via the 30-second AI estimator on the product page, or message us on WhatsApp for a custom run.\n\n**FAQ**\n\n**Q1: What paper weight should I choose for flyers?**\n128g is the standard flyer weight for most promotions. 157g silk/matte is our most popular choice — it feels premium without breaking the budget. 300g card stock is for menu cards or luxury brand handouts. We can also laminate 200g+ stock for waterproof menus.\n\n**Q2: What is the minimum order quantity?**\n100 flyers minimum, with no setup fees. Bulk discounts kick in at 500 / 1,000 / 5,000 / 10,000 quantities. Standard production is 4 business days plus 4-day USA delivery.\n\n**Q3: Can I get a digital proof before bulk order?**\nYes — we send a free digital proof within 2 hours of file submission. Up to 2 free revisions included. For complex layouts, we offer a $29 paid physical proof shipped via DHL Express.\n\n**Q4: How fast is shipping to the US?**\nFree US shipping over $99 via DHL Express (4-day delivery). Same-day printing available for orders placed before 11am EST, with same-day courier pickup in major US cities for an additional $25.\n\nReady to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA pickup available for orders placed before 11 AM EST in major US cities."
       
       },
       "ja": {
         "title": "両面チラシ | 両面フルカラー 100枚〜 | ZprintPro",
-        "description": "両面チラシの両面チラシは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "両面チラシの両面チラシは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "Double-sided full color printing",
         "keywords": ["両面チラシ", "両面チラシ 印刷", "double sided flyers", "チラシ印刷", "フライヤー印刷", "A4チラシ", "A5チラシ", "折込チラシ", "三つ折り", "カラーチラシ", "カスタムチラシ", "即日チラシ", "イベントチラシ", "2時間急速印刷", "HK$0.5〜", "無料レイアウト", "当日出荷", "当日受取", "当日デザイン", "箔押し証書", "表彰状印刷", "偽造防止用紙"],
         "body": "カスタム 両面チラシ — 日本市場向け高品質短納期印刷サービス。100 枚から対応、CMYK フルカラー + 特色（ホワイトインク）対応、FSC 認証紙、持続可能な資源。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\n両面チラシ は レストランメニュー・テイクアウトプロモ、イベントフライヤー・クラブ/コンサート配布物、小売新作発表・グランドオープン の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。flyers 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに 両面チラシ サービスの設計思想です。\n\n素材は 128g グロスアート紙（標準フライヤーストック）（日常大量使用）、157g シルク / マットコート紙（プレミアム感）（プレミアム用途、主力選択）、300g カードストック（高級メニュー / カード）（特殊プロジェクト）の 3 種類。すべて CMYK フルカラー + 特色（ホワイトインク）対応 および FSC 認証紙、持続可能な資源 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、flyers 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: フライヤーの用紙厚さはどう選べば？**\n128g はプロモ用の標準。157g シルク / マットは当店一番人気 — 予算内に収まりつつ質感も高い。300g カードは高級メニューやブランド配布物に最適。200g 以上のラミネート加工で防水メニューも対応可能。\n\n**Q2: 最小注文数量は？**\n100 枚から対応、版代ゼロ。500 / 1,000 / 5,000 / 10,000 数量で段階割引あり。標準納期は 3-5 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前にデジタル校正は確認できますか？**\nはい — データ提出から 2 時間以内に無料デジタル校正 PDF を提供。無料修正は 2 回まで対応。複雑なレイアウトには有償（¥2,980）実物校正を DHL Express で対応。\n\n**Q4: 日本への配送はどのくらいですか？**\n日本全国送料無料、沖縄県・北海道も同料金、DHL 国際配送で 2-4 日納品。お急ぎ便（同日制作 + 即日配送）は 50% 増で対応可能。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
@@ -1369,7 +1369,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [
       {
-        "q": "両面フルカラー印刷、情報容量が2倍。 ZprintProは香港で両面チラシサービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "両面フルカラー印刷、情報容量が2倍。 ZprintProは両面チラシサービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業雙面宣傳單張服務 | 智印雲"
       },
       {
@@ -1405,14 +1405,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Folded Leaflets | Tri-Fold Design | Free US Ship | ZprintPro",
         "description": "Custom folded leaflets from ZprintPro the US. Tri-Fold Design, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Folded Leaflets 100+ | Tri-Fold Design | ZprintPro",
-        "keywords": ["folded leaflets", "custom folded leaflets", "folded leaflets printing hong kong", "folded leaflets free shipping", "folded leaflets USD", "bulk folded leaflets", "folded leaflets DHL", "bespoke folded leaflets", "folded leaflets wholesale", "folded leaflets pricing", "flyer printing", "leaflet printing", "A4 flyers", "A5 flyers", "custom flyers", "bulk flyers", "color flyers", "folded flyers", "promotional flyers", "same day flyers", "2h express print", "from HK$0.5", "free layout", "same day shipping", "same day pickup", "same day design", "foil certificate", "award certificate printing", "same day", "security paper"],
+        "keywords": ["folded leaflets", "custom folded leaflets", "folded leaflets printing online", "folded leaflets free shipping", "folded leaflets USD", "bulk folded leaflets", "folded leaflets DHL", "bespoke folded leaflets", "folded leaflets wholesale", "folded leaflets pricing", "flyer printing", "leaflet printing", "A4 flyers", "A5 flyers", "custom flyers", "bulk flyers", "color flyers", "folded flyers", "promotional flyers", "same day flyers", "2h express print", "from HK$0.5", "free layout", "same day shipping", "same day pickup", "same day design", "foil certificate", "award certificate printing", "same day", "security paper"],
         "body": "Custom folded leaflets designed for US small business, DTC brands, and cross-border e-commerce. Free design mockup, no setup fees, and Free Shipping on US orders over $99. Every order ships from our Asia factory with 4-day delivery to the lower 48 states. ISO 9001 certified production with full FDA compliance where applicable.\n\nFolded Leaflets are widely used across restaurant menus and takeout promotions, event flyers and club/concert handouts, and retail product launches and grand-opening promotions — whether you are launching a new product line, refreshing your retail shelf presence, or shipping promotional materials to a nationwide customer base. The flyers market rewards brands that ship fast, iterate often, and stay under tight unit-cost targets — that is exactly what our folded leaflets service is built for.\n\nMaterial options include 128g gloss art paper (standard flyer stock) for everyday high-volume use, 157g silk/matte coated paper (premium feel) for premium applications, and 300g card stock (luxury / takeaway menus) for specialty projects. All three are Full-color CMYK + 5th color (white ink) available and FSC-certified paper from sustainable sources, so you can ship into the US market without compliance friction. Print finishes include matte lamination, gloss lamination, spot UV, foil stamping, and full-color CMYK plus white ink where supported.\n\nSubmit print-ready files (300 DPI, CMYK, 3mm bleed, outlined fonts) and we ship a free digital proof within 2 hours. If you do not have design files yet, our in-house design team will mock up your concept at no charge — just share your brand colors, logo, and any reference photos via WhatsApp. We also offer free dieline templates for every standard size.\n\nPricing is transparent: 100-piece minimum, no setup fees, no plate fees, and Free Shipping on US orders over $99. Standard turnaround is 4 business days for production plus 4-day USA delivery. Rush orders (24-hour proof plus 2-day production) available for an additional 20%. Get an instant quote via the 30-second AI estimator on the product page, or message us on WhatsApp for a custom run.\n\n**FAQ**\n\n**Q1: What paper weight should I choose for flyers?**\n128g is the standard flyer weight for most promotions. 157g silk/matte is our most popular choice — it feels premium without breaking the budget. 300g card stock is for menu cards or luxury brand handouts. We can also laminate 200g+ stock for waterproof menus.\n\n**Q2: What is the minimum order quantity?**\n100 flyers minimum, with no setup fees. Bulk discounts kick in at 500 / 1,000 / 5,000 / 10,000 quantities. Standard production is 4 business days plus 4-day USA delivery.\n\n**Q3: Can I get a digital proof before bulk order?**\nYes — we send a free digital proof within 2 hours of file submission. Up to 2 free revisions included. For complex layouts, we offer a $29 paid physical proof shipped via DHL Express.\n\n**Q4: How fast is shipping to the US?**\nFree US shipping over $99 via DHL Express (4-day delivery). Same-day printing available for orders placed before 11am EST, with same-day courier pickup in major US cities for an additional $25.\n\nReady to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA pickup available for orders placed before 11 AM EST in major US cities."
       
       },
       "ja": {
         "title": "折りパンフレット | 両面フルカラー 100枚〜 | ZprintPro",
-        "description": "折りパンフレットの折りパンフレットは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
-        "h1": " can display more information. ZprintPro offers professional Folded Leaflets services in Hong Kong. High quality",
+        "description": "折りパンフレットの折りパンフレットは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
+        "h1": " can display more information. ZprintPro offers professional Folded Leaflets services worldwide. High quality",
         "keywords": ["折りパンフレット", "折りパンフレット 印刷", "folded leaflets", "チラシ印刷", "フライヤー印刷", "A4チラシ", "A5チラシ", "折込チラシ", "三つ折り", "カラーチラシ", "カスタムチラシ", "即日チラシ", "イベントチラシ", "2時間急速印刷", "HK$0.5〜", "無料レイアウト", "当日出荷", "当日受取", "当日デザイン", "箔押し証書", "表彰状印刷", "偽造防止用紙"],
         "body": "カスタム 折りたたみパンフレット — 日本市場向け高品質短納期印刷サービス。100 枚から対応、CMYK フルカラー + 特色（ホワイトインク）対応、FSC 認証紙、持続可能な資源。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\n折りたたみパンフレット は レストランメニュー・テイクアウトプロモ、イベントフライヤー・クラブ/コンサート配布物、小売新作発表・グランドオープン の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。flyers 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに 折りたたみパンフレット サービスの設計思想です。\n\n素材は 128g グロスアート紙（標準フライヤーストック）（日常大量使用）、157g シルク / マットコート紙（プレミアム感）（プレミアム用途、主力選択）、300g カードストック（高級メニュー / カード）（特殊プロジェクト）の 3 種類。すべて CMYK フルカラー + 特色（ホワイトインク）対応 および FSC 認証紙、持続可能な資源 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、flyers 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: フライヤーの用紙厚さはどう選べば？**\n128g はプロモ用の標準。157g シルク / マットは当店一番人気 — 予算内に収まりつつ質感も高い。300g カードは高級メニューやブランド配布物に最適。200g 以上のラミネート加工で防水メニューも対応可能。\n\n**Q2: 最小注文数量は？**\n100 枚から対応、版代ゼロ。500 / 1,000 / 5,000 / 10,000 数量で段階割引あり。標準納期は 3-5 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前にデジタル校正は確認できますか？**\nはい — データ提出から 2 時間以内に無料デジタル校正 PDF を提供。無料修正は 2 回まで対応。複雑なレイアウトには有償（¥2,980）実物校正を DHL Express で対応。\n\n**Q4: 日本への配送はどのくらいですか？**\n日本全国送料無料、沖縄県・北海道も同料金、DHL 国際配送で 2-4 日納品。お急ぎ便（同日制作 + 即日配送）は 50% 増で対応可能。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
       }
@@ -1455,13 +1455,13 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Thick Paper Flyers | Free Shipping $99+ | ZprintPro",
         "description": "Custom thick paper flyers from ZprintPro the US. Same-Day Printing, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Thick Paper Flyers 100+ | ZprintPro",
-        "keywords": ["thick paper flyers","custom thick paper flyers","thick paper flyers printing hong kong","thick paper flyers free shipping","thick paper flyers USD","bulk thick paper flyers","thick paper flyers DHL","bespoke thick paper flyers","thick paper flyers wholesale","thick paper flyers pricing","flyer printing","leaflet printing","A4 flyers","A5 flyers","custom flyers","bulk flyers","color flyers","folded flyers","promotional flyers","same day flyers","2h express print","from HK$0.5","free layout","same day shipping","same day pickup","same day design","foil certificate","award certificate printing","same day","security paper","custom holiday card","personalized greeting card","Mother's Day card","wedding invitation","save the date","business holiday card","photo greeting card","foil greeting card","luxury invitation card"],
+        "keywords": ["thick paper flyers","custom thick paper flyers","thick paper flyers printing online","thick paper flyers free shipping","thick paper flyers USD","bulk thick paper flyers","thick paper flyers DHL","bespoke thick paper flyers","thick paper flyers wholesale","thick paper flyers pricing","flyer printing","leaflet printing","A4 flyers","A5 flyers","custom flyers","bulk flyers","color flyers","folded flyers","promotional flyers","same day flyers","2h express print","from HK$0.5","free layout","same day shipping","same day pickup","same day design","foil certificate","award certificate printing","same day","security paper","custom holiday card","personalized greeting card","Mother's Day card","wedding invitation","save the date","business holiday card","photo greeting card","foil greeting card","luxury invitation card"],
         "body": "Custom thick paper flyers designed for US small business, DTC brands, and cross-border e-commerce. Free design mockup, no setup fees, and Free Shipping on US orders over $99. Every order ships from our Asia factory with 4-day delivery to the lower 48 states. ISO 9001 certified production with full FDA compliance where applicable.\n\nThick Paper Flyers are widely used across restaurant menus and takeout promotions, event flyers and club/concert handouts, and retail product launches and grand-opening promotions — whether you are launching a new product line, refreshing your retail shelf presence, or shipping promotional materials to a nationwide customer base. The flyers market rewards brands that ship fast, iterate often, and stay under tight unit-cost targets — that is exactly what our thick paper flyers service is built for.\n\nMaterial options include 128g gloss art paper (standard flyer stock) for everyday high-volume use, 157g silk/matte coated paper (premium feel) for premium applications, and 300g card stock (luxury / takeaway menus) for specialty projects. All three are Full-color CMYK + 5th color (white ink) available and FSC-certified paper from sustainable sources, so you can ship into the US market without compliance friction. Print finishes include matte lamination, gloss lamination, spot UV, foil stamping, and full-color CMYK plus white ink where supported.\n\nSubmit print-ready files (300 DPI, CMYK, 3mm bleed, outlined fonts) and we ship a free digital proof within 2 hours. If you do not have design files yet, our in-house design team will mock up your concept at no charge — just share your brand colors, logo, and any reference photos via WhatsApp. We also offer free dieline templates for every standard size.\n\nPricing is transparent: 100-piece minimum, no setup fees, no plate fees, and Free Shipping on US orders over $99. Standard turnaround is 4 business days for production plus 4-day USA delivery. Rush orders (24-hour proof plus 2-day production) available for an additional 20%. Get an instant quote via the 30-second AI estimator on the product page, or message us on WhatsApp for a custom run.\n\n**FAQ**\n\n**Q1: What paper weight should I choose for flyers?**\n128g is the standard flyer weight for most promotions. 157g silk/matte is our most popular choice — it feels premium without breaking the budget. 300g card stock is for menu cards or luxury brand handouts. We can also laminate 200g+ stock for waterproof menus.\n\n**Q2: What is the minimum order quantity?**\n100 flyers minimum, with no setup fees. Bulk discounts kick in at 500 / 1,000 / 5,000 / 10,000 quantities. Standard production is 4 business days plus 4-day USA delivery.\n\n**Q3: Can I get a digital proof before bulk order?**\nYes — we send a free digital proof within 2 hours of file submission. Up to 2 free revisions included. For complex layouts, we offer a $29 paid physical proof shipped via DHL Express.\n\n**Q4: How fast is shipping to the US?**\nFree US shipping over $99 via DHL Express (4-day delivery). Same-day printing available for orders placed before 11am EST, with same-day courier pickup in major US cities for an additional $25.\n\nReady to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA pickup available for orders placed before 11 AM EST in major US cities."
       
       },
       "ja": {
         "title": "厚口チラシ | 両面フルカラー 100枚〜 | ZprintPro",
-        "description": "厚口チラシの厚口チラシは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "厚口チラシの厚口チラシは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": " better texture",
         "keywords": ["厚口チラシ", "厚口チラシ 印刷", "thick paper flyers", "チラシ印刷", "フライヤー印刷", "A4チラシ", "A5チラシ", "折込チラシ", "三つ折り", "カラーチラシ", "カスタムチラシ", "即日チラシ", "イベントチラシ", "2時間急速印刷", "HK$0.5〜", "無料レイアウト", "当日出荷", "当日受取", "当日デザイン", "箔押し証書", "表彰状印刷", "偽造防止用紙"],
         "body": "カスタム 厚紙チラシ — 日本市場向け高品質短納期印刷サービス。100 枚から対応、CMYK フルカラー + 特色（ホワイトインク）対応、FSC 認証紙、持続可能な資源。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\n厚紙チラシ は レストランメニュー・テイクアウトプロモ、イベントフライヤー・クラブ/コンサート配布物、小売新作発表・グランドオープン の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。flyers 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに 厚紙チラシ サービスの設計思想です。\n\n素材は 128g グロスアート紙（標準フライヤーストック）（日常大量使用）、157g シルク / マットコート紙（プレミアム感）（プレミアム用途、主力選択）、300g カードストック（高級メニュー / カード）（特殊プロジェクト）の 3 種類。すべて CMYK フルカラー + 特色（ホワイトインク）対応 および FSC 認証紙、持続可能な資源 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、flyers 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: フライヤーの用紙厚さはどう選べば？**\n128g はプロモ用の標準。157g シルク / マットは当店一番人気 — 予算内に収まりつつ質感も高い。300g カードは高級メニューやブランド配布物に最適。200g 以上のラミネート加工で防水メニューも対応可能。\n\n**Q2: 最小注文数量は？**\n100 枚から対応、版代ゼロ。500 / 1,000 / 5,000 / 10,000 数量で段階割引あり。標準納期は 3-5 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前にデジタル校正は確認できますか？**\nはい — データ提出から 2 時間以内に無料デジタル校正 PDF を提供。無料修正は 2 回まで対応。複雑なレイアウトには有償（¥2,980）実物校正を DHL Express で対応。\n\n**Q4: 日本への配送はどのくらいですか？**\n日本全国送料無料、沖縄県・北海道も同料金、DHL 国際配送で 2-4 日納品。お急ぎ便（同日制作 + 即日配送）は 50% 増で対応可能。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
@@ -1469,7 +1469,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [
       {
-        "q": "200g以上の厚紙、質感が良く折れにくい。 ZprintProは香港で厚紙チラシサービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "200g以上の厚紙、質感が良く折れにくい。 ZprintProは厚紙チラシサービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業厚紙宣傳單張服務 | 智印雲"
       },
       {
@@ -1506,7 +1506,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Same-Day Flyer Printing from $0.95 | Free Shipping $99+ | ZprintPro",
         "description": "Same-day flyer printing from $0.95, 100 MOQ. 157-300gsm coated stock, A4/A5/A6/DL sizes, 4-color CMYK. Free design proof in 2 hours, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote.",
         "h1": "Same-day Flyers 100+ | ZprintPro",
-        "keywords": ["same day flyers","custom same day flyers","same day flyers printing hong kong","same-day flyers free shipping","same-day flyers USD","bulk same-day flyers","same-day flyers DHL","bespoke same-day flyers","custom same-day flyers","same day flyers wholesale","flyer printing","leaflet printing","A4 flyers","A5 flyers","custom flyers","bulk flyers","color flyers","folded flyers","promotional flyers","2h express print","from HK$0.5","free layout","same day shipping","same day pickup","same day design","foil certificate","award certificate printing","same day","security paper","custom holiday card","personalized greeting card","Mother's Day card","wedding invitation","save the date","business holiday card","photo greeting card","foil greeting card","luxury invitation card"],
+        "keywords": ["same day flyers","custom same day flyers","same day flyers printing online","same-day flyers free shipping","same-day flyers USD","bulk same-day flyers","same-day flyers DHL","bespoke same-day flyers","custom same-day flyers","same day flyers wholesale","flyer printing","leaflet printing","A4 flyers","A5 flyers","custom flyers","bulk flyers","color flyers","folded flyers","promotional flyers","2h express print","from HK$0.5","free layout","same day shipping","same day pickup","same day design","foil certificate","award certificate printing","same day","security paper","custom holiday card","personalized greeting card","Mother's Day card","wedding invitation","save the date","business holiday card","photo greeting card","foil greeting card","luxury invitation card"],
         "body": "Custom same-day flyers designed for US small business, DTC brands, and cross-border e-commerce. Free design mockup, no setup fees, and Free Shipping on US orders over $99. Every order ships from our Asia factory with 4-day delivery to the lower 48 states. ISO 9001 certified production with full FDA compliance where applicable.\n\nSame-day Flyers are widely used across restaurant menus and takeout promotions, event flyers and club/concert handouts, and retail product launches and grand-opening promotions — whether you are launching a new product line, refreshing your retail shelf presence, or shipping promotional materials to a nationwide customer base. The flyers market rewards brands that ship fast, iterate often, and stay under tight unit-cost targets — that is exactly what our same-day flyers service is built for.\n\nMaterial options include 128g gloss art paper (standard flyer stock) for everyday high-volume use, 157g silk/matte coated paper (premium feel) for premium applications, and 300g card stock (luxury / takeaway menus) for specialty projects. All three are Full-color CMYK + 5th color (white ink) available and FSC-certified paper from sustainable sources, so you can ship into the US market without compliance friction. Print finishes include matte lamination, gloss lamination, spot UV, foil stamping, and full-color CMYK plus white ink where supported.\n\nSubmit print-ready files (300 DPI, CMYK, 3mm bleed, outlined fonts) and we ship a free digital proof within 2 hours. If you do not have design files yet, our in-house design team will mock up your concept at no charge — just share your brand colors, logo, and any reference photos via WhatsApp. We also offer free dieline templates for every standard size.\n\nPricing is transparent: 100-piece minimum, no setup fees, no plate fees, and Free Shipping on US orders over $99. Standard turnaround is 4 business days for production plus 4-day USA delivery. Rush orders (24-hour proof plus 2-day production) available for an additional 20%. Get an instant quote via the 30-second AI estimator on the product page, or message us on WhatsApp for a custom run.\n\n**FAQ**\n\n**Q1: What paper weight should I choose for flyers?**\n128g is the standard flyer weight for most promotions. 157g silk/matte is our most popular choice — it feels premium without breaking the budget. 300g card stock is for menu cards or luxury brand handouts. We can also laminate 200g+ stock for waterproof menus.\n\n**Q2: What is the minimum order quantity?**\n100 flyers minimum, with no setup fees. Bulk discounts kick in at 500 / 1,000 / 5,000 / 10,000 quantities. Standard production is 4 business days plus 4-day USA delivery.\n\n**Q3: Can I get a digital proof before bulk order?**\nYes — we send a free digital proof within 2 hours of file submission. Up to 2 free revisions included. For complex layouts, we offer a $29 paid physical proof shipped via DHL Express.\n\n**Q4: How fast is shipping to the US?**\nFree US shipping over $99 via DHL Express (4-day delivery). Same-day printing available for orders placed before 11am EST, with same-day courier pickup in major US cities for an additional $25.\n\nReady to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA pickup available for orders placed before 11 AM EST in major US cities."
       
       },
@@ -1520,7 +1520,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [
       {
-        "q": "緊急イベントの第一選択、最短当日納品。 ZprintProは香港で即日チラシサービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "緊急イベントの第一選択、最短当日納品。 ZprintProは即日チラシサービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業即日宣傳單張服務 | 智印雲"
       },
       {
@@ -1556,14 +1556,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Eco Flyers | Same-Day Printing | Free US Ship | ZprintPro",
         "description": "Custom eco flyers from ZprintPro the US. Same-Day Printing, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Eco Flyers 100+ | Same-Day Printing | ZprintPro",
-        "keywords": ["eco flyers", "custom eco flyers", "eco flyers printing hong kong", "eco flyers free shipping", "eco flyers USD", "bulk eco flyers", "eco flyers DHL", "bespoke eco flyers", "eco flyers wholesale", "eco flyers pricing", "flyer printing", "leaflet printing", "A4 flyers", "A5 flyers", "custom flyers", "bulk flyers", "color flyers", "folded flyers", "promotional flyers", "same day flyers", "2h express print", "from HK$0.5", "free layout", "same day shipping", "same day pickup", "same day design", "foil certificate", "award certificate printing", "same day", "security paper"],
+        "keywords": ["eco flyers", "custom eco flyers", "eco flyers printing online", "eco flyers free shipping", "eco flyers USD", "bulk eco flyers", "eco flyers DHL", "bespoke eco flyers", "eco flyers wholesale", "eco flyers pricing", "flyer printing", "leaflet printing", "A4 flyers", "A5 flyers", "custom flyers", "bulk flyers", "color flyers", "folded flyers", "promotional flyers", "same day flyers", "2h express print", "from HK$0.5", "free layout", "same day shipping", "same day pickup", "same day design", "foil certificate", "award certificate printing", "same day", "security paper"],
         "body": "Custom eco flyers designed for US small business, DTC brands, and cross-border e-commerce. Free design mockup, no setup fees, and Free Shipping on US orders over $99. Every order ships from our Asia factory with 4-day delivery to the lower 48 states. ISO 9001 certified production with full FDA compliance where applicable.\n\nEco Flyers are widely used across restaurant menus and takeout promotions, event flyers and club/concert handouts, and retail product launches and grand-opening promotions — whether you are launching a new product line, refreshing your retail shelf presence, or shipping promotional materials to a nationwide customer base. The flyers market rewards brands that ship fast, iterate often, and stay under tight unit-cost targets — that is exactly what our eco flyers service is built for.\n\nMaterial options include 128g gloss art paper (standard flyer stock) for everyday high-volume use, 157g silk/matte coated paper (premium feel) for premium applications, and 300g card stock (luxury / takeaway menus) for specialty projects. All three are Full-color CMYK + 5th color (white ink) available and FSC-certified paper from sustainable sources, so you can ship into the US market without compliance friction. Print finishes include matte lamination, gloss lamination, spot UV, foil stamping, and full-color CMYK plus white ink where supported.\n\nSubmit print-ready files (300 DPI, CMYK, 3mm bleed, outlined fonts) and we ship a free digital proof within 2 hours. If you do not have design files yet, our in-house design team will mock up your concept at no charge — just share your brand colors, logo, and any reference photos via WhatsApp. We also offer free dieline templates for every standard size.\n\nPricing is transparent: 100-piece minimum, no setup fees, no plate fees, and Free Shipping on US orders over $99. Standard turnaround is 4 business days for production plus 4-day USA delivery. Rush orders (24-hour proof plus 2-day production) available for an additional 20%. Get an instant quote via the 30-second AI estimator on the product page, or message us on WhatsApp for a custom run.\n\n**FAQ**\n\n**Q1: What paper weight should I choose for flyers?**\n128g is the standard flyer weight for most promotions. 157g silk/matte is our most popular choice — it feels premium without breaking the budget. 300g card stock is for menu cards or luxury brand handouts. We can also laminate 200g+ stock for waterproof menus.\n\n**Q2: What is the minimum order quantity?**\n100 flyers minimum, with no setup fees. Bulk discounts kick in at 500 / 1,000 / 5,000 / 10,000 quantities. Standard production is 4 business days plus 4-day USA delivery.\n\n**Q3: Can I get a digital proof before bulk order?**\nYes — we send a free digital proof within 2 hours of file submission. Up to 2 free revisions included. For complex layouts, we offer a $29 paid physical proof shipped via DHL Express.\n\n**Q4: How fast is shipping to the US?**\nFree US shipping over $99 via DHL Express (4-day delivery). Same-day printing available for orders placed before 11am EST, with same-day courier pickup in major US cities for an additional $25.\n\nReady to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA pickup available for orders placed before 11 AM EST in major US cities."
       
       },
       "ja": {
         "title": "エコチラシ | 両面フルカラー 100枚〜 | ZprintPro",
-        "description": "エコチラシのエコチラシは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
-        "h1": " showing corporate responsibility. ZprintPro offers professional Eco Flyers services in Hong Kong. High quality",
+        "description": "エコチラシのエコチラシは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
+        "h1": " showing corporate responsibility. ZprintPro offers professional Eco Flyers services worldwide. High quality",
         "keywords": ["エコチラシ", "エコチラシ 印刷", "eco flyers", "チラシ印刷", "フライヤー印刷", "A4チラシ", "A5チラシ", "折込チラシ", "三つ折り", "カラーチラシ", "カスタムチラシ", "即日チラシ", "イベントチラシ", "2時間急速印刷", "HK$0.5〜", "無料レイアウト", "当日出荷", "当日受取", "当日デザイン", "箔押し証書", "表彰状印刷", "偽造防止用紙"],
         "body": "カスタム エコチラシ — 日本市場向け高品質短納期印刷サービス。100 枚から対応、CMYK フルカラー + 特色（ホワイトインク）対応、FSC 認証紙、持続可能な資源。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\nエコチラシ は レストランメニュー・テイクアウトプロモ、イベントフライヤー・クラブ/コンサート配布物、小売新作発表・グランドオープン の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。flyers 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに エコチラシ サービスの設計思想です。\n\n素材は 128g グロスアート紙（標準フライヤーストック）（日常大量使用）、157g シルク / マットコート紙（プレミアム感）（プレミアム用途、主力選択）、300g カードストック（高級メニュー / カード）（特殊プロジェクト）の 3 種類。すべて CMYK フルカラー + 特色（ホワイトインク）対応 および FSC 認証紙、持続可能な資源 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、flyers 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: フライヤーの用紙厚さはどう選べば？**\n128g はプロモ用の標準。157g シルク / マットは当店一番人気 — 予算内に収まりつつ質感も高い。300g カードは高級メニューやブランド配布物に最適。200g 以上のラミネート加工で防水メニューも対応可能。\n\n**Q2: 最小注文数量は？**\n100 枚から対応、版代ゼロ。500 / 1,000 / 5,000 / 10,000 数量で段階割引あり。標準納期は 3-5 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前にデジタル校正は確認できますか？**\nはい — データ提出から 2 時間以内に無料デジタル校正 PDF を提供。無料修正は 2 回まで対応。複雑なレイアウトには有償（¥2,980）実物校正を DHL Express で対応。\n\n**Q4: 日本への配送はどのくらいですか？**\n日本全国送料無料、沖縄県・北海道も同料金、DHL 国際配送で 2-4 日納品。お急ぎ便（同日制作 + 即日配送）は 50% 増で対応可能。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
       }
@@ -1626,7 +1626,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "a": " fast delivery."
       },
       {
-        "q": "標準A2サイズ、イベント宣伝の第一選択。157gコート紙、鮮やかな色彩、即日納品。 ZprintProは香港でA2ポスターサービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "標準A2サイズ、イベント宣伝の第一選択。157gコート紙、鮮やかな色彩、即日納品。 ZprintProはA2ポスターサービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業A2海報印刷服務 | 智印雲"
       },
       {
@@ -1666,7 +1666,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "A1 ポスター | 防水 翌日配送 | ZprintPro",
-        "description": "A1 ポスターのA1 ポスターは ZprintPro にお任せ。157g-300g コート紙/PP/写真用紙 高品質用紙、A1/A2/A3/A4 各種対応。4色 CMYK 印刷、デザイン自由。10枚〜〜、翌日-3営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "A1 ポスターのA1 ポスターは ZprintPro にお任せ。157g-300g コート紙/PP/写真用紙 高品質用紙、A1/A2/A3/A4 各種対応。4色 CMYK 印刷、デザイン自由。10枚〜〜、翌日-3営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "A1 large size",
         "keywords": ["A1 ポスター", "A1 ポスター 印刷", "a1 posters", "ポスター印刷", "A1ポスター", "A2ポスター", "屋外ポスター", "展示会ポスター", "大判出力", "防水ポスター", "イベントポスター", "店舗ポスター", "POPポスター", "24時間ポスター印刷", "2時間急速印刷", "A0 ポスター", "A2 ポスター", "プロモポスター", "宿題ポスター", "当日出荷", "当日デザイン", "ウェディングポスター印刷", "ウェディング写真ウォール", "ウェディング写真ポスター", "学生ポスター印刷", "写真ポスター", "写真ポスター印刷", "イベントポスター印刷", "ポスター 価格", "ポスター レイアウト", "ポスター デザイン印刷", "祝日デコレーション", "プレゼンポスター", "ウェルカムボード印刷", "飲食ポスター印刷"],
         "body": "カスタム a1大型ポスター — 日本市場向け高品質短納期印刷サービス。100 枚から対応、Giclée 品質 1200 DPI 印刷対応、FSC 認証紙、持続可能な資源。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\nA1大型ポスター は イベントプロモ・コンサート/展示ポスター、小売店内ディスプレイ・商品発表、写真プリント・アート複製 の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。posters 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに a1大型ポスター サービスの設計思想です。\n\n素材は 200g グロスアート紙（標準屋内ポスター）（日常大量使用）、250g マットアート紙（プレミアム屋内・ギャラリー）（プレミアム用途、主力選択）、PVC ポスター（防水屋外、UV 耐性インク）（特殊プロジェクト）の 3 種類。すべて Giclée 品質 1200 DPI 印刷対応 および FSC 認証紙、持続可能な資源 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、posters 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: ポスターのサイズは？**\n標準サイズ：A4（210x297mm）、A3（297x420mm）、A2（420x594mm）、A1（594x841mm）、A0（841x1189mm）、US Letter / Tabloid / 24\"x36\"。PVC 紙で最大 44 インチ幅対応。オリジナルダイカット形状も対応可能。\n\n**Q2: 最小注文数量は？**\n50 枚から対応（版代ゼロ）。100 / 500 / 1,000 数量で段階割引。標準納期は 3-5 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前にデジタル校正は確認できますか？**\nはい — 無料デジタル校正 2 時間以内。無料修正 2 回まで。ブランド Pantone 合わせなど精密色校正は有償（¥2,980）実物校正を DHL Express で対応。\n\n**Q4: 屋外使用は可能ですか？**\n200g / 250g コート紙ポスターは屋内向け（額装で 1-2 年）。屋外・窓際・湿潤環境では PVC 紙材 + UV 耐性インクをお選びください。屋外耐久 2-3 年。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
@@ -1675,7 +1675,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "faqs": [
       {
         "q": " fast delivery.",
-        "a": "A1大きなサイズ、強い視覚的インパクト。展示会、会場装飾に最適。 ZprintProは香港でA1大型ポスターサービスを提供。高品質、透明な価格、迅速な納品。"
+        "a": "A1大きなサイズ、強い視覚的インパクト。展示会、会場装飾に最適。 ZprintProはA1大型ポスターサービスを提供。高品質、透明な価格、迅速な納品。"
       },
       {
         "q": "專業A1大幅海報服務 | 智印雲",
@@ -1718,7 +1718,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "屋外ポスター | 防水 翌日配送 | ZprintPro",
-        "description": "屋外ポスターの屋外ポスターは ZprintPro にお任せ。157g-300g コート紙/PP/写真用紙 高品質用紙、A1/A2/A3/A4 各種対応。4色 CMYK 印刷、デザイン自由。10枚〜〜、翌日-3営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "屋外ポスターの屋外ポスターは ZprintPro にお任せ。157g-300g コート紙/PP/写真用紙 高品質用紙、A1/A2/A3/A4 各種対応。4色 CMYK 印刷、デザイン自由。10枚〜〜、翌日-3営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "Waterproof and UV-resistant material",
         "keywords": ["屋外ポスター", "屋外ポスター 印刷", "outdoor posters", "ポスター印刷", "A1ポスター", "A2ポスター", "展示会ポスター", "大判出力", "防水ポスター", "イベントポスター", "店舗ポスター", "POPポスター", "24時間ポスター印刷", "2時間急速印刷", "A0 ポスター", "A1 ポスター", "A2 ポスター", "プロモポスター", "宿題ポスター", "当日出荷", "当日デザイン", "ウェディングポスター印刷", "ウェディング写真ウォール", "ウェディング写真ポスター", "学生ポスター印刷", "写真ポスター", "写真ポスター印刷", "イベントポスター印刷", "ポスター 価格", "ポスター レイアウト", "ポスター デザイン印刷", "祝日デコレーション", "プレゼンポスター", "ウェルカムボード印刷", "飲食ポスター印刷"],
         "body": "カスタム 屋外ポスター — 日本市場向け高品質短納期印刷サービス。100 枚から対応、Giclée 品質 1200 DPI 印刷対応、FSC 認証紙、持続可能な資源。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\n屋外ポスター は イベントプロモ・コンサート/展示ポスター、小売店内ディスプレイ・商品発表、写真プリント・アート複製 の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。posters 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに 屋外ポスター サービスの設計思想です。\n\n素材は 200g グロスアート紙（標準屋内ポスター）（日常大量使用）、250g マットアート紙（プレミアム屋内・ギャラリー）（プレミアム用途、主力選択）、PVC ポスター（防水屋外、UV 耐性インク）（特殊プロジェクト）の 3 種類。すべて Giclée 品質 1200 DPI 印刷対応 および FSC 認証紙、持続可能な資源 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、posters 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: ポスターのサイズは？**\n標準サイズ：A4（210x297mm）、A3（297x420mm）、A2（420x594mm）、A1（594x841mm）、A0（841x1189mm）、US Letter / Tabloid / 24\"x36\"。PVC 紙で最大 44 インチ幅対応。オリジナルダイカット形状も対応可能。\n\n**Q2: 最小注文数量は？**\n50 枚から対応（版代ゼロ）。100 / 500 / 1,000 数量で段階割引。標準納期は 3-5 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前にデジタル校正は確認できますか？**\nはい — 無料デジタル校正 2 時間以内。無料修正 2 回まで。ブランド Pantone 合わせなど精密色校正は有償（¥2,980）実物校正を DHL Express で対応。\n\n**Q4: 屋外使用は可能ですか？**\n200g / 250g コート紙ポスターは屋内向け（額装で 1-2 年）。屋外・窓際・湿潤環境では PVC 紙材 + UV 耐性インクをお選びください。屋外耐久 2-3 年。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
@@ -1726,7 +1726,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [
       {
-        "q": "防水・UV耐性素材、屋外使用でも色褪せません。 ZprintProは香港で屋外ポスターサービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "防水・UV耐性素材、屋外使用でも色褪せません。 ZprintProは屋外ポスターサービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業戶外海報服務 | 智印雲"
       },
       {
@@ -1769,8 +1769,8 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "ディスプレイポスター | 防水 翌日配送 | ZprintPro",
-        "description": "ディスプレイポスターのディスプレイポスターは ZprintPro にお任せ。157g-300g コート紙/PP/写真用紙 高品質用紙、A1/A2/A3/A4 各種対応。4色 CMYK 印刷、デザイン自由。10枚〜〜、翌日-3営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
-        "h1": " portable and easy to install. ZprintPro offers professional Display Posters services in Hong Kong. High quality",
+        "description": "ディスプレイポスターのディスプレイポスターは ZprintPro にお任せ。157g-300g コート紙/PP/写真用紙 高品質用紙、A1/A2/A3/A4 各種対応。4色 CMYK 印刷、デザイン自由。10枚〜〜、翌日-3営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
+        "h1": " portable and easy to install. ZprintPro offers professional Display Posters services worldwide. High quality",
         "keywords": ["ディスプレイポスター", "ディスプレイポスター 印刷", "display posters", "ポスター印刷", "A1ポスター", "A2ポスター", "屋外ポスター", "展示会ポスター", "大判出力", "防水ポスター", "イベントポスター", "店舗ポスター", "POPポスター", "24時間ポスター印刷", "2時間急速印刷", "A0 ポスター", "A1 ポスター", "A2 ポスター", "プロモポスター", "宿題ポスター", "当日出荷", "当日デザイン", "ウェディングポスター印刷", "ウェディング写真ウォール", "ウェディング写真ポスター", "学生ポスター印刷", "写真ポスター", "写真ポスター印刷", "イベントポスター印刷", "ポスター 価格", "ポスター レイアウト", "ポスター デザイン印刷", "祝日デコレーション", "プレゼンポスター", "ウェルカムボード印刷", "飲食ポスター印刷"],
         "body": "カスタム 展示用ポスター — 日本市場向け高品質短納期印刷サービス。100 枚から対応、Giclée 品質 1200 DPI 印刷対応、FSC 認証紙、持続可能な資源。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\n展示用ポスター は イベントプロモ・コンサート/展示ポスター、小売店内ディスプレイ・商品発表、写真プリント・アート複製 の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。posters 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに 展示用ポスター サービスの設計思想です。\n\n素材は 200g グロスアート紙（標準屋内ポスター）（日常大量使用）、250g マットアート紙（プレミアム屋内・ギャラリー）（プレミアム用途、主力選択）、PVC ポスター（防水屋外、UV 耐性インク）（特殊プロジェクト）の 3 種類。すべて Giclée 品質 1200 DPI 印刷対応 および FSC 認証紙、持続可能な資源 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、posters 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: ポスターのサイズは？**\n標準サイズ：A4（210x297mm）、A3（297x420mm）、A2（420x594mm）、A1（594x841mm）、A0（841x1189mm）、US Letter / Tabloid / 24\"x36\"。PVC 紙で最大 44 インチ幅対応。オリジナルダイカット形状も対応可能。\n\n**Q2: 最小注文数量は？**\n50 枚から対応（版代ゼロ）。100 / 500 / 1,000 数量で段階割引。標準納期は 3-5 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前にデジタル校正は確認できますか？**\nはい — 無料デジタル校正 2 時間以内。無料修正 2 回まで。ブランド Pantone 合わせなど精密色校正は有償（¥2,980）実物校正を DHL Express で対応。\n\n**Q4: 屋外使用は可能ですか？**\n200g / 250g コート紙ポスターは屋内向け（額装で 1-2 年）。屋外・窓際・湿潤環境では PVC 紙材 + UV 耐性インクをお選びください。屋外耐久 2-3 年。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
       }
@@ -1820,7 +1820,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "アートポスター | 防水 翌日配送 | ZprintPro",
-        "description": "アートポスターのアートポスターは ZprintPro にお任せ。157g-300g コート紙/PP/写真用紙 高品質用紙、A1/A2/A3/A4 各種対応。4色 CMYK 印刷、デザイン自由。10枚〜〜、翌日-3営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "アートポスターのアートポスターは ZprintPro にお任せ。157g-300g コート紙/PP/写真用紙 高品質用紙、A1/A2/A3/A4 各種対応。4色 CMYK 印刷、デザイン自由。10枚〜〜、翌日-3営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": " high color accuracy. Perfect for art exhibitions",
         "keywords": ["アートポスター", "アートポスター 印刷", "art posters", "ポスター印刷", "A1ポスター", "A2ポスター", "屋外ポスター", "展示会ポスター", "大判出力", "防水ポスター", "イベントポスター", "店舗ポスター", "POPポスター", "24時間ポスター印刷", "2時間急速印刷", "A0 ポスター", "A1 ポスター", "A2 ポスター", "プロモポスター", "宿題ポスター", "当日出荷", "当日デザイン", "ウェディングポスター印刷", "ウェディング写真ウォール", "ウェディング写真ポスター", "学生ポスター印刷", "写真ポスター", "写真ポスター印刷", "イベントポスター印刷", "ポスター 価格", "ポスター レイアウト", "ポスター デザイン印刷", "祝日デコレーション", "プレゼンポスター", "ウェルカムボード印刷", "飲食ポスター印刷"],
         "body": "カスタム アートポスター — 日本市場向け高品質短納期印刷サービス。100 枚から対応、Giclée 品質 1200 DPI 印刷対応、FSC 認証紙、持続可能な資源。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\nアートポスター は イベントプロモ・コンサート/展示ポスター、小売店内ディスプレイ・商品発表、写真プリント・アート複製 の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。posters 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに アートポスター サービスの設計思想です。\n\n素材は 200g グロスアート紙（標準屋内ポスター）（日常大量使用）、250g マットアート紙（プレミアム屋内・ギャラリー）（プレミアム用途、主力選択）、PVC ポスター（防水屋外、UV 耐性インク）（特殊プロジェクト）の 3 種類。すべて Giclée 品質 1200 DPI 印刷対応 および FSC 認証紙、持続可能な資源 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、posters 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: ポスターのサイズは？**\n標準サイズ：A4（210x297mm）、A3（297x420mm）、A2（420x594mm）、A1（594x841mm）、A0（841x1189mm）、US Letter / Tabloid / 24\"x36\"。PVC 紙で最大 44 インチ幅対応。オリジナルダイカット形状も対応可能。\n\n**Q2: 最小注文数量は？**\n50 枚から対応（版代ゼロ）。100 / 500 / 1,000 数量で段階割引。標準納期は 3-5 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前にデジタル校正は確認できますか？**\nはい — 無料デジタル校正 2 時間以内。無料修正 2 回まで。ブランド Pantone 合わせなど精密色校正は有償（¥2,980）実物校正を DHL Express で対応。\n\n**Q4: 屋外使用は可能ですか？**\n200g / 250g コート紙ポスターは屋内向け（額装で 1-2 年）。屋外・窓際・湿潤環境では PVC 紙材 + UV 耐性インクをお選びください。屋外耐久 2-3 年。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
@@ -1828,7 +1828,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [
       {
-        "q": "高級アート紙、高い色再現性。美術展、写真作品に最適。 ZprintProは香港でアートポスターサービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "高級アート紙、高い色再現性。美術展、写真作品に最適。 ZprintProはアートポスターサービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業藝術海報服務 | 智印雲"
       },
       {
@@ -1871,7 +1871,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "粘着ポスター | 防水 翌日配送 | ZprintPro",
-        "description": "粘着ポスターの粘着ポスターは ZprintPro にお任せ。157g-300g コート紙/PP/写真用紙 高品質用紙、A1/A2/A3/A4 各種対応。4色 CMYK 印刷、デザイン自由。10枚〜〜、翌日-3営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "粘着ポスターの粘着ポスターは ZprintPro にお任せ。157g-300g コート紙/PP/写真用紙 高品質用紙、A1/A2/A3/A4 各種対応。4色 CMYK 印刷、デザイン自由。10枚〜〜、翌日-3営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": " can be directly applied. Perfect for shop windows",
         "keywords": ["粘着ポスター", "粘着ポスター 印刷", "adhesive posters", "ポスター印刷", "A1ポスター", "A2ポスター", "屋外ポスター", "展示会ポスター", "大判出力", "防水ポスター", "イベントポスター", "店舗ポスター", "POPポスター", "24時間ポスター印刷", "2時間急速印刷", "A0 ポスター", "A1 ポスター", "A2 ポスター", "プロモポスター", "宿題ポスター", "当日出荷", "当日デザイン", "ウェディングポスター印刷", "ウェディング写真ウォール", "ウェディング写真ポスター", "学生ポスター印刷", "写真ポスター", "写真ポスター印刷", "イベントポスター印刷", "ポスター 価格", "ポスター レイアウト", "ポスター デザイン印刷", "祝日デコレーション", "プレゼンポスター", "ウェルカムボード印刷", "飲食ポスター印刷"],
         "body": "カスタム 粘着ポスター — 日本市場向け高品質短納期印刷サービス。100 枚から対応、Giclée 品質 1200 DPI 印刷対応、FSC 認証紙、持続可能な資源。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\n粘着ポスター は イベントプロモ・コンサート/展示ポスター、小売店内ディスプレイ・商品発表、写真プリント・アート複製 の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。posters 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに 粘着ポスター サービスの設計思想です。\n\n素材は 200g グロスアート紙（標準屋内ポスター）（日常大量使用）、250g マットアート紙（プレミアム屋内・ギャラリー）（プレミアム用途、主力選択）、PVC ポスター（防水屋外、UV 耐性インク）（特殊プロジェクト）の 3 種類。すべて Giclée 品質 1200 DPI 印刷対応 および FSC 認証紙、持続可能な資源 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、posters 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: ポスターのサイズは？**\n標準サイズ：A4（210x297mm）、A3（297x420mm）、A2（420x594mm）、A1（594x841mm）、A0（841x1189mm）、US Letter / Tabloid / 24\"x36\"。PVC 紙で最大 44 インチ幅対応。オリジナルダイカット形状も対応可能。\n\n**Q2: 最小注文数量は？**\n50 枚から対応（版代ゼロ）。100 / 500 / 1,000 数量で段階割引。標準納期は 3-5 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前にデジタル校正は確認できますか？**\nはい — 無料デジタル校正 2 時間以内。無料修正 2 回まで。ブランド Pantone 合わせなど精密色校正は有償（¥2,980）実物校正を DHL Express で対応。\n\n**Q4: 屋外使用は可能ですか？**\n200g / 250g コート紙ポスターは屋内向け（額装で 1-2 年）。屋外・窓際・湿潤環境では PVC 紙材 + UV 耐性インクをお選びください。屋外耐久 2-3 年。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
@@ -1879,7 +1879,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [
       {
-        "q": "自己粘着、直接貼付可能。店舗の窓、壁の装飾に最適。 ZprintProは香港で粘着ポスターサービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "自己粘着、直接貼付可能。店舗の窓、壁の装飾に最適。 ZprintProは粘着ポスターサービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業背膠海報服務 | 智印雲"
       },
       {
@@ -1916,22 +1916,22 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Custom Gift Boxes | Free Shipping $99+ | ZprintPro",
         "description": "Custom gift boxes for premium brands. Rigid setup, folding carton, magnetic closure, foil stamping. 100-MOQ | Free Design | 100 MOQ",
         "h1": "Gift Boxes 100+ | Rigid Magnetic | ZprintPro",
-        "keywords": ["custom gift boxes","rigid gift boxes","folding carton boxes","magnetic closure boxes","luxury gift boxes","foil stamped gift boxes","premium packaging","gift boxes free shipping","bulk gift boxes","bespoke gift packaging","packaging box printing","gift boxes","cosmetic boxes","food boxes","mailer boxes","corrugated boxes","custom packaging","rigid boxes","folding cartons","product boxes","100pcs MOQ","2-day turnaround","FSC certified","HK DOH compliance","QR code packaging","mid-autumn gift box printing","health supplement packaging","free proof","free layout","export packaging","cosmetic packaging box","instant quote","compostable packaging","small batch packaging box","industrial packaging","color box printing","drawer color box","sustainable packaging","silver foil printing","eco packaging box","corrugated box","corrugated box printing","magnetic box","gift color box","window design","festival packaging box","green printing","rush printing","beauty packaging","pharmaceutical packaging box","moisture-proof packaging","food-grade box","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
+        "keywords": ["custom gift boxes","rigid gift boxes","folding carton boxes","magnetic closure boxes","luxury gift boxes","foil stamped gift boxes","premium packaging","gift boxes free shipping","bulk gift boxes","bespoke gift packaging","packaging box printing","gift boxes","cosmetic boxes","food boxes","mailer boxes","corrugated boxes","custom packaging","rigid boxes","folding cartons","product boxes","100pcs MOQ","2-day turnaround","FSC certified","food safety compliance","QR code packaging","mid-autumn gift box printing","health supplement packaging","free proof","free layout","export packaging","cosmetic packaging box","instant quote","compostable packaging","small batch packaging box","industrial packaging","color box printing","drawer color box","sustainable packaging","silver foil printing","eco packaging box","corrugated box","corrugated box printing","magnetic box","gift color box","window design","festival packaging box","green printing","rush printing","beauty packaging","pharmaceutical packaging box","moisture-proof packaging","food-grade box","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
         "body": "Custom gift boxes designed for US small business, DTC brands, and cross-border e-commerce. Free design mockup, no setup fees, and Free Shipping on US orders over $99. Every order ships from our Asia factory with 4-day delivery to the lower 48 states. ISO 9001 certified production with full FDA compliance where applicable.\n\nGift Boxes are widely used across gift packaging and luxury retail boxes, cosmetic and skincare product packaging, and DTC e-commerce shipping and subscription boxes — whether you are launching a new product line, refreshing your retail shelf presence, or shipping promotional materials to a nationwide customer base. The packaging market rewards brands that ship fast, iterate often, and stay under tight unit-cost targets — that is exactly what our gift boxes service is built for.\n\nMaterial options include 350g coated card with matte lamination (standard box) for everyday high-volume use, Corrugated B-flute (heavy-duty shipping box) for premium applications, and Rigid setup box with magnetic closure (premium gift) for specialty projects. All three are FSC-certified paper, soy-based ink and FDA-safe for indirect food contact (food-grade options), so you can ship into the US market without compliance friction. Print finishes include matte lamination, gloss lamination, spot UV, foil stamping, and full-color CMYK plus white ink where supported.\n\nSubmit print-ready files (300 DPI, CMYK, 3mm bleed, outlined fonts) and we ship a free digital proof within 2 hours. If you do not have design files yet, our in-house design team will mock up your concept at no charge — just share your brand colors, logo, and any reference photos via WhatsApp. We also offer free dieline templates for every standard size.\n\nPricing is transparent: 100-piece minimum, no setup fees, no plate fees, and Free Shipping on US orders over $99. Standard turnaround is 4 business days for production plus 4-day USA delivery. Rush orders (24-hour proof plus 2-day production) available for an additional 20%. Get an instant quote via the 30-second AI estimator on the product page, or message us on WhatsApp for a custom run.\n\n**FAQ**\n\n**Q1: What box styles are available?**\nTuck-end boxes (auto-lock, straight tuck, reverse tuck), setup boxes (rigid lid-and-base), magnetic closure boxes, drawer/slider boxes, mailer boxes (corrugated), and custom die-cut shapes. We provide free dieline templates for all standard styles.\n\n**Q2: What is the minimum order quantity?**\n100 boxes minimum (no setup fees, no die fees for standard sizes). Custom sizes / die-cut MOQ is 500. Standard production 5-7 business days plus 4-day USA delivery.\n\n**Q3: Can I get a 3D mockup before bulk order?**\nYes — we send a free 3D render within 4 hours of file submission. For physical samples, we offer a paid sample pack ($49) shipped via DHL Express with your custom design on the actual box stock.\n\n**Q4: Are the boxes safe for food products?**\nOur food-grade box options use FDA-safe adhesive and food-contact-safe inks, certified for indirect food contact (oatmeal, tea, chocolate, snacks). For direct food contact (candy bars, fresh fruit), we offer specialized food-grade linings. Share your food product type and we will recommend the right stock.\n\nReady to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA pickup available for orders placed before 11 AM EST in major US cities."
       
       
       },
       "ja": {
         "title": "ギフトボックス | 特注 高級パッケージ | ZprintPro",
-        "description": "ギフトボックスのギフトボックスは ZprintPro にお任せ。白カード/クラフト/グレー台紙 高品質用紙、カスタムサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "ギフトボックスのギフトボックスは ZprintPro にお任せ。白カード/クラフト/グレー台紙 高品質用紙、カスタムサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "Exquisite gift boxes with foil stamping",
-        "keywords": ["ギフトボックス", "ギフトボックス 印刷", "gift boxes", "パッケージボックス印刷", "化粧箱", "食品箱", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "香港衛生署", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
+        "keywords": ["ギフトボックス", "ギフトボックス 印刷", "gift boxes", "パッケージボックス印刷", "化粧箱", "食品箱", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "日本の食品衛生基準", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
         "body": "カスタム ギフトボックス — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FSC 認証紙、大豆油性インク、FDA セーフ（間接食品接触対応）。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\nギフトボックス は ギフトパッケージ・高級小売箱、化粧品・スキンケア製品パッケージ、DTC EC 配送・サブスクリプションボックス の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。packaging 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに ギフトボックス サービスの設計思想です。\n\n素材は 350g コート紙 + マットラミネート（標準箱）（日常大量使用）、B フルート段ボール（強化配送箱）（プレミアム用途、主力選択）、硬質セットアップ箱 + マグネット蓋（プレミアムギフト）（特殊プロジェクト）の 3 種類。すべて FSC 認証紙、大豆油性インク および FDA セーフ（間接食品接触対応） 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、packaging 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: どんな箱スタイルが対応可能ですか？**\nTuck-end 箱（オートロック、ストレートタック、リバースタック）、セットアップ箱（硬質蓋底）、マグネット蓋箱、引き出し式箱、宅配段ボール箱、オリジナルダイカット形状。すべての標準スタイルに無料型紙テンプレートをご用意。\n\n**Q2: 最小注文数量は？**\n100 個から（標準サイズ版代・型代ゼロ）。カスタムサイズ / ダイカットは 500 個から。標準納期 5-7 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前に 3D モックアップは見られますか？**\nはい — データ提出から 4 時間以内に無料 3D レンダリングをお届け。実物サンプルは有償（¥4,980）で DHL Express にて、お客様デザイン実物印刷入りでお届け。\n\n**Q4: 食品接触対応ですか？**\n食品グレード箱は FDA セーフ接着剤と食品接触対応インク使用、間接食品接触（オートミール、茶、チョコ、スナック）認証済み。直接食品接触（キャンディ、フルーツ）は専用食品グレードライニング対応。食品種別をお知らせいただければ最適素材をご提案します。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
       }
     },
     "faqs": [
       {
-        "q": "精巧なギフトボックス、箔押し・UVなどの加工付き。 ZprintProは香港でギフトボックスサービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "精巧なギフトボックス、箔押し・UVなどの加工付き。 ZprintProはギフトボックスサービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業禮品盒定制服務 | 智印雲"
       },
       {
@@ -1977,7 +1977,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "description": "化粧品パッケージボックス 100 個から対応. 4 種類 (天地蓋 / マグネット蓋 / 引き出し式 / ブック型) + 内装 EVA / 紙 / PET 吸塑カスタム. 箔押し + スポット UV + サテン裏地. 美容・スキンケアブランド、越境 EC、日本市場対応 | 無料デザイン | 100枚〜",
 
         "h1": "化粧品パッケージボックス — 4 種類 · 内装カスタム",
-        "keywords": ["化粧品パッケージボックス", "化粧品箱", "コスメボックス", "スキンケアボックス", "カスタム箱型", "マグネット蓋", "引き出し式", "ブック型", "化粧品OEM", "香港 cosmetic packaging", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "香港衛生署", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
+        "keywords": ["化粧品パッケージボックス", "化粧品箱", "コスメボックス", "スキンケアボックス", "カスタム箱型", "マグネット蓋", "引き出し式", "ブック型", "化粧品OEM", "cosmetic packaging", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "日本の食品衛生基準", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
         "body": "カスタム 化粧品パッケージボックス — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FSC 認証紙、大豆油性インク、FDA セーフ（間接食品接触対応）。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\n化粧品パッケージボックス は ギフトパッケージ・高級小売箱、化粧品・スキンケア製品パッケージ、DTC EC 配送・サブスクリプションボックス の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。packaging 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに 化粧品パッケージボックス サービスの設計思想です。\n\n素材は 350g コート紙 + マットラミネート（標準箱）（日常大量使用）、B フルート段ボール（強化配送箱）（プレミアム用途、主力選択）、硬質セットアップ箱 + マグネット蓋（プレミアムギフト）（特殊プロジェクト）の 3 種類。すべて FSC 認証紙、大豆油性インク および FDA セーフ（間接食品接触対応） 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、packaging 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: どんな箱スタイルが対応可能ですか？**\nTuck-end 箱（オートロック、ストレートタック、リバースタック）、セットアップ箱（硬質蓋底）、マグネット蓋箱、引き出し式箱、宅配段ボール箱、オリジナルダイカット形状。すべての標準スタイルに無料型紙テンプレートをご用意。\n\n**Q2: 最小注文数量は？**\n100 個から（標準サイズ版代・型代ゼロ）。カスタムサイズ / ダイカットは 500 個から。標準納期 5-7 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前に 3D モックアップは見られますか？**\nはい — データ提出から 4 時間以内に無料 3D レンダリングをお届け。実物サンプルは有償（¥4,980）で DHL Express にて、お客様デザイン実物印刷入りでお届け。\n\n**Q4: 食品接触対応ですか？**\n食品グレード箱は FDA セーフ接着剤と食品接触対応インク使用、間接食品接触（オートミール、茶、チョコ、スナック）認証済み。直接食品接触（キャンディ、フルーツ）は専用食品グレードライニング対応。食品種別をお知らせいただければ最適素材をご提案します。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
       }
     },
@@ -2023,16 +2023,16 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Custom Food Boxes | Free Shipping $99+ | ZprintPro",
         "description": "Food boxes for pastries. 350g-400g food-grade card, PE/PLA lining. 100-MOQ, grease resistant. Free US shipping over $100, DHL | Free Design | 100 MOQ",
         "h1": "Food Boxes 100+ | Food-Grade | ZprintPro",
-        "keywords": ["food boxes","custom food boxes","food packaging boxes","food grade boxes","takeout boxes custom","bakery boxes wholesale","food boxes free shipping","bulk food packaging","food boxes USD","bespoke food packaging","packaging box printing","gift boxes","cosmetic boxes","mailer boxes","corrugated boxes","custom packaging","rigid boxes","folding cartons","product boxes","100pcs MOQ","2-day turnaround","FSC certified","HK DOH compliance","QR code packaging","mid-autumn gift box printing","health supplement packaging","free proof","free layout","export packaging","cosmetic packaging box","instant quote","compostable packaging","small batch packaging box","industrial packaging","color box printing","drawer color box","sustainable packaging","silver foil printing","eco packaging box","corrugated box","corrugated box printing","magnetic box","gift color box","window design","festival packaging box","green printing","rush printing","beauty packaging","pharmaceutical packaging box","moisture-proof packaging","food-grade box","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
+        "keywords": ["food boxes","custom food boxes","food packaging boxes","food grade boxes","takeout boxes custom","bakery boxes wholesale","food boxes free shipping","bulk food packaging","food boxes USD","bespoke food packaging","packaging box printing","gift boxes","cosmetic boxes","mailer boxes","corrugated boxes","custom packaging","rigid boxes","folding cartons","product boxes","100pcs MOQ","2-day turnaround","FSC certified","food safety compliance","QR code packaging","mid-autumn gift box printing","health supplement packaging","free proof","free layout","export packaging","cosmetic packaging box","instant quote","compostable packaging","small batch packaging box","industrial packaging","color box printing","drawer color box","sustainable packaging","silver foil printing","eco packaging box","corrugated box","corrugated box printing","magnetic box","gift color box","window design","festival packaging box","green printing","rush printing","beauty packaging","pharmaceutical packaging box","moisture-proof packaging","food-grade box","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
         "body": "Custom food boxes designed for US small business, DTC brands, and cross-border e-commerce. Free design mockup, no setup fees, and Free Shipping on US orders over $99. Every order ships from our Asia factory with 4-day delivery to the lower 48 states. ISO 9001 certified production with full FDA compliance where applicable.\n\nFood Boxes are widely used across gift packaging and luxury retail boxes, cosmetic and skincare product packaging, and DTC e-commerce shipping and subscription boxes — whether you are launching a new product line, refreshing your retail shelf presence, or shipping promotional materials to a nationwide customer base. The packaging market rewards brands that ship fast, iterate often, and stay under tight unit-cost targets — that is exactly what our food boxes service is built for.\n\nMaterial options include 350g coated card with matte lamination (standard box) for everyday high-volume use, Corrugated B-flute (heavy-duty shipping box) for premium applications, and Rigid setup box with magnetic closure (premium gift) for specialty projects. All three are FSC-certified paper, soy-based ink and FDA-safe for indirect food contact (food-grade options), so you can ship into the US market without compliance friction. Print finishes include matte lamination, gloss lamination, spot UV, foil stamping, and full-color CMYK plus white ink where supported.\n\nSubmit print-ready files (300 DPI, CMYK, 3mm bleed, outlined fonts) and we ship a free digital proof within 2 hours. If you do not have design files yet, our in-house design team will mock up your concept at no charge — just share your brand colors, logo, and any reference photos via WhatsApp. We also offer free dieline templates for every standard size.\n\nPricing is transparent: 100-piece minimum, no setup fees, no plate fees, and Free Shipping on US orders over $99. Standard turnaround is 4 business days for production plus 4-day USA delivery. Rush orders (24-hour proof plus 2-day production) available for an additional 20%. Get an instant quote via the 30-second AI estimator on the product page, or message us on WhatsApp for a custom run.\n\n**FAQ**\n\n**Q1: What box styles are available?**\nTuck-end boxes (auto-lock, straight tuck, reverse tuck), setup boxes (rigid lid-and-base), magnetic closure boxes, drawer/slider boxes, mailer boxes (corrugated), and custom die-cut shapes. We provide free dieline templates for all standard styles.\n\n**Q2: What is the minimum order quantity?**\n100 boxes minimum (no setup fees, no die fees for standard sizes). Custom sizes / die-cut MOQ is 500. Standard production 5-7 business days plus 4-day USA delivery.\n\n**Q3: Can I get a 3D mockup before bulk order?**\nYes — we send a free 3D render within 4 hours of file submission. For physical samples, we offer a paid sample pack ($49) shipped via DHL Express with your custom design on the actual box stock.\n\n**Q4: Are the boxes safe for food products?**\nOur food-grade box options use FDA-safe adhesive and food-contact-safe inks, certified for indirect food contact (oatmeal, tea, chocolate, snacks). For direct food contact (candy bars, fresh fruit), we offer specialized food-grade linings. Share your food product type and we will recommend the right stock.\n\nReady to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA pickup available for orders placed before 11 AM EST in major US cities."
       
       
       },
       "ja": {
         "title": "食品パッケージ | 特注 高級パッケージ | ZprintPro",
-        "description": "食品パッケージの食品パッケージは ZprintPro にお任せ。白カード/クラフト/グレー台紙 高品質用紙、カスタムサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
-        "h1": " safe and eco-friendly. ZprintPro offers professional Food Boxes services in Hong Kong. High quality",
-        "keywords": ["食品パッケージ", "食品パッケージ 印刷", "food boxes", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "香港衛生署", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
+        "description": "食品パッケージの食品パッケージは ZprintPro にお任せ。白カード/クラフト/グレー台紙 高品質用紙、カスタムサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
+        "h1": " safe and eco-friendly. ZprintPro offers professional Food Boxes services worldwide. High quality",
+        "keywords": ["食品パッケージ", "食品パッケージ 印刷", "food boxes", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "日本の食品衛生基準", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
         "body": "カスタム 食品包裝箱 — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FSC 認証紙、大豆油性インク、FDA セーフ（間接食品接触対応）。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\n食品包裝箱 は ギフトパッケージ・高級小売箱、化粧品・スキンケア製品パッケージ、DTC EC 配送・サブスクリプションボックス の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。packaging 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに 食品包裝箱 サービスの設計思想です。\n\n素材は 350g コート紙 + マットラミネート（標準箱）（日常大量使用）、B フルート段ボール（強化配送箱）（プレミアム用途、主力選択）、硬質セットアップ箱 + マグネット蓋（プレミアムギフト）（特殊プロジェクト）の 3 種類。すべて FSC 認証紙、大豆油性インク および FDA セーフ（間接食品接触対応） 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、packaging 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: どんな箱スタイルが対応可能ですか？**\nTuck-end 箱（オートロック、ストレートタック、リバースタック）、セットアップ箱（硬質蓋底）、マグネット蓋箱、引き出し式箱、宅配段ボール箱、オリジナルダイカット形状。すべての標準スタイルに無料型紙テンプレートをご用意。\n\n**Q2: 最小注文数量は？**\n100 個から（標準サイズ版代・型代ゼロ）。カスタムサイズ / ダイカットは 500 個から。標準納期 5-7 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前に 3D モックアップは見られますか？**\nはい — データ提出から 4 時間以内に無料 3D レンダリングをお届け。実物サンプルは有償（¥4,980）で DHL Express にて、お客様デザイン実物印刷入りでお届け。\n\n**Q4: 食品接触対応ですか？**\n食品グレード箱は FDA セーフ接着剤と食品接触対応インク使用、間接食品接触（オートミール、茶、チョコ、スナック）認証済み。直接食品接触（キャンディ、フルーツ）は専用食品グレードライニング対応。食品種別をお知らせいただければ最適素材をご提案します。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
       }
     },
@@ -2075,22 +2075,22 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Custom Mailer Boxes | Free Shipping $99+ | ZprintPro",
         "description": "Mailer boxes for e-commerce. Self-locking, 70% storage save, kraft or white. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Mailer Boxes 100+ | Self-Lock | ZprintPro",
-        "keywords": ["mailer boxes","e-commerce mailers","self locking boxes","corrugated mailers","folding carton mailers","DTC shipping boxes","subscription boxes","mailer boxes free shipping","bulk mailers","bespoke shipping boxes","packaging box printing","gift boxes","cosmetic boxes","food boxes","corrugated boxes","custom packaging","rigid boxes","folding cartons","product boxes","100pcs MOQ","2-day turnaround","FSC certified","HK DOH compliance","QR code packaging","mid-autumn gift box printing","health supplement packaging","free proof","free layout","export packaging","cosmetic packaging box","instant quote","compostable packaging","small batch packaging box","industrial packaging","color box printing","drawer color box","sustainable packaging","silver foil printing","eco packaging box","corrugated box","corrugated box printing","magnetic box","gift color box","window design","festival packaging box","green printing","rush printing","beauty packaging","pharmaceutical packaging box","moisture-proof packaging","food-grade box","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
+        "keywords": ["mailer boxes","e-commerce mailers","self locking boxes","corrugated mailers","folding carton mailers","DTC shipping boxes","subscription boxes","mailer boxes free shipping","bulk mailers","bespoke shipping boxes","packaging box printing","gift boxes","cosmetic boxes","food boxes","corrugated boxes","custom packaging","rigid boxes","folding cartons","product boxes","100pcs MOQ","2-day turnaround","FSC certified","food safety compliance","QR code packaging","mid-autumn gift box printing","health supplement packaging","free proof","free layout","export packaging","cosmetic packaging box","instant quote","compostable packaging","small batch packaging box","industrial packaging","color box printing","drawer color box","sustainable packaging","silver foil printing","eco packaging box","corrugated box","corrugated box printing","magnetic box","gift color box","window design","festival packaging box","green printing","rush printing","beauty packaging","pharmaceutical packaging box","moisture-proof packaging","food-grade box","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
         "body": "Custom mailer boxes designed for US small business, DTC brands, and cross-border e-commerce. Free design mockup, no setup fees, and Free Shipping on US orders over $99. Every order ships from our Asia factory with 4-day delivery to the lower 48 states. ISO 9001 certified production with full FDA compliance where applicable.\n\nMailer Boxes are widely used across gift packaging and luxury retail boxes, cosmetic and skincare product packaging, and DTC e-commerce shipping and subscription boxes — whether you are launching a new product line, refreshing your retail shelf presence, or shipping promotional materials to a nationwide customer base. The packaging market rewards brands that ship fast, iterate often, and stay under tight unit-cost targets — that is exactly what our mailer boxes service is built for.\n\nMaterial options include 350g coated card with matte lamination (standard box) for everyday high-volume use, Corrugated B-flute (heavy-duty shipping box) for premium applications, and Rigid setup box with magnetic closure (premium gift) for specialty projects. All three are FSC-certified paper, soy-based ink and FDA-safe for indirect food contact (food-grade options), so you can ship into the US market without compliance friction. Print finishes include matte lamination, gloss lamination, spot UV, foil stamping, and full-color CMYK plus white ink where supported.\n\nSubmit print-ready files (300 DPI, CMYK, 3mm bleed, outlined fonts) and we ship a free digital proof within 2 hours. If you do not have design files yet, our in-house design team will mock up your concept at no charge — just share your brand colors, logo, and any reference photos via WhatsApp. We also offer free dieline templates for every standard size.\n\nPricing is transparent: 100-piece minimum, no setup fees, no plate fees, and Free Shipping on US orders over $99. Standard turnaround is 4 business days for production plus 4-day USA delivery. Rush orders (24-hour proof plus 2-day production) available for an additional 20%. Get an instant quote via the 30-second AI estimator on the product page, or message us on WhatsApp for a custom run.\n\n**FAQ**\n\n**Q1: What box styles are available?**\nTuck-end boxes (auto-lock, straight tuck, reverse tuck), setup boxes (rigid lid-and-base), magnetic closure boxes, drawer/slider boxes, mailer boxes (corrugated), and custom die-cut shapes. We provide free dieline templates for all standard styles.\n\n**Q2: What is the minimum order quantity?**\n100 boxes minimum (no setup fees, no die fees for standard sizes). Custom sizes / die-cut MOQ is 500. Standard production 5-7 business days plus 4-day USA delivery.\n\n**Q3: Can I get a 3D mockup before bulk order?**\nYes — we send a free 3D render within 4 hours of file submission. For physical samples, we offer a paid sample pack ($49) shipped via DHL Express with your custom design on the actual box stock.\n\n**Q4: Are the boxes safe for food products?**\nOur food-grade box options use FDA-safe adhesive and food-contact-safe inks, certified for indirect food contact (oatmeal, tea, chocolate, snacks). For direct food contact (candy bars, fresh fruit), we offer specialized food-grade linings. Share your food product type and we will recommend the right stock.\n\nReady to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA pickup available for orders placed before 11 AM EST in major US cities."
       
       
       },
       "ja": {
         "title": "メーラーボックス | 特注 高級パッケージ | ZprintPro",
-        "description": "メーラーボックスのメーラーボックスは ZprintPro にお任せ。白カード/クラフト/グレー台紙 高品質用紙、カスタムサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "メーラーボックスのメーラーボックスは ZprintPro にお任せ。白カード/クラフト/グレー台紙 高品質用紙、カスタムサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "Sturdy and durable",
-        "keywords": ["メーラーボックス", "メーラーボックス 印刷", "mailer boxes", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "香港衛生署", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
+        "keywords": ["メーラーボックス", "メーラーボックス 印刷", "mailer boxes", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "日本の食品衛生基準", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
         "body": "カスタム 発送箱 — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FSC 認証紙、大豆油性インク、FDA セーフ（間接食品接触対応）。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\n発送箱 は ギフトパッケージ・高級小売箱、化粧品・スキンケア製品パッケージ、DTC EC 配送・サブスクリプションボックス の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。packaging 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに 発送箱 サービスの設計思想です。\n\n素材は 350g コート紙 + マットラミネート（標準箱）（日常大量使用）、B フルート段ボール（強化配送箱）（プレミアム用途、主力選択）、硬質セットアップ箱 + マグネット蓋（プレミアムギフト）（特殊プロジェクト）の 3 種類。すべて FSC 認証紙、大豆油性インク および FDA セーフ（間接食品接触対応） 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、packaging 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: どんな箱スタイルが対応可能ですか？**\nTuck-end 箱（オートロック、ストレートタック、リバースタック）、セットアップ箱（硬質蓋底）、マグネット蓋箱、引き出し式箱、宅配段ボール箱、オリジナルダイカット形状。すべての標準スタイルに無料型紙テンプレートをご用意。\n\n**Q2: 最小注文数量は？**\n100 個から（標準サイズ版代・型代ゼロ）。カスタムサイズ / ダイカットは 500 個から。標準納期 5-7 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前に 3D モックアップは見られますか？**\nはい — データ提出から 4 時間以内に無料 3D レンダリングをお届け。実物サンプルは有償（¥4,980）で DHL Express にて、お客様デザイン実物印刷入りでお届け。\n\n**Q4: 食品接触対応ですか？**\n食品グレード箱は FDA セーフ接着剤と食品接触対応インク使用、間接食品接触（オートミール、茶、チョコ、スナック）認証済み。直接食品接触（キャンディ、フルーツ）は専用食品グレードライニング対応。食品種別をお知らせいただければ最適素材をご提案します。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
       }
     },
     "faqs": [
       {
-        "q": "頑丈で耐久性があり、EC発送の第一選択。 ZprintProは香港で発送箱サービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "頑丈で耐久性があり、EC発送の第一選択。 ZprintProは発送箱サービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業快遞盒/飛機盒服務 | 智印雲"
       },
       {
@@ -2126,16 +2126,16 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Custom Folding Boxes | Free Shipping $99+ | ZprintPro",
         "description": "Folding Boxes custom printing, eco-friendly kraft paper. Free design mockup, 100 MOQ, Free Shipping $99+. 4-day USA delivery for retail packaging. | ZprintPro",
         "h1": "Folding Boxes 100+ | Auto-Lock | ZprintPro",
-        "keywords": ["folding boxes","folding cartons","tuck end boxes","auto lock bottom boxes","retail packaging boxes","cosmetic boxes","food boxes folding","folding boxes free shipping","bulk folding boxes","bespoke folding cartons","packaging box printing","gift boxes","food boxes","mailer boxes","corrugated boxes","custom packaging","rigid boxes","product boxes","100pcs MOQ","2-day turnaround","FSC certified","HK DOH compliance","QR code packaging","mid-autumn gift box printing","health supplement packaging","free proof","free layout","export packaging","cosmetic packaging box","instant quote","compostable packaging","small batch packaging box","industrial packaging","color box printing","drawer color box","sustainable packaging","silver foil printing","eco packaging box","corrugated box","corrugated box printing","magnetic box","gift color box","window design","festival packaging box","green printing","rush printing","beauty packaging","pharmaceutical packaging box","moisture-proof packaging","food-grade box","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
+        "keywords": ["folding boxes","folding cartons","tuck end boxes","auto lock bottom boxes","retail packaging boxes","cosmetic boxes","food boxes folding","folding boxes free shipping","bulk folding boxes","bespoke folding cartons","packaging box printing","gift boxes","food boxes","mailer boxes","corrugated boxes","custom packaging","rigid boxes","product boxes","100pcs MOQ","2-day turnaround","FSC certified","food safety compliance","QR code packaging","mid-autumn gift box printing","health supplement packaging","free proof","free layout","export packaging","cosmetic packaging box","instant quote","compostable packaging","small batch packaging box","industrial packaging","color box printing","drawer color box","sustainable packaging","silver foil printing","eco packaging box","corrugated box","corrugated box printing","magnetic box","gift color box","window design","festival packaging box","green printing","rush printing","beauty packaging","pharmaceutical packaging box","moisture-proof packaging","food-grade box","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
         "body": "Custom folding boxes designed for US small business, DTC brands, and cross-border e-commerce. Free design mockup, no setup fees, and Free Shipping on US orders over $99. Every order ships from our Asia factory with 4-day delivery to the lower 48 states. ISO 9001 certified production with full FDA compliance where applicable.\n\nFolding Boxes are widely used across gift packaging and luxury retail boxes, cosmetic and skincare product packaging, and DTC e-commerce shipping and subscription boxes — whether you are launching a new product line, refreshing your retail shelf presence, or shipping promotional materials to a nationwide customer base. The packaging market rewards brands that ship fast, iterate often, and stay under tight unit-cost targets — that is exactly what our folding boxes service is built for.\n\nMaterial options include 350g coated card with matte lamination (standard box) for everyday high-volume use, Corrugated B-flute (heavy-duty shipping box) for premium applications, and Rigid setup box with magnetic closure (premium gift) for specialty projects. All three are FSC-certified paper, soy-based ink and FDA-safe for indirect food contact (food-grade options), so you can ship into the US market without compliance friction. Print finishes include matte lamination, gloss lamination, spot UV, foil stamping, and full-color CMYK plus white ink where supported.\n\nSubmit print-ready files (300 DPI, CMYK, 3mm bleed, outlined fonts) and we ship a free digital proof within 2 hours. If you do not have design files yet, our in-house design team will mock up your concept at no charge — just share your brand colors, logo, and any reference photos via WhatsApp. We also offer free dieline templates for every standard size.\n\nPricing is transparent: 100-piece minimum, no setup fees, no plate fees, and Free Shipping on US orders over $99. Standard turnaround is 4 business days for production plus 4-day USA delivery. Rush orders (24-hour proof plus 2-day production) available for an additional 20%. Get an instant quote via the 30-second AI estimator on the product page, or message us on WhatsApp for a custom run.\n\n**FAQ**\n\n**Q1: What box styles are available?**\nTuck-end boxes (auto-lock, straight tuck, reverse tuck), setup boxes (rigid lid-and-base), magnetic closure boxes, drawer/slider boxes, mailer boxes (corrugated), and custom die-cut shapes. We provide free dieline templates for all standard styles.\n\n**Q2: What is the minimum order quantity?**\n100 boxes minimum (no setup fees, no die fees for standard sizes). Custom sizes / die-cut MOQ is 500. Standard production 5-7 business days plus 4-day USA delivery.\n\n**Q3: Can I get a 3D mockup before bulk order?**\nYes — we send a free 3D render within 4 hours of file submission. For physical samples, we offer a paid sample pack ($49) shipped via DHL Express with your custom design on the actual box stock.\n\n**Q4: Are the boxes safe for food products?**\nOur food-grade box options use FDA-safe adhesive and food-contact-safe inks, certified for indirect food contact (oatmeal, tea, chocolate, snacks). For direct food contact (candy bars, fresh fruit), we offer specialized food-grade linings. Share your food product type and we will recommend the right stock.\n\nReady to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA pickup available for orders placed before 11 AM EST in major US cities."
       
       
       },
       "ja": {
         "title": "折り畳み箱 | 特注 高級パッケージ | ZprintPro",
-        "description": "折り畳み箱の折り畳み箱は ZprintPro にお任せ。白カード/クラフト/グレー台紙 高品質用紙、カスタムサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
-        "h1": " saves warehouse space. ZprintPro offers professional Folding Boxes services in Hong Kong. High quality",
-        "keywords": ["折り畳み箱", "折り畳み箱 印刷", "folding boxes", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "香港衛生署", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
+        "description": "折り畳み箱の折り畳み箱は ZprintPro にお任せ。白カード/クラフト/グレー台紙 高品質用紙、カスタムサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
+        "h1": " saves warehouse space. ZprintPro offers professional Folding Boxes services worldwide. High quality",
+        "keywords": ["折り畳み箱", "折り畳み箱 印刷", "folding boxes", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "日本の食品衛生基準", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
         "body": "カスタム 折りたたみ箱 — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FSC 認証紙、大豆油性インク、FDA セーフ（間接食品接触対応）。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\n折りたたみ箱 は ギフトパッケージ・高級小売箱、化粧品・スキンケア製品パッケージ、DTC EC 配送・サブスクリプションボックス の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。packaging 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに 折りたたみ箱 サービスの設計思想です。\n\n素材は 350g コート紙 + マットラミネート（標準箱）（日常大量使用）、B フルート段ボール（強化配送箱）（プレミアム用途、主力選択）、硬質セットアップ箱 + マグネット蓋（プレミアムギフト）（特殊プロジェクト）の 3 種類。すべて FSC 認証紙、大豆油性インク および FDA セーフ（間接食品接触対応） 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、packaging 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: どんな箱スタイルが対応可能ですか？**\nTuck-end 箱（オートロック、ストレートタック、リバースタック）、セットアップ箱（硬質蓋底）、マグネット蓋箱、引き出し式箱、宅配段ボール箱、オリジナルダイカット形状。すべての標準スタイルに無料型紙テンプレートをご用意。\n\n**Q2: 最小注文数量は？**\n100 個から（標準サイズ版代・型代ゼロ）。カスタムサイズ / ダイカットは 500 個から。標準納期 5-7 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前に 3D モックアップは見られますか？**\nはい — データ提出から 4 時間以内に無料 3D レンダリングをお届け。実物サンプルは有償（¥4,980）で DHL Express にて、お客様デザイン実物印刷入りでお届け。\n\n**Q4: 食品接触対応ですか？**\n食品グレード箱は FDA セーフ接着剤と食品接触対応インク使用、間接食品接触（オートミール、茶、チョコ、スナック）認証済み。直接食品接触（キャンディ、フルーツ）は専用食品グレードライニング対応。食品種別をお知らせいただければ最適素材をご提案します。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
       }
     },
@@ -2177,16 +2177,16 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Custom Rigid Boxes | Free Shipping $99+ | ZprintPro",
         "description": "Luxury rigid setup boxes. 800-1500gsm greyboard, magnetic closure, leatherette. 250-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Rigid Boxes 250+ | Magnetic Closure | ZprintPro",
-        "keywords": ["rigid boxes","rigid setup boxes","luxury packaging boxes","magnetic closure boxes","leatherette boxes","jewelry boxes","premium gift boxes","rigid boxes free shipping","bulk rigid boxes","bespoke rigid packaging","packaging box printing","gift boxes","cosmetic boxes","food boxes","mailer boxes","corrugated boxes","custom packaging","folding cartons","product boxes","100pcs MOQ","2-day turnaround","FSC certified","HK DOH compliance","QR code packaging","mid-autumn gift box printing","health supplement packaging","free proof","free layout","export packaging","cosmetic packaging box","instant quote","compostable packaging","small batch packaging box","industrial packaging","color box printing","drawer color box","sustainable packaging","silver foil printing","eco packaging box","corrugated box","corrugated box printing","magnetic box","gift color box","window design","festival packaging box","green printing","rush printing","beauty packaging","pharmaceutical packaging box","moisture-proof packaging","food-grade box","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
+        "keywords": ["rigid boxes","rigid setup boxes","luxury packaging boxes","magnetic closure boxes","leatherette boxes","jewelry boxes","premium gift boxes","rigid boxes free shipping","bulk rigid boxes","bespoke rigid packaging","packaging box printing","gift boxes","cosmetic boxes","food boxes","mailer boxes","corrugated boxes","custom packaging","folding cartons","product boxes","100pcs MOQ","2-day turnaround","FSC certified","food safety compliance","QR code packaging","mid-autumn gift box printing","health supplement packaging","free proof","free layout","export packaging","cosmetic packaging box","instant quote","compostable packaging","small batch packaging box","industrial packaging","color box printing","drawer color box","sustainable packaging","silver foil printing","eco packaging box","corrugated box","corrugated box printing","magnetic box","gift color box","window design","festival packaging box","green printing","rush printing","beauty packaging","pharmaceutical packaging box","moisture-proof packaging","food-grade box","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
         "body": "Custom rigid boxes designed for US small business, DTC brands, and cross-border e-commerce. Free design mockup, no setup fees, and Free Shipping on US orders over $99. Every order ships from our Asia factory with 4-day delivery to the lower 48 states. ISO 9001 certified production with full FDA compliance where applicable.\n\nRigid Boxes are widely used across gift packaging and luxury retail boxes, cosmetic and skincare product packaging, and DTC e-commerce shipping and subscription boxes — whether you are launching a new product line, refreshing your retail shelf presence, or shipping promotional materials to a nationwide customer base. The packaging market rewards brands that ship fast, iterate often, and stay under tight unit-cost targets — that is exactly what our rigid boxes service is built for.\n\nMaterial options include 350g coated card with matte lamination (standard box) for everyday high-volume use, Corrugated B-flute (heavy-duty shipping box) for premium applications, and Rigid setup box with magnetic closure (premium gift) for specialty projects. All three are FSC-certified paper, soy-based ink and FDA-safe for indirect food contact (food-grade options), so you can ship into the US market without compliance friction. Print finishes include matte lamination, gloss lamination, spot UV, foil stamping, and full-color CMYK plus white ink where supported.\n\nSubmit print-ready files (300 DPI, CMYK, 3mm bleed, outlined fonts) and we ship a free digital proof within 2 hours. If you do not have design files yet, our in-house design team will mock up your concept at no charge — just share your brand colors, logo, and any reference photos via WhatsApp. We also offer free dieline templates for every standard size.\n\nPricing is transparent: 100-piece minimum, no setup fees, no plate fees, and Free Shipping on US orders over $99. Standard turnaround is 4 business days for production plus 4-day USA delivery. Rush orders (24-hour proof plus 2-day production) available for an additional 20%. Get an instant quote via the 30-second AI estimator on the product page, or message us on WhatsApp for a custom run.\n\n**FAQ**\n\n**Q1: What box styles are available?**\nTuck-end boxes (auto-lock, straight tuck, reverse tuck), setup boxes (rigid lid-and-base), magnetic closure boxes, drawer/slider boxes, mailer boxes (corrugated), and custom die-cut shapes. We provide free dieline templates for all standard styles.\n\n**Q2: What is the minimum order quantity?**\n100 boxes minimum (no setup fees, no die fees for standard sizes). Custom sizes / die-cut MOQ is 500. Standard production 5-7 business days plus 4-day USA delivery.\n\n**Q3: Can I get a 3D mockup before bulk order?**\nYes — we send a free 3D render within 4 hours of file submission. For physical samples, we offer a paid sample pack ($49) shipped via DHL Express with your custom design on the actual box stock.\n\n**Q4: Are the boxes safe for food products?**\nOur food-grade box options use FDA-safe adhesive and food-contact-safe inks, certified for indirect food contact (oatmeal, tea, chocolate, snacks). For direct food contact (candy bars, fresh fruit), we offer specialized food-grade linings. Share your food product type and we will recommend the right stock.\n\nReady to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA pickup available for orders placed before 11 AM EST in major US cities."
       
       
       },
       "ja": {
         "title": "リジッドボックス | 特注 高級パッケージ | ZprintPro",
-        "description": "リジッドボックスのリジッドボックスは ZprintPro にお任せ。白カード/クラフト/グレー台紙 高品質用紙、カスタムサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
-        "h1": " luxurious and premium. ZprintPro offers professional Rigid Boxes services in Hong Kong. High quality",
-        "keywords": ["リジッドボックス", "リジッドボックス 印刷", "rigid boxes", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "香港衛生署", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
+        "description": "リジッドボックスのリジッドボックスは ZprintPro にお任せ。白カード/クラフト/グレー台紙 高品質用紙、カスタムサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
+        "h1": " luxurious and premium. ZprintPro offers professional Rigid Boxes services worldwide. High quality",
+        "keywords": ["リジッドボックス", "リジッドボックス 印刷", "rigid boxes", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "日本の食品衛生基準", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
         "body": "カスタム 上製本箱 — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FSC 認証紙、大豆油性インク、FDA セーフ（間接食品接触対応）。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\n上製本箱 は ギフトパッケージ・高級小売箱、化粧品・スキンケア製品パッケージ、DTC EC 配送・サブスクリプションボックス の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。packaging 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに 上製本箱 サービスの設計思想です。\n\n素材は 350g コート紙 + マットラミネート（標準箱）（日常大量使用）、B フルート段ボール（強化配送箱）（プレミアム用途、主力選択）、硬質セットアップ箱 + マグネット蓋（プレミアムギフト）（特殊プロジェクト）の 3 種類。すべて FSC 認証紙、大豆油性インク および FDA セーフ（間接食品接触対応） 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、packaging 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: どんな箱スタイルが対応可能ですか？**\nTuck-end 箱（オートロック、ストレートタック、リバースタック）、セットアップ箱（硬質蓋底）、マグネット蓋箱、引き出し式箱、宅配段ボール箱、オリジナルダイカット形状。すべての標準スタイルに無料型紙テンプレートをご用意。\n\n**Q2: 最小注文数量は？**\n100 個から（標準サイズ版代・型代ゼロ）。カスタムサイズ / ダイカットは 500 個から。標準納期 5-7 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前に 3D モックアップは見られますか？**\nはい — データ提出から 4 時間以内に無料 3D レンダリングをお届け。実物サンプルは有償（¥4,980）で DHL Express にて、お客様デザイン実物印刷入りでお届け。\n\n**Q4: 食品接触対応ですか？**\n食品グレード箱は FDA セーフ接着剤と食品接触対応インク使用、間接食品接触（オートミール、茶、チョコ、スナック）認証済み。直接食品接触（キャンディ、フルーツ）は専用食品グレードライニング対応。食品種別をお知らせいただければ最適素材をご提案します。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
       }
     },
@@ -2229,13 +2229,13 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Foil Red Packets | Free Shipping $99+ | ZprintPro",
         "description": "Custom foil red packets from ZprintPro the US. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Foil Red Packets 100+ | ZprintPro",
-        "keywords": ["foil red packets","custom foil red packets","foil red packets printing hong kong","foil red packets free shipping","foil red packets USD","bulk foil red packets","foil red packets DHL","bespoke foil red packets","foil red packets wholesale","foil red packets pricing","red packet printing","CNY red packets","lai see","wedding invitations","Christmas cards","Chinese New Year cards","custom red packets","embossed red packets","greeting cards","100pcs MOQ","24h turnaround","2h pickup","50pcs MOQ","from HK$0.5","UV wedding card","free proof","free design","same day shipping","wedding card design printing","wedding card design","thank you card printing","foil red packet","foil wedding card","same day print","ribbon hole envelope","custom holiday card","personalized greeting card","Mother's Day card","wedding invitation","save the date","business holiday card","photo greeting card","foil greeting card","luxury invitation card"],
+        "keywords": ["foil red packets","custom foil red packets","foil red packets printing online","foil red packets free shipping","foil red packets USD","bulk foil red packets","foil red packets DHL","bespoke foil red packets","foil red packets wholesale","foil red packets pricing","red packet printing","CNY red packets","lai see","wedding invitations","Christmas cards","Chinese New Year cards","custom red packets","embossed red packets","greeting cards","100pcs MOQ","24h turnaround","2h pickup","50pcs MOQ","from HK$0.5","UV wedding card","free proof","free design","same day shipping","wedding card design printing","wedding card design","thank you card printing","foil red packet","foil wedding card","same day print","ribbon hole envelope","custom holiday card","personalized greeting card","Mother's Day card","wedding invitation","save the date","business holiday card","photo greeting card","foil greeting card","luxury invitation card"],
         "body": "ZprintPro Foil Red Packets for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Gold Foil Print, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "箔押し年賀状 | 箔押し UV エンボス | ZprintPro",
-        "description": "箔押し年賀状の箔押し年賀状は ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "箔押し年賀状の箔押し年賀状は ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "Traditional foil stamping",
         "keywords": ["箔押し年賀状", "箔押し年賀状 印刷", "foil red packets", "紅包印刷", "旧正月", "結婚式招待状", "クリスマスカード", "年賀状", "箔押し紅包", "オリジナル紅包", "キャラクター紅包", "中華風招待状", "挨拶状", "100個〜", "24時間出荷", "2時間受取", "50個〜", "HK$0.5〜", "UV 招待状", "無料校正", "無料デザイン", "当日出荷", "招待状デザイン印刷", "ウェディング招待状デザイン", "サンキューカード印刷", "箔押し招待状", "当日印刷", "リボン穴封筒"],
         "body": " fast delivery."
@@ -2243,7 +2243,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [
       {
-        "q": "伝統的な箔押し加工、縁起が良く上品。複数の縁起の良い柄またはカスタムデザイン。 ZprintProは香港で箔押しポチ袋サービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "伝統的な箔押し加工、縁起が良く上品。複数の縁起の良い柄またはカスタムデザイン。 ZprintProは箔押しポチ袋サービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業燙金利是封服務 | 智印雲"
       },
       {
@@ -2279,13 +2279,13 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Embossed Red Packets | Free Shipping $99+ | ZprintPro",
         "description": "Custom embossed red packets from ZprintPro the US. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Embossed Red Packets 100+ | ZprintPro",
-        "keywords": ["embossed red packets","custom embossed red packets","embossed red packets printing hong kong","embossed red packets free shipping","embossed red packets USD","bulk embossed red packets","embossed red packets DHL","bespoke embossed red packets","embossed red packets wholesale","embossed red packets pricing","red packet printing","CNY red packets","lai see","wedding invitations","Christmas cards","Chinese New Year cards","foil red packets","custom red packets","greeting cards","100pcs MOQ","24h turnaround","2h pickup","50pcs MOQ","from HK$0.5","UV wedding card","free proof","free design","same day shipping","wedding card design printing","wedding card design","thank you card printing","foil red packet","foil wedding card","same day print","ribbon hole envelope","custom holiday card","personalized greeting card","Mother's Day card","wedding invitation","save the date","business holiday card","photo greeting card","foil greeting card","luxury invitation card"],
+        "keywords": ["embossed red packets","custom embossed red packets","embossed red packets printing online","embossed red packets free shipping","embossed red packets USD","bulk embossed red packets","embossed red packets DHL","bespoke embossed red packets","embossed red packets wholesale","embossed red packets pricing","red packet printing","CNY red packets","lai see","wedding invitations","Christmas cards","Chinese New Year cards","foil red packets","custom red packets","greeting cards","100pcs MOQ","24h turnaround","2h pickup","50pcs MOQ","from HK$0.5","UV wedding card","free proof","free design","same day shipping","wedding card design printing","wedding card design","thank you card printing","foil red packet","foil wedding card","same day print","ribbon hole envelope","custom holiday card","personalized greeting card","Mother's Day card","wedding invitation","save the date","business holiday card","photo greeting card","foil greeting card","luxury invitation card"],
         "body": "ZprintPro Embossed Red Packets for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Gold Foil Print, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "エンボス年賀状 | 箔押し UV エンボス | ZprintPro",
-        "description": "エンボス年賀状のエンボス年賀状は ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "エンボス年賀状のエンボス年賀状は ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": " dimensional texture",
         "keywords": ["エンボス年賀状", "エンボス年賀状 印刷", "embossed red packets", "紅包印刷", "旧正月", "結婚式招待状", "クリスマスカード", "年賀状", "箔押し紅包", "オリジナル紅包", "キャラクター紅包", "中華風招待状", "挨拶状", "100個〜", "24時間出荷", "2時間受取", "50個〜", "HK$0.5〜", "UV 招待状", "無料校正", "無料デザイン", "当日出荷", "招待状デザイン印刷", "ウェディング招待状デザイン", "サンキューカード印刷", "箔押し招待状", "当日印刷", "リボン穴封筒"],
         "body": " fast delivery."
@@ -2293,7 +2293,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [
       {
-        "q": "エンボス加工、立体的な触感、豪華な質感。 ZprintProは香港でエンボスポチ袋サービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "エンボス加工、立体的な触感、豪華な質感。 ZprintProはエンボスポチ袋サービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業浮雕利是封服務 | 智印雲"
       },
       {
@@ -2330,16 +2330,16 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Custom Red Packets | Free Shipping $99+ | ZprintPro",
         "description": "Custom custom red packets from ZprintPro the US. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Custom Red Packets 100+ | ZprintPro",
-        "keywords": ["custom red packets","custom custom red packets","custom red packets printing hong kong","custom red packets free shipping","custom red packets USD","bulk custom red packets","custom red packets DHL","bespoke custom red packets","custom red packets wholesale","custom red packets pricing","red packet printing","CNY red packets","lai see","wedding invitations","Christmas cards","Chinese New Year cards","foil red packets","embossed red packets","greeting cards","100pcs MOQ","24h turnaround","2h pickup","50pcs MOQ","from HK$0.5","UV wedding card","free proof","free design","same day shipping","wedding card design printing","wedding card design","thank you card printing","foil red packet","foil wedding card","same day print","ribbon hole envelope","custom holiday card","personalized greeting card","Mother's Day card","wedding invitation","save the date","business holiday card","photo greeting card","foil greeting card","luxury invitation card"],
+        "keywords": ["custom red packets","custom custom red packets","custom red packets printing online","custom red packets free shipping","custom red packets USD","bulk custom red packets","custom red packets DHL","bespoke custom red packets","custom red packets wholesale","custom red packets pricing","red packet printing","CNY red packets","lai see","wedding invitations","Christmas cards","Chinese New Year cards","foil red packets","embossed red packets","greeting cards","100pcs MOQ","24h turnaround","2h pickup","50pcs MOQ","from HK$0.5","UV wedding card","free proof","free design","same day shipping","wedding card design printing","wedding card design","thank you card printing","foil red packet","foil wedding card","same day print","ribbon hole envelope","custom holiday card","personalized greeting card","Mother's Day card","wedding invitation","save the date","business holiday card","photo greeting card","foil greeting card","luxury invitation card"],
         "body": "ZprintPro Custom Red Packets for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Gold Foil Print, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "custom red packets | 箔押し UV エンボス | ZprintPro",
-        "description": "custom red packetsのcustom red packetsは ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
-        "h1": "Exclusive design with company logo and greetings. Strengthens brand impression. ZprintPro offers professional Custom Red Packets services in Hong Kong. High quality",
+        "description": "custom red packetsのcustom red packetsは ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
+        "h1": "Exclusive design with company logo and greetings. Strengthens brand impression. ZprintPro offers professional Custom Red Packets services worldwide. High quality",
         "keywords": ["custom red packets", "custom red packets 印刷", "紅包印刷", "旧正月", "結婚式招待状", "クリスマスカード", "年賀状", "箔押し紅包", "オリジナル紅包", "キャラクター紅包", "中華風招待状", "挨拶状", "100個〜", "24時間出荷", "2時間受取", "50個〜", "HK$0.5〜", "UV 招待状", "無料校正", "無料デザイン", "当日出荷", "招待状デザイン印刷", "ウェディング招待状デザイン", "サンキューカード印刷", "箔押し招待状", "当日印刷", "リボン穴封筒"],
-        "body": "独占的なデザイン、会社ロゴと祝福の言葉。ブランドイメージを強化。 ZprintProは香港でオリジナルポチ袋サービスを提供。高品質、透明な価格、迅速な納品。"
+        "body": "独占的なデザイン、会社ロゴと祝福の言葉。ブランドイメージを強化。 ZprintProはオリジナルポチ袋サービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
     "faqs": [
@@ -2380,16 +2380,16 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Cartoon Red Packets | Free Shipping $99+ | ZprintPro",
         "description": "Custom cartoon red packets from ZprintPro the US. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Cartoon Red Packets 100+ | ZprintPro",
-        "keywords": ["cartoon red packets", "custom cartoon red packets", "cartoon red packets printing hong kong", "cartoon red packets free shipping", "cartoon red packets USD", "bulk cartoon red packets", "cartoon red packets DHL", "bespoke cartoon red packets", "cartoon red packets wholesale", "cartoon red packets pricing", "red packet printing", "CNY red packets", "lai see", "wedding invitations", "Christmas cards", "Chinese New Year cards", "foil red packets", "custom red packets", "embossed red packets", "greeting cards", "100pcs MOQ", "24h turnaround", "2h pickup", "50pcs MOQ", "from HK$0.5", "UV wedding card", "free proof", "free design", "same day shipping", "wedding card design printing", "wedding card design", "thank you card printing", "foil red packet", "foil wedding card", "same day print", "ribbon hole envelope"],
+        "keywords": ["cartoon red packets", "custom cartoon red packets", "cartoon red packets printing online", "cartoon red packets free shipping", "cartoon red packets USD", "bulk cartoon red packets", "cartoon red packets DHL", "bespoke cartoon red packets", "cartoon red packets wholesale", "cartoon red packets pricing", "red packet printing", "CNY red packets", "lai see", "wedding invitations", "Christmas cards", "Chinese New Year cards", "foil red packets", "custom red packets", "embossed red packets", "greeting cards", "100pcs MOQ", "24h turnaround", "2h pickup", "50pcs MOQ", "from HK$0.5", "UV wedding card", "free proof", "free design", "same day shipping", "wedding card design printing", "wedding card design", "thank you card printing", "foil red packet", "foil wedding card", "same day print", "ribbon hole envelope"],
         "body": "ZprintPro Cartoon Red Packets for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Gold Foil Print, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "イラスト年賀状 | 箔押し UV エンボス | ZprintPro",
-        "description": "イラスト年賀状のイラスト年賀状は ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
-        "h1": " loved by young people. ZprintPro offers professional Cartoon Red Packets services in Hong Kong. High quality",
+        "description": "イラスト年賀状のイラスト年賀状は ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
+        "h1": " loved by young people. ZprintPro offers professional Cartoon Red Packets services worldwide. High quality",
         "keywords": ["イラスト年賀状", "イラスト年賀状 印刷", "cartoon red packets", "紅包印刷", "旧正月", "結婚式招待状", "クリスマスカード", "年賀状", "箔押し紅包", "オリジナル紅包", "キャラクター紅包", "中華風招待状", "挨拶状", "100個〜", "24時間出荷", "2時間受取", "50個〜", "HK$0.5〜", "UV 招待状", "無料校正", "無料デザイン", "当日出荷", "招待状デザイン印刷", "ウェディング招待状デザイン", "サンキューカード印刷", "箔押し招待状", "当日印刷", "リボン穴封筒"],
-        "body": "かわいいキャラクターデザイン、若者に人気。 ZprintProは香港でキャラクターポチ袋サービスを提供。高品質、透明な価格、迅速な納品。"
+        "body": "かわいいキャラクターデザイン、若者に人気。 ZprintProはキャラクターポチ袋サービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
     "faqs": [
@@ -2430,16 +2430,16 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Eco Red Packets | Gold Foil Print | Free US Ship | ZprintPro",
         "description": "Custom eco red packets from ZprintPro the US. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Eco Red Packets 100+ | Gold Foil Print | ZprintPro",
-        "keywords": ["eco red packets", "custom eco red packets", "eco red packets printing hong kong", "eco red packets free shipping", "eco red packets USD", "bulk eco red packets", "eco red packets DHL", "bespoke eco red packets", "eco red packets wholesale", "eco red packets pricing", "red packet printing", "CNY red packets", "lai see", "wedding invitations", "Christmas cards", "Chinese New Year cards", "foil red packets", "custom red packets", "embossed red packets", "greeting cards", "100pcs MOQ", "24h turnaround", "2h pickup", "50pcs MOQ", "from HK$0.5", "UV wedding card", "free proof", "free design", "same day shipping", "wedding card design printing", "wedding card design", "thank you card printing", "foil red packet", "foil wedding card", "same day print", "ribbon hole envelope"],
+        "keywords": ["eco red packets", "custom eco red packets", "eco red packets printing online", "eco red packets free shipping", "eco red packets USD", "bulk eco red packets", "eco red packets DHL", "bespoke eco red packets", "eco red packets wholesale", "eco red packets pricing", "red packet printing", "CNY red packets", "lai see", "wedding invitations", "Christmas cards", "Chinese New Year cards", "foil red packets", "custom red packets", "embossed red packets", "greeting cards", "100pcs MOQ", "24h turnaround", "2h pickup", "50pcs MOQ", "from HK$0.5", "UV wedding card", "free proof", "free design", "same day shipping", "wedding card design printing", "wedding card design", "thank you card printing", "foil red packet", "foil wedding card", "same day print", "ribbon hole envelope"],
         "body": "ZprintPro Eco Red Packets for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Gold Foil Print, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "エコ年賀状 | 箔押し UV エンボス | ZprintPro",
-        "description": "エコ年賀状のエコ年賀状は ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
-        "h1": " sustainable development concept. ZprintPro offers professional Eco Red Packets services in Hong Kong. High quality",
+        "description": "エコ年賀状のエコ年賀状は ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
+        "h1": " sustainable development concept. ZprintPro offers professional Eco Red Packets services worldwide. High quality",
         "keywords": ["エコ年賀状", "エコ年賀状 印刷", "eco red packets", "紅包印刷", "旧正月", "結婚式招待状", "クリスマスカード", "年賀状", "箔押し紅包", "オリジナル紅包", "キャラクター紅包", "中華風招待状", "挨拶状", "100個〜", "24時間出荷", "2時間受取", "50個〜", "HK$0.5〜", "UV 招待状", "無料校正", "無料デザイン", "当日出荷", "招待状デザイン印刷", "ウェディング招待状デザイン", "サンキューカード印刷", "箔押し招待状", "当日印刷", "リボン穴封筒"],
-        "body": "環境に優しい紙とインク、持続可能な開発の理念。 ZprintProは香港でエコポチ袋サービスを提供。高品質、透明な価格、迅速な納品。"
+        "body": "環境に優しい紙とインク、持続可能な開発の理念。 ZprintProはエコポチ袋サービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
     "faqs": [
@@ -2480,16 +2480,16 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Large Red Packets | Gold Foil Print | Free US Ship | ZprintPro",
         "description": "Custom large red packets from ZprintPro the US. Gold Foil Print, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Large Red Packets 100+ | ZprintPro",
-        "keywords": ["large red packets", "custom large red packets", "large red packets printing hong kong", "large red packets free shipping", "large red packets USD", "bulk large red packets", "large red packets DHL", "bespoke large red packets", "large red packets wholesale", "large red packets pricing", "red packet printing", "CNY red packets", "lai see", "wedding invitations", "Christmas cards", "Chinese New Year cards", "foil red packets", "custom red packets", "embossed red packets", "greeting cards", "100pcs MOQ", "24h turnaround", "2h pickup", "50pcs MOQ", "from HK$0.5", "UV wedding card", "free proof", "free design", "same day shipping", "wedding card design printing", "wedding card design", "thank you card printing", "foil red packet", "foil wedding card", "same day print", "ribbon hole envelope"],
+        "keywords": ["large red packets", "custom large red packets", "large red packets printing online", "large red packets free shipping", "large red packets USD", "bulk large red packets", "large red packets DHL", "bespoke large red packets", "large red packets wholesale", "large red packets pricing", "red packet printing", "CNY red packets", "lai see", "wedding invitations", "Christmas cards", "Chinese New Year cards", "foil red packets", "custom red packets", "embossed red packets", "greeting cards", "100pcs MOQ", "24h turnaround", "2h pickup", "50pcs MOQ", "from HK$0.5", "UV wedding card", "free proof", "free design", "same day shipping", "wedding card design printing", "wedding card design", "thank you card printing", "foil red packet", "foil wedding card", "same day print", "ribbon hole envelope"],
         "body": "ZprintPro Large Red Packets for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Gold Foil Print, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "大型年賀状 | 箔押し UV エンボス | ZprintPro",
-        "description": "大型年賀状の大型年賀状は ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
-        "h1": " can hold more cash or gift cards. ZprintPro offers professional Large Red Packets services in Hong Kong. High quality",
+        "description": "大型年賀状の大型年賀状は ZprintPro にお任せ。157g 赤金紙/コート 高品質用紙、標準/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
+        "h1": " can hold more cash or gift cards. ZprintPro offers professional Large Red Packets services worldwide. High quality",
         "keywords": ["大型年賀状", "大型年賀状 印刷", "large red packets", "紅包印刷", "旧正月", "結婚式招待状", "クリスマスカード", "年賀状", "箔押し紅包", "オリジナル紅包", "キャラクター紅包", "中華風招待状", "挨拶状", "100個〜", "24時間出荷", "2時間受取", "50個〜", "HK$0.5〜", "UV 招待状", "無料校正", "無料デザイン", "当日出荷", "招待状デザイン印刷", "ウェディング招待状デザイン", "サンキューカード印刷", "箔押し招待状", "当日印刷", "リボン穴封筒"],
-        "body": "大きなサイズ、より多くの現金やギフトカードを入れられます。 ZprintProは香港で大判ポチ袋サービスを提供。高品質、透明な価格、迅速な納品。"
+        "body": "大きなサイズ、より多くの現金やギフトカードを入れられます。 ZprintProは大判ポチ袋サービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
     "faqs": [
@@ -2531,13 +2531,13 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Wall Calendars | Wire-Bound Spiral | Free US Ship | ZprintPro",
         "description": "Custom wall calendars from ZprintPro the US. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Wall Calendars 100+ | ZprintPro",
-        "keywords": ["wall calendars", "custom wall calendars", "wall calendars printing hong kong", "wall calendars free shipping", "wall calendars USD", "bulk wall calendars", "wall calendars DHL", "bespoke wall calendars", "wall calendars wholesale", "wall calendars pricing", "calendar printing", "desk calendars", "2027 calendars", "custom calendars", "corporate calendars", "mini calendars", "photo calendars", "eco calendars", "flip calendars", "2026 desktop calendar", "A5 daily calendar", "corporate wall calendar custom", "desktop calendar printing", "eco wall calendar", "festive calendar"],
+        "keywords": ["wall calendars", "custom wall calendars", "wall calendars printing online", "wall calendars free shipping", "wall calendars USD", "bulk wall calendars", "wall calendars DHL", "bespoke wall calendars", "wall calendars wholesale", "wall calendars pricing", "calendar printing", "desk calendars", "2027 calendars", "custom calendars", "corporate calendars", "mini calendars", "photo calendars", "eco calendars", "flip calendars", "2026 desktop calendar", "A5 daily calendar", "corporate wall calendar custom", "desktop calendar printing", "eco wall calendar", "festive calendar"],
         "body": "ZprintPro Wall Calendars for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Wire-Bound Spiral, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "壁掛けカレンダー | ノベルティ 各種サイズ | ZprintPro",
-        "description": "壁掛けカレンダーの壁掛けカレンダーは ZprintPro にお任せ。250g コート/マット 高品質用紙、A5/A4/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "壁掛けカレンダーの壁掛けカレンダーは ZprintPro にお任せ。250g コート/マット 高品質用紙、A5/A4/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "Standard A3 or A2 wall calendars",
         "keywords": ["壁掛けカレンダー", "壁掛けカレンダー 印刷", "wall calendars", "カレンダー印刷", "卓上カレンダー", "2027年カレンダー", "企業カレンダー", "オリジナルカレンダー", "ミニカレンダー", "写真カレンダー", "エコカレンダー", "日めくりカレンダー", "2026 卓上カレンダー", "A5 日めくり", "会社壁掛けカレンダー", "卓上カレンダー印刷", "エコ壁掛けカレンダー", "祝日カレンダー"],
         "body": " fast delivery."
@@ -2545,7 +2545,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [
       {
-        "q": "標準A3またはA2壁掛けカレンダー、13ページデザイン。家庭やオフィスに最適。 ZprintProは香港で壁掛けカレンダーサービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "標準A3またはA2壁掛けカレンダー、13ページデザイン。家庭やオフィスに最適。 ZprintProは壁掛けカレンダーサービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業掛牆年曆服務 | 智印雲"
       },
       {
@@ -2582,13 +2582,13 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Desk Calendars | Wire-Bound Spiral | Free US Ship | ZprintPro",
         "description": "Custom desk calendars from ZprintPro the US. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Desk Calendars 100+ | ZprintPro",
-        "keywords": ["desk calendars", "custom desk calendars", "desk calendars printing hong kong", "desk calendars free shipping", "desk calendars USD", "bulk desk calendars", "desk calendars DHL", "bespoke desk calendars", "desk calendars wholesale", "desk calendars pricing", "calendar printing", "wall calendars", "2027 calendars", "custom calendars", "corporate calendars", "mini calendars", "photo calendars", "eco calendars", "flip calendars", "2026 desktop calendar", "A5 daily calendar", "corporate wall calendar custom", "desktop calendar printing", "eco wall calendar", "festive calendar"],
+        "keywords": ["desk calendars", "custom desk calendars", "desk calendars printing online", "desk calendars free shipping", "desk calendars USD", "bulk desk calendars", "desk calendars DHL", "bespoke desk calendars", "desk calendars wholesale", "desk calendars pricing", "calendar printing", "wall calendars", "2027 calendars", "custom calendars", "corporate calendars", "mini calendars", "photo calendars", "eco calendars", "flip calendars", "2026 desktop calendar", "A5 daily calendar", "corporate wall calendar custom", "desktop calendar printing", "eco wall calendar", "festive calendar"],
         "body": "ZprintPro Desk Calendars for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Wire-Bound Spiral, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "デスクカレンダー | ノベルティ 各種サイズ | ZprintPro",
-        "description": "デスクカレンダーのデスクカレンダーは ZprintPro にお任せ。250g コート/マット 高品質用紙、A5/A4/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "デスクカレンダーのデスクカレンダーは ZprintPro にお任せ。250g コート/マット 高品質用紙、A5/A4/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "Triangular desk design",
         "keywords": ["デスクカレンダー", "デスクカレンダー 印刷", "desk calendars", "カレンダー印刷", "卓上カレンダー", "壁掛けカレンダー", "2027年カレンダー", "企業カレンダー", "オリジナルカレンダー", "ミニカレンダー", "写真カレンダー", "エコカレンダー", "日めくりカレンダー", "2026 卓上カレンダー", "A5 日めくり", "会社壁掛けカレンダー", "卓上カレンダー印刷", "エコ壁掛けカレンダー", "祝日カレンダー"],
         "body": " fast delivery."
@@ -2596,7 +2596,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [
       {
-        "q": "三角形の卓上デザイン、安定して美しい。オフィスデスクに最適。 ZprintProは香港で卓上カレンダーサービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "三角形の卓上デザイン、安定して美しい。オフィスデスクに最適。 ZprintProは卓上カレンダーサービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業座檯年曆服務 | 智印雲"
       },
       {
@@ -2632,16 +2632,16 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Custom Calendars | Free Shipping $99+ | ZprintPro",
         "description": "Custom custom calendars from ZprintPro the US. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Custom Calendars 100+ | ZprintPro",
-        "keywords": ["custom calendars", "custom custom calendars", "custom calendars printing hong kong", "custom calendars free shipping", "custom calendars USD", "bulk custom calendars", "custom calendars DHL", "bespoke custom calendars", "custom calendars wholesale", "custom calendars pricing", "calendar printing", "wall calendars", "desk calendars", "2027 calendars", "corporate calendars", "mini calendars", "photo calendars", "eco calendars", "flip calendars", "2026 desktop calendar", "A5 daily calendar", "corporate wall calendar custom", "desktop calendar printing", "eco wall calendar", "festive calendar"],
+        "keywords": ["custom calendars", "custom custom calendars", "custom calendars printing online", "custom calendars free shipping", "custom calendars USD", "bulk custom calendars", "custom calendars DHL", "bespoke custom calendars", "custom calendars wholesale", "custom calendars pricing", "calendar printing", "wall calendars", "desk calendars", "2027 calendars", "corporate calendars", "mini calendars", "photo calendars", "eco calendars", "flip calendars", "2026 desktop calendar", "A5 daily calendar", "corporate wall calendar custom", "desktop calendar printing", "eco wall calendar", "festive calendar"],
         "body": "ZprintPro Custom Calendars for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Wire-Bound Spiral, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "カスタムカレンダー | ノベルティ 各種サイズ | ZprintPro",
-        "description": "カスタムカレンダーのカスタムカレンダーは ZprintPro にお任せ。250g コート/マット 高品質用紙、A5/A4/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
-        "h1": " each page can feature company products or services. ZprintPro offers professional Custom Calendars services in Hong Kong. High quality",
+        "description": "カスタムカレンダーのカスタムカレンダーは ZprintPro にお任せ。250g コート/マット 高品質用紙、A5/A4/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
+        "h1": " each page can feature company products or services. ZprintPro offers professional Custom Calendars services worldwide. High quality",
         "keywords": ["カスタムカレンダー", "カスタムカレンダー 印刷", "custom calendars", "カレンダー印刷", "卓上カレンダー", "壁掛けカレンダー", "2027年カレンダー", "企業カレンダー", "オリジナルカレンダー", "ミニカレンダー", "写真カレンダー", "エコカレンダー", "日めくりカレンダー", "2026 卓上カレンダー", "A5 日めくり", "会社壁掛けカレンダー", "卓上カレンダー印刷", "エコ壁掛けカレンダー", "祝日カレンダー"],
-        "body": "独占的なデザイン、各ページに会社の製品やサービスを掲載可能。 ZprintProは香港でオリジナルカレンダーサービスを提供。高品質、透明な価格、迅速な納品。"
+        "body": "独占的なデザイン、各ページに会社の製品やサービスを掲載可能。 ZprintProはオリジナルカレンダーサービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
     "faqs": [
@@ -2682,16 +2682,16 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Mini Calendars | Wire-Bound Spiral | Free US Ship | ZprintPro",
         "description": "Custom mini calendars from ZprintPro the US. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Mini Calendars 100+ | ZprintPro",
-        "keywords": ["mini calendars", "custom mini calendars", "mini calendars printing hong kong", "mini calendars free shipping", "mini calendars USD", "bulk mini calendars", "mini calendars DHL", "bespoke mini calendars", "mini calendars wholesale", "mini calendars pricing", "calendar printing", "wall calendars", "desk calendars", "2027 calendars", "custom calendars", "corporate calendars", "photo calendars", "eco calendars", "flip calendars", "2026 desktop calendar", "A5 daily calendar", "corporate wall calendar custom", "desktop calendar printing", "eco wall calendar", "festive calendar"],
+        "keywords": ["mini calendars", "custom mini calendars", "mini calendars printing online", "mini calendars free shipping", "mini calendars USD", "bulk mini calendars", "mini calendars DHL", "bespoke mini calendars", "mini calendars wholesale", "mini calendars pricing", "calendar printing", "wall calendars", "desk calendars", "2027 calendars", "custom calendars", "corporate calendars", "photo calendars", "eco calendars", "flip calendars", "2026 desktop calendar", "A5 daily calendar", "corporate wall calendar custom", "desktop calendar printing", "eco wall calendar", "festive calendar"],
         "body": "ZprintPro Mini Calendars for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Wire-Bound Spiral, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "ミニカレンダー | ノベルティ 各種サイズ | ZprintPro",
-        "description": "ミニカレンダーのミニカレンダーは ZprintPro にお任せ。250g コート/マット 高品質用紙、A5/A4/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
-        "h1": " fits in wallet or pocket. ZprintPro offers professional Mini Calendars services in Hong Kong. High quality",
+        "description": "ミニカレンダーのミニカレンダーは ZprintPro にお任せ。250g コート/マット 高品質用紙、A5/A4/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
+        "h1": " fits in wallet or pocket. ZprintPro offers professional Mini Calendars services worldwide. High quality",
         "keywords": ["ミニカレンダー", "ミニカレンダー 印刷", "mini calendars", "カレンダー印刷", "卓上カレンダー", "壁掛けカレンダー", "2027年カレンダー", "企業カレンダー", "オリジナルカレンダー", "写真カレンダー", "エコカレンダー", "日めくりカレンダー", "2026 卓上カレンダー", "A5 日めくり", "会社壁掛けカレンダー", "卓上カレンダー印刷", "エコ壁掛けカレンダー", "祝日カレンダー"],
-        "body": "コンパクトで持ち運び可能、財布やポケットに入ります。 ZprintProは香港でミニカレンダーサービスを提供。高品質、透明な価格、迅速な納品。"
+        "body": "コンパクトで持ち運び可能、財布やポケットに入ります。 ZprintProはミニカレンダーサービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
     "faqs": [
@@ -2732,16 +2732,16 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Photo Frame Calendars | Free Shipping $99+ | ZprintPro",
         "description": "Custom photo frame calendars from ZprintPro the US. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Photo Frame Calendars 100+ | ZprintPro",
-        "keywords": ["photo frame calendars", "custom photo frame calendars", "photo frame calendars printing hong kong", "photo frame calendars free shipping", "photo frame calendars USD", "bulk photo frame calendars", "photo frame calendars DHL", "bespoke photo frame calendars", "photo frame calendars wholesale", "photo frame calendars pricing", "calendar printing", "wall calendars", "desk calendars", "2027 calendars", "custom calendars", "corporate calendars", "mini calendars", "photo calendars", "eco calendars", "flip calendars", "2026 desktop calendar", "A5 daily calendar", "corporate wall calendar custom", "desktop calendar printing", "eco wall calendar", "festive calendar"],
+        "keywords": ["photo frame calendars", "custom photo frame calendars", "photo frame calendars printing online", "photo frame calendars free shipping", "photo frame calendars USD", "bulk photo frame calendars", "photo frame calendars DHL", "bespoke photo frame calendars", "photo frame calendars wholesale", "photo frame calendars pricing", "calendar printing", "wall calendars", "desk calendars", "2027 calendars", "custom calendars", "corporate calendars", "mini calendars", "photo calendars", "eco calendars", "flip calendars", "2026 desktop calendar", "A5 daily calendar", "corporate wall calendar custom", "desktop calendar printing", "eco wall calendar", "festive calendar"],
         "body": "ZprintPro Photo Frame Calendars for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Wire-Bound Spiral, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "フォトフレームカレンダー | ノベルティ 各種サイズ | ZprintPro",
-        "description": "フォトフレームカレンダーのフォトフレームカレンダーは ZprintPro にお任せ。250g コート/マット 高品質用紙、A5/A4/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
-        "h1": " photos can be replaced. ZprintPro offers professional Photo Frame Calendars services in Hong Kong. High quality",
+        "description": "フォトフレームカレンダーのフォトフレームカレンダーは ZprintPro にお任せ。250g コート/マット 高品質用紙、A5/A4/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
+        "h1": " photos can be replaced. ZprintPro offers professional Photo Frame Calendars services worldwide. High quality",
         "keywords": ["フォトフレームカレンダー", "フォトフレームカレンダー 印刷", "photo frame calendars", "カレンダー印刷", "卓上カレンダー", "壁掛けカレンダー", "2027年カレンダー", "企業カレンダー", "オリジナルカレンダー", "ミニカレンダー", "写真カレンダー", "エコカレンダー", "日めくりカレンダー", "2026 卓上カレンダー", "A5 日めくり", "会社壁掛けカレンダー", "卓上カレンダー印刷", "エコ壁掛けカレンダー", "祝日カレンダー"],
-        "body": "フォトフレーム機能付き、写真を交換可能。 ZprintProは香港でフォトフレームカレンダーサービスを提供。高品質、透明な価格、迅速な納品。"
+        "body": "フォトフレーム機能付き、写真を交換可能。 ZprintProはフォトフレームカレンダーサービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
     "faqs": [
@@ -2782,16 +2782,16 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Magnetic Calendars | Free Shipping $99+ | ZprintPro",
         "description": "Custom magnetic calendars from ZprintPro the US. Wire-Bound Spiral, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Magnetic Calendars 100+ | ZprintPro",
-        "keywords": ["magnetic calendars", "custom magnetic calendars", "magnetic calendars printing hong kong", "magnetic calendars free shipping", "magnetic calendars USD", "bulk magnetic calendars", "magnetic calendars DHL", "bespoke magnetic calendars", "magnetic calendars wholesale", "magnetic calendars pricing", "calendar printing", "wall calendars", "desk calendars", "2027 calendars", "custom calendars", "corporate calendars", "mini calendars", "photo calendars", "eco calendars", "flip calendars", "2026 desktop calendar", "A5 daily calendar", "corporate wall calendar custom", "desktop calendar printing", "eco wall calendar", "festive calendar"],
+        "keywords": ["magnetic calendars", "custom magnetic calendars", "magnetic calendars printing online", "magnetic calendars free shipping", "magnetic calendars USD", "bulk magnetic calendars", "magnetic calendars DHL", "bespoke magnetic calendars", "magnetic calendars wholesale", "magnetic calendars pricing", "calendar printing", "wall calendars", "desk calendars", "2027 calendars", "custom calendars", "corporate calendars", "mini calendars", "photo calendars", "eco calendars", "flip calendars", "2026 desktop calendar", "A5 daily calendar", "corporate wall calendar custom", "desktop calendar printing", "eco wall calendar", "festive calendar"],
         "body": "ZprintPro Magnetic Calendars for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Wire-Bound Spiral, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "マグネットカレンダー | ノベルティ 各種サイズ | ZprintPro",
-        "description": "マグネットカレンダーのマグネットカレンダーは ZprintPro にお任せ。250g コート/マット 高品質用紙、A5/A4/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
-        "h1": " can stick to refrigerator and other metal surfaces. ZprintPro offers professional Magnetic Calendars services in Hong Kong. High quality",
+        "description": "マグネットカレンダーのマグネットカレンダーは ZprintPro にお任せ。250g コート/マット 高品質用紙、A5/A4/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
+        "h1": " can stick to refrigerator and other metal surfaces. ZprintPro offers professional Magnetic Calendars services worldwide. High quality",
         "keywords": ["マグネットカレンダー", "マグネットカレンダー 印刷", "magnetic calendars", "カレンダー印刷", "卓上カレンダー", "壁掛けカレンダー", "2027年カレンダー", "企業カレンダー", "オリジナルカレンダー", "ミニカレンダー", "写真カレンダー", "エコカレンダー", "日めくりカレンダー", "2026 卓上カレンダー", "A5 日めくり", "会社壁掛けカレンダー", "卓上カレンダー印刷", "エコ壁掛けカレンダー", "祝日カレンダー"],
-        "body": "マグネット背面、冷蔵庫などの金属面に貼付可能。 ZprintProは香港でマグネットカレンダーサービスを提供。高品質、透明な価格、迅速な納品。"
+        "body": "マグネット背面、冷蔵庫などの金属面に貼付可能。 ZprintProはマグネットカレンダーサービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
     "faqs": [
@@ -2833,13 +2833,13 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "PVC Menus | Laminated Durable | Free US Ship | ZprintPro",
         "description": "Custom pvc menus from ZprintPro the US. Laminated Durable, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "PVC Menus 100+ | Laminated Durable | ZprintPro",
-        "keywords": ["pvc menus", "custom pvc menus", "pvc menus printing hong kong", "pvc menus free shipping", "pvc menus USD", "bulk pvc menus", "pvc menus DHL", "bespoke pvc menus", "pvc menus wholesale", "pvc menus pricing", "menu printing", "restaurant menus", "waterproof menus", "PVC menus", "custom menus", "takeout menus", "drink menus", "laminated menus", "disposable menus", "catering menus"],
+        "keywords": ["pvc menus", "custom pvc menus", "pvc menus printing online", "pvc menus free shipping", "pvc menus USD", "bulk pvc menus", "pvc menus DHL", "bespoke pvc menus", "pvc menus wholesale", "pvc menus pricing", "menu printing", "restaurant menus", "waterproof menus", "PVC menus", "custom menus", "takeout menus", "drink menus", "laminated menus", "disposable menus", "catering menus"],
         "body": "ZprintPro PVC Menus for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Laminated Durable, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "PVC menu | 防水 ラミネート | ZprintPro",
-        "description": "PVC menuのPVC menuは ZprintPro にお任せ。250g コート/防水ラミネート 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "PVC menuのPVC menuは ZprintPro にお任せ。250g コート/防水ラミネート 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "Waterproof and oil-resistant PVC material",
         "keywords": ["PVC menu", "PVC menu 印刷", "pvc menus", "メニュー印刷", "防水メニュー", "レストランメニュー", "PVCメニュー", "テイクアウトメニュー", "ドリンクメニュー", "使い捨てメニュー", "カフェメニュー", "高級メニュー", "宴会メニュー"],
         "body": " fast delivery."
@@ -2847,7 +2847,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [
       {
-        "q": "防水・耐油性PVC素材、お手入れ簡単で耐久性あり。 ZprintProは香港でPVCメニューサービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "防水・耐油性PVC素材、お手入れ簡単で耐久性あり。 ZprintProはPVCメニューサービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業PVC餐牌服務 | 智印雲"
       },
       {
@@ -2884,13 +2884,13 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Laminated Menus | Laminated Durable | Free US Ship | ZprintPro",
         "description": "Custom laminated menus from ZprintPro the US. Laminated Durable, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Laminated Menus 100+ | ZprintPro",
-        "keywords": ["laminated menus", "custom laminated menus", "laminated menus printing hong kong", "laminated menus free shipping", "laminated menus USD", "bulk laminated menus", "laminated menus DHL", "bespoke laminated menus", "laminated menus wholesale", "laminated menus pricing", "menu printing", "restaurant menus", "waterproof menus", "PVC menus", "custom menus", "takeout menus", "drink menus", "disposable menus", "catering menus"],
+        "keywords": ["laminated menus", "custom laminated menus", "laminated menus printing online", "laminated menus free shipping", "laminated menus USD", "bulk laminated menus", "laminated menus DHL", "bespoke laminated menus", "laminated menus wholesale", "laminated menus pricing", "menu printing", "restaurant menus", "waterproof menus", "PVC menus", "custom menus", "takeout menus", "drink menus", "disposable menus", "catering menus"],
         "body": "ZprintPro Laminated Menus for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Laminated Durable, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "ラミネート menu | 防水 ラミネート | ZprintPro",
-        "description": "ラミネート menuのラミネート menuは ZprintPro にお任せ。250g コート/防水ラミネート 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "ラミネート menuのラミネート menuは ZprintPro にお任せ。250g コート/防水ラミネート 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "Paper with lamination",
         "keywords": ["ラミネート menu", "ラミネート menu 印刷", "laminated menus", "メニュー印刷", "防水メニュー", "レストランメニュー", "PVCメニュー", "テイクアウトメニュー", "ドリンクメニュー", "使い捨てメニュー", "カフェメニュー", "高級メニュー", "宴会メニュー"],
         "body": " fast delivery."
@@ -2898,7 +2898,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [
       {
-        "q": "ラミネート加工紙、防水で耐久性がありコストも低い。 ZprintProは香港でラミネートメニューサービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "ラミネート加工紙、防水で耐久性がありコストも低い。 ZprintProはラミネートメニューサービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業過膠餐牌服務 | 智印雲"
       },
       {
@@ -2935,13 +2935,13 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Hardcover Menus | Laminated Durable | Free US Ship | ZprintPro",
         "description": "Custom hardcover menus from ZprintPro the US. Laminated Durable, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Hardcover Menus 100+ | ZprintPro",
-        "keywords": ["hardcover menus", "custom hardcover menus", "hardcover menus printing hong kong", "hardcover menus free shipping", "hardcover menus USD", "bulk hardcover menus", "hardcover menus DHL", "bespoke hardcover menus", "hardcover menus wholesale", "hardcover menus pricing", "menu printing", "restaurant menus", "waterproof menus", "PVC menus", "custom menus", "takeout menus", "drink menus", "laminated menus", "disposable menus", "catering menus"],
+        "keywords": ["hardcover menus", "custom hardcover menus", "hardcover menus printing online", "hardcover menus free shipping", "hardcover menus USD", "bulk hardcover menus", "hardcover menus DHL", "bespoke hardcover menus", "hardcover menus wholesale", "hardcover menus pricing", "menu printing", "restaurant menus", "waterproof menus", "PVC menus", "custom menus", "takeout menus", "drink menus", "laminated menus", "disposable menus", "catering menus"],
         "body": "ZprintPro Hardcover Menus for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Laminated Durable, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "ハードカバー menu | 防水 ラミネート | ZprintPro",
-        "description": "ハードカバー menuのハードカバー menuは ZprintPro にお任せ。250g コート/防水ラミネート 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "ハードカバー menuのハードカバー menuは ZprintPro にお任せ。250g コート/防水ラミネート 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "Hardcover binding",
         "keywords": ["ハードカバー menu", "ハードカバー menu 印刷", "hardcover menus", "メニュー印刷", "防水メニュー", "レストランメニュー", "PVCメニュー", "テイクアウトメニュー", "ドリンクメニュー", "使い捨てメニュー", "カフェメニュー", "高級メニュー", "宴会メニュー"],
         "body": " transparent pricing"
@@ -2950,7 +2950,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "faqs": [
       {
         "q": " fast delivery.",
-        "a": "上製本装丁、エレガントで格式高い。高級レストラン、ホテルに最適。 ZprintProは香港で高級メニューサービスを提供。高品質、透明な価格、迅速な納品。"
+        "a": "上製本装丁、エレガントで格式高い。高級レストラン、ホテルに最適。 ZprintProは高級メニューサービスを提供。高品質、透明な価格、迅速な納品。"
       },
       {
         "q": "專業精裝餐牌服務 | 智印雲",
@@ -2985,16 +2985,16 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Drink Menus | Laminated Durable | Free US Ship | ZprintPro",
         "description": "Custom drink menus from ZprintPro the US. Laminated Durable, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Drink Menus 100+ | Laminated Durable | ZprintPro",
-        "keywords": ["drink menus", "custom drink menus", "drink menus printing hong kong", "drink menus free shipping", "drink menus USD", "bulk drink menus", "drink menus DHL", "bespoke drink menus", "drink menus wholesale", "drink menus pricing", "menu printing", "restaurant menus", "waterproof menus", "PVC menus", "custom menus", "takeout menus", "laminated menus", "disposable menus", "catering menus"],
+        "keywords": ["drink menus", "custom drink menus", "drink menus printing online", "drink menus free shipping", "drink menus USD", "bulk drink menus", "drink menus DHL", "bespoke drink menus", "drink menus wholesale", "drink menus pricing", "menu printing", "restaurant menus", "waterproof menus", "PVC menus", "custom menus", "takeout menus", "laminated menus", "disposable menus", "catering menus"],
         "body": "ZprintPro Drink Menus for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Laminated Durable, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "ドリンクメニュー | 防水 ラミネート | ZprintPro",
-        "description": "ドリンクメニューのドリンクメニューは ZprintPro にお任せ。250g コート/防水ラミネート 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
-        "h1": " can be standing or handheld. ZprintPro offers professional Drink Menus services in Hong Kong. High quality",
+        "description": "ドリンクメニューのドリンクメニューは ZprintPro にお任せ。250g コート/防水ラミネート 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
+        "h1": " can be standing or handheld. ZprintPro offers professional Drink Menus services worldwide. High quality",
         "keywords": ["ドリンクメニュー", "ドリンクメニュー 印刷", "drink menus", "メニュー印刷", "防水メニュー", "レストランメニュー", "PVCメニュー", "テイクアウトメニュー", "使い捨てメニュー", "カフェメニュー", "高級メニュー", "宴会メニュー"],
-        "body": "ドリンク専用設計、立てかけまたは手持ち可能。 ZprintProは香港でドリンクメニューサービスを提供。高品質、透明な価格、迅速な納品。"
+        "body": "ドリンク専用設計、立てかけまたは手持ち可能。 ZprintProはドリンクメニューサービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
     "faqs": [
@@ -3035,16 +3035,16 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Disposable Menus | Free Shipping $99+ | ZprintPro",
         "description": "Custom disposable menus from ZprintPro the US. Laminated Durable, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Disposable Menus 100+ | ZprintPro",
-        "keywords": ["disposable menus", "custom disposable menus", "disposable menus printing hong kong", "disposable menus free shipping", "disposable menus USD", "bulk disposable menus", "disposable menus DHL", "bespoke disposable menus", "disposable menus wholesale", "disposable menus pricing", "menu printing", "restaurant menus", "waterproof menus", "PVC menus", "custom menus", "takeout menus", "drink menus", "laminated menus", "catering menus"],
+        "keywords": ["disposable menus", "custom disposable menus", "disposable menus printing online", "disposable menus free shipping", "disposable menus USD", "bulk disposable menus", "disposable menus DHL", "bespoke disposable menus", "disposable menus wholesale", "disposable menus pricing", "menu printing", "restaurant menus", "waterproof menus", "PVC menus", "custom menus", "takeout menus", "drink menus", "laminated menus", "catering menus"],
         "body": "ZprintPro Disposable Menus for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Laminated Durable, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "使い捨てメニュー | 防水 ラミネート | ZprintPro",
-        "description": "使い捨てメニューの使い捨てメニューは ZprintPro にお任せ。250g コート/防水ラミネート 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
-        "h1": " perfect for fast food and takeaway shops. ZprintPro offers professional Disposable Menus services in Hong Kong. High quality",
+        "description": "使い捨てメニューの使い捨てメニューは ZprintPro にお任せ。250g コート/防水ラミネート 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、5-7営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
+        "h1": " perfect for fast food and takeaway shops. ZprintPro offers professional Disposable Menus services worldwide. High quality",
         "keywords": ["使い捨てメニュー", "使い捨てメニュー 印刷", "disposable menus", "メニュー印刷", "防水メニュー", "レストランメニュー", "PVCメニュー", "テイクアウトメニュー", "ドリンクメニュー", "カフェメニュー", "高級メニュー", "宴会メニュー"],
-        "body": "経済的な紙、ファストフードやテイクアウト店に最適。 ZprintProは香港で使い捨てメニューサービスを提供。高品質、透明な価格、迅速な納品。"
+        "body": "経済的な紙、ファストフードやテイクアウト店に最適。 ZprintProは使い捨てメニューサービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
     "faqs": [
@@ -3086,13 +3086,13 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Outdoor Vinyl Banners | Free Shipping $99+ | ZprintPro",
         "description": "Custom outdoor vinyl banners from ZprintPro the US. Wind-Resistant, 4-color CMYK. 1-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Outdoor Vinyl Banners 1+ | ZprintPro",
-        "keywords": ["outdoor vinyl banners", "custom outdoor vinyl banners", "outdoor vinyl banners printing hong kong", "outdoor vinyl banners free shipping", "outdoor vinyl banners USD", "bulk outdoor vinyl banners", "outdoor vinyl banners DHL", "bespoke outdoor vinyl banners", "outdoor vinyl banners wholesale", "outdoor vinyl banners pricing", "banner printing", "roll-up banners", "outdoor banners", "exhibition banners", "vinyl banners", "X-stand banners", "mesh banners", "vehicle wraps", "stage backdrops", "adhesive banners", "A0 large format", "fence banner", "floor sticker banner", "exhibition banner", "exhibition backdrop printing", "opening banner"],
+        "keywords": ["outdoor vinyl banners", "custom outdoor vinyl banners", "outdoor vinyl banners printing online", "outdoor vinyl banners free shipping", "outdoor vinyl banners USD", "bulk outdoor vinyl banners", "outdoor vinyl banners DHL", "bespoke outdoor vinyl banners", "outdoor vinyl banners wholesale", "outdoor vinyl banners pricing", "banner printing", "roll-up banners", "outdoor banners", "exhibition banners", "vinyl banners", "X-stand banners", "mesh banners", "vehicle wraps", "stage backdrops", "adhesive banners", "A0 large format", "fence banner", "floor sticker banner", "exhibition banner", "exhibition backdrop printing", "opening banner"],
         "body": "ZprintPro Outdoor Vinyl Banners for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Wind-Resistant, 4-color CMYK, premium materials. 1-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "屋外ビニールバナー | アルミスタンド 高画質 | ZprintPro",
-        "description": "屋外ビニールバナーの屋外ビニールバナーは ZprintPro にお任せ。PP 合成紙/PVC 高品質用紙、80×200cm 各種対応。4色 CMYK 印刷、デザイン自由。1個〜〜、1-3営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "屋外ビニールバナーの屋外ビニールバナーは ZprintPro にお任せ。PP 合成紙/PVC 高品質用紙、80×200cm 各種対応。4色 CMYK 印刷、デザイン自由。1個〜〜、1-3営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "Large outdoor vinyl banners",
         "keywords": ["屋外ビニールバナー", "屋外ビニールバナー 印刷", "outdoor vinyl banners", "バナー印刷", "ロールアップバナー", "屋外バナー", "展示バナー", "横断幕", "懸垂幕", "メッシュバナー", "車両広告", "ステージ背景", "広告バナー", "A0 印刷", "フェンス横断幕", "床ステッカーバナー", "展示会横断幕", "展示バックボード印刷", "開店横断幕"],
         "body": " transparent pricing"
@@ -3101,7 +3101,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "faqs": [
       {
         "q": " fast delivery.",
-        "a": "大型屋外ビニールバナー、防水・UV耐性、強い耐候性。 ZprintProは香港で屋外バナーサービスを提供。高品質、透明な価格、迅速な納品。"
+        "a": "大型屋外ビニールバナー、防水・UV耐性、強い耐候性。 ZprintProは屋外バナーサービスを提供。高品質、透明な価格、迅速な納品。"
       },
       {
         "q": "專業戶外燈布噴繪服務 | 智印雲",
@@ -3137,13 +3137,13 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Roll-up Banners | Wind-Resistant | Free US Ship | ZprintPro",
         "description": "Custom roll-up banners from ZprintPro the US. Wind-Resistant, 4-color CMYK. 1-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Roll-up Banners 1+ | Wind-Resistant | ZprintPro",
-        "keywords": ["roll-up banners", "custom roll up banners", "roll up banners printing hong kong", "roll-up banners free shipping", "roll-up banners USD", "bulk roll-up banners", "roll-up banners DHL", "bespoke roll-up banners", "custom roll-up banners", "roll up banners wholesale", "banner printing", "outdoor banners", "exhibition banners", "vinyl banners", "X-stand banners", "mesh banners", "vehicle wraps", "stage backdrops", "adhesive banners", "A0 large format", "fence banner", "floor sticker banner", "exhibition banner", "exhibition backdrop printing", "opening banner"],
+        "keywords": ["roll-up banners", "custom roll up banners", "roll up banners printing online", "roll-up banners free shipping", "roll-up banners USD", "bulk roll-up banners", "roll-up banners DHL", "bespoke roll-up banners", "custom roll-up banners", "roll up banners wholesale", "banner printing", "outdoor banners", "exhibition banners", "vinyl banners", "X-stand banners", "mesh banners", "vehicle wraps", "stage backdrops", "adhesive banners", "A0 large format", "fence banner", "floor sticker banner", "exhibition banner", "exhibition backdrop printing", "opening banner"],
         "body": "ZprintPro Roll-up Banners for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Wind-Resistant, 4-color CMYK, premium materials. 1-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "ロールアップバナー | アルミスタンド 高画質 | ZprintPro",
-        "description": "ロールアップバナーのロールアップバナーは ZprintPro にお任せ。PP 合成紙/PVC 高品質用紙、80×200cm 各種対応。4色 CMYK 印刷、デザイン自由。1個〜〜、1-3営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "ロールアップバナーのロールアップバナーは ZprintPro にお任せ。PP 合成紙/PVC 高品質用紙、80×200cm 各種対応。4色 CMYK 印刷、デザイン自由。1個〜〜、1-3営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "Portable roll-up banner stands",
         "keywords": ["ロールアップバナー", "ロールアップバナー 印刷", "roll up banners", "バナー印刷", "屋外バナー", "展示バナー", "横断幕", "懸垂幕", "メッシュバナー", "車両広告", "ステージ背景", "広告バナー", "A0 印刷", "フェンス横断幕", "床ステッカーバナー", "展示会横断幕", "展示バックボード印刷", "開店横断幕"],
         "body": " fast delivery."
@@ -3151,7 +3151,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [
       {
-        "q": "ポータブルロールアップバナースタンド、設置簡単。展示会やロードショーに必須。 ZprintProは香港でロールアップバナーサービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "ポータブルロールアップバナースタンド、設置簡単。展示会やロードショーに必須。 ZprintProはロールアップバナーサービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業易拉寶服務 | 智印雲"
       },
       {
@@ -3187,16 +3187,16 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Adhesive Banners | Wind-Resistant | Free US Ship | ZprintPro",
         "description": "Custom adhesive banners from ZprintPro the US. Wind-Resistant, 4-color CMYK. 1-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Adhesive Banners 1+ | Wind-Resistant | ZprintPro",
-        "keywords": ["adhesive banners", "custom adhesive banners", "adhesive banners printing hong kong", "adhesive banners free shipping", "adhesive banners USD", "bulk adhesive banners", "adhesive banners DHL", "bespoke adhesive banners", "adhesive banners wholesale", "adhesive banners pricing", "banner printing", "roll-up banners", "outdoor banners", "exhibition banners", "vinyl banners", "X-stand banners", "mesh banners", "vehicle wraps", "stage backdrops", "A0 large format", "fence banner", "floor sticker banner", "exhibition banner", "exhibition backdrop printing", "opening banner"],
+        "keywords": ["adhesive banners", "custom adhesive banners", "adhesive banners printing online", "adhesive banners free shipping", "adhesive banners USD", "bulk adhesive banners", "adhesive banners DHL", "bespoke adhesive banners", "adhesive banners wholesale", "adhesive banners pricing", "banner printing", "roll-up banners", "outdoor banners", "exhibition banners", "vinyl banners", "X-stand banners", "mesh banners", "vehicle wraps", "stage backdrops", "A0 large format", "fence banner", "floor sticker banner", "exhibition banner", "exhibition backdrop printing", "opening banner"],
         "body": "ZprintPro Adhesive Banners for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Wind-Resistant, 4-color CMYK, premium materials. 1-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "粘着バナー | アルミスタンド 高画質 | ZprintPro",
-        "description": "粘着バナーの粘着バナーは ZprintPro にお任せ。PP 合成紙/PVC 高品質用紙、80×200cm 各種対応。4色 CMYK 印刷、デザイン自由。1個〜〜、1-3営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
-        "h1": " can be directly applied to walls or glass. ZprintPro offers professional Adhesive Banners services in Hong Kong. High quality",
+        "description": "粘着バナーの粘着バナーは ZprintPro にお任せ。PP 合成紙/PVC 高品質用紙、80×200cm 各種対応。4色 CMYK 印刷、デザイン自由。1個〜〜、1-3営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
+        "h1": " can be directly applied to walls or glass. ZprintPro offers professional Adhesive Banners services worldwide. High quality",
         "keywords": ["粘着バナー", "粘着バナー 印刷", "adhesive banners", "バナー印刷", "ロールアップバナー", "屋外バナー", "展示バナー", "横断幕", "懸垂幕", "メッシュバナー", "車両広告", "ステージ背景", "広告バナー", "A0 印刷", "フェンス横断幕", "床ステッカーバナー", "展示会横断幕", "展示バックボード印刷", "開店横断幕"],
-        "body": "自己粘着、壁やガラスに直接貼付可能。 ZprintProは香港で粘着バナーサービスを提供。高品質、透明な価格、迅速な納品。"
+        "body": "自己粘着、壁やガラスに直接貼付可能。 ZprintProは粘着バナーサービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
     "faqs": [
@@ -3237,13 +3237,13 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Vehicle Wraps | 3M Vinyl Wrap | Free US Ship | ZprintPro",
         "description": "Custom vehicle wraps from ZprintPro the US. 3M Vinyl Wrap, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Vehicle Wraps 100+ | 3M Vinyl Wrap | ZprintPro",
-        "keywords": ["vehicle wraps", "custom vehicle wraps", "vehicle wraps printing hong kong", "vehicle wraps free shipping", "vehicle wraps USD", "bulk vehicle wraps", "vehicle wraps DHL", "bespoke vehicle wraps", "vehicle wraps wholesale", "vehicle wraps pricing", "banner printing", "roll-up banners", "outdoor banners", "exhibition banners", "vinyl banners", "X-stand banners", "mesh banners", "stage backdrops", "adhesive banners", "A0 large format", "fence banner", "floor sticker banner", "exhibition banner", "exhibition backdrop printing", "opening banner"],
+        "keywords": ["vehicle wraps", "custom vehicle wraps", "vehicle wraps printing online", "vehicle wraps free shipping", "vehicle wraps USD", "bulk vehicle wraps", "vehicle wraps DHL", "bespoke vehicle wraps", "vehicle wraps wholesale", "vehicle wraps pricing", "banner printing", "roll-up banners", "outdoor banners", "exhibition banners", "vinyl banners", "X-stand banners", "mesh banners", "stage backdrops", "adhesive banners", "A0 large format", "fence banner", "floor sticker banner", "exhibition banner", "exhibition backdrop printing", "opening banner"],
         "body": "ZprintPro Vehicle Wraps for retail, e-commerce, corporate gifting, events, and small business across US and global markets. 3M Vinyl Wrap, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "車両ラッピング | 車両フルラップ カスタム | ZprintPro",
-        "description": "車両ラッピングの車両ラッピングは ZprintPro にお任せ。車体 wrap PVC 高品質用紙、カスタム 各種対応。4色 CMYK 印刷、デザイン自由。1セット〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "車両ラッピングの車両ラッピングは ZprintPro にお任せ。車体 wrap PVC 高品質用紙、カスタム 各種対応。4色 CMYK 印刷、デザイン自由。1セット〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": " strong weather resistance",
         "keywords": ["車両ラッピング", "車両ラッピング 印刷", "vehicle wraps", "バナー印刷", "ロールアップバナー", "屋外バナー", "展示バナー", "横断幕", "懸垂幕", "メッシュバナー", "車両広告", "ステージ背景", "広告バナー", "A0 印刷", "フェンス横断幕", "床ステッカーバナー", "展示会横断幕", "展示バックボード印刷", "開店横断幕"],
         "body": " fast delivery."
@@ -3251,7 +3251,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [
       {
-        "q": "専用車体ラップビニール、強い耐候性、剥がしても残りません。 ZprintProは香港でカーラッピングサービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "専用車体ラップビニール、強い耐候性、剥がしても残りません。 ZprintProはカーラッピングサービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業車身廣告服務 | 智印雲"
       },
       {
@@ -3287,16 +3287,16 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Mesh Banners | Wind-Resistant | Free US Ship | ZprintPro",
         "description": "Custom mesh banners from ZprintPro the US. Wind-Resistant, 4-color CMYK. 1-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Mesh Banners 1+ | Wind-Resistant | ZprintPro",
-        "keywords": ["mesh banners", "custom mesh banners", "mesh banners printing hong kong", "mesh banners free shipping", "mesh banners USD", "bulk mesh banners", "mesh banners DHL", "bespoke mesh banners", "mesh banners wholesale", "mesh banners pricing", "banner printing", "roll-up banners", "outdoor banners", "exhibition banners", "vinyl banners", "X-stand banners", "vehicle wraps", "stage backdrops", "adhesive banners", "A0 large format", "fence banner", "floor sticker banner", "exhibition banner", "exhibition backdrop printing", "opening banner"],
+        "keywords": ["mesh banners", "custom mesh banners", "mesh banners printing online", "mesh banners free shipping", "mesh banners USD", "bulk mesh banners", "mesh banners DHL", "bespoke mesh banners", "mesh banners wholesale", "mesh banners pricing", "banner printing", "roll-up banners", "outdoor banners", "exhibition banners", "vinyl banners", "X-stand banners", "vehicle wraps", "stage backdrops", "adhesive banners", "A0 large format", "fence banner", "floor sticker banner", "exhibition banner", "exhibition backdrop printing", "opening banner"],
         "body": "ZprintPro Mesh Banners for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Wind-Resistant, 4-color CMYK, premium materials. 1-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "メッシュバナー | アルミスタンド 高画質 | ZprintPro",
-        "description": "メッシュバナーのメッシュバナーは ZprintPro にお任せ。PP 合成紙/PVC 高品質用紙、80×200cm 各種対応。4色 CMYK 印刷、デザイン自由。1個〜〜、1-3営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
-        "h1": " light and air permeable. Perfect for large outdoor advertising. ZprintPro offers professional Mesh Banners services in Hong Kong. High quality",
+        "description": "メッシュバナーのメッシュバナーは ZprintPro にお任せ。PP 合成紙/PVC 高品質用紙、80×200cm 各種対応。4色 CMYK 印刷、デザイン自由。1個〜〜、1-3営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
+        "h1": " light and air permeable. Perfect for large outdoor advertising. ZprintPro offers professional Mesh Banners services worldwide. High quality",
         "keywords": ["メッシュバナー", "メッシュバナー 印刷", "mesh banners", "バナー印刷", "ロールアップバナー", "屋外バナー", "展示バナー", "横断幕", "懸垂幕", "車両広告", "ステージ背景", "広告バナー", "A0 印刷", "フェンス横断幕", "床ステッカーバナー", "展示会横断幕", "展示バックボード印刷", "開店横断幕"],
-        "body": "メッシュデザイン、光と空気を通す。大型屋外広告に最適。 ZprintProは香港でメッシュバナーサービスを提供。高品質、透明な価格、迅速な納品。"
+        "body": "メッシュデザイン、光と空気を通す。大型屋外広告に最適。 ZprintProはメッシュバナーサービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
     "faqs": [
@@ -3338,13 +3338,13 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Catalog Printing | Saddle-Stitched | Free US Ship | ZprintPro",
         "description": "Custom catalog printing from ZprintPro the US. Saddle-Stitched, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Catalog Printing 100+ | ZprintPro",
-        "keywords": ["catalog printing","custom catalog printing","catalog printing printing hong kong","catalog printing free shipping","catalog printing USD","bulk catalog printing","catalog printing DHL","bespoke catalog printing","catalog printing wholesale","catalog printing pricing"],
+        "keywords": ["catalog printing","custom catalog printing","catalog printing printing online","catalog printing free shipping","catalog printing USD","bulk catalog printing","catalog printing DHL","bespoke catalog printing","catalog printing wholesale","catalog printing pricing"],
         "body": "ZprintPro Catalog Printing for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Saddle-Stitched, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "カタログ印刷 | プロ印刷 高品質 | ZprintPro",
-        "description": "カタログ印刷のカタログ印刷は ZprintPro にお任せ。157g コート紙 高品質用紙、標準/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "カタログ印刷のカタログ印刷は ZprintPro にお任せ。157g コート紙 高品質用紙、標準/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。100〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "Premium catalogs with high color accuracy. Perfect for product catalogs",
         "keywords": ["カタログ印刷", "カタログ印刷 印刷", "catalog printing"],
         "body": " fast delivery."
@@ -3352,7 +3352,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [
       {
-        "q": "高級カタログ、高い色再現性。製品カタログ、年次報告書に最適。 ZprintProは香港でカタログ印刷サービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "高級カタログ、高い色再現性。製品カタログ、年次報告書に最適。 ZprintProはカタログ印刷サービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業畫冊印刷服務 | 智印雲"
       },
       {
@@ -3389,13 +3389,13 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Saddle Stitch Booklets | Free Shipping $99+ | ZprintPro",
         "description": "Custom saddle stitch booklets from ZprintPro the US. Premium Custom, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Saddle Stitch Booklets 100+ | ZprintPro",
-        "keywords": ["saddle stitch booklets","custom saddle stitch booklets","saddle stitch booklets printing hong kong","saddle stitch booklets free shipping","saddle stitch booklets USD","bulk saddle stitch booklets","saddle stitch booklets DHL","bespoke saddle stitch booklets","saddle stitch booklets wholesale","saddle stitch booklets pricing"],
+        "keywords": ["saddle stitch booklets","custom saddle stitch booklets","saddle stitch booklets printing online","saddle stitch booklets free shipping","saddle stitch booklets USD","bulk saddle stitch booklets","saddle stitch booklets DHL","bespoke saddle stitch booklets","saddle stitch booklets wholesale","saddle stitch booklets pricing"],
         "body": "ZprintPro Saddle Stitch Booklets for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Premium Custom, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "中綴じ冊子 | 中綴じ/無線綴じ 50冊〜 | ZprintPro",
-        "description": "中綴じ冊子の中綴じ冊子は ZprintPro にお任せ。本文 157g コート/表紙 250g 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、5-10営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "中綴じ冊子の中綴じ冊子は ZprintPro にお任せ。本文 157g コート/表紙 250g 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、5-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "Economical binding method",
         "keywords": ["中綴じ冊子", "中綴じ冊子 印刷", "saddle stitch booklets"],
         "body": " fast delivery."
@@ -3403,7 +3403,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [
       {
-        "q": "経済的な製本方法、ページ数の少ない冊子に最適。 ZprintProは香港で中綴じ冊子サービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "経済的な製本方法、ページ数の少ない冊子に最適。 ZprintProは中綴じ冊子サービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業騎馬釘小冊子服務 | 智印雲"
       },
       {
@@ -3439,16 +3439,16 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Perfect Bound Books | Perfect Bound | Free US Ship | ZprintPro",
         "description": "Custom perfect bound books from ZprintPro the US. Perfect Bound, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Perfect Bound Books 100+ | ZprintPro",
-        "keywords": ["perfect bound books","custom perfect bound books","perfect bound books printing hong kong","perfect bound books free shipping","perfect bound books USD","bulk perfect bound books","perfect bound books DHL","bespoke perfect bound books","perfect bound books wholesale","perfect bound books pricing"],
+        "keywords": ["perfect bound books","custom perfect bound books","perfect bound books printing online","perfect bound books free shipping","perfect bound books USD","bulk perfect bound books","perfect bound books DHL","bespoke perfect bound books","perfect bound books wholesale","perfect bound books pricing"],
         "body": "ZprintPro Perfect Bound Books for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Perfect Bound, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "無線綴じ冊子 | 中綴じ/無線綴じ 50冊〜 | ZprintPro",
-        "description": "無線綴じ冊子の無線綴じ冊子は ZprintPro にお任せ。本文 157g コート/表紙 250g 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、5-10営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
-        "h1": " can print book title. Perfect for books and magazines with more pages. ZprintPro offers professional Perfect Bound Books services in Hong Kong. High quality",
+        "description": "無線綴じ冊子の無線綴じ冊子は ZprintPro にお任せ。本文 157g コート/表紙 250g 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、5-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
+        "h1": " can print book title. Perfect for books and magazines with more pages. ZprintPro offers professional Perfect Bound Books services worldwide. High quality",
         "keywords": ["無線綴じ冊子", "無線綴じ冊子 印刷", "perfect bound books"],
-        "body": "平らな背表紙、書名を印刷可能。ページ数の多い本や雑誌に最適。 ZprintProは香港で無線綴じ本サービスを提供。高品質、透明な価格、迅速な納品。"
+        "body": "平らな背表紙、書名を印刷可能。ページ数の多い本や雑誌に最適。 ZprintProは無線綴じ本サービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
     "faqs": [
@@ -3489,16 +3489,16 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Hardcover Books | Perfect Bound | Free US Ship | ZprintPro",
         "description": "Custom hardcover books from ZprintPro the US. Perfect Bound, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Hardcover Books 100+ | Perfect Bound | ZprintPro",
-        "keywords": ["hardcover books","custom hardcover books","hardcover books printing hong kong","hardcover books free shipping","hardcover books USD","bulk hardcover books","hardcover books DHL","bespoke hardcover books","hardcover books wholesale","hardcover books pricing"],
+        "keywords": ["hardcover books","custom hardcover books","hardcover books printing online","hardcover books free shipping","hardcover books USD","bulk hardcover books","hardcover books DHL","bespoke hardcover books","hardcover books wholesale","hardcover books pricing"],
         "body": "ZprintPro Hardcover Books for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Perfect Bound, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "ハードカバー書籍 | 中綴じ/無線綴じ 50冊〜 | ZprintPro",
-        "description": "ハードカバー書籍のハードカバー書籍は ZprintPro にお任せ。本文 157g コート/表紙 250g 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、5-10営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
-        "h1": " luxurious and durable. Perfect for collector\\ ZprintPro offers professional Hardcover Books services in Hong Kong. High quality",
+        "description": "ハードカバー書籍のハードカバー書籍は ZprintPro にお任せ。本文 157g コート/表紙 250g 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、5-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
+        "h1": " luxurious and durable. Perfect for collector\\ ZprintPro offers professional Hardcover Books services worldwide. High quality",
         "keywords": ["ハードカバー書籍", "ハードカバー書籍 印刷", "hardcover books"],
-        "body": "上製本装丁、豪華で耐久性あり。愛蔵版、企業年鑑に最適。 ZprintProは香港で上製本サービスを提供。高品質、透明な価格、迅速な納品。"
+        "body": "上製本装丁、豪華で耐久性あり。愛蔵版、企業年鑑に最適。 ZprintProは上製本サービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
     "faqs": [
@@ -3539,13 +3539,13 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Spiral Notebooks | Perfect Bound | Free US Ship | ZprintPro",
         "description": "Custom spiral notebooks from ZprintPro the US. Perfect Bound, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Spiral Notebooks 100+ | Perfect Bound | ZprintPro",
-        "keywords": ["spiral notebooks","custom spiral notebooks","spiral notebooks printing hong kong","spiral notebooks free shipping","spiral notebooks USD","bulk spiral notebooks","spiral notebooks DHL","bespoke spiral notebooks","spiral notebooks wholesale","spiral notebooks pricing"],
+        "keywords": ["spiral notebooks","custom spiral notebooks","spiral notebooks printing online","spiral notebooks free shipping","spiral notebooks USD","bulk spiral notebooks","spiral notebooks DHL","bespoke spiral notebooks","spiral notebooks wholesale","spiral notebooks pricing"],
         "body": "ZprintPro Spiral Notebooks for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Perfect Bound, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "スパイラルノート | 中綴じ/無線綴じ 50冊〜 | ZprintPro",
-        "description": "スパイラルノートのスパイラルノートは ZprintPro にお任せ。本文 157g コート/表紙 250g 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、5-10営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "スパイラルノートのスパイラルノートは ZprintPro にお任せ。本文 157g コート/表紙 250g 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、5-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": " can lay flat at 180 degrees. Perfect for notebooks",
         "keywords": ["スパイラルノート", "スパイラルノート 印刷", "spiral notebooks"],
         "body": " fast delivery."
@@ -3553,7 +3553,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [
       {
-        "q": "スパイラル製本、180度に開く。ノート、ワークブックに最適。 ZprintProは香港でリングノートサービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "スパイラル製本、180度に開く。ノート、ワークブックに最適。 ZprintProはリングノートサービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業線圈筆記本服務 | 智印雲"
       },
       {
@@ -3590,13 +3590,13 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Business Envelopes | Free Shipping $99+ | ZprintPro",
         "description": "Custom business envelopes from ZprintPro the US. Foil-Lined Premium, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Business Envelopes 100+ | ZprintPro",
-        "keywords": ["business envelopes", "custom business envelopes", "business envelopes printing hong kong", "business envelopes free shipping", "business envelopes USD", "bulk business envelopes", "business envelopes DHL", "bespoke business envelopes", "business envelopes wholesale", "business envelopes pricing", "envelope printing", "custom envelopes", "window envelopes", "colored envelopes", "kraft envelopes", "logo envelopes", "corporate envelopes", "C6 envelopes", "DL envelopes", "100pcs MOQ", "50pcs MOQ", "C5 envelope", "C6 envelope", "C7 envelope", "Excel envelope", "from HK$0.5", "from HK$0.8", "UV envelope", "confidential envelope", "envelope price", "company envelope printing", "recycled paper envelope", "variable data envelope", "compostable envelope", "wedding card envelope", "address printing", "wedding envelope printing", "school envelope printing", "custom envelope printing", "lawyer envelope printing", "report card envelope", "bulk envelope", "letterhead envelope", "Mongkok envelope", "accounting envelope", "school crest folder", "foil logo", "foil envelope", "specialty paper envelope", "eco envelope printing", "same day", "ribbon hole envelope", "mini envelope", "notice letter printing", "premium envelope"],
+        "keywords": ["business envelopes", "custom business envelopes", "business envelopes printing online", "business envelopes free shipping", "business envelopes USD", "bulk business envelopes", "business envelopes DHL", "bespoke business envelopes", "business envelopes wholesale", "business envelopes pricing", "envelope printing", "custom envelopes", "window envelopes", "colored envelopes", "kraft envelopes", "logo envelopes", "corporate envelopes", "C6 envelopes", "DL envelopes", "100pcs MOQ", "50pcs MOQ", "C5 envelope", "C6 envelope", "C7 envelope", "Excel envelope", "from HK$0.5", "from HK$0.8", "UV envelope", "confidential envelope", "envelope price", "company envelope printing", "recycled paper envelope", "variable data envelope", "compostable envelope", "wedding card envelope", "address printing", "wedding envelope printing", "school envelope printing", "custom envelope printing", "lawyer envelope printing", "report card envelope", "bulk envelope", "letterhead envelope", "Mongkok envelope", "accounting envelope", "school crest folder", "foil logo", "foil envelope", "specialty paper envelope", "eco envelope printing", "same day", "ribbon hole envelope", "mini envelope", "notice letter printing", "premium envelope"],
         "body": "ZprintPro Business Envelopes for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Foil-Lined Premium, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "会社封筒 | 両面印刷 マルチサイズ | ZprintPro",
-        "description": "会社封筒の会社封筒は ZprintPro にお任せ。100g 筆記用紙/白クラフト 高品質用紙、DL/C5/C4 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "会社封筒の会社封筒は ZprintPro にお任せ。100g 筆記用紙/白クラフト 高品質用紙、DL/C5/C4 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "Custom business envelopes with logo and address. Professional image",
         "keywords": ["会社封筒", "会社封筒 印刷", "business envelopes", "封筒印刷", "カスタム封筒", "窓付き封筒", "クラフト封筒", "企業封筒", "ロゴ封筒", "長形封筒", "洋形封筒", "和封筒", "社名入り封筒", "100個〜", "50個〜", "C5 封筒", "C6 封筒", "C7 封筒", "Excel 封筒", "HK$0.5〜", "HK$0.8〜", "UV 封筒", "機密封筒", "封筒価格", "会社封筒印刷", "再生紙封筒", "可変データ封筒", "生分解性封筒", "招待状封筒", "住所印刷", "ウェディング封筒印刷", "学校封筒印刷", "カスタム封筒印刷", "弁護士封筒印刷", "成績表封筒", "大量封筒", "レターヘッド封筒", "旺角封筒", "会計事務所封筒", "校章フォルダー", "箔押しロゴ", "箔押し封筒", "特殊紙封筒", "エコ封筒印刷", "当日出荷", "リボン穴封筒", "ミニ封筒", "通知書印刷", "プレミアム封筒"],
         "body": " fast delivery."
@@ -3604,7 +3604,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [
       {
-        "q": "カスタムビジネス封筒、ロゴと住所を印刷。プロフェッショナルなイメージ。 ZprintProは香港でビジネス封筒サービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "カスタムビジネス封筒、ロゴと住所を印刷。プロフェッショナルなイメージ。 ZprintProはビジネス封筒サービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業公司信封服務 | 智印雲"
       },
       {
@@ -3641,13 +3641,13 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Colored Envelopes | Free Shipping $99+ | ZprintPro",
         "description": "Custom colored envelopes from ZprintPro the US. Foil-Lined Premium, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Colored Envelopes 100+ | ZprintPro",
-        "keywords": ["colored envelopes", "custom colored envelopes", "colored envelopes printing hong kong", "colored envelopes free shipping", "colored envelopes USD", "bulk colored envelopes", "colored envelopes DHL", "bespoke colored envelopes", "colored envelopes wholesale", "colored envelopes pricing", "envelope printing", "custom envelopes", "business envelopes", "window envelopes", "kraft envelopes", "logo envelopes", "corporate envelopes", "C6 envelopes", "DL envelopes", "100pcs MOQ", "50pcs MOQ", "C5 envelope", "C6 envelope", "C7 envelope", "Excel envelope", "from HK$0.5", "from HK$0.8", "UV envelope", "confidential envelope", "envelope price", "company envelope printing", "recycled paper envelope", "variable data envelope", "compostable envelope", "wedding card envelope", "address printing", "wedding envelope printing", "school envelope printing", "custom envelope printing", "lawyer envelope printing", "report card envelope", "bulk envelope", "letterhead envelope", "Mongkok envelope", "accounting envelope", "school crest folder", "foil logo", "foil envelope", "specialty paper envelope", "eco envelope printing", "same day", "ribbon hole envelope", "mini envelope", "notice letter printing", "premium envelope"],
+        "keywords": ["colored envelopes", "custom colored envelopes", "colored envelopes printing online", "colored envelopes free shipping", "colored envelopes USD", "bulk colored envelopes", "colored envelopes DHL", "bespoke colored envelopes", "colored envelopes wholesale", "colored envelopes pricing", "envelope printing", "custom envelopes", "business envelopes", "window envelopes", "kraft envelopes", "logo envelopes", "corporate envelopes", "C6 envelopes", "DL envelopes", "100pcs MOQ", "50pcs MOQ", "C5 envelope", "C6 envelope", "C7 envelope", "Excel envelope", "from HK$0.5", "from HK$0.8", "UV envelope", "confidential envelope", "envelope price", "company envelope printing", "recycled paper envelope", "variable data envelope", "compostable envelope", "wedding card envelope", "address printing", "wedding envelope printing", "school envelope printing", "custom envelope printing", "lawyer envelope printing", "report card envelope", "bulk envelope", "letterhead envelope", "Mongkok envelope", "accounting envelope", "school crest folder", "foil logo", "foil envelope", "specialty paper envelope", "eco envelope printing", "same day", "ribbon hole envelope", "mini envelope", "notice letter printing", "premium envelope"],
         "body": "ZprintPro Colored Envelopes for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Foil-Lined Premium, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "カラー封筒 | 両面印刷 マルチサイズ | ZprintPro",
-        "description": "カラー封筒のカラー封筒は ZprintPro にお任せ。100g 筆記用紙/白クラフト 高品質用紙、DL/C5/C4 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "カラー封筒のカラー封筒は ZprintPro にお任せ。100g 筆記用紙/白クラフト 高品質用紙、DL/C5/C4 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "Colorful printing",
         "keywords": ["カラー封筒", "カラー封筒 印刷", "colored envelopes", "封筒印刷", "カスタム封筒", "窓付き封筒", "クラフト封筒", "企業封筒", "ロゴ封筒", "長形封筒", "洋形封筒", "和封筒", "社名入り封筒", "100個〜", "50個〜", "C5 封筒", "C6 封筒", "C7 封筒", "Excel 封筒", "HK$0.5〜", "HK$0.8〜", "UV 封筒", "機密封筒", "封筒価格", "会社封筒印刷", "再生紙封筒", "可変データ封筒", "生分解性封筒", "招待状封筒", "住所印刷", "ウェディング封筒印刷", "学校封筒印刷", "カスタム封筒印刷", "弁護士封筒印刷", "成績表封筒", "大量封筒", "レターヘッド封筒", "旺角封筒", "会計事務所封筒", "校章フォルダー", "箔押しロゴ", "箔押し封筒", "特殊紙封筒", "エコ封筒印刷", "当日出荷", "リボン穴封筒", "ミニ封筒", "通知書印刷", "プレミアム封筒"],
         "body": " transparent pricing"
@@ -3656,7 +3656,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "faqs": [
       {
         "q": " fast delivery.",
-        "a": "カラフルな印刷、強い視覚的アピール。招待状、グリーティングカードに最適。 ZprintProは香港でカラー封筒サービスを提供。高品質、透明な価格、迅速な納品。"
+        "a": "カラフルな印刷、強い視覚的アピール。招待状、グリーティングカードに最適。 ZprintProはカラー封筒サービスを提供。高品質、透明な価格、迅速な納品。"
       },
       {
         "q": "專業彩色信封服務 | 智印雲",
@@ -3691,16 +3691,16 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Large Envelopes | Free Shipping $99+ | ZprintPro",
         "description": "Custom large envelopes from ZprintPro the US. Foil-Lined Premium, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Large Envelopes 100+ | ZprintPro",
-        "keywords": ["large envelopes", "custom large envelopes", "large envelopes printing hong kong", "large envelopes free shipping", "large envelopes USD", "bulk large envelopes", "large envelopes DHL", "bespoke large envelopes", "large envelopes wholesale", "large envelopes pricing", "envelope printing", "custom envelopes", "business envelopes", "window envelopes", "colored envelopes", "kraft envelopes", "logo envelopes", "corporate envelopes", "C6 envelopes", "DL envelopes", "100pcs MOQ", "50pcs MOQ", "C5 envelope", "C6 envelope", "C7 envelope", "Excel envelope", "from HK$0.5", "from HK$0.8", "UV envelope", "confidential envelope", "envelope price", "company envelope printing", "recycled paper envelope", "variable data envelope", "compostable envelope", "wedding card envelope", "address printing", "wedding envelope printing", "school envelope printing", "custom envelope printing", "lawyer envelope printing", "report card envelope", "bulk envelope", "letterhead envelope", "Mongkok envelope", "accounting envelope", "school crest folder", "foil logo", "foil envelope", "specialty paper envelope", "eco envelope printing", "same day", "ribbon hole envelope", "mini envelope", "notice letter printing", "premium envelope"],
+        "keywords": ["large envelopes", "custom large envelopes", "large envelopes printing online", "large envelopes free shipping", "large envelopes USD", "bulk large envelopes", "large envelopes DHL", "bespoke large envelopes", "large envelopes wholesale", "large envelopes pricing", "envelope printing", "custom envelopes", "business envelopes", "window envelopes", "colored envelopes", "kraft envelopes", "logo envelopes", "corporate envelopes", "C6 envelopes", "DL envelopes", "100pcs MOQ", "50pcs MOQ", "C5 envelope", "C6 envelope", "C7 envelope", "Excel envelope", "from HK$0.5", "from HK$0.8", "UV envelope", "confidential envelope", "envelope price", "company envelope printing", "recycled paper envelope", "variable data envelope", "compostable envelope", "wedding card envelope", "address printing", "wedding envelope printing", "school envelope printing", "custom envelope printing", "lawyer envelope printing", "report card envelope", "bulk envelope", "letterhead envelope", "Mongkok envelope", "accounting envelope", "school crest folder", "foil logo", "foil envelope", "specialty paper envelope", "eco envelope printing", "same day", "ribbon hole envelope", "mini envelope", "notice letter printing", "premium envelope"],
         "body": "ZprintPro Large Envelopes for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Foil-Lined Premium, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "大型封筒 | 両面印刷 マルチサイズ | ZprintPro",
-        "description": "大型封筒の大型封筒は ZprintPro にお任せ。100g 筆記用紙/白クラフト 高品質用紙、DL/C5/C4 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
-        "h1": " can hold documents and contracts. Office essential. ZprintPro offers professional Large Envelopes services in Hong Kong. High quality",
+        "description": "大型封筒の大型封筒は ZprintPro にお任せ。100g 筆記用紙/白クラフト 高品質用紙、DL/C5/C4 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
+        "h1": " can hold documents and contracts. Office essential. ZprintPro offers professional Large Envelopes services worldwide. High quality",
         "keywords": ["大型封筒", "大型封筒 印刷", "large envelopes", "封筒印刷", "カスタム封筒", "窓付き封筒", "クラフト封筒", "企業封筒", "ロゴ封筒", "長形封筒", "洋形封筒", "和封筒", "社名入り封筒", "100個〜", "50個〜", "C5 封筒", "C6 封筒", "C7 封筒", "Excel 封筒", "HK$0.5〜", "HK$0.8〜", "UV 封筒", "機密封筒", "封筒価格", "会社封筒印刷", "再生紙封筒", "可変データ封筒", "生分解性封筒", "招待状封筒", "住所印刷", "ウェディング封筒印刷", "学校封筒印刷", "カスタム封筒印刷", "弁護士封筒印刷", "成績表封筒", "大量封筒", "レターヘッド封筒", "旺角封筒", "会計事務所封筒", "校章フォルダー", "箔押しロゴ", "箔押し封筒", "特殊紙封筒", "エコ封筒印刷", "当日出荷", "リボン穴封筒", "ミニ封筒", "通知書印刷", "プレミアム封筒"],
-        "body": "A4サイズの大きな封筒、書類や契約書を入れられます。オフィスに必須。 ZprintProは香港で大判封筒サービスを提供。高品質、透明な価格、迅速な納品。"
+        "body": "A4サイズの大きな封筒、書類や契約書を入れられます。オフィスに必須。 ZprintProは大判封筒サービスを提供。高品質、透明な価格、迅速な納品。"
       }
     },
     "faqs": [
@@ -3741,13 +3741,13 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Pearl Envelopes | Free Shipping $99+ | ZprintPro",
         "description": "Custom pearl envelopes from ZprintPro the US. Foil-Lined Premium, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Pearl Envelopes 100+ | ZprintPro",
-        "keywords": ["pearl envelopes", "custom pearl envelopes", "pearl envelopes printing hong kong", "pearl envelopes free shipping", "pearl envelopes USD", "bulk pearl envelopes", "pearl envelopes DHL", "bespoke pearl envelopes", "pearl envelopes wholesale", "pearl envelopes pricing", "envelope printing", "custom envelopes", "business envelopes", "window envelopes", "colored envelopes", "kraft envelopes", "logo envelopes", "corporate envelopes", "C6 envelopes", "DL envelopes", "100pcs MOQ", "50pcs MOQ", "C5 envelope", "C6 envelope", "C7 envelope", "Excel envelope", "from HK$0.5", "from HK$0.8", "UV envelope", "confidential envelope", "envelope price", "company envelope printing", "recycled paper envelope", "variable data envelope", "compostable envelope", "wedding card envelope", "address printing", "wedding envelope printing", "school envelope printing", "custom envelope printing", "lawyer envelope printing", "report card envelope", "bulk envelope", "letterhead envelope", "Mongkok envelope", "accounting envelope", "school crest folder", "foil logo", "foil envelope", "specialty paper envelope", "eco envelope printing", "same day", "ribbon hole envelope", "mini envelope", "notice letter printing", "premium envelope"],
+        "keywords": ["pearl envelopes", "custom pearl envelopes", "pearl envelopes printing online", "pearl envelopes free shipping", "pearl envelopes USD", "bulk pearl envelopes", "pearl envelopes DHL", "bespoke pearl envelopes", "pearl envelopes wholesale", "pearl envelopes pricing", "envelope printing", "custom envelopes", "business envelopes", "window envelopes", "colored envelopes", "kraft envelopes", "logo envelopes", "corporate envelopes", "C6 envelopes", "DL envelopes", "100pcs MOQ", "50pcs MOQ", "C5 envelope", "C6 envelope", "C7 envelope", "Excel envelope", "from HK$0.5", "from HK$0.8", "UV envelope", "confidential envelope", "envelope price", "company envelope printing", "recycled paper envelope", "variable data envelope", "compostable envelope", "wedding card envelope", "address printing", "wedding envelope printing", "school envelope printing", "custom envelope printing", "lawyer envelope printing", "report card envelope", "bulk envelope", "letterhead envelope", "Mongkok envelope", "accounting envelope", "school crest folder", "foil logo", "foil envelope", "specialty paper envelope", "eco envelope printing", "same day", "ribbon hole envelope", "mini envelope", "notice letter printing", "premium envelope"],
         "body": "ZprintPro Pearl Envelopes for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Foil-Lined Premium, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "パール封筒 | 両面印刷 マルチサイズ | ZprintPro",
-        "description": "パール封筒のパール封筒は ZprintPro にお任せ。100g 筆記用紙/白クラフト 高品質用紙、DL/C5/C4 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "パール封筒のパール封筒は ZprintPro にお任せ。100g 筆記用紙/白クラフト 高品質用紙、DL/C5/C4 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、3-5営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": " shimmering quality. Perfect for wedding invitations",
         "keywords": ["パール封筒", "パール封筒 印刷", "pearl envelopes", "封筒印刷", "カスタム封筒", "窓付き封筒", "クラフト封筒", "企業封筒", "ロゴ封筒", "長形封筒", "洋形封筒", "和封筒", "社名入り封筒", "100個〜", "50個〜", "C5 封筒", "C6 封筒", "C7 封筒", "Excel 封筒", "HK$0.5〜", "HK$0.8〜", "UV 封筒", "機密封筒", "封筒価格", "会社封筒印刷", "再生紙封筒", "可変データ封筒", "生分解性封筒", "招待状封筒", "住所印刷", "ウェディング封筒印刷", "学校封筒印刷", "カスタム封筒印刷", "弁護士封筒印刷", "成績表封筒", "大量封筒", "レターヘッド封筒", "旺角封筒", "会計事務所封筒", "校章フォルダー", "箔押しロゴ", "箔押し封筒", "特殊紙封筒", "エコ封筒印刷", "当日出荷", "リボン穴封筒", "ミニ封筒", "通知書印刷", "プレミアム封筒"],
         "body": " fast delivery."
@@ -3755,7 +3755,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [
       {
-        "q": "パール紙、輝く質感。結婚式の招待状、高級イベントに最適。 ZprintProは香港でパール封筒サービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "パール紙、輝く質感。結婚式の招待状、高級イベントに最適。 ZprintProはパール封筒サービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業珠光信封服務 | 智印雲"
       },
       {
@@ -3792,13 +3792,13 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Exercise Books | Perfect Bound | Free US Ship | ZprintPro",
         "description": "Custom exercise books from ZprintPro the US. Perfect Bound, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Exercise Books 100+ | Perfect Bound | ZprintPro",
-        "keywords": ["exercise books", "custom exercise books", "exercise books printing hong kong", "exercise books free shipping", "exercise books USD", "bulk exercise books", "exercise books DHL", "bespoke exercise books", "exercise books wholesale", "exercise books pricing", "homework bag printing", "student handbook printing", "teacher self-made materials", "award certificate printing", "class name bag", "graduation yearbook", "graduation certificate printing", "subject file folder", "perfect bound notes", "saddle-stitch materials"],
+        "keywords": ["exercise books", "custom exercise books", "exercise books printing online", "exercise books free shipping", "exercise books USD", "bulk exercise books", "exercise books DHL", "bespoke exercise books", "exercise books wholesale", "exercise books pricing", "homework bag printing", "student handbook printing", "teacher self-made materials", "award certificate printing", "class name bag", "graduation yearbook", "graduation certificate printing", "subject file folder", "perfect bound notes", "saddle-stitch materials"],
         "body": "ZprintPro Exercise Books for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Perfect Bound, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "練習帳 | 中綴じ/無線綴じ 50冊〜 | ZprintPro",
-        "description": "練習帳の練習帳は ZprintPro にお任せ。本文 157g コート/表紙 250g 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、5-10営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "練習帳の練習帳は ZprintPro にお任せ。本文 157g コート/表紙 250g 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、5-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": "School exercise books",
         "keywords": ["練習帳", "練習帳 印刷", "exercise books", "宿題バッグ印刷", "学生手帳印刷", "教師自作教材", "表彰状印刷", "クラス名札バッグ", "卒業記念アルバム", "卒業証書印刷", "科目分類フォルダー", "無線綴じレジュメ", "中綴じ教材"],
         "body": " fast delivery."
@@ -3806,7 +3806,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [
       {
-        "q": "学校のワークブック、カスタマイズ可能な表紙と内側ページ形式。小中校、塾に最適。 ZprintProは香港でワークブック印刷サービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "学校のワークブック、カスタマイズ可能な表紙と内側ページ形式。小中校、塾に最適。 ZprintProはワークブック印刷サービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業作業簿印刷服務 | 智印雲"
       },
       {
@@ -3843,7 +3843,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Certificates | Embossed Seal | Free US Ship | ZprintPro",
         "description": "Custom certificates from ZprintPro the US. Embossed Seal, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Certificates 100+ | Embossed Seal | ZprintPro",
-        "keywords": ["certificate printing", "custom certificates", "certificates printing hong kong", "certificates free shipping", "certificates USD", "bulk certificates", "certificates DHL", "bespoke certificates", "certificates wholesale", "certificates pricing", "homework bag printing", "student handbook printing", "teacher self-made materials", "award certificate printing", "class name bag", "graduation yearbook", "graduation certificate printing", "subject file folder", "perfect bound notes", "saddle-stitch materials"],
+        "keywords": ["certificate printing", "custom certificates", "certificates printing online", "certificates free shipping", "certificates USD", "bulk certificates", "certificates DHL", "bespoke certificates", "certificates wholesale", "certificates pricing", "homework bag printing", "student handbook printing", "teacher self-made materials", "award certificate printing", "class name bag", "graduation yearbook", "graduation certificate printing", "subject file folder", "perfect bound notes", "saddle-stitch materials"],
         "body": "ZprintPro Certificates for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Embossed Seal, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
@@ -3857,7 +3857,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [
       {
-        "q": "精巧な賞状、箔押し・エンボスなどの加工付き。卒業証書、賞状、資格証明。 ZprintProは香港で賞状印刷サービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "精巧な賞状、箔押し・エンボスなどの加工付き。卒業証書、賞状、資格証明。 ZprintProは賞状印刷サービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業證書印刷服務 | 智印雲"
       },
       {
@@ -3893,13 +3893,13 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "School Flyers | Same-Day Printing | Free US Ship | ZprintPro",
         "description": "Custom school flyers from ZprintPro the US. Same-Day Printing, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "School Flyers 100+ | Same-Day Printing | ZprintPro",
-        "keywords": ["school flyers", "custom school flyers", "school flyers printing hong kong", "school flyers free shipping", "school flyers USD", "bulk school flyers", "school flyers DHL", "bespoke school flyers", "school flyers wholesale", "school flyers pricing", "homework bag printing", "student handbook printing", "teacher self-made materials", "award certificate printing", "class name bag", "graduation yearbook", "graduation certificate printing", "subject file folder", "perfect bound notes", "saddle-stitch materials"],
+        "keywords": ["school flyers", "custom school flyers", "school flyers printing online", "school flyers free shipping", "school flyers USD", "bulk school flyers", "school flyers DHL", "bespoke school flyers", "school flyers wholesale", "school flyers pricing", "homework bag printing", "student handbook printing", "teacher self-made materials", "award certificate printing", "class name bag", "graduation yearbook", "graduation certificate printing", "subject file folder", "perfect bound notes", "saddle-stitch materials"],
         "body": "ZprintPro School Flyers for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Same-Day Printing, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "学校チラシ | 両面フルカラー 100枚〜 | ZprintPro",
-        "description": "学校チラシの学校チラシは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "学校チラシの学校チラシは ZprintPro にお任せ。157g-300g コート紙 高品質用紙、A4/A5/A6/DL 各種対応。4色 CMYK 印刷、デザイン自由。100枚〜〜、翌日-2営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": " event promotional flyers. Economical",
         "keywords": ["学校チラシ", "学校チラシ 印刷", "school flyers", "宿題バッグ印刷", "学生手帳印刷", "教師自作教材", "表彰状印刷", "クラス名札バッグ", "卒業記念アルバム", "卒業証書印刷", "科目分類フォルダー", "無線綴じレジュメ", "中綴じ教材"],
         "body": " fast delivery."
@@ -3907,7 +3907,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [
       {
-        "q": "学校の通知、イベント宣伝チラシ。経済的、大量印刷。 ZprintProは香港で学校チラシサービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "学校の通知、イベント宣伝チラシ。経済的、大量印刷。 ZprintProは学校チラシサービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業學校單張服務 | 智印雲"
       },
       {
@@ -3943,13 +3943,13 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Textbooks | Perfect Bound | Free US Ship | ZprintPro",
         "description": "Custom textbooks from ZprintPro the US. Perfect Bound, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Textbooks 100+ | Perfect Bound | ZprintPro",
-        "keywords": ["textbooks", "custom textbooks", "textbooks printing hong kong", "textbooks free shipping", "textbooks USD", "bulk textbooks", "textbooks DHL", "bespoke textbooks", "textbooks wholesale", "textbooks pricing", "homework bag printing", "student handbook printing", "teacher self-made materials", "award certificate printing", "class name bag", "graduation yearbook", "graduation certificate printing", "subject file folder", "perfect bound notes", "saddle-stitch materials"],
+        "keywords": ["textbooks", "custom textbooks", "textbooks printing online", "textbooks free shipping", "textbooks USD", "bulk textbooks", "textbooks DHL", "bespoke textbooks", "textbooks wholesale", "textbooks pricing", "homework bag printing", "student handbook printing", "teacher self-made materials", "award certificate printing", "class name bag", "graduation yearbook", "graduation certificate printing", "subject file folder", "perfect bound notes", "saddle-stitch materials"],
         "body": "ZprintPro Textbooks for retail, e-commerce, corporate gifting, events, and small business across US and global markets. Perfect Bound, 4-color CMYK, premium materials. 100-MOQ, Free US shipping over $100, FSC, ISO 9001. Same-day file confirmation by 11am HKT."
       
       },
       "ja": {
         "title": "教科書 | 中綴じ/無線綴じ 50冊〜 | ZprintPro",
-        "description": "教科書の教科書は ZprintPro にお任せ。本文 157g コート/表紙 250g 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、5-10営業日で全国配送。30秒無料見積もり、深夜対応OK。香港直結の安心感。",
+        "description": "教科書の教科書は ZprintPro にお任せ。本文 157g コート/表紙 250g 高品質用紙、A4/A5/カスタム 各種対応。4色 CMYK 印刷、デザイン自由。50冊〜〜、5-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
         "h1": " textbook printing. Professional typesetting",
         "keywords": ["教科書", "教科書 印刷", "textbooks", "宿題バッグ印刷", "学生手帳印刷", "教師自作教材", "表彰状印刷", "クラス名札バッグ", "卒業記念アルバム", "卒業証書印刷", "科目分類フォルダー", "無線綴じレジュメ", "中綴じ教材"],
         "body": " fast delivery."
@@ -3957,7 +3957,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "faqs": [
       {
-        "q": "教材、教科書の印刷。プロの組版、品質保証。 ZprintProは香港で教科書印刷サービスを提供。高品質、透明な価格、迅速な納品。",
+        "q": "教材、教科書の印刷。プロの組版、品質保証。 ZprintProは教科書印刷サービスを提供。高品質、透明な価格、迅速な納品。",
         "a": "專業教科書印刷服務 | 智印雲"
       },
       {
@@ -3994,7 +3994,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Magnetic Closure Gift Box | Free Shipping $99+ | ZprintPro",
         "description": "Magnetic Gift Box, premium rigid board. Free Design, 100 MOQ, Free Shipping $99+. 4-day USA delivery for premium brands. | ZprintPro",
         "h1": "Magnetic Closure Gift Box 100+ | ZprintPro",
-        "keywords": ["magnetic closure gift box","custom magnetic closure gift box","magnetic closure gift box free shipping","magnetic closure gift box USD","bulk magnetic closure gift box","magnetic closure gift box DHL","bespoke magnetic closure gift box","magnetic closure gift box wholesale","magnetic closure gift box pricing","magnetic closure gift box bulk","packaging box printing","gift boxes","cosmetic boxes","food boxes","mailer boxes","corrugated boxes","custom packaging","rigid boxes","folding cartons","product boxes","100pcs MOQ","2-day turnaround","FSC certified","HK DOH compliance","QR code packaging","mid-autumn gift box printing","health supplement packaging","free proof","free layout","export packaging","cosmetic packaging box","instant quote","compostable packaging","small batch packaging box","industrial packaging","color box printing","drawer color box","sustainable packaging","silver foil printing","eco packaging box","corrugated box","corrugated box printing","magnetic box","gift color box","window design","festival packaging box","green printing","rush printing","beauty packaging","pharmaceutical packaging box","moisture-proof packaging","food-grade box","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
+        "keywords": ["magnetic closure gift box","custom magnetic closure gift box","magnetic closure gift box free shipping","magnetic closure gift box USD","bulk magnetic closure gift box","magnetic closure gift box DHL","bespoke magnetic closure gift box","magnetic closure gift box wholesale","magnetic closure gift box pricing","magnetic closure gift box bulk","packaging box printing","gift boxes","cosmetic boxes","food boxes","mailer boxes","corrugated boxes","custom packaging","rigid boxes","folding cartons","product boxes","100pcs MOQ","2-day turnaround","FSC certified","food safety compliance","QR code packaging","mid-autumn gift box printing","health supplement packaging","free proof","free layout","export packaging","cosmetic packaging box","instant quote","compostable packaging","small batch packaging box","industrial packaging","color box printing","drawer color box","sustainable packaging","silver foil printing","eco packaging box","corrugated box","corrugated box printing","magnetic box","gift color box","window design","festival packaging box","green printing","rush printing","beauty packaging","pharmaceutical packaging box","moisture-proof packaging","food-grade box","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
         "body": "Custom magnetic closure gift box designed for US small business, DTC brands, and cross-border e-commerce. Free design mockup, no setup fees, and Free Shipping on US orders over $99. Every order ships from our Asia factory with 4-day delivery to the lower 48 states. ISO 9001 certified production with full FDA compliance where applicable.\n\nMagnetic Closure Gift Box are widely used across gift packaging and luxury retail boxes, cosmetic and skincare product packaging, and DTC e-commerce shipping and subscription boxes — whether you are launching a new product line, refreshing your retail shelf presence, or shipping promotional materials to a nationwide customer base. The packaging market rewards brands that ship fast, iterate often, and stay under tight unit-cost targets — that is exactly what our magnetic closure gift box service is built for.\n\nMaterial options include 350g coated card with matte lamination (standard box) for everyday high-volume use, Corrugated B-flute (heavy-duty shipping box) for premium applications, and Rigid setup box with magnetic closure (premium gift) for specialty projects. All three are FSC-certified paper, soy-based ink and FDA-safe for indirect food contact (food-grade options), so you can ship into the US market without compliance friction. Print finishes include matte lamination, gloss lamination, spot UV, foil stamping, and full-color CMYK plus white ink where supported.\n\nSubmit print-ready files (300 DPI, CMYK, 3mm bleed, outlined fonts) and we ship a free digital proof within 2 hours. If you do not have design files yet, our in-house design team will mock up your concept at no charge — just share your brand colors, logo, and any reference photos via WhatsApp. We also offer free dieline templates for every standard size.\n\nPricing is transparent: 100-piece minimum, no setup fees, no plate fees, and Free Shipping on US orders over $99. Standard turnaround is 4 business days for production plus 4-day USA delivery. Rush orders (24-hour proof plus 2-day production) available for an additional 20%. Get an instant quote via the 30-second AI estimator on the product page, or message us on WhatsApp for a custom run.\n\n**FAQ**\n\n**Q1: What box styles are available?**\nTuck-end boxes (auto-lock, straight tuck, reverse tuck), setup boxes (rigid lid-and-base), magnetic closure boxes, drawer/slider boxes, mailer boxes (corrugated), and custom die-cut shapes. We provide free dieline templates for all standard styles.\n\n**Q2: What is the minimum order quantity?**\n100 boxes minimum (no setup fees, no die fees for standard sizes). Custom sizes / die-cut MOQ is 500. Standard production 5-7 business days plus 4-day USA delivery.\n\n**Q3: Can I get a 3D mockup before bulk order?**\nYes — we send a free 3D render within 4 hours of file submission. For physical samples, we offer a paid sample pack ($49) shipped via DHL Express with your custom design on the actual box stock.\n\n**Q4: Are the boxes safe for food products?**\nOur food-grade box options use FDA-safe adhesive and food-contact-safe inks, certified for indirect food contact (oatmeal, tea, chocolate, snacks). For direct food contact (candy bars, fresh fruit), we offer specialized food-grade linings. Share your food product type and we will recommend the right stock.\n\nReady to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA pickup available for orders placed before 11 AM EST in major US cities."
       
       },
@@ -4002,7 +4002,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "マグネット式ギフトボックス | カスタム印刷 | ZprintPro",
         "description": "マグネット式ギフトボックス印刷サービス、高品質特殊紙採用でマグネット蓋がピタッと閉まる高級感。ギフトブランド・アパレル向け短納期対応、100個〜少量対応、日本向けDHL配送2-4日。無料デザインサポート、複数回修正OK。| ZprintPro智印雲",
         "h1": " magnetic closure gift box",
-        "keywords": ["マグネット式ギフトボックス", "magnetic closure gift box", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "香港衛生署", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
+        "keywords": ["マグネット式ギフトボックス", "magnetic closure gift box", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "日本の食品衛生基準", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
         "body": "カスタム マグネット蓋ギフトボックス — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FSC 認証紙、大豆油性インク、FDA セーフ（間接食品接触対応）。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\nマグネット蓋ギフトボックス は ギフトパッケージ・高級小売箱、化粧品・スキンケア製品パッケージ、DTC EC 配送・サブスクリプションボックス の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。packaging 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに マグネット蓋ギフトボックス サービスの設計思想です。\n\n素材は 350g コート紙 + マットラミネート（標準箱）（日常大量使用）、B フルート段ボール（強化配送箱）（プレミアム用途、主力選択）、硬質セットアップ箱 + マグネット蓋（プレミアムギフト）（特殊プロジェクト）の 3 種類。すべて FSC 認証紙、大豆油性インク および FDA セーフ（間接食品接触対応） 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、packaging 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: どんな箱スタイルが対応可能ですか？**\nTuck-end 箱（オートロック、ストレートタック、リバースタック）、セットアップ箱（硬質蓋底）、マグネット蓋箱、引き出し式箱、宅配段ボール箱、オリジナルダイカット形状。すべての標準スタイルに無料型紙テンプレートをご用意。\n\n**Q2: 最小注文数量は？**\n100 個から（標準サイズ版代・型代ゼロ）。カスタムサイズ / ダイカットは 500 個から。標準納期 5-7 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前に 3D モックアップは見られますか？**\nはい — データ提出から 4 時間以内に無料 3D レンダリングをお届け。実物サンプルは有償（¥4,980）で DHL Express にて、お客様デザイン実物印刷入りでお届け。\n\n**Q4: 食品接触対応ですか？**\n食品グレード箱は FDA セーフ接着剤と食品接触対応インク使用、間接食品接触（オートミール、茶、チョコ、スナック）認証済み。直接食品接触（キャンディ、フルーツ）は専用食品グレードライニング対応。食品種別をお知らせいただければ最適素材をご提案します。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
       }
     },
@@ -4014,7 +4014,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "磁吸翻蓋禮盒 - 香港本地印刷 智印雲 | 香港印刷 | ZprintPro智印雲",
       "en": "Custom Magnetic Closure Gift Box for pet food and brand labels — ZprintPro智印雲",
-      "ja": "マグネット式ギフトボックス - 香港印刷 ZprintPro"
+      "ja": "マグネット式ギフトボックス | ZprintPro"
     }
   },
 
@@ -4036,7 +4036,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Electronics Packaging Box | Free Shipping $99+ | ZprintPro",
         "description": "Custom electronics packaging box from ZprintPro the US. Eco-Friendly Material, 4-color CMYK. 100-MOQ | Free Design | 100 MOQ DHL 2-4 day US delivery.",
         "h1": "Electronics Packaging Box 100+ | ZprintPro",
-        "keywords": ["electronics packaging box","custom electronics packaging box","electronics packaging box free shipping","electronics packaging box USD","bulk electronics packaging box","electronics packaging box DHL","bespoke electronics packaging box","electronics packaging box wholesale","electronics packaging box pricing","electronics packaging box bulk","packaging box printing","gift boxes","cosmetic boxes","food boxes","mailer boxes","corrugated boxes","custom packaging","rigid boxes","folding cartons","product boxes","100pcs MOQ","2-day turnaround","FSC certified","HK DOH compliance","QR code packaging","mid-autumn gift box printing","health supplement packaging","free proof","free layout","export packaging","cosmetic packaging box","instant quote","compostable packaging","small batch packaging box","industrial packaging","color box printing","drawer color box","sustainable packaging","silver foil printing","eco packaging box","corrugated box","corrugated box printing","magnetic box","gift color box","window design","festival packaging box","green printing","rush printing","beauty packaging","pharmaceutical packaging box","moisture-proof packaging","food-grade box","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
+        "keywords": ["electronics packaging box","custom electronics packaging box","electronics packaging box free shipping","electronics packaging box USD","bulk electronics packaging box","electronics packaging box DHL","bespoke electronics packaging box","electronics packaging box wholesale","electronics packaging box pricing","electronics packaging box bulk","packaging box printing","gift boxes","cosmetic boxes","food boxes","mailer boxes","corrugated boxes","custom packaging","rigid boxes","folding cartons","product boxes","100pcs MOQ","2-day turnaround","FSC certified","food safety compliance","QR code packaging","mid-autumn gift box printing","health supplement packaging","free proof","free layout","export packaging","cosmetic packaging box","instant quote","compostable packaging","small batch packaging box","industrial packaging","color box printing","drawer color box","sustainable packaging","silver foil printing","eco packaging box","corrugated box","corrugated box printing","magnetic box","gift color box","window design","festival packaging box","green printing","rush printing","beauty packaging","pharmaceutical packaging box","moisture-proof packaging","food-grade box","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
         "body": "Custom electronics packaging box designed for US small business, DTC brands, and cross-border e-commerce. Free design mockup, no setup fees, and Free Shipping on US orders over $99. Every order ships from our Asia factory with 4-day delivery to the lower 48 states. ISO 9001 certified production with full FDA compliance where applicable.\n\nElectronics Packaging Box are widely used across gift packaging and luxury retail boxes, cosmetic and skincare product packaging, and DTC e-commerce shipping and subscription boxes — whether you are launching a new product line, refreshing your retail shelf presence, or shipping promotional materials to a nationwide customer base. The packaging market rewards brands that ship fast, iterate often, and stay under tight unit-cost targets — that is exactly what our electronics packaging box service is built for.\n\nMaterial options include 350g coated card with matte lamination (standard box) for everyday high-volume use, Corrugated B-flute (heavy-duty shipping box) for premium applications, and Rigid setup box with magnetic closure (premium gift) for specialty projects. All three are FSC-certified paper, soy-based ink and FDA-safe for indirect food contact (food-grade options), so you can ship into the US market without compliance friction. Print finishes include matte lamination, gloss lamination, spot UV, foil stamping, and full-color CMYK plus white ink where supported.\n\nSubmit print-ready files (300 DPI, CMYK, 3mm bleed, outlined fonts) and we ship a free digital proof within 2 hours. If you do not have design files yet, our in-house design team will mock up your concept at no charge — just share your brand colors, logo, and any reference photos via WhatsApp. We also offer free dieline templates for every standard size.\n\nPricing is transparent: 100-piece minimum, no setup fees, no plate fees, and Free Shipping on US orders over $99. Standard turnaround is 4 business days for production plus 4-day USA delivery. Rush orders (24-hour proof plus 2-day production) available for an additional 20%. Get an instant quote via the 30-second AI estimator on the product page, or message us on WhatsApp for a custom run.\n\n**FAQ**\n\n**Q1: What box styles are available?**\nTuck-end boxes (auto-lock, straight tuck, reverse tuck), setup boxes (rigid lid-and-base), magnetic closure boxes, drawer/slider boxes, mailer boxes (corrugated), and custom die-cut shapes. We provide free dieline templates for all standard styles.\n\n**Q2: What is the minimum order quantity?**\n100 boxes minimum (no setup fees, no die fees for standard sizes). Custom sizes / die-cut MOQ is 500. Standard production 5-7 business days plus 4-day USA delivery.\n\n**Q3: Can I get a 3D mockup before bulk order?**\nYes — we send a free 3D render within 4 hours of file submission. For physical samples, we offer a paid sample pack ($49) shipped via DHL Express with your custom design on the actual box stock.\n\n**Q4: Are the boxes safe for food products?**\nOur food-grade box options use FDA-safe adhesive and food-contact-safe inks, certified for indirect food contact (oatmeal, tea, chocolate, snacks). For direct food contact (candy bars, fresh fruit), we offer specialized food-grade linings. Share your food product type and we will recommend the right stock.\n\nReady to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA pickup available for orders placed before 11 AM EST in major US cities."
       
       },
@@ -4044,7 +4044,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "電子製品包装箱 | カスタム印刷 | ZprintPro",
         "description": "電子製品パッケージボックス印刷サービス、静電気防止加工オプション標準装備。EC・D2Cブランド・精密機器メーカー向け、100個〜少量対応、日本向けDHL短納期配送2-4日追跡番号付き。無料デザインサポート、安全素材採用で商品保護強化、複数回修正OK。| ZprintPro智印雲",
         "h1": " electronics packaging box",
-        "keywords": ["電子製品包装箱", "electronics packaging box", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "香港衛生署", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
+        "keywords": ["電子製品包装箱", "electronics packaging box", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "日本の食品衛生基準", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
         "body": "カスタム 電子機器包裝箱 — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FSC 認証紙、大豆油性インク、FDA セーフ（間接食品接触対応）。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\n電子機器包裝箱 は ギフトパッケージ・高級小売箱、化粧品・スキンケア製品パッケージ、DTC EC 配送・サブスクリプションボックス の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。packaging 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに 電子機器包裝箱 サービスの設計思想です。\n\n素材は 350g コート紙 + マットラミネート（標準箱）（日常大量使用）、B フルート段ボール（強化配送箱）（プレミアム用途、主力選択）、硬質セットアップ箱 + マグネット蓋（プレミアムギフト）（特殊プロジェクト）の 3 種類。すべて FSC 認証紙、大豆油性インク および FDA セーフ（間接食品接触対応） 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、packaging 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: どんな箱スタイルが対応可能ですか？**\nTuck-end 箱（オートロック、ストレートタック、リバースタック）、セットアップ箱（硬質蓋底）、マグネット蓋箱、引き出し式箱、宅配段ボール箱、オリジナルダイカット形状。すべての標準スタイルに無料型紙テンプレートをご用意。\n\n**Q2: 最小注文数量は？**\n100 個から（標準サイズ版代・型代ゼロ）。カスタムサイズ / ダイカットは 500 個から。標準納期 5-7 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前に 3D モックアップは見られますか？**\nはい — データ提出から 4 時間以内に無料 3D レンダリングをお届け。実物サンプルは有償（¥4,980）で DHL Express にて、お客様デザイン実物印刷入りでお届け。\n\n**Q4: 食品接触対応ですか？**\n食品グレード箱は FDA セーフ接着剤と食品接触対応インク使用、間接食品接触（オートミール、茶、チョコ、スナック）認証済み。直接食品接触（キャンディ、フルーツ）は専用食品グレードライニング対応。食品種別をお知らせいただければ最適素材をご提案します。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
       }
     },
@@ -4056,7 +4056,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "電子產品包裝盒 - 香港本地印刷 智印雲",
       "en": "Custom Electronics Packaging Box for pet food and brand labels — ZprintPro智印雲",
-      "ja": "電子製品包装箱 - 香港印刷 ZprintPro"
+      "ja": "電子製品包装箱 | ZprintPro"
     }
   },
 
@@ -4078,7 +4078,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Kraft Paper Packaging Box | Free Shipping $99+ | ZprintPro",
         "description": "Custom kraft paper packaging box from ZprintPro the US. Eco-Friendly Material, 4-color CMYK. 100-MOQ | Free Design | 100 MOQ DHL 2-4 day US delivery.",
         "h1": "Kraft Paper Packaging Box 100+ | ZprintPro",
-        "keywords": ["kraft paper packaging box","custom kraft paper packaging box","kraft paper packaging box free shipping","kraft paper packaging box USD","bulk kraft paper packaging box","kraft paper packaging box DHL","bespoke kraft paper packaging box","kraft paper packaging box wholesale","kraft paper packaging box pricing","kraft paper packaging box bulk","packaging box printing","gift boxes","cosmetic boxes","food boxes","mailer boxes","corrugated boxes","custom packaging","rigid boxes","folding cartons","product boxes","100pcs MOQ","2-day turnaround","FSC certified","HK DOH compliance","QR code packaging","mid-autumn gift box printing","health supplement packaging","free proof","free layout","export packaging","cosmetic packaging box","instant quote","compostable packaging","small batch packaging box","industrial packaging","color box printing","drawer color box","sustainable packaging","silver foil printing","eco packaging box","corrugated box","corrugated box printing","magnetic box","gift color box","window design","festival packaging box","green printing","rush printing","beauty packaging","pharmaceutical packaging box","moisture-proof packaging","food-grade box","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
+        "keywords": ["kraft paper packaging box","custom kraft paper packaging box","kraft paper packaging box free shipping","kraft paper packaging box USD","bulk kraft paper packaging box","kraft paper packaging box DHL","bespoke kraft paper packaging box","kraft paper packaging box wholesale","kraft paper packaging box pricing","kraft paper packaging box bulk","packaging box printing","gift boxes","cosmetic boxes","food boxes","mailer boxes","corrugated boxes","custom packaging","rigid boxes","folding cartons","product boxes","100pcs MOQ","2-day turnaround","FSC certified","food safety compliance","QR code packaging","mid-autumn gift box printing","health supplement packaging","free proof","free layout","export packaging","cosmetic packaging box","instant quote","compostable packaging","small batch packaging box","industrial packaging","color box printing","drawer color box","sustainable packaging","silver foil printing","eco packaging box","corrugated box","corrugated box printing","magnetic box","gift color box","window design","festival packaging box","green printing","rush printing","beauty packaging","pharmaceutical packaging box","moisture-proof packaging","food-grade box","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
         "body": "Custom kraft paper packaging box designed for US small business, DTC brands, and cross-border e-commerce. Free design mockup, no setup fees, and Free Shipping on US orders over $99. Every order ships from our Asia factory with 4-day delivery to the lower 48 states. ISO 9001 certified production with full FDA compliance where applicable.\n\nKraft Paper Packaging Box are widely used across gift packaging and luxury retail boxes, cosmetic and skincare product packaging, and DTC e-commerce shipping and subscription boxes — whether you are launching a new product line, refreshing your retail shelf presence, or shipping promotional materials to a nationwide customer base. The packaging market rewards brands that ship fast, iterate often, and stay under tight unit-cost targets — that is exactly what our kraft paper packaging box service is built for.\n\nMaterial options include 350g coated card with matte lamination (standard box) for everyday high-volume use, Corrugated B-flute (heavy-duty shipping box) for premium applications, and Rigid setup box with magnetic closure (premium gift) for specialty projects. All three are FSC-certified paper, soy-based ink and FDA-safe for indirect food contact (food-grade options), so you can ship into the US market without compliance friction. Print finishes include matte lamination, gloss lamination, spot UV, foil stamping, and full-color CMYK plus white ink where supported.\n\nSubmit print-ready files (300 DPI, CMYK, 3mm bleed, outlined fonts) and we ship a free digital proof within 2 hours. If you do not have design files yet, our in-house design team will mock up your concept at no charge — just share your brand colors, logo, and any reference photos via WhatsApp. We also offer free dieline templates for every standard size.\n\nPricing is transparent: 100-piece minimum, no setup fees, no plate fees, and Free Shipping on US orders over $99. Standard turnaround is 4 business days for production plus 4-day USA delivery. Rush orders (24-hour proof plus 2-day production) available for an additional 20%. Get an instant quote via the 30-second AI estimator on the product page, or message us on WhatsApp for a custom run.\n\n**FAQ**\n\n**Q1: What box styles are available?**\nTuck-end boxes (auto-lock, straight tuck, reverse tuck), setup boxes (rigid lid-and-base), magnetic closure boxes, drawer/slider boxes, mailer boxes (corrugated), and custom die-cut shapes. We provide free dieline templates for all standard styles.\n\n**Q2: What is the minimum order quantity?**\n100 boxes minimum (no setup fees, no die fees for standard sizes). Custom sizes / die-cut MOQ is 500. Standard production 5-7 business days plus 4-day USA delivery.\n\n**Q3: Can I get a 3D mockup before bulk order?**\nYes — we send a free 3D render within 4 hours of file submission. For physical samples, we offer a paid sample pack ($49) shipped via DHL Express with your custom design on the actual box stock.\n\n**Q4: Are the boxes safe for food products?**\nOur food-grade box options use FDA-safe adhesive and food-contact-safe inks, certified for indirect food contact (oatmeal, tea, chocolate, snacks). For direct food contact (candy bars, fresh fruit), we offer specialized food-grade linings. Share your food product type and we will recommend the right stock.\n\nReady to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA pickup available for orders placed before 11 AM EST in major US cities."
       
       },
@@ -4086,7 +4086,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "クラフト紙包装箱 | カスタム印刷 | ZprintPro",
         "description": "クラフト紙パッケージボックス印刷サービス、FSC認証クラフト紙採用でエコ志向ブランドに最適。100個〜即日発送対応、ナチュラル・北欧・カフェブランド向けカスタム印刷、日本向けDHL配送2-4日。無料デザインサポート。| ZprintPro智印雲",
         "h1": " kraft paper packaging box",
-        "keywords": ["クラフト紙包装箱", "kraft paper packaging box", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "香港衛生署", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
+        "keywords": ["クラフト紙包装箱", "kraft paper packaging box", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "日本の食品衛生基準", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
         "body": "カスタム クラフト紙箱印刷 — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FSC 認証紙、大豆油性インク、FDA セーフ（間接食品接触対応）。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\nクラフト紙箱印刷 は ギフトパッケージ・高級小売箱、化粧品・スキンケア製品パッケージ、DTC EC 配送・サブスクリプションボックス の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。packaging 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに クラフト紙箱印刷 サービスの設計思想です。\n\n素材は 350g コート紙 + マットラミネート（標準箱）（日常大量使用）、B フルート段ボール（強化配送箱）（プレミアム用途、主力選択）、硬質セットアップ箱 + マグネット蓋（プレミアムギフト）（特殊プロジェクト）の 3 種類。すべて FSC 認証紙、大豆油性インク および FDA セーフ（間接食品接触対応） 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、packaging 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: どんな箱スタイルが対応可能ですか？**\nTuck-end 箱（オートロック、ストレートタック、リバースタック）、セットアップ箱（硬質蓋底）、マグネット蓋箱、引き出し式箱、宅配段ボール箱、オリジナルダイカット形状。すべての標準スタイルに無料型紙テンプレートをご用意。\n\n**Q2: 最小注文数量は？**\n100 個から（標準サイズ版代・型代ゼロ）。カスタムサイズ / ダイカットは 500 個から。標準納期 5-7 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前に 3D モックアップは見られますか？**\nはい — データ提出から 4 時間以内に無料 3D レンダリングをお届け。実物サンプルは有償（¥4,980）で DHL Express にて、お客様デザイン実物印刷入りでお届け。\n\n**Q4: 食品接触対応ですか？**\n食品グレード箱は FDA セーフ接着剤と食品接触対応インク使用、間接食品接触（オートミール、茶、チョコ、スナック）認証済み。直接食品接触（キャンディ、フルーツ）は専用食品グレードライニング対応。食品種別をお知らせいただければ最適素材をご提案します。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
       }
     },
@@ -4098,7 +4098,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "牛皮紙包裝印刷盒 - 香港本地印刷 智印雲",
       "en": "Custom Kraft Paper Packaging Box for pet food and brand labels — ZprintPro智印雲",
-      "ja": "クラフト紙包装箱 - 香港印刷 ZprintPro"
+      "ja": "クラフト紙包装箱 | ZprintPro"
     }
   },
 
@@ -4120,7 +4120,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "Drawer Slide Gift Box | Free Shipping $99+ | ZprintPro",
         "description": "Custom drawer slide gift box from ZprintPro the US. Ribbon Pull, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
         "h1": "Drawer Slide Gift Box 100+ | ZprintPro",
-        "keywords": ["drawer slide gift box","custom drawer slide gift box","drawer slide gift box free shipping","drawer slide gift box USD","bulk drawer slide gift box","drawer slide gift box DHL","bespoke drawer slide gift box","drawer slide gift box wholesale","drawer slide gift box pricing","drawer slide gift box bulk","packaging box printing","gift boxes","cosmetic boxes","food boxes","mailer boxes","corrugated boxes","custom packaging","rigid boxes","folding cartons","product boxes","100pcs MOQ","2-day turnaround","FSC certified","HK DOH compliance","QR code packaging","mid-autumn gift box printing","health supplement packaging","free proof","free layout","export packaging","cosmetic packaging box","instant quote","compostable packaging","small batch packaging box","industrial packaging","color box printing","drawer color box","sustainable packaging","silver foil printing","eco packaging box","corrugated box","corrugated box printing","magnetic box","gift color box","window design","festival packaging box","green printing","rush printing","beauty packaging","pharmaceutical packaging box","moisture-proof packaging","food-grade box","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
+        "keywords": ["drawer slide gift box","custom drawer slide gift box","drawer slide gift box free shipping","drawer slide gift box USD","bulk drawer slide gift box","drawer slide gift box DHL","bespoke drawer slide gift box","drawer slide gift box wholesale","drawer slide gift box pricing","drawer slide gift box bulk","packaging box printing","gift boxes","cosmetic boxes","food boxes","mailer boxes","corrugated boxes","custom packaging","rigid boxes","folding cartons","product boxes","100pcs MOQ","2-day turnaround","FSC certified","food safety compliance","QR code packaging","mid-autumn gift box printing","health supplement packaging","free proof","free layout","export packaging","cosmetic packaging box","instant quote","compostable packaging","small batch packaging box","industrial packaging","color box printing","drawer color box","sustainable packaging","silver foil printing","eco packaging box","corrugated box","corrugated box printing","magnetic box","gift color box","window design","festival packaging box","green printing","rush printing","beauty packaging","pharmaceutical packaging box","moisture-proof packaging","food-grade box","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
         "body": "Custom drawer slide gift box designed for US small business, DTC brands, and cross-border e-commerce. Free design mockup, no setup fees, and Free Shipping on US orders over $99. Every order ships from our Asia factory with 4-day delivery to the lower 48 states. ISO 9001 certified production with full FDA compliance where applicable.\n\nDrawer Slide Gift Box are widely used across gift packaging and luxury retail boxes, cosmetic and skincare product packaging, and DTC e-commerce shipping and subscription boxes — whether you are launching a new product line, refreshing your retail shelf presence, or shipping promotional materials to a nationwide customer base. The packaging market rewards brands that ship fast, iterate often, and stay under tight unit-cost targets — that is exactly what our drawer slide gift box service is built for.\n\nMaterial options include 350g coated card with matte lamination (standard box) for everyday high-volume use, Corrugated B-flute (heavy-duty shipping box) for premium applications, and Rigid setup box with magnetic closure (premium gift) for specialty projects. All three are FSC-certified paper, soy-based ink and FDA-safe for indirect food contact (food-grade options), so you can ship into the US market without compliance friction. Print finishes include matte lamination, gloss lamination, spot UV, foil stamping, and full-color CMYK plus white ink where supported.\n\nSubmit print-ready files (300 DPI, CMYK, 3mm bleed, outlined fonts) and we ship a free digital proof within 2 hours. If you do not have design files yet, our in-house design team will mock up your concept at no charge — just share your brand colors, logo, and any reference photos via WhatsApp. We also offer free dieline templates for every standard size.\n\nPricing is transparent: 100-piece minimum, no setup fees, no plate fees, and Free Shipping on US orders over $99. Standard turnaround is 4 business days for production plus 4-day USA delivery. Rush orders (24-hour proof plus 2-day production) available for an additional 20%. Get an instant quote via the 30-second AI estimator on the product page, or message us on WhatsApp for a custom run.\n\n**FAQ**\n\n**Q1: What box styles are available?**\nTuck-end boxes (auto-lock, straight tuck, reverse tuck), setup boxes (rigid lid-and-base), magnetic closure boxes, drawer/slider boxes, mailer boxes (corrugated), and custom die-cut shapes. We provide free dieline templates for all standard styles.\n\n**Q2: What is the minimum order quantity?**\n100 boxes minimum (no setup fees, no die fees for standard sizes). Custom sizes / die-cut MOQ is 500. Standard production 5-7 business days plus 4-day USA delivery.\n\n**Q3: Can I get a 3D mockup before bulk order?**\nYes — we send a free 3D render within 4 hours of file submission. For physical samples, we offer a paid sample pack ($49) shipped via DHL Express with your custom design on the actual box stock.\n\n**Q4: Are the boxes safe for food products?**\nOur food-grade box options use FDA-safe adhesive and food-contact-safe inks, certified for indirect food contact (oatmeal, tea, chocolate, snacks). For direct food contact (candy bars, fresh fruit), we offer specialized food-grade linings. Share your food product type and we will recommend the right stock.\n\nReady to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA pickup available for orders placed before 11 AM EST in major US cities."
       
       },
@@ -4128,7 +4128,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "title": "引き出し式ギフトボックス | カスタム印刷 | ZprintPro",
         "description": "引き出し式ギフトボックス印刷サービス、高級特殊紙採用でスルスル引き心地滑らか。ギフトブランド・ジュエリー・化粧品向け短納期対応、100個〜少量対応、日本向けDHL配送2-4日。無料デザインサポート、複数回修正OK。| ZprintPro智印雲",
         "h1": " drawer slide gift box",
-        "keywords": ["引き出し式ギフトボックス", "drawer slide gift box", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "香港衛生署", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
+        "keywords": ["引き出し式ギフトボックス", "drawer slide gift box", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "日本の食品衛生基準", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
         "body": "カスタム 引き出し式ギフトボックス — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FSC 認証紙、大豆油性インク、FDA セーフ（間接食品接触対応）。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\n引き出し式ギフトボックス は ギフトパッケージ・高級小売箱、化粧品・スキンケア製品パッケージ、DTC EC 配送・サブスクリプションボックス の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。packaging 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに 引き出し式ギフトボックス サービスの設計思想です。\n\n素材は 350g コート紙 + マットラミネート（標準箱）（日常大量使用）、B フルート段ボール（強化配送箱）（プレミアム用途、主力選択）、硬質セットアップ箱 + マグネット蓋（プレミアムギフト）（特殊プロジェクト）の 3 種類。すべて FSC 認証紙、大豆油性インク および FDA セーフ（間接食品接触対応） 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、packaging 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: どんな箱スタイルが対応可能ですか？**\nTuck-end 箱（オートロック、ストレートタック、リバースタック）、セットアップ箱（硬質蓋底）、マグネット蓋箱、引き出し式箱、宅配段ボール箱、オリジナルダイカット形状。すべての標準スタイルに無料型紙テンプレートをご用意。\n\n**Q2: 最小注文数量は？**\n100 個から（標準サイズ版代・型代ゼロ）。カスタムサイズ / ダイカットは 500 個から。標準納期 5-7 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前に 3D モックアップは見られますか？**\nはい — データ提出から 4 時間以内に無料 3D レンダリングをお届け。実物サンプルは有償（¥4,980）で DHL Express にて、お客様デザイン実物印刷入りでお届け。\n\n**Q4: 食品接触対応ですか？**\n食品グレード箱は FDA セーフ接着剤と食品接触対応インク使用、間接食品接触（オートミール、茶、チョコ、スナック）認証済み。直接食品接触（キャンディ、フルーツ）は専用食品グレードライニング対応。食品種別をお知らせいただければ最適素材をご提案します。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
       }
     },
@@ -4140,7 +4140,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "抽屜式禮盒印刷 - 香港本地印刷 智印雲",
       "en": "Custom Drawer Slide Gift Box for pet food and brand labels — ZprintPro智印雲",
-      "ja": "引き出し式ギフトボックス - 香港印刷 ZprintPro"
+      "ja": "引き出し式ギフトボックス | ZprintPro"
     }
   },
 
@@ -4182,7 +4182,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "水果及食品標籤印刷 - 香港本地印刷 智印雲",
       "en": "Custom Food Label Stickers for pet food and brand labels — ZprintPro智印雲",
-      "ja": "フルーツ・食品ラベル印刷 - 香港印刷 ZprintPro"
+      "ja": "フルーツ・食品ラベル印刷 | ZprintPro"
     }
   },
 
@@ -4226,7 +4226,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       {
         "q": "DHL で日本まで何日で届きますか？",
-        "a": "深圳自社工場から DHL Express で 2-4 営業日でお届けします。"
+        "a": "アジア自社工場から DHL Express で 2-4 営業日でお届けします。"
       },
     ],
     "imageAlt": {
@@ -4463,7 +4463,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "imageAlt": {
       "zh-hk": "香港畢業紀念冊 / 校園印刷 | 香港畢業紀念冊印刷 環保紙 | ZprintPro智印雲",
       "en": "Graduation Yearbook Printing / School Publication | Free Design Mockup Free Shipping | ZprintPro",
-      "ja": "卒業記念アルバム / 校園印刷 | 香港卒業記念アルバム印刷 環保紙 | ZprintPro智印雲"
+      "ja": "卒業記念アルバム / 校園印刷 | 卒業記念アルバム印刷 環保紙 | ZprintPro智印雲"
     },
     "faqs": [
       { "q": "畢業紀念冊印刷", "a": "香港畢業紀念冊 50 本起印, 騎馬釘 / 膠裝 / 精裝三種裝訂可選" },

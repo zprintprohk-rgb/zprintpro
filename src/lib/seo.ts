@@ -18,9 +18,9 @@ export const siteConfig = {
   logo: 'https://zprintpro.com/logo-icon.svg',
   // 2026-07-13: 全站 canonical 1 句品牌描述 (per-locale 文案以 translations.<locale>.metaDesc 為準)
   // 用於 Schema.org default og:description / email signature / press-kit fallback
-  // 注意 NAP vs SEO 脫鉤 (§13.10): 不寫 supplier origin 城市, 用 "Hong Kong-rooted" 品牌定位
+  // 注意 NAP vs SEO 脫鉤 (§13.10): 不寫 supplier origin 城市, 用 global printing partner 品牌定位
   description:
-    'ZprintPro is a Hong Kong-rooted, global printing partner for businesses, schools, and creative teams — premium custom printing with ISO 9001 + FSC certification, 30-second AI quotes, free design mockups, no minimums, and worldwide delivery to 50+ countries.',
+    'ZprintPro is a global printing partner for businesses, schools, and creative teams — premium custom printing with ISO 9001 + FSC certification, 30-second AI quotes, free design mockups, no minimums, and worldwide delivery to 50+ countries.',
   // 2026-06-15 P0: NAP 统一修复
   // 2026-06-28 修正: zh-hk NAP.telephone 之前写 "+852 5905 1334" 假号, 客户拨不通 → 改真实 +86 198 8085 1334
   // NAP schema.telephone 跟 address.country 无强匹配要求, HK 地址 + +86 电话 GSC 不扣分
@@ -450,7 +450,7 @@ const categorySeoData: Record<string, {
     descriptions: {
       'zh-hk': '同人誌及日系ACG周邊印刷專家。A5/B5 同人誌 10 本起印、亞克力鑰匙扣 / 立牌 / 罐型襟章 / 明信片套裝 / 環保托特袋。Comiket 前 24 小時特急対応,深圳工廠 DHL Express 2-4 日直送日本。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。繁體中文客服,日本在地支援。',
       en: 'Professional doujinshi & Japanese ACG merchandise printing. A5/B5 doujinshi from 10 MOQ, acrylic keychains/stands, can badges, postcard sets, eco tote bags. 24-hour rush before Comiket. Free shipping over $99 to USA + global. FSC paper, ISO 12647 color, ISO 9001 certified. English & Japanese support. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
-      ja: '同人誌・推し活特化の印刷サービス。A5/B5 同人誌 10 部から対応、アクリルキーホルダー・スタンド・缶バッジ・ポストカード・エコトートバッグ。コミケ前 24 時間特急対応可能。深圳自社工場から DHL Express で 2-4 営業日でお届け。FSC 認証紙、ISO 12647 色彩管理、ISO 9001 取得。日本語サポート完備。',
+      ja: '同人誌・推し活特化の印刷サービス。A5/B5 同人誌 10 部から対応、アクリルキーホルダー・スタンド・缶バッジ・ポストカード・エコトートバッグ。コミケ前 24 時間特急対応可能。アジア自社工場から DHL Express で 2-4 営業日でお届け。FSC 認証紙、ISO 12647 色彩管理、ISO 9001 取得。日本語サポート完備。',
     },
   },
   'envelopes': {
@@ -625,7 +625,7 @@ export const CATEGORY_INDUSTRIES: Record<string, {
   'menus': {
     'zh-hk': ['茶餐廳', '西餐廳', '酒吧', '咖啡店', '外賣平台'],
     en: ['Cha chaan teng & cafes', 'Western restaurants', 'Bars & pubs', 'Coffee shops', 'Food delivery platforms'],
-    ja: ['香港式茶餐廳', '西洋料理', 'バー・パブ', 'カフェ', 'デリバリー'],
+    ja: ['中華料理・飲茶', '西洋料理', 'バー・パブ', 'カフェ', 'デリバリー'],
   },
   'red-packets': {
     'zh-hk': ['婚慶喜宴', '企業年會', '卡通 IP 授權', '茶飲品牌', '銀行客戶'],
@@ -1000,9 +1000,9 @@ export function generatePrintShopSchema(locale: Locale = 'zh-hk'): SchemaOrgData
       ],
     },
     'description': locale === 'ja'
-      ? '深圳実体の国際印刷サービス。ステッカー・フライヤー・パッケージ・紙袋・ラベルを高品質で世界中へ。30秒AI見積もり、72時間国際配送、日本語サポート対応。'
+      ? 'アジア実体の国際印刷サービス。ステッカー・フライヤー・パッケージ・紙袋・ラベルを高品質で世界中へ。30秒AI見積もり、72時間国際配送、日本語サポート対応。'
       : locale === 'en'
-        ? 'Shenzhen-based international printing service. Stickers, flyers, packaging, paper bags, labels — high quality, worldwide shipping. 30-second AI quote, 72-hour international delivery.'
+        ? 'Asia-based international printing service. Stickers, flyers, packaging, paper bags, labels — high quality, worldwide shipping. 30-second AI quote, 72-hour international delivery.'
         : '深圳實體的國際印刷服務 — 為香港市場提供高質素貼紙、宣傳單張、包裝盒定制、紙袋、標籤貼紙等。線上30秒獲取初步報價，複雜需求由專人人工核價。跨境配送，72小時快速交付。',
   };
 }
@@ -1244,7 +1244,7 @@ export function generateProductImageJsonLd(
   const caption = locale === 'zh-hk'
     ? `${productName} - ZPrintPro 深圳實體工廠專業印刷，${urls.length}張高清產品圖詳情展示`
     : locale === 'ja'
-    ? `${productName} - ZPrintPro 深圳自社工場の專業印刷、${urls.length}枚の高画質商品画像`
+    ? `${productName} - ZPrintPro アジア自社工場の專業印刷、${urls.length}枚の高画質商品画像`
     : `${productName} - ZPrintPro professional printing from our Shenzhen factory, ${urls.length} detailed high-res product images`;
 
   const creditText = locale === 'zh-hk'

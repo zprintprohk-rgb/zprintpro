@@ -82,9 +82,9 @@ const translations = {
 };
 
 const popularQueries: Record<string, string[]> = {
-  'zh-hk': ['宣傳單張', '咭片', '貼紙', '紙袋', '包裝盒'],
-  en: ['Flyers', 'Business Cards', 'Stickers', 'Paper Bags', 'Packaging'],
-  ja: ['チラシ', '名刺', 'ステッカー', '紙袋', 'パッケージ'],
+  'zh-hk': ['宣傳單張', '貼紙', '紙袋', '包裝盒', '標籤'],
+  en: ['Flyers', 'Stickers', 'Paper Bags', 'Packaging', 'Labels'],
+  ja: ['チラシ', 'ステッカー', '紙袋', 'パッケージ', 'ラベル'],
 };
 
 export function SearchDropdown({

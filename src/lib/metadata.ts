@@ -69,7 +69,7 @@ export function generateProductTitle(productName: string, locale: Locale, price?
   const templates: Record<Locale, (name: string, price: string) => string> = {
     'zh-hk': (n, p) => `${n} 香港 | ${p}| 專業印刷服務 - ZprintPro 智印雲`,
     'en': (n, p) => `Custom ${n} ${p}| Premium Printing for US/UK/AU - ZprintPro`,
-    'ja': (n, p) => `${n} オーダーメイド | ${p}| 香港から国際配送 - ZprintPro`,
+    'ja': (n, p) => `${n} オーダーメイド | ${p}| 国際配送対応 - ZprintPro`,
   };
 
   return templates[locale](productName, priceStr).substring(0, 60);

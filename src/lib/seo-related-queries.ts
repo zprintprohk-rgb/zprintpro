@@ -29,8 +29,8 @@ export const GSC_RELATED_QUERIES: RelatedQuery[] = [
     targetSlug: 'food-packaging',
     longTail: {
       'zh-hk': ['食品包裝印刷需要什麼認證？', '香港哪裡有印食品包裝盒？', '食品級包裝盒最小起訂量幾多？'],
-      en: ['What certifications are needed for food packaging printing?', 'Where to print food packaging boxes in Hong Kong?', 'What is the minimum order for food-grade boxes?'],
-      ja: ['食品パッケージ印刷に必要な認証は？', '香港で食品パッケージボックスを印刷できるところは？', '食品グレードボックスの最小注文数量は？'],
+      en: ['What certifications are needed for food packaging printing?', 'Where to print food packaging boxes worldwide?', 'What is the minimum order for food-grade boxes?'],
+      ja: ['食品パッケージ印刷に必要な認証は？', '食品パッケージボックスを印刷できるところは？', '食品グレードボックスの最小注文数量は？'],
     },
   },
   {

@@ -182,7 +182,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   en: {
-    h2: 'Custom Packaging Box Printing Hong Kong — From 100 Units, Free Die-Cut Design, 3-Day Delivery',
+    h2: 'Custom Packaging Box Printing — From 100 Units, Free Die-Cut Design, 3-Day Delivery',
     coreAdvantages: {
       title: 'Why Choose ZprintPro for Packaging?',
       items: [
@@ -190,7 +190,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
           heading: '1. Complete Material & Scene Coverage: From E-Commerce Color Boxes to Pharmaceutical Compliance Cases',
           points: [
             'We offer 10 professional series including custom color boxes, corrugated cartons, magnetic cosmetic boxes, FSC eco-friendly boxes, festive gift boxes, and wedding favor boxes — covering all your packaging printing needs.',
-            'Food-grade paper materials, HK Department of Health compliance, export packaging standards, QR tracking codes, and moisture-proof treatment — meeting regulatory and cross-border requirements.',
+            'Food-grade paper materials, international food safety authorities compliance, export packaging standards, QR tracking codes, and moisture-proof treatment — meeting regulatory and cross-border requirements.',
             'Ideal for e-commerce logistics, beauty brands, food gift boxes, pharmaceutical health products, wedding favors, and corporate gifts.',
           ],
         },
@@ -198,7 +198,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
           heading: '2. Low MOQ + Fast Turnaround, Reducing Inventory Risk',
           points: [
             'Minimum order from just 30–50 units (wedding/favor boxes), 100 units for standard sizes — perfect for startup brands to test the market.',
-            '3-day standard delivery, 2-day rush service for urgent orders. Direct from Shenzhen factory with SF Express delivery across Hong Kong — no sea freight waiting.',
+            '3-day standard delivery, 2-day rush service for urgent orders. Direct from our Asia factory with DHL Express worldwide delivery — no sea freight waiting.',
             'Unit price from HK$0.8, economical without requiring bulk stockpiling.',
           ],
         },
@@ -275,17 +275,17 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
       { q: 'What is the minimum order for packaging boxes?', a: 'Wedding favor boxes from 30 units, color boxes from 50 units, standard industrial from 100–200 units. Far below traditional factory minimums of 500–1,000.' },
       { q: 'What box styles are available?', a: 'Over 20 standard styles including rigid boxes, book-style boxes, drawer boxes, folding cartons, mailer boxes, and magnetic boxes. Fully custom designs also supported.' },
       { q: 'Can I use eco-friendly paper?', a: 'Yes. All box types are available with FSC-certified eco paper, meeting international environmental standards for export to Europe and America.' },
-      { q: 'Are food packaging boxes safe?', a: 'Yes. We use food-grade paper and non-toxic soy-based inks, certified by SGS and compliant with HK Department of Health food safety requirements.' },
+      { q: 'Are food packaging boxes safe?', a: 'Yes. We use food-grade paper and non-toxic soy-based inks, certified by SGS and compliant with international food safety authorities food safety requirements.' },
       { q: 'How long does packaging printing take?', a: 'Standard orders: 3 days. Rush service: 2 days. Prototyping: same day. Large orders (5,000+ units): approximately 5–7 days.' },
       { q: 'Can I design my own die-cut lines?', a: 'Yes. We accept AI / PDF die-cut files (CMYK, 300dpi). If you are unfamiliar with die-cut design, we provide free die-cut design services.' },
       { q: 'Can corrugated boxes pass compression testing?', a: 'Yes. We perform compression and drop testing per ISTA standards to ensure logistics safety. Test reports can serve as export customs documents.' },
       { q: 'Do you support export packaging standards?', a: 'Yes. We are familiar with EU WEEE, US FTC Green Guides, and other export packaging regulations, and can assist with compliance documentation.' },
-      { q: 'Do you deliver to all areas of Hong Kong?', a: 'Yes. We deliver to Hong Kong Island (Central, Causeway Bay), Kowloon (Mong Kok, Kwun Tong), and New Territories (Sha Tin, Tuen Mun) via SF Express or dedicated truck. Bulk orders can be arranged for warehouse or office delivery.' },
+      { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days. Bulk orders can be arranged for warehouse or office delivery.' },
       { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit box type, unfolded dimensions, quantity, paper material, and surface finish for a quote first. After confirmation, upload your AI / PDF file. Our prepress team will check die lines, bleed, and color mode.' },
     ],
   },
   ja: {
-    h2: '香港 パッケージ印刷・箱制作 — 100個から、無料型設計、3日納品',
+    h2: 'パッケージ印刷・箱制作 — 100個から、無料型設計、3日納品',
     coreAdvantages: {
       title: 'ZprintPro パッケージの強み',
       items: [
@@ -293,7 +293,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
           heading: '1. 全素材・全シーン対応：ECカラーボックスから医薬品規格箱まで',
           points: [
             'カスタムカラーボックス、段ボール箱、磁石式化粧品箱、FSC認証エコ箱、ギフト箱、ウエディングボックスなど10大シリーズを提供。',
-            '食品グレード紙材、香港衛生署基準対応、輸出規格、QR追跡コード、防湿加工 — 法規制と越境要件を満たします。',
+            '食品グレード紙材、日本の食品衛生基準対応、輸出規格、QR追跡コード、防湿加工 — 法規制と越境要件を満たします。',
             'EC物流、美容ブランド、食品ギフト、医薬品・健康食品、結婚式引き出物、企業ギフトなど多様なシーンに対応。',
           ],
         },
@@ -301,7 +301,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
           heading: '2. 小ロット対応＋迅速納品、在庫リスクを削減',
           points: [
             '最小30–50個から（ウエディング／カラーボックス）、通常100個から — スタートアップブランドの試作に最適。',
-            '通常3日出荷、急行2日対応。深セン工場直送｜香港全域SFエクスプレス配送 — 海運待ち不要。',
+            '通常3日出荷、急行2日対応。アジア自社工場直送｜日本全国SFエクスプレス配送 — 海運待ち不要。',
             '単価HK$0.8～、大量在庫不要で経済的。',
           ],
         },
@@ -353,7 +353,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
       items: [
         { title: '旺角サンプルセンター', description: '実物サンプル（箔押し効果、紙質触感、構造強度）をご覧いただけます。予約制。' },
         { title: '無料サンプルサービス', description: '外観と構造を確認してから量産し、高額なミスを防ぎます。' },
-        { title: '香港全域配送', description: '小ロットはSFエクスプレス、大ロットは専用トラックで倉庫またはオフィスへ直送。' },
+        { title: '日本全国配送', description: '小ロットはSFエクスプレス、大ロットは専用トラックで倉庫またはオフィスへ直送。' },
       ],
     },
     buyingGuide: {
@@ -378,12 +378,12 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
       { q: 'パッケージの最小発注数は？', a: 'ウエディングボックス30個から、カラーボックス50個から、標準工業用100–200個から。従来の工場基準500–1,000個を大きく下回ります。' },
       { q: '対応している箱型は？', a: '化粧箱、ブック型箱、引き出し箱、組み立て箱、ダンボール箱、磁石式箱など20種類以上の標準箱型。完全カスタムデザインも対応。' },
       { q: 'エコ紙は使えますか？', a: 'はい。全箱型でFSC認証エコ紙を選択可能。欧米輸出に対応した国際環境基準を満たします。' },
-      { q: '食品パッケージは安全ですか？', a: 'はい。食品グレード紙と無毒大豆油インクを使用。SGS認証取得済み、香港衛生署食品安全基準に準拠。' },
+      { q: '食品パッケージは安全ですか？', a: 'はい。食品グレード紙と無毒大豆油インクを使用。SGS認証取得済み、日本の食品衛生基準に準拠。' },
       { q: 'パッケージ印刷にどのくらいかかりますか？', a: '通常注文3日、急行サービス2日、サンプル当日。大量注文（5,000個以上）は約5–7日。' },
       { q: '型抜き線を自分で設計できますか？', a: 'はい。AI／PDF形式の型抜き線データ（CMYK、300dpi）を受け付けます。型抜き設計に不慣れな場合は無料型設計サービスをご利用ください。' },
       { q: '段ボール箱は圧縮テストを通りますか？', a: 'はい。ISTA基準の圧縮・落下テストを実施し、物流安全を確保。テストレポートは輸出通関書類として利用可能です。' },
       { q: '輸出包装規格に対応していますか？', a: 'はい。EU WEEE、米国FTCグリーンガイドなどの輸出包装法規に精通しており、コンプライアンス文書の準備をサポートします。' },
-      { q: '香港全域に配送していますか？', a: 'はい。香港島（中環、銅鑼湾）、九龍（旺角、観塘）、新界（沙田、屯門）まで顺丰または専用トラックで配送します。大口注文は倉庫やオフィスへの配送も調整可能です。' },
+      { q: '日本全国に配送していますか？', a: 'はい。東京・大阪・名古屋など日本全国へ DHL / FedEx で配送します。大口注文は倉庫やオフィスへの配送も調整可能です。' },
       { q: 'デザインファイルをアップロードする前に見積もりは取得できますか？', a: 'はい。まず箱型、展開寸法、数量、紙材、表面加工をご提出ください。確認後、AI／PDFファイルをアップロードします。印前チームが抜き型、bleed、カラーモードをチェックします。' },
     ],
   },
@@ -488,15 +488,15 @@ const businessCardsContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   en: {
-    h2: 'Business Card Printing Hong Kong — 100 Cards MOQ, 300gsm Premium Stock, 24hr Rush',
+    h2: 'Business Card Printing — 100 Cards MOQ, 300gsm Premium Stock, 24hr Rush',
     coreAdvantages: {
       title: 'Why Choose ZprintPro for Business Cards?',
       items: [
         {
-          heading: '1. Hong Kong\'s Business Card Specialist: Your Professional Image Starts Here',
+          heading: '1. Your Business Card Specialist: Your Professional Image Starts Here',
           points: [
             'Premium 300–400gsm art paper, Conqueror, Dutch white card, and cotton paper. Heidelberg 4-color presses ensure accurate color reproduction.',
-            'Covers high-search keywords: "business card printing Hong Kong", "name card printing", "business card design", "corporate business cards".',
+            'Covers high-search keywords: "business card printing online", "name card printing", "business card design", "corporate business cards".',
             'Perfect for finance, legal, medical, design, tech, and real estate professionals.',
           ],
         },
@@ -505,7 +505,7 @@ const businessCardsContent: Record<string, CategoryLocaleContent> = {
           points: [
             '100 cards minimum order, standard 3–5 business day delivery.',
             '24-hour rush service: confirm artwork by 11 AM, delivered next day via SF Express.',
-            'Island-wide coverage: Hong Kong Island, Kowloon, New Territories. Corporate clients enjoy dedicated delivery.',
+            'Worldwide coverage: DHL Express / FedEx 2-4 day delivery. Corporate clients enjoy dedicated delivery.',
           ],
         },
         {
@@ -554,7 +554,7 @@ const businessCardsContent: Record<string, CategoryLocaleContent> = {
     serviceNodes: {
       title: 'Local Service Points',
       items: [
-        { title: 'Modern Production Facility', description: 'Modern production base in Shenzhen with Heidelberg presses and ISO 12647 color management.' },
+        { title: 'Modern Production Facility', description: 'Modern production base at our Asia factory with Heidelberg presses and ISO 12647 color management.' },
         { title: 'Free Design Consultation', description: 'Senior designers provide one-on-one guidance from layout to color management.' },
         { title: 'Corporate Account Billing', description: 'Dedicated account manager, volume discounts, priority scheduling, monthly billing.' },
       ],
@@ -565,7 +565,7 @@ const businessCardsContent: Record<string, CategoryLocaleContent> = {
         'When choosing business card paper, consider your industry. Finance and legal professionals suit 400gsm thick stock or Conqueror for a solid, professional impression. Creative industries can opt for cotton or textured papers to showcase personality. Tech companies prefer Dutch white card for a clean, modern look.',
         'For finishes, foil stamping suits luxury brands, spot UV emphasizes logos, and embossing works well for minimalist designs. We recommend no more than two finishes combined to avoid visual clutter. Free finish pairing advice is available.',
         'File preparation is critical. Ensure text is outlined, images are embedded, and the color mode is CMYK. If unsure, simply upload your design — our prepress team checks it for free and provides modification suggestions.',
-        'Users searching for "business card printing Hong Kong," "foil-stamped cards," and "thick business cards" in Hong Kong often care about turnaround time and convenient office delivery. We recommend defining the use case first (trade shows, investment banking meetings, creative portfolios) before deciding on paper weight and finish quantities, and reserving time for digital proofing to confirm color accuracy.',
+        'Users searching for "business card printing online," "foil-stamped cards," and "thick business cards" worldwide often care about turnaround time and convenient office delivery. We recommend defining the use case first (trade shows, investment banking meetings, creative portfolios) before deciding on paper weight and finish quantities, and reserving time for digital proofing to confirm color accuracy.',
       ],
     },
     faq: [
@@ -577,20 +577,20 @@ const businessCardsContent: Record<string, CategoryLocaleContent> = {
       { q: 'Are there discounts for bulk orders?', a: 'Yes. Volume discounts on 1,000+ cards. Corporate clients enjoy monthly billing with dedicated account managers.' },
       { q: 'Can you print QR codes on business cards?', a: 'Yes. We support variable data printing — each card can have a unique QR code linking to different pages or contacts.' },
       { q: 'What is an NFC smart business card?', a: 'A card with a built-in NFC chip. Tap a phone to automatically save contact details or open a website. Ideal for tech professionals.' },
-      { q: 'Do you deliver to all areas of Hong Kong?', a: 'Yes. We deliver to Hong Kong Island (Central, Causeway Bay), Kowloon (Mong Kok, Kwun Tong), and New Territories (Sha Tin, Tuen Mun) via SF Express or dedicated truck. Bulk orders can be arranged for warehouse or office delivery.' },
+      { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days. Bulk orders can be arranged for warehouse or office delivery.' },
       { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit card size, paper type, quantity, and finishing options for a quote first. After confirmation, upload your AI / PDF file. Our prepress team will check bleed, safe margins, and color mode.' },
     ],
   },
   ja: {
-    h2: '香港 名刺印刷 — 100枚から、300g高級紙、24時間急行',
+    h2: '名刺印刷 — 100枚から、300g高級紙、24時間急行',
     coreAdvantages: {
       title: 'ZprintPro 名刺の強み',
       items: [
         {
-          heading: '1. 香港ビジネス首选：プロの印象は名刺から',
+          heading: '1. ビジネス向け：プロの印象は名刺から',
           points: [
             '300g–400g高級コート紙、コンカラー紙、オランダ白カード、コットン紙を採用。ハイデルベルグ4色印刷機で正確な色彩再現。',
-            '「名刺印刷 香港」、「名片設計」、「ビジネスカード」などの高検索ボリュームキーワードをカバー。',
+            '「名刺印刷」、「名片設計」、「ビジネスカード」などの高検索ボリュームキーワードをカバー。',
             '金融、法律、医療、デザイン、テック、不動産などの専門業界に最適。',
           ],
         },
@@ -599,7 +599,7 @@ const businessCardsContent: Record<string, CategoryLocaleContent> = {
           points: [
             '最小100枚から、標準3–5営業日納品。',
             '24時間急行サービス：午前11時までにデータ確定で翌日SFエクスプレス配送。',
-            '香港島・九龍・新界をカバー。法人様は専門配送手配も可能。',
+            '日本全国をカバー。法人様は専門配送手配も可能。',
           ],
         },
         {
@@ -648,7 +648,7 @@ const businessCardsContent: Record<string, CategoryLocaleContent> = {
     serviceNodes: {
       title: 'ローカルサービス拠点',
       items: [
-        { title: '自社工場 (深圳)', description: '深圳にある自社工場。ハイデルベルグ印刷機の稼働を間近で見学可能。' },
+        { title: '自社工場 (アジア)', description: 'アジアにある自社工場。ハイデルベルグ印刷機の稼働を間近で見学可能。' },
         { title: '無料デザイン相談', description: 'ベテランデザイナーが一对一で、組版から色彩管理まで全程指導。' },
         { title: '法人月次請求', description: '専任担当者、大口割引、優先スケジュール、月次請求対応。' },
       ],
@@ -659,7 +659,7 @@ const businessCardsContent: Record<string, CategoryLocaleContent> = {
         '名刺の紙を選ぶ際、まず業界属性を考慮しましょう。金融・法律業界には400g厚紙やコンカラー紙が適し、堅実でプロフェッショナルな印象を与えます。クリエイティブ業界はコットン紙や特殊纹理紙で個性をアピール。テック企業にはオランダ白カードがおすすめで、クリーンでモダンな印象になります。',
         '加工の選択では、箔押しは高級ブランドに、局部UVはロゴ強調に、エンボスはミニマルデザインに最適です。2種類以上の組み合わせは視覚的に煩雑になりやすいので避けることをおすすめします。無料の加工組み合わせ相談をご利用ください。',
         'ファイル準備が鍵です。文字はアウトライン化、画像は埋め込み、カラーモードはCMYKを確認してください。不安な場合はデザインデータをそのままアップロードください — 当社の印前チームが無料でチェックし、修正提案をいたします。',
-        '香港で「名片印刷 香港」「燕金卡片」「厚身名片」を検索するユーザーは、納期とオフィス配送の利便性を重視することが多いです。まず使用シーン（展示会、投資銀行会議、クリエイティブポートフォリオ）を決めてから、紙厚と工苝数量を決定し、カラーの確認のためデジタル校正の時間を確保することをお勧めします。',
+        '「名片印刷」「燕金卡片」「厚身名片」を検索するユーザーは、納期とオフィス配送の利便性を重視することが多いです。まず使用シーン（展示会、投資銀行会議、クリエイティブポートフォリオ）を決めてから、紙厚と工苝数量を決定し、カラーの確認のためデジタル校正の時間を確保することをお勧めします。',
       ],
     },
     faq: [
@@ -671,7 +671,7 @@ const businessCardsContent: Record<string, CategoryLocaleContent> = {
       { q: '法人の大口注文に割引はありますか？', a: 'はい。1,000枚以上で大口割引。法人様は月次請求が可能で、専任担当者が対応します。' },
       { q: '名刺にQRコードは印刷できますか？', a: 'はい。可変データ印刷に対応しており、1枚ずつ異なるQRコード（異なるWebページや連絡先）が可能です。' },
       { q: 'NFCスマート名刺とは？', a: 'NFCチップを内蔵した名刺です。スマホをかざすだけで連絡先を自動保存したり、Webサイトを開いたりできます。テック業界に最適です。' },
-      { q: '香港全域に配送していますか？', a: 'はい。香港島（中環、銅鑼湾）、九龍（旺角、観塘）、新界（沙田、屯門）まで顺丰または専用トラックで配送します。大口注文は倉庫やオフィスへの配送も調整可能です。' },
+      { q: '日本全国に配送していますか？', a: 'はい。東京・大阪・名古屋など日本全国へ DHL / FedEx で配送します。大口注文は倉庫やオフィスへの配送も調整可能です。' },
       { q: 'デザインファイルをアップロードする前に見積もりは取得できますか？', a: 'はい。まず名刺サイズ、紙タイプ、数量、加工オプションをご提出ください。確認後、AI／PDFファイルをアップロードします。印前チームがbleed、安全マージン、カラーモードをチェックします。' },
     ],
   },
@@ -777,7 +777,7 @@ const bannersContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   en: {
-    h2: 'Banner & Large Format Printing Hong Kong — Waterproof & UV-Resistant, X-Stand / Roll-Up / Backdrop, Same-Day Delivery',
+    h2: 'Banner & Large Format Printing — Waterproof & UV-Resistant, X-Stand / Roll-Up / Backdrop, Same-Day Delivery',
     coreAdvantages: {
       title: 'Why Choose ZprintPro for Banners?',
       items: [
@@ -786,14 +786,14 @@ const bannersContent: Record<string, CategoryLocaleContent> = {
           points: [
             'Full range including X-stands, roll-up banners, backdrop banners, outdoor banners, building hoardings, and lightbox films.',
             'Imported eco-solvent or UV-cured inks — waterproof, UV-resistant, 1–3 year outdoor durability.',
-            'Covers high-search keywords: "banner printing Hong Kong", "outdoor banner", "backdrop rental", "X-stand printing".',
+            'Covers high-search keywords: "banner printing", "outdoor banner", "backdrop rental", "X-stand printing".',
           ],
         },
         {
           heading: '2. Lightning-Fast Delivery: Print Today, Install Tomorrow',
           points: [
             'X-stands and roll-ups same-day (frame + graphic replacement). Backdrop banners in 1–2 days.',
-            'Installation service available (Hong Kong Island and Kowloon major commercial areas) — truss setup and lighting included.',
+            'Installation service available (major commercial areas, by appointment) — truss setup and lighting included.',
             'Last-minute event addition? Confirm artwork in the morning, shipped by afternoon, installed by evening.',
           ],
         },
@@ -844,7 +844,7 @@ const bannersContent: Record<string, CategoryLocaleContent> = {
       title: 'Local Service Points',
       items: [
         { title: 'Stand Rental Service', description: 'X-stand and roll-up frame rental + graphic replacement — ideal for one-time events, cost-saving.' },
-        { title: 'Event Installation Team', description: 'Installation at major exhibition venues and commercial areas on Hong Kong Island and Kowloon — truss and lighting included.' },
+        { title: 'Event Installation Team', description: 'Installation at major exhibition venues and commercial areas in major service areas — truss and lighting included.' },
         { title: 'Night Rush Hotline', description: 'Evening event or next-morning opening? Our night rush hotline ensures your banners arrive on time.' },
       ],
     },
@@ -854,7 +854,7 @@ const bannersContent: Record<string, CategoryLocaleContent> = {
         'When choosing banner material, first distinguish between indoor and outdoor use. Indoor events (exhibitions, launches) recommend PP synthetic paper or adhesive posters — economical and easy to install. Outdoor advertising (building hoardings, banners) must use PVC banner fabric or mesh — waterproof, UV-resistant, and tear-resistant.',
         "Size selection depends on viewing distance and installation space. Standard X-stand 60×160cm suits booth corners; 80×180cm suits main aisles. Backdrop banners recommend 2.2–2.4m height to ensure photos don't reveal the top edge. We offer free site measurement and size recommendations.",
         'Resolution requirements are inversely proportional to output size. Small sizes (<1m): 150dpi recommended; medium (1–3m): 100dpi sufficient; large (>3m): 72dpi adequate. Excessively high resolution increases file size and processing time without improving actual output.',
-        'Event-dense areas (Hong Kong Island convention center vicinity, Kowloon Tong / Mong Kok malls, Tseung Kwan O / Tsuen Wan communities) often generate searches for "Backdrop background board," "Roll-up banner same day," and "outdoor banner." Reserve installation access routes and power / truss requirements, and distinguish between short-term roadshows and long-term hoardings to significantly reduce on-site revisions and reprints.',
+        'Event-dense areas (convention center districts, major malls, and community venues) often generate searches for "Backdrop background board," "Roll-up banner same day," and "outdoor banner." Reserve installation access routes and power / truss requirements, and distinguish between short-term roadshows and long-term hoardings to significantly reduce on-site revisions and reprints.',
       ],
     },
     faq: [
@@ -865,13 +865,13 @@ const bannersContent: Record<string, CategoryLocaleContent> = {
       { q: 'Can I rent display stands?', a: 'Yes. We offer X-stand and roll-up frame rental with graphic replacement — ideal for one-time events.' },
       { q: 'Do outdoor banners require permits?', a: 'Depends on location and scale. Building hoardings generally require Buildings Department approval; street banners require FEHD permits. We provide application guidance.' },
       { q: 'Can banner graphics be reused?', a: 'Yes. Store properly rolled in a cool, dry place. PVC banner fabric can be reused multiple times. Folding storage creates creases.' },
-      { q: 'Do you offer installation services?', a: 'Yes. Installation available in major areas of Hong Kong Island and Kowloon, including truss setup, lighting configuration, and on-site adjustments.' },
-      { q: 'Do you deliver to all areas of Hong Kong?', a: 'Yes. We deliver to Hong Kong Island (Central, Causeway Bay), Kowloon (Mong Kok, Kwun Tong), and New Territories (Sha Tin, Tuen Mun). Large banners may require special transport.' },
+      { q: 'Do you offer installation services?', a: 'Yes. Installation available in major service areas, including truss setup, lighting configuration, and on-site adjustments.' },
+      { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days. Large banners may require special transport.' },
       { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit banner type, size, material, and quantity for a quote first. After confirmation, upload your AI / PDF file. Our prepress team will check resolution based on output size and bleed settings.' },
     ],
   },
   ja: {
-    h2: '香港 バナー・大判印刷 — 防水・耐UV、Xスタンド／ロールアップ／バックドロップ、即日納品',
+    h2: 'バナー・大判印刷 — 防水・耐UV、Xスタンド／ロールアップ／バックドロップ、即日納品',
     coreAdvantages: {
       title: 'ZprintPro バナーの強み',
       items: [
@@ -880,14 +880,14 @@ const bannersContent: Record<string, CategoryLocaleContent> = {
           points: [
             'Xスタンド、ロールアップバナー、バックドロップ、屋外横断幕、建築囲い、ライトボックスフィルムなど全タイプをカバー。',
             '輸入エコソルベントまたはUV硬化インクを使用。防水・耐UVで屋外1–3年耐久。',
-            '「バナー印刷 香港」、「屋外用バナー」、「バックドロップレンタル」、「Xスタンド印刷」などの高検索ボリュームキーワードをカバー。',
+            '「バナー印刷」、「屋外用バナー」、「バックドロップレンタル」、「Xスタンド印刷」などの高検索ボリュームキーワードをカバー。',
           ],
         },
         {
           heading: '2. 超高速納品：今日印刷、明日設置',
           points: [
             'Xスタンドとロールアップは即日（フレーム＋画面交換）。バックドロップは1–2日。',
-            '香港島・九龍の主要商業地区で設置サービスを提供。トラス設置と照明配置も含むワンストップサービス。',
+            '日本全国の主要商業地区で設置サービスを提供。トラス設置と照明配置も含むワンストップサービス。',
             'イベントの追加注文？午前中にデータ確定、午後出荷、夕方設置完了。',
           ],
         },
@@ -938,7 +938,7 @@ const bannersContent: Record<string, CategoryLocaleContent> = {
       title: 'ローカルサービス拠点',
       items: [
         { title: 'スタンドレンタルサービス', description: 'Xスタンドとロールアップのフレームレンタル＋画面交換。一度きりのイベントに最適でコスト削減。' },
-        { title: 'イベント設置チーム', description: '香港島・九龍の主要展示会場と商業地区で設置サービスを提供。トラスと照明も含むワンストップ。' },
+        { title: 'イベント設置チーム', description: '日本全国の主要展示会場と商業地区で設置サービスを提供。トラスと照明も含むワンストップ。' },
         { title: '夜間急行ホットライン', description: '夜間イベントや翌朝のオープニング？夜間急行ホットラインでバナーを間に合わせます。' },
       ],
     },
@@ -948,7 +948,7 @@ const bannersContent: Record<string, CategoryLocaleContent> = {
         'バナーの材質を選ぶ際、まず屋内と屋外の使用を区別しましょう。屋内イベント（展示会、発表会）にはPP合成紙や粘着ポスターがおすすめで、経済的かつ設置が簡単です。屋外広告（建築囲い、横断幕）にはPVC横断幕生地またはメッシュ生地を使用する必要があります。防水・耐UVで耐裂性があります。',
         'サイズ選択は視認距離と設置スペースによって異なります。Xスタンド標準60×160cmはブースの隅に適しています。80×180cmはメイン通路に適しています。バックドロップバナーは高さ2.2–2.4mを推奨し、写真撮影時に上端が見えないようにします。無料現場測定とサイズ提案をご利用ください。',
         '解像度要件は出力サイズに反比例します。小さいサイズ（<1m）は150dpiを推奨。中サイズ（1–3m）は100dpiで十分。大サイズ（>3m）は72dpiで十分です。過度に高い解像度はファイルサイズと処理時間を増やすだけで、実際の出力品質は向上しません。',
-        'イベント密集エリア（香港島会展周辺、九龍塘／旺角商場、将軍澳／荃湾コミュニティ）では「Backdrop 背景板」「易拉寶 即日」「戶外横額」類の検索が見られます。設置動線と電源／トラス要件を予め確保し、短期路演と長期囲板を区別すれば、現場の改稿と二次出力を大幅に削減できます。',
+        'イベント密集エリア（展示会場周辺・大型商場・コミュニティ施設）では「Backdrop 背景板」「易拉寶 即日」「戶外横額」類の検索が見られます。設置動線と電源／トラス要件を予め確保し、短期路演と長期囲板を区別すれば、現場の改稿と二次出力を大幅に削減できます。',
       ],
     },
     faq: [
@@ -959,8 +959,8 @@ const bannersContent: Record<string, CategoryLocaleContent> = {
       { q: 'スタンドをレンタルできますか？', a: 'はい。Xスタンドとロールアップのフレームレンタル＋画面交換サービスを提供。一度きりのイベントに最適です。' },
       { q: '屋外広告に許可は必要ですか？', a: '場所と規模により異なります。建築囲いは一般的に建築署の承認が必要。街路横断幕は食環署の許可が必要です。申請ガイドを提供します。' },
       { q: 'バナー画面は再利用できますか？', a: 'はい。適切に巻いて陰涼な場所に保管すれば、PVC横断幕生地は何度も再利用可能です。ただし折りたたむと折り目が付きます。' },
-      { q: '設置サービスはありますか？', a: 'はい。香港島・九龍の主要地区で設置サービスを提供。トラス設置、照明配置、現場調整も含みます。' },
-      { q: '香港全域に配送していますか？', a: 'はい。香港島（中環、銅鑼湾）、九龍（旺角、観塘）、新界（沙田、屯門）まで配送します。大型バナーは特殊輸送が必要な場合があります。' },
+      { q: '設置サービスはありますか？', a: 'はい。日本全国の主要地区で設置サービスを提供。トラス設置、照明配置、現場調整も含みます。' },
+      { q: '日本全国に配送していますか？', a: 'はい。東京・大阪・名古屋など日本全国へ DHL / FedEx で配送します。大型バナーは特殊輸送が必要な場合があります。' },
       { q: 'デザインファイルをアップロードする前に見積もりは取得できますか？', a: 'はい。まずバナータイプ、サイズ、材質、数量をご提出ください。確認後、AI／PDFファイルをアップロードします。印前チームが出力サイズに応じて解像度とbleed設定をチェックします。' },
     ],
   },
@@ -1066,7 +1066,7 @@ const booksContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   en: {
-    h2: 'Book Printing Hong Kong — Saddle-Stitch / Perfect Bound / Hardcover, From 1 Copy, Professional Typesetting',
+    h2: 'Book Printing — Saddle-Stitch / Perfect Bound / Hardcover, From 1 Copy, Professional Typesetting',
     coreAdvantages: {
       title: 'Why Choose ZprintPro for Books?',
       items: [
@@ -1074,7 +1074,7 @@ const booksContent: Record<string, CategoryLocaleContent> = {
           heading: '1. Complete Binding Coverage: Saddle-Stitch to Hardcover',
           points: [
             'Full range: saddle-stitch, perfect binding, sewn binding, hardcover (case bound), wire-o binding, butterfly binding.',
-            'Covers high-search keywords: "book printing Hong Kong", "self publishing", "perfect bound books", "hardcover printing".',
+            'Covers high-search keywords: "book printing", "self publishing", "perfect bound books", "hardcover printing".',
             'Ideal for annual reports, product catalogs, art books, novels, textbooks, and graduation yearbooks.',
           ],
         },
@@ -1134,7 +1134,7 @@ const booksContent: Record<string, CategoryLocaleContent> = {
       items: [
         { title: 'Professional Typesetting', description: 'Senior typesetters provide InDesign professional layout meeting publishing standards, supporting complex charts and multi-column layouts.' },
         { title: 'Free Prepress Check', description: 'Comprehensive verification of text outlining, image resolution, bleed, and binding safety margins to prevent printing errors.' },
-        { title: 'ISBN Application Assistance', description: 'We assist self-publishing authors with Hong Kong ISBN applications, providing publishing consultation and legal compliance guidance.' },
+        { title: 'ISBN Application Assistance', description: 'We assist self-publishing authors with international ISBN applications, providing publishing consultation and legal compliance guidance.' },
       ],
     },
     buyingGuide: {
@@ -1143,7 +1143,7 @@ const booksContent: Record<string, CategoryLocaleContent> = {
         'When choosing a binding method, first consider page count and usage. Books under 64 pages suit saddle-stitch — economical and lays flat. Books 64–200 pages suit perfect binding with a flat spine that opens well. Books over 200 pages or requiring long-term collection benefit from sewn binding or hardcover for maximum durability.',
         'Paper selection affects reading experience and cost. Text-heavy books (novels, textbooks) suit 80g–100g book paper — lightweight and comfortable to read. Image-heavy books (art catalogs, photography collections) suit 128g–157g art paper for excellent color reproduction. Covers recommend 250g+ with lamination or foil stamping for enhanced quality.',
         'File preparation is critical for book printing. Ensure all text is outlined or fonts are embedded, images are ≥300dpi, 3mm bleed is provided, and binding edges have ≥5mm safety margin. If unsure, our prepress team checks for free and provides modification suggestions.',
-        'In Hong Kong, searches for "book printing Hong Kong," "art book small quantity," and "corporate annual report printing" often come from SMEs, associations, and self-funded authors. If budget is limited, start with digital short-run printing to validate content and binding feel, then decide whether to switch to offset bulk printing based on response, while simultaneously planning spine thickness and cover finishing.',
+        'In, searches for "book printing," "art book small quantity," and "corporate annual report printing" often come from SMEs, associations, and self-funded authors. If budget is limited, start with digital short-run printing to validate content and binding feel, then decide whether to switch to offset bulk printing based on response, while simultaneously planning spine thickness and cover finishing.',
       ],
     },
     faq: [
@@ -1152,15 +1152,15 @@ const booksContent: Record<string, CategoryLocaleContent> = {
       { q: 'How long does book printing take?', a: 'Digital: 2–3 days; Offset: 5–7 days; Hardcover: 7–10 days. Rush orders welcome.' },
       { q: 'Do you offer typesetting services?', a: 'Yes. Professional typesetting team provides InDesign layout services meeting publishing industry standards.' },
       { q: 'What are the file requirements for books?', a: 'InDesign / PDF, 300dpi, CMYK, 3mm bleed, binding safety margin ≥5mm. Text outlined or fonts embedded.' },
-      { q: 'Can you help with ISBN applications?', a: 'Yes. We assist self-publishing authors with Hong Kong ISBN applications and provide publishing consultation.' },
+      { q: 'Can you help with ISBN applications?', a: 'Yes. We assist self-publishing authors with international ISBN applications and provide publishing consultation.' },
       { q: 'What paper is best for photography books?', a: 'Recommend 157gsm art paper or 200gsm matte paper with ICC color management for accurate photo color reproduction.' },
       { q: 'What is the difference between hardcover and paperback?', a: 'Hardcover has a rigid cover with highest durability for collections; paperback has a flat spine, lower cost, suited for general reading.' },
-      { q: 'Do you deliver to all areas of Hong Kong?', a: 'Yes. We deliver to Hong Kong Island (Central, Causeway Bay), Kowloon (Mong Kok, Kwun Tong), and New Territories (Sha Tin, Tuen Mun). Bulk book orders can be arranged for school or warehouse delivery.' },
+      { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days. Bulk book orders can be arranged for school or warehouse delivery.' },
       { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit binding method, page count, book size, paper type, cover finish, and quantity for a quote first. After confirmation, upload your InDesign / PDF file. Our prepress team will check text outlining and bleed.' },
     ],
   },
   ja: {
-    h2: '香港 書籍印刷 — 中綴じ／無線綴じ／上製本、1冊から、プロ組版',
+    h2: '書籍印刷 — 中綴じ／無線綴じ／上製本、1冊から、プロ組版',
     coreAdvantages: {
       title: 'ZprintPro 書籍印刷の強み',
       items: [
@@ -1168,7 +1168,7 @@ const booksContent: Record<string, CategoryLocaleContent> = {
           heading: '1. 全製本方式対応：中綴じから上製本まで',
           points: [
             '中綴じ、無線綴じ、糸かがり綴じ、上製本（ハードカバー）、ワイヤー-O綴じ、袋とじなど全製本方式を提供。',
-            '「書籍印刷 香港」、「自費出版」、「無線綴じ」、「上製本」などの高検索ボリュームキーワードをカバー。',
+            '「書籍印刷」、「自費出版」、「無線綴じ」、「上製本」などの高検索ボリュームキーワードをカバー。',
             '企業年次報告書、製品カタログ、画集、小説、教材、卒業記念冊など多様なシーンに対応。',
           ],
         },
@@ -1228,7 +1228,7 @@ const booksContent: Record<string, CategoryLocaleContent> = {
       items: [
         { title: 'プロ組版サービス', description: 'ベテラン組版師がInDesignで出版業界基準の組版を提供。複雑な図表や多段組みも対応。' },
         { title: '無料印前チェック', description: '文字のアウトライン化、画像解像度、bleed、綴じ安全距離を全面チェックし、印刷ミスを防止。' },
-        { title: 'ISBN申請サポート', description: '自費出版者の香港ISBN申請をサポート。出版相談と法律コンプライアンス指導も提供。' },
+        { title: 'ISBN申請サポート', description: '自費出版者の海外ISBN申請をサポート。出版相談と法律コンプライアンス指導も提供。' },
       ],
     },
     buyingGuide: {
@@ -1237,7 +1237,7 @@ const booksContent: Record<string, CategoryLocaleContent> = {
         '製本方式を選ぶ際、まずページ数と用途を考慮しましょう。64ページ未満の薄い本には中綴じがおすすめで、手頃で開きが良いです。64–200ページの本には無線綴じが適し、背が平らで開きやすいです。200ページ以上や長期保存が必要な本には糸かがり綴じまたは上製本が最適で、耐久性が最も高いです。',
         '紙の選択は読書体験とコストに影響します。文字中心の本（小説、教材）には80g–100gの書籍紙が適しています。軽量で読みやすいです。画像中心の本（画集、写真集）には128g–157gのコート紙がおすすめで、色彩再現が抜群です。表紙は250g以上を推奨し、ラミネートや箔押し加工で質感を高めます。',
         'ファイル準備は書籍印刷の鍵です。すべての文字がアウトライン化またはフォントが埋め込まれていることを確認し、画像解像度は≥300dpi、3mmのbleed、綴じ辺には≥5mmの安全距離を設けてください。不安な場合は、当社の印前チームが無料でチェックし、修正提案をいたします。',
-        '香港では「印書 香港」「畫冊 少量」「企業年報 印刷」などの需要が中小企、協会、自費出版者からよく見られます。予算が限られている場合は、まずデジタル短刷で内容と製本手感を検証し、反応を見てオフセット大量印刷に切り替えるかどうかを決定し、同時に書脊厚度と表紙加工を計画することをお勧めします。',
+        '「印書」「畫冊 少量」「企業年報 印刷」などの需要が中小企、協会、自費出版者からよく見られます。予算が限られている場合は、まずデジタル短刷で内容と製本手感を検証し、反応を見てオフセット大量印刷に切り替えるかどうかを決定し、同時に書脊厚度と表紙加工を計画することをお勧めします。',
       ],
     },
     faq: [
@@ -1246,10 +1246,10 @@ const booksContent: Record<string, CategoryLocaleContent> = {
       { q: '書籍印刷にどのくらいかかりますか？', a: 'デジタル印刷2–3日。オフセット印刷5–7日。上製本7–10日。急行注文も受け付けています。' },
       { q: '組版サービスはありますか？', a: 'はい。プロの組版チームがInDesignで出版業界基準の組版サービスを提供します。' },
       { q: '書籍のファイル要件は？', a: 'InDesign／PDF、300dpi、CMYK、3mmのbleed、綴じ安全距離≥5mm。文字はアウトライン化またはフォントを埋め込み。' },
-      { q: 'ISBNの申請を手伝ってもらえますか？', a: 'はい。自費出版者の香港ISBN申請をサポートし、出版相談と法律コンプライアンス指導を提供します。' },
+      { q: 'ISBNの申請を手伝ってもらえますか？', a: 'はい。自費出版者の海外ISBN申請をサポートし、出版相談と法律コンプライアンス指導を提供します。' },
       { q: '写真集に最適な紙は？', a: '157gコート紙または200gマット紙を推奨。ICC色彩管理で写真の色彩を正確に再現します。' },
       { q: '上製本とペーパーバックの違いは？', a: '上製本は硬い表紙で耐久性が最も高く、コレクション向き。ペーパーバックは背が平らでコストが低く、一般読書向き。' },
-      { q: '香港全域に配送していますか？', a: 'はい。香港島（中環、銅鑼湾）、九龍（旺角、観塘）、新界（沙田、屯門）まで配送します。書籍の大口注文は学校や倉庫への配送も調整可能です。' },
+      { q: '日本全国に配送していますか？', a: 'はい。東京・大阪・名古屋など日本全国へ DHL / FedEx で配送します。書籍の大口注文は学校や倉庫への配送も調整可能です。' },
       { q: 'デザインファイルをアップロードする前に見積もりは取得できますか？', a: 'はい。まず製本方式、ページ数、書籍サイズ、紙タイプ、表紙加工、数量をご提出ください。確認後、InDesign／PDFファイルをアップロードします。印前チームが文字のアウトライン化、bleedをチェックします。' },
     ],
   },
@@ -1364,7 +1364,7 @@ const menusContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   en: {
-    h2: 'Menu Printing Hong Kong — Waterproof & Oil-Resistant, PVC / Laminated / Hard Plastic, Restaurant Menu Specialists',
+    h2: 'Menu Printing — Waterproof & Oil-Resistant, PVC / Laminated / Hard Plastic, Restaurant Menu Specialists',
     coreAdvantages: {
       title: 'Why Choose ZprintPro for Menus?',
       items: [
@@ -1373,7 +1373,7 @@ const menusContent: Record<string, CategoryLocaleContent> = {
           points: [
             'PVC menus, laminated menus, hard plastic sleeve menus, leather menus, and wooden menus — matching every restaurant style.',
             'Waterproof and oil-resistant treatment — soup and grease wipe clean instantly, extending lifespan 3–5x.',
-            'Covers high-search keywords: "menu printing Hong Kong", "restaurant menu design", "waterproof menu", "cafe menu printing".',
+            'Covers high-search keywords: "menu printing", "restaurant menu design", "waterproof menu", "cafe menu printing".',
           ],
         },
         {
@@ -1461,12 +1461,12 @@ const menusContent: Record<string, CategoryLocaleContent> = {
       { q: 'Can menus be printed in multiple languages?', a: 'Yes. Chinese/English and Chinese/Japanese side-by-side supported, plus variable data printing for branch-specific pricing.' },
       { q: 'How do QR code digital menus work?', a: 'We generate QR codes linking to digital menu pages that support real-time price and dish updates.' },
       { q: 'Can menu pages be replaced?', a: 'Yes. Hard plastic sleeves or binder designs allow easy single-page replacement — ideal for seasonal menu updates.' },
-      { q: 'Do you deliver to all areas of Hong Kong?', a: 'Yes. We deliver to Hong Kong Island (Central, Causeway Bay), Kowloon (Mong Kok, Kwun Tong), and New Territories (Sha Tin, Tuen Mun). Bulk menu orders can be arranged for restaurant delivery.' },
+      { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days. Bulk menu orders can be arranged for restaurant delivery.' },
       { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit menu size, material, quantity, and single or multi-page for a quote first. After confirmation, upload your AI / PDF file. Our prepress team will check bleed and resolution.' },
     ],
   },
   ja: {
-    h2: '香港 メニュー印刷 — 防水・防油、PVC／ラミネート／硬質プラ、レストランメニュー専門',
+    h2: 'メニュー印刷 — 防水・防油、PVC／ラミネート／硬質プラ、レストランメニュー専門',
     coreAdvantages: {
       title: 'ZprintPro メニューの強み',
       items: [
@@ -1475,7 +1475,7 @@ const menusContent: Record<string, CategoryLocaleContent> = {
           points: [
             'PVCメニュー、ラミネートメニュー、硬質プラスチックケースメニュー、革メニュー、木製メニューなど、レストランのスタイルに合わせた多種多様な材質を提供。',
             '防水防油加工で、スープや油汚れも拭き取るだけ。使用寿命を3–5倍延長。',
-            '「メニュー印刷 香港」、「レストランメニュー」、「防水メニュー」、「カフェメニュー」などの高検索ボリュームキーワードをカバー。',
+            '「メニュー印刷」、「レストランメニュー」、「防水メニュー」、「カフェメニュー」などの高検索ボリュームキーワードをカバー。',
           ],
         },
         {
@@ -1563,7 +1563,7 @@ const menusContent: Record<string, CategoryLocaleContent> = {
       { q: '多言語メニューは印刷できますか？', a: 'はい。中英、中日の対応。可変データ印刷で店舗別価格設定も可能です。' },
       { q: 'QRコード電子メニューはどうやりますか？', a: 'QRコードを生成し、電子メニューページにリンク。価格とメニューのリアルタイム更新が可能です。' },
       { q: 'メニューのページは交換できますか？', a: 'はい。硬質ケースやバインダー設計のメニューは単ページを簡単に交換でき、季節メニューの更新に最適です。' },
-      { q: '香港全域に配送していますか？', a: 'はい。香港島（中環、銅鑼湾）、九龍（旺角、観塘）、新界（沙田、屯門）まで配送します。メニューの大口注文はレストランへの配送も調整可能です。' },
+      { q: '日本全国に配送していますか？', a: 'はい。東京・大阪・名古屋など日本全国へ DHL / FedEx で配送します。メニューの大口注文はレストランへの配送も調整可能です。' },
       { q: 'デザインファイルをアップロードする前に見積もりは取得できますか？', a: 'はい。まずメニューサイズ、材質、数量、単ページ／多ページをご提出ください。確認後、AI／PDFファイルをアップロードします。印前チームがbleed、解像度をチェックします。' },
     ],
   },
@@ -1669,7 +1669,7 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   en: {
-    h2: 'Envelope Printing Hong Kong — Western / Chinese / Specialty Paper, From 500 pcs, Same-Day Delivery',
+    h2: 'Envelope Printing — Western / Chinese / Specialty Paper, From 500 pcs, Same-Day Delivery',
     coreAdvantages: {
       title: 'Why Choose ZprintPro for Envelopes?',
       items: [
@@ -1678,7 +1678,7 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
           points: [
             'Full range: DL(110×220mm), C5(162×229mm), C4(229×324mm), Chinese #5/#7/#9 sizes.',
             'Window envelopes (custom window position) ideal for invoices, bills, and invitations requiring address visibility.',
-            'Covers high-search keywords: "envelope printing Hong Kong", "business envelopes", "window envelopes", "invitation envelopes".',
+            'Covers high-search keywords: "envelope printing", "business envelopes", "window envelopes", "invitation envelopes".',
           ],
         },
         {
@@ -1746,7 +1746,7 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
         'When choosing envelope size, first consider the document size. Folded A4 fits DL; unfolded A4 needs C4; A5 fits C5. Chinese envelopes suit traditional business and cultural events. If unsure, contact our customer service team for advice.',
         'Paper choice affects brand image. White card suits general business letters — economical and practical. Kraft paper suits creative brands and e-commerce — vintage feel and eco-friendly. Pearl paper suits high-end invitations and VIP mail — pearlescent sheen elevates perception.',
         'Special finishing can transform ordinary envelopes into brand assets. Foil-stamped company names boost recognition; embossing adds tactile memory; window designs save writing time. We recommend at least one special finish so every letter becomes brand exposure.',
-        'Local searches commonly include "envelope printing Hong Kong," "DL envelope," and "invitation envelope." Finance, legal, and event companies are often located in Central, Admiralty, or Kowloon East, with high requirements for window positioning and confidentiality. Confirm during quoting whether address overprinting or variable data is needed.',
+        'Local searches commonly include "envelope printing," "DL envelope," and "invitation envelope." Finance, legal, and event companies are often located in Central, Admiralty, or Kowloon East, with high requirements for window positioning and confidentiality. Confirm during quoting whether address overprinting or variable data is needed.',
       ],
     },
     faq: [
@@ -1758,12 +1758,12 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
       { q: 'Can envelopes be foil stamped or embossed?', a: 'Yes. Foil stamping, embossing, debossing, and spot UV all available.' },
       { q: 'Can envelopes be double-sided printed?', a: 'Yes. Inside and outside printing increases brand exposure. Inside can feature brand stories or thank-you messages.' },
       { q: 'Will the window film fall off?', a: 'No. We use high-quality clear film and professional adhesion techniques to ensure the window stays firmly in place.' },
-      { q: 'Do you deliver to all areas of Hong Kong?', a: 'Yes. We deliver to Hong Kong Island (Central, Causeway Bay), Kowloon (Mong Kok, Kwun Tong), and New Territories (Sha Tin, Tuen Mun) via SF Express or dedicated truck.' },
+      { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days.' },
       { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit envelope size, paper type, window requirements, quantity, and finishing options for a quote first. After confirmation, upload your AI / PDF file. Our prepress team will check die line and bleed.' },
     ],
   },
   ja: {
-    h2: '香港 封筒印刷 — 洋形／中式／特殊紙、500枚から、即日納品',
+    h2: '封筒印刷 — 洋形／中式／特殊紙、500枚から、即日納品',
     coreAdvantages: {
       title: 'ZprintPro 封筒印刷の強み',
       items: [
@@ -1772,7 +1772,7 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
           points: [
             'DL(110×220mm)、C5(162×229mm)、C4(229×324mm)、中式5号／7号／9号など全規格を提供。',
             '窓付き封筒（窓の位置をカスタマイズ可）は、請求書、招待状など住所を表示する必要があるシーンに最適。',
-            '「封筒印刷 香港」、「ビジネス封筒」、「窓付き封筒」、「招待状封筒」などの高検索ボリュームキーワードをカバー。',
+            '「封筒印刷」、「ビジネス封筒」、「窓付き封筒」、「招待状封筒」などの高検索ボリュームキーワードをカバー。',
           ],
         },
         {
@@ -1840,7 +1840,7 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
         '封筒サイズを選ぶ際、まず内包書類のサイズを考慮しましょう。A4用紙を折ればDL封筒に入ります。折らないA4はC4封筒が必要です。A5はC5封筒に最適です。中式封筒は伝統的なビジネスや文化イベントに適しています。不安な場合は、カスタマーサービスチームにお問い合わせください。',
         '紙の選択はブランドイメージに影響します。白カード紙は一般的なビジネス書簡に適し、経済的で実用的です。クラフト紙はクリエイティブブランドやECに適し、レトロ感とエコフレンドリーです。パール紙は高級招待状やVIP書簡に適し、パール光沢で格を高めます。',
         '特殊加工で普通の封筒をブランドアセットに変身させましょう。箔押しの会社名は認知度を向上させ、エンボスは触感の記憶を残し、窓デザインは手書き時間を節約します。少なくとも1つの特殊加工を選び、すべての手紙をブランド露出にしましょう。',
-        '本地の検索では「信封印刷 香港」「DL 信封」「邀請函信封」などが一般的です。金融、法律、イベント会社は中環、金鐘、九龍東に多く、窓位置と機密性の要求が高いため、見積もり段階で套印住所や可変データの要否を確認することをお勧めします。',
+        '本地の検索では「信封印刷」「DL 信封」「邀請函信封」などが一般的です。金融、法律、イベント会社は中環、金鐘、九龍東に多く、窓位置と機密性の要求が高いため、見積もり段階で套印住所や可変データの要否を確認することをお勧めします。',
       ],
     },
     faq: [
@@ -1852,7 +1852,7 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
       { q: '箔押しやエンボスはできますか？', a: 'はい。箔押し、エンボス、デボス、局部UVなど、多様な加工が可能です。' },
       { q: '両面印刷は可能ですか？', a: 'はい。内側と外側の両面印刷でブランド露出を増やせます。内側にはブランドストーリーや感謝の言葉を印刷可能。' },
       { q: '窓の透明フィルムは剥がれますか？', a: 'いいえ。高品質な透明フィルムとプロの接着技術を使用し、窓がしっかりと固定されるようになっています。' },
-      { q: '香港全域に配送していますか？', a: 'はい。香港島（中環、銅鑼湾）、九龍（旺角、観塘）、新界（沙田、屯門）まで顺丰または専用トラックで配送します。' },
+      { q: '日本全国に配送していますか？', a: 'はい。東京・大阪・名古屋など日本全国へ DHL / FedEx で配送します。' },
       { q: 'デザインファイルをアップロードする前に見積もりは取得できますか？', a: 'はい。まず封筒サイズ、紙タイプ、窓の有無、数量、加工オプションをご提出ください。確認後、AI／PDFファイルをアップロードします。印前チームが抜き型、bleedをチェックします。' },
     ],
   },
@@ -1957,7 +1957,7 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   en: {
-    h2: 'Calendar Printing Hong Kong — Desk / Wall / Card Calendars, From 50 pcs, Holiday Promotions Essential',
+    h2: 'Calendar Printing — Desk / Wall / Card Calendars, From 50 pcs, Holiday Promotions Essential',
     coreAdvantages: {
       title: 'Why Choose ZprintPro for Calendars?',
       items: [
@@ -1965,7 +1965,7 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
           heading: '1. Full Calendar Range: Desk, Wall, Card, Planner & Magnet Types',
           points: [
             'Desk calendars (easel), wall calendars (A3/A2), calendar cards (postcard size), planner calendars, and magnetic fridge calendars.',
-            'Covers high-search keywords: "calendar printing Hong Kong", "desk calendar", "wall calendar", "calendar card", "promotional calendar".',
+            'Covers high-search keywords: "calendar printing", "desk calendar", "wall calendar", "calendar card", "promotional calendar".',
             'Ideal for corporate gifts, promotional items, office use, and school souvenirs.',
           ],
         },
@@ -2034,7 +2034,7 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
         'When choosing calendar type, first consider usage scenario and target audience. Office settings suit desk calendars (easel) for high desktop brand exposure. Home settings suit wall calendars (A3/A2) for large visual decoration. Promotional distribution suits calendar cards — portable, low-cost, ideal for mass handouts.',
         'Calendar design should integrate brand elements. Every page should include logo and brand colors; important dates (company anniversaries, product launches) can be specially marked; memo areas increase practicality and retention. Consider reserving ad spaces or coupon areas for added marketing value.',
         'Timing is critical for calendar printing. We recommend starting design and printing 2–3 months in advance to avoid the November–December rush. We offer holiday promotion reminder services to ensure your calendars arrive on time.',
-        'Corporate gift searches such as "desk calendar Hong Kong" and "custom calendar" peak in Q4. If target clients are Hong Kong Island finance professionals or New Territory residential communities, reserve space in the design for holiday annotations and brand story pages to facilitate regional distribution by sales teams.',
+        'Corporate gift searches such as "desk calendar" and "custom calendar" peak in Q4. If target clients are finance professionals or New Territory residential communities, reserve space in the design for holiday annotations and brand story pages to facilitate regional distribution by sales teams.',
       ],
     },
     faq: [
@@ -2046,12 +2046,12 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
       { q: 'Can each calendar be personalized?', a: 'Yes. Variable data printing allows different employee names or branch information per calendar.' },
       { q: 'What paper options are available?', a: '200g–300gsm art / matte paper. Base: 1–2mm greyboard or card.' },
       { q: 'When should I start printing calendars?', a: 'Recommend starting 2–3 months in advance to avoid the November–December printing rush.' },
-      { q: 'Do you deliver to all areas of Hong Kong?', a: 'Yes. We deliver to Hong Kong Island (Central, Causeway Bay), Kowloon (Mong Kok, Kwun Tong), and New Territories (Sha Tin, Tuen Mun). Bulk calendar orders can be arranged for warehouse or office delivery.' },
+      { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days. Bulk calendar orders can be arranged for warehouse or office delivery.' },
       { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit calendar type, size, paper type, quantity, and cover finish for a quote first. After confirmation, upload your AI / PDF file. Our prepress team will check each month page design and bleed.' },
     ],
   },
   ja: {
-    h2: '香港 カレンダー印刷 — 卓上／壁掛け／カード、50冊から、季節プロモーション必須',
+    h2: 'カレンダー印刷 — 卓上／壁掛け／カード、50冊から、季節プロモーション必須',
     coreAdvantages: {
       title: 'ZprintPro カレンダーの強み',
       items: [
@@ -2059,7 +2059,7 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
           heading: '1. 全タイプ対応：卓上、壁掛け、カード、手帳、磁石タイプ',
           points: [
             '卓上カレンダー（イーゼル）、壁掛けカレンダー（A3/A2）、カレンダーカード（はがきサイズ）、手帳カレンダー、磁石冷蔵庫カレンダーなど多様なタイプを提供。',
-            '「カレンダー印刷 香港」、「卓上カレンダー」、「壁掛けカレンダー」、「プロモーションカレンダー」などの高検索ボリュームキーワードをカバー。',
+            '「カレンダー印刷」、「卓上カレンダー」、「壁掛けカレンダー」、「プロモーションカレンダー」などの高検索ボリュームキーワードをカバー。',
             '企業ギフト、プロモーション、オフィス用品、学校記念品など多様なシーンに対応。',
           ],
         },
@@ -2128,7 +2128,7 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
         'カレンダータイプを選ぶ際、まず使用シーンとターゲット層を考慮しましょう。オフィスシーンには卓上カレンダー（イーゼル）がおすすめで、デスクでのブランド露出度が高いです。家庭シーンには壁掛けカレンダー（A3/A2）が適し、大判ビジュアルで装飾性も高いです。プロモーション配布にはカレンダーカードが最適で、持ち運び可能で低価格なので大量配布に適しています。',
         'カレンダーデザインにはブランド要素を統合すべきです。各ページにロゴとブランドカラーを含め、重要な日付（会社創業記念日、製品発売日）は特別にマークできます。メモ機能エリアは実用性と保持率を向上させます。広告スペースやクーポンエリアを確保することで、マーケティング価値も追加できます。',
         'カレンダー印刷のタイミングは重要です。デザインと印刷の準備を2–3ヶ月前から開始することをおすすめし、11–12月の印刷ラッシュを回避します。当社は季節プロモーションリマインドサービスを提供し、カレンダーが間に合うようサポートします。',
-        '企業ギフトの検索例「座枰暦 香港」「訂製月暦」は第4四半期にピークを迎えます。ターゲットが香港島の金融業界や新界の住宅コミュニティの場合、デザインに休日標註とブランドストーリーページの余白を確保し、営業担当の分區派發を容易にすることをお勧めします。',
+        '企業ギフトの検索例「座枰暦」「訂製月暦」は第4四半期にピークを迎えます。ターゲットが金融業界や住宅コミュニティの場合、デザインに休日標註とブランドストーリーページの余白を確保し、営業担当の分區派發を容易にすることをお勧めします。',
       ],
     },
     faq: [
@@ -2140,7 +2140,7 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
       { q: '1冊ずつ個別カスタマイズは可能？', a: 'はい。可変データ印刷で、異なる従業員名や店舗情報を各カレンダーに印刷可能です。' },
       { q: '紙の選択肢は？', a: '200g–300gコート紙／マット紙。台座は1–2mmグレイボードまたはカード紙。' },
       { q: 'カレンダー印刷はいつから始めるべき？', a: '2–3ヶ月前から準備を開始することをおすすめ。11–12月の印刷ラッシュを回避します。' },
-      { q: '香港全域に配送していますか？', a: 'はい。香港島（中環、銅鑼湾）、九龍（旺角、観塘）、新界（沙田、屯門）まで配送します。カレンダーの大口注文は倉庫やオフィスへの配送も調整可能です。' },
+      { q: '日本全国に配送していますか？', a: 'はい。東京・大阪・名古屋など日本全国へ DHL / FedEx で配送します。カレンダーの大口注文は倉庫やオフィスへの配送も調整可能です。' },
       { q: 'デザインファイルをアップロードする前に見積もりは取得できますか？', a: 'はい。まずカレンダータイプ、サイズ、紙タイプ、数量、表紙加工をご提出ください。確認後、AI／PDFファイルをアップロードします。印前チームが各月ページのデザイン、bleedをチェックします。' },
     ],
   },
@@ -2245,7 +2245,7 @@ const redPacketsContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   en: {
-    h2: 'Red Packet Printing Hong Kong — Foil Stamping / Embossing / 3D Craft, From 500 pcs, Lunar New Year Gifting Essential',
+    h2: 'Red Packet Printing — Foil Stamping / Embossing / 3D Craft, From 500 pcs, Lunar New Year Gifting Essential',
     coreAdvantages: {
       title: 'Why Choose ZprintPro for Red Packets?',
       items: [
@@ -2253,7 +2253,7 @@ const redPacketsContent: Record<string, CategoryLocaleContent> = {
           heading: '1. Traditional Craft Meets Modern Design — Red Packets as Collectible Art',
           points: [
             'Foil stamping, embossing, 3D debossing, UV, and laser cutting transform red packets into collectible art pieces.',
-            'Covers high-search keywords: "red packet printing Hong Kong", "foil stamped red packets", "custom red packets", "lai see printing".',
+            'Covers high-search keywords: "red packet printing", "foil stamped red packets", "custom red packets", "lai see printing".',
             'Ideal for corporate CNY gifts, wedding red packets, baby shower packets, and grand opening packets.',
           ],
         },
@@ -2322,7 +2322,7 @@ const redPacketsContent: Record<string, CategoryLocaleContent> = {
         'When choosing red packets, first consider usage and budget. Corporate bulk gifting suits 128gsm art paper with foil stamping — economical yet presentable. Premium brand VIP gifting suits 200gsm white card or pearl paper with embossing — excellent texture. Creative brands suit textured or eco recycled paper to convey brand values.',
         'Craftsmanship is the soul of red packets. Foil stamping is the most classic choice for traditional festivals; embossing adds tactile memory; 3D craft and laser cutting suit premium customization with high collectible value. We recommend at least one special finish to transform ordinary packets into collectible art.',
         'Timing is critical for red packet printing. We recommend starting design and printing 1–2 months in advance to avoid the pre-CNY printing rush. We offer zodiac design services and a traditional pattern library to help you complete designs quickly.',
-        'Searches for "lai see printing Hong Kong" and "custom red packet" concentrate before Lunar New Year. Retail gift vouchers and bank client gifts typically require color stability and batch consistency. Lock in foil-stamping plates and paper batches early, and reserve split-delivery time for multi-point receiving across Hong Kong, Kowloon, and New Territories.',
+        'Searches for "lai see printing" and "custom red packet" concentrate before Lunar New Year. Retail gift vouchers and bank client gifts typically require color stability and batch consistency. Lock in foil-stamping plates and paper batches early, and reserve split-delivery time for multi-point receiving worldwide, Kowloon, and New Territories.',
       ],
     },
     faq: [
@@ -2334,12 +2334,12 @@ const redPacketsContent: Record<string, CategoryLocaleContent> = {
       { q: 'Can each packet have different blessings?', a: 'Yes. Variable data printing allows different employee names or blessings per packet.' },
       { q: 'Can red packet sizes be customized?', a: 'Yes. Standard sizes: small, medium, large. Fully custom sizes also supported.' },
       { q: 'When should I start printing red packets?', a: 'Recommend starting 1–2 months in advance to avoid the pre-CNY printing rush.' },
-      { q: 'Do you deliver to all areas of Hong Kong?', a: 'Yes. We deliver to Hong Kong Island (Central, Causeway Bay), Kowloon (Mong Kok, Kwun Tong), and New Territories (Sha Tin, Tuen Mun). Bulk red packet orders can be arranged for warehouse or office delivery.' },
+      { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days. Bulk red packet orders can be arranged for warehouse or office delivery.' },
       { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit red packet size, paper type, quantity, and finishing options for a quote first. After confirmation, upload your AI / PDF file. Our prepress team will check die line and foil stamping area annotations.' },
     ],
   },
   ja: {
-    h2: '香港 红包印刷 — 箔押し／エンボス／立体加工、500枚から、旧正月ギフトの定番',
+    h2: '红包印刷 — 箔押し／エンボス／立体加工、500枚から、旧正月ギフトの定番',
     coreAdvantages: {
       title: 'ZprintPro 红包印刷の強み',
       items: [
@@ -2347,7 +2347,7 @@ const redPacketsContent: Record<string, CategoryLocaleContent> = {
           heading: '1. 伝統工芸と現代デザインの融合、红包をブランドアートに',
           points: [
             '箔押し、エンボス、立体デボス、UV、レーザーカットなどの伝統工芸で、红包をコレクション級のアートに変身させます。',
-            '「红包印刷 香港」、「箔押し红包」、「カスタム红包」、「利是封」などの高検索ボリュームキーワードをカバー。',
+            '「红包印刷」、「箔押し红包」、「カスタム红包」、「利是封」などの高検索ボリュームキーワードをカバー。',
             '企業の旧正月ギフト、結婚式红包、百日祝い、開業红包などの伝統的な祝祭シーンに最適。',
           ],
         },
@@ -2416,7 +2416,7 @@ const redPacketsContent: Record<string, CategoryLocaleContent> = {
         '红包を選ぶ際、まず用途と予算を考慮しましょう。企業の大量ギフトには128gコート紙に箔押しがおすすめで、手頃でありながら体裁が良いです。高級ブランドのVIPギフトには200g白カード紙またはパール紙にエンボスが最適で、質感が抜群です。クリエイティブブランドにはテクスチャ紙やエコ再生紙が適し、ブランドの理念を伝えます。',
         '加工は红包の魂です。箔押しは伝統的な祝祭に最も定番の選択。エンボスは触感の記憶を追加します。立体加工とレーザーカットは高級カスタムに適し、コレクション価値が高いです。少なくとも1つの特色ある加工を選び、普通の红包をアートに変身させましょう。',
         '红包印刷のタイミングは重要です。デザインと印刷の準備を1–2ヶ月前から開始することをおすすめし、旧正月前の印刷ラッシュを回避します。当社は干支デザインサービスと伝統模様ライブラリを提供し、迅速なデザイン完成をサポートします。',
-        '「利是封 印刷 香港」「定制 利是封」の検索は旧正月前に集中します。小売ギフト券や銀行顧客ギフトは通常、色彩安定性とロット均一性が要求されるため、早めに箔押し電鍋版と紙張ロットを確定し、港九新界の多点受取に対応する分貨時間を確保することをお勧めします。',
+        '「利是封 印刷」「定制 利是封」の検索は旧正月前に集中します。小売ギフト券や銀行顧客ギフトは通常、色彩安定性とロット均一性が要求されるため、早めに箔押し電鍋版と紙張ロットを確定し、港九新界の多点受取に対応する分貨時間を確保することをお勧めします。',
       ],
     },
     faq: [
@@ -2428,7 +2428,7 @@ const redPacketsContent: Record<string, CategoryLocaleContent> = {
       { q: '異なる祝福の言葉は印刷できますか？', a: 'はい。可変データ印刷で、異なる従業員名や祝福の言葉を各红包に印刷可能です。' },
       { q: '红包のサイズはカスタマイズできますか？', a: 'はい。標準サイズは小・中・大。完全カスタマイズサイズも対応。' },
       { q: '红包印刷はいつから始めるべき？', a: '1–2ヶ月前から準備を開始することをおすすめ。旧正月前の印刷ラッシュを回避します。' },
-      { q: '香港全域に配送していますか？', a: 'はい。香港島（中環、銅鑼湾）、九龍（旺角、観塘）、新界（沙田、屯門）まで配送します。红包の大口注文は倉庫やオフィスへの配送も調整可能です。' },
+      { q: '日本全国に配送していますか？', a: 'はい。東京・大阪・名古屋など日本全国へ DHL / FedEx で配送します。红包の大口注文は倉庫やオフィスへの配送も調整可能です。' },
       { q: 'デザインファイルをアップロードする前に見積もりは取得できますか？', a: 'はい。まず红包サイズ、紙タイプ、数量、加工オプションをご提出ください。確認後、AI／PDFファイルをアップロードします。印前チームが抜き型、箔押しエリアの注記をチェックします。' },
     ],
   },
@@ -2533,7 +2533,7 @@ const educationalContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   en: {
-    h2: 'Educational Printing Hong Kong — Exercise Books / Textbooks / Certificates, Professional Education Printing Services',
+    h2: 'Educational Printing — Exercise Books / Textbooks / Certificates, Professional Education Printing Services',
     coreAdvantages: {
       title: 'Why Choose ZprintPro for Educational Printing?',
       items: [
@@ -2541,7 +2541,7 @@ const educationalContent: Record<string, CategoryLocaleContent> = {
           heading: '1. Education Printing Specialists: Exercise Books to Textbooks in One Place',
           points: [
             'Full range: exercise books, workbooks, textbooks, teacher manuals, report cards, certificates, awards, and graduation yearbooks.',
-            'Covers high-search keywords: "educational printing Hong Kong", "exercise book printing", "textbook printing", "certificate printing".',
+            'Covers high-search keywords: "educational printing", "exercise book printing", "textbook printing", "certificate printing".',
             'Serving kindergartens, primary schools, secondary schools, universities, tutoring centers, and all educational institutions.',
           ],
         },
@@ -2621,12 +2621,12 @@ const educationalContent: Record<string, CategoryLocaleContent> = {
       { q: 'Do you offer textbook design services?', a: 'Yes. Professional designers provide textbook layout services ensuring clear, readable content meeting educational standards.' },
       { q: 'Are there discounts for educational institutions?', a: 'Yes. Schools, tutoring centers, and institutions enjoy exclusive discounts — long-term clients get additional benefits.' },
       { q: 'When should I start preparing textbook printing?', a: 'Recommend starting 1 month before each semester to avoid the back-to-school printing rush.' },
-      { q: 'Do you deliver to all areas of Hong Kong?', a: 'Yes. We deliver to Hong Kong Island (Central, Causeway Bay), Kowloon (Mong Kok, Kwun Tong), and New Territories (Sha Tin, Tuen Mun). Bulk textbook orders can be arranged for school or warehouse delivery.' },
+      { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days. Bulk textbook orders can be arranged for school or warehouse delivery.' },
       { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit product type, size, page count, paper type, binding method, and quantity for a quote first. After confirmation, upload your AI / PDF file. Our prepress team will check bleed and binding safety margins.' },
     ],
   },
   ja: {
-    h2: '香港 教育印刷 — ノート／教科書／証書、プロの教育印刷サービス',
+    h2: '教育印刷 — ノート／教科書／証書、プロの教育印刷サービス',
     coreAdvantages: {
       title: 'ZprintPro 教育印刷の強み',
       items: [
@@ -2634,7 +2634,7 @@ const educationalContent: Record<string, CategoryLocaleContent> = {
           heading: '1. 教育印刷専門家：ノートから教科書までワンストップ',
           points: [
             'ノート、ワークブック、教科書、教師用マニュアル、成績表、証書、表彰状、卒業記念冊など教育印刷の全系列を提供。',
-            '「教育印刷 香港」、「ノート印刷」、「教科書印刷」、「証書印刷」などの高検索ボリュームキーワードをカバー。',
+            '「教育印刷」、「ノート印刷」、「教科書印刷」、「証書印刷」などの高検索ボリュームキーワードをカバー。',
             '幼稚園、小学校、中学校、大学、塾、教育機関など全教育段階を対象。',
           ],
         },
@@ -2714,7 +2714,7 @@ const educationalContent: Record<string, CategoryLocaleContent> = {
       { q: '教材のデザインも依頼できますか？', a: 'はい。プロデザイナーが教材の組版サービスを提供。内容の明確さと教育基準への準拠を確保します。' },
       { q: '教育機関向け割引はありますか？', a: 'はい。学校、塾、教育機関は専用割引を享受。長期協力クライアントは追加特典があります。' },
       { q: '教材印刷はいつから準備すべき？', a: '学期開始1ヶ月前から準備を開始することをおすすめ。新学期の印刷ラッシュを回避します。' },
-      { q: '香港全域に配送していますか？', a: 'はい。香港島（中環、銅鑼湾）、九龍（旺角、観塘）、新界（沙田、屯門）まで配送します。教科書の大口注文は学校や倉庫への配送も調整可能です。' },
+      { q: '日本全国に配送していますか？', a: 'はい。東京・大阪・名古屋など日本全国へ DHL / FedEx で配送します。教科書の大口注文は学校や倉庫への配送も調整可能です。' },
       { q: 'デザインファイルをアップロードする前に見積もりは取得できますか？', a: 'はい。まず製品タイプ、サイズ、ページ数、紙タイプ、製本方式、数量をご提出ください。確認後、AI／PDFファイルをアップロードします。印前チームがbleed、綴じ安全距離をチェックします。' },
     ],
   },
@@ -2743,7 +2743,7 @@ export function getDefaultCategoryContent(categorySlug: string, locale: string):
   const isEn = locale === 'en';
   
   return {
-    h2: isZh ? `香港${name} — 專業品質，價格透明` : isEn ? `${name} Hong Kong — Professional Quality, Transparent Pricing` : `香港 ${name} — プロ品質、透明な価格`,
+    h2: isZh ? `香港${name} — 專業品質，價格透明` : isEn ? `${name} — Professional Quality, Transparent Pricing` : `${name} — プロ品質、透明な価格`,
     coreAdvantages: {
       title: isZh ? '核心競爭優勢' : isEn ? 'Why Choose ZprintPro?' : 'ZprintProの強み',
       items: [
@@ -2756,10 +2756,10 @@ export function getDefaultCategoryContent(categorySlug: string, locale: string):
           ],
         },
         {
-          heading: isZh ? '2. 快速交貨，全港配送' : isEn ? '2. Fast Turnaround, Island-Wide Delivery' : '2. 迅速な納品、香港全域配送',
+          heading: isZh ? '2. 快速交貨，全港配送' : isEn ? '2. Fast Turnaround, Island-Wide Delivery' : '2. 迅速な納品、日本全国配送',
           points: [
             isZh ? '標準 3–5 天交貨，急件 24–48 小時處理。' : isEn ? 'Standard 3–5 day delivery, rush orders in 24–48 hours.' : '標準3–5日納品、急行注文は24–48時間。',
-            isZh ? '全港順豐速遞，支持到店自取。' : isEn ? 'SF Express across Hong Kong, with store pickup available.' : '香港全域SFエクスプレス、店頭受取も可能。',
+            isZh ? '全港順豐速遞，支持到店自取。' : isEn ? 'DHL Express worldwide, with store pickup available.' : '日本全国SFエクスプレス、店頭受取も可能。',
             isZh ? '企業客戶可申請月結賬戶，享受批量優惠。' : isEn ? 'Corporate accounts available with volume discounts.' : '法人様は月次請求が可能で、大口割引をご利用いただけます。',
           ],
         },
@@ -2805,9 +2805,9 @@ export function getDefaultCategoryContent(categorySlug: string, locale: string):
     serviceNodes: {
       title: isZh ? '本地化服務節點' : isEn ? 'Local Service Points' : 'ローカルサービス拠点',
       items: [
-        { title: isZh ? '深圳自有工廠' : isEn ? 'Modern Production Facility' : '自社工場 (深圳)', description: isZh ? '現代化生產基地，配備海德堡印刷設備' : isEn ? 'Modern production base in Shenzhen with Heidelberg presses' : '深圳にある自社工場。ハイデルベルグ印刷機稼働中' },
+        { title: isZh ? '深圳自有工廠' : isEn ? 'Modern Production Facility' : '自社工場 (アジア)', description: isZh ? '現代化生產基地，配備海德堡印刷設備' : isEn ? 'Modern production base at our Asia factory with Heidelberg presses' : 'アジアにある自社工場。ハイデルベルグ印刷機稼働中' },
         { title: isZh ? '免費設計諮詢' : isEn ? 'Free Design Consultation' : '無料デザイン相談', description: isZh ? '專業設計師提供一對一指導' : isEn ? 'Professional designers provide one-on-one guidance' : 'プロのデザイナーが一对一で指導' },
-        { title: isZh ? '全港順豐配送' : isEn ? 'Island-Wide SF Express' : '香港全域SF配送', description: isZh ? '小批量快遞，大批量專車直送' : isEn ? 'Small batches by express, large batches by dedicated truck' : '小ロットは宅配、大ロットは専用トラック直送' },
+        { title: isZh ? '全港順豐配送' : isEn ? 'Island-Wide SF Express' : '日本全国SF配送', description: isZh ? '小批量快遞，大批量專車直送' : isEn ? 'Small batches by express, large batches by dedicated truck' : '小ロットは宅配、大ロットは専用トラック直送' },
       ],
     },
     buyingGuide: {
@@ -2941,7 +2941,7 @@ const stickersContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   en: {
-    h2: 'Sticker Printing Hong Kong — Waterproof / Transparent / Foil, From 50 pcs, Same-Day Delivery',
+    h2: 'Sticker Printing — Waterproof / Transparent / Foil, From 50 pcs, Same-Day Delivery',
     coreAdvantages: {
       title: 'Why Choose ZprintPro for Stickers?',
       items: [
@@ -2949,7 +2949,7 @@ const stickersContent: Record<string, CategoryLocaleContent> = {
           heading: '1. Full Material Range: Art Paper to Transparent PVC',
           points: [
             '15+ material options: art paper, transparent PVC, waterproof PVC, destructible, foil, fluorescent, and reflective stickers.',
-            'Covers high-search keywords: "sticker printing Hong Kong", "waterproof stickers", "transparent stickers", "foil stickers".',
+            'Covers high-search keywords: "sticker printing", "waterproof stickers", "transparent stickers", "foil stickers".',
             'Ideal for product labels, packaging stickers, brand stickers, event stickers, and safety markings.',
           ],
         },
@@ -3038,12 +3038,12 @@ const stickersContent: Record<string, CategoryLocaleContent> = {
       { q: 'How long do outdoor stickers last?', a: 'Laminated PVC stickers last 2–3 years outdoors without fading. Non-laminated lasts approximately 6–12 months.' },
       { q: 'What is the effect of transparent stickers?', a: 'Transparent PVC stickers have a fully clear background — only the design and text are visible. Ideal for glass bottles and clear packaging.' },
       { q: 'What is the fastest turnaround for stickers?', a: 'Same-day digital printing (50–500 pcs). Standard offset: 2–3 days.' },
-      { q: 'Do you deliver to all areas of Hong Kong?', a: 'Yes. We deliver to Hong Kong Island (Central, Causeway Bay), Kowloon (Mong Kok, Kwun Tong), and New Territories (Sha Tin, Tuen Mun) via SF Express or dedicated truck. Bulk orders can be arranged for warehouse or office delivery.' },
+      { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days. Bulk orders can be arranged for warehouse or office delivery.' },
       { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit sticker size, material, quantity, and shape for a quote first. After confirmation, upload your AI / PDF / PNG file. Our prepress team will check resolution and color mode.' },
     ],
   },
   ja: {
-    h2: '香港 シール印刷 — 防水／透明／箔押し、50枚から、即日納品',
+    h2: 'シール印刷 — 防水／透明／箔押し、50枚から、即日納品',
     coreAdvantages: {
       title: 'ZprintPro シール印刷の強み',
       items: [
@@ -3051,7 +3051,7 @@ const stickersContent: Record<string, CategoryLocaleContent> = {
           heading: '1. 全材質対応：コート紙から透明PVCまで',
           points: [
             'コート紙シール、透明PVCシール、防水PVCシール、セキュリティシール、箔押しシール、蛍光シール、反射シールなど15種類以上の材質を提供。',
-            '「シール印刷 香港」、「防水シール」、「透明シール」、「箔押しシール」などの高検索ボリュームキーワードをカバー。',
+            '「シール印刷」、「防水シール」、「透明シール」、「箔押しシール」などの高検索ボリュームキーワードをカバー。',
             '製品ラベル、包装シール、ブランドシール、イベントシール、安全標示など多様なシーンに対応。',
           ],
         },
@@ -3140,7 +3140,7 @@ const stickersContent: Record<string, CategoryLocaleContent> = {
       { q: '屋外シールはどのくらい持ちますか？', a: 'ラミネートPVCシールは屋外で2–3年褪色しません。ラミネートなしは約6–12ヶ月です。' },
       { q: '透明シールはどんな効果ですか？', a: '透明PVCシールは背景が完全に透明で、デザインと文字のみが見えます。ガラス瓶や透明包装に最適です。' },
       { q: 'シールの最短納期は？', a: 'デジタル印刷は即日（50–500枚）。オフセット印刷は標準2–3日。' },
-      { q: '香港全域に配送していますか？', a: 'はい。香港島（中環、銅鑼湾）、九龍（旺角、観塘）、新界（沙田、屯門）まで顺丰または専用トラックで配送します。大口注文は倉庫やオフィスへの配送も調整可能です。' },
+      { q: '日本全国に配送していますか？', a: 'はい。東京・大阪・名古屋など日本全国へ DHL / FedEx で配送します。大口注文は倉庫やオフィスへの配送も調整可能です。' },
       { q: 'デザインファイルをアップロードする前に見積もりは取得できますか？', a: 'はい。まずシールサイズ、材質、数量、形状をご提出ください。確認後、AI／PDF／PNGファイルをアップロードします。印前チームが解像度、カラーモードをチェックします。' },
     ],
   },
@@ -3245,7 +3245,7 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   en: {
-    h2: 'Flyer Printing Hong Kong — A5/A4/A3 Full Color, From 100 pcs, Same-Day Delivery',
+    h2: 'Flyer Printing — A5/A4/A3 Full Color, From 100 pcs, Same-Day Delivery',
     coreAdvantages: {
       title: 'Why Choose ZprintPro for Flyers?',
       items: [
@@ -3253,7 +3253,7 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
           heading: '1. Full Size Coverage: A6 to A3 for Every Distribution Scenario',
           points: [
             'Full standard sizes: A6(105×148mm), A5(148×210mm), A4(210×297mm), A3(297×420mm), DL(99×210mm).',
-            'Covers high-search keywords: "flyer printing Hong Kong", "leaflet printing", "A4 color printing", "A5 flyers".',
+            'Covers high-search keywords: "flyer printing", "leaflet printing", "A4 color printing", "A5 flyers".',
             'Ideal for grand openings, event promotions, product introductions, food delivery, and education enrollment.',
           ],
         },
@@ -3322,7 +3322,7 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
         'When choosing flyer size, consider distribution scenario and reading distance. A6 suits mailbox drops and street handouts — lightweight and portable. A5 is the most popular size, balancing information and portability. A4 suits detailed product introductions and corporate promotion. A3 suits poster posting and window display. DL size (1/3 A4) suits mailbox drops and event invitations.',
         'Paper choice affects feel and cost. 128gsm art paper is the most economical choice for mass distribution. 157gsm offers a more substantial feel for brand image promotion. 200gsm white card provides excellent stiffness for premium products and long-term display. Eco recycled paper suits brands focused on sustainability.',
         'Folding dramatically increases information capacity. Half-fold (4 pages) suits simple product introductions; tri-fold (6 pages) is the most common format for menus and corporate introductions; Z-fold suits charts and process displays. Folded flyers cost only slightly more than flat flyers but deliver 3–5x more information.',
-        'Offline distribution in Hong Kong commonly involves searches like "flyer printing Hong Kong," "A5 flyer same day," and "tri-fold brochure." Large housing estates, MTR exits, and campuses each have preferences for size and paper weight. We recommend locking down the distribution point (mailboxes / street / in-store) first before deciding on paper weight and whether lamination for moisture protection is needed.',
+        'Offline distribution worldwide commonly involves searches like "flyer printing," "A5 flyer same day," and "tri-fold brochure." Large housing estates, MTR exits, and campuses each have preferences for size and paper weight. We recommend locking down the distribution point (mailboxes / street / in-store) first before deciding on paper weight and whether lamination for moisture protection is needed.',
       ],
     },
     faq: [
@@ -3334,12 +3334,12 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
       { q: 'Can flyers have serial numbers or QR codes?', a: 'Yes. Variable data printing allows different serial numbers, barcodes, or QR codes per flyer.' },
       { q: 'What paper is best for distribution?', a: '128gsm art paper is most economical for mass distribution; 157gsm offers better feel for brand promotion.' },
       { q: 'What does lamination do?', a: 'Lamination (matte/gloss) provides waterproof and stain-resistant protection, extends lifespan, and enhances quality feel.' },
-      { q: 'Do you deliver to all areas of Hong Kong?', a: 'Yes. We deliver to Hong Kong Island (Central, Causeway Bay), Kowloon (Mong Kok, Kwun Tong), and New Territories (Sha Tin, Tuen Mun) via SF Express or dedicated truck. Bulk orders can be arranged for warehouse or office delivery.' },
+      { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days. Bulk orders can be arranged for warehouse or office delivery.' },
       { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit flyer size, paper type, quantity, single or double-sided, and folding options for a quote first. After confirmation, upload your AI / PDF file. Our prepress team will check bleed and resolution.' },
     ],
   },
   ja: {
-    h2: '香港 チラシ印刷 — A5/A4/A3フルカラー、100枚から、即日納品',
+    h2: 'チラシ印刷 — A5/A4/A3フルカラー、100枚から、即日納品',
     coreAdvantages: {
       title: 'ZprintPro チラシ印刷の強み',
       items: [
@@ -3347,7 +3347,7 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
           heading: '1. 全サイズ対応：A6からA3まで、あらゆる配布シーンに',
           points: [
             'A6(105×148mm)、A5(148×210mm)、A4(210×297mm)、A3(297×420mm)、DL(99×210mm)など全標準サイズを提供。',
-            '「チラシ印刷 香港」、「パンフレット印刷」、「A4カラー印刷」、「A5チラシ」などの高検索ボリュームキーワードをカバー。',
+            '「チラシ印刷」、「パンフレット印刷」、「A4カラー印刷」、「A5チラシ」などの高検索ボリュームキーワードをカバー。',
             '新店開業、イベントプロモーション、製品紹介、飲食デリバリー、教育生徒募集など多様なシーンに対応。',
           ],
         },
@@ -3416,7 +3416,7 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
         'チラシサイズを選ぶ際、配布シーンと読書距離を考慮しましょう。A6は郵便ポスト投函や街頭配布に適し、軽量で持ち運びに便利です。A5は最も人気のサイズで、情報量と携帯性のバランスが良いです。A4は詳細な製品紹介や企業宣伝に適しています。A3はポスター掲示やショーウィンドウ展示に適しています。DLサイズ（A4の1/3）は郵便ポスト投函やイベント招待に適しています。',
         '紙の選択は質感とコストに影響します。128gコート紙は大量配布に最も手頃な選択です。157gはより厚みのある質感で、ブランドイメージ宣伝に適しています。200g白カード紙はかし性が抜群で、高級製品や長期展示に適しています。エコ再生紙は持続可能性に注力するブランドに適しています。',
         '折り加工はチラシの情報容量を劇的に増加させます。対折（4ページ）は簡単な製品紹介に適しています。三つ折り（6ページ）はメニューや企業紹介で最も一般的なフォーマットです。Z折りは図表やプロセス表示に適しています。折りチラシのコストは平面チラシよりわずかに高いだけで、情報量は3–5倍増加します。',
-        '香港の線下配布では「傳單 印刷 香港」「A5 傳單 即日」「三折頁」などの検索が一般的です。大型屋郸、港鐵出口、校園周辺ではサイズと紙厚の好みが異なります。まず配布ポイント（郵便受け／街頭／店内）を絞り込んでから、紙厚とラミネート防湿の要否を決定することをお勧めします。',
+        '線下配布では「傳單 印刷」「A5 傳單 即日」「三折頁」などの検索が一般的です。大型屋郸、港鐵出口、校園周辺ではサイズと紙厚の好みが異なります。まず配布ポイント（郵便受け／街頭／店内）を絞り込んでから、紙厚とラミネート防湿の要否を決定することをお勧めします。',
       ],
     },
     faq: [
@@ -3428,7 +3428,7 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
       { q: 'シリアル番号やQRコードは印刷できますか？', a: 'はい。可変データ印刷で、異なるシリアル番号、バーコード、QRコードを各チラシに印刷可能です。' },
       { q: '配布に最適な紙は？', a: '128gコート紙は大量配布に最も手頃。157gは質感が良く、ブランドプロモーションに適しています。' },
       { q: 'ラミネートの効果は？', a: 'ラミネート（マット／グロス）は防水防汚で、使用寿命を延長し、質感を向上させます。長期展示や屋外使用に適しています。' },
-      { q: '香港全域に配送していますか？', a: 'はい。香港島（中環、銅鑼湾）、九龍（旺角、観塘）、新界（沙田、屯門）まで顺丰または専用トラックで配送します。大口注文は倉庫やオフィスへの配送も調整可能です。' },
+      { q: '日本全国に配送していますか？', a: 'はい。東京・大阪・名古屋など日本全国へ DHL / FedEx で配送します。大口注文は倉庫やオフィスへの配送も調整可能です。' },
       { q: 'デザインファイルをアップロードする前に見積もりは取得できますか？', a: 'はい。まずチラシサイズ、紙タイプ、数量、片面／両面、折り加工オプションをご提出ください。確認後、AI／PDFファイルをアップロードします。印前チームがbleed、解像度をチェックします。' },
     ],
   },
@@ -3533,7 +3533,7 @@ const postersContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   en: {
-    h2: 'Poster Printing Hong Kong — A2/A1/A0 Large Format, Waterproof & UV-Resistant, Wall Graphic Specialists',
+    h2: 'Poster Printing — A2/A1/A0 Large Format, Waterproof & UV-Resistant, Wall Graphic Specialists',
     coreAdvantages: {
       title: 'Why Choose ZprintPro for Posters?',
       items: [
@@ -3541,7 +3541,7 @@ const postersContent: Record<string, CategoryLocaleContent> = {
           heading: '1. Full Size Coverage: A2 to A0, Indoor to Outdoor',
           points: [
             'Standard sizes: A2(420×594mm), A1(594×841mm), A0(841×1189mm), plus fully custom large-format output.',
-            'Covers high-search keywords: "poster printing Hong Kong", "A1 poster", "A0 large format", "waterproof poster".',
+            'Covers high-search keywords: "poster printing", "A1 poster", "A0 large format", "waterproof poster".',
             'Indoor posters (art paper, PP synthetic) and outdoor posters (PVC, canvas, mesh) all covered.',
           ],
         },
@@ -3610,7 +3610,7 @@ const postersContent: Record<string, CategoryLocaleContent> = {
         'When choosing poster size, consider viewing distance and display space. A2 suits close viewing (in-store decor, display boards). A1 is the most common exhibition size, balancing visual impact and space requirements. A0 suits long-distance viewing and large spaces (conference backdrops, mall atriums). For extra-large outdoor ads, mesh material with seam output is recommended.',
         'Material choice determines poster lifespan and effect. Short-term indoor use (exhibitions, events) suits art paper or PP synthetic paper — economical with vibrant colors. Long-term indoor display suits PP synthetic paper or mounted boards that resist curling. Outdoor use must choose PVC or canvas with waterproof and UV-resistant properties for 2–3 year fade resistance.',
         'Resolution settings are often overlooked. Large posters (A0+) are viewed from distance — 72–100dpi is sufficiently clear. Excessively high resolution increases file size and processing time without improving actual visual effect. Small posters (A2) viewed at close range should use 150dpi to ensure crisp detail.',
-        'Shopping mall atriums, MTR lines, and shop windows in Hong Kong often generate searches for "poster printing Hong Kong," "A1 poster," and "waterproof poster." If displaying in semi-outdoor or humid environments (such as near outlying island ferries), prioritize PP / PVC and evaluate mounting options to avoid paper edge curling from moisture.',
+        'Shopping mall atriums, MTR lines, and shop windows worldwide often generate searches for "poster printing," "A1 poster," and "waterproof poster." If displaying in semi-outdoor or humid environments (such as near outlying island ferries), prioritize PP / PVC and evaluate mounting options to avoid paper edge curling from moisture.',
       ],
     },
     faq: [
@@ -3622,12 +3622,12 @@ const postersContent: Record<string, CategoryLocaleContent> = {
       { q: 'Will self-adhesive backing leave residue?', a: 'Removable adhesive leaves no residue — ideal for short-term exhibitions. Permanent adhesive is long-lasting but may leave minimal residue.' },
       { q: 'What resolution is needed for large-format output?', a: 'A2: 150dpi recommended; A1/A0: 72–100dpi sufficient. Higher resolution does not improve visual effect.' },
       { q: 'Can custom sizes be ordered?', a: 'Yes. Fully custom sizes supported, maximum width 1.5 meters, unlimited length.' },
-      { q: 'Do you deliver to all areas of Hong Kong?', a: 'Yes. We deliver to Hong Kong Island (Central, Causeway Bay), Kowloon (Mong Kok, Kwun Tong), and New Territories (Sha Tin, Tuen Mun). Large-format posters can be rolled for delivery; mounted boards require careful packaging.' },
+      { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days. Large-format posters can be rolled for delivery; mounted boards require careful packaging.' },
       { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit poster size, material, quantity, and mounting requirements for a quote first. After confirmation, upload your AI / PDF file. Our prepress team will check resolution and bleed based on output size.' },
     ],
   },
   ja: {
-    h2: '香港 ポスター印刷 — A2/A1/A0大判出力、防水・UV耐性、ウォールグラフィック専門',
+    h2: 'ポスター印刷 — A2/A1/A0大判出力、防水・UV耐性、ウォールグラフィック専門',
     coreAdvantages: {
       title: 'ZprintPro ポスター印刷の強み',
       items: [
@@ -3635,7 +3635,7 @@ const postersContent: Record<string, CategoryLocaleContent> = {
           heading: '1. 全サイズ対応：A2からA0、屋内から屋外まで',
           points: [
             'A2(420×594mm)、A1(594×841mm)、A0(841×1189mm)などの標準サイズに加え、完全カスタマイズの大判出力も対応。',
-            '「ポスター印刷 香港」、「A1ポスター」、「A0大判出力」、「防水ポスター」などの高検索ボリュームキーワードをカバー。',
+            '「ポスター印刷」、「A1ポスター」、「A0大判出力」、「防水ポスター」などの高検索ボリュームキーワードをカバー。',
             '屋内ポスター（コート紙、PP合成紙）と屋外ポスター（PVC、帆布、メッシュ）を全カバー。',
           ],
         },
@@ -3704,7 +3704,7 @@ const postersContent: Record<string, CategoryLocaleContent> = {
         'ポスターサイズを選ぶ際、視聴距離と展示スペースを考慮しましょう。A2は近距離視聴に適しています（店内装飾、展示板）。A1は最も一般的な展示サイズで、視覚的インパクトとスペース要件のバランスが良いです。A0は遠距離視聴や大空間（会議背景、商場アトリウム）に適しています。超大型の屋外広告には、メッシュ材質の継ぎ目出力をおすすめします。',
         '材質の選択はポスターの寿命と効果を決定します。短期の屋内使用（展示会、イベント）にはコート紙やPP合成紙が適しており、手頃でありながら発色が鮮やかです。長期の屋内展示には、PP合成紙や板貼りが適し、捲れを防ぎます。屋外使用には、PVCや帆布を選び、防水・UV耐性で2–3年の褪色防止を確保する必要があります。',
         '解像度設定は見落とされがちです。大判ポスター（A0以上）は遠距離から見られるため、72–100dpiで十分に鮮明です。過度に高い解像度はファイルサイズと処理時間を増加させるだけで、実際の視覚効果は改善されません。小さなポスター（A2）は近距離で見られるため、細部の鮮明さを確保するために150dpiを推奨します。',
-        '香港の商場中庭、港鐵沿線、街舗ショーウィンドウでは「海報印刷 香港」「A1 海報」「防水 海報」などの需要が見られます。半屋外や湿気の多い環境（離島フェリー周辺など）で展示する場合、PP／PVCを優先し、装板方案を検討して紙端の湿気による巻き上がりを防ぐ必要があります。',
+        '商場中庭、駅沿線、街舗ショーウィンドウでは「海報印刷」「A1 海報」「防水 海報」などの需要が見られます。半屋外や湿気の多い環境（離島フェリー周辺など）で展示する場合、PP／PVCを優先し、装板方案を検討して紙端の湿気による巻き上がりを防ぐ必要があります。',
       ],
     },
     faq: [
@@ -3716,7 +3716,7 @@ const postersContent: Record<string, CategoryLocaleContent> = {
       { q: '粘着剤は残りますか？', a: '剥がしやすい粘着剤は残りません。短期展示に最適。永久粘着剤は長期牢固ですが、微量の残りがある可能性があります。' },
       { q: '大判出力に必要な解像度は？', a: 'A2は150dpi推奨。A1/A0は72–100dpiで十分。高解像度は視覚効果を改善しません。' },
       { q: 'カスタムサイズは注文できますか？', a: 'はい。完全カスタマイズサイズ対応。最大幅1.5メートル、長さは無制限です。' },
-      { q: '香港全域に配送していますか？', a: 'はい。香港島（中環、銅鑼湾）、九龍（旺角、観塘）、新界（沙田、屯門）まで配送します。大判ポスターは巻いて配送可能。板貼りは丁寧な梱包が必要です。' },
+      { q: '日本全国に配送していますか？', a: 'はい。東京・大阪・名古屋など日本全国へ DHL / FedEx で配送します。大判ポスターは巻いて配送可能。板貼りは丁寧な梱包が必要です。' },
       { q: 'デザインファイルをアップロードする前に見積もりは取得できますか？', a: 'はい。まずポスターサイズ、材質、数量、板貼りの有無をご提出ください。確認後、AI／PDFファイルをアップロードします。印前チームが出力サイズに応じて解像度とbleedをチェックします。' },
     ],
   },
@@ -3831,7 +3831,7 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   en: {
-    h2: 'Paper Bag Printing Hong Kong — White Card / Kraft / Specialty Paper, From 100 pcs, Brand Packaging Essential',
+    h2: 'Paper Bag Printing — White Card / Kraft / Specialty Paper, From 100 pcs, Brand Packaging Essential',
     coreAdvantages: {
       title: 'Why Choose ZprintPro for Paper Bags?',
       items: [
@@ -3839,7 +3839,7 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
           heading: '1. Full Material Range: White Card to Specialty Papers',
           points: [
             '20+ material options: white card, kraft paper, black card, pearl paper, textured paper, and eco recycled paper.',
-            'Covers high-search keywords: "paper bag printing Hong Kong", "kraft paper bags", "gift bags", "branded paper bags".',
+            'Covers high-search keywords: "paper bag printing", "kraft paper bags", "gift bags", "branded paper bags".',
             'Ideal for retail shopping bags, gift packaging, event giveaways, food takeaway, and cosmetics packaging.',
           ],
         },
@@ -3928,12 +3928,12 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
       { q: 'What handle options are available?', a: 'Cotton rope, paper rope, ribbon, and leather cord. Different materials suit different brand styles.' },
       { q: 'Can bags be foil stamped or embossed?', a: 'Yes. Foil stamping, embossing, debossing, and spot UV all available.' },
       { q: 'What are the design file requirements?', a: 'Dieline design required (AI/PDF), 300dpi, CMYK, 3mm bleed and glue area.' },
-      { q: 'Do you deliver to all areas of Hong Kong?', a: 'Yes. We deliver to Hong Kong Island (Central, Causeway Bay), Kowloon (Mong Kok, Kwun Tong), and New Territories (Sha Tin, Tuen Mun) via SF Express or dedicated truck. Bulk orders can be arranged for warehouse or office delivery.' },
+      { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days. Bulk orders can be arranged for warehouse or office delivery.' },
       { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit bag size, paper type, handle style, quantity, and finishing options for a quote first. After confirmation, upload your AI / PDF file with dieline design. Our prepress team will check die line accuracy and bleed.' },
     ],
   },
   ja: {
-    h2: '香港 紙袋印刷 — 白カード／クラフト／特殊紙、100個から、ブランドパッケージの定番',
+    h2: '紙袋印刷 — 白カード／クラフト／特殊紙、100個から、ブランドパッケージの定番',
     coreAdvantages: {
       title: 'ZprintPro 紙袋印刷の強み',
       items: [
@@ -3941,7 +3941,7 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
           heading: '1. 全材質対応：白カードから特殊紙まで',
           points: [
             '白カード紙、クラフト紙、黒カード紙、パール紙、テクスチャ紙、エコ再生紙など20種類以上の材質を選択可能。',
-            '「紙袋印刷 香港」、「クラフト紙袋」、「ギフト紙袋」、「ブランド紙袋」などの高検索ボリュームキーワードをカバー。',
+            '「紙袋印刷」、「クラフト紙袋」、「ギフト紙袋」、「ブランド紙袋」などの高検索ボリュームキーワードをカバー。',
             '小売ショッピングバッグ、ギフト包装、イベント配布、食品テイクアウト、化粧品包装など多様なシーンに対応。',
           ],
         },
@@ -4030,7 +4030,7 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
       { q: 'どんな取っ手がありますか？', a: '綿紐、紙紐、リボン、革紐。異なる材質は異なるブランドスタイルに適しています。' },
       { q: '箔押しやエンボスはできますか？', a: 'はい。箔押し、エンボス、デボス、局部UVなど多様な加工が可能です。' },
       { q: '紙袋のデザイン要件は？', a: '展開図が必要（AI／PDF）、300dpi、CMYK、3mmのbleedと糊付けエリア。' },
-      { q: '香港全域に配送していますか？', a: 'はい。香港島（中環、銅鑼湾）、九龍（旺角、観塘）、新界（沙田、屯門）まで顺丰または専用トラックで配送します。大口注文は倉庫やオフィスへの配送も調整可能です。' },
+      { q: '日本全国に配送していますか？', a: 'はい。東京・大阪・名古屋など日本全国へ DHL / FedEx で配送します。大口注文は倉庫やオフィスへの配送も調整可能です。' },
       { q: 'デザインファイルをアップロードする前に見積もりは取得できますか？', a: 'はい。まず紙袋サイズ、紙タイプ、取っ手スタイル、数量、加工オプションをご提出ください。確認後、展開図付きのAI／PDFファイルをアップロードします。印前チームが抜き型の精度、bleedをチェックします。' },
     ],
   },
@@ -4145,7 +4145,7 @@ const japanDoujinContent: Record<string, CategoryLocaleContent> = {
           ],
         },
         {
-          heading: '2. Cross-Border Friendly: Shenzhen Factory Direct to Japan via DHL 2-4 Working Days',
+          heading: '2. Cross-Border Friendly: Asia Factory Direct to Japan via DHL 2-4 Working Days',
           points: [
             'DHL Express / EMS / SF International flexible combinations for optimized cross-border delivery.',
             'Japan consumption tax DDP (Delivered Duty Paid) option — recipient zero customs burden.',
@@ -4199,7 +4199,7 @@ const japanDoujinContent: Record<string, CategoryLocaleContent> = {
       title: 'Doujin Creator Service Points',
       items: [
         { title: 'Mong Kok Prototyping Center', description: 'Book an appointment to view physical samples (paper + color). Pre-Comiket rush sample support.' },
-        { title: 'Shenzhen Factory → Japan Direct', description: 'DHL Express DDP (Delivered Duty Paid) — recipient zero customs burden.' },
+        { title: 'Asia Factory → Japan Direct', description: 'DHL Express DDP (Delivered Duty Paid) — recipient zero customs burden.' },
         { title: 'Small-Batch Rush Service', description: '5-book rush in 3 days, 10-book rush in 2 days. Comiket 24h emergency support.' },
       ],
     },
@@ -4209,7 +4209,7 @@ const japanDoujinContent: Record<string, CategoryLocaleContent> = {
         'For doujinshi printing, first determine the binding: saddle stitch suits 16-32 page thin books, perfect binding for 40+ page medium-thick books, hardcover for 100+ page commercial-grade works. Budget-conscious choose saddle stitch, quality-first choose perfect binding, commemorative choose hardcover.',
         'Goods stickers prioritize PVC waterproof material. Die-cut custom shapes need confirmed die-cut lines (we provide free die-cut design). Acrylic stands need 5mm+ thickness (thinner breaks easily) and UV direct print color accuracy. Matte PP lamination is preferred when budget allows.',
         'Cross-border shipping to Japan / US / Southeast Asia — DHL Express DDP (Delivered Duty Paid) is the most convenient for recipients. For cheaper shipping, EMS or SF International, but recipients may need to handle import customs themselves. Doujin creators should reserve 2-week logistics buffer before events.',
-        "Operating in Hong Kong's doujin market, you can develop three channels simultaneously: Comiket peer circle + local anime goods stores + cross-border e-commerce. Start printing preparation 4-6 weeks before Comiket, place orders 2-3 weeks before local events, replenish cross-border e-commerce anytime.",
+        "Operating worldwide's doujin market, you can develop three channels simultaneously: Comiket peer circle + local anime goods stores + cross-border e-commerce. Start printing preparation 4-6 weeks before Comiket, place orders 2-3 weeks before local events, replenish cross-border e-commerce anytime.",
       ],
     },
     faq: [
@@ -4237,11 +4237,11 @@ const japanDoujinContent: Record<string, CategoryLocaleContent> = {
           ],
         },
         {
-          heading: '2. 越境対応：深セン工場からDHL 2-4営業日で日本直送、消費税込み（DDP）対応',
+          heading: '2. 越境対応：アジア自社工場からDHL 2-4営業日で日本直送、消費税込み（DDP）対応',
           points: [
             'DHL Express／EMS／SF国際の柔軟な組み合わせで越境配送を最適化。',
             '日本の消費税込みDDP（Delivered Duty Paid）対応で受取人様の通関手続き不要。',
-            '日本語＋繁体中国語バイリンガルカスタマーサポート。越境決済（PayPal／銀行振込）対応。',
+            '日本語＋繁体中文バイリンガルカスタマーサポート。越境決済（PayPal／銀行振込）対応。',
           ],
         },
         {
@@ -4291,7 +4291,7 @@ const japanDoujinContent: Record<string, CategoryLocaleContent> = {
       title: '同人クリエイターサービス拠点',
       items: [
         { title: '旺角サンプルセンター', description: '実物サンプル（紙質＋カラー）をご覧いただけます（コミケ前特急サンプル対応）。' },
-        { title: '深セン工場 → 日本直送', description: 'DHL Express DDP（Delivered Duty Paid） — 受取人様の通関手続き不要。' },
+        { title: 'アジア自社工場 → 日本直送', description: 'DHL Express DDP（Delivered Duty Paid） — 受取人様の通関手続き不要。' },
         { title: '少ロット急行サービス', description: '同人誌5部急行3日、10部急行2日出荷。コミケ前24時間特急対応。' },
       ],
     },
@@ -4301,7 +4301,7 @@ const japanDoujinContent: Record<string, CategoryLocaleContent> = {
         '同人誌印刷は、まず製本方式を決めましょう。中綴じは16-32ページの薄い本に、無線綴じは40ページ以上の中厚本に、上製本は100ページ以上の商業級同人誌に適しています。予算優先なら中綴じ、品質優先なら無線綴じ、記念性なら上製本を選びましょう。',
         'グッズステッカーはPVC防水マテリアル優先。異形型抜きは事前に型線確認が必要（無料型設計サービス）。アクリルスタンドは厚み（5mm以上推奨、薄すぎると破損）とUV直噴の色再現度がポイント。予算が許せばマットPPラミネートを優先。',
         '日本／米国／東南アジアへの越境配送 — DHL Express DDP（Delivered Duty Paid）が受取人様にとって最も便利。安価配送はEMS／SF国際ですが、受取人様が通関手続きを行う必要があります。同人創作はイベント前2週間の物流バッファを確保しましょう。',
-        '香港市場で同人グッズを展開する場合、Comiket同好サークル＋ローカルアニメグッズ店＋越境ECの3チャネル同時展開が可能。Comiket前は4-6週間前から印刷準備、ローカルイベントは2-3週間前発注、越境ECは随時補充。',
+        '日本市場で同人グッズを展開する場合、Comiket同好サークル＋ローカルアニメグッズ店＋越境ECの3チャネル同時展開が可能。Comiket前は4-6週間前から印刷準備、ローカルイベントは2-3週間前発注、越境ECは随時補充。',
       ],
     },
     faq: [
