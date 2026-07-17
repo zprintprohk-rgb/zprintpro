@@ -66,7 +66,7 @@ const translations = {
     email: 'zprintpro@outlook.com',
     whatsapp: 'WhatsApp',
     support: '24時間年中無休サポート',
-    searchPlaceholder: '印刷製品を検索 (チラシ/名刺/ステッカー...)',
+    searchPlaceholder: '印刷製品を検索 (チラシ/紙袋/ステッカー...)',
     search: '検索',
     cart: 'カート',
     home: 'ホーム',
