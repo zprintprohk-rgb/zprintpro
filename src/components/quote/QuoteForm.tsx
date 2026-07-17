@@ -8,7 +8,6 @@ import { z } from 'zod';
 import { Send, Paperclip, CheckCircle, AlertCircle, Upload, X, Loader2 } from 'lucide-react';
 import { categories, products, getProductBySlug } from '@/data/products';
 import { trackContactFormSubmit } from '@/lib/analytics';
-import { supabase, uploadToSupabase } from '@/lib/supabase';
 import { generateQuoteRef, generateQuoteSheetLink, type QuoteSheetContext } from '@/lib/whatsapp';
 
 const quoteSchema = z.object({
@@ -251,6 +250,9 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
       if (!process.env.NEXT_PUBLIC_SUPABASE_URL) {
         throw new Error('Supabase not configured');
       }
+
+      // 動態引入：避免 supabase 模塊級 createClient 在 edge SSR 階段被評估
+      const { supabase, uploadToSupabase } = await import('@/lib/supabase');
 
       // 附件 best-effort 上傳（單個失敗不阻塞主流程）
       let fileNote = '';
