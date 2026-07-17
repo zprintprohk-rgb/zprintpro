@@ -40,12 +40,12 @@ const TEMPLATE: Record<string, (ctx: WhatsAppContext) => string> = {
   },
   ja: (ctx) => {
     const lines = [
-      `こんにちは、${ctx.productName || '印刷'}についてお問い合わせしたいです。`,
+      `お世話になっております。ZprintPro サイトより${ctx.productName || '印刷'}のお見積もりをお願いいたします。`,
       ctx.size ? `サイズ：${ctx.size}` : null,
       ctx.material ? `材質：${ctx.material}` : null,
       ctx.quantity ? `数量：${ctx.quantity}` : null,
       ctx.extra || null,
-      `出典：${ctx.source || 'zprintpro.com'}`,
+      `日本語でのご対応を希望します。(Source: ${ctx.source || 'zprintpro.com'})`,
     ].filter(Boolean);
     return lines.join('\n');
   },
@@ -204,6 +204,7 @@ const QUOTE_SHEET_TEMPLATE: Record<string, (q: QuoteSheetContext) => string> = {
   ja: (q) => {
     const lines = [
       '【お見積もり依頼】',
+      'お世話になっております。ZprintPro サイトより下記の通りお見積もりをお願いいたします。',
       `番号：${q.ref}`,
       q.name ? `お名前：${q.name}` : null,
       q.phone ? `電話番号：${q.phone}` : null,
@@ -219,7 +220,7 @@ const QUOTE_SHEET_TEMPLATE: Record<string, (q: QuoteSheetContext) => string> = {
       '詳細：',
       q.message || '（後ほどお送りします）',
       '────────────',
-      `お見積もりをお願いいたします。出典：${q.source || 'zprintpro.com 見積もりフォーム'}`,
+      `お手数ですが、ご返信のほどよろしくお願いいたします。日本語でのご対応を希望します。(Source: ${q.source || 'zprintpro.com 見積もりフォーム'})`,
     ].filter(Boolean);
     return lines.join('\n');
   },

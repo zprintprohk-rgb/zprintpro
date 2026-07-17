@@ -29,7 +29,7 @@ const META = {
     title:
       '支払い方法 · 銀行振込 / WeChat Pay / Alipay / PayPal / クロスボーダー送金 | ZprintPro',
     description:
-      'ZprintPro は 5 つの支払い方法をご提供：銀行振込（DBS HK）、WeChat Pay、Alipay、PayPal（クロスボーダーカード）、支付宝フラッシュ送金（クロスボーダー送金）。30 秒見積もり後いずれかの方法で決済、72 時間グローバル配送。',
+      'ZprintPro は 5 つの支払い方法をご提供：銀行振込（DBS HK）、WeChat Pay、Alipay、PayPal（クロスボーダーカード）、フラッシュ送金（クロスボーダー送金）。30 秒見積もり後いずれかの方法で決済、72 時間グローバル配送。',
     canonical: 'https://zprintpro.com/ja/payment-methods/',
   },
 };
@@ -49,6 +49,153 @@ export default function PaymentMethodsPage({ params }: Props) {
   const locale = (params.locale as LocaleKey) || 'en';
   const section = SECTIONS[locale];
   const localePrefix = `/${locale}`;
+
+  // 6 张通道卡片（命名片段，按 locale 排序渲染）
+  const channelCards: Record<string, React.ReactNode> = {
+    bank: (
+      <ChannelCard
+        key="bank"
+        locale={locale}
+        icon={
+          <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M3 10h18M5 6h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2zm4 10v2m6-2v2" />
+          </svg>
+        }
+        name={section.bank.name}
+        tag={section.bank.tag}
+        fee={section.bank.fee}
+        speed={section.bank.speed}
+        bestFor={section.bank.bestFor}
+        bullets={section.bank.bullets}
+        accountLabel={section.bankAccountLabel}
+        account={{
+          bank: section.bank.bankName,
+          bankCode: section.bank.bankCode,
+          branchCode: section.bank.branchCode,
+          account: section.bank.accountNo,
+          beneficiary: section.bank.beneficiary,
+          swift: section.bank.swift,
+          address: section.bank.bankAddress,
+          city: section.bank.city,
+          accountType: section.bank.accountType,
+          intermediaryBank: section.bank.intermediaryBank,
+        }}
+        accent="bg-emerald-500/10 text-emerald-600"
+      />
+    ),
+    wechat: (
+      <ChannelCard
+        key="wechat"
+        locale={locale}
+        icon={
+          <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M9.5 4C5.36 4 2 6.91 2 10.5c0 2.05 1.13 3.87 2.9 5.07L4 18l2.86-1.43c.83.24 1.7.4 2.64.4.23 0 .47-.01.71-.03-.16-.49-.25-1.02-.25-1.57C10 12.34 12.69 10 16.5 10c.5 0 .99.03 1.46.1C17.62 6.61 13.94 4 9.5 4zm-2 4a1 1 0 110 2 1 1 0 010-2zm4 0a1 1 0 110 2 1 1 0 010-2zM16.5 11C13.46 11 11 13.24 11 16c0 1.6.94 3 2.4 3.85L12.5 22l2.16-1.05c.6.18 1.23.3 1.84.3 3.04 0 5.5-2.24 5.5-5s-2.46-5-5.5-5zm-1.5 3a.75.75 0 110 1.5.75.75 0 010-1.5zm3 0a.75.75 0 110 1.5.75.75 0 010-1.5z" />
+          </svg>
+        }
+        name={section.wechat.name}
+        tag={section.wechat.tag}
+        fee={section.wechat.fee}
+        speed={section.wechat.speed}
+        bestFor={section.wechat.bestFor}
+        bullets={section.wechat.bullets}
+        qrSrc="/images/payment-wechat.webp"
+        qrLabel={section.wechat.qrLabel}
+        qrShowLabel={section.qrShowLabel}
+        accent="bg-green-500/10 text-green-600"
+      />
+    ),
+    alipay: (
+      <ChannelCard
+        key="alipay"
+        locale={locale}
+        icon={
+          <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M5 4h14a1 1 0 011 1v14a1 1 0 01-1 1H5a1 1 0 01-1-1V5a1 1 0 011-1zm2 5v2h2V9H7zm4 0v2h2V9h-2zm4 0v2h2V9h-2zM6 12v3h12v-3H6zm2 5l1 2h2l-1-2H8zm4 0l1 2h2l-1-2h-2z" />
+          </svg>
+        }
+        name={section.alipay.name}
+        tag={section.alipay.tag}
+        fee={section.alipay.fee}
+        speed={section.alipay.speed}
+        bestFor={section.alipay.bestFor}
+        bullets={section.alipay.bullets}
+        qrSrc="/images/payment-alipay.webp"
+        qrLabel={section.alipay.qrLabel}
+        qrShowLabel={section.qrShowLabel}
+        accent="bg-blue-500/10 text-blue-600"
+      />
+    ),
+    paypal: (
+      <ChannelCard
+        key="paypal"
+        locale={locale}
+        icon={
+          <svg className="w-7 h-7" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M7.076 21.337l1.244-7.727H3.548L6.95 2.31h8.56c2.348 0 4.057.792 4.93 2.293.872 1.5.872 3.486-.21 6.066-.768 1.84-1.926 3.314-3.378 4.337C15.578 15.93 13.945 16.5 12 16.5h-2.2l-.732 4.837zM12.067 8.36c1.213 0 2.115-.27 2.706-.81.59-.54.97-1.382 1.143-2.527.157-1.027.066-1.764-.275-2.21-.34-.448-.93-.671-1.768-.671H9.07l-.65 4.218h3.647z" />
+          </svg>
+        }
+        name={section.paypal.name}
+        tag={section.paypal.tag}
+        fee={section.paypal.fee}
+        speed={section.paypal.speed}
+        bestFor={section.paypal.bestFor}
+        bullets={section.paypal.bullets}
+        ctaHref="mailto:zprintpro@outlook.com?subject=PayPal%20Payment%20Inquiry"
+        ctaLabel={section.paypal.ctaLabel}
+        accent="bg-sky-500/10 text-sky-600"
+      />
+    ),
+    flash: (
+      <ChannelCard
+        key="flash"
+        locale={locale}
+        icon={
+          <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M3 10h11M9 21l-6-11 6-7m12 18l-6-11 6-7m-6 7h6" />
+          </svg>
+        }
+        name={section.flash.name}
+        tag={section.flash.tag}
+        fee={section.flash.fee}
+        speed={section.flash.speed}
+        bestFor={section.flash.bestFor}
+        bullets={section.flash.bullets}
+        qrSrc={locale === 'zh-hk' ? '/images/payment/shansu-collect-zh-hk.png' : '/images/payment/shansu-collect-en.png'}
+        qrLabel={section.flash.qrLabel}
+        qrShowLabel={section.qrShowLabel}
+        qrSize="flash"
+        providers={['Hanpass', 'PandaRemit', 'WireBarley', 'GmoneyTrans', 'Debunk', 'PayForex', 'koala transfer', 'Sendly', 'GME']}
+        accent="bg-indigo-500/10 text-indigo-600"
+      />
+    ),
+    invoice: (
+      <div key="invoice" className="rounded-2xl border-2 border-dashed border-gray-200 bg-gradient-to-br from-amber-50 to-orange-50 p-6 flex flex-col items-center justify-center text-center">
+        <div className="w-14 h-14 rounded-2xl bg-amber-100 flex items-center justify-center text-amber-600 mb-4">
+          <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+          </svg>
+        </div>
+        <h3 className="font-bold text-base text-[#333333] mb-2">{section.invoice.name}</h3>
+        <p className="text-sm text-gray-600 leading-relaxed mb-3">{section.invoice.desc}</p>
+        <Link
+          href={`${localePrefix}/contact/`}
+          className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#F87314] hover:underline"
+        >
+          {section.invoice.cta}
+          <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+          </svg>
+        </Link>
+      </div>
+    ),
+  };
+
+  // 按 locale 的频道排序（zh-hk 保持原顺序；en/ja 以 PayPal 优先）
+  const CHANNEL_ORDER: Record<LocaleKey, string[]> = {
+    'zh-hk': ['bank', 'wechat', 'alipay', 'paypal', 'flash', 'invoice'],
+    en: ['paypal', 'bank', 'flash', 'invoice', 'alipay', 'wechat'],
+    ja: ['paypal', 'bank', 'invoice', 'flash', 'alipay', 'wechat'],
+  };
 
   return (
     <main className="bg-gradient-to-b from-white via-gray-50 to-white">
@@ -88,131 +235,7 @@ export default function PaymentMethodsPage({ params }: Props) {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {/* Bank Wire */}
-          <ChannelCard
-            locale={locale}
-            icon={
-              <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M3 10h18M5 6h14a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2zm4 10v2m6-2v2" />
-              </svg>
-            }
-            name={section.bank.name}
-            tag={section.bank.tag}
-            fee={section.bank.fee}
-            speed={section.bank.speed}
-            bestFor={section.bank.bestFor}
-            bullets={section.bank.bullets}
-            accountLabel={section.bankAccountLabel}
-            account={{
-              bank: section.bank.bankName,
-              bankCode: section.bank.bankCode,
-              branchCode: section.bank.branchCode,
-              account: section.bank.accountNo,
-              beneficiary: section.bank.beneficiary,
-              swift: section.bank.swift,
-              address: section.bank.bankAddress,
-              city: section.bank.city,
-              accountType: section.bank.accountType,
-              intermediaryBank: section.bank.intermediaryBank,
-            }}
-            accent="bg-emerald-500/10 text-emerald-600"
-          />
-          {/* WeChat Pay */}
-          <ChannelCard
-            locale={locale}
-            icon={
-              <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M9.5 4C5.36 4 2 6.91 2 10.5c0 2.05 1.13 3.87 2.9 5.07L4 18l2.86-1.43c.83.24 1.7.4 2.64.4.23 0 .47-.01.71-.03-.16-.49-.25-1.02-.25-1.57C10 12.34 12.69 10 16.5 10c.5 0 .99.03 1.46.1C17.62 6.61 13.94 4 9.5 4zm-2 4a1 1 0 110 2 1 1 0 010-2zm4 0a1 1 0 110 2 1 1 0 010-2zM16.5 11C13.46 11 11 13.24 11 16c0 1.6.94 3 2.4 3.85L12.5 22l2.16-1.05c.6.18 1.23.3 1.84.3 3.04 0 5.5-2.24 5.5-5s-2.46-5-5.5-5zm-1.5 3a.75.75 0 110 1.5.75.75 0 010-1.5zm3 0a.75.75 0 110 1.5.75.75 0 010-1.5z" />
-              </svg>
-            }
-            name={section.wechat.name}
-            tag={section.wechat.tag}
-            fee={section.wechat.fee}
-            speed={section.wechat.speed}
-            bestFor={section.wechat.bestFor}
-            bullets={section.wechat.bullets}
-            qrSrc="/images/payment-wechat.webp"
-            qrLabel={section.wechat.qrLabel}
-            qrShowLabel={section.qrShowLabel}
-            accent="bg-green-500/10 text-green-600"
-          />
-          {/* Alipay */}
-          <ChannelCard
-            locale={locale}
-            icon={
-              <svg className="w-7 h-7" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M5 4h14a1 1 0 011 1v14a1 1 0 01-1 1H5a1 1 0 01-1-1V5a1 1 0 011-1zm2 5v2h2V9H7zm4 0v2h2V9h-2zm4 0v2h2V9h-2zM6 12v3h12v-3H6zm2 5l1 2h2l-1-2H8zm4 0l1 2h2l-1-2h-2z" />
-              </svg>
-            }
-            name={section.alipay.name}
-            tag={section.alipay.tag}
-            fee={section.alipay.fee}
-            speed={section.alipay.speed}
-            bestFor={section.alipay.bestFor}
-            bullets={section.alipay.bullets}
-            qrSrc="/images/payment-alipay.webp"
-            qrLabel={section.alipay.qrLabel}
-            qrShowLabel={section.qrShowLabel}
-            accent="bg-blue-500/10 text-blue-600"
-          />
-          {/* PayPal */}
-          <ChannelCard
-            locale={locale}
-            icon={
-              <svg className="w-7 h-7" viewBox="0 0 24 24" fill="currentColor">
-                <path d="M7.076 21.337l1.244-7.727H3.548L6.95 2.31h8.56c2.348 0 4.057.792 4.93 2.293.872 1.5.872 3.486-.21 6.066-.768 1.84-1.926 3.314-3.378 4.337C15.578 15.93 13.945 16.5 12 16.5h-2.2l-.732 4.837zM12.067 8.36c1.213 0 2.115-.27 2.706-.81.59-.54.97-1.382 1.143-2.527.157-1.027.066-1.764-.275-2.21-.34-.448-.93-.671-1.768-.671H9.07l-.65 4.218h3.647z" />
-              </svg>
-            }
-            name={section.paypal.name}
-            tag={section.paypal.tag}
-            fee={section.paypal.fee}
-            speed={section.paypal.speed}
-            bestFor={section.paypal.bestFor}
-            bullets={section.paypal.bullets}
-            ctaHref="mailto:zprintpro@outlook.com?subject=PayPal%20Payment%20Inquiry"
-            ctaLabel={section.paypal.ctaLabel}
-            accent="bg-sky-500/10 text-sky-600"
-          />
-          {/* Cross-border Remittance */}
-          <ChannelCard
-            locale={locale}
-            icon={
-              <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M3 10h11M9 21l-6-11 6-7m12 18l-6-11 6-7m-6 7h6" />
-              </svg>
-            }
-            name={section.flash.name}
-            tag={section.flash.tag}
-            fee={section.flash.fee}
-            speed={section.flash.speed}
-            bestFor={section.flash.bestFor}
-            bullets={section.flash.bullets}
-            qrSrc={locale === 'zh-hk' ? '/images/payment/shansu-collect-zh-hk.png' : '/images/payment/shansu-collect-en.png'}
-            qrLabel={section.flash.qrLabel}
-            qrShowLabel={section.qrShowLabel}
-            qrSize="flash"
-            providers={['Hanpass', 'PandaRemit', 'WireBarley', 'GmoneyTrans', 'Debunk', 'PayForex', 'koala transfer', 'Sendly', 'GME']}
-            accent="bg-indigo-500/10 text-indigo-600"
-          />
-          {/* 30-Day Invoice (placeholder flexible slot) */}
-          <div className="rounded-2xl border-2 border-dashed border-gray-200 bg-gradient-to-br from-amber-50 to-orange-50 p-6 flex flex-col items-center justify-center text-center">
-            <div className="w-14 h-14 rounded-2xl bg-amber-100 flex items-center justify-center text-amber-600 mb-4">
-              <svg className="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-              </svg>
-            </div>
-            <h3 className="font-bold text-base text-[#333333] mb-2">{section.invoice.name}</h3>
-            <p className="text-sm text-gray-600 leading-relaxed mb-3">{section.invoice.desc}</p>
-            <Link
-              href={`${localePrefix}/contact/`}
-              className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#F87314] hover:underline"
-            >
-              {section.invoice.cta}
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-              </svg>
-            </Link>
-          </div>
+          {CHANNEL_ORDER[locale].map((key) => channelCards[key])}
         </div>
       </section>
 
@@ -758,9 +781,10 @@ const SECTIONS = {
       tag: 'B2B / 法人',
       fee: 'HK$30 /件 受取人負担',
       speed: 'T+1 営業日',
-      bestFor: '香港 / 越境 / B2B',
+      bestFor: '日本からの海外送金 / B2B 法人取引',
       bullets: [
         'HKD / USD 2 つの受取口座あり',
+        '日本の主要銀行・オンライン銀行からの海外送金に対応',
         'USD クロスボーダー送金は代理行（JP Morgan Chase Bank）経由必須',
         '前金 40% で生産開始、残額は出荷前にお支払い',
         'HK$5,000 以上の大口注文に最適',
@@ -799,13 +823,13 @@ const SECTIONS = {
       qrLabel: 'WeChat でスキャン',
     },
     alipay: {
-      name: 'Alipay（大陆）+ AlipayHK',
+      name: 'Alipay（中国本土）+ AlipayHK',
       tag: '中国大陸 / 香港',
       fee: '0.6% - 1.2%',
       speed: '即時',
       bestFor: '中国大陸 / 香港のお客様',
       bullets: [
-        '大陆ユーザー：Alipay でスキャン',
+        '中国本土ユーザー：Alipay でスキャン',
         '香港ユーザー：AlipayHK でスキャン',
         '即時入金 — 注文自動生産開始',
         'HK$ は自動為替換算',
@@ -820,14 +844,15 @@ const SECTIONS = {
       bestFor: '海外 / Visa / Mastercard',
       bullets: [
         'Visa / Mastercard / Amex 利用可',
+        'PayPal アカウント不要 — カードのみで決済可能',
         '海外華人 / 留学生 / バイヤーに最適',
-        '注意：手数料高め — 大口注文推奨',
+        '手数料：4.4% + US$0.3/件（カード決済手数料）',
         'PayPal 請求書リンク発行（個別対応）',
       ],
       ctaLabel: 'PayPal 請求書リンクを依頼',
     },
     flash: {
-      name: '支付宝フラッシュ送金',
+      name: 'フラッシュ送金（クロスボーダー送金）',
       tag: 'クロスボーダー送金',
       fee: '送金 APP により異なる',
       speed: '即時 - 24 時間',
@@ -855,7 +880,7 @@ const SECTIONS = {
     faqTitle: 'よくあるご質問',
     faqs: [
       { q: '最小注文金額は？', a: '最小なし。HK$100 から発注可能、量大割引あり。' },
-      { q: 'クロスボーダー送金はどのくらいで着金？', a: '支付宝フラッシュ送金：即時〜24 時間、銀行振込：T+1 営業日。' },
+      { q: 'クロスボーダー送金はどのくらいで着金？', a: 'フラッシュ送金：即時〜24 時間、銀行振込：T+1 営業日。' },
       { q: '分割払いはできますか？', a: 'はい。前金 40% で生産開始、残額は出荷前までにお支払い。' },
       { q: '法人掛け（NET-30）に対応していますか？', a: 'はい。商業登記と直近 3 ヶ月の銀行履歴をご提出ください。' },
       { q: 'USD クロスボーダー送金の注意点は？', a: '代理行（Intermediary Bank）の記入必須：JP Morgan Chase Bank、SWIFT: CHASUS33。記入がないと USD 送金は差し戻されます。' },
