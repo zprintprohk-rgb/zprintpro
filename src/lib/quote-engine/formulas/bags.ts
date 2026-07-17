@@ -58,8 +58,8 @@ export const bagsFormula: ProductFormula = (ctx: FormulaContext & { market?: Mar
     finishingCost += 60;
   }
 
-  // 重量：每袋 ~30g
-  const weightKg = (quantity * 0.03);
+  // 重量：每袋 ~60g (实测 intuan 2026-07-18: 专版手提袋 60g/个)
+  const weightKg = (quantity * 0.06);
 
   // 运费
   const shipping = calculateShipping({

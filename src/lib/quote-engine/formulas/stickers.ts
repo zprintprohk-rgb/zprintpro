@@ -58,7 +58,8 @@ export const stickersFormula: ProductFormula = (ctx: FormulaContext & { market?:
   // 工艺（模切/覆膜等）
   const finishingCost = finishes.length * 30;
 
-  // 重量：每张 0.5g (50x50mm 贴纸)
+  // 重量：每张 0.5g (50x50mm 贴纸; 佐证 intuan 2026-07-18: 60×30mm 不干胶 0.36g/张,
+  // 按面积比 50×50/60×30 = 1.39 → 0.36 × 1.39 ≈ 0.5g, 现值准确, 仅补来源注释)
   const weightKg = (quantity * 0.0005);
 
   // 运费

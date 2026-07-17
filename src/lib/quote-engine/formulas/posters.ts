@@ -68,8 +68,10 @@ export const postersFormula: ProductFormula = (ctx: FormulaContext & { market?: 
   // 工艺（覆膜等）
   const finishingCost = finishes.length * 50; // 简单加价
 
-  // 重量：每张 ~200g
-  const weightKg = (quantity * 0.2);
+  // 重量：每张 ~40g (A2 157g 铜版纸 ≈ 0.25m² × 157g/m² = 39g;
+  // 佐证 intuan 2026-07-18: A4 157g 宣传单 9.4g/张, A2 = 4×A4 ≈ 38g)
+  // 旧值 0.2kg/张 高估 5 倍, 运费虚高
+  const weightKg = (quantity * 0.04);
 
   // 运费
   const shipping = calculateShipping({

@@ -61,12 +61,19 @@ class QuoteEngine {
       );
     }
 
+    // P0 修复 (2026-07-18): ctx 之前丢了 market 和 sides,
+    // 导致所有公式 fallback 到 MARKETS[marketFromLocale('en')] = 永远按美国市场算
+    // (margin/shipping zone/tax/FX 全错), sides 也从未到达公式。
     const ctx: FormulaContext = {
       quantity: req.quantity,
       size: req.size,
       material: req.material,
       finishes: req.finishes,
       deadline: req.deadline,
+      sides: req.sides,
+      market: req.marketCode
+        ? getMarket(req.marketCode)
+        : getMarket(marketFromLocale(req.locale || 'en')),
     };
 
     const formulaResult = formula(ctx);
@@ -109,6 +116,10 @@ class QuoteEngine {
       paperCostHKD?: number;
       finishingCostHKD?: number;
       totalCostHKD?: number;
+      market?: Market;
+      tax?: unknown;
+      fx?: unknown;
+      shippingHKD?: number;
     };
     if (extended.gangLayout && extended.setupCostHKD !== undefined) {
       breakdown.push({
@@ -207,6 +218,14 @@ class QuoteEngine {
         paperCostHKD: extended.paperCostHKD,
         finishingCostHKD: extended.finishingCostHKD,
         totalCostHKD: extended.totalCostHKD,
+      }),
+      // P0 修复 (2026-07-18): 公式返回的 market/tax/fx/shippingHKD 也要透传到 QuoteResult,
+      // 否则调用方无法确认本次报价按哪个市场/汇率/税率计算
+      ...(extended.market && {
+        market: extended.market,
+        tax: extended.tax,
+        fx: extended.fx,
+        shippingHKD: extended.shippingHKD,
       }),
     } as QuoteResult;
   }

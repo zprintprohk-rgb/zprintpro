@@ -63,8 +63,9 @@ export const booksFormula = (ctx: FormulaContext & {
   const paperCost = innerPaperCost + coverPaperCost;
   const finishingCost = coverFinishingCost;
 
-  // 重量：每本 ~150g
-  const weightKg = (quantity * 0.15);
+  // 重量：按页数线性 (实测 intuan 2026-07-18: A4 16P 骑马钉画册 105g/本 ≈ 6.6g/页, 含封面)
+  // 旧值固定 0.15kg/本, 与页数无关, 96P 画册严重低估
+  const weightKg = (quantity * totalPages * 0.0066);
 
   // 运费
   const shipping = calculateShipping({

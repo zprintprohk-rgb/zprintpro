@@ -60,8 +60,8 @@ export const packagingFormula: ProductFormula = (ctx: FormulaContext & { market?
     finishingCost += 100; // 每个工艺起步 100
   }
 
-  // 重量：每盒 ~80g (200×150mm 折叠盒)
-  const weightKg = (quantity * 0.08);
+  // 重量：每盒 ~30g (实测 intuan 2026-07-18: 双插卡盒 29g/个, 微坑盒 31g/个)
+  const weightKg = (quantity * 0.03);
 
   // 运费（重 + 大）
   const shipping = calculateShipping({

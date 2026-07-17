@@ -79,6 +79,8 @@ export interface FormulaContext {
   deadline: Deadline;
   /** 印刷面数 (C7 修复 2026-06-07) - 可选, 默认 single 保持兼容 */
   sides?: Sides;
+  /** 目标市场 (P0 修复 2026-07-18) - engine 必须透传, 否则公式 fallback 到 US 市场 */
+  market?: import('./markets').Market;
 }
 
 export interface FormulaResult {
