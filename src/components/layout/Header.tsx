@@ -311,8 +311,11 @@ export function Header({ locale }: HeaderProps) {
         <div className="bg-white">
           <div className="px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-[58px] lg:h-[68px] gap-4">
-              <Link href={`${localePrefix}/`} className="flex-shrink-0 ml-[30px]">
-                <Image src="/images/logo.svg" alt="ZprintPro" width={200} height={52} className="h-[52px] w-auto" priority />
+              {/* 2026-07-18 移动端 P0 修复: logo.svg 宽高比 ~8:1, h-[52px] 下宽 416px,
+                  390px 视口下把购物车+汉堡按钮挤出屏幕 (x=516), 用户看不到导航入口。
+                  移动端限高 34px (宽约 272px), 腾出右侧按钮空间; 桌面保持原样 */}
+              <Link href={`${localePrefix}/`} className="flex-shrink-0 ml-2 lg:ml-[30px]">
+                <Image src="/images/logo.svg" alt="ZprintPro" width={200} height={52} className="h-[34px] sm:h-[44px] lg:h-[52px] w-auto" priority />
               </Link>
               <div className="hidden md:flex flex-1 max-w-xl mx-4">
                 <SearchDropdown
