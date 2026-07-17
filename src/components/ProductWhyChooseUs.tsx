@@ -150,12 +150,12 @@ const translations = {
       },
       {
         icon: Truck,
-        title: '順豊直送',
-        subtitle: '全港カバー',
+        title: '国際配送',
+        subtitle: '日本全国対応',
         subtitleColor: 'text-green-500',
         bgColor: 'bg-green-50',
         iconColor: 'text-green-500',
-        description: '順豊速運で香港全域に配送',
+        description: 'DHL・FedExで日本全国へ2〜4日配送',
       },
       {
         icon: Palette,
