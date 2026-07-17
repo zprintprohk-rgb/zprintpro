@@ -406,7 +406,7 @@ export const paperBagsFAQs: FAQItem[] = [
     question: {
       'zh-hk': '紙袋印刷 香港 最低訂量是多少？',
       'en': 'What is the minimum order for custom paper bags in Hong Kong?',
-      'ja': '香港での紙袋印刷の最小ロットはいくつからですか？',
+      'ja': '紙袋印刷の最小ロットはいくつからですか？',
     },
     answer: {
       'zh-hk': '智印雲提供環保紙袋、牛皮紙袋等定制服務，最低100個起訂。無論是禮品紙袋、品牌紙袋或餐飲外賣紙袋，均可小量定制。詳情請參閱《品牌包裝完全指南》。',
@@ -471,7 +471,7 @@ export const paperBagsFAQs: FAQItem[] = [
     answer: {
       'zh-hk': '可以。針對九龍、港島及新界客戶，紙袋定制最快即日可打樣。建議提前提供設計稿及尺寸規格，即可安排當日白樣。確認樣板後5-7個工作天可批量生產。',
       'en': 'Yes. For Kowloon, Hong Kong Island, and New Territories customers, paper bag sampling is available same-day. Provide design files and dimensions in advance for same-day white samples. Bulk production takes 5-7 working days after sample approval.',
-      'ja': 'はい。九龍、香港島、新界のお客様向けに、紙袋の即日サンプルが可能です。デザインデータと寸法を事前にご提供いただければ、当日に白箱サンプルを手配できます。',
+      'ja': 'はい。日本全国のお客様向けに、紙袋の即日サンプルが可能です。デザインデータと寸法を事前にご提供いただければ、当日に白サンプルを手配できます。サンプル確認後、量産は5〜7営業日です。',
     },
   },
   {
@@ -490,12 +490,12 @@ export const paperBagsFAQs: FAQItem[] = [
     question: {
       'zh-hk': '九龍 紙袋印刷 有送貨服務嗎？',
       'en': 'Do you deliver paper bag orders to Kowloon?',
-      'ja': '九龍などへの紙袋配送はありますか？',
+      'ja': '日本への紙袋配送はありますか？',
     },
     answer: {
       'zh-hk': '有。智印雲提供全港送貨服務，包括九龍、港島、新界及離島。紙袋印刷訂單滿HK$500免運費，未滿額可選擇港鐵站交收。大量訂單可安排貨車直送店舖或倉庫。',
       'en': 'Yes. ZprintPro delivers across all Hong Kong areas including Kowloon. Paper bag orders over HK$500 qualify for free shipping. For bulk orders, truck delivery to your store or warehouse can be arranged.',
-      'ja': 'はい。ZprintProは九龍を含む香港全域に配送しています。紙袋印刷のご注文がHK$500以上で送料無料です。大量注文には店舗や倉庫へのトラック直送も手配可能です。',
+      'ja': 'はい。ZprintProは日本全国へDHL・FedExで配送しています（通常2〜4日でお届け）。大量注文にも対応可能です。送料は数量と配送先に応じてお見積もりいたします。',
     },
   },
 ];
