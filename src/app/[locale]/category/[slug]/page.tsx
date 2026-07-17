@@ -390,19 +390,19 @@ export default function CategoryPage({
 
             {/* 右侧产品列表 */}
             <div className="flex-1">
-              {/* 排序栏 — 蓝条（共 N 款產品 + 熱門程度下拉）+ 橙色 CTA 无缝拼接 (2026-07-13 v3: SKU 上移 8px, 蓝条内嵌 select 真正排序, 右侧加 免費獲取報價 按钮) */}
+              {/* 排序栏 — 浅灰条（共 N 款產品 + 熱門程度下拉）+ 橙色 CTA 无缝拼接 (2026-07-18: 蓝条改 gray-100, 与首页 HowItWorks 底部灰条同款) */}
               <div className="flex items-stretch mb-4 gap-0 rounded-t-lg overflow-hidden">
-                <div className="bg-[#2873F5] text-white px-4 py-3 flex items-center gap-3 flex-1 min-w-0">
-                  <div className="w-1 h-5 bg-white/60 rounded-full flex-shrink-0" />
+                <div className="bg-gray-100 text-slate-700 px-4 py-3 flex items-center gap-3 flex-1 min-w-0">
+                  <div className="w-1 h-5 bg-gray-300 rounded-full flex-shrink-0" />
                   <span className="font-semibold text-base whitespace-nowrap">
                     {t.productsCount}
                   </span>
                   <div className="ml-auto flex items-center gap-2 min-w-0">
-                    <span className="text-white/80 text-sm whitespace-nowrap hidden sm:inline">{t.sortBy}:</span>
+                    <span className="text-slate-500 text-sm whitespace-nowrap hidden sm:inline">{t.sortBy}:</span>
                     <CategorySortSelect
                       defaultValue={sortKey}
                       options={sortOptions}
-                      className="bg-white/15 hover:bg-white/25 text-white text-sm font-medium border border-white/30 rounded-md pl-3 pr-8 py-1 focus:outline-none focus:ring-2 focus:ring-white/50 cursor-pointer transition-colors appearance-none bg-no-repeat bg-right disabled:opacity-60"
+                      className="bg-white hover:bg-gray-50 text-slate-700 text-sm font-medium border border-gray-300 rounded-md pl-3 pr-8 py-1 focus:outline-none focus:ring-2 focus:ring-[#2873F5]/40 cursor-pointer transition-colors appearance-none bg-no-repeat bg-right disabled:opacity-60"
                     />
                   </div>
                 </div>
