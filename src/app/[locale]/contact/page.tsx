@@ -53,7 +53,7 @@ const translations = {
   },
   en: {
     title: "Free Custom Printing Quote · 30s Response | ZprintPro USA / UK / AU",
-    description: "Get a free custom printing quote in 30 seconds. Stickers, packaging boxes, business cards, books, posters. 72h global delivery to US / UK / AU / CA. WhatsApp +1-style support. No setup fees.",
+    description: "Get a free custom printing quote in 30 seconds. Stickers, packaging boxes, paper bags, books, posters. 72h global delivery to US / UK / AU / CA. WhatsApp +1-style support. No setup fees.",
     h1: "Free Custom Printing Quote",
     subtitle: "Fill the form or WhatsApp us, reply within 24h",
     quoteTitle: "Get Your Free Quote",

@@ -22,15 +22,15 @@ type Props = {
 const metaMap: Record<string, { title: string; desc: string }> = {
   'zh-hk': {
     title: '印刷即日速递送货 | 今天下單明天12點前到 | 18:00截單 | 智印雲 ZPrintPro',
-    desc: '印刷即日速递送货首选智印雲 ZPrintPro！今天下班6點前下單，明天中午12點前收貨。宣傳單張、海報、貼紙、名片、畫冊、易拉寶通宵印刷，支持港鐵站交收。',
+    desc: '印刷即日速递送货首选智印雲 ZPrintPro！今天下班6點前下單，明天中午12點前收貨。宣傳單張、海報、貼紙、紙袋、畫冊、易拉寶通宵印刷，支持港鐵站交收。',
   },
   'en': {
     title: '24-Hour Rush Printing Service USA / UK / AU | Free Shipping | ZprintPro',
-    desc: '24-hour rush printing service for flyers, posters, stickers, business cards, booklets & roll-up banners. Order by 6PM, deliver in 24h. Free shipping to US, UK, AU, CA. No setup fees. AI instant quote.',
+    desc: '24-hour rush printing service for flyers, posters, stickers, paper bags, booklets & roll-up banners. Order by 6PM, deliver in 24h. Free shipping to US, UK, AU, CA. No setup fees. AI instant quote.',
   },
   'ja': {
     title: '即日印刷・翌日正午配送 | 本日注文・明日12時まで | ZPrintPro',
-    desc: '香港の即日印刷サービス。平日18時までのご注文で、翌日12時までにお届け。チラシ、ポスター、シール、名刺、冊子、ロールアップバナー対応。MTR駅受取可。',
+    desc: '香港の即日印刷サービス。平日18時までのご注文で、翌日12時までにお届け。チラシ、ポスター、シール、紙袋、冊子、ロールアップバナー対応。MTR駅受取可。',
   },
 };
 
@@ -98,7 +98,7 @@ export default function RushDeliveryPage({ params }: Props) {
             {locale === 'zh-hk' ? '今天下單·明天中午12點前到' : locale === 'en' ? 'Order Today, Receive by 12PM Tomorrow' : '本日注文・翌日12時まで'}
           </h2>
           <p className="text-lg md:text-xl text-white/90 mb-6 max-w-2xl">
-            {locale === 'zh-hk' ? '專為臨急任務而生——宣傳單張、海報、貼紙、名片通宵印刷，畫冊與易拉寶翌日中午準時達' : 'Rush printing for flyers, posters, stickers, business cards. Booklets & banners by noon next day.'}
+            {locale === 'zh-hk' ? '專為臨急任務而生——宣傳單張、海報、貼紙、紙袋通宵印刷，畫冊與易拉寶翌日中午準時達' : 'Rush printing for flyers, posters, stickers, paper bags. Booklets & banners by noon next day.'}
           </p>
           <Link
             href={`/${locale}/services/rush-printing-delivery#order`}
@@ -118,19 +118,19 @@ export default function RushDeliveryPage({ params }: Props) {
           {locale === 'zh-hk' && (
             <>
               <strong>今天下班6點前下單，明天中午12點前收貨。</strong>
-              專為臨急任務而生——宣傳單張、海報、貼紙、名片通宵印刷，畫冊與易拉寶翌日中午準時達。支持全港港鐵站交收。
+              專為臨急任務而生——宣傳單張、海報、貼紙、紙袋通宵印刷，畫冊與易拉寶翌日中午準時達。支持全港港鐵站交收。
             </>
           )}
           {locale === 'en' && (
             <>
               <strong>Order by 6PM EST, receive in 24 hours anywhere in US / UK / AU.</strong>
-              Rush printing for flyers, posters, stickers, business cards, booklets, roll-up banners. Premium-grade printing shipped from our Hong Kong factory to your door in 1–3 business days. Free shipping on orders over $200. No setup fees.
+              Rush printing for flyers, posters, stickers, paper bags, booklets, roll-up banners. Premium-grade printing shipped from our Hong Kong factory to your door in 1–3 business days. Free shipping on orders over $200. No setup fees.
             </>
           )}
           {locale === 'ja' && (
             <>
               <strong>平日18時までのご注文で、翌日12時までにお届け。</strong>
-              チラシ、ポスター、シール、名刺は徹夜印刷。冊子とロールアップバナーも翌日正午までに配達。香港MTR駅受取対応。
+              チラシ、ポスター、シール、紙袋は徹夜印刷。冊子とロールアップバナーも翌日正午までに配達。香港MTR駅受取対応。
             </>
           )}
         </p>
