@@ -12,7 +12,8 @@ import { useRouter } from 'next/navigation';
 import { Product } from '@/data/products';
 import { Locale } from '@/lib/seo';
 import { getProductTitle } from '@/data/products';
-import { convertPriceRangeString, getLocaleBasePrice, getLocaleBasePriceAmount } from '@/lib/pricing';
+import { convertPriceRangeString, getLocaleBasePrice, getLocaleBasePriceAmount, formatPriceForLocale } from '@/lib/pricing';
+import { getTableQuote } from '@/lib/price-tables';
 import { getProductMainImage } from '@/lib/product-image';
 import { useCart } from '@/lib/cart-context';
 import { translateVariableLabel } from '@/lib/variable-i18n';
@@ -85,6 +86,9 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
       selected: '已選',
       popular: '熱門',
       recommend: '推薦',
+      refPrice: '參考價',
+      tierLabel: '價格檔位',
+      refPriceNote: '參考價來自真實工廠價格表（按數量檔插值），最終價格以客服確認為準。',
     },
     'en': {
       step1: 'Select Size',
@@ -118,6 +122,9 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
       selected: 'Selected',
       popular: 'Popular',
       recommend: 'Recommended',
+      refPrice: 'Reference Price',
+      tierLabel: 'Price tier',
+      refPriceNote: 'Reference price from our live factory price table (interpolated by quantity tier). Final price subject to confirmation.',
     },
     'ja': {
       step1: 'サイズを選択',
@@ -151,6 +158,9 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
       selected: '選択中',
       popular: '人気',
       recommend: 'おすすめ',
+      refPrice: '参考価格',
+      tierLabel: '数量帯',
+      refPriceNote: '参考価格は実際の工場価格表に基づく概算（数量帯で補間）です。最終価格はお問い合わせにてご確認ください。',
     },
   };
 
@@ -187,6 +197,17 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
     };
   }, [config, product, locale, localeBasePrice]);
 
+  // 2026-07-18: 真实价格表报价 (intuan 实询 ×1.3 校准, HKD 锚定)
+  // 有表 SKU 优先用真实报价; 无表 SKU (stickers 等) 保持原展示价逻辑
+  const tableQuote = useMemo(() => getTableQuote(product.slug, config.quantity), [product.slug, config.quantity]);
+  const tableTotal = tableQuote ? formatPriceForLocale(tableQuote.totalHKD, locale) : null;
+  const tableUnit = tableQuote ? formatPriceForLocale(tableQuote.unitHKD, locale) : null;
+  const tierLabel = tableQuote
+    ? tableQuote.tier.interpolated
+      ? `${tableQuote.tier.low.qty}–${tableQuote.tier.high.qty}`
+      : `${tableQuote.tier.low.qty}`
+    : '';
+
   // 格式化金额 (JPY 整数, 其他币种 2 位小数)
   const formatAmount = (amount: number): string => {
     if (locale === 'ja') return Math.round(amount).toLocaleString();
@@ -194,9 +215,19 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
   };
 
   const handleWhatsApp = () => {
+    // 2026-07-18: 询盘消息带币种 + 总价 + 单价 + 数量 (有真实价格表时)
+    const priceLine = tableQuote && tableTotal && tableUnit
+      ? locale === 'zh-hk'
+        ? `參考價：${tableTotal.text}（${config.quantity}個，單價 ${tableUnit.text}）`
+        : locale === 'en'
+          ? `Reference: ${tableTotal.text} total (${config.quantity} pcs, ${tableUnit.text}/pc)`
+          : `参考価格：${tableTotal.text}（${config.quantity}枚、単価 ${tableUnit.text}）`
+      : undefined;
     const link = generateWhatsAppLink(locale, {
       source: 'quote-calculator',
       productName: locale === 'zh-hk' ? product.name : locale === 'en' ? product.nameEn : product.nameJa,
+      quantity: config.quantity,
+      extra: priceLine,
       phone: '85290616204',
     });
     trackWhatsappClick({
@@ -231,6 +262,83 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
     const rawLabel = item?.label || '';
     return translateVariableLabel(rawLabel, locale, type === 'sizes' ? 'size' : type === 'materials' ? 'material' : type === 'finishings' ? 'finishing' : 'quantity');
   };
+
+  // 2026-07-18: 价格明细块 (订购/报价两个 tab 共用)
+  // 有真实价格表 → 显示参考价 (总价+单价+数量档); 无表 → 原 basePrice 展示价明细
+  const priceDetails = tableQuote && tableTotal && tableUnit ? (
+    <div className="space-y-3 mb-5">
+      <div className="flex justify-between text-sm">
+        <span className="text-gray-500">{t.qty}</span>
+        <span className="font-medium text-gray-900">{config.quantity}</span>
+      </div>
+      <div className="flex justify-between text-sm">
+        <span className="text-gray-500">{t.unitPrice}</span>
+        <span className="font-medium text-gray-900">{tableUnit.text}</span>
+      </div>
+      <div className="flex justify-between text-sm">
+        <span className="text-gray-500">{t.tierLabel}</span>
+        <span className="font-medium text-gray-900">{tierLabel}</span>
+      </div>
+      <div className="flex justify-between text-sm">
+        <span className="text-gray-500">{t.shippingLabel}</span>
+        <span className="font-medium text-gray-400">{t.shippingNote}</span>
+      </div>
+      <div className="border-t border-gray-200 pt-3">
+        <div className="flex justify-between items-baseline">
+          <span className="font-semibold text-gray-900">{t.totalAmount}</span>
+          <span
+            key={tableQuote.totalHKD}
+            className="text-xl font-bold text-[#F87314] tabular-nums transition-all duration-300 ease-out animate-price-pop"
+          >
+            {tableTotal.text}
+          </span>
+        </div>
+      </div>
+      <div className="text-xs text-gray-400">
+        {t.refPrice} · {t.refPriceNote}
+      </div>
+      <div className="text-xs text-gray-400">
+        {t.estDelivery}: 3-5 {t.days}
+      </div>
+    </div>
+  ) : (
+    <div className="space-y-3 mb-5">
+      <div className="flex justify-between text-sm">
+        <span className="text-gray-500">{t.qty}</span>
+        <span className="font-medium text-gray-900">{config.quantity}</span>
+      </div>
+      <div className="flex justify-between text-sm">
+        <span className="text-gray-500">{t.subtotal}</span>
+        <span className="font-medium text-gray-900">{localeCurrency.symbol}{formatAmount(localeBasePrice * config.quantity)}</span>
+      </div>
+      <div className="flex justify-between text-sm">
+        <span className="text-gray-500">{t.processing}</span>
+        <span className="font-medium text-gray-900">{localeCurrency.symbol}{formatAmount(calculatedPrice.totalPrice - localeBasePrice * config.quantity)}</span>
+      </div>
+      <div className="flex justify-between text-sm">
+        <span className="text-gray-500">{t.designFee}</span>
+        <span className="font-medium text-gray-900">{localeCurrency.symbol}0{locale === 'ja' ? '' : '.00'}</span>
+      </div>
+      <div className="flex justify-between text-sm">
+        <span className="text-gray-500">{t.shippingLabel}</span>
+        <span className="font-medium text-gray-400">{t.shippingNote}</span>
+      </div>
+      <div className="border-t border-gray-200 pt-3">
+        <div className="flex justify-between items-baseline">
+          <span className="font-semibold text-gray-900">{t.totalAmount}</span>
+          <span
+            key={calculatedPrice.totalPrice}
+            className="text-xl font-bold text-[#F87314] tabular-nums transition-all duration-300 ease-out animate-price-pop"
+          >
+            {localeCurrency.symbol}{locale === 'ja' ? Math.round(calculatedPrice.totalPrice).toLocaleString() : calculatedPrice.totalPrice.toLocaleString()}
+          </span>
+        </div>
+      </div>
+      <div className="text-xs text-gray-400">
+        {t.estDelivery}: 3-5 {t.days}
+      </div>
+    </div>
+  );
 
   return (
     <div className="space-y-6">
@@ -438,42 +546,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
           {activeTab === 'order' ? (
             <div>
               {/* 订购明细 */}
-              <div className="space-y-3 mb-5">
-                <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">{t.qty}</span>
-                  <span className="font-medium text-gray-900">{config.quantity}</span>
-                </div>
-                <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">{t.subtotal}</span>
-                  <span className="font-medium text-gray-900">{localeCurrency.symbol}{formatAmount(localeBasePrice * config.quantity)}</span>
-                </div>
-                <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">{t.processing}</span>
-                  <span className="font-medium text-gray-900">{localeCurrency.symbol}{formatAmount(calculatedPrice.totalPrice - localeBasePrice * config.quantity)}</span>
-                </div>
-                <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">{t.designFee}</span>
-                  <span className="font-medium text-gray-900">{localeCurrency.symbol}0{locale === 'ja' ? '' : '.00'}</span>
-                </div>
-                <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">{t.shippingLabel}</span>
-                  <span className="font-medium text-gray-400">{t.shippingNote}</span>
-                </div>
-                <div className="border-t border-gray-200 pt-3">
-                  <div className="flex justify-between items-baseline">
-                    <span className="font-semibold text-gray-900">{t.totalAmount}</span>
-                    <span
-                      key={calculatedPrice.totalPrice}
-                      className="text-xl font-bold text-[#F87314] tabular-nums transition-all duration-300 ease-out animate-price-pop"
-                    >
-                      {localeCurrency.symbol}{locale === 'ja' ? Math.round(calculatedPrice.totalPrice).toLocaleString() : calculatedPrice.totalPrice.toLocaleString()}
-                    </span>
-                  </div>
-                </div>
-                <div className="text-xs text-gray-400">
-                  {t.estDelivery}: 3-5 {t.days}
-                </div>
-              </div>
+              {priceDetails}
               {/* 订购按钮 */}
               <div className="flex gap-3">
                 <button
@@ -539,42 +612,7 @@ export function QuoteCalculator({ product, locale }: QuoteCalculatorProps) {
           ) : (
             <div>
               {/* 报价明细 — 同订购内容 */}
-              <div className="space-y-3 mb-5">
-                <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">{t.qty}</span>
-                  <span className="font-medium text-gray-900">{config.quantity}</span>
-                </div>
-                <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">{t.subtotal}</span>
-                  <span className="font-medium text-gray-900">{localeCurrency.symbol}{formatAmount(localeBasePrice * config.quantity)}</span>
-                </div>
-                <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">{t.processing}</span>
-                  <span className="font-medium text-gray-900">{localeCurrency.symbol}{formatAmount(calculatedPrice.totalPrice - localeBasePrice * config.quantity)}</span>
-                </div>
-                <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">{t.designFee}</span>
-                  <span className="font-medium text-gray-900">{localeCurrency.symbol}0{locale === 'ja' ? '' : '.00'}</span>
-                </div>
-                <div className="flex justify-between text-sm">
-                  <span className="text-gray-500">{t.shippingLabel}</span>
-                  <span className="font-medium text-gray-400">{t.shippingNote}</span>
-                </div>
-                <div className="border-t border-gray-200 pt-3">
-                  <div className="flex justify-between items-baseline">
-                    <span className="font-semibold text-gray-900">{t.totalAmount}</span>
-                    <span
-                      key={calculatedPrice.totalPrice}
-                      className="text-xl font-bold text-[#F87314] tabular-nums transition-all duration-300 ease-out animate-price-pop"
-                    >
-                      {localeCurrency.symbol}{locale === 'ja' ? Math.round(calculatedPrice.totalPrice).toLocaleString() : calculatedPrice.totalPrice.toLocaleString()}
-                    </span>
-                  </div>
-                </div>
-                <div className="text-xs text-gray-400">
-                  {t.estDelivery}: 3-5 {t.days}
-                </div>
-              </div>
+              {priceDetails}
               {/* 报价按钮 */}
               <div className="flex gap-3">
                 <button className="flex-1 py-2.5 border border-gray-300 text-gray-700 rounded-lg font-medium hover:bg-gray-50 transition-colors text-sm flex items-center justify-center gap-1.5">

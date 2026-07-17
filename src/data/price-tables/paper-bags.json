@@ -1,0 +1,48 @@
+{
+  "_meta": {
+    "category": "paper-bags",
+    "currency": "HKD",
+    "anchor": "HKD",
+    "strategy": "intuan.com 专版手提袋报价 × 1.3 (user 2026-07-17 拍板), RMB→HKD 按 1 RMB≈1.09 HKD; e-print 纸袋 $2,049/300个 ($6.83/个) 为 HK 零售天花板",
+    "src_legend": {"anchor": "真实抓取锚点", "modeled": "成本结构建模, 待 intuan 登录询价校准", "pending": "待询价", "intuan-2026-07-18": "intuan.com 登录态真实询价 CNY×1.3×1.087→HKD (intuan-real-quotes-2026-07-18.json)"},
+    "updatedAt": "2026-07-18",
+    "note": "2026-07-18 校准: kraft-paper-bags 5 档 modeled → intuan 专版手提袋实询价 (500/1000/2000/3000/5000); 原 300 档 modeled 与校准价倒挂, 移除。eco-paper-bags / gift-bags 未动。",
+    "references": {
+      "eprint_bag": "HK$2,049/300个 (E-01款, 8工作天) = $6.83/个 — HK 零售锚",
+      "intuan_special_bag": "特价手提袋 0.7元/个起 (合版特价, 首页锚点); 专版手提袋全参数报价需登录",
+      "intuan_zbReticule": "专版手提袋实询 2026-07-18: ¥574/500, ¥805/1000, ¥1307/2000, ¥1893/3000, ¥2974/5000 → ×1.3×1.087 HKD"
+    }
+  },
+  "products": [
+    {
+      "sku": "kraft-paper-bags",
+      "config": {"size": "中号 260x170x250mm", "paper": "120g 黄牛皮", "handle": "纸绳/扁绳", "print": "单色-四色"},
+      "tiers": [
+        {"qty": 500, "price": 811, "unit": 1.62, "src": "intuan-2026-07-18", "note": "intuan 专版手提袋实询 ×1.3, 替换 modeled"},
+        {"qty": 1000, "price": 1138, "unit": 1.14, "src": "intuan-2026-07-18"},
+        {"qty": 2000, "price": 1847, "unit": 0.92, "src": "intuan-2026-07-18"},
+        {"qty": 3000, "price": 2675, "unit": 0.89, "src": "intuan-2026-07-18"},
+        {"qty": 5000, "price": 4202, "unit": 0.84, "src": "intuan-2026-07-18"}
+      ]
+    },
+    {
+      "sku": "eco-paper-bags",
+      "config": {"size": "中号", "paper": "FSC 牛皮/白卡", "handle": "纸绳", "print": "四色+覆哑膜"},
+      "tiers": [
+        {"qty": 300, "price": 1800, "unit": 6.00, "src": "modeled"},
+        {"qty": 500, "price": 2600, "unit": 5.20, "src": "modeled"},
+        {"qty": 1000, "price": 4400, "unit": 4.40, "src": "modeled"},
+        {"qty": 3000, "price": 10800, "unit": 3.60, "src": "modeled"}
+      ]
+    },
+    {
+      "sku": "gift-bags",
+      "config": {"size": "小/中号", "paper": "250g白卡", "finish": "覆膜+烫金可选", "handle": "丝带/三股绳"},
+      "tiers": [
+        {"qty": 300, "price": 2100, "unit": 7.00, "src": "pending", "note": "工艺价待 intuan 询价 (烫金按面积加)"},
+        {"qty": 1000, "price": 5500, "unit": 5.50, "src": "pending"},
+        {"qty": 3000, "price": 13500, "unit": 4.50, "src": "pending"}
+      ]
+    }
+  ]
+}

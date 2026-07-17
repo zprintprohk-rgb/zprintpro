@@ -72,7 +72,7 @@ const RATE_TABLE: Record<ShippingZone, Record<ServiceLevel, { perKg: number; bas
 export const FREE_SHIPPING_THRESHOLDS: Record<ShippingZone, number> = {
   local: 500, // HK 本地 HKD 500
   asia_pacific: 1500,
-  north_america: 2000,
+  north_america: 775, // ≈US$99, 对齐 en 站文案 "Free Shipping $99+" (2026-07-18 user 拍板, 原 HK$2000 与文案矛盾)
   europe: 2000,
   oceania: 1800,
   china_mainland: 800,
