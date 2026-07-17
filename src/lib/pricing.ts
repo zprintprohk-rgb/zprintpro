@@ -749,6 +749,22 @@ export function convertPriceRangeString(priceRange: string, locale: Locale, cate
   return `${symbol}${minPrice.toFixed(2)}-${maxPrice.toFixed(2)}${unitStr}`;
 }
 
+/**
+ * 2026-07-18 P7 UX: "起价" 表达 — 取转换后价格字符串的下限，保留单位，去掉区间上限
+ * 'HK$4-16/本' → 'HK$4/本'；'$0.22-1.00/pc' → '$0.22/pc'；'¥100-300/個' → '¥100/個'
+ * 解决区间上限 (HK$16/本) 无数量语境吓退用户的问题；渲染侧统一加 起/From/〜 + MOQ 副行。
+ */
+export function convertToFromPrice(priceRange: string, locale: Locale, categorySlug?: string, productSlug?: string): string {
+  const converted = convertPriceRangeString(priceRange, locale, categorySlug, productSlug);
+  return converted.replace(/-[\d.,]+(?=\/|$)/, '');
+}
+
+/** 从 price_range 提取单位词 (去掉 '/100張' 里的数字): '/100張'→'張', '/本'→'本', '/個'→'個' */
+export function getPriceUnitWord(priceRange: string): string {
+  const unit = priceRange.split('/')[1] || '';
+  return unit.replace(/^\d+/, '').trim();
+}
+
 
 // ============================================================================
 // 类型安全报价计算（新架构）

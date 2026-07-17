@@ -85,8 +85,8 @@ const HEADING: Record<Locale, string> = {
 
 const SUBHEADING: Record<Locale, string> = {
   en: '15+ years serving global SMBs. ISO 9001:2015 certified. Real-time tracking. 100% satisfaction.',
-  'zh-hk': '15+ 年服務全球中小企. ISO 9001:2015 認證. 即時物流追蹤. 100% 滿意保證.',
-  ja: '15+ 年グローバル SMB 支援. ISO 9001:2015 認証. リアルタイム追跡. 100% 満足保証.',
+  'zh-hk': '15+ 年服務全球中小企 · ISO 9001:2015 認證 · 即時物流追蹤 · 100% 滿意保證',
+  ja: '15+ 年グローバル SMB 支援 · ISO 9001:2015 認証 · リアルタイム追跡 · 100% 満足保証',
 };
 
 export function TrustBadges({ locale, compact = false }: TrustBadgesProps) {

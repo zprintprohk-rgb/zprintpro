@@ -24,6 +24,8 @@ interface Step {
   title: string;
   desc: string;
   icon: string;
+  /** 次要信息 (如加密/关税细节) 挪到 tooltip, 卡片正文保持 ≤2 行 */
+  tip?: string;
 }
 
 const STEPS: Record<Locale, Step[]> = {
@@ -31,96 +33,105 @@ const STEPS: Record<Locale, Step[]> = {
     {
       num: 1,
       title: 'Choose Your Product',
-      desc: 'Browse 84 SKUs across 14 categories. Stickers, packaging, paper bags, flyers, posters, and more — all with 30-second AI instant quote.',
+      desc: '84 SKUs, 14 categories. 30-second AI instant quote.',
       icon: '🛒',
     },
     {
       num: 2,
       title: 'Upload Your Design',
-      desc: 'Drag & drop PDF / PNG / AI files up to 100MB. Our design team can also help — free basic design service for US orders.',
+      desc: 'PDF / PNG / AI up to 100MB. Free design help available.',
       icon: '📤',
     },
     {
       num: 3,
       title: 'Free Proof in 4 Hours',
-      desc: 'Human review, unlimited revisions. 100% satisfaction guarantee. We send a digital proof to your email before any printing starts.',
+      desc: 'Human review, unlimited revisions. Emailed before printing.',
       icon: '✅',
+      tip: '100% satisfaction guarantee',
     },
     {
       num: 4,
       title: 'Approve & Pay Securely',
-      desc: '30-second secure checkout. Stripe / PayPal / wire transfer / WeChat. 256-bit SSL encrypted. No hidden fees.',
+      desc: 'Stripe / PayPal / wire / WeChat. No hidden fees.',
       icon: '💳',
+      tip: '256-bit SSL encrypted checkout',
     },
     {
       num: 5,
       title: 'Free US Shipping on $99+',
-      desc: '5-7 day DHL Express door-to-door delivery to USA. FedEx Ground option available. DDP customs-friendly — no surprise tariffs.',
+      desc: 'DHL Express 5-7 days, door-to-door. No surprise tariffs.',
       icon: '📦',
+      tip: 'DDP customs-friendly · FedEx Ground option',
     },
   ],
   'zh-hk': [
     {
       num: 1,
       title: '選擇產品',
-      desc: '14 個類別 84 個 SKU。貼紙、包裝盒、紙袋、傳單、海報等, 30 秒 AI 即時報價.',
+      desc: '14 類別 84 款產品，30 秒 AI 即時報價。',
       icon: '🛒',
     },
     {
       num: 2,
       title: '上傳設計檔案',
-      desc: '拖放 PDF / PNG / AI 檔案 (最大 100MB)。設計團隊可協助排版, 首次落單免費基本設計服務.',
+      desc: '拖放 PDF / PNG / AI（最大 100MB），免費設計協助。',
       icon: '📤',
     },
     {
       num: 3,
       title: '4 小時內免費打稿',
-      desc: '人工審稿, 不限修改次數. 100% 滿意保證. 開印前電郵發送電子打稿給您確認.',
+      desc: '人工審稿不限修改，開印前電郵確認。',
       icon: '✅',
+      tip: '100% 滿意保證',
     },
     {
       num: 4,
       title: '確認並安全付款',
-      desc: '30 秒安全結帳. Stripe / PayPal / 銀行匯款 / 微信 / 支付寶. 256-bit SSL 加密. 零隱藏費用.',
+      desc: 'Stripe / PayPal / 匯款 / 微信，零隱藏費用。',
       icon: '💳',
+      tip: '256-bit SSL 加密結帳',
     },
     {
       num: 5,
       title: '港九新界免費速遞',
-      desc: '順豐本地速遞 / DHL Express 5-7 天全球送達. 港九新界 $500+ 免費上門, 24 小時急件可選. DDP 關稅預付, 沒有意外稅費.',
+      desc: '順豐本地 / DHL 全球 5-7 天，滿 $500 免運。',
       icon: '📦',
+      tip: '24 小時急件可選 · DDP 關稅預付',
     },
   ],
   ja: [
     {
       num: 1,
       title: '商品を選ぶ',
-      desc: '14 カテゴリー 84 SKU。ステッカー・パッケージ・紙袋・チラシ・ポスターなど、30 秒 AI 即時見積もり.',
+      desc: '14 カテゴリー 84 SKU、30 秒 AI 即時見積もり。',
       icon: '🛒',
     },
     {
       num: 2,
       title: 'デザインをアップロード',
-      desc: 'PDF / PNG / AI ファイルをドラッグ&ドロップ (最大 100MB)。デザインサポートも無料 (全注文対応).',
+      desc: 'PDF / PNG / AI（最大 100MB）。無料デザイン対応。',
       icon: '📤',
     },
     {
       num: 3,
       title: '4 時間以内に無料校正',
-      desc: '人による校正、校了まで無制限. 100% 満足保証. 印刷前に電子校正をメールでお送りします.',
+      desc: '校了まで無制限。印刷前にメールで確認。',
       icon: '✅',
+      tip: '100% 満足保証',
     },
     {
       num: 4,
       title: '確認して安全決済',
-      desc: '30 秒で安全チェックアウト. クレジットカード / PayPal / 銀行振込 / コンビニ決済. 256-bit SSL 暗号化.',
+      desc: 'カード / PayPal / 振込。追加料金なし。',
       icon: '💳',
+      tip: '256-bit SSL 暗号化チェックアウト',
     },
     {
       num: 5,
       title: '日本全国送料無料',
-      desc: 'ヤマト運輸 / DHL Express 5-7 日でドア・ツー・ドア. 全国送料 0 円 / 沖縄・北海道も同料金. FedEx / ゆうパック 選択可. DDP 関税先払い対応.',
+      desc: 'DHL 5-7 日でお届け。全国送料 0 円。',
       icon: '📦',
+      tip: '沖縄・北海道も同料金 · DDP 関税先払い',
     },
   ],
 };
@@ -132,11 +143,11 @@ const HEADING: Record<Locale, { title: string; subtitle: string }> = {
   },
   'zh-hk': {
     title: '印刷流程',
-    subtitle: '5 步由訂單到送達. 港九新界 $500+ 免費速遞. 4 小時免費打稿. 100% 滿意保證.',
+    subtitle: '5 步由訂單到送達 · 港九新界 $500+ 免費速遞 · 4 小時免費打稿 · 100% 滿意保證',
   },
   ja: {
     title: 'ご注文の流れ',
-    subtitle: '5 ステップで注文から納品まで. 全国送料 0 円. 4 時間無料校正. 100% 満足保証.',
+    subtitle: '5 ステップで注文から納品まで · 全国送料 0 円 · 4 時間無料校正 · 100% 満足保証',
   },
 };
 
@@ -160,11 +171,12 @@ export function HowItWorks({ locale }: HowItWorksProps) {
           </p>
         </div>
 
-        <ol className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 md:gap-4 relative">
+        <ol className="grid grid-cols-2 lg:grid-cols-5 gap-3 md:gap-4 relative">
           {steps.map((step, idx) => (
             <li
               key={step.num}
-              className="relative bg-white rounded-xl border border-slate-200 p-4 shadow-sm hover:shadow-md transition-shadow"
+              title={step.tip}
+              className="relative bg-white rounded-xl border border-slate-200 px-4 py-5 md:px-5 md:py-6 shadow-sm hover:shadow-md transition-shadow"
             >
               {/* Connector arrow for desktop (between steps) */}
               {idx < steps.length - 1 && (
@@ -176,17 +188,17 @@ export function HowItWorks({ locale }: HowItWorksProps) {
                 </div>
               )}
 
-              <div className="flex items-center gap-2 mb-3">
-                <span className="flex-shrink-0 w-8 h-8 rounded-full bg-[#2873F5] text-white font-bold text-base flex items-center justify-center">
+              <div className="flex items-center gap-2.5 mb-3">
+                <span className="flex-shrink-0 w-9 h-9 rounded-full bg-[#2873F5] text-white font-bold text-lg flex items-center justify-center shadow-sm shadow-blue-200">
                   {step.num}
                 </span>
                 <span className="text-2xl" aria-hidden="true">{step.icon}</span>
               </div>
 
-              <h3 className="text-base font-bold text-slate-900 mb-1.5">
+              <h3 className="text-[15px] md:text-base font-semibold text-slate-900 mb-1.5">
                 {step.title}
               </h3>
-              <p className="text-xs md:text-sm text-slate-600 leading-[1.76]">
+              <p className="text-[13px] text-slate-500 leading-relaxed">
                 {step.desc}
               </p>
             </li>

@@ -8,6 +8,7 @@ import { generateHomeMetadata, Locale } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
 import { generateOrganizationSchema, generateLocalBusinessSchema } from '@/lib/seo';
 import { HeroBanner } from '@/components/home/HeroBanner';
+import { MobileCategoryEntry } from '@/components/home/MobileCategoryEntry';
 import { HotProducts } from '@/components/home/HotProducts';
 import { StatsBar } from '@/components/home/StatsBar';
 import { WhyChooseUs } from '@/components/home/WhyChooseUs';
@@ -61,6 +62,8 @@ export default function HomePage({
       
       <main className="min-h-screen">
         <HeroBanner locale={locale} />
+        {/* 2026-07-18 P9: 移动端产品分类入口 (lg:hidden), hero 之后 / 印刷流程之前 */}
+        <MobileCategoryEntry locale={locale} />
         <TrustWaterfall locale={locale} />
         {/* 2026-07-09 P0.3: 5 步流程图 — en-US market local optimization (PM × UX × SEO research) */}
         <HowItWorks locale={locale} />

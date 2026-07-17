@@ -3,10 +3,10 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { CreditCard, Tag, ShoppingBag, FileText, ImageIcon, Package, BookOpen, Flag, Calendar, Mail, Gift, GraduationCap, Box } from 'lucide-react';
+import { CreditCard, Tag, ShoppingBag, FileText, ImageIcon, Package, BookOpen, Flag, Calendar, Mail, Gift, GraduationCap, Box, Palette } from 'lucide-react';
 import { Product, getProductDisplayTitle } from '@/data/products';
 import { Locale } from '@/lib/seo';
-import { shouldShowPrice, convertPriceRangeString } from '@/lib/pricing';
+import { shouldShowPrice, convertToFromPrice, getPriceUnitWord } from '@/lib/pricing';
 import { getProductMainImage } from '@/lib/product-image';
 
 interface CategoryProductCardProps {
@@ -33,9 +33,9 @@ const categoryFallbacks: Record<string, { icon: typeof Box; bgColor: string; ico
 };
 
 const translations = {
-  'zh-hk': { hot: '熱銷', getQuote: '立即訂購', viewMore: '查詢更多', from: '起' },
-  'en': { hot: 'Hot', getQuote: 'Order Now', viewMore: 'View More', from: 'From' },
-  'ja': { hot: '人気', getQuote: '今すぐ注文', viewMore: '詳細を見る', from: 'から' },
+  'zh-hk': { hot: '熱賣', getQuote: '立即訂購', viewMore: '查詢更多', from: '起', freeDesign: '免費設計', moqSuffix: '起訂', volumeNote: '量大更優' },
+  'en': { hot: 'Hot', getQuote: 'Order Now', viewMore: 'View More', from: 'From', freeDesign: 'Free design', moqSuffix: 'MOQ', volumeNote: 'Volume pricing' },
+  'ja': { hot: '人気', getQuote: '今すぐ注文', viewMore: '詳細を見る', from: '〜', freeDesign: '無料デザイン', moqSuffix: '〜', volumeNote: '大口割引' },
 };
 
 // 2026-07-15: 防御性 helper - 清理 title_zh / buildProductH1ZhHk 输出中可能的多余空白
@@ -71,21 +71,26 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
   const shortDesc = getDesc().slice(0, 40) + (getDesc().length > 40 ? '...' : '');
   const showPrice = shouldShowPrice(product.category_slug);
 
+  // 2026-07-18 P6+P7: 起价 + MOQ 表达 — 'HK$4-16/本' → 'HK$4/本起' + '100本起訂 · 量大更優'
+  const fromPrice = convertToFromPrice(product.price_range, locale, product.category_slug, product.slug);
+  const unitWord = getPriceUnitWord(product.price_range);
+  const moqLine =
+    locale === 'zh-hk'
+      ? `${product.minQuantity}${unitWord || '件'}${t.moqSuffix} · ${t.volumeNote}`
+      : locale === 'ja'
+      ? `${product.minQuantity}個${t.moqSuffix} · ${t.volumeNote}`
+      : `${t.moqSuffix} ${product.minQuantity} · ${t.volumeNote}`;
+
   return (
     <div className="group bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-xl transition-all duration-300 flex flex-col">
-      {/* hot badge */}
-      {product.isHot && (
-        <div className="relative">
-          <div className="absolute top-3 left-3 z-10">
-            <span className="bg-[#EF4444] text-white text-[11px] font-bold px-2.5 py-1 rounded">
-              {t.hot}
-            </span>
-          </div>
-        </div>
-      )}
-
       {/* image — 1:1, clickable to PDP */}
       <Link href={`${localePrefix}/product/${product.slug}/`} className="aspect-square relative overflow-hidden bg-gray-50 block">
+        {/* hot badge — 简洁小圆角标签 (品牌橙) */}
+        {product.isHot && (
+          <span className="absolute top-3 left-3 z-10 bg-[#F87314] text-white text-xs font-semibold px-2 py-0.5 rounded-md shadow-sm">
+            {t.hot}
+          </span>
+        )}
         {hasImage ? (
           <Image
             src={imageSrc}
@@ -114,14 +119,22 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
       <div className="mx-4 border-t border-gray-100 mt-2" />
 
       {/* price + dual buttons */}
-      <div className="p-4 flex flex-col flex-1">
-        {/* price area — fixed height for alignment, clickable to PDP */}
-        <div className="h-[28px] mb-2 flex items-center justify-center">
+      <div className="p-4 pt-3 flex flex-col flex-1">
+        {/* price area — 起价 + MOQ 副行, clickable to PDP */}
+        <div className="mb-2 text-center">
           <Link href={`${localePrefix}/product/${product.slug}/`} className="text-[#F87314] font-bold text-base hover:underline">
-            {convertPriceRangeString(product.price_range, locale, product.category_slug, product.slug).split('-')[0]}
-            <span className="text-xs text-gray-400 ml-1">{t.from}</span>
+            {locale === 'en' && <span className="text-xs font-medium text-gray-400 mr-1">{t.from}</span>}
+            {fromPrice}
+            {locale !== 'en' && <span className="text-xs font-normal text-gray-400 ml-0.5">{t.from}</span>}
           </Link>
+          <p className="text-[11px] text-gray-400 leading-tight mt-0.5">{moqLine}</p>
         </div>
+
+        {/* free design — 卡片底部 icon + 小字 */}
+        <p className="flex items-center justify-center gap-1 text-[11px] text-gray-400 mb-2.5">
+          <Palette className="w-3 h-3 text-[#2873F5]" strokeWidth={2} />
+          {t.freeDesign}
+        </p>
 
         {/* dual buttons — half length, centered */}
         <div className="flex gap-2 mt-auto justify-center">

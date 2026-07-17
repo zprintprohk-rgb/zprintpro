@@ -171,16 +171,16 @@ export default function ContactPage({ params }: ContactPageProps) {
           <p className="text-gray-500 text-lg">{t.subtitle}</p>
         </div>
 
-        {/* Trust Bar - 4 metrics */}
+        {/* Trust Bar - 4 metrics (2026-07-18 P8: emoji → Heroicons outline SVG) */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8 md:mb-10">
           {[
-            { value: t.trustServed, icon: "🏢" },
-            { value: t.trustYears, icon: "📅" },
-            { value: t.trustDelivery, icon: "🚀" },
-            { value: t.trustCountries, icon: "🌍" },
+            { value: t.trustServed, icon: <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" /></svg> },
+            { value: t.trustYears, icon: <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" /></svg> },
+            { value: t.trustDelivery, icon: <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" /></svg> },
+            { value: t.trustCountries, icon: <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" /></svg> },
           ].map((item, i) => (
             <div key={i} className="bg-white rounded-xl border border-gray-100 p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-              <div className="text-2xl mb-1">{item.icon}</div>
+              <div className="flex justify-center text-[#2873F5] mb-1.5">{item.icon}</div>
               <div className="text-sm font-semibold text-[#333333]">{item.value}</div>
             </div>
           ))}
@@ -219,7 +219,7 @@ export default function ContactPage({ params }: ContactPageProps) {
           <div className="lg:col-span-5 space-y-6">
             {/* Contact Person Card */}
             <div className="bg-white rounded-2xl shadow-lg shadow-gray-200/50 border border-gray-100 overflow-hidden">
-              <div className="h-20 bg-gradient-to-r from-[#2873F5] via-[#4F46E5] to-[#7C3AED] relative">
+              <div className="h-20 bg-gradient-to-r from-[#2873F5] to-[#1E5BD6] relative">
                 <div className="absolute -bottom-8 left-6 w-20 h-20 rounded-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center text-white text-3xl font-bold ring-4 ring-white shadow-lg">
                   {t.name.charAt(0)}
                   <span className="absolute -bottom-0.5 -right-0.5 flex h-5 w-5">
@@ -227,8 +227,8 @@ export default function ContactPage({ params }: ContactPageProps) {
                     <span className="relative inline-flex rounded-full h-5 w-5 bg-emerald-500 border-2 border-white"></span>
                   </span>
                 </div>
-                <div className="absolute top-3 right-3 flex items-center gap-1.5 bg-white/15 backdrop-blur-sm rounded-full px-2.5 py-1">
-                  <span className="text-white text-[11px] font-medium">{t.quickContact}</span>
+                <div className="absolute top-3 right-3 flex items-center gap-1.5 bg-white/15 backdrop-blur-sm rounded-full px-2 py-0.5">
+                  <span className="text-white text-[10px] font-medium">{t.quickContact}</span>
                 </div>
               </div>
 
@@ -250,9 +250,9 @@ export default function ContactPage({ params }: ContactPageProps) {
                   </p>
                 </div>
 
-                <div className="flex flex-wrap gap-2 mb-5">
+                <div className="grid grid-cols-2 gap-2 mb-5">
                   {t.features.map((f) => (
-                    <span key={f} className="inline-flex items-center px-2.5 py-1 bg-blue-50 text-blue-700 border border-blue-100 rounded-full text-xs font-medium">
+                    <span key={f} className="inline-flex items-center justify-center px-2.5 py-1.5 bg-blue-50 text-blue-700 border border-blue-100 rounded-lg text-xs font-medium text-center">
                       {f}
                     </span>
                   ))}

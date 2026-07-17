@@ -77,14 +77,14 @@ const bgBusinessCard: BlogPostMeta = {
   source: 'buying-guide',
   date: '2025-01-15',
   title: {
-    'zh-hk': '名片印刷選購完全指南：材質、工藝、價格一次搞懂',
-    en: 'Business Card Buying Guide: Materials, Finishes & Pricing Explained',
-    ja: '名刺印刷選び方完全ガイド：材質、加工、価格を徹底解説',
+    'zh-hk': '貼紙印刷選購完全指南：材質、工藝、價格一次搞懂',
+    en: 'Custom Sticker Printing Guide: Materials, Finishes & Pricing Explained',
+    ja: 'ステッカー印刷ガイド：材質、加工、価格を徹底解説',
   },
   excerpt: {
-    'zh-hk': '從300g銅版紙到400g厚紙、從燙金到局部UV，香港名片印刷選購全攻略。智印雲印刷專家為您拆解材質、工藝與價格。',
-    en: 'From 300g art paper to 400g thick stock, from foil stamping to spot UV — a complete guide to choosing business cards in Hong Kong.',
-    ja: '300gアート紙から400g厚紙まで、箔押しから局部UVまで—香港名刺印刷の選び方完全ガイド。',
+    'zh-hk': '從防水PVC到透明料、從燙金到異形模切，香港貼紙印刷選購全攻略。智印雲印刷專家為您拆解材質、工藝與價格。',
+    en: 'From waterproof vinyl to clear stock, from foil stamping to die-cut shapes — a complete guide to custom sticker printing.',
+    ja: '防水ビニールから透明素材まで、箔押しからダイカットまで—オリジナルステッカー印刷の選び方完全ガイド。',
   },
   cover: {
     'zh-hk': '/images/products/seedream-webp/zprintpro-business-cards-premium-business-cards-zh-hk.webp',
@@ -323,14 +323,14 @@ const lpBusinessCardDesign: BlogPostMeta = {
   source: 'legacy',
   date: '2024-04-10',
   title: {
-    'zh-hk': '名片設計的10個黃金法則：打造令人難忘的專業形象',
-    en: '10 Golden Rules for Business Card Design',
-    ja: '名刺デザインの10の黄金法則：印象に残るプロフェッショナルイメージを作る',
+    'zh-hk': '貼紙設計的10個黃金法則：打造令人難忘的品牌形象',
+    en: '10 Golden Rules for Sticker Design',
+    ja: 'ステッカーデザインの10の黄金法則：印象に残るブランドイメージを作る',
   },
   excerpt: {
-    'zh-hk': '從排版到色彩搭配，掌握名片設計的核心技巧。智印雲設計專家分享10個黃金法則，助您打造令人印象深刻的專業名片。',
-    en: 'Master the core techniques of business card design.',
-    ja: 'レイアウトから色の組み合わせまで、名刺デザインの中核テクニックをマスター。',
+    'zh-hk': '從排版到色彩搭配，掌握貼紙設計的核心技巧。智印雲設計專家分享10個黃金法則，助您打造令人印象深刻的品牌貼紙。',
+    en: 'Master the core techniques of sticker design.',
+    ja: 'レイアウトから色の組み合わせまで、ステッカーデザインの中核テクニックをマスター。',
   },
   cover: {
     'zh-hk': '/images/blog/zh-hk/business-card-design.webp',
@@ -433,12 +433,12 @@ const lpHKPrintingGuide: BlogPostMeta = {
   source: 'legacy',
   date: '2024-05-20',
   title: {
-    'zh-hk': '香港印刷公司選擇完全指南：觀塘、九龍、新界哪裡最可靠？',
+    'zh-hk': '香港印刷公司選擇完全指南：港島、九龍、新界哪裡最可靠？',
     en: 'Custom Sticker & Packaging Printing Guide for US Small Business | MOQ, Materials, FedEx Ground 5-7 Day',
     ja: 'オリジナルステッカー・パッケージ印刷ガイド：小ロット・短納期・データ入稿 | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '深入比較香港觀塘、九龍、新界的印刷公司，從價格、品質、交貨速度到客戶評價，幫您找到最適合的印刷合作夥伴。',
+    'zh-hk': '深入比較香港港島、九龍、新界的印刷公司，從價格、品質、交貨速度到客戶評價，幫您找到最適合的印刷合作夥伴。',
     en: 'Complete guide to custom stickers, packaging boxes, and labels for US small business. Compare vinyl/PVC/Kraft/clear materials, 50-1000 MOQ, Free shipping over $99, FedEx Ground 5-7 day or DHL Express 2-4 day, ISO 9001 certified factory-direct pricing.',
     ja: 'オリジナルステッカー・パッケージ・印刷物の完全ガイド。素材（ビニール・PVC・クラフト・透明・箔押し）・小ロット（30枚〜）・短納期（最短3日出荷）・全国送料込み・DHL国際配送対応。中小企業・D2Cブランド・同人サークル向け。',
   },
@@ -477,9 +477,9 @@ const lpBrandChecklist: BlogPostMeta = {
   source: 'legacy',
   date: '2024-05-10',
   title: {
-    'zh-hk': '企業品牌物料清單：從名片到展架的全套印刷方案',
-    en: 'Corporate Brand Materials Checklist: From Cards to Displays',
-    ja: '企業ブランド資材チェックリスト',
+    'zh-hk': '企業品牌物料清單：從貼紙到展架的全套印刷方案',
+    en: 'Corporate Brand Materials Checklist: From Stickers to Displays',
+    ja: '企業ブランド資材チェックリスト：ステッカーから展示パネルまで',
   },
   excerpt: {
     'zh-hk': '無論是初創企業還是品牌升級，這份完整的品牌物料印刷清單將幫助您系統化地規劃所有印刷需求。',

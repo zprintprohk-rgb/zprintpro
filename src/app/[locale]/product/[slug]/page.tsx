@@ -44,7 +44,7 @@ import { getSkuSeo } from '@/data/sku-seo-data';
 import { generateFAQSchema } from '@/lib/faq-schema';
 import { coreProductFAQMap } from '@/data/product-faqs';
 import { RegionalContent, RegionalCta, RegionalTrustBadges } from '@/components/seo/RegionalContent';
-import { convertPriceRangeString } from '@/lib/pricing';
+import { convertPriceRangeString, convertToFromPrice } from '@/lib/pricing';
 import { getProductMainImage, getProductImages } from '@/lib/product-image';
 import { ProductWhyChooseUs } from '@/components/ProductWhyChooseUs';
 import RushDeliveryBadge from '@/components/sections/RushDeliveryBadge';
@@ -368,10 +368,10 @@ export default function ProductPage({
               <div className="mb-5">
                 <div className="flex items-baseline gap-2 mb-1 flex-wrap">
                   <span className="text-[33px] font-extrabold text-[#F87314] leading-tight">
-                    {locale === 'zh-hk' ? product.price_range.split('-')[0] : convertPriceRangeString(product.price_range, locale, product.category_slug, product.slug).split('-')[0]}
+                    {convertToFromPrice(product.price_range, locale, product.category_slug, product.slug)}
                   </span>
                   <span className="text-sm text-gray-400">
-                    {locale === 'zh-hk' ? (product.price_range.includes('/100') ? '/100張起' : product.price_range.includes('/個') ? '/個起' : '/張起') : locale === 'en' ? 'From' : (product.price_range.includes('/100') ? '/100枚から' : '/個から')}
+                    {locale === 'zh-hk' ? '起' : locale === 'en' ? 'From' : '〜'}
                   </span>
                   <span className="text-xs text-gray-400 ml-1">
                     {locale === 'zh-hk' ? `完整價格 ${product.price_range}` : locale === 'en' ? `Full price: ${convertPriceRangeString(product.price_range, locale, product.category_slug, product.slug)}` : `価格 ${convertPriceRangeString(product.price_range, locale, product.category_slug, product.slug)}`}
