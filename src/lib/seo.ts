@@ -760,7 +760,7 @@ export function generateProductMetadata(
   const title = locale === 'zh-hk'
     ? `${titleBase} | 香港${categoryName}專家 | ${brandSuffix}`.slice(0, 60)
     : locale === 'en'
-    ? `${titleBase} | Global Shipping | ${brandSuffix}`.slice(0, 60)
+    ? `${titleBase} | Free Shipping $99+ | ${brandSuffix}`.slice(0, 60)
     : `${titleBase} | 日本向け高品質印刷 | ${brandSuffix}`.slice(0, 60);
   
   // Description: 150-160字符，含長尾關鍵詞+價格+行動號召
@@ -772,7 +772,7 @@ export function generateProductMetadata(
   const descSuffix = locale === 'zh-hk' 
     ? `立即查詢報價，滿$500免運費，即日交貨。`
     : locale === 'en'
-    ? `Fast shipping to US, UK, AU. Premium factory-direct quality. Get a free quote now. Rush orders welcome.`
+    ? `Free design help. Free US shipping $99+. DHL 2-4 day delivery. Get a 30-second quote now.`
     : `今すぐ見積もり。全国配送対応。3〜5営業日でお届け。急ぎにも対応。`;
   
   const fullDesc = `${descPrefix}${priceText}${descSuffix}`;
