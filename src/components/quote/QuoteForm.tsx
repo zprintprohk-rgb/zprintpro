@@ -8,6 +8,8 @@ import { z } from 'zod';
 import { Send, Paperclip, CheckCircle, AlertCircle, Upload, X, Loader2 } from 'lucide-react';
 import { categories, products, getProductBySlug } from '@/data/products';
 import { trackContactFormSubmit } from '@/lib/analytics';
+import { supabase, uploadToSupabase } from '@/lib/supabase';
+import { generateQuoteRef, generateQuoteSheetLink, type QuoteSheetContext } from '@/lib/whatsapp';
 
 const quoteSchema = z.object({
   name: z.string().optional(),
@@ -27,7 +29,8 @@ interface QuoteFormProps {
 
 export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'fallback'>('idle');
+  const [lastSheet, setLastSheet] = useState<QuoteSheetContext | null>(null);
   const [files, setFiles] = useState<File[]>([]);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [productSlug, setProductSlug] = useState<string | null>(null);
@@ -177,6 +180,28 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
 
   const t = labels;
 
+  // P0-2 修復（2026-07-17）：成功頁 WhatsApp 加速 + 失敗降級文案
+  const ops = {
+    'zh-hk': {
+      successWhatsapp: '急單？WhatsApp 傳報價單，優先處理',
+      fallbackTitle: '系統繁忙，未能直接提交',
+      fallbackDesc: '已為您自動打開 WhatsApp，報價內容已填好，發送後我們 24 小時內回覆。如未打開，請點下方按鈕。',
+      fallbackCta: 'WhatsApp 發送報價單',
+    },
+    en: {
+      successWhatsapp: 'In a hurry? Send the quote sheet on WhatsApp for priority handling',
+      fallbackTitle: 'System busy — could not submit directly',
+      fallbackDesc: 'We opened WhatsApp with everything pre-filled. Send it and we will reply within 24 hours. If it did not open, tap the button below.',
+      fallbackCta: 'Send Quote via WhatsApp',
+    },
+    ja: {
+      successWhatsapp: 'お急ぎの方はWhatsAppで見積もり依頼を送信（優先対応）',
+      fallbackTitle: 'システムが混み合い、直接送信できませんでした',
+      fallbackDesc: '入力内容を反映したWhatsAppを開きました。送信いただければ24時間以内にご返信します。開かない場合は下のボタンをご利用ください。',
+      fallbackCta: 'WhatsAppで見積もりを送る',
+    },
+  }[locale];
+
   const handleFileChange = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     const selected = Array.from(e.target.files || []);
     const valid = selected.filter((f) => {
@@ -205,34 +230,69 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
+    // 結構化報價單上下文（成功頁 WhatsApp 加速 CTA / 失敗降級共用）
+    const productName =
+      data.category || prefillCategory ||
+      (locale === 'ja' ? '一般お問い合わせ' : locale === 'en' ? 'General Inquiry' : '一般查詢');
+    const sheet: QuoteSheetContext = {
+      ref: generateQuoteRef(),
+      name: data.name || undefined,
+      phone: data.phone,
+      email: data.email,
+      productName,
+      size: data.size || undefined,
+      quantity: data.quantity || undefined,
+      message: data.message,
+      source: 'quote-form',
+    };
+    setLastSheet(sheet);
+
     try {
-      const formData = new FormData();
-      formData.append('name', data.name || '');
-      formData.append('phone', data.phone);
-      formData.append('email', data.email);
-      formData.append('category', data.category || '');
-      formData.append('quantity', data.quantity || '');
-      formData.append('size', data.size || '');
-      formData.append('message', data.message);
-      formData.append('locale', locale);
-      files.forEach((file) => formData.append('attachments', file));
-
-      const res = await fetch('/api/send-quote-email', {
-        method: 'POST',
-        body: formData,
-      });
-
-      const result = await res.json();
-      if (result.success) {
-        trackContactFormSubmit(files.length > 0);
-        setSubmitStatus('success');
-        form.reset();
-        setFiles([]);
-      } else {
-        setSubmitStatus('error');
+      if (!process.env.NEXT_PUBLIC_SUPABASE_URL) {
+        throw new Error('Supabase not configured');
       }
+
+      // 附件 best-effort 上傳（單個失敗不阻塞主流程）
+      let fileNote = '';
+      if (files.length > 0) {
+        const urls: string[] = [];
+        for (const file of files) {
+          try {
+            const r = await uploadToSupabase(file, 'user-uploads', 'quote-attachments');
+            urls.push(r.url);
+          } catch {
+            // 單個附件失敗繼續，主流程不受影響
+          }
+        }
+        fileNote = urls.length > 0
+          ? `\n附件：${urls.join(' , ')}`
+          : `\n附件（未能上傳，請經 WhatsApp/電郵補發）：${files.map((f) => f.name).join('、')}`;
+      }
+
+      const quantityNum = parseInt((data.quantity || '').replace(/[^\d]/g, ''), 10) || 0;
+
+      const { error } = await supabase.from('quotes').insert({
+        customer_name: data.name || data.phone,
+        customer_email: data.email,
+        customer_phone: data.phone,
+        product_id: productSlug || 'general-inquiry',
+        product_name: productName,
+        quantity: quantityNum,
+        size: data.size || null,
+        design_notes: `[${sheet.ref}] ${data.message}${fileNote}`,
+        user_agent: navigator.userAgent,
+        referrer: document.referrer || null,
+      });
+      if (error) throw error;
+
+      trackContactFormSubmit(files.length > 0);
+      setSubmitStatus('success');
+      form.reset();
+      setFiles([]);
     } catch {
-      setSubmitStatus('error');
+      // 降級通道：自動打開 WhatsApp，報價單已預填，不讓用戶白填
+      window.open(generateQuoteSheetLink(locale, sheet), '_blank', 'noopener,noreferrer');
+      setSubmitStatus('fallback');
     } finally {
       setIsSubmitting(false);
     }
@@ -244,12 +304,24 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
         <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
         <h3 className="text-2xl font-bold text-green-700 mb-2">{t.successTitle}</h3>
         <p className="text-green-600 mb-6">{t.successDesc}</p>
-        <button
-          onClick={() => setSubmitStatus('idle')}
-          className="px-6 py-2.5 bg-green-600 hover:bg-green-700 text-white rounded-lg font-medium transition-colors"
-        >
-          {t.submitAgain}
-        </button>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+          {lastSheet && (
+            <a
+              href={generateQuoteSheetLink(locale, lastSheet)}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-2.5 bg-[#25D366] hover:bg-[#1EBE5B] text-white rounded-lg font-medium transition-colors"
+            >
+              {ops.successWhatsapp}
+            </a>
+          )}
+          <button
+            onClick={() => setSubmitStatus('idle')}
+            className="px-6 py-2.5 bg-green-600 hover:bg-green-700 text-white rounded-lg font-medium transition-colors"
+          >
+            {t.submitAgain}
+          </button>
+        </div>
       </div>
     );
   }
@@ -438,10 +510,22 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
 
       {/* 提交按鈕 */}
       <div className="flex flex-col items-center gap-4">
-        {submitStatus === 'error' && (
-          <div className="flex items-center gap-2 text-red-500 bg-red-50 px-4 py-2 rounded-lg">
-            <AlertCircle className="w-5 h-5" />
-            <span className="text-sm font-medium">發送失敗，請稍後重試</span>
+        {submitStatus === 'fallback' && (
+          <div className="w-full rounded-xl border border-amber-200 bg-amber-50 px-5 py-4 text-center space-y-3">
+            <p className="text-amber-700 font-bold flex items-center justify-center gap-2">
+              <AlertCircle className="w-5 h-5" /> {ops.fallbackTitle}
+            </p>
+            <p className="text-amber-600 text-sm">{ops.fallbackDesc}</p>
+            {lastSheet && (
+              <a
+                href={generateQuoteSheetLink(locale, lastSheet)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-2.5 bg-[#25D366] hover:bg-[#1EBE5B] text-white rounded-lg font-bold transition-colors"
+              >
+                {ops.fallbackCta}
+              </a>
+            )}
           </div>
         )}
         <button

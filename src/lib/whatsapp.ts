@@ -126,3 +126,118 @@ export function generateWhatsAppText(
   const builder = TEMPLATE[locale] || TEMPLATE['zh-hk'];
   return builder(ctx);
 }
+
+
+/* ===================== 結構化報價單（P0-2 · 2026-07-17） =====================
+ * 用途：QuoteForm 提交成功頁的 WhatsApp 加速 CTA + 提交失敗時的降級通道。
+ * 報價單帶參考編號，同一編號會寫入 Supabase quotes.design_notes，方便對賬。
+ */
+
+export interface QuoteSheetContext {
+  ref: string;                 // 報價參考編號（generateQuoteRef 生成）
+  name?: string;
+  phone?: string;
+  email?: string;
+  productName?: string;
+  size?: string;
+  material?: string;
+  quantity?: number | string;
+  finishing?: string;
+  turnaround?: string;
+  message?: string;
+  source?: string;
+}
+
+/** 生成報價參考編號：ZP-YYYYMMDD-XXXX（客戶端隨機，無需後端） */
+export function generateQuoteRef(): string {
+  const d = new Date();
+  const ymd = `${d.getFullYear()}${String(d.getMonth() + 1).padStart(2, '0')}${String(d.getDate()).padStart(2, '0')}`;
+  const rand = Math.random().toString(36).slice(2, 6).toUpperCase();
+  return `ZP-${ymd}-${rand}`;
+}
+
+const QUOTE_SHEET_TEMPLATE: Record<string, (q: QuoteSheetContext) => string> = {
+  'zh-hk': (q) => {
+    const lines = [
+      '【報價請求 Quote Request】',
+      `參考編號：${q.ref}`,
+      q.name ? `姓名：${q.name}` : null,
+      q.phone ? `聯絡電話：${q.phone}` : null,
+      q.email ? `電郵：${q.email}` : null,
+      '────────────',
+      q.productName ? `品類：${q.productName}` : null,
+      q.size ? `尺寸：${q.size}` : null,
+      q.quantity ? `數量：${q.quantity}` : null,
+      q.material ? `材質：${q.material}` : null,
+      q.finishing ? `工藝：${q.finishing}` : null,
+      q.turnaround ? `交期：${q.turnaround}` : null,
+      '────────────',
+      '需求詳情：',
+      q.message || '（待補充）',
+      '────────────',
+      `請回覆報價（請註明有效期）。來源：${q.source || 'zprintpro.com 報價表單'}`,
+    ].filter(Boolean);
+    return lines.join('\n');
+  },
+  en: (q) => {
+    const lines = [
+      '[Quote Request]',
+      `Ref: ${q.ref}`,
+      q.name ? `Name: ${q.name}` : null,
+      q.phone ? `Phone: ${q.phone}` : null,
+      q.email ? `Email: ${q.email}` : null,
+      '--------------------',
+      q.productName ? `Product: ${q.productName}` : null,
+      q.size ? `Size: ${q.size}` : null,
+      q.quantity ? `Qty: ${q.quantity}` : null,
+      q.material ? `Material: ${q.material}` : null,
+      q.finishing ? `Finishing: ${q.finishing}` : null,
+      q.turnaround ? `Turnaround: ${q.turnaround}` : null,
+      '--------------------',
+      'Details:',
+      q.message || '(to be provided)',
+      '--------------------',
+      `Please reply with your best quote (incl. validity). Source: ${q.source || 'zprintpro.com quote form'}`,
+    ].filter(Boolean);
+    return lines.join('\n');
+  },
+  ja: (q) => {
+    const lines = [
+      '【お見積もり依頼】',
+      `番号：${q.ref}`,
+      q.name ? `お名前：${q.name}` : null,
+      q.phone ? `電話番号：${q.phone}` : null,
+      q.email ? `メール：${q.email}` : null,
+      '────────────',
+      q.productName ? `製品：${q.productName}` : null,
+      q.size ? `サイズ：${q.size}` : null,
+      q.quantity ? `数量：${q.quantity}` : null,
+      q.material ? `材質：${q.material}` : null,
+      q.finishing ? `加工：${q.finishing}` : null,
+      q.turnaround ? `納期：${q.turnaround}` : null,
+      '────────────',
+      '詳細：',
+      q.message || '（後ほどお送りします）',
+      '────────────',
+      `お見積もりをお願いいたします。出典：${q.source || 'zprintpro.com 見積もりフォーム'}`,
+    ].filter(Boolean);
+    return lines.join('\n');
+  },
+};
+
+/** 結構化報價單純文本（3 locale） */
+export function buildQuoteSheetMessage(
+  locale: 'zh-hk' | 'en' | 'ja' = 'zh-hk',
+  q: QuoteSheetContext
+): string {
+  const builder = QUOTE_SHEET_TEMPLATE[locale] || QUOTE_SHEET_TEMPLATE['zh-hk'];
+  return builder(q);
+}
+
+/** 結構化報價單 WhatsApp 直鏈 */
+export function generateQuoteSheetLink(
+  locale: 'zh-hk' | 'en' | 'ja' = 'zh-hk',
+  q: QuoteSheetContext
+): string {
+  return `https://wa.me/${PHONE}?text=${encodeURIComponent(buildQuoteSheetMessage(locale, q))}`;
+}
