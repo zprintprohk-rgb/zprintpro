@@ -4,6 +4,7 @@
  * 支持 FAQPage Schema 结构化数据
  */
 
+import Link from 'next/link';
 import { categorySeoContent, getDefaultCategoryContent } from '@/data/category-seo-content';
 
 interface CategoryPillarContentProps {
@@ -214,6 +215,19 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
                 <p key={idx} className="leading-relaxed text-sm sm:text-base break-words">{p}</p>
               ))}
             </div>
+            {data.buyingGuide.links && data.buyingGuide.links.length > 0 && (
+              <div className="mt-5 flex flex-wrap gap-2 sm:gap-3">
+                {data.buyingGuide.links.map((link, idx) => (
+                  <Link
+                    key={idx}
+                    href={link.href}
+                    className="inline-flex items-center rounded-full border border-[#2873F5]/40 px-3 py-1 text-sm text-[#2873F5] hover:bg-[#2873F5] hover:text-white transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            )}
           </div>
         )}
         

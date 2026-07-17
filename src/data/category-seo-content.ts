@@ -62,6 +62,7 @@ export interface CategoryLocaleContent {
   buyingGuide: {
     title: string;
     paragraphs: string[];
+    links?: { label: string; href: string }[];
   };
   faq: FaqItem[];
 }
@@ -151,10 +152,20 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
     buyingGuide: {
       title: '包裝盒選購指南',
       paragraphs: [
-        '選擇包裝盒時，首先要明確產品的用途和目標受眾。電商產品需要耐摔的瓦楞紙箱；美妝品牌適合高級感的白卡彩盒；食品則必須使用食品級材質並通過相關認證。',
-        '其次考慮預算和數量。小批量試產可選擇數碼印刷的彩盒（50 個起），大批量生產則建議使用柯式印刷以降低成本。我們的專業顧問可根據您的預算和時間要求，推薦最合適的方案。',
-        '最後，不要忽略設計細節。一個好的包裝設計應該在 3 秒內傳達品牌信息。我們提供免費設計諮詢，從色彩心理學到結構力學，確保您的包裝既美觀又實用。',
-        '在香港經營電商、零售或禮品線時，長尾搜尋常見「香港包裝盒印刷」「紙盒訂製」「禮盒少量」等組合詞；無論門市在港島、九龍或新界，只要鎖定用途（運輸防撞／開箱儀式／食品合規），就能更快收窄盒型與紙材，並與我們顧問對齊交期與預算。',
+        '包裝盒訂製第一句結論：先定用途（運輸防撞定開箱體驗）、再揀盒型、最後先睇工藝。彩盒 50 個起、常規款 100 個起，3 天出貨，免費刀模設計。用途定得清，紙材同預算即刻收窄一半。',
+        '盒型按行業揀：電商物流用瓦楞飛機盒（E/F 坑，抗壓耐摔）；美妝護膚用白卡彩盒或磁吸禮盒，開箱有儀式感；婚禮喜糖用天地蓋細盒 30 個起；茶飲食品用摺盒加窗口，睇到內容物先好賣。20 幾款標準盒型之外仲可以全客製。',
+        '紙盒訂製嘅紙材決定檔次：300–350g 白卡挺括顯色靚，係彩盒主流；牛皮紙環保自然，有機品牌最愛；瓦楞紙按坑紋分 E 坑（薄身彩箱）同 F 坑（細盒緩衝）；出口歐美建議用 FSC 認證環保紙，清關文件齊全。',
+        '食品包裝訂製有硬規矩：必須用食品級紙材同無毒大豆油墨，通過 SGS 檢測；烘焙、茶葉、保健品盒建議加防潮處理，需要時可印 QR 碼做溯源。食品包裝印刷我哋可以一次過搞掂合規文件，慳返自己搵檢測嘅時間。',
+        '工藝係包裝盒印刷嘅加分位：燙金燙銀令 LOGO 有金屬光澤，局部 UV 凸出重點，擊凸做立體手感，開窗加 PVC 片展示產品。建議新品牌先做 1–2 款工藝打樣上手，睇到實物先決定量產，我哋打樣當日完成。',
+        '數量同價錢嘅甜蜜點：數碼印刷 50–500 個免製版、試產最靈活；1,000 個以上柯式印刷單價可低至 HK$0.8/個；5,000 個以上約 5–7 天交，再有階梯折扣。旺季（中秋、聖誕、農曆新年）請提早 3 星期落單。',
+        '好多客戶搜「包裝盒訂製」時最驚兩件事：刀模出錯同大貨色差。我哋嘅做法係免費刀模設計加數碼打樣，你確認結構同顏色先開印，印前團隊逐個檔案檢查出血、刀線同色彩模式，將出錯風險壓到最低。',
+        '由報價到收貨嘅流程：提交盒型、展開尺寸、數量、紙材同工藝 → 30 秒 AI 報價 → 免費刀模同打樣 → 3 天出貨。全港順豐或專車配送，大批量可直送倉庫；跨境客戶支援出口包裝標準同 ISTA 抗壓測試報告。',
+      ],
+      links: [
+        { label: '包裝盒訂製指南', href: '/zh-hk/blog/packaging-box-custom-guide/' },
+        { label: '食品包裝印刷指南', href: '/zh-hk/blog/food-packaging-printing-guide/' },
+        { label: '紙袋訂製', href: '/zh-hk/category/paper-bags/' },
+        { label: '貼紙訂製', href: '/zh-hk/category/stickers/' },
       ],
     },
     faq: [
@@ -245,10 +256,19 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
     buyingGuide: {
       title: 'Packaging Buying Guide',
       paragraphs: [
-        'When choosing packaging, first clarify your product\'s purpose and target audience. E-commerce products need durable corrugated cartons; beauty brands suit premium white card boxes; food products require food-grade materials with proper certifications.',
-        'Next, consider your budget and quantity. Small-batch testing can use digitally printed color boxes (from 50 units); large-volume production benefits from offset printing for cost savings. Our consultants recommend the best solution based on your budget and timeline.',
-        'Finally, don\'t overlook design details. Great packaging communicates brand identity within 3 seconds. We offer free design consultation covering color psychology to structural mechanics, ensuring your packaging is both beautiful and functional.',
-        'When operating e-commerce, retail, or gift lines in Hong Kong, long-tail searches often include "Hong Kong packaging box printing," "custom paper box," and "small quantity gift box." Regardless of whether your store is on Hong Kong Island, Kowloon, or in the New Territories, locking down the purpose (shipping protection / unboxing experience / food compliance) first will help narrow down box styles and paper materials faster, and align delivery timelines and budget with our consultants.',
+        'Custom packaging boxes start with one decision: is this box for shipping protection or unboxing experience? That answer picks the style, and everything else follows. Color boxes start at 50 units, standard styles at 100, with free dieline design and 3-day production.',
+        'Match box style to product. Corrugated mailer boxes (E/F flute) survive e-commerce shipping; white card folding cartons and magnetic rigid boxes give beauty brands a premium unboxing moment; small two-piece favor boxes start at just 30 units for weddings; window boxes let food products sell themselves on the shelf. Over 20 standard styles, plus fully custom structures.',
+        'Paper stock sets the grade: 300–350gsm white card is the crisp, color-accurate standard for retail boxes; kraft reads eco and organic; E-flute corrugated handles thin retail cartons while F-flute cushions smaller boxes. Exporting to the US or EU? FSC-certified paper keeps customs paperwork simple.',
+        'Food packaging has hard rules. Food-grade paper and non-toxic soy inks are non-negotiable, SGS-tested as standard; bakeries, tea, and supplement brands should add moisture-resistant coatings, and QR codes enable batch traceability. We handle compliance documentation so you do not have to chase labs yourself.',
+        'Finishes are where custom boxes outshine stock packaging: gold or silver foil makes logos gleam, spot UV highlights key art, embossing adds touch, and PVC windows show the product inside. Start with one or two finishes on a free same-day sample before committing to volume.',
+        'Pricing rewards scale: digital printing covers 50–500 units with no plate fees; offset from 1,000 units drops unit costs to as low as cents per box; 5,000+ runs take 5–7 days with tiered discounts. Order 3 weeks ahead of peak seasons like Christmas.',
+        'From quote to doorstep: submit style, dimensions, quantity, stock, and finishes for a 30-second AI quote, approve free dielines and samples, and we ship in 3 days. Free shipping over $99, DHL express in 2–4 days worldwide, plus ISTA compression-test reports for export orders.',
+      ],
+      links: [
+        { label: 'Custom Packaging Box Guide', href: '/en/blog/packaging-buying-guide/' },
+        { label: 'Food Packaging Printing Guide', href: '/en/blog/food-packaging-printing-guide/' },
+        { label: 'Custom Paper Bags', href: '/en/category/paper-bags/' },
+        { label: 'Custom Stickers', href: '/en/category/stickers/' },
       ],
     },
     faq: [
@@ -339,10 +359,19 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
     buyingGuide: {
       title: 'パッケージ選び方ガイド',
       paragraphs: [
-        'パッケージを選ぶ際、まず製品の用途とターゲットを明確にしましょう。EC商品は耐衝撃性のある段ボール箱が必要；美容ブランドには高級感のある白カードボックスが適しています；食品は食品グレードの材質と適切な認証が必須です。',
-        '次に予算と数量を考慮します。小ロットの試作にはデジタル印刷のカラーボックス（50個から）が最適；大量生産にはオフセット印刷でコストを抑えられます。当社のコンシェルジュが予算と納期に応じて最適なソリューションをご提案します。',
-        '最後に、デザインのディテールを見逃さないでください。優れたパッケージは3秒以内にブランド情報を伝えます。色彩心理学から構造力学まで、無料デザイン相談で美しく実用的なパッケージを実現します。',
-        '香港でEC、小売、ギフト事業を展開する場合、長尾キーワードには「香港 パッケージ印刷」「紙箱 オーダー」「ギフト箱 小ロット」などが含まれます。店舗が香港島、九龍、新界のどこでも、まず用途（輸送保護／開封体験／食品規格）を絞り込めば、箱型と紙材を素早く絞り込み、納期と予算をコンシェルジュと合わせられます。',
+        'オリジナルパッケージ・箱の印刷は「輸送保護か、開封体験か」を最初に決めることが全て。カラーボックスは50個から、標準タイプは100個からの小ロット対応。無料の抜き型設計付き、3日生産の短納期です。',
+        '箱型は商品に合わせて。段ボールのメーラーボックス（E/Fフルート）はEC発送に強く、白カードの組み箱やマグネット式化粧箱はコスメブランドの開封体験を演出。キャラメル型や窓付き箱は食品の店頭訴求に。20種以上の定型＋完全カスタムに対応します。',
+        '用紙は300–350g白カードが発色・強度の標準。クラフト紙はエコ・オーガニックな印象、Eフルートは薄手の化粧箱、Fフルートは小箱の緩衝に。欧米輸出にはFSC認証紙が通関手続きをスムーズにします。',
+        '食品パッケージには厳格なルールがあります。食品グレード紙と無毒の大豆インクは必須で、SGS検査済み。ベーカリーや茶葉、サプリには防湿コーティングを推奨。QRコードでロット追跡も可能。コンプライアンス書類もサポートします。',
+        '加工は差別化の鍵。金銀箔でロゴに輝き、スポットUVでポイント強調、エンボスで立体感、PVC窓で中身をアピール。無料の当日サンプルで1–2種の加工を実物確認してから量産を決めるのが安心です。',
+        '価格は数量でお得に。デジタル印刷は50–500個で製版代不要、オフセットは1,000個から単価大幅ダウン、5,000個以上は5–7日＋段階割引。クリスマスや歳末などの繁忙期は3週間前のご注文が安心です。',
+        'ご注文の流れ：箱型・展開寸法・数量・用紙・加工を入力し30秒AI見積もり。無料の抜き型設計とサンプル確認後、3日で出荷。日本全国へ配送、輸出向けISTA圧縮テストレポートにも対応します。',
+      ],
+      links: [
+        { label: 'パッケージ箱オーダーガイド', href: '/ja/blog/packaging-box-custom-guide/' },
+        { label: '化粧品パッケージ印刷', href: '/ja/blog/cosmetics-packaging-box-printing-guide/' },
+        { label: '紙袋 印刷', href: '/ja/category/paper-bags/' },
+        { label: 'ステッカー印刷', href: '/ja/category/stickers/' },
       ],
     },
     faq: [
@@ -1305,10 +1334,20 @@ const menusContent: Record<string, CategoryLocaleContent> = {
     buyingGuide: {
       title: '餐牌選購指南',
       paragraphs: [
-        '選擇餐牌材質時，首先要考慮餐廳類型和使用頻率。快餐店和茶餐廳推薦 PVC 餐牌，防水防油且經濟；西餐廳和甜品店推薦過膠餐牌，色彩鮮豔且易清潔；高級餐廳推薦皮革或木質餐牌，提升品牌格調。',
-        '餐牌設計要遵循食物心理學原則。將高利潤菜品放在視覺焦點位置（右上角或中心）；使用高品質食物照片可提升點餐率 30% 以上；避免過多文字，每道菜控制在 20 字以內。我們的設計師深谙這些原則。',
-        '考慮到疫情後的無接觸趨勢，建議在實體餐牌上添加 QR Code 電子菜單。顧客掃描後可查看完整菜單、圖片和營養信息，減少實體餐牌的更換頻率和印刷成本。',
-        '香港餐飲常用搜尋包含「餐牌印刷 香港」「防水餐牌」「PVC Menu」；深水埗、旺角、銅鑼灣、將軍澳等商圈對耐用與油污清潔要求高，選材時宜同步考慮晚市翻台效率與是否需要分店版本／價目更新。',
+        '餐牌印刷第一步唔係揀款，而係答三條問題：邊類餐廳、幾耐換一次、使唔使防水？答案決定材質同印刷方式。數碼印刷 10 份起、即日可取；柯式 100 份起更抵印，全港順豐送貨，茶餐廳、酒樓、咖啡店都啱用。',
+        '茶餐廳同快餐店日日翻台、油煙湯汁多，餐牌訂製首選 PVC 防水餐牌（IPX4 等級），污糟咗濕布一抹就得，一年唔使換；想慳成本可用 300g 銅版紙過啞膠，防油又挺身，單張成本低至 HK$3–5。',
+        '酒樓、西餐廳同甜品店講究格調，建議用過膠餐牌或皮面硬殼餐牌：內頁 250g 銅版紙過光膠，色彩鮮豔；封面可燙金店名，配上釘裝或圈裝，客人一上手就感受到檔次。菜單印刷仲可以做中英雙語對照排版。',
+        '餐牌設計有食物心理學竅門：高利潤菜式放右上角視覺焦點，招牌菜加框或星標，高質食物相可提升點餐率 30% 以上；每道菜描述控制在 20 字內，價錢唔好排成一列等客人逐格比較。我哋設計師可免費幫你執靚個版。',
+        '換季、加餸、改價係餐飲常態，建議主餐牌用耐用 PVC 長用，季節菜式另印細張插頁或 A4 單張餐牌，改價只需重印插頁，成本慳一半；加個 QR Code 連電子菜單，晚市繁忙時間客人自己掃碼睇餸，減輕樓面壓力。',
+        '好多老闆搜「餐牌印刷」「菜單印刷」時最怕兩樣嘢：印出嚟色差大、用唔夠兩個月就殘。我哋用食品級油墨同加厚過膠，印前免費數碼打樣對色，顏色唔啱唔開印，呢個承諾寫明喺報價單度。',
+        '唔同場景配唔同款：茶餐廳用 PVC 插袋式，酒樓用硬殼釘裝大菜牌，咖啡店用牛皮紙單張夾木板，外賣店用厚卡紙枱面立牌。開張旺季（年尾、暑假前）建議提早兩星期落單，預留執相改稿時間。',
+        '落單流程：WhatsApp 傳店名同菜式數量 → 30 秒 AI 報價 → 免費排版建議 → 數碼件即日交、柯式 2–3 天。深水埗、旺角、銅鑼灣等旺區客戶可安排順豐即日件；連鎖分店可一次過印分店版本，各自價目都搞得掂，開張前仲可以同宣傳單張一齊落單慳時間。',
+      ],
+      links: [
+        { label: '餐牌印刷指南', href: '/zh-hk/blog/restaurant-menu-printing-guide/' },
+        { label: '開業宣傳單張印刷', href: '/zh-hk/blog/restaurant-opening-flyer-printing-guide/' },
+        { label: '宣傳單張印刷', href: '/zh-hk/category/flyers/' },
+        { label: '利是封印刷', href: '/zh-hk/category/red-packets/' },
       ],
     },
     faq: [
@@ -1399,10 +1438,18 @@ const menusContent: Record<string, CategoryLocaleContent> = {
     buyingGuide: {
       title: 'Menu Buying Guide',
       paragraphs: [
-        'When choosing menu materials, first consider restaurant type and usage frequency. Fast food and cha chaan teng suit PVC menus — waterproof, oil-resistant, and economical. Western restaurants and dessert shops suit laminated menus — vibrant colors and easy to clean. Fine dining benefits from leather or wooden menus for elevated brand perception.',
-        'Menu design should follow food psychology principles. Place high-margin dishes at visual focal points (top-right or center). High-quality food photos can increase order rates by 30%+. Keep text under 20 characters per dish. Our designers are well-versed in these principles.',
-        'Considering post-pandemic contactless trends, we recommend adding QR code digital menus to physical menus. Customers scan to view full menus, photos, and nutritional information — reducing physical menu replacement frequency and printing costs.',
-        'Hong Kong F&B commonly searches for "menu printing Hong Kong," "waterproof menu," and "PVC Menu." Districts like Sham Shui Po, Mong Kok, Causeway Bay, and Tseung Kwan O have high durability and grease-cleaning requirements. When selecting materials, simultaneously consider evening turnover efficiency and whether branch versions or price updates are needed.',
+        'Restaurant menu printing starts with three questions: what type of restaurant, how often do you update, and does it need to be waterproof? Your answers pick the material. Digital printing starts at just 10 copies with same-day turnaround; offset at 100+ copies drives unit costs down to a few dollars each.',
+        'High-turnover casual spots — diners, fast food, bubble tea — need waterproof PVC menus rated IPX4. Grease and soup wipe off with a damp cloth, and a single set lasts a year or more. On a tighter budget, 300gsm art paper with matte lamination resists oil and stays flat at just a few dollars per menu.',
+        'Upscale restaurants, steakhouses, and dessert cafés should invest in laminated or hardcover leather-look menus: 250gsm laminated inner pages make food photography pop, while a foil-stamped cover with stitched or ring binding signals quality the moment guests sit down. Bilingual layouts are fully supported.',
+        'Menu design follows food psychology. Place high-margin dishes at the visual hot spots (top-right and center), tag signatures with boxes or stars, and use professional food photography — good photos lift order rates by 30% or more. Keep descriptions under 20 words per dish, and never line prices up in a single column for easy comparison.',
+        'Menus change; your printing strategy should too. Keep a durable PVC main menu year-round, print seasonal specials as slim inserts, and add a QR code to a digital menu so guests can browse on their phones. Reprinting an insert costs half of a full menu redo.',
+        'Ordering takes minutes: send your dish list, get a 30-second AI quote, and our designers lay out your menu free of charge. Digital orders ship same day, offset in 2–3 days. Free shipping over $99 and DHL 2–4 day express worldwide mean your opening date is never at risk.',
+      ],
+      links: [
+        { label: 'Menu Printing Guide', href: '/en/blog/menu-buying-guide/' },
+        { label: 'Restaurant Opening Flyer Guide', href: '/en/blog/restaurant-opening-flyer-printing-guide/' },
+        { label: 'Flyer Printing', href: '/en/category/flyers/' },
+        { label: 'Poster Printing', href: '/en/category/posters/' },
       ],
     },
     faq: [
@@ -1493,10 +1540,18 @@ const menusContent: Record<string, CategoryLocaleContent> = {
     buyingGuide: {
       title: 'メニュー選び方ガイド',
       paragraphs: [
-        'メニューの材質を選ぶ際、まずレストランのタイプと使用頻度を考慮しましょう。ファストフードや茶餐廳にはPVCメニューがおすすめで、防水防油で手頃です。洋食やスイーツ店にはラミネートメニューが適し、発色が鮮やかでお手入れが簡単です。高級レストランには革や木製メニューが最適で、ブランドの格を高めます。',
-        'メニューデザインはフード心理学の原則に従うべきです。高利益メニューを視覚的な焦点（右上や中央）に配置します。高品質なフード写真は注文率を30%以上向上させます。各料理の説明は20文字以内に抑えます。当社のデザイナーはこれらの原則を熟知しています。',
-        'パンデミック後の非接触トレンドを考慮し、実体メニューにQRコード電子メニューを追加することをおすすめします。顧客はスキャンしてフルメニュー、写真、栄養情報を閲覧でき、実体メニューの交換頻度と印刷コストを削減できます。',
-        '香港の外食業界では「餐牌印刷 香港」「防水餐牌」「PVC Menu」などの検索が一般的です。深水埗、旺角、銅鑼湾、将軍澳などの商圈では耐久性と油汚れ清掃性の要求が高く、選材時に晩市翻台効率と分店バージョン／価格更新の要否を同時に考慮する必要があります。',
+        'メニュー印刷の第一歩は「店舗タイプ・更新頻度・防水の要不要」の3つを決めること。デジタル印刷は10部から当日仕上げ、オフセットは100部からで単価を大幅に抑えられます。日本全国配送、無料デザイン対応です。',
+        '回転率の高い大衆食堂やファストフードにはIPX4防水のPVCメニューが最適。油やスープは濡れ布で拭くだけで、1年以上使えます。低予算なら300gコート紙にマットラミネート加工で、耐油性と丈夫さを両立できます。',
+        '高級レストランやスイーツ店にはラミネート加工や合皮ハードカバーがおすすめ。250gラミネート内ページで料理写真が美しく映え、箔押しの表紙と製本が高級感を演出。日英バイリンガルレイアウトにも対応します。',
+        'デザインはフード心理学に基づいて。高利益メニューを右上や中央の視線スポットに配置し、看板料理を枠や星で強調。プロの料理写真で注文率が30%以上向上します。説明文は1品20文字以内に抑えましょう。',
+        '季節メニューは戦略的に。丈夫なPVCのメインは通年使用し、季節限定品は薄い差し込みページで印刷。差し替えだけなら全ページ再印刷の半分のコスト。QRコードでデジタルメニューへの連携も可能です。',
+        'ご注文は料理リストを送るだけ。30秒のAI見積もり後、デザイナーが無料でレイアウト。デジタル便は当日、オフセットは2–3日で出荷。短納期・小ロットで開店日にも間に合います。',
+      ],
+      links: [
+        { label: 'メニュー印刷ガイド', href: '/ja/blog/restaurant-menu-printing-guide/' },
+        { label: '開店チラシ印刷ガイド', href: '/ja/blog/restaurant-opening-flyer-printing-guide/' },
+        { label: 'チラシ印刷', href: '/ja/category/flyers/' },
+        { label: 'ステッカー印刷', href: '/ja/category/stickers/' },
       ],
     },
     faq: [
@@ -2856,10 +2911,20 @@ const stickersContent: Record<string, CategoryLocaleContent> = {
     buyingGuide: {
       title: '貼紙選購指南',
       paragraphs: [
-        '選擇貼紙材質時，首先要考慮使用環境。室內乾燥環境推薦銅版紙貼紙，經濟且色彩鮮豔；潮濕或戶外環境必須選擇 PVC 防水貼紙，確保不褪色不剝落；需要防偽功能的場景推薦易碎貼紙，撕毀即碎無法復原。',
-        '形狀選擇影響品牌形象。標準矩形適合一般標籤；圓角矩形更柔和現代；異形模切（如品牌吉祥物輪廓）極具辨識度，但需額外製作刀模。建議新品牌先從標準形狀開始，驗證市場反應後再投資異形刀模。',
-        '背膠選擇常被忽略但非常重要。永久膠適合長期標籤；可移除膠適合臨時促銷和活動；3M 強力膠適合粗糙表面和戶外使用；低溫膠適合冷凍食品包裝。選擇錯誤的背膠可能導致貼紙脫落或殘膠難清。',
-        '零售與電商常用「貼紙 印刷 香港」「防水 標籤」「透明 貼紙」等組合詞；若產品會經葵涌倉或門市陳列，需同步考慮冷鏈、戶外曝曬或金屬曲面黏貼，並預留批次色差容忍值。',
+        '貼紙印刷揀款一句講晒：室內用銅版紙、戶外用 PVC 防水、要撕得甩用可移貼紙、要通透感用透明貼。50 張起印、即日可交，最細 25×25mm 都印到；落單前答埋「貼喺邊、貼幾耐」兩條問題，就唔會揀錯料。',
+        '銅版紙貼紙最經濟，色彩鮮豔，適合包裝標籤、封口貼同贈品貼；PVC 防水貼紙耐曬耐雨，係戶外貼紙首選，過膠後戶外可用 2–3 年唔褪色；透明貼（透明 PVC/PP）貼玻璃、杯身、樽裝產品通透無白邊，質感即時升級。',
+        '可移貼紙用可移除背膠，撕落嚟唔留殘膠，最啱促銷價錢牌、期間限定活動同櫥窗佈置；相反永久膠貼實咗就難撕，適合長期產品標籤；粗糙面或金屬曲面就要用 3M 強力膠。背膠揀錯，貼紙唔係甩就係留膠漬。',
+        '形狀方面，標準圓形、方形免刀模費最抵印；異形模切（吉祥物輪廓、品牌 LOGO 外形）辨識度最高，首次只需收刀模工本費，之後翻印唔使再收。貼紙訂製仲可以做半穿（kiss-cut），一張紙撕起每個獨立圖案。',
+        '工藝加乘：過啞膠高級防刮、過光膠鮮豔防水、燙金燙銀提升奢華感、擊凸做立體觸感。1,000 張以上柯式印刷單價可低至 HK$0.1/張；可變數據印刷仲可以每張印唔同序號、QR Code 或會員名。',
+        '行業場景速配：餐飲外賣用防水封口貼，美妝護膚用透明貼做樽身標籤，零售精品用燙金貼做禮盒封口，寵物食品用耐油標籤，文創 IP 用異形模切貼紙做周邊。我哋有各行業現成規格表，照住揀就得。',
+        '搜「貼紙訂製」嘅客戶最常問色差同起訂量：數碼印刷 50 張起免製版，打樣當日完成；柯式 1,000 張起更抵。戶外貼紙記得指明要 UV 油墨加過膠，先頂得住香港夏天嘅日曬雨淋。',
+        '落單流程：提交尺寸、數量、材質 → 30 秒 AI 報價 → 免費檢查檔案（CMYK、300dpi、出血 3mm）→ 數碼即日、柯式 2–3 天交貨。急單順豐即日派件，港九新界全覆蓋；長期合作客戶可分批出貨，大量訂單仲可以分袋分包，方便門市派發。',
+      ],
+      links: [
+        { label: '貼紙訂製指南', href: '/zh-hk/blog/sticker-guide/' },
+        { label: '寵物食品貼紙印刷', href: '/zh-hk/blog/pet-food-sticker-printing-guide/' },
+        { label: '紙袋訂製', href: '/zh-hk/category/paper-bags/' },
+        { label: '包裝盒印刷', href: '/zh-hk/category/packaging/' },
       ],
     },
     faq: [
@@ -2950,10 +3015,18 @@ const stickersContent: Record<string, CategoryLocaleContent> = {
     buyingGuide: {
       title: 'Sticker Buying Guide',
       paragraphs: [
-        'When choosing sticker materials, first consider the environment. Dry indoor settings suit art paper stickers — economical with vibrant colors. Wet or outdoor environments require waterproof PVC stickers to prevent fading and peeling. Anti-fraud applications benefit from destructible stickers that break apart when removed.',
-        'Shape choice impacts brand image. Standard rectangles suit general labels; rounded corners feel softer and more modern; irregular die-cuts (like brand mascot outlines) offer high recognition but require custom dies. We recommend startups begin with standard shapes, then invest in custom dies after market validation.',
-        'Adhesive choice is often overlooked but critical. Permanent adhesive suits long-term labels; removable adhesive suits temporary promotions and events; 3M heavy-duty suits rough surfaces and outdoor use; low-temp adhesive suits frozen food packaging. Incorrect adhesive choice leads to peeling or difficult residue removal.',
-        'Retail and e-commerce businesses in Hong Kong commonly search for "sticker printing Hong Kong," "waterproof labels," and "clear stickers." If products will pass through Kwai Chung warehouses or retail displays, consider cold chain, outdoor UV exposure, or curved metal surfaces simultaneously, and allow for batch color tolerance.',
+        'Custom stickers in one sentence: art paper for indoors, waterproof vinyl for outdoors, removable adhesive for temporary promos, and clear stickers for a no-label look. Order from just 50 pieces with same-day digital turnaround — answer "where will it stick, and for how long?" and you will never pick the wrong stock.',
+        'Art paper stickers are the budget workhorse — vivid color, perfect for packaging seals and giveaway stickers. Waterproof vinyl stickers survive sun, rain, and dishwashers; laminated versions last 2–3 years outdoors. Clear stickers (transparent vinyl or PP) disappear onto glass, bottles, and jars with no white edge — an instant premium feel.',
+        'Adhesive matters more than most buyers expect. Removable stickers peel cleanly with zero residue — ideal for promo pricing, limited-time campaigns, and window displays. Permanent adhesive locks in for long-term product labels, while 3M heavy-duty grips rough or curved metal surfaces. The wrong adhesive means peeling corners or stubborn glue marks.',
+        'Die-cut shapes are where brands win. Standard circles and rectangles need no die fee; custom die-cut shapes — your mascot, your logo outline — maximize recognition for a one-time die cost. Kiss-cut sheets let customers peel each design individually, perfect for sticker packs and merch.',
+        'Finishes multiply impact: matte lamination for a premium scratch-resistant feel, gloss for waterproof vibrancy, gold or silver foil for luxury, embossing for texture. Offset runs of 1,000+ bring unit costs down to pennies, and variable data printing can put a unique serial number, QR code, or name on every sticker.',
+        'Order in minutes: pick size, quantity, and material for a 30-second AI quote, upload art or use free design help, and approve a digital proof. Digital prints ship same day, offset in 2–3 days. Free shipping over $99, DHL 2–4 day worldwide delivery, and split-batch shipping for multi-location brands.',
+      ],
+      links: [
+        { label: 'Custom Sticker Guide', href: '/en/blog/sticker-buying-guide/' },
+        { label: 'Product Label Printing Guide', href: '/en/blog/product-label-printing-guide/' },
+        { label: 'Custom Paper Bags', href: '/en/category/paper-bags/' },
+        { label: 'Custom Packaging', href: '/en/category/packaging/' },
       ],
     },
     faq: [
@@ -3044,10 +3117,18 @@ const stickersContent: Record<string, CategoryLocaleContent> = {
     buyingGuide: {
       title: 'シール選び方ガイド',
       paragraphs: [
-        'シールの材質を選ぶ際、まず使用環境を考慮しましょう。屋内の乾燥した環境にはコート紙シールがおすすめで、手頃でありながら発色が鮮やかです。湿気や屋外の環境には防水PVCシールが必要で、褪色や剥がれを防ぎます。偽造防止が必要なシーンには、剥がすと破損するセキュリティシールが最適です。',
-        '形状の選択はブランドイメージに影響します。標準の四角形は一般的なラベルに適しています。角丸はより柔らかくモダンな印象を与えます。異形の抜き型（ブランドマスコットの輪郭など）は高い認知度を提供しますが、カスタム抜き型が必要です。スタートアップには、まず標準形状から始め、市場の反応を確認してからカスタム抜き型に投資することをおすすめします。',
-        '粘着剤の選択は見落とされがちですが、非常に重要です。永久粘着剤は長期ラベルに適しています。剥がしやすい粘着剤は臨時プロモーションやイベントに適しています。3M強力粘着剤は粗い表面や屋外使用に適しています。低温用粘着剤は冷凍食品包装に適しています。間違った粘着剤の選択は、剥がれや残りの除去困難を引き起こす可能性があります。',
-        '香港の小売・EC業界では「貼紙 印刷 香港」「防水 標籤」「透明 貼紙」などの検索が一般的です。製品が葵涌倉庫や店頭陳列を経由する場合、冷凍チェーン、屋外紫外線、金属曲面への貼付を同時に考慮し、ロット間の色差許容値を予め確保しておく必要があります。',
+        'オリジナルステッカーは「屋内はコート紙、屋外は防水ビニール、仮止めは再剥離、透明感はクリア素材」と覚えればOK。50枚からの小ロット、当日デジタル仕上げ対応。「どこに・どのくらい貼るか」を決めれば素材選びに迷いません。',
+        'コート紙ステッカーは発色が良く低価格で、パッケージの封かんやノベルティに最適。防水ビニールは紫外線・雨・食洗機に強く、ラミネート加工で屋外2–3年の耐候性。クリアステッカーはガラスやボトルに白縁なく貼れ、高級感がアップします。',
+        '粘着剤選びは意外と重要。再剥離タイプは糊残りゼロで、セール価格札や期間限定キャンペーン、ウィンドウ装飾に最適。強粘着は長期の商品ラベル向け、3M超強力タイプは粗面や金属曲面に対応します。',
+        '形はブランドの武器。丸・四角など定型は型代不要でお得。ロゴやキャラクター輪郭のダイカット（抜き型）は初回の型代のみで認知度抜群。キスカット（半抜き）シートなら1枚ずつ剥がせて、ステッカーパックやグッズに最適です。',
+        '加工で印象を強化：マットラミネートで高級感と耐傷性、グロスで防水と鮮やかさ、金銀箔でラグジュアリー、エンボスで立体感。1,000枚以上のオフセットなら単価は数円レベル。可変データ印刷でシリアル番号やQRコードを1枚ずつ変えられます。',
+        'ご注文はサイズ・数量・素材を選んで30秒AI見積もり。データ入稿または無料デザインサポート後、校正確認で出稿。デジタルは当日、オフセットは2–3日出荷。日本全国配送、複数拠点への分割納品にも対応します。',
+      ],
+      links: [
+        { label: 'ステッカー印刷ガイド', href: '/ja/blog/sticker-guide/' },
+        { label: 'IPキャラステッカー印刷', href: '/ja/blog/ip-character-sticker-printing-guide/' },
+        { label: '紙袋 印刷', href: '/ja/category/paper-bags/' },
+        { label: 'パッケージ印刷', href: '/ja/category/packaging/' },
       ],
     },
     faq: [
@@ -3720,10 +3801,20 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
     buyingGuide: {
       title: '紙袋選購指南',
       paragraphs: [
-        '選擇紙袋材質時，首先要考慮品牌定位和用途。白卡紙是最通用的選擇，潔白挺括且印刷效果極佳，適合大多數零售品牌；牛皮紙傳遞環保和文創氣質，適合咖啡、手作和有機品牌；黑卡紙神秘高級，燙金效果極佳，是奢侈品牌的首選；珠光紙和紋理紙適合特殊節慶和高端活動。',
-        '尺寸選擇要根據內裝商品的大小。小號（150×80×200mm）適合化妝品、首飾和小禮品；中號（220×100×280mm）是最常用的購物袋尺寸，適合服裝、書籍和一般商品；大號（320×120×380mm）適合大衣、禮盒和大型商品。如果不確定，建議選擇中號，適用範圍最廣。',
-        '提手選擇影響紙袋的質感和使用體驗。棉繩是最經濟的選擇，結實耐用；紙繩環保且與牛皮紙袋風格一致；絲帶提手柔軟優雅，適合禮品袋；皮繩復古質感，適合文創品牌。提手的顏色應與紙袋和品牌的整體色調協調。',
-        '本地長尾搜尋包括「紙袋 印刷 香港」「牛皮紙袋 訂製」「婚禮 回禮 紙袋」；若門市分布在港島奢侈品街區或新界 outlet，宜統一手挽長度與承重規格，並在報價時說明是否需要分店地址分批出貨。',
+        '紙袋訂製其實好簡單：只要鎖定材質、尺寸、提手三個規格，100 個起印，3–5 天即可交貨，港九新界順豐直送到門。無論係門市購物袋、活動贈品袋，定係紙袋批發轉售，第一步都係同顧問對齊呢三項，報價先至又快又準。',
+        '紙袋印刷最常用白卡紙（250–300g），潔白挺括、四色印刷效果最靚，適合服裝、美妝同精品零售；牛皮紙（120–150g）自帶環保文創感，咖啡店、手作品牌最常用；黑卡紙配燙金係珠寶、奢侈品嘅首選。印紙袋前可以先攞免費紙樣上手掂一掂。',
+        '尺寸按內裝商品決定：細袋（150×80×200mm）裝化妝品、首飾；中袋（220×100×280mm）係最通用嘅購物袋，衫褲書籍都啱；大袋（320×120×380mm）裝大褸、禮盒。訂做紙袋如果唔肯定尺寸，攞件貨實物放入樣辦袋試裝最穩陣。',
+        '提手決定成個袋嘅質感：棉繩經濟結實，承重 3–5kg；紙繩同牛皮紙袋最夾；絲帶柔軟優雅，婚禮回禮袋必選；加厚款承重可達 8–10kg，酒類、玻璃裝都托得起。提手顏色記得同品牌主色協調。',
+        '紙袋訂造嘅印刷工藝按預算揀：四色柯式印刷 1,000 個以上最抵，單價低至 HK$1.5/個；數碼印刷 100 個起、免製版，啱新店試款；想再升級可加燙金、UV 或擊凸 LOGO，成本每個加 HK$0.3–0.8，但開袋第一印象完全唔同。',
+        '好多客戶搜「紙袋訂製」「印紙袋」「紙袋訂做」時最關心起訂量同單價——呢度直接答你：數碼 100 個起、柯式 1,000 個起，5,000 個以上再有階梯折扣。旺季（聖誕、農曆新年）建議提早 2–3 星期落單，預留打樣修改時間。',
+        '唔同行業有唔同袋路：服裝店用白卡中袋加棉繩，珠寶鐘錶用黑卡細袋配絲帶，婚禮回禮用珠光紙燙新人姓名，茶飲烘焙用牛皮紙平口袋最慳成本。我哋顧問會按你行業直接推薦現成規格，慳返自己摸索時間。',
+        '訂做紙袋流程好直接：WhatsApp 或網站提交尺寸數量 → 30 秒 AI 即時報價 → 免費打樣確認 → 3–5 天出貨。急單可安排 2 天快印，順豐即日派件覆蓋港九新界；紙袋批發客戶仲可以分批出貨到唔同分店，慳倉又慳運費。',
+      ],
+      links: [
+        { label: '紙袋訂製完全指南', href: '/zh-hk/blog/paper-bag-printing-guide/' },
+        { label: '婚禮回禮紙袋印刷', href: '/zh-hk/blog/wedding-favor-bag-printing-guide/' },
+        { label: '包裝盒訂製', href: '/zh-hk/category/packaging/' },
+        { label: '貼紙印刷', href: '/zh-hk/category/stickers/' },
       ],
     },
     faq: [
@@ -3814,10 +3905,18 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
     buyingGuide: {
       title: 'Paper Bag Buying Guide',
       paragraphs: [
-        'When choosing paper bag materials, first consider brand positioning and usage. White card is the most versatile choice — clean, stiff, with excellent printing results, suitable for most retail brands. Kraft paper conveys eco-friendly and creative vibes, ideal for coffee, handmade, and organic brands. Black card is mysterious and premium with excellent foil stamping effects — the top choice for luxury brands. Pearl and textured papers suit special holidays and premium events.',
-        'Size selection depends on the items being carried. Small (150×80×200mm) suits cosmetics, jewelry, and small gifts. Medium (220×100×280mm) is the most common shopping bag size for clothing, books, and general merchandise. Large (320×120×380mm) suits coats, gift boxes, and large items. If unsure, medium is recommended as the most versatile option.',
-        "Handle choice affects bag feel and user experience. Cotton rope is the most economical — sturdy and durable. Paper rope is eco-friendly and consistent with kraft bag style. Ribbon handles are soft and elegant for gift bags. Leather cord offers vintage feel for creative brands. Handle color should coordinate with the bag and brand's overall color palette.",
-        'Local long-tail searches include "paper bag printing Hong Kong," "kraft paper bag custom," and "wedding favor paper bag." If stores are distributed across Hong Kong Island luxury districts or New Territory outlets, unify handle length and load-bearing specifications, and specify during quoting whether branch addresses require split shipments.',
+        'Custom paper bags come down to three decisions: paper, size, and handle. Lock those in and your quote is instant — low minimums from 100 bags, free design support, and worldwide DHL delivery in 2–4 days. Whether you run a boutique, café, or online store, this guide gets you from idea to doorstep fast.',
+        'Paper choice sets the tone. White card (250–300gsm) is crisp and prints full-color artwork beautifully — the default for apparel and beauty retail. Brown kraft (120–150gsm) signals eco-friendly and artisan, perfect for coffee shops and handmade brands. Black card with gold foil stamping is the luxury standard for jewelry and cosmetics.',
+        'Size by what goes inside. Small (150×80×200mm) fits cosmetics and jewelry; medium (220×100×280mm) is the universal shopping bag for clothing and books; large (320×120×380mm) handles coats and gift boxes. Unsure? Order a free sample and test-fit your actual products before committing.',
+        'Handles carry more than weight — they carry perception. Cotton rope is sturdy and economical (3–5kg load), twisted paper matches kraft bags, satin ribbon elevates gift bags, and reinforced builds hold 8–10kg for bottles or glassware. Match handle color to your brand palette for a finished look.',
+        'Pricing is volume-friendly: digital printing from 100 bags with no plate fees is ideal for testing designs, while offset runs of 1,000+ drop unit costs dramatically — think cents per bag at scale. Add foil stamping, spot UV, or embossing for a modest per-bag upgrade that transforms first impressions.',
+        'Ordering is simple: upload your logo or use our free design service, approve a free digital proof, and we print in 3–5 business days. Orders over $99 ship free, with DHL express reaching the US, UK, and Australia in 2–4 days. Split shipments to multiple store locations are available on request.',
+      ],
+      links: [
+        { label: 'Custom Paper Bag Guide', href: '/en/blog/paper-bag-buying-guide/' },
+        { label: 'Retail Shopping Bag Printing', href: '/en/blog/apparel-shopping-bag-printing-guide/' },
+        { label: 'Custom Packaging Boxes', href: '/en/category/packaging/' },
+        { label: 'Custom Stickers', href: '/en/category/stickers/' },
       ],
     },
     faq: [
@@ -3908,10 +4007,18 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
     buyingGuide: {
       title: '紙袋選び方ガイド',
       paragraphs: [
-        '紙袋の材質を選ぶ際、まずブランドのポジショニングと用途を考慮しましょう。白カード紙は最も多用途な選択で、白くかし性が良く印刷効果が抜群です。ほとんどの小売ブランドに適しています。クラフト紙は環境とクリエイティブな雰囲気を伝え、カフェ、手作り、有機ブランドに適しています。黒カード紙は神秘的で高級感があり、箔押し効果が抜群なので、ラグジュアリーブランドの第一選択です。パール紙やテクスチャ紙は特別な祝祭や高級イベントに適しています。',
-        'サイズの選択は内包する商品の大きさに依存します。小(150×80×200mm)は化粧品、ジュエリー、小さなギフトに適しています。中(220×100×280mm)は最も一般的なショッピングバッグのサイズで、洋服、本、一般商品に適しています。大(320×120×380mm)はコート、ギフトボックス、大型商品に適しています。不安な場合は中サイズをおすすめします。適用範囲が最も広いです。',
-        '取っ手の選択は紙袋の質感と使用体験に影響します。綿紐は最も経済的で、頑丈で耐久性があります。紙紐は環境に優しく、クラフト紙袋のスタイルと一致します。リボンの取っ手は柔らかく優雅で、ギフトバッグに適しています。革紐はレトロな質感で、クリエイティブブランドに適しています。取っ手の色は紙袋とブランドの全体的な色調と調和するべきです。',
-        '本地の長尾検索には「紙袋 印刷 香港」「牛皮紙袋 訂製」「婚禮 回禮 紙袋」などが含まれます。店舗が香港島の高級品街区や新界のアウトレットに分散している場合、手提げの長さと耐荷重規格を統一し、見積もり時に分店住所の分批出荷が必要かどうかを明記してください。',
+        'オリジナル紙袋の印刷は「用紙・サイズ・持ち手」の3点を決めれば完了です。100枚からの小ロット対応、無料デザインサポート付き、日本全国へ配送します。ブティック、カフェ、ネットショップなど、用途別の選び方をご紹介します。',
+        '用紙はブランドの印象を決めます。白カード紙（250–300g）は発色が美しくアパレルやコスメに最適。クラフト紙（120–150g）はエコでナチュラルな雰囲気でカフェや雑貨に人気。黒カード紙に箔押しを施せば、ジュエリーや高級ブランド向けの格調高い仕上がりになります。',
+        'サイズは中身に合わせて。S（150×80×200mm）は化粧品やアクセサリー、M（220×100×280mm）は衣料・書籍に使える万能サイズ、L（320×120×380mm）はコートやギフトボックス向け。迷ったら無料サンプルで実物を試し入れするのが確実です。',
+        '持ち手は綿紐（耐荷重3–5kgで経済的）、紙紐（クラフト袋と好相性）、サテンリボン（ギフト向け）から選択。強化タイプは8–10kgまで対応し、ボトルやガラス製品も安心です。持ち手の色をブランドカラーに合わせると統一感が出ます。',
+        '価格は数量に応じてお得に。デジタル印刷は100枚から製版代不要で試作に最適。1,000枚以上のオフセット印刷なら単価を大幅に削減できます。箔押し・UV・エンボス加工も少量アップで印象を大きく向上させられます。',
+        'ご注文は簡単。ロゴをアップロードするか無料デザインサービスをご利用いただき、無料データ校正後、3–5営業日で印刷。日本全国へ短納期でお届けし、複数店舗への分割納品にも対応します。',
+      ],
+      links: [
+        { label: '紙袋印刷ガイド', href: '/ja/blog/paper-bag-printing-guide/' },
+        { label: 'ギフトバッグ印刷', href: '/ja/blog/wedding-favor-bag-printing-guide/' },
+        { label: 'パッケージ印刷', href: '/ja/category/packaging/' },
+        { label: 'ステッカー印刷', href: '/ja/category/stickers/' },
       ],
     },
     faq: [
