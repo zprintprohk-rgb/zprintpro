@@ -13,6 +13,7 @@ import paperBags from '@/data/price-tables/paper-bags.json';
 import packaging from '@/data/price-tables/packaging.json';
 import flyers from '@/data/price-tables/flyers.json';
 import books from '@/data/price-tables/books.json';
+import stickers from '@/data/price-tables/stickers.json';
 
 export interface PriceTier {
   qty: number;
@@ -31,7 +32,7 @@ interface PriceTable {
   products: PriceTableProduct[];
 }
 
-const TABLES: PriceTable[] = [paperBags, packaging, flyers, books] as unknown as PriceTable[];
+const TABLES: PriceTable[] = [paperBags, packaging, flyers, books, stickers] as unknown as PriceTable[];
 
 const SKU_INDEX: Map<string, PriceTier[]> = (() => {
   const map = new Map<string, PriceTier[]>();

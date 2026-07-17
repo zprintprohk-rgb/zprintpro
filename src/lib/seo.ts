@@ -320,20 +320,21 @@ const categorySeoData: Record<string, {
     // (Free Shipping / Free Proof / No Minimum / Made for US / 5000+ customers)
     // DHL Express 保留 (跨境品牌信任) + FedEx Ground (美国本土配送感)
     titles: {
-      'zh-hk': '貼紙印刷 50張起印 · 防水/透明/異形 食品級FDA合規 | 智印雲',
-      en: 'Custom Stickers Free Shipping · 50 MOQ Die-Cut Vinyl Waterproof | ZprintPro',
-      ja: 'ステッカー印刷 50枚〜 防水・透明・異形 FDA対応 | ZprintPro',
+      // 2026-07-17 GSC CTR 修复: 起价前置 + 免費設計/即日 hook, 机会词 貼紙印刷/貼紙訂製
+      'zh-hk': '貼紙印刷 | HK$0.22起・免費設計・最快即日 | 智印雲 ZprintPro',
+      en: 'Sticker Printing from $0.23 | Free Shipping $99+ | ZprintPro',
+      ja: 'ステッカー印刷｜¥32〜・小ロット・最短即日・無料デザイン｜ZprintPro',
     },
     keywords: {
-      'zh-hk': '貼紙印刷,防水貼紙,標籤貼紙,透明貼紙,圓形貼紙,異形貼紙,產品標籤,食品標籤,電商貼紙,車身貼紙,藥品標籤,GMP認證標籤,保健品標籤,防偽標籤',
+      'zh-hk': '貼紙印刷,貼紙訂製,防水貼紙,標籤貼紙,透明貼紙,圓形貼紙,異形貼紙,產品標籤,食品標籤,電商貼紙,車身貼紙,藥品標籤,GMP認證標籤,保健品標籤,防偽標籤',
       // 加長尾: free shipping / no minimum / made in USA / free proof / small business / bulk discount
       en: 'custom stickers,sticker printing,free shipping stickers,no minimum stickers,die cut stickers,vinyl stickers,waterproof stickers,product labels,round stickers,square stickers,bumper stickers,holographic stickers,clear stickers,stickers made in USA,USA made stickers,free proof stickers,small business stickers,bulk sticker printing,sticker sheets,kiss cut stickers,USA print shop',
       ja: 'シール印刷,ステッカー印刷,防水シール,透明シール,円形シール,ダイカットシール,商品ラベル,食品ラベル,梱包用シール,ホログラムシール,医薬品ラベル,GMPラベル,改ざん防止ラベル',
     },
     descriptions: {
-      'zh-hk': '貼紙印刷 50 張起印. 防水 / 透明 / 異形 / 標籤貼紙, FDA 食品接觸級 + SGS 認證. 30 秒 AI 即時報價 + DHL 全球 2-4 天配送 + ISO 9001 認證 + 4 色柯式印刷.',
-      en: 'Custom stickers with free shipping over $99. Die-cut vinyl, waterproof, FDA-compliant labels from 50 MOQ. Free proofs, no minimum on select items. Made for US small businesses — DHL Express 2-4 day or FedEx Ground. 30-second AI quote, ISO 9001 certified. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
-      ja: 'ステッカー印刷 50 枚から対応. 防水・透明・ダイカット・商品ラベル. FDA 食品接触基準 + SGS 認証. 30 秒 AI 即時見積 + DHL 国際配送 2-4 日 + ISO 9001.',
+      'zh-hk': '貼紙印刷 50 張起印，HK$0.22 起/張。防水 / 透明 / 異形貼紙訂製，FDA 食品接觸級 + SGS 認證。免費設計打稿 2 小時交稿，最快即日出貨，港九新界滿 HK$500 免費順豐速遞。WhatsApp 30 秒即時報價，ISO 9001 認證品質。',
+      en: 'Sticker printing from $0.23, 50 MOQ. Die-cut vinyl, waterproof, FDA-compliant labels with free design proof. Fast 3-5 day production, DHL 2-4 day USA delivery, free shipping $99+. Get a 30-second AI quote.',
+      ja: 'ステッカー印刷 50 枚から、¥32〜。防水・透明・ダイカット・商品ラベル、FDA 食品接触基準対応。無料デザイン校正 2 時間、最短即日発送、日本全国 DHL 2-4 日配送。ISO 9001 認証品質。30 秒 AI 無料見積もり。',
     },
   },
   'flyers': {
@@ -341,10 +342,10 @@ const categorySeoData: Record<string, {
     // 竞品 z-printpro.com 实证: 即日名片印刷 CTR 6.56%, A2 名片 即日 CTR 7.02%, 24小時名片 CTR 4-7%
     // 分散在 nav 独立栏目的反模式已移除, 全部权重归 flyers
     titles: {
-      'zh-hk': '即日宣傳單張印刷 100張起 · A4/A5 數碼快印 + 柯式印刷 加急 24小時 | 智印雲',
-      // 2026-07-09 美国市场优化 v5: 加 Free Shipping + Same-Day + 100 MOQ + Digital sharp hook
-      en: 'Same-Day Flyers Free Shipping · 100 MOQ A4/A5 Digital + Offset | ZprintPro',
-      ja: '即日チラシ印刷 100枚〜 · A4/A5 デジタル+オフセット 急ぎ24時間 | ZprintPro',
+      // 2026-07-17 GSC CTR 修复: 机会词 宣傳單張印刷/宣傳單張 前置
+      'zh-hk': '宣傳單張印刷 | HK$0.25起・免費設計・最快即日 | 智印雲 ZprintPro',
+      en: 'Flyer Printing from $0.40 | Free Shipping $99+ | ZprintPro',
+      ja: 'チラシ印刷｜¥50〜・小ロット・最短即日・無料デザイン｜ZprintPro',
     },
     keywords: {
       // 加長尾: 數碼印刷 / 數碼快印 / 急印傳單 / 即日傳單 / 數位印刷 / 加急傳單 / 短版印刷
@@ -354,66 +355,67 @@ const categorySeoData: Record<string, {
       ja: 'チラシ印刷,フライヤー印刷,即納チラシ,デジタル印刷,オンデマンド印刷,急ぎチラシ,A4チラシ,A5チラシ,A3チラシ,折りパンフレット,開業チラシ,飲食店チラシ,イベントチラシ,不動産チラシ,塾チラシ,ダイレクトメール,短納期チラシ',
     },
     descriptions: {
-      'zh-hk': '即日宣傳單張印刷 100 張起印, A4/A5/A6 摺頁 + 數碼快印 + 柯式印刷. 開業傳單 + 餐廳單張 + 補習社單張 + 24 小時急件. 30 秒 AI 即時報價, 全球 DHL 2-4 天配送, ISO 9001 認證.',
-      // 加 Free Shipping + Made for US + FedEx/DHL
-      en: 'Same-day flyers from 100 MOQ. A4/A5/A6 folded leaflets + digital + offset print. Restaurant, event, grand opening, real estate flyers + 24h rush. Free shipping over $99 to USA. DHL Express 2-4 day or FedEx Ground. 30-second AI quote, ISO 9001. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
-      ja: '即日チラシ印刷 100 枚から対応. A4/A5/A6 折込・二つ折り・デジタル印刷・オフセット印刷. 飲食店・開業・イベントのチラシ + 24 時間特急. 30 秒 AI 即時見積 + DHL 国際配送 2-4 日 + ISO 9001.',
+      'zh-hk': '宣傳單張印刷 100 張起印，HK$0.25 起/張。A4/A5/A6 摺頁宣傳單張 + 數碼快印 + 柯式印刷，開業、餐廳、補習社單張最快即日交貨。免費設計打稿，港九新界滿 HK$500 免費順豐速遞。WhatsApp 30 秒即時報價，ISO 9001 認證。',
+      // 2026-07-17 GSC CTR 修复: 起价前置 + free design / DHL hook
+      en: 'Flyer printing from $0.40, 100 MOQ. A4/A5/A6 folded leaflets, digital & offset, free design proof in 2 hours. Same-day rush available, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote.',
+      ja: 'チラシ印刷 100 枚から、¥50〜。A4/A5/A6 折込・二つ折り、デジタル+オフセット印刷。無料デザイン校正 2 時間、最短即日発送、日本全国 DHL 2-4 日配送。ISO 9001 認証品質。30 秒 AI 無料見積もり。',
     },
   },
   'packaging': {
     titles: {
-      'zh-hk': '食品包裝印刷 100個起印 · FDA級安全 化妝品/食品/禮盒 4種盒型 | 智印雲',
-      // 2026-07-09 美国市场优化 v5: 加 Free Shipping + Free Mockup + FDA + Made in USA-friendly
-      en: 'Custom Packaging Boxes Free Shipping · 100 MOQ FDA Food-Safe | ZprintPro',
-      ja: 'パッケージ印刷 100個〜 FDA対応 OEM 食品・化粧品・ギフト | ZprintPro',
+      // 2026-07-17 GSC CTR 修复: 机会词 包裝盒訂製/包裝盒印刷 前置
+      'zh-hk': '包裝盒訂製 | HK$2.5起・免費設計・最快即日 | 智印雲 ZprintPro',
+      en: 'Packaging Box Printing from $0.51 | Free Shipping $99+ | ZprintPro',
+      ja: 'オリジナルパッケージ印刷｜¥69〜・小ロット・無料デザイン｜ZprintPro',
     },
     keywords: {
-      'zh-hk': '食品包裝印刷,食品包裝盒,食品袋印刷,食品級包裝,食品貼紙印刷,月餅盒,禮品盒,化妝品包裝盒,包裝盒定制,紙盒印刷,樓書印刷,資料匣,新盤樓書,豪宅畫冊,精裝樓書',
+      'zh-hk': '包裝盒訂製,包裝盒印刷,食品包裝印刷,食品包裝盒,食品袋印刷,食品級包裝,食品貼紙印刷,月餅盒,禮品盒,化妝品包裝盒,紙盒印刷,樓書印刷,資料匣,新盤樓書,豪宅畫冊,精裝樓書',
       // 加 free shipping / free mockup / no minimum / small business / eco friendly / kraft / mailer box
       en: 'custom packaging boxes,box printing,free shipping boxes,free mockup boxes,gift box packaging,cosmetic packaging,food packaging boxes,product packaging,small batch packaging,corrugated boxes,paper box printing,retail packaging,mailer boxes,rigid boxes,kraft boxes,eco friendly packaging,USA packaging supplier,small business packaging,bulk packaging,branded boxes',
-      ja: 'パッケージ印刷,箱印刷,ギフト箱,化粧品パッケージ,食品箱,商品パッケージ,小ロットパッケージ,段ボール箱,紙箱印刷,梱包材,不動産パンフレット,資料箱,デベロッパーパンフ,上製本,ハードケース箱',
+      ja: 'オリジナルパッケージ,パッケージ印刷,箱印刷,ギフト箱,化粧品パッケージ,食品箱,商品パッケージ,小ロットパッケージ,段ボール箱,紙箱印刷,梱包材,不動産パンフレット,資料箱,デベロッパーパンフ,上製本,ハードケース箱',
     },
     descriptions: {
-      'zh-hk': '食品包裝印刷 100 個起印, FDA 級安全 + 化妝品盒 4 種盒型 (天地蓋/磁吸/抽屜/書型). 香港本地 + 跨境美妝電商 + 日本市場. DHL 全球 2-4 天, 30 秒 AI 即時報價.',
-      // 移除 "Asia factory direct" + 加 Free Shipping/Mockup + USA-friendly
-      en: 'Custom packaging boxes from 100 units. FDA food-safe + cosmetic-grade 4 styles (lift-off lid, magnetic, drawer, book-style). Free shipping over $99 + free 3D mockup. Made for US small businesses & DTC brands. DHL Express 2-4 day or FedEx Ground. 30-second AI quote. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
-      ja: 'パッケージ印刷 100 個から対応. FDA 対応 + 化粧品グレード 4 箱型 (天地蓋・マグネット・引き出し・ブック型). アジア自社工場 + DHL 国際配送 2-4 日.',
+      'zh-hk': '包裝盒印刷 100 個起印，HK$2.5 起/個。FDA 食品級安全 + 化妝品盒 4 種盒型（天地蓋/磁吸/抽屜/書型），免費 3D 設計打稿。美妝、烘焙、禮品品牌適用，港九新界滿 HK$500 免費順豐速遞。WhatsApp 30 秒即時報價，ISO 9001 認證。',
+      en: 'Custom packaging boxes from $0.51, 100 MOQ. FDA food-safe, 4 styles (lift-off lid, magnetic, drawer, book-style) with free 3D mockup. DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote.',
+      ja: 'オリジナルパッケージ印刷 100 個から、¥69〜。FDA 対応 + 化粧品グレード 4 箱型（天地蓋・マグネット・引き出し・ブック型）。無料 3D デザイン校正、最短即日発送、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり。',
     },
   },
 'posters': {
     titles: {
-      'zh-hk': '海報印刷 1張起打 · A1/A2 戶外防水 展覽背板 | 智印雲',
-      en: 'Custom Posters Free Shipping · A1/A2 Outdoor Waterproof 1 MOQ | ZprintPro',
-      ja: 'ポスター印刷 A1/A2 1枚〜 屋外防水 展示バナー | ZprintPro',
+      // 2026-07-17 GSC CTR 修复: 机会词 海報印刷/印海報 前置
+      'zh-hk': '海報印刷 | HK$10起・1張起印・最快即日 | 智印雲 ZprintPro',
+      en: 'Poster Printing from $2.30 | Free Shipping $99+ | ZprintPro',
+      ja: 'ポスター印刷｜¥300〜・1枚から・最短即日・無料デザイン｜ZprintPro',
     },
     keywords: {
-      'zh-hk': '海報印刷,A1海報,A2海報,A0海報,戶外海報,展覽海報,餐廳海報,Backdrop背景板,PP海報裱貼,防水海報,易拉寶海報,燈箱片,婚禮海報',
+      'zh-hk': '海報印刷,印海報,A1海報,A2海報,A0海報,戶外海報,展覽海報,餐廳海報,Backdrop背景板,PP海報裱貼,防水海報,易拉寶海報,燈箱片,婚禮海報',
       en: 'poster printing,custom posters,A1 poster,A2 poster,A0 poster,outdoor posters,exhibition posters,event backdrops,PP laminated posters,waterproof posters,foam board printing,same day poster printing,wedding posters,menu board,free shipping posters,USA poster printing,trade show posters',
       ja: 'ポスター印刷,A1ポスター,A2ポスター,A0ポスター,屋外用ポスター,展示会用ポスター,イベントバックドロップ,PPラミネートポスター,防水ポスター,即日ポスター印刷,結婚式ポスター,メニューボード',
     },
     descriptions: {
-      'zh-hk': '海報印刷 1 張起打. A1/A2/A3 戶外防水 + 展覽背板 + 餐廳海報. ISO 9001 認證 + 30 秒 AI 即時報價 + DHL 全球 2-4 天配送 + 4 色柯式 + 7 天交付.',
-      en: 'Custom poster printing from 1 sheet. A1/A2/A3 outdoor waterproof + exhibition backdrops + restaurant posters. Free shipping over $99 to USA. DHL Express 2-4 day or FedEx Ground. 30-second AI quote + 4C offset + 7-day delivery. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
-      ja: 'ポスター印刷 A1 枚から対応. A1/A2/A3 屋外防水 + 展示背景 + 飲食店ポスター. ISO 9001 認証 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日 + 4 色印刷 + 7 日納期.',
+      'zh-hk': '海報印刷 1 張起印，HK$10 起/張。A1/A2/A3 戶外防水 + 展覽背板 + 餐廳海報，Giclée 級 1200 DPI 色彩。印海報即日打稿，港九新界滿 HK$500 免費順豐速遞，港鐵站交收。WhatsApp 30 秒即時報價，ISO 9001 認證。',
+      en: 'Poster printing from $2.30, 1 sheet MOQ. A1/A2/A3 outdoor waterproof & exhibition backdrops, free design proof. Fast 3-5 day production, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote.',
+      ja: 'ポスター印刷 1 枚から、¥300〜。A1/A2/A3 屋外防水・展示背景・飲食店ポスター。無料デザイン校正 2 時間、最短即日発送、日本全国 DHL 2-4 日配送。ISO 9001 認証品質。30 秒 AI 無料見積もり。',
     },
   },
   'paper-bags': {
     titles: {
-      'zh-hk': '紙袋印刷 100個起印 HK$1.8起/個 · FSC認證牛皮紙/白卡紙袋 | 智印雲',
-      en: 'Custom Paper Bags Free Shipping · 100 MOQ FSC Kraft Eco | ZprintPro',
-      ja: '紙袋印刷 100個〜 FSC認証クラフト・白カード・エコ | ZprintPro',
+      // 2026-07-17 GSC CTR 修复: 机会词 紙袋訂製/紙袋印刷 前置
+      'zh-hk': '紙袋訂製 | HK$8起・免費設計・最快即日 | 智印雲 ZprintPro',
+      en: 'Paper Bag Printing from $1.84 | Free Shipping $99+ | ZprintPro',
+      ja: '紙袋印刷｜¥240〜・小ロット・最短即日・無料デザイン｜ZprintPro',
     },
     keywords: {
-      'zh-hk': '紙袋印刷,牛皮紙袋,環保紙袋,手提紙袋,品牌紙袋,禮品紙袋,餐廳外賣紙袋,小批量紙袋,棉繩紙袋,白卡紙袋,珠寶紙袋,鐘錶紙袋,奢侈品紙袋,黑卡紙袋,絲帶手挽',
+      'zh-hk': '紙袋印刷,紙袋訂製,牛皮紙袋,環保紙袋,手提紙袋,品牌紙袋,禮品紙袋,餐廳外賣紙袋,小批量紙袋,棉繩紙袋,白卡紙袋,珠寶紙袋,鐘錶紙袋,奢侈品紙袋,黑卡紙袋,絲帶手挽',
       en: 'paper bag printing,custom paper bags,kraft paper bags,eco friendly bags,branded paper bags,gift bags,retail bags,takeaway bags,small batch paper bags,twisted handle bags,white card paper bags,jewellery paper bag,luxury paper bag,black card paper bag,satin ribbon handle,foil stamped bag,free shipping paper bags,USA paper bag supplier,small business paper bags,shopping bags wholesale',
       ja: '紙袋印刷,クラフト紙袋,エコ紙袋,手提げ紙袋,ブランド紙袋,ギフト袋,テイクアウト紙袋,小ロット紙袋,紙袋作成,ペーパーバッグ,宝飾紙袋,腕時計紙袋,ラグジュアリー紙袋,ブラックカード紙袋,サテンリボン持ち手',
     },
     descriptions: {
       // 2026-07-09 PM+UX+SEO 复盘: 移除"香港深圳廠直送"违反 §13.10 NAP 脱钩,
       // 改用"亞洲工廠"+(具体场景效益)提升 CTR + 满足 zh-hk 跨境合规
-      'zh-hk': '紙袋印刷 100 個起印, FSC 認證環保牛皮紙袋 + 白卡紙袋 + 精品禮品袋. 服飾/婚慶/烘焙/珠寶 4 大行業適用, 即日打樣 + DHL 全球 2-4 天配送. ISO 9001 認證品質, 30 秒 AI 即時報價.',
-      en: 'Custom paper bags from 100 units. FSC-certified kraft, white card & eco-friendly gift bags. Free shipping over $99 to USA. Perfect for fashion / wedding / bakery / jewellery brands. DHL Express 2-4 day or FedEx Ground. 30-second AI quote, ISO 9001. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
-      ja: '紙袋印刷 100 個から対応. FSC 認証クラフト・白カード・エコ・ギフト袋. アパレル・ウェディング・ベーカリー・宝飾ブランド向け. 無料サンプル+型設計 + DHL 国際配送 2-4 日. 30 秒 AI 即時見積.',
+      'zh-hk': '紙袋印刷 100 個起印，HK$8 起/個。FSC 認證牛皮紙袋 + 白卡紙袋 + 精品禮品袋，免費設計打稿、即日打樣。服飾、婚慶、烘焙、珠寶品牌適用，港九新界滿 HK$500 免費順豐速遞。WhatsApp 30 秒即時報價，ISO 9001 認證品質。',
+      en: 'Custom paper bags from $1.84, 100 MOQ. FSC-certified kraft, white card & eco gift bags with free design mockup. Fast 3-5 day production, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote.',
+      ja: '紙袋印刷 100 個から、¥240〜。FSC 認証クラフト・白カード・ギフト袋。無料デザイン校正・型設計、最短即日発送、日本全国 DHL 2-4 日配送。ISO 9001 認証品質。30 秒 AI 無料見積もり。',
     },
   },
    
@@ -470,9 +472,10 @@ const categorySeoData: Record<string, {
   },
   'menus': {
     titles: {
-      'zh-hk': '餐牌印刷 100本起 · 防水PVC/紙質菜單 餐廳茶餐廳適用 | 智印雲',
-      en: 'Custom Menus Free Shipping · 100 MOQ Waterproof PVC & Paper | ZprintPro',
-      ja: 'メニュー印刷 100部〜 防水PVC・紙メニュー 飲食店向け | ZprintPro',
+      // 2026-07-17 GSC CTR 修复: 机会词 餐牌印刷 前置
+      'zh-hk': '餐牌印刷 | HK$0.22起・免費設計・最快即日 | 智印雲 ZprintPro',
+      en: 'Menu Printing from $0.14 | Free Shipping $99+ | ZprintPro',
+      ja: 'メニュー印刷｜¥20〜・小ロット・最短即日・無料デザイン｜ZprintPro',
     },
     keywords: {
       'zh-hk': '餐牌印刷,菜單印刷,酒水牌,PVC餐牌,過膠餐牌,皮革餐牌,餐廳餐牌,茶餐廳餐牌,酒吧餐牌,外賣餐牌,甜品餐牌,咖啡店餐牌,酒店菜單',
@@ -480,26 +483,27 @@ const categorySeoData: Record<string, {
       ja: 'メニュー印刷,レストランメニュー,メニューブック,PVCメニュー,ラミネートメニュー,レザーメニュー,居酒屋メニュー,カフェメニュー,デザートメニュー,ホテルメニュー',
     },
     descriptions: {
-      'zh-hk': '餐牌印刷 100 本起印. 防水 PVC / 紙質菜單 / 精裝 / 一次性, 餐廳茶餐廳酒吧適用. ISO 9001 認證 + 30 秒 AI 即時報價 + DHL 全球 2-4 天配送.',
-      en: 'Custom menu printing 100 MOQ. Waterproof PVC / paper / hardcover / disposable menus for restaurants, cafes, bars. Free shipping over $99 to USA. ISO 9001 + 30-second AI quote + DHL 2-4 day global. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
-      ja: 'メニュー印刷 100 部から対応. 防水 PVC・紙・ハードカバー・使い捨て, レストラン・カフェ・バー向け. ISO 9001 認証 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日.',
+      'zh-hk': '餐牌印刷 100 本起印，HK$0.22 起/份。防水 PVC / 紙質菜單 / 精裝 / 一次性，餐廳、茶餐廳、酒吧、咖啡店適用。免費設計打稿，最快即日交貨，港九新界滿 HK$500 免費順豐速遞。WhatsApp 30 秒即時報價，ISO 9001 認證。',
+      en: 'Menu printing from $0.14, 100 MOQ. Waterproof PVC, paper, hardcover & disposable menus for restaurants, cafes and bars. Free design proof, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote.',
+      ja: 'メニュー印刷 100 部から、¥20〜。防水 PVC・紙・ハードカバー・使い捨て、レストラン・カフェ・バー向け。無料デザイン校正 2 時間、最短即日発送、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり。',
     },
   },
   'red-packets': {
     titles: {
-      'zh-hk': '利是封印刷 100個起 · 燙金UV 婚慶/新年/企業LOGO定制 | 智印雲',
-      en: 'Custom Red Packets Free Shipping · 100 MOQ Foil Wedding CNY | ZprintPro',
-      ja: 'ポチ袋印刷 100個〜 箔押し 婚礼・企業・お正月 | ZprintPro',
+      // 2026-07-17 GSC CTR 修复: 机会词 利是封印刷 / lai see 前置
+      'zh-hk': '利是封印刷 | HK$1.1起・燙金定制・免費設計 | 智印雲 ZprintPro',
+      en: 'Lai See Red Packet Printing from $0.46 | Free Shipping $99+ | ZprintPro',
+      ja: 'ポチ袋印刷｜¥64〜・小ロット・箔押し・無料デザイン｜ZprintPro',
     },
     keywords: {
       'zh-hk': '利是封印刷,企業利是封,婚慶利是封,賀年利是封,定制利是封,燙金利是封,紅包印刷,新年利是封,結婚利是封,LOGO利是封,生肖利是封,銀行利是封,卡通利是封',
-      en: 'red packet printing,custom red envelopes,Chinese New Year red packets,wedding red packets,corporate red packets,foil red packets,hong bao printing,new year red envelopes,zodiac red packet,bank red packet,cartoon red packet,free shipping red packets,USA CNY red envelopes',
+      en: 'red packet printing,lai see printing,lai see envelopes,custom red envelopes,Chinese New Year red packets,wedding red packets,corporate red packets,foil red packets,hong bao printing,new year red envelopes,zodiac red packet,bank red packet,cartoon red packet,free shipping red packets,USA CNY red envelopes',
       ja: 'ポチ袋印刷,オリジナルポチ袋,お年玉袋,結婚式ポチ袋,企業ポチ袋,箔押しポチ袋,紅包印刷,新年ポチ袋,干支ポチ袋,銀行ポチ袋,キャラクターポチ袋',
     },
     descriptions: {
-      'zh-hk': '利是封印刷 100 個起印. 燙金 / 局部 UV / 婚慶 / 賀年 / 企業 LOGO 定制. ISO 9001 認證 + 30 秒 AI 即時報價 + DHL 全球 2-4 天配送 + 4 色印刷.',
-      en: 'Custom red packet printing 100 MOQ. Foil / spot UV / wedding / CNY / corporate branding. Free shipping over $99 to USA. ISO 9001 + 30-second AI quote + DHL 2-4 day global + 4C offset. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
-      ja: 'ポチ袋印刷 100 個から対応. 箔押し・スポット UV・婚礼・お正月・企業 LOGO. ISO 9001 認証 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日 + 4 色印刷.',
+      'zh-hk': '利是封印刷 100 個起印，HK$1.1 起/個。燙金 / 局部 UV / 婚慶 / 賀年 / 企業 LOGO 定制，免費設計打稿。銀行、地產、零售品牌賀年禮品首選，港九新界滿 HK$500 免費順豐速遞。WhatsApp 30 秒即時報價，ISO 9001 認證。',
+      en: 'Lai see red packet printing from $0.46, 100 MOQ. Foil stamping, spot UV, wedding, CNY & corporate branding with free design proof. DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote.',
+      ja: 'ポチ袋印刷 100 個から、¥64〜。箔押し・スポット UV・婚礼・お正月・企業 LOGO。無料デザイン校正 2 時間、最短即日発送、日本全国 DHL 2-4 日配送。ISO 9001 認証品質。30 秒 AI 無料見積もり。',
     },
   },
   'banners': {
