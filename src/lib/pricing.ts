@@ -373,28 +373,28 @@ const INDEPENDENT_PRICES: Record<string, Record<'en' | 'ja', { min: number; max:
   },
   // ========== Posters ==========
   'a2-posters': {
-    'en': { min: 1.38, max: 2.76, unit: 'pc' },
-    'ja': { min: 184, max: 322, unit: '枚' },
+    'en': { min: 2.3, max: 4.6, unit: 'pc' },
+    'ja': { min: 300, max: 525, unit: '枚' },
   },
   'a1-posters': {
-    'en': { min: 2.3, max: 4.14, unit: 'pc' },
-    'ja': { min: 322, max: 506, unit: '枚' },
+    'en': { min: 4.6, max: 8.28, unit: 'pc' },
+    'ja': { min: 600, max: 943, unit: '枚' },
   },
   'outdoor-posters': {
-    'en': { min: 1.84, max: 3.68, unit: 'pc' },
-    'ja': { min: 258, max: 442, unit: '枚' },
+    'en': { min: 3.68, max: 7.36, unit: 'pc' },
+    'ja': { min: 480, max: 822, unit: '枚' },
   },
   'display-posters': {
-    'en': { min: 1.66, max: 3.22, unit: 'pc' },
-    'ja': { min: 221, max: 386, unit: '枚' },
+    'en': { min: 7.36, max: 14.28, unit: 'pc' },
+    'ja': { min: 960, max: 1677, unit: '枚' },
   },
   'art-posters': {
-    'en': { min: 2.76, max: 5.06, unit: 'pc' },
-    'ja': { min: 368, max: 598, unit: '枚' },
+    'en': { min: 5.98, max: 10.96, unit: 'pc' },
+    'ja': { min: 780, max: 1268, unit: '枚' },
   },
   'adhesive-posters': {
-    'en': { min: 1.38, max: 2.58, unit: 'pc' },
-    'ja': { min: 184, max: 313, unit: '枚' },
+    'en': { min: 2.99, max: 5.59, unit: 'pc' },
+    'ja': { min: 390, max: 663, unit: '枚' },
   },
   // ========== Packaging ==========
   'gift-boxes': {
@@ -402,8 +402,8 @@ const INDEPENDENT_PRICES: Record<string, Record<'en' | 'ja', { min: number; max:
     'ja': { min: 110, max: 258, unit: '個' },
   },
   'cosmetic-boxes': {
-    'en': { min: 1.01, max: 2.76, unit: 'pc' },
-    'ja': { min: 138, max: 313, unit: '個' },
+    'en': { min: 1.84, max: 5.03, unit: 'pc' },
+    'ja': { min: 240, max: 544, unit: '個' },
   },
   'food-boxes': {
     'en': { min: 0.74, max: 2.02, unit: 'pc' },
@@ -418,70 +418,70 @@ const INDEPENDENT_PRICES: Record<string, Record<'en' | 'ja', { min: number; max:
     'ja': { min: 69, max: 156, unit: '個' },
   },
   'rigid-boxes': {
-    'en': { min: 1.38, max: 3.22, unit: 'pc' },
-    'ja': { min: 184, max: 368, unit: '個' },
+    'en': { min: 1.84, max: 4.29, unit: 'pc' },
+    'ja': { min: 240, max: 480, unit: '個' },
   },
   'magnetic-closure-gift-box': {
-    'en': { min: 2.3, max: 4.6, unit: 'pc' },
-    'ja': { min: 322, max: 552, unit: '個' },
+    'en': { min: 3.45, max: 6.9, unit: 'pc' },
+    'ja': { min: 450, max: 771, unit: '個' },
   },
   'electronics-packaging-box': {
-    'en': { min: 0.92, max: 2.3, unit: 'pc' },
-    'ja': { min: 129, max: 258, unit: '個' },
+    'en': { min: 1.84, max: 4.6, unit: 'pc' },
+    'ja': { min: 240, max: 480, unit: '個' },
   },
   'kraft-paper-packaging-box': {
-    'en': { min: 0.64, max: 1.66, unit: 'pc' },
-    'ja': { min: 87, max: 184, unit: '個' },
+    'en': { min: 1.15, max: 2.98, unit: 'pc' },
+    'ja': { min: 150, max: 317, unit: '個' },
   },
   'drawer-slide-gift-box': {
-    'en': { min: 1.66, max: 3.5, unit: 'pc' },
-    'ja': { min: 230, max: 414, unit: '個' },
+    'en': { min: 2.76, max: 5.82, unit: 'pc' },
+    'ja': { min: 360, max: 648, unit: '個' },
   },
   // ========== Paper Bags ==========
   'kraft-paper-bags': {
-    'en': { min: 0.55, max: 1.38, unit: 'pc' },
-    'ja': { min: 74, max: 166, unit: '個' },
+    'en': { min: 1.84, max: 4.62, unit: 'pc' },
+    'ja': { min: 240, max: 538, unit: '個' },
   },
   'white-card-bags': {
-    'en': { min: 0.92, max: 2.02, unit: 'pc' },
-    'ja': { min: 120, max: 230, unit: '個' },
+    'en': { min: 2.76, max: 6.06, unit: 'pc' },
+    'ja': { min: 360, max: 690, unit: '個' },
   },
   'gift-bags': {
-    'en': { min: 1.1, max: 2.58, unit: 'pc' },
-    'ja': { min: 147, max: 294, unit: '個' },
+    'en': { min: 4.6, max: 10.79, unit: 'pc' },
+    'ja': { min: 600, max: 1200, unit: '個' },
   },
   'eco-paper-bags': {
-    'en': { min: 0.64, max: 1.66, unit: 'pc' },
-    'ja': { min: 83, max: 175, unit: '個' },
+    'en': { min: 1.84, max: 4.77, unit: 'pc' },
+    'ja': { min: 240, max: 506, unit: '個' },
   },
   'handle-bags': {
-    'en': { min: 0.83, max: 1.84, unit: 'pc' },
-    'ja': { min: 110, max: 212, unit: '個' },
+    'en': { min: 1.84, max: 4.08, unit: 'pc' },
+    'ja': { min: 240, max: 463, unit: '個' },
   },
   'large-bags': {
-    'en': { min: 1.01, max: 2.3, unit: 'pc' },
-    'ja': { min: 138, max: 258, unit: '個' },
+    'en': { min: 3.45, max: 7.86, unit: 'pc' },
+    'ja': { min: 450, max: 841, unit: '個' },
   },
   // ========== Banners ==========
   'outdoor-vinyl-banners': {
-    'en': { min: 1.84, max: 3.68, unit: 'sqft' },
-    'ja': { min: 258, max: 506, unit: '平方フィート' },
+    'en': { min: 2.76, max: 5.52, unit: 'sqft' },
+    'ja': { min: 360, max: 706, unit: '平方フィート' },
   },
   'roll-up-banners': {
     'en': { min: 46, max: 92, unit: 'set' },
     'ja': { min: 6440, max: 12880, unit: 'セット' },
   },
   'adhesive-banners': {
-    'en': { min: 1.38, max: 2.76, unit: 'sqft' },
-    'ja': { min: 194, max: 368, unit: '平方フィート' },
+    'en': { min: 2.3, max: 4.6, unit: 'sqft' },
+    'ja': { min: 300, max: 569, unit: '平方フィート' },
   },
   'vehicle-wraps': {
-    'en': { min: 4.6, max: 9.2, unit: 'sqft' },
-    'ja': { min: 644, max: 1288, unit: '平方フィート' },
+    'en': { min: 6.44, max: 12.88, unit: 'sqft' },
+    'ja': { min: 840, max: 1680, unit: '平方フィート' },
   },
   'mesh-banners': {
-    'en': { min: 1.84, max: 4.6, unit: 'sqft' },
-    'ja': { min: 258, max: 598, unit: '平方フィート' },
+    'en': { min: 3.68, max: 9.2, unit: 'sqft' },
+    'ja': { min: 480, max: 1113, unit: '平方フィート' },
   },
   // ========== Books ==========
   'catalog-printing': {
