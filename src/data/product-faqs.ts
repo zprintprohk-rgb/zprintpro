@@ -10,7 +10,7 @@ export const stickersFAQs: FAQItem[] = [
     question: {
       'zh-hk': '貼紙印刷 香港 最低訂量是多少？',
       'en': 'What is the minimum order for custom stickers in Hong Kong?',
-      'ja': '香港でのシール印刷の最小ロットは何枚からですか？',
+      'ja': 'シール印刷の最小ロットは何枚からですか？',
     },
     answer: {
       'zh-hk': '智印雲提供少批量貼紙印刷服務，最低100張起訂。無論是防水貼紙、透明貼紙或PVC貼紙，均可小量定制，適合初創品牌與產品包裝測試。詳情請參閱《貼紙印刷完全指南》。',
@@ -34,12 +34,12 @@ export const stickersFAQs: FAQItem[] = [
     question: {
       'zh-hk': '少批量貼紙印刷 可以即日取貨嗎？',
       'en': 'Can I get same-day sticker printing for small orders in Hong Kong?',
-      'ja': '香港で少ロットのシール印刷は即日対応可能ですか？',
+      'ja': '少ロットのシール印刷は即日対応可能ですか？',
     },
     answer: {
       'zh-hk': '可以。針對九龍、港島及新界客戶，少批量貼紙印刷（100-500張）最快即日可取。建議上午12時前確認稿件，即可安排當日生產，港鐵站交收或上門送貨均可。',
       'en': 'Yes. For customers in Kowloon, Hong Kong Island, and the New Territories, small-batch sticker printing (100-500 pcs) is available with same-day pickup. Confirm your artwork before 12 PM for same-day production. We offer MTR station pickup or door-to-door delivery.',
-      'ja': 'はい。九龍、香港島、新界のお客様向けに、少ロットシール印刷（100〜500枚）は即日対応可能です。正午までにデータを確定いただければ、当日生産を手配します。MTR駅での受け取りまたは宅配配送が選べます。',
+      'ja': 'はい。少ロットシール印刷（100〜500枚）は即日生産対応可能です。正午までにデータを確定いただければ、当日生産を手配し、DHL・FedExで日本全国へ2〜4日でお届けします。',
     },
   },
   {
@@ -70,12 +70,12 @@ export const stickersFAQs: FAQItem[] = [
     question: {
       'zh-hk': '九龍 貼紙印刷 有送貨服務嗎？',
       'en': 'Do you deliver sticker orders in Kowloon and other Hong Kong areas?',
-      'ja': '九龍など香港全域へのシール配送はありますか？',
+      'ja': '日本へのシール配送はありますか？',
     },
     answer: {
       'zh-hk': '有。智印雲提供全港送貨服務，包括九龍、港島、新界及離島。貼紙印刷訂單滿HK$500免運費，未滿額可選擇香港 MTR 站交收（觀塘、旺角、銅鑼灣、尖沙咀等站點 — 香港服務點，非生產地）。',
       'en': 'Yes. ZprintPro offers delivery across all Hong Kong areas including Kowloon, Hong Kong Island, New Territories, and outlying islands. Sticker orders over HK$500 qualify for free shipping. For smaller orders, MTR station pickup is available at Hong Kong stations (Kwun Tong, Mong Kok, Causeway Bay, Tsim Sha Tsui — HK service points, not production site).',
-      'ja': 'はい。ZprintProは九龍、香港島、新界、離島を含む香港全域に配送しています。シール印刷のご注文がHK$500以上で送料無料です。未満の場合は、香港 MTR 駅での受け取りが可能です（観塘、旺角、銅鑼湾、尖沙咀など — 香港サービスポイント、製造拠点ではありません）。',
+      'ja': 'はい。ZprintProはDHL・FedExで日本全国に配送しています（通常2〜4日）。小口注文から大量注文まで対応可能です。',
     },
   },
   {
@@ -109,7 +109,7 @@ export const flyersFAQs: FAQItem[] = [
     question: {
       'zh-hk': '傳單印刷 香港 最低訂量是多少？',
       'en': 'What is the minimum order for flyer printing in Hong Kong?',
-      'ja': '香港でのチラシ印刷の最小ロットは何枚からですか？',
+      'ja': 'チラシ印刷の最小ロットは何枚からですか？',
     },
     answer: {
       'zh-hk': '智印雲提供A5傳單印刷服務，最低10張起訂。無論是宣傳單張派發、開業傳單或活動傳單，均可少批量定制，適合初創企業與社區宣傳。詳情請參閱《宣傳單張印刷攻略》。',
@@ -133,12 +133,12 @@ export const flyersFAQs: FAQItem[] = [
     question: {
       'zh-hk': '傳單印刷 可以即日取貨嗎？',
       'en': 'Is same-day flyer printing available in Hong Kong?',
-      'ja': '香港でチラシ印刷の即日対応はありますか？',
+      'ja': 'チラシ印刷の即日対応はありますか？',
     },
     answer: {
       'zh-hk': '可以。針對港島、九龍及新界客戶，A5傳單印刷（10-1000張）最快即日可取。建議上午11時前確認稿件，即可安排當日生產，適合緊急活動及選舉宣傳。',
       'en': 'Yes. For customers in Hong Kong Island, Kowloon, and the New Territories, A5 flyer printing (10-1000 copies) is available with same-day pickup. Confirm artwork before 11 AM for same-day production, ideal for urgent events and campaigns.',
-      'ja': 'はい。香港島、九龍、新界のお客様向けに、A5チラシ印刷（10〜1000枚）は即日対応可能です。午前11時までにデータを確定いただければ当日生産を手配します。緊急のイベントや選挙宣伝に最適です。',
+      'ja': 'はい。A5チラシ印刷（10〜1000枚）は即日生産対応可能です。午前11時までにデータを確定いただければ当日生産を手配し、DHL・FedExで日本全国へお届けします。緊急のイベントやキャンペーンに最適です。',
     },
   },
   {
@@ -193,12 +193,12 @@ export const flyersFAQs: FAQItem[] = [
     question: {
       'zh-hk': '九龍 傳單印刷 有送貨服務嗎？',
       'en': 'Do you deliver flyer orders in Kowloon and other areas?',
-      'ja': '九龍などへのチラシ配送はありますか？',
+      'ja': '日本へのチラシ配送はありますか？',
     },
     answer: {
       'zh-hk': '有。智印雲提供全港送貨服務，包括九龍、港島、新界及離島。傳單印刷訂單滿HK$500免運費，未滿額可選擇港鐵站交收。大量傳單派發訂單可安排貨車直送。',
       'en': 'Yes. ZprintPro offers delivery across all Hong Kong areas. Flyer orders over HK$500 qualify for free shipping. For bulk leaflet distribution orders, truck delivery can be arranged directly to your distribution team.',
-      'ja': 'はい。ZprintProは香港全域に配送しています。チラシ印刷のご注文がHK$500以上で送料無料です。大量のチラシ配布注文には、トラックでの直送も手配可能です。',
+      'ja': 'はい。ZprintProはDHL・FedExで日本全国に配送しています（通常2〜4日）。大量のチラシ注文にも対応可能です。',
     },
   },
 ];
@@ -208,7 +208,7 @@ export const packagingBoxesFAQs: FAQItem[] = [
     question: {
       'zh-hk': '包裝盒定制 香港 最低訂量是多少？',
       'en': 'What is the minimum order for custom packaging boxes in Hong Kong?',
-      'ja': '香港での箱包装オーダーメイドの最小ロットはいくつからですか？',
+      'ja': '箱包装オーダーメイドの最小ロットはいくつからですか？',
     },
     answer: {
       'zh-hk': '智印雲提供磁吸禮盒、環保包裝盒等定制服務，最低100個起訂。無論是化妝品盒、食品盒或禮品盒，均可小量定制，適合初創品牌與節日禮品測試。詳情請參閱《品牌包裝完全指南》。',
@@ -237,7 +237,7 @@ export const packagingBoxesFAQs: FAQItem[] = [
     answer: {
       'zh-hk': '智印雲提供FSC認證環保包裝盒，材質包括再生紙、牛皮紙及大豆油墨印刷。適合注重ESG的品牌及有機產品包裝。新界及九龍客戶可安排即日打樣。',
       'en': 'ZprintPro offers FSC-certified eco-friendly packaging boxes using recycled paper, kraft paper, and soy-based inks. Ideal for ESG-focused brands and organic product packaging. Same-day sampling available for New Territories and Kowloon customers.',
-      'ja': 'ZprintProではFSC認証のエコ包装箱を提供しており、再生紙、クラフト紙、大豆インクを使用しています。ESGに配慮したブランドやオーガニック商品の包装に最適です。新界と九龍のお客様には即日サンプルも可能です。',
+      'ja': 'ZprintProではFSC認証のエコ包装箱を提供しており、再生紙、クラフト紙、大豆インクを使用しています。ESGに配慮したブランドやオーガニック商品の包装に最適です。即日サンプルにも対応可能です。',
     },
   },
   {
@@ -273,7 +273,7 @@ export const packagingBoxesFAQs: FAQItem[] = [
     answer: {
       'zh-hk': '可以。針對九龍、港島及新界客戶，包裝盒定制最快即日可打樣。建議提前提供設計稿及尺寸規格，即可安排當日白樣或數碼樣。確認樣板後3-5個工作天可批量生產。',
       'en': 'Yes. For Kowloon, Hong Kong Island, and New Territories customers, packaging box sampling is available same-day. Provide design files and dimensions in advance for same-day white or digital samples. Bulk production takes 3-5 working days after sample approval.',
-      'ja': 'はい。九龍、香港島、新界のお客様向けに、箱包装の即日サンプルが可能です。デザインデータと寸法を事前にご提供いただければ、当日に白箱サンプルまたはデジタルサンプルを手配できます。',
+      'ja': 'はい。日本全国のお客様向けに、箱包装の即日サンプルが可能です。デザインデータと寸法を事前にご提供いただければ、当日に白サンプルまたはデジタルサンプルを手配できます。',
     },
   },
   {
@@ -292,12 +292,12 @@ export const packagingBoxesFAQs: FAQItem[] = [
     question: {
       'zh-hk': '新界 包裝盒印刷 有送貨服務嗎？',
       'en': 'Do you deliver packaging box orders to the New Territories?',
-      'ja': '新界などへの包装箱配送はありますか？',
+      'ja': '日本への包装箱配送はありますか？',
     },
     answer: {
       'zh-hk': '有。智印雲提供全港送貨服務，包括九龍、港島、新界及離島。包裝盒定制訂單滿HK$500免運費，未滿額可選擇港鐵站交收。大量訂單可安排貨車直送倉庫。',
       'en': 'Yes. ZprintPro delivers across all Hong Kong areas including the New Territories. Packaging box orders over HK$500 qualify for free shipping. For bulk orders, truck delivery to your warehouse can be arranged.',
-      'ja': 'はい。ZprintProは新界を含む香港全域に配送しています。箱包装のご注文がHK$500以上で送料無料です。大量注文には倉庫へのトラック直送も手配可能です。',
+      'ja': 'はい。ZprintProはDHL・FedExで日本全国に配送しています（通常2〜4日）。大量注文にも対応可能です。',
     },
   },
 ];
@@ -307,7 +307,7 @@ export const postersFAQs: FAQItem[] = [
     question: {
       'zh-hk': '海報印刷 香港 最低訂量是多少？',
       'en': 'What is the minimum order for poster printing in Hong Kong?',
-      'ja': '香港でのポスター印刷の最小ロットは何枚からですか？',
+      'ja': 'ポスター印刷の最小ロットは何枚からですか？',
     },
     answer: {
       'zh-hk': '智印雲提供A2海報印刷服務，最低10張起訂。無論是戶外防水海報、展覽海報或燙金海報，均可少批量定制，適合活動宣傳及零售推廣。詳情請參閱《海報印刷完全指南》。',
@@ -336,7 +336,7 @@ export const postersFAQs: FAQItem[] = [
     answer: {
       'zh-hk': '可以。針對九龍、港島及新界客戶，A2海報印刷（10-100張）最快即日可取。戶外防水海報採用防水PP紙或帆布材質，適合長期戶外展示。建議上午11時前確認稿件。',
       'en': 'Yes. For Kowloon, Hong Kong Island, and New Territories customers, A2 poster printing (10-100 copies) is available same-day. Outdoor waterproof posters use waterproof PP paper or canvas, suitable for long-term outdoor display. Confirm artwork before 11 AM.',
-      'ja': 'はい。九龍、香港島、新界のお客様向けに、A2ポスター印刷（10〜100枚）は即日対応可能です。屋外防水ポスターは防水PP紙またはキャンバスを使用し、長期間の屋外展示に適しています。',
+      'ja': 'はい。A2ポスター印刷（10〜100枚）は即日生産対応可能です。屋外防水ポスターは防水PP紙またはキャンバスを使用し、長期間の屋外展示に適しています。DHL・FedExで日本全国へお届けします。',
     },
   },
   {
@@ -391,12 +391,12 @@ export const postersFAQs: FAQItem[] = [
     question: {
       'zh-hk': '港島 海報印刷 有送貨服務嗎？',
       'en': 'Do you deliver poster orders to Hong Kong Island?',
-      'ja': '香港島などへのポスター配送はありますか？',
+      'ja': '日本へのポスター配送はありますか？',
     },
     answer: {
       'zh-hk': '有。智印雲提供全港送貨服務，包括港島、九龍、新界及離島。海報印刷訂單滿HK$500免運費，Backdrop背景板等大件可安排貨車直送會場。未滿額可選擇港鐵站交收。',
       'en': 'Yes. ZprintPro delivers across all Hong Kong areas including Hong Kong Island. Poster orders over HK$500 qualify for free shipping. Large items like backdrop boards can be truck-delivered directly to your venue.',
-      'ja': 'はい。ZprintProは香港島を含む香港全域に配送しています。ポスター印刷のご注文がHK$500以上で送料無料です。バックドロップなどの大きな商品は会場へのトラック直送も可能です。',
+      'ja': 'はい。ZprintProはDHL・FedExで日本全国に配送しています（通常2〜4日）。バックドロップなどの大きな商品にも対応可能です。',
     },
   },
 ];
@@ -525,19 +525,19 @@ export const generalProductFAQs: FAQItem[] = [
     answer: {
       'zh-hk': '標準工期為 3–5 個工作天，加急件最快 24–48 小時內完成。即日交貨適用於大部分標準 SKU，建議上午 11 時前確認稿件。深圳總部生產，港九新界 48 小時快遞直送 (順豐/DHL)。樣書可郵寄審核。',
       'en': 'Standard turnaround is 3–5 business days. Rush orders are completed in 24–48 hours. Same-day delivery is available for most standard SKUs—confirm artwork before 11 AM. Sample proofs available by mail/courier, with 48-hour delivery across Hong Kong via SF Express / DHL.',
-      'ja': '標準納期は 3〜5 営業日、急ぎは 24〜48 時間以内。即日納品は多くの標準 SKU で対応可能、正午までのデータ確定推奨です。深圳 showroom で現場校正、香港全域へ 48 時間配送。',
+      'ja': '標準納期は 3〜5 営業日、急ぎは 24〜48 時間以内。即日生産は多くの標準 SKU で対応可能、正午までのデータ確定推奨です。DHL・FedEx で日本全国へ 2〜4 日でお届けします。',
     },
   },
   {
     question: {
       'zh-hk': '香港本地 有送貨服務嗎？',
       'en': 'Do you offer delivery in Hong Kong?',
-      'ja': '香港内で配送サービスはありますか？',
+      'ja': '日本への配送サービスはありますか？',
     },
     answer: {
       'zh-hk': '智印雲提供全港送貨服務，包括九龍、港島、新界及離島。訂單滿 HK$500 免運費，未滿額可選擇香港 MTR 站交收（觀塘、旺角、銅鑼灣、尖沙咀等 — 香港服務點，非生產地）。海外市場支援 DHL / FedEx 全球直送，3-5 個工作天到美國、2-4 天到日本。',
       'en': 'ZprintPro offers Hong Kong-wide delivery including Kowloon, Hong Kong Island, New Territories, and outlying islands. Free shipping on orders over HK$500; MTR station pickup available for smaller orders at Hong Kong stations (Kwun Tong, Mong Kok, Causeway Bay, Tsim Sha Tsui — HK service points, not production site). International orders ship via DHL/FedEx—3-5 days to USA, 2-4 days to Japan.',
-      'ja': 'ZprintPro は九龍・香港島・新界・離島を含む香港全域に配送します。HK$500 以上で送料無料、未満は香港 MTR 駅受取（観塘・旺角・銅鑼湾・尖沙咀など — 香港サービスポイント、製造拠点ではありません）。海外は DHL/FedEx 対応、米国 3-5 日、日本 2-4 日。',
+      'ja': 'はい。ZprintPro は DHL / FedEx で日本全国に配送しています（通常 2〜4 日）。米国など海外市場へも 3〜5 日でお届け可能です。送料は数量と配送先に応じてお見積もりいたします。',
     },
   },
   {
@@ -585,7 +585,7 @@ export const generalProductFAQs: FAQItem[] = [
     answer: {
       'zh-hk': '48 小時快遞免費（港九新界大部分地區）。即日 4 小時取件加收 HK$80–150（視產品類型）。加急件可聯絡客服走專屬急件通道，產能優先排程。',
       'en': '48-hour delivery is free for most Hong Kong areas. Same-day 4-hour pickup adds HK$80–150 (depending on product type). For urgent orders, contact our team for a dedicated rush channel with priority production scheduling.',
-      'ja': '48 時間配送は香港大部分の地域で無料。即日 4 時間受取は HK$80〜150 追加（商品による）。急ぎは專用急便チャンネルをカスタマーサポートまで、優先生産スケジュールで対応。',
+      'ja': '日本への通常配送は 2〜4 日（DHL・FedEx）。即日生産後の速納にも対応可能です。急ぎの場合はカスタマーサポートまでご相談ください。優先生産スケジュールで対応します。',
     },
   },
   {

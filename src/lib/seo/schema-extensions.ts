@@ -502,7 +502,8 @@ export function generateCategoryItemListJsonLd(
           url: productUrl,
           image: fullImageUrl,
           description: localizedDesc.slice(0, 500),
-          category: categoryName,
+          // 2026-07-18 GSC「category 值无效」修复: 去掉面包屑式分隔符与年份, 只留简洁类目名
+          category: categoryName.split('/')[0].replace(/\s*&\s*/g, ' and ').replace(/\s*20\d{2}\s*$/, '').trim(),
           // GSC「商家信息」要求: 提供全局品牌标识符
           brand: {
             '@type': 'Brand',
@@ -537,6 +538,12 @@ export function generateCategoryItemListJsonLd(
             // GSC「商家信息」要求: 配送详情，按地区差异化
             shippingDetails: {
               '@type': 'OfferShippingDetails',
+              // 2026-07-18 GSC「未填写 shippingRate」×48 修复: 免运费声明 (与 3 locale 免邮口径一致)
+              shippingRate: {
+                '@type': 'MonetaryAmount',
+                value: '0',
+                currency,
+              },
               shippingDestination: {
                 '@type': 'DefinedRegion',
                 addressCountry: locale === 'zh-hk' ? 'HK' : locale === 'ja' ? 'JP' : 'US',
