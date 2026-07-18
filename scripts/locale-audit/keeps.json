@@ -1,0 +1,62 @@
+[
+ {
+  "file": "src/data/products.ts",
+  "line": 17154,
+  "loc": "en",
+  "text": "<p>ZprintPro operates from a modern production facility in Shenzhen (Longgang District, Guangdong Province), equipped with Heidelberg offset presses, FSC-certified paper supply, and ISO 12647 color ma"
+ },
+ {
+  "file": "src/data/products.ts",
+  "line": 17590,
+  "loc": "en",
+  "text": "<p>ZprintPro has produced graduation yearbooks and class commemoratives for secondary schools, universities, international schools, and tutoring center cohorts across the US, UK, Canada, Australia, Ho"
+ },
+ {
+  "file": "src/lib/seo.ts",
+  "line": 38,
+  "loc": "en",
+  "text": "city: 'Shenzhen',"
+ },
+ {
+  "file": "src/lib/seo.ts",
+  "line": 82,
+  "loc": "en",
+  "text": "country: 'HK',"
+ },
+ {
+  "file": "src/lib/seo.ts",
+  "line": 86,
+  "loc": "en",
+  "text": "areaServed: ['Hong Kong', 'Kowloon', 'New Territories', 'Hong Kong Island'],"
+ },
+ {
+  "file": "src/lib/seo.ts",
+  "line": 101,
+  "loc": "ja",
+  "text": "alternateName: ['ZprintPro', '深セン印刷'],"
+ },
+ {
+  "file": "src/lib/seo.ts",
+  "line": 106,
+  "loc": "en",
+  "text": "city: 'Shenzhen',"
+ },
+ {
+  "file": "src/lib/seo.ts",
+  "line": 134,
+  "loc": "en",
+  "text": "city: 'Shenzhen',"
+ },
+ {
+  "file": "src/lib/seo.ts",
+  "line": 1586,
+  "loc": "ja",
+  "text": "geoKeywords: ['印刷通販', 'ステッカー 印刷 中国', 'シール 印刷 カスタム', '和紙 印刷', '小ロット 印刷', 'ステッカー オーダー', 'パッケージ 印刷', 'ラベル 印刷'],"
+ },
+ {
+  "file": "src/lib/seo/schema-extensions.ts",
+  "line": 54,
+  "loc": "en",
+  "text": "inLanguage: locale === 'zh-hk' ? 'zh-Hant-HK' : locale === 'ja' ? 'ja-JP' : 'en-US',"
+ }
+]

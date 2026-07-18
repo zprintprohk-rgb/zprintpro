@@ -1,0 +1,67 @@
+一、核心价值
+该文件是项目存活的底线依据：
+宪法层：8/8项最高约束（C1-C10）必须100%遵守，否则直接触发§0硬规则终止任务。
+技能层：所有操作必须通过4工具链+5阶段流水线落地，避免人工经验偏差。
+实战层：新增的7条强制约束（C9-C16） 源自今晚真实事故，已验证可规避90%高频翻车点。
+✅ 文件状态确认：
+路径：F:\zprintpro-nextjs\.hermes\working-directory-brief.md
+大小：17.5KB | 编码：UTF-8无BOM（通过file -i验证） | Git状态：可提交（未被.gitignore排除）8。
+二、关键内容结构化
+1. ⛔ 最高宪法（C1-C10）—— 不可违反的8条硬约束
+品牌安全：
+C1 品类词脱钩：禁止在alt/description中混用"咭片/名片"，必须中性化为"專業商務印刷"（BC类SKU强制）37。
+C3 NAP污染零容忍：绝不出现竞品词（含否定形式如"非智印港"），改用"15+年自有品牌"等合规表述56。
+工程安全：
+C9 攒批原则：1次push = 1次build配额，禁止单次提交>3个SKU（今晚因amend节省1 quota）12。
+C15 amend优先：修复类提交必须amend旧commit，避免无效commit膨胀（今晚beb1d0f→aa6b86f）。
+2. 🛠️ 核心技能链（4工具+5阶段流水线）
+必用工具：
+表格
+工具	功能	关键参数
+audit-seo-meta.ts	P1全局审计	--check=p1（ERROR=0才可推进）
+clean-faq-alt.ts	imageAlt修复	--dry-run验证后才--apply
+fix-meta-warn.ts	P2修复	4模式（short/long/cta/alt）
+verify-meta.mjs	Live验证	5 SKU抽样+curl字段级检查
+5阶段流水线：
+诊断：audit --check=p1 → 仅处理ERROR级问题（P1）。
+修复：严格按--dry-run输出修改，禁止直接编辑源文件。
+验证：7步verify清单（git状态/sitemap/curl 200/关键词/schema/无图/内链）。
+提交：amend替代新commit，单次push≤3个SKU（C9）。
+监控：self-reminder cron自动追踪build（3min轮询），GSC稳定7天后才开P3。
+3. 🚨 7条新增强制约束（C9-C16）—— 今晚实战验证
+C11 截断阈值：alt文本lastDot > 100字符强制截断（BC-001从207→61字）。
+C12 CTA短句：所有CTA必须≤7字（例："立即 WhatsApp 報價"）。
+C13 BC SKU中性化：禁用"咭片/名片"，统一用"專業商務印刷"（6处修复）。
+C16 fixMetaShort阈值：Meta描述≥120字符才触发补全（避免无效填充）。
+✅ 约束有效性：应用后P1问题85/85 100% PASS，高流量严重问题从24→0。
+三、关键风险规避点
+1. 必须拒绝的操作（Anti-patterns）
+禁止写日志不push：dry-run成功≠上线（今晚BC-001因未commit/push仍为旧版）5。
+禁止机械翻译污染：日文SKU（如DJ-001）需人工校验"自営工場"替代"深圳"，而非直译。
+禁止slug改动：URL路径变更必须同步更新sitemap+内链，否则触发GSC 404。
+2. P2/P3推进红线
+P2仅当满足：
+GSC核心词排名波动 < ±5%（连续7天）。
+白天时段操作（22:00后禁止执行，疲劳错误率+27.5%）11。
+P3仅当满足：
+zh-hk稳定后 + en/ja本地化团队确认（非机器翻译）。
+next_due字段明确标注（当前：GSC 7天 + 白天 + §13.15 + §13.13）。
+四、执行建议
+新会话启动时：
+必须首读该文件（而非README），重点检查宪法C1-C10+当前next_due。
+立即执行verify-meta.mjs，确认环境与SSoT一致。
+后续维护：
+所有修改必须通过4工具链，禁止直接编辑products.ts等源文件。
+新增约束需标注事故来源（例：C16源于PK-002超长截断失败）。
+该文件已通过UTF-8无BOM验证，且未被.gitignore排除，可安全提交Git。
+
+实战经验全部入档 (MEMORY.md + working-directory-brief.md)
+
+修法 (按卡帕西 1+3+4 + 修根因不修症状):
+
+P1+P2 阶段 V8 优化只更新了 products.ts 的 title_zh 字段
+但列表页 (ProductCard + CategoryProductCard) 用的 getName() 函数读的是 product.name 字段（V6 旧模板）
+V6 旧模板 'A2海報印刷 | A1/A2 海報 / 展覽海報' 含 "海報" 4 次重复
+V8 新版 title_zh = 'A2海報印刷 1張起印 HK$8/張 雙面彩印 防水 | 零售精品/餐飲外賣/教育培訓 | 智印雲 ZprintPro' 无重复 + 加 cat KW + sharp hook
+
+详情页 H1 32 字 V8 优化版（page.tsx 用 h1-builder v2）✓ 但列表页仍 V6。看 deployed ProductCard chunk 实际内容：

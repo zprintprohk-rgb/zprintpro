@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 200" fill="none">
+  <defs>
+    <!-- 图标渐变：深蓝 → 青蓝 -->
+    <linearGradient id="iconGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a2a4a"/>
+      <stop offset="45%" stop-color="#1e3a6e"/>
+      <stop offset="75%" stop-color="#1a7a8a"/>
+      <stop offset="100%" stop-color="#1aa3a3"/>
+    </linearGradient>
+    <!-- 电路板绿色渐变 -->
+    <linearGradient id="circuitGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1aa3a3" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00d4c8"/>
+    </linearGradient>
+    <!-- 裁剪路径 -->
+    <clipPath id="cloudClip">
+      <path d="M22 148 C22 130 28 118 34 108 C18 88 20 58 36 44 C52 30 78 28 98 34 C112 20 136 16 154 26 C168 18 186 20 194 34 C210 38 218 54 218 68 C230 72 234 90 230 104 C242 112 242 134 230 146 L58 150 Z"/>
+    </clipPath>
+  </defs>
+
+  <g transform="translate(20,10)">
+
+    <!-- ============ 图标区域 176x176 ============ -->
+    <g transform="translate(0,0)">
+
+      <!-- 云朵主体形状 -->
+      <path d="
+        M 24 136
+        C 22 118 28 106 36 96
+        C 20 78 22 52 40 38
+        C 58 24 84 24 104 32
+        C 118 16 142 12 158 24
+        C 172 16 190 18 198 34
+        C 214 40 222 58 220 74
+        C 232 78 238 98 232 114
+        C 242 120 242 138 230 148
+        L 52 150
+        C 32 150 24 144 24 136 Z
+      " fill="url(#iconGrad)"/>
+
+      <!-- Z 字母（左侧，深色区域） -->
+      <!-- Z 顶横 -->
+      <polygon points="34,46 120,46 110,58 28,58" fill="white" opacity="0.15"/>
+      <!-- Z 斜杠 -->
+      <polygon points="100,42 120,46 60,140 40,136" fill="white" opacity="0.12"/>
+      <!-- Z 底横 -->
+      <polygon points="30,132 120,132 110,144 24,144" fill="white" opacity="0.15"/>
+
+      <!-- Z 细线轮廓增强 -->
+      <path d="M 30 48 L 110 48 L 40 134 L 110 134" stroke="white" stroke-width="4" stroke-linejoin="round" fill="none" opacity="0.25"/>
+
+      <!-- 电路板纹理（右侧青蓝色区域） -->
+      <g opacity="0.7">
+        <!-- 水平走线 -->
+        <line x1="130" y1="62" x2="190" y2="62" stroke="#00d4c8" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="140" y1="78" x2="200" y2="78" stroke="#00d4c8" stroke-width="2" stroke-linecap="round"/>
+        <line x1="130" y1="94" x2="180" y2="94" stroke="#00d4c8" stroke-width="2.5" stroke-linecap="round"/>
+        <line x1="144" y1="110" x2="210" y2="110" stroke="#1aa3a3" stroke-width="2" stroke-linecap="round"/>
+
+        <!-- 纵向走线 -->
+        <line x1="160" y1="62" x2="160" y2="94" stroke="#00d4c8" stroke-width="2" stroke-linecap="round"/>
+        <line x1="175" y1="62" x2="175" y2="78" stroke="#1aa3a3" stroke-width="2" stroke-linecap="round"/>
+        <line x1="185" y1="78" x2="185" y2="110" stroke="#00d4c8" stroke-width="2" stroke-linecap="round"/>
+
+        <!-- 电路节点（圆形焊盘） -->
+        <circle cx="130" cy="62" r="4" fill="#00d4c8"/>
+        <circle cx="160" cy="62" r="4" fill="#00d4c8"/>
+        <circle cx="175" cy="62" r="3.5" fill="#00d4c8" fill-opacity="0.8"/>
+        <circle cx="190" cy="62" r="3" fill="#00d4c8" fill-opacity="0.6"/>
+        <circle cx="160" cy="94" r="4" fill="#00d4c8"/>
+        <circle cx="140" cy="78" r="3.5" fill="#009e95"/>
+        <circle cx="200" cy="78" r="3" fill="#009e95" fill-opacity="0.8"/>
+        <circle cx="130" cy="94" r="4" fill="#009e95"/>
+        <circle cx="180" cy="94" r="3.5" fill="#009e95"/>
+        <circle cx="175" cy="78" r="3" fill="#00d4c8" fill-opacity="0.7"/>
+        <circle cx="185" cy="78" r="3.5" fill="#009e95"/>
+        <circle cx="185" cy="110" r="3.5" fill="#00d4c8" fill-opacity="0.7"/>
+        <circle cx="144" cy="110" r="4" fill="#009e95"/>
+        <circle cx="210" cy="110" r="3" fill="#009e95" fill-opacity="0.6"/>
+
+        <!-- 分支走线 -->
+        <line x1="175" y1="62" x2="205" y2="62" stroke="#008a82" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="185" y1="78" x2="215" y2="78" stroke="#008a82" stroke-width="1.5" stroke-linecap="round"/>
+        <line x1="130" y1="94" x2="148" y2="110" stroke="#008a82" stroke-width="1.5" stroke-linecap="round"/>
+
+        <circle cx="205" cy="62" r="2.5" fill="#009e95"/>
+        <circle cx="215" cy="78" r="2.5" fill="#009e95"/>
+      </g>
+
+    </g>
+
+    <!-- ============ 文字区域 ============ -->
+    <g transform="translate(260,30)">
+      <!-- ZPrint（深蓝） + Pro（青蓝） -->
+      <text x="0" y="62" font-family="Arial,Helvetica,sans-serif" font-weight="900" font-size="64" fill="#1a2a4a" letter-spacing="1">ZPrint</text>
+      <text x="285" y="62" font-family="Arial,Helvetica,sans-serif" font-weight="900" font-size="64" fill="#1aa3a3" letter-spacing="1">Pro</text>
+
+      <!-- 智印雲（繁体中文，深蓝） -->
+      <text x="0" y="120" font-family="'Microsoft YaHei','PingFang HK','Noto Sans HK',sans-serif" font-weight="700" font-size="36" fill="#1a2a4a" letter-spacing="8">智印雲</text>
+    </g>
+
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+﻿=== zh-hk ===
+  OK slug-key="thick-paper-flyer-printing-restaurant-takeout-guide" title=鍘氱礄鍌冲柈鍗板埛鎸囧崡 路 棣欐腐椁愬怀澶栬常鍠嫉鍘氱礄閬告潗鏀荤暐 | 鏅哄嵃闆?ZprintPro h1=None
+  OK slug-key="magnetic-closure-gift-box-ecommerce-brand-guide" title=纾佸惛绂洅瀹氬埗鎸囧崡 路 璺ㄥ闆诲晢鍝佺墝鍗囩礆鍖呰鏂规 | 鏅哄嵃闆?ZprintPro h1=None
+  OK slug-key="folding-box-cosmetics-brand-eco-friendly-guide" title=鎶樼枈鐩掑畾鍒舵寚鍗?路 缇庡璀疯啔鍝佺墝鐠颁繚鍖呰鏀荤暐 | 鏅哄嵃闆?ZprintPro h1=None
+  total slug-like keys: 46
+=== en ===
+  OK slug-key="thick-paper-flyer-printing-restaurant-takeout-guide" title=Thick Paper Flyer Printing Guide 路 Restaurant Menu Inserts & h1=None
+  OK slug-key="magnetic-closure-gift-box-ecommerce-brand-guide" title=Magnetic Closure Gift Box Guide 路 Cross-Border E-commerce Pr h1=None
+  OK slug-key="folding-box-cosmetics-brand-eco-friendly-guide" title=Folding Box Printing Guide 路 Eco-Friendly Cosmetics Brand Pa h1=None
+  total slug-like keys: 46
+=== ja ===
+  OK slug-key="thick-paper-flyer-printing-restaurant-takeout-guide" title=鍘氱礄銉併儵銈峰嵃鍒枫偓銈ゃ儔 路 椋查搴椼儭銉嬨儱銉笺兓銉嗐偆銈偄銈︺儓鍚戙亼瀹屽叏瑙ｈ | ZprintPro h1=None
+  OK slug-key="magnetic-closure-gift-box-ecommerce-brand-guide" title=銉炪偘銉嶃儍銉堝紡銈儠銉?銉溿儍銈偣 銈偣銈裤儬銈偆銉?路 瓒婂EC銉籇TC 銉栥儵銉炽儔鍚戙亼銉椼儸銉熴偄銉 h1=None
+  OK slug-key="folding-box-cosmetics-brand-eco-friendly-guide" title=鎶樸倞鐣炽伩绠?銈偣銈裤儬 銈偆銉?路 鍖栫钵鍝併兓銈广偔銉炽偙銈?銉栥儵銉炽儔鍚戙亼銈ㄣ偝鍖呰 | Zprint h1=None
+  total slug-like keys: 46
