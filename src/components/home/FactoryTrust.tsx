@@ -1,10 +1,8 @@
-import Image from 'next/image';
 import type { Locale } from '@/lib/seo';
 
 /**
- * 实力工厂实拍区 (2026-07-18 v2)
- * 主视觉: 柯式印刷机全景实拍 (桌面横版 1380x345 / 移动竖版 414x736, <picture> 艺术方向切换)
- * 辅图: 商标轮转机 (貼紙/標籤量产背书)
+ * 实力工厂实拍区 (2026-07-18 v3)
+ * 单图策略: 柯式印刷机实拍 (桌面横版全景 1380x345 / 移动竖版 414x736, <picture> 艺术方向切换)
  * §13.10: supplier origin 允许在正文层佐证品质 (亚洲工厂/深圳自設廠房)
  */
 
@@ -13,25 +11,19 @@ const TEXTS = {
     title: '實力工廠 · 自家廠房實拍',
     subtitle: '柯式印刷機 × 商標輪轉機 · ISO 9001 品質管理 · 15+ 年印刷經驗',
     caption1: '柯式印刷機組 — 宣傳單張 / 包裝盒 / 畫冊專色量產',
-    caption2: '商標輪轉印刷機 — 貼紙 / 標籤卷裝量產',
-    alt1: '智印雲工廠柯式印刷機全景實拍',
-    alt2: '智印雲工廠商標輪轉印刷機實拍',
+    alt1: '智印雲工廠柯式印刷機實拍',
   },
   en: {
     title: 'Real Factory · Our Own Production Facility',
     subtitle: 'Offset press line × Label rotary press · ISO 9001 quality management · 15+ years in printing',
     caption1: 'Offset press line — spot-color flyers, packaging & booklets at scale',
-    caption2: 'Label rotary press — roll-to-roll sticker & label production',
-    alt1: 'ZprintPro factory offset press line panorama',
-    alt2: 'ZprintPro factory label rotary press',
+    alt1: 'ZprintPro factory offset press line',
   },
   ja: {
     title: '自社工場 · 生産設備の実写',
     subtitle: 'オフセット印刷機 × ラベル輪転機 · ISO 9001 品質管理 · 15年以上の印刷実績',
     caption1: 'オフセット印刷機ライン — チラシ・パッケージ・冊子の特色量産',
-    caption2: 'ラベル輪転印刷機 — ステッカー・ラベルのロール量産',
-    alt1: 'ZprintPro 自社工場オフセット印刷機パノラマ',
-    alt2: 'ZprintPro 自社工場ラベル輪転機',
+    alt1: 'ZprintPro 自社工場オフセット印刷機',
   },
 } as const;
 
@@ -45,8 +37,8 @@ export function FactoryTrust({ locale }: { locale: Locale }) {
           <p className="text-sm md:text-base text-gray-500 mt-2">{t.subtitle}</p>
         </div>
 
-        {/* 主视觉: 全景实拍 (桌面横版 / 移动竖版) */}
-        <figure className="group bg-white rounded-2xl border border-gray-200 overflow-hidden mb-4 md:mb-6">
+        {/* 单图: 桌面横版全景 / 移动竖版 */}
+        <figure className="group bg-white rounded-2xl border border-gray-200 overflow-hidden">
           <picture>
             <source media="(max-width: 767px)" srcSet="/images/factory/factory-press-mobile.webp" />
             <img
@@ -55,24 +47,10 @@ export function FactoryTrust({ locale }: { locale: Locale }) {
               width={1380}
               height={345}
               loading="lazy"
-              className="w-full h-56 md:h-auto object-cover group-hover:scale-[1.01] transition-transform duration-500"
+              className="w-full h-72 md:h-auto object-cover group-hover:scale-[1.01] transition-transform duration-500"
             />
           </picture>
           <figcaption className="px-4 py-3 text-sm text-gray-600">{t.caption1}</figcaption>
-        </figure>
-
-        {/* 辅图: 商标轮转机 */}
-        <figure className="group bg-white rounded-2xl border border-gray-200 overflow-hidden md:w-1/2 md:mx-auto">
-          <div className="relative aspect-[4/1] md:aspect-[2/1] overflow-hidden">
-            <Image
-              src="/images/factory/label-press.webp"
-              alt={t.alt2}
-              fill
-              sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-cover group-hover:scale-[1.02] transition-transform duration-500"
-            />
-          </div>
-          <figcaption className="px-4 py-3 text-sm text-gray-600">{t.caption2}</figcaption>
         </figure>
       </div>
     </section>

@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin, Youtube } from 'lucide-react';
+import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin, Youtube, ChevronDown } from 'lucide-react';
 import { Locale } from '@/lib/seo';
 import { GeoFooterText } from '@/components/seo/GeoFooterText';
 import { generateWhatsAppLink, getWhatsAppLinkProps } from '@/lib/whatsapp';
@@ -199,11 +199,47 @@ export function Footer({ locale }: FooterProps) {
   const t = translations[locale];
   const localePrefix = `/${locale}`;
 
+  // 2026-07-27: 抽出统一链接渲染（桌面 grid 与移动端手风琴共用）
+  const renderFooterLink = (link: { label: string; href: string }, linkIndex: number) => {
+    // WhatsApp 链接：使用统一生成器（带 source=footer 上下文 + onClick 追踪）
+    const isWa = link.href.startsWith('https://wa.me/');
+    if (isWa) {
+      const waProps = getWhatsAppLinkProps(locale, { source: 'footer' });
+      return (
+        <li key={linkIndex}>
+          <a
+            href={waProps.href}
+            target={waProps.target}
+            rel={waProps.rel}
+            onClick={waProps.onClick}
+            className="text-gray-400 hover:text-white transition-colors text-sm"
+          >
+            {link.label}
+          </a>
+        </li>
+      );
+    }
+    const href = link.href.startsWith('http') ? link.href : `${localePrefix}${link.href}`;
+    return (
+      <li key={linkIndex}>
+        <Link
+          href={href}
+          target={link.href.startsWith('http') ? '_blank' : undefined}
+          rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
+          className="text-gray-400 hover:text-white transition-colors text-sm"
+        >
+          {link.label}
+        </Link>
+      </li>
+    );
+  };
+
   return (
     <footer className="bg-[#1a1a2e] text-white">
       {/* Main Footer */}
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-8">
+        {/* 2026-07-27: 桌面端 grid 保持原样, lg 以下隐藏 (移动端走下方精简手风琴) */}
+        <div className="hidden lg:grid lg:grid-cols-6 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="mb-4">
@@ -327,42 +363,85 @@ export function Footer({ locale }: FooterProps) {
             <div key={colIndex}>
               <h3 className="font-bold text-lg mb-4">{column.title}</h3>
               <ul className="space-y-2.5">
-                {column.links.map((link, linkIndex) => {
-                  // WhatsApp 链接：使用统一生成器（带 source=footer 上下文 + onClick 追踪）
-                  const isWa = link.href.startsWith('https://wa.me/');
-                  if (isWa) {
-                    const waProps = getWhatsAppLinkProps(locale, { source: 'footer' });
-                    return (
-                      <li key={linkIndex}>
-                        <a
-                          href={waProps.href}
-                          target={waProps.target}
-                          rel={waProps.rel}
-                          onClick={waProps.onClick}
-                          className="text-gray-400 hover:text-white transition-colors text-sm"
-                        >
-                          {link.label}
-                        </a>
-                      </li>
-                    );
-                  }
-                  const href = link.href.startsWith('http') ? link.href : `${localePrefix}${link.href}`;
-                  return (
-                    <li key={linkIndex}>
-                      <Link
-                        href={href}
-                        target={link.href.startsWith('http') ? '_blank' : undefined}
-                        rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                        className="text-gray-400 hover:text-white transition-colors text-sm"
-                      >
-                        {link.label}
-                      </Link>
-                    </li>
-                  );
-                })}
+                {column.links.map((link, linkIndex) => renderFooterLink(link, linkIndex))}
               </ul>
             </div>
           ))}
+        </div>
+
+        {/* 2026-07-27 移动端精简页脚 (lg 以下):
+            品牌一句话 + 聯絡我們/WhatsApp/報價 3 核心入口 + 產品中心 6 类目 2 列
+            + 其余栏 (關於我們/幫助中心/客戶服務) 手风琴默认收起 — 信息不丢, 高度压缩至 ~1/3。
+            文案全部复用 t.columns 已有翻译 key; 報價按钮文案与 Header translations 现有字符串逐字一致 */}
+        <div className="lg:hidden">
+          {/* 品牌 + NAP */}
+          <div className="mb-3">
+            <Image
+              src="/images/logo-dark.svg"
+              alt="ZprintPro"
+              width={240}
+              height={53}
+              className="h-9 w-auto"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <p className="text-gray-400 text-sm mb-3 leading-relaxed line-clamp-2">{t.companyDesc}</p>
+          <div className="space-y-1.5 mb-4">
+            <div className="flex items-center gap-2 text-gray-400">
+              <MapPin className="w-4 h-4 flex-shrink-0" />
+              <span className="text-xs">{t.address}</span>
+            </div>
+            <a href={`tel:${t.phone.replace(/\D/g, '')}`} className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors">
+              <Phone className="w-4 h-4" />
+              <span className="text-xs whitespace-nowrap">{t.phone}</span>
+            </a>
+          </div>
+
+          {/* 3 核心入口 */}
+          <div className="grid grid-cols-3 gap-2 mb-5">
+            <Link
+              href={`${localePrefix}${t.columns[3].links[0].href}`}
+              className="flex items-center justify-center rounded-lg bg-[#2873F5] text-white text-xs font-bold py-2.5 px-1 text-center"
+            >
+              {t.columns[3].links[0].label}
+            </Link>
+            <a
+              {...getWhatsAppLinkProps(locale, { source: 'footer-mobile' })}
+              className="flex items-center justify-center rounded-lg bg-[#25D366] text-white text-xs font-bold py-2.5 px-1 text-center"
+            >
+              WhatsApp
+            </a>
+            <Link
+              href={`${localePrefix}/quote/`}
+              className="flex items-center justify-center rounded-lg bg-[#F87314] text-white text-xs font-bold py-2.5 px-1 text-center"
+            >
+              {locale === 'zh-hk' ? '免費報價' : locale === 'en' ? 'Get Quote' : '見積もり'}
+            </Link>
+          </div>
+
+          {/* 產品中心 — 6 类目紧凑 2 列, 常显 */}
+          <div className="mb-4">
+            <h3 className="font-bold text-sm mb-2 text-gray-200">{t.columns[1].title}</h3>
+            <ul className="grid grid-cols-2 gap-x-4 gap-y-2">
+              {t.columns[1].links.map((link, linkIndex) => renderFooterLink(link, linkIndex))}
+            </ul>
+          </div>
+
+          {/* 其余栏 — 手风琴, 默认收起 */}
+          <div className="divide-y divide-white/10 border-y border-white/10">
+            {[0, 2, 3].map((colIndex) => (
+              <details key={colIndex} className="group">
+                <summary className="flex items-center justify-between py-3 cursor-pointer list-none font-bold text-sm text-gray-200 [&::-webkit-details-marker]:hidden">
+                  {t.columns[colIndex].title}
+                  <ChevronDown className="w-4 h-4 text-gray-500 transition-transform group-open:rotate-180" />
+                </summary>
+                <ul className="pb-4 space-y-2.5">
+                  {t.columns[colIndex].links.map((link, linkIndex) => renderFooterLink(link, linkIndex))}
+                </ul>
+              </details>
+            ))}
+          </div>
         </div>
 
         {/* GEO 锚定文本 — 供 AI 搜索引擎抓取 */}
