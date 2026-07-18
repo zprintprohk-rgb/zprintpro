@@ -18,6 +18,7 @@ import { KnowledgeSection } from '@/components/home/KnowledgeSection';
 import { TrustWaterfall } from '@/components/home/TrustWaterfall';
 import { HowItWorks } from '@/components/home/HowItWorks';
 import { TrustBadges } from '@/components/TrustBadges';
+import { FactoryTrust } from '@/components/home/FactoryTrust';
 import { DoujinSKU } from '@/components/japan/DoujinSKU';
 
 // 生成静态参数
@@ -76,6 +77,8 @@ export default function HomePage({
         <HotProducts locale={locale} />
         <StatsBar locale={locale} />
         <WhyChooseUs locale={locale} />
+        {/* 2026-07-18: 实力工厂实拍 — 对标智印港信任缺口 (真实印刷机=真工厂背书) */}
+        <FactoryTrust locale={locale} />
         <KnowledgeSection locale={locale} />
         {/* 2026-07-09 P1.3: 8 个诚实信任信号 (替代 Trustpilot widget 冷启动) */}
         <TrustBadges locale={locale} />
