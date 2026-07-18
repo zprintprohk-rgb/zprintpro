@@ -1,31 +1,8 @@
 interface QuoteTrustBarProps {
-  locale: 'zh-hk' | 'en' | 'ja';
+  items: Array<{ icon: string; label: string }>;
 }
 
-const TRUST_ITEMS: Record<'zh-hk' | 'en' | 'ja', Array<{ icon: string; label: string }>> = {
-  'zh-hk': [
-    { icon: '⚡', label: '2小時內回覆報價' },
-    { icon: '✅', label: '免費報價・無隱藏收費' },
-    { icon: '🏭', label: '香港註冊・自設廠房' },
-    { icon: '🚚', label: '指定產品即日速遞' },
-  ],
-  en: [
-    { icon: '⚡', label: 'Quote within 2 hours' },
-    { icon: '✅', label: 'Free quote, no hidden fees' },
-    { icon: '🏭', label: 'HK registered, own factory' },
-    { icon: '🚚', label: 'Same-day delivery available' },
-  ],
-  ja: [
-    { icon: '⚡', label: '2時間以内に見積回答' },
-    { icon: '✅', label: '見積無料・追加料金なし' },
-    { icon: '🏭', label: '香港登記・自社工場' },
-    { icon: '🚚', label: '即日配送対応商品あり' },
-  ],
-};
-
-export function QuoteTrustBar({ locale }: QuoteTrustBarProps) {
-  const items = TRUST_ITEMS[locale];
-
+export function QuoteTrustBar({ items }: QuoteTrustBarProps) {
   return (
     <div className="mb-4 rounded-2xl border border-slate-200/80 bg-white/85 p-2 shadow-sm backdrop-blur-sm">
       <div className="grid grid-cols-2 gap-2">

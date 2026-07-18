@@ -5,10 +5,11 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 // import { useSearchParams } from 'next/navigation'; // 静态导出不能用 useSearchParams，改用 window.location
-import { Send, Paperclip, CheckCircle, AlertCircle, Upload, X, Loader2 } from 'lucide-react';
+import { Send, Paperclip, CheckCircle, AlertCircle, Upload, X, Loader2, MessageCircle } from 'lucide-react';
 import { categories, products, getProductBySlug } from '@/data/products';
 import { trackContactFormSubmit } from '@/lib/analytics';
-import { generateQuoteRef, generateQuoteSheetLink, type QuoteSheetContext } from '@/lib/whatsapp';
+import { generateQuoteRef, generateQuoteSheetLink, generateWhatsAppLink, type QuoteSheetContext } from '@/lib/whatsapp';
+import { QuoteTrustBar } from './QuoteTrustBar';
 
 const quoteSchema = z.object({
   name: z.string().optional(),
@@ -106,7 +107,7 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
       messagePlaceholder: '請詳細說明印刷需求：例如品類、紙質、工藝要求、交貨時間等...',
       attachment: '附件上傳',
       attachmentNote: '拖拽設計稿至此，或點擊上傳',
-      submit: '提交詢價',
+      submit: '獲取免費報價 →',
       submitting: '發送中...',
       successTitle: '詢價已提交！',
       successDesc: '我們已收到您的需求，將在24小時內以郵件回覆報價。',
@@ -114,6 +115,17 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
       required: '必填',
       fileTooLarge: '單個檔案不能超過10MB',
       maxFiles: '最多只能上傳5個檔案',
+      socialProof: '已服務 2,000+ 香港企業及品牌｜Google 評價 4.9★',
+      privacyNote: '您提交的資料僅用於報價，絕不用於其他用途',
+      flowLabel: '提交需求 → 2小時內收報價 → 確認下單生產',
+      submitNote: '無需註冊・無需信用卡',
+      whatsappShortcut: '急單？直接 WhatsApp 我們',
+      trustItems: [
+        { icon: '⚡', label: '2小時內回覆報價' },
+        { icon: '✅', label: '免費報價・無隱藏收費' },
+        { icon: '🏭', label: '香港註冊・自設廠房' },
+        { icon: '🚚', label: '指定產品即日速遞' },
+      ],
     },
     en: {
       contactInfo: 'Contact Information',
@@ -136,7 +148,7 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
       messagePlaceholder: 'Please describe your printing needs: product type, paper, finishing, delivery time...',
       attachment: 'Attachment Upload',
       attachmentNote: 'Drag & drop design files, or click to upload',
-      submit: 'Submit Inquiry',
+      submit: 'Get My Free Quote →',
       submitting: 'Sending...',
       successTitle: 'Inquiry Submitted!',
       successDesc: 'We have received your request and will reply with a quote within 24 hours.',
@@ -144,6 +156,17 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
       required: 'Required',
       fileTooLarge: 'Each file must not exceed 10MB',
       maxFiles: 'Maximum 5 files allowed',
+      socialProof: 'Trusted by 2,000+ HK businesses | 4.9★ on Google',
+      privacyNote: 'Your submission is used only for quotation purposes and never for other uses.',
+      flowLabel: 'Submit your needs → Receive a quote within 2 hours → Confirm production',
+      submitNote: 'No signup, no credit card',
+      whatsappShortcut: 'In a hurry? Chat on WhatsApp',
+      trustItems: [
+        { icon: '⚡', label: 'Quote within 2 hours' },
+        { icon: '✅', label: 'Free quote, no hidden fees' },
+        { icon: '🏭', label: 'HK registered, own factory' },
+        { icon: '🚚', label: 'Same-day delivery available' },
+      ],
     },
     ja: {
       contactInfo: '連絡先情報',
@@ -166,7 +189,7 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
       messagePlaceholder: '印刷のご要望を詳しくご記入ください：製品、紙質、加工、納期など...',
       attachment: 'ファイル添付',
       attachmentNote: 'ドラッグ&ドロップでデザインファイルをアップロード',
-      submit: 'お見積もり依頼',
+      submit: '無料見積もりを取得 →',
       submitting: '送信中...',
       successTitle: '依頼を送信しました！',
       successDesc: '24時間以内にメールで見積もりをご返信いたします。',
@@ -174,6 +197,17 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
       required: '必須',
       fileTooLarge: '各ファイルは10MB以下にしてください',
       maxFiles: '最大5ファイルまでアップロード可能です',
+      socialProof: '香港企業2,000社以上の実績｜Google評価4.9★',
+      privacyNote: 'ご提出いただいた情報は見積もりのためにのみ使用し、他用途には使用しません。',
+      flowLabel: '要件を送信 → 2時間以内に見積もりを受領 → 生産確認',
+      submitNote: '登録不要・カード不要',
+      whatsappShortcut: '急ぎの方は WhatsApp で直接ご連絡',
+      trustItems: [
+        { icon: '⚡', label: '2時間以内に見積回答' },
+        { icon: '✅', label: '見積無料・追加料金なし' },
+        { icon: '🏭', label: '香港登記・自社工場' },
+        { icon: '🚚', label: '即日配送対応商品あり' },
+      ],
     },
   }[locale];
 
@@ -329,7 +363,12 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
   }
 
   return (
-    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+      <div className="space-y-3">
+        <QuoteTrustBar items={t.trustItems} />
+        <p className="text-center text-[13px] font-medium text-slate-500">{t.socialProof}</p>
+      </div>
+
       {/* ===== 聯絡資訊 ===== */}
       <div className="bg-white rounded-2xl border border-gray-100 p-6 md:p-8 shadow-sm">
         <div className="flex items-center gap-2 mb-6">
@@ -530,6 +569,17 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
             )}
           </div>
         )}
+
+        <a
+          href={generateWhatsAppLink(locale, { source: 'quote-form' })}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex w-full items-center justify-center gap-2 rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm font-semibold text-emerald-700 transition-colors hover:bg-emerald-100"
+        >
+          <MessageCircle className="w-4 h-4" />
+          {t.whatsappShortcut}
+        </a>
+
         <button
           type="submit"
           disabled={isSubmitting}
@@ -538,6 +588,12 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
           {isSubmitting ? <Loader2 className="w-5 h-5 animate-spin" /> : <Send className="w-5 h-5" />}
           {isSubmitting ? t.submitting : t.submit}
         </button>
+
+        <p className="text-center text-[12.5px] text-slate-500">{t.submitNote}</p>
+        <div className="w-full rounded-xl bg-slate-50 px-4 py-3 text-center">
+          <p className="text-[12.5px] font-semibold text-slate-700">🔒 {t.privacyNote}</p>
+          <p className="mt-1 text-[12.5px] text-slate-500">{t.flowLabel}</p>
+        </div>
       </div>
     </form>
   );
