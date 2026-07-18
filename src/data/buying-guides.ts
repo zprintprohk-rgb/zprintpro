@@ -98,7 +98,7 @@ export const buyingGuides: BuyingGuide[] = [
     },
     keywords: {
       'zh-hk': '貼紙印刷選購,貼紙材質,防水貼紙,透明貼紙,異形貼紙,模切貼紙,燙金貼紙,貼紙價格,香港貼紙印刷,貼紙訂造',
-      en: 'sticker buying guide,sticker materials,waterproof stickers,transparent stickers,die cut stickers,foil stickers,sticker prices,hong kong sticker printing',
+      en: 'sticker buying guide,sticker materials,waterproof stickers,transparent stickers,die cut stickers,foil stickers,sticker prices,sticker printing usa',
       ja: 'ステッカー選び方,ステッカー材質,防水ステッカー,透明ステッカー,ダイカットステッカー,箔押しステッカー,ステッカー価格',
     },
     category: { 'zh-hk': '貼紙知識', en: 'Sticker Guide', ja: 'ステッカーガイド' },
@@ -160,12 +160,12 @@ export const buyingGuides: BuyingGuide[] = [
     },
     description: {
       'zh-hk': 'A4傳單、A5傳單、對摺、三摺頁...傳單印刷點樣揀？智印雲為您整理香港傳單印刷的完整選購攻略，助您用最抵價錢達到最佳宣傳效果。',
-      en: 'A4 flyers, A5 flyers, bi-fold, tri-fold - a complete guide to choosing flyer printing in Hong Kong for maximum marketing impact.',
+      en: 'A4 flyers, A5 flyers, bi-fold, tri-fold - a complete guide to choosing flyer printing for maximum marketing impact.',
       ja: 'A4チラシ、A5チラシ、二つ折り、三つ折り—香港チラシ印刷の選び方完全ガイド。',
     },
     keywords: {
       'zh-hk': '傳單印刷選購,A4傳單,A5傳單,傳單紙質,傳單尺寸,摺頁傳單,傳單價格,香港傳單印刷,宣傳單張',
-      en: 'flyer buying guide,A4 flyers,A5 flyers,flyer paper,flyer sizes,folded leaflets,flyer prices,hong kong flyer printing',
+      en: 'flyer buying guide,A4 flyers,A5 flyers,flyer paper,flyer sizes,folded leaflets,flyer prices,flyer printing usa',
       ja: 'チラシ選び方,A4チラシ,A5チラシ,チラシ用紙,チラシサイズ,折りパンフレット,チラシ価格',
     },
     category: { 'zh-hk': '傳單知識', en: 'Flyer Guide', ja: 'チラシガイド' },
@@ -186,7 +186,7 @@ export const buyingGuides: BuyingGuide[] = [
 <h3>六、常見問題</h3>
 <div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：傳單最小印量？</strong><br/>A：100 張起，多 500 張有折扣。</p><p><strong>Q：雙面會透底嗎？</strong><br/>A：157g 以上銅版紙一般不會，深色設計選 200g。</p><p><strong>Q：交貨時間？</strong><br/>A：標準 3-5 個工作日，急件可 24 小時。</p><p><strong>Q：設計有模板嗎？</strong><br/>A：智印雲提供 100+ 款免費模板。</p></div>
 <p>想了解更多傳單印刷？立即 <a href="https://wa.me/8619880851334" target="_blank">WhatsApp 聯絡智印雲</a> 獲取報價！</p>`,
-      'en': `<p>Flyers are one of the most used marketing tools for SMEs. Compared to digital ads, printed flyers offer controllable cost, precise reach, no algorithm dependency. This article breaks down HK flyer printing selection across 6 dimensions: size, paper, folding, distribution, surface finish, QR design.</p>
+      'en': `<p>Flyers are one of the most used marketing tools for SMEs. Compared to digital ads, printed flyers offer controllable cost, precise reach, no algorithm dependency. This article breaks down flyer printing selection across 6 dimensions: size, paper, folding, distribution, surface finish, QR design.</p>
 <h3>1. How to Choose Flyer Size</h3>
 <table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Size</th><th class="border p-2 text-left">Best For</th><th class="border p-2 text-left">Unit Cost</th></tr></thead><tbody><tr><td class="border p-2">A4 single-sided</td><td class="border p-2">Event promo, new product launch</td><td class="border p-2">US$0.02-0.04</td></tr><tr><td class="border p-2">A4 double-sided</td><td class="border p-2">Menu, product catalog, service intro</td><td class="border p-2">US$0.03-0.06</td></tr><tr><td class="border p-2">A5 single-sided</td><td class="border p-2">Discount coupon, voucher, street</td><td class="border p-2">US$0.01-0.02</td></tr><tr><td class="border p-2">A5 double-sided</td><td class="border p-2">Small catalog, invitation</td><td class="border p-2">US$0.02-0.04</td></tr><tr><td class="border p-2">Tri-fold DL</td><td class="border p-2">Premium service intro, B2B</td><td class="border p-2">US$0.04-0.08</td></tr></tbody></table>
 <h3>2. Paper Selection</h3>
@@ -194,7 +194,7 @@ export const buyingGuides: BuyingGuide[] = [
 <h3>3. Folding & Design Variations</h3>
 <ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>Flat (no fold)</strong>: A4/A5 standard, lowest cost</li><li><strong>Bi-fold</strong>: A3 folded to A4, +30% folding cost</li><li><strong>Tri-fold DL</strong>: A4 folded into DL envelope size, B2B common</li><li><strong>Accordion Fold</strong>: Multi-fold continuous info, ideal for product catalogs</li><li><strong>Specialty Folds</strong>: Step, cross, etc. creative folds</li></ol>
 <h3>4. Distribution Strategy & ROI Improvement</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Strategy</th><th class="border p-2 text-left">Method</th><th class="border p-2 text-left">Benefit</th></tr></thead><tbody><tr><td class="border p-2">Target Audience</td><td class="border p-2">Pick location by customer profile</td><td class="border p-2">MTR, mall, community</td></tr><tr><td class="border p-2">QR Code</td><td class="border p-2">WhatsApp / IG QR</td><td class="border p-2">Offline-to-online</td></tr><tr><td class="border p-2">Limited-time Offer</td><td class="border p-2">"7-day only" / "With flyer"</td><td class="border p-2">Drive immediate conversion</td></tr><tr><td class="border p-2">A/B Testing</td><td class="border p-2">Compare two flyer versions</td><td class="border p-2">Optimize ROI</td></tr><tr><td class="border p-2">Data Tracking</td><td class="border p-2">Different QR codes per channel</td><td class="border p-2">Evaluate channel efficacy</td></tr></tbody></table>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Strategy</th><th class="border p-2 text-left">Method</th><th class="border p-2 text-left">Benefit</th></tr></thead><tbody><tr><td class="border p-2">Target Audience</td><td class="border p-2">Pick location by customer profile</td><td class="border p-2">Transit hubs, malls, community centers</td></tr><tr><td class="border p-2">QR Code</td><td class="border p-2">WhatsApp / IG QR</td><td class="border p-2">Offline-to-online</td></tr><tr><td class="border p-2">Limited-time Offer</td><td class="border p-2">"7-day only" / "With flyer"</td><td class="border p-2">Drive immediate conversion</td></tr><tr><td class="border p-2">A/B Testing</td><td class="border p-2">Compare two flyer versions</td><td class="border p-2">Optimize ROI</td></tr><tr><td class="border p-2">Data Tracking</td><td class="border p-2">Different QR codes per channel</td><td class="border p-2">Evaluate channel efficacy</td></tr></tbody></table>
 <h3>5. Surface Finish Options</h3>
 <ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Glossy Lamination</strong>: Bright surface, vibrant colors, ideal for product promo</li><li><strong>Matte Lamination</strong>: Soft texture, ideal for premium brands and menus</li><li><strong>Spot UV</strong>: Highlight logo or image</li><li><strong>Foil Stamping (Gold/Silver)</strong>: Premium brand flyers favorite</li><li><strong>Perforation / Score Lines</strong>: Easy tear, fold</li></ul>
 <h3>6. Frequently Asked Questions</h3>
@@ -227,12 +227,12 @@ export const buyingGuides: BuyingGuide[] = [
     },
     description: {
       'zh-hk': '禮品盒、快遞盒、化妝品盒、食品盒...包裝盒點樣揀？智印雲為您整理香港包裝盒定制的完整選購攻略。',
-      en: 'Gift boxes, shipping boxes, cosmetic boxes, food boxes - a complete guide to custom packaging in Hong Kong.',
+      en: 'Gift boxes, shipping boxes, cosmetic boxes, food boxes - a complete guide to custom packaging for US brands.',
       ja: 'ギフトボックス、配送箱、化粧品箱、食品箱—香港パッケージ印刷の選び方完全ガイド。',
     },
     keywords: {
       'zh-hk': '包裝盒選購,包裝盒定制,禮品盒,快遞盒,化妝品盒,食品盒,包裝盒材質,包裝盒工藝,香港包裝盒印刷',
-      en: 'packaging buying guide,custom boxes,gift boxes,shipping boxes,cosmetic boxes,food boxes,packaging materials,hong kong packaging',
+      en: 'packaging buying guide,custom boxes,gift boxes,shipping boxes,cosmetic boxes,food boxes,packaging materials,custom packaging usa',
       ja: 'パッケージ選び方,カスタム箱,ギフトボックス,配送箱,化粧品箱,食品箱,パッケージ材質',
     },
     category: { 'zh-hk': '包裝知識', en: 'Packaging Guide', ja: 'パッケージガイド' },
@@ -253,7 +253,7 @@ export const buyingGuides: BuyingGuide[] = [
 <h3>六、常見問題</h3>
 <div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：包裝盒最少訂幾多個？</strong><br/>A：100 個起。禮品盒標準起訂量。</p><p><strong>Q：有無提供設計服務？</strong><br/>A：提供，HK$800/款起，含 3D 模擬圖。</p><p><strong>Q：環保盒材質有咩選擇？</strong><br/>A：FSC 認證紙板 + 大豆油墨 + PLA 淋膜。</p><p><strong>Q：可以製作特殊形狀嗎？</strong><br/>A：可以，異形模切按客戶要求訂製。</p></div>
 <p>想了解更多包裝盒定製？立即 <a href="https://wa.me/8619880851334" target="_blank">WhatsApp 聯絡智印雲</a> 獲取報價！</p>`,
-      'en': `<p>Custom packaging is critical for brand upgrades. With diverse box types, materials, and finishes, business owners often feel confused. This article systematically breaks down HK custom packaging selection across 6 dimensions: box types, materials, finishes, applications, printing processes, and decision framework.</p>
+      'en': `<p>Custom packaging is critical for brand upgrades. With diverse box types, materials, and finishes, business owners often feel confused. This article systematically breaks down custom packaging selection across 6 dimensions: box types, materials, finishes, applications, printing processes, and decision framework.</p>
 <h3>1. Common Box Type Categories</h3>
 <table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Box Type</th><th class="border p-2 text-left">Features</th><th class="border p-2 text-left">Typical Use</th></tr></thead><tbody><tr><td class="border p-2">Telescope Box</td><td class="border p-2">Top + bottom separated, premium gifts</td><td class="border p-2">Premium gifts, jewelry</td></tr><tr><td class="border p-2">Book Box</td><td class="border p-2">Opens like a book, flip cover</td><td class="border p-2">Premium brands, collectibles</td></tr><tr><td class="border p-2">Drawer Box</td><td class="border p-2">Pull-out design, mysterious</td><td class="border p-2">Jewelry, limited editions</td></tr><tr><td class="border p-2">Flip Cover</td><td class="border p-2">Single flap opening, clean</td><td class="border p-2">Electronics, stationery</td></tr><tr><td class="border p-2">Window Box</td><td class="border p-2">Transparent window</td><td class="border p-2">Food, cosmetics display</td></tr><tr><td class="border p-2">Standard Folding</td><td class="border p-2">Corrugated / card folded</td><td class="border p-2">Shipping, takeaway</td></tr></tbody></table>
 <h3>2. Material Selection</h3>
@@ -294,12 +294,12 @@ export const buyingGuides: BuyingGuide[] = [
     },
     description: {
       'zh-hk': 'A1海報、A2海報、戶外海報、藝術海報...海報印刷點樣揀？智印雲為您整理香港海報印刷的完整選購攻略。',
-      en: 'A1 posters, A2 posters, outdoor posters, art posters - a complete guide to poster printing in Hong Kong.',
+      en: 'A1 posters, A2 posters, outdoor posters, art posters - a complete guide to poster printing for US events and retail.',
       ja: 'A1ポスター、A2ポスター、屋外ポスター、アートポスター—香港ポスター印刷の選び方完全ガイド。',
     },
     keywords: {
       'zh-hk': '海報印刷選購,A1海報,A2海報,戶外海報,藝術海報,海報紙質,海報尺寸,香港海報印刷',
-      en: 'poster buying guide,A1 posters,A2 posters,outdoor posters,art posters,poster paper,poster sizes,hong kong poster printing',
+      en: 'poster buying guide,A1 posters,A2 posters,outdoor posters,art posters,poster paper,poster sizes,poster printing usa',
       ja: 'ポスター選び方,A1ポスター,A2ポスター,屋外ポスター,アートポスター,ポスター用紙,ポスターサイズ',
     },
     category: { 'zh-hk': '海報知識', en: 'Poster Guide', ja: 'ポスターガイド' },
@@ -320,9 +320,9 @@ export const buyingGuides: BuyingGuide[] = [
 <h3>六、常見問題</h3>
 <div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：A3 和 A0 海報價差幾多？</strong><br/>A：A3 約 HK$8-15，A0 約 HK$60-120。差價主要來自紙張成本。</p><p><strong>Q：PP 膠片 vs 銅版紙？</strong><br/>A：PP 防水耐用適合戶外，銅版紙經濟適合室內。</p><p><strong>Q：需要什麼文件格式？</strong><br/>A：AI / PDF 矢量檔 + 300dpi + CMYK。A0 以上可用 150dpi。</p><p><strong>Q：可以加易拉架嗎？</strong><br/>A：可以，智印雲提供海報 + 易拉架配套方案。</p></div>
 <p>想了解更多海報印刷？立即 <a href="https://wa.me/8619880851334" target="_blank">WhatsApp 聯絡智印雲</a> 獲取報價與設計建議！</p>`,
-      'en': `<p>Posters are among the most visually impactful printed items for brand communication. From mall promotions and product launches to brand image campaigns and cultural art exhibitions, a high-quality printed poster captures audience attention instantly. This article systematically breaks down HK poster printing selection across 6 dimensions: size, paper, finish, design tips, processing options, and decision framework.</p>
+      'en': `<p>Posters are among the most visually impactful printed items for brand communication. From mall promotions and product launches to brand image campaigns and cultural art exhibitions, a high-quality printed poster captures audience attention instantly. This article systematically breaks down poster printing selection across 6 dimensions: size, paper, finish, design tips, processing options, and decision framework.</p>
 <h3>1. Common Poster Sizes Comparison</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Size</th><th class="border p-2 text-left">Best For</th><th class="border p-2 text-left">Price Range</th></tr></thead><tbody><tr><td class="border p-2">A3 (297 × 420mm)</td><td class="border p-2">Mall windows, restaurant interior</td><td class="border p-2">US$1-2</td></tr><tr><td class="border p-2">A2 (420 × 594mm)</td><td class="border p-2">MTR station, elevator ads</td><td class="border p-2">US$2-4</td></tr><tr><td class="border p-2">A1 (594 × 841mm)</td><td class="border p-2">Brand wall, exhibition</td><td class="border p-2">US$4-8</td></tr><tr><td class="border p-2">A0 (841 × 1189mm)</td><td class="border p-2">Large events, outdoor</td><td class="border p-2">US$8-15</td></tr><tr><td class="border p-2">B2 (500 × 707mm)</td><td class="border p-2">Restaurant menus, exhibition backdrops</td><td class="border p-2">US$2.5-5</td></tr></tbody></table>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Size</th><th class="border p-2 text-left">Best For</th><th class="border p-2 text-left">Price Range</th></tr></thead><tbody><tr><td class="border p-2">A3 (297 × 420mm)</td><td class="border p-2">Mall windows, restaurant interior</td><td class="border p-2">US$1-2</td></tr><tr><td class="border p-2">A2 (420 × 594mm)</td><td class="border p-2">Transit stations, elevator ads</td><td class="border p-2">US$2-4</td></tr><tr><td class="border p-2">A1 (594 × 841mm)</td><td class="border p-2">Brand wall, exhibition</td><td class="border p-2">US$4-8</td></tr><tr><td class="border p-2">A0 (841 × 1189mm)</td><td class="border p-2">Large events, outdoor</td><td class="border p-2">US$8-15</td></tr><tr><td class="border p-2">B2 (500 × 707mm)</td><td class="border p-2">Restaurant menus, exhibition backdrops</td><td class="border p-2">US$2.5-5</td></tr></tbody></table>
 <h3>2. Paper Selection Guide</h3>
 <ul class="list-disc pl-5 my-3 space-y-1"><li><strong>157g Art Paper</strong>: Most economical, vivid color reproduction, suitable for most indoor posters</li><li><strong>200g Art Paper</strong>: Better stiffness, no show-through, premium posters</li><li><strong>250g Art Paper</strong>: Near card thickness, strong tactile, brand image posters</li><li><strong>PP Film (matte/gloss)</strong>: Waterproof, durable, suitable for long-term display or outdoor</li><li><strong>Canvas</strong>: Textured, ideal for art exhibitions</li><li><strong>Waterproof Photo Paper</strong>: High gloss, saturation, photo-style posters</li></ul>
 <h3>3. Surface Finishes</h3>
@@ -361,12 +361,12 @@ export const buyingGuides: BuyingGuide[] = [
     },
     description: {
       'zh-hk': '牛皮紙袋、白卡紙袋、禮品紙袋...紙袋印刷點樣揀？智印雲為您整理香港紙袋印刷的完整選購攻略。',
-      en: 'Kraft bags, white card bags, gift bags - a complete guide to paper bag printing in Hong Kong.',
+      en: 'Kraft bags, white card bags, gift bags - a complete guide to paper bag printing for US retail.',
       ja: 'クラフト袋、白卡紙袋、ギフト袋—香港紙袋印刷の選び方完全ガイド。',
     },
     keywords: {
       'zh-hk': '紙袋印刷選購,牛皮紙袋,白卡紙袋,禮品紙袋,紙袋尺寸,紙袋紙質,香港紙袋印刷,環保紙袋',
-      en: 'paper bag buying guide,kraft paper bags,white card bags,gift bags,paper bag sizes,paper bag materials,hong kong paper bag printing',
+      en: 'paper bag buying guide,kraft paper bags,white card bags,gift bags,paper bag sizes,paper bag materials,paper bag printing usa',
       ja: '紙袋選び方,クラフト袋,白卡紙袋,ギフト袋,紙袋サイズ,紙袋材質,香港紙袋印刷',
     },
     category: { 'zh-hk': '紙袋知識', en: 'Paper Bag Guide', ja: '紙袋ガイド' },
@@ -387,7 +387,7 @@ export const buyingGuides: BuyingGuide[] = [
 <h3>六、常見問題</h3>
 <div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：紙袋最少印幾多個？</strong><br/>A：100 個起訂。手挽和印刷複雜度會影響交期。</p><p><strong>Q：牛皮紙 vs 白卡紙？</strong><br/>A：牛皮紙環保復古，白卡紙挺度最佳，印刷色彩更鮮豔。</p><p><strong>Q：紙袋能承重幾多？</strong><br/>A：扭繩 5-8kg、扁平 3-5kg、打孔 2-3kg、絲帶 1-2kg。</p><p><strong>Q：FSC 認證紙袋貴幾多？</strong><br/>A：比常規紙袋貴 10-20%，但符合 ESG 趨勢。</p></div>
 <p>想了解更多紙袋印刷？立即 <a href="https://wa.me/8619880851334" target="_blank">WhatsApp 聯絡智印雲</a> 獲取報價與設計建議！</p>`,
-      'en': `<p>Paper bags are key to brand packaging. Whether retail shopping, gift packaging, or event memorabilia, a quality branded paper bag dramatically elevates customer experience and brand premium. This article systematically breaks down HK paper bag printing selection across 6 dimensions: materials, sizes, handles, printing processes, design trends, and decision framework.</p>
+      'en': `<p>Paper bags are key to brand packaging. Whether retail shopping, gift packaging, or event memorabilia, a quality branded paper bag dramatically elevates customer experience and brand premium. This article systematically breaks down paper bag printing selection across 6 dimensions: materials, sizes, handles, printing processes, design trends, and decision framework.</p>
 <h3>1. How to Choose Paper Bag Material</h3>
 <table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Material</th><th class="border p-2 text-left">Features</th><th class="border p-2 text-left">Best For</th></tr></thead><tbody><tr><td class="border p-2">White Kraft</td><td class="border p-2">Pure white, high stiffness, dye-able</td><td class="border p-2">Premium brands, cosmetics, gifts</td></tr><tr><td class="border p-2">Yellow Kraft</td><td class="border p-2">Eco, vintage, affordable</td><td class="border p-2">Coffee shops, organic brands, retail</td></tr><tr><td class="border p-2">White Card</td><td class="border p-2">Best stiffness, smooth surface</td><td class="border p-2">Luxury, jewelry</td></tr><tr><td class="border p-2">Art Paper</td><td class="border p-2">Vivid colors, fine printing</td><td class="border p-2">Promotions, holiday gifts</td></tr><tr><td class="border p-2">Black Card</td><td class="border p-2">Mysterious premium, unique texture</td><td class="border p-2">High-end, limited editions</td></tr><tr><td class="border p-2">Recycled</td><td class="border p-2">Eco certified, distinctive texture</td><td class="border p-2">Eco brands, organic products</td></tr></tbody></table>
 <h3>2. Common Paper Bag Sizes</h3>
@@ -429,12 +429,12 @@ export const buyingGuides: BuyingGuide[] = [
     },
     description: {
       'zh-hk': 'X展架、易拉寶、背景板、戶外大橫幅...噴繪廣告點樣揀？智印雲為您整理香港噴繪廣告的完整選購攻略。',
-      en: 'X-stands, roll-ups, backdrops, outdoor banners — a complete guide to banner printing in Hong Kong.',
+      en: 'X-stands, roll-ups, backdrops, outdoor banners — a complete guide to banner printing for US events.',
       ja: 'Xスタンド、ロールアップ、背景板、屋外横断幕—香港バナー印刷の選び方完全ガイド。',
     },
     keywords: {
       'zh-hk': '噴繪廣告選購,X展架,易拉寶,背景板,戶外橫幅,香港噴繪,展覽展示',
-      en: 'banner buying guide,x-stand,roll-up,backdrop,outdoor banner,hong kong banner printing,exhibition display',
+      en: 'banner buying guide,x-stand,roll-up,backdrop,outdoor banner,banner printing usa,exhibition display',
       ja: 'バナー選び方,Xスタンド,ロールアップ,背景板,屋外バナー,香港バナー印刷,展示会',
     },
     category: { 'zh-hk': '廣告知識', en: 'Banner Guide', ja: 'バナーガイド' },
@@ -455,7 +455,7 @@ export const buyingGuides: BuyingGuide[] = [
 <h3>六、常見問題</h3>
 <div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：易拉寶可以用幾多次？</strong><br/>A：鋁合金支架可用 100+ 次，PP 紙張視乎保存情況可重複使用 5-10 次。</p><p><strong>Q：展會用嘅噴繪要提前幾耐製作？</strong><br/>A：建議 5-7 個工作天，旺季需 2 週。</p><p><strong>Q：戶外大橫幅可以防風雨嗎？</strong><br/>A：PVC 燈布防水防曬，正常 1-3 年壽命。</p><p><strong>Q：智印雲提供現場安裝嗎？</strong><br/>A：香港地區提供場內安裝服務（另收費）。</p></div>
 <p>想了解更多噴繪廣告？立即 <a href="https://wa.me/8619880851334" target="_blank">WhatsApp 聯絡智印雲</a> 獲取展會方案！</p>`,
-      'en': `<p>Banner advertising is an essential visual tool for commercial activities. From X-stands and roll-ups to backdrops and outdoor banners, banner ads attract massive attention quickly. This article systematically breaks down HK banner advertising printing across 6 dimensions: X-stands, roll-ups, backdrops, outdoor, material/process, and decision framework.</p>
+      'en': `<p>Banner advertising is an essential visual tool for commercial activities. From X-stands and roll-ups to backdrops and outdoor banners, banner ads attract massive attention quickly. This article systematically breaks down banner advertising printing across 6 dimensions: X-stands, roll-ups, backdrops, outdoor, material/process, and decision framework.</p>
 <h3>1. X-Stand Printing</h3>
 <table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Size</th><th class="border p-2 text-left">Use</th><th class="border p-2 text-left">Bundle</th></tr></thead><tbody><tr><td class="border p-2">60 × 160cm</td><td class="border p-2">Small booth, in-store promo</td><td class="border p-2">X-stand frame</td></tr><tr><td class="border p-2">80 × 180cm</td><td class="border p-2">Standard booth, exhibition</td><td class="border p-2">X-stand frame</td></tr><tr><td class="border p-2">100 × 200cm</td><td class="border p-2">Large booth, sign-in wall</td><td class="border p-2">X-stand frame</td></tr></tbody></table>
 <h3>2. Roll-up Banner Printing</h3>
@@ -463,11 +463,11 @@ export const buyingGuides: BuyingGuide[] = [
 <h3>3. Backdrop Printing</h3>
 <ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>Standard 3 × 2m / 4 × 2.5m</strong>: Splittable</li><li><strong>Material</strong>: Black/white/silver flex banner, PVC board, pearl banner</li><li><strong>Application</strong>: Sign-in wall, stage backdrop, media interview backdrop</li><li><strong>Support</strong>: Iron stand, aluminum stand, pull-up stand</li><li><strong>Splicing</strong>: Multi-piece for transport</li></ol>
 <h3>4. Outdoor Banner Printing</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Type</th><th class="border p-2 text-left">Size</th><th class="border p-2 text-left">Material</th><th class="border p-2 text-left">Use</th></tr></thead><tbody><tr><td class="border p-2">Flex Banner</td><td class="border p-2">Custom</td><td class="border p-2">PVC coated</td><td class="border p-2">Building exterior</td></tr><tr><td class="border p-2">Vehicle Wrap</td><td class="border p-2">Custom</td><td class="border p-2">Car-grade PVC</td><td class="border p-2">Vehicle ad</td></tr><tr><td class="border p-2">Elevator Ad</td><td class="border p-2">Custom</td><td class="border p-2">Matte PP film</td><td class="border p-2">Office, mall</td></tr><tr><td class="border p-2">MTR Lightbox</td><td class="border p-2">Custom</td><td class="border p-2">Backlit film</td><td class="border p-2">MTR ad slot</td></tr><tr><td class="border p-2">Store Signage</td><td class="border p-2">Custom</td><td class="border p-2">Acrylic lightbox</td><td class="border p-2">Store signage</td></tr></tbody></table>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Type</th><th class="border p-2 text-left">Size</th><th class="border p-2 text-left">Material</th><th class="border p-2 text-left">Use</th></tr></thead><tbody><tr><td class="border p-2">Flex Banner</td><td class="border p-2">Custom</td><td class="border p-2">PVC coated</td><td class="border p-2">Building exterior</td></tr><tr><td class="border p-2">Vehicle Wrap</td><td class="border p-2">Custom</td><td class="border p-2">Car-grade PVC</td><td class="border p-2">Vehicle ad</td></tr><tr><td class="border p-2">Elevator Ad</td><td class="border p-2">Custom</td><td class="border p-2">Matte PP film</td><td class="border p-2">Office, mall</td></tr><tr><td class="border p-2">Transit Lightbox</td><td class="border p-2">Custom</td><td class="border p-2">Backlit film</td><td class="border p-2">Transit ad slot</td></tr><tr><td class="border p-2">Store Signage</td><td class="border p-2">Custom</td><td class="border p-2">Acrylic lightbox</td><td class="border p-2">Store signage</td></tr></tbody></table>
 <h3>5. Material & Process Selection</h3>
 <ul class="list-disc pl-5 my-3 space-y-1"><li><strong>PP Synthetic</strong>: Economical, short-term exhibition, indoor</li><li><strong>Photo Paper</strong>: Vibrant colors, premium feel, important occasions</li><li><strong>Flex Banner</strong>: Outdoor large area ads, waterproof durable</li><li><strong>Vehicle-grade PVC</strong>: Car wrap, removable</li><li><strong>Acrylic Lightbox</strong>: Backlit lightbox, common signage</li><li><strong>Black/White Flex Banner</strong>: Backdrop, stage</li></ul>
 <h3>6. Frequently Asked Questions</h3>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：How many times can a roll-up be reused?</strong><br/>A：Aluminum frame 100+ times; PP paper 5-10 times depending on storage.</p><p><strong>Q：How long does exhibition banner printing take?</strong><br/>A：Recommend 5-7 working days; peak season 2 weeks.</p><p><strong>Q：Are outdoor banners weatherproof?</strong><br/>A：PVC flex banner is waterproof and UV-resistant, 1-3 year lifespan.</p><p><strong>Q：Does ZprintPro offer on-site installation?</strong><br/>A：Yes, HK area installation service available (additional fee).</p></div>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：How many times can a roll-up be reused?</strong><br/>A：Aluminum frame 100+ times; PP paper 5-10 times depending on storage.</p><p><strong>Q：How long does exhibition banner printing take?</strong><br/>A：Recommend 5-7 working days; peak season 2 weeks.</p><p><strong>Q：Are outdoor banners weatherproof?</strong><br/>A：PVC flex banner is waterproof and UV-resistant, 1-3 year lifespan.</p><p><strong>Q：Does ZprintPro offer on-site installation?</strong><br/>A：Yes, installation service available in select metro areas (additional fee).</p></div>
 <p>Want more on banner advertising? Contact <a href="https://wa.me/8619880851334" target="_blank">ZprintPro via WhatsApp</a> for an exhibition package!</p>`,
       'ja': `<p>バナー広告は商業活動に必須のビジュアルツールです。X スタンド、ロールアップ、背景板、屋外横断幕まで、短時間で大量の注目を集めます。本記事は X スタンド、ロールアップ、背景板、屋外、素材/工程、選定意思決定の 6 つの側面から香港バナー広告印刷選定を体系的に整理します。</p>
 <h3>一、X スタンド印刷</h3>
@@ -497,12 +497,12 @@ export const buyingGuides: BuyingGuide[] = [
     },
     description: {
       'zh-hk': '騎馬釘、膠裝、精裝...書籍印刷點樣揀？智印雲為您整理香港書籍印刷的完整選購攻略。',
-      en: 'Saddle-stitch, perfect binding, hardcover — a complete guide to book printing in Hong Kong.',
+      en: 'Saddle-stitch, perfect binding, hardcover — a complete guide to book printing for US authors and businesses.',
       ja: '中綴じ、無線綴じ、上製本—香港書籍印刷の選び方完全ガイド。',
     },
     keywords: {
       'zh-hk': '書籍印刷選購,騎馬釘,膠裝書,精裝書,書籍裝訂,香港印書,畫冊印刷',
-      en: 'book printing buying guide,saddle stitch,perfect bound,hardcover,book binding,hong kong book printing,catalog printing',
+      en: 'book printing buying guide,saddle stitch,perfect bound,hardcover,book binding,book printing usa,catalog printing',
       ja: '書籍印刷選び方,中綴じ,無線綴じ,上製本,製本方式,香港印刷,画集印刷',
     },
     category: { 'zh-hk': '書刊知識', en: 'Book Guide', ja: '書籍ガイド' },
@@ -523,7 +523,7 @@ export const buyingGuides: BuyingGuide[] = [
 <h3>六、常見問題</h3>
 <div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：小批量 50 本可以印嗎？</strong><br/>A：可以，數碼印刷可少量。但每本單價較高。</p><p><strong>Q：騎馬釘 vs 膠裝？</strong><br/>A：騎馬釘成本低但限頁數，膠裝容量大但單本貴 HK$5-10。</p><p><strong>Q：需要什麼文件？</strong><br/>A：PDF 為主（轉曲線 + 嵌入字體），AI / INDD 可接受。</p><p><strong>Q：精裝書最貴多少？</strong><br/>A：視乎尺寸 + 工藝，HK$200-500/本起。</p></div>
 <p>想了解更多書籍印刷？立即 <a href="https://wa.me/8619880851334" target="_blank">WhatsApp 聯絡智印雲</a> 獲取報價！</p>`,
-      'en': `<p>Book printing is an important vehicle for cultural heritage. Whether corporate reports, brand manuals, training materials, or self-publishing, choosing the right binding, paper, and printing processes is critical. This article systematically breaks down HK book printing across 6 dimensions: binding, paper, cover finish, quantity/pricing, design tips, and printer selection.</p>
+      'en': `<p>Book printing is an important vehicle for cultural heritage. Whether corporate reports, brand manuals, training materials, or self-publishing, choosing the right binding, paper, and printing processes is critical. This article systematically breaks down book printing across 6 dimensions: binding, paper, cover finish, quantity/pricing, design tips, and printer selection.</p>
 <h3>1. Common Binding Options</h3>
 <table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Binding</th><th class="border p-2 text-left">Features</th><th class="border p-2 text-left">Best For</th></tr></thead><tbody><tr><td class="border p-2">Saddle Stitch</td><td class="border p-2">Lowest cost, lays flat</td><td class="border p-2">Catalogs, magazines, 32-64 page booklets</td></tr><tr><td class="border p-2">Perfect Binding</td><td class="border p-2">Aesthetic, high capacity</td><td class="border p-2">Books, textbooks, 60+ page theses</td></tr><tr><td class="border p-2">Hardcover</td><td class="border p-2">Premium, strong protection</td><td class="border p-2">Hardcover books, commemorative, collector</td></tr><tr><td class="border p-2">Spiral Binding</td><td class="border p-2">360° lay-flat</td><td class="border p-2">Notebooks, recipes, portable manuals</td></tr><tr><td class="border p-2">Loose-leaf</td><td class="border p-2">Removable add pages</td><td class="border p-2">Teaching manuals, work manuals</td></tr><tr><td class="border p-2">Sewn Perfect</td><td class="border p-2">Sturdy, lay-flat</td><td class="border p-2">Premium books, dictionaries</td></tr></tbody></table>
 <h3>2. Paper Selection</h3>
@@ -565,12 +565,12 @@ export const buyingGuides: BuyingGuide[] = [
     },
     description: {
       'zh-hk': 'PVC餐牌、過膠餐牌、硬膠套、皮革餐牌...餐牌印刷點樣揀？智印雲為您整理香港餐牌印刷的完整選購攻略。',
-      en: 'PVC menus, laminated menus, hard sleeves, leather menus — a complete guide to menu printing in Hong Kong.',
+      en: 'PVC menus, laminated menus, hard sleeves, leather menus — a complete guide to menu printing for US restaurants.',
       ja: 'PVCメニュー、ラミネートメニュー、硬質ケース、革メニュー—香港メニュー印刷の選び方完全ガイド。',
     },
     keywords: {
       'zh-hk': '餐牌印刷選購,PVC餐牌,防水餐牌,過膠餐牌,餐廳Menu,香港餐牌印刷,皮革餐牌',
-      en: 'menu printing buying guide,PVC menu,waterproof menu,laminated menu,restaurant menu,hong kong menu printing,leather menu',
+      en: 'menu printing buying guide,PVC menu,waterproof menu,laminated menu,restaurant menu,menu printing usa,leather menu',
       ja: 'メニュー印刷選び方,PVCメニュー,防水メニュー,ラミネートメニュー,レストランメニュー,香港メニュー印刷,革メニュー',
     },
     category: { 'zh-hk': '餐牌知識', en: 'Menu Guide', ja: 'メニューガイド' },
@@ -591,7 +591,7 @@ export const buyingGuides: BuyingGuide[] = [
 <h3>六、常見問題</h3>
 <div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：餐牌最少可以印幾多張？</strong><br/>A：100 張起訂，PVC 餐牌可單張訂製。</p><p><strong>Q：PVC 餐牌耐用嗎？</strong><br/>A：好的 PVC 餐牌可用 2-3 年，防水防油可擦拭。</p><p><strong>Q：需要什麼文件？</strong><br/>A：PDF（轉曲線）+ 300dpi 圖片 + CMYK。</p><p><strong>Q：餐牌可以包含電子菜單 QR Code 嗎？</strong><br/>A：可以。智印雲可直接加入 QR Code 印刷。</p></div>
 <p>想了解更多餐牌印刷？立即 <a href="https://wa.me/8619880851334" target="_blank">WhatsApp 聯絡智印雲</a> 獲取報價！</p>`,
-      'en': `<p>Menu printing is the visual calling card of a restaurant brand. A premium menu not only makes dishes look more appetizing but also elevates the overall dining experience and brand image. This article systematically breaks down HK menu printing across 6 dimensions: material, size, waterproofing, printing process, design tips, and decision framework.</p>
+      'en': `<p>Menu printing is the visual calling card of a restaurant brand. A premium menu not only makes dishes look more appetizing but also elevates the overall dining experience and brand image. This article systematically breaks down menu printing across 6 dimensions: material, size, waterproofing, printing process, design tips, and decision framework.</p>
 <h3>1. Menu Material Selection</h3>
 <table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Material</th><th class="border p-2 text-left">Features</th><th class="border p-2 text-left">Best For</th></tr></thead><tbody><tr><td class="border p-2">PVC Menu</td><td class="border p-2">Waterproof, oil-proof, wipeable</td><td class="border p-2">Hotpot, cha chaan teng, seafood</td></tr><tr><td class="border p-2">Laminated Menu</td><td class="border p-2">Waterproof, durable, affordable</td><td class="border p-2">Fast food, casual dining, coffee shop</td></tr><tr><td class="border p-2">Plastic Sleeve</td><td class="border p-2">Replaceable inner pages, economical</td><td class="border p-2">Restaurants with frequent menu changes</td></tr><tr><td class="border p-2">Leather Menu</td><td class="border p-2">Premium, fine texture</td><td class="border p-2">High-end restaurants, hotels, clubs</td></tr><tr><td class="border p-2">Laminated Art Paper</td><td class="border p-2">Vibrant, traditional</td><td class="border p-2">Western dining, coffee, light meals</td></tr><tr><td class="border p-2">Velvet-Laminated</td><td class="border p-2">Ultimate premium, soft tactile</td><td class="border p-2">Michelin, private kitchen</td></tr></tbody></table>
 <h3>2. Menu Sizes</h3>

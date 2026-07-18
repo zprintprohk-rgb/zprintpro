@@ -18,9 +18,9 @@ const content: Record<Locale, Record<RegionalContentProps['type'], string>> = {
   en: {
     trustSignals: 'Shenzhen Production Facility · Worldwide DHL/FedEx Shipping · USD/GBP/AUD Accepted · Factory Direct Pricing',
     shipping: 'Worldwide shipping via DHL Express: 3-5 days to US/UK/Australia · 5-7 days to Europe · Tracking number provided',
-    pricingNote: 'Prices shown in HKD. USD/GBP/AUD quotes available. No hidden fees — factory direct pricing guaranteed.',
+    pricingNote: 'Prices shown in USD. No hidden fees — factory direct pricing guaranteed.',
     contactCta: 'Get International Quote',
-    expertIntro: 'ZprintPro is the international printing service brand of Cailong Printing. Operating from our Shenzhen production facility, we serve cross-border printing clients in Japan, Hong Kong, US, UK, Australia, and beyond. We understand the unique requirements of international printing and offer IP-protected, ISO-certified quality manufacturing with worldwide logistics support.',
+    expertIntro: 'ZprintPro is the international printing service brand of Cailong Printing. Operating from our Shenzhen production facility, we serve cross-border printing clients in the US, UK, Australia, Japan, and beyond. We understand the unique requirements of international printing and offer IP-protected, ISO-certified quality manufacturing with worldwide logistics support.',
   },
   ja: {
     trustSignals: '品質管理徹底（QCチェック体制）· 納期厳守（航空便3-5日）· 日本語サポート対応 · ISO9001認証取得',

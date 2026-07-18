@@ -40,7 +40,7 @@ const faqData: Record<string, { q: string; a: string }[]> = {
     },
     {
       q: 'Which areas do you cover?',
-      a: 'All of Hong Kong: Kowloon, Hong Kong Island, and New Territories. Free MTR pickup or HK$50-80 door-to-door.',
+      a: 'All US addresses: DHL / FedEx 2-4 business day delivery from our Asia facility. Free shipping on orders over $99.',
     },
     {
       q: 'What if my order arrives late?',

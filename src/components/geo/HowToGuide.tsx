@@ -32,7 +32,7 @@ const I18N: Record<Locale, { title: string; subtitle: string; steps: Array<{ nam
       { name: 'Upload Design', text: 'PDF, AI, PSD, PNG, JPG supported (up to 50MB). System runs automatic preflight check.' },
       { name: 'Confirm Quote', text: 'Our team confirms final pricing (including shipping and tax) within 24 hours.' },
       { name: 'Production', text: 'Production takes 1-2 business days. Same-day rush available for urgent jobs.' },
-      { name: 'Delivery', text: 'Same-day delivery in Hong Kong. 3-7 business days for international orders.' },
+      { name: 'Delivery', text: 'Same-day production at our Asia facility. 2-4 business day DHL delivery for US orders.' },
     ],
   },
   ja: {

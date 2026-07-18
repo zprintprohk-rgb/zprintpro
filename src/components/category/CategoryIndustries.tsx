@@ -586,7 +586,7 @@ const categoryIndustryScenarios: Record<string, IndustryScenario[]> = {
       key: 'comiket',
       scenarios: {
         'zh-hk': ['Comiket 委託印刷 · 香港發', '日本 Comiket 檔期對接', 'PUR 無線裝 · 200 本起'],
-        en: ['Comiket commission · from HK', 'Japan Comiket deadline sync', 'PUR perfect bound · from 200'],
+        en: ['Comiket commission · Asia factory', 'Japan Comiket deadline sync', 'PUR perfect bound · from 200'],
         ja: ['コミケ委託印刷・香港発', '日本のコミケ締切に合わせ', 'PUR無線綴じ・200冊から'],
       },
       priority: 3, tier: 'B',

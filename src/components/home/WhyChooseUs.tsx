@@ -89,7 +89,7 @@ const translations = {
         subtitleColor: 'text-green-500',
         bgColor: 'bg-green-50',
         iconColor: 'text-green-500',
-        description: 'Free delivery on orders over HK$500',
+        description: 'Free US shipping on orders over $99',
       },
       {
         icon: Headphones,

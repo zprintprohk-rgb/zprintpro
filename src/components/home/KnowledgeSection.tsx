@@ -82,8 +82,8 @@ const translations = {
         tag: 'Brand Story',
         tagColor: 'bg-amber-100 text-amber-600',
         date: '2025-03-05',
-        title: 'The ZprintPro Story: Serving All of Hong Kong',
-        description: 'Learn about our journey from a small print shop to a leading Hong Kong printing service...',
+        title: 'The ZprintPro Story: 15+ Years of Factory-Direct Printing',
+        description: 'Learn about our journey from a small print shop to a global printing service serving 15,000+ customers in 100+ countries...',
         href: '/blog/hong-kong-printing-guide/',
       },
       {

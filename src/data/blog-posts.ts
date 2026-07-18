@@ -127,7 +127,7 @@ const bgFlyer: BlogPostMeta = {
   },
   excerpt: {
     'zh-hk': 'A4傳單、A5傳單、對摺、三摺頁...傳單印刷點樣揀？智印雲為您整理香港傳單印刷的完整選購攻略。',
-    en: 'A4 flyers, A5 flyers, bi-fold, tri-fold — a complete guide to choosing flyer printing in Hong Kong for maximum marketing impact.',
+    en: 'A4 flyers, A5 flyers, bi-fold, tri-fold — a complete guide to choosing flyer printing for maximum marketing impact.',
     ja: 'A4チラシ、A5チラシ、二つ折り、三つ折り—香港チラシ印刷の選び方完全ガイド。',
   },
   cover: {
@@ -149,7 +149,7 @@ const bgPackaging: BlogPostMeta = {
   },
   excerpt: {
     'zh-hk': '禮品盒、快遞盒、化妝品盒、食品盒...包裝盒點樣揀？智印雲為您整理香港包裝盒定制的完整選購攻略。',
-    en: 'Gift boxes, shipping boxes, cosmetic boxes, food boxes — a complete guide to custom packaging in Hong Kong.',
+    en: 'Gift boxes, shipping boxes, cosmetic boxes, food boxes — a complete guide to custom packaging for US brands.',
     ja: 'ギフトボックス、配送箱、化粧品箱、食品箱—香港パッケージ印刷の選び方完全ガイド。',
   },
   cover: {
@@ -171,7 +171,7 @@ const bgPoster: BlogPostMeta = {
   },
   excerpt: {
     'zh-hk': 'A1海報、A2海報、戶外海報、藝術海報...海報印刷點樣揀？智印雲為您整理香港海報印刷的完整選購攻略。',
-    en: 'A1 posters, A2 posters, outdoor posters, art posters — a complete guide to poster printing in Hong Kong.',
+    en: 'A1 posters, A2 posters, outdoor posters, art posters — a complete guide to poster printing for US events and retail.',
     ja: 'A1ポスター、A2ポスター、屋外ポスター、アートポスター—香港ポスター印刷の選び方完全ガイド。',
   },
   cover: {
@@ -193,7 +193,7 @@ const bgPaperBag: BlogPostMeta = {
   },
   excerpt: {
     'zh-hk': '牛皮紙袋、白卡紙袋、禮品紙袋...紙袋印刷點樣揀？智印雲為您整理香港紙袋印刷的完整選購攻略。',
-    en: 'Kraft bags, white card bags, gift bags — a complete guide to paper bag printing in Hong Kong.',
+    en: 'Kraft bags, white card bags, gift bags — a complete guide to paper bag printing for US retail.',
     ja: 'クラフト袋、白卡紙袋、ギフト袋—香港紙袋印刷の選び方完全ガイド。',
   },
   cover: {
@@ -215,7 +215,7 @@ const bgBanner: BlogPostMeta = {
   },
   excerpt: {
     'zh-hk': 'X展架、易拉寶、背景板、戶外大橫幅...噴繪廣告點樣揀？智印雲為您整理香港噴繪廣告的完整選購攻略。',
-    en: 'X-stands, roll-ups, backdrops, outdoor banners — a complete guide to banner printing in Hong Kong.',
+    en: 'X-stands, roll-ups, backdrops, outdoor banners — a complete guide to banner printing for US events.',
     ja: 'Xスタンド、ロールアップ、背景板、屋外横断幕—香港バナー印刷の選び方完全ガイド。',
   },
   cover: {
@@ -237,7 +237,7 @@ const bgBook: BlogPostMeta = {
   },
   excerpt: {
     'zh-hk': '騎馬釘、膠裝、精裝...書籍印刷點樣揀？智印雲為您整理香港書籍印刷的完整選購攻略。',
-    en: 'Saddle-stitch, perfect binding, hardcover — a complete guide to book printing in Hong Kong.',
+    en: 'Saddle-stitch, perfect binding, hardcover — a complete guide to book printing for US authors and businesses.',
     ja: '中綴じ、無線綴じ、上製本—香港書籍印刷の選び方完全ガイド。',
   },
   cover: {
@@ -259,7 +259,7 @@ const bgMenu: BlogPostMeta = {
   },
   excerpt: {
     'zh-hk': 'PVC餐牌、過膠餐牌、硬膠套、皮革餐牌...餐牌印刷點樣揀？智印雲為您整理香港餐牌印刷的完整選購攻略。',
-    en: 'PVC menus, laminated menus, hard sleeves, leather menus — a complete guide to menu printing in Hong Kong.',
+    en: 'PVC menus, laminated menus, hard sleeves, leather menus — a complete guide to menu printing for US restaurants.',
     ja: 'PVCメニュー、ラミネートメニュー、硬質ケース、革メニュー—香港メニュー印刷の選び方完全ガイド。',
   },
   cover: {
@@ -571,7 +571,7 @@ const lpPaperBagPrintingGuide: BlogPostMeta = {
   },
   excerpt: {
     'zh-hk': '牛皮紙袋、白卡紙袋、禮品紙袋、環保紙袋...紙袋印刷點樣揀？智印雲為您拆解香港紙袋印刷的材質、尺寸、手挽選擇與設計趨勢。',
-    en: 'Kraft bags, white card bags, gift bags, eco bags — a complete guide to paper bag printing in Hong Kong.',
+    en: 'Kraft bags, white card bags, gift bags, eco bags — a complete guide to paper bag printing for US boutiques, cafés, and retail brands.',
     ja: 'クラフト紙袋、白カード紙袋、ギフト紙袋、エコバッグまで、日本の boutique・カフェ・小売向けに紙袋印刷を徹底解説。30枚〜、短納期（3日〜7日出荷）、全国送料込み。',
   },
   cover: {

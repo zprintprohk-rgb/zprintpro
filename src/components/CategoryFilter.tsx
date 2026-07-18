@@ -86,8 +86,8 @@ export function CategoryFilter({ locale }: CategoryFilterProps) {
           className="w-full"
         />
         <div className="flex justify-between text-sm text-gray-500 mt-1">
-          <span>HK$0</span>
-          <span>HK$1000+</span>
+          <span>{locale === 'zh-hk' ? 'HK$0' : locale === 'ja' ? '¥0' : '$0'}</span>
+          <span>{locale === 'zh-hk' ? 'HK$1000+' : locale === 'ja' ? '¥15000+' : '$130+'}</span>
         </div>
       </div>
       

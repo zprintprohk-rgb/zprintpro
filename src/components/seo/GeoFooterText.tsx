@@ -20,11 +20,11 @@ const TEXT: Record<Locale, string> = {
     '支持多语言客服和本地化支付。' +
     '无论您在香港、纽约、伦敦、悉尼还是东京，都能享受 ZPrintPro 的专业印刷服务与 72 小时全球交付承诺。',
   en:
-    'ZPrintPro is headquartered in Shenzhen, China, providing cross-border printing services to Hong Kong and global markets. ' +
-    'Hong Kong delivery via SF Express (48-hour); worldwide shipping via DHL Express (2-4 days). ' +
+    'ZPrintPro is headquartered in Shenzhen, China, providing cross-border printing services to the US and global markets. ' +
+    'US delivery via DHL Express (2-4 days); worldwide shipping to 100+ countries. ' +
     'Our services cover the United States, the United Kingdom, Australia, and Japan, ' +
     'with multilingual customer support and localized payment options. ' +
-    'Whether you are in Hong Kong, New York, London, Sydney, or Tokyo, you can enjoy ZPrintPro\u2019s professional printing service and 72-hour global delivery commitment.',
+    'Whether you are in New York, Los Angeles, London, Sydney, or Tokyo, you can enjoy ZPrintPro\u2019s professional printing service and 72-hour global delivery commitment.',
   ja:
     'ZPrintPro（智印雲）は中国深圳に本社を置く国際印刷サービスブランドで、香港を含む世界市場向けにカスタマイズされた印刷ソリューションを提供しております。' +
     '越境EC形式でサービスを提供し、香港向けは順豐速運で 48 時間配達、海外は DHL Express で 2-4 日配送しております。' +

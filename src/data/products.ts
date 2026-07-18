@@ -202,7 +202,7 @@ export const products: Product[] = [
 <p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>ISO 9001:2015</strong> certified lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and Heidelberg 4-color offset. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
 
 <h3>Use Cases & Industries</h3>
-<p>Premium business cards are the first handshake of your brand. Best fit for private wealth managers in Central handling high-net-worth client introductions, boutique law firm partners in Admiralty preparing for trial appearances, and corporate executives coordinating rebrand rollouts across 50-500 staff. 100-card MOQ supports boutique professional runs; rush 1-3 day production is available for US-based professionals. International orders ship via DHL Express in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
+<p>Premium business cards are the first handshake of your brand. Best fit for private wealth managers in Manhattan handling high-net-worth client introductions, boutique law firm partners in Washington, D.C. preparing for trial appearances, and corporate executives coordinating rebrand rollouts across 50-500 staff. 100-card MOQ supports boutique professional runs; rush 1-3 day production is available for US-based professionals. International orders ship via DHL Express in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>100 cards. Sample orders of 10-50 cards are available for design proofing (rush fee applies).</p></details>
@@ -17108,9 +17108,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     <tr><th>Method</th><th>Coverage</th><th>Time</th><th>Cost</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>International express courier</td><td>Kowloon / Island / NT / Outlying Islands</td><td>48 hours</td><td>Free over HK$500</td></tr>
-    <tr class="border-b border-gray-200"><td>Factory pickup (by appointment)</td><td>SF Express / DHL courier points</td><td>Same day</td><td>Free</td></tr>
-    <tr class="border-b border-gray-200"><td>MTR station handoff</td><td>Mong Kok / Causeway Bay / TST / our service point</td><td>Flexible hours</td><td>Free</td></tr>
+    <tr class="border-b border-gray-200"><td>Express courier (DHL / FedEx)</td><td>USA / Canada / UK / Australia</td><td>2-4 business days</td><td>Free over $99</td></tr>
+    <tr class="border-b border-gray-200"><td>Digital proof (by email)</td><td>Worldwide</td><td>Same day</td><td>Free</td></tr>
+    <tr class="border-b border-gray-200"><td>Physical sample proofs</td><td>DHL courier worldwide</td><td>2-4 business days</td><td>Quoted per order</td></tr>
     <tr><td>International (DHL / FedEx)</td><td>Japan / Taiwan / SEA / Global</td><td>2–5 business days</td><td>Free over 100 copies</td></tr>
   </tbody>
 </table>
@@ -17151,7 +17151,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <p>ZprintPro is a global printing SaaS platform. Textbook printing is one specialized module. We support 30-second AI quoting, 72-hour global delivery, AI file pre-check, online print configuration, paper sample request, and school procurement accounts (NET 30). From inquiry to delivery, ZprintPro is designed around the actual needs of education institutions.</p>
 
 <h3>Our Production Facility</h3>
-<p>ZprintPro operates from a modern production facility in Shenzhen (Longgang District, Guangdong Province), equipped with Heidelberg offset presses, FSC-certified paper supply, and ISO 12647 color management. We provide textbook-quality printing for educational institutions, with sample proofs and material specifications available by request via email. Hong Kong delivery is via SF Express / DHL, with school delivery windows arranged per order.</p>
+<p>ZprintPro operates from a modern production facility in Shenzhen (Longgang District, Guangdong Province), equipped with Heidelberg offset presses, FSC-certified paper supply, and ISO 12647 color management. We provide textbook-quality printing for educational institutions, with sample proofs and material specifications available by request via email. US delivery is via DHL / FedEx in 2-4 business days, with school delivery windows arranged per order.</p>
 
 <h3>ZprintPro Multi-Currency Settlement</h3>
 <p>ZprintPro supports multi-currency settlement (HKD / USD / JPY / CNY) via bank wire, WeChat Pay, Alipay, and PayPal. Corporate customers can apply for NET 30 monthly billing. Education institutions and tutorial center chains enjoy exclusive school discounts. Contact customer support for a custom quote.</p>

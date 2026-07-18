@@ -99,7 +99,7 @@ const clusterNames: Record<string, Record<Locale, string>> = {
   },
   'flyer-distribution-strategy': {
     'zh-hk': '香港傳單派發策略',
-    en: 'Hong Kong Flyer Distribution Strategy',
+    en: 'US Flyer Distribution Strategy',
     ja: '香港チラシ配布戦略',
   },
   'foil-flyers-industry': {
@@ -203,7 +203,7 @@ const legacyBlogNames: Record<string, Record<Locale, string>> = {
   },
   'hong-kong-printing-guide': {
     'zh-hk': '香港印刷完全指南',
-    en: 'Hong Kong Printing Guide',
+    en: 'US Custom Printing Guide',
     ja: '香港印刷完全ガイド',
   },
   'design-file-specs': {
@@ -218,7 +218,7 @@ const legacyBlogNames: Record<string, Record<Locale, string>> = {
   },
   'mtr-advertising-specs': {
     'zh-hk': '港鐵廣告規格',
-    en: 'MTR Advertising Specs',
+    en: 'Event Poster Print Specs',
     ja: 'MTR広告規格',
   },
   'cmyk-guide': {

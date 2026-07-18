@@ -199,7 +199,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
           points: [
             'Minimum order from just 30–50 units (wedding/favor boxes), 100 units for standard sizes — perfect for startup brands to test the market.',
             '3-day standard delivery, 2-day rush service for urgent orders. Direct from our Asia factory with DHL Express worldwide delivery — no sea freight waiting.',
-            'Unit price from HK$0.8, economical without requiring bulk stockpiling.',
+            'Unit price from US$0.10, economical without requiring bulk stockpiling.',
           ],
         },
         {
@@ -248,9 +248,9 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
     serviceNodes: {
       title: 'Local Service Points',
       items: [
-        { title: 'Mong Kok Prototyping Center', description: 'Book an appointment to view physical samples — foil effects, paper texture, structural strength.' },
+        { title: 'Factory Sample Program', description: 'Book an appointment to view physical samples — foil effects, paper texture, structural strength.' },
         { title: 'Free Prototyping', description: 'Confirm appearance and structure before mass production to avoid costly mistakes.' },
-        { title: 'Island-Wide Delivery', description: 'Small batches via SF Express; large batches by dedicated truck to warehouse or office.' },
+        { title: 'US-Wide Delivery', description: 'Small batches via DHL / FedEx; large batches by freight to warehouse or office.' },
       ],
     },
     buyingGuide: {
@@ -504,7 +504,7 @@ const businessCardsContent: Record<string, CategoryLocaleContent> = {
           heading: '2. Lightning-Fast Delivery: Order Today, Receive Tomorrow',
           points: [
             '100 cards minimum order, standard 3–5 business day delivery.',
-            '24-hour rush service: confirm artwork by 11 AM, delivered next day via SF Express.',
+            '24-hour rush service: confirm artwork by 11 AM, ships next day via DHL.',
             'Worldwide coverage: DHL Express / FedEx 2-4 day delivery. Corporate clients enjoy dedicated delivery.',
           ],
         },
@@ -815,7 +815,7 @@ const bannersContent: Record<string, CategoryLocaleContent> = {
         { material: 'PP Synthetic Paper', features: 'Lightweight | Affordable | Indoor short-term | Adhesive-ready', scenarios: 'X-stands | Roll-ups | Indoor posters | Short-term events' },
         { material: 'PVC Banner Fabric', features: 'Waterproof | UV-resistant | Tear-resistant | Outdoor-grade', scenarios: 'Outdoor banners | Building hoarding | Long-term outdoor | Construction' },
         { material: 'Mesh Fabric', features: 'Wind-permeable | Wind-resistant | Large outdoor | Non-obstructive', scenarios: 'Building exteriors | Stadiums | Large events | Fencing' },
-        { material: 'Lightbox Film', features: 'Semi-translucent | Color saturation | Excellent nighttime effect', scenarios: 'MTR lightboxes | Mall lightboxes | Outdoor lightboxes | Night ads' },
+        { material: 'Lightbox Film', features: 'Semi-translucent | Color saturation | Excellent nighttime effect', scenarios: 'Transit lightboxes | Mall lightboxes | Outdoor lightboxes | Night ads' },
         { material: 'Canvas', features: 'Artistic texture | Roll-mountable | Premium display', scenarios: 'Art exhibitions | High-end events | Long-term display | Decor' },
       ],
     },
@@ -863,7 +863,7 @@ const bannersContent: Record<string, CategoryLocaleContent> = {
       { q: 'What is the maximum backdrop size?', a: 'Maximum width 3.2 meters, unlimited length. Common sizes: 3×2.2m, 4×2.4m, 6×3m. Fully customizable.' },
       { q: 'What is the fastest turnaround for banners?', a: 'X-stands/roll-ups same day; Backdrops 1–2 days; Large banners 2–3 days. Rush orders welcome.' },
       { q: 'Can I rent display stands?', a: 'Yes. We offer X-stand and roll-up frame rental with graphic replacement — ideal for one-time events.' },
-      { q: 'Do outdoor banners require permits?', a: 'Depends on location and scale. Building hoardings generally require Buildings Department approval; street banners require FEHD permits. We provide application guidance.' },
+      { q: 'Do outdoor banners require permits?', a: 'Depends on location and scale. Building wraps generally require property owner approval; street banners may require city permits. We provide application guidance.' },
       { q: 'Can banner graphics be reused?', a: 'Yes. Store properly rolled in a cool, dry place. PVC banner fabric can be reused multiple times. Folding storage creates creases.' },
       { q: 'Do you offer installation services?', a: 'Yes. Installation available in major service areas, including truss setup, lighting configuration, and on-site adjustments.' },
       { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days. Large banners may require special transport.' },
@@ -1693,7 +1693,7 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
           heading: '3. Small Batch, High Value — Corporate Procurement Choice',
           points: [
             '500 pcs minimum (digital printing) — ideal for SMEs and startups.',
-            '5,000+ pcs offset printing, unit price as low as HK$0.15/pc for large enterprises and events.',
+            '5,000+ pcs offset printing, unit price as low as US$0.02/pc for large enterprises and events.',
             'Same-day delivery (digital, 500–2,000 pcs) — urgent business correspondence without delay.',
           ],
         },
@@ -1737,7 +1737,7 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
       items: [
         { title: 'Free Envelope Templates', description: 'Western, Chinese, and window envelope templates available for designers to start quickly.' },
         { title: 'Brand Envelope Design', description: 'Professional designers create unique envelope designs to elevate your corporate image.' },
-        { title: 'Bulk Order Discounts', description: '5,000+ pcs enjoy offset printing bulk rates, as low as HK$0.15/pc.' },
+        { title: 'Bulk Order Discounts', description: '5,000+ pcs enjoy offset printing bulk rates, as low as US$0.02/pc.' },
       ],
     },
     buyingGuide: {
@@ -1746,11 +1746,11 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
         'When choosing envelope size, first consider the document size. Folded A4 fits DL; unfolded A4 needs C4; A5 fits C5. Chinese envelopes suit traditional business and cultural events. If unsure, contact our customer service team for advice.',
         'Paper choice affects brand image. White card suits general business letters — economical and practical. Kraft paper suits creative brands and e-commerce — vintage feel and eco-friendly. Pearl paper suits high-end invitations and VIP mail — pearlescent sheen elevates perception.',
         'Special finishing can transform ordinary envelopes into brand assets. Foil-stamped company names boost recognition; embossing adds tactile memory; window designs save writing time. We recommend at least one special finish so every letter becomes brand exposure.',
-        'Local searches commonly include "envelope printing," "DL envelope," and "invitation envelope." Finance, legal, and event companies are often located in Central, Admiralty, or Kowloon East, with high requirements for window positioning and confidentiality. Confirm during quoting whether address overprinting or variable data is needed.',
+        'Local searches commonly include "envelope printing," "DL envelope," and "invitation envelope." Finance, legal, and event companies are often located in major downtown business districts, with high requirements for window positioning and confidentiality. Confirm during quoting whether address overprinting or variable data is needed.',
       ],
     },
     faq: [
-      { q: 'What is the minimum order for envelopes?', a: '500 pcs (digital printing). 5,000+ pcs recommended for offset printing, as low as HK$0.15/pc.' },
+      { q: 'What is the minimum order for envelopes?', a: '500 pcs (digital printing). 5,000+ pcs recommended for offset printing, as low as US$0.02/pc.' },
       { q: 'What envelope sizes are available?', a: 'DL, C5, C4, Chinese #5/#7/#9. Fully custom sizes supported.' },
       { q: 'Do you print window envelopes?', a: 'Yes. Standard window 40×90mm. Position and size fully customizable.' },
       { q: 'What paper options are available?', a: 'White card, kraft paper, pearl paper, colored paper, textured paper — 20+ options.' },
@@ -2261,7 +2261,7 @@ const redPacketsContent: Record<string, CategoryLocaleContent> = {
           heading: '2. Small Batch, High Quality — Corporate Customization Choice',
           points: [
             '500 pcs minimum (digital printing) — ideal for SMEs and startups creating CNY gifts.',
-            '5,000+ pcs offset printing, unit price as low as HK$0.8/pc for large enterprises and brand campaigns.',
+            '5,000+ pcs offset printing, unit price as low as US$0.10/pc for large enterprises and brand campaigns.',
             'Variable data printing supported — each packet can feature different employee names or blessings (personalized gifting).',
           ],
         },
@@ -2322,11 +2322,11 @@ const redPacketsContent: Record<string, CategoryLocaleContent> = {
         'When choosing red packets, first consider usage and budget. Corporate bulk gifting suits 128gsm art paper with foil stamping — economical yet presentable. Premium brand VIP gifting suits 200gsm white card or pearl paper with embossing — excellent texture. Creative brands suit textured or eco recycled paper to convey brand values.',
         'Craftsmanship is the soul of red packets. Foil stamping is the most classic choice for traditional festivals; embossing adds tactile memory; 3D craft and laser cutting suit premium customization with high collectible value. We recommend at least one special finish to transform ordinary packets into collectible art.',
         'Timing is critical for red packet printing. We recommend starting design and printing 1–2 months in advance to avoid the pre-CNY printing rush. We offer zodiac design services and a traditional pattern library to help you complete designs quickly.',
-        'Searches for "lai see printing" and "custom red packet" concentrate before Lunar New Year. Retail gift vouchers and bank client gifts typically require color stability and batch consistency. Lock in foil-stamping plates and paper batches early, and reserve split-delivery time for multi-point receiving worldwide, Kowloon, and New Territories.',
+        'Searches for "lai see printing" and "custom red packet" concentrate before Lunar New Year. Retail gift vouchers and bank client gifts typically require color stability and batch consistency. Lock in foil-stamping plates and paper batches early, and reserve split-delivery time for multi-point receiving across multiple regions.',
       ],
     },
     faq: [
-      { q: 'What is the minimum order for red packets?', a: '500 pcs (digital printing). 5,000+ pcs recommended for offset, as low as HK$0.8/pc.' },
+      { q: 'What is the minimum order for red packets?', a: '500 pcs (digital printing). 5,000+ pcs recommended for offset, as low as US$0.10/pc.' },
       { q: 'What paper options are available?', a: '128gsm art paper, 200gsm white card, pearl paper, textured paper, eco recycled paper.' },
       { q: 'Can red packets be foil stamped or embossed?', a: 'Yes. Foil stamping, embossing, 3D craft, laser cutting, spot UV, and scented printing all available.' },
       { q: 'What is the fastest turnaround for red packets?', a: 'Digital: 3–5 days; Offset: 5–7 days; Rush: 2–3 days.' },
@@ -2807,7 +2807,7 @@ export function getDefaultCategoryContent(categorySlug: string, locale: string):
       items: [
         { title: isZh ? '深圳自有工廠' : isEn ? 'Modern Production Facility' : '自社工場 (アジア)', description: isZh ? '現代化生產基地，配備海德堡印刷設備' : isEn ? 'Modern production base at our Asia factory with Heidelberg presses' : 'アジアにある自社工場。ハイデルベルグ印刷機稼働中' },
         { title: isZh ? '免費設計諮詢' : isEn ? 'Free Design Consultation' : '無料デザイン相談', description: isZh ? '專業設計師提供一對一指導' : isEn ? 'Professional designers provide one-on-one guidance' : 'プロのデザイナーが一对一で指導' },
-        { title: isZh ? '全港順豐配送' : isEn ? 'Island-Wide SF Express' : '日本全国SF配送', description: isZh ? '小批量快遞，大批量專車直送' : isEn ? 'Small batches by express, large batches by dedicated truck' : '小ロットは宅配、大ロットは専用トラック直送' },
+        { title: isZh ? '全港順豐配送' : isEn ? 'US-Wide DHL / FedEx' : '日本全国SF配送', description: isZh ? '小批量快遞，大批量專車直送' : isEn ? 'Small batches by express, large batches by dedicated truck' : '小ロットは宅配、大ロットは専用トラック直送' },
       ],
     },
     buyingGuide: {
@@ -3261,7 +3261,7 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
           heading: '2. Small Batch, High Value — From 100 pcs',
           points: [
             '100 pcs minimum (digital printing) — perfect for small-scale test campaigns and targeted distribution.',
-            '1,000+ pcs offset printing, unit price as low as HK$0.25/pc for large-scale distribution.',
+            '1,000+ pcs offset printing, unit price as low as US$0.03/pc for large-scale distribution.',
             'Double-sided printing and multi-page folding (half-fold, tri-fold, Z-fold) — more information per sheet.',
           ],
         },
@@ -3322,11 +3322,11 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
         'When choosing flyer size, consider distribution scenario and reading distance. A6 suits mailbox drops and street handouts — lightweight and portable. A5 is the most popular size, balancing information and portability. A4 suits detailed product introductions and corporate promotion. A3 suits poster posting and window display. DL size (1/3 A4) suits mailbox drops and event invitations.',
         'Paper choice affects feel and cost. 128gsm art paper is the most economical choice for mass distribution. 157gsm offers a more substantial feel for brand image promotion. 200gsm white card provides excellent stiffness for premium products and long-term display. Eco recycled paper suits brands focused on sustainability.',
         'Folding dramatically increases information capacity. Half-fold (4 pages) suits simple product introductions; tri-fold (6 pages) is the most common format for menus and corporate introductions; Z-fold suits charts and process displays. Folded flyers cost only slightly more than flat flyers but deliver 3–5x more information.',
-        'Offline distribution worldwide commonly involves searches like "flyer printing," "A5 flyer same day," and "tri-fold brochure." Large housing estates, MTR exits, and campuses each have preferences for size and paper weight. We recommend locking down the distribution point (mailboxes / street / in-store) first before deciding on paper weight and whether lamination for moisture protection is needed.',
+        'Offline distribution worldwide commonly involves searches like "flyer printing," "A5 flyer same day," and "tri-fold brochure." Large residential communities, transit hubs, and campuses each have preferences for size and paper weight. We recommend locking down the distribution point (mailboxes / street / in-store) first before deciding on paper weight and whether lamination for moisture protection is needed.',
       ],
     },
     faq: [
-      { q: 'What is the minimum order for flyers?', a: '100 pcs (digital printing). 1,000+ pcs recommended for offset, as low as HK$0.25/pc.' },
+      { q: 'What is the minimum order for flyers?', a: '100 pcs (digital printing). 1,000+ pcs recommended for offset, as low as US$0.03/pc.' },
       { q: 'What sizes are available?', a: 'A6, A5, A4, A3, DL, and fully custom sizes.' },
       { q: 'Can flyers be double-sided printed?', a: 'Yes. Double-sided printing fully utilizes both sides, doubling information capacity.' },
       { q: 'Can flyers be folded?', a: 'Yes. Half-fold, tri-fold, Z-fold, gate-fold, and more options available.' },
@@ -3610,7 +3610,7 @@ const postersContent: Record<string, CategoryLocaleContent> = {
         'When choosing poster size, consider viewing distance and display space. A2 suits close viewing (in-store decor, display boards). A1 is the most common exhibition size, balancing visual impact and space requirements. A0 suits long-distance viewing and large spaces (conference backdrops, mall atriums). For extra-large outdoor ads, mesh material with seam output is recommended.',
         'Material choice determines poster lifespan and effect. Short-term indoor use (exhibitions, events) suits art paper or PP synthetic paper — economical with vibrant colors. Long-term indoor display suits PP synthetic paper or mounted boards that resist curling. Outdoor use must choose PVC or canvas with waterproof and UV-resistant properties for 2–3 year fade resistance.',
         'Resolution settings are often overlooked. Large posters (A0+) are viewed from distance — 72–100dpi is sufficiently clear. Excessively high resolution increases file size and processing time without improving actual visual effect. Small posters (A2) viewed at close range should use 150dpi to ensure crisp detail.',
-        'Shopping mall atriums, MTR lines, and shop windows worldwide often generate searches for "poster printing," "A1 poster," and "waterproof poster." If displaying in semi-outdoor or humid environments (such as near outlying island ferries), prioritize PP / PVC and evaluate mounting options to avoid paper edge curling from moisture.',
+        'Shopping mall atriums, transit corridors, and shop windows often generate searches for "poster printing," "A1 poster," and "waterproof poster." If displaying in semi-outdoor or humid environments (such as near outlying island ferries), prioritize PP / PVC and evaluate mounting options to avoid paper edge curling from moisture.',
       ],
     },
     faq: [
@@ -3847,7 +3847,7 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
           heading: '2. Low MOQ Flexibility — From 100 pcs',
           points: [
             '100 pcs minimum (digital printing) — perfect for new brand prototyping and limited events.',
-            '1,000+ pcs offset printing, unit price as low as HK$1.5/pc for retail chains and large events.',
+            '1,000+ pcs offset printing, unit price as low as US$0.19/pc for retail chains and large events.',
             'Multiple handle options: cotton rope, paper rope, ribbon, and leather cord for elevated brand feel.',
           ],
         },
@@ -3920,7 +3920,7 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
       ],
     },
     faq: [
-      { q: 'What is the minimum order for paper bags?', a: '100 pcs (digital printing). 1,000+ pcs recommended for offset, as low as HK$1.5/pc.' },
+      { q: 'What is the minimum order for paper bags?', a: '100 pcs (digital printing). 1,000+ pcs recommended for offset, as low as US$0.19/pc.' },
       { q: 'What paper options are available?', a: 'White card, kraft paper, black card, pearl paper, textured paper, eco recycled paper — 20+ options.' },
       { q: 'How much weight can paper bags hold?', a: 'Standard bags: 3–5kg; Reinforced version: 8–10kg.' },
       { q: 'Can sizes be customized?', a: 'Yes. Fully customizable sizes, shapes, and window designs supported.' },
@@ -4198,7 +4198,7 @@ const japanDoujinContent: Record<string, CategoryLocaleContent> = {
     serviceNodes: {
       title: 'Doujin Creator Service Points',
       items: [
-        { title: 'Mong Kok Prototyping Center', description: 'Book an appointment to view physical samples (paper + color). Pre-Comiket rush sample support.' },
+        { title: 'Factory Sample Program', description: 'Book an appointment to view physical samples (paper + color). Pre-Comiket rush sample support.' },
         { title: 'Asia Factory → Japan Direct', description: 'DHL Express DDP (Delivered Duty Paid) — recipient zero customs burden.' },
         { title: 'Small-Batch Rush Service', description: '5-book rush in 3 days, 10-book rush in 2 days. Comiket 24h emergency support.' },
       ],

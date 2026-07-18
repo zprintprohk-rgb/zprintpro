@@ -91,12 +91,12 @@ const translations = {
       },
       {
         icon: Truck,
-        title: 'SF Express Direct',
-        subtitle: 'Island-wide Coverage',
+        title: 'DHL Express Direct',
+        subtitle: 'Nationwide Coverage',
         subtitleColor: 'text-green-500',
         bgColor: 'bg-green-50',
         iconColor: 'text-green-500',
-        description: 'SF Express door-to-door delivery across HK',
+        description: 'DHL door-to-door delivery across the US',
       },
       {
         icon: Palette,

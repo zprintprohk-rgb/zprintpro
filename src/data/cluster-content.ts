@@ -38,7 +38,7 @@ export const pillarPages: PillarPage[] = [
     },
     description: {
       'zh-hk': '從材質選擇到工藝應用，全面了解香港貼紙印刷的專業知識。防水貼紙、透明貼紙、PVC貼紙、燙金貼紙一次搞懂。',
-      'en': 'From material selection to finishing techniques, master the art of custom sticker printing in Hong Kong. Waterproof, clear vinyl, PVC, and foil stickers explained.',
+      'en': 'From material selection to finishing techniques, master the art of custom sticker printing. Waterproof, clear vinyl, PVC, and foil stickers explained.',
       'ja': '素材選びから加工技術まで、香港のシール印刷を完全マスター。防水シール、透明シール、PVCシール、箔押しシールを徹底解説。',
     },
     linkedSku: 'stickers',

@@ -54,7 +54,7 @@ const translations = {
       freeShipping: 'Free intl. shipping',
       standard: 'Standard: 3-5 business days',
       express: 'Express: 1-2 business days',
-      selfPickup: 'Self pickup: Kwun Tong',
+      selfPickup: 'Rush: same-day production',
     },
     templates: {
       description: 'Download design templates to ensure your design meets printing requirements',
