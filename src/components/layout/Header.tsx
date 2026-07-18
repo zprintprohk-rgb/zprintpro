@@ -456,9 +456,39 @@ export function Header({ locale }: HeaderProps) {
         </nav>
       </div>
 
-      {/* Mobile Menu */}
-      {mobileMenuOpen && (
-        <div className="lg:hidden bg-white border-t">
+      {/* 2026-07-20 移动端 priority+ 导航条: 横排 4 个核心类目(貼紙/宣傳單張/紙袋/包裝盒),
+          其余收进右侧 ☰ 全量菜单。仅移动端显示, 桌面蓝条导航保持不动 */}
+      <nav className="lg:hidden bg-[#2873F5] overflow-x-auto" aria-label="Primary categories">
+        <div className="flex items-center h-[42px] px-2 min-w-max">
+          <Link
+            href={`${localePrefix}/`}
+            className={`px-3.5 h-full flex items-center text-[14px] font-medium whitespace-nowrap transition-colors ${
+              pathname === `${localePrefix}/` ? 'bg-[#F87314] text-white' : 'text-white/90'
+            }`}
+          >
+            {t.home}
+          </Link>
+          {(['stickers', 'flyers', 'paper-bags', 'packaging'] as const).map((catSlug) => (
+            <Link
+              key={catSlug}
+              href={`${localePrefix}/category/${catSlug}/`}
+              className={`px-3.5 h-full flex items-center text-[14px] font-medium whitespace-nowrap transition-colors ${
+                pathname.includes(`/category/${catSlug}`) ? 'bg-[#F87314] text-white' : 'text-white/90'
+              }`}
+            >
+              {t.categories[catSlug]}
+            </Link>
+          ))}
+        </div>
+      </nav>
+
+      {/* Mobile Menu — 平滑展开动画 (grid-rows 过渡) */}
+      <div
+        className={`lg:hidden bg-white border-t grid transition-all duration-300 ease-in-out ${
+          mobileMenuOpen ? 'grid-rows-[1fr] opacity-100' : 'grid-rows-[0fr] opacity-0 border-t-0'
+        }`}
+      >
+        <div className="overflow-hidden">
           <div className="px-4 py-4 space-y-3">
             <div className="md:hidden mb-4">
               <SearchDropdown
@@ -471,12 +501,13 @@ export function Header({ locale }: HeaderProps) {
                 className="w-full"
               />
             </div>
-            <Link href={`${localePrefix}/`} className="block font-medium text-[#333333] py-2">{t.home}</Link>
+            <Link href={`${localePrefix}/`} className="block font-medium text-[#333333] py-2" onClick={() => setMobileMenuOpen(false)}>{t.home}</Link>
             {t.navOrder.map((catSlug) => (
-              <Link key={catSlug} href={`${localePrefix}/category/${catSlug}/`} className="block font-medium text-[#333333] py-2">{t.categories[catSlug]}</Link>
+              <Link key={catSlug} href={`${localePrefix}/category/${catSlug}/`} className="block font-medium text-[#333333] py-2" onClick={() => setMobileMenuOpen(false)}>{t.categories[catSlug]}</Link>
             ))}
-            <Link href={`${localePrefix}/blog/`} className="block font-medium text-[#333333] py-2">{t.knowledge}</Link>
-            <Link href={`${localePrefix}/contact/`} className="block font-bold text-[#2873F5] bg-blue-50 rounded-lg py-2.5 px-4 text-center">{t.contact}</Link>
+            <Link href={`${localePrefix}/blog/`} className="block font-medium text-[#333333] py-2" onClick={() => setMobileMenuOpen(false)}>{t.knowledge}</Link>
+            <Link href={`${localePrefix}/quote/`} className="block font-bold text-white bg-[#F87314] rounded-lg py-2.5 px-4 text-center" onClick={() => setMobileMenuOpen(false)}>{t.getQuote}</Link>
+            <Link href={`${localePrefix}/contact/`} className="block font-bold text-[#2873F5] bg-blue-50 rounded-lg py-2.5 px-4 text-center" onClick={() => setMobileMenuOpen(false)}>{t.contact}</Link>
             <div className="flex gap-2 pt-4 border-t">
               <Link href="/zh-hk/" className={`px-4 py-2 rounded text-sm ${locale === 'zh-hk' ? 'bg-[#2873F5] text-white' : 'border border-gray-200'}`}>繁</Link>
               <Link href="/en/" className={`px-4 py-2 rounded text-sm ${locale === 'en' ? 'bg-[#2873F5] text-white' : 'border border-gray-200'}`}>EN</Link>
@@ -484,7 +515,7 @@ export function Header({ locale }: HeaderProps) {
             </div>
           </div>
         </div>
-      )}
+      </div>
     </header>
   );
 }

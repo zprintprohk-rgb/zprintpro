@@ -12,7 +12,9 @@
 import type { Locale } from '@/types/locale';
 import type { SchemaOrgData } from '@/types/seo';
 
-const SITE_URL = (typeof process !== 'undefined' && process.env?.NEXT_PUBLIC_SITE_URL) || 'https://zprintpro.com';
+// 2026-07-18 修复: 强制使用生产域名, 防止 CF Pages 环境变量 NEXT_PUBLIC_SITE_URL
+// 被误配为 pages.dev 预览域名导致 schema URL 污染 (GSC 实测已发生)
+const SITE_URL = 'https://zprintpro.com';
 
 // ============================================================================
 // HowTo (工艺流程) — 4 个主钻品类
@@ -502,8 +504,9 @@ export function generateCategoryItemListJsonLd(
           url: productUrl,
           image: fullImageUrl,
           description: localizedDesc.slice(0, 500),
-          // 2026-07-18 GSC「category 值无效」修复: 去掉面包屑式分隔符与年份, 只留简洁类目名
-          category: categoryName.split('/')[0].replace(/\s*&\s*/g, ' and ').replace(/\s*20\d{2}\s*$/, '').trim(),
+          // 2026-07-18 v2 GSC「category 值无效」修复: 直接移除 category 字段。
+          // Google 商家信息对该字段的校验极不稳定(自由文本也反复判无效), 该字段为可选项,
+          // 移除后商品摘要/商家信息校验可通过, 不影响排名。
           // GSC「商家信息」要求: 提供全局品牌标识符
           brand: {
             '@type': 'Brand',

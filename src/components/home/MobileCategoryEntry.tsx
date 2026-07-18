@@ -82,7 +82,7 @@ function getCheapestProduct(catSlug: CatSlug) {
   return best;
 }
 
-/** 取该类目第一个产品的场景缩略图 (2026-07-19: 移动端分类卡左侧 56x56) */
+/** 取该类目第一个产品的场景缩略图 (2026-07-20: 移动端分类卡顶部整宽缩略图) */
 function getCategoryImage(catSlug: CatSlug, locale: Locale): string | null {
   const p = products.find((x) => x.category_slug === catSlug || x.category === catSlug);
   if (!p) return null;
@@ -108,26 +108,29 @@ export function MobileCategoryEntry({ locale }: MobileCategoryEntryProps) {
               <Link
                 key={slug}
                 href={`${localePrefix}/category/${slug}/`}
-                className="flex items-center gap-3 bg-slate-50 hover:bg-blue-50 border border-slate-100 hover:border-[#2873F5]/30 rounded-xl p-3 transition-colors"
+                className="flex flex-col bg-white border border-slate-200 rounded-xl shadow-sm overflow-hidden hover:border-[#2873F5]/40 hover:shadow-md transition-all"
               >
+                {/* 2026-07-20 UX 升级: 场景缩略图置顶整宽 (对标参考样式 2 列信息卡),
+                    图下依次 = 类目名 / 一句卖点 / 橙色起始价 */}
                 {thumb && (
-                  <Image
-                    src={thumb}
-                    alt={cat.name}
-                    width={56}
-                    height={56}
-                    className="w-14 h-14 rounded-lg object-cover flex-shrink-0"
-                    loading="lazy"
-                  />
+                  <div className="relative w-full h-[92px]">
+                    <Image
+                      src={thumb}
+                      alt={cat.name}
+                      fill
+                      className="object-cover"
+                      loading="lazy"
+                    />
+                  </div>
                 )}
-                <div className="min-w-0">
-                  <div className="text-[15px] font-semibold text-slate-900">{cat.name}</div>
-                  <div className="text-xs text-slate-500 mt-0.5 leading-snug">{cat.hook}</div>
+                <div className="p-3 min-w-0">
+                  <div className="text-[15px] font-bold text-slate-900 leading-tight">{cat.name}</div>
+                  <div className="text-xs text-slate-500 mt-1 leading-snug line-clamp-2">{cat.hook}</div>
                   {cheapest && (
-                    <div className="text-xs font-bold text-[#F87314] mt-1.5">
-                      {locale === 'en' && <span className="font-medium text-gray-400 mr-0.5">{t.from} </span>}
+                    <div className="text-sm font-bold text-orange-600 mt-1.5">
+                      {locale === 'en' && <span className="text-xs font-medium text-gray-400 mr-1">{t.from}</span>}
                       {convertToFromPrice(cheapest.price_range, locale, cheapest.category_slug, cheapest.slug)}
-                      {locale !== 'en' && <span className="font-normal text-gray-400 ml-0.5">{t.from}</span>}
+                      {locale !== 'en' && <span className="text-xs font-normal text-gray-400 ml-1">{t.from}</span>}
                     </div>
                   )}
                 </div>

@@ -25,12 +25,12 @@ const metaMap: Record<string, { title: string; desc: string }> = {
     desc: '印刷即日速递送货首选智印雲 ZPrintPro！今天下班6點前下單，明天中午12點前收貨。宣傳單張、海報、貼紙、紙袋、畫冊、易拉寶通宵印刷，支持港鐵站交收。',
   },
   'en': {
-    title: '24-Hour Rush Printing Service USA / UK / AU | Free Shipping | ZprintPro',
-    desc: '24-hour rush printing service for flyers, posters, stickers, paper bags, booklets & roll-up banners. Order by 6PM, deliver in 24h. Free shipping to US, UK, AU, CA. No setup fees. AI instant quote.',
+    title: 'Rush Printing Service | 2-4 Day Global Delivery | ZprintPro',
+    desc: 'Rush printing service for flyers, posters, stickers, paper bags, booklets & roll-up banners. Order by 6PM HKT, printed overnight, DHL/FedEx delivery in 2-4 business days to US, UK, AU, CA. No setup fees. AI instant quote.',
   },
   'ja': {
-    title: '即日印刷・翌日正午配送 | 本日注文・明日12時まで | ZPrintPro',
-    desc: '香港の即日印刷サービス。平日18時までのご注文で、翌日12時までにお届け。チラシ、ポスター、シール、紙袋、冊子、ロールアップバナー対応。MTR駅受取可。',
+    title: '特急印刷サービス | 2〜4営業日で日本全国お届け | ZPrintPro',
+    desc: 'チラシ、ポスター、シール、紙袋、冊子、ロールアップバナーの特急印刷。平日18時までのご注文で徹夜印刷、DHL・FedExで2〜4営業日にお届け。AI即時見積もり。',
   },
 };
 
@@ -61,21 +61,20 @@ export default function RushDeliveryPage({ params }: Props) {
     locale === 'zh-hk'
       ? '印刷即日速递送货'
       : locale === 'en'
-      ? 'Same-Day Printing & Next-Day Delivery'
-      : '即日印刷・翌日正午配送';
+      ? 'Rush Printing & 2-4 Day Global Delivery'
+      : '特急印刷・2〜4営業日お届け';
 
   return (
     <main className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
       <JsonLd
         data={generateServiceJsonLd({
           serviceType: 'Rush Printing Service',
-          serviceName: locale === 'en' ? '24-Hour Rush Printing & Global Delivery' : locale === 'ja' ? '即日印刷・翌日配送サービス' : '印刷即日速遞送貨',
+          serviceName: locale === 'en' ? 'Rush Printing & Global Delivery' : locale === 'ja' ? '特急印刷・全球配送サービス' : '印刷即日速遞送貨',
           description: metaMap[locale].desc,
           url: `https://zprintpro.com/${locale}/services/rush-printing-delivery/`,
           areaServed: ['US', 'GB', 'AU', 'CA', 'JP', 'HK'],
           offers: [
             { name: 'Flyer Printing', price: '0.04', priceCurrency: 'USD' },
-            { name: 'Business Card Printing', price: '0.10', priceCurrency: 'USD' },
             { name: 'Sticker Printing', price: '0.06', priceCurrency: 'USD' },
             { name: 'Poster Printing', price: '1.95', priceCurrency: 'USD' },
             { name: 'Booklet Printing', price: '0.50', priceCurrency: 'USD' },
@@ -95,10 +94,10 @@ export default function RushDeliveryPage({ params }: Props) {
             ⚡ {locale === 'zh-hk' ? '通宵達服務' : locale === 'en' ? 'Overnight Delivery' : '徹夜配送'}
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mb-3">
-            {locale === 'zh-hk' ? '今天下單·明天中午12點前到' : locale === 'en' ? 'Order Today, Receive by 12PM Tomorrow' : '本日注文・翌日12時まで'}
+            {locale === 'zh-hk' ? '今天下單·明天中午12點前到' : locale === 'en' ? 'Order Today, Printed Overnight' : '本日注文・徹夜印刷'}
           </h2>
           <p className="text-lg md:text-xl text-white/90 mb-6 max-w-2xl">
-            {locale === 'zh-hk' ? '專為臨急任務而生——宣傳單張、海報、貼紙、紙袋通宵印刷，畫冊與易拉寶翌日中午準時達' : 'Rush printing for flyers, posters, stickers, paper bags. Booklets & banners by noon next day.'}
+            {locale === 'zh-hk' ? '專為臨急任務而生——宣傳單張、海報、貼紙、紙袋通宵印刷，畫冊與易拉寶翌日中午準時達' : locale === 'en' ? 'Rush printing for flyers, posters, stickers, paper bags. Booklets & banners on priority production.' : 'チラシ、ポスター、シール、紙袋の特急印刷。冊子とバナーも優先製作対応。'}
           </p>
           <Link
             href={`/${locale}/services/rush-printing-delivery#order`}
@@ -123,14 +122,14 @@ export default function RushDeliveryPage({ params }: Props) {
           )}
           {locale === 'en' && (
             <>
-              <strong>Order by 6PM EST, receive in 24 hours anywhere in US / UK / AU.</strong>
-              Rush printing for flyers, posters, stickers, paper bags, booklets, roll-up banners. Premium-grade printing shipped from our Hong Kong factory to your door in 1–3 business days. Free shipping on orders over $200. No setup fees.
+              <strong>Order by 6PM HKT, printed overnight, delivered in 2–4 business days via DHL / FedEx.</strong>
+              Rush printing for flyers, posters, stickers, paper bags, booklets, roll-up banners. Premium-grade printing shipped from our Asia facility to the US, UK, Australia and worldwide. Free shipping on orders over $200. No setup fees.
             </>
           )}
           {locale === 'ja' && (
             <>
-              <strong>平日18時までのご注文で、翌日12時までにお届け。</strong>
-              チラシ、ポスター、シール、紙袋は徹夜印刷。冊子とロールアップバナーも翌日正午までに配達。香港MTR駅受取対応。
+              <strong>平日18時までのご注文で、徹夜印刷。DHL・FedExで2〜4営業日にお届け。</strong>
+              チラシ、ポスター、シール、紙袋は徹夜印刷。冊子とロールアップバナーも短納期対応。日本全国へお届けします。
             </>
           )}
         </p>
@@ -187,7 +186,7 @@ export default function RushDeliveryPage({ params }: Props) {
               <div className="h-14 w-14 rounded-full bg-blue-50 border-2 border-blue-100 flex items-center justify-center mb-2 shadow-sm">
                 <Truck className="h-6 w-6 text-[#2873F5]" strokeWidth={2} />
               </div>
-              <span className="text-sm font-bold text-gray-900">{locale === 'zh-hk' ? '明天12:00' : locale === 'en' ? 'Tomorrow 12PM' : '翌日12時'}</span>
+              <span className="text-sm font-bold text-gray-900">{locale === 'zh-hk' ? '明天12:00' : locale === 'en' ? 'Ships in 2-4 days' : '2〜4営業日で出荷'}</span>
               <span className="text-xs text-gray-500">{locale === 'zh-hk' ? '您收貨' : locale === 'en' ? 'Delivered' : 'お届け'}</span>
             </div>
           </div>
