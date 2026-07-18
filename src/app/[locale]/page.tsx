@@ -8,6 +8,8 @@ import { generateHomeMetadata, Locale } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
 import { generateOrganizationSchema, generateLocalBusinessSchema } from '@/lib/seo';
 import { HeroBanner } from '@/components/home/HeroBanner';
+import { MobileValueStrip } from '@/components/home/MobileValueStrip';
+import { MobileCategoryChips } from '@/components/home/MobileCategoryChips';
 import { MobileCategoryEntry } from '@/components/home/MobileCategoryEntry';
 import { HotProducts } from '@/components/home/HotProducts';
 import { StatsBar } from '@/components/home/StatsBar';
@@ -61,7 +63,11 @@ export default function HomePage({
       <JsonLd data={[orgSchema, localSchema]} />
       
       <main className="min-h-screen">
+        {/* 2026-07-19: 移动端定位+卖点条 (lg:hidden), header 下方 / hero 上方 */}
+        <MobileValueStrip locale={locale} />
         <HeroBanner locale={locale} />
+        {/* 2026-07-19: 移动端类目快捷 chips (lg:hidden), hero 下方 */}
+        <MobileCategoryChips locale={locale} />
         {/* 2026-07-18 P9: 移动端产品分类入口 (lg:hidden), hero 之后 / 印刷流程之前 */}
         <MobileCategoryEntry locale={locale} />
         <TrustWaterfall locale={locale} />

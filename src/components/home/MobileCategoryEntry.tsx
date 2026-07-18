@@ -7,6 +7,7 @@
  */
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Locale } from '@/types/locale';
 import { products } from '@/data/products';
 import { convertToFromPrice } from '@/lib/pricing';
@@ -81,6 +82,15 @@ function getCheapestProduct(catSlug: CatSlug) {
   return best;
 }
 
+/** 取该类目第一个产品的场景缩略图 (2026-07-19: 移动端分类卡左侧 56x56) */
+function getCategoryImage(catSlug: CatSlug, locale: Locale): string | null {
+  const p = products.find((x) => x.category_slug === catSlug || x.category === catSlug);
+  if (!p) return null;
+  const localeImgs = p.imagesByLocale?.[locale];
+  if (localeImgs && localeImgs.length > 0) return localeImgs[0];
+  return p.images?.[0] ?? null;
+}
+
 export function MobileCategoryEntry({ locale }: MobileCategoryEntryProps) {
   const t = TEXTS[locale] || TEXTS['en'];
   const localePrefix = `/${locale}`;
@@ -93,21 +103,34 @@ export function MobileCategoryEntry({ locale }: MobileCategoryEntryProps) {
           {NAV_ORDER.map((slug) => {
             const cat = t.cats[slug];
             const cheapest = getCheapestProduct(slug);
+            const thumb = getCategoryImage(slug, locale);
             return (
               <Link
                 key={slug}
                 href={`${localePrefix}/category/${slug}/`}
-                className="block bg-slate-50 hover:bg-blue-50 border border-slate-100 hover:border-[#2873F5]/30 rounded-xl p-3.5 transition-colors"
+                className="flex items-center gap-3 bg-slate-50 hover:bg-blue-50 border border-slate-100 hover:border-[#2873F5]/30 rounded-xl p-3 transition-colors"
               >
-                <div className="text-[15px] font-semibold text-slate-900">{cat.name}</div>
-                <div className="text-xs text-slate-500 mt-0.5 leading-snug">{cat.hook}</div>
-                {cheapest && (
-                  <div className="text-xs font-bold text-[#F87314] mt-1.5">
-                    {locale === 'en' && <span className="font-medium text-gray-400 mr-0.5">{t.from} </span>}
-                    {convertToFromPrice(cheapest.price_range, locale, cheapest.category_slug, cheapest.slug)}
-                    {locale !== 'en' && <span className="font-normal text-gray-400 ml-0.5">{t.from}</span>}
-                  </div>
+                {thumb && (
+                  <Image
+                    src={thumb}
+                    alt={cat.name}
+                    width={56}
+                    height={56}
+                    className="w-14 h-14 rounded-lg object-cover flex-shrink-0"
+                    loading="lazy"
+                  />
                 )}
+                <div className="min-w-0">
+                  <div className="text-[15px] font-semibold text-slate-900">{cat.name}</div>
+                  <div className="text-xs text-slate-500 mt-0.5 leading-snug">{cat.hook}</div>
+                  {cheapest && (
+                    <div className="text-xs font-bold text-[#F87314] mt-1.5">
+                      {locale === 'en' && <span className="font-medium text-gray-400 mr-0.5">{t.from} </span>}
+                      {convertToFromPrice(cheapest.price_range, locale, cheapest.category_slug, cheapest.slug)}
+                      {locale !== 'en' && <span className="font-normal text-gray-400 ml-0.5">{t.from}</span>}
+                    </div>
+                  )}
+                </div>
               </Link>
             );
           })}
