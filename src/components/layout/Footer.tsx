@@ -244,10 +244,10 @@ export function Footer({ locale }: FooterProps) {
           <div className="lg:col-span-2">
             <div className="mb-4">
               <Image
-                src="/images/logo-dark.svg"
+                src="/images/logo-new-200x55.png"
                 alt="ZprintPro"
                 width={240}
-                height={53}
+                height={55}
                 className="h-11 w-auto"
                 loading="lazy"
                 decoding="async"
@@ -377,10 +377,10 @@ export function Footer({ locale }: FooterProps) {
           {/* 品牌 + NAP */}
           <div className="mb-3">
             <Image
-              src="/images/logo-dark.svg"
+              src="/images/logo-new-200x55.png"
               alt="ZprintPro"
               width={240}
-              height={53}
+              height={55}
               className="h-9 w-auto"
               loading="lazy"
               decoding="async"

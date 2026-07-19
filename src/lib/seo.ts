@@ -15,7 +15,7 @@ export const siteConfig = {
   name: '智印雲',
   alternateName: ['ZprintPro', 'ZprintPro HK', '智印雲印刷'],
   url: 'https://zprintpro.com',
-  logo: 'https://zprintpro.com/logo-icon.svg',
+  logo: 'https://zprintpro.com/images/logo-gsc-200x200.png',
   // 2026-07-13: 全站 canonical 1 句品牌描述 (per-locale 文案以 translations.<locale>.metaDesc 為準)
   // 用於 Schema.org default og:description / email signature / press-kit fallback
   // 注意 NAP vs SEO 脫鉤 (§13.10): 不寫 supplier origin 城市, 用 global printing partner 品牌定位
@@ -1609,7 +1609,7 @@ export function generateOrganizationSchema(locale: Locale): SchemaOrgData {
     '@type': 'Organization',
     name: locale === 'zh-hk' ? '智印雲 ZprintPro' : 'ZprintPro',
     url: `${siteConfig.url}/${locale}`,
-    logo: `${siteConfig.url}/images/logo.png`,
+    logo: `${siteConfig.url}/images/logo-gsc-200x200.png`,
     areaServed: geo.areaServed.map(area => ({ '@type': 'Place', name: area })),
     contactPoint: {
       '@type': 'ContactPoint',
@@ -1697,7 +1697,7 @@ export function generateArticleSchema(input: ArticleSchemaInput, locale: Locale)
     publisher: {
       '@type': 'Organization',
       name: locale === 'zh-hk' ? '智印雲 ZprintPro' : 'ZprintPro',
-      logo: { '@type': 'ImageObject', url: `${baseUrl}/images/logo.png` },
+      logo: { '@type': 'ImageObject', url: `${baseUrl}/images/logo-gsc-200x200.png` },
     },
     inLanguage: locale === 'zh-hk' ? 'zh-Hant-HK' : locale === 'ja' ? 'ja-JP' : 'en-US',
     wordCount: input.wordCount,

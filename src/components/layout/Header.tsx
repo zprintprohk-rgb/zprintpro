@@ -318,7 +318,7 @@ export function Header({ locale }: HeaderProps) {
                   390px 视口下把购物车+汉堡按钮挤出屏幕 (x=516), 用户看不到导航入口。
                   移动端限高 34px (宽约 272px), 腾出右侧按钮空间; 桌面保持原样 */}
               <Link href={`${localePrefix}/`} className="flex-shrink-0 ml-2 lg:ml-[30px]">
-                <Image src="/images/logo.svg" alt="ZprintPro" width={200} height={52} className="h-[34px] sm:h-[44px] lg:h-[52px] w-auto" priority />
+                <Image src="/images/logo-new-200x55.png" alt="ZprintPro" width={200} height={55} className="h-[34px] sm:h-[44px] lg:h-[52px] w-auto" priority />
               </Link>
               <div className="hidden md:flex flex-1 max-w-xl mx-4">
                 <SearchDropdown
