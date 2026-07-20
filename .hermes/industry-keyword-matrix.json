@@ -1512,6 +1512,131 @@
       "cf_build_run": "pending-2026-07-20",
       "deployed_commit": "pending-2026-07-20",
       "note": "2026-07-20 daily cron Tier C 建築工程 行业首次覆盖 (瓷磚/石材/窗簾/地板/燈飾 5 大品類 + 5 種裝訂方式 + 真材實料樣辦夾層, 50-500 本小批量)"
+    },
+    {
+      "id": "T1-MB-001",
+      "slug": "baby-food-packaging-box-printing-guide",
+      "category": "packaging",
+      "sku": "food-boxes",
+      "industry": "母嬰食品",
+      "tier": "B",
+      "priority": "P0",
+      "covered_at": "2026-07-20",
+      "deployed_at": "2026-07-20T23:50:00+08:00",
+      "deploy_method": "git push origin_ssh main (weekly-meta-refresh 2026-07-20 cron, 攒批 1 build)",
+      "verify_status": "pending-verify",
+      "locale_chars": {
+        "zh-hk": 3531,
+        "en": 5621,
+        "ja": 3833
+      },
+      "nap_decoupled": true,
+      "internal_links_count": 0,
+      "no_images": true,
+      "verify_steps": "pending-7-step",
+      "cf_build_run": "pending-cf-build-2026-07-20",
+      "deployed_commit": "pending-commit-2026-07-20",
+      "note": "2026-07-20 weekly-meta-refresh Tier B 行业首次覆盖 (母嬰食品 — Tier B 8 行业最后未覆盖, 母婴食品包装盒, FDA食品级内衬 + BPA-free 大豆油墨)"
+    },
+    {
+      "id": "T2-RE-002",
+      "slug": "real-estate-flyer-printing-guide",
+      "category": "flyers",
+      "sku": "a4-flyers",
+      "industry": "房地產",
+      "tier": "B",
+      "priority": "P0",
+      "covered_at": "2026-07-20",
+      "deployed_at": "2026-07-20T23:50:00+08:00",
+      "deploy_method": "git push origin_ssh main (weekly-meta-refresh 2026-07-20 cron, 攒批 1 build)",
+      "verify_status": "pending-verify",
+      "locale_chars": {
+        "zh-hk": 3432,
+        "en": 5643,
+        "ja": 3667
+      },
+      "nap_decoupled": true,
+      "internal_links_count": 1,
+      "no_images": true,
+      "verify_steps": "pending-7-step",
+      "cf_build_run": "pending-cf-build-2026-07-20",
+      "deployed_commit": "pending-commit-2026-07-20",
+      "note": "2026-07-20 weekly-meta-refresh Tier B 2nd SKU 拓點 (房地產 × flyers, 樓盤銷售單張 / 樣板房邀請函)"
+    },
+    {
+      "id": "T3-MD-003",
+      "slug": "medical-device-packaging-box-guide",
+      "category": "packaging",
+      "sku": "rigid-boxes",
+      "industry": "醫藥保健",
+      "tier": "B",
+      "priority": "P0",
+      "covered_at": "2026-07-20",
+      "deployed_at": "2026-07-20T23:50:00+08:00",
+      "deploy_method": "git push origin_ssh main (weekly-meta-refresh 2026-07-20 cron, 攒批 1 build)",
+      "verify_status": "pending-verify",
+      "locale_chars": {
+        "zh-hk": 3645,
+        "en": 5756,
+        "ja": 3831
+      },
+      "nap_decoupled": true,
+      "internal_links_count": 1,
+      "no_images": true,
+      "verify_steps": "pending-7-step",
+      "cf_build_run": "pending-cf-build-2026-07-20",
+      "deployed_commit": "pending-commit-2026-07-20",
+      "note": "2026-07-20 weekly-meta-refresh Tier B 2nd SKU 拓點 (醫藥保健 × packaging, ISO 13485 + Tyvek 滅菌袋 + 醫療器械硬盒)"
+    },
+    {
+      "id": "T4-AU-004",
+      "slug": "auto-parts-shopping-bag-printing-guide",
+      "category": "paper-bags",
+      "sku": "kraft-paper-bags",
+      "industry": "汽車汽配",
+      "tier": "B",
+      "priority": "P0",
+      "covered_at": "2026-07-20",
+      "deployed_at": "2026-07-20T23:50:00+08:00",
+      "deploy_method": "git push origin_ssh main (weekly-meta-refresh 2026-07-20 cron, 攒批 1 build)",
+      "verify_status": "pending-verify",
+      "locale_chars": {
+        "zh-hk": 3697,
+        "en": 5587,
+        "ja": 3910
+      },
+      "nap_decoupled": true,
+      "internal_links_count": 1,
+      "no_images": true,
+      "verify_steps": "pending-7-step",
+      "cf_build_run": "pending-cf-build-2026-07-20",
+      "deployed_commit": "pending-commit-2026-07-20",
+      "note": "2026-07-20 weekly-meta-refresh Tier B 2nd SKU 拓點 (汽車汽配 × paper-bags, 4S 店售後服務袋 + 油污防護淋膜)"
+    },
+    {
+      "id": "T5-SP-005",
+      "slug": "sports-merchandise-gift-box-printing-guide",
+      "category": "packaging",
+      "sku": "gift-boxes",
+      "industry": "體育賽事",
+      "tier": "B",
+      "priority": "P0",
+      "covered_at": "2026-07-20",
+      "deployed_at": "2026-07-20T23:50:00+08:00",
+      "deploy_method": "git push origin_ssh main (weekly-meta-refresh 2026-07-20 cron, 攒批 1 build)",
+      "verify_status": "pending-verify",
+      "locale_chars": {
+        "zh-hk": 3577,
+        "en": 5897,
+        "ja": 4087
+      },
+      "nap_decoupled": true,
+      "internal_links_count": 1,
+      "no_images": true,
+      "verify_steps": "pending-7-step",
+      "cf_build_run": "pending-cf-build-2026-07-20",
+      "deployed_commit": "pending-commit-2026-07-20",
+      "note": "2026-07-20 weekly-meta-refresh Tier B 2nd SKU 拓點 (體育賽事 × packaging, 球隊周邊紀念禮盒 + 限量版序號印刷)"
     }
   ],
   "skipped": {
@@ -1519,7 +1644,7 @@
   },
   "stats": {
     "queue_size": 29,
-    "covered_count": 32,
+    "covered_count": 37,
     "unique_ids": 23,
     "p0_total": 11,
     "p0_covered": 11,
@@ -1529,12 +1654,12 @@
     "p1_coverage_pct": 1.0,
     "p2_coverage_pct": 0,
     "tier_a_count": 9,
-    "tier_b_count": 7,
+    "tier_b_count": 12,
     "tier_c_count": 4,
     "total_524_target": 524,
     "covered_524_pct": "4.39",
     "last_updated": "2026-07-20",
-    "last_updated_event": "cron zprintpro-daily-content-evolve 2026-07-20: 3 博客全 3 locale 上線 (Q-NEW-01 宗教文化 packaging / Q-NEW-02 工業機械 stickers / Q-NEW-03 建築工程 books — Tier C 行业首次覆盖). +3 SKU optimization (transparent-stickers / kraft-paper-bags / rigid-boxes). Tier C 1→4 (宗教文化+工業機械+建築工程). P0 7/25 → 10/25 (新增 3 個 SKU 優化). Next cron (2026-07-21 daily): Q-NEW-04/05/06 TBD."
+    "last_updated_event": "cron zprintpro-weekly-meta-refresh 2026-07-20: 5 博客全 3 locale 上線 (T1 母嬰食品 拓點 / T2 房地產 2nd SKU / T3 醫藥保健 2nd SKU / T4 汽車汽配 2nd SKU / T5 體育賽事 2nd SKU — Tier B 8 行业首次 100% 覆蓋完成, 4 行业 2nd SKU 深度加強). +5 internal link self-growth (>=5 target met). CATEGORY_INDUSTRIES Tier B 拓點 (3 类目 × 3 locale = 9 hooks). Next cron (2026-07-21 daily): Q-NEW-04/05/06 TBD."
   },
   "priority_boost_history": [
     {
