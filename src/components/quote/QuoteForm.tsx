@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useRef, useCallback, useEffect } from 'react';
+import { useState, useRef, useCallback, useEffect, useMemo } from 'react';
+import { createPortal } from 'react-dom';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
@@ -34,6 +35,12 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
   const [files, setFiles] = useState<File[]>([]);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [productSlug, setProductSlug] = useState<string | null>(null);
+  // P0-3 fix: portal 挂载状态（SSR 安全）— 隐藏 form/iframe 用 createPortal
+  // 挂在 document.body 上，绕开 React 状态切换的 unmount，保证 FormSubmit POST 不被打断
+  const [portalMounted, setPortalMounted] = useState(false);
+  useEffect(() => {
+    setPortalMounted(true);
+  }, []);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -323,7 +330,7 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
 
       // 2026-07-20 P0-3 fix: hidden form submit to FormSubmit token endpoint
       // 触发邮件 forward → zprintpro@outlook.com（已激活，token: bf477f61ea...）
-      // target=formsubmit_iframe 防止页面跳转；Supabase 落库走主 onSubmit JS 独立处理
+      // 同步 submit 即可，因为 portal 挂到 document.body，不会被 React unmount
       const hiddenForm = document.getElementById('formsubmit_hidden_form') as HTMLFormElement | null;
       if (hiddenForm) {
         (document.getElementById('fs_subject') as HTMLInputElement).value = `[ZprintPro 詢盤 ${sheet.ref}] ${productName}`;
@@ -336,8 +343,8 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
         (document.getElementById('fs_message') as HTMLInputElement).value = data.message + fileNote;
         (document.getElementById('fs_locale') as HTMLInputElement).value = locale;
         (document.getElementById('fs_ref') as HTMLInputElement).value = sheet.ref;
-        // 异步触发 FormSubmit POST，不等待（iframe 收响应，不影响主页面）
-        setTimeout(() => hiddenForm.submit(), 0);
+        // 同步触发 FormSubmit POST，iframe 收响应，不影响主页面
+        hiddenForm.submit();
       }
 
       trackContactFormSubmit(files.length > 0);
@@ -353,9 +360,50 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
     }
   };
 
+  // P0-3 fix: 隐藏 FormSubmit iframe + form 用 createPortal 挂到 document.body
+  // 原因：放在 React 树内时，submitStatus 切换会 unmount，setTimeout 触发的 form.submit() 落空
+  // 挂到 body 上 = 永远不会被 React 卸载，浏览器 POST 流程完整执行
+  const formSubmitPortal = useMemo(() => {
+    if (!portalMounted || typeof document === 'undefined') return null;
+    return createPortal(
+      <>
+        <iframe
+          name="formsubmit_iframe"
+          id="formsubmit_iframe"
+          className="hidden"
+          sandbox="allow-forms allow-scripts allow-same-origin"
+        />
+        <form
+          id="formsubmit_hidden_form"
+          action="https://formsubmit.co/bf477f61ea191fe881e51dce0378b71e"
+          method="POST"
+          target="formsubmit_iframe"
+          encType="application/x-www-form-urlencoded"
+          className="hidden"
+        >
+          <input type="hidden" name="_subject" id="fs_subject" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="name" id="fs_name" />
+          <input type="hidden" name="email" id="fs_email" />
+          <input type="hidden" name="phone" id="fs_phone" />
+          <input type="hidden" name="product" id="fs_product" />
+          <input type="hidden" name="quantity" id="fs_quantity" />
+          <input type="hidden" name="size" id="fs_size" />
+          <input type="hidden" name="message" id="fs_message" />
+          <input type="hidden" name="locale" id="fs_locale" />
+          <input type="hidden" name="ref" id="fs_ref" />
+        </form>
+      </>,
+      document.body
+    );
+  }, [portalMounted]);
+
   if (submitStatus === 'success') {
     return (
-      <div className="rounded-2xl border border-green-200 bg-green-50 p-10 text-center">
+      <>
+        {formSubmitPortal}
+        <div className="rounded-2xl border border-green-200 bg-green-50 p-10 text-center">
         <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
         <h3 className="text-2xl font-bold text-green-700 mb-2">{t.successTitle}</h3>
         <p className="text-green-600 mb-6">{t.successDesc}</p>
@@ -378,48 +426,14 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
           </button>
         </div>
       </div>
+      </>
     );
   }
 
   return (
     <>
-      {/* 2026-07-20 P0-3 fix: hidden iframe + form for FormSubmit token activation
-          - token bf477f61ea191fe881e51dce0378b71e (activated 2026-07-20)
-          - POST 到 FormSubmit → forward email to zprintpro@outlook.com
-          - target=formsubmit_iframe 防止页面跳转
-          - Supabase 落库由主 onSubmit JS 独立处理，两者并行 */}
-      <iframe
-        name="formsubmit_iframe"
-        id="formsubmit_iframe"
-        className="hidden"
-        sandbox="allow-scripts allow-forms"
-        onLoad={() => {
-          // FormSubmit 收到请求后在此 iframe 加载确认页，不影响主流程
-        }}
-      />
-      <form
-        id="formsubmit_hidden_form"
-        action="https://formsubmit.co/bf477f61ea191fe881e51dce0378b71e"
-        method="POST"
-        target="formsubmit_iframe"
-        encType="application/x-www-form-urlencoded"
-        className="hidden"
-      >
-        <input type="hidden" name="_subject" id="fs_subject" />
-        <input type="hidden" name="_template" value="table" />
-        <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="name" id="fs_name" />
-        <input type="hidden" name="email" id="fs_email" />
-        <input type="hidden" name="phone" id="fs_phone" />
-        <input type="hidden" name="product" id="fs_product" />
-        <input type="hidden" name="quantity" id="fs_quantity" />
-        <input type="hidden" name="size" id="fs_size" />
-        <input type="hidden" name="message" id="fs_message" />
-        <input type="hidden" name="locale" id="fs_locale" />
-        <input type="hidden" name="ref" id="fs_ref" />
-      </form>
-
-    <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+      {formSubmitPortal}
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
       <div className="space-y-3">
         <QuoteTrustBar items={t.trustItems} />
         <p className="text-center text-[13px] font-medium text-slate-500">{t.socialProof}</p>
