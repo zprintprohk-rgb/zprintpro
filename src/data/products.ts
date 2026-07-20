@@ -2307,6 +2307,8 @@ export const products: Product[] = [
       '/images/products/seedream-webp/zprintpro-stickers-transparent-stickers-ja-4.webp',
     ],
   },
+    optimizedAt: '2026-07-20',
+    optimizationRound: 1,
     variables: {
       sizes: [
         { value: 'small', label: '小尺寸(≤50mm)', multiplier: 1 },
@@ -4559,6 +4561,8 @@ export const products: Product[] = [
       '/images/products/seedream-webp/zprintpro-paper-bags-kraft-paper-bags-ja-4.webp',
     ],
   },
+    optimizedAt: '2026-07-20',
+    optimizationRound: 1,
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-paper-bags-kraft-paper-bags-zh-hk.webp', en: 'zprintpro-paper-bags-kraft-paper-bags-en.webp', ja: 'zprintpro-paper-bags-kraft-paper-bags-ja.webp' },
     alt: {
@@ -10011,6 +10015,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
       '/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-ja-3.webp',
     ],
   },
+    optimizedAt: '2026-07-20',
+    optimizationRound: 1,
     variables: {
       sizes: [
         { value: 'small', label: '小號(100×80×50mm)', multiplier: 1 },

@@ -303,6 +303,47 @@ const posts: Record<string, Record<string, { title: string; description: string;
       content: '',
     },
 
+    // 2026-07-20 v4 daily-content-evolve: 3 NEW Tier C 行业博客 (zh-hk locale titles)
+    'religious-ceremony-printing-guide': {
+      title: '香港宗教禮儀印刷指南 · 教堂寺廟殯儀禮盒感謝袋定制 | 智印雲 ZprintPro',
+      description: '香港教堂／佛寺／道觀／殯儀館宗教場地印刷攻略：1200g 灰板硬盒 + 緞帶手挽 + 燙金十字架、250g 銅版紙啞面、350g 白卡紙訃聞，4 條場地負責人 FAQ，50-500 套精準下單。',
+      date: '2026-07-20', category: '宗教文化',
+      content: '',
+    },
+    'industrial-nameplate-printing-guide': {
+      title: '工業設備銘牌 / GHS 危險標籤印刷指南 · UL 認證 + ANSI Z535 標準 | 智印雲 ZprintPro',
+      description: '工業 4.0 設備銘牌 / GHS 危險化學品標籤 / UL 認證銘板 / ANSI Z535 警示標籤完整攻略：5 種材質（聚酯 PET / 聚酰亞胺 PI / 陽極氧化鋁 ANODIZED / 不鏽鋼 SUS / PVC 反光）+ 3M 9448A / VHB 4910 黏膠 + 4 條工業採購 FAQ。',
+      date: '2026-07-20', category: '工業機械',
+      content: '',
+    },
+    'construction-material-sample-book-printing-guide': {
+      title: '建築裝飾材料樣板手冊印刷指南 · 瓷磚石材窗簾色卡定制 | 智印雲 ZprintPro',
+      description: '建築裝飾材料供應商必睇：5 種裝訂方式（騎馬釘／精裝／蝴蝶裝／活頁夾／卡片盒）+ 真材實料樣辦夾層 + 4 條建材供應商 FAQ，協助 50-500 本精準下單。',
+      date: '2026-07-20', category: '建築工程',
+      content: '',
+    },
+
+  },
+  // 2026-07-20 v4 daily-content-evolve: NEW posts.en block (之前 page.tsx 没有 en 块, en locale H1 走 fallback slug 不友好, 现新建)
+  en: {
+    'religious-ceremony-printing-guide': {
+      title: 'Religious Ceremony Printing Guide: Custom Church / Temple / Memorial Boxes & Gift Bags | ZprintPro',
+      description: 'US religious organizations, churches, temples, and funeral homes: 3 ceremony types, 5 material options (250g art paper / 1200g grayboard / 350g white card / 200g Vellum / kraft paper), 4 organization-leader FAQs, 50-500 sets, Free Shipping over $99 USA, 5-7 business day production, No minimum 50 sets.',
+      date: '2026-07-20', category: 'Religious Ceremony',
+      content: '',
+    },
+    'industrial-nameplate-printing-guide': {
+      title: 'Industrial Equipment Nameplate & GHS Hazard Label Printing Guide: UL Certified + ANSI Z535 Standard | ZprintPro',
+      description: 'US industrial equipment manufacturers, chemical plants, and machinery exporters: 5 nameplate materials (PET / Polyimide / Anodized Aluminum / Stainless Steel / PVC reflective), 3 certification standards (UL / GHS / ANSI Z535), 4 industrial procurement FAQs, 100-50,000 pieces, Free Shipping over $99 USA.',
+      date: '2026-07-20', category: 'Industrial Nameplate',
+      content: '',
+    },
+    'construction-material-sample-book-printing-guide': {
+      title: 'Construction Material Sample Book Printing Guide: Tile, Stone, Curtain, Flooring Color Card Custom | ZprintPro',
+      description: 'US construction material suppliers, interior designers, and building product brands: 5 binding styles (saddle stitch / perfect bound / hardcover / butterfly / loose-leaf), 4 print finishes, 4 supplier FAQs, 50-500 copies, Free Shipping over $99 USA, 5-7 business day production, No minimum 50 copies.',
+      date: '2026-07-20', category: 'Construction Sample Book',
+      content: '',
+    },
   },
   ja: {
     'company-intro': { title: 'ZprintPro会社概要：専門設備とワンストップ印刷サービス', description: 'ZprintProはハイデルベルグ6+1印刷機、HPデジタル印刷機、マルティニ製本ラインなどの先進設備を保有し、ワンストップ印刷サービスを提供しています。', date: '2024-06-01', category: '会社ニュース', content: '' },
@@ -434,6 +475,26 @@ const posts: Record<string, Record<string, { title: string; description: string;
       content: '',
     },
 
+    // 2026-07-20 v4 daily-content-evolve: 3 NEW Tier C 行业ブログ (ja locale titles)
+    'religious-ceremony-printing-guide': {
+      title: '宗教儀式印刷ガイド：教会・寺院・メモリアル ボックス＆ギフト バッグ カスタム | ZprintPro',
+      description: '日本の宗教団体、教会、寺院、葬儀場向け宗教儀式印刷：3 つの儀式タイプ、5 種類素材（250g コート紙 / 1200g グレー ボード / 350g ホワイト カード / 200g ベラム / クラフト紙）、4 つの団体責任者 FAQ、50-500 セット、$99 以上で全国無料配送、5-7 営業日生産。',
+      date: '2026-07-20', category: '宗教儀式',
+      content: '',
+    },
+    'industrial-nameplate-printing-guide': {
+      title: '工業設備銘板 / GHS 危険ラベル印刷ガイド：UL 認証 + ANSI Z535 規格 | ZprintPro',
+      description: '日本の工業設備メーカー、化学工場、機械輸出業者向け：5 種類の銘板素材（PET / ポリイミド / 陽極酸化アルミ / ステンレス鋼 / PVC 再帰反射）、3 つの認証規格（UL / GHS / ANSI Z535）、4 つの工業調達 FAQ、100-50,000 個小〜大ロット、$99 以上で全国無料配送。',
+      date: '2026-07-20', category: '工業銘板',
+      content: '',
+    },
+    'construction-material-sample-book-printing-guide': {
+      title: '建築装飾材料サンプルブック印刷ガイド：タイル・石材・カーテン・フローリング カラー カード カスタム | ZprintPro',
+      description: '日本の建築装飾材料サプライヤー向け：5 つの製本方式（骑马钉 / 無線胶装 / 上製本 / バタフライ / ルーズリーフ）、4 つの印刷仕上げ、4 つのサプライヤー FAQ、50-500 部小〜大ロット、$99 以上で全国無料配送、5-7 営業日生産。',
+      date: '2026-07-20', category: '建築サンプル ブック',
+      content: '',
+    },
+
   }
 };
 
@@ -455,6 +516,10 @@ const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-
   'thick-paper-flyer-printing-restaurant-takeout-guide',
   'magnetic-closure-gift-box-ecommerce-brand-guide',
   'folding-box-cosmetics-brand-eco-friendly-guide',
+  // 2026-07-20 v4 daily-content-evolve: 3 NEW Tier C 行业博客 (宗教文化 / 工業機械 / 建築工程 — 7-15 cron P2 unlock 已写, 7-20 cron 转写未铺行业)
+  'religious-ceremony-printing-guide',
+  'industrial-nameplate-printing-guide',
+  'construction-material-sample-book-printing-guide',
 ];
 const guideSlugs = getAllBuyingGuideSlugs();
 const clusterSlugs = getAllClusterSlugs();

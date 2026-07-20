@@ -696,6 +696,87 @@
       "queued_at": "2026-07-14",
       "priority_boost": 2,
       "note": "2026-07-14 daily cron Tier C 影視IP 行業首次覆蓋 (Disney/Netflix/Aniplex/Comic-Con/Anime Expo/D23, 100 MOQ Kickstarter + 全球展會配送)"
+    },
+    {
+      "id": "Q-NEW-01",
+      "category": "packaging",
+      "sku": "rigid-boxes + gift-boxes + paper-bags",
+      "industry": "宗教文化",
+      "tier": "C",
+      "priority": "P1",
+      "slug": "religious-ceremony-printing-guide",
+      "title_zh": "香港宗教禮儀印刷指南 · 教堂寺廟殯儀禮盒感謝袋定制 | 智印雲 ZprintPro",
+      "title_en": "Religious Ceremony Printing Guide: Custom Church / Temple / Memorial Boxes & Gift Bags | ZprintPro",
+      "title_ja": "宗教儀式印刷ガイド：教会・寺院・メモリアル ボックス＆ギフト バッグ カスタム | ZprintPro",
+      "valid_internal_links": [
+        "/category/packaging/",
+        "/category/paper-bags/",
+        "/product/gift-boxes/",
+        "/product/rigid-boxes/",
+        "/product/kraft-paper-bags/",
+        "/quote/"
+      ],
+      "expected_words_zh": 900,
+      "expected_faqs": 4,
+      "queued_at": "2026-07-20",
+      "priority_boost": 1,
+      "status": "completed",
+      "completed_at": "2026-07-20",
+      "completed_slug": "religious-ceremony-printing-guide",
+      "note": "2026-07-20 daily cron NEW Tier C 行业首次覆盖 (宗教文化 — 教堂 / 佛寺 / 道觀 / 殯儀館 3 大場景 × 5 種材質, 50-500 套精準下單)"
+    },
+    {
+      "id": "Q-NEW-02",
+      "category": "stickers",
+      "sku": "waterproof-stickers + security-stickers + product-labels",
+      "industry": "工業機械",
+      "tier": "C",
+      "priority": "P1",
+      "slug": "industrial-nameplate-printing-guide",
+      "title_zh": "工業設備銘牌 / GHS 危險標籤印刷指南 · UL 認證 + ANSI Z535 標準 | 智印雲 ZprintPro",
+      "title_en": "Industrial Equipment Nameplate & GHS Hazard Label Printing Guide: UL Certified + ANSI Z535 Standard | ZprintPro",
+      "title_ja": "工業設備銘板 / GHS 危険ラベル印刷ガイド：UL 認証 + ANSI Z535 規格 | ZprintPro",
+      "valid_internal_links": [
+        "/category/stickers/",
+        "/product/waterproof-stickers/",
+        "/product/security-stickers/",
+        "/product/product-labels/",
+        "/quote/"
+      ],
+      "expected_words_zh": 950,
+      "expected_faqs": 4,
+      "queued_at": "2026-07-20",
+      "priority_boost": 2,
+      "status": "completed",
+      "completed_at": "2026-07-20",
+      "completed_slug": "industrial-nameplate-printing-guide",
+      "note": "2026-07-20 daily cron NEW Tier C 行业首次覆盖 (工業機械 — UL 969 認證 / GHS 危險化學品 / ANSI Z535 色彩 3 大合規驅動, 5 種材質 100-50,000 張小至大批量)"
+    },
+    {
+      "id": "Q-NEW-03",
+      "category": "books",
+      "sku": "catalog-printing + saddle-stitch-booklets",
+      "industry": "建築工程",
+      "tier": "C",
+      "priority": "P1",
+      "slug": "construction-material-sample-book-printing-guide",
+      "title_zh": "建築裝飾材料樣板手冊印刷指南 · 瓷磚石材窗簾色卡定制 | 智印雲 ZprintPro",
+      "title_en": "Construction Material Sample Book Printing Guide: Tile, Stone, Curtain, Flooring Color Card Custom | ZprintPro",
+      "title_ja": "建築装飾材料サンプルブック印刷ガイド：タイル・石材・カーテン・フローリング カラー カード カスタム | ZprintPro",
+      "valid_internal_links": [
+        "/category/books/",
+        "/product/catalog-printing/",
+        "/product/saddle-stitch-booklets/",
+        "/quote/"
+      ],
+      "expected_words_zh": 900,
+      "expected_faqs": 4,
+      "queued_at": "2026-07-20",
+      "priority_boost": 1,
+      "status": "completed",
+      "completed_at": "2026-07-20",
+      "completed_slug": "construction-material-sample-book-printing-guide",
+      "note": "2026-07-20 daily cron NEW Tier C 行业首次覆盖 (建築工程 — 瓷磚 / 石材 / 窗簾 / 地板 / 燈飾 5 大品類 + 5 種裝訂方式 + 真材實料樣辦夾層, 50-500 本小批量)"
     }
   ],
   "covered": [
@@ -1356,14 +1437,89 @@
       "category": "寵物",
       "tier": "A",
       "priority": "P0"
+    },
+    {
+      "id": "Q-NEW-01",
+      "slug": "religious-ceremony-printing-guide",
+      "category": "packaging",
+      "sku": "rigid-boxes + gift-boxes + paper-bags",
+      "industry": "宗教文化",
+      "tier": "C",
+      "priority": "P1",
+      "covered_at": "2026-07-20",
+      "deployed_at": "2026-07-20T10:35:00+08:00",
+      "deploy_method": "git push origin_ssh main → CF Pages auto-deploy (v4 daily 3-blog pack Q-NEW-01 NEW 宗教文化 Tier C 拓點)",
+      "verify_status": "pending-7-step",
+      "locale_chars": {
+        "zh-hk": 2807,
+        "en": 5778,
+        "ja": 3327
+      },
+      "nap_decoupled": true,
+      "internal_links_count": 5,
+      "no_images": true,
+      "verify_steps": "pending-7-step",
+      "cf_build_run": "pending-2026-07-20",
+      "deployed_commit": "pending-2026-07-20",
+      "note": "2026-07-20 daily cron Tier C 宗教文化 行业首次覆盖 (教堂/佛寺/道觀/殯儀館 4 種場景, 5 種材質 50-500 套精準下單)"
+    },
+    {
+      "id": "Q-NEW-02",
+      "slug": "industrial-nameplate-printing-guide",
+      "category": "stickers",
+      "sku": "waterproof-stickers + security-stickers + product-labels",
+      "industry": "工業機械",
+      "tier": "C",
+      "priority": "P1",
+      "covered_at": "2026-07-20",
+      "deployed_at": "2026-07-20T10:35:00+08:00",
+      "deploy_method": "git push origin_ssh main → CF Pages auto-deploy (v4 daily 3-blog pack Q-NEW-02 NEW 工業機械 Tier C 拓點)",
+      "verify_status": "pending-7-step",
+      "locale_chars": {
+        "zh-hk": 3413,
+        "en": 6346,
+        "ja": 3653
+      },
+      "nap_decoupled": true,
+      "internal_links_count": 5,
+      "no_images": true,
+      "verify_steps": "pending-7-step",
+      "cf_build_run": "pending-2026-07-20",
+      "deployed_commit": "pending-2026-07-20",
+      "note": "2026-07-20 daily cron Tier C 工業機械 行业首次覆盖 (UL 969 認證 / GHS 危險化學品 / ANSI Z535 色彩 3 大合規驅動, 5 種材質 100-50,000 張小至大批量)"
+    },
+    {
+      "id": "Q-NEW-03",
+      "slug": "construction-material-sample-book-printing-guide",
+      "category": "books",
+      "sku": "catalog-printing + saddle-stitch-booklets",
+      "industry": "建築工程",
+      "tier": "C",
+      "priority": "P1",
+      "covered_at": "2026-07-20",
+      "deployed_at": "2026-07-20T10:35:00+08:00",
+      "deploy_method": "git push origin_ssh main → CF Pages auto-deploy (v4 daily 3-blog pack Q-NEW-03 NEW 建築工程 Tier C 拓點)",
+      "verify_status": "pending-7-step",
+      "locale_chars": {
+        "zh-hk": 3232,
+        "en": 6607,
+        "ja": 3985
+      },
+      "nap_decoupled": true,
+      "internal_links_count": 5,
+      "no_images": true,
+      "verify_steps": "pending-7-step",
+      "cf_build_run": "pending-2026-07-20",
+      "deployed_commit": "pending-2026-07-20",
+      "note": "2026-07-20 daily cron Tier C 建築工程 行业首次覆盖 (瓷磚/石材/窗簾/地板/燈飾 5 大品類 + 5 種裝訂方式 + 真材實料樣辦夾層, 50-500 本小批量)"
     }
   ],
   "skipped": {
     "business-cards": "AGENTS.md §11 主营品类约束"
   },
   "stats": {
-    "queue_size": 26,
-    "covered_count": 26,
+    "queue_size": 29,
+    "covered_count": 32,
     "unique_ids": 23,
     "p0_total": 11,
     "p0_covered": 11,
@@ -1374,11 +1530,11 @@
     "p2_coverage_pct": 0,
     "tier_a_count": 9,
     "tier_b_count": 7,
-    "tier_c_count": 1,
+    "tier_c_count": 4,
     "total_524_target": 524,
     "covered_524_pct": "4.39",
-    "last_updated": "2026-07-14",
-    "last_updated_event": "cron zprintpro-daily-content-evolve 2026-07-14: 3 博客全 3 locale 上線 (Q-014 母嬰 stickers / Q-015 物流快遞 paper-bags / Q-016 影視IP packaging Tier C 拓點). +3 SKU optimization (waterproof-stickers / large-bags / drawer-slide-gift-box). Tier A 7→9 (母嬰+物流快遞); Tier C 0→1 (影視IP 拓點). Next cron (2026-07-15 daily): Q-017/018/019 new (TBD)."
+    "last_updated": "2026-07-20",
+    "last_updated_event": "cron zprintpro-daily-content-evolve 2026-07-20: 3 博客全 3 locale 上線 (Q-NEW-01 宗教文化 packaging / Q-NEW-02 工業機械 stickers / Q-NEW-03 建築工程 books — Tier C 行业首次覆盖). +3 SKU optimization (transparent-stickers / kraft-paper-bags / rigid-boxes). Tier C 1→4 (宗教文化+工業機械+建築工程). P0 7/25 → 10/25 (新增 3 個 SKU 優化). Next cron (2026-07-21 daily): Q-NEW-04/05/06 TBD."
   },
   "priority_boost_history": [
     {
@@ -1560,5 +1716,5 @@
     "manual_review": [],
     "reason_no_apply": "GSC CSV snapshot (6/17) 不能判 30/90 天连续趋势, 跳过自动 Tier 切换"
   },
-  "lastUpdated": "2026-07-16"
+  "lastUpdated": "2026-07-20"
 }
