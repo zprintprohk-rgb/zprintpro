@@ -4,45 +4,157 @@
     "currency": "HKD",
     "anchor": "HKD",
     "strategy": "对标 e-print.com.hk 书刊价 × 0.90 (user 2026-07-17 拍板); 校园印刷车道核心品类, 8 月开学季前必须上线",
-    "src_legend": {"anchor": "真实抓取锚点", "modeled": "建模, 待 e-print 书刊完整价表校准", "pending": "待询价", "intuan-2026-07-18": "intuan.com 登录态真实询价 CNY×1.3×1.087→HKD (intuan-real-quotes-2026-07-18.json)"},
-    "updatedAt": "2026-07-18",
-    "note": "2026-07-18 校准: saddle-stitch-booklets 重叠档 (500/1000/2000/5000) + 新增 3000 档用 intuan 专版画册实询价 (大度16开 封面250g+内页16P 157g 骑马钉); 100/300 小批量数码档保留。perfect-bound-books / exercise-books 未动。",
+    "src_legend": {
+      "anchor": "真实抓取锚点",
+      "modeled": "建模, 待 e-print 书刊完整价表校准",
+      "pending": "待询价",
+      "intuan-2026-07-18": "intuan.com 登录态真实询价 CNY×1.3×1.087→HKD (intuan-real-quotes-2026-07-18.json)"
+    },
+    "updatedAt": "2026-07-20",
+    "note": "2026-07-18 校准: saddle-stitch-booklets 重叠档 (500/1000/2000/5000) + 新增 3000 档用 intuan 专版画册实询价 (大度16开 封面250g+内页16P 157g 骑马钉); 100/300 小批量数码档保留。perfect-bound-books / exercise-books 未动。 | 2026-07-20 v3: exercise-books 全档 e-print 柯式骑马钉书刊实价(A5 32PP 全書80g書紙黑白) ×0.90 → anchor, 新增 2000/5000 档, 校园季车道就绪.",
     "references": {
       "eprint_booklet": "柯式骑马钉书刊 2工作天, 低至5折 — e-print.com.hk (具体价表待抓)",
       "intuan_booklet": "特价画册 0.3元/本起 (合版锚点)",
-      "intuan_zbAlbum": "专版画册实询 2026-07-18: ¥861/500, ¥1140/1000, ¥1871/2000, ¥2553/3000, ¥3911/5000 → ×1.3×1.087 HKD"
+      "intuan_zbAlbum": "专版画册实询 2026-07-18: ¥861/500, ¥1140/1000, ¥1871/2000, ¥2553/3000, ¥3911/5000 → ×1.3×1.087 HKD",
+      "eprint_exercise_book": "https://www.e-print.com.hk/products_books_printing_stitched_binding_color (2026-07-20 实抓 A5 直度全書同一紙質表·黑白列: 100本$992/500本$1,503/1000本$2,289/2000本$3,032/3000本$3,516/5000本$4,791)"
     }
   },
   "products": [
     {
       "sku": "saddle-stitch-booklets",
-      "config": {"size": "A4", "pages": "8P", "paper": "封面157g哑粉+内页128g", "binding": "骑马钉"},
+      "config": {
+        "size": "A4",
+        "pages": "8P",
+        "paper": "封面157g哑粉+内页128g",
+        "binding": "骑马钉"
+      },
       "tiers": [
-        {"qty": 100, "price": 900, "unit": 9.00, "src": "modeled", "note": "小批量数码, 校园询盘甜点"},
-        {"qty": 300, "price": 1650, "unit": 5.50, "src": "modeled"},
-        {"qty": 500, "price": 1216, "unit": 2.43, "src": "intuan-2026-07-18", "note": "intuan 专版画册实询 ×1.3, 替换 modeled"},
-        {"qty": 1000, "price": 1611, "unit": 1.61, "src": "intuan-2026-07-18"},
-        {"qty": 2000, "price": 2643, "unit": 1.32, "src": "intuan-2026-07-18"},
-        {"qty": 3000, "price": 3607, "unit": 1.20, "src": "intuan-2026-07-18", "note": "新增档"},
-        {"qty": 5000, "price": 5526, "unit": 1.11, "src": "intuan-2026-07-18"}
+        {
+          "qty": 100,
+          "price": 900,
+          "unit": 9.0,
+          "src": "modeled",
+          "note": "小批量数码, 校园询盘甜点"
+        },
+        {
+          "qty": 300,
+          "price": 1650,
+          "unit": 5.5,
+          "src": "modeled"
+        },
+        {
+          "qty": 500,
+          "price": 1216,
+          "unit": 2.43,
+          "src": "intuan-2026-07-18",
+          "note": "intuan 专版画册实询 ×1.3, 替换 modeled"
+        },
+        {
+          "qty": 1000,
+          "price": 1611,
+          "unit": 1.61,
+          "src": "intuan-2026-07-18"
+        },
+        {
+          "qty": 2000,
+          "price": 2643,
+          "unit": 1.32,
+          "src": "intuan-2026-07-18"
+        },
+        {
+          "qty": 3000,
+          "price": 3607,
+          "unit": 1.2,
+          "src": "intuan-2026-07-18",
+          "note": "新增档"
+        },
+        {
+          "qty": 5000,
+          "price": 5526,
+          "unit": 1.11,
+          "src": "intuan-2026-07-18"
+        }
       ]
     },
     {
       "sku": "perfect-bound-books",
-      "config": {"size": "A4", "pages": "32P+", "binding": "无线胶装"},
+      "config": {
+        "size": "A4",
+        "pages": "32P+",
+        "binding": "无线胶装"
+      },
       "tiers": [
-        {"qty": 100, "price": 1800, "unit": 18.00, "src": "pending"},
-        {"qty": 500, "price": 5500, "unit": 11.00, "src": "pending"},
-        {"qty": 1000, "price": 8800, "unit": 8.80, "src": "pending"}
+        {
+          "qty": 100,
+          "price": 1800,
+          "unit": 18.0,
+          "src": "pending"
+        },
+        {
+          "qty": 500,
+          "price": 5500,
+          "unit": 11.0,
+          "src": "pending"
+        },
+        {
+          "qty": 1000,
+          "price": 8800,
+          "unit": 8.8,
+          "src": "pending"
+        }
       ]
     },
     {
       "sku": "exercise-books",
-      "config": {"size": "A4/A5", "pages": "32-80P", "binding": "骑马钉/胶装", "note": "校园簿册, 301 承接品类"},
+      "config": {
+        "size": "A5 (148×210mm)",
+        "pages": "32PP (16张双面)",
+        "paper": "全書 80g 書紙",
+        "print": "黑白 (单色) 内文",
+        "binding": "骑马钉",
+        "note": "校园练习簿标准配置; 其他 P 数/彩色封面按 e-print 表线性外推或人工报"
+      },
       "tiers": [
-        {"qty": 500, "price": 2750, "unit": 5.50, "src": "pending", "note": "校园季重点, 待校准"},
-        {"qty": 1000, "price": 4500, "unit": 4.50, "src": "pending"},
-        {"qty": 3000, "price": 10500, "unit": 3.50, "src": "pending"}
+        {
+          "qty": 500,
+          "price": 1353,
+          "unit": 2.71,
+          "src": "anchor",
+          "calibratedAt": "2026-07-20",
+          "sourceRef": "e-print.com.hk 柯式騎馬釘書刊 A5 32PP 全書80g書紙黑白 ×0.90"
+        },
+        {
+          "qty": 1000,
+          "price": 2060,
+          "unit": 2.06,
+          "src": "anchor",
+          "calibratedAt": "2026-07-20",
+          "sourceRef": "e-print.com.hk 柯式騎馬釘書刊 A5 32PP 全書80g書紙黑白 ×0.90"
+        },
+        {
+          "qty": 2000,
+          "price": 2729,
+          "unit": 1.36,
+          "src": "anchor",
+          "calibratedAt": "2026-07-20",
+          "sourceRef": "e-print.com.hk 柯式騎馬釘書刊 A5 32PP 全書80g書紙黑白 ×0.90"
+        },
+        {
+          "qty": 3000,
+          "price": 3164,
+          "unit": 1.05,
+          "src": "anchor",
+          "calibratedAt": "2026-07-20",
+          "sourceRef": "e-print.com.hk 柯式騎馬釘書刊 A5 32PP 全書80g書紙黑白 ×0.90"
+        },
+        {
+          "qty": 5000,
+          "price": 4312,
+          "unit": 0.86,
+          "src": "anchor",
+          "calibratedAt": "2026-07-20",
+          "sourceRef": "e-print.com.hk 柯式騎馬釘書刊 A5 32PP 全書80g書紙黑白 ×0.90"
+        }
       ]
     }
   ]

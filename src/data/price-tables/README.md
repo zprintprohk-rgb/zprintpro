@@ -43,6 +43,14 @@
 - 复算脚本: `.hermes/calibrate-digital-flyers-2026-07-20.py`
 - **校簿 exercise-books 卡点**: e-print 膠裝/騎馬釘书刊页是 JS 配置器(按 P 数报价, HTML 无价表, 报价 API 未暴露) → 需 WebBridge 驱动配置器设定 A5/32P/80g书纸/骑马钉/黑白 取 500/1000/3000 本价 (下轮 K3 难点任务), 或走 intuan 校园簿册询价
 
+### 2026-07-20 v3 (e-print 柯式骑马钉书刊 × 0.90 — 校簿校园季车道)
+- `books.json`: exercise-books 全档 pending→anchor (500/1000/2000/3000/5000 本), 配置锚定 A5 32PP 全書80g書紙黑白骑马钉
+- 数据源: https://www.e-print.com.hk/products_books_printing_stitched_binding_color 页面固定价表 (user 指正: 价表就在页面上, 无需 WebBridge)
+- 依据: A5 直度全書同一紙質表·黑白列 100本$992/500本$1,503/1000本$2,289/2000本$3,032/3000本$3,516/5000本$4,791 ×0.90
+- 校簿价: 500本 HK$1,353 (2.71/本) → 5000本 HK$4,312 (0.86/本), 对校园批量询盘有竞争力
+- 复算脚本: `.hermes/calibrate-exercise-books-2026-07-20.py`
+- **剩余**: perfect-bound-books (胶装, e-print 膠裝書刊页有同类固定价表, 可照此法校准 — M3 可执行); packaging gift-boxes/food-boxes; paper-bags eco/gift-bags; flyers eco; same-day 500档
+
 ## 红线
 
 - ❌ 未校准 (`src≠anchor`) 的格子不得对客展示 — 先内部用,客户询价走 WhatsApp 人工报。
