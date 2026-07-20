@@ -51,8 +51,23 @@
 - 复算脚本: `.hermes/calibrate-exercise-books-2026-07-20.py`
 - **剩余**: perfect-bound-books (胶装, e-print 膠裝書刊页有同类固定价表, 可照此法校准 — M3 可执行); packaging gift-boxes/food-boxes; paper-bags eco/gift-bags; flyers eco; same-day 500档
 
+### 2026-07-21 v4 (e-print 胶装书 A5 32PP + 急件 flyers 6 档 — 校准同日完成)
+- `books.json`: perfect-bound-books 全档 pending→anchor (7 档: 100/500/1000/2000/3000/5000/10000), 配置 A5 32PP 4+32PP 內文80G書紙 250g 封面
+  - 数据源: https://www.e-print.com.hk/products_books_printing_perfect_binding_color (A5 直度彩色膠裝書刊价表, 內文80G書紙 tab, 4+32PP 行)
+  - 依据: 100本$1838/500本$2907/1000本$3168/2000本$3560/3000本$4769/5000本$6290/10000本$9842 ×0.90
+  - 校准价: 100本 HK$1,654 (16.54/本) → 5000本 HK$5,661 (1.13/本), 适合 32PP 以上的 book/menu/产品手册
+- `flyers.json`: same-day-flyers 急件 1小時 6 档 modeled/anchor-digital→anchor
+  - 数据源: https://www.e-print.com.hk/products_Leaflet_Express_Service (單張特急快印 1小時即取, A4/A5 tabs)
+  - 依据: A4 100張$600/200張$750 (上限200); A5 100張$173/200張$263/300張$503/400張$615 (上限400) — 雙面彩色 ×0.95
+  - 校准价: A4 100張 HK$570 / A5 100張 HK$164 / A5 400張 HK$584
+  - **500 档保留 modeled**: e-print 1小時急件不提供 500 張 (A4 max 200, A5 max 400), 按 400 張 A5 急件 + 同日 4小時複印溢價 35% 估算 HK$800, 待 intuan 急件实询校准
+- `flyers.json`: eco-flyers 维持 pending — e-print 公开页无 100% recycled/再生纸 宣傳單配置 (仅有 FSC 咭片 + 環保袋), 待 intuan 询价 (需 user WebBridge 登录态)
+- 复算脚本: `.hermes/calibrate-perfect-bound-and-flyers-2026-07-21.py` (1 script 管 2 SKU, C9 攒批 1 commit = 1 build quota)
+- **P0-1 B 进度**: 3/8 任务完成 (B-2 same-day + B-7 perfect-bound + B-8 exercise-books); 剩 5 任务 (B-1 a4-flyers autoglm + B-3~6 paper-bags/packaging 4 SKU user WebBridge)
+
 ## 红线
 
 - ❌ 未校准 (`src≠anchor`) 的格子不得对客展示 — 先内部用,客户询价走 WhatsApp 人工报。
 - ❌ 改价不走 git 直接改线上 — 价格表走 PR + 校准记录。
 - ❌ 名片 (business-cards) 不出现在任何价格表 (§11 禁区,2026-07-17 user 再确认)。
+- ❌ **抓不到真实价不许标 anchor** (2026-07-21 user 拍板: same-day 500 档 / eco-flyers / any 无 e-print/intuan 实抓证据的 tier) — 保持 modeled/pending 状态, 校准脚本留白纸黑字依据。

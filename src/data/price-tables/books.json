@@ -10,13 +10,14 @@
       "pending": "待询价",
       "intuan-2026-07-18": "intuan.com 登录态真实询价 CNY×1.3×1.087→HKD (intuan-real-quotes-2026-07-18.json)"
     },
-    "updatedAt": "2026-07-20",
-    "note": "2026-07-18 校准: saddle-stitch-booklets 重叠档 (500/1000/2000/5000) + 新增 3000 档用 intuan 专版画册实询价 (大度16开 封面250g+内页16P 157g 骑马钉); 100/300 小批量数码档保留。perfect-bound-books / exercise-books 未动。 | 2026-07-20 v3: exercise-books 全档 e-print 柯式骑马钉书刊实价(A5 32PP 全書80g書紙黑白) ×0.90 → anchor, 新增 2000/5000 档, 校园季车道就绪.",
+    "updatedAt": "2026-07-21",
+    "note": "2026-07-18 校准: saddle-stitch-booklets 重叠档 (500/1000/2000/5000) + 新增 3000 档用 intuan 专版画册实询价 (大度16开 封面250g+内页16P 157g 骑马钉); 100/300 小批量数码档保留。perfect-bound-books / exercise-books 未动。 | 2026-07-20 v3: exercise-books 全档 e-print 柯式骑马钉书刊实价(A5 32PP 全書80g書紙黑白) ×0.90 → anchor, 新增 2000/5000 档, 校园季车道就绪. | 2026-07-21 v4: perfect-bound-books 全档 pending→anchor, 配置 A5 32PP 4+32PP 內文80G書紙 250g 封面 ×0.90, 7 档 (100/500/1000/2000/3000/5000/10000), 胶装书标准车道就绪.",
     "references": {
       "eprint_booklet": "柯式骑马钉书刊 2工作天, 低至5折 — e-print.com.hk (具体价表待抓)",
       "intuan_booklet": "特价画册 0.3元/本起 (合版锚点)",
       "intuan_zbAlbum": "专版画册实询 2026-07-18: ¥861/500, ¥1140/1000, ¥1871/2000, ¥2553/3000, ¥3911/5000 → ×1.3×1.087 HKD",
-      "eprint_exercise_book": "https://www.e-print.com.hk/products_books_printing_stitched_binding_color (2026-07-20 实抓 A5 直度全書同一紙質表·黑白列: 100本$992/500本$1,503/1000本$2,289/2000本$3,032/3000本$3,516/5000本$4,791)"
+      "eprint_exercise_book": "https://www.e-print.com.hk/products_books_printing_stitched_binding_color (2026-07-20 实抓 A5 直度全書同一紙質表·黑白列: 100本$992/500本$1,503/1000本$2,289/2000本$3,032/3000本$3,516/5000本$4,791)",
+      "eprint_perfect_bound_a5": "https://www.e-print.com.hk/products_books_printing_perfect_binding_color (2026-07-21 实抓 A5 直度 4+32PP 內文80G書紙 250g 封面: 100本$1838/500本$2907/1000本$3168/2000本$3560/3000本$4769/5000本$6290/10000本$9842)"
     }
   },
   "products": [
@@ -79,28 +80,69 @@
     {
       "sku": "perfect-bound-books",
       "config": {
-        "size": "A4",
-        "pages": "32P+",
-        "binding": "无线胶装"
+        "size": "A5 (148×210mm) 直度",
+        "pages": "4+32PP (封面4P+内文32P, 内文16张双面)",
+        "paper": "封面 250g 雙粉咭紙 / 內文 80g 書紙",
+        "print": "彩色 (4C+4C)",
+        "binding": "无线胶装 (PUR)",
+        "note": "标准胶装画册/书刊配置; 适合 32PP 以上的 book/menu/产品手册"
       },
       "tiers": [
         {
           "qty": 100,
-          "price": 1800,
-          "unit": 18.0,
-          "src": "pending"
+          "price": 1654,
+          "unit": 16.54,
+          "src": "anchor",
+          "calibratedAt": "2026-07-21",
+          "sourceRef": "e-print.com.hk A5直度4+32PP內文80G書紙250g封面 ×0.90"
         },
         {
           "qty": 500,
-          "price": 5500,
-          "unit": 11.0,
-          "src": "pending"
+          "price": 2616,
+          "unit": 5.23,
+          "src": "anchor",
+          "calibratedAt": "2026-07-21",
+          "sourceRef": "e-print.com.hk A5直度4+32PP內文80G書紙250g封面 ×0.90"
         },
         {
           "qty": 1000,
-          "price": 8800,
-          "unit": 8.8,
-          "src": "pending"
+          "price": 2851,
+          "unit": 2.85,
+          "src": "anchor",
+          "calibratedAt": "2026-07-21",
+          "sourceRef": "e-print.com.hk A5直度4+32PP內文80G書紙250g封面 ×0.90"
+        },
+        {
+          "qty": 2000,
+          "price": 3204,
+          "unit": 1.6,
+          "src": "anchor",
+          "calibratedAt": "2026-07-21",
+          "sourceRef": "e-print.com.hk A5直度4+32PP內文80G書紙250g封面 ×0.90"
+        },
+        {
+          "qty": 3000,
+          "price": 4292,
+          "unit": 1.43,
+          "src": "anchor",
+          "calibratedAt": "2026-07-21",
+          "sourceRef": "e-print.com.hk A5直度4+32PP內文80G書紙250g封面 ×0.90"
+        },
+        {
+          "qty": 5000,
+          "price": 5661,
+          "unit": 1.13,
+          "src": "anchor",
+          "calibratedAt": "2026-07-21",
+          "sourceRef": "e-print.com.hk A5直度4+32PP內文80G書紙250g封面 ×0.90"
+        },
+        {
+          "qty": 10000,
+          "price": 8858,
+          "unit": 0.89,
+          "src": "anchor",
+          "calibratedAt": "2026-07-21",
+          "sourceRef": "e-print.com.hk A5直度4+32PP內文80G書紙250g封面 ×0.90"
         }
       ]
     },
