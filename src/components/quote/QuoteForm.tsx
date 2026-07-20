@@ -324,7 +324,7 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
       // 2026-07-20 P0-3 fix v3: 自有 API 路由 + Resend 发信 (FormSubmit → outlook 被微软静默丢弃, 已证实)
       // fire-and-forget, 失败不影响主流程 (Supabase 已落库)
       try {
-        await fetch('/api/quote-notify', {
+        await fetch('/api/quote-notify/', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
