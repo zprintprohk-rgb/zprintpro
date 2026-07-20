@@ -321,27 +321,23 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
       });
       if (error) throw error;
 
-      // 2026-07-20 P0-3 fix v2: FormSubmit AJAX 邮箱端点 (已验证激活可用, 替代失效的 token 端点)
-      // token 端点 (bf477f61ea...) 实测 Server Error 未激活, 回退到 ajax/email 端点
+      // 2026-07-20 P0-3 fix v3: 自有 API 路由 + Resend 发信 (FormSubmit → outlook 被微软静默丢弃, 已证实)
       // fire-and-forget, 失败不影响主流程 (Supabase 已落库)
       try {
-        await fetch('https://formsubmit.co/ajax/zprintpro@outlook.com', {
+        await fetch('/api/quote-notify', {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            _subject: `[ZprintPro 詢盤 ${sheet.ref}] ${productName}`,
-            _template: 'table',
-            _captcha: 'false',
-            姓名: data.name || '(未填)',
-            電話: data.phone,
-            電郵: data.email,
-            產品: productName,
-            數量: data.quantity || '(未填)',
-            尺寸: data.size || '(未填)',
-            留言: data.message + fileNote,
-            語言: locale,
-            詢盤編號: sheet.ref,
-            來源頁: document.referrer || '(直接訪問)',
+            ref: sheet.ref,
+            name: data.name || '',
+            phone: data.phone,
+            email: data.email,
+            product: productName,
+            quantity: data.quantity || '',
+            size: data.size || '',
+            message: data.message + fileNote,
+            locale,
+            referrer: document.referrer || '',
           }),
         });
       } catch {
