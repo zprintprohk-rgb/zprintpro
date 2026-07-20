@@ -1,7 +1,6 @@
 'use client';
 
-import { useState, useRef, useCallback, useEffect, useMemo } from 'react';
-import { createPortal } from 'react-dom';
+import { useState, useRef, useCallback, useEffect } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
@@ -35,12 +34,6 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
   const [files, setFiles] = useState<File[]>([]);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const [productSlug, setProductSlug] = useState<string | null>(null);
-  // P0-3 fix: portal 挂载状态（SSR 安全）— 隐藏 form/iframe 用 createPortal
-  // 挂在 document.body 上，绕开 React 状态切换的 unmount，保证 FormSubmit POST 不被打断
-  const [portalMounted, setPortalMounted] = useState(false);
-  useEffect(() => {
-    setPortalMounted(true);
-  }, []);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -328,23 +321,31 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
       });
       if (error) throw error;
 
-      // 2026-07-20 P0-3 fix: hidden form submit to FormSubmit token endpoint
-      // 触发邮件 forward → zprintpro@outlook.com（已激活，token: bf477f61ea...）
-      // 同步 submit 即可，因为 portal 挂到 document.body，不会被 React unmount
-      const hiddenForm = document.getElementById('formsubmit_hidden_form') as HTMLFormElement | null;
-      if (hiddenForm) {
-        (document.getElementById('fs_subject') as HTMLInputElement).value = `[ZprintPro 詢盤 ${sheet.ref}] ${productName}`;
-        (document.getElementById('fs_name') as HTMLInputElement).value = data.name || '(未填)';
-        (document.getElementById('fs_email') as HTMLInputElement).value = data.email;
-        (document.getElementById('fs_phone') as HTMLInputElement).value = data.phone;
-        (document.getElementById('fs_product') as HTMLInputElement).value = productName;
-        (document.getElementById('fs_quantity') as HTMLInputElement).value = data.quantity || '(未填)';
-        (document.getElementById('fs_size') as HTMLInputElement).value = data.size || '(未填)';
-        (document.getElementById('fs_message') as HTMLInputElement).value = data.message + fileNote;
-        (document.getElementById('fs_locale') as HTMLInputElement).value = locale;
-        (document.getElementById('fs_ref') as HTMLInputElement).value = sheet.ref;
-        // 同步触发 FormSubmit POST，iframe 收响应，不影响主页面
-        hiddenForm.submit();
+      // 2026-07-20 P0-3 fix v2: FormSubmit AJAX 邮箱端点 (已验证激活可用, 替代失效的 token 端点)
+      // token 端点 (bf477f61ea...) 实测 Server Error 未激活, 回退到 ajax/email 端点
+      // fire-and-forget, 失败不影响主流程 (Supabase 已落库)
+      try {
+        await fetch('https://formsubmit.co/ajax/zprintpro@outlook.com', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+          body: JSON.stringify({
+            _subject: `[ZprintPro 詢盤 ${sheet.ref}] ${productName}`,
+            _template: 'table',
+            _captcha: 'false',
+            姓名: data.name || '(未填)',
+            電話: data.phone,
+            電郵: data.email,
+            產品: productName,
+            數量: data.quantity || '(未填)',
+            尺寸: data.size || '(未填)',
+            留言: data.message + fileNote,
+            語言: locale,
+            詢盤編號: sheet.ref,
+            來源頁: document.referrer || '(直接訪問)',
+          }),
+        });
+      } catch {
+        // 通知失败不影响询盘主流程
       }
 
       trackContactFormSubmit(files.length > 0);
@@ -360,49 +361,9 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
     }
   };
 
-  // P0-3 fix: 隐藏 FormSubmit iframe + form 用 createPortal 挂到 document.body
-  // 原因：放在 React 树内时，submitStatus 切换会 unmount，setTimeout 触发的 form.submit() 落空
-  // 挂到 body 上 = 永远不会被 React 卸载，浏览器 POST 流程完整执行
-  const formSubmitPortal = useMemo(() => {
-    if (!portalMounted || typeof document === 'undefined') return null;
-    return createPortal(
-      <>
-        <iframe
-          name="formsubmit_iframe"
-          id="formsubmit_iframe"
-          className="hidden"
-          sandbox="allow-forms allow-scripts allow-same-origin"
-        />
-        <form
-          id="formsubmit_hidden_form"
-          action="https://formsubmit.co/bf477f61ea191fe881e51dce0378b71e"
-          method="POST"
-          target="formsubmit_iframe"
-          encType="application/x-www-form-urlencoded"
-          className="hidden"
-        >
-          <input type="hidden" name="_subject" id="fs_subject" />
-          <input type="hidden" name="_template" value="table" />
-          <input type="hidden" name="_captcha" value="false" />
-          <input type="hidden" name="name" id="fs_name" />
-          <input type="hidden" name="email" id="fs_email" />
-          <input type="hidden" name="phone" id="fs_phone" />
-          <input type="hidden" name="product" id="fs_product" />
-          <input type="hidden" name="quantity" id="fs_quantity" />
-          <input type="hidden" name="size" id="fs_size" />
-          <input type="hidden" name="message" id="fs_message" />
-          <input type="hidden" name="locale" id="fs_locale" />
-          <input type="hidden" name="ref" id="fs_ref" />
-        </form>
-      </>,
-      document.body
-    );
-  }, [portalMounted]);
-
   if (submitStatus === 'success') {
     return (
       <>
-        {formSubmitPortal}
         <div className="rounded-2xl border border-green-200 bg-green-50 p-10 text-center">
         <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
         <h3 className="text-2xl font-bold text-green-700 mb-2">{t.successTitle}</h3>
@@ -432,7 +393,6 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
 
   return (
     <>
-      {formSubmitPortal}
       <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
       <div className="space-y-3">
         <QuoteTrustBar items={t.trustItems} />
