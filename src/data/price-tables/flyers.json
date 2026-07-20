@@ -4,57 +4,204 @@
     "currency": "HKD",
     "anchor": "HKD",
     "strategy": "对标 e-print.com.hk × 0.95 (user 2026-07-17 拍板); 拼版标准规格不硬拼 e-print 拼版价, 主打专版品质+小批量+急单",
-    "src_legend": {"anchor": "真实抓取锚点", "modeled": "按开机费+随量成本建模, 待 e-print 完整价表校准", "pending": "待询价", "intuan-2026-07-18": "intuan.com 登录态真实询价 CNY×1.3×1.087→HKD (intuan-real-quotes-2026-07-18.json)"},
-    "updatedAt": "2026-07-18",
-    "note": "2026-07-18 校准: a5-flyers 重叠档 (1000/2000/3000/5000) + 新增 500 档用 intuan 专版宣传单实询价; 100/300 数码甜点档与 600 e-print anchor 档保留。a4-flyers / same-day-flyers / eco-flyers 未动。",
+    "src_legend": {
+      "anchor": "真实抓取锚点",
+      "modeled": "按开机费+随量成本建模, 待 e-print 完整价表校准",
+      "pending": "待询价",
+      "intuan-2026-07-18": "intuan.com 登录态真实询价 CNY×1.3×1.087→HKD (intuan-real-quotes-2026-07-18.json)"
+    },
+    "updatedAt": "2026-07-20",
+    "note": "2026-07-18 校准: a5-flyers 重叠档 (1000/2000/3000/5000) + 新增 500 档用 intuan 专版宣传单实询价; 100/300 数码甜点档与 600 e-print anchor 档保留。a4-flyers / same-day-flyers / eco-flyers 未动。 | 2026-07-20 校准: a5/a4 主档 e-print 柯式单张实抓 ×0.95 → anchor; 100-300 数码档保持 modeled(不硬拼).",
     "references": {
       "eprint_a5": "HK$315/600张 (柯式拼版, 1工作天) — e-print.com.hk 首页锚点",
       "copycat_a5_157g": "500张 $630单面/$830双面; 1000张 $750/$950; 5000张 $1750/$1950 (cpct-copycat.com 专版价)",
-      "intuan_zbsingle": "专版宣传单实询 2026-07-18: ¥196/500, ¥220/1000, ¥265/2000, ¥344/3000, ¥469/5000 → ×1.3×1.087 HKD"
+      "intuan_zbsingle": "专版宣传单实询 2026-07-18: ¥196/500, ¥220/1000, ¥265/2000, ¥344/3000, ¥469/5000 → ×1.3×1.087 HKD",
+      "eprint_flyer": "https://www.e-print.com.hk/products_brochure_booklet_leaflet_printing (2026-07-20 实抓: A5 157g 600張$315/1000張$365/2000張$415; A4 157g 4C+4C 300張$500/500張$550/1000張$650/2000張$940/5000張$1650)"
     }
   },
   "products": [
     {
       "sku": "a5-flyers",
-      "config": {"size": "A5 (210x148mm)", "paper": "157g哑粉纸", "print": "双面彩色", "note": "标准走量款"},
+      "config": {
+        "size": "A5 (210x148mm)",
+        "paper": "157g哑粉纸",
+        "print": "双面彩色",
+        "note": "标准走量款"
+      },
       "tiers": [
-        {"qty": 100, "price": 180, "unit": 1.80, "src": "modeled", "note": "数码印刷, 拼版不做的区间=我们的甜点"},
-        {"qty": 300, "price": 260, "unit": 0.87, "src": "modeled", "note": "数码"},
-        {"qty": 500, "price": 277, "unit": 0.55, "src": "intuan-2026-07-18", "note": "intuan 专版宣传单实询 ×1.3, 新增档"},
-        {"qty": 600, "price": 300, "unit": 0.50, "src": "anchor", "note": "e-print $315×0.95≈$300, 正面交锋档"},
-        {"qty": 1000, "price": 311, "unit": 0.31, "src": "intuan-2026-07-18"},
-        {"qty": 2000, "price": 374, "unit": 0.19, "src": "intuan-2026-07-18"},
-        {"qty": 3000, "price": 486, "unit": 0.16, "src": "intuan-2026-07-18"},
-        {"qty": 5000, "price": 663, "unit": 0.13, "src": "intuan-2026-07-18"}
+        {
+          "qty": 100,
+          "price": 180,
+          "unit": 1.8,
+          "src": "modeled",
+          "note": "数码印刷, 拼版不做的区间=我们的甜点"
+        },
+        {
+          "qty": 300,
+          "price": 260,
+          "unit": 0.87,
+          "src": "modeled",
+          "note": "数码"
+        },
+        {
+          "qty": 500,
+          "price": 277,
+          "unit": 0.55,
+          "src": "intuan-2026-07-18",
+          "note": "intuan 专版宣传单实询 ×1.3, 新增档"
+        },
+        {
+          "qty": 600,
+          "price": 299,
+          "unit": 0.5,
+          "src": "anchor",
+          "note": "e-print $315×0.95≈$300, 正面交锋档",
+          "calibratedAt": "2026-07-20",
+          "sourceRef": "e-print.com.hk 柯式宣傳單張 A5 157g ×0.95"
+        },
+        {
+          "qty": 1000,
+          "price": 347,
+          "unit": 0.35,
+          "src": "anchor",
+          "calibratedAt": "2026-07-20",
+          "sourceRef": "e-print.com.hk 柯式宣傳單張 A5 157g ×0.95"
+        },
+        {
+          "qty": 2000,
+          "price": 394,
+          "unit": 0.2,
+          "src": "anchor",
+          "calibratedAt": "2026-07-20",
+          "sourceRef": "e-print.com.hk 柯式宣傳單張 A5 157g ×0.95"
+        },
+        {
+          "qty": 3000,
+          "price": 499,
+          "unit": 0.17,
+          "src": "anchor",
+          "calibratedAt": "2026-07-20",
+          "sourceRef": "e-print.com.hk 柯式宣傳單張 A5 157g ×0.95"
+        },
+        {
+          "qty": 5000,
+          "price": 686,
+          "unit": 0.14,
+          "src": "anchor",
+          "calibratedAt": "2026-07-20",
+          "sourceRef": "e-print.com.hk 柯式宣傳單張 A5 157g ×0.95"
+        }
       ]
     },
     {
       "sku": "a4-flyers",
-      "config": {"size": "A4 (297x210mm)", "paper": "157g哑粉纸", "print": "双面彩色"},
+      "config": {
+        "size": "A4 (297x210mm)",
+        "paper": "157g哑粉纸",
+        "print": "双面彩色"
+      },
       "tiers": [
-        {"qty": 100, "price": 220, "unit": 2.20, "src": "modeled", "note": "数码甜点区"},
-        {"qty": 300, "price": 330, "unit": 1.10, "src": "modeled"},
-        {"qty": 500, "price": 420, "unit": 0.84, "src": "modeled"},
-        {"qty": 1000, "price": 580, "unit": 0.58, "src": "modeled", "note": "e-print A4 价表待补, 按 A5×1.5 估算"},
-        {"qty": 2000, "price": 900, "unit": 0.45, "src": "modeled"},
-        {"qty": 5000, "price": 1850, "unit": 0.37, "src": "modeled"}
+        {
+          "qty": 100,
+          "price": 220,
+          "unit": 2.2,
+          "src": "modeled",
+          "note": "数码甜点区"
+        },
+        {
+          "qty": 300,
+          "price": 475,
+          "unit": 1.58,
+          "src": "anchor",
+          "calibratedAt": "2026-07-20",
+          "sourceRef": "e-print.com.hk 柯式宣傳單張 A4 157g 4C+4C ×0.95"
+        },
+        {
+          "qty": 500,
+          "price": 522,
+          "unit": 1.04,
+          "src": "anchor",
+          "calibratedAt": "2026-07-20",
+          "sourceRef": "e-print.com.hk 柯式宣傳單張 A4 157g 4C+4C ×0.95"
+        },
+        {
+          "qty": 1000,
+          "price": 618,
+          "unit": 0.62,
+          "src": "anchor",
+          "note": "e-print A4 价表待补, 按 A5×1.5 估算",
+          "calibratedAt": "2026-07-20",
+          "sourceRef": "e-print.com.hk 柯式宣傳單張 A4 157g 4C+4C ×0.95"
+        },
+        {
+          "qty": 2000,
+          "price": 893,
+          "unit": 0.45,
+          "src": "anchor",
+          "calibratedAt": "2026-07-20",
+          "sourceRef": "e-print.com.hk 柯式宣傳單張 A4 157g 4C+4C ×0.95"
+        },
+        {
+          "qty": 5000,
+          "price": 1568,
+          "unit": 0.31,
+          "src": "anchor",
+          "calibratedAt": "2026-07-20",
+          "sourceRef": "e-print.com.hk 柯式宣傳單張 A4 157g 4C+4C ×0.95"
+        }
       ]
     },
     {
       "sku": "same-day-flyers",
-      "config": {"size": "A5/A4", "paper": "157g哑粉", "print": "双面彩色", "rush": "即日数码"},
+      "config": {
+        "size": "A5/A4",
+        "paper": "157g哑粉",
+        "print": "双面彩色",
+        "rush": "即日数码"
+      },
       "tiers": [
-        {"qty": 100, "price": 280, "unit": 2.80, "src": "modeled", "note": "急单溢价 ~50%, e-print 拼版不即日"},
-        {"qty": 300, "price": 460, "unit": 1.53, "src": "modeled"},
-        {"qty": 500, "price": 620, "unit": 1.24, "src": "modeled"}
+        {
+          "qty": 100,
+          "price": 280,
+          "unit": 2.8,
+          "src": "modeled",
+          "note": "急单溢价 ~50%, e-print 拼版不即日"
+        },
+        {
+          "qty": 300,
+          "price": 460,
+          "unit": 1.53,
+          "src": "modeled"
+        },
+        {
+          "qty": 500,
+          "price": 620,
+          "unit": 1.24,
+          "src": "modeled"
+        }
       ]
     },
     {
       "sku": "eco-flyers",
-      "config": {"size": "A5/A4", "paper": "再生纸/FSC", "print": "双面彩色"},
+      "config": {
+        "size": "A5/A4",
+        "paper": "再生纸/FSC",
+        "print": "双面彩色"
+      },
       "tiers": [
-        {"qty": 300, "price": 380, "unit": 1.27, "src": "pending", "note": "特殊纸价待询"},
-        {"qty": 1000, "price": 720, "unit": 0.72, "src": "pending"}
+        {
+          "qty": 300,
+          "price": 380,
+          "unit": 1.27,
+          "src": "pending",
+          "note": "特殊纸价待询"
+        },
+        {
+          "qty": 1000,
+          "price": 720,
+          "unit": 0.72,
+          "src": "pending"
+        }
       ]
     }
   ]

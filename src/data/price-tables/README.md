@@ -24,6 +24,16 @@
 - 报价结果显示 **数量跳水表** (5 档数量×单价,当前档高亮) + 工艺逐项 "+HK$X" + 一键发 WhatsApp 报价单。
 - en/ja 价: HKD 表 × 实时汇率 + 国际运费包 (现有 `quote-engine/shipping.ts` + `fx.ts`),保持独立定价文件 `INDEPENDENT_PRICES` 同步刷新。
 
+## 校准记录
+
+### 2026-07-20 (e-print 单张实抓 × 0.95)
+- `flyers.json`: a5-flyers 5 档 (600/1000/2000/3000/5000) + a4-flyers 5 档 (300/500/1000/2000/5000) modeled→anchor
+- 数据源: https://www.e-print.com.hk/products_brochure_booklet_leaflet_printing (2026-07-20 curl 实抓完整价目表)
+- 依据: A5 157g (4C 同价) 600張$315/1000張$365/2000張$415/4000張$635/6000張$810;A4 157g 4C+4C 300張$500/500張$550/1000張$650/2000張$940/3000張$1190/5000張$1650;中间档线性插值
+- 100-300 数码甜点档按红线不硬拼,保持 modeled
+- 复算脚本: `.hermes/calibrate-price-tables-2026-07-20.py`
+- **仍未校准 (下轮)**: books 的 perfect-bound-books / exercise-books (e-print 膠裝書刊页变量多,需按 P 数建模);packaging gift-boxes/food-boxes;paper-bags eco/gift-bags;flyers same-day/eco
+
 ## 红线
 
 - ❌ 未校准 (`src≠anchor`) 的格子不得对客展示 — 先内部用,客户询价走 WhatsApp 人工报。
