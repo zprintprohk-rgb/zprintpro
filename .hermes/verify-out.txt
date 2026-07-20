@@ -1,15 +1,42 @@
-﻿=== zh-hk ===
-  OK slug-key="thick-paper-flyer-printing-restaurant-takeout-guide" title=鍘氱礄鍌冲柈鍗板埛鎸囧崡 路 棣欐腐椁愬怀澶栬常鍠嫉鍘氱礄閬告潗鏀荤暐 | 鏅哄嵃闆?ZprintPro h1=None
-  OK slug-key="magnetic-closure-gift-box-ecommerce-brand-guide" title=纾佸惛绂洅瀹氬埗鎸囧崡 路 璺ㄥ闆诲晢鍝佺墝鍗囩礆鍖呰鏂规 | 鏅哄嵃闆?ZprintPro h1=None
-  OK slug-key="folding-box-cosmetics-brand-eco-friendly-guide" title=鎶樼枈鐩掑畾鍒舵寚鍗?路 缇庡璀疯啔鍝佺墝鐠颁繚鍖呰鏀荤暐 | 鏅哄嵃闆?ZprintPro h1=None
-  total slug-like keys: 46
-=== en ===
-  OK slug-key="thick-paper-flyer-printing-restaurant-takeout-guide" title=Thick Paper Flyer Printing Guide 路 Restaurant Menu Inserts & h1=None
-  OK slug-key="magnetic-closure-gift-box-ecommerce-brand-guide" title=Magnetic Closure Gift Box Guide 路 Cross-Border E-commerce Pr h1=None
-  OK slug-key="folding-box-cosmetics-brand-eco-friendly-guide" title=Folding Box Printing Guide 路 Eco-Friendly Cosmetics Brand Pa h1=None
-  total slug-like keys: 46
-=== ja ===
-  OK slug-key="thick-paper-flyer-printing-restaurant-takeout-guide" title=鍘氱礄銉併儵銈峰嵃鍒枫偓銈ゃ儔 路 椋查搴椼儭銉嬨儱銉笺兓銉嗐偆銈偄銈︺儓鍚戙亼瀹屽叏瑙ｈ | ZprintPro h1=None
-  OK slug-key="magnetic-closure-gift-box-ecommerce-brand-guide" title=銉炪偘銉嶃儍銉堝紡銈儠銉?銉溿儍銈偣 銈偣銈裤儬銈偆銉?路 瓒婂EC銉籇TC 銉栥儵銉炽儔鍚戙亼銉椼儸銉熴偄銉 h1=None
-  OK slug-key="folding-box-cosmetics-brand-eco-friendly-guide" title=鎶樸倞鐣炽伩绠?銈偣銈裤儬 銈偆銉?路 鍖栫钵鍝併兓銈广偔銉炽偙銈?銉栥儵銉炽儔鍚戙亼銈ㄣ偝鍖呰 | Zprint h1=None
-  total slug-like keys: 46
+﻿zh-hk religious-ceremony-printing-guide:
+  date: 2026-07-20
+  title: ����ڽ̶Y�xӡˢָ�� �� �����R���x�Y�и��x������ | ��ӡ� ZprintPro
+  content_len: 2807
+
+zh-hk industrial-nameplate-printing-guide:
+  date: 2026-07-20
+  title: ���I�O����� / GHS Σ�U�˻`ӡˢָ�� �� UL �J�C + ANSI Z535 �˜� | ��ӡ� ZprintPro
+  content_len: 3413
+
+zh-hk construction-material-sample-book-printing-guide:
+  date: 2026-07-20
+  title: ���B�b��ϘӰ��փ�ӡˢָ�� �� �ɴuʯ�Ĵ���ɫ������ | ��ӡ� ZprintPro
+  content_len: 3232
+
+en religious-ceremony-printing-guide:
+  date: 2026-07-20
+  title: Religious Ceremony Printing Guide: Custom Church / Temple / Memorial B
+  content_len: 5778
+
+en industrial-nameplate-printing-guide:
+  date: 2026-07-20
+  title: Industrial Equipment Nameplate & GHS Hazard Label Printing Guide: UL C
+  content_len: 6346
+
+en construction-material-sample-book-printing-guide:
+  date: 2026-07-20
+  title: Construction Material Sample Book Printing Guide: Tile, Stone, Curtain
+  content_len: 6607
+
+ja religious-ceremony-printing-guide:
+  date: 2026-07-20
+python : Traceback (most recent call last):
+所在位置 行:1 字符: 131
++ ... F:\zprintpro-nextjs; python .hermes\verify-new-3blogs.py 2>&1 | Out-F ...
++                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "F:\zprintpro-nextjs\.hermes\verify-new-3blogs.py", line 9, in <module>
+    print(f'  title: {e["title"][:70]}')
+UnicodeEncodeError: 'gbk' codec can't encode character '\u30fb' in position 21: illegal multibyte sequence

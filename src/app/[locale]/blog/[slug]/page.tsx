@@ -520,6 +520,11 @@ const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-
   'religious-ceremony-printing-guide',
   'industrial-nameplate-printing-guide',
   'construction-material-sample-book-printing-guide',
+  'baby-food-packaging-box-printing-guide',
+  'real-estate-flyer-printing-guide',
+  'medical-device-packaging-box-guide',
+  'auto-parts-shopping-bag-printing-guide',
+  'sports-merchandise-gift-box-printing-guide',,
 ];
 const guideSlugs = getAllBuyingGuideSlugs();
 const clusterSlugs = getAllClusterSlugs();
