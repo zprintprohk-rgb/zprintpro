@@ -321,30 +321,23 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
       });
       if (error) throw error;
 
-      // 2026-07-20 P0-3: 询盘邮件通知 (fire-and-forget, 不阻塞主流程)
-      // FormSubmit AJAX → zprintpro@outlook.com; 首次提交需到邮箱点激活链接后生效
-      try {
-        await fetch('https://formsubmit.co/ajax/zprintpro@outlook.com', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-          body: JSON.stringify({
-            _subject: `[ZprintPro 詢盤 ${sheet.ref}] ${productName}`,
-            _template: 'table',
-            _captcha: 'false',
-            姓名: data.name || '(未填)',
-            電話: data.phone,
-            電郵: data.email,
-            產品: productName,
-            數量: data.quantity || '(未填)',
-            尺寸: data.size || '(未填)',
-            留言: data.message,
-            附件: fileNote || '無',
-            語言: locale,
-            來源頁: document.referrer || '(直接訪問)',
-          }),
-        });
-      } catch {
-        // 通知失败不影响询盘主流程 (Supabase 已落库)
+      // 2026-07-20 P0-3 fix: hidden form submit to FormSubmit token endpoint
+      // 触发邮件 forward → zprintpro@outlook.com（已激活，token: bf477f61ea...）
+      // target=formsubmit_iframe 防止页面跳转；Supabase 落库走主 onSubmit JS 独立处理
+      const hiddenForm = document.getElementById('formsubmit_hidden_form') as HTMLFormElement | null;
+      if (hiddenForm) {
+        (document.getElementById('fs_subject') as HTMLInputElement).value = `[ZprintPro 詢盤 ${sheet.ref}] ${productName}`;
+        (document.getElementById('fs_name') as HTMLInputElement).value = data.name || '(未填)';
+        (document.getElementById('fs_email') as HTMLInputElement).value = data.email;
+        (document.getElementById('fs_phone') as HTMLInputElement).value = data.phone;
+        (document.getElementById('fs_product') as HTMLInputElement).value = productName;
+        (document.getElementById('fs_quantity') as HTMLInputElement).value = data.quantity || '(未填)';
+        (document.getElementById('fs_size') as HTMLInputElement).value = data.size || '(未填)';
+        (document.getElementById('fs_message') as HTMLInputElement).value = data.message + fileNote;
+        (document.getElementById('fs_locale') as HTMLInputElement).value = locale;
+        (document.getElementById('fs_ref') as HTMLInputElement).value = sheet.ref;
+        // 异步触发 FormSubmit POST，不等待（iframe 收响应，不影响主页面）
+        setTimeout(() => hiddenForm.submit(), 0);
       }
 
       trackContactFormSubmit(files.length > 0);
@@ -389,6 +382,43 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
   }
 
   return (
+    <>
+      {/* 2026-07-20 P0-3 fix: hidden iframe + form for FormSubmit token activation
+          - token bf477f61ea191fe881e51dce0378b71e (activated 2026-07-20)
+          - POST 到 FormSubmit → forward email to zprintpro@outlook.com
+          - target=formsubmit_iframe 防止页面跳转
+          - Supabase 落库由主 onSubmit JS 独立处理，两者并行 */}
+      <iframe
+        name="formsubmit_iframe"
+        id="formsubmit_iframe"
+        className="hidden"
+        sandbox="allow-scripts allow-forms"
+        onLoad={() => {
+          // FormSubmit 收到请求后在此 iframe 加载确认页，不影响主流程
+        }}
+      />
+      <form
+        id="formsubmit_hidden_form"
+        action="https://formsubmit.co/bf477f61ea191fe881e51dce0378b71e"
+        method="POST"
+        target="formsubmit_iframe"
+        encType="application/x-www-form-urlencoded"
+        className="hidden"
+      >
+        <input type="hidden" name="_subject" id="fs_subject" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="name" id="fs_name" />
+        <input type="hidden" name="email" id="fs_email" />
+        <input type="hidden" name="phone" id="fs_phone" />
+        <input type="hidden" name="product" id="fs_product" />
+        <input type="hidden" name="quantity" id="fs_quantity" />
+        <input type="hidden" name="size" id="fs_size" />
+        <input type="hidden" name="message" id="fs_message" />
+        <input type="hidden" name="locale" id="fs_locale" />
+        <input type="hidden" name="ref" id="fs_ref" />
+      </form>
+
     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
       <div className="space-y-3">
         <QuoteTrustBar items={t.trustItems} />
@@ -622,5 +652,6 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
         </div>
       </div>
     </form>
+    </>
   );
 }
