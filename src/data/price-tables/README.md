@@ -34,6 +34,15 @@
 - 复算脚本: `.hermes/calibrate-price-tables-2026-07-20.py`
 - **仍未校准 (下轮)**: books 的 perfect-bound-books / exercise-books (e-print 膠裝書刊页变量多,需按 P 数建模);packaging gift-boxes/food-boxes;paper-bags eco/gift-bags;flyers same-day/eco
 
+### 2026-07-20 v2 (e-print 数码单张实抓 × 0.95 — 50-300張数码主车道, user 当日拍板放开)
+- `flyers.json`: a5 100/300 档 + a4 100/300 档 + same-day 100/300 档 → anchor-digital (共 6 档)
+- 数据源: https://www.e-print.com.hk/products_digital_brochure_booklet_leaflet_printing (2026-07-20 实抓)
+- 依据: A4 雙面 100張$400/300張$750;A5 雙面 100張$132/300張$248;same-day 以 A4 双面为保守锚
+- 校准纠偏: a4 100張建模价 $220 低于 e-print 成本线, 纠正为 $380 — 避免赔本接单
+- same-day 500張档 e-print 数码页无 500 档(特急页未抓), 保持 modeled
+- 复算脚本: `.hermes/calibrate-digital-flyers-2026-07-20.py`
+- **校簿 exercise-books 卡点**: e-print 膠裝/騎馬釘书刊页是 JS 配置器(按 P 数报价, HTML 无价表, 报价 API 未暴露) → 需 WebBridge 驱动配置器设定 A5/32P/80g书纸/骑马钉/黑白 取 500/1000/3000 本价 (下轮 K3 难点任务), 或走 intuan 校园簿册询价
+
 ## 红线
 
 - ❌ 未校准 (`src≠anchor`) 的格子不得对客展示 — 先内部用,客户询价走 WhatsApp 人工报。
