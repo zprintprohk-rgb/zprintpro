@@ -28,27 +28,38 @@ PORT = 15321
 BASE = f'http://127.0.0.1:{PORT}/mavis/api/agent/mavis/cron'
 SOURCE_DIR = r'F:\zprintpro-nextjs\.hermes\cron-prompts\mavis'
 
-# 4 个 zprintpro cron: 源文件名 + 关键 marker (用于完整性验证)
+# 6 个 zprintpro cron: 源文件名 + 关键 marker (用于完整性验证)
+# K3 v7 (2026-07-20 user 拍板): 4 改 + 2 新
 CRONS = [
     {
-        'name': 'zprintpro-daily-content-evolve',
-        'src':  'daily-content-evolve.md',
-        'markers': ['启动后立即读', '完成标准', 'Sub-task A'],
+        'name': 'zprintpro-daily-content-1x7w',
+        'src':  'daily-content-1x7w.md',
+        'markers': ['v7 关键变化', '完成标准', 'Sub-task A', '1200+ 字'],
     },
     {
         'name': 'zprintpro-weekly-meta-refresh',
         'src':  'weekly-meta-refresh.md',
-        'markers': ['启动后立即读', '完成标准', '内链自生长'],
-    },
-    {
-        'name': 'zprintpro-monthly-matrix-audit',
-        'src':  'monthly-matrix-audit.md',
-        'markers': ['启动后立即读', '完成标准', '半年冲刺', '月报落盘'],
+        'markers': ['v4 关键变化', '完成标准', 'PDP 转化要素审查', '内链自生长'],
     },
     {
         'name': 'zprintpro-gsc-feedback-loop',
         'src':  'gsc-feedback-loop.md',
-        'markers': ['启动后立即读', '完成标准', 'priority_boost', 'matrix.json'],
+        'markers': ['v3 关键变化', '完成标准', '141 残杀词', '301 抓取异常'],
+    },
+    {
+        'name': 'zprintpro-monthly-matrix-audit',
+        'src':  'monthly-matrix-audit.md',
+        'markers': ['v4 关键变化', '完成标准', '半年冲刺', 'src:modeled'],
+    },
+    {
+        'name': 'zprintpro-revenue-analytics-weekly',
+        'src':  'revenue-analytics-weekly.md',
+        'markers': ['战略定位', '完成标准', '漏斗转化率', 'GA4 流量分析', 'Supabase 询盘'],
+    },
+    {
+        'name': 'zprintpro-build-quota-cleanup',
+        'src':  'build-quota-cleanup.md',
+        'markers': ['战略定位', '完成标准', '保留清单', 'git mv', 'self-reminder'],
     },
 ]
 
