@@ -245,7 +245,7 @@ export function Footer({ locale }: FooterProps) {
             <div className="mb-4">
               {/* 2026-07-21 v4 (K3 拍板): zh-hk 智印港品牌视觉 = 智印港中文新logo.png; en/ja = Zprintpro LOGO web.png */}
               <Image
-                src={locale === 'zh-hk' ? '/images/智印港中文新logo.png' : '/images/Zprintpro LOGO web.png'}
+                src={locale === 'zh-hk' ? '/images/logo-zhiyingang.png' : '/images/logo-web.png'}
                 alt={locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro'}
                 width={240}
                 height={55}
@@ -377,9 +377,9 @@ export function Footer({ locale }: FooterProps) {
         <div className="lg:hidden">
           {/* 品牌 + NAP */}
           <div className="mb-3">
-            {/* 2026-07-21 v4 (K3 拍板): zh-hk 智印港品牌视觉 = 智印港中文新logo.png; en/ja = Zprintpro LOGO web.png */}
+            {/* 2026-07-21 v4 (K3 拍板): zh-hk 智印港品牌视觉 = logo-zhiyingang.png; en/ja = logo-web.png */}
             <Image
-              src={locale === 'zh-hk' ? '/images/智印港中文新logo.png' : '/images/Zprintpro LOGO web.png'}
+              src={locale === 'zh-hk' ? '/images/logo-zhiyingang.png' : '/images/logo-web.png'}
               alt={locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro'}
               width={240}
               height={55}

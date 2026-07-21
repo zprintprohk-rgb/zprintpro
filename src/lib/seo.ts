@@ -13,7 +13,7 @@ export function getGscLogoUrl(locale: Locale): string {
   const base = siteConfig.url;
   return locale === 'zh-hk'
     ? `${base}/images/ZprintproLOGONEW-02.png`
-    : `${base}/images/Zprintpro LOGO whatsapp.png`;
+    : `${base}/images/logo-whatsapp.png`;
 }
 
 /**
@@ -23,8 +23,8 @@ export function getGscLogoUrl(locale: Locale): string {
  */
 export function getWebLogoUrl(locale: Locale): string {
   return locale === 'zh-hk'
-    ? '/images/智印港中文新logo.png'
-    : '/images/Zprintpro LOGO web.png';
+    ? '/images/logo-zhiyingang.png'
+    : '/images/logo-web.png';
 }
 
 export function getWebLogoAlt(locale: Locale): string {
