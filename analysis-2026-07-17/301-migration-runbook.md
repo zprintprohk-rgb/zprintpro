@@ -85,3 +85,25 @@
 3. 灰度抽查 10 条: `curl -sI https://www.z-printpro.com/products/paper-bag-printing/` 等 → 期望一跳 301
 4. GSC 老站 Change of Address → zprintpro.com (需老站已验证 domain 属性)
 5. SaaS (青岛壹通, 2026-10-12 到期) 迁移稳定 8 周后再关闭; CF 301 规则永久保留
+
+---
+
+## 迁移完成记录 2026-07-21 17:10 (K3 via WebBridge)
+
+**🎉 P0-2 301 迁移全部完成:**
+
+| 步骤 | 结果 |
+|---|---|
+| 阿里云 NS 切换 | ✅ 用户执行, amalia/kevin 已全球生效 (本地+8.8.8.8 双验证) |
+| 灰度抽查 | ✅ 21/21 PASS (11 代表类目 + 10 随机), 全部一跳 301 → 正确目标, 目标页全 200 |
+| GSC Change of Address | ✅ 已注册: z-printpro.com → zprintpro.com, 请求日期 2026-07-21, 状态「正在迁移」 |
+| 基线数据 | F:\z-printpro.com-Performance-on-Search-2026-07-09 (老站 91 天) + 新站 2026-07-17 已存档 |
+
+**GSC 操作坑记录**:
+- jsaction 框架对 synthetic JS 事件基本免疫; WebBridge `click` 时灵时不灵 → **`mouse_click` (原始 CDP 鼠标事件) 最可靠**。
+- 关键控件可能是隐藏双层渲染: 点击前用 elementFromPoint 校验可见层, 给可见按钮打临时 id 再点。
+- combobox 展开: mouse_click 点击输入框即开 (不要依赖 send_keys arrowdown)。
+- 验证通过≠完成: 必须再点「确认迁移」, 成功标志 = 页面显示「此网站当前正在迁移 + 取消迁移按钮」。
+- 截图 (screenshot action) 是排查 SPA 状态的最可靠手段, 比 innerText/snapshot 可信。
+
+**后续监控** (已并入 zprintpro-gsc-feedback-loop 周三 cron): 老站流量衰减曲线 + 新站承接曲线 + 校园/单张词排名迁移情况。Google 官方口径: 地址更改信号有效期 180 天, CF 301 规则永久保留。

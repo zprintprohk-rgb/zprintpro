@@ -4,7 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin, Youtube, ChevronDown } from 'lucide-react';
-import { Locale } from '@/lib/seo';
+import { Locale, getWebLogoUrl, getWebLogoAlt } from '@/lib/seo';
 import { GeoFooterText } from '@/components/seo/GeoFooterText';
 import { generateWhatsAppLink, getWhatsAppLinkProps } from '@/lib/whatsapp';
 
@@ -245,10 +245,10 @@ export function Footer({ locale }: FooterProps) {
             <div className="mb-4">
               {/* 2026-07-21 v4 (K3 拍板): zh-hk 智印港品牌视觉 = 智印港中文新logo.png; en/ja = Zprintpro LOGO web.png */}
               <Image
-                src={locale === 'zh-hk' ? '/images/logo-zhiyingang.png' : '/images/logo-web.png'}
-                alt={locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro'}
+                src={getWebLogoUrl(locale)}
+                alt={getWebLogoAlt(locale)}
                 width={240}
-                height={55}
+                height={240}
                 className="h-11 w-auto"
                 loading="lazy"
                 decoding="async"
@@ -377,12 +377,12 @@ export function Footer({ locale }: FooterProps) {
         <div className="lg:hidden">
           {/* 品牌 + NAP */}
           <div className="mb-3">
-            {/* 2026-07-21 v4 (K3 拍板): zh-hk 智印港品牌视觉 = logo-zhiyingang.png; en/ja = logo-web.png */}
+            {/* 2026-07-22 v5 (K3 拍板): 统一 GSC LOGO.png, 3 locale 通用 */}
             <Image
-              src={locale === 'zh-hk' ? '/images/logo-zhiyingang.png' : '/images/logo-web.png'}
-              alt={locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro'}
+              src={getWebLogoUrl(locale)}
+              alt={getWebLogoAlt(locale)}
               width={240}
-              height={55}
+              height={240}
               className="h-9 w-auto"
               loading="lazy"
               decoding="async"

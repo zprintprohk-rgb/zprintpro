@@ -5,7 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X, Phone, Mail, ShoppingCart, ChevronDown } from 'lucide-react';
-import { Locale } from '@/lib/seo';
+import { Locale, getWebLogoUrl, getWebLogoAlt } from '@/lib/seo';
 import { useCart } from '@/lib/cart-context';
 import { getWhatsAppLinkProps } from '@/lib/whatsapp';
 import { SearchDropdown } from './SearchDropdown';
@@ -318,12 +318,12 @@ export function Header({ locale }: HeaderProps) {
                   390px 视口下把购物车+汉堡按钮挤出屏幕 (x=516), 用户看不到导航入口。
                   移动端限高 34px (宽约 272px), 腾出右侧按钮空间; 桌面保持原样 */}
               <Link href={`${localePrefix}/`} className="flex-shrink-0 ml-2 lg:ml-[30px]">
-                {/* 2026-07-21 v4 (K3 拍板): zh-hk 智印港品牌视觉 = 智印港中文新logo.png; en/ja = Zprintpro LOGO web.png */}
+                {/* 2026-07-22 v5 (K3 拍板): 单一 GSC LOGO.png — 圆形 logo 可居中显示，3 locale 统一 */}
                 <Image
-                  src={locale === 'zh-hk' ? '/images/logo-zhiyingang.png' : '/images/logo-web.png'}
-                  alt={locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro'}
+                  src={getWebLogoUrl(locale)}
+                  alt={getWebLogoAlt(locale)}
                   width={200}
-                  height={55}
+                  height={200}
                   className="h-[34px] sm:h-[44px] lg:h-[52px] w-auto"
                   priority
                 />

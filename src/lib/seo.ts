@@ -10,10 +10,7 @@ export type { Locale } from '@/types/locale';
  * 智印港品牌视觉(智印港中文新logo.png)走 Header/Footer web 横版, 不进 Schema
  */
 export function getGscLogoUrl(locale: Locale): string {
-  const base = siteConfig.url;
-  return locale === 'zh-hk'
-    ? `${base}/images/ZprintproLOGONEW-02.png`
-    : `${base}/images/logo-whatsapp.png`;
+  return `${siteConfig.url}/images/gsc-logo.png`;
 }
 
 /**
@@ -22,9 +19,7 @@ export function getGscLogoUrl(locale: Locale): string {
  * - zh-hk → 智印港中文新logo.png (智印港品牌视觉, zh-hk 合法品牌词)
  */
 export function getWebLogoUrl(locale: Locale): string {
-  return locale === 'zh-hk'
-    ? '/images/logo-zhiyingang.png'
-    : '/images/logo-web.png';
+  return '/images/gsc-logo.png';
 }
 
 export function getWebLogoAlt(locale: Locale): string {
