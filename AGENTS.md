@@ -3,7 +3,7 @@
 > **项目**: F:\zprintpro-nextjs\ (Next.js 印刷 SaaS)
 > **类型**: 8 locale 印刷电商 (zh-hk / en / ja)
 > **部署**: Cloudflare Pages + Airwallex 支付
-> **品牌**: 智印云 / ZprintPro (**不是** "智印港",后者是竞品必须排除)
+> **品牌**: 双品牌分层 (2026-07-21 user 拍板,301 合体后) — zh-hk = 智印港 ZprintPro,en/ja = ZprintPro;「智印港」为自有品牌词不再是竞品,错字「智印印港」仍禁
 
 ## ⛔ 强制执行约束 (2026-07-06 user 拍板 · 次高优先级)
 
@@ -123,7 +123,7 @@ orchestrator 收到 ack 后:
 
 ## 2. 5 个不可妥协
 
-1. **品牌名 = 智印云 / ZprintPro**，绝不写"智印港"
+1. **双品牌分层** (2026-07-21): zh-hk = 智印港 ZprintPro,en/ja = ZprintPro;错字「智印印港」绝不写
 2. **8 locale 全覆盖** (zh-hk / en / ja + 5 个其他),SEO hreflang 正确
 3. **GSC 数据实时分析** (gsc_data.csv + seo-weekly-analyzer.py)
 4. **airwallex 多币种**结算,CN 用 alipay, 其他用 USD
@@ -209,12 +209,12 @@ node scripts/check-i18n.js
 - **项目专属 memory**: `F:\zprintpro-nextjs\.hermes\memory\` (新建)
 - **已积累记忆**: `C:\Users\Administrator\.hermes\memories\{MEMORY.md, USER.md}` (不要覆盖)
 - **沟通语言**: 中文为主,简洁直接,指令式
-- **品牌关键词**: 智印云 / ZprintPro,**过滤 "智印港"**
+- **品牌关键词**: zh-hk = 智印港 ZprintPro,en/ja = ZprintPro;「智印港」= 自有品牌词,GSC 分析中单独统计其 CTR (基线 10%,目标 4 周 40%+),**只过滤错字「智印印港」**
 - **重要模块**: GSC 数据 / SEO 周报 / 多 locale i18n / Cloudflare 部署
 
 ## 8. 7 大"绝对不要做"清单
 
-1. ❌ 不要用"智印港" / 任何竞品名
+1. ❌ 不要用"智印印港" (错字竞品词) / 任何外部竞品名;「智印港」是自有品牌 (zh-hk 专用),允许且必须使用
 2. ❌ 不要在 user-facing 文本里出现 GBK 乱码 (中文必须 UTF-8)
 3. ❌ 不要漏 hreflang (8 locale 必须完整)
 4. ❌ 不要让 /app/ 目录被提交 (会冲突 Cloudflare 构建)
@@ -359,7 +359,7 @@ node scripts/verify-deploy.mjs          # 自动查 CF Pages check-runs API stat
 | `zprintpro-daily-content-evolve` | 每天 10:15 Asia/Shanghai | Blog (1-2 篇纯文字) + SKU (2-3 个优化) + Matrix tracking |
 | `zprintpro-weekly-meta-refresh` | 周一 11:00 | Tier B 行业 + 类目页 meta refresh |
 | `zprintpro-monthly-matrix-audit` | 每月 1 号 14:00 | 全 matrix 覆盖率审计 + Tier 切换判定 |
-| `zprintpro-gsc-feedback-loop` | 每周三 15:00 | 拉 GSC 数据 → 写回 matrix next_due 加权 |
+| `zprintpro-gsc-feedback-loop` | 每周三 15:00 | 拉 GSC 数据 → 写回 matrix next_due 加权;+ 智印港品牌词 CTR 追踪 (基线 10% → 目标 4 周 40%+);+ 301 承接验证 (z-printpro.com 旧 URL 抽查 ≥10 条确认 301 → 新站 200) |
 
 ### 13.2 行业 Tier 分级（按印刷品复购频次，不是按市场规模）
 
