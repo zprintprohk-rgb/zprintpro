@@ -672,24 +672,6 @@ const lpPetFoodSticker: BlogPostMeta = {
   },
 };
 
-// 2026-07-06 v4 純文字深度博客 (no cover) — Tier A 服裝 × P0 paper-bags 類目
-const lpApparelShoppingBag: BlogPostMeta = {
-  slug: 'apparel-shopping-bag-printing-guide',
-  categoryKey: 'paper-bags',
-  source: 'legacy',
-  date: '2026-07-06',
-  title: {
-    'zh-hk': '香港服裝品牌紙袋印刷指南 · 環保購物袋品牌升級 | 智印雲 ZprintPro',
-    en: 'Apparel Brand Shopping Bag Printing Guide: Materials, Sizes & Logo Tips | ZprintPro',
-    ja: 'アパレルブランドショッピングバッグ印刷ガイド：素材・サイズ・ロゴ | ZprintPro',
-  },
-  excerpt: {
-    'zh-hk': '服裝、潮牌、買手店老闆必睇。從白卡紙到黃牛皮、從棉繩到絲帶手挽、從燙金到 UV 局部,一個高質感的品牌紙袋決定客人是否會在 Instagram 打卡。智印雲為時裝品牌提供 500-100,000 枚小至大批量紙袋,5-10 個工作天交付。',
-    en: 'Apparel, streetwear, and boutique owners — a premium branded shopping bag decides whether customers post on Instagram. Kraft, white card, cotton rope handles, foil stamping, 500-100,000 piece runs, 5-10 working day delivery from Asia factory.',
-    ja: 'アパレル・ストリートウェア・セレクトショップオーナー様へ。プレミアム感のあるブランドショッピングバッグが Instagram 投稿を決める。クラフト紙・白カード・綿ロープ持ち手・箔押し、500〜100,000枚対応、5-10営業日納品。',
-  },
-};
-
 // 2026-07-06 v4 純文字深度博客 (no cover) — Tier A 跨境電商 × P0 packaging 類目
 const lpCrossBorderShipping: BlogPostMeta = {
   slug: 'cross-border-ecommerce-shipping-box-guide',
@@ -1445,7 +1427,6 @@ export const blogPosts: BlogPostMeta[] = [
   lpMedicalDevicePackagingBox,
   lpAutoPartsShoppingBag,
   lpSportsMerchandiseGiftBox,
-  lpApparelShoppingBag,
 ];
 
 // =============================================================================
