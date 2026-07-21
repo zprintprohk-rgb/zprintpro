@@ -103,7 +103,7 @@ export function getSiteNAP(locale: Locale): SiteNAP {
   if (locale === 'zh-hk') {
     return {
       name: '智印雲',
-      alternateName: ['ZprintPro HK', '智印雲(香港)', '智印雲印刷'],
+      alternateName: ['ZprintPro', 'ZprintPro HK', '智印雲(香港)', '智印雲印刷', '智印港'],
       phone: '+86 198 8085 1334',
       email: 'zprintpro@outlook.com',
       address: {
