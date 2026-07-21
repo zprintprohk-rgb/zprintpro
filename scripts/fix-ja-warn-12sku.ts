@@ -62,7 +62,7 @@ for (const [slug, newMeta] of Object.entries(META_FIXES)) {
   const oldMeta = (data.seo && data.seo.ja && data.seo.ja.description) || '';
   console.log(`  [${slug}] meta (${oldMeta.length}字): ${oldMeta}`);
   console.log(`             NEW (${newMeta.length}字): ${newMeta}`);
-  if (/名片|咭片|business card|智印港|Shenzhen|深セン/.test(newMeta)) {
+  if (/名片|咭片|business card|Shenzhen|深セン/.test(newMeta)) {
     console.log(`  ❌ 含禁区词, 跳过`); failed++; continue;
   }
   if (newMeta.length > 180 || newMeta.length < 50) {

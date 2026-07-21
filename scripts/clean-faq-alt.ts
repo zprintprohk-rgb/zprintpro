@@ -24,7 +24,7 @@ const SKU_DATA_PATH = 'src/data/sku-seo-data.ts';
 // 1. FAQ 检测 (与 audit-seo-meta.ts 同步)
 // ============================================================
 const FAQ_TRIGGERS_ZHHK = ['多少', '什么', '哪裡', '哪些', '如何', '怎么', '可以嗎', '嗎', '呢', '這款', '這是', '能否'];
-const NAP_FORBIDDEN = ['深圳', 'Shenzhen', '深セン', '智印港', '智印印港', '名片', 'business card', 'businesscards', '咭片'];
+const NAP_FORBIDDEN = ['深圳', 'Shenzhen', '深セン', '智印印港', '名片', 'business card', 'businesscards', '咭片'];
 
 function isFAQAlt(alt: string): boolean {
   if (!alt) return false;

@@ -318,7 +318,15 @@ export function Header({ locale }: HeaderProps) {
                   390px 视口下把购物车+汉堡按钮挤出屏幕 (x=516), 用户看不到导航入口。
                   移动端限高 34px (宽约 272px), 腾出右侧按钮空间; 桌面保持原样 */}
               <Link href={`${localePrefix}/`} className="flex-shrink-0 ml-2 lg:ml-[30px]">
-                <Image src="/images/logo-new-200x55.png" alt="ZprintPro" width={200} height={55} className="h-[34px] sm:h-[44px] lg:h-[52px] w-auto" priority />
+                {/* 2026-07-21 v4 (K3 拍板): zh-hk 智印港品牌视觉 = 智印港中文新logo.png; en/ja = Zprintpro LOGO web.png */}
+                <Image
+                  src={locale === 'zh-hk' ? '/images/智印港中文新logo.png' : '/images/Zprintpro LOGO web.png'}
+                  alt={locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro'}
+                  width={200}
+                  height={55}
+                  className="h-[34px] sm:h-[44px] lg:h-[52px] w-auto"
+                  priority
+                />
               </Link>
               <div className="hidden md:flex flex-1 max-w-xl mx-4">
                 <SearchDropdown

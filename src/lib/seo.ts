@@ -3,6 +3,34 @@ import { Metadata } from 'next';
 import type { Locale } from '@/types/locale';
 export type { Locale } from '@/types/locale';
 
+/**
+ * 2026-07-21 v4 (K3 拍板): Schema.org Organization / Article.publisher logo 按 locale 切
+ * - en/ja → Zprintpro LOGO whatsapp.png (K3 指定 GSC 搜索页面 logo)
+ * - zh-hk → ZprintproLOGONEW-02.png (K3 指定 GSC zh-hk logo)
+ * 智印港品牌视觉(智印港中文新logo.png)走 Header/Footer web 横版, 不进 Schema
+ */
+export function getGscLogoUrl(locale: Locale): string {
+  const base = siteConfig.url;
+  return locale === 'zh-hk'
+    ? `${base}/images/ZprintproLOGONEW-02.png`
+    : `${base}/images/Zprintpro LOGO whatsapp.png`;
+}
+
+/**
+ * 2026-07-21 v4 (K3 拍板): Header/Footer web 横版 logo 按 locale 切
+ * - en/ja → Zprintpro LOGO web.png
+ * - zh-hk → 智印港中文新logo.png (智印港品牌视觉, zh-hk 合法品牌词)
+ */
+export function getWebLogoUrl(locale: Locale): string {
+  return locale === 'zh-hk'
+    ? '/images/智印港中文新logo.png'
+    : '/images/Zprintpro LOGO web.png';
+}
+
+export function getWebLogoAlt(locale: Locale): string {
+  return locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro';
+}
+
 // 網站配置
 export const siteConfig = {
   // 2026-06-17 P0: 品牌切割 — 主品牌剥离 "ZprintPro" 字串
@@ -13,8 +41,11 @@ export const siteConfig = {
   //   alternateName 保留 "ZprintPro" (用户实际品牌) + 加 "ZprintPro HK" 区分地理位置
   //   social 全部删 (用户没 FB/IG/LinkedIn 账号, 假链接是 NAP 污染源, GBP 是更优先的实体信号)
   name: '智印雲',
-  alternateName: ['ZprintPro', 'ZprintPro HK', '智印雲印刷'],
+  // 2026-07-21: 301 合体后改双品牌分层,智印港为 zh-hk 合法品牌词(AGENTS.md §1 v2)
+  alternateName: ['ZprintPro', 'ZprintPro HK', '智印雲印刷', '智印港'],
   url: 'https://zprintpro.com',
+  // 2026-07-21 v4 (K3 拍板): Schema/GSC logo 按 locale 切 — en/ja 用 whatsapp.png,zh-hk 用 LOGONEW-02.png
+  // 函数式返回,见 getGscLogoUrl() helper below
   logo: 'https://zprintpro.com/images/logo-gsc-200x200.png',
   // 2026-07-13: 全站 canonical 1 句品牌描述 (per-locale 文案以 translations.<locale>.metaDesc 為準)
   // 用於 Schema.org default og:description / email signature / press-kit fallback
@@ -298,7 +329,7 @@ const categorySeoData: Record<string, {
 }> = {
   'business-cards': {
   titles: {
-      'zh-hk': '咭片印刷 香港 | 智印雲 ZprintPro — 燙金咭片 / UV咭片 / 圓角咭片 高檔定制',
+      'zh-hk': '咭片印刷 香港 | 智印港 ZprintPro — 燙金咭片 / UV咭片 / 圓角咭片 高檔定制',
       // 2026-07-09 美国市场优化 v5: 加 Free Shipping + Same Day + 100 MOQ sharp hook
       en: 'Business Cards Free Shipping · 100 MOQ Same Day Foil Stamped | ZprintPro',
       ja: '名刺印刷 おすすめ | ZprintPro — 箔押し / UV / 丸角 / プレミアム名刺',
@@ -321,7 +352,7 @@ const categorySeoData: Record<string, {
     // DHL Express 保留 (跨境品牌信任) + FedEx Ground (美国本土配送感)
     titles: {
       // 2026-07-17 GSC CTR 修复: 起价前置 + 免費設計/即日 hook, 机会词 貼紙印刷/貼紙訂製
-      'zh-hk': '貼紙印刷 | HK$0.22起・免費設計・最快即日 | 智印雲 ZprintPro',
+      'zh-hk': '貼紙印刷 | HK$0.22起・免費設計・最快即日 | 智印港 ZprintPro',
       en: 'Sticker Printing from $0.23 | Free Shipping $99+ | ZprintPro',
       ja: 'ステッカー印刷｜¥32〜・小ロット・最短即日・無料デザイン｜ZprintPro',
     },
@@ -343,7 +374,7 @@ const categorySeoData: Record<string, {
     // 分散在 nav 独立栏目的反模式已移除, 全部权重归 flyers
     titles: {
       // 2026-07-17 GSC CTR 修复: 机会词 宣傳單張印刷/宣傳單張 前置
-      'zh-hk': '宣傳單張印刷 | HK$0.25起・免費設計・最快即日 | 智印雲 ZprintPro',
+      'zh-hk': '宣傳單張印刷 | HK$0.25起・免費設計・最快即日 | 智印港 ZprintPro',
       en: 'Flyer Printing from $0.40 | Free Shipping $99+ | ZprintPro',
       ja: 'チラシ印刷｜¥50〜・小ロット・最短即日・無料デザイン｜ZprintPro',
     },
@@ -364,7 +395,7 @@ const categorySeoData: Record<string, {
   'packaging': {
     titles: {
       // 2026-07-17 GSC CTR 修复: 机会词 包裝盒訂製/包裝盒印刷 前置
-      'zh-hk': '包裝盒訂製 | HK$2.5起・免費設計・最快即日 | 智印雲 ZprintPro',
+      'zh-hk': '包裝盒訂製 | HK$2.5起・免費設計・最快即日 | 智印港 ZprintPro',
       en: 'Packaging Box Printing from $0.51 | Free Shipping $99+ | ZprintPro',
       ja: 'オリジナルパッケージ印刷｜¥69〜・小ロット・無料デザイン｜ZprintPro',
     },
@@ -383,7 +414,7 @@ const categorySeoData: Record<string, {
 'posters': {
     titles: {
       // 2026-07-17 GSC CTR 修复: 机会词 海報印刷/印海報 前置
-      'zh-hk': '海報印刷 | HK$10起・1張起印・最快即日 | 智印雲 ZprintPro',
+      'zh-hk': '海報印刷 | HK$10起・1張起印・最快即日 | 智印港 ZprintPro',
       en: 'Poster Printing from $2.30 | Free Shipping $99+ | ZprintPro',
       ja: 'ポスター印刷｜¥300〜・1枚から・最短即日・無料デザイン｜ZprintPro',
     },
@@ -401,7 +432,7 @@ const categorySeoData: Record<string, {
   'paper-bags': {
     titles: {
       // 2026-07-17 GSC CTR 修复: 机会词 紙袋訂製/紙袋印刷 前置
-      'zh-hk': '紙袋訂製 | HK$8起・免費設計・最快即日 | 智印雲 ZprintPro',
+      'zh-hk': '紙袋訂製 | HK$8起・免費設計・最快即日 | 智印港 ZprintPro',
       en: 'Paper Bag Printing from $1.84 | Free Shipping $99+ | ZprintPro',
       ja: '紙袋印刷｜¥240〜・小ロット・最短即日・無料デザイン｜ZprintPro',
     },
@@ -473,7 +504,7 @@ const categorySeoData: Record<string, {
   'menus': {
     titles: {
       // 2026-07-17 GSC CTR 修复: 机会词 餐牌印刷 前置
-      'zh-hk': '餐牌印刷 | HK$0.22起・免費設計・最快即日 | 智印雲 ZprintPro',
+      'zh-hk': '餐牌印刷 | HK$0.22起・免費設計・最快即日 | 智印港 ZprintPro',
       en: 'Menu Printing from $0.14 | Free Shipping $99+ | ZprintPro',
       ja: 'メニュー印刷｜¥20〜・小ロット・最短即日・無料デザイン｜ZprintPro',
     },
@@ -491,7 +522,7 @@ const categorySeoData: Record<string, {
   'red-packets': {
     titles: {
       // 2026-07-17 GSC CTR 修复: 机会词 利是封印刷 / lai see 前置
-      'zh-hk': '利是封印刷 | HK$1.1起・燙金定制・免費設計 | 智印雲 ZprintPro',
+      'zh-hk': '利是封印刷 | HK$1.1起・燙金定制・免費設計 | 智印港 ZprintPro',
       en: 'Lai See Red Packet Printing from $0.46 | Free Shipping $99+ | ZprintPro',
       ja: 'ポチ袋印刷｜¥64〜・小ロット・箔押し・無料デザイン｜ZprintPro',
     },
@@ -1505,7 +1536,7 @@ export function generateServiceJsonLd(input: {
 // 報價頁面元數據
 export function generateQuotePageMetadata(locale: Locale): Metadata {
   const titles = {
-    'zh-hk': '即時報價 | 智印雲 ZprintPro',
+    'zh-hk': '即時報價 | 智印港 ZprintPro',
     'en': 'Instant Quote | ZprintPro',
     'ja': '即時見積もり | ZprintPro',
   };
@@ -1607,9 +1638,9 @@ export function generateOrganizationSchema(locale: Locale): SchemaOrgData {
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: locale === 'zh-hk' ? '智印雲 ZprintPro' : 'ZprintPro',
+    name: locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro',
     url: `${siteConfig.url}/${locale}`,
-    logo: `${siteConfig.url}/images/logo-gsc-200x200.png`,
+    logo: getGscLogoUrl(locale),
     areaServed: geo.areaServed.map(area => ({ '@type': 'Place', name: area })),
     contactPoint: {
       '@type': 'ContactPoint',
@@ -1628,7 +1659,7 @@ export function generateLocalBusinessSchema(locale: Locale): SchemaOrgData {
   return {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    name: locale === 'zh-hk' ? '智印雲 ZprintPro' : 'ZprintPro',
+    name: locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro',
     image: `${siteConfig.url}/images/hero/main-hero.webp`,
     '@id': `${siteConfig.url}/${locale}`,
     url: `${siteConfig.url}/${locale}`,
@@ -1691,13 +1722,13 @@ export function generateArticleSchema(input: ArticleSchemaInput, locale: Locale)
     dateModified: input.lastUpdated || input.updatedAt || input.publishedAt,
     author: {
       '@type': input.authorName ? 'Person' : 'Organization',
-      name: input.authorName || (locale === 'zh-hk' ? '智印雲 ZprintPro' : 'ZprintPro'),
+      name: input.authorName || (locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro'),
       url: `${baseUrl}/${locale}/about/`,
     },
     publisher: {
       '@type': 'Organization',
-      name: locale === 'zh-hk' ? '智印雲 ZprintPro' : 'ZprintPro',
-      logo: { '@type': 'ImageObject', url: `${baseUrl}/images/logo-gsc-200x200.png` },
+      name: locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro',
+      logo: { '@type': 'ImageObject', url: getGscLogoUrl(locale) },
     },
     inLanguage: locale === 'zh-hk' ? 'zh-Hant-HK' : locale === 'ja' ? 'ja-JP' : 'en-US',
     wordCount: input.wordCount,

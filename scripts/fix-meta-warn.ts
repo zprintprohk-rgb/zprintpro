@@ -61,7 +61,7 @@ function getSlugForSku(skuId: string): string | null {
 }
 
 function hasNAP(text: string): boolean {
-  const FORBIDDEN = ['深圳', 'Shenzhen', '深セン', '智印港', '智印印港', '名片', 'business card', '咭片', '旺角', '觀塘', '尖沙咀', '銅鑼湾', '荃湾', '九龍湾'];
+  const FORBIDDEN = ['深圳', 'Shenzhen', '深セン', '智印印港', '名片', 'business card', '咭片', '旺角', '觀塘', '尖沙咀', '銅鑼湾', '荃湾', '九龍湾'];
   for (const w of FORBIDDEN) {
     if (text.includes(w) && !NAP_FALSE_POSITIVE.some(fp => text.includes(fp))) return true;
   }

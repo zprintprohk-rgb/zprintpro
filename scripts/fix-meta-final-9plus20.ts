@@ -62,7 +62,7 @@ for (const [slug, newMeta] of Object.entries(JA_META_FIXES)) {
   if (!data) { console.log(`  ⚠️ ${slug} ja`); failed++; continue; }
   const oldMeta = (data.seo && data.seo.ja && data.seo.ja.description) || '';
   console.log(`  [${slug}] ja meta (${oldMeta.length}→${newMeta.length}字)`);
-  if (/名片|咭片|business card|智印港|Shenzhen|深セン/.test(newMeta)) {
+  if (/名片|咭片|business card|Shenzhen|深セン/.test(newMeta)) {
     console.log(`  ❌ ja 含禁区词, 跳过`); failed++; continue;
   }
   if (newMeta.length > 180 || newMeta.length < 100) {
@@ -77,7 +77,7 @@ for (const [slug, newMeta] of Object.entries(EN_META_FIXES)) {
   if (!data) { console.log(`  ⚠️ ${slug} en`); failed++; continue; }
   const oldMeta = (data.seo && data.seo.en && data.seo.en.description) || '';
   console.log(`  [${slug}] en meta (${oldMeta.length}→${newMeta.length}字)`);
-  if (/智印港|Shenzhen|深セン/.test(newMeta)) {
+  if (/Shenzhen|深セン/.test(newMeta)) {
     console.log(`  ❌ en 含 NAP 词, 跳过`); failed++; continue;
   }
   if (newMeta.length > 180 || newMeta.length < 100) {

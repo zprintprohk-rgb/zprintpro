@@ -46,7 +46,7 @@ const localeArg = process.argv.find(a => a.startsWith('--locale='))?.split('=')[
 const ACTIVE_LOCALE: 'zh-hk' | 'en' | 'ja' = (localeArg && ['zh-hk', 'en', 'ja'].includes(localeArg)) ? localeArg : 'zh-hk';
 
 // 禁区词 (NAP 污染 §13.10)
-const FORBIDDEN_NAP = ['深圳', 'Shenzhen', '深セン', '智印港', '智印印港'];
+const FORBIDDEN_NAP = ['深圳', 'Shenzhen', '深セン', '智印印港'];
 
 // FAQ 触发词 (按 locale 区分, 2026-07-15 P3 扩展)
 const FAQ_TRIGGERS_BY_LOCALE: Record<string, string[]> = {

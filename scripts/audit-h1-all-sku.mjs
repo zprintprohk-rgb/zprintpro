@@ -25,7 +25,7 @@ const SIMPLIFIED_CHARS = [
 ];
 
 // 禁区词检测
-const FORBIDDEN_WORDS = ['深圳', 'Shenzhen', '深セン', '中国深圳', '智印港'];
+const FORBIDDEN_WORDS = ['深圳', 'Shenzhen', '深セン', '中国深圳'];
 
 function hasSimplified(s) {
   return SIMPLIFIED_CHARS.filter(c => s.includes(c));

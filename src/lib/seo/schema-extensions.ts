@@ -436,7 +436,7 @@ export function generateBlogArticleJsonLd(input: BlogArticleInput, locale: Local
     author,
     publisher: {
       '@type': 'Organization',
-      name: locale === 'zh-hk' ? '智印雲 ZprintPro' : 'ZprintPro',
+      name: locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro',
       logo: { '@type': 'ImageObject', url: `${SITE_URL}/images/logo-gsc-200x200.png` },
     },
     mainEntityOfPage: {
@@ -510,7 +510,7 @@ export function generateCategoryItemListJsonLd(
           // GSC「商家信息」要求: 提供全局品牌标识符
           brand: {
             '@type': 'Brand',
-            name: locale === 'zh-hk' ? '智印雲 ZprintPro' : 'ZprintPro',
+            name: locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro',
           },
           // 2026-07-13 新增 aggregateRating 解决 GSC「未填写字段aggregateRating」警告 (17 items)
           // 公司级综合评分 (ZprintPro, est. 2012, ISO 9001+FSC, 累计真实客户评价)
@@ -602,11 +602,11 @@ export function generateContactPageJsonLd(
       '@type': 'WebSite',
       '@id': `${SITE_URL}/#website`,
       url: SITE_URL,
-      name: locale === 'zh-hk' ? '智印雲 ZprintPro' : 'ZprintPro',
+      name: locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro',
     },
     publisher: {
       '@type': 'Organization',
-      name: locale === 'zh-hk' ? '智印雲 ZprintPro' : 'ZprintPro',
+      name: locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro',
       url: SITE_URL,
       logo: `${SITE_URL}/images/logo-gsc-200x200.png`,
     },
@@ -638,7 +638,7 @@ export function generateAboutPageJsonLd(
     mainEntity: {
       '@type': 'Organization',
       '@id': `${SITE_URL}/#organization`,
-      name: locale === 'zh-hk' ? '智印雲 ZprintPro' : 'ZprintPro',
+      name: locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro',
       url: SITE_URL,
       logo: `${SITE_URL}/images/logo-gsc-200x200.png`,
       foundingDate,
@@ -678,7 +678,7 @@ export function generateCoreWebPageJsonLd(
     },
     publisher: {
       '@type': 'Organization',
-      name: locale === 'zh-hk' ? '智印雲 ZprintPro' : 'ZprintPro',
+      name: locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro',
       url: SITE_URL,
     },
   };

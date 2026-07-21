@@ -54,7 +54,7 @@ for (const [slug, data] of Object.entries(skuSeoData)) {
   } else {
     newMeta = candidate;
   }
-  if (/深圳|Shenzhen|深セン|智印港|名片|咭片|名刺|中国/.test(newMeta)) {
+  if (/深圳|Shenzhen|深セン|名片|咭片|名刺|中国/.test(newMeta)) {
     console.log(`❌ ${slug} 含 NAP/禁区词, 跳过`); failed++; continue;
   }
   if (newMeta.length > 160) {

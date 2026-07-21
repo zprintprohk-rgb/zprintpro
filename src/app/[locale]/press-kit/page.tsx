@@ -187,7 +187,7 @@ export default function PressKitPage({ params }: PressKitPageProps) {
       '@type': 'Organization',
       name: siteConfig.name,
       url: siteConfig.url,
-      logo: `${siteConfig.url}/ZprintproLOGONEW.png`,
+      logo: `${siteConfig.url}/images/Zprintpro LOGO web.png`,
       contactPoint: {
         '@type': 'ContactPoint',
         telephone: siteConfig.phone,
@@ -261,10 +261,11 @@ export default function PressKitPage({ params }: PressKitPageProps) {
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">{t.logo}</h3>
                 <p className="text-sm text-gray-500 mb-4">{t.logoDesc}</p>
                 <div className="bg-gray-50 rounded-lg p-8 mb-4 flex items-center justify-center">
-                  <img src="/ZprintproLOGONEW.png" alt="ZprintPro Logo" className="max-h-24 object-contain" loading="lazy" decoding="async" width="200" height="80" />
+                  {/* 2026-07-21 v4: press-kit 改用 Zprintpro LOGO web.png (canonical, 不按 locale 切 — 媒体资源统一) */}
+                  <img src="/images/Zprintpro LOGO web.png" alt="ZprintPro Logo" className="max-h-24 object-contain" loading="lazy" decoding="async" width="200" height="80" />
                 </div>
                 <a
-                  href="/ZprintproLOGONEW.png"
+                  href="/images/Zprintpro LOGO web.png"
                   download
                   className="inline-flex items-center px-4 py-2 bg-[#2873F5] text-white rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors"
                 >

@@ -56,7 +56,7 @@ for (const [slug, data] of Object.entries(skuSeoData)) {
     newMeta = candidate;
   }
   // NAP check
-  if (/Shenzhen|智印港|名片|咭片|business card|智印印港/.test(newMeta)) {
+  if (/Shenzhen|名片|咭片|business card|智印印港/.test(newMeta)) {
     console.log(`❌ ${slug} 含 NAP, 跳过`); failed++; continue;
   }
   if (newMeta.length > 160) {

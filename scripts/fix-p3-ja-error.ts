@@ -57,7 +57,7 @@ for (const [slug, newAlt] of Object.entries(ALT_FIXES)) {
   console.log(`  [${slug}] alt (${oldAlt.length}字): ${oldAlt || '(MISSING)'}`);
   console.log(`             NEW (${newAlt.length}字): ${newAlt}`);
   // 检查禁区词 (§11 BC + §13.10 NAP + §13.13 3 locale)
-  if (/名片|咭片|business card|智印港|Shenzhen|深セン/.test(newAlt)) {
+  if (/名片|咭片|business card|Shenzhen|深セン/.test(newAlt)) {
     console.log(`  ❌ NEW 含禁区词, 跳过`); failed++; continue;
   }
   if (newAlt.length > 120) {
