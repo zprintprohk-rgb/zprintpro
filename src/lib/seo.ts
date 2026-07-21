@@ -4,22 +4,19 @@ import type { Locale } from '@/types/locale';
 export type { Locale } from '@/types/locale';
 
 /**
- * 2026-07-21 v4 (K3 拍板): Schema.org Organization / Article.publisher logo 按 locale 切
- * - en/ja → Zprintpro LOGO whatsapp.png (K3 指定 GSC 搜索页面 logo)
- * - zh-hk → ZprintproLOGONEW-02.png (K3 指定 GSC zh-hk logo)
- * 智印港品牌视觉(智印港中文新logo.png)走 Header/Footer web 横版, 不进 Schema
+ * 2026-07-22 定稿 (user 拍板): Schema.org / GSC / favicon 统一 gsc-logo.png (3 locale 通用)
  */
 export function getGscLogoUrl(locale: Locale): string {
   return `${siteConfig.url}/images/gsc-logo.png`;
 }
 
 /**
- * 2026-07-21 v4 (K3 拍板): Header/Footer web 横版 logo 按 locale 切
- * - en/ja → Zprintpro LOGO web.png
- * - zh-hk → 智印港中文新logo.png (智印港品牌视觉, zh-hk 合法品牌词)
+ * 2026-07-22 定稿 (user 拍板): Header/Footer web 横版 logo 按 locale 切
+ * - zh-hk → logo-zhiyingang.png (智印港中文横版, 智印港品牌视觉)
+ * - en/ja → logo-web.png (ZprintPro 英文横版)
  */
 export function getWebLogoUrl(locale: Locale): string {
-  return '/images/gsc-logo.png';
+  return locale === 'zh-hk' ? '/images/logo-zhiyingang.png' : '/images/logo-web.png';
 }
 
 export function getWebLogoAlt(locale: Locale): string {
@@ -41,7 +38,7 @@ export const siteConfig = {
   url: 'https://zprintpro.com',
   // 2026-07-21 v4 (K3 拍板): Schema/GSC logo 按 locale 切 — en/ja 用 whatsapp.png,zh-hk 用 LOGONEW-02.png
   // 函数式返回,见 getGscLogoUrl() helper below
-  logo: 'https://zprintpro.com/images/logo-gsc-200x200.png',
+  logo: 'https://zprintpro.com/images/gsc-logo.png',
   // 2026-07-13: 全站 canonical 1 句品牌描述 (per-locale 文案以 translations.<locale>.metaDesc 為準)
   // 用於 Schema.org default og:description / email signature / press-kit fallback
   // 注意 NAP vs SEO 脫鉤 (§13.10): 不寫 supplier origin 城市, 用 global printing partner 品牌定位

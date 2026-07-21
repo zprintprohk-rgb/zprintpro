@@ -318,7 +318,7 @@ export function Header({ locale }: HeaderProps) {
                   390px 视口下把购物车+汉堡按钮挤出屏幕 (x=516), 用户看不到导航入口。
                   移动端限高 34px (宽约 272px), 腾出右侧按钮空间; 桌面保持原样 */}
               <Link href={`${localePrefix}/`} className="flex-shrink-0 ml-2 lg:ml-[30px]">
-                {/* 2026-07-22 v5 (K3 拍板): 单一 GSC LOGO.png — 圆形 logo 可居中显示，3 locale 统一 */}
+                {/* 2026-07-22 定稿 (user 拍板): web 横版按 locale 切 — zh-hk 智印港 / en+ja ZprintPro */}
                 <Image
                   src={getWebLogoUrl(locale)}
                   alt={getWebLogoAlt(locale)}

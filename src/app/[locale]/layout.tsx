@@ -83,8 +83,8 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: '/images/logo-icon.svg',
-    apple: '/images/logo-icon.svg',
+    icon: '/images/gsc-logo.png',
+    apple: '/images/gsc-logo.png',
   },
 };
 

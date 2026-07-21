@@ -437,7 +437,7 @@ export function generateBlogArticleJsonLd(input: BlogArticleInput, locale: Local
     publisher: {
       '@type': 'Organization',
       name: locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro',
-      logo: { '@type': 'ImageObject', url: `${SITE_URL}/images/logo-gsc-200x200.png` },
+      logo: { '@type': 'ImageObject', url: `${SITE_URL}/images/gsc-logo.png` },
     },
     mainEntityOfPage: {
       '@type': 'WebPage',
@@ -608,7 +608,7 @@ export function generateContactPageJsonLd(
       '@type': 'Organization',
       name: locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro',
       url: SITE_URL,
-      logo: `${SITE_URL}/images/logo-gsc-200x200.png`,
+      logo: `${SITE_URL}/images/gsc-logo.png`,
     },
   };
 }
@@ -640,7 +640,7 @@ export function generateAboutPageJsonLd(
       '@id': `${SITE_URL}/#organization`,
       name: locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro',
       url: SITE_URL,
-      logo: `${SITE_URL}/images/logo-gsc-200x200.png`,
+      logo: `${SITE_URL}/images/gsc-logo.png`,
       foundingDate,
       description,
     },

@@ -377,7 +377,7 @@ export function Footer({ locale }: FooterProps) {
         <div className="lg:hidden">
           {/* 品牌 + NAP */}
           <div className="mb-3">
-            {/* 2026-07-22 v5 (K3 拍板): 统一 GSC LOGO.png, 3 locale 通用 */}
+            {/* 2026-07-22 定稿 (user 拍板): web 横版按 locale 切 — zh-hk 智印港 / en+ja ZprintPro */}
             <Image
               src={getWebLogoUrl(locale)}
               alt={getWebLogoAlt(locale)}
