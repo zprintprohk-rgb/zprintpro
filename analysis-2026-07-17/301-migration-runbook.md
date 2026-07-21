@@ -51,3 +51,37 @@
 - [ ] 迁移稳定 → 关 SaaS 自动续费 (2026-10-12 到期前)
 - [ ] SaaS 到期后,CF 的 301 规则**继续保留** (域名留着,301 永久生效,成本=域名续费 only)
 - [ ] 老域名邮箱若在用 → 迁到 CF Email Routing
+
+---
+
+## 执行记录 2026-07-21 01:30-02:10 (K3 via WebBridge)
+
+**状态: 除阿里云 NS 提交外全部就绪, NS 值已填入待用户确认。**
+
+| 资源 | ID / 值 |
+|---|---|
+| CF zone (z-printpro.com) | `32ec1b9381d610d866c22aab4865ed79` (status: pending) |
+| 分配的 NS | `amalia.ns.cloudflare.com` / `kevin.ns.cloudflare.com` |
+| Bulk Redirect List | `z_printpro_legacy_301` = `02bad76ee5d94974a232ca81da199e4a` |
+| 清单条目 | **149 条, 全部 status_code=301, preserve_query_string=true** (API 核验 count=149, bad=0) |
+| 账号级 bulk redirect ruleset | `6ad7203adbb348edacdf06ff752615db` (1 rule, enabled, expression `http.request.full_uri in $z_printpro_legacy_301`) |
+| zone 级裸域名 catch-all ruleset | `140edd478e414178b03be0478829f374` (`http.host eq "z-printpro.com"` → https://zprintpro.com/zh-hk/ 301) |
+| DNS 记录 (已代理 orange cloud) | www CNAME→www.z-printpro.com.queniuaa.com, @ CNAME→ali-hk-66.bjyyb.net |
+| 保留记录 | _dnsauth TXT (SaaS验证), google-site-verification TXT (GSC 验证需要) |
+
+**CSV 变更**: 149 条 (原 150 - 删名片价格指南博客 1 条; 名信片信封产品从 educational 改指 envelopes); 去 BOM。23 个目标 URL 全部 curl 200。
+
+**域名到期警告**: z-printpro.com 2026-08-17 到期 (剩 26 天), 阿里云控制台显示"急需续费"。注册商仍是阿里云, NS 迁 CF 不影响续费, 但必须本周内续。
+
+**坑记录**:
+- CF dashboard 向导 UI 不稳定 (cookie 同意弹窗拦截点击 + React 受控组件 fill 不触发状态) → 最终全程走 `dash.cloudflare.com/api/v4/` 内部会话代理 fetch, 稳定可靠。
+- 清单名只允许 `[a-z0-9_]` (连字符不行) — 向导因此静默拒绝 Next。
+- Bulk Redirect ruleset 在**账号级** phase `http_request_redirect`; zone 级单条重定向用 phase `http_request_dynamic_redirect` + `action_parameters.from_value`。
+- 阿里云域名列表正确入口: dc.console.aliyun.com → 左侧「域名列表」(#/domain-list/all)。
+
+**剩余步骤** (等用户确认 NS 提交后):
+1. 阿里云点「确定」改 NS → 可能要手机验证码
+2. 等 zone 变 Active (dig NS z-printpro.com 或 CF dash 状态)
+3. 灰度抽查 10 条: `curl -sI https://www.z-printpro.com/products/paper-bag-printing/` 等 → 期望一跳 301
+4. GSC 老站 Change of Address → zprintpro.com (需老站已验证 domain 属性)
+5. SaaS (青岛壹通, 2026-10-12 到期) 迁移稳定 8 周后再关闭; CF 301 规则永久保留

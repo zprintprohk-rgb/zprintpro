@@ -144,6 +144,20 @@ export const products: Product[] = [
 <p>可加燙金、燙銀、玫瑰金、局部 UV、壓凹、壓紋、圓角模切等加值工藝。雙面印刷免費排版與出血檢查。</p>
 
 <p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+
+<h3>5 檔牛皮紙袋校準報價 (intuan 實詢, 2026-07-18)</h3>
+<p>以下價格來自智印雲 2026-07-18 向 <a href="/product/kraft-paper-bags/">牛皮紙袋</a> 供應商登錄態實詢 (中號 260x170x250mm / 120g 黃牛皮 / 紙繩或扁繩 / 單色-四色),1.3 倍合理利潤 + RMB→HKD 1.087 換算後的可即時展示真實校準錨點:</p>
+<table>
+  <thead><tr><th>數量</th><th>單個 (HKD)</th><th>總價 (HKD)</th><th>跳水幅度</th><th>對比 e-print 零售</th></tr></thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>500 個</td><td>$1.62</td><td>$811</td><td>—</td><td>較 e-print 便宜 76%</td></tr>
+    <tr class="border-b border-gray-200"><td>1,000 個</td><td>$1.14</td><td>$1,138</td><td>-30%</td><td>較 e-print 便宜 78%</td></tr>
+    <tr class="border-b border-gray-200"><td>2,000 個</td><td>$0.92</td><td>$1,847</td><td>-19%</td><td>較 e-print 便宜 81%</td></tr>
+    <tr class="border-b border-gray-200"><td>3,000 個</td><td>$0.89</td><td>$2,675</td><td>-3%</td><td>較 e-print 便宜 83%</td></tr>
+    <tr><td>5,000 個</td><td>$0.84</td><td>$4,202</td><td>-6%</td><td>較 e-print 便宜 85%</td></tr>
+  </tbody>
+</table>
+<p>對比 e-print 香港零售 <strong>HK$2,049 / 300 個 = $6.83 / 個</strong> (E-01 款, 8 個工作天),智印雲 500 個起印已可壓到 e-print 零售天花板 24% 以下。批量越大,單個成本越接近材料底。智印雲 15+ 年印刷經驗,服務 15,000+ 客戶,產品銷往 100+ 國家,牛皮紙袋獲 FSC 認證,所有訂單 ISO 12647 色彩管理、ISO 9001 品質認證把關。</p>
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、名片/信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
 <details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
@@ -437,6 +451,35 @@ export const products: Product[] = [
 **智印雲 國際印刷**：深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。
 
 <p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+
+<h3>5-Tier Kraft Paper Bag Calibrated Pricing (intuan real quote, 2026-07-18)</h3>
+<p>The following prices are sourced from ZprintPro's logged-in <a href="/en/product/kraft-paper-bags/">kraft paper bag</a> supplier quote on 2026-07-18 (medium 260x170x250mm / 120g brown kraft / paper or flat rope / 1-4 color print), with a 1.3x fair margin and CNY→USD 7.25 conversion. They are real calibrated anchors we can display today:</p>
+<table>
+  <thead><tr><th>Quantity</th><th>Unit (USD)</th><th>Total (USD)</th><th>Step-Down</th><th>vs e-print HK Retail</th></tr></thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>500 pieces</td><td>$0.21</td><td>$106</td><td>—</td><td>76% below e-print</td></tr>
+    <tr class="border-b border-gray-200"><td>1,000 pieces</td><td>$0.15</td><td>$148</td><td>-30%</td><td>78% below e-print</td></tr>
+    <tr class="border-b border-gray-200"><td>2,000 pieces</td><td>$0.12</td><td>$240</td><td>-19%</td><td>81% below e-print</td></tr>
+    <tr class="border-b border-gray-200"><td>3,000 pieces</td><td>$0.12</td><td>$348</td><td>-3%</td><td>83% below e-print</td></tr>
+    <tr><td>5,000 pieces</td><td>$0.11</td><td>$546</td><td>-6%</td><td>85% below e-print</td></tr>
+  </tbody>
+</table>
+<p>Compared with e-print Hong Kong retail <strong>HK$2,049 / 300 pieces = $0.89 / piece</strong> (E-01 stock, 8 working days), ZprintPro's same-spec kraft bags at 500-piece MOQ already undercut that ceiling by 76%. Larger volumes push unit cost closer to material floor. ZprintPro is backed by 15+ years of printing expertise, 15,000+ customers served, products shipped to 100+ countries. All kraft paper bags are FSC-certified, with ISO 12647 color management and ISO 9001 quality assurance on every order.</p>
+<p><strong>US sharp hooks:</strong> Free Shipping over $99 to all US ZIP codes · Free design mockup · No setup fees · 500-piece MOQ · Fast Turnaround 5-10 business days from Asia factory + DHL 2-4 day global delivery.</p>
+
+<h3>5 段階クラフト紙袋校正価格 (intuan 実詢, 2026-07-18)</h3>
+<p>下記価格は 2026-07-18 智印雲が <a href="/ja/product/kraft-paper-bags/">クラフト紙袋</a> サプライヤーにログイン状態で実詢したもの(中サイズ 260x170x250mm / 120g クラフト / 紙紐または平紐 / 1-4 色印刷)、1.3 倍適正マージン + CNY→JPY 20.5 為替換算済み。即時表示可能な実校正アンカーです:</p>
+<table>
+  <thead><tr><th>数量</th><th>単価 (JPY税込)</th><th>合計 (JPY税込)</th><th>逓減率</th><th>e-print HK 比較</th></tr></thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>500 枚</td><td>¥33</td><td>¥16,628</td><td>—</td><td>e-print より 76% 安</td></tr>
+    <tr class="border-b border-gray-200"><td>1,000 枚</td><td>¥23</td><td>¥23,329</td><td>-30%</td><td>e-print より 78% 安</td></tr>
+    <tr class="border-b border-gray-200"><td>2,000 枚</td><td>¥19</td><td>¥37,864</td><td>-19%</td><td>e-print より 81% 安</td></tr>
+    <tr class="border-b border-gray-200"><td>3,000 枚</td><td>¥18</td><td>¥54,838</td><td>-3%</td><td>e-print より 83% 安</td></tr>
+    <tr><td>5,000 枚</td><td>¥17</td><td>¥86,141</td><td>-6%</td><td>e-print より 85% 安</td></tr>
+  </tbody>
+</table>
+<p>e-print 香港小売 <strong>HK$2,049 / 300 枚 = ¥112 / 枚</strong> (E-01 款、8 営業日) と比較して、智印雲の同仕様クラフト紙袋 500 枚から e-print の小売天井を 76% 下回ります。大量発注ほど単価が素材原価に近づきます。智印雲は 15+ 年の印刷実績、15,000+ 顧客、100+ か国出荷の信頼。クラフト紙袋は全商品 FSC 認証、ISO 12647 カラー管理、ISO 9001 品質保証付き。</p>
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、名片/信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
 <details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
@@ -4599,10 +4642,12 @@ export const products: Product[] = [
     id: 'PB-002',
     sku_code: 'PB-002',
     slug: 'white-card-bags',
+    optimizedAt: '2026-07-21',
+    optimizationRound: 1,
     category: 'paper-bags',
     category_slug: 'paper-bags',
-    name: '白卡紙袋 | 紙袋 / 牛皮紙袋 / 手提袋', nameEn: 'White Card Bags | Paper Bags & Kraft Bags', nameJa: '白カード紙袋 | 紙袋 / クラフト紙袋 / ハンドル', title_zh: '白卡紙袋',
-    description: '白卡紙材質，表面平整光滑，印刷效果佳。適合高端品牌、化妝品店。', descriptionEn: 'White card paper, smooth surface, excellent printing effect. Perfect for high-end brands, cosmetic stores.', descriptionJa: '白カード紙、表面が滑らかで印刷効果が抜群。高級ブランド、化粧品店に最適。', description_zh: '白卡紙材質，表面平整光滑，印刷效果佳。適合高端品牌、化妝品店。',
+    name: '白卡紙袋 | 紙袋 / 牛皮紙袋 / 手提袋', nameEn: 'White Card Bags | Paper Bags & Kraft Bags', nameJa: '白カード紙袋 | 紙袋 / クラフト紙袋 / ハンドル', title_zh: '白卡紙袋 · 服裝珠寶品牌升級首選',
+    description: '白卡紙材質，表面平整光滑，印刷效果佳。適合高端品牌、化妝品店。適配行業: 服裝品牌、買手店、珠寶首飾、化妝品、禮品店、婚慶禮品、生活精品店。', descriptionEn: 'White card paper, smooth surface, excellent printing effect. Perfect for high-end brands, cosmetic stores. Best for: apparel brands, boutiques, jewelry, cosmetics, gift shops, wedding favors, lifestyle concept stores.', descriptionJa: '白カード紙、表面が滑らかで印刷効果が抜群。高級ブランド、化粧品店に最適。 適用業界: アパレルブランド、ブティック、宝飾・アクセサリー、化粧品、ギフトショップ、ブライダルギフト、ライフスタイル コンセプト ストア。', description_zh: '白卡紙材質，表面平整光滑，印刷效果佳。適合高端品牌、化妝品店。',
     longDescription: `白卡紙袋表面平滑、挺度高，四色印刷色彩飽和，是美妝、珠寶與精品服飾首選的「可行走廣告」。可搭配啞膠／光膠覆膜保護墨層，並以燙金、局部 UV 或凹凸壓紋強化 Logo 層次。手挽可選緞帶、棉繩或扁紙手挽以匹配品牌調性。與分類頁一致：白卡紙、燙金、覆膜、手挽。建議在刀模階段確認穿孔位與圖案安全距離，避免提袋時撕裂；大批量可評估柯式以降低單價。<h3>紙袋材質對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">材質</th><th class="p-2 text-center">挺度</th><th class="p-2 text-center">印刷效果</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用品牌</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">白卡紙袋</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">美妝、珠寶、精品服飾</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">牛皮紙袋</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">文創、咖啡、有機食品</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">銅版紙袋</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">百貨專櫃、促銷活動</td></tr></tbody></table><h3>紙袋材質對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">材質</th><th class="p-2 text-center">挺度</th><th class="p-2 text-center">印刷效果</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用品牌</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">白卡紙袋</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">美妝、珠寶、精品服飾</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">牛皮紙袋</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">文創、咖啡、有機食品</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">銅版紙袋</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">百貨專櫃、促銷活動</td></tr></tbody></table>
 
 **智印雲 國際印刷**：深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。
@@ -5428,10 +5473,12 @@ export const products: Product[] = [
     id: 'PB-005',
     sku_code: 'PB-005',
     slug: 'handle-bags',
+    optimizedAt: '2026-07-21',
+    optimizationRound: 1,
     category: 'paper-bags',
     category_slug: 'paper-bags',
-    name: '手挽紙袋 | 紙袋 / 牛皮紙袋 / 手提袋', nameEn: 'Handle Bags | Paper Bags & Kraft Bags', nameJa: '手提げ紙袋 | 紙袋 / クラフト紙袋 / ハンドル', title_zh: '手挽紙袋',
-    description: '堅固手挽設計，承重能力強。適合購物中心、超市。', descriptionEn: 'Sturdy handle design, strong load-bearing capacity. Perfect for shopping centers, supermarkets., ISO 9001:2015 certified quality management system', descriptionJa: '頑丈な持ち手デザイン、強い耐荷重能力。ショッピングセンター、スーパーに最適。', description_zh: '堅固手挽設計，承重能力強。適合購物中心、超市。',
+    name: '手挽紙袋 | 紙袋 / 牛皮紙袋 / 手提袋', nameEn: 'Handle Bags | Paper Bags & Kraft Bags', nameJa: '手提げ紙袋 | 紙袋 / クラフト紙袋 / ハンドル', title_zh: '手挽紙袋 · 餐飲零售日常大量採購',
+    description: '堅固手挽設計，承重能力強。適合購物中心、超市。適配行業: 餐廳外賣、咖啡店、烘焙坊、零售店、便利店、品牌快閃、展會攤位、活動禮品袋。', descriptionEn: 'Sturdy handle design, strong load-bearing capacity. Perfect for shopping centers, supermarkets., ISO 9001:2015 certified quality management system Best for: restaurant takeout, cafes, bakeries, retail stores, convenience stores, pop-up shops, trade show booths, event favor bags.', descriptionJa: '頑丈な持ち手デザイン、強い耐荷重能力。ショッピングセンター、スーパーに最適。 適用業界: レストラン テイクアウト、カフェ、ベーカリー、小売店、コンビニ、ブランド ポップアップ、展示会ブース、イベント ノベルティ バッグ。', description_zh: '堅固手挽設計，承重能力強。適合購物中心、超市。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -9124,10 +9171,12 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     id: 'PK-003',
     sku_code: 'PK-003',
     slug: 'food-boxes',
+    optimizedAt: '2026-07-21',
+    optimizationRound: 1,
     category: 'packaging',
     category_slug: 'packaging',
-    name: '食品包裝盒 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Food Boxes | Gift Boxes & Custom Packaging', nameJa: '食品包裝箱 | パッケージボックス・化粧箱', title_zh: '食品包裝盒印刷訂製 100個起印 HK$4起/個 FDA級 | 智印雲',
-    description: '食品包裝盒印刷訂製，100個起印，HK$4起/個。FDA級食品接觸安全材質，牛皮紙白卡紙可選，支援燙金UV印刷。適合糕點茶葉巧克力月餅食品品牌，3-5天交貨。', descriptionEn: 'Food-grade material, safe and eco-friendly., ISO 9001:2015 certified quality management system', descriptionJa: '食品グレード素材、安全で環境に優しい。', description_zh: '食品級材質，安全環保。適合糕點、茶葉、保健品。',
+    name: '食品包裝盒 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Food Boxes | Gift Boxes & Custom Packaging', nameJa: '食品包裝箱 | パッケージボックス・化粧箱', title_zh: '食品包裝盒印刷訂製 100個起印 HK$4起/個 FDA級 | 智印雲 · FDA 食品級茶飲烘焙定製',
+    description: '食品包裝盒印刷訂製，100個起印，HK$4起/個。FDA級食品接觸安全材質，牛皮紙白卡紙可選，支援燙金UV印刷。適合糕點茶葉巧克力月餅食品品牌，3-5天交貨。適配行業: 茶葉品牌、手搖飲品店、烘焙坊、咖啡店、月餅端午節禮盒、餐廳外賣、跨境食品電商。', descriptionEn: 'Food-grade material, safe and eco-friendly., ISO 9001:2015 certified quality management system Best for: tea brands, bubble tea shops, bakeries, coffee shops, mooncake / Dragon Boat Festival gift boxes, restaurant takeout, cross-border food e-commerce.', descriptionJa: '食品グレード素材、安全で環境に優しい。 適用業界: 茶ブランド、タピオカ店、ベーカリー、カフェ、月餅・端午節ギフト ボックス、レストラン テイクアウト、越境食品EC。', description_zh: '食品級材質，安全環保。適合糕點、茶葉、保健品。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -9455,10 +9504,12 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     id: 'PK-004',
     sku_code: 'PK-004',
     slug: 'mailer-boxes',
+    optimizedAt: '2026-07-21',
+    optimizationRound: 1,
     category: 'packaging',
     category_slug: 'packaging',
-    name: '快遞盒/飛機盒 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Mailer Boxes | Gift Boxes & Custom Packaging', nameJa: '発送箱 | パッケージボックス・化粧箱', title_zh: '快遞盒/飛機盒',
-    description: '堅固耐用，電商發貨首選。可印品牌Logo，提升開箱體驗。', descriptionEn: 'Sturdy and durable, first choice for e-commerce shipping., ISO 9001:2015 certified quality management system', descriptionJa: '頑丈で耐久性があり、EC発送の第一選択。', description_zh: '堅固耐用，電商發貨首選。可印品牌Logo，提升開箱體驗。',
+    name: '快遞盒/飛機盒 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Mailer Boxes | Gift Boxes & Custom Packaging', nameJa: '発送箱 | パッケージボックス・化粧箱', title_zh: '快遞盒/飛機盒 · 亞馬遜 FBA 跨境電商標配',
+    description: '堅固耐用，電商發貨首選。可印品牌Logo，提升開箱體驗。適配行業: 亞馬遜 FBA、Shopify 獨立站、Etsy、跨境電商品牌、訂閱盒直運、DTC 品牌、3PL 物流倉。', descriptionEn: 'Sturdy and durable, first choice for e-commerce shipping., ISO 9001:2015 certified quality management system Best for: Amazon FBA, Shopify DTC, Etsy, cross-border e-commerce brands, subscription box dropship, DTC brands, 3PL fulfillment warehouses.', descriptionJa: '頑丈で耐久性があり、EC発送の第一選択。 適用業界: Amazon FBA、Shopify DTC、Etsy、越境ECブランド、サブスクリプション ボックス dropship、DTC ブランド、3PL フルフィルメント倉庫。', description_zh: '堅固耐用，電商發貨首選。可印品牌Logo，提升開箱體驗。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -17920,10 +17971,12 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     id: 'PKG-009',
     sku_code: 'PKG-009',
     slug: 'kraft-paper-packaging-box',
+    optimizedAt: '2026-07-21',
+    optimizationRound: 1,
     category: 'packaging',
     category_slug: 'packaging',
-    name: '牛皮紙盒印刷定製 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Kraft Paper Packaging Box | Gift Boxes & Custom Packaging', nameJa: 'クラフト紙箱印刷 | パッケージボックス・化粧箱', title_zh: '牛皮紙盒印刷定製',
-    description: '環保牛皮紙盒，適合食品、茶葉、手工皂包裝。可印刷Logo，支持多種尺寸。', descriptionEn: 'Eco-friendly kraft paper boxes for food, tea, handmade soap packaging. Custom logo printing, multiple sizes.', descriptionJa: '環境に優しいクラフト紙箱。食品、お茶、手作り石鹸の包裝に最適。ロゴ印刷、サイズ豊富。', description_zh: '環保牛皮紙盒，適合食品、茶葉、手工皂包裝。可印刷Logo，支持多種尺寸。',
+    name: '牛皮紙盒印刷定製 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Kraft Paper Packaging Box | Gift Boxes & Custom Packaging', nameJa: 'クラフト紙箱印刷 | パッケージボックス・化粧箱', title_zh: '牛皮紙盒印刷定製 · 環保品牌跨境電商首選',
+    description: '環保牛皮紙盒，適合食品、茶葉、手工皂包裝。可印刷Logo，支持多種尺寸。適配行業: 有機食品品牌、環保美妝、ESG 認證品牌、跨境電商、FSC 認證供應鏈、減塑合規品牌。', descriptionEn: 'Eco-friendly kraft paper boxes for food, tea, handmade soap packaging. Custom logo printing, multiple sizes. Best for: organic food brands, eco-beauty, ESG-certified brands, cross-border e-commerce, FSC-certified supply chains, plastic-reduction compliance brands.', descriptionJa: '環境に優しいクラフト紙箱。食品、お茶、手作り石鹸の包裝に最適。ロゴ印刷、サイズ豊富。 適用業界: オーガニック食品ブランド、エコ ビューティ、ESG 認証ブランド、越境EC、FSC 認証サプライチェーン、プラスチック削減コンプライアンス ブランド。', description_zh: '環保牛皮紙盒，適合食品、茶葉、手工皂包裝。可印刷Logo，支持多種尺寸。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>

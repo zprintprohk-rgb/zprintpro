@@ -79,18 +79,21 @@ export function RegionalTrustBadges({ locale }: { locale: Locale }) {
       { icon: '🚚', label: '順豐直達' },
       { icon: '🎨', label: '免費打樣' },
       { icon: '⚡', label: '即日交貨' },
+      { icon: '🌟', label: '15+ 年印刷經驗' },
     ],
     'en': [
       { icon: '🏭', label: 'Shenzhen ISO Factory' },
       { icon: '🌍', label: 'Worldwide Shipping' },
       { icon: '💳', label: 'Multi-Currency' },
       { icon: '⚡', label: 'Express Available' },
+      { icon: '🌟', label: '15+ Years Expertise' },
     ],
     'ja': [
       { icon: '🔍', label: 'QC徹底管理' },
       { icon: '✈️', label: '航空便3-5日' },
       { icon: '💬', label: '日本語対応' },
       { icon: '⚡', label: '急行対応可' },
+      { icon: '🌟', label: '15+ 年の実績' },
     ],
   }[locale];
 

@@ -176,7 +176,10 @@
       "expected_words_zh": 1000,
       "expected_faqs": 4,
       "queued_at": "2026-07-06",
-      "priority_boost": 1
+      "priority_boost": 1,
+      "status": "completed",
+      "completed_at": "2026-07-21",
+      "completed_slug": "apparel-shopping-bag-printing-guide"
     },
     {
       "id": "Q-005",
@@ -834,21 +837,26 @@
       "industry": "服裝",
       "tier": "A",
       "priority": "P0",
-      "covered_at": "2026-07-06",
-      "deployed_at": "2026-07-06T10:35:00+08:00",
-      "deploy_method": "git push origin_ssh main → CF Pages auto-deploy",
-      "verify_status": "PASS",
+      "covered_at": "2026-07-21",
+      "deployed_at": "2026-07-21T10:50:00+08:00",
+      "deploy_method": "git push origin_ssh main → CF Pages auto-deploy (v7 daily 1-blog pack)",
+      "verify_status": "pending-7-step",
       "locale_chars": {
-        "zh-hk": 3689,
-        "en": 4951,
-        "ja": 3381
+        "zh-hk": 5769,
+        "en": 7953,
+        "ja": 5816
       },
       "nap_decoupled": true,
-      "internal_links_count": 5,
+      "internal_links_count": 8,
       "no_images": true,
-      "verify_steps": "7/7",
-      "cf_build_run": "85285164179",
-      "deployed_commit": "706e48e"
+      "verify_steps": "pending-7-step (amend commit pending push)",
+      "price_anchors": "5 档 intuan 校准錶 (HKD 811-4,202 for 500-5000 个) + 1 e-print HK 零售天花板对比 (3 locale)",
+      "trust_signals": "15+ 年 / 15,000+ 客戶 / 100+ 國家 (zh-hk 2处 / en 1处 / ja 2处)",
+      "v7_features": "報價型 (v7 升级: 从信息型转向报价型, 引用 price-tables 真实价格)",
+      "v7_history": "P4 BODY 阶段 2026-07-16 写 body 字段但未上线 (路径 bug), 2026-07-21 v7 cron 补 zh-hk page.tsx entry + blog-posts.ts BlogPostMeta + price anchor + 15+ 年 trust + 推送上线",
+      "deployed_commit": "TBD-amend-cf-build-2026-07-21",
+      "cf_build_run": "TBD-cf-build-2026-07-21",
+      "cron_session": "mvs_3c7e073901e140be80eaa9ea8a4141f6"
     },
     {
       "id": "Q-005",
@@ -1415,30 +1423,6 @@
       "note": "2026-07-14 daily cron Tier C 影視IP 行業首次覆蓋 (Disney/Netflix/Aniplex/Comic-Con/Anime Expo/D23 — 100 MOQ Kickstarter + 全球展會配送)"
     },
     {
-      "slug": "restaurant-opening-flyer-printing-guide",
-      "date": "2026-07-16",
-      "qid": "Q-001",
-      "category": "餐飲外賣",
-      "tier": "A",
-      "priority": "P0"
-    },
-    {
-      "slug": "cosmetics-packaging-box-printing-guide",
-      "date": "2026-07-16",
-      "qid": "Q-002",
-      "category": "美妝護膚",
-      "tier": "A",
-      "priority": "P0"
-    },
-    {
-      "slug": "pet-food-sticker-printing-guide",
-      "date": "2026-07-16",
-      "qid": "Q-003",
-      "category": "寵物",
-      "tier": "A",
-      "priority": "P0"
-    },
-    {
       "id": "Q-NEW-01",
       "slug": "religious-ceremony-printing-guide",
       "category": "packaging",
@@ -1866,5 +1850,119 @@
     "manual_review": [],
     "reason_no_apply": "GSC CSV snapshot (6/17) 不能判 30/90 天连续趋势, 跳过自动 Tier 切换"
   },
-  "lastUpdated": "2026-07-20"
+  "lastUpdated": "2026-07-20",
+  "v7_sku_optimizations": [
+    {
+      "id": "v7-SKU-01",
+      "slug": "white-card-bags",
+      "category": "paper-bags",
+      "optimizedAt": "2026-07-21",
+      "optimizationRound": 1,
+      "tier": "A",
+      "industries": [
+        "服裝",
+        "珠寶鐘錶",
+        "美妝護膚",
+        "婚慶",
+        "禮品店"
+      ]
+    },
+    {
+      "id": "v7-SKU-02",
+      "slug": "handle-bags",
+      "category": "paper-bags",
+      "optimizedAt": "2026-07-21",
+      "optimizationRound": 1,
+      "tier": "A",
+      "industries": [
+        "餐飲外賣",
+        "零售精品",
+        "便利店",
+        "快閃店",
+        "展會"
+      ]
+    },
+    {
+      "id": "v7-SKU-03",
+      "slug": "mailer-boxes",
+      "category": "packaging",
+      "optimizedAt": "2026-07-21",
+      "optimizationRound": 1,
+      "tier": "A",
+      "industries": [
+        "亞馬遜 FBA",
+        "Shopify 獨立站",
+        "Etsy",
+        "跨境電商",
+        "3PL"
+      ]
+    },
+    {
+      "id": "v7-SKU-04",
+      "slug": "food-boxes",
+      "category": "packaging",
+      "optimizedAt": "2026-07-21",
+      "optimizationRound": 1,
+      "tier": "A",
+      "industries": [
+        "茶飲食品",
+        "手搖飲品",
+        "烘焙坊",
+        "月餅端午",
+        "跨境食品電商"
+      ]
+    },
+    {
+      "id": "v7-SKU-05",
+      "slug": "kraft-paper-packaging-box",
+      "category": "packaging",
+      "optimizedAt": "2026-07-21",
+      "optimizationRound": 1,
+      "tier": "A",
+      "industries": [
+        "有機食品",
+        "環保美妝",
+        "ESG 認證",
+        "跨境電商",
+        "FSC 認證"
+      ]
+    }
+  ],
+  "v7_pdp_reviews": [
+    {
+      "id": "v7-PDP-01",
+      "slug": "kraft-paper-bags",
+      "category": "paper-bags",
+      "reviewed_at": "2026-07-21",
+      "5_dimensions": {
+        "1_title_ctr": "✅ H1 '牛皮紙袋印刷訂製 100個起印 免費刀模 FSC認證 | 智印雲 ZprintPro' (32 chars) 含 sharp hook (100個起印 / 免費刀模 / FSC認證)",
+        "2_price_anchor": "⚠️ 修复: longDescription 末尾加 5 档 intuan 校准錨点 (HKD 811-4,202 for 500-5000 个) + e-print HK 零售天花板对比 (3 locale)",
+        "3_trust_bar_15y": "⚠️ 修复: RegionalTrustBadges 加 '15+ 年印刷經驗 / 15+ Years Expertise / 15+ 年の実績' badge (3 locale)",
+        "4_nap_consistency": "✅ PDP 不硬塞 supplier origin city, NAP 只在 footer/contact/schema (按 §13.10)",
+        "5_cta_path": "✅ WhatsApp link + QuoteCalculator + Quote CTA — 3 入口齐"
+      },
+      "fixes_applied": [
+        "RegionalContent.tsx: RegionalTrustBadges 3 locale 各加 1 个 15+ 年 badge",
+        "products.ts kraft-paper-bags: longDescription/longDescriptionEn/longDescriptionJa 末尾加 5 档校准錨点 (引用 price-tables/paper-bags.json intuan-2026-07-18)"
+      ],
+      "files_changed": [
+        "src/components/seo/RegionalContent.tsx",
+        "src/data/products.ts"
+      ]
+    }
+  ],
+  "v7_cron_sessions": [
+    {
+      "session": "mvs_3c7e073901e140be80eaa9ea8a4141f6",
+      "date": "2026-07-21",
+      "deliverables": {
+        "blog": 1,
+        "sku_optimizations": 5,
+        "pdp_reviews": 1,
+        "matrix_updates": 1
+      },
+      "build_quota": 1,
+      "strategy": "v7 1 篇/天降频 + 深度提质 + 攒批 1 commit 1 build"
+    }
+  ]
 }

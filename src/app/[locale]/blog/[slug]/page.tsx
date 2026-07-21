@@ -322,6 +322,13 @@ const posts: Record<string, Record<string, { title: string; description: string;
       date: '2026-07-20', category: '建築工程',
       content: '',
     },
+    // 2026-07-21 v7 daily-content-evolve: Q-004 apparel shopping bag — paper-bags × 服裝 (Tier A) — 純文字・v7 報價型 (5 檔 intuan 校準錨點)
+    'apparel-shopping-bag-printing-guide': {
+      title: '香港服裝品牌紙袋印刷指南 · 環保購物袋品牌升級 | 智印雲 ZprintPro',
+      description: '香港時裝、潮牌、買手店老闆必睇。一個高質感的品牌紙袋決定客人會否在 IG 打卡分享。智印雲為本地時裝品牌提供白卡紙、黃牛皮、棉繩、絲帶、燙金、UV 局部全系列紙袋印刷,500-100,000 枚小至大批量,5-10 個工作天交付,順豐本地 + DHL 全球 2-4 天到貨,5 檔 intuan 校準錨點實價。',
+      date: '2026-07-21', category: '服裝紙袋',
+      content: '',
+    },
 
   },
   // 2026-07-20 v4 daily-content-evolve: NEW posts.en block (之前 page.tsx 没有 en 块, en locale H1 走 fallback slug 不友好, 现新建)
