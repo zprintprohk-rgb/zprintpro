@@ -514,7 +514,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "PVC waterproof stickers with excellent water",
-      "en": "Custom Waterproof Stickers for pet food and brand labels — ZprintPro智印港",
+      "en": "Custom Waterproof Stickers for pet food and brand labels — ZprintPro",
       "ja": " and abrasion resistance. Perfect for outdoor use"
     }
   },
@@ -565,7 +565,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "透明貼紙 / 不干膠 | 香港透明貼紙印刷 透明 PET | ZprintPro智印港",
-      "en": "Custom Transparent Stickers for pet food and brand labels — ZprintPro智印港",
+      "en": "Custom Transparent Stickers for pet food and brand labels — ZprintPro",
       "ja": "一般為100張起訂，部分特殊工藝需500張起。"
     }
   },
@@ -616,7 +616,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "可移貼紙(無殘膠) / 不干膠 | 香港可移貼紙(無殘膠)印刷 PP 合成紙／PET 透明膜 | ZprintPro智印港",
-      "en": "Custom Removable Stickers for pet food and brand labels — ZprintPro智印港",
+      "en": "Custom Removable Stickers for pet food and brand labels — ZprintPro",
       "ja": "再剥離ステッカー / 防水 | 再剥離ステッカー印刷 防水PVC | ZprintPro"
     }
   },
@@ -667,7 +667,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "小批量貼紙 / 不干膠 | 香港小批量貼紙印刷 PVC 防水／PP 合成紙 | ZprintPro智印港",
-      "en": "Custom Small Batch Stickers for pet food and brand labels — ZprintPro智印港",
+      "en": "Custom Small Batch Stickers for pet food and brand labels — ZprintPro",
       "ja": "一般為100張起訂，部分特殊工藝需500張起。"
     }
   },
@@ -718,7 +718,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "異形模切貼紙 / 不干膠 | 香港異形模切貼紙印刷 PVC／PP 合成紙／透明 PET | ZprintPro智印港",
-      "en": "Custom Die-Cut Stickers for pet food and brand labels — ZprintPro智印港",
+      "en": "Custom Die-Cut Stickers for pet food and brand labels — ZprintPro",
       "ja": "一般為100張起訂，部分特殊工藝需500張起。"
     }
   },
@@ -769,7 +769,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "燙金貼紙 / 不干膠 | 香港燙金貼紙印刷 銅版紙／合成紙 | ZprintPro智印港",
-      "en": "Custom Foil Stickers for pet food and brand labels — ZprintPro智印港",
+      "en": "Custom Foil Stickers for pet food and brand labels — ZprintPro",
       "ja": "箔押しステッカー / 防水 | 箔押しステッカー印刷 防水PVC | ZprintPro"
     }
   },
@@ -820,7 +820,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "防偽貼紙 / 不干膠 | 香港防偽貼紙印刷 易碎紙／VOID／合成紙＋全息膜等（依方案） | ZprintPro智印港",
-      "en": "Custom Security Stickers for pet food and brand labels — ZprintPro智印港",
+      "en": "Custom Security Stickers for pet food and brand labels — ZprintPro",
       "ja": "セキュリティステッカー / 防水 | セキュリティステッカー印刷 防水PVC | ZprintPro"
     }
   },
@@ -871,7 +871,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "螢光貼紙 / 不干膠 | 香港螢光貼紙印刷 螢光 PVC 膜／螢光紙 | ZprintPro智印港",
-      "en": "Custom Fluorescent Stickers for pet food and brand labels — ZprintPro智印港",
+      "en": "Custom Fluorescent Stickers for pet food and brand labels — ZprintPro",
       "ja": "一般為100張起訂，部分特殊工藝需500張起。"
     }
   },
@@ -923,7 +923,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "牛皮紙袋 / 環保 | 香港牛皮紙袋印刷 牛皮紙 120–200g 級（依報價） | ZprintPro智印港",
-      "en": "Custom Kraft Paper Bags for pet food and brand labels — ZprintPro智印港",
+      "en": "Custom Kraft Paper Bags for pet food and brand labels — ZprintPro",
       "ja": "クラフト紙袋 / FSC認証 | クラフト紙袋印刷 FSC認証紙 100個〜 | ZprintPro"
     }
   },
@@ -974,7 +974,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "白卡紙袋 / 環保 | 香港白卡紙袋印刷 白卡紙 200–300g 級（依報價） | ZprintPro智印港",
-      "en": "Custom White Card Bags for pet food and brand labels — ZprintPro智印港",
+      "en": "Custom White Card Bags for pet food and brand labels — ZprintPro",
       "ja": "白カード紙袋 / 高耐久 | 白カード紙袋印刷 高耐久素材 100個〜 | ZprintPro"
     }
   },
@@ -1026,7 +1026,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "禮品紙袋 / 環保 | 香港禮品紙袋印刷 白卡／特種紙／珠光紙（依稿） | ZprintPro智印港",
-      "en": "Custom Gift Paper Bags for pet food and brand labels — ZprintPro智印港",
+      "en": "Custom Gift Paper Bags for pet food and brand labels — ZprintPro",
       "ja": "一般為100個起訂，大批量訂單價格更優惠。"
     }
   },
@@ -1077,7 +1077,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "一般為100個起訂，大批量訂單價格更優惠。",
-      "en": "Custom Eco Paper Bags for pet food and brand labels — ZprintPro智印港",
+      "en": "Custom Eco Paper Bags for pet food and brand labels — ZprintPro",
       "ja": "當然可以。我們支持完全定制尺寸、顏色、手柄類型和印刷內容。"
     }
   },
@@ -1128,7 +1128,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "手挽紙袋 / 環保 | 香港手挽紙袋印刷 牛皮／白卡 | ZprintPro智印港",
-      "en": "Custom Handle Bags for pet food and brand labels — ZprintPro智印港",
+      "en": "Custom Handle Bags for pet food and brand labels — ZprintPro",
       "ja": "ハンドルバッグ / 高耐久 | ハンドルバッグ印刷 高耐久素材 100個〜 | ZprintPro"
     }
   },
@@ -1178,7 +1178,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "紙袋的最小訂購量是多少？",
-      "en": "Custom Small Paper Bags for pet food and brand labels — ZprintPro智印港",
+      "en": "Custom Small Paper Bags for pet food and brand labels — ZprintPro",
       "ja": "可以定制紙袋的尺寸和顏色嗎？"
     }
   },
@@ -1229,7 +1229,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "大號紙袋 / 環保 | 香港大號紙袋印刷 FSC 認證紙 | ZprintPro智印港",
-      "en": "Custom Large Paper Bags for pet food and brand labels — ZprintPro智印港",
+      "en": "Custom Large Paper Bags for pet food and brand labels — ZprintPro",
       "ja": "大型紙袋 / 高耐久素材 | 大型紙袋印刷 強化素材 100個〜 即日発送 | ZprintPro"
     }
   },
@@ -1281,7 +1281,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "A4宣傳單張 / 雙面四色 | 香港A4宣傳單張印刷 157g銅版紙或128g啞粉紙 | ZprintPro智印港",
-      "en": "A4 Flyers for holiday cards, wedding invitations — ZprintPro智印港",
+      "en": "A4 Flyers for holiday cards, wedding invitations — ZprintPro",
       "ja": "A4チラシ / 両面カラー | A4チラシ印刷 両面4色 100枚〜 即日発送 | ZprintPro"
     }
   },
@@ -1332,7 +1332,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "A5宣傳單張 / 雙面四色 | 香港A5宣傳單張印刷 128g銅版紙或100g書紙 | ZprintPro智印港",
-      "en": "A5 Flyers for holiday cards, wedding invitations — ZprintPro智印港",
+      "en": "A5 Flyers for holiday cards, wedding invitations — ZprintPro",
       "ja": "A5チラシ / 両面カラー | A5チラシ印刷 両面4色 100枚〜 即日発送 | ZprintPro"
     }
   },
@@ -1383,7 +1383,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "雙面宣傳單張 / 雙面四色 | 香港雙面宣傳單張印刷 157g銅版紙或128g啞粉紙 | ZprintPro智印港",
-      "en": "Double-Sided Flyers for holiday cards, wedding invitations — ZprintPro智印港",
+      "en": "Double-Sided Flyers for holiday cards, wedding invitations — ZprintPro",
       "ja": "両面チラシ / 両面カラー | 両面チラシ印刷 両面4色 100枚〜 即日発送 | ZprintPro"
     }
   },
@@ -1483,7 +1483,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "厚紙宣傳單張 / 雙面四色 | 香港厚紙宣傳單張印刷 200g或250g銅版紙 | ZprintPro智印港",
-      "en": "Thick Paper Flyers for holiday cards, wedding invitations — ZprintPro智印港",
+      "en": "Thick Paper Flyers for holiday cards, wedding invitations — ZprintPro",
       "ja": "厚口チラシ / 高耐久 | 厚口チラシ印刷 高耐久 100枚〜 即日発送 | ZprintPro"
     }
   },
@@ -1534,7 +1534,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "即日宣傳單張 / 雙面四色 | 香港即日宣傳單張印刷 157g銅版紙 | ZprintPro智印港",
-      "en": "Same-Day Flyers for holiday cards, wedding invitations — ZprintPro智印港",
+      "en": "Same-Day Flyers for holiday cards, wedding invitations — ZprintPro",
       "ja": "即日チラシ / 両面カラー | 即日チラシ印刷 当日仕上げ 100枚〜 | ZprintPro"
     }
   },
@@ -1636,7 +1636,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "A2海報印刷 / 防水材質 | 香港A2海報印刷 157g 銅版紙（可升 200g／相紙） | ZprintPro智印港",
-      "en": "A2 Posters wall art for home decor, gallery walls — ZprintPro智印港",
+      "en": "A2 Posters wall art for home decor, gallery walls — ZprintPro",
       "ja": "A2ポスター / 防水 | A2ポスター印刷 防水紙 翌日配送 | ZprintPro"
     }
   },
@@ -1688,7 +1688,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "A1大幅海報 / 防水材質 | 香港A1大幅海報印刷 157–200g 銅版或相紙 | ZprintPro智印港",
-      "en": "A1 Posters wall art for home decor, gallery walls — ZprintPro智印港",
+      "en": "A1 Posters wall art for home decor, gallery walls — ZprintPro",
       "ja": "我們支持最大A0尺寸（841×1189mm），更大尺寸可定制拼接。"
     }
   },
@@ -1740,7 +1740,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "戶外海報 / 防水材質 | 香港戶外海報印刷 戶外 PVC／PET／合成紙 | ZprintPro智印港",
-      "en": "Outdoor Posters wall art for home decor, gallery walls — ZprintPro智印港",
+      "en": "Outdoor Posters wall art for home decor, gallery walls — ZprintPro",
       "ja": "屋外ポスター / 防水 | 屋外ポスター印刷 防水・耐光紙 翌日配送 | ZprintPro"
     }
   },
@@ -1791,7 +1791,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "我們支持最大A0尺寸（841×1189mm），更大尺寸可定制拼接。",
-      "en": "Display Posters wall art for home decor, gallery walls — ZprintPro智印港",
+      "en": "Display Posters wall art for home decor, gallery walls — ZprintPro",
       "ja": "我們提供戶外防水防曬材質，適合長期戶外展示。"
     }
   },
@@ -1842,7 +1842,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "藝術海報 / 防水材質 | 香港藝術海報印刷 PP 合成紙 | ZprintPro智印港",
-      "en": "Art Posters wall art for home decor, gallery walls — ZprintPro智印港",
+      "en": "Art Posters wall art for home decor, gallery walls — ZprintPro",
       "ja": "アートポスター / 防水 | アートポスター印刷 防水紙 翌日配送 | ZprintPro"
     }
   },
@@ -1893,7 +1893,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "背膠海報 / 防水材質 | 香港背膠海報印刷 150g–180g 背膠 PP／鑄造級 PVC | ZprintPro智印港",
-      "en": "Adhesive Posters wall art for home decor, gallery walls — ZprintPro智印港",
+      "en": "Adhesive Posters wall art for home decor, gallery walls — ZprintPro",
       "ja": "粘着ポスター / 防水 | 粘着ポスター印刷 防水紙 翌日配送 | ZprintPro"
     }
   },
@@ -1949,7 +1949,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "化妝品包裝盒 4 種盒型 100 個起印 FDA 級安全 燙金 UV",
-      "en": "Custom Cosmetic Boxes for pet food and brand labels — ZprintPro智印港",
+      "en": "Custom Cosmetic Boxes for pet food and brand labels — ZprintPro",
       "ja": "化粧品パッケージボックス 4 種類 100 個〜 FDA対応 箔押し UV"
     }
   },
@@ -2000,7 +2000,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "一般為100個起訂，定制盒型需500個起。",
-      "en": "Custom Food Boxes for pet food and brand labels — ZprintPro智印港",
+      "en": "Custom Food Boxes for pet food and brand labels — ZprintPro",
       "ja": "可以。我們支持各種盒型（天地蓋、抽屜盒、書型盒等）的完全定制。"
     }
   },
@@ -2052,7 +2052,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "快遞盒/飛機盒 / 訂製 | 香港快遞盒/飛機盒訂製 E／B 坑瓦楞或白卡裱瓦（依載重） | ZprintPro智印港",
-      "en": "Custom Mailer Boxes for pet food and brand labels — ZprintPro智印港",
+      "en": "Custom Mailer Boxes for pet food and brand labels — ZprintPro",
       "ja": "メーラーボックス / 宅配対応 | メーラーボックス印刷 厚紙 100個〜 日本向け | ZprintPro"
     }
   },
@@ -2103,7 +2103,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "一般為100個起訂，定制盒型需500個起。",
-      "en": "Custom Folding Boxes for pet food and brand labels — ZprintPro智印港",
+      "en": "Custom Folding Boxes for pet food and brand labels — ZprintPro",
       "ja": "可以。我們支持各種盒型（天地蓋、抽屜盒、書型盒等）的完全定制。"
     }
   },
@@ -2154,7 +2154,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "一般為100個起訂，定制盒型需500個起。",
-      "en": "Custom Rigid Boxes for pet food and brand labels — ZprintPro智印港",
+      "en": "Custom Rigid Boxes for pet food and brand labels — ZprintPro",
       "ja": "可以。我們支持各種盒型（天地蓋、抽屜盒、書型盒等）的完全定制。"
     }
   },
@@ -2205,7 +2205,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "燙金利是封 / 燙金 UV | 香港燙金利是封印刷 120g紅色紙張 | ZprintPro智印港",
-      "en": "Foil Red Packets for holiday cards, wedding invitations — ZprintPro智印港",
+      "en": "Foil Red Packets for holiday cards, wedding invitations — ZprintPro",
       "ja": "箔押し年賀状 / 箔押し | 箔押し年賀状印刷 箔押し加工 100個〜 | ZprintPro"
     }
   },
@@ -2255,7 +2255,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "浮雕利是封 / 燙金 UV | 香港浮雕利是封印刷 150g紅色紙張 | ZprintPro智印港",
-      "en": "Embossed Red Packets for holiday cards, wedding invitations — ZprintPro智印港",
+      "en": "Embossed Red Packets for holiday cards, wedding invitations — ZprintPro",
       "ja": "エンボス年賀状 / エンボス | エンボス年賀状印刷 エンボス加工 100個〜 | ZprintPro"
     }
   },
@@ -2306,7 +2306,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "一般為500個起訂，春節旺季建議提前1個月下單。",
-      "en": "Custom Red Packets for holiday cards, wedding invitations — ZprintPro智印港",
+      "en": "Custom Red Packets for holiday cards, wedding invitations — ZprintPro",
       "ja": "可以。我們提供燙金、燙銀、浮雕等多種工藝的Logo定制。"
     }
   },
@@ -3961,7 +3961,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "磁吸翻蓋禮盒 - 香港本地印刷 智印雲 | 香港印刷 | ZprintPro智印港",
-      "en": "Custom Magnetic Closure Gift Box for pet food and brand labels — ZprintPro智印港",
+      "en": "Custom Magnetic Closure Gift Box for pet food and brand labels — ZprintPro",
       "ja": "マグネット式ギフトボックス | ZprintPro"
     }
   },
@@ -4003,7 +4003,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "電子產品包裝盒 - 香港本地印刷 智印雲",
-      "en": "Custom Electronics Packaging Box for pet food and brand labels — ZprintPro智印港",
+      "en": "Custom Electronics Packaging Box for pet food and brand labels — ZprintPro",
       "ja": "電子製品包装箱 | ZprintPro"
     }
   },
@@ -4045,7 +4045,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "牛皮紙包裝印刷盒 - 香港本地印刷 智印雲",
-      "en": "Custom Kraft Paper Packaging Box for pet food and brand labels — ZprintPro智印港",
+      "en": "Custom Kraft Paper Packaging Box for pet food and brand labels — ZprintPro",
       "ja": "クラフト紙包装箱 | ZprintPro"
     }
   },
@@ -4087,7 +4087,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "抽屜式禮盒印刷 - 香港本地印刷 智印雲",
-      "en": "Custom Drawer Slide Gift Box for pet food and brand labels — ZprintPro智印港",
+      "en": "Custom Drawer Slide Gift Box for pet food and brand labels — ZprintPro",
       "ja": "引き出し式ギフトボックス | ZprintPro"
     }
   },
@@ -4129,7 +4129,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "水果及食品標籤印刷 - 香港本地印刷 智印雲",
-      "en": "Custom Food Label Stickers for pet food and brand labels — ZprintPro智印港",
+      "en": "Custom Food Label Stickers for pet food and brand labels — ZprintPro",
       "ja": "フルーツ・食品ラベル印刷 | ZprintPro"
     }
   },
