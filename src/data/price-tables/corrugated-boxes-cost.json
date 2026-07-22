@@ -7,7 +7,12 @@
     "ja": "段ボール箱(専版)"
   },
   "currency_anchor": "HKD",
-  "markup_rule": "cost_rmb × 1.5 → sell_hkd",
+  "markup_rule": "cost_rmb × 1.5 → sell_hkd (zh-hk); cost_rmb × 2.2 × fx → sell_usd/sell_jpy (en/ja, 毛利≥50%, user 2026-07-23 拍板)",
+  "market_markup": {
+    "zh-hk": 1.5,
+    "en": 2.2,
+    "ja": 2.2
+  },
   "src": "yate98-factory-2026-07",
   "anchor": true,
   "anchorType": "factory-cost",

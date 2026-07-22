@@ -45,6 +45,7 @@
   "sf_rate_reference": {
     "first_kg": 30,
     "per_kg_after": 8,
-    "note": "估算用: 200 阈值 ≈ 22-25kg; 实际以顺丰当日报价为准, 报价台显示\"运费另计/到付\"兜底"
+    "switch_to_logistics_kg": 30,
+    "note": "user 2026-07-23 拍板: >30kg 切物流; 实际以顺丰当日报价为准, 报价台显示\"运费另计/到付\"兜底"
   }
 }

@@ -55,7 +55,8 @@ def emit(fname, sku, name_zh, name_en, name_ja, category, source, groups, note='
         'sku': sku, 'category': category,
         'name': {'zh-hk': name_zh, 'en': name_en, 'ja': name_ja},
         'currency_anchor': 'HKD',
-        'markup_rule': f'cost_rmb × {MARKUP} → sell_hkd',
+        'markup_rule': f'cost_rmb × {MARKUP} → sell_hkd (zh-hk); cost_rmb × 2.2 × fx → sell_usd/sell_jpy (en/ja, 毛利≥50%, user 2026-07-23 拍板)',
+        'market_markup': {'zh-hk': MARKUP, 'en': 2.2, 'ja': 2.2},
         'src': source, 'anchor': True, 'anchorType': 'factory-cost',
         'calibratedAt': TODAY, 'note': note,
         'configs': [{'config': k, 'tiers': v} for k, v in groups.items()],
@@ -138,7 +139,7 @@ shipping = {
          'note': '0.7 RMB/kg 是香港物流园段成本(不含送货到物流点); first_leg_rmb=100 是深圳工厂→物流点头程估值, 待 user 确认实际值后修正'},
     ],
     'sf_rate_reference': {'first_kg': 30, 'per_kg_after': 8,
-        'note': '估算用: 200 阈值 ≈ 22-25kg; 实际以顺丰当日报价为准, 报价台显示"运费另计/到付"兜底'},
+        'switch_to_logistics_kg': 30, 'note': 'user 2026-07-23 拍板: >30kg 切物流; 实际以顺丰当日报价为准, 报价台显示"运费另计/到付"兜底'},
 }
 (OUT / 'shipping-rules.json').write_text(json.dumps(shipping, ensure_ascii=False, indent=2), encoding='utf-8')
 print('shipping-rules.json written')
