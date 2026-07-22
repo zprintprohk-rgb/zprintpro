@@ -1,0 +1,446 @@
+{
+  "sku": "special-fold-leaflets",
+  "category": "flyers",
+  "name": {
+    "zh-hk": "特殊尺寸宣傳摺頁(風琴摺)",
+    "en": "Special-Fold Leaflets (Accordion)",
+    "ja": "特殊折りチラシ"
+  },
+  "currency_anchor": "HKD",
+  "markup_rule": "eprint_hkd × 0.95 → sell_hkd",
+  "src": "e-print-benchmark-2026-07",
+  "anchor": true,
+  "anchorType": "competitor-benchmark",
+  "calibratedAt": "2026-07-23",
+  "note": "e-print 特殊尺寸風琴摺公开价 ×0.95; 运费规则见 shipping-rules.json",
+  "configs": [
+    {
+      "config": "風琴摺 594x210→A5 3條骨 光粉紙157g 雙面",
+      "tiers": [
+        {
+          "qty": 300,
+          "eprint_hkd": 1490,
+          "sell_hkd": 1416,
+          "weight_kg": null
+        },
+        {
+          "qty": 400,
+          "eprint_hkd": 1530,
+          "sell_hkd": 1454,
+          "weight_kg": null
+        },
+        {
+          "qty": 500,
+          "eprint_hkd": 1530,
+          "sell_hkd": 1454,
+          "weight_kg": null
+        },
+        {
+          "qty": 600,
+          "eprint_hkd": 1640,
+          "sell_hkd": 1558,
+          "weight_kg": null
+        },
+        {
+          "qty": 700,
+          "eprint_hkd": 1640,
+          "sell_hkd": 1558,
+          "weight_kg": null
+        },
+        {
+          "qty": 800,
+          "eprint_hkd": 1640,
+          "sell_hkd": 1558,
+          "weight_kg": null
+        },
+        {
+          "qty": 900,
+          "eprint_hkd": 1640,
+          "sell_hkd": 1558,
+          "weight_kg": null
+        },
+        {
+          "qty": 1000,
+          "eprint_hkd": 1640,
+          "sell_hkd": 1558,
+          "weight_kg": null
+        },
+        {
+          "qty": 2000,
+          "eprint_hkd": 1865,
+          "sell_hkd": 1772,
+          "weight_kg": null
+        },
+        {
+          "qty": 3000,
+          "eprint_hkd": 2130,
+          "sell_hkd": 2024,
+          "weight_kg": null
+        },
+        {
+          "qty": 4000,
+          "eprint_hkd": 2195,
+          "sell_hkd": 2085,
+          "weight_kg": null
+        },
+        {
+          "qty": 5000,
+          "eprint_hkd": 2540,
+          "sell_hkd": 2413,
+          "weight_kg": null
+        },
+        {
+          "qty": 6000,
+          "eprint_hkd": 2985,
+          "sell_hkd": 2836,
+          "weight_kg": null
+        },
+        {
+          "qty": 7000,
+          "eprint_hkd": 3230,
+          "sell_hkd": 3068,
+          "weight_kg": null
+        },
+        {
+          "qty": 8000,
+          "eprint_hkd": 3395,
+          "sell_hkd": 3225,
+          "weight_kg": null
+        },
+        {
+          "qty": 9000,
+          "eprint_hkd": 3820,
+          "sell_hkd": 3629,
+          "weight_kg": null
+        },
+        {
+          "qty": 10000,
+          "eprint_hkd": 4035,
+          "sell_hkd": 3833,
+          "weight_kg": null
+        }
+      ]
+    },
+    {
+      "config": "風琴摺 210x444→A5 2條骨 光粉紙157g 雙面",
+      "tiers": [
+        {
+          "qty": 300,
+          "eprint_hkd": 1440,
+          "sell_hkd": 1368,
+          "weight_kg": null
+        },
+        {
+          "qty": 400,
+          "eprint_hkd": 1470,
+          "sell_hkd": 1396,
+          "weight_kg": null
+        },
+        {
+          "qty": 500,
+          "eprint_hkd": 1470,
+          "sell_hkd": 1396,
+          "weight_kg": null
+        },
+        {
+          "qty": 600,
+          "eprint_hkd": 1560,
+          "sell_hkd": 1482,
+          "weight_kg": null
+        },
+        {
+          "qty": 700,
+          "eprint_hkd": 1560,
+          "sell_hkd": 1482,
+          "weight_kg": null
+        },
+        {
+          "qty": 800,
+          "eprint_hkd": 1560,
+          "sell_hkd": 1482,
+          "weight_kg": null
+        },
+        {
+          "qty": 900,
+          "eprint_hkd": 1560,
+          "sell_hkd": 1482,
+          "weight_kg": null
+        },
+        {
+          "qty": 1000,
+          "eprint_hkd": 1560,
+          "sell_hkd": 1482,
+          "weight_kg": null
+        },
+        {
+          "qty": 2000,
+          "eprint_hkd": 1765,
+          "sell_hkd": 1677,
+          "weight_kg": null
+        },
+        {
+          "qty": 3000,
+          "eprint_hkd": 1980,
+          "sell_hkd": 1881,
+          "weight_kg": null
+        },
+        {
+          "qty": 4000,
+          "eprint_hkd": 2035,
+          "sell_hkd": 1933,
+          "weight_kg": null
+        },
+        {
+          "qty": 5000,
+          "eprint_hkd": 2350,
+          "sell_hkd": 2232,
+          "weight_kg": null
+        },
+        {
+          "qty": 6000,
+          "eprint_hkd": 2615,
+          "sell_hkd": 2484,
+          "weight_kg": null
+        },
+        {
+          "qty": 7000,
+          "eprint_hkd": 2820,
+          "sell_hkd": 2679,
+          "weight_kg": null
+        },
+        {
+          "qty": 8000,
+          "eprint_hkd": 2965,
+          "sell_hkd": 2817,
+          "weight_kg": null
+        },
+        {
+          "qty": 9000,
+          "eprint_hkd": 3380,
+          "sell_hkd": 3211,
+          "weight_kg": null
+        },
+        {
+          "qty": 10000,
+          "eprint_hkd": 3485,
+          "sell_hkd": 3311,
+          "weight_kg": null
+        }
+      ]
+    },
+    {
+      "config": "風琴摺 210x444→A5 2條骨 光粉紙128g 雙面",
+      "tiers": [
+        {
+          "qty": 300,
+          "eprint_hkd": 1440,
+          "sell_hkd": 1368,
+          "weight_kg": null
+        },
+        {
+          "qty": 400,
+          "eprint_hkd": 1470,
+          "sell_hkd": 1396,
+          "weight_kg": null
+        },
+        {
+          "qty": 500,
+          "eprint_hkd": 1470,
+          "sell_hkd": 1396,
+          "weight_kg": null
+        },
+        {
+          "qty": 600,
+          "eprint_hkd": 1560,
+          "sell_hkd": 1482,
+          "weight_kg": null
+        },
+        {
+          "qty": 700,
+          "eprint_hkd": 1560,
+          "sell_hkd": 1482,
+          "weight_kg": null
+        },
+        {
+          "qty": 800,
+          "eprint_hkd": 1560,
+          "sell_hkd": 1482,
+          "weight_kg": null
+        },
+        {
+          "qty": 900,
+          "eprint_hkd": 1560,
+          "sell_hkd": 1482,
+          "weight_kg": null
+        },
+        {
+          "qty": 1000,
+          "eprint_hkd": 1560,
+          "sell_hkd": 1482,
+          "weight_kg": null
+        },
+        {
+          "qty": 2000,
+          "eprint_hkd": 1765,
+          "sell_hkd": 1677,
+          "weight_kg": null
+        },
+        {
+          "qty": 3000,
+          "eprint_hkd": 1980,
+          "sell_hkd": 1881,
+          "weight_kg": null
+        },
+        {
+          "qty": 4000,
+          "eprint_hkd": 2035,
+          "sell_hkd": 1933,
+          "weight_kg": null
+        },
+        {
+          "qty": 5000,
+          "eprint_hkd": 2350,
+          "sell_hkd": 2232,
+          "weight_kg": null
+        },
+        {
+          "qty": 6000,
+          "eprint_hkd": 2615,
+          "sell_hkd": 2484,
+          "weight_kg": null
+        },
+        {
+          "qty": 7000,
+          "eprint_hkd": 2820,
+          "sell_hkd": 2679,
+          "weight_kg": null
+        },
+        {
+          "qty": 8000,
+          "eprint_hkd": 2965,
+          "sell_hkd": 2817,
+          "weight_kg": null
+        },
+        {
+          "qty": 9000,
+          "eprint_hkd": 3380,
+          "sell_hkd": 3211,
+          "weight_kg": null
+        },
+        {
+          "qty": 10000,
+          "eprint_hkd": 3485,
+          "sell_hkd": 3311,
+          "weight_kg": null
+        }
+      ]
+    },
+    {
+      "config": "風琴摺 210x444→A5 2條骨 書紙100g 雙面",
+      "tiers": [
+        {
+          "qty": 300,
+          "eprint_hkd": 1610,
+          "sell_hkd": 1530,
+          "weight_kg": null
+        },
+        {
+          "qty": 400,
+          "eprint_hkd": 1660,
+          "sell_hkd": 1577,
+          "weight_kg": null
+        },
+        {
+          "qty": 500,
+          "eprint_hkd": 1660,
+          "sell_hkd": 1577,
+          "weight_kg": null
+        },
+        {
+          "qty": 600,
+          "eprint_hkd": 1750,
+          "sell_hkd": 1662,
+          "weight_kg": null
+        },
+        {
+          "qty": 700,
+          "eprint_hkd": 1750,
+          "sell_hkd": 1662,
+          "weight_kg": null
+        },
+        {
+          "qty": 800,
+          "eprint_hkd": 1750,
+          "sell_hkd": 1662,
+          "weight_kg": null
+        },
+        {
+          "qty": 900,
+          "eprint_hkd": 1750,
+          "sell_hkd": 1662,
+          "weight_kg": null
+        },
+        {
+          "qty": 1000,
+          "eprint_hkd": 1750,
+          "sell_hkd": 1662,
+          "weight_kg": null
+        },
+        {
+          "qty": 2000,
+          "eprint_hkd": 2020,
+          "sell_hkd": 1919,
+          "weight_kg": null
+        },
+        {
+          "qty": 3000,
+          "eprint_hkd": 2290,
+          "sell_hkd": 2176,
+          "weight_kg": null
+        },
+        {
+          "qty": 4000,
+          "eprint_hkd": 2640,
+          "sell_hkd": 2508,
+          "weight_kg": null
+        },
+        {
+          "qty": 5000,
+          "eprint_hkd": 3000,
+          "sell_hkd": 2850,
+          "weight_kg": null
+        },
+        {
+          "qty": 6000,
+          "eprint_hkd": 3370,
+          "sell_hkd": 3202,
+          "weight_kg": null
+        },
+        {
+          "qty": 7000,
+          "eprint_hkd": 3730,
+          "sell_hkd": 3544,
+          "weight_kg": null
+        },
+        {
+          "qty": 8000,
+          "eprint_hkd": 4100,
+          "sell_hkd": 3895,
+          "weight_kg": null
+        },
+        {
+          "qty": 9000,
+          "eprint_hkd": 4460,
+          "sell_hkd": 4237,
+          "weight_kg": null
+        },
+        {
+          "qty": 10000,
+          "eprint_hkd": 4830,
+          "sell_hkd": 4588,
+          "weight_kg": null
+        }
+      ]
+    }
+  ]
+}

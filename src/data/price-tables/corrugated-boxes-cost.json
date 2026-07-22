@@ -1,0 +1,362 @@
+{
+  "sku": "corrugated-boxes",
+  "category": "packaging",
+  "name": {
+    "zh-hk": "瓦楞彩盒(专版)",
+    "en": "Corrugated Boxes (Custom)",
+    "ja": "段ボール箱(専版)"
+  },
+  "currency_anchor": "HKD",
+  "markup_rule": "cost_rmb × 1.3 → sell_hkd",
+  "src": "yate98-factory-2026-07",
+  "anchor": true,
+  "anchorType": "factory-cost",
+  "calibratedAt": "2026-07-23",
+  "note": "",
+  "configs": [
+    {
+      "config": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[A9（加强芯）黄色]-120X80X40-单面-模切[异形],覆膜[覆光膜],瓦楞纸纹[长度横纹]",
+      "tiers": [
+        {
+          "qty": 500,
+          "cost_rmb": 1011.1,
+          "sell_hkd": 1314,
+          "weight_kg": 25.72
+        },
+        {
+          "qty": 1000,
+          "cost_rmb": 1088.8,
+          "sell_hkd": 1415,
+          "weight_kg": 37.4
+        },
+        {
+          "qty": 2000,
+          "cost_rmb": 1228.0,
+          "sell_hkd": 1596,
+          "weight_kg": 65.38
+        },
+        {
+          "qty": 3000,
+          "cost_rmb": 1434.1,
+          "sell_hkd": 1864,
+          "weight_kg": 87.98
+        },
+        {
+          "qty": 5000,
+          "cost_rmb": 1861.6,
+          "sell_hkd": 2420,
+          "weight_kg": 140.89
+        }
+      ]
+    },
+    {
+      "config": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[W9（高加强芯）白色]-120X80X40-单面-模切[异形],覆膜[覆光膜],瓦楞纸纹[长度横纹]",
+      "tiers": [
+        {
+          "qty": 500,
+          "cost_rmb": 1021.2,
+          "sell_hkd": 1328,
+          "weight_kg": 25.72
+        },
+        {
+          "qty": 1000,
+          "cost_rmb": 1103.5,
+          "sell_hkd": 1435,
+          "weight_kg": 37.4
+        },
+        {
+          "qty": 2000,
+          "cost_rmb": 1245.9,
+          "sell_hkd": 1620,
+          "weight_kg": 65.38
+        },
+        {
+          "qty": 3000,
+          "cost_rmb": 1458.1,
+          "sell_hkd": 1896,
+          "weight_kg": 87.98
+        },
+        {
+          "qty": 5000,
+          "cost_rmb": 1890.2,
+          "sell_hkd": 2457,
+          "weight_kg": 140.89
+        }
+      ]
+    },
+    {
+      "config": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[W9（高加强芯）白色]-150X100X60-单面-模切[异形],覆膜[覆哑膜],瓦楞纸纹[长度横纹]",
+      "tiers": [
+        {
+          "qty": 500,
+          "cost_rmb": 1056.6,
+          "sell_hkd": 1374,
+          "weight_kg": 39.9
+        },
+        {
+          "qty": 1000,
+          "cost_rmb": 1187.6,
+          "sell_hkd": 1544,
+          "weight_kg": 60.99
+        },
+        {
+          "qty": 2000,
+          "cost_rmb": 1592.0,
+          "sell_hkd": 2070,
+          "weight_kg": 103.03
+        },
+        {
+          "qty": 3000,
+          "cost_rmb": 2052.3,
+          "sell_hkd": 2668,
+          "weight_kg": 145.21
+        },
+        {
+          "qty": 5000,
+          "cost_rmb": 3001.9,
+          "sell_hkd": 3902,
+          "weight_kg": 229.3
+        }
+      ]
+    },
+    {
+      "config": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[W9（高加强芯）白色]-150X100X60-单面-模切[异形],覆膜[覆哑膜],粘盒,瓦楞纸纹[长度横纹]",
+      "tiers": [
+        {
+          "qty": 500,
+          "cost_rmb": 1149.5,
+          "sell_hkd": 1494,
+          "weight_kg": 39.72
+        },
+        {
+          "qty": 1000,
+          "cost_rmb": 1277.5,
+          "sell_hkd": 1661,
+          "weight_kg": 57.77
+        },
+        {
+          "qty": 2000,
+          "cost_rmb": 1533.8,
+          "sell_hkd": 1994,
+          "weight_kg": 93.87
+        },
+        {
+          "qty": 3000,
+          "cost_rmb": 1871.5,
+          "sell_hkd": 2433,
+          "weight_kg": 129.98
+        },
+        {
+          "qty": 5000,
+          "cost_rmb": 2621.2,
+          "sell_hkd": 3408,
+          "weight_kg": 202.19
+        }
+      ]
+    },
+    {
+      "config": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[W9（高加强芯）白色]-200X80X150-单面-模切[异形],覆膜[覆哑膜],粘盒,瓦楞纸纹[长度竖纹]",
+      "tiers": [
+        {
+          "qty": 500,
+          "cost_rmb": 1104.0,
+          "sell_hkd": 1435,
+          "weight_kg": 40.89
+        },
+        {
+          "qty": 1000,
+          "cost_rmb": 1266.7,
+          "sell_hkd": 1647,
+          "weight_kg": 73.12
+        },
+        {
+          "qty": 2000,
+          "cost_rmb": 1721.6,
+          "sell_hkd": 2238,
+          "weight_kg": 123.53
+        },
+        {
+          "qty": 3000,
+          "cost_rmb": 2232.8,
+          "sell_hkd": 2903,
+          "weight_kg": 174.09
+        },
+        {
+          "qty": 5000,
+          "cost_rmb": 3309.6,
+          "sell_hkd": 4302,
+          "weight_kg": 274.92
+        }
+      ]
+    },
+    {
+      "config": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[B9（加强蕊）黄色]-200X150X80-单面-模切[异形],覆膜[覆哑膜],瓦楞纸纹[长度竖纹]",
+      "tiers": [
+        {
+          "qty": 500,
+          "cost_rmb": 1238.1,
+          "sell_hkd": 1610,
+          "weight_kg": 62.41
+        },
+        {
+          "qty": 1000,
+          "cost_rmb": 1491.7,
+          "sell_hkd": 1939,
+          "weight_kg": 101.42
+        },
+        {
+          "qty": 2000,
+          "cost_rmb": 2198.6,
+          "sell_hkd": 2858,
+          "weight_kg": 179.43
+        },
+        {
+          "qty": 3000,
+          "cost_rmb": 2996.0,
+          "sell_hkd": 3895,
+          "weight_kg": 257.44
+        },
+        {
+          "qty": 5000,
+          "cost_rmb": 4630.1,
+          "sell_hkd": 6019,
+          "weight_kg": 413.45
+        }
+      ]
+    },
+    {
+      "config": "瓦楞纸盒-灰卡（单面白）[250克]-飞机盒[AF（加强芯）黄色]-200X150X80-单面-模切[异形],覆膜[覆哑膜],瓦楞纸纹[长度竖纹]",
+      "tiers": [
+        {
+          "qty": 500,
+          "cost_rmb": 1271.6,
+          "sell_hkd": 1653,
+          "weight_kg": 62.41
+        },
+        {
+          "qty": 1000,
+          "cost_rmb": 1546.3,
+          "sell_hkd": 2010,
+          "weight_kg": 101.42
+        },
+        {
+          "qty": 2000,
+          "cost_rmb": 2295.0,
+          "sell_hkd": 2984,
+          "weight_kg": 179.43
+        },
+        {
+          "qty": 3000,
+          "cost_rmb": 3134.3,
+          "sell_hkd": 4075,
+          "weight_kg": 257.44
+        },
+        {
+          "qty": 5000,
+          "cost_rmb": 4852.3,
+          "sell_hkd": 6308,
+          "weight_kg": 413.45
+        }
+      ]
+    },
+    {
+      "config": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[WF（加强芯）白色]-200X80X150-单面-模切[异形],覆膜[覆哑膜],贴胶片[0.1][50x30],粘盒,瓦楞纸纹[长度竖纹]",
+      "tiers": [
+        {
+          "qty": 500,
+          "cost_rmb": 1303.0,
+          "sell_hkd": 1694,
+          "weight_kg": 40.89
+        },
+        {
+          "qty": 1000,
+          "cost_rmb": 1497.5,
+          "sell_hkd": 1947,
+          "weight_kg": 73.12
+        },
+        {
+          "qty": 2000,
+          "cost_rmb": 2017.5,
+          "sell_hkd": 2623,
+          "weight_kg": 123.53
+        },
+        {
+          "qty": 3000,
+          "cost_rmb": 2593.6,
+          "sell_hkd": 3372,
+          "weight_kg": 174.09
+        },
+        {
+          "qty": 5000,
+          "cost_rmb": 3800.4,
+          "sell_hkd": 4941,
+          "weight_kg": 274.92
+        }
+      ]
+    },
+    {
+      "config": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[AF（加强芯）黄色]-180X50X120-单面-模切[异形],覆膜[覆哑膜],粘盒,瓦楞纸纹[任意]",
+      "tiers": [
+        {
+          "qty": 500,
+          "cost_rmb": 1093.6,
+          "sell_hkd": 1422,
+          "weight_kg": 34.27
+        },
+        {
+          "qty": 1000,
+          "cost_rmb": 1203.7,
+          "sell_hkd": 1565,
+          "weight_kg": 49.85
+        },
+        {
+          "qty": 2000,
+          "cost_rmb": 1423.7,
+          "sell_hkd": 1851,
+          "weight_kg": 81.0
+        },
+        {
+          "qty": 5000,
+          "cost_rmb": 2351.1,
+          "sell_hkd": 3056,
+          "weight_kg": 183.02
+        }
+      ]
+    },
+    {
+      "config": "瓦楞纸盒-灰卡（单面白）[250克]-普通扣底盒[AF（加强芯）黄色]-300X80X200-单面-模切[异形],覆膜[覆哑膜],粘盒,瓦楞纸纹[任意]",
+      "tiers": [
+        {
+          "qty": 500,
+          "cost_rmb": 1270.5,
+          "sell_hkd": 1652,
+          "weight_kg": 62.65
+        },
+        {
+          "qty": 1000,
+          "cost_rmb": 1530.3,
+          "sell_hkd": 1989,
+          "weight_kg": 114.77
+        },
+        {
+          "qty": 2000,
+          "cost_rmb": 2162.8,
+          "sell_hkd": 2812,
+          "weight_kg": 193.89
+        },
+        {
+          "qty": 3000,
+          "cost_rmb": 2893.1,
+          "sell_hkd": 3761,
+          "weight_kg": 273.25
+        },
+        {
+          "qty": 5000,
+          "cost_rmb": 4382.1,
+          "sell_hkd": 5697,
+          "weight_kg": 431.5
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "version": "2026-07-23",
+  "currency": "HKD",
+  "rules": [
+    {
+      "id": "sf-express",
+      "name_zh": "順豐快遞",
+      "condition": "sf_fee <= 200",
+      "note": "默认渠道; sf_fee 按顺丰收方价估算, 阈值 200 HKD"
+    },
+    {
+      "id": "logistics-fold",
+      "name_zh": "物流派送(折页类)",
+      "applies_to": [
+        "special-fold-leaflets"
+      ],
+      "condition": "sf_fee > 200",
+      "fee_formula": "200",
+      "note": "xlsx 品类: 固定 200 HKD 派送费"
+    },
+    {
+      "id": "logistics-general",
+      "name_zh": "物流园+派送(其他品类)",
+      "applies_to": [
+        "gang-run-card-boxes",
+        "corrugated-boxes",
+        "digital-stickers",
+        "white-card-bags",
+        "custom-flyers"
+      ],
+      "condition": "sf_fee > 200",
+      "fee_formula": "0.7 * weight_kg + 200",
+      "note": "0.7/kg 到香港物流园 + 200 派送费 (user 2026-07-23 拍板; 0.7 按 RMB 成本 HKD 计价, 待确认汇率处理)"
+    }
+  ],
+  "sf_rate_reference": {
+    "first_kg": 30,
+    "per_kg_after": 8,
+    "note": "估算用: 200 阈值 ≈ 22-25kg; 实际以顺丰当日报价为准, 报价台显示\"运费另计/到付\"兜底"
+  }
+}
