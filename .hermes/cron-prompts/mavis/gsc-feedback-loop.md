@@ -120,19 +120,48 @@ z-printpro.com → zprintpro.com 301 迁移当前状态: **✅ DEPLOYED (2026-07
 - **GSC Change of Address 已注册** (2026-07-21, z-printpro.com → zprintpro.com)
 - 域名 z-printpro.com 已续费 1 年; 老 SaaS 站 2026-10-12 到期, 迁移稳定 8 周后再关
 - Runbook: `analysis-2026-07-17\301-migration-runbook.md` (含全部 CF ID)
+- **K3 官方 5 条清单内样本 (2026-07-22 21:27 闭环, 8/10 PASS)**:
+  - 包装盒 `/products/packaging-box-printing/` → `/zh-hk/category/packaging/` ✅
+  - 防水贴纸 `/products/label-sticker-printing/waterproof-round-sticker-printing-outdoor-vehicle.html` → `/zh-hk/product/waterproof-stickers/` ✅
+  - A5 骑马钉小册子 `/products/enterprise-brochure-printing/a5-saddle-stitched-booklet-printing.html` → `/zh-hk/product/saddle-stitch-booklets/` ✅
+  - 婚帖红包 `/products/red-packet-wedding-invitation-printing/wedding-invitation-printing-foil-ribbon-envelope.html` → `/zh-hk/category/red-packets/` ✅
+  - 急件 banner `/products/large-format-printing/same-day-banner-printing-6x3ft-waterproof-hk.html` → `/zh-hk/category/banners/` ✅
 
 **本 cron §3.2 处理 (DEPLOYED, 每次必跑 5 项监控, 跟 context.md §14.2 同步)**:
   1. GSC 覆盖率 → 抓取错误 (z-printpro.com) < 5 = 健康
-  2. sitemap 残留老 URL 数 = 0 = 健康
+  2. **sitemap 残留老 URL 数 = 0 = 健康** (URL: `https://zprintpro.com/sitemap.xml`, **不是** `sitemap-0.xml` — K3 21:27 实测 sitemap-0.xml 返 500, robots.txt 也只列 sitemap.xml)
   3. 索引转移率 (老 URL 索引数 / 7 天前基线) ≥ 50% = 健康 (第 4 周决策点 8/12)
   4. 权重交接 (老 URL 平均排名 → 新 URL 平均排名) 差异 < 5 = 健康
   5. **抽样 ≥10 条旧 URL curl 确认 301 → 新站对应页 200** (清单内 5 条 + 清单外 5 条, AGENTS.md §13.1 已加)
 
-**抽样规则 (2026-07-22 K3 纠偏, 149 条路径级规则已生效)**:
-- **清单内 5 条** (e.g. 海报 → 急件, 论文 → educational, 文具 → 急件) → 5/5 PASS 301 + 对应页 200 是健康
-- **清单外 5 条** → 走 catch-all 兜底到 `zprintpro.com/zh-hk/` 是设计行为不是 bug, 不算异常, 不升级 user
+**抽样规则 (2026-07-22 K3 v5.1 纠偏, 149 条路径级规则已生效, K3 官方 10 条样本)**:
+- **清单内 5 条** (K3 官方 2026-07-22 21:27 拍板, 不同品类覆盖 packaging / sticker / brochure / red-packet / banner) → 5/5 PASS 301 + 精确等于目标是健康
+  - **注**: K3 user 7/22 21:27 纠错 — SSoT 之前写的"文具 → 急件"是 user 随口举例, **不是 149 条 CSV 真实条目**, 以 149 条 CSV 为准
+  - **K3 官方 5 条清单内 URL (cron 跑时必须用这 5 条, 不能用其他)**:
+    1. `https://www.z-printpro.com/products/packaging-box-printing/` → `https://zprintpro.com/zh-hk/category/packaging/`
+    2. `https://www.z-printpro.com/products/label-sticker-printing/waterproof-round-sticker-printing-outdoor-vehicle.html` → `https://zprintpro.com/zh-hk/product/waterproof-stickers/`
+    3. `https://www.z-printpro.com/products/enterprise-brochure-printing/a5-saddle-stitched-booklet-printing.html` → `https://zprintpro.com/zh-hk/product/saddle-stitch-booklets/`
+    4. `https://www.z-printpro.com/products/red-packet-wedding-invitation-printing/wedding-invitation-printing-foil-ribbon-envelope.html` → `https://zprintpro.com/zh-hk/category/red-packets/`
+    5. `https://www.z-printpro.com/products/large-format-printing/same-day-banner-printing-6x3ft-waterproof-hk.html` → `https://zprintpro.com/zh-hk/category/banners/`
+- **清单外 5 条** (K3 官方 2026-07-22 21:27 拍板) → 走 catch-all 兜底到 `zprintpro.com/zh-hk/` 是设计行为不是 bug, 不算异常, 不升级 user
+  - **K3 官方 5 条清单外 URL (cron 跑时必须用这 5 条)**:
+    1. `https://z-printpro.com/zh-hk/product/stickers/` → `https://zprintpro.com/zh-hk/` (新站路径拼老域, 不在清单)
+    2. `https://z-printpro.com/en/product/flyers/` → `https://zprintpro.com/zh-hk/` (en 路径老域, 不在清单)
+    3. `https://www.z-printpro.com/products/business-card-printing/` → `https://zprintpro.com/zh-hk/` (名片, 兜底正确, K3 21:27 拍板; **注**: AGENTS.md §11 名片禁区, 但 301 跳走是设计行为, 业务-card 页面本身不该在站内存在, 兜底跳 zh-hk/ 是合理兜底)
+    4. `https://www.z-printpro.com/about-us/` → `https://zprintpro.com/zh-hk/` (假设性页面, 测 catch-all 兜底)
+    5. `https://z-printpro.com/some-random-page-12345` → `https://zprintpro.com/zh-hk/` (完全随机, 测 catch-all 兜底)
 - **清单内任一 FAIL** → 立即升级 user, 这是真异常, 排查 149 条规则覆盖度
+- **清单外任一 200/404 偏离 catch-all** → 标"真异常" (不是设计行为), 升级 user
+  - 2026-07-22 21:27 实测: 5/5 清单外 2 FAIL (#8 `/products/business-card-printing/` 200 直出 nginx, 跟 AGENTS.md §11 名片禁区矛盾; #9 `/about-us/` 404 没兜底) — 升级 user 排查
 - **不要提议改 CF Bulk Redirect 规则** (149 条路径级精准承接已 OK, 通配规则会破坏承接)
+
+**首轮 P0-2 baseline 锚点 (2026-07-22 21:27, K3 拍板)**:
+- 5 项监控 (本 cron §3.2 段) 跑出: 项 1 0/5 5xx ✅ + 项 2 sitemap 576 URLs 0 残留 ✅ + 项 3-4 pending (无 7 天 baseline, 7/29 cron 跑) + 项 5 清单内 5/5 PASS + 清单外 3/5 = **8/10 PASS, 2 真异常 (#8 #9 待 user 拍板)**
+- 2 真异常 (K3 v5.1 抽样规则: 清单外偏离 catch-all = 真异常升级 user):
+  - #8 `/products/business-card-printing/` 200 直出 — AGENTS.md §11 名片禁区, catch-all 兜底失效, 修法: (A) 加 Bulk Redirect 规则 → zh-hk/ (B) 改 CF catch-all 兜底规则 (C) 接受 8/10 作为基线
+  - #9 `/about-us/` 404 — catch-all 兜底失效, 修法同 #8
+- **K3 user 待拍板**: (A) 加 Bulk Redirect 规则 (B) 改 catch-all 兜底 (C) 接受 8/10 (基线 ≠ 闭环, 但 P0-2 健康度先记录)
+- **后续每周对比锚点**: 7/29 cron 跑时跟 7/22 baseline 对比; 第 4 周 (8/12) 决策点: 索引转移率 ≥ 50%
 
 【Q-005 daily cron 7/23 必写建议 (2026-07-22 K3 拍板)】
 

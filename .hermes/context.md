@@ -393,6 +393,46 @@ cron / 后台 agent / 跨进程 worker 自报 "完成 / Shipped / Done" **永远
   - **fallback 仍保留**: 本地 proxy 偶尔挂 → 切 fallback (gsc_data.csv 6/17 快照 + overlap-keywords.csv 7/17); 连续 2 次失败 → 升级 user 报 proxy 状态
   - **不再需要云端 VPN**: 本地 proxy 已够, 配 VPN 是过度方案
 
+### 14.1.1 7/22 首轮 301 监控基线 (K3 官方 10 条样本, 8/10 PASS)
+
+> **K3 user 7/22 21:27 拍板"按 K3 指令执行", 提供 10 条官方样本 (5 清单内 + 5 清单外) 闭环验证 149 条 Bulk Redirect CSV**
+
+| # | 类型 | 测试 | URL | Location | 期望 | 结果 |
+|---|---|---|---|---|---|---|
+| 1 | 清单内 | 包装盒 | `https://www.z-printpro.com/products/packaging-box-printing/` | `/zh-hk/category/packaging/` | 同 | ✅ PASS |
+| 2 | 清单内 | 防水贴纸 | `.../label-sticker-printing/waterproof-round-sticker-printing-outdoor-vehicle.html` | `/zh-hk/product/waterproof-stickers/` | 同 | ✅ PASS |
+| 3 | 清单内 | A5 骑马钉 | `.../enterprise-brochure-printing/a5-saddle-stitched-booklet-printing.html` | `/zh-hk/product/saddle-stitch-booklets/` | 同 | ✅ PASS |
+| 4 | 清单内 | 婚帖红包 | `.../red-packet-wedding-invitation-printing/wedding-invitation-printing-foil-ribbon-envelope.html` | `/zh-hk/category/red-packets/` | 同 | ✅ PASS |
+| 5 | 清单内 | 急件 banner | `.../large-format-printing/same-day-banner-printing-6x3ft-waterproof-hk.html` | `/zh-hk/category/banners/` | 同 | ✅ PASS |
+| 6 | 清单外 | 新域路径 | `https://z-printpro.com/zh-hk/product/stickers/` | `/zh-hk/` | 同 | ✅ 设计 (catch-all) |
+| 7 | 清单外 | en 老域 | `https://z-printpro.com/en/product/flyers/` | `/zh-hk/` | 同 | ✅ 设计 (catch-all) |
+| 8 | 清单外 | business-card (名片) | `https://www.z-printpro.com/products/business-card-printing/` | **(none, 200 直出)** | `/zh-hk/` | ❌ **真异常**: 名片 AGENTS.md §11 禁区, 不应该有 200 直出 |
+| 9 | 清单外 | about-us 假设 | `https://www.z-printpro.com/about-us/` | **(none, 404)** | `/zh-hk/` | ❌ **真异常**: 没兜底, 走 404 |
+| 10 | 清单外 | 随机页面 | `https://z-printpro.com/some-random-page-12345` | `/zh-hk/` | 同 | ✅ 设计 (catch-all) |
+
+**基线 (2026-07-22 21:27)**:
+- 清单内: 5/5 PASS ✅ (149 条路径级规则精准承接)
+- 清单外: 3/5 PASS (catch-all 设计); 2/5 FAIL ❌ (#8 名片 200 / #9 about-us 404 偏离 catch-all)
+- **总 8/10 PASS**: 7/29 15:00 cron 跑第 2 轮对照基线, 看 #8 #9 是否修复
+
+**K3 user 纠错 (2026-07-22 21:27)**: 没有"文具类 → 急件"这条映射 (SSoT L122 写错, 我之前记串了); 上面 5 条清单内样本就是权威来源, 以 149 条 CSV 为准
+
+**runbook 追加**: `analysis-2026-07-17\301-migration-runbook.md` 追加 7/22 基线段 (K3 user 7/22 21:27 拍板, 每周对比锚点)
+
+### 14.1 启动状态 (实测 2026-07-22)
+
+- **NS 改动**: ✅ 已完成 (阿里云 → Cloudflare NS, amalia.ns.cloudflare.com / kevin.ns.cloudflare.com)
+- **GSC API 全链路验证**: ✅ 实测通过
+  - 服务账号授权: `sc-domain:zprintpro.com` + `sc-domain:z-printpro.com` 都是 `siteFullUser`
+  - 根因修正: 脚本用 URL-prefix 格式 (`https://zprintpro.com/`), 资源是域名资源, 已改为 `sc-domain:zprintpro.com` (这就是为什么授权后还 403)
+  - 实测全量拉取: **852 行 / 90 天 / 22 点击 / 9,625 展示**, 已写入 `.hermes/gsc_data.csv` (本地 commit 7924767)
+- **M3 v6 智印港双品牌 (commit 5285eff 已落)**: 标题换智印港跑完后, 下次 GSC 拉数 (明早 daily cron 触发) 就能看到「智印港」CTR 变化曲线
+  - **新鲜数据印证双品牌紧迫性**: 「智印港」仍是查询榜第 1 (32 展示 / CTR 9.4%)
+- **GSC API proxy 方案 (2026-07-22 K3 拍板, commit b8bda22 落地)**: ✅ **本地 proxy 127.0.0.1:7892 通了 GSC API**
+  - **根因不是 GFW 假象**, 而是 (a) **URL-prefix vs domain property resource 类型错** — 旧脚本用 `https://zprintpro.com/` URL-prefix 格式, 实际资源是 `sc-domain:zprintpro.com` 域名资源 (授权后还 403 就是这个原因); (b) **需要本地 proxy 绕 GFW** 屏蔽 oauth2.googleapis.com endpoint
+  - **fallback 仍保留**: 本地 proxy 偶尔挂 → 切 fallback (gsc_data.csv 6/17 快照 + overlap-keywords.csv 7/17); 连续 2 次失败 → 升级 user 报 proxy 状态
+  - **不再需要云端 VPN**: 本地 proxy 已够, 配 VPN 是过度方案
+
 ### 14.2 5 项 301 监控 (§3.2 段激活, 替代 PENDING 跳过)
 
 > **触发**: `zprintpro-gsc-feedback-loop` v4 cron 每周三 15:00 Asia/Shanghai 自动跑, 写入日报 §3.2 段
