@@ -1,0 +1,2547 @@
+{
+  "snapshot_date": "2026-07-22",
+  "gsc_data_csv_mtime": "2026-06-17",
+  "overlap_keywords_csv_mtime": "2026-07-17",
+  "data_source_note": "GSC API 重试 3 次超时 (GFW 屏蔽 oauth2.googleapis.com), 用 6/17 快照 + 7/17 overlap-keywords 作为 fallback",
+  "gsc_5class": {
+    "strong_signal_+2": 1,
+    "orphan_+1": 11,
+    "high_potential_+1": 11,
+    "orphan_20-50": 7,
+    "normal": 304,
+    "zero_imps": 0
+  },
+  "residual_141_count": 28,
+  "residual_141_top20": [
+    {
+      "q": "食品包裝印刷",
+      "imps": 108,
+      "clicks": 0,
+      "rank": 25.45,
+      "ctr": "0%",
+      "imps_n": "303",
+      "pos_n": "38.59"
+    },
+    {
+      "q": "海報與印刷",
+      "imps": 93,
+      "clicks": 0,
+      "rank": 57.32,
+      "ctr": "0%",
+      "imps_n": "235",
+      "pos_n": "54.26"
+    },
+    {
+      "q": "紙袋印刷",
+      "imps": 92,
+      "clicks": 0,
+      "rank": 17.8,
+      "ctr": "0%",
+      "imps_n": "261",
+      "pos_n": "19.68"
+    },
+    {
+      "q": "宣傳單張",
+      "imps": 84,
+      "clicks": 0,
+      "rank": 42.9,
+      "ctr": "0%",
+      "imps_n": "299",
+      "pos_n": "40.29"
+    },
+    {
+      "q": "紙袋訂製",
+      "imps": 81,
+      "clicks": 0,
+      "rank": 60.32,
+      "ctr": "0%",
+      "imps_n": "223",
+      "pos_n": "54.49"
+    },
+    {
+      "q": "宣傳單張印刷",
+      "imps": 73,
+      "clicks": 0,
+      "rank": 40.42,
+      "ctr": "0%",
+      "imps_n": "291",
+      "pos_n": "38.71"
+    },
+    {
+      "q": "包裝盒訂製",
+      "imps": 69,
+      "clicks": 0,
+      "rank": 55.04,
+      "ctr": "0%",
+      "imps_n": "185",
+      "pos_n": "43.54"
+    },
+    {
+      "q": "海報印刷",
+      "imps": 65,
+      "clicks": 0,
+      "rank": 38.31,
+      "ctr": "0%",
+      "imps_n": "261",
+      "pos_n": "31.43"
+    },
+    {
+      "q": "包裝盒印刷",
+      "imps": 63,
+      "clicks": 0,
+      "rank": 55.52,
+      "ctr": "0%",
+      "imps_n": "157",
+      "pos_n": "50.62"
+    },
+    {
+      "q": "紙盒訂製",
+      "imps": 59,
+      "clicks": 0,
+      "rank": 66.58,
+      "ctr": "0%",
+      "imps_n": "122",
+      "pos_n": "58.65"
+    },
+    {
+      "q": "印海報",
+      "imps": 58,
+      "clicks": 0,
+      "rank": 38.43,
+      "ctr": "0%",
+      "imps_n": "244",
+      "pos_n": "36.16"
+    },
+    {
+      "q": "貼紙印刷",
+      "imps": 51,
+      "clicks": 0,
+      "rank": 52.63,
+      "ctr": "0%",
+      "imps_n": "254",
+      "pos_n": "43.13"
+    },
+    {
+      "q": "食品包裝訂製",
+      "imps": 48,
+      "clicks": 0,
+      "rank": 22.88,
+      "ctr": "0%",
+      "imps_n": "152",
+      "pos_n": "21.59"
+    },
+    {
+      "q": "印刷紙袋",
+      "imps": 44,
+      "clicks": 0,
+      "rank": 26.73,
+      "ctr": "0%",
+      "imps_n": "125",
+      "pos_n": "29.12"
+    },
+    {
+      "q": "印紙袋",
+      "imps": 44,
+      "clicks": 0,
+      "rank": 26.0,
+      "ctr": "0%",
+      "imps_n": "116",
+      "pos_n": "27.08"
+    },
+    {
+      "q": "紙袋印製",
+      "imps": 44,
+      "clicks": 0,
+      "rank": 27.86,
+      "ctr": "0%",
+      "imps_n": "95",
+      "pos_n": "32.43"
+    },
+    {
+      "q": "利是封印刷",
+      "imps": 43,
+      "clicks": 0,
+      "rank": 34.7,
+      "ctr": "0%",
+      "imps_n": "122",
+      "pos_n": "31.94"
+    },
+    {
+      "q": "訂做紙袋",
+      "imps": 42,
+      "clicks": 0,
+      "rank": 41.29,
+      "ctr": "0%",
+      "imps_n": "136",
+      "pos_n": "41.92"
+    },
+    {
+      "q": "紙袋訂造",
+      "imps": 40,
+      "clicks": 0,
+      "rank": 33.42,
+      "ctr": "0%",
+      "imps_n": "104",
+      "pos_n": "36.6"
+    },
+    {
+      "q": "貼紙訂製",
+      "imps": 39,
+      "clicks": 0,
+      "rank": 64.38,
+      "ctr": "0%",
+      "imps_n": "110",
+      "pos_n": "57.47"
+    }
+  ],
+  "all_groups": {
+    "normal": [
+      {
+        "q": "蛍光ステッカー",
+        "imps": "3",
+        "clicks": "1",
+        "rank": "40",
+        "ctr": "33.33%"
+      },
+      {
+        "q": "paper bag printing",
+        "imps": "1",
+        "clicks": "1",
+        "rank": "4",
+        "ctr": "100%"
+      },
+      {
+        "q": "sticker printing hong kong",
+        "imps": "1",
+        "clicks": "1",
+        "rank": "8",
+        "ctr": "100%"
+      },
+      {
+        "q": "a2 size printing near me",
+        "imps": "1",
+        "clicks": "1",
+        "rank": "12",
+        "ctr": "100%"
+      },
+      {
+        "q": "可移貼紙",
+        "imps": "18",
+        "clicks": "0",
+        "rank": "16.61",
+        "ctr": "0%"
+      },
+      {
+        "q": "印刷公司",
+        "imps": "18",
+        "clicks": "0",
+        "rank": "40.72",
+        "ctr": "0%"
+      },
+      {
+        "q": "禮物盒訂製",
+        "imps": "17",
+        "clicks": "0",
+        "rank": "39.71",
+        "ctr": "0%"
+      },
+      {
+        "q": "膠裝書",
+        "imps": "17",
+        "clicks": "0",
+        "rank": "46.06",
+        "ctr": "0%"
+      },
+      {
+        "q": "印海報一張",
+        "imps": "15",
+        "clicks": "0",
+        "rank": "44.13",
+        "ctr": "0%"
+      },
+      {
+        "q": "禮盒訂做",
+        "imps": "15",
+        "clicks": "0",
+        "rank": "71.07",
+        "ctr": "0%"
+      },
+      {
+        "q": "poster print a2",
+        "imps": "14",
+        "clicks": "0",
+        "rank": "43.43",
+        "ctr": "0%"
+      },
+      {
+        "q": "紙盒訂造",
+        "imps": "14",
+        "clicks": "0",
+        "rank": "66.07",
+        "ctr": "0%"
+      },
+      {
+        "q": "袋印刷",
+        "imps": "13",
+        "clicks": "0",
+        "rank": "62.15",
+        "ctr": "0%"
+      },
+      {
+        "q": "學校印刷",
+        "imps": "12",
+        "clicks": "0",
+        "rank": "28.42",
+        "ctr": "0%"
+      },
+      {
+        "q": "印膠袋",
+        "imps": "12",
+        "clicks": "0",
+        "rank": "47.83",
+        "ctr": "0%"
+      },
+      {
+        "q": "紙袋",
+        "imps": "12",
+        "clicks": "0",
+        "rank": "48.83",
+        "ctr": "0%"
+      },
+      {
+        "q": "包裝印刷",
+        "imps": "12",
+        "clicks": "0",
+        "rank": "66.33",
+        "ctr": "0%"
+      },
+      {
+        "q": "即日急件",
+        "imps": "11",
+        "clicks": "0",
+        "rank": "18.82",
+        "ctr": "0%"
+      },
+      {
+        "q": "a2 海報 印刷",
+        "imps": "10",
+        "clicks": "0",
+        "rank": "6.6",
+        "ctr": "0%"
+      },
+      {
+        "q": "膠裝書印刷",
+        "imps": "10",
+        "clicks": "0",
+        "rank": "40.5",
+        "ctr": "0%"
+      },
+      {
+        "q": "poster printing",
+        "imps": "10",
+        "clicks": "0",
+        "rank": "60",
+        "ctr": "0%"
+      },
+      {
+        "q": "利是封訂製",
+        "imps": "9",
+        "clicks": "0",
+        "rank": "51.67",
+        "ctr": "0%"
+      },
+      {
+        "q": "防水加工 パッケージ 印刷",
+        "imps": "8",
+        "clicks": "0",
+        "rank": "14.25",
+        "ctr": "0%"
+      },
+      {
+        "q": "防水貼紙",
+        "imps": "8",
+        "clicks": "0",
+        "rank": "17.88",
+        "ctr": "0%"
+      },
+      {
+        "q": "公司信封",
+        "imps": "7",
+        "clicks": "0",
+        "rank": "1.29",
+        "ctr": "0%"
+      },
+      {
+        "q": "site:pages.dev \"景品\" \"無料\" -site:amazon.co.jp -site:amazon.com \n-site:amazonaws.com -site:aboutamazon.jp -site:primevideo.com",
+        "imps": "7",
+        "clicks": "0",
+        "rank": "8.43",
+        "ctr": "0%"
+      },
+      {
+        "q": "防水加工 パッケージ印刷",
+        "imps": "7",
+        "clicks": "0",
+        "rank": "16.43",
+        "ctr": "0%"
+      },
+      {
+        "q": "訂製利是封",
+        "imps": "7",
+        "clicks": "0",
+        "rank": "47.57",
+        "ctr": "0%"
+      },
+      {
+        "q": "sticker material",
+        "imps": "7",
+        "clicks": "0",
+        "rank": "78.14",
+        "ctr": "0%"
+      },
+      {
+        "q": "poster printing hong kong",
+        "imps": "6",
+        "clicks": "0",
+        "rank": "28",
+        "ctr": "0%"
+      },
+      {
+        "q": "校 簿 印刷",
+        "imps": "6",
+        "clicks": "0",
+        "rank": "29.83",
+        "ctr": "0%"
+      },
+      {
+        "q": "海報過膠",
+        "imps": "6",
+        "clicks": "0",
+        "rank": "37.5",
+        "ctr": "0%"
+      },
+      {
+        "q": "海報列印",
+        "imps": "6",
+        "clicks": "0",
+        "rank": "61.5",
+        "ctr": "0%"
+      },
+      {
+        "q": "\"common paper\"",
+        "imps": "6",
+        "clicks": "0",
+        "rank": "75.5",
+        "ctr": "0%"
+      },
+      {
+        "q": "kraft paper bags",
+        "imps": "6",
+        "clicks": "0",
+        "rank": "84.67",
+        "ctr": "0%"
+      },
+      {
+        "q": "作業簿",
+        "imps": "5",
+        "clicks": "0",
+        "rank": "3",
+        "ctr": "0%"
+      },
+      {
+        "q": "catalog printing",
+        "imps": "5",
+        "clicks": "0",
+        "rank": "15.6",
+        "ctr": "0%"
+      },
+      {
+        "q": "戶外海報",
+        "imps": "5",
+        "clicks": "0",
+        "rank": "16.2",
+        "ctr": "0%"
+      },
+      {
+        "q": "香港印刷公司",
+        "imps": "5",
+        "clicks": "0",
+        "rank": "22.8",
+        "ctr": "0%"
+      },
+      {
+        "q": "膠片餐牌",
+        "imps": "5",
+        "clicks": "0",
+        "rank": "24",
+        "ctr": "0%"
+      },
+      {
+        "q": "a2 透明 海报",
+        "imps": "5",
+        "clicks": "0",
+        "rank": "28.6",
+        "ctr": "0%"
+      },
+      {
+        "q": "印貼紙",
+        "imps": "5",
+        "clicks": "0",
+        "rank": "45.4",
+        "ctr": "0%"
+      },
+      {
+        "q": "訂 做 紙袋",
+        "imps": "5",
+        "clicks": "0",
+        "rank": "68",
+        "ctr": "0%"
+      },
+      {
+        "q": "\"paper high\"",
+        "imps": "5",
+        "clicks": "0",
+        "rank": "86.8",
+        "ctr": "0%"
+      },
+      {
+        "q": "印刷 rgb cmyk",
+        "imps": "5",
+        "clicks": "0",
+        "rank": "94.6",
+        "ctr": "0%"
+      },
+      {
+        "q": "printpro packaging",
+        "imps": "4",
+        "clicks": "0",
+        "rank": "4",
+        "ctr": "0%"
+      },
+      {
+        "q": "paper bag gsm",
+        "imps": "4",
+        "clicks": "0",
+        "rank": "9.75",
+        "ctr": "0%"
+      },
+      {
+        "q": "防水貼紙印刷",
+        "imps": "4",
+        "clicks": "0",
+        "rank": "11.25",
+        "ctr": "0%"
+      },
+      {
+        "q": "訂 做 利 是 封",
+        "imps": "4",
+        "clicks": "0",
+        "rank": "33.5",
+        "ctr": "0%"
+      },
+      {
+        "q": "學校 印刷",
+        "imps": "4",
+        "clicks": "0",
+        "rank": "34",
+        "ctr": "0%"
+      },
+      {
+        "q": "包裝食品 裡印",
+        "imps": "4",
+        "clicks": "0",
+        "rank": "36",
+        "ctr": "0%"
+      },
+      {
+        "q": "標籤印刷",
+        "imps": "4",
+        "clicks": "0",
+        "rank": "43.25",
+        "ctr": "0%"
+      },
+      {
+        "q": "zprint",
+        "imps": "4",
+        "clicks": "0",
+        "rank": "50",
+        "ctr": "0%"
+      },
+      {
+        "q": "貼紙",
+        "imps": "4",
+        "clicks": "0",
+        "rank": "52",
+        "ctr": "0%"
+      },
+      {
+        "q": "ポスター用紙 サイズ",
+        "imps": "4",
+        "clicks": "0",
+        "rank": "60.25",
+        "ctr": "0%"
+      },
+      {
+        "q": "チラシ サイズ",
+        "imps": "4",
+        "clicks": "0",
+        "rank": "75.25",
+        "ctr": "0%"
+      },
+      {
+        "q": "印刷 rgb",
+        "imps": "4",
+        "clicks": "0",
+        "rank": "81.25",
+        "ctr": "0%"
+      },
+      {
+        "q": "kraft paper bag",
+        "imps": "4",
+        "clicks": "0",
+        "rank": "87",
+        "ctr": "0%"
+      },
+      {
+        "q": "彩色信封",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "1",
+        "ctr": "0%"
+      },
+      {
+        "q": "\"mailer\" \"packaging\" -site:reddit.com -site:twitter.com -site:x.com \n-site:wykop.pl -site:tripadvisor.com -site:youtube.com -site:yelp.com \n-site:booking.com -site:facebook.com -site:instagram.com -site:tiktok.com",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "1.33",
+        "ctr": "0%"
+      },
+      {
+        "q": "print catalog hong kong",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "2.67",
+        "ctr": "0%"
+      },
+      {
+        "q": "水果貼紙",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "10",
+        "ctr": "0%"
+      },
+      {
+        "q": "custom sticker printing hong kong",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "16.33",
+        "ctr": "0%"
+      },
+      {
+        "q": "即日印刷",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "20.67",
+        "ctr": "0%"
+      },
+      {
+        "q": "利 是 封 印刷",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "28.67",
+        "ctr": "0%"
+      },
+      {
+        "q": "型抜きステッカー",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "31.33",
+        "ctr": "0%"
+      },
+      {
+        "q": "紙袋 材質",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "31.33",
+        "ctr": "0%"
+      },
+      {
+        "q": "印書",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "39",
+        "ctr": "0%"
+      },
+      {
+        "q": "cmyk",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "40.33",
+        "ctr": "0%"
+      },
+      {
+        "q": "cmyk 印刷",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "43.33",
+        "ctr": "0%"
+      },
+      {
+        "q": "標籤 印刷",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "43.33",
+        "ctr": "0%"
+      },
+      {
+        "q": "香港 印刷 公司",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "44",
+        "ctr": "0%"
+      },
+      {
+        "q": "cmyk印刷",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "46",
+        "ctr": "0%"
+      },
+      {
+        "q": "die cut sticker",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "49.33",
+        "ctr": "0%"
+      },
+      {
+        "q": "包裝 盒 印刷",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "52",
+        "ctr": "0%"
+      },
+      {
+        "q": "envelope printing price quote china",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "54",
+        "ctr": "0%"
+      },
+      {
+        "q": "印刷 公司 香港",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "55.33",
+        "ctr": "0%"
+      },
+      {
+        "q": "a4 leaflet size",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "56",
+        "ctr": "0%"
+      },
+      {
+        "q": "紙盒印製",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "68",
+        "ctr": "0%"
+      },
+      {
+        "q": "貼紙製作",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "72",
+        "ctr": "0%"
+      },
+      {
+        "q": "ポスターサイズとは",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "74",
+        "ctr": "0%"
+      },
+      {
+        "q": "leaflet sizes guide",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "75.67",
+        "ctr": "0%"
+      },
+      {
+        "q": "flyer sizes",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "76",
+        "ctr": "0%"
+      },
+      {
+        "q": "leaflet size",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "76",
+        "ctr": "0%"
+      },
+      {
+        "q": "size of leaflet",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "76.33",
+        "ctr": "0%"
+      },
+      {
+        "q": "poster print sizes",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "76.67",
+        "ctr": "0%"
+      },
+      {
+        "q": "leaflet sizes",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "79",
+        "ctr": "0%"
+      },
+      {
+        "q": "standard leaflet size",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "80.67",
+        "ctr": "0%"
+      },
+      {
+        "q": "paper bag sizes",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "81",
+        "ctr": "0%"
+      },
+      {
+        "q": "ポスターサイズ 比較",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "81.67",
+        "ctr": "0%"
+      },
+      {
+        "q": "types of stickers",
+        "imps": "3",
+        "clicks": "0",
+        "rank": "92",
+        "ctr": "0%"
+      },
+      {
+        "q": "factory wholesale double sided envelope full color",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "6.5",
+        "ctr": "0%"
+      },
+      {
+        "q": "kraft paper box",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "7",
+        "ctr": "0%"
+      },
+      {
+        "q": "印刷 厚紙",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "7",
+        "ctr": "0%"
+      },
+      {
+        "q": "酒水牌",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "8",
+        "ctr": "0%"
+      },
+      {
+        "q": "飛機盒",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "8",
+        "ctr": "0%"
+      },
+      {
+        "q": "a4 flyers",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "8.5",
+        "ctr": "0%"
+      },
+      {
+        "q": "double sided envelope full color wholesale factory",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "8.5",
+        "ctr": "0%"
+      },
+      {
+        "q": "防水 pvc 貼紙",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "9.5",
+        "ctr": "0%"
+      },
+      {
+        "q": "a2 印刷 即日",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "11",
+        "ctr": "0%"
+      },
+      {
+        "q": "color palette on wrapper meaning",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "15.5",
+        "ctr": "0%"
+      },
+      {
+        "q": "\"st-001\" -\"scitech academy\" -\"scitech europa\" -\"scitech student\" -\"scitech \nfest\" -\"scitech strategies\" -\"scitech science technology\" -\"scitech \nfestival\" -\"scitech health\" -\"scitech pty ltd\" -\"scitech ai\" -\"scitech \ndigital innovation hub\" -\"scitech services, inc.\" -\"scitech decision\" \n-\"scitech forum\" -\"scitech entertainment\" -\"bruntwood scitech\" -\"scitech \ncomic\" -\"scitech pac\" -\"scitech adhesive systems\" -\"scitech institute\" \n-\"scitech construction\" -\"scitech datathon\" -\"scitech pto\" -\"scitech news\" \n-\"scitech &amp; technology\" -\"scitech wellness centre\" -\"scitech ocean\" \n-\"scitech canada science\" -\"scitech hotel\" -\"scitech placements\" -\"scitech \ndaily\" -\"scitech clinic\" -\"scitech space technology\" -\"scitech premium \noutlet\" -\"scitech scity llc\" -\"scitech co., ltd.\" -\"scitech tasimacilik \nticaret limited\" -\"scitech diol\" -\"scitech collection premium\" -\"scitech \nnauka tehnologija auto\" -\"fedora scitech\" -\"global scitech youth forum\" \n-\"ameuro scitech development union\" -\"scitech premium\" -\"sci-tech\" \n-\"scitech library\" -\"scitech podcasts\" -\"scitech international express co.\" \n-\"scitech central inc.\" -\"scitechcentral.com\" -\"scitech radar and defense\" \n-\"scitech interactives\" -\"scitechnaturefictioncartoons\" -\"scitech now\" \n-\"scitech publishing new waves\" -\"yorkshiretimes.co.uk\" -\"scitech patent \nart\" -\"scitech co. ltd\" -\"science and technology campus corporation\" \n-\"scitech produtos medicos sa\" -\"scitech.co.kr\" -\"scitech india\"",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "26.5",
+        "ctr": "0%"
+      },
+      {
+        "q": "單張印刷",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "28",
+        "ctr": "0%"
+      },
+      {
+        "q": "outdoor poster",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "30",
+        "ctr": "0%"
+      },
+      {
+        "q": "蛍光 ステッカー",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "32",
+        "ctr": "0%"
+      },
+      {
+        "q": "可移貼",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "33",
+        "ctr": "0%"
+      },
+      {
+        "q": "海報價格",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "37",
+        "ctr": "0%"
+      },
+      {
+        "q": "校簿印刷",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "39",
+        "ctr": "0%"
+      },
+      {
+        "q": "a1 poster printing prices",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "40.5",
+        "ctr": "0%"
+      },
+      {
+        "q": "印 貼紙",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "43",
+        "ctr": "0%"
+      },
+      {
+        "q": "包裝 印刷",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "45",
+        "ctr": "0%"
+      },
+      {
+        "q": "公司 信封",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "46.5",
+        "ctr": "0%"
+      },
+      {
+        "q": "香港 印刷",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "47.5",
+        "ctr": "0%"
+      },
+      {
+        "q": "印紙 盒",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "48",
+        "ctr": "0%"
+      },
+      {
+        "q": "燙金 印刷",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "49",
+        "ctr": "0%"
+      },
+      {
+        "q": "膠卡餐牌",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "49.5",
+        "ctr": "0%"
+      },
+      {
+        "q": "flyer size paper",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "50.5",
+        "ctr": "0%"
+      },
+      {
+        "q": "a1 poster print",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "53",
+        "ctr": "0%"
+      },
+      {
+        "q": "印刷 香港",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "58",
+        "ctr": "0%"
+      },
+      {
+        "q": "poster print",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "59",
+        "ctr": "0%"
+      },
+      {
+        "q": "leaflet size paper",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "60.5",
+        "ctr": "0%"
+      },
+      {
+        "q": "vinyl banner printing china",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "61",
+        "ctr": "0%"
+      },
+      {
+        "q": "types of poster paper",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "63.5",
+        "ctr": "0%"
+      },
+      {
+        "q": "envelope printing service china",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "64.5",
+        "ctr": "0%"
+      },
+      {
+        "q": "custom envelopes wholesale china",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "65.5",
+        "ctr": "0%"
+      },
+      {
+        "q": "ポスターサイズ 規格",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "66",
+        "ctr": "0%"
+      },
+      {
+        "q": "custom envelope printing china",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "68.5",
+        "ctr": "0%"
+      },
+      {
+        "q": "paper size for flyers",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "70.5",
+        "ctr": "0%"
+      },
+      {
+        "q": "flyer size",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "71",
+        "ctr": "0%"
+      },
+      {
+        "q": "膠袋 印刷",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "73.5",
+        "ctr": "0%"
+      },
+      {
+        "q": "膠袋印刷",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "75.5",
+        "ctr": "0%"
+      },
+      {
+        "q": "flyer paper type",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "78",
+        "ctr": "0%"
+      },
+      {
+        "q": "印刷 カラー モード",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "87.5",
+        "ctr": "0%"
+      },
+      {
+        "q": "poster paper size",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "89",
+        "ctr": "0%"
+      },
+      {
+        "q": "flyer sizing",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "90.5",
+        "ctr": "0%"
+      },
+      {
+        "q": "packaging printing",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "91",
+        "ctr": "0%"
+      },
+      {
+        "q": "cmyk カラー",
+        "imps": "2",
+        "clicks": "0",
+        "rank": "94.5",
+        "ctr": "0%"
+      },
+      {
+        "q": "a2 size print",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "1",
+        "ctr": "0%"
+      },
+      {
+        "q": "a2 海報",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "1",
+        "ctr": "0%"
+      },
+      {
+        "q": "a2 海報 尺寸",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "1",
+        "ctr": "0%"
+      },
+      {
+        "q": "a2海報",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "1",
+        "ctr": "0%"
+      },
+      {
+        "q": "company envelopes",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "1",
+        "ctr": "0%"
+      },
+      {
+        "q": "大海報尺寸",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "1",
+        "ctr": "0%"
+      },
+      {
+        "q": "精裝盒",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "1",
+        "ctr": "0%"
+      },
+      {
+        "q": "膠貼紙",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "1",
+        "ctr": "0%"
+      },
+      {
+        "q": "防偽貼紙",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "1",
+        "ctr": "0%"
+      },
+      {
+        "q": "防水海報",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "1",
+        "ctr": "0%"
+      },
+      {
+        "q": "pvc 海報",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "2",
+        "ctr": "0%"
+      },
+      {
+        "q": "雙面印刷",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "2",
+        "ctr": "0%"
+      },
+      {
+        "q": "燙金貼紙",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "3",
+        "ctr": "0%"
+      },
+      {
+        "q": "(\"食品包装\" or \"食品パッケージ\") and (\"デザイン\" or \"パッケージデザイン\" or \"デザイン動向\") and \n(\"パーソナライズ\" or \"カスタマイズ\" or \"ストーリーテリング\" or \"人間工学\" or \"エルゴノミクス\")",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "4",
+        "ctr": "0%"
+      },
+      {
+        "q": "magnetic closure boxes",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "4",
+        "ctr": "0%"
+      },
+      {
+        "q": "a2海報印刷",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "5",
+        "ctr": "0%"
+      },
+      {
+        "q": "厚紙印刷",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "5",
+        "ctr": "0%"
+      },
+      {
+        "q": "custom stickers hong kong",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "6",
+        "ctr": "0%"
+      },
+      {
+        "q": "same day business cards hong kong",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "6",
+        "ctr": "0%"
+      },
+      {
+        "q": "sticker pvc waterproof",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "6",
+        "ctr": "0%"
+      },
+      {
+        "q": "不殘膠貼紙",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "6",
+        "ctr": "0%"
+      },
+      {
+        "q": "a1 size poster",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "7",
+        "ctr": "0%"
+      },
+      {
+        "q": "factory wholesale oem double sided envelope full color",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "8",
+        "ctr": "0%"
+      },
+      {
+        "q": "zn pro creative printing",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "8",
+        "ctr": "0%"
+      },
+      {
+        "q": "食品貼紙",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "8",
+        "ctr": "0%"
+      },
+      {
+        "q": "business envelopes",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "9",
+        "ctr": "0%"
+      },
+      {
+        "q": "magnetic closure box",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "9",
+        "ctr": "0%"
+      },
+      {
+        "q": "paper bag custom printing",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "9",
+        "ctr": "0%"
+      },
+      {
+        "q": "信封印刷",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "9",
+        "ctr": "0%"
+      },
+      {
+        "q": "印刷 企業",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "9",
+        "ctr": "0%"
+      },
+      {
+        "q": "飛機盒印刷",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "9",
+        "ctr": "0%"
+      },
+      {
+        "q": "a2 size poster",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "10",
+        "ctr": "0%"
+      },
+      {
+        "q": "a2 printing price",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "11",
+        "ctr": "0%"
+      },
+      {
+        "q": "紙袋尺寸",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "11",
+        "ctr": "0%"
+      },
+      {
+        "q": "book printing hong kong",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "12",
+        "ctr": "0%"
+      },
+      {
+        "q": "cosmetic packaging boxes",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "12",
+        "ctr": "0%"
+      },
+      {
+        "q": "飛機盒香港",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "12",
+        "ctr": "0%"
+      },
+      {
+        "q": "香港有賣嗎",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "12",
+        "ctr": "0%"
+      },
+      {
+        "q": "a2 printing",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "13",
+        "ctr": "0%"
+      },
+      {
+        "q": "印刷a2",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "14",
+        "ctr": "0%"
+      },
+      {
+        "q": "紙袋 印刷",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "15",
+        "ctr": "0%"
+      },
+      {
+        "q": "a2 posters",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "16",
+        "ctr": "0%"
+      },
+      {
+        "q": "即日 印刷",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "16",
+        "ctr": "0%"
+      },
+      {
+        "q": "藝術海報",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "16",
+        "ctr": "0%"
+      },
+      {
+        "q": "印刷廠",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "17",
+        "ctr": "0%"
+      },
+      {
+        "q": "印poster",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "19",
+        "ctr": "0%"
+      },
+      {
+        "q": "印盒",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "19",
+        "ctr": "0%"
+      },
+      {
+        "q": "書本印刷",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "19",
+        "ctr": "0%"
+      },
+      {
+        "q": "飛機盒 香港",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "20",
+        "ctr": "0%"
+      },
+      {
+        "q": "信封訂製",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "23",
+        "ctr": "0%"
+      },
+      {
+        "q": "pvc free sticker",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "26",
+        "ctr": "0%"
+      },
+      {
+        "q": "印刷即日",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "27",
+        "ctr": "0%"
+      },
+      {
+        "q": "クラフト紙袋 印刷",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "29",
+        "ctr": "0%"
+      },
+      {
+        "q": "a1 印刷 即日",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "30",
+        "ctr": "0%"
+      },
+      {
+        "q": "紙袋零售",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "34",
+        "ctr": "0%"
+      },
+      {
+        "q": "海報價錢",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "35",
+        "ctr": "0%"
+      },
+      {
+        "q": "防水 貼紙 印刷",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "36",
+        "ctr": "0%"
+      },
+      {
+        "q": "cmyk rgb",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "38",
+        "ctr": "0%"
+      },
+      {
+        "q": "海報印刷一張",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "38",
+        "ctr": "0%"
+      },
+      {
+        "q": "牛皮 紙袋",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "38",
+        "ctr": "0%"
+      },
+      {
+        "q": "香港 印刷 廠",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "38",
+        "ctr": "0%"
+      },
+      {
+        "q": "即日",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "39",
+        "ctr": "0%"
+      },
+      {
+        "q": "flyer paper sizes",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "40",
+        "ctr": "0%"
+      },
+      {
+        "q": "シール 型抜き",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "42",
+        "ctr": "0%"
+      },
+      {
+        "q": "公司利是封",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "42",
+        "ctr": "0%"
+      },
+      {
+        "q": "宣傳咭印刷",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "42",
+        "ctr": "0%"
+      },
+      {
+        "q": "海報架香港",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "42",
+        "ctr": "0%"
+      },
+      {
+        "q": "pvc menu",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "43",
+        "ctr": "0%"
+      },
+      {
+        "q": "餐牌卡",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "43",
+        "ctr": "0%"
+      },
+      {
+        "q": "rgb 印刷",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "44",
+        "ctr": "0%"
+      },
+      {
+        "q": "waterproof sticker",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "44",
+        "ctr": "0%"
+      },
+      {
+        "q": "poster size a2",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "46",
+        "ctr": "0%"
+      },
+      {
+        "q": "型 抜き シール",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "48",
+        "ctr": "0%"
+      },
+      {
+        "q": "型抜きシール",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "48",
+        "ctr": "0%"
+      },
+      {
+        "q": "透明貼紙自己印",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "49",
+        "ctr": "0%"
+      },
+      {
+        "q": "a1 紙張",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "50",
+        "ctr": "0%"
+      },
+      {
+        "q": "poster print cheap",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "50",
+        "ctr": "0%"
+      },
+      {
+        "q": "印刷 推薦",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "50",
+        "ctr": "0%"
+      },
+      {
+        "q": "紙盒印刷",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "50",
+        "ctr": "0%"
+      },
+      {
+        "q": "屋外 ポスター",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "51",
+        "ctr": "0%"
+      },
+      {
+        "q": "a2 poster dimensions",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "52",
+        "ctr": "0%"
+      },
+      {
+        "q": "印刷公司 香港",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "53",
+        "ctr": "0%"
+      },
+      {
+        "q": "waterproof stickers factory china",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "54",
+        "ctr": "0%"
+      },
+      {
+        "q": "waterproof stickers manufacturer china",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "54",
+        "ctr": "0%"
+      },
+      {
+        "q": "クラフト紙 パッケージ印刷",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "54",
+        "ctr": "0%"
+      },
+      {
+        "q": "print poster art",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "55",
+        "ctr": "0%"
+      },
+      {
+        "q": "sticker printing hk",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "55",
+        "ctr": "0%"
+      },
+      {
+        "q": "standard flyer size",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "56",
+        "ctr": "0%"
+      },
+      {
+        "q": "香港印刷",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "57",
+        "ctr": "0%"
+      },
+      {
+        "q": "a1 printing",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "58",
+        "ctr": "0%"
+      },
+      {
+        "q": "flyer sizes for printing",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "58",
+        "ctr": "0%"
+      },
+      {
+        "q": "クラフト紙 パッケージ 印刷",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "58",
+        "ctr": "0%"
+      },
+      {
+        "q": "a1 posters",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "59",
+        "ctr": "0%"
+      },
+      {
+        "q": "シール 型 抜き",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "60",
+        "ctr": "0%"
+      },
+      {
+        "q": "訂製貼紙",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "60",
+        "ctr": "0%"
+      },
+      {
+        "q": "kraft bags",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "61",
+        "ctr": "0%"
+      },
+      {
+        "q": "貼紙印製",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "61",
+        "ctr": "0%"
+      },
+      {
+        "q": "envelope printing factory china",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "62",
+        "ctr": "0%"
+      },
+      {
+        "q": "waterproof stickers supplier china",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "62",
+        "ctr": "0%"
+      },
+      {
+        "q": "china flyer printing",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "65",
+        "ctr": "0%"
+      },
+      {
+        "q": "order stickers",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "65",
+        "ctr": "0%"
+      },
+      {
+        "q": "燙金印刷",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "65",
+        "ctr": "0%"
+      },
+      {
+        "q": "best paper size for flyers",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "66",
+        "ctr": "0%"
+      },
+      {
+        "q": "paper flyer size",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "66",
+        "ctr": "0%"
+      },
+      {
+        "q": "sticker guide",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "66",
+        "ctr": "0%"
+      },
+      {
+        "q": "ポスター用紙",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "66",
+        "ctr": "0%"
+      },
+      {
+        "q": "信封",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "66",
+        "ctr": "0%"
+      },
+      {
+        "q": "leaflet paper size",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "67",
+        "ctr": "0%"
+      },
+      {
+        "q": "size of a leaflet",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "67",
+        "ctr": "0%"
+      },
+      {
+        "q": "sticker printing",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "68",
+        "ctr": "0%"
+      },
+      {
+        "q": "cmyk rgb 差異",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "70",
+        "ctr": "0%"
+      },
+      {
+        "q": "flier sizes",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "70",
+        "ctr": "0%"
+      },
+      {
+        "q": "ポスター 用紙",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "70",
+        "ctr": "0%"
+      },
+      {
+        "q": "型 抜き ステッカー",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "71",
+        "ctr": "0%"
+      },
+      {
+        "q": "standard flyer sizes",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "72",
+        "ctr": "0%"
+      },
+      {
+        "q": "what is a poster paper",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "73",
+        "ctr": "0%"
+      },
+      {
+        "q": "custom envelope manufacturer china",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "74",
+        "ctr": "0%"
+      },
+      {
+        "q": "ポスター サイズ 一覧",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "74",
+        "ctr": "0%"
+      },
+      {
+        "q": "a1 posters size",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "76",
+        "ctr": "0%"
+      },
+      {
+        "q": "flyer formaten",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "76",
+        "ctr": "0%"
+      },
+      {
+        "q": "poster sizes a1",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "76",
+        "ctr": "0%"
+      },
+      {
+        "q": "ポスター 紙",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "78",
+        "ctr": "0%"
+      },
+      {
+        "q": "a2 size",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "79",
+        "ctr": "0%"
+      },
+      {
+        "q": "common flyer sizes",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "79",
+        "ctr": "0%"
+      },
+      {
+        "q": "flyer size in cm",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "79",
+        "ctr": "0%"
+      },
+      {
+        "q": "kraft bag",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "79",
+        "ctr": "0%"
+      },
+      {
+        "q": "typical flyer sizes",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "79",
+        "ctr": "0%"
+      },
+      {
+        "q": "leaflet paper type",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "80",
+        "ctr": "0%"
+      },
+      {
+        "q": "what are posters made of",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "81",
+        "ctr": "0%"
+      },
+      {
+        "q": "紙袋 素材",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "81",
+        "ctr": "0%"
+      },
+      {
+        "q": "paper bags kraft",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "82",
+        "ctr": "0%"
+      },
+      {
+        "q": "leaflets sizes",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "83",
+        "ctr": "0%"
+      },
+      {
+        "q": "type of paper used for printing flyers",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "83",
+        "ctr": "0%"
+      },
+      {
+        "q": "what paper to use for flyers",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "83",
+        "ctr": "0%"
+      },
+      {
+        "q": "印傳單",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "83",
+        "ctr": "0%"
+      },
+      {
+        "q": "what type of paper are flyers printed on",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "84",
+        "ctr": "0%"
+      },
+      {
+        "q": "cmyk or rgb print",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "85",
+        "ctr": "0%"
+      },
+      {
+        "q": "custom paper bags",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "85",
+        "ctr": "0%"
+      },
+      {
+        "q": "flyers paper size",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "85",
+        "ctr": "0%"
+      },
+      {
+        "q": "types of poster material",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "85",
+        "ctr": "0%"
+      },
+      {
+        "q": "hand flyer size",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "86",
+        "ctr": "0%"
+      },
+      {
+        "q": "paper bag size",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "86",
+        "ctr": "0%"
+      },
+      {
+        "q": "what size are flyers",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "86",
+        "ctr": "0%"
+      },
+      {
+        "q": "ポスター サイズ 比較",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "86",
+        "ctr": "0%"
+      },
+      {
+        "q": "good price and quality printing food bag",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "87",
+        "ctr": "0%"
+      },
+      {
+        "q": "poster size a1",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "87",
+        "ctr": "0%"
+      },
+      {
+        "q": "types of sticker material",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "87",
+        "ctr": "0%"
+      },
+      {
+        "q": "ポスター 紙質",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "87",
+        "ctr": "0%"
+      },
+      {
+        "q": "印刷 cmyk",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "87",
+        "ctr": "0%"
+      },
+      {
+        "q": "flyer paper size",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "88",
+        "ctr": "0%"
+      },
+      {
+        "q": "sizes of paper bag",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "88",
+        "ctr": "0%"
+      },
+      {
+        "q": "flyers size",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "90",
+        "ctr": "0%"
+      },
+      {
+        "q": "size of leaflets",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "90",
+        "ctr": "0%"
+      },
+      {
+        "q": "what is poster size paper",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "90",
+        "ctr": "0%"
+      },
+      {
+        "q": "ポスター 材質",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "90",
+        "ctr": "0%"
+      },
+      {
+        "q": "cmyk or rgb",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "92",
+        "ctr": "0%"
+      },
+      {
+        "q": "what size are leaflets",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "92",
+        "ctr": "0%"
+      },
+      {
+        "q": "what size is a leaflet",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "92",
+        "ctr": "0%"
+      },
+      {
+        "q": "rgb or cmyk for print",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "93",
+        "ctr": "0%"
+      },
+      {
+        "q": "average leaflet size",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "94",
+        "ctr": "0%"
+      },
+      {
+        "q": "flyer size a4",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "95",
+        "ctr": "0%"
+      },
+      {
+        "q": "rgb or cmyk for printing",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "97",
+        "ctr": "0%"
+      },
+      {
+        "q": "brown kraft paper bags near me",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "98",
+        "ctr": "0%"
+      },
+      {
+        "q": "cmyk vs rgb",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "98",
+        "ctr": "0%"
+      },
+      {
+        "q": "海報",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "98",
+        "ctr": "0%"
+      },
+      {
+        "q": "different sticker types",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "99",
+        "ctr": "0%"
+      },
+      {
+        "q": "kraft paper bags near me",
+        "imps": "1",
+        "clicks": "0",
+        "rank": "142",
+        "ctr": "0%"
+      }
+    ],
+    "strong_signal_+2": [
+      {
+        "q": "食品包裝印刷",
+        "imps": "108",
+        "clicks": "0",
+        "rank": "25.45",
+        "ctr": "0%"
+      }
+    ],
+    "orphan_+1": [
+      {
+        "q": "海報與印刷",
+        "imps": "93",
+        "clicks": "0",
+        "rank": "57.32",
+        "ctr": "0%"
+      },
+      {
+        "q": "紙袋印刷",
+        "imps": "92",
+        "clicks": "0",
+        "rank": "17.8",
+        "ctr": "0%"
+      },
+      {
+        "q": "宣傳單張",
+        "imps": "84",
+        "clicks": "0",
+        "rank": "42.9",
+        "ctr": "0%"
+      },
+      {
+        "q": "紙袋訂製",
+        "imps": "81",
+        "clicks": "0",
+        "rank": "60.32",
+        "ctr": "0%"
+      },
+      {
+        "q": "宣傳單張印刷",
+        "imps": "73",
+        "clicks": "0",
+        "rank": "40.42",
+        "ctr": "0%"
+      },
+      {
+        "q": "包裝盒訂製",
+        "imps": "69",
+        "clicks": "0",
+        "rank": "55.04",
+        "ctr": "0%"
+      },
+      {
+        "q": "海報印刷",
+        "imps": "65",
+        "clicks": "0",
+        "rank": "38.31",
+        "ctr": "0%"
+      },
+      {
+        "q": "包裝盒印刷",
+        "imps": "63",
+        "clicks": "0",
+        "rank": "55.52",
+        "ctr": "0%"
+      },
+      {
+        "q": "紙盒訂製",
+        "imps": "59",
+        "clicks": "0",
+        "rank": "66.58",
+        "ctr": "0%"
+      },
+      {
+        "q": "印海報",
+        "imps": "58",
+        "clicks": "0",
+        "rank": "38.43",
+        "ctr": "0%"
+      },
+      {
+        "q": "貼紙印刷",
+        "imps": "51",
+        "clicks": "0",
+        "rank": "52.63",
+        "ctr": "0%"
+      }
+    ],
+    "high_potential_+1": [
+      {
+        "q": "食品包裝訂製",
+        "imps": "48",
+        "clicks": "0",
+        "rank": "22.88",
+        "ctr": "0%"
+      },
+      {
+        "q": "印紙袋",
+        "imps": "44",
+        "clicks": "0",
+        "rank": "26",
+        "ctr": "0%"
+      },
+      {
+        "q": "印刷紙袋",
+        "imps": "44",
+        "clicks": "0",
+        "rank": "26.73",
+        "ctr": "0%"
+      },
+      {
+        "q": "紙袋印製",
+        "imps": "44",
+        "clicks": "0",
+        "rank": "27.86",
+        "ctr": "0%"
+      },
+      {
+        "q": "餐牌印刷",
+        "imps": "43",
+        "clicks": "0",
+        "rank": "20.56",
+        "ctr": "0%"
+      },
+      {
+        "q": "利是封印刷",
+        "imps": "43",
+        "clicks": "0",
+        "rank": "34.7",
+        "ctr": "0%"
+      },
+      {
+        "q": "訂做紙袋",
+        "imps": "42",
+        "clicks": "0",
+        "rank": "41.29",
+        "ctr": "0%"
+      },
+      {
+        "q": "紙袋訂造",
+        "imps": "40",
+        "clicks": "0",
+        "rank": "33.42",
+        "ctr": "0%"
+      },
+      {
+        "q": "poster 印刷",
+        "imps": "35",
+        "clicks": "0",
+        "rank": "38.66",
+        "ctr": "0%"
+      },
+      {
+        "q": "食品印刷",
+        "imps": "22",
+        "clicks": "0",
+        "rank": "39.55",
+        "ctr": "0%"
+      },
+      {
+        "q": "戶外貼紙",
+        "imps": "21",
+        "clicks": "0",
+        "rank": "35.38",
+        "ctr": "0%"
+      }
+    ],
+    "orphan_20-50": [
+      {
+        "q": "貼紙訂製",
+        "imps": "39",
+        "clicks": "0",
+        "rank": "64.38",
+        "ctr": "0%"
+      },
+      {
+        "q": "紙袋訂做",
+        "imps": "37",
+        "clicks": "0",
+        "rank": "53.27",
+        "ctr": "0%"
+      },
+      {
+        "q": "禮盒訂製",
+        "imps": "28",
+        "clicks": "0",
+        "rank": "77.11",
+        "ctr": "0%"
+      },
+      {
+        "q": "紙袋批發",
+        "imps": "24",
+        "clicks": "0",
+        "rank": "62.12",
+        "ctr": "0%"
+      },
+      {
+        "q": "bag printing company",
+        "imps": "22",
+        "clicks": "0",
+        "rank": "75.18",
+        "ctr": "0%"
+      },
+      {
+        "q": "印紙盒",
+        "imps": "21",
+        "clicks": "0",
+        "rank": "58.71",
+        "ctr": "0%"
+      },
+      {
+        "q": "bag printing",
+        "imps": "20",
+        "clicks": "0",
+        "rank": "63.35",
+        "ctr": "0%"
+      }
+    ]
+  }
+}
