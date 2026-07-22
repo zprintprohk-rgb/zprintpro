@@ -396,6 +396,8 @@ cron / 后台 agent / 跨进程 worker 自报 "完成 / Shipped / Done" **永远
 ### 14.2 5 项 301 监控 (§3.2 段激活, 替代 PENDING 跳过)
 
 > **触发**: `zprintpro-gsc-feedback-loop` v4 cron 每周三 15:00 Asia/Shanghai 自动跑, 写入日报 §3.2 段
+>
+> **抽样规则 (2026-07-22 K3 纠偏后)**: 第 5 项 "≥10 条旧 URL curl 抽查" 应**含清单内+清单外各 5 条**, 不可只抽查清单外 URL 走 catch-all. 清单内 5/5 PASS 是健康 (149 条路径级规则精准承接), 清单外 5/5 catch-all 跳 `zprintpro.com/zh-hk/` 是设计行为不是 bug.
 
 | # | 监控项 | 阈值 | 升级条件 | 数据源 |
 |---|---|---|---|---|
@@ -403,7 +405,7 @@ cron / 后台 agent / 跨进程 worker 自报 "完成 / Shipped / Done" **永远
 | **2** | **sitemap 残留老 URL 数** | = 0 | ≥ 1 → 升级 user, 跑脚本清理 + 重新提交 GSC | `public/sitemap-0.xml` grep `z-printpro.com` |
 | **3** | **索引转移率** (z-printpro.com → zprintpro.com) | ≥ 50% | 第 4 周仍 < 50% → 升级 user, 排查 GSC Change of Address 状态 | GSC 索引对比 |
 | **4** | **权重交接差异** (老域名 ranking vs 新域名 ranking 同关键词) | < 5 位 | ≥ 5 位 → 升级 user, 写补救 SEO patch | GSC 排名对比 |
-| **5** | **旧 URL 抽查 ≥10 条** curl 验证 301 → 新站对应页 200 | 10/10 PASS | 任一 < 200 或 漏 301 → 升级 user (AGENTS.md §13.1 已固化) | `curl -I <old_url>` 10 条 |
+| **5** | **旧 URL 抽查 ≥10 条** curl 验证 301 → 新站对应页 200 | **清单内 5/5 PASS + 清单外 5/5 catch-all 是设计** | 清单内任一 FAIL 或非 301 → 升级 user (AGENTS.md §13.1 已固化) | `curl -I <old_url>` 5 条清单内 + 5 条清单外 |
 
 ### 14.3 监控窗口 (8 周关键观察期)
 
@@ -420,6 +422,9 @@ cron / 后台 agent / 跨进程 worker 自报 "完成 / Shipped / Done" **永远
 - **GSC API 拉取失败** → 切 fallback 模式 (6/17 快照 + 7/17 overlap-keywords.csv), 连续 2 次失败 → 升级 user
 - **老域名解析回退到阿里云** (NS 改动回滚) → 立即升级 user, 暂停 301 监控
 - **M3 v6 智印港改完 7 天后 GSC 智印港 CTR 没变化** → 升级 user, 排查改完是否上线
+- **清单内 URL 抽查 FAIL (≤5/5 命中 149 条精准承接)** → 立即升级 user, 这是真异常, 不是设计行为
+- **清单外 URL 走 catch-all 跳 zh-hk 是设计行为**, 不算异常, 不升级 user (避免误报)
+- **不要提议改 CF Bulk Redirect 规则** (149 条路径级精准承接已 OK, 改通配规则会破坏承接)
 
 ### 14.5 仍待 user 拍板 (迁移已完成, 灰度 + GSC Change of Address 待跑)
 
@@ -440,6 +445,7 @@ cron / 后台 agent / 跨进程 worker 自报 "完成 / Shipped / Done" **永远
 ## 15. Changelog
 
 - **2026-07-22 v5** (K3 §3.2 ACTIVE): P0-2 301 迁移实测全链路验证通过 (GSC API 本地 proxy 127.0.0.1:7892 通了 + sc-domain 修正 + 852 行全量拉取), §14 新增 P0-2 ACTIVE 监控 (5 项 + 8 周关键观察期 + 异常升级); §14 改 §15 Changelog 顺延; cron prompt §3.2 已是 DEPLOYED 状态跑 5 项监控; 云端 proxy/VPN 升级请求**撤销** (本地 proxy 已够)
+- **2026-07-22 v5.1** (K3 纠偏): 第 5 项 "≥10 条旧 URL 抽查" 抽样规则修正 = 清单内 5 条 + 清单外 5 条; 149 条路径级规则已生效 (清单内 5/5 精准承接, 清单外 5/5 走 catch-all 是设计行为); §14.4 异常处理加"清单外 catch-all 不算异常, 不提议改 CF Bulk Redirect 规则"
 - **2026-07-06 v4**: 180 天压缩节奏 (半年 730 篇); cron prompts 硬约束段去重 (单一真源在 AGENTS.md §11/§13.4/§13.10/§13.13 + .hermes/context.md §1/§4); 关键路径 bug 修复; §13 进程验收标准; §14 Changelog 新增
 - **2026-07-05 v3**: 豆包 4 项能力 (内链自生长 / 内容质量自迭代 / 本地语义优化 / 运维兜底) + 标题本地化 (NAP 脱钩) + 内链矩阵
 - **2026-07-04 v2**: 4-cron 自进化 + 链接完整性红线

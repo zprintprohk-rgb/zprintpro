@@ -121,12 +121,18 @@ z-printpro.com → zprintpro.com 301 迁移当前状态: **✅ DEPLOYED (2026-07
 - 域名 z-printpro.com 已续费 1 年; 老 SaaS 站 2026-10-12 到期, 迁移稳定 8 周后再关
 - Runbook: `analysis-2026-07-17\301-migration-runbook.md` (含全部 CF ID)
 
-**本 cron §3.2 处理 (DEPLOYED, 每次必跑 4 项监控)**:
-  - GSC 覆盖率 → 抓取错误 (z-printpro.com) < 5 = 健康
-  - sitemap 残留老 URL 数 = 0 = 健康
-  - 索引转移率 (老 URL 索引数 / 7 天前基线) ≥ 50% = 健康
-  - 权重交接 (老 URL 平均排名 → 新 URL 平均排名 差异 < 5 = 健康
-  - **+ 抽查 ≥10 条旧 URL curl 确认 301 → 新站对应页 200** (AGENTS.md §13.1 已加此项)
+**本 cron §3.2 处理 (DEPLOYED, 每次必跑 5 项监控, 跟 context.md §14.2 同步)**:
+  1. GSC 覆盖率 → 抓取错误 (z-printpro.com) < 5 = 健康
+  2. sitemap 残留老 URL 数 = 0 = 健康
+  3. 索引转移率 (老 URL 索引数 / 7 天前基线) ≥ 50% = 健康 (第 4 周决策点 8/12)
+  4. 权重交接 (老 URL 平均排名 → 新 URL 平均排名) 差异 < 5 = 健康
+  5. **抽样 ≥10 条旧 URL curl 确认 301 → 新站对应页 200** (清单内 5 条 + 清单外 5 条, AGENTS.md §13.1 已加)
+
+**抽样规则 (2026-07-22 K3 纠偏, 149 条路径级规则已生效)**:
+- **清单内 5 条** (e.g. 海报 → 急件, 论文 → educational, 文具 → 急件) → 5/5 PASS 301 + 对应页 200 是健康
+- **清单外 5 条** → 走 catch-all 兜底到 `zprintpro.com/zh-hk/` 是设计行为不是 bug, 不算异常, 不升级 user
+- **清单内任一 FAIL** → 立即升级 user, 这是真异常, 排查 149 条规则覆盖度
+- **不要提议改 CF Bulk Redirect 规则** (149 条路径级精准承接已 OK, 通配规则会破坏承接)
 
 【Q-005 daily cron 7/23 必写建议 (2026-07-22 K3 拍板)】
 
@@ -230,14 +236,14 @@ z-printpro.com → zprintpro.com 301 迁移当前状态: **✅ DEPLOYED (2026-07
 - **fallback 模式**: 写"141 残杀词 7-day rolling 复查挂起, 待 GSC API 恢复"备注
 - 异常: 连续 2 周恶化 → 升级 user
 
-## 4. 301 抓取异常监控 (5 min, **P0-2 ✅ DEPLOYED 2026-07-21, 每次必跑**)
-- P0-2 已于 2026-07-21 完成部署 (Bulk Redirect 149 条 + GSC Change of Address 已注册), 每次必跑 5 项:
-    - GSC 覆盖率 → 抓取错误 (z-printpro.com) < 5 = 健康
-    - sitemap 残留老 URL 数 = 0 = 健康
-    - 索引转移率 (老 URL 索引数 / 7 天前基线) ≥ 50% = 健康
-    - 权重交接 差异 < 5 = 健康
-    - 抽查 ≥10 条旧 URL curl 确认 301 → 新站对应页 200
-- 异常 → 立即升级 user
+## 4. 301 抓取异常监控 (5 min, **P0-2 ✅ DEPLOYED 2026-07-21, 每次必跑 5 项, 跟 L124-135 + context.md §14.2 同步**)
+- P0-2 已于 2026-07-21 完成部署 (Bulk Redirect List `z_printpro_legacy_301` 149 条路径级规则 + GSC Change of Address 已注册), 每次必跑 5 项:
+    1. GSC 覆盖率 → 抓取错误 (z-printpro.com) < 5 = 健康
+    2. sitemap 残留老 URL 数 = 0 = 健康
+    3. 索引转移率 (老 URL 索引数 / 7 天前基线) ≥ 50% = 健康
+    4. 权重交接 (老 URL 平均排名 → 新 URL 平均排名) 差异 < 5 = 健康
+    5. **抽样 ≥10 条旧 URL curl 确认 301 → 新站对应页 200** (清单内 5 条 + 清单外 5 条)
+- 异常 → 立即升级 user (清单内任一 FAIL 是真异常, 清单外 catch-all 是设计行为)
 
 ## 5. 日报建议 (15 min, **含 Q-005 daily 必写**)
 - 写到 F:\zprintpro-nextjs\.hermes\logs\YYYY-MM-DD-gsc-feedback.md

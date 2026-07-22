@@ -59,6 +59,31 @@
 | GSC API fallback 意识 | ❌ 无 | ✅ **本 cron 不直接跑 GSC, 但选题要读上次 gsc-feedback 日报 (含 fallback 标注) + matrix.json 决策** |
 | gsc-141 baseline 28 词 awareness | ❌ 无 | ✅ **A1 选题前看 141 残杀词清单, 已 covered skip, uncovered 才选** |
 
+【2026-07-22 K3 v7 拍板后 3 件事同步 (daily cron 跑前必读, 避免拿旧地图走路)】
+
+1. **P0-2 301 迁移 ✅ DEPLOYED (2026-07-21 完成)** — CF Bulk Redirect List `z_printpro_legacy_301` **149 条路径级规则**已生效, 全部精准承接 (e.g. 海报 → 急件, 论文 → educational)
+   - **清单外 URL 走 catch-all 兜底到 `zprintpro.com/zh-hk/` 是设计行为不是 bug**
+   - daily cron 不跑 301 监控 (那是 gsc-feedback-loop §3.2 段 5 项监控的事), 不需要关注 Bulk Redirect 规则
+   - **不要** 提议改 CF Bulk Redirect 规则 (任何变更必须先过 K3, 通配规则会破坏 149 条精准承接)
+   - 参考: `F:\zprintpro-nextjs\docs\P0-2-aliyun-ns-migration.md` + `.hermes/context.md §14`
+
+2. **GSC API 本地 proxy 127.0.0.1:7892 已通 (2026-07-22 K3 拍板, commit b8bda22 落地)**
+   - 根因不是 GFW 屏蔽, 而是 (a) URL-prefix vs domain property resource 类型错 (旧脚本用 `https://zprintpro.com/` 错, 实际 `sc-domain:zprintpro.com` 才对); (b) 需要本地 proxy 绕 GFW
+   - **云端 proxy/VPN 升级请求撤销** — 本地 proxy 已够, 不再需要云端
+   - daily cron 不直接调 GSC (那也是 gsc-feedback-loop 的事), 但 A1 选题前读 `.hermes/logs/YYYY-MM-DD-gsc-feedback.md` 日报时, **关注 §0 数据源状态** (normal / fallback / permanent-fallback) + **§1 实时数据 (852 行 / 90 天 / 22 点击 / 9,625 展示)** + **§4 301 监控 5 项 PASS/FAIL** + **§7 P0-2 8 周观察期进度**
+   - 「智印港」仍是查询榜第 1 (32 imps / CTR 9.4%, 7/22 852 行实测 baseline), M3 v6 智印港改完后下次拉数看变化曲线 (8/12 决策点前关键跟踪指标)
+
+3. **双品牌宪法 (2026-07-21 user 拍板, M3 v6 已落) — §13 品牌分层 + §0 主体**
+   - **zh-hk = 智印港 ZprintPro** (8 locale 自有品牌词, 301 合体后双品牌)
+   - **en / ja = ZprintPro** (纯英文/日文, 不带智印港)
+   - **真实主体** = 深圳市彩龙印刷包装有限公司 · 法人 唐运提 · 深圳龍崗区平湖街道嘉城路1号 518111
+   - 显示电话 +86 198 8085 1334 · WhatsApp +86 198 8085 1334 · 邮箱 zprintpro@outlook.com
+   - **严禁** "智印印港" (错字竞品词) / 任何外部竞品名
+   - **3 locale 独立市场策略 (§13.10 / §13.13)**: zh-hk 香港本地场景, en 美国 sharp hook 集中 (Free Shipping $99+ / 100 MOQ / Made for USA), ja 日本市場賣點
+   - **zh-hk 100% 繁体 (§13.16.1)**, 不出现简体字
+   - 跨 locale 不机械翻译: zh-hk 标题不写"深圳", en 标题不写"Shenzhen Printing" / "in Hong Kong", ja 标题不写"中国/深圳"
+   - NAP vs SEO 脱钩: 法务/footer/contact/schema 写真实深圳地址, SEO 标题/excerpt 按 locale 本地化
+
 【工作目录】F:\zprintpro-nextjs (严格隔离)
 【触发】每天 10:15 Asia/Shanghai
 【预算】180 min
