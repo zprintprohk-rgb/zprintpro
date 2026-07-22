@@ -58,9 +58,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "專業商務印刷 / 專業商務印刷 | 香港專業商務印刷訂製 300g銅版紙或250g啞粉藝術紙 | ZprintPro智印雲",
+      "zh-hk": "專業商務印刷 / 專業商務印刷 | 香港專業商務印刷訂製 300g銅版紙或250g啞粉藝術紙 | ZprintPro智印港",
       "en": "Premium business cards with foil stamping and spot UV on 300g-400g matte or cotton paper — ZprintPro",
-      "ja": "プレミアム名刺 / 高級紙 | プレミアム名刺印刷 プレミアム紙 100枚〜 日本向け | ZprintPro智印雲"
+      "ja": "プレミアム名刺 / 高級紙 | プレミアム名刺印刷 プレミアム紙 100枚〜 日本向け | ZprintPro"
     }
   },
   "thick-business-cards-400g": {
@@ -108,9 +108,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "專業商務印刷 / 專業商務印刷 | 香港專業商務印刷訂製 400g超厚銅版紙 | ZprintPro智印雲",
+      "zh-hk": "專業商務印刷 / 專業商務印刷 | 香港專業商務印刷訂製 400g超厚銅版紙 | ZprintPro智印港",
       "en": "Custom thick business cards 400g with foil uv multi-finish, premium materials — ZprintPro",
-      "ja": "厚紙名刺 / 高耐久 | 厚紙名刺印刷 400g厚紙 | ZprintPro智印雲"
+      "ja": "厚紙名刺 / 高耐久 | 厚紙名刺印刷 400g厚紙 | ZprintPro"
     }
   },
   "foil-business-cards": {
@@ -261,9 +261,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "專業商務印刷 / 專業商務印刷 | 香港專業商務印刷訂製 300g啞粉紙或環保紙 | ZprintPro智印雲",
+      "zh-hk": "專業商務印刷 / 專業商務印刷 | 香港專業商務印刷訂製 300g啞粉紙或環保紙 | ZprintPro智印港",
       "en": "Matte laminated business cards with soft-touch finish and fingerprint resistance, 300-400g art card — ZprintPro",
-      "ja": "マット名刺 / マット | マット名刺印刷 300gマット紙 | ZprintPro智印雲"
+      "ja": "マット名刺 / マット | マット名刺印刷 300gマット紙 | ZprintPro"
     }
   },
   "rounded-corner-cards": {
@@ -312,9 +312,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": " fast delivery. | 香港印刷 | ZprintPro智印雲",
+      "zh-hk": " fast delivery. | 香港印刷 | ZprintPro智印港",
       "en": "Rounded corner business cards in matte or gloss finish with R3/R5/R10mm radius options — ZprintPro",
-      "ja": "角丸名刺 / 角丸加工 | 角丸名刺印刷 角丸加工 100枚〜 即日発送 | ZprintPro智印雲"
+      "ja": "角丸名刺 / 角丸加工 | 角丸名刺印刷 角丸加工 100枚〜 即日発送 | ZprintPro"
     }
   },
   "double-sided-cards": {
@@ -514,7 +514,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "PVC waterproof stickers with excellent water",
-      "en": "Custom Waterproof Stickers for pet food and brand labels — ZprintPro智印雲",
+      "en": "Custom Waterproof Stickers for pet food and brand labels — ZprintPro智印港",
       "ja": " and abrasion resistance. Perfect for outdoor use"
     }
   },
@@ -564,8 +564,8 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "透明貼紙 / 不干膠 | 香港透明貼紙印刷 透明 PET | ZprintPro智印雲",
-      "en": "Custom Transparent Stickers for pet food and brand labels — ZprintPro智印雲",
+      "zh-hk": "透明貼紙 / 不干膠 | 香港透明貼紙印刷 透明 PET | ZprintPro智印港",
+      "en": "Custom Transparent Stickers for pet food and brand labels — ZprintPro智印港",
       "ja": "一般為100張起訂，部分特殊工藝需500張起。"
     }
   },
@@ -615,9 +615,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "可移貼紙(無殘膠) / 不干膠 | 香港可移貼紙(無殘膠)印刷 PP 合成紙／PET 透明膜 | ZprintPro智印雲",
-      "en": "Custom Removable Stickers for pet food and brand labels — ZprintPro智印雲",
-      "ja": "再剥離ステッカー / 防水 | 再剥離ステッカー印刷 防水PVC | ZprintPro智印雲"
+      "zh-hk": "可移貼紙(無殘膠) / 不干膠 | 香港可移貼紙(無殘膠)印刷 PP 合成紙／PET 透明膜 | ZprintPro智印港",
+      "en": "Custom Removable Stickers for pet food and brand labels — ZprintPro智印港",
+      "ja": "再剥離ステッカー / 防水 | 再剥離ステッカー印刷 防水PVC | ZprintPro"
     }
   },
   "small-batch-stickers": {
@@ -666,8 +666,8 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "小批量貼紙 / 不干膠 | 香港小批量貼紙印刷 PVC 防水／PP 合成紙 | ZprintPro智印雲",
-      "en": "Custom Small Batch Stickers for pet food and brand labels — ZprintPro智印雲",
+      "zh-hk": "小批量貼紙 / 不干膠 | 香港小批量貼紙印刷 PVC 防水／PP 合成紙 | ZprintPro智印港",
+      "en": "Custom Small Batch Stickers for pet food and brand labels — ZprintPro智印港",
       "ja": "一般為100張起訂，部分特殊工藝需500張起。"
     }
   },
@@ -717,8 +717,8 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "異形模切貼紙 / 不干膠 | 香港異形模切貼紙印刷 PVC／PP 合成紙／透明 PET | ZprintPro智印雲",
-      "en": "Custom Die-Cut Stickers for pet food and brand labels — ZprintPro智印雲",
+      "zh-hk": "異形模切貼紙 / 不干膠 | 香港異形模切貼紙印刷 PVC／PP 合成紙／透明 PET | ZprintPro智印港",
+      "en": "Custom Die-Cut Stickers for pet food and brand labels — ZprintPro智印港",
       "ja": "一般為100張起訂，部分特殊工藝需500張起。"
     }
   },
@@ -768,9 +768,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "燙金貼紙 / 不干膠 | 香港燙金貼紙印刷 銅版紙／合成紙 | ZprintPro智印雲",
-      "en": "Custom Foil Stickers for pet food and brand labels — ZprintPro智印雲",
-      "ja": "箔押しステッカー / 防水 | 箔押しステッカー印刷 防水PVC | ZprintPro智印雲"
+      "zh-hk": "燙金貼紙 / 不干膠 | 香港燙金貼紙印刷 銅版紙／合成紙 | ZprintPro智印港",
+      "en": "Custom Foil Stickers for pet food and brand labels — ZprintPro智印港",
+      "ja": "箔押しステッカー / 防水 | 箔押しステッカー印刷 防水PVC | ZprintPro"
     }
   },
   "security-stickers": {
@@ -819,9 +819,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "防偽貼紙 / 不干膠 | 香港防偽貼紙印刷 易碎紙／VOID／合成紙＋全息膜等（依方案） | ZprintPro智印雲",
-      "en": "Custom Security Stickers for pet food and brand labels — ZprintPro智印雲",
-      "ja": "セキュリティステッカー / 防水 | セキュリティステッカー印刷 防水PVC | ZprintPro智印雲"
+      "zh-hk": "防偽貼紙 / 不干膠 | 香港防偽貼紙印刷 易碎紙／VOID／合成紙＋全息膜等（依方案） | ZprintPro智印港",
+      "en": "Custom Security Stickers for pet food and brand labels — ZprintPro智印港",
+      "ja": "セキュリティステッカー / 防水 | セキュリティステッカー印刷 防水PVC | ZprintPro"
     }
   },
   "fluorescent-stickers": {
@@ -870,8 +870,8 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "螢光貼紙 / 不干膠 | 香港螢光貼紙印刷 螢光 PVC 膜／螢光紙 | ZprintPro智印雲",
-      "en": "Custom Fluorescent Stickers for pet food and brand labels — ZprintPro智印雲",
+      "zh-hk": "螢光貼紙 / 不干膠 | 香港螢光貼紙印刷 螢光 PVC 膜／螢光紙 | ZprintPro智印港",
+      "en": "Custom Fluorescent Stickers for pet food and brand labels — ZprintPro智印港",
       "ja": "一般為100張起訂，部分特殊工藝需500張起。"
     }
   },
@@ -922,9 +922,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "牛皮紙袋 / 環保 | 香港牛皮紙袋印刷 牛皮紙 120–200g 級（依報價） | ZprintPro智印雲",
-      "en": "Custom Kraft Paper Bags for pet food and brand labels — ZprintPro智印雲",
-      "ja": "クラフト紙袋 / FSC認証 | クラフト紙袋印刷 FSC認証紙 100個〜 | ZprintPro智印雲"
+      "zh-hk": "牛皮紙袋 / 環保 | 香港牛皮紙袋印刷 牛皮紙 120–200g 級（依報價） | ZprintPro智印港",
+      "en": "Custom Kraft Paper Bags for pet food and brand labels — ZprintPro智印港",
+      "ja": "クラフト紙袋 / FSC認証 | クラフト紙袋印刷 FSC認証紙 100個〜 | ZprintPro"
     }
   },
   "white-card-bags": {
@@ -973,9 +973,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "白卡紙袋 / 環保 | 香港白卡紙袋印刷 白卡紙 200–300g 級（依報價） | ZprintPro智印雲",
-      "en": "Custom White Card Bags for pet food and brand labels — ZprintPro智印雲",
-      "ja": "白カード紙袋 / 高耐久 | 白カード紙袋印刷 高耐久素材 100個〜 | ZprintPro智印雲"
+      "zh-hk": "白卡紙袋 / 環保 | 香港白卡紙袋印刷 白卡紙 200–300g 級（依報價） | ZprintPro智印港",
+      "en": "Custom White Card Bags for pet food and brand labels — ZprintPro智印港",
+      "ja": "白カード紙袋 / 高耐久 | 白カード紙袋印刷 高耐久素材 100個〜 | ZprintPro"
     }
   },
   "gift-bags": {
@@ -1025,8 +1025,8 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "禮品紙袋 / 環保 | 香港禮品紙袋印刷 白卡／特種紙／珠光紙（依稿） | ZprintPro智印雲",
-      "en": "Custom Gift Paper Bags for pet food and brand labels — ZprintPro智印雲",
+      "zh-hk": "禮品紙袋 / 環保 | 香港禮品紙袋印刷 白卡／特種紙／珠光紙（依稿） | ZprintPro智印港",
+      "en": "Custom Gift Paper Bags for pet food and brand labels — ZprintPro智印港",
       "ja": "一般為100個起訂，大批量訂單價格更優惠。"
     }
   },
@@ -1077,7 +1077,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "一般為100個起訂，大批量訂單價格更優惠。",
-      "en": "Custom Eco Paper Bags for pet food and brand labels — ZprintPro智印雲",
+      "en": "Custom Eco Paper Bags for pet food and brand labels — ZprintPro智印港",
       "ja": "當然可以。我們支持完全定制尺寸、顏色、手柄類型和印刷內容。"
     }
   },
@@ -1127,9 +1127,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "手挽紙袋 / 環保 | 香港手挽紙袋印刷 牛皮／白卡 | ZprintPro智印雲",
-      "en": "Custom Handle Bags for pet food and brand labels — ZprintPro智印雲",
-      "ja": "ハンドルバッグ / 高耐久 | ハンドルバッグ印刷 高耐久素材 100個〜 | ZprintPro智印雲"
+      "zh-hk": "手挽紙袋 / 環保 | 香港手挽紙袋印刷 牛皮／白卡 | ZprintPro智印港",
+      "en": "Custom Handle Bags for pet food and brand labels — ZprintPro智印港",
+      "ja": "ハンドルバッグ / 高耐久 | ハンドルバッグ印刷 高耐久素材 100個〜 | ZprintPro"
     }
   },
   "small-bags": {
@@ -1178,7 +1178,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "紙袋的最小訂購量是多少？",
-      "en": "Custom Small Paper Bags for pet food and brand labels — ZprintPro智印雲",
+      "en": "Custom Small Paper Bags for pet food and brand labels — ZprintPro智印港",
       "ja": "可以定制紙袋的尺寸和顏色嗎？"
     }
   },
@@ -1228,9 +1228,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "大號紙袋 / 環保 | 香港大號紙袋印刷 FSC 認證紙 | ZprintPro智印雲",
-      "en": "Custom Large Paper Bags for pet food and brand labels — ZprintPro智印雲",
-      "ja": "大型紙袋 / 高耐久素材 | 大型紙袋印刷 強化素材 100個〜 即日発送 | ZprintPro智印雲"
+      "zh-hk": "大號紙袋 / 環保 | 香港大號紙袋印刷 FSC 認證紙 | ZprintPro智印港",
+      "en": "Custom Large Paper Bags for pet food and brand labels — ZprintPro智印港",
+      "ja": "大型紙袋 / 高耐久素材 | 大型紙袋印刷 強化素材 100個〜 即日発送 | ZprintPro"
     }
   },
   "a4-flyers": {
@@ -1280,9 +1280,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "A4宣傳單張 / 雙面四色 | 香港A4宣傳單張印刷 157g銅版紙或128g啞粉紙 | ZprintPro智印雲",
-      "en": "A4 Flyers for holiday cards, wedding invitations — ZprintPro智印雲",
-      "ja": "A4チラシ / 両面カラー | A4チラシ印刷 両面4色 100枚〜 即日発送 | ZprintPro智印雲"
+      "zh-hk": "A4宣傳單張 / 雙面四色 | 香港A4宣傳單張印刷 157g銅版紙或128g啞粉紙 | ZprintPro智印港",
+      "en": "A4 Flyers for holiday cards, wedding invitations — ZprintPro智印港",
+      "ja": "A4チラシ / 両面カラー | A4チラシ印刷 両面4色 100枚〜 即日発送 | ZprintPro"
     }
   },
   "a5-flyers": {
@@ -1331,9 +1331,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "A5宣傳單張 / 雙面四色 | 香港A5宣傳單張印刷 128g銅版紙或100g書紙 | ZprintPro智印雲",
-      "en": "A5 Flyers for holiday cards, wedding invitations — ZprintPro智印雲",
-      "ja": "A5チラシ / 両面カラー | A5チラシ印刷 両面4色 100枚〜 即日発送 | ZprintPro智印雲"
+      "zh-hk": "A5宣傳單張 / 雙面四色 | 香港A5宣傳單張印刷 128g銅版紙或100g書紙 | ZprintPro智印港",
+      "en": "A5 Flyers for holiday cards, wedding invitations — ZprintPro智印港",
+      "ja": "A5チラシ / 両面カラー | A5チラシ印刷 両面4色 100枚〜 即日発送 | ZprintPro"
     }
   },
   "double-sided-flyers": {
@@ -1382,9 +1382,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "雙面宣傳單張 / 雙面四色 | 香港雙面宣傳單張印刷 157g銅版紙或128g啞粉紙 | ZprintPro智印雲",
-      "en": "Double-Sided Flyers for holiday cards, wedding invitations — ZprintPro智印雲",
-      "ja": "両面チラシ / 両面カラー | 両面チラシ印刷 両面4色 100枚〜 即日発送 | ZprintPro智印雲"
+      "zh-hk": "雙面宣傳單張 / 雙面四色 | 香港雙面宣傳單張印刷 157g銅版紙或128g啞粉紙 | ZprintPro智印港",
+      "en": "Double-Sided Flyers for holiday cards, wedding invitations — ZprintPro智印港",
+      "ja": "両面チラシ / 両面カラー | 両面チラシ印刷 両面4色 100枚〜 即日発送 | ZprintPro"
     }
   },
   "folded-leaflets": {
@@ -1482,9 +1482,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "厚紙宣傳單張 / 雙面四色 | 香港厚紙宣傳單張印刷 200g或250g銅版紙 | ZprintPro智印雲",
-      "en": "Thick Paper Flyers for holiday cards, wedding invitations — ZprintPro智印雲",
-      "ja": "厚口チラシ / 高耐久 | 厚口チラシ印刷 高耐久 100枚〜 即日発送 | ZprintPro智印雲"
+      "zh-hk": "厚紙宣傳單張 / 雙面四色 | 香港厚紙宣傳單張印刷 200g或250g銅版紙 | ZprintPro智印港",
+      "en": "Thick Paper Flyers for holiday cards, wedding invitations — ZprintPro智印港",
+      "ja": "厚口チラシ / 高耐久 | 厚口チラシ印刷 高耐久 100枚〜 即日発送 | ZprintPro"
     }
   },
   "same-day-flyers": {
@@ -1533,9 +1533,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "即日宣傳單張 / 雙面四色 | 香港即日宣傳單張印刷 157g銅版紙 | ZprintPro智印雲",
-      "en": "Same-Day Flyers for holiday cards, wedding invitations — ZprintPro智印雲",
-      "ja": "即日チラシ / 両面カラー | 即日チラシ印刷 当日仕上げ 100枚〜 | ZprintPro智印雲"
+      "zh-hk": "即日宣傳單張 / 雙面四色 | 香港即日宣傳單張印刷 157g銅版紙 | ZprintPro智印港",
+      "en": "Same-Day Flyers for holiday cards, wedding invitations — ZprintPro智印港",
+      "ja": "即日チラシ / 両面カラー | 即日チラシ印刷 当日仕上げ 100枚〜 | ZprintPro"
     }
   },
   "eco-flyers": {
@@ -1635,9 +1635,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "A2海報印刷 / 防水材質 | 香港A2海報印刷 157g 銅版紙（可升 200g／相紙） | ZprintPro智印雲",
-      "en": "A2 Posters wall art for home decor, gallery walls — ZprintPro智印雲",
-      "ja": "A2ポスター / 防水 | A2ポスター印刷 防水紙 翌日配送 | ZprintPro智印雲"
+      "zh-hk": "A2海報印刷 / 防水材質 | 香港A2海報印刷 157g 銅版紙（可升 200g／相紙） | ZprintPro智印港",
+      "en": "A2 Posters wall art for home decor, gallery walls — ZprintPro智印港",
+      "ja": "A2ポスター / 防水 | A2ポスター印刷 防水紙 翌日配送 | ZprintPro"
     }
   },
   "a1-posters": {
@@ -1687,8 +1687,8 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "A1大幅海報 / 防水材質 | 香港A1大幅海報印刷 157–200g 銅版或相紙 | ZprintPro智印雲",
-      "en": "A1 Posters wall art for home decor, gallery walls — ZprintPro智印雲",
+      "zh-hk": "A1大幅海報 / 防水材質 | 香港A1大幅海報印刷 157–200g 銅版或相紙 | ZprintPro智印港",
+      "en": "A1 Posters wall art for home decor, gallery walls — ZprintPro智印港",
       "ja": "我們支持最大A0尺寸（841×1189mm），更大尺寸可定制拼接。"
     }
   },
@@ -1739,9 +1739,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "戶外海報 / 防水材質 | 香港戶外海報印刷 戶外 PVC／PET／合成紙 | ZprintPro智印雲",
-      "en": "Outdoor Posters wall art for home decor, gallery walls — ZprintPro智印雲",
-      "ja": "屋外ポスター / 防水 | 屋外ポスター印刷 防水・耐光紙 翌日配送 | ZprintPro智印雲"
+      "zh-hk": "戶外海報 / 防水材質 | 香港戶外海報印刷 戶外 PVC／PET／合成紙 | ZprintPro智印港",
+      "en": "Outdoor Posters wall art for home decor, gallery walls — ZprintPro智印港",
+      "ja": "屋外ポスター / 防水 | 屋外ポスター印刷 防水・耐光紙 翌日配送 | ZprintPro"
     }
   },
   "display-posters": {
@@ -1791,7 +1791,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "我們支持最大A0尺寸（841×1189mm），更大尺寸可定制拼接。",
-      "en": "Display Posters wall art for home decor, gallery walls — ZprintPro智印雲",
+      "en": "Display Posters wall art for home decor, gallery walls — ZprintPro智印港",
       "ja": "我們提供戶外防水防曬材質，適合長期戶外展示。"
     }
   },
@@ -1841,9 +1841,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "藝術海報 / 防水材質 | 香港藝術海報印刷 PP 合成紙 | ZprintPro智印雲",
-      "en": "Art Posters wall art for home decor, gallery walls — ZprintPro智印雲",
-      "ja": "アートポスター / 防水 | アートポスター印刷 防水紙 翌日配送 | ZprintPro智印雲"
+      "zh-hk": "藝術海報 / 防水材質 | 香港藝術海報印刷 PP 合成紙 | ZprintPro智印港",
+      "en": "Art Posters wall art for home decor, gallery walls — ZprintPro智印港",
+      "ja": "アートポスター / 防水 | アートポスター印刷 防水紙 翌日配送 | ZprintPro"
     }
   },
   "adhesive-posters": {
@@ -1892,9 +1892,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "背膠海報 / 防水材質 | 香港背膠海報印刷 150g–180g 背膠 PP／鑄造級 PVC | ZprintPro智印雲",
-      "en": "Adhesive Posters wall art for home decor, gallery walls — ZprintPro智印雲",
-      "ja": "粘着ポスター / 防水 | 粘着ポスター印刷 防水紙 翌日配送 | ZprintPro智印雲"
+      "zh-hk": "背膠海報 / 防水材質 | 香港背膠海報印刷 150g–180g 背膠 PP／鑄造級 PVC | ZprintPro智印港",
+      "en": "Adhesive Posters wall art for home decor, gallery walls — ZprintPro智印港",
+      "ja": "粘着ポスター / 防水 | 粘着ポスター印刷 防水紙 翌日配送 | ZprintPro"
     }
   },
   "cosmetic-boxes": {
@@ -1949,7 +1949,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "化妝品包裝盒 4 種盒型 100 個起印 FDA 級安全 燙金 UV",
-      "en": "Custom Cosmetic Boxes for pet food and brand labels — ZprintPro智印雲",
+      "en": "Custom Cosmetic Boxes for pet food and brand labels — ZprintPro智印港",
       "ja": "化粧品パッケージボックス 4 種類 100 個〜 FDA対応 箔押し UV"
     }
   },
@@ -2000,7 +2000,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "一般為100個起訂，定制盒型需500個起。",
-      "en": "Custom Food Boxes for pet food and brand labels — ZprintPro智印雲",
+      "en": "Custom Food Boxes for pet food and brand labels — ZprintPro智印港",
       "ja": "可以。我們支持各種盒型（天地蓋、抽屜盒、書型盒等）的完全定制。"
     }
   },
@@ -2051,9 +2051,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "快遞盒/飛機盒 / 訂製 | 香港快遞盒/飛機盒訂製 E／B 坑瓦楞或白卡裱瓦（依載重） | ZprintPro智印雲",
-      "en": "Custom Mailer Boxes for pet food and brand labels — ZprintPro智印雲",
-      "ja": "メーラーボックス / 宅配対応 | メーラーボックス印刷 厚紙 100個〜 日本向け | ZprintPro智印雲"
+      "zh-hk": "快遞盒/飛機盒 / 訂製 | 香港快遞盒/飛機盒訂製 E／B 坑瓦楞或白卡裱瓦（依載重） | ZprintPro智印港",
+      "en": "Custom Mailer Boxes for pet food and brand labels — ZprintPro智印港",
+      "ja": "メーラーボックス / 宅配対応 | メーラーボックス印刷 厚紙 100個〜 日本向け | ZprintPro"
     }
   },
   "folding-boxes": {
@@ -2103,7 +2103,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "一般為100個起訂，定制盒型需500個起。",
-      "en": "Custom Folding Boxes for pet food and brand labels — ZprintPro智印雲",
+      "en": "Custom Folding Boxes for pet food and brand labels — ZprintPro智印港",
       "ja": "可以。我們支持各種盒型（天地蓋、抽屜盒、書型盒等）的完全定制。"
     }
   },
@@ -2154,7 +2154,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "一般為100個起訂，定制盒型需500個起。",
-      "en": "Custom Rigid Boxes for pet food and brand labels — ZprintPro智印雲",
+      "en": "Custom Rigid Boxes for pet food and brand labels — ZprintPro智印港",
       "ja": "可以。我們支持各種盒型（天地蓋、抽屜盒、書型盒等）的完全定制。"
     }
   },
@@ -2204,9 +2204,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "燙金利是封 / 燙金 UV | 香港燙金利是封印刷 120g紅色紙張 | ZprintPro智印雲",
-      "en": "Foil Red Packets for holiday cards, wedding invitations — ZprintPro智印雲",
-      "ja": "箔押し年賀状 / 箔押し | 箔押し年賀状印刷 箔押し加工 100個〜 | ZprintPro智印雲"
+      "zh-hk": "燙金利是封 / 燙金 UV | 香港燙金利是封印刷 120g紅色紙張 | ZprintPro智印港",
+      "en": "Foil Red Packets for holiday cards, wedding invitations — ZprintPro智印港",
+      "ja": "箔押し年賀状 / 箔押し | 箔押し年賀状印刷 箔押し加工 100個〜 | ZprintPro"
     }
   },
   "embossed-red-packets": {
@@ -2254,9 +2254,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "浮雕利是封 / 燙金 UV | 香港浮雕利是封印刷 150g紅色紙張 | ZprintPro智印雲",
-      "en": "Embossed Red Packets for holiday cards, wedding invitations — ZprintPro智印雲",
-      "ja": "エンボス年賀状 / エンボス | エンボス年賀状印刷 エンボス加工 100個〜 | ZprintPro智印雲"
+      "zh-hk": "浮雕利是封 / 燙金 UV | 香港浮雕利是封印刷 150g紅色紙張 | ZprintPro智印港",
+      "en": "Embossed Red Packets for holiday cards, wedding invitations — ZprintPro智印港",
+      "ja": "エンボス年賀状 / エンボス | エンボス年賀状印刷 エンボス加工 100個〜 | ZprintPro"
     }
   },
   "custom-red-packets": {
@@ -2306,7 +2306,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "一般為500個起訂，春節旺季建議提前1個月下單。",
-      "en": "Custom Red Packets for holiday cards, wedding invitations — ZprintPro智印雲",
+      "en": "Custom Red Packets for holiday cards, wedding invitations — ZprintPro智印港",
       "ja": "可以。我們提供燙金、燙銀、浮雕等多種工藝的Logo定制。"
     }
   },
@@ -2506,9 +2506,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "掛牆年曆 / 企業禮品 | 香港掛牆年曆印刷 250g–300g銅版紙或啞粉紙 | ZprintPro智印雲",
+      "zh-hk": "掛牆年曆 / 企業禮品 | 香港掛牆年曆印刷 250g–300g銅版紙或啞粉紙 | ZprintPro智印港",
       "en": "Custom wall calendars with wire-bound spiral, premium materials — ZprintPro",
-      "ja": "壁掛けカレンダー / 高品質 | 壁掛けカレンダー印刷 高品質紙 翌日配送 | ZprintPro智印雲"
+      "ja": "壁掛けカレンダー / 高品質 | 壁掛けカレンダー印刷 高品質紙 翌日配送 | ZprintPro"
     }
   },
   "desk-calendars": {
@@ -2557,9 +2557,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "座檯年曆 / 企業禮品 | 香港座檯年曆印刷 200g–250g銅版紙或卡紙 | ZprintPro智印雲",
+      "zh-hk": "座檯年曆 / 企業禮品 | 香港座檯年曆印刷 200g–250g銅版紙或卡紙 | ZprintPro智印港",
       "en": "Custom desk calendars with wire-bound spiral, premium materials — ZprintPro",
-      "ja": "デスクカレンダー / 高品質 | デスクカレンダー印刷 高品質紙 翌日配送 | ZprintPro智印雲"
+      "ja": "デスクカレンダー / 高品質 | デスクカレンダー印刷 高品質紙 翌日配送 | ZprintPro"
     }
   },
   "custom-calendars": {
@@ -2808,9 +2808,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "PVC餐牌 / 防水覆膜 | 香港PVC餐牌製作 0.5mm–1.0mm透明或白色PVC膠片 | ZprintPro智印雲",
+      "zh-hk": "PVC餐牌 / 防水覆膜 | 香港PVC餐牌製作 0.5mm–1.0mm透明或白色PVC膠片 | ZprintPro智印港",
       "en": "Custom pvc menus with laminated durable, premium materials — ZprintPro",
-      "ja": "PVC menu / 防水ラミネート | PVC menu印刷 防水ラミネート 翌日配送 | ZprintPro智印雲"
+      "ja": "PVC menu / 防水ラミネート | PVC menu印刷 防水ラミネート 翌日配送 | ZprintPro"
     }
   },
   "laminated-menus": {
@@ -2859,9 +2859,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "過膠餐牌 / 防水覆膜 | 香港過膠餐牌製作 200g–250g銅版紙或啞粉紙 | ZprintPro智印雲",
+      "zh-hk": "過膠餐牌 / 防水覆膜 | 香港過膠餐牌製作 200g–250g銅版紙或啞粉紙 | ZprintPro智印港",
       "en": "Custom laminated menus with laminated durable, premium materials — ZprintPro",
-      "ja": "ラミネート menu / 防水 | ラミネート menu印刷 防水加工 翌日配送 | ZprintPro智印雲"
+      "ja": "ラミネート menu / 防水 | ラミネート menu印刷 防水加工 翌日配送 | ZprintPro"
     }
   },
   "hardcover-menus": {
@@ -2910,7 +2910,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "精裝餐牌 / 防水覆膜 | 香港精裝餐牌製作 硬紙板封面裱糊銅版紙 | ZprintPro智印雲",
+      "zh-hk": "精裝餐牌 / 防水覆膜 | 香港精裝餐牌製作 硬紙板封面裱糊銅版紙 | ZprintPro智印港",
       "en": "Custom hardcover menus with laminated durable, premium materials — ZprintPro",
       "ja": "一般為50個起訂，一次性餐牌可接受10個起。"
     }
@@ -3061,9 +3061,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "戶外燈布噴繪 / 高清噴繪 | 香港戶外燈布噴繪製作 外光／內光 PVC 燈布（依場景） | ZprintPro智印雲",
+      "zh-hk": "戶外燈布噴繪 / 高清噴繪 | 香港戶外燈布噴繪製作 外光／內光 PVC 燈布（依場景） | ZprintPro智印港",
       "en": "Custom outdoor vinyl banners with wind-resistant, premium materials — ZprintPro",
-      "ja": "屋外ビニールバナー / 防水 | 屋外ビニールバナー印刷 防水・耐光 翌日配送 | ZprintPro智印雲"
+      "ja": "屋外ビニールバナー / 防水 | 屋外ビニールバナー印刷 防水・耐光 翌日配送 | ZprintPro"
     }
   },
   "roll-up-banners": {
@@ -3112,9 +3112,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "易拉寶 / 高清噴繪 | 香港易拉寶製作 PET／PVC 片或防水合成紙 | ZprintPro智印雲",
+      "zh-hk": "易拉寶 / 高清噴繪 | 香港易拉寶製作 PET／PVC 片或防水合成紙 | ZprintPro智印港",
       "en": "Custom roll up banners with wind-resistant, premium materials — ZprintPro",
-      "ja": "ロールアップバナー / アルミ | ロールアップバナー印刷 アルミスタンド 高画質 | ZprintPro智印雲"
+      "ja": "ロールアップバナー / アルミ | ロールアップバナー印刷 アルミスタンド 高画質 | ZprintPro"
     }
   },
   "adhesive-banners": {
@@ -3162,7 +3162,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "我們支持最寬5米的無縫拼接，長度不限。 | 香港印刷 | ZprintPro智印雲",
+      "zh-hk": "我們支持最寬5米的無縫拼接，長度不限。 | 香港印刷 | ZprintPro智印港",
       "en": "Custom adhesive banners with wind-resistant, premium materials — ZprintPro",
       "ja": "是的。我們使用戶外專用燈布和防水油墨，可承受風吹日曬。"
     }
@@ -3212,9 +3212,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "車身廣告 / 高清噴繪 | 香港車身廣告製作 鑄造級 PVC 車貼 80–100 微米 | ZprintPro智印雲",
+      "zh-hk": "車身廣告 / 高清噴繪 | 香港車身廣告製作 鑄造級 PVC 車貼 80–100 微米 | ZprintPro智印港",
       "en": "Custom vehicle wraps with 3m vinyl wrap, premium materials — ZprintPro",
-      "ja": "車両ラッピング / カスタム | 車両ラッピング印刷 車両フルラップ カスタム | ZprintPro智印雲"
+      "ja": "車両ラッピング / カスタム | 車両ラッピング印刷 車両フルラップ カスタム | ZprintPro"
     }
   },
   "mesh-banners": {
@@ -3262,7 +3262,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "我們支持最寬5米的無縫拼接，長度不限。 | 香港印刷 | ZprintPro智印雲",
+      "zh-hk": "我們支持最寬5米的無縫拼接，長度不限。 | 香港印刷 | ZprintPro智印港",
       "en": "Custom mesh banners with wind-resistant, premium materials — ZprintPro",
       "ja": "是的。我們使用戶外專用燈布和防水油墨，可承受風吹日曬。"
     }
@@ -3313,9 +3313,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "香港畫冊印刷 / 精裝膠裝 | 香港畫冊印刷裝訂 內頁157g–200g銅版紙 | ZprintPro智印雲",
+      "zh-hk": "香港畫冊印刷 / 精裝膠裝 | 香港畫冊印刷裝訂 內頁157g–200g銅版紙 | ZprintPro智印港",
       "en": "Custom catalog printing with saddle-stitched, premium materials — ZprintPro",
-      "ja": "カタログ印刷 / 高品質 | カタログ印刷 高品質オフセット 50冊〜 日本向け | ZprintPro智印雲"
+      "ja": "カタログ印刷 / 高品質 | カタログ印刷 高品質オフセット 50冊〜 日本向け | ZprintPro"
     }
   },
   "saddle-stitch-booklets": {
@@ -3364,9 +3364,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "香港騎馬釘小冊子 / 精裝膠裝 | 香港騎馬釘小冊子裝訂 128g–157g銅版紙或書紙 | ZprintPro智印雲",
+      "zh-hk": "香港騎馬釘小冊子 / 精裝膠裝 | 香港騎馬釘小冊子裝訂 128g–157g銅版紙或書紙 | ZprintPro智印港",
       "en": "Custom saddle stitch booklets with premium custom, premium materials — ZprintPro",
-      "ja": "中綴じ冊子 / 中綴じ | 中綴じ冊子印刷 中綴じ/無線綴じ 50冊〜 即日発送 | ZprintPro智印雲"
+      "ja": "中綴じ冊子 / 中綴じ | 中綴じ冊子印刷 中綴じ/無線綴じ 50冊〜 即日発送 | ZprintPro"
     }
   },
   "perfect-bound-books": {
@@ -3514,9 +3514,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "香港線圈筆記本 / 精裝膠裝 | 香港線圈筆記本裝訂 內頁80g–100g書紙或道林紙 | ZprintPro智印雲",
+      "zh-hk": "香港線圈筆記本 / 精裝膠裝 | 香港線圈筆記本裝訂 內頁80g–100g書紙或道林紙 | ZprintPro智印港",
       "en": "Custom spiral notebooks with perfect bound, premium materials — ZprintPro",
-      "ja": "スパイラルノート / リング | スパイラルノート印刷 リング製本 50冊〜 | ZprintPro智印雲"
+      "ja": "スパイラルノート / リング | スパイラルノート印刷 リング製本 50冊〜 | ZprintPro"
     }
   },
   "business-envelopes": {
@@ -3565,9 +3565,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "公司信封 / 開窗信封 | 香港公司信封印刷 80–120g 書紙／本白書紙 | ZprintPro智印雲",
+      "zh-hk": "公司信封 / 開窗信封 | 香港公司信封印刷 80–120g 書紙／本白書紙 | ZprintPro智印港",
       "en": "Custom business envelopes with foil-lined premium, premium materials — ZprintPro",
-      "ja": "会社封筒 / 両面印刷 | 会社封筒印刷 両面4色 マルチサイズ 即日発送 | ZprintPro智印雲"
+      "ja": "会社封筒 / 両面印刷 | 会社封筒印刷 両面4色 マルチサイズ 即日発送 | ZprintPro"
     }
   },
   "colored-envelopes": {
@@ -3616,7 +3616,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "彩色信封 / 開窗信封 | 香港彩色信封印刷 80–120g 書紙／彩色書紙 | ZprintPro智印雲",
+      "zh-hk": "彩色信封 / 開窗信封 | 香港彩色信封印刷 80–120g 書紙／彩色書紙 | ZprintPro智印港",
       "en": "Custom colored envelopes with foil-lined premium, premium materials — ZprintPro",
       "ja": "一般為500個起訂，彩色和特殊材質需1000個起。"
     }
@@ -3716,9 +3716,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "珠光信封 / 開窗信封 | 香港珠光信封印刷 珠光／冰白特種書紙 | ZprintPro智印雲",
+      "zh-hk": "珠光信封 / 開窗信封 | 香港珠光信封印刷 珠光／冰白特種書紙 | ZprintPro智印港",
       "en": "Custom pearl envelopes with foil-lined premium, premium materials — ZprintPro",
-      "ja": "パール封筒 / 高級感 | パール封筒印刷 パール紙 マルチサイズ 即日発送 | ZprintPro智印雲"
+      "ja": "パール封筒 / 高級感 | パール封筒印刷 パール紙 マルチサイズ 即日発送 | ZprintPro"
     }
   },
   "exercise-books": {
@@ -3767,9 +3767,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "香港練習簿印刷 / 校園印刷 | 香港練習簿印刷 80g–100g書紙或道林紙 | ZprintPro智印雲",
+      "zh-hk": "香港練習簿印刷 / 校園印刷 | 香港練習簿印刷 80g–100g書紙或道林紙 | ZprintPro智印港",
       "en": "Custom exercise books with perfect bound, premium materials — ZprintPro",
-      "ja": "練習帳 / 學校向け | 練習帳印刷 中綴じ/無線綴じ 50冊〜 學校向け | ZprintPro智印雲"
+      "ja": "練習帳 / 學校向け | 練習帳印刷 中綴じ/無線綴じ 50冊〜 學校向け | ZprintPro"
     }
   },
   "certificates": {
@@ -3797,7 +3797,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "賞状印刷 | プロ印刷 高品質 | ZprintPro",
-        "description": "賞状印刷サービス、高品質紙に金箔・銀箔オプション可能。学校・企業・スポーツ大会向け表彰状・感謝状、50枚〜即日発送対応、縦書き横書き両対応可能。日本向けDHL配送2-4日追跡番号付き。無料デザインサポート、複数回修正対応、深夜受付OK。| ZprintPro智印雲",
+        "description": "賞状印刷サービス、高品質紙に金箔・銀箔オプション可能。学校・企業・スポーツ大会向け表彰状・感謝状、50枚〜即日発送対応、縦書き横書き両対応可能。日本向けDHL配送2-4日追跡番号付き。無料デザインサポート、複数回修正対応、深夜受付OK。| ZprintPro智印港",
         "h1": "Exquisite certificates with foil stamping",
         "keywords": ["賞状印刷", "賞状印刷 印刷", "certificates", "宿題バッグ印刷", "学生手帳印刷", "教師自作教材", "表彰状印刷", "クラス名札バッグ", "卒業記念アルバム", "卒業証書印刷", "科目分類フォルダー", "無線綴じレジュメ", "中綴じ教材"],
         "body": " fast delivery."
@@ -3818,9 +3818,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "香港證書印刷 / 校園印刷 | 香港證書印刷 200g–250g水印紙或棉質紙 | ZprintPro智印雲",
+      "zh-hk": "香港證書印刷 / 校園印刷 | 香港證書印刷 200g–250g水印紙或棉質紙 | ZprintPro智印港",
       "en": "Custom certificates with embossed seal, premium materials — ZprintPro",
-      "ja": "賞状印刷 / 高品質 | 賞状印刷 高品質紙 金箔オプション 50枚〜 | ZprintPro智印雲"
+      "ja": "賞状印刷 / 高品質 | 賞状印刷 高品質紙 金箔オプション 50枚〜 | ZprintPro"
     }
   },
   "school-flyers": {
@@ -3868,9 +3868,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "香港學校單張 / 校園印刷 | 香港學校單張印刷 128g–157g銅版紙或書紙 | ZprintPro智印雲",
+      "zh-hk": "香港學校單張 / 校園印刷 | 香港學校單張印刷 128g–157g銅版紙或書紙 | ZprintPro智印港",
       "en": "Custom school flyers with same-day printing, premium materials — ZprintPro",
-      "ja": "学校チラシ / 學校向け | 学校チラシ印刷 両面4色 100枚〜 學校向け | ZprintPro智印雲"
+      "ja": "学校チラシ / 學校向け | 学校チラシ印刷 両面4色 100枚〜 學校向け | ZprintPro"
     }
   },
   "textbooks": {
@@ -3918,9 +3918,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "香港教科書印刷 / 校園印刷 | 香港教科書印刷 80g–100g道林紙或書紙 | ZprintPro智印雲",
+      "zh-hk": "香港教科書印刷 / 校園印刷 | 香港教科書印刷 80g–100g道林紙或書紙 | ZprintPro智印港",
       "en": "Custom textbooks with perfect bound, premium materials — ZprintPro",
-      "ja": "教科書 / 高品質 | 教科書印刷 高品質オフセット 50冊〜 學校向け | ZprintPro智印雲"
+      "ja": "教科書 / 高品質 | 教科書印刷 高品質オフセット 50冊〜 學校向け | ZprintPro"
     }
   },
 
@@ -3948,7 +3948,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "マグネット式ギフトボックス | カスタム印刷 | ZprintPro",
-        "description": "マグネット式ギフトボックス印刷サービス、高品質特殊紙採用でマグネット蓋がピタッと閉まる高級感。ギフトブランド・アパレル向け短納期対応、100個〜少量対応、日本向けDHL配送2-4日。無料デザインサポート、複数回修正OK。| ZprintPro智印雲",
+        "description": "マグネット式ギフトボックス印刷サービス、高品質特殊紙採用でマグネット蓋がピタッと閉まる高級感。ギフトブランド・アパレル向け短納期対応、100個〜少量対応、日本向けDHL配送2-4日。無料デザインサポート、複数回修正OK。| ZprintPro智印港",
         "h1": " magnetic closure gift box",
         "keywords": ["マグネット式ギフトボックス", "magnetic closure gift box", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "日本の食品衛生基準", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
         "body": "カスタム マグネット蓋ギフトボックス — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FSC 認証紙、大豆油性インク、FDA セーフ（間接食品接触対応）。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\nマグネット蓋ギフトボックス は ギフトパッケージ・高級小売箱、化粧品・スキンケア製品パッケージ、DTC EC 配送・サブスクリプションボックス の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。packaging 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに マグネット蓋ギフトボックス サービスの設計思想です。\n\n素材は 350g コート紙 + マットラミネート（標準箱）（日常大量使用）、B フルート段ボール（強化配送箱）（プレミアム用途、主力選択）、硬質セットアップ箱 + マグネット蓋（プレミアムギフト）（特殊プロジェクト）の 3 種類。すべて FSC 認証紙、大豆油性インク および FDA セーフ（間接食品接触対応） 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、packaging 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: どんな箱スタイルが対応可能ですか？**\nTuck-end 箱（オートロック、ストレートタック、リバースタック）、セットアップ箱（硬質蓋底）、マグネット蓋箱、引き出し式箱、宅配段ボール箱、オリジナルダイカット形状。すべての標準スタイルに無料型紙テンプレートをご用意。\n\n**Q2: 最小注文数量は？**\n100 個から（標準サイズ版代・型代ゼロ）。カスタムサイズ / ダイカットは 500 個から。標準納期 5-7 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前に 3D モックアップは見られますか？**\nはい — データ提出から 4 時間以内に無料 3D レンダリングをお届け。実物サンプルは有償（¥4,980）で DHL Express にて、お客様デザイン実物印刷入りでお届け。\n\n**Q4: 食品接触対応ですか？**\n食品グレード箱は FDA セーフ接着剤と食品接触対応インク使用、間接食品接触（オートミール、茶、チョコ、スナック）認証済み。直接食品接触（キャンディ、フルーツ）は専用食品グレードライニング対応。食品種別をお知らせいただければ最適素材をご提案します。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
@@ -3960,8 +3960,8 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       { "q": "急件 磁吸翻蓋禮盒", "a": "48 小時快遞 (順豐香港本地派送)" }
     ],
     "imageAlt": {
-      "zh-hk": "磁吸翻蓋禮盒 - 香港本地印刷 智印雲 | 香港印刷 | ZprintPro智印雲",
-      "en": "Custom Magnetic Closure Gift Box for pet food and brand labels — ZprintPro智印雲",
+      "zh-hk": "磁吸翻蓋禮盒 - 香港本地印刷 智印雲 | 香港印刷 | ZprintPro智印港",
+      "en": "Custom Magnetic Closure Gift Box for pet food and brand labels — ZprintPro智印港",
       "ja": "マグネット式ギフトボックス | ZprintPro"
     }
   },
@@ -3990,7 +3990,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "電子製品包装箱 | カスタム印刷 | ZprintPro",
-        "description": "電子製品パッケージボックス印刷サービス、静電気防止加工オプション標準装備。EC・D2Cブランド・精密機器メーカー向け、100個〜少量対応、日本向けDHL短納期配送2-4日追跡番号付き。無料デザインサポート、安全素材採用で商品保護強化、複数回修正OK。| ZprintPro智印雲",
+        "description": "電子製品パッケージボックス印刷サービス、静電気防止加工オプション標準装備。EC・D2Cブランド・精密機器メーカー向け、100個〜少量対応、日本向けDHL短納期配送2-4日追跡番号付き。無料デザインサポート、安全素材採用で商品保護強化、複数回修正OK。| ZprintPro智印港",
         "h1": " electronics packaging box",
         "keywords": ["電子製品包装箱", "electronics packaging box", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "日本の食品衛生基準", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
         "body": "カスタム 電子機器包裝箱 — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FSC 認証紙、大豆油性インク、FDA セーフ（間接食品接触対応）。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\n電子機器包裝箱 は ギフトパッケージ・高級小売箱、化粧品・スキンケア製品パッケージ、DTC EC 配送・サブスクリプションボックス の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。packaging 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに 電子機器包裝箱 サービスの設計思想です。\n\n素材は 350g コート紙 + マットラミネート（標準箱）（日常大量使用）、B フルート段ボール（強化配送箱）（プレミアム用途、主力選択）、硬質セットアップ箱 + マグネット蓋（プレミアムギフト）（特殊プロジェクト）の 3 種類。すべて FSC 認証紙、大豆油性インク および FDA セーフ（間接食品接触対応） 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、packaging 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: どんな箱スタイルが対応可能ですか？**\nTuck-end 箱（オートロック、ストレートタック、リバースタック）、セットアップ箱（硬質蓋底）、マグネット蓋箱、引き出し式箱、宅配段ボール箱、オリジナルダイカット形状。すべての標準スタイルに無料型紙テンプレートをご用意。\n\n**Q2: 最小注文数量は？**\n100 個から（標準サイズ版代・型代ゼロ）。カスタムサイズ / ダイカットは 500 個から。標準納期 5-7 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前に 3D モックアップは見られますか？**\nはい — データ提出から 4 時間以内に無料 3D レンダリングをお届け。実物サンプルは有償（¥4,980）で DHL Express にて、お客様デザイン実物印刷入りでお届け。\n\n**Q4: 食品接触対応ですか？**\n食品グレード箱は FDA セーフ接着剤と食品接触対応インク使用、間接食品接触（オートミール、茶、チョコ、スナック）認証済み。直接食品接触（キャンディ、フルーツ）は専用食品グレードライニング対応。食品種別をお知らせいただければ最適素材をご提案します。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
@@ -4003,7 +4003,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "電子產品包裝盒 - 香港本地印刷 智印雲",
-      "en": "Custom Electronics Packaging Box for pet food and brand labels — ZprintPro智印雲",
+      "en": "Custom Electronics Packaging Box for pet food and brand labels — ZprintPro智印港",
       "ja": "電子製品包装箱 | ZprintPro"
     }
   },
@@ -4032,7 +4032,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "クラフト紙包装箱 | カスタム印刷 | ZprintPro",
-        "description": "クラフト紙パッケージボックス印刷サービス、FSC認証クラフト紙採用でエコ志向ブランドに最適。100個〜即日発送対応、ナチュラル・北欧・カフェブランド向けカスタム印刷、日本向けDHL配送2-4日。無料デザインサポート。| ZprintPro智印雲",
+        "description": "クラフト紙パッケージボックス印刷サービス、FSC認証クラフト紙採用でエコ志向ブランドに最適。100個〜即日発送対応、ナチュラル・北欧・カフェブランド向けカスタム印刷、日本向けDHL配送2-4日。無料デザインサポート。| ZprintPro智印港",
         "h1": " kraft paper packaging box",
         "keywords": ["クラフト紙包装箱", "kraft paper packaging box", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "日本の食品衛生基準", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
         "body": "カスタム クラフト紙箱印刷 — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FSC 認証紙、大豆油性インク、FDA セーフ（間接食品接触対応）。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\nクラフト紙箱印刷 は ギフトパッケージ・高級小売箱、化粧品・スキンケア製品パッケージ、DTC EC 配送・サブスクリプションボックス の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。packaging 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに クラフト紙箱印刷 サービスの設計思想です。\n\n素材は 350g コート紙 + マットラミネート（標準箱）（日常大量使用）、B フルート段ボール（強化配送箱）（プレミアム用途、主力選択）、硬質セットアップ箱 + マグネット蓋（プレミアムギフト）（特殊プロジェクト）の 3 種類。すべて FSC 認証紙、大豆油性インク および FDA セーフ（間接食品接触対応） 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、packaging 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: どんな箱スタイルが対応可能ですか？**\nTuck-end 箱（オートロック、ストレートタック、リバースタック）、セットアップ箱（硬質蓋底）、マグネット蓋箱、引き出し式箱、宅配段ボール箱、オリジナルダイカット形状。すべての標準スタイルに無料型紙テンプレートをご用意。\n\n**Q2: 最小注文数量は？**\n100 個から（標準サイズ版代・型代ゼロ）。カスタムサイズ / ダイカットは 500 個から。標準納期 5-7 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前に 3D モックアップは見られますか？**\nはい — データ提出から 4 時間以内に無料 3D レンダリングをお届け。実物サンプルは有償（¥4,980）で DHL Express にて、お客様デザイン実物印刷入りでお届け。\n\n**Q4: 食品接触対応ですか？**\n食品グレード箱は FDA セーフ接着剤と食品接触対応インク使用、間接食品接触（オートミール、茶、チョコ、スナック）認証済み。直接食品接触（キャンディ、フルーツ）は専用食品グレードライニング対応。食品種別をお知らせいただければ最適素材をご提案します。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
@@ -4045,7 +4045,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "牛皮紙包裝印刷盒 - 香港本地印刷 智印雲",
-      "en": "Custom Kraft Paper Packaging Box for pet food and brand labels — ZprintPro智印雲",
+      "en": "Custom Kraft Paper Packaging Box for pet food and brand labels — ZprintPro智印港",
       "ja": "クラフト紙包装箱 | ZprintPro"
     }
   },
@@ -4074,7 +4074,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "引き出し式ギフトボックス | カスタム印刷 | ZprintPro",
-        "description": "引き出し式ギフトボックス印刷サービス、高級特殊紙採用でスルスル引き心地滑らか。ギフトブランド・ジュエリー・化粧品向け短納期対応、100個〜少量対応、日本向けDHL配送2-4日。無料デザインサポート、複数回修正OK。| ZprintPro智印雲",
+        "description": "引き出し式ギフトボックス印刷サービス、高級特殊紙採用でスルスル引き心地滑らか。ギフトブランド・ジュエリー・化粧品向け短納期対応、100個〜少量対応、日本向けDHL配送2-4日。無料デザインサポート、複数回修正OK。| ZprintPro智印港",
         "h1": " drawer slide gift box",
         "keywords": ["引き出し式ギフトボックス", "drawer slide gift box", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "日本の食品衛生基準", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
         "body": "カスタム 引き出し式ギフトボックス — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FSC 認証紙、大豆油性インク、FDA セーフ（間接食品接触対応）。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\n引き出し式ギフトボックス は ギフトパッケージ・高級小売箱、化粧品・スキンケア製品パッケージ、DTC EC 配送・サブスクリプションボックス の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。packaging 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに 引き出し式ギフトボックス サービスの設計思想です。\n\n素材は 350g コート紙 + マットラミネート（標準箱）（日常大量使用）、B フルート段ボール（強化配送箱）（プレミアム用途、主力選択）、硬質セットアップ箱 + マグネット蓋（プレミアムギフト）（特殊プロジェクト）の 3 種類。すべて FSC 認証紙、大豆油性インク および FDA セーフ（間接食品接触対応） 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、packaging 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: どんな箱スタイルが対応可能ですか？**\nTuck-end 箱（オートロック、ストレートタック、リバースタック）、セットアップ箱（硬質蓋底）、マグネット蓋箱、引き出し式箱、宅配段ボール箱、オリジナルダイカット形状。すべての標準スタイルに無料型紙テンプレートをご用意。\n\n**Q2: 最小注文数量は？**\n100 個から（標準サイズ版代・型代ゼロ）。カスタムサイズ / ダイカットは 500 個から。標準納期 5-7 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前に 3D モックアップは見られますか？**\nはい — データ提出から 4 時間以内に無料 3D レンダリングをお届け。実物サンプルは有償（¥4,980）で DHL Express にて、お客様デザイン実物印刷入りでお届け。\n\n**Q4: 食品接触対応ですか？**\n食品グレード箱は FDA セーフ接着剤と食品接触対応インク使用、間接食品接触（オートミール、茶、チョコ、スナック）認証済み。直接食品接触（キャンディ、フルーツ）は専用食品グレードライニング対応。食品種別をお知らせいただければ最適素材をご提案します。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
@@ -4087,7 +4087,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "抽屜式禮盒印刷 - 香港本地印刷 智印雲",
-      "en": "Custom Drawer Slide Gift Box for pet food and brand labels — ZprintPro智印雲",
+      "en": "Custom Drawer Slide Gift Box for pet food and brand labels — ZprintPro智印港",
       "ja": "引き出し式ギフトボックス | ZprintPro"
     }
   },
@@ -4116,7 +4116,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "フルーツ・食品ラベル印刷 | カスタム印刷 | ZprintPro",
-        "description": "フルーツ食品ラベルステッカー印刷サービス、食品FDA認証素材採用で果物・食品ブランドに最適。防水・耐油加工で冷蔵庫保管対応、剥がしやすく糊残なし特殊粘着、100枚〜即日発送対応、日本向けDHL配送2-4日追跡番号付き。無料デザインサポート、複数回修正OK。| ZprintPro智印雲",
+        "description": "フルーツ食品ラベルステッカー印刷サービス、食品FDA認証素材採用で果物・食品ブランドに最適。防水・耐油加工で冷蔵庫保管対応、剥がしやすく糊残なし特殊粘着、100枚〜即日発送対応、日本向けDHL配送2-4日追跡番号付き。無料デザインサポート、複数回修正OK。| ZprintPro智印港",
         "h1": " fruit & food label stickers",
         "keywords": ["フルーツ・食品ラベル印刷", "fruit & food label stickers", "ステッカー印刷", "防水ステッカー", "オリジナルステッカー", "小ロットステッカー", "ダイカットステッカー", "透明ステッカー", "商品ラベル", "カスタムステッカー", "剥がせるステッカー", "ロゴステッカー", "1000枚ステッカー", "A4 ステッカー", "Etsy ステッカー", "QR コードステッカー", "賞味期限ステッカー", "ノーリボン残留", "残留なし", "スキャン可能ステッカー", "円形ステッカー", "ウェディングステッカー", "学生ステッカー", "成分表示", "成分表示ステッカー", "ラベルステッカー印刷", "イベント双方向", "物流追跡", "ガラスステッカー", "誕生日ステッカー", "エコノミーステッカー", "ウェルカムステッカー", "透明ステッカー印刷", "食品グレードステッカー", "高透明ステッカー"],
         "body": "カスタム フルーツ・食品ラベルシール — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FDA 認可接着剤（間接食品接触対応）、SGS 移行テスト済み。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\nフルーツ・食品ラベルシール は 食品ラベル・FDA 準拠パッケージ、屋外サイン・設備デカール、小売商品ラベル・DTC ブランドステッカー の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。stickers 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに フルーツ・食品ラベルシール サービスの設計思想です。\n\n素材は PVC ビニール（3.4 mil、UV 耐性インク）（日常大量使用）、BOPP 透明フィルム（2.6 mil、防水）（プレミアム用途、主力選択）、コート紙（70lb、短期プロモーション用）（特殊プロジェクト）の 3 種類。すべて FDA 認可接着剤（間接食品接触対応） および SGS 移行テスト済み 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、stickers 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: ステッカーの屋外耐久年数は？**\nPVC ビニールステッカーは屋外で 3-5 年、屋内では 1-2 年の耐久性があります。マットラミネート加工で紫外線耐性も確保。BOPP フィルムも同等の耐久性を実現し、透明ラベルに最適です。すべての素材は UV 耐性インク使用で日焼けによる色褪せを防止します。\n\n**Q2: 最小注文数量は？**\n100 枚から対応、版代・型代ゼロ。スモールバッチシリーズは 50 枚まで対応可能。標準納期は 3-5 営業日、沖縄・北海道含む日本全国送料無料、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前にデジタル校正は確認できますか？**\nはい — データ提出から 2 時間以内に無料デジタル校正 PDF を提供。無料修正は 2 回まで対応可能です。実物サンプルは有償（¥2,980）で素材・加工見本セットを DHL Express でお届けします。\n\n**Q4: 日本への配送はどのくらいですか？**\n日本全国送料無料、沖縄県・北海道も同料金、DHL 国際配送で 2-4 日納品。お急ぎ便（48 時間制作 + 1 日配送）は 30% 増で対応。沖縄・北海道も追加料金一切なし。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
@@ -4129,7 +4129,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     ],
     "imageAlt": {
       "zh-hk": "水果及食品標籤印刷 - 香港本地印刷 智印雲",
-      "en": "Custom Food Label Stickers for pet food and brand labels — ZprintPro智印雲",
+      "en": "Custom Food Label Stickers for pet food and brand labels — ZprintPro智印港",
       "ja": "フルーツ・食品ラベル印刷 | ZprintPro"
     }
   },
@@ -4157,7 +4157,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "同人誌印刷 コミケ対応 | 即日発送 24時間特急",
-        "description": "同人誌印刷サービス、無線綴じ・中綴じ・PUR製本対応。A5/B5サイズ表紙フルカラー本文モノクロ印刷。コミケ・即売会向け50冊〜少部数対応、即日発送オプション、日本全国DHL配送2-4日追跡番号付き。無料デザインサポート、24時間特急対応可能。| ZprintPro智印雲",
+        "description": "同人誌印刷サービス、無線綴じ・中綴じ・PUR製本対応。A5/B5サイズ表紙フルカラー本文モノクロ印刷。コミケ・即売会向け50冊〜少部数対応、即日発送オプション、日本全国DHL配送2-4日追跡番号付き。無料デザインサポート、24時間特急対応可能。| ZprintPro智印港",
         "h1": "同人誌印刷 コミケ・即売会対応",
         "keywords": ["同人誌印刷", "コミケ", "同人誌", "即売会", "印刷", "A5同人誌", "少部数印刷", "コミケ前特急", "即売会印刷"],
         "body": "<p>コミケ・即売会・創作イベント向けに最適化された同人誌印刷。表紙フルカラー + 本文モノクロの標準構成から、表紙本文ともにフルカラーのプレミアム構成まで対応。本文 10 部からの少部数対応で、個人サークル・初心者も気軽に発注可能。コミケ開催前は 24 時間特急対応で、在庫切れの追加印刷も迅速対応。</p><h3>サイズ・仕様</h3><p>材質: FSC認証 上質紙 90g/コート紙 90g (表紙)。サイズ: A5 (148×210mm) / B5 (182×257mm) / A4 (オプション)。印刷方式: 表紙: オフセット4色 / 本文: オンデマンド or オフセット。加工: 無線綴じ / 中綴じ (8-64p) / 背表紙。</p>"
@@ -4206,7 +4206,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "アクリルキーホルダー キャラクター形 推し活応援 | 10個から",
-        "description": "アクリルキーホルダー印刷サービス、高透明2mm/3mmアクリル採用で完全カスタム形状対応。日本同人・アニメ・VTuber・推し活ブランド向け、50個〜即日発送対応、日本向けDHL配送2-4日追跡番号付き。無料デザインサポート、複数回修正OK、安全ピンオプション。| ZprintPro智印雲",
+        "description": "アクリルキーホルダー印刷サービス、高透明2mm/3mmアクリル採用で完全カスタム形状対応。日本同人・アニメ・VTuber・推し活ブランド向け、50個〜即日発送対応、日本向けDHL配送2-4日追跡番号付き。無料デザインサポート、複数回修正OK、安全ピンオプション。| ZprintPro智印港",
         "h1": "アクリルキーホルダー キャラクター形 推し活応援",
         "keywords": ["アクリルキーホルダー", "キャラキーホルダー", "推し活", "VTuber グッズ", "アニメ グッズ", "カスタム キーホルダー", "同人グッズ", "オタク グッズ"],
         "body": "<p>推し活応援・キャラクターグッズ・アクリルスタンドの小型版。完全なカスタム形状対応 — VTuber のロゴ、推しキャラのイラストをそのままキーホルダー化。2mm と 3mm 厚で価格・手触りが異なる。10 個から対応で、個人作家・同人イベント参加にも最適。</p><h3>サイズ・仕様</h3><p>材質: 透明アクリル板 2mm/3mm (オプション: 白ベース/満版印刷)。サイズ: 30-80mm (カスタム形状可、Illustrator パスデータ入稿)。印刷方式: UV インクジェット 4色 (CMYK + 白インク)。加工: 安全ピン/ボールチェーン/ナスカン/ヘッダーOPP袋封入。</p>"
@@ -4227,7 +4227,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
     ],
     "imageAlt": {
-      "zh-hk": "亞克力鑰匙扣-角色造型-2mm-3mm | 香港印刷 | ZprintPro智印雲",
+      "zh-hk": "亞克力鑰匙扣-角色造型-2mm-3mm | 香港印刷 | ZprintPro智印港",
       "en": "acrylic-keychain-custom-shape-2mm-3mm",
       "ja": "アクリルキーホルダー-キャラクター形-2mm-3mm"
     }
@@ -4255,7 +4255,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "缶バッジ印刷 57mm 76mm | 推し活応援 コミケ対応",
-        "description": "缶バッジ印刷サービス、高品質アルミ素材採用で57mm標準+76mm大判+44mmミニ対応。安全ピン付き、フルカラー印刷、日本同人・アニメ・推し活・物販ブランド向け、50個〜即日発送、日本向けDHL配送2-4日。無料デザインサポート。| ZprintPro智印雲",
+        "description": "缶バッジ印刷サービス、高品質アルミ素材採用で57mm標準+76mm大判+44mmミニ対応。安全ピン付き、フルカラー印刷、日本同人・アニメ・推し活・物販ブランド向け、50個〜即日発送、日本向けDHL配送2-4日。無料デザインサポート。| ZprintPro智印港",
         "h1": "缶バッジ印刷 57mm 76mm コミケ・推し活応援",
         "keywords": ["缶バッジ印刷", "缶バッジ", "バッジ", "推し活", "コミケ", "VTuber グッズ", "アニメ グッズ", "安全ピン バッジ"],
         "body": "<p>コミケ・推し活・VTuber 物販に必須の缶バッジ。57mm 標準サイズと 76mm 大判、44mm ミニの 3 サイズ展開。フルカラー印刷でイラスト・ロゴをそのまま再現。安全ピン標準装備で衣服・カバンに簡単装着。10 個から少部数対応で、個人サークルも気軽に発注可能。</p><h3>サイズ・仕様</h3><p>材質: 金属ベース + 紙/ペット印刷面 + 安全ピン。サイズ: 57mm (標準) / 76mm (大判) / 44mm (ミニ)。印刷方式: オフセット/デジタル 4色 (CMYK)。加工: 安全ピン標準装備 / OPP袋個別包装オプション。</p>"
@@ -4325,7 +4325,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
     ],
     "imageAlt": {
-      "zh-hk": "明信片套裝-和紙風-105x148mm | 香港印刷 | ZprintPro智印雲",
+      "zh-hk": "明信片套裝-和紙風-105x148mm | 香港印刷 | ZprintPro智印港",
       "en": "postcard-set-washi-style-105x148mm",
       "ja": "ポストカードセット-和紙風-105x148mm"
     }
@@ -4374,7 +4374,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
     ],
     "imageAlt": {
-      "zh-hk": "環保托特袋-有機棉-12oz-帆布 | 香港印刷 | ZprintPro智印雲",
+      "zh-hk": "環保托特袋-有機棉-12oz-帆布 | 香港印刷 | ZprintPro智印港",
       "en": "eco-tote-bag-organic-cotton-12oz-canvas",
       "ja": "エコトートバッグ-オーガニックコットン-12oz"
     }
@@ -4409,9 +4409,9 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     },
     "imageAlt": {
-      "zh-hk": "香港畢業紀念冊 / 校園印刷 | 香港畢業紀念冊印刷 環保紙 | ZprintPro智印雲",
+      "zh-hk": "香港畢業紀念冊 / 校園印刷 | 香港畢業紀念冊印刷 環保紙 | ZprintPro智印港",
       "en": "Graduation Yearbook Printing / School Publication | Free Design Mockup Free Shipping | ZprintPro",
-      "ja": "卒業記念アルバム / 校園印刷 | 卒業記念アルバム印刷 環保紙 | ZprintPro智印雲"
+      "ja": "卒業記念アルバム / 校園印刷 | 卒業記念アルバム印刷 環保紙 | ZprintPro"
     },
     "faqs": [
       { "q": "畢業紀念冊印刷", "a": "香港畢業紀念冊 50 本起印, 騎馬釘 / 膠裝 / 精裝三種裝訂可選" },

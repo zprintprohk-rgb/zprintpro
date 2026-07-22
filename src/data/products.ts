@@ -19578,7 +19578,7 @@ export function getProductImageAlt(product: Product, locale: string): string {
   const shortNameEn = (product.nameEn.split('|')[0] || product.nameEn).trim();
   const shortNameJa = (product.nameJa.split('|')[0] || product.nameJa).trim();
   const titles: Record<string, string> = {
-    'zh-hk': `香港${shortName}印刷 | ${product.description.slice(0, 25)} | ZprintPro智印雲`,
+    'zh-hk': `香港${shortName}印刷 | ${product.description.slice(0, 25)} | ZprintPro智印港`,
     en: `${shortNameEn} Printing | ${product.descriptionEn.slice(0, 35)} | ZprintPro`,
     ja: `${shortNameJa} | ${product.descriptionJa.slice(0, 25)} | ZprintPro`,
   };

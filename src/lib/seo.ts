@@ -286,7 +286,8 @@ export function generateHomeMetadata(locale: Locale): Metadata {
       title: meta.title,
       description: meta.description,
       url: `${siteConfig.url}/${locale}/`,
-      siteName: siteConfig.name,
+      // 2026-07-22 v6: 智印港 zh-hk 品牌词, en/ja 纯英文 (NAP 脱钩 §13.10)
+      siteName: locale === 'zh-hk' ? siteConfig.displayName : 'ZprintPro',
       locale: lang,
       type: 'website',
       images: [
@@ -294,7 +295,7 @@ export function generateHomeMetadata(locale: Locale): Metadata {
           url: `${siteConfig.url}/og-image.jpg`,
           width: 1200,
           height: 630,
-          alt: siteConfig.name,
+          alt: locale === 'zh-hk' ? siteConfig.displayName : 'ZprintPro',
         },
       ],
     },
@@ -1553,7 +1554,8 @@ export function generateQuotePageMetadata(locale: Locale): Metadata {
       title: titles[locale],
       description: descriptions[locale],
       url: `${siteConfig.url}/${locale}/quote/`,
-      siteName: siteConfig.name,
+      // 2026-07-22 v6: 智印港 zh-hk 品牌词, en/ja 纯英文 (NAP 脱钩 §13.10)
+      siteName: locale === 'zh-hk' ? siteConfig.displayName : 'ZprintPro',
       locale: lang === 'zh-HK' ? 'zh_HK' : lang,
       type: 'website',
     },
