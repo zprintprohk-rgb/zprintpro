@@ -6,7 +6,7 @@
     "strategy": "intuan.com 专版卡盒/微坑盒报价 × 1.3 (user 2026-07-17 拍板); 跨境 B2B 主战场, en/ja 价格独立 (含国际运费)",
     "src_legend": {"anchor": "真实抓取锚点", "modeled": "成本结构建模, 待 intuan 登录询价校准", "pending": "待询价", "intuan-2026-07-18": "intuan.com 登录态真实询价 CNY×1.3×1.087→HKD (intuan-real-quotes-2026-07-18.json)"},
     "updatedAt": "2026-07-18",
-    "note": "2026-07-18 校准: mailer-boxes 用 intuan 微坑盒实询价, kraft-paper-packaging-box 用 intuan 双插卡盒实询价 (均 5 档, 替换 modeled; mailer-boxes 原 300 档与校准价倒挂, 移除)。gift-boxes / food-boxes 未动。",
+    "note": "2026-07-22 校准: gift-boxes 合并入 rigid-boxes (M3 v6, 13→12 SKU)。mailer-boxes / kraft-paper-packaging-box / food-boxes 未动。",
     "references": {
       "intuan_card_box": "合版卡盒 黑白1.6分/p起; 专版卡盒 (双插/锁底/平粘) 全参数报价需登录",
       "alibaba_export": "同类工厂出口价 $0.50-3.99/个 (500个起) — intuan.en.alibaba.com",
@@ -35,15 +35,6 @@
         {"qty": 2000, "price": 989, "unit": 0.49, "src": "intuan-2026-07-18"},
         {"qty": 3000, "price": 1153, "unit": 0.38, "src": "intuan-2026-07-18"},
         {"qty": 5000, "price": 1431, "unit": 0.29, "src": "intuan-2026-07-18"}
-      ]
-    },
-    {
-      "sku": "gift-boxes",
-      "config": {"type": "天地盖/书型盒", "paper": "157g双铜裱1200g灰板", "finish": "覆哑膜"},
-      "tiers": [
-        {"qty": 300, "price": 3900, "unit": 13.00, "src": "pending", "note": "手工盒报价待询"},
-        {"qty": 500, "price": 5500, "unit": 11.00, "src": "pending"},
-        {"qty": 1000, "price": 9000, "unit": 9.00, "src": "pending"}
       ]
     },
     {

@@ -1897,58 +1897,6 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       "ja": "粘着ポスター / 防水 | 粘着ポスター印刷 防水紙 翌日配送 | ZprintPro智印雲"
     }
   },
-  "gift-boxes": {
-    "name": {
-      "zh-hk": "禮品盒定制",
-      "en": "Gift Boxes",
-      "ja": "ギフトボックス"
-    },
-    "seo": {
-      "zh-hk": {
-        "title": "訂製禮品盒 | 燙金 UV 100%訂製 | 智印雲 ZprintPro",
-        "description": "禮品盒訂製印刷，100個起印，HK$4.5起/個。磁吸盒天地盒抽屜盒，燙金UV壓凹工藝，免費刀模設計。適合品牌活動週年慶贈品，即日打樣，3-5天交貨。100張起印, 順豐本地速遞, 立即 WhatsApp 報價。ZprintPro 15+ 年自有品牌。",
-        
-        "h1": "禮品盒定制",
-        "keywords": ["禮品盒", "禮盒訂製", "禮物盒訂製", "包裝盒印刷", "瓦楞紙盒", "定制包裝", "化妝品盒", "食品盒", "快遞盒", "天地蓋盒", "紙盒定制", "高檔禮盒", "100個起印", "2天出貨", "FSC認證", "HK衛生署", "QR Code包裝", "UV彩盒", "中秋禮盒印刷", "保健品包裝", "免費打樣", "免費排版", "出口包裝", "包裝盒價格", "包裝盒快印", "化妝品包裝盒", "即日報價", "可降解包裝", "婚禮喜糖盒", "定製包裝盒", "定製包裝箱", "定製喜糖盒", "小批量包裝盒", "小批量彩盒", "小批量快印", "工業包裝", "彩盒印刷", "抽屜式彩盒", "永續包裝", "燙金印刷", "燙金禮盒", "燙銀印刷", "環保包裝盒", "瓦楞紙盒印刷", "磁吸盒", "禮品彩盒", "窗口包裝", "窗口設計", "節慶包裝盒", "絲帶設計", "經濟包裝", "綠色印刷", "緊急印刷", "美妝包裝", "藥品包裝盒", "防潮包裝", "食品級紙盒", "香港本地印刷"],
-        "body": "禮品盒定製 專為香港中小企、本地餐廳及跨境電商品牌設計。100 張起印，無開版費，港九新界 $500 以上免費順豐本地速遞，辨公室 / 港鐵站交收。ISO 9001 認證工廠，FSC 認證紙張，大豆油墨，FDA 認可（適用於間接食品接觸），15+ 年印刷經驗。\n\n禮品盒定製 廣泛應用於 禮品包裝及精品零售盒、化妝品及護膚品包裝、DTC 電商運輸及訂閱制禮盒 等本地場景。無論您需要小店餐廳的推廣單張、活動入口的指示牌，還是跨境零售品牌的精品包裝，禮品盒定製 都能為香港本地品牌提供快速、靈活、符合成本預期的印刷方案。\n\n材質選擇包括 350 克光面卡紙配啞光膠（標準盒）（標準用途，性價比高）、B 楞瓦楞紙（重型運輸箱）（中檔質感，主流選擇）、硬身禮盒配磁石蓋（高級禮品）（特殊需求或精品用途）。三種材質均通過 FSC 認證紙張，大豆油墨 及 FDA 認可（適用於間接食品接觸） 認證。表面處理可選啞光膠、亮面膠、局部 UV、燙金，全部支援 CMYK 全彩印刷及專色白墨（如適用）。\n\n交稿規範：300 DPI、CMYK 色彩模式、3mm 出血、字體外框化。提交檔案後 2 小時內提供免費數碼打稿。如未有設計檔案，我們專業設計團隊免費為您打稿，只需透過 WhatsApp 提供品牌顏色、Logo 及參考圖片。每個標準尺寸均提供免費刀模線模板下載。\n\n收費透明：100 張起印，無開版費、無製版費，港九新界 $500 以上免費順豐速遞。標準生產 3-5 個工作天，加急訂單（24 小時打稿 + 2 天生產）加收 20%。即時網上報價 30 秒完成，或 WhatsApp 聯絡客服索取度身訂造方案。\n\n**常見問題**\n\n**Q1: 包裝盒有哪些款式可選？**\n插口盒（自動扣、直插、反插）、硬身盒（上下蓋）、磁石蓋禮盒、抽屜式盒、瓦楞運輸箱、及不規則異形切割盒。所有標準款式均提供免費刀模線模板下載。\n\n**Q2: 最低起印量是多少？**\n100 個起印（標準尺寸無開版費、無刀模費）。自訂尺寸 / 異形切割起印量為 500 個。標準生產 5-7 個工作天，港九新界順豐速遞 1-2 個工作天送達。\n\n**Q3: 落單前可以先看 3D 模擬圖嗎？**\n可以 — 提交檔案後 4 小時內提供免費 3D 渲染圖。如需實物樣本，我們提供 HK$299 付費樣本套裝，DHL 速遞送達，含您的設計印在實際盒材上。\n\n**Q4: 包裝盒適合食品接觸嗎？**\n我們的食品級包裝盒使用 FDA 認可膠水及食品接觸安全油墨，認證適用於間接食品接觸（燕麥、茶、巧克力、零食）。直接食品接觸（糖果、新鮮水果），我們提供專業食品級內襯。請告知食品類型，我們會推薦合適紙材。\n\n準備落單？2 小時免費打稿 — WhatsApp 客服 +852 9810 1133 或點擊頁面「30 秒 AI 報價」按鈕。"
-      },
-      "en": {
-        "title": "Custom Gift Boxes | Free Shipping $99+ | ZprintPro",
-        "description": "Custom gift boxes for premium brands. Rigid setup, folding carton, magnetic closure, foil stamping. 100-MOQ | Free Design | 100 MOQ",
-        "h1": "Gift Boxes 100+ | Rigid Magnetic | ZprintPro",
-        "keywords": ["custom gift boxes","rigid gift boxes","folding carton boxes","magnetic closure boxes","luxury gift boxes","foil stamped gift boxes","premium packaging","gift boxes free shipping","bulk gift boxes","bespoke gift packaging","packaging box printing","gift boxes","cosmetic boxes","food boxes","mailer boxes","corrugated boxes","custom packaging","rigid boxes","folding cartons","product boxes","100pcs MOQ","2-day turnaround","FSC certified","food safety compliance","QR code packaging","mid-autumn gift box printing","health supplement packaging","free proof","free layout","export packaging","cosmetic packaging box","instant quote","compostable packaging","small batch packaging box","industrial packaging","color box printing","drawer color box","sustainable packaging","silver foil printing","eco packaging box","corrugated box","corrugated box printing","magnetic box","gift color box","window design","festival packaging box","green printing","rush printing","beauty packaging","pharmaceutical packaging box","moisture-proof packaging","food-grade box","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
-        "body": "Custom gift boxes designed for US small business, DTC brands, and cross-border e-commerce. Free design mockup, no setup fees, and Free Shipping on US orders over $99. Every order ships from our Asia factory with 4-day delivery to the lower 48 states. ISO 9001 certified production with full FDA compliance where applicable.\n\nGift Boxes are widely used across gift packaging and luxury retail boxes, cosmetic and skincare product packaging, and DTC e-commerce shipping and subscription boxes — whether you are launching a new product line, refreshing your retail shelf presence, or shipping promotional materials to a nationwide customer base. The packaging market rewards brands that ship fast, iterate often, and stay under tight unit-cost targets — that is exactly what our gift boxes service is built for.\n\nMaterial options include 350g coated card with matte lamination (standard box) for everyday high-volume use, Corrugated B-flute (heavy-duty shipping box) for premium applications, and Rigid setup box with magnetic closure (premium gift) for specialty projects. All three are FSC-certified paper, soy-based ink and FDA-safe for indirect food contact (food-grade options), so you can ship into the US market without compliance friction. Print finishes include matte lamination, gloss lamination, spot UV, foil stamping, and full-color CMYK plus white ink where supported.\n\nSubmit print-ready files (300 DPI, CMYK, 3mm bleed, outlined fonts) and we ship a free digital proof within 2 hours. If you do not have design files yet, our in-house design team will mock up your concept at no charge — just share your brand colors, logo, and any reference photos via WhatsApp. We also offer free dieline templates for every standard size.\n\nPricing is transparent: 100-piece minimum, no setup fees, no plate fees, and Free Shipping on US orders over $99. Standard turnaround is 4 business days for production plus 4-day USA delivery. Rush orders (24-hour proof plus 2-day production) available for an additional 20%. Get an instant quote via the 30-second AI estimator on the product page, or message us on WhatsApp for a custom run.\n\n**FAQ**\n\n**Q1: What box styles are available?**\nTuck-end boxes (auto-lock, straight tuck, reverse tuck), setup boxes (rigid lid-and-base), magnetic closure boxes, drawer/slider boxes, mailer boxes (corrugated), and custom die-cut shapes. We provide free dieline templates for all standard styles.\n\n**Q2: What is the minimum order quantity?**\n100 boxes minimum (no setup fees, no die fees for standard sizes). Custom sizes / die-cut MOQ is 500. Standard production 5-7 business days plus 4-day USA delivery.\n\n**Q3: Can I get a 3D mockup before bulk order?**\nYes — we send a free 3D render within 4 hours of file submission. For physical samples, we offer a paid sample pack ($49) shipped via DHL Express with your custom design on the actual box stock.\n\n**Q4: Are the boxes safe for food products?**\nOur food-grade box options use FDA-safe adhesive and food-contact-safe inks, certified for indirect food contact (oatmeal, tea, chocolate, snacks). For direct food contact (candy bars, fresh fruit), we offer specialized food-grade linings. Share your food product type and we will recommend the right stock.\n\nReady to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA pickup available for orders placed before 11 AM EST in major US cities."
-      
-      
-      },
-      "ja": {
-        "title": "ギフトボックス | 特注 高級パッケージ | ZprintPro",
-        "description": "ギフトボックスのギフトボックスは ZprintPro にお任せ。白カード/クラフト/グレー台紙 高品質用紙、カスタムサイズ 各種対応。4色 CMYK 印刷、デザイン自由。100個〜〜、7-10営業日で全国配送。30秒無料見積もり、深夜対応OK。自社工場直結の安心感。",
-        "h1": "Exquisite gift boxes with foil stamping",
-        "keywords": ["ギフトボックス", "ギフトボックス 印刷", "gift boxes", "パッケージボックス印刷", "化粧箱", "食品箱", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "日本の食品衛生基準", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
-        "body": "カスタム ギフトボックス — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FSC 認証紙、大豆油性インク、FDA セーフ（間接食品接触対応）。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\nギフトボックス は ギフトパッケージ・高級小売箱、化粧品・スキンケア製品パッケージ、DTC EC 配送・サブスクリプションボックス の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。packaging 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに ギフトボックス サービスの設計思想です。\n\n素材は 350g コート紙 + マットラミネート（標準箱）（日常大量使用）、B フルート段ボール（強化配送箱）（プレミアム用途、主力選択）、硬質セットアップ箱 + マグネット蓋（プレミアムギフト）（特殊プロジェクト）の 3 種類。すべて FSC 認証紙、大豆油性インク および FDA セーフ（間接食品接触対応） 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、packaging 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: どんな箱スタイルが対応可能ですか？**\nTuck-end 箱（オートロック、ストレートタック、リバースタック）、セットアップ箱（硬質蓋底）、マグネット蓋箱、引き出し式箱、宅配段ボール箱、オリジナルダイカット形状。すべての標準スタイルに無料型紙テンプレートをご用意。\n\n**Q2: 最小注文数量は？**\n100 個から（標準サイズ版代・型代ゼロ）。カスタムサイズ / ダイカットは 500 個から。標準納期 5-7 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前に 3D モックアップは見られますか？**\nはい — データ提出から 4 時間以内に無料 3D レンダリングをお届け。実物サンプルは有償（¥4,980）で DHL Express にて、お客様デザイン実物印刷入りでお届け。\n\n**Q4: 食品接触対応ですか？**\n食品グレード箱は FDA セーフ接着剤と食品接触対応インク使用、間接食品接触（オートミール、茶、チョコ、スナック）認証済み。直接食品接触（キャンディ、フルーツ）は専用食品グレードライニング対応。食品種別をお知らせいただければ最適素材をご提案します。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
-      }
-    },
-    "faqs": [
-      {
-        "q": "精巧なギフトボックス、箔押し・UVなどの加工付き。 ZprintProはギフトボックスサービスを提供。高品質、透明な価格、迅速な納品。",
-        "a": "專業禮品盒定制服務 | 智印雲"
-      },
-      {
-        "q": "",
-        "a": ""
-      },
-      {
-        "q": "精緻禮品盒，配合燙金、UV等工藝，支持印刷即日速遞送貨。送禮首選，提升產品價值。智印雲提供專業的禮品盒定制服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。",
-        "a": ""
-      }
-    ],
-    "imageAlt": {
-      "zh-hk": "禮品盒定製 / 訂製 | 香港禮品盒定製訂製 白卡紙／牛皮裱面／硬紙板結構（依報價） | ZprintPro智印雲",
-      "en": "Custom Gift Boxes for pet food and brand labels — ZprintPro智印雲",
-      "ja": "ギフトボックス / 高級感 | ギフトボックス印刷 高級紙 100個〜 日本向け | ZprintPro智印雲"
-    }
-  },
   "cosmetic-boxes": {
     "name": {
       "zh-hk": "化妝品包裝盒",

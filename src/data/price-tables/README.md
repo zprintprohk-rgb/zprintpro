@@ -32,7 +32,7 @@
 - 依据: A5 157g (4C 同价) 600張$315/1000張$365/2000張$415/4000張$635/6000張$810;A4 157g 4C+4C 300張$500/500張$550/1000張$650/2000張$940/3000張$1190/5000張$1650;中间档线性插值
 - 100-300 数码甜点档按红线不硬拼,保持 modeled
 - 复算脚本: `.hermes/calibrate-price-tables-2026-07-20.py`
-- **仍未校准 (下轮)**: books 的 perfect-bound-books / exercise-books (e-print 膠裝書刊页变量多,需按 P 数建模);packaging gift-boxes/food-boxes;paper-bags eco/gift-bags;flyers same-day/eco
+- **仍未校准 (下轮)**: books 的 perfect-bound-books / exercise-books (e-print 膠裝書刊页变量多,需按 P 数建模);packaging food-boxes;paper-bags eco/gift-bags;flyers same-day/eco (gift-boxes 已 2026-07-22 合并入 rigid-boxes)
 
 ### 2026-07-20 v2 (e-print 数码单张实抓 × 0.95 — 50-300張数码主车道, user 当日拍板放开)
 - `flyers.json`: a5 100/300 档 + a4 100/300 档 + same-day 100/300 档 → anchor-digital (共 6 档)
@@ -49,7 +49,7 @@
 - 依据: A5 直度全書同一紙質表·黑白列 100本$992/500本$1,503/1000本$2,289/2000本$3,032/3000本$3,516/5000本$4,791 ×0.90
 - 校簿价: 500本 HK$1,353 (2.71/本) → 5000本 HK$4,312 (0.86/本), 对校园批量询盘有竞争力
 - 复算脚本: `.hermes/calibrate-exercise-books-2026-07-20.py`
-- **剩余**: perfect-bound-books (胶装, e-print 膠裝書刊页有同类固定价表, 可照此法校准 — M3 可执行); packaging gift-boxes/food-boxes; paper-bags eco/gift-bags; flyers eco; same-day 500档
+- **剩余**: perfect-bound-books (胶装, e-print 膠裝書刊页有同类固定价表, 可照此法校准 — M3 可执行); packaging food-boxes; paper-bags eco/gift-bags; flyers eco; same-day 500档 (gift-boxes 已 2026-07-22 合并入 rigid-boxes)
 
 ### 2026-07-21 v4 (e-print 胶装书 A5 32PP + 急件 flyers 6 档 — 校准同日完成)
 - `books.json`: perfect-bound-books 全档 pending→anchor (7 档: 100/500/1000/2000/3000/5000/10000), 配置 A5 32PP 4+32PP 內文80G書紙 250g 封面

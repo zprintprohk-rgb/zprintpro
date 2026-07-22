@@ -80,6 +80,21 @@ function buildGuideRedirects() {
     });
   }
 
+  // 2026-07-22 v6: gift-boxes 合并进 rigid-boxes (K3 拍板, GSC 28天数据 gift-boxes 227展示 pos 58-72 跟 rigid-boxes 285展示 pos 48-78 互相抢词)
+  // 类目 13→12 SKU 集中权重, 1 屏展示
+  for (const locale of LOCALES) {
+    rules.push({
+      source: `/${locale}/product/gift-boxes`,
+      destination: `/${locale}/product/rigid-boxes`,
+      permanent: true,
+    });
+    rules.push({
+      source: `/${locale}/product/gift-boxes/`,
+      destination: `/${locale}/product/rigid-boxes/`,
+      permanent: true,
+    });
+  }
+
   return rules;
 }
 

@@ -43,7 +43,6 @@
       "skus": [
         {"sku": "mailer-boxes", "totalTiers": 5, "calibrated": 5, "status": "OK", "note": "mailer-boxes 已 intuan 微坑盒实询 5 档校准"},
         {"sku": "kraft-paper-packaging-box", "totalTiers": 5, "calibrated": 5, "status": "OK", "note": "kraft-paper-packaging-box 已 intuan 双插卡盒实询 5 档校准"},
-        {"sku": "gift-boxes", "totalTiers": 3, "calibrated": 0, "pending": 3, "status": "RED-FLAG", "note": "天地盖/书型盒手工盒, P0-1 B 阶段待 intuan 询价"},
         {"sku": "food-boxes", "totalTiers": 2, "calibrated": 0, "pending": 2, "status": "RED-FLAG", "note": "FDA/FSC 食品级, P0-1 B 阶段待 intuan 询价"}
       ],
       "summary": {"calibrated": 10, "redFlag": 5}
@@ -72,7 +71,7 @@
       {"id": "P0-1-B-2", "category": "flyers", "sku": "same-day-flyers", "method": "autoglm-browser-agent e-print.com.hk 單張特急快印 1小時即取 scraping", "expectedTiers": 7, "actualTiers": 6, "estimatedTime": "20 min", "blockedBy": [], "status": "DONE-2026-07-21", "note": "A4 (100/200) + A5 (100/200/300/400) anchor 校准 ×0.95; 500 档保留 modeled"},
       {"id": "P0-1-B-3", "category": "paper-bags", "sku": "eco-paper-bags", "method": "user WebBridge intuan.com 询价 FSC 牛皮袋", "expectedTiers": 4, "estimatedTime": "30 min (user 跑 4 配置)", "blockedBy": ["user WebBridge intuan 已登录态"], "status": "pending"},
       {"id": "P0-1-B-4", "category": "paper-bags", "sku": "gift-bags", "method": "user WebBridge intuan.com 询价烫金礼盒袋", "expectedTiers": 3, "estimatedTime": "30 min (user 跑 3 配置)", "blockedBy": ["user WebBridge intuan 已登录态"], "status": "pending"},
-      {"id": "P0-1-B-5", "category": "packaging", "sku": "gift-boxes", "method": "user WebBridge intuan.com 询价天地盖/书型盒", "expectedTiers": 3, "estimatedTime": "30 min", "blockedBy": ["user WebBridge intuan 已登录态"], "status": "pending"},
+      {"id": "P0-1-B-5", "category": "packaging", "sku": "gift-boxes", "method": "user WebBridge intuan.com 询价天地盖/书型盒", "expectedTiers": 3, "estimatedTime": "30 min", "blockedBy": ["user WebBridge intuan 已登录态"], "status": "CANCELLED-2026-07-22", "note": "M3 v6: gift-boxes 合并入 rigid-boxes (13→12 SKU, GSC 28天数据互相抢词), 此任务不再需要"},
       {"id": "P0-1-B-6", "category": "packaging", "sku": "food-boxes", "method": "user WebBridge intuan.com 询价 FDA 食品级卡盒", "expectedTiers": 2, "estimatedTime": "20 min", "blockedBy": ["user WebBridge intuan 已登录态"], "status": "pending"},
       {"id": "P0-1-B-7", "category": "books", "sku": "perfect-bound-books", "method": "autoglm-browser-agent e-print.com.hk A5 直度 4+32PP 內文80G書紙 250g 封面 scraping", "expectedTiers": 7, "estimatedTime": "30 min", "blockedBy": [], "status": "DONE-2026-07-21", "note": "7 档 anchor 校准 ×0.90 (100/500/1000/2000/3000/5000/10000)"},
       {"id": "P0-1-B-8", "category": "books", "sku": "exercise-books", "method": "DONE-2026-07-20", "expectedTiers": 5, "actualTiers": 5, "estimatedTime": "DONE", "blockedBy": [], "status": "DONE-2026-07-20", "note": "A5 32PP 全書80g書紙黑白骑马钉 e-print 实抓 ×0.90 → anchor 5 档"}

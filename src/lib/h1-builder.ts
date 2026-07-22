@@ -11,7 +11,7 @@
  * - ja: 100% 日本語（无中文/英文残留）— target market: 日本
  *
  * H1 模板:
- *   zh-hk: ${title} · ${kw} · ${hook} · 香港${cat}專家 · 智印雲  (<= 60 chars)
+ *   zh-hk: ${title} · ${kw} · ${hook} · 香港${cat}專家 · 智印港  (<= 60 chars)
  *   en:    ${title} · ${hook} · ZprintPro                       (<= 70 chars)
  *   ja:    ${title} · ${hook} · ZprintPro                       (<= 70 chars)
  *
@@ -81,7 +81,6 @@ export const DEFAULT_KW_MAP_ZH_HK: Record<string, [string, string]> = {
   'business-cards': ['咭片', '印刷'],  // §11 禁区，仅作 fallback（不应触发）
   'japan-doujin':   ['同人誌', '印刷'],
   menus:        ['菜單', '印刷'],
-  'gift-boxes': ['禮盒', '定制'],
 };
 
 export const DEFAULT_HOOK_ZH_HK: Record<string, string> = {
@@ -99,7 +98,6 @@ export const DEFAULT_HOOK_ZH_HK: Record<string, string> = {
   'business-cards': '咭片',
   'japan-doujin':   '同人誌',
   menus:        '餐牌',
-  'gift-boxes': '定制',
 };
 
 /**
@@ -170,7 +168,6 @@ export const SHARP_HOOKS_MAP_EN: Record<string, string> = {
   educational:  'School Bulk',
   books:        'Perfect Bound',
   menus:        'Laminated',
-  'gift-boxes': 'Free Mockup',
   'japan-doujin':   'Short Run',
 };
 
@@ -187,7 +184,6 @@ export const DEFAULT_HOOK_EN: Record<string, string> = {
   educational:  'Bulk Order',
   books:        'Short Run',
   menus:        'Waterproof',
-  'gift-boxes': 'Free Mockup',
   'japan-doujin':   'Short Run',
   'business-cards': 'No Minimum',
 };
@@ -213,7 +209,6 @@ export const SHARP_HOOKS_MAP_JA: Record<string, string> = {
   educational:  '学校向け',
   books:        '無線綴じ',
   menus:        'ラミネート',
-  'gift-boxes': '無料サンプル',
   'japan-doujin':   '少部数OK',
 };
 
@@ -230,7 +225,6 @@ export const DEFAULT_HOOK_JA: Record<string, string> = {
   educational:  '学校向け',
   books:        '少部数OK',
   menus:        '防水加工',
-  'gift-boxes': '無料打稿',
   'japan-doujin':   '少部数OK',
   'business-cards': '100枚から',
 };
@@ -402,9 +396,9 @@ function hasCommonSubstring(a: string, b: string, minLen: number): boolean {
  * 2. SKU 级 sellingPoint：productSlug 传入后优先取 SKU 专属卖点
  *
  * 模板優先級（按字符長度降級）:
- *   1. ${title} · ${kw} · ${hook} · 香港${cat}專家 · 智印雲   (理想, <= 60 chars)
- *   2. ${title} · ${kw} · 香港${cat}專家 · 智印雲              (去 hook)
- *   3. ${title} · ${kw} · 智印雲                              (去「專家」)
+ *   1. ${title} · ${kw} · ${hook} · 香港${cat}專家 · 智印港   (理想, <= 60 chars)
+ *   2. ${title} · ${kw} · 香港${cat}專家 · 智印港              (去 hook)
+ *   3. ${title} · ${kw} · 智印港                              (去「專家」)
  *
  * @param productTitle   - 來自 product.name (zh-hk, 已經過 .split('|')[0] 短名化)
  * @param categoryName   - 來自 getCategoryName(category, 'zh-hk')
@@ -460,13 +454,13 @@ export function buildProductH1ZhHk(
     ? '品質保證'
     : (titleHasCat ? '香港印刷專家' : `香港${cat}專家`);
 
-  const variant1 = `${title}${kwToUse}${hookToUse ? ` · ${hookToUse}` : ''} · ${expertSuffix} · 智印雲`;
+  const variant1 = `${title}${kwToUse}${hookToUse ? ` · ${hookToUse}` : ''} · ${expertSuffix} · 智印港`;
   if (variant1.length <= MAX_H1_CHARS_ZH) return variant1;
 
-  const variant2 = `${title}${kwToUse} · ${expertSuffix} · 智印雲`;
+  const variant2 = `${title}${kwToUse} · ${expertSuffix} · 智印港`;
   if (variant2.length <= MAX_H1_CHARS_ZH) return variant2;
 
-  const variant3 = `${title}${kwToUse} · 智印雲`;
+  const variant3 = `${title}${kwToUse} · 智印港`;
   return variant3;
 }
 

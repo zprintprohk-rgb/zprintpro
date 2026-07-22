@@ -48,7 +48,8 @@ function pickVariant(req: NextRequest): AbVariant {
 const QUOTE_PRODUCT_MAP: Record<string, string> = {
   'kraft-paper-bags': '/product/kraft-paper-bags/',
   'kraft-paper-packaging-box': '/product/kraft-paper-packaging-box/',
-  'gift-boxes': '/product/gift-boxes/',
+  // 2026-07-22 v6: gift-boxes 合并进 rigid-boxes (K3 拍板, GSC 28天数据互相抢词)
+  'gift-boxes': '/product/rigid-boxes/',
   'cosmetic-boxes': '/product/cosmetic-boxes/',
   'gift-bags': '/product/gift-bags/',
   'mailer-boxes': '/product/mailer-boxes/',

@@ -13,8 +13,40 @@ function extractSlugsFromTs(filePath, pattern) {
   return [...new Set(slugs)];
 }
 
-const categorySlugs = extractSlugsFromTs(path.join(__dirname, '../src/data/products.ts'), /slug:\s*['"]([^'"]+)['"],\s*name:/g);
-const productSlugs = extractSlugsFromTs(path.join(__dirname, '../src/data/products.ts'), /slug:\s*['"]([^'"]+)['"],\s*\n\s*category:/g);
+// 2026-07-22 修复: 旧 regex 在 1.2MB products.ts 上 catastrophic backtracking (脚本卡 120s+ timeout)
+// 旧 regex 缺 8 个 product: mailer-boxes / white-card-boxes / corrugated-boxes / tuck-end-boxes / food-boxes / handle-bags / kraft-paper-packaging-box / white-card-bags
+// 改用 line-walker: 找到 "slug: 'xxx'," 行后, 向前看 25 行, 找 "name:" (categories) 或 "category:" (products) 第一个出现的行
+// Categories 数组用单行格式 (slug + name + nameEn + nameJa 都在一行), regex 仍然能匹配
+// Products 数组用多行格式 (slug 后跟 optimizedAt + optimizationRound + category + ...), line-walker 跳过中间字段
+const categorySlugs = (() => {
+  const content = fs.readFileSync(path.join(__dirname, '../src/data/products.ts'), 'utf-8');
+  const lines = content.split('\n');
+  const set = new Set();
+  for (let i = 0; i < lines.length; i++) {
+    // Categories 数组: { slug: 'xxx', name: 'yyy', nameEn: ..., nameJa: ... 都在同一行
+    const m = lines[i].match(/^\s*\{\s*slug:\s*['"]([^'"]+)['"],\s*name:/);
+    if (m) set.add(m[1]);
+  }
+  return [...set];
+})();
+
+const productSlugs = (() => {
+  const content = fs.readFileSync(path.join(__dirname, '../src/data/products.ts'), 'utf-8');
+  const lines = content.split('\n');
+  const set = new Set();
+  for (let i = 0; i < lines.length; i++) {
+    // Product 对象: slug 独立一行
+    const m = lines[i].match(/^\s*slug:\s*['"]([^'"]+)['"],?\s*$/);
+    if (!m) continue;
+    const slug = m[1];
+    for (let j = 1; j <= 25 && i + j < lines.length; j++) {
+      const l = lines[i + j];
+      if (/^\s*\}/.test(l)) break;  // 对象结束
+      if (/^\s*category:\s*['"]/.test(l)) { set.add(slug); break; }
+    }
+  }
+  return [...set];
+})();
 
 // === Blog slugs — dynamically read from blog-posts.ts (covers buying-guide + legacy + future additions) ===
 const legacyBlogSlugs = extractSlugsFromTs(path.join(__dirname, '../src/data/blog-posts.ts'), /slug:\s*['"]([^'"]+)['"],/g);

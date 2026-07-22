@@ -33,6 +33,10 @@ export const siteConfig = {
   //   alternateName 保留 "ZprintPro" (用户实际品牌) + 加 "ZprintPro HK" 区分地理位置
   //   social 全部删 (用户没 FB/IG/LinkedIn 账号, 假链接是 NAP 污染源, GBP 是更优先的实体信号)
   name: '智印雲',
+  // 2026-07-22 v6: displayName = zh-hk 用户可见品牌后缀 (品牌语境, §13.10 NAP 脱钩)
+  // 与 siteConfig.name (schema/NAP 法律名 '智印雲') 分离: title/H1/og:title 用 displayName
+  // §13.13 三 Locale 鐵律: en/ja 用纯英文 'ZprintPro', 不带中文
+  displayName: '智印港',
   // 2026-07-21: 301 合体后改双品牌分层,智印港为 zh-hk 合法品牌词(AGENTS.md §1 v2)
   alternateName: ['ZprintPro', 'ZprintPro HK', '智印雲印刷', '智印港'],
   url: 'https://zprintpro.com',
@@ -235,9 +239,11 @@ export const regionConfig: Record<Locale, RegionConfig> = {
 // 多語言元數據（GEO優化版：三市場完全獨立SEO策略，不互相引用地區名）
 const homeMetadata: Record<Locale, { title: string; description: string; keywords: string }> = {
   'zh-hk': {
-    title: '智印雲 ZPrintPro | 香港印刷公司 | 急件印刷·即日交貨 | 貼紙/單張/包裝盒定制',
-    description: '香港智印雲印刷平台 — 專注急件印刷及即日交貨服務。提供高質素貼紙、宣傳單張、包裝盒定制、紙袋、海報等。線上30秒獲取初步報價，複雜需求由專人人工核價。全港免費送貨，最快即日交付，72小時快速交貨。',
-    keywords: '香港印刷,急件印刷,即日印刷,貼紙印刷,宣傳單張印刷,包裝盒定制,數碼印刷,30秒報價,人工核價,免費送貨,紙袋印刷,海報印刷,香港印刷公司,印刷急單,小批量印刷,ZPrintPro,智印雲',
+    // 2026-07-22 v6: 智印港 是 zh-hk 合法品牌词 (AGENTS.md §1 v2 / §13.10 NAP 脱钩)
+    // §13.13 三 Locale 鐵律: en/ja 標題 100% 過濾 Shenzhen/China/中國/智印港
+    title: '智印港 ZprintPro | 香港印刷公司 | 急件印刷·即日交貨 | 貼紙/單張/包裝盒定制',
+    description: '香港智印港印刷平台 — 專注急件印刷及即日交貨服務。提供高質素貼紙、宣傳單張、包裝盒定制、紙袋、海報等。線上30秒獲取初步報價，複雜需求由專人人工核價。全港免費送貨，最快即日交付，72小時快速交貨。',
+    keywords: '香港印刷,急件印刷,即日印刷,貼紙印刷,宣傳單張印刷,包裝盒定制,數碼印刷,30秒報價,人工核價,免費送貨,紙袋印刷,海報印刷,香港印刷公司,印刷急單,小批量印刷,ZprintPro,智印港',
   },
   en: {
     // 2026-07-09 P0.1: en-US market local optimization (PM × UX × SEO research, 3-perspective analysis)
@@ -250,8 +256,8 @@ const homeMetadata: Record<Locale, { title: string; description: string; keyword
     keywords: 'custom printing service USA, online printing USA, custom stickers wholesale, packaging boxes supplier USA, paper bags wholesale, 30 second print quote, custom labels USA, rush printing USA, business card printing USA, eco friendly printing USA, made for US businesses, custom printing DHL express',
   },
   ja: {
-    title: 'ZPrintPro | 印刷通販 | ステッカー・チラシ・パッケージ印刷 | 即日対応・最短3日納品',
-    description: 'ZPrintProはプロの印刷通販サービス。高品質ステッカー印刷、チラシ印刷、パッケージボックスカスタマイズ、紙袋・ラベル・ポスター印刷に対応。30秒でオンライン即時見積もり、複雑な案件も専門スタッフが丁寧に対応。最短即日発送可能、3〜5営業日でお届け。全国配送無料。',
+    title: 'ZprintPro | 印刷通販 | ステッカー・チラシ・パッケージ印刷 | 即日対応・最短3日納品',
+    description: 'ZprintProはプロの印刷通販サービス。高品質ステッカー印刷、チラシ印刷、パッケージボックスカスタマイズ、紙袋・ラベル・ポスター印刷に対応。30秒でオンライン即時見積もり、複雑な案件も専門スタッフが丁寧に対応。最短即日発送可能、3〜5営業日でお届け。全国配送無料。',
     keywords: '印刷通販,ステッカー印刷,チラシ印刷,パッケージ印刷,ポスター印刷,即日印刷,ネット印刷,小ロット印刷,オリジナル印刷,格安印刷,高品質印刷,急ぎ印刷対応,最短3日納品,全国配送無料',
   },
 };
@@ -333,7 +339,7 @@ const categorySeoData: Record<string, {
       ja: '名刺印刷,名刺作成,オーダーメイド名刺,高級名刺,即日名刺,急ぎ名刺,会社名刺,名刺デザイン,箔押し名刺,厚紙名刺',
     },
     descriptions: {
-      'zh-hk': '香港專業名片印刷，100張起訂，最快24小時交貨。支持燙金、UV、凹凸、圓角等特殊工藝，免費設計模板。智印雲ISO9001認證，品質保證。',
+      'zh-hk': '香港專業名片印刷，100張起訂，最快24小時交貨。支持燙金、UV、凹凸、圓角等特殊工藝，免費設計模板。智印港ISO9001認證，品質保證。',
       en: 'Custom business card printing with free shipping over $99 to USA. Premium paper stocks, foil stamping, spot UV, embossing. Free design templates. Same day 24h rush available. ISO 9001 certified. 100 cards minimum. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
       ja: 'プロの名刺印刷サービス。100枚から、最短24時間でお届け。箔押し・UV・エンボス・丸角加工に対応。無料デザインテンプレート。ISO9001認証取得。全国配送無料。',
     },
@@ -444,7 +450,7 @@ const categorySeoData: Record<string, {
    
   'calendars': {
     titles: {
-      'zh-hk': '年曆印刷 100本起 · 座檯/掛牆/2027 燙金精裝 ISO認證 DHL 2-4天 | 智印雲',
+      'zh-hk': '年曆印刷 100本起 · 座檯/掛牆/2027 燙金精裝 ISO認證 DHL 2-4天 | 智印港',
       en: 'Custom Calendars Free Shipping · 100 MOQ 2027 Hardcover Foil | ZprintPro',
       ja: 'カレンダー印刷 100部〜 · デスク/壁掛け/2027 箔押し上製本 ISO認証 | ZprintPro',
     },
@@ -461,7 +467,7 @@ const categorySeoData: Record<string, {
   },
 'japan-doujin': {
     titles: {
-      'zh-hk': '同人周邊印刷 10本起 · 同人誌/亞克力/缶バッヂ/明信片 Comiket 24h特急 | 智印雲',
+      'zh-hk': '同人周邊印刷 10本起 · 同人誌/亞克力/缶バッヂ/明信片 Comiket 24h特急 | 智印港',
       en: 'Doujinshi Printing Free Shipping · 10 MOQ Acrylic/Can Badge/Postcard | ZprintPro',
       ja: '同人誌印刷 10部〜 · アクリル/缶バッジ/ポストカード コミケ24時間特急 | ZprintPro',
     },
@@ -478,7 +484,7 @@ const categorySeoData: Record<string, {
   },
   'envelopes': {
     titles: {
-      'zh-hk': '信封印刷 100個起 · 牛皮/開窗/彩色/企業LOGO ISO認證 DHL 2-4天 | 智印雲',
+      'zh-hk': '信封印刷 100個起 · 牛皮/開窗/彩色/企業LOGO ISO認證 DHL 2-4天 | 智印港',
       en: 'Custom Envelopes Free Shipping · 100 MOQ Kraft/Window/Corporate Logo | ZprintPro',
       ja: '封筒印刷 100個〜 · クラフト/窓付き/カラー/企業ロゴ ISO認証 DHL | ZprintPro',
     },
@@ -531,7 +537,7 @@ const categorySeoData: Record<string, {
   },
   'banners': {
     titles: {
-      'zh-hk': '易拉寶印刷 1個起 · X架/展覽橫幅/車身廣告 防水防UV ISO認證 | 智印雲',
+      'zh-hk': '易拉寶印刷 1個起 · X架/展覽橫幅/車身廣告 防水防UV ISO認證 | 智印港',
       en: 'Custom Banners Free Shipping · 1 MOQ Roll-Up/X-Stand Waterproof UV | ZprintPro',
       ja: 'バナー印刷 1枚〜 · ロールアップ/Xスタンド/車両広告 防水UV ISO認証 | ZprintPro',
     },
@@ -548,7 +554,7 @@ const categorySeoData: Record<string, {
   },
   'books': {
     titles: {
-      'zh-hk': '畫冊印刷 50本起 · 騎馬釘/膠裝/精裝/兒童繪本 FSC認證 DHL 2-4天 | 智印雲',
+      'zh-hk': '畫冊印刷 50本起 · 騎馬釘/膠裝/精裝/兒童繪本 FSC認證 DHL 2-4天 | 智印港',
       en: 'Custom Book Printing Free Shipping · 50 MOQ Saddle/Hardcover FSC | ZprintPro',
       ja: '冊子印刷 50部〜 · 中綴じ/無線綴じ/上製本/絵本 FSC認証 DHL 2-4日 | ZprintPro',
     },
@@ -565,7 +571,7 @@ const categorySeoData: Record<string, {
   },
   'educational': {
     titles: {
-      'zh-hk': '校園教育印刷 100本起 · 證書/作業簿/教材 學校批量優惠 FSC認證 | 智印雲',
+      'zh-hk': '校園教育印刷 100本起 · 證書/作業簿/教材 學校批量優惠 FSC認證 | 智印港',
       en: 'Education Printing Free Shipping · 100 MOQ Certificates/Workbooks Bulk | ZprintPro',
       ja: '教育印刷 100部〜 · 証明書/ワークブック/教科書 学校一括割引 FSC認証 | ZprintPro',
     },
@@ -592,7 +598,7 @@ function getDefaultCategorySeo(categoryName: string, categoryNameEn: string, cat
       ja: `${categoryNameJa}印刷,${categoryNameJa}作成,${categoryNameJa} オーダー,${categoryNameJa} 通販`,
     },
     descriptions: {
-      'zh-hk': `專業${categoryName}印刷服務，品質保證，價格透明。智印雲提供多種${categoryName}選擇，最快即日交貨。`,
+      'zh-hk': `專業${categoryName}印刷服務，品質保證，價格透明。智印港提供多種${categoryName}選擇，最快即日交貨。`,
       en: `Custom ${categoryNameEn.toLowerCase()} printing with free shipping over $99 to USA. Quality guaranteed, transparent pricing. Made for US small businesses & global brands. DHL Express 2-4 day or FedEx Ground. Free quote in 30 seconds. Rush orders welcome. ISO 9001 certified.`,
       ja: `プロの${categoryNameJa}印刷サービス。品質保証、透明な価格。最短3〜5営業日で全国へお届け。無料見積もり、急ぎ対応可能。`,
     },
@@ -701,9 +707,10 @@ export function generateCategoryMetadata(locale: Locale, categorySlug: string = 
 
   // 分类标题按市场区分
   // 2026-06-10 Phase B 修复 P0-2：en/ja 分支末尾使用纯英文品牌 'ZprintPro'（无中文），
-  // 避免 layout 模板的 '| ZprintPro' 再次叠加后形成 "...| 智印雲 ZprintPro | ZprintPro"。
+  // 2026-07-22 v6: zh-hk 用 displayName '智印港' (用户可见品牌词), 不是 schema.name '智印雲' (NAP 法律名)
+  // 避免 layout 模板的 '| ZprintPro' 再次叠加后形成 "...| 智印港 ZprintPro | ZprintPro"。
   // 2026-06-10：layout template 改为 '%s'（见 layout.tsx），此处由子页统一控制品牌后缀。
-  const brandSuffix = locale === 'zh-hk' ? siteConfig.name : 'ZprintPro';
+  const brandSuffix = locale === 'zh-hk' ? siteConfig.displayName : 'ZprintPro';
 
   // 优先使用自定义 title，没有则用默认格式
   const customTitle = seoData.titles?.[locale];
@@ -775,11 +782,12 @@ export function generateProductMetadata(
   
   // Title: 50-60字符，含核心關鍵詞
   // 2026-06-10 Phase B 修复 P0-2：en/ja 末尾使用纯英文 'ZprintPro'（无中文），
-  // 避免 layout 模板的 '| ZprintPro' 再次叠加后形成 "...| 智印雲 ZprintPro | ZprintPro"。
+  // 2026-07-22 v6: zh-hk 用 displayName '智印港' (用户可见品牌词), 不是 schema.name '智印雲' (NAP 法律名)
+  // 避免 layout 模板的 '| ZprintPro' 再次叠加后形成 "...| 智印港 ZprintPro | ZprintPro"。
   // 2026-06-10：layout template 改为 '%s'（见 layout.tsx），此处由子页统一控制品牌后缀。
   const suffix = locale === 'zh-hk' ? '印刷' : locale === 'en' ? 'Printing' : '印刷';
   const titleBase = `${name}${suffix}`.replace(/印刷印刷/g, '印刷');
-  const brandSuffix = locale === 'zh-hk' ? siteConfig.name : 'ZprintPro';
+  const brandSuffix = locale === 'zh-hk' ? siteConfig.displayName : 'ZprintPro';
   const title = locale === 'zh-hk'
     ? `${titleBase} | 香港${categoryName}專家 | ${brandSuffix}`.slice(0, 60)
     : locale === 'en'
@@ -1259,28 +1267,28 @@ export function generateProductImageJsonLd(
   };
 
   const alt = locale === 'zh-hk'
-    ? `${productName} 香港印刷高清產品圖 | 智印雲 ZPrintPro`
+    ? `${productName} 香港印刷高清產品圖 | 智印港 ZprintPro`
     : locale === 'ja'
-    ? `${productName} 印刷 高画質商品画像 | ZPrintPro`
-    : `${productName} custom printing high-resolution product image | ZPrintPro Hong Kong`;
+    ? `${productName} 印刷 高画質商品画像 | ZprintPro`
+    : `${productName} custom printing high-resolution product image | ZprintPro`;
 
   const caption = locale === 'zh-hk'
-    ? `${productName} - ZPrintPro 深圳實體工廠專業印刷，${urls.length}張高清產品圖詳情展示`
+    ? `${productName} - ZprintPro 深圳實體工廠專業印刷，${urls.length}張高清產品圖詳情展示`
     : locale === 'ja'
-    ? `${productName} - ZPrintPro アジア自社工場の專業印刷、${urls.length}枚の高画質商品画像`
-    : `${productName} - ZPrintPro professional printing from our Shenzhen factory, ${urls.length} detailed high-res product images`;
+    ? `${productName} - ZprintPro アジア自社工場の專業印刷、${urls.length}枚の高画質商品画像`
+    : `${productName} - ZprintPro professional printing from our Shenzhen factory, ${urls.length} detailed high-res product images`;
 
   const creditText = locale === 'zh-hk'
-    ? '© 智印雲 ZPrintPro 版權所有'
+    ? '© 智印港 ZprintPro 版權所有'
     : locale === 'ja'
-    ? '© ZPrintPro 無断転載禁止'
-    : '© ZPrintPro All Rights Reserved';
+    ? '© ZprintPro 無断転載禁止'
+    : '© ZprintPro All Rights Reserved';
 
   const keywords = locale === 'zh-hk'
-    ? `${productName} 香港印刷 ZPrintPro`
+    ? `${productName} 香港印刷 ZprintPro`
     : locale === 'ja'
-    ? `${productName} 印刷 ZPrintPro`
-    : `${productName} Hong Kong printing ZPrintPro`;
+    ? `${productName} 印刷 ZprintPro`
+    : `${productName} custom printing ZprintPro`;
 
   const licenseUrl = `${siteConfig.url}/license/`;
   const baseImageNode = {
@@ -1371,9 +1379,9 @@ export function generateProductReviewsJsonLd(
   
   const contents: Record<Locale, string[]> = {
     'zh-hk': [
-      `非常滿意${productName}的品質，印刷效果清晰，交貨準時。強烈推薦智印雲！`,
+      `非常滿意${productName}的品質，印刷效果清晰，交貨準時。強烈推薦智印港！`,
       `${productName}的材質很好，顏色還原度高，客服回覆也很及時。會再次回購。`,
-      `我們公司已經第三次在智印雲訂購${productName}了，每次都很滿意，價格也很合理。`,
+      `我們公司已經第三次在智印港訂購${productName}了，每次都很滿意，價格也很合理。`,
       `${productName}的做工精細，包裝也很結實，沒有損壞。物流也很快。`,
     ],
     'en': [
