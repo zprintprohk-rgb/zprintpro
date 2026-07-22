@@ -51,6 +51,14 @@
 | PDP 转化审查 | ❌ 无 | ✅ **1/天 (新增 5 维度)** |
 | en/ja 词数 | 250-350 | **400+** |
 
+【v7.1 关键变化 · vs v7 (2026-07-22 K3 拍板)】
+| 项 | v7 (旧) | v7.1 (K3 拍板) |
+|---|---|---|
+| K3 §6 铁律 (已 covered Q 不重写) | ❌ 隐式 | ✅ **显式 (A1 选题前必查 covered[], skip 维持)** |
+| **Q-005 daily 7/23 必写** | ❌ 无 | ✅ **cross-border-ecommerce-shipping-box-guide (1 月未推进, packaging P0 唯一剩, 强信号词 食品包裝印刷 108 imps)** |
+| GSC API fallback 意识 | ❌ 无 | ✅ **本 cron 不直接跑 GSC, 但选题要读上次 gsc-feedback 日报 (含 fallback 标注) + matrix.json 决策** |
+| gsc-141 baseline 28 词 awareness | ❌ 无 | ✅ **A1 选题前看 141 残杀词清单, 已 covered skip, uncovered 才选** |
+
 【工作目录】F:\zprintpro-nextjs (严格隔离)
 【触发】每天 10:15 Asia/Shanghai
 【预算】180 min
@@ -79,10 +87,28 @@ page.tsx import `@/data/blog-data/<locale>.json` 走 tsconfig paths 解析为 **
 - 1 个 PDP 转化要素审查/天 (新增 5 维度)
 - 真实主体 = 深圳市彩龙印刷包装有限公司 (深圳, 不是香港)
 
+【K3 §6 铁律 (2026-07-22 user 拍板 · 强制执行)】
+> **核心**: **已 covered Q 不重写, 维持现状**, 避免 daily cron 写已 covered 词浪费 1 篇/天产能。
+
+**铁律细则 (A1 选题前必查 matrix.json covered[])**:
+- 读 .hermes/industry-keyword-matrix.json `covered[]` 数组
+- 候选选题对照 covered[] 查 slug / slug 子串 / Q-NNN 编号, **命中一律 skip**
+- **唯一例外**: 强信号词 (108+ imps GSC 6/17 快照) + 已 covered 词但旧版 < 800 字可写 ≥ 1200 字提质 (如 Q-005)
+- 7/23 (daily cron 当日) **必须** 写 Q-005 (cross-border-ecommerce-shipping-box-guide):
+  - slug: cross-border-ecommerce-shipping-box-guide
+  - priority_boost: 2 (K3 §6 铁律维持, 已 covered 但强信号, 旧版 < 800 字需重写 ≥ 1200 字提质)
+  - queued_at: 2026-07-06 (1 月未推进, 超期)
+  - category: packaging (P0 唯一剩)
+  - 强信号词 食品包裝印刷 (108 imps, 6/17 快照 #1 残杀词, imps=108 rank=25.45 ctr=0%)
+- 7/24 起按 matrix.json 选题规则, 不再硬写 Q-005
+
 【子任务 180 min 预算】
 
 ### Sub-task A: Blog 1 篇高质量报价型 (90 min) — v7 主任务
-- A1 选题 (5 min): 读 .hermes/industry-keyword-matrix.json queue + 已校准 price-tables, 选 GSC signals 强 + 价格表覆盖的 SKU 主题
+- A1 选题 (5 min, **v7.1 加 K3 §6 铁律 + Q-005 强制分支**):
+  - 读 .hermes/industry-keyword-matrix.json queue + covered[] + stats
+  - **今天 = 2026-07-23 → 强制选 Q-005 (cross-border-ecommerce-shipping-box-guide)**: skip covered[] 检查, 直接走 7/23 必写路径
+  - 今天 ≠ 2026-07-23 → 候选选题对照 covered[] 查 slug / Q-NNN, **命中 skip**; 选 GSC signals 强 + 价格表覆盖的 SKU 主题
 - A2 写 zh-hk (35 min): **1200+ 字**, 9 段结构, 4 FAQ, 1+ H3 表格, 5+ 内链, **3+ 处引用 price-tables 真实价格** (例: "包裝盒 100 个起 ¥X.X, 1000 个 ¥X.X, 詳見 https://zprintpro.com/zh-hk/product/mailer-boxes/")
 - A3 写 en (20 min): 400+ 词, 美国本地化, 5 sharp hooks (§13.15) — Free Shipping $99+ / Free Design / 100 MOQ / Fast Turnaround / Made for USA, USD 价格
 - A4 写 ja (20 min): 400+ 词, 日本本地化 — 沖縄/北海道/ヤマト運輸, JPY 含税価格
@@ -147,12 +173,17 @@ page.tsx import `@/data/blog-data/<locale>.json` 走 tsconfig paths 解析为 **
 - 同 category 5 天内已写相同 SKU → 调度冲突, 升级
 - 路径 bug 警告: 检测到内容写到 public/blog-data/ 而不是 src/data/blog-data/ → 立即修正 + 升级
 - 禁词命中 (en/ja 写 HK / 香港 / 香港企業 / 15,000+ 用 2,000+) → 立即修正 + 升级
+- **GSC API 永久 fallback 模式 (2026-07-22 K3 拍板)**: 本 cron 不直接跑 GSC, 但 A1 选题前必读上次 gsc-feedback 日报 (`.hermes/logs/YYYY-MM-DD-gsc-feedback.md`) 找 fallback 标注; 若 fallback 标注 + 141 残杀词未跑, A1 选题权重只信 matrix.json priority_boost, 不信 GSC imps 数据
+- **K3 §6 铁律误触发 (覆盖已 covered Q)**: 立即回滚 commit + 升级 user
+- **Q-005 7/23 未写**: 7/24 报 user, daily cron 当日必须重跑 Q-005 (除非已写完)
 
-【完成标准 (v7)】
+【完成标准 (v7.1)】
 - ✅ 1 篇博客真实部署上线 (commit + push + CF build success + 7 步 verify 全过)
 - ✅ 5 个 SKU 优化上线
 - ✅ 1 个 PDP 转化审查完成
 - ✅ matrix.json 更新 (covered[] 追加 7 条)
 - ✅ 日报写到 F:\zprintpro-nextjs\.hermes\logs\YYYY-MM-DD-日运营报告.md
+- ✅ **7/23 Q-005 必写检查**: 7/23 当日若 daily cron 跑, 必须写 Q-005 (cross-border-ecommerce-shipping-box-guide) ≥ 1200 字提质版, 4 FAQ, 3-5 内链, 3+ 处 mailer-boxes price 锚点; 7/24 升级 user 反馈 Q-005 落地状态
+- ✅ **K3 §6 铁律 applied 计数 ≥ 0**: 写日报 §5 段, 记录当天跳过多少已 covered 候选词; 0 是常态 (matrix 已饱和)
 
 启动后立即读 .hermes/context.md + .hermes/industry-keyword-matrix.json + AGENTS.md, 然后开干。

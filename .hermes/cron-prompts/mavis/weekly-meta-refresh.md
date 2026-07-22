@@ -50,6 +50,14 @@
 | **PDP 转化要素审查** | ❌ 无 | ✅ **每周扫 3 个 PDP, 5 维度审查 (新增)** |
 | 预算 | 240 min | 180 min (聚焦深度, 不铺量) |
 
+【v4.1 关键变化 · vs v4 (2026-07-22 K3 拍板)】
+| 项 | v4 (旧) | v4.1 (K3 拍板) |
+|---|---|---|
+| K3 §6 铁律 (PDP 5 天不重复 + 选题 covered skip) | ❌ 隐式 | ✅ **显式 (PDP 5 天不重复, 选题 covered[] skip)** |
+| **跟 Q-005 daily 7/23 必写联动 (7/28 weekly)** | ❌ 无 | ✅ **7/28 weekly 选题 skip Q-005 (cross-border-ecommerce-shipping-box-guide), 跟 7/23 daily 互补, 不重复写** |
+| GSC API fallback 模式 (PDP 选题) | ❌ 无 | ✅ **3 次重试失败 → 用 6/17 快照 + 7/17 overlap-keywords.csv 决策 PDP 选题 (不阻塞 cron)** |
+| gsc-141 baseline 28 词 awareness | ❌ 无 | ✅ **PDP 转化审查选题前看 141 残杀词清单, 已 covered skip, uncovered 才选** |
+
 【工作目录】F:\zprintpro-nextjs (严格隔离)
 【触发】每周一 11:00 Asia/Shanghai
 【预算】180 min
@@ -64,6 +72,16 @@
 - 严禁修改类目页 schema 结构
 - 关键路径: blog 内容写到 `src/data/blog-data/<locale>.json` 不是 `public/blog-data/`
 
+【K3 §6 铁律 (2026-07-22 user 拍板 · 强制执行)】
+> **核心**: **已 covered Q 不重复写, PDP 5 天内不重复审查**, 避免 weekly cron 写已 covered 词浪费 2 篇/周产能。
+
+**铁律细则**:
+- **博客选题 (§2 T1-T2)**: 候选选题对照 matrix.json `covered[]` 查 slug / Q-NNN, **命中一律 skip**
+- **PDP 转化审查 (§4)**: 同一 PDP 5 天内不重复审查 (5 维度审查一次足够, 7 天后再扫)
+- **类目页 meta (§3)**: meta description 改后 7 天内不重复改同 meta (避免震荡)
+- **跟 daily cron 7/23 Q-005 联动**: 7/28 weekly 跑时, 选题 skip Q-005 (cross-border-ecommerce-shipping-box-guide), 因为 7/23 daily 已写 Q-005 提质版
+- **跟 weekly cron 自身 §3 联动**: 同一类目页本周已改 meta, 下周再改 (避免频繁改 meta 触发 GSC 重新评估)
+
 【允许操作】
 - 读 GSC 数据 (analyze-gsc.mjs / seo-weekly-analyzer.py)
 - 写 src/app/[locale]/category/[slug]/page.tsx (meta description / 服务行业区块, H1 改需 user 拍板)
@@ -74,11 +92,14 @@
 
 【本 cron 任务流程 (v4, 180 min 预算)】
 
-## 1. 拉 GSC 数据 + 选题 (10 min)
+## 1. 拉 GSC 数据 + 选题 (10 min, **v4.1 加 GSC API fallback 模式**)
 - 跑 scripts/analyze-gsc.mjs 拉过去 28 天 GSC
+- **GSC API 失败处理 (v4.1)**: 3 次重试失败 → 用 .hermes/gsc_data.csv 6/17 90-day snapshot + .hermes/overlap-keywords.csv 7/17 fallback; 写周报"§1 数据源状态"段标注"fallback"
 - 取流量 top 3 PDP + top 3 类目 (按点击数排序)
 - 从 matrix queue 筛 2 条高 priority_boost 选题:
-  优先级: GSC orphan keyword > priority_boost ≥ 3 > 矩阵 round-robin
+  - 优先级: GSC orphan keyword > priority_boost ≥ 3 > 矩阵 round-robin
+  - **v4.1 加 K3 §6 铁律**: 候选对照 matrix.json covered[] 查 slug / Q-NNN, 命中 skip
+  - **v4.1 加 7/28 联动**: 今天 = 2026-07-28 → 选题 skip Q-005 (cross-border-ecommerce-shipping-box-guide, 7/23 daily 已写)
 
 ## 2. 高质量博客 2 篇 (60 min, 每篇 30 min) — §4 Sub-task A
 > **【通用模板引用】** 详细步骤见 `.hermes/context.md §4 Sub-task A`。
@@ -99,6 +120,7 @@
 
 ## 4. PDP 转化要素审查 3 个 (45 min, **v4 新增**) — 5 维度同 daily
 - 选 GSC 流量 top 3 PDP (e.g. stickers / mailer-boxes / paper-bags)
+- **v4.1 加 K3 §6 铁律**: 同一 PDP 5 天内不重复审查 (检查 matrix.json last_reviewed_at, 命中 skip, 换下一个 PDP)
 - 5 维度审查 (每 PDP 每维度 3 min, 缺什么补什么):
   1. **标题 CTR**: H1 + meta title 50-60 字符, 含 sharp hook
   2. **价格锚点**: 引用 price-tables 真实价格 + 起送门槛 + 数量档跳水
@@ -141,13 +163,20 @@
 - 2 篇博客有任一没 verify 通过 → 立即升级
 - 3 个 PDP 转化审查 < 3 → 升级 user
 - 内链总数 < 5 → 升级 user (质量不达标)
+- **GSC API 永久 fallback 模式 (2026-07-22 K3 拍板)**: 3 次重试失败 → 切 fallback (gsc_data.csv 6/17 + overlap-keywords.csv 7/17); 写周报"§1 数据源状态"段标注 "fallback"; 连续 2 次失败 → 升级 user 报 proxy/VPN 方案
+- **K3 §6 铁律误触发 (覆盖已 covered Q / 5 天内重复同 PDP)**: 立即回滚 commit + 升级 user
+- **7/28 weekly 写 Q-005**: skip Q-005 (7/23 daily 已写, weekly 不重写); 误写 → 立即回滚 + 升级 user
+- **PDP 5 天内重复审查**: 立即回滚 (matrix.json last_reviewed_at 字段自动记录) + 升级 user
 
-【完成标准 (v4 升级版)】
+【完成标准 (v4.1 升级版)】
 - ✅ 2 篇博客真实部署上线 (3 locale × 2 = 6 URL 全 200)
 - ✅ 3 个类目页 meta 已更新 + 部署上线
-- ✅ **3 个 PDP 转化审查完成 (v4 新)**
+- ✅ **3 个 PDP 转化审查完成 (v4 新, v4.1 加 5 天不重复)**
 - ✅ 周一新增内链 ≥ 5 条
 - ✅ matrix.json 已更新
 - ✅ 周报落盘
+- ✅ **K3 §6 铁律 applied 计数 ≥ 0**: 写周报"§4 K3 §6 铁律"段, 记录当周跳过多少已 covered 候选词 + 多少 PDP 5 天重复; 0 是常态
+- ✅ **GSC 数据源状态写明**: 周报"§1 数据源状态"段标注 normal / fallback
+- ✅ **7/28 联动检查 (2026-07-28 当周)**: Q-005 选题 skip 验证, 误写立即回滚
 
 启动后立即读 .hermes/context.md + .hermes/industry-keyword-matrix.json + AGENTS.md, 然后开干。

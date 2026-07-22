@@ -51,14 +51,25 @@
 | **price-table src:modeled 计数** | ❌ 无 | ✅ **新增 (P0-1 校准进度跟踪)** |
 | 预算 | 180 min | 180 min (不变) |
 
+【v4.1 关键变化 · vs v4 (2026-07-22 K3 拍板)】
+| 项 | v4 (旧) | v4.1 (K3 拍板) |
+|---|---|---|
+| K3 §6 铁律 (Tier 切换 covered skip) | ❌ 隐式 | ✅ **显式 (Tier 切换候选前必查 covered[], 已 covered 跳过, 不重新加 Tier A)** |
+| GSC API fallback 模式 | ❌ 无 | ✅ **3 次重试失败 → 切 fallback, 月报"§0 数据源状态"段标注** |
+| **price-table 校准进度 v4.1 跟踪 (细化 5 类目 × ~50 SKU × 3 locale)** | v4 仅算总数 | ✅ **v4.1 报 5 类目 × 3 locale 各自 anchor / modeled / redFlag / pending 单元格数 + 百分比 (P0-1 v4 后 baseline: 28 anchor + 23 redFlag + 6 modeled_digital_sweet, 3/8 B 任务完成)** |
+| en-US 集中审计 增强 (跟 gsc-feedback v4 141 baseline 对接) | v4 仅 14/14 覆盖率 | ✅ **v4.1 跟 gsc-feedback 141 baseline 28 词 + 22 候选词 5 段分组对接, 月报"§en-US"段新增 en 141 baseline 进度** |
+
 【price-table src:modeled 单元格计数定义 (K3 P0-1)】
 P0-1 价格表校准目标: 5 类目 × ~50 SKU × 3 locale = ~750 单元格
 - `src: 'modeled'` = 用公式套出来 (intuan×1.3 / e-print×0.95), 未校准, 不可对客展示
-- `src: 'calibrated'` = 用 intuan.com 真实登录价 × 1.3 校准过, 可对客展示
-- 月报必报:
-  - `modeled` 单元格总数 / 750 = 校准进度
-  - `calibrated` 单元格总数 / 750 = 校准完成度
-  - 5 类目 (boxes/bags/flyers/posters/labels) 各自进度
+- `src: 'anchor'` = 用 e-print / intuan 真实抓取价 ×0.95 / ×1.3 校准过, 可对客展示
+- `src: 'modeled_digital_sweet'` = 数字印刷甜蜜区档 (如 same-day 急件 1 小時, 无 e-print 校准证据, 内部参考)
+- `src: 'redFlag'` = 不可对客展示 (e-print 无 100% recycled 公开价 / same-day 500 档无 e-print 校准)
+- **v4.1 升级**:
+  - 5 类目 (boxes/bags/flyers/posters/labels) × 3 locale (zh-hk/en/ja) 各自 anchor / modeled / redFlag / pending 单元格数
+  - P0-1 v4 (2026-07-21) 后 baseline: **20 anchor** (perfect-bound-books 7 + same-day-flyers 6 + exercise-books 5 + 2 旧) + **6 modeled_digital_sweet** + **23 redFlag** + **B 阶段 3/8 任务完成** (B-2/B-7/B-8)
+  - 月报必报: anchor 增速 (本月新增 / 上月) + 5 类目各自校准完成度 (anchor / 目标)
+  - 5 类目优先级: P0 (stickers / packaging) > P1 (posters / books) > P2 (paper-bags / flyers)
 
 【工作目录】F:\zprintpro-nextjs (严格隔离)
 【触发】每月 1 号 14:00 Asia/Shanghai
@@ -74,6 +85,15 @@ P0-1 价格表校准目标: 5 类目 × ~50 SKU × 3 locale = ~750 单元格
 - 矩阵变更必须写回 .hermes/industry-keyword-matrix.json + git commit + push origin_ssh main
 - 关键路径 bug (2026-07-06): blog 内容写到 `src/data/blog-data/<locale>.json` 不是 `public/blog-data/`
 - price-table 校准计数读 .hermes/price-tables/*.json (P0-1 实施后存在)
+
+【K3 §6 铁律 (2026-07-22 user 拍板 · 强制执行)】
+> **核心**: **Tier 切换候选前必查 covered[], 已 covered 跳过, 不重新加 Tier A**, 避免月报误将已 covered 词提到 Tier A 浪费后续 daily cron 产能。
+
+**铁律细则**:
+- 自动升级候选 (rule hit → Tier C → Tier A): **先查 matrix.json covered[]**, 命中 skip, 写月报"§K3 §6 跳过 {N} 个"
+- 自动降级候选 (rule hit → Tier A → Tier C): 同样查 covered[], 命中 skip (covered 词降级等于撤掉已写内容, 浪费)
+- Tier 切换范围限制: 每月切换数量 ≤ matrix 总数 10% (避免大幅震荡)
+- Tier A 关键词 60 天无改善: 不自动降级, 写月报"§建议下线"段, 等 user 拍板 (covered[] + Tier A 双重保留, 人工 review)
 
 【Tier 升降级 rules (规则驱动,非 hermes 即兴)】
 
@@ -92,11 +112,13 @@ P0-1 价格表校准目标: 5 类目 × ~50 SKU × 3 locale = ~750 单元格
 
 【本 cron 任务流程 (v4, 180 min 预算)】
 
-## 1. 拉过去 30 天 GSC + matrix 状态 (15 min)
+## 1. 拉过去 30 天 GSC + matrix 状态 (15 min, **v4.1 加 GSC API fallback 模式**)
 - 跑 scripts/seo-weekly-analyzer.py + scripts/analyze-gsc.mjs
+- **GSC API 失败处理 (v4.1)**: 3 次重试失败 → 切 fallback, 用 .hermes/gsc_data.csv 6/17 90-day snapshot + .hermes/overlap-keywords.csv 7/17; 写月报"§0 数据源状态"段标注 "fallback" + 局限 (不能判定 30/90 天零展示, 不能跑 141 残杀词 7-day rolling)
 - 读 .hermes/industry-keyword-matrix.json 当前 queue / covered / stats
 - 读 .hermes/logs/ 过去 30 天 daily 报告
 - **读 .hermes/price-tables/*.json 校准状态 (v4 新)**
+- **读 .hermes/gsc-141-baseline-*.json + .hermes/gsc-snapshot-*.json (v4.1 跟 gsc-feedback v4 对接)**
 
 ## 2. 内容质量自迭代 (90 min, 每月必跑, 10 篇)
 > **【通用模板引用】** 基础步骤见 `.hermes/context.md §4 Sub-task A` 通用模板。
@@ -115,9 +137,11 @@ P0-1 价格表校准目标: 5 类目 × ~50 SKU × 3 locale = ~750 单元格
 - **en-US Tier 1 美国长尾词覆盖率审计 (§13.15)**: en 单独报告, < 80% 触发 daily 加权
 - **price-table src:modeled 校准进度 (v4 新)**: 5 类目 × 50 SKU × 3 locale 各自百分比
 
-## 4. Tier 切换判定 (20 min)
+## 4. Tier 切换判定 (20 min, **v4.1 加 K3 §6 铁律**)
 - 跑规则 → 列出自动降级 / 自动升级候选清单
+- **v4.1 K3 §6 铁律**: 每个候选对照 matrix.json covered[] 查 slug / Q-NNN, 命中 skip
 - 写变更 diff 到 .hermes/industry-keyword-matrix.json (新版本号 +YYYY-MM-v2)
+- 每月切换数量 ≤ matrix 总数 10% (避免大幅震荡)
 - git commit + push origin_ssh main
 
 ## 5. 月度报告 (35 min)
@@ -154,13 +178,19 @@ P0-1 价格表校准目标: 5 类目 × ~50 SKU × 3 locale = ~750 单元格
 - tier 切换 rule 误触发 (人工标记) → 立即回滚 + 升级
 - 内容质量自迭代 < 5 篇 → 升级 user
 - **price-table 校准进度异常波动 (> 50% 单月变化) → 升级 user**
+- **GSC API 永久 fallback 模式 (2026-07-22 K3 拍板)**: 3 次重试失败 → 切 fallback + 写月报"§0 数据源状态"段 + 升级 user 报 proxy/VPN 方案
+- **K3 §6 铁律误触发 (覆盖已 covered Q)**: 立即回滚 + 升级 user, 重新跑 §4 排除 covered[]
+- **141 残杀词 7-day rolling 异常 (fallback 期间挂起)**: 写月报"§141 状态"段标注挂起; 不算 cron 失败
 
-【完成标准 (v4 升级版)】
+【完成标准 (v4.1 升级版)】
 - ✅ 内容质量自迭代 ≥ 10 篇孤儿博客已优化上线 (3 locale × 10 = 30 URL)
 - ✅ matrix.json 已更新并 push
-- ✅ 月报落盘 (含 en-US + price-table 段)
+- ✅ 月报落盘 (含 en-US + price-table 段 + K3 §6 铁律段 + GSC 数据源状态段)
 - ✅ 7 步 verify 全过 + step 8 加固
 - ✅ 半年冲刺进度记录
-- ✅ **price-table 校准进度记录 (v4 新)**
+- ✅ **price-table 校准进度记录 (v4 升级到 v4.1: 5 类目 × 3 locale 各自 anchor/modeled/redFlag/pending 单元格数 + 百分比, 跟上月对比)**
+- ✅ **K3 §6 铁律 applied 计数 ≥ 0**: 月报"§K3 §6"段记录当月跳过多少 covered 候选; 0 是常态
+- ✅ **GSC 数据源状态写明**: 月报"§0 数据源状态"段标注 normal / fallback + 局限
+- ✅ **141 残杀词进度对接**: 月报"§141 状态"段标注 7-day rolling 是否挂起, baseline 当前值
 
 启动后立即读 .hermes/context.md + .hermes/industry-keyword-matrix.json + .hermes/price-tables/ (如有) + .hermes/logs/ 过去 30 天日报, 然后开干。
