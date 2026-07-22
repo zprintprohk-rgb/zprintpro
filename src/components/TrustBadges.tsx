@@ -100,8 +100,8 @@ const BADGES: Record<Locale, Badge[]> = {
 
 const HEADING: Record<Locale, string> = {
   en: 'Why USA Businesses Trust ZprintPro',
-  'zh-hk': '為何全球企業信賴智印雲',
-  ja: 'なぜグローバル企業が智印雲を選ぶのか',
+  'zh-hk': '為何全球企業信賴智印港',
+  ja: 'なぜグローバル企業がZprintProを選ぶのか',
 };
 
 const SUBHEADING: Record<Locale, string> = {
