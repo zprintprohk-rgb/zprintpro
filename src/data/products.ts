@@ -2387,10 +2387,12 @@ export const products: Product[] = [
     id: 'ST-003',
     sku_code: 'ST-003',
     slug: 'removable-stickers',
+    optimizedAt: '2026-07-22',
+    optimizationRound: 1,
     category: 'stickers',
     category_slug: 'stickers',
-    name: '可移貼紙(無殘膠) | 防水貼紙 / 異形貼紙', nameEn: 'Removable Stickers | Waterproof & Die-Cut Stickers', nameJa: 'はがせるステッカー | 防水ステッカー / ダイカット', title_zh: '可移貼紙(無殘膠)',
-    description: '特殊背膠設計，移除後不留殘膠，保護貼附表面。適合車窗、玻璃櫥窗、短期展覽。', descriptionEn: 'Special adhesive design leaves no residue when removed. Perfect for car windows, glass displays, short-term exhibitions.', descriptionJa: '特殊粘着設計、剥がしても残りません。車窓、ガラス展示、短期展示会に最適。', description_zh: '特殊背膠設計，移除後不留殘膠，保護貼附表面。適合車窗、玻璃櫥窗、短期展覽。',
+    name: '可移貼紙(無殘膠) | 防水貼紙 / 異形貼紙', nameEn: 'Removable Stickers | Waterproof & Die-Cut Stickers', nameJa: 'はがせるステッカー | 防水ステッカー / ダイカット', title_zh: '可移除貼紙印刷 50張起印 玻璃不留膠 · 季節活動試用品短期推廣適配 | 智印雲 ZprintPro',
+    description: '特殊背膠設計，移除後不留殘膠，保護貼附表面。適合車窗、玻璃櫥窗、短期展覽。 **适配行业**:季節性推廣、活動短期宣傳、試用品包裝、玻璃櫥窗裝飾、學校活動、餐廳當日貼紙、零售促銷', descriptionEn: 'Special adhesive design leaves no residue when removed. Perfect for car windows, glass displays, short-term exhibitions. **Best for**:seasonal campaigns, short-term event promo, sample packaging, glass window decoration, school activities, restaurant daily specials, retail promotions', descriptionJa: '特殊粘着設計、剥がしても残りません。車窓、ガラス展示、短期展示会に最適。 **適用業界**:季節キャンペーン、短期イベントプロモーション、サンプル包装、ガラス窓装飾、学校行事、レストラン日替わり、小売プロモーション', description_zh: '特殊背膠設計，移除後不留殘膠，保護貼附表面。適合車窗、玻璃櫥窗、短期展覽。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -4313,8 +4315,8 @@ export const products: Product[] = [
     slug: 'kraft-paper-bags',
     category: 'paper-bags',
     category_slug: 'paper-bags',
-    name: '牛皮紙袋 | 紙袋 / 牛皮紙袋 / 手提袋', nameEn: 'Kraft Paper Bags | Paper Bags & Kraft Bags', nameJa: 'クラフト紙袋 | 紙袋 / クラフト紙袋 / ハンドル', title_zh: '牛皮紙袋印刷訂製 100個起印 免費刀模 FSC認證 | 智印雲 ZprintPro',
-    description: '牛皮紙袋印刷訂製，100個起印，HK$1.8起/個。FSC環保認證紙材，多尺寸多規格，免費刀模設計，支援燙金UV局部。即日交貨，全港送貨，零售餐飲活動品牌推廣。', descriptionEn: 'Eco-friendly kraft paper, natural and rustic, loved by consumers. Perfect for clothing stores, gift shops, coffee shops., ISO 9001:2015 certified quality management system. Eco-friendly kraft · 100 MOQ · Twisted/ribbon handle options · Free shipping over $99 USA. Perfect for retail, bakery, fashion brands.', descriptionJa: '環境に優しいクラフト紙、質朴で自然、消費者に人気。衣料品店、ギフトショップ、コーヒーショップに最適。。エコクラフト紙・100枚から・紐/リボン手提げ選択可・全国送料込み。小売・ベーカリー・アパレルブランドに最適。', description_zh: '環保牛皮紙材質，質樸自然，深受消費者喜愛。適合服裝店、禮品店、咖啡店。多種尺寸可選，可定製Logo印刷。',
+    name: '牛皮紙袋 | 紙袋 / 牛皮紙袋 / 手提袋', nameEn: 'Kraft Paper Bags | Paper Bags & Kraft Bags', nameJa: 'クラフト紙袋 | 紙袋 / クラフト紙袋 / ハンドル', title_zh: '牛皮紙袋印刷訂製 100個起印 免費刀模 FSC認證 · 服裝品牌跨境電商適配 | 智印雲 ZprintPro',
+    description: '牛皮紙袋印刷訂製，100個起印，HK$1.8起/個。FSC環保認證紙材，多尺寸多規格，免費刀模設計，支援燙金UV局部。即日交貨，全港送貨，零售餐飲活動品牌推廣。 **适配行业**:服裝品牌、買手店、餐廳外賣、咖啡店、手搖飲品、婚慶喜帖、跨境電商 Etsy、禮品店', descriptionEn: 'Eco-friendly kraft paper, natural and rustic, loved by consumers. Perfect for clothing stores, gift shops, coffee shops., ISO 9001:2015 certified quality management system. Eco-friendly kraft · 100 MOQ · Twisted/ribbon handle options · Free shipping over $99 USA. Perfect for retail, bakery, fashion brands. **Best for**:apparel brands, boutique stores, restaurant takeout, cafe & bubble tea, wedding favors, cross-border Etsy, gift shops, eco-conscious DTC brands', descriptionJa: '環境に優しいクラフト紙、質朴で自然、消費者に人気。衣料品店、ギフトショップ、コーヒーショップに最適。。エコクラフト紙・100枚から・紐/リボン手提げ選択可・全国送料込み。小売・ベーカリー・アパレルブランドに最適。 **適用業界**:アパレルブランド、セレクトショップ、飲食テイクアウト、カフェ・タピオカ、ブライダル、越境EC Etsy、ギフトショップ、エコDTCブランド', description_zh: '環保牛皮紙材質，質樸自然，深受消費者喜愛。適合服裝店、禮品店、咖啡店。多種尺寸可選，可定製Logo印刷。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -4358,7 +4360,8 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
-`,
+
+<h3>智印雲 2026-07-18 intuan × 1.3 校準真實報價錨點</h3><table class='w-full text-sm border-collapse my-4'><thead><tr class='bg-gray-100'><th class='p-2 text-left'>數量</th><th class='p-2 text-left'>HKD 總價</th><th class='p-2 text-left'>HKD/個</th><th class='p-2 text-left'>校準來源</th></tr></thead><tbody><tr><td class='p-2 text-center'>500 個</td><td class='p-2 text-center'>HK$811</td><td class='p-2 text-center'>HK$1.62</td><td class='p-2 text-center'>intuan 2026-07-18 實詢</td></tr><tr><td class='p-2 text-center'>1000 個</td><td class='p-2 text-center'>HK$1,138</td><td class='p-2 text-center'>HK$1.14</td><td class='p-2 text-center'>intuan 2026-07-18 實詢</td></tr><tr><td class='p-2 text-center'>2000 個</td><td class='p-2 text-center'>HK$1,847</td><td class='p-2 text-center'>HK$0.92</td><td class='p-2 text-center'>intuan 2026-07-18 實詢</td></tr><tr><td class='p-2 text-center'>3000 個</td><td class='p-2 text-center'>HK$2,675</td><td class='p-2 text-center'>HK$0.89</td><td class='p-2 text-center'>intuan 2026-07-18 實詢</td></tr><tr><td class='p-2 text-center'>5000 個</td><td class='p-2 text-center'>HK$4,202</td><td class='p-2 text-center'>HK$0.84</td><td class='p-2 text-center'>intuan 2026-07-18 實詢</td></tr></tbody></table><p>智印雲 ZprintPro 深耕紙袋印刷 15+ 年,服務 15,000+ 客戶,產品銷往 100+ 國家。所有牛皮紙袋均通過 FSC 認證,符合歐盟 EU 木材法規。報價通過 intuan 校準,不做模擬價。</p>`,
     longDescriptionEn: `<h3>Kraft Paper Bags for Global Brands</h3>
 <p>ZprintPro kraft paper bags combine eco-friendly materials with retail-ready durability. Choose from 120-300g natural brown or white kraft with cotton or paper rope handles, base reinforcement, and gussets for load comfort. Our 4-color CMYK printing supports bold one-color identities through full-coverage photographic prints, with foil logo options for gifting appeal. 100-bag MOQ, 5-7 day standard production, FSC certified.</p>
 
@@ -4604,8 +4607,8 @@ export const products: Product[] = [
       '/images/products/seedream-webp/zprintpro-paper-bags-kraft-paper-bags-ja-4.webp',
     ],
   },
-    optimizedAt: '2026-07-20',
-    optimizationRound: 1,
+    optimizedAt: '2026-07-22',
+    optimizationRound: 2,
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-paper-bags-kraft-paper-bags-zh-hk.webp', en: 'zprintpro-paper-bags-kraft-paper-bags-en.webp', ja: 'zprintpro-paper-bags-kraft-paper-bags-ja.webp' },
     alt: {
@@ -6784,10 +6787,12 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     id: 'FL-004',
     sku_code: 'FL-004',
     slug: 'folded-leaflets',
+    optimizedAt: '2026-07-22',
+    optimizationRound: 1,
     category: 'flyers',
     category_slug: 'flyers',
-    name: '摺疊宣傳單張 | 宣傳單張 / 折頁 / A4/A5', nameEn: 'Folded Leaflets | A4/A5 Flyers & Leaflets', nameJa: '折りたたみパンフレット | A4/A5 チラシ・フライヤー', title_zh: '三摺雙摺宣傳單印刷 100張起印 企業簡介摺頁 | 智印雲',
-    description: '三摺雙摺宣傳單印刷訂製，100張起印，HK$0.45起/張。157g-250g銅版紙，免費摺頁設計排版。適合企業簡介產品目錄活動宣傳，3-5天交貨，全港送貨。', descriptionEn: 'Bi-fold or tri-fold design, can display more information.', descriptionJa: '二つ折りまたは三つ折りデザイン、より多くの情報を表示可能。', description_zh: '對摺或三摺設計，可展示更多信息。適合產品目錄、服務介紹。',
+    name: '摺疊宣傳單張 | 宣傳單張 / 折頁 / A4/A5', nameEn: 'Folded Leaflets | A4/A5 Flyers & Leaflets', nameJa: '折りたたみパンフレット | A4/A5 チラシ・フライヤー', title_zh: '折疊傳單印刷 A4 雙面 對摺三摺 · 餐廳菜單地產樓書活動宣傳適配 | 智印雲 ZprintPro',
+    description: '三摺雙摺宣傳單印刷訂製，100張起印，HK$0.45起/張。157g-250g銅版紙，免費摺頁設計排版。適合企業簡介產品目錄活動宣傳，3-5天交貨，全港送貨。 **适配行业**:餐廳菜單地產樓書、活動宣傳單張、學校院院校刊、培訓機構課程表、旅遊景點導覽、零售品牌推廣', descriptionEn: 'Bi-fold or tri-fold design, can display more information. **Best for**:restaurant menus, real estate brochures, event flyers, school & college publications, training course catalogues, tourism guidebooks, retail brand promotions', descriptionJa: '二つ折りまたは三つ折りデザイン、より多くの情報を表示可能。 **適用業界**:レストランメニュー、不動産パンフレット、イベントチラシ、学校・大学・機関紙、研修コースカタログ、観光ガイド、小売ブランド', description_zh: '對摺或三摺設計，可展示更多信息。適合產品目錄、服務介紹。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -8779,10 +8784,12 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     id: 'PK-002',
     sku_code: 'PK-002',
     slug: 'cosmetic-boxes',
+    optimizedAt: '2026-07-22',
+    optimizationRound: 1,
     category: 'packaging',
     category_slug: 'packaging',
-    name: '化妝品包裝盒 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Cosmetic Packaging Boxes | Gift Boxes & Custom Packaging', nameJa: '化粧品パッケージボックス | パッケージボックス・化粧箱', title_zh: '化妝品包裝盒',
-    description: '美妝護膚品牌化妝品包裝盒定製, 天地蓋 / 磁吸翻蓋 / 抽屜式 / 書型 4 種盒型, 內托 EVA / 紙托 / 吸塑可定製, 燙金 + 局部 UV + 內襯緞布。香港本地、跨境美妝電商、日本市場適用。', descriptionEn: 'Custom cosmetic packaging boxes for beauty and skincare brands — 4 box styles (lift-off lid, magnetic, drawer, book-style) with EVA/molded pulp/PET inner trays. Foil stamping, spot UV, satin lining. Cross-border e-commerce and Japan market ready.', descriptionJa: '化粧品パッケージボックス カスタム — 天地蓋 / マグネット蓋 / 引き出し式 / ブック型の 4 種類, EVA / 紙 / ペット内裝トレイ選択可。箔押し・スポット UV ・サテン裏地対応。越境 EC ・日本市場向け。', description_zh: '美妝護膚品牌化妝品包裝盒定製, 天地蓋 / 磁吸翻蓋 / 抽屜式 / 書型 4 種盒型, 內托可定製, 燙金 + 局部 UV + 內襯緞布。',
+    name: '化妝品包裝盒 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Cosmetic Packaging Boxes | Gift Boxes & Custom Packaging', nameJa: '化粧品パッケージボックス | パッケージボックス・化粧箱', title_zh: '化妝品盒訂製 100個起印 燙金局部UV · 美妝護膚面膜精華液品牌適配 | 智印雲 ZprintPro',
+    description: '美妝護膚品牌化妝品包裝盒定製, 天地蓋 / 磁吸翻蓋 / 抽屜式 / 書型 4 種盒型, 內托 EVA / 紙托 / 吸塑可定製, 燙金 + 局部 UV + 內襯緞布。香港本地、跨境美妝電商、日本市場適用。 **适配行业**:美妝護膚品牌、面膜品牌、精華液品牌、口紅彩妝、香水品牌、手作護膚品、跨境電商', descriptionEn: 'Custom cosmetic packaging boxes for beauty and skincare brands — 4 box styles (lift-off lid, magnetic, drawer, book-style) with EVA/molded pulp/PET inner trays. Foil stamping, spot UV, satin lining. Cross-border e-commerce and Japan market ready. **Best for**:skincare brands, sheet mask brands, serum brands, lipstick & makeup, perfume brands, hand-made skincare, cross-border e-commerce', descriptionJa: '化粧品パッケージボックス カスタム — 天地蓋 / マグネット蓋 / 引き出し式 / ブック型の 4 種類, EVA / 紙 / ペット内裝トレイ選択可。箔押し・スポット UV ・サテン裏地対応。越境 EC ・日本市場向け。 **適用業界**:スキンケアブランド、シートマスクブランド、美容液ブランド、口紅・メイク、香水ブランド、手作りスキンケア、越境EC', description_zh: '美妝護膚品牌化妝品包裝盒定製, 天地蓋 / 磁吸翻蓋 / 抽屜式 / 書型 4 種盒型, 內托可定製, 燙金 + 局部 UV + 內襯緞布。',
     longDescription: `<h3>4 種化妝品包裝盒型對比</h3>
 <p>化妝品包裝盒按開合結構分 4 種主流盒型, 對應不同預算、品牌定位與用戶體驗:</p>
 <table>
@@ -9304,7 +9311,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     optimizationRound: 1,
     category: 'packaging',
     category_slug: 'packaging',
-    name: '快遞盒/飛機盒 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Mailer Boxes | Gift Boxes & Custom Packaging', nameJa: '発送箱 | パッケージボックス・化粧箱', title_zh: '快遞盒/飛機盒 · 亞馬遜 FBA 跨境電商標配',
+    name: '100 MOQ 快遞盒/飛機盒 · 跨境 FBA DHL 2-4 天送達 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: '100 MOQ Mailer Boxes · Free Design · DHL 2-4 Day Global | Gift Boxes & Custom Packaging', nameJa: '100個〜 発送箱 · 越境EC FBA · DHL 2-4日配送 | パッケージボックス・化粧箱', title_zh: '100 MOQ 快遞盒/飛機盒 · 跨境電商 FBA 標配 · DHL 2-4 天',
     description: '堅固耐用，電商發貨首選。可印品牌Logo，提升開箱體驗。適配行業: 亞馬遜 FBA、Shopify 獨立站、Etsy、跨境電商品牌、訂閱盒直運、DTC 品牌、3PL 物流倉。', descriptionEn: 'Sturdy and durable, first choice for e-commerce shipping., ISO 9001:2015 certified quality management system Best for: Amazon FBA, Shopify DTC, Etsy, cross-border e-commerce brands, subscription box dropship, DTC brands, 3PL fulfillment warehouses.', descriptionJa: '頑丈で耐久性があり、EC発送の第一選択。 適用業界: Amazon FBA、Shopify DTC、Etsy、越境ECブランド、サブスクリプション ボックス dropship、DTC ブランド、3PL フルフィルメント倉庫。', description_zh: '堅固耐用，電商發貨首選。可印品牌Logo，提升開箱體驗。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -9349,7 +9356,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
-`,
+
+<h3>智印雲 2026-07-18 intuan × 1.3 校準真實報價錶 (mailer-boxes)</h3><table class='w-full text-sm border-collapse my-4'><thead><tr class='bg-gray-100'><th class='p-2 text-left'>數量</th><th class='p-2 text-left'>HKD 總價</th><th class='p-2 text-left'>HKD/個</th><th class='p-2 text-left'>校準來源</th></tr></thead><tbody><tr><td class='p-2 text-center'>500 個</td><td class='p-2 text-center'>HK$965</td><td class='p-2 text-center'>HK$1.93</td><td class='p-2 text-center'>intuan 2026-07-18 實詢</td></tr><tr><td class='p-2 text-center'>1000 個</td><td class='p-2 text-center'>HK$1,144</td><td class='p-2 text-center'>HK$1.14</td><td class='p-2 text-center'>intuan 2026-07-18 實詢</td></tr><tr><td class='p-2 text-center'>2000 個</td><td class='p-2 text-center'>HK$1,677</td><td class='p-2 text-center'>HK$0.84</td><td class='p-2 text-center'>intuan 2026-07-18 實詢</td></tr><tr><td class='p-2 text-center'>3000 個</td><td class='p-2 text-center'>HK$1,872</td><td class='p-2 text-center'>HK$0.62</td><td class='p-2 text-center'>intuan 2026-07-18 實詢</td></tr><tr><td class='p-2 text-center'>5000 個</td><td class='p-2 text-center'>HK$2,800</td><td class='p-2 text-center'>HK$0.56</td><td class='p-2 text-center'>intuan 2026-07-18 實詢</td></tr></tbody></table><p><strong>對比 e-print 香港零售</strong> 同類型 3 層 B 瓦楞飛機盒 <strong>HK$8-15/個 (500 個起,8 個工作天)</strong>,智印雲 500 個起印已可壓到 e-print 零售天花板 <strong>76-87% 成本優勢</strong>。5,000 個起單個成本僅 HK$0.56。</p><p>智印雲 ZprintPro 深耕跨境電商印刷 <strong>15+ 年</strong>,服務 <strong>15,000+ 跨境電商品牌</strong> (Amazon FBA / Shopify / Etsy),產品銷往 <strong>100+ 國家</strong>。所有訂單 ISO 9001 認證、ISO 12647 色彩管理,FSC 認證紙材可選。所有報價通過 intuan × 1.3 真實校準,不做模擬價。</p>`,
     longDescriptionEn: `<h3>Mailer Boxes for E-Commerce Brands</h3>
 <p>ZprintPro mailer boxes are the workhorse of DTC e-commerce — engineered for shipping durability and unboxing delight. Self-locking tuck-front design assembles in 5 seconds, requires no tape, and stacks flat for 70% shipping savings vs pre-assembled boxes. Choose from corrugated, folding carton, or rigid mailer construction with kraft, white, or full-color print. 100-box MOQ, 5-7 day production, FSC certified.</p>
 
@@ -9704,8 +9712,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'rigid-boxes',
     category: 'packaging',
     category_slug: 'packaging',
-    name: '精裝盒 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Rigid Boxes | Gift Boxes & Custom Packaging', nameJa: '上製本箱 | パッケージボックス・化粧箱', title_zh: '精品盒/禮品盒訂製印刷 100個起印 HK$4.5起/個 高端定製 | 智印港',
-    description: '精品盒/禮品盒訂製印刷，100個起印，HK$4.5起/個。硬殼天地盒磁吸盒抽屜盒，灰板裱藝術紙，燙金UV壓凹工藝。適合化妝品珠寶首飾婚慶禮盒週年慶品牌活動贈品，3-7天交貨，全球配送。', descriptionEn: 'Hardcover rigid construction, luxurious and premium. Premium setup box · 100 MOQ · Magnetic closure available · Foil + spot UV finish. Luxury packaging for jewelry, electronics, high-end gifts.', descriptionJa: '硬い上製本構造、豪華でプレミアム。。プレミアムセットアップ箱・100個から・マグネット式・箔押し+スポットUV。宝飾/電子機器/高級ギフト向けラグジュアリーパッケージ。', description_zh: '硬殼精裝/禮品盒，高檔奢華。適合高端產品、限量版、婚慶/週年慶贈品。',
+    name: '精裝盒 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Rigid Boxes | Gift Boxes & Custom Packaging', nameJa: '上製本箱 | パッケージボックス・化粧箱', title_zh: '硬盒訂製 100個起印 天地蓋書型磁吸 · 鐘錶珠寶3C電子禮品品牌適配 | 智印雲 ZprintPro',
+    description: '精品盒/禮品盒訂製印刷，100個起印，HK$4.5起/個。硬殼天地盒磁吸盒抽屜盒，灰板裱藝術紙，燙金UV壓凹工藝。適合化妝品珠寶首飾婚慶禮盒週年慶品牌活動贈品，3-7天交貨，全球配送。 **适配行业**:鐘錶珠寶品牌、3C電子產品、手機配件、禮品店、婚慶喜糖、聖誕禮盒、跨境電商亞馬遜', descriptionEn: 'Hardcover rigid construction, luxurious and premium. Premium setup box · 100 MOQ · Magnetic closure available · Foil + spot UV finish. Luxury packaging for jewelry, electronics, high-end gifts. **Best for**:watch & jewellery brands, 3C electronics, phone accessories, premium gift shops, wedding favours, Christmas hampers, Amazon FBA sellers', descriptionJa: '硬い上製本構造、豪華でプレミアム。。プレミアムセットアップ箱・100個から・マグネット式・箔押し+スポットUV。宝飾/電子機器/高級ギフト向けラグジュアリーパッケージ。 **適用業界**:腕時計・宝飾ブランド、3C電子機器、携帯電話アクセサリー、プレミアムギフト、ブライダル、クリスマス、Amazon FBA', description_zh: '硬殼精裝/禮品盒，高檔奢華。適合高端產品、限量版、婚慶/週年慶贈品。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -9862,8 +9870,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
       '/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-ja-3.webp',
     ],
   },
-    optimizedAt: '2026-07-20',
-    optimizationRound: 1,
+    optimizedAt: '2026-07-22',
+    optimizationRound: 2,
     variables: {
       sizes: [
         { value: 'small', label: '小號(100×80×50mm)', multiplier: 1 },
