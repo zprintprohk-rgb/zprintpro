@@ -18,7 +18,7 @@ import openpyxl
 SRC = Path(r'F:\yate98报价截图')
 OUT = Path(r'F:\zprintpro-nextjs\src\data\price-tables')
 TODAY = '2026-07-23'
-MARKUP = 1.3  # yate98 RMB cost → HKD sell anchor
+MARKUP = 1.5  # yate98 RMB cost → HKD sell anchor (user 2026-07-23 拍板: 含税毛利, 否决 1.3)
 
 PAT = re.compile(
     r'^(?P<product>.+?)-(?P<material>[^-]+(?:\[[^\]]+\])?)-(?P<rest>.+?)-(?P<qty>\d+)张-1款总价(?P<price>[\d.]+)元-理论重量(?P<kg>[\d.]+)千')
@@ -123,14 +123,19 @@ print(f'special-fold-leaflets.json: {len(groups)} configs')
 # 7. 运费规则引擎配置
 shipping = {
     'version': TODAY, 'currency': 'HKD',
+    'fx': {'CNY_to_HKD': 1.09, 'note': '2026-07 参考汇率, 报价台可用 fx-rates.json 覆盖'},
     'rules': [
         {'id': 'sf-express', 'name_zh': '順豐快遞', 'condition': 'sf_fee <= 200',
          'note': '默认渠道; sf_fee 按顺丰收方价估算, 阈值 200 HKD'},
-        {'id': 'logistics-fold', 'name_zh': '物流派送(折页类)', 'applies_to': ['special-fold-leaflets'],
-         'condition': 'sf_fee > 200', 'fee_formula': '200', 'note': 'xlsx 品类: 固定 200 HKD 派送费'},
-        {'id': 'logistics-general', 'name_zh': '物流园+派送(其他品类)', 'applies_to': ['gang-run-card-boxes', 'corrugated-boxes', 'digital-stickers', 'white-card-bags', 'custom-flyers'],
-         'condition': 'sf_fee > 200', 'fee_formula': '0.7 * weight_kg + 200',
-         'note': '0.7/kg 到香港物流园 + 200 派送费 (user 2026-07-23 拍板; 0.7 按 RMB 成本 HKD 计价, 待确认汇率处理)'},
+        {'id': 'logistics-fold', 'name_zh': '物流派送(特殊折页)', 'applies_to': ['special-fold-leaflets'],
+         'condition': 'sf_fee > 200', 'fee_formula': '200',
+         'note': 'e-print 对标折页: 固定 200 HKD 派送费 (人工核算已含, user 2026-07-23 确认)'},
+        {'id': 'logistics-general', 'name_zh': '物流园+派送(yate98 品类)',
+         'applies_to': ['gang-run-card-boxes', 'corrugated-boxes', 'digital-stickers', 'white-card-bags', 'custom-flyers'],
+         'condition': 'sf_fee > 200',
+         'fee_formula': '(0.7 * weight_kg + first_leg_rmb) * CNY_to_HKD + 200',
+         'params': {'per_kg_rmb': 0.7, 'first_leg_rmb': 100, 'delivery_hkd': 200},
+         'note': '0.7 RMB/kg 是香港物流园段成本(不含送货到物流点); first_leg_rmb=100 是深圳工厂→物流点头程估值, 待 user 确认实际值后修正'},
     ],
     'sf_rate_reference': {'first_kg': 30, 'per_kg_after': 8,
         'note': '估算用: 200 阈值 ≈ 22-25kg; 实际以顺丰当日报价为准, 报价台显示"运费另计/到付"兜底'},
