@@ -116,8 +116,9 @@ export const SKU_SELLING_POINT_ZH_HK: Record<string, string> = {
   'waterproof-stickers': '戶外耐用',
   'pvc-stickers': '防水材質',
   ' reflective-stickers': '反光材質',
-  // packaging — 盒型差异
-  'drawer-slide-gift-box': '滑軌盒',
+  // packaging — 盒型差异 (v7 2026-07-23: drawer-slide 合并 rigid-boxes, 加 gang-run)
+  'drawer-slide-gift-box': '硬盒定制',
+  'gang-run-card-boxes': '拼版白卡',
   'magnetic-gift-box': '磁吸盒',
   'rigid-box': '硬盒定制',
   'corrugated-box': '瓦楞紙',

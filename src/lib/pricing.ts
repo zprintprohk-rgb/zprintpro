@@ -433,9 +433,10 @@ const INDEPENDENT_PRICES: Record<string, Record<'en' | 'ja', { min: number; max:
     'en': { min: 1.15, max: 2.98, unit: 'pc' },
     'ja': { min: 150, max: 317, unit: '個' },
   },
-  'drawer-slide-gift-box': {
-    'en': { min: 2.76, max: 5.82, unit: 'pc' },
-    'ja': { min: 360, max: 648, unit: '個' },
+  // 2026-07-23 v7: drawer-slide-gift-box 合并 rigid-boxes, 加 gang-run-card-boxes
+  'gang-run-card-boxes': {
+    'en': { min: 25, max: 110, unit: 'pc' },
+    'ja': { min: 3800, max: 12500, unit: '個' },
   },
   // ========== Paper Bags ==========
   'kraft-paper-bags': {

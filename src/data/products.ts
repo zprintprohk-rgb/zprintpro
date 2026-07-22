@@ -17965,176 +17965,59 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     },
     },
   {
-    id: 'PKG-010',
-    sku_code: 'PKG-010',
-    slug: 'drawer-slide-gift-box',
+    id: 'PKG-016',
+    sku_code: 'PKG-016',
+    slug: 'gang-run-card-boxes',
+    optimizedAt: '2026-07-23',
+    optimizationRound: 1,
     category: 'packaging',
     category_slug: 'packaging',
-    name: '抽屜禮盒滑軌盒印刷 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Drawer Slide Gift Box | Gift Boxes & Custom Packaging', nameJa: '引き出し式ギフトボックス | パッケージボックス・化粧箱', title_zh: '抽屜禮盒滑軌盒印刷',
-    description: '精緻抽屜式禮盒，絲帶拉手設計。適合茶葉、月餅、珠寶首飾包裝。', descriptionEn: 'Exquisite drawer-style gift boxes with ribbon pull. Perfect for tea, mooncakes, jewelry packaging.', descriptionJa: '精巧な引き出し式ギフトボックス。リボン引手付き。お茶、月餅、宝石類の包裝に最適。', description_zh: '精緻抽屜式禮盒，絲帶拉手設計。適合茶葉、月餅、珠寶首飾包裝。',
-    longDescription: `<h3>材質與紙張對比</h3>
-<p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
-<table>
-  <thead><tr><th>紙材</th><th>特性</th><th>適用場景</th></tr></thead>
-  <tbody>
-    <tr class="border-b border-gray-200"><td>白卡紙 / 灰板</td><td>1200g 高密度灰板外裱 157g 銅版紙或特種紙，堅固耐用</td><td>高端禮盒、珠寶首飾、化妝品盒</td></tr>
-    <tr class="border-b border-gray-200"><td>瓦楞紙板</td><td>E 坑 / B 坑雙層，緩衝抗震，堅固耐壓</td><td>電商物流、郵寄盒、食品包裝</td></tr>
-    <tr><td>牛皮紙 / 環保紙</td><td>FSC 認證環保紙張，可完全降解</td><td>ESG 碳審計、社企、有機產品</td></tr>
-  </tbody>
-</table>
-
-<h3>工藝選擇</h3>
-<p>可選 4 種印刷與後加工藝組合，根據品牌定位與使用場景搭配：</p>
-<table>
-  <thead><tr><th>工藝</th><th>效果說明</th></tr></thead>
-  <tbody>
-    <tr class="border-b border-gray-200"><td>摺疊盒</td><td>可攤平運輸，成本較低，適合零售產品</td></tr>
-    <tr class="border-b border-gray-200"><td>磁吸禮盒</td><td>單手即可優雅開合，高端禮品首選</td></tr>
-    <tr class="border-b border-gray-200"><td>天地蓋盒</td><td>結構簡潔，儀式感強，書型結構</td></tr>
-    <tr><td>抽屜滑動盒</td><td>抽拉設計，驚喜感強，適合禮品套裝</td></tr>
-  </tbody>
-</table>
-
-<h3>印刷工藝說明</h3>
-<ul>
-  <li>內襯可選 EVA 海棉、絨布、紙托，分隔主機與配件</li>
-  <li>面紙可配觸感膜降低指紋，邊角多經圓角刀模降低磕碰風險</li>
-  <li>請在報價時說明磁鐵規格與航空運輸需求，以便選用符合安檢的包裝標示</li>
-</ul>
-
-<h3>已服務的本地客戶</h3>
-<p>智印雲已為 17 間香港電商品牌、9 間美妝品牌、14 間珠寶品牌、6 間高端食品品牌印製各類禮盒。100 個起印，深圳自設廠房直送，DHL Express / FedEx 國際配送，灰板通過 FSC 認證。</p>
-
-<h3>可選加值服務</h3>
-<p>可加燙金、UV 局部、壓凹、磁吸開合、絲帶、感謝卡、內襯 EVA 泡棉。免費結構設計打樣。</p>
-
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
-<h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、名片/信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
-`,
-    longDescriptionEn: `<h3>Drawer Slide Gift Boxes for Elegant Presentations</h3>
-<p>ZprintPro's drawer slide gift boxes are designed for packaging premium products such as tea, mooncakes, and jewelry. These boxes feature a greyboard structure laminated with 157g art paper or velvet-textured specialty paper, providing a luxurious feel. The inner tray has a slide-rail structure with satin ribbon pulls for a smooth and ceremonial unboxing experience. Inserts such as EVA cutouts, velvet lining, or satin fabric are used to secure products and prevent scratches. Surface finishes include gold foil, silver foil, spot UV, and embossed debossing, while hidden magnetic closures ensure the lid stays shut. We provide free 3D structural design and material touch samples, with a delivery time of 7–10 working days after confirmation.</p>
-
-<h3>Material & GSM Specifications</h3>
-<table class="w-full border-collapse my-4 text-sm">
-  <thead>
-    <tr class="bg-[#2873F5] text-white">
-      <th class="p-2 text-left">Box Type</th>
-      <th class="p-2 text-center">Material</th>
-      <th class="p-2 text-center">Durability</th>
-      <th class="p-2 text-center">Best For</td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">Slide-rail Box</td><td class="p-2 text-center">Greyboard</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">Tea, mooncakes</td></tr>
-    <tr class="border-b bg-gray-50"><td class="p-2 font-medium">Drawer Box</td><td class="p-2 text-center">Art Paper</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">Jewelry, premium gifts</td></tr>
-  </tbody>
-</table>
-
-<h3>Printing & Finishing Processes</h3>
-<p>Our gift boxes are printed using high-quality offset printing with options for foil stamping, spot UV, and embossing to add a touch of luxury. The surface finishes include matte, gloss, and soft-touch for a premium feel.</p>
-
-<h3>Size / Format / MOQ Table</h3>
-<table class="w-full border-collapse my-4 text-sm">
-  <thead>
-    <tr class="bg-[#2873F5] text-white">
-      <th class="p-2 text-left">Size (inches)</th>
-      <th class="p-2 text-center">MOQ</th>
-      <th class="p-2 text-center">Turnaround</th>
-      <th class="p-2 text-center">Unit Price</td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="border-b"><td class="p-2 font-medium">8 x 8 x 3</td><td class="p-2 text-center">100</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$4.00</td></tr>
-    <tr class="bg-gray-50"><td class="p-2 font_medium">10 x 10 x 4</td><td class="p-2 text-center">200</td><td class="p-2 text-center">3-5 days</td><td class="p-2 text-center">$5.00</td></tr>
-  </tbody>
-</table>
-
-<h3>Use Cases / Applications</h3>
-<p>Our drawer slide gift boxes are perfect for:</p>
-<ul>
-  <li>Tea packaging</li>
-  <li>Mooncake packaging</li>
-  <li>Jewelry packaging</li>
-  <li>Premium corporate gifts</li>
-</ul>
-
-<h3>Quality, Compliance, and Shipping</h3>
-<p>ZprintPro ensures top-quality printing with FSC-certified materials and ISO 9001 manufacturing standards. We offer DHL Express global shipping, delivering to the US, UK, Australia, and more in 2-4 days. Our 30-second AI quote system provides instant pricing without the need for sign-up.</p>`,
-    longDescriptionJa: `引き出し式ギフトボックスをZprintProでご注文。1200gグレーボードに157gコート紙またはベルベット調特殊紙を貼り合わせ+内箱スライドレール構造+サテンリボン引手で滑らかな開閉と儀式的な開封体験。お茶・月餅・宝石類・高級企業ギフト包裝様に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
-
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
-<h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、名刺・封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
-<details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
-<details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
-<details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
-`,
+    name: '拼版白卡彩盒(免刀模費) | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Gang-Run White Card Boxes (No Die-Cut Fee) | Gift Boxes & Custom Packaging', nameJa: '合版ホワイトカードボックス(型代不要) | パッケージボックス・化粧箱', title_zh: '拼版白卡彩盒(免刀模費) 500個起印 · 8-15天交期 · 香港無對手價',
+    description: '拼版白卡彩盒, 固定刀模共用, 免刀模費 + 免排版費, 成本直降 40-60%。4 種紙材(350g/400g 單粉卡、375g 銀卡、375g 鐳射銀卡), 3 種盒型(飛機盒/扣底盒/雙插盒), 8 檔標準尺寸。500-10,000 枚, 8-15 天交期。', descriptionEn: 'Gang-run white card boxes with shared die-cut mold, no die-cut fee, no setup fee — 40-60% lower cost than custom. 4 paper stocks (350g/400g single-side, 375g silver card, 375g holographic silver), 3 box styles (airplane/lock-bottom/double-tuck), 8 standard sizes. 500-10,000 pieces, 8-15 day turnaround. Hong Kong zero-competition pricing.', descriptionJa: '合版ホワイトカードボックス、固定型代共用で型代不要・版代不要、カスタム比 40-60% コスト削減。4 種素材(350g/400g 単粉カード、375g 銀カード、375g ホログラム銀カード)、3 種箱型(飛行機箱/ロック底箱/両挿箱)、8 種標準サイズ。500-10,000 個、8-15 日納期。香港無競合価格。', description_zh: '拼版白卡彩盒, 固定刀模共用, 免刀模費 + 免排版費, 成本直降 40-60%。4 種紙材, 3 種盒型, 8 檔標準尺寸。',
     features: [
-      '【滑軌結構】抽屜式開合順暢，緞帶拉手儀式感滿分',
-      '【1200g 灰板＋157g 銅版】高挺度外殼，抗壓耐摔',
-      '【EVA／絨布／緞面內襯】精準挖槽固定，防刮傷',
-      '【磁吸隱藏扣】盒蓋緊閉，運輸中不鬆脫',
-      '【燙金／浮雕】金／銀箔或立體擊凸，提升奢華質感',
-      '【3D 結構設計】免費渲染確認，尺寸精準至 0.5mm',
-      '【7–10 天交付】確認後量產，適合節慶禮品檔期',
+      '【免刀模費】固定刀模共用, 拼版生產成本直降 40-60%',
+      '【4 種紙材】350g 單粉卡(超高松) / 400g 單粉卡 / 375g 銀卡紙 / 375g 鐳射銀卡',
+      '【3 種盒型】飛機盒 / 普通扣底盒 / 雙插盒, 8 檔標準尺寸(60x40x20 ~ 200x150x80mm)',
+      '【500-10,000 枚】湊版起印, 中小批量最優解',
+      '【8-15 天交期】湊版生產, 不接急件, 如實標註',
+      '【覆膜工藝】啞膜 / 光膜可選;銀卡類含印白墨 + 逆向 UV',
+      '【加值工藝】可選燙金 / UV / 擊凸 / 貼膠片, 提升品牌質感',
     ],
     specs: {
-      material: '1200g 灰板紙裱糊 157g 銅版紙／絨面特種紙；EVA／絨布內襯',
-      size: '常見 15×10×6cm 至 25×18×8cm（可客製）',
-      printMethod: '四色柯式印刷',
-      finishing: '燙金／燙銀、局部 UV、浮雕擊凸、磁吸扣、緞帶拉手',
+      material: '350g/400g 單粉卡(超高松) / 375g 銀卡紙 / 375g 鐳射銀卡',
+      size: '60x40x20 / 80x60x35 / 100x70x35 / 100x80x120 / 120x80x40 / 150x100x60 / 150x50x100 / 200x150x80 mm (8 檔標準尺寸)',
+      boxStyle: '飛機盒 / 普通扣底盒 / 雙插盒',
+      printMethod: '四色柯式印刷 + 覆光膜/啞膜',
+      finishing: '燙金 / UV 局部 / 擊凸 / 貼膠片 / 印白墨(銀卡類) / 逆向 UV(鐳射銀卡類)',
     },
-    price_range: 'HK$12-60/個',
-    basePrice: 12,
-    basePrice_en: 2.76,
-    basePrice_ja: 360,
-    weight_score: 93,
-    isHot: false,
+    price_range: 'HKD 129 起 / USD 25 起 / ¥3,800 起',
+    basePrice: 129,
+    basePrice_en: 25,
+    basePrice_ja: 3800,
+    weight_score: 90,
+    isHot: true,
     isNew: true,
-    minQuantity: 200,
-    images: ['/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-zh-hk-1.webp'],
-  imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-zh-hk-1.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-zh-hk-4.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-zh-hk-5.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-en-1.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-en-4.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-ja-1.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-ja-4.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-ja-5.webp',
-      '/images/products/seedream-webp/zprintpro-packaging-drawer-slide-gift-box-ja-6.webp',
-    ],
-    },
-    optimizedAt: '2026-07-14',
-    optimizationRound: 1,
-  seoImages: {
-    filename: { 'zh-hk': 'zprintpro-packaging-drawer-slide-gift-box-zh-hk-1.webp', en: 'zprintpro-packaging-drawer-slide-gift-box-en-1.webp', ja: 'zprintpro-packaging-drawer-slide-gift-box-ja-1.webp' },
-    alt: {
-      'zh-hk': '包裝盒 / 禮品盒 / 定製包裝 | 香港抽屜式禮盒印刷 350g白卡紙 緞帶拉手',
-      en: 'Custom Packaging Boxes & Gift Boxes | Drawer Slide Gift Box Printing 350g White Card Ribbon Pull',
-      ja: 'パッケージボックス / ギフトボックス | 引き出し式ギフトボックス | オリジナルパッケージ・最短3日 | ZprintPro'
+    minQuantity: 500,
+    images: ['/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-zh-hk-1.webp'],
+    imagesByLocale: {
+      'zh-hk': [
+        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-zh-hk-1.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-zh-hk-2.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-zh-hk-3.webp',
+      ],
+      'en': [
+        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-en-1.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-en-2.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-en-3.webp',
+      ],
+      'ja': [
+        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-ja-1.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-ja-2.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-ja-3.webp',
+      ],
     },
   },
-    },
-
-  // ===== 新增 packaging SKU (M3 v4 · 2026-07-21) — 卡盒/坑盒/插口盒 =====
+ · 2026-07-21) — 卡盒/坑盒/插口盒 =====
   {
     id: 'PKG-013',
     sku_code: 'PKG-013',

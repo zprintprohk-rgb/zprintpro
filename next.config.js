@@ -95,6 +95,21 @@ function buildGuideRedirects() {
     });
   }
 
+  // 2026-07-23 v7: drawer-slide-gift-box 合并进 rigid-boxes (K3 拍板, GSC 28天数据 drawer-slide 10展示/1点击 礼盒类最弱, gang-run-card-boxes 顶坑位)
+  // 类目 12→12 SKU 维持 (删 1 加 1)
+  for (const locale of LOCALES) {
+    rules.push({
+      source: `/${locale}/product/drawer-slide-gift-box`,
+      destination: `/${locale}/product/rigid-boxes`,
+      permanent: true,
+    });
+    rules.push({
+      source: `/${locale}/product/drawer-slide-gift-box/`,
+      destination: `/${locale}/product/rigid-boxes/`,
+      permanent: true,
+    });
+  }
+
   return rules;
 }
 

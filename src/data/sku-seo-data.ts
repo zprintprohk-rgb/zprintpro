@@ -4050,49 +4050,47 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     }
   },
 
-  "drawer-slide-gift-box": {
+  "gang-run-card-boxes": {
     "name": {
-      "zh-hk": "抽屜式禮盒印刷",
-      "en": "Drawer Slide Gift Box",
-      "ja": "引き出し式ギフトボックス"
+      "zh-hk": "拼版白卡彩盒印刷",
+      "en": "Gang-Run White Card Boxes",
+      "ja": "合版ホワイトカードボックス"
     },
     "seo": {
       "zh-hk": {
-        "title": "抽屜式禮盒印刷 | 高端滑動開合 定制結構 | 智印雲 ZprintPro",
-        "description": "抽屜式禮盒印刷 100 個起, 採用 1200g 灰板外裱特種紙, 滑動開合設計, 結構新穎有儀式感, 適合高端首飾、手錶、化妝品禮盒。48 小時快遞 (順豐香港本地派送)。**智印雲 香港本地印刷 15+ 年自有品牌**: 免費結構設計打樣, 支持燙金、壓凹、局部光油、絲帶提手。",
-        "h1": "抽屜式禮盒印刷",
-        "keywords": ["抽屜式禮盒", "滑動禮盒", "高端禮盒", "包裝盒印刷", "瓦楞紙盒", "禮品盒", "定制包裝", "化妝品盒", "食品盒", "快遞盒", "天地蓋盒", "紙盒定制", "高檔禮盒", "100個起印", "2天出貨", "FSC認證", "HK衛生署", "QR Code包裝", "UV彩盒", "中秋禮盒印刷", "保健品包裝", "免費打樣", "免費排版", "出口包裝", "包裝盒價格", "包裝盒快印", "化妝品包裝盒", "即日報價", "可降解包裝", "婚禮喜糖盒", "定製包裝盒", "定製包裝箱", "定製喜糖盒", "小批量包裝盒", "小批量彩盒", "小批量快印", "工業包裝", "彩盒印刷", "抽屜式彩盒", "永續包裝", "燙金印刷", "燙金禮盒", "燙銀印刷", "環保包裝盒", "瓦楞紙盒印刷", "磁吸盒", "禮品彩盒", "窗口包裝", "窗口設計", "節慶包裝盒", "絲帶設計", "經濟包裝", "綠色印刷", "緊急印刷", "美妝包裝", "藥品包裝盒", "防潮包裝", "食品級紙盒", "香港本地印刷"],
-        "body": "抽屜禮盒滑軌盒印刷 專為香港中小企、本地餐廳及跨境電商品牌設計。100 張起印，無開版費，港九新界 $500 以上免費順豐本地速遞，辨公室 / 港鐵站交收。ISO 9001 認證工廠，FSC 認證紙張，大豆油墨，FDA 認可（適用於間接食品接觸），15+ 年印刷經驗。\n\n抽屜禮盒滑軌盒印刷 廣泛應用於 禮品包裝及精品零售盒、化妝品及護膚品包裝、DTC 電商運輸及訂閱制禮盒 等本地場景。無論您需要小店餐廳的推廣單張、活動入口的指示牌，還是跨境零售品牌的精品包裝，抽屜禮盒滑軌盒印刷 都能為香港本地品牌提供快速、靈活、符合成本預期的印刷方案。\n\n材質選擇包括 350 克光面卡紙配啞光膠（標準盒）（標準用途，性價比高）、B 楞瓦楞紙（重型運輸箱）（中檔質感，主流選擇）、硬身禮盒配磁石蓋（高級禮品）（特殊需求或精品用途）。三種材質均通過 FSC 認證紙張，大豆油墨 及 FDA 認可（適用於間接食品接觸） 認證。表面處理可選啞光膠、亮面膠、局部 UV、燙金，全部支援 CMYK 全彩印刷及專色白墨（如適用）。\n\n交稿規範：300 DPI、CMYK 色彩模式、3mm 出血、字體外框化。提交檔案後 2 小時內提供免費數碼打稿。如未有設計檔案，我們專業設計團隊免費為您打稿，只需透過 WhatsApp 提供品牌顏色、Logo 及參考圖片。每個標準尺寸均提供免費刀模線模板下載。\n\n收費透明：100 張起印，無開版費、無製版費，港九新界 $500 以上免費順豐速遞。標準生產 3-5 個工作天，加急訂單（24 小時打稿 + 2 天生產）加收 20%。即時網上報價 30 秒完成，或 WhatsApp 聯絡客服索取度身訂造方案。\n\n**常見問題**\n\n**Q1: 包裝盒有哪些款式可選？**\n插口盒（自動扣、直插、反插）、硬身盒（上下蓋）、磁石蓋禮盒、抽屜式盒、瓦楞運輸箱、及不規則異形切割盒。所有標準款式均提供免費刀模線模板下載。\n\n**Q2: 最低起印量是多少？**\n100 個起印（標準尺寸無開版費、無刀模費）。自訂尺寸 / 異形切割起印量為 500 個。標準生產 5-7 個工作天，港九新界順豐速遞 1-2 個工作天送達。\n\n**Q3: 落單前可以先看 3D 模擬圖嗎？**\n可以 — 提交檔案後 4 小時內提供免費 3D 渲染圖。如需實物樣本，我們提供 HK$299 付費樣本套裝，DHL 速遞送達，含您的設計印在實際盒材上。\n\n**Q4: 包裝盒適合食品接觸嗎？**\n我們的食品級包裝盒使用 FDA 認可膠水及食品接觸安全油墨，認證適用於間接食品接觸（燕麥、茶、巧克力、零食）。直接食品接觸（糖果、新鮮水果），我們提供專業食品級內襯。請告知食品類型，我們會推薦合適紙材。\n\n準備落單？2 小時免費打稿 — WhatsApp 客服 +852 9810 1133 或點擊頁面「30 秒 AI 報價」按鈕。"
+        "title": "拼版白卡彩盒印刷 (免刀模費) | 8-15天交期 | 香港無對手價 | 智印港 ZprintPro",
+        "description": "拼版白卡彩盒, 固定刀模共用, 免刀模費 + 免排版費, 成本直降 40-60%。4 種紙材 (350g/400g 單粉卡、375g 銀卡、375g 鐳射銀卡), 3 種盒型, 8 檔標準尺寸。500-10,000 枚, 8-15 天交期。**拼版白卡彩盒 香港無對手價**: 500 枚飛機盒起 HKD 129, 1000 枚 HKD 171。",
+        "h1": "拼版白卡彩盒印刷 (免刀模費)",
+        "keywords": ["拼版白卡彩盒", "免刀模費", "白卡彩盒", "拼版彩盒", "標準尺寸彩盒", "飛機盒", "扣底盒", "雙插盒", "跨境電商彩盒", "美妝包裝盒"],
+        "body": "拼版白卡彩盒, 固定刀模共用, 免刀模費 + 免排版費, 成本直降 40-60%。4 種紙材 (350g/400g 單粉卡、375g 銀卡、375g 鐳射銀卡), 3 種盒型 (飛機盒/扣底盒/雙插盒), 8 檔標準尺寸 (60x40x20 ~ 200x150x80mm)。500-10,000 枚中小批量, 8-15 天交期 (湊版生產, 如實標註不接急件)。覆光膜/啞膜可選, 可加燙金/UV/擊凸/貼膠片等加值工藝。深圳自有廠房, 香港本地派送, DHL Express 全球 2-4 天配送, ISO 9001 認證。"
       },
       "en": {
-        "title": "Drawer Slide Gift Box | Free Shipping $99+ | ZprintPro",
-        "description": "Custom drawer slide gift box from ZprintPro the US. Ribbon Pull, 4-color CMYK. 100-MOQ. Free US shipping over $100, DHL Express | Free Design | 100 MOQ",
-        "h1": "Drawer Slide Gift Box 100+ | ZprintPro",
-        "keywords": ["drawer slide gift box","custom drawer slide gift box","drawer slide gift box free shipping","drawer slide gift box USD","bulk drawer slide gift box","drawer slide gift box DHL","bespoke drawer slide gift box","drawer slide gift box wholesale","drawer slide gift box pricing","drawer slide gift box bulk","packaging box printing","gift boxes","cosmetic boxes","food boxes","mailer boxes","corrugated boxes","custom packaging","rigid boxes","folding cartons","product boxes","100pcs MOQ","2-day turnaround","FSC certified","food safety compliance","QR code packaging","mid-autumn gift box printing","health supplement packaging","free proof","free layout","export packaging","cosmetic packaging box","instant quote","compostable packaging","small batch packaging box","industrial packaging","color box printing","drawer color box","sustainable packaging","silver foil printing","eco packaging box","corrugated box","corrugated box printing","magnetic box","gift color box","window design","festival packaging box","green printing","rush printing","beauty packaging","pharmaceutical packaging box","moisture-proof packaging","food-grade box","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label"],
-        "body": "Custom drawer slide gift box designed for US small business, DTC brands, and cross-border e-commerce. Free design mockup, no setup fees, and Free Shipping on US orders over $99. Every order ships from our Asia factory with 4-day delivery to the lower 48 states. ISO 9001 certified production with full FDA compliance where applicable.\n\nDrawer Slide Gift Box are widely used across gift packaging and luxury retail boxes, cosmetic and skincare product packaging, and DTC e-commerce shipping and subscription boxes — whether you are launching a new product line, refreshing your retail shelf presence, or shipping promotional materials to a nationwide customer base. The packaging market rewards brands that ship fast, iterate often, and stay under tight unit-cost targets — that is exactly what our drawer slide gift box service is built for.\n\nMaterial options include 350g coated card with matte lamination (standard box) for everyday high-volume use, Corrugated B-flute (heavy-duty shipping box) for premium applications, and Rigid setup box with magnetic closure (premium gift) for specialty projects. All three are FSC-certified paper, soy-based ink and FDA-safe for indirect food contact (food-grade options), so you can ship into the US market without compliance friction. Print finishes include matte lamination, gloss lamination, spot UV, foil stamping, and full-color CMYK plus white ink where supported.\n\nSubmit print-ready files (300 DPI, CMYK, 3mm bleed, outlined fonts) and we ship a free digital proof within 2 hours. If you do not have design files yet, our in-house design team will mock up your concept at no charge — just share your brand colors, logo, and any reference photos via WhatsApp. We also offer free dieline templates for every standard size.\n\nPricing is transparent: 100-piece minimum, no setup fees, no plate fees, and Free Shipping on US orders over $99. Standard turnaround is 4 business days for production plus 4-day USA delivery. Rush orders (24-hour proof plus 2-day production) available for an additional 20%. Get an instant quote via the 30-second AI estimator on the product page, or message us on WhatsApp for a custom run.\n\n**FAQ**\n\n**Q1: What box styles are available?**\nTuck-end boxes (auto-lock, straight tuck, reverse tuck), setup boxes (rigid lid-and-base), magnetic closure boxes, drawer/slider boxes, mailer boxes (corrugated), and custom die-cut shapes. We provide free dieline templates for all standard styles.\n\n**Q2: What is the minimum order quantity?**\n100 boxes minimum (no setup fees, no die fees for standard sizes). Custom sizes / die-cut MOQ is 500. Standard production 5-7 business days plus 4-day USA delivery.\n\n**Q3: Can I get a 3D mockup before bulk order?**\nYes — we send a free 3D render within 4 hours of file submission. For physical samples, we offer a paid sample pack ($49) shipped via DHL Express with your custom design on the actual box stock.\n\n**Q4: Are the boxes safe for food products?**\nOur food-grade box options use FDA-safe adhesive and food-contact-safe inks, certified for indirect food contact (oatmeal, tea, chocolate, snacks). For direct food contact (candy bars, fresh fruit), we offer specialized food-grade linings. Share your food product type and we will recommend the right stock.\n\nReady to print? Get a free digital proof in 2 hours — WhatsApp us at +1 982 808 5133 or use the 30-second AI quote button on this page. Same-day USA pickup available for orders placed before 11 AM EST in major US cities."
-      
+        "title": "Gang-Run White Card Boxes (No Die-Cut Fee) | 8-15 Day Turnaround | From USD 25 | ZprintPro",
+        "description": "Gang-run white card boxes with shared die-cut mold — no die-cut fee, no setup fee — 40-60% lower cost than custom. 4 paper stocks (350g/400g single-side card, 375g silver card, 375g holographic silver), 3 box styles (airplane/lock-bottom/double-tuck), 8 standard sizes. 500-10,000 pieces, 8-15 day production. **Hong Kong zero-competition pricing for US small business**: 500 pieces from USD 25. Free shipping $99+. No minimum 500 MOQ.",
+        "h1": "Gang-Run White Card Boxes (No Die-Cut Fee) · 8-15 Day Turnaround",
+        "keywords": ["gang run card boxes", "no die cut fee", "white card boxes bulk", "standard size boxes", "airplane box", "lock bottom box", "double tuck box", "small business packaging", "USA small business boxes"],
+        "body": "Gang-run white card boxes from ZprintPro — shared die-cut mold cuts cost 40-60% vs custom. 4 paper stocks (350g/400g single-side, 375g silver card, 375g holographic silver), 3 box styles (airplane/lock-bottom/double-tuck), 8 standard sizes from 60x40x20mm to 200x150x80mm. 500-10,000 piece runs, 8-15 day production (consolidated gang-run production, no rush orders). Matte or gloss lamination standard, optional foil/UV/embossing/lamination upgrades. Made in Asia, DHL Express 2-4 day USA delivery, ISO 9001 certified."
       },
       "ja": {
-        "title": "引き出し式ギフトボックス | カスタム印刷 | ZprintPro",
-        "description": "引き出し式ギフトボックス印刷サービス、高級特殊紙採用でスルスル引き心地滑らか。ギフトブランド・ジュエリー・化粧品向け短納期対応、100個〜少量対応、日本向けDHL配送2-4日。無料デザインサポート、複数回修正OK。| ZprintPro智印港",
-        "h1": " drawer slide gift box",
-        "keywords": ["引き出し式ギフトボックス", "drawer slide gift box", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "日本の食品衛生基準", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
-        "body": "カスタム 引き出し式ギフトボックス — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FSC 認証紙、大豆油性インク、FDA セーフ（間接食品接触対応）。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\n引き出し式ギフトボックス は ギフトパッケージ・高級小売箱、化粧品・スキンケア製品パッケージ、DTC EC 配送・サブスクリプションボックス の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。packaging 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに 引き出し式ギフトボックス サービスの設計思想です。\n\n素材は 350g コート紙 + マットラミネート（標準箱）（日常大量使用）、B フルート段ボール（強化配送箱）（プレミアム用途、主力選択）、硬質セットアップ箱 + マグネット蓋（プレミアムギフト）（特殊プロジェクト）の 3 種類。すべて FSC 認証紙、大豆油性インク および FDA セーフ（間接食品接触対応） 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、packaging 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: どんな箱スタイルが対応可能ですか？**\nTuck-end 箱（オートロック、ストレートタック、リバースタック）、セットアップ箱（硬質蓋底）、マグネット蓋箱、引き出し式箱、宅配段ボール箱、オリジナルダイカット形状。すべての標準スタイルに無料型紙テンプレートをご用意。\n\n**Q2: 最小注文数量は？**\n100 個から（標準サイズ版代・型代ゼロ）。カスタムサイズ / ダイカットは 500 個から。標準納期 5-7 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前に 3D モックアップは見られますか？**\nはい — データ提出から 4 時間以内に無料 3D レンダリングをお届け。実物サンプルは有償（¥4,980）で DHL Express にて、お客様デザイン実物印刷入りでお届け。\n\n**Q4: 食品接触対応ですか？**\n食品グレード箱は FDA セーフ接着剤と食品接触対応インク使用、間接食品接触（オートミール、茶、チョコ、スナック）認証済み。直接食品接触（キャンディ、フルーツ）は専用食品グレードライニング対応。食品種別をお知らせいただければ最適素材をご提案します。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
+        "title": "合版ホワイトカードボックス (型代不要) | 8-15日納期 | ¥3,800〜 | ZprintPro",
+        "description": "合版ホワイトカードボックス、固定型代共用で型代不要・版代不要、カスタム比 40-60% コスト削減。4 種素材 (350g/400g 単粉カード、375g 銀カード、375g ホログラム銀カード)、3 種箱型 (飛行機箱/ロック底箱/両挿箱)、8 種標準サイズ。500-10,000 個、8-15 日納期。**香港無競合価格**: 500 個から ¥3,800、全国送料込み、沖縄・北海道も同料金。",
+        "h1": "合版ホワイトカードボックス (型代不要) · 8-15日納期",
+        "keywords": ["合版ホワイトカードボックス", "型代不要", "ホワイトカード箱", "標準サイズ箱", "飛行機箱", "ロック底箱", "両挿箱", "越境EC包装箱", "小ロット包装箱"],
+        "body": "合版ホワイトカードボックスを ZprintPro で。固定型代共用でカスタム比 40-60% コスト削減。4 種素材 (350g/400g 単粉カード、375g 銀カード、375g ホログラム銀カード)、3 種箱型、8 種標準サイズ (60x40x20 〜 200x150x80mm)。500-10,000 個、8-15 日納期 (合版生産、お急ぎ対応なし)。マット/グロス ラミネーション標準、箔押し/UV/エンボス/ラミネート オプション対応。アジア自社工場、DHL Express 国際速達便 2-4 日で日本全国配送、ISO 9001 認証。"
       }
     },
     "faqs": [
-      { "q": "抽屜式禮盒印刷 印刷", "a": "香港 抽屜式禮盒印刷" },
-      { "q": "抽屜式禮盒印刷 價錢", "a": "智印雲提供 抽屜式禮盒印刷 透明價格" },
-      { "q": "急件 抽屜式禮盒印刷", "a": "48 小時快遞 (順豐香港本地派送)" }
+      { "q": "拼版白卡彩盒免刀模費是真的嗎？", "a": "是。固定刀模 8 檔標準尺寸共用, 拼版生產免除單獨開模費, 成本直降 40-60%。" },
+      { "q": "拼版白卡彩盒最快交期？", "a": "8-15 天交期 (湊版生產, 不接急件)。如需急件請聯繫客服看其他 SKU。" },
+      { "q": "500 個最少起印嗎？", "a": "是, 拼版彩盒 500 個起印, 10,000 枚封頂 (湊版生產限制)。" }
     ],
     "imageAlt": {
-      "zh-hk": "抽屜式禮盒印刷 - 香港本地印刷 智印雲",
-      "en": "Custom Drawer Slide Gift Box for pet food and brand labels — ZprintPro",
-      "ja": "引き出し式ギフトボックス | ZprintPro"
+      "zh-hk": "拼版白卡彩盒印刷 (免刀模費) | 香港本地印刷 智印港 ZprintPro",
+      "en": "Gang-Run White Card Boxes (No Die-Cut Fee) | Custom Packaging | ZprintPro",
+      "ja": "合版ホワイトカードボックス (型代不要) | パッケージ・化粧箱 | ZprintPro"
     }
   },
-
-  "fruit-food-label-stickers": {
+"fruit-food-label-stickers": {
     "name": {
       "zh-hk": "水果及食品標籤印刷",
       "en": "Fruit & Food Label Stickers",
