@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-22-v1",
+  "version": "2026-07-23-gangrun-boost",
   "owner": "mavis orchestrator (user authorized)",
   "policy": {
     "priority_order": [
@@ -76,6 +76,51 @@
   "business_cards_excluded": true,
   "business_cards_excluded_reason": "AGENTS.md §11 主营品类约束 — 名片/咭片不属于 ZprintPro 主营业务",
   "queue": [
+    {
+      "id": "Q-GR-01",
+      "category": "packaging",
+      "sku": "gang-run-card-boxes",
+      "industry": "零售精品",
+      "tier": "A",
+      "priority": "P0",
+      "slug": "gang-run-card-boxes-hk-guide",
+      "title_zh": "香港拼版彩盒印刷指南 · 免刀模費直降40%的預算首選 | 智印港 ZprintPro",
+      "title_en": "Gang-Run Card Boxes Guide: No Die-Cut Fee, 40-60% Cheaper | ZprintPro",
+      "title_ja": "合版カードボックス印刷ガイド：型代不要で40-60%削減 | ZprintPro",
+      "note": "K3 2026-07-23 插队: 香港零竞争词, SKU 已上线, 8-15天/4纸张/免刀模费",
+      "priority_boost": 3,
+      "queued_at": "2026-07-23"
+    },
+    {
+      "id": "Q-GR-02",
+      "category": "packaging",
+      "sku": "gang-run-card-boxes",
+      "industry": "跨境電商",
+      "tier": "A",
+      "priority": "P0",
+      "slug": "custom-card-boxes-small-batch-usa",
+      "title_zh": "小批量彩盒訂製: 跨境電商賣家免刀模費方案 | 智印港 ZprintPro",
+      "title_en": "Custom Card Boxes for E-commerce: 500 MOQ, No Die-Cut Fee, Free Shipping $99+ | ZprintPro",
+      "title_ja": "小口カードボックス印刷：500個から型代不要・EC出品者向け | ZprintPro",
+      "note": "K3 2026-07-23 插队: en 美国市场, ×2.2 高毛利, Free Shipping $99+ hook",
+      "priority_boost": 2,
+      "queued_at": "2026-07-23"
+    },
+    {
+      "id": "Q-GR-03",
+      "category": "packaging",
+      "sku": "gang-run-card-boxes",
+      "industry": "美妝護膚",
+      "tier": "A",
+      "priority": "P0",
+      "slug": "cosmetic-card-boxes-gang-run-japan",
+      "title_zh": "美妝彩盒拼版印刷: 銀卡/鐳射銀卡高級感包裝 | 智印港 ZprintPro",
+      "title_en": "Cosmetic Card Boxes: Silver & Holographic Cardstock, No Die-Cut Fee | ZprintPro",
+      "title_ja": "化粧品カードボックス合版印刷：銀カード・ホログラム対応・型代不要 | ZprintPro",
+      "note": "K3 2026-07-23 插队: ja 日本市场, 银卡/镭射银卡差异化, ×2.2 高毛利",
+      "priority_boost": 2,
+      "queued_at": "2026-07-23"
+    },
     {
       "id": "Q-001",
       "category": "flyers",
