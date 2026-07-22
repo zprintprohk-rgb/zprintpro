@@ -28,6 +28,15 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent  # F:\\zprintpro-nextjs
 DEFAULT_CSV = ROOT / "gsc_data.csv"
 
+# 2026-07-22 K3 修复: oauth2.googleapis.com / searchconsole.googleapis.com 被 GFW 屏蔽
+# (WinError 10060), 导致 cron 永久 fallback 旧快照。本机 Clash/mihomo mixed port = 127.0.0.1:7892
+# (已实测连通, 404 = 到达 Google 服务器)。google-auth 底层走 requests, 认 HTTP(S)_PROXY 环境变量。
+# 可用 GSC_PROXY 环境变量覆盖; 不需要代理的机器设 GSC_PROXY=off 即可。
+_proxy = os.environ.get("GSC_PROXY", "http://127.0.0.1:7892")
+if _proxy.lower() != "off":
+    os.environ.setdefault("HTTPS_PROXY", _proxy)
+    os.environ.setdefault("HTTP_PROXY", _proxy)
+
 
 def load_env() -> dict:
     """从 .env (无依赖)."""
