@@ -107,3 +107,60 @@
 - 截图 (screenshot action) 是排查 SPA 状态的最可靠手段, 比 innerText/snapshot 可信。
 
 **后续监控** (已并入 zprintpro-gsc-feedback-loop 周三 cron): 老站流量衰减曲线 + 新站承接曲线 + 校园/单张词排名迁移情况。Google 官方口径: 地址更改信号有效期 180 天, CF 301 规则永久保留。
+
+---
+
+## 7/22 21:27 baseline: 5 项监控 + K3 官方 10 样本 8/10 PASS + 2 真异常
+
+**状态**: P0-2 DEPLOYED 第 1 周内首次系统化监控, K3 v5.1 抽样规则建立, 149 条路径级规则覆盖度验证
+
+### 5 项监控脚本
+- 路径: `F:\zprintpro-nextjs\.hermes\tmp\cf-301-monitor-2026-07-22.cjs`
+- 项 1: 老域 DNS NS 状态 (CF NS = amalia/kevin 生效) → PASS
+- 项 2: sitemap.xml 老 URL 残留 = 0 → PASS (576 URLs, 0 残留)
+- 项 3: GSC Coverage: 301 抓取异常 = 0 → PASS
+- 项 4: 老域 200 直出路径扫描 (裸域 catch-all 兜底验证) → PASS
+- 项 5: K3 官方 10 样本抽查 → 8/10 PASS
+
+### K3 官方 10 样本 (清单内 5 + 清单外 5)
+**清单内 5 条 (149 条 Bulk Redirect CSV 抽样, 必须一跳 301 精确目标)**:
+1. 包装盒 (zh-hk) ✅ 一跳 301 → /zh-hk/category/packaging/
+2. 防水贴纸 (en) ✅ 一跳 301 → /en/product/waterproof-stickers/
+3. A5 骑马钉 (zh-hk) ✅ 一跳 301 → /zh-hk/product/saddle-stitch-booklets/
+4. 婚帖红包 (zh-hk) ✅ 一跳 301 → /zh-hk/product/red-packets/
+5. 急件 banner (ja) ✅ 一跳 301 → /ja/product/same-day-flyers/
+
+**清单外 5 条 (走 catch-all 跳 zh-hk/ 是设计行为, 不算异常)**:
+6. 随机类目 (en/stickers) ✅ catch-all 跳 /zh-hk/
+7. 随机类目 (en/flyers) ✅ catch-all 跳 /zh-hk/
+8. ❌ `/business-card-printing/` **200 直出 (真异常)** — AGENTS.md §11 名片禁区矛盾, 但老站 200 直出不被 Bulk Redirect 兜底
+9. ❌ `/about-us/` **404 没兜底 (真异常)** — 老站此 URL 已死链, 无对应新站目标
+10. 随机页面 (en/quote) ✅ catch-all 跳 /zh-hk/
+
+### 2 真异常 #8 #9 修法 (K3 7/23 00:30 拍板)
+- **#8 business-card-printing 200 直出**: 选 A = 加 Bulk Redirect 规则 → /zh-hk/ (跟 149 条同模式, 149→151)
+- **#9 about-us 404 没兜底**: 选 A = 加 Bulk Redirect 规则 → /about/ (新站)
+- K3 自己在 CF Dashboard 加, Mavis 已准备 .hermes/cf-bulk-redirect-2-new-rules-2026-07-23.md 素材
+- 改完通知 Mavis 跑改后 5 项监控 verify 10/10 PASS 闭环
+
+### K3 v5.1 抽样规则 (2026-07-22 21:05 拍板, 写入 context.md §14.2 + gsc-feedback SSoT)
+- 清单内任一 FAIL = 真异常升级 user, 排查 149 条规则覆盖度
+- 清单外走 catch-all 跳 zh-hk/ 是设计行为, 不算异常
+- 清单外 200/404 偏离 catch-all = 真异常升级 user
+- 抽样前必查权威 CSV (149 条 Bulk Redirect List), 不存在不要列抽样
+
+### 8 周关键观察期 (P0-2 DEPLOYED 第 1 周 → 第 8 周)
+- 第 1 周 (7/22-7/28): 高频监控
+- 第 2-3 周 (7/29-8/11): 标准监控
+- 第 4 周 (8/12-8/18): **关键决策点: 索引转移率必须 ≥ 50%, 否则升级 user**
+- 第 5-8 周 (8/19-9/16): 收尾监控
+
+### 健康度报告
+- 完整报告落盘: `F:\zprintpro-nextjs\logs\2026-07-22-cf-301-health-report.md` (10,610 bytes)
+- 完整 monitor 日志: `F:\zprintpro-nextjs\logs\2026-07-22-cf-301-monitor.md`
+- 完整 K3 10 样本日志: `F:\zprintpro-nextjs\logs\2026-07-22-cf-301-verify-k3-sample.md`
+
+### 教训
+- "user 随口举例" 抽样 → 抽样前必查权威源, 不在 CSV 里不列
+- sitemap-0.xml 500 bug: Next.js 13+ 默认单 sitemap.xml, 监控 URL 必先 curl 验证
+- cron SSoT 改 ≠ daemon 改, 必走 mavis cron update + mavis cron get 3 步曲
