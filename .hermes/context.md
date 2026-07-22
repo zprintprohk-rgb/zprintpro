@@ -33,6 +33,7 @@
 **v2 (2026-07-04)**: 不只写 blog,还要持续优化 SKU + 类目页 + Matrix 调度。Blog 强制纯文字无图。SKU 优化 = 加行业关键词到现有 title/description。
 **v3 (2026-07-05)**: 豆包 4 项能力 (内链自生长 / 内容质量自迭代 / 本地语义优化 / 运维兜底) + 标题本地化 + 内链矩阵。
 **v4 (2026-07-06)**: 180 天压缩节奏 (半年 730 篇); cron prompts 硬约束段去重 (单一真源在 AGENTS.md §11/§13.4/§13.10/§13.13 + .hermes/context.md §1/§4); 关键路径 bug 修复 (写到 `src/data/blog-data/<locale>.json` 不是 `public/blog-data/`); 进程验收标准 (cron 完成判定 = log + ground truth + 7 步 verify 一致,见 §13)。
+**v5 (2026-07-22)**: P0-2 301 迁移 ACTIVE 监控 (§14 新增, 5 项 + 8 周关键观察期); GSC API 本地 proxy 127.0.0.1:7892 通了 (commit b8bda22, sc-domain 修正, 852 行全量); proxy/VPN 云端方案撤销; cron prompt §3.2 已是 DEPLOYED 跑 5 项监控。
 
 ---
 
@@ -374,8 +375,71 @@ cron / 后台 agent / 跨进程 worker 自报 "完成 / Shipped / Done" **永远
 
 ---
 
-## 14. Changelog
+## 14. P0-2 301 迁移 · ACTIVE 监控 (2026-07-22 K3 拍板 · 替代原"PENDING 跳过 §3.2")
 
+> **核心状态变更 (2026-07-22)**: 原 P0-2 处于 PENDING 阶段 (NS 改动 + 等待 24-48h 生效), 2026-07-22 user 实测全链路验证通过, 升级为 **ACTIVE 监控阶段**.
+
+### 14.1 启动状态 (实测 2026-07-22)
+
+- **NS 改动**: ✅ 已完成 (阿里云 → Cloudflare NS, amalia.ns.cloudflare.com / kevin.ns.cloudflare.com)
+- **GSC API 全链路验证**: ✅ 实测通过
+  - 服务账号授权: `sc-domain:zprintpro.com` + `sc-domain:z-printpro.com` 都是 `siteFullUser`
+  - 根因修正: 脚本用 URL-prefix 格式 (`https://zprintpro.com/`), 资源是域名资源, 已改为 `sc-domain:zprintpro.com` (这就是为什么授权后还 403)
+  - 实测全量拉取: **852 行 / 90 天 / 22 点击 / 9,625 展示**, 已写入 `.hermes/gsc_data.csv` (本地 commit 7924767)
+- **M3 v6 智印港双品牌 (commit 5285eff 已落)**: 标题换智印港跑完后, 下次 GSC 拉数 (明早 daily cron 触发) 就能看到「智印港」CTR 变化曲线
+  - **新鲜数据印证双品牌紧迫性**: 「智印港」仍是查询榜第 1 (32 展示 / CTR 9.4%)
+- **GSC API proxy 方案 (2026-07-22 K3 拍板, commit b8bda22 落地)**: ✅ **本地 proxy 127.0.0.1:7892 通了 GSC API**
+  - **根因不是 GFW 假象**, 而是 (a) **URL-prefix vs domain property resource 类型错** — 旧脚本用 `https://zprintpro.com/` URL-prefix 格式, 实际资源是 `sc-domain:zprintpro.com` 域名资源 (授权后还 403 就是这个原因); (b) **需要本地 proxy 绕 GFW** 屏蔽 oauth2.googleapis.com endpoint
+  - **fallback 仍保留**: 本地 proxy 偶尔挂 → 切 fallback (gsc_data.csv 6/17 快照 + overlap-keywords.csv 7/17); 连续 2 次失败 → 升级 user 报 proxy 状态
+  - **不再需要云端 VPN**: 本地 proxy 已够, 配 VPN 是过度方案
+
+### 14.2 5 项 301 监控 (§3.2 段激活, 替代 PENDING 跳过)
+
+> **触发**: `zprintpro-gsc-feedback-loop` v4 cron 每周三 15:00 Asia/Shanghai 自动跑, 写入日报 §3.2 段
+
+| # | 监控项 | 阈值 | 升级条件 | 数据源 |
+|---|---|---|---|---|
+| **1** | **老域名 (z-printpro.com) 抓取错误数** | < 5 | ≥ 5 → 升级 user | GSC `sc-domain:z-printpro.com` 抓取统计 |
+| **2** | **sitemap 残留老 URL 数** | = 0 | ≥ 1 → 升级 user, 跑脚本清理 + 重新提交 GSC | `public/sitemap-0.xml` grep `z-printpro.com` |
+| **3** | **索引转移率** (z-printpro.com → zprintpro.com) | ≥ 50% | 第 4 周仍 < 50% → 升级 user, 排查 GSC Change of Address 状态 | GSC 索引对比 |
+| **4** | **权重交接差异** (老域名 ranking vs 新域名 ranking 同关键词) | < 5 位 | ≥ 5 位 → 升级 user, 写补救 SEO patch | GSC 排名对比 |
+| **5** | **旧 URL 抽查 ≥10 条** curl 验证 301 → 新站对应页 200 | 10/10 PASS | 任一 < 200 或 漏 301 → 升级 user (AGENTS.md §13.1 已固化) | `curl -I <old_url>` 10 条 |
+
+### 14.3 监控窗口 (8 周关键观察期)
+
+```
+第 1 周 (迁移后 0-7d)   — 高频监控: 周三 cron + 周一 weekly cron + daily 都关注 4 项
+第 2-3 周 (8-21d)       — 标准监控: 周三 cron (本节 §3.2 段)
+第 4 周 (22-28d)        — 关键决策点: 索引转移率必须 ≥ 50%, 否则升级 user
+第 5-8 周 (29-56d)      — 收尾监控: 周三 cron (本节 §3.2 段), 趋势下降则降到月度
+```
+
+### 14.4 异常处理 (升级 user, 不报完成)
+
+- **任一监控超阈值** → 立即升级 user, 附 GSC 数据 + 4 项监控截图
+- **GSC API 拉取失败** → 切 fallback 模式 (6/17 快照 + 7/17 overlap-keywords.csv), 连续 2 次失败 → 升级 user
+- **老域名解析回退到阿里云** (NS 改动回滚) → 立即升级 user, 暂停 301 监控
+- **M3 v6 智印港改完 7 天后 GSC 智印港 CTR 没变化** → 升级 user, 排查改完是否上线
+
+### 14.5 仍待 user 拍板 (迁移已完成, 灰度 + GSC Change of Address 待跑)
+
+- [ ] Cloudflare Bulk Redirect List 灰度 20 条关键 URL (Mavis 协助) — 校园/单张词页优先
+- [ ] 全量启用 Bulk Redirect List (`enabled=true`)
+- [ ] GSC Change of Address 提交 (老资源 → 新资源) — Mavis 协助 user
+- [ ] 8/12 启动日不推迟: 校园旺季完整承接 8 月流量 (user 2026-07-22 拍板)
+
+### 14.6 单源引用
+
+- 监控触发: `zprintpro-gsc-feedback-loop` v4 cron prompt §3.2 段 (引用本节 §14.2 4 项)
+- 监控数据源: `.hermes/gsc_data.csv` (90 天 GSC 全量) + `.hermes/overlap-keywords.csv` (fallback)
+- 监控报告: `.hermes/logs/YYYY-MM-DD-gsc-feedback.md` §3.2 段
+- 完整 SOP: `F:\zprintpro-nextjs\docs\P0-2-aliyun-ns-migration.md`
+
+---
+
+## 15. Changelog
+
+- **2026-07-22 v5** (K3 §3.2 ACTIVE): P0-2 301 迁移实测全链路验证通过 (GSC API 本地 proxy 127.0.0.1:7892 通了 + sc-domain 修正 + 852 行全量拉取), §14 新增 P0-2 ACTIVE 监控 (5 项 + 8 周关键观察期 + 异常升级); §14 改 §15 Changelog 顺延; cron prompt §3.2 已是 DEPLOYED 状态跑 5 项监控; 云端 proxy/VPN 升级请求**撤销** (本地 proxy 已够)
 - **2026-07-06 v4**: 180 天压缩节奏 (半年 730 篇); cron prompts 硬约束段去重 (单一真源在 AGENTS.md §11/§13.4/§13.10/§13.13 + .hermes/context.md §1/§4); 关键路径 bug 修复; §13 进程验收标准; §14 Changelog 新增
 - **2026-07-05 v3**: 豆包 4 项能力 (内链自生长 / 内容质量自迭代 / 本地语义优化 / 运维兜底) + 标题本地化 (NAP 脱钩) + 内链矩阵
 - **2026-07-04 v2**: 4-cron 自进化 + 链接完整性红线
@@ -383,6 +447,6 @@ cron / 后台 agent / 跨进程 worker 自报 "完成 / Shipped / Done" **永远
 
 ---
 
-**Updated**: 2026-07-06 (v4 — 180 天压缩 + cron 硬约束去重 + 关键路径 bug + 进程验收标准)
-**Previous**: 2026-07-05 (v3 — 豆包 4 项能力 + 标题本地化 + 内链矩阵)
+**Updated**: 2026-07-22 (v5 — P0-2 ACTIVE 监控 + GSC API 全链路验证 + §14 顺延 §15)
+**Previous**: 2026-07-06 (v4 — 180 天压缩 + cron 硬约束去重 + 关键路径 bug + 进程验收标准)
 **Author**: mavis orchestrator (user 授权)
