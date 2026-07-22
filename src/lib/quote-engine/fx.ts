@@ -17,6 +17,10 @@
  */
 
 import type { Currency, Market } from './markets';
+// M3 v7 (2026-07-23): 静态汇率从 inline 提取到 price-tables/fx-rates.json (同 price-tables/ 其他表 SSoT 模式)
+// 启动时优先读 JSON, 缺值时回退到下方 INLINE_HARDCODED_RATES 兜底
+// 实时汇率 (open.er-api.com) 失败时也回退到 STATIC_LIVE_RATES_HKD (即 JSON + inline 合并结果)
+import fxRatesJson from '@/data/price-tables/fx-rates.json';
 
 export type RateSource = 'live' | 'locked_24h' | 'forward_30d';
 // 2026-06-25 Phase 0: Airwallex 卡支付下线(深圳主体无法开通),默认改为 'bank_wire'
@@ -48,13 +52,21 @@ const PAYMENT_FEES: Record<PaymentChannel, { platformFeeRate: number; fxSpreadRa
   },
 };
 
-/** 实时基准汇率 (mid-market) — 2026-06-07 静态值
+/** 实时基准汇率 (mid-market) — 三级 fallback 链
  *
- * ★ TODO: 部署后必须接实时 API (优先级 P0)
- * 候选: open.er-api.com (free) / exchangerate-api.com / Fixer.io
- * 部署策略: 实时 API 失败时回退到此静态表
+ * 1. open.er-api.com 实时 API (OpenERAPIProvider, 1h 缓存)
+ * 2. 本 JSON 文件 (src/data/price-tables/fx-rates.json) — 启动期/离线 fallback
+ * 3. 下方 INLINE_HARDCODED_RATES — JSON 缺值时的最终兜底
+ *
+ * STATIC_LIVE_RATES_HKD = JSON ∪ inline (JSON 优先, 缺值用 inline)
+ * 实时 API 失败时 (getLiveRatesHKD catch 块) → 回退到 STATIC_LIVE_RATES_HKD
+ *
+ * 维护节奏: zprintpro-monthly-matrix-audit cron (1 号 14:00) 拉实时汇率对比 JSON
+ *   - diff > 2% → 升级 user 决定
+ *   - diff ≤ 2% → 自动更新 fx-rates.json
+ *   - 实时 API 连续失败 → 升级 user, 静默 7 天仍失败则保留本 JSON 不动
  */
-const STATIC_LIVE_RATES_HKD: Record<Currency, number> = {
+const INLINE_HARDCODED_RATES: Record<Currency, number> = {
   HKD: 1.0,
   USD: 7.81,
   GBP: 9.93,
@@ -64,6 +76,22 @@ const STATIC_LIVE_RATES_HKD: Record<Currency, number> = {
   CNY: 1.087,
   SGD: 5.81,
   NZD: 4.76,
+};
+
+/** 从 fx-rates.json 读 (build-time 内联, 启动期可用) */
+const JSON_FALLBACK_RATES = (fxRatesJson?.rates ?? {}) as Partial<Record<Currency, number>>;
+
+/** 合并 JSON + inline: JSON 缺值用 inline 兜底 */
+const STATIC_LIVE_RATES_HKD: Record<Currency, number> = {
+  HKD: JSON_FALLBACK_RATES.HKD ?? INLINE_HARDCODED_RATES.HKD,
+  USD: JSON_FALLBACK_RATES.USD ?? INLINE_HARDCODED_RATES.USD,
+  GBP: JSON_FALLBACK_RATES.GBP ?? INLINE_HARDCODED_RATES.GBP,
+  AUD: JSON_FALLBACK_RATES.AUD ?? INLINE_HARDCODED_RATES.AUD,
+  JPY: JSON_FALLBACK_RATES.JPY ?? INLINE_HARDCODED_RATES.JPY,
+  CAD: JSON_FALLBACK_RATES.CAD ?? INLINE_HARDCODED_RATES.CAD,
+  CNY: JSON_FALLBACK_RATES.CNY ?? INLINE_HARDCODED_RATES.CNY,
+  SGD: JSON_FALLBACK_RATES.SGD ?? INLINE_HARDCODED_RATES.SGD,
+  NZD: JSON_FALLBACK_RATES.NZD ?? INLINE_HARDCODED_RATES.NZD,
 };
 
 /**
@@ -83,10 +111,10 @@ export interface FXRateProvider {
   lastUpdated: string;
 }
 
-/** 静态 fallback provider (默认) */
+/** 静态 fallback provider (默认) — 实际值来自 fx-rates.json + inline 兜底 */
 export const StaticFXProvider: FXRateProvider = {
-  name: 'static-fallback',
-  lastUpdated: '2026-06-07T00:00:00Z',
+  name: 'static-fallback-json+inline',
+  lastUpdated: (fxRatesJson?.lastUpdated as string) || '2026-06-07T00:00:00Z',
   async fetchLiveRates() {
     return STATIC_LIVE_RATES_HKD;
   },
@@ -109,6 +137,8 @@ export function setFXProvider(provider: FXRateProvider) {
  *   - So we invert: 1 USD = 1/rates.USD HKD
  * Refresh: API updates every 1h (per their docs)
  * 2026-07-13 Step 2: 接入实时汇率, 替代硬编码 STATIC_LIVE_RATES_HKD
+ * 2026-07-23 M3 v7: 实时 API 失败时回退到 fx-rates.json (build-time 内联) → INLINE_HARDCODED_RATES 兜底
+ *   单个币种 API 缺值时也用 fallback: 先 STATIC_LIVE_RATES_HKD[key], 再 undefined 风险
  */
 export const OpenERAPIProvider: FXRateProvider = {
   name: 'open-er-api',

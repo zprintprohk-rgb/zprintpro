@@ -1,0 +1,35 @@
+{
+  "version": "2026-07-23",
+  "base_currency": "HKD",
+  "source": "static-fallback",
+  "lastUpdated": "2026-06-07T00:00:00Z",
+  "note": "M3 v7 任务卡 2026-07-23 拍板: 把 STATIC_LIVE_RATES_HKD 从 fx.ts inline 提取到 price-tables/ 同模式 JSON. 启动时 fx.ts 优先读此 JSON, 缺值时回退到 fx.ts 内的 inline constants. 实时汇率 (open.er-api.com) 失败时也回退到本 JSON. 锚币种 HKD, 数值 = 1 CCY = X HKD (mid-market).",
+  "rates": {
+    "HKD": 1.0,
+    "USD": 7.81,
+    "GBP": 9.93,
+    "AUD": 5.10,
+    "JPY": 0.05,
+    "CAD": 5.71,
+    "CNY": 1.087,
+    "SGD": 5.81,
+    "NZD": 4.76
+  },
+  "rate_metadata": {
+    "HKD": "锚币种 (1:1)",
+    "USD": "2026-06-07 mid-market, open.er-api.com 抽样",
+    "GBP": "2026-06-07 mid-market",
+    "AUD": "2026-06-07 mid-market",
+    "JPY": "2026-06-07 mid-market, 1 JPY = 0.05 HKD ≈ 1 HKD = 20 JPY",
+    "CAD": "2026-06-07 mid-market",
+    "CNY": "2026-06-07 mid-market, 1 CNY = 1.087 HKD",
+    "SGD": "2026-06-07 mid-market",
+    "NZD": "2026-06-07 mid-market"
+  },
+  "update_protocol": {
+    "frequency": "monthly",
+    "trigger": "zprintpro-monthly-matrix-audit cron (1 号 14:00 Asia/Shanghai)",
+    "method": "open.er-api.com 拉最新 mid-market → diff > 2% 升级 user, ≤ 2% 自动更新此 JSON",
+    "fallback_when_api_fail": "保持本 JSON, 升级 user, 静默 7 天仍失败则恢复 inline hardcoded"
+  }
+}
