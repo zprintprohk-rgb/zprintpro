@@ -4062,21 +4062,21 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
         "description": "拼版白卡彩盒, 固定刀模共用, 免刀模費 + 免排版費, 成本直降 40-60%。4 種紙材 (350g/400g 單粉卡、375g 銀卡、375g 鐳射銀卡), 3 種盒型, 8 檔標準尺寸。500-10,000 枚, 8-15 天交期。**拼版白卡彩盒 香港無對手價**: 500 枚飛機盒起 HKD 129, 1000 枚 HKD 171。",
         "h1": "拼版白卡彩盒印刷 (免刀模費)",
         "keywords": ["拼版白卡彩盒", "免刀模費", "白卡彩盒", "拼版彩盒", "標準尺寸彩盒", "飛機盒", "扣底盒", "雙插盒", "跨境電商彩盒", "美妝包裝盒"],
-        "body": "拼版白卡彩盒, 固定刀模共用, 免刀模費 + 免排版費, 成本直降 40-60%。4 種紙材 (350g/400g 單粉卡、375g 銀卡、375g 鐳射銀卡), 3 種盒型 (飛機盒/扣底盒/雙插盒), 8 檔標準尺寸 (60x40x20 ~ 200x150x80mm)。500-10,000 枚中小批量, 8-15 天交期 (湊版生產, 如實標註不接急件)。覆光膜/啞膜可選, 可加燙金/UV/擊凸/貼膠片等加值工藝。深圳自有廠房, 香港本地派送, DHL Express 全球 2-4 天配送, ISO 9001 認證。"
+        "body": "拼版白卡彩盒, 固定刀模共用, 免刀模費 + 免排版費, 成本直降 40-60%。4 種紙材 (350g/400g 單粉卡、375g 銀卡、375g 鐳射銀卡), 3 種盒型 (飛機盒/扣底盒/雙插盒), 8 檔標準尺寸 (60x40x20 ~ 200x150x80mm)。500-10,000 枚中小批量, 8-15 天交期 (湊版生產, 如實標註不接急件)。覆光膜/啞膜可選, 可加燙金/UV/擊凸/貼膠片等加值工藝。ISO 9001 認證工廠 (亞洲自有), 香港本地派送, DHL Express 全球 2-4 天配送。智印港 15+ 年服務全球 15,000+ 客戶、100+ 國家, 免費設計打稿、免費樣辦確認、順豐本地 1-2 工作天到港九新界。"
       },
       "en": {
         "title": "Gang-Run White Card Boxes (No Die-Cut Fee) | 8-15 Day Turnaround | From USD 25 | ZprintPro",
         "description": "Gang-run white card boxes with shared die-cut mold — no die-cut fee, no setup fee — 40-60% lower cost than custom. 4 paper stocks (350g/400g single-side card, 375g silver card, 375g holographic silver), 3 box styles (airplane/lock-bottom/double-tuck), 8 standard sizes. 500-10,000 pieces, 8-15 day production. **Hong Kong zero-competition pricing for US small business**: 500 pieces from USD 25. Free shipping $99+. No minimum 500 MOQ.",
         "h1": "Gang-Run White Card Boxes (No Die-Cut Fee) · 8-15 Day Turnaround",
         "keywords": ["gang run card boxes", "no die cut fee", "white card boxes bulk", "standard size boxes", "airplane box", "lock bottom box", "double tuck box", "small business packaging", "USA small business boxes"],
-        "body": "Gang-run white card boxes from ZprintPro — shared die-cut mold cuts cost 40-60% vs custom. 4 paper stocks (350g/400g single-side, 375g silver card, 375g holographic silver), 3 box styles (airplane/lock-bottom/double-tuck), 8 standard sizes from 60x40x20mm to 200x150x80mm. 500-10,000 piece runs, 8-15 day production (consolidated gang-run production, no rush orders). Matte or gloss lamination standard, optional foil/UV/embossing/lamination upgrades. Made in Asia, DHL Express 2-4 day USA delivery, ISO 9001 certified."
+        "body": "Gang-run white card boxes from ZprintPro — shared die-cut mold cuts cost 40-60% vs custom. 4 paper stocks (350g/400g single-side, 375g silver card, 375g holographic silver), 3 box styles (airplane/lock-bottom/double-tuck), 8 standard sizes from 60x40x20mm to 200x150x80mm. 500-10,000 piece runs, 8-15 day production (consolidated gang-run production, no rush orders). Matte or gloss lamination standard, optional foil/UV/embossing/lamination upgrades. ISO 9001 certified factory in Asia, DHL Express 2-4 day USA delivery. ZprintPro 15+ Years serving 15,000+ Clients across 100+ Countries, with Free Design Mockup, Free Sample Approval, FedEx Ground 5-7 day USA delivery."
       },
       "ja": {
         "title": "合版ホワイトカードボックス (型代不要) | 8-15日納期 | ¥3,800〜 | ZprintPro",
         "description": "合版ホワイトカードボックス、固定型代共用で型代不要・版代不要、カスタム比 40-60% コスト削減。4 種素材 (350g/400g 単粉カード、375g 銀カード、375g ホログラム銀カード)、3 種箱型 (飛行機箱/ロック底箱/両挿箱)、8 種標準サイズ。500-10,000 個、8-15 日納期。**香港無競合価格**: 500 個から ¥3,800、全国送料込み、沖縄・北海道も同料金。",
         "h1": "合版ホワイトカードボックス (型代不要) · 8-15日納期",
         "keywords": ["合版ホワイトカードボックス", "型代不要", "ホワイトカード箱", "標準サイズ箱", "飛行機箱", "ロック底箱", "両挿箱", "越境EC包装箱", "小ロット包装箱"],
-        "body": "合版ホワイトカードボックスを ZprintPro で。固定型代共用でカスタム比 40-60% コスト削減。4 種素材 (350g/400g 単粉カード、375g 銀カード、375g ホログラム銀カード)、3 種箱型、8 種標準サイズ (60x40x20 〜 200x150x80mm)。500-10,000 個、8-15 日納期 (合版生産、お急ぎ対応なし)。マット/グロス ラミネーション標準、箔押し/UV/エンボス/ラミネート オプション対応。アジア自社工場、DHL Express 国際速達便 2-4 日で日本全国配送、ISO 9001 認証。"
+        "body": "合版ホワイトカードボックスを ZprintPro で。固定型代共用でカスタム比 40-60% コスト削減。4 種素材 (350g/400g 単粉カード、375g 銀カード、375g ホログラム銀カード)、3 種箱型、8 種標準サイズ (60x40x20 〜 200x150x80mm)。500-10,000 個、8-15 日納期 (合版生産、お急ぎ対応なし)。マット/グロス ラミネーション標準、箔押し/UV/エンボス/ラミネート オプション対応。ISO 9001 認証工場 (アジア自社)、DHL Express 国際速達便 2-4 日で日本全国配送。ZprintPro 15+ 年で 100+ カントリー 15,000+ クライアントにサービス、無料デザイン モックアップ、無料サンプル承認、沖縄・北海道含む全国送料込み、ヤマト運輸 1-3 日納品対応。"
       }
     },
     "faqs": [

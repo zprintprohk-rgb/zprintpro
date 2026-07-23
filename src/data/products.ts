@@ -4313,10 +4313,12 @@ export const products: Product[] = [
     id: 'PB-001',
     sku_code: 'PB-001',
     slug: 'kraft-paper-bags',
-    category: 'paper-bags',
+
+    optimizedAt: '2026-07-23',
+    optimizationRound: 3,    category: 'paper-bags',
     category_slug: 'paper-bags',
     name: '牛皮紙袋 | 紙袋 / 牛皮紙袋 / 手提袋', nameEn: 'Kraft Paper Bags | Paper Bags & Kraft Bags', nameJa: 'クラフト紙袋 | 紙袋 / クラフト紙袋 / ハンドル', title_zh: '牛皮紙袋印刷訂製 100個起印 免費刀模 FSC認證 · 服裝品牌跨境電商適配 | 智印雲 ZprintPro',
-    description: '牛皮紙袋印刷訂製，100個起印，HK$1.8起/個。FSC環保認證紙材，多尺寸多規格，免費刀模設計，支援燙金UV局部。即日交貨，全港送貨，零售餐飲活動品牌推廣。 **适配行业**:服裝品牌、買手店、餐廳外賣、咖啡店、手搖飲品、婚慶喜帖、跨境電商 Etsy、禮品店', descriptionEn: 'Eco-friendly kraft paper, natural and rustic, loved by consumers. Perfect for clothing stores, gift shops, coffee shops., ISO 9001:2015 certified quality management system. Eco-friendly kraft · 100 MOQ · Twisted/ribbon handle options · Free shipping over $99 USA. Perfect for retail, bakery, fashion brands. **Best for**:apparel brands, boutique stores, restaurant takeout, cafe & bubble tea, wedding favors, cross-border Etsy, gift shops, eco-conscious DTC brands', descriptionJa: '環境に優しいクラフト紙、質朴で自然、消費者に人気。衣料品店、ギフトショップ、コーヒーショップに最適。。エコクラフト紙・100枚から・紐/リボン手提げ選択可・全国送料込み。小売・ベーカリー・アパレルブランドに最適。 **適用業界**:アパレルブランド、セレクトショップ、飲食テイクアウト、カフェ・タピオカ、ブライダル、越境EC Etsy、ギフトショップ、エコDTCブランド', description_zh: '環保牛皮紙材質，質樸自然，深受消費者喜愛。適合服裝店、禮品店、咖啡店。多種尺寸可選，可定製Logo印刷。',
+    description: '牛皮紙袋印刷訂製，100個起印，HK$1.8起/個。FSC環保認證紙材，多尺寸多規格，免費刀模設計，支援燙金UV局部。即日交貨，全港送貨，零售餐飲活動品牌推廣。 **适配行业**:服裝品牌、買手店、餐廳外賣、咖啡店、手搖飲品、婚慶喜帖、跨境電商 Etsy、禮品店', descriptionEn: 'Eco-friendly kraft paper, natural and rustic, loved by consumers. Perfect for clothing stores, gift shops, coffee shops., ISO 9001:2015 certified quality management system. Eco-friendly kraft · 100 MOQ · Twisted/ribbon handle options · Free shipping over $99 USA. Perfect for retail, bakery, fashion brands. **Best for**:apparel brands, boutique stores, restaurant takeout, cafe & bubble tea, wedding favors, cross-border Etsy, gift shops, eco-conscious DTC brands', descriptionJa: '環境に優しいクラフト紙、質朴で自然、消費者に人気。衣料品店、ギフトショップ、コーヒーショップに最適。。エコクラフト紙・100枚から・紐/リボン手提げ選択可・全国送料込み。小売・ベーカリー・アパレルブランドに最適。 **適用業界**:アパレルブランド、セレクトショップ、飲食テイクアウト、カフェ・タピオカ、ブライダル、越境EC Etsy、ギフトショップ、エコDTCブランド', description_zh: '環保牛皮紙材質，質樸自然，深受消費者喜愛。適合服裝店、禮品店、咖啡店。多種尺寸可選，可定製Logo印刷。 2026 旺季: ESG 環保品牌、有機食品品牌、文創市集限定、減塑徵費合規。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -4607,8 +4609,6 @@ export const products: Product[] = [
       '/images/products/seedream-webp/zprintpro-paper-bags-kraft-paper-bags-ja-4.webp',
     ],
   },
-    optimizedAt: '2026-07-22',
-    optimizationRound: 2,
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-paper-bags-kraft-paper-bags-zh-hk.webp', en: 'zprintpro-paper-bags-kraft-paper-bags-en.webp', ja: 'zprintpro-paper-bags-kraft-paper-bags-ja.webp' },
     alt: {
@@ -8979,7 +8979,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     category: 'packaging',
     category_slug: 'packaging',
     name: '食品包裝盒 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Food Boxes | Gift Boxes & Custom Packaging', nameJa: '食品包裝箱 | パッケージボックス・化粧箱', title_zh: '食品包裝盒印刷訂製 100個起印 HK$4起/個 FDA級 | 智印雲 · FDA 食品級茶飲烘焙定製',
-    description: '食品包裝盒印刷訂製，100個起印，HK$4起/個。FDA級食品接觸安全材質，牛皮紙白卡紙可選，支援燙金UV印刷。適合糕點茶葉巧克力月餅食品品牌，3-5天交貨。適配行業: 茶葉品牌、手搖飲品店、烘焙坊、咖啡店、月餅端午節禮盒、餐廳外賣、跨境食品電商。', descriptionEn: 'Food-grade material, safe and eco-friendly., ISO 9001:2015 certified quality management system Best for: tea brands, bubble tea shops, bakeries, coffee shops, mooncake / Dragon Boat Festival gift boxes, restaurant takeout, cross-border food e-commerce.', descriptionJa: '食品グレード素材、安全で環境に優しい。 適用業界: 茶ブランド、タピオカ店、ベーカリー、カフェ、月餅・端午節ギフト ボックス、レストラン テイクアウト、越境食品EC。', description_zh: '食品級材質，安全環保。適合糕點、茶葉、保健品。',
+    description: '食品包裝盒印刷訂製，100個起印，HK$4起/個。FDA級食品接觸安全材質，牛皮紙白卡紙可選，支援燙金UV印刷。適合糕點茶葉巧克力月餅食品品牌，3-5天交貨。適配行業: 茶葉品牌、手搖飲品店、烘焙坊、咖啡店、月餅端午節禮盒、餐廳外賣、跨境食品電商。', descriptionEn: 'Food-grade material, safe and eco-friendly., ISO 9001:2015 certified quality management system Best for: tea brands, bubble tea shops, bakeries, coffee shops, mooncake / Dragon Boat Festival gift boxes, restaurant takeout, cross-border food e-commerce.', descriptionJa: '食品グレード素材、安全で環境に優しい。 適用業界: 茶ブランド、タピオカ店、ベーカリー、カフェ、月餅・端午節ギフト ボックス、レストラン テイクアウト、越境食品EC。', description_zh: '食品級材質，安全環保。適合糕點、茶葉、保健品。 2026 旺季: 春節年糕禮盒、端午粽、夏日冰品配送、中秋月餅聖誕禮籃。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -9307,12 +9307,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     id: 'PK-004',
     sku_code: 'PK-004',
     slug: 'mailer-boxes',
-    optimizedAt: '2026-07-21',
-    optimizationRound: 1,
+
+    optimizedAt: '2026-07-23',
+    optimizationRound: 2,
     category: 'packaging',
     category_slug: 'packaging',
     name: '100 MOQ 快遞盒/飛機盒 · 跨境 FBA DHL 2-4 天送達 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: '100 MOQ Mailer Boxes · Free Design · DHL 2-4 Day Global | Gift Boxes & Custom Packaging', nameJa: '100個〜 発送箱 · 越境EC FBA · DHL 2-4日配送 | パッケージボックス・化粧箱', title_zh: '100 MOQ 快遞盒/飛機盒 · 跨境電商 FBA 標配 · DHL 2-4 天',
-    description: '堅固耐用，電商發貨首選。可印品牌Logo，提升開箱體驗。適配行業: 亞馬遜 FBA、Shopify 獨立站、Etsy、跨境電商品牌、訂閱盒直運、DTC 品牌、3PL 物流倉。', descriptionEn: 'Sturdy and durable, first choice for e-commerce shipping., ISO 9001:2015 certified quality management system Best for: Amazon FBA, Shopify DTC, Etsy, cross-border e-commerce brands, subscription box dropship, DTC brands, 3PL fulfillment warehouses.', descriptionJa: '頑丈で耐久性があり、EC発送の第一選択。 適用業界: Amazon FBA、Shopify DTC、Etsy、越境ECブランド、サブスクリプション ボックス dropship、DTC ブランド、3PL フルフィルメント倉庫。', description_zh: '堅固耐用，電商發貨首選。可印品牌Logo，提升開箱體驗。',
+    description: '堅固耐用，電商發貨首選。可印品牌Logo，提升開箱體驗。適配行業: 亞馬遜 FBA、Shopify 獨立站、Etsy、跨境電商品牌、訂閱盒直運、DTC 品牌、3PL 物流倉。', descriptionEn: 'Sturdy and durable, first choice for e-commerce shipping., ISO 9001:2015 certified quality management system Best for: Amazon FBA, Shopify DTC, Etsy, cross-border e-commerce brands, subscription box dropship, DTC brands, 3PL fulfillment warehouses.', descriptionJa: '頑丈で耐久性があり、EC発送の第一選択。 適用業界: Amazon FBA、Shopify DTC、Etsy、越境ECブランド、サブスクリプション ボックス dropship、DTC ブランド、3PL フルフィルメント倉庫。', description_zh: '堅固耐用，電商發貨首選。可印品牌Logo，提升開箱體驗。 2026 旺季重點: D2C 美妝配送、茶飲/手搖外送、訂閱盒盲盒、Kickstarter 集資送貨。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -9511,10 +9512,12 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     id: 'PK-005',
     sku_code: 'PK-005',
     slug: 'folding-boxes',
-    category: 'packaging',
+
+    optimizedAt: '2026-07-23',
+    optimizationRound: 1,    category: 'packaging',
     category_slug: 'packaging',
     name: '折疊盒 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Folding Boxes | Gift Boxes & Custom Packaging', nameJa: '折りたたみ箱 | パッケージボックス・化粧箱', title_zh: '折疊盒',
-    description: '可折疊設計，節省倉儲空間。適合大量存貨的電商賣家。', descriptionEn: 'Foldable design, saves warehouse space. Custom size · 100 MOQ · Eco kraft options · Free shipping over $99 USA. Fits DTC ecommerce, tea/beverage, food packaging.', descriptionJa: '折りたたみ可能なデザイン、倉庫スペースを節約。。カスタムサイズ・100個から・クラフト紙対応・全国送料込み。D2C EC・茶/飲料・食品パッケージに適合。', description_zh: '可折疊設計，節省倉儲空間。適合大量存貨的電商賣家。',
+    description: '可折疊設計，節省倉儲空間。適合大量存貨的電商賣家。', descriptionEn: 'Foldable design, saves warehouse space. Custom size · 100 MOQ · Eco kraft options · Free shipping over $99 USA. Fits DTC ecommerce, tea/beverage, food packaging.', descriptionJa: '折りたたみ可能なデザイン、倉庫スペースを節約。。カスタムサイズ・100個から・クラフト紙対応・全国送料込み。D2C EC・茶/飲料・食品パッケージに適合。', description_zh: '可折疊設計，節省倉儲空間。適合大量存貨的電商賣家。 2026 旺季: 環保品牌限定、ESG 碳審計合規、月餅糕點禮盒、聖誕節日禮盒。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -18022,12 +18025,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     id: 'PKG-013',
     sku_code: 'PKG-013',
     slug: 'white-card-boxes',
-    optimizedAt: '2026-07-21',
-    optimizationRound: 1,
+
+    optimizedAt: '2026-07-23',
+    optimizationRound: 2,
     category: 'packaging',
     category_slug: 'packaging',
     name: '白卡彩盒印刷定製 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'White Cardboard Boxes | Custom Packaging & Gift Boxes', nameJa: '白カードボックス | パッケージ・ギフトボックス', title_zh: '白卡彩盒印刷定製 · 零售精品跨境電商首選',
-    description: '高檔白卡紙盒，挺度佳、印刷精美，4C+0 標準彩印。可加燙金、UV 局部、壓凸。適配行業: 零售精品店、美妝護膚品牌、跨境電商 DTC、訂閱盒直運、輕奢飾品、有機食品品牌、煙酒禮盒、文創IP周邊。', descriptionEn: 'Premium white cardboard boxes with excellent rigidity and sharp print reproduction, standard 4C+0 process. Optional foil stamping, spot UV, and embossing available. Best for: retail boutique stores, beauty & skincare brands, cross-border e-commerce DTC, subscription box dropship, lightweight luxury jewelry, organic food brands, wine & spirits gift boxes, IP merchandise packaging.', descriptionJa: '高級白カード紙箱、剛性に優れ、印刷精美、4C+0 標準プロセス。箔押し、スポット UV、エンボス加工オプション。 適用業界: 小売ブティック、 beauty・スキンケア ブランド、越境EC DTC、サブスクリプション ボックス dropship、軽奢饰品、オーガニック食品ブランド、ワイン・スピリッツギフトボックス、IP 商品パッケージ。', description_zh: '高檔白卡紙盒，挺度佳、印刷精美，4C+0 標準彩印。',
+    description: '高檔白卡紙盒，挺度佳、印刷精美，4C+0 標準彩印。可加燙金、UV 局部、壓凸。適配行業: 零售精品店、美妝護膚品牌、跨境電商 DTC、訂閱盒直運、輕奢飾品、有機食品品牌、煙酒禮盒、文創IP周邊。', descriptionEn: 'Premium white cardboard boxes with excellent rigidity and sharp print reproduction, standard 4C+0 process. Optional foil stamping, spot UV, and embossing available. Best for: retail boutique stores, beauty & skincare brands, cross-border e-commerce DTC, subscription box dropship, lightweight luxury jewelry, organic food brands, wine & spirits gift boxes, IP merchandise packaging.', descriptionJa: '高級白カード紙箱、剛性に優れ、印刷精美、4C+0 標準プロセス。箔押し、スポット UV、エンボス加工オプション。 適用業界: 小売ブティック、 beauty・スキンケア ブランド、越境EC DTC、サブスクリプション ボックス dropship、軽奢饰品、オーガニック食品ブランド、ワイン・スピリッツギフトボックス、IP 商品パッケージ。', description_zh: '高檔白卡紙盒，挺度佳、印刷精美，4C+0 標準彩印。 2026 升級方案: 拼版彩盒試水反應好 → 升級白卡彩盒 50-10,000 件,單件 +HK$1-2。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 2 種紙材：</p>
 <table>
