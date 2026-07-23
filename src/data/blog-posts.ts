@@ -1348,6 +1348,44 @@ const lpGangRunCardBoxesHK: BlogPostMeta = {
   },
 };
 
+// 2026-07-24 v8 M3 任务卡: Q-GR-02 (en 美国 DTC/Amazon FBA — packaging × 跨境電商) — packaging × 跨境電商 (Tier A) — 純文字・美國市場集中 (§13.15 en sharp hooks: Free Shipping $99+ / 500 MOQ / Free design mockup / Made for USA small business)
+// 双品牌宪法: en = ZprintPro 单一品牌
+const lpCustomCardBoxesUSA: BlogPostMeta = {
+  slug: 'custom-card-boxes-small-batch-usa',
+  categoryKey: 'packaging',
+  source: 'daily',
+  date: '2026-07-24',
+  title: {
+    'zh-hk': '小批量彩盒訂製: 跨境電商賣家免刀模費方案 | 智印港 ZprintPro',
+    en: 'Custom Card Boxes for E-commerce: 500 MOQ, No Die-Cut Fee, Free Shipping $99+ | ZprintPro',
+    ja: '小口カードボックス印刷：500個から型代不要・EC出品者向け | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '跨境電商賣家、DTC 品牌、亞馬遜 FBA 揀貨必睇。拼版白卡彩盒 500 個起印,免刀模費 + 免排版費,成本直降 40-60%,4 種紙材 + 3 種盒型 + 8 檔標準尺寸,8-15 天交付 + DHL 全球 2-4 天配送,香港無對手價。',
+    en: 'US DTC brand owners and Amazon FBA sellers — gang-run white card boxes with 500 MOQ starter, NO die-cut fee, NO setup fee, 40-60% lower unit cost than custom, 4 paper stocks + 3 box styles + 8 standard sizes, 8-15 day production, Free Shipping over $99 USA, Free Design Mockup, FedEx Ground 5-7 day or DHL Express 2-4 day delivery from Asia factory.',
+    ja: '米国 DTC ブランド、Amazon FBA セラー向け。合版ホワイトカードボックス 500 個 MOQ スターター、型代不要・版代不要、カスタム比 40-60% コスト削減、4 種素材 + 3 種箱型 + 8 標準サイズ、8-15 日生産、$99 以上で全米無料配送、無料デザイン モックアップ、FedEx Ground 5-7 日 or DHL Express 2-4 日納品対応。',
+  },
+};
+
+// 2026-07-24 v8 M3 任务卡: Q-GR-03 (ja 日本美妆银卡差异化 — packaging × 美妝護膚) — Tier A — 純文字・日本市場集中 (银卡/镭射银卡差异化 ×2.2 高毛利)
+// 双品牌宪法: ja = ZprintPro 单一品牌
+const lpCosmeticCardBoxesJapan: BlogPostMeta = {
+  slug: 'cosmetic-card-boxes-gang-run-japan',
+  categoryKey: 'packaging',
+  source: 'daily',
+  date: '2026-07-24',
+  title: {
+    'zh-hk': '美妝彩盒拼版印刷: 銀卡/鐳射銀卡高級感包裝 | 智印港 ZprintPro',
+    en: 'Cosmetic Card Boxes: Silver & Holographic Cardstock, No Die-Cut Fee | ZprintPro',
+    ja: '化粧品カードボックス合版印刷：銀カード・ホログラム対応・型代不要 | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '日本美妝護膚、IP 品牌、禮品套裝老闆必睇。銀卡白墨印刷 + 鐳射銀卡逆向 UV,棚前 3 秒購買決定的高級感包裝。型代不要 40-60% 成本削減,500-10,000 個小至大批量,8-15 日交付。',
+    en: 'Japan cosmetics, skincare, IP merchandise brand owners — silver cardstock with white ink + holographic silver with reverse UV, the shelf 3-second premium packaging. NO die-cut fee, 40-60% cost cut, 500-10,000 piece small-to-bulk runs, 8-15 day production, 3 box styles × 8 sizes × 4 paper stocks.',
+    ja: '日本の化粧品・コスメ・スキンケア・IP ブランドオーナー様へ。銀カード白墨印刷 + ホログラム銀カード リバース UV で棚前 3 秒の高級感パッケージ。型代不要で 40-60% コスト削減、500-10,000 個小〜大ロット、8-15 日生産、3 種箱型 × 8 サイズ × 4 種素材で 95% シーンカバー、ヤマト運輸 1-3 日納品対応。',
+  },
+};
+
 export const blogPosts: BlogPostMeta[] = [
   // Buying guides (9)
   bgBusinessCard,
@@ -1387,6 +1425,9 @@ export const blogPosts: BlogPostMeta[] = [
   lpCrossBorderShipping,
   // 2026-07-23 v7 daily-content-evolve: Q-GR-01 香港拼版彩盒指南 (K3 7/23 插队 priority_boost=3) — packaging × 零售精品 (Tier A) — 純文字・v7 報價型
   lpGangRunCardBoxesHK,
+  // 2026-07-24 v8 M3 任务卡: Q-GR-02 (en 美国) + Q-GR-03 (ja 日本) — packaging × 跨境電商 + 美妝護膚
+  lpCustomCardBoxesUSA,
+  lpCosmeticCardBoxesJapan,
   // 2026-07-06 v3 weekly-meta-refresh (手动补救: 11:00 weekly cron 跑了但 session LLM API GOAWAY 崩了, 0 产出; 现在手动补 3 篇 Tier B)
   // - lpRealEstateBrochureBox: packaging × 房地產 (Tier B T1)
   // - lpPharmaceuticalLabel: stickers × 醫藥保健 (Tier B T2)

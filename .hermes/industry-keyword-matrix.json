@@ -107,7 +107,10 @@
       "title_ja": "小口カードボックス印刷：500個から型代不要・EC出品者向け | ZprintPro",
       "note": "K3 2026-07-23 插队: en 美国市场, ×2.2 高毛利, Free Shipping $99+ hook",
       "priority_boost": 2,
-      "queued_at": "2026-07-23"
+      "queued_at": "2026-07-23",
+      "status": "completed",
+      "completed_at": "2026-07-24",
+      "completed_slug": "custom-card-boxes-small-batch-usa"
     },
     {
       "id": "Q-GR-03",
@@ -122,7 +125,10 @@
       "title_ja": "化粧品カードボックス合版印刷：銀カード・ホログラム対応・型代不要 | ZprintPro",
       "note": "K3 2026-07-23 插队: ja 日本市场, 银卡/镭射银卡差异化, ×2.2 高毛利",
       "priority_boost": 2,
-      "queued_at": "2026-07-23"
+      "queued_at": "2026-07-23",
+      "status": "completed",
+      "completed_at": "2026-07-24",
+      "completed_slug": "cosmetic-card-boxes-gang-run-japan"
     },
     {
       "id": "Q-001",
@@ -1767,6 +1773,62 @@
       "note": "2026-07-23 v7 daily-content-evolve: K3 7/23 插队 priority_boost=3 (highest). 双品牌宪法: zh-hk = 智印港 ZprintPro, en/ja = ZprintPro. NAP 脱钩: 3 locale body 均 'ISO 9001 認證工廠 (亞洲自有)' — 不写 supplier origin city.",
       "verify_steps": "7/7 (http200 3 locale, kw 37/19/43 ≥ 1, price 4/4/4 ≥ 3, partOf=0, no_img 0, internal_links 5/5 200, sitemap slug 15 hit 3 locale hreflang)",
       "sitemap_mtime": "2026-07-23"
+    },
+    {
+      "id": "Q-GR-01",
+      "version": 2,
+      "slug": "gang-run-card-boxes-hk-guide",
+      "category": "packaging",
+      "sku": "gang-run-card-boxes",
+      "industry": "零售精品",
+      "tier": "A",
+      "priority": "P0",
+      "title_zh": "香港拼版彩盒印刷指南 · 免刀模費直降40%的預算首選 | 智印港 ZprintPro",
+      "title_en": "Gang-Run Card Boxes Guide: No Die-Cut Fee, 40-60% Cheaper | ZprintPro",
+      "title_ja": "合版ホワイトカードボックス印刷ガイド：型代不要で40-60%削減 | ZprintPro",
+      "content_chars_zh": 5009,
+      "content_chars_en": 9131,
+      "content_chars_ja": 5280,
+      "completed_at": "2026-07-23",
+      "completed_at_v2": "2026-07-24",
+      "deploy_note": "v1 (7/23 K3 7/22 插队 priority_boost=3 紧急任务) — 保留 v1 entry 不动, v2 7/24 M3 v8 拍板升级 3 locale 全栈内容"
+    },
+    {
+      "id": "Q-GR-02",
+      "slug": "custom-card-boxes-small-batch-usa",
+      "category": "packaging",
+      "sku": "gang-run-card-boxes",
+      "industry": "跨境電商",
+      "tier": "A",
+      "priority": "P0",
+      "title_zh": "小批量彩盒訂製: 跨境電商賣家免刀模費方案 | 智印港 ZprintPro",
+      "title_en": "Custom Card Boxes for E-commerce: 500 MOQ, No Die-Cut Fee, Free Shipping $99+ | ZprintPro",
+      "title_ja": "小口カードボックス印刷：500個から型代不要・EC出品者向け | ZprintPro",
+      "content_chars_en": 7758,
+      "en_sharp_hooks": [
+        "Free Shipping $99+",
+        "500 MOQ starter",
+        "Free Design Mockup",
+        "Made for USA small business"
+      ],
+      "completed_at": "2026-07-24",
+      "deploy_note": "v8 M3 拍板 (en 美国 DTC/Amazon FBA 视角, ×2.2 高毛利) — en.json Q-GR-02 entry 7758 chars, 4 FAQ + 3 价格锚 (USD $25/$51/$119) + 3 内链 (产品页/产品页/类目页)"
+    },
+    {
+      "id": "Q-GR-03",
+      "slug": "cosmetic-card-boxes-gang-run-japan",
+      "category": "packaging",
+      "sku": "gang-run-card-boxes",
+      "industry": "美妝護膚",
+      "tier": "A",
+      "priority": "P0",
+      "title_zh": "美妝彩盒拼版印刷: 銀卡/鐳射銀卡高級感包裝 | 智印港 ZprintPro",
+      "title_en": "Cosmetic Card Boxes: Silver & Holographic Cardstock, No Die-Cut Fee | ZprintPro",
+      "title_ja": "化粧品カードボックス合版印刷：銀カード・ホログラム対応・型代不要 | ZprintPro",
+      "content_chars_ja": 3929,
+      "ja_differentiator": "銀カード白墨印刷 + ホログラム銀カード リバース UV で棚前 3 秒高級感",
+      "completed_at": "2026-07-24",
+      "deploy_note": "v8 M3 拍板 (ja 日本美妆银卡差异化, ×2.2 高毛利) — ja.json Q-GR-03 entry 3929 chars, 4 FAQ + 3 价格锚 (JPY ¥3,800/¥5,700/¥7,400) + 3 内链"
     }
   ],
   "skipped": {

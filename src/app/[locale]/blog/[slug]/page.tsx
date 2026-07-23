@@ -557,6 +557,9 @@ const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-
   'sports-merchandise-gift-box-printing-guide',
   // 2026-07-23 v7 daily-content-evolve: Q-GR-01 香港拼版彩盒指南 (K3 7/23 插队 priority_boost=3) — packaging × 零售精品
   'gang-run-card-boxes-hk-guide',
+  // 2026-07-24 v8 M3 任务卡: Q-GR-02 (en 美国) + Q-GR-03 (ja 日本) — packaging × 跨境電商 + 美妝護膚
+  'custom-card-boxes-small-batch-usa',
+  'cosmetic-card-boxes-gang-run-japan',
 ];
 const guideSlugs = getAllBuyingGuideSlugs();
 const clusterSlugs = getAllClusterSlugs();
