@@ -171,7 +171,9 @@ export async function middleware(request: NextRequest) {
     pathname.startsWith('/favicon.ico') ||
     pathname.startsWith('/robots.txt') ||
     pathname.startsWith('/sitemap') ||
-    pathname.startsWith('/manifest.json')
+    pathname.startsWith('/manifest.json') ||
+    // 2026-07-24 M3 v9 任务卡: hidden internal tools (无 locale prefix 直达)
+    pathname.startsWith('/quote-desk')
   ) {
     return thisResponseWithAbHeaders(request);
   }
