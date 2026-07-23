@@ -1,18 +1,22 @@
 /**
- * Quote Desk v2 — M3 v9 任务卡 2026-07-24
+ * Quote Desk v2.1 — M3 v10 任务卡 2026-07-24
  *
- * 报价台 v2 全量接入：12 张价格表 (e-print 4 + yate98 5 + special-fold 1 + 3 setup) +
- * 三级选择器 + 30kg 运费引擎 + 3 locale WhatsApp 文案。
+ * v10 修复：
+ * - 修复 calcPrice en/ja yate98 用 cost_rmb × 2.2 × fx 路径（原 bug: 全部 sellHKD × fx, 跟 zh-hk ×1.5 同价, 每单少赚 ~$130 / ~¥20K）
+ * - 新增 registerEprintProduct (按 productSku 过滤 books.json 等多 product 表)
+ * - 入仓 exercise-books + perfect-bound-books 2 张 eprint 表 (8 → 10 张)
+ * - 头程运费 200 HKD → 50 RMB × HKD_TO_CNY ≈ 46 HKD (user 2026-07-24 v10 暂估)
+ * - 新增 /quote-desk/all 老板全表总览页数据源 (复用 calcPrice)
  *
  * 设计原则：
- * 1. 不复用 engine.ts formula DSL (v1 quote engine, schema 不匹配) — 直接 import 12 张表
- * 2. 复用 markets.ts 的 MARKETS 概念 (×1.5 zh-hk / ×2.2 en·ja) — 但简化到 cost_rmb → fx
- * 3. 复用 shipping-rules.json 的物流公式 — 不复用 shipping.ts 的 DHL/UPS API
- * 4. 复用 fx-rates.json 的 9 币种汇率 — 优先 JSON, fallback fx.ts inline
+ * 1. 不复用 engine.ts formula DSL (v1 quote engine, schema 不匹配) — 直接 import 10 张表
+ * 2. yate98 模式: zh-hk sellHKD = JSON 预烧 (cost_rmb × 1.5); en sellUSD / ja sellJPY = cost_rmb × 2.2 × fx (毛利≥50%)
+ * 3. eprint + special-fold 模式: 3 币种都从 sell_hkd × fx (对标 e-print.com.hk ×0.95/×0.90)
+ * 4. 复用 fx-rates.json 9 币种汇率
  *
  * 安全红线：
- * - 成本列 (cost_rmb / 工厂数据) 不渲染到对客 UI（仅调试时显示）
- * - 文案禁出现 e-print / intuan / yate98 / 成本 / anchor / ×1.5 / ×2.2 字段
+ * - 对客 UI: 成本列 (cost_rmb) 不渲染 (仅 debug); 文案禁出现 e-print / intuan / yate98 / 成本 / anchor / ×1.5 / ×2.2
+ * - 老板 /all 页豁免: cost_rmb 公开, 内部成本视图 (页面顶部红字 "勿外发")
  * - 隐藏路由 + SHA-256 密钥门 (URL ?k=<secret>)
  */
 
@@ -28,7 +32,8 @@ import customFlyers from '@/data/price-tables/flyers-cost-yate98.json';
 
 // e-print 对标 2 张（无 weight_kg, 走固定运费）
 // 2026-07-24 v9 任务卡标 4 张 (flyers/books/exercise-books/perfect-bound-books),
-// 实际 JSON 入仓 2 张 (flyers/books), exercise-books + perfect-bound-books 待 user 入仓后 append
+// 2026-07-24 v10 任务卡: 通过 registerEprintProduct 把 books.json 内 2 个 product 单独注册为新表
+// 实际注册: 2 整表 (flyers/books) + 2 单 product (exercise-books/perfect-bound-books) = 4 张 eprint
 import flyersEprint from '@/data/price-tables/flyers.json';
 import booksEprint from '@/data/price-tables/books.json';
 
@@ -72,6 +77,10 @@ export interface PriceResult {
   sellUSD: number;
   sellJPY: number;
   configHuman: Record<Locale, string>;
+  /** 加价率: 0 = eprint/special-fold (对标 e-print.com.hk), 1.5 = zh-hk yate98, 2.2 = en/ja yate98 */
+  markupRate: number;
+  /** 工厂成本 (RMB), 仅 yate98 模式有值; eprint/special-fold 返 null (老板 /all 页豁免显示) */
+  costRMB: number | null;
 }
 
 export interface ShippingResult {
@@ -92,6 +101,17 @@ export interface ShippingResult {
 const HKD_TO_USD = 1 / fxRates.rates.USD; // 1/7.81 = 0.128
 const HKD_TO_JPY = 1 / fxRates.rates.JPY; // 1/0.05 = 20.0
 const HKD_TO_CNY = 1 / fxRates.rates.CNY; // 1/1.087 = 0.92
+
+// 跨币种换算 (用于 yate98 模式 en/ja: cost_rmb × 2.2 × CNY_TO_XXX)
+// 1 CNY = 1.087 HKD = 1.087/7.81 USD = 0.1392 USD
+// 1 CNY = 1.087/0.05 JPY = 21.74 JPY
+const CNY_TO_USD = fxRates.rates.CNY / fxRates.rates.USD; // ≈ 0.1392
+const CNY_TO_JPY = fxRates.rates.CNY / fxRates.rates.JPY; // ≈ 21.74
+
+// 头程固定成本 (user 2026-07-24 v10 暂估)
+// 旧: +200 HKD (硬码); 新: 50 RMB × HKD_TO_CNY ≈ 46 HKD
+const INLAND_LEG_RMB = 50;
+const HEAD_COST_HKD = INLAND_LEG_RMB * HKD_TO_CNY; // ≈ 46 HKD
 
 // ============================================================
 // 12 张表注册表
@@ -176,7 +196,49 @@ function registerSpecialFold(slug: string, data: any) {
   REGISTRY[slug] = t;
 }
 
-// 注册 8 张表 (5 yate98 + 2 eprint + 1 special-fold; exercise-books/perfect-bound-books 待补)
+// v10 新增: eprint 单 product 注册 (从 books.json 等多 product 复合表里抽出单个 product 作为独立表)
+// 用法: registerEprintProduct('exercise-books', booksEprint, 'exercise-books', { 'zh-hk': '練習簿', en: 'Exercise Books', ja: '練習帳' })
+function registerEprintProduct(
+  slug: string,
+  data: any,
+  productSku: string,
+  displayName: Record<Locale, string> | string
+) {
+  const product = data.products.find((p: any) => p.sku === productSku);
+  if (!product) {
+    throw new Error(
+      `registerEprintProduct: product "${productSku}" not found in data for slug "${slug}". Available: ${data.products.map((p: any) => p.sku).join(', ')}`
+    );
+  }
+  const dnZh =
+    typeof displayName === 'string' ? displayName : displayName['zh-hk'] || productSku;
+  const dnEn = typeof displayName === 'string' ? displayName : displayName['en'] || productSku;
+  const dnJa = typeof displayName === 'string' ? displayName : displayName['ja'] || productSku;
+  const configs = product.tiers.map((t: any) => ({
+    config: `${product.sku} | ${product.config?.size || ''} | ${product.config?.paper || ''} | ${product.config?.print || product.config?.binding || ''}`,
+    productSku: product.sku,
+    productConfig: product.config,
+    tiers: [t],
+  }));
+  const t: TableRegistry = {
+    meta: {
+      sku: product.sku,
+      category: 'books',
+      name: { 'zh-hk': dnZh, en: dnEn, ja: dnJa },
+      configCount: 1,
+      hasWeight: false,
+      priceMode: 'eprint',
+      displayName: dnZh,
+    },
+    configs,
+    tierField: 'tiers',
+    parseConfigHuman: parseEprintConfig,
+  };
+  REGISTRY[slug] = t;
+}
+
+// 注册 10 张表 (5 yate98 + 2 eprint 整表 + 2 eprint 单 product + 1 special-fold)
+// v10 增: registerEprintProduct 'exercise-books' + 'perfect-bound-books' (从 books.json 抽出)
 registerYate98('gang-run-card-boxes', gangRunCardBoxes);
 registerYate98('corrugated-boxes', corrugatedBoxes);
 registerYate98('digital-stickers', digitalStickers);
@@ -184,6 +246,16 @@ registerYate98('white-card-bags', whiteCardBags);
 registerYate98('custom-flyers', customFlyers);
 registerEprint('flyers', flyersEprint);
 registerEprint('books', booksEprint);
+registerEprintProduct('exercise-books', booksEprint, 'exercise-books', {
+  'zh-hk': '練習簿印刷',
+  en: 'Exercise Books',
+  ja: '練習帳印刷',
+});
+registerEprintProduct('perfect-bound-books', booksEprint, 'perfect-bound-books', {
+  'zh-hk': '膠裝書刊',
+  en: 'Perfect Bound Books',
+  ja: '無線綴じ書籍',
+});
 registerSpecialFold('special-fold-leaflets', specialFoldLeaflets);
 
 // ============================================================
@@ -240,10 +312,7 @@ function parseSpecialFoldConfig(raw: string, locale: Locale): string {
 // ============================================================
 
 export function getAllTables(): TableMeta[] {
-  // 8 张表 (5 yate98 + 2 eprint + 1 special-fold)
-  // 任务卡 v9 标 12 张, 实际 JSON 入仓 10 张 (5+4+1),
-  // 但 exercise-books.json + perfect-bound-books.json 文件不存在
-  // 修法: 待 user 入仓 2 张后, append 2 行 register + 2 行 getAllTables
+  // v10: 10 张表 (5 yate98 + 2 eprint 整表 + 2 eprint 单 product + 1 special-fold)
   return [
     // yate98 5 张
     REGISTRY['gang-run-card-boxes'].meta,
@@ -251,9 +320,12 @@ export function getAllTables(): TableMeta[] {
     REGISTRY['digital-stickers'].meta,
     REGISTRY['white-card-bags'].meta,
     REGISTRY['custom-flyers'].meta,
-    // eprint 2 张 (待补 exercise-books + perfect-bound-books)
+    // eprint 整表 2 张
     REGISTRY['flyers'].meta,
     REGISTRY['books'].meta,
+    // eprint 单 product 2 张 (v10 入仓)
+    REGISTRY['exercise-books'].meta,
+    REGISTRY['perfect-bound-books'].meta,
     // special-fold 1 张
     REGISTRY['special-fold-leaflets'].meta,
   ];
@@ -301,7 +373,7 @@ export function findClosestTier(slug: string, config: string, qty: number): Tier
 }
 
 // ============================================================
-// 价格计算 (cost_rmb × 1.5/×2.2 → sell_hkd/USD/JPY + sell_hkd 直接来自 eprint)
+// 价格计算 (v10 修复: yate98 en/ja 用 cost_rmb × 2.2 × fx 路径)
 // ============================================================
 
 export function calcPrice(slug: string, config: string, qty: number, locale: Locale): PriceResult | null {
@@ -311,19 +383,29 @@ export function calcPrice(slug: string, config: string, qty: number, locale: Loc
   if (!tier) return null;
 
   let sellHKD: number;
-  if (reg.meta.priceMode === 'yate98') {
-    // yate98 模式: cost_rmb × 1.5 → sell_hkd (zh-hk), cost_rmb × 2.2 × fx → sell_usd/sell_jpy
-    // 但 JSON 中 sell_hkd 已经算好了 (zh-hk), en/ja 用 cost_rmb 重新算
-    sellHKD = tier.sellHKD; // zh-hk 直接用
-  } else {
-    // eprint + special-fold 模式: sell_hkd 来自 JSON (×0.95/×0.90), 跨币种用汇率换
-    sellHKD = tier.sellHKD;
-  }
+  let sellUSD: number;
+  let sellJPY: number;
+  let markupRate: number;
+  let costRMB: number | null;
 
-  // USD/JPY: 3 种模式都从 sell_hkd 转换 (避免暴露 cost_rmb)
-  // en/ja 直接 sellHKD × fx 显示
-  const sellUSD = sellHKD * HKD_TO_USD;
-  const sellJPY = Math.round(sellHKD * HKD_TO_JPY); // JPY 不带小数
+  if (reg.meta.priceMode === 'yate98' && tier.costRMB !== undefined) {
+    // yate98 + 有 costRMB:
+    //   zh-hk sellHKD = JSON 预烧 (cost_rmb × 1.5 → HKD)
+    //   en sellUSD = cost_rmb × 2.2 × CNY_TO_USD (毛利≥50%)
+    //   ja sellJPY = round(cost_rmb × 2.2 × CNY_TO_JPY)
+    costRMB = tier.costRMB;
+    sellHKD = tier.sellHKD;
+    sellUSD = costRMB * 2.2 * CNY_TO_USD;
+    sellJPY = Math.round(costRMB * 2.2 * CNY_TO_JPY);
+    markupRate = 2.2; // en/ja 高水位 (zh-hk 是 ×1.5, 但用高水位标记, 老板 /all 页能区分)
+  } else {
+    // eprint + special-fold: 3 币种都从 sellHKD × fx (对标 e-print.com.hk ×0.95/×0.90, 无 cost_rmb)
+    costRMB = null;
+    sellHKD = tier.sellHKD;
+    sellUSD = sellHKD * HKD_TO_USD;
+    sellJPY = Math.round(sellHKD * HKD_TO_JPY);
+    markupRate = 0;
+  }
 
   return {
     tier,
@@ -335,6 +417,8 @@ export function calcPrice(slug: string, config: string, qty: number, locale: Loc
       en: reg.parseConfigHuman(config, 'en'),
       ja: reg.parseConfigHuman(config, 'ja'),
     },
+    markupRate,
+    costRMB,
   };
 }
 
@@ -379,8 +463,8 @@ export function calcShipping(slug: string, weightKg: number | null, locale: Loca
     };
   }
 
-  // >30kg: 物流公式 (0.7×kg+100) × 1.09 + 200 HKD
-  const costHKD = Math.round(((0.7 * weightKg + 100) * 1.09 + 200) * 100) / 100;
+  // >30kg: 物流公式 (0.7×kg+100) × 1.09 + 头程 (v10: 200 HKD → 50 RMB × HKD_TO_CNY ≈ 46 HKD)
+  const costHKD = Math.round(((0.7 * weightKg + 100) * 1.09 + HEAD_COST_HKD) * 100) / 100;
   return {
     method: 'logistics-general',
     line: locale === 'en' ? `Logistics: HK$${costHKD.toFixed(0)} (${weightKg}kg via 物流園+派送)` : locale === 'ja' ? `物流便: HK$${costHKD.toFixed(0)} (${weightKg}kg 経由物流園+配達)` : `物流園+派送: HK$${costHKD.toFixed(0)} (${weightKg}kg)`,
