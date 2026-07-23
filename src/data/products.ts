@@ -15078,20 +15078,21 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/seedream-webp/zprintpro-books-hardcover-books-zh-hk-1.webp'],
+    images: ['/images/products/seedream-webp/zprintpro-books-hardcover-books-zh-hk.webp'],
   imagesByLocale: {
       'zh-hk': [
-        '/images/products/seedream-webp/zprintpro-books-hardcover-books-zh-hk-1.webp',
+        '/images/products/seedream-webp/zprintpro-books-hardcover-books-zh-hk.webp',
         '/images/products/seedream-webp/zprintpro-books-hardcover-books-zh-hk-2.webp',
         '/images/products/seedream-webp/zprintpro-books-hardcover-books-zh-hk-3.webp',
       ],
       'en': [
-        '/images/products/seedream-webp/zprintpro-books-hardcover-books-en-1.webp',
+        '/images/products/seedream-webp/zprintpro-books-hardcover-books-en.webp',
         '/images/products/seedream-webp/zprintpro-books-hardcover-books-en-2.webp',
         '/images/products/seedream-webp/zprintpro-books-hardcover-books-en-3.webp',
       ],
       'ja': [
-        '/images/products/seedream-webp/zprintpro-books-hardcover-books-ja-1.webp',
+        '/images/products/seedream-webp/zprintpro-books-hardcover-books-ja.webp',
+        '/images/products/seedream-webp/zprintpro-books-hardcover-books-ja-2.webp',
         '/images/products/seedream-webp/zprintpro-books-hardcover-books-ja-3.webp',
       ],
     },
@@ -15118,13 +15119,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
       ],
     },
   seoImages: {
-    filename: { 'zh-hk': 'zprintpro-books-hardcover-books-zh-hk-1.webp', en: 'zprintpro-books-hardcover-books-en-1.webp', ja: 'zprintpro-books-hardcover-books-ja-1.webp' },
-    alt: {
-      'zh-hk': '香港精裝書籍印刷 硬紙板封面裱糊銅版紙 膠裝',
-      en: 'Hardcover Books | Professional Books Online',
-      ja: '上製本 | 無線綴じ・中綴じ対応 | ZprintPro'
+      filename: { 'zh-hk': 'zprintpro-books-hardcover-books-zh-hk.webp', en: 'zprintpro-books-hardcover-books-en.webp', ja: 'zprintpro-books-hardcover-books-ja.webp' },
+      alt: {
+        'zh-hk': '香港精裝書籍 - 精裝書籍印刷，婚慶紀念書、家族史冊、畢業紀念冊、校史特刊首選。2.5mm 灰紙板封面硬挺高檔，可加燙金書名與絲帶書籤。',
+        en: 'Hardcover Books - Premium hardcover book printing for wedding albums, family histories, graduation yearbooks, school anniversary publications. 2.5mm gray board cover with foil-stamped titles and ribbon bookmarks.',
+        ja: 'Hardcover Books - ハードカバー書籍印刷、結婚記念アルバム、家族史、卒業記念アルバム、校史特刊に最適。2.5mm 厚紙ボード表紙、箔押しタイトルとリボン栞付き。',
+      },
     },
-  },
   },
   {
     id: 'BK-005',
@@ -17996,31 +17997,31 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     isHot: true,
     isNew: true,
     minQuantity: 500,
-    images: ['/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-zh-hk-1.webp'],
+    images: ['/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-zh-hk.webp'],
     imagesByLocale: {
       'zh-hk': [
-        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-zh-hk-1.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-zh-hk.webp',
         '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-zh-hk-2.webp',
         '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-zh-hk-3.webp',
         '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-zh-hk-4.webp',
       ],
       'en': [
-        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-en-1.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-en.webp',
         '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-en-2.webp',
         '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-en-3.webp',
       ],
       'ja': [
-        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-ja-1.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-ja.webp',
         '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-ja-2.webp',
         '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-ja-3.webp',
       ],
     },
     seoImages: {
-      filename: { 'zh-hk': 'zprintpro-packaging-gang-run-card-boxes-zh-hk-1.webp', en: 'zprintpro-packaging-gang-run-card-boxes-en-1.webp', ja: 'zprintpro-packaging-gang-run-card-boxes-ja-1.webp' },
+      filename: { 'zh-hk': 'zprintpro-packaging-gang-run-card-boxes-zh-hk.webp', en: 'zprintpro-packaging-gang-run-card-boxes-en.webp', ja: 'zprintpro-packaging-gang-run-card-boxes-ja.webp' },
       alt: {
-        'zh-hk': '拼版白卡彩盒(免刀模費) | 香港包裝盒定製專家 | 智印港 ZprintPro',
-        en: 'Gang-Run White Card Boxes (No Die-Cut Fee) | HK Packaging Custom Expert | ZprintPro',
-        ja: '合版白カードボックス(型代不要) | 香港パッケージ専門家 | ZprintPro',
+        'zh-hk': '拼版白卡彩盒(免刀模費) - 固定刀模共用，免刀模費 + 免排版費，成本直降 40-60%。4 種紙材 (350g/400g 單粉卡、375g 銀卡、375g 鐳射銀卡)，3 種盒型 (飛機盒/扣底盒/雙插盒)，8 檔標準尺寸。500-10,000 枚，8-15 天交期。香港無對手價。',
+        en: 'Gang-Run White Card Boxes (No Die-Cut Fee) - Shared die-cut mold, no die-cut fee, no setup fee, 40-60% lower cost than custom. 4 paper stocks (350g/400g single-side, 375g silver card, 375g holographic silver), 3 box styles (airplane/lock-bottom/double-tuck), 8 standard sizes. 500-10,000 pieces, 8-15 day turnaround. Hong Kong zero-competition pricing.',
+        ja: 'Gang-Run White Card Boxes (No Die-Cut Fee) - 共有型代、型代不要・版代不要、カスタム比 40-60% コスト削減。4 種素材 (350g/400g 単粉カード、375g 銀カード、375g ホログラム銀カード)、3 種箱型 (飛行機箱/ロック底箱/両挿箱)、8 種標準サイズ。500-10,000 個、8-15 日納期。香港無競合価格。',
       },
     },
   },
