@@ -15078,27 +15078,23 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     isHot: false,
     isNew: false,
     minQuantity: 100,
-    images: ['/images/products/hardcover-books.jpg'],
+    images: ['/images/products/seedream-webp/zprintpro-books-hardcover-books-zh-hk-1.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-books-hardcover-books-zh-hk.webp',
-      '/images/products/seedream-webp/zprintpro-books-hardcover-books-zh-hk-2.webp',
-      '/images/products/seedream-webp/zprintpro-books-hardcover-books-zh-hk-3.webp',
-      '/images/products/seedream-webp/zprintpro-books-hardcover-books-zh-hk-4.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-books-hardcover-books-en.webp',
-      '/images/products/seedream-webp/zprintpro-books-hardcover-books-en-2.webp',
-      '/images/products/seedream-webp/zprintpro-books-hardcover-books-en-3.webp',
-      '/images/products/seedream-webp/zprintpro-books-hardcover-books-en-4.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-books-hardcover-books-ja.webp',
-      '/images/products/seedream-webp/zprintpro-books-hardcover-books-ja-2.webp',
-      '/images/products/seedream-webp/zprintpro-books-hardcover-books-ja-3.webp',
-      '/images/products/seedream-webp/zprintpro-books-hardcover-books-ja-4.webp',
-    ],
-  },
+      'zh-hk': [
+        '/images/products/seedream-webp/zprintpro-books-hardcover-books-zh-hk-1.webp',
+        '/images/products/seedream-webp/zprintpro-books-hardcover-books-zh-hk-2.webp',
+        '/images/products/seedream-webp/zprintpro-books-hardcover-books-zh-hk-3.webp',
+      ],
+      'en': [
+        '/images/products/seedream-webp/zprintpro-books-hardcover-books-en-1.webp',
+        '/images/products/seedream-webp/zprintpro-books-hardcover-books-en-2.webp',
+        '/images/products/seedream-webp/zprintpro-books-hardcover-books-en-3.webp',
+      ],
+      'ja': [
+        '/images/products/seedream-webp/zprintpro-books-hardcover-books-ja-1.webp',
+        '/images/products/seedream-webp/zprintpro-books-hardcover-books-ja-3.webp',
+      ],
+    },
     variables: {
       sizes: [
         { value: 'a5', label: 'A5 (148×210mm)', multiplier: 1 },
@@ -15122,7 +15118,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
       ],
     },
   seoImages: {
-    filename: { 'zh-hk': 'zprintpro-books-hardcover-books-zh-hk.webp', en: 'zprintpro-books-hardcover-books-en.webp', ja: 'zprintpro-books-hardcover-books-ja.webp' },
+    filename: { 'zh-hk': 'zprintpro-books-hardcover-books-zh-hk-1.webp', en: 'zprintpro-books-hardcover-books-en-1.webp', ja: 'zprintpro-books-hardcover-books-ja-1.webp' },
     alt: {
       'zh-hk': '香港精裝書籍印刷 硬紙板封面裱糊銅版紙 膠裝',
       en: 'Hardcover Books | Professional Books Online',
@@ -18006,6 +18002,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
         '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-zh-hk-1.webp',
         '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-zh-hk-2.webp',
         '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-zh-hk-3.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-zh-hk-4.webp',
       ],
       'en': [
         '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-en-1.webp',
@@ -18017,6 +18014,14 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
         '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-ja-2.webp',
         '/images/products/seedream-webp/zprintpro-packaging-gang-run-card-boxes-ja-3.webp',
       ],
+    },
+    seoImages: {
+      filename: { 'zh-hk': 'zprintpro-packaging-gang-run-card-boxes-zh-hk-1.webp', en: 'zprintpro-packaging-gang-run-card-boxes-en-1.webp', ja: 'zprintpro-packaging-gang-run-card-boxes-ja-1.webp' },
+      alt: {
+        'zh-hk': '拼版白卡彩盒(免刀模費) | 香港包裝盒定製專家 | 智印港 ZprintPro',
+        en: 'Gang-Run White Card Boxes (No Die-Cut Fee) | HK Packaging Custom Expert | ZprintPro',
+        ja: '合版白カードボックス(型代不要) | 香港パッケージ専門家 | ZprintPro',
+      },
     },
   },
 
@@ -18098,11 +18103,27 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>国際輸送中に白カードボックスは潰れますか？</strong></summary><p>1-3mm 厚の場合、50-100 枚平置き可能; 国際輸送には 5 層 BC 段ボール外箱で保護が必要。DHL 航空輸送は 7-10 日で配送。</p></details>
 <details class="my-2"><summary><strong>白カードと特殊紙の違いは？</strong></summary><p>350g 白カードは表面が滑らかで色再現性が高く低コスト; 特殊紙 (レイド紙、ダイヤモンド紙) はテクスチャがあり単価 50-100% 高、限定版プレミアム商品に最適。</p></details>
 `,
-    images: [],
+    images: ['/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-zh-hk-1.webp'],
     imagesByLocale: {
-      'zh-hk': [],
-      en: [],
-      ja: [],
+      'zh-hk': [
+        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-zh-hk-1.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-zh-hk-2.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-zh-hk-3.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-zh-hk-4.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-zh-hk-5.webp',
+      ],
+      'en': [
+        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-en-1.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-en-2.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-en-3.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-en-4.webp',
+      ],
+      'ja': [
+        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-ja-1.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-ja-2.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-ja-3.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-ja-4.webp',
+      ],
     },
     price_range: 'Pending intuan calibration',
     basePrice: 0,
@@ -18200,11 +18221,28 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>500 枚 MOQ は多すぎますか？</strong></summary><p>越境EC は共有 MOQ プログラム (200 枚 MOQ) を利用するか、3 層 E フルート標準の 100 枚 MOQ (5-7 日納品) を選択可能。</p></details>
 <details class="my-2"><summary><strong>輸送中に段ボール箱は潰れますか？</strong></summary><p>3 層 B フルート設計で、5 層 BC ダブルウォール外箱に 100 枚積載で 80-120kg 耐荷重。DHL/FedEx 国際航空輸送は 7-10 日で配送。</p></details>
 `,
-    images: [],
+    images: ['/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-zh-hk-1.webp'],
     imagesByLocale: {
-      'zh-hk': [],
-      en: [],
-      ja: [],
+      'zh-hk': [
+        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-zh-hk-1.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-zh-hk-2.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-zh-hk-3.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-zh-hk-4.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-zh-hk-5.webp',
+      ],
+      'en': [
+        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-en-1.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-en-2.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-en-3.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-en-4.webp',
+      ],
+      'ja': [
+        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-ja-1.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-ja-2.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-ja-3.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-ja-4.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-ja-5.webp',
+      ],
     },
     price_range: 'Pending intuan calibration',
     basePrice: 0,
@@ -18296,11 +18334,24 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>輸送中に差し込み式ボックスは開きやすいですか？</strong></summary><p>ロッキングタブ付き反挿は優れたシーリング性; 直挿は軽量商品向け、振動でわずかに緩むが開かない; 自動底ロックベースは最も安定。</p></details>
 <details class="my-2"><summary><strong>差し込み式と天地蓋ボックスの違いは？</strong></summary><p>差し込み式は 1 枚の板から折り畳み、平面輸送でストレージコストが低い; 天地蓋ボックスは 2 つの別ピース (本体 + 蓋) で開梱セレモニーは強いがストレージコストが 2-3 倍。</p></details>
 `,
-    images: [],
+    images: ['/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-zh-hk-2.webp'],
     imagesByLocale: {
-      'zh-hk': [],
-      en: [],
-      ja: [],
+      'zh-hk': [
+        '/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-zh-hk-2.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-zh-hk-3.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-zh-hk-4.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-zh-hk-5.webp',
+      ],
+      'en': [
+        '/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-en-1.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-en-2.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-en-3.webp',
+      ],
+      'ja': [
+        '/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-ja-1.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-ja-2.webp',
+        '/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-ja-3.webp',
+      ],
     },
     price_range: 'Pending intuan calibration',
     basePrice: 0,
@@ -18310,7 +18361,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     minQuantity: 500,
     turnaround: '5-7 working days',
     seoImages: {
-      filename: { 'zh-hk': 'zprintpro-packaging-tuck-end-boxes-zh-hk-1.webp', en: 'zprintpro-packaging-tuck-end-boxes-en-1.webp', ja: 'zprintpro-packaging-tuck-end-boxes-ja-1.webp' },
+      filename: { 'zh-hk': 'zprintpro-packaging-tuck-end-boxes-zh-hk-2.webp', en: 'zprintpro-packaging-tuck-end-boxes-en-1.webp', ja: 'zprintpro-packaging-tuck-end-boxes-ja-1.webp' },
       alt: {
         'zh-hk': '插口盒印刷定製 (直插/反插/飛機插) | 香港餐飲外賣零售快消包裝盒 | 智印港 ZprintPro',
         en: 'Tuck End Boxes (Straight/Reverse/Auto-Bottom) | F&B Takeaway & Retail | ZprintPro',
