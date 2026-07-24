@@ -6,6 +6,7 @@
  */
 
 import { useState } from "react";
+import OrderForm from "./orderform";
 
 interface PriceTier {
   qty: number;
@@ -147,6 +148,23 @@ export default function ReferencePriceBlock({ data, locale, whatsappNumber }: Pr
           </a>
         </div>
       )}
+
+      {/* v17: 半自助下单 — 选中某档后可下单 */}
+      {selectedTier && selectedQty !== null && (() => {
+        const symbol2 = CURRENCY_SYMBOL[locale] || "HK$";
+        return (
+          <div className="px-6 py-4 border-t border-gray-100">
+            <OrderForm
+              locale={locale}
+              productName={data.productName[locale] || ""}
+              configSnapshot={currentConfig.label[locale] || ""}
+              qty={selectedQty}
+              batchPrice={selectedBatchPrice}
+              currencySymbol={symbol2}
+            />
+          </div>
+        );
+      })()}
     </div>
   );
 }
