@@ -17330,26 +17330,30 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     isHot: true,
     isNew: true,
     minQuantity: 50,
-    images: ['/images/products/yearbook.jpg'],
+    images: ['/images/products/seedream-webp/zprintpro-educational-graduation-yearbook-zh-hk.webp'],
   imagesByLocale: {
-    'zh-hk': [
-      '/images/products/seedream-webp/zprintpro-educational-graduation-yearbook-zh-hk-1.webp',
-      '/images/products/seedream-webp/zprintpro-educational-graduation-yearbook-zh-hk-2.webp',
-    ],
-    'en': [
-      '/images/products/seedream-webp/zprintpro-educational-graduation-yearbook-en-1.webp',
-      '/images/products/seedream-webp/zprintpro-educational-graduation-yearbook-en-2.webp',
-    ],
-    'ja': [
-      '/images/products/seedream-webp/zprintpro-educational-graduation-yearbook-ja-1.webp',
-    ],
-  },
+      'zh-hk': [
+        '/images/products/seedream-webp/zprintpro-educational-graduation-yearbook-zh-hk.webp',
+        '/images/products/seedream-webp/zprintpro-educational-graduation-yearbook-zh-hk-2.webp',
+        '/images/products/seedream-webp/zprintpro-educational-graduation-yearbook-zh-hk-3.webp',
+      ],
+      'en': [
+        '/images/products/seedream-webp/zprintpro-educational-graduation-yearbook-en.webp',
+        '/images/products/seedream-webp/zprintpro-educational-graduation-yearbook-en-2.webp',
+        '/images/products/seedream-webp/zprintpro-educational-graduation-yearbook-en-3.webp',
+      ],
+      'ja': [
+        '/images/products/seedream-webp/zprintpro-educational-graduation-yearbook-ja.webp',
+        '/images/products/seedream-webp/zprintpro-educational-graduation-yearbook-ja-2.webp',
+        '/images/products/seedream-webp/zprintpro-educational-graduation-yearbook-ja-3.webp',
+      ],
+    },
   seoImages: {
-    filename: { 'zh-hk': 'zprintpro-educational-graduation-yearbook-zh-hk-1.webp', en: 'zprintpro-educational-graduation-yearbook-en-1.webp', ja: 'zprintpro-educational-graduation-yearbook-ja-1.webp' },
+    filename: { 'zh-hk': 'zprintpro-educational-graduation-yearbook-zh-hk.webp', en: 'zprintpro-educational-graduation-yearbook-en.webp', ja: 'zprintpro-educational-graduation-yearbook-ja.webp' },
     alt: {
-      'zh-hk': '香港畢業紀念冊印刷 騎馬釘 膠裝 精裝 燙金封面',
-      en: 'Graduation Yearbook Printing Saddle Stitch Perfect Bound Hardcover',
-      ja: '卒業記念アルバム印刷 中綴じ 無線綴じ 上製本'
+      'zh-hk': '香港畢業紀念冊印刷 — 校史特刊/校友會刊/社團特刊定製，騎馬釘/膠裝/精裝 3 種裝訂，支援班級照片、師長題詞、學校 logo 全頁。香港本地 48 小時交付，DHL 全球 2-4 天。',
+      en: 'Graduation Yearbook Printing — school anniversary / alumni / club publication, saddle stitch / perfect bound / hardcover, full class photos, faculty messages, school logos. 48hr HK local, DHL 2-4 day global.',
+      ja: '卒業記念アルバム印刷 — 校史特刊/同窓会誌/クラブ特刊，中綴じ/無線綴じ/上製本の3方式，クラス寫真・先生メッセージ・学校ロゴ全面対応。香港48時間，DHL国際2-4日。',
     },
   },
   optimizedAt: '2026-07-09',
