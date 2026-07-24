@@ -46,6 +46,8 @@ import { coreProductFAQMap } from '@/data/product-faqs';
 import { RegionalContent, RegionalCta, RegionalTrustBadges } from '@/components/seo/RegionalContent';
 import { convertPriceRangeString, convertToFromPrice } from '@/lib/pricing';
 import { generateWhatsAppLink } from '@/lib/whatsapp';
+import { getPriceTableForSlug } from '@/lib/price-injector';
+import ReferencePriceBlock from '@/components/pdp/referencepriceblock';
 import { getProductMainImage, getProductImages } from '@/lib/product-image';
 import { ProductWhyChooseUs } from '@/components/ProductWhyChooseUs';
 import RushDeliveryBadge from '@/components/sections/RushDeliveryBadge';
@@ -442,6 +444,15 @@ export default function ProductPage({
                 <h3 className="text-lg font-semibold text-gray-900 mb-4">{t.specifications}</h3>
                 <QuoteCalculator product={product} locale={locale} />
               </div>
+
+              {/* v13: 參考價格表 (server 端注入实际价格数据, 无匹配则降级不显示) */}
+              {(() => {
+                const priceData = getPriceTableForSlug(product.slug);
+                if (priceData) {
+                  return <ReferencePriceBlock data={priceData} locale={locale} />;
+                }
+                return null;
+              })()}
 
               {/* SKU & 最低订购量 (2026-06-07: 靠右对齐 + 减右 padding 2/3)
                   2026-07-13 v3: QuantityTier 已从右栏移除, 放在左 column 备注栏下面 */}
