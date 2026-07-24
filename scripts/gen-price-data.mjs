@@ -139,6 +139,36 @@ function ser(obj, indent = 2) {
   return JSON.stringify(obj, null, indent).replace(/'/g, "\\'");
 }
 
+function serUnitAnchors(map) {
+  const lines = [];
+  const sheets = ['a2-posters','a1-posters','a4-flyers','a5-flyers','folded-leaflets','same-day-flyers','eco-flyers'];
+  const books = ['saddle-stitch-booklets','perfect-bound-books','hardcover-books','exercise-books','catalog-printing','spiral-notebooks'];
+  for (const [slug, data] of Object.entries(map)) {
+    if (!data.configs?.length) continue;
+    // Take first config's tiers as default
+    const cfg = data.configs[0];
+    if (!cfg.tiers?.length) continue;
+    let bestHKD = { ppu: Infinity, qty: 0, batch: 0 };
+    let bestUSD = { ppu: Infinity, qty: 0, batch: 0 };
+    let bestJPY = { ppu: Infinity, qty: 0, batch: 0 };
+    cfg.tiers.forEach(t => {
+      if (t.priceHKD / t.qty < bestHKD.ppu) bestHKD = { ppu: t.priceHKD / t.qty, qty: t.qty, batch: t.priceHKD };
+      if (t.priceUSD / t.qty < bestUSD.ppu) bestUSD = { ppu: t.priceUSD / t.qty, qty: t.qty, batch: t.priceUSD };
+      if (t.priceJPY / t.qty < bestJPY.ppu) bestJPY = { ppu: t.priceJPY / t.qty, qty: t.qty, batch: t.priceJPY };
+    });
+    const fmt = v => v < 1 ? v.toFixed(2) : v < 10 ? v.toFixed(1) : Math.round(v).toString();
+    const uw = sheets.includes(slug) ? { 'zh-hk': '每張', en: 'per sheet', ja: '1枚' }
+      : books.includes(slug) ? { 'zh-hk': '每本', en: 'per book', ja: '1冊' }
+      : { 'zh-hk': '每個', en: 'per pc', ja: '1個' };
+    lines.push(`  '${slug}': {`);
+    lines.push(`    'zh-hk': { priceDisplay: '${fmt(bestHKD.ppu)}', qty: ${bestHKD.qty}, batchPrice: ${bestHKD.batch}, unitLabel: '${uw['zh-hk']}' },`);
+    lines.push(`    en: { priceDisplay: '${fmt(bestUSD.ppu)}', qty: ${bestUSD.qty}, batchPrice: ${bestUSD.batch}, unitLabel: '${uw.en}' },`);
+    lines.push(`    ja: { priceDisplay: '${fmt(bestJPY.ppu)}', qty: ${bestJPY.qty}, batchPrice: ${bestJPY.batch}, unitLabel: '${uw.ja}' },`);
+    lines.push('  },');
+  }
+  return lines.join('\n');
+}
+
 const entries = Object.entries(map).map(([slug, data]) =>
   `  '${slug}': ${ser(data)},`).join('\n');
 
@@ -153,6 +183,11 @@ ${entries}
 export function getPriceTableForSlug(slug: string): PriceTableData | null {
   return PRICE_TABLE_MAP[slug] || null;
 }
+
+/** v18: Pre-computed unit price anchors (lowest per-unit across all configs) */
+export const UNIT_PRICE_ANCHORS: Record<string, Record<string, { priceDisplay: string; qty: number; batchPrice: number; unitLabel: string }>> = {
+${serUnitAnchors(map)}
+};
 
 export function findClosestTierBatch(
   slug: string,

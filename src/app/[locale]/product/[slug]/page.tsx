@@ -44,7 +44,7 @@ import { getSkuSeo } from '@/data/sku-seo-data';
 import { generateFAQSchema } from '@/lib/faq-schema';
 import { coreProductFAQMap } from '@/data/product-faqs';
 import { RegionalContent, RegionalCta, RegionalTrustBadges } from '@/components/seo/RegionalContent';
-import { convertPriceRangeString, convertToFromPrice } from '@/lib/pricing';
+import { convertPriceRangeString, convertToFromPrice, getUnitPriceAnchor } from '@/lib/pricing';
 import { generateWhatsAppLink } from '@/lib/whatsapp';
 import { getPriceTableForSlug, findClosestTierBatch } from '@/lib/price-injector';
 import ReferencePriceBlock from '@/components/pdp/referencepriceblock';

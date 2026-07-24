@@ -14,6 +14,7 @@
 
 import { Locale } from './seo';
 import { getLiveRatesHKDLocal } from './quote-engine/fx';
+import { UNIT_PRICE_ANCHORS } from './price-data.generated';
 
 // 2026-07-13 Step 2: 实时汇率 (with 静态 fallback)
 // pricing.ts 历史用硬编码汇率 (USD 0.128, JPY 19.5, GBP 0.101, AUD 0.195).
@@ -851,6 +852,24 @@ export function calculatePrice(data: QuotationFormData): PriceBreakdown {
 }
 
 // 货币转换（显示用，结算用HKD）
+
+
+/** v18: Unit price anchor from precomputed data */
+export function getUnitPriceAnchor(slug: string, locale: string): { price: number; qty: number; batchPrice: number; symbol: string; display: string; unitLabel: string } | null {
+  var a = UNIT_PRICE_ANCHORS[slug];
+  if (!a) return null;
+  var l = a[locale];
+  if (!l) l = a["zh-hk"];
+  if (!l) return null;
+  return {
+    price: parseFloat(l.priceDisplay),
+    qty: l.qty,
+    batchPrice: l.batchPrice,
+    symbol: locale === "ja" ? "\u00a5" : locale === "en" ? "$" : "HK$",
+    display: (locale === "ja" ? "\u00a5" : locale === "en" ? "$" : "HK$") + l.priceDisplay,
+    unitLabel: l.unitLabel,
+  };
+}
 // 2026-07-13 Step 2: 用 getLiveFxRates() 取代硬编码
 export function convertCurrency(hkdAmount: number, targetCurrency: 'HKD' | 'USD' | 'GBP' | 'AUD' | 'JPY'): number {
   const rates = getLiveFxRates();

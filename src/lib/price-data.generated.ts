@@ -6105,6 +6105,100 @@ export function getPriceTableForSlug(slug: string): PriceTableData | null {
   return PRICE_TABLE_MAP[slug] || null;
 }
 
+/** v18: Pre-computed unit price anchors (lowest per-unit across all configs) */
+export const UNIT_PRICE_ANCHORS: Record<string, Record<string, { priceDisplay: string; qty: number; batchPrice: number; unitLabel: string }>> = {
+  'gang-run-card-boxes': {
+    'zh-hk': { priceDisplay: '0.22', qty: 10000, batchPrice: 2198, unitLabel: '每個' },
+    en: { priceDisplay: '0.03', qty: 10000, batchPrice: 281, unitLabel: 'per pc' },
+    ja: { priceDisplay: '4.4', qty: 10000, batchPrice: 43960, unitLabel: '1個' },
+  },
+  'white-card-boxes': {
+    'zh-hk': { priceDisplay: '0.09', qty: 10000, batchPrice: 884, unitLabel: '每個' },
+    en: { priceDisplay: '0.01', qty: 10000, batchPrice: 113, unitLabel: 'per pc' },
+    ja: { priceDisplay: '1.8', qty: 10000, batchPrice: 17680, unitLabel: '1個' },
+  },
+  'tuck-end-boxes': {
+    'zh-hk': { priceDisplay: '0.70', qty: 10000, batchPrice: 7007, unitLabel: '每個' },
+    en: { priceDisplay: '0.09', qty: 10000, batchPrice: 897, unitLabel: 'per pc' },
+    ja: { priceDisplay: '14', qty: 10000, batchPrice: 140140, unitLabel: '1個' },
+  },
+  'corrugated-boxes': {
+    'zh-hk': { priceDisplay: '0.56', qty: 5000, batchPrice: 2792, unitLabel: '每個' },
+    en: { priceDisplay: '0.07', qty: 5000, batchPrice: 357, unitLabel: 'per pc' },
+    ja: { priceDisplay: '11', qty: 5000, batchPrice: 55840, unitLabel: '1個' },
+  },
+  'white-card-bags': {
+    'zh-hk': { priceDisplay: '1.4', qty: 5000, batchPrice: 7094, unitLabel: '每個' },
+    en: { priceDisplay: '0.18', qty: 5000, batchPrice: 908, unitLabel: 'per pc' },
+    ja: { priceDisplay: '28', qty: 5000, batchPrice: 141880, unitLabel: '1個' },
+  },
+  'waterproof-stickers': {
+    'zh-hk': { priceDisplay: '0.42', qty: 1000, batchPrice: 419, unitLabel: '每個' },
+    en: { priceDisplay: '0.05', qty: 1000, batchPrice: 54, unitLabel: 'per pc' },
+    ja: { priceDisplay: '8.4', qty: 1000, batchPrice: 8380, unitLabel: '1個' },
+  },
+  'digital-stickers': {
+    'zh-hk': { priceDisplay: '0.42', qty: 1000, batchPrice: 419, unitLabel: '每個' },
+    en: { priceDisplay: '0.05', qty: 1000, batchPrice: 54, unitLabel: 'per pc' },
+    ja: { priceDisplay: '8.4', qty: 1000, batchPrice: 8380, unitLabel: '1個' },
+  },
+  'a5-flyers': {
+    'zh-hk': { priceDisplay: '0.14', qty: 5000, batchPrice: 686, unitLabel: '每張' },
+    en: { priceDisplay: '0.02', qty: 5000, batchPrice: 88, unitLabel: 'per sheet' },
+    ja: { priceDisplay: '2.7', qty: 5000, batchPrice: 13720, unitLabel: '1枚' },
+  },
+  'a4-flyers': {
+    'zh-hk': { priceDisplay: '0.31', qty: 5000, batchPrice: 1568, unitLabel: '每張' },
+    en: { priceDisplay: '0.04', qty: 5000, batchPrice: 201, unitLabel: 'per sheet' },
+    ja: { priceDisplay: '6.3', qty: 5000, batchPrice: 31360, unitLabel: '1枚' },
+  },
+  'same-day-flyers': {
+    'zh-hk': { priceDisplay: '1.3', qty: 200, batchPrice: 250, unitLabel: '每張' },
+    en: { priceDisplay: '0.16', qty: 200, batchPrice: 32, unitLabel: 'per sheet' },
+    ja: { priceDisplay: '25', qty: 200, batchPrice: 5000, unitLabel: '1枚' },
+  },
+  'eco-flyers': {
+    'zh-hk': { priceDisplay: '0.72', qty: 1000, batchPrice: 720, unitLabel: '每張' },
+    en: { priceDisplay: '0.09', qty: 1000, batchPrice: 92, unitLabel: 'per sheet' },
+    ja: { priceDisplay: '14', qty: 1000, batchPrice: 14400, unitLabel: '1枚' },
+  },
+  'saddle-stitch-booklets': {
+    'zh-hk': { priceDisplay: '1.2', qty: 5000, batchPrice: 5777, unitLabel: '每本' },
+    en: { priceDisplay: '0.15', qty: 5000, batchPrice: 740, unitLabel: 'per book' },
+    ja: { priceDisplay: '23', qty: 5000, batchPrice: 115540, unitLabel: '1冊' },
+  },
+  'perfect-bound-books': {
+    'zh-hk': { priceDisplay: '0.87', qty: 10000, batchPrice: 8697, unitLabel: '每本' },
+    en: { priceDisplay: '0.11', qty: 10000, batchPrice: 1114, unitLabel: 'per book' },
+    ja: { priceDisplay: '17', qty: 10000, batchPrice: 173940, unitLabel: '1冊' },
+  },
+  'exercise-books': {
+    'zh-hk': { priceDisplay: '0.90', qty: 5000, batchPrice: 4508, unitLabel: '每本' },
+    en: { priceDisplay: '0.12', qty: 5000, batchPrice: 577, unitLabel: 'per book' },
+    ja: { priceDisplay: '18', qty: 5000, batchPrice: 90160, unitLabel: '1冊' },
+  },
+  'folded-leaflets': {
+    'zh-hk': { priceDisplay: '0.38', qty: 10000, batchPrice: 3833, unitLabel: '每張' },
+    en: { priceDisplay: '0.05', qty: 10000, batchPrice: 491, unitLabel: 'per sheet' },
+    ja: { priceDisplay: '7.7', qty: 10000, batchPrice: 76660, unitLabel: '1枚' },
+  },
+  'special-fold-leaflets': {
+    'zh-hk': { priceDisplay: '0.38', qty: 10000, batchPrice: 3833, unitLabel: '每個' },
+    en: { priceDisplay: '0.05', qty: 10000, batchPrice: 491, unitLabel: 'per pc' },
+    ja: { priceDisplay: '7.7', qty: 10000, batchPrice: 76660, unitLabel: '1個' },
+  },
+  'custom-flyers': {
+    'zh-hk': { priceDisplay: '0.08', qty: 10000, batchPrice: 795, unitLabel: '每個' },
+    en: { priceDisplay: '0.01', qty: 10000, batchPrice: 102, unitLabel: 'per pc' },
+    ja: { priceDisplay: '1.6', qty: 10000, batchPrice: 15900, unitLabel: '1個' },
+  },
+  'a2-posters': {
+    'zh-hk': { priceDisplay: '0.49', qty: 5000, batchPrice: 2442, unitLabel: '每張' },
+    en: { priceDisplay: '0.06', qty: 5000, batchPrice: 313, unitLabel: 'per sheet' },
+    ja: { priceDisplay: '9.8', qty: 5000, batchPrice: 48840, unitLabel: '1枚' },
+  },
+};
+
 export function findClosestTierBatch(
   slug: string,
   qty: number,

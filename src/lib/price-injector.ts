@@ -6,7 +6,7 @@
  * 零 fs 依赖，Next.js RSC 和 edge 均可安全 import
  */
 
-export { getPriceTableForSlug, findClosestTierBatch } from './price-data.generated';
+export { getPriceTableForSlug, findClosestTierBatch, UNIT_PRICE_ANCHORS } from './price-data.generated';
 export type { PriceTableData, PriceConfig, PriceTier } from './price-injector-types';
 
 /**
