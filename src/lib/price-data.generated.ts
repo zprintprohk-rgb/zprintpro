@@ -234,30 +234,30 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       "tiers": [
         {
           "qty": 500,
-          "priceHKD": 153,
-          "priceUSD": 20,
-          "priceJPY": 3060,
+          "priceHKD": 204,
+          "priceUSD": 26,
+          "priceJPY": 4080,
           "weightKg": 4
         },
         {
           "qty": 1000,
-          "priceHKD": 197,
-          "priceUSD": 25,
-          "priceJPY": 3940,
+          "priceHKD": 263,
+          "priceUSD": 34,
+          "priceJPY": 5260,
           "weightKg": 7.99
         },
         {
           "qty": 2000,
-          "priceHKD": 283,
-          "priceUSD": 36,
-          "priceJPY": 5660,
+          "priceHKD": 377,
+          "priceUSD": 48,
+          "priceJPY": 7540,
           "weightKg": 15.99
         },
         {
           "qty": 5000,
-          "priceHKD": 546,
-          "priceUSD": 70,
-          "priceJPY": 10920,
+          "priceHKD": 728,
+          "priceUSD": 93,
+          "priceJPY": 14560,
           "weightKg": 39.97
         }
       ]
@@ -271,30 +271,30 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       "tiers": [
         {
           "qty": 500,
-          "priceHKD": 158,
-          "priceUSD": 20,
-          "priceJPY": 3160,
+          "priceHKD": 231,
+          "priceUSD": 30,
+          "priceJPY": 4620,
           "weightKg": 4
         },
         {
           "qty": 1000,
-          "priceHKD": 205,
-          "priceUSD": 26,
-          "priceJPY": 4100,
+          "priceHKD": 301,
+          "priceUSD": 39,
+          "priceJPY": 6020,
           "weightKg": 7.99
         },
         {
           "qty": 2000,
-          "priceHKD": 297,
-          "priceUSD": 38,
-          "priceJPY": 5940,
+          "priceHKD": 436,
+          "priceUSD": 56,
+          "priceJPY": 8720,
           "weightKg": 15.99
         },
         {
           "qty": 5000,
-          "priceHKD": 581,
-          "priceUSD": 74,
-          "priceJPY": 11620,
+          "priceHKD": 852,
+          "priceUSD": 109,
+          "priceJPY": 17040,
           "weightKg": 39.97
         }
       ]
@@ -308,30 +308,30 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       "tiers": [
         {
           "qty": 500,
-          "priceHKD": 842,
-          "priceUSD": 108,
-          "priceJPY": 16840,
+          "priceHKD": 1235,
+          "priceUSD": 158,
+          "priceJPY": 24700,
           "weightKg": 15.34
         },
         {
           "qty": 1000,
-          "priceHKD": 996,
-          "priceUSD": 128,
-          "priceJPY": 19920,
+          "priceHKD": 1461,
+          "priceUSD": 187,
+          "priceJPY": 29220,
           "weightKg": 30.67
         },
         {
           "qty": 2000,
-          "priceHKD": 1404,
-          "priceUSD": 180,
-          "priceJPY": 28080,
+          "priceHKD": 2059,
+          "priceUSD": 264,
+          "priceJPY": 41180,
           "weightKg": 61.35
         },
         {
           "qty": 2000,
-          "priceHKD": 1404,
-          "priceUSD": 180,
-          "priceJPY": 28080,
+          "priceHKD": 2059,
+          "priceUSD": 264,
+          "priceJPY": 41180,
           "weightKg": 61.35
         }
       ]
@@ -486,30 +486,30 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       "tiers": [
         {
           "qty": 500,
-          "priceHKD": 1682,
-          "priceUSD": 215,
-          "priceJPY": 33640,
+          "priceHKD": 2242,
+          "priceUSD": 287,
+          "priceJPY": 44840,
           "weightKg": 28.66
         },
         {
           "qty": 1000,
-          "priceHKD": 1975,
-          "priceUSD": 253,
-          "priceJPY": 39500,
+          "priceHKD": 2633,
+          "priceUSD": 337,
+          "priceJPY": 52660,
           "weightKg": 57.32
         },
         {
           "qty": 2000,
-          "priceHKD": 2829,
-          "priceUSD": 362,
-          "priceJPY": 56580,
+          "priceHKD": 3772,
+          "priceUSD": 483,
+          "priceJPY": 75440,
           "weightKg": 114.64
         },
         {
           "qty": 5000,
-          "priceHKD": 5950,
-          "priceUSD": 762,
-          "priceJPY": 119000,
+          "priceHKD": 7933,
+          "priceUSD": 1016,
+          "priceJPY": 158660,
           "weightKg": 286.61
         }
       ]
@@ -523,30 +523,30 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       "tiers": [
         {
           "qty": 500,
-          "priceHKD": 2893,
-          "priceUSD": 370,
-          "priceJPY": 57860,
+          "priceHKD": 4244,
+          "priceUSD": 543,
+          "priceJPY": 84880,
           "weightKg": 53.85
         },
         {
           "qty": 1000,
-          "priceHKD": 3526,
-          "priceUSD": 451,
-          "priceJPY": 70520,
+          "priceHKD": 5171,
+          "priceUSD": 662,
+          "priceJPY": 103420,
           "weightKg": 107.7
         },
         {
           "qty": 2000,
-          "priceHKD": 5499,
-          "priceUSD": 704,
-          "priceJPY": 109980,
+          "priceHKD": 8066,
+          "priceUSD": 1033,
+          "priceJPY": 161320,
           "weightKg": 215.4
         },
         {
           "qty": 5000,
-          "priceHKD": 11737,
-          "priceUSD": 1503,
-          "priceJPY": 234740,
+          "priceHKD": 17214,
+          "priceUSD": 2204,
+          "priceJPY": 344280,
           "weightKg": 616.56
         }
       ]
@@ -634,30 +634,30 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       "tiers": [
         {
           "qty": 500,
-          "priceHKD": 2525,
-          "priceUSD": 323,
-          "priceJPY": 50500,
+          "priceHKD": 3367,
+          "priceUSD": 431,
+          "priceJPY": 67340,
           "weightKg": 53.85
         },
         {
           "qty": 1000,
-          "priceHKD": 3073,
-          "priceUSD": 393,
-          "priceJPY": 61460,
+          "priceHKD": 4097,
+          "priceUSD": 525,
+          "priceJPY": 81940,
           "weightKg": 107.7
         },
         {
           "qty": 2000,
-          "priceHKD": 4603,
-          "priceUSD": 589,
-          "priceJPY": 92060,
+          "priceHKD": 6138,
+          "priceUSD": 786,
+          "priceJPY": 122760,
           "weightKg": 215.4
         },
         {
           "qty": 5000,
-          "priceHKD": 9481,
-          "priceUSD": 1214,
-          "priceJPY": 189620,
+          "priceHKD": 12641,
+          "priceUSD": 1619,
+          "priceJPY": 252820,
           "weightKg": 616.56
         }
       ]
@@ -745,60 +745,23 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       "tiers": [
         {
           "qty": 500,
-          "priceHKD": 357,
-          "priceUSD": 46,
-          "priceJPY": 7140,
+          "priceHKD": 476,
+          "priceUSD": 61,
+          "priceJPY": 9520,
           "weightKg": 9.37
         },
         {
           "qty": 1000,
-          "priceHKD": 442,
-          "priceUSD": 57,
-          "priceJPY": 8840,
+          "priceHKD": 590,
+          "priceUSD": 76,
+          "priceJPY": 11800,
           "weightKg": 18.74
         },
         {
           "qty": 2000,
-          "priceHKD": 659,
-          "priceUSD": 84,
-          "priceJPY": 13180,
-          "weightKg": 37.47
-        },
-        {
-          "qty": 5000,
-          "priceHKD": 1369,
-          "priceUSD": 175,
-          "priceJPY": 27380,
-          "weightKg": 93.69
-        }
-      ]
-    },
-    {
-      "label": {
-        "zh-hk": "拼版卡盒-镭射银卡（375g）[375克]-普通扣底盒-80X60X35-单面-[印白墨][逆向UV]-模切[异形],粘吊口,粘盒",
-        "en": "拼版卡盒-镭射银卡（375g）[375克]-普通扣底盒-80X60X35-单面-[印白墨][逆向UV]-模切[异形],粘吊口,粘盒",
-        "ja": "拼版卡盒-镭射银卡（375g）[375克]-普通扣底盒-80X60X35-单面-[印白墨][逆向UV]-模切[异形],粘吊口,粘盒"
-      },
-      "tiers": [
-        {
-          "qty": 500,
-          "priceHKD": 689,
-          "priceUSD": 88,
-          "priceJPY": 13780,
-          "weightKg": 9.37
-        },
-        {
-          "qty": 1000,
-          "priceHKD": 783,
-          "priceUSD": 100,
-          "priceJPY": 15660,
-          "weightKg": 18.74
-        },
-        {
-          "qty": 2000,
-          "priceHKD": 1033,
-          "priceUSD": 132,
-          "priceJPY": 20660,
+          "priceHKD": 878,
+          "priceUSD": 112,
+          "priceJPY": 17560,
           "weightKg": 37.47
         },
         {
@@ -812,6 +775,43 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
     },
     {
       "label": {
+        "zh-hk": "拼版卡盒-镭射银卡（375g）[375克]-普通扣底盒-80X60X35-单面-[印白墨][逆向UV]-模切[异形],粘吊口,粘盒",
+        "en": "拼版卡盒-镭射银卡（375g）[375克]-普通扣底盒-80X60X35-单面-[印白墨][逆向UV]-模切[异形],粘吊口,粘盒",
+        "ja": "拼版卡盒-镭射银卡（375g）[375克]-普通扣底盒-80X60X35-单面-[印白墨][逆向UV]-模切[异形],粘吊口,粘盒"
+      },
+      "tiers": [
+        {
+          "qty": 500,
+          "priceHKD": 1011,
+          "priceUSD": 129,
+          "priceJPY": 20220,
+          "weightKg": 9.37
+        },
+        {
+          "qty": 1000,
+          "priceHKD": 1149,
+          "priceUSD": 147,
+          "priceJPY": 22980,
+          "weightKg": 18.74
+        },
+        {
+          "qty": 2000,
+          "priceHKD": 1514,
+          "priceUSD": 194,
+          "priceJPY": 30280,
+          "weightKg": 37.47
+        },
+        {
+          "qty": 5000,
+          "priceHKD": 2678,
+          "priceUSD": 343,
+          "priceJPY": 53560,
+          "weightKg": 93.69
+        }
+      ]
+    },
+    {
+      "label": {
         "zh-hk": "拼版卡盒-镭射银卡（375g）[375克]-普通扣底盒-100X70X35-单面-[印白墨][逆向UV]-模切[异形],粘吊口,粘盒",
         "en": "拼版卡盒-镭射银卡（375g）[375克]-普通扣底盒-100X70X35-单面-[印白墨][逆向UV]-模切[异形],粘吊口,粘盒",
         "ja": "拼版卡盒-镭射银卡（375g）[375克]-普通扣底盒-100X70X35-单面-[印白墨][逆向UV]-模切[异形],粘吊口,粘盒"
@@ -819,30 +819,30 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       "tiers": [
         {
           "qty": 500,
-          "priceHKD": 854,
-          "priceUSD": 109,
-          "priceJPY": 17080,
+          "priceHKD": 1253,
+          "priceUSD": 160,
+          "priceJPY": 25060,
           "weightKg": 12.25
         },
         {
           "qty": 1000,
-          "priceHKD": 984,
-          "priceUSD": 126,
-          "priceJPY": 19680,
+          "priceHKD": 1443,
+          "priceUSD": 185,
+          "priceJPY": 28860,
           "weightKg": 24.5
         },
         {
           "qty": 2000,
-          "priceHKD": 1337,
-          "priceUSD": 171,
-          "priceJPY": 26740,
+          "priceHKD": 1961,
+          "priceUSD": 251,
+          "priceJPY": 39220,
           "weightKg": 49.01
         },
         {
           "qty": 5000,
-          "priceHKD": 2502,
-          "priceUSD": 320,
-          "priceJPY": 50040,
+          "priceHKD": 3669,
+          "priceUSD": 470,
+          "priceJPY": 73380,
           "weightKg": 122.51
         }
       ]
@@ -856,30 +856,30 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       "tiers": [
         {
           "qty": 500,
-          "priceHKD": 512,
-          "priceUSD": 66,
-          "priceJPY": 10240,
+          "priceHKD": 683,
+          "priceUSD": 87,
+          "priceJPY": 13660,
           "weightKg": 12.25
         },
         {
           "qty": 1000,
-          "priceHKD": 630,
-          "priceUSD": 81,
-          "priceJPY": 12600,
+          "priceHKD": 841,
+          "priceUSD": 108,
+          "priceJPY": 16820,
           "weightKg": 24.5
         },
         {
           "qty": 2000,
-          "priceHKD": 939,
-          "priceUSD": 120,
-          "priceJPY": 18780,
+          "priceHKD": 1253,
+          "priceUSD": 160,
+          "priceJPY": 25060,
           "weightKg": 49.01
         },
         {
           "qty": 5000,
-          "priceHKD": 1988,
-          "priceUSD": 255,
-          "priceJPY": 39760,
+          "priceHKD": 2650,
+          "priceUSD": 339,
+          "priceJPY": 53000,
           "weightKg": 122.51
         }
       ]
@@ -1041,30 +1041,30 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       "tiers": [
         {
           "qty": 500,
-          "priceHKD": 565,
-          "priceUSD": 72,
-          "priceJPY": 11300,
+          "priceHKD": 754,
+          "priceUSD": 97,
+          "priceJPY": 15080,
           "weightKg": 17.05
         },
         {
           "qty": 1000,
-          "priceHKD": 724,
-          "priceUSD": 93,
-          "priceJPY": 14480,
+          "priceHKD": 965,
+          "priceUSD": 124,
+          "priceJPY": 19300,
           "weightKg": 34.1
         },
         {
           "qty": 2000,
-          "priceHKD": 1114,
-          "priceUSD": 143,
-          "priceJPY": 22280,
+          "priceHKD": 1485,
+          "priceUSD": 190,
+          "priceJPY": 29700,
           "weightKg": 68.2
         },
         {
           "qty": 5000,
-          "priceHKD": 2467,
-          "priceUSD": 316,
-          "priceJPY": 49340,
+          "priceHKD": 3289,
+          "priceUSD": 421,
+          "priceJPY": 65780,
           "weightKg": 170.5
         }
       ]
@@ -1078,30 +1078,30 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       "tiers": [
         {
           "qty": 500,
-          "priceHKD": 920,
-          "priceUSD": 118,
-          "priceJPY": 18400,
+          "priceHKD": 1350,
+          "priceUSD": 173,
+          "priceJPY": 27000,
           "weightKg": 17.05
         },
         {
           "qty": 1000,
-          "priceHKD": 1094,
-          "priceUSD": 140,
-          "priceJPY": 21880,
+          "priceHKD": 1605,
+          "priceUSD": 206,
+          "priceJPY": 32100,
           "weightKg": 34.1
         },
         {
           "qty": 2000,
-          "priceHKD": 1545,
-          "priceUSD": 198,
-          "priceJPY": 30900,
+          "priceHKD": 2266,
+          "priceUSD": 290,
+          "priceJPY": 45320,
           "weightKg": 68.2
         },
         {
           "qty": 5000,
-          "priceHKD": 3108,
-          "priceUSD": 398,
-          "priceJPY": 62160,
+          "priceHKD": 4559,
+          "priceUSD": 584,
+          "priceJPY": 91180,
           "weightKg": 170.5
         }
       ]
@@ -1207,30 +1207,30 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       "tiers": [
         {
           "qty": 500,
-          "priceHKD": 153,
-          "priceUSD": 20,
-          "priceJPY": 3060,
+          "priceHKD": 204,
+          "priceUSD": 26,
+          "priceJPY": 4080,
           "weightKg": 4
         },
         {
           "qty": 1000,
-          "priceHKD": 197,
-          "priceUSD": 25,
-          "priceJPY": 3940,
+          "priceHKD": 263,
+          "priceUSD": 34,
+          "priceJPY": 5260,
           "weightKg": 7.99
         },
         {
           "qty": 2000,
-          "priceHKD": 283,
-          "priceUSD": 36,
-          "priceJPY": 5660,
+          "priceHKD": 377,
+          "priceUSD": 48,
+          "priceJPY": 7540,
           "weightKg": 15.99
         },
         {
           "qty": 5000,
-          "priceHKD": 546,
-          "priceUSD": 70,
-          "priceJPY": 10920,
+          "priceHKD": 728,
+          "priceUSD": 93,
+          "priceJPY": 14560,
           "weightKg": 39.97
         }
       ]
@@ -1244,30 +1244,30 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       "tiers": [
         {
           "qty": 500,
-          "priceHKD": 158,
-          "priceUSD": 20,
-          "priceJPY": 3160,
+          "priceHKD": 231,
+          "priceUSD": 30,
+          "priceJPY": 4620,
           "weightKg": 4
         },
         {
           "qty": 1000,
-          "priceHKD": 205,
-          "priceUSD": 26,
-          "priceJPY": 4100,
+          "priceHKD": 301,
+          "priceUSD": 39,
+          "priceJPY": 6020,
           "weightKg": 7.99
         },
         {
           "qty": 2000,
-          "priceHKD": 297,
-          "priceUSD": 38,
-          "priceJPY": 5940,
+          "priceHKD": 436,
+          "priceUSD": 56,
+          "priceJPY": 8720,
           "weightKg": 15.99
         },
         {
           "qty": 5000,
-          "priceHKD": 581,
-          "priceUSD": 74,
-          "priceJPY": 11620,
+          "priceHKD": 852,
+          "priceUSD": 109,
+          "priceJPY": 17040,
           "weightKg": 39.97
         }
       ]
@@ -1281,30 +1281,30 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       "tiers": [
         {
           "qty": 500,
-          "priceHKD": 842,
-          "priceUSD": 108,
-          "priceJPY": 16840,
+          "priceHKD": 1235,
+          "priceUSD": 158,
+          "priceJPY": 24700,
           "weightKg": 15.34
         },
         {
           "qty": 1000,
-          "priceHKD": 996,
-          "priceUSD": 128,
-          "priceJPY": 19920,
+          "priceHKD": 1461,
+          "priceUSD": 187,
+          "priceJPY": 29220,
           "weightKg": 30.67
         },
         {
           "qty": 2000,
-          "priceHKD": 1404,
-          "priceUSD": 180,
-          "priceJPY": 28080,
+          "priceHKD": 2059,
+          "priceUSD": 264,
+          "priceJPY": 41180,
           "weightKg": 61.35
         },
         {
           "qty": 2000,
-          "priceHKD": 1404,
-          "priceUSD": 180,
-          "priceJPY": 28080,
+          "priceHKD": 2059,
+          "priceUSD": 264,
+          "priceJPY": 41180,
           "weightKg": 61.35
         }
       ]
@@ -1459,30 +1459,30 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       "tiers": [
         {
           "qty": 500,
-          "priceHKD": 1682,
-          "priceUSD": 215,
-          "priceJPY": 33640,
+          "priceHKD": 2242,
+          "priceUSD": 287,
+          "priceJPY": 44840,
           "weightKg": 28.66
         },
         {
           "qty": 1000,
-          "priceHKD": 1975,
-          "priceUSD": 253,
-          "priceJPY": 39500,
+          "priceHKD": 2633,
+          "priceUSD": 337,
+          "priceJPY": 52660,
           "weightKg": 57.32
         },
         {
           "qty": 2000,
-          "priceHKD": 2829,
-          "priceUSD": 362,
-          "priceJPY": 56580,
+          "priceHKD": 3772,
+          "priceUSD": 483,
+          "priceJPY": 75440,
           "weightKg": 114.64
         },
         {
           "qty": 5000,
-          "priceHKD": 5950,
-          "priceUSD": 762,
-          "priceJPY": 119000,
+          "priceHKD": 7933,
+          "priceUSD": 1016,
+          "priceJPY": 158660,
           "weightKg": 286.61
         }
       ]
@@ -1496,30 +1496,30 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       "tiers": [
         {
           "qty": 500,
-          "priceHKD": 2893,
-          "priceUSD": 370,
-          "priceJPY": 57860,
+          "priceHKD": 4244,
+          "priceUSD": 543,
+          "priceJPY": 84880,
           "weightKg": 53.85
         },
         {
           "qty": 1000,
-          "priceHKD": 3526,
-          "priceUSD": 451,
-          "priceJPY": 70520,
+          "priceHKD": 5171,
+          "priceUSD": 662,
+          "priceJPY": 103420,
           "weightKg": 107.7
         },
         {
           "qty": 2000,
-          "priceHKD": 5499,
-          "priceUSD": 704,
-          "priceJPY": 109980,
+          "priceHKD": 8066,
+          "priceUSD": 1033,
+          "priceJPY": 161320,
           "weightKg": 215.4
         },
         {
           "qty": 5000,
-          "priceHKD": 11737,
-          "priceUSD": 1503,
-          "priceJPY": 234740,
+          "priceHKD": 17214,
+          "priceUSD": 2204,
+          "priceJPY": 344280,
           "weightKg": 616.56
         }
       ]
@@ -1607,30 +1607,30 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       "tiers": [
         {
           "qty": 500,
-          "priceHKD": 2525,
-          "priceUSD": 323,
-          "priceJPY": 50500,
+          "priceHKD": 3367,
+          "priceUSD": 431,
+          "priceJPY": 67340,
           "weightKg": 53.85
         },
         {
           "qty": 1000,
-          "priceHKD": 3073,
-          "priceUSD": 393,
-          "priceJPY": 61460,
+          "priceHKD": 4097,
+          "priceUSD": 525,
+          "priceJPY": 81940,
           "weightKg": 107.7
         },
         {
           "qty": 2000,
-          "priceHKD": 4603,
-          "priceUSD": 589,
-          "priceJPY": 92060,
+          "priceHKD": 6138,
+          "priceUSD": 786,
+          "priceJPY": 122760,
           "weightKg": 215.4
         },
         {
           "qty": 5000,
-          "priceHKD": 9481,
-          "priceUSD": 1214,
-          "priceJPY": 189620,
+          "priceHKD": 12641,
+          "priceUSD": 1619,
+          "priceJPY": 252820,
           "weightKg": 616.56
         }
       ]
@@ -2341,37 +2341,37 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       "tiers": [
         {
           "qty": 50,
-          "priceHKD": 68,
+          "priceHKD": 73,
           "priceUSD": 9,
-          "priceJPY": 1360,
+          "priceJPY": 1460,
           "weightKg": 0.46
         },
         {
           "qty": 100,
-          "priceHKD": 67,
+          "priceHKD": 71,
           "priceUSD": 9,
-          "priceJPY": 1340,
+          "priceJPY": 1420,
           "weightKg": 0.61
         },
         {
           "qty": 200,
-          "priceHKD": 102,
-          "priceUSD": 13,
-          "priceJPY": 2040,
+          "priceHKD": 108,
+          "priceUSD": 14,
+          "priceJPY": 2160,
           "weightKg": 0.91
         },
         {
           "qty": 500,
-          "priceHKD": 212,
-          "priceUSD": 27,
-          "priceJPY": 4240,
+          "priceHKD": 226,
+          "priceUSD": 29,
+          "priceJPY": 4520,
           "weightKg": 1.87
         },
         {
           "qty": 1000,
-          "priceHKD": 393,
-          "priceUSD": 50,
-          "priceJPY": 7860,
+          "priceHKD": 419,
+          "priceUSD": 54,
+          "priceJPY": 8380,
           "weightKg": 3.42
         }
       ]
@@ -2385,37 +2385,37 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       "tiers": [
         {
           "qty": 50,
-          "priceHKD": 135,
-          "priceUSD": 17,
-          "priceJPY": 2700,
+          "priceHKD": 144,
+          "priceUSD": 18,
+          "priceJPY": 2880,
           "weightKg": 0.46
         },
         {
           "qty": 100,
-          "priceHKD": 144,
-          "priceUSD": 18,
-          "priceJPY": 2880,
+          "priceHKD": 154,
+          "priceUSD": 20,
+          "priceJPY": 3080,
           "weightKg": 0.62
         },
         {
           "qty": 200,
-          "priceHKD": 163,
-          "priceUSD": 21,
-          "priceJPY": 3260,
+          "priceHKD": 174,
+          "priceUSD": 22,
+          "priceJPY": 3480,
           "weightKg": 0.96
         },
         {
           "qty": 500,
-          "priceHKD": 206,
-          "priceUSD": 26,
-          "priceJPY": 4120,
+          "priceHKD": 219,
+          "priceUSD": 28,
+          "priceJPY": 4380,
           "weightKg": 1.86
         },
         {
           "qty": 1000,
-          "priceHKD": 373,
-          "priceUSD": 48,
-          "priceJPY": 7460,
+          "priceHKD": 398,
+          "priceUSD": 51,
+          "priceJPY": 7960,
           "weightKg": 3.42
         }
       ]
@@ -2429,37 +2429,37 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       "tiers": [
         {
           "qty": 50,
-          "priceHKD": 145,
-          "priceUSD": 19,
-          "priceJPY": 2900,
+          "priceHKD": 155,
+          "priceUSD": 20,
+          "priceJPY": 3100,
           "weightKg": 0.6
         },
         {
           "qty": 100,
-          "priceHKD": 163,
-          "priceUSD": 21,
-          "priceJPY": 3260,
+          "priceHKD": 173,
+          "priceUSD": 22,
+          "priceJPY": 3460,
           "weightKg": 0.89
         },
         {
           "qty": 100,
-          "priceHKD": 163,
-          "priceUSD": 21,
-          "priceJPY": 3260,
+          "priceHKD": 173,
+          "priceUSD": 22,
+          "priceJPY": 3460,
           "weightKg": 0.89
         },
         {
           "qty": 100,
-          "priceHKD": 163,
-          "priceUSD": 21,
-          "priceJPY": 3260,
+          "priceHKD": 173,
+          "priceUSD": 22,
+          "priceJPY": 3460,
           "weightKg": 0.89
         },
         {
           "qty": 100,
-          "priceHKD": 163,
-          "priceUSD": 21,
-          "priceJPY": 3260,
+          "priceHKD": 173,
+          "priceUSD": 22,
+          "priceJPY": 3460,
           "weightKg": 0.89
         }
       ]
@@ -2473,37 +2473,37 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       "tiers": [
         {
           "qty": 50,
-          "priceHKD": 163,
-          "priceUSD": 21,
-          "priceJPY": 3260,
+          "priceHKD": 173,
+          "priceUSD": 22,
+          "priceJPY": 3460,
           "weightKg": 0.89
         },
         {
           "qty": 100,
-          "priceHKD": 198,
-          "priceUSD": 25,
-          "priceJPY": 3960,
+          "priceHKD": 211,
+          "priceUSD": 27,
+          "priceJPY": 4220,
           "weightKg": 1.48
         },
         {
           "qty": 200,
-          "priceHKD": 326,
-          "priceUSD": 42,
-          "priceJPY": 6520,
+          "priceHKD": 347,
+          "priceUSD": 44,
+          "priceJPY": 6940,
           "weightKg": 2.71
         },
         {
           "qty": 500,
-          "priceHKD": 761,
-          "priceUSD": 97,
-          "priceJPY": 15220,
+          "priceHKD": 812,
+          "priceUSD": 104,
+          "priceJPY": 16240,
           "weightKg": 6.44
         },
         {
           "qty": 1000,
-          "priceHKD": 1459,
-          "priceUSD": 187,
-          "priceJPY": 29180,
+          "priceHKD": 1556,
+          "priceUSD": 199,
+          "priceJPY": 31120,
           "weightKg": 12.67
         }
       ]
@@ -2517,9 +2517,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       "tiers": [
         {
           "qty": 3000,
-          "priceHKD": 572,
-          "priceUSD": 73,
-          "priceJPY": 11440,
+          "priceHKD": 610,
+          "priceUSD": 78,
+          "priceJPY": 12200,
           "weightKg": 9.75
         }
       ]
@@ -2544,37 +2544,37 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       "tiers": [
         {
           "qty": 50,
-          "priceHKD": 68,
+          "priceHKD": 73,
           "priceUSD": 9,
-          "priceJPY": 1360,
+          "priceJPY": 1460,
           "weightKg": 0.46
         },
         {
           "qty": 100,
-          "priceHKD": 67,
+          "priceHKD": 71,
           "priceUSD": 9,
-          "priceJPY": 1340,
+          "priceJPY": 1420,
           "weightKg": 0.61
         },
         {
           "qty": 200,
-          "priceHKD": 102,
-          "priceUSD": 13,
-          "priceJPY": 2040,
+          "priceHKD": 108,
+          "priceUSD": 14,
+          "priceJPY": 2160,
           "weightKg": 0.91
         },
         {
           "qty": 500,
-          "priceHKD": 212,
-          "priceUSD": 27,
-          "priceJPY": 4240,
+          "priceHKD": 226,
+          "priceUSD": 29,
+          "priceJPY": 4520,
           "weightKg": 1.87
         },
         {
           "qty": 1000,
-          "priceHKD": 393,
-          "priceUSD": 50,
-          "priceJPY": 7860,
+          "priceHKD": 419,
+          "priceUSD": 54,
+          "priceJPY": 8380,
           "weightKg": 3.42
         }
       ]
@@ -2588,37 +2588,37 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       "tiers": [
         {
           "qty": 50,
-          "priceHKD": 135,
-          "priceUSD": 17,
-          "priceJPY": 2700,
+          "priceHKD": 144,
+          "priceUSD": 18,
+          "priceJPY": 2880,
           "weightKg": 0.46
         },
         {
           "qty": 100,
-          "priceHKD": 144,
-          "priceUSD": 18,
-          "priceJPY": 2880,
+          "priceHKD": 154,
+          "priceUSD": 20,
+          "priceJPY": 3080,
           "weightKg": 0.62
         },
         {
           "qty": 200,
-          "priceHKD": 163,
-          "priceUSD": 21,
-          "priceJPY": 3260,
+          "priceHKD": 174,
+          "priceUSD": 22,
+          "priceJPY": 3480,
           "weightKg": 0.96
         },
         {
           "qty": 500,
-          "priceHKD": 206,
-          "priceUSD": 26,
-          "priceJPY": 4120,
+          "priceHKD": 219,
+          "priceUSD": 28,
+          "priceJPY": 4380,
           "weightKg": 1.86
         },
         {
           "qty": 1000,
-          "priceHKD": 373,
-          "priceUSD": 48,
-          "priceJPY": 7460,
+          "priceHKD": 398,
+          "priceUSD": 51,
+          "priceJPY": 7960,
           "weightKg": 3.42
         }
       ]
@@ -2632,37 +2632,37 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       "tiers": [
         {
           "qty": 50,
-          "priceHKD": 145,
-          "priceUSD": 19,
-          "priceJPY": 2900,
+          "priceHKD": 155,
+          "priceUSD": 20,
+          "priceJPY": 3100,
           "weightKg": 0.6
         },
         {
           "qty": 100,
-          "priceHKD": 163,
-          "priceUSD": 21,
-          "priceJPY": 3260,
+          "priceHKD": 173,
+          "priceUSD": 22,
+          "priceJPY": 3460,
           "weightKg": 0.89
         },
         {
           "qty": 100,
-          "priceHKD": 163,
-          "priceUSD": 21,
-          "priceJPY": 3260,
+          "priceHKD": 173,
+          "priceUSD": 22,
+          "priceJPY": 3460,
           "weightKg": 0.89
         },
         {
           "qty": 100,
-          "priceHKD": 163,
-          "priceUSD": 21,
-          "priceJPY": 3260,
+          "priceHKD": 173,
+          "priceUSD": 22,
+          "priceJPY": 3460,
           "weightKg": 0.89
         },
         {
           "qty": 100,
-          "priceHKD": 163,
-          "priceUSD": 21,
-          "priceJPY": 3260,
+          "priceHKD": 173,
+          "priceUSD": 22,
+          "priceJPY": 3460,
           "weightKg": 0.89
         }
       ]
@@ -2676,37 +2676,37 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       "tiers": [
         {
           "qty": 50,
-          "priceHKD": 163,
-          "priceUSD": 21,
-          "priceJPY": 3260,
+          "priceHKD": 173,
+          "priceUSD": 22,
+          "priceJPY": 3460,
           "weightKg": 0.89
         },
         {
           "qty": 100,
-          "priceHKD": 198,
-          "priceUSD": 25,
-          "priceJPY": 3960,
+          "priceHKD": 211,
+          "priceUSD": 27,
+          "priceJPY": 4220,
           "weightKg": 1.48
         },
         {
           "qty": 200,
-          "priceHKD": 326,
-          "priceUSD": 42,
-          "priceJPY": 6520,
+          "priceHKD": 347,
+          "priceUSD": 44,
+          "priceJPY": 6940,
           "weightKg": 2.71
         },
         {
           "qty": 500,
-          "priceHKD": 761,
-          "priceUSD": 97,
-          "priceJPY": 15220,
+          "priceHKD": 812,
+          "priceUSD": 104,
+          "priceJPY": 16240,
           "weightKg": 6.44
         },
         {
           "qty": 1000,
-          "priceHKD": 1459,
-          "priceUSD": 187,
-          "priceJPY": 29180,
+          "priceHKD": 1556,
+          "priceUSD": 199,
+          "priceJPY": 31120,
           "weightKg": 12.67
         }
       ]
@@ -2720,9 +2720,9 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       "tiers": [
         {
           "qty": 3000,
-          "priceHKD": 572,
-          "priceUSD": 73,
-          "priceJPY": 11440,
+          "priceHKD": 610,
+          "priceUSD": 78,
+          "priceJPY": 12200,
           "weightKg": 9.75
         }
       ]
@@ -5007,30 +5007,58 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         },
         {
           "qty": 100,
-          "priceHKD": 625,
-          "priceUSD": 80,
-          "priceJPY": 12500,
+          "priceHKD": 561,
+          "priceUSD": 72,
+          "priceJPY": 11220,
           "weightKg": null
         },
         {
           "qty": 200,
-          "priceHKD": 1200,
-          "priceUSD": 154,
-          "priceJPY": 24000,
+          "priceHKD": 608,
+          "priceUSD": 78,
+          "priceJPY": 12160,
           "weightKg": null
         },
         {
           "qty": 300,
-          "priceHKD": 1562,
-          "priceUSD": 200,
-          "priceJPY": 31240,
+          "priceHKD": 656,
+          "priceUSD": 84,
+          "priceJPY": 13120,
           "weightKg": null
         },
         {
           "qty": 500,
-          "priceHKD": 2574,
-          "priceUSD": 330,
-          "priceJPY": 51480,
+          "priceHKD": 703,
+          "priceUSD": 90,
+          "priceJPY": 14060,
+          "weightKg": null
+        },
+        {
+          "qty": 1000,
+          "priceHKD": 846,
+          "priceUSD": 108,
+          "priceJPY": 16920,
+          "weightKg": null
+        },
+        {
+          "qty": 2000,
+          "priceHKD": 1159,
+          "priceUSD": 148,
+          "priceJPY": 23180,
+          "weightKg": null
+        },
+        {
+          "qty": 3000,
+          "priceHKD": 1577,
+          "priceUSD": 202,
+          "priceJPY": 31540,
+          "weightKg": null
+        },
+        {
+          "qty": 5000,
+          "priceHKD": 2442,
+          "priceUSD": 313,
+          "priceJPY": 48840,
           "weightKg": null
         }
       ]
@@ -5065,30 +5093,58 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         },
         {
           "qty": 100,
-          "priceHKD": 950,
-          "priceUSD": 122,
-          "priceJPY": 19000,
+          "priceHKD": 846,
+          "priceUSD": 108,
+          "priceJPY": 16920,
           "weightKg": null
         },
         {
           "qty": 200,
-          "priceHKD": 1628,
-          "priceUSD": 208,
-          "priceJPY": 32560,
+          "priceHKD": 893,
+          "priceUSD": 114,
+          "priceJPY": 17860,
           "weightKg": null
         },
         {
           "qty": 300,
-          "priceHKD": 2420,
-          "priceUSD": 310,
-          "priceJPY": 48400,
+          "priceHKD": 1017,
+          "priceUSD": 130,
+          "priceJPY": 20340,
           "weightKg": null
         },
         {
           "qty": 500,
-          "priceHKD": 4004,
-          "priceUSD": 513,
-          "priceJPY": 80080,
+          "priceHKD": 1064,
+          "priceUSD": 136,
+          "priceJPY": 21280,
+          "weightKg": null
+        },
+        {
+          "qty": 1000,
+          "priceHKD": 1159,
+          "priceUSD": 148,
+          "priceJPY": 23180,
+          "weightKg": null
+        },
+        {
+          "qty": 2000,
+          "priceHKD": 1568,
+          "priceUSD": 201,
+          "priceJPY": 31360,
+          "weightKg": null
+        },
+        {
+          "qty": 3000,
+          "priceHKD": 1995,
+          "priceUSD": 255,
+          "priceJPY": 39900,
+          "weightKg": null
+        },
+        {
+          "qty": 5000,
+          "priceHKD": 2993,
+          "priceUSD": 383,
+          "priceJPY": 59860,
           "weightKg": null
         }
       ]
@@ -5123,30 +5179,58 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         },
         {
           "qty": 100,
-          "priceHKD": 405,
-          "priceUSD": 52,
-          "priceJPY": 8100,
+          "priceHKD": 561,
+          "priceUSD": 72,
+          "priceJPY": 11220,
           "weightKg": null
         },
         {
           "qty": 200,
-          "priceHKD": 625,
-          "priceUSD": 80,
-          "priceJPY": 12500,
+          "priceHKD": 608,
+          "priceUSD": 78,
+          "priceJPY": 12160,
           "weightKg": null
         },
         {
           "qty": 300,
-          "priceHKD": 913,
-          "priceUSD": 117,
-          "priceJPY": 18260,
+          "priceHKD": 656,
+          "priceUSD": 84,
+          "priceJPY": 13120,
           "weightKg": null
         },
         {
           "qty": 500,
-          "priceHKD": 1309,
-          "priceUSD": 168,
-          "priceJPY": 26180,
+          "priceHKD": 703,
+          "priceUSD": 90,
+          "priceJPY": 14060,
+          "weightKg": null
+        },
+        {
+          "qty": 1000,
+          "priceHKD": 846,
+          "priceUSD": 108,
+          "priceJPY": 16920,
+          "weightKg": null
+        },
+        {
+          "qty": 2000,
+          "priceHKD": 1159,
+          "priceUSD": 148,
+          "priceJPY": 23180,
+          "weightKg": null
+        },
+        {
+          "qty": 3000,
+          "priceHKD": 1577,
+          "priceUSD": 202,
+          "priceJPY": 31540,
+          "weightKg": null
+        },
+        {
+          "qty": 5000,
+          "priceHKD": 2442,
+          "priceUSD": 313,
+          "priceJPY": 48840,
           "weightKg": null
         }
       ]
@@ -5181,30 +5265,58 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         },
         {
           "qty": 100,
-          "priceHKD": 600,
-          "priceUSD": 77,
-          "priceJPY": 12000,
+          "priceHKD": 846,
+          "priceUSD": 108,
+          "priceJPY": 16920,
           "weightKg": null
         },
         {
           "qty": 200,
-          "priceHKD": 950,
-          "priceUSD": 122,
-          "priceJPY": 19000,
+          "priceHKD": 893,
+          "priceUSD": 114,
+          "priceJPY": 17860,
           "weightKg": null
         },
         {
           "qty": 300,
-          "priceHKD": 1232,
-          "priceUSD": 158,
-          "priceJPY": 24640,
+          "priceHKD": 1017,
+          "priceUSD": 130,
+          "priceJPY": 20340,
           "weightKg": null
         },
         {
           "qty": 500,
-          "priceHKD": 2024,
-          "priceUSD": 259,
-          "priceJPY": 40480,
+          "priceHKD": 1064,
+          "priceUSD": 136,
+          "priceJPY": 21280,
+          "weightKg": null
+        },
+        {
+          "qty": 1000,
+          "priceHKD": 1159,
+          "priceUSD": 148,
+          "priceJPY": 23180,
+          "weightKg": null
+        },
+        {
+          "qty": 2000,
+          "priceHKD": 1568,
+          "priceUSD": 201,
+          "priceJPY": 31360,
+          "weightKg": null
+        },
+        {
+          "qty": 3000,
+          "priceHKD": 1995,
+          "priceUSD": 255,
+          "priceJPY": 39900,
+          "weightKg": null
+        },
+        {
+          "qty": 5000,
+          "priceHKD": 2993,
+          "priceUSD": 383,
+          "priceJPY": 59860,
           "weightKg": null
         }
       ]
@@ -5239,30 +5351,58 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         },
         {
           "qty": 100,
-          "priceHKD": 625,
-          "priceUSD": 80,
-          "priceJPY": 12500,
+          "priceHKD": 561,
+          "priceUSD": 72,
+          "priceJPY": 11220,
           "weightKg": null
         },
         {
           "qty": 200,
-          "priceHKD": 1200,
-          "priceUSD": 154,
-          "priceJPY": 24000,
+          "priceHKD": 608,
+          "priceUSD": 78,
+          "priceJPY": 12160,
           "weightKg": null
         },
         {
           "qty": 300,
-          "priceHKD": 1562,
-          "priceUSD": 200,
-          "priceJPY": 31240,
+          "priceHKD": 656,
+          "priceUSD": 84,
+          "priceJPY": 13120,
           "weightKg": null
         },
         {
           "qty": 500,
-          "priceHKD": 2574,
-          "priceUSD": 330,
-          "priceJPY": 51480,
+          "priceHKD": 703,
+          "priceUSD": 90,
+          "priceJPY": 14060,
+          "weightKg": null
+        },
+        {
+          "qty": 1000,
+          "priceHKD": 846,
+          "priceUSD": 108,
+          "priceJPY": 16920,
+          "weightKg": null
+        },
+        {
+          "qty": 2000,
+          "priceHKD": 1159,
+          "priceUSD": 148,
+          "priceJPY": 23180,
+          "weightKg": null
+        },
+        {
+          "qty": 3000,
+          "priceHKD": 1577,
+          "priceUSD": 202,
+          "priceJPY": 31540,
+          "weightKg": null
+        },
+        {
+          "qty": 5000,
+          "priceHKD": 2442,
+          "priceUSD": 313,
+          "priceJPY": 48840,
           "weightKg": null
         }
       ]
@@ -5297,30 +5437,58 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         },
         {
           "qty": 100,
-          "priceHKD": 950,
-          "priceUSD": 122,
-          "priceJPY": 19000,
+          "priceHKD": 846,
+          "priceUSD": 108,
+          "priceJPY": 16920,
           "weightKg": null
         },
         {
           "qty": 200,
-          "priceHKD": 1628,
-          "priceUSD": 208,
-          "priceJPY": 32560,
+          "priceHKD": 893,
+          "priceUSD": 114,
+          "priceJPY": 17860,
           "weightKg": null
         },
         {
           "qty": 300,
-          "priceHKD": 2420,
-          "priceUSD": 310,
-          "priceJPY": 48400,
+          "priceHKD": 1017,
+          "priceUSD": 130,
+          "priceJPY": 20340,
           "weightKg": null
         },
         {
           "qty": 500,
-          "priceHKD": 4004,
-          "priceUSD": 513,
-          "priceJPY": 80080,
+          "priceHKD": 1064,
+          "priceUSD": 136,
+          "priceJPY": 21280,
+          "weightKg": null
+        },
+        {
+          "qty": 1000,
+          "priceHKD": 1159,
+          "priceUSD": 148,
+          "priceJPY": 23180,
+          "weightKg": null
+        },
+        {
+          "qty": 2000,
+          "priceHKD": 1568,
+          "priceUSD": 201,
+          "priceJPY": 31360,
+          "weightKg": null
+        },
+        {
+          "qty": 3000,
+          "priceHKD": 1995,
+          "priceUSD": 255,
+          "priceJPY": 39900,
+          "weightKg": null
+        },
+        {
+          "qty": 5000,
+          "priceHKD": 2993,
+          "priceUSD": 383,
+          "priceJPY": 59860,
           "weightKg": null
         }
       ]
@@ -5355,30 +5523,58 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         },
         {
           "qty": 100,
-          "priceHKD": 405,
-          "priceUSD": 52,
-          "priceJPY": 8100,
+          "priceHKD": 561,
+          "priceUSD": 72,
+          "priceJPY": 11220,
           "weightKg": null
         },
         {
           "qty": 200,
-          "priceHKD": 625,
-          "priceUSD": 80,
-          "priceJPY": 12500,
+          "priceHKD": 608,
+          "priceUSD": 78,
+          "priceJPY": 12160,
           "weightKg": null
         },
         {
           "qty": 300,
-          "priceHKD": 913,
-          "priceUSD": 117,
-          "priceJPY": 18260,
+          "priceHKD": 656,
+          "priceUSD": 84,
+          "priceJPY": 13120,
           "weightKg": null
         },
         {
           "qty": 500,
-          "priceHKD": 1309,
-          "priceUSD": 168,
-          "priceJPY": 26180,
+          "priceHKD": 703,
+          "priceUSD": 90,
+          "priceJPY": 14060,
+          "weightKg": null
+        },
+        {
+          "qty": 1000,
+          "priceHKD": 846,
+          "priceUSD": 108,
+          "priceJPY": 16920,
+          "weightKg": null
+        },
+        {
+          "qty": 2000,
+          "priceHKD": 1159,
+          "priceUSD": 148,
+          "priceJPY": 23180,
+          "weightKg": null
+        },
+        {
+          "qty": 3000,
+          "priceHKD": 1577,
+          "priceUSD": 202,
+          "priceJPY": 31540,
+          "weightKg": null
+        },
+        {
+          "qty": 5000,
+          "priceHKD": 2442,
+          "priceUSD": 313,
+          "priceJPY": 48840,
           "weightKg": null
         }
       ]
@@ -5413,30 +5609,58 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         },
         {
           "qty": 100,
-          "priceHKD": 600,
-          "priceUSD": 77,
-          "priceJPY": 12000,
+          "priceHKD": 846,
+          "priceUSD": 108,
+          "priceJPY": 16920,
           "weightKg": null
         },
         {
           "qty": 200,
-          "priceHKD": 950,
-          "priceUSD": 122,
-          "priceJPY": 19000,
+          "priceHKD": 893,
+          "priceUSD": 114,
+          "priceJPY": 17860,
           "weightKg": null
         },
         {
           "qty": 300,
-          "priceHKD": 1232,
-          "priceUSD": 158,
-          "priceJPY": 24640,
+          "priceHKD": 1017,
+          "priceUSD": 130,
+          "priceJPY": 20340,
           "weightKg": null
         },
         {
           "qty": 500,
-          "priceHKD": 2024,
-          "priceUSD": 259,
-          "priceJPY": 40480,
+          "priceHKD": 1064,
+          "priceUSD": 136,
+          "priceJPY": 21280,
+          "weightKg": null
+        },
+        {
+          "qty": 1000,
+          "priceHKD": 1159,
+          "priceUSD": 148,
+          "priceJPY": 23180,
+          "weightKg": null
+        },
+        {
+          "qty": 2000,
+          "priceHKD": 1568,
+          "priceUSD": 201,
+          "priceJPY": 31360,
+          "weightKg": null
+        },
+        {
+          "qty": 3000,
+          "priceHKD": 1995,
+          "priceUSD": 255,
+          "priceJPY": 39900,
+          "weightKg": null
+        },
+        {
+          "qty": 5000,
+          "priceHKD": 2993,
+          "priceUSD": 383,
+          "priceJPY": 59860,
           "weightKg": null
         }
       ]
@@ -5471,30 +5695,58 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         },
         {
           "qty": 100,
-          "priceHKD": 675,
-          "priceUSD": 86,
-          "priceJPY": 13500,
+          "priceHKD": 561,
+          "priceUSD": 72,
+          "priceJPY": 11220,
           "weightKg": null
         },
         {
           "qty": 200,
-          "priceHKD": 1144,
-          "priceUSD": 146,
-          "priceJPY": 22880,
+          "priceHKD": 608,
+          "priceUSD": 78,
+          "priceJPY": 12160,
           "weightKg": null
         },
         {
           "qty": 300,
-          "priceHKD": 1694,
-          "priceUSD": 217,
-          "priceJPY": 33880,
+          "priceHKD": 656,
+          "priceUSD": 84,
+          "priceJPY": 13120,
           "weightKg": null
         },
         {
           "qty": 500,
-          "priceHKD": 2794,
-          "priceUSD": 358,
-          "priceJPY": 55880,
+          "priceHKD": 703,
+          "priceUSD": 90,
+          "priceJPY": 14060,
+          "weightKg": null
+        },
+        {
+          "qty": 1000,
+          "priceHKD": 846,
+          "priceUSD": 108,
+          "priceJPY": 16920,
+          "weightKg": null
+        },
+        {
+          "qty": 2000,
+          "priceHKD": 1159,
+          "priceUSD": 148,
+          "priceJPY": 23180,
+          "weightKg": null
+        },
+        {
+          "qty": 3000,
+          "priceHKD": 1577,
+          "priceUSD": 202,
+          "priceJPY": 31540,
+          "weightKg": null
+        },
+        {
+          "qty": 5000,
+          "priceHKD": 2442,
+          "priceUSD": 313,
+          "priceJPY": 48840,
           "weightKg": null
         }
       ]
@@ -5529,30 +5781,58 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         },
         {
           "qty": 100,
-          "priceHKD": 1050,
-          "priceUSD": 134,
-          "priceJPY": 21000,
+          "priceHKD": 846,
+          "priceUSD": 108,
+          "priceJPY": 16920,
           "weightKg": null
         },
         {
           "qty": 200,
-          "priceHKD": 1804,
-          "priceUSD": 231,
-          "priceJPY": 36080,
+          "priceHKD": 893,
+          "priceUSD": 114,
+          "priceJPY": 17860,
           "weightKg": null
         },
         {
           "qty": 300,
-          "priceHKD": 2684,
-          "priceUSD": 344,
-          "priceJPY": 53680,
+          "priceHKD": 1017,
+          "priceUSD": 130,
+          "priceJPY": 20340,
           "weightKg": null
         },
         {
           "qty": 500,
-          "priceHKD": 4444,
-          "priceUSD": 569,
-          "priceJPY": 88880,
+          "priceHKD": 1064,
+          "priceUSD": 136,
+          "priceJPY": 21280,
+          "weightKg": null
+        },
+        {
+          "qty": 1000,
+          "priceHKD": 1159,
+          "priceUSD": 148,
+          "priceJPY": 23180,
+          "weightKg": null
+        },
+        {
+          "qty": 2000,
+          "priceHKD": 1568,
+          "priceUSD": 201,
+          "priceJPY": 31360,
+          "weightKg": null
+        },
+        {
+          "qty": 3000,
+          "priceHKD": 1995,
+          "priceUSD": 255,
+          "priceJPY": 39900,
+          "weightKg": null
+        },
+        {
+          "qty": 5000,
+          "priceHKD": 2993,
+          "priceUSD": 383,
+          "priceJPY": 59860,
           "weightKg": null
         }
       ]
@@ -5587,30 +5867,58 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         },
         {
           "qty": 100,
-          "priceHKD": 435,
-          "priceUSD": 56,
-          "priceJPY": 8700,
+          "priceHKD": 561,
+          "priceUSD": 72,
+          "priceJPY": 11220,
           "weightKg": null
         },
         {
           "qty": 200,
-          "priceHKD": 675,
-          "priceUSD": 86,
-          "priceJPY": 13500,
+          "priceHKD": 608,
+          "priceUSD": 78,
+          "priceJPY": 12160,
           "weightKg": null
         },
         {
           "qty": 300,
-          "priceHKD": 988,
-          "priceUSD": 127,
-          "priceJPY": 19760,
+          "priceHKD": 656,
+          "priceUSD": 84,
+          "priceJPY": 13120,
           "weightKg": null
         },
         {
           "qty": 500,
-          "priceHKD": 1419,
-          "priceUSD": 182,
-          "priceJPY": 28380,
+          "priceHKD": 703,
+          "priceUSD": 90,
+          "priceJPY": 14060,
+          "weightKg": null
+        },
+        {
+          "qty": 1000,
+          "priceHKD": 846,
+          "priceUSD": 108,
+          "priceJPY": 16920,
+          "weightKg": null
+        },
+        {
+          "qty": 2000,
+          "priceHKD": 1159,
+          "priceUSD": 148,
+          "priceJPY": 23180,
+          "weightKg": null
+        },
+        {
+          "qty": 3000,
+          "priceHKD": 1577,
+          "priceUSD": 202,
+          "priceJPY": 31540,
+          "weightKg": null
+        },
+        {
+          "qty": 5000,
+          "priceHKD": 2442,
+          "priceUSD": 313,
+          "priceJPY": 48840,
           "weightKg": null
         }
       ]
@@ -5645,30 +5953,58 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
         },
         {
           "qty": 100,
-          "priceHKD": 550,
-          "priceUSD": 70,
-          "priceJPY": 11000,
+          "priceHKD": 846,
+          "priceUSD": 108,
+          "priceJPY": 16920,
           "weightKg": null
         },
         {
           "qty": 200,
-          "priceHKD": 1050,
-          "priceUSD": 134,
-          "priceJPY": 21000,
+          "priceHKD": 893,
+          "priceUSD": 114,
+          "priceJPY": 17860,
           "weightKg": null
         },
         {
           "qty": 300,
-          "priceHKD": 1364,
-          "priceUSD": 175,
-          "priceJPY": 27280,
+          "priceHKD": 1017,
+          "priceUSD": 130,
+          "priceJPY": 20340,
           "weightKg": null
         },
         {
           "qty": 500,
-          "priceHKD": 2244,
-          "priceUSD": 287,
-          "priceJPY": 44880,
+          "priceHKD": 1064,
+          "priceUSD": 136,
+          "priceJPY": 21280,
+          "weightKg": null
+        },
+        {
+          "qty": 1000,
+          "priceHKD": 1159,
+          "priceUSD": 148,
+          "priceJPY": 23180,
+          "weightKg": null
+        },
+        {
+          "qty": 2000,
+          "priceHKD": 1568,
+          "priceUSD": 201,
+          "priceJPY": 31360,
+          "weightKg": null
+        },
+        {
+          "qty": 3000,
+          "priceHKD": 1995,
+          "priceUSD": 255,
+          "priceJPY": 39900,
+          "weightKg": null
+        },
+        {
+          "qty": 5000,
+          "priceHKD": 2993,
+          "priceUSD": 383,
+          "priceJPY": 59860,
           "weightKg": null
         }
       ]

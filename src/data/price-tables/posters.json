@@ -7,12 +7,12 @@
     "ja": "ポスター印刷"
   },
   "currency_anchor": "HKD",
-  "markup_rule": "B2 digital × (cost≤200→×3, ≤500→×2.5, >500→×2.2); A1 = e-banner ×0.95",
-  "src": "anchor-b2-digital",
-  "anchor": "B2非会员价; A1: https://hk.e-banner.com ×0.95",
+  "markup_rule": "B2 digital × (≤200→×3,≤500→×2.5,>500→×2.2); offset = e-print ×0.95; dual-track = min(digital,offset)",
+  "src": "anchor-b2-digital+v16-offset",
+  "anchor": "B2非会员价 + e-print柯式海报价",
   "anchorType": "factory-cost",
   "calibratedAt": "2026-07-25",
-  "note": "v15 K3 7/25: 纯 B2 公式 (作废 e-print 夹逼)。A1 喷绘 e-banner 对标。",
+  "note": "v16 K3 7/25: 小单数码/大单柯式自动取优。A1=喷绘e-banner×0.95。",
   "configs": [
     {
       "config": "A2 · 铜版纸 · 157g · 單面",
@@ -20,36 +20,67 @@
         {
           "qty": 10,
           "sell_hkd": 129,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 20,
           "sell_hkd": 198,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 50,
           "sell_hkd": 405,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 100,
-          "sell_hkd": 625,
+          "sell_hkd": 561,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 200,
-          "sell_hkd": 1200,
+          "sell_hkd": 608,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 300,
-          "sell_hkd": 1562,
+          "sell_hkd": 656,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 500,
-          "sell_hkd": 2574,
+          "sell_hkd": 703,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 1000,
+          "sell_hkd": 846,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 2000,
+          "sell_hkd": 1159,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 3000,
+          "sell_hkd": 1577,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 5000,
+          "sell_hkd": 2442,
+          "production": "offset",
           "weight_kg": null
         }
       ]
@@ -60,36 +91,67 @@
         {
           "qty": 10,
           "sell_hkd": 168,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 20,
           "sell_hkd": 276,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 50,
           "sell_hkd": 600,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 100,
-          "sell_hkd": 950,
+          "sell_hkd": 846,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 200,
-          "sell_hkd": 1628,
+          "sell_hkd": 893,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 300,
-          "sell_hkd": 2420,
+          "sell_hkd": 1017,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 500,
-          "sell_hkd": 4004,
+          "sell_hkd": 1064,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 1000,
+          "sell_hkd": 1159,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 2000,
+          "sell_hkd": 1568,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 3000,
+          "sell_hkd": 1995,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 5000,
+          "sell_hkd": 2993,
+          "production": "offset",
           "weight_kg": null
         }
       ]
@@ -100,36 +162,67 @@
         {
           "qty": 10,
           "sell_hkd": 95,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 20,
           "sell_hkd": 129,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 50,
           "sell_hkd": 233,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 100,
-          "sell_hkd": 405,
+          "sell_hkd": 561,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 200,
-          "sell_hkd": 625,
+          "sell_hkd": 608,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 300,
-          "sell_hkd": 913,
+          "sell_hkd": 656,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 500,
-          "sell_hkd": 1309,
+          "sell_hkd": 703,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 1000,
+          "sell_hkd": 846,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 2000,
+          "sell_hkd": 1159,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 3000,
+          "sell_hkd": 1577,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 5000,
+          "sell_hkd": 2442,
+          "production": "offset",
           "weight_kg": null
         }
       ]
@@ -140,36 +233,67 @@
         {
           "qty": 10,
           "sell_hkd": 114,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 20,
           "sell_hkd": 168,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 50,
           "sell_hkd": 330,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 100,
-          "sell_hkd": 600,
+          "sell_hkd": 846,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 200,
-          "sell_hkd": 950,
+          "sell_hkd": 893,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 300,
-          "sell_hkd": 1232,
+          "sell_hkd": 1017,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 500,
-          "sell_hkd": 2024,
+          "sell_hkd": 1064,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 1000,
+          "sell_hkd": 1159,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 2000,
+          "sell_hkd": 1568,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 3000,
+          "sell_hkd": 1995,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 5000,
+          "sell_hkd": 2993,
+          "production": "offset",
           "weight_kg": null
         }
       ]
@@ -180,36 +304,67 @@
         {
           "qty": 10,
           "sell_hkd": 129,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 20,
           "sell_hkd": 198,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 50,
           "sell_hkd": 405,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 100,
-          "sell_hkd": 625,
+          "sell_hkd": 561,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 200,
-          "sell_hkd": 1200,
+          "sell_hkd": 608,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 300,
-          "sell_hkd": 1562,
+          "sell_hkd": 656,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 500,
-          "sell_hkd": 2574,
+          "sell_hkd": 703,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 1000,
+          "sell_hkd": 846,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 2000,
+          "sell_hkd": 1159,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 3000,
+          "sell_hkd": 1577,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 5000,
+          "sell_hkd": 2442,
+          "production": "offset",
           "weight_kg": null
         }
       ]
@@ -220,36 +375,67 @@
         {
           "qty": 10,
           "sell_hkd": 168,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 20,
           "sell_hkd": 276,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 50,
           "sell_hkd": 600,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 100,
-          "sell_hkd": 950,
+          "sell_hkd": 846,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 200,
-          "sell_hkd": 1628,
+          "sell_hkd": 893,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 300,
-          "sell_hkd": 2420,
+          "sell_hkd": 1017,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 500,
-          "sell_hkd": 4004,
+          "sell_hkd": 1064,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 1000,
+          "sell_hkd": 1159,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 2000,
+          "sell_hkd": 1568,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 3000,
+          "sell_hkd": 1995,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 5000,
+          "sell_hkd": 2993,
+          "production": "offset",
           "weight_kg": null
         }
       ]
@@ -260,36 +446,67 @@
         {
           "qty": 10,
           "sell_hkd": 95,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 20,
           "sell_hkd": 129,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 50,
           "sell_hkd": 233,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 100,
-          "sell_hkd": 405,
+          "sell_hkd": 561,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 200,
-          "sell_hkd": 625,
+          "sell_hkd": 608,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 300,
-          "sell_hkd": 913,
+          "sell_hkd": 656,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 500,
-          "sell_hkd": 1309,
+          "sell_hkd": 703,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 1000,
+          "sell_hkd": 846,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 2000,
+          "sell_hkd": 1159,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 3000,
+          "sell_hkd": 1577,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 5000,
+          "sell_hkd": 2442,
+          "production": "offset",
           "weight_kg": null
         }
       ]
@@ -300,36 +517,67 @@
         {
           "qty": 10,
           "sell_hkd": 114,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 20,
           "sell_hkd": 168,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 50,
           "sell_hkd": 330,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 100,
-          "sell_hkd": 600,
+          "sell_hkd": 846,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 200,
-          "sell_hkd": 950,
+          "sell_hkd": 893,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 300,
-          "sell_hkd": 1232,
+          "sell_hkd": 1017,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 500,
-          "sell_hkd": 2024,
+          "sell_hkd": 1064,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 1000,
+          "sell_hkd": 1159,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 2000,
+          "sell_hkd": 1568,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 3000,
+          "sell_hkd": 1995,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 5000,
+          "sell_hkd": 2993,
+          "production": "offset",
           "weight_kg": null
         }
       ]
@@ -340,36 +588,67 @@
         {
           "qty": 10,
           "sell_hkd": 135,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 20,
           "sell_hkd": 210,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 50,
           "sell_hkd": 435,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 100,
-          "sell_hkd": 675,
+          "sell_hkd": 561,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 200,
-          "sell_hkd": 1144,
+          "sell_hkd": 608,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 300,
-          "sell_hkd": 1694,
+          "sell_hkd": 656,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 500,
-          "sell_hkd": 2794,
+          "sell_hkd": 703,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 1000,
+          "sell_hkd": 846,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 2000,
+          "sell_hkd": 1159,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 3000,
+          "sell_hkd": 1577,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 5000,
+          "sell_hkd": 2442,
+          "production": "offset",
           "weight_kg": null
         }
       ]
@@ -380,36 +659,67 @@
         {
           "qty": 10,
           "sell_hkd": 180,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 20,
           "sell_hkd": 300,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 50,
           "sell_hkd": 550,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 100,
-          "sell_hkd": 1050,
+          "sell_hkd": 846,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 200,
-          "sell_hkd": 1804,
+          "sell_hkd": 893,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 300,
-          "sell_hkd": 2684,
+          "sell_hkd": 1017,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 500,
-          "sell_hkd": 4444,
+          "sell_hkd": 1064,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 1000,
+          "sell_hkd": 1159,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 2000,
+          "sell_hkd": 1568,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 3000,
+          "sell_hkd": 1995,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 5000,
+          "sell_hkd": 2993,
+          "production": "offset",
           "weight_kg": null
         }
       ]
@@ -420,36 +730,67 @@
         {
           "qty": 10,
           "sell_hkd": 98,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 20,
           "sell_hkd": 135,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 50,
           "sell_hkd": 248,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 100,
-          "sell_hkd": 435,
+          "sell_hkd": 561,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 200,
-          "sell_hkd": 675,
+          "sell_hkd": 608,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 300,
-          "sell_hkd": 988,
+          "sell_hkd": 656,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 500,
-          "sell_hkd": 1419,
+          "sell_hkd": 703,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 1000,
+          "sell_hkd": 846,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 2000,
+          "sell_hkd": 1159,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 3000,
+          "sell_hkd": 1577,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 5000,
+          "sell_hkd": 2442,
+          "production": "offset",
           "weight_kg": null
         }
       ]
@@ -460,36 +801,67 @@
         {
           "qty": 10,
           "sell_hkd": 120,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 20,
           "sell_hkd": 180,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 50,
           "sell_hkd": 360,
+          "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 100,
-          "sell_hkd": 550,
+          "sell_hkd": 846,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 200,
-          "sell_hkd": 1050,
+          "sell_hkd": 893,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 300,
-          "sell_hkd": 1364,
+          "sell_hkd": 1017,
+          "production": "offset",
           "weight_kg": null
         },
         {
           "qty": 500,
-          "sell_hkd": 2244,
+          "sell_hkd": 1064,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 1000,
+          "sell_hkd": 1159,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 2000,
+          "sell_hkd": 1568,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 3000,
+          "sell_hkd": 1995,
+          "production": "offset",
+          "weight_kg": null
+        },
+        {
+          "qty": 5000,
+          "sell_hkd": 2993,
+          "production": "offset",
           "weight_kg": null
         }
       ]
@@ -500,26 +872,31 @@
         {
           "qty": 10,
           "sell_hkd": 290,
+          "production": "inkjet",
           "weight_kg": null
         },
         {
           "qty": 20,
           "sell_hkd": 580,
+          "production": "inkjet",
           "weight_kg": null
         },
         {
           "qty": 50,
           "sell_hkd": 1450,
+          "production": "inkjet",
           "weight_kg": null
         },
         {
           "qty": 100,
           "sell_hkd": 2900,
+          "production": "inkjet",
           "weight_kg": null
         },
         {
           "qty": 200,
           "sell_hkd": 5800,
+          "production": "inkjet",
           "weight_kg": null
         }
       ]
@@ -530,26 +907,31 @@
         {
           "qty": 10,
           "sell_hkd": 360,
+          "production": "inkjet",
           "weight_kg": null
         },
         {
           "qty": 20,
           "sell_hkd": 720,
+          "production": "inkjet",
           "weight_kg": null
         },
         {
           "qty": 50,
           "sell_hkd": 1800,
+          "production": "inkjet",
           "weight_kg": null
         },
         {
           "qty": 100,
           "sell_hkd": 3600,
+          "production": "inkjet",
           "weight_kg": null
         },
         {
           "qty": 200,
           "sell_hkd": 7200,
+          "production": "inkjet",
           "weight_kg": null
         }
       ]

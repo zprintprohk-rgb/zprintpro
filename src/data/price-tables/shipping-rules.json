@@ -1,16 +1,15 @@
 {
-  "version": "2026-07-23",
+  "version": "2026-07-25",
   "currency": "HKD",
   "fx": {
     "CNY_to_HKD": 1.09,
-    "note": "2026-07 参考汇率, 报价台可用 fx-rates.json 覆盖"
+    "note": "2026-07 参考汇率"
   },
   "rules": [
     {
       "id": "sf-express",
       "name_zh": "順豐快遞",
-      "condition": "sf_fee <= 200",
-      "note": "默认渠道; sf_fee 按顺丰收方价估算, 阈值 200 HKD"
+      "condition": "sf_fee <= 200"
     },
     {
       "id": "logistics-fold",
@@ -19,8 +18,7 @@
         "special-fold-leaflets"
       ],
       "condition": "sf_fee > 200",
-      "fee_formula": "200",
-      "note": "e-print 对标折页: 固定 200 HKD 派送费 (人工核算已含, user 2026-07-23 确认)"
+      "fee_formula": "200"
     },
     {
       "id": "logistics-general",
@@ -38,14 +36,12 @@
         "per_kg_rmb": 0.7,
         "first_leg_rmb": 100,
         "delivery_hkd": 200
-      },
-      "note": "0.7 RMB/kg 是香港物流园段成本(不含送货到物流点); first_leg_rmb=100 是深圳工厂→物流点头程估值, 待 user 确认实际值后修正"
+      }
     }
   ],
   "sf_rate_reference": {
     "first_kg": 30,
     "per_kg_after": 8,
-    "switch_to_logistics_kg": 30,
-    "note": "user 2026-07-23 拍板: >30kg 切物流; 实际以顺丰当日报价为准, 报价台显示\"运费另计/到付\"兜底"
+    "switch_to_logistics_kg": 30
   }
 }

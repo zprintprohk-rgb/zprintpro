@@ -7,7 +7,7 @@
     "ja": "白カード手提げ袋(専版)"
   },
   "currency_anchor": "HKD",
-  "markup_rule": "cost_rmb × 1.5 → sell_hkd (zh-hk); cost_rmb × 2.2 × fx → sell_usd/sell_jpy (en/ja, 毛利≥50%, user 2026-07-23 拍板)",
+  "markup_rule": "v16 tiered: [1.5] (zh-hk) / [2.2] (en/ja); cost_rmb × coeff → sell_hkd; en/ja = cost_rmb × intl_coeff × fx",
   "market_markup": {
     "zh-hk": 1.5,
     "en": 2.2,
@@ -16,7 +16,7 @@
   "src": "yate98-factory-2026-07",
   "anchor": true,
   "anchorType": "factory-cost",
-  "calibratedAt": "2026-07-23",
+  "calibratedAt": "2026-07-25",
   "note": "",
   "configs": [
     {
@@ -26,31 +26,41 @@
           "qty": 500,
           "cost_rmb": 861.6,
           "sell_hkd": 1292,
-          "weight_kg": 49.48
+          "weight_kg": 49.48,
+          "coeff_zh": 1.5,
+          "coeff_intl": 2.2
         },
         {
           "qty": 1000,
           "cost_rmb": 1193.8,
           "sell_hkd": 1791,
-          "weight_kg": 84.81
+          "weight_kg": 84.81,
+          "coeff_zh": 1.5,
+          "coeff_intl": 2.2
         },
         {
           "qty": 2000,
           "cost_rmb": 2069.3,
           "sell_hkd": 3104,
-          "weight_kg": 155.49
+          "weight_kg": 155.49,
+          "coeff_zh": 1.5,
+          "coeff_intl": 2.2
         },
         {
           "qty": 3000,
           "cost_rmb": 2942.6,
           "sell_hkd": 4414,
-          "weight_kg": 226.16
+          "weight_kg": 226.16,
+          "coeff_zh": 1.5,
+          "coeff_intl": 2.2
         },
         {
           "qty": 5000,
           "cost_rmb": 4729.2,
           "sell_hkd": 7094,
-          "weight_kg": 374.58
+          "weight_kg": 374.58,
+          "coeff_zh": 1.5,
+          "coeff_intl": 2.2
         }
       ]
     },
@@ -61,31 +71,41 @@
           "qty": 500,
           "cost_rmb": 1570.6,
           "sell_hkd": 2356,
-          "weight_kg": 75.08
+          "weight_kg": 75.08,
+          "coeff_zh": 1.5,
+          "coeff_intl": 2.2
         },
         {
           "qty": 1000,
           "cost_rmb": 2122.6,
           "sell_hkd": 3184,
-          "weight_kg": 156.9
+          "weight_kg": 156.9,
+          "coeff_zh": 1.5,
+          "coeff_intl": 2.2
         },
         {
           "qty": 2000,
           "cost_rmb": 3342.0,
           "sell_hkd": 5013,
-          "weight_kg": 287.64
+          "weight_kg": 287.64,
+          "coeff_zh": 1.5,
+          "coeff_intl": 2.2
         },
         {
           "qty": 3000,
           "cost_rmb": 4570.2,
           "sell_hkd": 6855,
-          "weight_kg": 418.38
+          "weight_kg": 418.38,
+          "coeff_zh": 1.5,
+          "coeff_intl": 2.2
         },
         {
           "qty": 5000,
           "cost_rmb": 7366.5,
           "sell_hkd": 11050,
-          "weight_kg": 692.94
+          "weight_kg": 692.94,
+          "coeff_zh": 1.5,
+          "coeff_intl": 2.2
         }
       ]
     },
@@ -96,31 +116,41 @@
           "qty": 500,
           "cost_rmb": 1812.6,
           "sell_hkd": 2719,
-          "weight_kg": 75.08
+          "weight_kg": 75.08,
+          "coeff_zh": 1.5,
+          "coeff_intl": 2.2
         },
         {
           "qty": 1000,
           "cost_rmb": 2364.6,
           "sell_hkd": 3547,
-          "weight_kg": 156.9
+          "weight_kg": 156.9,
+          "coeff_zh": 1.5,
+          "coeff_intl": 2.2
         },
         {
           "qty": 2000,
           "cost_rmb": 3584.0,
           "sell_hkd": 5376,
-          "weight_kg": 287.64
+          "weight_kg": 287.64,
+          "coeff_zh": 1.5,
+          "coeff_intl": 2.2
         },
         {
           "qty": 3000,
           "cost_rmb": 4805.6,
           "sell_hkd": 7208,
-          "weight_kg": 418.38
+          "weight_kg": 418.38,
+          "coeff_zh": 1.5,
+          "coeff_intl": 2.2
         },
         {
           "qty": 5000,
           "cost_rmb": 7603.0,
           "sell_hkd": 11404,
-          "weight_kg": 692.94
+          "weight_kg": 692.94,
+          "coeff_zh": 1.5,
+          "coeff_intl": 2.2
         }
       ]
     }
