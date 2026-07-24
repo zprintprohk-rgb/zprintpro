@@ -1311,7 +1311,7 @@ const lpSportsMerchandiseGiftBox: BlogPostMeta = {
   },
 };
 
-// 2026-07-21 v7 daily-content-evolve: Q-004 apparel shopping bag — paper-bags × 服裝 (Tier A) — 純文字・v7 報價型 (5 檔 intuan 校準錨點)
+// 2026-07-21 v7 daily-content-evolve: Q-004 apparel shopping bag — paper-bags × 服裝 (Tier A) — 純文字・v7 報價型 (5 檔實價)
 const lpApparelShoppingBag: BlogPostMeta = {
   slug: 'apparel-shopping-bag-printing-guide',
   categoryKey: 'paper-bags',
@@ -1323,13 +1323,13 @@ const lpApparelShoppingBag: BlogPostMeta = {
     ja: 'アパレルブランドショッピングバッグ印刷ガイド：素材・サイズ・ロゴ | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '香港時裝、潮牌、買手店老闆必睇。一個高質感的品牌紙袋決定客人會否在 IG 打卡分享,直接影響你的品牌曝光。智印雲為本地時裝品牌提供白卡紙、黃牛皮、棉繩、絲帶、燙金、UV 局部全系列紙袋印刷,500-100,000 枚小至大批量,5-10 個工作天交付,順豐本地 + DHL 全球 2-4 天到貨,5 檔 intuan 校準錨點 (HKD 811-4,202) 實價。',
-    en: 'Apparel and fashion brand owners — kraft, white card, handle materials compared. 500-piece small batches to 100,000 bulk, 5-10 working day delivery from Asia factory. 5-tier intuan calibrated anchors (USD 106-546). Free Shipping over $99 USA, Free design mockup, No setup fees.',
-    ja: 'アパレル・ファッションブランドオーナー様へ。クラフト紙・白カード・ハンドル素材別、500枚小ロットから 10万枚量産、5-10 営業日納品。5 段階 intuan 校正アンカー (JPY 16,628-86,141) 実価格。全国送料込み、$99 以上で全米無料配送、短納期 3-5 営業日対応。',
+    'zh-hk': '香港時裝、潮牌、買手店老闆必睇。一個高質感的品牌紙袋決定客人會否在 IG 打卡分享,直接影響你的品牌曝光。智印雲為本地時裝品牌提供白卡紙、黃牛皮、棉繩、絲帶、燙金、UV 局部全系列紙袋印刷,500-100,000 枚小至大批量,5-10 個工作天交付,順豐本地 + DHL 全球 2-4 天到貨,5 檔實價 (HK$811-4,202)。',
+    en: 'Apparel and fashion brand owners — kraft, white card, handle materials compared. 500-piece small batches to 100,000 bulk, 5-10 working day delivery from Asia factory. 5-tier pricing (USD $106-546). Free Shipping over $99 USA, Free design mockup, No setup fees.',
+    ja: 'アパレル・ファッションブランドオーナー様へ。クラフト紙・白カード・ハンドル素材別、500枚小ロットから 10万枚量産、5-10 営業日納品。5 段階実価格 (¥16,628-86,141)。全国送料込み、$99 以上で全米無料配送、短納期 3-5 営業日対応。',
   },
 };
 
-// 2026-07-23 v7 daily-content-evolve: Q-GR-01 香港拼版彩盒指南 (K3 7/23 插队 priority_boost=3) — packaging × 零售精品 (Tier A) — 純文字・v7 報價型 (5 檔 intuan 校準錨點)
+// 2026-07-23 v7 daily-content-evolve: Q-GR-01 香港拼版彩盒指南 (K3 7/23 插队 priority_boost=3) — packaging × 零售精品 (Tier A) — 純文字・v7 報價型 (5 檔實價)
 // 双品牌宪法 (2026-07-21): zh-hk = 智印港 ZprintPro, en/ja = ZprintPro
 const lpGangRunCardBoxesHK: BlogPostMeta = {
   slug: 'gang-run-card-boxes-hk-guide',
@@ -1342,9 +1342,9 @@ const lpGangRunCardBoxesHK: BlogPostMeta = {
     ja: '合版ホワイトカードボックス印刷ガイド：型代不要で40-60%削減 | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '香港零售精品店、美妝小店、文創 IP 周邊、禮品小店老闆必睇。拼版白卡彩盒固定刀模共用,免刀模費 + 免排版費,成本直降 40-60%,500-10,000 枚小至大批量,8-15 天交期,4 種紙材 + 3 種盒型 + 8 檔標準尺寸,覆蓋 95% 香港零售場景,5 檔 intuan 校準錨點 (HK$129-2,379) 實價。',
-    en: 'US retail boutique, skincare, IP merchandise, and gift brand owners — gang-run white card boxes with shared standard die-cuts, NO die-cut fee, NO setup fee, 40-60% lower unit cost, 100-10,000 piece runs, 8-15 day production, 4 paper stocks + 3 box styles + 8 standard sizes, 5-tier intuan calibrated anchors (USD 25-461), Free Shipping over $99 USA, Free Design Mockup, 100 MOQ starter.',
-    ja: '日本の小売ブティック、スキンケア、IP 商品、ギフトブランドオーナー様へ。合版ホワイトカードボックス、固定型代共用で型代不要・版代不要、40-60% コスト削減、100-10,000 個小〜大ロット、8-15 日生産、4 種素材 + 3 種箱型 + 8 標準サイズで 95% 日本小売シーンカバー、5 段階 intuan 校正アンカー (¥3,800-69,150) 実価格、沖縄・北海道含む全国送料無料、ヤマト運輸 1-3 日納品。',
+    'zh-hk': '香港零售精品店、美妝小店、文創 IP 周邊、禮品小店老闆必睇。拼版白卡彩盒固定刀模共用,免刀模費 + 免排版費,成本直降 40-60%,500-10,000 枚小至大批量,8-15 天交期,4 種紙材 + 3 種盒型 + 8 檔標準尺寸,覆蓋 95% 香港零售場景,5 檔實價 (HK$129-2,379)。',
+    en: 'US retail boutique, skincare, IP merchandise, and gift brand owners — gang-run white card boxes with shared standard die-cuts, NO die-cut fee, NO setup fee, 40-60% lower unit cost, 100-10,000 piece runs, 8-15 day production, 4 paper stocks + 3 box styles + 8 standard sizes, 5-tier pricing (USD $25-461), Free Shipping over $99 USA, Free Design Mockup, 100 MOQ starter.',
+    ja: '日本の小売ブティック、スキンケア、IP 商品、ギフトブランドオーナー様へ。合版ホワイトカードボックス、固定型代共用で型代不要・版代不要、40-60% コスト削減、100-10,000 個小〜大ロット、8-15 日生産、4 種素材 + 3 種箱型 + 8 標準サイズで 95% 日本小売シーンカバー、5 段階実価格 (¥3,800-69,150)、沖縄・北海道含む全国送料無料、ヤマト運輸 1-3 日納品。',
   },
 };
 

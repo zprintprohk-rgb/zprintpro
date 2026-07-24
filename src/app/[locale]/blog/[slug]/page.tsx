@@ -322,10 +322,10 @@ const posts: Record<string, Record<string, { title: string; description: string;
       date: '2026-07-20', category: '建築工程',
       content: '',
     },
-    // 2026-07-21 v7 daily-content-evolve: Q-004 apparel shopping bag — paper-bags × 服裝 (Tier A) — 純文字・v7 報價型 (5 檔 intuan 校準錨點)
+    // 2026-07-21 v7 daily-content-evolve: Q-004 apparel shopping bag — paper-bags × 服裝 (Tier A) — 純文字・v7 報價型 (5 檔實價)
     'apparel-shopping-bag-printing-guide': {
       title: '香港服裝品牌紙袋印刷指南 · 環保購物袋品牌升級 | 智印雲 ZprintPro',
-      description: '香港時裝、潮牌、買手店老闆必睇。一個高質感的品牌紙袋決定客人會否在 IG 打卡分享。智印雲為本地時裝品牌提供白卡紙、黃牛皮、棉繩、絲帶、燙金、UV 局部全系列紙袋印刷,500-100,000 枚小至大批量,5-10 個工作天交付,順豐本地 + DHL 全球 2-4 天到貨,5 檔 intuan 校準錨點實價。',
+      description: '香港時裝、潮牌、買手店老闆必睇。一個高質感的品牌紙袋決定客人會否在 IG 打卡分享。智印雲為本地時裝品牌提供白卡紙、黃牛皮、棉繩、絲帶、燙金、UV 局部全系列紙袋印刷,500-100,000 枚小至大批量,5-10 個工作天交付,順豐本地 + DHL 全球 2-4 天到貨,5 檔實價。',
       date: '2026-07-21', category: '服裝紙袋',
       content: '',
     },
@@ -333,7 +333,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
     // 2026-07-23 v7 daily-content-evolve: Q-GR-01 香港拼版彩盒指南 (K3 7/23 插队 priority_boost=3) — packaging × 零售精品 (Tier A) — 純文字・v7 報價型
     'gang-run-card-boxes-hk-guide': {
       title: '香港拼版白卡彩盒印刷指南 · 免刀模費直降40%的預算首選 | 智印港 ZprintPro',
-      description: '香港零售精品店、美妝小店、文創 IP 周邊、禮品小店老闆必睇。拼版白卡彩盒固定刀模共用,免刀模費 + 免排版費,成本直降 40-60%,500-10,000 枚小至大批量,8-15 天交期,4 種紙材 + 3 種盒型 + 8 檔標準尺寸,覆蓋 95% 香港零售場景,5 檔 intuan 校準錨點實價。',
+      description: '香港零售精品店、美妝小店、文創 IP 周邊、禮品小店老闆必睇。拼版白卡彩盒固定刀模共用,免刀模費 + 免排版費,成本直降 40-60%,500-10,000 枚小至大批量,8-15 天交期,4 種紙材 + 3 種盒型 + 8 檔標準尺寸,覆蓋 95% 香港零售場景,5 檔實價。',
       date: '2026-07-23', category: '拼版彩盒',
       content: '',
     },
@@ -362,7 +362,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
     // 2026-07-23 v7 daily-content-evolve: Q-GR-01 gang-run card boxes (en locale) — packaging × retail 零售精品 (US-target)
     'gang-run-card-boxes-hk-guide': {
       title: 'Gang-Run Card Boxes Guide: No Die-Cut Fee, 40-60% Cheaper | ZprintPro',
-      description: 'US retail boutique, skincare, IP merchandise, and gift brand owners — gang-run white card boxes with shared standard die-cuts, NO die-cut fee, NO setup fee, 40-60% lower unit cost, 100-10,000 piece runs, 8-15 day production, 4 paper stocks + 3 box styles + 8 standard sizes, 5-tier intuan calibrated anchors, Free Shipping over $99 USA, Free Design Mockup, 100 MOQ starter.',
+      description: 'US retail boutique, skincare, IP merchandise, and gift brand owners — gang-run white card boxes with shared standard die-cuts, NO die-cut fee, NO setup fee, 40-60% lower unit cost, 100-10,000 piece runs, 8-15 day production, 4 paper stocks + 3 box styles + 8 standard sizes, 5-tier pricing, Free Shipping over $99 USA, Free Design Mockup, 100 MOQ starter.',
       date: '2026-07-23', category: 'Gang-Run Boxes',
       content: '',
     },
@@ -520,7 +520,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
     // 2026-07-23 v7 daily-content-evolve: Q-GR-01 gang-run card boxes (ja locale) — packaging × 小売 (沖縄/北海道/ヤマト運輸)
     'gang-run-card-boxes-hk-guide': {
       title: '合版ホワイトカードボックス印刷ガイド：型代不要で40-60%削減 | ZprintPro',
-      description: '日本の小売ブティック、スキンケア、IP 商品、ギフトブランドオーナー様へ。合版ホワイトカードボックス、固定型代共用で型代不要・版代不要、40-60% コスト削減、100-10,000 個小〜大ロット、8-15 日生産、4 種素材 + 3 種箱型 + 8 標準サイズで 95% 日本小売シーンカバー、5 段階 intuan 校正アンカー実価格、沖縄・北海道含む全国送料無料、ヤマト運輸 1-3 日納品。',
+      description: '日本の小売ブティック、スキンケア、IP 商品、ギフトブランドオーナー様へ。合版ホワイトカードボックス、固定型代共用で型代不要・版代不要、40-60% コスト削減、100-10,000 個小〜大ロット、8-15 日生産、4 種素材 + 3 種箱型 + 8 標準サイズで 95% 日本小売シーンカバー、5 段階実価格、沖縄・北海道含む全国送料無料、ヤマト運輸 1-3 日納品。',
       date: '2026-07-23', category: '合版ホワイトカードボックス',
       content: '',
     },

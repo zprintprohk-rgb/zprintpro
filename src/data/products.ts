@@ -145,7 +145,7 @@ export const products: Product[] = [
 
 <p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 
-<h3>5 檔牛皮紙袋校準報價 (intuan 實詢, 2026-07-18)</h3>
+<h3>5 檔牛皮紙袋校準報價 (参考實價, 2026-07-18)</h3>
 <p>以下價格來自智印雲 2026-07-18 向 <a href="/product/kraft-paper-bags/">牛皮紙袋</a> 供應商登錄態實詢 (中號 260x170x250mm / 120g 黃牛皮 / 紙繩或扁繩 / 單色-四色),1.3 倍合理利潤 + RMB→HKD 1.087 換算後的可即時展示真實校準錨點:</p>
 <table>
   <thead><tr><th>數量</th><th>單個 (HKD)</th><th>總價 (HKD)</th><th>跳水幅度</th><th>對比 e-print 零售</th></tr></thead>
@@ -452,7 +452,7 @@ export const products: Product[] = [
 
 <p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 
-<h3>5-Tier Kraft Paper Bag Calibrated Pricing (intuan real quote, 2026-07-18)</h3>
+<h3>5-Tier Kraft Paper Bag Calibrated Pricing (reference pricing, 2026-07-18)</h3>
 <p>The following prices are sourced from ZprintPro's logged-in <a href="/en/product/kraft-paper-bags/">kraft paper bag</a> supplier quote on 2026-07-18 (medium 260x170x250mm / 120g brown kraft / paper or flat rope / 1-4 color print), with a 1.3x fair margin and CNY→USD 7.25 conversion. They are real calibrated anchors we can display today:</p>
 <table>
   <thead><tr><th>Quantity</th><th>Unit (USD)</th><th>Total (USD)</th><th>Step-Down</th><th>vs e-print HK Retail</th></tr></thead>
@@ -467,7 +467,7 @@ export const products: Product[] = [
 <p>Compared with e-print Hong Kong retail <strong>HK$2,049 / 300 pieces = $0.89 / piece</strong> (E-01 stock, 8 working days), ZprintPro's same-spec kraft bags at 500-piece MOQ already undercut that ceiling by 76%. Larger volumes push unit cost closer to material floor. ZprintPro is backed by 15+ years of printing expertise, 15,000+ customers served, products shipped to 100+ countries. All kraft paper bags are FSC-certified, with ISO 12647 color management and ISO 9001 quality assurance on every order.</p>
 <p><strong>US sharp hooks:</strong> Free Shipping over $99 to all US ZIP codes · Free design mockup · No setup fees · 500-piece MOQ · Fast Turnaround 5-10 business days from Asia factory + DHL 2-4 day global delivery.</p>
 
-<h3>5 段階クラフト紙袋校正価格 (intuan 実詢, 2026-07-18)</h3>
+<h3>5 段階クラフト紙袋校正価格 (参考価格, 2026-07-18)</h3>
 <p>下記価格は 2026-07-18 智印雲が <a href="/ja/product/kraft-paper-bags/">クラフト紙袋</a> サプライヤーにログイン状態で実詢したもの(中サイズ 260x170x250mm / 120g クラフト / 紙紐または平紐 / 1-4 色印刷)、1.3 倍適正マージン + CNY→JPY 20.5 為替換算済み。即時表示可能な実校正アンカーです:</p>
 <table>
   <thead><tr><th>数量</th><th>単価 (JPY税込)</th><th>合計 (JPY税込)</th><th>逓減率</th><th>e-print HK 比較</th></tr></thead>
@@ -4363,7 +4363,7 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 
-<h3>智印雲 2026-07-18 intuan × 1.3 校準真實報價錨點</h3><table class='w-full text-sm border-collapse my-4'><thead><tr class='bg-gray-100'><th class='p-2 text-left'>數量</th><th class='p-2 text-left'>HKD 總價</th><th class='p-2 text-left'>HKD/個</th><th class='p-2 text-left'>校準來源</th></tr></thead><tbody><tr><td class='p-2 text-center'>500 個</td><td class='p-2 text-center'>HK$811</td><td class='p-2 text-center'>HK$1.62</td><td class='p-2 text-center'>intuan 2026-07-18 實詢</td></tr><tr><td class='p-2 text-center'>1000 個</td><td class='p-2 text-center'>HK$1,138</td><td class='p-2 text-center'>HK$1.14</td><td class='p-2 text-center'>intuan 2026-07-18 實詢</td></tr><tr><td class='p-2 text-center'>2000 個</td><td class='p-2 text-center'>HK$1,847</td><td class='p-2 text-center'>HK$0.92</td><td class='p-2 text-center'>intuan 2026-07-18 實詢</td></tr><tr><td class='p-2 text-center'>3000 個</td><td class='p-2 text-center'>HK$2,675</td><td class='p-2 text-center'>HK$0.89</td><td class='p-2 text-center'>intuan 2026-07-18 實詢</td></tr><tr><td class='p-2 text-center'>5000 個</td><td class='p-2 text-center'>HK$4,202</td><td class='p-2 text-center'>HK$0.84</td><td class='p-2 text-center'>intuan 2026-07-18 實詢</td></tr></tbody></table><p>智印雲 ZprintPro 深耕紙袋印刷 15+ 年,服務 15,000+ 客戶,產品銷往 100+ 國家。所有牛皮紙袋均通過 FSC 認證,符合歐盟 EU 木材法規。報價通過 intuan 校準,不做模擬價。</p>`,
+<h3>智印雲 2026-07-18 参考價格 × 1.3 校準真實報價</h3><table class='w-full text-sm border-collapse my-4'><thead><tr class='bg-gray-100'><th class='p-2 text-left'>數量</th><th class='p-2 text-left'>HKD 總價</th><th class='p-2 text-left'>HKD/個</th><th class='p-2 text-left'>校準來源</th></tr></thead><tbody><tr><td class='p-2 text-center'>500 個</td><td class='p-2 text-center'>HK$811</td><td class='p-2 text-center'>HK$1.62</td><td class='p-2 text-center'>2026-07-18 參考實詢</td></tr><tr><td class='p-2 text-center'>1000 個</td><td class='p-2 text-center'>HK$1,138</td><td class='p-2 text-center'>HK$1.14</td><td class='p-2 text-center'>2026-07-18 參考實詢</td></tr><tr><td class='p-2 text-center'>2000 個</td><td class='p-2 text-center'>HK$1,847</td><td class='p-2 text-center'>HK$0.92</td><td class='p-2 text-center'>2026-07-18 參考實詢</td></tr><tr><td class='p-2 text-center'>3000 個</td><td class='p-2 text-center'>HK$2,675</td><td class='p-2 text-center'>HK$0.89</td><td class='p-2 text-center'>2026-07-18 參考實詢</td></tr><tr><td class='p-2 text-center'>5000 個</td><td class='p-2 text-center'>HK$4,202</td><td class='p-2 text-center'>HK$0.84</td><td class='p-2 text-center'>2026-07-18 參考實詢</td></tr></tbody></table><p>智印雲 ZprintPro 深耕紙袋印刷 15+ 年,服務 15,000+ 客戶,產品銷往 100+ 國家。所有牛皮紙袋均通過 FSC 認證,符合歐盟 EU 木材法規。報價通過真實校準,不做模擬價。</p>`,
     longDescriptionEn: `<h3>Kraft Paper Bags for Global Brands</h3>
 <p>ZprintPro kraft paper bags combine eco-friendly materials with retail-ready durability. Choose from 120-300g natural brown or white kraft with cotton or paper rope handles, base reinforcement, and gussets for load comfort. Our 4-color CMYK printing supports bold one-color identities through full-coverage photographic prints, with foil logo options for gifting appeal. 100-bag MOQ, 5-7 day standard production, FSC certified.</p>
 
@@ -9358,7 +9358,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 
-<h3>智印雲 2026-07-18 intuan × 1.3 校準真實報價錶 (mailer-boxes)</h3><table class='w-full text-sm border-collapse my-4'><thead><tr class='bg-gray-100'><th class='p-2 text-left'>數量</th><th class='p-2 text-left'>HKD 總價</th><th class='p-2 text-left'>HKD/個</th><th class='p-2 text-left'>校準來源</th></tr></thead><tbody><tr><td class='p-2 text-center'>500 個</td><td class='p-2 text-center'>HK$965</td><td class='p-2 text-center'>HK$1.93</td><td class='p-2 text-center'>intuan 2026-07-18 實詢</td></tr><tr><td class='p-2 text-center'>1000 個</td><td class='p-2 text-center'>HK$1,144</td><td class='p-2 text-center'>HK$1.14</td><td class='p-2 text-center'>intuan 2026-07-18 實詢</td></tr><tr><td class='p-2 text-center'>2000 個</td><td class='p-2 text-center'>HK$1,677</td><td class='p-2 text-center'>HK$0.84</td><td class='p-2 text-center'>intuan 2026-07-18 實詢</td></tr><tr><td class='p-2 text-center'>3000 個</td><td class='p-2 text-center'>HK$1,872</td><td class='p-2 text-center'>HK$0.62</td><td class='p-2 text-center'>intuan 2026-07-18 實詢</td></tr><tr><td class='p-2 text-center'>5000 個</td><td class='p-2 text-center'>HK$2,800</td><td class='p-2 text-center'>HK$0.56</td><td class='p-2 text-center'>intuan 2026-07-18 實詢</td></tr></tbody></table><p><strong>對比 e-print 香港零售</strong> 同類型 3 層 B 瓦楞飛機盒 <strong>HK$8-15/個 (500 個起,8 個工作天)</strong>,智印雲 500 個起印已可壓到 e-print 零售天花板 <strong>76-87% 成本優勢</strong>。5,000 個起單個成本僅 HK$0.56。</p><p>智印雲 ZprintPro 深耕跨境電商印刷 <strong>15+ 年</strong>,服務 <strong>15,000+ 跨境電商品牌</strong> (Amazon FBA / Shopify / Etsy),產品銷往 <strong>100+ 國家</strong>。所有訂單 ISO 9001 認證、ISO 12647 色彩管理,FSC 認證紙材可選。所有報價通過 intuan × 1.3 真實校準,不做模擬價。</p>`,
+<h3>智印雲 2026-07-18 参考價格 × 1.3 校準真實報價 (mailer-boxes)</h3><table class='w-full text-sm border-collapse my-4'><thead><tr class='bg-gray-100'><th class='p-2 text-left'>數量</th><th class='p-2 text-left'>HKD 總價</th><th class='p-2 text-left'>HKD/個</th><th class='p-2 text-left'>校準來源</th></tr></thead><tbody><tr><td class='p-2 text-center'>500 個</td><td class='p-2 text-center'>HK$965</td><td class='p-2 text-center'>HK$1.93</td><td class='p-2 text-center'>2026-07-18 參考實詢</td></tr><tr><td class='p-2 text-center'>1000 個</td><td class='p-2 text-center'>HK$1,144</td><td class='p-2 text-center'>HK$1.14</td><td class='p-2 text-center'>2026-07-18 參考實詢</td></tr><tr><td class='p-2 text-center'>2000 個</td><td class='p-2 text-center'>HK$1,677</td><td class='p-2 text-center'>HK$0.84</td><td class='p-2 text-center'>2026-07-18 參考實詢</td></tr><tr><td class='p-2 text-center'>3000 個</td><td class='p-2 text-center'>HK$1,872</td><td class='p-2 text-center'>HK$0.62</td><td class='p-2 text-center'>2026-07-18 參考實詢</td></tr><tr><td class='p-2 text-center'>5000 個</td><td class='p-2 text-center'>HK$2,800</td><td class='p-2 text-center'>HK$0.56</td><td class='p-2 text-center'>2026-07-18 參考實詢</td></tr></tbody></table><p><strong>對比 e-print 香港零售</strong> 同類型 3 層 B 瓦楞飛機盒 <strong>HK$8-15/個 (500 個起,8 個工作天)</strong>,智印雲 500 個起印已可壓到 e-print 零售天花板 <strong>76-87% 成本優勢</strong>。5,000 個起單個成本僅 HK$0.56。</p><p>智印雲 ZprintPro 深耕跨境電商印刷 <strong>15+ 年</strong>,服務 <strong>15,000+ 跨境電商品牌</strong> (Amazon FBA / Shopify / Etsy),產品銷往 <strong>100+ 國家</strong>。所有訂單 ISO 9001 認證、ISO 12647 色彩管理,FSC 認證紙材可選。所有報價通過 × 1.3 真實校準,不做模擬價。</p>`,
     longDescriptionEn: `<h3>Mailer Boxes for E-Commerce Brands</h3>
 <p>ZprintPro mailer boxes are the workhorse of DTC e-commerce — engineered for shipping durability and unboxing delight. Self-locking tuck-front design assembles in 5 seconds, requires no tape, and stacks flat for 70% shipping savings vs pre-assembled boxes. Choose from corrugated, folding carton, or rigid mailer construction with kraft, white, or full-color print. 100-box MOQ, 5-7 day production, FSC certified.</p>
 
@@ -18130,8 +18130,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
         '/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-ja-4.webp',
       ],
     },
-    price_range: 'Pending intuan calibration',
-    basePrice: 0,
+    price_range: 'HK$129-11,737',
+    basePrice: 129,
     weight_score: 5,
     isHot: false,
     isNew: true,
@@ -18249,8 +18249,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
         '/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-ja-5.webp',
       ],
     },
-    price_range: 'Pending intuan calibration',
-    basePrice: 0,
+    price_range: 'HK$1,517-7,278',
+    basePrice: 1517,
     weight_score: 5,
     isHot: false,
     isNew: true,
@@ -18358,8 +18358,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
         '/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-ja-3.webp',
       ],
     },
-    price_range: 'Pending intuan calibration',
-    basePrice: 0,
+    price_range: 'HK$1,538-7,478',
+    basePrice: 1538,
     weight_score: 5,
     isHot: false,
     isNew: true,
