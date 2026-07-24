@@ -7,89 +7,89 @@
     "ja": "ポスター印刷"
   },
   "currency_anchor": "HKD",
-  "markup_rule": "B2 digital non-member cost × 三段式 (成本≤200→×3, ≤500→×2.5, >500→×2.2) × HKD 1.087, 夹逼 e-print ×0.88~0.95",
+  "markup_rule": "B2 digital × (cost≤200→×3, ≤500→×2.5, >500→×2.2); A1 = e-banner ×0.95",
   "src": "anchor-b2-digital",
-  "anchor": "F:\\B2价格表非会员pdf.pdf — 深圳快印 B2 HP Indigo-15K",
+  "anchor": "B2非会员价; A1: https://hk.e-banner.com ×0.95",
   "anchorType": "factory-cost",
   "calibratedAt": "2026-07-25",
-  "note": "v14 K3 7/25 修订: 作废 e-print×0.95 方案, 改用 B2 数码三段式公式夹逼 e-print。A1 数码打不下 (594×840>740×510), A1 走喷绘另议, 本表只做 A2/A3。A3 拼版: 2 张 A3 = 1 个 B2 印张。白墨/满版色 v1 不接。其余纸材配置可扩展。",
+  "note": "v15 K3 7/25: 纯 B2 公式 (作废 e-print 夹逼)。A1 喷绘 e-banner 对标。",
   "configs": [
     {
-      "config": "A2 · 單面",
+      "config": "A2 · 铜版纸 · 157g · 單面",
       "tiers": [
         {
           "qty": 10,
-          "sell_hkd": 431,
+          "sell_hkd": 129,
           "weight_kg": null
         },
         {
           "qty": 20,
-          "sell_hkd": 431,
+          "sell_hkd": 198,
           "weight_kg": null
         },
         {
           "qty": 50,
-          "sell_hkd": 475,
+          "sell_hkd": 405,
           "weight_kg": null
         },
         {
           "qty": 100,
-          "sell_hkd": 561,
+          "sell_hkd": 625,
           "weight_kg": null
         },
         {
           "qty": 200,
-          "sell_hkd": 608,
+          "sell_hkd": 1200,
           "weight_kg": null
         },
         {
           "qty": 300,
-          "sell_hkd": 656,
+          "sell_hkd": 1562,
           "weight_kg": null
         },
         {
           "qty": 500,
-          "sell_hkd": 703,
+          "sell_hkd": 2574,
           "weight_kg": null
         }
       ]
     },
     {
-      "config": "A2 · 雙面",
+      "config": "A2 · 铜版纸 · 157g · 雙面",
       "tiers": [
         {
           "qty": 10,
-          "sell_hkd": 695,
+          "sell_hkd": 168,
           "weight_kg": null
         },
         {
           "qty": 20,
-          "sell_hkd": 695,
+          "sell_hkd": 276,
           "weight_kg": null
         },
         {
           "qty": 50,
-          "sell_hkd": 739,
+          "sell_hkd": 600,
           "weight_kg": null
         },
         {
           "qty": 100,
-          "sell_hkd": 846,
+          "sell_hkd": 950,
           "weight_kg": null
         },
         {
           "qty": 200,
-          "sell_hkd": 893,
+          "sell_hkd": 1628,
           "weight_kg": null
         },
         {
           "qty": 300,
-          "sell_hkd": 1017,
+          "sell_hkd": 2420,
           "weight_kg": null
         },
         {
           "qty": 500,
-          "sell_hkd": 1064,
+          "sell_hkd": 4004,
           "weight_kg": null
         }
       ]
@@ -99,37 +99,37 @@
       "tiers": [
         {
           "qty": 10,
-          "sell_hkd": 431,
+          "sell_hkd": 95,
           "weight_kg": null
         },
         {
           "qty": 20,
-          "sell_hkd": 431,
+          "sell_hkd": 129,
           "weight_kg": null
         },
         {
           "qty": 50,
-          "sell_hkd": 431,
+          "sell_hkd": 233,
           "weight_kg": null
         },
         {
           "qty": 100,
-          "sell_hkd": 475,
+          "sell_hkd": 405,
           "weight_kg": null
         },
         {
           "qty": 200,
-          "sell_hkd": 561,
+          "sell_hkd": 625,
           "weight_kg": null
         },
         {
           "qty": 300,
-          "sell_hkd": 561,
+          "sell_hkd": 913,
           "weight_kg": null
         },
         {
           "qty": 500,
-          "sell_hkd": 608,
+          "sell_hkd": 1309,
           "weight_kg": null
         }
       ]
@@ -139,117 +139,117 @@
       "tiers": [
         {
           "qty": 10,
-          "sell_hkd": 695,
+          "sell_hkd": 114,
           "weight_kg": null
         },
         {
           "qty": 20,
-          "sell_hkd": 695,
+          "sell_hkd": 168,
           "weight_kg": null
         },
         {
           "qty": 50,
-          "sell_hkd": 695,
+          "sell_hkd": 330,
           "weight_kg": null
         },
         {
           "qty": 100,
-          "sell_hkd": 739,
+          "sell_hkd": 600,
           "weight_kg": null
         },
         {
           "qty": 200,
-          "sell_hkd": 846,
+          "sell_hkd": 950,
           "weight_kg": null
         },
         {
           "qty": 300,
-          "sell_hkd": 846,
+          "sell_hkd": 1232,
           "weight_kg": null
         },
         {
           "qty": 500,
-          "sell_hkd": 893,
+          "sell_hkd": 2024,
           "weight_kg": null
         }
       ]
     },
     {
-      "config": "A2 · 單面",
+      "config": "A2 · 哑粉纸 · 157g · 單面",
       "tiers": [
         {
           "qty": 10,
-          "sell_hkd": 431,
+          "sell_hkd": 129,
           "weight_kg": null
         },
         {
           "qty": 20,
-          "sell_hkd": 431,
+          "sell_hkd": 198,
           "weight_kg": null
         },
         {
           "qty": 50,
-          "sell_hkd": 475,
+          "sell_hkd": 405,
           "weight_kg": null
         },
         {
           "qty": 100,
-          "sell_hkd": 561,
+          "sell_hkd": 625,
           "weight_kg": null
         },
         {
           "qty": 200,
-          "sell_hkd": 608,
+          "sell_hkd": 1200,
           "weight_kg": null
         },
         {
           "qty": 300,
-          "sell_hkd": 656,
+          "sell_hkd": 1562,
           "weight_kg": null
         },
         {
           "qty": 500,
-          "sell_hkd": 703,
+          "sell_hkd": 2574,
           "weight_kg": null
         }
       ]
     },
     {
-      "config": "A2 · 雙面",
+      "config": "A2 · 哑粉纸 · 157g · 雙面",
       "tiers": [
         {
           "qty": 10,
-          "sell_hkd": 695,
+          "sell_hkd": 168,
           "weight_kg": null
         },
         {
           "qty": 20,
-          "sell_hkd": 695,
+          "sell_hkd": 276,
           "weight_kg": null
         },
         {
           "qty": 50,
-          "sell_hkd": 739,
+          "sell_hkd": 600,
           "weight_kg": null
         },
         {
           "qty": 100,
-          "sell_hkd": 846,
+          "sell_hkd": 950,
           "weight_kg": null
         },
         {
           "qty": 200,
-          "sell_hkd": 893,
+          "sell_hkd": 1628,
           "weight_kg": null
         },
         {
           "qty": 300,
-          "sell_hkd": 1017,
+          "sell_hkd": 2420,
           "weight_kg": null
         },
         {
           "qty": 500,
-          "sell_hkd": 1064,
+          "sell_hkd": 4004,
           "weight_kg": null
         }
       ]
@@ -259,37 +259,37 @@
       "tiers": [
         {
           "qty": 10,
-          "sell_hkd": 431,
+          "sell_hkd": 95,
           "weight_kg": null
         },
         {
           "qty": 20,
-          "sell_hkd": 431,
+          "sell_hkd": 129,
           "weight_kg": null
         },
         {
           "qty": 50,
-          "sell_hkd": 431,
+          "sell_hkd": 233,
           "weight_kg": null
         },
         {
           "qty": 100,
-          "sell_hkd": 475,
+          "sell_hkd": 405,
           "weight_kg": null
         },
         {
           "qty": 200,
-          "sell_hkd": 561,
+          "sell_hkd": 625,
           "weight_kg": null
         },
         {
           "qty": 300,
-          "sell_hkd": 561,
+          "sell_hkd": 913,
           "weight_kg": null
         },
         {
           "qty": 500,
-          "sell_hkd": 608,
+          "sell_hkd": 1309,
           "weight_kg": null
         }
       ]
@@ -299,117 +299,117 @@
       "tiers": [
         {
           "qty": 10,
-          "sell_hkd": 695,
+          "sell_hkd": 114,
           "weight_kg": null
         },
         {
           "qty": 20,
-          "sell_hkd": 695,
+          "sell_hkd": 168,
           "weight_kg": null
         },
         {
           "qty": 50,
-          "sell_hkd": 695,
+          "sell_hkd": 330,
           "weight_kg": null
         },
         {
           "qty": 100,
-          "sell_hkd": 739,
+          "sell_hkd": 600,
           "weight_kg": null
         },
         {
           "qty": 200,
-          "sell_hkd": 846,
+          "sell_hkd": 950,
           "weight_kg": null
         },
         {
           "qty": 300,
-          "sell_hkd": 846,
+          "sell_hkd": 1232,
           "weight_kg": null
         },
         {
           "qty": 500,
-          "sell_hkd": 893,
+          "sell_hkd": 2024,
           "weight_kg": null
         }
       ]
     },
     {
-      "config": "A2 · 單面",
+      "config": "A2 · 铜版纸 · 250g · 單面",
       "tiers": [
         {
           "qty": 10,
-          "sell_hkd": 431,
+          "sell_hkd": 135,
           "weight_kg": null
         },
         {
           "qty": 20,
-          "sell_hkd": 431,
+          "sell_hkd": 210,
           "weight_kg": null
         },
         {
           "qty": 50,
-          "sell_hkd": 475,
+          "sell_hkd": 435,
           "weight_kg": null
         },
         {
           "qty": 100,
-          "sell_hkd": 561,
+          "sell_hkd": 675,
           "weight_kg": null
         },
         {
           "qty": 200,
-          "sell_hkd": 608,
+          "sell_hkd": 1144,
           "weight_kg": null
         },
         {
           "qty": 300,
-          "sell_hkd": 656,
+          "sell_hkd": 1694,
           "weight_kg": null
         },
         {
           "qty": 500,
-          "sell_hkd": 703,
+          "sell_hkd": 2794,
           "weight_kg": null
         }
       ]
     },
     {
-      "config": "A2 · 雙面",
+      "config": "A2 · 铜版纸 · 250g · 雙面",
       "tiers": [
         {
           "qty": 10,
-          "sell_hkd": 695,
+          "sell_hkd": 180,
           "weight_kg": null
         },
         {
           "qty": 20,
-          "sell_hkd": 695,
+          "sell_hkd": 300,
           "weight_kg": null
         },
         {
           "qty": 50,
-          "sell_hkd": 739,
+          "sell_hkd": 550,
           "weight_kg": null
         },
         {
           "qty": 100,
-          "sell_hkd": 846,
+          "sell_hkd": 1050,
           "weight_kg": null
         },
         {
           "qty": 200,
-          "sell_hkd": 893,
+          "sell_hkd": 1804,
           "weight_kg": null
         },
         {
           "qty": 300,
-          "sell_hkd": 1017,
+          "sell_hkd": 2684,
           "weight_kg": null
         },
         {
           "qty": 500,
-          "sell_hkd": 1064,
+          "sell_hkd": 4444,
           "weight_kg": null
         }
       ]
@@ -419,37 +419,37 @@
       "tiers": [
         {
           "qty": 10,
-          "sell_hkd": 431,
+          "sell_hkd": 98,
           "weight_kg": null
         },
         {
           "qty": 20,
-          "sell_hkd": 431,
+          "sell_hkd": 135,
           "weight_kg": null
         },
         {
           "qty": 50,
-          "sell_hkd": 431,
+          "sell_hkd": 248,
           "weight_kg": null
         },
         {
           "qty": 100,
-          "sell_hkd": 475,
+          "sell_hkd": 435,
           "weight_kg": null
         },
         {
           "qty": 200,
-          "sell_hkd": 561,
+          "sell_hkd": 675,
           "weight_kg": null
         },
         {
           "qty": 300,
-          "sell_hkd": 561,
+          "sell_hkd": 988,
           "weight_kg": null
         },
         {
           "qty": 500,
-          "sell_hkd": 608,
+          "sell_hkd": 1419,
           "weight_kg": null
         }
       ]
@@ -459,37 +459,97 @@
       "tiers": [
         {
           "qty": 10,
-          "sell_hkd": 695,
+          "sell_hkd": 120,
           "weight_kg": null
         },
         {
           "qty": 20,
-          "sell_hkd": 695,
+          "sell_hkd": 180,
           "weight_kg": null
         },
         {
           "qty": 50,
-          "sell_hkd": 695,
+          "sell_hkd": 360,
           "weight_kg": null
         },
         {
           "qty": 100,
-          "sell_hkd": 739,
+          "sell_hkd": 550,
           "weight_kg": null
         },
         {
           "qty": 200,
-          "sell_hkd": 846,
+          "sell_hkd": 1050,
           "weight_kg": null
         },
         {
           "qty": 300,
-          "sell_hkd": 846,
+          "sell_hkd": 1364,
           "weight_kg": null
         },
         {
           "qty": 500,
-          "sell_hkd": 893,
+          "sell_hkd": 2244,
+          "weight_kg": null
+        }
+      ]
+    },
+    {
+      "config": "A1 · PP/環保海報 (Yupo) · 單面 · 噴繪成品 · 不含安裝裱貼",
+      "tiers": [
+        {
+          "qty": 10,
+          "sell_hkd": 290,
+          "weight_kg": null
+        },
+        {
+          "qty": 20,
+          "sell_hkd": 580,
+          "weight_kg": null
+        },
+        {
+          "qty": 50,
+          "sell_hkd": 1450,
+          "weight_kg": null
+        },
+        {
+          "qty": 100,
+          "sell_hkd": 2900,
+          "weight_kg": null
+        },
+        {
+          "qty": 200,
+          "sell_hkd": 5800,
+          "weight_kg": null
+        }
+      ]
+    },
+    {
+      "config": "A1 · 相紙海報 · 單面 · 噴繪成品 · 不含安裝裱貼",
+      "tiers": [
+        {
+          "qty": 10,
+          "sell_hkd": 360,
+          "weight_kg": null
+        },
+        {
+          "qty": 20,
+          "sell_hkd": 720,
+          "weight_kg": null
+        },
+        {
+          "qty": 50,
+          "sell_hkd": 1800,
+          "weight_kg": null
+        },
+        {
+          "qty": 100,
+          "sell_hkd": 3600,
+          "weight_kg": null
+        },
+        {
+          "qty": 200,
+          "sell_hkd": 7200,
           "weight_kg": null
         }
       ]

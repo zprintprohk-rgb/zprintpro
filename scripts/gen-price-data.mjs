@@ -153,6 +153,23 @@ ${entries}
 export function getPriceTableForSlug(slug: string): PriceTableData | null {
   return PRICE_TABLE_MAP[slug] || null;
 }
+
+export function findClosestTierBatch(
+  slug: string,
+  qty: number,
+  configIndex: number = 0,
+): { qty: number; priceHKD: number; priceUSD: number; priceJPY: number; matched: boolean } | null {
+  const data = PRICE_TABLE_MAP[slug];
+  if (!data) return null;
+  const cfg = data.configs[configIndex];
+  if (!cfg || !cfg.tiers.length) return null;
+  let best = cfg.tiers[cfg.tiers.length - 1];
+  let matched = false;
+  for (const t of cfg.tiers) {
+    if (t.qty >= qty) { best = t; matched = t.qty === qty; break; }
+  }
+  return { qty: best.qty, priceHKD: best.priceHKD, priceUSD: best.priceUSD, priceJPY: best.priceJPY, matched };
+}
 `;
 
 fs.writeFileSync(OUT, output, 'utf-8');
