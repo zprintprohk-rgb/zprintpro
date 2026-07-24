@@ -1,0 +1,498 @@
+{
+  "sku": "posters",
+  "category": "posters",
+  "name": {
+    "zh-hk": "海報印刷",
+    "en": "Poster Printing",
+    "ja": "ポスター印刷"
+  },
+  "currency_anchor": "HKD",
+  "markup_rule": "B2 digital non-member cost × 三段式 (成本≤200→×3, ≤500→×2.5, >500→×2.2) × HKD 1.087, 夹逼 e-print ×0.88~0.95",
+  "src": "anchor-b2-digital",
+  "anchor": "F:\\B2价格表非会员pdf.pdf — 深圳快印 B2 HP Indigo-15K",
+  "anchorType": "factory-cost",
+  "calibratedAt": "2026-07-25",
+  "note": "v14 K3 7/25 修订: 作废 e-print×0.95 方案, 改用 B2 数码三段式公式夹逼 e-print。A1 数码打不下 (594×840>740×510), A1 走喷绘另议, 本表只做 A2/A3。A3 拼版: 2 张 A3 = 1 个 B2 印张。白墨/满版色 v1 不接。其余纸材配置可扩展。",
+  "configs": [
+    {
+      "config": "A2 · 單面",
+      "tiers": [
+        {
+          "qty": 10,
+          "sell_hkd": 431,
+          "weight_kg": null
+        },
+        {
+          "qty": 20,
+          "sell_hkd": 431,
+          "weight_kg": null
+        },
+        {
+          "qty": 50,
+          "sell_hkd": 475,
+          "weight_kg": null
+        },
+        {
+          "qty": 100,
+          "sell_hkd": 561,
+          "weight_kg": null
+        },
+        {
+          "qty": 200,
+          "sell_hkd": 608,
+          "weight_kg": null
+        },
+        {
+          "qty": 300,
+          "sell_hkd": 656,
+          "weight_kg": null
+        },
+        {
+          "qty": 500,
+          "sell_hkd": 703,
+          "weight_kg": null
+        }
+      ]
+    },
+    {
+      "config": "A2 · 雙面",
+      "tiers": [
+        {
+          "qty": 10,
+          "sell_hkd": 695,
+          "weight_kg": null
+        },
+        {
+          "qty": 20,
+          "sell_hkd": 695,
+          "weight_kg": null
+        },
+        {
+          "qty": 50,
+          "sell_hkd": 739,
+          "weight_kg": null
+        },
+        {
+          "qty": 100,
+          "sell_hkd": 846,
+          "weight_kg": null
+        },
+        {
+          "qty": 200,
+          "sell_hkd": 893,
+          "weight_kg": null
+        },
+        {
+          "qty": 300,
+          "sell_hkd": 1017,
+          "weight_kg": null
+        },
+        {
+          "qty": 500,
+          "sell_hkd": 1064,
+          "weight_kg": null
+        }
+      ]
+    },
+    {
+      "config": "A3 · 铜版纸 · 157g · 單面",
+      "tiers": [
+        {
+          "qty": 10,
+          "sell_hkd": 431,
+          "weight_kg": null
+        },
+        {
+          "qty": 20,
+          "sell_hkd": 431,
+          "weight_kg": null
+        },
+        {
+          "qty": 50,
+          "sell_hkd": 431,
+          "weight_kg": null
+        },
+        {
+          "qty": 100,
+          "sell_hkd": 475,
+          "weight_kg": null
+        },
+        {
+          "qty": 200,
+          "sell_hkd": 561,
+          "weight_kg": null
+        },
+        {
+          "qty": 300,
+          "sell_hkd": 561,
+          "weight_kg": null
+        },
+        {
+          "qty": 500,
+          "sell_hkd": 608,
+          "weight_kg": null
+        }
+      ]
+    },
+    {
+      "config": "A3 · 铜版纸 · 157g · 雙面",
+      "tiers": [
+        {
+          "qty": 10,
+          "sell_hkd": 695,
+          "weight_kg": null
+        },
+        {
+          "qty": 20,
+          "sell_hkd": 695,
+          "weight_kg": null
+        },
+        {
+          "qty": 50,
+          "sell_hkd": 695,
+          "weight_kg": null
+        },
+        {
+          "qty": 100,
+          "sell_hkd": 739,
+          "weight_kg": null
+        },
+        {
+          "qty": 200,
+          "sell_hkd": 846,
+          "weight_kg": null
+        },
+        {
+          "qty": 300,
+          "sell_hkd": 846,
+          "weight_kg": null
+        },
+        {
+          "qty": 500,
+          "sell_hkd": 893,
+          "weight_kg": null
+        }
+      ]
+    },
+    {
+      "config": "A2 · 單面",
+      "tiers": [
+        {
+          "qty": 10,
+          "sell_hkd": 431,
+          "weight_kg": null
+        },
+        {
+          "qty": 20,
+          "sell_hkd": 431,
+          "weight_kg": null
+        },
+        {
+          "qty": 50,
+          "sell_hkd": 475,
+          "weight_kg": null
+        },
+        {
+          "qty": 100,
+          "sell_hkd": 561,
+          "weight_kg": null
+        },
+        {
+          "qty": 200,
+          "sell_hkd": 608,
+          "weight_kg": null
+        },
+        {
+          "qty": 300,
+          "sell_hkd": 656,
+          "weight_kg": null
+        },
+        {
+          "qty": 500,
+          "sell_hkd": 703,
+          "weight_kg": null
+        }
+      ]
+    },
+    {
+      "config": "A2 · 雙面",
+      "tiers": [
+        {
+          "qty": 10,
+          "sell_hkd": 695,
+          "weight_kg": null
+        },
+        {
+          "qty": 20,
+          "sell_hkd": 695,
+          "weight_kg": null
+        },
+        {
+          "qty": 50,
+          "sell_hkd": 739,
+          "weight_kg": null
+        },
+        {
+          "qty": 100,
+          "sell_hkd": 846,
+          "weight_kg": null
+        },
+        {
+          "qty": 200,
+          "sell_hkd": 893,
+          "weight_kg": null
+        },
+        {
+          "qty": 300,
+          "sell_hkd": 1017,
+          "weight_kg": null
+        },
+        {
+          "qty": 500,
+          "sell_hkd": 1064,
+          "weight_kg": null
+        }
+      ]
+    },
+    {
+      "config": "A3 · 哑粉纸 · 157g · 單面",
+      "tiers": [
+        {
+          "qty": 10,
+          "sell_hkd": 431,
+          "weight_kg": null
+        },
+        {
+          "qty": 20,
+          "sell_hkd": 431,
+          "weight_kg": null
+        },
+        {
+          "qty": 50,
+          "sell_hkd": 431,
+          "weight_kg": null
+        },
+        {
+          "qty": 100,
+          "sell_hkd": 475,
+          "weight_kg": null
+        },
+        {
+          "qty": 200,
+          "sell_hkd": 561,
+          "weight_kg": null
+        },
+        {
+          "qty": 300,
+          "sell_hkd": 561,
+          "weight_kg": null
+        },
+        {
+          "qty": 500,
+          "sell_hkd": 608,
+          "weight_kg": null
+        }
+      ]
+    },
+    {
+      "config": "A3 · 哑粉纸 · 157g · 雙面",
+      "tiers": [
+        {
+          "qty": 10,
+          "sell_hkd": 695,
+          "weight_kg": null
+        },
+        {
+          "qty": 20,
+          "sell_hkd": 695,
+          "weight_kg": null
+        },
+        {
+          "qty": 50,
+          "sell_hkd": 695,
+          "weight_kg": null
+        },
+        {
+          "qty": 100,
+          "sell_hkd": 739,
+          "weight_kg": null
+        },
+        {
+          "qty": 200,
+          "sell_hkd": 846,
+          "weight_kg": null
+        },
+        {
+          "qty": 300,
+          "sell_hkd": 846,
+          "weight_kg": null
+        },
+        {
+          "qty": 500,
+          "sell_hkd": 893,
+          "weight_kg": null
+        }
+      ]
+    },
+    {
+      "config": "A2 · 單面",
+      "tiers": [
+        {
+          "qty": 10,
+          "sell_hkd": 431,
+          "weight_kg": null
+        },
+        {
+          "qty": 20,
+          "sell_hkd": 431,
+          "weight_kg": null
+        },
+        {
+          "qty": 50,
+          "sell_hkd": 475,
+          "weight_kg": null
+        },
+        {
+          "qty": 100,
+          "sell_hkd": 561,
+          "weight_kg": null
+        },
+        {
+          "qty": 200,
+          "sell_hkd": 608,
+          "weight_kg": null
+        },
+        {
+          "qty": 300,
+          "sell_hkd": 656,
+          "weight_kg": null
+        },
+        {
+          "qty": 500,
+          "sell_hkd": 703,
+          "weight_kg": null
+        }
+      ]
+    },
+    {
+      "config": "A2 · 雙面",
+      "tiers": [
+        {
+          "qty": 10,
+          "sell_hkd": 695,
+          "weight_kg": null
+        },
+        {
+          "qty": 20,
+          "sell_hkd": 695,
+          "weight_kg": null
+        },
+        {
+          "qty": 50,
+          "sell_hkd": 739,
+          "weight_kg": null
+        },
+        {
+          "qty": 100,
+          "sell_hkd": 846,
+          "weight_kg": null
+        },
+        {
+          "qty": 200,
+          "sell_hkd": 893,
+          "weight_kg": null
+        },
+        {
+          "qty": 300,
+          "sell_hkd": 1017,
+          "weight_kg": null
+        },
+        {
+          "qty": 500,
+          "sell_hkd": 1064,
+          "weight_kg": null
+        }
+      ]
+    },
+    {
+      "config": "A3 · 铜版纸 · 250g · 單面",
+      "tiers": [
+        {
+          "qty": 10,
+          "sell_hkd": 431,
+          "weight_kg": null
+        },
+        {
+          "qty": 20,
+          "sell_hkd": 431,
+          "weight_kg": null
+        },
+        {
+          "qty": 50,
+          "sell_hkd": 431,
+          "weight_kg": null
+        },
+        {
+          "qty": 100,
+          "sell_hkd": 475,
+          "weight_kg": null
+        },
+        {
+          "qty": 200,
+          "sell_hkd": 561,
+          "weight_kg": null
+        },
+        {
+          "qty": 300,
+          "sell_hkd": 561,
+          "weight_kg": null
+        },
+        {
+          "qty": 500,
+          "sell_hkd": 608,
+          "weight_kg": null
+        }
+      ]
+    },
+    {
+      "config": "A3 · 铜版纸 · 250g · 雙面",
+      "tiers": [
+        {
+          "qty": 10,
+          "sell_hkd": 695,
+          "weight_kg": null
+        },
+        {
+          "qty": 20,
+          "sell_hkd": 695,
+          "weight_kg": null
+        },
+        {
+          "qty": 50,
+          "sell_hkd": 695,
+          "weight_kg": null
+        },
+        {
+          "qty": 100,
+          "sell_hkd": 739,
+          "weight_kg": null
+        },
+        {
+          "qty": 200,
+          "sell_hkd": 846,
+          "weight_kg": null
+        },
+        {
+          "qty": 300,
+          "sell_hkd": 846,
+          "weight_kg": null
+        },
+        {
+          "qty": 500,
+          "sell_hkd": 893,
+          "weight_kg": null
+        }
+      ]
+    }
+  ]
+}

@@ -128,6 +128,12 @@ map['custom-flyers'] = {
   configs: fy.configs.map(c => ({ label: { 'zh-hk': c.config, en: c.config, ja: c.config }, tiers: normTiers(c.tiers) })),
 };
 
+// 9. posters.json — v14 K3 7/25 B2 digital anchor
+const posters = loadJSON('posters.json');
+const posterConfigs = posters.configs.map(c => ({ label: { 'zh-hk': c.config, en: c.config, ja: c.config }, tiers: normTiers(c.tiers) }));
+map['a2-posters'] = { source: 'posters.json (B2 digital ×3-stage formula)', productName: { 'zh-hk': 'A2海報', en: 'A2 Poster', ja: 'A2ポスター' }, defaultConfigIndex: 0, configs: posterConfigs };
+
+
 // Write output as compact JSON for each slug
 function ser(obj, indent = 2) {
   return JSON.stringify(obj, null, indent).replace(/'/g, "\\'");

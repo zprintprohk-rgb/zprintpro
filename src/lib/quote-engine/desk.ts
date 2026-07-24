@@ -258,6 +258,11 @@ registerEprintProduct('perfect-bound-books', booksEprint, 'perfect-bound-books',
 });
 registerSpecialFold('special-fold-leaflets', specialFoldLeaflets);
 
+// v14 K3 7/25: B2 posters digital anchor
+import postersYate98 from '@/data/price-tables/posters.json';
+registerYate98('a2-posters', postersYate98);
+registerYate98('a3-posters', postersYate98);
+
 // ============================================================
 // Config 字符串 → 人话 (3 locale)
 // ============================================================

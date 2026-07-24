@@ -46,7 +46,7 @@ import { coreProductFAQMap } from '@/data/product-faqs';
 import { RegionalContent, RegionalCta, RegionalTrustBadges } from '@/components/seo/RegionalContent';
 import { convertPriceRangeString, convertToFromPrice } from '@/lib/pricing';
 import { generateWhatsAppLink } from '@/lib/whatsapp';
-import { getPriceTableForSlug } from '@/lib/price-injector';
+import { getPriceTableForSlug, findClosestTierBatch } from '@/lib/price-injector';
 import ReferencePriceBlock from '@/components/pdp/referencepriceblock';
 import { getProductMainImage, getProductImages } from '@/lib/product-image';
 import { ProductWhyChooseUs } from '@/components/ProductWhyChooseUs';
@@ -247,8 +247,8 @@ export default function ProductPage({
       sku: '產品編號',
       category: '產品分類',
       deliveryTime: '交貨時間',
-      freeShipping: '滿$500免運費',
-      sameDay: '即日交貨',
+      freeShipping: '順豐快遞 · 運費實報',
+      sameDay: '標準交期',
       quality: '品質保證',
       minOrder: '最低訂購量',
     },
@@ -268,8 +268,8 @@ export default function ProductPage({
       sku: 'SKU',
       category: 'Category',
       deliveryTime: 'Delivery Time',
-      freeShipping: 'Free intl. shipping',
-      sameDay: 'Same-day delivery',
+      freeShipping: 'SF Express · Freight collect',
+      sameDay: 'Standard lead time',
       quality: 'Quality Guarantee',
       minOrder: 'Minimum Order',
     },
@@ -289,8 +289,8 @@ export default function ProductPage({
       sku: '製品番号',
       category: 'カテゴリー',
       deliveryTime: '納期',
-      freeShipping: '国際送料無料',
-      sameDay: '即日納品',
+      freeShipping: 'SF Express · 配送料実費',
+      sameDay: '標準納期',
       quality: '品質保証',
       minOrder: '最小注文数',
     },
@@ -417,7 +417,7 @@ export default function ProductPage({
                   <div className="flex items-center gap-1.5 mb-2">
                     <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-green-100 text-green-800 border border-green-200">
                       <svg className="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"/></svg>
-                      {locale === 'en' ? 'Free International Shipping' : '国際送料無料'}
+                      {locale === 'en' ? 'Free International Shipping' : 'SF Express · 配送料実費'}
                     </span>
                     <span className="text-xs text-gray-400">{locale === 'en' ? 'DHL/FedEx 3-5 days to USA, 2-4 days to Japan' : 'DHL/FedEx アメリカ3-5日、日本2-4日'}</span>
                   </div>
@@ -438,12 +438,19 @@ export default function ProductPage({
                 </div>
               </div>
 
-              {/* 报价计算器 (2026-07-13 v3: 单独渲染, 跟左 column 备注栏下面的
-                  QuantityTierInteractive 通过 ProductQuoteProvider 共享 selectedQuantity) */}
-              <div className="mb-5">
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">{t.specifications}</h3>
-                <QuoteCalculator product={product} locale={locale} />
-              </div>
+              {/* v14 方案A: price-table-backed SKU 由 ReferencePriceBlock 接管; 其余无表 SKU 仍走 QuoteCalculator */}
+              {(() => {
+                const hasPriceTable = !!findClosestTierBatch(product.slug, product.minQuantity || 500);
+                if (!hasPriceTable) {
+                  return (
+                    <div className="mb-5">
+                      <h3 className="text-lg font-semibold text-gray-900 mb-4">{t.specifications}</h3>
+                      <QuoteCalculator product={product} locale={locale} />
+                    </div>
+                  );
+                }
+                return null;
+              })()}
 
               {/* v13: 參考價格表 (server 端注入实际价格数据, 无匹配则降级不显示) */}
               {(() => {
