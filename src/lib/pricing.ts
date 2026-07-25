@@ -934,7 +934,10 @@ export function getDisplayAnchor(slug: string, locale: string): DisplayAnchor | 
   }
   const a = getUnitPriceAnchor(slug, locale);
   if (a) {
-    const labels = UNIT_LABEL[a.unitLabel as keyof typeof UNIT_LABEL] || UNIT_LABEL['個'];
+    // 原始 unitLabel 值杂乱 ('每個'/'每張'/'1冊'/'per sheet'...), 归一化到 5 类单位
+    const raw = a.unitLabel || '';
+    const key = /張|sheet/i.test(raw) ? '張' : /本|冊|book/i.test(raw) ? '本' : /枚/.test(raw) ? '枚' : /部|copy/i.test(raw) ? '部' : '個';
+    const labels = UNIT_LABEL[key];
     const unitLabel = locale === 'en' ? labels.en : locale === 'ja' ? labels.ja : labels.zh;
     const big = `${a.symbol}${fmt2(a.price)}`;
     const batch = `${a.symbol}${a.batchPrice.toLocaleString()}`;
@@ -942,8 +945,8 @@ export function getDisplayAnchor(slug: string, locale: string): DisplayAnchor | 
     const sub = locale === 'en'
       ? `From ${qtyStr} pcs · batch ${batch}`
       : locale === 'ja'
-      ? `${qtyStr}${a.unitLabel}〜 · 一括 ${batch}`
-      : `${qtyStr}${a.unitLabel}起批 · 整批 ${batch}`;
+      ? `${qtyStr}${key === '本' ? '冊' : key === '張' || key === '枚' ? '枚' : key === '部' ? '部' : '個'}〜 · 一括 ${batch}`
+      : `${qtyStr}${key}起批 · 整批 ${batch}`;
     return { big, unitLabel, sub };
   }
   return null;
