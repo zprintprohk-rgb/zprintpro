@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { ArrowRight, ChevronRight, Search, ShoppingBag, FileText, Tag, Package, ImageIcon, GraduationCap, CreditCard, Mail, BookOpen, Calendar, Gift, Flag, StickyNote } from 'lucide-react';
 import { Locale } from '@/lib/seo';
-import { shouldShowPrice, getQuoteLabel, convertToFromPrice, getPriceUnitWord } from '@/lib/pricing';
+import { shouldShowPrice, getQuoteLabel, convertToFromPrice, getPriceUnitWord, getDisplayAnchor } from '@/lib/pricing';
 import { getProductMainImage } from '@/lib/product-image';
 import { products, categories, getProductDisplayTitle, getProductDescription, getProductImageAlt } from '@/data/products';
 import { getWhatsAppLinkProps } from '@/lib/whatsapp';
@@ -271,15 +271,19 @@ export function HotProducts({ locale }: HotProductsProps) {
                       <p className="text-sm text-gray-500 line-clamp-2 mb-2 text-center h-[44px] leading-5">
                         {productDesc}
                       </p>
-                      {/* price area — 起价 + MOQ 副行 (2026-07-18 P7), clickable to PDP */}
+                      {/* price area — 单价小锚 + MOQ 副行 (2026-07-26 K3: getDisplayAnchor 优先), clickable to PDP */}
+                      {(() => { const anchor = getDisplayAnchor(product.slug, locale); return (
                       <div className="mb-2 text-center">
                         <Link href={`${localePrefix}/product/${product.slug}/`} className="text-[#F87314] font-bold text-sm tracking-wider hover:underline">
                           {locale === 'en' && <span className="text-xs font-medium text-gray-400 mr-1 tracking-normal">{t.from}</span>}
-                          {convertToFromPrice(product.price_range, locale, product.category_slug, product.slug)}
+                          {anchor ? anchor.big : convertToFromPrice(product.price_range, locale, product.category_slug, product.slug)}
+                          {anchor && <span className="text-xs font-normal text-gray-400 ml-0.5 tracking-normal">{anchor.unitLabel}</span>}
                           {locale !== 'en' && <span className="text-xs font-normal text-gray-400 ml-0.5 tracking-normal">{t.from}</span>}
                         </Link>
                         <p className="text-[11px] text-gray-400 leading-tight mt-0.5">
-                          {locale === 'zh-hk'
+                          {anchor
+                            ? anchor.sub
+                            : locale === 'zh-hk'
                             ? `${product.minQuantity}${getPriceUnitWord(product.price_range) || '件'}起訂 · 量大更優`
                             : locale === 'ja'
                             ? `${product.minQuantity}個〜 · 大口割引`
@@ -287,6 +291,7 @@ export function HotProducts({ locale }: HotProductsProps) {
                         </p>
                         <p className="text-[11px] text-gray-400 leading-tight mt-0.5">{t.freeDesign}</p>
                       </div>
+                      ); })()}
                       {/* dual buttons */}
                       <div className="flex gap-2">
                         <Link

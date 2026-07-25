@@ -44,7 +44,7 @@ import { getSkuSeo } from '@/data/sku-seo-data';
 import { generateFAQSchema } from '@/lib/faq-schema';
 import { coreProductFAQMap } from '@/data/product-faqs';
 import { RegionalContent, RegionalCta, RegionalTrustBadges } from '@/components/seo/RegionalContent';
-import { convertPriceRangeString, convertToFromPrice, getUnitPriceAnchor } from '@/lib/pricing';
+import { convertPriceRangeString, convertToFromPrice, getUnitPriceAnchor, getDisplayAnchor } from '@/lib/pricing';
 import { generateWhatsAppLink } from '@/lib/whatsapp';
 import { getPriceTableForSlug, findClosestTierBatch } from '@/lib/price-injector';
 import ReferencePriceBlock from '@/components/pdp/referencepriceblock';
@@ -87,12 +87,12 @@ export async function generateMetadata({
   
   const rushDescriptions: Record<string, Record<string, string>> = {
     'zh-hk': {
-      'flyers': '宣傳單張印刷，A4/A5/A6尺寸、157g銅版紙，100張起訂。小批量順豐快遞 · 運費實報，標準交期。',
-      'posters': 'A2/A1/A3海報印刷，防水材質，10張起訂。小批量順豐快遞 · 運費實報，標準交期 1-2 工作天。',
-      'stickers': '貼紙印刷，防水/PVC/透明材質，100張起訂，支持異形切割。小批量順豐快遞 · 運費實報，標準交期。',
-      'business-cards': '名片印刷，燙金、棉紙、局部UV工藝，100張起訂。小批量順豐快遞 · 運費實報，標準交期。',
-      'books': '畫冊印刷，騎馬釘/膠裝、封面覆膜，50本起訂。小批量順豐快遞 · 運費實報，標準交期。',
-      'banners': '易拉寶噴繪，鋁合金支架、高清噴繪，1個起訂。小批量順豐快遞 · 運費實報，標準交期。',
+      'flyers': '宣傳單張印刷，A4/A5/A6尺寸、157g銅版紙，100張起訂。滿$500包郵，標準交期。',
+      'posters': 'A2/A1/A3海報印刷，防水材質，10張起訂。滿$500包郵，標準交期 1-2 工作天。',
+      'stickers': '貼紙印刷，防水/PVC/透明材質，100張起訂，支持異形切割。滿$500包郵，標準交期。',
+      'business-cards': '名片印刷，燙金、棉紙、局部UV工藝，100張起訂。滿$500包郵，標準交期。',
+      'books': '畫冊印刷，騎馬釘/膠裝、封面覆膜，50本起訂。滿$500包郵，標準交期。',
+      'banners': '易拉寶噴繪，鋁合金支架、高清噴繪，1個起訂。滿$500包郵，標準交期。',
     },
   };
   
@@ -337,17 +337,38 @@ export default function ProductPage({
         <div className="lg:hidden bg-white border-b">
           <div className="max-w-[1320px] mx-auto px-4 py-2.5 flex items-center justify-between gap-3">
             <div className="min-w-0">
-              <div className="flex items-baseline gap-1">
-                <span className="text-lg font-extrabold text-[#F87314] whitespace-nowrap">
-                  {convertToFromPrice(product.price_range, locale, product.category_slug, product.slug)}
-                </span>
-                <span className="text-xs text-gray-400">
-                  {locale === 'zh-hk' ? '起' : locale === 'en' ? 'From' : '〜'}
-                </span>
-              </div>
-              <div className="text-[11px] text-gray-500 truncate">
-                {t.sameDay} · {t.freeShipping}
-              </div>
+              {(() => {
+                const anchor = getDisplayAnchor(product.slug, locale);
+                return anchor ? (
+                  <>
+                    <div className="flex items-baseline gap-1">
+                      <span className="text-lg font-extrabold text-[#F87314] whitespace-nowrap">
+                        {anchor.big}
+                      </span>
+                      <span className="text-xs text-gray-400">
+                        {anchor.unitLabel}{locale === 'zh-hk' ? '起' : locale === 'en' ? ' from' : '〜'}
+                      </span>
+                    </div>
+                    <div className="text-[11px] text-gray-500 truncate">
+                      {anchor.sub}
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className="flex items-baseline gap-1">
+                      <span className="text-lg font-extrabold text-[#F87314] whitespace-nowrap">
+                        {convertToFromPrice(product.price_range, locale, product.category_slug, product.slug)}
+                      </span>
+                      <span className="text-xs text-gray-400">
+                        {locale === 'zh-hk' ? '起' : locale === 'en' ? 'From' : '〜'}
+                      </span>
+                    </div>
+                    <div className="text-[11px] text-gray-500 truncate">
+                      {t.sameDay} · {t.freeShipping}
+                    </div>
+                  </>
+                );
+              })()}
             </div>
             <a
               href={generateWhatsAppLink(locale, { source: 'pdp-mobile-trustbar', productName: productTitle })}
@@ -400,19 +421,24 @@ export default function ProductPage({
                 {productDescription}
               </p>
               
-              {/* 价格显示 — 去色块简洁风格 */}
+              {/* 价格显示 — 去色块简洁风格 (2026-07-26 K3: 单价小锚主显示, 整批价降级小字) */}
               <div className="mb-5">
-                <div className="flex items-baseline gap-2 mb-1 flex-wrap">
-                  <span className="text-[33px] font-extrabold text-[#F87314] leading-tight">
-                    {convertToFromPrice(product.price_range, locale, product.category_slug, product.slug)}
-                  </span>
-                  <span className="text-sm text-gray-400">
-                    {locale === 'zh-hk' ? '起' : locale === 'en' ? 'From' : '〜'}
-                  </span>
-                  <span className="text-xs text-gray-400 ml-1">
-                    {locale === 'zh-hk' ? `完整價格 ${product.price_range}` : locale === 'en' ? `Full price: ${convertPriceRangeString(product.price_range, locale, product.category_slug, product.slug)}` : `価格 ${convertPriceRangeString(product.price_range, locale, product.category_slug, product.slug)}`}
-                  </span>
-                </div>
+                {(() => {
+                  const anchor = getDisplayAnchor(product.slug, locale);
+                  return (
+                    <div className="flex items-baseline gap-2 mb-1 flex-wrap">
+                      <span className="text-[33px] font-extrabold text-[#F87314] leading-tight">
+                        {anchor ? anchor.big : convertToFromPrice(product.price_range, locale, product.category_slug, product.slug)}
+                      </span>
+                      <span className="text-sm text-gray-400">
+                        {anchor ? `${anchor.unitLabel}${locale === 'zh-hk' ? '起' : locale === 'en' ? ' from' : '〜'}` : (locale === 'zh-hk' ? '起' : locale === 'en' ? 'From' : '〜')}
+                      </span>
+                      <span className="text-xs text-gray-400 ml-1">
+                        {anchor ? anchor.sub : (locale === 'zh-hk' ? `完整價格 ${product.price_range}` : locale === 'en' ? `Full price: ${convertPriceRangeString(product.price_range, locale, product.category_slug, product.slug)}` : `価格 ${convertPriceRangeString(product.price_range, locale, product.category_slug, product.slug)}`)}
+                      </span>
+                    </div>
+                  );
+                })()}
                 {locale !== 'zh-hk' && (
                   <div className="flex items-center gap-1.5 mb-2">
                     <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-green-100 text-green-800 border border-green-200">

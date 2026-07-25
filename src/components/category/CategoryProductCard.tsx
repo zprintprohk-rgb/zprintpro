@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { CreditCard, Tag, ShoppingBag, FileText, ImageIcon, Package, BookOpen, Flag, Calendar, Mail, Gift, GraduationCap, Box, Palette } from 'lucide-react';
 import { Product, getProductDisplayTitle } from '@/data/products';
 import { Locale } from '@/lib/seo';
-import { shouldShowPrice, convertToFromPrice, getPriceUnitWord } from '@/lib/pricing';
+import { shouldShowPrice, convertToFromPrice, getPriceUnitWord, getDisplayAnchor } from '@/lib/pricing';
 import { getProductMainImage } from '@/lib/product-image';
 
 interface CategoryProductCardProps {
@@ -72,10 +72,13 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
   const showPrice = shouldShowPrice(product.category_slug);
 
   // 2026-07-18 P6+P7: 起价 + MOQ 表达 — 'HK$4-16/本' → 'HK$4/本起' + '100本起訂 · 量大更優'
-  const fromPrice = convertToFromPrice(product.price_range, locale, product.category_slug, product.slug);
+  // 2026-07-26 K3: 优先走 getDisplayAnchor 单价小锚 (B类区间锚 > 价格表锚 > 旧 price_range 回退)
+  const anchor = getDisplayAnchor(product.slug, locale);
+  const fromPrice = anchor ? anchor.big : convertToFromPrice(product.price_range, locale, product.category_slug, product.slug);
   const unitWord = getPriceUnitWord(product.price_range);
-  const moqLine =
-    locale === 'zh-hk'
+  const moqLine = anchor
+    ? anchor.sub
+    : locale === 'zh-hk'
       ? `${product.minQuantity}${unitWord || '件'}${t.moqSuffix} · ${t.volumeNote}`
       : locale === 'ja'
       ? `${product.minQuantity}個${t.moqSuffix} · ${t.volumeNote}`
@@ -125,6 +128,7 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
           <Link href={`${localePrefix}/product/${product.slug}/`} className="text-[#F87314] font-bold text-base hover:underline">
             {locale === 'en' && <span className="text-xs font-medium text-gray-400 mr-1">{t.from}</span>}
             {fromPrice}
+            {anchor && <span className="text-xs font-normal text-gray-400 ml-0.5">{anchor.unitLabel}</span>}
             {locale !== 'en' && <span className="text-xs font-normal text-gray-400 ml-0.5">{t.from}</span>}
           </Link>
           <p className="text-[11px] text-gray-400 leading-tight mt-0.5">{moqLine}</p>

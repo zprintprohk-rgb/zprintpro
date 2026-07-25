@@ -870,6 +870,85 @@ export function getUnitPriceAnchor(slug: string, locale: string): { price: numbe
     unitLabel: l.unitLabel,
   };
 }
+/**
+ * 2026-07-26 K3 展示层单价锚（唯一入口）
+ * PDP hero / 信任条 / 卡片一律走 getDisplayAnchor，禁止直接拿 price_range 整批起价当主锚。
+ * 优先级: OVERRIDE 区间锚 > UNIT_PRICE_ANCHORS 表锚 > null(调用方回退 convertToFromPrice)
+ */
+
+export interface DisplayAnchor {
+  big: string;       // 主锚: "HK$0.22" 或 "HK$0.50-3.00"
+  unitLabel: string; // 每個 / 每張 / 每本 (本地化)
+  sub: string;       // 小字: "10,000個起批 · 整批 HK$2,198" 或 "實價按規格報價"
+}
+
+/** B 类/特殊规则区间锚 (HKD 基准, en/ja 自动换算) */
+const DISPLAY_ANCHOR_OVERRIDES: Record<string, { low: number; high: number; unit: '個' | '張' | '本' | '部' | '枚' }> = {
+  'white-card-boxes':    { low: 0.50, high: 3.00,  unit: '個' }, // 专版白卡彩盒(非拼版)
+  'rigid-boxes':         { low: 2.00, high: 10.00, unit: '個' }, // 精装盒
+  'hardcover-books':     { low: 5.00, high: 10.00, unit: '本' }, // 精装书
+  'graduation-yearbook': { low: 5.00, high: 10.00, unit: '本' }, // 毕业纪念册(精装)
+  'textbooks':           { low: 1.00, high: 5.00,  unit: '本' }, // 教科书/校园
+  'desk-calendars':      { low: 8.00, high: 25.00, unit: '本' }, // 台历(减半)
+  'white-card-bags':     { low: 0.70, high: 3.50,  unit: '個' }, // 白卡手提袋(减半)
+  'gift-bags':           { low: 5.00, high: 10.00, unit: '個' }, // 礼品袋(减半)
+  'eco-paper-bags':      { low: 1.50, high: 4.00,  unit: '個' },
+  'handle-bags':         { low: 1.50, high: 4.00,  unit: '個' },
+  'large-bags':          { low: 3.00, high: 7.50,  unit: '個' }, // 减半
+  'doujinshi-printing':  { low: 5.00, high: 10.00, unit: '部' }, // 同人本
+  'acrylic-keychain':    { low: 3.00, high: 10.00, unit: '個' },
+  'can-badge':           { low: 1.00, high: 5.00,  unit: '個' },
+  'postcard-set':        { low: 1.00, high: 5.00,  unit: '枚' },
+  'eco-tote-bag':        { low: 5.00, high: 10.00, unit: '個' },
+  'a1-posters':          { low: 29.00, high: 29.00, unit: '張' }, // 喷绘实价(诚实锚, K3 标注待 user 拍板)
+};
+
+const UNIT_LABEL: Record<string, { zh: string; en: string; ja: string }> = {
+  '個': { zh: '每個', en: '/pc', ja: '個あたり' },
+  '張': { zh: '每張', en: '/sheet', ja: '枚あたり' },
+  '本': { zh: '每本', en: '/book', ja: '冊あたり' },
+  '部': { zh: '每部', en: '/copy', ja: '部あたり' },
+  '枚': { zh: '每枚', en: '/pc', ja: '枚あたり' },
+};
+
+function fmt2(n: number): string {
+  return n.toFixed(2);
+}
+
+export function getDisplayAnchor(slug: string, locale: string): DisplayAnchor | null {
+  const ov = DISPLAY_ANCHOR_OVERRIDES[slug];
+  if (ov) {
+    const labels = UNIT_LABEL[ov.unit];
+    const unitLabel = locale === 'en' ? labels.en : locale === 'ja' ? labels.ja : labels.zh;
+    if (locale === 'zh-hk') {
+      const big = ov.low === ov.high ? `HK$${fmt2(ov.low)}` : `HK$${fmt2(ov.low)}-${fmt2(ov.high)}`;
+      return { big, unitLabel, sub: '實價按規格報價 · 滿$500包郵' };
+    }
+    const cur = locale === 'ja' ? 'JPY' : 'USD';
+    const sym = locale === 'ja' ? '¥' : '$';
+    const lo = convertCurrency(ov.low, cur);
+    const hi = convertCurrency(ov.high, cur);
+    const f = (n: number) => (cur === 'JPY' ? String(Math.round(n)) : fmt2(n));
+    const big = ov.low === ov.high ? `${sym}${f(lo)}` : `${sym}${f(lo)}-${f(hi)}`;
+    return { big, unitLabel, sub: locale === 'ja' ? '仕様により正式見積 · 送料無料条件あり' : 'Final quote by specs · Free shipping over $500' };
+  }
+  const a = getUnitPriceAnchor(slug, locale);
+  if (a) {
+    const labels = UNIT_LABEL[a.unitLabel as keyof typeof UNIT_LABEL] || UNIT_LABEL['個'];
+    const unitLabel = locale === 'en' ? labels.en : locale === 'ja' ? labels.ja : labels.zh;
+    const big = `${a.symbol}${fmt2(a.price)}`;
+    const batch = `${a.symbol}${a.batchPrice.toLocaleString()}`;
+    const qtyStr = a.qty.toLocaleString();
+    const sub = locale === 'en'
+      ? `From ${qtyStr} pcs · batch ${batch}`
+      : locale === 'ja'
+      ? `${qtyStr}${a.unitLabel}〜 · 一括 ${batch}`
+      : `${qtyStr}${a.unitLabel}起批 · 整批 ${batch}`;
+    return { big, unitLabel, sub };
+  }
+  return null;
+}
+
 // 2026-07-13 Step 2: 用 getLiveFxRates() 取代硬编码
 export function convertCurrency(hkdAmount: number, targetCurrency: 'HKD' | 'USD' | 'GBP' | 'AUD' | 'JPY'): number {
   const rates = getLiveFxRates();
