@@ -247,7 +247,7 @@ export default function ProductPage({
       sku: '產品編號',
       category: '產品分類',
       deliveryTime: '交貨時間',
-      freeShipping: '小批量順豐快遞 · 運費實報',
+      freeShipping: '滿$500包郵',
       sameDay: '標準交期',
       quality: '品質保證',
       minOrder: '最低訂購量',
@@ -268,7 +268,7 @@ export default function ProductPage({
       sku: 'SKU',
       category: 'Category',
       deliveryTime: 'Delivery Time',
-      freeShipping: 'Small-batch SF Express · Freight collect',
+      freeShipping: 'Free shipping over $500',
       sameDay: 'Standard lead time',
       quality: 'Quality Guarantee',
       minOrder: 'Minimum Order',
@@ -289,7 +289,7 @@ export default function ProductPage({
       sku: '製品番号',
       category: 'カテゴリー',
       deliveryTime: '納期',
-      freeShipping: '小ロット SF Express · 配送料実費',
+      freeShipping: '$500 相当以上 送料無料',
       sameDay: '標準納期',
       quality: '品質保証',
       minOrder: '最小注文数',
@@ -417,7 +417,7 @@ export default function ProductPage({
                   <div className="flex items-center gap-1.5 mb-2">
                     <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-green-100 text-green-800 border border-green-200">
                       <svg className="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"/></svg>
-                      {locale === 'en' ? 'Free International Shipping' : 'SF Express · 配送料実費'}
+                      {locale === 'en' ? 'Free shipping over $500' : '$500 相当以上 送料無料'}
                     </span>
                     <span className="text-xs text-gray-400">{locale === 'en' ? 'DHL/FedEx 3-5 days to USA, 2-4 days to Japan' : 'DHL/FedEx アメリカ3-5日、日本2-4日'}</span>
                   </div>
