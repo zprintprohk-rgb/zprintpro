@@ -44,7 +44,9 @@ const REFERENCE_LABEL: Record<string, string> = {
 };
 
 function getShippingText(w: number | null, locale: string): string {
-  return locale === "ja" ? "$500相当以上 送料無料" : locale === "en" ? "Free over $500" : "滿$500包郵 (順豐/物流) · 未滿$500運費實報";
+  if (w === null || w === undefined) return locale === "ja" ? "配送料別途" : locale === "en" ? "Shipping TBD" : "運費另計";
+  if (w > 30) return locale === "ja" ? "配送料別途見積" : locale === "en" ? "Freight quoted separately" : "物流另行報價";
+  return locale === "ja" ? "SF Express (着払い)" : locale === "en" ? "SF Express (collect)" : "順豐到付";
 }
 
 function buildWhatsAppMessage(

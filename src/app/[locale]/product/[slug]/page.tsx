@@ -392,8 +392,7 @@ export default function ProductPage({
                   : buildProductH1Ja(productTitle, product.category_slug)}
               </h1>
               
-              {/* v18: RushDeliveryBadge kept for digital fast-turn categories (flyers, stickers) */}
-              {['flyers', 'stickers'].includes(product.category_slug) && (
+              {['flyers', 'posters', 'stickers', 'business-cards', 'books', 'banners'].includes(product.category_slug) && (
                 <RushDeliveryBadge locale={locale} />
               )}
               
@@ -401,69 +400,59 @@ export default function ProductPage({
                 {productDescription}
               </p>
               
-              {/* v18: unit price anchor — A class SKUs show real unit price with batch info */}
-              {(() => {
-                const ua = getUnitPriceAnchor(product.slug, locale);
-                if (ua) {
-                  return (
-                    <div className="mb-5">
-                      <div className="flex items-baseline gap-2 mb-1 flex-wrap">
-                        <span className="text-[33px] font-extrabold text-[#F87314] leading-tight">
-                          {ua.display}
-                        </span>
-                        <span className="text-base font-semibold text-gray-700">
-                          <span className="text-sm text-gray-400">/ </span>
-                          {ua.unitLabel} {locale === 'zh-hk' ? '起' : locale === 'en' ? 'from' : 'から'}
-                        </span>
-                      </div>
-                      <p className="text-xs text-gray-400 mt-1">
-                        {ua.qty.toLocaleString()}{locale === 'zh-hk' ? '件起批 · 整批' : locale === 'en' ? ' pcs min · Batch' : '件から·バッチ'} {locale === 'en' ? '$' : locale === 'ja' ? '' : 'HK$'}{ua.batchPrice.toLocaleString()} {locale === 'zh-hk' ? '起' : locale === 'en' ? 'from' : 'から'}
-                      </p>
-                      <span className="inline-flex items-center gap-1 mt-2 text-xs font-medium text-green-700 bg-green-50 px-2.5 py-1 rounded-full border border-green-200">
-                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"/></svg>
-                        {locale === 'zh-hk' ? '滿$500包郵到手' : locale === 'en' ? 'Free Shipping $99+' : '5000円以上送料無料'}
-                      </span>
-                    </div>
-                  );
-                }
-                const isBClass = ['a4-flyers','a3-flyers','rigid-boxes','hardcover-books','saddle-stitch','perfect-bound','exercise-books','a5-flyers','white-card-boxes'].includes(product.slug);
-                if (isBClass) {
-                  return (
-                    <div className="mb-5">
-                      <div className="flex items-baseline gap-2 mb-1 flex-wrap">
-                        <span className="text-[33px] font-extrabold text-[#F87314] leading-tight">
-                          {locale === 'zh-hk' ? '每個HK$0.5-3起' : locale === 'en' ? '$0.5-3/pcs from' : '1個¥50-300から'}
-                        </span>
-                      </div>
-                      <p className="text-xs text-gray-400 mt-1">
-                        {locale === 'zh-hk' ? '實價按規格報價 · 歡迎WhatsApp查詢' : locale === 'en' ? 'Price varies by specs · Contact us on WhatsApp' : '仕様により異なります · WhatsAppでお問い合わせ'}
-                      </p>
-                      <a href={locale === 'zh-hk' ? 'https://wa.me/8618126380255' : locale === 'en' ? 'https://wa.me/8618126380255?text=Hi%20ZprintPro' : 'https://wa.me/8618126380255?text=ZprintPro%E3%81%AB%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B'} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 mt-3 px-4 py-2 bg-green-500 text-white text-sm font-medium rounded-lg hover:bg-green-600 transition-colors">
-                        <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                        {locale === 'zh-hk' ? 'WhatsApp 查價' : locale === 'en' ? 'Get a Quote' : '見積もり依頼'}
-                      </a>
-                      <span className="inline-flex items-center gap-1 mt-3 text-xs font-medium text-green-700 bg-green-50 px-2.5 py-1 rounded-full border border-green-200">
-                        <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"/></svg>
-                        {locale === 'zh-hk' ? '滿$500包郵到手' : locale === 'en' ? 'Free Shipping $99+' : '5000円以上送料無料'}
-                      </span>
-                    </div>
-                  );
-                }
-                return (
-                  <div className="mb-5">
-                    <div className="flex items-baseline gap-2 mb-1 flex-wrap">
-                      <span className="text-[33px] font-extrabold text-[#F87314] leading-tight">
-                        {convertToFromPrice(product.price_range, locale, product.category_slug, product.slug)}
-                      </span>
-                      <span className="text-sm text-gray-400">
-                        {locale === 'zh-hk' ? '起' : locale === 'en' ? 'From' : '〜'}
-                      </span>
-                    </div>
+              {/* 价格显示 — 去色块简洁风格 */}
+              <div className="mb-5">
+                <div className="flex items-baseline gap-2 mb-1 flex-wrap">
+                  <span className="text-[33px] font-extrabold text-[#F87314] leading-tight">
+                    {convertToFromPrice(product.price_range, locale, product.category_slug, product.slug)}
+                  </span>
+                  <span className="text-sm text-gray-400">
+                    {locale === 'zh-hk' ? '起' : locale === 'en' ? 'From' : '〜'}
+                  </span>
+                  <span className="text-xs text-gray-400 ml-1">
+                    {locale === 'zh-hk' ? `完整價格 ${product.price_range}` : locale === 'en' ? `Full price: ${convertPriceRangeString(product.price_range, locale, product.category_slug, product.slug)}` : `価格 ${convertPriceRangeString(product.price_range, locale, product.category_slug, product.slug)}`}
+                  </span>
+                </div>
+                {locale !== 'zh-hk' && (
+                  <div className="flex items-center gap-1.5 mb-2">
+                    <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-green-100 text-green-800 border border-green-200">
+                      <svg className="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7"/></svg>
+                      {locale === 'en' ? 'Free International Shipping' : 'SF Express · 配送料実費'}
+                    </span>
+                    <span className="text-xs text-gray-400">{locale === 'en' ? 'DHL/FedEx 3-5 days to USA, 2-4 days to Japan' : 'DHL/FedEx アメリカ3-5日、日本2-4日'}</span>
                   </div>
-                );
+                )}
+                <div className="flex flex-wrap gap-5 mt-3">
+                  <span className="inline-flex items-center gap-1.5 text-base text-gray-600">
+                    <svg className="w-5 h-5 text-green-600" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
+                    {t.sameDay}
+                  </span>
+                  <span className="inline-flex items-center gap-1.5 text-base text-gray-600">
+                    <svg className="w-5 h-5 text-amber-500" fill="currentColor" viewBox="0 0 20 20"><path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/></svg>
+                    {t.quality}
+                  </span>
+                  <span className="inline-flex items-center gap-1.5 text-base text-gray-600">
+                    <svg className="w-5 h-5 text-[#2873F5]" fill="currentColor" viewBox="0 0 20 20"><path d="M8 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM15 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"/><path d="M3 4a1 1 0 00-1 1v10a1 1 0 001 1h1.05a2.5 2.5 0 014.9 0H10a1 1 0 001-1V5a1 1 0 00-1-1H3zM14 7a1 1 0 00-1 1v6.05A2.5 2.5 0 0115.95 16H17a1 1 0 001-1v-5a1 1 0 00-.293-.707l-2-2A1 1 0 0015 7h-1z"/></svg>
+                    {t.freeShipping}
+                  </span>
+                </div>
+              </div>
+
+              {/* v14 方案A: price-table-backed SKU 由 ReferencePriceBlock 接管; 其余无表 SKU 仍走 QuoteCalculator */}
+              {(() => {
+                const hasPriceTable = !!findClosestTierBatch(product.slug, product.minQuantity || 500);
+                if (!hasPriceTable) {
+                  return (
+                    <div className="mb-5">
+                      <h3 className="text-lg font-semibold text-gray-900 mb-4">{t.specifications}</h3>
+                      <QuoteCalculator product={product} locale={locale} />
+                    </div>
+                  );
+                }
+                return null;
               })()}
 
-              {/* v18: A-class SKUs keep ReferencePriceBlock (real price table) */}
+              {/* v13: 參考價格表 (server 端注入实际价格数据, 无匹配则降级不显示) */}
               {(() => {
                 const priceData = getPriceTableForSlug(product.slug);
                 if (priceData) {
