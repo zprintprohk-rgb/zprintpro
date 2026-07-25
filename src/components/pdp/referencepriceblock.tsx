@@ -105,7 +105,7 @@ export default function ReferencePriceBlock({ data, locale, whatsappNumber }: Pr
               <th className="px-4 py-3 font-medium text-gray-700">{locale==="ja"?"数量":locale==="en"?"Qty":"數量"}</th>
               <th className="px-4 py-3 font-medium text-gray-700">{locale==="ja"?"ロット価格":locale==="en"?"Batch Price":"整批參考價"}</th>
               <th className="px-4 py-3 font-medium text-gray-700 hidden sm:table-cell">{locale==="ja"?"単価目安":locale==="en"?"Avg/pc":"平均每件"}</th>
-              <th className="px-4 py-3 font-medium text-gray-700 hidden sm:table-cell">{locale==="ja"?"配送":locale==="en"?"Shipping":"運送"}</th>
+              
               <th className="px-4 py-3"></th>
             </tr>
           </thead>
@@ -122,7 +122,7 @@ export default function ReferencePriceBlock({ data, locale, whatsappNumber }: Pr
                   <td className="px-4 py-3 font-medium text-gray-900">{tier.qty.toLocaleString()}<span className="text-gray-400 ml-1">{locale==="ja"?"個":"個"}</span></td>
                   <td className="px-4 py-3 text-gray-900 font-medium">{symbol}{batchPrice.toLocaleString()}</td>
                   <td className="px-4 py-3 text-gray-500 hidden sm:table-cell">{symbol}{avgDisplay}{locale==="ja"?"/個":locale==="en"?"/pc":"/個"}</td>
-                  <td className="px-4 py-3 text-gray-500 text-xs hidden sm:table-cell">{getShippingText(tier.weightKg, locale)}</td>
+                  
                   <td className="px-3 py-3">
                     <a href={waUrl} target="_blank" rel="noopener noreferrer"
                       className={`inline-flex items-center gap-1 px-3 py-1.5 rounded-lg text-xs font-medium transition-all ${isSelected?"bg-green-600 text-white hover:bg-green-700":"bg-green-100 text-green-700 hover:bg-green-200"}`}
