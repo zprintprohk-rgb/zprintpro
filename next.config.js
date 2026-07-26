@@ -110,6 +110,66 @@ function buildGuideRedirects() {
     });
   }
 
+  // 2026-07-27 v22: 名片 → 賀卡 改造 (K3 拍板方案 b, §11 憲法長期衝突清理)
+  // 6 SKU × 3 locale + 1 类目 × 3 locale = 21 条 301
+  // buying guide 旧 slug (business-card-buying-guide → greeting-card-buying-guide) 也走 next.config.js
+  // 完整 7 旧 SKU 类目 slug → 新 slug 映射
+  const V22_REDIRECTS = [
+    // 6 SKU 1:1 映射
+    ['premium-business-cards', 'premium-greeting-cards'],
+    ['thick-business-cards-400g', 'thick-greeting-cards-400g'],
+    ['foil-business-cards', 'foil-greeting-cards'],
+    ['spot-uv-business-cards', 'spot-uv-greeting-cards'],
+    ['matte-business-cards', 'matte-greeting-cards'],
+    ['rounded-corner-cards', 'rounded-corner-greeting-cards'],
+    // 类目
+    ['business-cards', 'greeting-cards'],
+    // buying guide
+    ['business-card-buying-guide', 'greeting-card-buying-guide'],
+  ];
+  for (const [oldSlug, newSlug] of V22_REDIRECTS) {
+    for (const locale of LOCALES) {
+      // 不带尾斜杠版本
+      rules.push({
+        source: `/${locale}/product/${oldSlug}`,
+        destination: `/${locale}/product/${newSlug}`,
+        permanent: true,
+      });
+      // 带尾斜杠版本 (避免 trailingSlash 二次 308, K3 7/15 fix)
+      rules.push({
+        source: `/${locale}/product/${oldSlug}/`,
+        destination: `/${locale}/product/${newSlug}/`,
+        permanent: true,
+      });
+    }
+  }
+  // 类目路径 /category/business-cards/ → /category/greeting-cards/ (3 locale)
+  for (const locale of LOCALES) {
+    rules.push({
+      source: `/${locale}/category/business-cards`,
+      destination: `/${locale}/category/greeting-cards`,
+      permanent: true,
+    });
+    rules.push({
+      source: `/${locale}/category/business-cards/`,
+      destination: `/${locale}/category/greeting-cards/`,
+      permanent: true,
+    });
+  }
+  // buying guide /blog/business-card-buying-guide/ → /blog/greeting-card-buying-guide/ (3 locale)
+  for (const locale of LOCALES) {
+    rules.push({
+      source: `/${locale}/blog/business-card-buying-guide`,
+      destination: `/${locale}/blog/greeting-card-buying-guide`,
+      permanent: true,
+    });
+    rules.push({
+      source: `/${locale}/blog/business-card-buying-guide/`,
+      destination: `/${locale}/blog/greeting-card-buying-guide/`,
+      permanent: true,
+    });
+  }
+
   return rules;
 }
 

@@ -500,7 +500,7 @@ export const paperBagsFAQs: FAQItem[] = [
   },
 ];
 
-// 通用 FAQ — 適用所有未自定義的 category（business-cards / books / calendars /
+// 通用 FAQ — 適用所有未自定義的 category（greeting-cards / books / calendars /
 // menus / banners / red-packets / envelopes / educational）
 // 含 6 個最高頻問題：最低訂量 / 印刷工期 / 配送 / 設計稿要求 / 付款方式 / 環保認證
 export const generalProductFAQs: FAQItem[] = [
@@ -609,7 +609,7 @@ export const coreProductFAQMap: Record<string, FAQItem[]> = {
   posters: postersFAQs,
   'paper-bags': paperBagsFAQs,
   // 通用 FAQ 兜底 — 適用所有未自定義的 category
-  'business-cards': generalProductFAQs,
+  'greeting-cards': generalProductFAQs,
   books: generalProductFAQs,
   calendars: generalProductFAQs,
   menus: generalProductFAQs,

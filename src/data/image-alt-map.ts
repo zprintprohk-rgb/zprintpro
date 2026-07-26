@@ -18,9 +18,9 @@ export const altTagMap: Record<string, Record<string, string>> = {
     en: 'sticker-printing-waterproof-pvc-clear-hong-kong-english',
     ja: 'シール印刷-防水PVC透明-香港-日本語',
   },
-  'business-cards': {
+  'greeting-cards': {
     'zh-hk': '名片印刷-燙金棉紙局部UV-香港-繁體中文',
-    en: 'business-card-printing-foil-cotton-spot-uv-hong-kong-english',
+    en: 'greeting-card-printing-foil-cotton-spot-uv-hong-kong-english',
     ja: '名刺印刷-箔押しコットン局部UV-香港-日本語',
   },
   booklets: {

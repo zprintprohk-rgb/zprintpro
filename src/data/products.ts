@@ -84,7 +84,7 @@ export const categories: Category[] = [
   { slug: 'packaging', name: '包裝盒定製', nameEn: 'Packaging', nameJa: 'パッケージ印刷', name_zh: '包裝盒定製', name_en: 'Packaging', name_ja: 'パッケージ印刷', sort_order: 3 },
   { slug: 'posters', name: '定製海報', nameEn: 'Posters', nameJa: 'ポスター印刷', name_zh: '定製海報', name_en: 'Posters', name_ja: 'ポスター印刷', sort_order: 4 },
   { slug: 'paper-bags', name: '紙袋印刷', nameEn: 'Paper Bags', nameJa: '紙袋印刷', name_zh: '紙袋印刷', name_en: 'Paper Bags', name_ja: '紙袋印刷', sort_order: 5 },
-  { slug: 'business-cards', name: '咭片印刷', nameEn: 'Business Cards', nameJa: '名刺印刷', name_zh: '咭片印刷', name_en: 'Business Cards', name_ja: '名刺印刷', sort_order: 6 },
+  { slug: 'greeting-cards', name: '賀卡印刷', nameEn: 'Greeting Cards', nameJa: 'グリーティングカード・年賀状', name_zh: '賀卡印刷', name_en: 'Greeting Cards', name_ja: 'グリーティングカード・年賀状', sort_order: 6 },
   // 次要分类
   { slug: 'banners', name: '噴繪廣告', nameEn: 'Banners', nameJa: 'バナー印刷', name_zh: '噴繪廣告', name_en: 'Banners', name_ja: 'バナー印刷', sort_order: 7 },
   { slug: 'books', name: '書籍印刷', nameEn: 'Books', nameJa: '書籍印刷', name_zh: '書籍印刷', name_en: 'Books', name_ja: '書籍印刷', sort_order: 8 },
@@ -102,11 +102,11 @@ export const products: Product[] = [
   {
     id: 'BC-001',
     sku_code: 'BC-001',
-    slug: 'premium-business-cards',
-    category: 'business-cards',
-    category_slug: 'business-cards',
-    name: '高級商務咭片', nameEn: 'Premium Business Cards', nameJa: '高級名刺', title_zh: '高級商務咭片',
-    description: '採用300g高級銅版紙，配合專業四色印刷，展現企業專業形象。可選啞膠或光膠表面處理，觸感細膩，色彩鮮豔持久。', descriptionEn: '300g premium glossy paper with professional 4-color printing. Optional matte or glossy lamination for a refined touch.', descriptionJa: '300g高級コート紙、プロ4色印刷。マットまたはグロスラミネーション選択可。', description_zh: '採用300g高級銅版紙，配合專業四色印刷，展現企業專業形象。可選啞膠或光膠表面處理，觸感細膩，色彩鮮豔持久。',
+    slug: 'premium-greeting-cards',
+    category: 'greeting-cards',
+    category_slug: 'greeting-cards',
+    name: '高級賀卡', nameEn: 'Premium Greeting Cards', nameJa: 'プレミアムグリーティングカード', title_zh: '高級賀卡',
+    description: '300g 高級銅版紙賀卡,四色印刷精美,可選啞膠/光膠/燙金/UV 局部光油。聖誕卡、新年卡、婚禮感謝卡、節日禮品卡首選,免費打樣,DHL 全球 2-4 天配送。', descriptionEn: '300g premium greeting cards with 4-color printing. Optional matte/gloss lamination, foil stamping, spot UV. Perfect for Christmas cards, New Year cards, wedding thank-you cards, holiday gift cards. Free sample, DHL Express 2-4 day global delivery from Asia factory.', descriptionJa: '300g 高級グリーティングカード、4色印刷精美。マット/グロスラミネーション、ホットスタンプ、スポットUV選択可。クリスマスカード、新年カード、ウェディングサンキュー、ハロウィンカードに最適。無料サンプル、DHL Express 国際 2-4 日納品対応。', description_zh: '300g 高級銅版紙賀卡,四色印刷精美,可選啞膠/光膠/燙金/UV 局部光油。聖誕卡、新年卡、婚禮感謝卡、節日禮品卡首選,免費打樣,DHL 全球 2-4 天配送。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -441,11 +441,11 @@ export const products: Product[] = [
   {
     id: 'BC-002',
     sku_code: 'BC-002',
-    slug: 'thick-business-cards-400g',
-    category: 'business-cards',
-    category_slug: 'business-cards',
-    name: '厚身咭片(400g)', nameEn: 'Thick Business Cards (400g)', nameJa: '厚紙名刺(400g)', title_zh: '厚身咭片(400g)',
-    description: '400g超厚紙質，厚實手感彰顯尊貴品質。特別適合高端服務業、設計師、律師等專業人士。', descriptionEn: '400g ultra-thick paper with substantial feel. Perfect for high-end service industry, designers, lawyers.', descriptionJa: '400g超厚紙、重厚な質感。高級サービス業、デザイナー、弁護士向け。', description_zh: '400g超厚紙質，厚實手感彰顯尊貴品質。特別適合高端服務業、設計師、律師等專業人士。',
+    slug: 'thick-greeting-cards-400g',
+    category: 'greeting-cards',
+    category_slug: 'greeting-cards',
+    name: '厚身賀卡(400g)', nameEn: 'Thick 400g Greeting Cards', nameJa: '厚手400gグリーティングカード', title_zh: '厚身賀卡(400g)',
+    description: '400g 超厚賀卡,挺度極佳手感沈穩,聖誕/新年/婚禮高級賀卡首選。可選燙金/UV/擊凸/壓紋,免費打樣,DHL 全球 2-4 天配送。', descriptionEn: '400g ultra-thick greeting cards with substantial feel. Perfect for Christmas, New Year, wedding, milestone events. Optional foil stamping, UV, embossing. Free sample, DHL Express 2-4 day global delivery.', descriptionJa: '400g 超厚グリーティングカード、剛性极佳で重厚感。クリスマス、新年、ウェディング、節句向け。箔押し/UV/エンボス選択可、無料サンプル、DHL Express 国際 2-4 日納品対応。', description_zh: '400g 超厚賀卡,挺度極佳手感沈穩,聖誕/新年/婚禮高級賀卡首選。可選燙金/UV/擊凸/壓紋,免費打樣,DHL 全球 2-4 天配送。',
     longDescription: `智印雲厚身咭片採用400g超厚銅版紙，厚度達標準名片的1.3倍，挺度極佳，手感沈穩厚實，彰顯尊貴品質。配合四色柯式印刷，網點細膩，色彩飽和。表面可選啞膠或光膠覆膜，亦可追加燙金或壓紋工藝。特別適合高端服務業、設計師、律師等需要展現專業權威的專業人士。成品標準85×54mm，邊角經過加壓處理不易翹曲。我們提供免費打樣與色彩確認服務。與分類頁內容一致，材質關鍵詞包含：400g銅版紙、厚身咭片、覆膜、燙金、壓紋。<h3>咭片克重對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">規格</th><th class="p-2 text-center">挺度</th><th class="p-2 text-center">質感</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用人群</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">300g 標準</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">一般商務、初創</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">400g 厚身</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">設計師、律師、高端服務</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">600g 特厚</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">奢侈品牌、VIP卡</td></tr></tbody></table><h3>咭片克重對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">規格</th><th class="p-2 text-center">挺度</th><th class="p-2 text-center">質感</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用人群</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">300g 標準</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">一般商務、初創</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">400g 厚身</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">設計師、律師、高端服務</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">600g 特厚</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">奢侈品牌、VIP卡</td></tr></tbody></table>
 
 **智印雲 國際印刷**：深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。
@@ -640,11 +640,11 @@ export const products: Product[] = [
   {
     id: 'BC-003',
     sku_code: 'BC-003',
-    slug: 'foil-business-cards',
-    category: 'business-cards',
-    category_slug: 'business-cards',
-    name: '燙金/燙銀咭片', nameEn: 'Foil Stamped Business Cards', nameJa: '箔押し名刺', title_zh: '燙金/燙銀咭片',
-    description: '局部燙金或燙銀工藝，在光線下閃耀奪目，瞬間提升品牌檔次。可燙金色、銀色、玫瑰金等多種顏色。', descriptionEn: 'Foil stamping in gold or silver, shining under light to elevate brand image. Available in gold, silver, rose gold.', descriptionJa: '部分的な箔押し加工、光に輝いてブランドイメージ向上。金・銀・ローズゴールド対応。', description_zh: '局部燙金或燙銀工藝，在光線下閃耀奪目，瞬間提升品牌檔次。可燙金色、銀色、玫瑰金等多種顏色。',
+    slug: 'foil-greeting-cards',
+    category: 'greeting-cards',
+    category_slug: 'greeting-cards',
+    name: '燙金/燙銀賀卡', nameEn: 'Foil-Stamped Greeting Cards', nameJa: '箔押しグリーティングカード', title_zh: '燙金/燙銀賀卡',
+    description: '燙金/燙銀/玫瑰金賀卡,金屬光澤瞬間提升奢華感,聖誕/婚禮/百日宴/感謝卡高端首選。300g 銅版紙+金屬箔層,免費打樣,DHL 全球 2-4 天配送。', descriptionEn: 'Foil-stamped greeting cards (gold/silver/rose gold). Metallic luster elevates premium feel for Christmas, wedding, baby 100-day celebration, thank-you cards. 300g coated card with metallic foil layer. Free sample, DHL Express 2-4 day global delivery.', descriptionJa: '箔押し/銀箔/ローズゴールドグリーティングカード。金属光泽で高級感アップ、クリスマス/ウェディング/百日祝/サンキューカードに最適。300g コート紙+金属箔層、無料サンプル、DHL Express 国際 2-4 日納品対応。', description_zh: '燙金/燙銀/玫瑰金賀卡,金屬光澤瞬間提升奢華感,聖誕/婚禮/百日宴/感謝卡高端首選。300g 銅版紙+金屬箔層,免費打樣,DHL 全球 2-4 天配送。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -961,11 +961,11 @@ export const products: Product[] = [
   {
     id: 'BC-004',
     sku_code: 'BC-004',
-    slug: 'spot-uv-business-cards',
-    category: 'business-cards',
-    category_slug: 'business-cards',
-    name: 'UV局部光油咭片', nameEn: 'Spot UV Business Cards', nameJa: '局部UV名刺', title_zh: 'UV局部光油咭片',
-    description: '局部UV光油工藝，讓Logo或圖案呈現立體光澤效果，視覺衝擊力強。適合創意行業、設計公司。', descriptionEn: 'Spot UV coating creates glossy, dimensional effects on logos or designs. Strong visual impact for creative industries.', descriptionJa: '部分UVコーティングでロゴやデザインに立体的な光沢効果。クリエイティブ業界向け。', description_zh: '局部UV光油工藝，讓Logo或圖案呈現立體光澤效果，視覺衝擊力強。適合創意行業、設計公司。',
+    slug: 'spot-uv-greeting-cards',
+    category: 'greeting-cards',
+    category_slug: 'greeting-cards',
+    name: 'UV局部光油賀卡', nameEn: 'Spot UV Greeting Cards', nameJa: 'スポットUVグリーティングカード', title_zh: 'UV局部光油賀卡',
+    description: 'UV 局部光油賀卡,Logo/图案加亮 + 啞面底材形成強烈對比,聖誕/新年/感謝卡視覺衝擊力強。300g 銅版紙 + UV 局部光油,免費打樣,DHL 全球 2-4 天配送。', descriptionEn: 'Spot UV greeting cards with logo/pattern highlight + matte substrate for high contrast. Strong visual impact for Christmas, New Year, thank-you cards. 300g coated card with spot UV. Free sample, DHL Express 2-4 day global delivery.', descriptionJa: 'スポットUVグリーティングカード、ロゴ/パターン加亮 + マット下地で强い対比。クリスマス/新年/サンキューカードに視覚冲击力。300g コート紙 + スポットUV、無料サンプル、DHL Express 国際 2-4 日納品対応。', description_zh: 'UV 局部光油賀卡,Logo/图案加亮 + 啞面底材形成強烈對比,聖誕/新年/感謝卡視覺衝擊力強。300g 銅版紙 + UV 局部光油,免費打樣,DHL 全球 2-4 天配送。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -1277,11 +1277,11 @@ export const products: Product[] = [
   {
     id: 'BC-005',
     sku_code: 'BC-005',
-    slug: 'matte-business-cards',
-    category: 'business-cards',
-    category_slug: 'business-cards',
-    name: '啞膠咭片', nameEn: 'Matte Laminated Cards', nameJa: 'マット名刺', title_zh: '啞膠咭片',
-    description: '啞膠表面處理，低調內斂的質感，不易留下指紋。適合注重細節的專業人士。', descriptionEn: 'Matte lamination provides understated elegance and resists fingerprints. For detail-oriented professionals.', descriptionJa: 'マットラミネーション加工、落ち着いた質感で指紋が付きにくい。', description_zh: '啞膠表面處理，低調內斂的質感，不易留下指紋。適合注重細節的專業人士。',
+    slug: 'matte-greeting-cards',
+    category: 'greeting-cards',
+    category_slug: 'greeting-cards',
+    name: '啞膠賀卡', nameEn: 'Matte Greeting Cards', nameJa: 'マットラミネートグリーティングカード', title_zh: '啞膠賀卡',
+    description: '啞膠覆膜賀卡,表面霧面絲滑、防指紋、觸感高級。聖誕卡/新年卡/感謝卡簡約風格首選。300g 銅版紙+啞膠覆膜,免費打樣,DHL 全球 2-4 天配送。', descriptionEn: 'Matte lamination greeting cards with smooth anti-fingerprint premium feel. Ideal for minimalist Christmas, New Year, thank-you cards. 300g coated card with matte lamination. Free sample, DHL Express 2-4 day global delivery.', descriptionJa: 'マットラミネートグリーティングカード、防指紋で滑らかな高級触感。ミニマルなクリスマス/新年/サンキューカードに最適。300g コート紙+マットラミ、無料サンプル、DHL Express 国際 2-4 日納品対応。', description_zh: '啞膠覆膜賀卡,表面霧面絲滑、防指紋、觸感高級。聖誕卡/新年卡/感謝卡簡約風格首選。300g 銅版紙+啞膠覆膜,免費打樣,DHL 全球 2-4 天配送。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -1593,11 +1593,11 @@ export const products: Product[] = [
   {
     id: 'BC-006',
     sku_code: 'BC-006',
-    slug: 'rounded-corner-cards',
-    category: 'business-cards',
-    category_slug: 'business-cards',
-    name: '圓角咭片', nameEn: 'Rounded Corner Cards', nameJa: '丸角名刺', title_zh: '圓角咭片',
-    description: '圓角設計，柔和美觀且不易折損。展現與眾不同的品味，適合創意產業。', descriptionEn: 'Rounded corners for soft aesthetics and durability. Shows unique taste, perfect for creative industries.', descriptionJa: '丸角デザイン、柔らかく美しく折れにくい。クリエイティブ業界向け。', description_zh: '圓角設計，柔和美觀且不易折損。展現與眾不同的品味，適合創意產業。',
+    slug: 'rounded-corner-greeting-cards',
+    category: 'greeting-cards',
+    category_slug: 'greeting-cards',
+    name: '圓角賀卡', nameEn: 'Rounded Corner Greeting Cards', nameJa: '角丸グリーティングカード', title_zh: '圓角賀卡',
+    description: '圓角賀卡 (R3mm 圓角模切),邊角不翹起、手感柔和。聖誕卡/生日卡/感謝卡可愛風格首選,300g 銅版紙+圓角模切,免費打樣,DHL 全球 2-4 天配送。', descriptionEn: 'Rounded corner greeting cards (R3mm die-cut), soft tactile feel with no corner lift. Perfect for cute Christmas, birthday, thank-you cards. 300g coated card with rounded corner die-cut. Free sample, DHL Express 2-4 day global delivery.', descriptionJa: '角丸グリーティングカード (R3mm 丸型抜き)、角が浮かない柔らかい触感。可愛いクリスマス/バースデー/サンキューカードに最適。300g コート紙+角丸抜き、無料サンプル、DHL Express 国際 2-4 日納品対応。', description_zh: '圓角賀卡 (R3mm 圓角模切),邊角不翹起、手感柔和。聖誕卡/生日卡/感謝卡可愛風格首選,300g 銅版紙+圓角模切,免費打樣,DHL 全球 2-4 天配送。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -1642,8 +1642,8 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `<h3>Rounded Corner Business Cards for Modern Brands</h3>
-<p>ZprintPro rounded corner business cards bring soft, modern aesthetics to professional branding. R3mm or R5mm rounded corners reduce wear and add a contemporary feel — perfect for creative agencies, tech startups, designers, and modern lifestyle brands across the US, UK, Australia, and global markets. Choose from 300-400g matte, gloss, or uncoated card with full 4-color CMYK printing. 100-card MOQ, 2-3 day production, free color proofing.</p>
+    longDescriptionEn: `<h3>Rounded Corner Greeting Cards for Modern Brands</h3>
+<p>ZprintPro rounded corner greeting cards bring soft, modern aesthetics to professional branding. R3mm or R5mm rounded corners reduce wear and add a contemporary feel — perfect for creative agencies, tech startups, designers, and modern lifestyle brands across the US, UK, Australia, and global markets. Choose from 300-400g matte, gloss, or uncoated card with full 4-color CMYK printing. 100-card MOQ, 2-3 day production, free color proofing.</p>
 
 <h3>Material & Corner Radius Comparison</h3>
 <table class="w-full border-collapse my-4 text-sm">
@@ -1704,12 +1704,12 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>Which radius should I choose?</strong></summary><p>R3mm is the most subtle and professional — best for traditional industries. R5mm is the sweet spot for modern brands — distinct but not too casual. R10mm is bold and lifestyle-oriented — best for fashion, beauty, fitness brands.</p></details>
 <details class="my-2"><summary><strong>Do rounded corners affect card durability?</strong></summary><p>Slightly. Rounded corners are less prone to corner wear and dog-ear damage. R5-R10mm is more durable than sharp corners in pocket/wallet carry.</p></details>
 <details class="my-2"><summary><strong>Can I get rounded corners on thick card?</strong></summary><p>Yes. Up to 600g card stock with clean corner curves. Beyond 600g, edges may show slight white core at the curve (lamination covers this).</p></details>
-<details class="my-2"><summary><strong>What size are the cards?</strong></summary><p>Standard 85×54mm (US/UK business card). EU sizes 85×55mm and Japan 91×55mm available. Custom dimensions quoted per spec.</p></details>
+<details class="my-2"><summary><strong>What size are the cards?</strong></summary><p>Standard 85×54mm (US/UK greeting card). EU sizes 85×55mm and Japan 91×55mm available. Custom dimensions quoted per spec.</p></details>
 <details class="my-2"><summary><strong>Can I combine rounded corners with foil or spot UV?</strong></summary><p>Yes. Rounded corners + spot UV logo or foil logo are popular combinations. The rounded corner softens the geometry while the spot UV/foil adds premium accent. Add 1 day to production.</p></details>
 
 `,
-    longDescriptionJa: `<h3>モダンブランド向け 角丸名刺</h3>
-<p>智印雲 ZprintPro の角丸名刺は、R3mm または R5mm の柔らかい角丸加工でモダンテイストを表現する名刺印刷サービスです。クリエイティブエージェンシー・テックスタートアップ・デザイナー・ライフスタイルブランド向けに最適化。米国・英国・オーストラリア・日本などグローバル市場に対応。300-400g マット・グロス・非塗工紙に 4 色 CMYK 印刷。100 枚から対応、2-3 営業日製作、無料色校正込み。</p>
+    longDescriptionJa: `<h3>モダンブランド向け 角丸グリーティングカード</h3>
+<p>智印雲 ZprintPro の角丸グリーティングカードは、R3mm または R5mm の柔らかい角丸加工でモダンテイストを表現するグリーティングカード印刷サービスです。クリエイティブエージェンシー・テックスタートアップ・デザイナー・ライフスタイルブランド向けに最適化。米国・英国・オーストラリア・日本などグローバル市場に対応。300-400g マット・グロス・非塗工紙に 4 色 CMYK 印刷。100 枚から対応、2-3 営業日製作、無料色校正込み。</p>
 
 <h3>紙質と角丸半径の比較</h3>
 <table>
@@ -1750,14 +1750,14 @@ export const products: Product[] = [
 
 <h3>納期と MOQ</h3>
 <ul>
-  <li><strong>MOQ 100 枚</strong>：個人名刺・小規模チームも対応、特急料金で 50 枚も対応可能</li>
+  <li><strong>MOQ 100 枚</strong>：個人グリーティングカード・小規模チームも対応、特急料金で 50 枚も対応可能</li>
   <li><strong>標準納期 2-3 営業日</strong>：角丸加工込みで短納期</li>
   <li><strong>特急 1 営業日</strong>：追加料金で特急対応</li>
   <li><strong>大量発注割引</strong>：500 枚 (+15%)、1,000 枚 (+25%)、5,000 枚以上 (+35%)</li>
 </ul>
 
 <h3>FSC 認証と ISO 9001 品質保証</h3>
-<p>智印雲 ZprintPro の角丸名刺は <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。角丸加工はカード寿命を延ばし、角の摩耗を防止。ESG 報告用の紙材トレーサビリティレポートもご提供。デザイナー・テック・ライフスタイル業界のプロフェッショナル向けに、最適な角丸名刺ソリューションをご提案します。</p>
+<p>智印雲 ZprintPro の角丸グリーティングカードは <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。角丸加工はカード寿命を延ばし、角の摩耗を防止。ESG 報告用の紙材トレーサビリティレポートもご提供。デザイナー・テック・ライフスタイル業界のプロフェッショナル向けに、最適な角丸グリーティングカードソリューションをご提案します。</p>
 
 <h3>業界別活用事例</h3>
 <ul>
@@ -1820,10 +1820,10 @@ export const products: Product[] = [
 <p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い対応、日本語請求書・領収書発行対応、インボイス製度対応。</p>
 
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>角丸名刺と通常名刺の違いは何ですか？</strong></summary><p>角丸名刺は R3mm/R5mm/R10mm の柔らかい角丸加工で、モダンで優しい印象を与えます。通常名刺は 90° のシャープな角で、トラディショナルで格式高い印象。テック・ライフスタイル・クリエイティブ系は角丸、金融・士業は通常が定番です。</p></details>
+<details class="my-2"><summary><strong>角丸グリーティングカードと通常グリーティングカードの違いは何ですか？</strong></summary><p>角丸グリーティングカードは R3mm/R5mm/R10mm の柔らかい角丸加工で、モダンで優しい印象を与えます。通常グリーティングカードは 90° のシャープな角で、トラディショナルで格式高い印象。テック・ライフスタイル・クリエイティブ系は角丸、金融・士業は通常が定番です。</p></details>
 <details class="my-2"><summary><strong>MOQ は何枚からですか？</strong></summary><p>標準 MOQ は 100 枚です。特急料金で 50 枚にも対応可能、最短 1 営業日で製作・納品できます。</p></details>
 <details class="my-2"><summary><strong>角丸とラミネートは併用できますか？</strong></summary><p>はい。角丸加工 + マット/グロスラミネート併用で、耐久性 + モダンデザインを両立。両面ラミネートで全面保護、片面のみならコスト削減可能。</p></details>
-<details class="my-2"><summary><strong>角丸名刺は財布に入れやすいですか？</strong></summary><p>R5mm 以下の角丸であれば、名刺入れ・カードケースにスムーズに収納可能。R10mm は曲線が大きいため、収納性は若干低下します。R3mm-R5mm が最もバランス良い選択です。</p></details>
+<details class="my-2"><summary><strong>角丸グリーティングカードは財布に入れやすいですか？</strong></summary><p>R5mm 以下の角丸であれば、グリーティングカード入れ・カードケースにスムーズに収納可能。R10mm は曲線が大きいため、収納性は若干低下します。R3mm-R5mm が最もバランス良い選択です。</p></details>
 <details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>アジア自社工場から DHL Express で 2-3 営業日納品、100 枚以上のご注文は送料無料で全国配送対応。</p></details>
 <details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能。品質問題 (角丸精度・色ズレ) は無料で再印刷または全額返金、100% 満足保証。</p></details>
 
@@ -1878,9 +1878,9 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-business-cards-rounded-corner-cards-zh-hk.webp', en: 'zprintpro-business-cards-rounded-corner-cards-en.webp', ja: 'zprintpro-business-cards-rounded-corner-cards-ja.webp' },
     alt: {
-      'zh-hk': '香港圓角咭片印刷 300g銅版紙 覆膜（啞膠／光膠）',
-      en: 'Rounded Corner Cards | Professional Business Cards Online',
-      ja: '丸角名刺 | プロ印刷・即日お見積もり | ZprintPro'
+      'zh-hk': '香港圓角賀卡印刷 300g銅版紙 覆膜（啞膠／光膠）',
+      en: 'Rounded Corner Cards | Professional Greeting Cards Online',
+      ja: '丸角グリーティングカード | プロ印刷・即日お見積もり | ZprintPro'
     },
   },
   },

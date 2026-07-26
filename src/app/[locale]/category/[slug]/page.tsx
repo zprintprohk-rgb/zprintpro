@@ -193,10 +193,10 @@ export default function CategoryPage({
       'en': 'Custom Calendars Free Shipping · 100 MOQ 2027 Desk Wall Hardcover Foil · USA Corporate Gifts',
       'ja': 'カレンダー印刷 カスタム — デスク / 壁掛け / 月別 / 2027年 / 企業ロゴ',
     },
-    'business-cards': {
-      'zh-hk': '香港咭片印刷定制 — 燙金名片 / UV名片 / 圓角名片 / 高檔名片',
-      'en': 'Business Cards Free Shipping · 100 MOQ Foil UV Rounded Corner · Same Day 24h Rush USA',
-      'ja': '名刺印刷 カスタム — 箔押し / UV / 丸角 / プレミアム名刺',
+    'greeting-cards': {
+      'zh-hk': '香港賀卡印刷定制 — 聖誕卡 / 新年卡 / 婚禮感謝卡 / 燙金UV賀卡',
+      'en': 'Greeting Cards Free Shipping · 100 MOQ Foil UV Christmas Wedding · Same Day 24h Rush USA',
+      'ja': 'グリーティングカード・年賀状印刷 — 箔押し / UV / クリスマス / 婚禮',
     },
     // 2026-07-09 PM+UX+SEO 复盘: japan-doujin 是 14 类目里唯一缺 customH1 的,
     // 走 fallback `categoryName` = 「同人周邊印刷」, 不够 sharp hook.

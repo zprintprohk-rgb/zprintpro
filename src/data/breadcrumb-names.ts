@@ -38,7 +38,7 @@ const commonSegments: Record<string, Record<Locale, string>> = {
   packaging: { 'zh-hk': '包裝盒定制', en: 'Packaging', ja: 'パッケージ印刷' },
   posters: { 'zh-hk': '定制海報', en: 'Posters', ja: 'ポスター印刷' },
   'paper-bags': { 'zh-hk': '紙袋印刷', en: 'Paper Bags', ja: '紙袋印刷' },
-  'business-cards': { 'zh-hk': '咭片印刷', en: 'Business Cards', ja: '名刺印刷' },
+  'greeting-cards': { 'zh-hk': '賀卡印刷', en: 'Greeting Cards', ja: 'グリーティングカード・年賀状' },
   banners: { 'zh-hk': '噴繪廣告', en: 'Banners', ja: 'バナー印刷' },
   books: { 'zh-hk': '書籍印刷', en: 'Books', ja: '書籍印刷' },
   menus: { 'zh-hk': '餐牌印刷', en: 'Menus', ja: 'メニュー印刷' },
@@ -129,10 +129,10 @@ const clusterNames: Record<string, Record<Locale, string>> = {
 // =============================================================================
 
 const buyingGuideNames: Record<string, Record<Locale, string>> = {
-  'business-card-buying-guide': {
-    'zh-hk': '名片印刷選購完全指南',
-    en: 'Business Card Buying Guide',
-    ja: '名刺印刷選び方完全ガイド',
+  'greeting-card-buying-guide': {
+    'zh-hk': '賀卡印刷選購完全指南',
+    en: 'Greeting Card Buying Guide',
+    ja: 'グリーティングカード・年賀状印刷選び方完全ガイド',
   },
   'sticker-buying-guide': {
     'zh-hk': '貼紙印刷選購完全指南',

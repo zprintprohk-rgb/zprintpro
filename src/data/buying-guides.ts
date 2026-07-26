@@ -18,9 +18,9 @@ export interface BuyingGuide {
 }
 
 export const buyingGuides: BuyingGuide[] = [
-  // ========== STICKERS (旧 business-card-buying-guide, 2026-07-18 内容重写为贴纸指南并归类) ==========
+  // ========== STICKERS (旧 greeting-card-buying-guide, 2026-07-18 内容重写为贴纸指南并归类) ==========
   {
-    slug: 'business-card-buying-guide',
+    slug: 'greeting-card-buying-guide',
     categorySlug: 'stickers',
     title: {
       'zh-hk': '貼紙印刷選購完全指南：材質、工藝、價格一次搞懂',
