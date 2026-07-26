@@ -3,13 +3,14 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import { useState } from 'react';
 import { categories, products } from '@/data/products';
 import { Locale } from '@/lib/seo';
 import { getWhatsAppLinkProps } from '@/lib/whatsapp';
 import {
   CreditCard, Tag, ShoppingBag, FileText, ImageIcon, Package,
   BookOpen, Flag, Calendar, Mail, Gift, GraduationCap, Box,
-  ChevronRight, Search
+  ChevronRight, ChevronDown, Search
 } from 'lucide-react';
 
 interface CategorySidebarProps {
@@ -45,6 +46,11 @@ const translations = {
     whatsapp: 'WhatsApp 查詢',
     qrScan: '掃碼即時查詢',
     trustBadge: '已有 15,000+ 客戶選擇智印雲',
+    // 2026-07-27 v21: 移动端折叠按钮
+    expandBtn: '展開',
+    collapseBtn: '收起',
+    expandLabel: '展開分類',
+    collapseLabel: '收起分類',
   },
   'en': {
     title: 'Product Categories',
@@ -57,6 +63,11 @@ const translations = {
     whatsapp: 'WhatsApp Inquiry',
     qrScan: 'Scan to Chat',
     trustBadge: 'Trusted by 15,000+ customers',
+    // 2026-07-27 v21: 移动端折叠按钮
+    expandBtn: 'Expand',
+    collapseBtn: 'Collapse',
+    expandLabel: 'Expand Categories',
+    collapseLabel: 'Collapse Categories',
   },
   'ja': {
     title: '製品カテゴリー',
@@ -69,6 +80,11 @@ const translations = {
     whatsapp: 'WhatsApp 問い合わせ',
     qrScan: 'QRで即時問い合わせ',
     trustBadge: '15,000人以上のお客様に選ばれています',
+    // 2026-07-27 v21: 移动端折叠按钮
+    expandBtn: '開く',
+    collapseBtn: '閉じる',
+    expandLabel: 'カテゴリーを開く',
+    collapseLabel: 'カテゴリーを閉じる',
   },
 };
 
@@ -77,11 +93,78 @@ export function CategorySidebar({ locale, currentCategorySlug }: CategorySidebar
   const pathname = usePathname() || '';
   const localePrefix = `/${locale}`;
 
+  // 2026-07-27 v21 M3 派发 (K3 拍板): 移动端 (lg 以下) 默认折叠分类列表,
+  // 只显示当前分类 + 展开按钮, 点击展开全部 11 分类。
+  // 桌面端 (lg 以上) 始终展开, 渲染逻辑零改动 (保 K3 1222af5 封版视觉)。
+  // 规则: 只加折叠交互, 不改分类排序 / 文案 / 样式 token。
+  const [isMobileOpen, setIsMobileOpen] = useState(false);
+
   // 计算每个分类的SKU数量
   const categoryCounts = categories.map((cat) => {
     const count = products.filter((p) => p.category_slug === cat.slug).length;
     return { ...cat, count };
   });
+
+  // 当前激活分类 (用于移动端折叠态显示)
+  const activeCategory = categoryCounts.find((c) => c.slug === currentCategorySlug);
+
+  // 共享的分类列表渲染 (桌面端 / 移动端展开态复用)
+  const renderCategoryList = () => (
+    <>
+      {categoryCounts.map((cat, idx) => {
+        const Icon = iconMap[cat.slug] || Box;
+        const isActive = cat.slug === currentCategorySlug;
+        const isEducational = cat.slug === 'educational';
+        return (
+          <Link
+            key={cat.slug}
+            href={`${localePrefix}/category/${cat.slug}/`}
+            className={`flex items-center justify-between px-4 ${isEducational ? 'py-5' : 'py-4'} border-b border-gray-100 last:border-b-0 transition-colors group ${
+              isEducational
+                ? 'bg-[#2873F5] text-white hover:bg-[#1e5fd1]'
+                : isActive
+                  ? 'bg-[#2873F5] text-white'
+                  : 'text-[#333333] hover:bg-[#2873F5] hover:text-white'
+            } ${idx === categories.length - 1 ? 'last:rounded-b-lg' : ''}`}
+          >
+            <div className={`flex items-center gap-3 ${isEducational ? 'text-[16px]' : ''}`}>
+              <Icon className={`w-4 h-4 ${isEducational ? 'text-white' : isActive ? 'text-white' : 'text-gray-400 group-hover:text-white'}`} strokeWidth={1.5} />
+              <span className={`text-[15.5px] ${isActive ? 'font-semibold' : 'font-medium'}`}>
+                {locale === 'zh-hk' ? cat.name : locale === 'en' ? cat.nameEn : cat.nameJa}
+              </span>
+            </div>
+            <div className="flex items-center gap-1.5">
+              <span className={`text-sm ${isEducational ? 'text-white' : isActive ? 'text-white' : 'text-gray-400 group-hover:text-white'}`}>{cat.count}</span>
+              <ChevronRight className={`w-3.5 h-3.5 transition-transform ${isActive ? 'text-white' : 'text-gray-300 group-hover:text-white group-hover:translate-x-0.5'}`} />
+            </div>
+          </Link>
+        );
+      })}
+    </>
+  );
+
+  // 移动端折叠态: 只显示当前激活分类
+  const renderActiveCategoryMobile = () => {
+    if (!activeCategory) return null;
+    const Icon = iconMap[activeCategory.slug] || Box;
+    return (
+      <Link
+        href={`${localePrefix}/category/${activeCategory.slug}/`}
+        className="flex items-center justify-between px-4 py-4 bg-[#2873F5] text-white transition-colors"
+      >
+        <div className="flex items-center gap-3">
+          <Icon className="w-4 h-4 text-white" strokeWidth={1.5} />
+          <span className="text-[15.5px] font-semibold">
+            {locale === 'zh-hk' ? activeCategory.name : locale === 'en' ? activeCategory.nameEn : activeCategory.nameJa}
+          </span>
+        </div>
+        <div className="flex items-center gap-1.5">
+          <span className="text-sm">{activeCategory.count}</span>
+          <ChevronRight className="w-3.5 h-3.5 text-white" />
+        </div>
+      </Link>
+    );
+  };
 
   return (
     <div className="space-y-4">
@@ -89,39 +172,27 @@ export function CategorySidebar({ locale, currentCategorySlug }: CategorySidebar
       <div className="bg-[#2873F5] text-white px-4 py-3 rounded-t-lg flex items-center gap-2">
         <div className="w-1 h-5 bg-white/60 rounded-full" />
         <h2 className="font-bold text-base">{t.title}</h2>
+        {/* 2026-07-27 v21: 移动端折叠按钮 (lg 以下显示, 桌面端隐藏) */}
+        <button
+          type="button"
+          onClick={() => setIsMobileOpen((v) => !v)}
+          className="ml-auto lg:hidden flex items-center gap-1 text-sm font-medium hover:text-white/80 transition-colors"
+          aria-expanded={isMobileOpen}
+          aria-label={isMobileOpen ? t.collapseLabel : t.expandLabel}
+        >
+          <span>{isMobileOpen ? t.collapseBtn : t.expandBtn}</span>
+          <ChevronDown className={`w-4 h-4 transition-transform ${isMobileOpen ? 'rotate-180' : ''}`} strokeWidth={2} />
+        </button>
       </div>
 
-      {/* 分类列表 */}
-      <div className="bg-white rounded-b-lg border border-t-0 border-gray-200 overflow-hidden">
-        {categoryCounts.map((cat, idx) => {
-          const Icon = iconMap[cat.slug] || Box;
-          const isActive = cat.slug === currentCategorySlug;
-          const isEducational = cat.slug === 'educational';
-          return (
-            <Link
-              key={cat.slug}
-              href={`${localePrefix}/category/${cat.slug}/`}
-              className={`flex items-center justify-between px-4 ${isEducational ? 'py-5' : 'py-4'} border-b border-gray-100 last:border-b-0 transition-colors group ${
-                isEducational
-                  ? 'bg-[#2873F5] text-white hover:bg-[#1e5fd1]'
-                  : isActive
-                    ? 'bg-[#2873F5] text-white'
-                    : 'text-[#333333] hover:bg-[#2873F5] hover:text-white'
-              } ${idx === categories.length - 1 ? 'last:rounded-b-lg' : ''}`}
-            >
-              <div className={`flex items-center gap-3 ${isEducational ? 'text-[16px]' : ''}`}>
-                <Icon className={`w-4 h-4 ${isEducational ? 'text-white' : isActive ? 'text-white' : 'text-gray-400 group-hover:text-white'}`} strokeWidth={1.5} />
-                <span className={`text-[15.5px] ${isActive ? 'font-semibold' : 'font-medium'}`}>
-                  {locale === 'zh-hk' ? cat.name : locale === 'en' ? cat.nameEn : cat.nameJa}
-                </span>
-              </div>
-              <div className="flex items-center gap-1.5">
-                <span className={`text-sm ${isEducational ? 'text-white' : isActive ? 'text-white' : 'text-gray-400 group-hover:text-white'}`}>{cat.count}</span>
-                <ChevronRight className={`w-3.5 h-3.5 transition-transform ${isActive ? 'text-white' : 'text-gray-300 group-hover:text-white group-hover:translate-x-0.5'}`} />
-              </div>
-            </Link>
-          );
-        })}
+      {/* 桌面端: 始终展开 (K3 1222af5 封版视觉) */}
+      <div className="hidden lg:block bg-white rounded-b-lg border border-t-0 border-gray-200 overflow-hidden">
+        {renderCategoryList()}
+      </div>
+
+      {/* 2026-07-27 v21: 移动端 - 默认折叠只显示当前分类, 展开后显示全部 */}
+      <div className="lg:hidden bg-white rounded-b-lg border border-t-0 border-gray-200 overflow-hidden">
+        {isMobileOpen ? renderCategoryList() : renderActiveCategoryMobile()}
       </div>
 
       {/* 快速询价 */}
