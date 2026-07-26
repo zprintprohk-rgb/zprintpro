@@ -165,8 +165,8 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `<h3>Premium Business Cards for Global Brands</h3>
-<p>ZprintPro premium business cards are designed for executives, finance, and legal professionals across the US and global markets. Choose from 300g-400g matte, cotton, or coated paper with foil stamping, spot UV, and embossing. Heidelberg 4-color offset printing delivers 90%+ color saturation and crisp halftone reproduction, while optional R3mm rounded corners add a refined touch. Standard 85×54mm size, 100-card MOQ, with free color proofing to ensure batch consistency.</p>
+    longDescriptionEn: `<h3>Premium Greeting Cards for Global Brands</h3>
+<p>ZprintPro premium greeting cards are designed for executives, finance, and legal professionals across the US and global markets. Choose from 300g-400g matte, cotton, or coated paper with foil stamping, spot UV, and embossing. Heidelberg 4-color offset printing delivers 90%+ color saturation and crisp halftone reproduction, while optional R3mm rounded corners add a refined touch. Standard 85×54mm size, 100-card MOQ, with free color proofing to ensure batch consistency.</p>
 
 <h3>Material & GSM Comparison</h3>
 <table class="w-full border-collapse my-4 text-sm">
@@ -216,7 +216,7 @@ export const products: Product[] = [
 <p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>ISO 9001:2015</strong> certified lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and Heidelberg 4-color offset. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
 
 <h3>Use Cases & Industries</h3>
-<p>Premium business cards are the first handshake of your brand. Best fit for private wealth managers in Manhattan handling high-net-worth client introductions, boutique law firm partners in Washington, D.C. preparing for trial appearances, and corporate executives coordinating rebrand rollouts across 50-500 staff. 100-card MOQ supports boutique professional runs; rush 1-3 day production is available for US-based professionals. International orders ship via DHL Express in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
+<p>Premium greeting cards are the first handshake of your brand. Best fit for private wealth managers in Manhattan handling high-net-worth client introductions, boutique law firm partners in Washington, D.C. preparing for trial appearances, and corporate executives coordinating rebrand rollouts across 50-500 staff. 100-card MOQ supports boutique professional runs; rush 1-3 day production is available for US-based professionals. International orders ship via DHL Express in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>100 cards. Sample orders of 10-50 cards are available for design proofing (rush fee applies).</p></details>
@@ -228,13 +228,13 @@ export const products: Product[] = [
 
     `,
     longDescriptionJa: `<h3>紙質材質対比</h3>
-<p>プレミアム名刺は 4 種類の高級紙質をご用意、ブランドイメージと予算に応じて選択可能。</p>
+<p>プレミアムグリーティングカードは 4 種類の高級紙質をご用意、ブランドイメージと予算に応じて選択可能。</p>
 <table>
   <thead>
     <tr><th>紙質</th><th>克重</th><th>特性</th><th>適用場景</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>アート紙</td><td>300g–400g</td><td>表面平滑、印刷再現性最良、スタンダード名刺</td><td>一般ビジネス・営業</td></tr>
+    <tr class="border-b border-gray-200"><td>アート紙</td><td>300g–400g</td><td>表面平滑、印刷再現性最良、スタンダードグリーティングカード</td><td>一般ビジネス・営業</td></tr>
     <tr class="border-b border-gray-200"><td>マット紙</td><td>250g–300g</td><td>上品な雾面感、視認性高、フォーマル</td><td>士業・コンサル・金融</td></tr>
     <tr class="border-b border-gray-200"><td>コットン紙</td><td>250g–300g</td><td>繊維質の高級感、独特の手触り、エコ</td><td>クリエイティブ・デザイン</td></tr>
     <tr><td>ケント紙</td><td>250g</td><td>シンプルで誠実な印象、コストパフォーマンス高</td><td>スタートアップ・ベンチャー</td></tr>
@@ -242,7 +242,7 @@ export const products: Product[] = [
 </table>
 
 <h3>高級加値工藝</h3>
-<p>プレミアム名刺の最大の特徴は「加値工藝」。箔押し・スポット UV・エンボスで他者と差別化。</p>
+<p>プレミアムグリーティングカードの最大の特徴は「加値工藝」。箔押し・スポット UV・エンボスで他者と差別化。</p>
 <table>
   <thead>
     <tr><th>工藝</th><th>効果</th><th>適用場面</th><th>追加料金</th></tr>
@@ -250,7 +250,7 @@ export const products: Product[] = [
   <tbody>
     <tr class="border-b border-gray-200"><td>箔押し（金/銀/ローズ）</td><td>金属光沢、ロゴや社名を立体的に</td><td>ブランド名・ロゴ・記念日</td><td>+20%</td></tr>
     <tr class="border-b border-gray-200"><td>スポット UV</td><td>部分的光沢、コントラストで注目度 UP</td><td>ロゴ・イラスト・寫真</td><td>+15%</td></tr>
-    <tr class="border-b border-gray-200"><td>エンボス（浮き出し）</td><td>触覚的高級感、視えない特別感</td><td>記念版・VIP 名刺</td><td>+25%</td></tr>
+    <tr class="border-b border-gray-200"><td>エンボス（浮き出し）</td><td>触覚的高級感、視えない特別感</td><td>記念版・VIP グリーティングカード</td><td>+25%</td></tr>
     <tr><td>角丸加工</td><td>R3/R5/R10 角丸、ソフトな印象</td><td>クリエイティブ・デザイナー</td><td>+10%</td></tr>
   </tbody>
 </table>
@@ -259,16 +259,16 @@ export const products: Product[] = [
 <ul>
   <li><strong>4 色 CMYK 両面印刷</strong>：表面におもて面（ロゴ・氏名）、裏面に日本語/英語併記の連絡先</li>
   <li><strong>ISO 12647 色彩管理</strong>：ブランドカラー厳守、再印刷時の色再現も安定</li>
-  <li><strong>個別データ可変印刷</strong>：1 枚ごとに氏名・連絡先が違う可変データ対応、100 名以上の営業チーム名刺に最適</li>
-  <li><strong>極小ロット特急</strong>：50 枚でも特急料金で 1〜2 営業日納品、急ぎの役員名刺も対応</li>
+  <li><strong>個別データ可変印刷</strong>：1 枚ごとに氏名・連絡先が違う可変データ対応、100 名以上の営業チームグリーティングカードに最適</li>
+  <li><strong>極小ロット特急</strong>：50 枚でも特急料金で 1〜2 営業日納品、急ぎの役員グリーティングカードも対応</li>
   <li><strong>印前 AI 預検</strong>：無料 AI チェックでトンボ・CMYK・フォント埋め込みを自動検証</li>
 </ul>
 
 <h3>FSC 認証と ISO 12647 色彩管理</h3>
-<p>智印雲 ZprintPro のプレミアム名刺は <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> 基準。ブランドカラーを厳守し、再発注時の色再現も安定。ESG 報告用の紙材トレーサビリティもご提供。士業・金融・クリエイティブなど格式高い業界のプロフェッショナル向けに、最適な名刺ソリューションをご提案します。</p>
+<p>智印雲 ZprintPro のプレミアムグリーティングカードは <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> 基準。ブランドカラーを厳守し、再発注時の色再現も安定。ESG 報告用の紙材トレーサビリティもご提供。士業・金融・クリエイティブなど格式高い業界のプロフェッショナル向けに、最適なグリーティングカードソリューションをご提案します。</p>
 
 <h3>法人・大量発注対応</h3>
-<p>智印雲 ZprintPro は累計 5,000 社以上の法人名刺取引実績。</p>
+<p>智印雲 ZprintPro は累計 5,000 社以上の法人グリーティングカード取引実績。</p>
 <ul>
   <li><strong>営業チーム 100 名以上</strong>：個別データ可変印刷、部署別カラー分け対応</li>
   <li><strong>NET 30 月締請求書払い</strong>：法人掛売り対応、与信審査後サービス開始</li>
@@ -277,10 +277,10 @@ export const products: Product[] = [
   <li><strong>日本語請求書・領収書</strong>：経費精算・会計処理に対応、インボイス製度対応</li>
 </ul>
 
-<h3>プレミアム名刺の標準仕様</h3>
-<p>智印雲 ZprintPro プレミアム名刺の標準仕様と日本向け最適化。</p>
+<h3>プレミアムグリーティングカードの標準仕様</h3>
+<p>智印雲 ZprintPro プレミアムグリーティングカードの標準仕様と日本向け最適化。</p>
 <ul>
-  <li><strong>標準サイズ</strong>：91mm × 55mm（日本の名刺規格）</li>
+  <li><strong>標準サイズ</strong>：91mm × 55mm（日本のグリーティングカード規格）</li>
   <li><strong>横向き・縦向き</strong>：両対応、データ入稿時にご指定</li>
   <li><strong>両面印刷</strong>：標準対応、表面と裏面で異なる情報掲載可能</li>
   <li><strong>角の形状</strong>：標準は直角（無料）、R3/R5/R10 角丸加工（+10%）</li>
@@ -355,7 +355,7 @@ export const products: Product[] = [
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、名刺・封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、グリーティングカード・封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
@@ -409,9 +409,9 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-business-cards-premium-business-cards-zh-hk.webp', en: 'zprintpro-business-cards-premium-business-cards-en.webp', ja: 'zprintpro-business-cards-premium-business-cards-ja.webp' },
     alt: {
-      'zh-hk': '香港高級商務咭片印刷 300g銅版紙 覆膜（啞膠／光膠）',
-      en: 'Premium Business Cards | Professional Business Cards Online',
-      ja: '高級名刺 | プロ印刷・即日お見積もり | ZprintPro'
+      'zh-hk': '香港高級高級賀卡印刷 300g銅版紙 覆膜（啞膠／光膠）',
+      en: 'Premium Greeting Cards | Professional Greeting Cards Online',
+      ja: 'プレミアムグリーティングカード | プロ印刷・即日お見積もり | ZprintPro'
     },
   },
     variables: {
@@ -446,7 +446,7 @@ export const products: Product[] = [
     category_slug: 'greeting-cards',
     name: '厚身賀卡(400g)', nameEn: 'Thick 400g Greeting Cards', nameJa: '厚手400gグリーティングカード', title_zh: '厚身賀卡(400g)',
     description: '400g 超厚賀卡,挺度極佳手感沈穩,聖誕/新年/婚禮高級賀卡首選。可選燙金/UV/擊凸/壓紋,免費打樣,DHL 全球 2-4 天配送。', descriptionEn: '400g ultra-thick greeting cards with substantial feel. Perfect for Christmas, New Year, wedding, milestone events. Optional foil stamping, UV, embossing. Free sample, DHL Express 2-4 day global delivery.', descriptionJa: '400g 超厚グリーティングカード、剛性极佳で重厚感。クリスマス、新年、ウェディング、節句向け。箔押し/UV/エンボス選択可、無料サンプル、DHL Express 国際 2-4 日納品対応。', description_zh: '400g 超厚賀卡,挺度極佳手感沈穩,聖誕/新年/婚禮高級賀卡首選。可選燙金/UV/擊凸/壓紋,免費打樣,DHL 全球 2-4 天配送。',
-    longDescription: `智印雲厚身咭片採用400g超厚銅版紙，厚度達標準名片的1.3倍，挺度極佳，手感沈穩厚實，彰顯尊貴品質。配合四色柯式印刷，網點細膩，色彩飽和。表面可選啞膠或光膠覆膜，亦可追加燙金或壓紋工藝。特別適合高端服務業、設計師、律師等需要展現專業權威的專業人士。成品標準85×54mm，邊角經過加壓處理不易翹曲。我們提供免費打樣與色彩確認服務。與分類頁內容一致，材質關鍵詞包含：400g銅版紙、厚身咭片、覆膜、燙金、壓紋。<h3>咭片克重對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">規格</th><th class="p-2 text-center">挺度</th><th class="p-2 text-center">質感</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用人群</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">300g 標準</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">一般商務、初創</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">400g 厚身</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">設計師、律師、高端服務</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">600g 特厚</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">奢侈品牌、VIP卡</td></tr></tbody></table><h3>咭片克重對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">規格</th><th class="p-2 text-center">挺度</th><th class="p-2 text-center">質感</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用人群</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">300g 標準</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">一般商務、初創</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">400g 厚身</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">設計師、律師、高端服務</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">600g 特厚</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">奢侈品牌、VIP卡</td></tr></tbody></table>
+    longDescription: `智印雲厚身賀卡採用400g超厚銅版紙，厚度達標準名片的1.3倍，挺度極佳，手感沈穩厚實，彰顯尊貴品質。配合四色柯式印刷，網點細膩，色彩飽和。表面可選啞膠或光膠覆膜，亦可追加燙金或壓紋工藝。特別適合高端服務業、設計師、律師等需要展現專業權威的專業人士。成品標準85×54mm，邊角經過加壓處理不易翹曲。我們提供免費打樣與色彩確認服務。與分類頁內容一致，材質關鍵詞包含：400g銅版紙、厚身賀卡、覆膜、燙金、壓紋。<h3>賀卡克重對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">規格</th><th class="p-2 text-center">挺度</th><th class="p-2 text-center">質感</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用人群</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">300g 標準</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">一般商務、初創</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">400g 厚身</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">設計師、律師、高端服務</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">600g 特厚</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">奢侈品牌、VIP卡</td></tr></tbody></table><h3>賀卡克重對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">規格</th><th class="p-2 text-center">挺度</th><th class="p-2 text-center">質感</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用人群</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">300g 標準</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">一般商務、初創</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">400g 厚身</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">設計師、律師、高端服務</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">600g 特厚</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">奢侈品牌、VIP卡</td></tr></tbody></table>
 
 **智印雲 國際印刷**：深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。
 
@@ -487,8 +487,8 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `<h3>Thick Business Cards (400g) for Premium Brands</h3>
-<p>ZprintPro Thick Business Cards are crafted from 400g ultra-thick coated paper, offering 1.3× the thickness and rigidity of standard cards. Designed for executives, finance and legal professionals, designers, and luxury hospitality brands that need an instant impression of substance and authority. Heidelberg 4-color offset printing delivers crisp halftone reproduction and saturated color, with optional matte or gloss lamination, foil stamping, and embossing for a refined finish. Standard 85×54mm, 100-card MOQ, free digital color proofing.</p>
+    longDescriptionEn: `<h3>Thick Greeting Cards (400g) for Premium Brands</h3>
+<p>ZprintPro Thick Greeting Cards are crafted from 400g ultra-thick coated paper, offering 1.3× the thickness and rigidity of standard cards. Designed for executives, finance and legal professionals, designers, and luxury hospitality brands that need an instant impression of substance and authority. Heidelberg 4-color offset printing delivers crisp halftone reproduction and saturated color, with optional matte or gloss lamination, foil stamping, and embossing for a refined finish. Standard 85×54mm, 100-card MOQ, free digital color proofing.</p>
 
 <h3>Weight Comparison</h3>
 <table class="w-full border-collapse my-4 text-sm">
@@ -539,7 +539,7 @@ export const products: Product[] = [
 <p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>ISO 9001:2015</strong> certified lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and Heidelberg 4-color offset. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
 
 <h3>Use Cases & Industries</h3>
-<p>Thick 400g business cards deliver an instant impression of authority and quality. Best fit for senior partners at Magic Circle and US law firms preparing for client meetings, wealth managers handling high-net-worth introductions in Central, and creative directors at boutique agencies launching a rebrand. Also ideal for executive suites at luxury hotels, VIP invitation cards for corporate events, and premium product launches where the card itself becomes part of the brand experience. International orders ship via DHL Express in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
+<p>Thick 400g greeting cards deliver an instant impression of authority and quality. Best fit for senior partners at Magic Circle and US law firms preparing for client meetings, wealth managers handling high-net-worth introductions in Central, and creative directors at boutique agencies launching a rebrand. Also ideal for executive suites at luxury hotels, VIP invitation cards for corporate events, and premium product launches where the card itself becomes part of the brand experience. International orders ship via DHL Express in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>100 cards. Sample orders of 10-50 cards are available for design proofing (rush fee applies).</p></details>
@@ -548,11 +548,11 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>Can I order different names on each card?</strong></summary><p>Yes. Variable data printing allows per-card customization. Submit an Excel/CSV file with name, title, and contact details. Minimum 100 cards for variable orders.</p></details>
 <details class="my-2"><summary><strong>How is shipping calculated to my country?</strong></summary><p>US orders over $100 ship free via DHL Express (2-4 business days). UK/AU orders over £80 / AU$150 ship free. KR/SG/AE ship via DHL Express at standard rates (calculated at checkout). Tracking provided for all shipments.</p></details>
 <details class="my-2"><summary><strong>What if I'm not happy with the print quality?</strong></summary><p>We provide free digital color proofing before production. If the final print drifts from approved proof, we reprint at no cost or refund in full. Your satisfaction is guaranteed.</p></details>`,
-    longDescriptionJa: `厚紙名刺をZprintProでご注文。400g超厚コート紙、両面カラー、厚紙名刺でプレミアム感を演出。デザイナー・弁護士・高級サービス業様に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
+    longDescriptionJa: `厚紙グリーティングカードをZprintProでご注文。400g超厚コート紙、両面カラー、厚紙グリーティングカードでプレミアム感を演出。デザイナー・弁護士・高級サービス業様に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
 <p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、名刺・封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、グリーティングカード・封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
@@ -631,9 +631,9 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-business-cards-thick-business-cards-400g-zh-hk.webp', en: 'zprintpro-business-cards-thick-business-cards-400g-en.webp', ja: 'zprintpro-business-cards-thick-business-cards-400g-ja.webp' },
     alt: {
-      'zh-hk': '香港厚身咭片(400g)印刷 400g超厚銅版紙 覆膜（啞膠／光膠）',
-      en: 'Thick Business Cards (400g) | Professional Business Cards Online',
-      ja: '厚紙名刺(400g) | プロ印刷・即日お見積もり | ZprintPro'
+      'zh-hk': '香港厚身賀卡(400g)印刷 400g超厚銅版紙 覆膜（啞膠／光膠）',
+      en: 'Thick Greeting Cards (400g) | Professional Greeting Cards Online',
+      ja: '厚紙グリーティングカード(400g) | プロ印刷・即日お見積もり | ZprintPro'
     },
   },
   },
@@ -689,8 +689,8 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `<h3>Foil Stamped Business Cards for Global Brands</h3>
-<p>ZprintPro foil stamped business cards add metallic shine to logos, names, and design elements for executives, finance, and luxury brand professionals across the US, UK, Australia, and global markets. Choose from gold, silver, rose gold, copper, and holographic foil on 350-600g matte or uncoated card. Heidelberg 4-color offset + hot stamp foil delivers crisp metallic edges and 90%+ color saturation. 100-card MOQ, free color proofing, 3-5 day production.</p>
+    longDescriptionEn: `<h3>Foil Stamped Greeting Cards for Global Brands</h3>
+<p>ZprintPro foil stamped greeting cards add metallic shine to logos, names, and design elements for executives, finance, and luxury brand professionals across the US, UK, Australia, and global markets. Choose from gold, silver, rose gold, copper, and holographic foil on 350-600g matte or uncoated card. Heidelberg 4-color offset + hot stamp foil delivers crisp metallic edges and 90%+ color saturation. 100-card MOQ, free color proofing, 3-5 day production.</p>
 
 <h3>Material & Foil Comparison</h3>
 <table class="w-full border-collapse my-4 text-sm">
@@ -744,7 +744,7 @@ export const products: Product[] = [
 <p><strong>Certified Quality & Global Delivery:</strong> Production runs on <strong>ISO 9001:2015</strong> certified lines with <strong>ISO 12647-2</strong> color management, <strong>FSC</strong>-certified paper, and Heidelberg 4-color offset. Free <strong>DHL Express</strong> worldwide shipping on qualifying orders.</p>
 
 <h3>Use Cases & Industries</h3>
-<p>Foil stamped business cards elevate professional first impressions. Best fit for boutique wealth managers seeking client-facing card differentiation, senior partners at litigation firms building case-prep presentation sets, and luxury hotel concierge teams presenting guest welcome packages. Common applications include 50-100 card boutique runs for individual executives and 500+ card rebrand rollouts. International orders ship via DHL Express in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
+<p>Foil stamped greeting cards elevate professional first impressions. Best fit for boutique wealth managers seeking client-facing card differentiation, senior partners at litigation firms building case-prep presentation sets, and luxury hotel concierge teams presenting guest welcome packages. Common applications include 50-100 card boutique runs for individual executives and 500+ card rebrand rollouts. International orders ship via DHL Express in 2-4 days to UK, Australia, Korea, Singapore, and UAE.</p>
 
 <h3>Frequently Asked Questions</h3>
 <details class="my-2"><summary><strong>What is the minimum order quantity?</strong></summary><p>100 cards. Volume discounts start at 500 (15% off), 1,000 (25% off), and 5,000+ (35% off).</p></details>
@@ -755,8 +755,8 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>How long does production take?</strong></summary><p>Standard 3-5 business days after artwork approval. Rush 1-2 day production available for orders up to 500 cards.</p></details>
 
     `,
-    longDescriptionJa: `<h3>グローバルブランド向け 箔押し名刺</h3>
-<p>智印雲 ZprintPro の箔押し名刺は、ロゴ・氏名・デザイン要素に金属光沢をプラスする高級印刷サービスです。経営者・金融・ラグジュアリーブランドのプロフェッショナル向けに最適化され、米国・英国・オーストラリア・日本などグローバル市場に対応。金箔・銀箔・rose gold 箔・銅箔・ホログラム箔の 5 種類から選択可能、350-600g のマットアート紙または非塗工紙をベースに、Heidelberg 4 色オフセット印刷 + ホットスタンプ箔押しで、シャープな箔エッジと 90% 以上の色再現性を実現します。100 枚からご注文可能、無料色校正サービス、3-5 営業日で製作完了。</p>
+    longDescriptionJa: `<h3>グローバルブランド向け 箔押しグリーティングカード</h3>
+<p>智印雲 ZprintPro の箔押しグリーティングカードは、ロゴ・氏名・デザイン要素に金属光沢をプラスする高級印刷サービスです。経営者・金融・ラグジュアリーブランドのプロフェッショナル向けに最適化され、米国・英国・オーストラリア・日本などグローバル市場に対応。金箔・銀箔・rose gold 箔・銅箔・ホログラム箔の 5 種類から選択可能、350-600g のマットアート紙または非塗工紙をベースに、Heidelberg 4 色オフセット印刷 + ホットスタンプ箔押しで、シャープな箔エッジと 90% 以上の色再現性を実現します。100 枚からご注文可能、無料色校正サービス、3-5 営業日で製作完了。</p>
 
 <h3>紙質と箔押し効果の比較</h3>
 <table>
@@ -764,7 +764,7 @@ export const products: Product[] = [
     <tr><th>紙質</th><th>克重</th><th>高級感</th><th>箔押し適合性</th><th>適用場面</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>マットアート紙</td><td>350g</td><td>★★★★</td><td>★★★★★</td><td>標準箔押し名刺、モダンブランド</td></tr>
+    <tr class="border-b border-gray-200"><td>マットアート紙</td><td>350g</td><td>★★★★</td><td>★★★★★</td><td>標準箔押しグリーティングカード、モダンブランド</td></tr>
     <tr class="border-b border-gray-200"><td>非塗工紙</td><td>350-400g</td><td>★★★★★</td><td>★★★★★</td><td>高級箔押し、トラディショナル</td></tr>
     <tr class="border-b border-gray-200"><td>コットン紙</td><td>400-600g</td><td>★★★★★</td><td>★★★★★</td><td>格式高いブランド、金融・士業</td></tr>
     <tr class="border-b border-gray-200"><td>パール調カード</td><td>300-350g</td><td>★★★★★</td><td>★★★★</td><td>化粧品・美容・女性向けラグジュアリー</td></tr>
@@ -797,22 +797,22 @@ export const products: Product[] = [
 
 <h3>納期と MOQ (最低発注数量)</h3>
 <ul>
-  <li><strong>MOQ 100 枚</strong>：個人名刺・少数役員も対応、特急料金で 50 枚も対応可能</li>
+  <li><strong>MOQ 100 枚</strong>：個人グリーティングカード・少数役員も対応、特急料金で 50 枚も対応可能</li>
   <li><strong>標準納期 3-5 営業日</strong>：色校正確認後、本印刷開始</li>
-  <li><strong>特急 1-2 営業日</strong>：追加料金で特急対応、緊急役員名刺に最適</li>
+  <li><strong>特急 1-2 営業日</strong>：追加料金で特急対応、緊急役員グリーティングカードに最適</li>
   <li><strong>大量発注割引</strong>：500 枚 (+15%)、1,000 枚 (+25%)、5,000 枚以上 (+35%)</li>
 </ul>
 
 <h3>FSC 認証と ISO 9001 品質保証</h3>
-<p>智印雲 ZprintPro の箔押し名刺は <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。持続可能な紙材調達と厳格な品質管理を実現。ESG 報告用の紙材トレーサビリティレポートもご提供。経営者・金融・士業・クリエイティブ業界のプロフェッショナル向けに、最適な箔押し名刺ソリューションをご提案します。</p>
+<p>智印雲 ZprintPro の箔押しグリーティングカードは <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。持続可能な紙材調達と厳格な品質管理を実現。ESG 報告用の紙材トレーサビリティレポートもご提供。経営者・金融・士業・クリエイティブ業界のプロフェッショナル向けに、最適な箔押しグリーティングカードソリューションをご提案します。</p>
 
 <h3>業界別活用事例</h3>
 <ul>
-  <li><strong>金融・投資銀行</strong>：役員・パートナーの格式高い名刺、ブランド信頼感 UP</li>
+  <li><strong>金融・投資銀行</strong>：役員・パートナーの格式高いグリーティングカード、ブランド信頼感 UP</li>
   <li><strong>法律事務所・会計事務所</strong>：トラディショナルな箔押しで格式表現、既存顧客に安心感</li>
   <li><strong>ラグジュアリーブランド</strong>：rose gold 箔で商品パッケージとの統一感、新商品 PR 効果</li>
   <li><strong>クリエイティブ・広告代理店</strong>：ホログラム箔で創造性表現、クライアントへの印象 UP</li>
-  <li><strong>不動産・住宅販売</strong>：高級住宅販売担当者の名刺、信頼感の演出</li>
+  <li><strong>不動産・住宅販売</strong>：高級住宅販売担当者のグリーティングカード、信頼感の演出</li>
   <li><strong>コンサルティングファーム</strong>：パートナー昇進時の特別版、箔押しで記念性を演出</li>
 </ul>
 
@@ -873,7 +873,7 @@ export const products: Product[] = [
 
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>金箔と銀箔のどちらを選ぶべきですか？</strong></summary><p>ブランドカラー・業界・印象に応じて選択します。金融・士業はトラディショナルな金箔、モダンブランド・テック系は銀箔、美容・ライフスタイルブランドは rose gold 箔が好評です。無料サンプル請求で実物をご確認いただけます。</p></details>
-<details class="my-2"><summary><strong>MOQ は何枚からですか？特急対応は可能ですか？</strong></summary><p>標準 MOQ は 100 枚です。特急料金で 50 枚にも対応可能、1-2 営業日で製作・納品できます。緊急役員名刺・新人入社時の名刺にも迅速対応いたします。</p></details>
+<details class="my-2"><summary><strong>MOQ は何枚からですか？特急対応は可能ですか？</strong></summary><p>標準 MOQ は 100 枚です。特急料金で 50 枚にも対応可能、1-2 営業日で製作・納品できます。緊急役員グリーティングカード・新人入社時のグリーティングカードにも迅速対応いたします。</p></details>
 <details class="my-2"><summary><strong>既存のロゴデータをそのまま箔押しできますか？</strong></summary><p>はい。Illustrator / InDesign / PDF 形式でロゴデータをお送りください。箔押しエリアは別レイヤーで明確に分けていただきます。無料 AI データチェックで箔押し適性を事前検証いたします。</p></details>
 <details class="my-2"><summary><strong>両面印刷で表面と裏面で異なる仕上げが可能ですか？</strong></summary><p>はい。両面とも箔押し可能、片面箔押し + もう片面通常印刷、片面箔押し + もう片面エンボスなど、組み合わせ自由です。データ入稿時にご指定ください。</p></details>
 <details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>アジア自社工場から DHL Express で 2-3 営業日納品、沖縄・離島も 2-4 営業日。追跡番号は発送後 24 時間以内にお届け。100 枚以上のご注文は送料無料で全国配送対応。</p></details>
@@ -952,9 +952,9 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-business-cards-foil-business-cards-zh-hk.webp', en: 'zprintpro-business-cards-foil-business-cards-en.webp', ja: 'zprintpro-business-cards-foil-business-cards-ja.webp' },
     alt: {
-      'zh-hk': '香港燙金/燙銀咭片印刷 300g銅版紙 覆膜（啞膠／光膠）',
-      en: 'Foil Stamped Business Cards | Professional Business Cards Online',
-      ja: '箔押し名刺 | プロ印刷・即日お見積もり | ZprintPro'
+      'zh-hk': '香港燙金/燙銀賀卡印刷 300g銅版紙 覆膜（啞膠／光膠）',
+      en: 'Foil Stamped Greeting Cards | Professional Greeting Cards Online',
+      ja: '箔押しグリーティングカード | プロ印刷・即日お見積もり | ZprintPro'
     },
   },
   },
@@ -1010,8 +1010,8 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `<h3>Spot UV Business Cards for Global Brands</h3>
-<p>ZprintPro spot UV business cards create glossy contrast on logos, names, and design elements through selective UV coating on matte stock. The result is striking dimensional contrast — your logo or pattern shines under light while the rest stays soft matte. Perfect for creative agencies, designers, tech founders, and modern brands across the US, UK, Australia, and global markets. 100-card MOQ, 3-5 day production, free color proofing.</p>
+    longDescriptionEn: `<h3>Spot UV Greeting Cards for Global Brands</h3>
+<p>ZprintPro spot UV greeting cards create glossy contrast on logos, names, and design elements through selective UV coating on matte stock. The result is striking dimensional contrast — your logo or pattern shines under light while the rest stays soft matte. Perfect for creative agencies, designers, tech founders, and modern brands across the US, UK, Australia, and global markets. 100-card MOQ, 3-5 day production, free color proofing.</p>
 
 <h3>Material & UV Effect Comparison</h3>
 <table class="w-full border-collapse my-4 text-sm">
@@ -1076,8 +1076,8 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>Can I combine spot UV with foil or emboss?</strong></summary><p>Yes. Spot UV + foil is the most popular combo for ultra-premium cards. Spot UV + emboss adds dimensional depth. Both add 2 days to production.</p></details>
 
 `,
-    longDescriptionJa: `<h3>グローバルブランド向け スポット UV 名刺</h3>
-<p>智印雲 ZprintPro のスポット UV 名刺は、マット調の用紙ベースにロゴ・氏名・デザイン要素を部分的に UV グロス加工することで、光沢コントラストで立体感を演出する高級印刷サービスです。クリエイティブエージェンシー・デザイナー・テック企業の創業者・モダンブランド向けに最適化。米国・英国・オーストラリア・日本などグローバル市場に対応。100 枚からご注文可能、3-5 営業日製作、無料色校正サービス込み。</p>
+    longDescriptionJa: `<h3>グローバルブランド向け スポット UV グリーティングカード</h3>
+<p>智印雲 ZprintPro のスポット UV グリーティングカードは、マット調の用紙ベースにロゴ・氏名・デザイン要素を部分的に UV グロス加工することで、光沢コントラストで立体感を演出する高級印刷サービスです。クリエイティブエージェンシー・デザイナー・テック企業の創業者・モダンブランド向けに最適化。米国・英国・オーストラリア・日本などグローバル市場に対応。100 枚からご注文可能、3-5 営業日製作、無料色校正サービス込み。</p>
 
 <h3>紙質と UV 効果の比較</h3>
 <table>
@@ -1085,7 +1085,7 @@ export const products: Product[] = [
     <tr><th>紙質</th><th>UV コントラスト</th><th>視覚効果</th><th>コスト</th><th>適用場面</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>マットアート 350g</td><td>★★★★★</td><td>★★★★★</td><td>★★★★</td><td>標準スポット UV 名刺、モダンブランド</td></tr>
+    <tr class="border-b border-gray-200"><td>マットアート 350g</td><td>★★★★★</td><td>★★★★★</td><td>★★★★</td><td>標準スポット UV グリーティングカード、モダンブランド</td></tr>
     <tr class="border-b border-gray-200"><td>マットアート 400g</td><td>★★★★★</td><td>★★★★★</td><td>★★★</td><td>プレミアムスポット UV、デザイナー向け</td></tr>
     <tr class="border-b border-gray-200"><td>ソフトタッチマット 350g</td><td>★★★★★</td><td>★★★★★</td><td>★★★</td><td>ラグジュアリー触感体験</td></tr>
     <tr class="border-b border-gray-200"><td>非塗工紙 350g</td><td>★★★★</td><td>★★★★</td><td>★★★★</td><td>ナチュラル感、エコブランド</td></tr>
@@ -1113,26 +1113,26 @@ export const products: Product[] = [
   <li><strong>Heidelberg 4 色オフセット</strong>：業界標準機で色再現性 90% 以上</li>
   <li><strong>ISO 12647 色彩管理</strong>：ブランドカラー厳守、再印刷時の色ブレなし</li>
   <li><strong>両面スポット UV 対応</strong>：表面と裏面の両方に UV 加工可能</li>
-  <li><strong>オプション：箔押しと組み合わせ</strong>：スポット UV + 箔押しで究極のハイエンド名刺</li>
+  <li><strong>オプション：箔押しと組み合わせ</strong>：スポット UV + 箔押しで究極のハイエンドグリーティングカード</li>
 </ul>
 
 <h3>納期と MOQ</h3>
 <ul>
-  <li><strong>MOQ 100 枚</strong>：個人名刺・小規模チームも対応、特急料金で 50 枚も対応可能</li>
+  <li><strong>MOQ 100 枚</strong>：個人グリーティングカード・小規模チームも対応、特急料金で 50 枚も対応可能</li>
   <li><strong>標準納期 3-5 営業日</strong>：色校正確認後、本印刷開始</li>
   <li><strong>特急 1-2 営業日</strong>：追加料金で特急対応</li>
   <li><strong>大量発注割引</strong>：500 枚 (+15%)、1,000 枚 (+25%)、5,000 枚以上 (+35%)</li>
 </ul>
 
 <h3>FSC 認証と ISO 9001 品質保証</h3>
-<p>智印雲 ZprintPro のスポット UV 名刺は <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。持続可能な紙材調達と厳格な品質管理を実現。クリエイティブ業界・テック業界・モダンブランド向けに、最適なスポット UV 名刺ソリューションをご提案します。</p>
+<p>智印雲 ZprintPro のスポット UV グリーティングカードは <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。持続可能な紙材調達と厳格な品質管理を実現。クリエイティブ業界・テック業界・モダンブランド向けに、最適なスポット UV グリーティングカードソリューションをご提案します。</p>
 
 <h3>業界別活用事例</h3>
 <ul>
   <li><strong>クリエイティブエージェンシー</strong>：クライアントへの第一印象で差をつける、モダンな UV アクセント</li>
-  <li><strong>テックスタートアップ</strong>：プロダクトブランドと統一感のある UV 名刺、ロゴ強調効果</li>
+  <li><strong>テックスタートアップ</strong>：プロダクトブランドと統一感のある UV グリーティングカード、ロゴ強調効果</li>
   <li><strong>ファッションデザイナー</strong>：シーズンロゴを UV で強調、コレクションブックへの同梱に最適</li>
-  <li><strong>建築家・インテリアデザイナー</strong>：ポートレートプロジェクトの名刺、視覚的階層を UV で表現</li>
+  <li><strong>建築家・インテリアデザイナー</strong>：ポートレートプロジェクトのグリーティングカード、視覚的階層を UV で表現</li>
   <li><strong>建築設計事務所</strong>：プロジェクト名を UV で強調、ポートフォリオと同送</li>
   <li><strong>ライフスタイルブランド</strong>：ナチュラル + モダンのハイブリッド、エコブランドとの両立</li>
 </ul>
@@ -1190,7 +1190,7 @@ export const products: Product[] = [
 <p>多通貨決済に対応。日本向けは <strong>JPY（日本円）建て明朗会計</strong>、Visa / Mastercard / JCB / Alipay / 銀聯 / PayPal / 銀行振込がご利用可能。100 枚以上のご注文は送料無料で全国配送。法人向けの NET 30 月締請求書払い対応、日本語請求書・領収書発行対応、インボイス製度対応。</p>
 
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>スポット UV と箔押しの違いは何ですか？</strong></summary><p>スポット UV は光沢のある樹脂コーティングで、立体感は出ませんがマットと光沢のコントラストが鮮明。箔押しは金属光沢で、より格式高い印象。金箔・銀箔・rose gold 箔など色選択肢豊富。組み合わせることで究極のハイエンド名刺も実現可能です。</p></details>
+<details class="my-2"><summary><strong>スポット UV と箔押しの違いは何ですか？</strong></summary><p>スポット UV は光沢のある樹脂コーティングで、立体感は出ませんがマットと光沢のコントラストが鮮明。箔押しは金属光沢で、より格式高い印象。金箔・銀箔・rose gold 箔など色選択肢豊富。組み合わせることで究極のハイエンドグリーティングカードも実現可能です。</p></details>
 <details class="my-2"><summary><strong>複雑なデザインでも UV 加工できますか？</strong></summary><p>はい。グラデーション・寫真・細かいパターンも対応可能ですが、UV エリアが細かすぎると効果が弱まります。データ入稿時に UV エリアを別レイヤーで明確に分離してください。無料 AI データチェックで UV 適性を事前検証いたします。</p></details>
 <details class="my-2"><summary><strong>MOQ は何枚からですか？</strong></summary><p>標準 MOQ は 100 枚です。特急料金で 50 枚にも対応可能、1-2 営業日で製作・納品できます。</p></details>
 <details class="my-2"><summary><strong>両面とも UV 加工できますか？</strong></summary><p>はい。両面スポット UV、片面 UV + もう片面通常印刷、片面 UV + もう片面箔押しなど、自由な組み合わせが可能です。データ入稿時にご指定ください。</p></details>
@@ -1268,9 +1268,9 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-business-cards-spot-uv-business-cards-zh-hk.webp', en: 'zprintpro-business-cards-spot-uv-business-cards-en.webp', ja: 'zprintpro-business-cards-spot-uv-business-cards-ja.webp' },
     alt: {
-      'zh-hk': '香港UV局部光油咭片印刷 300g銅版紙 局部UV',
-      en: 'Spot UV Business Cards | Professional Business Cards Online',
-      ja: '局部UV名刺 | プロ印刷・即日お見積もり | ZprintPro'
+      'zh-hk': '香港UV局部光油賀卡印刷 300g銅版紙 局部UV',
+      en: 'Spot UV Greeting Cards | Professional Greeting Cards Online',
+      ja: '局部UVグリーティングカード | プロ印刷・即日お見積もり | ZprintPro'
     },
   },
   },
@@ -1326,8 +1326,8 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
-    longDescriptionEn: `<h3>Matte Laminated Business Cards for Global Brands</h3>
-<p>ZprintPro matte laminated business cards are the workhorse of modern professional branding — soft-touch matte lamination resists fingerprints, feels premium, and reproduces color with sophisticated subtlety. Built on 300-400g art card or uncoated stock with full 4-color CMYK printing. Perfect for designers, agencies, finance professionals, and modern brands across the US, UK, Australia, and global markets. 100-card MOQ, 2-3 day production, free color proofing.</p>
+    longDescriptionEn: `<h3>Matte Laminated Greeting Cards for Global Brands</h3>
+<p>ZprintPro matte laminated greeting cards are the workhorse of modern professional branding — soft-touch matte lamination resists fingerprints, feels premium, and reproduces color with sophisticated subtlety. Built on 300-400g art card or uncoated stock with full 4-color CMYK printing. Perfect for designers, agencies, finance professionals, and modern brands across the US, UK, Australia, and global markets. 100-card MOQ, 2-3 day production, free color proofing.</p>
 
 <h3>Material & Lamination Comparison</h3>
 <table class="w-full border-collapse my-4 text-sm">
@@ -1392,8 +1392,8 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>How long does production take?</strong></summary><p>Standard 2-3 business days after artwork approval (no special finishes). Rush 1-day available for orders up to 500 cards.</p></details>
 
 `,
-    longDescriptionJa: `<h3>グローバルブランド向け マットラミネート名刺</h3>
-<p>智印雲 ZprintPro のマットラミネート名刺は、モダンブランドの定番フォーマット。ソフトタッチのマットラミネート加工で指紋が付きにくく、プレミアムな手触りと共に上品な色彩再現を実現します。デザイナー・エージェンシー・金融プロフェッショナル・モダンブランド向けに最適化。300-400g アートカードまたは非塗工紙に 4 色 CMYK 印刷。100 枚から対応、2-3 営業日製作、無料色校正込み。</p>
+    longDescriptionJa: `<h3>グローバルブランド向け マットラミネートグリーティングカード</h3>
+<p>智印雲 ZprintPro のマットラミネートグリーティングカードは、モダンブランドの定番フォーマット。ソフトタッチのマットラミネート加工で指紋が付きにくく、プレミアムな手触りと共に上品な色彩再現を実現します。デザイナー・エージェンシー・金融プロフェッショナル・モダンブランド向けに最適化。300-400g アートカードまたは非塗工紙に 4 色 CMYK 印刷。100 枚から対応、2-3 営業日製作、無料色校正込み。</p>
 
 <h3>紙質とラミネーションの比較</h3>
 <table>
@@ -1401,7 +1401,7 @@ export const products: Product[] = [
     <tr><th>紙質</th><th>マット感</th><th>耐久性</th><th>コスト</th><th>適用場面</th></tr>
   </thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>マットアート 300g</td><td>★★★★</td><td>★★★★</td><td>★★★★★</td><td>標準マット名刺、モダンブランド</td></tr>
+    <tr class="border-b border-gray-200"><td>マットアート 300g</td><td>★★★★</td><td>★★★★</td><td>★★★★★</td><td>標準マットグリーティングカード、モダンブランド</td></tr>
     <tr class="border-b border-gray-200"><td>マットアート 350g</td><td>★★★★★</td><td>★★★★</td><td>★★★★</td><td>プレミアムマット、デザインエージェンシー</td></tr>
     <tr class="border-b border-gray-200"><td>マットアート 400g</td><td>★★★★★</td><td>★★★★★</td><td>★★★</td><td>ラグジュアリーマット、金融・士業</td></tr>
     <tr class="border-b border-gray-200"><td>ソフトタッチ 350g</td><td>★★★★★</td><td>★★★★★</td><td>★★★</td><td>ベルベット触感、プレミアム触感</td></tr>
@@ -1434,19 +1434,19 @@ export const products: Product[] = [
 
 <h3>納期と MOQ</h3>
 <ul>
-  <li><strong>MOQ 100 枚</strong>：個人名刺・小規模チームも対応、特急料金で 50 枚も対応可能</li>
+  <li><strong>MOQ 100 枚</strong>：個人グリーティングカード・小規模チームも対応、特急料金で 50 枚も対応可能</li>
   <li><strong>標準納期 2-3 営業日</strong>：ラミネート加工込みで短納期</li>
   <li><strong>特急 1 営業日</strong>：追加料金で特急対応</li>
   <li><strong>大量発注割引</strong>：500 枚 (+15%)、1,000 枚 (+25%)、5,000 枚以上 (+35%)</li>
 </ul>
 
 <h3>FSC 認証と ISO 9001 品質保証</h3>
-<p>智印雲 ZprintPro のマットラミネート名刺は <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。マットラミネートは BOPP フィルムで紙を保護、耐久性と上品な手触りを両立。ESG 報告用の紙材トレーサビリティレポートもご提供。デザイナー・金融・士業・クリエイティブ業界のプロフェッショナル向けに、最適なマットラミネート名刺ソリューションをご提案します。</p>
+<p>智印雲 ZprintPro のマットラミネートグリーティングカードは <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。マットラミネートは BOPP フィルムで紙を保護、耐久性と上品な手触りを両立。ESG 報告用の紙材トレーサビリティレポートもご提供。デザイナー・金融・士業・クリエイティブ業界のプロフェッショナル向けに、最適なマットラミネートグリーティングカードソリューションをご提案します。</p>
 
 <h3>業界別活用事例</h3>
 <ul>
   <li><strong>デザインエージェンシー</strong>：クライアントへの第一印象で差をつける、洗練されたマット感</li>
-  <li><strong>金融機関・投資銀行</strong>：役員・パートナーの格式高い名刺、信頼感の演出</li>
+  <li><strong>金融機関・投資銀行</strong>：役員・パートナーの格式高いグリーティングカード、信頼感の演出</li>
   <li><strong>法律事務所・会計事務所</strong>：トラディショナルなマットで格式表現</li>
   <li><strong>スタートアップ・ベンチャー</strong>：モダンで誠実な印象、コストパフォーマンス高</li>
   <li><strong>コンサルティングファーム</strong>：パートナー昇進時の特別版、マット + 箔押しで記念性</li>
@@ -1507,7 +1507,7 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>マットとグロスラミネートのどちらを選ぶべきですか？</strong></summary><p>上品でモダンな印象はマットラミネート、鮮やかで色鮮やかな印象はグロスラミネート。モダンブランド・金融・士業はマット、寫真・イラスト多用はグロスが定番です。両面ラミネートで全面保護、片面のみならコスト削減可能。</p></details>
 <details class="my-2"><summary><strong>MOQ は何枚からですか？</strong></summary><p>標準 MOQ は 100 枚です。特急料金で 50 枚にも対応可能、最短 1 営業日で製作・納品できます。</p></details>
 <details class="my-2"><summary><strong>マットラミネートの上から書き込みできますか？</strong></summary><p>マットラミネート表面は油性ペンで書き込み可能ですが、剥がれやすいため推奨しません。裏面 (ラミネート無し) へのメモは可能。</p></details>
-<details class="my-2"><summary><strong>マット + スポット UV の組み合わせは可能ですか？</strong></summary><p>はい。マットラミネートをベースにして、ロゴ部分のみスポット UV で光沢を加える組み合わせが好評です。追加納期 +1 日、追加料金 $ ですが、究極のハイエンド名刺として高い訴求力があります。</p></details>
+<details class="my-2"><summary><strong>マット + スポット UV の組み合わせは可能ですか？</strong></summary><p>はい。マットラミネートをベースにして、ロゴ部分のみスポット UV で光沢を加える組み合わせが好評です。追加納期 +1 日、追加料金 $ ですが、究極のハイエンドグリーティングカードとして高い訴求力があります。</p></details>
 <details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>アジア自社工場から DHL Express で 2-3 営業日納品、100 枚以上のご注文は送料無料で全国配送対応。</p></details>
 <details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能。品質問題 (ラミネート剥がれ・色ズレ) は無料で再印刷または全額返金、100% 満足保証。</p></details>
 
@@ -1584,9 +1584,9 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-business-cards-matte-business-cards-zh-hk.webp', en: 'zprintpro-business-cards-matte-business-cards-en.webp', ja: 'zprintpro-business-cards-matte-business-cards-ja.webp' },
     alt: {
-      'zh-hk': '香港啞膠咭片印刷 300g啞粉紙 啞膠覆膜',
-      en: 'Matte Laminated Cards | Professional Business Cards Online',
-      ja: 'マット名刺 | プロ印刷・即日お見積もり | ZprintPro'
+      'zh-hk': '香港啞膠賀卡印刷 300g啞粉紙 啞膠覆膜',
+      en: 'Matte Laminated Cards | Professional Greeting Cards Online',
+      ja: 'マットグリーティングカード | プロ印刷・即日お見積もり | ZprintPro'
     },
   },
   },
