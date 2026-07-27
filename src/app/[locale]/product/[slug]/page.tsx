@@ -308,8 +308,10 @@ export default function ProductPage({
       {howToJsonLd && <JsonLd data={howToJsonLd} />}
       {/* 2026-06-10 Phase B 修复 P0-3：Speakable 注入（语音 / AI 抓取） */}
       <JsonLd data={speakableJsonLd} />
-      {/* 2026-06-10 Phase B 修复 P0-1：reviews schema 也使用 locale 本地化 productTitle（之前是中文 product.name） */}
-      <JsonLd data={generateProductReviewsJsonLd(productTitle, slug, locale)} />
+      {/* 2026-07-28 P1 v2.1 fix: 删 reviews schema (K3 v2 §3.3 约束 4)
+          之前 generateProductReviewsJsonLd 含假 aggregateRating + 假 review (Sarah L./David W. 编造姓名 + 假 review body),
+          违反 v2 §3.3 "无真实评价数据, 不可编造" 铁律。
+          generateProductReviewsJsonLd 函数保留, 后续如有真实评价数据 (Trustpilot/Google Reviews API 接入) 再启用。 */}
       
       <main className="min-h-screen bg-gray-50">
         {/* 面包屑导航 */}
