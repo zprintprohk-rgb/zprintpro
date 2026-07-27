@@ -105,7 +105,7 @@ export const products: Product[] = [
     slug: 'premium-greeting-cards',
     category: 'greeting-cards',
     category_slug: 'greeting-cards',
-    name: '高級賀卡', nameEn: 'Premium Greeting Cards', nameJa: 'プレミアムグリーティングカード', title_zh: '高級賀卡',
+    name: '高級賀卡', nameEn: 'Premium Greeting Cards', nameJa: '年賀状印刷 | プレミアムグリーティングカード', title_zh: '高級賀卡',
     description: '300g 高級銅版紙賀卡,四色印刷精美,可選啞膠/光膠/燙金/UV 局部光油。聖誕卡、新年卡、婚禮感謝卡、節日禮品卡首選,免費打樣,DHL 全球 2-4 天配送。', descriptionEn: '300g premium greeting cards with 4-color printing. Optional matte/gloss lamination, foil stamping, spot UV. Perfect for Christmas cards, New Year cards, wedding thank-you cards, holiday gift cards. Free sample, DHL Express 2-4 day global delivery from Asia factory.', descriptionJa: '300g 高級グリーティングカード、4色印刷精美。マット/グロスラミネーション、ホットスタンプ、スポットUV選択可。クリスマスカード、新年カード、ウェディングサンキュー、ハロウィンカードに最適。無料サンプル、DHL Express 国際 2-4 日納品対応。', description_zh: '300g 高級銅版紙賀卡,四色印刷精美,可選啞膠/光膠/燙金/UV 局部光油。聖誕卡、新年卡、婚禮感謝卡、節日禮品卡首選,免費打樣,DHL 全球 2-4 天配送。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -444,7 +444,7 @@ export const products: Product[] = [
     slug: 'thick-greeting-cards-400g',
     category: 'greeting-cards',
     category_slug: 'greeting-cards',
-    name: '厚身賀卡(400g)', nameEn: 'Thick 400g Greeting Cards', nameJa: '厚手400gグリーティングカード', title_zh: '厚身賀卡(400g)',
+    name: '厚身賀卡(400g)', nameEn: 'Thick 400g Greeting Cards', nameJa: '年賀状印刷 | 厚手400gグリーティングカード', title_zh: '厚身賀卡(400g)',
     description: '400g 超厚賀卡,挺度極佳手感沈穩,聖誕/新年/婚禮高級賀卡首選。可選燙金/UV/擊凸/壓紋,免費打樣,DHL 全球 2-4 天配送。', descriptionEn: '400g ultra-thick greeting cards with substantial feel. Perfect for Christmas, New Year, wedding, milestone events. Optional foil stamping, UV, embossing. Free sample, DHL Express 2-4 day global delivery.', descriptionJa: '400g 超厚グリーティングカード、剛性极佳で重厚感。クリスマス、新年、ウェディング、節句向け。箔押し/UV/エンボス選択可、無料サンプル、DHL Express 国際 2-4 日納品対応。', description_zh: '400g 超厚賀卡,挺度極佳手感沈穩,聖誕/新年/婚禮高級賀卡首選。可選燙金/UV/擊凸/壓紋,免費打樣,DHL 全球 2-4 天配送。',
     longDescription: `智印雲厚身賀卡採用400g超厚銅版紙，厚度達標準名片的1.3倍，挺度極佳，手感沈穩厚實，彰顯尊貴品質。配合四色柯式印刷，網點細膩，色彩飽和。表面可選啞膠或光膠覆膜，亦可追加燙金或壓紋工藝。特別適合高端服務業、設計師、律師等需要展現專業權威的專業人士。成品標準85×54mm，邊角經過加壓處理不易翹曲。我們提供免費打樣與色彩確認服務。與分類頁內容一致，材質關鍵詞包含：400g銅版紙、厚身賀卡、覆膜、燙金、壓紋。<h3>賀卡克重對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">規格</th><th class="p-2 text-center">挺度</th><th class="p-2 text-center">質感</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用人群</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">300g 標準</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">一般商務、初創</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">400g 厚身</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">設計師、律師、高端服務</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">600g 特厚</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">奢侈品牌、VIP卡</td></tr></tbody></table><h3>賀卡克重對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">規格</th><th class="p-2 text-center">挺度</th><th class="p-2 text-center">質感</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用人群</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">300g 標準</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">一般商務、初創</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">400g 厚身</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">設計師、律師、高端服務</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">600g 特厚</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">奢侈品牌、VIP卡</td></tr></tbody></table>
 
@@ -643,7 +643,7 @@ export const products: Product[] = [
     slug: 'foil-greeting-cards',
     category: 'greeting-cards',
     category_slug: 'greeting-cards',
-    name: '燙金/燙銀賀卡', nameEn: 'Foil-Stamped Greeting Cards', nameJa: '箔押しグリーティングカード', title_zh: '燙金/燙銀賀卡',
+    name: '燙金/燙銀賀卡', nameEn: 'Foil-Stamped Greeting Cards', nameJa: '年賀状印刷 | 箔押しグリーティングカード', title_zh: '燙金/燙銀賀卡',
     description: '燙金/燙銀/玫瑰金賀卡,金屬光澤瞬間提升奢華感,聖誕/婚禮/百日宴/感謝卡高端首選。300g 銅版紙+金屬箔層,免費打樣,DHL 全球 2-4 天配送。', descriptionEn: 'Foil-stamped greeting cards (gold/silver/rose gold). Metallic luster elevates premium feel for Christmas, wedding, baby 100-day celebration, thank-you cards. 300g coated card with metallic foil layer. Free sample, DHL Express 2-4 day global delivery.', descriptionJa: '箔押し/銀箔/ローズゴールドグリーティングカード。金属光泽で高級感アップ、クリスマス/ウェディング/百日祝/サンキューカードに最適。300g コート紙+金属箔層、無料サンプル、DHL Express 国際 2-4 日納品対応。', description_zh: '燙金/燙銀/玫瑰金賀卡,金屬光澤瞬間提升奢華感,聖誕/婚禮/百日宴/感謝卡高端首選。300g 銅版紙+金屬箔層,免費打樣,DHL 全球 2-4 天配送。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -964,7 +964,7 @@ export const products: Product[] = [
     slug: 'spot-uv-greeting-cards',
     category: 'greeting-cards',
     category_slug: 'greeting-cards',
-    name: 'UV局部光油賀卡', nameEn: 'Spot UV Greeting Cards', nameJa: 'スポットUVグリーティングカード', title_zh: 'UV局部光油賀卡',
+    name: 'UV局部光油賀卡', nameEn: 'Spot UV Greeting Cards', nameJa: '年賀状印刷 | スポットUVグリーティングカード', title_zh: 'UV局部光油賀卡',
     description: 'UV 局部光油賀卡,Logo/图案加亮 + 啞面底材形成強烈對比,聖誕/新年/感謝卡視覺衝擊力強。300g 銅版紙 + UV 局部光油,免費打樣,DHL 全球 2-4 天配送。', descriptionEn: 'Spot UV greeting cards with logo/pattern highlight + matte substrate for high contrast. Strong visual impact for Christmas, New Year, thank-you cards. 300g coated card with spot UV. Free sample, DHL Express 2-4 day global delivery.', descriptionJa: 'スポットUVグリーティングカード、ロゴ/パターン加亮 + マット下地で强い対比。クリスマス/新年/サンキューカードに視覚冲击力。300g コート紙 + スポットUV、無料サンプル、DHL Express 国際 2-4 日納品対応。', description_zh: 'UV 局部光油賀卡,Logo/图案加亮 + 啞面底材形成強烈對比,聖誕/新年/感謝卡視覺衝擊力強。300g 銅版紙 + UV 局部光油,免費打樣,DHL 全球 2-4 天配送。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -1280,7 +1280,7 @@ export const products: Product[] = [
     slug: 'matte-greeting-cards',
     category: 'greeting-cards',
     category_slug: 'greeting-cards',
-    name: '啞膠賀卡', nameEn: 'Matte Greeting Cards', nameJa: 'マットラミネートグリーティングカード', title_zh: '啞膠賀卡',
+    name: '啞膠賀卡', nameEn: 'Matte Greeting Cards', nameJa: '年賀状印刷 | マットラミネートグリーティングカード', title_zh: '啞膠賀卡',
     description: '啞膠覆膜賀卡,表面霧面絲滑、防指紋、觸感高級。聖誕卡/新年卡/感謝卡簡約風格首選。300g 銅版紙+啞膠覆膜,免費打樣,DHL 全球 2-4 天配送。', descriptionEn: 'Matte lamination greeting cards with smooth anti-fingerprint premium feel. Ideal for minimalist Christmas, New Year, thank-you cards. 300g coated card with matte lamination. Free sample, DHL Express 2-4 day global delivery.', descriptionJa: 'マットラミネートグリーティングカード、防指紋で滑らかな高級触感。ミニマルなクリスマス/新年/サンキューカードに最適。300g コート紙+マットラミ、無料サンプル、DHL Express 国際 2-4 日納品対応。', description_zh: '啞膠覆膜賀卡,表面霧面絲滑、防指紋、觸感高級。聖誕卡/新年卡/感謝卡簡約風格首選。300g 銅版紙+啞膠覆膜,免費打樣,DHL 全球 2-4 天配送。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -1596,7 +1596,7 @@ export const products: Product[] = [
     slug: 'rounded-corner-greeting-cards',
     category: 'greeting-cards',
     category_slug: 'greeting-cards',
-    name: '圓角賀卡', nameEn: 'Rounded Corner Greeting Cards', nameJa: '角丸グリーティングカード', title_zh: '圓角賀卡',
+    name: '圓角賀卡', nameEn: 'Rounded Corner Greeting Cards', nameJa: '年賀状印刷 | 角丸グリーティングカード', title_zh: '圓角賀卡',
     description: '圓角賀卡 (R3mm 圓角模切),邊角不翹起、手感柔和。聖誕卡/生日卡/感謝卡可愛風格首選,300g 銅版紙+圓角模切,免費打樣,DHL 全球 2-4 天配送。', descriptionEn: 'Rounded corner greeting cards (R3mm die-cut), soft tactile feel with no corner lift. Perfect for cute Christmas, birthday, thank-you cards. 300g coated card with rounded corner die-cut. Free sample, DHL Express 2-4 day global delivery.', descriptionJa: '角丸グリーティングカード (R3mm 丸型抜き)、角が浮かない柔らかい触感。可愛いクリスマス/バースデー/サンキューカードに最適。300g コート紙+角丸抜き、無料サンプル、DHL Express 国際 2-4 日納品対応。', description_zh: '圓角賀卡 (R3mm 圓角模切),邊角不翹起、手感柔和。聖誕卡/生日卡/感謝卡可愛風格首選,300g 銅版紙+圓角模切,免費打樣,DHL 全球 2-4 天配送。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>

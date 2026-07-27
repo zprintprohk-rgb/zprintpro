@@ -164,10 +164,9 @@ export default function ProductPage({
   const productSeo = getProductSeo(slug);
 
   // JSON-LD结构化数据
-  const productRating = {
-    ratingValue: Math.min(5, Math.max(4.2, 4.5 + (product.weight_score % 5) * 0.1)),
-    reviewCount: 15 + (product.weight_score % 50),
-  };
+  // 2026-07-28 P1 v2.1: 删 productRating 假数据 (K3 v2 §3.3 约束 4: 无真实评价数据, 删 aggregateRating 禁止编造)
+  // productRating 之前由 weight_score 算伪随机 ratingValue (4.2-4.9) + reviewCount (15-64), 违反 v2 §3.3
+  // generateProductJsonLd 在 rating 未传时会自动跳过 aggregateRating 字段, 符合 Schema.org 真实数据原则
   // 2026-06-08 修复: og:image fallback chain — 优先用 locale 专属图, 再用通用图, 最后才 placeholder
   // 之前: 直接 fallback 到 placeholder.jpg (0 字节, GSC 显示通用图标)
   const ogImage = getProductMainImage(product, locale);
@@ -181,7 +180,7 @@ export default function ProductPage({
     product.slug,
     product.basePrice,
     locale === 'zh-hk' ? 'HKD' : locale === 'ja' ? 'JPY' : 'USD',
-    productRating,
+    undefined, // 2026-07-28 P1 v2.1: 不传 rating → 跳过 aggregateRating (K3 v2 §3.3 约束 4)
     locale
   );
   // ImageObject Schema（獨立節點，不影響 Product ranking）
