@@ -339,6 +339,22 @@ const posts: Record<string, Record<string, { title: string; description: string;
     },
 
   },
+
+    // 2026-07-27 v4.1 weekly-meta-refresh: T6-FI-006 金融證券 1st 覆蓋 (Tier B × P0 paper-bags)
+    'financial-institution-gift-bag-printing-guide': {
+      title: '香港金融機構禮品袋印刷指南 · 銀行卡套 + 信用卡開卡禮盒定制 | 智印港 ZprintPro',
+      description: '香港銀行、信用卡中心、券商、基金公司、保險公司客戶禮品袋完整攻略。1200g 灰板硬盒 + 燙金銀行 logo + RFID 防偽卡套 + 緞帶手挽，附 4 條金融採購 FAQ，協助 100-5,000 套精準下單。',
+      date: '2026-07-27', category: '金融證券',
+      content: '',
+    },
+    // 2026-07-27 v4.1 weekly-meta-refresh: T7-RP-007 房地產 3rd SKU 拓點 (Tier B × P0 posters)
+    'real-estate-floor-plan-poster-printing-guide': {
+      title: '香港新盤樓盤戶型海報印刷指南 · A1/A2 防水戶型圖 + 售樓處佈局 | 智印港 ZprintPro',
+      description: '香港新盤樓書、售樓處示範單位、房地產代理分店必備：5 種尺寸（A1/A2/A3/B1/B2）+ 5 種材質（防水 PP 膜 / 啞面銅版紙 / 合成紙 / 啞面膠膜 / 戶外油畫布）+ 4 條地產代理 FAQ，協助 10-500 張精準下單。',
+      date: '2026-07-27', category: '房地產',
+      content: '',
+    },
+
   // 2026-07-20 v4 daily-content-evolve: NEW posts.en block (之前 page.tsx 没有 en 块, en locale H1 走 fallback slug 不友好, 现新建)
   en: {
     'religious-ceremony-printing-guide': {
@@ -367,6 +383,22 @@ const posts: Record<string, Record<string, { title: string; description: string;
       content: '',
     },
   },
+
+    // 2026-07-27 v4.1 weekly-meta-refresh: T6-FI-006 (en US) — paper-bags × Financial Institution
+    'financial-institution-gift-bag-printing-guide': {
+      title: 'Financial Institution Gift Bag Printing Guide: Bank Kits & Credit Card Welcome Boxes for US Financial Brands | ZprintPro',
+      description: 'US banks, credit card issuers, brokerages, mutual funds, and insurance company client gift bags — 1200g grayboard rigid box + foil logo + RFID anti-counterfeit card sleeve + satin ribbon handle, 4 finance procurement FAQs, 100-5,000 set small-to-bulk runs, Free Shipping over $99 USA, Free design mockup, 100 MOQ starter, 5-10 business day production, Made for USA financial industry.',
+      date: '2026-07-27', category: 'Financial Institution',
+      content: '',
+    },
+    // 2026-07-27 v4.1 weekly-meta-refresh: T7-RP-007 (en US) — posters × Real Estate
+    'real-estate-floor-plan-poster-printing-guide': {
+      title: 'Real Estate Floor Plan Poster Printing Guide: A1/A2 Waterproof Layout Prints for US Property Developers | ZprintPro',
+      description: 'US new development sales galleries, model homes, real estate agency branches — 5 standard sizes (A1/A2/A3/B1/B2), 5 materials (waterproof PP film / matte art paper / synthetic paper / matte laminate / outdoor canvas), 4 real estate agent FAQs, 10-500 piece small-to-bulk runs, Free Shipping over $99 USA, 5-7 business day production, 100 MOQ starter, Made for USA property market.',
+      date: '2026-07-27', category: 'Real Estate',
+      content: '',
+    },
+
   ja: {
     'company-intro': { title: 'ZprintPro会社概要：専門設備とワンストップ印刷サービス', description: 'ZprintProはハイデルベルグ6+1印刷機、HPデジタル印刷機、マルティニ製本ラインなどの先進設備を保有し、ワンストップ印刷サービスを提供しています。', date: '2024-06-01', category: '会社ニュース', content: '' },
     'sticker-guide': { title: 'ステッカー印刷完全ガイド：材質、加工と応用場面', description: 'ステッカーの材質選び、表面加工、応用場面について深く理解しましょう。', date: '2024-04-15', category: 'ステッカー知識', content: '' },
@@ -524,6 +556,20 @@ const posts: Record<string, Record<string, { title: string; description: string;
       date: '2026-07-23', category: '合版ホワイトカードボックス',
       content: '',
     },
+    // 2026-07-27 v4.1 weekly-meta-refresh: T6-FI-006 (ja 日本) — paper-bags × 金融機関
+    'financial-institution-gift-bag-printing-guide': {
+      title: '金融機関ギフトバッグ印刷ガイド：銀行キット・クレジットカードウェリカムボックス 日本金融業界向け | ZprintPro',
+      description: '日本の銀行、クレジットカード会社、証券会社、投資信託会社、保険会社のクライアントギフトバッグ：1200g グレー ボード リジッド ボックス + 箔押しロゴ + RFID 偽造防止カード スリーブ + サテン リボン ハンドル、4 つの金融調達 FAQ、100-5,000 セット、$99 以上で全国無料配送、5-10 営業日生産、100 セット minimum、Made for USA 金融業界対応。',
+      date: '2026-07-27', category: '金融機関',
+      content: '',
+    },
+    // 2026-07-27 v4.1 weekly-meta-refresh: T7-RP-007 (ja 日本) — posters × 不動産
+    'real-estate-floor-plan-poster-printing-guide': {
+      title: '不動産フロアプラン ポスター印刷ガイド：A1/A2 防水レイアウト図 日本デベロッパー向け | ZprintPro',
+      description: '日本の新築マンション モデルルーム、不動産仲介店舗、分譲マンション ギャラリー必備：5 種類サイズ（A1/A2/A3/B1/B2）、5 種類素材（防水 PP フィルム / マット コート紙 / 合成紙 / マット ラミネート / 屋外キャンバス）、4 つの不動産エージェント FAQ、10-500 枚、$99 以上で全国無料配送、5-7 営業日生産、100 枚 minimum、Made for USA 不動産市場対応。',
+      date: '2026-07-27', category: '不動産',
+      content: '',
+    },
 
   }
 };
@@ -560,6 +606,9 @@ const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-
   // 2026-07-24 v8 M3 任务卡: Q-GR-02 (en 美国) + Q-GR-03 (ja 日本) — packaging × 跨境電商 + 美妝護膚
   'custom-card-boxes-small-batch-usa',
   'cosmetic-card-boxes-gang-run-japan',
+  // 2026-07-27 v4.1 weekly-meta-refresh: T6-FI-006 + T7-RP-007
+  'financial-institution-gift-bag-printing-guide',
+  'real-estate-floor-plan-poster-printing-guide',
 ];
 const guideSlugs = getAllBuyingGuideSlugs();
 const clusterSlugs = getAllClusterSlugs();

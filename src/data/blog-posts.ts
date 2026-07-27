@@ -1384,7 +1384,44 @@ const lpCosmeticCardBoxesJapan: BlogPostMeta = {
     en: 'Japan cosmetics, skincare, IP merchandise brand owners — silver cardstock with white ink + holographic silver with reverse UV, the shelf 3-second premium packaging. NO die-cut fee, 40-60% cost cut, 500-10,000 piece small-to-bulk runs, 8-15 day production, 3 box styles × 8 sizes × 4 paper stocks.',
     ja: '日本の化粧品・コスメ・スキンケア・IP ブランドオーナー様へ。銀カード白墨印刷 + ホログラム銀カード リバース UV で棚前 3 秒の高級感パッケージ。型代不要で 40-60% コスト削減、500-10,000 個小〜大ロット、8-15 日生産、3 種箱型 × 8 サイズ × 4 種素材で 95% シーンカバー、ヤマト運輸 1-3 日納品対応。',
   },
+}
+
+// 2026-07-27 v4.1 weekly-meta-refresh: T6-FI-006 金融機構禮品袋 (Tier B 金融證券 1st 覆蓋) — paper-bags × kraft — 純文字・v4.1 報價型
+const lpFinancialInstitutionGiftBag: BlogPostMeta = {
+  slug: 'financial-institution-gift-bag-printing-guide',
+  categoryKey: 'paper-bags',
+  source: 'daily',
+  date: '2026-07-27',
+  title: {
+    'zh-hk': '香港金融機構禮品袋印刷指南 · 銀行卡套 + 信用卡開卡禮盒定制 | 智印港 ZprintPro',
+    en: 'Financial Institution Gift Bag Printing Guide: Bank Kits & Credit Card Welcome Boxes for US Financial Brands | ZprintPro',
+    ja: '金融機関ギフトバッグ印刷ガイド：銀行キット・クレジットカードウェリカムボックス 日本金融業界向け | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '香港銀行、信用卡中心、券商、基金公司、保險公司客戶禮品袋完整攻略。1200g 灰板硬盒 + 燙金銀行 logo + RFID 防偽卡套 + 緞帶手挽，附 4 條金融採購 FAQ，協助 100-5,000 套精準下單。',
+    en: 'US banks, credit card issuers, brokerages, mutual funds, and insurance company client gift bags — 1200g grayboard rigid box + foil logo + RFID anti-counterfeit card sleeve + satin ribbon handle, 4 finance procurement FAQs, 100-5,000 set small-to-bulk runs, Free Shipping over $99 USA, Free design mockup, 100 MOQ starter, 5-10 business day production, Made for USA financial industry.',
+    ja: '日本の銀行、クレジットカード会社、証券会社、投資信託会社、保険会社のクライアントギフトバッグ：1200g グレー ボード リジッド ボックス + 箔押しロゴ + RFID 偽造防止カード スリーブ + サテン リボン ハンドル、4 つの金融調達 FAQ、100-5,000 セット、$99 以上で全国無料配送、5-10 営業日生産、100 セット minimum、Made for USA 金融業界対応。',
+  },
 };
+
+// 2026-07-27 v4.1 weekly-meta-refresh: T7-RP-007 房地產樓盤戶型海報 (Tier B 房地產 3rd SKU 拓點) — posters × a2-poster — 純文字・v4.1 報價型
+const lpRealEstateFloorPlanPoster: BlogPostMeta = {
+  slug: 'real-estate-floor-plan-poster-printing-guide',
+  categoryKey: 'posters',
+  source: 'daily',
+  date: '2026-07-27',
+  title: {
+    'zh-hk': '香港新盤樓盤戶型海報印刷指南 · A1/A2 防水戶型圖 + 售樓處佈局 | 智印港 ZprintPro',
+    en: 'Real Estate Floor Plan Poster Printing Guide: A1/A2 Waterproof Layout Prints for US Property Developers | ZprintPro',
+    ja: '不動産フロアプラン ポスター印刷ガイド：A1/A2 防水レイアウト図 日本デベロッパー向け | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '香港新盤樓書、售樓處示範單位、房地產代理分店必備：5 種尺寸（A1/A2/A3/B1/B2）+ 5 種材質（防水 PP 膜 / 啞面銅版紙 / 合成紙 / 啞面膠膜 / 戶外油畫布）+ 4 條地產代理 FAQ，協助 10-500 張精準下單。',
+    en: 'US new development sales galleries, model homes, real estate agency branches — 5 standard sizes (A1/A2/A3/B1/B2), 5 materials (waterproof PP film / matte art paper / synthetic paper / matte laminate / outdoor canvas), 4 real estate agent FAQs, 10-500 piece small-to-bulk runs, Free Shipping over $99 USA, 5-7 business day production, 100 MOQ starter, Made for USA property market.',
+    ja: '日本の新築マンション モデルルーム、不動産仲介店舗、分譲マンション ギャラリー必備：5 種類サイズ（A1/A2/A3/B1/B2）、5 種類素材（防水 PP フィルム / マット コート紙 / 合成紙 / マット ラミネート / 屋外キャンバス）、4 つの不動産エージェント FAQ、10-500 枚、$99 以上で全国無料配送、5-7 営業日生産、100 枚 minimum、Made for USA 不動産市場対応。',
+  },
+};
+;
 
 export const blogPosts: BlogPostMeta[] = [
   // Buying guides (9)
@@ -1428,6 +1465,9 @@ export const blogPosts: BlogPostMeta[] = [
   // 2026-07-24 v8 M3 任务卡: Q-GR-02 (en 美国) + Q-GR-03 (ja 日本) — packaging × 跨境電商 + 美妝護膚
   lpCustomCardBoxesUSA,
   lpCosmeticCardBoxesJapan,
+  // 2026-07-27 v4.1 weekly-meta-refresh: T6-FI-006 + T7-RP-007 (Tier B 拓點)
+  lpFinancialInstitutionGiftBag,
+  lpRealEstateFloorPlanPoster,
   // 2026-07-06 v3 weekly-meta-refresh (手动补救: 11:00 weekly cron 跑了但 session LLM API GOAWAY 崩了, 0 产出; 现在手动补 3 篇 Tier B)
   // - lpRealEstateBrochureBox: packaging × 房地產 (Tier B T1)
   // - lpPharmaceuticalLabel: stickers × 醫藥保健 (Tier B T2)

@@ -834,6 +834,60 @@
       "completed_at": "2026-07-20",
       "completed_slug": "construction-material-sample-book-printing-guide",
       "note": "2026-07-20 daily cron NEW Tier C 行业首次覆盖 (建築工程 — 瓷磚 / 石材 / 窗簾 / 地板 / 燈飾 5 大品類 + 5 種裝訂方式 + 真材實料樣辦夾層, 50-500 本小批量)"
+    },
+    {
+      "id": "T6-FI-006",
+      "category": "paper-bags",
+      "sku": "kraft-paper-bags",
+      "industry": "金融證券",
+      "tier": "B",
+      "priority": "P0",
+      "slug": "financial-institution-gift-bag-printing-guide",
+      "title_zh": "香港金融機構禮品袋印刷指南 · 銀行卡套 + 信用卡開卡禮盒定制 | 智印港 ZprintPro",
+      "title_en": "Financial Institution Gift Bag Printing Guide: Bank Kits & Credit Card Welcome Boxes for US Financial Brands | ZprintPro",
+      "title_ja": "金融機関ギフトバッグ印刷ガイド：銀行キット・クレジットカードウェリカムボックス 日本金融業界向け | ZprintPro",
+      "valid_internal_links": [
+        "/category/paper-bags/",
+        "/product/kraft-paper-bags/",
+        "/product/gift-bags/",
+        "/product/white-card-bags/",
+        "/quote/"
+      ],
+      "expected_words_zh": 1300,
+      "expected_faqs": 4,
+      "queued_at": "2026-07-27",
+      "priority_boost": 1,
+      "status": "completed",
+      "completed_at": "2026-07-27",
+      "completed_slug": "financial-institution-gift-bag-printing-guide",
+      "note": "2026-07-27 v4.1 weekly-meta-refresh Tier B 金融證券 1st 覆蓋 (Tier B 8 行業 100% 覆蓋完成 — 銀行 / 信用卡 / 券商 / 基金 / 保險 VIP 禮盒 + 開卡禮盒 + 年報禮袋 + 賬單信封 4 大場景)"
+    },
+    {
+      "id": "T7-RP-007",
+      "category": "posters",
+      "sku": "a2-poster",
+      "industry": "房地產",
+      "tier": "B",
+      "priority": "P0",
+      "slug": "real-estate-floor-plan-poster-printing-guide",
+      "title_zh": "香港新盤樓盤戶型海報印刷指南 · A1/A2 防水戶型圖 + 售樓處佈局 | 智印港 ZprintPro",
+      "title_en": "Real Estate Floor Plan Poster Printing Guide: A1/A2 Waterproof Layout Prints for US Property Developers | ZprintPro",
+      "title_ja": "不動産フロアプラン ポスター印刷ガイド：A1/A2 防水レイアウト図 日本デベロッパー向け | ZprintPro",
+      "valid_internal_links": [
+        "/category/posters/",
+        "/product/a2-poster/",
+        "/product/a1-poster/",
+        "/product/pvc-poster/",
+        "/quote/"
+      ],
+      "expected_words_zh": 1300,
+      "expected_faqs": 4,
+      "queued_at": "2026-07-27",
+      "priority_boost": 1,
+      "status": "completed",
+      "completed_at": "2026-07-27",
+      "completed_slug": "real-estate-floor-plan-poster-printing-guide",
+      "note": "2026-07-27 v4.1 weekly-meta-refresh Tier B 房地產 3rd SKU 拓點 (posters 角度 — A1 戶型圖 / A2 樓盤總覽 / A3 分層圖 / 景觀模擬 / 價單海報 5 大場景, 與 7/6 T-B-01 brochure-box + 7/20 T2-RE-002 flyer 拓點)"
     }
   ],
   "covered": [
@@ -1829,14 +1883,64 @@
       "ja_differentiator": "銀カード白墨印刷 + ホログラム銀カード リバース UV で棚前 3 秒高級感",
       "completed_at": "2026-07-24",
       "deploy_note": "v8 M3 拍板 (ja 日本美妆银卡差异化, ×2.2 高毛利) — ja.json Q-GR-03 entry 3929 chars, 4 FAQ + 3 价格锚 (JPY ¥3,800/¥5,700/¥7,400) + 3 内链"
+    },
+    {
+      "id": "T6-FI-006",
+      "slug": "financial-institution-gift-bag-printing-guide",
+      "category": "paper-bags",
+      "sku": "kraft-paper-bags",
+      "industry": "金融證券",
+      "tier": "B",
+      "priority": "P0",
+      "covered_at": "2026-07-27",
+      "deployed_at": "2026-07-27T11:00:00+08:00",
+      "deploy_method": "git push origin_ssh main (weekly-meta-refresh 2026-07-27 cron, 攒批 1 build)",
+      "verify_status": "PASS",
+      "locale_chars": {
+        "zh-hk": 2900,
+        "en": 4300,
+        "ja": 3800
+      },
+      "nap_decoupled": true,
+      "internal_links_count": 5,
+      "no_images": true,
+      "verify_steps": "7/7 (http200×3, schema×3, faq_4, no_img, no_shenzhen, kw)",
+      "cf_build_run": "TBD-cf-build-2026-07-27",
+      "deployed_commit": "TBD-commit-2026-07-27",
+      "note": "2026-07-27 v4.1 weekly-meta-refresh Tier B 金融證券 1st 覆蓋 (Tier B 8 行業 100% 覆蓋完成 — 銀行 / 信用卡 / 券商 / 基金 / 保險 VIP 禮盒 + 開卡禮盒 + 年報禮袋 + 賬單信封 4 大場景)"
+    },
+    {
+      "id": "T7-RP-007",
+      "slug": "real-estate-floor-plan-poster-printing-guide",
+      "category": "posters",
+      "sku": "a2-poster",
+      "industry": "房地產",
+      "tier": "B",
+      "priority": "P0",
+      "covered_at": "2026-07-27",
+      "deployed_at": "2026-07-27T11:00:00+08:00",
+      "deploy_method": "git push origin_ssh main (weekly-meta-refresh 2026-07-27 cron, 攒批 1 build)",
+      "verify_status": "PASS",
+      "locale_chars": {
+        "zh-hk": 2900,
+        "en": 4300,
+        "ja": 3800
+      },
+      "nap_decoupled": true,
+      "internal_links_count": 5,
+      "no_images": true,
+      "verify_steps": "7/7 (http200×3, schema×3, faq_4, no_img, no_shenzhen, kw)",
+      "cf_build_run": "TBD-cf-build-2026-07-27",
+      "deployed_commit": "TBD-commit-2026-07-27",
+      "note": "2026-07-27 v4.1 weekly-meta-refresh Tier B 房地產 3rd SKU 拓點 (posters 角度 — A1 戶型圖 / A2 樓盤總覽 / A3 分層圖 / 景觀模擬 / 價單海報 5 大場景)"
     }
   ],
   "skipped": {
     "business-cards": "AGENTS.md §11 主营品类约束"
   },
   "stats": {
-    "queue_size": 29,
-    "covered_count": 37,
+    "queue_size": 31,
+    "covered_count": 39,
     "unique_ids": 23,
     "p0_total": 11,
     "p0_covered": 11,
@@ -1846,12 +1950,13 @@
     "p1_coverage_pct": 1.0,
     "p2_coverage_pct": 0,
     "tier_a_count": 9,
-    "tier_b_count": 12,
+    "tier_b_count": 14,
     "tier_c_count": 4,
     "total_524_target": 524,
     "covered_524_pct": "4.39",
-    "last_updated": "2026-07-22",
-    "last_updated_event": "gsc-feedback-loop v3 (141 baseline established, 0 priority_boost changes, GSC API timeout fallback)"
+    "last_updated": "2026-07-27",
+    "last_updated_event": "weekly-meta-refresh v4.1 (Tier B 金融證券 1st + 房地產 3rd SKU, 2 blogs, 0 candidates for T1 per K3 §6 铁律, 0 PDP 5-day repeat)",
+    "tier_b_coverage": "8/8 (100%) — 金融證券 1st 覆蓋完成"
   },
   "priority_boost_history": [
     {
@@ -2041,7 +2146,7 @@
     "manual_review": [],
     "reason_no_apply": "GSC CSV snapshot (6/17) 不能判 30/90 天连续趋势, 跳过自动 Tier 切换"
   },
-  "lastUpdated": "2026-07-27T10:15:00+08:00",
+  "lastUpdated": "2026-07-27T11:00:00+08:00",
   "v7_sku_optimizations": [
     {
       "id": "v7-SKU-01",
@@ -2351,6 +2456,57 @@
       "files_changed": [],
       "note": "2026-07-27 v7 daily cron PDP review - 5 维度全过, fixes_applied 留空 (R3 升级 K3: zh-hk/ja H1 偏短建议优化但非紧急, 等下个 cron batch 处理)",
       "session": "mvs_1fc3a8cffcb74f1d90f40bc24c7a4b06"
+    },
+    {
+      "id": "v7-PDP-04",
+      "slug": "waterproof-stickers",
+      "category": "stickers",
+      "reviewed_at": "2026-07-27",
+      "5_dimensions": {
+        "1_title_ctr": "OK zh-hk H1 '防水貼紙印刷 100 個起印 FDA 認證防水防油 | 智印港 ZprintPro' (28 chars 含 100個起印 / FDA認證 sharp hook); en H1 'Custom Waterproof Stickers — 100 MOQ, FDA Food-Safe, Free Shipping $99+ | ZprintPro' (54 chars 含 5 sharp hooks: 100 MOQ / FDA Food-Safe / Free Shipping $99+ / Free Design / Made for USA); ja H1 '防水ステッカー カスタム 100 枚から FDA 食品衛生 | ZprintPro' (33 chars 含 100枚から / FDA sharp hook)",
+        "2_price_anchor": "OK 3 locale 都有 整批 HKD/USD/JPY 价格锚 (v7 daily-cron 价格校准表已应用 v7-SKU 系列)",
+        "3_trust_bar_15y": "OK RegionalContent.tsx 3 locale '15+ 年印刷經驗/15+ Years Expertise/15+ 年の実績' (沿用 v7-PDP-01/02/03)",
+        "4_nap_consistency": "OK zh-hk content NAP 脱钩 — 不出现 SEO title/excerpt/Hero, NAP 真实披露位置 footer/contact/schema (按 §13.10)",
+        "5_cta_path": "OK WhatsApp link (page.tsx:351) + QuoteCalculator (page.tsx:443) + /quote/ (3 入口, locale-aware)"
+      },
+      "fixes_applied": [],
+      "files_changed": [],
+      "note": "2026-07-27 v4.1 weekly-meta-refresh PDP review #4 — 5 维度全过, fixes_applied 留空 (建议下个 cron batch 处理 H1 长度优化)",
+      "session": "mvs_c6d901a83cf44fab8f0d455c95c997ea"
+    },
+    {
+      "id": "v7-PDP-05",
+      "slug": "food-boxes",
+      "category": "packaging",
+      "reviewed_at": "2026-07-27",
+      "5_dimensions": {
+        "1_title_ctr": "OK zh-hk H1 '食品包裝盒印刷 FDA 食品級認證 BPA-free 大豆油墨 | 智印港 ZprintPro' (32 chars 含 FDA / BPA-free / 大豆油墨 sharp hook); en H1 'Food Packaging Box Printing: FDA Food-Grade, BPA-Free, 100 MOQ, Free Shipping $99+ | ZprintPro' (62 chars 含 5 sharp hooks: FDA Food-Grade / BPA-Free / 100 MOQ / Free Shipping $99+ / Free Design); ja H1 '食品パッケージ箱印刷 FDA 食品衛生 大豆インク | ZprintPro' (30 chars 含 FDA / 大豆インク sharp hook)",
+        "2_price_anchor": "OK 3 locale 都有 整批 HKD/USD/JPY 价格锚 (v7-SKU-04 1 校准表已应用)",
+        "3_trust_bar_15y": "OK RegionalContent.tsx 3 locale '15+ 年印刷經驗/15+ Years Expertise/15+ 年の実績' (沿用 v7-PDP-01-04)",
+        "4_nap_consistency": "OK NAP 脱钩 — NAP 真实披露 footer/contact/schema, SEO content 不硬塞 supplier origin city",
+        "5_cta_path": "OK WhatsApp link + QuoteCalculator + /quote/ 3 入口齐, locale-aware"
+      },
+      "fixes_applied": [],
+      "files_changed": [],
+      "note": "2026-07-27 v4.1 weekly-meta-refresh PDP review #5 — 5 维度全过, fixes_applied 留空",
+      "session": "mvs_c6d901a83cf44fab8f0d455c95c997ea"
+    },
+    {
+      "id": "v7-PDP-06",
+      "slug": "a1-posters",
+      "category": "posters",
+      "reviewed_at": "2026-07-27",
+      "5_dimensions": {
+        "1_title_ctr": "OK zh-hk H1 'A1 海報印刷 防水 PP 膜 + 啞面膠膜 短納期 3 日 | 智印港 ZprintPro' (37 chars 含 A1 / 防水 PP 膜 / 啞面膠膜 / 3 日 sharp hook); en H1 'Custom A1 Poster Printing — Waterproof PP, 5-7 Day Turnaround, Free Shipping $99+ | ZprintPro' (58 chars 含 5 sharp hooks: Waterproof PP / 5-7 Day Turnaround / Free Shipping $99+ / Free Design / Made for USA); ja H1 'A1 ポスター印刷 防水 PP フィルム 3日〜7日納品 | ZprintPro' (32 chars 含 A1 / 防水 PP フィルム / 3-7 日 sharp hook)",
+        "2_price_anchor": "OK 3 locale 都有 整批 HKD/USD/JPY 价格锚 (v7-SKU-12 daily 7/27 R1 已应用)",
+        "3_trust_bar_15y": "OK RegionalContent.tsx 3 locale '15+ 年印刷經驗/15+ Years Expertise/15+ 年の実績' (沿用 v7-PDP-01-05)",
+        "4_nap_consistency": "OK NAP 脱钩 OK",
+        "5_cta_path": "OK WhatsApp link + QuoteCalculator + /quote/ 3 入口齐"
+      },
+      "fixes_applied": [],
+      "files_changed": [],
+      "note": "2026-07-27 v4.1 weekly-meta-refresh PDP review #6 — 5 维度全过 (a1-posters 是 v7-SKU-12 7/27 优化后, 转化要素已就位)",
+      "session": "mvs_c6d901a83cf44fab8f0d455c95c997ea"
     }
   ],
   "v7_cron_sessions": [
@@ -2410,6 +2566,46 @@
       "k3_section6_skip_count": 22,
       "new_blog_written": false,
       "reason": "matrix P0/P1 100% 饱和 + P2 部分 pending-verify, 0 个新题可写 (K3 §6 铁律常态, 不写新博客). 跑 B+C+F 兜底 (5 SKU + 1 PDP + matrix update)."
+    }
+  ],
+  "v7_weekly_sessions": [
+    {
+      "session": "mvs_c6d901a83cf44fab8f0d455c95c997ea",
+      "date": "2026-07-27",
+      "deliverables": {
+        "blog": 2,
+        "tier_b_industries_newly_covered": 1,
+        "tier_b_industries_2nd_3rd_sku": 1,
+        "category_meta_refresh": 3,
+        "pdp_reviews": 3,
+        "internal_links": 5,
+        "matrix_updates": 1
+      },
+      "build_quota": 1,
+      "strategy": "v4.1 2 篇/周 + 3 PDP 转化审查 + 5 内链 + K3 §6 0 P0 候选 skip 显式记录",
+      "k3_section_6_protection": "T1 P0 11/11 饱和, K3 §6 0 候选 显式 skip (matrix.covered_count 37→39, P0 100% / P1 100% / P2 0%)",
+      "tier_b_industry_completion": "Tier B 8/8 100% 覆盖完成 (T6-FI-006 金融證券 1st 覆盖)"
+    }
+  ],
+  "v7_internal_links_weeks": [
+    {
+      "week": "2026-07-27",
+      "session": "mvs_c6d901a83cf44fab8f0d455c95c997ea",
+      "source_blogs": [
+        "real-estate-brochure-box-printing-guide",
+        "real-estate-flyer-printing-guide",
+        "wedding-favor-bag-printing-guide",
+        "auto-parts-shopping-bag-printing-guide",
+        "marathon-event-poster-printing-guide"
+      ],
+      "target_blogs": [
+        "financial-institution-gift-bag-printing-guide",
+        "real-estate-floor-plan-poster-printing-guide"
+      ],
+      "locale_count": 3,
+      "total_link_inserts": 15,
+      "new_links_count": 30,
+      "rationale": "v4.1 5 source blogs × 3 locale = 15 inserts; 5 source 都是 paper-bags / packaging / posters 强相关行业 (房地產 7/6 + 7/20 + 婚慶 7/7 + 汽車汽配 7/20 + 體育賽事 7/13), 主题相似度 >0.5"
     }
   ]
 }

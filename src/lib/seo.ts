@@ -638,14 +638,14 @@ export const CATEGORY_INDUSTRIES: Record<string, {
     ja: ['化粧品ブランド', '越境ECブランド', '茶・ドリンク', '医薬保健コンプライアンス + 金融サミット', '結婚式・企業ギフト', 'ベビー食品 + スポーツ記念ギフトボックス'],
   },
   'paper-bags': {
-    'zh-hk': ['服飾品牌', '珠寶鐘錶', '金融峰會禮品 + 體育賽事紀念', '美妝精品', '零售餐飲', '汽車 4S 店售後服務袋'],
-    en: ['Fashion & apparel brands', 'Jewellery & watches', 'Financial summit + Sports events', 'Beauty & cosmetics', 'Retail & F&B', 'Auto 4S dealer service bags'],
-    ja: ['アパレルブランド', '宝飾・腕時計', '金融サミット + スポーツイベント', '化粧品・コスメ', '小売・飲食', '自動車 4S ディーラー サービス バッグ'],
+    'zh-hk': ['服飾品牌', '珠寶鐘錶', '金融峰會禮品 + 體育賽事紀念', '美妝精品', '零售餐飲', '汽車 4S 店售後服務袋', '金融機構 VIP 禮盒 / 開卡禮盒 / 賬單信封'],
+    en: ['Fashion & apparel brands', 'Jewellery & watches', 'Financial summit + Sports events', 'Beauty & cosmetics', 'Retail & F&B', 'Auto 4S dealer service bags', 'Financial Institution VIP / Welcome Box / Billing Envelope'],
+    ja: ['アパレルブランド', '宝飾・腕時計', '金融サミット + スポーツイベント', '化粧品・コスメ', '小売・飲食', '自動車 4S ディーラー サービス バッグ', '金融機関 VIP / ウェリカム ボックス / Billing エンベロープ'],
   },
   'posters': {
-    'zh-hk': ['零售店面', '展覽活動', '補習社宣傳', '房地產海報', '餐廳推廣'],
-    en: ['Retail storefronts', 'Exhibitions & events', 'Tutoring & education', 'Real estate promotion', 'Restaurant marketing'],
-    ja: ['小売店', '展示会・イベント', '塾・教育', '不動産プロモ', '飲食店マーケティング'],
+    'zh-hk': ['零售店面', '展覽活動', '補習社宣傳', '房地產海報 + 新盤戶型圖 / 售樓處佈局', '餐廳推廣'],
+    en: ['Retail storefronts', 'Exhibitions & events', 'Tutoring & education', 'Real estate promotion + new development floor plan / sales gallery layout', 'Restaurant marketing'],
+    ja: ['小売店', '展示会・イベント', '塾・教育', '不動産プロモ + 新築マンション フロアプラン / モデルルーム レイアウト', '飲食店マーケティング'],
   },
   'calendars': {
     'zh-hk': ['企業禮品', '學校定制', '房地產送禮', '汽車汽配', '金融客戶'],
