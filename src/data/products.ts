@@ -5150,10 +5150,12 @@ export const products: Product[] = [
     id: 'PB-004',
     sku_code: 'PB-004',
     slug: 'eco-paper-bags',
+    optimizedAt: '2026-07-27',
+    optimizationRound: 1,
     category: 'paper-bags',
     category_slug: 'paper-bags',
     name: '環保紙袋 | 紙袋 / 牛皮紙袋 / 手提袋', nameEn: 'Eco Paper Bags | Paper Bags & Kraft Bags', nameJa: 'エコ紙袋 | 紙袋 / クラフト紙袋 / ハンドル', title_zh: '環保紙袋印刷訂製 FSC再生認證 100個起印 | 智印雲 ZprintPro',
-    description: '環保紙袋印刷訂製，100個起印，HK$2.2起/個。FSC再生認證紙材，可完全降解，支援燙金UV印刷。適合ESG品牌碳審計、減塑徵費合規，即日交貨，全港送貨。', descriptionEn: 'FSC-certified eco-friendly paper, sustainable development. Perfect for environmentally conscious brands., ISO 9001:2015 certified quality management system. 100% recycled paper · 50 MOQ · FSC certified · Sustainable packaging for eco-conscious brands.', descriptionJa: 'FSC認証の環境に優しい紙、持続可能な開発。環境に配慮するブランドに最適。。再生紙100%・50枚から・FSC認証。エコロジーブランド向けサステナブルパッケージ。', description_zh: 'FSC認證環保紙張，可持續發展。適合注重環保的品牌。',
+    description: '環保紙袋印刷訂製，100個起印，HK$2.2起/個。FSC再生認證紙材，可完全降解，支援燙金UV印刷。適合ESG品牌碳審計、減塑徵費合規，即日交貨，全港送貨。 适配行业: ESG認證品牌、環保美妝、有機食品、公平貿易、咖啡店、買手店、服裝品牌、禮品店.', descriptionEn: 'FSC-certified eco-friendly paper, sustainable development. Perfect for environmentally conscious brands., ISO 9001:2015 certified quality management system. 100% recycled paper · 50 MOQ · FSC certified · Sustainable packaging for eco-conscious brands. 适配行业: ESG brands, Eco beauty, Organic food, Fair trade, Cafés, Boutiques, Apparel, Gift shops.', descriptionJa: 'FSC認証の環境に優しい紙、持続可能な開発。環境に配慮するブランドに最適。。再生紙100%・50枚から・FSC認証。エコロジーブランド向けサステナブルパッケージ。 适配行业: ESG、エコ美容、オーガニック、フェアトレード、カフェ、ブティック、アパレル.', description_zh: 'FSC認證環保紙張，可持續發展。適合注重環保的品牌。 适配行业: ESG認證品牌、環保美妝、有機食品、公平貿易、咖啡店、買手店、服裝品牌、禮品店.',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -6433,10 +6435,12 @@ export const products: Product[] = [
     id: 'FL-002',
     sku_code: 'FL-002',
     slug: 'a5-flyers',
+    optimizedAt: '2026-07-27',
+    optimizationRound: 1,
     category: 'flyers',
     category_slug: 'flyers',
     name: 'A5宣傳單張 | 宣傳單張 / 折頁 / A4/A5', nameEn: 'A5 Flyers | A4/A5 Flyers & Leaflets', nameJa: 'A5チラシ | A4/A5 チラシ・フライヤー', title_zh: 'A5傳單印刷 100張起印 雙面四色 免費設計 | 智印雲 ZprintPro',
-    description: 'A5傳單印刷訂製，100張起印，HK$0.18起/張。157g銅版紙雙面四色，免費設計排版。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。', descriptionEn: 'A5 size, economical, perfect for mass distribution. First choice for food delivery, flash events.', descriptionJa: 'A5サイズ、経済的、大量配布に最適。フードデリバリー、フラッシュイベントの第一選択。', description_zh: 'A5尺寸，經濟實惠，適合大量派發。餐飲外賣、快閃活動首選。',
+    description: 'A5傳單印刷訂製，100張起印，HK$0.18起/張。157g銅版紙雙面四色，免費設計排版。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心.', descriptionEn: 'A5 size, economical, perfect for mass distribution. First choice for food delivery, flash events. 适配行业: Food delivery, Real estate, Retail, Education, Events, Beauty, Community.', descriptionJa: 'A5サイズ、経済的、大量配布に最適。フードデリバリー、フラッシュイベントの第一選択。 适配行业: 飲食デリバリー、不動産、小売、教育、イベント、美容、コミュニティ.', description_zh: 'A5尺寸，經濟實惠，適合大量派發。餐飲外賣、快閃活動首選。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心.',
     longDescription: `智印雲A5宣傳單張採用128g銅版紙或100g書紙，配合四色數碼印刷，經濟實惠且色彩鮮豔。A5尺寸（148×210mm）適合大量派發，成本較A4降低約40%，是餐飲外賣、快閃活動及社區宣傳的首選。可選單面或雙面印刷，並支援二維碼與優惠券設計。我們提供免費排版與出血檢查，確保裁切精準。與分類頁內容一致，材質關鍵詞包含：A5單張、銅版紙、書紙、數碼印刷。<h3>傳單尺寸對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">尺寸</th><th class="p-2 text-center">資訊容量</th><th class="p-2 text-center">派發效率</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用場景</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">A4 (210×297mm)</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">詳細產品目錄、課程介紹</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5 (148×210mm)</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">餐飲外賣、活動宣傳</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">A6 (105×148mm)</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">街頭派發、外賣插頁</td></tr></tbody></table><h3>傳單尺寸對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">尺寸</th><th class="p-2 text-center">資訊容量</th><th class="p-2 text-center">派發效率</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用場景</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">A4 (210×297mm)</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">詳細產品目錄、課程介紹</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5 (148×210mm)</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">餐飲外賣、活動宣傳</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">A6 (105×148mm)</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">街頭派發、外賣插頁</td></tr></tbody></table>
 
 **智印雲 國際印刷**：深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。
@@ -7839,10 +7843,12 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     id: 'PO-002',
     sku_code: 'PO-002',
     slug: 'a1-posters',
+    optimizedAt: '2026-07-27',
+    optimizationRound: 1,
     category: 'posters',
     category_slug: 'posters',
     name: 'A1大幅海報 | A1/A2 海報 / 展覽海報', nameEn: 'A1 Large Posters | A1/A2 Posters & Exhibition', nameJa: 'A1大型ポスター | A1/A2 ポスター / 展示会', title_zh: 'A1大幅海報',
-    description: 'A1大尺寸，視覺衝擊力強。適合展覽、會場佈置。', descriptionEn: 'A1 large size, strong visual impact. Perfect for exhibitions, venue decoration., ISO 9001:2015 certified quality management system', descriptionJa: 'A1大きなサイズ、強い視覚的インパクト。展示会、会場裝飾に最適。', description_zh: 'A1大尺寸，視覺衝擊力強。適合展覽、會場佈置。',
+    description: 'A1大尺寸，視覺衝擊力強。適合展覽、會場佈置。 适配行业: 展覽會場、零售品牌、演唱會活動、學院招生、房地產、文創海報.', descriptionEn: 'A1 large size, strong visual impact. Perfect for exhibitions, venue decoration., ISO 9001:2015 certified quality management system 适配行业: Exhibitions, Retail brands, Concerts, School admissions, Real estate, Art posters.', descriptionJa: 'A1大きなサイズ、強い視覚的インパクト。展示会、会場裝飾に最適。 适配行业: 展示会、小売ブランド、コンサート、學校招生、不動産、美術ポスター.', description_zh: 'A1大尺寸，視覺衝擊力強。適合展覽、會場佈置。 适配行业: 展覽會場、零售品牌、演唱會活動、學院招生、房地產、文創海報.',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -10207,10 +10213,12 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     id: 'RP-002',
     sku_code: 'RP-002',
     slug: 'embossed-red-packets',
+    optimizedAt: '2026-07-27',
+    optimizationRound: 1,
     category: 'red-packets',
     category_slug: 'red-packets',
     name: '浮雕利是封 | 利是封 / 春聯 / 燙金', nameEn: 'Embossed Red Packets | CNY Red Packets & Foil', nameJa: 'エンボスポチ袋 | 紅包 / 旧正月 / 箔押し', title_zh: '浮雕利是封',
-    description: '浮雕工藝，立體觸感，高檔奢華。展現品牌誠意，適合VIP客戶、高端送禮。', descriptionEn: 'Embossed craftsmanship, dimensional texture, luxurious feel.', descriptionJa: 'エンボス加工、立体的な触感、豪華な質感。', description_zh: '浮雕工藝，立體觸感，高檔奢華。展現品牌誠意，適合VIP客戶、高端送禮。',
+    description: '浮雕工藝，立體觸感，高檔奢華。展現品牌誠意，適合VIP客戶、高端送禮。 适配行业: 婚慶嫁娶、春節賀年、酒店迎賓、銀行公關、品牌活動、茶葉禮盒、母嬰品牌.', descriptionEn: 'Embossed craftsmanship, dimensional texture, luxurious feel. 适配行业: Wedding, Lunar New Year, Hotel welcome, Bank PR, Brand events, Tea gift, Baby brands.', descriptionJa: 'エンボス加工、立体的な触感、豪華な質感。 适配行业: ウェディング、春節、ホテル、バンクPR、ブランドイベント、茶ギフト、ベビー.', description_zh: '浮雕工藝，立體觸感，高檔奢華。展現品牌誠意，適合VIP客戶、高端送禮。 适配行业: 婚慶嫁娶、春節賀年、酒店迎賓、銀行公關、品牌活動、茶葉禮盒、母嬰品牌.',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -17266,10 +17274,12 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     id: 'ED-005',
     sku_code: 'ED-005',
     slug: 'graduation-yearbook',
+    optimizedAt: '2026-07-27',
+    optimizationRound: 1,
     category: 'educational',
     category_slug: 'educational',
     name: '香港畢業紀念冊 — 畢業紀念冊 / 校史特刊 / 校友會刊 / 社團特刊', nameEn: 'Graduation Yearbooks, School Anniversary & Alumni Publications', nameJa: '卒業記念アルバム — 卒業記念・校史特刊・同窓会誌・クラブ特刊', title_zh: '香港畢業紀念冊 — 畢業紀念冊 / 校史特刊 / 校友會刊 / 社團特刊',
-    description: '香港畢業紀念冊/校史特刊/校友會刊/社團特刊定製，騎馬釘/膠裝/精裝三種裝訂，支持班級照片、師長題詞、學校 logo 全頁。香港本地 48 小時交付，DHL 全球 2-4 天。', descriptionEn: 'Graduation yearbooks, school anniversary & alumni publication printing — saddle stitch / perfect bound / hardcover, supporting class photos, faculty messages, school logos. Free design mockup, 100 MOQ, DHL Express global 2-4 day delivery from Asia factory.', descriptionJa: '卒業記念アルバム・校史特刊・同窓会誌・クラブ特刊印刷、中綴じ/無線綴じ/上製本の3方式、クラス寫真・先生メッセージ・學校ロゴ全面対応。無料デザインモックアップ、100冊〜、アジア自社工場からDHL国際速達2-4日。', description_zh: '香港畢業紀念冊/校史特刊/校友會刊/社團特刊定製，騎馬釘/膠裝/精裝三種裝訂，支持班級照片、師長題詞、學校 logo 全頁。香港本地 48 小時交付，DHL 全球 2-4 天。',
+    description: '香港畢業紀念冊/校史特刊/校友會刊/社團特刊定製，騎馬釘/膠裝/精裝三種裝訂，支持班級照片、師長題詞、學校 logo 全頁。香港本地 48 小時交付，DHL 全球 2-4 天。 适配行业: 中學畢業紀念冊、大學畢業紀念冊、校友會、培訓機構、校園活動、教會團契、補習社.', descriptionEn: 'Graduation yearbooks, school anniversary & alumni publication printing — saddle stitch / perfect bound / hardcover, supporting class photos, faculty messages, school logos. Free design mockup, 100 MOQ, DHL Express global 2-4 day delivery from Asia factory. 适配行业: High school yearbook, College yearbook, Alumni, Training, School events, Church, Tutoring.', descriptionJa: '卒業記念アルバム・校史特刊・同窓会誌・クラブ特刊印刷、中綴じ/無線綴じ/上製本の3方式、クラス寫真・先生メッセージ・學校ロゴ全面対応。無料デザインモックアップ、100冊〜、アジア自社工場からDHL国際速達2-4日。 适配行业: 高校卒業アルバム、大学卒業アルバム、同窓会、研修、学校活動、教会、塾.', description_zh: '香港畢業紀念冊/校史特刊/校友會刊/社團特刊定製，騎馬釘/膠裝/精裝三種裝訂，支持班級照片、師長題詞、學校 logo 全頁。香港本地 48 小時交付，DHL 全球 2-4 天。 适配行业: 中學畢業紀念冊、大學畢業紀念冊、校友會、培訓機構、校園活動、教會團契、補習社.',
     longDescription: `<h3>三種裝訂工藝對比</h3>
 <p>畢業紀念冊常用 3 種裝訂方式, 頁數與預算決定最佳方案:</p>
 <table>
@@ -17356,8 +17366,6 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
       ja: '卒業記念アルバム印刷 — 校史特刊/同窓会誌/クラブ特刊，中綴じ/無線綴じ/上製本の3方式，クラス寫真・先生メッセージ・学校ロゴ全面対応。香港48時間，DHL国際2-4日。',
     },
   },
-  optimizedAt: '2026-07-09',
-  optimizationRound: 1,
 },
   // ===== 新增包裝盒產品（SEO重點布局） =====
   {
@@ -18550,8 +18558,6 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
       ja: '防水ステッカー / ダイカットステッカー | フルーツ・食品ラベルシール | 防水対応・オリジナル形状 | ZprintPro'
     },
   },
-  optimizedAt: '2026-07-09',
-  optimizationRound: 1,
 },
 {
       id: 'DJ-001',

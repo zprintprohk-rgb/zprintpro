@@ -2041,7 +2041,7 @@
     "manual_review": [],
     "reason_no_apply": "GSC CSV snapshot (6/17) 不能判 30/90 天连续趋势, 跳过自动 Tier 切换"
   },
-  "lastUpdated": "2026-07-22",
+  "lastUpdated": "2026-07-27T10:15:00+08:00",
   "v7_sku_optimizations": [
     {
       "id": "v7-SKU-01",
@@ -2204,6 +2204,92 @@
         "餐廳當日貼紙",
         "零售促銷"
       ]
+    },
+    {
+      "id": "v7-SKU-11",
+      "slug": "a5-flyers",
+      "category": "flyers",
+      "optimizedAt": "2026-07-27",
+      "optimizationRound": 1,
+      "tier": "A",
+      "industries": [
+        "餐飲外賣",
+        "房地產",
+        "零售精品",
+        "教育培訓",
+        "活動展會",
+        "美容美髮",
+        "社區中心"
+      ]
+    },
+    {
+      "id": "v7-SKU-12",
+      "slug": "a1-posters",
+      "category": "posters",
+      "optimizedAt": "2026-07-27",
+      "optimizationRound": 1,
+      "tier": "A",
+      "industries": [
+        "展覽會場",
+        "零售品牌",
+        "演唱會活動",
+        "學院招生",
+        "房地產",
+        "文創海報"
+      ]
+    },
+    {
+      "id": "v7-SKU-13",
+      "slug": "graduation-yearbook",
+      "category": "educational",
+      "optimizedAt": "2026-07-27",
+      "optimizationRound": 2,
+      "tier": "A",
+      "industries": [
+        "中學畢業紀念冊",
+        "大學畢業紀念冊",
+        "校友會",
+        "培訓機構",
+        "校園活動",
+        "教會團契",
+        "補習社"
+      ],
+      "note": "R2 升级 - 旧 R1 optimizedAt (2026-07-09) 删除, 改 R2 加 8 月开学季旺季适配行业"
+    },
+    {
+      "id": "v7-SKU-14",
+      "slug": "embossed-red-packets",
+      "category": "red-packets",
+      "optimizedAt": "2026-07-27",
+      "optimizationRound": 1,
+      "tier": "A",
+      "industries": [
+        "婚慶嫁娶",
+        "春節賀年",
+        "酒店迎賓",
+        "銀行公關",
+        "品牌活動",
+        "茶葉禮盒",
+        "母嬰品牌"
+      ]
+    },
+    {
+      "id": "v7-SKU-15",
+      "slug": "eco-paper-bags",
+      "category": "paper-bags",
+      "optimizedAt": "2026-07-27",
+      "optimizationRound": 1,
+      "tier": "A",
+      "industries": [
+        "ESG認證品牌",
+        "環保美妝",
+        "有機食品",
+        "公平貿易",
+        "咖啡店",
+        "買手店",
+        "服裝品牌",
+        "禮品店"
+      ]
     }
   ],
   "v7_pdp_reviews": [
@@ -2248,6 +2334,23 @@
         "src/data/products.ts (mailer-boxes object)"
       ],
       "v7_session": "mvs_fba4aab6ecf64fefa4fbf13de1a378e8"
+    },
+    {
+      "id": "v7-PDP-03",
+      "slug": "a5-flyers",
+      "category": "flyers",
+      "reviewed_at": "2026-07-27",
+      "5_dimensions": {
+        "1_title_ctr": "OK zh-hk H1 28 chars (偏短, < 50-60 理想), en H1 56 chars 完美 + Title \"Free Shipping $99+\" sharp hook, ja H1 33 chars 偏短 (3 locale 不同步) - 建议 zhhk/ja H1 加 sharp hook 拉长 50+ chars",
+        "2_price_anchor": "OK 3 locale 都有 整批 HKD/USD/JPY 价格锚 (v7 daily-cron 价格校准表已应用)",
+        "3_trust_bar_15y": "OK RegionalContent.tsx 3 locale \"15+ 年印刷經驗/15+ Years Expertise/15+ 年の実績\" badge (沿用 v7-PDP-01/02)",
+        "4_nap_consistency": "OK zh-hk content 含\"深圳自設廠房\"在 NAP 真实披露位置 (法务 footer/contact), 不出现 SEO title/excerpt/Hero - §13.10 脱钩 OK",
+        "5_cta_path": "OK WhatsApp link (3/3) + /quote/ (3/3), QuoteCalculator 通过 React 组件 hydration (不在 initial HTML) - 3 入口齐"
+      },
+      "fixes_applied": [],
+      "files_changed": [],
+      "note": "2026-07-27 v7 daily cron PDP review - 5 维度全过, fixes_applied 留空 (R3 升级 K3: zh-hk/ja H1 偏短建议优化但非紧急, 等下个 cron batch 处理)",
+      "session": "mvs_1fc3a8cffcb74f1d90f40bc24c7a4b06"
     }
   ],
   "v7_cron_sessions": [
@@ -2281,7 +2384,32 @@
         "ja": 6853
       },
       "price_anchors": "mailer-boxes 5档 HKD 965/1144/1677/1872/2800 + kraft-paper-bags 5档 HKD 811/1144/1677/1872/2800"
+    },
+    {
+      "session": "mvs_1fc3a8cffcb74f1d90f40bc24c7a4b06",
+      "date": "2026-07-27",
+      "deliverables": {
+        "blog": 0,
+        "sku_optimizations": 5,
+        "pdp_reviews": 1,
+        "matrix_updates": 1,
+        "k3_section6_skip_count": 22
+      },
+      "build_quota": 1,
+      "strategy": "v7 1 篇/天降频 + 深度提质 + 攒批 1 commit 1 build (K3 §6 0 候选, 跑 B+C+F 兜底)",
+      "note": "2026-07-27 v7 daily-content-evolve: K3 §6 铁律 0 候选 (matrix 100% 饱和). 5 SKU (a5-flyers/a1-posters/graduation-yearbook/embossed-red-packets/eco-paper-bags) + 1 PDP (a5-flyers 5 维度 review) + matrix update + 日报. 注意 7/30 起 daily cron 与 M3 P3 校园 blog 任务重叠 (back-to-school-printing-usa + new-semester-printing-japan), 7/27 末升级 K3 拍板."
     }
   ],
-  "last_updated": "2026-07-23T10:25:00+08:00"
+  "last_updated": "2026-07-23T10:25:00+08:00",
+  "k3_section6_skip_log": [
+    {
+      "date": "2026-07-27",
+      "queue_size": 32,
+      "pending_in_queue": 22,
+      "covered_skip": 22,
+      "k3_section6_skip_count": 22,
+      "new_blog_written": false,
+      "reason": "matrix P0/P1 100% 饱和 + P2 部分 pending-verify, 0 个新题可写 (K3 §6 铁律常态, 不写新博客). 跑 B+C+F 兜底 (5 SKU + 1 PDP + matrix update)."
+    }
+  ]
 }
