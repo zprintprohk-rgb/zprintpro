@@ -2703,10 +2703,12 @@ export const products: Product[] = [
     id: 'ST-004',
     sku_code: 'ST-004',
     slug: 'small-batch-stickers',
+    optimizedAt: '2026-07-28',
+    optimizationRound: 1,
     category: 'stickers',
     category_slug: 'stickers',
     name: '小批量貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Small Batch Stickers | Waterproof & Die-Cut Stickers', nameJa: '小ロットステッカー | 防水ステッカー / ダイカット', title_zh: '小批量貼紙',
-    description: '最低A4尺寸起印，無需大量庫存壓力。適合初創品牌、活動宣傳、個人創作。', descriptionEn: 'Minimum A4 size order, no bulk inventory pressure. Perfect for startups, event promotion, personal creations.', descriptionJa: '最小A4サイズから、大量在庫の心配なし。スタートアップ、イベント宣伝、個人創作に最適。', description_zh: '最低A4尺寸起印，無需大量庫存壓力。適合初創品牌、活動宣傳、個人創作。',
+    description: '最低A4尺寸起印，無需大量庫存壓力。適合初創品牌、活動宣傳、個人創作。 适配行业: 文創IP、同人周邊、餐飲、零售品牌活動、初創電商、測試樣本、活動贈品.', descriptionEn: 'Minimum A4 size order, no bulk inventory pressure. Perfect for startups, event promotion, personal creations. 适配行业: Indie IP, Doujin creators, Food & Beverage, Retail events, Startup e-commerce, Test samples, Promotional gifts.', descriptionJa: '最小A4サイズから、大量在庫の心配なし。スタートアップ、イベント宣伝、個人創作に最適。 适配行业: インディーIP、同人創作、飲食、小売イベント、スタートアップEC、テストサンプル、プロモーションギフト.', description_zh: '最低A4尺寸起印，無需大量庫存壓力。適合初創品牌、活動宣傳、個人創作。 适配行业: 文創IP、同人周邊、餐飲、零售品牌活動、初創電商、測試樣本、活動贈品.',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -3369,10 +3371,12 @@ export const products: Product[] = [
     id: 'ST-006',
     sku_code: 'ST-006',
     slug: 'foil-stickers',
+    optimizedAt: '2026-07-28',
+    optimizationRound: 1,
     category: 'stickers',
     category_slug: 'stickers',
     name: '燙金貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Foil Stickers | Waterproof & Die-Cut Stickers', nameJa: '箔押しステッカー | 防水ステッカー / ダイカット', title_zh: '燙金貼紙',
-    description: '燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮品包裝、VIP標識。', descriptionEn: 'Foil stamping gives stickers premium quality feel. Perfect for luxury product labels, gift packaging, VIP badges. Gold/silver foil · 50 MOQ · Free design proof · Fast 4-day turnaround. Perfect for beauty brands, wedding favors, premium packaging.', descriptionJa: '箔押し加工でステッカーに高級感。高級製品ラベル、ギフト包裝、VIPバッジに最適。。金箔/銀箔・50枚から・校正無料・最短4日出荷。美容ブランド・ウェディング・プレミアムパッケージに最適。', description_zh: '燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮品包裝、VIP標識。',
+    description: '燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮品包裝、VIP標識。 适配行业: 美妝護膚、食品酒類、零售精品、品牌活動、禮品包裝、VIP標識、跨境電商.', descriptionEn: 'Foil stamping gives stickers premium quality feel. Perfect for luxury product labels, gift packaging, VIP badges. Gold/silver foil · 50 MOQ · Free design proof · Fast 4-day turnaround. Perfect for beauty brands, wedding favors, premium packaging. 适配行业: Beauty, Food & Beverage, Retail, Brand events, Gift packaging, VIP labels, E-commerce.', descriptionJa: '箔押し加工でステッカーに高級感。高級製品ラベル、ギフト包裝、VIPバッジに最適。。金箔/銀箔・50枚から・校正無料・最短4日出荷。美容ブランド・ウェディング・プレミアムパッケージに最適。 适配行业: 美容、食品・飲料、小売、ブランドイベント、ギフトパッケージ、VIPラベル、EC.', description_zh: '燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮品包裝、VIP標識。 适配行业: 美妝護膚、食品酒類、零售精品、品牌活動、禮品包裝、VIP標識、跨境電商.',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -4804,10 +4808,12 @@ export const products: Product[] = [
     id: 'PB-003',
     sku_code: 'PB-003',
     slug: 'gift-bags',
+    optimizedAt: '2026-07-28',
+    optimizationRound: 1,
     category: 'paper-bags',
     category_slug: 'paper-bags',
     name: '禮品紙袋 | 紙袋 / 牛皮紙袋 / 手提袋', nameEn: 'Gift Bags | Paper Bags & Kraft Bags', nameJa: 'ギフト紙袋 | 紙袋 / クラフト紙袋 / ハンドル', title_zh: '禮品紙袋印刷訂製 高檔禮品袋 100個起印 燙金LOGO | 智印雲',
-    description: '禮品紙袋印刷訂製，100個起印，HK$3.5起/個。棉繩緞帶手挽，燙金UV壓凹工藝，支援多尺寸客製LOGO。適合品牌活動週年慶贈品，即日交貨，全港免費送貨。', descriptionEn: 'Exquisite design with foil stamping, UV and other processes. Essential for gifting, elevates gift quality., ISO 9001:2015 certified quality management system. Custom printed gift bags · 100 MOQ · Foil logo option · Wedding favor, retail, event bags. Free design mockup.', descriptionJa: '精巧なデザイン、箔押し・UVなどの加工付き。ギフトに必須、ギフトの質を向上。。オリジナルギフト紙袋・100枚から・箔押し選択可。ウェディング・小売・イベント用。校正無料。', description_zh: '精美設計，配合燙金、UV等工藝。送禮必備，提升禮品檔次。',
+    description: '禮品紙袋印刷訂製，100個起印，HK$3.5起/個。棉繩緞帶手挽，燙金UV壓凹工藝，支援多尺寸客製LOGO。適合品牌活動週年慶贈品，即日交貨，全港免費送貨。 适配行业: 婚慶、珠寶鐘錶、茶飲食品、服裝、禮品、品牌活動、酒店迎賓.', descriptionEn: 'Exquisite design with foil stamping, UV and other processes. Essential for gifting, elevates gift quality., ISO 9001:2015 certified quality management system. Custom printed gift bags · 100 MOQ · Foil logo option · Wedding favor, retail, event bags. Free design mockup. 适配行业: Wedding, Jewelry & Watches, Tea & Beverage, Apparel, Gifts, Brand events, Hotel hospitality.', descriptionJa: '精巧なデザイン、箔押し・UVなどの加工付き。ギフトに必須、ギフトの質を向上。。オリジナルギフト紙袋・100枚から・箔押し選択可。ウェディング・小売・イベント用。校正無料。 适配行业: ウェディング、宝飾・腕時計、茶・飲料、アパレル、ギフト、ブランドイベント、ホテル.', description_zh: '精美設計，配合燙金、UV等工藝。送禮必備，提升禮品檔次。 适配行业: 婚慶、珠寶鐘錶、茶飲食品、服裝、禮品、品牌活動、酒店迎賓.',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -6104,10 +6110,12 @@ export const products: Product[] = [
     id: 'FL-001',
     sku_code: 'FL-001',
     slug: 'a4-flyers',
+    optimizedAt: '2026-07-28',
+    optimizationRound: 1,
     category: 'flyers',
     category_slug: 'flyers',
     name: 'A4宣傳單張 | 宣傳單張 / 折頁 / A4/A5', nameEn: 'A4 Flyers | A4/A5 Flyers & Leaflets', nameJa: 'A4チラシ | A4/A5 チラシ・フライヤー', title_zh: 'A4傳單印刷 100張起印 HK$0.3/張 雙面彩印 | 智印雲 ZprintPro',
-    description: 'A4傳單印刷訂製，100張起印，HK$0.3起/張。157g銅版紙雙面四色印刷，免費設計打樣。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。', descriptionEn: 'Standard A4 size, most common flyer format. 157g glossy paper, 4-color printing, vibrant colors., ISO 9001:2015 certified quality management system', descriptionJa: '標準A4サイズ、最も一般的なチラシ形式。157gコート紙、4色印刷、鮮やかな色彩。', description_zh: '標準A4尺寸，最常用的宣傳單張規格。157g銅版紙，四色印刷，色彩鮮豔。適合產品推廣、活動宣傳。',
+    description: 'A4傳單印刷訂製，100張起印，HK$0.3起/張。157g銅版紙雙面四色印刷，免費設計打樣。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心.', descriptionEn: 'Standard A4 size, most common flyer format. 157g glossy paper, 4-color printing, vibrant colors., ISO 9001:2015 certified quality management system 适配行业: Food delivery, Real estate, Retail, Education, Events, Beauty, Community.', descriptionJa: '標準A4サイズ、最も一般的なチラシ形式。157gコート紙、4色印刷、鮮やかな色彩。 适配行业: 飲食デリバリー、不動産、小売、教育、イベント、美容、コミュニティ.', description_zh: '標準A4尺寸，最常用的宣傳單張規格。157g銅版紙，四色印刷，色彩鮮豔。適合產品推廣、活動宣傳。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心.',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -17372,10 +17380,12 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     id: 'PKG-007',
     sku_code: 'PKG-007',
     slug: 'magnetic-closure-gift-box',
+    optimizedAt: '2026-07-28',
+    optimizationRound: 1,
     category: 'packaging',
     category_slug: 'packaging',
     name: '磁吸翻蓋禮盒印刷 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Magnetic Closure Gift Box | Gift Boxes & Custom Packaging', nameJa: 'マグネット蓋ギフトボックス | パッケージボックス・化粧箱', title_zh: '磁吸翻蓋禮盒印刷',
-    description: '高檔磁吸翻蓋硬盒，適合奢侈品、化妝品、電子產品包裝。支持燙金、UV、壓紋工藝。', descriptionEn: 'Premium magnetic closure rigid boxes for luxury goods, cosmetics, electronics. Foil stamping, UV, embossing available.', descriptionJa: '高級マグネット蓋硬箱。高級品、化粧品、電子機器の包裝に最適。箔押し、UV、エンボス加工対応。', description_zh: '高檔磁吸翻蓋硬盒，適合奢侈品、化妝品、電子產品包裝。支持燙金、UV、壓紋工藝。',
+    description: '高檔磁吸翻蓋硬盒，適合奢侈品、化妝品、電子產品包裝。支持燙金、UV、壓紋工藝。 适配行业: 美妝護膚、珠寶鐘錶、婚慶、茶飲食品、電子產品、禮品、節日送禮.', descriptionEn: 'Premium magnetic closure rigid boxes for luxury goods, cosmetics, electronics. Foil stamping, UV, embossing available. 适配行业: Beauty, Jewelry & Watches, Wedding, Tea & Beverage, Electronics, Gifts, Holiday gifts.', descriptionJa: '高級マグネット蓋硬箱。高級品、化粧品、電子機器の包裝に最適。箔押し、UV、エンボス加工対応。 适配行业: 美容、宝飾・腕時計、ウェディング、茶・飲料、エレクトロニクス、ギフト、シーズンギフト.', description_zh: '高檔磁吸翻蓋硬盒，適合奢侈品、化妝品、電子產品包裝。支持燙金、UV、壓紋工藝。 适配行业: 美妝護膚、珠寶鐘錶、婚慶、茶飲食品、電子產品、禮品、節日送禮.',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
