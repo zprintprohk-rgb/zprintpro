@@ -2135,6 +2135,63 @@
       "data_source": "6/17 gsc_data.csv snapshot + 7/17 overlap-keywords.csv (GSC API timeout, GFW-blocked oauth2.googleapis.com)",
       "residual_141_baseline_established": true,
       "residual_141_count": 28
+    },
+    {
+      "date": "2026-07-29",
+      "event": "gsc-feedback-loop v4 (Wed 15:00, 1st v4 run)",
+      "data_source": "gsc-snapshot-2026-07-29.json (296 rows, 7d 862 imps / 1 click, P2 7/29 02:18 拉取) + GSC API 本地 proxy 127.0.0.1:7892 (commit b8bda22) 通了",
+      "28_baseline_status": {
+        "found_in_gsc": 19,
+        "not_found_in_gsc": 9,
+        "found_all_zero_click": "19/19 (100% CTR 0%)",
+        "trend_vs_6_17": "显示量普遍下降 60-90% (e.g. 食品包裝印刷 108→9 imps, 海報印刷 65→19 imps), 7/22-7/28 长尾词季节性 / GSC 数据延迟 / 301 旧域衰减 三因不明, P4 关注",
+        "category_classification": {
+          "zombie_19": ["食品包裝印刷", "海報與印刷", "紙袋印刷", "宣傳單張", "紙袋訂製", "宣傳單張印刷", "包裝盒訂製", "海報印刷", "包裝盒印刷", "印海報", "貼紙印刷", "紙盒訂製", "訂做紙袋", "印刷紙袋", "食品包裝訂製", "poster 印刷", "貼紙訂製", "禮盒訂製", "食品印刷"],
+          "disappeared_9": ["印名片 (NOT_FOUND, §11 禁区 不补)", "印紙袋", "紙袋印製", "利是封印刷 (季节 7月无春节)", "紙袋訂造", "紙袋訂做", "紙袋批發", "戶外貼紙", "印紙盒", "bag printing (en跨境)"],
+          "high_potential_残杀候选": [
+            {"q": "海報印刷", "7d_imps": 19, "7d_pos": 32.0, "建议": "P4 CTR 优化 top 1"},
+            {"q": "宣傳單張", "7d_imps": 17, "7d_pos": 38.4},
+            {"q": "貼紙印刷", "7d_imps": 14, "7d_pos": 55.5},
+            {"q": "包裝盒訂製", "7d_imps": 11, "7d_pos": 37.1},
+            {"q": "食品包裝印刷", "7d_imps": 9, "7d_pos": 74.6, "6_17_was": 108, "降幅": "↓91%"}
+          ]
+        }
+      },
+      "p0_2_301_monitor_5_items": {
+        "1_old_domain_crawl_errors": "未直接拉 GSC (本 cron 跑时段 oauth2 偶发 timeout), fallback 7/17 csv 无 errors, 7/29 csv 0 错误 维持",
+        "2_sitemap_old_url_residual": "PASS (public/sitemap*.xml grep z-printpro.com 0 hits)",
+        "3_index_transfer_rate": "未量化 (本 cron 拉 query 维度无 page 维度), 待 v3 升级或 P4 补跑",
+        "4_authority_handover_diff": "未量化 (同 #3)",
+        "5_old_url_10_samples": "🚨 退步! 7/22 baseline 5/5 PASS, 7/29 0/5 PASS (清单内 5 条全 200/404 直出, 149 条 Bulk Redirect List 疑似整体失效)",
+        "monitor_regression": "清单内 #1 包装盒 返回 200 + 新站 HTML body (zh-Hant-HK, data-locale=zh-hk), #2-5 返回 404 (genuine 404, 非新站内容); 清单外 #6 #7 #10 同样 200 直出新站内容 (无 301); 149 条规则整体不生效",
+        "k3_escalation": "已触发 §14.4 升级条件, 7/29 15:00 gsc-feedback report §K3 §6 段升级 K3 立即排查 CF Bulk Redirect List enabled 状态",
+        "bulk_redirect_checklist_for_k3": [
+          "(1) CF Dashboard → Account → Bulk Redirects → Lists → z_printpro_legacy_301 → 确认 149 条 / 151 条 (含 7/23 拍板 #8 #9 2 条) 都在",
+          "(2) 确认 list status = enabled (不是 paused / draft)",
+          "(3) 确认 list 关联到 z-printpro.com zone (不是仅 zprintpro.com)",
+          "(4) 检查 Ruleset Order, Bulk Redirects 优先级是否被 Page Rules 覆盖",
+          "(5) 如确认 disabled, K3 启用后 cron 7/30 daily 之前 5 项监控应回到 5/5 PASS"
+        ]
+      },
+      "matrix_priority_boost_adjustments": {
+        "applied": 0,
+        "rationale": "0 候选常态维持 (K3 §6 拍板 + §9 拍板 #2 不补跑 7/25-7/26 静默); 28 baseline 词 19 命中全 0 点击, 9 消失; 已 covered 35+ 博客未产生任何 zprintpro 流量; 真正有商业价值 (跨境電商/婚慶/教育/美妝) 候选都已在 Q-GR-01/02/03 (3 篇 7/23-7/24 部署), 不再重复加权",
+        "next_daily_recommendation": "Q-005 cross-border-ecommerce-shipping-box-guide (P0 跨境電商, 已 queued 7/6, 仍未 covered, daily 7/30 cron 必写 - 大流量高潜力类目, blocklist 2 slug 不影响)",
+        "blocklist_2_slugs_excluded": [
+          "back-to-school-printing-usa (en) - 留 M3 P3 独立写",
+          "new-semester-printing-japan (ja) - 留 M3 P3 独立写"
+        ]
+      },
+      "p4_ctr_seed_top_15": [
+        "海報印刷 19", "月曆印刷 17", "宣傳單張 17", "貼紙印刷 14", "印海報 13",
+        "宣傳單張印刷 13", "印刷 cmyk 12", "騎馬釘 11", "包裝盒訂製 11", "透明貼 11",
+        "訂做紙袋 11", "catalog printing 11", "書刊印刷 10", "印刷 カラー モード 10", "咭片印刷 10"
+      ],
+      "ai_visibility_baseline_link": "ai-visibility-baseline-2026-07-29.md (0/7 引用, 8/12 验收 §6.5 调整 ≥1/4)",
+      "p2_report_link": "m3-p2-2026-07-29.md (8/12 验收 §6.2 校园词不可达 + §6.6 旧域名展示本 cron 无 page 维度)",
+      "build_quota_consumed": 1,
+      "cron_session_id": "mvs_38fa4b081faa473c929730c6f6d8b2cf",
+      "report_path": ".hermes/logs/2026-07-29-gsc-feedback.md"
     }
   ],
   "last_tier_switch_run": {
@@ -2146,7 +2203,7 @@
     "manual_review": [],
     "reason_no_apply": "GSC CSV snapshot (6/17) 不能判 30/90 天连续趋势, 跳过自动 Tier 切换"
   },
-  "lastUpdated": "2026-07-27T11:00:00+08:00",
+  "lastUpdated": "2026-07-29T15:00:00+08:00",
   "v7_sku_optimizations": [
     {
       "id": "v7-SKU-21",
