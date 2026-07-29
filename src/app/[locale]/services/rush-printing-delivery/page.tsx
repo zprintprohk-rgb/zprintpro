@@ -4,6 +4,7 @@ import type { Metadata } from 'next';
 import { ShoppingCart, Printer, Package, Truck, ChevronRight } from 'lucide-react';
 import { Locale, generateServiceJsonLd } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
+import { getWhatsAppLinkProps } from '@/lib/whatsapp';
 import RushDeliveryGrid from '@/components/sections/RushDeliveryGrid';
 import RushDeliveryFAQ from '@/components/sections/RushDeliveryFAQ';
 
@@ -83,28 +84,48 @@ export default function RushDeliveryPage({ params }: Props) {
         })}
       />
 
-      {/* Hero Banner 占位区 - 方角 + 固定 400px */}
-      <section className="relative w-full h-[400px] rounded-none overflow-hidden mb-4">
+      {/* Hero Banner 占位区 - 方角 + 固定 440px (P0 雙 CTA 加高) */}
+      <section className="relative w-full h-[440px] rounded-none overflow-hidden mb-4">
         {/* 渐变背景（占位，后续替换为真实图片） */}
         <div className="absolute inset-0 bg-gradient-to-r from-red-600 via-orange-500 to-amber-400" />
         
         {/* 内容层 */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
           <span className="bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full text-sm font-bold mb-4">
-            ⚡ {locale === 'zh-hk' ? '通宵達服務' : locale === 'en' ? 'Overnight Delivery' : '徹夜配送'}
+            ⚡ {locale === 'zh-hk' ? '通宵達旦服務' : locale === 'en' ? 'Overnight Delivery' : '徹夜配送'}
           </span>
           <h2 className="text-3xl md:text-4xl font-bold mb-3">
             {locale === 'zh-hk' ? '今天下單·明天中午12點前到' : locale === 'en' ? 'Order Today, Printed Overnight' : '本日注文・徹夜印刷'}
           </h2>
-          <p className="text-lg md:text-xl text-white/90 mb-6 max-w-2xl">
+          <p className="text-lg md:text-xl text-white/90 mb-5 max-w-2xl">
             {locale === 'zh-hk' ? '專為臨急任務而生——宣傳單張、海報、貼紙、紙袋通宵印刷，畫冊與易拉寶翌日中午準時達' : locale === 'en' ? 'Rush printing for flyers, posters, stickers, paper bags. Booklets & banners on priority production.' : 'チラシ、ポスター、シール、紙袋の特急印刷。冊子とバナーも優先製作対応。'}
           </p>
-          <Link
-            href={`/${locale}/services/rush-printing-delivery#order`}
-            className="bg-white text-orange-600 font-bold px-8 py-3 rounded-lg hover:bg-gray-100 transition-colors shadow-lg"
-          >
-            {locale === 'zh-hk' ? '立即下單' : locale === 'en' ? 'Order Now' : '注文する'}
-          </Link>
+          {/* 雙 CTA (P0 K3 拍板): 主 = WhatsApp 確認趕單 (預填產品/數量/地址), 次 = 查看價格並下單 */}
+          <div className="flex flex-col sm:flex-row gap-3 mb-3">
+            <a
+              {...getWhatsAppLinkProps(locale as 'zh-hk' | 'en' | 'ja', {
+                productName: locale === 'zh-hk' ? '急單確認' : locale === 'ja' ? '急ぎの注文' : 'Rush Order Confirm',
+                source: 'rush-printing-delivery-hero',
+                extra: locale === 'zh-hk'
+                  ? '請填寫：\n• 產品：\n• 數量：\n• 收貨地址/港鐵站：'
+                  : locale === 'en'
+                  ? 'Please fill in:\n• Product:\n• Quantity:\n• Delivery address / MTR station:'
+                  : 'ご記入ください：\n• 製品：\n• 数量：\n• 配送住所/MTR駅：',
+              })}
+              className="bg-white text-red-600 font-bold px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors shadow-lg flex items-center justify-center gap-2"
+            >
+              💬 {locale === 'zh-hk' ? 'WhatsApp 確認趕單' : locale === 'en' ? 'WhatsApp Confirm Rush' : 'WhatsApp で急行確認'}
+            </a>
+            <Link
+              href={`/${locale}/quote/`}
+              className="bg-white/10 backdrop-blur-sm border-2 border-white text-white font-bold px-6 py-3 rounded-lg hover:bg-white/20 transition-colors flex items-center justify-center"
+            >
+              {locale === 'zh-hk' ? '查看價格並下單' : locale === 'en' ? 'View Price & Order' : '価格確認・注文'}
+            </Link>
+          </div>
+          <p className="text-sm text-white/85">
+            {locale === 'zh-hk' ? '趕不到會直接告訴你，不耽誤你' : locale === 'en' ? 'If we can\'t make it, we\'ll tell you straight up.' : '対応できない場合は、正直にすぐにお伝えします。'}
+          </p>
         </div>
       </section>
 

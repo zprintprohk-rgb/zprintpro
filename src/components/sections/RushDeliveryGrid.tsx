@@ -4,6 +4,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 import { getAltTag } from '@/data/image-alt-map';
+import { getWhatsAppLinkProps } from '@/lib/whatsapp';
 
 
 interface SKUItem {
@@ -133,43 +134,64 @@ export default function RushDeliveryGrid({ locale }: { locale: string }) {
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
         {skus.map((sku) => (
-          <Link
+          <div
             key={sku.slug}
-            href={`/${locale}${sku.href}`}
-            className="group block bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg hover:border-gray-300 transition-all duration-200"
+            className="group bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg hover:border-gray-300 transition-all duration-200"
           >
-            <div className="relative aspect-square w-full bg-gray-100 overflow-hidden">
-              <Image
-                src={sku.image(locale)}
-                alt={getAltTag(sku.slug, locale)}
-                fill
-                className="object-cover group-hover:scale-105 transition-transform duration-300"
-                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                onError={(e) => {
-                  const img = e.currentTarget as HTMLImageElement;
-                  if (!img.src.includes('placeholder')) {
-                    img.src = '/images/placeholder.svg';
-                  }
-                }}
-              />
-              <span className="absolute top-3 left-3 bg-red-600 text-white text-xs md:text-sm font-bold px-2.5 py-1 rounded-md shadow-sm">
-                {locale === 'zh-hk'
-                  ? '明天12:00前'
-                  : locale === 'en'
-                  ? 'By 12PM tomorrow'
-                  : '翌日12時まで'}
-              </span>
+            {/* 上半: 图片 + 标题 + 规格 + 价格 (整块 Link 到产品页) */}
+            <Link href={`/${locale}${sku.href}`} className="block">
+              <div className="relative aspect-square w-full bg-gray-100 overflow-hidden">
+                <Image
+                  src={sku.image(locale)}
+                  alt={getAltTag(sku.slug, locale)}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                  onError={(e) => {
+                    const img = e.currentTarget as HTMLImageElement;
+                    if (!img.src.includes('placeholder')) {
+                      img.src = '/images/placeholder.svg';
+                    }
+                  }}
+                />
+                <span className="absolute top-3 left-3 bg-red-600 text-white text-xs md:text-sm font-bold px-2.5 py-1 rounded-md shadow-sm">
+                  {locale === 'zh-hk'
+                    ? '明天12:00前'
+                    : locale === 'en'
+                    ? 'By 12PM tomorrow'
+                    : '翌日12時まで'}
+                </span>
+              </div>
+              <div className="p-4 md:p-5 pb-3">
+                <h3 className="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+                  {getText(sku, 'title')}
+                </h3>
+                <p className="text-sm text-gray-500 mt-1">{getText(sku, 'spec')}</p>
+                <p className="text-red-600 font-bold mt-3 text-base md:text-lg">
+                  {getText(sku, 'price')}
+                </p>
+              </div>
+            </Link>
+            {/* 下半: WhatsApp 預填確認按鈕 (P0 K3 拍板: 不破壞原卡片跳轉) */}
+            <div className="px-4 pb-4 md:px-5 md:pb-5">
+              <a
+                {...getWhatsAppLinkProps(locale as 'zh-hk' | 'en' | 'ja', {
+                  productName: getText(sku, 'title'),
+                  source: `rush-printing-delivery-card-${sku.slug}`,
+                  extra:
+                    locale === 'zh-hk'
+                      ? '我想確認明天 12:00 前能送達。\n請填寫：\n• 數量：\n• 收貨地址/港鐵站：'
+                      : locale === 'en'
+                      ? 'I want to confirm next-day delivery by 12PM.\nPlease fill in:\n• Quantity:\n• Delivery address / MTR station:'
+                      : '翌日12時までの配送を確認したいです。\nご記入ください：\n• 数量：\n• 配送住所/MTR駅：',
+                })}
+                className="w-full bg-red-600 hover:bg-red-700 text-white font-bold text-sm py-2.5 rounded-lg transition-colors flex items-center justify-center gap-1.5"
+              >
+                💬 {locale === 'zh-hk' ? '確認明日達' : locale === 'en' ? 'Confirm Next-Day' : '翌日配送を確認'}
+                <span aria-hidden="true">→</span>
+              </a>
             </div>
-            <div className="p-4 md:p-5">
-              <h3 className="text-lg font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
-                {getText(sku, 'title')}
-              </h3>
-              <p className="text-sm text-gray-500 mt-1">{getText(sku, 'spec')}</p>
-              <p className="text-red-600 font-bold mt-3 text-base md:text-lg">
-                {getText(sku, 'price')}
-              </p>
-            </div>
-          </Link>
+          </div>
         ))}
       </div>
       <div className="mt-6 bg-gray-100 rounded-lg p-4 text-sm text-gray-600 flex items-start gap-2">

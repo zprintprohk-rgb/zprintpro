@@ -105,10 +105,10 @@ export default function RushDeliveryFAQ({ locale }: { locale: string }) {
       />
       <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
         {locale === 'zh-hk'
-          ? '印刷即日速递送货常见问题'
+          ? '即日速遞常見問題'
           : locale === 'en'
-          ? 'Same-Day Delivery FAQ'
-          : '即日配送・よくある質問'}
+          ? 'Rush Printing Service FAQ'
+          : '特急印刷・よくある質問'}
       </h2>
       <div className="space-y-3">
         {faqs.map((f, i) => (
