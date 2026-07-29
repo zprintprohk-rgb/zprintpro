@@ -190,7 +190,7 @@ export default function CategoryPage({
     },
     'calendars': {
       'zh-hk': '香港年曆印刷定制 — 座檯年曆 / 掛曆 / 月曆 / 2027年曆 / 企業LOGO',
-      'en': 'Custom Calendars Free Shipping · 100 MOQ 2027 Desk Wall Hardcover Foil · USA Corporate Gifts',
+      'en': 'Custom Calendars Free Shipping · 1000 MOQ 2027 Desk Wall Hardcover Foil · USA Corporate Gifts',
       'ja': 'カレンダー印刷 カスタム — デスク / 壁掛け / 月別 / 2027年 / 企業ロゴ',
     },
     'greeting-cards': {

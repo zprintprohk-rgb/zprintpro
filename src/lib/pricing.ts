@@ -496,7 +496,7 @@ const INDEPENDENT_PRICES: Record<string, Record<'en' | 'ja', { min: number; max:
   },
   'perfect-bound-books': {
     'en': { min: 4.6, max: 13.8, unit: 'pc' },
-    'ja': { min: 644, max: 1932, unit: '個' },
+    'ja': { min: 50, max: 150, unit: '個' },
   },
   'hardcover-books': {
     'en': { min: 13.8, max: 36.8, unit: 'pc' },
@@ -509,7 +509,7 @@ const INDEPENDENT_PRICES: Record<string, Record<'en' | 'ja', { min: number; max:
   // ========== Menus ==========
   'pvc-menus': {
     'en': { min: 2.76, max: 7.36, unit: 'pc' },
-    'ja': { min: 386, max: 1030, unit: '個' },
+    'ja': { min: 50, max: 90, unit: '個' },
   },
   'laminated-menus': {
     'en': { min: 1.84, max: 5.52, unit: 'pc' },
@@ -546,28 +546,28 @@ const INDEPENDENT_PRICES: Record<string, Record<'en' | 'ja', { min: number; max:
   },
   // ========== Calendars ==========
   'wall-calendars': {
-    'en': { min: 4.6, max: 13.8, unit: 'pc' },
-    'ja': { min: 644, max: 1932, unit: '個' },
+    'en': { min: 0.40, max: 1.10, unit: 'pc' },
+    'ja': { min: 50, max: 150, unit: '個' },
   },
   'desk-calendars': {
-    'en': { min: 5.52, max: 16.56, unit: 'pc' },
-    'ja': { min: 773, max: 2318, unit: '個' },
+    'en': { min: 0.55, max: 1.10, unit: 'pc' },
+    'ja': { min: 75, max: 150, unit: '個' },
   },
   'custom-calendars': {
-    'en': { min: 7.36, max: 20.24, unit: 'pc' },
-    'ja': { min: 1030, max: 2834, unit: '個' },
+    'en': { min: 0.80, max: 1.10, unit: 'pc' },
+    'ja': { min: 110, max: 150, unit: '個' },
   },
   'mini-calendars': {
-    'en': { min: 2.76, max: 7.36, unit: 'pc' },
-    'ja': { min: 386, max: 1030, unit: '個' },
+    'en': { min: 0.40, max: 0.65, unit: 'pc' },
+    'ja': { min: 50, max: 90, unit: '個' },
   },
   'photo-frame-calendars': {
-    'en': { min: 9.2, max: 25.76, unit: 'pc' },
-    'ja': { min: 1288, max: 3606, unit: '個' },
+    'en': { min: 0.95, max: 1.10, unit: 'pc' },
+    'ja': { min: 130, max: 150, unit: '個' },
   },
   'magnetic-calendars': {
-    'en': { min: 3.68, max: 11.04, unit: 'pc' },
-    'ja': { min: 515, max: 1546, unit: '個' },
+    'en': { min: 0.40, max: 0.80, unit: 'pc' },
+    'ja': { min: 50, max: 110, unit: '個' },
   },
   // ========== Red Packets ==========
   'foil-red-packets': {
@@ -889,7 +889,7 @@ const DISPLAY_ANCHOR_OVERRIDES: Record<string, { low: number; high: number; unit
   'hardcover-books':     { low: 5.00, high: 10.00, unit: '本' }, // 精装书
   'graduation-yearbook': { low: 5.00, high: 10.00, unit: '本' }, // 毕业纪念册(精装)
   'textbooks':           { low: 1.00, high: 5.00,  unit: '本' }, // 教科书/校园
-  'desk-calendars':      { low: 8.00, high: 25.00, unit: '本' }, // 台历(减半)
+  'desk-calendars':      { low: 3.00, high: 8.00,  unit: '本' }, // 台历(1000本起批口径)
   'white-card-bags':     { low: 0.70, high: 3.50,  unit: '個' }, // 白卡手提袋(减半)
   'gift-bags':           { low: 5.00, high: 10.00, unit: '個' }, // 礼品袋(减半)
   'eco-paper-bags':      { low: 1.50, high: 4.00,  unit: '個' },
