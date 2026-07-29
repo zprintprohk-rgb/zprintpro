@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import { ShoppingCart, Printer, Package, Truck, ChevronRight } from 'lucide-react';
 import { Locale, generateServiceJsonLd } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
-import { getWhatsAppLinkProps } from '@/lib/whatsapp';
+import { generateWhatsAppLink } from '@/lib/whatsapp';
 import RushDeliveryGrid from '@/components/sections/RushDeliveryGrid';
 import RushDeliveryFAQ from '@/components/sections/RushDeliveryFAQ';
 
@@ -103,7 +103,7 @@ export default function RushDeliveryPage({ params }: Props) {
           {/* 雙 CTA (P0 K3 拍板): 主 = WhatsApp 確認趕單 (預填產品/數量/地址), 次 = 查看價格並下單 */}
           <div className="flex flex-col sm:flex-row gap-3 mb-3">
             <a
-              {...getWhatsAppLinkProps(locale as 'zh-hk' | 'en' | 'ja', {
+              href={generateWhatsAppLink(locale as 'zh-hk' | 'en' | 'ja', {
                 productName: locale === 'zh-hk' ? '急單確認' : locale === 'ja' ? '急ぎの注文' : 'Rush Order Confirm',
                 source: 'rush-printing-delivery-hero',
                 extra: locale === 'zh-hk'
@@ -112,6 +112,8 @@ export default function RushDeliveryPage({ params }: Props) {
                   ? 'Please fill in:\n• Product:\n• Quantity:\n• Delivery address / MTR station:'
                   : 'ご記入ください：\n• 製品：\n• 数量：\n• 配送住所/MTR駅：',
               })}
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white text-red-600 font-bold px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors shadow-lg flex items-center justify-center gap-2"
             >
               💬 {locale === 'zh-hk' ? 'WhatsApp 確認趕單' : locale === 'en' ? 'WhatsApp Confirm Rush' : 'WhatsApp で急行確認'}
