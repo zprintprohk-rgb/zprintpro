@@ -2218,10 +2218,13 @@ export const products: Product[] = [
     id: 'ST-002',
     sku_code: 'ST-002',
     slug: 'transparent-stickers',
+
+        optimizedAt: '2026-07-29',
+        optimizationRound: 1,
     category: 'stickers',
     category_slug: 'stickers',
     name: '透明貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Transparent Stickers | Waterproof & Die-Cut Stickers', nameJa: '透明ステッカー | 防水ステッカー / ダイカット', title_zh: '透明貼紙',
-    description: '透明PET材質，貼合後呈現無感效果，完美展現產品本身。適合化妝品、食品包裝、玻璃貼飾。', descriptionEn: 'Transparent PET material creates invisible effect when applied. Perfect for cosmetics, food packaging, glass decoration.', descriptionJa: '透明PET素材、貼り付け後無感効果。化粧品、食品包裝、ガラス裝飾に最適。', description_zh: '透明PET材質，貼合後呈現無感效果，完美展現產品本身。適合化妝品、食品包裝、玻璃貼飾。',
+    description: '透明PET材質，貼合後呈現無感效果，完美展現產品本身。適合化妝品、食品包裝、玻璃貼飾。 適配行業: 美妝護膚、食品酒類、飲品品牌、香水、玻璃容器、無標籤產品、電商禮盒.', descriptionEn: 'Transparent PET material creates invisible effect when applied. Perfect for cosmetics, food packaging, glass decoration. 适配行业: Beauty, Food & Beverage, Drinks brands, Perfume, Glass containers, No-label products, E-commerce gift boxes.', descriptionJa: '透明PET素材、貼り付け後無感効果。化粧品、食品包裝、ガラス裝飾に最適。 适配行业: 美容、食品・飲料、飲み物ブランド、香水、ガラス容器、ノーラベル商品、ECギフトボックス。', description_zh: '透明PET材質，貼合後呈現無感效果，完美展現產品本身。適合化妝品、食品包裝、玻璃貼飾。 適配行業: 美妝護膚、食品酒類、飲品品牌、香水、玻璃容器、無標籤產品、電商禮盒.',
     longDescription: `透明 PET 貼紙在玻璃瓶、塑膠瓶與透明包裝上能呈現「無底紙感」，僅保留圖案與文字，特別適合美妝精華、香水、飲品與禮盒封口貼。白墨托底可選，用於深色瓶身仍能還原飽和色彩。建議避免過細的反白線條，並為模切預留安全距離。可搭配啞膜減少指紋、光膜提升鮮豔度。與分類頁術語一致：透明 PET、局部 UV、覆膜、模切。香港零售與展會陳列常見應用包括試用裝標籤與限量貼紙。<h3>貼紙材質對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">材質</th><th class="p-2 text-center">透明度</th><th class="p-2 text-center">防水性</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用場景</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">透明 PET</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">瓶身標籤、禮盒封條</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">PVC 防水</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">戶外標籤、食品外賣</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">銅版紙</td><td class="p-2 text-center">★★</td><td class="p-2 text-center">★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">促銷貼紙、臨時標籤</td></tr></tbody></table><h3>貼紙材質對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">材質</th><th class="p-2 text-center">透明度</th><th class="p-2 text-center">防水性</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用場景</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">透明 PET</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">瓶身標籤、禮盒封條</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">PVC 防水</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">戶外標籤、食品外賣</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">銅版紙</td><td class="p-2 text-center">★★</td><td class="p-2 text-center">★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">促銷貼紙、臨時標籤</td></tr></tbody></table>
 
 **智印雲 國際印刷**：深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。
@@ -2350,8 +2353,6 @@ export const products: Product[] = [
       '/images/products/seedream-webp/zprintpro-stickers-transparent-stickers-ja-4.webp',
     ],
   },
-    optimizedAt: '2026-07-20',
-    optimizationRound: 1,
     variables: {
       sizes: [
         { value: 'small', label: '小尺寸(≤50mm)', multiplier: 1 },
@@ -2387,8 +2388,6 @@ export const products: Product[] = [
     id: 'ST-003',
     sku_code: 'ST-003',
     slug: 'removable-stickers',
-    optimizedAt: '2026-07-22',
-    optimizationRound: 1,
     category: 'stickers',
     category_slug: 'stickers',
     name: '可移貼紙(無殘膠) | 防水貼紙 / 異形貼紙', nameEn: 'Removable Stickers | Waterproof & Die-Cut Stickers', nameJa: 'はがせるステッカー | 防水ステッカー / ダイカット', title_zh: '可移除貼紙印刷 50張起印 玻璃不留膠 · 季節活動試用品短期推廣適配 | 智印雲 ZprintPro',
@@ -3040,10 +3039,13 @@ export const products: Product[] = [
     id: 'ST-005',
     sku_code: 'ST-005',
     slug: 'die-cut-stickers',
+
+        optimizedAt: '2026-07-29',
+        optimizationRound: 1,
     category: 'stickers',
     category_slug: 'stickers',
     name: '異形模切貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Die-cut Stickers | Waterproof & Die-Cut Stickers', nameJa: '型抜きステッカー | 防水ステッカー / ダイカット', title_zh: '異形模切貼紙 · 文創IP角色造型模切定製 | 智印雲 ZprintPro',
-    description: '任意形狀模切，讓創意不受限製。可切出Logo形狀、卡通形象等獨特輪廓。**適配行業**: 文創IP / VTuber / 動漫周邊 / 個人插畫師 / 品牌吉祥物 / 同人誌 / 活動贈品。', descriptionEn: 'Any shape die-cutting, creativity without limits. Can cut logo shapes, cartoon characters, unique contours. **Best for**: creator IP / VTuber / anime merch / illustrators / brand mascots / doujinshi / event giveaways. Free die-cut setup · Free shipping over $99 USA · 50 MOQ · Custom shapes for product labels, packaging, and promotional use.', descriptionJa: '任意形状の型抜き、創作の自由を製限しません。**適用業界**: クリエイターIP / VTuber / アニメ周边 / 個人イラストレーター / ブランドマスコット / 同人誌 / イベント赠り物。。型代無料・全国送料込み・50枚から。製品ラベル・パッケージ・プロモーション用カスタム形状。', description_zh: '任意形狀模切，讓創意不受限製。可切出Logo形狀、卡通形象等獨特輪廓。**適配行業**: 文創IP / VTuber / 動漫周邊 / 個人插畫師 / 品牌吉祥物 / 同人誌 / 活動贈品。',
+    description: '任意形狀模切，讓創意不受限製。可切出Logo形狀、卡通形象等獨特輪廓。**適配行業**: 文創IP / VTuber / 動漫周邊 / 個人插畫師 / 品牌吉祥物 / 同人誌 / 活動贈品。 適配行業: 文創IP、品牌吉祥物、活動贈品、零售精品、跨境電商、電商賣家、寵物食品.', descriptionEn: 'Any shape die-cutting, creativity without limits. Can cut logo shapes, cartoon characters, unique contours. **Best for**: creator IP / VTuber / anime merch / illustrators / brand mascots / doujinshi / event giveaways. Free die-cut setup · Free shipping over $99 USA · 50 MOQ · Custom shapes for product labels, packaging, and promotional use. 适配行业: Indie IP, Brand mascots, Event giveaways, Retail, Cross-border e-commerce, E-commerce sellers, Pet food.', descriptionJa: '任意形状の型抜き、創作の自由を製限しません。**適用業界**: クリエイターIP / VTuber / アニメ周边 / 個人イラストレーター / ブランドマスコット / 同人誌 / イベント赠り物。。型代無料・全国送料込み・50枚から。製品ラベル・パッケージ・プロモーション用カスタム形状。 适配行业: インディーIP、ブランドマスコット、イベント景品、小売、越境EC、EC seller、ペットフード。', description_zh: '任意形狀模切，讓創意不受限製。可切出Logo形狀、卡通形象等獨特輪廓。**適配行業**: 文創IP / VTuber / 動漫周邊 / 個人插畫師 / 品牌吉祥物 / 同人誌 / 活動贈品。 適配行業: 文創IP、品牌吉祥物、活動贈品、零售精品、跨境電商、電商賣家、寵物食品.',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -3364,15 +3366,11 @@ export const products: Product[] = [
       ja: '防水ステッカー / ダイカットステッカー | 型抜きステッカー | 防水対応・オリジナル形状 | ZprintPro'
     },
   },
-  optimizedAt: '2026-07-09',
-  optimizationRound: 1,
   },
   {
     id: 'ST-006',
     sku_code: 'ST-006',
     slug: 'foil-stickers',
-    optimizedAt: '2026-07-28',
-    optimizationRound: 1,
     category: 'stickers',
     category_slug: 'stickers',
     name: '燙金貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Foil Stickers | Waterproof & Die-Cut Stickers', nameJa: '箔押しステッカー | 防水ステッカー / ダイカット', title_zh: '燙金貼紙',
@@ -4649,12 +4647,12 @@ export const products: Product[] = [
     id: 'PB-002',
     sku_code: 'PB-002',
     slug: 'white-card-bags',
-    optimizedAt: '2026-07-21',
-    optimizationRound: 1,
+    optimizedAt: '2026-07-29',
+    optimizationRound: 2,
     category: 'paper-bags',
     category_slug: 'paper-bags',
     name: '白卡紙袋 | 紙袋 / 牛皮紙袋 / 手提袋', nameEn: 'White Card Bags | Paper Bags & Kraft Bags', nameJa: '白カード紙袋 | 紙袋 / クラフト紙袋 / ハンドル', title_zh: '白卡紙袋 · 服裝珠寶品牌升級首選',
-    description: '白卡紙材質，表面平整光滑，印刷效果佳。適合高端品牌、化妝品店。適配行業: 服裝品牌、買手店、珠寶首飾、化妝品、禮品店、婚慶禮品、生活精品店。', descriptionEn: 'White card paper, smooth surface, excellent printing effect. Perfect for high-end brands, cosmetic stores. Best for: apparel brands, boutiques, jewelry, cosmetics, gift shops, wedding favors, lifestyle concept stores.', descriptionJa: '白カード紙、表面が滑らかで印刷効果が抜群。高級ブランド、化粧品店に最適。 適用業界: アパレルブランド、ブティック、宝飾・アクセサリー、化粧品、ギフトショップ、ブライダルギフト、ライフスタイル コンセプト ストア。', description_zh: '白卡紙材質，表面平整光滑，印刷效果佳。適合高端品牌、化妝品店。',
+    description: '白卡紙材質，表面平整光滑，印刷效果佳。適合高端品牌、化妝品店。適配行業: 服裝品牌、買手店、珠寶首飾、化妝品、禮品店、婚慶禮品、生活精品店。 適配行業: 服裝、珠寶鐘錶、禮品店、品牌活動、活動贈品、酒店迎賓、食品店.', descriptionEn: 'White card paper, smooth surface, excellent printing effect. Perfect for high-end brands, cosmetic stores. Best for: apparel brands, boutiques, jewelry, cosmetics, gift shops, wedding favors, lifestyle concept stores. 适配行业: Apparel, Jewelry & Watches, Gift shops, Brand events, Event giveaways, Hotel hospitality, Food stores.', descriptionJa: '白カード紙、表面が滑らかで印刷効果が抜群。高級ブランド、化粧品店に最適。 適用業界: アパレルブランド、ブティック、宝飾・アクセサリー、化粧品、ギフトショップ、ブライダルギフト、ライフスタイル コンセプト ストア。 适配行业: アパレル、宝飾・腕時計、ギフトショップ、ブランドイベント、イベント景品、ホテル、食品店。', description_zh: '白卡紙材質，表面平整光滑，印刷效果佳。適合高端品牌、化妝品店。 適配行業: 服裝、珠寶鐘錶、禮品店、品牌活動、活動贈品、酒店迎賓、食品店.',
     longDescription: `白卡紙袋表面平滑、挺度高，四色印刷色彩飽和，是美妝、珠寶與精品服飾首選的「可行走廣告」。可搭配啞膠／光膠覆膜保護墨層，並以燙金、局部 UV 或凹凸壓紋強化 Logo 層次。手挽可選緞帶、棉繩或扁紙手挽以匹配品牌調性。與分類頁一致：白卡紙、燙金、覆膜、手挽。建議在刀模階段確認穿孔位與圖案安全距離，避免提袋時撕裂；大批量可評估柯式以降低單價。<h3>紙袋材質對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">材質</th><th class="p-2 text-center">挺度</th><th class="p-2 text-center">印刷效果</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用品牌</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">白卡紙袋</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">美妝、珠寶、精品服飾</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">牛皮紙袋</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">文創、咖啡、有機食品</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">銅版紙袋</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">百貨專櫃、促銷活動</td></tr></tbody></table><h3>紙袋材質對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">材質</th><th class="p-2 text-center">挺度</th><th class="p-2 text-center">印刷效果</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用品牌</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">白卡紙袋</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">美妝、珠寶、精品服飾</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">牛皮紙袋</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">文創、咖啡、有機食品</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">銅版紙袋</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">百貨專櫃、促銷活動</td></tr></tbody></table>
 
 **智印雲 國際印刷**：深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。
@@ -4808,8 +4806,6 @@ export const products: Product[] = [
     id: 'PB-003',
     sku_code: 'PB-003',
     slug: 'gift-bags',
-    optimizedAt: '2026-07-28',
-    optimizationRound: 1,
     category: 'paper-bags',
     category_slug: 'paper-bags',
     name: '禮品紙袋 | 紙袋 / 牛皮紙袋 / 手提袋', nameEn: 'Gift Bags | Paper Bags & Kraft Bags', nameJa: 'ギフト紙袋 | 紙袋 / クラフト紙袋 / ハンドル', title_zh: '禮品紙袋印刷訂製 高檔禮品袋 100個起印 燙金LOGO | 智印雲',
@@ -5484,8 +5480,8 @@ export const products: Product[] = [
     id: 'PB-005',
     sku_code: 'PB-005',
     slug: 'handle-bags',
-    optimizedAt: '2026-07-21',
-    optimizationRound: 1,
+    optimizedAt: '2026-07-29',
+    optimizationRound: 2,
     category: 'paper-bags',
     category_slug: 'paper-bags',
     name: '手挽紙袋 | 紙袋 / 牛皮紙袋 / 手提袋', nameEn: 'Handle Bags | Paper Bags & Kraft Bags', nameJa: '手提げ紙袋 | 紙袋 / クラフト紙袋 / ハンドル', title_zh: '手挽紙袋 · 餐飲零售日常大量採購',
@@ -6615,10 +6611,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     id: 'FL-003',
     sku_code: 'FL-003',
     slug: 'double-sided-flyers',
+
+        optimizedAt: '2026-07-29',
+        optimizationRound: 1,
     category: 'flyers',
     category_slug: 'flyers',
     name: '雙面宣傳單張 | 宣傳單張 / 折頁 / A4/A5', nameEn: 'Double-sided Flyers | A4/A5 Flyers & Leaflets', nameJa: '両面チラシ | A4/A5 チラシ・フライヤー', title_zh: '雙面宣傳單張',
-    description: '雙面全彩印刷，信息容量翻倍。正面吸引眼球，背面詳細介紹。', descriptionEn: 'Double-sided full color printing, doubled information capacity.', descriptionJa: '両面フルカラー印刷、情報容量が2倍。', description_zh: '雙面全彩印刷，信息容量翻倍。正面吸引眼球，背面詳細介紹。',
+    description: '雙面全彩印刷，信息容量翻倍。正面吸引眼球，背面詳細介紹。 適配行業: 餐飲外賣、房地產、教育培訓、活動展會、美容美髮、社區中心、零售品牌.', descriptionEn: 'Double-sided full color printing, doubled information capacity. 适配行业: Food delivery, Real estate, Education & Training, Events & Exhibitions, Beauty salons, Community centers, Retail brands.', descriptionJa: '両面フルカラー印刷、情報容量が2倍。 适配行业: 飲食デリバリー、不動産、教育・研修、イベント・展示会、美容室、コミュニティセンター、小売ブランド。', description_zh: '雙面全彩印刷，信息容量翻倍。正面吸引眼球，背面詳細介紹。 適配行業: 餐飲外賣、房地產、教育培訓、活動展會、美容美髮、社區中心、零售品牌.',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -6799,8 +6798,6 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     id: 'FL-004',
     sku_code: 'FL-004',
     slug: 'folded-leaflets',
-    optimizedAt: '2026-07-22',
-    optimizationRound: 1,
     category: 'flyers',
     category_slug: 'flyers',
     name: '摺疊宣傳單張 | 宣傳單張 / 折頁 / A4/A5', nameEn: 'Folded Leaflets | A4/A5 Flyers & Leaflets', nameJa: '折りたたみパンフレット | A4/A5 チラシ・フライヤー', title_zh: '折疊傳單印刷 A4 雙面 對摺三摺 · 餐廳菜單地產樓書活動宣傳適配 | 智印雲 ZprintPro',
@@ -17797,12 +17794,12 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     id: 'PKG-009',
     sku_code: 'PKG-009',
     slug: 'kraft-paper-packaging-box',
-    optimizedAt: '2026-07-21',
-    optimizationRound: 1,
+    optimizedAt: '2026-07-29',
+    optimizationRound: 2,
     category: 'packaging',
     category_slug: 'packaging',
     name: '牛皮紙盒印刷定製 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Kraft Paper Packaging Box | Gift Boxes & Custom Packaging', nameJa: 'クラフト紙箱印刷 | パッケージボックス・化粧箱', title_zh: '牛皮紙盒印刷定製 · 環保品牌跨境電商首選',
-    description: '環保牛皮紙盒，適合食品、茶葉、手工皂包裝。可印刷Logo，支持多種尺寸。適配行業: 有機食品品牌、環保美妝、ESG 認證品牌、跨境電商、FSC 認證供應鏈、減塑合規品牌。', descriptionEn: 'Eco-friendly kraft paper boxes for food, tea, handmade soap packaging. Custom logo printing, multiple sizes. Best for: organic food brands, eco-beauty, ESG-certified brands, cross-border e-commerce, FSC-certified supply chains, plastic-reduction compliance brands.', descriptionJa: '環境に優しいクラフト紙箱。食品、お茶、手作り石鹸の包裝に最適。ロゴ印刷、サイズ豊富。 適用業界: オーガニック食品ブランド、エコ ビューティ、ESG 認証ブランド、越境EC、FSC 認証サプライチェーン、プラスチック削減コンプライアンス ブランド。', description_zh: '環保牛皮紙盒，適合食品、茶葉、手工皂包裝。可印刷Logo，支持多種尺寸。',
+    description: '環保牛皮紙盒，適合食品、茶葉、手工皂包裝。可印刷Logo，支持多種尺寸。適配行業: 有機食品品牌、環保美妝、ESG 認證品牌、跨境電商、FSC 認證供應鏈、減塑合規品牌。 適配行業: 跨境電商、食品包裝、美妝護膚、禮品、奢侈品、電子產品、母嬰.', descriptionEn: 'Eco-friendly kraft paper boxes for food, tea, handmade soap packaging. Custom logo printing, multiple sizes. Best for: organic food brands, eco-beauty, ESG-certified brands, cross-border e-commerce, FSC-certified supply chains, plastic-reduction compliance brands. 适配行业: Cross-border e-commerce, Food packaging, Beauty, Gifts, Luxury, Electronics, Baby products.', descriptionJa: '環境に優しいクラフト紙箱。食品、お茶、手作り石鹸の包裝に最適。ロゴ印刷、サイズ豊富。 適用業界: オーガニック食品ブランド、エコ ビューティ、ESG 認証ブランド、越境EC、FSC 認証サプライチェーン、プラスチック削減コンプライアンス ブランド。 适配行业: 越境EC、食品包装、美容、ギフト、贅沢品、エレクトロニクス、ベビー用品。', description_zh: '環保牛皮紙盒，適合食品、茶葉、手工皂包裝。可印刷Logo，支持多種尺寸。 適配行業: 跨境電商、食品包裝、美妝護膚、禮品、奢侈品、電子產品、母嬰.',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -17990,8 +17987,6 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     id: 'PKG-016',
     sku_code: 'PKG-016',
     slug: 'gang-run-card-boxes',
-    optimizedAt: '2026-07-23',
-    optimizationRound: 1,
     category: 'packaging',
     category_slug: 'packaging',
     name: '拼版白卡彩盒(免刀模費) | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Gang-Run White Card Boxes (No Die-Cut Fee) | Gift Boxes & Custom Packaging', nameJa: '合版ホワイトカードボックス(型代不要) | パッケージボックス・化粧箱', title_zh: '拼版白卡彩盒(免刀模費) 500個起印 · 8-15天交期 · 香港無對手價',
@@ -18052,8 +18047,6 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     sku_code: 'PKG-013',
     slug: 'white-card-boxes',
 
-    optimizedAt: '2026-07-23',
-    optimizationRound: 2,
     category: 'packaging',
     category_slug: 'packaging',
     name: '白卡彩盒印刷定製 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'White Cardboard Boxes | Custom Packaging & Gift Boxes', nameJa: '白カードボックス | パッケージ・ギフトボックス', title_zh: '白卡彩盒印刷定製 · 零售精品跨境電商首選',
@@ -18166,8 +18159,6 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     id: 'PKG-014',
     sku_code: 'PKG-014',
     slug: 'corrugated-boxes',
-    optimizedAt: '2026-07-21',
-    optimizationRound: 1,
     category: 'packaging',
     category_slug: 'packaging',
     name: '瓦楞彩盒印刷定製 (E坑/F坑) | 包裝盒 / 物流盒', nameEn: 'Corrugated Boxes (E/F Flute) | Custom Packaging & Shipping', nameJa: '段ボール箱 (E/Fフルート) | パッケージ・物流', title_zh: '瓦楞彩盒印刷定製 · 跨境電商物流快遞抗壓首選',
