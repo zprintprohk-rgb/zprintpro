@@ -138,7 +138,6 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
     imageSlotTeam: 'Team real work scenes (K3 replace after photo capture)',
   },
 
-  },
   ja: {
     metaTitle: 'ZprintProについて | 香港プロ印刷サービス | 15年の実績',
     metaDesc: '智印雲 ZprintProは香港で15年以上の歴史を持ち、高品質な印刷サービスを提供しています。ISO 9001認証、FSC認証、1000社以上のお客様にサービスを提供。',
