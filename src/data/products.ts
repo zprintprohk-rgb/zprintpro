@@ -103,10 +103,12 @@ export const products: Product[] = [
     id: 'BC-001',
     sku_code: 'BC-001',
     slug: 'premium-greeting-cards',
+    optimizedAt: '2026-07-30',
+    optimizationRound: 1,
     category: 'greeting-cards',
     category_slug: 'greeting-cards',
     name: '高級賀卡', nameEn: 'Premium Greeting Cards', nameJa: '年賀状印刷 | プレミアムグリーティングカード', title_zh: '高級賀卡',
-    description: '300g 高級銅版紙賀卡,四色印刷精美,可選啞膠/光膠/燙金/UV 局部光油。聖誕卡、新年卡、婚禮感謝卡、節日禮品卡首選,免費打樣,DHL 全球 2-4 天配送。', descriptionEn: '300g premium greeting cards with 4-color printing. Optional matte/gloss lamination, foil stamping, spot UV. Perfect for Christmas cards, New Year cards, wedding thank-you cards, holiday gift cards. Free sample, DHL Express 2-4 day global delivery from Asia factory.', descriptionJa: '300g 高級グリーティングカード、4色印刷精美。マット/グロスラミネーション、ホットスタンプ、スポットUV選択可。クリスマスカード、新年カード、ウェディングサンキュー、ハロウィンカードに最適。無料サンプル、DHL Express 国際 2-4 日納品対応。', description_zh: '300g 高級銅版紙賀卡,四色印刷精美,可選啞膠/光膠/燙金/UV 局部光油。聖誕卡、新年卡、婚禮感謝卡、節日禮品卡首選,免費打樣,DHL 全球 2-4 天配送。',
+    description: '300g 高級銅版紙賀卡,四色印刷精美,可選啞膠/光膠/燙金/UV 局部光油。聖誕卡、新年卡、婚禮感謝卡、節日禮品卡首選,免費打樣,DHL 全球 2-4 天配送。 **適配行業**: 婚慶/聖誕節/新年/節日禮品/品牌活動/酒店迎賓/企業定制.', descriptionEn: '300g premium greeting cards with 4-color printing. Optional matte/gloss lamination, foil stamping, spot UV. Perfect for Christmas cards, New Year cards, wedding thank-you cards, holiday gift cards. Free sample, DHL Express 2-4 day global delivery from Asia factory. **Best for**: weddings / Christmas / New Year / holiday gifts / brand events / hotel welcome / corporate customization.', descriptionJa: '300g 高級グリーティングカード、4色印刷精美。マット/グロスラミネーション、ホットスタンプ、スポットUV選択可。クリスマスカード、新年カード、ウェディングサンキュー、ハロウィンカードに最適。無料サンプル、DHL Express 国際 2-4 日納品対応。 **適合業種**: 婚礼 / クリスマス / 新年 / 节日ギフト / ブランドイベント / ホテル歓迎 / 企業カスタム.', description_zh: '300g 高級銅版紙賀卡,四色印刷精美,可選啞膠/光膠/燙金/UV 局部光油。聖誕卡、新年卡、婚禮感謝卡、節日禮品卡首選,免費打樣,DHL 全球 2-4 天配送。 **適配行業**: 婚慶/聖誕節/新年/節日禮品/品牌活動/酒店迎賓/企業定制.',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -3371,10 +3373,12 @@ export const products: Product[] = [
     id: 'ST-006',
     sku_code: 'ST-006',
     slug: 'foil-stickers',
+    optimizedAt: '2026-07-30',
+    optimizationRound: 2,
     category: 'stickers',
     category_slug: 'stickers',
     name: '燙金貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Foil Stickers | Waterproof & Die-Cut Stickers', nameJa: '箔押しステッカー | 防水ステッカー / ダイカット', title_zh: '燙金貼紙',
-    description: '燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮品包裝、VIP標識。 适配行业: 美妝護膚、食品酒類、零售精品、品牌活動、禮品包裝、VIP標識、跨境電商.', descriptionEn: 'Foil stamping gives stickers premium quality feel. Perfect for luxury product labels, gift packaging, VIP badges. Gold/silver foil · 50 MOQ · Free design proof · Fast 4-day turnaround. Perfect for beauty brands, wedding favors, premium packaging. 适配行业: Beauty, Food & Beverage, Retail, Brand events, Gift packaging, VIP labels, E-commerce.', descriptionJa: '箔押し加工でステッカーに高級感。高級製品ラベル、ギフト包裝、VIPバッジに最適。。金箔/銀箔・50枚から・校正無料・最短4日出荷。美容ブランド・ウェディング・プレミアムパッケージに最適。 适配行业: 美容、食品・飲料、小売、ブランドイベント、ギフトパッケージ、VIPラベル、EC.', description_zh: '燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮品包裝、VIP標識。 适配行业: 美妝護膚、食品酒類、零售精品、品牌活動、禮品包裝、VIP標識、跨境電商.',
+    description: '燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮品包裝、VIP標識。 适配行业: 美妝護膚、食品酒類、零售精品、品牌活動、禮品包裝、VIP標識、跨境電商. **適配行業**: 餐飲外賣/美妝護膚/茶飲食品/寵物食品/母嬰/服裝/禮品包裝.', descriptionEn: 'Foil stamping gives stickers premium quality feel. Perfect for luxury product labels, gift packaging, VIP badges. Gold/silver foil · 50 MOQ · Free design proof · Fast 4-day turnaround. Perfect for beauty brands, wedding favors, premium packaging. **Best for**: beauty & skincare / food & beverage / tea brands / pet food / baby & maternity / apparel / gift packaging.', descriptionJa: '箔押し加工でステッカーに高級感。ラグジュアリー商品ラベル、ギフトパッケージ、VIPバッジに最適。ゴールド/シルバーホイル・50枚から・無料デザイン確認・4日仕上げ。 beauty & skincare / food & beverage / tea brands / pet food / baby & maternity / apparel / gift packaging.', description_zh: '燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮品包裝、VIP標識。 适配行业: 美妝護膚、食品酒類、零售精品、品牌活動、禮品包裝、VIP標識、跨境電商. **適配行業**: 餐飲外賣/美妝護膚/茶飲食品/寵物食品/母嬰/服裝/禮品包裝.',ng. 适配行业: Beauty, Food & Beverage, Retail, Brand events, Gift packaging, VIP labels, E-commerce.', descriptionJa: '箔押し加工でステッカーに高級感。高級製品ラベル、ギフト包裝、VIPバッジに最適。。金箔/銀箔・50枚から・校正無料・最短4日出荷。美容ブランド・ウェディング・プレミアムパッケージに最適。 适配行业: 美容、食品・飲料、小売、ブランドイベント、ギフトパッケージ、VIPラベル、EC.', description_zh: '燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮品包裝、VIP標識。 适配行业: 美妝護膚、食品酒類、零售精品、品牌活動、禮品包裝、VIP標識、跨境電商.',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -4806,10 +4810,12 @@ export const products: Product[] = [
     id: 'PB-003',
     sku_code: 'PB-003',
     slug: 'gift-bags',
+    optimizedAt: '2026-07-30',
+    optimizationRound: 2,
     category: 'paper-bags',
     category_slug: 'paper-bags',
     name: '禮品紙袋 | 紙袋 / 牛皮紙袋 / 手提袋', nameEn: 'Gift Bags | Paper Bags & Kraft Bags', nameJa: 'ギフト紙袋 | 紙袋 / クラフト紙袋 / ハンドル', title_zh: '禮品紙袋印刷訂製 高檔禮品袋 100個起印 燙金LOGO | 智印雲',
-    description: '禮品紙袋印刷訂製，100個起印，HK$3.5起/個。棉繩緞帶手挽，燙金UV壓凹工藝，支援多尺寸客製LOGO。適合品牌活動週年慶贈品，即日交貨，全港免費送貨。 适配行业: 婚慶、珠寶鐘錶、茶飲食品、服裝、禮品、品牌活動、酒店迎賓.', descriptionEn: 'Exquisite design with foil stamping, UV and other processes. Essential for gifting, elevates gift quality., ISO 9001:2015 certified quality management system. Custom printed gift bags · 100 MOQ · Foil logo option · Wedding favor, retail, event bags. Free design mockup. 适配行业: Wedding, Jewelry & Watches, Tea & Beverage, Apparel, Gifts, Brand events, Hotel hospitality.', descriptionJa: '精巧なデザイン、箔押し・UVなどの加工付き。ギフトに必須、ギフトの質を向上。。オリジナルギフト紙袋・100枚から・箔押し選択可。ウェディング・小売・イベント用。校正無料。 适配行业: ウェディング、宝飾・腕時計、茶・飲料、アパレル、ギフト、ブランドイベント、ホテル.', description_zh: '精美設計，配合燙金、UV等工藝。送禮必備，提升禮品檔次。 适配行业: 婚慶、珠寶鐘錶、茶飲食品、服裝、禮品、品牌活動、酒店迎賓.',
+    description: '禮品紙袋印刷訂製，100個起印，HK$3.5起/個。棉繩緞帶手挽，燙金UV壓凹工藝，支援多尺寸客製LOGO。適合品牌活動週年慶贈品，即日交貨，全港免費送貨。 适配行业: 婚慶、珠寶鐘錶、茶飲食品、服裝、禮品、品牌活動、酒店迎賓. **適配行業**: 婚慶/珠寶鐘錶/茶飲食品/服裝/禮品店/品牌活動/酒店迎賓.', descriptionEn: 'Exquisite design with foil stamping, UV and other processes. Essential for gifting, elevates gift quality., ISO 9001:2015 certified quality management system. Custom printed gift bags · 100 MOQ · Foil logo option · Wedding favor, retail, event bags. Free design mockup. 适配行业: Wedding, Jewelry & Watches, Tea & Beverage, Apparel, Gifts, Brand events, Hotel hospitality. **Best for**: weddings / jewelry & watches / tea & F&B / apparel / gift shops / brand events / hotel welcome.', descriptionJa: '精巧なデザイン、箔押し・UVなどの加工付き。ギフトに必須、ギフトの質を向上。。オリジナルギフト紙袋・100枚から・箔押し選択可。ウェディング・小売・イベント用。校正無料。 适配行业: ウェディング、宝飾・腕時計、茶・飲料、アパレル、ギフト、ブランドイベント、ホテル. **適合業種**: 婚礼 / 宝飾時計 / お茶飲食 / アパレル / ギフトショップ / ブランドイベント / ホテル歓迎.', description_zh: '精美設計，配合燙金、UV等工藝。送禮必備，提升禮品檔次。 适配行业: 婚慶、珠寶鐘錶、茶飲食品、服裝、禮品、品牌活動、酒店迎賓. **適配行業**: 婚慶/珠寶鐘錶/茶飲食品/服裝/禮品店/品牌活動/酒店迎賓.',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -7162,10 +7168,12 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     id: 'FL-007',
     sku_code: 'FL-007',
     slug: 'eco-flyers',
+    optimizedAt: '2026-07-30',
+    optimizationRound: 1,
     category: 'flyers',
     category_slug: 'flyers',
     name: '環保宣傳單張 | 宣傳單張 / 折頁 / A4/A5', nameEn: 'Eco Flyers | A4/A5 Flyers & Leaflets', nameJa: 'エコチラシ | A4/A5 チラシ・フライヤー', title_zh: '環保宣傳單張',
-    description: '環保紙張印刷，展現企業責任。適合環保主題活動。', descriptionEn: 'Eco-friendly paper printing, showing corporate responsibility. 100% recycled paper · 50 MOQ · Free shipping over $99 USA. Eco-friendly marketing for sustainable brands.', descriptionJa: '環境に優しい紙の印刷、企業の責任を示す。。再生紙100%・50枚から・全国送料込み。サステナブルブランド向けエコマーケティング。', description_zh: '環保紙張印刷，展現企業責任。適合環保主題活動。',
+    description: '環保紙張印刷，展現企業責任。適合環保主題活動。 **適配行業**: 環保主題活動/ESG 報告/社會企業/有機品牌/校園推廣/餐廳菜單/咖啡烘焙.', descriptionEn: 'Eco-friendly paper printing, showing corporate responsibility. 100% recycled paper · 50 MOQ · Free shipping over $99 USA. Eco-friendly marketing for sustainable brands. **Best for**: eco campaigns / ESG reports / social enterprises / organic brands / school promotion / restaurant menus / coffee roasters.', descriptionJa: '環境に優しい紙の印刷、企業の責任を示す。。再生紙100%・50枚から・全国送料込み。サステナブルブランド向けエコマーケティング。 **適合業種**: エコキャンペーン / ESGレポート / 社会企業 / オーガニックブランド / 学校推广 / レストランメニュー / コーヒー焙煎.', description_zh: '環保紙張印刷，展現企業責任。適合環保主題活動。 **適配行業**: 環保主題活動/ESG 報告/社會企業/有機品牌/校園推廣/餐廳菜單/咖啡烘焙.',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -18159,6 +18167,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     id: 'PKG-014',
     sku_code: 'PKG-014',
     slug: 'corrugated-boxes',
+    optimizedAt: '2026-07-30',
+    optimizationRound: 1,
     category: 'packaging',
     category_slug: 'packaging',
     name: '瓦楞彩盒印刷定製 (E坑/F坑) | 包裝盒 / 物流盒', nameEn: 'Corrugated Boxes (E/F Flute) | Custom Packaging & Shipping', nameJa: '段ボール箱 (E/Fフルート) | パッケージ・物流', title_zh: '瓦楞彩盒印刷定製 · 跨境電商物流快遞抗壓首選',

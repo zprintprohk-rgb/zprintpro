@@ -2146,14 +2146,68 @@
         "found_all_zero_click": "19/19 (100% CTR 0%)",
         "trend_vs_6_17": "显示量普遍下降 60-90% (e.g. 食品包裝印刷 108→9 imps, 海報印刷 65→19 imps), 7/22-7/28 长尾词季节性 / GSC 数据延迟 / 301 旧域衰减 三因不明, P4 关注",
         "category_classification": {
-          "zombie_19": ["食品包裝印刷", "海報與印刷", "紙袋印刷", "宣傳單張", "紙袋訂製", "宣傳單張印刷", "包裝盒訂製", "海報印刷", "包裝盒印刷", "印海報", "貼紙印刷", "紙盒訂製", "訂做紙袋", "印刷紙袋", "食品包裝訂製", "poster 印刷", "貼紙訂製", "禮盒訂製", "食品印刷"],
-          "disappeared_9": ["印名片 (NOT_FOUND, §11 禁区 不补)", "印紙袋", "紙袋印製", "利是封印刷 (季节 7月无春节)", "紙袋訂造", "紙袋訂做", "紙袋批發", "戶外貼紙", "印紙盒", "bag printing (en跨境)"],
+          "zombie_19": [
+            "食品包裝印刷",
+            "海報與印刷",
+            "紙袋印刷",
+            "宣傳單張",
+            "紙袋訂製",
+            "宣傳單張印刷",
+            "包裝盒訂製",
+            "海報印刷",
+            "包裝盒印刷",
+            "印海報",
+            "貼紙印刷",
+            "紙盒訂製",
+            "訂做紙袋",
+            "印刷紙袋",
+            "食品包裝訂製",
+            "poster 印刷",
+            "貼紙訂製",
+            "禮盒訂製",
+            "食品印刷"
+          ],
+          "disappeared_9": [
+            "印名片 (NOT_FOUND, §11 禁区 不补)",
+            "印紙袋",
+            "紙袋印製",
+            "利是封印刷 (季节 7月无春节)",
+            "紙袋訂造",
+            "紙袋訂做",
+            "紙袋批發",
+            "戶外貼紙",
+            "印紙盒",
+            "bag printing (en跨境)"
+          ],
           "high_potential_残杀候选": [
-            {"q": "海報印刷", "7d_imps": 19, "7d_pos": 32.0, "建议": "P4 CTR 优化 top 1"},
-            {"q": "宣傳單張", "7d_imps": 17, "7d_pos": 38.4},
-            {"q": "貼紙印刷", "7d_imps": 14, "7d_pos": 55.5},
-            {"q": "包裝盒訂製", "7d_imps": 11, "7d_pos": 37.1},
-            {"q": "食品包裝印刷", "7d_imps": 9, "7d_pos": 74.6, "6_17_was": 108, "降幅": "↓91%"}
+            {
+              "q": "海報印刷",
+              "7d_imps": 19,
+              "7d_pos": 32.0,
+              "建议": "P4 CTR 优化 top 1"
+            },
+            {
+              "q": "宣傳單張",
+              "7d_imps": 17,
+              "7d_pos": 38.4
+            },
+            {
+              "q": "貼紙印刷",
+              "7d_imps": 14,
+              "7d_pos": 55.5
+            },
+            {
+              "q": "包裝盒訂製",
+              "7d_imps": 11,
+              "7d_pos": 37.1
+            },
+            {
+              "q": "食品包裝印刷",
+              "7d_imps": 9,
+              "7d_pos": 74.6,
+              "6_17_was": 108,
+              "降幅": "↓91%"
+            }
           ]
         }
       },
@@ -2183,9 +2237,21 @@
         ]
       },
       "p4_ctr_seed_top_15": [
-        "海報印刷 19", "月曆印刷 17", "宣傳單張 17", "貼紙印刷 14", "印海報 13",
-        "宣傳單張印刷 13", "印刷 cmyk 12", "騎馬釘 11", "包裝盒訂製 11", "透明貼 11",
-        "訂做紙袋 11", "catalog printing 11", "書刊印刷 10", "印刷 カラー モード 10", "咭片印刷 10"
+        "海報印刷 19",
+        "月曆印刷 17",
+        "宣傳單張 17",
+        "貼紙印刷 14",
+        "印海報 13",
+        "宣傳單張印刷 13",
+        "印刷 cmyk 12",
+        "騎馬釘 11",
+        "包裝盒訂製 11",
+        "透明貼 11",
+        "訂做紙袋 11",
+        "catalog printing 11",
+        "書刊印刷 10",
+        "印刷 カラー モード 10",
+        "咭片印刷 10"
       ],
       "ai_visibility_baseline_link": "ai-visibility-baseline-2026-07-29.md (0/7 引用, 8/12 验收 §6.5 调整 ≥1/4)",
       "p2_report_link": "m3-p2-2026-07-29.md (8/12 验收 §6.2 校园词不可达 + §6.6 旧域名展示本 cron 无 page 维度)",
@@ -2592,6 +2658,68 @@
         "測試樣本",
         "活動贈品"
       ]
+    },
+    {
+      "id": "v7-SKU-26",
+      "slug": "foil-stickers",
+      "category": "stickers",
+      "optimized_at": "2026-07-30",
+      "optimization_round": 2,
+      "industries_zh": "餐飲外賣、美妝護膚、茶飲食品、寵物食品、母嬰、服裝、禮品包裝",
+      "industries_en": "Food delivery, Beauty & skincare, Tea & F&B, Pet food, Baby & maternity, Apparel, Gift packaging",
+      "industries_ja": "飲食デリバリー、化粧品、お茶・飲料、ペットフード、ベビー用品、アパレル、ギフト包装",
+      "note": "2026-07-30 v7 daily cron Tier A 7 行业 round 2 (append 1 行 適配行業 7 词繁体, 跟 7/22 简体适配行业并存; 7/30 0 push 攒批, 等 7/31 daily 一起 commit + push 1 build)"
+    },
+    {
+      "id": "v7-SKU-27",
+      "slug": "eco-flyers",
+      "category": "flyers",
+      "optimized_at": "2026-07-30",
+      "optimization_round": 1,
+      "industries_zh": "環保主題活動、ESG 報告、社會企業、有機品牌、校園推廣、餐廳菜單、咖啡烘焙",
+      "industries_en": "Eco campaigns, ESG reports, Social enterprises, Organic brands, School promotion, Restaurant menus, Coffee roasters",
+      "industries_ja": "エコキャンペーン、ESGレポート、社会企業、オーガニックブランド、学校推广、レストランメニュー、コーヒー焙煎",
+      "note": "2026-07-30 v7 daily cron Tier A 7 行业 round 1 (P0 flyers 第 4 个, 真正未优化过; 7/30 0 push 攒批, 等 7/31 一起 commit)"
+    },
+    {
+      "id": "v7-SKU-28",
+      "slug": "corrugated-boxes",
+      "category": "packaging",
+      "optimized_at": "2026-07-30",
+      "optimization_round": 1,
+      "tier": "A",
+      "industries": [
+        "跨境電商 DTC",
+        "訂閱盒直運",
+        "物流快遞",
+        "3C 電子",
+        "汽配零件",
+        "寵物食品",
+        "烘焙連鎖"
+      ],
+      "note": "2026-07-30 v7 daily cron P0 packaging 第 8 个 PENDING 优化. description 已有 7 词 適配行業 (繁体, §13.16.1 OK), 7/30 仅加 optimizedAt 字段 R1 (R2 等 8/12 P4 复盘时 price_anchor 5 档 + 15+ 年模板 fixes). 0 push 攒批, 等 7/31 一起 commit"
+    },
+    {
+      "id": "v7-SKU-29",
+      "slug": "gift-bags",
+      "category": "paper-bags",
+      "optimized_at": "2026-07-30",
+      "optimization_round": 2,
+      "industries_zh": "婚慶、珠寶鐘錶、茶飲食品、服裝、禮品店、品牌活動、酒店迎賓",
+      "industries_en": "Weddings, Jewelry & Watches, Tea & F&B, Apparel, Gift shops, Brand events, Hotel welcome",
+      "industries_ja": "婚礼、宝飾時計、お茶飲食、アパレル、ギフトショップ、ブランドイベント、ホテル歓迎",
+      "note": "2026-07-30 v7 daily cron Tier A 7 行业 round 2 (跟 v7-SKU-18 7/28 R1 一致, 但用 適配行業 7 词繁体, 跟 7/22 简体并存; §13.16.1 zh-hk 100% 繁体目标). 0 push 攒批, 等 7/31 一起 commit"
+    },
+    {
+      "id": "v7-SKU-30",
+      "slug": "premium-greeting-cards",
+      "category": "greeting-cards",
+      "optimized_at": "2026-07-30",
+      "optimization_round": 1,
+      "industries_zh": "婚慶、聖誕節、新年、節日禮品、品牌活動、酒店迎賓、企業定制",
+      "industries_en": "Weddings, Christmas, New Year, Holiday gifts, Brand events, Hotel welcome, Corporate customization",
+      "industries_ja": "婚礼、クリスマス、新年、节日ギフト、ブランドイベント、ホテル歓迎、企業カスタム",
+      "note": "2026-07-30 v7 daily cron Tier A 7 行业 round 1 (P1 v22 改造 6 SKU 之一, matrix category_priority 没列但属 P3 校园着陆页核心 SKU; 7/30 0 push 攒批, 等 7/31 一起 commit)"
     }
   ],
   "v7_pdp_reviews": [
@@ -2738,6 +2866,27 @@
       "files_changed": [],
       "note": "2026-07-28 v7 daily cron PDP review #7 - 5 维度全过, fixes_applied 留空 (title_zh 长度优化 = nice-to-have, 不紧急; P0/P1 100% 饱和无新题可写, 跑 B+C+F 兜底)",
       "session": "mvs_b8598b9d340b4977ba255a293d08c126"
+    },
+    {
+      "id": "v7-PDP-09",
+      "slug": "corrugated-boxes",
+      "category": "packaging",
+      "reviewed_at": "2026-07-30",
+      "5_dimensions": {
+        "1_title_ctr": "OK zh-hk title_zh 21 chars 含 5 sharp hooks (瓦楞彩盒/印刷定製/跨境電商/物流快遞/抗壓); en nameEn short, H1 in page.tsx 含 100 MOQ / 5-7 Day Turnaround / Free Shipping; ja nameJa 23 chars 標準 E/F フルート",
+        "2_price_anchor": "NEEDS-FIX longDescription L18189-18190 只有 2 個區間 (3 層 HK$2-4/box + 5 層 HK$4-8/box), 缺 5 檔 detail table (跟 v7-PDP-02 mailer-boxes 5 檔 HKD 965/1144/1677/1872/2800 不一致). basePrice 1517 + price_range HK$1,517-7,278 缺中段錨. 8/12 P4 复盘时 fix_count +1",
+        "3_trust_bar_15y": "OK RegionalContent.tsx 3 locale 15+ 年印刷經驗 / 15+ Years Expertise / 15+ 年の実績 通用 trust bar; longDescription 提 100% 滿意保證 + FSC/ISO 認證 (3 markers 替代 15+ 年模板)",
+        "4_nap_consistency": "OK NAP 脫敏 - title_zh 跨境電商物流快遞 无 深圳/深圳自有廠房 泄漏到 SEO title/excerpt/Hero, NAP 真實披露位置 footer/contact/schema (§13.10 合規)",
+        "5_cta_path": "OK 通用 3 入口 (page.tsx template: generateWhatsAppLink + ProductQuoteProvider/QuoteCalculator + /quote/ locale-aware) - 7/29 v7-PDP-08 同模式"
+      },
+      "fixes_applied": [],
+      "files_changed": [],
+      "fixes_pending": [
+        "2_price_anchor 5 档 detail table",
+        "1_title_ctr title_zh 长度优化 (21→50+ chars)"
+      ],
+      "note": "2026-07-30 v7 daily cron PDP review #9 - 5 维度审查完成, fixes_applied 留空 (2 fixes 8/12 P4 复盘时再改: price_anchor 5 档 + title_zh 长度). 7/30 0 push 攒批, 等 7/31 一起 commit",
+      "session": "mvs_09a761726fae41b69aca39490906c290"
     }
   ],
   "v7_cron_sessions": [
@@ -2829,9 +2978,31 @@
       ],
       "pdp_review": "mailer-boxes (P0 packaging × 跨境電商, 5 维度全过, 0 fixes)",
       "note": "2026-07-28 v7 daily-content-evolve: matrix P0/P1 100% 饱和 (K3 §6 铁律常态, 0 候选可写). 5 SKU + 1 PDP + matrix update. P1 v22 收官日 (M3 v22 名片→贺卡 + Schema 基建). 7/29 P2 GSC 周检 cron once 8534c688 06:00 触发. 7/30+ daily cron 严禁写 back-to-school-printing-usa / new-semester-printing-japan (M3 P3 reserved)."
+    },
+    {
+      "session": "mvs_09a761726fae41b69aca39490906c290",
+      "date": "2026-07-30",
+      "deliverables": {
+        "blog": 0,
+        "sku_optimizations": 5,
+        "pdp_reviews": 1,
+        "matrix_updates": 1,
+        "k3_section6_skip_count": 24
+      },
+      "build_quota": 0,
+      "strategy": "v7 0 push 攒批 + 深度提质 (K3 §6 0 候选常态, 跑 B+C+F 兜底; e095918 7/30 凌晨 quota 占用, 7/30 daily 0 push 攒批 等 7/31 一起 commit + push 1 build)",
+      "skus": [
+        "foil-stickers (P0 stickers, round 2, 7 行业 append 1 行 適配行業 7 词繁体)",
+        "eco-flyers (P0 flyers, round 1, 7 行业全新)",
+        "corrugated-boxes (P0 packaging, round 1, description 已有 7 词 加 optimizedAt 字段)",
+        "gift-bags (P0 paper-bags, round 2, 7 行业 append 1 行 適配行業 7 词繁体)",
+        "premium-greeting-cards (P1 v22 改造 6 SKU 之一, round 1, 7 行业全新)"
+      ],
+      "pdp_review": "corrugated-boxes (P0 packaging × 跨境電商, 5 维度审查, 0 fixes + 2 pending (price_anchor 5档 + title_zh 长度) 等 8/12 P4 复盘)",
+      "note": "2026-07-30 v7 daily-content-evolve: 5 SKU 跨 4-5 类目 (P0 stickers + P0 flyers + P0 packaging + P0 paper-bags + greeting-cards P1 v22). matrix P0/P1 100% 饱和 (K3 §6 0 候选常态, 跑 B+C+F 兜底). 0 push 攒批, e095918 7/30 凌晨已 push 1 次占 quota, 等 7/31 daily cron 一起 commit (含 user 凌晨 about/page.tsx 改动) + push 1 build. 7/30+ P3 校园着陆页 back-to-school-printing-usa (en) + new-semester-printing-japan (ja) blocklist 4 cron 严禁写 (M3 P3 reserved). 7/30 root session 跑 daily cron 模式, 不是 branch worker (R1-R6 orchestrator discipline: 派生 vs 直接跑 trade-off)"
     }
   ],
-  "last_updated": "2026-07-29T10:35:00+08:00",
+  "last_updated": "2026-07-30T10:35:00+08:00",
   "k3_section6_skip_log": [
     {
       "date": "2026-07-29",
@@ -2859,6 +3030,15 @@
       "k3_section6_skip_count": 22,
       "new_blog_written": false,
       "reason": "matrix P0/P1 100% 饱和 + P2 部分 pending-verify, 0 个新题可写 (K3 §6 铁律常态, 不写新博客). 跑 B+C+F 兜底 (5 SKU + 1 PDP + matrix update). 7/30+ 严禁写 back-to-school-printing-usa / new-semester-printing-japan (M3 P3 reserved)."
+    },
+    {
+      "date": "2026-07-30",
+      "queue_size": 31,
+      "pending_in_queue": 24,
+      "covered_skip": 24,
+      "k3_section6_skip_count": 24,
+      "new_blog_written": false,
+      "reason": "matrix P0/P1 100% 饱和 + P2 部分 pending-verify, 0 个新题可写 (K3 §6 铁律常态, 不写新博客). 跑 B+C+F 兜底 (5 SKU + 1 PDP + matrix update). 7/30 0 push 攒批, e095918 quota 占用, 7/31 一起 commit. 7/30+ 严禁写 back-to-school-printing-usa / new-semester-printing-japan (M3 P3 reserved, §8 blocklist 4 cron). 7/30 5 SKU 跨 4-5 类目 (P0 4 + greeting-cards P1 v22), 1 PDP corrugated-boxes 5 维度审查 0 fixes + 2 pending 8/12 P4 复盘"
     }
   ],
   "v7_weekly_sessions": [
