@@ -82,7 +82,6 @@ const translations = {
     imageSlotTeam: '團隊真人工作場景 (K3 拍圖後替換)',
   },
 
-  },
   en: {
     metaTitle: 'About ZprintPro | Premium Printing Service From Hong Kong to USA / UK / AU',
     metaDesc: 'Premium printing service from Hong Kong to US, UK, AU, CA. ISO 9001 + FSC certified, 15+ years experience, 1000+ global clients. 72-hour worldwide delivery from our Hong Kong factory.',
@@ -111,7 +110,8 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
       { name: 'Soy-based Inks', desc: 'Environmentally friendly soy inks with 50% lower VOC emissions' },
     ],
     stats: { clients: '1000+', years: '15+', products: '79', satisfaction: '98%' },
-    statsLabels: { clients: 'Clients Served', years: 'Years Experience', products: 'SKU Products', satisfaction: 'Satisfaction Rate' },    processTitle: 'Our Production Process',
+    statsLabels: { clients: 'Clients Served', years: 'Years Experience', products: 'SKU Products', satisfaction: 'Satisfaction Rate' },
+    processTitle: 'Our Production Process',
 
     processSubtitle: '5-step standard workflow from upload to global delivery',
 
@@ -166,7 +166,8 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
       { name: '大豆インク', desc: '環境配慮型大豆インクを採用。VOC排出量は業界標準の50%以下。' },
     ],
     stats: { clients: '1000+', years: '15+', products: '79', satisfaction: '98%' },
-    statsLabels: { clients: '累計顧客', years: '業界経験', products: 'SKU製品', satisfaction: '顧客満足度' },    processTitle: '印刷の流れ',
+    statsLabels: { clients: '累計顧客', years: '業界経験', products: 'SKU製品', satisfaction: '顧客満足度' },
+    processTitle: '印刷の流れ',
 
     processSubtitle: 'アップロードから世界配送まで 5 ステップ標準フロー',
 
@@ -193,7 +194,6 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
     imageSlotTeam: 'チームの実業務シーン (K3 撮影後に差し替え)',
   },
 
-  },
 };
 
 export default function AboutPage({ params }: { params: { locale: Locale } }) {
