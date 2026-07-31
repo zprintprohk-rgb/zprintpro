@@ -2269,7 +2269,7 @@
     "manual_review": [],
     "reason_no_apply": "GSC CSV snapshot (6/17) 不能判 30/90 天连续趋势, 跳过自动 Tier 切换"
   },
-  "lastUpdated": "2026-07-31T10:35:00+08:00",
+  "lastUpdated": "2026-07-31T20:00:00+08:00",
   "v7_sku_optimizations": [
     {
       "id": "v7-SKU-21",
@@ -2775,6 +2775,50 @@
       "industries_en": "Food delivery, Retail, Cross-border e-commerce, Beauty, Education & training, Weddings, Brand events",
       "industries_ja": "飲食店・小売・越境EC・美容・教育研修・結婚式・ブランドイベント",
       "note": "2026-07-31 v7 daily cron Tier A 7 行业 (新增 folding-boxes optimizedAt R1, 3 locale 各加 1 行业 list). 折叠盒, P0 packaging 跨 美妆/食品/3C/教育"
+    },
+    {
+      "id": "v7-SKU-37",
+      "slug": "doujin-circle-printing-guide",
+      "category": "blog",
+      "optimized_at": "2026-07-31",
+      "optimization_round": 1,
+      "industries_zh": "同人 / 動漫周邊 / 文創 IP / 二次元 / 漫展",
+      "industries_en": "Doujin / Anime / Comic / Cosplay / Creator IP",
+      "industries_ja": "同人 / アニメ / コミック / コスプレ / クリエイター",
+      "note": "2026-07-31 K3 P0 止血 (GSC 7 天 5 点击 43 imps 11.63% 排名 5.21) — 末尾加 3 产品内链 (doujin-postcard-set / doujin-acrylic-keychain / doujin-can-badge), 传递 §0.7 权重到产品页"
+    },
+    {
+      "id": "v7-SKU-38",
+      "slug": "mtr-advertising-specs",
+      "category": "blog",
+      "optimized_at": "2026-07-31",
+      "optimization_round": 1,
+      "industries_zh": "MTR / 港鐵 / 地鐵廣告 / 公共交通廣告 / 地產",
+      "industries_en": "MTR / Subway / Transit / Real Estate / Property",
+      "industries_ja": "MTR / 地下鉄 / 交通広告 / 不動産",
+      "note": "2026-07-31 K3 P0 止血 (GSC 7 天 4 点击 43 imps 9.3% 排名 5.44) — 末尾加 3 产品内链 (saddle-stitch-booklets / catalog-printing / foil-stickers), 传递 §0.7 权重"
+    },
+    {
+      "id": "v7-SKU-39",
+      "slug": "cmyk-guide",
+      "category": "blog",
+      "optimized_at": "2026-07-31",
+      "optimization_round": 1,
+      "industries_zh": "設計 / 印刷色彩 / 品牌設計 / 印前處理",
+      "industries_en": "Design / Print Color / Brand / Prepress",
+      "industries_ja": "デザイン / 印刷色 / ブランド / プリプレス",
+      "note": "2026-07-31 K3 P0 cmyk-guide blog 加 3 产品内链 (zh-hk/en/ja 三 locale) — 排名 84 太弱, 加内链不指望短期冲排名, 但给 page 注入 link juice"
+    },
+    {
+      "id": "v7-SKU-40",
+      "slug": "a2-posters",
+      "category": "posters",
+      "optimized_at": "2026-07-31",
+      "optimization_round": 1,
+      "industries_zh": "活動海報 / 展覽海報 / 印海報 / 門店海報 / 大幅輸出",
+      "industries_en": "Event Poster / Exhibition / Retail Poster / Large Format",
+      "industries_ja": "イベントポスター / 展示会 / 店舗ポスター / 大判出力",
+      "note": "2026-07-31 K3 P0 止血 (GSC 7 天 海報印刷 23 imps 排名 32.57 + poster 印刷 21 imps 34.86 + 印海報 16 imps 31.56) — sku-seo-data.ts title/h1 加 \"海報印刷\" 关键词, 1 个产品页覆盖 3 个搜索词"
     }
   ],
   "v7_pdp_reviews": [
