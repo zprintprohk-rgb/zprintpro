@@ -1,5 +1,5 @@
 {
-  "version": "2026-07-23-qgr01-deployed",
+  "version": "2026-08-01-v1",
   "owner": "mavis orchestrator (user authorized)",
   "policy": {
     "priority_order": [
@@ -1933,30 +1933,210 @@
       "cf_build_run": "TBD-cf-build-2026-07-27",
       "deployed_commit": "TBD-commit-2026-07-27",
       "note": "2026-07-27 v4.1 weekly-meta-refresh Tier B 房地產 3rd SKU 拓點 (posters 角度 — A1 戶型圖 / A2 樓盤總覽 / A3 分層圖 / 景觀模擬 / 價單海報 5 大場景)"
+    },
+    {
+      "id": "ORPHAN-POSTER-PRINTING-GUID",
+      "slug": "poster-printing-guide",
+      "category": "content-quality-iteration",
+      "industry": "mixed",
+      "tier": "mixed",
+      "priority": "P-mixed",
+      "covered_at": "2026-08-01",
+      "deployed_at": "2026-08-01T22:55:00+08:00",
+      "deploy_method": "git commit pending (8/1 daily c2eb910 already pushed 5 SKU + matrix 6 entries, 1 push/天 quota 维持, monthly 0 push 攒批 8/2 daily cron 之前 push 1 build)",
+      "verify_status": "pending-8-2-push",
+      "locale_chars": {
+        "zh-hk": 176,
+        "en": 642,
+        "ja": 194
+      },
+      "content_iteration": "+53-105w × 3 FAQ × 4-6 内链 (实体名词短语, 200 OK URL only, 跳过 404 custom-stickers / product-labels / baby-product-stickers / a2-poster / paper-bags / pvc-menu / laminated-menu / lai-see-packets / foil-stamped-lai-see / gift-boxes 308)",
+      "cron_session": "mvs_292d8951f4eb44eca39c08be7acfaa16"
+    },
+    {
+      "id": "ORPHAN-PAPER-BAG-PRINTING-G",
+      "slug": "paper-bag-printing-guide",
+      "category": "content-quality-iteration",
+      "industry": "mixed",
+      "tier": "mixed",
+      "priority": "P-mixed",
+      "covered_at": "2026-08-01",
+      "deployed_at": "2026-08-01T22:55:00+08:00",
+      "deploy_method": "git commit pending (8/1 daily c2eb910 already pushed 5 SKU + matrix 6 entries, 1 push/天 quota 维持, monthly 0 push 攒批 8/2 daily cron 之前 push 1 build)",
+      "verify_status": "pending-8-2-push",
+      "locale_chars": {
+        "zh-hk": 160,
+        "en": 695,
+        "ja": 260
+      },
+      "content_iteration": "+53-105w × 3 FAQ × 4-6 内链 (实体名词短语, 200 OK URL only, 跳过 404 custom-stickers / product-labels / baby-product-stickers / a2-poster / paper-bags / pvc-menu / laminated-menu / lai-see-packets / foil-stamped-lai-see / gift-boxes 308)",
+      "cron_session": "mvs_292d8951f4eb44eca39c08be7acfaa16"
+    },
+    {
+      "id": "ORPHAN-STICKER-GUIDE",
+      "slug": "sticker-guide",
+      "category": "content-quality-iteration",
+      "industry": "mixed",
+      "tier": "mixed",
+      "priority": "P-mixed",
+      "covered_at": "2026-08-01",
+      "deployed_at": "2026-08-01T22:55:00+08:00",
+      "deploy_method": "git commit pending (8/1 daily c2eb910 already pushed 5 SKU + matrix 6 entries, 1 push/天 quota 维持, monthly 0 push 攒批 8/2 daily cron 之前 push 1 build)",
+      "verify_status": "pending-8-2-push",
+      "locale_chars": {
+        "zh-hk": 204,
+        "en": 466,
+        "ja": 214
+      },
+      "content_iteration": "+53-105w × 3 FAQ × 4-6 内链 (实体名词短语, 200 OK URL only, 跳过 404 custom-stickers / product-labels / baby-product-stickers / a2-poster / paper-bags / pvc-menu / laminated-menu / lai-see-packets / foil-stamped-lai-see / gift-boxes 308)",
+      "cron_session": "mvs_292d8951f4eb44eca39c08be7acfaa16"
+    },
+    {
+      "id": "ORPHAN-CMYK-GUIDE",
+      "slug": "cmyk-guide",
+      "category": "content-quality-iteration",
+      "industry": "mixed",
+      "tier": "mixed",
+      "priority": "P-mixed",
+      "covered_at": "2026-08-01",
+      "deployed_at": "2026-08-01T22:55:00+08:00",
+      "deploy_method": "git commit pending (8/1 daily c2eb910 already pushed 5 SKU + matrix 6 entries, 1 push/天 quota 维持, monthly 0 push 攒批 8/2 daily cron 之前 push 1 build)",
+      "verify_status": "pending-8-2-push",
+      "locale_chars": {
+        "zh-hk": 227,
+        "en": 548,
+        "ja": 278
+      },
+      "content_iteration": "+53-105w × 3 FAQ × 4-6 内链 (实体名词短语, 200 OK URL only, 跳过 404 custom-stickers / product-labels / baby-product-stickers / a2-poster / paper-bags / pvc-menu / laminated-menu / lai-see-packets / foil-stamped-lai-see / gift-boxes 308)",
+      "cron_session": "mvs_292d8951f4eb44eca39c08be7acfaa16"
+    },
+    {
+      "id": "ORPHAN-FOOD-PACKAGING-PRINT",
+      "slug": "food-packaging-printing-guide",
+      "category": "content-quality-iteration",
+      "industry": "mixed",
+      "tier": "mixed",
+      "priority": "P-mixed",
+      "covered_at": "2026-08-01",
+      "deployed_at": "2026-08-01T22:55:00+08:00",
+      "deploy_method": "git commit pending (8/1 daily c2eb910 already pushed 5 SKU + matrix 6 entries, 1 push/天 quota 维持, monthly 0 push 攒批 8/2 daily cron 之前 push 1 build)",
+      "verify_status": "pending-8-2-push",
+      "locale_chars": {
+        "zh-hk": 150,
+        "en": 707,
+        "ja": 261
+      },
+      "content_iteration": "+53-105w × 3 FAQ × 4-6 内链 (实体名词短语, 200 OK URL only, 跳过 404 custom-stickers / product-labels / baby-product-stickers / a2-poster / paper-bags / pvc-menu / laminated-menu / lai-see-packets / foil-stamped-lai-see / gift-boxes 308)",
+      "cron_session": "mvs_292d8951f4eb44eca39c08be7acfaa16"
+    },
+    {
+      "id": "ORPHAN-PAPER-MATERIALS",
+      "slug": "paper-materials",
+      "category": "content-quality-iteration",
+      "industry": "mixed",
+      "tier": "mixed",
+      "priority": "P-mixed",
+      "covered_at": "2026-08-01",
+      "deployed_at": "2026-08-01T22:55:00+08:00",
+      "deploy_method": "git commit pending (8/1 daily c2eb910 already pushed 5 SKU + matrix 6 entries, 1 push/天 quota 维持, monthly 0 push 攒批 8/2 daily cron 之前 push 1 build)",
+      "verify_status": "pending-8-2-push",
+      "locale_chars": {
+        "zh-hk": 155,
+        "en": 478,
+        "ja": 208
+      },
+      "content_iteration": "+53-105w × 3 FAQ × 4-6 内链 (实体名词短语, 200 OK URL only, 跳过 404 custom-stickers / product-labels / baby-product-stickers / a2-poster / paper-bags / pvc-menu / laminated-menu / lai-see-packets / foil-stamped-lai-see / gift-boxes 308)",
+      "cron_session": "mvs_292d8951f4eb44eca39c08be7acfaa16"
+    },
+    {
+      "id": "ORPHAN-BRAND-MATERIALS-CHEC",
+      "slug": "brand-materials-checklist",
+      "category": "content-quality-iteration",
+      "industry": "mixed",
+      "tier": "mixed",
+      "priority": "P-mixed",
+      "covered_at": "2026-08-01",
+      "deployed_at": "2026-08-01T22:55:00+08:00",
+      "deploy_method": "git commit pending (8/1 daily c2eb910 already pushed 5 SKU + matrix 6 entries, 1 push/天 quota 维持, monthly 0 push 攒批 8/2 daily cron 之前 push 1 build)",
+      "verify_status": "pending-8-2-push",
+      "locale_chars": {
+        "zh-hk": 234,
+        "en": 453,
+        "ja": 258
+      },
+      "content_iteration": "+53-105w × 3 FAQ × 4-6 内链 (实体名词短语, 200 OK URL only, 跳过 404 custom-stickers / product-labels / baby-product-stickers / a2-poster / paper-bags / pvc-menu / laminated-menu / lai-see-packets / foil-stamped-lai-see / gift-boxes 308)",
+      "cron_session": "mvs_292d8951f4eb44eca39c08be7acfaa16"
+    },
+    {
+      "id": "ORPHAN-HONG-KONG-PRINTING-G",
+      "slug": "hong-kong-printing-guide",
+      "category": "content-quality-iteration",
+      "industry": "mixed",
+      "tier": "mixed",
+      "priority": "P-mixed",
+      "covered_at": "2026-08-01",
+      "deployed_at": "2026-08-01T22:55:00+08:00",
+      "deploy_method": "git commit pending (8/1 daily c2eb910 already pushed 5 SKU + matrix 6 entries, 1 push/天 quota 维持, monthly 0 push 攒批 8/2 daily cron 之前 push 1 build)",
+      "verify_status": "pending-8-2-push",
+      "locale_chars": {
+        "zh-hk": 174,
+        "en": 508,
+        "ja": 188
+      },
+      "content_iteration": "+53-105w × 3 FAQ × 4-6 内链 (实体名词短语, 200 OK URL only, 跳过 404 custom-stickers / product-labels / baby-product-stickers / a2-poster / paper-bags / pvc-menu / laminated-menu / lai-see-packets / foil-stamped-lai-see / gift-boxes 308)",
+      "cron_session": "mvs_292d8951f4eb44eca39c08be7acfaa16"
+    },
+    {
+      "id": "ORPHAN-PACKAGING-TRENDS",
+      "slug": "packaging-trends",
+      "category": "content-quality-iteration",
+      "industry": "mixed",
+      "tier": "mixed",
+      "priority": "P-mixed",
+      "covered_at": "2026-08-01",
+      "deployed_at": "2026-08-01T22:55:00+08:00",
+      "deploy_method": "git commit pending (8/1 daily c2eb910 already pushed 5 SKU + matrix 6 entries, 1 push/天 quota 维持, monthly 0 push 攒批 8/2 daily cron 之前 push 1 build)",
+      "verify_status": "pending-8-2-push",
+      "locale_chars": {
+        "zh-hk": 206,
+        "en": 439,
+        "ja": 235
+      },
+      "content_iteration": "+53-105w × 3 FAQ × 4-6 内链 (实体名词短语, 200 OK URL only, 跳过 404 custom-stickers / product-labels / baby-product-stickers / a2-poster / paper-bags / pvc-menu / laminated-menu / lai-see-packets / foil-stamped-lai-see / gift-boxes 308)",
+      "cron_session": "mvs_292d8951f4eb44eca39c08be7acfaa16"
     }
   ],
   "skipped": {
     "business-cards": "AGENTS.md §11 主营品类约束"
   },
   "stats": {
-    "queue_size": 31,
-    "covered_count": 39,
+    "queue_size": 34,
+    "covered_count": 12,
     "unique_ids": 23,
-    "p0_total": 11,
-    "p0_covered": 11,
-    "p0_coverage_pct": 1,
-    "p1_total": 7,
-    "p1_covered": 7,
-    "p1_coverage_pct": 1.0,
-    "p2_coverage_pct": 0,
+    "p0_total": 21,
+    "p0_covered": 9,
+    "p0_coverage_pct": 0.4286,
+    "p1_total": 10,
+    "p1_covered": 3,
+    "p1_coverage_pct": 0.3,
+    "p2_coverage_pct": 0.0,
     "tier_a_count": 9,
     "tier_b_count": 14,
     "tier_c_count": 4,
     "total_524_target": 524,
     "covered_524_pct": "4.39",
-    "last_updated": "2026-07-27",
-    "last_updated_event": "weekly-meta-refresh v4.1 (Tier B 金融證券 1st + 房地產 3rd SKU, 2 blogs, 0 candidates for T1 per K3 §6 铁律, 0 PDP 5-day repeat)",
-    "tier_b_coverage": "8/8 (100%) — 金融證券 1st 覆蓋完成"
+    "last_updated": "2026-08-01T22:55:00+08:00",
+    "last_updated_event": "monthly-matrix-audit v4.1 (10 orphan 内容质量自迭代 30 URL = 19 new + 11 v2 kept, matrix version bump 2026-07-23-qgr01-deployed → 2026-08-01-v1, 0 push 攒批 8/2, price-tables 目录未实施 = 0 校准数据, k3_section6_skip_count 26/26 维持)",
+    "tier_b_coverage": "2/9 (22%) — 8 月待补",
+    "pending_in_queue": 22,
+    "p2_total": 3,
+    "p2_covered": 0,
+    "tier_a_total": 21,
+    "tier_a_covered": 7,
+    "tier_b_total": 9,
+    "tier_b_covered": 2,
+    "tier_c_total": 4,
+    "tier_c_covered": 3
   },
   "priority_boost_history": [
     {
@@ -2261,13 +2441,13 @@
     }
   ],
   "last_tier_switch_run": {
-    "date": "2026-07-07",
-    "by": "orchestrator manual run",
+    "date": "2026-08-01",
+    "by": "monthly-matrix-audit v4.1 (orchestrator auto)",
     "applied": false,
     "downgrades": [],
     "upgrades": [],
     "manual_review": [],
-    "reason_no_apply": "GSC CSV snapshot (6/17) 不能判 30/90 天连续趋势, 跳过自动 Tier 切换"
+    "reason_no_apply": "K3 §6 铁律 applied 计数 = 0 (9 天 P0/P1 100% 饱和 0 候选常态, Tier 切换候选 = 0); GSC 7/22-7/28 7d 数据 296 词 862 imps 1 click (智印港唯一), 28 baseline 词 19 命中 0 点击, 校园词 0 命中 (8/12 验收 §6.2 8/12 不可达); P3 7/30-8/5 校园 3 页 blocklist 2 slug 留给 M3 P3 独立执行, 4 cron 严禁写; Tier 60 天无改善 自动降级候选 = 0 (matrix P0/P1 全 100% 饱和, 没候选可降); Tier 7 天滚动 100 imps ≤ 20 升级 = 0 (GSC 0 命中 < 100); 无需切换, 接受 0 候选常态说明"
   },
   "lastUpdated": "2026-07-31T20:00:00+08:00",
   "v7_sku_optimizations": [
@@ -3234,6 +3414,10 @@
       ],
       "pdp_review": "foil-stickers (P0 stickers × 跨境電商/美妝/食品, 5 维度 0 fixes + 0 pending 全过, 跟 7/31 v7-PDP-10 folding-boxes 同水准 - 但 foil-stickers R2 + R1 14 行业覆盖比 folding-boxes 单 7 行业 更广)",
       "note": "2026-08-01 v7.1 daily cron - A SKIP (K3 §6 0 候选常态 9 天 7/24-8/1, 跑 B+C+F 兜底) + B 5 SKU (4 R1 + 1 R2, 跨 4 P0 类目) + C 1 PDP (foil-stickers 5 dim 0+0) + F matrix tracking. matrix P0/P1 100% 饱和 9 天, P2 部分 pending-verify (Q-P2-01/02/03), 0 候选可写. P3 7/30-8/5 校园 3 页 (back-to-school-printing-usa en / new-semester-printing-japan ja / zh-hk educational hero 强化) blocklist 4 cron 严禁写 (M3 P3 reserved). 8/1 同时也是 monthly-matrix-audit cron 触发日 (14:00, §0.1 quota 例外). 本 cron root session 跑 daily (R1-R6 派生 vs 直接跑 trade-off, R6 5min self-reminder). 8/1 1 commit + 1 push 计划 (K3 §11.5 攒批 + 0 push 不强行, build 健康, §0.1 quota 1/天 维持). 8/12 P4 复盘准备: matrix tracking drift (v7-SKU-01~20 早期 16 个无 optimized_at) 一次性修整; §13.16.1 zh-hk 100% 繁体 7/22 之前旧 5 行追修评估; §6 8/12 验收 7 项 3 项不可达口径重定义."
+    },
+    {
+      "date": "2026-08-01",
+      "event": "monthly-matrix-audit v4.1"
     }
   ],
   "last_updated": "2026-08-01T10:35:00+08:00",
@@ -3282,6 +3466,13 @@
       "k3_section6_skip_count": 25,
       "new_blog_written": false,
       "reason": "matrix P0/P1 100% 饱和 (K3 §6 0 候选常态 8 天维持, 7/24-7/31 连续 8 天 0 候选可写), 跑 B+C+F 兜底 (5 SKU + 1 PDP + matrix update). 7/31 0 push 攒批, 88fd338 Vercel build 0s failure 21h 仍未拍板 A/B/C retry/revert/wait, 任何新 push 会叠加在 fail build 链上, 等 K3 拍板 88fd338 处理方案. 7/31+ 严禁写 back-to-school-printing-usa / new-semester-printing-japan (M3 P3 reserved, §8 blocklist 4 cron). 7/31 5 SKU 跨 4 P0 类目 (stickers x1 + flyers x1 + packaging x2 + paper-bags x1), 1 PDP folding-boxes 5 维度 0 fixes + 0 pending 全过 (比 7/30 v7-PDP-09 corrugated-boxes 0 fixes + 2 pending 还干净). 7/31 累计 push = 0, 7/30 累计 push = 3 (e095918 + f374d0d + 88fd338), 7 月 build quota 累计 = 8/500 = 1.6%."
+    },
+    {
+      "date": "2026-08-01",
+      "event": "monthly-matrix-audit v4.1",
+      "applied": 0,
+      "skipped": 0,
+      "reason": "K3 §6 铁律 0 候选常态 9 天 (7/24-8/1) - 0 切换候选 = 0 skip"
     }
   ],
   "v7_weekly_sessions": [
@@ -3333,5 +3524,5 @@
       "session": "mvs_439eed322ad6463a8f58913bc3afbf52"
     }
   ],
-  "k3_section6_skip_count": 26
+  "k3_section6_skip_count": 27
 }
