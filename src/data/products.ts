@@ -3695,10 +3695,12 @@ export const products: Product[] = [
     id: 'ST-007',
     sku_code: 'ST-007',
     slug: 'security-stickers',
+    optimizedAt: '2026-08-01',
+    optimizationRound: 1,
     category: 'stickers',
     category_slug: 'stickers',
     name: '防偽貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Security Stickers | Waterproof & Die-Cut Stickers', nameJa: 'セキュリティステッカー | 防水ステッカー / ダイカット', title_zh: '防偽貼紙',
-    description: '特殊防偽工藝，包括雷射標籤、易碎紙等，保護品牌免受假冒。', descriptionEn: 'Special anti-counterfeiting processes including holographic labels, fragile paper, protecting brands from counterfeiting.', descriptionJa: '特殊な偽造防止加工、ホログラムラベル、壊れやすい紙など。', description_zh: '特殊防偽工藝，包括雷射標籤、易碎紙等，保護品牌免受假冒。',
+    description: '特殊防偽工藝，包括雷射標籤、易碎紙等，保護品牌免受假冒。 **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'Special anti-counterfeiting processes including holographic labels, fragile paper, protecting brands from counterfeiting. **Best for**: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: '特殊な偽造防止加工、ホログラムラベル、壊れやすい紙など。 **適合業種**: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: '特殊防偽工藝，包括雷射標籤、易碎紙等，保護品牌免受假冒。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -4013,10 +4015,12 @@ export const products: Product[] = [
     id: 'ST-008',
     sku_code: 'ST-008',
     slug: 'fluorescent-stickers',
+    optimizedAt: '2026-08-01',
+    optimizationRound: 1,
     category: 'stickers',
     category_slug: 'stickers',
     name: '螢光貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Fluorescent Stickers | Waterproof & Die-Cut Stickers', nameJa: '蛍光ステッカー | 防水ステッカー / ダイカット', title_zh: '螢光貼紙',
-    description: '螢光色彩，在光線下格外醒目。適合促銷標籤、安全標識、活動裝飾。', descriptionEn: 'Fluorescent colors, highly visible under light. Perfect for promotional labels, safety signs, event decoration.', descriptionJa: '蛍光色、光の下で非常に目立ちます。プロモーションラベル、安全標識、イベント裝飾に最適。', description_zh: '螢光色彩，在光線下格外醒目。適合促銷標籤、安全標識、活動裝飾。',
+    description: '螢光色彩，在光線下格外醒目。適合促銷標籤、安全標識、活動裝飾。 **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'Fluorescent colors, highly visible under light. Perfect for promotional labels, safety signs, event decoration. **Best for**: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: '蛍光色、光の下で非常に目立ちます。プロモーションラベル、安全標識、イベント裝飾に最適。 **適合業種**: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: '螢光色彩，在光線下格外醒目。適合促銷標籤、安全標識、活動裝飾。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -6986,10 +6990,12 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     id: 'FL-005',
     sku_code: 'FL-005',
     slug: 'thick-paper-flyers',
+    optimizedAt: '2026-08-01',
+    optimizationRound: 1,
     category: 'flyers',
     category_slug: 'flyers',
     name: '厚紙宣傳單張 | 宣傳單張 / 折頁 / A4/A5', nameEn: 'Thick Paper Flyers | A4/A5 Flyers & Leaflets', nameJa: '厚紙チラシ | A4/A5 チラシ・フライヤー', title_zh: '厚紙宣傳單張',
-    description: '200g以上厚紙，質感更佳，不易折損。適合高端產品宣傳。', descriptionEn: '200g+ thick paper, better texture, not easily damaged. From 25 pieces · Free shipping over $99 USA · 24h rush available. Ideal for restaurant opening, retail promo, event marketing.', descriptionJa: '200g以上の厚紙、質感が良く折れにくい。。25枚から対応・全国送料込み・翌日特急対応。飲食店開業・小売プロモーション・イベント营销に最適。', description_zh: '200g以上厚紙，質感更佳，不易折損。適合高端產品宣傳。',
+    description: '200g以上厚紙，質感更佳，不易折損。適合高端產品宣傳。 **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: '200g+ thick paper, better texture, not easily damaged. From 25 pieces · Free shipping over $99 USA · 24h rush available. Ideal for restaurant opening, retail promo, event marketing. **Best for**: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: '200g以上の厚紙、質感が良く折れにくい。。25枚から対応・全国送料込み・翌日特急対応。飲食店開業・小売プロモーション・イベント营销に最適。 **適合業種**: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: '200g以上厚紙，質感更佳，不易折損。適合高端產品宣傳。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -17995,10 +18001,12 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     id: 'PKG-016',
     sku_code: 'PKG-016',
     slug: 'gang-run-card-boxes',
+    optimizedAt: '2026-08-01',
+    optimizationRound: 1,
     category: 'packaging',
     category_slug: 'packaging',
     name: '拼版白卡彩盒(免刀模費) | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Gang-Run White Card Boxes (No Die-Cut Fee) | Gift Boxes & Custom Packaging', nameJa: '合版ホワイトカードボックス(型代不要) | パッケージボックス・化粧箱', title_zh: '拼版白卡彩盒(免刀模費) 500個起印 · 8-15天交期 · 香港無對手價',
-    description: '拼版白卡彩盒, 固定刀模共用, 免刀模費 + 免排版費, 成本直降 40-60%。4 種紙材(350g/400g 單粉卡、375g 銀卡、375g 鐳射銀卡), 3 種盒型(飛機盒/扣底盒/雙插盒), 8 檔標準尺寸。500-10,000 枚, 8-15 天交期。', descriptionEn: 'Gang-run white card boxes from HK$0.03/pc, shared die-cut mold, no die-cut fee, 40-60% lower cost, 500pc MOQ, 8-12 day lead time, free shipping over $500. 4 paper stocks, 3 box styles, 8 standard sizes. ZprintPro Hong Kong.', descriptionJa: '合版ホワイトカードボックス 1個 ¥4.4 から、固定型代不要、40-60% コスト削減、500個最低ロット、8-12 日納期、$500相当以上送料無料。4 種素材 3 種箱型 8 標準サイズ。ZprintPro。', description_zh: '拼版白卡彩盒, 固定刀模共用, 免刀模費 + 免排版費, 成本直降 40-60%。4 種紙材, 3 種盒型, 8 檔標準尺寸。',
+    description: '拼版白卡彩盒, 固定刀模共用, 免刀模費 + 免排版費, 成本直降 40-60%。4 種紙材(350g/400g 單粉卡、375g 銀卡、375g 鐳射銀卡), 3 種盒型(飛機盒/扣底盒/雙插盒), 8 檔標準尺寸。500-10,000 枚, 8-15 天交期。 **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'Gang-run white card boxes from HK$0.03/pc, shared die-cut mold, no die-cut fee, 40-60% lower cost, 500pc MOQ, 8-12 day lead time, free shipping over $500. 4 paper stocks, 3 box styles, 8 standard sizes. ZprintPro Hong Kong. **Best for**: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: '合版ホワイトカードボックス 1個 ¥4.4 から、固定型代不要、40-60% コスト削減、500個最低ロット、8-12 日納期、$500相当以上送料無料。4 種素材 3 種箱型 8 標準サイズ。ZprintPro。 **適合業種**: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: '拼版白卡彩盒, 固定刀模共用, 免刀模費 + 免排版費, 成本直降 40-60%。4 種紙材, 3 種盒型, 8 檔標準尺寸。',
     features: [
       '【免刀模費】固定刀模共用, 拼版生產成本直降 40-60%',
       '【4 種紙材】350g 單粉卡(超高松) / 400g 單粉卡 / 375g 銀卡紙 / 375g 鐳射銀卡',
@@ -18287,11 +18295,11 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     sku_code: 'PKG-015',
     slug: 'tuck-end-boxes',
     optimizedAt: '2026-07-21',
-    optimizationRound: 1,
+    optimizationRound: 2,
     category: 'packaging',
     category_slug: 'packaging',
     name: '插口盒印刷定製 (直插/飛機插) | 包裝盒 / 輕量彩盒', nameEn: 'Tuck End Boxes (Straight/Airplane) | Custom Packaging & Lightweight', nameJa: '差し込み式ボックス (直挿/飛行機挿) | パッケージ・軽量', title_zh: '插口盒印刷定製 · 餐飲外賣零售快消化妝品首選',
-    description: '直插 / 反插 / 飛機插 3 大結構可選，250-350g 粉咭 / 白卡，平面運輸節省 70% 倉儲，組裝 5 秒無需膠水。適配行業: 餐飲外賣、零售精品、跨境電商、化妝品小樣、訂閱盒、烘焙連鎖、文創周邊。', descriptionEn: 'Straight tuck / reverse tuck / auto-bottom (airplane) 3 structure options, 250-350g coated paper / white card, flat shipping saves 70% storage, 5-second assembly no glue required. Best for: F&B takeaway, retail boutique, cross-border e-commerce, beauty samples, subscription boxes, bakery chains, IP merchandise.', descriptionJa: '直挿 / 反挿 / 飛行機挿 3 大構造オプション、250-350g コート紙 / 白カード、平面輸送で 70% ストレージ節約、5 秒組み立て接着剤不要。 適用業界: F&B テイクアウト、小売ブティック、越境EC、化粧品サンプル、サブスクリプションボックス、ベーカリーチェーン、IP 周辺。', description_zh: '直插 / 反插 / 飛機插 3 大結構可選，250-350g 粉咭 / 白卡，平面運輸節省 70% 倉儲。',
+    description: '直插 / 反插 / 飛機插 3 大結構可選，250-350g 粉咭 / 白卡，平面運輸節省 70% 倉儲，組裝 5 秒無需膠水。適配行業: 餐飲外賣、零售精品、跨境電商、化妝品小樣、訂閱盒、烘焙連鎖、文創周邊。 **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'Straight tuck / reverse tuck / auto-bottom (airplane) 3 structure options, 250-350g coated paper / white card, flat shipping saves 70% storage, 5-second assembly no glue required. Best for: F&B takeaway, retail boutique, cross-border e-commerce, beauty samples, subscription boxes, bakery chains, IP merchandise. **Best for**: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: '直挿 / 反挿 / 飛行機挿 3 大構造オプション、250-350g コート紙 / 白カード、平面輸送で 70% ストレージ節約、5 秒組み立て接着剤不要。 適用業界: F&B テイクアウト、小売ブティック、越境EC、化粧品サンプル、サブスクリプションボックス、ベーカリーチェーン、IP 周辺。 **適合業種**: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: '直插 / 反插 / 飛機插 3 大結構可選，250-350g 粉咭 / 白卡，平面運輸節省 70% 倉儲。',
     longDescription: `<h3>3 大插口結構對比</h3>
 <table>
   <thead><tr><th>結構</th><th>特點</th><th>適用場景</th></tr></thead>
