@@ -1,9 +1,208 @@
 {
   "category": "stickers",
-  "size": "default",
   "currency": "USD",
   "label": "Stickers",
   "name": "Custom Sticker Printing",
-  "description": "Custom stickers with multiple sizes, shapes, materials, and quantities. Free design mockup.",
-  "tiers": []
+  "description": "Transparent, waterproof, matte, glossy, foil-kiss-cut stickers. 50 MOQ, 3-5 day turnaround.",
+  "tiers": [
+    {
+      "size": "small",
+      "size_label": "Small (round 50mm / square 50×50 mm)",
+      "qty": 50,
+      "unit_price": 0.192,
+      "currency": "USD",
+      "lead_time": "3-5 business days"
+    },
+    {
+      "size": "small",
+      "size_label": "Small (round 50mm / square 50×50 mm)",
+      "qty": 100,
+      "unit_price": 0.128,
+      "currency": "USD",
+      "lead_time": "3-5 business days"
+    },
+    {
+      "size": "small",
+      "size_label": "Small (round 50mm / square 50×50 mm)",
+      "qty": 250,
+      "unit_price": 0.0832,
+      "currency": "USD",
+      "lead_time": "3-5 business days"
+    },
+    {
+      "size": "small",
+      "size_label": "Small (round 50mm / square 50×50 mm)",
+      "qty": 500,
+      "unit_price": 0.0576,
+      "currency": "USD",
+      "lead_time": "3-5 business days"
+    },
+    {
+      "size": "small",
+      "size_label": "Small (round 50mm / square 50×50 mm)",
+      "qty": 1000,
+      "unit_price": 0.0384,
+      "currency": "USD",
+      "lead_time": "3-5 business days"
+    },
+    {
+      "size": "small",
+      "size_label": "Small (round 50mm / square 50×50 mm)",
+      "qty": 2000,
+      "unit_price": 0.0282,
+      "currency": "USD",
+      "lead_time": "3-5 business days"
+    },
+    {
+      "size": "small",
+      "size_label": "Small (round 50mm / square 50×50 mm)",
+      "qty": 5000,
+      "unit_price": 0.0192,
+      "currency": "USD",
+      "lead_time": "3-5 business days"
+    },
+    {
+      "size": "small",
+      "size_label": "Small (round 50mm / square 50×50 mm)",
+      "qty": 10000,
+      "unit_price": 0.0128,
+      "currency": "USD",
+      "lead_time": "3-5 business days"
+    },
+    {
+      "size": "medium",
+      "size_label": "Medium (round 80mm / square 70×100 mm)",
+      "qty": 50,
+      "unit_price": 0.3072,
+      "currency": "USD",
+      "lead_time": "3-5 business days"
+    },
+    {
+      "size": "medium",
+      "size_label": "Medium (round 80mm / square 70×100 mm)",
+      "qty": 100,
+      "unit_price": 0.2048,
+      "currency": "USD",
+      "lead_time": "3-5 business days"
+    },
+    {
+      "size": "medium",
+      "size_label": "Medium (round 80mm / square 70×100 mm)",
+      "qty": 250,
+      "unit_price": 0.1344,
+      "currency": "USD",
+      "lead_time": "3-5 business days"
+    },
+    {
+      "size": "medium",
+      "size_label": "Medium (round 80mm / square 70×100 mm)",
+      "qty": 500,
+      "unit_price": 0.0922,
+      "currency": "USD",
+      "lead_time": "3-5 business days"
+    },
+    {
+      "size": "medium",
+      "size_label": "Medium (round 80mm / square 70×100 mm)",
+      "qty": 1000,
+      "unit_price": 0.0614,
+      "currency": "USD",
+      "lead_time": "3-5 business days"
+    },
+    {
+      "size": "medium",
+      "size_label": "Medium (round 80mm / square 70×100 mm)",
+      "qty": 2000,
+      "unit_price": 0.0461,
+      "currency": "USD",
+      "lead_time": "3-5 business days"
+    },
+    {
+      "size": "medium",
+      "size_label": "Medium (round 80mm / square 70×100 mm)",
+      "qty": 5000,
+      "unit_price": 0.0307,
+      "currency": "USD",
+      "lead_time": "3-5 business days"
+    },
+    {
+      "size": "medium",
+      "size_label": "Medium (round 80mm / square 70×100 mm)",
+      "qty": 10000,
+      "unit_price": 0.023,
+      "currency": "USD",
+      "lead_time": "3-5 business days"
+    },
+    {
+      "size": "large",
+      "size_label": "Large (round 100mm / square 100×150 mm)",
+      "qty": 50,
+      "unit_price": 0.448,
+      "currency": "USD",
+      "lead_time": "3-5 business days"
+    },
+    {
+      "size": "large",
+      "size_label": "Large (round 100mm / square 100×150 mm)",
+      "qty": 100,
+      "unit_price": 0.3072,
+      "currency": "USD",
+      "lead_time": "3-5 business days"
+    },
+    {
+      "size": "large",
+      "size_label": "Large (round 100mm / square 100×150 mm)",
+      "qty": 250,
+      "unit_price": 0.1984,
+      "currency": "USD",
+      "lead_time": "3-5 business days"
+    },
+    {
+      "size": "large",
+      "size_label": "Large (round 100mm / square 100×150 mm)",
+      "qty": 500,
+      "unit_price": 0.1344,
+      "currency": "USD",
+      "lead_time": "3-5 business days"
+    },
+    {
+      "size": "large",
+      "size_label": "Large (round 100mm / square 100×150 mm)",
+      "qty": 1000,
+      "unit_price": 0.0922,
+      "currency": "USD",
+      "lead_time": "3-5 business days"
+    },
+    {
+      "size": "large",
+      "size_label": "Large (round 100mm / square 100×150 mm)",
+      "qty": 2000,
+      "unit_price": 0.0666,
+      "currency": "USD",
+      "lead_time": "3-5 business days"
+    },
+    {
+      "size": "large",
+      "size_label": "Large (round 100mm / square 100×150 mm)",
+      "qty": 5000,
+      "unit_price": 0.0461,
+      "currency": "USD",
+      "lead_time": "3-5 business days"
+    },
+    {
+      "size": "large",
+      "size_label": "Large (round 100mm / square 100×150 mm)",
+      "qty": 10000,
+      "unit_price": 0.0333,
+      "currency": "USD",
+      "lead_time": "3-5 business days"
+    }
+  ],
+  "source": "M3 2026-08-03 §11 主营品類透明定價 (K3 04:29 拍板, 不依賴 eprint 實時詢價)",
+  "fx_rate": {
+    "HKD": 1.0,
+    "USD": 0.128,
+    "JPY": 19.5
+  },
+  "last_updated": "2026-08-03"
 }

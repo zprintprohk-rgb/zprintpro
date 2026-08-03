@@ -170,6 +170,32 @@ function buildGuideRedirects() {
     });
   }
 
+  // 2026-08-03 K3 10:09 拍板 8/3 PDP 404 修: 3 简化对象 (paper-bags / stickers / custom-stickers) 301 → /category/{slug}/
+  // 根因: products.ts 4 字段简化对象 (slug + name + 3 locale name + sort_order) 缺 category_slug / description / images / basePrice, build 时 generateStaticParams 不生成路径
+  // §0.6 P0 警报: paper-bags 78 matrix hits + custom-stickers 9 matrix hits 7 天 0 命中 (404)
+  // §0.7 301 接收端必须加内链分发权重, /category/paper-bags/ 已有 5+ 内链入口 (其他产品页 + 类目页)
+  const PDP_404_REDIRECTS = [
+    ['paper-bags', 'paper-bags'],        // 78 hits matrix 继承
+    ['stickers', 'stickers'],            // 1 hit matrix 保留
+    ['custom-stickers', 'stickers'],     // 9 hits matrix 合并到 stickers
+  ];
+  for (const [oldSlug, targetCategory] of PDP_404_REDIRECTS) {
+    for (const locale of LOCALES) {
+      // 不带尾斜杠版本
+      rules.push({
+        source: `/${locale}/product/${oldSlug}`,
+        destination: `/${locale}/category/${targetCategory}/`,
+        permanent: true,
+      });
+      // 带尾斜杠版本 (避免 trailingSlash 二次 308)
+      rules.push({
+        source: `/${locale}/product/${oldSlug}/`,
+        destination: `/${locale}/category/${targetCategory}/`,
+        permanent: true,
+      });
+    }
+  }
+
   return rules;
 }
 

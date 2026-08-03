@@ -1,15 +1,15 @@
 {
-  "category": "paper-bags",
+  "category": "corrugated-boxes",
   "currency": "USD",
-  "label": "Paper Bags",
-  "name": "Custom Paper Bag Printing",
-  "description": "Kraft paper bags, white card bags, coated paper bags, custom sizes. 100 MOQ, 5-7 day turnaround.",
+  "label": "Corrugated Boxes",
+  "name": "Custom Corrugated Box Printing",
+  "description": "3-ply / 5-ply corrugated boxes, ideal for e-commerce, food packaging, industrial shipping. 100 MOQ, 5-7 day turnaround.",
   "tiers": [
     {
       "size": "small",
       "size_label": "Small (A5 / 10×15×5 cm)",
       "qty": 100,
-      "unit_price": 0.614,
+      "unit_price": 0.704,
       "currency": "USD",
       "lead_time": "5-7 business days"
     },
@@ -17,7 +17,7 @@
       "size": "small",
       "size_label": "Small (A5 / 10×15×5 cm)",
       "qty": 250,
-      "unit_price": 0.448,
+      "unit_price": 0.512,
       "currency": "USD",
       "lead_time": "5-7 business days"
     },
@@ -25,7 +25,7 @@
       "size": "small",
       "size_label": "Small (A5 / 10×15×5 cm)",
       "qty": 500,
-      "unit_price": 0.333,
+      "unit_price": 0.384,
       "currency": "USD",
       "lead_time": "5-7 business days"
     },
@@ -33,7 +33,7 @@
       "size": "small",
       "size_label": "Small (A5 / 10×15×5 cm)",
       "qty": 1000,
-      "unit_price": 0.256,
+      "unit_price": 0.294,
       "currency": "USD",
       "lead_time": "5-7 business days"
     },
@@ -41,6 +41,14 @@
       "size": "small",
       "size_label": "Small (A5 / 10×15×5 cm)",
       "qty": 2000,
+      "unit_price": 0.243,
+      "currency": "USD",
+      "lead_time": "5-7 business days"
+    },
+    {
+      "size": "small",
+      "size_label": "Small (A5 / 10×15×5 cm)",
+      "qty": 3000,
       "unit_price": 0.211,
       "currency": "USD",
       "lead_time": "5-7 business days"
@@ -48,16 +56,8 @@
     {
       "size": "small",
       "size_label": "Small (A5 / 10×15×5 cm)",
-      "qty": 3000,
-      "unit_price": 0.186,
-      "currency": "USD",
-      "lead_time": "5-7 business days"
-    },
-    {
-      "size": "small",
-      "size_label": "Small (A5 / 10×15×5 cm)",
       "qty": 5000,
-      "unit_price": 0.16,
+      "unit_price": 0.179,
       "currency": "USD",
       "lead_time": "5-7 business days"
     },
@@ -65,7 +65,7 @@
       "size": "small",
       "size_label": "Small (A5 / 10×15×5 cm)",
       "qty": 10000,
-      "unit_price": 0.134,
+      "unit_price": 0.154,
       "currency": "USD",
       "lead_time": "5-7 business days"
     },
@@ -73,7 +73,7 @@
       "size": "medium",
       "size_label": "Medium (A4 / 20×15×8 cm)",
       "qty": 100,
-      "unit_price": 0.922,
+      "unit_price": 1.024,
       "currency": "USD",
       "lead_time": "5-7 business days"
     },
@@ -81,7 +81,7 @@
       "size": "medium",
       "size_label": "Medium (A4 / 20×15×8 cm)",
       "qty": 250,
-      "unit_price": 0.691,
+      "unit_price": 0.768,
       "currency": "USD",
       "lead_time": "5-7 business days"
     },
@@ -89,7 +89,7 @@
       "size": "medium",
       "size_label": "Medium (A4 / 20×15×8 cm)",
       "qty": 500,
-      "unit_price": 0.512,
+      "unit_price": 0.576,
       "currency": "USD",
       "lead_time": "5-7 business days"
     },
@@ -97,103 +97,103 @@
       "size": "medium",
       "size_label": "Medium (A4 / 20×15×8 cm)",
       "qty": 1000,
+      "unit_price": 0.435,
+      "currency": "USD",
+      "lead_time": "5-7 business days"
+    },
+    {
+      "size": "medium",
+      "size_label": "Medium (A4 / 20×15×8 cm)",
+      "qty": 2000,
+      "unit_price": 0.358,
+      "currency": "USD",
+      "lead_time": "5-7 business days"
+    },
+    {
+      "size": "medium",
+      "size_label": "Medium (A4 / 20×15×8 cm)",
+      "qty": 3000,
+      "unit_price": 0.307,
+      "currency": "USD",
+      "lead_time": "5-7 business days"
+    },
+    {
+      "size": "medium",
+      "size_label": "Medium (A4 / 20×15×8 cm)",
+      "qty": 5000,
+      "unit_price": 0.269,
+      "currency": "USD",
+      "lead_time": "5-7 business days"
+    },
+    {
+      "size": "medium",
+      "size_label": "Medium (A4 / 20×15×8 cm)",
+      "qty": 10000,
+      "unit_price": 0.224,
+      "currency": "USD",
+      "lead_time": "5-7 business days"
+    },
+    {
+      "size": "large",
+      "size_label": "Large (A3 / 30×20×10 cm)",
+      "qty": 100,
+      "unit_price": 1.536,
+      "currency": "USD",
+      "lead_time": "5-7 business days"
+    },
+    {
+      "size": "large",
+      "size_label": "Large (A3 / 30×20×10 cm)",
+      "qty": 250,
+      "unit_price": 1.152,
+      "currency": "USD",
+      "lead_time": "5-7 business days"
+    },
+    {
+      "size": "large",
+      "size_label": "Large (A3 / 30×20×10 cm)",
+      "qty": 500,
+      "unit_price": 0.87,
+      "currency": "USD",
+      "lead_time": "5-7 business days"
+    },
+    {
+      "size": "large",
+      "size_label": "Large (A3 / 30×20×10 cm)",
+      "qty": 1000,
+      "unit_price": 0.64,
+      "currency": "USD",
+      "lead_time": "5-7 business days"
+    },
+    {
+      "size": "large",
+      "size_label": "Large (A3 / 30×20×10 cm)",
+      "qty": 2000,
+      "unit_price": 0.525,
+      "currency": "USD",
+      "lead_time": "5-7 business days"
+    },
+    {
+      "size": "large",
+      "size_label": "Large (A3 / 30×20×10 cm)",
+      "qty": 3000,
+      "unit_price": 0.448,
+      "currency": "USD",
+      "lead_time": "5-7 business days"
+    },
+    {
+      "size": "large",
+      "size_label": "Large (A3 / 30×20×10 cm)",
+      "qty": 5000,
       "unit_price": 0.384,
       "currency": "USD",
       "lead_time": "5-7 business days"
     },
     {
-      "size": "medium",
-      "size_label": "Medium (A4 / 20×15×8 cm)",
-      "qty": 2000,
+      "size": "large",
+      "size_label": "Large (A3 / 30×20×10 cm)",
+      "qty": 10000,
       "unit_price": 0.32,
-      "currency": "USD",
-      "lead_time": "5-7 business days"
-    },
-    {
-      "size": "medium",
-      "size_label": "Medium (A4 / 20×15×8 cm)",
-      "qty": 3000,
-      "unit_price": 0.282,
-      "currency": "USD",
-      "lead_time": "5-7 business days"
-    },
-    {
-      "size": "medium",
-      "size_label": "Medium (A4 / 20×15×8 cm)",
-      "qty": 5000,
-      "unit_price": 0.243,
-      "currency": "USD",
-      "lead_time": "5-7 business days"
-    },
-    {
-      "size": "medium",
-      "size_label": "Medium (A4 / 20×15×8 cm)",
-      "qty": 10000,
-      "unit_price": 0.205,
-      "currency": "USD",
-      "lead_time": "5-7 business days"
-    },
-    {
-      "size": "large",
-      "size_label": "Large (A3 / 30×20×10 cm)",
-      "qty": 100,
-      "unit_price": 1.344,
-      "currency": "USD",
-      "lead_time": "5-7 business days"
-    },
-    {
-      "size": "large",
-      "size_label": "Large (A3 / 30×20×10 cm)",
-      "qty": 250,
-      "unit_price": 0.998,
-      "currency": "USD",
-      "lead_time": "5-7 business days"
-    },
-    {
-      "size": "large",
-      "size_label": "Large (A3 / 30×20×10 cm)",
-      "qty": 500,
-      "unit_price": 0.742,
-      "currency": "USD",
-      "lead_time": "5-7 business days"
-    },
-    {
-      "size": "large",
-      "size_label": "Large (A3 / 30×20×10 cm)",
-      "qty": 1000,
-      "unit_price": 0.563,
-      "currency": "USD",
-      "lead_time": "5-7 business days"
-    },
-    {
-      "size": "large",
-      "size_label": "Large (A3 / 30×20×10 cm)",
-      "qty": 2000,
-      "unit_price": 0.461,
-      "currency": "USD",
-      "lead_time": "5-7 business days"
-    },
-    {
-      "size": "large",
-      "size_label": "Large (A3 / 30×20×10 cm)",
-      "qty": 3000,
-      "unit_price": 0.41,
-      "currency": "USD",
-      "lead_time": "5-7 business days"
-    },
-    {
-      "size": "large",
-      "size_label": "Large (A3 / 30×20×10 cm)",
-      "qty": 5000,
-      "unit_price": 0.346,
-      "currency": "USD",
-      "lead_time": "5-7 business days"
-    },
-    {
-      "size": "large",
-      "size_label": "Large (A3 / 30×20×10 cm)",
-      "qty": 10000,
-      "unit_price": 0.294,
       "currency": "USD",
       "lead_time": "5-7 business days"
     }

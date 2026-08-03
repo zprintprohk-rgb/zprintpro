@@ -1,9 +1,208 @@
 {
   "category": "stickers",
-  "size": "default",
   "currency": "JPY",
   "label": "ステッカー",
   "name": "オリジナルステッカー印刷",
-  "description": "オリジナルステッカーを様々なサイズ、形、素材、枚数で印刷。デザイン無料対応。",
-  "tiers": []
+  "description": "透明、防水、マット、グロス、ホイルキスカットステッカーなど多種類。50枚から、3-5営業日で出荷。",
+  "tiers": [
+    {
+      "size": "small",
+      "size_label": "小 (円形 50mm / 角形 50×50 mm)",
+      "qty": 50,
+      "unit_price": 29,
+      "currency": "JPY",
+      "lead_time": "3-5 営業日"
+    },
+    {
+      "size": "small",
+      "size_label": "小 (円形 50mm / 角形 50×50 mm)",
+      "qty": 100,
+      "unit_price": 20,
+      "currency": "JPY",
+      "lead_time": "3-5 営業日"
+    },
+    {
+      "size": "small",
+      "size_label": "小 (円形 50mm / 角形 50×50 mm)",
+      "qty": 250,
+      "unit_price": 13,
+      "currency": "JPY",
+      "lead_time": "3-5 営業日"
+    },
+    {
+      "size": "small",
+      "size_label": "小 (円形 50mm / 角形 50×50 mm)",
+      "qty": 500,
+      "unit_price": 9,
+      "currency": "JPY",
+      "lead_time": "3-5 営業日"
+    },
+    {
+      "size": "small",
+      "size_label": "小 (円形 50mm / 角形 50×50 mm)",
+      "qty": 1000,
+      "unit_price": 6,
+      "currency": "JPY",
+      "lead_time": "3-5 営業日"
+    },
+    {
+      "size": "small",
+      "size_label": "小 (円形 50mm / 角形 50×50 mm)",
+      "qty": 2000,
+      "unit_price": 4,
+      "currency": "JPY",
+      "lead_time": "3-5 営業日"
+    },
+    {
+      "size": "small",
+      "size_label": "小 (円形 50mm / 角形 50×50 mm)",
+      "qty": 5000,
+      "unit_price": 3,
+      "currency": "JPY",
+      "lead_time": "3-5 営業日"
+    },
+    {
+      "size": "small",
+      "size_label": "小 (円形 50mm / 角形 50×50 mm)",
+      "qty": 10000,
+      "unit_price": 2,
+      "currency": "JPY",
+      "lead_time": "3-5 営業日"
+    },
+    {
+      "size": "medium",
+      "size_label": "中 (円形 80mm / 角形 70×100 mm)",
+      "qty": 50,
+      "unit_price": 47,
+      "currency": "JPY",
+      "lead_time": "3-5 営業日"
+    },
+    {
+      "size": "medium",
+      "size_label": "中 (円形 80mm / 角形 70×100 mm)",
+      "qty": 100,
+      "unit_price": 31,
+      "currency": "JPY",
+      "lead_time": "3-5 営業日"
+    },
+    {
+      "size": "medium",
+      "size_label": "中 (円形 80mm / 角形 70×100 mm)",
+      "qty": 250,
+      "unit_price": 20,
+      "currency": "JPY",
+      "lead_time": "3-5 営業日"
+    },
+    {
+      "size": "medium",
+      "size_label": "中 (円形 80mm / 角形 70×100 mm)",
+      "qty": 500,
+      "unit_price": 14,
+      "currency": "JPY",
+      "lead_time": "3-5 営業日"
+    },
+    {
+      "size": "medium",
+      "size_label": "中 (円形 80mm / 角形 70×100 mm)",
+      "qty": 1000,
+      "unit_price": 9,
+      "currency": "JPY",
+      "lead_time": "3-5 営業日"
+    },
+    {
+      "size": "medium",
+      "size_label": "中 (円形 80mm / 角形 70×100 mm)",
+      "qty": 2000,
+      "unit_price": 7,
+      "currency": "JPY",
+      "lead_time": "3-5 営業日"
+    },
+    {
+      "size": "medium",
+      "size_label": "中 (円形 80mm / 角形 70×100 mm)",
+      "qty": 5000,
+      "unit_price": 5,
+      "currency": "JPY",
+      "lead_time": "3-5 営業日"
+    },
+    {
+      "size": "medium",
+      "size_label": "中 (円形 80mm / 角形 70×100 mm)",
+      "qty": 10000,
+      "unit_price": 4,
+      "currency": "JPY",
+      "lead_time": "3-5 営業日"
+    },
+    {
+      "size": "large",
+      "size_label": "大 (円形 100mm / 角形 100×150 mm)",
+      "qty": 50,
+      "unit_price": 68,
+      "currency": "JPY",
+      "lead_time": "3-5 営業日"
+    },
+    {
+      "size": "large",
+      "size_label": "大 (円形 100mm / 角形 100×150 mm)",
+      "qty": 100,
+      "unit_price": 47,
+      "currency": "JPY",
+      "lead_time": "3-5 営業日"
+    },
+    {
+      "size": "large",
+      "size_label": "大 (円形 100mm / 角形 100×150 mm)",
+      "qty": 250,
+      "unit_price": 30,
+      "currency": "JPY",
+      "lead_time": "3-5 営業日"
+    },
+    {
+      "size": "large",
+      "size_label": "大 (円形 100mm / 角形 100×150 mm)",
+      "qty": 500,
+      "unit_price": 20,
+      "currency": "JPY",
+      "lead_time": "3-5 営業日"
+    },
+    {
+      "size": "large",
+      "size_label": "大 (円形 100mm / 角形 100×150 mm)",
+      "qty": 1000,
+      "unit_price": 14,
+      "currency": "JPY",
+      "lead_time": "3-5 営業日"
+    },
+    {
+      "size": "large",
+      "size_label": "大 (円形 100mm / 角形 100×150 mm)",
+      "qty": 2000,
+      "unit_price": 10,
+      "currency": "JPY",
+      "lead_time": "3-5 営業日"
+    },
+    {
+      "size": "large",
+      "size_label": "大 (円形 100mm / 角形 100×150 mm)",
+      "qty": 5000,
+      "unit_price": 7,
+      "currency": "JPY",
+      "lead_time": "3-5 営業日"
+    },
+    {
+      "size": "large",
+      "size_label": "大 (円形 100mm / 角形 100×150 mm)",
+      "qty": 10000,
+      "unit_price": 5,
+      "currency": "JPY",
+      "lead_time": "3-5 営業日"
+    }
+  ],
+  "source": "M3 2026-08-03 §11 主营品類透明定價 (K3 04:29 拍板, 不依賴 eprint 實時詢價)",
+  "fx_rate": {
+    "HKD": 1.0,
+    "USD": 0.128,
+    "JPY": 19.5
+  },
+  "last_updated": "2026-08-03"
 }

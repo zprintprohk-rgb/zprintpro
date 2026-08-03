@@ -1,9 +1,208 @@
 {
   "category": "flyers",
-  "size": "default",
   "currency": "USD",
   "label": "Flyers",
   "name": "Custom Flyer Printing",
-  "description": "A3/A4/A5/custom size flyer printing, same-day delivery, low-price guarantee.",
-  "tiers": []
+  "description": "A3 / A4 / A5 / custom size flyers, 105g coated / 157g matte / saddle-stitch. 100 MOQ, 1-3 day turnaround.",
+  "tiers": [
+    {
+      "size": "small",
+      "size_label": "Small (A5 148×210 mm)",
+      "qty": 100,
+      "unit_price": 0.0704,
+      "currency": "USD",
+      "lead_time": "1-3 business days"
+    },
+    {
+      "size": "small",
+      "size_label": "Small (A5 148×210 mm)",
+      "qty": 250,
+      "unit_price": 0.0512,
+      "currency": "USD",
+      "lead_time": "1-3 business days"
+    },
+    {
+      "size": "small",
+      "size_label": "Small (A5 148×210 mm)",
+      "qty": 500,
+      "unit_price": 0.0358,
+      "currency": "USD",
+      "lead_time": "1-3 business days"
+    },
+    {
+      "size": "small",
+      "size_label": "Small (A5 148×210 mm)",
+      "qty": 1000,
+      "unit_price": 0.0256,
+      "currency": "USD",
+      "lead_time": "1-3 business days"
+    },
+    {
+      "size": "small",
+      "size_label": "Small (A5 148×210 mm)",
+      "qty": 2000,
+      "unit_price": 0.0192,
+      "currency": "USD",
+      "lead_time": "1-3 business days"
+    },
+    {
+      "size": "small",
+      "size_label": "Small (A5 148×210 mm)",
+      "qty": 3000,
+      "unit_price": 0.0166,
+      "currency": "USD",
+      "lead_time": "1-3 business days"
+    },
+    {
+      "size": "small",
+      "size_label": "Small (A5 148×210 mm)",
+      "qty": 5000,
+      "unit_price": 0.0141,
+      "currency": "USD",
+      "lead_time": "1-3 business days"
+    },
+    {
+      "size": "small",
+      "size_label": "Small (A5 148×210 mm)",
+      "qty": 10000,
+      "unit_price": 0.0115,
+      "currency": "USD",
+      "lead_time": "1-3 business days"
+    },
+    {
+      "size": "medium",
+      "size_label": "Medium (A4 210×297 mm)",
+      "qty": 100,
+      "unit_price": 0.1088,
+      "currency": "USD",
+      "lead_time": "1-3 business days"
+    },
+    {
+      "size": "medium",
+      "size_label": "Medium (A4 210×297 mm)",
+      "qty": 250,
+      "unit_price": 0.0794,
+      "currency": "USD",
+      "lead_time": "1-3 business days"
+    },
+    {
+      "size": "medium",
+      "size_label": "Medium (A4 210×297 mm)",
+      "qty": 500,
+      "unit_price": 0.0576,
+      "currency": "USD",
+      "lead_time": "1-3 business days"
+    },
+    {
+      "size": "medium",
+      "size_label": "Medium (A4 210×297 mm)",
+      "qty": 1000,
+      "unit_price": 0.041,
+      "currency": "USD",
+      "lead_time": "1-3 business days"
+    },
+    {
+      "size": "medium",
+      "size_label": "Medium (A4 210×297 mm)",
+      "qty": 2000,
+      "unit_price": 0.0307,
+      "currency": "USD",
+      "lead_time": "1-3 business days"
+    },
+    {
+      "size": "medium",
+      "size_label": "Medium (A4 210×297 mm)",
+      "qty": 3000,
+      "unit_price": 0.0269,
+      "currency": "USD",
+      "lead_time": "1-3 business days"
+    },
+    {
+      "size": "medium",
+      "size_label": "Medium (A4 210×297 mm)",
+      "qty": 5000,
+      "unit_price": 0.023,
+      "currency": "USD",
+      "lead_time": "1-3 business days"
+    },
+    {
+      "size": "medium",
+      "size_label": "Medium (A4 210×297 mm)",
+      "qty": 10000,
+      "unit_price": 0.0179,
+      "currency": "USD",
+      "lead_time": "1-3 business days"
+    },
+    {
+      "size": "large",
+      "size_label": "Large (A3 297×420 mm)",
+      "qty": 100,
+      "unit_price": 0.1536,
+      "currency": "USD",
+      "lead_time": "1-3 business days"
+    },
+    {
+      "size": "large",
+      "size_label": "Large (A3 297×420 mm)",
+      "qty": 250,
+      "unit_price": 0.1126,
+      "currency": "USD",
+      "lead_time": "1-3 business days"
+    },
+    {
+      "size": "large",
+      "size_label": "Large (A3 297×420 mm)",
+      "qty": 500,
+      "unit_price": 0.0832,
+      "currency": "USD",
+      "lead_time": "1-3 business days"
+    },
+    {
+      "size": "large",
+      "size_label": "Large (A3 297×420 mm)",
+      "qty": 1000,
+      "unit_price": 0.0589,
+      "currency": "USD",
+      "lead_time": "1-3 business days"
+    },
+    {
+      "size": "large",
+      "size_label": "Large (A3 297×420 mm)",
+      "qty": 2000,
+      "unit_price": 0.0448,
+      "currency": "USD",
+      "lead_time": "1-3 business days"
+    },
+    {
+      "size": "large",
+      "size_label": "Large (A3 297×420 mm)",
+      "qty": 3000,
+      "unit_price": 0.0384,
+      "currency": "USD",
+      "lead_time": "1-3 business days"
+    },
+    {
+      "size": "large",
+      "size_label": "Large (A3 297×420 mm)",
+      "qty": 5000,
+      "unit_price": 0.032,
+      "currency": "USD",
+      "lead_time": "1-3 business days"
+    },
+    {
+      "size": "large",
+      "size_label": "Large (A3 297×420 mm)",
+      "qty": 10000,
+      "unit_price": 0.0256,
+      "currency": "USD",
+      "lead_time": "1-3 business days"
+    }
+  ],
+  "source": "M3 2026-08-03 §11 主营品類透明定價 (K3 04:29 拍板, 不依賴 eprint 實時詢價)",
+  "fx_rate": {
+    "HKD": 1.0,
+    "USD": 0.128,
+    "JPY": 19.5
+  },
+  "last_updated": "2026-08-03"
 }

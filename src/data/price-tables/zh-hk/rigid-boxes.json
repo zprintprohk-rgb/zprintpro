@@ -1,201 +1,201 @@
 {
-  "category": "paper-bags",
+  "category": "rigid-boxes",
   "currency": "HKD",
-  "label": "紙袋",
-  "name": "紙袋印刷訂製",
-  "description": "牛皮紙袋、白卡紙袋、銅版紙袋等多款紙袋訂製, 100 個起印, 5-7 個工作天交付",
+  "label": "硬盒",
+  "name": "硬紙盒印刷訂製",
+  "description": "天地盒、書型盒、磁吸盒、抽屜盒等高檔硬紙盒, 適合禮品/化妝品/電子產品, 50 個起印, 7-10 個工作天",
   "tiers": [
     {
       "size": "small",
       "size_label": "小 (A5 / 10×15×5 cm)",
+      "qty": 50,
+      "unit_price": 22.0,
+      "currency": "HKD",
+      "lead_time": "7-10 個工作天"
+    },
+    {
+      "size": "small",
+      "size_label": "小 (A5 / 10×15×5 cm)",
       "qty": 100,
+      "unit_price": 16.5,
+      "currency": "HKD",
+      "lead_time": "7-10 個工作天"
+    },
+    {
+      "size": "small",
+      "size_label": "小 (A5 / 10×15×5 cm)",
+      "qty": 250,
+      "unit_price": 12.5,
+      "currency": "HKD",
+      "lead_time": "7-10 個工作天"
+    },
+    {
+      "size": "small",
+      "size_label": "小 (A5 / 10×15×5 cm)",
+      "qty": 500,
+      "unit_price": 9.5,
+      "currency": "HKD",
+      "lead_time": "7-10 個工作天"
+    },
+    {
+      "size": "small",
+      "size_label": "小 (A5 / 10×15×5 cm)",
+      "qty": 1000,
+      "unit_price": 7.5,
+      "currency": "HKD",
+      "lead_time": "7-10 個工作天"
+    },
+    {
+      "size": "small",
+      "size_label": "小 (A5 / 10×15×5 cm)",
+      "qty": 2000,
+      "unit_price": 6.3,
+      "currency": "HKD",
+      "lead_time": "7-10 個工作天"
+    },
+    {
+      "size": "small",
+      "size_label": "小 (A5 / 10×15×5 cm)",
+      "qty": 3000,
+      "unit_price": 5.5,
+      "currency": "HKD",
+      "lead_time": "7-10 個工作天"
+    },
+    {
+      "size": "small",
+      "size_label": "小 (A5 / 10×15×5 cm)",
+      "qty": 5000,
       "unit_price": 4.8,
       "currency": "HKD",
-      "lead_time": "5-7 個工作天"
+      "lead_time": "7-10 個工作天"
     },
     {
-      "size": "small",
-      "size_label": "小 (A5 / 10×15×5 cm)",
-      "qty": 250,
-      "unit_price": 3.5,
+      "size": "medium",
+      "size_label": "中 (A4 / 20×15×8 cm)",
+      "qty": 50,
+      "unit_price": 32.0,
       "currency": "HKD",
-      "lead_time": "5-7 個工作天"
-    },
-    {
-      "size": "small",
-      "size_label": "小 (A5 / 10×15×5 cm)",
-      "qty": 500,
-      "unit_price": 2.6,
-      "currency": "HKD",
-      "lead_time": "5-7 個工作天"
-    },
-    {
-      "size": "small",
-      "size_label": "小 (A5 / 10×15×5 cm)",
-      "qty": 1000,
-      "unit_price": 2.0,
-      "currency": "HKD",
-      "lead_time": "5-7 個工作天"
-    },
-    {
-      "size": "small",
-      "size_label": "小 (A5 / 10×15×5 cm)",
-      "qty": 2000,
-      "unit_price": 1.65,
-      "currency": "HKD",
-      "lead_time": "5-7 個工作天"
-    },
-    {
-      "size": "small",
-      "size_label": "小 (A5 / 10×15×5 cm)",
-      "qty": 3000,
-      "unit_price": 1.45,
-      "currency": "HKD",
-      "lead_time": "5-7 個工作天"
-    },
-    {
-      "size": "small",
-      "size_label": "小 (A5 / 10×15×5 cm)",
-      "qty": 5000,
-      "unit_price": 1.25,
-      "currency": "HKD",
-      "lead_time": "5-7 個工作天"
-    },
-    {
-      "size": "small",
-      "size_label": "小 (A5 / 10×15×5 cm)",
-      "qty": 10000,
-      "unit_price": 1.05,
-      "currency": "HKD",
-      "lead_time": "5-7 個工作天"
+      "lead_time": "7-10 個工作天"
     },
     {
       "size": "medium",
       "size_label": "中 (A4 / 20×15×8 cm)",
       "qty": 100,
-      "unit_price": 7.2,
+      "unit_price": 24.0,
       "currency": "HKD",
-      "lead_time": "5-7 個工作天"
+      "lead_time": "7-10 個工作天"
     },
     {
       "size": "medium",
       "size_label": "中 (A4 / 20×15×8 cm)",
       "qty": 250,
-      "unit_price": 5.4,
+      "unit_price": 18.0,
       "currency": "HKD",
-      "lead_time": "5-7 個工作天"
+      "lead_time": "7-10 個工作天"
     },
     {
       "size": "medium",
       "size_label": "中 (A4 / 20×15×8 cm)",
       "qty": 500,
-      "unit_price": 4.0,
+      "unit_price": 13.5,
       "currency": "HKD",
-      "lead_time": "5-7 個工作天"
+      "lead_time": "7-10 個工作天"
     },
     {
       "size": "medium",
       "size_label": "中 (A4 / 20×15×8 cm)",
       "qty": 1000,
-      "unit_price": 3.0,
-      "currency": "HKD",
-      "lead_time": "5-7 個工作天"
-    },
-    {
-      "size": "medium",
-      "size_label": "中 (A4 / 20×15×8 cm)",
-      "qty": 2000,
-      "unit_price": 2.5,
-      "currency": "HKD",
-      "lead_time": "5-7 個工作天"
-    },
-    {
-      "size": "medium",
-      "size_label": "中 (A4 / 20×15×8 cm)",
-      "qty": 3000,
-      "unit_price": 2.2,
-      "currency": "HKD",
-      "lead_time": "5-7 個工作天"
-    },
-    {
-      "size": "medium",
-      "size_label": "中 (A4 / 20×15×8 cm)",
-      "qty": 5000,
-      "unit_price": 1.9,
-      "currency": "HKD",
-      "lead_time": "5-7 個工作天"
-    },
-    {
-      "size": "medium",
-      "size_label": "中 (A4 / 20×15×8 cm)",
-      "qty": 10000,
-      "unit_price": 1.6,
-      "currency": "HKD",
-      "lead_time": "5-7 個工作天"
-    },
-    {
-      "size": "large",
-      "size_label": "大 (A3 / 30×20×10 cm)",
-      "qty": 100,
       "unit_price": 10.5,
       "currency": "HKD",
-      "lead_time": "5-7 個工作天"
+      "lead_time": "7-10 個工作天"
+    },
+    {
+      "size": "medium",
+      "size_label": "中 (A4 / 20×15×8 cm)",
+      "qty": 2000,
+      "unit_price": 8.8,
+      "currency": "HKD",
+      "lead_time": "7-10 個工作天"
+    },
+    {
+      "size": "medium",
+      "size_label": "中 (A4 / 20×15×8 cm)",
+      "qty": 3000,
+      "unit_price": 7.7,
+      "currency": "HKD",
+      "lead_time": "7-10 個工作天"
+    },
+    {
+      "size": "medium",
+      "size_label": "中 (A4 / 20×15×8 cm)",
+      "qty": 5000,
+      "unit_price": 6.7,
+      "currency": "HKD",
+      "lead_time": "7-10 個工作天"
+    },
+    {
+      "size": "large",
+      "size_label": "大 (A3 / 30×20×10 cm)",
+      "qty": 50,
+      "unit_price": 45.0,
+      "currency": "HKD",
+      "lead_time": "7-10 個工作天"
+    },
+    {
+      "size": "large",
+      "size_label": "大 (A3 / 30×20×10 cm)",
+      "qty": 100,
+      "unit_price": 33.5,
+      "currency": "HKD",
+      "lead_time": "7-10 個工作天"
     },
     {
       "size": "large",
       "size_label": "大 (A3 / 30×20×10 cm)",
       "qty": 250,
-      "unit_price": 7.8,
+      "unit_price": 25.0,
       "currency": "HKD",
-      "lead_time": "5-7 個工作天"
+      "lead_time": "7-10 個工作天"
     },
     {
       "size": "large",
       "size_label": "大 (A3 / 30×20×10 cm)",
       "qty": 500,
-      "unit_price": 5.8,
+      "unit_price": 18.5,
       "currency": "HKD",
-      "lead_time": "5-7 個工作天"
+      "lead_time": "7-10 個工作天"
     },
     {
       "size": "large",
       "size_label": "大 (A3 / 30×20×10 cm)",
       "qty": 1000,
-      "unit_price": 4.4,
+      "unit_price": 14.5,
       "currency": "HKD",
-      "lead_time": "5-7 個工作天"
+      "lead_time": "7-10 個工作天"
     },
     {
       "size": "large",
       "size_label": "大 (A3 / 30×20×10 cm)",
       "qty": 2000,
-      "unit_price": 3.6,
+      "unit_price": 12.0,
       "currency": "HKD",
-      "lead_time": "5-7 個工作天"
+      "lead_time": "7-10 個工作天"
     },
     {
       "size": "large",
       "size_label": "大 (A3 / 30×20×10 cm)",
       "qty": 3000,
-      "unit_price": 3.2,
+      "unit_price": 10.5,
       "currency": "HKD",
-      "lead_time": "5-7 個工作天"
+      "lead_time": "7-10 個工作天"
     },
     {
       "size": "large",
       "size_label": "大 (A3 / 30×20×10 cm)",
       "qty": 5000,
-      "unit_price": 2.7,
+      "unit_price": 9.0,
       "currency": "HKD",
-      "lead_time": "5-7 個工作天"
-    },
-    {
-      "size": "large",
-      "size_label": "大 (A3 / 30×20×10 cm)",
-      "qty": 10000,
-      "unit_price": 2.3,
-      "currency": "HKD",
-      "lead_time": "5-7 個工作天"
+      "lead_time": "7-10 個工作天"
     }
   ],
   "source": "M3 2026-08-03 §11 主营品類透明定價 (K3 04:29 拍板, 不依賴 eprint 實時詢價)",

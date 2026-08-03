@@ -1,201 +1,201 @@
 {
-  "category": "paper-bags",
+  "category": "rigid-boxes",
   "currency": "JPY",
-  "label": "紙袋",
-  "name": "オリジナル紙袋印刷",
-  "description": "クラフト紙袋、ホワイトカード紙袋、コート紙袋など多種類の紙袋を特注対応。100個から、5-7営業日で出荷。",
+  "label": "堅牢箱",
+  "name": "オリジナル堅牢紙箱印刷",
+  "description": "フタ箱、ブック型箱、マグネット式箱、引き出し箱など高級紙箱、ギフト/化粧品/電子製品向け。50個から、7-10営業日で出荷。",
   "tiers": [
     {
       "size": "small",
       "size_label": "小 (A5 / 10×15×5 cm)",
+      "qty": 50,
+      "unit_price": 429,
+      "currency": "JPY",
+      "lead_time": "7-10 営業日"
+    },
+    {
+      "size": "small",
+      "size_label": "小 (A5 / 10×15×5 cm)",
       "qty": 100,
+      "unit_price": 322,
+      "currency": "JPY",
+      "lead_time": "7-10 営業日"
+    },
+    {
+      "size": "small",
+      "size_label": "小 (A5 / 10×15×5 cm)",
+      "qty": 250,
+      "unit_price": 244,
+      "currency": "JPY",
+      "lead_time": "7-10 営業日"
+    },
+    {
+      "size": "small",
+      "size_label": "小 (A5 / 10×15×5 cm)",
+      "qty": 500,
+      "unit_price": 185,
+      "currency": "JPY",
+      "lead_time": "7-10 営業日"
+    },
+    {
+      "size": "small",
+      "size_label": "小 (A5 / 10×15×5 cm)",
+      "qty": 1000,
+      "unit_price": 146,
+      "currency": "JPY",
+      "lead_time": "7-10 営業日"
+    },
+    {
+      "size": "small",
+      "size_label": "小 (A5 / 10×15×5 cm)",
+      "qty": 2000,
+      "unit_price": 123,
+      "currency": "JPY",
+      "lead_time": "7-10 営業日"
+    },
+    {
+      "size": "small",
+      "size_label": "小 (A5 / 10×15×5 cm)",
+      "qty": 3000,
+      "unit_price": 107,
+      "currency": "JPY",
+      "lead_time": "7-10 営業日"
+    },
+    {
+      "size": "small",
+      "size_label": "小 (A5 / 10×15×5 cm)",
+      "qty": 5000,
       "unit_price": 94,
       "currency": "JPY",
-      "lead_time": "5-7 営業日"
+      "lead_time": "7-10 営業日"
     },
     {
-      "size": "small",
-      "size_label": "小 (A5 / 10×15×5 cm)",
-      "qty": 250,
-      "unit_price": 68,
+      "size": "medium",
+      "size_label": "中 (A4 / 20×15×8 cm)",
+      "qty": 50,
+      "unit_price": 624,
       "currency": "JPY",
-      "lead_time": "5-7 営業日"
-    },
-    {
-      "size": "small",
-      "size_label": "小 (A5 / 10×15×5 cm)",
-      "qty": 500,
-      "unit_price": 51,
-      "currency": "JPY",
-      "lead_time": "5-7 営業日"
-    },
-    {
-      "size": "small",
-      "size_label": "小 (A5 / 10×15×5 cm)",
-      "qty": 1000,
-      "unit_price": 39,
-      "currency": "JPY",
-      "lead_time": "5-7 営業日"
-    },
-    {
-      "size": "small",
-      "size_label": "小 (A5 / 10×15×5 cm)",
-      "qty": 2000,
-      "unit_price": 32,
-      "currency": "JPY",
-      "lead_time": "5-7 営業日"
-    },
-    {
-      "size": "small",
-      "size_label": "小 (A5 / 10×15×5 cm)",
-      "qty": 3000,
-      "unit_price": 28,
-      "currency": "JPY",
-      "lead_time": "5-7 営業日"
-    },
-    {
-      "size": "small",
-      "size_label": "小 (A5 / 10×15×5 cm)",
-      "qty": 5000,
-      "unit_price": 24,
-      "currency": "JPY",
-      "lead_time": "5-7 営業日"
-    },
-    {
-      "size": "small",
-      "size_label": "小 (A5 / 10×15×5 cm)",
-      "qty": 10000,
-      "unit_price": 20,
-      "currency": "JPY",
-      "lead_time": "5-7 営業日"
+      "lead_time": "7-10 営業日"
     },
     {
       "size": "medium",
       "size_label": "中 (A4 / 20×15×8 cm)",
       "qty": 100,
-      "unit_price": 140,
+      "unit_price": 468,
       "currency": "JPY",
-      "lead_time": "5-7 営業日"
+      "lead_time": "7-10 営業日"
     },
     {
       "size": "medium",
       "size_label": "中 (A4 / 20×15×8 cm)",
       "qty": 250,
-      "unit_price": 105,
+      "unit_price": 351,
       "currency": "JPY",
-      "lead_time": "5-7 営業日"
+      "lead_time": "7-10 営業日"
     },
     {
       "size": "medium",
       "size_label": "中 (A4 / 20×15×8 cm)",
       "qty": 500,
-      "unit_price": 78,
+      "unit_price": 263,
       "currency": "JPY",
-      "lead_time": "5-7 営業日"
+      "lead_time": "7-10 営業日"
     },
     {
       "size": "medium",
       "size_label": "中 (A4 / 20×15×8 cm)",
       "qty": 1000,
-      "unit_price": 58,
-      "currency": "JPY",
-      "lead_time": "5-7 営業日"
-    },
-    {
-      "size": "medium",
-      "size_label": "中 (A4 / 20×15×8 cm)",
-      "qty": 2000,
-      "unit_price": 49,
-      "currency": "JPY",
-      "lead_time": "5-7 営業日"
-    },
-    {
-      "size": "medium",
-      "size_label": "中 (A4 / 20×15×8 cm)",
-      "qty": 3000,
-      "unit_price": 43,
-      "currency": "JPY",
-      "lead_time": "5-7 営業日"
-    },
-    {
-      "size": "medium",
-      "size_label": "中 (A4 / 20×15×8 cm)",
-      "qty": 5000,
-      "unit_price": 37,
-      "currency": "JPY",
-      "lead_time": "5-7 営業日"
-    },
-    {
-      "size": "medium",
-      "size_label": "中 (A4 / 20×15×8 cm)",
-      "qty": 10000,
-      "unit_price": 31,
-      "currency": "JPY",
-      "lead_time": "5-7 営業日"
-    },
-    {
-      "size": "large",
-      "size_label": "大 (A3 / 30×20×10 cm)",
-      "qty": 100,
       "unit_price": 205,
       "currency": "JPY",
-      "lead_time": "5-7 営業日"
+      "lead_time": "7-10 営業日"
+    },
+    {
+      "size": "medium",
+      "size_label": "中 (A4 / 20×15×8 cm)",
+      "qty": 2000,
+      "unit_price": 172,
+      "currency": "JPY",
+      "lead_time": "7-10 営業日"
+    },
+    {
+      "size": "medium",
+      "size_label": "中 (A4 / 20×15×8 cm)",
+      "qty": 3000,
+      "unit_price": 150,
+      "currency": "JPY",
+      "lead_time": "7-10 営業日"
+    },
+    {
+      "size": "medium",
+      "size_label": "中 (A4 / 20×15×8 cm)",
+      "qty": 5000,
+      "unit_price": 131,
+      "currency": "JPY",
+      "lead_time": "7-10 営業日"
+    },
+    {
+      "size": "large",
+      "size_label": "大 (A3 / 30×20×10 cm)",
+      "qty": 50,
+      "unit_price": 878,
+      "currency": "JPY",
+      "lead_time": "7-10 営業日"
+    },
+    {
+      "size": "large",
+      "size_label": "大 (A3 / 30×20×10 cm)",
+      "qty": 100,
+      "unit_price": 653,
+      "currency": "JPY",
+      "lead_time": "7-10 営業日"
     },
     {
       "size": "large",
       "size_label": "大 (A3 / 30×20×10 cm)",
       "qty": 250,
-      "unit_price": 152,
+      "unit_price": 488,
       "currency": "JPY",
-      "lead_time": "5-7 営業日"
+      "lead_time": "7-10 営業日"
     },
     {
       "size": "large",
       "size_label": "大 (A3 / 30×20×10 cm)",
       "qty": 500,
-      "unit_price": 113,
+      "unit_price": 361,
       "currency": "JPY",
-      "lead_time": "5-7 営業日"
+      "lead_time": "7-10 営業日"
     },
     {
       "size": "large",
       "size_label": "大 (A3 / 30×20×10 cm)",
       "qty": 1000,
-      "unit_price": 86,
+      "unit_price": 283,
       "currency": "JPY",
-      "lead_time": "5-7 営業日"
+      "lead_time": "7-10 営業日"
     },
     {
       "size": "large",
       "size_label": "大 (A3 / 30×20×10 cm)",
       "qty": 2000,
-      "unit_price": 70,
+      "unit_price": 234,
       "currency": "JPY",
-      "lead_time": "5-7 営業日"
+      "lead_time": "7-10 営業日"
     },
     {
       "size": "large",
       "size_label": "大 (A3 / 30×20×10 cm)",
       "qty": 3000,
-      "unit_price": 62,
+      "unit_price": 205,
       "currency": "JPY",
-      "lead_time": "5-7 営業日"
+      "lead_time": "7-10 営業日"
     },
     {
       "size": "large",
       "size_label": "大 (A3 / 30×20×10 cm)",
       "qty": 5000,
-      "unit_price": 53,
+      "unit_price": 176,
       "currency": "JPY",
-      "lead_time": "5-7 営業日"
-    },
-    {
-      "size": "large",
-      "size_label": "大 (A3 / 30×20×10 cm)",
-      "qty": 10000,
-      "unit_price": 45,
-      "currency": "JPY",
-      "lead_time": "5-7 営業日"
+      "lead_time": "7-10 営業日"
     }
   ],
   "source": "M3 2026-08-03 §11 主营品類透明定價 (K3 04:29 拍板, 不依賴 eprint 實時詢價)",
