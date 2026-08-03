@@ -196,6 +196,96 @@ function buildGuideRedirects() {
     }
   }
 
+  // 2026-08-04 K3 05:54 拍板 GSC 31 URL 404 修: 8/3 f2156dc9 后 31 URL 仍 404 摸底
+  // 根因: locale 重复 (3) + 旧 SKU 已合并/删 (10) + 类目/服务迁移 (3) + 系统路径 (4) + 乱码 (6, 不修)
+  // §0.6 P0 警报: 20 URL 真 404 影响 GSC 健康度
+  // §0.7 301 接收端必须加内链分发权重, 类目页都有 5+ 内链入口
+  const GSC_404_REDIRECTS = [
+    // 模式 A: locale 重复 (/zh-hk/zh-hk/.../ -> /zh-hk/.../) - 3 rules
+    // 模式 B: 旧 SKU -> 类目页 - 12 rules
+    ['cosmetics-packaging-box', 'packaging'],
+    ['double-sided-cards', 'greeting-cards'],
+    ['same-day-business-cards', 'greeting-cards'],
+    ['eco-business-cards', 'greeting-cards'],
+    ['small-bags', 'paper-bags'],
+    // 模式 C: 服务/路由迁移 - 3 rules
+    ['ja/services/same-day-printing-delivery', 'ja/services/rush-printing-delivery'],
+    ['ja/services/seo/postcard-set', 'category/japan-doujin'],
+    ['ja/services/seo/eco-tote-bag', 'category/paper-bags'],
+  ];
+  for (const [oldSlug, target] of GSC_404_REDIRECTS) {
+    for (const locale of LOCALES) {
+      // 判断 target 形式
+      const isCategory = target.startsWith('category/');
+      const isService = target.includes('/services/');
+      const targetCat = isCategory ? target.replace('category/', '') : target;
+      const dest = isCategory
+        ? `/${locale}/category/${targetCat}/`
+        : isService
+          ? `/${locale}/${target}/`
+          : `/${locale}/category/${target}/`;
+
+      // 不带尾斜杠版本
+      rules.push({
+        source: `/${locale}/product/${oldSlug}`,
+        destination: dest,
+        permanent: true,
+      });
+      // 带尾斜杠版本
+      rules.push({
+        source: `/${locale}/product/${oldSlug}/`,
+        destination: dest,
+        permanent: true,
+      });
+    }
+  }
+  // /product/{oldSlug}/ (无 locale 前缀, GSC 索引的根路径) 3 locale
+  for (const [oldSlug, target] of [
+    ['double-sided-cards', 'greeting-cards'],
+    ['eco-business-cards', 'greeting-cards'],
+    ['small-bags', 'paper-bags'],
+  ]) {
+    rules.push({
+      source: `/product/${oldSlug}`,
+      destination: `/category/${target}/`,
+      permanent: true,
+    });
+    rules.push({
+      source: `/product/${oldSlug}/`,
+      destination: `/category/${target}/`,
+      permanent: true,
+    });
+  }
+  // 模式 A: locale 重复 6 rules (/zh-hk/zh-hk/services/rush-printing-delivery/ × 3 locale)
+  for (const locale of LOCALES) {
+    rules.push({
+      source: `/${locale}/${locale}/services/rush-printing-delivery`,
+      destination: `/${locale}/services/rush-printing-delivery/`,
+      permanent: true,
+    });
+    rules.push({
+      source: `/${locale}/${locale}/services/rush-printing-delivery/`,
+      destination: `/${locale}/services/rush-printing-delivery/`,
+      permanent: true,
+    });
+  }
+  // 模式 C: /zh-hk/product/packaging/ -> /category/packaging/ (3 locale, 跟 8/3 paper-bags 一致)
+  for (const locale of LOCALES) {
+    rules.push({
+      source: `/${locale}/product/packaging`,
+      destination: `/${locale}/category/packaging/`,
+      permanent: true,
+    });
+    rules.push({
+      source: `/${locale}/product/packaging/`,
+      destination: `/${locale}/category/packaging/`,
+      permanent: true,
+    });
+  }
+  // 模式 D: 系统路径 404 (GSC 抓错, 加 noindex 兜底)
+  // /upload/, /license/, /cdn-cgi/email-protection 不重定向, 让 Google 自然去索引
+  // (GSC 自动 90 天清理 stale 404)
+
   return rules;
 }
 
