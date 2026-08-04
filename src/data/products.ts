@@ -5813,10 +5813,12 @@ export const products: Product[] = [
     id: 'PB-007',
     sku_code: 'PB-007',
     slug: 'large-bags',
+    optimizedAt: '2026-08-03',
+    optimizationRound: 1,
     category: 'paper-bags',
     category_slug: 'paper-bags',
     name: '大號紙袋 | 紙袋 / 牛皮紙袋 / 手提袋', nameEn: 'Large Bags | Paper Bags & Kraft Bags', nameJa: '大判紙袋 | 紙袋 / クラフト紙袋 / ハンドル', title_zh: '大號紙袋',
-    description: '加大尺寸，適合服裝、鞋類等大件商品。', descriptionEn: 'Large size, perfect for clothing, shoes and other large items., ISO 9001:2015 certified quality management system', descriptionJa: '大きなサイズ、衣類、靴などの大物に最適。', description_zh: '加大尺寸，適合服裝、鞋類等大件商品。',
+    description: '加大尺寸，適合服裝、鞋類等大件商品。 **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'Large size, perfect for clothing, shoes and other large items., ISO 9001:2015 certified quality management system **Best for**: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: '大きなサイズ、衣類、靴などの大物に最適。 **適合業種**: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: '加大尺寸，適合服裝、鞋類等大件商品。 **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -6100,8 +6102,6 @@ export const products: Product[] = [
       '/images/products/seedream-webp/zprintpro-paper-bags-large-bags-ja-4.webp',
     ],
     },
-    optimizedAt: '2026-07-14',
-    optimizationRound: 1,
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-paper-bags-large-bags-zh-hk.webp', en: 'zprintpro-paper-bags-large-bags-en.webp', ja: 'zprintpro-paper-bags-large-bags-ja.webp' },
     alt: {
@@ -6449,12 +6449,12 @@ export const products: Product[] = [
     id: 'FL-002',
     sku_code: 'FL-002',
     slug: 'a5-flyers',
-    optimizedAt: '2026-07-27',
-    optimizationRound: 1,
+    optimizedAt: '2026-08-03',
+    optimizationRound: 2,
     category: 'flyers',
     category_slug: 'flyers',
     name: 'A5宣傳單張 | 宣傳單張 / 折頁 / A4/A5', nameEn: 'A5 Flyers | A4/A5 Flyers & Leaflets', nameJa: 'A5チラシ | A4/A5 チラシ・フライヤー', title_zh: 'A5傳單印刷 100張起印 雙面四色 免費設計 | 智印雲 ZprintPro',
-    description: 'A5傳單印刷訂製，100張起印，HK$0.18起/張。157g銅版紙雙面四色，免費設計排版。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心.', descriptionEn: 'A5 size, economical, perfect for mass distribution. First choice for food delivery, flash events. 适配行业: Food delivery, Real estate, Retail, Education, Events, Beauty, Community.', descriptionJa: 'A5サイズ、経済的、大量配布に最適。フードデリバリー、フラッシュイベントの第一選択。 适配行业: 飲食デリバリー、不動産、小売、教育、イベント、美容、コミュニティ.', description_zh: 'A5尺寸，經濟實惠，適合大量派發。餐飲外賣、快閃活動首選。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心.',
+    description: 'A5傳單印刷訂製，100張起印，HK$0.18起/張。157g銅版紙雙面四色，免費設計排版。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'A5 size, economical, perfect for mass distribution. First choice for food delivery, flash events. 适配行业: Food delivery, Real estate, Retail, Education, Events, Beauty, Community. **Best for**: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: 'A5サイズ、経済的、大量配布に最適。フードデリバリー、フラッシュイベントの第一選択。 适配行业: 飲食デリバリー、不動産、小売、教育、イベント、美容、コミュニティ. **適合業種**: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: 'A5尺寸，經濟實惠，適合大量派發。餐飲外賣、快閃活動首選。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動',
     longDescription: `智印雲A5宣傳單張採用128g銅版紙或100g書紙，配合四色數碼印刷，經濟實惠且色彩鮮豔。A5尺寸（148×210mm）適合大量派發，成本較A4降低約40%，是餐飲外賣、快閃活動及社區宣傳的首選。可選單面或雙面印刷，並支援二維碼與優惠券設計。我們提供免費排版與出血檢查，確保裁切精準。與分類頁內容一致，材質關鍵詞包含：A5單張、銅版紙、書紙、數碼印刷。<h3>傳單尺寸對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">尺寸</th><th class="p-2 text-center">資訊容量</th><th class="p-2 text-center">派發效率</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用場景</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">A4 (210×297mm)</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">詳細產品目錄、課程介紹</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5 (148×210mm)</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">餐飲外賣、活動宣傳</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">A6 (105×148mm)</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">街頭派發、外賣插頁</td></tr></tbody></table><h3>傳單尺寸對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">尺寸</th><th class="p-2 text-center">資訊容量</th><th class="p-2 text-center">派發效率</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用場景</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">A4 (210×297mm)</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">詳細產品目錄、課程介紹</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5 (148×210mm)</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">餐飲外賣、活動宣傳</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">A6 (105×148mm)</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">街頭派發、外賣插頁</td></tr></tbody></table>
 
 **智印雲 國際印刷**：深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。
@@ -18062,11 +18062,12 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     id: 'PKG-013',
     sku_code: 'PKG-013',
     slug: 'white-card-boxes',
-
+    optimizedAt: '2026-08-03',
+    optimizationRound: 1,
     category: 'packaging',
     category_slug: 'packaging',
     name: '白卡彩盒印刷定製 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'White Cardboard Boxes | Custom Packaging & Gift Boxes', nameJa: '白カードボックス | パッケージ・ギフトボックス', title_zh: '白卡彩盒印刷定製 · 零售精品跨境電商首選',
-    description: '高檔白卡紙盒，挺度佳、印刷精美，4C+0 標準彩印。可加燙金、UV 局部、壓凸。適配行業: 零售精品店、美妝護膚品牌、跨境電商 DTC、訂閱盒直運、輕奢飾品、有機食品品牌、煙酒禮盒、文創IP周邊。', descriptionEn: 'Premium white cardboard boxes with excellent rigidity and sharp print reproduction, standard 4C+0 process. Optional foil stamping, spot UV, and embossing available. Best for: retail boutique stores, beauty & skincare brands, cross-border e-commerce DTC, subscription box dropship, lightweight luxury jewelry, organic food brands, wine & spirits gift boxes, IP merchandise packaging.', descriptionJa: '高級白カード紙箱、剛性に優れ、印刷精美、4C+0 標準プロセス。箔押し、スポット UV、エンボス加工オプション。 適用業界: 小売ブティック、 beauty・スキンケア ブランド、越境EC DTC、サブスクリプション ボックス dropship、軽奢饰品、オーガニック食品ブランド、ワイン・スピリッツギフトボックス、IP 商品パッケージ。', description_zh: '高檔白卡紙盒，挺度佳、印刷精美，4C+0 標準彩印。 2026 升級方案: 拼版彩盒試水反應好 → 升級白卡彩盒 50-10,000 件,單件 +HK$1-2。',
+    description: '高檔白卡紙盒，挺度佳、印刷精美，4C+0 標準彩印。可加燙金、UV 局部、壓凸。適配行業: 零售精品店、美妝護膚品牌、跨境電商 DTC、訂閱盒直運、輕奢飾品、有機食品品牌、煙酒禮盒、文創IP周邊。 **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'Premium white cardboard boxes with excellent rigidity and sharp print reproduction, standard 4C+0 process. Optional foil stamping, spot UV, and embossing available. Best for: retail boutique stores, beauty & skincare brands, cross-border e-commerce DTC, subscription box dropship, lightweight luxury jewelry, organic food brands, wine & spirits gift boxes, IP merchandise packaging. **Best for**: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: '高級白カード紙箱、剛性に優れ、印刷精美、4C+0 標準プロセス。箔押し、スポット UV、エンボス加工オプション。 適用業界: 小売ブティック、 beauty・スキンケア ブランド、越境EC DTC、サブスクリプション ボックス dropship、軽奢饰品、オーガニック食品ブランド、ワイン・スピリッツギフトボックス、IP 商品パッケージ。 **適合業種**: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: '高檔白卡紙盒，挺度佳、印刷精美，4C+0 標準彩印。 2026 升級方案: 拼版彩盒試水反應好 → 升級白卡彩盒 50-10,000 件,單件 +HK$1-2。 **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 2 種紙材：</p>
 <table>
@@ -18175,12 +18176,12 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     id: 'PKG-014',
     sku_code: 'PKG-014',
     slug: 'corrugated-boxes',
-    optimizedAt: '2026-07-30',
-    optimizationRound: 1,
+    optimizedAt: '2026-08-03',
+    optimizationRound: 2,
     category: 'packaging',
     category_slug: 'packaging',
     name: '瓦楞彩盒印刷定製 (E坑/F坑) | 包裝盒 / 物流盒', nameEn: 'Corrugated Boxes (E/F Flute) | Custom Packaging & Shipping', nameJa: '段ボール箱 (E/Fフルート) | パッケージ・物流', title_zh: '瓦楞彩盒印刷定製 · 跨境電商物流快遞抗壓首選',
-    description: 'E坑/F坑 瓦楞彩印盒，3 層 / 5 層結構可選，抗壓、防震、跨境運輸。適配行業: 跨境電商 DTC、訂閱盒直運、物流快遞、3C 電子、汽配零件、寵物食品、烘焙連鎖。', descriptionEn: 'E-flute / F-flute corrugated color-printed boxes, 3-ply / 5-ply structure options, pressure-resistant, shock-absorbing, cross-border shipping. Best for: cross-border e-commerce DTC, subscription box dropship, logistics & shipping, 3C electronics, auto parts, pet food, bakery chains.', descriptionJa: 'E フルート / F フルート段ボールカラープリントボックス、3 層 / 5 層構造オプション、耐圧、衝撃吸収、越境輸送。 適用業界: 越境EC DTC、サブスクリプションボックス dropship、物流配送、3C 電子、Auto 部品、ペットフード、 bakery チェーン。', description_zh: 'E坑/F坑 瓦楞彩印盒，3 層 / 5 層結構可選，抗壓、防震、跨境運輸。',
+    description: 'E坑/F坑 瓦楞彩印盒，3 層 / 5 層結構可選，抗壓、防震、跨境運輸。適配行業: 跨境電商 DTC、訂閱盒直運、物流快遞、3C 電子、汽配零件、寵物食品、烘焙連鎖。 **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'E-flute / F-flute corrugated color-printed boxes, 3-ply / 5-ply structure options, pressure-resistant, shock-absorbing, cross-border shipping. Best for: cross-border e-commerce DTC, subscription box dropship, logistics & shipping, 3C electronics, auto parts, pet food, bakery chains. **Best for**: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: 'E フルート / F フルート段ボールカラープリントボックス、3 層 / 5 層構造オプション、耐圧、衝撃吸収、越境輸送。 適用業界: 越境EC DTC、サブスクリプションボックス dropship、物流配送、3C 電子、Auto 部品、ペットフード、 bakery チェーン。 **適合業種**: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: 'E坑/F坑 瓦楞彩印盒，3 層 / 5 層結構可選，抗壓、防震、跨境運輸。 **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動',
     longDescription: `<h3>瓦楞坑型對比</h3>
 <p>3 大主流瓦楞坑型，分別適用不同場景：</p>
 <table>
@@ -18404,10 +18405,12 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     id: 'ST-009',
     sku_code: 'ST-009',
     slug: 'fruit-food-label-stickers',
+    optimizedAt: '2026-08-03',
+    optimizationRound: 1,
     category: 'stickers',
     category_slug: 'stickers',
     name: '水果貼紙食品標籤印刷 | 防水貼紙 / 異形貼紙', nameEn: 'Fruit & Food Label Stickers | Waterproof & Die-Cut Stickers', nameJa: 'フルーツ・食品ラベルシール | 防水ステッカー / ダイカット', title_zh: '水果貼紙食品標籤印刷 · FDA 食品級跨境電商 SKU 標貼 | 智印雲 ZprintPro',
-    description: '防水防油的水果貼紙和食品標籤，適合生鮮、烘焙、飲料包裝。符合食品安全標準。**適配行業**: 跨境電商 SKU 標籤 / 生鮮水果品牌 / 烘焙食品 / 茶飲品牌 / 保健食品 / GS1 條碼貼標。', descriptionEn: 'Waterproof and oil-resistant fruit stickers and food labels for fresh produce, bakery, beverage packaging. Food-safe compliant. **Best for**: cross-border e-commerce SKU labels / fresh fruit brands / bakery / beverage / health food / GS1 barcode labels.', descriptionJa: '耐水耐油のフルーツシールと食品ラベル。生鮮食品、ベーカリー、飲料包裝に最適。食品衛生基準適合。**適用業界**: 越境EC SKU ラベル / 生鮮フルーツブランド / ベーカリー / ドリンク / 健康食品 / GS1 バーコードラベル。', description_zh: '防水防油的水果貼紙和食品標籤，適合生鮮、烘焙、飲料包裝。符合食品安全標準。**適配行業**: 跨境電商 SKU 標籤 / 生鮮水果品牌 / 烘焙食品 / 茶飲品牌 / 保健食品 / GS1 條碼貼標。',
+    description: '防水防油的水果貼紙和食品標籤，適合生鮮、烘焙、飲料包裝。符合食品安全標準。**適配行業**: 跨境電商 SKU 標籤 / 生鮮水果品牌 / 烘焙食品 / 茶飲品牌 / 保健食品 / GS1 條碼貼標。 **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'Waterproof and oil-resistant fruit stickers and food labels for fresh produce, bakery, beverage packaging. Food-safe compliant. **Best for**: cross-border e-commerce SKU labels / fresh fruit brands / bakery / beverage / health food / GS1 barcode labels. **Best for**: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: '耐水耐油のフルーツシールと食品ラベル。生鮮食品、ベーカリー、飲料包裝に最適。食品衛生基準適合。**適用業界**: 越境EC SKU ラベル / 生鮮フルーツブランド / ベーカリー / ドリンク / 健康食品 / GS1 バーコードラベル。 **適合業種**: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: '防水防油的水果貼紙和食品標籤，適合生鮮、烘焙、飲料包裝。符合食品安全標準。**適配行業**: 跨境電商 SKU 標籤 / 生鮮水果品牌 / 烘焙食品 / 茶飲品牌 / 保健食品 / GS1 條碼貼標。 **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>

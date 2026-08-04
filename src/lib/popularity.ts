@@ -9,8 +9,11 @@
  */
 
 import { products, categories, type Product } from '@/data/products';
-import fs from 'fs';
-import path from 'path';
+// 2026-08-04 18:30 P0 build 修复: fs/path 改为 dynamic import, 避免 client bundle 解析失败
+// 根因: 8/4 11:15 commit 626a22a (popularity.ts) 在 module-level import fs/path, Next.js 14 客户端 bundle
+//       找不到 Node.js 内置模块, build 失败. 后续 6 commits (8f3948d/98d1425/0992089/f726359/3bf6e1c/626a22a) 全部 build failure
+// 修法: loadPopularity() 内部 typeof window === 'undefined' 判断 (server-only), 然后 dynamic import
+//       client side 完全跳过 fs 读取, 走 weight_score fallback (8/6 GSC feedback loop 跑完后用 server-rendered 注入)
 
 interface SkuPopularity {
   slug: string;
@@ -26,21 +29,37 @@ let cachedPopularity: SkuPopularity[] | null = null;
 
 function loadPopularity(): SkuPopularity[] {
   if (cachedPopularity) return cachedPopularity;
+  // 2026-08-04 18:30 P0 build 修复: client side 完全跳过 fs 读取
+  // (Next.js client bundle 不包含 Node.js 内置模块, 走 weight_score fallback)
+  if (typeof window !== 'undefined') {
+    cachedPopularity = weightScoreFallback();
+    return cachedPopularity;
+  }
+  // Server side: dynamic import fs/path, 避免 client bundle 解析失败
+  // 用 Function('return require')() 强制运行时解析, 完全绕开 webpack 静态分析
   try {
+    // eslint-disable-next-line no-new-func
+    const dynamicRequire: (name: string) => unknown = new Function('name', 'return require(name)') as any;
+    const fs = dynamicRequire('fs') as typeof import('fs');
+    const path = dynamicRequire('path') as typeof import('path');
     const matrixPath = path.join(process.cwd(), '.hermes', 'industry-keyword-matrix.json');
     if (fs.existsSync(matrixPath)) {
       const raw = fs.readFileSync(matrixPath, 'utf8');
       const m = JSON.parse(raw);
       if (m.sku_popularity && Array.isArray(m.sku_popularity) && m.sku_popularity.length > 0) {
         cachedPopularity = m.sku_popularity;
-        return cachedPopularity;
+        return cachedPopularity as SkuPopularity[];
       }
     }
   } catch {
     /* fallback below */
   }
-  // Fallback: weight_score + isHot + isNew proxy
-  cachedPopularity = products.map((p) => ({
+  cachedPopularity = weightScoreFallback();
+  return cachedPopularity;
+}
+
+function weightScoreFallback(): SkuPopularity[] {
+  return products.map((p) => ({
     slug: p.slug,
     gsc_impressions: p.weight_score * 100,
     gsc_clicks: p.isHot ? p.weight_score * 5 : p.weight_score * 2,
@@ -49,7 +68,6 @@ function loadPopularity(): SkuPopularity[] {
     source: 'weight_score_fallback' as const,
     last_updated: '2026-08-04',
   }));
-  return cachedPopularity;
 }
 
 function popularityScore(slug: string): number {
