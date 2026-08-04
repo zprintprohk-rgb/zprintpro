@@ -282,6 +282,37 @@ function buildGuideRedirects() {
       permanent: true,
     });
   }
+
+  // 2026-08-04 K3 09:47 拍板 攒批 A 修: 9:30 verify PARTIAL 7 URL 修
+  // §0.1 第 2 例外 (K3 8/4 拍板 攒批跟 daily cron 1 commit + 1 push)
+  // §0.7 301 接收端 /category/{slug}/ + /blog/{slug}/ + /services/{slug}/ 5+ 内链入口 ✅
+  // 14 redirect rules (7 路径 × 2 trailing slash)
+  // 根因: e6a61a6 6 模式分类错 4 个 — 模式 A 漏算 /zh-hk/zh-hk/product/{X}/ (只列 services/),
+  //       模式 C 修 /zh-hk/product/packaging/ 错配 (GSC 报 404 的是 /zh-hk/packaging/ 无 /product/),
+  //       模式 E 把 /ja/services/seo/{X}/ 误判乱码 (实际是 services 路径错位, 走 /blog/ 跟 /category/ 互争),
+  //       /zh-hk/product/ (无 slug) 模式 E placeholder 实际是真 404
+  const GSC_404_R2 = [
+    // #1 /zh-hk/packaging/ → /zh-hk/category/packaging/ (e6a61a6 模式 C source 多 /product/)
+    ['/zh-hk/packaging', '/zh-hk/category/packaging/'],
+    // #2 /zh-hk/zh-hk/product/cosmetics-packaging-box/ → /zh-hk/category/packaging/
+    ['/zh-hk/zh-hk/product/cosmetics-packaging-box', '/zh-hk/category/packaging/'],
+    // #3 /zh-hk/zh-hk/product/eco-business-cards/ → /zh-hk/category/packaging/
+    ['/zh-hk/zh-hk/product/eco-business-cards', '/zh-hk/category/packaging/'],
+    // #4 /ja/services/same-day-printing-delivery/ → /ja/services/rush-printing-delivery/
+    //   (e6a61a6 template 写错 source 多 /product/, destination 改 /ja/services/rush-printing-delivery/)
+    ['/ja/services/same-day-printing-delivery', '/ja/services/rush-printing-delivery/'],
+    // #5 /ja/services/seo/postcard-set/ → /ja/blog/postcard-set/ (跟 #4 同样 template 错, destination 走 /blog/)
+    ['/ja/services/seo/postcard-set', '/ja/blog/postcard-set/'],
+    // #6 /ja/services/seo/eco-tote-bag/ → /ja/blog/eco-tote-bag/ (同上)
+    ['/ja/services/seo/eco-tote-bag', '/ja/blog/eco-tote-bag/'],
+    // #7 /zh-hk/product/ (无 slug, GSC 报 404 实际真 404) → /zh-hk/category/
+    ['/zh-hk/product', '/zh-hk/category/'],
+  ];
+  for (const [source, dest] of GSC_404_R2) {
+    rules.push({ source: source, destination: dest, permanent: true });
+    rules.push({ source: source + '/', destination: dest, permanent: true });
+  }
+
   // 模式 D: 系统路径 404 (GSC 抓错, 加 noindex 兜底)
   // /upload/, /license/, /cdn-cgi/email-protection 不重定向, 让 Google 自然去索引
   // (GSC 自动 90 天清理 stale 404)
