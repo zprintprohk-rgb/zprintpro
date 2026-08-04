@@ -13,6 +13,7 @@ import { getBuyingGuideBySlug, getAllBuyingGuideSlugs } from '@/data/buying-guid
 import { getClusterBySlug, getAllClusterSlugs } from '@/data/pillar-content';
 import { getBlogCover, getBlogPostMetaBySlug } from '@/data/blog-posts';
 import { products, getProductTitle, getProductDescription, getProductBySlug } from '@/data/products';
+import { getTopSkuByCategory, getRelatedByCategory, inferBlogCategory } from '@/lib/popularity';
 import { convertPriceRangeString } from '@/lib/pricing';
 import { getProductMainImage } from '@/lib/product-image';
 
@@ -826,16 +827,20 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
   const faqs = extractFaqFromHtml(post.content);
   const faqJsonLd = faqs ? generateFaqJsonLd(faqs) : null;
 
-  // Hot products for sidebar
-  const hotProducts = products
-    .filter((p) => p.isHot)
-    .sort((a, b) => b.weight_score - a.weight_score)
-    .slice(0, 4);
+  // Sidebar 14 条热门产品 — K3 8/4 11:02 拍板
+  // Q1=C: 用 GSC 数据 (popularity.ts matrix.json priority_boost 8/6 周三跑出后自动填)
+  // Q2=A: CSS marquee 14 条全 DOM, 5 visible
+  const hotProducts = getTopSkuByCategory(14);
 
   const linkedProductSlugs = post.linkedProducts?.slice(0, 4) || [];
-  const linkedProducts = linkedProductSlugs
+  let linkedProducts = linkedProductSlugs
     .map((slug) => getProductBySlug(slug))
     .filter((p): p is NonNullable<typeof p> => !!p);
+  // Fallback: K3 11:02 拍板 "其它 blog 底部相关主题相关 SKU 超链接"
+  if (linkedProducts.length === 0) {
+    const blogCat = inferBlogCategory({ category: post.category, linkedProducts: post.linkedProducts });
+    linkedProducts = getRelatedByCategory(blogCat, 4);
+  }
 
   return (
     <main className="min-h-screen bg-gray-50 py-12">
@@ -921,41 +926,51 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
               <h3 className="text-lg font-bold text-[#333333] mb-5 pb-3 border-b border-gray-100">
                 {t.hotProducts}
               </h3>
-              <div className="space-y-5">
-                {hotProducts.map((product) => (
-                  <Link
-                    key={product.sku_code}
-                    href={`${localePrefix}/product/${product.slug}/`}
-                    className="group block"
-                  >
-                    <div className="aspect-[4/3] rounded-lg overflow-hidden bg-gray-50 mb-3">
-                      <Image
-                        src={getProductMainImage(product, locale)}
-                        alt={getProductTitle(product, locale)}
-                        width={300}
-                        height={225}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform"
-                        unoptimized
-                        loading="lazy"
-                        decoding="async"
-                      />
-                    </div>
-                    <h4 className="text-sm font-semibold text-[#333333] group-hover:text-[#2873F5] transition-colors line-clamp-2">
-                      {getProductTitle(product, locale)}
-                    </h4>
-                    <p className="text-xs text-gray-500 mt-1 line-clamp-2">
-                      {getProductDescription(product, locale).slice(0, 50)}...
-                    </p>
-                    <div className="flex items-center justify-between mt-2">
-                      <span className="text-sm text-[#F87314] font-bold">
-                        {convertPriceRangeString(product.price_range, locale, product.category_slug, product.slug).split('-')[0]}
-                      </span>
-                      <span className="text-xs px-3 py-1 border border-[#2873F5] text-[#2873F5] rounded-full group-hover:bg-[#2873F5] group-hover:text-white transition-colors">
-                        {t.viewMore}
-                      </span>
-                    </div>
-                  </Link>
-                ))}
+              {/* 2026-08-04 K3 拍板 Q2=A: CSS marquee 14 条全 DOM, 5 visible
+                  14 类各 1 条 top SKU (popularity.ts), 全部在 DOM 让 Googlebot 抓全 14 link
+                  (K3 评估: 比 B 静态 5 条多 9 link 内链传递) */}
+              <div
+                className="overflow-hidden h-[640px] relative"
+                style={{ maskImage: 'linear-gradient(to bottom, black 0%, black 95%, transparent 100%)', WebkitMaskImage: 'linear-gradient(to bottom, black 0%, black 95%, transparent 100%)' }}
+              >
+                <div className="marquee-vertical space-y-5" style={{ animationDuration: `${hotProducts.length * 2.5}s` }}>
+                  {[...hotProducts, ...hotProducts].map((product, idx) => (
+                    <Link
+                      key={`${product.sku_code}-${idx}`}
+                      href={`${localePrefix}/product/${product.slug}/`}
+                      className="group block"
+                    >
+                      <div className="aspect-[4/3] rounded-lg overflow-hidden bg-gray-50 mb-3">
+                        <Image
+                          src={getProductMainImage(product, locale)}
+                          alt={getProductTitle(product, locale)}
+                          width={300}
+                          height={225}
+                          className="w-full h-full object-cover group-hover:scale-105 transition-transform"
+                          unoptimized
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                      {/* K3 11:13 拍板: 标题 line-clamp-1 全标题 (不是 line-clamp-2 截断) */}
+                      <h4 className="text-sm font-semibold text-[#333333] group-hover:text-[#2873F5] transition-colors line-clamp-1">
+                        {getProductTitle(product, locale)}
+                      </h4>
+                      {/* K3 11:13 拍板: 2 行小字 描述 */}
+                      <p className="text-xs text-gray-500 mt-1 line-clamp-2">
+                        {getProductDescription(product, locale)}
+                      </p>
+                      <div className="flex items-center justify-between mt-2">
+                        <span className="text-sm text-[#F87314] font-bold">
+                          {convertPriceRangeString(product.price_range, locale, product.category_slug, product.slug).split('-')[0]}
+                        </span>
+                        <span className="text-xs px-3 py-1 border border-[#2873F5] text-[#2873F5] rounded-full group-hover:bg-[#2873F5] group-hover:text-white transition-colors">
+                          {t.viewMore}
+                        </span>
+                      </div>
+                    </Link>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

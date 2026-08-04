@@ -167,3 +167,24 @@ textarea:focus-visible {
 .aspect-video {
   aspect-ratio: 16 / 9;
 }
+
+/* 2026-08-04 K3 拍板 Q2=A: Sidebar 14 条 CSS marquee 5 visible
+   14 类各 1 条 top SKU 全 DOM, 比 B 静态 5 条多 9 link 内链传递 */
+@keyframes marquee-vertical {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
+}
+.marquee-vertical {
+  animation-name: marquee-vertical;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-duration: 35s; /* fallback, 实际由 inline style 覆盖 */
+}
+.marquee-vertical:hover {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .marquee-vertical {
+    animation: none;
+  }
+}

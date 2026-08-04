@@ -97,19 +97,12 @@ categories.forEach((cat) => {
   categoryCounts[cat.slug] = products.filter((p) => p.category === cat.slug).length;
 });
 
-// 首頁熱門產品：每個分類取 weight_score 最高1條，共12條（3列x4行）
-// 排序：貼紙→宣傳單張→包裝盒→海報→紙袋→咭片→書籍→餐牌→噴繪→信封→年曆→利是封
-const priorityCategories = [
-  'stickers', 'flyers', 'packaging', 'posters', 'paper-bags', 'business-cards',
-  'books', 'menus', 'banners', 'envelopes', 'calendars', 'red-packets',
-];
-const hotProducts = priorityCategories
-  .map((catSlug) => {
-    const catProducts = products.filter((p) => p.category === catSlug);
-    return catProducts.sort((a, b) => b.weight_score - a.weight_score)[0];
-  })
-  .filter(Boolean)
-  .slice(0, 12);
+// 首頁熱門產品 — 2026-08-04 K3 11:02 拍板
+// 12 条 SKU: 14 类取 top 12 分类 (按分类展示量排), 每类 1 条 top SKU
+// Q1=C: 用 GSC 数据 via matrix.json priority_boost (gsc-feedback-loop 周三 8/6 跑出后填)
+// 兜底: popularity.ts weight_score proxy
+import { getTopSkuByCategory } from '@/lib/popularity';
+const hotProducts = getTopSkuByCategory(12);
 
 function ProductImage({ src, alt }: { src: string; alt: string }) {
   const [imgError, setImgError] = useState(false);
