@@ -512,15 +512,11 @@ export function generateCategoryItemListJsonLd(
             '@type': 'Brand',
             name: locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro',
           },
-          // 2026-07-13 新增 aggregateRating 解决 GSC「未填写字段aggregateRating」警告 (17 items)
-          // 公司级综合评分 (ZprintPro, est. 2012, ISO 9001+FSC, 累计真实客户评价)
-          aggregateRating: {
-            '@type': 'AggregateRating',
-            ratingValue: '4.9',
-            reviewCount: 128,
-            bestRating: '5',
-            worstRating: '1',
-          },
+          // 2026-08-04 K3 P0-2: 删 aggregateRating 假数据 (K3 v2 §3.3 约束 4: 无真实评价数据, 不可编造)
+          // 7/13 注释加的 "公司级综合评分 4.9/128" 是假数据, 7/28 v2.1 拍板删但 schema-extensions.ts 漏改
+          // 现已确认 Zprintpro 0 真实 Trustpilot/Google Reviews 集成, 删 aggregateRating 块
+          // Google Rich Results Test 不要求 aggregateRating, 缺它只是不显示星级, 不影响 SEO 排名
+          // 等 8/12 后接入真实 Trustpilot API 再加回
           offers: {
             '@type': 'Offer',
             price: product.basePrice,

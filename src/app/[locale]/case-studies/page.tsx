@@ -348,10 +348,10 @@ export default function CaseStudiesPage({ params }: { params: { locale: Locale }
         name: title,
         url: `${SITE_URL}/${locale}/case-studies/#case-${i + 1}`,
         item: {
-          '@type': 'Review',
+          // 2026-08-04 K3 P0-2: 删假 review schema (跟 aggregateRating 同期删除, 等真实 Trustpilot API 接入再加回)
+          '@type': 'CreativeWork',
           author: { '@type': 'Person', name: cs.author },
-          reviewRating: { '@type': 'Rating', ratingValue: '5', bestRating: '5' },
-          reviewBody: cs.quote,
+          text: cs.quote,
           itemReviewed: {
             '@type': 'LocalBusiness',
             name: siteConfig.name,

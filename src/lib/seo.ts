@@ -1364,7 +1364,10 @@ export function generateProductImageJsonLd(
   } as unknown as SchemaOrgData;
 }
 
-// 生成產品評價結構化數據
+// 2026-08-04 K3 P0-2: @deprecated - 假数据 aggregateRating/review 默认值违反 v2 §3.3 约束 4
+// 8/4 14:30 删 schema-extensions.ts 假 aggregateRating 块 + case-studies 假 Review 块
+// 真实 Trustpilot/Google Reviews API 接入前不要调用此函数
+// 当前所有 .tsx 调用方已停用 (K3 v2.1 7/28 拍板)
 export function generateProductReviewsJsonLd(
   productName: string,
   slug: string,
