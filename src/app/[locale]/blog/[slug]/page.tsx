@@ -956,9 +956,13 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                   2026-08-05 K3 12:24 拍板 B: 滚动太快, 改 3 visible + 滚动更慢
                   - h-[400px] (3 visible, 每条 ~130px 含图+标题+描述+价格)
                   - animationDuration: 14*2.5=35s → 14*5=70s (慢 2x, 用户能看清 1 条)
-                  - 14 条总数保留 (SEO 内链 + 全部 13 类非贺卡类目 1 条 top SKU, K3 8/4 决策不受影响) */}
+                  - 14 条总数保留 (SEO 内链 + 全部 13 类非贺卡类目 1 条 top SKU, K3 8/4 决策不受影响)
+                  2026-08-05 K3 14:00 拍板 C: 窗口高度加高 2 倍 + 标题字号放大 1.5 倍
+                  - h-[400px] → h-[800px] (3 visible → 6 visible, 用户一眼看到 6 个 SKU 选择)
+                  - 标题 text-[11px] → text-[17px] (11 × 1.5 ≈ 17, 整 17px 适配 sidebar 280px 宽度)
+                  - 14 条全 DOM 保留 (SEO 内链 + 13 类非贺卡类目 top SKU 不变) */}
               <div
-                className="overflow-hidden h-[400px] relative"
+                className="overflow-hidden h-[800px] relative"
                 style={{ maskImage: 'linear-gradient(to bottom, black 0%, black 95%, transparent 100%)', WebkitMaskImage: 'linear-gradient(to bottom, black 0%, black 95%, transparent 100%)' }}
               >
                 <div className="marquee-vertical space-y-5" style={{ animationDuration: `${hotProducts.length * 5}s` }}>
@@ -982,8 +986,10 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                       </div>
                       {/* 2026-08-05 K3 12:24 拍板: 标题用 getProductDisplayTitle (长尾词+核心词版) 替代 getProductTitle (短名版)
                           e.g. flyer blog sidebar 显示 "A4宣傳單張印刷 100張起印 HK$0.3/張 雙面彩印 | 智印雲 ZprintPro" 而不是 "A4宣傳單張"
-                          line-clamp-1 + 字号小 11px + sidebar 240-280px 宽度, 强制单行展示 (不再截断) */}
-                      <h4 className="text-[11px] font-semibold text-[#333333] group-hover:text-[#2873F5] transition-colors line-clamp-1 leading-tight">
+                          line-clamp-1 + 字号小 11px + sidebar 240-280px 宽度, 强制单行展示 (不再截断)
+                          2026-08-05 K3 14:00 拍板: 标题字号放大 1.5 倍 (11px → 17px) 配合 6 visible
+                          (整 17px 适配 sidebar 280px 宽度, line-clamp-1 单行, 长尾词标题"·品质保证·智印港" 仍能展示) */}
+                      <h4 className="text-[17px] font-semibold text-[#333333] group-hover:text-[#2873F5] transition-colors line-clamp-1 leading-tight">
                         {getProductDisplayTitle(product, locale)}
                       </h4>
                       {/* K3 11:13 拍板: 2 行小字 描述 */}
