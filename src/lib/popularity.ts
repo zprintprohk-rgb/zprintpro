@@ -154,10 +154,10 @@ export function inferBlogCategory(post: { title?: string; category?: string; lin
       [/宣傳單張|傳單|flyer|leaflet|brochure|チラシ|フライヤー/i, 'flyers'],
       // sticker / 貼紙 / ステッカー
       [/貼紙|防水貼|透明貼|不乾膠|sticker|label|ステッカー|シール/i, 'stickers'],
-      // paper-bags / 紙袋 / 紙袋 (zh-hk + en + ja 全 locale, 8/5 14:20 K3 拍板)
-      [/紙袋|購物袋|牛皮紙袋|手提袋|paper bag|kraft bag|shopping bag|手提げ袋|バッグ|紙バッグ/i, 'paper-bags'],
-      // packaging / 包裝盒 / パッケージ
-      [/包裝盒|禮盒|包裝|磁吸盒|飛機盒|packaging|box|package|パッケージ|箱/i, 'packaging'],
+      // paper-bags / 紙袋 / 紙袋 (zh-hk + en + ja 全 locale, 8/5 14:20 K3 拍板 + 8/5 15:30 增补 kraft/paper 细分)
+      [/紙袋|購物袋|牛皮紙袋|手提袋|環保袋|禮品袋|包裝袋|paper bag|kraft bag|shopping bag|carrier bag|merchandise bag|手提げ袋|紙バッグ|ショッピングバッグ|手提げ紙袋/i, 'paper-bags'],
+      // packaging / 包裝盒 / パッケージ (8/5 15:30 K3 拍板: 加 盒 单字匹配 "白卡彩盒" + paper bag 加细分)
+      [/包裝盒|禮盒|磁吸盒|飛機盒|彩盒|天地盒|摺盒|盒|packaging|box|package|パッケージ|箱|cardboard box|gift box|mailer box|rigid box/i, 'packaging'],
       // posters / 海報 / ポスター
       [/海報|poster|ポスター/i, 'posters'],
       // books / 書籍 / 書籍

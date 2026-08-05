@@ -867,23 +867,25 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
   // - post.category: getPostData 返回的 category (可能是 product slug 'paper-bags' 或中文 '印刷知識' 或 legacy 字符串)
   // 修法: 优先 trust post.category 如果是 13 个有效 product category_slug 之一
   //       否则 fallback 跑 inferBlogCategory (title 关键词推断)
+  // 2026-08-05 15:30 K3 P0 修复: blogCat 必须在 if/else 双分支都定义, 否则 DEBUG marker 引用 ReferenceError → 19/24 blog 500
   const validProductCategorySlugs = ['paper-bags','flyers','stickers','packaging','posters','books','menus','envelopes','calendars','red-packets','banners','educational','japan-doujin'];
   let finalBlogCat: string;
+  let blogCat: string | undefined;  // hoisted: 避免 JSX 引用时 ReferenceError
   if (post.category && validProductCategorySlugs.includes(post.category)) {
     // post.category 是有效 product category_slug (meta path 来自 BlogPostMeta.categoryKey)
+    blogCat = post.category;
     finalBlogCat = post.category;
   } else {
     // post.category 是中文/英文字符串 (buying-guide path 来自 guide.category[locale])
     //    跑 inferBlogCategory title 关键词推断 (zh-hk/en/ja 标题都含类目关键词)
-    const blogCat = inferBlogCategory({
+    blogCat = inferBlogCategory({
       title: post.title,  // string 不是 Record<Locale, string> (getPostData 已处理)
       category: post.category,
     });
     finalBlogCat = blogCat;
   }
   const linkedProducts = getRelatedByCategory(finalBlogCat, 4);
-  // 保留 DEBUG marker 验证 (M3 自查, 8/5 14:50)
-  const _dbg = `<!-- DEBUG related-products: slug=${post.slug || ''} locale=${locale} category=${post.category || ''} finalBlogCat=${finalBlogCat} linkedSlugs=${linkedProducts.map(p => p.slug).join(',')} -->`;
+  // 2026-08-05 15:30 K3 P0 修复: 移除 DEBUG marker (避免后续改 scope 又踩雷, 验证流程跑独立 Python 脚本)
 
   return (
     <main className="min-h-screen bg-gray-50 py-12">
@@ -933,8 +935,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
               {/* 相關產品推薦 */}
               {linkedProducts.length > 0 && (
                 <div className="mt-10 pt-8 border-t border-gray-100">
-                  {/* 2026-08-05 14:50 M3 DEBUG: 临时显示 blogCat / finalBlogCat / linkedProducts 验证 14:20 修复 */}
-                  <div data-debug-related style={{ display: 'none' }}>{`DEBUG: slug=${post.slug} locale=${locale} categoryKey=${post.categoryKey} blogCat=${blogCat} finalBlogCat=${finalBlogCat} linkedSlugs=${linkedProducts.map(p => p.slug).join(',')}`}</div>
+                  {/* 2026-08-05 15:30 K3 P0 修复: DEBUG marker 移除, 验证走独立 Python 脚本 */}
                   <h3 className="text-lg font-bold text-[#333333] mb-4">{t.relatedProducts}</h3>
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                     {linkedProducts.map((product) => (
