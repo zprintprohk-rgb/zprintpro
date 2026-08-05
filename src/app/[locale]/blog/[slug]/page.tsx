@@ -856,24 +856,34 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
   // Q2=A: CSS marquee 14 条全 DOM, 5 visible
   const hotProducts = getTopSkuByCategory(14);
 
-  // 2026-08-05 K3 14:20 拍板: 底部"相关产品推荐"必须跟 blog 标题核心产品类目相同 + 按搜索量排名
-  // 8/5 12:24 修复加了 title 关键词推断, 但调用方没传 title, 走 fallback → 错推 flyer SKU
-  // 修法: 删 linkedProducts 死代码 (BlogPostMeta interface 无此字段, 永远空数组)
-  //       直接用 post.title[locale] + post.categoryKey 调 inferBlogCategory
-  //       post.categoryKey 已经是 product category_slug (e.g. 'paper-bags'), 跟 products.ts category_slug 一致
-  const blogCat = inferBlogCategory({
-    title: post.title?.[locale],
-    category: post.categoryKey,
-  });
-  // 2026-08-05 14:50 DEBUG: 直接信任 categoryKey 跳过 inferBlogCategory (priority 2.5 fallback 不稳)
-  // K3 14:20 拍板的核心要求是 "按 blog 标题核心产品类目推 SKU", post.categoryKey 已经是 author 标注的核心类目
-  // 比 inferBlogCategory 推断更准. 同时避免 priority 1 关键词在某些 locale 不匹配的问题
-  const finalBlogCat = (post.categoryKey && ['paper-bags','flyers','stickers','packaging','posters','books','menus','envelopes','calendars','red-packets','banners','educational','japan-doujin'].includes(post.categoryKey))
-    ? post.categoryKey
-    : blogCat;
+  // 2026-08-05 K3 14:50 紧急 DEBUG (bc7cd62 验证揭露): post.title?.[locale] 永远是 undefined
+  // 因为 getPostData() 返回的 post.title 已经是 string (locale-specific), 不是 Record<Locale, string>
+  // post.categoryKey 也不存在 (getPostData 没返回这字段)
+  // 真正根因: getPostData 用了 meta?.title?.[locale] 已经是 string, 我之前用 post.title?.[locale] = string[locale] = undefined
+  // 真修法: 直接用 post.title (string) + 智能判断 category
+
+  // 1) 智能推断 finalBlogCat (按 K3 14:20 拍板: 跟 blog 标题核心产品类目相同)
+  // - post.title: 已经 getPostData 处理好的 locale-specific string
+  // - post.category: getPostData 返回的 category (可能是 product slug 'paper-bags' 或中文 '印刷知識' 或 legacy 字符串)
+  // 修法: 优先 trust post.category 如果是 13 个有效 product category_slug 之一
+  //       否则 fallback 跑 inferBlogCategory (title 关键词推断)
+  const validProductCategorySlugs = ['paper-bags','flyers','stickers','packaging','posters','books','menus','envelopes','calendars','red-packets','banners','educational','japan-doujin'];
+  let finalBlogCat: string;
+  if (post.category && validProductCategorySlugs.includes(post.category)) {
+    // post.category 是有效 product category_slug (meta path 来自 BlogPostMeta.categoryKey)
+    finalBlogCat = post.category;
+  } else {
+    // post.category 是中文/英文字符串 (buying-guide path 来自 guide.category[locale])
+    //    跑 inferBlogCategory title 关键词推断 (zh-hk/en/ja 标题都含类目关键词)
+    const blogCat = inferBlogCategory({
+      title: post.title,  // string 不是 Record<Locale, string> (getPostData 已处理)
+      category: post.category,
+    });
+    finalBlogCat = blogCat;
+  }
   const linkedProducts = getRelatedByCategory(finalBlogCat, 4);
-  // DEBUG HTML marker (M3 自查, push 后验证 LIVE HTML 含此 marker)
-  const _dbg = `<!-- DEBUG related-products: slug=${post.slug} locale=${locale} titleKey=${(post.title?.[locale] || '').slice(0,30)} categoryKey=${post.categoryKey} blogCat=${blogCat} finalBlogCat=${finalBlogCat} linkedSlugs=${linkedProducts.map(p => p.slug).join(',')} -->`;
+  // 保留 DEBUG marker 验证 (M3 自查, 8/5 14:50)
+  const _dbg = `<!-- DEBUG related-products: slug=${post.slug || ''} locale=${locale} category=${post.category || ''} finalBlogCat=${finalBlogCat} linkedSlugs=${linkedProducts.map(p => p.slug).join(',')} -->`;
 
   return (
     <main className="min-h-screen bg-gray-50 py-12">

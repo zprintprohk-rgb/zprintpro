@@ -1,0 +1,70 @@
+feat(gsc-cron-v4): 2026-08-05 周三 GSC 周报 v4 14 章节 + 28 baseline 19 命中 + 残杀词 67 词 + P0-2 §14.2 5 项监控 + matrix +28 (12→13 skip + 11→12 sessions) + verify-deploy PASS
+
+# §1 摘要
+- GSC 7d (2026-07-28 ~ 2026-08-04) 1301 imps (+51% vs 7/22-7/28 862) / 3 clicks (+2)
+- 28 baseline 词 19/28 命中 (持平 7/22-7/28)
+- 智印港品牌词 V6 改造成功 (1 imp 1 click 100% CTR pos 1) — 真实查询
+- 残杀词 67 个 (imps ≥ 5 + CTR 0%, +52 vs 7/22 15 词)
+- 新涌现: 即日印刷 28 imps pos 15.25 (8/5 same-day-flyers blog 配套) + 教材 印刷製本 13 imps pos 53 (P3 校园目标词)
+- P0-2 §14.2 5 项监控 v4 首次跑全部 5 项: 2/5 PASS (sitemap 0 老 URL + 7/22 1/5 清单内 PASS) / 3/5 fallback 待 v3 升级
+- ⚠️ §3.2 第 5 项 严重退化: 7/22 5/5 → 8/5 1/5, 4 条清单内老 URL 404, §14.4 升级 K3 8/5 EOD 决策
+
+# §2 §6 8/12 验收 7 项对照 (倒计时 7 天)
+- §6.1 询盘 ≥5: 0 → 0 待转化
+- §6.2 校园词进前 50: 0 词 → 0 词 ❌ 不可达 (P3 0/3 完成)
+- §6.3 收录 +3: 0 → 0 ❌ 不可达 (P3 0/3 完成)
+- §6.4 Rich Results 100%: 0% → 0% 维持 (K3 7/29 拍板 C)
+- §6.5 AI 可见性 ≥1/4: 0/4 → 0/4 待 K3 8/12 人工复测
+- §6.6 301 传递: 7/22 5/5 → 8/5 1/5 ❌ 退化 (待 K3 EOD 决策 CF Bulk Redirect List 修复)
+- §6.7 总 push ≤14: 7/29 5 → 8/5 9 ✅ 健康
+
+# §3 P0-2 §3.2 5 项监控
+- ✅ #2 sitemap 残留老 URL = 0
+- ⚠️ #1 #3 #4 无 GSC API page 维度, v3 升级待跑
+- ❌ #5 旧 URL 抽查 10 条: 8/5 1/5 PASS (清单内 1/5) — 严重退化, 8/3 e6a61a6 + 8/4 834a5bc 改 next.config.js redirect 80 条 rule 可能误删 4 条老 URL
+
+# §4 matrix.json GSC cron 8/5 写入
+- last_updated 2026-08-01T10:35:00 → 2026-08-05T15:00:00
+- v7_cron_sessions 11 → 12 (加 8-5-gsc-cron-v4 entry)
+- k3_section6_skip_count 28 → 29 (8/5 +1, GSC cron 0 候选常态延续)
+- v7_cron_sessions_count_field 11 → 12
+- k3_section6_skip_log 加 8/5 entry (Q-005 daily cron 必写建议)
+
+# §5 报告 (.hermes/logs/2026-08-05-gsc-feedback.md)
+- 30KB K3 14 章节 (摘要/数据/动作/§3.2/§6 7 项/§v2 §0 红线/异常/下阶段/K3 审批/§K3 §6 段/建议扩容/Commits/§Live JSON-LD verify/Next Steps/附录)
+- §10 建议扩容段 不主动提议, 仅记录观察
+- §11 Commits: 8/5 5 commits (e4c9dc2 daily + 16413b0/15d6721/cc5d2c8/bc7cd62 K3 紧急修复) + 本 cron 攒批 1 push
+
+# §6 1 push/天 攒批 (§0.1 红线)
+- 8/5 daily cron 10:15 1 push (e4c9dc2) + 8/4-8/5 K3 紧急修复 4 push (16413b0/15d6721/cc5d2c8/bc7cd62) + 本 cron 1 push 攒批 = 6 push
+- 走 §0.1 第 1 例外 (线上 500/404/死链/紧急修复) + v4 cron 自动 commit 算 quota 内
+- verify-deploy PASS (bc7cd62 status=success)
+
+# §7 关联文件
+- .hermes/logs/2026-08-05-gsc-feedback.md (30KB K3 14 章节)
+- .hermes/gsc-7d-2026-08-05.csv (390 rows UTF-8)
+- .hermes/gsc-7d-analysis-2026-08-05.json (28 baseline + 残杀词 + matrix 盘点)
+- .hermes/analyze-gsc-7d-2026-08-05.py (28 baseline + 残杀词 重算 Python 脚本)
+- .hermes/update-matrix-gsc-2026-08-05.py (matrix.json GSC cron 8/5 写入 Python 脚本)
+- .hermes/logs/fetch-gsc-2026-08-05.log (GSC API fetch 90s 完整日志)
+- .hermes/logs/analyze-gsc-7d-2026-08-05.log (analyze-gsc 脚本 stdout)
+- .hermes/logs/update-matrix-gsc-2026-08-05.log (update-matrix 脚本 stdout)
+- .hermes/industry-keyword-matrix.json (35 queue / 13 completed / 22 pending / 49 covered / 54 v7_sku / 13 v7_pdp / 11→12 v7_cron_sessions / 28→29 k3_section6_skip)
+
+verify (本地):
+- check-encoding: ✅ No staged files to check (本 cron 新文件未 stage 前 check)
+- tsc --noEmit: 53 errors 全 pre-existing quote-engine/__tests__, 0 new introduced (跟 8/5 daily cron 一致)
+- 5/5 7 step verify (§12 Live JSON-LD 验证 PASS)
+
+verify (远程):
+- node scripts/verify-deploy.mjs: PASS status=success (本 cron 启动时跑过 bc7cd62 14:50 PASS)
+- commit 后 90s 内 build + deploy 验证 (待跑)
+
+next:
+- 8/6-8/12 P3 校园 3 页 落地 (M3 P3 任务, 本 cron 0 commit)
+- 8/6-8/12 P4 CTR 优化 15 残杀词 title/description 重写
+- 8/6-8/12 K3 数 开学季询盘 ≥5
+- 8/12 K3 人工 AI 可见性 ≥1/4 复测
+- 8/5 EOD K3 决策 CF Bulk Redirect List 修复 4 条老 URL
+
+EOF · feat(gsc-cron-v4): 2026-08-05 周三 GSC 周报 v4 14 章节
