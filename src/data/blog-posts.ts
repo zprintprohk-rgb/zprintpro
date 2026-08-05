@@ -869,12 +869,12 @@ const lpProductLabel: BlogPostMeta = {
   title: {
     'zh-hk': '跨境電商產品標籤印刷指南 · GS1 條碼 + FDA 認證 SKU 標貼 | 智印港 ZprintPro',
     en: 'Amazon FBA Product Label Printing: GS1 UPC Barcodes, FDA-Compliant SKU Labels for US Sellers | ZprintPro',
-    ja: '越境EC製品ラベル印刷ガイド：GS1 バーコード・FDA 準拠 SKU ラベル | 智印雲 ZprintPro',
+    ja: '越境EC製品ラベル印刷ガイド：GS1 バーコード・FDA 準拠 SKU ラベル | ZprintPro ZprintPro',
   },
   excerpt: {
     'zh-hk': '亞馬遜 FBA、Shopify 獨立站、Etsy、速賣通賣家必睇。一張合規的 SKU 產品標籤決定平台審核通過率與買家第一印象。智印港為跨境電商提供 GS1 EAN/UPC 條碼 + FDA 食品級材質 + 防水防撕 SKU 標貼,1,000-500,000 枚小至大批量,5-7 個工作天交付。',
     en: 'Amazon US FBA, Etsy, Shopify, and DTC brand owners — a compliant UPC barcode, FDA-compliant, FNSKU-ready product label decides whether your shipment clears Amazon\'s Sort Center or sits stuck. ZprintPro prints GS1 UPC, FNSKU, Country of Origin, Prop 65 / CPSC / CPSIA labels for US-bound inventory in 1,000-500,000 piece runs, 5-7 business day production.',
-    ja: 'Amazon FBA、Shopify 独立 station、Etsy、AliExpress セラーへ。コンプライアンス適合の SKU ラベルがプラットフォーム審査通過率と第一印象を決定。智印雲は GS1 EAN/UPC バーコード、FDA 食品衛生素材、防水耐裂 SKU ラベルを 1,000-500,000 枚規模で 5-7 営業日納品。',
+    ja: 'Amazon FBA、Shopify 独立 station、Etsy、AliExpress セラーへ。コンプライアンス適合の SKU ラベルがプラットフォーム審査通過率と第一印象を決定。ZprintProは GS1 EAN/UPC バーコード、FDA 食品衛生素材、防水耐裂 SKU ラベルを 1,000-500,000 枚規模で 5-7 営業日納品。',
   },
 };
 
@@ -886,12 +886,12 @@ const lpGraduationYearbook: BlogPostMeta = {
   title: {
     'zh-hk': '畢業紀念冊印刷指南 · 香港中學大學院校定制方案 | 智印港 ZprintPro',
     en: 'US High School Yearbook Printing Guide: Class of 2026 Binding Styles, Cover Designs & Sponsor Ad Pages | ZprintPro',
-    ja: '卒業記念アルバム印刷ガイド：製本・用紙・パーソナライズ完全解説 | 智印雲 ZprintPro',
+    ja: '卒業記念アルバム印刷ガイド：製本・用紙・パーソナライズ完全解説 | ZprintPro ZprintPro',
   },
   excerpt: {
     'zh-hk': '中學、大學、補習社、國際學校、家長會必睇。一本高質素的畢業紀念冊是學生時代的永恆回憶,也是校友網絡凝聚的起點。智印港為香港教育市場提供騎馬釘 / 膠裝 / 精裝三種裝訂 + 個人班級照片 + 師長題詞 + 學校 logo 全頁客製化方案,50-500 本小批量,5-10 個工作天交付。',
     en: 'High school yearbook advisors, senior class officers, JROTC, booster clubs, homeschool co-ops — a US yearbook that wins a Columbia Scholastic Press Association Crown Award or NSPA Pacemaker costs US$8-22 per copy with ads. ZprintPro prints saddle stitch, perfect bound, and Smyth-sewn hardcover yearbooks in 50-2,000 copy runs in 5-10 business days.',
-    ja: '中学校、大学、予備校、インターナショナルスクール、PTA へ。高品質卒業記念アルバムは永遠の思い出と同窓ネットワーク形成の起点。智印雲は中綴じ / 無線綴じ / 上製本の 3 種類装丁 + クラス写真 + 教員メッセージ + 学校ロゴ全面カスタマイズを 50-500 部小ロットで 5-10 営業日納品。',
+    ja: '中学校、大学、予備校、インターナショナルスクール、PTA へ。高品質卒業記念アルバムは永遠の思い出と同窓ネットワーク形成の起点。ZprintProは中綴じ / 無線綴じ / 上製本の 3 種類装丁 + クラス写真 + 教員メッセージ + 学校ロゴ全面カスタマイズを 50-500 部小ロットで 5-10 営業日納品。',
   },
 };
 
@@ -903,12 +903,12 @@ const lpIpCharacterSticker: BlogPostMeta = {
   title: {
     'zh-hk': '文創IP角色造型貼紙印刷指南 · 香港同人品牌模切定制方案 | 智印港 ZprintPro',
     en: 'Custom Die-Cut Sticker Printing for US Creators, Etsy Sellers & Small Brands: Shapes, Premium Materials & Etsy US SEO | ZprintPro',
-    ja: 'IP キャラクター型抜きステッカー印刷ガイド：カスタム形状・素材・工法の全解説 | 智印雲 ZprintPro',
+    ja: 'IP キャラクター型抜きステッカー印刷ガイド：カスタム形状・素材・工法の全解説 | ZprintPro ZprintPro',
   },
   excerpt: {
     'zh-hk': '插畫師、漫畫家、文創品牌、VTuber、動漫周邊設計師必睇。一張極具辨識度的 IP 角色造型貼紙決定品牌粉絲忠誠度與商品溢價能力。智印港為香港及跨境文創市場提供任意形狀模切 + UV 印刷 + 多材質 + 燙金工藝全套定制,100-100,000 枚小至大批量,5-7 個工作天交付。',
     en: 'Etsy US shop owners, Comic-Con Artist Alley creators, TikTok-Instagram side hustlers, US small brand founders — a high-margin die-cut sticker shop runs on Etsy US SEO ranking signals, US$0.30-1.50 per-sticker COGS, and USPS-friendly packaging. ZprintPro prints holographic, glow, foil, and matte vinyl die-cut stickers for 100-100,000 piece runs in 5-7 business days.',
-    ja: 'イラストレーター・漫画家・クリエイターブランド・VTuber・アニメ周辺デザイナーへ。認知度の高い IP キャラクター型ステッカーがファンロイヤルティと商品プレミアムを決定。智印雲は任意形状型抜き、UV 印刷、複数素材、箔押し工法を 100-100,000 枚規模で 5-7 営業日納品、DHL 国際配送対応。',
+    ja: 'イラストレーター・漫画家・クリエイターブランド・VTuber・アニメ周辺デザイナーへ。認知度の高い IP キャラクター型ステッカーがファンロイヤルティと商品プレミアムを決定。ZprintProは任意形状型抜き、UV 印刷、複数素材、箔押し工法を 100-100,000 枚規模で 5-7 営業日納品、DHL 国際配送対応。',
   },
 };
 
@@ -976,7 +976,7 @@ const lpHotelAmenitySticker: BlogPostMeta = {
   title: {
     'zh-hk': '酒店民宿迎賓貼紙印刷指南 · 行李標籤 / 房卡套 / 客用品定制 | 智印港 ZprintPro',
     en: 'Hotel & Resort Amenity Sticker Printing Guide: Luggage Tags, Welcome Kits & Branded Service for US Properties | ZprintPro',
-    ja: 'ホテル・リゾート アメニティステッカー印刷ガイド：荷物タグ・ウェルカムキット・ロゴステッカー | 智印雲 ZprintPro',
+    ja: 'ホテル・リゾート アメニティステッカー印刷ガイド：荷物タグ・ウェルカムキット・ロゴステッカー | ZprintPro ZprintPro',
   },
   excerpt: {
     'zh-hk': '香港酒店業、半島、洲際、悅榕庄、精品酒店同 B&B 民宿必睇。100 個起印 + 防水 PVC + 燙金 logo + 順豐本地配送 + 5-7 個工作天交貨。',
@@ -994,7 +994,7 @@ const lpFinanceSummitGiftBag: BlogPostMeta = {
   title: {
     'zh-hk': '香港金融峰會禮品袋印刷指南 · 銀行財富管理活動贊助商紙袋定制 | 智印港 ZprintPro',
     en: 'Financial Summit Gift Bag Printing Guide: FSC, Foil Logo & VIP Bags for US Wealth Management | ZprintPro',
-    ja: '金融サミット ギフトバッグ印刷ガイド：FSC認証・箔押し・VIPバッグ 日本ウェルス・マネジメント向け | 智印雲 ZprintPro',
+    ja: '金融サミット ギフトバッグ印刷ガイド：FSC認証・箔押し・VIPバッグ 日本ウェルス・マネジメント向け | ZprintPro ZprintPro',
   },
   excerpt: {
     'zh-hk': '香港金融機構、銀行、財富管理公司、券商、保險公司、家族辦公室必睇。FSC 認證環保牛皮紙袋，100 個起印，燙金 logo，港九中環 IFC / 灣仔 / 金鐘本地速遞，5-7 個工作天交貨。',
@@ -1012,7 +1012,7 @@ const lpMarathonEventPoster: BlogPostMeta = {
   title: {
     'zh-hk': '馬拉松賽事海報印刷指南 · 防水 A1/A2 跑手包 + 起跑拱門 | 智印港 ZprintPro',
     en: 'Marathon Event Poster Printing Guide: Waterproof A1/A2 Race Posters, Runner Packets & Start-Line Arches | ZprintPro',
-    ja: 'マラソン大会ポスター印刷ガイド：防水 A1/A2 レースポスター・ランナーパケット・スタートアーチ | 智印雲 ZprintPro',
+    ja: 'マラソン大会ポスター印刷ガイド：防水 A1/A2 レースポスター・ランナーパケット・スタートアーチ | ZprintPro ZprintPro',
   },
   excerpt: {
     'zh-hk': '香港渣打馬拉松、街馬、半馬拉松、學界田徑必睇。100 張起印，A1/A2 防水 PP + 13oz 戶外燈布起跑拱門，順豐本地港九新界免運費，3-5 個工作天交貨。',
@@ -1030,7 +1030,7 @@ const lpCarDealershipAmenitySticker: BlogPostMeta = {
   title: {
     'zh-hk': '汽車 4S 店 / 二手車行貼紙印刷指南 · 防水 PVC 試駕車身貼 + 服務提醒 | 智印港 ZprintPro',
     en: 'Car Dealership Amenity Sticker Printing Guide: Waterproof PVC, Test Drive Decals & Service Reminders for US Auto Industry | ZprintPro',
-    ja: '自動車ディーラー アメニティステッカー印刷ガイド：防水 PVC・試乗デカール・サービス注意喚起 日本自動車業界向け | 智印雲 ZprintPro',
+    ja: '自動車ディーラー アメニティステッカー印刷ガイド：防水 PVC・試乗デカール・サービス注意喚起 日本自動車業界向け | ZprintPro ZprintPro',
   },
   excerpt: {
     'zh-hk': '香港 4S 店、二手車行、汽車美容、輪胎中心、維修工場必睇。100 張起印，防水 PVC + 透明 BOPP + 耐油 PVC，順豐本地港九新界免運費，3-5 個工作天交貨。',
@@ -1048,7 +1048,7 @@ const lpHotelKeycardSleeve: BlogPostMeta = {
   title: {
     'zh-hk': '酒店房卡套 + 行李牌印刷指南 · 軟觸啞面 + 燙金 logo 客用品包裝 | 智印港 ZprintPro',
     en: 'Hotel Key Card Sleeve & Luggage Tag Printing Guide: Soft-Touch Matte, Foil Logo & Glass Welcome Signs for US Hospitality | ZprintPro',
-    ja: 'ホテル ルームキー スリーブ・荷物タグ印刷ガイド：ソフトタッチマット・箔押し・ガラス ウェルカム 日本ホテル業界向け | 智印雲 ZprintPro',
+    ja: 'ホテル ルームキー スリーブ・荷物タグ印刷ガイド：ソフトタッチマット・箔押し・ガラス ウェルカム 日本ホテル業界向け | ZprintPro ZprintPro',
   },
   excerpt: {
     'zh-hk': '香港五星級酒店、精品酒店、B&B 民宿、Airbnb 短租必睇。100 張起印，軟觸啞面 PVC + 燙金箔 + 局部 UV，順豐本地港九新界免運費，3-5 個工作天交貨。',
@@ -1074,7 +1074,7 @@ const lpBabyProductLabel: BlogPostMeta = {
   excerpt: {
     'zh-hk': "嬰兒奶粉、嬰幼兒洗護、寶寶輔食、孕產婦營養品品牌必睇。一張通過 FDA 認證的食品級貼紙直接影響貨架接受度與媽媽群體信任。智印港為母嬰品牌提供 BPA-free 食品級材質 + 防撕破 + 耐冷藏 + 防水防油標籤,500-100,000 枚小至大批量,5-7 個工作天交付。",
     en: "US infant formula, baby food, baby skincare, and maternal nutrition brand owners: an FDA-compliant, BPA-free, freezer-safe label decides whether your product passes Whole Foods / Target / BuyBuy Baby shelf review and wins mom-trust on Instagram. ZprintPro prints 500 to 100,000-piece runs, 5-7 business day production, with free design mockup and Free Shipping over $99 to US ZIP codes.",
-    ja: "日本の粉ミルク・ベビーフード・赤ちゃんスキンケア・マタニティ栄養ブランドオーナー様へ。FDA 準拠・BPA-free・冷凍対応ラベルが shelf 審査とママ世代 SNS 信頼を決定。智印雲は 500〜100,000 枚小〜大ロット、5-7 営業日納品、$99 以上無料配送、DHL 国際配送対応。",
+    ja: "日本の粉ミルク・ベビーフード・赤ちゃんスキンケア・マタニティ栄養ブランドオーナー様へ。FDA 準拠・BPA-free・冷凍対応ラベルが shelf 審査とママ世代 SNS 信頼を決定。ZprintProは 500〜100,000 枚小〜大ロット、5-7 営業日納品、$99 以上無料配送、DHL 国際配送対応。",
   },
 };
 
@@ -1091,7 +1091,7 @@ const lpEcommerceShippingBag: BlogPostMeta = {
   excerpt: {
     'zh-hk': "亞馬遜 FBA、Shopify 獨立站、Etsy 賣家、跨境物流公司必睇。一個高質素、印刷精美、具備破壞性封口的快遞袋決定客戶開箱體驗和退貨率。智印港為跨境電商提供防水破壞袋、自粘封口、印刷品牌 logo + 追蹤碼 + 退貨標籤全套定制,1,000-200,000 個小至大批量,5-10 個工作天交付。",
     en: "US Amazon FBA, Shopify, Etsy, and 3PL warehouse brand owners: a premium printed shipping bag with tamper-evident seal, tracking barcode, and return label decides unboxing experience and return rate. ZprintPro prints 1,000-200,000 piece runs with waterproof kraft, custom brand printing, peel-and-stick adhesive, and Free Shipping over $99 to US ZIP codes.",
-    ja: "日本の Amazon FBA・Shopify・Etsy・3PL 倉庫ブランドオーナー様へ。改ざん防止シール・追跡バーコード・返品ラベル付きの高品質印刷配送袋が、開封体験と返品率を決定。智印雲は防水クラフト・カスタム印刷・剥離粘着で 1,000〜200,000 個小〜大ロット、5-10 営業日納品、$99 以上無料配送、全国送料込み。",
+    ja: "日本の Amazon FBA・Shopify・Etsy・3PL 倉庫ブランドオーナー様へ。改ざん防止シール・追跡バーコード・返品ラベル付きの高品質印刷配送袋が、開封体験と返品率を決定。ZprintProは防水クラフト・カスタム印刷・剥離粘着で 1,000〜200,000 個小〜大ロット、5-10 営業日納品、$99 以上無料配送、全国送料込み。",
   },
 };
 
@@ -1108,7 +1108,7 @@ const lpMediaMerchandiseBox: BlogPostMeta = {
   excerpt: {
     'zh-hk': "影視 IP 工作室、動漫品牌、Comic-Con 參展商、限量版收藏品公司必睇。一個高質感的 IP 周邊禮盒決定粉絲忠誠度、二次傳播率和二手市場溢價。智印港為全球影視 IP 市場提供抽屜式禮盒、磁吸盒、限量序號印刷、UV 局部 + 燙金 logo 全套定制,100-10,000 個小至大批量,7-15 個工作天交付。",
     en: "US entertainment IP studios, anime brands, Comic-Con exhibitors, and limited-edition collectible companies: a premium IP merchandise box decides fan loyalty, secondary share rate, and aftermarket premium. ZprintPro prints drawer-style boxes, magnetic closure boxes, limited-edition numbering, UV spot + foil logo for the global media franchise market. 100-10,000 piece runs, 7-15 business day production.",
-    ja: "日本の映像 IP スタジオ・アニメブランド・Comic-Con 出展者・限定版コレクティブ会社向け。高品質 IP グッズボックスがファンロイヤルティ・二次拡散率・中古市場プレミアムを決定。智印雲は引出し式・マグネット式・限定ナンバー印刷・UV スポット + 箔押しロゴでグローバルメディアフランチャイズ市場に 100-10,000 個小〜大ロット、7-15 営業日納品対応。",
+    ja: "日本の映像 IP スタジオ・アニメブランド・Comic-Con 出展者・限定版コレクティブ会社向け。高品質 IP グッズボックスがファンロイヤルティ・二次拡散率・中古市場プレミアムを決定。ZprintProは引出し式・マグネット式・限定ナンバー印刷・UV スポット + 箔押しロゴでグローバルメディアフランチャイズ市場に 100-10,000 個小〜大ロット、7-15 営業日納品対応。",
   },
 };
 
@@ -1460,6 +1460,25 @@ const lpCalendarPrinting: BlogPostMeta = {
     ja: '2027年カレンダー発注シーズン到来！壁掛け A3/A2、卓上 A5、ミニ 50部から。コート紙+PP加工+ツインワイヤー綴じ、3-5営業日生産、最短48時間、全国送料無料。',
   },
 };
+
+// 2026-08-05 v8 daily-content-evolve: A1/A2/A3 海报尺寸指南 (GSC 7d ~60 imps, posters × 尺寸长尾)
+const lpPosterSizeGuide: BlogPostMeta = {
+  slug: 'poster-size-guide',
+  categoryKey: 'posters',
+  source: 'daily',
+  date: '2026-08-05',
+  title: {
+    'zh-hk': 'A1 A2 A3 海報尺寸指南：印刷尺寸對照表・應用場景・紙材選擇 | 智印港 ZprintPro',
+    en: 'A1 A2 A3 Poster Size Guide: Dimensions Chart, Uses & Paper Choices | ZprintPro',
+    ja: 'A1 A2 A3 ポスターサイズガイド：寸法早見表・用途・用紙選び | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': 'A1 / A2 / A3 海報尺寸點樣揀？本文整理三種尺寸對照表（mm / cm / 英吋）、零售・展會・戶外場景應用建議、紙材與防水工藝選擇，附 4 條常見 FAQ，協助 10-1,000 張小至大批量落單，3-5 個工作天交付。',
+    en: 'A1, A2 and A3 poster sizes compared — exact dimensions in mm / cm / inches, best use cases for retail, trade shows and outdoor, paper & waterproof finish choices, 4 FAQs, 10-1,000 piece runs, 3-5 day production from Asia factory.',
+    ja: 'A1・A2・A3 ポスターサイズを徹底比較。寸法（mm / cm / インチ）早見表、小売・展示会・屋外での用途別選び方、用紙と防水加工の選び方、よくある質問 4 件、10-1,000 枚小〜大ロット、3-5 営業日生産。',
+  },
+};
+
 export const blogPosts: BlogPostMeta[] = [
   // Buying guides (9)
   bgBusinessCard,
@@ -1570,6 +1589,8 @@ export const blogPosts: BlogPostMeta[] = [
   lpSameDayFlyersHK,
   // 2026-08-05 v8 daily-content-evolve: 月曆印刷 (GSC 97 imps rank 46.31)
   lpCalendarPrinting,
+  // 2026-08-05 v8 daily-content-evolve: A1/A2/A3 海报尺寸指南 (GSC 7d ~60 imps)
+  lpPosterSizeGuide,
 ];
 
 // =============================================================================

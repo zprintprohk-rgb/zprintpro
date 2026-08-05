@@ -42,7 +42,7 @@ const translations = {
     hotProducts: '熱門產品',
     viewMore: '查詢更多',
     authorPrefix: '作者：',
-    author: '智印雲印刷專家',
+    author: '智印港印刷專家',
     published: '發布於',
     relatedProducts: '相關產品推薦',
   },
@@ -73,44 +73,44 @@ const translations = {
 const posts: Record<string, Record<string, { title: string; description: string; date: string; category: string; content: string }>> = {
   'zh-hk': {
     'company-intro': {
-      title: '智印雲印刷公司簡介：專業設備與一站式印刷服務',
-      description: '智印雲擁有海德堡6+1印刷機、HP數碼印刷機、馬天尼膠裝線等先進設備，提供從設計到印刷到後加工的一站式服務，服務香港及大灣區客戶超過15年。',
+      title: '智印港印刷公司簡介：專業設備與一站式印刷服務',
+      description: '智印港擁有海德堡6+1印刷機、HP數碼印刷機、馬天尼膠裝線等先進設備，提供從設計到印刷到後加工的一站式服務，服務香港及大灣區客戶超過15年。',
       date: '2024-06-01', category: '公司新聞',
       content: '',
     },
     'sticker-guide': {
       title: '香港貼紙印刷完全指南：材質、工藝與應用場景详解',
-      description: '深入了解香港貼紙印刷的各種材質選擇、表面處理工藝以及不同場景的應用建議。智印雲專家為您詳解防水貼紙、透明貼紙、燙金貼紙等熱門選項。',
+      description: '深入了解香港貼紙印刷的各種材質選擇、表面處理工藝以及不同場景的應用建議。智印港專家為您詳解防水貼紙、透明貼紙、燙金貼紙等熱門選項。',
       date: '2024-04-15', category: '貼紙知識',
       content: '',
     },
     'business-card-design': {
       title: '貼紙設計的10個黃金法則：打造令人難忘的品牌形象',
-      description: '從排版到色彩搭配，掌握貼紙設計的核心技巧。智印雲設計專家分享10個黃金法則，助您打造令人印象深刻的品牌貼紙。',
+      description: '從排版到色彩搭配，掌握貼紙設計的核心技巧。智印港設計專家分享10個黃金法則，助您打造令人印象深刻的品牌貼紙。',
       date: '2024-04-10', category: '貼紙知識',
       content: '',
     },
     'packaging-trends': {
       title: '2024包裝盒設計趨勢解析：讓產品在貨架上脫穎而出',
-      description: '探索2024年最新包裝盒設計趨勢，從極簡主義到環保材質。智印雲為您解析如何讓產品包裝成為品牌最佳代言人。',
+      description: '探索2024年最新包裝盒設計趨勢，從極簡主義到環保材質。智印港為您解析如何讓產品包裝成為品牌最佳代言人。',
       date: '2024-04-05', category: '包裝知識',
       content: '',
     },
     'cmyk-guide': {
       title: 'CMYK vs RGB：印刷色彩模式完全詳解',
-      description: '理解CMYK和RGB色彩模式的區別，確保您的設計在印刷時呈現最佳效果。智印雲印刷專家為您詳解色彩管理。',
+      description: '理解CMYK和RGB色彩模式的區別，確保您的設計在印刷時呈現最佳效果。智印港印刷專家為您詳解色彩管理。',
       date: '2024-03-28', category: '印刷工藝',
       content: '',
     },
     'paper-materials': {
       title: '印刷紙材選擇指南：從銅版紙到特種紙',
-      description: '不同紙材的特性與適用場景分析，幫助您為項目選擇最合適的印刷紙張。智印雲300+種紙材任您選擇。',
+      description: '不同紙材的特性與適用場景分析，幫助您為項目選擇最合適的印刷紙張。智印港300+種紙材任您選擇。',
       date: '2024-03-20', category: '印刷工藝',
       content: '',
     },
     'eco-printing': {
       title: '環保印刷：企業ESG與可持續包裝的未來',
-      description: '了解環保印刷材料和工藝，為地球和品牌形象雙贏做出選擇。智印雲助您實現綠色印刷目標。',
+      description: '了解環保印刷材料和工藝，為地球和品牌形象雙贏做出選擇。智印港助您實現綠色印刷目標。',
       date: '2024-03-15', category: '行業趨勢',
       content: '',
     },
@@ -131,13 +131,13 @@ const posts: Record<string, Record<string, { title: string; description: string;
     'flyer-printing-guide': { title: 'Custom Flyer Printing Guide for US Small Business: Sizes, Paper, Design | Free Shipping $99+', description: 'Custom flyer printing guide for US small business. Standard sizes (4x6 / 5x7 / 8.5x11 / A4), paper (glossy/matte/recycled/silk), finishing (UV coating/lamination/folding), 25-5000 MOQ, Free shipping over $99 USA, 3-5 day turnaround from Asia factory.', date: '2026-07-02', category: 'Printing Guide', content: '' },
     'food-packaging-printing-guide': {
       title: '食品包裝印刷完全指南：材質、安全認證與設計實務',
-      description: '食品級包裝印刷點樣揀？從牛皮紙盒到食品級淋膜，食品安全認證到設計實務，智印雲為您拆解食品包裝印刷的每個關鍵環節。',
+      description: '食品級包裝印刷點樣揀？從牛皮紙盒到食品級淋膜，食品安全認證到設計實務，智印港為您拆解食品包裝印刷的每個關鍵環節。',
       date: '2026-07-02', category: '包裝知識',
       content: '',
     },
     'paper-bag-printing-guide': {
       title: '香港紙袋印刷完全指南：材質、尺寸、手挽與設計趨勢',
-      description: '從牛皮紙、白卡紙到禮品紙袋，從手挽、提繩到設計工藝，智印雲為您拆解香港紙袋印刷的每個關鍵環節，助您打造高質感品牌包裝。',
+      description: '從牛皮紙、白卡紙到禮品紙袋，從手挽、提繩到設計工藝，智印港為您拆解香港紙袋印刷的每個關鍵環節，助您打造高質感品牌包裝。',
       date: '2026-07-02', category: '包裝知識',
       content: '',
     },
@@ -286,19 +286,19 @@ const posts: Record<string, Record<string, { title: string; description: string;
     'magnetic-closure-gift-box-ecommerce-brand-guide': { title: "Magnetic Closure Gift Box Guide - Cross-Border E-commerce Premium Packaging for US DTC Brands | ZprintPro", description: "US Shopify, Amazon FBA, Etsy, Kickstarter, subscription box DTC brands: magnetic closure box with crisp snap + foil logo is the fastest premium differentiator. ZprintPro supplies 100-piece trials to 50,000-piece rollouts.", date: '2026-07-15', category: 'Magnetic Gift Box', content: '' },
     'folding-box-cosmetics-brand-eco-friendly-guide': { title: "Folding Box Printing Guide - Eco-Friendly Cosmetics Brand Packaging for US Skincare & Beauty | ZprintPro", description: "US skincare, serum, sheet mask, lipstick, makeup brands: 5 eco-friendly folding box materials. FSC certified + soy ink + recyclable mark. 500-piece from $0.13/box, 5-10 business day production.", date: '2026-07-15', category: 'Eco Folding Box', content: '' },
     'restaurant-opening-flyer-printing-guide': {
-      title: '餐廳開業傳單印刷指南 · 香港餐飲旺季速遞方案 | 智印雲 ZprintPro',
+      title: '餐廳開業傳單印刷指南 · 香港餐飲旺季速遞方案 | 智印港 ZprintPro',
       description: '香港新餐廳開業如何用 A4 傳單吸客？本文整理旺季速遞、紙張選擇、單／雙面印刷、摺疊款實戰策略，附 4 條餐飲東主常見 FAQ，協助茶餐廳／私房菜／外賣小店精準觸及街坊與上班族。',
       date: '2026-07-16', category: '餐飲外賣',
       content: '',
     },
     'cosmetics-packaging-box-printing-guide': {
-      title: '化妝品包裝盒定制指南 · 護膚品牌結構與材質全攻略 | 智印雲 ZprintPro',
+      title: '化妝品包裝盒定制指南 · 護膚品牌結構與材質全攻略 | 智印港 ZprintPro',
       description: '護膚品新品牌如何揀包裝盒？比較天地盒、磁吸盒、摺疊盒 3 大結構，分析銅版紙、灰板、密度板等材質特性，附 4 條品牌創辦人常見 FAQ，協助 100-10,000 件 MOQ 精準控成本。',
       date: '2026-07-16', category: '美妝護膚',
       content: '',
     },
     'pet-food-sticker-printing-guide': {
-      title: '香港寵物食品品牌貼紙印刷指南 · 防水防油 FDA 認證 | 智印雲 ZprintPro',
+      title: '香港寵物食品品牌貼紙印刷指南 · 防水防油 FDA 認證 | 智印港 ZprintPro',
       description: '寵物食品新品牌點樣印合格標籤？比較防水貼紙、防油貼紙、透明貼紙 3 種材質，分析 FDA 食品級認證、BPA-free 油墨、QR Code 追溯系統，附 4 條品牌創辦人 FAQ，協助 100-10,000 件 MOQ。',
       date: '2026-07-16', category: '寵物',
       content: '',
@@ -306,27 +306,27 @@ const posts: Record<string, Record<string, { title: string; description: string;
 
     // 2026-07-20 v4 daily-content-evolve: 3 NEW Tier C 行业博客 (zh-hk locale titles)
     'religious-ceremony-printing-guide': {
-      title: '香港宗教禮儀印刷指南 · 教堂寺廟殯儀禮盒感謝袋定制 | 智印雲 ZprintPro',
+      title: '香港宗教禮儀印刷指南 · 教堂寺廟殯儀禮盒感謝袋定制 | 智印港 ZprintPro',
       description: '香港教堂／佛寺／道觀／殯儀館宗教場地印刷攻略：1200g 灰板硬盒 + 緞帶手挽 + 燙金十字架、250g 銅版紙啞面、350g 白卡紙訃聞，4 條場地負責人 FAQ，50-500 套精準下單。',
       date: '2026-07-20', category: '宗教文化',
       content: '',
     },
     'industrial-nameplate-printing-guide': {
-      title: '工業設備銘牌 / GHS 危險標籤印刷指南 · UL 認證 + ANSI Z535 標準 | 智印雲 ZprintPro',
+      title: '工業設備銘牌 / GHS 危險標籤印刷指南 · UL 認證 + ANSI Z535 標準 | 智印港 ZprintPro',
       description: '工業 4.0 設備銘牌 / GHS 危險化學品標籤 / UL 認證銘板 / ANSI Z535 警示標籤完整攻略：5 種材質（聚酯 PET / 聚酰亞胺 PI / 陽極氧化鋁 ANODIZED / 不鏽鋼 SUS / PVC 反光）+ 3M 9448A / VHB 4910 黏膠 + 4 條工業採購 FAQ。',
       date: '2026-07-20', category: '工業機械',
       content: '',
     },
     'construction-material-sample-book-printing-guide': {
-      title: '建築裝飾材料樣板手冊印刷指南 · 瓷磚石材窗簾色卡定制 | 智印雲 ZprintPro',
+      title: '建築裝飾材料樣板手冊印刷指南 · 瓷磚石材窗簾色卡定制 | 智印港 ZprintPro',
       description: '建築裝飾材料供應商必睇：5 種裝訂方式（騎馬釘／精裝／蝴蝶裝／活頁夾／卡片盒）+ 真材實料樣辦夾層 + 4 條建材供應商 FAQ，協助 50-500 本精準下單。',
       date: '2026-07-20', category: '建築工程',
       content: '',
     },
     // 2026-07-21 v7 daily-content-evolve: Q-004 apparel shopping bag — paper-bags × 服裝 (Tier A) — 純文字・v7 報價型 (5 檔實價)
     'apparel-shopping-bag-printing-guide': {
-      title: '香港服裝品牌紙袋印刷指南 · 環保購物袋品牌升級 | 智印雲 ZprintPro',
-      description: '香港時裝、潮牌、買手店老闆必睇。一個高質感的品牌紙袋決定客人會否在 IG 打卡分享。智印雲為本地時裝品牌提供白卡紙、黃牛皮、棉繩、絲帶、燙金、UV 局部全系列紙袋印刷,500-100,000 枚小至大批量,5-10 個工作天交付,順豐本地 + DHL 全球 2-4 天到貨,5 檔實價。',
+      title: '香港服裝品牌紙袋印刷指南 · 環保購物袋品牌升級 | 智印港 ZprintPro',
+      description: '香港時裝、潮牌、買手店老闆必睇。一個高質感的品牌紙袋決定客人會否在 IG 打卡分享。智印港為本地時裝品牌提供白卡紙、黃牛皮、棉繩、絲帶、燙金、UV 局部全系列紙袋印刷,500-100,000 枚小至大批量,5-10 個工作天交付,順豐本地 + DHL 全球 2-4 天到貨,5 檔實價。',
       date: '2026-07-21', category: '服裝紙袋',
       content: '',
     },
@@ -339,6 +339,13 @@ const posts: Record<string, Record<string, { title: string; description: string;
       content: '',
     },
 
+    // 2026-08-05 v8 daily-content-evolve: A1/A2/A3 海報尺寸指南 (GSC 7d ~60 imps, posters × 尺寸長尾)
+    'poster-size-guide': {
+      title: 'A1 A2 A3 海報尺寸指南：印刷尺寸對照表・應用場景・紙材選擇 | 智印港 ZprintPro',
+      description: 'A1 / A2 / A3 海報尺寸點樣揀？本文整理三種尺寸對照表（mm / cm / 英吋）、零售・展會・戶外場景應用建議、紙材與防水工藝選擇，附 4 條常見 FAQ，協助 10-1,000 張小至大批量落單，3-5 個工作天交付。',
+      date: '2026-08-05', category: '海報印刷',
+      content: '',
+    },
   },
 
     // 2026-07-27 v4.1 weekly-meta-refresh: T6-FI-006 金融證券 1st 覆蓋 (Tier B × P0 paper-bags)
@@ -357,7 +364,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
     },
     // 2026-08-05 v8 daily-content-evolve: 月曆印刷 (GSC 97 imps rank 46.31, calendars × Tier A) — 純文字・無図
     'calendar-printing-guide': {
-      title: '月曆印刷指南 2027：掛牆年曆 / 桌曆尺寸・紙材・交期全攻略 | 智印雲 ZprintPro',
+      title: '月曆印刷指南 2027：掛牆年曆 / 桌曆尺寸・紙材・交期全攻略 | 智印港 ZprintPro',
       description: '2027 年年曆採購季開始！8-10 月落單享批量折扣。掛牆年曆 A3/A2、桌曆 A5、迷你月曆 50 本起印，銅版紙 + 過膠 + 線圈裝訂，3-5 天交期，48 小時急單。',
       date: '2026-08-05', category: '印刷工藝',
       content: '',
@@ -388,6 +395,13 @@ const posts: Record<string, Record<string, { title: string; description: string;
       title: 'Gang-Run Card Boxes Guide: No Die-Cut Fee, 40-60% Cheaper | ZprintPro',
       description: 'US retail boutique, skincare, IP merchandise, and gift brand owners — gang-run white card boxes with shared standard die-cuts, NO die-cut fee, NO setup fee, 40-60% lower unit cost, 100-10,000 piece runs, 8-15 day production, 4 paper stocks + 3 box styles + 8 standard sizes, 5-tier pricing, Free Shipping over $99 USA, Free Design Mockup, 100 MOQ starter.',
       date: '2026-07-23', category: 'Gang-Run Boxes',
+      content: '',
+    },
+    // 2026-08-05 v8 daily-content-evolve: A1/A2/A3 Poster Size Guide (GSC 7d ~60 imps)
+    'poster-size-guide': {
+      title: 'A1 A2 A3 Poster Size Guide: Dimensions Chart, Uses & Paper Choices | ZprintPro',
+      description: 'A1, A2 and A3 poster sizes compared — exact dimensions in mm / cm / inches, best use cases for retail, trade shows and outdoor, paper & waterproof finish choices, 4 FAQs, 10-1,000 piece runs, 3-5 day production from Asia factory.',
+      date: '2026-08-05', category: 'Poster Printing',
       content: '',
     },
   },
@@ -518,9 +532,9 @@ const posts: Record<string, Record<string, { title: string; description: string;
     },
 
     // 2026-07-14 v4 daily-content-evolve: 3 blogs P0/P0/P1 (ja locale)
-    'baby-product-label-sticker-printing-guide': { title: "ベビー用品ステッカー印刷ガイド：FDA食品衛生ラベル 日本向け | ZprintPro", description: "日本の粉ミルク・ベビーフード・赤ちゃんスキンケア・マタニティ栄養ブランドオーナー様へ。FDA 準拠・BPA-free・冷凍対応ラベルが shelf 審査とママ世代 SNS 信頼を獲得。智印雲は 500〜100,000 枚小〜大ロット、5-7 営業日納品、$99 以上無料配送、DHL 国際配送対応。", date: '2026-07-14', category: 'ベビーステッカー', content: '' },
-    'ecommerce-shipping-bag-printing-guide': { title: "EC配送袋印刷ガイド：防水・改ざん防止 日本物流向け | ZprintPro", description: "日本の Amazon FBA・Shopify・Etsy・3PL 倉庫ブランドオーナー様へ。改ざん防止シール・追跡バーコード・返品ラベル付きの高品質印刷配送袋が、開封体験と返品率を決定。智印雲は防水クラフト・カスタム印刷・剥離粘着で 1,000〜200,000 個小〜大ロット、5-10 営業日納品、$99 以上無料配送、全国送料込み。", date: '2026-07-14', category: '配送袋', content: '' },
-    'media-merchandise-box-printing-guide': { title: "メディアフランチャイズ コレクターズボックス印刷ガイド：限定版・予約・日本ファン向け | ZprintPro", description: "日本の映像 IP スタジオ・アニメブランド・Comic-Con 出展者・限定版コレクティブ会社向け。高品質 IP グッズボックスがファンロイヤルティ・二次拡散率・中古市場プレミアムを決定。智印雲は引出し式・マグネット式・限定ナンバー印刷・UV スポット + 箔押しロゴでグローバルメディアフランチャイズ市場に 100-10,000 個小〜大ロット、7-15 営業日納品対応。", date: '2026-07-14', category: '映像IPグッズ', content: '' },
+    'baby-product-label-sticker-printing-guide': { title: "ベビー用品ステッカー印刷ガイド：FDA食品衛生ラベル 日本向け | ZprintPro", description: "日本の粉ミルク・ベビーフード・赤ちゃんスキンケア・マタニティ栄養ブランドオーナー様へ。FDA 準拠・BPA-free・冷凍対応ラベルが shelf 審査とママ世代 SNS 信頼を獲得。ZprintProは 500〜100,000 枚小〜大ロット、5-7 営業日納品、$99 以上無料配送、DHL 国際配送対応。", date: '2026-07-14', category: 'ベビーステッカー', content: '' },
+    'ecommerce-shipping-bag-printing-guide': { title: "EC配送袋印刷ガイド：防水・改ざん防止 日本物流向け | ZprintPro", description: "日本の Amazon FBA・Shopify・Etsy・3PL 倉庫ブランドオーナー様へ。改ざん防止シール・追跡バーコード・返品ラベル付きの高品質印刷配送袋が、開封体験と返品率を決定。ZprintProは防水クラフト・カスタム印刷・剥離粘着で 1,000〜200,000 個小〜大ロット、5-10 営業日納品、$99 以上無料配送、全国送料込み。", date: '2026-07-14', category: '配送袋', content: '' },
+    'media-merchandise-box-printing-guide': { title: "メディアフランチャイズ コレクターズボックス印刷ガイド：限定版・予約・日本ファン向け | ZprintPro", description: "日本の映像 IP スタジオ・アニメブランド・Comic-Con 出展者・限定版コレクティブ会社向け。高品質 IP グッズボックスがファンロイヤルティ・二次拡散率・中古市場プレミアムを決定。ZprintProは引出し式・マグネット式・限定ナンバー印刷・UV スポット + 箔押しロゴでグローバルメディアフランチャイズ市場に 100-10,000 個小〜大ロット、7-15 営業日納品対応。", date: '2026-07-14', category: '映像IPグッズ', content: '' },
     // 2026-07-15 daily-content-evolve: Q-017/018/019 new blogs (ja locale)
     'thick-paper-flyer-printing-restaurant-takeout-guide': { title: "厚紙チラシ印刷ガイド - 飲食店メニュー・テイクアウト向け完全解説 | ZprintPro", description: "日本のレストラン・居酒屋・カフェ・テイクアウト专卖店様へ。200gsm〜400gsm 全規格厚紙チラシ、100 枚試刷から 200,000 枚チェーン展開まで対応、4 営業日国内生産、$99 以上で全国無料配送。", date: '2026-07-15', category: '厚紙チラシ', content: '' },
     'magnetic-closure-gift-box-ecommerce-brand-guide': { title: "マグネット式ギフト ボックス カスタムガイド - 越境EC・DTC ブランド向けプレミアム包装 | ZprintPro", description: "日本の Shopify、Amazon FBA、Etsy、Kickstarter、Subscription Box DTC ブランドオーナー様へ。100 個 Kickstarter 試作から 50,000 個チェーン展開まで対応、5-10 営業日生産。", date: '2026-07-15', category: 'マグネット ボックス', content: '' },
@@ -593,6 +607,13 @@ const posts: Record<string, Record<string, { title: string; description: string;
       content: '',
     },
 
+    // 2026-08-05 v8 daily-content-evolve: A1/A2/A3 ポスターサイズガイド (GSC 7d ~60 imps)
+    'poster-size-guide': {
+      title: 'A1 A2 A3 ポスターサイズガイド：寸法早見表・用途・用紙選び | ZprintPro',
+      description: 'A1・A2・A3 ポスターサイズを徹底比較。寸法（mm / cm / インチ）早見表、小売・展示会・屋外での用途別選び方、用紙と防水加工の選び方、よくある質問 4 件、10-1,000 枚小〜大ロット、3-5 営業日生産。',
+      date: '2026-08-05', category: 'ポスター印刷',
+      content: '',
+    },
   }
 };
 
@@ -634,6 +655,8 @@ const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-
   // 2026-08-05 v8 daily-content-evolve: 月曆印刷 (calendar-printing-guide) + 8/4 遗留补位 (same-day-flyers)
   'calendar-printing-guide',
   'same-day-flyers-printing-hong-kong-guide',
+  // 2026-08-05 v8 daily-content-evolve: A1/A2/A3 海報尺寸指南
+  'poster-size-guide',
 ];
 const guideSlugs = getAllBuyingGuideSlugs();
 const clusterSlugs = getAllClusterSlugs();
@@ -1007,7 +1030,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                         />
                       </div>
                       {/* 2026-08-05 K3 12:24 拍板: 标题用 getProductDisplayTitle (长尾词+核心词版) 替代 getProductTitle (短名版)
-                          e.g. flyer blog sidebar 显示 "A4宣傳單張印刷 100張起印 HK$0.3/張 雙面彩印 | 智印雲 ZprintPro" 而不是 "A4宣傳單張"
+                          e.g. flyer blog sidebar 显示 "A4宣傳單張印刷 100張起印 HK$0.3/張 雙面彩印 | 智印港 ZprintPro" 而不是 "A4宣傳單張"
                           line-clamp-1 + 字号小 11px + sidebar 240-280px 宽度, 强制单行展示 (不再截断)
                           2026-08-05 K3 14:00 拍板: 标题字号放大 1.5 倍 (11px → 17px) 配合 6 visible
                           (整 17px 适配 sidebar 280px 宽度, line-clamp-1 单行, 长尾词标题"·品质保证·智印港" 仍能展示) */}
