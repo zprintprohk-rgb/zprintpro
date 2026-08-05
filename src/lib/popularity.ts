@@ -154,8 +154,8 @@ export function inferBlogCategory(post: { title?: string; category?: string; lin
       [/宣傳單張|傳單|flyer|leaflet|brochure|チラシ|フライヤー/i, 'flyers'],
       // sticker / 貼紙 / ステッカー
       [/貼紙|防水貼|透明貼|不乾膠|sticker|label|ステッカー|シール/i, 'stickers'],
-      // paper-bags / 紙袋 / 紙袋
-      [/紙袋|牛皮紙袋|手提袋|paper bag|kraft bag|紙袋|手提げ袋/i, 'paper-bags'],
+      // paper-bags / 紙袋 / 紙袋 (zh-hk + en + ja 全 locale, 8/5 14:20 K3 拍板)
+      [/紙袋|購物袋|牛皮紙袋|手提袋|paper bag|kraft bag|shopping bag|手提げ袋|バッグ|紙バッグ/i, 'paper-bags'],
       // packaging / 包裝盒 / パッケージ
       [/包裝盒|禮盒|包裝|磁吸盒|飛機盒|packaging|box|package|パッケージ|箱/i, 'packaging'],
       // posters / 海報 / ポスター
@@ -186,7 +186,14 @@ export function inferBlogCategory(post: { title?: string; category?: string; lin
     const first = products.find((p) => p.slug === post.linkedProducts![0]);
     if (first) return first.category_slug;
   }
-  // 优先级 3: Map blog category string → product category_slug
+  // 优先级 2.5 (2026-08-05 K3 14:20 拍板): post.category 是 BlogPostMeta.categoryKey 字段
+  // categoryKey 已经是 product category_slug (e.g. 'paper-bags' / 'flyers' / 'stickers'),
+  // 直接接受, 避免 priority 1 title 关键词没匹配时再走 priority 3 map (map 里没 'paper-bags' 这种 slug 字符串)
+  // 验证 category 是有效 product category_slug (在 categories 列表里)
+  if (post.category && categories.some((c) => c.slug === post.category)) {
+    return post.category;
+  }
+  // 优先级 3: Map blog category string → product category_slug (兼容老的 BlogContent 22 tabs 中文/英文 category 字符串)
   const map: Record<string, string> = {
     同人週邊: 'japan-doujin',
     同人誌印刷: 'japan-doujin',

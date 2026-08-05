@@ -856,15 +856,16 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
   // Q2=A: CSS marquee 14 条全 DOM, 5 visible
   const hotProducts = getTopSkuByCategory(14);
 
-  const linkedProductSlugs = post.linkedProducts?.slice(0, 4) || [];
-  let linkedProducts = linkedProductSlugs
-    .map((slug) => getProductBySlug(slug))
-    .filter((p): p is NonNullable<typeof p> => !!p);
-  // Fallback: K3 11:02 拍板 "其它 blog 底部相关主题相关 SKU 超链接"
-  if (linkedProducts.length === 0) {
-    const blogCat = inferBlogCategory({ category: post.category, linkedProducts: post.linkedProducts });
-    linkedProducts = getRelatedByCategory(blogCat, 4);
-  }
+  // 2026-08-05 K3 14:20 拍板: 底部"相关产品推荐"必须跟 blog 标题核心产品类目相同 + 按搜索量排名
+  // 8/5 12:24 修复加了 title 关键词推断, 但调用方没传 title, 走 fallback → 错推 flyer SKU
+  // 修法: 删 linkedProducts 死代码 (BlogPostMeta interface 无此字段, 永远空数组)
+  //       直接用 post.title[locale] + post.categoryKey 调 inferBlogCategory
+  //       post.categoryKey 已经是 product category_slug (e.g. 'paper-bags'), 跟 products.ts category_slug 一致
+  const blogCat = inferBlogCategory({
+    title: post.title?.[locale],
+    category: post.categoryKey,
+  });
+  const linkedProducts = getRelatedByCategory(blogCat, 4);
 
   return (
     <main className="min-h-screen bg-gray-50 py-12">
