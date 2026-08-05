@@ -865,7 +865,15 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
     title: post.title?.[locale],
     category: post.categoryKey,
   });
-  const linkedProducts = getRelatedByCategory(blogCat, 4);
+  // 2026-08-05 14:50 DEBUG: 直接信任 categoryKey 跳过 inferBlogCategory (priority 2.5 fallback 不稳)
+  // K3 14:20 拍板的核心要求是 "按 blog 标题核心产品类目推 SKU", post.categoryKey 已经是 author 标注的核心类目
+  // 比 inferBlogCategory 推断更准. 同时避免 priority 1 关键词在某些 locale 不匹配的问题
+  const finalBlogCat = (post.categoryKey && ['paper-bags','flyers','stickers','packaging','posters','books','menus','envelopes','calendars','red-packets','banners','educational','japan-doujin'].includes(post.categoryKey))
+    ? post.categoryKey
+    : blogCat;
+  const linkedProducts = getRelatedByCategory(finalBlogCat, 4);
+  // DEBUG HTML marker (M3 自查, push 后验证 LIVE HTML 含此 marker)
+  const _dbg = `<!-- DEBUG related-products: slug=${post.slug} locale=${locale} titleKey=${(post.title?.[locale] || '').slice(0,30)} categoryKey=${post.categoryKey} blogCat=${blogCat} finalBlogCat=${finalBlogCat} linkedSlugs=${linkedProducts.map(p => p.slug).join(',')} -->`;
 
   return (
     <main className="min-h-screen bg-gray-50 py-12">
@@ -915,6 +923,8 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
               {/* 相關產品推薦 */}
               {linkedProducts.length > 0 && (
                 <div className="mt-10 pt-8 border-t border-gray-100">
+                  {/* 2026-08-05 14:50 M3 DEBUG: 临时显示 blogCat / finalBlogCat / linkedProducts 验证 14:20 修复 */}
+                  <div data-debug-related style={{ display: 'none' }}>{`DEBUG: slug=${post.slug} locale=${locale} categoryKey=${post.categoryKey} blogCat=${blogCat} finalBlogCat=${finalBlogCat} linkedSlugs=${linkedProducts.map(p => p.slug).join(',')}`}</div>
                   <h3 className="text-lg font-bold text-[#333333] mb-4">{t.relatedProducts}</h3>
                   <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                     {linkedProducts.map((product) => (
