@@ -140,6 +140,33 @@
   - cron auto-commit 改 src/ 风险高: gsc-feedback-loop cron auto commit 改 page.tsx 引入 P0 500, cron 范围严限 .hermes/ only
   - Python regex 改 .ts 必跑 npm run build 验证 (8/4 18:30 P0 教训: 1 行错 6 commits build fail 6 push 浪费)
 
+【v8.2 升级 (2026-08-06 02:20 K3 拍板) - 双任务 daily cron: 1 新写 + 1 retrofit】
+- **触发**: K3 看 cosmetics v8 截图说"修复旧 blog 文章也要学这些, 不单单是结构"
+- **audit 结果 (8/6 2:20)**: 62 篇中 1 篇 v8_ready (cosmetics) + 6 篇 partial + 55 篇 old_format = **61 篇需 retrofit**
+- **v8 模板 v2 必读**: .hermes/template/blog-v8-seo-geo-template.md (新增 §10 视觉/排版 token / §11 Retrofit 模式 / §12 61 篇排期)
+- **双任务流水线 (1 push/天, 不破 quota)**:
+  - **任务 A: 1 篇新写** (按 8 周 60 篇 Pillar/Cluster/Case/News 排期)
+  - **任务 B: 1 篇 retrofit** (按 61 篇优先级, GSC imps × CTR gap 排序高分优先)
+  - **合并 1 commit 1 push**: 6 files (3 locale 新写 + 3 locale retrofit + 兜底 blog-posts.ts 视情况)
+- **retrofitt 4 步流水线** (与新写共享 9 段模板):
+  1. **审计** (audit_v8.py): 标 < 12/15 篇, 列出缺哪几项
+  2. **diff 改造** (不重写, 只补结构 + 视觉 token): 段 0 重點摘要 + 黄 callout + 2 table + 3 H3 + UL/OL + 4 FAQ + 蓝 CTA + Author + Sources + Disclaimer
+  3. **Tailwind class 应用** (按 §10 视觉 token): H1/H2/H3/段落 字号 + 颜色 + 间距
+  4. **verify 6 步**: scan-simplified + npm run build + 1 commit 1 push + R6 step 0 + 5 步 verify + live spot check 1 URL × 3 locale + K3 inbox 报告
+- **retrofitt 必保留** (避免破坏现有 SEO 权重):
+  - ✅ slug 不改 (URL 路径不变)
+  - ✅ 主关键词不改 (避免标题党)
+  - ✅ 产品锚定不改 (现有内链 SKU 保留)
+  - ✅ NAP 不改 (法务真实地址保留)
+- **retrofitt 优先级排序** (audit_v8.py 输出 .hermes/reports/blog-v8-audit-*.json):
+  - Phase A (8/6-8/12): 6 partial → 100% v8_ready
+  - Phase B (8/13-8/19): 25 篇 old_format 优先 (P0/P1 类目)
+  - Phase C (8/20-8/26): 20 篇 old_format (P1/P2 类目)
+  - Phase D (8/27-8/30): 10 篇 News / 长尾
+  - **8/30 验收**: 62/62 篇 v8_ready (100% 合规)
+- **retrofitt 排期文件**: .hermes/reports/blog-v8-audit-2026-08-06.json (61 篇详细评分, 含 zh-hk 简体字检测)
+- **audit 脚本**: _audit_v8.py (15 项 v8 标准评分, 输出 category: v8_ready / partial / old_format)
+
 【T2 cron 治理 (2026-08-06 0:39 K3 拍板)】
 - **严禁 git add -A / git add . / git add -u**: 只 git add 本 session 显式生成的 .ts/.tsx/.json/.md 具体路径
 - **commit 前 3 问**:

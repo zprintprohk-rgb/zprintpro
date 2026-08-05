@@ -3981,5 +3981,1053 @@
       ],
       "next_action": "8/12 复盘按此 ctr_targets 4 词出对比报告 (排名/CTR/imps 变化), 同步 8/6-8/12 v8 rollout 进度"
     }
-  ]
+  ],
+  "v8_retrofit": {
+    "audit_at": "2026-08-06T02:20:38+08:00",
+    "audit_trigger": "K3 8/6 2:20 反馈 cosmetics v8 视觉/排版是金标准, 旧 68 篇都要 retrofit",
+    "v8_template_version": "v2.0 (2026-08-06 02:20)",
+    "v8_template_doc": ".hermes/template/blog-v8-seo-geo-template.md",
+    "audit_report": ".hermes/reports/blog-v8-audit-2026-08-06.json",
+    "total_blogs": 62,
+    "v8_ready_count": 1,
+    "partial_count": 6,
+    "old_format_count": 55,
+    "phase_a_partial_8_6_8_12": [
+      {
+        "slug": "apparel-shopping-bag-printing-guide",
+        "current_score": 8.666666666666666,
+        "zh_score": 9,
+        "en_score": 9,
+        "ja_score": 8,
+        "zh_chars": 5346,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "蓝_CTA",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-12"
+      },
+      {
+        "slug": "baby-product-label-sticker-printing-guide",
+        "current_score": 8.333333333333334,
+        "zh_score": 8,
+        "en_score": 9,
+        "ja_score": 8,
+        "zh_chars": 3864,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-12"
+      },
+      {
+        "slug": "cmyk-guide",
+        "current_score": 8.0,
+        "zh_score": 8,
+        "en_score": 9,
+        "ja_score": 7,
+        "zh_chars": 3387,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-12"
+      },
+      {
+        "slug": "cross-border-ecommerce-shipping-box-guide",
+        "current_score": 8.666666666666666,
+        "zh_score": 8,
+        "en_score": 9,
+        "ja_score": 9,
+        "zh_chars": 6196,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-12"
+      },
+      {
+        "slug": "paper-materials",
+        "current_score": 8.0,
+        "zh_score": 8,
+        "en_score": 9,
+        "ja_score": 7,
+        "zh_chars": 3743,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-12"
+      },
+      {
+        "slug": "same-day-flyers-printing-hong-kong-guide",
+        "current_score": 8.0,
+        "zh_score": 8,
+        "en_score": 8,
+        "ja_score": 8,
+        "zh_chars": 4307,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-12"
+      }
+    ],
+    "phase_b_p0_p1_8_13_8_19": [
+      {
+        "slug": "auto-parts-shopping-bag-printing-guide",
+        "current_score": 7.666666666666667,
+        "zh_chars": 3679,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-19"
+      },
+      {
+        "slug": "design-file-specs",
+        "current_score": 7.666666666666667,
+        "zh_chars": 2523,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "4_FAQ",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-19"
+      },
+      {
+        "slug": "eco-printing",
+        "current_score": 7.666666666666667,
+        "zh_chars": 2716,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "4_FAQ",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-19"
+      },
+      {
+        "slug": "media-merchandise-box-printing-guide",
+        "current_score": 7.666666666666667,
+        "zh_chars": 4199,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "4_FAQ",
+          "蓝_CTA",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-19"
+      },
+      {
+        "slug": "paper-bag-printing-guide",
+        "current_score": 7.666666666666667,
+        "zh_chars": 2982,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "4_FAQ",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-19"
+      },
+      {
+        "slug": "real-estate-brochure-box-printing-guide",
+        "current_score": 7.666666666666667,
+        "zh_chars": 3744,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-19"
+      },
+      {
+        "slug": "restaurant-menu-printing-guide",
+        "current_score": 7.666666666666667,
+        "zh_chars": 3477,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-19"
+      },
+      {
+        "slug": "retail-shop-poster-printing-guide",
+        "current_score": 7.666666666666667,
+        "zh_chars": 3365,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-19"
+      },
+      {
+        "slug": "tea-beverage-gift-box-printing-guide",
+        "current_score": 7.666666666666667,
+        "zh_chars": 3689,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-19"
+      },
+      {
+        "slug": "wedding-favor-bag-printing-guide",
+        "current_score": 7.666666666666667,
+        "zh_chars": 4379,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-19"
+      },
+      {
+        "slug": "wedding-red-packet-printing-guide",
+        "current_score": 7.666666666666667,
+        "zh_chars": 3482,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-19"
+      },
+      {
+        "slug": "brand-materials-checklist",
+        "current_score": 7.333333333333333,
+        "zh_chars": 3826,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-19"
+      },
+      {
+        "slug": "food-packaging-printing-guide",
+        "current_score": 7.333333333333333,
+        "zh_chars": 2742,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "4_FAQ",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-19"
+      },
+      {
+        "slug": "hong-kong-printing-guide",
+        "current_score": 7.333333333333333,
+        "zh_chars": 3236,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-19"
+      },
+      {
+        "slug": "ip-character-sticker-printing-guide",
+        "current_score": 7.333333333333333,
+        "zh_chars": 5141,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "OL要点",
+          "蓝_CTA",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-19"
+      },
+      {
+        "slug": "packaging-trends",
+        "current_score": 7.333333333333333,
+        "zh_chars": 4027,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-19"
+      },
+      {
+        "slug": "real-estate-flyer-printing-guide",
+        "current_score": 7.333333333333333,
+        "zh_chars": 3462,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer",
+          "0_简体"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-19"
+      },
+      {
+        "slug": "sticker-guide",
+        "current_score": 7.333333333333333,
+        "zh_chars": 3782,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-19"
+      },
+      {
+        "slug": "company-intro",
+        "current_score": 7.0,
+        "zh_chars": 2088,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "4_FAQ",
+          "蓝_CTA",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-19"
+      },
+      {
+        "slug": "flyer-printing-guide",
+        "current_score": 7.0,
+        "zh_chars": 3065,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "4_FAQ",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-19"
+      },
+      {
+        "slug": "pharmaceutical-label-printing-guide",
+        "current_score": 7.0,
+        "zh_chars": 3221,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "4_FAQ",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-19"
+      },
+      {
+        "slug": "poster-printing-guide",
+        "current_score": 7.0,
+        "zh_chars": 3391,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "4_FAQ",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-19"
+      },
+      {
+        "slug": "baby-food-packaging-box-printing-guide",
+        "current_score": 6.666666666666667,
+        "zh_chars": 3178,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "4_FAQ",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-19"
+      },
+      {
+        "slug": "car-dealership-amenity-sticker-printing-guide",
+        "current_score": 6.666666666666667,
+        "zh_chars": 4208,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "OL要点",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-19"
+      },
+      {
+        "slug": "ecommerce-shipping-bag-printing-guide",
+        "current_score": 6.666666666666667,
+        "zh_chars": 3969,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "4_FAQ",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-19"
+      }
+    ],
+    "phase_c_p1_p2_8_20_8_26": [
+      {
+        "slug": "hotel-amenity-sticker-printing-guide",
+        "current_score": 6.666666666666667,
+        "zh_chars": 3286,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "OL要点",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-26"
+      },
+      {
+        "slug": "hotel-keycard-sleeve-printing-guide",
+        "current_score": 6.666666666666667,
+        "zh_chars": 4089,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "OL要点",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-26"
+      },
+      {
+        "slug": "jewellery-shopping-bag-printing-guide",
+        "current_score": 6.666666666666667,
+        "zh_chars": 2996,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "4_FAQ",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-26"
+      },
+      {
+        "slug": "marathon-event-poster-printing-guide",
+        "current_score": 6.666666666666667,
+        "zh_chars": 4745,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "OL要点",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-26"
+      },
+      {
+        "slug": "medical-device-packaging-box-guide",
+        "current_score": 6.666666666666667,
+        "zh_chars": 3244,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "4_FAQ",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-26"
+      },
+      {
+        "slug": "mtr-advertising-specs",
+        "current_score": 6.666666666666667,
+        "zh_chars": 2649,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "4_FAQ",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-26"
+      },
+      {
+        "slug": "packaging-box-custom-guide",
+        "current_score": 6.666666666666667,
+        "zh_chars": 2866,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "4_FAQ",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-26"
+      },
+      {
+        "slug": "product-label-printing-guide",
+        "current_score": 6.666666666666667,
+        "zh_chars": 4960,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "OL要点",
+          "4_FAQ",
+          "蓝_CTA",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-26"
+      },
+      {
+        "slug": "sports-merchandise-gift-box-printing-guide",
+        "current_score": 6.666666666666667,
+        "zh_chars": 3190,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "4_FAQ",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-26"
+      },
+      {
+        "slug": "trade-show-banner-printing-guide",
+        "current_score": 6.666666666666667,
+        "zh_chars": 4827,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "OL要点",
+          "4_FAQ",
+          "蓝_CTA",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-26"
+      },
+      {
+        "slug": "doujin-circle-printing-guide",
+        "current_score": 6.333333333333333,
+        "zh_chars": 4325,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "OL要点",
+          "4_FAQ",
+          "蓝_CTA",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-26"
+      },
+      {
+        "slug": "finance-summit-gift-bag-printing-guide",
+        "current_score": 6.333333333333333,
+        "zh_chars": 4128,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "OL要点",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-26"
+      },
+      {
+        "slug": "wedding-invitation-envelope-printing-guide",
+        "current_score": 6.333333333333333,
+        "zh_chars": 4458,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "OL要点",
+          "4_FAQ",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-26"
+      },
+      {
+        "slug": "graduation-yearbook-printing-guide",
+        "current_score": 6.0,
+        "zh_chars": 4615,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "OL要点",
+          "4_FAQ",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-26"
+      },
+      {
+        "slug": "business-card-design",
+        "current_score": 5.666666666666667,
+        "zh_chars": 2235,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "OL要点",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-26"
+      },
+      {
+        "slug": "calendar-printing-guide",
+        "current_score": 4.333333333333333,
+        "zh_chars": 2133,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "table_4行",
+          "4_FAQ",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer",
+          "Tailwind"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-26"
+      },
+      {
+        "slug": "gang-run-card-boxes-hk-guide",
+        "current_score": 4.333333333333333,
+        "zh_chars": 4495,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "3H3_3大结构",
+          "OL要点",
+          "4_FAQ",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer",
+          "Tailwind"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-26"
+      },
+      {
+        "slug": "poster-size-guide",
+        "current_score": 4.333333333333333,
+        "zh_chars": 2200,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "table_4行",
+          "4_FAQ",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer",
+          "Tailwind"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-26"
+      },
+      {
+        "slug": "financial-institution-gift-bag-printing-guide",
+        "current_score": 4.0,
+        "zh_chars": 3181,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "table_4行",
+          "OL要点",
+          "4_FAQ",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer",
+          "Tailwind"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-26"
+      },
+      {
+        "slug": "real-estate-floor-plan-poster-printing-guide",
+        "current_score": 4.0,
+        "zh_chars": 2970,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "table_4行",
+          "OL要点",
+          "4_FAQ",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer",
+          "Tailwind"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-26"
+      }
+    ],
+    "phase_d_news_tail_8_27_8_30": [
+      {
+        "slug": "construction-material-sample-book-printing-guide",
+        "current_score": 3.6666666666666665,
+        "zh_chars": 2834,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "table_4行",
+          "OL要点",
+          "4_FAQ",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer",
+          "Tailwind"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-30"
+      },
+      {
+        "slug": "industrial-nameplate-printing-guide",
+        "current_score": 3.6666666666666665,
+        "zh_chars": 2977,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "table_4行",
+          "OL要点",
+          "4_FAQ",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer",
+          "Tailwind"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-30"
+      },
+      {
+        "slug": "religious-ceremony-printing-guide",
+        "current_score": 3.6666666666666665,
+        "zh_chars": 2485,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "table_4行",
+          "OL要点",
+          "4_FAQ",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer",
+          "Tailwind"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-30"
+      },
+      {
+        "slug": "custom-card-boxes-small-batch-usa",
+        "current_score": 3.0,
+        "zh_chars": 3667,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "table_4行",
+          "3H3_3大结构",
+          "OL要点",
+          "4_FAQ",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer",
+          "Tailwind"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-30"
+      },
+      {
+        "slug": "folding-box-cosmetics-brand-eco-friendly-guide",
+        "current_score": 3.0,
+        "zh_chars": 3689,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "table_4行",
+          "UL场景",
+          "OL要点",
+          "4_FAQ",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer",
+          "Tailwind"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-30"
+      },
+      {
+        "slug": "magnetic-closure-gift-box-ecommerce-brand-guide",
+        "current_score": 3.0,
+        "zh_chars": 3548,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "table_4行",
+          "UL场景",
+          "OL要点",
+          "4_FAQ",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer",
+          "Tailwind"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-30"
+      },
+      {
+        "slug": "cosmetic-card-boxes-gang-run-japan",
+        "current_score": 2.6666666666666665,
+        "zh_chars": 3018,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "table_4行",
+          "3H3_3大结构",
+          "OL要点",
+          "4_FAQ",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer",
+          "Tailwind"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-30"
+      },
+      {
+        "slug": "thick-paper-flyer-printing-restaurant-takeout-guide",
+        "current_score": 2.6666666666666665,
+        "zh_chars": 2968,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "table_4行",
+          "UL场景",
+          "OL要点",
+          "4_FAQ",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer",
+          "Tailwind"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-30"
+      },
+      {
+        "slug": "pet-food-sticker-printing-guide",
+        "current_score": 1.6666666666666667,
+        "zh_chars": 1723,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "table_4行",
+          "3H3_3大结构",
+          "UL场景",
+          "OL要点",
+          "4_FAQ",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer",
+          "Tailwind"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-30"
+      },
+      {
+        "slug": "restaurant-opening-flyer-printing-guide",
+        "current_score": 1.3333333333333333,
+        "zh_chars": 1379,
+        "missing_zh": [
+          "重點摘要",
+          "黄_callout",
+          "table_4行",
+          "3H3_3大结构",
+          "UL场景",
+          "OL要点",
+          "4_FAQ",
+          "蓝_CTA",
+          "Author",
+          "Sources",
+          "Disclaimer",
+          "Tailwind",
+          "长度"
+        ],
+        "target_score": 15,
+        "deadline": "2026-08-30"
+      }
+    ],
+    "target_completion": "2026-08-30 (62/62 篇 v8_ready 100% 合规)"
+  }
 }
