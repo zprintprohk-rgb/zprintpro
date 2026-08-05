@@ -27,4 +27,11 @@
 
 【硬约束】封版零改动: page.tsx hero / *Card*.tsx / HotProducts / RelatedProducts / pricing.ts / products.ts price_range / price-data.generated.ts. 每天 ≤1 push (攒批, origin_ssh main), push 后 verify-deploy PASS 才算完成. 拿不准 → 选保守方案, 报告标注, 继续下一任务.
 
+【T2 cron 治理 (2026-08-06 0:39 K3 拍板, 8/5 P0 500 教训根因修复)】
+- **写权限仅限 .hermes/**: 本 cron 严禁修改 src/ 任何文件 (page.tsx / blog-posts.ts / products.ts / blog-data/*.json 等)
+- 唯一允许改: .hermes/industry-keyword-matrix.json + .hermes/logs/*.md + .hermes/reports/*.md + .hermes/k3-inbox/*.md + .hermes/gsc-*-*.csv/json
+- 若 GSC 建议需要改 src/, 写进 .hermes/logs/YYYY-MM-DD-gsc-suggested-src-fixes.md 待办清单, 不直接执行
+- 严禁 git add -A. 只 git add 具体 .hermes/ 路径
+- 严禁 commit 其他 session 的 working tree 残留 (8/5 15:10 c3b6f3f 教训: 本 cron 越权改 page.tsx 引入 19/24 blog 500)
+
 启动后立即读 SSoT (5 个文件, 优先级顺序), 然后按 v4 主任务流程开干.

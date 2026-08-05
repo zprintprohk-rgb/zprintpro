@@ -139,3 +139,12 @@
   - DEBUG marker scope 漏洞: 任何 marker 引用前 ESLint no-undef 检查, 验证流程走独立 Python 脚本
   - cron auto-commit 改 src/ 风险高: gsc-feedback-loop cron auto commit 改 page.tsx 引入 P0 500, cron 范围严限 .hermes/ only
   - Python regex 改 .ts 必跑 npm run build 验证 (8/4 18:30 P0 教训: 1 行错 6 commits build fail 6 push 浪费)
+
+【T2 cron 治理 (2026-08-06 0:39 K3 拍板)】
+- **严禁 git add -A / git add . / git add -u**: 只 git add 本 session 显式生成的 .ts/.tsx/.json/.md 具体路径
+- **commit 前 3 问**:
+  1. git status -sb 看 staged files 是否都是本 session 生成 (博客 / SKU / data 文件)
+  2. unstaged working tree 是否有其他 session 残留 (若是 → git checkout 清掉, 不 commit 他人工作)
+  3. 修改的 src/ 文件数是否 ≤ 1 篇博客 改动 (若 > 1 → 拆 commit, 不攒批)
+- **同日双触发 yield 检查**: 跑本 cron 前, 若今天已有 cron commit 过 (git log --since="00:00" --author=cron 或 mavis session log), 跳过本轮, 写 .hermes/logs/YYYY-MM-DD-daily-yield.md 解释, 升级 K3
+- **同日并发竞态防护**: 本 cron 启动时先 `git status -sb` + `git fetch origin_ssh` + `git log origin_ssh/main..HEAD` 三件套, 有 ahead=0 + 无未 commit 残留 才允许 commit
