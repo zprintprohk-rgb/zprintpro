@@ -87,15 +87,24 @@ function categoryHeat(): Map<string, number> {
   return heat;
 }
 
+// 2026-08-05 K3 12:24 拍板: 排除贺卡印刷类目 (greeting-cards) 在首页 12 条 / blog sidebar 14 条 top SKU 排名
+// §11 主营品类约束: 不写名片/咭片/business cards; K3 8/4 18:35 决策"贺卡印刷"同属非核心主营, 一并排除
+// 修法: popularity.ts getTopSkuByCategory 加 blocklist, 跳过 excluded categories
+// 影响: 14 类减 1 = 13 类有效, 首页 top 12 / sidebar top 14 自动从 13 类中选, 不再含 greeting-cards
+const EXCLUDED_CATEGORIES: ReadonlyArray<string> = ['greeting-cards'];
+
 /**
  * Sidebar 14 条 — K3 11:02 拍板
  * 14 类各取 1 条 top SKU (按 popularity), 按分类热度排
+ * 2026-08-05 K3 12:24: 排除 EXCLUDED_CATEGORIES (greeting-cards)
  * @param limit 14
  */
 export function getTopSkuByCategory(limit = 14): Product[] {
   const heat = categoryHeat();
   const topPerCategory: Product[] = [];
   for (const c of categories) {
+    // 2026-08-05 K3 拍板: 跳过非核心主营类目 (greeting-cards 等)
+    if (EXCLUDED_CATEGORIES.includes(c.slug)) continue;
     const candidates = products.filter((p) => p.category_slug === c.slug);
     if (candidates.length === 0) continue;
     const sorted = [...candidates].sort(
@@ -126,14 +135,58 @@ export function getRelatedByCategory(blogCategorySlug: string, limit = 4): Produ
 
 /**
  * 推断 blog category_slug (从 blog post object 找 4 个 hint)
- * 优先: post.category / buying-guide category / fallback 'stickers'
+ * 优先级 1: post.title 关键词 (zh-hk/en/ja 全 locale 标题关键词, 最稳)
+ * 优先级 2: post.linkedProducts[0] (如果博客作者 hardcode 了相关产品, 跟产品走)
+ * 优先级 3: post.category 字符串 map (BlogContent 22 tabs 10 内容类型 + 12 产品类目)
+ * 优先级 4: fallback 'flyers' (8/4 12:24 K3 拍板: 不要默认 'stickers', 改 'flyers' 是最常见博客主题)
+ *
+ * 2026-08-05 K3 12:24 拍板: blog 详情页底部"相关产品推荐"需要跟 blog 标题相关 (e.g. flyer blog → 推荐 flyer 类目 SKU)
+ * 根因 (8/4 11:15 popularity.ts 626a22a): "印刷工藝" → 'stickers' sticky default, 让 "即日宣傳單張印刷指南" 错推 sticker SKU
+ * 修法: 加 title 关键词推断 (优先级 1), 跟标题 locale 强匹配, 4 个 locale 全 cover
  */
-export function inferBlogCategory(post: { category?: string; linkedProducts?: string[] }): string {
+export function inferBlogCategory(post: { title?: string; category?: string; linkedProducts?: string[] }): string {
+  // 优先级 1: blog post title 关键词 (zh-hk + en + ja 全 locale) — 最稳, 跟主题强相关
+  if (post.title) {
+    const title = post.title;
+    // 关键: 任何匹配的关键词都 return, 顺序按 specificity 排 (具体词先于通用词)
+    const titleMap: Array<[RegExp, string]> = [
+      // flyer / 宣傳單張 / チラシ (specific)
+      [/宣傳單張|傳單|flyer|leaflet|brochure|チラシ|フライヤー/i, 'flyers'],
+      // sticker / 貼紙 / ステッカー
+      [/貼紙|防水貼|透明貼|不乾膠|sticker|label|ステッカー|シール/i, 'stickers'],
+      // paper-bags / 紙袋 / 紙袋
+      [/紙袋|牛皮紙袋|手提袋|paper bag|kraft bag|紙袋|手提げ袋/i, 'paper-bags'],
+      // packaging / 包裝盒 / パッケージ
+      [/包裝盒|禮盒|包裝|磁吸盒|飛機盒|packaging|box|package|パッケージ|箱/i, 'packaging'],
+      // posters / 海報 / ポスター
+      [/海報|poster|ポスター/i, 'posters'],
+      // books / 書籍 / 書籍
+      [/書刊|書籍|冊子|book|booklet|書籍|冊子|ブック/i, 'books'],
+      // menus / 餐牌 / メニュー
+      [/餐牌|菜單|menu|メニュー|料理/i, 'menus'],
+      // envelopes / 信封 / 封筒
+      [/信封|envelope|封筒/i, 'envelopes'],
+      // calendars / 年曆 / カレンダー
+      [/年曆|桌曆|月曆|calendar|カレンダー|手帳/i, 'calendars'],
+      // red-packets / 利是封 / ポチ袋
+      [/利是封|紅包|红包|red packet|red envelope|ポチ袋|のし袋/i, 'red-packets'],
+      // banners / 噴繪 / バナー
+      [/噴繪|banner|バナー|看板/i, 'banners'],
+      // educational / 校園 / 教育
+      [/校園|教育|練習簿|educational|school|教育|学園|練習帳/i, 'educational'],
+      // doujin / 同人 / 同人誌
+      [/同人|同人誌|doujin|同人誌|アニメ/i, 'japan-doujin'],
+    ];
+    for (const [pattern, catSlug] of titleMap) {
+      if (pattern.test(title)) return catSlug;
+    }
+  }
+  // 优先级 2: post.linkedProducts[0] → 跟产品类目走
   if (post.linkedProducts && post.linkedProducts.length > 0) {
     const first = products.find((p) => p.slug === post.linkedProducts![0]);
     if (first) return first.category_slug;
   }
-  // Map blog category string → product category_slug
+  // 优先级 3: Map blog category string → product category_slug
   const map: Record<string, string> = {
     同人週邊: 'japan-doujin',
     同人誌印刷: 'japan-doujin',
@@ -167,5 +220,6 @@ export function inferBlogCategory(post: { category?: string; linkedProducts?: st
     'Real Estate': 'posters',
   };
   if (post.category && map[post.category]) return map[post.category];
-  return 'stickers';
+  // 优先级 4: fallback 'flyers' (8/4 12:24 K3 拍板: 改 'stickers' → 'flyers', 避免非 flyer 主题 blog 错推 sticker SKU)
+  return 'flyers';
 }

@@ -168,8 +168,9 @@ textarea:focus-visible {
   aspect-ratio: 16 / 9;
 }
 
-/* 2026-08-04 K3 拍板 Q2=A: Sidebar 14 条 CSS marquee 5 visible
-   14 类各 1 条 top SKU 全 DOM, 比 B 静态 5 条多 9 link 内链传递 */
+/* 2026-08-04 K3 拍板 Q2=A: Sidebar 14 条 CSS marquee
+   14 类各 1 条 top SKU 全 DOM, 比 B 静态 5 条多 9 link 内链传递
+   2026-08-05 K3 12:24 拍板 B: 滚动太快, fallback duration 35s → 70s (慢 2x, 用户能看清 1 条) */
 @keyframes marquee-vertical {
   0% { transform: translateY(0); }
   100% { transform: translateY(-50%); }
@@ -178,7 +179,7 @@ textarea:focus-visible {
   animation-name: marquee-vertical;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  animation-duration: 35s; /* fallback, 实际由 inline style 覆盖 */
+  animation-duration: 70s; /* fallback, 实际由 inline style 覆盖 (14*5=70s) */
 }
 .marquee-vertical:hover {
   animation-play-state: paused;

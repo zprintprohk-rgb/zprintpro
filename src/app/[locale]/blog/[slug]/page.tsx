@@ -12,7 +12,7 @@ import { JsonLd } from '@/components/JsonLd';
 import { getBuyingGuideBySlug, getAllBuyingGuideSlugs } from '@/data/buying-guides';
 import { getClusterBySlug, getAllClusterSlugs } from '@/data/pillar-content';
 import { getBlogCover, getBlogPostMetaBySlug } from '@/data/blog-posts';
-import { products, getProductTitle, getProductDescription, getProductBySlug } from '@/data/products';
+import { products, getProductTitle, getProductDescription, getProductDisplayTitle, getProductBySlug } from '@/data/products';
 import { getTopSkuByCategory, getRelatedByCategory, inferBlogCategory } from '@/lib/popularity';
 import { convertPriceRangeString } from '@/lib/pricing';
 import { getProductMainImage } from '@/lib/product-image';
@@ -355,6 +355,13 @@ const posts: Record<string, Record<string, { title: string; description: string;
       date: '2026-07-27', category: '房地產',
       content: '',
     },
+    // 2026-08-05 v8 daily-content-evolve: 月曆印刷 (GSC 97 imps rank 46.31, calendars × Tier A) — 純文字・無図
+    'calendar-printing-guide': {
+      title: '月曆印刷指南 2027：掛牆年曆 / 桌曆尺寸・紙材・交期全攻略 | 智印雲 ZprintPro',
+      description: '2027 年年曆採購季開始！8-10 月落單享批量折扣。掛牆年曆 A3/A2、桌曆 A5、迷你月曆 50 本起印，銅版紙 + 過膠 + 線圈裝訂，3-5 天交期，48 小時急單。',
+      date: '2026-08-05', category: '印刷工藝',
+      content: '',
+    },
 
   // 2026-07-20 v4 daily-content-evolve: NEW posts.en block (之前 page.tsx 没有 en 块, en locale H1 走 fallback slug 不友好, 现新建)
   en: {
@@ -397,6 +404,13 @@ const posts: Record<string, Record<string, { title: string; description: string;
       title: 'Real Estate Floor Plan Poster Printing Guide: A1/A2 Waterproof Layout Prints for US Property Developers | ZprintPro',
       description: 'US new development sales galleries, model homes, real estate agency branches — 5 standard sizes (A1/A2/A3/B1/B2), 5 materials (waterproof PP film / matte art paper / synthetic paper / matte laminate / outdoor canvas), 4 real estate agent FAQs, 10-500 piece small-to-bulk runs, Free Shipping over $99 USA, 5-7 business day production, 100 MOQ starter, Made for USA property market.',
       date: '2026-07-27', category: 'Real Estate',
+      content: '',
+    },
+    // 2026-08-05 v8 daily-content-evolve: 2027 Calendar Printing Guide (GSC 97 imps, calendars × Tier A) — 純文字
+    'calendar-printing-guide': {
+      title: '2027 Calendar Printing Guide: Wall & Desk Calendar Sizes, Paper & Ordering | ZprintPro',
+      description: '2027 calendar season is here! Wall calendars A3/A2, desk A5, mini giveaways — 50-piece MOQ, art paper + lamination + wire-O binding, 3-5 day production, 48h rush, Free Shipping $99+ USA.',
+      date: '2026-08-05', category: 'Printing Techniques',
       content: '',
     },
 
@@ -571,6 +585,13 @@ const posts: Record<string, Record<string, { title: string; description: string;
       date: '2026-07-27', category: '不動産',
       content: '',
     },
+    // 2026-08-05 v8 daily-content-evolve: 2027年カレンダー印刷ガイド (GSC 97 imps) — 純文字・無図
+    'calendar-printing-guide': {
+      title: '2027年カレンダー印刷ガイド：壁掛け・卓上サイズ・用紙・納期完全解説 | ZprintPro',
+      description: '2027年カレンダー発注シーズン到来！壁掛け A3/A2、卓上 A5、ミニ 50部から。コート紙+PP加工+ツインワイヤー綴じ、3-5営業日生産、最短48時間、全国送料無料。',
+      date: '2026-08-05', category: '印刷技術',
+      content: '',
+    },
 
   }
 };
@@ -610,6 +631,9 @@ const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-
   // 2026-07-27 v4.1 weekly-meta-refresh: T6-FI-006 + T7-RP-007
   'financial-institution-gift-bag-printing-guide',
   'real-estate-floor-plan-poster-printing-guide',
+  // 2026-08-05 v8 daily-content-evolve: 月曆印刷 (calendar-printing-guide) + 8/4 遗留补位 (same-day-flyers)
+  'calendar-printing-guide',
+  'same-day-flyers-printing-hong-kong-guide',
 ];
 const guideSlugs = getAllBuyingGuideSlugs();
 const clusterSlugs = getAllClusterSlugs();
@@ -901,7 +925,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                         <div className="aspect-square bg-white relative overflow-hidden">
                           <img
                             src={getProductMainImage(product, locale)}
-                            alt={getProductTitle(product, locale)}
+                            alt={getProductDisplayTitle(product, locale)}
                             className="w-full h-full object-cover group-hover:scale-105 transition-transform"
                             loading="lazy"
                             decoding="async"
@@ -909,7 +933,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                         </div>
                         <div className="p-3">
                           <h4 className="text-sm font-bold text-[#333333] line-clamp-2 group-hover:text-[#2873F5] transition-colors">
-                            {getProductTitle(product, locale)}
+                            {getProductDisplayTitle(product, locale)}
                           </h4>
                         </div>
                       </a>
@@ -928,12 +952,16 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
               </h3>
               {/* 2026-08-04 K3 拍板 Q2=A: CSS marquee 14 条全 DOM, 5 visible
                   14 类各 1 条 top SKU (popularity.ts), 全部在 DOM 让 Googlebot 抓全 14 link
-                  (K3 评估: 比 B 静态 5 条多 9 link 内链传递) */}
+                  (K3 评估: 比 B 静态 5 条多 9 link 内链传递)
+                  2026-08-05 K3 12:24 拍板 B: 滚动太快, 改 3 visible + 滚动更慢
+                  - h-[400px] (3 visible, 每条 ~130px 含图+标题+描述+价格)
+                  - animationDuration: 14*2.5=35s → 14*5=70s (慢 2x, 用户能看清 1 条)
+                  - 14 条总数保留 (SEO 内链 + 全部 13 类非贺卡类目 1 条 top SKU, K3 8/4 决策不受影响) */}
               <div
-                className="overflow-hidden h-[640px] relative"
+                className="overflow-hidden h-[400px] relative"
                 style={{ maskImage: 'linear-gradient(to bottom, black 0%, black 95%, transparent 100%)', WebkitMaskImage: 'linear-gradient(to bottom, black 0%, black 95%, transparent 100%)' }}
               >
-                <div className="marquee-vertical space-y-5" style={{ animationDuration: `${hotProducts.length * 2.5}s` }}>
+                <div className="marquee-vertical space-y-5" style={{ animationDuration: `${hotProducts.length * 5}s` }}>
                   {[...hotProducts, ...hotProducts].map((product, idx) => (
                     <Link
                       key={`${product.sku_code}-${idx}`}
@@ -943,7 +971,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                       <div className="aspect-[4/3] rounded-lg overflow-hidden bg-gray-50 mb-3">
                         <Image
                           src={getProductMainImage(product, locale)}
-                          alt={getProductTitle(product, locale)}
+                          alt={getProductDisplayTitle(product, locale)}
                           width={300}
                           height={225}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform"
@@ -952,9 +980,11 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                           decoding="async"
                         />
                       </div>
-                      {/* K3 11:13 拍板: 标题 line-clamp-1 全标题 (不是 line-clamp-2 截断) */}
-                      <h4 className="text-sm font-semibold text-[#333333] group-hover:text-[#2873F5] transition-colors line-clamp-1">
-                        {getProductTitle(product, locale)}
+                      {/* 2026-08-05 K3 12:24 拍板: 标题用 getProductDisplayTitle (长尾词+核心词版) 替代 getProductTitle (短名版)
+                          e.g. flyer blog sidebar 显示 "A4宣傳單張印刷 100張起印 HK$0.3/張 雙面彩印 | 智印雲 ZprintPro" 而不是 "A4宣傳單張"
+                          line-clamp-1 + 字号小 11px + sidebar 240-280px 宽度, 强制单行展示 (不再截断) */}
+                      <h4 className="text-[11px] font-semibold text-[#333333] group-hover:text-[#2873F5] transition-colors line-clamp-1 leading-tight">
+                        {getProductDisplayTitle(product, locale)}
                       </h4>
                       {/* K3 11:13 拍板: 2 行小字 描述 */}
                       <p className="text-xs text-gray-500 mt-1 line-clamp-2">
