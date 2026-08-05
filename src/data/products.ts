@@ -12403,7 +12403,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'pvc-menus',
     category: 'menus',
     category_slug: 'menus',
-    name: 'PVC餐牌 | 餐牌 / 菜單 / 防水PVC', nameEn: 'PVC Menus | Restaurant Menus & PVC', nameJa: 'PVCメニュー | レストランメニュー / 防水', title_zh: 'PVC餐牌 · 防水防油可水洗 | 餐廳/咖啡店/酒吧 | 智印雲 ZprintPro',
+    name: 'PVC餐牌 | 餐牌 / 菜單 / 防水PVC', nameEn: 'PVC Menus | Restaurant Menus & PVC', nameJa: 'PVCメニュー | レストランメニュー / 防水', title_zh: 'PVC 餐牌印刷 · 防水防油可水洗 | 餐廳/咖啡店/酒吧菜單 | 智印港 ZprintPro',
     description: '防水防油PVC材質，易清潔耐用。餐廳、咖啡店首選。**適配行業**:餐廳、咖啡店、酒吧、茶餐廳、火鍋店、居酒屋、酒店餐廳、婚宴酒樓。', descriptionEn: 'Waterproof and oil-resistant PVC material, easy to clean and durable. **Best for**: restaurants, cafes, bars, cha chaan teng, hot pot, izakaya, hotel restaurants, wedding banquet halls.', descriptionJa: '防水・耐油性PVC素材、お手入れ簡単で耐久性あり。**適用業界**:レストラン、カフェ、バー、茶餐廳 (中華風食堂)、火鍋店、居酒屋、ホテルレストラン、ブライダル宴会。', description_zh: '防水防油PVC材質，易清潔耐用。餐廳、咖啡店首選。',
     optimizedAt: '2026-07-08',
     optimizationRound: 1,
