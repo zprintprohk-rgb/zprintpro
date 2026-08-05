@@ -1432,14 +1432,14 @@ const lpSameDayFlyersHK: BlogPostMeta = {
   source: 'daily',
   date: '2026-08-05',
   title: {
-    'zh-hk': '即日宣傳單張印刷指南 · 香港餐廳開業 / 活動速遞方案 | 智印港 ZprintPro',
-    en: 'Same-Day Flyer Printing Guide · 4-6hr Rush Turnaround for US Small Business | ZprintPro',
-    ja: '即日チラシ印刷ガイド · 4-6時間特急納品 日本の中小企業向け | ZprintPro',
+    'zh-hk': '即日印刷・即日宣傳單張指南 · 香港餐廳開業 / 活動速遞方案 4-6 小時 | 智印港 ZprintPro',
+    en: 'Same Day Printing & Same-Day Flyer Guide · 4-6hr Rush, 100 MOQ, Free Shipping $99+ | ZprintPro',
+    ja: '即日印刷・即日チラシ ガイド · 4-6時間特急、100枚〜、全国送料無料 | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '香港餐廳開幕 / 活動 late-call / 地產快銷旺季,Q1-Q2 同期急單需求 +35%。即日宣傳單張 100 張起印,4-6 小時特急,順豐本地 / DHL 全球,7 種現成紙材 + 3 工藝限制 + 4 FAQ,1 小時內下單出貨。',
-    en: 'US restaurant launch / event late-call / real estate quick sale peak season. Same-day flyers 100 MOQ, 4-6hr rush, USPS Priority / FedEx 2-day, 5 paper stocks + 3 process limits + 4 FAQ, ship within 1 hour.',
-    ja: '日本 レストラン開業 / イベント late-call / 不動産クイック 繁忙期。100 個 MOQ スターター、4-6 時間特急、ヤマト運輸 1-3 日配送、5 種在庫用紙 + 3 加工制限 + 4 FAQ、1 時間内注文出荷。',
+    'zh-hk': '香港餐廳開幕 / 活動 late-call / 地產快銷旺季,Q1-Q2 同期急單需求 +35%。即日宣傳單張 100 張起印,4-6 小時特急,順豐本地 / DHL 全球,7 種現成紙材 + 3 工藝限制 + 4 FAQ,1 小時內下單出貨。 即日印刷 4-6 小時特急, 100 張起印, 順豐本地 + DHL 全球 2-4 天。',
+    en: 'US restaurant launch / event late-call / real estate quick sale peak season. Same-day flyers 100 MOQ, 4-6hr rush, USPS Priority / FedEx 2-day, 5 paper stocks + 3 process limits + 4 FAQ, ship within 1 hour. Same Day Printing 4-6hr rush, 100 MOQ, USPS Priority + FedEx 2-day, Free Shipping $99+ USA.',
+    ja: '日本 レストラン開業 / イベント late-call / 不動産クイック 繁忙期。100 個 MOQ スターター、4-6 時間特急、ヤマト運輸 1-3 日配送、5 種在庫用紙 + 3 加工制限 + 4 FAQ、1 時間内注文出荷。 即日印刷 4-6時間特急、100枚から、ヤマト運輸 1-3日+DHL国際 2-4日。',
   },
 };
 
