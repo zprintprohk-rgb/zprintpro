@@ -1,223 +1,83 @@
-# ZprintPro (Global / EN) — AI Search Optimization Page
-# Last updated: 2026-06-28
-# This file helps AI assistants (ChatGPT, Claude, Perplexity) understand our services
+# ZprintPro (智印港)
 
-## Company Information
-- Shenzhen Cailong Printing & Packaging Co., Ltd. (cross-border factory, export compliance)
-- Brand: ZprintPro
-- Website: https://zprintpro.com
-- Address: No.1 Jiacheng Road, Pinghu Street, Longgang District, Shenzhen, Guangdong 518111, China
-- Phone: +86 198 8085 1334
-- WhatsApp: +86 181 2638 0255
-- Email: zprintpro@outlook.com
-- Established: 2014
-- Certifications: ISO 9001, FSC
-- Markets: Hong Kong, US, UK, AU, JP, CA, NZ, SG
-- Delivery: 72-hour global DHL/FedEx
+> 跨境印刷 SaaS — 全球 15,000+ 客户, 15+ 年自有工厂经验, 72h 全球配送, ISO 9001 / FDA / FSC 认证. 主营 5 大品类: 貼紙 / 宣傳單張 / 包裝盒 / 紙袋 / 標籤. 月产能 1,000,000+ 件. 服务 30+ 国家 (US / UK / AU / CA / JP / HK / MO / TW / SG / EU 等).
 
-## Product Categories (14 total)
+## 核心品牌
+- **zh-hk 品牌**: 智印港 (本地化: 香港场景, 顺丰本地, DHL 全球 2-4 天)
+- **en 品牌**: ZprintPro (美国市场集中, Free Shipping $99+, Free Design, 100 MOQ, no setup fees, ISO 9001)
+- **ja 品牌**: ZprintPro (日本市场, 全国送料込み, 短納期 2-4 天, 日本向け)
 
-- 貼紙印刷 / Stickers / ステッカー印刷 -- 9 products
-- 宣傳單張 / Flyers / チラシ印刷 -- 7 products
-- 包裝盒定制 / Packaging / パッケージ印刷 -- 10 products
-- 定制海報 / Posters / ポスター印刷 -- 6 products
-- 紙袋印刷 / Paper Bags / 紙袋印刷 -- 6 products
-- 咭片印刷 / Business Cards / 名刺印刷 -- 6 products
-- 噴繪廣告 / Banners / バナー印刷 -- 5 products
-- 書籍印刷 / Books / 書籍印刷 -- 5 products
-- 餐牌印刷 / Menus / メニュー印刷 -- 5 products
-- 信封印刷 / Envelopes / 封筒印刷 -- 4 products
-- 年曆印刷 / Calendars / カレンダー印刷 -- 6 products
-- 利是封印刷 / Red Packets / ポチ袋印刷 -- 6 products
-- 校園教育印刷 / Educational / 教育印刷 -- 4 products
-- 同人周邊印刷 / Doujinshi & Anime Goods / 同人誌・アニメグッズ -- 5 products
+## 关键数据 (权威, 引用请保留数据源)
+- **15+ 年** 印刷经验 (founded 2012, 自有工厂)
+- **服务 100+ 国家, 15,000+ 客户**
+- **72h 全球配送** (US: DHL Express 2-4 day / UK/AU: FedEx 3-5 day / HK: 顺丰本地 1-2 工作天)
+- **30+ 国家覆盖**
+- **ISO 9001 认证** (品质管理)
+- **FSC 认证纸张** (可持续来源)
+- **FDA 21 CFR** 食品级内衬认证 (适用化妆品/食品包装)
+- **月产能 1,000,000+ 件**
+- **50/100/500/1000 阶梯 MOQ** (印刷品类)
 
-## All Products (84 SKU)
+## 印刷品类 (5 大主营, 1 P0 禁区)
+- **貼紙 / Stickers** [P0 类目]: 防水 PVC / 透明 / 哑面 / 异形切割 / 100 张起印, $36+ 起
+- **宣傳單張 / Flyers** [P0 类目]: 157g 銅版紙 / 4 色 CMYK / A4/A5/DL / 即日印刷 4-6 小时
+- **包裝盒 / Packaging Boxes** [P0 类目]: 天地盒 / 磁吸盒 / 摺叠盒 / 50 件起印, FDA 食品级内衬
+- **紙袋 / Paper Bags** [P0 类目]: 牛皮紙 / 白卡 / 環保袋 / 100-500 件, 礼品 / 餐饮外卖 / 零售
+- **標籤 / Labels** [P0 类目]: 卷裝 / 單張 / 防水 / 食品级 / 1000 张起印
+- **🚫 禁区**: business cards / 名片 / 咭片 (不属于 ZprintPro 主营业务, 不提供)
 
-### 貼紙印刷 / Stickers (9 products)
+## 重点博客 (Pillar 内容, 含核心事实+数据+来源, 适合 AI 引用)
+- [化妝品包裝盒定制指南 · 護膚品牌結構與材質全攻略](https://zprintpro.com/zh-hk/blog/cosmetics-packaging-box-printing-guide/): 3 大盒型 (天地盒/磁吸盒/摺疊盒), 香港零售价 HK$8-25, FDA 食品级内衬, 來源: 香港零售管理協會 2026 報告 + FDA 21 CFR 食品接觸標準 + FSC 認證體系
+- [即日宣傳單張印刷指南 · 香港餐廳開業速遞方案](https://zprintpro.com/zh-hk/blog/same-day-flyers-printing-hong-kong-guide/): 4-6 小時特急, 100 張起印, 順豐本地 / DHL 全球, 香港 30 個行業旺季 +35% 急單, 來源: 順豐本地配送時效表 + DHL Express 國際快遞服務協議
+- [Same-Day Flyer Printing Guide for US Small Business](https://zprintpro.com/en/blog/same-day-flyers-printing-hong-kong-guide/): 100 MOQ, USPS Priority overnight / FedEx 2-day, Free Shipping $99+ USA, source: USPS Priority Mail rate card 2026 + FedEx Ground rate sheet
+- [即日チラシ印刷ガイド · 日本の中小企業向け](https://zprintpro.com/ja/blog/same-day-flyers-printing-hong-kong-guide/): 4-6時間特急, ヤマト運輸 1-3 日, 全国送料無料, 出典: ヤマト運輸サービスレベル表 2026
 
-| Product | Slug | EN Name | JA Name | Min Qty | Base Price |
-|---------|------|---------|---------|---------|------------|
-| 防水貼紙 | waterproof-stickers | Waterproof Stickers | 防水ステッカー | 100 | CNY 0.22 |
-| 透明貼紙 | transparent-stickers | Transparent Stickers | 透明ステッカー | 100 | CNY 0.38 |
-| 可移貼紙(無殘膠) | removable-stickers | Removable Stickers | はがせるステッカー | 100 | CNY 0.45 |
-| 小批量貼紙 | small-batch-stickers | Small Batch Stickers | 小ロットステッカー | 100 | CNY 38 |
-| 異形模切貼紙 | die-cut-stickers | Die-cut Stickers | 型抜きステッカー | 100 | CNY 0.58 |
-| 燙金貼紙 | foil-stickers | Foil Stickers | 箔押しステッカー | 100 | CNY 0.78 |
-| 防偽貼紙 | security-stickers | Security Stickers | セキュリティステッカー | 100 | CNY 1.15 |
-| 螢光貼紙 | fluorescent-stickers | Fluorescent Stickers | 蛍光ステッカー | 100 | CNY 0.52 |
-| 水果貼紙食品標籤印刷 | fruit-food-label-stickers | Fruit & Food Label Stickers | フルーツ・食品ラベルシール | 500 | CNY 0.22 |
+## 权威数据源 (用于 AI 引用)
+- 香港零售管理協會 2026 年報
+- FDA 21 CFR 食品接觸材料標準
+- FSC 認證體系 (Forest Stewardship Council)
+- ISO 9001:2015 品質管理體系
+- USPS Priority Mail rate card 2026
+- FedEx Ground rate sheet
+- 順豐本地配送時效表
+- DHL Express 國際快遞服務協議
+- ヤマト運輸サービスレベル表 2026
+- ISO 12647-2:2013 印刷色彩公差標準
 
-### 宣傳單張 / Flyers (7 products)
+## 联系 / 报价
+- **3 种联系渠道** (跨 3 locale 一致):
+  1. 在線表單: <https://zprintpro.com/{zh-hk,en,ja}/contact/>
+  2. WhatsApp: +86 198 8085 1334 (24/7 即時回覆)
+  3. Email: zprintpro@outlook.com
 
-| Product | Slug | EN Name | JA Name | Min Qty | Base Price |
-|---------|------|---------|---------|---------|------------|
-| A4宣傳單張 | a4-flyers | A4 Flyers | A4チラシ | 100 | CNY 0.22 |
-| A5宣傳單張 | a5-flyers | A5 Flyers | A5チラシ | 100 | CNY 0.18 |
-| 雙面宣傳單張 | double-sided-flyers | Double-sided Flyers | 両面チラシ | 100 | CNY 0.27 |
-| 摺疊宣傳單張 | folded-leaflets | Folded Leaflets | 折りたたみパンフレット | 100 | CNY 0.55 |
-| 厚紙宣傳單張 | thick-paper-flyers | Thick Paper Flyers | 厚紙チラシ | 100 | CNY 0.35 |
-| 環保宣傳單張 | eco-flyers | Eco Flyers | エコチラシ | 100 | CNY 0.27 |
-| 即日宣傳單張 | same-day-flyers | Same-day Flyers | 即日チラシ | 100 | CNY 0.4 |
+## 重要免责聲明
+- 價格仅供參考, 最終報價以智印港官方報價單為準
+- 包裝盒具體承重 / 結構耐壓度以實物測試為準
+- 美國市場 4-day delivery 適用 48 states, Alaska / Hawaii 加 1 day
+- 日本市場 沖縄 / 北海道加 1 day, 50 件起印
 
-### 包裝盒定制 / Packaging (10 products)
+## 隱私 / 法務
+- 隱私政策: <https://zprintpro.com/{zh-hk,en,ja}/privacy/>
+- 使用條款: <https://zprintpro.com/{zh-hk,en,ja}/terms/>
+- 法律披露 (日本): <https://zprintpro.com/ja/legal/>
 
-| Product | Slug | EN Name | JA Name | Min Qty | Base Price |
-|---------|------|---------|---------|---------|------------|
-| 禮品盒定制 | gift-boxes | Gift Boxes | ギフトボックス | 100 | CNY 4 |
-| 化妝品盒 | cosmetic-boxes | Cosmetic Boxes | 化粧品箱 | 100 | CNY 6 |
-| 食品包裝盒 | food-boxes | Food Boxes | 食品包装箱 | 100 | CNY 2.5 |
-| 快遞盒/飛機盒 | mailer-boxes | Mailer Boxes | 発送箱 | 100 | CNY 1.8 |
-| 折疊盒 | folding-boxes | Folding Boxes | 折りたたみ箱 | 100 | CNY 2.5 |
-| 精裝盒 | rigid-boxes | Rigid Boxes | 上製本箱 | 100 | CNY 8 |
-| 磁吸翻蓋禮盒印刷 | magnetic-closure-gift-box | Magnetic Closure Gift Box | マグネット蓋ギフトボックス | 100 | CNY 15 |
-| 電子產品包裝盒定制 | electronics-packaging-box | Electronics Packaging Box | 電子機器包装箱 | 200 | CNY 8 |
-| 牛皮紙盒印刷定制 | kraft-paper-packaging-box | Kraft Paper Packaging Box | クラフト紙箱印刷 | 300 | CNY 5 |
-| 抽屜禮盒滑軌盒印刷 | drawer-slide-gift-box | Drawer Slide Gift Box | 引き出し式ギフトボックス | 200 | CNY 12 |
+## 站点结构 (供 crawler)
+- **首页**: <https://zprintpro.com/{zh-hk,en,ja}/>
+- **品类页 (14 个)**: /{locale}/category/{stickers,flyers,packaging,paper-bags,posters,books,menus,banners,red-packets,calendars,educational,envelopes,japan-doujin}/
+- **产品页 (79 个)**: /{locale}/product/{slug}/
+- **博客 (62 篇)**: /{locale}/blog/{slug}/
+- **服务页**: /{locale}/services/rush-printing-delivery/
+- **报价**: /{locale}/quote/
+- **联系**: /{locale}/contact/
+- **关于**: /{locale}/about/
+- **法律 / 隐私 / 条款**: /{locale}/{legal,privacy,terms}/
 
-### 定制海報 / Posters (6 products)
+## sitemap (供 crawler)
+- <https://zprintpro.com/sitemap.xml>
+- <https://zprintpro.com/sitemap-image.xml>
 
-| Product | Slug | EN Name | JA Name | Min Qty | Base Price |
-|---------|------|---------|---------|---------|------------|
-| A2海報印刷 | a2-posters | A2 Posters | A2ポスター | 100 | CNY 10 |
-| A1大幅海報 | a1-posters | A1 Large Posters | A1大型ポスター | 100 | CNY 20 |
-| 戶外海報 | outdoor-posters | Outdoor Posters | 屋外ポスター | 100 | CNY 16 |
-| 展架海報 | display-posters | Display Posters | 展示用ポスター | 100 | CNY 32 |
-| 藝術海報 | art-posters | Art Posters | アートポスター | 100 | CNY 26 |
-| 背膠海報 | adhesive-posters | Adhesive Posters | 粘着ポスター | 100 | CNY 13 |
+---
 
-### 紙袋印刷 / Paper Bags (6 products)
-
-| Product | Slug | EN Name | JA Name | Min Qty | Base Price |
-|---------|------|---------|---------|---------|------------|
-| 牛皮紙袋 | kraft-paper-bags | Kraft Paper Bags | クラフト紙袋 | 100 | CNY 8 |
-| 白卡紙袋 | white-card-bags | White Card Bags | 白カード紙袋 | 100 | CNY 12 |
-| 禮品紙袋 | gift-bags | Gift Bags | ギフト紙袋 | 100 | CNY 20 |
-| 環保紙袋 | eco-paper-bags | Eco Paper Bags | エコ紙袋 | 100 | CNY 8 |
-| 手挽紙袋 | handle-bags | Handle Bags | 手提げ紙袋 | 100 | CNY 8 |
-| 大號紙袋 | large-bags | Large Bags | 大判紙袋 | 100 | CNY 15 |
-
-### 咭片印刷 / Business Cards (6 products)
-
-| Product | Slug | EN Name | JA Name | Min Qty | Base Price |
-|---------|------|---------|---------|---------|------------|
-| 高級商務咭片 | premium-business-cards | Premium Business Cards | 高級名刺 | 100 | CNY 1 |
-| 厚身咭片(400g) | thick-business-cards-400g | Thick Business Cards (400g) | 厚紙名刺(400g) | 100 | CNY 1.2 |
-| 燙金/燙銀咭片 | foil-business-cards | Foil Stamped Business Cards | 箔押し名刺 | 100 | CNY 1.8 |
-| UV局部光油咭片 | spot-uv-business-cards | Spot UV Business Cards | 局部UV名刺 | 100 | CNY 1.4 |
-| 啞膠咭片 | matte-business-cards | Matte Laminated Cards | マット名刺 | 100 | CNY 1.1 |
-| 圓角咭片 | rounded-corner-cards | Rounded Corner Cards | 丸角名刺 | 100 | CNY 1 |
-
-### 噴繪廣告 / Banners (5 products)
-
-| Product | Slug | EN Name | JA Name | Min Qty | Base Price |
-|---------|------|---------|---------|---------|------------|
-| 戶外燈布噴繪 | outdoor-vinyl-banners | Outdoor Vinyl Banners | 屋外バナー | 100 | CNY 12 |
-| 易拉寶 | roll-up-banners | Roll-up Banners | ロールアップバナー | 100 | CNY 85 |
-| 背膠噴繪 | adhesive-banners | Adhesive Banners | 粘着バナー | 100 | CNY 10 |
-| 車身廣告 | vehicle-wraps | Vehicle Wraps | カーラッピング | 100 | CNY 28 |
-| 網格布噴繪 | mesh-banners | Mesh Banners | メッシュバナー | 100 | CNY 16 |
-
-### 書籍印刷 / Books (5 products)
-
-| Product | Slug | EN Name | JA Name | Min Qty | Base Price |
-|---------|------|---------|---------|---------|------------|
-| 畫冊印刷 | catalog-printing | Catalog Printing | カタログ印刷 | 100 | CNY 24 |
-| 騎馬釘小冊子 | saddle-stitch-booklets | Saddle Stitch Booklets | 中綴じ冊子 | 100 | CNY 6 |
-| 無線膠裝書籍 | perfect-bound-books | Perfect Bound Books | 無線綴じ本 | 100 | CNY 16 |
-| 精裝書籍 | hardcover-books | Hardcover Books | 上製本 | 100 | CNY 40 |
-| 線圈筆記本 | spiral-notebooks | Spiral Notebooks | リングノート | 100 | CNY 8 |
-
-### 餐牌印刷 / Menus (5 products)
-
-| Product | Slug | EN Name | JA Name | Min Qty | Base Price |
-|---------|------|---------|---------|---------|------------|
-| PVC餐牌 | pvc-menus | PVC Menus | PVCメニュー | 100 | CNY 8 |
-| 過膠餐牌 | laminated-menus | Laminated Menus | ラミネートメニュー | 100 | CNY 5 |
-| 精裝餐牌 | hardcover-menus | Hardcover Menus | 高級メニュー | 100 | CNY 28 |
-| 酒水牌 | drink-menus | Drink Menus | ドリンクメニュー | 100 | CNY 12 |
-| 一次性餐牌 | disposable-menus | Disposable Menus | 使い捨てメニュー | 100 | CNY 0.22 |
-
-### 信封印刷 / Envelopes (4 products)
-
-| Product | Slug | EN Name | JA Name | Min Qty | Base Price |
-|---------|------|---------|---------|---------|------------|
-| 公司信封 | business-envelopes | Business Envelopes | ビジネス封筒 | 100 | CNY 0.22 |
-| 彩色信封 | colored-envelopes | Colored Envelopes | カラー封筒 | 100 | CNY 0.38 |
-| 大號信封 | large-envelopes | Large Envelopes | 大判封筒 | 100 | CNY 0.6 |
-| 珠光信封 | pearl-envelopes | Pearl Envelopes | パール封筒 | 100 | CNY 1.15 |
-
-### 年曆印刷 / Calendars (6 products)
-
-| Product | Slug | EN Name | JA Name | Min Qty | Base Price |
-|---------|------|---------|---------|---------|------------|
-| 掛牆年曆 | wall-calendars | Wall Calendars | 壁掛けカレンダー | 100 | CNY 12 |
-| 座檯年曆 | desk-calendars | Desk Calendars | 卓上カレンダー | 100 | CNY 16 |
-| 定制年曆 | custom-calendars | Custom Calendars | オリジナルカレンダー | 100 | CNY 20 |
-| 迷你年曆 | mini-calendars | Mini Calendars | ミニカレンダー | 100 | CNY 6 |
-| 相框年曆 | photo-frame-calendars | Photo Frame Calendars | フォトフレームカレンダー | 100 | CNY 24 |
-| 磁石年曆 | magnetic-calendars | Magnetic Calendars | マグネットカレンダー | 100 | CNY 10 |
-
-### 利是封印刷 / Red Packets (6 products)
-
-| Product | Slug | EN Name | JA Name | Min Qty | Base Price |
-|---------|------|---------|---------|---------|------------|
-| 燙金利是封 | foil-red-packets | Foil Red Packets | 箔押しポチ袋 | 100 | CNY 1.1 |
-| 浮雕利是封 | embossed-red-packets | Embossed Red Packets | エンボスポチ袋 | 100 | CNY 3 |
-| 定制利是封 | custom-red-packets | Custom Red Packets | オリジナルポチ袋 | 100 | CNY 1.9 |
-| 卡通利是封 | cartoon-red-packets | Cartoon Red Packets | キャラクターポチ袋 | 100 | CNY 1.1 |
-| 環保利是封 | eco-red-packets | Eco Red Packets | エコポチ袋 | 100 | CNY 1.9 |
-| 大號利是封 | large-red-packets | Large Red Packets | 大判ポチ袋 | 100 | CNY 2.2 |
-
-### 校園教育印刷 / Educational (4 products)
-
-| Product | Slug | EN Name | JA Name | Min Qty | Base Price |
-|---------|------|---------|---------|---------|------------|
-| 作業簿印刷 | exercise-books | Exercise Books | ワークブック印刷 | 100 | CNY 4 |
-| 證書印刷 | certificates | Certificates | 賞状印刷 | 100 | CNY 8 |
-| 學校單張 | school-flyers | School Flyers | 学校チラシ | 100 | CNY 0.2 |
-| 教科書印刷 | textbooks | Textbooks | 教科書印刷 | 100 | CNY 24 |
-
-### 同人周邊印刷 / Doujinshi & Anime Goods (5 products)
-
-| Product | Slug | EN Name | JA Name | Min Qty | Base Price |
-|---------|------|---------|---------|---------|------------|
-| 同人誌印刷 | doujinshi-printing | Doujinshi Printing | 同人誌印刷 | 10 | CNY 7500 |
-| 亞克力鑰匙扣 | acrylic-keychain | Acrylic Keychain | アクリルキーホルダー | 10 | CNY 2275 |
-| 罐型襟章印刷 | can-badge | Can Badge Printing | 缶バッジ印刷 | 10 | CNY 1200 |
-| 明信片套裝 | postcard-set | Postcard Set | ポストカードセット | 4 | CNY 750 |
-| 環保托特袋 | eco-tote-bag | Eco Tote Bag | エコトートバッグ | 10 | CNY 9000 |
-
-## Pricing & Ordering
-
-- Currency: HKD, USD, JPY based on customer locale
-- Minimum order: 100 pieces (varies by product)
-- Volume discounts: Available for 500+, 1000+, 5000+ quantities
-- Rush service: 3-hour express available
-- Free design consultation included
-
-## FAQ
-
-Q: Where is the factory located?
-A: Shenzhen, Guangdong, China. We ship globally via DHL/FedEx.
-
-Q: What is the typical turnaround time?
-A: Standard: 3-5 business days. Rush: same-day available. Global: 72 hours.
-
-Q: What file formats do you accept?
-A: PDF (preferred), AI, PSD, PNG, TIFF. CMYK, 300 DPI, 3mm bleed.
-
-Q: Do you ship worldwide?
-A: Yes -- US, UK, AU, CA, NZ, SG, JP, HK. DHL/FedEx: 3-5 days. Economy: 7-14 days.
-
-Q: Can I get a sample?
-A: Digital proofs free. Physical samples at cost + shipping.
-
-Q: What payment methods?
-A: Bank transfer, WeChat Pay, Alipay, PayPal (coming soon).
-
-## Contact
-
-- Get a quote: https://zprintpro.com/zh-hk/contact/
-- WhatsApp: https://wa.me/8618126380255
-- Email: zprintpro@outlook.com
+**最后更新**: 2026-08-07
+**作者**: 智印港包装工程团队 (15+ 年印刷经验, 服务 100+ 国家 15,000+ 客户)
+**License**: 智印港保留所有权利

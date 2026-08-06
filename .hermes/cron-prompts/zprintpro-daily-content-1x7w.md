@@ -167,6 +167,51 @@
 - **retrofitt 排期文件**: .hermes/reports/blog-v8-audit-2026-08-06.json (61 篇详细评分, 含 zh-hk 简体字检测)
 - **audit 脚本**: _audit_v8.py (15 项 v8 标准评分, 输出 category: v8_ready / partial / old_format)
 
+【v8.3 改造 (2026-08-07 02:20 K3 拍板, Qwen 3.8 策略) - 8/7-8/12 暂停新写, retrofit-only + 转化验证】
+- **触发**: K3 8/7 02:12 千问 3.8 策略 P0 询盘链路 + P2 retrofit 优先. 8/6 K3 拍板"60 新写 + 61 retrofit" 改为"8/7-8/12 暂停新写, retrofit 6 篇 partial + 转化验证前置"
+- **8/7-8/12 6 天任务调整**:
+  - **任务 A (新写) 暂停**: 8/7-8/12 daily cron 不写新 blog. 8/13 起恢复 (Phase A 6 Pillar 顺延 6 天, 落到 8/13-8/18)
+  - **任务 B (retrofit) 继续**: 6 篇 partial 8/6-8/12 每天 1 篇, 8/12 验收 6/6 v8_ready
+  - **任务 C (新增 转化验证前置)**: 每天 retrofit 完成后, 必跑 `conversion-link-check` 验证该页面所有 CTA 链接指向有效 URL, form 组件渲染正常
+- **任务 C 转化验证前置检查 (新增, v8.3 必跑)**:
+  1. **CTA 链接有效性**: grep 该页面 (1 URL × 3 locale) 的所有 `<a href>` 标签, 验证 (a) 无 `#` 占位符 (b) 无 `javascript:void(0)` (c) 指向真实路由 (含 locale prefix) 或 wa.me / mailto: (d) 无 `/blog/<未注册slug>`
+  2. **Form 组件渲染**: 该页面有 form CTA 时, 验证 (a) 指向 `/contact` 或 `/quote` (b) 跳转到 contact page 后 form 渲染 (load QuoteForm) (c) 1 设备/隐身窗口不报错
+  3. **GA4 事件链路**: grep 页面是否调用 `trackContactFormSubmit` 或 `gtag('event', 'contact_form_submit')`, 没找到 = 数据采集链路断
+  4. **whatsapp / mailto 备选入口**: 该页面有至少 1 个 wa.me 或 mailto: 备选入口, 不依赖单一 form 提交
+  5. **失败标记**: 上述任一失败 → 该页 conversion_status = 'broken', matrix 加 1 记录, K3 5 min verify
+- **6 篇 partial retrofit 8/7-8/12 排期** (按 avg_score 倒序, 高分优先):
+  1. 8/7: apparel-shopping-bag-printing-guide (8.7/15)
+  2. 8/8: cross-border-ecommerce-shipping-box-guide (8.7/15)
+  3. 8/9: baby-product-label-sticker-printing-guide (8.3/15)
+  4. 8/10: cmyk-guide (8.0/15)
+  5. 8/11: paper-materials (8.0/15)
+  6. 8/12: same-day-flyers-printing-hong-kong-guide (8.0/15, **T1 4 CTR 狙击, 4 FAQ 必含**)
+- **8/12 复盘日 (P0 优先级, 不 push)**:
+  - 跑 `.hermes/templates/review-8-12-template.md` 套模板生成 7 项指标报告
+  - 落盘 `.hermes/k3-inbox/2026-08-12-review-final.md`
+  - 升级 K3 1 段总结 + 7 项 PASS/FAIL + §9 路径推荐 A/B/C/D
+  - 不写新内容, 不做 1 push 攒批 (节省 quota 给 8/13 启动)
+- **8/13 起恢复双任务**:
+  - 8/13 启动 Phase A 6 Pillar 新写 (顺延 6 天: 8/13-8/18)
+  - retrofit 继续 25 篇 Phase B 优先 (8/13-8/19 7 天 × 3-4 篇/天)
+  - SKU 优化 (5 SKU/天) 持续 (不是 blog 新写, Qwen 3.8 P2 不限制)
+  - PDP 转化审查 1 篇/天 持续
+- **matrix conversion_status 字段 (v8.3 新增)**:
+  - 每个 retrofitted blog 加 `conversion_status: "verified" / "broken" / "untested"`
+  - `last_conversion_test: ISO timestamp` (8/7-8/12 retrofit 当日 22:00 跑)
+  - `ai_citation_count: 整数` (8/12 复盘时 K3 手动统计 4 引擎命中数)
+- **§0 硬约束 (从 v8.3 起)**:
+  - 1 改造前必跑 `grep "<slug>" src/data` 找全源文件 (Blog/PDP 双数据源 教训, MEMORY.md §9)
+  - 2 改造后必跑 `npm run build` 验证 syntax (Python regex append 教训, MEMORY.md §10)
+  - 3 cron auto-commit 范围严限 .hermes/ only (改 src/ 必 M3 显式 + K3 拍板, MEMORY.md §8)
+- **5 P0 转化验证步骤 (auto retrofit 完成后必跑, 落 .hermes/reports/conversion-link-check-YYYY-MM-DD.json)**:
+  1. grep 页面所有 `<a href>` + `<form action>` 标签
+  2. 验证 CTA 链接无 404 / 占位符 / 跨 locale 错位
+  3. 验证 form 组件 mount gate (ContactFormWrapper) 正常
+  4. 验证 trackContactFormSubmit / generate_lead 事件链 (待 K3 8/12 拍板事件名口径)
+  5. 验证备选入口 (wa.me / mailto) 至少 1 个
+- **不破 quota 红线**: 1 push/day 严格. 6 天 (8/7-8/12) 攒批 = 6 push. 8/12 复盘日不 push, 节省 1 quota. 累计 8/7-8/12 5 push (8/12 复盘日 0 push)
+
 【T2 cron 治理 (2026-08-06 0:39 K3 拍板)】
 - **严禁 git add -A / git add . / git add -u**: 只 git add 本 session 显式生成的 .ts/.tsx/.json/.md 具体路径
 - **commit 前 3 问**:

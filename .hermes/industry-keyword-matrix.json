@@ -5399,5 +5399,102 @@
       }
     ],
     "target_completion": "2026-08-30 (62/62 篇 v8_ready 100% 合规)"
+  },
+  "conversion_status": {
+    "policy": {
+      "values": [
+        "verified",
+        "broken",
+        "untested"
+      ],
+      "default": "untested",
+      "auto_test": "daily cron retrofit 完成后 22:00 跑 conversion-link-check",
+      "manual_test": "K3 5min 用 1 设备 + 1 隐身窗口走 '博客→CTA→表单→提交→感谢页'"
+    },
+    "schema": {
+      "status": "verified / broken / untested",
+      "last_conversion_test": "ISO 8601 timestamp",
+      "ai_citation_count": "整数 (8/12 复盘时 K3 手动统计 4 引擎命中数, default 0)"
+    },
+    "8_7_8_12_retrofit": {
+      "apparel-shopping-bag-printing-guide": {
+        "retrofit_target_date": "2026-08-07",
+        "conversion_status": "untested",
+        "last_conversion_test": null,
+        "ai_citation_count": 0,
+        "expected_cta_to": [
+          "/contact",
+          "/quote",
+          "wa.me/14158022922"
+        ],
+        "expected_event": "contact_form_submit",
+        "k3_5min_action": "1 设备 + 1 隐身窗口走全流程 + 检查 webhook 邮件 + GA4 DebugView"
+      },
+      "cross-border-ecommerce-shipping-box-guide": {
+        "retrofit_target_date": "2026-08-08",
+        "conversion_status": "untested",
+        "last_conversion_test": null,
+        "ai_citation_count": 0,
+        "expected_cta_to": [
+          "/contact",
+          "/quote",
+          "wa.me/14158022922"
+        ],
+        "expected_event": "contact_form_submit",
+        "k3_5min_action": "1 设备 + 1 隐身窗口走全流程 + 检查 webhook 邮件 + GA4 DebugView"
+      },
+      "baby-product-label-sticker-printing-guide": {
+        "retrofit_target_date": "2026-08-09",
+        "conversion_status": "untested",
+        "last_conversion_test": null,
+        "ai_citation_count": 0,
+        "expected_cta_to": [
+          "/contact",
+          "/quote",
+          "wa.me/14158022922"
+        ],
+        "expected_event": "contact_form_submit",
+        "k3_5min_action": "1 设备 + 1 隐身窗口走全流程 + 检查 webhook 邮件 + GA4 DebugView"
+      },
+      "cmyk-guide": {
+        "retrofit_target_date": "2026-08-10",
+        "conversion_status": "untested",
+        "last_conversion_test": null,
+        "ai_citation_count": 0,
+        "expected_cta_to": [
+          "/contact",
+          "/quote",
+          "wa.me/14158022922"
+        ],
+        "expected_event": "contact_form_submit",
+        "k3_5min_action": "1 设备 + 1 隐身窗口走全流程 + 检查 webhook 邮件 + GA4 DebugView"
+      },
+      "paper-materials": {
+        "retrofit_target_date": "2026-08-11",
+        "conversion_status": "untested",
+        "last_conversion_test": null,
+        "ai_citation_count": 0,
+        "expected_cta_to": [
+          "/contact",
+          "/quote",
+          "wa.me/14158022922"
+        ],
+        "expected_event": "contact_form_submit",
+        "k3_5min_action": "1 设备 + 1 隐身窗口走全流程 + 检查 webhook 邮件 + GA4 DebugView"
+      },
+      "same-day-flyers-printing-hong-kong-guide": {
+        "retrofit_target_date": "2026-08-12",
+        "conversion_status": "untested",
+        "last_conversion_test": null,
+        "ai_citation_count": 0,
+        "expected_cta_to": [
+          "/contact",
+          "/quote",
+          "wa.me/14158022922"
+        ],
+        "expected_event": "contact_form_submit",
+        "k3_5min_action": "1 设备 + 1 隐身窗口走全流程 + 检查 webhook 邮件 + GA4 DebugView"
+      }
+    }
   }
 }
