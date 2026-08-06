@@ -1478,6 +1478,23 @@ const lpPosterSizeGuide: BlogPostMeta = {
     ja: 'A1・A2・A3 ポスターサイズを徹底比較。寸法（mm / cm / インチ）早見表、小売・展示会・屋外での用途別選び方、用紙と防水加工の選び方、よくある質問 4 件、10-1,000 枚小〜大ロット、3-5 営業日生産。',
   },
 };
+const lpA5VsA6FlyerSize: BlogPostMeta = {
+  slug: 'a5-vs-a6-flyer-size',
+  categoryKey: 'flyers',
+  source: 'daily',
+  date: '2026-08-06',
+  title: {
+    'zh-hk': 'A5 定 A6 傳單？尺寸對照・用途揀法・印刷成本全攻略 | 智印港 ZprintPro',
+    en: 'A5 vs A6 Flyer Size: Dimensions, Use Cases & Print Cost Comparison | ZprintPro',
+    ja: 'A5 と A6 チラシのサイズ比較：寸法・用途・印刷コスト | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': 'A5（148×210mm）定 A6（105×148mm）傳單點揀？本文整理尺寸對照表（mm/cm/吋）、餐飲外賣・零售・展會派發場景建議、印刷成本差距同摺疊方案，附 4 條 FAQ，協助 50-10,000 張精準落單，3-5 個工作天交付。',
+    en: 'A5 vs A6 flyer size: exact dimensions in mm & inches, use cases for restaurants, retail and direct mail, cost gap, folding options, 4 FAQs, 50-10k piece runs.',
+    ja: 'A5 と A6 チラシのサイズを徹底比較。寸法（mm / インチ）早見表、飲食・小売・イベントでの用途別選び方、印刷コスト差と折り加工、よくある質問 4 件、50〜10,000 枚の小〜大ロット対応。',
+  },
+};
+
 
 export const blogPosts: BlogPostMeta[] = [
   // Buying guides (9)
@@ -1591,6 +1608,7 @@ export const blogPosts: BlogPostMeta[] = [
   lpCalendarPrinting,
   // 2026-08-05 v8 daily-content-evolve: A1/A2/A3 海报尺寸指南 (GSC 7d ~60 imps)
   lpPosterSizeGuide,
+  lpA5VsA6FlyerSize,
 ];
 
 // =============================================================================

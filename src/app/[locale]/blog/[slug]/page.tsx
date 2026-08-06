@@ -346,6 +346,12 @@ const posts: Record<string, Record<string, { title: string; description: string;
       date: '2026-08-05', category: '海報印刷',
       content: '',
     },
+    'a5-vs-a6-flyer-size': {
+      title: 'A5 定 A6 傳單？尺寸對照・用途揀法・印刷成本全攻略 | 智印港 ZprintPro',
+      description: 'A5（148×210mm）定 A6（105×148mm）傳單點揀？本文整理尺寸對照表（mm/cm/吋）、餐飲外賣・零售・展會派發場景建議、印刷成本差距同摺疊方案，附 4 條 FAQ，協助 50-10,000 張精準落單，3-5 個工作天交付。',
+      date: '2026-08-06', category: '傳單印刷',
+      content: '',
+    },
   },
 
     // 2026-07-27 v4.1 weekly-meta-refresh: T6-FI-006 金融證券 1st 覆蓋 (Tier B × P0 paper-bags)
@@ -402,6 +408,12 @@ const posts: Record<string, Record<string, { title: string; description: string;
       title: 'A1 A2 A3 Poster Size Guide: Dimensions Chart, Uses & Paper Choices | ZprintPro',
       description: 'A1, A2 and A3 poster sizes compared — exact dimensions in mm / cm / inches, best use cases for retail, trade shows and outdoor, paper & waterproof finish choices, 4 FAQs, 10-1,000 piece runs, 3-5 day production from Asia factory.',
       date: '2026-08-05', category: 'Poster Printing',
+      content: '',
+    },
+    'a5-vs-a6-flyer-size': {
+      title: 'A5 vs A6 Flyer Size: Dimensions, Use Cases & Print Cost Comparison | ZprintPro',
+      description: 'A5 vs A6 flyer size: exact dimensions in mm & inches, use cases for restaurants, retail and direct mail, cost gap, folding options, 4 FAQs, 50-10k piece runs.',
+      date: '2026-08-06', category: 'Flyer Printing',
       content: '',
     },
   },
@@ -614,6 +626,12 @@ const posts: Record<string, Record<string, { title: string; description: string;
       date: '2026-08-05', category: 'ポスター印刷',
       content: '',
     },
+    'a5-vs-a6-flyer-size': {
+      title: 'A5 と A6 チラシのサイズ比較：寸法・用途・印刷コスト | ZprintPro',
+      description: 'A5 と A6 チラシのサイズを徹底比較。寸法（mm / インチ）早見表、飲食・小売・イベントでの用途別選び方、印刷コスト差と折り加工、よくある質問 4 件、50〜10,000 枚の小〜大ロット対応。',
+      date: '2026-08-06', category: 'チラシ印刷',
+      content: '',
+    },
   }
 };
 
@@ -657,6 +675,7 @@ const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-
   'same-day-flyers-printing-hong-kong-guide',
   // 2026-08-05 v8 daily-content-evolve: A1/A2/A3 海報尺寸指南
   'poster-size-guide',
+  'a5-vs-a6-flyer-size', // 2026-08-06 v8 daily: A5 vs A6 傳單尺寸
 ];
 const guideSlugs = getAllBuyingGuideSlugs();
 const clusterSlugs = getAllClusterSlugs();
