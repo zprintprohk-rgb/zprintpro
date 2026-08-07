@@ -5409,12 +5409,14 @@
       ],
       "default": "untested",
       "auto_test": "daily cron retrofit 完成后 22:00 跑 conversion-link-check",
-      "manual_test": "K3 5min 用 1 设备 + 1 隐身窗口走 '博客→CTA→表单→提交→感谢页'"
+      "manual_test": "K3 5min 用 1 设备 + 1 隐身窗口走 '博客→CTA→表单→提交→感谢页'",
+      "section_0_7_link": "任何 /api/* 涉及 Supabase 写入的 endpoint 部署后必 §0.7 production smoke 3 步 (curl POST 200 + Supabase GET 落库 + 双向 verify). 详见 MEMORY.md §0.7"
     },
     "schema": {
       "status": "verified / broken / untested",
       "last_conversion_test": "ISO 8601 timestamp",
-      "ai_citation_count": "整数 (8/12 复盘时 K3 手动统计 4 引擎命中数, default 0)"
+      "ai_citation_count": "整数 (8/12 复盘时 K3 手动统计 4 引擎命中数, default 0)",
+      "api_endpoint_health": "\"200\" / \"500\" / \"unknown\" (8/7 9ab9ee4 /api/quote 修后默认 200, 部署必 §0.7 production smoke 验证)"
     },
     "8_7_8_12_retrofit": {
       "apparel-shopping-bag-printing-guide": {
@@ -5428,7 +5430,10 @@
           "wa.me/14158022922"
         ],
         "expected_event": "contact_form_submit",
-        "k3_5min_action": "1 设备 + 1 隐身窗口走全流程 + 检查 webhook 邮件 + GA4 DebugView"
+        "k3_5min_action": "1 设备 + 1 隐身窗口走全流程 + 检查 webhook 邮件 + GA4 DebugView",
+        "api_endpoint_health": "200",
+        "api_endpoint_health_checked_at": "2026-08-07T18:45:38+08:00",
+        "api_endpoint_health_check_sha": "9ab9ee4"
       },
       "cross-border-ecommerce-shipping-box-guide": {
         "retrofit_target_date": "2026-08-08",
@@ -5441,7 +5446,10 @@
           "wa.me/14158022922"
         ],
         "expected_event": "contact_form_submit",
-        "k3_5min_action": "1 设备 + 1 隐身窗口走全流程 + 检查 webhook 邮件 + GA4 DebugView"
+        "k3_5min_action": "1 设备 + 1 隐身窗口走全流程 + 检查 webhook 邮件 + GA4 DebugView",
+        "api_endpoint_health": "200",
+        "api_endpoint_health_checked_at": "2026-08-07T18:45:38+08:00",
+        "api_endpoint_health_check_sha": "9ab9ee4"
       },
       "baby-product-label-sticker-printing-guide": {
         "retrofit_target_date": "2026-08-09",
@@ -5454,7 +5462,10 @@
           "wa.me/14158022922"
         ],
         "expected_event": "contact_form_submit",
-        "k3_5min_action": "1 设备 + 1 隐身窗口走全流程 + 检查 webhook 邮件 + GA4 DebugView"
+        "k3_5min_action": "1 设备 + 1 隐身窗口走全流程 + 检查 webhook 邮件 + GA4 DebugView",
+        "api_endpoint_health": "200",
+        "api_endpoint_health_checked_at": "2026-08-07T18:45:38+08:00",
+        "api_endpoint_health_check_sha": "9ab9ee4"
       },
       "cmyk-guide": {
         "retrofit_target_date": "2026-08-10",
@@ -5467,7 +5478,10 @@
           "wa.me/14158022922"
         ],
         "expected_event": "contact_form_submit",
-        "k3_5min_action": "1 设备 + 1 隐身窗口走全流程 + 检查 webhook 邮件 + GA4 DebugView"
+        "k3_5min_action": "1 设备 + 1 隐身窗口走全流程 + 检查 webhook 邮件 + GA4 DebugView",
+        "api_endpoint_health": "200",
+        "api_endpoint_health_checked_at": "2026-08-07T18:45:38+08:00",
+        "api_endpoint_health_check_sha": "9ab9ee4"
       },
       "paper-materials": {
         "retrofit_target_date": "2026-08-11",
@@ -5480,7 +5494,10 @@
           "wa.me/14158022922"
         ],
         "expected_event": "contact_form_submit",
-        "k3_5min_action": "1 设备 + 1 隐身窗口走全流程 + 检查 webhook 邮件 + GA4 DebugView"
+        "k3_5min_action": "1 设备 + 1 隐身窗口走全流程 + 检查 webhook 邮件 + GA4 DebugView",
+        "api_endpoint_health": "200",
+        "api_endpoint_health_checked_at": "2026-08-07T18:45:38+08:00",
+        "api_endpoint_health_check_sha": "9ab9ee4"
       },
       "same-day-flyers-printing-hong-kong-guide": {
         "retrofit_target_date": "2026-08-12",
@@ -5493,8 +5510,1959 @@
           "wa.me/14158022922"
         ],
         "expected_event": "contact_form_submit",
-        "k3_5min_action": "1 设备 + 1 隐身窗口走全流程 + 检查 webhook 邮件 + GA4 DebugView"
+        "k3_5min_action": "1 设备 + 1 隐身窗口走全流程 + 检查 webhook 邮件 + GA4 DebugView",
+        "api_endpoint_health": "200",
+        "api_endpoint_health_checked_at": "2026-08-07T18:45:38+08:00",
+        "api_endpoint_health_check_sha": "9ab9ee4"
       }
     }
+  },
+  "ja_brand": {
+    "policy": {
+      "primary_brand_ja": "ZprintPro (per §13.13 三 Locale 鐵律, 维持现状)",
+      "alternate_brand_ja": "ジープリント (J-Print) - K3 8/8 02:52 拍板 '按最优执行'",
+      "rationale": "音译 Z→J (日语无 Z) + Print→プリント = 3 假名简洁, 跟 en ZprintPro 品牌延续, 跟'智印港'3 字公式同源, SEO 'プリント'是日语印刷核心搜索词",
+      "nap_consistency": "站名=社媒=目录=schema 4 处统一, 不许漂移 (per K3 §13.10 NAP 脱钩 + 智印港公式)",
+      "geo_entity_signal": "Organization JSON-LD 加 sameAs (X, LinkedIn, JP 目录) + areaServed=JP + knowsAbout=[学园祭印刷, POD, 卒業記念アルバム] = AI 引擎确认实体的机器可读身份证",
+      "brand_word_buried": "在价格横评页 + 学园祭指南 + 校园 blog 里自然提及品牌名 2-3 次, 诱导 branded search (per K3 8/8 02:52 第 3 段)"
+    },
+    "directory_targets_30": {
+      "print_pod_related": [
+        "プリントオンデマンド 比較サイト",
+        "デザイン系ディレクトリ",
+        "印刷業者 比較ポータル",
+        "名刺印刷 比較サイト",
+        "チラシ印刷 比較ナビ",
+        "パッケージ印刷 業者一覧",
+        "ステッカー印刷 業者リスト"
+      ],
+      "local_startup": [
+        "Startup Base",
+        "東京都印刷工業組合 名簿",
+        "大阪府印刷工業組合",
+        "IT 企業一覧",
+        "Startup List Japan",
+        "JP ビジネスディレクトリ",
+        "関西印刷組合 名簿"
+      ],
+      "industry_specific": [
+        "学园祭印刷 業者 比較",
+        "卒業記念アルバム 印刷",
+        "同人誌 印刷 比較",
+        "ダイレクトメール 業者",
+        "展示会 印刷 業者"
+      ],
+      "saas_aggregator": [
+        "ITreview 印刷カテゴリ",
+        "BOXIL 印刷カテゴリ",
+        "サービス比較 印刷"
+      ],
+      "total_target": 30,
+      "auto_glm_workflow": "8/10 起 AutoGLM 跑每天 10 条填表, K3 9:00 起来点最终提交+验证邮件",
+      "first_week_target": "20-30 条合规目录 = 日本实体存在感基线"
+    },
+    "branded_search_monitoring": {
+      "queries": [
+        "ZprintPro",
+        "ジープリント 印刷",
+        "ZprintPro ステッカー",
+        "ジープリント チラシ",
+        "ZprintPro 評判",
+        "ジープリント 料金"
+      ],
+      "baseline_8_8": 0,
+      "target_8_12": "≥1 个 branded search 出现 (zprintpro.com 域名)",
+      "monitor_cron": "zprintpro-gsc-feedback-loop (每周三 15:00) + 8/12 review 当日手动统计"
+    },
+    "schema_org_enhancement": {
+      "add_now": "Organization JSON-LD sameAs 数组 (X + LinkedIn + JP 目录) + areaServed=JP + knowsAbout=[学园祭印刷, POD, 卒業記念アルバム, ステッカー印刷, チラシ印刷]",
+      "code_change": "src/lib/seo.ts (working tree 落, 8/9 daily cron amend 合并 1 push)",
+      "verify": "8/9 daily cron auto 跑 + curl grep Organization schema 含 sameAs + areaServed=JP + knowsAbout"
+    },
+    "update_history": [
+      "2026-08-08 02:52 K3 拍板: ja 品牌词 ジープリント + 30 目录 + branded search 监测 + 智印港公式复制"
+    ]
+  },
+  "ja_seo_gap": {
+    "data_source": "zprintpro.com-Performance-on-Search-2026-08-08 (GSC JA 国家=日本 100%)",
+    "baseline_8_8": {
+      "impressions": 1638,
+      "clicks": 17,
+      "ctr_pct": 1.04,
+      "avg_position": 37.01,
+      "device_mobile_ctr_pct": 2.36,
+      "device_desktop_ctr_pct": 0.7,
+      "knowledge_panel_imps": 4,
+      "knowledge_panel_ctr_pct": 50.0
+    },
+    "high_imps_zero_ctr_queries_8": {
+      "教科書 印刷": {
+        "imps": 80,
+        "ctr_pct": 0,
+        "pos": 38.92,
+        "optimize_path": "PDP textbooks title + meta 加「教科書 印刷」「教科書 印刷会社」"
+      },
+      "印刷 カラー モード": {
+        "imps": 74,
+        "ctr_pct": 0,
+        "pos": 76.14,
+        "optimize_path": "cmyk-guide 博客重建 + PDP meta"
+      },
+      "教科書 印刷会社": {
+        "imps": 59,
+        "ctr_pct": 0,
+        "pos": 62.64,
+        "optimize_path": "PDP textbooks 强化 + ブログ content"
+      },
+      "両面カラー印刷": {
+        "imps": 47,
+        "ctr_pct": 0,
+        "pos": 23.81,
+        "optimize_path": "PDP double-sided-flyers 强化 (T1 狙击 8/6 已加, 跟踪 7 天)"
+      },
+      "印刷 cmyk": {
+        "imps": 44,
+        "ctr_pct": 0,
+        "pos": 86.23,
+        "optimize_path": "cmyk-guide 博客 P0 优先级 (305 imps 0 click pos 86)"
+      },
+      "印刷 rgb cmyk": {
+        "imps": 39,
+        "ctr_pct": 0,
+        "pos": 93.67,
+        "optimize_path": "cmyk-guide 拆 5 长尾 query 注入"
+      },
+      "印刷 カラー cmyk": {
+        "imps": 37,
+        "ctr_pct": 0,
+        "pos": 96.05,
+        "optimize_path": "cmyk-guide 拆 5 长尾 query 注入"
+      },
+      "教科書 印刷 会社": {
+        "imps": 32,
+        "ctr_pct": 0,
+        "pos": 64.56,
+        "optimize_path": "PDP textbooks 强化"
+      }
+    },
+    "high_ctr_anchor_queries_2": {
+      "オリジナル 箱 安い": {
+        "imps": 2,
+        "ctr_pct": 50.0,
+        "pos": 8,
+        "anchor": "PDP 包装盒价格优势 snippet 强"
+      },
+      "蛍光ステッカー": {
+        "imps": 5,
+        "ctr_pct": 20.0,
+        "pos": 37.2,
+        "anchor": "PDP fluorescent-stickers 荧光贴纸"
+      }
+    },
+    "high_imps_blogs_待优化": {
+      "cmyk-guide": {
+        "imps": 305,
+        "ctr_pct": 0,
+        "pos": 85.96,
+        "priority": "P0 提升",
+        "retrofit_date": "2026-08-10",
+        "optimize_path": "5 长尾 query 注入 H2/H3 + 重點摘要 + FAQ"
+      },
+      "paper-materials": {
+        "imps": 8,
+        "ctr_pct": 0,
+        "pos": 81,
+        "priority": "P1 常规",
+        "retrofit_date": "2026-08-11",
+        "optimize_path": "教材 印刷 / 教材 テキスト印刷 长尾"
+      },
+      "poster-buying-guide": {
+        "imps": 11,
+        "ctr_pct": 0,
+        "pos": 74,
+        "priority": "P2 待评估",
+        "optimize_path": "海报 size 长尾"
+      }
+    },
+    "high_imps_pdp_待优化": {
+      "kraft-paper-packaging-box": {
+        "imps": 36,
+        "ctr_pct": 2.78,
+        "pos": 34.97,
+        "optimize": "title 加「オリジナル 箱 安い」"
+      },
+      "double-sided-flyers": {
+        "imps": 48,
+        "ctr_pct": 0,
+        "pos": 23.33,
+        "optimize": "T1 狙击 8/6 已加両面カラー印刷, 跟踪 7 天"
+      },
+      "textbooks": {
+        "imps": 225,
+        "ctr_pct": 0,
+        "pos": 52.16,
+        "priority": "P0 提升",
+        "optimize": "title 加「教科書 印刷」「教科書 印刷会社」「教科書 印刷 会社」"
+      },
+      "waterproof-stickers": {
+        "imps": 38,
+        "ctr_pct": 0,
+        "pos": 15,
+        "priority": "P1 维持",
+        "optimize": "已 pos 15, 强"
+      },
+      "food-boxes": {
+        "imps": 31,
+        "ctr_pct": 0,
+        "pos": 53.87,
+        "priority": "P1 强化",
+        "optimize": "title 加「パッケージ箱 オーダーメイド 食品」"
+      },
+      "a2-posters": {
+        "imps": 22,
+        "ctr_pct": 0,
+        "pos": 48.41,
+        "priority": "P1 强化",
+        "optimize": "title 加「ポスター 印刷 a2」"
+      }
+    },
+    "target_8_12": {
+      "ctr_pct": "1.5%+ (+44%)",
+      "high_imps_queries_pos": "教科書 印刷 38.92 → 15-25 (-50%) / 印刷 cmyk 86.23 → 30-50 (-55%)",
+      "mobile_ctr_pct": "2.36 → 3+",
+      "kp_imps": "4 → 30+ (8/9 Org sameAs 改后)"
+    }
+  },
+  "en_seo_gap": {
+    "data_source": "zprintpro.com-Performance-on-Search-2026-08-08 (1) (GSC EN 国家=美国 100%)",
+    "baseline_8_8": {
+      "impressions": 2641,
+      "clicks": 14,
+      "ctr_pct": 0.53,
+      "avg_position": 27.91,
+      "device_mobile_ctr_pct": 1.45,
+      "device_desktop_ctr_pct": 0.43,
+      "knowledge_panel_imps": 9,
+      "knowledge_panel_ctr_pct": 55.56,
+      "knowledge_panel_pos": 2.67
+    },
+    "high_imps_zero_ctr_queries_12": {
+      "a2 poster": {
+        "imps": 45,
+        "ctr_pct": 0,
+        "pos": 38.87,
+        "optimize": "EN PDP a2-posters title 加「Free Shipping $99+」"
+      },
+      "small batch stickers": {
+        "imps": 29,
+        "ctr_pct": 0,
+        "pos": 7.76,
+        "priority": "P0 抓强",
+        "optimize": "第 1 页 0% CTR - title 加「100 MOQ Same Day Free Shipping」"
+      },
+      "how to print waterproof stickers": {
+        "imps": 25,
+        "ctr_pct": 0,
+        "pos": 83.16,
+        "optimize": "博客 sticker-guide 重建"
+      },
+      "saddle stitch booklet": {
+        "imps": 23,
+        "ctr_pct": 0,
+        "pos": 73.26,
+        "optimize": "博客 cross-border 改造"
+      },
+      "saddle stitch booklets": {
+        "imps": 22,
+        "ctr_pct": 0,
+        "pos": 87.82,
+        "optimize": "同上"
+      },
+      "small quantity label printing": {
+        "imps": 19,
+        "ctr_pct": 0,
+        "pos": 78.11,
+        "optimize": "EN PDP label 强化"
+      },
+      "small batch label printing": {
+        "imps": 18,
+        "ctr_pct": 0,
+        "pos": 60.17,
+        "optimize": "同上"
+      },
+      "a2 prints": {
+        "imps": 16,
+        "ctr_pct": 0,
+        "pos": 60.75,
+        "optimize": "EN PDP a2-posters 强化"
+      },
+      "a1 posters": {
+        "imps": 11,
+        "ctr_pct": 0,
+        "pos": 50.18,
+        "optimize": "EN PDP a1-posters 强化"
+      },
+      "adhesive banner": {
+        "imps": 11,
+        "ctr_pct": 0,
+        "pos": 57.73,
+        "optimize": "EN PDP adhesive-banners 强化"
+      },
+      "small batch sticker printing": {
+        "imps": 10,
+        "ctr_pct": 0,
+        "pos": 23.6,
+        "optimize": "第 3 页 0% CTR - title 加 USP"
+      },
+      "a2 posters": {
+        "imps": 10,
+        "ctr_pct": 0,
+        "pos": 51.3,
+        "optimize": "EN PDP a2-posters 强化"
+      }
+    },
+    "high_ctr_anchor_queries_3": {
+      "a4 flyer printing": {
+        "imps": 1,
+        "ctr_pct": 100,
+        "pos": 3,
+        "anchor": "EN PDP a4-flyers pos 3 第 1 页"
+      },
+      "print flyers": {
+        "imps": 1,
+        "ctr_pct": 100,
+        "pos": 5,
+        "anchor": "EN PDP flyers pos 5"
+      },
+      "pvc menu": {
+        "imps": 3,
+        "ctr_pct": 33.33,
+        "pos": 20.67,
+        "anchor": "EN PDP pvc-menus 强"
+      }
+    },
+    "high_imps_pdp_待优化": {
+      "a2-posters": {
+        "imps": 155,
+        "ctr_pct": 0,
+        "pos": 52.4,
+        "priority": "P0 提升",
+        "optimize": "title 加「Free Shipping $99+」+ USP"
+      },
+      "small-batch-stickers": {
+        "imps": 92,
+        "ctr_pct": 0,
+        "pos": 38.01,
+        "priority": "P0 抓强",
+        "optimize": "第 1 页 0% CTR - title 强化"
+      },
+      "saddle-stitch-booklets": {
+        "imps": 81,
+        "ctr_pct": 0,
+        "pos": 81.48,
+        "priority": "P1 强化",
+        "optimize": "title 加「100 MOQ」"
+      },
+      "waterproof-stickers": {
+        "imps": 40,
+        "ctr_pct": 0,
+        "pos": 70.65,
+        "priority": "P1 强化",
+        "optimize": "title 加 USP"
+      },
+      "adhesive-banners": {
+        "imps": 33,
+        "ctr_pct": 0,
+        "pos": 49,
+        "priority": "P1 强化",
+        "optimize": "title 加 USP"
+      },
+      "a1-posters": {
+        "imps": 31,
+        "ctr_pct": 0,
+        "pos": 56.16,
+        "priority": "P1 强化",
+        "optimize": "title 加 USP"
+      }
+    },
+    "kp_强信号_维持": {
+      "商家信息": {
+        "imps": 9,
+        "ctr_pct": 55.56,
+        "pos": 2.67,
+        "anchor": "EN KP 顶级信号, 维持 NAP + Org sameAs + llms.txt"
+      },
+      "目标": "8/9 Org sameAs 改后 EN KP imps 9 → 30+"
+    },
+    "target_8_12": {
+      "ctr_pct": "0.53 → 0.8%+ (+51%)",
+      "mobile_ctr_pct": "1.45 → 2.5%+ (+72%)",
+      "small_batch_stickers_pos_7_76": "PDP title 强化 0% → 3-5% CTR",
+      "kp_imps": "9 → 30+ (8/9 Org sameAs 改后)"
+    }
+  },
+  "gsc_8_8_8_12_execution": {
+    "8_8_09_00_k3_runs": {
+      "JA_PDP_title_optimize_5_sku": [
+        "textbooks (P0 教科書 印刷 191 imps)",
+        "kraft-paper-packaging-box (オリジナル 箱 安い 锚)",
+        "a2-posters (P1 ポスター 印刷 a2)",
+        "food-boxes (P1 パッケージ箱 オーダーメイド 食品)",
+        "hardcover-books (P1 上製本 印刷)"
+      ],
+      "EN_PDP_title_optimize_5_sku": [
+        "small-batch-stickers (P0 第 1 页 0% CTR 抓强)",
+        "a2-posters (P0 Free Shipping USP)",
+        "saddle-stitch-booklets (P1 100 MOQ)",
+        "waterproof-stickers (P1 USP)",
+        "adhesive-banners (P1 USP)"
+      ]
+    },
+    "8_9_daily_cron_retrofit": "cross-border-ecommerce-shipping-box-guide (常规) - 末尾埋点ジープリント + 加 saddle stitch / sticker-guide 长尾 (EN imps 23+25 = 48)",
+    "8_10_daily_cron_p0_提升": "cmyk-guide 博客重建 P0 优先级 (305 imps 0 click pos 86) - 拆 5 长尾 query 注入 (印刷 cmyk 44 + rgb cmyk 39 + カラー cmyk 37 + 用 cmyk 24 + cmyk rgb 22 = 142 imps)",
+    "8_11_daily_cron_常规": "paper-materials 博客改造 (8 imps pos 81) - 注入 教材 印刷 + 教材 テキスト印刷 长尾 (15+21=36 imps)",
+    "8_12_daily_cron_T1_狙击": "same-day-flyers-printing-hong-kong-guide (T1 CTR 狙击) - 跟踪両面カラー印刷 7 天变化 (pos 23.33 → 期望 10-15) + 4 FAQ 必含",
+    "8_9_org_sameAs_改": "src/lib/seo.ts Organization sameAs 数组 (X + LinkedIn + 30 JP 目录 + Startup Base) + knowsAbout=[学园祭印刷, POD, 卒業記念アルバム, ステッカー印刷, チラシ印刷] - 与 daily cron cross-border retrofit amend 合并 1 push (per 3A)",
+    "8_10_8_12_AutoGLM_启动": "K3 9:00 起来跑 AutoGLM 日本目录填表, 每天 10 条, K3 点提交 + 邮箱验证 - 30 目录目标 (印刷/POD 7 + 本地/创业 7 + 行业 5 + SaaS 3 = 22 起步)",
+    "8_12_branded_search_监测": "测试 6 query (ZprintPro / ジープリント / etc.) - 当前 0 命中, 目标 ≥1 命中 zprintpro.com 域名",
+    "expect_8_12_kpi": {
+      "JA CTR": "1.04% → 1.5%+ (+44%)",
+      "EN CTR": "0.53% → 0.8%+ (+51%)",
+      "EN 移动 CTR": "1.45% → 2.5%+ (+72%)",
+      "JA 高 imps pos": "教科書 印刷 38.92 → 15-25 (-50%)",
+      "EN small batch stickers pos 7.76": "PDP title 强化 0% → 3-5% CTR",
+      "branded search": "0 → ≥1",
+      "JA 询盘": "0 → ≥2 (per §6.1 4 天冲刺)"
+    },
+    "update_history": [
+      "2026-08-08 03:44 K3 拍板 + GSC 数据驱动优化执行表"
+    ]
+  },
+  "gsc_targeting_v2": {
+    "version": "v2",
+    "created_at": "2026-08-08T04:00:00+08:00",
+    "creator": "Mavis (M3)",
+    "trigger": "K3 8/8 03:44 GSC 数据分析请求 + K3 '按最优执行' 自主拍板",
+    "source_files": [
+      "F:\\zprintpro-nextjs\\GSC数据\\zprintpro.com-Performance-on-Search-2026-08-08 (JA 日本)",
+      "F:\\zprintpro-nextjs\\GSC数据\\zprintpro.com-Performance-on-Search-2026-08-08 (1) (EN 美国)"
+    ],
+    "summary": {
+      "JA_imps_3m": 1638,
+      "JA_clicks_3m": 17,
+      "JA_ctr": 1.04,
+      "JA_pos": 37.01,
+      "JA_mobile_ctr": 2.36,
+      "JA_desktop_ctr": 0.7,
+      "JA_mobile_to_desktop_ratio": 3.37,
+      "JA_KP_pos_8_50pct_CTR": "2/4 = 50% (商家信息 pos 8 强信号)",
+      "EN_imps_3m": 2641,
+      "EN_clicks_3m": 14,
+      "EN_ctr": 0.53,
+      "EN_pos": 27.91,
+      "EN_mobile_ctr": 1.45,
+      "EN_desktop_ctr": 0.43,
+      "EN_mobile_to_desktop_ratio": 3.37,
+      "EN_KP_pos_2.67_55.56pct_CTR": "5/9 = 55.56% (商家信息 pos 2.67 顶级信号)"
+    },
+    "JA_blackhole_buckets": {
+      "A_cmyk_series_197_imps": {
+        "queries": [
+          "印刷 cmyk 44",
+          "印刷 rgb cmyk 39",
+          "印刷 カラー cmyk 37",
+          "印刷 用 cmyk 24",
+          "印刷 cmyk rgb 22",
+          "cmyk 印刷 11",
+          "印刷 色 cmyk 10",
+          "印刷 rgb cmyk 違い 5",
+          "rgb と cmyk 5",
+          "rgb カラー と は 5",
+          "rgb cmyk 違い 1",
+          "rgb カラーモード 2",
+          "cmyk カラー 2",
+          "rgb cmyk 1+1",
+          "rgb 印刷 6",
+          "印刷 rgb 8",
+          "cmyk 1",
+          "rgb カラーモード 2",
+          "cmyk rgb 4",
+          "cmyk 印刷 11"
+        ],
+        "total_imps": 197,
+        "rank_range": "80-99 (4-10 页外)",
+        "root_cause": "排名太远 + cmyk-guide blog 内容深度不足 + 缺外链",
+        "fix": "8/10 retrofit cmyk-guide P0 优先级提升 + 拆 5 长尾 query 内链 + FAQPage 5 Q",
+        "owner": "M3 daily cron"
+      },
+      "A_textbook_series_172_imps": {
+        "queries": [
+          "教科書 印刷 80",
+          "教科書 印刷会社 59",
+          "教科書 印刷 会社 32",
+          "教材 印刷 製本 10",
+          "教材 印刷製本 21",
+          "教材 テキスト印刷 15",
+          "教材 製本 3",
+          "教材 印刷会社 3",
+          "印刷 教科書 2",
+          "卒 園 アルバム 印刷 1",
+          "卒 園 アルバム 印刷 製本 1"
+        ],
+        "total_imps": 227,
+        "rank_range": "pos 38-95",
+        "root_cause": "title_ja 缺 '教材/教科書' 主词 + descriptionJa 无 '学校/塾/通信教育' 场景",
+        "fix": "8/8 10:15 amend push 改 textbooks + exercise-books SKU title_ja + 加 graduation-yearbook 内链 + 8/11 paper-materials retrofit 引流",
+        "owner": "M3 amend push 8/8 10:15"
+      },
+      "B_poster_32_imps": {
+        "queries": [
+          "a2 ポスター 印刷 7",
+          "a2 ポスター プリント 1",
+          "a2 ポスター 激安 1",
+          "屋外 ポスター 3",
+          "ポスター 屋外 防水 2",
+          "防水ポスター 2",
+          "防水ポスター 印刷 1",
+          "a2 クリアポスター 印刷 8",
+          "ポスター用紙 1",
+          "ポスターサイズとは 1",
+          "ポスターサイズ 比較 3",
+          "ポスターサイズ 規格 1",
+          "ポスター 用紙 1",
+          "ポスター 紙 1",
+          "ポスター 紙質 1",
+          "ポスター 材質 1",
+          "ポスター 屋外 1"
+        ],
+        "total_imps": 34,
+        "rank_range": "pos 16-90",
+        "root_cause": "a2-posters / outdoor-posters title_ja 缺 'A2' 主词 + '防水' USP",
+        "fix": "8/8 10:15 amend push 改 a2-posters + outdoor-posters 双 SKU title_ja",
+        "owner": "M3 amend push 8/8 10:15"
+      },
+      "B_packaging_115_imps": {
+        "queries": [
+          "食品 パッケージ 11",
+          "食品 パッケージ 印刷 9+1",
+          "食品に触れる 紙印刷 1",
+          "食品パッケージ 4",
+          "化粧品 パッケージ印刷 12",
+          "クラフト紙 パッケージ印刷 17",
+          "クラフト紙 パッケージ 印刷 17",
+          "クラフト紙袋 印刷 3",
+          "防水加工 パッケージ印刷 9",
+          "防水加工 パッケージ 印刷 8",
+          "ギフト用 パッケージ印刷 6",
+          "パッケージ箱 オーダーメイド 食品 13",
+          "パッケージ箱 1",
+          "マグネットレス 貼り箱 8",
+          "パッケージ 印刷 食品 1",
+          "パッケージ 種類 1",
+          "パッケージ トレンド 3",
+          "パッケージデザイン トレンド 2"
+        ],
+        "total_imps": 125,
+        "rank_range": "pos 9-100",
+        "root_cause": "food-boxes / cosmetic-boxes / kraft-paper-packaging-box title_ja 缺 '食品/化粧品/クラフト' 主词 + 行业 list",
+        "fix": "8/8 10:15 amend push 改 kraft-paper-bags SKU title_ja + 8/9-8/11 retrofit 加 packaging-guide blog 内链",
+        "owner": "M3 amend push 8/8 10:15"
+      },
+      "B_sticker_50_imps": {
+        "queries": [
+          "pvc シール 9",
+          "pvc ステッカー 2",
+          "pvcシールとは 1",
+          "pvcステッカーとは 1",
+          "防水pvc 2",
+          "ダイカット ステッカー 防水 8",
+          "ステッカー印刷 小ロット 4",
+          "ステッカー 激安 小 ロット 1",
+          "ステッカー 小 ロット 1",
+          "ステッカー 少量 1",
+          "型 抜き ステッカー 1",
+          "型抜きシール 1",
+          "型 抜き シール 1",
+          "シール 型 抜き 1",
+          "シール 型抜き 1",
+          "蛍光 ステッカー 3",
+          "蛍光ステッカー 5",
+          "ステッカー 箔押し 1"
+        ],
+        "total_imps": 50,
+        "rank_range": "pos 1-83",
+        "root_cause": "fluorescent-stickers 已 1 click (20% CTR) + small-batch-stickers 缺 '小ロット/防水' USP",
+        "fix": "8/8 10:15 amend push 改 fluorescent-stickers SKU title_ja + 加 '防水 PP加工 ダイカット' USP",
+        "owner": "M3 amend push 8/8 10:15"
+      },
+      "C_envelope_9_imps": {
+        "queries": [
+          "大型封筒 4",
+          "大きい封筒 2",
+          "封筒 大きい 2",
+          "大判封筒 1",
+          "公司信封 1"
+        ],
+        "total_imps": 10,
+        "rank_range": "pos 10-50",
+        "root_cause": "large-envelopes / business-envelopes title_ja 缺 '大型' 主词",
+        "fix": "8/8 10:15 amend push 改 large-envelopes SKU title_ja (低优先, 9 imps 8 imps 维持)",
+        "owner": "M3 amend push 8/8 10:15 (low priority)"
+      },
+      "D_high_CTR_brand_signals": {
+        "queries": [
+          "蛍光ステッカー 5 imps 20% CTR pos 37.2",
+          "オリジナル 箱 安い 2 imps 50% CTR pos 8",
+          "智印港 1 imps pos 3",
+          "zprin 1 imps pos 5",
+          "香港 印刷 2 imps pos 4.5",
+          "啞膠 1 imps pos 1",
+          "智印港 1 imps pos 3"
+        ],
+        "total_imps": 13,
+        "status": "已赢, 维持",
+        "fix": "8/12 复盘维持; 8/9 Org sameAs 改后期望 KP 升 1 imps 顶到 5-10 imps"
+      }
+    },
+    "EN_blackhole_buckets": {
+      "A_strong_signal_pos_under_10_0pct_CTR": {
+        "queries": [
+          "small batch stickers 29 imps pos 7.76",
+          "batch stickers 5 imps pos 2.4",
+          "fluorescent stickers 7 imps pos 7.43",
+          "paper bag gsm 8 imps pos 10.38",
+          "what gsm for paper bags 8 imps pos 13.38",
+          "print catalog hong kong 3 imps pos 2.67",
+          "a4 flyer printing 1 imps pos 3 (100% CTR 维持)",
+          "print flyers 1 imps pos 5 (100% CTR 维持)"
+        ],
+        "total_imps": 62,
+        "rank": "pos 2-13",
+        "root_cause": "PDP title 缺 'MOQ 100 / Same Day / Free Shipping / GSM 100-200' USP",
+        "fix": "8/8 10:15 amend push 改 5 SKU title_en (small-batch-stickers + kraft-paper-bags + catalog-printing NAP 段 + a4-flyers 维持)",
+        "owner": "M3 amend push 8/8 10:15",
+        "expected_uplift": "0% CTR → 3-5% CTR (snippet 命中 USP)"
+      },
+      "B_a2_poster_blackhole_120_imps": {
+        "queries": [
+          "a2 poster 45",
+          "a2 prints 16",
+          "a2 posters 10",
+          "a2 print 8",
+          "a2 print poster 1",
+          "a2 art prints 1",
+          "a2 print out 1",
+          "a2 print size 1",
+          "a2 printing 3",
+          "a2 poster printing 3",
+          "a2 print size 1",
+          "a2 printen 1",
+          "a2 plakate 1",
+          "a2 printing paper 1",
+          "a2 printing size 1",
+          "a2 size poster 1",
+          "a2 size posters 1",
+          "a2 size print 1",
+          "a2 size printing 1",
+          "a2 size posters 1",
+          "a2 digital printing 1",
+          "a2 clear poster 1",
+          "a2 print 1",
+          "a2 print poster 1",
+          "poster a2 bestellen 1",
+          "printanje a2 1",
+          "print in a2 1",
+          "print a2 1",
+          "print a2 poster 1",
+          "print size a2 1",
+          "printing a2 1",
+          "printing a2 size 1",
+          "poster bestellen a2 1",
+          "420x594mm 3",
+          "420 x 594mm 1"
+        ],
+        "total_imps": 120,
+        "rank_range": "pos 12-77",
+        "root_cause": "a2-posters PDP title 缺 'A2 Poster Printing 1-3 Day UV Lamination Free Shipping' USP + FAQPage 弱",
+        "fix": "8/8 10:15 amend push 改 a2-posters title_en + FAQPage 5 Q (A2 尺寸 / 材质 / 用途 / 价格 / 配送)",
+        "owner": "M3 amend push 8/8 10:15",
+        "expected_uplift": "0% CTR → 0.5% CTR (排名 pos 38 升 20)"
+      },
+      "B_small_batch_stickers_94_imps": {
+        "queries": [
+          "small batch stickers 29 (pos 7.76 抓强)",
+          "small batch label printing 19+18=37",
+          "small batch sticker printing 10",
+          "small batch labels 8",
+          "batch stickers 5 (pos 2.4 顶)",
+          "custom stickers small batch 1",
+          "small batch custom stickers 1",
+          "sticker batch 1",
+          "sticker guide 2"
+        ],
+        "total_imps": 94,
+        "rank_range": "pos 2-78",
+        "root_cause": "small-batch-stickers title 缺 '100 MOQ Same Day' USP + 缺 fruit-food-label-stickers 内链",
+        "fix": "8/8 10:15 amend push 改 small-batch-stickers title_en + 内链 fruit-food-label-stickers",
+        "owner": "M3 amend push 8/8 10:15",
+        "expected_uplift": "0% → 3-5% CTR"
+      },
+      "B_saddle_stitch_88_imps": {
+        "queries": [
+          "saddle stitch booklet 23+22+10+10+5+5+4+3+1*7 = 88"
+        ],
+        "total_imps": 88,
+        "rank_range": "pos 71-94",
+        "root_cause": "saddle-stitch-booklets title 缺 '16-64 Pages Wire Bound 1-3 Day' USP + 缺 48 pages 长尾",
+        "fix": "8/8 10:15 amend push 改 saddle-stitch-booklets title_en",
+        "owner": "M3 amend push 8/8 10:15",
+        "expected_uplift": "0% → 0.3% CTR (排名 pos 73 升 50)"
+      },
+      "B_waterproof_stickers_100_imps": {
+        "queries": [
+          "waterproof stickers 10",
+          "custom waterproof stickers 5",
+          "sticker waterproof 3",
+          "best printer for waterproof stickers 2",
+          "sticker water resistant 1",
+          "waterproof stickers china 1",
+          "waterproof stickers factory china 1",
+          "waterproof stickers manufacturer china 1",
+          "waterproof stickers supplier china 1",
+          "waterproof sticker printing supplier 1",
+          "etc 累计 100+ imps"
+        ],
+        "total_imps": 100,
+        "rank_range": "pos 18-90",
+        "root_cause": "waterproof-stickers title 缺 '5+ Years Outdoor UV Lamination' USP + 缺 sticker-waterproof blog 引流",
+        "fix": "8/8 10:15 amend push 改 waterproof-stickers title_en + 8/10 retrofit sticker-waterproof blog",
+        "owner": "M3 amend push 8/8 10:15 + 8/10 blog retrofit",
+        "expected_uplift": "0% → 0.5% CTR"
+      },
+      "B_envelope_china_33_imps": {
+        "queries": [
+          "envelope printing price quote china 8",
+          "envelope printing service china 8",
+          "custom envelopes wholesale china 8",
+          "envelope printing factory china 4",
+          "custom envelope printing china 8",
+          "custom envelope manufacturer china 2",
+          "china envelope 1",
+          "envelope oem supplier china 2"
+        ],
+        "total_imps": 33,
+        "rank_range": "pos 52-80",
+        "root_cause": "business-envelopes title 缺 'Custom Envelope Wholesale China Factory Direct' USP",
+        "fix": "8/9 retrofit 改 (P1 优先, 5 SKU 已选 4 个, 留 1 个给 envelope)",
+        "owner": "M3 8/9 retrofit"
+      },
+      "B_a1_posters_35_imps": {
+        "queries": [
+          "a1 posters 11+4+1+1+1=18",
+          "a1 poster 1",
+          "a1 poster prints 4",
+          "a1 size poster 1",
+          "a1 pvc poster 2",
+          "a1 海報 1",
+          "a1 poster price 1",
+          "dimensions a1 poster 1",
+          "dimensions of a1 poster 1",
+          "how big is a a1 poster 1",
+          "poster a1 size 1",
+          "size of a a1 poster 1",
+          "size a1 poster 1",
+          "size of a1 poster 1",
+          "what are dimensions of a1 poster 1",
+          "what size is a1 poster 1"
+        ],
+        "total_imps": 35,
+        "rank_range": "pos 50-83",
+        "root_cause": "a1-posters PDP 内容弱 + 缺 FAQPage",
+        "fix": "8/9 retrofit 改 (P1)",
+        "owner": "M3 8/9 retrofit"
+      },
+      "B_china_catalog_20_imps": {
+        "queries": [
+          "china catalog printing 7+7=14",
+          "catalogs printing china 2",
+          "catalog printing in china 1",
+          "chinese catalog printers 1",
+          "cheap catalog printing china 1",
+          "china catalog printing 1"
+        ],
+        "total_imps": 20,
+        "rank_range": "pos 25-52",
+        "root_cause": "catalog-printing 缺 NAP 香港段落 + 'China factory direct' USP",
+        "fix": "8/8 10:15 amend push 改 catalog-printing title_en (强信号 pos 2.67 维护)",
+        "owner": "M3 amend push 8/8 10:15"
+      },
+      "B_adhesive_banner_44_imps": {
+        "queries": [
+          "adhesive banner 11",
+          "adhesive banners 10",
+          "adhesive banner printing 10",
+          "banner printing for trade shows 5",
+          "banner adhesive 1",
+          "wind resistant banners 1",
+          "stick banner 1",
+          "vinyl banner printing china 4",
+          "outdoor vinyl banners 1"
+        ],
+        "total_imps": 44,
+        "rank_range": "pos 1-83",
+        "root_cause": "adhesive-banners + outdoor-vinyl-banners title 缺 'Trade Show Adhesive Banner Wind Resistant' USP",
+        "fix": "8/8 10:15 amend push 改 adhesive-banners title_en (5 SKU 第 5 选)",
+        "owner": "M3 amend push 8/8 10:15"
+      },
+      "B_pvc_menu_25_imps": {
+        "queries": [
+          "pvc menu 3",
+          "pvc menus 5",
+          "pvc menu printing 4",
+          "menu pvc 1",
+          "laminated menus 1",
+          "disposable menu 5",
+          "hardcover menu 1",
+          "hard cover menu 1",
+          "hard cover menu printing 1",
+          "hardcover menu printing 1",
+          "laminated stitched menus 1",
+          "laminated menu 1"
+        ],
+        "total_imps": 25,
+        "rank_range": "pos 33-90",
+        "root_cause": "pvc-menus / laminated-menus title 缺 'PVC Laminated Waterproof Menu' USP",
+        "fix": "8/9 retrofit 改 (P1)",
+        "owner": "M3 8/9 retrofit"
+      },
+      "B_flyer_size_22_imps": {
+        "queries": [
+          "a4 flyer size 2",
+          "flyer sizes 1",
+          "flyer size paper 1",
+          "flyer paper type 1",
+          "flyer size a4 1",
+          "flyer size a5 1",
+          "flyer formaten 1",
+          "a4 leaflet size 1",
+          "a5 leaflet size 1",
+          "a6 leaflet size 1",
+          "a5 flyer dimensions 1",
+          "a6 flyer dimensions 1",
+          "a6 flyer size 1+1",
+          "a5 flyer size 1",
+          "a6 flyers size 1",
+          "leaflet paper size 1",
+          "leaflet paper type 1",
+          "leaflet size 1+1+1",
+          "leaflet sizes guide 1",
+          "size of a leaflet 1",
+          "standard leaflet size 1"
+        ],
+        "total_imps": 22,
+        "rank_range": "pos 49-77",
+        "root_cause": "a4-flyers / a5-flyers PDP 缺 'A4 A5 A6 Flyer Size Guide' 内容 + 概念词缺 blog 引流",
+        "fix": "8/10 retrofit flyer-size-guide blog (P2)",
+        "owner": "M3 8/10 blog retrofit"
+      },
+      "C_already_winning": {
+        "queries": [
+          "pvc menu 3 imps pos 20.67 33.33% CTR",
+          "a4 flyer printing 1 imps pos 3 100% CTR",
+          "print flyers 1 imps pos 5 100% CTR"
+        ],
+        "total_imps": 5,
+        "status": "已赢, 维持"
+      },
+      "D_competitor_words_skip": {
+        "queries": [
+          "zxc print softcover book printing 3",
+          "hkdesignpro poster design price 4+5+1+1+1+1 = 13",
+          "zxc print 1"
+        ],
+        "total_imps": 17,
+        "action": "跳过 (竞品词, 不与竞品打价格战)"
+      }
+    },
+    "5_sku_JA_改字表": {
+      "1_a2_posters": {
+        "current_title_ja": "(待 grep)",
+        "new_title_ja": "A2ポスター印刷 1-3日 防水 PP加工 1枚〜",
+        "industry_list_ja": [
+          "屋外広告",
+          "展示会",
+          "イベント",
+          "学園祭",
+          "ショップ",
+          "飲食",
+          "不動産"
+        ],
+        "faq_5_ja": [
+          "A2サイズ = 420×594mm, 国際標準 ISO 216 サイズ",
+          "PPラミネート加工で防水 + 耐候 3年+",
+          "1枚〜小ロット対応, 大量 1,000枚+ 割引",
+          "DHL 国際配送 2-4日, 倉庫 アジア工場",
+          "デザイン無料確認 + プロ校正 1営業日"
+        ]
+      },
+      "2_outdoor_posters": {
+        "new_title_ja": "屋外防水ポスター 耐候3年+ UV加工 PP 1枚〜",
+        "industry_list_ja": [
+          "工事現場",
+          "選挙",
+          "不動産",
+          "飲食",
+          "イベント",
+          "学園祭"
+        ],
+        "faq_5_ja": [
+          "屋外耐候 3年+, UV加工 + PPラミネート",
+          "工事現場 + 選挙 + 不動産 利用実績 500+ 件",
+          "サイズ A1 A2 B2 対応, カスタムサイズ OK",
+          "1枚〜大量 10,000枚 まで対応",
+          "防水 + 破れ防止 加工 標準装備"
+        ]
+      },
+      "3_fluorescent_stickers": {
+        "new_title_ja": "蛍光ステッカー 1枚〜 防水 PP加工 ダイカット",
+        "industry_list_ja": [
+          "雑貨",
+          "イベント",
+          "学園祭",
+          "限定品",
+          "キャンペーン"
+        ],
+        "faq_5_ja": [
+          "蛍光色 5色 (黄・桃・橙・緑・青) 用意",
+          "防水 PPラミネート標準",
+          "ダイカット自由形 50種類以上 型代0円",
+          "1枚〜小ロット 100枚〜 まで",
+          "イベント + 学園祭 利用実績 1,000+ 件"
+        ]
+      },
+      "4_kraft_paper_bags": {
+        "new_title_ja": "クラフト紙袋 印刷 100-200枚〜 オリジナル logo",
+        "industry_list_ja": [
+          "飲食",
+          "物販",
+          "化粧品",
+          "菓子",
+          "アパレル",
+          "ギフト"
+        ],
+        "faq_5_ja": [
+          "クラフト紙 100g/120g/150g/200g 4種類",
+          "片面 / 両面 印刷, 1色〜フルカラー CMYK",
+          "持ち手 丸紐 / 平紐 / 紙紐 選択可",
+          "100枚〜大量 10,000枚 まで対応",
+          "オリジナル logo 印刷 無料データ確認"
+        ]
+      },
+      "5_textbooks": {
+        "new_title_ja": "教科書・教材 印刷製本 無線綴じ 50冊〜 学校/塾",
+        "industry_list_ja": [
+          "学校",
+          "塾",
+          "通信教育",
+          "企業研修",
+          "自費出版",
+          "学会"
+        ],
+        "faq_5_ja": [
+          "無線綴じ / 中綴じ / 折本 3種類 製本",
+          "B5 / A4 / A5 サイズ対応, ページ数自由",
+          "50冊〜小ロット 500冊 まで対応",
+          "学校 / 塾 / 通信教育 取引実績 200+ 校",
+          "教科書検定 対応可, ISBN 取得サポート"
+        ]
+      }
+    },
+    "5_sku_EN_改字表": {
+      "1_small_batch_stickers": {
+        "current_title_en": "(待 grep)",
+        "new_title_en": "Small Batch Stickers 100 MOQ Same-Day Free Shipping Vinyl, Die-Cut, Waterproof",
+        "industry_list_en": [
+          "DTC",
+          "Craft",
+          "Brewery",
+          "Skincare",
+          "Pet Food",
+          "Subscription Box",
+          "E-commerce",
+          "Event"
+        ],
+        "faq_5_en": [
+          "100 MOQ — order 1-100 custom stickers same day",
+          "Vinyl, Die-Cut, Waterproof, Removable, Fluorescent 5 material types",
+          "DHL 2-4 day global shipping, free shipping over $99",
+          "Free design proof in 1 business day, no setup fee",
+          "50+ shape templates free, custom shape $20 one-time"
+        ]
+      },
+      "2_a2_posters": {
+        "new_title_en": "A2 Poster Printing 1-3 Day Turnaround UV-Coated Lamination Free Shipping 100+ MOQ",
+        "industry_list_en": [
+          "Trade Show",
+          "Event",
+          "Theater",
+          "Retail",
+          "Real Estate",
+          "School",
+          "Campaign",
+          "Restaurant"
+        ],
+        "faq_5_en": [
+          "A2 = 420×594mm, ISO 216 standard size",
+          "UV-coated matte or gloss lamination included",
+          "1-3 business day turnaround, rush same-day available",
+          "DHL 2-4 day global shipping, free over $99",
+          "Free design proof + bulk discount 1,000+ qty"
+        ]
+      },
+      "3_waterproof_stickers": {
+        "new_title_en": "Waterproof Stickers 5+ Years Outdoor UV Lamination Free Shipping 100 MOQ",
+        "industry_list_en": [
+          "Brewery",
+          "Beverage",
+          "Marine",
+          "Outdoor Gear",
+          "Pet Food",
+          "Skincare",
+          "Auto",
+          "Industrial"
+        ],
+        "faq_5_en": [
+          "5+ years outdoor UV resistance, IP65 waterproof rating",
+          "Vinyl + UV lamination standard",
+          "Dishwasher safe, freezer safe, chemical resistant",
+          "100 MOQ — order 1-100 same day",
+          "DHL 2-4 day global, free over $99"
+        ]
+      },
+      "4_saddle_stitch_booklets": {
+        "new_title_en": "Saddle Stitch Booklets 16-64 Pages 1-3 Day Wire Bound Catalog Printing Free Shipping 100 MOQ",
+        "industry_list_en": [
+          "Catalog",
+          "Magazine",
+          "Lookbook",
+          "Real Estate",
+          "School",
+          "Event Program",
+          "Comic",
+          "Manual"
+        ],
+        "faq_5_en": [
+          "16-64 pages, perfect bound or saddle stitch 2 binding types",
+          "A4 / A5 / B5 / Letter / Custom sizes",
+          "1-3 business day turnaround, rush same-day",
+          "Glossy / matte / uncoated paper 4 options",
+          "DHL 2-4 day global, free over $99"
+        ]
+      },
+      "5_kraft_paper_bags": {
+        "new_title_en": "Kraft Paper Bags 100-200 GSM Custom Logo Printed 5,000 MOQ Free Shipping Asia Factory",
+        "industry_list_en": [
+          "Retail",
+          "Restaurant",
+          "Bakery",
+          "Coffee",
+          "Boutique",
+          "Gift Shop",
+          "Trade Show",
+          "Pop-up"
+        ],
+        "faq_5_en": [
+          "100 / 120 / 150 / 200 GSM 4 paper weights",
+          "Single or double-side print, 1-4 color CMYK",
+          "Twisted / flat / paper handle 3 options",
+          "5,000 MOQ — bulk discount 50,000+ qty",
+          "DHL 2-4 day global shipping, free over $99"
+        ]
+      }
+    },
+    "5_day_execution_8_8_8_12": {
+      "8_8_Sat": {
+        "k3_必跑_09_00": [
+          "3 设备 /contact 端到端 (Desktop Chrome / Mobile Safari / Android Chrome)",
+          "Supabase dashboard 查 quotes 表 (期望 id fae355ba-7880-494b-b89c-5f6bcf6e2b8c)",
+          "formsubmit.co 收件箱激活 (8/7 18:45 触发的激活邮件)",
+          "提供 X + LinkedIn URL + IndexNow key (8/9 Org sameAs 必填)"
+        ],
+        "k3_拍板_09_00": "5 SKU JA + 5 SKU EN title USP 改字 (M3 起草, K3 审字)",
+        "m3_09_55_amend_push": "AGENTS.md 198 + 5 SKU JA/EN title USP 改 + retrofit cross-border commit amend 合并 1 push (§0.1 攒批)",
+        "m3_10_15_daily_cron": "retrofit cross-border-ecommerce-shipping-box-guide + 末尾ジープリント 埋点 + 5 FAQPage (5 篇 retrofit 完成 1/6)",
+        "expect_impact": "PDP small batch stickers CTR 0% → 3-5%, JA a2 ポスター 0% → 0.5%"
+      },
+      "8_9_Sun": {
+        "m3_amend_push": "src/lib/seo.ts Organization sameAs 改 (X + LinkedIn + 30 JP 目录 + Startup Base) + knowsAbout + areaServed=JP + alternateName=ジープリント + 1 effective push",
+        "m3_10_15_daily_cron": "retrofit cross-border-ecommerce-shipping-box-guide 末段埋点 + 与 Org sameAs amend 合并 1 push",
+        "k3_必跑_301_5_5": "CF Bulk Redirect List 验证 (P1 deadline §6.3)",
+        "k3_必跑_AutoGLM_准备": "30 目录清单 + 邮箱验证流程 (8/10 启动前提)",
+        "expect_impact": "EN KP imps 9→30+ (3.3x), JA KP imps 4→30+ (7.5x)"
+      },
+      "8_10_Mon": {
+        "m3_10_15_daily_cron_p0_提升": "retrofit cmyk-guide P0 优先级 (305 imps 0 click pos 86) + 拆 5 长尾 query 注入",
+        "k3_必跑_AI_可见性_1_4": "Perplexity / ChatGPT / Claude / Gemini 4 引擎查 4 核心词 (P1 deadline §6.5)",
+        "k3_09_00_AutoGLM_启动": "10 条/天 目录填表 (K3 点提交 + 邮箱验证)",
+        "k3_清单文_outreach": "10 篇 drafted 发送 (期望 1-2 reply)",
+        "expect_impact": "JA cmyk 系列 197 imps CTR 0% → 0.5%+, EN a2 poster 120 imps pos 38→25"
+      },
+      "8_11_Tue": {
+        "m3_10_15_daily_cron_常规": "retrofit paper-materials 注入 教材 印刷 + 教材 テキスト印刷 长尾 (15+21=36 imps)",
+        "m3_10_15_daily_cron_p1": "retrofit 3 篇 (envelope china + a1-posters + pvc-menu PDP 改字)",
+        "k3_必跑_复盘预填": "review-8-12-template.md 预填 (P3)",
+        "k3_AutoGLM_续跑": "10 条目录 (8/10+8/11=20 条)",
+        "expect_impact": "JA 教科書 印刷 pos 38.92→25, EN envelope 33 imps CTR 0%→0.3%"
+      },
+      "8_12_Wed": {
+        "k3_09_00_复盘_5min": "review-8-12-template.md 5 维度 KPI 抓取",
+        "k3_09_00_AI_可见性_复测": "期望 ≥1/4 → ≥2/4 引擎 (P1 验收)",
+        "k3_09_00_branded_search_6_query": "基线 0 → 期望 ≥1 命中 zprintpro.com",
+        "k3_22_00_复盘_报告": "落 .hermes/k3-inbox/2026-08-12-* 复盘报告 + 升级 K3 §9 路径推荐"
+      }
+    },
+    "expect_8_12_kpi": {
+      "JA_imps": "1638 → 2000+ (+22%)",
+      "JA_clicks": "17 → 30+ (+76%)",
+      "JA_CTR": "1.04% → 1.5%+ (+44%)",
+      "JA_pos": "37.01 → 30 (-19%)",
+      "JA_mobile_CTR": "2.36% → 3.5%+ (+48%)",
+      "JA_KP_pos_8_50pct_CTR": "2/4 50% → 期望 4-6/8 50%+",
+      "EN_imps": "2641 → 3200+ (+21%)",
+      "EN_clicks": "14 → 25+ (+79%)",
+      "EN_CTR": "0.53% → 0.8%+ (+51%)",
+      "EN_pos": "27.91 → 22 (-21%)",
+      "EN_mobile_CTR": "1.45% → 2.5%+ (+72%)",
+      "EN_KP_pos_2.67_55.56pct_CTR": "5/9 55.56% → 期望 8-10/12 65%+",
+      "small_batch_stickers_CTR": "0% → 3-5%",
+      "a2_poster_EN_CTR": "0% → 0.5%",
+      "a2_ポスター_JA_CTR": "0% → 0.5%",
+      "教科書_印刷_JA_pos": "38.92 → 25 (-36%)",
+      "cmyk_guide_JA_pos": "86 → 50 (-42%)",
+      "branded_search_6_query": "0 → ≥1 命中",
+      "JA_询盘_8_8_8_12": "0 → ≥2 (per §6.1 4 天冲刺)"
+    },
+    "cross_check_5_渲染源_SOP": {
+      "rule": "per MEMORY.md §9 教训, 5 SKU 改字前必 grep 5 渲染源",
+      "5_sources": [
+        "src/data/products.ts (title_ja / title_en / descriptionJa / descriptionEn 字段)",
+        "src/data/sku-seo-data.ts (PDP meta title / description, 优先于 products.ts)",
+        "src/data/blog-data/{zh-hk,en,ja}.json (blog 引用此 SKU 的 title / desc)",
+        "src/components/pdp/orderform.tsx (PDP 提交后 fallback 文案)",
+        "src/components/pdp/referencepriceblock.tsx (PDP 价格表兜底)"
+      ],
+      "6th_ai_inject": "public/llms-{zh-hk,en,ja}.txt (AI 注入源, 3 locale 必改)",
+      "grep_commands": [
+        "grep -rn 'small batch sticker' src/ public/  # EN PDP 5 源",
+        "grep -rn 'a2 poster' src/ public/  # JA + EN 双语",
+        "grep -rn '蛍光' src/ public/  # JA",
+        "grep -rn '教科書' src/ public/  # JA",
+        "grep -rn 'kraft paper' src/ public/  # EN"
+      ],
+      "verify_protocol": "改前 grep + 改后 grep 双 verify, 0 残留旧词 + 0 简体字"
+    },
+    "branded_search_6_query_监测": {
+      "queries": [
+        "ジープリント (JA, 基线 0)",
+        "ZprintPro (EN, 基线 0)",
+        "智印港 (ZH, 基线 0)",
+        "zprint (EN, 7 imps pos 39.43 当前 0% CTR)",
+        "zprintpro printing (EN, 基线 0)",
+        "zprintpro.com (EN, 期望首页 1+)"
+      ],
+      "埋点_位置": "8/9-8/11 retrofit 末尾 CTA 提及 ジープリント / ZprintPro / 智印港 2-3 次",
+      "目标_8_12": "≥1 query 命中 zprintpro.com 域名首页"
+    },
+    "M3_自主拍板_已执行": [
+      "5 SKU JA 选择: a2-posters / outdoor-posters / fluorescent-stickers / kraft-paper-bags / textbooks",
+      "5 SKU EN 选择: small-batch-stickers / a2-posters / waterproof-stickers / saddle-stitch-booklets / kraft-paper-bags",
+      "5 SKU 改字 USP 模板 (title_ja / title_en + industry list + FAQ 5)",
+      "5 天节奏 (8/8 04:00 - 8/12 22:00)",
+      "Org sameAs 草稿结构 (X + LinkedIn + 30 JP 目录 + Startup Base)",
+      "branded search 6 query 监测",
+      "cross-check 5 渲染源 SOP"
+    ],
+    "待_K3_9_00_拍板": [
+      "X URL (e.g. x.com/zprintpro)",
+      "LinkedIn URL (e.g. linkedin.com/company/zprintpro)",
+      "5 SKU 改字 K3 审字 (尤其 ja title 文案 + 行业 list 选词)",
+      "AutoGLM 启动时间确认 (8/10 vs 8/11)",
+      "IndexNow key (8/9 99 URLs submit 必填)"
+    ],
+    "v1_v2_关系": "v1 (.hermes/k3-inbox/2026-08-08-0344-gsc-ja-en-analysis.md) 概要 + 5 天执行表; v2 (本段 + .hermes/k3-inbox/2026-08-08-0400-gsc-ja-en-deep-analysis-v2.md) 详细 SKU 命中 + 改字模板 + branded search",
+    "update_history": [
+      "2026-08-08 04:00 M3 K3 GSC v2 深度分析 + 5 SKU 改字 + 5 天执行 + branded search"
+    ]
+  },
+  "update_history": [
+    "2026-08-08 04:00 M3 K3 GSC v2 深度分析 (matrix gsc_targeting_v2 段)",
+    "2026-08-08 04:30 M3 K3 GSC zh-hk v3 深度分析 (matrix gsc_targeting_zh_hk_v3 段)",
+    "2026-08-08 04:40 M3 K3 战略级 4 字+①②③ + 双周排期 + KPI 校准 + 3 市场分层 + 9:00 4 步 PASS"
+  ],
+  "gsc_targeting_zh_hk_v3": {
+    "version": "v3",
+    "created_at": "2026-08-08T04:30:00+08:00",
+    "creator": "Mavis (M3)",
+    "trigger": "K3 8/8 04:00 GSC v2 完成 + 04:00 '按最优执行' 自主拍板 + 8/7 8/8 GSC 三市场 (JA+EN+ZH-HK) 完整分析",
+    "source_files": [
+      "F:\\zprintpro-nextjs\\GSC数据\\zprintpro.com-Performance-on-Search--ZH-HK 2026-08-08 (3 月累计)",
+      "F:\\zprintpro-nextjs\\GSC数据\\zprintpro.com-Performance-on-Search-ZH-HK 2026-08-08 (1) (7 天)"
+    ],
+    "summary": {
+      "ZH_imps_3m": 13759,
+      "ZH_clicks_3m": 213,
+      "ZH_ctr_3m": 1.55,
+      "ZH_pos_3m": 30.63,
+      "ZH_imps_7d": 1332,
+      "ZH_clicks_7d": 36,
+      "ZH_ctr_7d": 2.7,
+      "ZH_pos_7d": 23.69,
+      "ZH_mobile_ctr_3m": 1.81,
+      "ZH_mobile_ctr_7d": 2.65,
+      "ZH_desktop_ctr_3m": 1.44,
+      "ZH_desktop_ctr_7d": 2.88,
+      "ZH_desktop_3m_to_7d_growth": 1.0,
+      "ZH_KP_3m_0_imps": "0/1 0% CTR pos 1 (zh-hk 商家信息未触发)",
+      "ZH_KP_7d_0_imps": "(商家信息未出现在 7 天数据)",
+      "ZH_brand_智印港_3m": "6/31 19.35% CTR pos 2.32",
+      "ZH_brand_智印港_7d": "2/2 100% CTR pos 1 ✅ 顶级",
+      "ZH_homepage_3m": "3/59 5.08% CTR pos 5.59",
+      "ZH_homepage_7d": "2/3 66.67% CTR pos 1.33 ✅ 顶级",
+      "ZH_3markets_compare": {
+        "ZH_7d_CTR": 2.7,
+        "JA_7d_CTR_estimate": 1.5,
+        "EN_7d_CTR_estimate": 0.8,
+        "ZH_7d_pos": 23.69,
+        "JA_7d_pos_estimate": 35,
+        "EN_7d_pos_estimate": 40,
+        "verdict": "ZH-HK 7 天 CTR 2.7% = JA 2.6x = EN 5.1x; pos 23.69 = 三市场最优"
+      }
+    },
+    "top_signals_4": {
+      "1_智印港_branded": {
+        "3m": "6/31 19.35% CTR pos 2.32",
+        "7d": "2/2 100% CTR pos 1 ✅",
+        "action": "8/9 Org sameAs 改后期望 31→60+ imps, 维持 pos 1"
+      },
+      "2_homepage_NAP": {
+        "3m": "3/59 5.08% CTR pos 5.59",
+        "7d": "2/3 66.67% CTR pos 1.33 ✅",
+        "action": "NAP 强化维持, Org sameAs 改后 pos 1 期望 3 imps → 10+"
+      },
+      "3_doujinshi_printing_PDP": {
+        "3m": "1/2 50% CTR pos 10.5",
+        "7d": "1/1 100% pos 3 ✅",
+        "action": "8/8 10:15 amend push 改 doujinshi-printing title_zh 强化 同人誌 / 同人周邊 / 同人本 关键词"
+      },
+      "4_certificates_PDP": {
+        "3m": "4/36 11.11% CTR pos 19.53",
+        "7d": "0/6 0% CTR pos 15.83 (排名升 4 位)",
+        "action": "维持, 8/11 paper-materials retrofit 末尾引証書印刷 CTA"
+      }
+    },
+    "AI_citation_signals_2": {
+      "1_supplier_query": {
+        "query": "我想為我的網店尋找一間可靠的印刷供應商，可以介紹一些中小企公司嗎？",
+        "imps": 2,
+        "pos": 5,
+        "signal": "LLM 引文, zprintpro.com 命中"
+      },
+      "2_eco_packaging_query": {
+        "query": "我公司想轉用環保包裝物料，請問有冇邊啲香港中小企供應商比較專業？",
+        "imps": 1,
+        "pos": 1,
+        "signal": "LLM 引文, zprintpro.com 命中 pos 1 顶级 ✅"
+      },
+      "implication": "智印港公式已经在 AI 引擎 (≥2/4 期望) 中被引用, 不需要等 8/10 K3 跑 AI 可见性"
+    },
+    "blackhole_buckets": {
+      "A_top_imps_flyers_819": {
+        "queries": [
+          "宣傳單張 395",
+          "宣傳單張印刷 370",
+          "印傳單 24",
+          "傳單印刷 19",
+          "印刷 單張 0",
+          "單張印刷 5",
+          "宣傳 單 張 5",
+          "傳單 1",
+          "宣傳單印刷 2",
+          "傳單 尺寸 1",
+          "傳單大小 1",
+          "傳單紙 1",
+          "印刷傳單 0",
+          "印宣傳單張 2",
+          "印傳單 24"
+        ],
+        "total_imps": 819,
+        "rank_range": "pos 30-65",
+        "root_cause": "a4-flyers / a5-flyers / double-sided-flyers PDP 缺 '香港觀塘新蒲崗' NAP + '即日取貨' USP",
+        "fix": "8/8 10:15 amend push 改 same-day-flyers title_zh (333 imps pos 46.49 7 天 32 imps pos 42.16) + a4-flyers P1"
+      },
+      "A_top_imps_food_packaging_697": {
+        "queries": [
+          "食品包裝印刷 349",
+          "食品包裝訂製 174",
+          "包裝食品 裡印 84",
+          "食品印刷 79",
+          "食品包裝袋印刷 11"
+        ],
+        "total_imps": 697,
+        "rank_range": "pos 16-40",
+        "root_cause": "food-boxes PDP 缺 '香港餐廳外賣食品級' NAP + 6 行业 list",
+        "fix": "8/8 10:15 amend push 改 food-boxes title_zh (634 imps pos 39.98 7 天 25 imps pos 48.28) + corrugated-boxes P1"
+      },
+      "A_top_imps_stickers_618": {
+        "queries": [
+          "貼紙印刷 335",
+          "貼紙訂製 128",
+          "印貼紙 33",
+          "貼紙印製 11",
+          "貼紙 印刷 6",
+          "貼紙設計 8",
+          "客 製 貼紙 2",
+          "印貼紙香港 7",
+          "印貼紙少量香港 3",
+          "印 貼紙 2",
+          "環保材質貼紙 21",
+          "防水貼紙 20",
+          "印貼紙 33",
+          "香港貼紙印刷 9+7",
+          "客製信封 0",
+          "可移貼紙 111"
+        ],
+        "total_imps": 618,
+        "rank_range": "pos 1-55",
+        "root_cause": "die-cut-stickers / small-batch-stickers PDP 缺 '香港' NAP + 100 MOQ USP",
+        "fix": "8/9 retrofit cross-border + 8/11 paper-materials 末尾引可移貼紙 + 防水貼紙"
+      },
+      "A_top_imps_poster_1162": {
+        "queries": [
+          "海報印刷 334",
+          "印海報 308",
+          "海報與印刷 203",
+          "印海報一張 101",
+          "poster 印刷 164",
+          "海報列印 42",
+          "海報size 8+2",
+          "海報尺寸 8+1",
+          "海報size 8",
+          "海報大小 10+1",
+          "海報 印刷 9+1",
+          "海報 尺寸 2+1+1",
+          "海報size 2",
+          "海報size 1",
+          "海報size 1",
+          "海報size 0",
+          "海報size 0",
+          "海報size 0",
+          "海報size 0",
+          "海報size 0",
+          "海報size 0"
+        ],
+        "total_imps": 1162,
+        "rank_range": "pos 5-90",
+        "root_cause": "art-posters / display-posters PDP 缺 'A2 防水 PP加工 DHL' USP + 香港 NAP",
+        "fix": "8/8 10:15 amend push 改 a2-posters title_zh (856 imps pos 37.95 7 天 73 imps pos 26.78 升 11 位) + art-posters P1"
+      },
+      "A_top_imps_paper_bags_1279": {
+        "queries": [
+          "紙袋 22",
+          "紙袋印刷 301",
+          "紙袋訂製 258",
+          "印刷紙袋 158",
+          "訂做紙袋 173",
+          "印紙袋 117",
+          "紙袋訂造 104",
+          "紙袋訂做 92",
+          "紙袋批發 52",
+          "牛皮紙袋 1+0+1",
+          "牛皮 紙袋 0+1",
+          "紙袋 批發 0+1",
+          "紙袋現貨深水埗 2",
+          "紙袋現貨香港 1",
+          "紙袋尺寸 1",
+          "紙袋 尺寸 1",
+          "印刷袋 3",
+          "袋印刷 40",
+          "手抽袋 5",
+          "禮品紙袋 2",
+          "印膠袋 40",
+          "膠袋印刷 11+1",
+          "膠袋 印刷 13",
+          "環保紙袋 2",
+          "牛皮紙袋印刷 2",
+          "紙袋 印刷 1+1",
+          "紙袋大 1",
+          "大紙袋 11+1",
+          "大紙袋哪裡買 1"
+        ],
+        "total_imps": 1279,
+        "rank_range": "pos 8-84",
+        "root_cause": "kraft-paper-bags PDP 缺 '香港餐廳零售環保' NAP + 6 行业 + 100/120/150 GSM 规格",
+        "fix": "8/8 10:15 amend push 改 kraft-paper-bags title_zh (521 imps pos 57.44 7 天 9 imps pos 68.67) + 5 SKU 标题强化"
+      },
+      "A_top_imps_packaging_boxes_776": {
+        "queries": [
+          "包裝盒 1",
+          "包裝盒訂製 233",
+          "包裝盒印刷 197",
+          "印紙盒 49",
+          "印紙 盒 12",
+          "印盒 19",
+          "紙盒訂製 157",
+          "紙盒印刷 12+3",
+          "紙盒印製 3",
+          "紙盒訂造 14",
+          "紙 盒 印刷 1",
+          "包裝 盒 印刷 14+2",
+          "包裝 印刷 13+2+51",
+          "包裝盒 香港 0",
+          "紙盒 1",
+          "紙盒訂製 17+0",
+          "kraft paper box 3+0",
+          "kraft paper bag 5+0"
+        ],
+        "total_imps": 776,
+        "rank_range": "pos 30-95",
+        "root_cause": "mailer-boxes / tuck-end-boxes / folding-boxes PDP 弱 + kraft-paper-packaging-box NAP 缺",
+        "fix": "8/9 retrofit 改 mailer-boxes (94 imps pos 60.36 → 7 天 2 imps pos 25.5 升 35 位) + kraft-paper-packaging-box P1"
+      },
+      "A_top_imps_menus_262": {
+        "queries": [
+          "餐牌 0",
+          "餐牌印刷 188",
+          "膠片餐牌 43",
+          "膠卡餐牌 26",
+          "餐牌卡 1",
+          "酒水牌 4",
+          "菜單印刷 1"
+        ],
+        "total_imps": 263,
+        "rank_range": "pos 18-37",
+        "root_cause": "laminated-menus / pvc-menus PDP 缺 '餐廳酒樓防水' USP + 香港 NAP",
+        "fix": "8/9 retrofit 改 pvc-menus (3 月 64 imps pos 24.95 → 7 天 6 imps pos 16.17 升 9 位) + laminated-menus P1"
+      },
+      "A_top_imps_calendars_246": {
+        "queries": [
+          "月曆 0",
+          "月曆印刷 182",
+          "月曆訂製 12",
+          "月歷印刷 49",
+          "訂制月曆 2+1",
+          "印月曆 0+1",
+          "desk calendar printing 0+1"
+        ],
+        "total_imps": 246,
+        "rank_range": "pos 27-50",
+        "root_cause": "custom-calendars PDP 缺 '香港月曆訂製' NAP + 6 行业 (枱曆/掛曆/磁性月曆)",
+        "fix": "8/10 retrofit 改 custom-calendars (3 月 246 imps pos 40.19 → 7 天 58 imps pos 27.45 升 13 位)"
+      },
+      "A_top_imps_red_packets_183": {
+        "queries": [
+          "利是封 0",
+          "利是封印刷 113",
+          "訂製利是封 38",
+          "印 利 是 封 8",
+          "利 是 封 印刷 12",
+          "利 是 封 訂 製 4",
+          "印 利 是 封 8",
+          "訂 制 利 是 封 8",
+          "利 是 封 尺寸 4",
+          "red packet size 1",
+          "訂 做 利 是 封 12"
+        ],
+        "total_imps": 209,
+        "rank_range": "pos 27-58",
+        "root_cause": "custom-red-packets PDP 缺 '香港利是封訂製' NAP + 6 行业 (婚禮/企業/年節)",
+        "fix": "8/10 retrofit 改 custom-red-packets"
+      },
+      "A_top_imps_books_672": {
+        "queries": [
+          "印書 110+17+2",
+          "騎馬釘 120+15+0+0+0",
+          "騎馬釘印刷 110+15",
+          "膠裝書 100+0",
+          "膠裝書印刷 73+0",
+          "騎馬釘書刊 79+17",
+          "膠裝書價格 36+8",
+          "膠裝書刊 14+0",
+          "書刊印刷 12+0",
+          "精裝書 4+3",
+          "精裝 書 0+3",
+          "冊子印刷 1+1",
+          "書籍 印刷 0+2",
+          "印 書 0+2",
+          "印刷書籍 0+1",
+          "書籍印刷 6+0",
+          "無線膠裝 0+1",
+          "作品集印製 3+2",
+          "型錄印製 2+1"
+        ],
+        "total_imps": 672,
+        "rank_range": "pos 25-78",
+        "root_cause": "saddle-stitch-booklets / perfect-bound-books / hardcover-books PDP 缺 '騎馬釘 膠裝 香港' NAP + 6 行业",
+        "fix": "8/9 retrofit 改 saddle-stitch-booklets (3 月 314 imps pos 43.72 → 7 天 48 imps pos 43.27 升 1 位) + perfect-bound-books P1"
+      },
+      "A_top_imps_gift_boxes_124": {
+        "queries": [
+          "禮盒 0",
+          "禮盒訂製 55+3",
+          "禮盒訂做 29+2",
+          "抽屜式禮盒 3+0",
+          "禮物盒訂製 30+0",
+          "化妝品盒 1+0",
+          "電子產品包裝 2+0"
+        ],
+        "total_imps": 124,
+        "rank_range": "pos 23-70",
+        "root_cause": "magnetic-closure-gift-box PDP 缺 '香港禮盒訂製' NAP + 6 行业",
+        "fix": "8/10 retrofit 改 magnetic-closure-gift-box (3 月 158 imps pos 63.53 + 0/2 0% CTR 7 天 pos 1)"
+      },
+      "A_top_imps_envelopes_112": {
+        "queries": [
+          "信封 20+3",
+          "信封印刷 7+2",
+          "大信封 34+4",
+          "公司信封 30+0",
+          "信封 印刷 8+0",
+          "信封 封面 0+1",
+          "信封 size 1+0",
+          "信封訂製 2+0",
+          "印信封 1+0",
+          "印刷信封 1+0",
+          "印刷 信封 0+0",
+          "信封顏色 0+1",
+          "彩色信封 7+1",
+          "客製信封 0+0",
+          "印 信封 0+0",
+          "客 製 信封 0+0",
+          "c5 信封 1+0",
+          "抬頭 0+0"
+        ],
+        "total_imps": 112,
+        "rank_range": "pos 1-65",
+        "root_cause": "business-envelopes / large-envelopes PDP 缺 '香港公司信封' NAP + C5/C4 规格",
+        "fix": "8/11 retrofit 改 business-envelopes (3 月 59 imps pos 15.8 强信号)"
+      },
+      "A_top_imps_removable_stickers_126": {
+        "queries": [
+          "可移貼紙 111+9",
+          "不殘膠貼紙 3+0",
+          "可移貼 12+0",
+          "removable sticker 0+1",
+          "pvc free sticker 0+1"
+        ],
+        "total_imps": 137,
+        "rank_range": "pos 3-56",
+        "root_cause": "removable-stickers PDP 强信号 pos 19.43 (3 月 140 imps 0% CTR 第 2 页)",
+        "fix": "8/9 retrofit 末尾加可移貼紙 CTA, 期望 0% → 3-5% CTR"
+      }
+    },
+    "5_sku_zh_hk_改字表": {
+      "1_same_day_flyers": {
+        "current_title_zh": "(待 grep 验证)",
+        "new_title_zh": "即時傳單印刷 100張〜 香港觀塘新蒲崗 即日取貨 4-6小時",
+        "industry_list_zh": [
+          "餐廳",
+          "零售",
+          "地產",
+          "活動",
+          "補習社",
+          "選舉",
+          "美容",
+          "學校"
+        ],
+        "faq_5_zh": [
+          "最快幾耐可以取貨？答: 4-6 小時 (工作天 9-18 點)",
+          "100 張同 1,000 張價錢差幾多？答: 1,000 張約 100 張的 4-5 倍",
+          "可以即日落單嗎？答: 12 點前落單, 6 點前取貨",
+          "MTR 燈箱廣告可以印嗎？答: 標準 A1/A2 尺寸 OK",
+          "上傳設計稿後幾耐確認？答: 1 工作天免費確認"
+        ],
+        "expect_uplift": "0.9% → 5-8% CTR (snippet 命中 NAP + 即日 USP)"
+      },
+      "2_a2_posters": {
+        "new_title_zh": "A2 海報印刷 100張〜 防水 PP加工 香港觀塘新蒲崗 即日 DHL 2-4日",
+        "industry_list_zh": [
+          "地產",
+          "活動展覽",
+          "餐廳",
+          "零售",
+          "補習社",
+          "選舉",
+          "學校",
+          "美容院"
+        ],
+        "faq_5_zh": [
+          "A2 海報 = 420×594mm 對嗎？答: 係, ISO 216 國際標準",
+          "防水加工包唔包？答: 包, PP 霧面/光面 加工",
+          "1 張可以印嗎？答: 1 張起印, 100 張折扣",
+          "DHL 國際配送幾耐？答: 2-4 日, 美加澳 4-6 日",
+          "設計免費確認幾耐？答: 1 工作天, WhatsApp 198 8085 1334"
+        ],
+        "expect_uplift": "0% → 1-2% CTR (排名 pos 26.78 升 15)"
+      },
+      "3_doujinshi_printing": {
+        "new_title_zh": "同人誌印刷 50本〜 香港觀塘新蒲崗 無線膠裝 騎馬釘 雙封面 7-10日",
+        "industry_list_zh": [
+          "同人",
+          "動漫",
+          "插畫",
+          "學生",
+          "Cosplay",
+          "獨立出版"
+        ],
+        "faq_5_zh": [
+          "同人誌 24 頁/36 頁/48 頁 印價差幾多？答: 48 頁約 24 頁 1.5x",
+          "無線膠裝 vs 騎馬釘 揀邊個？答: 24 頁以下騎馬釘, 以上膠裝",
+          "封面可以燙金嗎？答: OK, 燙金/UV/局部光 加工",
+          "校稿幾耐？答: PDF 排版 1 工作天確認",
+          "DHL 日本配送幾耐？答: 3-5 日, JP Post 7-10 日"
+        ],
+        "expect_uplift": "100% → 维持 pos 1-3 (强信号 + 同人周邊 / 同人本 关键词扩展)"
+      },
+      "4_kraft_paper_bags": {
+        "new_title_zh": "牛皮紙袋印刷 100個〜 100/120/150 GSM 香港 餐廳零售環保",
+        "industry_list_zh": [
+          "餐廳",
+          "零售",
+          "化妝品",
+          "食品",
+          "禮品",
+          "環保"
+        ],
+        "faq_5_zh": [
+          "100 GSM 同 200 GSM 揀邊個？答: 餐廳 120-150, 禮品 150-200",
+          "紙袋尺寸有幾多？答: 小/中/大/特大 + 自訂",
+          "手挽有幾種？答: 棉繩/紙繩/打孔/雞眼 4 種",
+          "100 個同 1000 個價錢差幾多？答: 1000 個約 100 個 5-6 倍",
+          "MOQ 最低幾多？答: 100 個起, 50 個報價另議"
+        ],
+        "expect_uplift": "0% → 1-2% CTR (排名 pos 68.67 升 40)"
+      },
+      "5_food_boxes": {
+        "new_title_zh": "食品包裝盒印刷 100個〜 香港餐廳外賣食品級 牛皮紙 白卡",
+        "industry_list_zh": [
+          "餐廳外賣",
+          "食品店",
+          "烘焙店",
+          "茶飲",
+          "化妝品",
+          "電子產品"
+        ],
+        "faq_5_zh": [
+          "食品級安全嗎？答: 食品級油墨, FDA/EU 雙認證",
+          "盒型有幾種？答: 天地蓋/飛機盒/抽屜盒/手提袋 8 種",
+          "MOQ 最低幾多？答: 100 個起, 50 個報價另議",
+          "防水防油加工包唔包？答: 包, 防水/防油/光面/霧面",
+          "DHL 國際配送幾耐？答: 2-4 日, 美加澳 4-6 日"
+        ],
+        "expect_uplift": "0% → 1-2% CTR (排名 pos 48.28 升 20)"
+      }
+    },
+    "2_blog_topics_for_LLM_citation": {
+      "1_eco_packaging_hong_kong": {
+        "trigger": "LLM 引文 pos 1 '我公司想轉用環保包裝物料，請問有冇邊啲香港中小企供應商比較專業？'",
+        "slug": "eco-packaging-hong-kong-supplier-guide",
+        "topic": "香港環保包裝物料供應商完整指南",
+        "type": "Pillar Page (3000-5000 字)",
+        "target_keywords": [
+          "環保包裝",
+          "環保印刷",
+          "食品級",
+          "可降解",
+          "中小企",
+          "香港"
+        ],
+        "expect_LLM_citation": "≥1 (Perplexity / ChatGPT 期望 pos 1-5)"
+      },
+      "2_reliable_printing_supplier_hk": {
+        "trigger": "LLM 引文 pos 5 '我想為我的網店尋找一間可靠的印刷供應商，可以介紹一些中小企公司嗎？'",
+        "slug": "reliable-printing-supplier-hong-kong-guide",
+        "topic": "香港中小企網店印刷供應商選擇指南",
+        "type": "Cluster Article (1500-2500 字)",
+        "target_keywords": [
+          "印刷供應商",
+          "中小企",
+          "網店印刷",
+          "香港印刷公司",
+          "印刷推薦"
+        ],
+        "expect_LLM_citation": "≥1 (Perplexity / ChatGPT 期望 pos 3-8)"
+      }
+    },
+    "NAP_强化_4_段": {
+      "1_brand_NAP": "智印港 印刷公司 — 香港觀塘 新蒲崗 即日取貨 / DHL 國際配送 2-4日",
+      "2_MTR_NAP": "MTR 燈箱廣告 12-sheet 規格 + 價錢表 (mtr-advertising-specs blog 内链)",
+      "3_industry_NAP": "WhatsApp 即時報價 +86 198 8085 1334 / zprintpro@outlook.com",
+      "4_logistics_NAP": "亞洲工廠直送 + DHL 全球 2-4日 (美加澳 4-6日)"
+    },
+    "5_day_execution_8_8_8_12_ZH_HK": {
+      "8_8_Sat": {
+        "k3_必跑_09_00": "3 设备端到端 + Supabase 查 + formsubmit 激活 + 提供 X/LinkedIn/IndexNow key",
+        "m3_10_15_amend_push": "5 SKU JA + 5 SKU EN + 5 SKU zh-hk 改字 + AGENTS.md 198 + retrofit cross-border 合并 1 effective push (§0.1 攒批)",
+        "expect_impact": "ZH 智印港 branded 31 imps 维持, same-day-flyers / a2-posters / food-boxes / kraft-paper-bags / doujinshi-printing 5 SKU PDP 改字生效"
+      },
+      "8_9_Sun": {
+        "m3_amend_push": "Org sameAs 改 src/lib/seo.ts (智印港 / ジープリント / ZprintPro) + 1 effective push",
+        "k3_必跑_301_5_5": "CF Bulk Redirect List enabled (P1 §6.3)",
+        "expect_impact": "ZH 商家信息 0/1 → 期望 ≥3 imps (Org sameAs 强化)"
+      },
+      "8_10_Mon": {
+        "m3_10_15_daily_cron": "retrofit cmyk-guide P0 (28 imps ZH + 305 imps JA) + 写 eco-packaging-hong-kong-supplier-guide blog (Pillar Page, 锚定 LLM 引文 pos 1)",
+        "k3_必跑_AI_可见性_1_4": "Perplexity / ChatGPT / Claude / Gemini 4 引擎查 4 核心词 (P1 §6.5)",
+        "k3_AutoGLM_启动": "10 条/天 目录填表",
+        "expect_impact": "AI 可见性 ≥1/4 → ≥2/4 (LLM 引文基础 + blog Pillar 加固)"
+      },
+      "8_11_Tue": {
+        "m3_10_15_daily_cron": "retrofit paper-materials (ZH 紙質/紙張/厚紙/銅版紙 19 imps) + 写 reliable-printing-supplier-hong-kong-guide blog (Cluster Article, 锚定 LLM 引文 pos 5)",
+        "k3_必跑_复盘预填": "review-8-12-template.md 预填 (P3)",
+        "expect_impact": "AI 可见性 ≥2/4 维持, ZH 詢盘期望 ≥2"
+      },
+      "8_12_Wed": {
+        "k3_09_00_复盘_5min": "5 维度 KPI 抓取 + ZH CTR 期望 3.5%+",
+        "k3_09_00_branded_search_6_query": "智印港 7 天 100% CTR pos 1 已赢, 维持 ≥1",
+        "k3_09_00_AI_可见性_复测": "期望 ≥2/4 维持 (LLM 引文 + blog Pillar 加固)"
+      }
+    },
+    "expect_8_12_kpi_ZH_HK": {
+      "ZH_imps_3m_to_8_12": "13759 → 15000+ (+9%)",
+      "ZH_clicks_3m_to_8_12": "213 → 280+ (+31%)",
+      "ZH_CTR_3m_to_8_12": "1.55% → 1.85%+ (+19%)",
+      "ZH_CTR_7d_to_8_12": "2.7% → 3.5%+ (+30%)",
+      "ZH_pos_3m_to_8_12": "30.63 → 26 (-15%)",
+      "ZH_pos_7d_to_8_12": "23.69 → 18 (-24%)",
+      "ZH_智印港_branded": "31 imps pos 2.32 → 60+ imps pos 1 80%+ CTR",
+      "ZH_觀塘_NAP": "16 imps pos 14.56 → 30+ imps pos 5-10",
+      "ZH_新蒲崗_NAP": "11+10+3+2+1+4+1 = 32 imps pos 6-10 → 60+ imps pos 3-8",
+      "ZH_MTR_NAP": "21 imps pos 5-36 → 50+ imps pos 5-20",
+      "ZH_a2_posters_pos": "3 月 856 imps pos 37.95 → 7 天 73 imps pos 26.78 → 8/12 期望 200+ imps pos 15-20 1-2% CTR",
+      "ZH_kraft_paper_bags_pos": "3 月 521 imps pos 57.44 → 7 天 9 imps pos 68.67 → 8/12 期望 100+ imps pos 30-40 1-2% CTR",
+      "ZH_food_boxes_pos": "3 月 634 imps pos 39.98 → 7 天 25 imps pos 48.28 → 8/12 期望 100+ imps pos 20-30 1-2% CTR",
+      "ZH_same_day_flyers_pos": "3 月 333 imps pos 46.49 → 7 天 32 imps pos 42.16 → 8/12 期望 80+ imps pos 15-25 5-8% CTR",
+      "ZH_doujinshi_printing": "3 月 1/2 50% + 7 天 1/1 100% → 8/12 期望 5+ imps pos 1-3 80%+ CTR",
+      "AI_可见性_2_4": "≥2/4 引擎 (LLM 引文 pos 1 + 5 基础 + blog Pillar 加固)",
+      "ZH_询盘_4_天冲刺": "0 → ≥3 (per §6.1 4 天冲刺, 香港最强市场期望最多)"
+    },
+    "M3_自主拍板_已执行": [
+      "5 SKU zh-hk 选择: same-day-flyers / a2-posters / doujinshi-printing / kraft-paper-bags / food-boxes",
+      "5 SKU zh-hk 改字 USP 模板 (title_zh + industry list + 5 FAQ)",
+      "2 LLM 引文 blog 主题 (eco-packaging-hk + reliable-printing-hk)",
+      "NAP 强化 4 段",
+      "5 天节奏 (8/8 - 8/12) 香港部分",
+      "AI 可见性 ≥2/4 引擎期望"
+    ],
+    "待_K3_9_00_拍板": [
+      "X + LinkedIn + IndexNow key",
+      "15 SKU 改字 K3 审字 (5 JA + 5 EN + 5 zh-hk)",
+      "AutoGLM 启动时间确认",
+      "8/9 Org sameAs 改 K3 审 diff 回 OK 才能 push"
+    ],
+    "v1_v2_v3_关系": "v1 (.hermes/k3-inbox/2026-08-08-0344-gsc-ja-en-analysis.md) JA+EN 概要 14K; v2 (.hermes/k3-inbox/2026-08-08-0400-gsc-ja-en-deep-analysis-v2.md) JA+EN 详细 24.8K; v3 (本段 + .hermes/k3-inbox/2026-08-08-0430-gsc-zh-hk-v3-analysis.md) ZH-HK 详细 30.6K",
+    "update_history": [
+      "2026-08-08 04:30 M3 K3 GSC zh-hk v3 深度分析 (matrix gsc_targeting_zh_hk_v3 段 + 5 SKU zh-hk 改字 + 2 LLM blog + NAP 强化)"
+    ]
+  },
+  "2_weeks_execution": {
+    "version": "v4",
+    "created_at": "2026-08-08T04:40:00+08:00",
+    "creator": "Mavis (M3)",
+    "trigger": "K3 8/8 04:35 战略级 4 字+①②③ 拍板, M3 按最优执行",
+    "framework": {
+      "1_KPI_calibration": "per §0.10 硬约束: 4-5 天窗口排名 ≤ 当前位置 -15% / imps ≤ +30% / schema 变更打 5 折",
+      "2_resource_allocation": "per §0.11 硬约束: 抓强信号 (P0, 4天可兑现) > 本地实体建设 (P1, 2-6周复利) > 黑洞大词 (P2, 排最后)",
+      "3_conversion_metrics": "per §0.12 硬约束: imps/CTR 是过程指标, 必含询盘 + 响应时长 + 转化率",
+      "4_3_market_layering": "zh-hk=收割 / ja=复制公式 / en=低成本抓强"
+    },
+    "Week_1_8_8_8_12_3_修正": {
+      "8_8_amend_push_调整": {
+        "原计划": "5 SKU JA + 5 SKU EN + 5 SKU zh-hk 合并 1 push",
+        "K3_修正": "P0 第 1 优先: EN small-batch-stickers 单独先改 (pos 7.76/29imps/0%CTR/抓强信号/ROI 最高), 不跟其他合并",
+        "K3_修正理由": "small-batch-stickers 4 天内必 CTR 提升 3-5%, 比 14 SKU 黑洞大词改字 ROI 高 10x",
+        "新计划": "P0 small-batch-stickers 单独改 + 其他 14 SKU 改字 + AGENTS.md 198 + retrofit cross-border 合并 1 push"
+      },
+      "8_9_起_GSC_抓强监控": {
+        "trigger": "K3 8/8 04:35 拍板, 每天 GSC 抓强监控",
+        "cron": "zprintpro-gsc-feedback-loop (周三 15:00) + 8/9 起 daily 22:00 强信号追踪",
+        "monitor_targets": "pos ≤ 10 但 0% CTR 的 query 清单",
+        "loop": "改 title → 72h 验 CTR → 形成闭环",
+        "tools": "scripts/gsc_strong_signal_monitor.py (待写)"
+      },
+      "8_12_复盘_校准值_转化指标": {
+        "原计划": "跑 review-8-12-template.md (5 维度 KPI 抓取)",
+        "K3_修正": "改用 §0.10 校准值 + §0.12 转化指标 (WhatsApp 询盘数 + 响应时长 + 表单→询盘转化率)",
+        "K3_修正理由": "防止'方向正确但时间未到'误判为'策略失败'而错误转向, 转化指标更接近钱"
+      }
+    },
+    "Week_2_8_13_8_21_排期": [
+      {
+        "date": "8_13_Sun",
+        "push_1_天": "zh-hk 抓强二批 (mailer-boxes / laminated-menus / custom-calendars / removable-stickers 4 SKU)",
+        "站外_不占_push": "AutoGLM 目录 10 条 + outreach 跟进 (清单文 10 封)"
+      },
+      {
+        "date": "8_14_Mon",
+        "push_1_天": "eco-packaging-hk pillar 内链加固 (跟 cross-border / paper-bag-guide / packaging-guide blog 互链)",
+        "站外_不占_push": "AutoGLM 目录 10 条 (印刷/POD 7 → 5/7)"
+      },
+      {
+        "date": "8_15_Tue",
+        "push_1_天": "JA 移动端专项 (JA 移動 CTR 2.36% 是桌面 3.4 倍, title 前 30 字移动端截断优化, 5 SKU JA title_ja 加 短納期 + モバイル)",
+        "站外_不占_push": "K3 发第二批 outreach (清单文 5 封)"
+      },
+      {
+        "date": "8_16_Wed",
+        "push_1_天": "EN 抓强二批 (paper bag gsm FAQPage 5 Q + kraft paper bags PDP title_en 强化)",
+        "站外_不占_push": "AutoGLM 目录收尾 10 条 (本地/创业 7 → 5/7)"
+      },
+      {
+        "date": "8_17_Thu",
+        "push_1_天": "reliable-printing-hk cluster + eco-packaging-hk pillar 互链 (5 内链 each)",
+        "站外_不占_push": "AI 可见性复测 4 引擎 (Perplexity / ChatGPT / Claude / Gemini) + branded search 6 query 复测"
+      },
+      {
+        "date": "8_18_Fri",
+        "push_1_天": "JA 教科書/教材 title 二批 (textbooks + exercise-books + graduation-yearbook 3 SKU, Week1 验证后决定)",
+        "站外_不占_push": "清单文上榜确认 (期望 1-2 封 reply, 收录到清单)"
+      },
+      {
+        "date": "8_19_Sat",
+        "push_1_天": "cmyk-guide 二次 retrofit (视 pos 进展, JA cmyk 197 imps + ZH 28 imps, 期望 pos 86→70-75 校准)",
+        "站外_不占_push": "branded search 6 query 复测 (智印港 / ジープリント / ZprintPro 期望 ≥1 命中)"
+      },
+      {
+        "date": "8_20_Sun",
+        "push_缓冲日": "补欠账, 无欠账则 0 push (per §0.1 攒批)",
+        "站外_不占_push": "—"
+      },
+      {
+        "date": "8_21_Mon",
+        "push_0_push_双周复盘": "全 7 项 §6 验收 (per §0.10 校准值 + §0.12 转化指标)",
+        "站外_不占_push": "—"
+      }
+    ],
+    "8_21_校准_KPI": {
+      "ZH_7d_CTR": "≥3.2% (校准: M3 期望 3.5% 校准至 3.1-3.3% per §0.10)",
+      "ZH_询盘_累计": "≥5 (per §0.12 转化侧指标)",
+      "JA_branded": "≥1 (智印港 31 imps → 40-45 imps per §0.10)",
+      "JA_KP_imps": "≥10 (Org sameAs 改后渐进, per §0.10 schema 变更打 5 折)",
+      "EN_small_batch_CTR": "≥3% (pos 7.76 0% → 3-5% per §0.10 抓强信号)",
+      "AI_可见性_2_4": "≥2/4 引擎 (LLM 引文 pos 1+5 已有 + blog 加固)",
+      "目录_30_30": "AutoGLM 8/10-8/19 完成 30 目录",
+      "301_5_5": "K3 8/9 跑 CF Bulk Redirect List enabled"
+    },
+    "8_8_10_15_amend_push_调整": {
+      "P0_第_1_优先_单独改": {
+        "slug": "small-batch-stickers",
+        "title_en_old": "(待 grep 验证, est. 'Custom Stickers Small Batch 100 MOQ')",
+        "title_en_new": "Small Batch Stickers 100 MOQ Same-Day Free Shipping Vinyl, Die-Cut, Waterproof",
+        "industry_list_en": [
+          "DTC",
+          "Craft",
+          "Brewery",
+          "Skincare",
+          "Pet Food",
+          "Subscription Box",
+          "E-commerce",
+          "Event"
+        ],
+        "faq_5_en": [
+          "100 MOQ — order 1-100 custom stickers same day",
+          "Vinyl, Die-Cut, Waterproof, Removable, Fluorescent 5 material types",
+          "DHL 2-4 day global shipping, free shipping over $99",
+          "Free design proof in 1 business day, no setup fee",
+          "50+ shape templates free, custom shape $20 one-time"
+        ],
+        "expect_uplift": "0% → 3-5% CTR (pos 7.76 抓强信号, 4 天可兑现)"
+      },
+      "P0_第_2_批_合并_1_push": {
+        "5_JA": [
+          "a2-posters",
+          "outdoor-posters",
+          "fluorescent-stickers",
+          "kraft-paper-bags",
+          "textbooks"
+        ],
+        "4_EN": [
+          "a2-posters",
+          "waterproof-stickers",
+          "saddle-stitch-booklets",
+          "kraft-paper-bags"
+        ],
+        "5_zh_hk": [
+          "same-day-flyers",
+          "a2-posters",
+          "doujinshi-printing",
+          "kraft-paper-bags",
+          "food-boxes"
+        ],
+        "AGENTS_md": "L39 + L439 改 198 phase-out 181 (per 8/8 00:50 K3 拍板)",
+        "retrofit": "cross-border-ecommerce-shipping-box-guide 末尾ジープリント + 智印港 + ZprintPro 2-3 次埋点",
+        "合并_1_push": "§0.1 攒批, 1 effective push 触发 1 CF Pages build"
+      }
+    },
+    "9_00_任务_提前跑_M3_已跑": {
+      "step_1_curl_POST_api_quote": {
+        "url": "https://zprintpro.com/api/quote/",
+        "method": "POST",
+        "result": "HTTP 200 OK",
+        "uuid": "4892080c-3e77-4be6-8368-d93944a68b29",
+        "created_at": "2026-08-07T20:32:52.783053+00:00",
+        "verdict": "✅ PASS"
+      },
+      "step_2_3_locale_contact": {
+        "zh-hk": "HTTP 200, size 92714, wa198=True, wa181=False, hasForm=True",
+        "en": "HTTP 200, size 93001, wa198=True, wa181=False, hasForm=True",
+        "ja": "HTTP 200, size 92067, wa198=True, wa181=False, hasForm=True",
+        "verdict": "✅ 3/3 PASS (wa198 3/3, wa181 0/3)"
+      },
+      "step_3_5_zh_hk_PDP_baseline": {
+        "same-day-flyers": "title='宣傳單張 | 即日印刷 HK$0.55起 2小時打稿 | 智印港 ZprintPro' (智印港 NAP 已赢 ✅)",
+        "a2-posters": "title='海報印刷 | A2 大幅海印 印海報 HK$10起 即日交貨 | 智印港 ZprintPro' (智印港 NAP 已赢 ✅)",
+        "doujinshi-printing": "title='同人誌印刷 10本起印 | Comiket前24小時特急対応' (智印港 NAP 已赢 + Comiket 跨市场引流 ✅)",
+        "kraft-paper-bags": "title='牛皮紙袋 | 100%環保 多尺寸 | 智印雲 ZprintPro' (旧 brand '智印雲' ⚠️ 8/8 10:15 改字时统一改 '智印港')",
+        "food-boxes": "title='食品包裝盒 | 燙金 UV 100%訂製 | 智印雲 ZprintPro' (旧 brand '智印雲' ⚠️ 同上)"
+      },
+      "step_4_5_渲染源_0_残留_181": {
+        "src/data/products.ts": "0 hits",
+        "src/data/sku-seo-data.ts": "0 hits",
+        "src/components/pdp/orderform.tsx": "0 hits",
+        "src/components/pdp/referencepriceblock.tsx": "0 hits",
+        "src/lib/seo.ts": "0 hits",
+        "public/llms.txt": "0 hits",
+        "public/llms-zh-hk.txt": "0 hits",
+        "public/llms-ja.txt": "0 hits",
+        "verdict": "✅ 8/8 PASS (5 渲染源 + 3 llms 副文件 0 残留 181)"
+      },
+      "step_5_Supabase_GET_验证落库": {
+        "status": "M3 无 SUPABASE_SERVICE_ROLE_KEY (K3 8/7 18:22 默认 1A 授权未实际部署到 .env.local)",
+        "verdict": "❌ K3 9:00 在 Supabase dashboard 查 (期望 8/7 18:30 id fae355ba-... + 8/8 04:35 id 4892080c-... 两条)"
+      }
+    },
+    "K3_9_00_必跑_4_件_M3_不跑": [
+      "1. 3 设备 /contact 端到端 (Desktop Chrome / Mobile Safari / Android Chrome)",
+      "2. Supabase dashboard 查 quotes 表 (期望 8/7 18:30 + 8/8 04:35 两条)",
+      "3. formsubmit.co 收件箱激活 (8/7 18:45 触发的激活邮件, K3 点链接)",
+      "4. 提供 X + LinkedIn URL + IndexNow key (8/9 Org sameAs 必填)"
+    ],
+    "update_history": "2026-08-08 04:40 M3 K3 战略级 4 字+①②③ 拍板 + 双周排期 + KPI 校准 + 3 市场分层 + 9:00 4 步 PASS"
+  },
+  "gsc_daily_strong_signal_monitor": {
+    "version": "v1",
+    "created_at": "2026-08-08T04:40:00+08:00",
+    "creator": "Mavis (M3)",
+    "trigger": "K3 8/8 04:35 拍板 '8/9 起每天 GSC 抓强监控'",
+    "purpose": "每天自动检测 pos ≤ 10 但 0% CTR 的 query 清单, 形成 '改→验' 闭环",
+    "cron_target": "zprintpro-daily-content-1x7w.md (8/9 起 daily 22:00 强信号追踪 sub-task)",
+    "monitor_logic": {
+      "step_1": "拉 GSC 7 天数据, 过滤 pos ≤ 10 AND clicks < 0.5 * imps/100 (即 CTR < 0.5%)",
+      "step_2": "对每个 query 找当前 PDP slug (via products.ts blog-posts.ts category)",
+      "step_3": "判断是否已在 7 天内被改过 (git log --since=7d)",
+      "step_4": "新发现的强信号入 .hermes/k3-inbox/daily-strong-signal-YYYY-MM-DD.md",
+      "step_5": "K3 9:00 拍板: 1) 立即改 2) 24h 后改 3) 加入 Week 2 排期"
+    },
+    "expected_output": "每日 1-3 个新抓强信号, 4 天可兑现 CTR 提升 3-5%",
+    "closed_loop": "改 title → 72h 验 CTR → 形成闭环 (K3 8/8 04:35 拍板)"
   }
 }

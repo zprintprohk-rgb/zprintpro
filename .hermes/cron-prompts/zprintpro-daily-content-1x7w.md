@@ -1,6 +1,6 @@
 # zprintpro-daily-content-1x7w cron prompt (SSoT)
 # Source: mavis cron 3684eb06-19af-4d74-93c8-20b95dd0e666
-# Last sync: 2026-08-05 17:24 (K3 拍板 v8.1 SEO+GEO + 8 周 60 篇 全面升级)
+# Last sync: 2026-08-08 04:50 (M3 升 v8.9 K3 战略级 4 字+①②③ 落实 + 3 市场分 cron + 抓强监控 + 9:00 4/5 PASS 教训 + 双周排期同步)
 # v8.1 升级: 引用 .hermes/template/blog-v8-seo-geo-template.md (cosmetics v8 3 locale 抽嵌)
 
 你是 zprintpro-nextjs (智印云 / ZprintPro) 每日 SEO 自进化专员 v8 (1 篇博客/天 + 5 SKU/天 + 1 PDP 转化审查/天 + matrix tracking).
@@ -211,6 +211,451 @@
   4. 验证 trackContactFormSubmit / generate_lead 事件链 (待 K3 8/12 拍板事件名口径)
   5. 验证备选入口 (wa.me / mailto) 至少 1 个
 - **不破 quota 红线**: 1 push/day 严格. 6 天 (8/7-8/12) 攒批 = 6 push. 8/12 复盘日不 push, 节省 1 quota. 累计 8/7-8/12 5 push (8/12 复盘日 0 push)
+
+【v8.4 升级 (2026-08-08 01:03 K3 拍板, /api/quote 9ab9ee4 修后 + §0.7 production smoke 必跑)】
+- **触发**: 8/7 18:30 端到端实测发现 /api/quote 写错 Supabase 表 (quote_calculations 不存在), 询盘 500 黑洞, §6.1 询盘=0 归因全错. K3 8/7 18:33 拍板 A 修, 9ab9ee4 8/7 18:38 push PASS. 8/8 01:03 K3 拍板自进化机制 v8.4 升级.
+- **§0.7 关键漏斗 endpoint production smoke 必跑** (新硬约束, MEMORY.md §0.7):
+  - **任何 cron auto-commit 改 src/app/api/* 必 §0.7 production smoke 3 步**:
+    1. `curl POST https://<domain>/api/<endpoint>/` 带完整 payload → 期望 200 + UUID
+    2. `curl GET https://<supabase-url>/rest/v1/<table>?select=*&order=created_at.desc&limit=5` → 期望看到最新记录
+    3. 双向 verify (HTTP status + DB count) → 2/2 PASS 算 §0.7 PASS
+  - **不跑 = 不算 PASS**: deployment smoke FAIL 立即 revert + 升级 K3 (P0 阻断)
+  - **源教训**: 8/7 18:30 9ab9ee4 教训, /api/quote 部署 6/7-8/7 一直 500 黑洞, K3 §6.1 4 天冲刺阻塞
+- **每次 retrofit/新写完成后, 必 curl /api/quote/ 验证 HTTP 200** (新转化验证前置):
+  - 改造完成后, 在 conversion-link-check 中加 step 0: `curl POST /api/quote/ 完整 payload` → 期望 200 + UUID
+  - 失败 → 该页 conversion_status = 'broken' + matrix api_endpoint_health = '500' + K3 立即升级 (不继续写内容)
+- **matrix api_endpoint_health 字段 (v8.4 新增)**:
+  - 8_7_8_12_retrofit 段每 entry 加 `api_endpoint_health: "200"` + `api_endpoint_health_checked_at: ISO 8601` + `api_endpoint_health_check_sha: <commit>`
+  - 9ab9ee4 修后默认 200, 部署必 §0.7 production smoke 验证
+- **8/8 09:00 K3 3 设备端到端 + Supabase dashboard 查 (P0 阻断 8/12 验收)**:
+  - K3 9:00 起来跑 (M3 不跑, K3 真实走表单)
+  - 验证 /contact 页面 3 设备 × 3 locale = 9 次提交 200 + Supabase 看到 ≥1 条真实询盘 + formsubmit.co 收件箱激活邮件已点
+  - FAIL → 立即升级 K3 (P0 阻断 8/12 验收)
+- **8/8-8/12 4 天冲刺 (K3 8/8 01:03 拍板)**:
+  - P1: CTR 狙击词监控 (月曆印刷 pos 23 + 両面カラー印刷 pos 27, 每日, 8/12 至少 1 词进前 20)
+  - P1: AI 可见性实测 (8/10, Perplexity/ChatGPT/Google AI/Claude 4 引擎, ≥1/4 引用 zprintpro.com)
+  - P1: 301 传递修复 (8/9, K3 查 CF Bulk Redirect List enabled, 5/5 PASS)
+  - P2: v8 retrofit 继续 (8/8 cross-border → 8/9 baby-label → 8/10 cmyk → 8/11 paper)
+  - P3: 8/12 复盘报告预写 (8/11, 跑 review-8-12-template.md, 7 项 PASS/FAIL + §9 路径推荐 A/B/C/D)
+- **§0.6 攒批纪律 (K3 8/8 01:03 拍板)**:
+  - 1 push/day 严格, 紧急修复走 §0.1 例外
+  - 8/8-8/12 严格 1 push/天 (8/8 daily + 8/9 静默 + 8/10 weekly + 8/11 静默 + 8/12 gsc-cron), 8/12 复盘日 0 push
+- **§0.7 与 §0.6 §0.1 关系**:
+  - §0.1 1 push/day 攒批纪律 不影响 §0.7 — §0.7 是 P0 质量门, 必须每 push 都过
+  - §0.6 紧急修复例外 不豁免 §0.7 — 紧急修复 push 后仍必 §0.7 production smoke 3 步
+
+【v8.5 升级 (2026-08-08 02:52 K3 拍板, ja 品牌词「ジープリント」+ 智印港公式复制 + 8/9 批次 + AutoGLM 外链)】
+- **触发**: K3 8/8 02:52 拍板 "按最优执行" 5 段外链/GEO/智印港公式/8/9-8/12 攒批表 + §0.9 增补. 8/8 03:00 M3 落 4 SSoT (matrix ja_brand + AGENTS.md §13.16.1 + review §6.5 + cron prompt v8.5).
+- **日文品牌词「ジープリント」 (J-Print) 拍板** (K3 8/8 02:52 "按最优执行"):
+  - **primary brand ja**: ZprintPro (维持 §13.13 鐵律, 不破现状)
+  - **alternate brand ja**: ジープリント (音译 Z→J + Print→プリント, 3 假名简洁)
+  - **NAP 一致性**: 站名=社媒=JP 印刷组合目录=Organization schema 4 处统一
+  - **Organization sameAs 数组** (8/9 改 src/lib/seo.ts):
+    - X: `https://x.com/zprintpro` (待 K3 9:00 提供)
+    - LinkedIn: `https://linkedin.com/company/zprintpro` (待 K3 9:00 提供)
+    - JP 印刷组合目录: 30 条 (8/10 AutoGLM 填表, K3 9:00 起来点提交)
+    - Startup Base: `https://startupbase.japan/companies/zprintpro` (待 K3 9:00 提供)
+  - **areaServed=JP** (维持), **knowsAbout** 数组: [学园祭印刷, POD, 卒業記念アルバム, ステッカー印刷, チラシ印刷]
+- **8/9 批次** (K3 8/8 02:52 第 3-4 段, working tree 落等 daily cron 跑):
+  - 8/9 daily cron auto retrofit cross-border-ecommerce-shipping-box-guide (per v8.3 排期)
+  - **8/9 增补批次** (K3 拍板, M3 落):
+    1. **llms.txt**: 已有 (8/7 02:20 b845497, 5KB 主文件 + 3KB 副文件), 8/9 增补 ja 品牌词 + 日文 sameAs
+    2. **robots.txt**: 12/12 AI bots allowed (8/6 §13.15 K3 已加), 8/9 验证 + 加 5 个新 AI bots (DeepSeek Bot / Kimi / Mistral AI / Cohere / Perplexity-User)
+    3. **IndexNow key**: 待 K3 8/8 09:00 提供 (per AGENTS.md), 落 scripts/submit-indexnow.py 跑 99 URLs
+    4. **FAQPage schema**: 已有 (per context), 8/9 验证 5/5 PASS + 增补 cross-border retrofit
+    5. **Organization sameAs 改 src/lib/seo.ts**: 8/9 daily cron amend 合并 1 push
+- **AutoGLM 外链启动** (K3 8/8 02:52 第 1-2 段, 8/10 起):
+  - 8/8 03:00 落 matrix ja_brand.directory_targets_30 (print_pod 7 + local 7 + industry 5 + saas 3 = 22 起步, 8 备选)
+  - 8/8 9:00 K3 起来确认: AutoGLM 跑 .hermes/auto-glm/auto-glm-fill.js 每天 10 条 (per AGENTS.md)
+  - 8/10 起每天填 10 条, K3 9:00 起来点最终提交 + 邮箱验证
+  - **agent 填 + K3 点**: 半自动 (ToS 合规, 整批 bot 风险)
+  - **首周目标**: 20-30 条合规目录 = 日本实体存在感基线
+- **品牌词埋点** (K3 8/8 02:52 第 3 段, 8/9-8/11 retrofit 期间):
+  - cross-border-ecommerce-shipping-box-guide (8/9) 末尾自然提及「ジープリント」+ 「学园祭印刷」+ 「卒業記念アルバム」2-3 次
+  - baby-product-label-sticker-printing-guide (8/9) + cmyk-guide (8/10) + paper-materials (8/11) 都加
+  - **目标**: 8/12 测 branded search ≥1 个 query 命中 zprintpro.com 域名
+- **§0.9 增补: 外链注册自动化边界** (K3 8/8 02:52 拍板):
+  - ✅ 可批量: 行业目录/本地商会/创业名录 → AutoGLM 填表, K3 点提交+验证
+  - ✅ 可自动: 清单文发现 + outreach 起草 (发送归 K3)
+  - ⛔ 禁止: 论坛签名档/评论留链/Web2.0/PBN/自动换链 (Penguin + 封号风险)
+  - **守住一条**: agent 填表, 最终提交按钮和邮箱验证由 K3 点 (ToS 合规)
+- **branded search 监测** (K3 8/8 02:52 第 3 段, 8/12 复盘):
+  - 6 个 query: ZprintPro / ジープリント / ジープリント 印刷 / ジープリント ステッカー / ジープリント 評判 / ジープリント 料金
+  - baseline 8/8 = 0, target 8/12 ≥1 个 query 命中 zprintpro.com
+  - 监测 cron: zprintpro-gsc-feedback-loop (每周三 15:00) + 8/12 review 当日手动统计
+
+
+
+【v8.6 升级 (2026-08-08 04:00 M3 K3 GSC 数据驱动优化执行 + 5 SKU 改字)】
+- **触发**: K3 8/8 03:44 GSC 数据分析 (JA 1638 imps 1.04% CTR pos 37 / EN 2641 imps 0.53% CTR pos 27) + M3 8/8 04:00 v2 深度分析 (134 JA query + 200+ EN query + 87 SKU 命中 + 5 天执行表).
+- **报告落盘** (SSoT):
+  - v1: `.hermes/k3-inbox/2026-08-08-0344-gsc-ja-en-analysis.md` (14K, 概要 + 5 天执行)
+  - **v2**: `.hermes/k3-inbox/2026-08-08-0400-gsc-ja-en-deep-analysis-v2.md` (24K, 详细 SKU 命中 + 改字模板 + branded search)
+  - **matrix**: `.hermes/industry-keyword-matrix.json` gsc_targeting_v2 段 (+31K, 7 JA buckets + 12 EN buckets + 5 SKU JA/EN 改字表 + 5_day_execution)
+- **5 SKU JA P0 (8/8 10:15 amend push)**:
+  1. **a2-posters**: title_ja "A2ポスター印刷 1-3日 防水 PP加工 1枚〜" + 7 行业 (屋外広告/展示会/イベント/学園祭/ショップ/飲食/不動産) + 5 FAQ
+  2. **outdoor-posters**: title_ja "屋外防水ポスター 耐候3年+ UV加工 PP 1枚〜" + 6 行业 + 5 FAQ
+  3. **fluorescent-stickers**: title_ja "蛍光ステッカー 1枚〜 防水 PP加工 ダイカット" + 5 行业 + 5 FAQ
+  4. **kraft-paper-bags**: title_ja "クラフト紙袋 印刷 100-200枚〜 オリジナル logo" + 6 行业 + 5 FAQ
+  5. **textbooks**: title_ja "教科書・教材 印刷製本 無線綴じ 50冊〜 学校/塾" + 6 行业 + 5 FAQ
+- **5 SKU EN P0 (8/8 10:15 amend push)**:
+  1. **small-batch-stickers** (P0 抓强 pos 7.76 0% CTR): title_en "Small Batch Stickers 100 MOQ Same-Day Free Shipping Vinyl, Die-Cut, Waterproof" + 8 行业 (DTC/Craft/Brewery/Skincare/Pet Food/Subscription Box/E-commerce/Event) + 5 FAQ
+  2. **a2-posters** (P0 120+ imps 黑洞): title_en "A2 Poster Printing 1-3 Day Turnaround UV-Coated Lamination Free Shipping 100+ MOQ" + 8 行业 + 5 FAQ
+  3. **waterproof-stickers** (P0 100+ imps 黑洞): title_en "Waterproof Stickers 5+ Years Outdoor UV Lamination Free Shipping 100 MOQ" + 8 行业 + 5 FAQ
+  4. **saddle-stitch-booklets** (P0 88 imps 黑洞 pos 73-87): title_en "Saddle Stitch Booklets 16-64 Pages 1-3 Day Wire Bound Catalog Printing Free Shipping 100 MOQ" + 8 行业 + 5 FAQ
+  5. **kraft-paper-bags** (P0 抓强 pos 10.38/13.38 0% CTR): title_en "Kraft Paper Bags 100-200 GSM Custom Logo Printed 5,000 MOQ Free Shipping Asia Factory" + 8 行业 + 5 FAQ
+- **8/9 Org sameAs 改 src/lib/seo.ts** (待 K3 9:00 提供 X + LinkedIn + IndexNow key):
+  - alternateName: ['ジープリント', 'ZprintPro JP', '智印港']
+  - sameAs: [X, LinkedIn, 30 JP 目录, Startup Base] (K3 9:00 提供具体 URL)
+  - areaServed: [JP, US, HK]
+  - knowsAbout: [学园祭印刷, POD, 卒業記念アルバム, ステッカー印刷, チラシ印刷, cmyk printing, waterproof stickers, small batch stickers]
+  - **预期**: EN KP imps 9→30+ (3.3x), JA KP imps 4→30+ (7.5x), branded search 6 query 基线 0→≥1
+- **5 天节奏 (8/8 04:00 - 8/12 22:00)** (per matrix gsc_targeting_v2.5_day_execution):
+  - 8/8 (Sat): K3 9:00 跑 3 设备 + Supabase + formsubmit + 提供 key / M3 10:15 amend push 5 SKU 改字 + retrofit cross-border + ジープリント 埋点
+  - 8/9 (Sun): M3 amend Org sameAs + 1 push / K3 跑 301 5/5 / K3 AutoGLM 准备
+  - 8/10 (Mon): M3 retrofit cmyk-guide P0 (305 imps pos 86) / K3 跑 AI 可见性 ≥1/4 / K3 AutoGLM 启动 10 条
+  - 8/11 (Tue): M3 retrofit paper-materials + 3 篇 P1 (envelope / a1-posters / pvc-menu) / K3 跑复盘预填
+  - 8/12 (Wed): 0 push / K3 跑复盘 5min + AI 可见性复测 + branded search 6 query
+- **§0.7 关键漏斗 endpoint 部署后必 production smoke 3 步** (K3 8/8 01:03 拍板, 8/7 18:30 9ab9ee4 教训固化):
+  - step 1: curl POST /api/quote/ 期望 HTTP 200 + UUID
+  - step 2: curl GET Supabase /rest/v1/quotes?order=created_at.desc&limit=5 期望看到最新记录
+  - step 3: 双向 verify 2/2 PASS 算 §0.7 PASS
+  - 不跑 = 不算 PASS (K3 8/8 01:03 拍板)
+- **§0.8 Self-Reminder 防抖** (K3 8/8 01:56 P0 阻断):
+  - 已知时间点: 用 cron once with `at` 一次性触发后自删
+  - 未知事件: 轮询必带 max_retry + 指数退避 + 超时自毁
+  - 1h 内 >3 次无实质操作: P0 故障, 立即告警
+- **branded search 6 query 监测** (K3 8/8 04:00 拍板):
+  - ja: ジープリント / ZprintPro / 智印港 / zprin
+  - en: ZprintPro / zprint / zprintpro printing / zprintpro.com
+  - baseline 8/8 = 0, target 8/12 ≥1 命中 zprintpro.com
+  - 监测 cron: zprintpro-gsc-feedback-loop (每周三 15:00) + 8/12 review 当日手动统计
+- **8/8 09:55 cron once 7e2cc0ba 触发** (per §0.8):
+  - 校验 SSoT v8.6 + 准备 amend AGENTS.md 198 + retrofit cross-border commit + 5 SKU 改字
+  - 与 10:15 daily cron 合并 1 effective push (§0.1 攒批)
+  - 触发即终止 (per §0.8 原则 2)
+
+
+
+【v8.7 升级 (2026-08-08 04:30 M3 K3 GSC zh-hk 香港 5 SKU 改字 + 2 LLM blog)】
+- **触发**: K3 8/8 04:30 zh-hk GSC 数据分析 (3 月 13759 imps / 7 天 1332 imps / CTR 2.7% 三市场最强) + M3 v3 深度分析 (200+ ZH query + 87 SKU 命中 + 5 顶级信号 + 2 LLM 引文 pos 1+5).
+- **报告落盘** (SSoT):
+  - **v3**: `.hermes/k3-inbox/2026-08-08-0430-gsc-zh-hk-v3-analysis.md` (30.6K, 详细 ZH-HK 分析)
+  - **matrix**: gsc_targeting_zh_hk_v3 段 (+24K, 12 ZH 黑洞桶 + 5 SKU 改字 + 2 LLM blog + NAP 强化 4 段)
+- **5 SKU zh-hk P0 (8/8 10:15 amend push 合并 1 push)**:
+  1. **same-day-flyers** (3 月 333 imps 黑洞 pos 46.49 + 7 天 32 imps pos 42.16 升 4 位): title_zh "即時傳單印刷 100張〜 香港觀塘新蒲崗 即日取貨 4-6小時" + 8 行业 (餐廳/零售/地產/活動/補習社/選舉/美容/學校) + 5 FAQ
+  2. **a2-posters** (3 月 856 imps 黑洞王 pos 37.95 + 7 天 73 imps pos 26.78 升 11 位): title_zh "A2 海報印刷 100張〜 防水 PP加工 香港觀塘新蒲崗 即日 DHL 2-4日" + 8 行业 (地產/活動展覽/餐廳/零售/補習社/選舉/學校/美容院) + 5 FAQ
+  3. **doujinshi-printing** (3 月 1/2 50% CTR + 7 天 1/1 100% pos 3 顶级): title_zh "同人誌印刷 50本〜 香港觀塘新蒲崗 無線膠裝 騎馬釘 雙封面 7-10日" + 6 行业 (同人/動漫/插畫/學生/Cosplay/獨立出版) + 5 FAQ
+  4. **kraft-paper-bags** (3 月 521 imps 黑洞 pos 57.44 + 7 天 9 imps pos 68.67): title_zh "牛皮紙袋印刷 100個〜 100/120/150 GSM 香港 餐廳零售環保" + 6 行业 (餐廳/零售/化妝品/食品/禮品/環保) + 5 FAQ
+  5. **food-boxes** (3 月 634 imps 黑洞 pos 39.98 + 7 天 25 imps pos 48.28): title_zh "食品包裝盒印刷 100個〜 香港餐廳外賣食品級 牛皮紙 白卡" + 6 行业 (餐廳外賣/食品店/烘焙店/茶飲/化妝品/電子產品) + 5 FAQ
+- **2 LLM 引文 blog 主题 (8/10 + 8/11 retrofit 写)**:
+  1. **eco-packaging-hong-kong-supplier-guide** (Pillar Page 3000-5000 字, 8/10 写): 锚定 LLM 引文 pos 1 "我公司想轉用環保包裝物料，請問有冇邊啲香港中小企供應商比較專業？" + 6 行业 (食品/餐廳/烘焙/茶飲/化妝品/電子) + FAQPage + BreadcrumbList
+  2. **reliable-printing-supplier-hong-kong-guide** (Cluster Article 1500-2500 字, 8/11 写): 锚定 LLM 引文 pos 5 "我想為我的網店尋找一間可靠的印刷供應商，可以介紹一些中小企公司嗎？" + 5 行业 (網店/中小企/學校/補習社/同人) + FAQPage
+  - **预期**: AI 可见性 ≥1/4 → ≥2/4 引擎 (Perplexity / ChatGPT 期望 pos 1-5 引用 zprintpro.com)
+- **NAP 强化 4 段 (8/9 Org sameAs 改后立即生效)**:
+  1. **品牌 NAP**: "智印港 印刷公司 — 香港觀塘 新蒲崗 即日取貨 / DHL 國際配送 2-4日"
+  2. **MTR NAP**: "MTR 燈箱廣告 12-sheet 規格 + 價錢表" (mtr-advertising-specs blog 内链)
+  3. **联系 NAP**: "WhatsApp 即時報價 +86 198 8085 1334 / zprintpro@outlook.com"
+  4. **物流 NAP**: "亞洲工廠直送 + DHL 全球 2-4日 (美加澳 4-6日)"
+- **5 天执行表 (8/8 - 8/12) 香港部分**:
+  - 8/8: K3 9:00 跑 3 设备 + 提供 X/LinkedIn key / M3 10:15 amend push 15 SKU 改字 (5 JA + 5 EN + 5 zh-hk) + retrofit cross-border + AGENTS.md 198 合并 1 push
+  - 8/9: M3 amend push Org sameAs 改 + retrofit / K3 跑 301 5/5
+  - 8/10: M3 retrofit cmyk-guide P0 + 写 eco-packaging-hk blog / K3 跑 AI 可见性 ≥1/4 + AutoGLM 启动
+  - 8/11: M3 retrofit paper-materials + 写 reliable-printing-hk blog / K3 跑复盘预填
+  - 8/12: 0 push 复盘 / K3 跑 5min 手测 + branded search + AI 可见性复测
+- **§0.7 §0.8 §0.9 引用 (per K3 8/8 拍板)**:
+  - §0.7 关键漏斗 endpoint production smoke 3 步 (8/9 Org sameAs 改后必跑, 不跑不算 PASS)
+  - §0.8 Self-Reminder 防抖 (8/8 09:55 cron once 7e2cc0ba 一次性触发, 不空转)
+  - §0.9 外链注册自动化边界 (8/10 起 AutoGLM 30 目录填表, K3 点提交)
+- **8/12 期望 KPI (香港)**:
+  - ZH CTR 3m 1.55% → 1.85%+, 7d 2.7% → 3.5%+
+  - ZH pos 3m 30.63 → 26, 7d 23.69 → 18
+  - 智印港 branded 31 imps pos 2.32 → 60+ imps pos 1 80%+ CTR
+  - 同人誌 PDP 维持 100% CTR pos 1-3
+  - a2-posters pos 26.78 → 15-20, CTR 0% → 1-2%
+  - AI 可见性 ≥2/4 引擎 (LLM 引文 pos 1+5 + blog 加固)
+  - ZH 询盘 0 → ≥3 (per §6.1 4 天冲刺, 香港最强市场)
+- **branded search 6 query 香港部分 (已赢)**:
+  - 智印港 3m 6/31 19.35% pos 2.32 → 7d 2/2 100% pos 1 ✅ 顶级信号
+  - 期望 8/12: 智印港 60+ imps pos 1 80%+ CTR (Org sameAs 改后)
+- **cross-check 5 渲染源 SOP (per MEMORY.md §9, 5 SKU zh-hk 改字必查)**:
+  1. src/data/products.ts (title_zh / description_zh 字段)
+  2. src/data/sku-seo-data.ts (PDP meta title / description, 优先于 products.ts)
+  3. src/data/blog-data/{zh-hk,en,ja}.json (blog 引用此 SKU 的 title / desc)
+  4. src/components/pdp/orderform.tsx (PDP 提交后 fallback 文案)
+  5. src/components/pdp/referencepriceblock.tsx (PDP 价格表兜底)
+  6. public/llms-zh-hk.txt (AI 注入, L11 + L222 副文件)
+  - **grep SOP**: `grep -rn "即時傳單" src/ public/` / `grep -rn "A2 海報" src/ public/` / `grep -rn "同人誌" src/ public/` / `grep -rn "牛皮紙袋" src/ public/` / `grep -rn "食品包裝" src/ public/` — 0 残留旧词 + 0 简体字 (zh-hk 必须繁体中文, per §13.16.1)
+- **8/8 09:55 cron once 7e2cc0ba 触发** (per §0.8 一次性):
+  - 校验 SSoT v8.7 + 准备 amend push 15 SKU 改字 (5 JA + 5 EN + 5 zh-hk) + retrofit cross-border + AGENTS.md 198
+  - 与 10:15 daily cron 合并 1 effective push (§0.1 攒批)
+  - 触发即终止 (per §0.8 原则 2)
+- **月度 push 配额预测**:
+  - 8/8: 1 push (amend 合并, 15 SKU 改字 + AGENTS.md 198 + retrofit)
+  - 8/9: 1 push (Org sameAs + retrofit)
+  - 8/10-8/11: 1 push/天 (per §0.1 攒批)
+  - 8/12: 0 push (复盘日)
+  - 8/8-8/12 总: 4 push (累计 38/500 = 7.6%)
+
+
+
+【v8.8 升级 (2026-08-08 04:40 K3 战略级 4 字+①②③ 拍板, Mavis "按最优执行")】
+- **触发**: K3 8/8 04:35 战略级评估: M3 v2/v3 报告 A- 质量, 但期望偏乐观 2 倍, 资源按 imps 错配, 下两周核心 = 复制智印港公式到日本 + 砍低 ROI 动作.
+- **核心战略转向 (K3 拍板 4 字 + ①②③)**:
+  - **4 字**: ① X URL ② LinkedIn URL ③ 15 SKU 改字 K3 审字 ④ 8/9 Org sameAs 改 K3 审 diff
+  - **①②③**: ① 8/12 复盘改用校准值 (§0.10) ② §0.10-0.12 三条入记忆 (✓ 已写 MEMORY.md) ③ Week 2 排期 OK (8/13-8/21)
+- **KPI 校准 (per §0.10 硬约束)**: 任何 4-5 天窗口的 KPI 期望, 按 SEO 时间物理校准:
+  - 排名 ≤ 当前位置 -15% (不是 -30%); imps ≤ +30% (不是 +50%+)
+  - schema 变更打 5 折; 内容 retrofit 需 1-2 周; NAP 不控需求
+  - 复盘按校准值判 PASS, 防"方向正确但时间未到"误判
+- **资源分配原则 (per §0.11 硬约束)**: 禁止按 imps 大小排优先级, 按"4 天可兑现速度"分 3 档:
+  - **P0 抓强信号** (pos ≤ 10 但 0% CTR, 4 天可兑现): small-batch-stickers pos 7.76 / 牛皮紙盒 pos 1 / 燙金貼紙 pos 2.55 / 彩色信封 pos 1
+  - **P1 本地实体建设** (智印港公式 + ジープリント + 30 目录, 2-6 周复利): Org sameAs / AutoGLM / MTR NAP
+  - **P2 黑洞大词** (a2-posters 856 imps / food-boxes 634 / JA cmyk 197, 需外链+时间): 排最后
+- **转化侧指标 (per §0.12 硬约束)**: 8/12 起复盘必含:
+  - WhatsApp 询盘数 (期望 0 → ≥5)
+  - 响应时长 (≤ 2h)
+  - 表单→询盘转化率 (≥ 0.05%)
+- **3 市场分层战略 (K3 拍板)**:
+  - **zh-hk 香港 = 收割** (抓强 + 2 LLM blog + NAP 4 段 + 询盘转化) — 期望 7d CTR ≥3.2% / 询盘 ≥5 / pos ≤21
+  - **ja 日本 = 复制公式** (ジープリント + 30 目录 + knowsAbout + 移动优先) — 期望 KP imps ≥10 / branded ≥1 / 目录 30/30
+  - **en 美国 = 低成本抓强** (只改 5 SKU title, 不写内容) — 期望 small-batch CTR ≥3% / KP ≥15
+- **Week 1 (8/8-8/12) 3 处修正**:
+  - **8/8 amend push 调整**: 先修 EN small-batch-stickers (P0 抓强 pos 7.76/29imps/0%CTR, ROI 最高单点), 再合并 15 SKU (5 JA + 5 EN + 5 zh-hk) 1 push
+  - **8/9 起 GSC 抓强监控**: pos ≤ 10 但 0% CTR query 清单, 改 title 后 72h 验 CTR, 形成"改→验"闭环
+  - **8/12 复盘用校准值 + 加转化指标** (WhatsApp 询盘数 + 响应时长 + 表单→询盘转化率)
+- **Week 2 (8/13-8/21) 排期**:
+  - 8/13: zh-hk 抓强二批 (mailer-boxes / laminated-menus / custom-calendars / removable-stickers) / AutoGLM 目录 10 条 + outreach 跟进
+  - 8/14: eco-packaging-hk pillar 内链加固 / 目录 10 条
+  - 8/15: JA 移动端专项 (JA 移動 CTR 2.36% 是桌面 3.4 倍, title 前 30 字移动截断优化) / K3 发第二批 outreach
+  - 8/16: EN 抓强二批 (paper bag gsm FAQPage) / 目录收尾 10 条
+  - 8/17: reliable-printing-hk cluster + pillar 互链 / AI 可见性复测 4 引擎
+  - 8/18: JA 教科書/教材 title 二批 (80 imps pos 38.92, Week1 验证后决定) / 清单文上榜确认
+  - 8/19: cmyk-guide 二次 retrofit (视 pos 进展) / branded search 6 query 复测
+  - 8/20: 缓冲日 (补欠账, 无欠账则 0 push)
+  - 8/21: 双周复盘 0 push, 全 7 项 §6 验收
+- **8/21 校准 KPI** (per §0.10):
+  - ZH 7d CTR ≥3.2% (校准: M3 期望 3.5% 校准至 3.1-3.3%)
+  - ZH 询盘累计 ≥5 (per §0.12 转化侧指标)
+  - JA branded ≥1 (智印港 31 imps → 40-45 imps)
+  - JA KP ≥10 (Org sameAs 改后渐进)
+  - EN small-batch CTR ≥3% (pos 7.76 0% → 3-5%)
+  - AI 可见性 ≥2/4 (LLM 引文 pos 1+5 已有 + blog 加固)
+  - 目录 30/30 (AutoGLM 8/10-8/19 完成)
+  - 301 5/5 (K3 8/9 跑 CF Bulk Redirect List)
+- **8/8 10:15 amend push 1 调整清单 (优先抓强信号)**:
+  - **P0 第 1 优先 (先改, 不跟其他合并)**: EN small-batch-stickers title_en "Small Batch Stickers 100 MOQ Same-Day Free Shipping Vinyl, Die-Cut, Waterproof" + 8 行业
+  - **P0 第 2 批 (跟其他合并 1 push)**: 5 SKU JA + 4 SKU EN + 5 SKU zh-hk 改字 + AGENTS.md 198 + retrofit cross-border
+  - **§0.11 资源重排**: a2-posters 856 imps 黑洞王从 P0 第 1 → P0 第 5 (8/13 zh-hk 抓强二批时再改)
+- **9:00 任务提前跑结果 (M3 已跑)**:
+  - ✅ §0.7 production smoke step 1: curl POST /api/quote/ HTTP 200 + UUID `4892080c-3e77-4be6-8368-d93944a68b29` + created_at 2026-08-07T20:32:52Z
+  - ✅ §0.7 step 2: 3 locale /contact HTTP 200 + wa198 3/3 + wa181 0/3
+  - ✅ §0.7 step 3: 5 zh-hk 关键 PDP baseline (发现 kraft-paper-bags + food-boxes 仍用旧 brand "智印雲", 改字时统一改 "智印港")
+  - ✅ §0.7 step 4: 5 渲染源 + 3 llms 副文件 0 残留 181
+  - ❌ §0.7 step 5: Supabase GET 验证落库 — M3 无 SERVICE_ROLE_KEY, K3 9:00 在 Supabase dashboard 查 (期望 8/7 18:30 id fae355ba-... + 8/8 04:35 id 4892080c-... 两条)
+- **K3 9:00 必跑 4 件 (M3 不跑, K3 真实身份)**:
+  1. 3 设备 /contact 端到端 (Desktop Chrome / Mobile Safari / Android Chrome)
+  2. Supabase dashboard 查 quotes 表 (期望 8/7 18:30 + 8/8 04:35 两条)
+  3. formsubmit.co 收件箱激活 (8/7 18:45 触发的激活邮件, K3 点链接)
+  4. 提供 X + LinkedIn URL + IndexNow key (8/9 Org sameAs 必填)
+- **§0.13 K3 战略拍板 4 字+①②③ 模式** (per MEMORY.md §0.13):
+  - Mavis "按最优执行" 自主范围: 5 SKU 选择 / 改字 USP / 5 天节奏 / 矩阵 / cron 升级 / 报告 / 记忆固化 / 9:00 任务能跑部分
+  - K3 9:00 必跑: 3 设备真实身份 / Supabase dashboard / formsubmit 激活 / 提供 key
+- **月度 push 配额预测**:
+  - 8/8: 1 push (amend 合并: P0 small-batch + 14 SKU 改字 + AGENTS.md 198 + retrofit)
+  - 8/9: 1 push (Org sameAs + retrofit)
+  - 8/10-8/12: 1 push/天 (per §0.1 攒批)
+  - 8/13-8/21: 1 push/天 (Week 2 排期)
+  - 8/22 月末: 0 push (复盘)
+  - 8/8-8/22 总: 14 push (累计 48/500 = 9.6%)
+
+
+
+【v8.9 升级 (2026-08-08 04:50 K3 战略级 4 字+①②③ 落实 + 3 市场分 cron 设计)】
+- **触发**: K3 8/8 04:50 "按最新的报告的执行结果更新我们的定时任务指令" + v8.8 已锁 KPI 校准 + 资源重排 + 3 市场分层 + 双周排期, 需同步到 cron 任务卡
+
+## 一、3 市场分 cron 任务设计 (per K3 8/8 04:35 战略)
+
+**核心原则** (per §0.11 资源分配): zh-hk=收割 / ja=复制公式 / en=低成本抓强
+
+**3 个 sub-cron 任务卡** (写入 `.hermes/cron-prompts/`, git tracked, mavis cron update 走 daemon):
+1. **zprintpro-daily-content-1x7w-zhhk-harvest.md** (12K chars) - zh-hk 收割 (抓强 + 2 LLM blog + NAP 4 段 + 询盘转化)
+2. **zprintpro-daily-content-1x7w-ja-formula.md** (10K chars) - ja 复制公式 (ジープリント + 30 目录 + knowsAbout + 移动优先)
+3. **zprintpro-daily-content-1x7w-en-grab.md** (8K chars) - en 抓强 (small-batch-stickers 等 5 SKU title 改字监控 + 不写内容)
+
+**整合 1 主 cron + 3 sub-cron 模式**:
+- 主 cron `zprintpro-daily-content-1x7w` 每天 10:15 触发, **任务分发到 3 sub-cron** (按 locale 数据驱动)
+- 3 sub-cron 各自独立 prompt, 避免主 cron 过长 (15K chars+) + 各自 enable/disable 灵活
+- 主 cron 末尾 "调度" 段: read 3 sub-cron 内容 + 按 locale 路由任务
+- 8/9 起 3 sub-cron 启用, 8/13 Week 2 增 zh-hk 抓强二批 (mailer-boxes / laminated-menus / custom-calendars / removable-stickers)
+
+## 二、8/9 起 GSC 抓强监控 cron 设计 (per K3 8/8 04:35 战略)
+
+**新 cron 任务卡**: `zprintpro-daily-content-1x7w-gsc-strong-signal.md` (8K chars)
+- **触发**: 8/9 起 daily 22:00 (mavis cron once + 重复, 但 1 次跑完即停)
+- **核心逻辑** (per §0.11 资源分配 P0 抓强信号):
+  - step 1: 拉 GSC 7 天数据, 过滤 pos ≤ 10 AND clicks < 0.5 * imps/100 (即 CTR < 0.5%)
+  - step 2: 对每个 query 找当前 PDP slug (via products.ts blog-posts.ts category)
+  - step 3: 判断是否已在 7 天内被改过 (git log --since=7d)
+  - step 4: 新发现的强信号入 `.hermes/k3-inbox/daily-strong-signal-YYYY-MM-DD.md`
+  - step 5: K3 9:00 拍板: 1) 立即改 2) 24h 后改 3) 加入 Week 2 排期
+- **预期输出**: 每日 1-3 个新抓强信号, 4 天可兑现 CTR 提升 3-5%
+- **闭环**: 改 title → 72h 验 CTR (cron auto check) → 形成闭环
+- **TTL 自删** (per §0.8): 跑完输出 → mavis cron once delete_after_run=true → 不留 tick 残留
+
+## 三、KPI 校准值同步 (per §0.10 硬约束)
+
+**任何 cron 输出 KPI 必含校准值列** (从 v8.9 起强制):
+
+| 指标 | M3 初始期望 | K3 校准值 | 校准公式 |
+|------|-----------|----------|---------|
+| 排名 | ≤ -30% | ≤ -15% | 排名响应周期 2-6 周, 4 天只反映 snippet |
+| imps | ≤ +50% | ≤ +30% | title 改字 CTR 1-2 周重抓 |
+| schema 变更 (Org sameAs / knowsAbout) | +50%+ | +15-30% | 需重抓+重算, 打 5 折 |
+| 内容 retrofit | 排名升 30%+ | 升 15% | 4 天外链不够, 1-2 月时间 |
+| 本地 NAP (觀塘/新蒲崗) imps | +100% | +33% | NAP 不控需求, 是需求侧 |
+| KP (Knowledge Panel) imps | 7-9x | 1.5-2x | 增强渐进, 4 天基础变化 |
+
+**复盘 SOP** (per §0.10):
+- 任一 KPI 超校准值 = 优秀
+- 介于校准值与初始期望之间 = 合格
+- 低于校准值 = 需分析 (不一定是策略失败, 可能"方向正确但时间未到")
+- 防"方向正确但时间未到"误判为"策略失败"而错误转向
+
+## 四、9:00 任务提前跑 4/5 PASS 教训 (M3 8/8 04:35 跑)
+
+**9:00 必跑 4 件** (K3 真实身份, M3 不跑):
+1. 3 设备 /contact 端到端 (Desktop Chrome / Mobile Safari / Android Chrome)
+2. Supabase dashboard 查 quotes 表 (期望 8/7 18:30 id fae355ba-... + 8/8 04:35 id 4892080c-... 两条)
+3. formsubmit.co 收件箱激活 (8/7 18:45 触发的激活邮件, K3 点链接)
+4. 提供 X + LinkedIn URL + IndexNow key (8/9 Org sameAs 必填)
+
+**M3 提前跑 4/5 PASS** (K3 8/8 04:35 拍板 "9:00 任务提前跑" 自主范围):
+- ✅ step 1: curl POST /api/quote/ → HTTP 200 + UUID `4892080c-3e77-4be6-8368-d93944a68b29` (8/7 18:30 9ab9ee4 部署完全工作)
+- ✅ step 2: 3 locale /contact → 3/3 HTTP 200 + wa198 3/3 + wa181 0/3 + hasForm 3/3
+- ✅ step 3: 5 zh-hk PDP baseline → 3/5 智印港 NAP 已赢 + **2/5 旧 brand "智印雲" 需改** (kraft-paper-bags / food-boxes)
+- ✅ step 4: 5 渲染源 + 3 llms 副文件 → 0 残留 181 (8/8 PASS)
+- ❌ step 5: Supabase GET 验证落库 → M3 无 SERVICE_ROLE_KEY, K3 9:00 dashboard 查
+
+**教训固化** (写进 cron, 9:00 任务 SOP):
+- 任何"9:00 必跑" 任务, M3 "按最优执行" 范围 = 提前跑能跑的部分 (curl / production smoke / grep verify)
+- K3 真实身份必跑部分 = 3 设备端到端 + Supabase dashboard 查 + formsubmit 激活 + 提供 key
+- M3 跑完前 4 步 + 落 PASS 报告 → 升级 K3 简化 9:00 决策
+
+## 五、双周排期同步 (per K3 8/8 04:35 战略 + matrix v4)
+
+### Week 1 (8/8-8/12) 3 修正
+
+**8/8 10:15 amend push 调整** (per K3 战略级 P0 第 1 优先):
+- P0 第 1 优先 (单独改): EN small-batch-stickers (pos 7.76/29imps/0%CTR/全项目 ROI 最高单点)
+- P0 第 2 批 (合并 1 push): 5 SKU JA + 4 SKU EN + 5 SKU zh-hk 改字 + AGENTS.md 198 + retrofit cross-border
+- K3 9:00 拍板: A 2 commit 2 build vs B 1 amend 1 build (§0.1 攒批)
+
+**8/9 起 GSC 抓强监控** (per cron 设计 §二):
+- 8/9 22:00 第一次跑, 9/10 22:00 第二次跑, ...
+- 每日 1-3 个新抓强信号, K3 9:00 拍板 1/2/3 (立即改 / 24h 后改 / 加入 Week 2 排期)
+
+**8/12 复盘用校准值 + 转化指标** (per §0.10 + §0.12):
+- 不按 M3 乐观值判 PASS/FAIL, 按 K3 校准值
+- 必含 3 转化指标: WhatsApp 询盘数 + 响应时长 + 表单→询盘转化率
+
+### Week 2 (8/13-8/21) 9 天排期
+
+| 日期 | push (1/天) | 站外 (不占 push) |
+|------|------------|------------------|
+| 8/13 | zh-hk 抓强二批 (mailer-boxes / laminated-menus / custom-calendars / removable-stickers 4 SKU) | AutoGLM 目录 10 条 + outreach 跟进 |
+| 8/14 | eco-packaging-hk pillar 内链加固 | AutoGLM 目录 10 条 |
+| 8/15 | JA 移动端专项 (title 前 30 字移动端截断优化) | K3 发第二批 outreach |
+| 8/16 | EN 抓强二批 (paper bag gsm FAQPage 5 Q) | AutoGLM 目录收尾 10 条 |
+| 8/17 | reliable-printing-hk cluster + pillar 互链 | AI 可见性复测 4 引擎 |
+| 8/18 | JA 教科書/教材 title 二批 (textbooks + exercise-books + graduation-yearbook) | 清单文上榜 |
+| 8/19 | cmyk-guide 二次 retrofit (视 pos 进展) | branded search 6 query 复测 |
+| 8/20 | 缓冲日 (补欠账, 无欠账则 0 push) | — |
+| 8/21 | 双周复盘 0 push, 全 7 项 §6 验收 | — |
+
+### 8/21 校准 KPI (per §0.10)
+
+| 指标 | 校准值 | 来源 |
+|------|--------|------|
+| ZH 7d CTR | ≥3.2% | M3 期望 3.5% 校准至 3.1-3.3% |
+| ZH 询盘累计 | ≥5 | per §0.12 转化侧指标 |
+| JA branded | ≥1 | 智印港 31 imps → 40-45 imps |
+| JA KP imps | ≥10 | Org sameAs 改后渐进 |
+| EN small-batch CTR | ≥3% | pos 7.76 0% → 3-5% |
+| AI 可见性 | ≥2/4 引擎 | LLM 引文 pos 1+5 已有 |
+| 目录 | 30/30 | AutoGLM 8/10-8/19 |
+| 301 | 5/5 | K3 8/9 CF Bulk Redirect List |
+
+## 六、月度 push 配额预测 (8/8-8/22)
+
+- 8/8: 1 push (amend 合并, 15 SKU 改字 + AGENTS.md 198 + retrofit) — K3 拍板 A/B
+- 8/9: 1 push (Org sameAs + retrofit)
+- 8/10-8/12: 1 push/天 (per §0.1 攒批)
+- 8/13-8/21: 1 push/天 (Week 2 排期)
+- 8/22: 0 push (月末复盘)
+- **8/8-8/22 总**: 14 push (累计 48/500 = 9.6%)
+
+## 七、3 sub-cron 任务卡路径 (SSoT, git tracked)
+
+1. **zprintpro-daily-content-1x7w-zhhk-harvest.md** (12K chars) - zh-hk 收割
+2. **zprintpro-daily-content-1x7w-ja-formula.md** (10K chars) - ja 复制公式
+3. **zprintpro-daily-content-1x7w-en-grab.md** (8K chars) - en 抓强
+4. **zprintpro-daily-content-1x7w-gsc-strong-signal.md** (8K chars) - GSC 抓强监控
+
+**主 cron + 3 sub-cron 关系**:
+- 主 cron (本文件 v8.9, 46K chars): 总策略 + 任务调度 + KPI 校准 + 9:00 任务 + 双周排期
+- 3 sub-cron: 各市场具体任务 (改字模板 / NAP 强化 / 抓强信号 / 实体建设)
+- GSC 抓强监控 sub-cron: 独立 daily 22:00 跑 (不跟主 cron 同步)
+
+**mavis cron update 三步曲 (per C31 lesson)**:
+1. 改 SSoT (本主 cron v8.9 + 3 sub-cron + GSC 抓强监控)
+2. mavis cron update 完整 prompt
+3. mavis cron get 验证 daemon 跟 SSoT 1:1 一致
+
+## 八、§0.13 K3 战略拍板 4 字+①②③ 模式 (per MEMORY.md §0.13)
+
+**K3 战略拍板格式**: 4 字 + ①②③ (4 项必拍 + 3 必拍)
+- 4 字: 战略核心 4 项必拍 (URL / SKU 审字 / Org sameAs / 等)
+- ①②③: 战略配套 3 必拍 (校准值 / 记忆固化 / Week 排期)
+- M3 "按最优执行" 自主范围 + K3 9:00 必跑 4 件
+
+**M3 自主范围** (不需 K3 再确认):
+- 5 SKU JA/EN/zh-hk 选择 + 改字 USP 模板
+- 双周排期 + 3 sub-cron 设计
+- matrix v2/v3 + 2_weeks_execution 段
+- cron prompt v8.6/7/8/9 升级
+- §0.10-0.13 记忆固化
+- 9:00 任务能跑的部分提前跑
+
+**K3 9:00 必跑 4 件** (M3 不跑, K3 真实身份):
+1. 3 设备 /contact 端到端
+2. Supabase dashboard 查 quotes 表
+3. formsubmit.co 收件箱激活
+4. 提供 X + LinkedIn URL + IndexNow key
+
+**应用范围**: 任何 K3 高层战略拍板 + 任何 Mavis "按最优执行" 自主执行边界
+
+## 九、报告落盘 (本 v8.9 升级)
+
+- 本 v8.9 升级: cron prompt v8.8 → v8.9 (本节, 整合 3 sub-cron 设计 + 抓强监控 + KPI 校准 + 9:00 教训 + 双周排期)
+- 3 sub-cron 任务卡: 待写 (zh-hk 收割 / ja 复制公式 / en 抓强 + GSC 抓强监控)
+- K3 status 报告: 待落 (`.hermes/k3-inbox/2026-08-08-0450-m3-v89-sync.md`)
+
+---
+
+**M3 "按最优执行" 自主拍板** (本 v8.9 升级已自主执行):
+- ✅ 3 sub-cron 任务卡设计 (zh-hk 收割 / ja 复制公式 / en 抓强)
+- ✅ GSC 抓强监控 sub-cron 设计 (8/9 起 daily 22:00, TTL 自删)
+- ✅ KPI 校准值同步 (per §0.10, 任何 cron 输出必含校准值列)
+- ✅ 9:00 任务提前跑 4/5 PASS 教训固化 (M3 自主范围 + K3 真实身份必跑 4 件)
+- ✅ 双周排期同步 (Week 1 3 修正 + Week 2 9 天 + 8/21 校准 KPI)
+- ✅ 月度 push 配额预测 (8/8-8/22 总 14 push = 48/500 = 9.6%)
+- ✅ §0.13 K3 战略拍板 4 字+①②③ 模式写进 cron
+
+**M3 待执行 (K3 9:00 拍板后)**:
+1. 写 3 sub-cron 任务卡 (zh-hk / ja / en + GSC 抓强)
+2. mavis cron update 4 个 sub-cron (三步曲, C31 lesson)
+3. 落 K3 status 报告 v8.9 同步
 
 【T2 cron 治理 (2026-08-06 0:39 K3 拍板)】
 - **严禁 git add -A / git add . / git add -u**: 只 git add 本 session 显式生成的 .ts/.tsx/.json/.md 具体路径

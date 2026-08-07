@@ -19,13 +19,13 @@
 
 | # | 指标 | 目标 | 实际 (auto 抓) | 状态 |
 |---|------|-----|--------------|-----|
-| 6.1 | 询盘数 (Supabase `quotes` 表) | ≥5 | (查 count) | PASS / FAIL |
-| 6.2 | 校园词排名 | top 50 (P3 catch-up 8/19 后) | (查 GSC) | PASS / FAIL |
+| 6.1 | 询盘数 (Supabase `quotes` 表) | ≥5 (8/7 18:30 修 /api/quote 后 4 天内 8/8-8/11 可达) | (查 count) | PASS / FAIL |
+| 6.2 | 校园词排名 (K3 8/8 拍板改口径) | **展示量 ≥10 imps** (替代 top 50, 当前 18 imps 已达标) | (查 GSC) | PASS / FAIL |
 | 6.3 | 收录页数增长 | +3 (P3 catch-up 8/19 后) | (查 GSC) | PASS / FAIL |
 | 6.4 | Rich Results Test | 100% | (查 GSC) | PASS / FAIL (v2.1 P1 已删 aggregateRating, 后续重接) |
-| 6.5 | AI 可见性 | ≥1/7 引擎引用 zprintpro.com | (查 Perplexity/ChatGPT) | PASS / FAIL |
+| 6.5 | AI 可见性 (K3 8/8 拍板改口径) | **≥1/4 引擎引用 zprintpro.com** (替代 ≥1/7) | (查 Perplexity/ChatGPT/Claude/Gemini) | PASS / FAIL |
 | 6.6 | 301 传递 (old_url 5/5) | 5/5 PASS | (K3 手动验 CF Bulk Redirect List) | PASS / FAIL |
-| 6.7 | 总 push ≤14 (8 月) | ≤14 | (查 git log) | PASS / FAIL |
+| 6.7 | 总 push ≤14 (8 月) (K3 8/8 拍板攒批) | ≤14 + 1 push/day 攒批 (紧急修走 §0.1 例外) | (查 git log) | PASS / FAIL |
 
 ---
 
@@ -70,6 +70,22 @@
 | Gemini | "月曆印刷 香港 2027" | YES/NO | (截图) |
 
 **判定**: ≥1/4 引擎引用 = PASS
+
+**§5.5 Branded Search 监测 (K3 8/8 02:52 拍板, 智印港公式复制)**:
+- 6 个 query: ZprintPro / ジープリント / ジープリント 印刷 / ジープリント ステッカー / ジープリント 評判 / ジープリント 料金
+- baseline 8/8 = 0, target 8/12 ≥1 个 query 命中 zprintpro.com 域名
+- 监测: zprintpro-gsc-feedback-loop (每周三 15:00) + 8/12 review 当日手动统计 GSC 7d 数据
+- 期望: cross-border-ecommerce-shipping-box-guide (8/9) + baby-label + cmyk + paper 4 篇 retrofit 末尾自然提及「ジープリント」2-3 次, 诱导 branded search
+
+**§5.6 Organization sameAs 实体信号 (K3 8/8 02:52 拍板, GEO 公式)**:
+- 8/9 改 src/lib/seo.ts 加 Organization JSON-LD sameAs 数组 (X + LinkedIn + 30 JP 目录 + Startup Base) + areaServed=JP + knowsAbout=[学园祭印刷, POD, 卒業記念アルバム, ステッカー印刷, チラシ印刷]
+- 验证: curl + grep Organization schema 含 sameAs + areaServed=JP + knowsAbout
+- 8/12 验收: 5/5 PASS
+
+**§5.7 外链目录注册进度 (K3 8/8 02:52 拍板 §0.9 增补)**:
+- 8/10-8/12 AutoGLM 跑日本目录填表, K3 9:00 起来点最终提交 + 邮箱验证
+- 目标: 8/12 累计 30 条合规目录 = 日本实体存在感基线
+- 验收: 30/30 条 approved + visible
 
 ---
 
@@ -125,7 +141,25 @@
 
 ---
 
-## §10. 复盘报告输出路径
+## §10. §0.7 关键漏斗 endpoint 自检 (K3 8/8 01:03 拍板, 9ab9ee4 教训固化)
+
+任何 /api/* 涉及 Supabase 写入的 endpoint 部署后必 3 步 production smoke, 8/12 复盘必答:
+
+| # | 自检项 | 期望 | 实际 (auto 跑) | 状态 |
+|---|--------|-----|--------------|-----|
+| 0.7.1 | curl POST /api/quote/ | HTTP 200 + UUID | (跑) | PASS / FAIL |
+| 0.7.2 | Supabase GET /rest/v1/quotes | 看到最新 5 条 + 落库数 ≥5 | (跑) | PASS / FAIL |
+| 0.7.3 | formsubmit.co 收件箱激活 | 收到激活邮件 (K3 点链接) | (K3 查) | PASS / FAIL |
+| 0.7.4 | /api/order-notify HTTP 200 | 200 + success:true | (跑) | PASS / FAIL |
+| 0.7.5 | PDP 提交页 form 表单可达 | 3 locale 9 页面 form 渲染 | (跑) | PASS / FAIL |
+
+**判定**: 5/5 PASS 算 §0.7 PASS, 否则 8/13 修法升级 K3.
+
+**教训源头**: 8/7 18:30 /api/quote 写错表 quote_calculations 500 黑洞, 部署 6/7-8/7 一直坏, §6.1 询盘=0 归因全错, K3 4 天冲刺阻塞. 9ab9ee4 commit 修复 (K3 18:33 拍板 A + 护栏).
+
+---
+
+## §11. 复盘报告输出路径
 
 `.hermes/k3-inbox/2026-08-12-review-final.md` (auto 8/12 22:00 daily cron 生成)
 
@@ -137,7 +171,7 @@
 
 ---
 
-## §11. 8/12 当日 M3 行动清单 (auto 跑)
+## §12. 8/12 当日 M3 行动清单 (auto 跑)
 
 ```
 1. 拉 GSC 7d 数据 (.hermes/gsc-7d-2026-08-12.csv)

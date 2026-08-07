@@ -36,7 +36,7 @@
 > **真实主体 (2026-06-18 user-corrected)**: 深圳市彩龙印刷包装有限公司
 > **法定代表人**: 唐运提
 > **真实地址**: 広東省深圳市龍崗区平湖街道嘉城路1号（〒518111）
-> **真实電話**: +86 181 2638 0255
+> **真实電話 (2026-08-07 K3 拍板 phase-out, call + WhatsApp 统一)**: +86 198 8085 1334
 > **真实メール**: zprintpro@outlook.com
 >
 > ⚠️ 早期 audit / copy / siteConfig / schema.org 都默认是「HK 観塘」实体，是错的。user 2026-06-18 明确告知：实体在深圳，跨境接全球订单。法律公示 (`/legal/`) + Footer 公司信息 + siteConfig.address + ImageObject locationCreated + ja/zh-hk imageCaption 都已改为深圳实体。
@@ -436,7 +436,7 @@ node scripts/verify-deploy.mjs          # 自动查 CF Pages check-runs API stat
 **NAP 真实地址**（法务公示用，所有 locale 一致）：
 - 公司全名: 深圳市彩龍印刷包裝有限公司
 - 地址: 広東省深圳市龍崗区平湖街道嘉城路1号 (〒518111)
-- 电话: +86 198 8085 1334（显示）/ +86 181 2638 0255（WhatsApp 专用）
+- 电话 (2026-08-07 K3 拍板 phase-out, call + WhatsApp 统一): +86 198 8085 1334
 - 邮箱: zprintpro@outlook.com
 - 法人: 唐运提
 
@@ -447,6 +447,35 @@ node scripts/verify-deploy.mjs          # 自动查 CF Pages check-runs API stat
 | **zh-hk** | 香港 / 澳门 / 台湾 / 海外華人圈 | 香港场景 (餐飲旺季 / 包裝盒 / 印刷旺季 / MTR / 順豐本地) | "深圳" 作主关键词前缀 |
 | **en** | US / UK / AU / CA / NZ / SG | 全球通用卖点 (sizes / paper / design / material / DHL 2-4 days / Asia factory) | "Shenzhen Printing" / "in Hong Kong" / "China factory" 作标题前缀 |
 | **ja** | 日本市場 (東京 / 大阪 / 名古屋) | 日本市场卖点 (品質 / 短納期 / 日本向け / 中国印刷 通販) | "深圳印刷" / "中国深圳" / "深セン" 作标题前缀 |
+
+## 13.16.1 ja 品牌词"ジープリント"公式 (K3 8/8 02:52 拍板, 智印港公式复制)
+
+**核心**: 复制"智印港"在香港见效的 GEO 公式到日本.
+
+**品牌词**:
+- **primary brand ja**: `ZprintPro` (per §13.13 三 Locale 鐵律, 维持现状)
+- **alternate brand ja**: `ジープリント` (J-Print) — K3 8/8 02:52 拍板 "按最优执行"
+- **rationale**: 音译 Z→J (日语无 Z) + Print→プリント = 3 假名简洁, 跟 en ZprintPro 品牌延续, SEO「プリント」是日语印刷核心搜索词
+
+**智印港公式 (4 因子可量化)**:
+| 因子 | 智印港 (HK) | ジープリント (JP) |
+|------|------------|-----------------|
+| 本地实体信号 | "港"字 + 香港本地词 | "プリント" + 日本本地词 + ジープリント 实体词 |
+| 品牌记忆度 | 3 字、口语化、谐音"智能印刷" | 4 假名、外来语习惯、谐音"Z-Print" |
+| 口语=搜索词 | 粤语/普通话都说得顺 | ジープリント / プリント 都说得顺 |
+| 实体一致性 | 站名=社媒=目录 | 站名=社媒=目录+JP 印刷组合 = NAP 消歧清晰 |
+
+**实施**:
+1. **全站统一**: 站名 / 社媒 / JP 印刷组合目录 / Organization schema 同名「ジープリント」, 不许漂移
+2. **Organization JSON-LD sameAs**: X + LinkedIn + JP 印刷组合目录 (30 条) + Startup Base + areaServed=JP + knowsAbout=[学园祭印刷, POD, 卒業記念アルバム, ステッカー印刷, チラシ印刷]
+3. **品牌词埋点**: 价格横评页 + 学园祭指南 + 校园 blog 自然提及「ジープリント」2-3 次, 诱导 branded search
+4. **30 目录目标** (8/10 起 AutoGLM 跑): 印刷/POD 相关 7 + 本地/创业 7 + 行业 5 + SaaS 聚合 3 + 其他 8
+5. **branded search 监测**: 6 个 query (ZprintPro / ジープリント / etc.), 基线 0 → 8/12 期望 ≥1
+
+**禁忌** (per K3 8/8 02:52 §0.9 增补):
+- ⛔ 论坛签名档/评论留链/Web2.0/PBN/自动换链
+- ⛔ 品牌词漂移 (站名 ≠ 社媒名 ≠ 目录名)
+- ⛔ en/ja 标题/excerpt 硬塞 supplier origin (维持 §13.10 NAP 脱钩)
 
 **supplier origin 在 SEO 内容的正确写法**：
 - ✅ 正文/FAQ/Schema 中提及 "亚洲工厂 + DHL 全球 2-4 天配送"（佐证品质 + 物流）
