@@ -51,11 +51,11 @@ export const siteConfig = {
   // 2026-06-15 P0: NAP 统一修复
   // 2026-06-28 修正: zh-hk NAP.telephone 之前写 "+852 5905 1334" 假号, 客户拨不通 → 改真实 +86 198 8085 1334
   // NAP schema.telephone 跟 address.country 无强匹配要求, HK 地址 + +86 电话 GSC 不扣分
-  // WhatsApp 全 locale 统一 "+86 181 2638 0255" (HK 客户用 WhatsApp 国际漫游可加)
+  // 2026-08-07 K3 phase-out: WhatsApp 全部统一 "+86 198 8085 1334" (call + WhatsApp 同号, 旧 WhatsApp 专用号已退役)
   // 邮箱全 locale 统一 "zprintpro@outlook.com"
   //   → Google 看到 schema 跟 UI 不一致, 判定 NAP 欺诈
   // 修法: 全部统一到 Footer 真实号 +86 198 8085 1334 (新联系电话, 这是公司真号, 不是胡编)
-  // WhatsApp 号码保持 +86 181 2638 0255 不动 (whatsapp.ts PHONE)
+  // WhatsApp 号码 = +86 198 8085 1334 (跟 call 同号, 跟 footer / contact / schema / llms.txt 全一致)
   // 注意: 此号虽是中国内地号, 但 Footer/Contact 全部用这个, NAP 一致性优先于"地理号"
   // (不再办虚拟 +852, 统一真实 +86 198 8085 1334)
   phone: '+86 198 8085 1334',

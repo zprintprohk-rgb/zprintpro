@@ -75,7 +75,7 @@ export function FloatingQuoteCTA({ locale }: { locale: string }) {
   if (locale === 'zh-hk') {
     // 2026-07-05 修：t 是联合类型，zh-hk 分支内强制断言避免 TS 报错
     const tZh = t as typeof TEXTS['zh-hk'];
-    // 2026-07-08 fix: 198 号码未注册 WhatsApp, 改 181 2638 0255 (WhatsApp 专用号)
+    // 2026-08-07 K3 phase-out: 旧 WhatsApp 专用号已退役, 全部统一 198 8085 1334 (call + WhatsApp 同号)
     const waUrl = `https://wa.me/8619880851334?text=${encodeURIComponent(tZh.whatsappMsg + ' ')}`;
     return (
       <a
@@ -119,7 +119,7 @@ export function FloatingQuoteCTA({ locale }: { locale: string }) {
     }, 3000);
   }
   // WhatsApp 备选入口 — 即使邮件客户端打不开,也能直跳 WhatsApp 联系
-  // 2026-07-08 fix: 198 号码未注册 WhatsApp, 改 181 2638 0255 (WhatsApp 专用号)
+  // 2026-08-07 K3 phase-out: 旧 WhatsApp 专用号已退役, 全部统一 198 8085 1334 (call + WhatsApp 同号)
   const waUrl = `https://wa.me/8619880851334?text=${encodeURIComponent('Hi, I would like to inquire about printing services.')}`;
 
   return (

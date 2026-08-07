@@ -135,7 +135,7 @@ export default function OrderForm({ locale, productName, configSnapshot, qty, ba
         <p className="text-base font-mono text-green-700 mb-2">{t.successOrderId}: {orderId}</p>
         <p className="text-sm text-gray-600 mb-3">{t.successMsg}</p>
         <p className="text-sm text-gray-500 mb-3">{t.sendFileTo}:{" "}
-          <a href={`https://wa.me/8618126380255?text=${encodeURIComponent(waText)}`} className="text-green-600 underline font-medium" target="_blank" rel="noopener noreferrer">WhatsApp +86 181 2638 0255</a>
+          <a href={`https://wa.me/8619880851334?text=${encodeURIComponent(waText)}`} className="text-green-600 underline font-medium" target="_blank" rel="noopener noreferrer">WhatsApp +86 198 8085 1334</a>
         </p>
         <p className="text-xs text-gray-400">{t.paymentInfo}</p>
         <button onClick={() => { setShowForm(false); setSubmitted(false); }} className="mt-4 px-5 py-2 bg-gray-200 rounded-lg text-sm hover:bg-gray-300">{t.backToProduct}</button>
