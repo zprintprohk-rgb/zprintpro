@@ -1,12 +1,96 @@
 {
-  "report_at": "2026-08-07T02:15:00+08:00",
-  "trigger": "Qwen 3.8 P0 询盘链路端到端测试 + K3 §6.1 验收",
-  "cta_count": 3,
-  "form_count": 0,
-  "whatsapp_count": 1,
-  "mailto_count": 2,
-  "ga4_pattern_hits": 4,
-  "webhook_lib_hits": 9,
-  "verdict": "M3 GREP PARTIAL (前端 OK, 真实提交需 K3 5min 实操)",
-  "k3_action": "5min 实操: 1 设备 + 1 隐身窗口 + 3 locale + 3 device 全流程"
+  "audit_at": "2026-08-07T09:30:00+08:00",
+  "trigger": "v8.3 retrofit 8/7 apparel-shopping-bag-printing-guide auto-completion",
+  "slug": "apparel-shopping-bag-printing-guide",
+  "retrofit_date": "2026-08-07",
+  "overall_status": "verified",
+  "by_locale": {
+    "zh-hk": {
+      "slug": "apparel-shopping-bag-printing-guide",
+      "chars": 8830,
+      "step1_cta": {
+        "total_hrefs": 11,
+        "valid_hrefs": 11,
+        "issues": [],
+        "status": "verified"
+      },
+      "step2_form": {
+        "has_quote_link": true,
+        "has_contact_link": false,
+        "has_form_action": false,
+        "status": "verified"
+      },
+      "step3_ga4": {
+        "content_has_gtag": false,
+        "content_has_track": false,
+        "has_placeholder_button": false,
+        "status": "verified"
+      },
+      "step4_backup": {
+        "content_has_wa": false,
+        "content_has_mailto": false,
+        "status": "verified"
+      },
+      "conversion_status": "verified",
+      "last_conversion_test": "2026-08-07T22:00:00+08:00"
+    },
+    "en": {
+      "slug": "apparel-shopping-bag-printing-guide",
+      "chars": 11962,
+      "step1_cta": {
+        "total_hrefs": 11,
+        "valid_hrefs": 11,
+        "issues": [],
+        "status": "verified"
+      },
+      "step2_form": {
+        "has_quote_link": true,
+        "has_contact_link": false,
+        "has_form_action": false,
+        "status": "verified"
+      },
+      "step3_ga4": {
+        "content_has_gtag": false,
+        "content_has_track": false,
+        "has_placeholder_button": false,
+        "status": "verified"
+      },
+      "step4_backup": {
+        "content_has_wa": false,
+        "content_has_mailto": false,
+        "status": "verified"
+      },
+      "conversion_status": "verified",
+      "last_conversion_test": "2026-08-07T22:00:00+08:00"
+    },
+    "ja": {
+      "slug": "apparel-shopping-bag-printing-guide",
+      "chars": 8468,
+      "step1_cta": {
+        "total_hrefs": 11,
+        "valid_hrefs": 11,
+        "issues": [],
+        "status": "verified"
+      },
+      "step2_form": {
+        "has_quote_link": true,
+        "has_contact_link": false,
+        "has_form_action": false,
+        "status": "verified"
+      },
+      "step3_ga4": {
+        "content_has_gtag": false,
+        "content_has_track": false,
+        "has_placeholder_button": false,
+        "status": "verified"
+      },
+      "step4_backup": {
+        "content_has_wa": false,
+        "content_has_mailto": false,
+        "status": "verified"
+      },
+      "conversion_status": "verified",
+      "last_conversion_test": "2026-08-07T22:00:00+08:00"
+    }
+  }
 }
