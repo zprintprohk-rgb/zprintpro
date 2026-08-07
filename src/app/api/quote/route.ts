@@ -1,12 +1,14 @@
 /**
  * Quote Engine v1 API Route
- * 2026-06-07 启动：接受报价计算记录，写 Supabase quote_calculations 表
+ * 2026-08-07 18:30 修 (per K3 P0 拍板 A):
+ *   旧: 写 quote_calculations 表 (migration 003, 但生产不存在) → 所有询盘 500 黑洞
+ *   新: 写 quotes 表 (migration 001, 已部署), customer_name/email 必填, 询盘可查
  *
  * POST /api/quote
- * body: { productSlug, quantity, size, material, finishes, deadline, unitPrice, totalPrice, source }
+ * body: { productSlug, quantity, size, material, finishes, deadline, unitPrice, totalPrice, source, customerName, customerEmail, customerPhone, customerCountry, locale, referrerUrl }
  * returns: { id, created_at } | { error }
  *
- * Fallback：如果 SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY 未配，
+ * Fallback: 如果 SUPABASE_URL / SUPABASE_SERVICE_ROLE_KEY 未配,
  * 仍然返回成功（写入控制台日志），不阻塞前端用户体验。
  */
 
@@ -19,6 +21,7 @@ export const runtime = 'edge';
 
 const QuoteRequestSchema = z.object({
   productSlug: z.string().min(1),
+  productName: z.string().min(1), // 8/7 18:30 加: 用于 design_notes 留底
   quantity: z.number().int().min(1).max(1000000),
   size: z.object({
     w: z.number(),
@@ -32,8 +35,9 @@ const QuoteRequestSchema = z.object({
   totalPrice: z.number().nonnegative(),
   currency: z.string().default('USD'),
   source: z.string().default('unknown'),
-  customerName: z.string().optional(),
-  customerEmail: z.string().email().optional(),
+  // 8/7 18:30 修: customer_name/email 必填 (quotes 表 NOT NULL 约束, 不传就 500)
+  customerName: z.string().min(1, 'Customer name required'),
+  customerEmail: z.string().email('Valid email required'),
   customerPhone: z.string().optional(),
   customerCountry: z.string().optional(),
   locale: z.string().default('en'),
@@ -59,6 +63,7 @@ export async function POST(req: NextRequest) {
         qty: data.quantity,
         total: data.totalPrice,
         source: data.source,
+        customer: data.customerEmail,
       });
       return NextResponse.json({
         id: `local-${Date.now()}`,
@@ -67,8 +72,14 @@ export async function POST(req: NextRequest) {
       });
     }
 
-    // 真实 Supabase 写入
-    const response = await fetch(`${supabaseUrl}/rest/v1/quote_calculations`, {
+    // 8/7 18:30 修: 写 quotes 表 (migration 001), 不是 quote_calculations (migration 003 不存在)
+    // 字段映射: productSlug → product_id, size{w,h,unit} → size string concat, finishes[0] → finishing,
+    //          deadline → turnaround, referrerUrl+source → referrer, ip_address + user_agent 写齐
+    const sizeString = `${data.size.w}${data.size.unit === 'mm' ? '' : '"'}x${data.size.h}${data.size.unit === 'mm' ? 'mm' : '"'}`;
+    const finishingString = data.finishes.length > 0 ? data.finishes.join(', ') : null;
+    const designNotes = `Product: ${data.productName}\nPrice: ${data.currency} ${data.totalPrice} (unit ${data.unitPrice})\nSource: ${data.source}\nLocale: ${data.locale}\nIP country: ${data.customerCountry || 'unknown'}`;
+
+    const response = await fetch(`${supabaseUrl}/rest/v1/quotes`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -77,31 +88,31 @@ export async function POST(req: NextRequest) {
         Prefer: 'return=representation',
       },
       body: JSON.stringify({
-        product_slug: data.productSlug,
-        quantity: data.quantity,
-        size_w: data.size.w,
-        size_h: data.size.h,
-        size_unit: data.size.unit,
-        material: data.material,
-        finishes: data.finishes,
-        deadline: data.deadline,
-        unit_price: data.unitPrice,
-        total_price: data.totalPrice,
-        currency: data.currency,
+        // 必填字段
         customer_name: data.customerName,
         customer_email: data.customerEmail,
-        customer_phone: data.customerPhone,
-        customer_country: data.customerCountry,
-        locale: data.locale,
-        source: data.source,
-        referrer_url: data.referrerUrl,
+        product_id: data.productSlug,
+        product_name: data.productName,
+        quantity: data.quantity,
+        // 可填字段
+        customer_phone: data.customerPhone || null,
+        material: data.material,
+        size: sizeString,
+        finishing: finishingString,
+        turnaround: data.deadline,
+        design_notes: designNotes,
+        // 元数据
+        ip_address: req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() || null,
         user_agent: req.headers.get('user-agent'),
+        referrer: data.referrerUrl || data.source,
+        // 状态 (默认 'pending' 由表默认值填)
+        status: 'pending',
       }),
     });
 
     if (!response.ok) {
       const errText = await response.text();
-      console.error('[Quote API] Supabase insert failed:', errText);
+      console.error('[Quote API] Supabase quotes insert failed:', errText);
       return NextResponse.json(
         { error: 'Database insert failed', details: errText },
         { status: 500 }
