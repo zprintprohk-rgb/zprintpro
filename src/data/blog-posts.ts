@@ -1494,6 +1494,22 @@ const lpA5VsA6FlyerSize: BlogPostMeta = {
     ja: 'A5 と A6 チラシのサイズを徹底比較。寸法（mm / インチ）早見表、飲食・小売・イベントでの用途別選び方、印刷コスト差と折り加工、よくある質問 4 件、50〜10,000 枚の小〜大ロット対応。',
   },
 };
+const lpPosterPrintingPrice: BlogPostMeta = {
+  slug: 'poster-printing-price-guide',
+  categoryKey: 'posters',
+  source: 'daily',
+  date: '2026-08-07',
+  title: {
+    'zh-hk': 'A1 A2 海報印刷價格指南：單價・紙材・工藝・批量折扣全拆解 | 智印港 ZprintPro',
+    en: 'A1 A2 Poster Printing Prices: Cost Guide, Paper & Bulk Discounts | ZprintPro',
+    ja: 'A1 A2 ポスター印刷料金ガイド：単価・用紙・加工・ロット割引 | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': 'A1/A2 海報印刷幾錢？本文拆解 2026 香港真實單價——A2 銅版紙 100 張約 HK$6-9/張、A1 貴 60-80%，批量 500 張再減 30%，附 4 大成本因素 + 4 條 FAQ，10-1,000 張落單，3-5 個工作天交付。',
+    en: 'A1/A2 poster printing prices explained — A2 gloss from $0.42/pc at 1,000, A1 costs only 60-80% more despite double area. 4 cost drivers, quantity table, 4 FAQs, 10-1,000 piece runs, 3-5 day turnaround.',
+    ja: 'A1/A2 ポスター印刷の料金を徹底解説。A2 コート紙 1,000 枚で 1 枚 ¥48-68、A1 は面積 2 倍でも +60-80%。4 大コスト要因、数量別価格表、FAQ 4 件、10〜1,000 枚、3-5 営業日納品。',
+  },
+};
 
 
 export const blogPosts: BlogPostMeta[] = [
@@ -1609,6 +1625,7 @@ export const blogPosts: BlogPostMeta[] = [
   // 2026-08-05 v8 daily-content-evolve: A1/A2/A3 海报尺寸指南 (GSC 7d ~60 imps)
   lpPosterSizeGuide,
   lpA5VsA6FlyerSize,
+  lpPosterPrintingPrice,
 ];
 
 // =============================================================================
