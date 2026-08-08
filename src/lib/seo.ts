@@ -1098,6 +1098,10 @@ export function generateProductJsonLd(
       url: `${siteConfig.url}/${locale}/product/${slug}/`,
       priceCurrency: currency,
       price: (price ?? 0).toString(),
+      // 2026-08-08 K3 14:56 GMC 缺价修复: 加 priceValidUntil (GMC 必填) + sku (GMC 强烈建议)
+      //  注: hasMerchantReturnPolicy 在 L1188 en branch 统一加 (3 locale 兼容), 这里不再重复
+      priceValidUntil: '2027-12-31',
+      sku: slug,
       availability: 'https://schema.org/InStock',
       itemCondition: 'https://schema.org/NewCondition',
       areaServed: locale === 'zh-hk' 
