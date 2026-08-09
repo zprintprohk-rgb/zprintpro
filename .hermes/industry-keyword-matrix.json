@@ -718,7 +718,23 @@
       "expected_faqs": 4,
       "queued_at": "2026-07-14",
       "priority_boost": 1,
-      "note": "2026-07-14 daily cron Tier A 母嬰 行業首次覆蓋 (嬰兒奶粉/洗護/輔食/孕產婦, en US 集中 Tier 1: Free Shipping $99+/FDA/100 MOQ)"
+      "note": "2026-07-14 daily cron Tier A 母嬰 行業首次覆蓋 (嬰兒奶粉/洗護/輔食/孕產婦, en US 集中 Tier 1: Free Shipping $99+/FDA/100 MOQ)",
+      "status": "completed",
+      "completed_at": "2026-08-09",
+      "v8_standard": true,
+      "v8_ready_score": 15,
+      "conversion_status": "verified",
+      "last_conversion_test": "2026-08-09T09:30:00+08:00",
+      "anti_ai_slop_8_items": true,
+      "9_section_structure": true,
+      "no_images": true,
+      "faq_count": 4,
+      "internal_links_count": 5,
+      "locale_chars": {
+        "zh-hk": 6928,
+        "en": 11755,
+        "ja": 7186
+      }
     },
     {
       "id": "Q-015",
@@ -4359,7 +4375,7 @@
     "v8_template_doc": ".hermes/template/blog-v8-seo-geo-template.md",
     "audit_report": ".hermes/reports/blog-v8-audit-2026-08-06.json",
     "total_blogs": 62,
-    "v8_ready_count": 1,
+    "v8_ready_count": 4,
     "partial_count": 6,
     "old_format_count": 55,
     "phase_a_partial_8_6_8_12": [
@@ -4396,7 +4412,14 @@
           "Disclaimer"
         ],
         "target_score": 15,
-        "deadline": "2026-08-12"
+        "deadline": "2026-08-12",
+        "retrofit_completed": true,
+        "retrofit_completed_at": "2026-08-09",
+        "v8_ready_score": 15,
+        "conversion_status": "verified",
+        "last_conversion_test": "2026-08-09T09:30:00+08:00",
+        "commit_hash": "0d46a4c",
+        "cf_build_run": "93221129040"
       },
       {
         "slug": "cmyk-guide",
@@ -5398,7 +5421,45 @@
         "deadline": "2026-08-30"
       }
     ],
-    "target_completion": "2026-08-30 (62/62 篇 v8_ready 100% 合规)"
+    "target_completion": "2026-08-30 (62/62 篇 v8_ready 100% 合规)",
+    "last_retrofit_at": "2026-08-09T16:33:00+08:00",
+    "last_retrofit_slug": "baby-product-label-sticker-printing-guide",
+    "last_retrofit_commit": "0d46a4c",
+    "last_retrofit_cf_run": "93221129040",
+    "phase_a_progress": {
+      "8_7_apparel": {
+        "status": "completed",
+        "commit": "2e28154"
+      },
+      "8_8_cross_border": {
+        "status": "completed",
+        "commit": "46809c3"
+      },
+      "8_9_baby_product": {
+        "status": "completed",
+        "commit": "0d46a4c"
+      },
+      "8_10_cmyk": {
+        "status": "pending",
+        "deadline": "2026-08-10"
+      },
+      "8_11_paper_materials": {
+        "status": "pending",
+        "deadline": "2026-08-11"
+      },
+      "8_12_same_day_flyers": {
+        "status": "pending",
+        "deadline": "2026-08-12"
+      }
+    },
+    "8_9_push_quota": {
+      "retorfit_push": 1,
+      "report_push": 1,
+      "total": 2,
+      "daily_cap": 5,
+      "monthly_total": 2,
+      "monthly_cap": 150
+    }
   },
   "conversion_status": {
     "policy": {
