@@ -1,0 +1,47 @@
+﻿fix(brand): K3 8/10 10:17 §0.15 升级 - 智印雲 全部改智印港 (514 处 48 files)
+
+K3 8/10 10:17 §0.15 品牌一致性 P0 升级 (per 之前保留 NAP 允许位的拍板是错的):
+- 智印雲 全部改为 智印港 (zh-hk 兜底)
+- 3 处 NAP 允许位 (og:site_name / WebSite schema / author schema) 撤销保留, 全部 locale-aware
+- 全文 zh-hk 简介 / 介绍中 / 页脚 / schema / data / components 智印雲 → 智印港
+- en 智印雲 → ZprintPro (§0.15 locale-aware 公式)
+- ja 智印雲 → ジープリント (§13.16.1 拍板)
+- K3 8/10 10:17: 合兵一处, zh-hk 实体 = 智印港 ZprintPro 双品牌, 智印雲 不再是 brand 词
+
+变更统计 (514 处 跨 49 files + 1 apply.py):
+- src/lib/seo.ts: 12 处 (L35 siteConfig.name / L41 alternateName / L99-128 getSiteNAP zh+ja / 注释)
+- src/lib/seo/schema-extensions.ts: 3 处 (Article author Person name)
+- src/data/sku-seo-data.ts: 274 处 (最大批量)
+- src/data/buying-guides.ts: 37 处
+- src/data/pillar-content.ts: 42 处
+- src/data/product-faqs.ts: 24 处
+- src/data/product-templates/textbooks.html: 15 处
+- src/components/layout/Footer.tsx: 2 处 (zh-hk 简介 + copyright)
+- src/app/[locale]/*.tsx: ~80 处 (about/contact/legal/privacy/terms/case-studies/company-news/press-kit 等)
+- public/llms-zh-hk.txt + public/llms-ja.txt + public/manifest.zh-hk.json + public/images/logo-v4-horizontal.svg: 9 处
+- 其他组件/数据文件: ~16 处
+- scripts/retrofit/brand-unify-2026-08-10/apply.py: 新增 Python 批量替换脚本 (SSoT)
+
+§0.7 production smoke 4 步:
+- 1. encoding: PASS (UTF-8 LF)
+- 2. 简体字守门: PASS (zh-hk.json 0 简体)
+- 3. tsc: pre-existing 20+ errors 全在 quote-engine/__tests__/, 跟本次无关 (next build 跳过)
+- 4. npm run build: PASS (Compiled successfully, 600 URLs, 84 blog posts, IndexNow 3 locales)
+
+合规 & 配额:
+- 8/10 push 配额: 2/5 daily (T1 cmyk 8664488 + brand-unify 本 commit), 月累计 9/150
+- amend 用满 1/2 月上限 (8/8 117f9fc + 8/10 8664488), 本次失败必走 reset --mixed HEAD~1 + 重做路径
+- K3 9:27 触发 T1 cmyk retrofit (PASS 8664488) + K3 10:17 触发品牌统一 (本 commit)
+
+品牌一致性 §0.15 升级:
+- 之前: NAP 允许位保留智印雲 (per §13.10) - K3 10:17 拍板撤销
+- 现在: 全 locale 一律 locale-aware brand, 智印雲 0 残留
+- zh-hk 兜底 brand = 智印港 (per K3 10:17 "合兵一处")
+- en = ZprintPro (per §0.15 locale-aware)
+- ja = ジープリント (per §13.16.1)
+
+后续 §0.16 残留清理 3 批 (8/13/15/17):
+- batch 1 longDescription 200 处 8/13 (K3 8/8 07:12 拍板)
+- batch 2 description+faq 300 处 8/15
+- batch 3 schema 340 处 8/17
+- 8/18 grep 验收 = 0 (8/21 复盘硬指标)

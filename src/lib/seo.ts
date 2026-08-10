@@ -20,7 +20,21 @@ export function getWebLogoUrl(locale: Locale): string {
 }
 
 export function getWebLogoAlt(locale: Locale): string {
-  return locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro';
+  // 2026-08-10 §0.15 升级: ja locale ジープリント ZprintPro (双品牌, ja 公式 per §13.16.1)
+  if (locale === 'zh-hk') return '智印港 ZprintPro';
+  if (locale === 'ja') return 'ジープリント ZprintPro';
+  return 'ZprintPro';
+}
+
+/**
+ * 2026-08-10 K3 §0.15 升级 (10:17 拍板) + §0.15 locale-aware siteName 公式
+ * 全 locale brand 切换: zh-hk=智印港 / en=ZprintPro / ja=ジープリント
+ * 之前 zh-hk=智印港 / en/ja=ZprintPro 的 hardcoded 模式会丢失 ja ジープリント 公式
+ */
+export function getBrandName(locale: Locale): string {
+  if (locale === 'zh-hk') return '智印港';
+  if (locale === 'ja') return 'ジープリント';
+  return 'ZprintPro';
 }
 
 // 網站配置
@@ -287,7 +301,7 @@ export function generateHomeMetadata(locale: Locale): Metadata {
       description: meta.description,
       url: `${siteConfig.url}/${locale}/`,
       // 2026-07-22 v6: 智印港 zh-hk 品牌词, en/ja 纯英文 (NAP 脱钩 §13.10)
-      siteName: locale === 'zh-hk' ? siteConfig.displayName : 'ZprintPro',
+      siteName: getBrandName(locale),
       locale: lang,
       type: 'website',
       images: [
@@ -295,7 +309,7 @@ export function generateHomeMetadata(locale: Locale): Metadata {
           url: `${siteConfig.url}/og-image.jpg`,
           width: 1200,
           height: 630,
-          alt: locale === 'zh-hk' ? siteConfig.displayName : 'ZprintPro',
+          alt: getBrandName(locale),
         },
       ],
     },
@@ -711,7 +725,7 @@ export function generateCategoryMetadata(locale: Locale, categorySlug: string = 
   // 2026-07-22 v6: zh-hk 用 displayName '智印港' (用户可见品牌词), 不是 schema.name '智印港' (NAP 法律名)
   // 避免 layout 模板的 '| ZprintPro' 再次叠加后形成 "...| 智印港 ZprintPro | ZprintPro"。
   // 2026-06-10：layout template 改为 '%s'（见 layout.tsx），此处由子页统一控制品牌后缀。
-  const brandSuffix = locale === 'zh-hk' ? siteConfig.displayName : 'ZprintPro';
+  const brandSuffix = getBrandName(locale);
 
   // 优先使用自定义 title，没有则用默认格式
   const customTitle = seoData.titles?.[locale];
@@ -788,7 +802,7 @@ export function generateProductMetadata(
   // 2026-06-10：layout template 改为 '%s'（见 layout.tsx），此处由子页统一控制品牌后缀。
   const suffix = locale === 'zh-hk' ? '印刷' : locale === 'en' ? 'Printing' : '印刷';
   const titleBase = `${name}${suffix}`.replace(/印刷印刷/g, '印刷');
-  const brandSuffix = locale === 'zh-hk' ? siteConfig.displayName : 'ZprintPro';
+  const brandSuffix = getBrandName(locale);
   const title = locale === 'zh-hk'
     ? `${titleBase} | 香港${categoryName}專家 | ${brandSuffix}`.slice(0, 60)
     : locale === 'en'
@@ -1562,7 +1576,7 @@ export function generateQuotePageMetadata(locale: Locale): Metadata {
       description: descriptions[locale],
       url: `${siteConfig.url}/${locale}/quote/`,
       // 2026-07-22 v6: 智印港 zh-hk 品牌词, en/ja 纯英文 (NAP 脱钩 §13.10)
-      siteName: locale === 'zh-hk' ? siteConfig.displayName : 'ZprintPro',
+      siteName: getBrandName(locale),
       locale: lang === 'zh-HK' ? 'zh_HK' : lang,
       type: 'website',
     },
@@ -1647,7 +1661,7 @@ export function generateOrganizationSchema(locale: Locale): SchemaOrgData {
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro',
+    name: locale === 'zh-hk' ? '智印港' : locale === 'ja' ? 'ジープリント' : 'ZprintPro',
     url: `${siteConfig.url}/${locale}`,
     logo: getGscLogoUrl(locale),
     areaServed: geo.areaServed.map(area => ({ '@type': 'Place', name: area })),
@@ -1668,7 +1682,7 @@ export function generateLocalBusinessSchema(locale: Locale): SchemaOrgData {
   return {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    name: locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro',
+    name: locale === 'zh-hk' ? '智印港' : locale === 'ja' ? 'ジープリント' : 'ZprintPro',
     image: `${siteConfig.url}/images/hero/main-hero.webp`,
     '@id': `${siteConfig.url}/${locale}`,
     url: `${siteConfig.url}/${locale}`,
@@ -1731,12 +1745,12 @@ export function generateArticleSchema(input: ArticleSchemaInput, locale: Locale)
     dateModified: input.lastUpdated || input.updatedAt || input.publishedAt,
     author: {
       '@type': input.authorName ? 'Person' : 'Organization',
-      name: input.authorName || (locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro'),
+      name: input.authorName || (locale === 'zh-hk' ? '智印港' : locale === 'ja' ? 'ジープリント' : 'ZprintPro'),
       url: `${baseUrl}/${locale}/about/`,
     },
     publisher: {
       '@type': 'Organization',
-      name: locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro',
+      name: locale === 'zh-hk' ? '智印港' : locale === 'ja' ? 'ジープリント' : 'ZprintPro',
       logo: { '@type': 'ImageObject', url: getGscLogoUrl(locale) },
     },
     inLanguage: locale === 'zh-hk' ? 'zh-Hant-HK' : locale === 'ja' ? 'ja-JP' : 'en-US',

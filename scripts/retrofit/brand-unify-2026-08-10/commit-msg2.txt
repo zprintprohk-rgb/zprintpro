@@ -1,0 +1,39 @@
+﻿fix(seo): K3 8/10 10:17 §0.15 升级遗漏 - layout.tsx siteName locale-aware 改造
+
+K3 8/10 10:17 §0.15 品牌一致性 P0 升级 (commit c48181b 之后 curl 验证发现遗漏):
+- src/app/[locale]/layout.tsx L43 hardcoded 'ZprintPro' → 全 locale og:site_name 都 = 'ZprintPro'
+- 5 关键页面 curl 验证 (zh-hk home/about/contact, en home, ja home):
+  - zh-hk home: og:site_name=智印港 ✓ (走 blog/[slug] siteConfig.name)
+  - zh-hk about/contact: og:site_name=ZprintPro ✗ (走 layout.tsx L43)
+  - en home: og:site_name=ZprintPro ✓ (locale=en, 巧合)
+  - ja home: og:site_name=ZprintPro ✗ (走 layout.tsx L43, 应该是ジープリント)
+
+修法:
+- 删 export const metadata 静态常量 (含 hardcoded 'ZprintPro')
+- 加 export async function generateMetadata 函数 (next.js 13+ dynamic metadata)
+- 加 getLocaleBrand(safeLocale) helper 包含 3 locale 全 brand 字段:
+  - zh-hk: siteName=智印港, ogLocale=zh_HK, ogTitle 繁中
+  - en: siteName=ZprintPro, ogLocale=en_US, ogTitle 英文
+  - ja: siteName=ジープリント, ogLocale=ja_JP, ogTitle 日文
+- 6 metadata 字段 locale-aware: siteName / ogTitle / ogDesc / twitterTitle / authorName / ogLocale
+- 其他字段 (robots / icons / alternates / keywords / formatDetection) 保留静态, 不依赖 locale
+
+§0.7 production smoke 4 步:
+- 1. encoding: PASS (UTF-8 LF)
+- 2. 简体字守门: PASS (zh-hk.json 0 简体残留)
+- 3. tsc: pre-existing 20+ errors (跟本次无关)
+- 4. npm run build: PASS (exit 0, 600 URLs, 84 blog posts, IndexNow 3 locales)
+
+合规 & 配额:
+- 8/10 push 配额: 3/5 daily (T1 8664488 + brand-unify c48181b + layout.tsx 本 commit)
+- 月累计: 10/150 (per §0.14 CF Pages 配额校准, 3 项目共享 500/月)
+- amend 用满 1/2 月上限 (8/8 117f9fc + 8/10 8664488), 本次走 fresh commit + push
+
+§0.15 升级全覆盖:
+- 之前 commit c48181b: 49 files 智印雲 → 智印港 (514 处, zh-hk 兜底)
+- 本 commit: layout.tsx L43 hardcoded 'ZprintPro' → locale-aware generateMetadata (3 locale)
+- 之后: 5 关键页面 og:site_name 全 locale 正确 (zh-hk=智印港 / en=ZprintPro / ja=ジープリント)
+
+待 K3 8/10 拍板:
+- §0.20 教训固化 (GitHub Push Protection + §0.15 升级覆盖范围 + layout.tsx 静态 metadata 改造)
+- §0.15 升级 vs §13.13 3 Locale 鐵律 冲突说明 (en/ja locale 显示中文 brand 词) - 等 K3 拍板
