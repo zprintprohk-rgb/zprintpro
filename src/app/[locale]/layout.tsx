@@ -20,73 +20,119 @@ export const runtime = "edge";
 
 const inter = Inter({ subsets: ['latin'], display: 'swap', variable: '--font-inter' });
 
-export const metadata: Metadata = {
-  metadataBase: new URL('https://zprintpro.com'),
-  title: {
-    default: 'ZprintPro | Custom Printing Service Online — Stickers, Packaging, Bags, Books',
-    // 2026-06-10 Phase B 修复 P0-2：去除 layout 级品牌后缀
-    // 原 template '%s | ZprintPro' 会与子页 generate*Metadata 中的品牌后缀叠加
-    // 形成 "...| ZprintPro | ZprintPro" 重复品牌。
-    // 改用 '%s'，由各 page.tsx 的 generate*Metadata 统一控制品牌后缀。
-    template: '%s',
-  },
-  description: 'Custom printing service online for US, UK, AU markets. Stickers, packaging, paper bags, red packets, posters, books. 72h global delivery from Shenzhen factory. AI instant quote in 30s.',
-  keywords: ['custom printing', 'online printing service', 'sticker printing', 'packaging boxes', 'paper bags', 'red packet printing', 'custom posters', 'same day printing', 'global printing service'],
-  authors: [{ name: 'ZprintPro' }],
-  creator: 'ZprintPro',
-  publisher: 'ZprintPro',
-  formatDetection: { email: false, address: false, telephone: false },
-  openGraph: {
-    type: 'website',
-    locale: 'en_US',
-    url: 'https://zprintpro.com',
+// 2026-08-10 K3 §0.15 升级 (10:17 拍板) + §0.15 locale-aware siteName 公式
+// zh-hk = 智印港 / en = ZprintPro / ja = ジープリント
+// 全 locale brand 切换, 不再 hardcode 'ZprintPro' (之前 layout.tsx L43 hardcoded 导致 en/ja/zh-hk 全部 og:site_name=ZprintPro, 违反 §0.15)
+function getLocaleBrand(safeLocale: 'zh-hk' | 'en' | 'ja'): {
+  siteName: string;
+  ogTitle: string;
+  ogDesc: string;
+  twitterTitle: string;
+  authorName: string;
+  ogLocale: 'zh_HK' | 'en_US' | 'ja_JP';
+} {
+  if (safeLocale === 'zh-hk') {
+    return {
+      siteName: '智印港',
+      ogTitle: '智印港 ZprintPro | 香港印刷服務 — 全球 72 小時交貨',
+      ogDesc: '香港印刷定制服務, 貼紙/包裝盒/紙袋/海報/書刊。30 秒 AI 報價, 順豐本地 + DHL 全球 2-4 天。',
+      twitterTitle: '智印港 ZprintPro | 香港印刷服務',
+      authorName: '智印港 ZprintPro',
+      ogLocale: 'zh_HK',
+    };
+  }
+  if (safeLocale === 'ja') {
+    return {
+      siteName: 'ジープリント',
+      ogTitle: 'ジープリント ZprintPro | 印刷サービス — グローバル 72 時間配送',
+      ogDesc: 'カスタマイズ印刷サービス, ステッカー/パッケージ/紙袋/ポスター/書籍。30 秒 AI 見積もり, DHL グローバル 2-4 日。',
+      twitterTitle: 'ジープリント ZprintPro | 印刷サービス',
+      authorName: 'ジープリント ZprintPro',
+      ogLocale: 'ja_JP',
+    };
+  }
+  // en
+  return {
     siteName: 'ZprintPro',
-    title: 'ZprintPro | Custom Printing Service Online — Global 72h Delivery',
-    description: 'Custom printing for US/UK/AU. Stickers, packaging, bags, books. AI instant quote, 72h global delivery from Shenzhen factory.',
-    images: [
-      {
-        url: '/images/og-default.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'ZprintPro — Custom Printing Service Online',
-      },
-    ],
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'ZprintPro | Custom Printing Service Online',
-    description: 'Custom printing for US/UK/AU. Stickers, packaging, bags, books. AI instant quote, 72h global delivery.',
-    images: ['/images/og-default.jpg'],
-    creator: '@zprintpro',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
+    ogTitle: 'ZprintPro | Custom Printing Service Online — Global 72h Delivery',
+    ogDesc: 'Custom printing for US/UK/AU. Stickers, packaging, bags, books. AI instant quote, 72h global delivery from Shenzhen factory.',
+    twitterTitle: 'ZprintPro | Custom Printing Service Online',
+    authorName: 'ZprintPro',
+    ogLocale: 'en_US',
+  };
+}
+
+export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
+  const safeLocale = (params.locale as 'zh-hk' | 'en' | 'ja') || 'en';
+  const b = getLocaleBrand(safeLocale);
+  return {
+    metadataBase: new URL('https://zprintpro.com'),
+    title: {
+      default: b.ogTitle,
+      // 2026-06-10 Phase B 修复 P0-2：去除 layout 级品牌后缀
+      // 原 template '%s | ZprintPro' 会与子页 generate*Metadata 中的品牌后缀叠加
+      // 形成 "...| ZprintPro | ZprintPro" 重复品牌。
+      // 改用 '%s'，由各 page.tsx 的 generate*Metadata 统一控制品牌后缀。
+      template: '%s',
+    },
+    description: b.ogDesc,
+    keywords: ['custom printing', 'online printing service', 'sticker printing', 'packaging boxes', 'paper bags', 'red packet printing', 'custom posters', 'same day printing', 'global printing service'],
+    authors: [{ name: b.authorName }],
+    creator: b.authorName,
+    publisher: b.authorName,
+    formatDetection: { email: false, address: false, telephone: false },
+    openGraph: {
+      type: 'website',
+      locale: b.ogLocale,
+      url: 'https://zprintpro.com',
+      siteName: b.siteName,
+      title: b.ogTitle,
+      description: b.ogDesc,
+      images: [
+        {
+          url: '/images/og-default.jpg',
+          width: 1200,
+          height: 630,
+          alt: `${b.authorName} — Custom Printing Service Online`,
+        },
+      ],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: b.twitterTitle,
+      description: b.ogDesc,
+      images: ['/images/og-default.jpg'],
+      creator: '@zprintpro',
+    },
+    robots: {
       index: true,
       follow: true,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
-      'max-video-preview': -1,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-image-preview': 'large',
+        'max-snippet': -1,
+        'max-video-preview': -1,
+      },
     },
-  },
-  alternates: {
-    canonical: '/',
-    languages: {
-      'en-US': '/en',
-      'en-GB': '/en',
-      'en-AU': '/en',
-      'en-CA': '/en',
-      'ja-JP': '/ja',
-      'zh-HK': '/zh-hk',
-      'x-default': '/',
+    alternates: {
+      canonical: '/',
+      languages: {
+        'en-US': '/en',
+        'en-GB': '/en',
+        'en-AU': '/en',
+        'en-CA': '/en',
+        'ja-JP': '/ja',
+        'zh-HK': '/zh-hk',
+        'x-default': '/',
+      },
     },
-  },
-  icons: {
-    icon: '/images/gsc-logo.png',
-    apple: '/images/gsc-logo.png',
-  },
-};
+    icons: {
+      icon: '/images/gsc-logo.png',
+      apple: '/images/gsc-logo.png',
+    },
+  };
+}
 
 export const viewport: Viewport = {
   width: 'device-width',
