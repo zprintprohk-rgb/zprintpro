@@ -4375,7 +4375,7 @@
     "v8_template_doc": ".hermes/template/blog-v8-seo-geo-template.md",
     "audit_report": ".hermes/reports/blog-v8-audit-2026-08-06.json",
     "total_blogs": 62,
-    "v8_ready_count": 4,
+    "v8_ready_count": 5,
     "partial_count": 6,
     "old_format_count": 55,
     "phase_a_partial_8_6_8_12": [
@@ -4459,21 +4459,17 @@
       },
       {
         "slug": "paper-materials",
-        "current_score": 8.0,
-        "zh_score": 8,
-        "en_score": 9,
-        "ja_score": 7,
-        "zh_chars": 3743,
-        "missing_zh": [
-          "重點摘要",
-          "黄_callout",
-          "蓝_CTA",
-          "Author",
-          "Sources",
-          "Disclaimer"
-        ],
+        "current_score": 15.0,
+        "zh_score": 15,
+        "en_score": 15,
+        "ja_score": 15,
+        "zh_chars": 9297,
+        "missing_zh": [],
         "target_score": 15,
-        "deadline": "2026-08-12"
+        "deadline": "2026-08-12",
+        "retrofit_completed": true,
+        "retrofit_commit": "c4a8c5f",
+        "retrofit_date": "2026-08-11"
       },
       {
         "slug": "same-day-flyers-printing-hong-kong-guide",
@@ -5422,10 +5418,10 @@
       }
     ],
     "target_completion": "2026-08-30 (62/62 篇 v8_ready 100% 合规)",
-    "last_retrofit_at": "2026-08-10T09:59:48+08:00",
-    "last_retrofit_slug": "cmyk-guide",
-    "last_retrofit_commit": "8664488",
-    "last_retrofit_cf_run": "93335414345",
+    "last_retrofit_at": "2026-08-11T04:50:00+08:00",
+    "last_retrofit_slug": "paper-materials",
+    "last_retrofit_commit": "c4a8c5f",
+    "last_retrofit_cf_run": "93593399407",
     "phase_a_progress": {
       "8_7_apparel": {
         "status": "completed",
@@ -5445,8 +5441,9 @@
         "cf_run": "93335414345"
       },
       "8_11_paper_materials": {
-        "status": "pending",
-        "deadline": "2026-08-11"
+        "status": "completed",
+        "commit": "c4a8c5f",
+        "cf_run": "93593399407"
       },
       "8_12_same_day_flyers": {
         "status": "pending",
@@ -5547,8 +5544,8 @@
       },
       "paper-materials": {
         "retrofit_target_date": "2026-08-11",
-        "conversion_status": "untested",
-        "last_conversion_test": null,
+        "conversion_status": "verified",
+        "last_conversion_test": "2026-08-11T04:50:00+08:00",
         "ai_citation_count": 0,
         "expected_cta_to": [
           "/contact",
@@ -5558,8 +5555,8 @@
         "expected_event": "contact_form_submit",
         "k3_5min_action": "1 设备 + 1 隐身窗口走全流程 + 检查 webhook 邮件 + GA4 DebugView",
         "api_endpoint_health": "200",
-        "api_endpoint_health_checked_at": "2026-08-07T18:45:38+08:00",
-        "api_endpoint_health_check_sha": "9ab9ee4"
+        "api_endpoint_health_checked_at": "2026-08-11T04:50:00+08:00",
+        "api_endpoint_health_check_sha": "c4a8c5f"
       },
       "same-day-flyers-printing-hong-kong-guide": {
         "retrofit_target_date": "2026-08-12",
