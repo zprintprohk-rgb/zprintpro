@@ -358,6 +358,12 @@ const posts: Record<string, Record<string, { title: string; description: string;
       date: '2026-08-06', category: '傳單印刷',
       content: '',
     },
+    'catalog-printing-guide': {
+      title: '畫冊印刷指南：攝影集・展覽圖錄・產品型錄 紙材裝訂全攻略 | 智印港 ZprintPro',
+      description: '畫冊印刷點揀？攝影集、展覽圖錄、產品型錄 4 大類型規格表，銅版紙/啞粉紙/特種紙紙材對比，硬皮精裝/膠裝/騎馬釘裝訂攻略，附 4 條 FAQ，50 本起印，3-5 個工作天交付。',
+      date: '2026-08-10', category: '書籍印刷',
+      content: '',
+    },
   },
 
     // 2026-07-27 v4.1 weekly-meta-refresh: T6-FI-006 金融證券 1st 覆蓋 (Tier B × P0 paper-bags)
@@ -426,6 +432,12 @@ const posts: Record<string, Record<string, { title: string; description: string;
       title: 'A5 vs A6 Flyer Size: Dimensions, Use Cases & Print Cost Comparison | ZprintPro',
       description: 'A5 vs A6 flyer size: exact dimensions in mm & inches, use cases for restaurants, retail and direct mail, cost gap, folding options, 4 FAQs, 50-10k piece runs.',
       date: '2026-08-06', category: 'Flyer Printing',
+      content: '',
+    },
+    'catalog-printing-guide': {
+      title: 'Catalog & Art Book Printing Guide: Paper, Binding & Finishing | ZprintPro',
+      description: 'Custom catalog and art book printing guide — photo books, exhibition catalogs, product catalogs. Paper choices (art/matte/specialty), binding (hardcover/perfect/saddle), finishes (spot UV/foil), 4 FAQs, 50-book MOQ, 3-5 day turnaround, Free Shipping $99+ USA.',
+      date: '2026-08-10', category: 'Book Printing',
       content: '',
     },
   },
@@ -650,6 +662,12 @@ const posts: Record<string, Record<string, { title: string; description: string;
       date: '2026-08-06', category: 'チラシ印刷',
       content: '',
     },
+    'catalog-printing-guide': {
+      title: 'カタログ・写真集印刷ガイド：用紙・製本・加工の選び方 | ZprintPro',
+      description: 'カタログ・写真集・作品集印刷の完全ガイド — 4 タイプ規格表、用紙（アート紙/マット紙/特種紙）、製本（上製/無線/中綴じ）、加工（UV/箔）、FAQ 4 件、50 冊〜、3-5 営業日、全国送料無料。',
+      date: '2026-08-10', category: '書籍印刷',
+      content: '',
+    },
   }
 };
 
@@ -695,6 +713,7 @@ const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-
   'poster-size-guide',
   'a5-vs-a6-flyer-size', // 2026-08-06 v8 daily: A5 vs A6 傳單尺寸
   'poster-printing-price-guide', // 2026-08-07 v8 daily: A1/A2 海報印刷價格指南
+  'catalog-printing-guide', // 2026-08-10 v8 daily: 畫冊印刷指南 (GSC 畫冊印刷 12 imp pos 15.33)
 ];
 const guideSlugs = getAllBuyingGuideSlugs();
 const clusterSlugs = getAllClusterSlugs();

@@ -1511,6 +1511,23 @@ const lpPosterPrintingPrice: BlogPostMeta = {
   },
 };
 
+// 2026-08-10 v8 daily-content-evolve: 畫冊印刷指南 (GSC 8/9 畫冊印刷 12 imp pos 15.33, books 類目 #2 印象類目 136 imps) — 純文字・v8 報價型
+const lpCatalogPrintingGuide: BlogPostMeta = {
+  slug: 'catalog-printing-guide',
+  categoryKey: 'printing',
+  source: 'daily',
+  date: '2026-08-10',
+  title: {
+    'zh-hk': '畫冊印刷指南：攝影集・展覽圖錄・產品型錄 紙材裝訂全攻略 | 智印港 ZprintPro',
+    en: 'Catalog & Art Book Printing Guide: Paper, Binding & Finishing | ZprintPro',
+    ja: 'カタログ・写真集印刷ガイド：用紙・製本・加工の選び方 | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '畫冊印刷點揀？攝影集、展覽圖錄、產品型錄 4 大類型規格表，銅版紙/啞粉紙/特種紙紙材對比，硬皮精裝/膠裝/騎馬釘裝訂攻略，附 4 條 FAQ，50 本起印，3-5 個工作天交付。',
+    en: 'Custom catalog and art book printing guide — photo books, exhibition catalogs, product catalogs. Paper choices (art/matte/specialty), binding (hardcover/perfect/saddle), finishes (spot UV/foil), 4 FAQs, 50-book MOQ, 3-5 day turnaround, Free Shipping $99+ USA.',
+    ja: 'カタログ・写真集・作品集印刷の完全ガイド — 4 タイプ規格表、用紙（アート紙/マット紙/特種紙）、製本（上製/無線/中綴じ）、加工（UV/箔）、FAQ 4 件、50 冊〜、3-5 営業日、全国送料無料。',
+  },
+};
 
 export const blogPosts: BlogPostMeta[] = [
   // Buying guides (9)
@@ -1626,6 +1643,7 @@ export const blogPosts: BlogPostMeta[] = [
   lpPosterSizeGuide,
   lpA5VsA6FlyerSize,
   lpPosterPrintingPrice,
+  lpCatalogPrintingGuide,
 ];
 
 // =============================================================================
