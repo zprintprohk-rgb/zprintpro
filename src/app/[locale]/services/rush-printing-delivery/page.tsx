@@ -22,8 +22,8 @@ type Props = {
 
 const metaMap: Record<string, { title: string; desc: string }> = {
   'zh-hk': {
-    title: '印刷即日速递送货 | 今天下單明天12點前到 | 18:00截單 | 智印雲 ZPrintPro',
-    desc: '印刷即日速递送货首选智印雲 ZPrintPro！今天下班6點前下單，明天中午12點前收貨。宣傳單張、海報、貼紙、紙袋、畫冊、易拉寶通宵印刷，支持港鐵站交收。',
+    title: '印刷即日速递送货 | 今天下單明天12點前到 | 18:00截單 | 智印港 ZPrintPro',
+    desc: '印刷即日速递送货首选智印港 ZPrintPro！今天下班6點前下單，明天中午12點前收貨。宣傳單張、海報、貼紙、紙袋、畫冊、易拉寶通宵印刷，支持港鐵站交收。',
   },
   'en': {
     title: 'Rush Printing Service | 2-4 Day Global Delivery | ZprintPro',

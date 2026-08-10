@@ -182,7 +182,7 @@ const buyingGuideNames: Record<string, Record<Locale, string>> = {
 
 const legacyBlogNames: Record<string, Record<Locale, string>> = {
   'company-intro': {
-    'zh-hk': '智印雲印刷公司簡介',
+    'zh-hk': '智印港印刷公司簡介',
     en: 'ZprintPro Company Introduction',
     ja: 'ZprintPro会社概要',
   },

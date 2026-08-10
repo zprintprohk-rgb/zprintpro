@@ -14,9 +14,9 @@ export function generateStaticParams() {
 
 const META = {
   'zh-hk': {
-    title: '付款方式 · 銀行電匯 / 微信 / 支付寶 / PayPal / 跨境匯款 | ZprintPro 智印雲',
+    title: '付款方式 · 銀行電匯 / 微信 / 支付寶 / PayPal / 跨境匯款 | ZprintPro 智印港',
     description:
-      '智印雲 ZprintPro 提供 5 大付款通道：銀行電匯 (DBS HK)、微信、支付寶、PayPal (跨境卡支付)、支付寶閃速收款 (跨境匯款)。30 秒 AI 報價後可選任一通道付款，72 小時全球交付。',
+      '智印港 ZprintPro 提供 5 大付款通道：銀行電匯 (DBS HK)、微信、支付寶、PayPal (跨境卡支付)、支付寶閃速收款 (跨境匯款)。30 秒 AI 報價後可選任一通道付款，72 小時全球交付。',
     canonical: 'https://zprintpro.com/payment-methods/',
   },
   en: {
@@ -515,7 +515,7 @@ const SECTIONS = {
     heroBadge: '5 大通道 · 全球適用',
     h1: '付款方式一覽',
     subtitle:
-      '智印雲 ZprintPro 提供 5 種付款通道，覆蓋中國大陸 / 香港本地 / 跨境（歐美、日本、澳洲）三大客群。選擇最適合你的方式，付款後 72 小時內全球交付。',
+      '智印港 ZprintPro 提供 5 種付款通道，覆蓋中國大陸 / 香港本地 / 跨境（歐美、日本、澳洲）三大客群。選擇最適合你的方式，付款後 72 小時內全球交付。',
     badge1: '30 秒 AI 報價',
     badge2: '全球 72 小時交付',
     badge3: '100% 合規收款',
@@ -604,7 +604,7 @@ const SECTIONS = {
       speed: '即時 - 24 小時',
       bestFor: '海外華人 / 留學生 / 港人匯款',
       bullets: [
-        '由 唐運提 (智印雲法人) 發起的官方收款碼',
+        '由 唐運提 (智印港法人) 發起的官方收款碼',
         '海外客戶用 APP 掃碼匯款到國內帳戶',
         '適合 B2B 大額訂單 / 服務費用',
         '注意：這不是訂單支付通道，是已確定要付款後的便捷收款',

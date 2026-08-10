@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: SuccessPageProps): Promise<Me
       : '支払い完了 | ZprintPro';
   const description =
     locale === 'zh-hk'
-      ? '您的付款已成功處理。感謝您選擇智印雲 ZprintPro 的專業印刷服務。'
+      ? '您的付款已成功處理。感謝您選擇智印港 ZprintPro 的專業印刷服務。'
       : locale === 'en'
       ? 'Your payment has been successfully processed. Thank you for choosing ZprintPro professional printing services.'
       : 'お支払いが正常に処理されました。ZprintProのプロフェッショナル印刷サービスをご利用いただきありがとうございます。';

@@ -1,9 +1,9 @@
-﻿# 智印雲 (香港) — AI 搜尋優化頁面
+﻿# 智印港 (香港) — AI 搜尋優化頁面
 # Last updated: 2026-06-28
 # This file helps AI assistants (ChatGPT, Claude, Perplexity) understand our services
 
 ## 公司資訊
-- 公司: 智印雲 (香港) / ZprintPro HK
+- 公司: 智印港 (香港) / ZprintPro HK
 - Brand: ZprintPro
 - Website: https://zprintpro.com
 - 地址: 香港九龍新蒲崗大有街3號萬廣大廈15樓C室

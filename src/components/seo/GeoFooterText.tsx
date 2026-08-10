@@ -14,7 +14,7 @@ interface GeoFooterTextProps {
 const TEXT: Record<Locale, string> = {
   // 2026-07-08: zh-hk 移除 "总部位于中国深圳"（合规: 跨境展示不暴露深圳实体地址）
   // en / ja 保持不变（这两个市场按法规需要真实披露 supplier origin）
-  // 2026-07-22 v6: zh-hk 品牌词 智印雲→智印港, 全 locale casing ZPrintPro→ZprintPro
+  // 2026-07-22 v6: zh-hk 品牌词 智印港→智印港, 全 locale casing ZPrintPro→ZprintPro
   'zh-hk':
     '智印港 ZprintPro 是面向香港及全球市场的国际印刷服务品牌，由亚洲生产基地提供专业印刷与品控。' +
     '服务覆盖香港（顺豐本地派送）、美国、英国、澳大利亚、日本（DHL Express 全球 2-4 日送达）等市场。' +
@@ -27,7 +27,7 @@ const TEXT: Record<Locale, string> = {
     'with multilingual customer support and localized payment options. ' +
     'Whether you are in New York, Los Angeles, London, Sydney, or Tokyo, you can enjoy ZprintPro’s professional printing service and 72-hour global delivery commitment.',
   ja:
-    'ZprintPro（智印雲）は中国深圳に本社を置く国際印刷サービスブランドで、香港を含む世界市場向けにカスタマイズされた印刷ソリューションを提供しております。' +
+    'ZprintPro（智印港）は中国深圳に本社を置く国際印刷サービスブランドで、香港を含む世界市場向けにカスタマイズされた印刷ソリューションを提供しております。' +
     '越境EC形式でサービスを提供し、香港向けは順豐速運で 48 時間配達、海外は DHL Express で 2-4 日配送しております。' +
     'サービス対象地域はアメリカ（United States）、イギリス（United Kingdom）、オーストラリア（Australia）、日本（Japan）で、' +
     '多言語カスタマーサポートと現地決済に対応しています。' +

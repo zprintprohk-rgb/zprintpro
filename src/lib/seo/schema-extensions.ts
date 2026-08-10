@@ -75,7 +75,7 @@ export function getCategoryHowToSteps(
   locale: Locale
 ): { name: string; description: string; steps: HowToStep[]; totalTime: string } | null {
   // 统一品牌名（en/ja 用纯英文，避免中文泄漏）
-  const brand = locale === 'zh-hk' ? '智印雲' : 'ZprintPro';
+  const brand = locale === 'zh-hk' ? '智印港' : 'ZprintPro';
 
   // 4 个主钻品类（按 P0 修复范围锁定）：
   // packaging / paper-bags / books / calendars
@@ -370,7 +370,7 @@ export interface AuthorInfo {
 
 export const authorByLocale: Record<Locale, AuthorInfo> = {
   'zh-hk': {
-    name: '智印雲印刷專家',
+    name: '智印港印刷專家',
     url: `${SITE_URL}/zh-hk/about/`,
     sameAs: [
       'https://www.linkedin.com/company/zprintpro',
@@ -628,7 +628,7 @@ export function generateAboutPageJsonLd(
     '@type': 'AboutPage',
     '@id': url,
     url,
-    name: locale === 'zh-hk' ? '關於智印雲' : locale === 'ja' ? 'ZprintProについて' : 'About ZprintPro',
+    name: locale === 'zh-hk' ? '關於智印港' : locale === 'ja' ? 'ZprintProについて' : 'About ZprintPro',
     description,
     inLanguage: locale === 'zh-hk' ? 'zh-Hant-HK' : locale === 'ja' ? 'ja-JP' : 'en-US',
     mainEntity: {

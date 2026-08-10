@@ -140,9 +140,9 @@ const COPY = {
     ],
   },
   'zh-hk': {
-    title: '智印雲 Trade Program 加盟計劃 · 設計公司 / 廣告公司 8 折優惠 | 智印雲',
-    description: '加入智印雲 Trade Program 加盟計劃. 設計公司 / 廣告公司 / 印刷經紀 享 8 折優惠, 專屬客戶經理, 美國免費送貨.',
-    h1: '智印雲 Trade Program 加盟計劃',
+    title: '智印港 Trade Program 加盟計劃 · 設計公司 / 廣告公司 8 折優惠 | 智印港',
+    description: '加入智印港 Trade Program 加盟計劃. 設計公司 / 廣告公司 / 印刷經紀 享 8 折優惠, 專屬客戶經理, 美國免費送貨.',
+    h1: '智印港 Trade Program 加盟計劃',
     subtitle: '為您的設計客戶享 8 折印刷優惠. 為廣告公司 / 設計公司 / 印刷經紀而設.',
     tiers: [
       {
@@ -174,7 +174,7 @@ const COPY = {
     formSubtitle: '7 個工作天審批. 無設置費. 隨時取消.',
     fields: {
       fullName: '姓名', email: '公司電郵', company: '公司 / 機構名稱', website: '網址 (選填)',
-      useCase: '您將如何為客戶使用智印雲?', monthlyVolume: '預計每月用量',
+      useCase: '您將如何為客戶使用智印港?', monthlyVolume: '預計每月用量',
       volumeOptions: ['< HK$4,000 / 月', 'HK$4,000 - HK$16,000 / 月', 'HK$16,000 - HK$80,000 / 月', 'HK$80,000+ / 月'],
       submit: '提交申請', submitting: '提交中...', success: '申請已收到!', successSub: '我們的加盟團隊將在 7 個工作天內回覆您.',
     },
@@ -182,16 +182,16 @@ const COPY = {
     faqs: [
       { q: '加盟需要費用嗎?', a: 'Trade 和 Pro Trade 級別免費加盟. Enterprise 級別按年量承諾定制定價.' },
       { q: '審批需時多久?', a: '通常 5-7 個工作天. 我們的加盟團隊會審核每份申請, 確保符合我們的服務標準.' },
-      { q: '可以白標嗎?', a: '僅 Enterprise 級別支援. Trade 和 Pro Trade 級別使用智印雲品牌包裝.' },
+      { q: '可以白標嗎?', a: '僅 Enterprise 級別支援. Trade 和 Pro Trade 級別使用智印港品牌包裝.' },
       { q: 'NET-30 結算是什麼?', a: 'Trade 成員可申請月結 NET-30 賬單 (發票後 30 天內付款). 前 3 個成功訂單後可選.' },
       { q: '專屬客戶經理如何運作?', a: 'Pro Trade 和 Enterprise 成員獲分配專屬客戶經理, 通過 WhatsApp 在辦公時間 (UTC+8) 聯絡. 1 對 1 報價 / 打稿 / 生產進度支援.' },
-      { q: '折扣可用於個人項目嗎?', a: 'Trade 折扣僅用於客戶項目. 個人用途訂單應在您的個人智印雲賬戶下以正價下單.' },
+      { q: '折扣可用於個人項目嗎?', a: 'Trade 折扣僅用於客戶項目. 個人用途訂單應在您的個人智印港賬戶下以正價下單.' },
     ],
   },
   ja: {
-    title: '智印雲 Trade Program パートナー · デザイン会社 20% OFF | 智印雲',
-    description: '智印雲 Trade Program パートナー. デザイン会社 / 広告代理店 / 印刷仲介 20% OFF. 専任アカウントマネージャー. 米国送料無料.',
-    h1: '智印雲 Trade Program パートナー',
+    title: '智印港 Trade Program パートナー · デザイン会社 20% OFF | 智印港',
+    description: '智印港 Trade Program パートナー. デザイン会社 / 広告代理店 / 印刷仲介 20% OFF. 専任アカウントマネージャー. 米国送料無料.',
+    h1: '智印港 Trade Program パートナー',
     subtitle: 'クライアント向けに 20% OFF 印刷料金. 広告代理店 / デザイン会社 / 印刷仲介向け.',
     tiers: [
       {
@@ -223,7 +223,7 @@ const COPY = {
     formSubtitle: '7 営業日で審査. 登録費なし. いつでもキャンセル可能.',
     fields: {
       fullName: '氏名', email: '会社メール', company: '会社 / 機関名', website: 'ウェブサイト (任意)',
-      useCase: 'クライアント向けに智印雲をどのように利用しますか?', monthlyVolume: '推定月間ボリューム',
+      useCase: 'クライアント向けに智印港をどのように利用しますか?', monthlyVolume: '推定月間ボリューム',
       volumeOptions: ['< 7 万円 / 月', '7 万円 - 28 万円 / 月', '28 万円 - 140 万円 / 月', '140 万円+ / 月'],
       submit: '申請を送信', submitting: '送信中...', success: '申請を受け付けました!', successSub: 'パートナー担当チームから 7 営業日以内にご返信します.',
     },
@@ -231,7 +231,7 @@ const COPY = {
     faqs: [
       { q: 'パートナー登録に費用はかかりますか?', a: 'Trade と Pro Trade レベルは無料. Enterprise は年間ボリュームコミットメントに基づくカスタム価格.' },
       { q: '審査にはどのくらいかかりますか?', a: '通常 5-7 営業日. サービス基準との整合性を確認するため審査します.' },
-      { q: 'ホワイトラベルはできますか?', a: 'Enterprise レベルのみ対応. Trade と Pro Trade は智印雲ブランド.' },
+      { q: 'ホワイトラベルはできますか?', a: 'Enterprise レベルのみ対応. Trade と Pro Trade は智印港ブランド.' },
       { q: 'NET-30 請求とは?', a: 'Trade メンバーは月次 NET-30 請求を申請可能 (請求書発行後 30 日以内支払い). 最初の 3 件の成功した注文後から利用可.' },
       { q: '専任アカウントマネージャーは?', a: 'Pro Trade と Enterprise は専任 AM を割り当て. 営業時間 (UTC+8) 中 WhatsApp で 1 対 1 サポート.' },
       { q: '割引は自分のプロジェクトに使えますか?', a: 'Trade 割引はクライアントプロジェクトのみ. 個人利用は通常価格で.' },

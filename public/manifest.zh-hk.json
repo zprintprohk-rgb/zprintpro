@@ -1,8 +1,8 @@
 {
   "id": "/",
-  "name": "智印雲 ZPrintPro - 全球智能印刷定制平台",
+  "name": "智印港 ZPrintPro - 全球智能印刷定制平台",
   "short_name": "ZPrintPro",
-  "description": "智印雲 ZPrintPro - 香港本地印刷 SaaS。AI 報價 30 秒、Airwallex 多幣種支付、72 小時全球交付。DHL Express 直送美英澳日韓新加坡。FSC 認證紙材、ISO 9001 品質認證。",
+  "description": "智印港 ZPrintPro - 香港本地印刷 SaaS。AI 報價 30 秒、Airwallex 多幣種支付、72 小時全球交付。DHL Express 直送美英澳日韓新加坡。FSC 認證紙材、ISO 9001 品質認證。",
   "start_url": "/zh-hk?source=pwa",
   "scope": "/zh-hk/",
   "display": "standalone",

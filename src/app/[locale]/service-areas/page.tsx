@@ -15,12 +15,12 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: { locale: Locale } }): Promise<Metadata> {
   const { locale } = params;
   const titles = {
-    'zh-hk': '香港印刷服務地區 | 全港送貨 | 智印雲 ZprintPro',
+    'zh-hk': '香港印刷服務地區 | 全港送貨 | 智印港 ZprintPro',
     en: 'Hong Kong Printing Service Areas | Island-wide Delivery | ZprintPro',
     ja: '香港印刷サービスエリア | 全港配送 | ZprintPro',
   };
   const descriptions = {
-    'zh-hk': '智印雲提供全港印刷送貨服務，覆蓋香港島、九龍、新界及離島。即日印刷，順豐速遞，次日送達。深圳自家工場直送，香港 MTR 站交收服務，品質保證。',
+    'zh-hk': '智印港提供全港印刷送貨服務，覆蓋香港島、九龍、新界及離島。即日印刷，順豐速遞，次日送達。深圳自家工場直送，香港 MTR 站交收服務，品質保證。',
     en: 'ZprintPro offers global cross-border printing from our Shenzhen factory. Hong Kong-wide delivery with SF Express next-day, plus HK MTR station pickup. DHL Express worldwide shipping to US/UK/AU/JP and beyond.',
     ja: 'ZprintPro は深圳自社工場から越境印刷サービスを提供。香港 MTR 駅受取サービス、順丰翌日配送。DHL Express で日本・米国・英国・豪州へ 2-4 日配送。',
   };
@@ -45,7 +45,7 @@ export default function ServiceAreasPage({ params }: { params: { locale: Locale 
   const geoJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Place',
-    name: locale === 'zh-hk' ? '智印雲服務地區' : locale === 'en' ? 'ZprintPro Service Areas' : 'ZprintProサービスエリア',
+    name: locale === 'zh-hk' ? '智印港服務地區' : locale === 'en' ? 'ZprintPro Service Areas' : 'ZprintProサービスエリア',
     geo: {
       '@type': 'GeoCoordinates',
       // 深圳龍崗区平湖街道嘉城路1号 (生产主体) — 22.6850°N, 114.1320°E (approx)

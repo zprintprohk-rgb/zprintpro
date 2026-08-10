@@ -45,7 +45,7 @@ const translations = {
     contactUs: '聯繫我們 →',
     whatsapp: 'WhatsApp 查詢',
     qrScan: '掃碼即時查詢',
-    trustBadge: '已有 15,000+ 客戶選擇智印雲',
+    trustBadge: '已有 15,000+ 客戶選擇智印港',
     // 2026-07-27 v21: 移动端折叠按钮
     expandBtn: '展開',
     collapseBtn: '收起',

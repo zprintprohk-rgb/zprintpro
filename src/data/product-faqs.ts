@@ -13,7 +13,7 @@ export const stickersFAQs: FAQItem[] = [
       'ja': 'シール印刷の最小ロットは何枚からですか？',
     },
     answer: {
-      'zh-hk': '智印雲提供少批量貼紙印刷服務，最低100張起訂。無論是防水貼紙、透明貼紙或PVC貼紙，均可小量定制，適合初創品牌與產品包裝測試。詳情請參閱《貼紙印刷完全指南》。',
+      'zh-hk': '智印港提供少批量貼紙印刷服務，最低100張起訂。無論是防水貼紙、透明貼紙或PVC貼紙，均可小量定制，適合初創品牌與產品包裝測試。詳情請參閱《貼紙印刷完全指南》。',
       'en': 'ZprintPro offers small-batch custom sticker printing with a minimum order of 100 pieces. Whether you need waterproof stickers, clear vinyl, or PVC labels, we support low-volume orders perfect for startups and product packaging tests. See our Complete Sticker Printing Guide for details.',
       'ja': 'ZprintProでは少ロットのシール印刷に対応しており、最小ロットは100枚からです。防水シール、透明シール、PVCシールなど、スタートアップやパッケージングテストに最適です。詳しくは「シール印刷完全ガイド」をご覧ください。',
     },
@@ -49,7 +49,7 @@ export const stickersFAQs: FAQItem[] = [
       'ja': '透明シールはどんな商品包装に適していますか？',
     },
     answer: {
-      'zh-hk': '透明貼紙（Clear Stickers）適合玻璃樽、塑膠盒、化妝品瓶等透明或半透明包裝，可營造「無標籤」的高級感。智印雲提供防水透明貼紙，適合食品、護膚品及精品包裝。',
+      'zh-hk': '透明貼紙（Clear Stickers）適合玻璃樽、塑膠盒、化妝品瓶等透明或半透明包裝，可營造「無標籤」的高級感。智印港提供防水透明貼紙，適合食品、護膚品及精品包裝。',
       'en': 'Clear stickers are ideal for glass bottles, plastic containers, cosmetic jars, and other transparent or semi-transparent packaging, creating a "no-label" premium look. ZprintPro offers waterproof clear stickers perfect for food, skincare, and boutique packaging.',
       'ja': '透明シールは、ガラス瓶、プラスチック容器、化粧品瓶などの透明または半透明の包装に最適で、「ラベルなし」の高級感を演出します。ZprintProでは食品、スキンケア、ブティック向けの防水透明シールを提供しています。',
     },
@@ -73,7 +73,7 @@ export const stickersFAQs: FAQItem[] = [
       'ja': '日本へのシール配送はありますか？',
     },
     answer: {
-      'zh-hk': '有。智印雲提供全港送貨服務，包括九龍、港島、新界及離島。貼紙印刷訂單滿HK$500免運費，未滿額可選擇香港 MTR 站交收（觀塘、旺角、銅鑼灣、尖沙咀等站點 — 香港服務點，非生產地）。',
+      'zh-hk': '有。智印港提供全港送貨服務，包括九龍、港島、新界及離島。貼紙印刷訂單滿HK$500免運費，未滿額可選擇香港 MTR 站交收（觀塘、旺角、銅鑼灣、尖沙咀等站點 — 香港服務點，非生產地）。',
       'en': 'Yes. ZprintPro delivers sticker orders worldwide from our Asia facility. US orders ship via DHL / FedEx in 2-4 business days, with free shipping on orders over $99.',
       'ja': 'はい。ZprintProはDHL・FedExで日本全国に配送しています（通常2〜4日）。小口注文から大量注文まで対応可能です。',
     },
@@ -112,7 +112,7 @@ export const flyersFAQs: FAQItem[] = [
       'ja': 'チラシ印刷の最小ロットは何枚からですか？',
     },
     answer: {
-      'zh-hk': '智印雲提供A5傳單印刷服務，最低10張起訂。無論是宣傳單張派發、開業傳單或活動傳單，均可少批量定制，適合初創企業與社區宣傳。詳情請參閱《宣傳單張印刷攻略》。',
+      'zh-hk': '智印港提供A5傳單印刷服務，最低10張起訂。無論是宣傳單張派發、開業傳單或活動傳單，均可少批量定制，適合初創企業與社區宣傳。詳情請參閱《宣傳單張印刷攻略》。',
       'en': 'ZprintPro offers A5 flyer printing with a minimum order of 10 copies. Whether for leaflet distribution, grand opening flyers, or event promotions, we support small orders perfect for startups and community outreach. See our Flyer Printing Masterclass for details.',
       'ja': 'ZprintProではA5チラシ印刷に対応しており、最小ロットは10枚からです。チラシ配布、開業チラシ、イベントプロモーションなど、スタートアップや地域宣伝に最適です。詳しくは「チラシ印刷マスターガイド」をご覧ください。',
     },
@@ -184,7 +184,7 @@ export const flyersFAQs: FAQItem[] = [
       'ja': '折りパンフレットにはどんな種類がありますか？',
     },
     answer: {
-      'zh-hk': '智印雲提供多款摺頁傳單：對摺（2頁）、三摺（Z摺/門摺）、四摺地圖式等。適合產品目錄、活動流程表及餐牌設計。不同摺法影響閱讀動線，建議根據內容層次選擇。',
+      'zh-hk': '智印港提供多款摺頁傳單：對摺（2頁）、三摺（Z摺/門摺）、四摺地圖式等。適合產品目錄、活動流程表及餐牌設計。不同摺法影響閱讀動線，建議根據內容層次選擇。',
       'en': 'ZprintPro offers various folded leaflets: half-fold (2 panels), tri-fold (Z-fold/gate-fold), and four-fold map styles. Suitable for product catalogs, event programs, and menu design. Different folds affect reading flow; choose based on content hierarchy.',
       'ja': 'ZprintProでは、二つ折り、三つ折り（Z折り/観音開き）、四つ折りマップ式などの折りパンフレットを提供しています。商品カタログ、イベントプログラム、メニュー設計に適しています。',
     },
@@ -196,7 +196,7 @@ export const flyersFAQs: FAQItem[] = [
       'ja': '日本へのチラシ配送はありますか？',
     },
     answer: {
-      'zh-hk': '有。智印雲提供全港送貨服務，包括九龍、港島、新界及離島。傳單印刷訂單滿HK$500免運費，未滿額可選擇港鐵站交收。大量傳單派發訂單可安排貨車直送。',
+      'zh-hk': '有。智印港提供全港送貨服務，包括九龍、港島、新界及離島。傳單印刷訂單滿HK$500免運費，未滿額可選擇港鐵站交收。大量傳單派發訂單可安排貨車直送。',
       'en': 'Yes. ZprintPro delivers flyer orders worldwide from our Asia facility. US orders over $99 qualify for free shipping via DHL / FedEx (2-4 business days). For bulk leaflet distribution orders, delivery can be arranged directly to your distribution team.',
       'ja': 'はい。ZprintProはDHL・FedExで日本全国に配送しています（通常2〜4日）。大量のチラシ注文にも対応可能です。',
     },
@@ -211,7 +211,7 @@ export const packagingBoxesFAQs: FAQItem[] = [
       'ja': '箱包装オーダーメイドの最小ロットはいくつからですか？',
     },
     answer: {
-      'zh-hk': '智印雲提供磁吸禮盒、環保包裝盒等定制服務，最低100個起訂。無論是化妝品盒、食品盒或禮品盒，均可小量定制，適合初創品牌與節日禮品測試。詳情請參閱《品牌包裝完全指南》。',
+      'zh-hk': '智印港提供磁吸禮盒、環保包裝盒等定制服務，最低100個起訂。無論是化妝品盒、食品盒或禮品盒，均可小量定制，適合初創品牌與節日禮品測試。詳情請參閱《品牌包裝完全指南》。',
       'en': 'ZprintPro offers custom packaging box printing from 100 units minimum. Whether cosmetic boxes, food packaging, or gift boxes, we support small orders perfect for startups and seasonal gift testing. See our Brand Packaging Guide for details.',
       'ja': 'ZprintProでは100個からの箱包装オーダーメイドに対応しています。化粧品箱、食品箱、ギフト箱など、スタートアップや季節のギフトテストに最適です。詳しくは「ブランド包装完全ガイド」をご覧ください。',
     },
@@ -235,7 +235,7 @@ export const packagingBoxesFAQs: FAQItem[] = [
       'ja': 'エコ包装箱にはどんな素材が使えますか？',
     },
     answer: {
-      'zh-hk': '智印雲提供FSC認證環保包裝盒，材質包括再生紙、牛皮紙及大豆油墨印刷。適合注重ESG的品牌及有機產品包裝。新界及九龍客戶可安排即日打樣。',
+      'zh-hk': '智印港提供FSC認證環保包裝盒，材質包括再生紙、牛皮紙及大豆油墨印刷。適合注重ESG的品牌及有機產品包裝。新界及九龍客戶可安排即日打樣。',
       'en': 'ZprintPro offers FSC-certified eco-friendly packaging boxes using recycled paper, kraft paper, and soy-based inks. Ideal for ESG-focused brands and organic product packaging. Same-day digital sampling available on request.',
       'ja': 'ZprintProではFSC認証のエコ包装箱を提供しており、再生紙、クラフト紙、大豆インクを使用しています。ESGに配慮したブランドやオーガニック商品の包装に最適です。即日サンプルにも対応可能です。',
     },
@@ -259,7 +259,7 @@ export const packagingBoxesFAQs: FAQItem[] = [
       'ja': '化粧品箱のオーダーメイドにはどんなサイズがありますか？',
     },
     answer: {
-      'zh-hk': '智印雲提供多款化妝品盒尺寸，常見包括：小號（80×80×30mm，適合唇膏/眼影）、中號（120×120×50mm，適合護膚套裝）、大號（200×150×80mm，適合禮品套裝）。亦可按產品尺寸完全定制刀模。',
+      'zh-hk': '智印港提供多款化妝品盒尺寸，常見包括：小號（80×80×30mm，適合唇膏/眼影）、中號（120×120×50mm，適合護膚套裝）、大號（200×150×80mm，適合禮品套裝）。亦可按產品尺寸完全定制刀模。',
       'en': 'ZprintPro offers various cosmetic box sizes: small (80×80×30mm for lipsticks/eyeshadow), medium (120×120×50mm for skincare sets), and large (200×150×80mm for gift sets). Fully custom die-cut sizes are also available based on your product dimensions.',
       'ja': 'ZprintProでは様々な化粧品箱サイズを提供しています。小（80×80×30mm）、中（120×120×50mm）、大（200×150×80mm）のほか、商品サイズに応じた完全オーダーメイドも可能です。',
     },
@@ -295,7 +295,7 @@ export const packagingBoxesFAQs: FAQItem[] = [
       'ja': '日本への包装箱配送はありますか？',
     },
     answer: {
-      'zh-hk': '有。智印雲提供全港送貨服務，包括九龍、港島、新界及離島。包裝盒定制訂單滿HK$500免運費，未滿額可選擇港鐵站交收。大量訂單可安排貨車直送倉庫。',
+      'zh-hk': '有。智印港提供全港送貨服務，包括九龍、港島、新界及離島。包裝盒定制訂單滿HK$500免運費，未滿額可選擇港鐵站交收。大量訂單可安排貨車直送倉庫。',
       'en': 'Yes. ZprintPro delivers packaging box orders worldwide from our Asia facility. Orders over $99 qualify for free US shipping via DHL / FedEx. For bulk orders, pallet delivery to your warehouse can be arranged.',
       'ja': 'はい。ZprintProはDHL・FedExで日本全国に配送しています（通常2〜4日）。大量注文にも対応可能です。',
     },
@@ -310,7 +310,7 @@ export const postersFAQs: FAQItem[] = [
       'ja': 'ポスター印刷の最小ロットは何枚からですか？',
     },
     answer: {
-      'zh-hk': '智印雲提供A2海報印刷服務，最低10張起訂。無論是戶外防水海報、展覽海報或燙金海報，均可少批量定制，適合活動宣傳及零售推廣。詳情請參閱《海報印刷完全指南》。',
+      'zh-hk': '智印港提供A2海報印刷服務，最低10張起訂。無論是戶外防水海報、展覽海報或燙金海報，均可少批量定制，適合活動宣傳及零售推廣。詳情請參閱《海報印刷完全指南》。',
       'en': 'ZprintPro offers A2 poster printing with a minimum order of 10 copies. Whether outdoor waterproof posters, exhibition posters, or foil-stamped posters, we support small orders perfect for event promotion and retail advertising. See our Poster Printing Guide for details.',
       'ja': 'ZprintProではA2ポスター印刷に対応しており、最小ロットは10枚からです。屋外防水ポスター、展示会用ポスター、箔押しポスターなど、イベント宣伝や小売広告に最適です。詳しくは「ポスター印刷ガイド」をご覧ください。',
     },
@@ -358,7 +358,7 @@ export const postersFAQs: FAQItem[] = [
       'ja': 'ポスター素材にはどんな種類がありますか？',
     },
     answer: {
-      'zh-hk': '智印雲提供多款海報材質：光粉紙（室內展示，色彩鮮豔）、啞粉紙（減少反光，適合攝影）、防水PP紙（戶外短期）、帆布（戶外長期）、相紙（高解析度輸出）。展覽海報建議選用啞粉紙或相紙。',
+      'zh-hk': '智印港提供多款海報材質：光粉紙（室內展示，色彩鮮豔）、啞粉紙（減少反光，適合攝影）、防水PP紙（戶外短期）、帆布（戶外長期）、相紙（高解析度輸出）。展覽海報建議選用啞粉紙或相紙。',
       'en': 'ZprintPro offers various poster materials: glossy art paper (indoor, vibrant colors), matte art paper (reduced glare, photography-friendly), waterproof PP paper (short-term outdoor), canvas (long-term outdoor), and photo paper (high-resolution output). Exhibition posters are recommended in matte art paper or photo paper.',
       'ja': 'ZprintProでは光沢紙、マット紙、防水PP紙、キャンバス、写真用紙などのポスター素材を提供しています。展示会用ポスターにはマット紙または写真用紙が推奨されます。',
     },
@@ -370,7 +370,7 @@ export const postersFAQs: FAQItem[] = [
       'ja': 'バックドロップのオーダーメイドサイズはどこまで対応していますか？',
     },
     answer: {
-      'zh-hk': '智印雲提供Backdrop背景板定制服務，常見尺寸包括：2×2.5m、3×3m、4×2.5m。採用防水帆布或遮光布，適合展覽會、發布會及婚禮佈置。亦可按場地尺寸完全定制。',
+      'zh-hk': '智印港提供Backdrop背景板定制服務，常見尺寸包括：2×2.5m、3×3m、4×2.5m。採用防水帆布或遮光布，適合展覽會、發布會及婚禮佈置。亦可按場地尺寸完全定制。',
       'en': 'ZprintPro offers custom backdrop printing in common sizes: 2×2.5m, 3×3m, and 4×2.5m. Using waterproof canvas or blackout fabric, suitable for exhibitions, product launches, and wedding setups. Fully custom sizes based on venue dimensions are also available.',
       'ja': 'ZprintProでは2×2.5m、3×3m、4×2.5mなどのバックドロップを提供しています。防水キャンバスまたは遮光布を使用し、展示会や発表会、結婚式の演出に適しています。会場サイズに応じた完全オーダーメイドも可能です。',
     },
@@ -394,7 +394,7 @@ export const postersFAQs: FAQItem[] = [
       'ja': '日本へのポスター配送はありますか？',
     },
     answer: {
-      'zh-hk': '有。智印雲提供全港送貨服務，包括港島、九龍、新界及離島。海報印刷訂單滿HK$500免運費，Backdrop背景板等大件可安排貨車直送會場。未滿額可選擇港鐵站交收。',
+      'zh-hk': '有。智印港提供全港送貨服務，包括港島、九龍、新界及離島。海報印刷訂單滿HK$500免運費，Backdrop背景板等大件可安排貨車直送會場。未滿額可選擇港鐵站交收。',
       'en': 'Yes. ZprintPro delivers poster orders worldwide from our Asia facility. US orders over $99 qualify for free shipping via DHL / FedEx (2-4 business days). Large items like backdrop boards ship rolled in protective tubes directly to your venue.',
       'ja': 'はい。ZprintProはDHL・FedExで日本全国に配送しています（通常2〜4日）。バックドロップなどの大きな商品にも対応可能です。',
     },
@@ -409,7 +409,7 @@ export const paperBagsFAQs: FAQItem[] = [
       'ja': '紙袋印刷の最小ロットはいくつからですか？',
     },
     answer: {
-      'zh-hk': '智印雲提供環保紙袋、牛皮紙袋等定制服務，最低100個起訂。無論是禮品紙袋、品牌紙袋或餐飲外賣紙袋，均可小量定制。詳情請參閱《品牌包裝完全指南》。',
+      'zh-hk': '智印港提供環保紙袋、牛皮紙袋等定制服務，最低100個起訂。無論是禮品紙袋、品牌紙袋或餐飲外賣紙袋，均可小量定制。詳情請參閱《品牌包裝完全指南》。',
       'en': 'ZprintPro offers custom paper bag printing from 100 units minimum. Whether gift bags, branded shopping bags, or F&B takeaway bags, we support small orders. See our Brand Packaging Guide for details.',
       'ja': 'ZprintProでは100個からの紙袋印刷に対応しています。ギフト袋、ブランド紙袋、飲食テイクアウト袋など、小ロットから承ります。詳しくは「ブランド包装完全ガイド」をご覧ください。',
     },
@@ -433,7 +433,7 @@ export const paperBagsFAQs: FAQItem[] = [
       'ja': 'エコ紙袋にはどんな認証素材が使えますか？',
     },
     answer: {
-      'zh-hk': '智印雲提供FSC認證環保紙袋，材質包括再生牛皮紙、未漂白原木漿紙及大豆油墨印刷。適合注重可持續發展的品牌，可於袋身印製FSC標誌及環保標語。新界及九龍客戶可安排即日打樣。',
+      'zh-hk': '智印港提供FSC認證環保紙袋，材質包括再生牛皮紙、未漂白原木漿紙及大豆油墨印刷。適合注重可持續發展的品牌，可於袋身印製FSC標誌及環保標語。新界及九龍客戶可安排即日打樣。',
       'en': 'ZprintPro offers FSC-certified eco-friendly paper bags using recycled kraft paper, unbleached wood pulp, and soy-based inks. Ideal for sustainability-focused brands, with FSC logos and eco slogans printable on the bag. Same-day digital sampling available on request.',
       'ja': 'ZprintProではFSC認証のエコ紙袋を提供しており、再生クラフト紙、無漂白木材パルプ、大豆インクを使用しています。サステナビリティに注力したブランドに最適で、袋身にFSCロゴや環保スローガンを印刷できます。',
     },
@@ -457,7 +457,7 @@ export const paperBagsFAQs: FAQItem[] = [
       'ja': 'ギフト袋のオーダーメイドにはどんなサイズがありますか？',
     },
     answer: {
-      'zh-hk': '智印雲提供多款禮品紙袋尺寸：小號（180×230×80mm，適合飾品/化妝品）、中號（250×300×100mm，適合服裝/鞋履）、大號（320×400×120mm，適合禮品套裝）。亦可按產品尺寸完全定制。',
+      'zh-hk': '智印港提供多款禮品紙袋尺寸：小號（180×230×80mm，適合飾品/化妝品）、中號（250×300×100mm，適合服裝/鞋履）、大號（320×400×120mm，適合禮品套裝）。亦可按產品尺寸完全定制。',
       'en': 'ZprintPro offers various gift bag sizes: small (180×230×80mm for accessories/cosmetics), medium (250×300×100mm for apparel/footwear), and large (320×400×120mm for gift sets). Fully custom sizes based on your products are also available.',
       'ja': 'ZprintProでは小（180×230×80mm）、中（250×300×100mm）、大（320×400×120mm）などのギフト袋サイズを提供しています。商品サイズに応じた完全オーダーメイドも可能です。',
     },
@@ -481,7 +481,7 @@ export const paperBagsFAQs: FAQItem[] = [
       'ja': '紙袋の持ち手素材の選び方を教えてください。',
     },
     answer: {
-      'zh-hk': '智印雲提供多款紙袋手挽：棉繩手挽（堅固耐用，適合重載）、扁紙手挽（經濟實惠，適合輕量商品）、緞帶手挽（高級感強，適合禮品袋）。選擇時需考慮載重量及品牌形象。',
+      'zh-hk': '智印港提供多款紙袋手挽：棉繩手挽（堅固耐用，適合重載）、扁紙手挽（經濟實惠，適合輕量商品）、緞帶手挽（高級感強，適合禮品袋）。選擇時需考慮載重量及品牌形象。',
       'en': 'ZprintPro offers various paper bag handles: cotton rope (durable, heavy loads), flat paper (economical, light items), and satin ribbon (luxury feel, gift bags). Consider load weight and brand image when choosing.',
       'ja': 'ZprintProでは綿紐持ち手（頑丈で重い荷物向け）、平紐（経済的で軽い商品向け）、サテンリボン（高級感がありギフト向け）などの紙袋持ち手を提供しています。',
     },
@@ -493,7 +493,7 @@ export const paperBagsFAQs: FAQItem[] = [
       'ja': '日本への紙袋配送はありますか？',
     },
     answer: {
-      'zh-hk': '有。智印雲提供全港送貨服務，包括九龍、港島、新界及離島。紙袋印刷訂單滿HK$500免運費，未滿額可選擇港鐵站交收。大量訂單可安排貨車直送店舖或倉庫。',
+      'zh-hk': '有。智印港提供全港送貨服務，包括九龍、港島、新界及離島。紙袋印刷訂單滿HK$500免運費，未滿額可選擇港鐵站交收。大量訂單可安排貨車直送店舖或倉庫。',
       'en': 'Yes. ZprintPro delivers paper bag orders worldwide from our Asia facility. US orders over $99 qualify for free shipping via DHL / FedEx. For bulk orders, pallet delivery to your store or warehouse can be arranged.',
       'ja': 'はい。ZprintProは日本全国へDHL・FedExで配送しています（通常2〜4日でお届け）。大量注文にも対応可能です。送料は数量と配送先に応じてお見積もりいたします。',
     },
@@ -511,7 +511,7 @@ export const generalProductFAQs: FAQItem[] = [
       'ja': '印刷の最小注文数はいくつですか？',
     },
     answer: {
-      'zh-hk': '智印雲大部分產品最低 50–100 個 / 本 / 張起訂，具體以產品頁報價為準。即日小批量急件可低至 10 張起。大量訂單享階梯折扣，請聯絡客服獲取專屬報價。',
+      'zh-hk': '智印港大部分產品最低 50–100 個 / 本 / 張起訂，具體以產品頁報價為準。即日小批量急件可低至 10 張起。大量訂單享階梯折扣，請聯絡客服獲取專屬報價。',
       'en': 'Most ZprintPro products start from 50–100 units/copies. Specific minimums are shown on each product page. Same-day small-batch rush orders are available from 10 copies. Bulk orders enjoy tiered discounts—contact us for a custom quote.',
       'ja': 'ZprintPro のほとんどの商品は 50〜100 個/部/枚からの最小注文です。詳細は各商品ページをご覧ください。即日少量急ぎは10枚から対応。大量注文は段階割引あり、お気軽にお問い合わせください。',
     },
@@ -535,7 +535,7 @@ export const generalProductFAQs: FAQItem[] = [
       'ja': '日本への配送サービスはありますか？',
     },
     answer: {
-      'zh-hk': '智印雲提供全港送貨服務，包括九龍、港島、新界及離島。訂單滿 HK$500 免運費，未滿額可選擇香港 MTR 站交收（觀塘、旺角、銅鑼灣、尖沙咀等 — 香港服務點，非生產地）。海外市場支援 DHL / FedEx 全球直送，3-5 個工作天到美國、2-4 天到日本。',
+      'zh-hk': '智印港提供全港送貨服務，包括九龍、港島、新界及離島。訂單滿 HK$500 免運費，未滿額可選擇香港 MTR 站交收（觀塘、旺角、銅鑼灣、尖沙咀等 — 香港服務點，非生產地）。海外市場支援 DHL / FedEx 全球直送，3-5 個工作天到美國、2-4 天到日本。',
       'en': 'ZprintPro delivers worldwide from our Asia production facility. US orders ship via DHL / FedEx in 2-4 business days, with free shipping on orders over $99. Japan orders arrive in 2-4 days.',
       'ja': 'はい。ZprintPro は DHL / FedEx で日本全国に配送しています（通常 2〜4 日）。米国など海外市場へも 3〜5 日でお届け可能です。送料は数量と配送先に応じてお見積もりいたします。',
     },
@@ -559,7 +559,7 @@ export const generalProductFAQs: FAQItem[] = [
       'ja': '支払い方法は何が利用できますか？',
     },
     answer: {
-      'zh-hk': '智印雲支援多幣種結算（港幣 / 美元 / 日圓 / 人民幣），付款方式涵蓋銀行電匯、微信、支付寶、PayPal。企業客戶可申請 NET 30 月結賬期。',
+      'zh-hk': '智印港支援多幣種結算（港幣 / 美元 / 日圓 / 人民幣），付款方式涵蓋銀行電匯、微信、支付寶、PayPal。企業客戶可申請 NET 30 月結賬期。',
       'en': 'ZprintPro supports multi-currency settlement (HKD / USD / JPY / CNY) via bank wire, WeChat Pay, Alipay, and PayPal. Corporate accounts can apply for NET 30 monthly billing.',
       'ja': 'ZprintPro はマルチ通貨決済対応（HKD / USD / JPY / CNY）、銀行振込・微信支付・支付宝・PayPal がご利用可能。法人顧客は NET 30 月締請求対応可。',
     },
@@ -571,7 +571,7 @@ export const generalProductFAQs: FAQItem[] = [
       'ja': '紙素材に環境認証はありますか？',
     },
     answer: {
-      'zh-hk': '智印雲所有紙張均通過 FSC 森林管理委員會認證，可持續採購。環保系列額外採用再生紙 / 大豆油墨，可完全降解，無毒無味。適合注重 ESG 形象的企業、社會企業及 NGO。',
+      'zh-hk': '智印港所有紙張均通過 FSC 森林管理委員會認證，可持續採購。環保系列額外採用再生紙 / 大豆油墨，可完全降解，無毒無味。適合注重 ESG 形象的企業、社會企業及 NGO。',
       'en': 'All ZprintPro paper is FSC (Forest Stewardship Council) certified for sustainable sourcing. Our eco line additionally uses recycled paper and soy-based inks—fully biodegradable and non-toxic. Ideal for ESG-focused corporates, social enterprises, and NGOs.',
       'ja': 'ZprintPro の紙材は全て FSC（森林管理協議会）認証を取得。エコシリーズは再生紙・大豆インクを採用、完全生分解性・無毒無臭。ESG 重視の企業・社会企業・NGO に最適。',
     },
@@ -595,7 +595,7 @@ export const generalProductFAQs: FAQItem[] = [
       'ja': '仕上がりに不満があれば再印刷できますか？',
     },
     answer: {
-      'zh-hk': '智印雲提供「不滿意免費重印」承諾。若成品顏色 / 裁切 / 裝訂與確認樣稿不符，我們承擔重印費用。請於收貨 7 個工作天內提交問題照片與訂單號碼，客服 24 小時內回覆處理方案。',
+      'zh-hk': '智印港提供「不滿意免費重印」承諾。若成品顏色 / 裁切 / 裝訂與確認樣稿不符，我們承擔重印費用。請於收貨 7 個工作天內提交問題照片與訂單號碼，客服 24 小時內回覆處理方案。',
       'en': 'ZprintPro offers a "Free Reprint If Unsatisfied" guarantee. If color, cutting, or binding does not match the approved proof, we cover reprinting costs. Please submit issue photos and order number within 7 business days of receipt—our team responds within 24 hours.',
       'ja': 'ZprintPro は「ご不満なら無料再印刷」保証を提供。色・裁断・製本が承認サンプルと相違する場合、再印刷費用は当社負担。商品受領後 7 営業日以内に問題写真と注文番号をご提出ください、24 時間以内に対応。',
     },

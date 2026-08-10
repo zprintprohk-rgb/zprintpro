@@ -12,8 +12,8 @@ interface ContactPageProps {
 
 const translations = {
   "zh-hk": {
-    title: "聯絡我們 · 免費獲取報價 | 智印雲 ZprintPro",
-    description: "聯絡智印雲專業印刷團隊，填寫表單獲取免費報價。電話：+86 198 8085 1334 / WhatsApp +8619880851334 (24小時即時回覆)",
+    title: "聯絡我們 · 免費獲取報價 | 智印港 ZprintPro",
+    description: "聯絡智印港專業印刷團隊，填寫表單獲取免費報價。電話：+86 198 8085 1334 / WhatsApp +8619880851334 (24小時即時回覆)",
     h1: "聯絡我們 · 免費獲取報價",
     subtitle: "填寫表單或 WhatsApp 聯繫，24小時內回覆",
     quoteTitle: "免費獲取報價",
@@ -22,7 +22,7 @@ const translations = {
     promiseNoSpam: "無騷擾跟進",
     promiseVolume: "量大價優",
     name: "唐先生",
-    role: "銷售經理｜智印雲",
+    role: "銷售經理｜智印港",
     phone: "電話 / WhatsApp",
     email: "電郵",
     website: "官網",
@@ -49,7 +49,7 @@ const translations = {
     altPayTitle: "如不便在線付款?",
     altPayDesc: "海外客戶可使用支付寶閃速收款跨境匯款,9 大跨境匯款 APP 支援",
     altPayCta: "查看所有付款方式",
-    altPayQrCaption: "唐运提 (智印雲法人) 官方收款碼",
+    altPayQrCaption: "唐运提 (智印港法人) 官方收款碼",
   },
   en: {
     title: "Free Custom Printing Quote · 30s Response | ZprintPro USA / UK / AU",
@@ -92,7 +92,7 @@ const translations = {
     altPayQrCaption: "Official QR by Mr. Tang (founder)",
   },
   ja: {
-    title: "無料お見積もり · 30秒返信 | 智印雲 ZprintPro",
+    title: "無料お見積もり · 30秒返信 | 智印港 ZprintPro",
     description: "印刷の無料お見積もりはZprintProへ。ステッカー、包装箱、名刺、書籍、ポスター。72時間グローバル配送。WhatsAppで今すぐお問い合わせください。",
     h1: "無料お見積もり",
     subtitle: "フォームまたはWhatsAppでお問い合わせ、24時間以内に返信",

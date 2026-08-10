@@ -29,7 +29,7 @@ const translations = {
     enterpriseDesc: '專屬客戶經理，專享優惠價格',
     contactUs: '聯繫我們 →',
     qrScan: '掃碼即時查詢',
-    trustBadge: '已有 15,000+ 客戶選擇智印雲',
+    trustBadge: '已有 15,000+ 客戶選擇智印港',
     cantFind: '找不到想要的產品?',
     quickQuote: '快速詢價',
     from: '起',

@@ -10,7 +10,7 @@ interface ProductWhyChooseUsProps {
 
 const translations = {
   'zh-hk': {
-    title: '為何選擇智印雲？',
+    title: '為何選擇智印港？',
     features: [
       {
         icon: Factory,

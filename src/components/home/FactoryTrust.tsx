@@ -11,7 +11,7 @@ const TEXTS = {
     title: '實力工廠 · 自家廠房實拍',
     subtitle: '柯式印刷機 × 商標輪轉機 · ISO 9001 品質管理 · 15+ 年印刷經驗',
     caption1: '柯式印刷機組 — 宣傳單張 / 包裝盒 / 畫冊專色量產',
-    alt1: '智印雲工廠柯式印刷機實拍',
+    alt1: '智印港工廠柯式印刷機實拍',
   },
   en: {
     title: 'Real Factory · Our Own Production Facility',

@@ -26,19 +26,19 @@ export function getWebLogoAlt(locale: Locale): string {
 // 網站配置
 export const siteConfig = {
   // 2026-06-17 P0: 品牌切割 — 主品牌剥离 "ZprintPro" 字串
-  // 原问题: name = "智印雲 ZprintPro", alternateName 直接含 "ZprintPro" / "ZprintPro Global"
+  // 原问题: name = "智印港 ZprintPro", alternateName 直接含 "ZprintPro" / "ZprintPro Global"
   //   → Google Knowledge Graph 把 zprintpro.com 和 z-printpro.com 共享同一品牌实体
-  //   → 智印港和智印雲互相印证"是同一个东西", 整体被算法降权, 展示量长期 10-20
-  // 修法: name 改成"智印雲" (主品牌, 让 Google 识别为独立实体)
+  //   → 智印港和智印港互相印证"是同一个东西", 整体被算法降权, 展示量长期 10-20
+  // 修法: name 改成"智印港" (主品牌, 让 Google 识别为独立实体)
   //   alternateName 保留 "ZprintPro" (用户实际品牌) + 加 "ZprintPro HK" 区分地理位置
   //   social 全部删 (用户没 FB/IG/LinkedIn 账号, 假链接是 NAP 污染源, GBP 是更优先的实体信号)
-  name: '智印雲',
+  name: '智印港',
   // 2026-07-22 v6: displayName = zh-hk 用户可见品牌后缀 (品牌语境, §13.10 NAP 脱钩)
-  // 与 siteConfig.name (schema/NAP 法律名 '智印雲') 分离: title/H1/og:title 用 displayName
+  // 与 siteConfig.name (schema/NAP 法律名 '智印港') 分离: title/H1/og:title 用 displayName
   // §13.13 三 Locale 鐵律: en/ja 用纯英文 'ZprintPro', 不带中文
   displayName: '智印港',
   // 2026-07-21: 301 合体后改双品牌分层,智印港为 zh-hk 合法品牌词(AGENTS.md §1 v2)
-  alternateName: ['ZprintPro', 'ZprintPro HK', '智印雲印刷', '智印港'],
+  alternateName: ['ZprintPro', 'ZprintPro HK', '智印港印刷', '智印港'],
   url: 'https://zprintpro.com',
   // 2026-07-21 v4 (K3 拍板): Schema/GSC logo 按 locale 切 — en/ja 用 whatsapp.png,zh-hk 用 LOGONEW-02.png
   // 函数式返回,见 getGscLogoUrl() helper below
@@ -98,8 +98,8 @@ export interface SiteNAP {
 export function getSiteNAP(locale: Locale): SiteNAP {
   if (locale === 'zh-hk') {
     return {
-      name: '智印雲',
-      alternateName: ['ZprintPro', 'ZprintPro HK', '智印雲(香港)', '智印雲印刷', '智印港'],
+      name: '智印港',
+      alternateName: ['ZprintPro', 'ZprintPro HK', '智印港(香港)', '智印港印刷', '智印港'],
       phone: '+86 198 8085 1334',
       email: 'zprintpro@outlook.com',
       address: {
@@ -124,7 +124,7 @@ export function getSiteNAP(locale: Locale): SiteNAP {
   }
   if (locale === 'ja') {
     return {
-      name: '智印雲',
+      name: '智印港',
       alternateName: ['ZprintPro', '深セン印刷'],
       phone: '+86 198 8085 1334',
       email: 'zprintpro@outlook.com',
@@ -708,7 +708,7 @@ export function generateCategoryMetadata(locale: Locale, categorySlug: string = 
 
   // 分类标题按市场区分
   // 2026-06-10 Phase B 修复 P0-2：en/ja 分支末尾使用纯英文品牌 'ZprintPro'（无中文），
-  // 2026-07-22 v6: zh-hk 用 displayName '智印港' (用户可见品牌词), 不是 schema.name '智印雲' (NAP 法律名)
+  // 2026-07-22 v6: zh-hk 用 displayName '智印港' (用户可见品牌词), 不是 schema.name '智印港' (NAP 法律名)
   // 避免 layout 模板的 '| ZprintPro' 再次叠加后形成 "...| 智印港 ZprintPro | ZprintPro"。
   // 2026-06-10：layout template 改为 '%s'（见 layout.tsx），此处由子页统一控制品牌后缀。
   const brandSuffix = locale === 'zh-hk' ? siteConfig.displayName : 'ZprintPro';
@@ -783,7 +783,7 @@ export function generateProductMetadata(
   
   // Title: 50-60字符，含核心關鍵詞
   // 2026-06-10 Phase B 修复 P0-2：en/ja 末尾使用纯英文 'ZprintPro'（无中文），
-  // 2026-07-22 v6: zh-hk 用 displayName '智印港' (用户可见品牌词), 不是 schema.name '智印雲' (NAP 法律名)
+  // 2026-07-22 v6: zh-hk 用 displayName '智印港' (用户可见品牌词), 不是 schema.name '智印港' (NAP 法律名)
   // 避免 layout 模板的 '| ZprintPro' 再次叠加后形成 "...| 智印港 ZprintPro | ZprintPro"。
   // 2026-06-10：layout template 改为 '%s'（见 layout.tsx），此处由子页统一控制品牌后缀。
   const suffix = locale === 'zh-hk' ? '印刷' : locale === 'en' ? 'Printing' : '印刷';

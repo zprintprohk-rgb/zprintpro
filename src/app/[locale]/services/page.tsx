@@ -22,9 +22,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const meta: Record<string, { title: string; description: string }> = {
     'zh-hk': {
-      title: '印刷服務 | 貼紙・宣傳單張・包裝盒・紙袋訂製 | 智印雲 ZprintPro',
+      title: '印刷服務 | 貼紙・宣傳單張・包裝盒・紙袋訂製 | 智印港 ZprintPro',
       description:
-        '智印雲提供香港一站式印刷服務：貼紙、宣傳單張、包裝盒、紙袋、海報、利是封等。30秒AI報價，免費設計，100起訂，72小時出貨，順豐直送港九新界。立即WhatsApp報價！',
+        '智印港提供香港一站式印刷服務：貼紙、宣傳單張、包裝盒、紙袋、海報、利是封等。30秒AI報價，免費設計，100起訂，72小時出貨，順豐直送港九新界。立即WhatsApp報價！',
     },
     en: {
       title: 'Printing Services: Stickers, Flyers, Packaging | ZprintPro',

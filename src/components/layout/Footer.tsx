@@ -22,7 +22,7 @@ interface FooterProps {
 
 const translations = {
   'zh-hk': {
-    companyDesc: '智印雲 ZprintPro 是全球智能印刷定制平台，提供AI智能報價、在線文件上傳、安全結算。支援銀行電匯、微信、支付寶、PayPal。從貼紙到包裝，30秒報價，72小時全球交付。',
+    companyDesc: '智印港 ZprintPro 是全球智能印刷定制平台，提供AI智能報價、在線文件上傳、安全結算。支援銀行電匯、微信、支付寶、PayPal。從貼紙到包裝，30秒報價，72小時全球交付。',
     serviceArea: '全球跨境印刷服務',
     phone: '+86 198 8085 1334',
     email: 'zprintpro@outlook.com',
@@ -77,7 +77,7 @@ const translations = {
     ],
     followUs: '關注我們',
     friendLinks: '友情連結',
-    copyright: '© 2026 智印雲 ZprintPro. 保留所有權利。',
+    copyright: '© 2026 智印港 ZprintPro. 保留所有權利。',
   },
   en: {
     companyDesc: 'ZprintPro is a global smart printing platform offering AI instant quotes, online file upload, and secure settlement via bank wire, WeChat Pay, Alipay, and PayPal. From stickers to packaging, get a quote in 30 seconds, delivered globally in 72 hours.',

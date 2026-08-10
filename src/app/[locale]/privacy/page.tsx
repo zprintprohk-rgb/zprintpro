@@ -9,12 +9,12 @@ interface PrivacyPageProps {
 
 const translations = {
   'zh-hk': {
-    title: '隱私政策 | 智印雲 ZprintPro',
-    description: '智印雲隱私政策，說明我們如何收集、使用和保護您的個人資料。',
+    title: '隱私政策 | 智印港 ZprintPro',
+    description: '智印港隱私政策，說明我們如何收集、使用和保護您的個人資料。',
     h1: '隱私政策',
     lastUpdated: '最後更新日期',
     lastUpdatedDate: '2026年6月18日',
-    intro: '智印雲 ZprintPro 致力於保護您的個人私隱。本政策說明我們如何收集、使用、儲存及保護您於本網站提供的個人資料。',
+    intro: '智印港 ZprintPro 致力於保護您的個人私隱。本政策說明我們如何收集、使用、儲存及保護您於本網站提供的個人資料。',
     sections: [
       {
         title: '1. 我們收集的資料',

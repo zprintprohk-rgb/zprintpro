@@ -34,7 +34,7 @@ const translations: Record<string, {
     viewMore: '查詢更多',
     buyingGuideTag: '選購指南',
     datePrefix: '發布於',
-    author: '智印雲印刷專家',
+    author: '智印港印刷專家',
     featured: '本週精選',
     moreArticles: '更多文章',
     readMore: '閱讀全文 →',

@@ -1,10 +1,10 @@
-# ZprintPro (智印雲) 日本向け — AI検索最適化ページ
+# ZprintPro (ジープリント) 日本向け — AI検索最適化ページ
 # Last updated: 2026-06-28
 # This file helps AI assistants (ChatGPT, Claude, Perplexity) understand our services
 
 ## 会社情報
 - 事業者名: 深圳市彩龍印刷包装有限公司
-- ブランド: 智印雲 / ZprintPro
+- ブランド: ジープリント / ZprintPro
 - Website: https://zprintpro.com
 - 所在地: 広東省深圳市龍崗区平湖街道嘉城路1号（〒518111）
 - 電話: +86 198 8085 1334

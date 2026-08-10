@@ -20,7 +20,7 @@ const LEGAL_ENTITY = {
   addressTrad: '中國廣東省深圳市龍崗區平湖街道嘉城路1號 518111',
   phone: '+86 198 8085 1334',
   email: 'zprintpro@outlook.com',
-  brand: '智印雲 / ZprintPro',
+  brand: '智印港 / ZprintPro',
   establishedYear: 2012,
   // For schema.org — international format
   phoneRaw: '+8619880851334',
@@ -32,15 +32,15 @@ const LEGAL_ENTITY = {
 
 const translations = {
   'zh-hk': {
-    title: '經營者資訊披露 | 智印雲 ZprintPro',
+    title: '經營者資訊披露 | 智印港 ZprintPro',
     titleShort: '經營者資訊披露',
     description:
-      '智印雲 ZprintPro 經營者資訊披露：包括公司資料、商品銷售條款及聯絡方式。跨境電商，全球配送。',
+      '智印港 ZprintPro 經營者資訊披露：包括公司資料、商品銷售條款及聯絡方式。跨境電商，全球配送。',
     h1: '經營者資訊披露',
     lastUpdated: '最後更新日期',
     sectionCrossBorder: '關於經營者',
     crossBorderBody:
-      '智印雲 ZprintPro 為於中華人民共和國深圳市註冊成立之國際印刷服務商。本網站以跨境電商形式銷售印刷產品至全球多個市場，包括香港、中國內地、日本、美國、英國、澳大利亞等地。我們於香港並無實體門市或營業所，所有交易均透過本網站及國際速遞完成。本頁面根據適用之消費者保護法規要求，向客戶披露經營者資訊。',
+      '智印港 ZprintPro 為於中華人民共和國深圳市註冊成立之國際印刷服務商。本網站以跨境電商形式銷售印刷產品至全球多個市場，包括香港、中國內地、日本、美國、英國、澳大利亞等地。我們於香港並無實體門市或營業所，所有交易均透過本網站及國際速遞完成。本頁面根據適用之消費者保護法規要求，向客戶披露經營者資訊。',
     sectionSeller: '經營者資訊',
     sectionTransaction: '商品銷售條款',
     sectionCustoms: '關稅及進口稅費',
@@ -155,12 +155,12 @@ const translations = {
     title: '特定商取引法に基づく表記 | ZprintPro',
     titleShort: '特定商取引法に基づく表記',
     description:
-      'ZprintPro(智印雲)の販売事業者情報・商品販売条件・特定商取引法に基づく表記。日本市場向けの法定開示事項。',
+      'ZprintPro(智印港)の販売事業者情報・商品販売条件・特定商取引法に基づく表記。日本市場向けの法定開示事項。',
     h1: '特定商取引法に基づく表記',
     lastUpdated: '最終更新日',
     sectionCrossBorder: '事業者について',
     crossBorderBody:
-      'ZprintPro(智印雲)は、中華人民共和国深圳市に本社を置く国際印刷サービス事業者です。日本市場向けには越境EC(Eコマース)形式で商品を販売しており、日本国内には店舗・営業所・支店はございません。本ページは「特定商取引に関する法律」(特定商取引法)第3条および同法施行規則第2条に基づき、日本消費者の皆様に販売事業者を明示するものです。',
+      'ZprintPro(智印港)は、中華人民共和国深圳市に本社を置く国際印刷サービス事業者です。日本市場向けには越境EC(Eコマース)形式で商品を販売しており、日本国内には店舗・営業所・支店はございません。本ページは「特定商取引に関する法律」(特定商取引法)第3条および同法施行規則第2条に基づき、日本消費者の皆様に販売事業者を明示するものです。',
     sectionSeller: '販売事業者情報',
     sectionTransaction: '商品販売条件',
     sectionCustoms: '関税・輸入消費税について',

@@ -8,8 +8,8 @@ interface HelpCenterPageProps {
 
 const translations = {
   'zh-hk': {
-    title: '幫助中心 | 智印雲 ZprintPro',
-    description: '智印雲印刷服務幫助中心，包括落單須知、做稿須知、送貨須知、排版指引、色彩指引及其他注意事項。',
+    title: '幫助中心 | 智印港 ZprintPro',
+    description: '智印港印刷服務幫助中心，包括落單須知、做稿須知、送貨須知、排版指引、色彩指引及其他注意事項。',
   },
   en: {
     title: 'Help Center | ZprintPro',
