@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { Locale, siteConfig, generateLocalBusinessSchema } from '@/lib/seo';
+import { Locale, siteConfig, getBrandName, generateLocalBusinessSchema } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
 
 export function generateStaticParams() {
@@ -250,7 +250,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
     url: `${siteConfig.url}/${locale}/about/`,
     mainEntity: {
       '@type': 'Organization',
-      name: siteConfig.name,
+      name: getBrandName(locale),
       url: siteConfig.url,
       logo: siteConfig.logo,
       foundingDate: '2012',
@@ -260,19 +260,19 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
           '@type': 'Person',
           name: locale === 'zh-hk' ? '創始人' : locale === 'ja' ? '創業者' : 'Founder',
           jobTitle: locale === 'zh-hk' ? '創始人兼首席執行官' : locale === 'ja' ? '創業者兼CEO' : 'Founder & CEO',
-          worksFor: { '@type': 'Organization', name: siteConfig.name },
+          worksFor: { '@type': 'Organization', name: getBrandName(locale) },
         },
         {
           '@type': 'Person',
           name: locale === 'zh-hk' ? '首席印前工程師' : locale === 'ja' ? '主任印前エンジニア' : 'Head of Prepress',
           jobTitle: locale === 'zh-hk' ? '印前工程總監' : locale === 'ja' ? '印前工程ディレクター' : 'Prepress Engineering Director',
-          worksFor: { '@type': 'Organization', name: siteConfig.name },
+          worksFor: { '@type': 'Organization', name: getBrandName(locale) },
         },
         {
           '@type': 'Person',
           name: locale === 'zh-hk' ? '客戶服務總監' : locale === 'ja' ? 'カスタマーサービスディレクター' : 'Customer Service Director',
           jobTitle: locale === 'zh-hk' ? '客戶成功總監' : locale === 'ja' ? '顧客成功ディレクター' : 'Director of Customer Success',
-          worksFor: { '@type': 'Organization', name: siteConfig.name },
+          worksFor: { '@type': 'Organization', name: getBrandName(locale) },
         },
       ],
       hasOfferCatalog: {

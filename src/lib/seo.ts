@@ -138,8 +138,8 @@ export function getSiteNAP(locale: Locale): SiteNAP {
   }
   if (locale === 'ja') {
     return {
-      name: '智印港',
-      alternateName: ['ZprintPro', '深セン印刷'],
+      name: 'ジープリント',
+      alternateName: ['ZprintPro', 'ジープリント', '深セン印刷'],
       phone: '+86 198 8085 1334',
       email: 'zprintpro@outlook.com',
       address: {
@@ -340,25 +340,6 @@ const categorySeoData: Record<string, {
   keywords: { 'zh-hk': string; en: string; ja: string };
   descriptions: { 'zh-hk': string; en: string; ja: string };
 }> = {
-  'business-cards': {
-  titles: {
-      'zh-hk': '咭片印刷 香港 | 智印港 ZprintPro — 燙金咭片 / UV咭片 / 圓角咭片 高檔定制',
-      // 2026-07-09 美国市场优化 v5: 加 Free Shipping + Same Day + 100 MOQ sharp hook
-      en: 'Business Cards Free Shipping · 100 MOQ Same Day Foil Stamped | ZprintPro',
-      ja: '名刺印刷 おすすめ | ZprintPro — 箔押し / UV / 丸角 / プレミアム名刺',
-    },
-
-    keywords: {
-      'zh-hk': '名片印刷,香港名片,商務名片,咭片印刷,卡片印刷,名片設計,急印名片,即日名片,公司名片,高級名片',
-      en: 'business card printing,custom business cards,name card printing,premium business cards,same day business cards,company cards,design business cards online,cheap business cards fast,foil business cards,embossed business cards,free shipping business cards,USA business cards,small business cards,rounded corner cards,luxury business cards',
-      ja: '名刺印刷,名刺作成,オーダーメイド名刺,高級名刺,即日名刺,急ぎ名刺,会社名刺,名刺デザイン,箔押し名刺,厚紙名刺',
-    },
-    descriptions: {
-      'zh-hk': '香港專業名片印刷，100張起訂，最快24小時交貨。支持燙金、UV、凹凸、圓角等特殊工藝，免費設計模板。智印港ISO9001認證，品質保證。',
-      en: 'Custom business card printing with free shipping over $99 to USA. Premium paper stocks, foil stamping, spot UV, embossing. Free design templates. Same day 24h rush available. ISO 9001 certified. 100 cards minimum. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
-      ja: 'プロの名刺印刷サービス。100枚から、最短24時間でお届け。箔押し・UV・エンボス・丸角加工に対応。無料デザインテンプレート。ISO9001認証取得。全国配送無料。',
-    },
-  },
   'stickers': {
     // 2026-07-09 PM+UX+SEO 美国市场优化 v5: 移除 "Asia factory direct" 反效果词, 加 5 大美国 sharp hook
     // (Free Shipping / Free Proof / No Minimum / Made for US / 5000+ customers)
@@ -695,11 +676,6 @@ export const CATEGORY_INDUSTRIES: Record<string, {
     'zh-hk': ['中學大學畢業紀念冊', '補習社皇牌教材', '學校批量定制', '家長會活動', '獎狀證書'],
     en: ['Graduation yearbooks (secondary & university)', 'Tutoring textbook series', 'School bulk printing', 'Parent-teacher events', 'Award certificates'],
     ja: ['卒業記念アルバム（中高大）', '塾・予備校教材', '学校一括印刷', '保護者会イベント', '賞状・証明書'],
-  },
-  'business-cards': {
-    'zh-hk': ['商務人士', '房地產代理', '專業服務業'],
-    en: ['Business professionals', 'Real estate agents', 'Professional services'],
-    ja: ['ビジネスパーソン', '不動産エージェント', 'プロフェッショナル'],
   },
   'japan-doujin': {
     'zh-hk': ['同人誌創作', '動漫周邊', 'VTuber 推し活', 'Comiket 委託', '原創 IP 周邊'],

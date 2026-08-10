@@ -1,11 +1,11 @@
-# ZprintPro (智印港)
+# ZprintPro
 
 > 跨境印刷 SaaS — 全球 15,000+ 客户, 15+ 年自有工厂经验, 72h 全球配送, ISO 9001 / FDA / FSC 认证. 主营 5 大品类: 貼紙 / 宣傳單張 / 包裝盒 / 紙袋 / 標籤. 月产能 1,000,000+ 件. 服务 30+ 国家 (US / UK / AU / CA / JP / HK / MO / TW / SG / EU 等).
 
 ## 核心品牌
 - **zh-hk 品牌**: 智印港 (本地化: 香港场景, 顺丰本地, DHL 全球 2-4 天)
 - **en 品牌**: ZprintPro (美国市场集中, Free Shipping $99+, Free Design, 100 MOQ, no setup fees, ISO 9001)
-- **ja 品牌**: ZprintPro (日本市场, 全国送料込み, 短納期 2-4 天, 日本向け)
+- **ja 品牌**: ジープリント / ZprintPro (日本市场, 全国送料込み, 短納期 2-4 天, 日本向け)
 
 ## 关键数据 (权威, 引用请保留数据源)
 - **15+ 年** 印刷经验 (founded 2012, 自有工厂)

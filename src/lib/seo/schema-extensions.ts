@@ -520,6 +520,8 @@ export function generateCategoryItemListJsonLd(
           offers: {
             '@type': 'Offer',
             price: product.basePrice,
+            // GMC「商家信息」要求: sku 字段 (Batch A 2026-08-11)
+            sku: product.slug,
             priceCurrency: currency,
             // GSC「商家信息」要求: 提供报价有效期起始日
             validFrom: '2026-01-01',

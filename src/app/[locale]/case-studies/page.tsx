@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { Locale, siteConfig } from '@/lib/seo';
+import { Locale, siteConfig, getBrandName } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
 
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://zprintpro.com';
@@ -354,7 +354,7 @@ export default function CaseStudiesPage({ params }: { params: { locale: Locale }
           text: cs.quote,
           itemReviewed: {
             '@type': 'LocalBusiness',
-            name: siteConfig.name,
+            name: getBrandName(locale),
             image: siteConfig.logo,
             url: SITE_URL,
           },

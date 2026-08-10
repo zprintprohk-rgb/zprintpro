@@ -819,6 +819,69 @@ if (locale === 'zh-hk') {
 
 **应用范围**：每次 en 美国类目/产品/Hero/H1/description 改动前必跑 30 分钟模板 → commit message 引用模板结论。
 
+## §0.20 4 条教训固化 (2026-08-10 K3 拍板, 跨项目 P0 · Batch A 8/11 写入)
+
+### §0.20.1 layout.tsx + seo.ts 静态 metadata 是 §0.15 升级盲区
+
+**教训**: 任何品牌/schema 改动必须同时检查 `layout.tsx` metadata + `generateMetadata` 静态段, grep `siteConfig.name` + `hardcoded 'ZprintPro'` 全树清零才算完。
+
+**事故背书 (2026-08-10)**: cefe895 commit 第三次 push 就是补这个漏。c48181b 改了 49 files 514 处 智印雲 → 智印港 (文本层 PASS) 后, curl 5 关键页面验证发现 `src/app/[locale]/layout.tsx` L43 hardcoded `siteName: 'ZprintPro'` 导致 3 locale 全 og:site_name = ZprintPro (结构层漏); cefe895 改造 layout.tsx 静态 metadata → `generateMetadata` + `getLocaleBrand()` helper; 055d87e 改 src/lib/seo.ts 9 处 hardcoded ternary + 加 `getBrandName()` helper (schema 层漏)。
+
+**应用范围**: 任何"主品牌 + locale 分层 + NAP 法律名"并存架构; 任何 cron auto / 手动 / 紧急 push 改 src/lib/seo.ts / src/app/[locale]/layout.tsx。
+
+**判断 SOP** (任何品牌/schema 改造 commit 实施前自查):
+1. grep `siteConfig.name` 全 src/ 树
+2. grep `hardcoded 'ZprintPro'` 全 src/ 树
+3. grep ternary 模式
+4. 检查 layout.tsx 静态 metadata vs generateMetadata
+5. 5/5 全部清零才报 PASS
+
+### §0.20.2 retrofit 必 3 件齐: blog-data JSON + blog-posts meta + sitemap/验证 JSON
+
+**教训**: 任何 retrofit 必 3 件齐, 缺一即 PARTIAL 不报 PASS。
+
+**事故背书**: 8/9 baby-product retrofit 0d46a4c 3 件齐 → v8_ready 100% + 5 步转化验证 verified; 8/10 cmyk-guide retrofit 8664488 同样 3 件齐 → v8_ready 100% + 5 块元素全 True 3 locale。
+
+**应用范围**: 任何 retrofit / 数据迁移 / schema 迁移; 任何 cron auto / 手动 / 紧急 push 改 src/data/blog-data/ + src/data/blog-posts.ts。
+
+**判断 SOP** (任何 retrofit commit 实施前自查):
+1. 改造前 grep 4 源: blog-data JSON + blog-posts meta + sitemap + 验证 JSON
+2. 改造中保证 3 件同时改
+3. 改造后跑 5 步转化验证 (CTA href + quote form + GA4 + wa.me + 失败标记)
+4. sitemap mtime 验证 (build 后 lastmod 更新)
+5. 3 件全 PASS 才报 PASS, 缺一报 PARTIAL
+
+### §0.20.3 GitHub Push Protection 止损路径 (commit 前必查 + 触发后立即 reset)
+
+**教训**: commit 前必 `git status --porcelain` 看清 A/M/D; 触发 secret 扫描立即 `git reset --mixed HEAD~1` 重做, **不 amend**; `.hermes/` 含 token 的历史报告永不入 commit。
+
+**事故背书 (2026-08-10)**: c04dbe9 commit 误含 208 files (200+ .hermes/ 临时文件), 其中 `.hermes/reports/m3-p0-token-verify-fail-2026-07-29.md` 包含完整 Cloudflare User API Token, 触发 GH013 push protection。修法: `git reset --mixed HEAD~1` + 重 add 4 files only + 重 commit 8664488 + 重 push = 1 effective push。
+
+**应用范围**: 任何 CF Pages 项目; 任何 commit 含 .hermes/ 临时文件 + 报告; 任何 token / secret 在 .hermes/ 历史报告。
+
+**判断 SOP** (任何 commit 实施前自查):
+1. 跑 `git status --porcelain` 看 A/M/D 全状态
+2. A 状态文件 > 50 个 → 立即怀疑临时文件未 unstage
+3. 跑 `git diff --cached --stat` 看清 staged 内容
+4. 触发 GH013 → 立即 `git reset --mixed HEAD~1` + 重 add 目标 files + 重 commit
+5. 永远不 amend 触发 GH013 的 commit
+
+### §0.20.4 amend 月上限 2 次 (8/8 + 8/10 已用) - 后续走 revert + 重做
+
+**教训**: amend 止损月上限 2 次, 超 2 次必走 revert + 重做路径。
+
+**事故背书 (2026-08-10)**: 8/8 117f9fc force-with-lease amend 替代 4703262 失败 commit (TS duplicate property 错误); 8/10 8664488 fresh commit (不用 amend) 替代 c04dbe9 失败 commit (GH013 触发)。
+
+**应用范围**: 任何 CF Pages 项目; 任何 amend force-with-lease / rebase push; 任何需快速修正的失败 commit 场景。
+
+**判断 SOP** (任何 amend 需求自查):
+1. 问"本月已用 amend 几次? 还剩几次?"
+2. 月上限 2 次用满 → 走 revert + 重做
+3. amend 节省 1 build 但 force-push 也算 1 push 配额
+4. 真的紧急才用 amend, 普通失败走 fresh commit 重做
+
+---
+
 <!-- autoclaw:feishu-lark-skill-guidance -->
 ## Feishu / Lark Requests
 

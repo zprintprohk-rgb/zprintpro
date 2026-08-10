@@ -2,7 +2,7 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Locale, siteConfig, generateFaqJsonLd } from '@/lib/seo';
+import { Locale, siteConfig, getBrandName, generateFaqJsonLd } from '@/lib/seo';
 import {
   generateBlogArticleJsonLd,
   generateSpeakableJsonLd,
@@ -833,7 +833,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       title: post?.title || 'Blog Post',
       description: post?.description || '',
       url: canonical,
-      siteName: siteConfig.name,
+      siteName: getBrandName(locale),
       locale: getOgLocale(locale),
       type: 'article',
       publishedTime: post?.date,

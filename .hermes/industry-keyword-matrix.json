@@ -5422,10 +5422,10 @@
       }
     ],
     "target_completion": "2026-08-30 (62/62 篇 v8_ready 100% 合规)",
-    "last_retrofit_at": "2026-08-09T16:33:00+08:00",
-    "last_retrofit_slug": "baby-product-label-sticker-printing-guide",
-    "last_retrofit_commit": "0d46a4c",
-    "last_retrofit_cf_run": "93221129040",
+    "last_retrofit_at": "2026-08-10T09:59:48+08:00",
+    "last_retrofit_slug": "cmyk-guide",
+    "last_retrofit_commit": "8664488",
+    "last_retrofit_cf_run": "93335414345",
     "phase_a_progress": {
       "8_7_apparel": {
         "status": "completed",
@@ -5440,8 +5440,9 @@
         "commit": "0d46a4c"
       },
       "8_10_cmyk": {
-        "status": "pending",
-        "deadline": "2026-08-10"
+        "status": "completed",
+        "commit": "8664488",
+        "cf_run": "93335414345"
       },
       "8_11_paper_materials": {
         "status": "pending",
@@ -5488,7 +5489,7 @@
         "expected_cta_to": [
           "/contact",
           "/quote",
-          "wa.me/14158022922"
+          "wa.me/8619880851334"
         ],
         "expected_event": "contact_form_submit",
         "k3_5min_action": "1 设备 + 1 隐身窗口走全流程 + 检查 webhook 邮件 + GA4 DebugView",
@@ -5504,7 +5505,7 @@
         "expected_cta_to": [
           "/contact",
           "/quote",
-          "wa.me/14158022922"
+          "wa.me/8619880851334"
         ],
         "expected_event": "contact_form_submit",
         "k3_5min_action": "1 设备 + 1 隐身窗口走全流程 + 检查 webhook 邮件 + GA4 DebugView",
@@ -5520,7 +5521,7 @@
         "expected_cta_to": [
           "/contact",
           "/quote",
-          "wa.me/14158022922"
+          "wa.me/8619880851334"
         ],
         "expected_event": "contact_form_submit",
         "k3_5min_action": "1 设备 + 1 隐身窗口走全流程 + 检查 webhook 邮件 + GA4 DebugView",
@@ -5536,7 +5537,7 @@
         "expected_cta_to": [
           "/contact",
           "/quote",
-          "wa.me/14158022922"
+          "wa.me/8619880851334"
         ],
         "expected_event": "contact_form_submit",
         "k3_5min_action": "1 设备 + 1 隐身窗口走全流程 + 检查 webhook 邮件 + GA4 DebugView",
@@ -5552,7 +5553,7 @@
         "expected_cta_to": [
           "/contact",
           "/quote",
-          "wa.me/14158022922"
+          "wa.me/8619880851334"
         ],
         "expected_event": "contact_form_submit",
         "k3_5min_action": "1 设备 + 1 隐身窗口走全流程 + 检查 webhook 邮件 + GA4 DebugView",
@@ -5568,7 +5569,7 @@
         "expected_cta_to": [
           "/contact",
           "/quote",
-          "wa.me/14158022922"
+          "wa.me/8619880851334"
         ],
         "expected_event": "contact_form_submit",
         "k3_5min_action": "1 设备 + 1 隐身窗口走全流程 + 检查 webhook 邮件 + GA4 DebugView",

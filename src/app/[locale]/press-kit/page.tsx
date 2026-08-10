@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { Locale, siteConfig } from '@/lib/seo';
+import { Locale, siteConfig, getBrandName } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
 import { generateWhatsAppLink } from '@/lib/whatsapp';
 
@@ -185,7 +185,7 @@ export default function PressKitPage({ params }: PressKitPageProps) {
     url: `${siteConfig.url}/${locale}/press-kit/`,
     mainEntity: {
       '@type': 'Organization',
-      name: siteConfig.name,
+      name: getBrandName(locale),
       url: siteConfig.url,
       logo: `${siteConfig.url}/images/gsc-logo.png`,
       contactPoint: {
