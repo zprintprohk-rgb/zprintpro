@@ -4375,7 +4375,7 @@
     "v8_template_doc": ".hermes/template/blog-v8-seo-geo-template.md",
     "audit_report": ".hermes/reports/blog-v8-audit-2026-08-06.json",
     "total_blogs": 62,
-    "v8_ready_count": 5,
+    "v8_ready_count": 6,
     "partial_count": 6,
     "old_format_count": 55,
     "phase_a_partial_8_6_8_12": [
@@ -4473,21 +4473,17 @@
       },
       {
         "slug": "same-day-flyers-printing-hong-kong-guide",
-        "current_score": 8.0,
-        "zh_score": 8,
-        "en_score": 8,
-        "ja_score": 8,
-        "zh_chars": 4307,
-        "missing_zh": [
-          "重點摘要",
-          "黄_callout",
-          "蓝_CTA",
-          "Author",
-          "Sources",
-          "Disclaimer"
-        ],
+        "current_score": 15.0,
+        "zh_score": 15,
+        "en_score": 15,
+        "ja_score": 15,
+        "zh_chars": 10066,
+        "missing_zh": [],
         "target_score": 15,
-        "deadline": "2026-08-12"
+        "deadline": "2026-08-12",
+        "retrofit_completed": true,
+        "retrofit_commit": "3fdf13a",
+        "retrofit_date": "2026-08-11"
       }
     ],
     "phase_b_p0_p1_8_13_8_19": [
@@ -5418,10 +5414,10 @@
       }
     ],
     "target_completion": "2026-08-30 (62/62 篇 v8_ready 100% 合规)",
-    "last_retrofit_at": "2026-08-11T04:50:00+08:00",
-    "last_retrofit_slug": "paper-materials",
-    "last_retrofit_commit": "c4a8c5f",
-    "last_retrofit_cf_run": "93593399407",
+    "last_retrofit_at": "2026-08-11T06:20:00+08:00",
+    "last_retrofit_slug": "same-day-flyers-printing-hong-kong-guide",
+    "last_retrofit_commit": "3fdf13a",
+    "last_retrofit_cf_run": "93619226015",
     "phase_a_progress": {
       "8_7_apparel": {
         "status": "completed",
@@ -5446,8 +5442,9 @@
         "cf_run": "93593399407"
       },
       "8_12_same_day_flyers": {
-        "status": "pending",
-        "deadline": "2026-08-12"
+        "status": "completed",
+        "commit": "3fdf13a",
+        "cf_run": "93619226015"
       }
     },
     "8_9_push_quota": {
@@ -5480,8 +5477,8 @@
     "8_7_8_12_retrofit": {
       "apparel-shopping-bag-printing-guide": {
         "retrofit_target_date": "2026-08-07",
-        "conversion_status": "untested",
-        "last_conversion_test": null,
+        "conversion_status": "verified",
+        "last_conversion_test": "2026-08-11T06:40:00+08:00",
         "ai_citation_count": 0,
         "expected_cta_to": [
           "/contact",
@@ -5491,13 +5488,15 @@
         "expected_event": "contact_form_submit",
         "k3_5min_action": "1 设备 + 1 隐身窗口走全流程 + 检查 webhook 邮件 + GA4 DebugView",
         "api_endpoint_health": "200",
-        "api_endpoint_health_checked_at": "2026-08-07T18:45:38+08:00",
-        "api_endpoint_health_check_sha": "9ab9ee4"
+        "api_endpoint_health_checked_at": "2026-08-11T06:40:00+08:00",
+        "api_endpoint_health_check_sha": "3fdf13a",
+        "conversion_fix_commit": "d119014",
+        "conversion_method": "autoclaw conversion-link-check hard/soft (subagent_11 + 复验)"
       },
       "cross-border-ecommerce-shipping-box-guide": {
         "retrofit_target_date": "2026-08-08",
-        "conversion_status": "untested",
-        "last_conversion_test": null,
+        "conversion_status": "verified",
+        "last_conversion_test": "2026-08-11T06:40:00+08:00",
         "ai_citation_count": 0,
         "expected_cta_to": [
           "/contact",
@@ -5507,13 +5506,15 @@
         "expected_event": "contact_form_submit",
         "k3_5min_action": "1 设备 + 1 隐身窗口走全流程 + 检查 webhook 邮件 + GA4 DebugView",
         "api_endpoint_health": "200",
-        "api_endpoint_health_checked_at": "2026-08-07T18:45:38+08:00",
-        "api_endpoint_health_check_sha": "9ab9ee4"
+        "api_endpoint_health_checked_at": "2026-08-11T06:40:00+08:00",
+        "api_endpoint_health_check_sha": "3fdf13a",
+        "conversion_fix_commit": "d119014",
+        "conversion_method": "autoclaw conversion-link-check hard/soft (subagent_11 + 复验)"
       },
       "baby-product-label-sticker-printing-guide": {
         "retrofit_target_date": "2026-08-09",
-        "conversion_status": "untested",
-        "last_conversion_test": null,
+        "conversion_status": "verified",
+        "last_conversion_test": "2026-08-11T06:40:00+08:00",
         "ai_citation_count": 0,
         "expected_cta_to": [
           "/contact",
@@ -5523,13 +5524,15 @@
         "expected_event": "contact_form_submit",
         "k3_5min_action": "1 设备 + 1 隐身窗口走全流程 + 检查 webhook 邮件 + GA4 DebugView",
         "api_endpoint_health": "200",
-        "api_endpoint_health_checked_at": "2026-08-07T18:45:38+08:00",
-        "api_endpoint_health_check_sha": "9ab9ee4"
+        "api_endpoint_health_checked_at": "2026-08-11T06:40:00+08:00",
+        "api_endpoint_health_check_sha": "3fdf13a",
+        "conversion_fix_commit": "d119014",
+        "conversion_method": "autoclaw conversion-link-check hard/soft (subagent_11 + 复验)"
       },
       "cmyk-guide": {
         "retrofit_target_date": "2026-08-10",
-        "conversion_status": "untested",
-        "last_conversion_test": null,
+        "conversion_status": "verified",
+        "last_conversion_test": "2026-08-11T06:40:00+08:00",
         "ai_citation_count": 0,
         "expected_cta_to": [
           "/contact",
@@ -5539,8 +5542,10 @@
         "expected_event": "contact_form_submit",
         "k3_5min_action": "1 设备 + 1 隐身窗口走全流程 + 检查 webhook 邮件 + GA4 DebugView",
         "api_endpoint_health": "200",
-        "api_endpoint_health_checked_at": "2026-08-07T18:45:38+08:00",
-        "api_endpoint_health_check_sha": "9ab9ee4"
+        "api_endpoint_health_checked_at": "2026-08-11T06:40:00+08:00",
+        "api_endpoint_health_check_sha": "3fdf13a",
+        "conversion_fix_commit": "d119014",
+        "conversion_method": "autoclaw conversion-link-check hard/soft (subagent_11 + 复验)"
       },
       "paper-materials": {
         "retrofit_target_date": "2026-08-11",
@@ -5560,8 +5565,8 @@
       },
       "same-day-flyers-printing-hong-kong-guide": {
         "retrofit_target_date": "2026-08-12",
-        "conversion_status": "untested",
-        "last_conversion_test": null,
+        "conversion_status": "verified",
+        "last_conversion_test": "2026-08-11T06:40:00+08:00",
         "ai_citation_count": 0,
         "expected_cta_to": [
           "/contact",
@@ -5571,8 +5576,10 @@
         "expected_event": "contact_form_submit",
         "k3_5min_action": "1 设备 + 1 隐身窗口走全流程 + 检查 webhook 邮件 + GA4 DebugView",
         "api_endpoint_health": "200",
-        "api_endpoint_health_checked_at": "2026-08-07T18:45:38+08:00",
-        "api_endpoint_health_check_sha": "9ab9ee4"
+        "api_endpoint_health_checked_at": "2026-08-11T06:40:00+08:00",
+        "api_endpoint_health_check_sha": "3fdf13a",
+        "conversion_fix_commit": "d119014",
+        "conversion_method": "autoclaw conversion-link-check hard/soft (subagent_11 + 复验)"
       }
     }
   },
