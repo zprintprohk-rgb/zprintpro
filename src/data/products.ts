@@ -82,7 +82,7 @@ export const categories: Category[] = [
   { slug: 'stickers', name: '貼紙印刷 / 透明貼 / 防水貼', nameEn: 'Stickers / Waterproof / Transparent', nameJa: 'ステッカー / 透明 / 防水', name_zh: '貼紙印刷 / 透明貼 / 防水貼', name_en: 'Stickers / Waterproof / Transparent', name_ja: 'ステッカー / 透明 / 防水', sort_order: 1 },
   { slug: 'flyers', name: '宣傳單張', nameEn: 'Flyers', nameJa: 'チラシ印刷', name_zh: '宣傳單張', name_en: 'Flyers', name_ja: 'チラシ印刷', sort_order: 2 },
   { slug: 'packaging', name: '包裝盒定製', nameEn: 'Packaging', nameJa: 'パッケージ印刷', name_zh: '包裝盒定製', name_en: 'Packaging', name_ja: 'パッケージ印刷', sort_order: 3 },
-  { slug: 'posters', name: '定製海報', nameEn: 'Posters', nameJa: 'ポスター印刷', name_zh: '定製海報', name_en: 'Posters', name_ja: 'ポスター印刷', sort_order: 4 },
+  { slug: 'posters', name: '海報印刷', nameEn: 'Posters', nameJa: 'ポスター印刷', name_zh: '海報印刷', name_en: 'Posters', name_ja: 'ポスター印刷', sort_order: 4 },
   { slug: 'paper-bags', name: '紙袋印刷 / 訂做紙袋', nameEn: 'Paper Bags / Custom', nameJa: '紙袋印刷 / カスタム', name_zh: '紙袋印刷 / 訂做紙袋', name_en: 'Paper Bags / Custom', name_ja: '紙袋印刷 / カスタム', sort_order: 5 },
   { slug: 'greeting-cards', name: '賀卡印刷', nameEn: 'Greeting Cards', nameJa: 'グリーティングカード・年賀状', name_zh: '賀卡印刷', name_en: 'Greeting Cards', name_ja: 'グリーティングカード・年賀状', sort_order: 6 },
   // 次要分类
@@ -90,7 +90,7 @@ export const categories: Category[] = [
   { slug: 'books', name: '書籍印刷', nameEn: 'Books', nameJa: '書籍印刷', name_zh: '書籍印刷', name_en: 'Books', name_ja: '書籍印刷', sort_order: 8 },
   { slug: 'menus', name: '餐牌印刷', nameEn: 'Menus', nameJa: 'メニュー印刷', name_zh: '餐牌印刷', name_en: 'Menus', name_ja: 'メニュー印刷', sort_order: 9 },
   { slug: 'envelopes', name: '信封印刷', nameEn: 'Envelopes', nameJa: '封筒印刷', name_zh: '信封印刷', name_en: 'Envelopes', name_ja: '封筒印刷', sort_order: 10 },
-  { slug: 'calendars', name: '年曆印刷', nameEn: 'Calendars', nameJa: 'カレンダー印刷', name_zh: '年曆印刷', name_en: 'Calendars', name_ja: 'カレンダー印刷', sort_order: 11 },
+  { slug: 'calendars', name: '月曆印刷', nameEn: 'Calendars', nameJa: 'カレンダー印刷', name_zh: '月曆印刷', name_en: 'Calendars', name_ja: 'カレンダー印刷', sort_order: 11 },
   { slug: 'red-packets', name: '利是封印刷', nameEn: 'Red Packets', nameJa: 'ポチ袋印刷', name_zh: '利是封印刷', name_en: 'Red Packets', name_ja: 'ポチ袋印刷', sort_order: 12 },
   { slug: 'educational', name: '校園教育印刷', nameEn: 'Educational', nameJa: '教育印刷', name_zh: '校園教育印刷', name_en: 'Educational', name_ja: '教育印刷', sort_order: 13 },
   { slug: 'japan-doujin', name: '同人周邊印刷', nameEn: 'Doujinshi & Anime Goods', nameJa: '同人誌・アニメグッズ', name_zh: '同人周邊印刷', name_en: 'Doujinshi & Anime Goods', name_ja: '同人誌・アニメグッズ', sort_order: 14 },

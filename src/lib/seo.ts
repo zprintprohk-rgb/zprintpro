@@ -1090,6 +1090,8 @@ export function generateProductJsonLd(
       price: (price ?? 0).toString(),
       // 2026-08-08 K3 14:56 GMC 缺价修复: 加 priceValidUntil (GMC 必填) + sku (GMC 强烈建议)
       //  注: hasMerchantReturnPolicy 在 L1188 en branch 统一加 (3 locale 兼容), 这里不再重复
+      // 2026-08-11 K3 GSC warning 修复: GSC「商家信息」要求 validFrom (报价起始日), 5 PDP 缺这个字段
+      validFrom: '2026-01-01',
       priceValidUntil: '2027-12-31',
       sku: slug,
       availability: 'https://schema.org/InStock',

@@ -30,13 +30,13 @@ const translations = {
     noResults: '沒有相關結果, 試試其他關鍵字?',
     categories: {
       'paper-bags': '紙袋印刷',
-      'flyers': '宣傳單張',
+      'flyers': '傳單印刷',
       'stickers': '貼紙印刷',
-      'packaging': '包裝盒定制',
-      'posters': '海報定制',
+      'packaging': '包裝盒印刷',
+      'posters': '海報印刷',
       'educational': '校園印刷',
     },
-    navOrder: ['paper-bags', 'flyers', 'stickers', 'packaging', 'posters', 'educational'] as const,
+    navOrder: ['flyers', 'stickers', 'packaging', 'posters', 'educational', 'paper-bags'] as const,
   },
   en: {
     phone: '+86 198 8085 1334',
@@ -479,7 +479,7 @@ export function Header({ locale }: HeaderProps) {
           >
             {t.home}
           </Link>
-          {(['stickers', 'flyers', 'paper-bags', 'packaging'] as const).map((catSlug) => (
+          {(['stickers', 'flyers', 'packaging', 'paper-bags'] as const).map((catSlug) => (
             <Link
               key={catSlug}
               href={`${localePrefix}/category/${catSlug}/`}

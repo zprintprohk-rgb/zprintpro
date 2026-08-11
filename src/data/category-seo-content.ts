@@ -1863,7 +1863,7 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
 // =============================================================================
 const calendarsContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
-    h2: '香港年曆印刷 — 座枱曆／掛牆曆／月曆卡，50 本起訂，節日促銷必備',
+    h2: '香港月曆印刷 — 座枱曆／掛牆曆／年曆卡，50 本起訂，節日促銷必備',
     coreAdvantages: {
       title: '核心競爭優勢',
       items: [
@@ -3151,7 +3151,7 @@ const stickersContent: Record<string, CategoryLocaleContent> = {
 // =============================================================================
 const flyersContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
-    h2: '香港宣傳單張印刷 — A5/A4/A3 彩印，100 張起訂，即日交貨',
+    h2: '香港傳單印刷 — A5/A4/A3 彩印，100 張起訂，即日交貨',
     coreAdvantages: {
       title: '核心競爭優勢',
       items: [
