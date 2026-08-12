@@ -150,16 +150,16 @@ export const products: Product[] = [
 <h3>5 檔牛皮紙袋校準報價 (参考實價, 2026-07-18)</h3>
 <p>以下價格來自智印港 2026-07-18 向 <a href="/product/kraft-paper-bags/">牛皮紙袋</a> 供應商登錄態實詢 (中號 260x170x250mm / 120g 黃牛皮 / 紙繩或扁繩 / 單色-四色),1.3 倍合理利潤 + RMB→HKD 1.087 換算後的可即時展示真實校準錨點:</p>
 <table>
-  <thead><tr><th>數量</th><th>單個 (HKD)</th><th>總價 (HKD)</th><th>跳水幅度</th><th>對比 e-print 零售</th></tr></thead>
+  <thead><tr><th>數量</th><th>單個 (HKD)</th><th>總價 (HKD)</th><th>跳水幅度</th></tr></thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>500 個</td><td>$1.62</td><td>$811</td><td>—</td><td>較 e-print 便宜 76%</td></tr>
-    <tr class="border-b border-gray-200"><td>1,000 個</td><td>$1.14</td><td>$1,138</td><td>-30%</td><td>較 e-print 便宜 78%</td></tr>
-    <tr class="border-b border-gray-200"><td>2,000 個</td><td>$0.92</td><td>$1,847</td><td>-19%</td><td>較 e-print 便宜 81%</td></tr>
-    <tr class="border-b border-gray-200"><td>3,000 個</td><td>$0.89</td><td>$2,675</td><td>-3%</td><td>較 e-print 便宜 83%</td></tr>
-    <tr><td>5,000 個</td><td>$0.84</td><td>$4,202</td><td>-6%</td><td>較 e-print 便宜 85%</td></tr>
+    <tr class="border-b border-gray-200"><td>500 個</td><td>$1.62</td><td>$811</td><td>—</td></tr>
+    <tr class="border-b border-gray-200"><td>1,000 個</td><td>$1.14</td><td>$1,138</td><td>-30%</td></tr>
+    <tr class="border-b border-gray-200"><td>2,000 個</td><td>$0.92</td><td>$1,847</td><td>-19%</td></tr>
+    <tr class="border-b border-gray-200"><td>3,000 個</td><td>$0.89</td><td>$2,675</td><td>-3%</td></tr>
+    <tr><td>5,000 個</td><td>$0.84</td><td>$4,202</td><td>-6%</td></tr>
   </tbody>
 </table>
-<p>對比 e-print 香港零售 <strong>HK$2,049 / 300 個 = $6.83 / 個</strong> (E-01 款, 8 個工作天),智印港 500 個起印已可壓到 e-print 零售天花板 24% 以下。批量越大,單個成本越接近材料底。智印港 15+ 年印刷經驗,服務 15,000+ 客戶,產品銷往 100+ 國家,牛皮紙袋獲 FSC 認證,所有訂單 ISO 12647 色彩管理、ISO 9001 品質認證把關。</p>
+<p>智印港 500 個起印已可壓到 市場零售 零售天花板 24% 以下。批量越大,單個成本越接近材料底。智印港 15+ 年印刷經驗,服務 15,000+ 客戶,產品銷往 100+ 國家,牛皮紙袋獲 FSC 認證,所有訂單 ISO 12647 色彩管理、ISO 9001 品質認證把關。</p>
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
 <details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
@@ -457,31 +457,31 @@ export const products: Product[] = [
 <h3>5-Tier Kraft Paper Bag Calibrated Pricing (reference pricing, 2026-07-18)</h3>
 <p>The following prices are sourced from ZprintPro's logged-in <a href="/en/product/kraft-paper-bags/">kraft paper bag</a> supplier quote on 2026-07-18 (medium 260x170x250mm / 120g brown kraft / paper or flat rope / 1-4 color print), with a 1.3x fair margin and CNY→USD 7.25 conversion. They are real calibrated anchors we can display today:</p>
 <table>
-  <thead><tr><th>Quantity</th><th>Unit (USD)</th><th>Total (USD)</th><th>Step-Down</th><th>vs e-print HK Retail</th></tr></thead>
+  <thead><tr><th>Quantity</th><th>Unit (USD)</th><th>Total (USD)</th><th>Step-Down</th></tr></thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>500 pieces</td><td>$0.21</td><td>$106</td><td>—</td><td>76% below e-print</td></tr>
-    <tr class="border-b border-gray-200"><td>1,000 pieces</td><td>$0.15</td><td>$148</td><td>-30%</td><td>78% below e-print</td></tr>
-    <tr class="border-b border-gray-200"><td>2,000 pieces</td><td>$0.12</td><td>$240</td><td>-19%</td><td>81% below e-print</td></tr>
-    <tr class="border-b border-gray-200"><td>3,000 pieces</td><td>$0.12</td><td>$348</td><td>-3%</td><td>83% below e-print</td></tr>
-    <tr><td>5,000 pieces</td><td>$0.11</td><td>$546</td><td>-6%</td><td>85% below e-print</td></tr>
+    <tr class="border-b border-gray-200"><td>500 pieces</td><td>$0.21</td><td>$106</td><td>—</td></tr>
+    <tr class="border-b border-gray-200"><td>1,000 pieces</td><td>$0.15</td><td>$148</td><td>-30%</td></tr>
+    <tr class="border-b border-gray-200"><td>2,000 pieces</td><td>$0.12</td><td>$240</td><td>-19%</td></tr>
+    <tr class="border-b border-gray-200"><td>3,000 pieces</td><td>$0.12</td><td>$348</td><td>-3%</td></tr>
+    <tr><td>5,000 pieces</td><td>$0.11</td><td>$546</td><td>-6%</td></tr>
   </tbody>
 </table>
-<p>Compared with e-print Hong Kong retail <strong>HK$2,049 / 300 pieces = $0.89 / piece</strong> (E-01 stock, 8 working days), ZprintPro's same-spec kraft bags at 500-piece MOQ already undercut that ceiling by 76%. Larger volumes push unit cost closer to material floor. ZprintPro is backed by 15+ years of printing expertise, 15,000+ customers served, products shipped to 100+ countries. All kraft paper bags are FSC-certified, with ISO 12647 color management and ISO 9001 quality assurance on every order.</p>
+<p> ZprintPro's same-spec kraft bags at 500-piece MOQ already undercut that ceiling by 76%. Larger volumes push unit cost closer to material floor. ZprintPro is backed by 15+ years of printing expertise, 15,000+ customers served, products shipped to 100+ countries. All kraft paper bags are FSC-certified, with ISO 12647 color management and ISO 9001 quality assurance on every order.</p>
 <p><strong>US sharp hooks:</strong> Free Shipping over $99 to all US ZIP codes · Free design mockup · No setup fees · 500-piece MOQ · Fast Turnaround 5-10 business days from Asia factory + DHL 2-4 day global delivery.</p>
 
 <h3>5 段階クラフト紙袋校正価格 (参考価格, 2026-07-18)</h3>
 <p>下記価格は 2026-07-18 智印港が <a href="/ja/product/kraft-paper-bags/">クラフト紙袋</a> サプライヤーにログイン状態で実詢したもの(中サイズ 260x170x250mm / 120g クラフト / 紙紐または平紐 / 1-4 色印刷)、1.3 倍適正マージン + CNY→JPY 20.5 為替換算済み。即時表示可能な実校正アンカーです:</p>
 <table>
-  <thead><tr><th>数量</th><th>単価 (JPY税込)</th><th>合計 (JPY税込)</th><th>逓減率</th><th>e-print HK 比較</th></tr></thead>
+  <thead><tr><th>数量</th><th>単価 (JPY税込)</th><th>合計 (JPY税込)</th><th>逓減率</th></tr></thead>
   <tbody>
-    <tr class="border-b border-gray-200"><td>500 枚</td><td>¥33</td><td>¥16,628</td><td>—</td><td>e-print より 76% 安</td></tr>
-    <tr class="border-b border-gray-200"><td>1,000 枚</td><td>¥23</td><td>¥23,329</td><td>-30%</td><td>e-print より 78% 安</td></tr>
-    <tr class="border-b border-gray-200"><td>2,000 枚</td><td>¥19</td><td>¥37,864</td><td>-19%</td><td>e-print より 81% 安</td></tr>
-    <tr class="border-b border-gray-200"><td>3,000 枚</td><td>¥18</td><td>¥54,838</td><td>-3%</td><td>e-print より 83% 安</td></tr>
-    <tr><td>5,000 枚</td><td>¥17</td><td>¥86,141</td><td>-6%</td><td>e-print より 85% 安</td></tr>
+    <tr class="border-b border-gray-200"><td>500 枚</td><td>¥33</td><td>¥16,628</td><td>—</td></tr>
+    <tr class="border-b border-gray-200"><td>1,000 枚</td><td>¥23</td><td>¥23,329</td><td>-30%</td></tr>
+    <tr class="border-b border-gray-200"><td>2,000 枚</td><td>¥19</td><td>¥37,864</td><td>-19%</td></tr>
+    <tr class="border-b border-gray-200"><td>3,000 枚</td><td>¥18</td><td>¥54,838</td><td>-3%</td></tr>
+    <tr><td>5,000 枚</td><td>¥17</td><td>¥86,141</td><td>-6%</td></tr>
   </tbody>
 </table>
-<p>e-print 香港小売 <strong>HK$2,049 / 300 枚 = ¥112 / 枚</strong> (E-01 款、8 営業日) と比較して、智印港の同仕様クラフト紙袋 500 枚から e-print の小売天井を 76% 下回ります。大量発注ほど単価が素材原価に近づきます。智印港は 15+ 年の印刷実績、15,000+ 顧客、100+ か国出荷の信頼。クラフト紙袋は全商品 FSC 認証、ISO 12647 カラー管理、ISO 9001 品質保証付き。</p>
+<p>智印港の同仕様クラフト紙袋 500 枚から 市場小売 の小売天井を 76% 下回ります。大量発注ほど単価が素材原価に近づきます。智印港は 15+ 年の印刷実績、15,000+ 顧客、100+ か国出荷の信頼。クラフト紙袋は全商品 FSC 認証、ISO 12647 カラー管理、ISO 9001 品質保証付き。</p>
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
 <details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
@@ -3806,7 +3806,7 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>Are they compliant with FDA?</strong></summary><p>Yes. Our void-release and destructible materials are FDA-compliant for indirect food contact and pharma packaging. COA (Certificate of Analysis) provided per order.</p></details>
 <details class="my-2"><summary><strong>Can you integrate with our tracking system?</strong></summary><p>Yes. We generate QR codes in any format (URL, JSON, GS1) and can integrate with your existing track-and-trace database. API and bulk export supported.</p></details>
 <details class="my-2"><summary><strong>How tamper-resistant is holographic?</strong></summary><p>Holographic seals combine visual anti-counterfeit (hard to replicate) with adhesive tamper evidence (cannot be removed intact). Best for mid-high security.</p></details>
-<details class="my-2"><summary><strong>What about barcode or RFID integration?</strong></summary><p>We support 1D/2D barcodes (Code 128, QR, Data Matrix) and can pre-print serial numbers. RFID inlay integration available on request for orders of 5,000+.</p></details>
+<details class="my-2"><summary><strong>What about barcode or RFID integration?</strong></summary><p>We support 1D/2D barcodes (Code 128, QR, Data Matrix) and can pr市場零售 serial numbers. RFID inlay integration available on request for orders of 5,000+.</p></details>
 
 
 <p><em>Compliance:  ✅ FSC-certified materials, ✅ ISO 9001:2015 certified quality management system.</em></p>
@@ -9389,7 +9389,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
 <details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 
-<h3>智印港 2026-07-18 参考價格 × 1.3 校準真實報價 (mailer-boxes)</h3><table class='w-full text-sm border-collapse my-4'><thead><tr class='bg-gray-100'><th class='p-2 text-left'>數量</th><th class='p-2 text-left'>HKD 總價</th><th class='p-2 text-left'>HKD/個</th><th class='p-2 text-left'>校準來源</th></tr></thead><tbody><tr><td class='p-2 text-center'>500 個</td><td class='p-2 text-center'>HK$965</td><td class='p-2 text-center'>HK$1.93</td><td class='p-2 text-center'>2026-07-18 參考實詢</td></tr><tr><td class='p-2 text-center'>1000 個</td><td class='p-2 text-center'>HK$1,144</td><td class='p-2 text-center'>HK$1.14</td><td class='p-2 text-center'>2026-07-18 參考實詢</td></tr><tr><td class='p-2 text-center'>2000 個</td><td class='p-2 text-center'>HK$1,677</td><td class='p-2 text-center'>HK$0.84</td><td class='p-2 text-center'>2026-07-18 參考實詢</td></tr><tr><td class='p-2 text-center'>3000 個</td><td class='p-2 text-center'>HK$1,872</td><td class='p-2 text-center'>HK$0.62</td><td class='p-2 text-center'>2026-07-18 參考實詢</td></tr><tr><td class='p-2 text-center'>5000 個</td><td class='p-2 text-center'>HK$2,800</td><td class='p-2 text-center'>HK$0.56</td><td class='p-2 text-center'>2026-07-18 參考實詢</td></tr></tbody></table><p><strong>對比 e-print 香港零售</strong> 同類型 3 層 B 瓦楞飛機盒 <strong>HK$8-15/個 (500 個起,8 個工作天)</strong>,智印港 500 個起印已可壓到 e-print 零售天花板 <strong>76-87% 成本優勢</strong>。5,000 個起單個成本僅 HK$0.56。</p><p>智印港 ZprintPro 深耕跨境電商印刷 <strong>15+ 年</strong>,服務 <strong>15,000+ 跨境電商品牌</strong> (Amazon FBA / Shopify / Etsy),產品銷往 <strong>100+ 國家</strong>。所有訂單 ISO 9001 認證、ISO 12647 色彩管理,FSC 認證紙材可選。所有報價通過 × 1.3 真實校準,不做模擬價。</p>`,
+<h3>智印港 2026-07-18 参考價格 × 1.3 校準真實報價 (mailer-boxes)</h3><table class='w-full text-sm border-collapse my-4'><thead><tr class='bg-gray-100'><th class='p-2 text-left'>數量</th><th class='p-2 text-left'>HKD 總價</th><th class='p-2 text-left'>HKD/個</th><th class='p-2 text-left'>校準來源</th></tr></thead><tbody><tr><td class='p-2 text-center'>500 個</td><td class='p-2 text-center'>HK$965</td><td class='p-2 text-center'>HK$1.93</td><td class='p-2 text-center'>2026-07-18 參考實詢</td></tr><tr><td class='p-2 text-center'>1000 個</td><td class='p-2 text-center'>HK$1,144</td><td class='p-2 text-center'>HK$1.14</td><td class='p-2 text-center'>2026-07-18 參考實詢</td></tr><tr><td class='p-2 text-center'>2000 個</td><td class='p-2 text-center'>HK$1,677</td><td class='p-2 text-center'>HK$0.84</td><td class='p-2 text-center'>2026-07-18 參考實詢</td></tr><tr><td class='p-2 text-center'>3000 個</td><td class='p-2 text-center'>HK$1,872</td><td class='p-2 text-center'>HK$0.62</td><td class='p-2 text-center'>2026-07-18 參考實詢</td></tr><tr><td class='p-2 text-center'>5000 個</td><td class='p-2 text-center'>HK$2,800</td><td class='p-2 text-center'>HK$0.56</td><td class='p-2 text-center'>2026-07-18 參考實詢</td></tr></tbody></table><p><strong>對比 市場零售 香港零售</strong> 同類型 3 層 B 瓦楞飛機盒 <strong>HK$8-15/個 (500 個起,8 個工作天)</strong>,智印港 500 個起印已可壓到 市場零售 零售天花板 <strong>76-87% 成本優勢</strong>。5,000 個起單個成本僅 HK$0.56。</p><p>智印港 ZprintPro 深耕跨境電商印刷 <strong>15+ 年</strong>,服務 <strong>15,000+ 跨境電商品牌</strong> (Amazon FBA / Shopify / Etsy),產品銷往 <strong>100+ 國家</strong>。所有訂單 ISO 9001 認證、ISO 12647 色彩管理,FSC 認證紙材可選。所有報價通過 × 1.3 真實校準,不做模擬價。</p>`,
     longDescriptionEn: `<h3>Mailer Boxes for E-Commerce Brands</h3>
 <p>ZprintPro mailer boxes are the workhorse of DTC e-commerce — engineered for shipping durability and unboxing delight. Self-locking tuck-front design assembles in 5 seconds, requires no tape, and stacks flat for 70% shipping savings vs pre-assembled boxes. Choose from corrugated, folding carton, or rigid mailer construction with kraft, white, or full-color print. 100-box MOQ, 5-7 day production, FSC certified.</p>
 
