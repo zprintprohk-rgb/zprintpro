@@ -126,8 +126,8 @@ const subItemNames: Record<string, Record<string, string>> = {
   'zh-hk': {
     'kraft-paper-bags': '牛皮紙袋', 'white-card-bags': '白卡紙袋', 'gift-bags': '禮品袋',
     'eco-paper-bags': '環保紙袋', 'handle-bags': '手提紙袋', 'large-bags': '大號紙袋',
-    'a4-flyers': 'A4宣傳單張', 'a5-flyers': 'A5宣傳單張', 'double-sided-flyers': '雙面宣傳單張',
-    'folded-leaflets': '摺頁宣傳單', 'thick-paper-flyers': '厚紙宣傳單', 'same-day-flyers': '即日宣傳單張',
+    'a4-flyers': 'A4傳單印刷', 'a5-flyers': 'A5傳單印刷', 'double-sided-flyers': '雙面傳單印刷',
+    'folded-leaflets': '摺頁宣傳單', 'thick-paper-flyers': '厚紙宣傳單', 'same-day-flyers': '即日傳單印刷',
     'waterproof-stickers': '防水貼紙', 'transparent-stickers': '透明貼紙',
     'foil-stickers': '燙金貼紙', 'die-cut-stickers': '異形貼紙', 'removable-stickers': '可移除貼紙',
     'fruit-food-label-stickers': '水果食品貼紙',

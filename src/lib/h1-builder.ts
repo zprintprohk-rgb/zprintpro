@@ -31,7 +31,7 @@ export type Locale = 'zh-hk' | 'en' | 'ja';
  */
 export const CAT_KW_MAP_ZH_HK: Record<string, [string, string]> = {
   stickers:     ['防水貼紙', '不干膠'],
-  flyers:       ['宣傳單張', 'A4單張'],
+  flyers:       ['傳單印刷', 'A4單張'],
   packaging:    ['禮品盒', '瓦楞紙盒'],
   posters:      ['展覽海報', '防水海報'],
   'paper-bags': ['牛皮紙袋', '環保紙袋'],
@@ -334,7 +334,7 @@ function traditionalizeZh(s: string): string {
     .replace(/极/g, '極').replace(/飞/g, '飛').replace(/艺/g, '藝')
     .replace(/术/g, '術').replace(/复/g, '復').replace(/种/g, '種')
     .replace(/类/g, '類').replace(/图/g, '圖').replace(/书/g, '書')
-    .replace(/制/g, '製').replace(/厅/g, '廳').replace(/阳/g, '陽')
+    .replace(/製/g, '製').replace(/厅/g, '廳').replace(/阳/g, '陽')
     .replace(/际/g, '際').replace(/验/g, '驗').replace(/护/g, '護')
     .replace(/备/g, '備').replace(/养/g, '養').replace(/营/g, '營')
     .replace(/获/g, '獲').replace(/证/g, '證').replace(/读/g, '讀')

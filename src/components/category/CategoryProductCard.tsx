@@ -39,7 +39,7 @@ const translations = {
 };
 
 // 2026-07-15: 防御性 helper - 清理 title_zh / buildProductH1ZhHk 输出中可能的多余空白
-// 同时充当 real source change 强制 Next.js 重新 bundle CategoryProductCard chunk
+// 同时充当 real source change 强製 Next.js 重新 bundle CategoryProductCard chunk
 // (cae8fad component 改动 + 2 次空 commit rebuild 仍 hit 增量缓存, 需实质改动触发 re-compile)
 const normalizeTitle = (s: string): string => s.replace(/\s+/g, ' ').trim();
 

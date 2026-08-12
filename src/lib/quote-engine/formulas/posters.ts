@@ -42,7 +42,7 @@ export const postersFormula: ProductFormula = (ctx: FormulaContext & { market?: 
   // 尺寸限制
   if (itemWidthMM > MAX_POSTER_WIDTH_MM || itemHeightMM > MAX_POSTER_HEIGHT_MM) {
     throw new Error(
-      `海报尺寸超过最大限制 ${MAX_POSTER_WIDTH_MM}×${MAX_POSTER_HEIGHT_MM}mm。请联系销售 (enterprise@zprintpro.com)`
+      `海报尺寸超过最大限製 ${MAX_POSTER_WIDTH_MM}×${MAX_POSTER_HEIGHT_MM}mm。请联系销售 (enterprise@zprintpro.com)`
     );
   }
 

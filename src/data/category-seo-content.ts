@@ -74,11 +74,11 @@ export type CategorySeoData = Record<string, {
 }>;
 
 // =============================================================================
-// 1. PACKAGING — 包裝盒定制
+// 1. PACKAGING — 包裝盒印刷
 // =============================================================================
 const packagingContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
-    h2: '香港包裝盒定制印刷 — 100個起訂，免費刀模設計，3天交貨',
+    h2: '香港包裝盒印刷印刷 — 100個起訂，免費刀模設計，3天交貨',
     coreAdvantages: {
       title: '核心競爭優勢',
       items: [
@@ -134,7 +134,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
     techSpecs: {
       title: '技術參數詳解',
       items: [
-        { label: '尺寸範圍', value: '完全客製化，常見如 10×10×5cm（彩盒）、30×20×15cm（瓦楞箱）' },
+        { label: '尺寸範圍', value: '完全訂製，常見如 10×10×5cm（彩盒）、30×20×15cm（瓦楞箱）' },
         { label: '起訂量', value: '30 個起（婚禮喜糖盒）、50 個起（彩盒）、100–200 個起（常規／工業款）' },
         { label: '交期', value: '常規 3 天出貨；快印款 2 天交付；打樣當日完成' },
         { label: '檔案要求', value: 'AI / PDF（CMYK，300dpi，含刀模線），我們提供免費刀模設計' },
@@ -170,7 +170,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
     },
     faq: [
       { q: '包裝盒最低多少個起訂？', a: '婚禮喜糖盒 30 個起，彩盒 50 個起，常規工業款 100–200 個起。遠低於傳統工廠的 500–1,000 個標準。' },
-      { q: '包裝盒有哪些盒型可選？', a: '天地蓋盒、書型盒、抽屜盒、折疊盒、飛機盒、磁吸盒等 20 餘種標準盒型，亦支持完全客製化設計。' },
+      { q: '包裝盒有哪些盒型可選？', a: '天地蓋盒、書型盒、抽屜盒、折疊盒、飛機盒、磁吸盒等 20 餘種標準盒型，亦支持完全訂製設計。' },
       { q: '可以用環保紙張嗎？', a: '可以。所有盒型均可選 FSC 認證環保紙張，符合國際環保標準，適合出口歐美市場。' },
       { q: '食品包裝盒安全嗎？', a: '安全。我們採用食品級紙張和無毒大豆油墨，通過 SGS 檢測認證，符合 HK 衛生署食品安全要求。' },
       { q: '包裝盒印刷需要多久？', a: '常規訂單 3 天出貨；快印服務 2 天交付；打樣當日完成。大批量訂單（5,000 個以上）約 5–7 天。' },
@@ -285,7 +285,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   ja: {
-    h2: 'パッケージ印刷・箱制作 — 100個から、無料型設計、3日納品',
+    h2: 'パッケージ印刷・箱製作 — 100個から、無料型設計、3日納品',
     coreAdvantages: {
       title: 'ZprintPro パッケージの強み',
       items: [
@@ -351,7 +351,7 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
     serviceNodes: {
       title: 'ローカルサービス拠点',
       items: [
-        { title: '旺角サンプルセンター', description: '実物サンプル（箔押し効果、紙質触感、構造強度）をご覧いただけます。予約制。' },
+        { title: '旺角サンプルセンター', description: '実物サンプル（箔押し効果、紙質触感、構造強度）をご覧いただけます。予約製。' },
         { title: '無料サンプルサービス', description: '外観と構造を確認してから量産し、高額なミスを防ぎます。' },
         { title: '日本全国配送', description: '小ロットはSFエクスプレス、大ロットは専用トラックで倉庫またはオフィスへ直送。' },
       ],
@@ -766,7 +766,7 @@ const bannersContent: Record<string, CategoryLocaleContent> = {
     faq: [
       { q: 'X展架和易拉寶有什麼區別？', a: 'X展架輕便、價格低、適合短期室內使用；易拉寶自帶收納筒、便攜、畫面更平整、適合頻繁使用。' },
       { q: '戶外橫幅能使用多久？', a: 'PVC橫幅布戶外使用 1–2 年；加抗 UV 塗層可延長至 3 年。網眼布因透風性更好，壽命更長。' },
-      { q: 'Backdrop 背景板最大做多大？', a: '最大寬度 3.2 米，長度無限。常見規格 3×2.2m、4×2.4m、6×3m。支持完全客製化。' },
+      { q: 'Backdrop 背景板最大做多大？', a: '最大寬度 3.2 米，長度無限。常見規格 3×2.2m、4×2.4m、6×3m。支持完全訂製。' },
       { q: '噴繪廣告最快多久可以取？', a: 'X展架／易拉寶即日交貨；Backdrop 1–2 天；大型橫幅 2–3 天。急件請提前告知。' },
       { q: '可以租展架嗎？', a: '可以。我們提供 X展架和易拉寶框架出租 + 畫面更換服務，適合一次性活動。' },
       { q: '戶外廣告需要申請嗎？', a: '視位置和規模而定。建築圍板一般需要屋宇署批准，街道橫幅需要食環署許可。我們可提供申請指引。' },
@@ -1028,7 +1028,7 @@ const booksContent: Record<string, CategoryLocaleContent> = {
     techSpecs: {
       title: '技術參數詳解',
       items: [
-        { label: '尺寸範圍', value: 'A5(148×210mm)、B5(176×250mm)、A4(210×297mm)、正方形(210×210mm)，支持完全客製化' },
+        { label: '尺寸範圍', value: 'A5(148×210mm)、B5(176×250mm)、A4(210×297mm)、正方形(210×210mm)，支持完全訂製' },
         { label: '起訂量', value: '1 本起訂（數碼印刷），100 本以上柯式印刷更經濟' },
         { label: '交期', value: '數碼印刷 2–3 天；柯式印刷 5–7 天；精裝書 7–10 天；打樣 2–3 天' },
         { label: '檔案要求', value: 'InDesign / PDF，300dpi，CMYK，預留 3mm 出血位，裝訂安全距離 ≥5mm' },
@@ -1316,7 +1316,7 @@ const menusContent: Record<string, CategoryLocaleContent> = {
     techSpecs: {
       title: '技術參數詳解',
       items: [
-        { label: '標準尺寸', value: 'A4(210×297mm)、A5(148×210mm)、DL(99×210mm)、正方形(150×150mm)，支持完全客製化' },
+        { label: '標準尺寸', value: 'A4(210×297mm)、A5(148×210mm)、DL(99×210mm)、正方形(150×150mm)，支持完全訂製' },
         { label: '起訂量', value: '10 份起訂（數碼印刷），100 份以上柯式印刷更經濟' },
         { label: '交期', value: '即日交貨（數碼，10–50 份）；標準 2–3 天（柯式）；打樣當日完成' },
         { label: '檔案要求', value: 'AI / PDF / PSD，300dpi，CMYK，預留 3mm 出血位' },
@@ -1341,12 +1341,12 @@ const menusContent: Record<string, CategoryLocaleContent> = {
         '換季、加餸、改價係餐飲常態，建議主餐牌用耐用 PVC 長用，季節菜式另印細張插頁或 A4 單張餐牌，改價只需重印插頁，成本慳一半；加個 QR Code 連電子菜單，晚市繁忙時間客人自己掃碼睇餸，減輕樓面壓力。',
         '好多老闆搜「餐牌印刷」「菜單印刷」時最怕兩樣嘢：印出嚟色差大、用唔夠兩個月就殘。我哋用食品級油墨同加厚過膠，印前免費數碼打樣對色，顏色唔啱唔開印，呢個承諾寫明喺報價單度。',
         '唔同場景配唔同款：茶餐廳用 PVC 插袋式，酒樓用硬殼釘裝大菜牌，咖啡店用牛皮紙單張夾木板，外賣店用厚卡紙枱面立牌。開張旺季（年尾、暑假前）建議提早兩星期落單，預留執相改稿時間。',
-        '落單流程：WhatsApp 傳店名同菜式數量 → 30 秒 AI 報價 → 免費排版建議 → 數碼件即日交、柯式 2–3 天。深水埗、旺角、銅鑼灣等旺區客戶可安排順豐即日件；連鎖分店可一次過印分店版本，各自價目都搞得掂，開張前仲可以同宣傳單張一齊落單慳時間。',
+        '落單流程：WhatsApp 傳店名同菜式數量 → 30 秒 AI 報價 → 免費排版建議 → 數碼件即日交、柯式 2–3 天。深水埗、旺角、銅鑼灣等旺區客戶可安排順豐即日件；連鎖分店可一次過印分店版本，各自價目都搞得掂，開張前仲可以同傳單印刷一齊落單慳時間。',
       ],
       links: [
         { label: '餐牌印刷指南', href: '/zh-hk/blog/restaurant-menu-printing-guide/' },
-        { label: '開業宣傳單張印刷', href: '/zh-hk/blog/restaurant-opening-flyer-printing-guide/' },
-        { label: '宣傳單張印刷', href: '/zh-hk/category/flyers/' },
+        { label: '開業傳單印刷印刷', href: '/zh-hk/blog/restaurant-opening-flyer-printing-guide/' },
+        { label: '傳單印刷印刷', href: '/zh-hk/category/flyers/' },
         { label: '利是封印刷', href: '/zh-hk/category/red-packets/' },
       ],
     },
@@ -1635,7 +1635,7 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
         { label: '起訂量', value: '500 個起訂（數碼印刷），5,000 個以上柯式印刷更經濟' },
         { label: '交期', value: '即日交貨（數碼，500–2,000 個）；標準 2–3 天（柯式）；打樣當日' },
         { label: '檔案要求', value: 'AI / PDF，300dpi，CMYK，預留 3mm 出血位，信封展開尺寸設計' },
-        { label: '窗口尺寸', value: '標準窗口 40×90mm，位置可定制，支持透明膜或開空' },
+        { label: '窗口尺寸', value: '標準窗口 40×90mm，位置可定製，支持透明膜或開空' },
       ],
     },
     serviceNodes: {
@@ -1657,8 +1657,8 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
     },
     faq: [
       { q: '信封印刷最低多少個起？', a: '500 個起訂（數碼印刷）。5,000 個以上柯式印刷更經濟，單價低至 HK$0.15/個。' },
-      { q: '信封有哪些規格？', a: 'DL、C5、C4、中式 5 號／7 號／9 號。支持完全客製化尺寸。' },
-      { q: '可以印窗口信封嗎？', a: '可以。標準窗口 40×90mm，位置和大小可完全客製化。' },
+      { q: '信封有哪些規格？', a: 'DL、C5、C4、中式 5 號／7 號／9 號。支持完全訂製尺寸。' },
+      { q: '可以印窗口信封嗎？', a: '可以。標準窗口 40×90mm，位置和大小可完全訂製。' },
       { q: '信封有哪些紙張選擇？', a: '白卡紙、牛皮紙、珠光紙、彩色紙、紋理紙等 20 餘種。' },
       { q: '信封最快多久可以取？', a: '數碼印刷即日交貨（500–2,000 個）；柯式印刷標準 2–3 天。' },
       { q: '可以燙金或壓紋嗎？', a: '可以。燙金、燙銀、凹凸壓紋、局部 UV 等多種工藝均可選擇。' },
@@ -1919,7 +1919,7 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
     techSpecs: {
       title: '技術參數詳解',
       items: [
-        { label: '標準尺寸', value: '座枱曆：150×180mm、200×230mm；掛牆曆：A3(297×420mm)、A2(420×594mm)；月曆卡：100×150mm；支持完全客製化' },
+        { label: '標準尺寸', value: '座枱曆：150×180mm、200×230mm；掛牆曆：A3(297×420mm)、A2(420×594mm)；月曆卡：100×150mm；支持完全訂製' },
         { label: '起訂量', value: '50 本起訂（數碼印刷），500 本以上柯式印刷更經濟' },
         { label: '交期', value: '標準 3–5 天（數碼）；5–7 天（柯式）；急件 2–3 天（數碼）' },
         { label: '檔案要求', value: 'AI / PDF / InDesign，300dpi，CMYK，預留 3mm 出血位，每月獨立頁面設計' },
@@ -2207,7 +2207,7 @@ const redPacketsContent: Record<string, CategoryLocaleContent> = {
     techSpecs: {
       title: '技術參數詳解',
       items: [
-        { label: '標準尺寸', value: '小號(80×160mm)、中號(90×170mm)、大號(100×190mm)，支持完全客製化' },
+        { label: '標準尺寸', value: '小號(80×160mm)、中號(90×170mm)、大號(100×190mm)，支持完全訂製' },
         { label: '起訂量', value: '500 個起訂（數碼印刷），5,000 個以上柯式印刷更經濟' },
         { label: '交期', value: '標準 3–5 天（數碼）；5–7 天（柯式）；急件 2–3 天（數碼）' },
         { label: '檔案要求', value: 'AI / PDF，300dpi，CMYK，預留 3mm 出血位，建議燙金部分單獨標註' },
@@ -2226,9 +2226,9 @@ const redPacketsContent: Record<string, CategoryLocaleContent> = {
       title: '利是封選購指南',
       paragraphs: [
         '選擇利是封時，首先要考慮用途和預算。企業大量贈禮推薦 128g 銅版紙配合燙金工藝，經濟且體面；高端品牌 VIP 贈禮推薦 200g 白卡紙或珠光紙配合浮雕工藝，質感極佳；文創品牌推薦紋理紙或環保再生紙，傳遞品牌理念。',
-        '工藝選擇是利是封的靈魂。燙金是最經典的選擇，適合傳統節慶；浮雕擊凸增添觸感記憶；立體工藝和雷射切割適合高端定制，收藏價值高。建議至少選擇一種特色工藝，讓利是封從普通變身精品。',
+        '工藝選擇是利是封的靈魂。燙金是最經典的選擇，適合傳統節慶；浮雕擊凸增添觸感記憶；立體工藝和雷射切割適合高端定製，收藏價值高。建議至少選擇一種特色工藝，讓利是封從普通變身精品。',
         '時間規劃是利是封印刷的關鍵。建議提前 1–2 個月開始準備設計和印刷，避開春節前的印刷高峰期。我們提供生肖設計服務和傳統圖案庫，幫助您快速完成設計。',
-        '「利是封 印刷 香港」「定制 利是封」流量集中在農曆新年前；零售禮券與銀行客戶禮品通常要求色彩穩定與批量一致，宜提早鎖定燙金電鍍版與紙張批次，並為港九新界多點收件預留分貨時間。',
+        '「利是封 印刷 香港」「定製 利是封」流量集中在農曆新年前；零售禮券與銀行客戶禮品通常要求色彩穩定與批量一致，宜提早鎖定燙金電鍍版與紙張批次，並為港九新界多點收件預留分貨時間。',
       ],
     },
     faq: [
@@ -2238,7 +2238,7 @@ const redPacketsContent: Record<string, CategoryLocaleContent> = {
       { q: '利是封最快多久可以取？', a: '數碼印刷 3–5 天；柯式印刷 5–7 天；急件 2–3 天。' },
       { q: '可以定制企業利是封嗎？', a: '可以。專業設計師為企業定制品牌利是封，融入 LOGO、品牌色彩和祝福語。' },
       { q: '可以印不同祝福語嗎？', a: '可以。支持可變數據印刷，每個利是封可以印不同員工姓名或不同祝福語。' },
-      { q: '利是封的尺寸可以定制嗎？', a: '可以。標準尺寸有小號、中號、大號，也支持完全客製化尺寸。' },
+      { q: '利是封的尺寸可以定制嗎？', a: '可以。標準尺寸有小號、中號、大號，也支持完全訂製尺寸。' },
       { q: '建議什麼時候開始印利是封？', a: '建議提前 1–2 個月準備，避開春節前的印刷高峰期。' },
       { q: '香港港島、九龍、新界都可以送貨嗎？', a: '可以。可按總部／分店地址分批配送；大批利是封建議木托或箱規出貨以利搬運。旺季車隊緊張時請盡早預約送貨時段。' },
       { q: '可以先報價再給設計檔嗎？', a: '可以。請提供成品尺寸、數量、紙材、是否需要燙金／浮雕／立體工藝及封口方式；可先取得分段報價，定稿後再提交 AI／PDF 並標註燙金線條與出血。' },
@@ -2416,7 +2416,7 @@ const redPacketsContent: Record<string, CategoryLocaleContent> = {
         '红包を選ぶ際、まず用途と予算を考慮しましょう。企業の大量ギフトには128gコート紙に箔押しがおすすめで、手頃でありながら体裁が良いです。高級ブランドのVIPギフトには200g白カード紙またはパール紙にエンボスが最適で、質感が抜群です。クリエイティブブランドにはテクスチャ紙やエコ再生紙が適し、ブランドの理念を伝えます。',
         '加工は红包の魂です。箔押しは伝統的な祝祭に最も定番の選択。エンボスは触感の記憶を追加します。立体加工とレーザーカットは高級カスタムに適し、コレクション価値が高いです。少なくとも1つの特色ある加工を選び、普通の红包をアートに変身させましょう。',
         '红包印刷のタイミングは重要です。デザインと印刷の準備を1–2ヶ月前から開始することをおすすめし、旧正月前の印刷ラッシュを回避します。当社は干支デザインサービスと伝統模様ライブラリを提供し、迅速なデザイン完成をサポートします。',
-        '「利是封 印刷」「定制 利是封」の検索は旧正月前に集中します。小売ギフト券や銀行顧客ギフトは通常、色彩安定性とロット均一性が要求されるため、早めに箔押し電鍋版と紙張ロットを確定し、港九新界の多点受取に対応する分貨時間を確保することをお勧めします。',
+        '「利是封 印刷」「定製 利是封」の検索は旧正月前に集中します。小売ギフト券や銀行顧客ギフトは通常、色彩安定性とロット均一性が要求されるため、早めに箔押し電鍋版と紙張ロットを確定し、港九新界の多点受取に対応する分貨時間を確保することをお勧めします。',
       ],
     },
     faq: [
@@ -2495,7 +2495,7 @@ const educationalContent: Record<string, CategoryLocaleContent> = {
     techSpecs: {
       title: '技術參數詳解',
       items: [
-        { label: '標準尺寸', value: '作業簿：A4(210×297mm)、A5(148×210mm)、B5(176×250mm)；證書：A4、A3；支持完全客製化' },
+        { label: '標準尺寸', value: '作業簿：A4(210×297mm)、A5(148×210mm)、B5(176×250mm)；證書：A4、A3；支持完全訂製' },
         { label: '起訂量', value: '50 本起訂（數碼印刷），500 本以上柯式印刷更經濟' },
         { label: '交期', value: '標準 3–5 天（數碼）；5–7 天（柯式）；急件 2–3 天（數碼）' },
         { label: '檔案要求', value: 'AI / PDF / Word，300dpi，CMYK，預留 3mm 出血位' },
@@ -2723,10 +2723,10 @@ const educationalContent: Record<string, CategoryLocaleContent> = {
 // Default content generator for categories without full content yet
 export function getDefaultCategoryContent(categorySlug: string, locale: string): CategoryLocaleContent {
   const nameMap: Record<string, { 'zh-hk': string; en: string; ja: string }> = {
-    packaging: { 'zh-hk': '包裝盒定制', en: 'Packaging', ja: 'パッケージ印刷' },
+    packaging: { 'zh-hk': '包裝盒印刷', en: 'Packaging', ja: 'パッケージ印刷' },
     'business-cards': { 'zh-hk': '咭片印刷', en: 'Business Cards', ja: '名刺印刷' },
     stickers: { 'zh-hk': '貼紙印刷', en: 'Sticker Printing', ja: 'シール印刷' },
-    flyers: { 'zh-hk': '宣傳單張印刷', en: 'Flyer Printing', ja: 'チラシ印刷' },
+    flyers: { 'zh-hk': '傳單印刷印刷', en: 'Flyer Printing', ja: 'チラシ印刷' },
     posters: { 'zh-hk': '海報印刷', en: 'Poster Printing', ja: 'ポスター印刷' },
     'paper-bags': { 'zh-hk': '紙袋印刷', en: 'Paper Bag Printing', ja: '紙袋印刷' },
     banners: { 'zh-hk': '噴繪廣告印刷', en: 'Banner Printing', ja: 'バナー印刷' },
@@ -2796,7 +2796,7 @@ export function getDefaultCategoryContent(categorySlug: string, locale: string):
     techSpecs: {
       title: isZh ? '技術參數詳解' : isEn ? 'Technical Specifications' : '技術仕様',
       items: [
-        { label: isZh ? '尺寸範圍' : isEn ? 'Size Range' : 'サイズ範囲', value: isZh ? '完全客製化，支持標準尺寸及特殊規格' : isEn ? 'Fully customizable, standard and special sizes supported' : '完全カスタマイズ、標準サイズおよび特殊仕様に対応' },
+        { label: isZh ? '尺寸範圍' : isEn ? 'Size Range' : 'サイズ範囲', value: isZh ? '完全訂製，支持標準尺寸及特殊規格' : isEn ? 'Fully customizable, standard and special sizes supported' : '完全カスタマイズ、標準サイズおよび特殊仕様に対応' },
         { label: isZh ? '起訂量' : isEn ? 'Minimum Order' : '最小発注数', value: isZh ? '50–100 個起（視產品類型而定）' : isEn ? '50–100 units depending on product type' : '50–100個から（製品タイプにより異なる）' },
         { label: isZh ? '交期' : isEn ? 'Turnaround' : '納期', value: isZh ? '常規 3–5 天；急件 24–48 小時' : isEn ? 'Standard 3–5 days; Rush 24–48 hours' : '標準3–5日、急行24–48時間' },
         { label: isZh ? '檔案要求' : isEn ? 'File Requirements' : 'ファイル要件', value: isZh ? 'AI / PDF，CMYK，300dpi，預留出血位' : isEn ? 'AI / PDF, CMYK, 300dpi, with bleed' : 'AI／PDF、CMYK、300dpi、bleed付き' },
@@ -2854,7 +2854,7 @@ const stickersContent: Record<string, CategoryLocaleContent> = {
           points: [
             '50 張起訂（數碼印刷），適合初創品牌試產和限量活動',
             '支持可變數據印刷，每張貼紙可以印不同序號、不同條碼或不同姓名（個性化標籤）',
-            '模切工藝精準，形狀可完全客製化（圓形、異形、鏤空）',
+            '模切工藝精準，形狀可完全訂製（圓形、異形、鏤空）',
           ],
         },
         {
@@ -2893,7 +2893,7 @@ const stickersContent: Record<string, CategoryLocaleContent> = {
     techSpecs: {
       title: '技術參數詳解',
       items: [
-        { label: '尺寸範圍', value: '最小 10×10mm，最大 300×400mm，支持完全客製化形狀' },
+        { label: '尺寸範圍', value: '最小 10×10mm，最大 300×400mm，支持完全訂製形狀' },
         { label: '起訂量', value: '50 張起訂（數碼印刷），1,000 張以上柯式印刷更經濟' },
         { label: '交期', value: '即日交貨（數碼，50–500 張）；標準 2–3 天（柯式）；打樣當日' },
         { label: '檔案要求', value: 'AI / PDF / PNG，300dpi，CMYK，預留 2mm 出血位（模切用）' },
@@ -3147,7 +3147,7 @@ const stickersContent: Record<string, CategoryLocaleContent> = {
 };
 
 // =============================================================================
-// FLYERS — 宣傳單張印刷
+// FLYERS — 傳單印刷印刷
 // =============================================================================
 const flyersContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
@@ -3159,7 +3159,7 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
           heading: '1. 全尺寸覆蓋：A6 到 A3，滿足所有派發場景',
           points: [
             '提供 A6(105×148mm)、A5(148×210mm)、A4(210×297mm)、A3(297×420mm)、DL(99×210mm) 等全標準尺寸',
-            '滿足「單張印刷 香港」、「宣傳單張」、「A4 彩印」、「A5 傳單」等高搜索量關鍵詞',
+            '滿足「單張印刷 香港」、「傳單印刷」、「A4 彩印」、「A5 傳單」等高搜索量關鍵詞',
             '適用於新店開業、活動推廣、產品介紹、餐飲外賣、教育招生等多元場景',
           ],
         },
@@ -3207,7 +3207,7 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
     techSpecs: {
       title: '技術參數詳解',
       items: [
-        { label: '標準尺寸', value: 'A6(105×148mm)、A5(148×210mm)、A4(210×297mm)、A3(297×420mm)、DL(99×210mm)，支持完全客製化' },
+        { label: '標準尺寸', value: 'A6(105×148mm)、A5(148×210mm)、A4(210×297mm)、A3(297×420mm)、DL(99×210mm)，支持完全訂製' },
         { label: '起訂量', value: '100 張起訂（數碼印刷），1,000 張以上柯式印刷更經濟' },
         { label: '交期', value: '即日交貨（數碼，100–500 張）；標準 2–3 天（柯式）；打樣當日' },
         { label: '檔案要求', value: 'AI / PDF / InDesign，300dpi，CMYK，預留 3mm 出血位' },
@@ -3233,7 +3233,7 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
     },
     faq: [
       { q: '單張印刷最低多少張起？', a: '100 張起訂（數碼印刷）。1,000 張以上柯式印刷更經濟，單價低至 HK$0.25/張。' },
-      { q: '單張有哪些尺寸？', a: 'A6、A5、A4、A3、DL，以及完全客製化尺寸。' },
+      { q: '單張有哪些尺寸？', a: 'A6、A5、A4、A3、DL，以及完全訂製尺寸。' },
       { q: '可以雙面印刷嗎？', a: '可以。雙面印刷充分利用紙張兩面，資訊量增加一倍。' },
       { q: '可以摺疊嗎？', a: '可以。對摺、三摺、Z 摺、開門摺等多種摺疊方式可選。' },
       { q: '單張最快多久可以取？', a: '數碼印刷即日交貨（100–500 張）；柯式印刷標準 2–3 天。' },
@@ -3446,7 +3446,7 @@ const postersContent: Record<string, CategoryLocaleContent> = {
         {
           heading: '1. 全尺寸覆蓋：A2 到 A0，室內到戶外一站搞定',
           points: [
-            '提供 A2(420×594mm)、A1(594×841mm)、A0(841×1189mm) 等標準尺寸，支持完全客製化大圖輸出',
+            '提供 A2(420×594mm)、A1(594×841mm)、A0(841×1189mm) 等標準尺寸，支持完全訂製大圖輸出',
             '滿足「海報印刷 香港」、「A1 海報」、「A0 大圖輸出」、「防水海報」等高搜索量關鍵詞',
             '室內海報（銅版紙、PP 合成紙）和戶外海報（PVC、帆布、網布）全覆蓋',
           ],
@@ -3495,7 +3495,7 @@ const postersContent: Record<string, CategoryLocaleContent> = {
     techSpecs: {
       title: '技術參數詳解',
       items: [
-        { label: '尺寸範圍', value: 'A2(420×594mm)、A1(594×841mm)、A0(841×1189mm)，支持完全客製化大圖輸出' },
+        { label: '尺寸範圍', value: 'A2(420×594mm)、A1(594×841mm)、A0(841×1189mm)，支持完全訂製大圖輸出' },
         { label: '起訂量', value: '1 張起訂（大圖輸出），10 張以上批量優惠' },
         { label: '交期', value: '即日交貨（大圖輸出，1–5 張）；標準 1–2 天（批量）；裱板額外 1 天' },
         { label: '解析度', value: '1440dpi 高精度噴墨輸出；小尺寸建議 150dpi，大尺寸 72–100dpi 即可' },
@@ -3527,7 +3527,7 @@ const postersContent: Record<string, CategoryLocaleContent> = {
       { q: '海報最快多久可以取？', a: '大圖輸出即日交貨（1–5 張）；批量標準 1–2 天；裱板額外 1 天。' },
       { q: '背膠會留殘膠嗎？', a: '可移除背膠不會留殘膠，適合短期展覽；永久背膠長期牢固但可能留微量殘膠。' },
       { q: '大圖輸出需要什麼解析度？', a: 'A2 建議 150dpi；A1/A0 建議 72–100dpi。過高解析度不會提升視覺效果。' },
-      { q: '可以客製化尺寸嗎？', a: '可以。支持完全客製化尺寸，最大寬度 1.5 米，長度不限。' },
+      { q: '可以訂製尺寸嗎？', a: '可以。支持完全訂製尺寸，最大寬度 1.5 米，長度不限。' },
       { q: '香港港島、九龍、新界都可以送貨嗎？', a: '可以。海報可捲筒包裝順豐寄送；裱板成品需妥善防撞，亦可安排貨車直送活動場地。請預留現場搬運通道。' },
       { q: '可以先報價再上傳設計檔嗎？', a: '可以。請提供輸出尺寸、數量、室內／戶外、材質（銅版／PP／PVC 等）及是否需要裱板或背膠；可先取得分段報價，再提交檔案並由印前確認解析度與出血。' },
     ],
@@ -3752,7 +3752,7 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
           points: [
             '燙金、燙銀、凹凸壓紋、局部 UV、絲網印刷等多種工藝，讓普通紙袋成為品牌傳播載體',
             '精準模切和糊袋工藝，承重可達 5–10kg，堅固耐用',
-            '免費刀模設計，支持完全客製化尺寸、形狀和開窗設計',
+            '免費刀模設計，支持完全訂製尺寸、形狀和開窗設計',
           ],
         },
       ],
@@ -3783,7 +3783,7 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
     techSpecs: {
       title: '技術參數詳解',
       items: [
-        { label: '標準尺寸', value: '小號(150×80×200mm)、中號(220×100×280mm)、大號(320×120×380mm)，支持完全客製化' },
+        { label: '標準尺寸', value: '小號(150×80×200mm)、中號(220×100×280mm)、大號(320×120×380mm)，支持完全訂製' },
         { label: '起訂量', value: '100 個起訂（數碼印刷），1,000 個以上柯式印刷更經濟' },
         { label: '交期', value: '標準 3–5 天（數碼）；5–7 天（柯式）；急件 2–3 天（數碼）；打樣 2–3 天' },
         { label: '承重能力', value: '標準紙袋承重 3–5kg；加厚版可達 8–10kg；底部加固可進一步提升' },
@@ -3821,7 +3821,7 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
       { q: '紙袋印刷最低多少個起？', a: '100 個起訂（數碼印刷）。1,000 個以上柯式印刷更經濟，單價低至 HK$1.5/個。' },
       { q: '紙袋有哪些材質？', a: '白卡紙、牛皮紙、黑卡紙、珠光紙、紋理紙、環保再生紙等 20+ 選擇。' },
       { q: '紙袋可以承重多少？', a: '標準紙袋承重 3–5kg；加厚版可達 8–10kg。' },
-      { q: '可以定制尺寸嗎？', a: '可以。支持完全客製化尺寸、形狀和開窗設計。' },
+      { q: '可以定制尺寸嗎？', a: '可以。支持完全訂製尺寸、形狀和開窗設計。' },
       { q: '紙袋最快多久可以取？', a: '數碼印刷 3–5 天；柯式印刷 5–7 天；急件 2–3 天。' },
       { q: '有哪些提手選擇？', a: '棉繩、紙繩、絲帶、皮繩。不同材質適合不同品牌風格。' },
       { q: '可以燙金或壓紋嗎？', a: '可以。燙金、燙銀、凹凸壓紋、局部 UV 等多種工藝均可選擇。' },
@@ -4079,7 +4079,7 @@ const japanDoujinContent: Record<string, CategoryLocaleContent> = {
         { material: '同人誌 內頁', features: '道林紙 90g / 蒙肯紙 80g | 單色或四色', scenarios: '漫畫 / 插畫本' },
         { material: '周邊貼紙', features: 'PVC 防水 / 透明 PET / 燙金 | 模切異形', scenarios: '角色貼 / LOGO 貼 / 贈品' },
         { material: '海報 / 立牌', features: 'PP 裱貼 / 雪銅紙 200g / 壓克力 5mm', scenarios: '展會裝飾 / 店面陳列' },
-        { material: '周邊包裝', features: '氣泡信封 / 牛皮紙信封 / 客製化紙盒', scenarios: '跨境運輸 / 禮贈包裝' },
+        { material: '周邊包裝', features: '氣泡信封 / 牛皮紙信封 / 訂製紙盒', scenarios: '跨境運輸 / 禮贈包裝' },
       ],
     },
     specialOptions: {
@@ -4128,7 +4128,7 @@ const japanDoujinContent: Record<string, CategoryLocaleContent> = {
       { q: '跨境配送到日本要多久？', a: 'DHL Express 2-4 個工作天到日本主要城市（東京 / 大阪 / 京都 / 福岡）。支持 DDP 含稅到門方案，收件人零稅務負擔。' },
       { q: '壓克力立牌厚度怎麼選？', a: '建議 5mm 起，太薄易碎；10mm+ 更有質感但成本高。標準尺寸 A5（148×210mm）或角色立繪定制尺寸皆可。' },
       { q: '同人誌裝訂方式怎麼選？', a: '騎馬釘適合 16-32 頁輕薄本；膠裝適合 40-100 頁中厚本；精裝適合 100+ 頁商業級同人誌。預算優先騎馬釘，品質優先膠裝。' },
-      { q: '周邊包裝可以客製化嗎？', a: '可以。氣泡信封、牛皮紙信封、客製化紙盒（印 LOGO）皆可。跨境運輸建議加 5mm 厚瓦楞內襯防壓。' },
+      { q: '周邊包裝可以訂製嗎？', a: '可以。氣泡信封、牛皮紙信封、訂製紙盒（印 LOGO）皆可。跨境運輸建議加 5mm 厚瓦楞內襯防壓。' },
     ],
   },
   en: {

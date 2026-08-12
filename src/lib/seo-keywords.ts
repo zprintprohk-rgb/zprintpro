@@ -39,7 +39,7 @@ export const SEO_KEYWORDS: SeoKeyword[] = [
       ja: '食品パッケージ印刷サービス。食品グレードの箱、袋、ステッカー。食品安全基準準拠。小ロット対応。無料見積もり、3-5日納品。',
     },
     h1: {
-      'zh-hk': '香港食品包裝印刷定制 — 智印港 ZprintPro',
+      'zh-hk': '香港食品包裝印刷定製 — 智印港 ZprintPro',
       en: 'Food Packaging Printing worldwide — ZprintPro',
       ja: '食品パッケージ印刷カスタマイズ — ZprintPro',
     },
@@ -90,12 +90,12 @@ export const SEO_KEYWORDS: SeoKeyword[] = [
       ja: '紙袋印刷 | ZprintPro',
     },
     description: {
-      'zh-hk': '香港紙袋印刷專家｜智印港提供牛皮紙袋、白卡紙袋、Kraft Paper Bag 印刷定制，支持小批量，免費設計打樣。服裝店/餐飲/零售首選紙袋印刷廠，立即在線報價！',
+      'zh-hk': '香港紙袋印刷專家｜智印港提供牛皮紙袋、白卡紙袋、Kraft Paper Bag 印刷定製，支持小批量，免費設計打樣。服裝店/餐飲/零售首選紙袋印刷廠，立即在線報價！',
       en: 'Paper bag printing worldwide. Kraft paper bags, white card bags. Small MOQ, free design proofing. Garment, F&B, retail. Get a quote now!',
       ja: '紙袋印刷。クラフト紙袋、白カード紙袋、Kraft Paper Bag。小ロット対応、無料デザインチャック。',
     },
     h1: {
-      'zh-hk': '香港紙袋印刷定制 — 牛皮紙袋 / 白卡紙袋 / 精品紙袋',
+      'zh-hk': '香港紙袋印刷定製 — 牛皮紙袋 / 白卡紙袋 / 精品紙袋',
       en: 'Paper Bag Printing — Kraft / White Card / Premium Bags',
       ja: '紙袋印刷カスタマイズ — クラフト / 白カード / プレミアム',
     },
@@ -144,23 +144,23 @@ export const SEO_KEYWORDS: SeoKeyword[] = [
   {
     slug: 'flyers',
     title: {
-      'zh-hk': '宣傳單張印刷 香港 | 智印港 ZprintPro — 傳單/單張/Leaflet 特價印刷',
+      'zh-hk': '傳單印刷印刷 香港 | 智印港 ZprintPro — 傳單/單張/Leaflet 特價印刷',
       en: 'Flyer Printing | ZprintPro',
       ja: 'チラシ印刷 | ZprintPro',
     },
     description: {
-      'zh-hk': '香港宣傳單張印刷｜智印港提供 A4/A5/DL 宣傳單張、Leaflet、傳單印刷，銅版紙/啞粉紙可選，500張起印，免費送貨。全港最低價保證，立即網上報價！',
+      'zh-hk': '香港傳單印刷印刷｜智印港提供 A4/A5/DL 傳單印刷、Leaflet、傳單印刷，銅版紙/啞粉紙可選，500張起印，免費送貨。全港最低價保證，立即網上報價！',
       en: 'Flyer printing worldwide. A4/A5/DL flyers, leaflets. Coated/matte paper. 500 pcs MOQ, free delivery. Best price guaranteed!',
       ja: 'チラシ印刷。A4/A5/DL チラシ、Leaflet。コート紙/マット紙。500枚から。',
     },
     h1: {
-      'zh-hk': '香港宣傳單張印刷 — 傳單 / 單張 / Leaflet 特價快印',
+      'zh-hk': '香港傳單印刷印刷 — 傳單 / 單張 / Leaflet 特價快印',
       en: 'Flyer Printing — Leaflet / Single Sheet / Discount Print',
       ja: 'チラシ印刷 — Leaflet / 単紙 / 特価印刷',
     },
-    keywords: ['宣傳單張', 'flyer printing', '傳單', 'leaflet'],
+    keywords: ['傳單印刷', 'flyer printing', '傳單', 'leaflet'],
     intro: {
-      'zh-hk': '香港宣傳單張印刷服務，智印港 ZprintPro 專業承接各類傳單/單張/Leaflet 印刷，價格透明，時效保證。',
+      'zh-hk': '香港傳單印刷印刷服務，智印港 ZprintPro 專業承接各類傳單/單張/Leaflet 印刷，價格透明，時效保證。',
       en: 'Professional flyer printing worldwide. ZprintPro handles all types of flyers, leaflets, and single sheets with transparent pricing and on-time delivery.',
       ja: 'チラシ印刷サービス。ZprintPro は全タイプのチラシ、Leaflet、単紙を透明価格と納期保証で対応。',
     },
@@ -194,7 +194,7 @@ export const SEO_KEYWORDS: SeoKeyword[] = [
       ],
     },
     outro: {
-      'zh-hk': '宣傳單張作為傳統銷售利器，搭配線上引流效果倍增。智印港專注香港本地印刷，上午落單下午出貨。立即聯絡獲取專屬報價，大量訂單更可享上門送稿服務。',
+      'zh-hk': '傳單印刷作為傳統銷售利器，搭配線上引流效果倍增。智印港專注香港本地印刷，上午落單下午出貨。立即聯絡獲取專屬報價，大量訂單更可享上門送稿服務。',
       en: 'Flyers remain a powerful offline sales tool — combined with online traffic, the effect doubles. ZprintPro specializes worldwide local print: morning order, afternoon dispatch. Click for a custom quote.',
       ja: 'チラシは伝統的な販売ツールとして依然強力 — オンライン集客と組み合わせ効果は倍増。ZprintPro はローカル印刷に特化。',
     },
@@ -213,7 +213,7 @@ export const SEO_KEYWORDS: SeoKeyword[] = [
       ja: 'メニュープリント。PVC防水、マット、箔加工。無料レイアウト、100冊から、3日納品。',
     },
     h1: {
-      'zh-hk': '香港餐牌印刷定制 — 菜單 / Menu / 酒水牌 專業印刷',
+      'zh-hk': '香港餐牌印刷定製 — 菜單 / Menu / 酒水牌 專業印刷',
       en: 'Menu Printing — Restaurant Menu / Wine List / Professional Print',
       ja: 'メニュープリント — レストランメニュー / ワインリスト',
     },
@@ -272,7 +272,7 @@ export const SEO_KEYWORDS: SeoKeyword[] = [
       ja: 'ポチ袋印刷。企業、婚礼、旧正月デザイン。箔、UV、スポットカラー。300個から。',
     },
     h1: {
-      'zh-hk': '香港利是封印刷定制 — 企業利是封 / 婚慶利是封 / 賀年利是封',
+      'zh-hk': '香港利是封印刷定製 — 企業利是封 / 婚慶利是封 / 賀年利是封',
       en: 'Lai See Printing — Corporate / Wedding / CNY Red Packets',
       ja: 'ポチ袋印刷 — 法人 / 婚礼 / 旧正月用',
     },

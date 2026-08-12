@@ -30,10 +30,10 @@ const TEXTS: Record<Locale, {
     from: '起',
     cats: {
       'paper-bags': { name: '紙袋印刷', hook: '牛皮紙 / 白卡 / 禮品袋' },
-      'flyers': { name: '宣傳單張', hook: 'A4/A5 傳單 · 最快即日' },
+      'flyers': { name: '傳單印刷', hook: 'A4/A5 傳單 · 最快即日' },
       'stickers': { name: '貼紙印刷', hook: '防水 / 透明 / 燙金' },
-      'packaging': { name: '包裝盒定制', hook: '禮盒 / 彩盒 / 郵寄盒' },
-      'posters': { name: '海報定制', hook: 'A1/A2 · 戶外可用' },
+      'packaging': { name: '包裝盒印刷', hook: '禮盒 / 彩盒 / 郵寄盒' },
+      'posters': { name: '海報印刷', hook: 'A1/A2 · 戶外可用' },
       'educational': { name: '校園印刷', hook: '練習簿 / 畢業紀念冊' },
     },
   },

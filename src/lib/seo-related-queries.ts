@@ -34,23 +34,23 @@ export const GSC_RELATED_QUERIES: RelatedQuery[] = [
     },
   },
   {
-    keyword: '宣傳單張',
+    keyword: '傳單印刷',
     impressions: 84,
     rank: 42.9,
     targetSlug: 'flyers',
     longTail: {
-      'zh-hk': ['宣傳單張印刷幾錢？', 'A4 宣傳單張尺寸幾多？', '哪裡印宣傳單張最平？'],
+      'zh-hk': ['傳單印刷印刷幾錢？', 'A4 傳單印刷尺寸幾多？', '哪裡印傳單印刷最平？'],
       en: ['How much does flyer printing cost?', 'What is A4 flyer size?', 'Where is the cheapest flyer printing?'],
       ja: ['チラシ印刷の料金は？', 'A4 チラシのサイズは？', '最も安いチラシ印刷は？'],
     },
   },
   {
-    keyword: '宣傳單張印刷',
+    keyword: '傳單印刷印刷',
     impressions: 73,
     rank: 40.42,
     targetSlug: 'flyers',
     longTail: {
-      'zh-hk': ['宣傳單張 A4 銅版紙印刷幾錢？', '即日取宣傳單張服務'], 
+      'zh-hk': ['傳單印刷 A4 銅版紙印刷幾錢？', '即日取傳單印刷服務'], 
       en: ['A4 coated paper flyer printing cost?', 'Same-day flyer pickup service'],
       ja: ['A4コート紙チラシ印刷の料金は？', '即日チラシ受取サービス'],
     },

@@ -39,7 +39,7 @@
           "src": "anchor-digital",
           "note": "数码印刷档 (50-300張主订单车道, user 2026-07-20)",
           "calibratedAt": "2026-07-20",
-          "sourceRef": "e-print.com.hk 數碼宣傳單張 A5 雙面 ×0.95"
+          "sourceRef": "e-print.com.hk 數碼傳單印刷 A5 雙面 ×0.95"
         },
         {
           "qty": 300,
@@ -48,7 +48,7 @@
           "src": "anchor-digital",
           "note": "数码印刷档 (50-300張主订单车道, user 2026-07-20)",
           "calibratedAt": "2026-07-20",
-          "sourceRef": "e-print.com.hk 數碼宣傳單張 A5 雙面 ×0.95"
+          "sourceRef": "e-print.com.hk 數碼傳單印刷 A5 雙面 ×0.95"
         },
         {
           "qty": 500,
@@ -64,7 +64,7 @@
           "src": "anchor",
           "note": "e-print $315×0.95≈$300, 正面交锋档",
           "calibratedAt": "2026-07-20",
-          "sourceRef": "e-print.com.hk 柯式宣傳單張 A5 157g ×0.95"
+          "sourceRef": "e-print.com.hk 柯式傳單印刷 A5 157g ×0.95"
         },
         {
           "qty": 1000,
@@ -72,7 +72,7 @@
           "unit": 0.35,
           "src": "anchor",
           "calibratedAt": "2026-07-20",
-          "sourceRef": "e-print.com.hk 柯式宣傳單張 A5 157g ×0.95"
+          "sourceRef": "e-print.com.hk 柯式傳單印刷 A5 157g ×0.95"
         },
         {
           "qty": 2000,
@@ -80,7 +80,7 @@
           "unit": 0.2,
           "src": "anchor",
           "calibratedAt": "2026-07-20",
-          "sourceRef": "e-print.com.hk 柯式宣傳單張 A5 157g ×0.95"
+          "sourceRef": "e-print.com.hk 柯式傳單印刷 A5 157g ×0.95"
         },
         {
           "qty": 3000,
@@ -88,7 +88,7 @@
           "unit": 0.17,
           "src": "anchor",
           "calibratedAt": "2026-07-20",
-          "sourceRef": "e-print.com.hk 柯式宣傳單張 A5 157g ×0.95"
+          "sourceRef": "e-print.com.hk 柯式傳單印刷 A5 157g ×0.95"
         },
         {
           "qty": 5000,
@@ -96,7 +96,7 @@
           "unit": 0.14,
           "src": "anchor",
           "calibratedAt": "2026-07-20",
-          "sourceRef": "e-print.com.hk 柯式宣傳單張 A5 157g ×0.95"
+          "sourceRef": "e-print.com.hk 柯式傳單印刷 A5 157g ×0.95"
         }
       ]
     },
@@ -115,7 +115,7 @@
           "src": "anchor-digital",
           "note": "数码印刷档 (50-300張主订单车道, user 2026-07-20)",
           "calibratedAt": "2026-07-20",
-          "sourceRef": "e-print.com.hk 數碼宣傳單張 A4 雙面 ×0.95"
+          "sourceRef": "e-print.com.hk 數碼傳單印刷 A4 雙面 ×0.95"
         },
         {
           "qty": 300,
@@ -123,7 +123,7 @@
           "unit": 2.37,
           "src": "anchor-digital",
           "calibratedAt": "2026-07-20",
-          "sourceRef": "e-print.com.hk 數碼宣傳單張 A4 雙面 ×0.95",
+          "sourceRef": "e-print.com.hk 數碼傳單印刷 A4 雙面 ×0.95",
           "note": "数码印刷档 (50-300張主订单车道, user 2026-07-20)"
         },
         {
@@ -132,7 +132,7 @@
           "unit": 1.04,
           "src": "anchor",
           "calibratedAt": "2026-07-20",
-          "sourceRef": "e-print.com.hk 柯式宣傳單張 A4 157g 4C+4C ×0.95"
+          "sourceRef": "e-print.com.hk 柯式傳單印刷 A4 157g 4C+4C ×0.95"
         },
         {
           "qty": 1000,
@@ -141,7 +141,7 @@
           "src": "anchor",
           "note": "e-print A4 价表待补, 按 A5×1.5 估算",
           "calibratedAt": "2026-07-20",
-          "sourceRef": "e-print.com.hk 柯式宣傳單張 A4 157g 4C+4C ×0.95"
+          "sourceRef": "e-print.com.hk 柯式傳單印刷 A4 157g 4C+4C ×0.95"
         },
         {
           "qty": 2000,
@@ -149,7 +149,7 @@
           "unit": 0.45,
           "src": "anchor",
           "calibratedAt": "2026-07-20",
-          "sourceRef": "e-print.com.hk 柯式宣傳單張 A4 157g 4C+4C ×0.95"
+          "sourceRef": "e-print.com.hk 柯式傳單印刷 A4 157g 4C+4C ×0.95"
         },
         {
           "qty": 5000,
@@ -157,7 +157,7 @@
           "unit": 0.31,
           "src": "anchor",
           "calibratedAt": "2026-07-20",
-          "sourceRef": "e-print.com.hk 柯式宣傳單張 A4 157g 4C+4C ×0.95"
+          "sourceRef": "e-print.com.hk 柯式傳單印刷 A4 157g 4C+4C ×0.95"
         }
       ]
     },

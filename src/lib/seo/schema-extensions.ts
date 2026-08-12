@@ -127,12 +127,12 @@ export function getCategoryHowToSteps(
   }> = {
     packaging: {
       name: {
-        'zh-hk': `${brand}客製化包裝盒製作工藝`,
+        'zh-hk': `${brand}訂製包裝盒製作工藝`,
         en: `${brand} Custom Packaging Box Production Process`,
         ja: `${brand} カスタムパッケージボックス制作工程`,
       },
       description: {
-        'zh-hk': '從刀模設計到打樣到量產，5-7 個關鍵步驟完成一個客製化包裝盒。',
+        'zh-hk': '從刀模設計到打樣到量產，5-7 個關鍵步驟完成一個訂製包裝盒。',
         en: 'From die-cut design to sampling to mass production — 5-7 key steps to complete a custom packaging box.',
         ja: '型設計からサンプル作成、量産まで5-7の重要ステップでカスタムパッケージボックスを完成。',
       },
@@ -208,7 +208,7 @@ export function getCategoryHowToSteps(
     },
     books: {
       name: {
-        'zh-hk': `${brand}客製化精裝書/畫冊製作工藝`,
+        'zh-hk': `${brand}訂製精裝書/畫冊製作工藝`,
         en: `${brand} Custom Hardcover Book / Catalog Production Process`,
         ja: `${brand} カスタム上製本/カタログ制作工程`,
       },
@@ -250,7 +250,7 @@ export function getCategoryHowToSteps(
     },
     calendars: {
       name: {
-        'zh-hk': `${brand}客製化年曆/相框年曆製作工藝`,
+        'zh-hk': `${brand}訂製年曆/相框年曆製作工藝`,
         en: `${brand} Custom Calendar / Photo Frame Calendar Production Process`,
         ja: `${brand} カスタムカレンダー/フォトフレームカレンダー制作工程`,
       },
@@ -398,7 +398,7 @@ export const authorByLocale: Record<Locale, AuthorInfo> = {
 /**
  * 增强版 Article Schema（Person author + speakable + inLanguage）
  * 包装 src/lib/seo.ts:1201 已有的 generateArticleSchema，
- * 强制 author 是 Person 类型而不是 Organization（E-E-A-T 关键）。
+ * 强製 author 是 Person 类型而不是 Organization（E-E-A-T 关键）。
  */
 export interface BlogArticleInput {
   title: string;
@@ -447,14 +447,14 @@ export function generateBlogArticleJsonLd(input: BlogArticleInput, locale: Local
 }
 
 // ============================================================================
-// Category ItemList (P0-5 修复：url + name 显式兜底，强制 SITE_URL)
+// Category ItemList (P0-5 修复：url + name 显式兜底，强製 SITE_URL)
 // ============================================================================
 
 import type { Product } from '@/data/products';
 
 /**
  * 生成分类页 ItemList schema
- * 修复 P0-5：url 强制 process.env.NEXT_PUBLIC_SITE_URL || 'https://zprintpro.com'
+ * 修复 P0-5：url 强製 process.env.NEXT_PUBLIC_SITE_URL || 'https://zprintpro.com'
  * 每个 ListItem 含 position / url / name（name 按 locale 选 product.name / nameEn / nameJa）
  *
  * 2026-07-09 PM+UX+SEO 复盘 v2 增强：ListItem 内嵌 Product schema (含 price/MOQ/availability)，

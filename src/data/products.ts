@@ -80,7 +80,7 @@ export interface Category {
 export const categories: Category[] = [
   // 六大核心主营分类（按全球市场搜索量+利润率+战略优先级排序）
   { slug: 'stickers', name: '貼紙印刷 / 透明貼 / 防水貼', nameEn: 'Stickers / Waterproof / Transparent', nameJa: 'ステッカー / 透明 / 防水', name_zh: '貼紙印刷 / 透明貼 / 防水貼', name_en: 'Stickers / Waterproof / Transparent', name_ja: 'ステッカー / 透明 / 防水', sort_order: 1 },
-  { slug: 'flyers', name: '宣傳單張', nameEn: 'Flyers', nameJa: 'チラシ印刷', name_zh: '宣傳單張', name_en: 'Flyers', name_ja: 'チラシ印刷', sort_order: 2 },
+  { slug: 'flyers', name: '傳單印刷', nameEn: 'Flyers', nameJa: 'チラシ印刷', name_zh: '傳單印刷', name_en: 'Flyers', name_ja: 'チラシ印刷', sort_order: 2 },
   { slug: 'packaging', name: '包裝盒定製', nameEn: 'Packaging', nameJa: 'パッケージ印刷', name_zh: '包裝盒定製', name_en: 'Packaging', name_ja: 'パッケージ印刷', sort_order: 3 },
   { slug: 'posters', name: '海報印刷', nameEn: 'Posters', nameJa: 'ポスター印刷', name_zh: '海報印刷', name_en: 'Posters', name_ja: 'ポスター印刷', sort_order: 4 },
   { slug: 'paper-bags', name: '紙袋印刷 / 訂做紙袋', nameEn: 'Paper Bags / Custom', nameJa: '紙袋印刷 / カスタム', name_zh: '紙袋印刷 / 訂做紙袋', name_en: 'Paper Bags / Custom', name_ja: '紙袋印刷 / カスタム', sort_order: 5 },
@@ -6113,7 +6113,7 @@ export const products: Product[] = [
     },
   },
   },
-  // 宣傳單張 (7 SKU) — 保留即日宣傳單張作为SEO流量入口
+  // 傳單印刷 (7 SKU) — 保留即日傳單印刷作为SEO流量入口
   {
     id: 'FL-001',
     sku_code: 'FL-001',
@@ -6122,8 +6122,8 @@ export const products: Product[] = [
     optimizationRound: 2,
     category: 'flyers',
     category_slug: 'flyers',
-    name: 'A4宣傳單張 | 宣傳單張 / 折頁 / A4/A5', nameEn: 'A4 Flyers | A4/A5 Flyers & Leaflets', nameJa: 'A4チラシ | A4/A5 チラシ・フライヤー', title_zh: 'A4傳單印刷 100張起印 HK$0.3/張 雙面彩印 | 智印雲 ZprintPro',
-    description: 'A4傳單印刷訂製，100張起印，HK$0.3起/張。157g銅版紙雙面四色印刷，免費設計打樣。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. **適配行業**：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。', descriptionEn: 'Standard A4 size, most common flyer format. 157g glossy paper, 4-color printing, vibrant colors., ISO 9001:2015 certified quality management system 适配行业: Food delivery, Real estate, Retail, Education, Events, Beauty, Community. **Best for**: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.', descriptionJa: '標準A4サイズ、最も一般的なチラシ形式。157gコート紙、4色印刷、鮮やかな色彩。 适配行业: 飲食デリバリー、不動産、小売、教育、イベント、美容、コミュニティ. **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。', description_zh: '標準A4尺寸，最常用的宣傳單張規格。157g銅版紙，四色印刷，色彩鮮豔。適合產品推廣、活動宣傳。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心.',
+    name: 'A4傳單印刷 | 傳單印刷 / 折頁 / A4/A5', nameEn: 'A4 Flyers | A4/A5 Flyers & Leaflets', nameJa: 'A4チラシ | A4/A5 チラシ・フライヤー', title_zh: 'A4傳單印刷 100張起印 HK$0.3/張 雙面彩印 | 智印雲 ZprintPro',
+    description: 'A4傳單印刷訂製，100張起印，HK$0.3起/張。157g銅版紙雙面四色印刷，免費設計打樣。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. **適配行業**：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。', descriptionEn: 'Standard A4 size, most common flyer format. 157g glossy paper, 4-color printing, vibrant colors., ISO 9001:2015 certified quality management system 适配行业: Food delivery, Real estate, Retail, Education, Events, Beauty, Community. **Best for**: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.', descriptionJa: '標準A4サイズ、最も一般的なチラシ形式。157gコート紙、4色印刷、鮮やかな色彩。 适配行业: 飲食デリバリー、不動産、小売、教育、イベント、美容、コミュニティ. **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。', description_zh: '標準A4尺寸，最常用的傳單印刷規格。157g銅版紙，四色印刷，色彩鮮豔。適合產品推廣、活動宣傳。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心.',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -6155,7 +6155,7 @@ export const products: Product[] = [
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲（ZprintPro）已為多個國際餐廳、補習社、零售店提供宣傳單張印製服務。10 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印雲（ZprintPro）已為多個國際餐廳、補習社、零售店提供傳單印刷印製服務。10 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加印 QR Code 連結報名系統、會員系統、線上點餐。免費排版與出血檢查。</p>
@@ -6418,7 +6418,7 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-flyers-a4-flyers-zh-hk.webp', en: 'zprintpro-flyers-a4-flyers-en.webp', ja: 'zprintpro-flyers-a4-flyers-ja.webp' },
     alt: {
-      'zh-hk': '宣傳單張 / 折頁 / 彩頁 | 香港A4宣傳單張印刷 157g銅版紙 覆膜（啞膜／光膜可選）',
+      'zh-hk': '傳單印刷 / 折頁 / 彩頁 | 香港A4傳單印刷印刷 157g銅版紙 覆膜（啞膜／光膜可選）',
       en: 'Flyer Printing & Leaflet Design | A4 Flyers | Professional Flyers Online',
       ja: 'チラシ印刷 / 折込フライヤー | A4チラシ | 高画質オフセット・短納期対応 | ZprintPro'
     },
@@ -6455,9 +6455,9 @@ export const products: Product[] = [
     optimizationRound: 2,
     category: 'flyers',
     category_slug: 'flyers',
-    name: 'A5宣傳單張 | 宣傳單張 / 折頁 / A4/A5', nameEn: 'A5 Flyers | A4/A5 Flyers & Leaflets', nameJa: 'A5チラシ | A4/A5 チラシ・フライヤー', title_zh: 'A5傳單印刷 100張起印 雙面四色 免費設計 | 智印雲 ZprintPro',
+    name: 'A5傳單印刷 | 傳單印刷 / 折頁 / A4/A5', nameEn: 'A5 Flyers | A4/A5 Flyers & Leaflets', nameJa: 'A5チラシ | A4/A5 チラシ・フライヤー', title_zh: 'A5傳單印刷 100張起印 雙面四色 免費設計 | 智印雲 ZprintPro',
     description: 'A5傳單印刷訂製，100張起印，HK$0.18起/張。157g銅版紙雙面四色，免費設計排版。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'A5 size, economical, perfect for mass distribution. First choice for food delivery, flash events. 适配行业: Food delivery, Real estate, Retail, Education, Events, Beauty, Community. **Best for**: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: 'A5サイズ、経済的、大量配布に最適。フードデリバリー、フラッシュイベントの第一選択。 适配行业: 飲食デリバリー、不動産、小売、教育、イベント、美容、コミュニティ. **適合業種**: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: 'A5尺寸，經濟實惠，適合大量派發。餐飲外賣、快閃活動首選。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動',
-    longDescription: `智印雲A5宣傳單張採用128g銅版紙或100g書紙，配合四色數碼印刷，經濟實惠且色彩鮮豔。A5尺寸（148×210mm）適合大量派發，成本較A4降低約40%，是餐飲外賣、快閃活動及社區宣傳的首選。可選單面或雙面印刷，並支援二維碼與優惠券設計。我們提供免費排版與出血檢查，確保裁切精準。與分類頁內容一致，材質關鍵詞包含：A5單張、銅版紙、書紙、數碼印刷。<h3>傳單尺寸對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">尺寸</th><th class="p-2 text-center">資訊容量</th><th class="p-2 text-center">派發效率</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用場景</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">A4 (210×297mm)</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">詳細產品目錄、課程介紹</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5 (148×210mm)</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">餐飲外賣、活動宣傳</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">A6 (105×148mm)</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">街頭派發、外賣插頁</td></tr></tbody></table><h3>傳單尺寸對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">尺寸</th><th class="p-2 text-center">資訊容量</th><th class="p-2 text-center">派發效率</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用場景</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">A4 (210×297mm)</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">詳細產品目錄、課程介紹</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5 (148×210mm)</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">餐飲外賣、活動宣傳</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">A6 (105×148mm)</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">街頭派發、外賣插頁</td></tr></tbody></table>
+    longDescription: `智印雲A5傳單印刷採用128g銅版紙或100g書紙，配合四色數碼印刷，經濟實惠且色彩鮮豔。A5尺寸（148×210mm）適合大量派發，成本較A4降低約40%，是餐飲外賣、快閃活動及社區宣傳的首選。可選單面或雙面印刷，並支援二維碼與優惠券設計。我們提供免費排版與出血檢查，確保裁切精準。與分類頁內容一致，材質關鍵詞包含：A5單張、銅版紙、書紙、數碼印刷。<h3>傳單尺寸對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">尺寸</th><th class="p-2 text-center">資訊容量</th><th class="p-2 text-center">派發效率</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用場景</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">A4 (210×297mm)</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">詳細產品目錄、課程介紹</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5 (148×210mm)</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">餐飲外賣、活動宣傳</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">A6 (105×148mm)</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">街頭派發、外賣插頁</td></tr></tbody></table><h3>傳單尺寸對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">尺寸</th><th class="p-2 text-center">資訊容量</th><th class="p-2 text-center">派發效率</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用場景</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">A4 (210×297mm)</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">詳細產品目錄、課程介紹</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5 (148×210mm)</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">餐飲外賣、活動宣傳</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">A6 (105×148mm)</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">街頭派發、外賣插頁</td></tr></tbody></table>
 
 **智印雲 國際印刷**：深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。
 
@@ -6613,7 +6613,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-flyers-a5-flyers-zh-hk.webp', en: 'zprintpro-flyers-a5-flyers-en.webp', ja: 'zprintpro-flyers-a5-flyers-ja.webp' },
     alt: {
-      'zh-hk': '宣傳單張 / 折頁 / 彩頁 | 香港A5宣傳單張印刷 128g銅版紙 覆膜（啞膜／光膜可選）',
+      'zh-hk': '傳單印刷 / 折頁 / 彩頁 | 香港A5傳單印刷印刷 128g銅版紙 覆膜（啞膜／光膜可選）',
       en: 'Flyer Printing & Leaflet Design | A5 Flyers | Professional Flyers Online',
       ja: 'チラシ印刷 / 折込フライヤー | A5チラシ | 高画質オフセット・短納期対応 | ZprintPro'
     },
@@ -6628,7 +6628,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
         optimizationRound: 1,
     category: 'flyers',
     category_slug: 'flyers',
-    name: '雙面宣傳單張 | 宣傳單張 / 折頁 / A4/A5', nameEn: 'Double-sided Flyers | A4/A5 Flyers & Leaflets', nameJa: '両面チラシ | A4/A5 チラシ・フライヤー', title_zh: '雙面宣傳單張',
+    name: '雙面傳單印刷 | 傳單印刷 / 折頁 / A4/A5', nameEn: 'Double-sided Flyers | A4/A5 Flyers & Leaflets', nameJa: '両面チラシ | A4/A5 チラシ・フライヤー', title_zh: '雙面傳單印刷',
     description: '雙面全彩印刷，信息容量翻倍。正面吸引眼球，背面詳細介紹。 適配行業: 餐飲外賣、房地產、教育培訓、活動展會、美容美髮、社區中心、零售品牌.', descriptionEn: 'Double-sided full color printing, doubled information capacity. 适配行业: Food delivery, Real estate, Education & Training, Events & Exhibitions, Beauty salons, Community centers, Retail brands.', descriptionJa: '両面フルカラー印刷、情報容量が2倍。 适配行业: 飲食デリバリー、不動産、教育・研修、イベント・展示会、美容室、コミュニティセンター、小売ブランド。', description_zh: '雙面全彩印刷，信息容量翻倍。正面吸引眼球，背面詳細介紹。 適配行業: 餐飲外賣、房地產、教育培訓、活動展會、美容美髮、社區中心、零售品牌.',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -6661,7 +6661,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲（ZprintPro）已為多個國際餐廳、補習社、零售店提供宣傳單張印製服務。10 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印雲（ZprintPro）已為多個國際餐廳、補習社、零售店提供傳單印刷印製服務。10 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加印 QR Code 連結報名系統、會員系統、線上點餐。免費排版與出血檢查。</p>
@@ -6800,7 +6800,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-flyers-double-sided-flyers-zh-hk.webp', en: 'zprintpro-flyers-double-sided-flyers-en.webp', ja: 'zprintpro-flyers-double-sided-flyers-ja.webp' },
     alt: {
-      'zh-hk': '宣傳單張 / 折頁 / 彩頁 | 香港雙面宣傳單張印刷 157g銅版紙 覆膜（啞膜／光膜可選）',
+      'zh-hk': '傳單印刷 / 折頁 / 彩頁 | 香港雙面傳單印刷印刷 157g銅版紙 覆膜（啞膜／光膜可選）',
       en: 'Flyer Printing & Leaflet Design | Double-sided Flyers | Professional Flyers Online',
       ja: 'チラシ印刷 / 折込フライヤー | 両面チラシ | 高画質オフセット・短納期対応 | ZprintPro'
     },
@@ -6814,8 +6814,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     optimizationRound: 1,
     category: 'flyers',
     category_slug: 'flyers',
-    name: '摺疊宣傳單張 | 宣傳單張 / 折頁 / A4/A5', nameEn: 'Folded Leaflets | A4/A5 Flyers & Leaflets', nameJa: '折りたたみパンフレット | A4/A5 チラシ・フライヤー', title_zh: '折疊傳單印刷 A4 雙面 對摺三摺 · 餐廳菜單地產樓書活動宣傳適配 | 智印雲 ZprintPro',
-    description: '三摺雙摺宣傳單印刷訂製，100張起印，HK$0.45起/張。157g-250g銅版紙，免費摺頁設計排版。適合企業簡介產品目錄活動宣傳，3-5天交貨，全港送貨。 **适配行业**:餐廳菜單地產樓書、活動宣傳單張、學校院院校刊、培訓機構課程表、旅遊景點導覽、零售品牌推廣 **適配行業**：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。', descriptionEn: 'Bi-fold or tri-fold design, can display more information. **Best for**:restaurant menus, real estate brochures, event flyers, school & college publications, training course catalogues, tourism guidebooks, retail brand promotions **Best for**: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.', descriptionJa: '二つ折りまたは三つ折りデザイン、より多くの情報を表示可能。 **適用業界**:レストランメニュー、不動産パンフレット、イベントチラシ、学校・大学・機関紙、研修コースカタログ、観光ガイド、小売ブランド **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。', description_zh: '對摺或三摺設計，可展示更多信息。適合產品目錄、服務介紹。',
+    name: '摺疊傳單印刷 | 傳單印刷 / 折頁 / A4/A5', nameEn: 'Folded Leaflets | A4/A5 Flyers & Leaflets', nameJa: '折りたたみパンフレット | A4/A5 チラシ・フライヤー', title_zh: '折疊傳單印刷 A4 雙面 對摺三摺 · 餐廳菜單地產樓書活動宣傳適配 | 智印雲 ZprintPro',
+    description: '三摺雙摺宣傳單印刷訂製，100張起印，HK$0.45起/張。157g-250g銅版紙，免費摺頁設計排版。適合企業簡介產品目錄活動宣傳，3-5天交貨，全港送貨。 **适配行业**:餐廳菜單地產樓書、活動傳單印刷、學校院院校刊、培訓機構課程表、旅遊景點導覽、零售品牌推廣 **適配行業**：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。', descriptionEn: 'Bi-fold or tri-fold design, can display more information. **Best for**:restaurant menus, real estate brochures, event flyers, school & college publications, training course catalogues, tourism guidebooks, retail brand promotions **Best for**: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.', descriptionJa: '二つ折りまたは三つ折りデザイン、より多くの情報を表示可能。 **適用業界**:レストランメニュー、不動産パンフレット、イベントチラシ、学校・大学・機関紙、研修コースカタログ、観光ガイド、小売ブランド **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。', description_zh: '對摺或三摺設計，可展示更多信息。適合產品目錄、服務介紹。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -6847,7 +6847,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲（ZprintPro）已為多個國際餐廳、補習社、零售店提供宣傳單張印製服務。10 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印雲（ZprintPro）已為多個國際餐廳、補習社、零售店提供傳單印刷印製服務。10 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加印 QR Code 連結報名系統、會員系統、線上點餐。免費排版與出血檢查。</p>
@@ -6984,7 +6984,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-flyers-folded-leaflets-zh-hk.webp', en: 'zprintpro-flyers-folded-leaflets-en.webp', ja: 'zprintpro-flyers-folded-leaflets-ja.webp' },
     alt: {
-      'zh-hk': '宣傳單張 / 折頁 / 彩頁 | 香港摺疊宣傳單張印刷 157g 壓線',
+      'zh-hk': '傳單印刷 / 折頁 / 彩頁 | 香港摺疊傳單印刷印刷 157g 壓線',
       en: 'Flyer Printing & Leaflet Design | Folded Leaflets | Professional Flyers Online',
       ja: 'チラシ印刷 / 折込フライヤー | 折りたたみパンフレット | 高画質オフセット・短納期対応 | ZprintPro'
     },
@@ -6998,7 +6998,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     optimizationRound: 1,
     category: 'flyers',
     category_slug: 'flyers',
-    name: '厚紙宣傳單張 | 宣傳單張 / 折頁 / A4/A5', nameEn: 'Thick Paper Flyers | A4/A5 Flyers & Leaflets', nameJa: '厚紙チラシ | A4/A5 チラシ・フライヤー', title_zh: '厚紙宣傳單張',
+    name: '厚紙傳單印刷 | 傳單印刷 / 折頁 / A4/A5', nameEn: 'Thick Paper Flyers | A4/A5 Flyers & Leaflets', nameJa: '厚紙チラシ | A4/A5 チラシ・フライヤー', title_zh: '厚紙傳單印刷',
     description: '200g以上厚紙，質感更佳，不易折損。適合高端產品宣傳。 **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: '200g+ thick paper, better texture, not easily damaged. From 25 pieces · Free shipping over $99 USA · 24h rush available. Ideal for restaurant opening, retail promo, event marketing. **Best for**: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: '200g以上の厚紙、質感が良く折れにくい。。25枚から対応・全国送料込み・翌日特急対応。飲食店開業・小売プロモーション・イベント营销に最適。 **適合業種**: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: '200g以上厚紙，質感更佳，不易折損。適合高端產品宣傳。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -7031,7 +7031,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲（ZprintPro）已為多個國際餐廳、補習社、零售店提供宣傳單張印製服務。10 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印雲（ZprintPro）已為多個國際餐廳、補習社、零售店提供傳單印刷印製服務。10 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加印 QR Code 連結報名系統、會員系統、線上點餐。免費排版與出血檢查。</p>
@@ -7168,7 +7168,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-flyers-thick-paper-flyers-zh-hk.webp', en: 'zprintpro-flyers-thick-paper-flyers-en.webp', ja: 'zprintpro-flyers-thick-paper-flyers-ja.webp' },
     alt: {
-      'zh-hk': '宣傳單張 / 折頁 / 彩頁 | 香港厚紙宣傳單張印刷 200g 覆膜（啞膜／光膜可選）',
+      'zh-hk': '傳單印刷 / 折頁 / 彩頁 | 香港厚紙傳單印刷印刷 200g 覆膜（啞膜／光膜可選）',
       en: 'Flyer Printing & Leaflet Design | Thick Paper Flyers | Professional Flyers Online',
       ja: 'チラシ印刷 / 折込フライヤー | 厚紙チラシ | 高画質オフセット・短納期対応 | ZprintPro'
     },
@@ -7182,7 +7182,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     optimizationRound: 1,
     category: 'flyers',
     category_slug: 'flyers',
-    name: '環保宣傳單張 | 宣傳單張 / 折頁 / A4/A5', nameEn: 'Eco Flyers | A4/A5 Flyers & Leaflets', nameJa: 'エコチラシ | A4/A5 チラシ・フライヤー', title_zh: '環保宣傳單張',
+    name: '環保傳單印刷 | 傳單印刷 / 折頁 / A4/A5', nameEn: 'Eco Flyers | A4/A5 Flyers & Leaflets', nameJa: 'エコチラシ | A4/A5 チラシ・フライヤー', title_zh: '環保傳單印刷',
     description: '環保紙張印刷，展現企業責任。適合環保主題活動。 **適配行業**: 環保主題活動/ESG 報告/社會企業/有機品牌/校園推廣/餐廳菜單/咖啡烘焙.', descriptionEn: 'Eco-friendly paper printing, showing corporate responsibility. 100% recycled paper · 50 MOQ · Free shipping over $99 USA. Eco-friendly marketing for sustainable brands. **Best for**: eco campaigns / ESG reports / social enterprises / organic brands / school promotion / restaurant menus / coffee roasters.', descriptionJa: '環境に優しい紙の印刷、企業の責任を示す。。再生紙100%・50枚から・全国送料込み。サステナブルブランド向けエコマーケティング。 **適合業種**: エコキャンペーン / ESGレポート / 社会企業 / オーガニックブランド / 学校推广 / レストランメニュー / コーヒー焙煎.', description_zh: '環保紙張印刷，展現企業責任。適合環保主題活動。 **適配行業**: 環保主題活動/ESG 報告/社會企業/有機品牌/校園推廣/餐廳菜單/咖啡烘焙.',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -7215,7 +7215,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲（ZprintPro）已為多個國際餐廳、補習社、零售店提供宣傳單張印製服務。10 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印雲（ZprintPro）已為多個國際餐廳、補習社、零售店提供傳單印刷印製服務。10 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加印 QR Code 連結報名系統、會員系統、線上點餐。免費排版與出血檢查。</p>
@@ -7355,7 +7355,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-flyers-eco-flyers-zh-hk.webp', en: 'zprintpro-flyers-eco-flyers-en.webp', ja: 'zprintpro-flyers-eco-flyers-ja.webp' },
     alt: {
-      'zh-hk': '宣傳單張 / 折頁 / 彩頁 | 香港環保宣傳單張印刷 FSC認證再生紙 無覆膜（環保）或水性光油',
+      'zh-hk': '傳單印刷 / 折頁 / 彩頁 | 香港環保傳單印刷印刷 FSC認證再生紙 無覆膜（環保）或水性光油',
       en: 'Flyer Printing & Leaflet Design | Eco Flyers | Professional Flyers Online',
       ja: 'チラシ印刷 / 折込フライヤー | エコチラシ | 高画質オフセット・短納期対応 | ZprintPro'
     },
@@ -7369,7 +7369,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     optimizationRound: 1,
     category: 'flyers',
     category_slug: 'flyers',
-    name: '即日宣傳單張 | 宣傳單張 / 折頁 / A4/A5', nameEn: 'Same-day Flyers | A4/A5 Flyers & Leaflets', nameJa: '即日チラシ | A4/A5 チラシ・フライヤー', title_zh: '即日宣傳單張',
+    name: '即日傳單印刷 | 傳單印刷 / 折頁 / A4/A5', nameEn: 'Same-day Flyers | A4/A5 Flyers & Leaflets', nameJa: '即日チラシ | A4/A5 チラシ・フライヤー', title_zh: '即日傳單印刷',
     description: '緊急活動首選，最快當天交貨。即日印刷、即日快遞出貨，急件不擔心。 **適配行業**：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。', descriptionEn: 'First choice for emergency events, same-day printing and courier delivery available. **Best for**: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.', descriptionJa: '緊急イベントの第一選択、最短当日印刷・宅配便発送。 **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。', description_zh: '緊急活動首選，最快當天交貨。即日印刷、即日快遞出貨，急件不擔心。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -7402,7 +7402,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲（ZprintPro）已為多個國際餐廳、補習社、零售店提供宣傳單張印製服務。10 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印雲（ZprintPro）已為多個國際餐廳、補習社、零售店提供傳單印刷印製服務。10 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加印 QR Code 連結報名系統、會員系統、線上點餐。免費排版與出血檢查。</p>
@@ -7519,7 +7519,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-flyers-same-day-flyers-zh-hk.webp', en: 'zprintpro-flyers-same-day-flyers-en.webp', ja: 'zprintpro-flyers-same-day-flyers-ja.webp' },
     alt: {
-      'zh-hk': '宣傳單張 / 折頁 / 彩頁 | 香港即日宣傳單張印刷 157g銅版紙 無覆膜或啞膜（加時）',
+      'zh-hk': '傳單印刷 / 折頁 / 彩頁 | 香港即日傳單印刷印刷 157g銅版紙 無覆膜或啞膜（加時）',
       en: 'Flyer Printing & Leaflet Design | Same-day Flyers | Professional Flyers Online',
       ja: 'チラシ印刷 / 折込フライヤー | 即日チラシ | 高画質オフセット・短納期対応 | ZprintPro'
     },
@@ -9265,7 +9265,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     ],
     specs: {
       material: '350g 食品級白卡／400g 灰底白板；PE 淋膜或 PLA 內層',
-      size: '完全客製化，常見 15×10×5cm 至 25×20×8cm',
+      size: '完全訂製，常見 15×10×5cm 至 25×20×8cm',
       printMethod: '四色柯式或數碼（依數量）',
       finishing: '燙金／燙銀、窗口（PET）、局部 UV、覆膜',
     },
@@ -10546,7 +10546,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     ],
     specs: {
       material: '120g–150g紅色或特殊色紙張',
-      size: '完全客製化',
+      size: '完全訂製',
       printMethod: '四色印刷＋燙金／UV',
       finishing: '燙金、局部UV、壓凹、異形模切',
     },
@@ -11205,14 +11205,14 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <ul>
   <li>正面印精美圖片、品牌資訊或企業 logo，背面印備忘欄供書寫</li>
   <li>可加燙金標誌、局部光油，封面色彩更顯品牌檔次</li>
-  <li>支援完全客製化企業故事、品牌資訊、產品特色</li>
+  <li>支援完全訂製企業故事、品牌資訊、產品特色</li>
 </ul>
 
 <h3>已服務的本地客戶</h3>
 <p>智印雲已為 31 間香港企業、9 間銀行、6 間 NGO、41 間餐廳、14 間攝影師提供年度月曆禮品印製服務。50 本起印，48 小時快遞，紙材通過 SGS 認證，FSC 環保紙。</p>
 
 <h3>可選加值服務</h3>
-<p>可加燙金、UV 局部工藝、客製化封面、座枱結構設計。聖誕新年企業禮品首選。</p>
+<p>可加燙金、UV 局部工藝、訂製封面、座枱結構設計。聖誕新年企業禮品首選。</p>
 
 <p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
@@ -11380,14 +11380,14 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <ul>
   <li>正面印精美圖片、品牌資訊或企業 logo，背面印備忘欄供書寫</li>
   <li>可加燙金標誌、局部光油，封面色彩更顯品牌檔次</li>
-  <li>支援完全客製化企業故事、品牌資訊、產品特色</li>
+  <li>支援完全訂製企業故事、品牌資訊、產品特色</li>
 </ul>
 
 <h3>已服務的本地客戶</h3>
 <p>智印雲已為 31 間香港企業、9 間銀行、6 間 NGO、41 間餐廳、14 間攝影師提供年度月曆禮品印製服務。50 本起印，48 小時快遞，紙材通過 SGS 認證，FSC 環保紙。</p>
 
 <h3>可選加值服務</h3>
-<p>可加燙金、UV 局部工藝、客製化封面、座枱結構設計。聖誕新年企業禮品首選。</p>
+<p>可加燙金、UV 局部工藝、訂製封面、座枱結構設計。聖誕新年企業禮品首選。</p>
 
 <p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
@@ -11564,14 +11564,14 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <ul>
   <li>正面印精美圖片、品牌資訊或企業 logo，背面印備忘欄供書寫</li>
   <li>可加燙金標誌、局部光油，封面色彩更顯品牌檔次</li>
-  <li>支援完全客製化企業故事、品牌資訊、產品特色</li>
+  <li>支援完全訂製企業故事、品牌資訊、產品特色</li>
 </ul>
 
 <h3>已服務的本地客戶</h3>
 <p>智印雲已為 31 間香港企業、9 間銀行、6 間 NGO、41 間餐廳、14 間攝影師提供年度月曆禮品印製服務。50 本起印，48 小時快遞，紙材通過 SGS 認證，FSC 環保紙。</p>
 
 <h3>可選加值服務</h3>
-<p>可加燙金、UV 局部工藝、客製化封面、座枱結構設計。聖誕新年企業禮品首選。</p>
+<p>可加燙金、UV 局部工藝、訂製封面、座枱結構設計。聖誕新年企業禮品首選。</p>
 
 <p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
@@ -11754,14 +11754,14 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <ul>
   <li>正面印精美圖片、品牌資訊或企業 logo，背面印備忘欄供書寫</li>
   <li>可加燙金標誌、局部光油，封面色彩更顯品牌檔次</li>
-  <li>支援完全客製化企業故事、品牌資訊、產品特色</li>
+  <li>支援完全訂製企業故事、品牌資訊、產品特色</li>
 </ul>
 
 <h3>已服務的本地客戶</h3>
 <p>智印雲已為 31 間香港企業、9 間銀行、6 間 NGO、41 間餐廳、14 間攝影師提供年度月曆禮品印製服務。50 本起印，48 小時快遞，紙材通過 SGS 認證，FSC 環保紙。</p>
 
 <h3>可選加值服務</h3>
-<p>可加燙金、UV 局部工藝、客製化封面、座枱結構設計。聖誕新年企業禮品首選。</p>
+<p>可加燙金、UV 局部工藝、訂製封面、座枱結構設計。聖誕新年企業禮品首選。</p>
 
 <p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
@@ -11955,14 +11955,14 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <ul>
   <li>正面印精美圖片、品牌資訊或企業 logo，背面印備忘欄供書寫</li>
   <li>可加燙金標誌、局部光油，封面色彩更顯品牌檔次</li>
-  <li>支援完全客製化企業故事、品牌資訊、產品特色</li>
+  <li>支援完全訂製企業故事、品牌資訊、產品特色</li>
 </ul>
 
 <h3>已服務的本地客戶</h3>
 <p>智印雲已為 31 間香港企業、9 間銀行、6 間 NGO、41 間餐廳、14 間攝影師提供年度月曆禮品印製服務。50 本起印，48 小時快遞，紙材通過 SGS 認證，FSC 環保紙。</p>
 
 <h3>可選加值服務</h3>
-<p>可加燙金、UV 局部工藝、客製化封面、座枱結構設計。聖誕新年企業禮品首選。</p>
+<p>可加燙金、UV 局部工藝、訂製封面、座枱結構設計。聖誕新年企業禮品首選。</p>
 
 <p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
@@ -12191,14 +12191,14 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <ul>
   <li>正面印精美圖片、品牌資訊或企業 logo，背面印備忘欄供書寫</li>
   <li>可加燙金標誌、局部光油，封面色彩更顯品牌檔次</li>
-  <li>支援完全客製化企業故事、品牌資訊、產品特色</li>
+  <li>支援完全訂製企業故事、品牌資訊、產品特色</li>
 </ul>
 
 <h3>已服務的本地客戶</h3>
 <p>智印雲已為 31 間香港企業、9 間銀行、6 間 NGO、41 間餐廳、14 間攝影師提供年度月曆禮品印製服務。50 本起印，48 小時快遞，紙材通過 SGS 認證，FSC 環保紙。</p>
 
 <h3>可選加值服務</h3>
-<p>可加燙金、UV 局部工藝、客製化封面、座枱結構設計。聖誕新年企業禮品首選。</p>
+<p>可加燙金、UV 局部工藝、訂製封面、座枱結構設計。聖誕新年企業禮品首選。</p>
 
 <p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
@@ -16569,7 +16569,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     category: 'educational',
     category_slug: 'educational',
     name: '香港學校單張 — 校刊 / 通告 / 校史特刊 / 校友會刊', nameEn: 'School Flyers for Newsletters, Announcements & Alumni Publications', nameJa: '學校フライヤー — 學校新聞・お知らせ・校史特刊・同窓会誌', title_zh: '香港學校單張 — 校刊 / 通告 / 校史特刊 / 校友會刊',
-    description: '學校單張印刷，校刊、通告、校史特刊、校友會刊、活動宣傳單張首選。100 張起印，48 小時香港本地速遞。', descriptionEn: 'School flyer printing for newsletters, announcements, school anniversary publications, alumni magazines, event flyers. 100 MOQ, 2-4 day worldwide delivery.', descriptionJa: '學校フライヤー印刷、學校新聞、お知らせ、校史特刊、同窓会誌、イベント案内に最適。100枚〜、48時間国際速達対応。', description_zh: '學校單張印刷，校刊、通告、校史特刊、校友會刊、活動宣傳單張首選。100 張起印，48 小時香港本地速遞。',
+    description: '學校單張印刷，校刊、通告、校史特刊、校友會刊、活動傳單印刷首選。100 張起印，48 小時香港本地速遞。', descriptionEn: 'School flyer printing for newsletters, announcements, school anniversary publications, alumni magazines, event flyers. 100 MOQ, 2-4 day worldwide delivery.', descriptionJa: '學校フライヤー印刷、學校新聞、お知らせ、校史特刊、同窓会誌、イベント案内に最適。100枚〜、48時間国際速達対応。', description_zh: '學校單張印刷，校刊、通告、校史特刊、校友會刊、活動傳單印刷首選。100 張起印，48 小時香港本地速遞。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -16903,7 +16903,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <p>智印雲 ZprintPro 所有紙張均通過 <strong>FSC 森林管理委員會認證</strong>，可持續採購。環保系列額外採用再生紙與大豆油墨，可完全降解，無毒無味，符合教育局紙張規範。學校如有 ESG 採購要求，我們可提供完整的紙材溯源報告與碳足印估算，助您的教材採購符合聯合國 SDGs 永續發展目標。智印雲 ZprintPro 已連續 3 年獲頒「綠色印刷夥伴」認證。</p>
 
 <h3>智印雲 (ZprintPro) SaaS 印刷服務</h3>
-<p>智印雲 (ZprintPro) 為香港本地印刷 SaaS 平台，教科書與教輔材料印刷只是其中一個專業模組。智印雲 ZprintPro 亦提供相鄰類目（貼紙、紙袋、宣傳單張、書本等）的學校品牌物料整合印刷，方便教務處統一採購。我們支援 30 秒 AI 報價、72 小時全球交付、AI 文件預檢、印刷工藝線上配置、紙材樣本索取、學校採購帳期（NET 30）等一站式服務。從詢價到收貨，智印雲 ZprintPro 全程以教育機構的實際需求為核心設計。</p>
+<p>智印雲 (ZprintPro) 為香港本地印刷 SaaS 平台，教科書與教輔材料印刷只是其中一個專業模組。智印雲 ZprintPro 亦提供相鄰類目（貼紙、紙袋、傳單印刷、書本等）的學校品牌物料整合印刷，方便教務處統一採購。我們支援 30 秒 AI 報價、72 小時全球交付、AI 文件預檢、印刷工藝線上配置、紙材樣本索取、學校採購帳期（NET 30）等一站式服務。從詢價到收貨，智印雲 ZprintPro 全程以教育機構的實際需求為核心設計。</p>
 
 <h3>アジア自社工場での直接確認（事前予約製）</h3>
 <p>智印雲 ZprintPro のアジア自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約製で見學を受け付けており、教科書の校正刷り見本、紙質の触感比較、製本仕様の実物展示、専門スタッフによるレイアウト相談を提供しています（日本語スタッフ同席可・要 1 週間前予約）。日本向けの學校・塾・教育機関のお客様には、DHL 国際速達便で日本全国（沖縄・離島含む）へ 2-5 営業日で配送し、教育機関の受領時間に柔軟に対応的收貨時間。智印雲 ZprintPro アジア自設廠房每月舉辦 4 場教育印刷免費線上講座。</p>
@@ -17742,7 +17742,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     ],
     specs: {
       material: '1200g 灰板紙裱糊銅版紙；EVA／PET 吸塑／紙漿內托',
-      size: '完全客製化，常見 10×10×4cm 至 20×15×6cm',
+      size: '完全訂製，常見 10×10×4cm 至 20×15×6cm',
       printMethod: '四色柯式印刷',
       finishing: '燙金／燙銀、局部 UV、軟觸膜、磁吸扣',
     },

@@ -40,7 +40,7 @@ const MATERIALS: Material[] = [
     waterproof: { 'zh-hk': '⭐⭐', en: '⭐⭐', ja: '⭐⭐' },
     sun: { 'zh-hk': '⭐⭐ 室內為主', en: '⭐⭐ Indoor mainly', ja: '⭐⭐ 室内向け' },
     cost: { 'zh-hk': 'HK$0.22-0.80/張', en: 'US$0.03-0.10/pc', ja: 'HK$0.22-0.80/枚' },
-    best: { 'zh-hk': '宣傳單張、室內海報', en: 'Flyers, indoor posters', ja: 'チラシ、室内ポスター' },
+    best: { 'zh-hk': '傳單印刷、室內海報', en: 'Flyers, indoor posters', ja: 'チラシ、室内ポスター' },
   },
   {
     name: { 'zh-hk': '牛皮紙', en: 'Kraft Paper', ja: 'クラフト紙' },

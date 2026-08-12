@@ -141,7 +141,7 @@ export function getRelatedByCategory(blogCategorySlug: string, limit = 4): Produ
  * 优先级 4: fallback 'flyers' (8/4 12:24 K3 拍板: 不要默认 'stickers', 改 'flyers' 是最常见博客主题)
  *
  * 2026-08-05 K3 12:24 拍板: blog 详情页底部"相关产品推荐"需要跟 blog 标题相关 (e.g. flyer blog → 推荐 flyer 类目 SKU)
- * 根因 (8/4 11:15 popularity.ts 626a22a): "印刷工藝" → 'stickers' sticky default, 让 "即日宣傳單張印刷指南" 错推 sticker SKU
+ * 根因 (8/4 11:15 popularity.ts 626a22a): "印刷工藝" → 'stickers' sticky default, 让 "即日傳單印刷印刷指南" 错推 sticker SKU
  * 修法: 加 title 关键词推断 (优先级 1), 跟标题 locale 强匹配, 4 个 locale 全 cover
  */
 export function inferBlogCategory(post: { title?: string; category?: string; linkedProducts?: string[] }): string {
@@ -150,8 +150,8 @@ export function inferBlogCategory(post: { title?: string; category?: string; lin
     const title = post.title;
     // 关键: 任何匹配的关键词都 return, 顺序按 specificity 排 (具体词先于通用词)
     const titleMap: Array<[RegExp, string]> = [
-      // flyer / 宣傳單張 / チラシ (specific)
-      [/宣傳單張|傳單|flyer|leaflet|brochure|チラシ|フライヤー/i, 'flyers'],
+      // flyer / 傳單印刷 / チラシ (specific)
+      [/傳單印刷|傳單|flyer|leaflet|brochure|チラシ|フライヤー/i, 'flyers'],
       // sticker / 貼紙 / ステッカー
       [/貼紙|防水貼|透明貼|不乾膠|sticker|label|ステッカー|シール/i, 'stickers'],
       // paper-bags / 紙袋 / 紙袋 (zh-hk + en + ja 全 locale, 8/5 14:20 K3 拍板 + 8/5 15:30 增补 kraft/paper 细分)

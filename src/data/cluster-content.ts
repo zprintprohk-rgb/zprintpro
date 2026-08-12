@@ -46,17 +46,17 @@ export const pillarPages: PillarPage[] = [
   {
     slug: 'guide/flyers',
     displayName: {
-      'zh-hk': '宣傳單張印刷攻略',
+      'zh-hk': '傳單印刷印刷攻略',
       'en': 'Flyer Printing Masterclass',
       'ja': 'チラシ印刷マスターガイド',
     },
     title: {
-      'zh-hk': '宣傳單張印刷攻略',
+      'zh-hk': '傳單印刷印刷攻略',
       'en': 'Flyer Printing Masterclass',
       'ja': 'チラシ印刷マスターガイド',
     },
     description: {
-      'zh-hk': '傳單設計、印刷工藝到派發策略，打造高轉化率的宣傳單張。A5傳單、燙金傳單、摺頁傳單實戰指南。',
+      'zh-hk': '傳單設計、印刷工藝到派發策略，打造高轉化率的傳單印刷。A5傳單、燙金傳單、摺頁傳單實戰指南。',
       'en': 'From design to print to distribution strategy, create high-converting flyers. A5, foil-stamped, and folded leaflet masterclass.',
       'ja': 'デザインから印刷、配布戦略まで、高いコンバージョンを実現するチラシづくり。A5チラシ、箔押しチラシ、折りパンフレットの実践ガイド。',
     },
@@ -199,14 +199,14 @@ export const clusterArticles: ClusterArticle[] = [
       'ja': 'チラシ配布戦略と印刷の連携',
     },
     description: {
-      'zh-hk': '高效的宣傳單張派發需要策略配合。從目標區域選擇、時段配合到傳單設計，打造高轉化率的傳單派發計劃。',
+      'zh-hk': '高效的傳單印刷派發需要策略配合。從目標區域選擇、時段配合到傳單設計，打造高轉化率的傳單派發計劃。',
       'en': 'Effective flyer distribution requires strategic coordination. From target area selection to timing alignment to flyer design, build a high-conversion distribution plan.',
       'ja': '効果的なチラシ配布には戦略的な連携が必要。ターゲットエリア選定からタイミング調整、デザインまで、高コンバージョンの配布計画を構築します。',
     },
     pillarSlug: 'guide/flyers',
     linkedProducts: ['flyers'],
     keywords: {
-      'zh-hk': ['傳單派發策略', '宣傳單張派發', '傳單印刷配合'],
+      'zh-hk': ['傳單派發策略', '傳單印刷派發', '傳單印刷配合'],
       'en': ['flyer distribution strategy', 'leaflet distribution', 'flyer print coordination'],
       'ja': ['チラシ配布戦略', 'パンフレット配布', 'チラシ印刷連携'],
     },

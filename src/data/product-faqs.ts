@@ -13,7 +13,7 @@ export const stickersFAQs: FAQItem[] = [
       'ja': 'シール印刷の最小ロットは何枚からですか？',
     },
     answer: {
-      'zh-hk': '智印港提供少批量貼紙印刷服務，最低100張起訂。無論是防水貼紙、透明貼紙或PVC貼紙，均可小量定制，適合初創品牌與產品包裝測試。詳情請參閱《貼紙印刷完全指南》。',
+      'zh-hk': '智印港提供少批量貼紙印刷服務，最低100張起訂。無論是防水貼紙、透明貼紙或PVC貼紙，均可小量定製，適合初創品牌與產品包裝測試。詳情請參閱《貼紙印刷完全指南》。',
       'en': 'ZprintPro offers small-batch custom sticker printing with a minimum order of 100 pieces. Whether you need waterproof stickers, clear vinyl, or PVC labels, we support low-volume orders perfect for startups and product packaging tests. See our Complete Sticker Printing Guide for details.',
       'ja': 'ZprintProでは少ロットのシール印刷に対応しており、最小ロットは100枚からです。防水シール、透明シール、PVCシールなど、スタートアップやパッケージングテストに最適です。詳しくは「シール印刷完全ガイド」をご覧ください。',
     },
@@ -112,7 +112,7 @@ export const flyersFAQs: FAQItem[] = [
       'ja': 'チラシ印刷の最小ロットは何枚からですか？',
     },
     answer: {
-      'zh-hk': '智印港提供A5傳單印刷服務，最低10張起訂。無論是宣傳單張派發、開業傳單或活動傳單，均可少批量定制，適合初創企業與社區宣傳。詳情請參閱《宣傳單張印刷攻略》。',
+      'zh-hk': '智印港提供A5傳單印刷服務，最低10張起訂。無論是傳單印刷派發、開業傳單或活動傳單，均可少批量定製，適合初創企業與社區宣傳。詳情請參閱《傳單印刷印刷攻略》。',
       'en': 'ZprintPro offers A5 flyer printing with a minimum order of 10 copies. Whether for leaflet distribution, grand opening flyers, or event promotions, we support small orders perfect for startups and community outreach. See our Flyer Printing Masterclass for details.',
       'ja': 'ZprintProではA5チラシ印刷に対応しており、最小ロットは10枚からです。チラシ配布、開業チラシ、イベントプロモーションなど、スタートアップや地域宣伝に最適です。詳しくは「チラシ印刷マスターガイド」をご覧ください。',
     },
@@ -155,12 +155,12 @@ export const flyersFAQs: FAQItem[] = [
   },
   {
     question: {
-      'zh-hk': '宣傳單張派發 有什麼策略建議？',
+      'zh-hk': '傳單印刷派發 有什麼策略建議？',
       'en': 'What are the best strategies for flyer distribution?',
       'ja': 'チラシ配布のベスト戦略は何ですか？',
     },
     answer: {
-      'zh-hk': '有效的宣傳單張派發策略包括：1) 目標區域選擇（如九龍商業區、港島住宅區）；2) 時段配合（上下班高峰期、周末市集）；3) 傳單設計配合行動號召（QR Code、限時優惠）。詳情請參閱《宣傳單張印刷攻略》。',
+      'zh-hk': '有效的傳單印刷派發策略包括：1) 目標區域選擇（如九龍商業區、港島住宅區）；2) 時段配合（上下班高峰期、周末市集）；3) 傳單設計配合行動號召（QR Code、限時優惠）。詳情請參閱《傳單印刷印刷攻略》。',
       'en': 'Effective flyer distribution strategies include: 1) Target area selection (e.g., downtown business districts, residential neighborhoods); 2) Timing alignment (rush hours, weekend markets); 3) Design with clear CTAs (QR codes, limited-time offers). See our Flyer Printing Masterclass for details.',
       'ja': '効果的なチラシ配布戦略には、1）ターゲットエリアの選定、2）タイミングの調整、3）QRコードや期間限定オファーなど明確なCTAを含むデザインが含まれます。詳しくは「チラシ印刷マスターガイド」をご覧ください。',
     },
@@ -206,12 +206,12 @@ export const flyersFAQs: FAQItem[] = [
 export const packagingBoxesFAQs: FAQItem[] = [
   {
     question: {
-      'zh-hk': '包裝盒定制 香港 最低訂量是多少？',
+      'zh-hk': '包裝盒印刷 香港 最低訂量是多少？',
       'en': 'What is the minimum order for custom packaging boxes?',
       'ja': '箱包装オーダーメイドの最小ロットはいくつからですか？',
     },
     answer: {
-      'zh-hk': '智印港提供磁吸禮盒、環保包裝盒等定制服務，最低100個起訂。無論是化妝品盒、食品盒或禮品盒，均可小量定制，適合初創品牌與節日禮品測試。詳情請參閱《品牌包裝完全指南》。',
+      'zh-hk': '智印港提供磁吸禮盒、環保包裝盒等定制服務，最低100個起訂。無論是化妝品盒、食品盒或禮品盒，均可小量定製，適合初創品牌與節日禮品測試。詳情請參閱《品牌包裝完全指南》。',
       'en': 'ZprintPro offers custom packaging box printing from 100 units minimum. Whether cosmetic boxes, food packaging, or gift boxes, we support small orders perfect for startups and seasonal gift testing. See our Brand Packaging Guide for details.',
       'ja': 'ZprintProでは100個からの箱包装オーダーメイドに対応しています。化粧品箱、食品箱、ギフト箱など、スタートアップや季節のギフトテストに最適です。詳しくは「ブランド包装完全ガイド」をご覧ください。',
     },
@@ -266,12 +266,12 @@ export const packagingBoxesFAQs: FAQItem[] = [
   },
   {
     question: {
-      'zh-hk': '包裝盒定制 可以即日打樣嗎？',
+      'zh-hk': '包裝盒印刷 可以即日打樣嗎？',
       'en': 'Can I get same-day packaging box sampling?',
       'ja': '箱包装の即日サンプルは可能ですか？',
     },
     answer: {
-      'zh-hk': '可以。針對九龍、港島及新界客戶，包裝盒定制最快即日可打樣。建議提前提供設計稿及尺寸規格，即可安排當日白樣或數碼樣。確認樣板後3-5個工作天可批量生產。',
+      'zh-hk': '可以。針對九龍、港島及新界客戶，包裝盒印刷最快即日可打樣。建議提前提供設計稿及尺寸規格，即可安排當日白樣或數碼樣。確認樣板後3-5個工作天可批量生產。',
       'en': 'Yes. Packaging box sampling is available same-day at our Asia facility. Provide design files and dimensions in advance for same-day white or digital samples. Bulk production takes 3-5 working days after sample approval, with 2-4 day DHL / FedEx delivery to the US.',
       'ja': 'はい。日本全国のお客様向けに、箱包装の即日サンプルが可能です。デザインデータと寸法を事前にご提供いただければ、当日に白サンプルまたはデジタルサンプルを手配できます。',
     },
@@ -295,7 +295,7 @@ export const packagingBoxesFAQs: FAQItem[] = [
       'ja': '日本への包装箱配送はありますか？',
     },
     answer: {
-      'zh-hk': '有。智印港提供全港送貨服務，包括九龍、港島、新界及離島。包裝盒定制訂單滿HK$500免運費，未滿額可選擇港鐵站交收。大量訂單可安排貨車直送倉庫。',
+      'zh-hk': '有。智印港提供全港送貨服務，包括九龍、港島、新界及離島。包裝盒印刷訂單滿HK$500免運費，未滿額可選擇港鐵站交收。大量訂單可安排貨車直送倉庫。',
       'en': 'Yes. ZprintPro delivers packaging box orders worldwide from our Asia facility. Orders over $99 qualify for free US shipping via DHL / FedEx. For bulk orders, pallet delivery to your warehouse can be arranged.',
       'ja': 'はい。ZprintProはDHL・FedExで日本全国に配送しています（通常2〜4日）。大量注文にも対応可能です。',
     },
@@ -310,7 +310,7 @@ export const postersFAQs: FAQItem[] = [
       'ja': 'ポスター印刷の最小ロットは何枚からですか？',
     },
     answer: {
-      'zh-hk': '智印港提供A2海報印刷服務，最低10張起訂。無論是戶外防水海報、展覽海報或燙金海報，均可少批量定制，適合活動宣傳及零售推廣。詳情請參閱《海報印刷完全指南》。',
+      'zh-hk': '智印港提供A2海報印刷服務，最低10張起訂。無論是戶外防水海報、展覽海報或燙金海報，均可少批量定製，適合活動宣傳及零售推廣。詳情請參閱《海報印刷完全指南》。',
       'en': 'ZprintPro offers A2 poster printing with a minimum order of 10 copies. Whether outdoor waterproof posters, exhibition posters, or foil-stamped posters, we support small orders perfect for event promotion and retail advertising. See our Poster Printing Guide for details.',
       'ja': 'ZprintProではA2ポスター印刷に対応しており、最小ロットは10枚からです。屋外防水ポスター、展示会用ポスター、箔押しポスターなど、イベント宣伝や小売広告に最適です。詳しくは「ポスター印刷ガイド」をご覧ください。',
     },
@@ -370,7 +370,7 @@ export const postersFAQs: FAQItem[] = [
       'ja': 'バックドロップのオーダーメイドサイズはどこまで対応していますか？',
     },
     answer: {
-      'zh-hk': '智印港提供Backdrop背景板定制服務，常見尺寸包括：2×2.5m、3×3m、4×2.5m。採用防水帆布或遮光布，適合展覽會、發布會及婚禮佈置。亦可按場地尺寸完全定制。',
+      'zh-hk': '智印港提供Backdrop背景板定制服務，常見尺寸包括：2×2.5m、3×3m、4×2.5m。採用防水帆布或遮光布，適合展覽會、發布會及婚禮佈置。亦可按場地尺寸完全定製。',
       'en': 'ZprintPro offers custom backdrop printing in common sizes: 2×2.5m, 3×3m, and 4×2.5m. Using waterproof canvas or blackout fabric, suitable for exhibitions, product launches, and wedding setups. Fully custom sizes based on venue dimensions are also available.',
       'ja': 'ZprintProでは2×2.5m、3×3m、4×2.5mなどのバックドロップを提供しています。防水キャンバスまたは遮光布を使用し、展示会や発表会、結婚式の演出に適しています。会場サイズに応じた完全オーダーメイドも可能です。',
     },
@@ -409,7 +409,7 @@ export const paperBagsFAQs: FAQItem[] = [
       'ja': '紙袋印刷の最小ロットはいくつからですか？',
     },
     answer: {
-      'zh-hk': '智印港提供環保紙袋、牛皮紙袋等定制服務，最低100個起訂。無論是禮品紙袋、品牌紙袋或餐飲外賣紙袋，均可小量定制。詳情請參閱《品牌包裝完全指南》。',
+      'zh-hk': '智印港提供環保紙袋、牛皮紙袋等定制服務，最低100個起訂。無論是禮品紙袋、品牌紙袋或餐飲外賣紙袋，均可小量定製。詳情請參閱《品牌包裝完全指南》。',
       'en': 'ZprintPro offers custom paper bag printing from 100 units minimum. Whether gift bags, branded shopping bags, or F&B takeaway bags, we support small orders. See our Brand Packaging Guide for details.',
       'ja': 'ZprintProでは100個からの紙袋印刷に対応しています。ギフト袋、ブランド紙袋、飲食テイクアウト袋など、小ロットから承ります。詳しくは「ブランド包装完全ガイド」をご覧ください。',
     },
@@ -457,14 +457,14 @@ export const paperBagsFAQs: FAQItem[] = [
       'ja': 'ギフト袋のオーダーメイドにはどんなサイズがありますか？',
     },
     answer: {
-      'zh-hk': '智印港提供多款禮品紙袋尺寸：小號（180×230×80mm，適合飾品/化妝品）、中號（250×300×100mm，適合服裝/鞋履）、大號（320×400×120mm，適合禮品套裝）。亦可按產品尺寸完全定制。',
+      'zh-hk': '智印港提供多款禮品紙袋尺寸：小號（180×230×80mm，適合飾品/化妝品）、中號（250×300×100mm，適合服裝/鞋履）、大號（320×400×120mm，適合禮品套裝）。亦可按產品尺寸完全定製。',
       'en': 'ZprintPro offers various gift bag sizes: small (180×230×80mm for accessories/cosmetics), medium (250×300×100mm for apparel/footwear), and large (320×400×120mm for gift sets). Fully custom sizes based on your products are also available.',
       'ja': 'ZprintProでは小（180×230×80mm）、中（250×300×100mm）、大（320×400×120mm）などのギフト袋サイズを提供しています。商品サイズに応じた完全オーダーメイドも可能です。',
     },
   },
   {
     question: {
-      'zh-hk': '紙袋定制 可以即日打樣嗎？',
+      'zh-hk': '紙袋定製 可以即日打樣嗎？',
       'en': 'Can I get same-day paper bag sampling?',
       'ja': '紙袋の即日サンプルは可能ですか？',
     },

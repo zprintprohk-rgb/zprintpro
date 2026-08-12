@@ -34,10 +34,10 @@ export const BUSINESS_ALIASES: Array<{ primary: string; aliases: string[] }> = [
   { primary: '咭片', aliases: ['名片', '名刺', 'card', 'cards', 'business card', 'business cards', '名卡', '卡片'] },
   { primary: '名片', aliases: ['咭片', '名刺', 'card', 'cards', 'business card', '名卡'] },
   { primary: '名刺', aliases: ['咭片', '名片', 'card', 'cards', 'business card'] },
-  // 宣传单张 (HK: 宣傳單張 / CN: 宣传单张 / JP: チラシ) — 已有字符映射, 增 aliases 兜底
-  { primary: '宣傳單張', aliases: ['flyer', 'flyers', 'leaflet', 'leaflets', '传单', '宣傳單', '宣傳'] },
+  // 宣传单张 (HK: 傳單印刷 / CN: 宣传单张 / JP: チラシ) — 已有字符映射, 增 aliases 兜底
+  { primary: '傳單印刷', aliases: ['flyer', 'flyers', 'leaflet', 'leaflets', '传单', '宣傳單', '宣傳'] },
   { primary: '宣传单张', aliases: ['flyer', 'flyers', 'leaflet', '传单', '宣传单'] },
-  { primary: 'チラシ', aliases: ['flyer', 'flyers', 'leaflet', '宣傳單張', '宣传单张'] },
+  { primary: 'チラシ', aliases: ['flyer', 'flyers', 'leaflet', '傳單印刷', '宣传单张'] },
   // 贴纸 (HK: 貼紙 / CN: 贴纸 / JP: ステッカー) — 字符映射已 cover 貼↔贴
   { primary: '貼紙', aliases: ['sticker', 'stickers', 'label', 'labels', '贴纸', 'ラベル'] },
   { primary: '贴纸', aliases: ['sticker', 'stickers', 'label', 'labels', '貼紙'] },

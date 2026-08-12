@@ -4,7 +4,7 @@
  * TradeProgramForm — B2B Trade Program 申请表单 (P1.2 v2 — Formspree edge-compatible)
  * 6 字段: fullName / email / company / website (optional) / useCase / monthlyVolume
  * 提交 → Formspree 公开 form (browser 直接 POST, 无自家 API route)
- * 2026-07-09 v2: 改用 Formspree 替代 Resend (B 方案, 避免 CF Pages edge runtime 限制)
+ * 2026-07-09 v2: 改用 Formspree 替代 Resend (B 方案, 避免 CF Pages edge runtime 限製)
  *
  * Setup: user 在 formspree.io 注册 → 拿 form ID → 替换 FORMSPREE_FORM_ID
  * 免费 plan 50 submissions/月 (P1.2 B2B 通常低流量足够)

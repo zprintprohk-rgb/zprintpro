@@ -87,7 +87,7 @@ export async function generateMetadata({
   
   const rushDescriptions: Record<string, Record<string, string>> = {
     'zh-hk': {
-      'flyers': '宣傳單張印刷，A4/A5/A6尺寸、157g銅版紙，100張起訂。滿$500包郵，標準交期。',
+      'flyers': '傳單印刷印刷，A4/A5/A6尺寸、157g銅版紙，100張起訂。滿$500包郵，標準交期。',
       'posters': 'A2/A1/A3海報印刷，防水材質，10張起訂。滿$500包郵，標準交期 1-2 工作天。',
       'stickers': '貼紙印刷，防水/PVC/透明材質，100張起訂，支持異形切割。滿$500包郵，標準交期。',
       'business-cards': '名片印刷，燙金、棉紙、局部UV工藝，100張起訂。滿$500包郵，標準交期。',

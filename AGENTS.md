@@ -880,6 +880,60 @@ if (locale === 'zh-hk') {
 3. amend 节省 1 build 但 force-push 也算 1 push 配额
 4. 真的紧急才用 amend, 普通失败走 fresh commit 重做
 
+### §0.20.5 GSC warning validFrom 字段修复 SOP (2026-08-11 db2cb5f 教训, K3 8/12 复盘拍板)
+
+**教训**: PDP 顶层 Product schema (src/lib/seo.ts) 跟 ItemList 内嵌 Product (src/lib/schema-extensions.ts) 必须保持字段一致; 任何 schema 字段修复必 grep 全部 3 处 (seo.ts + schema-extensions.ts + page.tsx PDP 段) 才报完成。
+
+**事故背书 (2026-08-11)**: 8/8 117f9fc GMC 修复只改 src/lib/seo.ts 加 priceValidUntil + sku, 漏了 validFrom。8/11 K3 10:41 GSC warning 才发现 schema-extensions.ts 已有 validFrom 但 seo.ts 漏 → 8/11 db2cb5f 补救: seo.ts L1093 加 validFrom 字段。影响 5 PDP: roll-up-banners / a5-flyers / catalog-printing / a4-flyers / wall-calendars。
+
+**应用范围**: 任何 zprintpro / aitoptools / togthr 跨项目 Product schema / Offer schema / AggregateRating schema; 任何 GSC 警告 / GMC 警告 / Rich Results Test 报错修复。
+
+**判断 SOP** (任何 schema 字段修复 commit 实施前自查):
+1. `grep -n "validFrom\|priceValidUntil\|sku\|availability" src/lib/seo.ts src/lib/schema-extensions.ts src/app/[locale]/product/[slug]/page.tsx`
+2. 列出现有字段 vs 目标字段, 找出缺失
+3. 3 处同时改, 不允许只改 1 处
+4. 5 步真验证: 5 关键页面 curl + 5 PDP schema 全字段验证
+5. PDP Product offers 段必含 6 字段: price / priceCurrency / validFrom / priceValidUntil / sku / availability
+
+### §0.20.6 SEO 类目名 + nav 顺序按 GSC imps 优化 SOP (2026-08-11 db2cb5f 教训, K3 8/12 复盘拍板)
+
+**教训**: 任何 SEO 类目名 / h2 / 落地页标题 / 导航顺序优化必先 grep GSC 28 天 imps 排序; zh-hk 必须纯繁体 (K3 10:41 拍板), 簡→繁"制→製"必改; 0 订单类目调 nav 最后。
+
+**事故背书 (2026-08-11)**: 8/11 db2cb5f 8 改字 (4 files +11/-9), 全部按 GSC 28 天 imps 加权优化: 月曆 14+訂做月曆 9+月曆訂製 6 = 52 imps 排序第 2 (vs 年曆 0) → 月曆印刷; 傳單 17 imps → 傳單印刷; 包裝盒定制(簡体)→包裝盒印刷(繁); 海報定制(簡体)→海報印刷(繁); paper-bags 0 订单 → 调 nav 最后; 5 PDP validFrom 字段补全。
+
+**GSC 28 天 zh-hk imps 排序基准 (8/11 10:33 截图)**: 包装 68 / 月曆 52 / poster 46 / bag 35 / sticker 33 / 書籍 30 / catalog 26 / book 24 / 傳單 19 / flyer 11 / 海報 1。
+
+**zh-hk 纯繁体红线 (K3 10:41 拍板)**: 制→製 / 后→後 / 实→實 / 对→對 / 发→發 / 开→開 / 内→內 / 种→種; 类目名禁夹英文 (海報定制→海報印刷, 不用 poster)。
+
+**应用范围**: 任何 zprintpro / aitoptools / togthr 跨项目类目名 / h2 / 标题 / nav 顺序优化; 任何 zh-hk / en / ja locale 内容本地化; 任何 GSC 数据驱动的 SEO 决策。
+
+**判断 SOP** (任何 SEO 优化 commit 实施前自查):
+1. 拉 GSC 28 天 imps (zh-hk / en / ja 各一份, 按类目聚合)
+2. 排序优化: 类目名 / h2 / 落地页标题 选 GSC 高 imps 词
+3. 繁体守门 (zh-hk): `grep -n "制\|后\|实\|对\|发\|开\|内\|种" src/data/products.ts src/components/layout/Header.tsx src/data/category-seo-content.ts` 全清
+4. nav 顺序按业务权重 + GSC imps: 0 订单类目调最后
+5. 3 处同步修: products.ts (类目名字段) + Header.tsx (nav + 类目 label) + category-seo-content.ts (h2)
+
+### §0.20.7 Seasonal SKU AI 出图失败教训 (2026-08-11 16:00 K3 拍板, K3 8/12 复盘拍板固化)
+
+**教训**: 印刷产品图不能用 AI 渲染图替代设计稿; image_synthesize 给的是"AI 渲染的 stock photo", 不是"为品牌设计的视觉作品"; 任何"AI 出图 → 直接上线"路线必须 K3 视觉确认后 push。
+
+**事故背书 (2026-08-11)**: K3 凌晨战略调度后 8/11 13:00-15:00 M3 用 image_synthesize 跑 32 张种子图 (红包 3 + 台历 6 + 挂历 6 + 失败 17), K3 8/11 16:00 看图后拍板: "这些图都不能用于印刷, 也没有一个特别的设计"。**根本错误**: 印刷产品需要 CMYK + 出血 + 工艺标注层 + 品牌识别, AI 渲染图无结构化设计层, 即便 300DPI 元数据也不构成印刷就绪。
+
+**正确路线 (K3 8/12 03:41 拍板 F1+F4 组合)**:
+- 短期 8/12-8/20: F4 纯代码生成兜底 (SVG 骨架 + 工艺标注层)
+- 中期 8/20+: F1 设计师外包 (¥2,000-3,000, 8 SKU, 8/13 寻源 8/20 交付印刷文件)
+- image_synthesize 仅用于"概念图 / 营销图 / 社交图", **不用于 PDP hero**
+
+**应用范围**: 任何 zprintpro / aitoptools / togthr 跨项目印刷产品图 / 包装设计 / 工艺图; 任何"AI 出图 → 直接上线 PDP"提案; 任何设计师外包 vs AI 出图选型。
+
+**判断 SOP** (任何 AI 出图 / 设计师外包选型决策):
+1. 评估产物: 印刷级 AI/CMYK + 出血 + 工艺层 = 设计师外包, AI 出图做不到
+2. 评估时间: 7+ 天可等 = 外包, 1-2 天 = 代码生成兜底
+3. 评估预算: ¥2,000+ = 外包, ¥0 = 代码生成
+4. AI 出图仅用作: K3 审核参考 / 概念 demo / 营销图
+5. K3 视觉确认前不部署到 PDP
+
 ---
 
 <!-- autoclaw:feishu-lark-skill-guidance -->

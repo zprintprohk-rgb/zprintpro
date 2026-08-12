@@ -34,8 +34,8 @@ const commonSegments: Record<string, Record<Locale, string>> = {
   payment: { 'zh-hk': '付款', en: 'Payment', ja: 'お支払い' },
   success: { 'zh-hk': '付款成功', en: 'Payment Success', ja: '支払い完了' },
   stickers: { 'zh-hk': '貼紙印刷', en: 'Stickers', ja: 'シール印刷' },
-  flyers: { 'zh-hk': '宣傳單張', en: 'Flyers', ja: 'チラシ印刷' },
-  packaging: { 'zh-hk': '包裝盒定制', en: 'Packaging', ja: 'パッケージ印刷' },
+  flyers: { 'zh-hk': '傳單印刷', en: 'Flyers', ja: 'チラシ印刷' },
+  packaging: { 'zh-hk': '包裝盒印刷', en: 'Packaging', ja: 'パッケージ印刷' },
   posters: { 'zh-hk': '定制海報', en: 'Posters', ja: 'ポスター印刷' },
   'paper-bags': { 'zh-hk': '紙袋印刷', en: 'Paper Bags', ja: '紙袋印刷' },
   'greeting-cards': { 'zh-hk': '賀卡印刷', en: 'Greeting Cards', ja: 'グリーティングカード・年賀状' },
@@ -61,7 +61,7 @@ const pillarNames: Record<string, Record<Locale, string>> = {
     ja: 'シール印刷完全ガイド',
   },
   'flyer-guide': {
-    'zh-hk': '宣傳單張印刷攻略',
+    'zh-hk': '傳單印刷印刷攻略',
     en: 'Flyer Printing Masterclass',
     ja: 'チラシ印刷マスターガイド',
   },
@@ -145,7 +145,7 @@ const buyingGuideNames: Record<string, Record<Locale, string>> = {
     ja: 'チラシ印刷選び方完全ガイド',
   },
   'packaging-buying-guide': {
-    'zh-hk': '包裝盒定制選購完全指南',
+    'zh-hk': '包裝盒印刷選購完全指南',
     en: 'Packaging Box Buying Guide',
     ja: 'パッケージ箱選び方完全ガイド',
   },

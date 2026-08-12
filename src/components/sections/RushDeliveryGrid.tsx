@@ -25,7 +25,7 @@ interface SKUItem {
 const skus: SKUItem[] = [
   {
     slug: 'flyers',
-    title: '宣傳單張',
+    title: '傳單印刷',
     titleEn: 'Flyers',
     titleJa: 'チラシ',
     spec: 'A4/A5/A6 · 157g銅版紙',

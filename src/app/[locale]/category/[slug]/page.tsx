@@ -132,19 +132,19 @@ export default function CategoryPage({
   // 2026-07-09 PM+UX+SEO 美国市场优化 v5: en 全部类目 H1 加 "Free Shipping + Made for USA + FedEx/DHL" sharp hook
   const customH1Map: Record<string, Record<string, string>> = {
     'packaging': {
-      'zh-hk': '香港包裝盒定制 — 禮盒 / 化妝品盒 / 食品盒 / 快遞盒 / 天地蓋盒',
+      'zh-hk': '香港包裝盒印刷 — 禮盒 / 化妝品盒 / 食品盒 / 快遞盒 / 天地蓋盒',
       'en': 'Custom Packaging Boxes Made in USA-Friendly · 100 MOQ Free Shipping over $99',
       'ja': 'パッケージボックス カスタム — ギフト / 化粧 / 食品 / メール便 / 組み立て',
     },
     'paper-bags': {
-      'zh-hk': '香港紙袋印刷定制 — 牛皮紙袋 / 白卡紙袋 / 精品紙袋 / 環保紙袋',
+      'zh-hk': '香港紙袋印刷定製 — 牛皮紙袋 / 白卡紙袋 / 精品紙袋 / 環保紙袋',
       'en': 'Custom Paper Bags Free Shipping · 100 MOQ FSC Kraft Eco-Friendly',
       'ja': '紙袋印刷 カスタム — クラフト / ホワイトカード / エコ / ギフト',
     },
 'flyers': {
       // 2026-07-09 SEO 复盘 v3: 即日 + 數碼快印前置 (吸收原本独立 nav 「即日服務」权重)
       // 2026-07-09 v5 美国市场: 加 Free Shipping + FedEx Ground + Same Day sharp hook
-      'zh-hk': '香港即日宣傳單張印刷 — A4/A5 數碼快印 / 摺頁 / 開業傳單 / 24 小時急件',
+      'zh-hk': '香港即日傳單印刷印刷 — A4/A5 數碼快印 / 摺頁 / 開業傳單 / 24 小時急件',
       en: 'Same-Day Flyers Free Shipping over $99 · 100 MOQ A4/A5 Digital + FedEx Ground',
       ja: '香港即日チラシ印刷 — A4/A5 デジタル+オフセット / 折込 / 開業チラシ / 24時間特急',
     },
@@ -159,12 +159,12 @@ export default function CategoryPage({
       'ja': '紅包印刷 — 旧正月 / 箔押し / キャラクター / カスタム',
     },
     'stickers': {
-      'zh-hk': '香港貼紙印刷定制 — 防水貼紙 / 透明貼紙 / 異形貼紙 / 標籤貼紙',
+      'zh-hk': '香港貼紙印刷定製 — 防水貼紙 / 透明貼紙 / 異形貼紙 / 標籤貼紙',
       'en': 'Custom Stickers Free Shipping · 50 MOQ Die-Cut Vinyl Waterproof · Made for USA Small Business',
       'ja': 'ステッカー印刷 カスタム — 防水 / 透明 / ダイカット / 商品ラベル',
     },
     'posters': {
-      'zh-hk': '香港海報印刷定制 — A1/A2 海報 / 戶外海報 / 展覽海報 / 大圖輸出',
+      'zh-hk': '香港海報印刷定製 — A1/A2 海報 / 戶外海報 / 展覽海報 / 大圖輸出',
       'en': 'Custom Posters Free Shipping · A1/A2 Outdoor Waterproof 1 MOQ · USA Trade Show',
       'ja': 'ポスター印刷 カスタム — A1/A2 / 屋外 / 展示 / 大判出力',
     },
@@ -184,17 +184,17 @@ export default function CategoryPage({
       ja: '教育印刷 カスタム — 証明書 / ワークブック / 教科書 / 学用品',
     },
     'envelopes': {
-      'zh-hk': '香港信封印刷定制 — 牛皮信封 / 開窗信封 / 彩色信封 / 企業LOGO信封',
+      'zh-hk': '香港信封印刷定製 — 牛皮信封 / 開窗信封 / 彩色信封 / 企業LOGO信封',
       en: 'Custom Envelopes Free Shipping · 100 MOQ Kraft Window Colored Corporate Logo',
       ja: '封筒印刷 カスタム — クラフト / 窓付き / カラー / 企業ブランディング',
     },
     'calendars': {
-      'zh-hk': '香港月曆印刷定制 — 座檯月曆 / 掛牆月曆 / 月曆卡 / 2027年曆 / 企業LOGO',
+      'zh-hk': '香港月曆印刷定製 — 座檯月曆 / 掛牆月曆 / 月曆卡 / 2027年曆 / 企業LOGO',
       'en': 'Custom Calendars Free Shipping · 1000 MOQ 2027 Desk Wall Hardcover Foil · USA Corporate Gifts',
       'ja': 'カレンダー印刷 カスタム — デスク / 壁掛け / 月別 / 2027年 / 企業ロゴ',
     },
     'greeting-cards': {
-      'zh-hk': '香港賀卡印刷定制 — 聖誕卡 / 新年卡 / 婚禮感謝卡 / 燙金UV賀卡',
+      'zh-hk': '香港賀卡印刷定製 — 聖誕卡 / 新年卡 / 婚禮感謝卡 / 燙金UV賀卡',
       'en': 'Greeting Cards Free Shipping · 100 MOQ Foil UV Christmas Wedding · Same Day 24h Rush USA',
       'ja': 'グリーティングカード・年賀状印刷 — 箔押し / UV / クリスマス / 婚禮',
     },
@@ -220,7 +220,7 @@ export default function CategoryPage({
 
   // Category ItemList Schema — 产品列表结构化数据
   // 2026-06-10 Phase B 修复 P0-5：改用 schema-extensions 中的 generateCategoryItemListJsonLd，
-  // 强制 url 走 SITE_URL 兜底，name 按 locale 切换。
+  // 强製 url 走 SITE_URL 兜底，name 按 locale 切换。
   const itemListJsonLd = generateCategoryItemListJsonLd(categoryName, categoryProducts, locale);
 
   // 2026-06-10 Phase B 修复 P0-3：主钻 4 品类分类页注入 HowTo + Speakable。

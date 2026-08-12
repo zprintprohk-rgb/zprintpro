@@ -4,7 +4,7 @@
 
 export const altTagMap: Record<string, Record<string, string>> = {
   flyers: {
-    'zh-hk': '宣傳單張印刷-157g銅版紙-香港-繁體中文',
+    'zh-hk': '傳單印刷印刷-157g銅版紙-香港-繁體中文',
     en: 'flyer-printing-157gsm-art-paper-hong-kong-english',
     ja: 'チラシ印刷-157gアート紙-香港-日本語',
   },
@@ -39,7 +39,7 @@ export const altTagMap: Record<string, Record<string, string>> = {
     ja: '紙袋印刷-クラフト紙白カードエコ-香港-日本語',
   },
   'packaging-boxes': {
-    'zh-hk': '包裝盒定制-磁吸禮盒摺疊盒-香港-繁體中文',
+    'zh-hk': '包裝盒印刷-磁吸禮盒摺疊盒-香港-繁體中文',
     en: 'packaging-box-custom-magnetic-gift-foldable-hong-kong-english',
     ja: '包装盒オーダーメイド-磁吸ギフト折りたたみ-香港-日本語',
   },

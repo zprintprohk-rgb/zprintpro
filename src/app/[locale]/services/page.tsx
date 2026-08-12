@@ -22,9 +22,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const meta: Record<string, { title: string; description: string }> = {
     'zh-hk': {
-      title: '印刷服務 | 貼紙・宣傳單張・包裝盒・紙袋訂製 | 智印港 ZprintPro',
+      title: '印刷服務 | 貼紙・傳單印刷・包裝盒・紙袋訂製 | 智印港 ZprintPro',
       description:
-        '智印港提供香港一站式印刷服務：貼紙、宣傳單張、包裝盒、紙袋、海報、利是封等。30秒AI報價，免費設計，100起訂，72小時出貨，順豐直送港九新界。立即WhatsApp報價！',
+        '智印港提供香港一站式印刷服務：貼紙、傳單印刷、包裝盒、紙袋、海報、利是封等。30秒AI報價，免費設計，100起訂，72小時出貨，順豐直送港九新界。立即WhatsApp報價！',
     },
     en: {
       title: 'Printing Services: Stickers, Flyers, Packaging | ZprintPro',
@@ -68,7 +68,7 @@ const serviceCards: ServiceCard[] = [
   },
   {
     href: (l) => `/${l}/category/flyers/`,
-    name: { 'zh-hk': '宣傳單張印刷', en: 'Flyers & Leaflets', ja: 'チラシ・リーフレット' },
+    name: { 'zh-hk': '傳單印刷印刷', en: 'Flyers & Leaflets', ja: 'チラシ・リーフレット' },
     desc: {
       'zh-hk': 'A5/A4 單張、摺頁、厚咭紙單張，餐飲推廣、開業宣傳、活動派發首選。',
       en: 'A5/A4 flyers, folded leaflets & thick cardstock for promos, openings and events.',
@@ -229,7 +229,7 @@ const industries: Array<{ href: (l: string) => string; name: L3; use: L3 }> = [
 /* ── 熱門分類（8 格，P0 優先，無名片） ── */
 const categories: Array<{ slug: string; name: L3 }> = [
   { slug: 'stickers', name: { 'zh-hk': '貼紙', en: 'Stickers', ja: 'ステッカー' } },
-  { slug: 'flyers', name: { 'zh-hk': '宣傳單張', en: 'Flyers', ja: 'チラシ' } },
+  { slug: 'flyers', name: { 'zh-hk': '傳單印刷', en: 'Flyers', ja: 'チラシ' } },
   { slug: 'packaging', name: { 'zh-hk': '包裝盒', en: 'Packaging', ja: 'パッケージ' } },
   { slug: 'paper-bags', name: { 'zh-hk': '紙袋', en: 'Paper Bags', ja: '紙袋' } },
   { slug: 'posters', name: { 'zh-hk': '海報', en: 'Posters', ja: 'ポスター' } },
@@ -251,7 +251,7 @@ export default function ServicesPage({ params }: Props) {
   const t = {
     'zh-hk': {
       h1: '一站式印刷服務',
-      subtitle: '貼紙・宣傳單張・包裝盒・紙袋，專為香港中小企及全球客戶定制',
+      subtitle: '貼紙・傳單印刷・包裝盒・紙袋，專為香港中小企及全球客戶定制',
       servicesTitle: '我們的服務',
       stepsTitle: '落單流程',
       industriesTitle: '行業應用場景',

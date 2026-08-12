@@ -29,7 +29,7 @@ const productTypeLabels: Record<Locale, Record<ProductType, string>> = {
   'zh-hk': {
     'business-card': '卡片',
     'sticker': '貼紙',
-    'flyer': '宣傳單張',
+    'flyer': '傳單印刷',
     'paper-bag': '紙袋',
     'box': '包裝盒',
     'poster': '海報',

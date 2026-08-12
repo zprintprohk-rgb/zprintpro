@@ -255,9 +255,9 @@ const homeMetadata: Record<Locale, { title: string; description: string; keyword
   'zh-hk': {
     // 2026-07-22 v6: 智印港 是 zh-hk 合法品牌词 (AGENTS.md §1 v2 / §13.10 NAP 脱钩)
     // §13.13 三 Locale 鐵律: en/ja 標題 100% 過濾 Shenzhen/China/中國/智印港
-    title: '智印港 ZprintPro | 香港印刷公司 | 急件印刷·即日交貨 | 貼紙/單張/包裝盒定制',
-    description: '香港智印港印刷平台 — 專注急件印刷及即日交貨服務。提供高質素貼紙、宣傳單張、包裝盒定制、紙袋、海報等。線上30秒獲取初步報價，複雜需求由專人人工核價。全港免費送貨，最快即日交付，72小時快速交貨。',
-    keywords: '香港印刷,急件印刷,即日印刷,貼紙印刷,宣傳單張印刷,包裝盒定制,數碼印刷,30秒報價,人工核價,免費送貨,紙袋印刷,海報印刷,香港印刷公司,印刷急單,小批量印刷,ZprintPro,智印港',
+    title: '智印港 ZprintPro | 香港印刷公司 | 急件印刷·即日交貨 | 貼紙/單張/包裝盒印刷',
+    description: '香港智印港印刷平台 — 專注急件印刷及即日交貨服務。提供高質素貼紙、傳單印刷、包裝盒印刷、紙袋、海報等。線上30秒獲取初步報價，複雜需求由專人人工核價。全港免費送貨，最快即日交付，72小時快速交貨。',
+    keywords: '香港印刷,急件印刷,即日印刷,貼紙印刷,傳單印刷印刷,包裝盒印刷,數碼印刷,30秒報價,人工核價,免費送貨,紙袋印刷,海報印刷,香港印刷公司,印刷急單,小批量印刷,ZprintPro,智印港',
   },
   en: {
     // 2026-07-09 P0.1: en-US market local optimization (PM × UX × SEO research, 3-perspective analysis)
@@ -367,20 +367,20 @@ const categorySeoData: Record<string, {
     // 竞品 z-printpro.com 实证: 即日名片印刷 CTR 6.56%, A2 名片 即日 CTR 7.02%, 24小時名片 CTR 4-7%
     // 分散在 nav 独立栏目的反模式已移除, 全部权重归 flyers
     titles: {
-      // 2026-07-17 GSC CTR 修复: 机会词 宣傳單張印刷/宣傳單張 前置
-      'zh-hk': '宣傳單張印刷 | HK$0.25起・免費設計・最快即日 | 智印港 ZprintPro',
+      // 2026-07-17 GSC CTR 修复: 机会词 傳單印刷印刷/傳單印刷 前置
+      'zh-hk': '傳單印刷印刷 | HK$0.25起・免費設計・最快即日 | 智印港 ZprintPro',
       en: 'Flyer Printing from $0.40 | Free Shipping $99+ | ZprintPro',
       ja: 'チラシ印刷｜¥50〜・小ロット・最短即日・無料デザイン｜ZprintPro',
     },
     keywords: {
       // 加長尾: 數碼印刷 / 數碼快印 / 急印傳單 / 即日傳單 / 數位印刷 / 加急傳單 / 短版印刷
-      'zh-hk': '宣傳單張印刷,傳單印刷,即日傳單,數碼印刷,數碼快印,數位印刷,急印傳單,加急傳單,短版印刷,A4單張,A5單張,A3單張,摺頁傳單,開業傳單,餐廳傳單,活動傳單,補習社單張,地產傳單,婚禮傳單,24小時傳單,當日傳單',
+      'zh-hk': '傳單印刷印刷,傳單印刷,即日傳單,數碼印刷,數碼快印,數位印刷,急印傳單,加急傳單,短版印刷,A4單張,A5單張,A3單張,摺頁傳單,開業傳單,餐廳傳單,活動傳單,補習社單張,地產傳單,婚禮傳單,24小時傳單,當日傳單',
       // 加 free shipping / next day / no minimum / made in USA / small business / event marketing
       en: 'flyer printing,leaflet printing,custom flyers,same day flyers,free shipping flyers,next day flyers,digital flyer printing,rush flyer printing,24 hour flyers,A4 flyers,A5 flyers,A3 flyers,folded flyers,grand opening flyers,restaurant flyers,event flyers,real estate flyers,door hanger printing,direct mail flyers,tutoring flyers,short run flyer printing,USA flyer printing,small business flyers,bulk flyer printing',
       ja: 'チラシ印刷,フライヤー印刷,即納チラシ,デジタル印刷,オンデマンド印刷,急ぎチラシ,A4チラシ,A5チラシ,A3チラシ,折りパンフレット,開業チラシ,飲食店チラシ,イベントチラシ,不動産チラシ,塾チラシ,ダイレクトメール,短納期チラシ',
     },
     descriptions: {
-      'zh-hk': '宣傳單張印刷 100 張起印，HK$0.25 起/張。A4/A5/A6 摺頁宣傳單張 + 數碼快印 + 柯式印刷，開業、餐廳、補習社單張最快即日交貨。免費設計打稿，港九新界滿 HK$500 免費順豐速遞。WhatsApp 30 秒即時報價，ISO 9001 認證。',
+      'zh-hk': '傳單印刷印刷 100 張起印，HK$0.25 起/張。A4/A5/A6 摺頁傳單印刷 + 數碼快印 + 柯式印刷，開業、餐廳、補習社單張最快即日交貨。免費設計打稿，港九新界滿 HK$500 免費順豐速遞。WhatsApp 30 秒即時報價，ISO 9001 認證。',
       // 2026-07-17 GSC CTR 修复: 起价前置 + free design / DHL hook
       en: 'Flyer printing from $0.40, 100 MOQ. A4/A5/A6 folded leaflets, digital & offset, free design proof in 2 hours. Same-day rush available, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote.',
       ja: 'チラシ印刷 100 枚から、¥50〜。A4/A5/A6 折込・二つ折り、デジタル+オフセット印刷。無料デザイン校正 2 時間、最短即日発送、日本全国 DHL 2-4 日配送。ISO 9001 認証品質。30 秒 AI 無料見積もり。',
@@ -526,7 +526,7 @@ const categorySeoData: Record<string, {
       ja: 'ポチ袋印刷,オリジナルポチ袋,お年玉袋,結婚式ポチ袋,企業ポチ袋,箔押しポチ袋,紅包印刷,新年ポチ袋,干支ポチ袋,銀行ポチ袋,キャラクターポチ袋',
     },
     descriptions: {
-      'zh-hk': '利是封印刷 100 個起印，HK$1.1 起/個。燙金 / 局部 UV / 婚慶 / 賀年 / 企業 LOGO 定制，免費設計打稿。銀行、地產、零售品牌賀年禮品首選，港九新界滿 HK$500 免費順豐速遞。WhatsApp 30 秒即時報價，ISO 9001 認證。',
+      'zh-hk': '利是封印刷 100 個起印，HK$1.1 起/個。燙金 / 局部 UV / 婚慶 / 賀年 / 企業 LOGO 定製，免費設計打稿。銀行、地產、零售品牌賀年禮品首選，港九新界滿 HK$500 免費順豐速遞。WhatsApp 30 秒即時報價，ISO 9001 認證。',
       en: 'Lai see red packet printing from $0.46, 100 MOQ. Foil stamping, spot UV, wedding, CNY & corporate branding with free design proof. DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote.',
       ja: 'ポチ袋印刷 100 個から、¥64〜。箔押し・スポット UV・婚礼・お正月・企業 LOGO。無料デザイン校正 2 時間、最短即日発送、日本全国 DHL 2-4 日配送。ISO 9001 認証品質。30 秒 AI 無料見積もり。',
     },
@@ -1014,8 +1014,8 @@ export function generatePrintShopSchema(locale: Locale = 'zh-hk'): SchemaOrgData
       'name': locale === 'ja' ? '印刷サービス' : locale === 'en' ? 'Printing Services' : '印刷服務',
       'itemListElement': [
         { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': locale === 'ja' ? 'ステッカー印刷' : locale === 'en' ? 'Sticker Printing' : '貼紙印刷' } },
-        { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': locale === 'ja' ? 'フライヤー印刷' : locale === 'en' ? 'Flyer Printing' : '宣傳單張印刷' } },
-        { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': locale === 'ja' ? 'パッケージ印刷' : locale === 'en' ? 'Packaging Printing' : '包裝盒定制' } },
+        { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': locale === 'ja' ? 'フライヤー印刷' : locale === 'en' ? 'Flyer Printing' : '傳單印刷印刷' } },
+        { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': locale === 'ja' ? 'パッケージ印刷' : locale === 'en' ? 'Packaging Printing' : '包裝盒印刷' } },
         { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': locale === 'ja' ? 'ラベル印刷' : locale === 'en' ? 'Label Printing' : '標籤貼紙印刷' } },
         { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': locale === 'ja' ? '紙袋印刷' : locale === 'en' ? 'Paper Bag Printing' : '紙袋印刷' } },
         { '@type': 'Offer', 'itemOffered': { '@type': 'Service', 'name': locale === 'ja' ? 'ポスター印刷' : locale === 'en' ? 'Poster Printing' : '海報印刷' } },
@@ -1025,7 +1025,7 @@ export function generatePrintShopSchema(locale: Locale = 'zh-hk'): SchemaOrgData
       ? 'アジア実体の国際印刷サービス。ステッカー・フライヤー・パッケージ・紙袋・ラベルを高品質で世界中へ。30秒AI見積もり、72時間国際配送、日本語サポート対応。'
       : locale === 'en'
         ? 'Asia-based international printing service. Stickers, flyers, packaging, paper bags, labels — high quality, worldwide shipping. 30-second AI quote, 72-hour international delivery.'
-        : '深圳實體的國際印刷服務 — 為香港市場提供高質素貼紙、宣傳單張、包裝盒定制、紙袋、標籤貼紙等。線上30秒獲取初步報價，複雜需求由專人人工核價。跨境配送，72小時快速交付。',
+        : '深圳實體的國際印刷服務 — 為香港市場提供高質素貼紙、傳單印刷、包裝盒印刷、紙袋、標籤貼紙等。線上30秒獲取初步報價，複雜需求由專人人工核價。跨境配送，72小時快速交付。',
   };
 }
 

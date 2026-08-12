@@ -161,14 +161,14 @@ function registerEprint(slug: string, data: any) {
       sku: data._meta?.category || 'flyers', // eprint 用 category 字段
       category: (data._meta?.category as Category) || 'flyers',
       name: {
-        'zh-hk': data._meta?.category === 'books' ? '書刊印刷' : '宣傳單張印刷',
+        'zh-hk': data._meta?.category === 'books' ? '書刊印刷' : '傳單印刷印刷',
         en: data._meta?.category === 'books' ? 'Books & Booklets' : 'Flyers & Leaflets',
         ja: data._meta?.category === 'books' ? '書籍印刷' : 'チラシ印刷',
       },
       configCount: data.products.length,
       hasWeight: false,
       priceMode: 'eprint',
-      displayName: data._meta?.category === 'books' ? '書刊印刷' : '宣傳單張印刷',
+      displayName: data._meta?.category === 'books' ? '書刊印刷' : '傳單印刷印刷',
     },
     configs,
     tierField: 'tiers',

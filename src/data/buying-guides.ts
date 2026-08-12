@@ -164,7 +164,7 @@ export const buyingGuides: BuyingGuide[] = [
       ja: 'A4チラシ、A5チラシ、二つ折り、三つ折り—香港チラシ印刷の選び方完全ガイド。',
     },
     keywords: {
-      'zh-hk': '傳單印刷選購,A4傳單,A5傳單,傳單紙質,傳單尺寸,摺頁傳單,傳單價格,香港傳單印刷,宣傳單張',
+      'zh-hk': '傳單印刷選購,A4傳單,A5傳單,傳單紙質,傳單尺寸,摺頁傳單,傳單價格,香港傳單印刷,傳單印刷',
       en: 'flyer buying guide,A4 flyers,A5 flyers,flyer paper,flyer sizes,folded leaflets,flyer prices,flyer printing usa',
       ja: 'チラシ選び方,A4チラシ,A5チラシ,チラシ用紙,チラシサイズ,折りパンフレット,チラシ価格',
     },
@@ -221,17 +221,17 @@ export const buyingGuides: BuyingGuide[] = [
     slug: 'packaging-buying-guide',
     categorySlug: 'packaging',
     title: {
-      'zh-hk': '包裝盒定制選購完全指南：盒型、材質、工藝一次搞懂',
+      'zh-hk': '包裝盒印刷選購完全指南：盒型、材質、工藝一次搞懂',
       en: 'Packaging Box Buying Guide: Styles, Materials & Finishes',
       ja: 'パッケージ箱選び方完全ガイド：箱型、材質、加工を徹底解説',
     },
     description: {
-      'zh-hk': '禮品盒、快遞盒、化妝品盒、食品盒...包裝盒點樣揀？智印港為您整理香港包裝盒定制的完整選購攻略。',
+      'zh-hk': '禮品盒、快遞盒、化妝品盒、食品盒...包裝盒點樣揀？智印港為您整理香港包裝盒印刷的完整選購攻略。',
       en: 'Gift boxes, shipping boxes, cosmetic boxes, food boxes - a complete guide to custom packaging for US brands.',
       ja: 'ギフトボックス、配送箱、化粧品箱、食品箱—香港パッケージ印刷の選び方完全ガイド。',
     },
     keywords: {
-      'zh-hk': '包裝盒選購,包裝盒定制,禮品盒,快遞盒,化妝品盒,食品盒,包裝盒材質,包裝盒工藝,香港包裝盒印刷',
+      'zh-hk': '包裝盒選購,包裝盒印刷,禮品盒,快遞盒,化妝品盒,食品盒,包裝盒材質,包裝盒工藝,香港包裝盒印刷',
       en: 'packaging buying guide,custom boxes,gift boxes,shipping boxes,cosmetic boxes,food boxes,packaging materials,custom packaging usa',
       ja: 'パッケージ選び方,カスタム箱,ギフトボックス,配送箱,化粧品箱,食品箱,パッケージ材質',
     },

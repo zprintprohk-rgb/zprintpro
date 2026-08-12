@@ -193,7 +193,7 @@ const categoryIndustryScenarios: Record<string, IndustryScenario[]> = {
     {
       key: 'wedding',
       scenarios: {
-        'zh-hk': ['婚禮回禮袋 · 客製化設計', '新人名字/日期專屬印刷', '100 個起 · 多色可選'],
+        'zh-hk': ['婚禮回禮袋 · 訂製設計', '新人名字/日期專屬印刷', '100 個起 · 多色可選'],
         en: ['Wedding favor bag · bespoke design', 'Couple name/date personalization', 'From 100 · multiple colors'],
         ja: ['ウェディングギフトバッグ・オーダー', '新郎新婦名・日付入り', '100枚から・マルチカラー'],
       },

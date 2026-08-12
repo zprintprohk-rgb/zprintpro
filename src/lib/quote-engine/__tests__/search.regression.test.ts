@@ -8,8 +8,8 @@ import { searchAll, categories, products } from '../../products';
 //  - 英文别名 (flyers, business card, sticker)
 const businessQueries = [
   // 简体 → 繁体
-  { q: '宣传单张', minP: 8, desc: '简体 → 繁體 flycat. 宣傳單張' },
-  { q: '宣傳單張', minP: 8, desc: '繁體 (HK) direct match' },
+  { q: '宣传单张', minP: 8, desc: '简体 → 繁體 flycat. 傳單印刷' },
+  { q: '傳單印刷', minP: 8, desc: '繁體 (HK) direct match' },
   // 业务卡 跨地区别名
   { q: '名片', minP: 5, desc: 'CN 名片 → 咭片 alias' },
   { q: '咭片', minP: 5, desc: 'HK 咭片 direct' },
@@ -54,7 +54,7 @@ for (const t of businessQueries) {
 // === 2. 分类搜索: typeahead dropdown 关键 ===
 const catQueries = [
   { q: '宣传单张', expectedCat: 'flyers' },
-  { q: '宣傳單張', expectedCat: 'flyers' },
+  { q: '傳單印刷', expectedCat: 'flyers' },
   { q: '名片', expectedCat: 'business-cards' },
   { q: '咭片', expectedCat: 'business-cards' },
   { q: '名刺', expectedCat: 'business-cards' },

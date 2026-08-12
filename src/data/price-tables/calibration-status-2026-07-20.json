@@ -80,7 +80,7 @@
   },
   "dataSources": {
     "intuan_login_quotes": "src/data/price-tables/intuan-real-quotes-2026-07-18.json (6 产品已询)",
-    "eprint_public_anchor": "e-print.com.hk 公开价 (autoglm-browser-agent / curl 可直接抓, 无需登录) — 2026-07-21 实抓 4 页: 膠裝書刊 / 騎馬釘書刊 / 柯式宣傳單張 / 數碼宣傳單張 / 單張特急快印",
+    "eprint_public_anchor": "e-print.com.hk 公开价 (autoglm-browser-agent / curl 可直接抓, 无需登录) — 2026-07-21 实抓 4 页: 膠裝書刊 / 騎馬釘書刊 / 柯式傳單印刷 / 數碼傳單印刷 / 單張特急快印",
     "user_webbridge_session": "intuan.com 已登录态 (cookie/devtools), user 持有, 需要时贴给 Mavis"
   }
 }

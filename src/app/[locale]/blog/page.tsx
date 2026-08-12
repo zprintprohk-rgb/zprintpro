@@ -9,7 +9,7 @@ interface BlogPageProps {
 const metaTranslations: Record<string, { title: string; description: string }> = {
   'zh-hk': {
     title: '印刷知識 | 智印港 ZprintPro',
-    description: '智印港印刷知識專欄，分享貼紙、宣傳單張、包裝、書刊等印刷工藝、設計技巧與行業趨勢。',
+    description: '智印港印刷知識專欄，分享貼紙、傳單印刷、包裝、書刊等印刷工藝、設計技巧與行業趨勢。',
   },
   'en': {
     title: 'Printing Knowledge | ZprintPro',

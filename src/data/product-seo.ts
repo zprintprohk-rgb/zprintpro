@@ -8,8 +8,8 @@ import { SEOMetadata } from '@/types/seo';
 export const coreProductSEO: Record<string, Record<Locale, SEOMetadata>> = {
   stickers: {
     'zh-hk': {
-      title: '防水貼紙印刷 香港 | 透明/PVC/燙金貼紙 少批量定制 | ZprintPro 智印港',
-      description: '香港專業貼紙印刷服務，防水貼紙、透明貼紙、PVC貼紙、燙金貼紙少批量起訂。九龍/港島/新界即日可取，產品包裝貼紙一站式定制。',
+      title: '防水貼紙印刷 香港 | 透明/PVC/燙金貼紙 少批量定製 | ZprintPro 智印港',
+      description: '香港專業貼紙印刷服務，防水貼紙、透明貼紙、PVC貼紙、燙金貼紙少批量起訂。九龍/港島/新界即日可取，產品包裝貼紙一站式定製。',
       canonical: 'https://zprintpro.com/zh-hk/products/stickers',
       ogImage: 'https://zprintpro.com/images/hero/stickers-zh-hk.webp',
       ogType: 'product',
@@ -37,13 +37,13 @@ export const coreProductSEO: Record<string, Record<Locale, SEOMetadata>> = {
   },
   flyers: {
     'zh-hk': {
-      title: 'A5傳單印刷 香港 | 宣傳單張派發 即日取 | 燙金傳單定制 | ZprintPro',
-      description: '香港專業傳單印刷服務，A5/A4宣傳單張、燙金傳單、摺頁傳單少批量起訂。港島/九龍/新界即日可取，配合派發策略一站式解決。',
+      title: 'A5傳單印刷 香港 | 傳單印刷派發 即日取 | 燙金傳單定製 | ZprintPro',
+      description: '香港專業傳單印刷服務，A5/A4傳單印刷、燙金傳單、摺頁傳單少批量起訂。港島/九龍/新界即日可取，配合派發策略一站式解決。',
       canonical: 'https://zprintpro.com/zh-hk/products/flyers',
       ogImage: 'https://zprintpro.com/images/hero/flyers-zh-hk.webp',
       ogType: 'product',
       locale: 'zh-hk',
-      keywords: ['A5傳單印刷 港島', '宣傳單張派發 九龍', '燙金傳單 奢侈品', '少批量傳單', '即日取傳單', '香港傳單印刷', '摺頁傳單'],
+      keywords: ['A5傳單印刷 港島', '傳單印刷派發 九龍', '燙金傳單 奢侈品', '少批量傳單', '即日取傳單', '香港傳單印刷', '摺頁傳單'],
     },
     'en': {
       title: 'Flyer Printing | Same Day A5/A4 Leaflets | ZprintPro',
@@ -66,8 +66,8 @@ export const coreProductSEO: Record<string, Record<Locale, SEOMetadata>> = {
   },
   'packaging-boxes': {
     'zh-hk': {
-      title: '磁吸禮盒 香港 定制 | 環保包裝盒/化妝品盒 燙金 | ZprintPro',
-      description: '香港專業包裝盒定制服務，磁吸禮盒、環保包裝盒、化妝品盒燙金工藝。新界/九龍/港島即日打樣，FSC認證紙張，品牌包裝一站式解決。',
+      title: '磁吸禮盒 香港 定製 | 環保包裝盒/化妝品盒 燙金 | ZprintPro',
+      description: '香港專業包裝盒印刷服務，磁吸禮盒、環保包裝盒、化妝品盒燙金工藝。新界/九龍/港島即日打樣，FSC認證紙張，品牌包裝一站式解決。',
       canonical: 'https://zprintpro.com/zh-hk/products/packaging-boxes',
       ogImage: 'https://zprintpro.com/images/hero/packaging-zh-hk.webp',
       ogType: 'product',
@@ -124,8 +124,8 @@ export const coreProductSEO: Record<string, Record<Locale, SEOMetadata>> = {
   },
   'paper-bags': {
     'zh-hk': {
-      title: '環保紙袋 香港 定制 | 牛皮紙袋/禮品紙袋燙金 | ZprintPro',
-      description: '香港專業紙袋印刷服務，環保紙袋、牛皮紙袋、禮品紙袋燙金工藝。九龍/港島/新界即日可取，FSC認證環保紙張，品牌紙袋一站式定制。',
+      title: '環保紙袋 香港 定製 | 牛皮紙袋/禮品紙袋燙金 | ZprintPro',
+      description: '香港專業紙袋印刷服務，環保紙袋、牛皮紙袋、禮品紙袋燙金工藝。九龍/港島/新界即日可取，FSC認證環保紙張，品牌紙袋一站式定製。',
       canonical: 'https://zprintpro.com/zh-hk/products/paper-bags',
       ogImage: 'https://zprintpro.com/images/hero/paper-bags-zh-hk.webp',
       ogType: 'product',

@@ -82,7 +82,7 @@ const translations = {
 };
 
 const popularQueries: Record<string, string[]> = {
-  'zh-hk': ['宣傳單張', '貼紙', '紙袋', '包裝盒', '標籤'],
+  'zh-hk': ['傳單印刷', '貼紙', '紙袋', '包裝盒', '標籤'],
   en: ['Flyers', 'Stickers', 'Paper Bags', 'Packaging', 'Labels'],
   ja: ['チラシ', 'ステッカー', '紙袋', 'パッケージ', 'ラベル'],
 };

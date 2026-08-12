@@ -1,9 +1,9 @@
 {
   "category": "flyers",
   "currency": "HKD",
-  "label": "宣傳單張",
-  "name": "宣傳單張印刷",
-  "description": "A3 / A4 / A5 / 客製尺寸宣傳單張, 105g 銅版紙 / 157g 雙粉紙 / 騎馬釘裝, 100 張起印, 1-3 個工作天",
+  "label": "傳單印刷",
+  "name": "傳單印刷印刷",
+  "description": "A3 / A4 / A5 / 客製尺寸傳單印刷, 105g 銅版紙 / 157g 雙粉紙 / 騎馬釘裝, 100 張起印, 1-3 個工作天",
   "tiers": [
     {
       "size": "small",

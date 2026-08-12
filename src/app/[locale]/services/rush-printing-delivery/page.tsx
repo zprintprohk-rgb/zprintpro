@@ -23,7 +23,7 @@ type Props = {
 const metaMap: Record<string, { title: string; desc: string }> = {
   'zh-hk': {
     title: '印刷即日速递送货 | 今天下單明天12點前到 | 18:00截單 | 智印港 ZPrintPro',
-    desc: '印刷即日速递送货首选智印港 ZPrintPro！今天下班6點前下單，明天中午12點前收貨。宣傳單張、海報、貼紙、紙袋、畫冊、易拉寶通宵印刷，支持港鐵站交收。',
+    desc: '印刷即日速递送货首选智印港 ZPrintPro！今天下班6點前下單，明天中午12點前收貨。傳單印刷、海報、貼紙、紙袋、畫冊、易拉寶通宵印刷，支持港鐵站交收。',
   },
   'en': {
     title: 'Rush Printing Service | 2-4 Day Global Delivery | ZprintPro',
@@ -98,7 +98,7 @@ export default function RushDeliveryPage({ params }: Props) {
             {locale === 'zh-hk' ? '今天下單·明天中午12點前到' : locale === 'en' ? 'Order Today, Printed Overnight' : '本日注文・徹夜印刷'}
           </h2>
           <p className="text-lg md:text-xl text-white/90 mb-5 max-w-2xl">
-            {locale === 'zh-hk' ? '專為臨急任務而生——宣傳單張、海報、貼紙、紙袋通宵印刷，畫冊與易拉寶翌日中午準時達' : locale === 'en' ? 'Rush printing for flyers, posters, stickers, paper bags. Booklets & banners on priority production.' : 'チラシ、ポスター、シール、紙袋の特急印刷。冊子とバナーも優先製作対応。'}
+            {locale === 'zh-hk' ? '專為臨急任務而生——傳單印刷、海報、貼紙、紙袋通宵印刷，畫冊與易拉寶翌日中午準時達' : locale === 'en' ? 'Rush printing for flyers, posters, stickers, paper bags. Booklets & banners on priority production.' : 'チラシ、ポスター、シール、紙袋の特急印刷。冊子とバナーも優先製作対応。'}
           </p>
           {/* 雙 CTA (P0 K3 拍板): 主 = WhatsApp 確認趕單 (預填產品/數量/地址), 次 = 查看價格並下單 */}
           <div className="flex flex-col sm:flex-row gap-3 mb-3">
@@ -140,7 +140,7 @@ export default function RushDeliveryPage({ params }: Props) {
           {locale === 'zh-hk' && (
             <>
               <strong>今天下班6點前下單，明天中午12點前收貨。</strong>
-              專為臨急任務而生——宣傳單張、海報、貼紙、紙袋通宵印刷，畫冊與易拉寶翌日中午準時達。支持全港港鐵站交收。
+              專為臨急任務而生——傳單印刷、海報、貼紙、紙袋通宵印刷，畫冊與易拉寶翌日中午準時達。支持全港港鐵站交收。
             </>
           )}
           {locale === 'en' && (

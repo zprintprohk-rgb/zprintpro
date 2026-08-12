@@ -47,7 +47,7 @@ function getLiveFxRates(): Record<keyof typeof LIVE_FX_RATES_FALLBACK, number> {
 // ============================================================================
 // 2026-06-14 Phase B 修复 P0-5：JA locale JPY 结算强制化
 // 背景：审计发现 JA 页面显示 JPY 但实际后台结算走 HKD，信任崩塌。
-// 设计：feature flag `NEXT_PUBLIC_JA_FORCE_JPY` 控制（默认 false），
+// 设计：feature flag `NEXT_PUBLIC_JA_FORCE_JPY` 控製（默认 false），
 //       打开后 JA locale 走 JPY 计价/结算，HKD 后台记账仍可换算。
 // 退出条件：把 env 改 false 一秒回滚。
 // ============================================================================
@@ -159,7 +159,7 @@ export function formatPriceForRegion(
   locale: string | undefined | null,
   region?: string | null
 ): { amount: number; currency: 'HKD' | 'USD' | 'GBP' | 'AUD' | 'JPY'; symbol: string; text: string } {
-  // ja 强制 JPY（feature flag 控制）
+  // ja 强製 JPY（feature flag 控制）
   if (locale && isJALocale(locale)) {
     return formatPriceForLocale(priceHKD, locale);
   }

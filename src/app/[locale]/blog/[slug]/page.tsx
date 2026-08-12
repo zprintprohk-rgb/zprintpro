@@ -292,7 +292,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
       content: '',
     },
     'cosmetics-packaging-box-printing-guide': {
-      title: '化妝品包裝盒定制指南 · 護膚品牌結構與材質全攻略 | 智印港 ZprintPro',
+      title: '化妝品包裝盒印刷指南 · 護膚品牌結構與材質全攻略 | 智印港 ZprintPro',
       description: '護膚品新品牌如何揀包裝盒？比較天地盒、磁吸盒、摺疊盒 3 大結構，分析銅版紙、灰板、密度板等材質特性，附 4 條品牌創辦人常見 FAQ，協助 100-10,000 件 MOQ 精準控成本。',
       date: '2026-07-16', category: '美妝護膚',
       content: '',
@@ -306,7 +306,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
 
     // 2026-07-20 v4 daily-content-evolve: 3 NEW Tier C 行业博客 (zh-hk locale titles)
     'religious-ceremony-printing-guide': {
-      title: '香港宗教禮儀印刷指南 · 教堂寺廟殯儀禮盒感謝袋定制 | 智印港 ZprintPro',
+      title: '香港宗教禮儀印刷指南 · 教堂寺廟殯儀禮盒感謝袋定製 | 智印港 ZprintPro',
       description: '香港教堂／佛寺／道觀／殯儀館宗教場地印刷攻略：1200g 灰板硬盒 + 緞帶手挽 + 燙金十字架、250g 銅版紙啞面、350g 白卡紙訃聞，4 條場地負責人 FAQ，50-500 套精準下單。',
       date: '2026-07-20', category: '宗教文化',
       content: '',
@@ -318,7 +318,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
       content: '',
     },
     'construction-material-sample-book-printing-guide': {
-      title: '建築裝飾材料樣板手冊印刷指南 · 瓷磚石材窗簾色卡定制 | 智印港 ZprintPro',
+      title: '建築裝飾材料樣板手冊印刷指南 · 瓷磚石材窗簾色卡定製 | 智印港 ZprintPro',
       description: '建築裝飾材料供應商必睇：5 種裝訂方式（騎馬釘／精裝／蝴蝶裝／活頁夾／卡片盒）+ 真材實料樣辦夾層 + 4 條建材供應商 FAQ，協助 50-500 本精準下單。',
       date: '2026-07-20', category: '建築工程',
       content: '',
@@ -368,7 +368,7 @@ const posts: Record<string, Record<string, { title: string; description: string;
 
     // 2026-07-27 v4.1 weekly-meta-refresh: T6-FI-006 金融證券 1st 覆蓋 (Tier B × P0 paper-bags)
     'financial-institution-gift-bag-printing-guide': {
-      title: '香港金融機構禮品袋印刷指南 · 銀行卡套 + 信用卡開卡禮盒定制 | 智印港 ZprintPro',
+      title: '香港金融機構禮品袋印刷指南 · 銀行卡套 + 信用卡開卡禮盒定製 | 智印港 ZprintPro',
       description: '香港銀行、信用卡中心、券商、基金公司、保險公司客戶禮品袋完整攻略。1200g 灰板硬盒 + 燙金銀行 logo + RFID 防偽卡套 + 緞帶手挽，附 4 條金融採購 FAQ，協助 100-5,000 套精準下單。',
       date: '2026-07-27', category: '金融證券',
       content: '',
@@ -1087,7 +1087,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
                         />
                       </div>
                       {/* 2026-08-05 K3 12:24 拍板: 标题用 getProductDisplayTitle (长尾词+核心词版) 替代 getProductTitle (短名版)
-                          e.g. flyer blog sidebar 显示 "A4宣傳單張印刷 100張起印 HK$0.3/張 雙面彩印 | 智印港 ZprintPro" 而不是 "A4宣傳單張"
+                          e.g. flyer blog sidebar 显示 "A4傳單印刷印刷 100張起印 HK$0.3/張 雙面彩印 | 智印港 ZprintPro" 而不是 "A4傳單印刷"
                           line-clamp-1 + 字号小 11px + sidebar 240-280px 宽度, 强制单行展示 (不再截断)
                           2026-08-05 K3 14:00 拍板: 标题字号放大 1.5 倍 (11px → 17px) 配合 6 visible
                           (整 17px 适配 sidebar 280px 宽度, line-clamp-1 单行, 长尾词标题"·品质保证·智印港" 仍能展示) */}
