@@ -140,15 +140,15 @@ export const products: Product[] = [
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，主要服務日本及全球客戶，提供專業印刷與跨境配送服務。免費打樣，DHL Express / FedEx 國際速遞配送。</p>
+<p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，主要服務日本及全球客戶，提供專業印刷與跨境配送服務。免費打樣，DHL Express / FedEx 國際速遞配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、燙銀、玫瑰金、局部 UV、壓凹、壓紋、圓角模切等加值工藝。雙面印刷免費排版與出血檢查。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 
 <h3>5 檔牛皮紙袋校準報價 (参考實價, 2026-07-18)</h3>
-<p>以下價格來自智印雲 2026-07-18 向 <a href="/product/kraft-paper-bags/">牛皮紙袋</a> 供應商登錄態實詢 (中號 260x170x250mm / 120g 黃牛皮 / 紙繩或扁繩 / 單色-四色),1.3 倍合理利潤 + RMB→HKD 1.087 換算後的可即時展示真實校準錨點:</p>
+<p>以下價格來自智印港 2026-07-18 向 <a href="/product/kraft-paper-bags/">牛皮紙袋</a> 供應商登錄態實詢 (中號 260x170x250mm / 120g 黃牛皮 / 紙繩或扁繩 / 單色-四色),1.3 倍合理利潤 + RMB→HKD 1.087 換算後的可即時展示真實校準錨點:</p>
 <table>
   <thead><tr><th>數量</th><th>單個 (HKD)</th><th>總價 (HKD)</th><th>跳水幅度</th><th>對比 e-print 零售</th></tr></thead>
   <tbody>
@@ -159,13 +159,13 @@ export const products: Product[] = [
     <tr><td>5,000 個</td><td>$0.84</td><td>$4,202</td><td>-6%</td><td>較 e-print 便宜 85%</td></tr>
   </tbody>
 </table>
-<p>對比 e-print 香港零售 <strong>HK$2,049 / 300 個 = $6.83 / 個</strong> (E-01 款, 8 個工作天),智印雲 500 個起印已可壓到 e-print 零售天花板 24% 以下。批量越大,單個成本越接近材料底。智印雲 15+ 年印刷經驗,服務 15,000+ 客戶,產品銷往 100+ 國家,牛皮紙袋獲 FSC 認證,所有訂單 ISO 12647 色彩管理、ISO 9001 品質認證把關。</p>
+<p>對比 e-print 香港零售 <strong>HK$2,049 / 300 個 = $6.83 / 個</strong> (E-01 款, 8 個工作天),智印港 500 個起印已可壓到 e-print 零售天花板 24% 以下。批量越大,單個成本越接近材料底。智印港 15+ 年印刷經驗,服務 15,000+ 客戶,產品銷往 100+ 國家,牛皮紙袋獲 FSC 認證,所有訂單 ISO 12647 色彩管理、ISO 9001 品質認證把關。</p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Premium Greeting Cards for Global Brands</h3>
 <p>ZprintPro premium greeting cards are designed for executives, finance, and legal professionals across the US and global markets. Choose from 300g-400g matte, cotton, or coated paper with foil stamping, spot UV, and embossing. Heidelberg 4-color offset printing delivers 90%+ color saturation and crisp halftone reproduction, while optional R3mm rounded corners add a refined touch. Standard 85×54mm size, 100-card MOQ, with free color proofing to ensure batch consistency.</p>
@@ -267,10 +267,10 @@ export const products: Product[] = [
 </ul>
 
 <h3>FSC 認証と ISO 12647 色彩管理</h3>
-<p>智印雲 ZprintPro のプレミアムグリーティングカードは <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> 基準。ブランドカラーを厳守し、再発注時の色再現も安定。ESG 報告用の紙材トレーサビリティもご提供。士業・金融・クリエイティブなど格式高い業界のプロフェッショナル向けに、最適なグリーティングカードソリューションをご提案します。</p>
+<p>ジープリント ZprintPro のプレミアムグリーティングカードは <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> 基準。ブランドカラーを厳守し、再発注時の色再現も安定。ESG 報告用の紙材トレーサビリティもご提供。士業・金融・クリエイティブなど格式高い業界のプロフェッショナル向けに、最適なグリーティングカードソリューションをご提案します。</p>
 
 <h3>法人・大量発注対応</h3>
-<p>智印雲 ZprintPro は累計 5,000 社以上の法人グリーティングカード取引実績。</p>
+<p>ジープリント ZprintPro は累計 5,000 社以上の法人グリーティングカード取引実績。</p>
 <ul>
   <li><strong>営業チーム 100 名以上</strong>：個別データ可変印刷、部署別カラー分け対応</li>
   <li><strong>NET 30 月締請求書払い</strong>：法人掛売り対応、与信審査後サービス開始</li>
@@ -280,7 +280,7 @@ export const products: Product[] = [
 </ul>
 
 <h3>プレミアムグリーティングカードの標準仕様</h3>
-<p>智印雲 ZprintPro プレミアムグリーティングカードの標準仕様と日本向け最適化。</p>
+<p>ジープリント ZprintPro プレミアムグリーティングカードの標準仕様と日本向け最適化。</p>
 <ul>
   <li><strong>標準サイズ</strong>：91mm × 55mm（日本のグリーティングカード規格）</li>
   <li><strong>横向き・縦向き</strong>：両対応、データ入稿時にご指定</li>
@@ -353,15 +353,15 @@ export const products: Product[] = [
   <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式対応、AI 自動チェックで出血・解像度・CMYK 色彩を事前検証</li>
   <li><strong>見積もり確認</strong>：30 秒以内に送料込みの総額表示、内容確認後すぐ製造開始</li>
 </ol>
-<p>今すぐ体験：<strong>智印雲 ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>
+<p>今すぐ体験：<strong>ジープリント ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、グリーティングカード・封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、グリーティングカード・封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【85×54mm標準尺寸】兼容全球卡夾',
@@ -448,11 +448,11 @@ export const products: Product[] = [
     category_slug: 'greeting-cards',
     name: '厚身賀卡(400g)', nameEn: 'Thick 400g Greeting Cards', nameJa: '年賀状印刷 | 厚手400gグリーティングカード', title_zh: '厚身賀卡(400g)',
     description: '400g 超厚賀卡,挺度極佳手感沈穩,聖誕/新年/婚禮高級賀卡首選。可選燙金/UV/擊凸/壓紋,免費打樣,DHL 全球 2-4 天配送。', descriptionEn: '400g ultra-thick greeting cards with substantial feel. Perfect for Christmas, New Year, wedding, milestone events. Optional foil stamping, UV, embossing. Free sample, DHL Express 2-4 day global delivery.', descriptionJa: '400g 超厚グリーティングカード、剛性极佳で重厚感。クリスマス、新年、ウェディング、節句向け。箔押し/UV/エンボス選択可、無料サンプル、DHL Express 国際 2-4 日納品対応。', description_zh: '400g 超厚賀卡,挺度極佳手感沈穩,聖誕/新年/婚禮高級賀卡首選。可選燙金/UV/擊凸/壓紋,免費打樣,DHL 全球 2-4 天配送。',
-    longDescription: `智印雲厚身賀卡採用400g超厚銅版紙，厚度達標準卡片厚度的1.3倍，挺度極佳，手感沈穩厚實，彰顯尊貴品質。配合四色柯式印刷，網點細膩，色彩飽和。表面可選啞膠或光膠覆膜，亦可追加燙金或壓紋工藝。特別適合高端服務業、設計師、律師等需要展現專業權威的專業人士。成品標準85×54mm，邊角經過加壓處理不易翹曲。我們提供免費打樣與色彩確認服務。與分類頁內容一致，材質關鍵詞包含：400g銅版紙、厚身賀卡、覆膜、燙金、壓紋。<h3>賀卡克重對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">規格</th><th class="p-2 text-center">挺度</th><th class="p-2 text-center">質感</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用人群</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">300g 標準</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">一般商務、初創</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">400g 厚身</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">設計師、律師、高端服務</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">600g 特厚</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">奢侈品牌、VIP卡</td></tr></tbody></table><h3>賀卡克重對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">規格</th><th class="p-2 text-center">挺度</th><th class="p-2 text-center">質感</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用人群</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">300g 標準</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">一般商務、初創</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">400g 厚身</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">設計師、律師、高端服務</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">600g 特厚</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">奢侈品牌、VIP卡</td></tr></tbody></table>
+    longDescription: `智印港厚身賀卡採用400g超厚銅版紙，厚度達標準卡片厚度的1.3倍，挺度極佳，手感沈穩厚實，彰顯尊貴品質。配合四色柯式印刷，網點細膩，色彩飽和。表面可選啞膠或光膠覆膜，亦可追加燙金或壓紋工藝。特別適合高端服務業、設計師、律師等需要展現專業權威的專業人士。成品標準85×54mm，邊角經過加壓處理不易翹曲。我們提供免費打樣與色彩確認服務。與分類頁內容一致，材質關鍵詞包含：400g銅版紙、厚身賀卡、覆膜、燙金、壓紋。<h3>賀卡克重對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">規格</th><th class="p-2 text-center">挺度</th><th class="p-2 text-center">質感</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用人群</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">300g 標準</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">一般商務、初創</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">400g 厚身</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">設計師、律師、高端服務</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">600g 特厚</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">奢侈品牌、VIP卡</td></tr></tbody></table><h3>賀卡克重對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">規格</th><th class="p-2 text-center">挺度</th><th class="p-2 text-center">質感</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用人群</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">300g 標準</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">一般商務、初創</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">400g 厚身</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">設計師、律師、高端服務</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">600g 特厚</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">奢侈品牌、VIP卡</td></tr></tbody></table>
 
-**智印雲 國際印刷**：深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。
+**智印港 國際印刷**：深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 
 <h3>5-Tier Kraft Paper Bag Calibrated Pricing (reference pricing, 2026-07-18)</h3>
 <p>The following prices are sourced from ZprintPro's logged-in <a href="/en/product/kraft-paper-bags/">kraft paper bag</a> supplier quote on 2026-07-18 (medium 260x170x250mm / 120g brown kraft / paper or flat rope / 1-4 color print), with a 1.3x fair margin and CNY→USD 7.25 conversion. They are real calibrated anchors we can display today:</p>
@@ -470,7 +470,7 @@ export const products: Product[] = [
 <p><strong>US sharp hooks:</strong> Free Shipping over $99 to all US ZIP codes · Free design mockup · No setup fees · 500-piece MOQ · Fast Turnaround 5-10 business days from Asia factory + DHL 2-4 day global delivery.</p>
 
 <h3>5 段階クラフト紙袋校正価格 (参考価格, 2026-07-18)</h3>
-<p>下記価格は 2026-07-18 智印雲が <a href="/ja/product/kraft-paper-bags/">クラフト紙袋</a> サプライヤーにログイン状態で実詢したもの(中サイズ 260x170x250mm / 120g クラフト / 紙紐または平紐 / 1-4 色印刷)、1.3 倍適正マージン + CNY→JPY 20.5 為替換算済み。即時表示可能な実校正アンカーです:</p>
+<p>下記価格は 2026-07-18 智印港が <a href="/ja/product/kraft-paper-bags/">クラフト紙袋</a> サプライヤーにログイン状態で実詢したもの(中サイズ 260x170x250mm / 120g クラフト / 紙紐または平紐 / 1-4 色印刷)、1.3 倍適正マージン + CNY→JPY 20.5 為替換算済み。即時表示可能な実校正アンカーです:</p>
 <table>
   <thead><tr><th>数量</th><th>単価 (JPY税込)</th><th>合計 (JPY税込)</th><th>逓減率</th><th>e-print HK 比較</th></tr></thead>
   <tbody>
@@ -481,13 +481,13 @@ export const products: Product[] = [
     <tr><td>5,000 枚</td><td>¥17</td><td>¥86,141</td><td>-6%</td><td>e-print より 85% 安</td></tr>
   </tbody>
 </table>
-<p>e-print 香港小売 <strong>HK$2,049 / 300 枚 = ¥112 / 枚</strong> (E-01 款、8 営業日) と比較して、智印雲の同仕様クラフト紙袋 500 枚から e-print の小売天井を 76% 下回ります。大量発注ほど単価が素材原価に近づきます。智印雲は 15+ 年の印刷実績、15,000+ 顧客、100+ か国出荷の信頼。クラフト紙袋は全商品 FSC 認証、ISO 12647 カラー管理、ISO 9001 品質保証付き。</p>
+<p>e-print 香港小売 <strong>HK$2,049 / 300 枚 = ¥112 / 枚</strong> (E-01 款、8 営業日) と比較して、智印港の同仕様クラフト紙袋 500 枚から e-print の小売天井を 76% 下回ります。大量発注ほど単価が素材原価に近づきます。智印港は 15+ 年の印刷実績、15,000+ 顧客、100+ か国出荷の信頼。クラフト紙袋は全商品 FSC 認証、ISO 12647 カラー管理、ISO 9001 品質保証付き。</p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Thick Greeting Cards (400g) for Premium Brands</h3>
 <p>ZprintPro Thick Greeting Cards are crafted from 400g ultra-thick coated paper, offering 1.3× the thickness and rigidity of standard cards. Designed for executives, finance and legal professionals, designers, and luxury hospitality brands that need an instant impression of substance and authority. Heidelberg 4-color offset printing delivers crisp halftone reproduction and saturated color, with optional matte or gloss lamination, foil stamping, and embossing for a refined finish. Standard 85×54mm, 100-card MOQ, free digital color proofing.</p>
@@ -552,13 +552,13 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>What if I'm not happy with the print quality?</strong></summary><p>We provide free digital color proofing before production. If the final print drifts from approved proof, we reprint at no cost or refund in full. Your satisfaction is guaranteed.</p></details>`,
     longDescriptionJa: `厚紙グリーティングカードをZprintProでご注文。400g超厚コート紙、両面カラー、厚紙グリーティングカードでプレミアム感を演出。デザイナー・弁護士・高級サービス業様に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、グリーティングカード・封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、グリーティングカード・封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【85×54mm標準尺寸】兼容全球卡夾',
@@ -678,18 +678,18 @@ export const products: Product[] = [
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，主要服務日本及全球客戶，提供專業印刷與跨境配送服務。免費打樣，DHL Express / FedEx 國際速遞配送。</p>
+<p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，主要服務日本及全球客戶，提供專業印刷與跨境配送服務。免費打樣，DHL Express / FedEx 國際速遞配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、燙銀、玫瑰金、局部 UV、壓凹、壓紋、圓角模切等加值工藝。雙面印刷免費排版與出血檢查。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Foil Stamped Greeting Cards for Global Brands</h3>
 <p>ZprintPro foil stamped greeting cards add metallic shine to logos, names, and design elements for executives, finance, and luxury brand professionals across the US, UK, Australia, and global markets. Choose from gold, silver, rose gold, copper, and holographic foil on 350-600g matte or uncoated card. Heidelberg 4-color offset + hot stamp foil delivers crisp metallic edges and 90%+ color saturation. 100-card MOQ, free color proofing, 3-5 day production.</p>
@@ -758,7 +758,7 @@ export const products: Product[] = [
 
     `,
     longDescriptionJa: `<h3>グローバルブランド向け 箔押しグリーティングカード</h3>
-<p>智印雲 ZprintPro の箔押しグリーティングカードは、ロゴ・氏名・デザイン要素に金属光沢をプラスする高級印刷サービスです。経営者・金融・ラグジュアリーブランドのプロフェッショナル向けに最適化され、米国・英国・オーストラリア・日本などグローバル市場に対応。金箔・銀箔・rose gold 箔・銅箔・ホログラム箔の 5 種類から選択可能、350-600g のマットアート紙または非塗工紙をベースに、Heidelberg 4 色オフセット印刷 + ホットスタンプ箔押しで、シャープな箔エッジと 90% 以上の色再現性を実現します。100 枚からご注文可能、無料色校正サービス、3-5 営業日で製作完了。</p>
+<p>ジープリント ZprintPro の箔押しグリーティングカードは、ロゴ・氏名・デザイン要素に金属光沢をプラスする高級印刷サービスです。経営者・金融・ラグジュアリーブランドのプロフェッショナル向けに最適化され、米国・英国・オーストラリア・日本などグローバル市場に対応。金箔・銀箔・rose gold 箔・銅箔・ホログラム箔の 5 種類から選択可能、350-600g のマットアート紙または非塗工紙をベースに、Heidelberg 4 色オフセット印刷 + ホットスタンプ箔押しで、シャープな箔エッジと 90% 以上の色再現性を実現します。100 枚からご注文可能、無料色校正サービス、3-5 営業日で製作完了。</p>
 
 <h3>紙質と箔押し効果の比較</h3>
 <table>
@@ -806,7 +806,7 @@ export const products: Product[] = [
 </ul>
 
 <h3>FSC 認証と ISO 9001 品質保証</h3>
-<p>智印雲 ZprintPro の箔押しグリーティングカードは <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。持続可能な紙材調達と厳格な品質管理を実現。ESG 報告用の紙材トレーサビリティレポートもご提供。経営者・金融・士業・クリエイティブ業界のプロフェッショナル向けに、最適な箔押しグリーティングカードソリューションをご提案します。</p>
+<p>ジープリント ZprintPro の箔押しグリーティングカードは <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。持続可能な紙材調達と厳格な品質管理を実現。ESG 報告用の紙材トレーサビリティレポートもご提供。経営者・金融・士業・クリエイティブ業界のプロフェッショナル向けに、最適な箔押しグリーティングカードソリューションをご提案します。</p>
 
 <h3>業界別活用事例</h3>
 <ul>
@@ -819,7 +819,7 @@ export const products: Product[] = [
 </ul>
 
 <h3>日本向け配送と多通貨決済</h3>
-<p>智印雲 ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。100 枚以上のご注文は送料無料で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
+<p>ジープリント ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。100 枚以上のご注文は送料無料で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -881,7 +881,7 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>アジア自社工場から DHL Express で 2-3 営業日納品、沖縄・離島も 2-4 営業日。追跡番号は発送後 24 時間以内にお届け。100 枚以上のご注文は送料無料で全国配送対応。</p></details>
 <details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能です。品質問題（箔剥がれ・色ズレ）は無料で再印刷または全額返金いたします。100% 満足保証でご提供します。</p></details>
 
-<p><em>智印雲 (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
+<p><em>ジープリント (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
     features: [
       '【85×54mm標準尺寸】兼容全球卡夾',
       '【四色柯式印刷】網點細膩，色彩飽和度≥90%',
@@ -999,18 +999,18 @@ export const products: Product[] = [
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，主要服務日本及全球客戶，提供專業印刷與跨境配送服務。免費打樣，DHL Express / FedEx 國際速遞配送。</p>
+<p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，主要服務日本及全球客戶，提供專業印刷與跨境配送服務。免費打樣，DHL Express / FedEx 國際速遞配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、燙銀、玫瑰金、局部 UV、壓凹、壓紋、圓角模切等加值工藝。雙面印刷免費排版與出血檢查。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Spot UV Greeting Cards for Global Brands</h3>
 <p>ZprintPro spot UV greeting cards create glossy contrast on logos, names, and design elements through selective UV coating on matte stock. The result is striking dimensional contrast — your logo or pattern shines under light while the rest stays soft matte. Perfect for creative agencies, designers, tech founders, and modern brands across the US, UK, Australia, and global markets. 100-card MOQ, 3-5 day production, free color proofing.</p>
@@ -1079,7 +1079,7 @@ export const products: Product[] = [
 
 `,
     longDescriptionJa: `<h3>グローバルブランド向け スポット UV グリーティングカード</h3>
-<p>智印雲 ZprintPro のスポット UV グリーティングカードは、マット調の用紙ベースにロゴ・氏名・デザイン要素を部分的に UV グロス加工することで、光沢コントラストで立体感を演出する高級印刷サービスです。クリエイティブエージェンシー・デザイナー・テック企業の創業者・モダンブランド向けに最適化。米国・英国・オーストラリア・日本などグローバル市場に対応。100 枚からご注文可能、3-5 営業日製作、無料色校正サービス込み。</p>
+<p>ジープリント ZprintPro のスポット UV グリーティングカードは、マット調の用紙ベースにロゴ・氏名・デザイン要素を部分的に UV グロス加工することで、光沢コントラストで立体感を演出する高級印刷サービスです。クリエイティブエージェンシー・デザイナー・テック企業の創業者・モダンブランド向けに最適化。米国・英国・オーストラリア・日本などグローバル市場に対応。100 枚からご注文可能、3-5 営業日製作、無料色校正サービス込み。</p>
 
 <h3>紙質と UV 効果の比較</h3>
 <table>
@@ -1127,7 +1127,7 @@ export const products: Product[] = [
 </ul>
 
 <h3>FSC 認証と ISO 9001 品質保証</h3>
-<p>智印雲 ZprintPro のスポット UV グリーティングカードは <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。持続可能な紙材調達と厳格な品質管理を実現。クリエイティブ業界・テック業界・モダンブランド向けに、最適なスポット UV グリーティングカードソリューションをご提案します。</p>
+<p>ジープリント ZprintPro のスポット UV グリーティングカードは <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。持続可能な紙材調達と厳格な品質管理を実現。クリエイティブ業界・テック業界・モダンブランド向けに、最適なスポット UV グリーティングカードソリューションをご提案します。</p>
 
 <h3>業界別活用事例</h3>
 <ul>
@@ -1140,7 +1140,7 @@ export const products: Product[] = [
 </ul>
 
 <h3>日本向け配送と多通貨決済</h3>
-<p>智印雲 ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。100 枚以上のご注文は送料無料で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
+<p>ジープリント ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。100 枚以上のご注文は送料無料で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -1199,7 +1199,7 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>アジア自社工場から DHL Express で 2-3 営業日納品、沖縄・離島も 2-4 営業日。100 枚以上のご注文は送料無料で全国配送対応。</p></details>
 <details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能。品質問題 (UV 剥がれ・色ズレ) は無料で再印刷または全額返金、100% 満足保証。</p></details>
 
-<p><em>智印雲 (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
+<p><em>ジープリント (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
     features: [
       '【85×54mm標準尺寸】兼容全球卡夾',
       '【四色柯式印刷】網點細膩，色彩飽和度≥90%',
@@ -1315,18 +1315,18 @@ export const products: Product[] = [
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，主要服務日本及全球客戶，提供專業印刷與跨境配送服務。免費打樣，DHL Express / FedEx 國際速遞配送。</p>
+<p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，主要服務日本及全球客戶，提供專業印刷與跨境配送服務。免費打樣，DHL Express / FedEx 國際速遞配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、燙銀、玫瑰金、局部 UV、壓凹、壓紋、圓角模切等加值工藝。雙面印刷免費排版與出血檢查。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Matte Laminated Greeting Cards for Global Brands</h3>
 <p>ZprintPro matte laminated greeting cards are the workhorse of modern professional branding — soft-touch matte lamination resists fingerprints, feels premium, and reproduces color with sophisticated subtlety. Built on 300-400g art card or uncoated stock with full 4-color CMYK printing. Perfect for designers, agencies, finance professionals, and modern brands across the US, UK, Australia, and global markets. 100-card MOQ, 2-3 day production, free color proofing.</p>
@@ -1395,7 +1395,7 @@ export const products: Product[] = [
 
 `,
     longDescriptionJa: `<h3>グローバルブランド向け マットラミネートグリーティングカード</h3>
-<p>智印雲 ZprintPro のマットラミネートグリーティングカードは、モダンブランドの定番フォーマット。ソフトタッチのマットラミネート加工で指紋が付きにくく、プレミアムな手触りと共に上品な色彩再現を実現します。デザイナー・エージェンシー・金融プロフェッショナル・モダンブランド向けに最適化。300-400g アートカードまたは非塗工紙に 4 色 CMYK 印刷。100 枚から対応、2-3 営業日製作、無料色校正込み。</p>
+<p>ジープリント ZprintPro のマットラミネートグリーティングカードは、モダンブランドの定番フォーマット。ソフトタッチのマットラミネート加工で指紋が付きにくく、プレミアムな手触りと共に上品な色彩再現を実現します。デザイナー・エージェンシー・金融プロフェッショナル・モダンブランド向けに最適化。300-400g アートカードまたは非塗工紙に 4 色 CMYK 印刷。100 枚から対応、2-3 営業日製作、無料色校正込み。</p>
 
 <h3>紙質とラミネーションの比較</h3>
 <table>
@@ -1443,7 +1443,7 @@ export const products: Product[] = [
 </ul>
 
 <h3>FSC 認証と ISO 9001 品質保証</h3>
-<p>智印雲 ZprintPro のマットラミネートグリーティングカードは <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。マットラミネートは BOPP フィルムで紙を保護、耐久性と上品な手触りを両立。ESG 報告用の紙材トレーサビリティレポートもご提供。デザイナー・金融・士業・クリエイティブ業界のプロフェッショナル向けに、最適なマットラミネートグリーティングカードソリューションをご提案します。</p>
+<p>ジープリント ZprintPro のマットラミネートグリーティングカードは <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。マットラミネートは BOPP フィルムで紙を保護、耐久性と上品な手触りを両立。ESG 報告用の紙材トレーサビリティレポートもご提供。デザイナー・金融・士業・クリエイティブ業界のプロフェッショナル向けに、最適なマットラミネートグリーティングカードソリューションをご提案します。</p>
 
 <h3>業界別活用事例</h3>
 <ul>
@@ -1456,7 +1456,7 @@ export const products: Product[] = [
 </ul>
 
 <h3>日本向け配送と多通貨決済</h3>
-<p>智印雲 ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。100 枚以上のご注文は送料無料で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定。</p>
+<p>ジープリント ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。100 枚以上のご注文は送料無料で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <ol>
@@ -1513,7 +1513,7 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>アジア自社工場から DHL Express で 2-3 営業日納品、100 枚以上のご注文は送料無料で全国配送対応。</p></details>
 <details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能。品質問題 (ラミネート剥がれ・色ズレ) は無料で再印刷または全額返金、100% 満足保証。</p></details>
 
-<p><em>智印雲 (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
+<p><em>ジープリント (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
     features: [
       '【85×54mm標準尺寸】兼容全球卡夾',
       '【四色柯式印刷】網點細膩，色彩飽和度≥90%',
@@ -1631,18 +1631,18 @@ export const products: Product[] = [
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，主要服務日本及全球客戶，提供專業印刷與跨境配送服務。免費打樣，DHL Express / FedEx 國際速遞配送。</p>
+<p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，主要服務日本及全球客戶，提供專業印刷與跨境配送服務。免費打樣，DHL Express / FedEx 國際速遞配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、燙銀、玫瑰金、局部 UV、壓凹、壓紋、圓角模切等加值工藝。雙面印刷免費排版與出血檢查。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Rounded Corner Greeting Cards for Modern Brands</h3>
 <p>ZprintPro rounded corner greeting cards bring soft, modern aesthetics to professional branding. R3mm or R5mm rounded corners reduce wear and add a contemporary feel — perfect for creative agencies, tech startups, designers, and modern lifestyle brands across the US, UK, Australia, and global markets. Choose from 300-400g matte, gloss, or uncoated card with full 4-color CMYK printing. 100-card MOQ, 2-3 day production, free color proofing.</p>
@@ -1711,7 +1711,7 @@ export const products: Product[] = [
 
 `,
     longDescriptionJa: `<h3>モダンブランド向け 角丸グリーティングカード</h3>
-<p>智印雲 ZprintPro の角丸グリーティングカードは、R3mm または R5mm の柔らかい角丸加工でモダンテイストを表現するグリーティングカード印刷サービスです。クリエイティブエージェンシー・テックスタートアップ・デザイナー・ライフスタイルブランド向けに最適化。米国・英国・オーストラリア・日本などグローバル市場に対応。300-400g マット・グロス・非塗工紙に 4 色 CMYK 印刷。100 枚から対応、2-3 営業日製作、無料色校正込み。</p>
+<p>ジープリント ZprintPro の角丸グリーティングカードは、R3mm または R5mm の柔らかい角丸加工でモダンテイストを表現するグリーティングカード印刷サービスです。クリエイティブエージェンシー・テックスタートアップ・デザイナー・ライフスタイルブランド向けに最適化。米国・英国・オーストラリア・日本などグローバル市場に対応。300-400g マット・グロス・非塗工紙に 4 色 CMYK 印刷。100 枚から対応、2-3 営業日製作、無料色校正込み。</p>
 
 <h3>紙質と角丸半径の比較</h3>
 <table>
@@ -1759,7 +1759,7 @@ export const products: Product[] = [
 </ul>
 
 <h3>FSC 認証と ISO 9001 品質保証</h3>
-<p>智印雲 ZprintPro の角丸グリーティングカードは <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。角丸加工はカード寿命を延ばし、角の摩耗を防止。ESG 報告用の紙材トレーサビリティレポートもご提供。デザイナー・テック・ライフスタイル業界のプロフェッショナル向けに、最適な角丸グリーティングカードソリューションをご提案します。</p>
+<p>ジープリント ZprintPro の角丸グリーティングカードは <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。角丸加工はカード寿命を延ばし、角の摩耗を防止。ESG 報告用の紙材トレーサビリティレポートもご提供。デザイナー・テック・ライフスタイル業界のプロフェッショナル向けに、最適な角丸グリーティングカードソリューションをご提案します。</p>
 
 <h3>業界別活用事例</h3>
 <ul>
@@ -1772,7 +1772,7 @@ export const products: Product[] = [
 </ul>
 
 <h3>日本向け配送と多通貨決済</h3>
-<p>智印雲 ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。100 枚以上のご注文は送料無料で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定。</p>
+<p>ジープリント ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。100 枚以上のご注文は送料無料で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <ol>
@@ -1829,7 +1829,7 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>DHL で日本まで何日で届きますか？</strong></summary><p>アジア自社工場から DHL Express で 2-3 営業日納品、100 枚以上のご注文は送料無料で全国配送対応。</p></details>
 <details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能。品質問題 (角丸精度・色ズレ) は無料で再印刷または全額返金、100% 満足保証。</p></details>
 
-<p><em>智印雲 (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
+<p><em>ジープリント (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
     features: [
       '【85×54mm標準尺寸】兼容全球卡夾',
       '【四色柯式印刷】網點細膩，色彩飽和度≥90%',
@@ -1927,18 +1927,18 @@ export const products: Product[] = [
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲（ZprintPro）已為多個國際零售品牌、文創市集、咖啡店提供貼紙印製服務。500 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印港（ZprintPro）已為多個國際零售品牌、文創市集、咖啡店提供貼紙印製服務。500 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、燙銀、玫瑰金、局部 UV、防偽 VOID 留字、螢光夜光等加值工藝。支援可變資料印刷。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Waterproof Stickers for Global Brands</h3>
 <p>ZprintPro waterproof stickers are engineered for outdoor labels, product packaging, car decals, and equipment tags across the US, UK, Australia, and global markets. Built on PVC or PP synthetic facestock with water-resistant inks, our stickers withstand rain, UV exposure, and abrasion. Optional matte or gloss lamination extends outdoor life to 3-5 years, while die-cut shapes and variable QR codes enable batch control and brand tracking. 100-sticker MOQ, with same-day sampling for small batches.</p>
@@ -2051,10 +2051,10 @@ export const products: Product[] = [
 </ul>
 
 <h3>FSC 認証と環境配慮</h3>
-<p>智印雲 ZprintPro の防水ステッカーは全素材で <strong>FSC 認証取得</strong>。紙素材版（クラフト紙）は 100% リサイクル可能、PLA 透明フィルム・生分解性コートもオプション対応。ESG 配慮ブランドやサステナブルな商品パッケージの選択肢として、エコ志向のお客様から好評です。</p>
+<p>ジープリント ZprintPro の防水ステッカーは全素材で <strong>FSC 認証取得</strong>。紙素材版（クラフト紙）は 100% リサイクル可能、PLA 透明フィルム・生分解性コートもオプション対応。ESG 配慮ブランドやサステナブルな商品パッケージの選択肢として、エコ志向のお客様から好評です。</p>
 
 <h3>活用シーンと用途別事例</h3>
-<p>智印雲 ZprintPro 防水ステッカーは年間 50 万枚以上の出荷実績。</p>
+<p>ジープリント ZprintPro 防水ステッカーは年間 50 万枚以上の出荷実績。</p>
 <ul>
   <li><strong>屋外看板・標識</strong>：店舗・駐車場・工事現場、注意喚起・誘導表示</li>
   <li><strong>商品パッケージ</strong>：化粧品・食品・飲料、防水必須商品</li>
@@ -2128,15 +2128,15 @@ export const products: Product[] = [
   <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式対応、AI 自動チェックで出血・解像度・CMYK 色彩を事前検証</li>
   <li><strong>見積もり確認</strong>：30 秒以内に送料込みの総額表示、内容確認後すぐ製造開始</li>
 </ol>
-<p>今すぐ体験：<strong>智印雲 ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>
+<p>今すぐ体験：<strong>ジープリント ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '面材：PVC 防水或 PP 合成紙，戶外短期耐候',
@@ -2229,15 +2229,15 @@ export const products: Product[] = [
     description: '透明PET材質，貼合後呈現無感效果，完美展現產品本身。適合化妝品、食品包裝、玻璃貼飾。 適配行業: 美妝護膚、食品酒類、飲品品牌、香水、玻璃容器、無標籤產品、電商禮盒.', descriptionEn: 'Transparent PET material creates invisible effect when applied. Perfect for cosmetics, food packaging, glass decoration. 适配行业: Beauty, Food & Beverage, Drinks brands, Perfume, Glass containers, No-label products, E-commerce gift boxes.', descriptionJa: '透明PET素材、貼り付け後無感効果。化粧品、食品包裝、ガラス裝飾に最適。 适配行业: 美容、食品・飲料、飲み物ブランド、香水、ガラス容器、ノーラベル商品、ECギフトボックス。', description_zh: '透明PET材質，貼合後呈現無感效果，完美展現產品本身。適合化妝品、食品包裝、玻璃貼飾。 適配行業: 美妝護膚、食品酒類、飲品品牌、香水、玻璃容器、無標籤產品、電商禮盒.',
     longDescription: `透明 PET 貼紙在玻璃瓶、塑膠瓶與透明包裝上能呈現「無底紙感」，僅保留圖案與文字，特別適合美妝精華、香水、飲品與禮盒封口貼。白墨托底可選，用於深色瓶身仍能還原飽和色彩。建議避免過細的反白線條，並為模切預留安全距離。可搭配啞膜減少指紋、光膜提升鮮豔度。與分類頁術語一致：透明 PET、局部 UV、覆膜、模切。香港零售與展會陳列常見應用包括試用裝標籤與限量貼紙。<h3>貼紙材質對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">材質</th><th class="p-2 text-center">透明度</th><th class="p-2 text-center">防水性</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用場景</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">透明 PET</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">瓶身標籤、禮盒封條</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">PVC 防水</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">戶外標籤、食品外賣</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">銅版紙</td><td class="p-2 text-center">★★</td><td class="p-2 text-center">★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">促銷貼紙、臨時標籤</td></tr></tbody></table><h3>貼紙材質對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">材質</th><th class="p-2 text-center">透明度</th><th class="p-2 text-center">防水性</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用場景</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">透明 PET</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">瓶身標籤、禮盒封條</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">PVC 防水</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">戶外標籤、食品外賣</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">銅版紙</td><td class="p-2 text-center">★★</td><td class="p-2 text-center">★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">促銷貼紙、臨時標籤</td></tr></tbody></table>
 
-**智印雲 國際印刷**：深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。
+**智印港 國際印刷**：深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Transparent Stickers for Premium Product Branding</h3>
 <p>ZprintPro transparent stickers are printed on clear vinyl or polyester film with white-ink underbase for vibrant colors and crisp detail. Designed for premium product labels, beverage bottles, cosmetics, and window decals where the "no-label" look is part of the brand experience. UV-resistant inks ensure outdoor durability; removable adhesive option allows clean removal within 90 days. Standard shapes in square, rectangle, circle, oval, and custom die-cut. 100-sticker MOQ, free digital color proofing.</p>
@@ -2302,13 +2302,13 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>What if I'm not happy with the print quality?</strong></summary><p>We provide free digital color proofing before production. If the final print drifts from approved proof, we reprint at no cost or refund in full. Your satisfaction is guaranteed.</p></details>`,
     longDescriptionJa: `透明ステッカーをZprintProでご注文。PET素材+防水・防晒・耐磨耗+プロ4色印刷+変形カット対応のプレミアム透明ステッカー印刷です。食品ブランド・化粧品・商品ラベル・容器裝飾・アーティスト・クリエイター向けに、無地感ラベルやガラス容器でのラベルレス効果を実現します。【素材】PET（透明/乳白半透明/艶消し）、接着剤は一般強粘着/再剥離/耐水強粘着から選択。【サイズ】最小20mm～最大300mmまで対応。【印刷方式】顔料インクUV印刷（耐候性◎）、CMYK+特色（白インク/メタリック）対応。透明フィルムに白を下刷りして上からCMYK印刷することで、透明素材でも発色鮮明に再現できます。【カット】標準カット（四角/円/楕円）、変形カット（オリジナル形状/型抜き）、部分型抜き対応。Cut lineパスを含めてIllustrator/PDFでご支給ください。【屋外耐久性】PET素材+UVインクで3年以上、直射日光・雨風に強く自動車ボディや屋外看板にも対応可能。【利用シーン】商品ラベル（食品/化粧品/雑貨）、容器裝飾（ボトル/ジャー/ガラス容器）、アート・クリエイター作品、店舗裝飾（窓・ショーケース）。【納期】20枚から対応（個人のクリエイター少量製作から、法人商品ラベルの10,000枚大量発注まで対応）、最短3営業日で出荷。500枚以上の大量発注は5-7営業日。変形カットや白インク印刷を含む場合はさらに1-2日かかる場合がございます。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '高透明 PET 面材，可選白墨打底',
@@ -2394,7 +2394,7 @@ export const products: Product[] = [
     optimizationRound: 1,
     category: 'stickers',
     category_slug: 'stickers',
-    name: '可移貼紙(無殘膠) | 防水貼紙 / 異形貼紙', nameEn: 'Removable Stickers | Waterproof & Die-Cut Stickers', nameJa: 'はがせるステッカー | 防水ステッカー / ダイカット', title_zh: '可移除貼紙印刷 50張起印 玻璃不留膠 · 季節活動試用品短期推廣適配 | 智印雲 ZprintPro',
+    name: '可移貼紙(無殘膠) | 防水貼紙 / 異形貼紙', nameEn: 'Removable Stickers | Waterproof & Die-Cut Stickers', nameJa: 'はがせるステッカー | 防水ステッカー / ダイカット', title_zh: '可移除貼紙印刷 50張起印 玻璃不留膠 · 季節活動試用品短期推廣適配 | 智印港 ZprintPro',
     description: '特殊背膠設計，移除後不留殘膠，保護貼附表面。適合車窗、玻璃櫥窗、短期展覽。 **适配行业**:季節性推廣、活動短期宣傳、試用品包裝、玻璃櫥窗裝飾、學校活動、餐廳當日貼紙、零售促銷 **適配行業**：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。', descriptionEn: 'Special adhesive design leaves no residue when removed. Perfect for car windows, glass displays, short-term exhibitions. **Best for**:seasonal campaigns, short-term event promo, sample packaging, glass window decoration, school activities, restaurant daily specials, retail promotions **Best for**: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.', descriptionJa: '特殊粘着設計、剥がしても残りません。車窓、ガラス展示、短期展示会に最適。 **適用業界**:季節キャンペーン、短期イベントプロモーション、サンプル包装、ガラス窓装飾、学校行事、レストラン日替わり、小売プロモーション **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。', description_zh: '特殊背膠設計，移除後不留殘膠，保護貼附表面。適合車窗、玻璃櫥窗、短期展覽。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -2427,18 +2427,18 @@ export const products: Product[] = [
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲（ZprintPro）已為多個國際零售品牌、文創市集、咖啡店提供貼紙印製服務。500 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印港（ZprintPro）已為多個國際零售品牌、文創市集、咖啡店提供貼紙印製服務。500 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、燙銀、玫瑰金、局部 UV、防偽 VOID 留字、螢光夜光等加值工藝。支援可變資料印刷。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Removable Stickers for Global Brands</h3>
 <p>ZprintPro removable stickers peel off cleanly without residue, perfect for short-term campaigns, rental equipment, event badges, and window decals. Built on vinyl or PP facestock with repositionable acrylic adhesive, our stickers stick securely to glass, painted walls, electronics, and smooth packaging — and remove within 90 days without surface damage. 100-sticker MOQ, with same-day digital proofing for batches under 500.</p>
@@ -2504,7 +2504,7 @@ export const products: Product[] = [
 
 `,
     longDescriptionJa: `<h3>グローバルブランド向け 再剥離ステッカー</h3>
-<p>智印雲 ZprintPro の再剥離ステッカー（剥がせるステッカー）は、貼付後 90 日以内に糊残らずクリーンに剥がせる短期キャンペーン・レンタル機器・イベントバッジ・ウィンドウデカール専用設計のラベル印刷サービスです。ビニール基材または PP 基材に再剥離アクリル粘着剤を組み合せ、ガラス・塗裝壁面・電子機器・平滑パッケージにしっかり密着し、貼付から 90 日以内に表面を傷つけず綺麗に除去可能。100 枚からご注文可能、500 枚未満のロットは当日デジタル色校正を無料ご提供いたします。</p>
+<p>ジープリント ZprintPro の再剥離ステッカー（剥がせるステッカー）は、貼付後 90 日以内に糊残らずクリーンに剥がせる短期キャンペーン・レンタル機器・イベントバッジ・ウィンドウデカール専用設計のラベル印刷サービスです。ビニール基材または PP 基材に再剥離アクリル粘着剤を組み合せ、ガラス・塗裝壁面・電子機器・平滑パッケージにしっかり密着し、貼付から 90 日以内に表面を傷つけず綺麗に除去可能。100 枚からご注文可能、500 枚未満のロットは当日デジタル色校正を無料ご提供いたします。</p>
 
 <h3>基材と粘着剤の比較</h3>
 <table>
@@ -2552,7 +2552,7 @@ export const products: Product[] = [
 </ul>
 
 <h3>FSC 認証と ISO 9001 品質保証</h3>
-<p>智印雲 ZprintPro の再剥離ステッカーは <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。ビニール基材も並行して FSC 認証取得メーカーの素材を優先採用、持続可能な紙材調達と厳格な品質管理を実現。ESG 報告用の紙材トレーサビリティレポートもご提供。短期キャンペーン・レンタル機器・イベント業界の B2B 向けに、最適な再剥離ステッカーソリューションをご提案します。</p>
+<p>ジープリント ZprintPro の再剥離ステッカーは <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。ビニール基材も並行して FSC 認証取得メーカーの素材を優先採用、持続可能な紙材調達と厳格な品質管理を実現。ESG 報告用の紙材トレーサビリティレポートもご提供。短期キャンペーン・レンタル機器・イベント業界の B2B 向けに、最適な再剥離ステッカーソリューションをご提案します。</p>
 
 <h3>業界別活用事例</h3>
 <ul>
@@ -2565,7 +2565,7 @@ export const products: Product[] = [
 </ul>
 
 <h3>日本向け配送と多通貨決済</h3>
-<p>智印雲 ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。<strong>100 枚以上のご注文は送料無料</strong>で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
+<p>ジープリント ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。<strong>100 枚以上のご注文は送料無料</strong>で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -2627,7 +2627,7 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>カスタム形状に対応できますか？</strong></summary><p>はい。10×10mm〜500×500mm までのカスタム形状に対応いたします。丸・四角・楕円・星・ハート・ロゴ輪郭いずれも対応可能です。型抜きラインを AI または PDF 形式で ご入稿ください。</p></details>
 <details class="my-2"><summary><strong>可変データ印刷に対応していますか？</strong></summary><p>はい。1 枚ごとの QR コード・シリアル番号・連番印刷に対応いたします。レンタル管理・イベントチェックイン・短期キャンペーンのトラッキング用途に最適で、データは Excel / CSV 形式で ご入稿ください。</p></details>
 
-<p><em>智印雲 (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>
 `,
     features: [
       '【可移膠】移除不留殘膠，保護車漆與玻璃表面',
@@ -2743,18 +2743,18 @@ export const products: Product[] = [
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲（ZprintPro）已為多個國際零售品牌、文創市集、咖啡店提供貼紙印製服務。500 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印港（ZprintPro）已為多個國際零售品牌、文創市集、咖啡店提供貼紙印製服務。500 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、燙銀、玫瑰金、局部 UV、防偽 VOID 留字、螢光夜光等加值工藝。支援可變資料印刷。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Small Batch Stickers for Global Brands</h3>
 <p>ZprintPro small batch stickers are designed for startups, indie brands, and creators who need professional quality without large inventory. Order as few as 50 stickers with no setup fees, and we'll cut, print, and ship within 3-5 days. Available in vinyl, paper, clear, kraft, holographic, and metallic finishes. Perfect for product launches, weddings, events, and limited editions.</p>
@@ -2859,7 +2859,7 @@ export const products: Product[] = [
 </ul>
 
 <h3>FSC 認証と環境配慮</h3>
-<p>智印雲 ZprintPro の小ロットステッカーは全素材で <strong>FSC 認証取得</strong>。紙素材版（アート紙・クラフト紙）は 100% リサイクル可能、PLA 透明フィルム・生分解性コートもオプション対応。スタートアップ・EC 事業者の ESG 配慮にも貢献します。</p>
+<p>ジープリント ZprintPro の小ロットステッカーは全素材で <strong>FSC 認証取得</strong>。紙素材版（アート紙・クラフト紙）は 100% リサイクル可能、PLA 透明フィルム・生分解性コートもオプション対応。スタートアップ・EC 事業者の ESG 配慮にも貢献します。</p>
 
 <h3>デザインサポートとテンプレート</h3>
 <p>初めてのお客様向けに無料テンプレート + 作成ガイドをご提供。</p>
@@ -2955,15 +2955,15 @@ export const products: Product[] = [
   <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式対応、AI 自動チェックで出血・解像度・CMYK 色彩を事前検証</li>
   <li><strong>見積もり確認</strong>：30 秒以内に送料込みの総額表示、内容確認後すぐ製造開始</li>
 </ol>
-<p>今すぐ体験：<strong>智印雲 ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>
+<p>今すぐ体験：<strong>ジープリント ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【A4 起印】無最低數量壓力，適合試產與限量活動',
@@ -3048,7 +3048,7 @@ export const products: Product[] = [
         optimizationRound: 1,
     category: 'stickers',
     category_slug: 'stickers',
-    name: '異形模切貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Die-cut Stickers | Waterproof & Die-Cut Stickers', nameJa: '型抜きステッカー | 防水ステッカー / ダイカット', title_zh: '異形模切貼紙 · 文創IP角色造型模切定製 | 智印雲 ZprintPro',
+    name: '異形模切貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Die-cut Stickers | Waterproof & Die-Cut Stickers', nameJa: '型抜きステッカー | 防水ステッカー / ダイカット', title_zh: '異形模切貼紙 · 文創IP角色造型模切定製 | 智印港 ZprintPro',
     description: '任意形狀模切，讓創意不受限製。可切出Logo形狀、卡通形象等獨特輪廓。**適配行業**: 文創IP / VTuber / 動漫周邊 / 個人插畫師 / 品牌吉祥物 / 同人誌 / 活動贈品。 適配行業: 文創IP、品牌吉祥物、活動贈品、零售精品、跨境電商、電商賣家、寵物食品.', descriptionEn: 'Any shape die-cutting, creativity without limits. Can cut logo shapes, cartoon characters, unique contours. **Best for**: creator IP / VTuber / anime merch / illustrators / brand mascots / doujinshi / event giveaways. Free die-cut setup · Free shipping over $99 USA · 50 MOQ · Custom shapes for product labels, packaging, and promotional use. 适配行业: Indie IP, Brand mascots, Event giveaways, Retail, Cross-border e-commerce, E-commerce sellers, Pet food.', descriptionJa: '任意形状の型抜き、創作の自由を製限しません。**適用業界**: クリエイターIP / VTuber / アニメ周边 / 個人イラストレーター / ブランドマスコット / 同人誌 / イベント赠り物。。型代無料・全国送料込み・50枚から。製品ラベル・パッケージ・プロモーション用カスタム形状。 适配行业: インディーIP、ブランドマスコット、イベント景品、小売、越境EC、EC seller、ペットフード。', description_zh: '任意形狀模切，讓創意不受限製。可切出Logo形狀、卡通形象等獨特輪廓。**適配行業**: 文創IP / VTuber / 動漫周邊 / 個人插畫師 / 品牌吉祥物 / 同人誌 / 活動贈品。 適配行業: 文創IP、品牌吉祥物、活動贈品、零售精品、跨境電商、電商賣家、寵物食品.',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -3081,18 +3081,18 @@ export const products: Product[] = [
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲（ZprintPro）已為多個國際零售品牌、文創市集、咖啡店提供貼紙印製服務。500 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印港（ZprintPro）已為多個國際零售品牌、文創市集、咖啡店提供貼紙印製服務。500 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、燙銀、玫瑰金、局部 UV、防偽 VOID 留字、螢光夜光等加值工藝。支援可變資料印刷。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Die-Cut Stickers for Global Brands</h3>
 <p>ZprintPro die-cut stickers are precision-cut to any shape — your logo, mascot, illustration, or custom outline. Digital cutting with ±0.2mm tolerance delivers crisp edges that peel easily from the backing sheet. Available in vinyl, paper, holographic, and metallic foil with matte or gloss lamination. Perfect for branding, packaging, laptop decals, water bottles, and product seals. 100-sticker MOQ, 3-5 day standard production.</p>
@@ -3207,10 +3207,10 @@ export const products: Product[] = [
 </ul>
 
 <h3>FSC 認証と環境配慮</h3>
-<p>智印雲 ZprintPro のダイカットステッカーは全素材で <strong>FSC 認証取得</strong>。紙素材版（アート紙・クラフト紙）は 100% リサイクル可能、PLA 透明フィルム・生分解性コートもオプション対応。ESG 配慮ブランドやサステナブルな商品パッケージの選択肢として、エコ志向のお客様から好評です。</p>
+<p>ジープリント ZprintPro のダイカットステッカーは全素材で <strong>FSC 認証取得</strong>。紙素材版（アート紙・クラフト紙）は 100% リサイクル可能、PLA 透明フィルム・生分解性コートもオプション対応。ESG 配慮ブランドやサステナブルな商品パッケージの選択肢として、エコ志向のお客様から好評です。</p>
 
 <h3>活用シーンと用途別事例</h3>
-<p>智印雲 ZprintPro ダイカットステッカーは年間 30 万枚以上の出荷実績。</p>
+<p>ジープリント ZprintPro ダイカットステッカーは年間 30 万枚以上の出荷実績。</p>
 <ul>
   <li><strong>ブランドロゴステッカー</strong>：オリジナルブランド・スタートアップ・個人事業主</li>
   <li><strong>キャラクターグッズ</strong>：アニメ・漫画・ゲームの公式グッズ</li>
@@ -3284,15 +3284,15 @@ export const products: Product[] = [
   <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式対応、AI 自動チェックで出血・解像度・CMYK 色彩を事前検証</li>
   <li><strong>見積もり確認</strong>：30 秒以内に送料込みの総額表示、内容確認後すぐ製造開始</li>
 </ol>
-<p>今すぐ体験：<strong>智印雲 ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>
+<p>今すぐ体験：<strong>ジープリント ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '任意外形模切，強化品牌造型記憶',
@@ -3412,18 +3412,18 @@ export const products: Product[] = [
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲（ZprintPro）已為多個國際零售品牌、文創市集、咖啡店提供貼紙印製服務。500 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印港（ZprintPro）已為多個國際零售品牌、文創市集、咖啡店提供貼紙印製服務。500 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、燙銀、玫瑰金、局部 UV、防偽 VOID 留字、螢光夜光等加值工藝。支援可變資料印刷。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Foil Stickers for Global Brands</h3>
 <p>ZprintPro foil stickers add metallic shine to logos, packaging, and product seals. Choose from gold, silver, rose gold, copper, holographic, and brushed metal finishes on vinyl or paper facestock. Hot stamp foil application delivers crisp metallic edges that catch light from every angle. Perfect for premium product labels, wedding stationery, luxury packaging seals, and limited edition branding. 100-sticker MOQ, 5-7 day standard production.</p>
@@ -3491,7 +3491,7 @@ export const products: Product[] = [
 
 `,
     longDescriptionJa: `<h3>グローバルブランド向け 箔押しステッカー</h3>
-<p>智印雲 ZprintPro の箔押しステッカーは、ロゴ・パッケージ・シールに金属光沢を加える高級印刷。金箔・銀箔・ローズゴールド箔・銅箔・ホログラム箔・ブラシメタル箔の 6 種類から選択可能、ビニールまたは紙基材に箔押し加工。箔押しでシャープな金属エッジ・全方位反射。プレミアム製品ラベル・ウェディングステーショナリー・高級パッケージシール・限定版ブランディング向け。100 枚からご注文可能、5-7 営業日で標準製作、無料色校正サービス対応。</p>
+<p>ジープリント ZprintPro の箔押しステッカーは、ロゴ・パッケージ・シールに金属光沢を加える高級印刷。金箔・銀箔・ローズゴールド箔・銅箔・ホログラム箔・ブラシメタル箔の 6 種類から選択可能、ビニールまたは紙基材に箔押し加工。箔押しでシャープな金属エッジ・全方位反射。プレミアム製品ラベル・ウェディングステーショナリー・高級パッケージシール・限定版ブランディング向け。100 枚からご注文可能、5-7 営業日で標準製作、無料色校正サービス対応。</p>
 
 <h3>箔種類と基材の比較</h3>
 <table>
@@ -3541,7 +3541,7 @@ export const products: Product[] = [
 </ul>
 
 <h3>FSC 認証と ISO 9001 品質保証</h3>
-<p>智印雲 ZprintPro の箔押しステッカーは <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。箔押し加工も FSC 認証取得メーカーの基材を優先採用、持続可能な紙材調達と厳格な品質管理を実現。ESG 報告用の紙材トレーサビリティレポートもご提供。ラグジュアリー・美容・ウェディング業界の B2B 向けに、最適な箔押しステッカーソリューションをご提案します。</p>
+<p>ジープリント ZprintPro の箔押しステッカーは <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。箔押し加工も FSC 認証取得メーカーの基材を優先採用、持続可能な紙材調達と厳格な品質管理を実現。ESG 報告用の紙材トレーサビリティレポートもご提供。ラグジュアリー・美容・ウェディング業界の B2B 向けに、最適な箔押しステッカーソリューションをご提案します。</p>
 
 <h3>業界別活用事例</h3>
 <ul>
@@ -3554,7 +3554,7 @@ export const products: Product[] = [
 </ul>
 
 <h3>日本向け配送と多通貨決済</h3>
-<p>智印雲 ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。<strong>100 枚以上のご注文は送料無料</strong>で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
+<p>ジープリント ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。<strong>100 枚以上のご注文は送料無料</strong>で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -3616,7 +3616,7 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>箔押しと通常印刷を組合せできますか？</strong></summary><p>はい。最も人気は「カラー印刷背景 + 箔押しロゴ」の組合せ。「白印刷 + 箔押し枠」「クラフト紙 + 箔押しテキスト」も対応。</p></details>
 <details class="my-2"><summary><strong>耐久年数はどのくらいですか？</strong></summary><p>ビニール箔押しステッカーは屋外 3-5 年、屋内では無期限。紙基材箔押しは屋内 2-3 年。ラミネ加工でさらに耐久性が向上します。</p></details>
 
-<p><em>智印雲 (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>
 `,
     features: [
       '多色箔可選（金／銀／玫瑰金等）',
@@ -3734,18 +3734,18 @@ export const products: Product[] = [
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲（ZprintPro）已為多個國際零售品牌、文創市集、咖啡店提供貼紙印製服務。500 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印港（ZprintPro）已為多個國際零售品牌、文創市集、咖啡店提供貼紙印製服務。500 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、燙銀、玫瑰金、局部 UV、防偽 VOID 留字、螢光夜光等加值工藝。支援可變資料印刷。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Security Stickers for Global Brands</h3>
 <p>ZprintPro security stickers protect products from tampering, counterfeiting, and unauthorized access. Choose from void-release labels, holographic seals, tamper-evident destructibles, and serialized QR codes for track-and-trace. Compatible with FDA 21 CFR Part 11 for pharma, ISO 12931 for anti-counterfeit, and industry-grade supply chain audits. 100-sticker MOQ, 5-7 day production, optional variable data printing.</p>
@@ -3812,7 +3812,7 @@ export const products: Product[] = [
 <p><em>Compliance:  ✅ FSC-certified materials, ✅ ISO 9001:2015 certified quality management system.</em></p>
 `,
     longDescriptionJa: `<h3>グローバルブランド向け セキュリティステッカー（偽造防止）</h3>
-<p>智印雲 ZprintPro のセキュリティステッカー（防偽ステッカー）は、製品の改ざん・偽造・不正アクセスを防ぐための高度なセキュリティ機能を搭載したラベル印刷サービスです。ボイド剥離ラベル・ホログラムシール・タンパーエビデント（破壊型）・シリアル QR コードの 4 種類から選択可能で、製薬業界向け FDA 21 CFR Part 11 準拠、ISO 12931 偽造防止規格対応、産業グレードのサプライチェーン監査対応。100 枚からご注文可能、5-7 営業日で製作、可変データ印刷オプション対応。</p>
+<p>ジープリント ZprintPro のセキュリティステッカー（防偽ステッカー）は、製品の改ざん・偽造・不正アクセスを防ぐための高度なセキュリティ機能を搭載したラベル印刷サービスです。ボイド剥離ラベル・ホログラムシール・タンパーエビデント（破壊型）・シリアル QR コードの 4 種類から選択可能で、製薬業界向け FDA 21 CFR Part 11 準拠、ISO 12931 偽造防止規格対応、産業グレードのサプライチェーン監査対応。100 枚からご注文可能、5-7 営業日で製作、可変データ印刷オプション対応。</p>
 
 <h3>セキュリティ機能の比較</h3>
 <table>
@@ -3861,7 +3861,7 @@ export const products: Product[] = [
 </ul>
 
 <h3>FSC 認証と ISO 9001 品質保証</h3>
-<p>智印雲 ZprintPro のセキュリティステッカーは <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。基材も並行して FSC 認証取得メーカーの素材を優先採用、持続可能な紙材調達と厳格な品質管理を実現。ESG 報告用の紙材トレーサビリティレポートもご提供。電子機器・製薬・食品・高級品業界の B2B 向けに、最適なセキュリティステッカーソリューションをご提案します。</p>
+<p>ジープリント ZprintPro のセキュリティステッカーは <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。基材も並行して FSC 認証取得メーカーの素材を優先採用、持続可能な紙材調達と厳格な品質管理を実現。ESG 報告用の紙材トレーサビリティレポートもご提供。電子機器・製薬・食品・高級品業界の B2B 向けに、最適なセキュリティステッカーソリューションをご提案します。</p>
 
 <h3>業界別活用事例</h3>
 <ul>
@@ -3874,7 +3874,7 @@ export const products: Product[] = [
 </ul>
 
 <h3>日本向け配送と多通貨決済</h3>
-<p>智印雲 ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。<strong>100 枚以上のご注文は送料無料</strong>で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
+<p>ジープリント ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。<strong>100 枚以上のご注文は送料無料</strong>で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -3936,7 +3936,7 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>ホログラムの改ざん防止性はどのくらいですか？</strong></summary><p>ホログラムシールは視覚的偽造防止（複製困難）と粘着剤の改ざん検知（剥がすと破壊）を併せ持ちます。中〜高セキュリティ向けに最適です。</p></details>
 <details class="my-2"><summary><strong>バーコードや RFID との連動はできますか？</strong></summary><p>1D / 2D バーコード（Code 128 / QR / Data Matrix）に対応、シリアル番号の事前印刷も可能です。RFID inlay 組込みは 5,000 枚以上のご注文で対応いたします。</p></details>
 
-<p><em>智印雲 (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。FDA 21 CFR Part 11 / ISO 12931 / REACH / RoHS 準拠。</em></p>
+<p><em>ジープリント (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。FDA 21 CFR Part 11 / ISO 12931 / REACH / RoHS 準拠。</em></p>
 `,
     features: [
       '易碎／VOID 等防拆材可選',
@@ -4054,18 +4054,18 @@ export const products: Product[] = [
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲（ZprintPro）已為多個國際零售品牌、文創市集、咖啡店提供貼紙印製服務。500 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印港（ZprintPro）已為多個國際零售品牌、文創市集、咖啡店提供貼紙印製服務。500 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、燙銀、玫瑰金、局部 UV、防偽 VOID 留字、螢光夜光等加值工藝。支援可變資料印刷。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Fluorescent Stickers for Global Brands</h3>
 <p>ZprintPro fluorescent stickers command attention with neon-bright colors that glow under UV light. Perfect for nightclub promotions, event badges, safety warnings, retail sale signage, and high-visibility branding. Available in 6 neon colors (pink, orange, yellow, green, blue, red) on paper or vinyl facestock. Standard CMYK print layered with fluorescent ink for maximum vibrancy. 100-sticker MOQ, 3-5 day production.</p>
@@ -4171,10 +4171,10 @@ export const products: Product[] = [
 </ul>
 
 <h3>FSC 認証と環境配慮</h3>
-<p>智印雲 ZprintPro の蛍光ステッカーは全素材で <strong>FSC 認証取得</strong>。紙素材版（アート紙）は 100% リサイクル可能、PLA 透明フィルム・生分解性コートもオプション対応。ESG 配慮ブランドやサステナブルな商品パッケージの選択肢として、エコ志向のお客様から好評です。</p>
+<p>ジープリント ZprintPro の蛍光ステッカーは全素材で <strong>FSC 認証取得</strong>。紙素材版（アート紙）は 100% リサイクル可能、PLA 透明フィルム・生分解性コートもオプション対応。ESG 配慮ブランドやサステナブルな商品パッケージの選択肢として、エコ志向のお客様から好評です。</p>
 
 <h3>活用シーンと用途別事例</h3>
-<p>智印雲 ZprintPro 蛍光ステッカーは年間 10 万枚以上の出荷実績。</p>
+<p>ジープリント ZprintPro 蛍光ステッカーは年間 10 万枚以上の出荷実績。</p>
 <ul>
   <li><strong>ライブ・コンサート会場</strong>：アーティストグッズ、限定販売</li>
   <li><strong>ナイトクラブ・イベント裝飾</strong>：ブラックライト下で発光、視覚的インパクト</li>
@@ -4258,15 +4258,15 @@ export const products: Product[] = [
   <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式対応、AI 自動チェックで出血・解像度・CMYK 色彩を事前検証</li>
   <li><strong>見積もり確認</strong>：30 秒以内に送料込みの総額表示、内容確認後すぐ製造開始</li>
 </ol>
-<p>今すぐ体験：<strong>智印雲 ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>
+<p>今すぐ体験：<strong>ジープリント ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001:2015 認証品質管理システム 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001:2015 認証品質管理システム 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【螢光油墨】高飽和度，日光下即顯強烈視覺衝擊',
@@ -4446,7 +4446,7 @@ export const products: Product[] = [
 
     `,
     longDescriptionJa: `<h3>紙材材質対比</h3>
-<p>クラフト紙袋は 3 種類の中芯原紙を揃え、強度・印刷適性・コストのバランスで選択可能。智印港 ZprintPro 全紙材 FSC 認証取得。</p>
+<p>クラフト紙袋は 3 種類の中芯原紙を揃え、強度・印刷適性・コストのバランスで選択可能。ジープリント ZprintPro 全紙材 FSC 認証取得。</p>
 <table>
   <thead>
     <tr><th>紙材</th><th>克重</th><th>特性</th><th>適用場景</th></tr>
@@ -4491,10 +4491,10 @@ export const products: Product[] = [
 </ul>
 
 <h3>FSC 認証と ESG 対応</h3>
-<p>智印港 ZprintPro のクラフト紙袋は全紙材 <strong>FSC 森林管理委員会認証</strong>。再生紙 100% 使用可能、大豆インク印刷で VOC 排出を 80% 削減。ESG 報告書用カーボンフットプリント試算もご提供。アパレル・小売ブランド様のサステナビリティ目標達成を支援します。</p>
+<p>ジープリント ZprintPro のクラフト紙袋は全紙材 <strong>FSC 森林管理委員会認証</strong>。再生紙 100% 使用可能、大豆インク印刷で VOC 排出を 80% 削減。ESG 報告書用カーボンフットプリント試算もご提供。アパレル・小売ブランド様のサステナビリティ目標達成を支援します。</p>
 
 <h3>活用シーンと業種別事例</h3>
-<p>智印港 ZprintPro クラフト紙袋は国内外 5,000 社以上のブランド取引実績。</p>
+<p>ジープリント ZprintPro クラフト紙袋は国内外 5,000 社以上のブランド取引実績。</p>
 <ul>
   <li><strong>アパレル・セレクトショップ</strong>：店舗ロゴ入りオリジナル紙袋、買い物体験の質を向上</li>
   <li><strong>カフェ・飲食店</strong>：テイクアウト用、テイクアウト需要増で大量発注も対応</li>
@@ -4568,15 +4568,15 @@ export const products: Product[] = [
   <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式対応、AI 自動チェックで出血・解像度・CMYK 色彩を事前検証</li>
   <li><strong>見積もり確認</strong>：30 秒以内に送料込みの総額表示、内容確認後すぐ製造開始</li>
 </ol>
-<p>今すぐ体験：<strong>智印港 ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>
+<p>今すぐ体験：<strong>ジープリント ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>
 
-<p><em>智印港（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印港 ZprintPro の最小注文数量は？</strong></summary><p>智印港は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印港は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '牛皮紙質感，環保形象鮮明',
@@ -4665,15 +4665,15 @@ export const products: Product[] = [
     description: '白卡紙材質，表面平整光滑，印刷效果佳。適合高端品牌、化妝品店。適配行業: 服裝品牌、買手店、珠寶首飾、化妝品、禮品店、婚慶禮品、生活精品店。 適配行業: 服裝、珠寶鐘錶、禮品店、品牌活動、活動贈品、酒店迎賓、食品店.', descriptionEn: 'White card paper, smooth surface, excellent printing effect. Perfect for high-end brands, cosmetic stores. Best for: apparel brands, boutiques, jewelry, cosmetics, gift shops, wedding favors, lifestyle concept stores. 适配行业: Apparel, Jewelry & Watches, Gift shops, Brand events, Event giveaways, Hotel hospitality, Food stores.', descriptionJa: '白カード紙、表面が滑らかで印刷効果が抜群。高級ブランド、化粧品店に最適。 適用業界: アパレルブランド、ブティック、宝飾・アクセサリー、化粧品、ギフトショップ、ブライダルギフト、ライフスタイル コンセプト ストア。 适配行业: アパレル、宝飾・腕時計、ギフトショップ、ブランドイベント、イベント景品、ホテル、食品店。', description_zh: '白卡紙材質，表面平整光滑，印刷效果佳。適合高端品牌、化妝品店。 適配行業: 服裝、珠寶鐘錶、禮品店、品牌活動、活動贈品、酒店迎賓、食品店.',
     longDescription: `白卡紙袋表面平滑、挺度高，四色印刷色彩飽和，是美妝、珠寶與精品服飾首選的「可行走廣告」。可搭配啞膠／光膠覆膜保護墨層，並以燙金、局部 UV 或凹凸壓紋強化 Logo 層次。手挽可選緞帶、棉繩或扁紙手挽以匹配品牌調性。與分類頁一致：白卡紙、燙金、覆膜、手挽。建議在刀模階段確認穿孔位與圖案安全距離，避免提袋時撕裂；大批量可評估柯式以降低單價。<h3>紙袋材質對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">材質</th><th class="p-2 text-center">挺度</th><th class="p-2 text-center">印刷效果</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用品牌</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">白卡紙袋</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">美妝、珠寶、精品服飾</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">牛皮紙袋</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">文創、咖啡、有機食品</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">銅版紙袋</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">百貨專櫃、促銷活動</td></tr></tbody></table><h3>紙袋材質對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">材質</th><th class="p-2 text-center">挺度</th><th class="p-2 text-center">印刷效果</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用品牌</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">白卡紙袋</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">美妝、珠寶、精品服飾</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">牛皮紙袋</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">文創、咖啡、有機食品</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">銅版紙袋</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">百貨專櫃、促銷活動</td></tr></tbody></table>
 
-**智印雲 國際印刷**：深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。
+**智印港 國際印刷**：深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>White Card Bags for a Premium, Walking Billboard Effect</h3>
 <p>ZprintPro White Card Bags offer a smooth, stiff surface with vibrant four-color printing, making them ideal walking billboards for beauty, jewelry, and premium apparel brands. The white card material provides excellent print quality, and the bags can be enhanced with matte or gloss lamination to protect the ink and add a luxurious touch. Additional options such as foil stamping, spot UV, or embossing can be used to elevate the logo and create a striking visual impact.</p>
@@ -4729,13 +4729,13 @@ export const products: Product[] = [
 <p>ZprintPro is dedicated to quality and compliance, with FSC-certified materials, ISO 9001 manufacturing standards, and ISO 12647 color management. We offer DHL Express global shipping with delivery in 2-4 days. Get an instant 30-second AI quote with no signup required.</p>`,
     longDescriptionJa: `白卡紙袋をZprintProでご注文。平滑で高剛性の白卡紙+フルカラー印刷+箔押し/局部UV/エンボス。美容・宝飾・プレミアムアパレル様の贈答・小売に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '白卡紙高挺度，色彩還原佳',
@@ -4820,7 +4820,7 @@ export const products: Product[] = [
     optimizationRound: 2,
     category: 'paper-bags',
     category_slug: 'paper-bags',
-    name: '禮品紙袋 | 紙袋 / 牛皮紙袋 / 手提袋', nameEn: 'Gift Bags | Paper Bags & Kraft Bags', nameJa: 'ギフト紙袋 | 紙袋 / クラフト紙袋 / ハンドル', title_zh: '禮品紙袋印刷訂製 高檔禮品袋 100個起印 燙金LOGO | 智印雲',
+    name: '禮品紙袋 | 紙袋 / 牛皮紙袋 / 手提袋', nameEn: 'Gift Bags | Paper Bags & Kraft Bags', nameJa: 'ギフト紙袋 | 紙袋 / クラフト紙袋 / ハンドル', title_zh: '禮品紙袋印刷訂製 高檔禮品袋 100個起印 燙金LOGO | 智印港',
     description: '禮品紙袋印刷訂製，100個起印，HK$3.5起/個。棉繩緞帶手挽，燙金UV壓凹工藝，支援多尺寸客製LOGO。適合品牌活動週年慶贈品，即日交貨，全港免費送貨。 适配行业: 婚慶、珠寶鐘錶、茶飲食品、服裝、禮品、品牌活動、酒店迎賓. **適配行業**: 婚慶/珠寶鐘錶/茶飲食品/服裝/禮品店/品牌活動/酒店迎賓.', descriptionEn: 'Exquisite design with foil stamping, UV and other processes. Essential for gifting, elevates gift quality., ISO 9001:2015 certified quality management system. Custom printed gift bags · 100 MOQ · Foil logo option · Wedding favor, retail, event bags. Free design mockup. 适配行业: Wedding, Jewelry & Watches, Tea & Beverage, Apparel, Gifts, Brand events, Hotel hospitality. **Best for**: weddings / jewelry & watches / tea & F&B / apparel / gift shops / brand events / hotel welcome.', descriptionJa: '精巧なデザイン、箔押し・UVなどの加工付き。ギフトに必須、ギフトの質を向上。。オリジナルギフト紙袋・100枚から・箔押し選択可。ウェディング・小売・イベント用。校正無料。 适配行业: ウェディング、宝飾・腕時計、茶・飲料、アパレル、ギフト、ブランドイベント、ホテル. **適合業種**: 婚礼 / 宝飾時計 / お茶飲食 / アパレル / ギフトショップ / ブランドイベント / ホテル歓迎.', description_zh: '精美設計，配合燙金、UV等工藝。送禮必備，提升禮品檔次。 适配行业: 婚慶、珠寶鐘錶、茶飲食品、服裝、禮品、品牌活動、酒店迎賓. **適配行業**: 婚慶/珠寶鐘錶/茶飲食品/服裝/禮品店/品牌活動/酒店迎賓.',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -4853,18 +4853,18 @@ export const products: Product[] = [
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 31 間香港零售品牌印製活動禮品袋。100 個起印，48 小時快遞，深圳自設廠房直送，紙材通過 FSC 認證。</p>
+<p>智印港已為 31 間香港零售品牌印製活動禮品袋。100 個起印，48 小時快遞，深圳自設廠房直送，紙材通過 FSC 認證。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、UV 局部、壓凹、絲帶手挽、底部加固等多種工藝組合。免費打樣。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Premium Gift Paper Bags for Global Brands</h3>
 <p>ZprintPro custom gift paper bags turn every unboxing into a brand moment. Designed for boutiques, jewelers, chocolatiers, and corporate gifting across the US, UK, Australia, and global markets. Choose from 210-300g art card with soft-touch matte or gloss lamination, reinforced bases, and ribbon or cotton rope handles. Inside printing, foil-stamped logos, and magnetic closures elevate the gift experience. 100-bag MOQ, 5-7 day standard production, FSC certified.</p>
@@ -4998,10 +4998,10 @@ export const products: Product[] = [
 </ul>
 
 <h3>FSC 認証と環境配慮</h3>
-<p>智印雲 ZprintPro のギフトバッグは全紙質で <strong>FSC 認証取得</strong>。再生紙 100% 使用可能、大豆インク印刷対応で ESG 配慮イベント・サステナブル志向ブランドも安心してご利用いただけます。クリスマス大量配布の廃棄時にも、リサイクル可能な素材構成で環境負荷を最小化します。</p>
+<p>ジープリント ZprintPro のギフトバッグは全紙質で <strong>FSC 認証取得</strong>。再生紙 100% 使用可能、大豆インク印刷対応で ESG 配慮イベント・サステナブル志向ブランドも安心してご利用いただけます。クリスマス大量配布の廃棄時にも、リサイクル可能な素材構成で環境負荷を最小化します。</p>
 
 <h3>活用シーンと季節別事例</h3>
-<p>智印雲 ZprintPro ギフトバッグは年間 50 万枚以上の出荷実績。</p>
+<p>ジープリント ZprintPro ギフトバッグは年間 50 万枚以上の出荷実績。</p>
 <ul>
   <li><strong>クリスマス</strong>：百貨店・小売・ブランド、サンタ柄・雪の結晶デザイン</li>
   <li><strong>年末年始</strong>：お年玉袋・お年賀・新年プレゼント</li>
@@ -5075,15 +5075,15 @@ export const products: Product[] = [
   <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式対応、AI 自動チェックで出血・解像度・CMYK 色彩を事前検証</li>
   <li><strong>見積もり確認</strong>：30 秒以内に送料込みの総額表示、内容確認後すぐ製造開始</li>
 </ol>
-<p>今すぐ体験：<strong>智印雲 ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>
+<p>今すぐ体験：<strong>ジープリント ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '禮贈場景導向，工藝層次豐富',
@@ -5168,7 +5168,7 @@ export const products: Product[] = [
     optimizationRound: 1,
     category: 'paper-bags',
     category_slug: 'paper-bags',
-    name: '環保紙袋 | 紙袋 / 牛皮紙袋 / 手提袋', nameEn: 'Eco Paper Bags | Paper Bags & Kraft Bags', nameJa: 'エコ紙袋 | 紙袋 / クラフト紙袋 / ハンドル', title_zh: '環保紙袋印刷訂製 FSC再生認證 100個起印 | 智印雲 ZprintPro',
+    name: '環保紙袋 | 紙袋 / 牛皮紙袋 / 手提袋', nameEn: 'Eco Paper Bags | Paper Bags & Kraft Bags', nameJa: 'エコ紙袋 | 紙袋 / クラフト紙袋 / ハンドル', title_zh: '環保紙袋印刷訂製 FSC再生認證 100個起印 | 智印港 ZprintPro',
     description: '環保紙袋印刷訂製，100個起印，HK$2.2起/個。FSC再生認證紙材，可完全降解，支援燙金UV印刷。適合ESG品牌碳審計、減塑徵費合規，即日交貨，全港送貨。 适配行业: ESG認證品牌、環保美妝、有機食品、公平貿易、咖啡店、買手店、服裝品牌、禮品店.', descriptionEn: 'FSC-certified eco-friendly paper, sustainable development. Perfect for environmentally conscious brands., ISO 9001:2015 certified quality management system. 100% recycled paper · 50 MOQ · FSC certified · Sustainable packaging for eco-conscious brands. 适配行业: ESG brands, Eco beauty, Organic food, Fair trade, Cafés, Boutiques, Apparel, Gift shops.', descriptionJa: 'FSC認証の環境に優しい紙、持続可能な開発。環境に配慮するブランドに最適。。再生紙100%・50枚から・FSC認証。エコロジーブランド向けサステナブルパッケージ。 适配行业: ESG、エコ美容、オーガニック、フェアトレード、カフェ、ブティック、アパレル.', description_zh: 'FSC認證環保紙張，可持續發展。適合注重環保的品牌。 适配行业: ESG認證品牌、環保美妝、有機食品、公平貿易、咖啡店、買手店、服裝品牌、禮品店.',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -5201,18 +5201,18 @@ export const products: Product[] = [
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 31 間香港零售品牌印製活動禮品袋。100 個起印，48 小時快遞，深圳自設廠房直送，紙材通過 FSC 認證。</p>
+<p>智印港已為 31 間香港零售品牌印製活動禮品袋。100 個起印，48 小時快遞，深圳自設廠房直送，紙材通過 FSC 認證。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、UV 局部、壓凹、絲帶手挽、底部加固等多種工藝組合。免費打樣。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Eco-Friendly Paper Bags for Global Brands</h3>
 <p>ZprintPro eco paper bags are made for brands that put sustainability at the center of their identity. Produced from 100% recycled fiber or FSC-certified virgin pulp with soy-based and water-based inks, every bag is fully recyclable, compostable, and plastic-free. Ideal for organic food retailers, sustainable fashion labels, eco-conscious cosmetics, and zero-waste campaigns across the US, UK, Australia, and global markets. 100-bag MOQ, 5-7 day standard production, carbon-neutral option available.</p>
@@ -5284,7 +5284,7 @@ export const products: Product[] = [
 
     `,
     longDescriptionJa: `<h3>グローバルブランド向け エコ紙袋（環境配慮型）</h3>
-<p>智印雲 ZprintPro のエコ紙袋は、サステナビリティをブランドの核に据える企業向けの環境配慮型ショッピングバッグです。100% 再生繊維または FSC 認証バージン紙パルプを基材に、大豆インク・水性インクを採用、すべての紙袋が完全リサイクル可能・コンポスト可能・プラスチックフリー。有機食品小売・サステナブルファッション・エコ志向化粧品・ゼロウェイストキャンペーンに最適で、米国・英国・オーストラリア・グローバル市場に対応。100 枚からご注文可能、5-7 営業日で標準製作、カーボンニュートラルオプション対応。</p>
+<p>ジープリント ZprintPro のエコ紙袋は、サステナビリティをブランドの核に据える企業向けの環境配慮型ショッピングバッグです。100% 再生繊維または FSC 認証バージン紙パルプを基材に、大豆インク・水性インクを採用、すべての紙袋が完全リサイクル可能・コンポスト可能・プラスチックフリー。有機食品小売・サステナブルファッション・エコ志向化粧品・ゼロウェイストキャンペーンに最適で、米国・英国・オーストラリア・グローバル市場に対応。100 枚からご注文可能、5-7 営業日で標準製作、カーボンニュートラルオプション対応。</p>
 
 <h3>素材と環境認証の比較</h3>
 <table>
@@ -5332,7 +5332,7 @@ export const products: Product[] = [
 </ul>
 
 <h3>FSC 認証と ISO 9001 品質保証</h3>
-<p>智印雲 ZprintPro のエコ紙袋は <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。100% 再生紙・FSC バージン紙パルプ・GOTS 認証コットン・TUV 認証グラスペーパーを調達、ESG 調達要件を満たす最適な素材をご提案。ESG 報告用の紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。有機食品・サステナブルファッション・ゼロウェイスト業界の B2B 向けに、最適なエコ紙袋ソリューションをご提案します。</p>
+<p>ジープリント ZprintPro のエコ紙袋は <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。100% 再生紙・FSC バージン紙パルプ・GOTS 認証コットン・TUV 認証グラスペーパーを調達、ESG 調達要件を満たす最適な素材をご提案。ESG 報告用の紙材トレーサビリティレポートとカーボンフットプリント試算もご提供。有機食品・サステナブルファッション・ゼロウェイスト業界の B2B 向けに、最適なエコ紙袋ソリューションをご提案します。</p>
 
 <h3>業界別活用事例</h3>
 <ul>
@@ -5345,7 +5345,7 @@ export const products: Product[] = [
 </ul>
 
 <h3>日本向け配送と多通貨決済</h3>
-<p>智印雲 ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。<strong>100 枚以上のご注文は送料無料</strong>で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
+<p>ジープリント ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。<strong>100 枚以上のご注文は送料無料</strong>で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -5407,7 +5407,7 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>カスタムサイズに対応できますか？</strong></summary><p>はい。6×4×1.5 インチ（小型石鹸）から 16×12×5 インチ（大容量 grocery）まで対応。ご要望のサイズをお知らせください、お見積もりいたします。</p></details>
 <details class="my-2"><summary><strong>カーボンオフセットはどう対応していますか？</strong></summary><p>ご注文毎のカーボンフットプリント計算をご提供いたします。検証済みのオフセットプロジェクト（再森林化・再生可能エネルギー）と連携し、証明書を発行いたします。</p></details>
 
-<p><em>智印雲 (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>
 `,
     features: [
       '可選 FSC 認證與再生紙材',
@@ -5529,18 +5529,18 @@ export const products: Product[] = [
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 31 間香港零售品牌印製活動禮品袋。100 個起印，48 小時快遞，深圳自設廠房直送，紙材通過 FSC 認證。</p>
+<p>智印港已為 31 間香港零售品牌印製活動禮品袋。100 個起印，48 小時快遞，深圳自設廠房直送，紙材通過 FSC 認證。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、UV 局部、壓凹、絲帶手挽、底部加固等多種工藝組合。免費打樣。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Custom Handle Paper Bags for Global Brands</h3>
 <p>ZprintPro custom handle paper bags are the retail workhorse — built for high-volume shopping, apparel, and takeaway use. Choose from 120-200g brown or white kraft with cotton, paper rope, or flat paper handles in 11 standard colors. Reinforced base inserts support up to 12kg, gusseted sides expand for bulky items, and full-coverage 4-color CMYK printing showcases your brand. 100-bag MOQ, 3-5 day production rush available, FSC certified.</p>
@@ -5612,7 +5612,7 @@ export const products: Product[] = [
 
     `,
     longDescriptionJa: `<h3>グローバルブランド向け カスタムハンドル紙袋（手提げ）</h3>
-<p>智印雲 ZprintPro のカスタムハンドル紙袋は、小売・アパレル・テイクアウト向けの定番ワークホースショッピングバッグです。120-200g の茶色または白クラフト紙に、コットン・紙紐・平織り紙の 3 種類、11 色の標準カラーハンドルから選択可能。補強ベースインサートで最大 12kg まで対応、ガゼットサイドが嵩張る商品をしっかり保持、フルカバー 4 色 CMYK 印刷でブランドを鮮やかに訴求。100 枚からご注文可能、3-5 営業日特急製作対応、FSC 認証取得。</p>
+<p>ジープリント ZprintPro のカスタムハンドル紙袋は、小売・アパレル・テイクアウト向けの定番ワークホースショッピングバッグです。120-200g の茶色または白クラフト紙に、コットン・紙紐・平織り紙の 3 種類、11 色の標準カラーハンドルから選択可能。補強ベースインサートで最大 12kg まで対応、ガゼットサイドが嵩張る商品をしっかり保持、フルカバー 4 色 CMYK 印刷でブランドを鮮やかに訴求。100 枚からご注文可能、3-5 営業日特急製作対応、FSC 認証取得。</p>
 
 <h3>素材とハンドルの比較</h3>
 <table>
@@ -5660,7 +5660,7 @@ export const products: Product[] = [
 </ul>
 
 <h3>FSC 認証と ISO 9001 品質保証</h3>
-<p>智印雲 ZprintPro のカスタムハンドル紙袋は <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。120-200g のクラフト紙はすべて FSC 認証取得メーカーから調達、持続可能な紙材調達と厳格な品質管理を実現。ESG 報告用の紙材トレーサビリティレポートもご提供。アパレル・小売・カフェ・书店業界の B2B 向けに、最適なショッピングバッグソリューションをご提案します。</p>
+<p>ジープリント ZprintPro のカスタムハンドル紙袋は <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。120-200g のクラフト紙はすべて FSC 認証取得メーカーから調達、持続可能な紙材調達と厳格な品質管理を実現。ESG 報告用の紙材トレーサビリティレポートもご提供。アパレル・小売・カフェ・书店業界の B2B 向けに、最適なショッピングバッグソリューションをご提案します。</p>
 
 <h3>業界別活用事例</h3>
 <ul>
@@ -5673,7 +5673,7 @@ export const products: Product[] = [
 </ul>
 
 <h3>日本向け配送と多通貨決済</h3>
-<p>智印雲 ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。<strong>100 枚以上のご注文は送料無料</strong>で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
+<p>ジープリント ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。<strong>100 枚以上のご注文は送料無料</strong>で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -5735,7 +5735,7 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>特急製作に対応していますか？</strong></summary><p>はい。5,000 枚までのご注文で 3-5 日特急製作対応。11 時（HKT）までのデータ確定で当日製作開始、次日発送いたします。</p></details>
 <details class="my-2"><summary><strong>食品接触に対応していますか？</strong></summary><p>間接食品接触（パン・ pastry を個別包裝して入れる場合）は対応可能です。直接食品接触には別料金で FDA 準拠インナーライナーをご用意いたします。</p></details>
 
-<p><em>智印雲 (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>
 `,
     features: [
       '手挽加固，承重更佳',
@@ -5852,18 +5852,18 @@ export const products: Product[] = [
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 31 間香港零售品牌印製活動禮品袋。100 個起印，48 小時快遞，深圳自設廠房直送，紙材通過 FSC 認證。</p>
+<p>智印港已為 31 間香港零售品牌印製活動禮品袋。100 個起印，48 小時快遞，深圳自設廠房直送，紙材通過 FSC 認證。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、UV 局部、壓凹、絲帶手挽、底部加固等多種工藝組合。免費打樣。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Large Paper Bags for Global Brands</h3>
 <p>ZprintPro large paper bags are engineered for oversized retail — apparel twin-packs, footwear boxes, gift hampers, and home goods. Reinforced 200-300g stock with twin cotton rope handles, double-glued base, and gusseted sides support 12-18kg loads. Full-coverage 4-color CMYK printing, foil-stamped logos, and inside printing available for premium unboxing. 100-bag MOQ, 7-10 day standard production, FSC certified, heavy-duty load-tested.</p>
@@ -5935,7 +5935,7 @@ export const products: Product[] = [
 
     `,
     longDescriptionJa: `<h3>グローバルブランド向け 大型紙袋（強化タイプ）</h3>
-<p>智印雲 ZprintPro の大型紙袋は、アパレルツインパック・靴箱・ギフトハンパー・ホームグッズなど大型小売向けに最適化された高耐久ショッピングバッグです。200-300g の補強クラフト紙にツインコットンロープハンドル、両面グルー底、ガゼットサイドを組み合わせて 12-18kg までの荷重に対応。フルカバー 4 色 CMYK 印刷・箔押しロゴ・内側印刷もオプション対応で、プレミアム開封体験を演出。100 枚からご注文可能、7-10 営業日で標準製作、FSC 認証取得、荷重試験済み。</p>
+<p>ジープリント ZprintPro の大型紙袋は、アパレルツインパック・靴箱・ギフトハンパー・ホームグッズなど大型小売向けに最適化された高耐久ショッピングバッグです。200-300g の補強クラフト紙にツインコットンロープハンドル、両面グルー底、ガゼットサイドを組み合わせて 12-18kg までの荷重に対応。フルカバー 4 色 CMYK 印刷・箔押しロゴ・内側印刷もオプション対応で、プレミアム開封体験を演出。100 枚からご注文可能、7-10 営業日で標準製作、FSC 認証取得、荷重試験済み。</p>
 
 <h3>素材と強度の比較</h3>
 <table>
@@ -5983,7 +5983,7 @@ export const products: Product[] = [
 </ul>
 
 <h3>FSC 認証と ISO 9001 品質保証</h3>
-<p>智印雲 ZprintPro の大型紙袋は <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。200-300g のクラフト紙はすべて FSC 認証取得メーカーから調達、持続可能な紙材調達と厳格な品質管理を実現。荷重試験（drop test 定格荷重 5 回実施）で品質保証。ESG 報告用の紙材トレーサビリティレポートもご提供。アパレル・靴・ホーム・ギフト業界の B2B 向けに、最適な大型紙袋ソリューションをご提案します。</p>
+<p>ジープリント ZprintPro の大型紙袋は <strong>FSC 認証紙</strong> + <strong>ISO 12647 色彩管理</strong> + <strong>ISO 9001 品質認証</strong>。200-300g のクラフト紙はすべて FSC 認証取得メーカーから調達、持続可能な紙材調達と厳格な品質管理を実現。荷重試験（drop test 定格荷重 5 回実施）で品質保証。ESG 報告用の紙材トレーサビリティレポートもご提供。アパレル・靴・ホーム・ギフト業界の B2B 向けに、最適な大型紙袋ソリューションをご提案します。</p>
 
 <h3>業界別活用事例</h3>
 <ul>
@@ -5996,7 +5996,7 @@ export const products: Product[] = [
 </ul>
 
 <h3>日本向け配送と多通貨決済</h3>
-<p>智印雲 ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。<strong>100 枚以上のご注文は送料無料</strong>で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
+<p>ジープリント ZprintPro はアジア自社工場から DHL Express で日本全国 2-4 営業日納品。<strong>100 枚以上のご注文は送料無料</strong>で全国配送、沖縄・離島も対応。<strong>JPY 日本円建て明朗会計</strong>で為替変動リスクなし、Visa / Mastercard / JCB / Alipay / PayPal / 銀行振込がご利用可能。NET 30 月締請求書払い・法人掛売り対応。<strong>30 秒 AI 見積もり</strong>で画面上に簡単設定、送料込みの総額表示で安心してご注文いただけます。</p>
 
 <h3>30 秒 AI 見積もり流程</h3>
 <p>ご注文は 3 ステップで完了：</p>
@@ -6058,7 +6058,7 @@ export const products: Product[] = [
 <details class="my-2"><summary><strong>非常に重い商品用に補強できますか？</strong></summary><p>20kg を超える場合は段ボール箱のご検討を推奨いたします。15-20kg の紙袋には、二重段ボールベースインサート + 補強ハンドル取付で対応いたします。</p></details>
 <details class="my-2"><summary><strong>箔押しや内側印刷に対応していますか？</strong></summary><p>はい、いずれも対応可能です。箔押し（金・銀・ローズゴールド・ホログラム）と内側片面またはフルカラー印刷は製作期間 1-2 日追加、デザイン複雑性に応じたお見積もりとなります。</p></details>
 
-<p><em>智印雲 (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>
 `,
     features: [
       '【320×120×380mm】加大尺寸，適合外套、鞋盒、大型禮品',
@@ -6122,7 +6122,7 @@ export const products: Product[] = [
     optimizationRound: 2,
     category: 'flyers',
     category_slug: 'flyers',
-    name: 'A4傳單印刷 | 傳單印刷 / 折頁 / A4/A5', nameEn: 'A4 Flyers | A4/A5 Flyers & Leaflets', nameJa: 'A4チラシ | A4/A5 チラシ・フライヤー', title_zh: 'A4傳單印刷 100張起印 HK$0.3/張 雙面彩印 | 智印雲 ZprintPro',
+    name: 'A4傳單印刷 | 傳單印刷 / 折頁 / A4/A5', nameEn: 'A4 Flyers | A4/A5 Flyers & Leaflets', nameJa: 'A4チラシ | A4/A5 チラシ・フライヤー', title_zh: 'A4傳單印刷 100張起印 HK$0.3/張 雙面彩印 | 智印港 ZprintPro',
     description: 'A4傳單印刷訂製，100張起印，HK$0.3起/張。157g銅版紙雙面四色印刷，免費設計打樣。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. **適配行業**：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。', descriptionEn: 'Standard A4 size, most common flyer format. 157g glossy paper, 4-color printing, vibrant colors., ISO 9001:2015 certified quality management system 适配行业: Food delivery, Real estate, Retail, Education, Events, Beauty, Community. **Best for**: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.', descriptionJa: '標準A4サイズ、最も一般的なチラシ形式。157gコート紙、4色印刷、鮮やかな色彩。 适配行业: 飲食デリバリー、不動産、小売、教育、イベント、美容、コミュニティ. **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。', description_zh: '標準A4尺寸，最常用的傳單印刷規格。157g銅版紙，四色印刷，色彩鮮豔。適合產品推廣、活動宣傳。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心.',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -6155,18 +6155,18 @@ export const products: Product[] = [
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲（ZprintPro）已為多個國際餐廳、補習社、零售店提供傳單印刷印製服務。10 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印港（ZprintPro）已為多個國際餐廳、補習社、零售店提供傳單印刷印製服務。10 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加印 QR Code 連結報名系統、會員系統、線上點餐。免費排版與出血檢查。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>A4 Flyers for Global Brands</h3>
 <p>ZprintPro A4 flyers (210×297mm) are the workhorse of event marketing, product launches, and retail promotions. Choose from 128g-300g gloss or matte art paper with 4-color CMYK printing on one or both sides. Our Heidelberg offset presses deliver saturated color and crisp text, with optional matte or gloss lamination for durability. 100-flyer MOQ, same-day production available for orders of 500 or fewer. Standard lead time 1-3 business days.</p>
@@ -6284,7 +6284,7 @@ export const products: Product[] = [
 </ul>
 
 <h3>スピード納品と緊急対応</h3>
-<p>智印雲 ZprintPro は急ぎの A4 チラシ印刷に業界最速で対応。</p>
+<p>ジープリント ZprintPro は急ぎの A4 チラシ印刷に業界最速で対応。</p>
 <ul>
   <li><strong>当日仕上げ（即日納品）</strong>：500 枚未満、午前 11 時データ確定で当日仕上げ・特急仕上げ（要事前相談）</li>
   <li><strong>特急 1〜2 営業日</strong>：500 枚以上、特急料金で対応</li>
@@ -6293,7 +6293,7 @@ export const products: Product[] = [
 </ul>
 
 <h3>活用シーンと成功事例</h3>
-<p>智印雲 ZprintPro A4 チラシは年間 1,000 万枚以上の印刷実績。</p>
+<p>ジープリント ZprintPro A4 チラシは年間 1,000 万枚以上の印刷実績。</p>
 <ul>
   <li><strong>飲食店（カフェ・レストラン）</strong>：新メニュー・季節限定・テイクアウト案内</li>
   <li><strong>小売・アパレル</strong>：セール・新作・会員募集</li>
@@ -6367,15 +6367,15 @@ export const products: Product[] = [
   <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式対応、AI 自動チェックで出血・解像度・CMYK 色彩を事前検証</li>
   <li><strong>見積もり確認</strong>：30 秒以内に送料込みの総額表示、内容確認後すぐ製造開始</li>
 </ol>
-<p>今すぐ体験：<strong>智印雲 ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>
+<p>今すぐ体験：<strong>ジープリント ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【A4／A5標準尺寸】最常見派發規格，兼容性強',
@@ -6455,19 +6455,19 @@ export const products: Product[] = [
     optimizationRound: 2,
     category: 'flyers',
     category_slug: 'flyers',
-    name: 'A5傳單印刷 | 傳單印刷 / 折頁 / A4/A5', nameEn: 'A5 Flyers | A4/A5 Flyers & Leaflets', nameJa: 'A5チラシ | A4/A5 チラシ・フライヤー', title_zh: 'A5傳單印刷 100張起印 雙面四色 免費設計 | 智印雲 ZprintPro',
+    name: 'A5傳單印刷 | 傳單印刷 / 折頁 / A4/A5', nameEn: 'A5 Flyers | A4/A5 Flyers & Leaflets', nameJa: 'A5チラシ | A4/A5 チラシ・フライヤー', title_zh: 'A5傳單印刷 100張起印 雙面四色 免費設計 | 智印港 ZprintPro',
     description: 'A5傳單印刷訂製，100張起印，HK$0.18起/張。157g銅版紙雙面四色，免費設計排版。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'A5 size, economical, perfect for mass distribution. First choice for food delivery, flash events. 适配行业: Food delivery, Real estate, Retail, Education, Events, Beauty, Community. **Best for**: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: 'A5サイズ、経済的、大量配布に最適。フードデリバリー、フラッシュイベントの第一選択。 适配行业: 飲食デリバリー、不動産、小売、教育、イベント、美容、コミュニティ. **適合業種**: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: 'A5尺寸，經濟實惠，適合大量派發。餐飲外賣、快閃活動首選。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心. **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動',
-    longDescription: `智印雲A5傳單印刷採用128g銅版紙或100g書紙，配合四色數碼印刷，經濟實惠且色彩鮮豔。A5尺寸（148×210mm）適合大量派發，成本較A4降低約40%，是餐飲外賣、快閃活動及社區宣傳的首選。可選單面或雙面印刷，並支援二維碼與優惠券設計。我們提供免費排版與出血檢查，確保裁切精準。與分類頁內容一致，材質關鍵詞包含：A5單張、銅版紙、書紙、數碼印刷。<h3>傳單尺寸對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">尺寸</th><th class="p-2 text-center">資訊容量</th><th class="p-2 text-center">派發效率</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用場景</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">A4 (210×297mm)</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">詳細產品目錄、課程介紹</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5 (148×210mm)</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">餐飲外賣、活動宣傳</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">A6 (105×148mm)</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">街頭派發、外賣插頁</td></tr></tbody></table><h3>傳單尺寸對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">尺寸</th><th class="p-2 text-center">資訊容量</th><th class="p-2 text-center">派發效率</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用場景</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">A4 (210×297mm)</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">詳細產品目錄、課程介紹</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5 (148×210mm)</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">餐飲外賣、活動宣傳</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">A6 (105×148mm)</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">街頭派發、外賣插頁</td></tr></tbody></table>
+    longDescription: `智印港A5傳單印刷採用128g銅版紙或100g書紙，配合四色數碼印刷，經濟實惠且色彩鮮豔。A5尺寸（148×210mm）適合大量派發，成本較A4降低約40%，是餐飲外賣、快閃活動及社區宣傳的首選。可選單面或雙面印刷，並支援二維碼與優惠券設計。我們提供免費排版與出血檢查，確保裁切精準。與分類頁內容一致，材質關鍵詞包含：A5單張、銅版紙、書紙、數碼印刷。<h3>傳單尺寸對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">尺寸</th><th class="p-2 text-center">資訊容量</th><th class="p-2 text-center">派發效率</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用場景</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">A4 (210×297mm)</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">詳細產品目錄、課程介紹</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5 (148×210mm)</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">餐飲外賣、活動宣傳</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">A6 (105×148mm)</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">街頭派發、外賣插頁</td></tr></tbody></table><h3>傳單尺寸對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">尺寸</th><th class="p-2 text-center">資訊容量</th><th class="p-2 text-center">派發效率</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用場景</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">A4 (210×297mm)</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">詳細產品目錄、課程介紹</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">A5 (148×210mm)</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">餐飲外賣、活動宣傳</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">A6 (105×148mm)</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">街頭派發、外賣插頁</td></tr></tbody></table>
 
-**智印雲 國際印刷**：深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。
+**智印港 國際印刷**：深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>A5 Flyers for Cost-effective Marketing</h3>
 <p>ZprintPro A5 Flyers are designed for businesses that need a cost-effective marketing solution. Using 128g glossy or 100g book paper with 4-color digital printing, these flyers offer vibrant colors and sharp images at a lower cost than A4 flyers. The A5 size (148×210mm) is perfect for mass distribution at ~40% lower cost than A4. This makes them ideal for food delivery, flash events, and community outreach. Single or double-sided printing with QR code and coupon design support is available.</p>
@@ -6540,13 +6540,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 
 運営会社：深圳市彩龙印刷包裝有限公司（中国・深圳本社）。所在地：広東省深圳市龍崗区平湖街道嘉城路1号（〒518111）。送料：¥10,000以上のご注文で全国送料無料、特定商取引法に基づく表記・プライバシーポリシー・利用規約・お問い合わせの全リンクをフッターに掲載。今すぐご注文、無料見積もり、サンプル請求はこちらから。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【A4／A5標準尺寸】最常見派發規格，兼容性強',
@@ -6661,18 +6661,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲（ZprintPro）已為多個國際餐廳、補習社、零售店提供傳單印刷印製服務。10 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印港（ZprintPro）已為多個國際餐廳、補習社、零售店提供傳單印刷印製服務。10 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加印 QR Code 連結報名系統、會員系統、線上點餐。免費排版與出血檢查。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Double-sided Flyers for Enhanced Information Delivery</h3>
 <p>ZprintPro Double-sided Flyers are designed for businesses and organizations that need to communicate extensive information efficiently. With full-color duplex printing on 157g glossy or 128g matte paper, these flyers double your content capacity without increasing the distribution footprint. The front side is optimized for attention-grabbing visuals, while the back provides detailed information, ensuring your message is comprehensive and engaging.</p>
@@ -6726,13 +6726,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>How do you ensure quality?</strong></summary><p>ZprintPro maintains quality with FSC-certified paper, ISO 9001 manufacturing, and ISO 12647 color management. We also offer free digital color proofing before production.</p></details>`,
     longDescriptionJa: `両面チラシをZprintProでご注文。157gコート紙+4色両面オフセット印刷で前後の套印精度±0.5mm以内。表面は注目を集め裏面は詳細情報を提供。情報容量2倍。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【A4／A5標準尺寸】最常見派發規格，兼容性強',
@@ -6814,7 +6814,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     optimizationRound: 1,
     category: 'flyers',
     category_slug: 'flyers',
-    name: '摺疊傳單印刷 | 傳單印刷 / 折頁 / A4/A5', nameEn: 'Folded Leaflets | A4/A5 Flyers & Leaflets', nameJa: '折りたたみパンフレット | A4/A5 チラシ・フライヤー', title_zh: '折疊傳單印刷 A4 雙面 對摺三摺 · 餐廳菜單地產樓書活動宣傳適配 | 智印雲 ZprintPro',
+    name: '摺疊傳單印刷 | 傳單印刷 / 折頁 / A4/A5', nameEn: 'Folded Leaflets | A4/A5 Flyers & Leaflets', nameJa: '折りたたみパンフレット | A4/A5 チラシ・フライヤー', title_zh: '折疊傳單印刷 A4 雙面 對摺三摺 · 餐廳菜單地產樓書活動宣傳適配 | 智印港 ZprintPro',
     description: '三摺雙摺宣傳單印刷訂製，100張起印，HK$0.45起/張。157g-250g銅版紙，免費摺頁設計排版。適合企業簡介產品目錄活動宣傳，3-5天交貨，全港送貨。 **适配行业**:餐廳菜單地產樓書、活動傳單印刷、學校院院校刊、培訓機構課程表、旅遊景點導覽、零售品牌推廣 **適配行業**：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。', descriptionEn: 'Bi-fold or tri-fold design, can display more information. **Best for**:restaurant menus, real estate brochures, event flyers, school & college publications, training course catalogues, tourism guidebooks, retail brand promotions **Best for**: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.', descriptionJa: '二つ折りまたは三つ折りデザイン、より多くの情報を表示可能。 **適用業界**:レストランメニュー、不動産パンフレット、イベントチラシ、学校・大学・機関紙、研修コースカタログ、観光ガイド、小売ブランド **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。', description_zh: '對摺或三摺設計，可展示更多信息。適合產品目錄、服務介紹。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -6847,18 +6847,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲（ZprintPro）已為多個國際餐廳、補習社、零售店提供傳單印刷印製服務。10 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印港（ZprintPro）已為多個國際餐廳、補習社、零售店提供傳單印刷印製服務。10 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加印 QR Code 連結報名系統、會員系統、線上點餐。免費排版與出血檢查。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Folded Leaflets for Comprehensive Information Presentation</h3>
 <p>ZprintPro Folded Leaflets are perfect for businesses that need to present detailed information in a compact format. Available in bi-fold or tri-fold designs, these leaflets can be printed on 157g or 200g glossy paper. Bi-fold leaflets open to A4 size (210×297mm), while tri-fold leaflets are available in A4 or DL size (99×210mm). The creases are scored to ensure flat, rebound-resistant folding, making them ideal for product catalogs, service introductions, menus, and travel brochures.</p>
@@ -6912,13 +6912,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>How do you ensure quality?</strong></summary><p>ZprintPro maintains quality with FSC-certified paper, ISO 9001 manufacturing, and ISO 12647 color management. We also offer free digital color proofing before production.</p></details>`,
     longDescriptionJa: `折りたたみパンフレットをZprintProでご注文。157g/200gコート紙+二つ折りまたは三つ折りデザイン+圧線処理で平らに折れる。製品カタログ・サービス紹介・メニュー・旅行パンフレット様に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【A4／A5標準尺寸】最常見派發規格，兼容性強',
@@ -7031,18 +7031,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲（ZprintPro）已為多個國際餐廳、補習社、零售店提供傳單印刷印製服務。10 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印港（ZprintPro）已為多個國際餐廳、補習社、零售店提供傳單印刷印製服務。10 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加印 QR Code 連結報名系統、會員系統、線上點餐。免費排版與出血檢查。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Thick Paper Flyers for Premium Quality</h3>
 <p>ZprintPro Thick Paper Flyers are designed for businesses that require a high-quality, durable flyer. Using 200g or 250g premium glossy paper, these flyers offer high rigidity and a substantial texture that resists creasing and curling. The substantial weight and quality make them ideal for premium product launches, property brochures, auto shows, and luxury brand events. Optional lamination further enhances durability and texture.</p>
@@ -7096,13 +7096,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>How do you ensure quality?</strong></summary><p>ZprintPro maintains quality with FSC-certified paper, ISO 9001 manufacturing, and ISO 12647 color management. We also offer free digital color proofing before production.</p></details>`,
     longDescriptionJa: `厚紙チラシをZprintProでご注文。200g/250g高級コート紙+4色オフセット印刷で高い挺度と厚みのある質感を実現。重みのある配布物として高級製品発表・不動産・自動車展示会様に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【A4／A5標準尺寸】最常見派發規格，兼容性強',
@@ -7215,18 +7215,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲（ZprintPro）已為多個國際餐廳、補習社、零售店提供傳單印刷印製服務。10 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印港（ZprintPro）已為多個國際餐廳、補習社、零售店提供傳單印刷印製服務。10 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加印 QR Code 連結報名系統、會員系統、線上點餐。免費排版與出血檢查。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Eco Flyers for Environmentally Conscious Marketing</h3>
 <p>ZprintPro Eco Flyers are designed for businesses that prioritize sustainability and corporate responsibility. Using FSC-certified recycled paper and soy-based inks, these flyers are perfect for environmental campaigns, NGO outreach, green product launches, and corporate ESG reports. The 100% recycled fiber with a natural, slightly textured feel not only conveys your eco-friendly message but also aligns with your brand's commitment to sustainability.</p>
@@ -7280,13 +7280,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>How do you ensure quality?</strong></summary><p>ZprintPro maintains quality with FSC-certified paper, ISO 9001 manufacturing, and ISO 12647 color management. We also offer free digital color proofing before production.</p></details>`,
     longDescriptionJa: `エコチラシをZprintProでご注文。FSC認証リサイクル紙+大豆インクで100%再生繊維の自然なテクスチャー。環境キャンペーン・NGOアウトリーチ・グリーンプロダクトローンチ・企業ESGレポート様に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【A4／A5標準尺寸】最常見派發規格，兼容性強',
@@ -7402,18 +7402,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲（ZprintPro）已為多個國際餐廳、補習社、零售店提供傳單印刷印製服務。10 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印港（ZprintPro）已為多個國際餐廳、補習社、零售店提供傳單印刷印製服務。10 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加印 QR Code 連結報名系統、會員系統、線上點餐。免費排版與出血檢查。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Same-day Flyers for Urgent Marketing Needs</h3>
 <p>ZprintPro Same-day Flyers are designed for businesses that need to meet urgent deadlines. Using 157g glossy paper and high-speed 4-color digital printing, these flyers can be printed and shipped in as fast as 4 hours from the time the file is received. This makes them ideal for emergency events, flash sales, press releases, and last-minute meeting materials. Our dedicated rush handling ensures priority processing and same-day courier or personal delivery. Despite the rush, we maintain color calibration and bleed checks for uncompromised quality.</p>
@@ -7467,13 +7467,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>How do you ensure quality?</strong></summary><p>ZprintPro maintains quality with FSC-certified paper, ISO 9001 manufacturing, and ISO 12647 color management. We also offer free digital color proofing before production.</p></details>`,
     longDescriptionJa: `短納期チラシをZprintProでご注文。157gコート紙+高速4色デジタル印刷でデータ受付から発送まで最短4時間。緊急イベント・フラッシュセール・プレスリリース・直前会議資料様に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【A4／A5標準尺寸】最常見派發規格，兼容性強',
@@ -7532,7 +7532,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'a2-posters',
     category: 'posters',
     category_slug: 'posters',
-    name: 'A2海報印刷 | A1/A2 海報 / 展覽海報', nameEn: 'A2 Posters | A1/A2 Posters & Exhibition', nameJa: 'A2ポスター | A1/A2 ポスター / 展示会', title_zh: 'A2海報印刷 10張起印 HK$12.9/張 雙面彩印 防水 | 零售精品/餐飲外賣/教育培訓 | 智印雲 ZprintPro',
+    name: 'A2海報印刷 | A1/A2 海報 / 展覽海報', nameEn: 'A2 Posters | A1/A2 Posters & Exhibition', nameJa: 'A2ポスター | A1/A2 ポスター / 展示会', title_zh: 'A2海報印刷 10張起印 HK$12.9/張 雙面彩印 防水 | 零售精品/餐飲外賣/教育培訓 | 智印港 ZprintPro',
     description: 'A2海報印刷訂製，10張起印，HK$12.9起/張。200g銅版紙/PP合成紙，雙面四色印刷，防水防曬耐用。適合地產活動展覽店舖推廣，1-2天交貨，全港送貨。**適配行業**:零售精品店、品牌 pop-up、商場快閃、餐廳菜單推廣、咖啡店、教育培訓機構、藝廊展覽、婚慶活動。', descriptionEn: 'Standard A2 size, first choice for event promotion. 157g glossy paper, vibrant colors, 10-sheet minimum, 1-2 day turnaround. **Best for**: retail boutique, brand pop-up, mall flash store, restaurant menu promo, cafe, education training, gallery exhibition, wedding events.', descriptionJa: '標準A2サイズ、イベント宣伝の第一選択。157gコート紙、鮮やかな色彩、10枚から、1-2日納期。**適用業界**:小売セレクト、ブランド pop-up、ショッピングモール フラッシュ、レストランメニュー、カフェ、教育研修、ギャラリー展示、ブライダルイベント。', description_zh: '標準A2尺寸，活動宣傳、產品推廣首選。157g銅版紙，色彩鮮豔，10張起訂。',
     optimizedAt: '2026-07-08',
     optimizationRound: 1,
@@ -7567,18 +7567,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 22 間香港畫廊、14 間商場活動、23 間地產發展商、9 間社區組織提供印製服務。10 張起印，48 小時快遞，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印港已為 22 間香港畫廊、14 間商場活動、23 間地產發展商、9 間社區組織提供印製服務。10 張起印，48 小時快遞，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、UV 局部、PP 護膜、裱泡沫板、邊緣封邊。建議急件可拆數碼快印與後工裱貼分段排程。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>A2 Posters for Global Brands</h3>
 <p>ZprintPro A2 posters (420×594mm) are the mid-format workhorse for retail, event, and campaign signage. Choose from 150-300g gloss or matte art paper with full 4-color CMYK printing. Heidelberg offset presses deliver sharp text and saturated color, with optional matte or gloss lamination for durability. Indoor wall mounting, window display, or framed art. 100-poster MOQ, 2-3 day production, free design service.</p>
@@ -7697,7 +7697,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>FSC 認証と環境配慮</h3>
-<p>智印雲 ZprintPro のポスター印刷は全紙質で <strong>FSC 認証取得</strong>。再生紙オプション、大豆インク印刷対応で ESG 配慮イベント・サステナブル志向ブランドも安心してご利用いただけます。屋外ポスターの廃棄時には、適切にリサイクル可能な素材構成で環境負荷を最小化します。</p>
+<p>ジープリント ZprintPro のポスター印刷は全紙質で <strong>FSC 認証取得</strong>。再生紙オプション、大豆インク印刷対応で ESG 配慮イベント・サステナブル志向ブランドも安心してご利用いただけます。屋外ポスターの廃棄時には、適切にリサイクル可能な素材構成で環境負荷を最小化します。</p>
 
 <h3>デザイン製作と業種別最適化</h3>
 <p>プロデザイナーが業種別のポスターを 3 案まで無料作成。</p>
@@ -7709,7 +7709,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>選挙ポスターと公職選挙法対応</h3>
-<p>智印雲 ZprintPro は日本の選挙ポスター印刷に精通。</p>
+<p>ジープリント ZprintPro は日本の選挙ポスター印刷に精通。</p>
 <ul>
   <li><strong>公職選挙法準拠</strong>：候補者氏名・選挙区・通称・推薦団体など必須記載項目をデータ上でご案内</li>
   <li><strong>標準サイズ</strong>：選挙区・選挙種別に異なる規定サイズに対応（衆参・地方選挙）</li>
@@ -7782,15 +7782,15 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式対応、AI 自動チェックで出血・解像度・CMYK 色彩を事前検証</li>
   <li><strong>見積もり確認</strong>：30 秒以内に送料込みの総額表示、内容確認後すぐ製造開始</li>
 </ol>
-<p>今すぐ体験：<strong>智印雲 ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>
+<p>今すぐ体験：<strong>ジープリント ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '標準 A2，陳列與手持皆宜',
@@ -7905,18 +7905,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 22 間香港畫廊、14 間商場活動、23 間地產發展商、9 間社區組織提供印製服務。10 張起印，48 小時快遞，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印港已為 22 間香港畫廊、14 間商場活動、23 間地產發展商、9 間社區組織提供印製服務。10 張起印，48 小時快遞，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、UV 局部、PP 護膜、裱泡沫板、邊緣封邊。建議急件可拆數碼快印與後工裱貼分段排程。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>A1 Posters for Global Brands</h3>
 <p>ZprintPro A1 posters (594×841mm) are large-format impact posters for retail windows, event signage, and campaign displays. Choose from 200-300g premium art paper or 250g+ for framed art quality. Heidelberg offset printing with optional lamination, mounting, and framing services available. Perfect for movie posters, art prints, retail sale signage, and trade show displays. 50-poster MOQ for stock sizes, custom MOQ varies.</p>
@@ -8102,18 +8102,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 22 間香港畫廊、14 間商場活動、23 間地產發展商、9 間社區組織提供印製服務。10 張起印，48 小時快遞，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印港已為 22 間香港畫廊、14 間商場活動、23 間地產發展商、9 間社區組織提供印製服務。10 張起印，48 小時快遞，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、UV 局部、PP 護膜、裱泡沫板、邊緣封邊。建議急件可拆數碼快印與後工裱貼分段排程。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Outdoor Posters for Global Brands</h3>
 <p>ZprintPro outdoor posters withstand sun, rain, and wind with weather-resistant materials and UV-stable inks. Built on PVC banner, vinyl, or weatherproof paper with full lamination, our outdoor posters deliver 6-12 months of fade-resistant visibility. Perfect for storefront windows, event signage, construction site hoardings, and trade show exteriors. 50-poster MOQ, 3-5 day production, custom sizes up to A0.</p>
@@ -8289,18 +8289,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 22 間香港畫廊、14 間商場活動、23 間地產發展商、9 間社區組織提供印製服務。10 張起印，48 小時快遞，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印港已為 22 間香港畫廊、14 間商場活動、23 間地產發展商、9 間社區組織提供印製服務。10 張起印，48 小時快遞，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、UV 局部、PP 護膜、裱泡沫板、邊緣封邊。建議急件可拆數碼快印與後工裱貼分段排程。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Display Posters for Retail & Events</h3>
 <p>ZprintPro display posters are designed for trade shows, retail pop-ups, and event booths. Choose from rigid foam board, gator board, or PVC sintra mounting for self-standing display, or rolled paper/vinyl for table-top and easel use. Premium print quality on 200-300g paper with optional lamination. Free design service includes booth layout optimization. 50-poster MOQ for standard sizes, custom MOQ varies.</p>
@@ -8450,7 +8450,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'art-posters',
     category: 'posters',
     category_slug: 'posters',
-    name: '藝術海報 | A1/A2 海報 / 展覽海報', nameEn: 'Art Posters | A1/A2 Posters & Exhibition', nameJa: 'アートポスター | A1/A2 ポスター / 展示会', title_zh: '藝術海報印刷 1張起印 美術紙/相紙 高端畫冊 | 智印雲',
+    name: '藝術海報 | A1/A2 海報 / 展覽海報', nameEn: 'Art Posters | A1/A2 Posters & Exhibition', nameJa: 'アートポスター | A1/A2 ポスター / 展示会', title_zh: '藝術海報印刷 1張起印 美術紙/相紙 高端畫冊 | 智印港',
     description: '藝術海報印刷訂製，1張起印，HK$15起/張。200g美術紙/啞粉紙/RC相紙，Giclée級色彩管理。適合攝影師藝術家畫廊展覽，3-5天交貨，全球配送。', descriptionEn: 'Premium art paper, high color accuracy. Perfect for art exhibitions, photography works.', descriptionJa: '高級アート紙、高い色再現性。美術展、寫真作品に最適。', description_zh: '高級藝術紙張，色彩還原度高。適合藝術展覽、攝影作品。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -8483,18 +8483,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 22 間香港畫廊、14 間商場活動、23 間地產發展商、9 間社區組織提供印製服務。10 張起印，48 小時快遞，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印港已為 22 間香港畫廊、14 間商場活動、23 間地產發展商、9 間社區組織提供印製服務。10 張起印，48 小時快遞，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、UV 局部、PP 護膜、裱泡沫板、邊緣封邊。建議急件可拆數碼快印與後工裱貼分段排程。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Art Posters for Creatives & Collectors</h3>
 <p>ZprintPro art posters are crafted for artists, photographers, designers, and gallery curators. Museum-quality printing on archival paper with 200+ year fade resistance. Choose from matte cotton, satin photo, or premium art paper with Heidelberg offset precision or large-format giclée. Each print is hand-inspected and shipped in protective sleeves. Perfect for limited editions, gallery sales, and collector prints. 25-poster MOQ, 3-5 day production, signed edition certificates available.</p>
@@ -8677,18 +8677,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 22 間香港畫廊、14 間商場活動、23 間地產發展商、9 間社區組織提供印製服務。10 張起印，48 小時快遞，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印港已為 22 間香港畫廊、14 間商場活動、23 間地產發展商、9 間社區組織提供印製服務。10 張起印，48 小時快遞，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、UV 局部、PP 護膜、裱泡沫板、邊緣封邊。建議急件可拆數碼快印與後工裱貼分段排程。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Adhesive Posters for Easy Installation</h3>
 <p>ZprintPro adhesive posters are peel-and-stick prints for windows, walls, smooth surfaces, and short-term campaigns. Built on removable or permanent vinyl with 4-color CMYK + white ink option for clear backgrounds. Easy to install (no professional installer needed) and remove cleanly within 90 days for removable adhesive. Perfect for retail windows, vehicle advertising, event signage, and seasonal campaigns. 50-poster MOQ, 3-5 day production.</p>
@@ -8819,7 +8819,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     optimizationRound: 1,
     category: 'packaging',
     category_slug: 'packaging',
-    name: '化妝品包裝盒 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Cosmetic Packaging Boxes | Gift Boxes & Custom Packaging', nameJa: '化粧品パッケージボックス | パッケージボックス・化粧箱', title_zh: '化妝品盒訂製 100個起印 燙金局部UV · 美妝護膚面膜精華液品牌適配 | 智印雲 ZprintPro',
+    name: '化妝品包裝盒 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Cosmetic Packaging Boxes | Gift Boxes & Custom Packaging', nameJa: '化粧品パッケージボックス | パッケージボックス・化粧箱', title_zh: '化妝品盒訂製 100個起印 燙金局部UV · 美妝護膚面膜精華液品牌適配 | 智印港 ZprintPro',
     description: '美妝護膚品牌化妝品包裝盒定製, 天地蓋 / 磁吸翻蓋 / 抽屜式 / 書型 4 種盒型, 內托 EVA / 紙托 / 吸塑可定製, 燙金 + 局部 UV + 內襯緞布。香港本地、跨境美妝電商、日本市場適用。 **适配行业**:美妝護膚品牌、面膜品牌、精華液品牌、口紅彩妝、香水品牌、手作護膚品、跨境電商', descriptionEn: 'Custom cosmetic packaging boxes for beauty and skincare brands — 4 box styles (lift-off lid, magnetic, drawer, book-style) with EVA/molded pulp/PET inner trays. Foil stamping, spot UV, satin lining. Cross-border e-commerce and Japan market ready. **Best for**:skincare brands, sheet mask brands, serum brands, lipstick & makeup, perfume brands, hand-made skincare, cross-border e-commerce', descriptionJa: '化粧品パッケージボックス カスタム — 天地蓋 / マグネット蓋 / 引き出し式 / ブック型の 4 種類, EVA / 紙 / ペット内裝トレイ選択可。箔押し・スポット UV ・サテン裏地対応。越境 EC ・日本市場向け。 **適用業界**:スキンケアブランド、シートマスクブランド、美容液ブランド、口紅・メイク、香水ブランド、手作りスキンケア、越境EC', description_zh: '美妝護膚品牌化妝品包裝盒定製, 天地蓋 / 磁吸翻蓋 / 抽屜式 / 書型 4 種盒型, 內托可定製, 燙金 + 局部 UV + 內襯緞布。',
     longDescription: `<h3>4 種化妝品包裝盒型對比</h3>
 <p>化妝品包裝盒按開合結構分 4 種主流盒型, 對應不同預算、品牌定位與用戶體驗:</p>
@@ -8848,13 +8848,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <p>設計稿請預留成分表與批次號印刷區 (藥機法 / FDA 21 CFR / EU 1223/2013 合規)。打樣階段實測跌落與開合磨損, 確保瓶器在高溫 + 跨境運輸條件下無位移破損。</p>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲 (ZprintPro) 為多個香港本地美妝品牌、台灣電商品牌、東南亞跨境美妝品牌、日本進口品牌提供化妝品包裝盒 OEM / ODM 服務。100 個起印, 深圳自設廠房直送, DHL Express 全球 2-4 個工作天配送, ISO 9001 品質認證。</p>
+<p>智印港 (ZprintPro) 為多個香港本地美妝品牌、台灣電商品牌、東南亞跨境美妝品牌、日本進口品牌提供化妝品包裝盒 OEM / ODM 服務。100 個起印, 深圳自設廠房直送, DHL Express 全球 2-4 個工作天配送, ISO 9001 品質認證。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>化妝品包裝盒的最低起印量是多少？</strong></summary><p>化妝品盒 100 個起印, 100-500 個享 9 折優惠, 500-1000 個 8.5 折, 1000 個以上另議。樣品盒 5-10 個可單獨打樣, 樣品費可批量後抵扣。快遞盒因結構較簡單, 樣品 + 量產均能 5-7 天交付。</p></details>
 <details class="my-2"><summary><strong>化妝品包裝盒生產交貨期需要多久？</strong></summary><p>標準訂單 7-12 個工作天完成, 含結構打樣 + 紙裱打樣 + 上機印刷 + 內襯製作 + 品質檢驗。特急可壓縮到 5-7 個工作天 (加價 30%)。國際訂單 DHL Express 全球 2-4 個工作天配送。</p></details>
-<details class="my-2"><summary><strong>可以定製開模嗎？4 種盒型 (天地蓋 / 磁吸 / 抽屜 / 書型) 都能做嗎？</strong></summary><p>4 種盒型全部可選。智印雲提供免費結構設計打樣 (1-2 個工作天出 3D 圖), 確認後開模生產。圓角、異形、磁吸扣、絲帶拉手等特殊結構都可在 7-10 天內完成開模。</p></details>
+<details class="my-2"><summary><strong>可以定製開模嗎？4 種盒型 (天地蓋 / 磁吸 / 抽屜 / 書型) 都能做嗎？</strong></summary><p>4 種盒型全部可選。智印港提供免費結構設計打樣 (1-2 個工作天出 3D 圖), 確認後開模生產。圓角、異形、磁吸扣、絲帶拉手等特殊結構都可在 7-10 天內完成開模。</p></details>
 <details class="my-2"><summary><strong>能否加燙金 / 局部 UV / 擊凸？</strong></summary><p>支持。化妝品包裝盒常見工藝組合: 燙金 (品牌名) + 局部 UV (Logo) + 擊凸 (品牌符號)。三種工藝可同時使用, 效果疊加提升品牌質感。技術細節由結構工程師免費評估。</p></details>
 `,
     longDescriptionEn: `<h3>4 Cosmetic Box Styles for Beauty & Skincare Brands</h3>
@@ -8909,16 +8909,16 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>Can I print inside the box as well?</strong></summary><p>Yes. Inside printing is available on all 4 box styles — lid interior, drawer inside, and book-style covers. Common for brand storytelling, usage instructions, ingredient panels, or premium patterns visible when the lid is opened.</p></details>
 <details class="my-2"><summary><strong>How is shipping calculated to my country?</strong></summary><p>US orders over $200 ship free via DHL Express (3-5 business days, flat-pack). UK/AU orders over £150 / AU$300 ship free. KR/SG/AE ship via DHL Express at standard rates. Tracking provided for all shipments.</p></details>
 <details class="my-2"><summary><strong>What if I'm not happy with the print quality?</strong></summary><p>We provide free digital color proofing and physical white sample before production. If the final print drifts from approved proof, we reprint at no cost or refund in full. Your satisfaction is guaranteed.</p></details>`,
-    longDescriptionJa: `化妝品パッケージボックスは智印雲（ZprintPro）のカスタム印刷サービス。4種類のボックススタイル（天地蓋・マグネット蓋・引き出し式・ブック型）から選択でき、EVA・紙・PET 内裝トレイと箔押し・スポット UV ・サテン裏地を組み合わせて、美容ブランドの世界観を表現するプレミアムパッケージを製作します。スキンケア・メイクアップ・香水・フレグランス・美容 EC・OEM メーカー向けに、少量 OEM・テスト販売から量産・百貨店展開まで対応可能です。【専用サイズ】30ml/50ml/100ml/200ml ボトル対応、表面はアート紙/クラフト/メタル調/皮革調から選択。【構造】天地蓋・マグネット蓋・引き出し式・ブック型の4種類から選択可能、【内裝オプション】EVAフォーム成形（ボトル形状に合わせてカット）、サテン生地（黒/白/ピンク/ベージュ）、ブリスタートレイ（複数アイテム収納）、PET 真空成形（透明可視）。【表面仕上げ】箔押し（金/銀+特殊色）、スポットUV（ロゴ・裝飾）、エンボス/デボス、ラグジュアリー系のコスメブランドで多数の実績があります。【コンプライアンス】薬機法準拠の全成分表示スペース設計をサポート、業界基準（縦1.5mm以上の文字サイズ等）を満たすレイアウトをご提案。リサイクルマーク・材質表示対応。【納期】100個から対応、最短7-12営業日で出荷。内裝カスタマイズや特殊加工を含む場合は14-21営業日。お急ぎの場合は特急プラン（有償）もございます。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
+    longDescriptionJa: `化妝品パッケージボックスはジープリント（ZprintPro）のカスタム印刷サービス。4種類のボックススタイル（天地蓋・マグネット蓋・引き出し式・ブック型）から選択でき、EVA・紙・PET 内裝トレイと箔押し・スポット UV ・サテン裏地を組み合わせて、美容ブランドの世界観を表現するプレミアムパッケージを製作します。スキンケア・メイクアップ・香水・フレグランス・美容 EC・OEM メーカー向けに、少量 OEM・テスト販売から量産・百貨店展開まで対応可能です。【専用サイズ】30ml/50ml/100ml/200ml ボトル対応、表面はアート紙/クラフト/メタル調/皮革調から選択。【構造】天地蓋・マグネット蓋・引き出し式・ブック型の4種類から選択可能、【内裝オプション】EVAフォーム成形（ボトル形状に合わせてカット）、サテン生地（黒/白/ピンク/ベージュ）、ブリスタートレイ（複数アイテム収納）、PET 真空成形（透明可視）。【表面仕上げ】箔押し（金/銀+特殊色）、スポットUV（ロゴ・裝飾）、エンボス/デボス、ラグジュアリー系のコスメブランドで多数の実績があります。【コンプライアンス】薬機法準拠の全成分表示スペース設計をサポート、業界基準（縦1.5mm以上の文字サイズ等）を満たすレイアウトをご提案。リサイクルマーク・材質表示対応。【納期】100個から対応、最短7-12営業日で出荷。内裝カスタマイズや特殊加工を含む場合は14-21営業日。お急ぎの場合は特急プラン（有償）もございます。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
 <details class="my-2"><summary><strong>化妝品パッケージボックスの最小注文数量は？</strong></summary><p>100 個から対応。天地蓋・マグネット蓋・ブック型は構造上、200個からを推奨。サンプル注文 5-25 個も対応可能（特急料金あり）。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 7-12 営業日で完成。校正 PDF 承認後、内裝カスタマイズや特殊加工を含む場合は14-21営業日。特急印刷は最短 5-7 営業日（DHL / FedEx 国際速達便で日本全国 2-4 日配送）。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>4 種類のボックススタイルの選び方は？</strong></summary><p>プレミアム感を出すなら マグネット蓋、伝統と安定感なら天地蓋、ユニーク体験なら引き出し式、複数アイテムを見せるならブック型。予算とブランドイメージに応じて担当者がご提案します。無料で3D モックアップと構造設計を提供。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>内裝は EVA・紙・PET の3種類、表面素材はアート紙・マット紙・クラフト紙・ピーチスキン・メタリック調など。加工は4色オフセット印刷、箔押し（金/銀/ローズ金/ホログラム）、スポット UV、エンボス/デボス、型抜き、サテン裏地、ラベル貼り等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$200 以上のご注文で米国向け送料無料、£150 / AU$300 以上で英豪向け送料無料。追跡番号付き。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認、本サンプル校正付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認、本サンプル校正付き。</p></details>
 `,
     features: [
       '【4 種盒型】天地蓋 / 磁吸翻蓋 / 抽屜式 / 書型, 全部可選',
@@ -9158,10 +9158,10 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>エコ・脱プラ素材のリクエスト</h3>
-<p>智印港 ZprintPro は <strong>FSC 認証紙・再生紙・竹パルプ</strong> などエコ素材を豊富にご用意。脱プラ対応では <strong>PLA（植物由来）透明フィルム・生分解性コート</strong>も使用可能。ESG 配慮の食品ブランド・オーガニック商品・サステナブル志向ブランドに好評です。エコ素材への切り替えは追加料金なしで対応します。</p>
+<p>ジープリント ZprintPro は <strong>FSC 認証紙・再生紙・竹パルプ</strong> などエコ素材を豊富にご用意。脱プラ対応では <strong>PLA（植物由来）透明フィルム・生分解性コート</strong>も使用可能。ESG 配慮の食品ブランド・オーガニック商品・サステナブル志向ブランドに好評です。エコ素材への切り替えは追加料金なしで対応します。</p>
 
 <h3>食品安全基準と認証</h3>
-<p>智印港 ZprintPro の食品パッケージは世界 3 大食品安全基準に準拠。</p>
+<p>ジープリント ZprintPro の食品パッケージは世界 3 大食品安全基準に準拠。</p>
 <ul>
   <li><strong>FDA（米国食品医薬品局）</strong>：米国市場向け食品安全基準</li>
   <li><strong>LFGB（ドイツ食品・日用品法）</strong>：欧州市場向け最高基準</li>
@@ -9244,15 +9244,15 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式対応、AI 自動チェックで出血・解像度・CMYK 色彩を事前検証</li>
   <li><strong>見積もり確認</strong>：30 秒以内に送料込みの総額表示、内容確認後すぐ製造開始</li>
 </ol>
-<p>今すぐ体験：<strong>智印港 ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>
+<p>今すぐ体験：<strong>ジープリント ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>
 
-<p><em>智印港（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印港 ZprintPro の最小注文数量は？</strong></summary><p>智印港は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印港は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【食品級認證】SGS 與香港衛生署標準通過，安全接觸食品',
@@ -9376,20 +9376,20 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 17 間香港電商品牌、9 間美妝品牌、14 間珠寶品牌、6 間高端食品品牌印製各類禮盒。100 個起印，深圳自設廠房直送，DHL Express / FedEx 國際配送，灰板通過 FSC 認證。</p>
+<p>智印港已為 17 間香港電商品牌、9 間美妝品牌、14 間珠寶品牌、6 間高端食品品牌印製各類禮盒。100 個起印，深圳自設廠房直送，DHL Express / FedEx 國際配送，灰板通過 FSC 認證。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、UV 局部、壓凹、磁吸開合、絲帶、感謝卡、內襯 EVA 泡棉。免費結構設計打樣。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 
-<h3>智印雲 2026-07-18 参考價格 × 1.3 校準真實報價 (mailer-boxes)</h3><table class='w-full text-sm border-collapse my-4'><thead><tr class='bg-gray-100'><th class='p-2 text-left'>數量</th><th class='p-2 text-left'>HKD 總價</th><th class='p-2 text-left'>HKD/個</th><th class='p-2 text-left'>校準來源</th></tr></thead><tbody><tr><td class='p-2 text-center'>500 個</td><td class='p-2 text-center'>HK$965</td><td class='p-2 text-center'>HK$1.93</td><td class='p-2 text-center'>2026-07-18 參考實詢</td></tr><tr><td class='p-2 text-center'>1000 個</td><td class='p-2 text-center'>HK$1,144</td><td class='p-2 text-center'>HK$1.14</td><td class='p-2 text-center'>2026-07-18 參考實詢</td></tr><tr><td class='p-2 text-center'>2000 個</td><td class='p-2 text-center'>HK$1,677</td><td class='p-2 text-center'>HK$0.84</td><td class='p-2 text-center'>2026-07-18 參考實詢</td></tr><tr><td class='p-2 text-center'>3000 個</td><td class='p-2 text-center'>HK$1,872</td><td class='p-2 text-center'>HK$0.62</td><td class='p-2 text-center'>2026-07-18 參考實詢</td></tr><tr><td class='p-2 text-center'>5000 個</td><td class='p-2 text-center'>HK$2,800</td><td class='p-2 text-center'>HK$0.56</td><td class='p-2 text-center'>2026-07-18 參考實詢</td></tr></tbody></table><p><strong>對比 e-print 香港零售</strong> 同類型 3 層 B 瓦楞飛機盒 <strong>HK$8-15/個 (500 個起,8 個工作天)</strong>,智印雲 500 個起印已可壓到 e-print 零售天花板 <strong>76-87% 成本優勢</strong>。5,000 個起單個成本僅 HK$0.56。</p><p>智印雲 ZprintPro 深耕跨境電商印刷 <strong>15+ 年</strong>,服務 <strong>15,000+ 跨境電商品牌</strong> (Amazon FBA / Shopify / Etsy),產品銷往 <strong>100+ 國家</strong>。所有訂單 ISO 9001 認證、ISO 12647 色彩管理,FSC 認證紙材可選。所有報價通過 × 1.3 真實校準,不做模擬價。</p>`,
+<h3>智印港 2026-07-18 参考價格 × 1.3 校準真實報價 (mailer-boxes)</h3><table class='w-full text-sm border-collapse my-4'><thead><tr class='bg-gray-100'><th class='p-2 text-left'>數量</th><th class='p-2 text-left'>HKD 總價</th><th class='p-2 text-left'>HKD/個</th><th class='p-2 text-left'>校準來源</th></tr></thead><tbody><tr><td class='p-2 text-center'>500 個</td><td class='p-2 text-center'>HK$965</td><td class='p-2 text-center'>HK$1.93</td><td class='p-2 text-center'>2026-07-18 參考實詢</td></tr><tr><td class='p-2 text-center'>1000 個</td><td class='p-2 text-center'>HK$1,144</td><td class='p-2 text-center'>HK$1.14</td><td class='p-2 text-center'>2026-07-18 參考實詢</td></tr><tr><td class='p-2 text-center'>2000 個</td><td class='p-2 text-center'>HK$1,677</td><td class='p-2 text-center'>HK$0.84</td><td class='p-2 text-center'>2026-07-18 參考實詢</td></tr><tr><td class='p-2 text-center'>3000 個</td><td class='p-2 text-center'>HK$1,872</td><td class='p-2 text-center'>HK$0.62</td><td class='p-2 text-center'>2026-07-18 參考實詢</td></tr><tr><td class='p-2 text-center'>5000 個</td><td class='p-2 text-center'>HK$2,800</td><td class='p-2 text-center'>HK$0.56</td><td class='p-2 text-center'>2026-07-18 參考實詢</td></tr></tbody></table><p><strong>對比 e-print 香港零售</strong> 同類型 3 層 B 瓦楞飛機盒 <strong>HK$8-15/個 (500 個起,8 個工作天)</strong>,智印港 500 個起印已可壓到 e-print 零售天花板 <strong>76-87% 成本優勢</strong>。5,000 個起單個成本僅 HK$0.56。</p><p>智印港 ZprintPro 深耕跨境電商印刷 <strong>15+ 年</strong>,服務 <strong>15,000+ 跨境電商品牌</strong> (Amazon FBA / Shopify / Etsy),產品銷往 <strong>100+ 國家</strong>。所有訂單 ISO 9001 認證、ISO 12647 色彩管理,FSC 認證紙材可選。所有報價通過 × 1.3 真實校準,不做模擬價。</p>`,
     longDescriptionEn: `<h3>Mailer Boxes for E-Commerce Brands</h3>
 <p>ZprintPro mailer boxes are the workhorse of DTC e-commerce — engineered for shipping durability and unboxing delight. Self-locking tuck-front design assembles in 5 seconds, requires no tape, and stacks flat for 70% shipping savings vs pre-assembled boxes. Choose from corrugated, folding carton, or rigid mailer construction with kraft, white, or full-color print. 100-box MOQ, 5-7 day production, FSC certified.</p>
 
@@ -9580,18 +9580,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 17 間香港電商品牌、9 間美妝品牌、14 間珠寶品牌、6 間高端食品品牌印製各類禮盒。100 個起印，深圳自設廠房直送，DHL Express / FedEx 國際配送，灰板通過 FSC 認證。</p>
+<p>智印港已為 17 間香港電商品牌、9 間美妝品牌、14 間珠寶品牌、6 間高端食品品牌印製各類禮盒。100 個起印，深圳自設廠房直送，DHL Express / FedEx 國際配送，灰板通過 FSC 認證。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、UV 局部、壓凹、磁吸開合、絲帶、感謝卡、內襯 EVA 泡棉。免費結構設計打樣。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Folding Boxes for Global Brands</h3>
 <p>ZprintPro folding boxes ship flat (saving 70% on shipping vs pre-assembled) and assemble in seconds at your facility. Standard tuck-end, auto-lock bottom, and straight tuck boxes cover most retail packaging needs — from cosmetics and electronics to food and pharmaceuticals. 350-400g white card or kraft with 4-color CMYK print, matte or gloss lamination, and optional foil accents. 100-box MOQ, 5-7 day production.</p>
@@ -9746,7 +9746,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'rigid-boxes',
     category: 'packaging',
     category_slug: 'packaging',
-    name: '精裝盒 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Rigid Boxes | Gift Boxes & Custom Packaging', nameJa: '上製本箱 | パッケージボックス・化粧箱', title_zh: '硬盒訂製 100個起印 天地蓋書型磁吸 · 鐘錶珠寶3C電子禮品品牌適配 | 智印雲 ZprintPro',
+    name: '精裝盒 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Rigid Boxes | Gift Boxes & Custom Packaging', nameJa: '上製本箱 | パッケージボックス・化粧箱', title_zh: '硬盒訂製 100個起印 天地蓋書型磁吸 · 鐘錶珠寶3C電子禮品品牌適配 | 智印港 ZprintPro',
     description: '精品盒/禮品盒訂製印刷，100個起印，HK$4.5起/個。硬殼天地盒磁吸盒抽屜盒，灰板裱藝術紙，燙金UV壓凹工藝。適合化妝品珠寶首飾婚慶禮盒週年慶品牌活動贈品，3-7天交貨，全球配送。 **适配行业**:鐘錶珠寶品牌、3C電子產品、手機配件、禮品店、婚慶喜糖、聖誕禮盒、跨境電商亞馬遜', descriptionEn: 'Hardcover rigid construction, luxurious and premium. Premium setup box · 100 MOQ · Magnetic closure available · Foil + spot UV finish. Luxury packaging for jewelry, electronics, high-end gifts. **Best for**:watch & jewellery brands, 3C electronics, phone accessories, premium gift shops, wedding favours, Christmas hampers, Amazon FBA sellers', descriptionJa: '硬い上製本構造、豪華でプレミアム。。プレミアムセットアップ箱・100個から・マグネット式・箔押し+スポットUV。宝飾/電子機器/高級ギフト向けラグジュアリーパッケージ。 **適用業界**:腕時計・宝飾ブランド、3C電子機器、携帯電話アクセサリー、プレミアムギフト、ブライダル、クリスマス、Amazon FBA', description_zh: '硬殼精裝/禮品盒，高檔奢華。適合高端產品、限量版、婚慶/週年慶贈品。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -9779,18 +9779,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 17 間香港電商品牌、9 間美妝品牌、14 間珠寶品牌、6 間高端食品品牌印製各類禮盒。100 個起印，深圳自設廠房直送，DHL Express / FedEx 國際配送，灰板通過 FSC 認證。</p>
+<p>智印港已為 17 間香港電商品牌、9 間美妝品牌、14 間珠寶品牌、6 間高端食品品牌印製各類禮盒。100 個起印，深圳自設廠房直送，DHL Express / FedEx 國際配送，灰板通過 FSC 認證。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、UV 局部、壓凹、磁吸開合、絲帶、感謝卡、內襯 EVA 泡棉。免費結構設計打樣。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Rigid Boxes for Luxury Brands</h3>
 <p>ZprintPro rigid setup boxes deliver the ultimate luxury unboxing — pre-assembled, wrapped in premium paper, and built to last. Used by Apple's first-tier accessories, premium jewelry brands, and luxury spirits, our rigid boxes feature 800-1500gsm greyboard wrapped in art paper, specialty paper, fabric, or leatherette. Magnetic closures, ribbon pulls, and foil-stamped logos complete the experience. 250-box MOQ, 10-15 day production.</p>
@@ -9945,7 +9945,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'foil-red-packets',
     category: 'red-packets',
     category_slug: 'red-packets',
-    name: '燙金利是封 | 利是封 / 春聯 / 燙金', nameEn: 'Foil Red Packets | CNY Red Packets & Foil', nameJa: '箔押しポチ袋 | 紅包 / 旧正月 / 箔押し', title_zh: '燙金利是封 · 婚慶/年會/品牌活動定製 | 智印雲 ZprintPro',
+    name: '燙金利是封 | 利是封 / 春聯 / 燙金', nameEn: 'Foil Red Packets | CNY Red Packets & Foil', nameJa: '箔押しポチ袋 | 紅包 / 旧正月 / 箔押し', title_zh: '燙金利是封 · 婚慶/年會/品牌活動定製 | 智印港 ZprintPro',
     description: '傳統燙金工藝，喜慶大方。多種吉祥圖案可選，也可定製專屬設計。適合企業派發、節日營銷。**適配行業**:婚慶喜宴、企業年會、品牌活動、春節促銷、客戶禮贈、酒店開業、金融證券回饋、奢侈品品牌營銷。', descriptionEn: 'Traditional foil stamping, festive and elegant. Multiple auspicious patterns or custom designs. **Best for**: wedding banquets, corporate annual events, brand activations, Spring Festival promos, client gifting, hotel openings, financial client rewards, luxury brand marketing.', descriptionJa: '伝統的な箔押し加工、縁起が良く上品。複数の縁起の良い柄またはカスタムデザイン。**適用業界**:ブライダル宴会、企業年会、ブランドアクティベーション、春節促销、クライアントギフト、ホテル開業、金融顧客還元、ラグジュアリーブランド マーケティング。', description_zh: '傳統燙金工藝，喜慶大方。多種吉祥圖案可選，也可定製專屬設計。適合企業派發、節日營銷。',
     optimizedAt: '2026-07-08',
     optimizationRound: 1,
@@ -9980,18 +9980,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 23 間香港銀行、9 間五星級酒店、18 間社企、6 間企業集團提供年度利是封印製服務。100 個起印，48 小時快遞，紙材符合香港環保標準，FSC 認證。</p>
+<p>智印港已為 23 間香港銀行、9 間五星級酒店、18 間社企、6 間企業集團提供年度利是封印製服務。100 個起印，48 小時快遞，紙材符合香港環保標準，FSC 認證。</p>
 
 <h3>可選加值服務</h3>
 <p>可從設計到印刷一站式服務，搭配燙金、局部 UV、壓凹、種子紙等特殊材質。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Premium Foil Red Packets for Festive Elegance</h3>
 <p>ZprintPro Foil Red Packets are designed for businesses and individuals seeking a touch of luxury and tradition. With traditional foil stamping in gold, silver, or rose gold, these packets feature auspicious patterns, zodiac signs, and customizable corporate logos. Ideal for corporate gifting, holiday promotions, weddings, and New Year celebrations, these packets convey a sense of festivity and sophistication.</p>
@@ -10094,10 +10094,10 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>FSC 認証と環境配慮</h3>
-<p>智印雲 ZprintPro の箔押し紅包は全紙質で <strong>FSC 認証取得</strong>。大豆インク印刷対応、再生紙オプションもご用意。ESG 配慮の金融機関・ホテル・ブランド向けに、サステナブルな紅包ソリューションをご提案します。</p>
+<p>ジープリント ZprintPro の箔押し紅包は全紙質で <strong>FSC 認証取得</strong>。大豆インク印刷対応、再生紙オプションもご用意。ESG 配慮の金融機関・ホテル・ブランド向けに、サステナブルな紅包ソリューションをご提案します。</p>
 
 <h3>活用シーンと大量発注対応</h3>
-<p>智印雲 ZprintPro 箔押し紅包は日本・台湾などアジア圏の紅包取引実績。</p>
+<p>ジープリント ZprintPro 箔押し紅包は日本・台湾などアジア圏の紅包取引実績。</p>
 <ul>
   <li><strong>年始・お年玉</strong>：1〜3 月繁忙期、10,000 個以上の大量発注</li>
   <li><strong>婚礼・結納</strong>：引出物・記念品、個別名入れ対応</li>
@@ -10171,15 +10171,15 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式対応、AI 自動チェックで出血・解像度・CMYK 色彩を事前検証</li>
   <li><strong>見積もり確認</strong>：30 秒以内に送料込みの総額表示、内容確認後すぐ製造開始</li>
 </ol>
-<p>今すぐ体験：<strong>智印雲 ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>
+<p>今すぐ体験：<strong>ジープリント ZprintPro</strong> の <a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【120g–150g紅色紙張】喜慶質感，挺度適中',
@@ -10275,18 +10275,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 23 間香港銀行、9 間五星級酒店、18 間社企、6 間企業集團提供年度利是封印製服務。100 個起印，48 小時快遞，紙材符合香港環保標準，FSC 認證。</p>
+<p>智印港已為 23 間香港銀行、9 間五星級酒店、18 間社企、6 間企業集團提供年度利是封印製服務。100 個起印，48 小時快遞，紙材符合香港環保標準，FSC 認證。</p>
 
 <h3>可選加值服務</h3>
 <p>可從設計到印刷一站式服務，搭配燙金、局部 UV、壓凹、種子紙等特殊材質。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Luxurious Embossed Red Packets for VIP Clients</h3>
 <p>ZprintPro Embossed Red Packets are crafted for those who appreciate the finer things in life. With embossing that creates a dimensional texture at 0.3–0.5mm depth, these packets convey a sense of luxury and sincerity. Ideal for VIP clients, premium gifting, private banking, and luxury brands, these packets can be paired with foil stamping for an enhanced visual and tactile experience. Free sampling is available to confirm the embossing effect.</p>
@@ -10340,13 +10340,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>ZprintPro is FSC-certified and ISO 9001 quality certified.</p></details>`,
     longDescriptionJa: `エンボスポチ袋をZprintProでご注文。150g高級赤紙+エンボス加工で0.3-0.5mmの深さで立体的な触感。指で撫でると層の変化を感じブランド誠意と高級感を伝える。VIP・高級ギフト・プライベートバンク様向け。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【120g–150g紅色紙張】喜慶質感，挺度適中',
@@ -10462,18 +10462,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 23 間香港銀行、9 間五星級酒店、18 間社企、6 間企業集團提供年度利是封印製服務。100 個起印，48 小時快遞，紙材符合香港環保標準，FSC 認證。</p>
+<p>智印港已為 23 間香港銀行、9 間五星級酒店、18 間社企、6 間企業集團提供年度利是封印製服務。100 個起印，48 小時快遞，紙材符合香港環保標準，FSC 認證。</p>
 
 <h3>可選加值服務</h3>
 <p>可從設計到印刷一站式服務，搭配燙金、局部 UV、壓凹、種子紙等特殊材質。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Fully Custom Red Packets for Brand Enhancement</h3>
 <p>ZprintPro Custom Red Packets are designed for businesses looking to strengthen their brand impression. With fully custom designs featuring corporate logos, brand colors, exclusive patterns, and personalized greetings, these packets are ideal for annual meetings, brand events, member rewards, and holiday marketing. Our one-stop service from design to print includes optional foil stamping, spot UV, or debossing. Free die-cut and color proofing are available to ensure the highest quality.</p>
@@ -10527,13 +10527,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>ZprintPro is FSC-certified and ISO 9001 quality certified.</p></details>`,
     longDescriptionJa: `カスタムポチ袋をZprintProでご注文。120g-150g赤または特殊色紙+完全カスタマイズで企業ロゴ・ブランドカラー・専用柄・メッセージを印刷。年会・ブランドイベント・会員特典・ホリデーマーケティング様に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【120g–150g紅色紙張】喜慶質感，挺度適中',
@@ -10649,18 +10649,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 23 間香港銀行、9 間五星級酒店、18 間社企、6 間企業集團提供年度利是封印製服務。100 個起印，48 小時快遞，紙材符合香港環保標準，FSC 認證。</p>
+<p>智印港已為 23 間香港銀行、9 間五星級酒店、18 間社企、6 間企業集團提供年度利是封印製服務。100 個起印，48 小時快遞，紙材符合香港環保標準，FSC 認證。</p>
 
 <h3>可選加值服務</h3>
 <p>可從設計到印刷一站式服務，搭配燙金、局部 UV、壓凹、種子紙等特殊材質。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Cartoon Red Packets for Festive Fun</h3>
 <p>ZprintPro Cartoon Red Packets are perfect for families, children's products, educational institutions, and festive family parties. With 4-color digital printing, these packets feature vibrant colors and lively patterns, including cartoon characters, zodiac animals, cute designs, and brand mascots. Optional foil stamping or spot UV can be added for an extra touch of flair. Free design templates are available to help you create the perfect packet.</p>
@@ -10714,13 +10714,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>ZprintPro is FSC-certified and ISO 9001 quality certified.</p></details>`,
     longDescriptionJa: `キャラクターポチ袋をZprintProでご注文。120gコート紙または環境配慮紙+4色デジタル印刷で鮮やかな色彩と楽しい柄。ファミリーブランド・子供向け製品・教育機関・祝祭ファミリーパーティー様に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【120g–150g紅色紙張】喜慶質感，挺度適中',
@@ -10834,18 +10834,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 23 間香港銀行、9 間五星級酒店、18 間社企、6 間企業集團提供年度利是封印製服務。100 個起印，48 小時快遞，紙材符合香港環保標準，FSC 認證。</p>
+<p>智印港已為 23 間香港銀行、9 間五星級酒店、18 間社企、6 間企業集團提供年度利是封印製服務。100 個起印，48 小時快遞，紙材符合香港環保標準，FSC 認證。</p>
 
 <h3>可選加值服務</h3>
 <p>可從設計到印刷一站式服務，搭配燙金、局部 UV、壓凹、種子紙等特殊材質。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Eco-Friendly Red Packets for Sustainable Development</h3>
 <p>ZprintPro Eco Red Packets are designed for businesses committed to sustainability. Made from FSC-certified recycled or seed paper and printed with soy-based inks, these packets are fully biodegradable or plantable to grow flowers, demonstrating corporate environmental commitment. Ideal for eco-brands, NGOs, green enterprises, and sustainability-focused organizations, these packets can feature corporate logos and eco-slogans with carbon footprint calculation available.</p>
@@ -10899,13 +10899,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>ZprintPro is FSC-certified and ISO 9001 quality certified.</p></details>`,
     longDescriptionJa: `エコーポチ袋をZprintProでご注文。FSC認証リサイクル紙または種子紙+大豆インクで完全に生分解性または植えて花を育てられる。環境ブランド・NGO・グリーン企業・持続可能性に注力する機関様に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【120g–150g紅色紙張】喜慶質感，挺度適中',
@@ -11021,18 +11021,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 23 間香港銀行、9 間五星級酒店、18 間社企、6 間企業集團提供年度利是封印製服務。100 個起印，48 小時快遞，紙材符合香港環保標準，FSC 認證。</p>
+<p>智印港已為 23 間香港銀行、9 間五星級酒店、18 間社企、6 間企業集團提供年度利是封印製服務。100 個起印，48 小時快遞，紙材符合香港環保標準，FSC 認證。</p>
 
 <h3>可選加值服務</h3>
 <p>可從設計到印刷一站式服務，搭配燙金、局部 UV、壓凹、種子紙等特殊材質。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Large Red Packets for Maximum Capacity</h3>
 <p>ZprintPro Large Red Packets are designed for businesses and individuals who need to hold more cash or gift cards. With a size 30%-50% larger than standard, these packets are ideal for senior corporate distribution, wedding gifts, birthday banquets, and major holidays. Optional foil stamping, embossing, or spot UV can be added for enhanced prestige.</p>
@@ -11086,13 +11086,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>ZprintPro is FSC-certified and ISO 9001 quality certified.</p></details>`,
     longDescriptionJa: `大判ポチ袋をZprintProでご注文。150g-200g高級赤紙+標準サイズより30-50%大きく厚い現金やギフトカードが入る。企業上層部配布・結婚式ギフト・寿宴・主要な祝日様に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【120g–150g紅色紙張】喜慶質感，挺度適中',
@@ -11209,18 +11209,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 31 間香港企業、9 間銀行、6 間 NGO、41 間餐廳、14 間攝影師提供年度月曆禮品印製服務。50 本起印，48 小時快遞，紙材通過 SGS 認證，FSC 環保紙。</p>
+<p>智印港已為 31 間香港企業、9 間銀行、6 間 NGO、41 間餐廳、14 間攝影師提供年度月曆禮品印製服務。50 本起印，48 小時快遞，紙材通過 SGS 認證，FSC 環保紙。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、UV 局部工藝、訂製封面、座枱結構設計。聖誕新年企業禮品首選。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Premium Wall Calendars for Corporate and Home Use</h3>
 <p>ZprintPro Wall Calendars are designed for both professional and personal environments, offering a blend of functionality and aesthetic appeal. Available in standard A3 or A2 sizes, these 13-page calendars are perfect for home, office, or retail spaces. With options for glossy or matte paper, they ensure vibrant images and crisp text throughout the year.</p>
@@ -11280,13 +11280,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>Our paper is FSC-certified, and we are ISO 9001 quality certified.</p></details>`,
     longDescriptionJa: `壁掛けカレンダーをZprintProでご注文。250g-300gコート紙またはマット紙+4色オフセット印刷+1月1ページ+裏面企業情報。金属リング綴じでページめくりがスムーズ。企業ギフト・顧客特典・不動産マーケティング・家庭用に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【300g銅版紙或啞粉紙】挺度佳，色彩還原準確',
@@ -11384,18 +11384,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 31 間香港企業、9 間銀行、6 間 NGO、41 間餐廳、14 間攝影師提供年度月曆禮品印製服務。50 本起印，48 小時快遞，紙材通過 SGS 認證，FSC 環保紙。</p>
+<p>智印港已為 31 間香港企業、9 間銀行、6 間 NGO、41 間餐廳、14 間攝影師提供年度月曆禮品印製服務。50 本起印，48 小時快遞，紙材通過 SGS 認證，FSC 環保紙。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、UV 局部工藝、訂製封面、座枱結構設計。聖誕新年企業禮品首選。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Stylish Desk Calendars for Professional Environments</h3>
 <p>ZprintPro Desk Calendars are designed to enhance your workspace with their elegant triangular stand design. These calendars are perfect for office desks, reception areas, and corporate gift-giving. Available in both monthly and quarterly formats, they offer ample space for notes and reminders.</p>
@@ -11455,13 +11455,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>Our paper is FSC-certified, and we are ISO 9001 quality certified.</p></details>`,
     longDescriptionJa: `卓上カレンダーをZprintProでご注文。200g-250gコート紙またはカード紙+三角スタンド設計でデスクにしっかりと立てられる。月ごとまたは四半期ごとページ。オフィスデスク・レジカウンター・企業ギフト様に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【300g銅版紙或啞粉紙】挺度佳，色彩還原準確',
@@ -11568,18 +11568,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 31 間香港企業、9 間銀行、6 間 NGO、41 間餐廳、14 間攝影師提供年度月曆禮品印製服務。50 本起印，48 小時快遞，紙材通過 SGS 認證，FSC 環保紙。</p>
+<p>智印港已為 31 間香港企業、9 間銀行、6 間 NGO、41 間餐廳、14 間攝影師提供年度月曆禮品印製服務。50 本起印，48 小時快遞，紙材通過 SGS 認證，FSC 環保紙。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、UV 局部工藝、訂製封面、座枱結構設計。聖誕新年企業禮品首選。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Exclusive Custom Calendars for Brand Promotion</h3>
 <p>ZprintPro Custom Calendars offer a unique opportunity to showcase your brand with fully personalized designs. Whether it's corporate logos, brand stories, or product images, each page can be tailored to reflect your company's identity. Ideal for year-end corporate gifts, VIP client rewards, and brand memorabilia, these calendars are a powerful marketing tool.</p>
@@ -11641,13 +11641,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>Our paper is FSC-certified, and we are ISO 9001 quality certified.</p></details>`,
     longDescriptionJa: `カスタムカレンダーをZprintProでご注文。250g-300gアート紙またはコート紙+完全カスタマイズで企業ロゴ・ブランドストーリー・製品画像・専用祝日マーカーを印刷。年末企業ギフト・VIP顧客特典・ブランド記念品・家族カスタマイズ様に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【300g銅版紙或啞粉紙】挺度佳，色彩還原準確',
@@ -11758,18 +11758,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 31 間香港企業、9 間銀行、6 間 NGO、41 間餐廳、14 間攝影師提供年度月曆禮品印製服務。50 本起印，48 小時快遞，紙材通過 SGS 認證，FSC 環保紙。</p>
+<p>智印港已為 31 間香港企業、9 間銀行、6 間 NGO、41 間餐廳、14 間攝影師提供年度月曆禮品印製服務。50 本起印，48 小時快遞，紙材通過 SGS 認證，FSC 環保紙。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、UV 局部工藝、訂製封面、座枱結構設計。聖誕新年企業禮品首選。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Compact Mini Calendars for Everyday Use</h3>
 <p>ZprintPro Mini Calendars are designed for convenience and portability, making them ideal for everyday use. With dimensions small enough to fit in a wallet, pocket, or phone case, these calendars are perfect for busy individuals who need quick access to their schedule. Available in glossy or card paper, they offer durability and style.</p>
@@ -11841,13 +11841,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>Our paper is FSC-certified, and we are ISO 9001 quality certified.</p></details>`,
     longDescriptionJa: `ミニカレンダーをZprintProでご注文。150g-200gコート紙またはカード紙+コンパクトポケットサイズで財布・ポケット・スマホケースに入る。各ページ1か月+裏面企業情報やプロモーションコード。FMCGブランド・飲食店・カフェ・会員ギフト様に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【300g銅版紙或啞粉紙】挺度佳，色彩還原準確',
@@ -11959,18 +11959,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 31 間香港企業、9 間銀行、6 間 NGO、41 間餐廳、14 間攝影師提供年度月曆禮品印製服務。50 本起印，48 小時快遞，紙材通過 SGS 認證，FSC 環保紙。</p>
+<p>智印港已為 31 間香港企業、9 間銀行、6 間 NGO、41 間餐廳、14 間攝影師提供年度月曆禮品印製服務。50 本起印，48 小時快遞，紙材通過 SGS 認證，FSC 環保紙。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、UV 局部工藝、訂製封面、座枱結構設計。聖誕新年企業禮品首選。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Innovative Photo Frame Calendars for Home and Office</h3>
 <p>ZprintPro Photo Frame Calendars combine the functionality of a calendar with the aesthetic appeal of a photo frame. With a rigid cardboard frame stand, these calendars are perfect for desks, shelves, or mantelpieces. The front features beautiful photos or illustrations, while the back offers memo space for notes and reminders. Ideal for home decor, office decoration, and photography displays.</p>
@@ -12076,13 +12076,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>Our paper is FSC-certified, and we are ISO 9001 quality certified.</p></details>`,
     longDescriptionJa: `フォトフレームカレンダーをZprintProでご注文。寫真入れ付き+13頁（表紙+12ヶ月+裏表紙フォトフレーム）で、母の日・敬老の日・クリスマスギフト、企業ノベルティに最適なプレミアムカレンダー印刷です。寫真スタジオ提携プランもあり、プロカメラマンが撮影した寫真での高品質仕上げにも対応します。【構造】フォトフレーム機能+13頁構成、サイズはA5/A4/卓上/カスタムから選択。最後のページにL判～A4のフォトフレーム機能を設置。【表面仕上げ】箔押し（タイトル・社名・記念日を強調）、スポットUV（寫真の特定部分に光沢）、マットPP/光沢PP ラミネート。【カスタマイズ】寫真差し替え可（マグネット式や差込式など、構造カスタマイズも対応）、JA祝日完全準拠、六曜表示オプション（JA旧暦併記・大安・仏滅等の六曜、ギフト向けに特に人気）。【利用シーン】個人ギフト（母の日・父の日・敬老の日・クリスマス）、企業ノベルティ・周年記念品、寫真スタジオ・學校記念品。【デザインサービス】寫真を12枚支給いただければ、デザイナーがカレンダーにレイアウト（無料・3案まで）いたします。【納期】10個から対応（個人ギフト少量から、法人ノベルティの1,000個大量発注まで対応）、最短7営業日で出荷。繁忙期は14-21営業日かかる場合がございます。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【300g銅版紙或啞粉紙】挺度佳，色彩還原準確',
@@ -12195,18 +12195,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 31 間香港企業、9 間銀行、6 間 NGO、41 間餐廳、14 間攝影師提供年度月曆禮品印製服務。50 本起印，48 小時快遞，紙材通過 SGS 認證，FSC 環保紙。</p>
+<p>智印港已為 31 間香港企業、9 間銀行、6 間 NGO、41 間餐廳、14 間攝影師提供年度月曆禮品印製服務。50 本起印，48 小時快遞，紙材通過 SGS 認證，FSC 環保紙。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、UV 局部工藝、訂製封面、座枱結構設計。聖誕新年企業禮品首選。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Convenient Magnetic Calendars for Home and Office</h3>
 <p>ZprintPro Magnetic Calendars are designed for versatility and ease of use. With a magnetic backing, these calendars can be easily attached to refrigerators, whiteboards, or metal cabinets, making them perfect for home, office, or classroom use. Available in monthly or full-year formats, they offer beautiful designs on the front and useful information on the back, such as recipes, coupons, or corporate info.</p>
@@ -12314,13 +12314,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What quality certifications do you have?</strong></summary><p>Our paper is FSC-certified, and we are ISO 9001 quality certified.</p></details>`,
     longDescriptionJa: `マグネットカレンダーをZprintProでご注文。200g-250gコート紙または合成紙+裏面フレキシブルマグネットシート貼付で冷蔵庫・ホワイトボード・金属キャビネットに貼付可能。月ごとまたは全年フォーマット。家庭・飲食店・學校・オフィス様に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【300g銅版紙或啞粉紙】挺度佳，色彩還原準確',
@@ -12438,18 +12438,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 67 間香港餐廳、18 間米芝蓮餐廳、9 間五星級酒店、6 間會所提供餐牌印製服務。50 張起印，48 小時快遞，紙張通過 SGS 食品接觸安全認證。</p>
+<p>智印港已為 67 間香港餐廳、18 間米芝蓮餐廳、9 間五星級酒店、6 間會所提供餐牌印製服務。50 張起印，48 小時快遞，紙張通過 SGS 食品接觸安全認證。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金 Logo、QR Code、會員 QR、優惠券編號。免費封面設計與結構建議。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Waterproof PVC Menus for Restaurants and Cafes</h3>
 <p>ZprintPro PVC Menus are designed for establishments requiring durable, easy-to-clean menus. Made from 0.5mm–1.0mm clear or white PVC film, these menus are waterproof, oil-resistant, and abrasion-resistant, making them ideal for cafes, fast-food restaurants, food stalls, and outdoor dining areas. Choose from single or double-sided printing with rounded or square corners to suit your needs.</p>
@@ -12507,13 +12507,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding.</p></details>`,
     longDescriptionJa: `PVCメニューをZprintProでご注文。0.5-1.0mm透明または白色PVCフィルム+4色UV印刷で防水・耐油・耐摩耗・湿布で拭き取り可能。茶餐廳・ファストフード・屋台・屋外飲食様に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【防水防油】覆膜或PVC材質，適合餐飲環境',
@@ -12610,18 +12610,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 67 間香港餐廳、18 間米芝蓮餐廳、9 間五星級酒店、6 間會所提供餐牌印製服務。50 張起印，48 小時快遞，紙張通過 SGS 食品接觸安全認證。</p>
+<p>智印港已為 67 間香港餐廳、18 間米芝蓮餐廳、9 間五星級酒店、6 間會所提供餐牌印製服務。50 張起印，48 小時快遞，紙張通過 SGS 食品接觸安全認證。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金 Logo、QR Code、會員 QR、優惠券編號。免費封面設計與結構建議。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Durable Laminated Menus for Restaurants</h3>
 <p>ZprintPro Laminated Menus are perfect for restaurants and bars that need a cost-effective, durable solution. Made from 200g–250g glossy or matte paper with 4-color printing, these menus are laminated with a matte or gloss finish to provide water and oil resistance. The laminated surface is also wipeable with a damp cloth, ensuring your menus stay in pristine condition.</p>
@@ -12679,13 +12679,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding.</p></details>`,
     longDescriptionJa: `ラミネートメニューをZprintProでご注文。200g-250gコート紙またはマット紙+4色印刷+マットまたはグロスラミネート。防水・耐油で均一なラミネート層が印刷面を摩耗から保護。中華料理店・西洋料理店・カフェ・バー様に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【防水防油】覆膜或PVC材質，適合餐飲環境',
@@ -12803,18 +12803,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 67 間香港餐廳、18 間米芝蓮餐廳、9 間五星級酒店、6 間會所提供餐牌印製服務。50 張起印，48 小時快遞，紙張通過 SGS 食品接觸安全認證。</p>
+<p>智印港已為 67 間香港餐廳、18 間米芝蓮餐廳、9 間五星級酒店、6 間會所提供餐牌印製服務。50 張起印，48 小時快遞，紙張通過 SGS 食品接觸安全認證。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金 Logo、QR Code、會員 QR、優惠券編號。免費封面設計與結構建議。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Elegant Hardcover Menus for Fine Dining</h3>
 <p>ZprintPro Hardcover Menus are designed for upscale restaurants, hotels, and private kitchens that require a premium, durable menu. These menus feature rigid board covers laminated with glossy or specialty paper, and 200g glossy inner pages. The saddle-stitched or perfect-bound binding ensures longevity, while optional foil stamping or debossing on the cover adds a touch of elegance.</p>
@@ -12872,13 +12872,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding.</p></details>`,
     longDescriptionJa: `ハードカバー精裝メニューをZprintProでご注文。高級レストラン・ホテル・結婚式場・会員製クラブ向けのプレミアムメニュー印刷で、ハードケース表紙+上質紙本文+箔押し・エンボス・スポットUV対応の最高峰仕上げです。フランス料理・日本料理・ホテル・結婚式場・会員製クラブ・BARなど、店舗の世界観をメニューから伝えたい業態に最適です。【構造】ハードケース表紙+本文（上質紙/アート紙/コーティング紙）、製本は無線綴じ/糸綴じから選択、16-64頁まで対応。【プレミアム仕上げ】箔押し（金/銀/銅+特殊箔）、エンボス/デボス、スポットUV/マットPP、表面ラミネート加工でレストラン現場の水濡れ・油汚れにも強く、アルコール消毒にも耐えます。【中身差替】リング式・ポケット式の中綴じオプションで、季節ごとのメニュー差し替えに対応可能、コスト削減にも貢献します。【利用シーン】フランス料理・日本料理（高級仕上げ）、ホテル・結婚式場（フォーマル感）、会員製クラブ・BAR（世界観演出）。【データ入稿】InDesign / Illustrator / PDF対応、寫真は350dpi以上の高解像度でご支給ください。スタッフが入稿時に無料でデータチェックを行います。【納期】5部から対応（単店少部数から、チェーン店一括100部まで対応）、最短10営業日で出荷。100部以上の大量印刷は14-21営業日。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【防水防油】覆膜或PVC材質，適合餐飲環境',
@@ -12997,18 +12997,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 67 間香港餐廳、18 間米芝蓮餐廳、9 間五星級酒店、6 間會所提供餐牌印製服務。50 張起印，48 小時快遞，紙張通過 SGS 食品接觸安全認證。</p>
+<p>智印港已為 67 間香港餐廳、18 間米芝蓮餐廳、9 間五星級酒店、6 間會所提供餐牌印製服務。50 張起印，48 小時快遞，紙張通過 SGS 食品接觸安全認證。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金 Logo、QR Code、會員 QR、優惠券編號。免費封面設計與結構建議。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Versatile Drink Menus for Cafes and Bars</h3>
 <p>ZprintPro Drink Menus are designed for cafes, tea shops, bars, and dessert stores that need a menu that can be both standing and handheld. Made from 200g–250g glossy or synthetic paper with 4-color printing and matte lamination, these menus are water and oil-resistant, making them ideal for environments where spills are common. The menus can be designed in single-page, folded, or stand-up formats, with QR codes linking to online ordering for added convenience.</p>
@@ -13066,13 +13066,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding.</p></details>`,
     longDescriptionJa: `ドリンクメニューをZprintProでご注文。200g-250gコート紙または合成紙+4色印刷+マットラミネートで防水・耐油。単ページ・折りたたみ・スタンド型デザイン可能でオンライン注文QRコードも印刷可能。カフェ・ティーショップ・バー・デザート店様に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【防水防油】覆膜或PVC材質，適合餐飲環境',
@@ -13188,18 +13188,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 67 間香港餐廳、18 間米芝蓮餐廳、9 間五星級酒店、6 間會所提供餐牌印製服務。50 張起印，48 小時快遞，紙張通過 SGS 食品接觸安全認證。</p>
+<p>智印港已為 67 間香港餐廳、18 間米芝蓮餐廳、9 間五星級酒店、6 間會所提供餐牌印製服務。50 張起印，48 小時快遞，紙張通過 SGS 食品接觸安全認證。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金 Logo、QR Code、會員 QR、優惠券編號。免費封面設計與結構建議。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Economical Disposable Menus for Fast Food and Takeaway</h3>
 <p>ZprintPro Disposable Menus are designed for fast-food restaurants, food festivals, temporary stalls, and trial promotions that require a low-cost, lightweight, and disposable solution. Made from 100g–120g book or recycled paper with 4-color digital printing, these menus are perfect for mass distribution of temporary menus, limited-time offers, or event sets.</p>
@@ -13256,13 +13256,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding.</p></details>`,
     longDescriptionJa: `使い捨てメニューをZprintProでご注文。100g-120g書籍紙または再生紙+4色デジタル印刷で低コスト大量配布向け。軽量で使用後に捨てられる。ファストフード・フードフェスティバル・仮設屋台・試験販売様に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【防水防油】覆膜或PVC材質，適合餐飲環境',
@@ -13379,18 +13379,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 23 間香港參展商、14 間連鎖零售品牌、19 間商場、11 間零售品牌、6 間活動策劃公司提供噴繪印製服務。1 個起印，48 小時快遞，紙材通過 SGS 防水認證。</p>
+<p>智印港已為 23 間香港參展商、14 間連鎖零售品牌、19 間商場、11 間零售品牌、6 間活動策劃公司提供噴繪印製服務。1 個起印，48 小時快遞，紙材通過 SGS 防水認證。</p>
 
 <h3>可選加值服務</h3>
 <p>可異形模切、鏤空設計，貼於金屬欄或木板。曲面或粗糙牆建議打樣小條測試。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Large-Format Outdoor Vinyl Banners for Robust Branding</h3>
 <p>ZprintPro's outdoor vinyl banners are designed for businesses and organizations seeking durable, weather-resistant signage. Ideal for construction sites, event backdrops, and exterior promotions, these banners are crafted from high-grade frontlit or backlit flex materials and printed with solvent, eco-solvent, or UV-cured inks to ensure waterproofing and UV stability. With welded hems and grommet grids, our banners withstand coastal winds and high UV exposure, making them perfect for long-term outdoor use.</p>
@@ -13454,13 +13454,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>How do you ensure quality?</strong></summary><p>ZprintPro maintains FSC certification, ISO 9001 manufacturing standards, and ISO 12647 color management for consistent, high-quality output.</p></details>`,
     longDescriptionJa: `屋外大型バナーをZprintProでご注文。塩ビターポリン（440g/510g）素材で、防水・耐候性・UVカット加工により、直射日光下でも3年以上の色持ちを実現する大型バナー印刷です。建設現場仮囲い・店舗裝飾・イベント会場・不動産建築囲いなど、屋外B2B用途に最適です。平方フィート単位で算出いたします。【最大サイズ】継ぎ目なしで最大5m×10mまで対応、それ以上のサイズはオーバーラップ接合で納品します。継ぎ目は現場で目立たないように施工できます。【素材選択】厚手塩ビターポリン（440g/510g、標準的な屋外用）、メッシュターポリン（開孔率30-40%、風透過で強風時の負荷軽減、建築現場の仮囲いや台風の影響を受けやすい高所設置に最適）、反射シート（夜間の視認性向上）。【印刷方式】UVカット大型インクジェット+顔料インク使用、飽和した色彩再現。塩ビ素材自体が防水・防カビ・耐候性に優れています。【ハトメ加工】標準料金に4隅+中央2点、合計6点のハトメ加工を含みます。追加や位置変更も無料で対応可能、ロープ・紐は別途ご用意ください。【納期】データ確定後、最短5営業日で出荷。10平方フィート以上の大型印刷は7-10営業日。北海道・沖縄はさらに1-2日かかります。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '大幅面無縫或低縫拼接',
@@ -13556,18 +13556,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 23 間香港參展商、14 間連鎖零售品牌、19 間商場、11 間零售品牌、6 間活動策劃公司提供噴繪印製服務。1 個起印，48 小時快遞，紙材通過 SGS 防水認證。</p>
+<p>智印港已為 23 間香港參展商、14 間連鎖零售品牌、19 間商場、11 間零售品牌、6 間活動策劃公司提供噴繪印製服務。1 個起印，48 小時快遞，紙材通過 SGS 防水認證。</p>
 
 <h3>可選加值服務</h3>
 <p>可異形模切、鏤空設計，貼於金屬欄或木板。曲面或粗糙牆建議打樣小條測試。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Portable Roll-up Banners for Professional Displays</h3>
 <p>ZprintPro's roll-up banners are designed for businesses and professionals who need a portable, easy-to-set-up display solution. Ideal for exhibitions, trade shows, and retail promotions, these banners feature spring-rolled graphics and lightweight aluminum or hybrid stands for quick, one-person setup. The anti-glare PET/PVC or curl-resistant synthetic materials ensure clear, vibrant visuals, while weighted foot bars provide stability.</p>
@@ -13634,13 +13634,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 
 運営会社：深圳市彩龙印刷包裝有限公司（中国・深圳本社）。所在地：広東省深圳市龍崗区平湖街道嘉城路1号（〒518111）。受付時間：平日 9:00-18:00（日本時間）。特定商取引法に基づく表記・プライバシーポリシー・利用規約・お問い合わせの全リンクをフッターに掲載。今すぐご注文、無料見積もり、サンプル請求はこちらから。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '單人快裝快收，便於攜帶',
@@ -13756,18 +13756,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 23 間香港參展商、14 間連鎖零售品牌、19 間商場、11 間零售品牌、6 間活動策劃公司提供噴繪印製服務。1 個起印，48 小時快遞，紙材通過 SGS 防水認證。</p>
+<p>智印港已為 23 間香港參展商、14 間連鎖零售品牌、19 間商場、11 間零售品牌、6 間活動策劃公司提供噴繪印製服務。1 個起印，48 小時快遞，紙材通過 SGS 防水認證。</p>
 
 <h3>可選加值服務</h3>
 <p>可異形模切、鏤空設計，貼於金屬欄或木板。曲面或粗糙牆建議打樣小條測試。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Self-Adhesive Banners for Versatile Applications</h3>
 <p>ZprintPro's adhesive banners are designed for businesses and organizations seeking a versatile, easy-to-apply signage solution. Ideal for wall graphics, window displays, and temporary decor, these banners feature self-adhesive vinyl that can be applied directly to walls, glass, and other smooth surfaces. The removable gray glue and air-egress liners ensure easy application and removal without damaging surfaces.</p>
@@ -13824,13 +13824,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <p>ZprintPro ensures top-notch quality with FSC-certified materials and ISO 9001 manufacturing standards. Our ISO 12647 color management guarantees precise color reproduction. We offer DHL Express global shipping with a 2-4 day delivery timeframe. Get an instant AI quote in 30 seconds and experience our commitment to quality and customer satisfaction.</p>`,
     longDescriptionJa: `粘着大判をZprintProでご注文。カッティングシート/グレー再剥離/透明/エアリリース等でショーウィンドウ全面や壁面ヒーローを短工期で施工。下地清浄度と糊種を確認。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '多種膠性：永久、可移、透明',
@@ -13947,18 +13947,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 23 間香港參展商、14 間連鎖零售品牌、19 間商場、11 間零售品牌、6 間活動策劃公司提供噴繪印製服務。1 個起印，48 小時快遞，紙材通過 SGS 防水認證。</p>
+<p>智印港已為 23 間香港參展商、14 間連鎖零售品牌、19 間商場、11 間零售品牌、6 間活動策劃公司提供噴繪印製服務。1 個起印，48 小時快遞，紙材通過 SGS 防水認證。</p>
 
 <h3>可選加值服務</h3>
 <p>可異形模切、鏤空設計，貼於金屬欄或木板。曲面或粗糙牆建議打樣小條測試。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Premium Vehicle Wraps for Lasting Impressions</h3>
 <p>ZprintPro's vehicle wraps are designed for businesses and individuals seeking a durable, high-impact branding solution. Ideal for cars, trucks, buses, and other vehicles, these wraps use cast-grade polymer PVC vinyl with air-release channels and removable adhesive that conforms tightly to vehicle curves without leaving residue or damaging the factory paint upon removal. The UV-cured or eco-solvent inks provide 2-3 years of outdoor weather resistance against UV and acid rain.</p>
@@ -14015,13 +14015,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <p>ZprintPro ensures top-notch quality with FSC-certified materials and ISO 9001 manufacturing standards. Our ISO 12647 color management guarantees precise color reproduction. We offer DHL Express global shipping with a 2-4 day delivery timeframe. Get an instant AI quote in 30 seconds and experience our commitment to quality and customer satisfaction.</p>`,
     longDescriptionJa: `車ラッピングをZprintProでご注文。キャストグレード高分子PVCビニール+エアリリース溝+再剥離粘着剤で車体曲面に密着。フルラッピング・部分デカール・リアウィンドウ単透貼の3プラン。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【鑄造級 PVC】80–100 微米，柔韌貼合車身曲面',
@@ -14137,18 +14137,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 23 間香港參展商、14 間連鎖零售品牌、19 間商場、11 間零售品牌、6 間活動策劃公司提供噴繪印製服務。1 個起印，48 小時快遞，紙材通過 SGS 防水認證。</p>
+<p>智印港已為 23 間香港參展商、14 間連鎖零售品牌、19 間商場、11 間零售品牌、6 間活動策劃公司提供噴繪印製服務。1 個起印，48 小時快遞，紙材通過 SGS 防水認證。</p>
 
 <h3>可選加值服務</h3>
 <p>可異形模切、鏤空設計，貼於金屬欄或木板。曲面或粗糙牆建議打樣小條測試。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Lightweight Mesh Banners for Large Outdoor Advertising</h3>
 <p>ZprintPro's mesh banners are designed for businesses and organizations seeking a lightweight, air-permeable signage solution. Ideal for large outdoor advertising, building facades, and stadium fencing, these banners use 270g-350g PVC mesh with a 30%-40% perforation ratio, combining light and air permeability with graphic integrity. The UV-cured inks provide 2-3 years of outdoor durability, and the heat-sealed reinforced edges with brass grommets and tie ropes ensure long-term hanging without tearing.</p>
@@ -14205,13 +14205,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <p>ZprintPro ensures top-notch quality with FSC-certified materials and ISO 9001 manufacturing standards. Our ISO 12647 color management guarantees precise color reproduction. We offer DHL Express global shipping with a 2-4 day delivery timeframe. Get an instant AI quote in 30 seconds and experience our commitment to quality and customer satisfaction.</p>`,
     longDescriptionJa: `メッシュバナーをZprintProでご注文。270g-350g PVCメッシュスクリム+開孔率30-40%で透光性・通風性・画面完全性を両立。風阻60%以上低減で建築囲板・競技場フェンスに最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【270g–350g 網格布】網孔率 30%–40%，透光透風',
@@ -14328,12 +14328,12 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 23 間香港機構印製年度報告與企業刊物、27 間時尚品牌年度產品目錄、4 間美妝品牌、9 間連鎖餐廳。50 本起印，48 小時快遞，紙材符合 ISO 12647-2 印刷色彩標準。</p>
+<p>智印港已為 23 間香港機構印製年度報告與企業刊物、27 間時尚品牌年度產品目錄、4 間美妝品牌、9 間連鎖餐廳。50 本起印，48 小時快遞，紙材符合 ISO 12647-2 印刷色彩標準。</p>
 
 <h3>可選加值服務</h3>
 <p>可加書脊絲帶、燙金書名、UV 圖案、ISBN 條碼、版權頁。免費排版與出血檢查。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 
 
 <h3>適配行業 (Best For)</h3>
@@ -14346,11 +14346,11 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>餐飲品牌</strong> — 菜單畫冊、品牌故事書、烘焙產品集</li>
 </ul>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Premium Catalog Printing for Global Brands</h3>
 <p>ZprintPro catalog printing services are designed for businesses looking to showcase their products or services with high color accuracy and professional presentation. Ideal for product catalogs, annual reports, and promotional materials, our catalogs are printed on 157g–200g glossy or matte paper with 4-color offset printing. Covers are available in 200g–250g glossy with options for lamination or foil stamping. Choose from saddle-stitching for thinner catalogs or perfect binding for thicker publications.</p>
@@ -14417,7 +14417,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 `,
     longDescriptionJa: `高級カタログ・画冊をZprintProでご注文。アート紙・上質紙・寫真用紙対応で、寫真再現と高級感・ブランドの世界観を両立したプレミアムカタログ印刷です。アパレル・化粧品・不動産・美術館・ギャラリーなど、ブランドの世界観をカタログで伝えたい企業に最適です。【用紙選択】寫真再現重視（寫真用紙・コート紙157g+光沢PPラミネート）、高級感重視（アート紙180g+マットPP）、エコ重視（FSC認証紙）から選択。【製本方式】中綴じ（8-64頁、開いた時に見栄え◎、薄い冊子向け）、無線綴じ（64-400頁、長期保存・耐久性◎、厚い冊子向け）、ハードカバー（プレミアム仕上げ）の3方式。【表面仕上げ】箔押し（金/銀/銅）、エンボス/デボス（凹凸ロゴ）、スポットUV（部分的光沢）、マットPP/光沢PP ラミネート加工。【利用シーン】アパレル・ファッションブランド（商品カタログ）、化粧品・美容ブランド（新作発表資料）、不動産・物件資料、美術館・作品集、企業年報。【データ入稿】寫真は350dpi以上のCMYKモード TIFF/PSD/高解像度PDFでご支給ください。RGBモードの場合、スタッフが入稿時にRGB→CMYK変換を行います。【色校正】本機色校正（有償）で実物の色を確認可能、色再現にご不安がある場合も安心です。【納期】10冊から対応、最短7営業日で出荷。100冊以上の大量印刷は10-14営業日。特殊加工（箔押し・エンボス等）が含まれる場合はさらに2-3日かかる場合がございます。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 
 
 <h3>適用業界・利用シーン</h3>
@@ -14430,11 +14430,11 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>飲食ブランド</strong> — メニューブック、ブランドストーリー、焼き菓子商品集</li>
 </ul>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【157g–200g銅版紙或啞粉紙】內頁挺度佳，圖文清晰',
@@ -14533,12 +14533,12 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 23 間香港機構印製年度報告與企業刊物、27 間時尚品牌年度產品目錄、4 間美妝品牌、9 間連鎖餐廳。50 本起印，48 小時快遞，紙材符合 ISO 12647-2 印刷色彩標準。</p>
+<p>智印港已為 23 間香港機構印製年度報告與企業刊物、27 間時尚品牌年度產品目錄、4 間美妝品牌、9 間連鎖餐廳。50 本起印，48 小時快遞，紙材符合 ISO 12647-2 印刷色彩標準。</p>
 
 <h3>可選加值服務</h3>
 <p>可加書脊絲帶、燙金書名、UV 圖案、ISBN 條碼、版權頁。免費排版與出血檢查。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 
 
 <h3>適配行業 (Best For)</h3>
@@ -14551,11 +14551,11 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>培訓教材</strong> — 補習社教材、培訓機構手冊、研討會場刊</li>
 </ul>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Affordable Booklet Printing for Marketing and Events</h3>
 <p>ZprintPro Saddle Stitch Booklets are designed for businesses and organizations needing cost-effective, professional booklets for marketing materials, event programs, and product guides. Using 128g-157g glossy or book paper, these booklets offer smooth page turning and vibrant color reproduction at an economical price point. Ideal for thin publications ranging from 8 to 64 pages.</p>
@@ -14628,7 +14628,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 
 運営会社：深圳市彩龙印刷包裝有限公司（中国・深圳本社）。所在地：広東省深圳市龍崗区平湖街道嘉城路1号（〒518111）。受付時間：平日 9:00-18:00（日本時間）。送料：¥10,000以上のご注文で全国送料無料、特定商取引法に基づく表記・プライバシーポリシー・利用規約・お問い合わせの全リンクをフッターに掲載。今すぐご注文、無料見積もり、サンプル請求はこちらから。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 
 
 <h3>適用業界・利用シーン</h3>
@@ -14641,11 +14641,11 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>研修教材</strong> — 予備校教材、研修機関ハンドブック、セミナー資料</li>
 </ul>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【157g–200g銅版紙或啞粉紙】內頁挺度佳，圖文清晰',
@@ -14762,12 +14762,12 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 23 間香港機構印製年度報告與企業刊物、27 間時尚品牌年度產品目錄、4 間美妝品牌、9 間連鎖餐廳。50 本起印，48 小時快遞，紙材符合 ISO 12647-2 印刷色彩標準。</p>
+<p>智印港已為 23 間香港機構印製年度報告與企業刊物、27 間時尚品牌年度產品目錄、4 間美妝品牌、9 間連鎖餐廳。50 本起印，48 小時快遞，紙材符合 ISO 12647-2 印刷色彩標準。</p>
 
 <h3>可選加值服務</h3>
 <p>可加書脊絲帶、燙金書名、UV 圖案、ISBN 條碼、版權頁。免費排版與出血檢查。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 
 
 <h3>適配行業 (Best For)</h3>
@@ -14780,11 +14780,11 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>政策研究報告</strong> — 智庫報告、政府白皮書、行業研究</li>
 </ul>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Professional Book Printing for High-Quality Publications</h3>
 <p>ZprintPro Perfect Bound Books are ideal for businesses and publishers seeking durable, high-quality books and magazines with a flat spine that can display the book title. Using 157g-200g glossy or matte inner pages and 200g-250g glossy laminated covers, these books offer a premium finish and sturdy binding, perfect for magazines, annual reports, portfolios, and textbooks with 48 or more pages.</p>
@@ -14847,7 +14847,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 `,
     longDescriptionJa: `無線綴じ本をZprintProでご注文。157g-200gコート紙またはマット紙内页+200g-250gラミネート表紙+無線綴じで平らで丈夫な背表紙。雑誌・年報・ポートフォリオ・教材様に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 
 
 <h3>適用業界・利用シーン</h3>
@@ -14860,11 +14860,11 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>政策研究</strong> — シンクタンクレポート、政府白書、業界研究</li>
 </ul>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【157g–200g銅版紙或啞粉紙】內頁挺度佳，圖文清晰',
@@ -14984,12 +14984,12 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 23 間香港機構印製年度報告與企業刊物、27 間時尚品牌年度產品目錄、4 間美妝品牌、9 間連鎖餐廳。50 本起印，48 小時快遞，紙材符合 ISO 12647-2 印刷色彩標準。</p>
+<p>智印港已為 23 間香港機構印製年度報告與企業刊物、27 間時尚品牌年度產品目錄、4 間美妝品牌、9 間連鎖餐廳。50 本起印，48 小時快遞，紙材符合 ISO 12647-2 印刷色彩標準。</p>
 
 <h3>可選加值服務</h3>
 <p>可加書脊絲帶、燙金書名、UV 圖案、ISBN 條碼、版權頁。免費排版與出血檢查。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 
 
 <h3>適配行業 (Best For)</h3>
@@ -15002,11 +15002,11 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>珍藏出版</strong> — 限量版藝術書、博物館展覽圖錄、珍藏版</li>
 </ul>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Luxurious Hardcover Book Printing for Collectors and Premium Publications</h3>
 <p>ZprintPro Hardcover Books are designed for businesses and individuals seeking a premium, durable finish for art books, commemorative albums, deluxe editions, and corporate yearbooks. Using rigid board covers laminated with glossy or specialty paper, and 157g-200g glossy inner pages with perfect binding, these hardcover books offer a luxurious feel and long-lasting durability.</p>
@@ -15069,7 +15069,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 `,
     longDescriptionJa: `ハードカバー精裝書籍をZprintProでご注文。プレミアム仕上げの精裝本は、上質紙90g本文＋ハードケース表紙で、長期保存・高級感を両立した印刷物です。1部からご注文いただける少部数対応で、コミケ・卒業アルバムなど個人ユースから、企業記念誌・年鑑・カタログまで対応可能です。【製本方式】無線綴じ（64-400頁向け、PUR接着剤で丈夫で長期保存向き）・糸綴じ（16-200頁向け、上品で開いた時の見栄え◎、高級書籍推奨）・PUR製本の3方式から選択可能。【表紙仕上げ】箔押し（金・銀・銅 3 色標準対応、青箔・赤箔・ホログラム箔も別途対応）、エンボス/デボス、スポットUV（部分的光沢）、マットPP/光沢PP ラミネート加工。【本文用紙】上質紙90g、書籍用紙、高級アート紙から選択、寫真集や作品集には寫真用紙（半光沢）も対応。【利用シーン】卒業アルバム（10冊～）、企業記念誌（50冊～）、商品カタログ（100冊～）、年鑑、寫真集、社史、研究報告書など。【データ入稿】InDesign / Illustrator / PDF対応。入稿データをスタッフが無料でチェックし、必要に応じてRGB→CMYK変換を行います。【色校正】本機色校正（有償）とデジタル色校正（無償）から選択可能、色再現にご不安がある場合も安心です。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短7営業日で全国へお届け、国内検品体製・日本語サポート対応。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 
 
 <h3>適用業界・利用シーン</h3>
@@ -15082,11 +15082,11 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>愛蔵版出版</strong> — 限定版アートブック、博物館展覧会カタログ、プレミアム記念品</li>
 </ul>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【157g–200g銅版紙或啞粉紙】內頁挺度佳，圖文清晰',
@@ -15199,12 +15199,12 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 23 間香港機構印製年度報告與企業刊物、27 間時尚品牌年度產品目錄、4 間美妝品牌、9 間連鎖餐廳。50 本起印，48 小時快遞，紙材符合 ISO 12647-2 印刷色彩標準。</p>
+<p>智印港已為 23 間香港機構印製年度報告與企業刊物、27 間時尚品牌年度產品目錄、4 間美妝品牌、9 間連鎖餐廳。50 本起印，48 小時快遞，紙材符合 ISO 12647-2 印刷色彩標準。</p>
 
 <h3>可選加值服務</h3>
 <p>可加書脊絲帶、燙金書名、UV 圖案、ISBN 條碼、版權頁。免費排版與出血檢查。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 
 
 <h3>適配行業 (Best For)</h3>
@@ -15217,11 +15217,11 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>文創品牌</strong> — 插畫師聯名、IP 周邊筆記本、設計師系列</li>
 </ul>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Functional Spiral Notebook Printing for Everyday Use</h3>
 <p>ZprintPro Spiral Notebooks are perfect for businesses, schools, and individuals needing practical, durable notebooks for everyday use. Using 80g-100g book or wood-free paper and YO-ring or metal spiral binding, these notebooks open flat to 180 degrees, providing a comfortable writing experience. The 200g glossy laminated or clear PP covers offer protection and a sleek look.</p>
@@ -15284,7 +15284,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 `,
     longDescriptionJa: `リングノートをZprintProでご注文。80g-100g書籍紙または上質紙+YOリングまたは金属スパイラル綴じで180度開いて書ける。表紙200gコート紙のラミネートまたは透明PP。學生ノート・会議議事録・ワークプランナー様に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 
 
 <h3>適用業界・利用シーン</h3>
@@ -15297,11 +15297,11 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>クリエイティブブランド</strong> — イラストレーターコラボ、IP 周边ノート、デザイナーシリーズ</li>
 </ul>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【157g–200g銅版紙或啞粉紙】內頁挺度佳，圖文清晰',
@@ -15422,18 +15422,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 53 間香港企業、29 間律師樓、18 間會計師事務所、23 間婚禮策劃公司、14 間五星級酒店、9 間金融機構提供公司信封印製服務。100 個起印，48 小時快遞，紙材通過 FSC 環保認證。</p>
+<p>智印港已為 53 間香港企業、29 間律師樓、18 間會計師事務所、23 間婚禮策劃公司、14 間五星級酒店、9 間金融機構提供公司信封印製服務。100 個起印，48 小時快遞，紙材通過 FSC 環保認證。</p>
 
 <h3>可選加值服務</h3>
 <p>可加內部保密處理、條碼、流水號、保密條碼與流水號。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Professional Business Envelopes for Corporate Correspondence</h3>
 <p>ZprintPro business envelopes are designed for companies that prioritize a polished and professional image. Ideal for mailing statements, quotes, legal notices, and daily correspondence, these envelopes ensure your brand makes a strong first impression. Choose from a variety of paper stocks, including bright or natural bond, with options for one-color corporate logos or full four-color branding. Optional windows are available for easy viewing of addresses when using matching letterheads.</p>
@@ -15494,13 +15494,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>How do you ensure quality?</strong></summary><p>Our ISO 9001 certification and ISO 12647 color management ensure consistent, high-quality results. We offer free sample proofing before production.</p></details>`,
     longDescriptionJa: `ビジネス封筒をZprintProでご注文。高白/生成ブック+1色～4色印刷+窓付きで書簡照合可能。請求・見積・法務文書用に最適。フラップ形状を挿入機に合わせる必要あり。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       'Logo、地址、合規字樣一體排版',
@@ -15596,18 +15596,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 53 間香港企業、29 間律師樓、18 間會計師事務所、23 間婚禮策劃公司、14 間五星級酒店、9 間金融機構提供公司信封印製服務。100 個起印，48 小時快遞，紙材通過 FSC 環保認證。</p>
+<p>智印港已為 53 間香港企業、29 間律師樓、18 間會計師事務所、23 間婚禮策劃公司、14 間五星級酒店、9 間金融機構提供公司信封印製服務。100 個起印，48 小時快遞，紙材通過 FSC 環保認證。</p>
 
 <h3>可選加值服務</h3>
 <p>可加內部保密處理、條碼、流水號、保密條碼與流水號。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Colored Envelopes for Vibrant Invitations and Greetings</h3>
 <p>ZprintPro's colored envelopes are designed for businesses and individuals seeking to make a strong visual impact. Whether for wedding invitations, corporate announcements, or personalized greeting cards, our envelopes use vibrant four-color or Pantone printing to ensure your message stands out. Choose from a variety of tinted stocks with knockout designs or light bases with full bleed printing. Our peel-and-seal options provide convenience and speed for mass mailings.</p>
@@ -15666,13 +15666,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>What materials and finishes do you offer?</strong></summary><p>Materials include coated paper, matte paper, cotton paper, kraft paper, PET, PVC, and more. Finishes: 4-color CMYK offset printing, foil stamping, spot UV, embossing, die-cutting, rounded corners, saddle stitch, perfect binding, PUR binding. Free...</p></details>`,
     longDescriptionJa: `箔押し招待状・カラー封筒をZprintProでご注文。金箔・銀箔・銅箔対応の招待状・表彰状・株主総会招集通知向けに最適なプレミアム封筒印刷です。結婚式披露宴・表彰式・株主総会・VIP案内状に最適です。【素材】特殊紙（和紙風/クラフト/ペルーラ/ケント紙）、カラー封筒はオフセット4色/特色印刷対応。【サイズ】長3・角2・洋長3・洋2・カスタムサイズまで対応、招待状カード・席次表・返信ハガキとの一括ご注文でセット割引あり。【箔押し】金箔/銀箔/銅箔/黒箔、部分箔押しで宛名・ロゴ・紋章を強調できます。箔押しとカラー印刷の同時施工に対応。【宛名印刷】Excelリストをご支給いただければ、印刷・封入まで一括対応可能（有償）。大量の宛名印刷も効率的に処理できます。【利用シーン】結婚式披露宴50-200組規模、表彰状100-500枚規模、株主総会招集通知、VIP案内状、イベント案内。【データ入稿】Illustrator / PDF対応、入稿前にスタッフが無料でデータチェックを行います。【納期】データ確定後、最短5営業日で出荷。500枚以上の大量発注や宛名印刷込みは7-10営業日。ご興味の方はサンプル請求（無料）または詳細をご覧ください。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '四色／專色還原插畫與品牌色',
@@ -15791,18 +15791,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 53 間香港企業、29 間律師樓、18 間會計師事務所、23 間婚禮策劃公司、14 間五星級酒店、9 間金融機構提供公司信封印製服務。100 個起印，48 小時快遞，紙材通過 FSC 環保認證。</p>
+<p>智印港已為 53 間香港企業、29 間律師樓、18 間會計師事務所、23 間婚禮策劃公司、14 間五星級酒店、9 間金融機構提供公司信封印製服務。100 個起印，48 小時快遞，紙材通過 FSC 環保認證。</p>
 
 <h3>可選加值服務</h3>
 <p>可加內部保密處理、條碼、流水號、保密條碼與流水號。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Professional Large Envelope Printing for Official Documents</h3>
 <p>ZprintPro Large Envelopes are designed for businesses and organizations needing to send official documents, contracts, and tenders that must remain uncreased. Made from 100-120gsm bond paper, these envelopes provide the necessary stiffness to prevent bursting at the corners. Choose between permanent gum or peel-and-seal tear strips for secure and archival-friendly opening.</p>
@@ -15854,13 +15854,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <p>ZprintPro is committed to quality and compliance, using FSC-certified paper and adhering to ISO 9001 standards. Our Asia production facility ensures fast turnaround times, with DHL Express global shipping delivering your large envelopes in 2-4 days. Get an instant 30-second AI quote with no signup required.`,
     longDescriptionJa: `大判封筒をZprintProでご注文。C4等の100-120gでコシを確保+A4を折らずに入れられる。永久糊または剥離式で開封性向上。契約・入札・成績書用に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '可平放 A4，減少折痕',
@@ -15979,18 +15979,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 53 間香港企業、29 間律師樓、18 間會計師事務所、23 間婚禮策劃公司、14 間五星級酒店、9 間金融機構提供公司信封印製服務。100 個起印，48 小時快遞，紙材通過 FSC 環保認證。</p>
+<p>智印港已為 53 間香港企業、29 間律師樓、18 間會計師事務所、23 間婚禮策劃公司、14 間五星級酒店、9 間金融機構提供公司信封印製服務。100 個起印，48 小時快遞，紙材通過 FSC 環保認證。</p>
 
 <h3>可選加值服務</h3>
 <p>可加內部保密處理、條碼、流水號、保密條碼與流水號。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Luxurious Pearl Envelope Printing for Special Occasions</h3>
 <p>ZprintPro Pearl Envelopes are designed for businesses and individuals seeking a premium, shimmering finish for wedding invitations, high-end event invitations, and VIP voucher sleeves. The pearl paper provides a luxurious feel and a subtle, elegant sheen that catches the light, making your invitations and invitations stand out.</p>
@@ -16042,13 +16042,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <p>ZprintPro is committed to quality and compliance, using FSC-certified paper and adhering to ISO 9001 standards. Our Asia production facility ensures fast turnaround times, with DHL Express global shipping delivering your pearl envelopes in 2-4 days. Get an instant 30-second AI quote with no signup required.`,
     longDescriptionJa: `パール封筒をZprintProでご注文。微細な輝きで高級感を演出する特殊紙。結婚招待・発表会返信・VIP券封様に最適。細い箔枠やエンボスと相性良好。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '珠光質感，禮儀場景吸睛',
@@ -16167,12 +16167,12 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 37 間香港中小學與 19 間連鎖補習社、9 間補習社與 3 間連鎖教科書商、47 間中小學、6 間大學、3 間專業學會、12 間企業培訓機構提供學年教材印製服務。50-200 本起印，48 小時快遞，紙材選用 FSC 認證環保紙。</p>
+<p>智印港已為 37 間香港中小學與 19 間連鎖補習社、9 間補習社與 3 間連鎖教科書商、47 間中小學、6 間大學、3 間專業學會、12 間企業培訓機構提供學年教材印製服務。50-200 本起印，48 小時快遞，紙材選用 FSC 認證環保紙。</p>
 
 <h3>可選加值服務</h3>
 <p>可加印 ISBN 國際標準書號條碼、版權頁、版權聲明、學校 Logo、班級名稱、科目、學年。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 
 
 <h3>適配行業 (Best For)</h3>
@@ -16185,11 +16185,11 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>家長會 / PTA</strong> — 親子作業本、暑期練習、家庭學習包</li>
 </ul>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Customizable Exercise Books for Schools</h3>
 <p>ZprintPro Exercise Books are designed for educational institutions, offering customizable cover and inner page formats. These books are perfect for daily student use, featuring smooth writing surfaces and no ink bleed. Choose from ruled, grid, or blank inner pages to suit various subjects and teaching styles.</p>
@@ -16258,7 +16258,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 `,
     longDescriptionJa: `練習帳をZprintProでご注文。80g-100g書籍紙または上質紙+4色印刷表紙+中綴じ。内页は横線・方眼・白紙から選択、書き心地が良くにじまない。學校・塾・學生の日常使用様に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 
 
 <h3>適用業界・利用シーン</h3>
@@ -16271,11 +16271,11 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>PTA・保護者会</strong> — 親子ワークブック、夏休み練習、家庭學習パック</li>
 </ul>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【80g–100g書紙或道林紙】書寫流暢，不滲墨',
@@ -16372,12 +16372,12 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 37 間香港中小學與 19 間連鎖補習社、9 間補習社與 3 間連鎖教科書商、47 間中小學、6 間大學、3 間專業學會、12 間企業培訓機構提供學年教材印製服務。50-200 本起印，48 小時快遞，紙材選用 FSC 認證環保紙。</p>
+<p>智印港已為 37 間香港中小學與 19 間連鎖補習社、9 間補習社與 3 間連鎖教科書商、47 間中小學、6 間大學、3 間專業學會、12 間企業培訓機構提供學年教材印製服務。50-200 本起印，48 小時快遞，紙材選用 FSC 認證環保紙。</p>
 
 <h3>可選加值服務</h3>
 <p>可加印 ISBN 國際標準書號條碼、版權頁、版權聲明、學校 Logo、班級名稱、科目、學年。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 
 
 <h3>適配行業 (Best For)</h3>
@@ -16390,11 +16390,11 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>競賽頒獎</strong> — 學科比賽獎狀、運動會獎牌證書、才藝比賽獎</li>
 </ul>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Premium Certificates with Anti-Counterfeiting Features</h3>
 <p>ZprintPro Certificates are designed for diplomas, honors, certifications, and corporate awards. These certificates are printed on 200g–250g cream or white watermarked or cotton paper, providing a premium texture and strong anti-counterfeiting properties. Foil stamping and embossing options add a touch of elegance and authenticity.</p>
@@ -16463,7 +16463,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 `,
     longDescriptionJa: `証書をZprintProでご注文。200g-250gクリームまたは白色透かし紙またはコットン紙+4色印刷+箔押しで高級感のある質感と強い偽造防止性。卒業証書・栄誉証書・資格認定・企業表彰様に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 
 
 <h3>適用業界・利用シーン</h3>
@@ -16476,11 +16476,11 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>コンクール表彰</strong> — 學科コンテスト賞状、運動会表彰、才能コンテスト賞</li>
 </ul>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【80g–100g書紙或道林紙】書寫流暢，不滲墨',
@@ -16601,12 +16601,12 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 37 間香港中小學與 19 間連鎖補習社、9 間補習社與 3 間連鎖教科書商、47 間中小學、6 間大學、3 間專業學會、12 間企業培訓機構提供學年教材印製服務。50-200 本起印，48 小時快遞，紙材選用 FSC 認證環保紙。</p>
+<p>智印港已為 37 間香港中小學與 19 間連鎖補習社、9 間補習社與 3 間連鎖教科書商、47 間中小學、6 間大學、3 間專業學會、12 間企業培訓機構提供學年教材印製服務。50-200 本起印，48 小時快遞，紙材選用 FSC 認證環保紙。</p>
 
 <h3>可選加值服務</h3>
 <p>可加印 ISBN 國際標準書號條碼、版權頁、版權聲明、學校 Logo、班級名稱、科目、學年。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 
 
 <h3>適配行業 (Best For)</h3>
@@ -16619,11 +16619,11 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>補習社推廣</strong> — 暑期班報名、新課程發佈、體驗課邀請</li>
 </ul>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>School Flyers for Effective Communication</h3>
 <p>ZprintPro's school flyers are designed to meet the needs of educational institutions for promotional and informational materials. Whether it's for school enrollment, event promotion, course introductions, or parent meeting notices, our flyers are printed on 128g–157g glossy or book paper using vibrant 4-color digital printing. The single or double-sided options, along with the ability to include QR codes, make these flyers a versatile tool for schools to connect with their community.</p>
@@ -16692,7 +16692,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 `,
     longDescriptionJa: `學校チラシをZprintProでご注文。128g-157gコート紙または書籍紙+4色デジタル印刷で経済的かつ鮮やか。學校募集・コース紹介・保護者会のお知らせ・登録システムQRコード様に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 
 
 <h3>適用業界・利用シーン</h3>
@@ -16705,11 +16705,11 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>予備校プロモーション</strong> — 夏期講習申込、新講座発表、体験授業案内</li>
 </ul>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【80g–100g書紙或道林紙】書寫流暢，不滲墨',
@@ -16799,7 +16799,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     name: '香港教科書印刷 — K12 教科書 / 補習社教材 / 學年教材 / 培訓手冊', nameEn: 'Textbook Printing for K12 Schools, Tutoring Centers & Training Manuals', nameJa: '教科書印刷 — K12 教科書・補習校教材・學年内教材・研修マニュアル', title_zh: '香港教科書印刷 — K12 教科書 / 補習社教材 / 學年教材 / 培訓手冊',
     description: '教科書印刷服務，K12 教科書、補習社教材、學年教材、培訓手冊、練習題庫首選。書紙/道林紙護眼，可加 ISBN/條碼。', descriptionEn: 'Textbook printing service for K12 schools, tutoring centers, grade-level curricula, training manuals, exercise workbooks. Wood-free eye-friendly paper, ISBN/barcode support available.', descriptionJa: '教科書印刷サービス、K12 教科書、補習校教材、學年別教材、研修マニュアル、問題集に最適。目に優しい上質紙、ISBN・バーコード対応。', description_zh: '教科書印刷服務，K12 教科書、補習社教材、學年教材、培訓手冊、練習題庫首選。書紙/道林紙護眼。',
     longDescription: `<h3>紙張材質對比</h3>
-<p>教科書常用 3 種紙材，分別適用不同預算、頁數與閱讀體驗。智印雲 ZprintPro 所有紙張均通過 FSC 森林管理委員會認證。智印雲 ZprintPro 教科書印刷服務亦可依學校 ESG 採購指引，彈性調整紙材結構：</p>
+<p>教科書常用 3 種紙材，分別適用不同預算、頁數與閱讀體驗。智印港 ZprintPro 所有紙張均通過 FSC 森林管理委員會認證。智印港 ZprintPro 教科書印刷服務亦可依學校 ESG 採購指引，彈性調整紙材結構：</p>
 <table>
   <thead>
     <tr><th>紙材</th><th>克重</th><th>特性</th><th>適用場景</th></tr>
@@ -16812,7 +16812,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </table>
 
 <h3>裝訂工藝選擇</h3>
-<p>頁數與用途決定裝訂方式，教科書常見 3 種裝訂工藝。智印雲 ZprintPro 教科書印刷提供以下選項，並附免費樣本對比：</p>
+<p>頁數與用途決定裝訂方式，教科書常見 3 種裝訂工藝。智印港 ZprintPro 教科書印刷提供以下選項，並附免費樣本對比：</p>
 <table>
   <thead>
     <tr><th>裝訂方式</th><th>建議頁數</th><th>耐用度</th><th>適用情境</th></tr>
@@ -16826,15 +16826,15 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 
 <h3>印刷工藝說明</h3>
 <ul>
-  <li><strong>封面四色印刷</strong>：CMYK 全彩，支援照片、漸層、品牌色精準還原，海德堡四色柯式機網點細膩。智印雲 ZprintPro 採用 ISO 12647 色彩管理標準</li>
+  <li><strong>封面四色印刷</strong>：CMYK 全彩，支援照片、漸層、品牌色精準還原，海德堡四色柯式機網點細膩。智印港 ZprintPro 採用 ISO 12647 色彩管理標準</li>
   <li><strong>內頁單色 / 雙色</strong>：黑白主體搭配 1–2 個強調色（藍紅綠常見），可降低成本同時保留視覺重點</li>
   <li><strong>彩色頁穿插</strong>：章節封面、圖解頁可升級彩色印刷，按頁計費靈活配置</li>
   <li><strong>可變數據印刷</strong>：每本可印不同學號／姓名／班別，適用個性化教材、定製年報</li>
-  <li><strong>印前 AI 預檢</strong>：智印雲 ZprintPro 為所有教科書稿件提供免費 AI 文件預檢，自動偵測出血、CMYK 色域、低解析度圖片</li>
+  <li><strong>印前 AI 預檢</strong>：智印港 ZprintPro 為所有教科書稿件提供免費 AI 文件預檢，自動偵測出血、CMYK 色域、低解析度圖片</li>
 </ul>
 
 <h3>封面加值工藝</h3>
-<p>教科書封面可單獨或組合使用以下工藝，提升教材質感與辨識度。智印雲 ZprintPro 教科書印刷免費提供 3 種工藝的紙樣打樣：</p>
+<p>教科書封面可單獨或組合使用以下工藝，提升教材質感與辨識度。智印港 ZprintPro 教科書印刷免費提供 3 種工藝的紙樣打樣：</p>
 <ul>
   <li><strong>燙金 / 燙銀</strong>：標題或 Logo 金屬光澤，適合正規教科書封面</li>
   <li><strong>局部 UV</strong>：圖案加亮光油，與啞面形成對比，吸引目光</li>
@@ -16843,10 +16843,10 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>ISBN 與版權頁支援</h3>
-<p>獨立出版或正式發行可加印 ISBN 國際標準書號條碼、版權頁、版權聲明、CIP 數據。智印雲 ZprintPro 熟悉香港出版流程，可在印前為您核對版權頁格式、ISBN 對位、印刷許可等細節，減少退件重印風險。我們亦協助客戶透過香港出版總會與台灣圖書出版品預行編目（CIP）取得 ISBN 號碼。智印雲 ZprintPro 亦支援國際版權公約標識，助您順利上架國際圖書資料庫。</p>
+<p>獨立出版或正式發行可加印 ISBN 國際標準書號條碼、版權頁、版權聲明、CIP 數據。智印港 ZprintPro 熟悉香港出版流程，可在印前為您核對版權頁格式、ISBN 對位、印刷許可等細節，減少退件重印風險。我們亦協助客戶透過香港出版總會與台灣圖書出版品預行編目（CIP）取得 ISBN 號碼。智印港 ZprintPro 亦支援國際版權公約標識，助您順利上架國際圖書資料庫。</p>
 
 <h3>教育機構專屬排版</h3>
-<p>教科書與教輔材料的排版需符合教學現場的閱讀節奏。智印雲 ZprintPro 提供教育機構專屬排版服務，所有排版工程師均具教育出版背景：</p>
+<p>教科書與教輔材料的排版需符合教學現場的閱讀節奏。智印港 ZprintPro 提供教育機構專屬排版服務，所有排版工程師均具教育出版背景：</p>
 <ul>
   <li>頁碼、章節、習題欄目自動生成</li>
   <li>數學公式、化學結構式精準排版</li>
@@ -16856,7 +16856,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>配送方式與國際物流</h3>
-<p>智印雲 ZprintPro 提供多元配送方式，靈活配合教育機構的檔期需求。智印雲 ZprintPro 教科書印刷客戶可享學校專屬配送協議：</p>
+<p>智印港 ZprintPro 提供多元配送方式，靈活配合教育機構的檔期需求。智印港 ZprintPro 教科書印刷客戶可享學校專屬配送協議：</p>
 <table>
   <thead>
     <tr><th>配送方式</th><th>範圍</th><th>時效</th><th>費用</th></tr>
@@ -16870,7 +16870,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </table>
 
 <h3>已服務的教育機構客戶案例</h3>
-<p>智印雲 ZprintPro 教科書印刷服務已為以下教育機構提供批量印製方案，覆蓋皇牌課程筆記、模擬試卷、自編學材、學校年報、畢業紀念冊等多元場景。智印雲 ZprintPro 累積教科書印量突破 120 萬冊，品質獲多所學校推薦：</p>
+<p>智印港 ZprintPro 教科書印刷服務已為以下教育機構提供批量印製方案，覆蓋皇牌課程筆記、模擬試卷、自編學材、學校年報、畢業紀念冊等多元場景。智印港 ZprintPro 累積教科書印量突破 120 萬冊，品質獲多所學校推薦：</p>
 <ul>
   <li>香港 37 間中小學（常規教材、學年補充練習、校刊）</li>
   <li>香港 19 間連鎖補習社（皇牌課程筆記、模擬試卷）</li>
@@ -16878,11 +16878,11 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li>香港 47 間中小學 + 6 間大學（學年教材、教材配套）</li>
   <li>3 間專業學會 + 12 間企業培訓機構（培訓手冊、認證教材）</li>
   <li>日本 12 間私塾與予備校（教材小批量進口、ISBN 出版支援）</li>
-  <li>智印雲 ZprintPro 同時服務澳門 8 間私立學校及新加坡 5 間國際學校，跨地區教科書採購經驗豐富</li>
+  <li>智印港 ZprintPro 同時服務澳門 8 間私立學校及新加坡 5 間國際學校，跨地區教科書採購經驗豐富</li>
 </ul>
 
 <h3>學習場景與使用建議</h3>
-<p>不同學習場景對教科書的耐用度、紙質、便攜性要求各異，智印雲 ZprintPro 為您整理最常見的 4 種學習場景對應的最佳配置。智印雲 ZprintPro 教科書印刷顧問可依您的實際需求，協助挑選最適合的組合：</p>
+<p>不同學習場景對教科書的耐用度、紙質、便攜性要求各異，智印港 ZprintPro 為您整理最常見的 4 種學習場景對應的最佳配置。智印港 ZprintPro 教科書印刷顧問可依您的實際需求，協助挑選最適合的組合：</p>
 <ul>
   <li><strong>課堂主教科書</strong>：A4 尺寸、道林紙 100g、無線膠裝或 PUR 製本、4 色封面，500–2,000 冊批量</li>
   <li><strong>補習社皇牌教材</strong>：B5 尺寸、道林紙 80g、無線膠裝、封面加燙金工藝，200–500 冊批量</li>
@@ -16891,28 +16891,28 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>開學檔期建議</h3>
-<p>2 月（春季開學）與 8 月（秋季開學）為教科書印刷的傳統高峰期。智印雲 ZprintPro 建議教育機構按以下時間表提前安排，避免延誤開學。智印雲 ZprintPro 旺季特別開設 24 小時急件通道：</p>
+<p>2 月（春季開學）與 8 月（秋季開學）為教科書印刷的傳統高峰期。智印港 ZprintPro 建議教育機構按以下時間表提前安排，避免延誤開學。智印港 ZprintPro 旺季特別開設 24 小時急件通道：</p>
 <ul>
   <li><strong>T-8 週</strong>：確認教材內容、排版定稿，提交印製需求</li>
-  <li><strong>T-6 週</strong>：數碼打樣、色彩確認、學校審核（智印雲 ZprintPro 提供免費打樣）</li>
-  <li><strong>T-4 週</strong>：批量生產啟動，留意開學檔期產能（智印雲 ZprintPro 旺季加開夜班）</li>
-  <li><strong>T-2 週</strong>：完工入庫、學校配送、新學期發放（智印雲 ZprintPro 配送團隊 7 天跟進）</li>
+  <li><strong>T-6 週</strong>：數碼打樣、色彩確認、學校審核（智印港 ZprintPro 提供免費打樣）</li>
+  <li><strong>T-4 週</strong>：批量生產啟動，留意開學檔期產能（智印港 ZprintPro 旺季加開夜班）</li>
+  <li><strong>T-2 週</strong>：完工入庫、學校配送、新學期發放（智印港 ZprintPro 配送團隊 7 天跟進）</li>
 </ul>
 
 <h3>環保認證與紙材溯源</h3>
-<p>智印雲 ZprintPro 所有紙張均通過 <strong>FSC 森林管理委員會認證</strong>，可持續採購。環保系列額外採用再生紙與大豆油墨，可完全降解，無毒無味，符合教育局紙張規範。學校如有 ESG 採購要求，我們可提供完整的紙材溯源報告與碳足印估算，助您的教材採購符合聯合國 SDGs 永續發展目標。智印雲 ZprintPro 已連續 3 年獲頒「綠色印刷夥伴」認證。</p>
+<p>智印港 ZprintPro 所有紙張均通過 <strong>FSC 森林管理委員會認證</strong>，可持續採購。環保系列額外採用再生紙與大豆油墨，可完全降解，無毒無味，符合教育局紙張規範。學校如有 ESG 採購要求，我們可提供完整的紙材溯源報告與碳足印估算，助您的教材採購符合聯合國 SDGs 永續發展目標。智印港 ZprintPro 已連續 3 年獲頒「綠色印刷夥伴」認證。</p>
 
-<h3>智印雲 (ZprintPro) SaaS 印刷服務</h3>
-<p>智印雲 (ZprintPro) 為香港本地印刷 SaaS 平台，教科書與教輔材料印刷只是其中一個專業模組。智印雲 ZprintPro 亦提供相鄰類目（貼紙、紙袋、傳單印刷、書本等）的學校品牌物料整合印刷，方便教務處統一採購。我們支援 30 秒 AI 報價、72 小時全球交付、AI 文件預檢、印刷工藝線上配置、紙材樣本索取、學校採購帳期（NET 30）等一站式服務。從詢價到收貨，智印雲 ZprintPro 全程以教育機構的實際需求為核心設計。</p>
+<h3>智印港 (ZprintPro) SaaS 印刷服務</h3>
+<p>智印港 (ZprintPro) 為香港本地印刷 SaaS 平台，教科書與教輔材料印刷只是其中一個專業模組。智印港 ZprintPro 亦提供相鄰類目（貼紙、紙袋、傳單印刷、書本等）的學校品牌物料整合印刷，方便教務處統一採購。我們支援 30 秒 AI 報價、72 小時全球交付、AI 文件預檢、印刷工藝線上配置、紙材樣本索取、學校採購帳期（NET 30）等一站式服務。從詢價到收貨，智印港 ZprintPro 全程以教育機構的實際需求為核心設計。</p>
 
 <h3>アジア自社工場での直接確認（事前予約製）</h3>
-<p>智印雲 ZprintPro のアジア自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約製で見學を受け付けており、教科書の校正刷り見本、紙質の触感比較、製本仕様の実物展示、専門スタッフによるレイアウト相談を提供しています（日本語スタッフ同席可・要 1 週間前予約）。日本向けの學校・塾・教育機関のお客様には、DHL 国際速達便で日本全国（沖縄・離島含む）へ 2-5 営業日で配送し、教育機関の受領時間に柔軟に対応的收貨時間。智印雲 ZprintPro アジア自設廠房每月舉辦 4 場教育印刷免費線上講座。</p>
+<p>智印港 ZprintPro のアジア自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約製で見學を受け付けており、教科書の校正刷り見本、紙質の触感比較、製本仕様の実物展示、専門スタッフによるレイアウト相談を提供しています（日本語スタッフ同席可・要 1 週間前予約）。日本向けの學校・塾・教育機関のお客様には、DHL 国際速達便で日本全国（沖縄・離島含む）へ 2-5 営業日で配送し、教育機関の受領時間に柔軟に対応的收貨時間。智印港 ZprintPro アジア自設廠房每月舉辦 4 場教育印刷免費線上講座。</p>
 
-<h3>智印雲多幣種結算</h3>
-<p>智印雲 ZprintPro 支援多幣種結算（港幣 HKD / 美元 USD / 日圓 JPY / 人民幣 CNY），付款方式涵蓋銀行電匯、微信支付、支付寶、PayPal。智印雲 ZprintPro 教科書印刷客戶另享教育機構專屬匯率優惠。企業客戶可申請 NET 30 月結賬期，教育機構與連鎖補習社另享學校專屬折扣，歡迎聯絡客服索取報價。</p>
+<h3>智印港多幣種結算</h3>
+<p>智印港 ZprintPro 支援多幣種結算（港幣 HKD / 美元 USD / 日圓 JPY / 人民幣 CNY），付款方式涵蓋銀行電匯、微信支付、支付寶、PayPal。智印港 ZprintPro 教科書印刷客戶另享教育機構專屬匯率優惠。企業客戶可申請 NET 30 月結賬期，教育機構與連鎖補習社另享學校專屬折扣，歡迎聯絡客服索取報價。</p>
 
 <h3>30 秒 AI 報價流程</h3>
-<p>智印雲 (ZprintPro) 教科書印刷報價只需 3 步：</p>
+<p>智印港 (ZprintPro) 教科書印刷報價只需 3 步：</p>
 <ol>
   <li><strong>選擇規格</strong>：紙材、尺寸、頁數、裝訂方式、數量</li>
   <li><strong>上傳檔案</strong>：PDF / AI / InDesign 格式，AI 自動檢查出血、解析度、CMYK 色彩</li>
@@ -16920,7 +16920,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ol>
 <p>立即體驗：<a href="https://zprintpro.com/ja/quote/">30 秒免費估價</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 
 
 <h3>適配行業 (Best For)</h3>
@@ -16933,11 +16933,11 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>自媒體 / 知識付費</strong> — 線上課程配套紙本、講座學員手冊</li>
 </ul>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Paper Material Comparison</h3>
 <p>Three paper types are commonly used for textbooks, each suited to different budgets, page counts, and reading experiences. All ZprintPro paper is FSC certified:</p>
@@ -17080,7 +17080,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 `,
     longDescriptionJa: `<h3>紙質比較（3 種類）</h3>
-<p>ZprintPro（智印雲）の教科書印刷は 3 種類の紙質をご用意。すべて FSC 森林管理協議会認証取得済み、日本の塾・學校の教材ニーズに最適化されています：</p>
+<p>ZprintPro（ジープリント）の教科書印刷は 3 種類の紙質をご用意。すべて FSC 森林管理協議会認証取得済み、日本の塾・學校の教材ニーズに最適化されています：</p>
 <table>
   <thead>
     <tr><th>紙質</th><th>斤量</th><th>特徴</th><th>最適な用途</th></tr>
@@ -17123,7 +17123,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>ISBN 国際標準書号と奥付サポート</h3>
-<p>自費出版や正式出版には ISBN 国際標準書号バーコード・奥付（版権ページ）・著作権表示・CIP データ印刷に対応。ZprintPro（智印雲）は出版流通に精通、印刷前に版権ページフォーマット・ISBN 位置・印刷許可を校了確認し、差し戻し再印刷リスクを削減します。出版社経由および台湾 CIP 事前編目での ISBN 取得もサポートしています。</p>
+<p>自費出版や正式出版には ISBN 国際標準書号バーコード・奥付（版権ページ）・著作権表示・CIP データ印刷に対応。ZprintPro（ジープリント）は出版流通に精通、印刷前に版権ページフォーマット・ISBN 位置・印刷許可を校了確認し、差し戻し再印刷リスクを削減します。出版社経由および台湾 CIP 事前編目での ISBN 取得もサポートしています。</p>
 
 <h3>教育機関向け専用レイアウト</h3>
 <p>教科書・副教材のレイアウトは授業のリズムに合わせるのが鉄則です。ZprintPro 教科書印刷は教育機関専用のレイアウトサービスを提供：</p>
@@ -17136,7 +17136,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>配送方法と国際物流</h3>
-<p>ZprintPro（智印雲）は教育機関のスケジュールに柔軟に対応する多様な配送方法をご用意：</p>
+<p>ZprintPro（ジープリント）は教育機関のスケジュールに柔軟に対応する多様な配送方法をご用意：</p>
 <table>
   <thead>
     <tr><th>配送方法</th><th>対応範囲</th><th>所要時間</th><th>料金</th></tr>
@@ -17150,7 +17150,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </table>
 
 <h3>教育機関のお客様事例</h3>
-<p>ZprintPro（智印雲）の教科書印刷は、塾の主力ノート・模擬試験・自編教材・學校年報・卒業記念アルバムなど多様なシーンで、以下の教育機関にご利用いただいています：</p>
+<p>ZprintPro（ジープリント）の教科書印刷は、塾の主力ノート・模擬試験・自編教材・學校年報・卒業記念アルバムなど多様なシーンで、以下の教育機関にご利用いただいています：</p>
 <ul>
   <li>アジア圏の小學校・中學校 37 校（通常教材、學年補充プリント、校内刊物）</li>
   <li>アジア圏の大手予備校チェーン 19 校（主力コースノート、模擬試験）</li>
@@ -17179,19 +17179,19 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>環境認証と紙材トレーサビリティ</h3>
-<p>ZprintPro（智印雲）の全紙材は <strong>FSC（森林管理協議会）認証</strong>を取得、持続可能な調達を実現。エコシリーズは再生紙・大豆インクを採用、完全生分解性・無毒無臭で日本の教育委員会指導要項にも準拠。學校の ESG 調達要件に合わせ、紙材の出所証明とカーボンフットプリント試算書もご提供し、教材購入が国連 SDGs（持続可能な開発目標）に沿うよう支援します。</p>
+<p>ZprintPro（ジープリント）の全紙材は <strong>FSC（森林管理協議会）認証</strong>を取得、持続可能な調達を実現。エコシリーズは再生紙・大豆インクを採用、完全生分解性・無毒無臭で日本の教育委員会指導要項にも準拠。學校の ESG 調達要件に合わせ、紙材の出所証明とカーボンフットプリント試算書もご提供し、教材購入が国連 SDGs（持続可能な開発目標）に沿うよう支援します。</p>
 
-<h3>智印雲（ZprintPro）SaaS 印刷サービス</h3>
-<p>智印雲（ZprintPro）は越境印刷 SaaS プラットフォームです。教科書・教材印刷はその専門モジュールの一つに過ぎず、30 秒 AI 見積もり、72 時間世界配送、AI ファイル事前チェック、印刷仕様のオンライン設定、紙サンプル請求、學校調達アカウント（NET 30 月締）まで一気通貫でサポート。お見積もりから納品まで、教育機関の実態に即した設計で運用しています。</p>
+<h3>ジープリント（ZprintPro）SaaS 印刷サービス</h3>
+<p>ジープリント（ZprintPro）は越境印刷 SaaS プラットフォームです。教科書・教材印刷はその専門モジュールの一つに過ぎず、30 秒 AI 見積もり、72 時間世界配送、AI ファイル事前チェック、印刷仕様のオンライン設定、紙サンプル請求、學校調達アカウント（NET 30 月締）まで一気通貫でサポート。お見積もりから納品まで、教育機関の実態に即した設計で運用しています。</p>
 
 <h3>アジア自社工場での直接確認（事前予約製）</h3>
-<p>智印雲（ZprintPro）のアジア自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約製で見學を受け付けており、教科書の校正刷り、紙質の触感比較、製本仕様の実物展示、専門スタッフによるレイアウト相談を提供しています（日本語スタッフ同席可・要 1 週間前予約）。日本向けの學校・塾・教育機関のお客様には、DHL 国際速達便で日本全国（沖縄・離島含む）へ 2-5 営業日で配送、納品時間も柔軟に対応します。</p>
+<p>ジープリント（ZprintPro）のアジア自社工場（広東省深圳市龍崗区平湖街道嘉城路1号）は事前予約製で見學を受け付けており、教科書の校正刷り、紙質の触感比較、製本仕様の実物展示、専門スタッフによるレイアウト相談を提供しています（日本語スタッフ同席可・要 1 週間前予約）。日本向けの學校・塾・教育機関のお客様には、DHL 国際速達便で日本全国（沖縄・離島含む）へ 2-5 営業日で配送、納品時間も柔軟に対応します。</p>
 
-<h3>智印雲マルチ通貨決済</h3>
-<p>ZprintPro（智印雲）はマルチ通貨決済に対応（HKD / USD / JPY / CNY）、銀行振込・微信支付・支付宝・PayPal がご利用可能。法人顧客は NET 30 月締請求を申請可能、教育機関・大手予備校チェーンには専用學校割引をご用意。日本語カスタマーサポートまでお問い合わせください。</p>
+<h3>ジープリントマルチ通貨決済</h3>
+<p>ZprintPro（ジープリント）はマルチ通貨決済に対応（HKD / USD / JPY / CNY）、銀行振込・微信支付・支付宝・PayPal がご利用可能。法人顧客は NET 30 月締請求を申請可能、教育機関・大手予備校チェーンには専用學校割引をご用意。日本語カスタマーサポートまでお問い合わせください。</p>
 
 <h3>30 秒 AI 見積もりフロー</h3>
-<p>ZprintPro（智印雲）の教科書印刷お見積もりは 3 ステップで完結：</p>
+<p>ZprintPro（ジープリント）の教科書印刷お見積もりは 3 ステップで完結：</p>
 <ol>
   <li><strong>仕様の選択</strong>：紙質、サイズ、ページ数、製本方式、数量</li>
   <li><strong>ファイルアップロード</strong>：PDF / AI / InDesign 形式、AI が塗り足し・解像度・CMYK を自動チェック</li>
@@ -17199,7 +17199,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ol>
 <p>今すぐ体験：<a href="https://zprintpro.com/ja/quote/">30 秒無料見積もり</a> ｜ <a href="https://zprintpro.com/ja/contact/">日本語カスタマーサポート</a></p>
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 
 
 <h3>適用業界・利用シーン</h3>
@@ -17212,11 +17212,11 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>知識クリエイター</strong> — オンライン講座付属冊子、セミナー受講生手冊</li>
 </ul>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【80g–100g書紙或道林紙】書寫流暢，不滲墨',
@@ -17332,13 +17332,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <ol>
   <li>收集班級 / 系會合照、個人照、活動照 (300dpi 為佳)</li>
   <li>提供題詞 (師長、家長、班主任)、校訓、班名、畢業年份</li>
-  <li>排版設計 (智印雲免費協助首頁及章節頁模板)</li>
+  <li>排版設計 (智印港免費協助首頁及章節頁模板)</li>
   <li>數碼打樣 → 校對確認 → 上機印刷</li>
   <li>騎馬釘 / 膠裝 / 精裝 → 品質檢驗 → DHL 全球配送</li>
 </ol>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲 (ZprintPro) 已為多所香港中學、台灣大專院校、澳門國際學校、補習社年度相簿提供印刷服務。50 本起印, 深圳自設廠房直送, DHL Express / FedEx 國際配送。</p>
+<p>智印港 (ZprintPro) 已為多所香港中學、台灣大專院校、澳門國際學校、補習社年度相簿提供印刷服務。50 本起印, 深圳自設廠房直送, DHL Express / FedEx 國際配送。</p>
 
 
 
@@ -17352,9 +17352,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
   <li><strong>校友會 / 同學會</strong> — 畢業 N 周年紀念、跨屆合刊、校友重聚</li>
 </ul>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 畢業紀念冊的最低起印量是多少？</strong></summary><p>畢業紀念冊 50 本起印, 騎馬釘 / 膠裝 100 本起印享階段折扣。每頁 1-2 張照片為最佳密度, 200 頁以內建議用膠裝, 200 頁以上建議精裝或分冊。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 畢業紀念冊的最低起印量是多少？</strong></summary><p>畢業紀念冊 50 本起印, 騎馬釘 / 膠裝 100 本起印享階段折扣。每頁 1-2 張照片為最佳密度, 200 頁以內建議用膠裝, 200 頁以上建議精裝或分冊。</p></details>
 <details class="my-2"><summary><strong>畢業紀念冊印刷交貨期需要多久？</strong></summary><p>標準訂單 7-10 個工作天完成, 含設計 + 打樣 + 印刷 + 裝訂。特急可壓縮到 5 個工作天 (額外加價 30%)。國際訂單透過 DHL Express 全球 2-4 個工作天配送。</p></details>
-<details class="my-2"><summary><strong>是否可以只提供照片由你們排版？</strong></summary><p>支持。智印雲提供免費首頁及章節頁模板, 客戶只需提供照片 + 文字, 設計團隊協助排版 1-2 個工作天交付打樣。複雜設計另外報價。</p></details>
+<details class="my-2"><summary><strong>是否可以只提供照片由你們排版？</strong></summary><p>支持。智印港提供免費首頁及章節頁模板, 客戶只需提供照片 + 文字, 設計團隊協助排版 1-2 個工作天交付打樣。複雜設計另外報價。</p></details>
 <details class="my-2"><summary><strong>可以加燙金 / 局部 UV 等特殊工藝嗎？</strong></summary><p>支持。封面燙金 (校徽 / 畢業年份) + 局部 UV (班徽 / 紀念文字) 是畢業紀念冊最熱門的組合, 提升質感與收藏價值。每頁單獨加 UV 可以批量下單。</p></details>
 `,
     price_range: 'HK$45-180/本',
@@ -17434,18 +17434,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 17 間香港電商品牌、9 間美妝品牌、14 間珠寶品牌、6 間高端食品品牌印製各類禮盒。100 個起印，深圳自設廠房直送，DHL Express / FedEx 國際配送，灰板通過 FSC 認證。</p>
+<p>智印港已為 17 間香港電商品牌、9 間美妝品牌、14 間珠寶品牌、6 間高端食品品牌印製各類禮盒。100 個起印，深圳自設廠房直送，DHL Express / FedEx 國際配送，灰板通過 FSC 認證。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、UV 局部、壓凹、磁吸開合、絲帶、感謝卡、內襯 EVA 泡棉。免費結構設計打樣。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Three Binding Types Compared</h3>
 <p>Graduation yearbooks use 3 main binding types. The right choice depends on page count, budget, and intended use (display vs. archival keepsake).</p>
@@ -17538,13 +17538,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <ol>
   <li>クラス / コホート集合寫真、個人寫真、活动寫真を収集 (300dpi 推奨)</li>
   <li>題辞 (先生、保護者、担任)、校訓、クラス名、卒業年度を提供</li>
-  <li>レイアウトデザイン (智印雲の無料サービスで表紙とセクション テンプレート)</li>
+  <li>レイアウトデザイン (ジープリントの無料サービスで表紙とセクション テンプレート)</li>
   <li>デジタル校正 — 確認 — 印刷</li>
   <li>中綴じ / 無線綴じ / 上製本 — 品質検査 — DHL 国際配送</li>
 </ol>
 
 <h3>サービス提供実績</h3>
-<p>智印雲は中學校、高校、大學、インターナショナルスクール、予備校コホート向けに卒業記念アルバムとクラス纪念品を製作してまいりました。東京・大阪・名古屋・福岡など日本全国、ならびに米国・欧州・オーストラリア向け、最小 50 部から、7-10 営業日の迅速対応。特急 5 日製作（追加 30%）も対応。国際注文は DHL Express でアジア工場から 2-4 日配送。無料デザインモックアップ、100 冊〜の段階割引対応。</p>
+<p>ジープリントは中學校、高校、大學、インターナショナルスクール、予備校コホート向けに卒業記念アルバムとクラス纪念品を製作してまいりました。東京・大阪・名古屋・福岡など日本全国、ならびに米国・欧州・オーストラリア向け、最小 50 部から、7-10 営業日の迅速対応。特急 5 日製作（追加 30%）も対応。国際注文は DHL Express でアジア工場から 2-4 日配送。無料デザインモックアップ、100 冊〜の段階割引対応。</p>
 
 <h3>適用業界・利用シーン</h3>
 <p>本サービスは以下の業界・シーンに適しています：</p>
@@ -17557,9 +17557,9 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲の卒業記念アルバムの最低注文数量は？</strong></summary><p>智印雲の卒業記念アルバムは 50 部から対応。中綴じと無線綴じ版は 100 部以上で段階割引。1 ページあたり 1-2 枚の寫真が最適密度。200 ページ以内は無線綴じ、200 ページ以上は上製本または分冊を推奨。</p></details>
+<details class="my-2"><summary><strong>ジープリントの卒業記念アルバムの最低注文数量は？</strong></summary><p>ジープリントの卒業記念アルバムは 50 部から対応。中綴じと無線綴じ版は 100 部以上で段階割引。1 ページあたり 1-2 枚の寫真が最適密度。200 ページ以内は無線綴じ、200 ページ以上は上製本または分冊を推奨。</p></details>
 <details class="my-2"><summary><strong>製作納期は？特急対応は最短何日？</strong></summary><p>標準注文は 7-10 営業日で完成（デザイン + 校正 + 印刷 + 製本込み）。特急製作は 5 営業日に短縮可能（追加 30%）。国際注文は DHL Express で世界中 2-4 日配送。30 秒 AI 見積もりで即時価格取得、登録不要。</p></details>
-<details class="my-2"><summary><strong>寫真のみ提供してレイアウトをお願いできますか？</strong></summary><p>はい。智印雲は表紙とセクションページのテンプレートを無料で提供。クライアントは寫真とテキストを提供するだけで、デザイン チームが 1-2 営業日以内にデジタル校正を納品。複雑なカスタム レイアウトは別途見積もり。全注文無料デザインモックアップ付き。</p></details>
+<details class="my-2"><summary><strong>寫真のみ提供してレイアウトをお願いできますか？</strong></summary><p>はい。ジープリントは表紙とセクションページのテンプレートを無料で提供。クライアントは寫真とテキストを提供するだけで、デザイン チームが 1-2 営業日以内にデジタル校正を納品。複雑なカスタム レイアウトは別途見積もり。全注文無料デザインモックアップ付き。</p></details>
 <details class="my-2"><summary><strong>箔押し、スポット UV などの特殊加工を追加できますか？</strong></summary><p>はい。箔押し (學校紋章、卒業年度) とスポット UV (クラスエンブレム、記念文字) は卒業記念アルバムで最も人気の高い組み合わせで、触覚品質と收藏価値を高めます。ページ単位のスポット UV は大量注文でバッチ価格対応可。</p></details>`,
     features: [
       '磁吸翻蓋，單手開合體驗佳',
@@ -17658,18 +17658,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 17 間香港電商品牌、9 間美妝品牌、14 間珠寶品牌、6 間高端食品品牌印製各類禮盒。100 個起印，深圳自設廠房直送，DHL Express / FedEx 國際配送，灰板通過 FSC 認證。</p>
+<p>智印港已為 17 間香港電商品牌、9 間美妝品牌、14 間珠寶品牌、6 間高端食品品牌印製各類禮盒。100 個起印，深圳自設廠房直送，DHL Express / FedEx 國際配送，灰板通過 FSC 認證。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、UV 局部、壓凹、磁吸開合、絲帶、感謝卡、內襯 EVA 泡棉。免費結構設計打樣。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Electronics Packaging Boxes for Secure Product Protection</h3>
 <p>ZprintPro's electronics packaging boxes are designed for packaging phones, earphones, chargers, and other 3C accessories. The outer box is constructed using 1200g greyboard laminated with art paper or specialty paper, providing a sturdy and durable structure. The inserts, including EVA foam trays, blister (PET/PVC), and molded pulp, are designed to secure products and absorb transport shock. Surface options such as gold foil, silver foil, spot UV, or soft-touch film enhance the visual appeal, while the magnetic flap structure improves the unboxing experience. We offer anti-static insert options to meet electronics protection standards. Our prepress process includes 3D structural rendering and die-cut confirmation, ensuring a tolerance of ≤0.5mm between the insert and the product.</p>
@@ -17723,13 +17723,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <p>ZprintPro ensures top-quality printing with FSC-certified materials and ISO 9001 manufacturing standards. We offer DHL Express global shipping, delivering to the US, UK, Australia, and more in 2-4 days. Our 30-second AI quote system provides instant pricing without the need for sign-up.</p>`,
     longDescriptionJa: `電子機器包裝箱をZprintProでご注文。1200gグレーボードにコート紙または特殊紙を貼り合わせ+内裝EVAフォームトレー・ブリスター・紙パルプモールドの3種類から選択。磁石式フタ構造で開閉体験向上。帯電防止内裝オプションで電子機器保護基準適合。3Cアクセサリー向けに最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【1200g 灰板】高挺度外盒，抗壓耐摔',
@@ -17853,18 +17853,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲已為 17 間香港電商品牌、9 間美妝品牌、14 間珠寶品牌、6 間高端食品品牌印製各類禮盒。100 個起印，深圳自設廠房直送，DHL Express / FedEx 國際配送，灰板通過 FSC 認證。</p>
+<p>智印港已為 17 間香港電商品牌、9 間美妝品牌、14 間珠寶品牌、6 間高端食品品牌印製各類禮盒。100 個起印，深圳自設廠房直送，DHL Express / FedEx 國際配送，灰板通過 FSC 認證。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、UV 局部、壓凹、磁吸開合、絲帶、感謝卡、內襯 EVA 泡棉。免費結構設計打樣。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Kraft Paper Packaging Boxes for Eco-Friendly Packaging</h3>
 <p>ZprintPro's kraft paper packaging boxes are made from 300g–350g unbleached eco-friendly kraft card with rugged fibers and natural texture. These boxes are fully biodegradable and FSC-certified, making them ideal for organic food, artisan tea, handmade soap, and eco-food packaging. The surface options include natural kraft tone or single/dual-color water-based ink printing, along with black foil stamping, debossing, or screen printing for a rustic yet refined visual effect. Box styles focus on auto-lock bottom tuck boxes and rope-handle boxes, with base load testing at 3–5kg. We provide free structural design and paper batch color sample confirmation to ensure consistent color across orders.</p>
@@ -17917,13 +17917,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <p>ZprintPro ensures top-quality printing with FSC-certified materials and ISO 9001 manufacturing standards. We offer DHL Express global shipping, delivering to the US, UK, Australia, and more in 2-4 days. Our 30-second AI quote system provides instant pricing without the sign-up.</p>`,
     longDescriptionJa: `クラフト紙箱をZprintProでご注文。300g-350g無漂白環境配慮クラフトカード+FSC森林認証+完全生分解性。表面は原紙色または単色/2色水性インク印刷+黒箔押し・デボス・シルクスクリーン加工。自動ロック底差し込み箱と紐付き手提げ箱が主体。有機食品・手作りお茶・手作り石鹸・環境ブランド包裝様に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【300g–350g 牛皮卡】未漂白原漿，纖維粗獷自然',
@@ -18125,7 +18125,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>White cardboard vs specialty paper difference?</strong></summary><p>350g white cardboard has smooth surface and high color reproduction at low cost; specialty paper (laid paper, diamond paper) features textures and costs 50-100% more, ideal for limited-edition premium products.</p></details>
 `,
     longDescriptionJa: `<h3>白カードボックス 高級ブランド向け</h3>
-<p>智印港の白カードボックスは、小売ブティック、ビューティ、DTC ブランド向けのプレミアム選択肢です。350g ソリッドブリーチサルフェート板に 4C+0 標準印刷で、鮮明な色再現と優れた剛性を競争力のある単価で実現。オプションの箔押し、スポット UV、エンボス加工がブランド認知度を高めます。500 枚 MOQ、5-7 日生産、FSC 認証。</p>
+<p>ジープリントの白カードボックスは、小売ブティック、ビューティ、DTC ブランド向けのプレミアム選択肢です。350g ソリッドブリーチサルフェート板に 4C+0 標準印刷で、鮮明な色再現と優れた剛性を競争力のある単価で実現。オプションの箔押し、スポット UV、エンボス加工がブランド認知度を高めます。500 枚 MOQ、5-7 日生産、FSC 認証。</p>
 
 <h3>材質・仕上げ比較</h3>
 <table class="w-full border-collapse my-4 text-sm">
@@ -18242,7 +18242,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>Do corrugated boxes crush during shipping?</strong></summary><p>3-ply B-flute design with 100 pieces per 5-ply BC double-wall outer carton supports 80-120kg load. DHL/FedEx international air freight delivers in 7-10 days.</p></details>
 `,
     longDescriptionJa: `<h3>段ボール箱 越境EC向け</h3>
-<p>智印港の段ボール箱は、越境EC DTC ブランド向けに設計 — E フルートおよび F フルートオプション、3 層または 5 層構造、フル 4C カラープリント。耐圧、衝撃吸収、FSC 認証。500 枚 MOQ、5-7 日生産、DHL/FedEx 互換。</p>
+<p>ジープリントの段ボール箱は、越境EC DTC ブランド向けに設計 — E フルートおよび F フルートオプション、3 層または 5 層構造、フル 4C カラープリント。耐圧、衝撃吸収、FSC 認証。500 枚 MOQ、5-7 日生産、DHL/FedEx 互換。</p>
 
 <h3>フルートタイプ比較</h3>
 <table class="w-full border-collapse my-4 text-sm">
@@ -18355,7 +18355,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>Tuck end vs top-and-bottom box difference?</strong></summary><p>Tuck end folds from 1 board for flat shipping and lower storage cost; top-and-bottom box has 2 separate pieces (body + lid) with stronger unboxing ceremony but 2-3x higher storage cost.</p></details>
 `,
     longDescriptionJa: `<h3>差し込み式ボックス F&B・小売向け</h3>
-<p>智印港の差し込み式ボックスは、F&B テイクアウト、小売ブティック、化粧品サンプル、サブスクリプション DTC ブランド向けに 3 つの構造オプション (直挿、反挿、自動底/飛行機ロック) を提供。250-350g コート紙 / 白カード、平面輸送でプレアセンブルボックスより 70% ストレージ節約、5 秒組み立て接着剤不要。300 枚 MOQ、3-5 日生産、FSC 認証。</p>
+<p>ジープリントの差し込み式ボックスは、F&B テイクアウト、小売ブティック、化粧品サンプル、サブスクリプション DTC ブランド向けに 3 つの構造オプション (直挿、反挿、自動底/飛行機ロック) を提供。250-350g コート紙 / 白カード、平面輸送でプレアセンブルボックスより 70% ストレージ節約、5 秒組み立て接着剤不要。300 枚 MOQ、3-5 日生産、FSC 認証。</p>
 
 <h3>3 つの差し込み構造比較</h3>
 <table class="w-full border-collapse my-4 text-sm">
@@ -18417,7 +18417,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     optimizationRound: 1,
     category: 'stickers',
     category_slug: 'stickers',
-    name: '水果貼紙食品標籤印刷 | 防水貼紙 / 異形貼紙', nameEn: 'Fruit & Food Label Stickers | Waterproof & Die-Cut Stickers', nameJa: 'フルーツ・食品ラベルシール | 防水ステッカー / ダイカット', title_zh: '水果貼紙食品標籤印刷 · FDA 食品級跨境電商 SKU 標貼 | 智印雲 ZprintPro',
+    name: '水果貼紙食品標籤印刷 | 防水貼紙 / 異形貼紙', nameEn: 'Fruit & Food Label Stickers | Waterproof & Die-Cut Stickers', nameJa: 'フルーツ・食品ラベルシール | 防水ステッカー / ダイカット', title_zh: '水果貼紙食品標籤印刷 · FDA 食品級跨境電商 SKU 標貼 | 智印港 ZprintPro',
     description: '防水防油的水果貼紙和食品標籤，適合生鮮、烘焙、飲料包裝。符合食品安全標準。**適配行業**: 跨境電商 SKU 標籤 / 生鮮水果品牌 / 烘焙食品 / 茶飲品牌 / 保健食品 / GS1 條碼貼標。 **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動', descriptionEn: 'Waterproof and oil-resistant fruit stickers and food labels for fresh produce, bakery, beverage packaging. Food-safe compliant. **Best for**: cross-border e-commerce SKU labels / fresh fruit brands / bakery / beverage / health food / GS1 barcode labels. **Best for**: Restaurants & Catering, Retail & Boutique, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding & Events, Brand Activations', descriptionJa: '耐水耐油のフルーツシールと食品ラベル。生鮮食品、ベーカリー、飲料包裝に最適。食品衛生基準適合。**適用業界**: 越境EC SKU ラベル / 生鮮フルーツブランド / ベーカリー / ドリンク / 健康食品 / GS1 バーコードラベル。 **適合業種**: 飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント', description_zh: '防水防油的水果貼紙和食品標籤，適合生鮮、烘焙、飲料包裝。符合食品安全標準。**適配行業**: 跨境電商 SKU 標籤 / 生鮮水果品牌 / 烘焙食品 / 茶飲品牌 / 保健食品 / GS1 條碼貼標。 **適配行業**: 餐飲外賣/零售精品/跨境電商/美妝護膚/教育培訓/婚慶/品牌活動',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -18450,18 +18450,18 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </ul>
 
 <h3>已服務的本地客戶</h3>
-<p>智印雲（ZprintPro）已為多個國際零售品牌、文創市集、咖啡店提供貼紙印製服務。500 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
+<p>智印港（ZprintPro）已為多個國際零售品牌、文創市集、咖啡店提供貼紙印製服務。500 張起印，深圳自設廠房直送，DHL Express / FedEx 國際配送。</p>
 
 <h3>可選加值服務</h3>
 <p>可加燙金、燙銀、玫瑰金、局部 UV、防偽 VOID 留字、螢光夜光等加值工藝。支援可變資料印刷。</p>
 
-<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 <h3>常見問題 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
-<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
-<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
-<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
-<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+<details class="my-2"><summary><strong>智印港 ZprintPro 的最低起印量是多少？</strong></summary><p>智印港支援小批量印刷，貼紙 50 張起、信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印港深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印港支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印港提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
 `,
     longDescriptionEn: `<h3>Food-Safe Stickers for Fresh Produce and Packaging</h3>
 <p>ZprintPro offers waterproof and oil-resistant fruit stickers and food labels designed for fresh produce, bakery items, and beverage packaging. Our labels are made with food-grade materials and non-migrating soy-based inks, ensuring compliance with SGS and FDA food-contact standards. Available in clear BOPP, white PE, and biodegradable PLA, these labels maintain adhesion in refrigerated environments (0–4°C) and are ideal for applications requiring durability and safety.</p>
@@ -18524,13 +18524,13 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>How do you ensure quality?</strong></summary><p>We adhere to FSC certification, ISO 9001 manufacturing standards, and ISO 12647 color management to ensure the highest quality.</p></details>`,
     longDescriptionJa: `フルーツシール食品ラベルをZprintProでご注文。食品グレード素材+SGS/FDA食品接触テストクリア、BOPP/PE/PLA素材選択可で0-4°C冷蔵環境対応。生鮮果物・ bakery・飲料カップ様に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行い、CMYK変換・色校正も承ります。大量印刷はさらにお得、500枚以上で15%オフ、1,000枚以上で25%オフの段階割引をご用意。ご興味の方はサンプル請求（無料）または詳細をご覧ください。最短3-5営業日で全国へお届け、JPY決済・国内検品・特定商取引法に基づく表記。
 
-<p><em>智印雲（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
+<p><em>ジープリント（ZprintPro）は彩龍印刷が運営する国際印刷ブランドで、アジア自社工場から DHL Express / FedEx で全世界 2-4 日配送。日本向けは国際速達便で 2-4 日お届け。FSC 認証紙、ISO 12647 カラー管理、ISO 9001 品質認証。</em></p>
 <h3>よくある質問 (FAQ)</h3>
-<details class="my-2"><summary><strong>智印雲 ZprintPro の最小注文数量は？</strong></summary><p>智印雲は小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
+<details class="my-2"><summary><strong>ジープリント ZprintPro の最小注文数量は？</strong></summary><p>ジープリントは小ロット対応可能。ステッカー 50枚〜、封筒 100枚〜、ギフトボックス 100個〜。30秒 AI 見積もり、登録不要で即時価格取得。</p></details>
 <details class="my-2"><summary><strong>印刷の納期は？急ぎ対応は最短何日？</strong></summary><p>標準注文は 3-5 営業日で完成。校正 PDF 承認後、特急印刷は最短当日出荷、DHL / FedEx 国際速達便で日本全国 2-4 日配送。大口注文は優先スケジュール対応。</p></details>
 <details class="my-2"><summary><strong>対応素材と加工は？</strong></summary><p>素材はアート紙、マット紙、コットン紙、クラフト紙、PET、PVC など。加工は4色オフセット印刷、箔押し、スポット UV、エンボス、型抜き、丸角、断裁、無線綴じ、PUR 綴じ等多種対応、無料サンプル。</p></details>
 <details class="my-2"><summary><strong>国際配送は？DHL 速達？</strong></summary><p>DHL Express で全世界 2-4 日配送。日本向けは大阪・東京・名古屋・福岡など主要都市へ最短 2-3 営業日。$100 以上のご注文で米国向け送料無料。</p></details>
-<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>智印雲は 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
+<details class="my-2"><summary><strong>印刷品質に問題があった場合は？</strong></summary><p>ジープリントは 100% 満足保証——色違いは無料再印刷、品質問題は全額返金。FSC 認証紙、ISO 12647 カラー管理、ハイデルベルグ印刷機で品質保証。無料 AI データチェックとプルーフ確認付き。</p></details>
 `,
     features: [
       '【食品級認證】SGS／FDA 通過，大豆油墨無遷移，可直接接觸食品',
@@ -18600,7 +18600,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
       name: '同人誌印刷',
       nameEn: 'Doujinshi Printing',
       nameJa: '同人誌印刷',
-      title_zh: '同人誌印刷 | Comiket 對應 | 智印雲',
+      title_zh: '同人誌印刷 | Comiket 對應 | 智印港',
       description: '專為 Comiket 及同人活動設計的同人誌印刷。A5/B5 標準尺寸,封面彩色、內頁單色。10 本起印,Comiket 前 24 小時特急対応。 **適配行業**：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。',
       descriptionEn: 'Doujinshi printing for Comiket and doujin events. A5/B5 sizes, full-color cover + mono interior. MOQ 10 books. 24-hour rush available before Comiket. **Best for**: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.',
       descriptionJa: 'コミケ・即売会向け同人誌印刷。A5/B5 サイズ対応、表紙フルカラー、本文モノクロ。本文 10 部から対応、コミケ前 24 時間特急対応可能。 **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。',
@@ -18619,7 +18619,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </table>
 
 <h3>Comiket・即售會前特急対応</h3>
-<p>智印雲 ZprintPro 提供 Comiket 前 24 小時特急対応,完售補印及會場直前販售都迅速處理。深圳自營工廠 DHL Express 直送日本 2-4 個工作天,日文客服 + 繁體中文客服雙語支援,安心交易。</p>
+<p>智印港 ZprintPro 提供 Comiket 前 24 小時特急対応,完售補印及會場直前販售都迅速處理。深圳自營工廠 DHL Express 直送日本 2-4 個工作天,日文客服 + 繁體中文客服雙語支援,安心交易。</p>
 
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>最低可以印多少本？</strong></summary><p>10 本起印。個人社團及獨立作者都歡迎下單。</p></details>
@@ -18628,7 +18628,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>接受什麼檔案格式？</strong></summary><p>建議 Illustrator / Photoshop / PDF,CMYK 模式,解像度 300dpi 以上。免費 AI 資料檢查服務。</p></details>
 <details class="my-2"><summary><strong>可以取消或退貨嗎？</strong></summary><p>印刷開始前可取消。品質問題(色差 / 印刷瑕疵)提供免費重印或全額退款。</p></details>
 
-<p><em>智印雲 (ZprintPro) 是彩龍印刷營運的國際印刷服務品牌。深圳自營工廠 DHL Express 全球 2-4 日配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>`,
+<p><em>智印港 (ZprintPro) 是彩龍印刷營運的國際印刷服務品牌。深圳自營工廠 DHL Express 全球 2-4 日配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>`,
       longDescriptionEn: `<h3>Doujinshi Printing — Comiket & Doujin Event Specialized Service</h3>
 <p>Optimized for Comiket, doujin events, and creative exhibitions. Standard full-color cover + mono interior, with premium full-color cover-and-interior upgrades. Low MOQ of 10 books makes this accessible for individual circles and beginners. 24-hour rush production available before Comiket for last-minute reprints.</p>
 
@@ -18668,7 +18668,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </table>
 
 <h3>コミケ・即売会前 特急対応</h3>
-<p>智印雲 ZprintPro はコミケ前 24 時間特急対応で、在庫切れの追加印刷や直前物販にも迅速対応。アジア自社工場から DHL Express で 2-4 日で日本直送、日本語サポートで安心取引。FSC 認証紙材・ISO 12647 色彩管理で品質保証。</p>
+<p>ジープリント ZprintPro はコミケ前 24 時間特急対応で、在庫切れの追加印刷や直前物販にも迅速対応。アジア自社工場から DHL Express で 2-4 日で日本直送、日本語サポートで安心取引。FSC 認証紙材・ISO 12647 色彩管理で品質保証。</p>
 
 <h3>よくある質問 (FAQ)</h3>
 <details class="my-2"><summary><strong>最低何個から注文できますか？</strong></summary><p>10 個から対応可能です。個人サークル・個人作家様も安心してご注文いただけます。</p></details>
@@ -18677,7 +18677,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>データ入稿の形式は？</strong></summary><p>Illustrator / Photoshop / PDF 形式推奨、CMYK モード、解像度 300dpi 以上。無料 AI データチェックで対応。</p></details>
 <details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能です。品質問題 (色ズレ・印刷ミス) は無料で再印刷または全額返金いたします。</p></details>
 
-<p><em>智印雲 (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
+<p><em>ジープリント (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
       price_range: '¥7,500〜/部〜',
       basePrice: 7500,
     basePrice_en: 1245.0,
@@ -18783,7 +18783,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </table>
 
 <h3>Comiket・即售會前特急対応</h3>
-<p>智印雲 ZprintPro 提供 Comiket 前 24 小時特急対応,完售補印及會場直前販售都迅速處理。深圳自營工廠 DHL Express 直送日本 2-4 個工作天,日文客服 + 繁體中文客服雙語支援,安心交易。</p>
+<p>智印港 ZprintPro 提供 Comiket 前 24 小時特急対応,完售補印及會場直前販售都迅速處理。深圳自營工廠 DHL Express 直送日本 2-4 個工作天,日文客服 + 繁體中文客服雙語支援,安心交易。</p>
 
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>最低可以印幾件？</strong></summary><p>10 件起印。個人社團及獨立作者都歡迎下單。</p></details>
@@ -18792,7 +18792,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>接受什麼檔案格式？</strong></summary><p>建議 Illustrator / Photoshop / PDF,CMYK 模式,解像度 300dpi 以上。免費 AI 資料檢查服務。</p></details>
 <details class="my-2"><summary><strong>可以取消或退貨嗎？</strong></summary><p>印刷開始前可取消。品質問題(色差 / 印刷瑕疵)提供免費重印或全額退款。</p></details>
 
-<p><em>智印雲 (ZprintPro) 是彩龍印刷營運的國際印刷服務品牌。深圳自營工廠 DHL Express 全球 2-4 日配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>`,
+<p><em>智印港 (ZprintPro) 是彩龍印刷營運的國際印刷服務品牌。深圳自營工廠 DHL Express 全球 2-4 日配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>`,
       longDescriptionEn: `<h3>Acrylic Keychains — Custom Anime & VTuber Character Merch</h3>
 <p>Custom-shaped acrylic keychains for anime, VTuber, and character merchandise. Fully customizable shapes — your VTuber logo or favorite character artwork becomes a wearable keychain. Choose 2mm or 3mm thickness for different price points and tactile feel. MOQ of 10 pcs makes it accessible for individual artists and doujin event participation. Optional accessories: safety pin, ball chain, or hook clasp.</p>
 
@@ -18832,7 +18832,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </table>
 
 <h3>コミケ・即売会前 特急対応</h3>
-<p>智印雲 ZprintPro はコミケ前 24 時間特急対応で、在庫切れの追加印刷や直前物販にも迅速対応。アジア自社工場から DHL Express で 2-4 日で日本直送、日本語サポートで安心取引。FSC 認証紙材・ISO 12647 色彩管理で品質保証。</p>
+<p>ジープリント ZprintPro はコミケ前 24 時間特急対応で、在庫切れの追加印刷や直前物販にも迅速対応。アジア自社工場から DHL Express で 2-4 日で日本直送、日本語サポートで安心取引。FSC 認証紙材・ISO 12647 色彩管理で品質保証。</p>
 
 <h3>よくある質問 (FAQ)</h3>
 <details class="my-2"><summary><strong>最低何個から注文できますか？</strong></summary><p>10 個から対応可能です。個人サークル・個人作家様も安心してご注文いただけます。</p></details>
@@ -18841,7 +18841,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>データ入稿の形式は？</strong></summary><p>Illustrator / Photoshop / PDF 形式推奨、CMYK モード、解像度 300dpi 以上。無料 AI データチェックで対応。</p></details>
 <details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能です。品質問題 (色ズレ・印刷ミス) は無料で再印刷または全額返金いたします。</p></details>
 
-<p><em>智印雲 (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
+<p><em>ジープリント (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
       price_range: '¥2,275〜/個〜',
       basePrice: 2275,
     basePrice_en: 377.65,
@@ -18932,7 +18932,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
       name: '罐型襟章印刷',
       nameEn: 'Can Badge Printing',
       nameJa: '缶バッジ印刷',
-      title_zh: '罐型襟章印刷 | 安全扣標準 | 智印雲',
+      title_zh: '罐型襟章印刷 | 安全扣標準 | 智印港',
       description: '57mm / 76mm 標準罐型襟章,含安全扣。彩色印刷,10 件起印。Comiket / 推し活 / 活動物販首選。 **適配行業**：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。',
       descriptionEn: '57mm/76mm can badge printing with safety pin. Full-color print, MOQ 10 pcs. Ideal for Comiket, oshi-katsu support, corporate events, and merchandise sales. **Best for**: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.',
       descriptionJa: '57mm/76mm 缶バッジ印刷、安全ピン付き。フルカラー印刷、10 個から対応。コミケ・推し活応援・企業イベント・物販用に最適。 **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。',
@@ -18951,7 +18951,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </table>
 
 <h3>Comiket・即售會前特急対応</h3>
-<p>智印雲 ZprintPro 提供 Comiket 前 24 小時特急対応,完售補印及會場直前販售都迅速處理。深圳自營工廠 DHL Express 直送日本 2-4 個工作天,日文客服 + 繁體中文客服雙語支援,安心交易。</p>
+<p>智印港 ZprintPro 提供 Comiket 前 24 小時特急対応,完售補印及會場直前販售都迅速處理。深圳自營工廠 DHL Express 直送日本 2-4 個工作天,日文客服 + 繁體中文客服雙語支援,安心交易。</p>
 
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>最低可以印幾件？</strong></summary><p>10 件起印。個人社團及獨立作者都歡迎下單。</p></details>
@@ -18960,7 +18960,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>接受什麼檔案格式？</strong></summary><p>建議 Illustrator / Photoshop / PDF,CMYK 模式,解像度 300dpi 以上。免費 AI 資料檢查服務。</p></details>
 <details class="my-2"><summary><strong>可以取消或退貨嗎？</strong></summary><p>印刷開始前可取消。品質問題(色差 / 印刷瑕疵)提供免費重印或全額退款。</p></details>
 
-<p><em>智印雲 (ZprintPro) 是彩龍印刷營運的國際印刷服務品牌。深圳自營工廠 DHL Express 全球 2-4 日配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>`,
+<p><em>智印港 (ZprintPro) 是彩龍印刷營運的國際印刷服務品牌。深圳自營工廠 DHL Express 全球 2-4 日配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>`,
       longDescriptionEn: `<h3>Can Badge Printing — Comiket & Oshi-katsu Merchandise Essential</h3>
 <p>Essential can badges for Comiket, oshi-katsu, and VTuber merchandise. Three sizes: 57mm standard, 76mm large, 44mm mini. Full-color printing preserves illustration and logo details. Safety pin included for easy attachment to clothing or bags. Low MOQ of 10 pcs makes it accessible for individual circles. Rush production available before Comiket for last-minute orders.</p>
 
@@ -19000,7 +19000,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </table>
 
 <h3>コミケ・即売会前 特急対応</h3>
-<p>智印雲 ZprintPro はコミケ前 24 時間特急対応で、在庫切れの追加印刷や直前物販にも迅速対応。アジア自社工場から DHL Express で 2-4 日で日本直送、日本語サポートで安心取引。FSC 認証紙材・ISO 12647 色彩管理で品質保証。</p>
+<p>ジープリント ZprintPro はコミケ前 24 時間特急対応で、在庫切れの追加印刷や直前物販にも迅速対応。アジア自社工場から DHL Express で 2-4 日で日本直送、日本語サポートで安心取引。FSC 認証紙材・ISO 12647 色彩管理で品質保証。</p>
 
 <h3>よくある質問 (FAQ)</h3>
 <details class="my-2"><summary><strong>最低何個から注文できますか？</strong></summary><p>10 個から対応可能です。個人サークル・個人作家様も安心してご注文いただけます。</p></details>
@@ -19009,7 +19009,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>データ入稿の形式は？</strong></summary><p>Illustrator / Photoshop / PDF 形式推奨、CMYK モード、解像度 300dpi 以上。無料 AI データチェックで対応。</p></details>
 <details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能です。品質問題 (色ズレ・印刷ミス) は無料で再印刷または全額返金いたします。</p></details>
 
-<p><em>智印雲 (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
+<p><em>ジープリント (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
       price_range: '¥1,200〜/個〜',
       basePrice: 1200,
     basePrice_en: 199.2,
@@ -19098,7 +19098,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
       name: '明信片套裝',
       nameEn: 'Postcard Set',
       nameJa: 'ポストカードセット',
-      title_zh: '明信片套裝 | 和紙風藝術紙 | 智印雲',
+      title_zh: '明信片套裝 | 和紙風藝術紙 | 智印港',
       description: '和紙風藝術紙明信片套裝,4 件套起印,雙面印刷。Comiket 限定贈品 / 收藏首選。 **適配行業**：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。',
       descriptionEn: 'Washi-style postcard sets in 4-8 piece collections. Ideal for character goods, VTuber, illustration collections. 105×148mm standard, double-sided printing, OPP sleeve packaging. **Best for**: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.',
       descriptionJa: '和紙風ポストカード 4-8 枚セット。推しキャラ・VTuber・イラストコレクション。105×148mm 標準、両面印刷対応、OPP スリーブ封入。 **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。',
@@ -19117,7 +19117,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 </table>
 
 <h3>Comiket・即售會前特急対応</h3>
-<p>智印雲 ZprintPro 提供 Comiket 前 24 小時特急対応,完售補印及會場直前販售都迅速處理。深圳自營工廠 DHL Express 直送日本 2-4 個工作天,日文客服 + 繁體中文客服雙語支援,安心交易。</p>
+<p>智印港 ZprintPro 提供 Comiket 前 24 小時特急対応,完售補印及會場直前販售都迅速處理。深圳自營工廠 DHL Express 直送日本 2-4 個工作天,日文客服 + 繁體中文客服雙語支援,安心交易。</p>
 
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>最低可以印幾套？</strong></summary><p>4 套起印。個人社團及獨立作者都歡迎下單。</p></details>
@@ -19126,7 +19126,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
 <details class="my-2"><summary><strong>接受什麼檔案格式？</strong></summary><p>建議 Illustrator / Photoshop / PDF,CMYK 模式,解像度 300dpi 以上。免費 AI 資料檢查服務。</p></details>
 <details class="my-2"><summary><strong>可以取消或退貨嗎？</strong></summary><p>印刷開始前可取消。品質問題(色差 / 印刷瑕疵)提供免費重印或全額退款。</p></details>
 
-<p><em>智印雲 (ZprintPro) 是彩龍印刷營運的國際印刷服務品牌。深圳自營工廠 DHL Express 全球 2-4 日配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>`,
+<p><em>智印港 (ZprintPro) 是彩龍印刷營運的國際印刷服務品牌。深圳自營工廠 DHL Express 全球 2-4 日配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>`,
 longDescriptionEn: `<h3>Postcard Sets — Washi-Style Art Cards for Character & VTuber Goods</h3>
 <p>Ideal postcard sets for character goods, VTuber illustrations, and signature event giveaways. Sold in 4-8 piece sets for collection appeal. Washi-style art paper matches Japanese-aesthetic and traditional artwork. Double-sided printing allows front illustration + back text/signature design. OPP sleeve packaging protects from scratches and dust.</p>
 
@@ -19166,7 +19166,7 @@ longDescriptionEn: `<h3>Postcard Sets — Washi-Style Art Cards for Character & 
 </table>
 
 <h3>コミケ・即売会前 特急対応</h3>
-<p>智印雲 ZprintPro はコミケ前 24 時間特急対応で、在庫切れの追加印刷や直前物販にも迅速対応。アジア自社工場から DHL Express で 2-4 日で日本直送、日本語サポートで安心取引。FSC 認証紙材・ISO 12647 色彩管理で品質保証。</p>
+<p>ジープリント ZprintPro はコミケ前 24 時間特急対応で、在庫切れの追加印刷や直前物販にも迅速対応。アジア自社工場から DHL Express で 2-4 日で日本直送、日本語サポートで安心取引。FSC 認証紙材・ISO 12647 色彩管理で品質保証。</p>
 
 <h3>よくある質問 (FAQ)</h3>
 <details class="my-2"><summary><strong>最低何個から注文できますか？</strong></summary><p>4 個から対応可能です。個人サークル・個人作家様も安心してご注文いただけます。</p></details>
@@ -19175,7 +19175,7 @@ longDescriptionEn: `<h3>Postcard Sets — Washi-Style Art Cards for Character & 
 <details class="my-2"><summary><strong>データ入稿の形式は？</strong></summary><p>Illustrator / Photoshop / PDF 形式推奨、CMYK モード、解像度 300dpi 以上。無料 AI データチェックで対応。</p></details>
 <details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能です。品質問題 (色ズレ・印刷ミス) は無料で再印刷または全額返金いたします。</p></details>
 
-<p><em>智印雲 (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
+<p><em>ジープリント (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
       price_range: '¥750〜/枚〜',
       basePrice: 750,
     basePrice_en: 124.5,
@@ -19266,7 +19266,7 @@ longDescriptionEn: `<h3>Postcard Sets — Washi-Style Art Cards for Character & 
       name: '環保托特袋',
       nameEn: 'Eco Tote Bag',
       nameJa: 'エコトートバッグ',
-      title_zh: '環保托特袋 | 100% 有機棉 | 智印雲',
+      title_zh: '環保托特袋 | 100% 有機棉 | 智印港',
       description: '100% 純棉有機托特袋,絲網印刷 / DTG 全彩印刷。Comiket / 企業活動周邊首選,10 件起印,FSC 認證布料。 **適配行業**：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。',
       descriptionEn: '100% organic cotton tote bags with silk printing. Ideal for oshi-katsu, Comiket, corporate merchandise. MOQ 10 pcs, FSC-certified fabric. **Best for**: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.',
       descriptionJa: 'オーガニックコットン 100% トートバッグ。シルク印刷対応。推し活・コミケ・企業物販向け。10 個から対応、FSC 認証生地使用。 **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。',
@@ -19285,7 +19285,7 @@ longDescriptionEn: `<h3>Postcard Sets — Washi-Style Art Cards for Character & 
 </table>
 
 <h3>Comiket・即售會前特急対応</h3>
-<p>智印雲 ZprintPro 提供 Comiket 前 24 小時特急対応,完售補印及會場直前販售都迅速處理。深圳自營工廠 DHL Express 直送日本 2-4 個工作天,日文客服 + 繁體中文客服雙語支援,安心交易。</p>
+<p>智印港 ZprintPro 提供 Comiket 前 24 小時特急対応,完售補印及會場直前販售都迅速處理。深圳自營工廠 DHL Express 直送日本 2-4 個工作天,日文客服 + 繁體中文客服雙語支援,安心交易。</p>
 
 <h3>常見問題 (FAQ)</h3>
 <details class="my-2"><summary><strong>最低可以印幾件？</strong></summary><p>10 件起印。個人社團及獨立作者都歡迎下單。</p></details>
@@ -19294,7 +19294,7 @@ longDescriptionEn: `<h3>Postcard Sets — Washi-Style Art Cards for Character & 
 <details class="my-2"><summary><strong>接受什麼檔案格式？</strong></summary><p>建議 Illustrator / Photoshop / PDF,CMYK 模式,解像度 300dpi 以上。免費 AI 資料檢查服務。</p></details>
 <details class="my-2"><summary><strong>可以取消或退貨嗎？</strong></summary><p>印刷開始前可取消。品質問題(色差 / 印刷瑕疵)提供免費重印或全額退款。</p></details>
 
-<p><em>智印雲 (ZprintPro) 是彩龍印刷營運的國際印刷服務品牌。深圳自營工廠 DHL Express 全球 2-4 日配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>`,
+<p><em>智印港 (ZprintPro) 是彩龍印刷營運的國際印刷服務品牌。深圳自營工廠 DHL Express 全球 2-4 日配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>`,
       longDescriptionEn: `<h3>Eco Tote Bags — Organic Cotton Bags for Oshi-katsu & Corporate Gifting</h3>
 <p>Premium organic cotton tote bags for oshi-katsu, Comiket merchandise, and corporate gifting. FSC-certified 100% organic cotton supports ESG and sustainability narratives. Silk screen printing delivers crisp logos and illustrations; DTG full-color printing handles gradients and photos. A4-sized capacity adds practicality. MOQ 10 pcs accommodates small-batch needs.</p>
 
@@ -19334,7 +19334,7 @@ longDescriptionEn: `<h3>Postcard Sets — Washi-Style Art Cards for Character & 
 </table>
 
 <h3>コミケ・即売会前 特急対応</h3>
-<p>智印雲 ZprintPro はコミケ前 24 時間特急対応で、在庫切れの追加印刷や直前物販にも迅速対応。アジア自社工場から DHL Express で 2-4 日で日本直送、日本語サポートで安心取引。FSC 認証紙材・ISO 12647 色彩管理で品質保証。</p>
+<p>ジープリント ZprintPro はコミケ前 24 時間特急対応で、在庫切れの追加印刷や直前物販にも迅速対応。アジア自社工場から DHL Express で 2-4 日で日本直送、日本語サポートで安心取引。FSC 認証紙材・ISO 12647 色彩管理で品質保証。</p>
 
 <h3>よくある質問 (FAQ)</h3>
 <details class="my-2"><summary><strong>最低何個から注文できますか？</strong></summary><p>10 個から対応可能です。個人サークル・個人作家様も安心してご注文いただけます。</p></details>
@@ -19343,7 +19343,7 @@ longDescriptionEn: `<h3>Postcard Sets — Washi-Style Art Cards for Character & 
 <details class="my-2"><summary><strong>データ入稿の形式は？</strong></summary><p>Illustrator / Photoshop / PDF 形式推奨、CMYK モード、解像度 300dpi 以上。無料 AI データチェックで対応。</p></details>
 <details class="my-2"><summary><strong>キャンセル・返品は可能ですか？</strong></summary><p>印刷開始前であればキャンセル可能です。品質問題 (色ズレ・印刷ミス) は無料で再印刷または全額返金いたします。</p></details>
 
-<p><em>智印雲 (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
+<p><em>ジープリント (ZprintPro) は彩龍印刷が運営する国際印刷サービスブランド。アジア自社工場から日本・全球に DHL Express 2-4 日配送。FSC 認証紙材、ISO 12647 色彩管理、ISO 9001 品質認証。</em></p>`,
       price_range: '¥9,000〜/個〜',
       basePrice: 9000,
     basePrice_en: 1494.0,
