@@ -1,4 +1,4 @@
-{
+﻿{
   "version": "2026-08-01-v1",
   "owner": "mavis orchestrator (user authorized)",
   "policy": {
@@ -256,7 +256,8 @@
       "expected_words_zh": 1000,
       "expected_faqs": 4,
       "queued_at": "2026-07-06",
-      "priority_boost": 2
+      "priority_boost": 2,
+      "gsc_weekly_2026_08_12_status": "daily 必写 (per GSC v4 §9 blocklist 1)"
     },
     {
       "id": "T-B-01",
@@ -6763,7 +6764,8 @@
   "update_history": [
     "2026-08-08 04:00 M3 K3 GSC v2 深度分析 (matrix gsc_targeting_v2 段)",
     "2026-08-08 04:30 M3 K3 GSC zh-hk v3 深度分析 (matrix gsc_targeting_zh_hk_v3 段)",
-    "2026-08-08 04:40 M3 K3 战略级 4 字+①②③ + 双周排期 + KPI 校准 + 3 市场分层 + 9:00 4 步 PASS"
+    "2026-08-08 04:40 M3 K3 战略级 4 字+①②③ + 双周排期 + KPI 校准 + 3 市场分层 + 9:00 4 步 PASS",
+    "2026-08-12 15:00 GSC v4 weekly: matrix v2026-08-01-v1 + gsc_targeting_weekly_v1 (per cron v4 §12 报告 + §6 daily cron 必写建议)"
   ],
   "gsc_targeting_zh_hk_v3": {
     "version": "v3",
@@ -7673,5 +7675,192 @@
       "301 5/5 PASS": "P1 deadline 8/9",
       "前端 0 智印雲 残留": "8/18 验收硬指标 (per §0.16)"
     }
-  }
+  },
+  "gsc_targeting_weekly_v1": {
+    "version": "v1",
+    "created_at": "2026-08-12T15:00:00+08:00",
+    "creator": "Mavis (M3 GSC feedback v4 weekly cron)",
+    "trigger": "K3 §6 铁律 + 每周三 15:00 Asia/Shanghai GSC v4 cron + 8/12 P4 收尾复盘验收",
+    "source_files": [
+      "F:\\zprintpro-nextjs\\.hermes\\gsc-7d-2026-08-05.csv (7/29-8/5 7d 滚动, 390 queries)",
+      "F:\\zprintpro-nextjs\\.hermes\\gsc-snapshot-2026-07-29.json (7/22-7/29 7d baseline)",
+      "F:\\zprintpro-nextjs\\.hermes\\gsc-141-baseline-2026-07-22.json (28 词 baseline)"
+    ],
+    "summary": {
+      "8_5_7d": {
+        "total_queries": 390,
+        "total_imps": 1301,
+        "total_clicks": 3,
+        "avg_ctr": 0.23,
+        "vs_7_29_7d": "+50.9% imps, +2 clicks, +94 queries (新增长尾词覆盖)"
+      },
+      "141_baseline_28_in_8_5_7d": "19/28 (67.9%)",
+      "top_movers": [
+        {
+          "q": "海報與印刷",
+          "delta_pos": -41.3,
+          "pos_7_22": 57.3,
+          "pos_8_5": 16.0,
+          "8_5_imps": 5
+        },
+        {
+          "q": "貼紙訂製",
+          "delta_pos": -41.6,
+          "pos_7_22": 64.4,
+          "pos_8_5": 22.8,
+          "8_5_imps": 4
+        },
+        {
+          "q": "禮盒訂製",
+          "delta_pos": -32.9,
+          "pos_7_22": 77.1,
+          "pos_8_5": 44.2,
+          "8_5_imps": 4
+        },
+        {
+          "q": "包裝盒訂製",
+          "delta_pos": -19.7,
+          "pos_7_22": 55.0,
+          "pos_8_5": 35.4,
+          "8_5_imps": 14
+        },
+        {
+          "q": "紙袋訂製",
+          "delta_pos": -19.4,
+          "pos_7_22": 60.3,
+          "pos_8_5": 40.9,
+          "8_5_imps": 10
+        },
+        {
+          "q": "紙盒訂製",
+          "delta_pos": -15.6,
+          "pos_7_22": 66.6,
+          "pos_8_5": 51.0,
+          "8_5_imps": 12
+        }
+      ],
+      "regressions": [
+        {
+          "q": "食品包裝印刷",
+          "delta_pos": 19.4,
+          "pos_7_22": 25.4,
+          "pos_8_5": 44.9,
+          "8_5_imps": 9,
+          "warning": "imps 大幅下降 108→9"
+        },
+        {
+          "q": "印刷紙袋",
+          "delta_pos": 12.7,
+          "pos_7_22": 26.7,
+          "pos_8_5": 39.5,
+          "8_5_imps": 11
+        },
+        {
+          "q": "紙袋印刷",
+          "delta_pos": 11.1,
+          "pos_7_22": 17.8,
+          "pos_8_5": 28.9,
+          "8_5_imps": 11
+        },
+        {
+          "q": "戶外貼紙",
+          "delta_pos": 11.6,
+          "pos_7_22": 35.4,
+          "pos_8_5": 47.0,
+          "8_5_imps": 2
+        }
+      ],
+      "disappeared_9_words": [
+        "印紙袋",
+        "紙袋印製",
+        "利是封印刷",
+        "紙袋訂造",
+        "紙袋訂做",
+        "紙袋批發",
+        "食品印刷",
+        "印紙盒",
+        "bag printing"
+      ],
+      "data_freshness_warning": "GSC API proxy 127.0.0.1:7892 401 unauthorized, 7/29 之后 8/5-8/12 期间 无 7-day rolling GSC 拉取 (gsc-7d-2026-08-05.csv 是 7/29-8/5 期间, 不是 8/5-8/12). 本周报告用 7/29-8/5 7d 数据 (7 天前) + 141 baseline 7/22 对比. K3 8/12 18:00 拍板: 8/12-8/19 期间 重试 GSC API 拉 8/5-8/12 7d 数据"
+    },
+    "p0_2_301_5_item_monitor": {
+      "checked_at": "2026-08-12T15:00:00+08:00",
+      "inscope_5_5_PASS_at_7_22": "5/5",
+      "inscope_5_5_PASS_at_8_12": "1/5 ⚠️ 真异常退化! (4 路径级规则失效, 1=packaging-box-printing PASS)",
+      "outscope_5_catchall_at_8_12": "3/5 PASS (catch-all 跳 zh-hk 是设计), 2/5 FAIL (#8 名片 200 直出 + #9 about-us 404, 与 7/22 baseline 一致)",
+      "verdict": "⚠️ **CRITICAL REGRESSION** — 7/22 5/5 PASS → 8/12 1/5 PASS. 4 条 路径级规则失效 (4/5 旧 URL 走 404 而不是 301→新站对应页). 立即 §14.4 升级 user (清单内 FAIL = 真异常, 不是设计行为)",
+      "affected_old_urls_4": [
+        "https://www.z-printpro.com/label-sticker-printing/waterproof-round-sticker-printing-outdoor-vehicle.html",
+        "https://www.z-printpro.com/enterprise-brochure-printing/a5-saddle-stitched-booklet-printing.html",
+        "https://www.z-printpro.com/red-packet-wedding-invitation-printing/wedding-invitation-printing-foil-ribbon-envelope.html",
+        "https://www.z-printpro.com/large-format-printing/same-day-banner-printing-6x3ft-waterproof-hk.html"
+      ],
+      "expected_target_4": [
+        "/zh-hk/product/waterproof-stickers/",
+        "/zh-hk/product/saddle-stitch-booklets/",
+        "/zh-hk/category/red-packets/",
+        "/zh-hk/category/banners/"
+      ],
+      "K3_action_required": "8/12 19:00 拍板: (a) CF Dashboard Bulk Redirects 检查 149 条规则是否还在 (b) 如失效, 重新导入 149 条 (c) 8/13 02:00 重跑 5 监控验证"
+    },
+    "matrix_priority_boost_changes": {
+      "Q-005_cross_border_ecommerce_shipping_box": {
+        "current_priority_boost": 2,
+        "verdict": "维持 2 (P0 daily 必写, 7/29-8/5 7d 整体 imps +50.9%, cross-border 询盘意图强, 与 Q-005 '跨境電商 DHL 2-4 天' 高度匹配)"
+      },
+      "Q-P1-04_product_label_printing": {
+        "current_priority_boost": 1,
+        "potential_boost_to_2": "暂不动 (GSC 標籤印刷 4 imps rank 43.25 + 食品包裝訂製 48 imps rank 22.88 邻词表现, 但 8/5 7d 无新数据, 等 8/12-8/19 7d 重拉后再评估)"
+      },
+      "Q-006_tea_beverage_gift_box": {
+        "current_status": "completed 2026-08-07",
+        "retrospective": "8/5 7d 0 印 imps (未收录), 等待 GSC 8/12-8/19 7d 表现"
+      }
+    },
+    "daily_cron_recommendation_2026_08_13": {
+      "scope": "§6 daily cron (zprintpro-daily-content-1x7w 8/13 10:15 触发)",
+      "blocklist_2_slugs_NOT_to_write": [
+        "back-to-school-printing-usa (en, P3 blocklist, 留给 M3 P3 独立执行)",
+        "new-semester-printing-japan (ja, P3 blocklist, 留给 M3 P3 独立执行)"
+      ],
+      "recommended_P0_candidates_for_daily_cron": [
+        {
+          "id": "Q-005",
+          "slug": "cross-border-ecommerce-shipping-box-guide",
+          "priority_boost": 2,
+          "rationale": "GSC 8/5 7d imps +50.9%, cross-border 询盘意图强, daily 必写"
+        },
+        {
+          "id": "Q-P1-01",
+          "slug": "retail-poster-printing-guide",
+          "priority_boost": 1,
+          "rationale": "GSC 141 baseline 海報類词 8/5 7d 進位 (海報與印刷 -41.3, 印海報 -1.6), poster 高复购"
+        }
+      ],
+      "P0_recommendation_count": "0 candidates normal (per §9 拍板 #1: daily cron 跑 B+C+F 兜底 + M3 P3 独立写 2 个新 slug)",
+      "rationale_for_0": "daily cron 职责是 B+C+F 兜底 (Tier A 行业词扩展 + 已有博客更新 + FAQ 修补), 不主动开 P0 主题 (留给 weekly 8/13 11:00 + M3 P3 8/13-8/19 排期)"
+    },
+    "weekly_recommendation_2026_08_18_19": {
+      "scope": "P4 收尾 (8/12) → Week 2 起步 (8/13-8/19)",
+      "week_2_priorities": [
+        "P3 校园 3 页 (back-to-school-printing-usa / new-semester-printing-japan / zh-hk /category/educational/ hero 强化) 排 8/14-8/17 (per §5 GEO 模板 6 硬约束)",
+        "§0.16 残留清理 8/13/15/17 3 批 170/天 (840 智印雲→智印港, per K3 8/8 07:12 拍板)",
+        "§0.15 品牌一致性 8/13-8/19 期间 verify 8 locale <title>/og:title/JSON-LD Organization.name 3 字段 全 PASS (per §0.15 公式)",
+        "P0-2 301 监控 4/5 FAIL 修复 (K3 8/12 19:00 拍板 + 8/13 02:00 重跑验证)",
+        "AI 可见性复测 (7/29 baseline 0/7 → 8/12 目标 ≥1/7, K3 5 min 测试 7 个 query)"
+      ]
+    },
+    "K3_8_12_decision_needed": [
+      "1. 4 路径级 301 规则失效原因: CF Dashboard Bulk Redirects 检查 → 报告结果 (K3 8/12 19:00 拍板)",
+      "2. 8/12-8/19 7d GSC 重拉 (proxy 401 fallback → 等 API 恢复 OR 切云端 proxy OR 用 7/29 snapshot 推到 K3)",
+      "3. AI 可见性 8/12 复测 7 query (per K3 7/29 baseline 0/7)",
+      "4. P3 校园 3 页 排 8/14-8/17 拍板 (per §5 GEO 模板)",
+      "5. Q-005 daily 8/13 必写 vs 留 P3 priority (K3 二选一)",
+      "6. 8/12 P4 收尾验收 7 项 (K3 §6 拍板, P4 复盘报告 m3-p4-review-2026-08-12.md)"
+    ],
+    "update_history": [
+      "2026-08-12 15:00 M3 GSC v4 weekly feedback: 8/5 7d GSC imps +50.9% (vs 7/29), 141 baseline 19/28 出现 67.9%, 6 词排名进位, 4 词排名退步, 9 词消失, P0-2 301 5 项监控 4/5 FAIL 重大退化 (升级 K3 拍板 8/12 19:00), Q-005 priority_boost=2 维持 daily 必写"
+    ]
+  },
+  "last_gsc_weekly_update": "2026-08-12T15:00:00+08:00"
 }
