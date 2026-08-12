@@ -22,7 +22,7 @@ interface FooterProps {
 
 const translations = {
   'zh-hk': {
-    companyDesc: '智印港 ZprintPro 是全球智能印刷定制平台，提供AI智能報價、在線文件上傳、安全結算。支援銀行電匯、微信、支付寶、PayPal。從貼紙到包裝，30秒報價，72小時全球交付。',
+    companyDesc: '智印港 ZprintPro 是全球智能印刷訂製平台，提供AI智能報價、在線文件上傳、安全結算。支援銀行電匯、微信、支付寶、PayPal。從貼紙到包裝，30秒報價，72小時全球交付。',
     serviceArea: '全球跨境印刷服務',
     phone: '+86 198 8085 1334',
     email: 'zprintpro@outlook.com',
@@ -46,10 +46,10 @@ const translations = {
         title: '產品中心',
         links: [
           { label: '紙袋印刷', href: '/category/paper-bags/' },
-          { label: '宣傳單張', href: '/category/flyers/' },
+          { label: '傳單印刷', href: '/category/flyers/' },
           { label: '貼紙印刷', href: '/category/stickers/' },
-          { label: '包裝盒定制', href: '/category/packaging/' },
-          { label: '海報定制', href: '/category/posters/' },
+          { label: '包裝盒印刷', href: '/category/packaging/' },
+          { label: '海報印刷', href: '/category/posters/' },
           { label: '校園印刷', href: '/category/educational/' },
         ],
       },

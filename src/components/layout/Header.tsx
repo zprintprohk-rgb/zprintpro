@@ -20,7 +20,7 @@ const translations = {
     email: 'zprintpro@outlook.com',
     whatsapp: 'WhatsApp',
     support: '24/7 客戶服務',
-    searchPlaceholder: '搜尋印刷產品 (宣傳單張/咭片/貼紙...)',
+    searchPlaceholder: '搜尋印刷產品 (傳單/貼紙/包裝盒/海報...)',
     search: '搜尋',
     cart: '購物車',
     home: '首頁',
@@ -467,7 +467,8 @@ export function Header({ locale }: HeaderProps) {
         </nav>
       </div>
 
-      {/* 2026-07-20 移动端 priority+ 导航条: 横排 4 个核心类目(貼紙/宣傳單張/紙袋/包裝盒),
+      {/* 2026-07-20 移动端 priority+ 导航条: 横排 4 个核心类目(貼紙/傳單/紙袋/包裝盒),
+          2026-08-12 §0.16 batch 1: paper-bags 调最后 + 传单/包裝盒 全繁體化 (zh-hk 不用"定制"+ 簡→繁"制→製")
           其余收进右侧 ☰ 全量菜单。仅移动端显示, 桌面蓝条导航保持不动 */}
       <nav className="lg:hidden bg-[#2873F5] overflow-x-auto" aria-label="Primary categories">
         <div className="flex items-center h-[42px] px-2 min-w-max">
