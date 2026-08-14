@@ -148,7 +148,7 @@ export const products: Product[] = [
 <p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
 
 <h3>5 檔牛皮紙袋校準報價 (参考實價, 2026-07-18)</h3>
-<p>以下價格來自智印港 2026-07-18 向 <a href="/product/kraft-paper-bags/">牛皮紙袋</a> 供應商登錄態實詢 (中號 260x170x250mm / 120g 黃牛皮 / 紙繩或扁繩 / 單色-四色),1.3 倍合理利潤 + RMB→HKD 1.087 換算後的可即時展示真實校準錨點:</p>
+<p>以下價格來自智印港 2026-07-18 向 <a href="/product/kraft-paper-bags/">牛皮紙袋</a> 供應商實詢 (中號 260x170x250mm / 120g 黃牛皮 / 紙繩或扁繩 / 單色-四色),1.3 倍合理利潤 + RMB→HKD 1.087 換算後的可即時展示真實校準錨點:</p>
 <table>
   <thead><tr><th>數量</th><th>單個 (HKD)</th><th>總價 (HKD)</th><th>跳水幅度</th></tr></thead>
   <tbody>

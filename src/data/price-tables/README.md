@@ -14,7 +14,7 @@
 
 ## 校准 SOP (每月 1 号 cron 跑 / 首次上线前必跑)
 
-1. **intuan 校准** (盒子/袋子): 登录 intuan.com 账号 → 专版报价器 → 按各 JSON 里 `config` 的标准配置询价,数量档 500/1000/2000/3000/5000 → 记录 × 1.3 × 1.09 (RMB→HKD) → 更新 tiers,`src` 改 `"anchor"`。每次约 30 分钟。
+1. **intuan 校准** (盒子/袋子): 登入 intuan.com 账号 → 专版报价器 → 按各 JSON 里 `config` 的标准配置询价,数量档 500/1000/2000/3000/5000 → 记录 × 1.3 × 1.09 (RMB→HKD) → 更新 tiers,`src` 改 `"anchor"`。每次约 30 分钟。
 2. **e-print 校准** (单张/画册): e-print.com.hk 对应产品页抓完整价表 → × 0.95 (单张) / × 0.90 (画册) → 更新。
 3. **漂移告警**: 任一档位变动 > 10% → 升级 user,不静默改价。
 
@@ -61,7 +61,7 @@
   - 依据: A4 100張$600/200張$750 (上限200); A5 100張$173/200張$263/300張$503/400張$615 (上限400) — 雙面彩色 ×0.95
   - 校准价: A4 100張 HK$570 / A5 100張 HK$164 / A5 400張 HK$584
   - **500 档保留 modeled**: e-print 1小時急件不提供 500 張 (A4 max 200, A5 max 400), 按 400 張 A5 急件 + 同日 4小時複印溢價 35% 估算 HK$800, 待 intuan 急件实询校准
-- `flyers.json`: eco-flyers 维持 pending — e-print 公开页无 100% recycled/再生纸 宣傳單配置 (仅有 FSC 咭片 + 環保袋), 待 intuan 询价 (需 user WebBridge 登录态)
+- `flyers.json`: eco-flyers 维持 pending — e-print 公开页无 100% recycled/再生纸 宣傳單配置 (仅有 FSC 咭片 + 環保袋), 待 intuan 询价 (需 user WebBridge 登入)
 - 复算脚本: `.hermes/calibrate-perfect-bound-and-flyers-2026-07-21.py` (1 script 管 2 SKU, C9 攒批 1 commit = 1 build quota)
 - **P0-1 B 进度**: 3/8 任务完成 (B-2 same-day + B-7 perfect-bound + B-8 exercise-books); 剩 5 任务 (B-1 a4-flyers autoglm + B-3~6 paper-bags/packaging 4 SKU user WebBridge)
 

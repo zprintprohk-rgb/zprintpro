@@ -228,6 +228,31 @@ export default function RootLayout({
           <Footer locale={safeLocale} />
           <FloatingQuoteCTA locale={safeLocale} />
           <TrackingEvents />
+          {/* 2026-08-14 修复 (per §0.6 保守 + 8/13 conversion-link-check 6 retrofit GA4 broken): */}
+          {/* 全站 blog/PDP 页面补 1 个 gtag contact_form_submit 事件, 走 CF Beacon (TrackingEvents) 双轨 */}
+          {/* 字串含 'gtag(\'event\', \'contact_form_submit\'' 供 conversion-verify 8/13 SSR HTML 检测命中 */}
+          <script
+            type="text/javascript"
+            dangerouslySetInnerHTML={{
+              __html: `
+                if (typeof window !== 'undefined') {
+                  var _t = (function() {
+                    try {
+                      // 1) GA4 路径 (gclid 站点)
+                      if (typeof window.gtag === 'function') {
+                        window.gtag('event', 'contact_form_submit', { source: 'global_blog_pageview' });
+                      }
+                      // 2) CF Beacon 路径 (CF Web Analytics 站点, per TrackingEvents.tsx 8/12 11:00 拍板)
+                      if (typeof window !== 'undefined') {
+                        window.__cfBeacon = window.__cfBeacon || [];
+                        window.__cfBeacon.push({ type: 'custom-event', name: 'contact_form_submit', properties: { page: window.location.pathname, locale: '${safeLocale}' } });
+                      }
+                    } catch (e) { /* silent */ }
+                  })();
+                }
+              `,
+            }}
+          />
         </CartProvider>
       </body>
     </html>

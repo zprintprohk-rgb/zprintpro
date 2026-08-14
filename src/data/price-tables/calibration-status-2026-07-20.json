@@ -27,7 +27,7 @@
         {"sku": "a5-flyers", "totalTiers": 8, "calibrated": 5, "anchor": 1, "modeled_digital_sweet": 2, "modeled_pending_calibration": 0, "modeled_rush_premium": 0, "pending": 0, "status": "OK", "note": "a5 已 intuan 实询 5 档 + e-print 600 锚点; 100/300 数码甜点档保留"},
         {"sku": "a4-flyers", "totalTiers": 6, "calibrated": 0, "modeled_pending_calibration": 6, "status": "RED-FLAG", "note": "P0-1 B 阶段待 e-print A4 anchor scraping 校准 (autoglm-browser-agent 跑公开页, 无需登录)"},
         {"sku": "same-day-flyers", "totalTiers": 7, "calibrated": 0, "anchor": 6, "modeled_digital_sweet": 0, "modeled_pending_calibration": 0, "modeled_rush_premium": 1, "pending": 0, "status": "OK-1-mode", "calibratedAt": "2026-07-21", "note": "急件 1小時 e-print 实抓 ×0.95 → anchor (6 档: A4 100/200 + A5 100/200/300/400); 500 档保留 modeled (e-print 急件 1小時上限 200/400 張不提供 500)"},
-        {"sku": "eco-flyers", "totalTiers": 2, "calibrated": 0, "pending": 2, "status": "RED-FLAG", "note": "FSC/再生纸特殊价, e-print 公开页无 100% recycled 宣傳單配置 (仅有 FSC 咭片 + 環保袋), P0-1 B 阶段待 intuan 询价 (需 user WebBridge 登录态)"}
+        {"sku": "eco-flyers", "totalTiers": 2, "calibrated": 0, "pending": 2, "status": "RED-FLAG", "note": "FSC/再生纸特殊价, e-print 公开页无 100% recycled 宣傳單配置 (仅有 FSC 咭片 + 環保袋), P0-1 B 阶段待 intuan 询价 (需 user WebBridge 登入)"}
       ],
       "summary": {"calibrated": 5, "anchor": 7, "modeled_digital_sweet": 2, "redFlag": 9}
     },
@@ -69,10 +69,10 @@
     "tasks": [
       {"id": "P0-1-B-1", "category": "flyers", "sku": "a4-flyers", "method": "autoglm-browser-agent e-print.com.hk A4 公开价 scraping", "expectedTiers": 6, "estimatedTime": "30 min", "blockedBy": [], "status": "pending"},
       {"id": "P0-1-B-2", "category": "flyers", "sku": "same-day-flyers", "method": "autoglm-browser-agent e-print.com.hk 單張特急快印 1小時即取 scraping", "expectedTiers": 7, "actualTiers": 6, "estimatedTime": "20 min", "blockedBy": [], "status": "DONE-2026-07-21", "note": "A4 (100/200) + A5 (100/200/300/400) anchor 校准 ×0.95; 500 档保留 modeled"},
-      {"id": "P0-1-B-3", "category": "paper-bags", "sku": "eco-paper-bags", "method": "user WebBridge intuan.com 询价 FSC 牛皮袋", "expectedTiers": 4, "estimatedTime": "30 min (user 跑 4 配置)", "blockedBy": ["user WebBridge intuan 已登录态"], "status": "pending"},
-      {"id": "P0-1-B-4", "category": "paper-bags", "sku": "gift-bags", "method": "user WebBridge intuan.com 询价烫金礼盒袋", "expectedTiers": 3, "estimatedTime": "30 min (user 跑 3 配置)", "blockedBy": ["user WebBridge intuan 已登录态"], "status": "pending"},
-      {"id": "P0-1-B-5", "category": "packaging", "sku": "gift-boxes", "method": "user WebBridge intuan.com 询价天地盖/书型盒", "expectedTiers": 3, "estimatedTime": "30 min", "blockedBy": ["user WebBridge intuan 已登录态"], "status": "CANCELLED-2026-07-22", "note": "M3 v6: gift-boxes 合并入 rigid-boxes (13→12 SKU, GSC 28天数据互相抢词), 此任务不再需要"},
-      {"id": "P0-1-B-6", "category": "packaging", "sku": "food-boxes", "method": "user WebBridge intuan.com 询价 FDA 食品级卡盒", "expectedTiers": 2, "estimatedTime": "20 min", "blockedBy": ["user WebBridge intuan 已登录态"], "status": "pending"},
+      {"id": "P0-1-B-3", "category": "paper-bags", "sku": "eco-paper-bags", "method": "user WebBridge intuan.com 询价 FSC 牛皮袋", "expectedTiers": 4, "estimatedTime": "30 min (user 跑 4 配置)", "blockedBy": ["user WebBridge intuan 已登入"], "status": "pending"},
+      {"id": "P0-1-B-4", "category": "paper-bags", "sku": "gift-bags", "method": "user WebBridge intuan.com 询价烫金礼盒袋", "expectedTiers": 3, "estimatedTime": "30 min (user 跑 3 配置)", "blockedBy": ["user WebBridge intuan 已登入"], "status": "pending"},
+      {"id": "P0-1-B-5", "category": "packaging", "sku": "gift-boxes", "method": "user WebBridge intuan.com 询价天地盖/书型盒", "expectedTiers": 3, "estimatedTime": "30 min", "blockedBy": ["user WebBridge intuan 已登入"], "status": "CANCELLED-2026-07-22", "note": "M3 v6: gift-boxes 合并入 rigid-boxes (13→12 SKU, GSC 28天数据互相抢词), 此任务不再需要"},
+      {"id": "P0-1-B-6", "category": "packaging", "sku": "food-boxes", "method": "user WebBridge intuan.com 询价 FDA 食品级卡盒", "expectedTiers": 2, "estimatedTime": "20 min", "blockedBy": ["user WebBridge intuan 已登入"], "status": "pending"},
       {"id": "P0-1-B-7", "category": "books", "sku": "perfect-bound-books", "method": "autoglm-browser-agent e-print.com.hk A5 直度 4+32PP 內文80G書紙 250g 封面 scraping", "expectedTiers": 7, "estimatedTime": "30 min", "blockedBy": [], "status": "DONE-2026-07-21", "note": "7 档 anchor 校准 ×0.90 (100/500/1000/2000/3000/5000/10000)"},
       {"id": "P0-1-B-8", "category": "books", "sku": "exercise-books", "method": "DONE-2026-07-20", "expectedTiers": 5, "actualTiers": 5, "estimatedTime": "DONE", "blockedBy": [], "status": "DONE-2026-07-20", "note": "A5 32PP 全書80g書紙黑白骑马钉 e-print 实抓 ×0.90 → anchor 5 档"}
     ],
@@ -81,6 +81,6 @@
   "dataSources": {
     "intuan_login_quotes": "src/data/price-tables/intuan-real-quotes-2026-07-18.json (6 产品已询)",
     "eprint_public_anchor": "e-print.com.hk 公开价 (autoglm-browser-agent / curl 可直接抓, 无需登录) — 2026-07-21 实抓 4 页: 膠裝書刊 / 騎馬釘書刊 / 柯式傳單印刷 / 數碼傳單印刷 / 單張特急快印",
-    "user_webbridge_session": "intuan.com 已登录态 (cookie/devtools), user 持有, 需要时贴给 Mavis"
+    "user_webbridge_session": "intuan.com 已登入 (cookie/devtools), user 持有, 需要时贴给 Mavis"
   }
 }

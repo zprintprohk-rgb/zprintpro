@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "source": "intuan.com 登录态真实询价 (WebBridge 驱动报价系统)",
+    "source": "intuan.com 登入真实询价 (WebBridge 驱动报价系统)",
     "queriedAt": "2026-07-18 02:40-02:50",
     "currency": "CNY (自助价格, 未税; 原价=含税)",
     "strategy": "user 拍板: 专版报价 ×1.3 上浮 → RMB 零售 → ×1.087 → HKD (1 CNY ≈ 1.087 HKD, fx.ts 0.92 静态率)",
