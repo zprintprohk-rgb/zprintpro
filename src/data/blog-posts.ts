@@ -290,9 +290,9 @@ const lpCompanyIntro: BlogPostMeta = {
     ja: 'ZprintProはハイデルベルグ6+1印刷機、HPデジタル印刷機、マルティニ製本ラインなどの先進設備を保有し、ワンストップ印刷サービスを提供しています。',
   },
   cover: {
-    'zh-hk': '/images/blog/zh-hk/company-intro.webp',
+    'zh-hk': '/images/blog/en/company-intro.webp',
     en: '/images/blog/en/company-intro.webp',
-    ja: '/images/blog/ja/company-intro.webp',
+    ja: '/images/blog/en/company-intro.webp',
   },
 };
 
@@ -312,9 +312,9 @@ const lpStickerGuide: BlogPostMeta = {
     ja: '香港ステッカー印刷の様々な材質選択、表面処理、応用シーンを詳しく解説。',
   },
   cover: {
-    'zh-hk': '/images/blog/zh-hk/sticker-guide.webp',
+    'zh-hk': '/images/blog/en/sticker-guide.webp',
     en: '/images/blog/en/sticker-guide.webp',
-    ja: '/images/blog/ja/sticker-guide.webp',
+    ja: '/images/blog/en/sticker-guide.webp',
   },
 };
 
@@ -334,9 +334,9 @@ const lpBusinessCardDesign: BlogPostMeta = {
     ja: 'レイアウトから色の組み合わせまで、ステッカーデザインの中核テクニックをマスター。',
   },
   cover: {
-    'zh-hk': '/images/blog/zh-hk/business-card-design.webp',
+    'zh-hk': '/images/blog/en/business-card-design.webp',
     en: '/images/blog/en/business-card-design.webp',
-    ja: '/images/blog/ja/business-card-design.webp',
+    ja: '/images/blog/en/business-card-design.webp',
   },
 };
 
@@ -356,9 +356,9 @@ const lpPackagingTrends: BlogPostMeta = {
     ja: '2024年最新パッケージボックスデザイントレンドを探る。',
   },
   cover: {
-    'zh-hk': '/images/blog/blog-packaging-trends-zh-hk.webp',
-    en: '/images/blog/blog-sticker-guide-en.webp',
-    ja: '/images/blog/blog-sticker-guide-ja.webp',
+    'zh-hk': '/images/blog/en/packaging-trends.webp',
+    en: '/images/blog/en/packaging-trends.webp',
+    ja: '/images/blog/en/packaging-trends.webp',
   },
 };
 
@@ -378,9 +378,9 @@ const lpCmykGuide: BlogPostMeta = {
     ja: 'CMYKとRGBカラーモードの違いを理解し、印刷で最適な効果を得る。',
   },
   cover: {
-    'zh-hk': '/images/blog/blog-sticker-guide-zh-hk.webp',
-    en: '/images/blog/blog-business-card-design-en-3.webp',
-    ja: '/images/blog/blog-business-card-design-ja-3.webp',
+    'zh-hk': '/images/blog/en/cmyk-guide.webp',
+    en: '/images/blog/en/cmyk-guide.webp',
+    ja: '/images/blog/en/cmyk-guide.webp',
   },
 };
 
@@ -400,9 +400,9 @@ const lpPaperMaterials: BlogPostMeta = {
     ja: '異なる紙材の特性と適用シーンの分析。',
   },
   cover: {
-    'zh-hk': '/images/blog/blog-packaging-trends-zh-hk.webp',
-    en: '/images/blog/blog-sticker-guide-en.webp',
-    ja: '/images/blog/blog-sticker-guide-ja.webp',
+    'zh-hk': '/images/blog/en/paper-materials.webp',
+    en: '/images/blog/en/paper-materials.webp',
+    ja: '/images/blog/en/paper-materials.webp',
   },
 };
 
@@ -422,9 +422,9 @@ const lpEcoPrinting: BlogPostMeta = {
     ja: 'エコ印刷材料と工程を理解し、地球とブランドイメージの双赢を選択。',
   },
   cover: {
-    'zh-hk': '/images/blog/blog-packaging-trends-zh-hk-2.webp',
-    en: '/images/blog/blog-sticker-guide-en-2.webp',
-    ja: '/images/blog/blog-sticker-guide-ja-2.webp',
+    'zh-hk': '/images/blog/en/eco-printing.webp',
+    en: '/images/blog/en/eco-printing.webp',
+    ja: '/images/blog/en/eco-printing.webp',
   },
 };
 
@@ -444,9 +444,9 @@ const lpHKPrintingGuide: BlogPostMeta = {
     ja: 'オリジナルステッカー・パッケージ・印刷物の完全ガイド。素材（ビニール・PVC・クラフト・透明・箔押し）・小ロット（30枚〜）・短納期（最短3日出荷）・全国送料込み・DHL国際配送対応。中小企業・D2Cブランド・同人サークル向け。',
   },
   cover: {
-    'zh-hk': '/images/blog/blog-sticker-guide-zh-hk.webp',
-    en: '/images/blog/blog-sticker-guide-en-2.webp',
-    ja: '/images/blog/blog-sticker-guide-ja-2.webp',
+    'zh-hk': '/images/blog/en/hong-kong-printing-guide.webp',
+    en: '/images/blog/en/hong-kong-printing-guide.webp',
+    ja: '/images/blog/en/hong-kong-printing-guide.webp',
   },
 };
 
@@ -466,9 +466,9 @@ const lpDesignFileSpecs: BlogPostMeta = {
     ja: 'ブリード、解像度、カラーモードの変換をマスター。',
   },
   cover: {
-    'zh-hk': '/images/blog/blog-sticker-guide-zh-hk-2.webp',
-    en: '/images/blog/blog-sticker-guide-en-3.webp',
-    ja: '/images/blog/blog-sticker-guide-ja-3.webp',
+    'zh-hk': '/images/blog/en/design-file-specs.webp',
+    en: '/images/blog/en/design-file-specs.webp',
+    ja: '/images/blog/en/design-file-specs.webp',
   },
 };
 
@@ -488,9 +488,9 @@ const lpBrandChecklist: BlogPostMeta = {
     ja: 'スタートアップからブランドリニューアルまで、完全な印刷資材チェックリスト。',
   },
   cover: {
-    'zh-hk': '/images/blog/blog-business-card-design-zh-hk.webp',
-    en: '/images/blog/blog-business-card-design-en.webp',
-    ja: '/images/blog/blog-business-card-design-ja.webp',
+    'zh-hk': '/images/blog/en/brand-materials-checklist.webp',
+    en: '/images/blog/en/brand-materials-checklist.webp',
+    ja: '/images/blog/en/brand-materials-checklist.webp',
   },
 };
 
@@ -510,9 +510,9 @@ const lpMtrSpecs: BlogPostMeta = {
     ja: 'イベントポスター・展示パネル・展示会の印刷仕様。標準サイズ（A3/A2/A1/A0/24x36インチ）・用紙（光沢・マット・PP・キャンバス）・加工（UVラミネート・穴あけ・グロメット）・短納期（3日〜7日出荷）・DHL国際配送対応。展示会主催・イベント企画会社向け。',
   },
   cover: {
-    'zh-hk': '/images/blog/blog-business-card-design-zh-hk-2.webp',
-    en: '/images/blog/blog-business-card-design-en-2.webp',
-    ja: '/images/blog/blog-business-card-design-ja-2.webp',
+    'zh-hk': '/images/blog/en/mtr-advertising-specs.webp',
+    en: '/images/blog/en/mtr-advertising-specs.webp',
+    ja: '/images/blog/en/mtr-advertising-specs.webp',
   },
 };
 
@@ -532,9 +532,9 @@ const lpFlyerPrintingGuide: BlogPostMeta = {
     ja: 'オリジナルチラシ印刷完全ガイド。標準サイズ（A4・A5・B5・A6）・用紙（コート紙・マット紙・上質紙・再生紙）・加工（両面印刷・折り・PP加工）・小ロット対応（30枚〜5000枚）・短納期（3日〜7日出荷）。飲食店・小売・不動産・イベント主催者向け。',
   },
   cover: {
-    'zh-hk': '/images/blog/zh-hk/flyer-printing-guide.webp',
+    'zh-hk': '/images/blog/en/flyer-printing-guide.webp',
     en: '/images/blog/en/flyer-printing-guide.webp',
-    ja: '/images/blog/ja/flyer-printing-guide.webp',
+    ja: '/images/blog/en/flyer-printing-guide.webp',
   },
 };
 
@@ -554,9 +554,9 @@ const lpFoodPackagingGuide: BlogPostMeta = {
     ja: '食品グレードパッケージ印刷の選び方—クラフト紙箱から食品対応ラミネート、認証からデザイン実務まで徹底解説。',
   },
   cover: {
-    'zh-hk': '/images/blog/zh-hk/food-packaging-printing-guide.webp',
+    'zh-hk': '/images/blog/en/food-packaging-printing-guide.webp',
     en: '/images/blog/en/food-packaging-printing-guide.webp',
-    ja: '/images/blog/ja/food-packaging-printing-guide.webp',
+    ja: '/images/blog/en/food-packaging-printing-guide.webp',
   },
 };
 
@@ -576,9 +576,9 @@ const lpPaperBagPrintingGuide: BlogPostMeta = {
     ja: 'クラフト紙袋、白カード紙袋、ギフト紙袋、エコバッグまで、日本の boutique・カフェ・小売向けに紙袋印刷を徹底解説。30枚〜、短納期（3日〜7日出荷）、全国送料込み。',
   },
   cover: {
-    'zh-hk': '/images/blog/zh-hk/paper-bag-printing-guide.webp',
+    'zh-hk': '/images/blog/en/paper-bag-printing-guide.webp',
     en: '/images/blog/en/paper-bag-printing-guide.webp',
-    ja: '/images/blog/ja/paper-bag-printing-guide.webp',
+    ja: '/images/blog/en/paper-bag-printing-guide.webp',
   },
 };
 
@@ -599,9 +599,9 @@ const lpPosterPrintingGuide: BlogPostMeta = {
     ja: 'オリジナルポスター印刷完全ガイド。標準サイズ（A3・A2・A1・A0・B1・B2）・用紙（光沢紙・マット紙・合成紙・耐水PP・キャンバス）・加工（UVラミネート・PP加工・周囲テープ）・短納期（3日〜7日出荷）。イベント主催・展示会・小売店・不動産向け。',
   },
   cover: {
-    'zh-hk': '/images/blog/zh-hk/poster-printing-guide.webp',
+    'zh-hk': '/images/blog/en/poster-printing-guide.webp',
     en: '/images/blog/en/poster-printing-guide.webp',
-    ja: '/images/blog/ja/poster-printing-guide.webp',
+    ja: '/images/blog/en/poster-printing-guide.webp',
   },
 };
 
@@ -624,9 +624,9 @@ const lpPackagingBoxCustomGuide: BlogPostMeta = {
     ja: '天地蓋箱・ブック型・引き出し箱・メールナー箱・マグネット式——6つの主要箱型を横並びで徹底比較。ブランドと予算に合った箱を、素材と加工の提案とともにお届け。',
   },
   cover: {
-    'zh-hk': '/images/blog/zh-hk/sticker-guide.webp',
-    en: '/images/blog/en/sticker-guide.webp',
-    ja: '/images/blog/ja/sticker-guide.webp',
+    'zh-hk': '/images/blog/en/packaging-box-custom-guide.webp',
+    en: '/images/blog/en/packaging-box-custom-guide.webp',
+    ja: '/images/blog/en/packaging-box-custom-guide.webp',
   },
 };
 
@@ -652,6 +652,11 @@ const lpRestaurantOpeningFlyer: BlogPostMeta = {
   },
   // 故意不写 cover 字段 — 純文字博客 (v2 硬约束 2026-07-04)
   // getBlogCover 检测 meta.cover 为 undefined 时返回 '',page.tsx 据此跳过 hero 图渲染
+  cover: {
+    'zh-hk': '/images/blog/en/restaurant-opening-flyer-printing-guide.webp',
+    en: '/images/blog/en/restaurant-opening-flyer-printing-guide.webp',
+    ja: '/images/blog/en/restaurant-opening-flyer-printing-guide.webp',
+  },
 };
 
 // 2026-07-06 v4 純文字深度博客 (no cover) — Tier A 寵物 × P0 stickers 類目
@@ -671,6 +676,11 @@ const lpPetFoodSticker: BlogPostMeta = {
     en: 'Pet food, treat, supplement brand owners — premium waterproof and food-safe stickers decide shelf conversion. FDA-compliant label materials, 1,000 to 100,000-piece runs, 5-7 working day delivery from Asia factory with DHL 2-4 day global shipping.',
     ja: 'ペットフード・おやつ・サプリメントブランドオーナー様へ。防水・食品衛生基準準拠ステッカーが棚前転換率を決める。FDA 準拠素材、1,000〜100,000枚小〜大ロット、5-7営業日納品、DHL 2-4日全世界配送。',
   },
+  cover: {
+    'zh-hk': '/images/blog/en/pet-food-sticker-printing-guide.webp',
+    en: '/images/blog/en/pet-food-sticker-printing-guide.webp',
+    ja: '/images/blog/en/pet-food-sticker-printing-guide.webp',
+  },
 };
 
 // 2026-07-06 v4 純文字深度博客 (no cover) — Tier A 跨境電商 × P0 packaging 類目
@@ -688,6 +698,11 @@ const lpCrossBorderShipping: BlogPostMeta = {
     'zh-hk': 'Shopify、Amazon FBA、獨立站賣家必睇。一個高質素、印刷精美的快遞盒決定客戶開箱體驗和回購率。智印港提供 3 層 B 瓦楞抗壓結構、DHL/FedEx/UPS 全兼容尺寸、FSC 認證紙材,500-50,000 個小至大批量,3-7 個工作天交付。',
     en: 'Shopify, Amazon FBA, and DTC brand owners — a premium printed shipping box decides unboxing experience and repeat purchase. Durable 3-ply B-flute, DHL/FedEx/UPS-compatible sizes, FSC-certified materials, 500-50,000 piece runs, 3-7 working day delivery from Asia factory.',
     ja: 'Shopify、Amazon FBA、独立系 EC ブランドオーナー様へ。プレミアム感のある配送箱が開封体験とリピート率を決める。3層 B フルート耐圧構造、DHL/FedEx/UPS 互換サイズ、FSC 認証素材、500〜50,000個小〜大ロット、3-7営業日納品。',
+  },
+  cover: {
+    'zh-hk': '/images/blog/en/cross-border-ecommerce-shipping-box-guide.webp',
+    en: '/images/blog/en/cross-border-ecommerce-shipping-box-guide.webp',
+    ja: '/images/blog/en/cross-border-ecommerce-shipping-box-guide.webp',
   },
 };
 
@@ -708,6 +723,11 @@ const lpCosmeticsPackagingBox: BlogPostMeta = {
     en: 'Skincare, serum, mask, perfume brand owners — a well-structured custom cosmetics packaging box decides the 3-second shelf purchase. ZprintPro supplies lid-base, book-style, and magnetic boxes, 50-10,000 piece runs, 5-10 working day delivery from Asia factory with DHL 2-4 day global shipping.',
     ja: 'スキンケア・美容液・マスク・香水ブランドオーナー様へ。精巧な構造と精美印刷の化粧品パッケージ箱が棚前 3秒の購買決定を決める。天地蓋箱・ブック型・マグネット式全シリーズ対応、50-10,000個小〜大ロット、5-10営業日納品。',
   },
+  cover: {
+    'zh-hk': '/images/blog/en/cosmetics-packaging-box-printing-guide.webp',
+    en: '/images/blog/en/cosmetics-packaging-box-printing-guide.webp',
+    ja: '/images/blog/en/cosmetics-packaging-box-printing-guide.webp',
+  },
 };
 
 // 2026-07-07 v4 純文字深度博客 (no cover) — Tier A 茶飲食品 × P0 packaging 類目
@@ -726,6 +746,11 @@ const lpTeaBeverageGiftBox: BlogPostMeta = {
     'zh-hk': '手搖飲品店、茶葉電商、中式茶禮盒品牌老闆必睇。一個有質感的茶飲品牌禮盒決定客戶回購及節日送禮首選。智印港為香港本地及跨境茶飲品牌提供 100-50,000 個食品級內襯禮盒定制,FDA 認證紙材,5-10 個工作天交付。',
     en: 'Bubble tea shops, loose-leaf tea e-commerce, and Chinese tea gift box brand owners — a premium tea gift box decides repeat purchase and seasonal gifting. ZprintPro supplies 100-50,000 piece FDA-certified food-grade inner liner gift boxes, 5-10 working day delivery from Asia factory.',
     ja: 'タピオカ店、リーフティー EC、中華茶ギフトボックスブランドオーナー様へ。上質感ある茶ギフトボックスがリピートと季節ギフトを決める。FDA 認証食品グレード内装 100-50,000個小〜大ロット、5-10営業日納品。',
+  },
+  cover: {
+    'zh-hk': '/images/blog/en/tea-beverage-gift-box-printing-guide.webp',
+    en: '/images/blog/en/tea-beverage-gift-box-printing-guide.webp',
+    ja: '/images/blog/en/tea-beverage-gift-box-printing-guide.webp',
   },
 };
 
@@ -746,6 +771,11 @@ const lpWeddingFavorBag: BlogPostMeta = {
     en: 'Engaged couples, wedding planners, and venues — premium wedding favor bags and invitations set the first impression for guests. ZprintPro supplies 100-3,000 small-batch custom orders with satin ribbon handles, foil stamping, and personalized names, 5-10 working day delivery from Asia factory.',
     ja: 'ご婚約カップル、ウェディングプランナー、式場様へ。2026辰年ブライダルシーズン、上質感のあるギフトバッグと招待状がゲストの第一印象を決める。サテンリボン持ち手・箔押し・新郎新婦名パーソナライズ、100-3,000個小ロット、5-10営業日納品。',
   },
+  cover: {
+    'zh-hk': '/images/blog/en/wedding-favor-bag-printing-guide.webp',
+    en: '/images/blog/en/wedding-favor-bag-printing-guide.webp',
+    ja: '/images/blog/en/wedding-favor-bag-printing-guide.webp',
+  },
 };
 
 // 2026-07-08 v4 純文字深度博客 (no cover) — P1 unlock 開始
@@ -765,6 +795,11 @@ const lpRetailPoster: BlogPostMeta = {
     en: 'Boutique, brand pop-up store, and mall retail owners — premium in-store posters decide customer dwell time and conversion. ZprintPro supplies 10-1,000 piece runs, A3/A2/A1/A0 full sizes, waterproof PP film options, 3-5 working day delivery from Asia factory.',
     ja: 'ブティック・ブランド pop-up・モール小売オーナー様へ。高品質店内ポスターが顧客滞在時間とコンバージョンを決める。ZprintProは10-1,000枚小〜大ロット、A3/A2/A1/A0 全サイズ、防水 PP フィルム、3-5営業日納品。',
   },
+  cover: {
+    'zh-hk': '/images/blog/en/retail-shop-poster-printing-guide.webp',
+    en: '/images/blog/en/retail-shop-poster-printing-guide.webp',
+    ja: '/images/blog/en/retail-shop-poster-printing-guide.webp',
+  },
 };
 
 // Q-P1-02 (menus × 餐飲外賣)
@@ -783,6 +818,11 @@ const lpRestaurantMenu: BlogPostMeta = {
     en: 'Restaurant, cafe, dessert shop, and banquet owners — a premium menu is the last gate before order and an extension of brand identity. ZprintPro supplies 50-5,000 piece runs, waterproof PP lamination, hardcover, and disposable paper menus, 5-7 working day delivery from Asia factory.',
     ja: 'レストラン・カフェ・デザート店・宴会オーナー様へ。高品質メニューが注文決定の最後の関門でありブランドアイデンティティの延長。ZprintProは50-5,000枚小〜大ロット、防水 PP ラミネート・ハードカバー・使い捨て紙メニュー全シリーズ、5-7営業日納品。',
   },
+  cover: {
+    'zh-hk': '/images/blog/en/restaurant-menu-printing-guide.webp',
+    en: '/images/blog/en/restaurant-menu-printing-guide.webp',
+    ja: '/images/blog/en/restaurant-menu-printing-guide.webp',
+  },
 };
 
 // Q-P1-03 (red-packets × 婚慶)
@@ -800,6 +840,11 @@ const lpWeddingRedPacket: BlogPostMeta = {
     'zh-hk': '準新人、婚禮統籌師、宴會場地必睇。2026 龍年結婚旺季,一套精美的婚禮利是封決定賓客對婚禮的第一印象。智印港為香港婚慶市場提供 100-10,000 個小至大批量定制,燙金新人姓名、個性化祝福語、繁體中文工藝,5-10 個工作天交付。',
     en: 'Engaged couples, wedding planners, and venues — premium wedding red packets set the first impression for guests. ZprintPro supplies 100-10,000 piece custom orders with foil-stamped couple names, personalized blessings, 5-10 working day delivery from Asia factory.',
     ja: 'ご婚約カップル・ウェディングプランナー・式場様へ。2026辰年ブライダルシーズン、精致な結婚祝儀袋がゲストの第一印象を決める。ZprintProは100-10,000個カスタムオーダー対応、箔押し新郎新婦名・パーソナライズ祝福・繁体字工芸、5-10営業日納品。',
+  },
+  cover: {
+    'zh-hk': '/images/blog/en/wedding-red-packet-printing-guide.webp',
+    en: '/images/blog/en/wedding-red-packet-printing-guide.webp',
+    ja: '/images/blog/en/wedding-red-packet-printing-guide.webp',
   },
 };
 
@@ -823,6 +868,11 @@ const lpRealEstateBrochureBox: BlogPostMeta = {
     en: 'Property developers, agencies, and showroom curators — a premium brochure + rigid property box decides the first impression with serious buyers. ZprintPro delivers saddle stitch, perfect bound, hardcover brochures + rigid telescopic boxes, 100-5,000 piece runs, 5-10 working day delivery, DHL 2-4 day worldwide shipping.',
     ja: 'デベロッパー・仲介・ショールーム運営者様へ。プレミアムパンフレット＋ハードケース資料箱が本気で購入検討する顧客への第一印象を決める。中綴じ・無線綴じ・上製本＋ハードケース天地蓋箱、100-5,000セット対応、5-10営業日納品、DHL 2-4日国際配送。',
   },
+  cover: {
+    'zh-hk': '/images/blog/en/real-estate-brochure-box-printing-guide.webp',
+    en: '/images/blog/en/real-estate-brochure-box-printing-guide.webp',
+    ja: '/images/blog/en/real-estate-brochure-box-printing-guide.webp',
+  },
 };
 
 const lpPharmaceuticalLabel: BlogPostMeta = {
@@ -840,6 +890,11 @@ const lpPharmaceuticalLabel: BlogPostMeta = {
     en: 'Pharma manufacturers, supplement brands, and clinical trial operators — a GMP-compliant, traceable, tamper-evident label decides regulatory approval. ZprintPro delivers FDA 21 CFR / EU GMP Annex 15 compliant labels, 1,000-500,000 piece runs, 7-15 working day delivery, DHL 2-4 day shipping.',
     ja: '製薬会社・サプリメントブランド・臨床試験機関様へ。GMP準拠・トレーサブル・改ざん防止ラベルが承認審査の鍵。FDA 21 CFR / EU GMP Annex 15準拠ラベルを提供、1,000-500,000枚対応、7-15営業日納品、DHL 2-4日国際配送。',
   },
+  cover: {
+    'zh-hk': '/images/blog/en/pharmaceutical-label-printing-guide.webp',
+    en: '/images/blog/en/pharmaceutical-label-printing-guide.webp',
+    ja: '/images/blog/en/pharmaceutical-label-printing-guide.webp',
+  },
 };
 
 const lpJewelleryShoppingBag: BlogPostMeta = {
@@ -856,6 +911,11 @@ const lpJewelleryShoppingBag: BlogPostMeta = {
     'zh-hk': '珠寶鐘錶品牌、買手店、奢侈品經銷商必睇。一個高質感的品牌紙袋決定客人離開店後的 1 小時曝光。智印港為珠寶鐘錶品牌提供黑卡紙、白卡紙、燙金、UV 局部、絲帶手挽全套紙袋定制,200-50,000 枚小至大批量,7-15 個工作天交付,DHL 全球 2-4 天配送。',
     en: 'Jewellery, watch, and luxury boutique owners — a premium branded paper bag decides the 1-hour post-purchase exposure. ZprintPro delivers black card, white card, foil stamping, spot UV, satin ribbon handles, 200-50,000 piece runs, 7-15 working day delivery, DHL 2-4 day shipping.',
     ja: '宝飾・腕時計・ラグジュアリーブティックオーナー様へ。プレミアム感のあるブランド紙袋が購入後1時間の露出を決める。ZprintProはブラックカード・ホワイトカード・箔押し・スポットUV・サテンリボン持ち手を提供、200-50,000枚対応、7-15営業日納品、DHL 2-4日国際配送。',
+  },
+  cover: {
+    'zh-hk': '/images/blog/en/jewellery-shopping-bag-printing-guide.webp',
+    en: '/images/blog/en/jewellery-shopping-bag-printing-guide.webp',
+    ja: '/images/blog/en/jewellery-shopping-bag-printing-guide.webp',
   },
 };
 
@@ -876,6 +936,11 @@ const lpProductLabel: BlogPostMeta = {
     en: 'Amazon US FBA, Etsy, Shopify, and DTC brand owners — a compliant UPC barcode, FDA-compliant, FNSKU-ready product label decides whether your shipment clears Amazon\'s Sort Center or sits stuck. ZprintPro prints GS1 UPC, FNSKU, Country of Origin, Prop 65 / CPSC / CPSIA labels for US-bound inventory in 1,000-500,000 piece runs, 5-7 business day production.',
     ja: 'Amazon FBA、Shopify 独立 station、Etsy、AliExpress セラーへ。コンプライアンス適合の SKU ラベルがプラットフォーム審査通過率と第一印象を決定。ZprintProは GS1 EAN/UPC バーコード、FDA 食品衛生素材、防水耐裂 SKU ラベルを 1,000-500,000 枚規模で 5-7 営業日納品。',
   },
+  cover: {
+    'zh-hk': '/images/blog/en/product-label-printing-guide.webp',
+    en: '/images/blog/en/product-label-printing-guide.webp',
+    ja: '/images/blog/en/product-label-printing-guide.webp',
+  },
 };
 
 const lpGraduationYearbook: BlogPostMeta = {
@@ -893,6 +958,11 @@ const lpGraduationYearbook: BlogPostMeta = {
     en: 'High school yearbook advisors, senior class officers, JROTC, booster clubs, homeschool co-ops — a US yearbook that wins a Columbia Scholastic Press Association Crown Award or NSPA Pacemaker costs US$8-22 per copy with ads. ZprintPro prints saddle stitch, perfect bound, and Smyth-sewn hardcover yearbooks in 50-2,000 copy runs in 5-10 business days.',
     ja: '中学校、大学、予備校、インターナショナルスクール、PTA へ。高品質卒業記念アルバムは永遠の思い出と同窓ネットワーク形成の起点。ZprintProは中綴じ / 無線綴じ / 上製本の 3 種類装丁 + クラス写真 + 教員メッセージ + 学校ロゴ全面カスタマイズを 50-500 部小ロットで 5-10 営業日納品。',
   },
+  cover: {
+    'zh-hk': '/images/blog/en/graduation-yearbook-printing-guide.webp',
+    en: '/images/blog/en/graduation-yearbook-printing-guide.webp',
+    ja: '/images/blog/en/graduation-yearbook-printing-guide.webp',
+  },
 };
 
 const lpIpCharacterSticker: BlogPostMeta = {
@@ -909,6 +979,11 @@ const lpIpCharacterSticker: BlogPostMeta = {
     'zh-hk': '插畫師、漫畫家、文創品牌、VTuber、動漫周邊設計師必睇。一張極具辨識度的 IP 角色造型貼紙決定品牌粉絲忠誠度與商品溢價能力。智印港為香港及跨境文創市場提供任意形狀模切 + UV 印刷 + 多材質 + 燙金工藝全套定制,100-100,000 枚小至大批量,5-7 個工作天交付。',
     en: 'Etsy US shop owners, Comic-Con Artist Alley creators, TikTok-Instagram side hustlers, US small brand founders — a high-margin die-cut sticker shop runs on Etsy US SEO ranking signals, US$0.30-1.50 per-sticker COGS, and USPS-friendly packaging. ZprintPro prints holographic, glow, foil, and matte vinyl die-cut stickers for 100-100,000 piece runs in 5-7 business days.',
     ja: 'イラストレーター・漫画家・クリエイターブランド・VTuber・アニメ周辺デザイナーへ。認知度の高い IP キャラクター型ステッカーがファンロイヤルティと商品プレミアムを決定。ZprintProは任意形状型抜き、UV 印刷、複数素材、箔押し工法を 100-100,000 枚規模で 5-7 営業日納品、DHL 国際配送対応。',
+  },
+  cover: {
+    'zh-hk': '/images/blog/en/ip-character-sticker-printing-guide.webp',
+    en: '/images/blog/en/ip-character-sticker-printing-guide.webp',
+    ja: '/images/blog/en/ip-character-sticker-printing-guide.webp',
   },
 };
 
@@ -929,6 +1004,11 @@ const lpTradeShowBanner: BlogPostMeta = {
     en: 'US small business owners, Etsy / Shopify brands, Comic-Con / Anime Expo exhibitors — a premium retractable or backdrop banner decides booth traffic and brand recall. Free design, 100 MOQ, 5-7 business day production, free shipping over US$99, DHL Express 2-4 day delivery to US ZIP codes.',
     ja: '米国中小企業・Etsy/Shopify ブランド・Comic-Con / Anime Expo 出展者向け。高品質ロールアップバナー / バックドロップがブース動員とブランド想起を決定。無料デザイン・100 MOQ・5-7 営業日生産・US$99 以上無料配送・DHL Express 2-4 日米国配送。',
   },
+  cover: {
+    'zh-hk': '/images/blog/en/trade-show-banner-printing-guide.webp',
+    en: '/images/blog/en/trade-show-banner-printing-guide.webp',
+    ja: '/images/blog/en/trade-show-banner-printing-guide.webp',
+  },
 };
 
 // Q-P2-02 (envelopes × 婚慶)
@@ -946,6 +1026,11 @@ const lpWeddingEnvelope: BlogPostMeta = {
     'zh-hk': '準新人、婚禮統籌師、酒店宴會場地必睇。一個精緻嘅婚禮邀請信封決定賓客對婚禮嘅第一印象。智印港為香港婚慶市場提供珍珠白、象牙白、燙金內襯、玫瑰金閃粉等 6 大材質,DL / A7 / C6 / 自訂尺寸全套定制,100-3,000 個小批量,5-10 個工作天交付,順豐本地港九新界免運費。',
     en: 'Engaged couples, wedding planners, stationery designers — premium pearl, foil-lined, custom-sized wedding invitation envelopes set the first impression. Free design, 100 MOQ, 5-10 business day production, DHL Express 2-4 day global shipping.',
     ja: 'ご婚約カップル・ウェディングプランナー・ステーショナリーデザイナー向け。上質パール・箔押し内側・カスタムサイズ封筒が第一印象を決定。無料デザイン・100 MOQ・5-10 営業日生産・DHL Express 国際配送対応。',
+  },
+  cover: {
+    'zh-hk': '/images/blog/en/wedding-invitation-envelope-printing-guide.webp',
+    en: '/images/blog/en/wedding-invitation-envelope-printing-guide.webp',
+    ja: '/images/blog/en/wedding-invitation-envelope-printing-guide.webp',
   },
 };
 
@@ -965,6 +1050,11 @@ const lpDoujinCircle: BlogPostMeta = {
     en: 'Indie comic creators, zine makers, Comic-Con Artist Alley exhibitors, indie game studios — premium small-batch doujin booklet printing with 30-copy MOQ, 5-7 business day production, free design mockup, and DHL Express global shipping.',
     ja: '同人作家・zine 作家・Comic-Con Artist Alley 出展者・インディーゲームスタジオ向け。プレミアム同人誌印刷 30 部 MOQ・5-7 営業日生産・無料デザインモックアップ・DHL Express 国際配送対応。',
   },
+  cover: {
+    'zh-hk': '/images/blog/en/doujin-circle-printing-guide.webp',
+    en: '/images/blog/en/doujin-circle-printing-guide.webp',
+    ja: '/images/blog/en/doujin-circle-printing-guide.webp',
+  },
 };
 
 // Q-010 (stickers × 酒店民宿) - 2026-07-13 daily
@@ -982,6 +1072,11 @@ const lpHotelAmenitySticker: BlogPostMeta = {
     'zh-hk': '香港酒店業、半島、洲際、悅榕庄、精品酒店同 B&B 民宿必睇。100 個起印 + 防水 PVC + 燙金 logo + 順豐本地配送 + 5-7 個工作天交貨。',
     en: 'US hotels, B&Bs, Airbnb hosts, resorts, spa properties: Free Shipping $99+ Continental US, 100 MOQ, Free Design Mockup, waterproof PVC + foil logo, 5-7 business day delivery.',
     ja: 'ホテル・旅館・民泊オーナー向け。100 個から小ロット + 防水 PVC + 箔押しロゴ + 日本全国 2-4 日配送 + 沖縄・北海道も同料金。',
+  },
+  cover: {
+    'zh-hk': '/images/blog/en/hotel-amenity-sticker-printing-guide.webp',
+    en: '/images/blog/en/hotel-amenity-sticker-printing-guide.webp',
+    ja: '/images/blog/en/hotel-amenity-sticker-printing-guide.webp',
   },
 };
 
@@ -1001,6 +1096,11 @@ const lpFinanceSummitGiftBag: BlogPostMeta = {
     en: 'US banks, wealth management firms, broker-dealers, insurance carriers, family offices: FSC-certified kraft + white card + magnetic closure, 100 MOQ, foil-stamped logo, 5-7 business day delivery to US ZIP codes.',
     ja: '日本の銀行、ウェルス・マネジメント会社、証券会社、保険会社、ファミリーオフィス向け。FSC 認証クラフト・白カード・磁石クロージャー、100 個から小ロット対応、5-7 営業日生産、全国送料無料。',
   },
+  cover: {
+    'zh-hk': '/images/blog/en/finance-summit-gift-bag-printing-guide.webp',
+    en: '/images/blog/en/finance-summit-gift-bag-printing-guide.webp',
+    ja: '/images/blog/en/finance-summit-gift-bag-printing-guide.webp',
+  },
 };
 
 // Q-012 (posters × 體育賽事) - 2026-07-13 weekly
@@ -1018,6 +1118,11 @@ const lpMarathonEventPoster: BlogPostMeta = {
     'zh-hk': '香港渣打馬拉松、街馬、半馬拉松、學界田徑必睇。100 張起印，A1/A2 防水 PP + 13oz 戶外燈布起跑拱門，順豐本地港九新界免運費，3-5 個工作天交貨。',
     en: 'US race directors, running clubs, charity foundations: 100 MOQ, waterproof A1/A2 + 13oz vinyl start arches, runner packet inserts, sponsor recognition walls, 3-5 business day delivery to US ZIP codes.',
     ja: '日本のレースディレクター、ランニングクラブ、チャリティ財団向け。100 枚から対応、防水 A1/A2 + 13oz ビニール スタートアーチ、ランナーパケット挿入物、3-5 営業日生産、全国送料無料。',
+  },
+  cover: {
+    'zh-hk': '/images/blog/en/marathon-event-poster-printing-guide.webp',
+    en: '/images/blog/en/marathon-event-poster-printing-guide.webp',
+    ja: '/images/blog/en/marathon-event-poster-printing-guide.webp',
   },
 };
 
@@ -1037,6 +1142,11 @@ const lpCarDealershipAmenitySticker: BlogPostMeta = {
     en: 'US car dealerships, auto body shops, tire centers, quick lubes, EV brand experience studios: 100 MOQ, waterproof PVC + transparent BOPP + oil-resistant vinyl, 3-5 business day delivery to US ZIP codes.',
     ja: '日本の自動車ディーラー、鈑金塗装工場、タイヤセンター、Quick Lube、EV ブランド体験スタジオ向け。100 枚から対応、防水 PVC + 透明 BOPP + 耐油ビニール、3-5 営業日生産、全国送料無料。',
   },
+  cover: {
+    'zh-hk': '/images/blog/en/car-dealership-amenity-sticker-printing-guide.webp',
+    en: '/images/blog/en/car-dealership-amenity-sticker-printing-guide.webp',
+    ja: '/images/blog/en/car-dealership-amenity-sticker-printing-guide.webp',
+  },
 };
 
 // T-B-09 (stickers × 酒店拓點) - 2026-07-13 weekly
@@ -1054,6 +1164,11 @@ const lpHotelKeycardSleeve: BlogPostMeta = {
     'zh-hk': '香港五星級酒店、精品酒店、B&B 民宿、Airbnb 短租必睇。100 張起印，軟觸啞面 PVC + 燙金箔 + 局部 UV，順豐本地港九新界免運費，3-5 個工作天交貨。',
     en: 'US five-star hotels, boutique hotels, B&Bs, Airbnb hosts, resort spas: 100 MOQ, soft-touch matte PVC + foil + spot UV, room key sleeves, luggage tags, turn-down seals, 3-5 business day delivery to US ZIP codes.',
     ja: '日本の五つ星ホテル、ブティックホテル、B&B、民泊、リゾートスパ向け。100 枚から対応、ソフトタッチマット PVC + 箔押し + スポット UV、ルームキー スリーブ、荷物タグ、3-5 営業日生産、全国送料無料。',
+  },
+  cover: {
+    'zh-hk': '/images/blog/en/hotel-keycard-sleeve-printing-guide.webp',
+    en: '/images/blog/en/hotel-keycard-sleeve-printing-guide.webp',
+    ja: '/images/blog/en/hotel-keycard-sleeve-printing-guide.webp',
   },
 };
 
@@ -1076,6 +1191,11 @@ const lpBabyProductLabel: BlogPostMeta = {
     en: "US infant formula, baby food, baby skincare, and maternal nutrition brand owners: an FDA-compliant, BPA-free, freezer-safe label decides whether your product passes Whole Foods / Target / BuyBuy Baby shelf review and wins mom-trust on Instagram. ZprintPro prints 500 to 100,000-piece runs, 5-7 business day production, with free design mockup and Free Shipping over $99 to US ZIP codes.",
     ja: "日本の粉ミルク・ベビーフード・赤ちゃんスキンケア・マタニティ栄養ブランドオーナー様へ。FDA 準拠・BPA-free・冷凍対応ラベルが shelf 審査とママ世代 SNS 信頼を決定。ZprintProは 500〜100,000 枚小〜大ロット、5-7 営業日納品、$99 以上無料配送、DHL 国際配送対応。",
   },
+  cover: {
+    'zh-hk': '/images/blog/en/baby-product-label-sticker-printing-guide.webp',
+    en: '/images/blog/en/baby-product-label-sticker-printing-guide.webp',
+    ja: '/images/blog/en/baby-product-label-sticker-printing-guide.webp',
+  },
 };
 
 const lpEcommerceShippingBag: BlogPostMeta = {
@@ -1093,6 +1213,11 @@ const lpEcommerceShippingBag: BlogPostMeta = {
     en: "US Amazon FBA, Shopify, Etsy, and 3PL warehouse brand owners: a premium printed shipping bag with tamper-evident seal, tracking barcode, and return label decides unboxing experience and return rate. ZprintPro prints 1,000-200,000 piece runs with waterproof kraft, custom brand printing, peel-and-stick adhesive, and Free Shipping over $99 to US ZIP codes.",
     ja: "日本の Amazon FBA・Shopify・Etsy・3PL 倉庫ブランドオーナー様へ。改ざん防止シール・追跡バーコード・返品ラベル付きの高品質印刷配送袋が、開封体験と返品率を決定。ZprintProは防水クラフト・カスタム印刷・剥離粘着で 1,000〜200,000 個小〜大ロット、5-10 営業日納品、$99 以上無料配送、全国送料込み。",
   },
+  cover: {
+    'zh-hk': '/images/blog/en/ecommerce-shipping-bag-printing-guide.webp',
+    en: '/images/blog/en/ecommerce-shipping-bag-printing-guide.webp',
+    ja: '/images/blog/en/ecommerce-shipping-bag-printing-guide.webp',
+  },
 };
 
 const lpMediaMerchandiseBox: BlogPostMeta = {
@@ -1109,6 +1234,11 @@ const lpMediaMerchandiseBox: BlogPostMeta = {
     'zh-hk': "影視 IP 工作室、動漫品牌、Comic-Con 參展商、限量版收藏品公司必睇。一個高質感的 IP 周邊禮盒決定粉絲忠誠度、二次傳播率和二手市場溢價。智印港為全球影視 IP 市場提供抽屜式禮盒、磁吸盒、限量序號印刷、UV 局部 + 燙金 logo 全套定制,100-10,000 個小至大批量,7-15 個工作天交付。",
     en: "US entertainment IP studios, anime brands, Comic-Con exhibitors, and limited-edition collectible companies: a premium IP merchandise box decides fan loyalty, secondary share rate, and aftermarket premium. ZprintPro prints drawer-style boxes, magnetic closure boxes, limited-edition numbering, UV spot + foil logo for the global media franchise market. 100-10,000 piece runs, 7-15 business day production.",
     ja: "日本の映像 IP スタジオ・アニメブランド・Comic-Con 出展者・限定版コレクティブ会社向け。高品質 IP グッズボックスがファンロイヤルティ・二次拡散率・中古市場プレミアムを決定。ZprintProは引出し式・マグネット式・限定ナンバー印刷・UV スポット + 箔押しロゴでグローバルメディアフランチャイズ市場に 100-10,000 個小〜大ロット、7-15 営業日納品対応。",
+  },
+  cover: {
+    'zh-hk': '/images/blog/en/media-merchandise-box-printing-guide.webp',
+    en: '/images/blog/en/media-merchandise-box-printing-guide.webp',
+    ja: '/images/blog/en/media-merchandise-box-printing-guide.webp',
   },
 };
 
@@ -1135,6 +1265,11 @@ const lpThickPaperFlyer: BlogPostMeta = {
     en: 'US restaurant chains, ghost kitchens, and QSR owners: a 250gsm thick paper flyer with logo + weekly special + QR code + loyalty stamp is the cheapest repeat-customer driver. ZprintPro supplies 200gsm to 400gsm full-range stocks.',
     ja: '日本のレストラン・居酒屋・カフェ・テイクアウト专卖店様へ。200gsm〜400gsm 全規格厚紙チラシ、100 枚試刷から 200,000 枚チェーン展開まで対応、4 営業日国内生産、$99 以上で全国無料配送。',
   },
+  cover: {
+    'zh-hk': '/images/blog/en/thick-paper-flyer-printing-restaurant-takeout-guide.webp',
+    en: '/images/blog/en/thick-paper-flyer-printing-restaurant-takeout-guide.webp',
+    ja: '/images/blog/en/thick-paper-flyer-printing-restaurant-takeout-guide.webp',
+  },
 };
 
 const lpMagneticClosureGiftBox: BlogPostMeta = {
@@ -1151,6 +1286,11 @@ const lpMagneticClosureGiftBox: BlogPostMeta = {
     'zh-hk': '亞馬遜 FBA、Shopify 獨立站，Etsy 手作店、Kickstarter 群眾募資、訂閱盒 DTC 品牌必睇。157g 灰板 + 128g 雙銅紙磁吸禮盒,500 個 HK$22/個 起,DHL 全球 2-4 日送達,DDP 完稅到門。',
     en: 'US Shopify, Amazon FBA, Etsy, Kickstarter, subscription box DTC brands: magnetic closure box with crisp snap + foil logo + soft-touch lamination is the fastest premium differentiator. ZprintPro supplies 100-piece trials to 50,000-piece rollouts.',
     ja: '日本の Shopify、Amazon FBA、Etsy、Kickstarter、Subscription Box DTC ブランドオーナー様へ。100 個 Kickstarter 試作から 50,000 個チェーン展開まで対応、5-10 営業日生産。',
+  },
+  cover: {
+    'zh-hk': '/images/blog/en/magnetic-closure-gift-box-ecommerce-brand-guide.webp',
+    en: '/images/blog/en/magnetic-closure-gift-box-ecommerce-brand-guide.webp',
+    ja: '/images/blog/en/magnetic-closure-gift-box-ecommerce-brand-guide.webp',
   },
 };
 
@@ -1169,6 +1309,11 @@ const lpFoldingBoxCosmetics: BlogPostMeta = {
     en: 'US skincare, serum, sheet mask, lipstick, makeup brands: 5 eco-friendly folding box materials — 300gsm kraft / 350gsm white card / 400gsm duplex / 300gsm recycled / 350gsm black card. FSC certified + soy ink + recyclable mark.',
     ja: '日本のスキンケア、美容液、シート マスク、口紅、メイク、手作り化粧品ブランドオーナー様へ。5 素材折り畳み箱、FSC 認証 + 大豆インク + リサイクル マーク完備。',
   },
+  cover: {
+    'zh-hk': '/images/blog/en/folding-box-cosmetics-brand-eco-friendly-guide.webp',
+    en: '/images/blog/en/folding-box-cosmetics-brand-eco-friendly-guide.webp',
+    ja: '/images/blog/en/folding-box-cosmetics-brand-eco-friendly-guide.webp',
+  },
 };
 
 const lpReligiousCeremony: BlogPostMeta = {
@@ -1185,6 +1330,11 @@ const lpReligiousCeremony: BlogPostMeta = {
     'zh-hk': '香港教堂 / 佛寺 / 道觀 / 殯儀館宗教場地印刷完整攻略：1200g 灰板硬盒（聖餐盒 / 經文盒）+ 250g 銅版紙啞面（程序單）+ 350g 白卡紙（訃聞）+ 200g 牛油紙（經文）+ 牛皮紙禮袋（福袋）5 種材質對比，4 條場地負責人 FAQ，協助 50-500 套精準下單。',
     en: 'US religious organizations, churches, temples, synagogues, and funeral homes: 3 ceremony types, 5 material options (250g art paper / 1200g grayboard / 350g white card / 200g Vellum / kraft paper), 4 organization-leader FAQs, 50-500 sets, Free Shipping over $99 USA.',
     ja: '日本の宗教団体、教会、寺院、神社、葬儀場向け：3 つの儀式タイプ、5 種類素材（250g コート紙 / 1200g グレー ボード / 350g ホワイト カード / 200g ベラム / クラフト紙）、4 つの団体責任者 FAQ、50-500 セット、$99 以上で全国無料配送。',
+  },
+  cover: {
+    'zh-hk': '/images/blog/en/religious-ceremony-printing-guide.webp',
+    en: '/images/blog/en/religious-ceremony-printing-guide.webp',
+    ja: '/images/blog/en/religious-ceremony-printing-guide.webp',
   },
 };
 
@@ -1203,6 +1353,11 @@ const lpIndustrialNameplate: BlogPostMeta = {
     en: 'US industrial equipment manufacturers, chemical plants, and machinery exporters: 5 nameplate materials (PET / Polyimide / Anodized Aluminum / Stainless Steel / PVC reflective), 3 certification standards (UL / GHS / ANSI Z535), 4 industrial procurement FAQs, 100-50,000 pieces, Free Shipping over $99 USA.',
     ja: '日本の工業設備メーカー、化学工場、機械輸出業者向け：5 種類の銘板素材（PET / ポリイミド / 陽極酸化アルミ / ステンレス鋼 / PVC 再帰反射）、3 つの認証規格（UL / GHS / ANSI Z535）、4 つの工業調達 FAQ、100-50,000 個小〜大ロット、$99 以上で全国無料配送。',
   },
+  cover: {
+    'zh-hk': '/images/blog/en/industrial-nameplate-printing-guide.webp',
+    en: '/images/blog/en/industrial-nameplate-printing-guide.webp',
+    ja: '/images/blog/en/industrial-nameplate-printing-guide.webp',
+  },
 };
 
 const lpConstructionMaterialSampleBook: BlogPostMeta = {
@@ -1219,6 +1374,11 @@ const lpConstructionMaterialSampleBook: BlogPostMeta = {
     'zh-hk': '建築裝飾材料供應商必睇：5 種裝訂方式（騎馬釘 16-64 頁 / 膠裝 64-300 頁 / 精裝 100-500 頁 / 蝴蝶裝 樣板單頁抽換 / 活頁夾 可持續更新）+ 4 種印刷工藝（4 色 CMYK / Pantone 專色 / 燙金 / 局部 UV）+ 4 條建材供應商 FAQ，協助 50-500 本精準下單。',
     en: 'US construction material suppliers, interior designers, and building product brands: 5 binding styles (saddle stitch / perfect bound / hardcover / butterfly / loose-leaf), 4 print finishes, 4 supplier FAQs, 50-500 copies, Free Shipping over $99 USA, 5-7 business day production, No minimum 50 copies.',
     ja: '日本の建築装飾材料サプライヤー向け：5 つの製本方式（骑马钉 / 無線胶装 / 上製本 / バタフライ / ルーズリーフ）、4 つの印刷仕上げ、4 つのサプライヤー FAQ、50-500 部小〜大ロット、$99 以上で全国無料配送、5-7 営業日生産。',
+  },
+  cover: {
+    'zh-hk': '/images/blog/en/construction-material-sample-book-printing-guide.webp',
+    en: '/images/blog/en/construction-material-sample-book-printing-guide.webp',
+    ja: '/images/blog/en/construction-material-sample-book-printing-guide.webp',
   },
 };
 
@@ -1242,6 +1402,11 @@ const lpBabyFoodPackagingBox: BlogPostMeta = {
     en: 'US infant formula, baby food pouch, organic snack, and toddler meal brand owners: FDA food-grade lined folding cartons, BPA-free soy ink, 100 MOQ, 5-7 day production, Free Shipping over $99 USA.',
     ja: '日本の乳児用粉ミルク・ベビーフード・幼児スナック・オーガニック離乳食ブランド様へ。FDA 食品グレード内張クラフト紙箱、BPA フリー インク、100 個小ロット、5-7 営業日生産、$99 以上で全米無料配送。',
   },
+  cover: {
+    'zh-hk': '/images/blog/en/baby-food-packaging-box-printing-guide.webp',
+    en: '/images/blog/en/baby-food-packaging-box-printing-guide.webp',
+    ja: '/images/blog/en/baby-food-packaging-box-printing-guide.webp',
+  },
 };
 
 const lpRealEstateFlyer: BlogPostMeta = {
@@ -1258,6 +1423,11 @@ const lpRealEstateFlyer: BlogPostMeta = {
     'zh-hk': '香港新盤代理 / 二手樓經紀 / 物業管理必睇。157g 雙銅紙 A4 摺頁 + 騎馬釘小手冊 + 100 張起印，3-5 個工作天交付，順豐本地 + DHL 全球 2-4 天配送。',
     en: 'US real estate agents, brokerages, property managers, open house hosts: A4 bi-fold + tri-fold property listing flyers, 100 MOQ, 3-5 day production, Free Shipping over $99 USA.',
     ja: '米国の不動産エージェント、ブローカレッジ、プロパティ マネージャー、オープンハウス主催者様へ。A4 二つ折り・三つ折り物件資料チラシ、100 個小ロット、3-5 営業日生産、$99 以上で全米無料配送。',
+  },
+  cover: {
+    'zh-hk': '/images/blog/en/real-estate-flyer-printing-guide.webp',
+    en: '/images/blog/en/real-estate-flyer-printing-guide.webp',
+    ja: '/images/blog/en/real-estate-flyer-printing-guide.webp',
   },
 };
 
@@ -1276,6 +1446,11 @@ const lpMedicalDevicePackagingBox: BlogPostMeta = {
     en: 'US medical device manufacturers, hospital suppliers, dental clinics, IVD equipment makers: ISO 13485 certified grayboard rigid boxes + sterile barrier pouches, 100 MOQ, 7-10 day production.',
     ja: '日本の医療機器メーカー、病院サプライヤー、歯科医院、IVD 機器メーカー様へ。ISO 13485 認証グレー ボード硬質箱 + 滅菌バリア ポーチ、100 個小ロット、7-10 営業日生産、$99 以上で全米無料配送。',
   },
+  cover: {
+    'zh-hk': '/images/blog/en/medical-device-packaging-box-guide.webp',
+    en: '/images/blog/en/medical-device-packaging-box-guide.webp',
+    ja: '/images/blog/en/medical-device-packaging-box-guide.webp',
+  },
 };
 
 const lpAutoPartsShoppingBag: BlogPostMeta = {
@@ -1292,6 +1467,11 @@ const lpAutoPartsShoppingBag: BlogPostMeta = {
     'zh-hk': '汽車 4S 店 / 二手車行 / 汽車美容 / 輪胎中心 / 維修工場必睇。120g 加強牛皮紙 + 油污防護淋膜 + 燙金 logo + 100 個起印，5-7 個工作天交付，順豐本地 + DHL 全球 2-4 天配送。',
     en: 'US auto dealers, used car lots, auto detailers, tire centers, and repair shops: reinforced kraft + oil-resistant lamination + 4S logo, 100 MOQ, 5-7 day production, Free Shipping over $99 USA.',
     ja: '日本の自動車ディーラー、中古車販売店、自動車ディテイラー、タイヤ センター、修理工場様へ。強化クラフト + 耐油ラミネート + 4S ロゴ、100 個小ロット、5-7 営業日生産、$99 以上で全米無料配送。',
+  },
+  cover: {
+    'zh-hk': '/images/blog/en/auto-parts-shopping-bag-printing-guide.webp',
+    en: '/images/blog/en/auto-parts-shopping-bag-printing-guide.webp',
+    ja: '/images/blog/en/auto-parts-shopping-bag-printing-guide.webp',
   },
 };
 
@@ -1310,6 +1490,11 @@ const lpSportsMerchandiseGiftBox: BlogPostMeta = {
     en: 'US sports team merchandise, event memorabilia, fan collectibles, event sponsors: 1200gsm grayboard rigid box + foil logo + limited edition numbering, 100 MOQ, 7-10 day production.',
     ja: '米国のスポーツ チーム メモラビリア、イベント記念品、ファン コレクティブ、イベント スポンサー様へ。1200gsm グレー ボード硬質箱 + 箔押し + 限定ナンバー印刷、100 個小ロット、7-10 営業日生産、$99 以上で全米無料配送。',
   },
+  cover: {
+    'zh-hk': '/images/blog/en/sports-merchandise-gift-box-printing-guide.webp',
+    en: '/images/blog/en/sports-merchandise-gift-box-printing-guide.webp',
+    ja: '/images/blog/en/sports-merchandise-gift-box-printing-guide.webp',
+  },
 };
 
 // 2026-07-21 v7 daily-content-evolve: Q-004 apparel shopping bag — paper-bags × 服裝 (Tier A) — 純文字・v7 報價型 (5 檔實價)
@@ -1327,6 +1512,11 @@ const lpApparelShoppingBag: BlogPostMeta = {
     'zh-hk': '香港時裝、潮牌、買手店老闆必睇。一個高質感的品牌紙袋決定客人會否在 IG 打卡分享,直接影響你的品牌曝光。智印港為本地時裝品牌提供白卡紙、黃牛皮、棉繩、絲帶、燙金、UV 局部全系列紙袋印刷,500-100,000 枚小至大批量,5-10 個工作天交付,順豐本地 + DHL 全球 2-4 天到貨,5 檔實價 (HK$811-4,202)。',
     en: 'Apparel and fashion brand owners — kraft, white card, handle materials compared. 500-piece small batches to 100,000 bulk, 5-10 working day delivery from Asia factory. 5-tier pricing (USD $106-546). Free Shipping over $99 USA, Free design mockup, No setup fees.',
     ja: 'アパレル・ファッションブランドオーナー様へ。クラフト紙・白カード・ハンドル素材別、500枚小ロットから 10万枚量産、5-10 営業日納品。5 段階実価格 (¥16,628-86,141)。全国送料込み、$99 以上で全米無料配送、短納期 3-5 営業日対応。',
+  },
+  cover: {
+    'zh-hk': '/images/blog/en/apparel-shopping-bag-printing-guide.webp',
+    en: '/images/blog/en/apparel-shopping-bag-printing-guide.webp',
+    ja: '/images/blog/en/apparel-shopping-bag-printing-guide.webp',
   },
 };
 
@@ -1347,6 +1537,11 @@ const lpGangRunCardBoxesHK: BlogPostMeta = {
     en: 'US retail boutique, skincare, IP merchandise, and gift brand owners — gang-run white card boxes with shared standard die-cuts, NO die-cut fee, NO setup fee, 40-60% lower unit cost, 100-10,000 piece runs, 8-15 day production, 4 paper stocks + 3 box styles + 8 standard sizes, 5-tier pricing (USD $25-461), Free Shipping over $99 USA, Free Design Mockup, 100 MOQ starter.',
     ja: '日本の小売ブティック、スキンケア、IP 商品、ギフトブランドオーナー様へ。合版ホワイトカードボックス、固定型代共用で型代不要・版代不要、40-60% コスト削減、100-10,000 個小〜大ロット、8-15 日生産、4 種素材 + 3 種箱型 + 8 標準サイズで 95% 日本小売シーンカバー、5 段階実価格 (¥3,800-69,150)、沖縄・北海道含む全国送料無料、ヤマト運輸 1-3 日納品。',
   },
+  cover: {
+    'zh-hk': '/images/blog/en/gang-run-card-boxes-hk-guide.webp',
+    en: '/images/blog/en/gang-run-card-boxes-hk-guide.webp',
+    ja: '/images/blog/en/gang-run-card-boxes-hk-guide.webp',
+  },
 };
 
 // 2026-07-24 v8 M3 任务卡: Q-GR-02 (en 美国 DTC/Amazon FBA — packaging × 跨境電商) — packaging × 跨境電商 (Tier A) — 純文字・美國市場集中 (§13.15 en sharp hooks: Free Shipping $99+ / 500 MOQ / Free design mockup / Made for USA small business)
@@ -1365,6 +1560,11 @@ const lpCustomCardBoxesUSA: BlogPostMeta = {
     'zh-hk': '跨境電商賣家、DTC 品牌、亞馬遜 FBA 揀貨必睇。拼版白卡彩盒 500 個起印,免刀模費 + 免排版費,成本直降 40-60%,4 種紙材 + 3 種盒型 + 8 檔標準尺寸,8-15 天交付 + DHL 全球 2-4 天配送,香港無對手價。',
     en: 'US DTC brand owners and Amazon FBA sellers — gang-run white card boxes with 500 MOQ starter, NO die-cut fee, NO setup fee, 40-60% lower unit cost than custom, 4 paper stocks + 3 box styles + 8 standard sizes, 8-15 day production, Free Shipping over $99 USA, Free Design Mockup, FedEx Ground 5-7 day or DHL Express 2-4 day delivery from Asia factory.',
     ja: '米国 DTC ブランド、Amazon FBA セラー向け。合版ホワイトカードボックス 500 個 MOQ スターター、型代不要・版代不要、カスタム比 40-60% コスト削減、4 種素材 + 3 種箱型 + 8 標準サイズ、8-15 日生産、$99 以上で全米無料配送、無料デザイン モックアップ、FedEx Ground 5-7 日 or DHL Express 2-4 日納品対応。',
+  },
+  cover: {
+    'zh-hk': '/images/blog/en/custom-card-boxes-small-batch-usa.webp',
+    en: '/images/blog/en/custom-card-boxes-small-batch-usa.webp',
+    ja: '/images/blog/en/custom-card-boxes-small-batch-usa.webp',
   },
 };
 
@@ -1385,6 +1585,11 @@ const lpCosmeticCardBoxesJapan: BlogPostMeta = {
     en: 'Japan cosmetics, skincare, IP merchandise brand owners — silver cardstock with white ink + holographic silver with reverse UV, the shelf 3-second premium packaging. NO die-cut fee, 40-60% cost cut, 500-10,000 piece small-to-bulk runs, 8-15 day production, 3 box styles × 8 sizes × 4 paper stocks.',
     ja: '日本の化粧品・コスメ・スキンケア・IP ブランドオーナー様へ。銀カード白墨印刷 + ホログラム銀カード リバース UV で棚前 3 秒の高級感パッケージ。型代不要で 40-60% コスト削減、500-10,000 個小〜大ロット、8-15 日生産、3 種箱型 × 8 サイズ × 4 種素材で 95% シーンカバー、ヤマト運輸 1-3 日納品対応。',
   },
+  cover: {
+    'zh-hk': '/images/blog/en/cosmetic-card-boxes-gang-run-japan.webp',
+    en: '/images/blog/en/cosmetic-card-boxes-gang-run-japan.webp',
+    ja: '/images/blog/en/cosmetic-card-boxes-gang-run-japan.webp',
+  },
 }
 
 // 2026-07-27 v4.1 weekly-meta-refresh: T6-FI-006 金融機構禮品袋 (Tier B 金融證券 1st 覆蓋) — paper-bags × kraft — 純文字・v4.1 報價型
@@ -1403,6 +1608,11 @@ const lpFinancialInstitutionGiftBag: BlogPostMeta = {
     en: 'US banks, credit card issuers, brokerages, mutual funds, and insurance company client gift bags — 1200g grayboard rigid box + foil logo + RFID anti-counterfeit card sleeve + satin ribbon handle, 4 finance procurement FAQs, 100-5,000 set small-to-bulk runs, Free Shipping over $99 USA, Free design mockup, 100 MOQ starter, 5-10 business day production, Made for USA financial industry.',
     ja: '日本の銀行、クレジットカード会社、証券会社、投資信託会社、保険会社のクライアントギフトバッグ：1200g グレー ボード リジッド ボックス + 箔押しロゴ + RFID 偽造防止カード スリーブ + サテン リボン ハンドル、4 つの金融調達 FAQ、100-5,000 セット、$99 以上で全国無料配送、5-10 営業日生産、100 セット minimum、Made for USA 金融業界対応。',
   },
+  cover: {
+    'zh-hk': '/images/blog/en/financial-institution-gift-bag-printing-guide.webp',
+    en: '/images/blog/en/financial-institution-gift-bag-printing-guide.webp',
+    ja: '/images/blog/en/financial-institution-gift-bag-printing-guide.webp',
+  },
 };
 
 // 2026-07-27 v4.1 weekly-meta-refresh: T7-RP-007 房地產樓盤戶型海報 (Tier B 房地產 3rd SKU 拓點) — posters × a2-poster — 純文字・v4.1 報價型
@@ -1420,6 +1630,11 @@ const lpRealEstateFloorPlanPoster: BlogPostMeta = {
     'zh-hk': '香港新盤樓書、售樓處示範單位、房地產代理分店必備：5 種尺寸（A1/A2/A3/B1/B2）+ 5 種材質（防水 PP 膜 / 啞面銅版紙 / 合成紙 / 啞面膠膜 / 戶外油畫布）+ 4 條地產代理 FAQ，協助 10-500 張精準下單。',
     en: 'US new development sales galleries, model homes, real estate agency branches — 5 standard sizes (A1/A2/A3/B1/B2), 5 materials (waterproof PP film / matte art paper / synthetic paper / matte laminate / outdoor canvas), 4 real estate agent FAQs, 10-500 piece small-to-bulk runs, Free Shipping over $99 USA, 5-7 business day production, 100 MOQ starter, Made for USA property market.',
     ja: '日本の新築マンション モデルルーム、不動産仲介店舗、分譲マンション ギャラリー必備：5 種類サイズ（A1/A2/A3/B1/B2）、5 種類素材（防水 PP フィルム / マット コート紙 / 合成紙 / マット ラミネート / 屋外キャンバス）、4 つの不動産エージェント FAQ、10-500 枚、$99 以上で全国無料配送、5-7 営業日生産、100 枚 minimum、Made for USA 不動産市場対応。',
+  },
+  cover: {
+    'zh-hk': '/images/blog/en/real-estate-floor-plan-poster-printing-guide.webp',
+    en: '/images/blog/en/real-estate-floor-plan-poster-printing-guide.webp',
+    ja: '/images/blog/en/real-estate-floor-plan-poster-printing-guide.webp',
   },
 };
 ;
@@ -1441,6 +1656,11 @@ const lpSameDayFlyersHK: BlogPostMeta = {
     en: 'US restaurant launch / event late-call / real estate quick sale peak season. Same-day flyers 100 MOQ, 4-6hr rush, USPS Priority / FedEx 2-day, 5 paper stocks + 3 process limits + 4 FAQ, ship within 1 hour. Same Day Printing 4-6hr rush, 100 MOQ, USPS Priority + FedEx 2-day, Free Shipping $99+ USA.',
     ja: '日本 レストラン開業 / イベント late-call / 不動産クイック 繁忙期。100 個 MOQ スターター、4-6 時間特急、ヤマト運輸 1-3 日配送、5 種在庫用紙 + 3 加工制限 + 4 FAQ、1 時間内注文出荷。 即日印刷 4-6時間特急、100枚から、ヤマト運輸 1-3日+DHL国際 2-4日。',
   },
+  cover: {
+    'zh-hk': '/images/blog/en/same-day-flyers-printing-hong-kong-guide.webp',
+    en: '/images/blog/en/same-day-flyers-printing-hong-kong-guide.webp',
+    ja: '/images/blog/en/same-day-flyers-printing-hong-kong-guide.webp',
+  },
 };
 
 // 2026-08-05 v8 daily-content-evolve: 月曆印刷 (GSC 97 imps rank 46.31, 无着陆页, 2027 采购季) — calendars × Tier A 茶飲食品/零售精品 — 純文字・v8 SEO+GEO 雙引擎
@@ -1458,6 +1678,11 @@ const lpCalendarPrinting: BlogPostMeta = {
     'zh-hk': '2027 年年曆採購季開始！8-10 月落單享批量折扣。掛牆年曆 A3/A2、桌曆 A5、迷你月曆 50 本起印，銅版紙 + 過膠 + 線圈裝訂，3-5 天交期，48 小時急單。',
     en: '2027 calendar season is here! Wall calendars A3/A2, desk A5, mini giveaways — 50-piece MOQ, art paper + lamination + wire-O binding, 3-5 day production, 48h rush, Free Shipping $99+ USA.',
     ja: '2027年カレンダー発注シーズン到来！壁掛け A3/A2、卓上 A5、ミニ 50部から。コート紙+PP加工+ツインワイヤー綴じ、3-5営業日生産、最短48時間、全国送料無料。',
+  },
+  cover: {
+    'zh-hk': '/images/blog/en/calendar-printing-guide.webp',
+    en: '/images/blog/en/calendar-printing-guide.webp',
+    ja: '/images/blog/en/calendar-printing-guide.webp',
   },
 };
 
@@ -1477,6 +1702,11 @@ const lpPosterSizeGuide: BlogPostMeta = {
     en: 'A1, A2 and A3 poster sizes compared — exact dimensions in mm / cm / inches, best use cases for retail, trade shows and outdoor, paper & waterproof finish choices, 4 FAQs, 10-1,000 piece runs, 3-5 day production from Asia factory.',
     ja: 'A1・A2・A3 ポスターサイズを徹底比較。寸法（mm / cm / インチ）早見表、小売・展示会・屋外での用途別選び方、用紙と防水加工の選び方、よくある質問 4 件、10-1,000 枚小〜大ロット、3-5 営業日生産。',
   },
+  cover: {
+    'zh-hk': '/images/blog/en/poster-size-guide.webp',
+    en: '/images/blog/en/poster-size-guide.webp',
+    ja: '/images/blog/en/poster-size-guide.webp',
+  },
 };
 const lpA5VsA6FlyerSize: BlogPostMeta = {
   slug: 'a5-vs-a6-flyer-size',
@@ -1493,6 +1723,11 @@ const lpA5VsA6FlyerSize: BlogPostMeta = {
     en: 'A5 vs A6 flyer size: exact dimensions in mm & inches, use cases for restaurants, retail and direct mail, cost gap, folding options, 4 FAQs, 50-10k piece runs.',
     ja: 'A5 と A6 チラシのサイズを徹底比較。寸法（mm / インチ）早見表、飲食・小売・イベントでの用途別選び方、印刷コスト差と折り加工、よくある質問 4 件、50〜10,000 枚の小〜大ロット対応。',
   },
+  cover: {
+    'zh-hk': '/images/blog/en/a5-vs-a6-flyer-size.webp',
+    en: '/images/blog/en/a5-vs-a6-flyer-size.webp',
+    ja: '/images/blog/en/a5-vs-a6-flyer-size.webp',
+  },
 };
 const lpPosterPrintingPrice: BlogPostMeta = {
   slug: 'poster-printing-price-guide',
@@ -1508,6 +1743,11 @@ const lpPosterPrintingPrice: BlogPostMeta = {
     'zh-hk': 'A1/A2 海報印刷幾錢？本文拆解 2026 香港真實單價——A2 銅版紙 100 張約 HK$6-9/張、A1 貴 60-80%，批量 500 張再減 30%，附 4 大成本因素 + 4 條 FAQ，10-1,000 張落單，3-5 個工作天交付。',
     en: 'A1/A2 poster printing prices explained — A2 gloss from $0.42/pc at 1,000, A1 costs only 60-80% more despite double area. 4 cost drivers, quantity table, 4 FAQs, 10-1,000 piece runs, 3-5 day turnaround.',
     ja: 'A1/A2 ポスター印刷の料金を徹底解説。A2 コート紙 1,000 枚で 1 枚 ¥48-68、A1 は面積 2 倍でも +60-80%。4 大コスト要因、数量別価格表、FAQ 4 件、10〜1,000 枚、3-5 営業日納品。',
+  },
+  cover: {
+    'zh-hk': '/images/blog/en/poster-printing-price-guide.webp',
+    en: '/images/blog/en/poster-printing-price-guide.webp',
+    ja: '/images/blog/en/poster-printing-price-guide.webp',
   },
 };
 
@@ -1526,6 +1766,11 @@ const lpCatalogPrintingGuide: BlogPostMeta = {
     'zh-hk': '畫冊印刷點揀？攝影集、展覽圖錄、產品型錄 4 大類型規格表，銅版紙/啞粉紙/特種紙紙材對比，硬皮精裝/膠裝/騎馬釘裝訂攻略，附 4 條 FAQ，50 本起印，3-5 個工作天交付。',
     en: 'Custom catalog and art book printing guide — photo books, exhibition catalogs, product catalogs. Paper choices (art/matte/specialty), binding (hardcover/perfect/saddle), finishes (spot UV/foil), 4 FAQs, 50-book MOQ, 3-5 day turnaround, Free Shipping $99+ USA.',
     ja: 'カタログ・写真集・作品集印刷の完全ガイド — 4 タイプ規格表、用紙（アート紙/マット紙/特種紙）、製本（上製/無線/中綴じ）、加工（UV/箔）、FAQ 4 件、50 冊〜、3-5 営業日、全国送料無料。',
+  },
+  cover: {
+    'zh-hk': '/images/blog/en/catalog-printing-guide.webp',
+    en: '/images/blog/en/catalog-printing-guide.webp',
+    ja: '/images/blog/en/catalog-printing-guide.webp',
   },
 };
 
