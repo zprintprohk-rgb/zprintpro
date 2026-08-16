@@ -348,6 +348,10 @@ const lpEcoPrinting: BlogPostMeta = {
   },
 };
 
+// 2026-08-16 K3 09:00 拍板: hong-kong-printing-guide 3 locale 全部用新拍的海德堡 Speedmaster 印刷机图
+// (public/images/factory/factory-heidelberg-speedmaster-with-boxes.webp, 113.7KB webp)
+// 替换前: en 站 public/images/blog/en/hong-kong-printing-guide.webp 是 77.5KB 散点贴图 (V19 风格, 跟 "印刷公司"主题不符)
+// 替换后: 3 locale 都用海德堡图 (factory floor + Heidelberg logo), 强化 "印刷实力" 主题
 const lpHKPrintingGuide: BlogPostMeta = {
   slug: 'hong-kong-printing-guide',
   categoryKey: 'hongkong',
@@ -362,6 +366,12 @@ const lpHKPrintingGuide: BlogPostMeta = {
     'zh-hk': '深入比較香港港島、九龍、新界的印刷公司，從價格、品質、交貨速度到客戶評價，幫您找到最適合的印刷合作夥伴。',
     en: 'Complete guide to custom stickers, packaging boxes, and labels for US small business. Compare vinyl/PVC/Kraft/clear materials, 50-1000 MOQ, Free shipping over $99, FedEx Ground 5-7 day or DHL Express 2-4 day, ISO 9001 certified factory-direct pricing.',
     ja: 'オリジナルステッカー・パッケージ・印刷物の完全ガイド。素材（ビニール・PVC・クラフト・透明・箔押し）・小ロット（30枚〜）・短納期（最短3日出荷）・全国送料込み・DHL国際配送対応。中小企業・D2Cブランド・同人サークル向け。',
+  },
+  // 2026-08-16 K3 拍板: 3 locale 全部用同一张海德堡图 (113.7KB webp, <120KB 硬约束)
+  cover: {
+    'zh-hk': '/images/blog/zh-hk/hong-kong-printing-guide.webp',
+    en: '/images/blog/en/hong-kong-printing-guide.webp',
+    ja: '/images/blog/ja/hong-kong-printing-guide.webp',
   },
 };
 
