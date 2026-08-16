@@ -34,7 +34,9 @@ const translations = {
     responseTime: "平均回覆 < 5 分鐘",
     quickContact: "快速聯絡",
     officeHours: "辦公時間",
-    officeHoursValue: "週一至週五 09:00 - 18:00",
+    officeHoursValue: "週一至週六 09:00 - 18:00 (GMT+8)",
+    whatsapp247: "24/7 WhatsApp 即時回覆",
+    support: "中國大陸 24h 響應 · 香港本地客服",
     whatsappLabel: "WhatsApp",
     trustTitle: "客戶信賴",
     trustServed: "已服務 15,000+ 客戶",
@@ -74,7 +76,9 @@ const translations = {
     responseTime: "Avg reply < 5 min",
     quickContact: "Quick Contact",
     officeHours: "Office Hours",
-    officeHoursValue: "Mon - Fri 09:00 - 18:00",
+    officeHoursValue: "Mon - Sat 09:00 - 18:00 (GMT+8)",
+    whatsapp247: "24/7 WhatsApp instant reply",
+    support: "China mainland 24h · Hong Kong local support",
     whatsappLabel: "WhatsApp",
     trustTitle: "Trusted by Clients",
     trustServed: "15,000+ customers served",
@@ -114,7 +118,9 @@ const translations = {
     responseTime: "平均返信 < 5分",
     quickContact: "クイック連絡",
     officeHours: "営業時間",
-    officeHoursValue: "月〜金 09:00 - 18:00",
+    officeHoursValue: "月〜土 09:00 - 18:00 (GMT+8)",
+    whatsapp247: "24時間 WhatsApp 即時対応",
+    support: "中国本土 24時間対応 · 香港現地サポート",
     whatsappLabel: "WhatsApp",
     trustTitle: "お客様の信頼",
     trustServed: "15,000人以上のお客様にサービス提供",
@@ -327,7 +333,9 @@ export default function ContactPage({ params }: ContactPageProps) {
                 <p className="text-xs text-gray-500 mb-4 flex items-center gap-1.5">
                   <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                   {t.officeHoursValue}
-                </p>
+                  </p>
+                  <p className="text-xs text-emerald-600 mt-1 font-semibold" data-cf-analytics="contact_whatsapp_247_view">📲 {t.whatsapp247}</p>
+                  <p className="text-xs text-gray-500 mt-0.5" data-cf-analytics="contact_support_view">{t.support}</p>
 
                 <div className="grid grid-cols-2 gap-2">
                   <a
