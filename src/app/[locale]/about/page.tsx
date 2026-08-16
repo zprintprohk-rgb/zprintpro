@@ -38,15 +38,15 @@ const translations = {
 以「智印未來」為願景，我們通過智能化生產流程、個性化定制與環保材質，為客戶打造差異化、高質感的印刷品，全面提升品牌形象與市場競爭力。十五年來，從商務印品到創意包裝，從校園刊物到企業年報，我們已累計服務超過1000家本地及全球客戶，成為香港企業及機構可信賴的印刷合作夥伴。`,
     advantageTitle: '核心優勢',
     advantages: [
-      { title: '品質保證', desc: 'ISO 9001質量管理體系認證，海德堡四色柯式印刷，ICC色彩管理，Delta E ≤3色彩誤差控製。從印前到印後，每個環節均有專人檢查。' },
-      { title: '快速交付', desc: '數碼印刷當日可取，柯式印刷3–5天交貨。順豐速遞覆蓋香港全區，大批量可安排專車直送。緊急訂單專人跟進，確保準時交付。' },
+      { title: '品質保證', desc: 'ISO 9001 + FSC 認證 · 海德堡四色柯式 + HP Indigo 數碼 + 6 道工序實拍 ([查看工序流 ↓](#factory)) · ICC 色彩管理 Delta E ≤3 · 1,000+ 企業客戶信賴。' },
+      { title: '快速交付', desc: '數碼印刷 24h · 柯式印刷 3–5 天 · 順豐本地當日 + DHL/FedEx 全球 2-4 天 · 緊急訂單專人跟進 · 1,000+ 訂單累計 · [WhatsApp 即時查詢 📲](https://wa.me/8619880851334) · [聯絡我們](/contact/)' },
       { title: '專業服務', desc: '免費設計諮詢、免費刀模設計、免費色彩校樣。專屬客戶經理一對一跟進，從報價到交付全程無憂。' },
     ],
     teamTitle: '專業團隊',
     teams: [
       { title: '創始人', desc: '擁有15年印刷行業經驗，曾服務於國際頂級印刷集團，精通色彩管理與印前工藝。' },
       { title: '印前工程師', desc: '平均8年經驗，專注於AI／PDF文件檢查、刀模設計、ICC色彩配置與數碼打樣。' },
-      { title: '客戶服務團隊', desc: '流利粵語、英語、普通話及日語，提供24小時內回覆承諾，協助客戶解決從報價到售後的所有問題。' },
+      { title: '客戶服務團隊', desc: '流利粵 / 普 / 英 / 日 四語 · 24 小時內回覆承諾 · 專屬 WhatsApp 支援 +86 198 8085 1334 · 從報價到售後全程跟進 · [聯絡我們](/contact/)' },
     ],
     certTitle: '資質認證',
     certs: [
@@ -63,8 +63,8 @@ const translations = {
       { step: '1', title: '上傳檔案', desc: 'AI 自動檢查 PDF 解析度、出血區、色彩模式。30 秒內報價，無需註冊。' },
       { step: '2', title: '免費設計', desc: '不擅長設計？我們提供免費刀模線製作、色彩校樣、版面微調。' },
       { step: '3', title: '打樣確認', desc: '數碼打樣 24 小時內，柯式打樣 3-5 個工作日。確認後立即進入生產。' },
-      { step: '4', title: '印刷生產', desc: '海德堡 4 色柯式 + HP Indigo 數碼印刷，ISO 9001 認證，Delta E ≤3 色彩控製。' },
-      { step: '5', title: '全球送達', desc: '順豐速遞覆蓋香港全境，DHL/FedEx 全球 2-4 天直達。1000 本起享批量優惠價。' }
+      { step: '4', title: '印刷生產', desc: '海德堡 4 色柯式 + HP Indigo 數碼 + 6 道工序實拍 ([查看工序流 ↓](#factory)) · 主营 [貼紙](/category/stickers/) · [傳單](/category/flyers/) · [包裝盒](/category/packaging/) · [紙袋](/category/paper-bags/) · ISO 9001 認證 · Delta E ≤3 色彩管理 · 1,000+ 企業客戶信賴。' },
+      { step: '5', title: '全球送達', desc: '順豐本地 24h + DHL/FedEx 全球 2-4 天 · 50+ 國家直送 · 1,000+ 訂單累計 · [WhatsApp 即時查詢 📲](https://wa.me/8619880851334) · [聯絡我們](/contact/)' }
     ],
 
     testimonialTitle: '客戶評價',
@@ -72,11 +72,11 @@ const translations = {
     testimonialSubtitle: '我們服務的 12 大行業 · 累計 1,000+ 企業客戶信賴',
 
     industries: [
-      { iconKey: 'fnb', name: '餐飲外賣', desc: '餐廳及外賣平台' },
-      { iconKey: 'retail', name: '零售精品', desc: '實體店及品牌專櫃' },
-      { iconKey: 'ecommerce', name: '跨境電商', desc: 'DTC 品牌及亞馬遜 FBA' },
-      { iconKey: 'beauty', name: '美妝護膚', desc: '護膚品及化妝品' },
-      { iconKey: 'education', name: '教育培訓', desc: '學校及培訓機構' },
+      { iconKey: 'fnb', name: '餐飲外賣', desc: '餐廳及外賣平台 · [菜單印刷](/category/flyers/) · [外賣標籤](/category/labels/) · [打包盒](/category/packaging/)' },
+      { iconKey: 'retail', name: '零售精品', desc: '實體店及品牌專櫃 · [包裝盒](/category/packaging/) · [紙袋](/category/paper-bags/) · [吊牌](/category/labels/)' },
+      { iconKey: 'ecommerce', name: '跨境電商', desc: 'DTC 品牌及亞馬遜 FBA · [跨境電商包裝指南](/blog/cross-border-ecommerce-shipping-box-guide/) · [快遞標籤](/category/labels/)' },
+      { iconKey: 'beauty', name: '美妝護膚', desc: '護膚品及化妝品 · [標籤貼紙](/category/labels/) · [包裝盒](/category/packaging/)' },
+      { iconKey: 'education', name: '教育培訓', desc: '學校及培訓機構 · [書籍畫冊](/category/books/) · [貼紙](/category/stickers/)' },
       { iconKey: 'wedding', name: '婚慶活動', desc: '婚禮及商務活動' },
       { iconKey: 'creator', name: '文創 IP', desc: '設計師及藝術家' },
       { iconKey: 'pet', name: '寵物行業', desc: '寵物食品及用品' },
@@ -92,7 +92,7 @@ const translations = {
 
     // 2026-08-16 K3 拍板: 關於我們板塊嵌入工廠實拍圖 (F:\工厂图片 47 张处理产出)
     factorySectionTitle: '廠房與設備 · 實拍',
-    factorySectionSubtitle: '深圳自設廠房 · 海德堡柯式 + HP Indigo 數碼 · 從印前到後道全程把控',
+    factorySectionSubtitle: '自設廠房 · 海德堡柯式 + HP Indigo 數碼 · 6 大工序實拍 (色彩管理 → 柯式 → 數碼 → 後道裝訂 → 禮盒工藝 → 成品) · [查看 22 figure 工序流 ↓](#factory)',
     altFloorPano: 'ZprintPro 印刷車間全景 — 摺紙機和後道加工線一覽',
     altHeidelberg: '海德堡四色柯式印刷機正在印刷高端禮盒 — 工廠核心設備',
     altHeidelberg61: '海德堡 6+1 色組柯式印刷機實拍',
@@ -154,15 +154,15 @@ const translations = {
 Our vision is "Smarter Printing, Brighter Future." Through intelligent production workflows, fully personalized customization, and eco-friendly materials, we help every brand stand out with distinctive, high-quality print that lifts recognition and competitiveness. Every order — whether 100 stickers for a DTC startup, 5,000 flyers for a community event, or 50,000 retail-ready packaging units — gets the same dedication to color accuracy, fast turnaround, and worldwide delivery to your door.`,
     advantageTitle: 'Core Advantages',
     advantages: [
-      { title: 'Quality Assurance', desc: 'ISO 9001 + FSC certified. Heidelberg 4-color offset + HP Indigo digital printing. ICC color management with Delta E ≤3 control. Every order inspected by dedicated prepress and postpress teams before shipping.' },
-      { title: 'Fast Global Delivery', desc: 'Digital printing ships in 24 hours. Offset printing delivers in 3–5 business days. Worldwide express shipping to 50+ countries. Free shipping on selected products to US / UK / AU / CA. Volume orders include dedicated freight forwarding.' },
+      { title: 'Quality Assurance', desc: 'ISO 9001 + FSC certified. Heidelberg 4-color offset + HP Indigo digital + 6 production stages ([view flow ↓](#factory)). ICC color management with Delta E ≤3. Trusted by 1,000+ global brands.' },
+      { title: 'Fast Global Delivery', desc: 'Digital ships in 24h, offset 3–5 business days. DHL/FedEx worldwide in 2–4 days to 50+ countries. Free shipping to US / UK / AU / CA. 1,000+ orders shipped. [WhatsApp us 📲](https://wa.me/8619880851334) · [Contact us](/contact/)' },
       { title: 'Professional Service', desc: 'Free design consultation, free die-cut design, free color proofing. Dedicated English-speaking account manager assigned to every order. From quote to delivery — no setup fees, no hidden charges.' },
     ],
     teamTitle: 'Our Team',
     teams: [
       { title: 'Founder', desc: '15 years of printing industry experience, formerly with top international printing groups, expert in color management and prepress processes.' },
       { title: 'Prepress Engineers', desc: 'Average 8 years experience, specializing in AI/PDF file checking, die-cut design, ICC color profiling, and digital proofing.' },
-      { title: 'Customer Service', desc: 'Fluent English-speaking team (Mandarin, Cantonese, Japanese available). 24-hour response commitment, dedicated WhatsApp support at +8619880851334. Assisting clients from quote to after-sales.' },
+      { title: 'Customer Service', desc: 'Fluent English / Mandarin / Cantonese / Japanese, 24-hour response. Dedicated WhatsApp support at +86 198 8085 1334. [Contact us](/contact/) · [WhatsApp 📲](https://wa.me/8619880851334)' },
     ],
     certTitle: 'Certifications',
     certs: [
@@ -180,8 +180,8 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
       { step: '1', title: 'Upload Artwork', desc: 'AI auto-checks PDF resolution, bleed zones, color mode. Quote in 30 seconds, no signup required.' },
       { step: '2', title: 'Free Design Support', desc: 'Not a designer? We provide free die-cut line creation, color proofing, and layout tweaks.' },
       { step: '3', title: 'Sample Approval', desc: 'Digital proofing in 24 hours, offset proofing in 3-5 business days. Production starts after your approval.' },
-      { step: '4', title: 'Production', desc: 'Heidelberg 4-color offset + HP Indigo digital. ISO 9001 certified, Delta E ≤3 color control.' },
-      { step: '5', title: 'Global Delivery', desc: 'SF Express covers all of Hong Kong, DHL/FedEx delivers worldwide in 2-4 days. Volume pricing on 1000+ units.' }
+      { step: '4', title: 'Production', desc: 'Heidelberg 4-color offset + HP Indigo digital + 6 production stages ([view flow ↓](#factory)). Top categories: [Stickers](/category/stickers/) · [Flyers](/category/flyers/) · [Packaging](/category/packaging/) · [Paper Bags](/category/paper-bags/). ISO 9001 certified, Delta E ≤3. Trusted by 1,000+ global brands.' },
+      { step: '5', title: 'Global Delivery', desc: 'SF Express covers Hong Kong in 24h, DHL/FedEx delivers worldwide in 2-4 days. 50+ countries served, 1,000+ orders shipped. [WhatsApp us 📲](https://wa.me/8619880851334) · [Contact us](/contact/)' }
     ],
 
     testimonialTitle: 'Client Testimonials',
@@ -189,12 +189,12 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
     testimonialSubtitle: '12 industry segments served · 1,000+ business clients trusted us',
 
     industries: [
-      { iconKey: 'fnb', name: 'Food & Beverage', desc: 'Restaurants & delivery platforms' },
-      { iconKey: 'retail', name: 'Retail & Boutique', desc: 'Brick-and-mortar stores & counters' },
-      { iconKey: 'ecommerce', name: 'Cross-border E-com', desc: 'DTC brands & Amazon FBA' },
-      { iconKey: 'beauty', name: 'Beauty & Skincare', desc: 'Skincare & cosmetics' },
-      { iconKey: 'education', name: 'Education & Training', desc: 'Schools & training institutes' },
-      { iconKey: 'wedding', name: 'Weddings & Events', desc: 'Weddings & corporate events' },
+      { iconKey: 'fnb', name: 'Food & Beverage', desc: 'Restaurants & delivery platforms · [Menus](/category/flyers/) · [Takeout labels](/category/labels/) · [Packaging](/category/packaging/)' },
+      { iconKey: 'retail', name: 'Retail & Boutique', desc: 'Brick-and-mortar stores & counters · [Packaging](/category/packaging/) · [Paper bags](/category/paper-bags/) · [Hang tags](/category/labels/)' },
+      { iconKey: 'ecommerce', name: 'Cross-border E-com', desc: 'DTC brands & Amazon FBA · [Shipping box guide](/blog/cross-border-ecommerce-shipping-box-guide/) · [Shipping labels](/category/labels/)' },
+      { iconKey: 'beauty', name: 'Beauty & Skincare', desc: 'Skincare & cosmetics · [Labels](/category/labels/) · [Packaging](/category/packaging/)' },
+      { iconKey: 'education', name: 'Education & Training', desc: 'Schools & training institutes · [Books](/category/books/) · [Stickers](/category/stickers/)' },
+      { iconKey: 'wedding', name: 'Weddings & Events', desc: 'Weddings & corporate events · [Stickers](/category/stickers/) · [Packaging](/category/packaging/)' },
       { iconKey: 'creator', name: 'Creator IP', desc: 'Designers & artists' },
       { iconKey: 'pet', name: 'Pet Industry', desc: 'Pet food & supplies' },
       { iconKey: 'baby', name: 'Baby & Maternity', desc: 'Baby & pregnancy products' },
@@ -209,7 +209,7 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
 
     // 2026-08-16 K3 拍板: About section factory photo embed (processed from 47 real factory photos)
     factorySectionTitle: 'Our Factory & Equipment',
-    factorySectionSubtitle: 'Our own factory in Shenzhen · Heidelberg offset + HP Indigo digital · full control from prepress to finishing',
+    factorySectionSubtitle: 'In-house production facility · Heidelberg 4-color offset + HP Indigo digital + 6-color line · 6 production stages captured in 22 real photos ([view production flow ↓](#factory))',
     altFloorPano: 'ZprintPro production floor panoramic view with folding machines and finishing line',
     altHeidelberg: 'Heidelberg Speedmaster 4-color offset press producing premium gift boxes',
     altHeidelberg61: 'Heidelberg 6+1 color offset press at our facility',
@@ -271,15 +271,15 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
 「智印未来」（より聪明な印刷、より明るい未来）をビジョンに、智能化された生産プロセス、フルオーダーメイド、エコ素材を通じて、他にない高品質な印刷物でブランドイメージと市場競争力を高めます。創立から15年、1000社以上のお客様にサービスを提供し、東京・大阪・名古屋など日本全国、ならびにアジア・米国・欧州・オーストラリアへの迅速配送で、グローバル規模の印刷パートナーとして信頼を集めてまいりました。`,
     advantageTitle: '核心強み',
     advantages: [
-      { title: '品質保証', desc: 'ISO 9001品質管理システム認証、ハイデルベルク4色オフセット印刷、ICCカラーマネジメント、Delta E ≤3の色彩誤差管理。印前から印後まで、各工程に専任者が検査を行います。' },
-      { title: '迅速な納品', desc: 'デジタル印刷は当日受取可能、オフセット印刷は3～5日で納品。顺丰速遞は香港全域をカバーし、大口注文は専用トラック直送も可能です。' },
+      { title: '品質保証', desc: 'ISO 9001 + FSC 認証 · ハイデルベルク 4 色オフセット + HP Indigo デジタル + 6 工程実写 ([工程フローを見る ↓](#factory)) · ICC カラーマネジメント Delta E ≤3 · 1,000+ 法人顧客。' },
+      { title: '迅速な納品', desc: 'デジタル 24h · オフセット 3-5 日 · DHL/FedEx 世界 2-4 日直送 · 50+ ヶ国対応 · 1,000+ 注文実績 · [WhatsApp で即時お問合せ 📲](https://wa.me/8619880851334) · ' },
       { title: '専門的なサービス', desc: '無料デザイン相談、無料型抜き設計、無料カラープルーフ。専任のアカウントマネージャーが見積もりから納品までワンストップでサポートします。' },
     ],
     teamTitle: '専門チーム',
     teams: [
       { title: '創業者', desc: '印刷業界15年の経験。国際トップ印刷グループでの勤務経験があり、色彩管理と印前工程に精通。' },
       { title: '印前エンジニア', desc: '平均8年の経験。AI／PDFファイルチェック、型抜き設計、ICCカラープロファイリング、デジタル校正を専門としています。' },
-      { title: 'カスタマーサービス', desc: '広東語、英語、北京語、日本語が堪能。24時間以内の返信を約束し、見積もりからアフターサービスまですべての問題を解決します。' },
+      { title: 'カスタマーサービス', desc: '粵 / 普 / 英 / 日 四言語対応 · 24 時間以内返信 · WhatsApp サポート +86 198 8085 1334 · [お問合せ](/contact/) · [WhatsApp 📲](https://wa.me/8619880851334)' },
     ],
     certTitle: '認証資格',
     certs: [
@@ -297,8 +297,8 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
       { step: '1', title: 'ファイルアップロード', desc: 'AI が PDF 解像度・塗り足し・カラーモードを自動チェック。30 秒で見積もり、登録不要。' },
       { step: '2', title: '無料デザインサポート', desc: 'デザインに自信がなくても安心。無料型抜きライン作成、色校正、レイアウト微調整を提供。' },
       { step: '3', title: 'サンプル確認', desc: 'デジタル校正 24 時間、オフセット校正 3-5 営業日。確認後すぐ生産開始。' },
-      { step: '4', title: '印刷生産', desc: 'ハイデルベルク 4 色オフセット + HP Indigo デジタル。ISO 9001 認証、Delta E ≤3 色彩管理。' },
-      { step: '5', title: '世界配送', desc: '顺丰速运は香港全域をカバー、DHL/FedEx は世界 2-4 日直送。1000 部以上で批量割引。' }
+      { step: '4', title: '印刷生産', desc: 'ハイデルベルク 4 色オフセット + HP Indigo デジタル + 6 工程実写 ([工程フローを見る ↓](#factory)) · 主要取扱: [ステッカー](/category/stickers/) · [チラシ](/category/flyers/) · [パッケージ](/category/packaging/) · [紙袋](/category/paper-bags/) · ISO 9001 認証 · Delta E ≤3 · 1,000+ 法人顧客。' },
+      { step: '5', title: '世界配送', desc: '顺丰速运は香港全域 24h · DHL/FedEx は世界 2-4 日直送 · 50+ ヶ国対応 · 1,000+ 注文実績 · [WhatsApp で即時お問合せ 📲](https://wa.me/8619880851334) · [お問合せ](/contact/)' }
     ],
 
     testimonialTitle: 'お客様の声',
@@ -306,12 +306,12 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
     testimonialSubtitle: '12 業種のクライアントにサービス提供 · 累計 1,000 社以上',
 
     industries: [
-      { iconKey: 'fnb', name: '飲食・テイクアウト', desc: 'レストラン・出前プラットフォーム' },
-      { iconKey: 'retail', name: '小売・精品', desc: '実店舗・ブランドカウンター' },
-      { iconKey: 'ecommerce', name: '越境 EC', desc: 'DTC ブランド・Amazon FBA' },
-      { iconKey: 'beauty', name: '美容・スキンケア', desc: 'スキンケア・化粧品' },
-      { iconKey: 'education', name: '教育・研修', desc: '学校・研修機関' },
-      { iconKey: 'wedding', name: '結婚・イベント', desc: '結婚式・企業イベント' },
+      { iconKey: 'fnb', name: '飲食・テイクアウト', desc: 'レストラン・出前プラットフォーム · [メニュー印刷](/category/flyers/) · [テイクアウトラベル](/category/labels/) · [パッケージ](/category/packaging/)' },
+      { iconKey: 'retail', name: '小売・精品', desc: '実店舗・ブランドカウンター · [パッケージ](/category/packaging/) · [紙袋](/category/paper-bags/) · [下げ札](/category/labels/)' },
+      { iconKey: 'ecommerce', name: '越境 EC', desc: 'DTC ブランド・Amazon FBA · [越境 EC パッケージガイド](/blog/cross-border-ecommerce-shipping-box-guide/) · [配送ラベル](/category/labels/)' },
+      { iconKey: 'beauty', name: '美容・スキンケア', desc: 'スキンケア・化粧品 · [ラベル](/category/labels/) · [パッケージ](/category/packaging/)' },
+      { iconKey: 'education', name: '教育・研修', desc: '学校・研修機関 · [書籍](/category/books/) · [ステッカー](/category/stickers/)' },
+      { iconKey: 'wedding', name: '結婚・イベント', desc: '結婚式・企業イベント · [ステッカー](/category/stickers/) · [パッケージ](/category/packaging/)' },
       { iconKey: 'creator', name: 'クリエイター IP', desc: 'デザイナー・アーティスト' },
       { iconKey: 'pet', name: 'ペット業界', desc: 'ペットフード・用品' },
       { iconKey: 'baby', name: 'ベビー・マタニティ', desc: '乳幼児・妊産婦向け' },
@@ -326,7 +326,7 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
 
     // 2026-08-16 K3 拍板: 会社概要セクションに工場実写写真を埋め込み
     factorySectionTitle: '工場・設備の実写',
-    factorySectionSubtitle: '深圳の自社工場 · Heidelberg オフセット + HP Indigo デジタル · 印前から後加工まで一貫管理',
+    factorySectionSubtitle: '自社一貫生産工場 · Heidelberg 4色オフセット + HP Indigo デジタル · 6 工程 22 枚実写 ([工程フローを見る ↓](#factory))',
     altFloorPano: 'ZprintPro 印刷工場のパノラマビュー — 折機と後加工ライン',
     altHeidelberg: 'Heidelberg Speedmaster 4色オフセット印刷機が高級ギフトボックスを印刷中',
     altHeidelberg61: 'Heidelberg 6+1色オフセット印刷機の実写',
