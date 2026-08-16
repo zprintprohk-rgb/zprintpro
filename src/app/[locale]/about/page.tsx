@@ -86,9 +86,9 @@ const translations = {
       { iconKey: 'apparel', name: '服裝鞋帽', desc: '時尚及運動品牌' }
     ],
 
-    imageSlotFactory: '工廠車間 / 設備全景 (K3 拍圖後替換)',
+    imageSlotFactory: '✅ 已上線 · 22 figure 工序流 gallery (印刷機實拍 → 輪轉 → 印刷機長圖 → 半成品 → 後道裝訂 → 成品盒子), 2026-08-16 717825f',
 
-    imageSlotTeam: '團隊真人工作場景 (K3 拍圖後替換)',
+    imageSlotTeam: '團隊場景 · 預留擴展位 (待 K3 拍團隊圖後上線)',
 
     // 2026-08-16 K3 拍板: 關於我們板塊嵌入工廠實拍圖 (F:\工厂图片 47 张处理产出)
     factorySectionTitle: '廠房與設備 · 實拍',
@@ -203,9 +203,9 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
       { iconKey: 'apparel', name: 'Apparel & Footwear', desc: 'Fashion & sports brands' }
     ],
 
-    imageSlotFactory: 'Factory floor / equipment panorama (K3 replace after photo capture)',
+    imageSlotFactory: '✅ Live · 22-figure production flow gallery (press → rotary → wide press → semi-finished → post-press binding → finished boxes), commit 717825f 2026-08-16',
 
-    imageSlotTeam: 'Team real work scenes (K3 replace after photo capture)',
+    imageSlotTeam: 'Team scenes · reserved for expansion (pending K3 team photos)',
 
     // 2026-08-16 K3 拍板: About section factory photo embed (processed from 47 real factory photos)
     factorySectionTitle: 'Our Factory & Equipment',
@@ -320,9 +320,9 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
       { iconKey: 'apparel', name: 'アパレル・靴', desc: 'ファッション・スポーツ' }
     ],
 
-    imageSlotFactory: '工場現場・設備全景 (K3 撮影後に差し替え)',
+    imageSlotFactory: '✅ 公開済 · 22 枚工程フローギャラリー (印刷機 → 輪転機 → 長尺印刷 → 半製品 → 後加工 → 完成品), commit 717825f 2026-08-16',
 
-    imageSlotTeam: 'チームの実業務シーン (K3 撮影後に差し替え)',
+    imageSlotTeam: 'チーム実写 · 拡張用预留 (K3 チーム写真待ち)',
 
     // 2026-08-16 K3 拍板: 会社概要セクションに工場実写写真を埋め込み
     factorySectionTitle: '工場・設備の実写',
