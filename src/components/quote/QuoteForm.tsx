@@ -389,7 +389,7 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
 
   return (
     <>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+      <form onSubmit={form.handleSubmit(onSubmit)} data-cf-analytics="contact_quote_submit" className="space-y-6">
       <div className="space-y-3">
         <QuoteTrustBar items={t.trustItems} />
         <p className="text-center text-[13px] font-medium text-slate-500">{t.socialProof}</p>
