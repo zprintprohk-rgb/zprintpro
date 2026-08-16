@@ -107,6 +107,38 @@ const translations = {
     capHpDigital: 'HP Indigo · 小批量急件',
     capCraftGluing: '手工粘膠 · 折疊盒成型',
     capCraftTriangle: '異形三角結構 · 手工精工',
+    altWeigangUv: 'UV 輪轉印刷設備 — 印後表面工藝',
+    capWeigangUv: 'UV 輪轉 · 表面工藝',
+    altColorChart: '印刷色彩管理 — 機長用測色儀核對色樣',
+    capColorChart: '色彩管理 · Delta E ≤3',
+    capFoldingLine: '摺紙機線 · 摺疊成型',
+    capGluing: '自動粘膠 · 糊盒成型',
+    capBlack: '黑色可折疊摺平精品禮盒',
+    capCabinet: '高端硬盒樣品櫃 · 50+ 品牌案例',
+    capInterior: '硬盒內部結構 · 燙金內襯',
+    capPalletized: '成品打托 · 待發全球',
+    capVending: '自動售貨機纖薄包裝盒',
+    capTextbook: '國外校園課本印刷樣張',
+    stagePrepress: '色彩管理 · 印前',
+    stageOffset: '柯式印刷',
+    stageDigital: '數碼 & 標籤印刷',
+    stageFinish: '印後加工 & 手工',
+    stageShowcase: '成品 & 樣品',
+    stageDispatch: '包裝出貨',
+    colorStory: '每批印件以測色儀校準，Delta E ≤3，批次間色彩一致。',
+    altBanner: '海德堡 Speedmaster 柯式印刷全線實拍 — 自家廠房核心設備',
+    capBanner: '海德堡 Speedmaster 全線 · 自家廠房實拍',
+    altFoldingLine: '摺紙機線 — 摺頁成型設備',
+    altGluing: '自動糊盒機 — 折疊盒粘膠成型',
+    altBlack: '黑色可折疊摺平精品禮盒 — 平面交貨省運費',
+    altCabinet: '高端硬盒樣品櫃 — 50+ 款全球品牌定制案例',
+    altInterior: '硬盒內部結構 — 燙金內襯工藝',
+    altPalletized: '成品打托纏膜 — 待發貨全球',
+    altVending: '自動售貨機纖薄包裝盒定制',
+    altTextbook: '國外校園課本印刷樣張 — 出口書刊品質',
+    altPressPano: '柯式印刷機組橫幅實拍 — 整條生產線',
+    capPressPano: '印刷機長圖 · 柯式全線',
+    stageGiftbox: '節慶禮盒工藝',
     altCraftGluing: '折疊盒手工粘膠工藝實拍',
     altCraftTriangle: '異形三角手工禮品盒板 — 特殊結構工藝',
   },
@@ -192,6 +224,38 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
     capHpDigital: 'HP Indigo · fast small batches',
     capCraftGluing: 'Hand gluing · folding box assembly',
     capCraftTriangle: 'Triangular structure · handcrafted precision',
+    altWeigangUv: 'UV rotary finishing equipment',
+    capWeigangUv: 'UV rotary · finishing',
+    altColorChart: 'Press operator checking color patches with a spectrophotometer',
+    capColorChart: 'Color management · Delta E ≤3',
+    capFoldingLine: 'Folding machine line',
+    capGluing: 'Auto gluing · box forming',
+    capBlack: 'Collapsible black premium gift box',
+    capCabinet: 'Rigid box sample cabinet · 50+ brand cases',
+    capInterior: 'Rigid box interior · gold lining',
+    capPalletized: 'Palletized finished goods · ready to ship',
+    capVending: 'Slim packaging for vending machines',
+    capTextbook: 'Overseas textbook printing samples',
+    stagePrepress: 'Color Management · Prepress',
+    stageOffset: 'Offset Printing',
+    stageDigital: 'Digital & Label Printing',
+    stageFinish: 'Finishing & Handcraft',
+    stageShowcase: 'Finished Goods & Samples',
+    stageDispatch: 'Packing & Dispatch',
+    colorStory: 'Every job is calibrated with a spectrophotometer — Delta E ≤3 and color-consistent across batches.',
+    altBanner: 'Heidelberg Speedmaster offset press full line at ZprintPro factory',
+    capBanner: 'Heidelberg Speedmaster full line · our own factory',
+    altFoldingLine: 'Folding machine line — crease and fold forming',
+    altGluing: 'Automatic gluing machine — folding box assembly',
+    altBlack: 'Collapsible black premium gift box — ships flat to save freight',
+    altCabinet: 'Premium rigid box sample cabinet — 50+ global brand cases',
+    altInterior: 'Rigid box interior structure — gold foil lining',
+    altPalletized: 'Finished goods palletized and wrapped — ready for global dispatch',
+    altVending: 'Slim packaging boxes for vending machines',
+    altTextbook: 'Overseas school textbook printing samples — export book quality',
+    altPressPano: 'Offset press line panorama — the full production line',
+    capPressPano: 'Press line panorama · full offset line',
+    stageGiftbox: 'Festive Gift Box Craft',
     altCraftGluing: 'Manual gluing process for folding gift boxes',
     altCraftTriangle: 'Triangular handmade gift box panel — specialty structure craftsmanship',
   },
@@ -277,6 +341,38 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
     capHpDigital: 'HP Indigo · 小ロット急ぎ対応',
     capCraftGluing: '手作業糊付け · 折りたたみボックス',
     capCraftTriangle: '変形三角構造 · 手作りの技',
+    altWeigangUv: 'UV輪転印刷設備 — 印刷後の表面加工',
+    capWeigangUv: 'UV輪転 · 表面加工',
+    altColorChart: '印刷カラーマネジメント — 測色器で色見本を確認する機長',
+    capColorChart: 'カラーマネジメント · Delta E ≤3',
+    capFoldingLine: '折機ライン · 折り加工',
+    capGluing: '自動糊付け · 箱成形',
+    capBlack: '黒折りたたみ式プレミアムギフトボックス',
+    capCabinet: '硬質ボックスサンプル棚 · 50+ブランド事例',
+    capInterior: '硬質ボックス内部 · 金箔ライニング',
+    capPalletized: 'パレット済み完成品 · 世界出荷待ち',
+    capVending: '自販機用スリムパッケージ',
+    capTextbook: '海外校園テキスト印刷見本',
+    stagePrepress: 'カラーマネジメント · 印前',
+    stageOffset: 'オフセット印刷',
+    stageDigital: 'デジタル & ラベル印刷',
+    stageFinish: '後加工 & 手仕事',
+    stageShowcase: '完成品 & サンプル',
+    stageDispatch: '梱包・出荷',
+    colorStory: '全ロットを測色器で校正、Delta E ≤3 でロット間の一貫性を保証。',
+    altBanner: 'Heidelberg Speedmaster オフセット印刷全ライン — ZprintPro 自社工場',
+    capBanner: 'Heidelberg Speedmaster 全ライン · 自社工場実写',
+    altFoldingLine: '折機ライン — 折り加工設備',
+    altGluing: '自動糊付け機 — 折りたたみ箱成形',
+    altBlack: '黒折りたたみ式プレミアムギフトボックス — 平面納品で輸送費節約',
+    altCabinet: 'プレミアム硬質ボックスサンプル棚 — 50+グローバルブランド事例',
+    altInterior: '硬質ボックス内部構造 — 金箔ライニング工芸',
+    altPalletized: 'パレット梱包済み完成品 — 世界出荷待ち',
+    altVending: '自動販売機用スリムパッケージボックス',
+    altTextbook: '海外校園テキスト印刷見本 — 輸出書刊品質',
+    altPressPano: 'オフセット印刷機ラインのパノラマ実写 — 生産ライン全景',
+    capPressPano: '印刷機ライン長尺 · オフセット全ライン',
+    stageGiftbox: '祝祭ギフトボックス工芸',
     altCraftGluing: '折りたたみギフトボックスの手作業糊付け工程',
     altCraftTriangle: '変形三角形手作りギフトボックスのパネル — 特殊構造の工芸',
   },
@@ -429,106 +525,190 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
               <p className="text-white/60 mt-4 max-w-2xl mx-auto text-sm md:text-base">{t.factorySectionSubtitle}</p>
             </div>
 
-            {/* Bento 不等宽画廊 */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 md:auto-rows-[11rem]">
-              {/* 主图: 海德堡礼盒 (大卡, 跨 2 行) */}
-              <figure className="group relative col-span-2 md:col-span-2 md:row-span-2 rounded-2xl overflow-hidden ring-1 ring-white/10">
-                <img
-                  src="/images/factory/factory-heidelberg-speedmaster-with-boxes.webp"
-                  alt={t.altHeidelberg}
-                  loading="lazy"
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/85 via-transparent to-transparent" />
+            {/* 顶部整图: 海德堡全线横幅 (K3 8/16 指定第一张, 整图, 调亮) */}
+            <figure className="group relative rounded-3xl overflow-hidden ring-1 ring-white/10 h-56 sm:h-72 md:h-[380px]">
+              <img
+                src="/images/factory/factory-banner.webp"
+                alt={t.altBanner}
+                className="absolute inset-0 w-full h-full object-cover brightness-105 saturate-105 transition-transform duration-700 group-hover:scale-[1.03]"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/70 via-transparent to-transparent" />
+              <span className="absolute top-4 left-4 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#2873F5] text-white text-[11px] font-bold shadow-lg shadow-[#2873F5]/30">
+                <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                Heidelberg Speedmaster
+              </span>
+              <figcaption className="absolute bottom-4 left-4 right-4 text-white text-sm md:text-base font-semibold">{t.capBanner}</figcaption>
+            </figure>
+
+            {/* 01 色彩管理 · 印前 */}
+            <div className="flex items-center gap-3 mt-12 mb-4">
+              <span className="w-7 h-7 rounded-full bg-[#2873F5] text-white text-xs font-bold flex items-center justify-center shrink-0">01</span>
+              <h3 className="text-lg font-bold text-white">{t.stagePrepress}</h3>
+              <div className="flex-1 h-px bg-white/10" />
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+              <figure className="group relative col-span-2 rounded-2xl overflow-hidden ring-1 ring-white/10 h-52 md:h-64">
+                <img src="/images/factory/factory-color-chart.webp" alt={t.altColorChart} loading="lazy" className="absolute inset-0 w-full h-full object-cover brightness-110 saturate-[1.08] contrast-[1.02] transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/70 via-transparent to-transparent" />
+                <figcaption className="absolute bottom-3 left-4 text-white text-sm font-semibold">{t.capColorChart}</figcaption>
+              </figure>
+              <div className="col-span-2 md:col-span-1 rounded-2xl bg-white/5 border border-white/10 p-5 flex flex-col justify-center gap-3">
+                <svg className="w-6 h-6 text-[#7EB3FF]" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485" /></svg>
+                <p className="text-white/70 text-sm leading-relaxed">{t.colorStory}</p>
+                <div className="flex flex-wrap gap-1.5">
+                  <span className="px-2.5 py-0.5 rounded-full bg-white/5 border border-white/15 text-white/60 text-[10px] font-semibold">ISO 9001</span>
+                  <span className="px-2.5 py-0.5 rounded-full bg-white/5 border border-white/15 text-white/60 text-[10px] font-semibold">FSC</span>
+                  <span className="px-2.5 py-0.5 rounded-full bg-white/5 border border-white/15 text-white/60 text-[10px] font-semibold">ICC</span>
+                </div>
+              </div>
+            </div>
+
+            {/* 02 柯式印刷 */}
+            <div className="flex items-center gap-3 mt-12 mb-4">
+              <span className="w-7 h-7 rounded-full bg-[#2873F5] text-white text-xs font-bold flex items-center justify-center shrink-0">02</span>
+              <h3 className="text-lg font-bold text-white">{t.stageOffset}</h3>
+              <div className="flex-1 h-px bg-white/10" />
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 md:auto-rows-[11rem]">
+              <figure className="group relative col-span-2 md:col-span-2 md:row-span-2 rounded-2xl overflow-hidden ring-1 ring-white/10 h-72 md:h-auto">
+                <img src="/images/factory/factory-heidelberg-speedmaster-with-boxes.webp" alt={t.altHeidelberg} loading="lazy" className="absolute inset-0 w-full h-full object-cover brightness-110 saturate-[1.08] contrast-[1.02] transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/70 via-transparent to-transparent" />
                 <span className="absolute top-4 left-4 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#2873F5] text-white text-[11px] font-bold shadow-lg shadow-[#2873F5]/30">
                   <svg className="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
                   Heidelberg Speedmaster
                 </span>
                 <figcaption className="absolute bottom-4 left-4 right-4 text-white text-sm font-semibold">{t.capHeidelberg}</figcaption>
               </figure>
-
-              {/* 车间全景 (宽幅, 跨 2 列) */}
-              <figure className="group relative col-span-2 md:col-span-2 rounded-2xl overflow-hidden ring-1 ring-white/10 min-h-[200px] md:min-h-0">
-                <img
-                  src="/images/factory/factory-production-floor-pano.webp"
-                  alt={t.altFloorPano}
-                  loading="lazy"
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/85 via-transparent to-transparent" />
-                <figcaption className="absolute bottom-4 left-4 right-4 text-white text-sm font-semibold">{t.capFloorPano}</figcaption>
-              </figure>
-
-              {/* 标签机 */}
               <figure className="group relative rounded-2xl overflow-hidden ring-1 ring-white/10 min-h-[180px] md:min-h-0">
-                <img
-                  src="/images/factory/label-press.webp"
-                  alt={t.altLabelPress}
-                  loading="lazy"
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/85 via-transparent to-transparent" />
-                <figcaption className="absolute bottom-3 left-3 right-3 text-white text-xs font-semibold">{t.capLabelPress}</figcaption>
-              </figure>
-
-              {/* 海德堡 6+1 */}
-              <figure className="group relative rounded-2xl overflow-hidden ring-1 ring-white/10 min-h-[180px] md:min-h-0">
-                <img
-                  src="/images/factory/factory-heidelberg-6plus1.webp"
-                  alt={t.altHeidelberg61}
-                  loading="lazy"
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/85 via-transparent to-transparent" />
+                <img src="/images/factory/factory-heidelberg-6plus1.webp" alt={t.altHeidelberg61} loading="lazy" className="absolute inset-0 w-full h-full object-cover brightness-110 saturate-[1.08] contrast-[1.02] transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/70 via-transparent to-transparent" />
                 <figcaption className="absolute bottom-3 left-3 right-3 text-white text-xs font-semibold">{t.capHeidelberg61}</figcaption>
               </figure>
-
-              {/* 柯式机组 (跨 2 列) */}
-              <figure className="group relative col-span-2 rounded-2xl overflow-hidden ring-1 ring-white/10 min-h-[180px] md:min-h-0">
-                <img
-                  src="/images/factory/offset-press.webp"
-                  alt={t.altOffsetPress}
-                  loading="lazy"
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/85 via-transparent to-transparent" />
+              <figure className="group relative rounded-2xl overflow-hidden ring-1 ring-white/10 min-h-[180px] md:min-h-0">
+                <img src="/images/factory/offset-press.webp" alt={t.altOffsetPress} loading="lazy" className="absolute inset-0 w-full h-full object-cover brightness-110 saturate-[1.08] contrast-[1.02] transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/70 via-transparent to-transparent" />
                 <figcaption className="absolute bottom-3 left-3 right-3 text-white text-xs font-semibold">{t.capOffsetPress}</figcaption>
               </figure>
+            </div>
 
-              {/* 手工粘胶 */}
-              <figure className="group relative rounded-2xl overflow-hidden ring-1 ring-white/10 min-h-[180px] md:min-h-0">
-                <img
-                  src="/images/factory/craft-folding-box-manual-gluing-process.webp"
-                  alt={t.altCraftGluing}
-                  loading="lazy"
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/85 via-transparent to-transparent" />
-                <figcaption className="absolute bottom-3 left-3 right-3 text-white text-xs font-semibold">{t.capCraftGluing}</figcaption>
+            {/* 03 数码 & 标签印刷 + 印刷机长图 */}
+            <div className="flex items-center gap-3 mt-12 mb-4">
+              <span className="w-7 h-7 rounded-full bg-[#2873F5] text-white text-xs font-bold flex items-center justify-center shrink-0">03</span>
+              <h3 className="text-lg font-bold text-white">{t.stageDigital}</h3>
+              <div className="flex-1 h-px bg-white/10" />
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+              <figure className="group relative col-span-2 md:col-span-3 rounded-2xl overflow-hidden ring-1 ring-white/10 h-48 md:h-60">
+                <img src="/images/factory/factory-press-pano.webp" alt={t.altPressPano} loading="lazy" className="absolute inset-0 w-full h-full object-cover brightness-110 saturate-[1.08] contrast-[1.02] transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/70 via-transparent to-transparent" />
+                <figcaption className="absolute bottom-4 left-4 right-4 text-white text-sm font-semibold">{t.capPressPano}</figcaption>
               </figure>
-
-              {/* HP Indigo */}
-              <figure className="group relative rounded-2xl overflow-hidden ring-1 ring-white/10 min-h-[180px] md:min-h-0">
-                <img
-                  src="/images/factory/factory-hp-digital.webp"
-                  alt={t.altHpDigital}
-                  loading="lazy"
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/85 via-transparent to-transparent" />
+              <figure className="group relative rounded-2xl overflow-hidden ring-1 ring-white/10 min-h-[180px]">
+                <img src="/images/factory/label-press.webp" alt={t.altLabelPress} loading="lazy" className="absolute inset-0 w-full h-full object-cover brightness-110 saturate-[1.08] contrast-[1.02] transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/70 via-transparent to-transparent" />
+                <figcaption className="absolute bottom-3 left-3 right-3 text-white text-xs font-semibold">{t.capLabelPress}</figcaption>
+              </figure>
+              <figure className="group relative rounded-2xl overflow-hidden ring-1 ring-white/10 min-h-[180px]">
+                <img src="/images/factory/factory-hp-digital.webp" alt={t.altHpDigital} loading="lazy" className="absolute inset-0 w-full h-full object-cover brightness-110 saturate-[1.08] contrast-[1.02] transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/70 via-transparent to-transparent" />
                 <figcaption className="absolute bottom-3 left-3 right-3 text-white text-xs font-semibold">{t.capHpDigital}</figcaption>
               </figure>
+              <figure className="group relative rounded-2xl overflow-hidden ring-1 ring-white/10 min-h-[180px]">
+                <img src="/images/factory/factory-press-mobile.webp" alt={t.altPressPano} loading="lazy" className="absolute inset-0 w-full h-full object-cover brightness-110 saturate-[1.08] contrast-[1.02] transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/70 via-transparent to-transparent" />
+                <figcaption className="absolute bottom-3 left-3 right-3 text-white text-xs font-semibold">{t.capOffsetPress}</figcaption>
+              </figure>
+            </div>
 
-              {/* 三角异形手工盒 (跨 2 列) */}
-              <figure className="group relative col-span-2 rounded-2xl overflow-hidden ring-1 ring-white/10 min-h-[180px] md:min-h-0">
-                <img
-                  src="/images/factory/craft-triangular-special-shape-handmade-gift-box-panel.webp"
-                  alt={t.altCraftTriangle}
-                  loading="lazy"
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/85 via-transparent to-transparent" />
+            {/* 04 后道装订车间 & 手工 */}
+            <div className="flex items-center gap-3 mt-12 mb-4">
+              <span className="w-7 h-7 rounded-full bg-[#2873F5] text-white text-xs font-bold flex items-center justify-center shrink-0">04</span>
+              <h3 className="text-lg font-bold text-white">{t.stageFinish}</h3>
+              <div className="flex-1 h-px bg-white/10" />
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+              <figure className="group relative col-span-2 rounded-2xl overflow-hidden ring-1 ring-white/10 h-52 md:h-60">
+                <img src="/images/factory/factory-folding-machine-line.webp" alt={t.altFoldingLine} loading="lazy" className="absolute inset-0 w-full h-full object-cover brightness-110 saturate-[1.08] contrast-[1.02] transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/70 via-transparent to-transparent" />
+                <figcaption className="absolute bottom-4 left-4 text-white text-sm font-semibold">{t.capFoldingLine}</figcaption>
+              </figure>
+              <figure className="group relative rounded-2xl overflow-hidden ring-1 ring-white/10 min-h-[180px]">
+                <img src="/images/factory/factory-gluing.webp" alt={t.altGluing} loading="lazy" className="absolute inset-0 w-full h-full object-cover brightness-110 saturate-[1.08] contrast-[1.02] transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/70 via-transparent to-transparent" />
+                <figcaption className="absolute bottom-3 left-3 right-3 text-white text-xs font-semibold">{t.capGluing}</figcaption>
+              </figure>
+              <figure className="group relative rounded-2xl overflow-hidden ring-1 ring-white/10 min-h-[180px]">
+                <img src="/images/factory/craft-folding-box-manual-gluing-process.webp" alt={t.altCraftGluing} loading="lazy" className="absolute inset-0 w-full h-full object-cover brightness-110 saturate-[1.08] contrast-[1.02] transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/70 via-transparent to-transparent" />
+                <figcaption className="absolute bottom-3 left-3 right-3 text-white text-xs font-semibold">{t.capCraftGluing}</figcaption>
+              </figure>
+              <figure className="group relative col-span-2 rounded-2xl overflow-hidden ring-1 ring-white/10 min-h-[180px]">
+                <img src="/images/factory/craft-triangular-special-shape-handmade-gift-box-panel.webp" alt={t.altCraftTriangle} loading="lazy" className="absolute inset-0 w-full h-full object-cover brightness-110 saturate-[1.08] contrast-[1.02] transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/70 via-transparent to-transparent" />
                 <figcaption className="absolute bottom-3 left-3 right-3 text-white text-xs font-semibold">{t.capCraftTriangle}</figcaption>
+              </figure>
+            </div>
+
+            {/* 05 节庆礼盒工艺 */}
+            <div className="flex items-center gap-3 mt-12 mb-4">
+              <span className="w-7 h-7 rounded-full bg-[#2873F5] text-white text-xs font-bold flex items-center justify-center shrink-0">05</span>
+              <h3 className="text-lg font-bold text-white">{t.stageGiftbox}</h3>
+              <div className="flex-1 h-px bg-white/10" />
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+              <figure className="group relative col-span-2 rounded-2xl overflow-hidden ring-1 ring-white/10 h-52 md:h-60">
+                <img src="/images/factory/showcase-red-tactile-paper-book-style-gift-box-gold-foil.webp" alt={t.altBlack} loading="lazy" className="absolute inset-0 w-full h-full object-cover brightness-110 saturate-[1.08] contrast-[1.02] transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/70 via-transparent to-transparent" />
+                <figcaption className="absolute bottom-4 left-4 text-white text-sm font-semibold">{t.capCraftGluing}</figcaption>
+              </figure>
+              <figure className="group relative rounded-2xl overflow-hidden ring-1 ring-white/10 min-h-[180px]">
+                <img src="/images/factory/showcase-red-hot-foil-tian-di-gift-box-lunar-new-year.webp" alt={t.altCabinet} loading="lazy" className="absolute inset-0 w-full h-full object-cover brightness-110 saturate-[1.08] contrast-[1.02] transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/70 via-transparent to-transparent" />
+                <figcaption className="absolute bottom-3 left-3 right-3 text-white text-xs font-semibold">{t.capCraftTriangle}</figcaption>
+              </figure>
+              <figure className="group relative rounded-2xl overflow-hidden ring-1 ring-white/10 min-h-[180px]">
+                <img src="/images/factory/showcase-red-conjoined-flip-lid-gift-box-gold-foil.webp" alt={t.altInterior} loading="lazy" className="absolute inset-0 w-full h-full object-cover brightness-110 saturate-[1.08] contrast-[1.02] transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/70 via-transparent to-transparent" />
+                <figcaption className="absolute bottom-3 left-3 right-3 text-white text-xs font-semibold">{t.capInterior}</figcaption>
+              </figure>
+              <figure className="group relative col-span-2 rounded-2xl overflow-hidden ring-1 ring-white/10 min-h-[180px]">
+                <img src="/images/factory/showcase-red-conjoined-box-interior-gold-lining.webp" alt={t.altInterior} loading="lazy" className="absolute inset-0 w-full h-full object-cover brightness-110 saturate-[1.08] contrast-[1.02] transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/70 via-transparent to-transparent" />
+                <figcaption className="absolute bottom-3 left-3 right-3 text-white text-xs font-semibold">{t.capInterior}</figcaption>
+              </figure>
+            </div>
+
+            {/* 06 成品 & 包装出货 */}
+            <div className="flex items-center gap-3 mt-12 mb-4">
+              <span className="w-7 h-7 rounded-full bg-[#2873F5] text-white text-xs font-bold flex items-center justify-center shrink-0">06</span>
+              <h3 className="text-lg font-bold text-white">{t.stageShowcase} · {t.stageDispatch}</h3>
+              <div className="flex-1 h-px bg-white/10" />
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+              <figure className="group relative col-span-2 rounded-2xl overflow-hidden ring-1 ring-white/10 h-52 md:h-60">
+                <img src="/images/factory/showcase-rigid-box-cabinet.webp" alt={t.altCabinet} loading="lazy" className="absolute inset-0 w-full h-full object-cover brightness-110 saturate-[1.08] contrast-[1.02] transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/70 via-transparent to-transparent" />
+                <figcaption className="absolute bottom-4 left-4 text-white text-sm font-semibold">{t.capCabinet}</figcaption>
+              </figure>
+              <figure className="group relative rounded-2xl overflow-hidden ring-1 ring-white/10 min-h-[180px]">
+                <img src="/images/factory/showcase-rigid-box-palletized.webp" alt={t.altPalletized} loading="lazy" className="absolute inset-0 w-full h-full object-cover brightness-110 saturate-[1.08] contrast-[1.02] transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/70 via-transparent to-transparent" />
+                <figcaption className="absolute bottom-3 left-3 right-3 text-white text-xs font-semibold">{t.capPalletized}</figcaption>
+              </figure>
+              <figure className="group relative rounded-2xl overflow-hidden ring-1 ring-white/10 min-h-[180px]">
+                <img src="/images/factory/showcase-black-collapsible-fold-flat-premium-gift-box.webp" alt={t.altBlack} loading="lazy" className="absolute inset-0 w-full h-full object-cover brightness-110 saturate-[1.08] contrast-[1.02] transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/70 via-transparent to-transparent" />
+                <figcaption className="absolute bottom-3 left-3 right-3 text-white text-xs font-semibold">{t.capBlack}</figcaption>
+              </figure>
+              <figure className="group relative rounded-2xl overflow-hidden ring-1 ring-white/10 min-h-[180px]">
+                <img src="/images/factory/showcase-vending-machine-slim-packaging-box.webp" alt={t.altVending} loading="lazy" className="absolute inset-0 w-full h-full object-cover brightness-110 saturate-[1.08] contrast-[1.02] transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/70 via-transparent to-transparent" />
+                <figcaption className="absolute bottom-3 left-3 right-3 text-white text-xs font-semibold">{t.capVending}</figcaption>
+              </figure>
+              <figure className="group relative rounded-2xl overflow-hidden ring-1 ring-white/10 min-h-[180px]">
+                <img src="/images/factory/showcase-international-textbook-printing-sample.webp" alt={t.altTextbook} loading="lazy" className="absolute inset-0 w-full h-full object-cover brightness-110 saturate-[1.08] contrast-[1.02] transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/70 via-transparent to-transparent" />
+                <figcaption className="absolute bottom-3 left-3 right-3 text-white text-xs font-semibold">{t.capTextbook}</figcaption>
               </figure>
             </div>
 
