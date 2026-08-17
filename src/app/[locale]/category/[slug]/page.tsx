@@ -313,6 +313,9 @@ export default function CategoryPage({
     'calendars': 'hero-calendars',
     'red-packets': 'hero-red-packets',
     'educational': 'hero-educational',
+    'greeting-cards': 'hero-greeting-cards',
+    'wedding-invitations': 'hero-wedding-invitations',
+    'place-cards': 'hero-place-cards',
   };
   const bannerBase = categoryBannerMap[slug];
   const bannerImage = bannerBase ? `/images/hero/${bannerBase}-${locale}.webp` : undefined;
@@ -499,6 +502,9 @@ const categoryGuideMap: Record<string, string> = {
   'banners': 'banner-buying-guide',
   'books': 'book-buying-guide',
   'menus': 'menu-buying-guide',
+  'greeting-cards': 'greeting-card-buying-guide',
+  'wedding-invitations': 'wedding-invitation-buying-guide',
+  'place-cards': 'place-card-buying-guide',
 };
 
 function BuyingGuideCta({ locale, categorySlug }: { locale: Locale; categorySlug: string }) {
