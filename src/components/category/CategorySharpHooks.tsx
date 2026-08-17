@@ -43,7 +43,7 @@ const categoryIndustryScenarios: Record<string, {
   ],
   flyers: [
     // 2026-07-09 SEO 复盘 v3: 第一场景「數碼快印 + 即日 24 小時」吸收原本 nav 「即日服務」权重
-    // 竞品 sharp hook 实证: 即日名片印刷 CTR 6.56%, A2 名片 即日 CTR 7.02%, 24小時急件 CTR 4-7%
+    // 竞品 sharp hook 实证: 即日贴纸印刷 CTR 6.56%, A2 贴纸 即日 CTR 7.02%, 24小時急件 CTR 4-7%
     // 2026-07-09 v5 美国市场优化: en 加 Free Shipping + FedEx/DHL + Made for USA
     { key: 'digital_sameday', scenarios: {
       'zh-hk': ['數碼快印 · 即日 24 小時可取', 'A4/A5 單張 · 100 張起印', '小批量無版費 · 1 本起'],

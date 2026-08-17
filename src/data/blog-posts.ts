@@ -73,7 +73,7 @@ export const defaultCover: Record<Locale, string> = {
 // =============================================================================
 
 const bgBusinessCard: BlogPostMeta = {
-  slug: 'business-card-buying-guide',
+  slug: 'sticker-buying-guide',
   categoryKey: 'buying-guide',
   source: 'buying-guide',
   date: '2025-01-15',
@@ -264,7 +264,7 @@ const lpStickerGuide: BlogPostMeta = {
 };
 
 const lpBusinessCardDesign: BlogPostMeta = {
-  slug: 'business-card-design',
+  slug: 'sticker-design',
   categoryKey: 'card',
   source: 'legacy',
   date: '2024-04-10',

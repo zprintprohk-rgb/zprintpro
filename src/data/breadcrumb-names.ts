@@ -191,9 +191,9 @@ const legacyBlogNames: Record<string, Record<Locale, string>> = {
     en: 'Complete Sticker Printing Guide',
     ja: 'ステッカー印刷完全ガイド',
   },
-  'business-card-design': {
-    'zh-hk': '名片設計指南',
-    en: 'Business Card Design Guide',
+  'sticker-design': {
+    'zh-hk': '贴纸設計指南',
+    en: 'Sticker Design Guide',
     ja: '名刺デザインガイド',
   },
   'packaging-trends': {

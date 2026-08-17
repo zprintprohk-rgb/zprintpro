@@ -226,7 +226,7 @@ const industries: Array<{ href: (l: string) => string; name: L3; use: L3 }> = [
   },
 ];
 
-/* ── 熱門分類（8 格，P0 優先，無名片） ── */
+/* ── 熱門分類（8 格，P0 優先，無贴纸） ── */
 const categories: Array<{ slug: string; name: L3 }> = [
   { slug: 'stickers', name: { 'zh-hk': '貼紙', en: 'Stickers', ja: 'ステッカー' } },
   { slug: 'flyers', name: { 'zh-hk': '傳單印刷', en: 'Flyers', ja: 'チラシ' } },

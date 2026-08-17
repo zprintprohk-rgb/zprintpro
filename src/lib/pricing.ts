@@ -6,7 +6,7 @@
  * 不再使用 "HK 价格 × 倍数" 模型。
  * 
  * 核心原则：
- * 1. 名片（business-cards）：保持低价引流策略，沿用分级定价（不调整）
+ * 1. 贴纸（stickers）：保持低价引流策略，沿用分级定价（不调整）
  * 2. Flyers/Stickers/Posters/Packaging/Paper-bags：设定独立价格，对标 Vistaprint/CustomStickers/PosterPrintShop/Packlane/ラクスル 等
  * 3. 其他品类：使用调整后的分级定价作为 fallback
  * 4. 所有 EN/JA 价格为含国际运费的包邮价
@@ -628,7 +628,7 @@ export function getIndependentPrice(slug: string, locale: Locale): { min: number
 
 // ============================================================================
 // Fallback 分级定价（用于未设定独立定价的 SKU）
-// 名片保持原有倍率不变（低价引流策略）
+// 贴纸保持原有倍率不变（低价引流策略）
 // ============================================================================
 
 /** 品类分级倍率 — 仅作为 fallback 使用 */

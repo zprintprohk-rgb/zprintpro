@@ -28,12 +28,12 @@ export const TRAD_SIMP_PAIRS: Array<[string, string]> = [
 
 // 业务别名 (2026-06-08 添加, 修 香港/大陆/日语 业务词互通)
 // 格式: [原词, 别名1, 别名2, ...] — 任意别名都能匹配到原词
-// 例: 用户搜 "名片" → 系统视同 "咭片" (HK) / "名刺" (JP)
+// 例: 用户搜 "贴纸" → 系统视同 "纸卡" (HK) / "名刺" (JP)
 export const BUSINESS_ALIASES: Array<{ primary: string; aliases: string[] }> = [
-  // 业务卡 (HK: 咭片 / CN: 名片 / JP: 名刺) — 全部互通
-  { primary: '咭片', aliases: ['名片', '名刺', 'card', 'cards', 'business card', 'business cards', '名卡', '卡片'] },
-  { primary: '名片', aliases: ['咭片', '名刺', 'card', 'cards', 'business card', '名卡'] },
-  { primary: '名刺', aliases: ['咭片', '名片', 'card', 'cards', 'business card'] },
+  // 业务卡 (HK: 纸卡 / CN: 贴纸 / JP: 名刺) — 全部互通
+  { primary: '纸卡', aliases: ['贴纸', '名刺', 'card', 'cards', 'sticker', 'stickers', '名卡', '卡片'] },
+  { primary: '贴纸', aliases: ['纸卡', '名刺', 'card', 'cards', 'sticker', '名卡'] },
+  { primary: '名刺', aliases: ['纸卡', '贴纸', 'card', 'cards', 'sticker'] },
   // 宣传单张 (HK: 傳單印刷 / CN: 宣传单张 / JP: チラシ) — 已有字符映射, 增 aliases 兜底
   { primary: '傳單印刷', aliases: ['flyer', 'flyers', 'leaflet', 'leaflets', '传单', '宣傳單', '宣傳'] },
   { primary: '宣传单张', aliases: ['flyer', 'flyers', 'leaflet', '传单', '宣传单'] },
@@ -87,7 +87,7 @@ export function getQueryVariants(query: string): string[] {
     variants.add(primary.toLowerCase());
     variants.add(toSimplified(primary).toLowerCase());
     variants.add(toTraditional(primary).toLowerCase());
-    // 主词的所有 aliases (除原 query 外) 也加入 — 比如搜 "名片", 也匹配 "sticker" 不合理, 只加主词的等价
+    // 主词的所有 aliases (除原 query 外) 也加入 — 比如搜 "贴纸", 也匹配 "sticker" 不合理, 只加主词的等价
     // 这里只加主词本身, 避免别名爆炸
   }
 

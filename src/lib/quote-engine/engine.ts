@@ -4,7 +4,7 @@
  * 用法：
  * ```ts
  * import { quoteEngine } from '@/lib/quote-engine/engine';
- * const result = quoteEngine.calculate({ productSlug: 'business-cards', ... });
+ * const result = quoteEngine.calculate({ productSlug: 'stickers', ... });
  * ```
  *
  * 阶段路线图：

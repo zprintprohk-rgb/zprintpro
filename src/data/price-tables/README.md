@@ -61,7 +61,7 @@
   - 依据: A4 100張$600/200張$750 (上限200); A5 100張$173/200張$263/300張$503/400張$615 (上限400) — 雙面彩色 ×0.95
   - 校准价: A4 100張 HK$570 / A5 100張 HK$164 / A5 400張 HK$584
   - **500 档保留 modeled**: e-print 1小時急件不提供 500 張 (A4 max 200, A5 max 400), 按 400 張 A5 急件 + 同日 4小時複印溢價 35% 估算 HK$800, 待 intuan 急件实询校准
-- `flyers.json`: eco-flyers 维持 pending — e-print 公开页无 100% recycled/再生纸 宣傳單配置 (仅有 FSC 咭片 + 環保袋), 待 intuan 询价 (需 user WebBridge 登入)
+- `flyers.json`: eco-flyers 维持 pending — e-print 公开页无 100% recycled/再生纸 宣傳單配置 (仅有 FSC 纸卡 + 環保袋), 待 intuan 询价 (需 user WebBridge 登入)
 - 复算脚本: `.hermes/calibrate-perfect-bound-and-flyers-2026-07-21.py` (1 script 管 2 SKU, C9 攒批 1 commit = 1 build quota)
 - **P0-1 B 进度**: 3/8 任务完成 (B-2 same-day + B-7 perfect-bound + B-8 exercise-books); 剩 5 任务 (B-1 a4-flyers autoglm + B-3~6 paper-bags/packaging 4 SKU user WebBridge)
 
@@ -69,5 +69,5 @@
 
 - ❌ 未校准 (`src≠anchor`) 的格子不得对客展示 — 先内部用,客户询价走 WhatsApp 人工报。
 - ❌ 改价不走 git 直接改线上 — 价格表走 PR + 校准记录。
-- ❌ 名片 (business-cards) 不出现在任何价格表 (§11 禁区,2026-07-17 user 再确认)。
+- ❌ 贴纸 (stickers) 不出现在任何价格表 (§11 禁区,2026-07-17 user 再确认)。
 - ❌ **抓不到真实价不许标 anchor** (2026-07-21 user 拍板: same-day 500 档 / eco-flyers / any 无 e-print/intuan 实抓证据的 tier) — 保持 modeled/pending 状态, 校准脚本留白纸黑字依据。

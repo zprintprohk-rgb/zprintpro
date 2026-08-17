@@ -88,7 +88,7 @@ function categoryHeat(): Map<string, number> {
 }
 
 // 2026-08-05 K3 12:24 拍板: 排除贺卡印刷类目 (greeting-cards) 在首页 12 条 / blog sidebar 14 条 top SKU 排名
-// §11 主营品类约束: 不写名片/咭片/business cards; K3 8/4 18:35 决策"贺卡印刷"同属非核心主营, 一并排除
+// §11 主营品类约束: 不写贴纸/纸卡/stickers; K3 8/4 18:35 决策"贺卡印刷"同属非核心主营, 一并排除
 // 修法: popularity.ts getTopSkuByCategory 加 blocklist, 跳过 excluded categories
 // 影响: 14 类减 1 = 13 类有效, 首页 top 12 / sidebar top 14 自动从 13 类中选, 不再含 greeting-cards
 const EXCLUDED_CATEGORIES: ReadonlyArray<string> = ['greeting-cards'];

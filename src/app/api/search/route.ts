@@ -17,7 +17,7 @@ export async function GET(request: NextRequest) {
     });
   }
 
-  // 2026-06-08: 用 searchAll 统一入口 — 同时支持 简繁互通 + 业务别名 (名片/咭片/名刺)
+  // 2026-06-08: 用 searchAll 统一入口 — 同时支持 简繁互通 + 业务别名 (贴纸/纸卡/名刺)
   const { products: matchedProducts, categories: matchedCategories } = searchAll(query, {
     productLimit: 8, // typeahead 只需要 8 个产品, 太多会撑爆 UI
     categoryLimit: 3,

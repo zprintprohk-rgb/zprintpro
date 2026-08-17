@@ -27,7 +27,7 @@
         {"sku": "a5-flyers", "totalTiers": 8, "calibrated": 5, "anchor": 1, "modeled_digital_sweet": 2, "modeled_pending_calibration": 0, "modeled_rush_premium": 0, "pending": 0, "status": "OK", "note": "a5 已 intuan 实询 5 档 + e-print 600 锚点; 100/300 数码甜点档保留"},
         {"sku": "a4-flyers", "totalTiers": 6, "calibrated": 0, "modeled_pending_calibration": 6, "status": "RED-FLAG", "note": "P0-1 B 阶段待 e-print A4 anchor scraping 校准 (autoglm-browser-agent 跑公开页, 无需登录)"},
         {"sku": "same-day-flyers", "totalTiers": 7, "calibrated": 0, "anchor": 6, "modeled_digital_sweet": 0, "modeled_pending_calibration": 0, "modeled_rush_premium": 1, "pending": 0, "status": "OK-1-mode", "calibratedAt": "2026-07-21", "note": "急件 1小時 e-print 实抓 ×0.95 → anchor (6 档: A4 100/200 + A5 100/200/300/400); 500 档保留 modeled (e-print 急件 1小時上限 200/400 張不提供 500)"},
-        {"sku": "eco-flyers", "totalTiers": 2, "calibrated": 0, "pending": 2, "status": "RED-FLAG", "note": "FSC/再生纸特殊价, e-print 公开页无 100% recycled 宣傳單配置 (仅有 FSC 咭片 + 環保袋), P0-1 B 阶段待 intuan 询价 (需 user WebBridge 登入)"}
+        {"sku": "eco-flyers", "totalTiers": 2, "calibrated": 0, "pending": 2, "status": "RED-FLAG", "note": "FSC/再生纸特殊价, e-print 公开页无 100% recycled 宣傳單配置 (仅有 FSC 纸卡 + 環保袋), P0-1 B 阶段待 intuan 询价 (需 user WebBridge 登入)"}
       ],
       "summary": {"calibrated": 5, "anchor": 7, "modeled_digital_sweet": 2, "redFlag": 9}
     },

@@ -41,7 +41,7 @@ const translations: Record<string, {
     categories: [
       { key: 'company-news', label: '公司新聞' },
       { key: 'sticker', label: '貼紙知識' },
-      { key: 'card', label: '名片知識' },
+      { key: 'card', label: '贴纸知識' },
       { key: 'packaging', label: '包裝盒知識' },
       { key: 'printing', label: '印刷工藝' },
       { key: 'design', label: '設計技巧' },

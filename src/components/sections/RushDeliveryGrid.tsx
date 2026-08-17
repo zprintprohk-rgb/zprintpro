@@ -69,7 +69,7 @@ const skus: SKUItem[] = [
     href: '/product/waterproof-stickers',
   },
   {
-    // 2026-07-19 user 拍板: 推荐位撤名片 → 貼紙 (異形模切 SKU, 避免与上方防水貼紙重复)
+    // 2026-07-19 user 拍板: 推荐位撤贴纸 → 貼紙 (異形模切 SKU, 避免与上方防水貼紙重复)
     slug: 'die-cut-stickers',
     title: '異形貼紙印刷',
     titleEn: 'Die-Cut Stickers',

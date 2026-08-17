@@ -90,7 +90,6 @@ export async function generateMetadata({
       'flyers': '傳單印刷印刷，A4/A5/A6尺寸、157g銅版紙，100張起訂。滿$500包郵，標準交期。',
       'posters': 'A2/A1/A3海報印刷，防水材質，10張起訂。滿$500包郵，標準交期 1-2 工作天。',
       'stickers': '貼紙印刷，防水/PVC/透明材質，100張起訂，支持異形切割。滿$500包郵，標準交期。',
-      'business-cards': '名片印刷，燙金、棉紙、局部UV工藝，100張起訂。滿$500包郵，標準交期。',
       'books': '畫冊印刷，騎馬釘/膠裝、封面覆膜，50本起訂。滿$500包郵，標準交期。',
       'banners': '易拉寶噴繪，鋁合金支架、高清噴繪，1個起訂。滿$500包郵，標準交期。',
     },
@@ -203,7 +202,7 @@ export default function ProductPage({
   // 2026-06-10 Phase B 修复 P0-3：HowTo + Speakable 注入
   // 仅对 4 个主钻品类（packaging / paper-bags / books / calendars）的产品页注入 HowTo。
   // Speakable 通用注入（与 P0-3 任务说明一致：选 2-3 个核心 cssSelector）。
-  const mainDrillingCategories = ['packaging', 'paper-bags', 'books', 'calendars', 'stickers', 'flyers', 'posters', 'business-cards', 'banners', 'menus', 'envelopes', 'red-packets', 'educational', 'japan-doujin'];
+  const mainDrillingCategories = ['packaging', 'paper-bags', 'books', 'calendars', 'stickers', 'flyers', 'posters', 'stickers', 'banners', 'menus', 'envelopes', 'red-packets', 'educational', 'japan-doujin'];
   const categoryHowto = mainDrillingCategories.includes(product.category_slug)
     ? getCategoryHowToSteps(product.category_slug, locale)
     : null;
@@ -414,7 +413,7 @@ export default function ProductPage({
                   : buildProductH1Ja(productTitle, product.category_slug)}
               </h1>
               
-              {['flyers', 'posters', 'stickers', 'business-cards', 'books', 'banners'].includes(product.category_slug) && (
+              {['flyers', 'posters', 'stickers', 'stickers', 'books', 'banners'].includes(product.category_slug) && (
                 <RushDeliveryBadge locale={locale} />
               )}
               

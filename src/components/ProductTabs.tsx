@@ -1,7 +1,7 @@
 /**
  * 产品详情Tabs组件
  * 切换显示产品详情、规格参数、配送信息
- * 修复：根据产品品类动态显示规格参数，不再硬编码名片数据
+ * 修复：根据产品品类动态显示规格参数，不再硬编码贴纸数据
  * 本地化：EN 版显示美式尺寸、国际物流
  */
 
@@ -24,8 +24,8 @@ const specsBySlug: Record<string, {
   finish: Record<string, string>;
 }> = {
   'business-cards': {
-    material: { 'zh-hk': '300g-400g 銅版紙/剛古紙', en: '300g-400g Art/Conqueror Paper', ja: '300g-400g コート/コンカラー紙' },
-    size: { 'zh-hk': '90×54mm（標準）', en: '3.5×2.1" (Standard Business Card)', ja: '90×54mm（標準）' },
+      material: { 'zh-hk': '300g-400g 銅版紙/剛古紙', en: '300g-400g Art/Conqueror Paper', ja: '300g-400g コート/コンカラー紙' },
+    size: { 'zh-hk': '90×54mm（標準）', en: '3.5×2.1" (Standard Sticker)', ja: '90×54mm（標準）' },
     finish: { 'zh-hk': '啞膠/光膠/局部UV/燙金', en: 'Matte/Gloss/Spot UV/Foil', ja: 'マット/グロス/スポットUV/箔押し' },
   },
   'stickers': {

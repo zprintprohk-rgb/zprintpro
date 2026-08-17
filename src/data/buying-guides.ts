@@ -310,7 +310,7 @@ export const buyingGuides: BuyingGuide[] = [
 <h3>一、海報常見尺寸對比</h3>
 <table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">尺寸</th><th class="border p-2 text-left">適用場景</th><th class="border p-2 text-left">單價範圍</th></tr></thead><tbody><tr><td class="border p-2">A3（297 × 420mm）</td><td class="border p-2">商場櫥窗、餐廳內展示</td><td class="border p-2">HK$8-15</td></tr><tr><td class="border p-2">A2（420 × 594mm）</td><td class="border p-2">地鐵站內、電梯廣告</td><td class="border p-2">HK$15-30</td></tr><tr><td class="border p-2">A1（594 × 841mm）</td><td class="border p-2">品牌形象牆、展覽會場</td><td class="border p-2">HK$30-60</td></tr><tr><td class="border p-2">A0（841 × 1189mm）</td><td class="border p-2">大型活動、戶外廣告</td><td class="border p-2">HK$60-120</td></tr><tr><td class="border p-2">B2（500 × 707mm）</td><td class="border p-2">酒樓菜牌、展會背景板</td><td class="border p-2">HK$20-40</td></tr></tbody></table>
 <h3>二、紙質選擇指南</h3>
-<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>157g 銅版紙</strong>：最經濟，色彩還原度高，適合大部分室內海報</li><li><strong>200g 銅版紙</strong>：挺度更好，雙面印刷不穿底，適合高檔海報</li><li><strong>250g 銅版紙</strong>：接近咭片厚度，質感強烈，適合品牌形象海報</li><li><strong>PP 膠片（啞面/光面）</strong>：防水、耐用，適合長期展示或戶外使用</li><li><strong>油畫布</strong>：紋理質感，適合藝術展覽、畫廊</li><li><strong>防水相紙</strong>：高光澤、高飽和度，適合寫真類海報</li></ul>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>157g 銅版紙</strong>：最經濟，色彩還原度高，適合大部分室內海報</li><li><strong>200g 銅版紙</strong>：挺度更好，雙面印刷不穿底，適合高檔海報</li><li><strong>250g 銅版紙</strong>：接近纸卡厚度，質感強烈，適合品牌形象海報</li><li><strong>PP 膠片（啞面/光面）</strong>：防水、耐用，適合長期展示或戶外使用</li><li><strong>油畫布</strong>：紋理質感，適合藝術展覽、畫廊</li><li><strong>防水相紙</strong>：高光澤、高飽和度，適合寫真類海報</li></ul>
 <h3>三、海報表面處理工藝</h3>
 <ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>啞膠 / 光膠過膠</strong>：延長使用壽命、防水防污，適合長期展示</li><li><strong>UV 局部光油</strong>：局部高光效果，凸顯品牌 Logo 或主視覺</li><li><strong>燙金 / 燙銀</strong>：金屬質感，適合高檔品牌形象海報</li><li><strong>擊凸</strong>：立體觸感，增加視覺層次與檔次感</li></ol>
 <h3>四、設計要點</h3>
@@ -577,7 +577,7 @@ export const buyingGuides: BuyingGuide[] = [
     date: '2025-02-10',
     relatedProducts: ['pvc-menus', 'laminated-menus', 'hard-sleeve-menus', 'leather-menus', 'wooden-menus'],
     content: {
-      'zh-hk': `<p>餐牌印刷是餐廳品牌的視覺名片。一份高質感的餐牌不僅能讓菜品看起來更美味，還能提升整體用餐體驗和品牌形象。本文從材質、尺寸、防水處理、印刷工藝、設計要點、選購決策 6 個維度為您系統拆解香港餐牌印刷選購全攻略。</p>
+      'zh-hk': `<p>餐牌印刷是餐廳品牌的視覺贴纸。一份高質感的餐牌不僅能讓菜品看起來更美味，還能提升整體用餐體驗和品牌形象。本文從材質、尺寸、防水處理、印刷工藝、設計要點、選購決策 6 個維度為您系統拆解香港餐牌印刷選購全攻略。</p>
 <h3>一、餐牌材質選擇</h3>
 <table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">材質</th><th class="border p-2 text-left">特點</th><th class="border p-2 text-left">適合</th></tr></thead><tbody><tr><td class="border p-2">PVC 餐牌</td><td class="border p-2">防水、防油、可擦拭</td><td class="border p-2">火鍋、茶餐廳、海鮮酒樓</td></tr><tr><td class="border p-2">過膠餐牌</td><td class="border p-2">防水、耐磨、價格實惠</td><td class="border p-2">快餐、食肆、咖啡店</td></tr><tr><td class="border p-2">硬膠套餐牌</td><td class="border p-2">可換內頁、經濟</td><td class="border p-2">經常更換菜單的餐廳</td></tr><tr><td class="border p-2">皮革餐牌</td><td class="border p-2">高檔、質感優秀</td><td class="border p-2">高端餐廳、酒店、會所</td></tr><tr><td class="border p-2">銅版紙過膠</td><td class="border p-2">色彩鮮豔、傳統</td><td class="border p-2">西餐、咖啡店、輕食</td></tr><tr><td class="border p-2">絨布裱餐牌</td><td class="border p-2">極致高檔、觸感柔軟</td><td class="border p-2">米芝蓮、私房菜</td></tr></tbody></table>
 <h3>二、餐牌尺寸</h3>

@@ -267,7 +267,7 @@ const homeMetadata: Record<Locale, { title: string; description: string; keyword
     // - Title 94 → 60 chars (Google SERP no truncation)
     title: 'Custom Printing Service USA · Free Shipping + Free Proof | ZprintPro',
     description: 'Custom printing service for USA businesses. Stickers, packaging boxes, paper bags, flyers, posters. 30-second AI quote. Free US shipping on $99+. Free design proof in 4h. 5-7 day DHL delivery. ISO 9001 certified.',
-    keywords: 'custom printing service USA, online printing USA, custom stickers wholesale, packaging boxes supplier USA, paper bags wholesale, 30 second print quote, custom labels USA, rush printing USA, business card printing USA, eco friendly printing USA, made for US businesses, custom printing DHL express',
+    keywords: 'custom printing service USA, online printing USA, custom stickers wholesale, packaging boxes supplier USA, paper bags wholesale, 30 second print quote, custom labels USA, rush printing USA, sticker printing USA, eco friendly printing USA, made for US businesses, custom printing DHL express',
   },
   ja: {
     title: 'ZprintPro | 印刷通販 | ステッカー・チラシ・パッケージ印刷 | 即日対応・最短3日納品',
@@ -364,7 +364,7 @@ const categorySeoData: Record<string, {
   },
   'flyers': {
     // 2026-07-09 SEO 复盘 v3 强化: 把「即日 + 數碼印刷 + 數碼快印」sharp hook 集中到 flyers 类目页
-    // 竞品 z-printpro.com 实证: 即日名片印刷 CTR 6.56%, A2 名片 即日 CTR 7.02%, 24小時名片 CTR 4-7%
+    // 竞品 z-printpro.com 实证: 即日贴纸印刷 CTR 6.56%, A2 贴纸 即日 CTR 7.02%, 24小時贴纸 CTR 4-7%
     // 分散在 nav 独立栏目的反模式已移除, 全部权重归 flyers
     titles: {
       // 2026-07-17 GSC CTR 修复: 机会词 傳單印刷印刷/傳單印刷 前置
@@ -608,7 +608,7 @@ function getDefaultCategorySeo(categoryName: string, categoryNameEn: string, cat
 // 规则:
 // - 不写"深圳"/"Shenzhen" (NAP 脱钩, AGENTS.md §13.10)
 // - 走 industry_keyword_matrix.json 的 industry_tier_a + 部分 tier_b 长尾
-// - 不写 business-cards (AGENTS.md §11 主营品类约束)
+// - 不写 stickers (AGENTS.md §11 主营品类约束)
 // - Tier 排序 = 复购频次: 餐飲 > 零售 > 美妝 > 母婴 > 教育 > ...
 // ============================================================================
 
@@ -1607,7 +1607,7 @@ export const geoConfig: Record<Locale, import('@/types/seo').GeoSignals> = {
     pricePrefix: '$',
     areaServed: ['United States', 'United Kingdom', 'Australia', 'Canada', 'New Zealand', 'Singapore'],
     deliveryText: 'Free international shipping to US/UK/AU within 7-14 business days. Express delivery available.',
-    geoKeywords: ['custom printing', 'business cards USA', 'flyer printing UK', 'sticker printing Australia', 'international delivery'],
+    geoKeywords: ['custom printing', 'stickers USA', 'flyer printing UK', 'sticker printing Australia', 'international delivery'],
   },
   'ja': {
     region: 'JP',

@@ -160,7 +160,7 @@ export function QuotationWidget({ locale }: QuotationWidgetProps) {
   }[locale];
 
   const [form, setForm] = useState<QuotationFormData>({
-    productType: 'business-card',
+    productType: 'sticker',
     quantity: 100,
     paper: 'artpaper',
     process: ['none'],

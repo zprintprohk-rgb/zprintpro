@@ -11,7 +11,7 @@
       "intuan-2026-07-18": "intuan.com 登入真实询价 CNY×1.3×1.087→HKD (intuan-real-quotes-2026-07-18.json)"
     },
     "updatedAt": "2026-07-21",
-    "note": "2026-07-18 校准: a5-flyers 重叠档 (1000/2000/3000/5000) + 新增 500 档用 intuan 专版宣传单实询价; 100/300 数码甜点档与 600 e-print anchor 档保留。a4-flyers / same-day-flyers / eco-flyers 未动。 | 2026-07-20 校准: a5/a4 主档 e-print 柯式单张实抓 ×0.95 → anchor; 100-300 数码档保持 modeled(不硬拼). | 2026-07-20 v2: 数码档 (a5/a4 100/300 + same-day 100/300) e-print 数码价 ×0.95 → anchor-digital; 50-300張数码主车道按 user 拍板放开校准. | 2026-07-21 v4: same-day-flyers 急件 A4 (100/200) + A5 (100/200/300/400) 全档 anchor ×0.95, 500 档保留 modeled (e-print 1小時急件上限 200/400 張不提供 500); eco-flyers 维持 pending (e-print 无公开再生纸 flyers 页, 仅有 FSC 咭片/環保袋品类).",
+    "note": "2026-07-18 校准: a5-flyers 重叠档 (1000/2000/3000/5000) + 新增 500 档用 intuan 专版宣传单实询价; 100/300 数码甜点档与 600 e-print anchor 档保留。a4-flyers / same-day-flyers / eco-flyers 未动。 | 2026-07-20 校准: a5/a4 主档 e-print 柯式单张实抓 ×0.95 → anchor; 100-300 数码档保持 modeled(不硬拼). | 2026-07-20 v2: 数码档 (a5/a4 100/300 + same-day 100/300) e-print 数码价 ×0.95 → anchor-digital; 50-300張数码主车道按 user 拍板放开校准. | 2026-07-21 v4: same-day-flyers 急件 A4 (100/200) + A5 (100/200/300/400) 全档 anchor ×0.95, 500 档保留 modeled (e-print 1小時急件上限 200/400 張不提供 500); eco-flyers 维持 pending (e-print 无公开再生纸 flyers 页, 仅有 FSC 纸卡/環保袋品类).",
     "references": {
       "eprint_a5": "HK$315/600张 (柯式拼版, 1工作天) — e-print.com.hk 首页锚点",
       "copycat_a5_157g": "500张 $630单面/$830双面; 1000张 $750/$950; 5000张 $1750/$1950 (cpct-copycat.com 专版价)",
@@ -19,7 +19,7 @@
       "eprint_flyer": "https://www.e-print.com.hk/products_brochure_booklet_leaflet_printing (2026-07-20 实抓: A5 157g 600張$315/1000張$365/2000張$415; A4 157g 4C+4C 300張$500/500張$550/1000張$650/2000張$940/5000張$1650)",
       "eprint_digital_flyer": "https://www.e-print.com.hk/products_digital_brochure_booklet_leaflet_printing (2026-07-20 实抓: A4 雙面 100張$400/300張$750; A5 雙面 100張$132/300張$248)",
       "eprint_urgent_leaflet": "https://www.e-print.com.hk/products_Leaflet_Express_Service (2026-07-21 实抓 1小時即取價目: A4 100張$600/200張$750 (上限200); A5 100張$173/200張$263/300張$503/400張$615 (上限400) — 雙面彩色)",
-      "eprint_eco_flyers": "N/A — e-print 公开页无 100% recycled/再生纸 宣传单张配置, 仅有 FSC 咭片 (products_fsc_eco_business_name_cards_printing) 和 環保袋 (non_woven_bag_printing) — eco-flyers 维持 pending, 待 intuan 询价"
+      "eprint_eco_flyers": "N/A — e-print 公开页无 100% recycled/再生纸 宣传单张配置, 仅有 FSC 纸卡 (products_fsc_eco_business_name_cards_printing) 和 環保袋 (non_woven_bag_printing) — eco-flyers 维持 pending, 待 intuan 询价"
     }
   },
   "products": [
@@ -253,14 +253,14 @@
           "price": 380,
           "unit": 1.27,
           "src": "pending",
-          "note": "特殊纸价待询 [2026-07-21 v4: e-print.com.hk 无公开再生纸 flyers 页 (仅有 FSC 咭片和環保袋品类), 急件/宣傳單頁无 100% recycled 配置; 维持 pending, 待 intuan 询价校准]"
+          "note": "特殊纸价待询 [2026-07-21 v4: e-print.com.hk 无公开再生纸 flyers 页 (仅有 FSC 纸卡和環保袋品类), 急件/宣傳單頁无 100% recycled 配置; 维持 pending, 待 intuan 询价校准]"
         },
         {
           "qty": 1000,
           "price": 720,
           "unit": 0.72,
           "src": "pending",
-          "note": " [2026-07-21 v4: e-print.com.hk 无公开再生纸 flyers 页 (仅有 FSC 咭片和環保袋品类), 急件/宣傳單頁无 100% recycled 配置; 维持 pending, 待 intuan 询价校准]"
+          "note": " [2026-07-21 v4: e-print.com.hk 无公开再生纸 flyers 页 (仅有 FSC 纸卡和環保袋品类), 急件/宣傳單頁无 100% recycled 配置; 维持 pending, 待 intuan 询价校准]"
         }
       ]
     }

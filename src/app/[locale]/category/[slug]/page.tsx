@@ -128,7 +128,7 @@ export default function CategoryPage({
 
   // 自定义 H1 映射（按 v5 doc, 10 category × 3 locale = 30 个 custom H1）
   // 主营 6 (stickers/flyers/packaging/paper-bags/red-packets/labels-as-stickers-sub) + 次要 4 (posters/banners/menus/books/educational)
-  // 不优化 (P3 跳过): business-cards / calendars / envelopes / notebooks
+  // 不优化 (P3 跳过): stickers / calendars / envelopes / notebooks
   // 2026-07-09 PM+UX+SEO 美国市场优化 v5: en 全部类目 H1 加 "Free Shipping + Made for USA + FedEx/DHL" sharp hook
   const customH1Map: Record<string, Record<string, string>> = {
     'packaging': {
@@ -303,10 +303,9 @@ export default function CategoryPage({
   const categoryBannerMap: Record<string, string> = {
     'paper-bags': 'hero-kraft-bag',
     'flyers': 'hero-flyer',
-    'stickers': 'hero-sticker',
+    'stickers': 'hero-stickers',
     'packaging': 'hero-gift-box',
     'posters': 'hero-poster',
-    'business-cards': 'hero-business-cards',
     'banners': 'hero-banners',
     'books': 'hero-books',
     'menus': 'hero-menus',
@@ -492,7 +491,6 @@ export default function CategoryPage({
 
 // Buying Guide CTA Component
 const categoryGuideMap: Record<string, string> = {
-  'business-cards': 'business-card-buying-guide',
   'stickers': 'sticker-buying-guide',
   'flyers': 'flyer-buying-guide',
   'packaging': 'packaging-buying-guide',

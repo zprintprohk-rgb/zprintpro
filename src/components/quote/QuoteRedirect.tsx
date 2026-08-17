@@ -67,7 +67,7 @@ const QUOTE_PRODUCT_MAP: Record<string, string> = {
   'paper-bags': '/product/paper-bags/',
   'white-card-bags': '/product/white-card-bags/',
   'eco-paper-bags': '/product/eco-paper-bags/',
-  // === Greeting Cards (v22 名片→贺卡改造, 2026-07-27) ===
+  // === Greeting Cards (v22 贴纸→贺卡改造, 2026-07-27) ===
   'premium-greeting-cards': '/product/premium-greeting-cards/',
   'thick-greeting-cards-400g': '/product/thick-greeting-cards-400g/',
   'foil-greeting-cards': '/product/foil-greeting-cards/',
@@ -75,15 +75,14 @@ const QUOTE_PRODUCT_MAP: Record<string, string> = {
   'matte-greeting-cards': '/product/matte-greeting-cards/',
   'rounded-corner-greeting-cards': '/product/rounded-corner-greeting-cards/',
   // 兼容旧 slug: 旧 URL 走 next.config.js 21 条 301 redirect, 此处保留映射作为 fallback
-  'premium-business-cards': '/product/premium-greeting-cards/',
-  'thick-business-cards-400g': '/product/thick-greeting-cards-400g/',
-  'foil-business-cards': '/product/foil-greeting-cards/',
-  'spot-uv-business-cards': '/product/spot-uv-greeting-cards/',
-  'matte-business-cards': '/product/matte-greeting-cards/',
+  'premium-stickers': '/product/premium-greeting-cards/',
+  'thick-stickers-400g': '/product/thick-greeting-cards-400g/',
+  'spot-uv-stickers': '/product/spot-uv-greeting-cards/',
+  'matte-stickers': '/product/matte-greeting-cards/',
   'rounded-corner-cards': '/product/rounded-corner-greeting-cards/',
   'double-sided-cards': '/product/premium-greeting-cards/',
-  'same-day-business-cards': '/product/premium-greeting-cards/',
-  'eco-business-cards': '/product/matte-greeting-cards/',
+  'same-day-stickers': '/product/premium-greeting-cards/',
+  'eco-stickers': '/product/matte-greeting-cards/',
   // === Handle Bags ===
   'handle-bags': '/product/handle-bags/',
   'small-bags': '/product/small-bags/',

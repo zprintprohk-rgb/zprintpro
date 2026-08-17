@@ -49,7 +49,7 @@ const translations = {
 
 const faqs: Record<string, { q: string; a: string; category: string }[]> = {
   'zh-hk': [
-    { q: '最低訂購量是多少？', a: '大部分產品最低訂購量為100件，部分產品如名片最低50盒起訂。具體請查看各產品頁面或聯絡客服查詢。', category: '訂購' },
+    { q: '最低訂購量是多少？', a: '大部分產品最低訂購量為100件，部分產品如贴纸最低50盒起訂。具體請查看各產品頁面或聯絡客服查詢。', category: '訂購' },
     { q: '交貨時間需要多久？', a: '標準交貨時間為3-5個工作日。急件服務最快可即日交貨，需額外收取加急費用。實際交貨時間視產品類型及數量而定。', category: '訂購' },
     { q: '支持哪些付款方式？', a: '我們支持微信支付及支付寶付款。付款後請務必將付款證明（截圖）電郵至 zprintpro@outlook.com，並註明訂單編號，以便我們核對。', category: '付款' },
     { q: '付款後為什麼要發郵件確認？', a: '由於微信及支付寶收款碼均為內地賬戶，付款後系統不會自動通知我們。您必須發送電郵附上付款證明及訂單編號，客服才能在1個工作天內確認收款並開始處理訂單。', category: '付款' },
@@ -63,7 +63,7 @@ const faqs: Record<string, { q: string; a: string; category: string }[]> = {
     { q: '什麼情況下可以退貨？', a: '如印刷品存在明顯品質問題（非客戶稿件錯誤），請於收貨後 3 個工作天內聯絡客服——此為品質問題緊急回應 SLA，會優先處理。一般退換貨申請則需於收貨後 14 天內提出，詳見「退換政策」頁面。客戶自來稿件，當顏色及文字完全正確的話，不能以其他理由退貨。', category: '退換' },
   ],
   en: [
-    { q: 'What is the minimum order quantity?', a: 'Most products have a minimum order of 100 pieces. Business cards start from 50 boxes. Check each product page or contact us for details.', category: 'Ordering' },
+    { q: 'What is the minimum order quantity?', a: 'Most products have a minimum order of 100 pieces. Stickers start from 50 boxes. Check each product page or contact us for details.', category: 'Ordering' },
     { q: 'How long does delivery take?', a: 'Standard delivery is 3-5 business days. Rush orders can be same-day with additional fees. Actual time depends on product type and quantity.', category: 'Ordering' },
     { q: 'What payment methods do you accept?', a: 'We accept WeChat Pay and Alipay. After payment, please email the proof (screenshot) to zprintpro@outlook.com with your order number for verification.', category: 'Payment' },
     { q: 'Why do I need to email after payment?', a: 'Because both WeChat and Alipay QR codes are mainland China accounts, the system does not automatically notify us. You must send an email with payment proof and order number so our team can confirm receipt within 1 business day.', category: 'Payment' },

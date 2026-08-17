@@ -1,0 +1,24 @@
+fix(seo): §11 1a2ef94 CF Pages build FAIL 修复 (P0 紧急, 5d45069 base, 8/18 第 3 push)
+
+**根因**: §11 激进清 75 处 (咭片→纸卡 / 名片→贴纸 / business card→sticker) 误把 'business-cards' 改为 'stickers', 产生 12 处对象字面量重复 key, 致 TS 编译失败. 同时 78 files 误加 products.ts.bak-* 3.4MB 污染.
+
+**修复 (16 文件 + .gitignore)**:
+- 1a2ef94 误改 还原: middleware.ts (business cards → greeting cards redirects) / ProductCard.tsx × 3 / ProductTabs.tsx × 3 (categorySpecs + getSpec + getUseCases) / CategorySharpHooks.tsx (greeting card scenario) / CategorySidebar.tsx (CreditCard icon) / HotProducts.tsx / quotation-widget.tsx (ProductType labels 3 locale) / h1-builder.ts × 3 (zh/en/ja 卖点表) / pricing.ts (basePrices + CATEGORY_TIER_MULTIPLIERS) / engine.ts (REGISTRY) / BusinessCardQuoteCalculator.tsx (import + title) / category-seo-content.ts (full revert §11 内文替换) / sku-seo-data.ts (full revert §11 SKU key 改名) / quotation.ts (ProductType)
+- .bak 清理: git rm products.ts.bak-20260728-price (1.7MB) + products.ts.bak-8-7-r1 (1.7MB), .gitignore 加 **/*.bak-* / **/*.bak.* 全局排除
+- 中性保留: 咭片→纸卡 / 名片→贴纸 / business card→sticker 75 处仍 PASS (原本就该改, 不回滚)
+
+**5 步真 verify**:
+- encoding: --fix PASS (UTF-8 LF)
+- tsc: 16 → 51 (51 历史 test 文件错, 0 new)
+- build: PASS (14 categories / 85 products / 84 blog / 600 URLs / 3 locales)
+- ahead: 0 (待 push)
+- pre-commit: 4 步过
+
+**战略影响** (K3 8/18 05:32 §11 战略修正):
+- 咭片/名片 → 归并到 greeting-cards/wedding-invitations/place-cards 业务子类目 (Step 2 拍板)
+- 纸卡 (FSC 物理材质) 保留
+- 名刺 (ja 99 hits) 保留 (ja 行业术语 + 客户案例)
+- business card 路径 (英) 走 Step 2 新 greeting cards 类目
+
+今日 push: 3/5 (含本 amend)
+月累计: 17/150 (含 1 amend)

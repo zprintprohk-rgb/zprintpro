@@ -94,16 +94,17 @@ const QUOTE_PRODUCT_MAP: Record<string, string> = {
   'paper-bags': '/product/paper-bags/',
   'white-card-bags': '/product/white-card-bags/',
   'eco-paper-bags': '/product/eco-paper-bags/',
-  // === Business Cards ===
-  'premium-business-cards': '/product/premium-business-cards/',
-  'thick-business-cards-400g': '/product/thick-business-cards-400g/',
-  'foil-business-cards': '/product/foil-business-cards/',
-  'spot-uv-business-cards': '/product/spot-uv-business-cards/',
-  'matte-business-cards': '/product/matte-business-cards/',
-  'rounded-corner-cards': '/product/rounded-corner-cards/',
-  'double-sided-cards': '/product/double-sided-cards/',
-  'same-day-business-cards': '/product/same-day-business-cards/',
-  'eco-business-cards': '/product/eco-business-cards/',
+  // === Business Cards → Greeting Cards (v3.2 §11 战略修正, 2026-08-18) ===
+  // 咭片/名片 → 归并到贺卡/喜帖/台卡/酒水牌 业务子类目 (K3 8/17 05:32 拍板)
+  'premium-business-cards': '/product/premium-greeting-cards/',
+  'thick-business-cards-400g': '/product/thick-greeting-cards-400g/',
+  'foil-business-cards': '/product/foil-greeting-cards/',
+  'spot-uv-business-cards': '/product/spot-uv-greeting-cards/',
+  'matte-business-cards': '/product/matte-greeting-cards/',
+  'rounded-corner-cards': '/product/rounded-corner-greeting-cards/',
+  'double-sided-cards': '/product/double-sided-greeting-cards/',
+  'same-day-business-cards': '/product/same-day-greeting-cards/',
+  'eco-business-cards': '/product/eco-greeting-cards/',
   // === Handle Bags ===
   'handle-bags': '/product/handle-bags/',
   'small-bags': '/product/small-bags/',

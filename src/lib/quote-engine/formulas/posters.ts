@@ -2,7 +2,7 @@
  * 海报报价公式 v1 (Phase 3 — 第三个 SKU)
  * 2026-06-07
  *
- * 海报 vs 名片的核心差异：
+ * 海报 vs 贴纸的核心差异：
  * - 尺寸大：400×600mm 起步，单张大版只能放 1-2 张
  * - 重量重：1 张 400×600 海报约 200g (200gsm 铜版纸)，运费是大头
  * - 起步价高：UV 印刷开机费 HKD 500/版
@@ -56,7 +56,7 @@ export const postersFormula: ProductFormula = (ctx: FormulaContext & { market?: 
     gangRunThreshold: 50, // 海报阈值更低（重 + 起步价高）
   });
 
-  // UV 印刷开机费（比名片高 2x）
+  // UV 印刷开机费（比贴纸高 2x）
   const setupCost = PRESS_SETUP_COSTS.large_format.setupPerSheet;
   const paperCostPerSheet = 8.5; // 200gsm 大版纸
   const paperCost = gang.sheetsNeeded * paperCostPerSheet;

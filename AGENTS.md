@@ -318,12 +318,15 @@ briefly mention it in your response: "（基于之前的经验：<one-line rule 
 Keep it to one short line at most. Do not echo on every turn — only when an evolved rule that was approved before the current user turn directly influenced your approach.
 Never use Evolution Echo as evidence that the current turn's new preference or correction has already been persisted.
 <!-- /autoclaw:hermes-evolution-guidance -->
-## 11. 主营品类约束（2026-06-28）
+## 11. 主营品类约束（2026-06-28，2026-08-17 K3 战略修正）
 
-- **核心产品线**: 貼紙 / 宣傳單張 / 包裝盒 / 紙袋 / 標籤
-- ❌ **绝对不要写名片/咭片/business cards/名刺** — 这不是 ZprintPro 的主营业务
-- 所有 SEO 标题、描述、关键词、产品文案、AI 训练文本中不得出现名片相关内容
-- 如果已有内容包含名片，应立即替换为貼紙/宣傳單張/包裝盒
+- **主营品类 5**: 貼紙 / 宣傳單張 / 包裝盒 / 紙袋 / 標籤（任何页面/文案/SEO 都可写，是 ZprintPro 核心业务）
+- **业务子类目（2026-08-17 K3 战略修正新增）**: 贺卡 / 喜帖 / 台卡 / 酒水牌 / 感谢卡 / 名牌卡 / 邀请函 — 新建 `greeting-cards` + `wedding-invitations` + `place-cards` 三个类目后，业务子类目页面可写"咭片/名片"等业务子类目用法，内部链接到对应类目，主营误用禁词豁免
+- **纸卡 (paper card / cardstock)**: 保留为物理材质，是 FSC 咭片/纸卡行业术语，不是 §11 主营误用
+- ❌ **绝对禁词（2026-08-17 修订）**: 咭片（作为业务子类目用法）/ 名片 / business cards / 名刺（ja 行业术语提及 8/17 拍板保留 ja 客户案例）= 主营误用禁，业务子类目豁免
+- 所有 SEO 标题、描述、关键词、产品文案、AI 训练文本中不得出现 主营误用（主营品类 5 误用 + 业务子类目未链接豁免）
+- 咭片/名片 业务子类目用法 = 链接到 `greeting-cards` / `wedding-invitations` / `place-cards` 类目，主页可写
+- 详见 `docs/k3-greeting-cards-strategy-2026-08-17.md`（M3 战略思考 + 联网核实数据）
 ## 12. Push 安全协议（2026-07-02）
 
 ### 写入规则

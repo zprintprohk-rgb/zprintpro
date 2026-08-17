@@ -50,7 +50,7 @@ export default function PaymentMethodsPage({ params }: Props) {
   const section = SECTIONS[locale];
   const localePrefix = `/${locale}`;
 
-  // 6 张通道卡片（命名片段，按 locale 排序渲染）
+  // 6 张通道卡片（命贴纸段，按 locale 排序渲染）
   const channelCards: Record<string, React.ReactNode> = {
     bank: (
       <ChannelCard

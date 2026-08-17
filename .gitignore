@@ -79,6 +79,9 @@ fix-categories.js
 debug-regex.js
 sku-list.json
 seedream-prompts-all-skus.txt.bak
+# 全局 .bak 备份文件排除 (2026-08-18 1a2ef94 §11 误加 products.ts.bak-* 3.4MB)
+**/*.bak-*
+**/*.bak.*
 
 # Kimi deployment backup
 Kimi_Agent_Deployment_Vite*/
