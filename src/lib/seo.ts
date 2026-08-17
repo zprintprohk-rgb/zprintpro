@@ -370,7 +370,7 @@ const categorySeoData: Record<string, {
       // 2026-07-17 GSC CTR 修复: 机会词 傳單印刷印刷/傳單印刷 前置
       'zh-hk': '傳單印刷印刷 | HK$0.25起・免費設計・最快即日 | 智印港 ZprintPro',
       en: 'Flyer Printing from $0.40 | Free Shipping $99+ | ZprintPro',
-      ja: 'チラシ印刷｜¥50〜・小ロット・最短即日・無料デザイン｜ZprintPro',
+      ja: '両面カラー印刷 | 小ロット100枚〜 | 短納期2-4日 | ZprintPro',
     },
     keywords: {
       // 加長尾: 數碼印刷 / 數碼快印 / 急印傳單 / 即日傳單 / 數位印刷 / 加急傳單 / 短版印刷
@@ -446,7 +446,7 @@ const categorySeoData: Record<string, {
    
   'calendars': {
     titles: {
-      'zh-hk': '月曆印刷 100本起 · 座檯/掛牆/2027 燙金精裝 ISO認證 DHL 2-4天 | 智印港',
+      'zh-hk': '月曆印刷 2027 | 台曆 + 掛曆 | 30 秒报价 | 智印港',
       en: 'Custom Calendars Free Shipping · 100 MOQ 2027 Hardcover Foil | ZprintPro',
       ja: 'カレンダー印刷 100部〜 · デスク/壁掛け/2027 箔押し上製本 ISO認証 | ZprintPro',
     },
@@ -498,7 +498,7 @@ const categorySeoData: Record<string, {
   'menus': {
     titles: {
       // 2026-07-17 GSC CTR 修复: 机会词 餐牌印刷 前置
-      'zh-hk': '餐牌印刷 | HK$0.22起・免費設計・最快即日 | 智印港 ZprintPro',
+      'zh-hk': '餐牌印刷 防水耐用 | 多尺寸 + 免费设计 | 智印港',
       en: 'Menu Printing from $0.14 | Free Shipping $99+ | ZprintPro',
       ja: 'メニュー印刷｜¥20〜・小ロット・最短即日・無料デザイン｜ZprintPro',
     },
