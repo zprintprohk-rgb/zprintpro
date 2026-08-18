@@ -36,6 +36,9 @@ export interface FaqItem {
 }
 
 export interface CategoryLocaleContent {
+  // 2026-08-19 R3 5 件套新增 (per v3.2 §四 R3)
+  featuredSnippet?: string;
+  lastUpdated?: string;
   h2: string;
   coreAdvantages: {
     title: string;
@@ -1260,6 +1263,9 @@ const booksContent: Record<string, CategoryLocaleContent> = {
 // =============================================================================
 const menusContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
+    // 2026-08-19 R3 餐牌印刷 5 件套
+    featuredSnippet: '餐牌印刷 10 份起，防水 PVC HK$3.5/份，最快即日交貨，順豐滿 HK$500 免運。',
+    lastUpdated: '2026-08-19',
     h2: '香港餐牌印刷 — 防水防油，PVC／過膠／硬膠，餐廳 Menu 專家',
     coreAdvantages: {
       title: '核心競爭優勢',
@@ -1863,6 +1869,9 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
 // =============================================================================
 const calendarsContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
+    // 2026-08-19 R3 月曆印刷 5 件套
+    featuredSnippet: '月曆印刷 100 本起，掛曆 HK$18/本，檯曆 HK$9/本，9 月開學季企業定制起量。',
+    lastUpdated: '2026-08-19',
     h2: '香港月曆印刷 — 座枱曆／掛牆曆／年曆卡，50 本起訂，節日促銷必備',
     coreAdvantages: {
       title: '核心競爭優勢',
@@ -2051,6 +2060,9 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   ja: {
+    // 2026-08-19 R3 両面カラー印刷 5 件套 (ja 通用 double-sided color printing 击穿 pos 22.35)
+    featuredSnippet: '両面カラー印刷 100 枚〜、4C CMYK 標準、A4 ¥12〜、小ロット 1 日特急、DHL 2-4 日。',
+    lastUpdated: '2026-08-19',
     h2: 'カレンダー印刷 — 卓上／壁掛け／カード、50冊から、季節プロモーション必須',
     coreAdvantages: {
       title: 'ZprintPro カレンダーの強み',

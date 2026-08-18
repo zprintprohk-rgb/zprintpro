@@ -142,6 +142,10 @@ export default function RushDeliveryPage({ params }: Props) {
       {/* GEO 答案块 */}
       <section className="mb-4">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">{title}</h1>
+        {/* 2026-08-19 R3 即日印刷 5 件套 - 40-60 字 Featured Snippet 块 */}
+        <p className="text-base md:text-lg text-[#1A56DB] font-medium bg-[#F0F7FF] border-l-4 border-[#2873F5] px-4 py-3 mb-4 rounded-r">
+          <strong>即日印刷 18:00 截單，順豐翌日中午 12 點前到；傳單／海報／貼紙／紙袋／畫冊 100 張起印，CMYK 全彩防水。</strong>
+        </p>
         <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-3xl">
           {locale === 'zh-hk' && (
             <>
@@ -227,6 +231,19 @@ export default function RushDeliveryPage({ params }: Props) {
 
       {/* FAQ */}
       <RushDeliveryFAQ locale={locale} />
+
+      {/* 2026-08-19 R3 即日印刷 5 件套 - Last Updated + 内部链接 */}
+      <section className="mt-12 pt-6 border-t border-gray-200 text-sm text-gray-500">
+        <p className="mb-3"><strong>最後更新：</strong>2026 年 8 月 19 日 · 智印港 ZprintPro（彩龍印刷旗下）</p>
+        <p className="mb-2"><strong>相關服務：</strong></p>
+        <ul className="space-y-1 list-disc list-inside">
+          <li><a href="/zh-hk/category/posters/" className="text-[#2873F5] hover:underline">海報印刷</a> · A1/A2 即日速遞，順豐港九新界翌日中午到</li>
+          <li><a href="/zh-hk/category/flyers/" className="text-[#2873F5] hover:underline">傳單印刷</a> · A4/A5 100 張起印，即日截單翌日達</li>
+          <li><a href="/zh-hk/category/stickers/" className="text-[#2873F5] hover:underline">貼紙印刷</a> · 防水 Vinyl 50 張起，連工藝完成 24 小時</li>
+          <li><a href="/zh-hk/category/paper-bags/" className="text-[#2873F5] hover:underline">紙袋印刷</a> · 100 個起，活動 / 展會批量趕工</li>
+          <li><a href="/zh-hk/category/calendars/" className="text-[#2873F5] hover:underline">月曆印刷</a> · 2027 掛曆 9 月開學季企業定制起量</li>
+        </ul>
+      </section>
     </main>
   );
 }

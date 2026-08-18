@@ -54,7 +54,14 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
   return (
     <section className="bg-white border-t">
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 md:py-16">
-        
+
+        {/* 2026-08-19 R3 5 件套: 40-60 字 Featured Snippet 块 (争 Position 0) */}
+        {data.featuredSnippet && (
+          <p className="text-base md:text-lg text-[#1A56DB] font-medium bg-[#F0F7FF] border-l-4 border-[#2873F5] px-4 py-3 mb-6 rounded-r">
+            <strong>{data.featuredSnippet}</strong>
+          </p>
+        )}
+
         {/* H2 主标题 */}
         <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-6 sm:mb-8 leading-snug sm:leading-tight break-words text-balance max-w-full">
           {data.h2}
@@ -260,6 +267,13 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
               ))}
             </div>
           </div>
+        )}
+
+        {/* 2026-08-19 R3 5 件套: Last Updated 时间戳 (Freshness signal for GSC) */}
+        {data.lastUpdated && (
+          <p className="mt-10 pt-4 border-t border-gray-200 text-xs text-gray-500">
+            最後更新 / Last updated / 最終更新: <time dateTime={data.lastUpdated}>{data.lastUpdated}</time> · 智印港 ZprintPro
+          </p>
         )}
       </div>
     </section>

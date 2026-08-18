@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { guardApiRequest, getGuardedBody } from '@/lib/api-security';
 
 export const runtime = 'edge';
 
@@ -8,17 +9,25 @@ export const runtime = 'edge';
  * 方案: 自有域名发信 Resend API (SPF/DKIM 验证域名, 可达性好)
  * 环境变量: RESEND_API_KEY (CF Pages dashboard 配置)
  * 降级: 未配置 key 时返回 200 skipped, 前端不阻塞 (WhatsApp 兜底仍在)
+ *
+ * 2026-08-19 P0 安全加固: 接入 src/lib/api-security.ts 4 件套
+ *   - Origin 校验 (仅 zprintpro.com 同源)
+ *   - 软频率限 (5 req/IP/5min, 进程内 token bucket)
+ *   - Content-Length 8KB 硬限
+ *   - Honeypot 反机器人
  */
 export async function POST(req: NextRequest) {
+  // 共享安全守卫 (origin + 限流 + body 上限 + honeypot)
+  const block = await guardApiRequest(req);
+  if (block) return block;
+
   const apiKey = process.env.RESEND_API_KEY;
   if (!apiKey) {
     return NextResponse.json({ ok: true, skipped: 'RESEND_API_KEY not configured' });
   }
 
-  let body: Record<string, string>;
-  try {
-    body = await req.json();
-  } catch {
+  const body = getGuardedBody<Record<string, string>>(req);
+  if (!body) {
     return NextResponse.json({ ok: false, error: 'invalid json' }, { status: 400 });
   }
 

@@ -306,10 +306,10 @@ export function ProductTabs({ product, locale }: ProductTabsProps) {
               <h4 className="font-medium text-lg mb-2">{t.shippingMethod}</h4>
               <p className="text-base text-gray-600">
                 {locale === 'zh-hk'
-                  ? '我們提供多種配送方式，包括順豐速運、本地快遞及門市自取。觀塘工廠可港鐵站交收。'
+                  ? '我們提供多種配送方式，包括順豐速運、本地快遞及門市自取。深圳廠房支援預約自取。'
                   : locale === 'en'
                   ? 'We ship worldwide via DHL/FedEx Express. Ships to the US, UK, and Australia within 5-7 business days. Tracking number provided for all orders.'
-                  : 'SFエクスプレス、ローカルクーリエ、店舗受取など、複数の配送オプションを提供しています。観塘工場でMTR受取可能。'}
+                  : 'SFエクスプレス、ローカルクーリエ、店舗受取など、複数の配送オプションを提供しています。深圳工場で事前予約制お受け取り可能。'}
               </p>
             </div>
             <div className="p-4">
