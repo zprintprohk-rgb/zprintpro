@@ -116,15 +116,19 @@ export function getSiteNAP(locale: Locale): SiteNAP {
       alternateName: ['ZprintPro', 'ZprintPro HK', '智印港(香港)', '智印港印刷', '智印港'],
       phone: '+86 198 8085 1334',
       email: 'zprintpro@outlook.com',
+      // 2026-08-19 P0-A: NAP Shenzhen-ification (per K3 8/7 拍板 + AGENTS §13.10)
+      // 6/28 灰色合规决策已被 8/7 拍板覆盖, zh-hk locale 跟 ja locale 对齐真实主体
       address: {
-        street: 'Unit C, 15/F, Maxgrand Plaza, 3 Tai Yau Street',
-        city: 'San Po Kong',
-        region: 'Kowloon',
-        country: 'HK',
-        postalCode: undefined,
+        street: 'No.1 Jiacheng Road, Pinghu Street, Longgang District',
+        city: 'Shenzhen',
+        region: 'Guangdong',
+        country: 'CN',
+        postalCode: '518111',
       },
       businessSchema: 'LocalBusiness',
       areaServed: ['Hong Kong', 'Kowloon', 'New Territories', 'Hong Kong Island'],
+      founder: '唐运提',
+      legalEntityName: '深圳市彩龙印刷包装有限公司',
       // Backlinks / citation profiles (zh-hk market)
       sameAs: [
         // HK business directories (to be created)
@@ -222,7 +226,8 @@ export const regionConfig: Record<Locale, RegionConfig> = {
     areaServed: 'Hong Kong',
     contactType: '香港本地客戶服務',
     priceRange: '$$',
-    geoCoordinates: { lat: 22.5431, lng: 114.0579 },
+    // 2026-08-19 P0-A: NAP Shenzhen-ification — 真实工厂在 Shenzhen Longgang Pinghu (per K3 8/7 拍板)
+    geoCoordinates: { lat: 22.6943, lng: 114.1310 },
   },
   'en': {
     lang: 'en',

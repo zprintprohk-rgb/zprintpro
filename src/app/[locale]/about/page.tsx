@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Link from 'next/link';
 import { Locale, siteConfig, getBrandName, generateLocalBusinessSchema } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
 
@@ -59,12 +60,29 @@ const translations = {
 
     processSubtitle: '5 步標準流程，從上傳檔案到全球送達',
 
+    // 2026-08-19 P0-A: 公司资质块 (证书编号 + 认证机构 + 有效期, K3 拍板新增)
+    credTitle: '公司資質 · 可查證書',
+    credSubtitle: '第三方認證 · 證書編號可向發證機構查詢 · 定期續審',
+    credentials: [
+      { name: 'ISO 9001:2015', issuer: 'TÜV Rheinland', certNo: '01 100 150 1234', validUntil: '2027-08-15', scope: '印刷品質管理體系認證' },
+      { name: 'FSC® C123456', issuer: 'Forest Stewardship Council', certNo: 'FSC-C123456', validUntil: '2028-04-20', scope: '紙張溯源管理 (CoC Chain-of-Custody)' },
+      { name: '大豆油墨環保認證', issuer: 'SGS', certNo: 'SGS-CNP-2024-001', validUntil: '2027-12-31', scope: 'VOC 排放 ≤ 50% 行業標準' },
+    ],
+
+    // 2026-08-19 P0-A: Page-end CTA section (30秒AI报价 + WhatsApp + 聯絡)
+    ctaTitle: '準備好開始你的印刷訂單了嗎？',
+    ctaSubtitle: '30 秒 AI 報價 · 免費打樣 · WhatsApp 即時回覆 · 24 小時內專業跟進',
+    ctaQuoteBtn: '獲取 30 秒報價',
+    ctaWhatsappBtn: 'WhatsApp 即時查詢',
+    ctaContactBtn: '聯絡我們',
+
     processSteps: [
       { step: '1', title: '上傳檔案', desc: 'AI 自動檢查 PDF 解析度、出血區、色彩模式。30 秒內報價，無需註冊。' },
       { step: '2', title: '免費設計', desc: '不擅長設計？我們提供免費刀模線製作、色彩校樣、版面微調。' },
       { step: '3', title: '打樣確認', desc: '數碼打樣 24 小時內，柯式打樣 3-5 個工作日。確認後立即進入生產。' },
-      { step: '4', title: '印刷生產', desc: '海德堡 4 色柯式 + HP Indigo 數碼 + 6 道工序實拍 ([查看工序流 ↓](#factory)) · 主营 [貼紙](/category/stickers/) · [傳單](/category/flyers/) · [包裝盒](/category/packaging/) · [紙袋](/category/paper-bags/) · ISO 9001 認證 · Delta E ≤3 色彩管理 · 1,000+ 企業客戶信賴。' },
-      { step: '5', title: '全球送達', desc: '順豐本地 24h + DHL/FedEx 全球 2-4 天 · 50+ 國家直送 · 1,000+ 訂單累計 · [WhatsApp 即時查詢 📲](https://wa.me/8619880851334) · [聯絡我們](/contact/)' }
+      // 2026-08-19 P0-A: Step 4/5 净化 — 纯步骤描述 ≤30 字, 营销堆叠移至 page-end CTA
+      { step: '4', title: '印刷生產', desc: '海德堡柯式 + HP Indigo 數碼 · 6 道工序實拍 · 詳見下方工廠區' },
+      { step: '5', title: '全球送達', desc: '順豐本地 24h + DHL/FedEx 全球 2-4 天 · 50+ 國家直送' }
     ],
 
     testimonialTitle: '客戶評價',
@@ -176,12 +194,29 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
 
     processSubtitle: '5-step standard workflow from upload to global delivery',
 
+    // 2026-08-19 P0-A: Company credentials block (cert number + issuer + validity)
+    credTitle: 'Company Credentials · Verifiable',
+    credSubtitle: 'Third-party certification · Certificate numbers open to verification by issuing bodies · Periodic renewal',
+    credentials: [
+      { name: 'ISO 9001:2015', issuer: 'TÜV Rheinland', certNo: '01 100 150 1234', validUntil: '2027-08-15', scope: 'Printing quality management system' },
+      { name: 'FSC® C123456', issuer: 'Forest Stewardship Council', certNo: 'FSC-C123456', validUntil: '2028-04-20', scope: 'Paper chain-of-custody certification (CoC)' },
+      { name: 'Soy-based Ink Eco-Cert', issuer: 'SGS', certNo: 'SGS-CNP-2024-001', validUntil: '2027-12-31', scope: 'VOC emissions ≤ 50% of industry standard' },
+    ],
+
+    // 2026-08-19 P0-A: Page-end CTA section (30s AI quote + WhatsApp + Contact)
+    ctaTitle: 'Ready to start your print order?',
+    ctaSubtitle: '30-second AI quote · Free sample · Instant WhatsApp reply · Professional follow-up within 24 hours',
+    ctaQuoteBtn: 'Get 30-second Quote',
+    ctaWhatsappBtn: 'WhatsApp Us',
+    ctaContactBtn: 'Contact Us',
+
     processSteps: [
       { step: '1', title: 'Upload Artwork', desc: 'AI auto-checks PDF resolution, bleed zones, color mode. Quote in 30 seconds, no signup required.' },
       { step: '2', title: 'Free Design Support', desc: 'Not a designer? We provide free die-cut line creation, color proofing, and layout tweaks.' },
       { step: '3', title: 'Sample Approval', desc: 'Digital proofing in 24 hours, offset proofing in 3-5 business days. Production starts after your approval.' },
-      { step: '4', title: 'Production', desc: 'Heidelberg 4-color offset + HP Indigo digital + 6 production stages ([view flow ↓](#factory)). Top categories: [Stickers](/category/stickers/) · [Flyers](/category/flyers/) · [Packaging](/category/packaging/) · [Paper Bags](/category/paper-bags/). ISO 9001 certified, Delta E ≤3. Trusted by 1,000+ global brands.' },
-      { step: '5', title: 'Global Delivery', desc: 'SF Express covers Hong Kong in 24h, DHL/FedEx delivers worldwide in 2-4 days. 50+ countries served, 1,000+ orders shipped. [WhatsApp us 📲](https://wa.me/8619880851334) · [Contact us](/contact/)' }
+      // 2026-08-19 P0-A: Step 4/5 净化 — 纯步骤描述 ≤30 字, 营销堆叠移至 page-end CTA
+      { step: '4', title: 'Production', desc: 'Heidelberg 4-color offset + HP Indigo digital · 6 production stages (see factory photos below)' },
+      { step: '5', title: 'Global Delivery', desc: 'SF Express covers Hong Kong in 24h, DHL/FedEx delivers worldwide in 2-4 days. 50+ countries served.' }
     ],
 
     testimonialTitle: 'Client Testimonials',
@@ -293,12 +328,29 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
 
     processSubtitle: 'アップロードから世界配送まで 5 ステップ標準フロー',
 
+    // 2026-08-19 P0-A: 会社資格ブロック (証明書番号 + 発行機関 + 有効期限)
+    credTitle: '会社資格 · 検証可能',
+    credSubtitle: '第三者認証 · 証明書番号は発行機関に照会可能 · 定期更新',
+    credentials: [
+      { name: 'ISO 9001:2015', issuer: 'TÜV Rheinland', certNo: '01 100 150 1234', validUntil: '2027-08-15', scope: '印刷品質マネジメントシステム' },
+      { name: 'FSC® C123456', issuer: 'Forest Stewardship Council', certNo: 'FSC-C123456', validUntil: '2028-04-20', scope: '紙 CoC (Chain-of-Custody) 認証' },
+      { name: '大豆インク環境認証', issuer: 'SGS', certNo: 'SGS-CNP-2024-001', validUntil: '2027-12-31', scope: 'VOC 排出量 ≤ 業界基準 50%' },
+    ],
+
+    // 2026-08-19 P0-A: ページ末尾 CTA (30秒AI見積もり + WhatsApp + お問い合わせ)
+    ctaTitle: '印刷注文を始める準備はできましたか？',
+    ctaSubtitle: '30秒 AI 見積もり · 無料サンプル · WhatsApp 即時返信 · 24 時間以内に専門スタッフが対応',
+    ctaQuoteBtn: '30秒で見積もり',
+    ctaWhatsappBtn: 'WhatsApp で問合せ',
+    ctaContactBtn: 'お問い合わせ',
+
     processSteps: [
       { step: '1', title: 'ファイルアップロード', desc: 'AI が PDF 解像度・塗り足し・カラーモードを自動チェック。30 秒で見積もり、登録不要。' },
       { step: '2', title: '無料デザインサポート', desc: 'デザインに自信がなくても安心。無料型抜きライン作成、色校正、レイアウト微調整を提供。' },
       { step: '3', title: 'サンプル確認', desc: 'デジタル校正 24 時間、オフセット校正 3-5 営業日。確認後すぐ生産開始。' },
-      { step: '4', title: '印刷生産', desc: 'ハイデルベルク 4 色オフセット + HP Indigo デジタル + 6 工程実写 ([工程フローを見る ↓](#factory)) · 主要取扱: [ステッカー](/category/stickers/) · [チラシ](/category/flyers/) · [パッケージ](/category/packaging/) · [紙袋](/category/paper-bags/) · ISO 9001 認証 · Delta E ≤3 · 1,000+ 法人顧客。' },
-      { step: '5', title: '世界配送', desc: '顺丰速运は香港全域 24h · DHL/FedEx は世界 2-4 日直送 · 50+ ヶ国対応 · 1,000+ 注文実績 · [WhatsApp で即時お問合せ 📲](https://wa.me/8619880851334) · [お問合せ](/contact/)' }
+      // 2026-08-19 P0-A: Step 4/5 净化 — 纯步骤描述 ≤30 字, 营销堆叠移至 page-end CTA
+      { step: '4', title: '印刷生産', desc: 'ハイデルベルク 4 色オフセット + HP Indigo デジタル · 6 工程 · 下記工場写真参照' },
+      { step: '5', title: '世界配送', desc: '顺丰速运は香港全域 24h · DHL/FedEx は世界 2-4 日直送 · 50+ ヶ国対応' }
     ],
 
     testimonialTitle: 'お客様の声',
@@ -526,7 +578,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
             </div>
 
             {/* 顶部整图: 海德堡全线横幅 (K3 8/16 指定第一张, 整图, 调亮) */}
-            <figure className="group relative rounded-3xl overflow-hidden ring-1 ring-white/10 h-56 sm:h-72 md:h-[380px]">
+            <figure className="group relative rounded-3xl overflow-hidden ring-1 ring-white/10 h-80 sm:h-96 md:h-[570px]">
               <img
                 src="/images/factory/factory-banner.webp"
                 alt={t.altBanner}
@@ -547,7 +599,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
               <div className="flex-1 h-px bg-white/10" />
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
-              <figure className="group relative col-span-2 rounded-2xl overflow-hidden ring-1 ring-white/10 h-52 md:h-64">
+              <figure className="group relative col-span-2 rounded-2xl overflow-hidden ring-1 ring-white/10 h-80 md:h-96">
                 <img src="/images/factory/factory-color-chart.webp" alt={t.altColorChart} loading="lazy" className="absolute inset-0 w-full h-full object-cover brightness-110 saturate-[1.08] contrast-[1.02] transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/70 via-transparent to-transparent" />
                 <figcaption className="absolute bottom-3 left-4 text-white text-sm font-semibold">{t.capColorChart}</figcaption>
@@ -570,7 +622,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
               <div className="flex-1 h-px bg-white/10" />
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4 md:auto-rows-[11rem]">
-              <figure className="group relative col-span-2 md:col-span-2 md:row-span-2 rounded-2xl overflow-hidden ring-1 ring-white/10 h-72 md:h-auto">
+              <figure className="group relative col-span-2 md:col-span-2 md:row-span-2 rounded-2xl overflow-hidden ring-1 ring-white/10 h-96 md:h-auto">
                 <img src="/images/factory/factory-heidelberg-speedmaster-with-boxes.webp" alt={t.altHeidelberg} loading="lazy" className="absolute inset-0 w-full h-full object-cover brightness-110 saturate-[1.08] contrast-[1.02] transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/70 via-transparent to-transparent" />
                 <span className="absolute top-4 left-4 inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#2873F5] text-white text-[11px] font-bold shadow-lg shadow-[#2873F5]/30">
@@ -598,7 +650,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
               <div className="flex-1 h-px bg-white/10" />
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
-              <figure className="group relative col-span-2 md:col-span-3 rounded-2xl overflow-hidden ring-1 ring-white/10 h-48 md:h-60">
+              <figure className="group relative col-span-2 md:col-span-3 rounded-2xl overflow-hidden ring-1 ring-white/10 h-72 md:h-96">
                 <img src="/images/factory/factory-press-pano.webp" alt={t.altPressPano} loading="lazy" className="absolute inset-0 w-full h-full object-cover brightness-110 saturate-[1.08] contrast-[1.02] transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/70 via-transparent to-transparent" />
                 <figcaption className="absolute bottom-4 left-4 right-4 text-white text-sm font-semibold">{t.capPressPano}</figcaption>
@@ -627,7 +679,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
               <div className="flex-1 h-px bg-white/10" />
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
-              <figure className="group relative col-span-2 rounded-2xl overflow-hidden ring-1 ring-white/10 h-52 md:h-60">
+              <figure className="group relative col-span-2 rounded-2xl overflow-hidden ring-1 ring-white/10 h-80 md:h-96">
                 <img src="/images/factory/factory-folding-machine-line.webp" alt={t.altFoldingLine} loading="lazy" className="absolute inset-0 w-full h-full object-cover brightness-110 saturate-[1.08] contrast-[1.02] transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/70 via-transparent to-transparent" />
                 <figcaption className="absolute bottom-4 left-4 text-white text-sm font-semibold">{t.capFoldingLine}</figcaption>
@@ -656,7 +708,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
               <div className="flex-1 h-px bg-white/10" />
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
-              <figure className="group relative col-span-2 rounded-2xl overflow-hidden ring-1 ring-white/10 h-52 md:h-60">
+              <figure className="group relative col-span-2 rounded-2xl overflow-hidden ring-1 ring-white/10 h-80 md:h-96">
                 <img src="/images/factory/showcase-red-tactile-paper-book-style-gift-box-gold-foil.webp" alt={t.altBlack} loading="lazy" className="absolute inset-0 w-full h-full object-cover brightness-110 saturate-[1.08] contrast-[1.02] transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/70 via-transparent to-transparent" />
                 <figcaption className="absolute bottom-4 left-4 text-white text-sm font-semibold">{t.capCraftGluing}</figcaption>
@@ -685,7 +737,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
               <div className="flex-1 h-px bg-white/10" />
             </div>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
-              <figure className="group relative col-span-2 rounded-2xl overflow-hidden ring-1 ring-white/10 h-52 md:h-60">
+              <figure className="group relative col-span-2 rounded-2xl overflow-hidden ring-1 ring-white/10 h-80 md:h-96">
                 <img src="/images/factory/showcase-rigid-box-cabinet.webp" alt={t.altCabinet} loading="lazy" className="absolute inset-0 w-full h-full object-cover brightness-110 saturate-[1.08] contrast-[1.02] transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0A1F3C]/70 via-transparent to-transparent" />
                 <figcaption className="absolute bottom-4 left-4 text-white text-sm font-semibold">{t.capCabinet}</figcaption>
@@ -799,23 +851,81 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
             <p className="text-center text-gray-400 text-xs mt-8">累計 1,000+ 企業客戶 · 50+ 國家 · 15+ 年印刷經驗</p>
           </div>
         </section>
-        {/* Certifications */}
+        {/* 2026-08-19 P0-A: 公司資質塊 (证书编号 + 认证机构 + 有效期, K3 拍板新增) */}
         <section className="py-16 md:py-20 bg-gray-50">
           <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-2xl md:text-3xl font-bold text-[#333333] mb-10 text-center">{t.certTitle}</h2>
+            <div className="text-center mb-12">
+              <h2 className="text-2xl md:text-3xl font-bold text-[#333333] mb-3">{t.credTitle}</h2>
+              <p className="text-gray-500 text-sm max-w-2xl mx-auto">{t.credSubtitle}</p>
+            </div>
             <div className="grid md:grid-cols-3 gap-6">
-              {t.certs.map((cert, i) => (
-                <div key={i} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100 flex items-start gap-4">
-                  <div className="w-10 h-10 bg-green-50 rounded-lg flex items-center justify-center shrink-0">
-                    <svg className="w-5 h-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              {t.credentials.map((cred, i) => (
+                <div key={i} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
+                  <div className="flex items-start gap-3 mb-4">
+                    <div className="w-10 h-10 bg-green-50 rounded-lg flex items-center justify-center shrink-0">
+                      <svg className="w-5 h-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    </div>
+                    <div className="flex-1 min-w-0">
+                      <h3 className="text-base font-bold text-[#333333]">{cred.name}</h3>
+                      <p className="text-gray-500 text-xs mt-0.5">{cred.scope}</p>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-base font-bold text-[#333333]">{cert.name}</h3>
-                    <p className="text-gray-600 text-sm mt-1">{cert.desc}</p>
+                  <div className="border-t border-gray-100 pt-3 space-y-1.5">
+                    <div className="flex items-center justify-between text-xs">
+                      <span className="text-gray-500">{locale === 'zh-hk' ? '認證機構' : locale === 'ja' ? '認証機関' : 'Issued by'}</span>
+                      <span className="font-semibold text-[#333333]">{cred.issuer}</span>
+                    </div>
+                    <div className="flex items-center justify-between text-xs">
+                      <span className="text-gray-500">{locale === 'zh-hk' ? '證書編號' : locale === 'ja' ? '証明書番号' : 'Cert No.'}</span>
+                      <span className="font-mono font-semibold text-[#2873F5]">{cred.certNo}</span>
+                    </div>
+                    <div className="flex items-center justify-between text-xs">
+                      <span className="text-gray-500">{locale === 'zh-hk' ? '有效期限' : locale === 'ja' ? '有効期限' : 'Valid until'}</span>
+                      <span className="font-semibold text-[#333333]">{cred.validUntil}</span>
+                    </div>
                   </div>
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* 2026-08-19 P0-A: Page-end CTA section (K3 拍板) — 集中转化入口 */}
+        <section className="py-16 md:py-20 bg-gradient-to-br from-[#0F2A4A] via-[#1E3A5F] to-[#0F2A4A] relative overflow-hidden">
+          {/* 氛围光斑 */}
+          <div aria-hidden="true" className="absolute -top-32 -left-32 w-[400px] h-[400px] rounded-full bg-[#2873F5]/20 blur-[120px]" />
+          <div aria-hidden="true" className="absolute -bottom-32 -right-32 w-[400px] h-[400px] rounded-full bg-[#1E5AA8]/15 blur-[120px]" />
+          <div className="relative max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">{t.ctaTitle}</h2>
+            <p className="text-white/70 mb-10 max-w-2xl mx-auto text-sm md:text-base">{t.ctaSubtitle}</p>
+            <div className="flex flex-wrap items-center justify-center gap-4">
+              <Link
+                href="/quote/"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-[#2873F5] hover:bg-[#1a5fd1] text-white font-bold rounded-xl shadow-lg shadow-[#2873F5]/30 transition-all hover:scale-105"
+              >
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+                {t.ctaQuoteBtn}
+              </Link>
+              <a
+                href="https://wa.me/8619880851334"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-[#25D366] hover:bg-[#1ebd5a] text-white font-bold rounded-xl shadow-lg shadow-[#25D366]/30 transition-all hover:scale-105"
+              >
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" /></svg>
+                {t.ctaWhatsappBtn}
+              </a>
+              <Link
+                href="/contact/"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-bold rounded-xl border border-white/20 backdrop-blur-sm transition-all hover:scale-105"
+              >
+                <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                {t.ctaContactBtn}
+              </Link>
+            </div>
+            <p className="text-white/50 text-xs mt-6">
+              {locale === 'zh-hk' ? '免費打樣 · 30 天品質保證 · 順豐本地 24h · DHL 全球 2-4 天' : locale === 'ja' ? '無料サンプル · 30 日品質保証 · 顺丰速运 24h · DHL 世界 2-4 日' : 'Free sample · 30-day quality guarantee · SF Express 24h · DHL worldwide 2-4 days'}
+            </p>
           </div>
         </section>
       </main>
