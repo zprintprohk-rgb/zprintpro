@@ -1720,6 +1720,7 @@ export function generateOrganizationSchema(locale: Locale): SchemaOrgData {
 export function generateLocalBusinessSchema(locale: Locale): SchemaOrgData {
   const nap = getSiteNAP(locale);
   const geo = geoConfig[locale];
+  const config = regionConfig[locale];
   return {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
@@ -1731,16 +1732,21 @@ export function generateLocalBusinessSchema(locale: Locale): SchemaOrgData {
     priceRange: geo.pricePrefix,
     address: {
       '@type': 'PostalAddress',
+      // 2026-08-19 P0-A: address 全部走 nap.address (per K3 8/7 拍板), 不用 geo.region
+      // 修前 bug: addressCountry 走 geoConfig[locale].region (HK/US/JP) 跟 NAP 不一致
       streetAddress: nap.address.street,
       addressLocality: nap.address.city,
       addressRegion: nap.address.region,
-      addressCountry: geo.region,
+      addressCountry: nap.address.country,
+      postalCode: nap.address.postalCode,
     },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: '22.3193',
-      longitude: '114.1694',
-    },
+    geo: config.geoCoordinates
+      ? {
+          '@type': 'GeoCoordinates',
+          latitude: config.geoCoordinates.lat,
+          longitude: config.geoCoordinates.lng,
+        }
+      : undefined,
     openingHoursSpecification: {
       '@type': 'OpeningHoursSpecification',
       dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
