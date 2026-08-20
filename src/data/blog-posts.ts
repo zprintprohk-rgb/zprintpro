@@ -633,6 +633,23 @@ const lpWeddingFavorBag: BlogPostMeta = {
   },
 };
 
+const lpWeddingInvitationPricing: BlogPostMeta = {
+  slug: 'wedding-invitation-pricing-guide',
+  categoryKey: 'paper-bags',
+  source: 'daily',
+  date: '2026-08-20',
+  title: {
+    'zh-hk': '喜帖價格指南 2026 · 50-500 個中式西式婚禮請柬 4 檔實價 + 材質工藝全對比 | 智印港 ZprintPro',
+    en: 'Wedding Invitation Pricing Guide 2026: 50-500 Piece Runs, Materials & Finishing Costs Compared | ZprintPro',
+    ja: '結婚式招待状 価格ガイド 2026：50〜500個の中華式・西洋式リアル価格 + 素材・加工完全比較 | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '準新人、婚禮統籌師、宴會場地必睇。2026 龍年結婚旺季,中式喜帖、西式邀請卡、教堂婚禮、集團婚禮 4 大場景,50-500 個 4 檔實價對比,白卡紙 / 珠光紙 / 萊妮紋紙 / 棉紙 4 種材質 + 燙金 / 燙銀 / UV / 擊凸 6 種工藝,智印港小批量定制 5-10 個工作天交付。',
+    en: 'Couples, wedding planners, and venues — 2026 dragon-year wedding season pricing for Chinese-style invites, Western-style cards, church weddings, and group weddings. 4 quantity tiers (50/100/300/500), 4 materials, 6 finishing options, 5-10 working day delivery from Asia factory.',
+    ja: 'ご婚約カップル、ウェディングプランナー、式場様へ。2026辰年ブライダルシーズン、中華式招待状・西洋式カード・教会式・合同式4大シーン、50〜500個4段階リアル価格比較、素材4種・加工6種、5-10営業日納品。',
+  },
+};
+
 // 2026-07-08 v4 純文字深度博客 (no cover) — P1 unlock 開始
 // Q-P1-01 (posters × 零售精品)
 const lpRetailPoster: BlogPostMeta = {
