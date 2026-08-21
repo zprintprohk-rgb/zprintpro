@@ -34,9 +34,9 @@ const metaMap: Record<string, { title: string; desc: string; keywords: string }>
     keywords: 'same day printing,CMYK printing,color printing,rush printing,same day delivery,print rush,express printing,urgent print USA,quick printing,small batch rush,CMYK print mode,color print mode,24 hour printing,overnight printing',
   },
   ja: {
-    title: '当日 CMYK 印刷｜100枚〜・即納・短納期｜ZprintPro',
-    desc: '当日 CMYK 印刷サービス 100 枚から対応, 平日 18 時までのご注文で徹夜印刷, DHL 国際配送 2-4 日. チラシ・ポスター・ステッカー・紙袋・冊子・ロールアップバナー, 防水 UV. 30 秒 AI 無料見積もり. ISO 9001 + FSC 認証.',
-    keywords: '当日印刷,CMYK 印刷,カラー印刷,緊急印刷,速達印刷,当日発送,即納印刷,小ロット緊急,短納期印刷,印刷 cmyk モード,印刷 カラー モード,徹夜印刷,24時間印刷',
+    title: '当日 CMYK 印刷・激安｜100枚〜・即納・短納期｜ZprintPro',
+    desc: '当日 CMYK 印刷サービス 100 枚から対応, 平日 18 時までのご注文で徹夜印刷, 激安短納期. DHL 国際配送 2-4 日. チラシ・ポスター・ステッカー・紙袋・冊子・ロールアップバナー, 防水 UV. 30 秒 AI 無料見積もり. ISO 9001 + FSC 認証.',
+    keywords: '当日印刷,CMYK 印刷,カラー印刷,緊急印刷,速達印刷,当日発送,即納印刷,小ロット緊急,短納期印刷,印刷 cmyk モード,印刷 カラー モード,徹夜印刷,24時間印刷,激安,特急印刷 激安',
   },
 };
 
