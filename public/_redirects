@@ -332,3 +332,7 @@
 # SECTION 10: 旧平台兼容
 # =====================
 /product-detail?id=:id /zh-hk/product/:id/ 301
+# ===== v3.12 T11: business-card-design 301 to sticker-design (per section 11 + mismatch fix) =====
+/zh-hk/blog/business-card-design/ /zh-hk/blog/sticker-design/ 301
+/en/blog/business-card-design/ /en/blog/sticker-design/ 301
+/ja/blog/business-card-design/ /ja/blog/sticker-design/ 301

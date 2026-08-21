@@ -2858,7 +2858,9 @@ export function getDefaultCategoryContent(categorySlug: string, locale: string):
 // =============================================================================
 const stickersContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
-    h2: '香港貼紙印刷 — 防水／透明／燙金貼紙，50 張起訂，即日交貨',
+    featuredSnippet: '貼紙印刷 50 個起, 防水啞光 HK$0.45/張起, 戶外貼紙 100 個起, 可移貼紙 100 個起, 5-7 天交期, DHL 全球 2-4 天。',
+    lastUpdated: '2026-08-21',
+    h2: '貼紙印刷 / 戶外貼紙 / 防水貼紙 / 可移貼紙 — 50 個起印 5-7 天交期',
     coreAdvantages: {
       title: '核心競爭優勢',
       items: [
@@ -2962,7 +2964,9 @@ const stickersContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   en: {
-    h2: 'Sticker Printing — Waterproof / Transparent / Foil, From 50 pcs, Same-Day Delivery',
+    featuredSnippet: 'Custom stickers from 50 pcs, waterproof matte from US$0.06 each, outdoor vinyl stickers 100 pcs MOQ, removable stickers 100 pcs MOQ, 5-7 day production, DHL global 2-4 days.',
+    lastUpdated: '2026-08-21',
+    h2: 'Custom Stickers / Outdoor Stickers / Waterproof Stickers / Removable Stickers — From 50 pcs, 5-7 Day Turnaround',
     coreAdvantages: {
       title: 'Why Choose ZprintPro for Stickers?',
       items: [
@@ -3064,7 +3068,9 @@ const stickersContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   ja: {
-    h2: 'シール印刷 — 防水／透明／箔押し、50枚から、即日納品',
+    featuredSnippet: 'ステッカー印刷 50枚から, 防水マット 1枚 ¥7 から, 屋外ステッカー 100枚から, 剥がせるステッカー 100枚から, 5-7日納期, DHL グローバル 2-4日。',
+    lastUpdated: '2026-08-21',
+    h2: 'ステッカー 印刷 / 屋外 ステッカー / 防水ステッカー / 剥がせるステッカー — 50枚から 5-7日納期',
     coreAdvantages: {
       title: 'ZprintPro シール印刷の強み',
       items: [
@@ -3460,7 +3466,9 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
 // =============================================================================
 const postersContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
-    h2: '香港海報印刷 — A2/A1/A0 大圖輸出，防水防 UV，牆身貼紙專家',
+    featuredSnippet: '海報印刷 A2 100 張起, 128g 銅版紙 HK$6-9/張, A1 HK$10-16/張, 500 張再減 30%, 1,000 張以上轉柯式再降 40%。3-5 個工作天交期, DHL 全球 2-4 天。',
+    lastUpdated: '2026-08-21',
+    h2: '印海報 / 海報印刷 / poster 印刷 / a3海報大小 — A0-A3 全尺寸 100 張起印, 同日特急可選',
     coreAdvantages: {
       title: '核心競爭優勢',
       items: [
@@ -3554,7 +3562,9 @@ const postersContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   en: {
-    h2: 'Poster Printing — A2/A1/A0 Large Format, Waterproof & UV-Resistant, Wall Graphic Specialists',
+    featuredSnippet: 'Poster printing from 10 pcs: A2 US$0.80-1.20 each, A1 US$1.30-2.10 each at 100 pcs, 500+ saves 30%, 1,000+ offset drops 40% more. 3-5 business day turnaround, DHL global 2-4 days.',
+    lastUpdated: '2026-08-21',
+    h2: 'Print Posters / Poster Printing / Poster Print / a3 poster size — A0-A3 Full Sizes From 10 pcs, Same-Day Rush Available',
     coreAdvantages: {
       title: 'Why Choose ZprintPro for Posters?',
       items: [
@@ -3648,7 +3658,9 @@ const postersContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   ja: {
-    h2: 'ポスター印刷 — A2/A1/A0大判出力、防水・UV耐性、ウォールグラフィック専門',
+    featuredSnippet: 'ポスター印刷 10枚から: A2 ¥100-150/枚, A1 ¥170-260/枚 (100枚時), 500枚で 30% OFF, 1,000枚以上はオフセットでさらに 40% 削減。3-5 営業日納期, DHL グローバル 2-4日。',
+    lastUpdated: '2026-08-21',
+    h2: 'ポスター 印刷 / ポスター 印刷 費用 / ポスター プリント / a3 ポスター サイズ — A0-A3 全サイズ 10枚から, 即日特急対応',
     coreAdvantages: {
       title: 'ZprintPro ポスター印刷の強み',
       items: [

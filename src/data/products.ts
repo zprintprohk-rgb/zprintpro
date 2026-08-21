@@ -714,7 +714,7 @@ export const products: Product[] = [
     slug: 'foil-greeting-cards',
     category: 'greeting-cards',
     category_slug: 'greeting-cards',
-    name: '燙金/燙銀賀卡', nameEn: 'Foil-Stamped Greeting Cards', nameJa: '年賀状印刷 | 箔押しグリーティングカード', title_zh: '燙金/燙銀賀卡',
+    name: '燙金/燙銀賀卡 | 賀卡 / 燙銀工藝 / 婚禮卡', nameEn: 'Foil-Stamped Greeting Cards | Gold/Silver Foil Wedding Cards', nameJa: '年賀状印刷 | 箔押しグリーティングカード | 金箔/銀箔', title_zh: '燙金/燙銀賀卡 100個起印 5-7天 · 智印港',
     description: '燙金/燙銀/玫瑰金賀卡,金屬光澤瞬間提升奢華感,聖誕/婚禮/百日宴/感謝卡高端首選。300g 銅版紙+金屬箔層,免費打樣,DHL 全球 2-4 天配送。', descriptionEn: 'Foil-stamped greeting cards (gold/silver/rose gold). Metallic luster elevates premium feel for Christmas, wedding, baby 100-day celebration, thank-you cards. 300g coated card with metallic foil layer. Free sample, DHL Express 2-4 day global delivery.', descriptionJa: '箔押し/銀箔/ローズゴールドグリーティングカード。金属光泽で高級感アップ、クリスマス/ウェディング/百日祝/サンキューカードに最適。300g コート紙+金属箔層、無料サンプル、DHL Express 国際 2-4 日納品対応。', description_zh: '燙金/燙銀/玫瑰金賀卡,金屬光澤瞬間提升奢華感,聖誕/婚禮/百日宴/感謝卡高端首選。300g 銅版紙+金屬箔層,免費打樣,DHL 全球 2-4 天配送。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -2007,8 +2007,8 @@ export const products: Product[] = [
     slug: 'waterproof-stickers',
     category: 'stickers',
     category_slug: 'stickers',
-    name: '防水貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Waterproof Stickers | Waterproof & Die-Cut Stickers', nameJa: '防水ステッカー | 防水ステッカー / ダイカット', title_zh: '防水貼紙 · 訂製',
-    description: 'PVC材質防水貼紙，具有出色的防水、防曬、耐磨性能。適合戶外使用、產品標籤、車身貼紙等場景。', descriptionEn: 'PVC waterproof stickers with excellent water, UV, and abrasion resistance. Perfect for outdoor use, product labels, car decals. Free shipping over $99 USA · Free design mockup · 50 MOQ · Fast 4-day turnaround to USA small business & DTC brands.', descriptionJa: 'PVC防水ステッカー、優れた防水・UV・耐摩耗性。屋外使用、製品ラベル、車用ステッカーに最適。。全国送料込み・30枚から対応・最短3日出荷。D2Cブランド・小売店・食品業界向け。', description_zh: 'PVC材質防水貼紙，具有出色的防水、防曬、耐磨性能。適合戶外使用、產品標籤、車身貼紙等場景。',
+    name: '防水貼紙 / 戶外貼紙 訂製 | PVC 防水 / 異形貼紙', nameEn: 'Waterproof Stickers / Outdoor Stickers | Waterproof & Die-Cut', nameJa: '防水ステッカー / 屋外ステッカー | 防水ステッカー / ダイカット', title_zh: '防水貼紙 / 戶外貼紙 訂製 100個起印 · 5-7天交期 · 智印港',
+    description: '防水貼紙 / 戶外貼紙 PVC材質，防水防曬耐磨，適合戶外使用、產品標籤、車身貼紙、設備標識、活動紀念。5-7 天交期，DHL 全球 2-4 天。', descriptionEn: 'Waterproof stickers / outdoor stickers PVC with excellent water, UV, and abrasion resistance. Perfect for outdoor use, product labels, car decals, equipment signs, event souvenirs. 5-7 day turnaround, DHL global 2-4 days.', descriptionJa: '防水ステッカー / 屋外ステッカー PVC、防水・UV・耐摩耗性に優れる。屋外使用、製品ラベル、車用ステッカー、設備サイン、記念品に最適。5-7日納期, DHL グローバル 2-4日。', description_zh: '防水貼紙 / 戶外貼紙 PVC材質，防水防曬耐磨，適合戶外使用、產品標籤、車身貼紙、設備標識、活動紀念。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -2544,7 +2544,7 @@ export const products: Product[] = [
     optimizationRound: 1,
     category: 'stickers',
     category_slug: 'stickers',
-    name: '可移貼紙(無殘膠) | 防水貼紙 / 異形貼紙', nameEn: 'Removable Stickers | Waterproof & Die-Cut Stickers', nameJa: 'はがせるステッカー | 防水ステッカー / ダイカット', title_zh: '可移除貼紙印刷 50張起印 玻璃不留膠 · 季節活動試用品短期推廣適配 | 智印港 ZprintPro 訂製',
+    name: '可移貼紙(無殘膠) / 可移貼紙訂製 | 防水貼紙 / 異形貼紙', nameEn: 'Removable Stickers | Waterproof & Die-Cut Stickers', nameJa: 'はがせるステッカー | 防水ステッカー / ダイカット', title_zh: '可移貼紙訂製 玻璃不留膠 50張起印 · 智印港',
     description: '特殊背膠設計，移除後不留殘膠，保護貼附表面。適合車窗、玻璃櫥窗、短期展覽。 **适配行业**:季節性推廣、活動短期宣傳、試用品包裝、玻璃櫥窗裝飾、學校活動、餐廳當日貼紙、零售促銷 **適配行業**：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。', descriptionEn: 'Special adhesive design leaves no residue when removed. Perfect for car windows, glass displays, short-term exhibitions. **Best for**:seasonal campaigns, short-term event promo, sample packaging, glass window decoration, school activities, restaurant daily specials, retail promotions **Best for**: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.', descriptionJa: '特殊粘着設計、剥がしても残りません。車窓、ガラス展示、短期展示会に最適。 **適用業界**:季節キャンペーン、短期イベントプロモーション、サンプル包装、ガラス窓装飾、学校行事、レストラン日替わり、小売プロモーション **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。', description_zh: '特殊背膠設計，移除後不留殘膠，保護貼附表面。適合車窗、玻璃櫥窗、短期展覽。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -7920,7 +7920,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'a2-posters',
     category: 'posters',
     category_slug: 'posters',
-    name: 'A2海報印刷 | A1/A2 海報 / 展覽海報', nameEn: 'A2 Posters | A1/A2 Posters & Exhibition', nameJa: 'A2ポスター | A1/A2 ポスター / 展示会', title_zh: 'A2海報印刷 10張起印 HK$12.9/張 雙面彩印 防水 | 零售精品/餐飲外賣/教育培訓 | 智印港 ZprintPro',
+    name: 'A2海報印刷 / a2 poster printing | A1/A2 海報 / 展覽海報', nameEn: 'A2 Poster Printing / a2 poster size | A1/A2 Posters & Exhibition', nameJa: 'A2ポスター | A1/A2 ポスター / 展示会', title_zh: 'A2海報印刷 a2 poster printing 10張起印 HK$12.9/張 | 智印港',
     description: 'A2海報印刷訂製，10張起印，HK$12.9起/張。200g銅版紙/PP合成紙，雙面四色印刷，防水防曬耐用。適合地產活動展覽店舖推廣，1-2天交貨，全港送貨。**適配行業**:零售精品店、品牌 pop-up、商場快閃、餐廳菜單推廣、咖啡店、教育培訓機構、藝廊展覽、婚慶活動。', descriptionEn: 'Standard A2 size, first choice for event promotion. 157g glossy paper, vibrant colors, 10-sheet minimum, 1-2 day turnaround. **Best for**: retail boutique, brand pop-up, mall flash store, restaurant menu promo, cafe, education training, gallery exhibition, wedding events.', descriptionJa: '標準A2サイズ、イベント宣伝の第一選択。157gコート紙、鮮やかな色彩、10枚から、1-2日納期。**適用業界**:小売セレクト、ブランド pop-up、ショッピングモール フラッシュ、レストランメニュー、カフェ、教育研修、ギャラリー展示、ブライダルイベント。', description_zh: '標準A2尺寸，活動宣傳、產品推廣首選。157g銅版紙，色彩鮮豔，10張起訂。',
     optimizedAt: '2026-07-08',
     optimizationRound: 1,
@@ -16984,8 +16984,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'exercise-books',
     category: 'educational',
     category_slug: 'educational',
-    name: '香港練習簿印刷 — 補習社教材 / K12 練習簿 / 學年作業本 / 校園訂製', nameEn: 'Exercise Book Printing for Tutoring Centers, K12 Schools & Custom School Programs', nameJa: '練習帳印刷 — 補習校教材・K12 練習帳・學年内ノート・學校オーダー', title_zh: '香港練習簿印刷 — 補習社教材 / K12 練習簿 / 學年作業本 / 校園訂製',
-    description: '練習簿印刷服務，補習社教材、K12 練習簿、學年作業本、校園訂製首選。書紙/道林紙輕薄不反光，內頁可加方格/橫線/空白。', descriptionEn: 'Exercise book printing for tutoring centers, K12 schools, grade-level workbooks, custom school programs. Bookwood/woodfree paper, lightweight non-glare, inner pages available in grid/line/blank.', descriptionJa: '練習帳印刷サービス、補習校教材、K12 練習帳、學年別教材、學校オリジナル製作に最適。上質紙・薄手で反射防止、内側罫線（マス・横罫・無地）選択可。', description_zh: '練習簿印刷服務，補習社教材、K12 練習簿、學年作業本、校園訂製首選。書紙/道林紙輕薄不反光。',
+    name: 'Exercise Book Printing School Programs | K12 練習簿 / 學年作業本 / Tutoring Centers / Custom School Programs', nameEn: 'School Exercise Book Printing | K12 Workbooks & School Textbook Printing', nameJa: '練習帳印刷 — 補習校教材・K12 練習帳・學年内ノート・學校オーダー', title_zh: '香港練習簿印刷 / School Exercise Book Printing — MOQ 50 30秒AI報價 DHL 2-4天',
+    description: 'School exercise book printing 練習簿印刷服務, 補習社教材、K12 練習簿、學年作業本、校園訂製首選。書紙/道林紙輕薄不反光, 內頁可加方格/橫線/空白。', descriptionEn: 'School exercise book printing service — 50-100 book MOQ (vs Alibaba yellow pages 500+ MOQ), 30-second AI quote (vs 2-day email inquiry), DHL 2-4 day global delivery (vs 3-4 week sea freight). Africa/Middle East/Southeast Asia education ministries, tutoring centers, K12 schools. Custom school textbook printing, grade-level workbooks.', descriptionJa: '練習帳印刷サービス、補習校教材、K12 練習帳、學年別教材、學校オリジナル製作に最適。上質紙・薄手で反射防止、内側罫線（マス・横罫・無地）選択可。', description_zh: 'School exercise book printing 練習簿印刷服務, 補習社教材、K12 練習簿、學年作業本、校園訂製首選。書紙/道林紙輕薄不反光, 內頁可加方格/橫線/空白。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -17679,8 +17679,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'textbooks',
     category: 'educational',
     category_slug: 'educational',
-    name: '香港教科書印刷 — K12 教科書 / 補習社教材 / 學年教材 / 培訓手冊', nameEn: 'Textbook Printing for K12 Schools, Tutoring Centers & Training Manuals', nameJa: '教科書印刷 — K12 教科書・補習校教材・學年内教材・研修マニュアル', title_zh: '香港教科書印刷 — K12 教科書 / 補習社教材 / 學年教材 / 培訓手冊',
-    description: '教科書印刷服務，K12 教科書、補習社教材、學年教材、培訓手冊、練習題庫首選。書紙/道林紙護眼，可加 ISBN/條碼。', descriptionEn: 'Textbook printing service for K12 schools, tutoring centers, grade-level curricula, training manuals, exercise workbooks. Wood-free eye-friendly paper, ISBN/barcode support available.', descriptionJa: '教科書印刷サービス、K12 教科書、補習校教材、學年別教材、研修マニュアル、問題集に最適。目に優しい上質紙、ISBN・バーコード対応。', description_zh: '教科書印刷服務，K12 教科書、補習社教材、學年教材、培訓手冊、練習題庫首選。書紙/道林紙護眼。',
+    name: '香港教科書印刷 / 教科書 印刷 — K12 教科書 / 補習社教材 / 學年教材 / 培訓手冊', nameEn: 'Textbook Printing for K12 Schools, Tutoring Centers & Training Manuals', nameJa: '教科書印刷 — K12 教科書・補習校教材・學年内教材・研修マニュアル', title_zh: '香港教科書印刷 教科書 印刷 — K12 教科書 / 補習社教材 / 學年教材 / 培訓手冊',
+    description: '教科書印刷 / 教科書 印刷 服務，K12 教科書、補習社教材、學年教材、培訓手冊、練習題庫首選。書紙/道林紙護眼，可加 ISBN/條碼。', descriptionEn: 'Textbook printing service for K12 schools, tutoring centers, grade-level curricula, training manuals, exercise workbooks. Wood-free eye-friendly paper, ISBN/barcode support available.', descriptionJa: '教科書印刷サービス、K12 教科書、補習校教材、學年別教材、研修マニュアル、問題集に最適。目に優しい上質紙、ISBN・バーコード対応。', description_zh: '教科書印刷 / 教科書 印刷 服務，K12 教科書、補習社教材、學年教材、培訓手冊、練習題庫首選。書紙/道林紙護眼。',
     longDescription: `<h3>紙張材質對比</h3>
 <p>教科書常用 3 種紙材，分別適用不同預算、頁數與閱讀體驗。智印港 ZprintPro 所有紙張均通過 FSC 森林管理委員會認證。智印港 ZprintPro 教科書印刷服務亦可依學校 ESG 採購指引，彈性調整紙材結構：</p>
 <table>
@@ -18747,8 +18747,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     optimizationRound: 2,
     category: 'packaging',
     category_slug: 'packaging',
-    name: '牛皮紙盒印刷定製 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Kraft Paper Packaging Box | Gift Boxes & Custom Packaging', nameJa: 'クラフト紙箱印刷 | パッケージボックス・化粧箱', title_zh: '牛皮紙盒印刷定製 · 環保品牌跨境電商首選',
-    description: '環保牛皮紙盒，適合食品、茶葉、手工皂包裝。可印刷Logo，支持多種尺寸。適配行業: 有機食品品牌、環保美妝、ESG 認證品牌、跨境電商、FSC 認證供應鏈、減塑合規品牌。 適配行業: 跨境電商、食品包裝、美妝護膚、禮品、奢侈品、電子產品、母嬰.', descriptionEn: 'Eco-friendly kraft paper boxes for food, tea, handmade soap packaging. Custom logo printing, multiple sizes. Best for: organic food brands, eco-beauty, ESG-certified brands, cross-border e-commerce, FSC-certified supply chains, plastic-reduction compliance brands. 适配行业: Cross-border e-commerce, Food packaging, Beauty, Gifts, Luxury, Electronics, Baby products.', descriptionJa: '環境に優しいクラフト紙箱。食品、お茶、手作り石鹸の包裝に最適。ロゴ印刷、サイズ豊富。 適用業界: オーガニック食品ブランド、エコ ビューティ、ESG 認証ブランド、越境EC、FSC 認証サプライチェーン、プラスチック削減コンプライアンス ブランド。 适配行业: 越境EC、食品包装、美容、ギフト、贅沢品、エレクトロニクス、ベビー用品。', description_zh: '環保牛皮紙盒，適合食品、茶葉、手工皂包裝。可印刷Logo，支持多種尺寸。 適配行業: 跨境電商、食品包裝、美妝護膚、禮品、奢侈品、電子產品、母嬰.',
+    name: '牛皮紙盒印刷訂製 / クラフト紙 パッケージ印刷 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Kraft Paper Packaging Box | Gift Boxes & Custom Packaging', nameJa: 'クラフト紙 パッケージ印刷 / クラフト紙 箱印刷 | パッケージボックス・化粧箱', title_zh: '牛皮紙盒印刷訂製 · 環保品牌跨境電商首選',
+    description: '環保牛皮紙盒，適合食品、茶葉、手工皂包裝。可印刷Logo，支持多種尺寸。適配行業: 有機食品品牌、環保美妝、ESG 認證品牌、跨境電商、FSC 認證供應鏈、減塑合規品牌。 適配行業: 跨境電商、食品包裝、美妝護膚、禮品、奢侈品、電子產品、母嬰.', descriptionEn: 'Eco-friendly kraft paper boxes for food, tea, handmade soap packaging. Custom logo printing, multiple sizes. Best for: organic food brands, eco-beauty, ESG-certified brands, cross-border e-commerce, FSC-certified supply chains, plastic-reduction compliance brands. 适配行业: Cross-border e-commerce, Food packaging, Beauty, Gifts, Luxury, Electronics, Baby products.', descriptionJa: 'クラフト紙 パッケージ印刷 / クラフト紙 箱印刷 環境に優しいクラフト紙箱。食品、お茶、手作り石鹸の包裝に最適。ロゴ印刷、サイズ豊富。 適用業界: オーガニック食品ブランド、エコ ビューティ、ESG 認証ブランド、越境EC、FSC 認証サプライチェーン、プラスチック削減コンプライアンス ブランド。 适配行业: 越境EC、食品包装、美容、ギフト、贅沢品、エレクトロニクス、ベビー用品。', description_zh: '環保牛皮紙盒，適合食品、茶葉、手工皂包裝。可印刷Logo，支持多種尺寸。 適配行業: 跨境電商、食品包裝、美妝護膚、禮品、奢侈品、電子產品、母嬰.',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
