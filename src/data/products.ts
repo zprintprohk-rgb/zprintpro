@@ -15262,8 +15262,8 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'saddle-stitch-booklets',
     category: 'books',
     category_slug: 'books',
-    name: '香港騎馬釘小冊子 — 企業文化手冊 / 活動場刊 / 文學作品集 / 社團特刊', nameEn: 'Saddle-Stitch Booklets for Corporate Brochures, Event Programs & Literary Collections', nameJa: '中綴じ冊子 — 企業文化手冊・イベント場刊・文學作品集・社団特刊', title_zh: '香港騎馬釘小冊子 — 企業文化手冊 / 活動場刊 / 文學作品集 / 社團特刊',
-    description: '騎馬釘小冊子印刷，企業文化手冊、活動場刊、文學作品集、社團特刊、培訓手冊首選。8-64 頁可平攤 180°翻閱，紙張厚度均勻不反光。', descriptionEn: 'Saddle-stitch booklet printing for corporate brochures, event programs, literary collections, club publications, training manuals. 8-64 pages, lays flat at 180°, uniform paper weight, non-glare finish.', descriptionJa: '中綴じ冊子印刷、企業文化手冊、イベント場刊、文學作品集、サークル誌、研修マニュアルに最適。8-64頁、180°フラット開き、均一紙厚、反射防止仕上げ。', description_zh: '騎馬釘小冊子印刷，企業文化手冊、活動場刊、文學作品集、社團特刊、培訓手冊首選。8-64 頁可平攤 180°翻閱。',
+    name: '香港騎馬釘小冊子印刷訂製 / 騎馬釘書刊 / 騎馬釘印刷 — 目錄/雜誌/練習冊 50 本起', nameEn: 'Saddle Stitch Booklet Printing | Custom Catalogs 50 Copies MOQ | US$1.84-7.36/pc', nameJa: '中綴じ冊子印刷 / 騎馬釘書刊 — カタログ・雑誌・ドリル 50冊から', title_zh: '騎馬釘小冊子印刷訂製 / 騎馬釘書刊 / 騎馬釘印刷 — 目錄/雜誌/練習冊 50 本起',
+    description: '騎馬釘小冊子印刷訂製 / 騎馬釘書刊 / 騎馬釘印刷，企業文化手冊、活動場刊、文學作品集、學校練習冊首選。8-64 頁可平攤 180°翻閱。MOQ 50 本（vs Alibaba 黃頁 500+）、30 秒 AI 即時報價（vs 郵件詢盤 2 天）、DHL 全球 2-4 天（vs 海運 3-4 週）。US$1.84-7.36/pc，HK$14-57/pc。', descriptionEn: 'Saddle stitch booklet printing 50-copy MOQ (vs Alibaba yellow pages 500+), 30-second AI instant quote (vs 2-day email inquiry), DHL 2-4 day global delivery (vs 3-4 week sea freight). 8-64 pages, lays flat at 180°, uniform paper weight. US$1.84-7.36/pc.', descriptionJa: '中綴じ冊子印刷 50冊 MOQ（Alibaba 黄頁 500+ 相比）、30秒 AI 即時見積もり（メール 2日 相比）、DHL グローバル 2-4日（海上 3-4週 相比）。8-64頁、180°フラット開き、均一紙厚。¥258-1030/個。', description_zh: '騎馬釘小冊子印刷訂製 / 騎馬釘書刊 / 騎馬釘印刷，企業文化手冊、活動場刊、文學作品集、學校練習冊首選。8-64 頁可平攤 180°翻閱。MOQ 50 本、30 秒 AI 即時報價、DHL 全球 2-4 天。HK$14-57/pc。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>

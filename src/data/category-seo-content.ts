@@ -984,7 +984,10 @@ const bannersContent: Record<string, CategoryLocaleContent> = {
 // =============================================================================
 const booksContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
-    h2: '香港書籍印刷 — 騎馬釘／膠裝／精裝，1本起訂，專業排版',
+    // 2026-08-22 v3.13 T16: books 338 imps 结构战 - 5 词对齐 + 5 FAQ
+    featuredSnippet: '騎馬釘小冊子印刷 50 本起, 8-64 頁, HK$14-57/本 (500 本), 30 秒 AI 即時報價, DHL 全球 2-4 天。免製版費。',
+    lastUpdated: '2026-08-22',
+    h2: '騎馬釘小冊子 / 騎馬釘書刊 / 騎馬釘印刷 / 印書 / 繪本印製 — 50 本起印, 8-64 頁全規格, 30 秒 AI 報價',
     coreAdvantages: {
       title: '核心競爭優勢',
       items: [
@@ -1078,7 +1081,10 @@ const booksContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   en: {
-    h2: 'Book Printing — Saddle-Stitch / Perfect Bound / Hardcover, From 1 Copy, Professional Typesetting',
+    // 2026-08-22 v3.13 T16: books 338 imps structure war
+    featuredSnippet: 'Saddle stitch booklets from 50 copies, 8-64 pages, US$1.84-7.36/pc at 500 pcs, 30-second AI instant quote, DHL global 2-4 day delivery. No plate fees.',
+    lastUpdated: '2026-08-22',
+    h2: 'Saddle Stitch Booklet / Catalog Printing / Book Printing / Exercise Book Printing / Booklet Printing — From 50 Copies, Instant Quote, 8-64 Pages',
     coreAdvantages: {
       title: 'Why Choose ZprintPro for Books?',
       items: [
@@ -1172,7 +1178,10 @@ const booksContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   ja: {
-    h2: '書籍印刷 — 中綴じ／無線綴じ／上製本、1冊から、プロ組版',
+    // 2026-08-22 v3.13 T16: books 338 imps structure war
+    featuredSnippet: '中綴じ冊子印刷 50冊から, 8-64ページ, ¥258-1030/個 (500冊), 30秒 AI 即時見積もり, DHL グローバル 2-4日. 製版費不要.',
+    lastUpdated: '2026-08-22',
+    h2: '中綴じ冊子 / カタログ印刷 / 書籍印刷 / 製本 / 絵本印刷 — 50冊から, 8-64ページ全規格, 30秒 AI 見積もり',
     coreAdvantages: {
       title: 'ZprintPro 書籍印刷の強み',
       items: [
@@ -3183,7 +3192,10 @@ const stickersContent: Record<string, CategoryLocaleContent> = {
 // =============================================================================
 const flyersContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
-    h2: '香港傳單印刷 — A5/A4/A3 彩印，100 張起訂，即日交貨',
+    // 2026-08-22 v3.13 T15: 宣傳單張 Pillar 首建 (5 词对齐 + 5 FAQ)
+    featuredSnippet: '宣傳單張印刷 100 張起, A5 單面 128g 銅版紙 HK$0.35/張起, 雙面 HK$0.45/張起, 3 個工作天交期, 即日特急可選. 免費設計模板 + DHL 全球 2-4 天.',
+    lastUpdated: '2026-08-22',
+    h2: '宣傳單張 / 宣傳單張印刷 / 傳單印刷 / 彩色單張 — A3-A6 全尺寸 100 張起印, 即日特急可選',
     coreAdvantages: {
       title: '核心競爭優勢',
       items: [
@@ -3277,7 +3289,10 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   en: {
-    h2: 'Flyer Printing — A5/A4/A3 Full Color, From 100 pcs, Same-Day Delivery',
+    // 2026-08-22 v3.13 T15: Flyer Pillar 首建
+    featuredSnippet: 'Flyer printing from 100 pcs, A5 single-side 128g coated paper US$0.045 each, double-side US$0.06 each, 3 business day turnaround, same-day rush available. Free design templates + DHL global 2-4 day delivery.',
+    lastUpdated: '2026-08-22',
+    h2: 'Flyer Printing / Leaflet Printing / Brochure Printing / Full Color Flyers — A6-A3 From 100 pcs, Same-Day Rush Available',
     coreAdvantages: {
       title: 'Why Choose ZprintPro for Flyers?',
       items: [
@@ -3371,7 +3386,10 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   ja: {
-    h2: 'チラシ印刷 — A5/A4/A3フルカラー、100枚から、即日納品',
+    // 2026-08-22 v3.13 T15: チラシ Pillar 首建
+    featuredSnippet: 'チラシ印刷 100枚から, A5 片面 128g コート紙 1枚 ¥6 から, 両面 ¥8 から, 3営業日納期, 即日特急対応. 無料デザインテンプレート + DHL グローバル 2-4日.',
+    lastUpdated: '2026-08-22',
+    h2: 'チラシ 印刷 / チラシ 作成 / フライヤー 印刷 / 両面カラーチラシ — A6-A3 100枚から, 即日特急対応',
     coreAdvantages: {
       title: 'ZprintPro チラシ印刷の強み',
       items: [
