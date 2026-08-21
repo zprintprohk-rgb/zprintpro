@@ -111,6 +111,10 @@ export function getWhatsAppLinkProps(
         import('@/lib/whatsapp-inquiry').then(({ trackWhatsappInquiry }) => {
           trackWhatsappInquiry({ locale, ctx });
         });
+        // 3) V3.6 双写 (008) - WhatsApp click 算询盘 (新增, 度量口径统一)
+        import('@/lib/quote-tracking').then(({ trackQuoteRequestFromWhatsApp }) => {
+          trackQuoteRequestFromWhatsApp('whatsapp-cta', locale, ctx);
+        });
       }
     },
   };

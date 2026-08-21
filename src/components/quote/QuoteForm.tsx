@@ -321,6 +321,24 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
       });
       if (error) throw error;
 
+      // V3.6 双写 (008) - 度量层, 跨 session 关联 + 归因 + 状态机
+      // 动态 import: fire-and-forget, 失败不影响主流程 (Supabase 已落库)
+      import('@/lib/quote-tracking').then(({ trackQuoteRequest }) => {
+        trackQuoteRequest({
+          source: 'quote-form',
+          locale,
+          customerName: data.name,
+          customerEmail: data.email,
+          customerPhone: data.phone,
+          productSlug: productSlug || undefined,
+          productName: productName,
+          category: data.category || undefined,
+          quantity: data.quantity || undefined,
+          size: data.size || undefined,
+          message: `[${sheet.ref}] ${data.message}${fileNote}`,
+        }).catch(() => { /* 度量失败不影响主流程 */ });
+      });
+
       // 2026-07-20 P0-3 fix v3: 自有 API 路由 + Resend 发信 (FormSubmit → outlook 被微软静默丢弃, 已证实)
       // fire-and-forget, 失败不影响主流程 (Supabase 已落库)
       try {
