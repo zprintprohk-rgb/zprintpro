@@ -486,6 +486,25 @@ const lpPaperBagPrintingGuide: BlogPostMeta = {
 };
 
 
+// 2026-08-22 v3.13 T16-1: saddle-stitch booklet printing guide (338 imps 重点战)
+const lpSaddleStitchBookletPrintingGuide: BlogPostMeta = {
+  slug: 'saddle-stitch-booklet-printing-guide',
+  categoryKey: 'printing',
+  source: 'daily',
+  date: '2026-08-22',
+  title: {
+    'zh-hk': '騎馬釘小冊子印刷完全指南：頁數、紙張、價格與低 MOQ 教學',
+    en: 'Saddle Stitch Booklet Printing Guide 2026: Pages, Paper, Pricing & Low MOQ',
+    ja: '中綴じ冊子印刷完全ガイド：ページ数・用紙・価格・低 MOQ | 50冊から対応',
+  },
+  excerpt: {
+    'zh-hk': '騎馬釘小冊子印刷 50 本起, 8-64 頁, HK$14-57/本 (500 本). 30 秒 AI 即時報價, DHL 全球 2-4 天. 頁數規則 + 自封面 vs 加厚封面 + 真實 2026 價格階梯 + vs Alibaba 黃頁三錘.',
+    en: 'Saddle stitch booklets from 50 copies, 8-64 pages, US$1.84-7.36/pc at 500 copies. 30-second instant quote, DHL global 2-4 day delivery. Page-count rules, self-cover vs separate cover, real 2026 pricing, three moats vs Alibaba yellow pages.',
+    ja: '中綴じ冊子印刷 50冊から, 8-64ページ, ¥258-1030/個 (500冊). 30秒 AI 即時見積もり, DHL グローバル 2-4日. ページ数ルール・自表紙 vs 別表紙・2026 実価格・Alibaba 黄頁 3つの差別化.',
+  },
+};
+
+
 const lpPosterPrintingGuide: BlogPostMeta = {
   slug: 'poster-printing-guide',
   categoryKey: 'printing',
@@ -1508,6 +1527,7 @@ export const blogPosts: BlogPostMeta[] = [
   lpFlyerPrintingGuide,
   lpFoodPackagingGuide,
   lpPaperBagPrintingGuide,
+  lpSaddleStitchBookletPrintingGuide,
   lpPosterPrintingGuide,
   lpPackagingBoxCustomGuide,
   // 2026-07-04 v2: 純文字深度博客上線
