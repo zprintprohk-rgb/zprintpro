@@ -3748,7 +3748,9 @@ const postersContent: Record<string, CategoryLocaleContent> = {
 // =============================================================================
 const paperBagsContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
-    h2: '香港紙袋印刷、紙袋訂製、訂做紙袋 — 白卡／牛皮／特種紙，100 個起訂，印刷紙袋品牌包裝首選',
+    featuredSnippet: '紙袋訂製 100 個起印，牛皮紙袋 HK$1.5/個起、白卡紙袋 HK$1.8/個起、珠光燙金 HK$3.5/個起。3-7 天交期，DHL 全球 2-4 天。',
+    lastUpdated: '2026-08-21',
+    h2: '印刷紙袋 / 紙袋印刷 / 紙袋訂製 / 訂做紙袋 — 白卡/牛皮/特種紙, 100 個起印, 品牌包裝首選',
     coreAdvantages: {
       title: '核心競爭優勢',
       items: [
@@ -3858,7 +3860,9 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   en: {
-    h2: 'Custom Paper Bags & Paper Bag Printing — White Card / Kraft / Specialty Paper, From 100 pcs, US Brand Packaging Essential',
+    featuredSnippet: 'Custom paper bags from 100 pcs, kraft bags from US$0.19 each, white card bags from US$0.23 each, pearl foil gift bags from US$0.45 each. 3-7 day production, DHL global 2-4 day delivery.',
+    lastUpdated: '2026-08-21',
+    h2: 'Custom Paper Bags / Paper Bag Printing / Kraft Paper Bags / Gift Bags — White Card / Kraft / Specialty Paper, From 100 pcs, US Brand Packaging Essential',
     coreAdvantages: {
       title: 'Why Choose ZprintPro for Paper Bags?',
       items: [
@@ -3966,7 +3970,9 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   ja: {
-    h2: '紙袋印刷・紙袋 オーダーメイド・クラフト紙袋 — 白カード／クラフト／特殊紙、100個から、ブランドパッケージの定番',
+    featuredSnippet: '紙袋オーダーメイド 100 個から、クラフト紙袋 1個 ¥22 から、白カード紙袋 1個 ¥28 から、パール箔押し 1個 ¥55 から。3-7日納期、DHL グローバル 2-4日配送。',
+    lastUpdated: '2026-08-21',
+    h2: '紙袋印刷 / 印刷 紙袋 / 紙袋 オーダーメイド / クラフト紙袋 — 白カード/クラフト/特殊紙、100個から、ブランドパッケージの定番',
     coreAdvantages: {
       title: 'ZprintPro 紙袋印刷の強み',
       items: [

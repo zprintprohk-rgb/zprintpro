@@ -2007,7 +2007,7 @@ export const products: Product[] = [
     slug: 'waterproof-stickers',
     category: 'stickers',
     category_slug: 'stickers',
-    name: '防水貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Waterproof Stickers | Waterproof & Die-Cut Stickers', nameJa: '防水ステッカー | 防水ステッカー / ダイカット', title_zh: '防水貼紙',
+    name: '防水貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Waterproof Stickers | Waterproof & Die-Cut Stickers', nameJa: '防水ステッカー | 防水ステッカー / ダイカット', title_zh: '防水貼紙 · 訂製',
     description: 'PVC材質防水貼紙，具有出色的防水、防曬、耐磨性能。適合戶外使用、產品標籤、車身貼紙等場景。', descriptionEn: 'PVC waterproof stickers with excellent water, UV, and abrasion resistance. Perfect for outdoor use, product labels, car decals. Free shipping over $99 USA · Free design mockup · 50 MOQ · Fast 4-day turnaround to USA small business & DTC brands.', descriptionJa: 'PVC防水ステッカー、優れた防水・UV・耐摩耗性。屋外使用、製品ラベル、車用ステッカーに最適。。全国送料込み・30枚から対応・最短3日出荷。D2Cブランド・小売店・食品業界向け。', description_zh: 'PVC材質防水貼紙，具有出色的防水、防曬、耐磨性能。適合戶外使用、產品標籤、車身貼紙等場景。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -2364,7 +2364,7 @@ export const products: Product[] = [
         optimizationRound: 1,
     category: 'stickers',
     category_slug: 'stickers',
-    name: '透明貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Transparent Stickers | Waterproof & Die-Cut Stickers', nameJa: '透明ステッカー | 防水ステッカー / ダイカット', title_zh: '透明貼紙',
+    name: '透明貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Transparent Stickers | Waterproof & Die-Cut Stickers', nameJa: '透明ステッカー | 防水ステッカー / ダイカット', title_zh: '透明貼紙 · 訂製',
     description: '透明PET材質，貼合後呈現無感效果，完美展現產品本身。適合化妝品、食品包裝、玻璃貼飾。 適配行業: 美妝護膚、食品酒類、飲品品牌、香水、玻璃容器、無標籤產品、電商禮盒.', descriptionEn: 'Transparent PET material creates invisible effect when applied. Perfect for cosmetics, food packaging, glass decoration. 适配行业: Beauty, Food & Beverage, Drinks brands, Perfume, Glass containers, No-label products, E-commerce gift boxes.', descriptionJa: '透明PET素材、貼り付け後無感効果。化粧品、食品包裝、ガラス裝飾に最適。 适配行业: 美容、食品・飲料、飲み物ブランド、香水、ガラス容器、ノーラベル商品、ECギフトボックス。', description_zh: '透明PET材質，貼合後呈現無感效果，完美展現產品本身。適合化妝品、食品包裝、玻璃貼飾。 適配行業: 美妝護膚、食品酒類、飲品品牌、香水、玻璃容器、無標籤產品、電商禮盒.',
     longDescription: `透明 PET 貼紙在玻璃瓶、塑膠瓶與透明包裝上能呈現「無底紙感」，僅保留圖案與文字，特別適合美妝精華、香水、飲品與禮盒封口貼。白墨托底可選，用於深色瓶身仍能還原飽和色彩。建議避免過細的反白線條，並為模切預留安全距離。可搭配啞膜減少指紋、光膜提升鮮豔度。與分類頁術語一致：透明 PET、局部 UV、覆膜、模切。香港零售與展會陳列常見應用包括試用裝標籤與限量貼紙。<h3>貼紙材質對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">材質</th><th class="p-2 text-center">透明度</th><th class="p-2 text-center">防水性</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用場景</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">透明 PET</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">瓶身標籤、禮盒封條</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">PVC 防水</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">戶外標籤、食品外賣</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">銅版紙</td><td class="p-2 text-center">★★</td><td class="p-2 text-center">★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">促銷貼紙、臨時標籤</td></tr></tbody></table><h3>貼紙材質對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">材質</th><th class="p-2 text-center">透明度</th><th class="p-2 text-center">防水性</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用場景</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">透明 PET</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">瓶身標籤、禮盒封條</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">PVC 防水</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">戶外標籤、食品外賣</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">銅版紙</td><td class="p-2 text-center">★★</td><td class="p-2 text-center">★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">促銷貼紙、臨時標籤</td></tr></tbody></table>
 
@@ -2544,7 +2544,7 @@ export const products: Product[] = [
     optimizationRound: 1,
     category: 'stickers',
     category_slug: 'stickers',
-    name: '可移貼紙(無殘膠) | 防水貼紙 / 異形貼紙', nameEn: 'Removable Stickers | Waterproof & Die-Cut Stickers', nameJa: 'はがせるステッカー | 防水ステッカー / ダイカット', title_zh: '可移除貼紙印刷 50張起印 玻璃不留膠 · 季節活動試用品短期推廣適配 | 智印港 ZprintPro',
+    name: '可移貼紙(無殘膠) | 防水貼紙 / 異形貼紙', nameEn: 'Removable Stickers | Waterproof & Die-Cut Stickers', nameJa: 'はがせるステッカー | 防水ステッカー / ダイカット', title_zh: '可移除貼紙印刷 50張起印 玻璃不留膠 · 季節活動試用品短期推廣適配 | 智印港 ZprintPro 訂製',
     description: '特殊背膠設計，移除後不留殘膠，保護貼附表面。適合車窗、玻璃櫥窗、短期展覽。 **适配行业**:季節性推廣、活動短期宣傳、試用品包裝、玻璃櫥窗裝飾、學校活動、餐廳當日貼紙、零售促銷 **適配行業**：餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動。', descriptionEn: 'Special adhesive design leaves no residue when removed. Perfect for car windows, glass displays, short-term exhibitions. **Best for**:seasonal campaigns, short-term event promo, sample packaging, glass window decoration, school activities, restaurant daily specials, retail promotions **Best for**: Food & Beverage, Retail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.', descriptionJa: '特殊粘着設計、剥がしても残りません。車窓、ガラス展示、短期展示会に最適。 **適用業界**:季節キャンペーン、短期イベントプロモーション、サンプル包装、ガラス窓装飾、学校行事、レストラン日替わり、小売プロモーション **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。', description_zh: '特殊背膠設計，移除後不留殘膠，保護貼附表面。適合車窗、玻璃櫥窗、短期展覽。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -2871,7 +2871,7 @@ export const products: Product[] = [
     optimizationRound: 1,
     category: 'stickers',
     category_slug: 'stickers',
-    name: '小批量貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Small Batch Stickers | Waterproof & Die-Cut Stickers', nameJa: '小ロットステッカー | 防水ステッカー / ダイカット', title_zh: '小批量貼紙',
+    name: '小批量貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Small Batch Stickers | Waterproof & Die-Cut Stickers', nameJa: '小ロットステッカー | 防水ステッカー / ダイカット', title_zh: '小批量貼紙 · 訂製',
     description: '最低A4尺寸起印，無需大量庫存壓力。適合初創品牌、活動宣傳、個人創作。 适配行业: 文創IP、同人周邊、餐飲、零售品牌活動、初創電商、測試樣本、活動贈品.', descriptionEn: 'Minimum A4 size order, no bulk inventory pressure. Perfect for startups, event promotion, personal creations. 适配行业: Indie IP, Doujin creators, Food & Beverage, Retail events, Startup e-commerce, Test samples, Promotional gifts.', descriptionJa: '最小A4サイズから、大量在庫の心配なし。スタートアップ、イベント宣伝、個人創作に最適。 适配行业: インディーIP、同人創作、飲食、小売イベント、スタートアップEC、テストサンプル、プロモーションギフト.', description_zh: '最低A4尺寸起印，無需大量庫存壓力。適合初創品牌、活動宣傳、個人創作。 适配行业: 文創IP、同人周邊、餐飲、零售品牌活動、初創電商、測試樣本、活動贈品.',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -3591,7 +3591,7 @@ export const products: Product[] = [
     optimizationRound: 2,
     category: 'stickers',
     category_slug: 'stickers',
-    name: '燙金貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Foil Stickers | Waterproof & Die-Cut Stickers', nameJa: '箔押しステッカー | 防水ステッカー / ダイカット', title_zh: '燙金貼紙',
+    name: '燙金貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Foil Stickers | Waterproof & Die-Cut Stickers', nameJa: '箔押しステッカー | 防水ステッカー / ダイカット', title_zh: '燙金貼紙 · 訂製',
     description: '燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮品包裝、VIP標識。 适配行业: 美妝護膚、食品酒類、零售精品、品牌活動、禮品包裝、VIP標識、跨境電商. **適配行業**: 餐飲外賣/美妝護膚/茶飲食品/寵物食品/母嬰/服裝/禮品包裝.', descriptionEn: 'Foil stamping gives stickers premium quality feel. Perfect for luxury product labels, gift packaging, VIP badges. Gold/silver foil · 50 MOQ · Free design proof · Fast 4-day turnaround. Perfect for beauty brands, wedding favors, premium packaging. **Best for**: beauty & skincare / food & beverage / tea brands / pet food / baby & maternity / apparel / gift packaging.', descriptionJa: '箔押し加工でステッカーに高級感。ラグジュアリー商品ラベル、ギフトパッケージ、VIPバッジに最適。ゴールド/シルバーホイル・50枚から・無料デザイン確認・4日仕上げ。 beauty & skincare / food & beverage / tea brands / pet food / baby & maternity / apparel / gift packaging.', description_zh: '燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮品包裝、VIP標識。 适配行业: 美妝護膚、食品酒類、零售精品、品牌活動、禮品包裝、VIP標識、跨境電商. **適配行業**: 餐飲外賣/美妝護膚/茶飲食品/寵物食品/母嬰/服裝/禮品包裝.',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -5785,8 +5785,8 @@ export const products: Product[] = [
     optimizationRound: 2,
     category: 'paper-bags',
     category_slug: 'paper-bags',
-    name: '手挽紙袋 | 紙袋 / 牛皮紙袋 / 手提袋', nameEn: 'Handle Bags | Paper Bags & Kraft Bags', nameJa: '手提げ紙袋 | 紙袋 / クラフト紙袋 / ハンドル', title_zh: '手挽紙袋 · 餐飲零售日常大量採購',
-    description: '堅固手挽設計，承重能力強。適合購物中心、超市。適配行業: 餐廳外賣、咖啡店、烘焙坊、零售店、便利店、品牌快閃、展會攤位、活動禮品袋。', descriptionEn: 'Sturdy handle design, strong load-bearing capacity. Perfect for shopping centers, supermarkets., ISO 9001:2015 certified quality management system Best for: restaurant takeout, cafes, bakeries, retail stores, convenience stores, pop-up shops, trade show booths, event favor bags.', descriptionJa: '頑丈な持ち手デザイン、強い耐荷重能力。ショッピングセンター、スーパーに最適。 適用業界: レストラン テイクアウト、カフェ、ベーカリー、小売店、コンビニ、ブランド ポップアップ、展示会ブース、イベント ノベルティ バッグ。', description_zh: '堅固手挽設計，承重能力強。適合購物中心、超市。',
+    name: '手挽紙袋 | 紙袋 / 牛皮紙袋 / 手提袋', nameEn: 'Handle Bags | Paper Bags & Kraft Bags', nameJa: '手提げ紙袋 | 紙袋 / クラフト紙袋 / ハンドル', title_zh: '手挽紙袋訂製 · 邊度買紙袋 餐飲零售採購首選',
+    description: '堅固手挽設計，承重能力強，邊度買紙袋首選：餐廳、咖啡店、烘焙坊、零售店。適合購物中心、超市。紙袋訂製、訂做紙袋、邊度買紙袋 WhatsApp 30 秒報價。適配行業: 餐廳外賣、咖啡店、烘焙坊、零售店、便利店、品牌快閃、展會攤位、活動禮品袋。', descriptionEn: 'Sturdy handle design, strong load-bearing capacity. Perfect for shopping centers, supermarkets., ISO 9001:2015 certified quality management system Best for: restaurant takeout, cafes, bakeries, retail stores, convenience stores, pop-up shops, trade show booths, event favor bags.', descriptionJa: '頑丈な持ち手デザイン、強い耐荷重能力。ショッピングセンター、スーパーに最適。 適用業界: レストラン テイクアウト、カフェ、ベーカリー、小売店、コンビニ、ブランド ポップアップ、展示会ブース、イベント ノベルティ バッグ。', description_zh: '堅固手挽設計，承重能力強。適合購物中心、超市。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
 <table>
@@ -10762,7 +10762,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     optimizationRound: 1,
     category: 'red-packets',
     category_slug: 'red-packets',
-    name: '浮雕利是封 | 利是封 / 春聯 / 燙金', nameEn: 'Embossed Red Packets | CNY Red Packets & Foil', nameJa: 'エンボスポチ袋 | 紅包 / 旧正月 / 箔押し', title_zh: '浮雕利是封',
+    name: '浮雕利是封 | 利是封 / 春聯 / 燙金', nameEn: 'Embossed Red Packets | CNY Red Packets & Foil', nameJa: 'エンボスポチ袋 | 紅包 / 旧正月 / 箔押し', title_zh: '浮雕利是封 · 訂製',
     description: '浮雕工藝，立體觸感，高檔奢華。展現品牌誠意，適合VIP客戶、高端送禮。 适配行业: 婚慶嫁娶、春節賀年、酒店迎賓、銀行公關、品牌活動、茶葉禮盒、母嬰品牌.', descriptionEn: 'Embossed craftsmanship, dimensional texture, luxurious feel. 适配行业: Wedding, Lunar New Year, Hotel welcome, Bank PR, Brand events, Tea gift, Baby brands.', descriptionJa: 'エンボス加工、立体的な触感、豪華な質感。 适配行业: ウェディング、春節、ホテル、バンクPR、ブランドイベント、茶ギフト、ベビー.', description_zh: '浮雕工藝，立體觸感，高檔奢華。展現品牌誠意，適合VIP客戶、高端送禮。 适配行业: 婚慶嫁娶、春節賀年、酒店迎賓、銀行公關、品牌活動、茶葉禮盒、母嬰品牌.',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -11158,7 +11158,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'cartoon-red-packets',
     category: 'red-packets',
     category_slug: 'red-packets',
-    name: '卡通利是封 | 利是封 / 春聯 / 燙金', nameEn: 'Cartoon Red Packets | CNY Red Packets & Foil', nameJa: 'キャラクターポチ袋 | 紅包 / 旧正月 / 箔押し', title_zh: '卡通利是封',
+    name: '卡通利是封 | 利是封 / 春聯 / 燙金', nameEn: 'Cartoon Red Packets | CNY Red Packets & Foil', nameJa: 'キャラクターポチ袋 | 紅包 / 旧正月 / 箔押し', title_zh: '卡通利是封 · 訂製',
     description: '可愛卡通設計，深受年輕人喜愛。適合親子品牌、教育機構、兒童產品。', descriptionEn: 'Cute cartoon design, loved by young people.', descriptionJa: 'かわいいキャラクターデザイン、若者に人気。', description_zh: '可愛卡通設計，深受年輕人喜愛。適合親子品牌、教育機構、兒童產品。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -11354,7 +11354,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'eco-red-packets',
     category: 'red-packets',
     category_slug: 'red-packets',
-    name: '環保利是封 | 利是封 / 春聯 / 燙金', nameEn: 'Eco Red Packets | CNY Red Packets & Foil', nameJa: 'エコポチ袋 | 紅包 / 旧正月 / 箔押し', title_zh: '環保利是封',
+    name: '環保利是封 | 利是封 / 春聯 / 燙金', nameEn: 'Eco Red Packets | CNY Red Packets & Foil', nameJa: 'エコポチ袋 | 紅包 / 旧正月 / 箔押し', title_zh: '環保利是封 · 訂製',
     description: '採用環保紙張和油墨，可持續發展理念。適合注重環保的企業。', descriptionEn: 'Eco-friendly paper and ink, sustainable development concept.', descriptionJa: '環境に優しい紙とインク、持続可能な開発の理念。', description_zh: '採用環保紙張和油墨，可持續發展理念。適合注重環保的企業。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -11552,7 +11552,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'large-red-packets',
     category: 'red-packets',
     category_slug: 'red-packets',
-    name: '大號利是封 | 利是封 / 春聯 / 燙金', nameEn: 'Large Red Packets | CNY Red Packets & Foil', nameJa: '大判ポチ袋 | 紅包 / 旧正月 / 箔押し', title_zh: '大號利是封',
+    name: '大號利是封 | 利是封 / 春聯 / 燙金', nameEn: 'Large Red Packets | CNY Red Packets & Foil', nameJa: '大判ポチ袋 | 紅包 / 旧正月 / 箔押し', title_zh: '大號利是封 · 訂製',
     description: '加大尺寸，可放入更多鈔票或禮品卡。實用大氣，送禮更有面子。', descriptionEn: 'Larger size, can hold more cash or gift cards.', descriptionJa: '大きなサイズ、より多くの現金やギフトカードを入れられます。', description_zh: '加大尺寸，可放入更多鈔票或禮品卡。實用大氣，送禮更有面子。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -11751,7 +11751,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'wall-calendars',
     category: 'calendars',
     category_slug: 'calendars',
-    name: '掛牆年曆 | 桌曆 / 掛曆 / 2027年曆', nameEn: 'Wall Calendars | Wall & Desk Calendars 2027', nameJa: '壁掛けカレンダー | 卓上カレンダー / 壁掛け 2027', title_zh: '掛牆年曆',
+    name: '掛牆年曆 | 桌曆 / 掛曆 / 2027年曆', nameEn: 'Wall Calendars | Wall & Desk Calendars 2027', nameJa: '壁掛けカレンダー | 卓上カレンダー / 壁掛け 2027', title_zh: '掛牆年曆 · 訂製',
     description: '標準A3或A2掛牆年曆，13頁設計（封面+12個月）。適合家庭、辦公室使用，全年品牌曝光。', descriptionEn: 'Standard A3 or A2 wall calendars, 13-page design. Perfect for home and office use.', descriptionJa: '標準A3またはA2壁掛けカレンダー、13ページデザイン。家庭やオフィスに最適。', description_zh: '標準A3或A2掛牆年曆，13頁設計（封面+12個月）。適合家庭、辦公室使用，全年品牌曝光。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -11937,7 +11937,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'desk-calendars',
     category: 'calendars',
     category_slug: 'calendars',
-    name: '座檯年曆 | 桌曆 / 掛曆 / 2027年曆', nameEn: 'Desk Calendars | Wall & Desk Calendars 2027', nameJa: '卓上カレンダー | 卓上カレンダー / 壁掛け 2027', title_zh: '座檯年曆',
+    name: '座檯年曆 | 桌曆 / 掛曆 / 2027年曆', nameEn: 'Desk Calendars | Wall & Desk Calendars 2027', nameJa: '卓上カレンダー | 卓上カレンダー / 壁掛け 2027', title_zh: '座檯年曆 · 訂製',
     description: '三角形座檯設計，穩固美觀。適合辦公桌擺放，每日品牌接觸。', descriptionEn: 'Triangular desk design, stable and beautiful. Perfect for office desk display.', descriptionJa: '三角形の卓上デザイン、安定して美しい。オフィスデスクに最適。', description_zh: '三角形座檯設計，穩固美觀。適合辦公桌擺放，每日品牌接觸。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -12333,7 +12333,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'mini-calendars',
     category: 'calendars',
     category_slug: 'calendars',
-    name: '迷你年曆 | 桌曆 / 掛曆 / 2027年曆', nameEn: 'Mini Calendars | Wall & Desk Calendars 2027', nameJa: 'ミニカレンダー | 卓上カレンダー / 壁掛け 2027', title_zh: '迷你年曆',
+    name: '迷你年曆 | 桌曆 / 掛曆 / 2027年曆', nameEn: 'Mini Calendars | Wall & Desk Calendars 2027', nameJa: 'ミニカレンダー | 卓上カレンダー / 壁掛け 2027', title_zh: '迷你年曆 · 訂製',
     description: '小巧便攜，可放入錢包或口袋。創意禮品，年輕人喜愛。', descriptionEn: 'Compact and portable, fits in wallet or pocket.', descriptionJa: 'コンパクトで持ち運び可能、財布やポケットに入ります。', description_zh: '小巧便攜，可放入錢包或口袋。創意禮品，年輕人喜愛。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -12545,7 +12545,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'photo-frame-calendars',
     category: 'calendars',
     category_slug: 'calendars',
-    name: '相框年曆 | 桌曆 / 掛曆 / 2027年曆', nameEn: 'Photo Frame Calendars | Wall & Desk Calendars 2027', nameJa: 'フォトフレームカレンダー | 卓上カレンダー / 壁掛け 2027', title_zh: '相框年曆',
+    name: '相框年曆 | 桌曆 / 掛曆 / 2027年曆', nameEn: 'Photo Frame Calendars | Wall & Desk Calendars 2027', nameJa: 'フォトフレームカレンダー | 卓上カレンダー / 壁掛け 2027', title_zh: '相框年曆 · 訂製',
     description: '結合相框功能，可替換照片。實用美觀，家庭必備。', descriptionEn: 'Combined photo frame function, photos can be replaced.', descriptionJa: 'フォトフレーム機能付き、寫真を交換可能。', description_zh: '結合相框功能，可替換照片。實用美觀，家庭必備。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -12792,7 +12792,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'magnetic-calendars',
     category: 'calendars',
     category_slug: 'calendars',
-    name: '磁石年曆 | 桌曆 / 掛曆 / 2027年曆', nameEn: 'Magnetic Calendars | Wall & Desk Calendars 2027', nameJa: 'マグネットカレンダー | 卓上カレンダー / 壁掛け 2027', title_zh: '磁石年曆',
+    name: '磁石年曆 | 桌曆 / 掛曆 / 2027年曆', nameEn: 'Magnetic Calendars | Wall & Desk Calendars 2027', nameJa: 'マグネットカレンダー | 卓上カレンダー / 壁掛け 2027', title_zh: '磁石年曆 · 訂製',
     description: '磁石背膠，可貼於冰箱等金屬表面。每日多次接觸，品牌曝光率高。', descriptionEn: 'Magnetic backing, can stick to refrigerator and other metal surfaces.', descriptionJa: 'マグネット背面、冷蔵庫などの金属面に貼付可能。', description_zh: '磁石背膠，可貼於冰箱等金屬表面。每日多次接觸，品牌曝光率高。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -13044,7 +13044,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'pvc-menus',
     category: 'menus',
     category_slug: 'menus',
-    name: 'PVC餐牌 | 餐牌 / 菜單 / 防水PVC', nameEn: 'PVC Menus | Restaurant Menus & PVC', nameJa: 'PVCメニュー | レストランメニュー / 防水', title_zh: 'PVC 餐牌印刷 · 防水防油可水洗 | 餐廳/咖啡店/酒吧菜單 | 智印港 ZprintPro',
+    name: 'PVC餐牌 | 餐牌 / 菜單 / 防水PVC', nameEn: 'PVC Menus | Restaurant Menus & PVC', nameJa: 'PVCメニュー | レストランメニュー / 防水', title_zh: 'PVC 餐牌印刷 · 防水防油可水洗 | 餐廳/咖啡店/酒吧菜單 | 智印港 ZprintPro · 訂製',
     description: '防水防油PVC材質，易清潔耐用。餐廳、咖啡店首選。**適配行業**:餐廳、咖啡店、酒吧、茶餐廳、火鍋店、居酒屋、酒店餐廳、婚宴酒樓。', descriptionEn: 'Waterproof and oil-resistant PVC material, easy to clean and durable. **Best for**: restaurants, cafes, bars, cha chaan teng, hot pot, izakaya, hotel restaurants, wedding banquet halls.', descriptionJa: '防水・耐油性PVC素材、お手入れ簡単で耐久性あり。**適用業界**:レストラン、カフェ、バー、茶餐廳 (中華風食堂)、火鍋店、居酒屋、ホテルレストラン、ブライダル宴会。', description_zh: '防水防油PVC材質，易清潔耐用。餐廳、咖啡店首選。',
     optimizedAt: '2026-07-08',
     optimizationRound: 1,
@@ -13229,7 +13229,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'laminated-menus',
     category: 'menus',
     category_slug: 'menus',
-    name: '過膠餐牌 | 餐牌 / 菜單 / 防水PVC', nameEn: 'Laminated Menus | Restaurant Menus & PVC', nameJa: 'ラミネートメニュー | レストランメニュー / 防水', title_zh: '過膠餐牌',
+    name: '過膠餐牌 | 餐牌 / 菜單 / 防水PVC', nameEn: 'Laminated Menus | Restaurant Menus & PVC', nameJa: 'ラミネートメニュー | レストランメニュー / 防水', title_zh: '過膠餐牌 · 訂製',
     description: '紙質過膠處理，防水耐用且成本較低。經濟實惠之選。', descriptionEn: 'Paper with lamination, waterproof and durable at lower cost.', descriptionJa: 'ラミネート加工紙、防水で耐久性がありコストも低い。', description_zh: '紙質過膠處理，防水耐用且成本較低。經濟實惠之選。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -13433,7 +13433,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'hardcover-menus',
     category: 'menus',
     category_slug: 'menus',
-    name: '精裝餐牌 | 餐牌 / 菜單 / 防水PVC', nameEn: 'Hardcover Menus | Restaurant Menus & PVC', nameJa: '高級メニュー | レストランメニュー / 防水', title_zh: '精裝餐牌',
+    name: '精裝餐牌 | 餐牌 / 菜單 / 防水PVC', nameEn: 'Hardcover Menus | Restaurant Menus & PVC', nameJa: '高級メニュー | レストランメニュー / 防水', title_zh: '精裝餐牌 · 訂製',
     description: '硬殼精裝，高檔大氣。適合高級餐廳、酒店。', descriptionEn: 'Hardcover binding, elegant and grand. Perfect for fine dining restaurants, hotels.', descriptionJa: '上製本裝丁、エレガントで格式高い。高級レストラン、ホテルに最適。', description_zh: '硬殼精裝，高檔大氣。適合高級餐廳、酒店。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -13638,7 +13638,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'drink-menus',
     category: 'menus',
     category_slug: 'menus',
-    name: '酒水牌 | 餐牌 / 菜單 / 防水PVC', nameEn: 'Drink Menus | Restaurant Menus & PVC', nameJa: 'ドリンクメニュー | レストランメニュー / 防水', title_zh: '酒水牌',
+    name: '酒水牌 | 餐牌 / 菜單 / 防水PVC', nameEn: 'Drink Menus | Restaurant Menus & PVC', nameJa: 'ドリンクメニュー | レストランメニュー / 防水', title_zh: '酒水牌 · 訂製',
     description: '專為酒水設計，可立式或手持。酒吧、餐廳必備。', descriptionEn: 'Specially designed for drinks, can be standing or handheld.', descriptionJa: 'ドリンク専用設計、立てかけまたは手持ち可能。', description_zh: '專為酒水設計，可立式或手持。酒吧、餐廳必備。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -13840,7 +13840,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'disposable-menus',
     category: 'menus',
     category_slug: 'menus',
-    name: '一次性餐牌 | 餐牌 / 菜單 / 防水PVC', nameEn: 'Disposable Menus | Restaurant Menus & PVC', nameJa: '使い捨てメニュー | レストランメニュー / 防水', title_zh: '一次性餐牌',
+    name: '一次性餐牌 | 餐牌 / 菜單 / 防水PVC', nameEn: 'Disposable Menus | Restaurant Menus & PVC', nameJa: '使い捨てメニュー | レストランメニュー / 防水', title_zh: '一次性餐牌 · 訂製',
     description: '經濟紙質，適合快餐店、外賣店。可頻繁更換內容。', descriptionEn: 'Economical paper, perfect for fast food and takeaway shops.', descriptionJa: '経済的な紙、ファストフードやテイクアウト店に最適。', description_zh: '經濟紙質，適合快餐店、外賣店。可頻繁更換內容。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -20573,7 +20573,7 @@ longDescriptionEn: `<h3>Postcard Sets — Washi-Style Art Cards for Character & 
     sku_code: 'WI-005',
     slug: 'wedding-menu-cards',
 
-    title_zh: '婚禮菜單卡',
+    title_zh: '婚禮菜單卡 · 訂製',
     description_zh: '婚禮菜單卡 100 套起印,300g 銅版紙 / 棉紙 + 燙金 + 模切,4 折或對摺。順豐本地 + DHL 全球。**適配行業**: 婚宴菜單/西式婚禮/海...',
     basePrice: 1.15,
     weight_score: 50,
