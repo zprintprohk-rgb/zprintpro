@@ -81,7 +81,7 @@ export type CategorySeoData = Record<string, {
 // =============================================================================
 const packagingContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
-    featuredSnippet: '包裝盒訂製 100 個起印，白卡彩盒 HK$0.03/個起（拼版免刀模費），坑盒卡盒天地蓋全盒型，8-15 天交貨，DHL 全球 2-4 天。',
+    featuredSnippet: '包裝盒訂製 100 個起印, 白卡彩盒 HK$0.03/個起 (拼版免刀模費, 對比 e-print HK$300-800 刀模費行業慣例), 坑盒卡盒天地蓋全盒型 8 檔標準尺寸, FDA 食品級 + FSC 認證可選, 8-15 天交期, DHL 全球 2-4 天. 香港本地 1-2 個工作天順豐直送, 30 秒 AI 即時報價. 跨境電商 + 零售精品 + 美妝護膚 + 餐飲外賣 + 婚慶 5 大場景覆蓋, 100-10,000 本彈性 MOQ.',
     lastUpdated: '2026-08-22',
     h2: '包裝盒訂製 / 包裝盒印刷 / 紙盒訂製 / 紙盒印刷 / 禮盒訂做 — 100個起訂，白卡彩盒坑盒卡盒全盒型，免費刀模，3天交貨',
     coreAdvantages: {
@@ -985,7 +985,7 @@ const bannersContent: Record<string, CategoryLocaleContent> = {
 const booksContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
     // 2026-08-22 v3.13 T16: books 338 imps 结构战 - 5 词对齐 + 5 FAQ
-    featuredSnippet: '騎馬釘小冊子印刷 50 本起, 8-64 頁, HK$14-57/本 (500 本), 30 秒 AI 即時報價, DHL 全球 2-4 天。免製版費。',
+    featuredSnippet: '騎馬釘小冊子印刷 50 本起, 8-64 頁 (4 的倍數, 超過 64 頁轉膠裝), HK$14-57/本 (500 本), 30 秒 AI 即時報價, DHL 全球 2-4 天, 免製版費. 自封面 (成本低) vs 加厚封面 250g (+HK$0.15-0.30/本, 品牌 catalog 首選). 對比 Alibaba 黃頁 500+ MOQ + 2 天郵件詢盤 + 3-4 週海運, 我方三錘碾壓. 8-32 頁品牌 catalog + 32-48 頁雜誌/活動場刊 + 48-64 頁 NGO 報告 + 非洲中東東南亞教育局批量採購 (50-200 本試印友好).',
     lastUpdated: '2026-08-22',
     h2: '騎馬釘小冊子 / 騎馬釘書刊 / 騎馬釘印刷 / 印書 / 繪本印製 — 50 本起印, 8-64 頁全規格, 30 秒 AI 報價',
     coreAdvantages: {
@@ -1082,7 +1082,7 @@ const booksContent: Record<string, CategoryLocaleContent> = {
   },
   en: {
     // 2026-08-22 v3.13 T16: books 338 imps structure war
-    featuredSnippet: 'Saddle stitch booklets from 50 copies, 8-64 pages, US$1.84-7.36/pc at 500 pcs, 30-second AI instant quote, DHL global 2-4 day delivery. No plate fees.',
+    featuredSnippet: 'Saddle stitch booklets from 50 copies, 8-64 pages (multiples of 4, switch to perfect binding beyond 64), US$1.84-7.36/pc at 500 copies, 30-second instant AI quote, DHL global 2-4 day delivery, no plate fees. Self-cover (cost-effective) vs separate cover 250gsm (+US$0.15-0.30/pc for brand catalogs). Three moats vs Alibaba yellow pages: 50-copy MOQ vs 500+, 30s quote vs 2-day email, DHL 2-4d vs 3-4 week sea freight. Use cases: 8-32 page brand catalogs, 32-48 page magazines, 48-64 page NGO reports, Africa/Middle East/Southeast Asia education ministry bulk orders.',
     lastUpdated: '2026-08-22',
     h2: 'Saddle Stitch Booklet / Catalog Printing / Book Printing / Exercise Book Printing / Booklet Printing — From 50 Copies, Instant Quote, 8-64 Pages',
     coreAdvantages: {
@@ -1179,7 +1179,7 @@ const booksContent: Record<string, CategoryLocaleContent> = {
   },
   ja: {
     // 2026-08-22 v3.13 T16: books 338 imps structure war
-    featuredSnippet: '中綴じ冊子印刷 50冊から, 8-64ページ, ¥258-1030/個 (500冊), 30秒 AI 即時見積もり, DHL グローバル 2-4日. 製版費不要.',
+    featuredSnippet: '中綴じ冊子印刷 50冊から, 8-64ページ (4の倍数, 64超は無線綴じ), ¥258-1030/個 (500冊), 30秒 AI 即時見積もり, DHL グローバル 2-4日, 製版費不要. 自表紙 (低コスト) vs 別表紙 250g (+¥8-25/個, ブランドカタログ向). Alibaba 黄頁 3つの差別化: 50冊 MOQ vs 500+, 30秒見積もり vs 2日メール, DHL 2-4日 vs 3-4週船便. 用途: 8-32ページ カタログ, 32-48ページ 雑誌, 48-64ページ NGO レポート, アフリカ/中東/東南アジア 教育局大量発注 (50-200冊 試印可).',
     lastUpdated: '2026-08-22',
     h2: '中綴じ冊子 / カタログ印刷 / 書籍印刷 / 製本 / 絵本印刷 — 50冊から, 8-64ページ全規格, 30秒 AI 見積もり',
     coreAdvantages: {
@@ -1904,7 +1904,7 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
 const calendarsContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
     // 2026-08-21 v3.13 T14: 月曆 5 词对齐 + 2027 时效 + 5 FAQ (季节窗最急)
-    featuredSnippet: '月曆印刷 100 本起訂製, 2027 年曆 9 月早鳥, 掛曆 HK$18/本、檯曆 HK$9/本、年曆卡 HK$3/張。免費設計 + 燙金封面, DHL 全球 2-4 天。',
+    featuredSnippet: '月曆印刷 100 本起訂製, 掛曆 HK$18/本 / 檯曆 HK$9/本 / 年曆卡 HK$3/張, 2027 年曆 9 月早鳥享 9 折, 免費設計 + 燙金封面 (+HK$0.5-1.5/本), 5-7 天交期, DHL 全球 2-4 天. 8 種規格 (掛牆 A2 420×594 / A3 297×420 / 座枱 A5 148×210 三角 / 細卡 85×140 磁貼), 適用企業禮品 / 銀行保險 / 房地產 / 教育培訓旺季採購 (8-10 月落單 → 9-12 月交貨).',
     lastUpdated: '2026-08-21',
     h2: '月曆印刷 / 月曆訂製 / 訂制月曆 / 印月曆 / 2027 月曆 — 座枱曆/掛牆曆/年曆卡 100 本起訂, 企業禮品 9 月旺季前夜',
     coreAdvantages: {
@@ -2003,7 +2003,7 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   en: {
-    featuredSnippet: 'Calendar printing from 100 pcs, 2027 calendars ready Sep, wall US$2.30/pc, desk US$1.15/pc, card US$0.40/pc. Free design + foil cover, DHL global 2-4 day delivery.',
+    featuredSnippet: 'Calendar printing from 100 copies, wall calendars US$2.30/pc / desk US$1.15/pc / card calendars US$0.40/pc, 2027 calendar Sep early-bird 10% off, free design + foil cover (+US$0.06-0.20/pc), 5-7 day production, DHL global 2-4 day. 8 standard sizes (wall A2 420×594 / A3 297×420 / desk A5 148×210 triangular / card 85×140 magnet), corporate gifting / bank / real estate / education Sep-Oct order for Sep-Dec delivery.',
     lastUpdated: '2026-08-21',
     h2: 'Calendar Printing / Custom Calendars / Print Calendars / 2027 Calendars / Wall Calendars — Desk/Wall/Card From 100 pcs, Corporate Gifting Sep 9-11 Peak Season',
     coreAdvantages: {
@@ -3215,7 +3215,7 @@ const stickersContent: Record<string, CategoryLocaleContent> = {
 const flyersContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
     // 2026-08-22 v3.13 T15: 宣傳單張 Pillar 首建 (5 词对齐 + 5 FAQ)
-    featuredSnippet: '宣傳單張印刷 100 張起, A5 單面 128g 銅版紙 HK$0.35/張起, 雙面 HK$0.45/張起, 3 個工作天交期, 即日特急可選. 免費設計模板 + DHL 全球 2-4 天.',
+    featuredSnippet: '宣傳單張印刷 100 張起印, A5 單面 128g 銅版紙 HK$0.35/張起, 雙面 HK$0.45/張起 (雙面 +HK$0.10/張), 3 個工作天交期, 即日特急可選 (+50% 費用). 6 種尺寸 (A6 105×148 / A5 148×210 / A4 210×297 / A3 297×420 / DL 99×210 / 三摺 折頁), 3 種紙材 (128g 銅版/200g 啞粉/250g 卡紙), 4 種工藝 (光膜/啞膜/局部 UV/燙金), 免費設計模板, DHL 全球 2-4 天. 適用餐廳外賣/零售精品/地產/教育培訓/婚慶/品牌活動.',
     lastUpdated: '2026-08-22',
     h2: '宣傳單張 / 宣傳單張印刷 / 傳單印刷 / 彩色單張 — A3-A6 全尺寸 100 張起印, 即日特急可選',
     coreAdvantages: {
@@ -3805,7 +3805,7 @@ const postersContent: Record<string, CategoryLocaleContent> = {
 // =============================================================================
 const paperBagsContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
-    featuredSnippet: '紙袋訂製 100 個起印，牛皮紙袋 HK$1.5/個起、白卡紙袋 HK$1.8/個起、珠光燙金 HK$3.5/個起。3-7 天交期，DHL 全球 2-4 天。',
+    featuredSnippet: '紙袋印刷訂製 100 個起印, 牛皮紙袋 HK$1.5/個起 (200g 自帶環保文創感) / 白卡紙袋 HK$1.8/個起 (250g 印刷精細) / 珠光燙金升級款 HK$3.5/個起 (婚禮回禮適用), 3-7 天交期, DHL 全球 2-4 天. 香港順豐 1-2 個工作天直送, 5 款手挽 (扭繩/扁平/打孔/絲帶/棉繩). 全材質全尺寸 (小型 200×250×80 / 中型 280×350×100 / 大型 350×450×120 / 特大型 450×550×150 mm), 適用零售精品/咖啡烘焙/婚禮回禮/品牌活動.',
     lastUpdated: '2026-08-21',
     h2: '印刷紙袋 / 紙袋印刷 / 紙袋訂製 / 訂做紙袋 — 白卡/牛皮/特種紙, 100 個起印, 品牌包裝首選',
     coreAdvantages: {
@@ -3917,7 +3917,7 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   en: {
-    featuredSnippet: 'Custom paper bags from 100 pcs, kraft bags from US$0.19 each, white card bags from US$0.23 each, pearl foil gift bags from US$0.45 each. 3-7 day production, DHL global 2-4 day delivery.',
+    featuredSnippet: 'Custom paper bag printing from 100 pcs, kraft paper bags from US$0.19 each (200g eco-friendly kraft), white card bags from US$0.23 each (250g premium print), pearl foil gift bags from US$0.45 each (wedding favor upgrade), 3-7 day production, DHL global 2-4 day. 5 handle options (twisted rope/flat ribbon/die-cut/satin/cotton). Full size range (small 200×250×80 / medium 280×350×100 / large 350×450×120 / extra large 450×550×150 mm) for retail boutique, cafe, wedding favor, brand activation.',
     lastUpdated: '2026-08-21',
     h2: 'Custom Paper Bags / Paper Bag Printing / Kraft Paper Bags / Gift Bags — White Card / Kraft / Specialty Paper, From 100 pcs, US Brand Packaging Essential',
     coreAdvantages: {

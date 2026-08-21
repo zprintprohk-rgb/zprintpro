@@ -120,3 +120,42 @@ A: ISO 9001 品质管理 / FDA 21 CFR 食品级内衬 (化妆品/食品包装) /
 **最后更新**: 2026-08-17 (K3 CEO 战略定调: GEO 6 件套 + FAQ 段升级)
 **作者**: 智印港包装工程团队 (15+ 年印刷经验, 服务 100+ 国家 15,000+ 客户)
 **License**: 智印港保留所有权利
+
+
+## v3.11-13 新增路径 (2026-08-21/22 上线)
+- /zh-hk/category/calendars/ - 月曆印刷 100 本起, 2027 年曆 9 月早鳥, 掛曆 HK$18/本
+- /en/category/calendars/ - Calendar printing from 100 copies, 2027 calendars ready Sep
+- /ja/category/calendars/ - カレンダー印刷 100冊から, 2027年カレンダー 9月先行
+- /zh-hk/category/flyers/ - 宣傳單張印刷 100 張起, A5 銅版紙 HK$0.35/張
+- /en/category/flyers/ - Flyer printing from 100 pcs, A5 coated paper US$0.045
+- /ja/category/flyers/ - チラシ印刷 100枚から, A5 コート紙 ¥6
+- /zh-hk/category/books/ - 騎馬釘小冊子印刷 50 本起, 8-64 頁, HK$14-57/本
+- /en/category/books/ - Saddle stitch booklets from 50 copies, 8-64 pages, US$1.84-7.36/pc
+- /ja/category/books/ - 中綴じ冊子印刷 50冊から, 8-64ページ, ¥258-1030/個
+- /zh-hk/category/envelopes/ - 信封印刷訂製 100 個起, 免費打樣, HK$1.5/個起 (CTR 修复 2026-08-22)
+- /en/category/envelopes/ - Custom envelope printing from 100 pcs, free proof (CTR fix)
+- /ja/category/envelopes/ - 封筒印刷 100枚から, 無料校正 (CTR 修復)
+- /zh-hk/category/menus/ - 餐牌印刷訂製 100 張起, 防水防油, HK$15/張起
+- /en/category/menus/ - Menu printing from 100 pcs, waterproof & oil-resistant
+- /ja/category/menus/ - メニュー印刷 100枚から, 防水・耐油
+- /zh-hk/category/red-packets/ - 利是封印刷訂製 100 個起, 燙金燙銀, 11 月早鳥 (CNY 2027/2/6)
+- /en/category/red-packets/ - Custom red packet printing from 100 pcs, foil stamping, CNY 2027
+- /ja/category/red-packets/ - 紅包袋印刷 100枚から, 箔押し, 2027春節早鳥 (v3.14 補齐 ja)
+- /zh-hk/category/posters/ - 海報印刷 A2 100 張起, 128g 銅版紙 HK$6-9/張
+- /en/category/posters/ - Poster printing from 10 pcs, A2 8x2-4 day
+- /ja/category/posters/ - ポスター印刷 10枚から, A2 100-150/枚
+- /zh-hk/category/stickers/ - 貼紙印刷 50 個起, 防水啞光, 戶外貼紙 100 個起
+- /en/category/stickers/ - Custom stickers from 50 pcs, outdoor vinyl 100 pcs MOQ
+- /ja/category/stickers/ - ステッカー印刷 50枚から, 屋外ステッカー 100枚から
+- /zh-hk/category/educational/ - 練習簿印刷 50 本起, 學校練習冊, 補習社教材
+- /en/category/educational/ - School exercise book printing, 50-100 book MOQ
+- /zh-hk/product/saddle-stitch-booklets/ - 騎馬釘小冊子印刷, 50 本起, 三锤對 Alibaba 黃頁
+- /en/product/saddle-stitch-booklets/ - Saddle stitch booklets, 50 copies MOQ, US$1.84-7.36/pc
+- /zh-hk/product/food-boxes/ - 食品包裝盒, FDA 級, 100 個起印
+- /en/product/food-boxes/ - Food-grade boxes, FDA certified, 100 pcs MOQ
+- /en/blog/saddle-stitch-booklet-printing-guide/ - Saddle Stitch Booklet Printing Guide 2026 (900 词商业指南)
+- /zh-hk/blog/paper-bag-printing-guide/ - 紙袋印刷指南, 含訂製直通 CTA (v3.12 改)
+- /en/blog/calendar-printing-guide/ - 2027 Calendar Printing Guide, sizes/dimensions 4 词
+- /ja/blog/calendar-printing-guide/ - 2027年カレンダー印刷ガイド, サイズ 4 词
+- /zh-hk/services/catalog-printing-china/ - China catalog printing landing page (v3.10)
+- /zh-hk/services/rush-printing-delivery/ - 即日印刷特急服務 (v3.12 T10#4 激安)
