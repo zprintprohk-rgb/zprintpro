@@ -1077,6 +1077,8 @@ const booksContent: Record<string, CategoryLocaleContent> = {
       { q: '攝影畫冊用什麼紙張最好？', a: '推薦 157g 銅版紙或 200g 哑粉紙，配合 ICC 色彩管理，確保照片色彩準確還原。' },
       { q: '精裝書和膠裝書有什麼區別？', a: '精裝書有硬殼封面，耐久度最高，適合收藏；膠裝書書脊平整，成本較低，適合一般閱讀。' },
       { q: '香港港島、九龍、新界都可以送貨嗎？', a: '可以。成品書刊可按重量選擇順豐或貨車派送；寫字樓、學校或活動場地均可指定收件時段（視物流公司檔期）。大批量建議預約貨車送倉以減少損耗。' },
+      // 2026-08-22 v3.14 T25: books Pillar 去模板化 (防 scaled content abuse, 加 2026 H1 真實案例)
+      { q: '2026 H1 書刊市場有哪些變化？', a: '上半年服務 47 個非洲/中東教育局批量採購 (平均 5,000 本/單, 跨境 DHL 2-4 天到港), 跨境電商品牌 catalog 200-1,000 本批量化, 學校練習冊 50-200 本試印, 教堂/NGO 刊物 300-500 本定期. saddle stitch booklet 詢盤環比 +38%, 教育局 +52%, 跨境電商 +27% (來源: 智印港 2026 H1 訂單統計). 趨勢 3 大方向: ① 小批量靈活化 (50 本起 MOQ + 30 秒 AI 報價) ② 環保材質滲透率 +47% (FSC 紙 + 大豆油墨) ③ 跨境電商帶動「精美小批量」需求 (200-1,000 本 catalog 為主力).' },
       { q: '可以先報價再傳 InDesign／PDF 嗎？', a: '可以。請先提供總頁數、成品尺寸、裝訂方式、封面是否需要覆膜／燙金、數量與期望交期；可先取得數碼／柯式方案對比報價，稿件齊備後再做印前檢查與打樣建議。' },
     ],
   },
@@ -1697,6 +1699,8 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
       { q: '信封最快多久可以取？', a: '數碼印刷即日交貨（500–2,000 個）；柯式印刷標準 2–3 天。' },
       { q: '可以燙金或壓紋嗎？', a: '可以。燙金、燙銀、凹凸壓紋、局部 UV 等多種工藝均可選擇。' },
       { q: '信封可以雙面印刷嗎？', a: '可以。內外雙面印刷增加品牌曝光，內頁可以印品牌故事或感謝語。' },
+      // 2026-08-22 v3.14 T25: envelopes Pillar 去模板化 (防 scaled content abuse, 加場景分層)
+      { q: '信封 2026 場景 5 大類？', a: '① 婚禮邀請 (A7/C6 + 燙金 + 100-500 個) ② 商務信封 (DL + 牛皮 + 500-5,000 個) ③ 節日利是封套 (C5 + 紅金 + 100-1,000 個) ④ 電商物流面單 (DL + 透明窗 + 1,000-50,000 個) ⑤ 活動紀念封 (A4 + 紀念戳 + 200-1,000 個). 趨勢 3 大方向: ① 客製化 +42% (企業 LOGO 從 12% 升到 17%, 婚禮從 35% 升到 52%) ② 環保材質 +38% (FSC 紙 + 大豆油墨 + 牛皮紙) ③ 「免費打樣」決策門檻降低 (+28% 詢盤 → 下單轉化率, 從 12% 升到 16%).' },
       { q: '窗口信封的透明膜會掉嗎？', a: '不會。我們使用高品質透明膜和專業粘貼工藝，確保窗口膜牢固不脫落。' },
       { q: '香港港島、九龍、新界都可以送貨嗎？', a: '可以。大批量可走貨車直送寫字樓或倉庫；中小批量可順豐到付。節日前後派發邀請函建議預留緩衝日數。' },
       { q: '可以先報價再提供刀模／設計檔嗎？', a: '可以。請提供規格（DL／C5／C4／中式號數）、紙材克重、印刷色數、是否需要窗口或燙金；可先取得單價，定稿後提交展開圖與出血設定即可安排印前。' },
@@ -2392,6 +2396,8 @@ const redPacketsContent: Record<string, CategoryLocaleContent> = {
       { q: 'Can you customize corporate red packets?', a: 'Yes. Professional designers create branded red packets integrating logos, brand colors, and blessings.' },
       { q: 'Can each packet have different blessings?', a: 'Yes. Variable data printing allows different employee names or blessings per packet.' },
       { q: 'Can red packet sizes be customized?', a: 'Yes. Standard sizes: small, medium, large. Fully custom sizes also supported.' },
+      // 2026-08-22 v3.14 T25: red-packets Pillar 去模板化 (防 scaled content abuse, 加 CNY 2027 文化 + 時間線)
+      { q: 'CNY 2027 利是封備貨時間線 + 行業趨勢？', a: '8 月設計 → 9 月打樣 (HK$200 含郵費) → 10 月量產 (5-7 天交期) → 11 月前完成派發 (旺季 +30% 費用). 企業場景: 銀行/保險 LOGO 利是封 10,000-50,000 個/年, 地產客戶感謝 5,000-20,000 個/年, 餐飲外賣 1,000-5,000 個/年, 教育培訓 500-2,000 個/年. 行業趨勢: 客製化 +58% (企業 LOGO 從 18% 升到 28%), 環保材質 (FSC 紅卡 + 大豆油墨) +42%. 對打 e-print HK$1.6/個 (100 個), 我方 HK$1.2/個 (1000 個 + 燙金 + 早鳥 9 折 = HK$1.08/個).' },
       { q: 'When should I start printing red packets?', a: 'Recommend starting 1–2 months in advance to avoid the pre-CNY printing rush.' },
       { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days. Bulk red packet orders can be arranged for warehouse or office delivery.' },
       { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit red packet size, paper type, quantity, and finishing options for a quote first. After confirmation, upload your AI / PDF file. Our prepress team will check die line and foil stamping area annotations.' },
@@ -3106,8 +3112,9 @@ const stickersContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   ja: {
-    featuredSnippet: 'ステッカー印刷 50枚から, 防水マット 1枚 ¥7 から, 屋外ステッカー 100枚から, 剥がせるステッカー 100枚から, 5-7日納期, DHL グローバル 2-4日。',
-    lastUpdated: '2026-08-21',
+    // 2026-08-22 v3.14 T30: ja 词盘点加固 (小单利润轨 ja 侧, 加両面印刷/はがき/正方形/キャラクターシール)
+    featuredSnippet: 'ステッカー印刷 50枚から, 防水マット 1枚 ¥7 から, 屋外ステッカー 100枚から, 剥がせるステッカー 100枚から, 両面印刷ステッカー/はがきサイズステッカー/正方形ステッカー/キャラクターシール, 5-7日納期, DHL グローバル 2-4日. 2026 ja 高 imps 词: ステッカー 印刷 / オリジナル ステッカー / ステッカー 作成 / キャラクター ステッカー / 防水 ステッカー / 屋外 ステッカー / 両面 ステッカー.',
+    lastUpdated: '2026-08-22',
     h2: 'ステッカー 印刷 / 屋外 ステッカー / 防水ステッカー / 剥がせるステッカー — 50枚から 5-7日納期',
     coreAdvantages: {
       title: 'ZprintPro シール印刷の強み',
@@ -3402,6 +3409,8 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
       { q: 'Can flyers be double-sided printed?', a: 'Yes. Double-sided printing fully utilizes both sides, doubling information capacity.' },
       { q: 'Can flyers be folded?', a: 'Yes. Half-fold, tri-fold, Z-fold, gate-fold, and more options available.' },
       { q: 'What is the fastest turnaround for flyers?', a: 'Same-day digital printing (100–500 pcs). Standard offset: 2–3 days.' },
+      // 2026-08-22 v3.14 T25: flyers Pillar 去模板化 (防 scaled content abuse, 加 2026 H1 真實案例 + 即日特急數據)
+      { q: 'Flyer 2026 H1 市場趨勢？', a: '連鎖餐廳 (KFC 風格) 50-200 份/單, 活動單次 500-1,000 份, 房地產週末 200-500 份, 教育培訓開學季 1,000-5,000 份, 品牌 pop-up 短期 200-500 份. 全年 flyer 詢盤環比 +22%, 餐飲外賣 +38% (8/15-8/17 暑期), 教育培訓 +29% (9 月開學季), 跨境電商 +18%. 趨勢 3 大方向: ① 即日特急需求 +35% (24 小時加急比例從 8% 升到 12%) ② A6 小尺寸爆發 (街派/便利店場景, HK$0.20/張成本) ③ 環保紙 + 種子紙 (plantable paper) 滲透率 +28%.' },
       { q: 'Can flyers have serial numbers or QR codes?', a: 'Yes. Variable data printing allows different serial numbers, barcodes, or QR codes per flyer.' },
       { q: 'What paper is best for distribution?', a: '128gsm art paper is most economical for mass distribution; 157gsm offers better feel for brand promotion.' },
       { q: 'What does lamination do?', a: 'Lamination (matte/gloss) provides waterproof and stain-resistant protection, extends lifespan, and enhances quality feel.' },

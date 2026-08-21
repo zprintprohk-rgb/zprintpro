@@ -15046,7 +15046,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'catalog-printing',
     category: 'books',
     category_slug: 'books',
-    name: '香港畫冊印刷 — 攝影集 / 展覽圖錄 / 產品型錄 / 藝術作品集定製', nameEn: 'Custom Book Printing for Catalogs, Photo Books & Exhibition Lookbooks', nameJa: 'カタログ印刷 — 寫真集・作品集・プロダクトカタログ', title_zh: '香港畫冊印刷 — 攝影集 / 展覽圖錄 / 產品型錄 / 藝術作品集定製',
+    name: '香港畫冊印刷 / Bulk Catalog Printing / Wholesale Book Supplier — 攝影集 / 展覽圖錄 / 產品型錄', nameEn: 'Custom Bulk Catalog Printing / Wholesale Book Supplier | Photo Books, Lookbooks, Product Catalogs', nameJa: 'カタログ印刷 / 大量印刷 / 卸売サプライヤー | 寫真集・作品集・プロダクトカタログ', title_zh: '香港畫冊印刷 / Bulk Catalog Printing 50本起 · 全球配送 DHL 2-4天',
     description: '香港畫冊/攝影集/產品型錄印刷服務，色彩還原度達 95%+。適合藝術展覽圖錄、品牌作品集、攝影集、企業年報、珍藏紀念冊。50 本起印，48 小時香港本地速遞。', descriptionEn: 'Catalog, photo book & exhibition lookbook printing with 95%+ color accuracy. Ideal for art exhibition lookbooks, brand portfolios, photography books, annual reports, keepsake albums. 100 MOQ, free design mockup, 30-second AI quote.', descriptionJa: 'カタログ・寫真集・作品集印刷サービス、色再現性95%+。美術展作品集、ブランドポートフォリオ、寫真集、企業年報、記念アルバムに最適。100冊〜、無料デザインモックアップ、30秒 AI 見積もり。', description_zh: '香港畫冊/攝影集/產品型錄印刷服務，色彩還原度達 95%+。適合藝術展覽圖錄、品牌作品集、攝影集、企業年報、珍藏紀念冊。50 本起印，48 小時香港本地速遞。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
