@@ -1,0 +1,931 @@
+{
+  "version": "v3.7-2026-08-20",
+  "created": "2026-08-20",
+  "owner": "Mavis (M3)",
+  "tracking": {
+    "total": 100,
+    "tier_a_core": 10,
+    "tier_b_secondary": 30,
+    "tier_c_longtail": 60,
+    "definition": "top10 出现次数 / 100 词 = KPI %",
+    "current_count": 12,
+    "current_pct": "12% (缺口 18 词 = 30% 达标线)",
+    "target_pct": 30,
+    "target_count": 30
+  },
+  "tier_a_core_10": [
+    {
+      "kw_zh": "喜帖印刷",
+      "kw_en": "wedding invitation printing",
+      "kw_ja": "結婚式招待状印刷",
+      "intent": "transactional",
+      "category": "wedding-invitations",
+      "tier": "A",
+      "priority": 1
+    },
+    {
+      "kw_zh": "包裝盒訂製",
+      "kw_en": "custom packaging box",
+      "kw_ja": "パッケージ箱 カスタマイズ",
+      "intent": "transactional",
+      "category": "packaging",
+      "tier": "A",
+      "priority": 1
+    },
+    {
+      "kw_zh": "宣傳單張印刷",
+      "kw_en": "flyer printing",
+      "kw_ja": "チラシ印刷",
+      "intent": "transactional",
+      "category": "flyers",
+      "tier": "A",
+      "priority": 1
+    },
+    {
+      "kw_zh": "貼紙印刷",
+      "kw_en": "sticker printing",
+      "kw_ja": "ステッカー印刷",
+      "intent": "transactional",
+      "category": "stickers",
+      "tier": "A",
+      "priority": 1
+    },
+    {
+      "kw_zh": "紙袋訂製",
+      "kw_en": "paper bag custom",
+      "kw_ja": "紙袋 カスタム",
+      "intent": "transactional",
+      "category": "paper-bags",
+      "tier": "A",
+      "priority": 1
+    },
+    {
+      "kw_zh": "標籤印刷",
+      "kw_en": "label printing",
+      "kw_ja": "ラベル印刷",
+      "intent": "transactional",
+      "category": "labels",
+      "tier": "A",
+      "priority": 1
+    },
+    {
+      "kw_zh": "枱卡印刷",
+      "kw_en": "table card printing",
+      "kw_ja": "席カード印刷",
+      "intent": "transactional",
+      "category": "wedding-invitations",
+      "tier": "A",
+      "priority": 2
+    },
+    {
+      "kw_zh": "利是封印刷",
+      "kw_en": "red packet printing",
+      "kw_ja": "レッドパケット印刷",
+      "intent": "transactional",
+      "category": "red-packets",
+      "tier": "A",
+      "priority": 2
+    },
+    {
+      "kw_zh": "ZprintPro",
+      "kw_en": "ZprintPro",
+      "kw_ja": "ZprintPro",
+      "intent": "branded",
+      "category": "brand",
+      "tier": "A",
+      "priority": 1
+    },
+    {
+      "kw_zh": "智印港",
+      "kw_en": "ZprintPro",
+      "kw_ja": "ZprintPro",
+      "intent": "branded-zh",
+      "category": "brand",
+      "tier": "A",
+      "priority": 1
+    }
+  ],
+  "tier_b_secondary_30": [
+    {
+      "kw_zh": "喜帖價格",
+      "kw_en": "wedding invitation cost",
+      "kw_ja": "招待状 価格",
+      "intent": "commercial",
+      "category": "wedding-invitations",
+      "tier": "B",
+      "priority": 1,
+      "has_blog": "wedding-invitation-pricing-guide"
+    },
+    {
+      "kw_zh": "喜帖幾錢",
+      "kw_en": "wedding invitation price",
+      "kw_ja": "招待状 値段",
+      "intent": "commercial",
+      "category": "wedding-invitations",
+      "tier": "B",
+      "priority": 1,
+      "has_blog": "wedding-invitation-cost-guide"
+    },
+    {
+      "kw_zh": "請柬價格",
+      "kw_en": "wedding card price",
+      "kw_ja": "ウエディングカード 価格",
+      "intent": "commercial",
+      "category": "wedding-invitations",
+      "tier": "B",
+      "priority": 2
+    },
+    {
+      "kw_zh": "包裝盒價格",
+      "kw_en": "packaging box cost",
+      "kw_ja": "パッケージ 価格",
+      "intent": "commercial",
+      "category": "packaging",
+      "tier": "B",
+      "priority": 1
+    },
+    {
+      "kw_zh": "貼紙價格",
+      "kw_en": "sticker price",
+      "kw_ja": "ステッカー 価格",
+      "intent": "commercial",
+      "category": "stickers",
+      "tier": "B",
+      "priority": 1
+    },
+    {
+      "kw_zh": "宣傳單張價格",
+      "kw_en": "flyer price",
+      "kw_ja": "チラシ 価格",
+      "intent": "commercial",
+      "category": "flyers",
+      "tier": "B",
+      "priority": 1
+    },
+    {
+      "kw_zh": "紙袋價格",
+      "kw_en": "paper bag price",
+      "kw_ja": "紙袋 価格",
+      "intent": "commercial",
+      "category": "paper-bags",
+      "tier": "B",
+      "priority": 1
+    },
+    {
+      "kw_zh": "枱卡設計",
+      "kw_en": "table card design",
+      "kw_ja": "席カード デザイン",
+      "intent": "commercial",
+      "category": "wedding-invitations",
+      "tier": "B",
+      "priority": 2,
+      "has_blog": "wedding-table-card-printing-guide"
+    },
+    {
+      "kw_zh": "100張貼紙",
+      "kw_en": "100 pcs stickers",
+      "kw_ja": "100枚 ステッカー",
+      "intent": "transactional-qty",
+      "category": "stickers",
+      "tier": "B",
+      "priority": 2
+    },
+    {
+      "kw_zh": "100個喜帖",
+      "kw_en": "100 wedding invitations",
+      "kw_ja": "100枚 招待状",
+      "intent": "transactional-qty",
+      "category": "wedding-invitations",
+      "tier": "B",
+      "priority": 1,
+      "has_blog": "wedding-invitation-pricing-guide"
+    },
+    {
+      "kw_zh": "500張宣傳單",
+      "kw_en": "500 flyers",
+      "kw_ja": "500枚 チラシ",
+      "intent": "transactional-qty",
+      "category": "flyers",
+      "tier": "B",
+      "priority": 1
+    },
+    {
+      "kw_zh": "1000張貼紙",
+      "kw_en": "1000 stickers bulk",
+      "kw_ja": "1000枚 ステッカー",
+      "intent": "transactional-qty",
+      "category": "stickers",
+      "tier": "B",
+      "priority": 1
+    },
+    {
+      "kw_zh": "200個紙袋",
+      "kw_en": "200 paper bags",
+      "kw_ja": "200枚 紙袋",
+      "intent": "transactional-qty",
+      "category": "paper-bags",
+      "tier": "B",
+      "priority": 2
+    },
+    {
+      "kw_zh": "50份利是封",
+      "kw_en": "50 red packets",
+      "kw_ja": "50枚 レッドパケット",
+      "intent": "transactional-qty",
+      "category": "red-packets",
+      "tier": "B",
+      "priority": 2
+    },
+    {
+      "kw_zh": "燙金喜帖",
+      "kw_en": "foil wedding invitation",
+      "kw_ja": "箔押し 招待状",
+      "intent": "transactional",
+      "category": "wedding-invitations",
+      "tier": "B",
+      "priority": 1
+    },
+    {
+      "kw_zh": "珠光紙喜帖",
+      "kw_en": "pearl paper invitation",
+      "kw_ja": "パールペーパー 招待状",
+      "intent": "transactional",
+      "category": "wedding-invitations",
+      "tier": "B",
+      "priority": 2
+    },
+    {
+      "kw_zh": "FSC 紙袋",
+      "kw_en": "FSC paper bag",
+      "kw_ja": "FSC 紙袋",
+      "intent": "transactional",
+      "category": "paper-bags",
+      "tier": "B",
+      "priority": 1
+    },
+    {
+      "kw_zh": "環保貼紙",
+      "kw_en": "eco friendly sticker",
+      "kw_ja": "エコ ステッカー",
+      "intent": "transactional",
+      "category": "stickers",
+      "tier": "B",
+      "priority": 1
+    },
+    {
+      "kw_zh": "防水貼紙",
+      "kw_en": "waterproof sticker",
+      "kw_ja": "防水 ステッカー",
+      "intent": "transactional",
+      "category": "stickers",
+      "tier": "B",
+      "priority": 1
+    },
+    {
+      "kw_zh": "厚卡紙印刷",
+      "kw_en": "thick card printing",
+      "kw_ja": "厚紙印刷",
+      "intent": "transactional",
+      "category": "stickers",
+      "tier": "B",
+      "priority": 2
+    },
+    {
+      "kw_zh": "銅版紙印刷",
+      "kw_en": "coated paper printing",
+      "kw_ja": "コート紙印刷",
+      "intent": "transactional",
+      "category": "flyers",
+      "tier": "B",
+      "priority": 2
+    },
+    {
+      "kw_zh": "白卡紙袋",
+      "kw_en": "white card bag",
+      "kw_ja": "白カード紙袋",
+      "intent": "transactional",
+      "category": "paper-bags",
+      "tier": "B",
+      "priority": 1
+    },
+    {
+      "kw_zh": "喜帖設計",
+      "kw_en": "wedding invitation design",
+      "kw_ja": "招待状 デザイン",
+      "intent": "commercial",
+      "category": "wedding-invitations",
+      "tier": "B",
+      "priority": 1
+    },
+    {
+      "kw_zh": "中式喜帖",
+      "kw_en": "Chinese wedding invitation",
+      "kw_ja": "中式 招待状",
+      "intent": "transactional",
+      "category": "wedding-invitations",
+      "tier": "B",
+      "priority": 2
+    },
+    {
+      "kw_zh": "西式喜帖",
+      "kw_en": "Western wedding invitation",
+      "kw_ja": "洋式 招待状",
+      "intent": "transactional",
+      "category": "wedding-invitations",
+      "tier": "B",
+      "priority": 2
+    },
+    {
+      "kw_zh": "餐廳傳單",
+      "kw_en": "restaurant flyer",
+      "kw_ja": "レストラン チラシ",
+      "intent": "transactional",
+      "category": "flyers",
+      "tier": "B",
+      "priority": 1
+    },
+    {
+      "kw_zh": "咖啡店貼紙",
+      "kw_en": "cafe sticker",
+      "kw_ja": "カフェ ステッカー",
+      "intent": "transactional",
+      "category": "stickers",
+      "tier": "B",
+      "priority": 1
+    },
+    {
+      "kw_zh": "服裝吊牌",
+      "kw_en": "clothing hang tag",
+      "kw_ja": "アパレル タグ",
+      "intent": "transactional",
+      "category": "labels",
+      "tier": "B",
+      "priority": 1
+    },
+    {
+      "kw_zh": "化妝品包裝",
+      "kw_en": "cosmetic packaging",
+      "kw_ja": "化粧品 パッケージ",
+      "intent": "transactional",
+      "category": "packaging",
+      "tier": "B",
+      "priority": 1
+    },
+    {
+      "kw_zh": "禮品袋訂製",
+      "kw_en": "gift bag custom",
+      "kw_ja": "ギフト袋 カスタム",
+      "intent": "transactional",
+      "category": "paper-bags",
+      "tier": "B",
+      "priority": 1
+    }
+  ],
+  "tier_c_longtail_60": [
+    {
+      "kw_zh": "龍年喜帖",
+      "kw_en": "dragon year invitation",
+      "kw_ja": "辰年 招待状",
+      "intent": "longtail",
+      "category": "wedding-invitations",
+      "tier": "C",
+      "priority": 1
+    },
+    {
+      "kw_zh": "教堂婚禮喜帖",
+      "kw_en": "church wedding invitation",
+      "kw_ja": "教会 結婚式 招待状",
+      "intent": "longtail",
+      "category": "wedding-invitations",
+      "tier": "C",
+      "priority": 2
+    },
+    {
+      "kw_zh": "中式婚禮請帖",
+      "kw_en": "Chinese wedding card",
+      "kw_ja": "中式 結婚 カード",
+      "intent": "longtail",
+      "category": "wedding-invitations",
+      "tier": "C",
+      "priority": 2
+    },
+    {
+      "kw_zh": "喜帖 100個 多少錢",
+      "kw_en": "100 wedding invitations cost",
+      "kw_ja": "招待状 100枚 価格",
+      "intent": "longtail",
+      "category": "wedding-invitations",
+      "tier": "C",
+      "priority": 1,
+      "has_blog": "wedding-invitation-pricing-guide"
+    },
+    {
+      "kw_zh": "小型婚禮請柬",
+      "kw_en": "small wedding invitation",
+      "kw_ja": "少人数 結婚式 招待状",
+      "intent": "longtail",
+      "category": "wedding-invitations",
+      "tier": "C",
+      "priority": 2
+    },
+    {
+      "kw_zh": "燙金信封",
+      "kw_en": "foil envelope",
+      "kw_ja": "箔押し 封筒",
+      "intent": "longtail",
+      "category": "wedding-invitations",
+      "tier": "C",
+      "priority": 1,
+      "has_blog": "wedding-invitation-envelope-printing-guide"
+    },
+    {
+      "kw_zh": "婚禮感謝卡印刷",
+      "kw_en": "wedding thank you card",
+      "kw_ja": "結婚式 サンキュカード",
+      "intent": "longtail",
+      "category": "wedding-invitations",
+      "tier": "C",
+      "priority": 2
+    },
+    {
+      "kw_zh": "婚禮節目單印刷",
+      "kw_en": "wedding program card",
+      "kw_ja": "結婚式 しおり",
+      "intent": "longtail",
+      "category": "wedding-invitations",
+      "tier": "C",
+      "priority": 2
+    },
+    {
+      "kw_zh": "婚禮菜單卡",
+      "kw_en": "wedding menu card",
+      "kw_ja": "ウエディング メニュー",
+      "intent": "longtail",
+      "category": "wedding-invitations",
+      "tier": "C",
+      "priority": 2
+    },
+    {
+      "kw_zh": "Save the Date 印刷",
+      "kw_en": "Save the Date printing",
+      "kw_ja": "Save the Date 印刷",
+      "intent": "longtail",
+      "category": "wedding-invitations",
+      "tier": "C",
+      "priority": 1
+    },
+    {
+      "kw_zh": "婚禮利是封 龍鳳",
+      "kw_en": "dragon phoenix red packet",
+      "kw_ja": "龍鳳 レッドパケット",
+      "intent": "longtail",
+      "category": "wedding-invitations",
+      "tier": "C",
+      "priority": 2,
+      "has_blog": "wedding-red-packet-printing-guide"
+    },
+    {
+      "kw_zh": "小批量喜帖",
+      "kw_en": "small batch invitation",
+      "kw_ja": "小ロット 招待状",
+      "intent": "longtail",
+      "category": "wedding-invitations",
+      "tier": "C",
+      "priority": 1
+    },
+    {
+      "kw_zh": "婚禮禮袋印刷",
+      "kw_en": "wedding favor bag printing",
+      "kw_ja": "ブライダル フォーバー バッグ",
+      "intent": "longtail",
+      "category": "wedding-invitations",
+      "tier": "C",
+      "priority": 1,
+      "has_blog": "wedding-favor-bag-printing-guide"
+    },
+    {
+      "kw_zh": "婚禮紙袋訂製",
+      "kw_en": "wedding paper bag custom",
+      "kw_ja": "結婚式 紙袋",
+      "intent": "longtail",
+      "category": "wedding-invitations",
+      "tier": "C",
+      "priority": 1
+    },
+    {
+      "kw_zh": "席位圖印刷",
+      "kw_en": "seating chart printing",
+      "kw_ja": "席次表 印刷",
+      "intent": "longtail",
+      "category": "wedding-invitations",
+      "tier": "C",
+      "priority": 2,
+      "has_blog": "wedding-table-card-printing-guide"
+    },
+    {
+      "kw_zh": "郵寄包裝盒",
+      "kw_en": "mailer box",
+      "kw_ja": "メーラーボックス",
+      "intent": "longtail",
+      "category": "packaging",
+      "tier": "C",
+      "priority": 1
+    },
+    {
+      "kw_zh": "磁吸禮盒",
+      "kw_en": "magnetic closure box",
+      "kw_ja": "マグネット ボックス",
+      "intent": "longtail",
+      "category": "packaging",
+      "tier": "C",
+      "priority": 1
+    },
+    {
+      "kw_zh": "化妝品包裝盒",
+      "kw_en": "cosmetic box",
+      "kw_ja": "化粧品 箱",
+      "intent": "longtail",
+      "category": "packaging",
+      "tier": "C",
+      "priority": 1
+    },
+    {
+      "kw_zh": "食品包裝盒",
+      "kw_en": "food packaging box",
+      "kw_ja": "食品 パッケージ 箱",
+      "intent": "longtail",
+      "category": "packaging",
+      "tier": "C",
+      "priority": 1
+    },
+    {
+      "kw_zh": "電子產品包裝",
+      "kw_en": "electronics packaging",
+      "kw_ja": "電子製品 パッケージ",
+      "intent": "longtail",
+      "category": "packaging",
+      "tier": "C",
+      "priority": 2
+    },
+    {
+      "kw_zh": "牛皮紙盒",
+      "kw_en": "kraft paper box",
+      "kw_ja": "クラフト 紙 箱",
+      "intent": "longtail",
+      "category": "packaging",
+      "tier": "C",
+      "priority": 1
+    },
+    {
+      "kw_zh": "抽屜盒訂製",
+      "kw_en": "drawer box",
+      "kw_ja": "引き出し ボックス",
+      "intent": "longtail",
+      "category": "packaging",
+      "tier": "C",
+      "priority": 2
+    },
+    {
+      "kw_zh": "禮品盒 100個",
+      "kw_en": "gift box 100 pieces",
+      "kw_ja": "ギフト ボックス 100個",
+      "intent": "longtail",
+      "category": "packaging",
+      "tier": "C",
+      "priority": 2
+    },
+    {
+      "kw_zh": "DTC 電商包裝",
+      "kw_en": "DTC e-commerce packaging",
+      "kw_ja": "DTC EC パッケージ",
+      "intent": "longtail",
+      "category": "packaging",
+      "tier": "C",
+      "priority": 2
+    },
+    {
+      "kw_zh": "訂閱盒",
+      "kw_en": "subscription box",
+      "kw_ja": "サブスク ボックス",
+      "intent": "longtail",
+      "category": "packaging",
+      "tier": "C",
+      "priority": 2
+    },
+    {
+      "kw_zh": "圓形貼紙",
+      "kw_en": "round sticker",
+      "kw_ja": "丸 ステッカー",
+      "intent": "longtail",
+      "category": "stickers",
+      "tier": "C",
+      "priority": 1
+    },
+    {
+      "kw_zh": "異形貼紙",
+      "kw_en": "die cut sticker",
+      "kw_ja": "ダイカット ステッカー",
+      "intent": "longtail",
+      "category": "stickers",
+      "tier": "C",
+      "priority": 1
+    },
+    {
+      "kw_zh": "透明貼紙",
+      "kw_en": "transparent sticker",
+      "kw_ja": "透明 ステッカー",
+      "intent": "longtail",
+      "category": "stickers",
+      "tier": "C",
+      "priority": 1
+    },
+    {
+      "kw_zh": "PVC 貼紙",
+      "kw_en": "PVC sticker",
+      "kw_ja": "PVC ステッカー",
+      "intent": "longtail",
+      "category": "stickers",
+      "tier": "C",
+      "priority": 2
+    },
+    {
+      "kw_zh": "商品標籤貼紙",
+      "kw_en": "product label sticker",
+      "kw_ja": "商品ラベル",
+      "intent": "longtail",
+      "category": "stickers",
+      "tier": "C",
+      "priority": 1
+    },
+    {
+      "kw_zh": "封口貼紙",
+      "kw_en": "seal sticker",
+      "kw_ja": "封 ステッカー",
+      "intent": "longtail",
+      "category": "stickers",
+      "tier": "C",
+      "priority": 2
+    },
+    {
+      "kw_zh": "品牌貼紙 1000張",
+      "kw_en": "brand sticker 1000 pcs",
+      "kw_ja": "ブランド ステッカー 1000",
+      "intent": "longtail",
+      "category": "stickers",
+      "tier": "C",
+      "priority": 2
+    },
+    {
+      "kw_zh": "玻璃貼",
+      "kw_en": "window decal",
+      "kw_ja": "ウィンドウ デカール",
+      "intent": "longtail",
+      "category": "stickers",
+      "tier": "C",
+      "priority": 2
+    },
+    {
+      "kw_zh": "標籤貼紙印刷",
+      "kw_en": "label sticker",
+      "kw_ja": "ラベル ステッカー",
+      "intent": "longtail",
+      "category": "stickers",
+      "tier": "C",
+      "priority": 1
+    },
+    {
+      "kw_zh": "客製化貼紙 100張",
+      "kw_en": "custom sticker 100 pcs",
+      "kw_ja": "カスタム ステッカー 100",
+      "intent": "longtail",
+      "category": "stickers",
+      "tier": "C",
+      "priority": 1
+    },
+    {
+      "kw_zh": "A4 傳單",
+      "kw_en": "A4 flyer",
+      "kw_ja": "A4 チラシ",
+      "intent": "longtail",
+      "category": "flyers",
+      "tier": "C",
+      "priority": 1
+    },
+    {
+      "kw_zh": "A5 傳單",
+      "kw_en": "A5 flyer",
+      "kw_ja": "A5 チラシ",
+      "intent": "longtail",
+      "category": "flyers",
+      "tier": "C",
+      "priority": 1
+    },
+    {
+      "kw_zh": "雙面傳單",
+      "kw_en": "double sided flyer",
+      "kw_ja": "両面 チラシ",
+      "intent": "longtail",
+      "category": "flyers",
+      "tier": "C",
+      "priority": 2
+    },
+    {
+      "kw_zh": "新店開張傳單",
+      "kw_en": "grand opening flyer",
+      "kw_ja": "オープン チラシ",
+      "intent": "longtail",
+      "category": "flyers",
+      "tier": "C",
+      "priority": 1
+    },
+    {
+      "kw_zh": "餐廳 menu 印刷",
+      "kw_en": "restaurant menu printing",
+      "kw_ja": "レストラン メニュー 印刷",
+      "intent": "longtail",
+      "category": "flyers",
+      "tier": "C",
+      "priority": 1
+    },
+    {
+      "kw_zh": "活動傳單",
+      "kw_en": "event flyer",
+      "kw_ja": "イベント チラシ",
+      "intent": "longtail",
+      "category": "flyers",
+      "tier": "C",
+      "priority": 2
+    },
+    {
+      "kw_zh": "教育培訓傳單",
+      "kw_en": "education flyer",
+      "kw_ja": "教育 チラシ",
+      "intent": "longtail",
+      "category": "flyers",
+      "tier": "C",
+      "priority": 2
+    },
+    {
+      "kw_zh": "健身傳單",
+      "kw_en": "fitness flyer",
+      "kw_ja": "フィットネス チラシ",
+      "intent": "longtail",
+      "category": "flyers",
+      "tier": "C",
+      "priority": 2
+    },
+    {
+      "kw_zh": "牛皮紙袋訂製",
+      "kw_en": "kraft paper bag custom",
+      "kw_ja": "クラフト 紙袋",
+      "intent": "longtail",
+      "category": "paper-bags",
+      "tier": "C",
+      "priority": 1
+    },
+    {
+      "kw_zh": "禮品紙袋 100個",
+      "kw_en": "gift paper bag 100 pcs",
+      "kw_ja": "ギフト 紙袋 100",
+      "intent": "longtail",
+      "category": "paper-bags",
+      "tier": "C",
+      "priority": 1
+    },
+    {
+      "kw_zh": "手提紙袋",
+      "kw_en": "handle paper bag",
+      "kw_ja": "ハンドル 紙袋",
+      "intent": "longtail",
+      "category": "paper-bags",
+      "tier": "C",
+      "priority": 1
+    },
+    {
+      "kw_zh": "環保紙袋",
+      "kw_en": "eco paper bag",
+      "kw_ja": "エコ 紙袋",
+      "intent": "longtail",
+      "category": "paper-bags",
+      "tier": "C",
+      "priority": 1
+    },
+    {
+      "kw_zh": "服裝店紙袋",
+      "kw_en": "apparel paper bag",
+      "kw_ja": "アパレル 紙袋",
+      "intent": "longtail",
+      "category": "paper-bags",
+      "tier": "C",
+      "priority": 1
+    },
+    {
+      "kw_zh": "麵包店紙袋",
+      "kw_en": "bakery paper bag",
+      "kw_ja": "ベーカリー 紙袋",
+      "intent": "longtail",
+      "category": "paper-bags",
+      "tier": "C",
+      "priority": 2
+    },
+    {
+      "kw_zh": "咖啡店紙袋",
+      "kw_en": "coffee shop paper bag",
+      "kw_ja": "カフェ 紙袋",
+      "intent": "longtail",
+      "category": "paper-bags",
+      "tier": "C",
+      "priority": 1
+    },
+    {
+      "kw_zh": "零售店紙袋",
+      "kw_en": "retail paper bag",
+      "kw_ja": "小売 紙袋",
+      "intent": "longtail",
+      "category": "paper-bags",
+      "tier": "C",
+      "priority": 2
+    },
+    {
+      "kw_zh": "中式利是封",
+      "kw_en": "Chinese red packet",
+      "kw_ja": "中式 レッドパケット",
+      "intent": "longtail",
+      "category": "red-packets",
+      "tier": "C",
+      "priority": 1
+    },
+    {
+      "kw_zh": "燙金利是封",
+      "kw_en": "foil red packet",
+      "kw_ja": "箔押し レッドパケット",
+      "intent": "longtail",
+      "category": "red-packets",
+      "tier": "C",
+      "priority": 2
+    },
+    {
+      "kw_zh": "婚禮利是封 100個",
+      "kw_en": "wedding red packet 100 pcs",
+      "kw_ja": "結婚式 レッドパケット 100",
+      "intent": "longtail",
+      "category": "red-packets",
+      "tier": "C",
+      "priority": 2
+    },
+    {
+      "kw_zh": "新年利是封印刷",
+      "kw_en": "Chinese New Year red packet",
+      "kw_ja": "春節 レッドパケット",
+      "intent": "longtail",
+      "category": "red-packets",
+      "tier": "C",
+      "priority": 1
+    },
+    {
+      "kw_zh": "服裝吊牌訂製",
+      "kw_en": "hang tag custom",
+      "kw_ja": "下げ札 カスタム",
+      "intent": "longtail",
+      "category": "labels",
+      "tier": "C",
+      "priority": 1
+    },
+    {
+      "kw_zh": "產品標籤印刷",
+      "kw_en": "product label printing",
+      "kw_ja": "製品ラベル 印刷",
+      "intent": "longtail",
+      "category": "labels",
+      "tier": "C",
+      "priority": 1
+    },
+    {
+      "kw_zh": "條碼標籤",
+      "kw_en": "barcode label",
+      "kw_ja": "バーコード ラベル",
+      "intent": "longtail",
+      "category": "labels",
+      "tier": "C",
+      "priority": 2
+    },
+    {
+      "kw_zh": "成分標籤",
+      "kw_en": "ingredient label",
+      "kw_ja": "成分表示 ラベル",
+      "intent": "longtail",
+      "category": "labels",
+      "tier": "C",
+      "priority": 2
+    },
+    {
+      "kw_zh": "FSC 認證標籤",
+      "kw_en": "FSC certification label",
+      "kw_ja": "FSC 認証 ラベル",
+      "intent": "longtail",
+      "category": "labels",
+      "tier": "C",
+      "priority": 2
+    }
+  ]
+}

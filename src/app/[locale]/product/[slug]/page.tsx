@@ -52,6 +52,8 @@ import { getProductMainImage, getProductImages } from '@/lib/product-image';
 import { ProductWhyChooseUs } from '@/components/ProductWhyChooseUs';
 import RushDeliveryBadge from '@/components/sections/RushDeliveryBadge';
 import { TrustWaterfall } from '@/components/home/TrustWaterfall';
+import FreeSampleBanner from '@/components/pdp/FreeSampleBanner';
+import WeddingBundle from '@/components/pdp/WeddingBundle';
 
 // 生成静态参数 - 79产品 × 3语言 = 237个路径
 export function generateStaticParams() {
@@ -223,8 +225,39 @@ export default function ProductPage({
   // 长描述
   const longDesc = locale === 'zh-hk' ? product.longDescription : locale === 'en' ? product.longDescriptionEn : product.longDescriptionJa;
 
-  // 相关博客链接（暂不启用）
-  const relatedBlog = null;
+  // V3.7 DoD 7 (wedding) + V3.8 集群 A 纸袋一击四词 (8/21 K3 拍板) — 启用 relatedBlogs 块
+  // wedding-invitations → 5 wedding blog 链接 (5 内部链接, ≥5 验收)
+  // paper-bags → 5 paper-bags 内部链接 (类目页 + 6 PDP + 2 blog)
+  const WEDDING_CATEGORIES = ['wedding-invitations'];
+  const PAPER_BAGS_CATEGORIES = ['paper-bags'];
+  const isWeddingCategory = WEDDING_CATEGORIES.includes(product.category_slug);
+  const isPaperBagsCategory = PAPER_BAGS_CATEGORIES.includes(product.category_slug);
+
+  // 6 wedding blog slugs 来自 src/data/blog-posts.ts (V3.7 DoD 4-7)
+  const WEDDING_RELATED_BLOGS: Array<{ slug: string; titleZh: string; titleEn: string; titleJa: string; isCategory?: boolean }> = [
+    { slug: 'wedding-invitation-pricing-guide', titleZh: '喜帖價格指南 2026 · 50-500 個 4 檔實價', titleEn: 'Wedding Invitation Pricing Guide 2026: 50-500 Piece Runs', titleJa: '結婚式招待状価格ガイド 2026' },
+    { slug: 'wedding-invitation-cost-guide', titleZh: '美國婚禮邀請卡 2026 成本指南 · 4 檔真實價格', titleEn: 'Wedding Invitation Cost Guide 2026: Real Pricing & Budget Breakdown', titleJa: '結婚式招待状コスト ガイド 2026' },
+    { slug: 'wedding-table-card-printing-guide', titleZh: '枱卡印刷指南 · 7 個設計風格 + 材質對比', titleEn: 'Wedding Table Card Printing Guide: 7 Styles & Materials', titleJa: '席カード印刷ガイド' },
+    { slug: 'wedding-favor-bag-printing-guide', titleZh: '香港婚慶喜帖 / 婚禮禮袋印刷指南', titleEn: 'Wedding Favor Bag & Invitation Printing Guide 2026', titleJa: 'ブライダル フォーバー バッグ印刷ガイド' },
+    { slug: 'wedding-red-packet-printing-guide', titleZh: '婚禮利是封印刷指南 · 龍鳳 / 中式 / 燙金', titleEn: 'Wedding Red Packet Printing Guide', titleJa: '結婚式レッドパケット ガイド' },
+  ];
+
+  // V3.8 集群 A 纸袋一击四词 — 5 paper-bags 内部链接 (类目页 + 6 PDP + 2 blog)
+  // 4 词命中: 印刷紙袋 + 紙袋印刷 + 紙袋訂製 + 訂做紙袋
+  const PAPER_BAGS_RELATED_BLOGS: Array<{ slug: string; titleZh: string; titleEn: string; titleJa: string; isCategory?: boolean }> = [
+    // 1 paper-bags 类目页 (内链核心, 跟 PDP 三角互链)
+    { slug: 'category/paper-bags', isCategory: true, titleZh: '紙袋印刷類目 · 印刷紙袋 / 紙袋訂製 / 訂做紙袋 4 詞一頁', titleEn: 'Paper Bag Printing Category · Custom Paper Bags, Kraft, Gift Bags One-Stop', titleJa: '紙袋印刷カテゴリ · 紙袋 オーダメイド・クラフト紙袋・ギフト紙袋' },
+    // 2 paper-bags 博客 (2 个 blog, zh-hk/en/ja 3 locale 适配)
+    { slug: 'paper-bag-printing-guide', isCategory: false, titleZh: '紙袋印刷完全指南 2026 · 100 個起印 + 5 種材質對比', titleEn: 'Paper Bag Printing Guide 2026: 100 pcs MOQ + 5 Materials Compared', titleJa: '紙袋印刷完全ガイド 2026 · 100個から + 5材質比較' },
+    { slug: 'paper-bag-buying-guide', isCategory: false, titleZh: 'Custom Paper Bag Buying Guide 2026 · 4 Quantity Tiers + Material Cost Breakdown', titleEn: 'Custom Paper Bag Buying Guide 2026 · 4 Quantity Tiers + Material Cost Breakdown', titleJa: 'クラフト紙袋選び方ガイド 2026 · 4 数量段階 + 材質コスト内訳' },
+    // 3 paper-bags PDP (牛皮/白卡/禮品 3 个核心 SKU)
+    { slug: 'product/kraft-paper-bags', isCategory: false, titleZh: '牛皮紙袋 · 環保文創首選 HK$1.5 起', titleEn: 'Kraft Paper Bags · Eco-friendly Brand Favorite, from HK$1.5', titleJa: 'クラフト紙袋 · エコブランド向け HK$1.5 から' },
+    { slug: 'product/white-card-paper-bags', isCategory: false, titleZh: '白卡紙袋 · 服裝美妝品牌升級首選', titleEn: 'White Card Paper Bags · Fashion & Beauty Brand Upgrade', titleJa: '白カード紙袋 · アパレル・美容ブランドアップグレード' },
+    { slug: 'product/gift-paper-bags', isCategory: false, titleZh: '禮品紙袋 · 高檔燙金 + 婚禮回禮', titleEn: 'Gift Paper Bags · Premium Foil + Wedding Favors', titleJa: 'ギフト紙袋 · 高級箔押し + ブライダルギフト' },
+  ];
+
+  // 取前 5 个作为内链 (V3.8 集群 A 验收 ≥5)
+  const relatedBlogs = isWeddingCategory ? WEDDING_RELATED_BLOGS : isPaperBagsCategory ? PAPER_BAGS_RELATED_BLOGS : null;
   const localePrefix = `/${locale}`;
   
   // 翻译文本
@@ -397,6 +430,13 @@ export default function ProductPage({
                 alt={getProductImageAlt(product, locale)}
               />
 
+              {/* V3.7 DoD 5: 12 wedding PDP 置顶免费打样横幅 (5 天免費打樣 + 100+ 件可全額抵扣) */}
+              {isWeddingCategory && (
+                <div className="mt-6">
+                  <FreeSampleBanner locale={locale} productSlug={product.slug} />
+                </div>
+              )}
+
               {/* 2026-07-16: 上传设计稿 + 备注栏已移除 — 文件上传统一走 /contact/; 批量折扣色块通过 ProductQuoteProvider context 联动右栏 QuoteCalculator */}
               <div className="mt-6">
                 <QuantityTierInteractive locale={locale} />
@@ -516,18 +556,34 @@ export default function ProductPage({
                 dangerouslySetInnerHTML={{ __html: longDesc }}
               />
               
-              {/* 相关博客链接 */}
-              {relatedBlog && (
+              {/* V3.7 DoD 7 (wedding) + V3.8 集群 A 纸袋一击四词 — 3-5 内部链接 */}
+              {relatedBlogs && relatedBlogs.length > 0 && (
                 <div className="mt-6 pt-6 border-t border-gray-100">
-                  <p className="text-sm text-gray-500 mb-2">
-                    {locale === 'zh-hk' ? '延伸閱讀：' : locale === 'en' ? 'Related Reading:' : '関連記事：'}
+                  <p className="text-sm text-gray-500 mb-3 font-semibold">
+                    {isPaperBagsCategory
+                      ? (locale === 'zh-hk' ? '📦 紙袋印刷延伸閱讀：' : locale === 'en' ? '📦 Related Paper Bag Printing Guides:' : '📦 紙袋印刷関連ガイド：')
+                      : (locale === 'zh-hk' ? '📚 婚禮印刷延伸閱讀：' : locale === 'en' ? '📚 Related Wedding Printing Guides:' : '📚 ブライダル印刷関連ガイド：')}
                   </p>
-                  <a
-                    href={`${localePrefix}/blog/${relatedBlog}/`}
-                    className="inline-flex items-center text-[#2873F5] hover:underline font-medium"
-                  >
-                    {locale === 'zh-hk' ? '了解更多關於此產品的知識 →' : locale === 'en' ? 'Learn more about this product →' : 'この製品について詳しく知る →'}
-                  </a>
+                  <ul className="space-y-2">
+                    {relatedBlogs.map((b) => {
+                      const title = locale === 'zh-hk' ? b.titleZh : locale === 'en' ? b.titleEn : b.titleJa;
+                      // V3.8 集群 A: paper-bags 类目页 / PDP 用 isCategory 区分路径
+                      const href = b.isCategory
+                        ? `${localePrefix}/category/${b.slug.replace('category/', '')}/`
+                        : `${localePrefix}/blog/${b.slug}/`;
+                      return (
+                        <li key={b.slug}>
+                          <a
+                            href={href}
+                            className="inline-flex items-center text-[#2873F5] hover:underline font-medium text-sm"
+                          >
+                            <span className="mr-1">→</span>
+                            <span>{title}</span>
+                          </a>
+                        </li>
+                      );
+                    })}
+                  </ul>
                 </div>
               )}
             </section>
@@ -564,6 +620,11 @@ export default function ProductPage({
                 <RegionalContent locale={locale} type="expertIntro" />
               </p>
             </div>
+            {/* V3.7 DoD 5: 6 件整套 vs 竞品 3 件对比 (ZprintPro vs e-print vs intuan) */}
+            {isWeddingCategory && product.category_slug === 'wedding-invitations' && (
+              <WeddingBundle locale={locale} productSlug={product.slug} />
+            )}
+
             <div className="text-center space-y-3">
               <p className="text-sm text-gray-500">
                 <RegionalContent locale={locale} type="shipping" />

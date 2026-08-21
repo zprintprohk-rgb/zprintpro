@@ -3739,16 +3739,16 @@ const postersContent: Record<string, CategoryLocaleContent> = {
 // =============================================================================
 const paperBagsContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
-    h2: '香港紙袋印刷 — 白卡／牛皮／特種紙，100 個起訂，品牌包裝首選',
+    h2: '香港紙袋印刷、紙袋訂製、訂做紙袋 — 白卡／牛皮／特種紙，100 個起訂，印刷紙袋品牌包裝首選',
     coreAdvantages: {
       title: '核心競爭優勢',
       items: [
         {
-          heading: '1. 全材質覆蓋：白卡紙到特種紙，滿足所有品牌定位',
+          heading: '1. 全材質覆蓋：印刷紙袋／紙袋印刷／紙袋訂製／訂做紙袋一站搞定',
           points: [
             '提供白卡紙、牛皮紙、黑卡紙、珠光紙、紋理紙、環保再生紙等 20+ 材質選擇',
-            '滿足「紙袋印刷 香港」、「牛皮紙袋」、「禮品紙袋」、「品牌紙袋」等高搜索量關鍵詞',
-            '適用於零售購物袋、禮品包裝、活動贈品、餐飲外帶、化妝品包裝等多元場景',
+            '覆蓋「印刷紙袋」、「紙袋印刷 香港」、「紙袋訂製」、「訂做紙袋」4 大高搜索量關鍵詞，一次類目加強 = 4 詞同進首頁',
+            '適用於零售購物袋、禮品包裝、活動贈品、餐飲外帶、化妝品包裝、婚禮回禮等多元場景',
           ],
         },
         {
@@ -3805,9 +3805,10 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
     serviceNodes: {
       title: '本地化服務節點',
       items: [
-        { title: '免費刀模設計', description: '專業設計師提供紙袋展開圖設計，確保模切精準和糊袋牢固' },
+        { title: '免費刀模設計', description: '專業設計師提供紙袋展開圖設計，確保模切精準和糊袋牢固，訂做紙袋流程最關鍵一步' },
         { title: '提手選配諮詢', description: '根據品牌風格和預算推薦最適提手材質和顏色，提升整體質感' },
         { title: '承重測試報告', description: '提供紙袋承重測試，確保符合使用需求，避免提手斷裂尷尬' },
+        { title: '紙袋訂製 4 步流程', description: 'WhatsApp 提交尺寸數量 → 30 秒 AI 即時報價 → 免費打樣確認 → 3-5 天順豐直送港九新界' },
       ],
     },
     buyingGuide: {
@@ -3840,19 +3841,24 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
       { q: '紙袋設計有什麼要求？', a: '需要提供展開圖（AI/PDF），300dpi，CMYK，預留 3mm 出血位和糊位。' },
       { q: '香港港島、九龍、新界都可以送貨嗎？', a: '可以。紙袋可按箱規安排順豐或貨車；多分店可先送中央倉再分發。大量紙袋建議預約升降機時段以利卸貨。' },
       { q: '可以先報價再上傳刀模嗎？', a: '可以。請提供袋型（平底／方底）、尺寸、紙材克重、印刷色數、提手類型與數量；可先取得數碼／柯式報價，刀模確認後再批量生產以降低重工風險。' },
+      // V3.8 集群 A 纸袋一击四词 (8/21 K3 拍板) — 4 词 FAQ 加厚
+      { q: '印刷紙袋 100 個起印大概多少錢？', a: '數碼印刷 100 個起印，HK$1.8-3.5/個；柯式印刷 1,000 個以上 HK$1.5/個 起，5,000 個以上階梯折扣 15-25%。具體報價看尺寸、材質、提手。' },
+      { q: '紙袋印刷 最快幾耐可以取貨？', a: '數碼印刷 3-5 天；柯式印刷 5-7 天；急件 2-3 天可議。打樣 2-3 天，順豐即日派件覆蓋港九新界。' },
+      { q: '紙袋訂製 流程係點？', a: '4 步：① WhatsApp 提交尺寸數量 → ② 30 秒 AI 即時報價 → ③ 免費打樣確認 → ④ 3-5 天順豐直送。旺季建議提早 2-3 星期落單預留打樣時間。' },
+      { q: '訂做紙袋 邊種材質最抵用？', a: '牛皮紙 (200g) 自帶環保文創感，HK$1.5/個 起最經濟，適合咖啡店、手作品牌；白卡紙 (250g) 印刷精細 HK$1.8/個 起，服裝美妝首選；珠光紙 + 燙金升級款 HK$3.5/個 起，婚禮回禮適用。' },
     ],
   },
   en: {
-    h2: 'Paper Bag Printing — White Card / Kraft / Specialty Paper, From 100 pcs, Brand Packaging Essential',
+    h2: 'Custom Paper Bags & Paper Bag Printing — White Card / Kraft / Specialty Paper, From 100 pcs, US Brand Packaging Essential',
     coreAdvantages: {
       title: 'Why Choose ZprintPro for Paper Bags?',
       items: [
         {
-          heading: '1. Full Material Range: White Card to Specialty Papers',
+          heading: '1. Full Material Range: Paper Bag Printing + Kraft Bags + Gift Bags One-Stop',
           points: [
             '20+ material options: white card, kraft paper, black card, pearl paper, textured paper, and eco recycled paper.',
-            'Covers high-search keywords: "paper bag printing", "kraft paper bags", "gift bags", "branded paper bags".',
-            'Ideal for retail shopping bags, gift packaging, event giveaways, food takeaway, and cosmetics packaging.',
+            'Covers 4 high-search keywords: "custom paper bags", "paper bag printing", "kraft paper bags", "gift bags" — single category boost can move all 4 to page 1.',
+            'Ideal for retail shopping bags, gift packaging, event giveaways, food takeaway, cosmetics packaging, and wedding favors.',
           ],
         },
         {
@@ -3909,9 +3915,10 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
     serviceNodes: {
       title: 'Local Service Points',
       items: [
-        { title: 'Free Dieline Design', description: 'Professional designers provide paper bag dieline design ensuring precise die-cutting and secure gluing.' },
+        { title: 'Free Dieline Design', description: 'Professional designers provide paper bag dieline design ensuring precise die-cutting and secure gluing — the most critical step for custom paper bags.' },
         { title: 'Handle Selection Consultation', description: 'Recommend optimal handle material and color based on brand style and budget for enhanced overall quality.' },
         { title: 'Load Capacity Testing', description: 'Paper bag load testing provided to ensure requirements are met and prevent handle breakage embarrassment.' },
+        { title: 'Custom Paper Bags 4-Step Process', description: 'WhatsApp dimensions + quantity → 30-second AI instant quote → Free sample confirmation → 3-5 day production + DHL Express 2-4 days worldwide.' },
       ],
     },
     buyingGuide: {
@@ -3942,19 +3949,24 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
       { q: 'What are the design file requirements?', a: 'Dieline design required (AI/PDF), 300dpi, CMYK, 3mm bleed and glue area.' },
       { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days. Bulk orders can be arranged for warehouse or office delivery.' },
       { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit bag size, paper type, handle style, quantity, and finishing options for a quote first. After confirmation, upload your AI / PDF file with dieline design. Our prepress team will check die line accuracy and bleed.' },
+      // V3.8 Cluster A: 4-word FAQ (8/21 K3)
+      { q: 'How much do custom paper bags cost per piece for 100 pcs?', a: 'Digital printing from 100 pcs starts at US$0.23/pc. Offset runs of 1,000+ drop to US$0.19/pc. 5,000+ volumes unlock 15-25% tier discounts. Final price depends on size, paper, and handle.' },
+      { q: 'What is the fastest turnaround for paper bag printing?', a: 'Digital 3-5 business days. Offset 5-7 business days. Rush 2-3 days available. DHL Express delivers in 2-4 days to US/UK/AU.' },
+      { q: 'What is the custom paper bags process?', a: '4 steps: ① WhatsApp dimensions + quantity → ② 30-second AI instant quote → ③ Free sample confirmation → ④ 3-5 day production + DHL Express 2-4 days worldwide.' },
+      { q: 'Which paper material is most cost-effective for kraft paper bags?', a: '200gsm kraft paper is the most economical at US$0.19/pc for 1,000+ — perfect for coffee shops, eco brands, and handmade goods. White card (250gsm) at US$0.23/pc suits fashion/beauty retail. Pearl paper + foil stamping (US$0.45/pc) is the wedding favor upgrade.' },
     ],
   },
   ja: {
-    h2: '紙袋印刷 — 白カード／クラフト／特殊紙、100個から、ブランドパッケージの定番',
+    h2: '紙袋印刷・紙袋 オーダーメイド・クラフト紙袋 — 白カード／クラフト／特殊紙、100個から、ブランドパッケージの定番',
     coreAdvantages: {
       title: 'ZprintPro 紙袋印刷の強み',
       items: [
         {
-          heading: '1. 全材質対応：白カードから特殊紙まで',
+          heading: '1. 全材質対応：紙袋印刷・紙袋 オーダーメイド・クラフト紙袋をワンストップ',
           points: [
             '白カード紙、クラフト紙、黒カード紙、パール紙、テクスチャ紙、エコ再生紙など20種類以上の材質を選択可能。',
-            '「紙袋印刷」、「クラフト紙袋」、「ギフト紙袋」、「ブランド紙袋」などの高検索ボリュームキーワードをカバー。',
-            '小売ショッピングバッグ、ギフト包装、イベント配布、食品テイクアウト、化粧品包装など多様なシーンに対応。',
+            '4大検索キーワード「紙袋印刷」「紙袋 オーダーメイド」「クラフト紙袋」「ギフト紙袋」をカバー。1回のカテゴリ強化で4語同時に1ページ目入り可能。',
+            '小売ショッピングバッグ、ギフト包装、イベント配布、食品テイクアウト、化粧品包装、ブライダルギフトなど多様なシーンに対応。',
           ],
         },
         {
@@ -4009,11 +4021,12 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
       ],
     },
     serviceNodes: {
-      title: 'ローカルサービス拠点',
+      title: '現地サービスポイント',
       items: [
-        { title: '無料展開図デザイン', description: 'プロデザイナーが紙袋の展開図をデザイン。精密な抜き型と堅牢な糊付けを確保。' },
-        { title: '取っ手選び相談', description: 'ブランドのスタイルと予算に応じて最適な取っ手の材質と色を推奨。全体の質感を向上。' },
-        { title: '耐荷重テスト報告', description: '紙袋の耐荷重テストを提供。使用ニーズに適合し、取っ手の断裂を防ぎます。' },
+        { title: '無料展開図デザイン', description: 'プロのデザイナーが紙袋の展開図を設計し、精密な抜き型と強固な糊付けを保証 — 紙袋 オーダメイドの最重要ステップ。' },
+        { title: '取っ手選定相談', description: 'ブランドスタイルと予算に基づいて最適な取っ手の材質と色を推奨し、全体の質感を向上させます。' },
+        { title: '耐荷重テストレポート', description: '紙袋の耐荷重テストを提供し、使用要件を満たし、取っ手の破損を防ぎます。' },
+        { title: '紙袋 オーダメイド 4ステップ', description: 'WhatsAppでサイズと数量を送信 → 30秒AI即時見積もり → 無料サンプル確認 → 3-5日DHL Expressで全世界2-4日配送。' },
       ],
     },
     buyingGuide: {
@@ -4043,7 +4056,12 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
       { q: '箔押しやエンボスはできますか？', a: 'はい。箔押し、エンボス、デボス、局部UVなど多様な加工が可能です。' },
       { q: '紙袋のデザイン要件は？', a: '展開図が必要（AI／PDF）、300dpi、CMYK、3mmのbleedと糊付けエリア。' },
       { q: '日本全国に配送していますか？', a: 'はい。東京・大阪・名古屋など日本全国へ DHL / FedEx で配送します。大口注文は倉庫やオフィスへの配送も調整可能です。' },
-      { q: 'デザインファイルをアップロードする前に見積もりは取得できますか？', a: 'はい。まず紙袋サイズ、紙タイプ、取っ手スタイル、数量、加工オプションをご提出ください。確認後、展開図付きのAI／PDFファイルをアップロードします。印前チームが抜き型の精度、bleedをチェックします。' },
+      { q: 'デザインファイルをアップロードする前に見積もりできますか？', a: 'はい。袋のサイズ、紙質、取っ手の種類、数量、印刷オプションをお知らせいただければ、見積もり可能です。確認後、AI / PDFファイルと展開図デザインをお送りください。プリプレスチームが展開図の精度と塗り足しを確認します。' },
+      // V3.8 クラスタA：4語FAQ (8/21 K3)
+      { q: 'クラフト紙袋 100個から印刷した場合の単価は？', a: 'デジタル印刷100個から HK$1.8/個〜。オフセット印刷1,000個以上はHK$1.5/個〜、5,000個以上は15-25%の段階割引あり。最終単価はサイズ・材質・取っ手により異なります。' },
+      { q: '紙袋印刷の最短納期は？', a: 'デジタル印刷 3-5営業日。オフセット印刷 5-7営業日。特急 2-3営業日対応可能。DHL Expressで全世界2-4日配送。' },
+      { q: '紙袋 オーダメイドの注文流程は？', a: '4ステップ：① WhatsAppでサイズと数量を送信 → ② 30秒AI即時見積もり → ③ 無料サンプル確認 → ④ 3-5日生産 + DHL Express全世界2-4日配送。繁忙期は2-3週間前のご注文推奨。' },
+      { q: 'クラフト紙袋で一番コストパフォーマンスが高い材質は？', a: '200gクラフト紙が一番お得で HK$1.5/個〜（1,000個以上）、カフェ・エコブランド・手作り商品に最適。白カード紙（250g）は HK$1.8/個〜でアパレル・美容小売向け。パール紙 + 箔押しアップグレード版は HK$3.5/個〜でブライダルギフト適用。' },
     ],
   },
 };
@@ -4600,279 +4618,314 @@ const greetingCardsContent: Record<string, CategoryLocaleContent> = {
 };
 
 const weddingInvitationsContent: Record<string, CategoryLocaleContent> = {
-  'zh-hk': {
-    h2: '喜帖印刷 · 50 套起印 · 整套婚慶配套 · 燙金 / UV / 活版工艺',
-    coreAdvantages: {
-      title: '為何選擇智印港的喜帖印刷?',
-      items: [
-        {
-          heading: '1. 整套婚慶配套:喜帖 + Save the Date + 感謝卡 + 節目單 + 菜單 + 席位圖',
-          points: [
-            '6 大件配套一站印齊,享 85 折優惠 + 免費寄樣,適合婚慶全套 / 海外婚禮 / 教堂 / 酒店婚禮。',
-            '全球婚慶印刷市場 $13B+ (Bonafide 2025),喜帖 $4.29B CAGR 6.3%,是名片市場 ($1.2B) 3.5x 大。',
-            '100 套以上享 9 折,200 套以上享 85 折,500 套以上免費寄樣,婚慶專屬階梯折扣。',
-          ],
-        },
-        {
-          heading: '2. 6 大經典工藝 + 5 大紙材 + 燙玫瑰金 / 活版最受歡迎',
-          points: [
-            '6 大工藝:燙金 (金/銀/玫瑰金/香檳金)、UV 局部、活版印刷、模切異形、雕凹壓印、貼金邊。',
-            '5 大紙材:300g 棉紙 (質感首選)、350g 剛古紙、300g 銅版紙、特種金 / 銀卡紙、再生紙 (FSC)。',
-            '信封配套 + 客製姓名印刷 (每套 +$0.20),適配中式喜帖 + 西式喜帖全場景。',
-          ],
-        },
+    'zh-hk': {
+      h2: '香港喜帖印刷服務 2026 · 中式 / 西式 / 教堂 / 集團婚禮 4 大場景一站式指南',
+      coreAdvantages: {
+        title: '為何選擇智印港的喜帖印刷?',
+        items: [
+          {
+            heading: '1. 4 大婚禮場景一站式覆蓋:中式喜帖 + 西式燙金 + 教堂 + 集團婚禮',
+            points: [
+              '2026 龍年香港傳統結婚大年,婚姻登記處預計全年結婚登記超過 50,000 對,帶動婚慶印刷市場規模突破 HK$15 億',
+              '4 大場景完整覆蓋:中式傳統龍鳳喜帖、西式燙金邀請卡、教堂婚禮卡、集團婚禮紀念卡,100-500 個小批量定制',
+              '全球婚慶印刷市場 $13B+ (Bonafide 2025),喜帖 $4.29B CAGR 6.3%,是名片市場 ($1.2B) 3.5x 大',
+            ],
+          },
+          {
+            heading: '2. 5 種材質 + 6 種工藝靈活組合 + 小批量 50 個起印',
+            points: [
+              '5 種材質:白卡紙 / 珠光紙 / 萊妮紋紙 / 棉紙 / 燙金專用紙,30+ 種材質樣本免費索取',
+              '6 種熱門工藝:燙玫瑰金 + 擊凸龍鳳 (中式奢華) / 燙金 + UV / 對裱 / 雷射雕刻 / Pantone / 邊緣燙金',
+              '最小起訂 50 個,100 個起享 9 折 + 免費設計,婚慶套裝 9 折 (喜帖 + 信封 + 禮袋 + 席卡 + 桌牌 + 迎賓牌 + 利是封)',
+            ],
+          },
+          {
+            heading: '3. 順豐本地 24h + DHL 全球 2-4 天配送,5 天免費打樣',
+            points: [
+              '本地客戶:順豐港九新界 24h 達,離島 1-2 天,滿 HK$500 免費上門',
+              '海外客戶:DHL 全球 2-4 天直送 50+ 國家,實時追蹤號碼 + 清關協助',
+              '5 天免費打樣,確認後正式下單;深圳自有印刷廠 2008 年起服務全球,品質保證',
+            ],
+          },
+        ],
+      },
+      materialTable: {
+        title: '5 種喜帖材質對比',
+        subtitle: '香港婚慶市場最常用的 5 種喜帖材質,每種各有特點和適用場景。',
+        columns: ['材質', '特性', '適用場景'],
+        rows: [
+          { material: '白卡紙 250-350g', features: '純白挺直,百搭', scenarios: '西式標準 / 教堂婚禮 / 集團婚禮' },
+          { material: '珠光紙 250-300g', features: '珍珠光澤,奢華', scenarios: '中式奢華 / 西式晚宴 / 集團婚禮' },
+          { material: '萊妮紋紙 250-300g', features: '橫條紋理,質感', scenarios: '西式標準 / 教堂婚禮' },
+          { material: '棉紙 (Linen) 250-300g', features: '柔和織物感,文青', scenarios: '教堂 / 森林 / 文青婚禮' },
+          { material: '燙金專用紙 250-300g', features: '啞面燙金附著力最佳', scenarios: '燙金喜帖首選' },
+        ],
+      },
+      specialOptions: {
+        title: '6 種熱門工藝對比',
+        items: [
+          { name: '燙玫瑰金 + 擊凸龍鳳', description: '2026 流行中式奢華標配,新人姓名 + 結婚標誌 3D 立體觸感。單個加 HK$ 1-3。' },
+          { name: '燙金 + UV 局部上光', description: '西式經典工藝,燙金新人姓名 + UV 突出結婚標誌。單個加 HK$ 1-3。' },
+          { name: '對裱 (雙層紙)', description: '中式喜帖常見,兩層紙貼合增加份量感。單個加 HK$ 2-4。' },
+          { name: '雷射雕刻', description: '西式奢華 / 高檔喜帖,精細花紋切穿頂層紙。單個加 HK$ 3-6。' },
+          { name: 'Pantone 專色印刷', description: '婚禮主題色精準還原,適合品牌色婚禮。單個加 HK$ 1-2。' },
+          { name: '邊緣燙金', description: '高檔現代風,卡片 3 邊燙金。單個加 HK$ 2-5。' },
+        ],
+      },
+      techSpecs: {
+        title: '喜帖印刷技術參數',
+        items: [
+          { label: '印刷方式', value: '柯式印刷 (CMYK / Pantone 專色) + 數碼印刷 (小批量)' },
+          { label: '標準尺寸', value: 'A5 (148×210mm) / 13×18cm / 12×18cm / 14×20cm (摺卡)' },
+          { label: '紙張厚度', value: '250-350g (常用 250g / 300g / 350g 3 檔)' },
+          { label: '最小起訂量', value: '50 個 (小批量試水) / 100 個 (中型婚禮最經濟)' },
+          { label: '生產週期', value: '標準 7-10 個工作天,急件 5 天 (+30%)' },
+          { label: '運費', value: '順豐本地 24h 達 / DHL 全球 2-4 天 (50+ 國家直送)' },
+          { label: '設計服務', value: '100 個起免費設計,5 張材質樣本免費索取' },
+          { label: '付款方式', value: 'PayPal / 銀行電匯 (DBS HK) / 微信 QR / 支付寶 QR' },
+        ],
+      },
+      serviceNodes: {
+        title: '智印港香港本地服務節點',
+        items: [
+          { title: '5 張材質樣本免費寄送', description: '白卡 / 珠光 / 萊妮紋 / 棉 / 燙金專用 5 種材質,免費順豐到付,當日寄出 24h 達' },
+          { title: '設計師 24h 出稿', description: '微信 / WhatsApp / 電郵確認,K3 真實身份 ≤ 2 小時回覆,3 輪免費修改' },
+          { title: '每日生產進度更新', description: '印刷 + 燙金 + 對裱 + 摺卡 4 大工序實時反饋,生產全程透明' },
+          { title: '順豐本地 24h 配送', description: '港九新界 24h 達,離島 1-2 天,滿 HK$500 免費上門' },
+          { title: 'DHL 全球 2-4 天直送', description: '海外 50+ 國家,實時追蹤號碼 + 清關協助' },
+          { title: '7 天質量保證 + 售後', description: '免費重印 (質量問題) / 加印折扣 (滿意推薦)' },
+        ],
+      },
+      buyingGuide: {
+        title: '喜帖印刷選購指南 4 大決策',
+        paragraphs: [
+          '第一步:定婚禮風格 — 中式喜帖選燙金 + 紅色主調,西式教堂選活版 + 棉紙,海外婚禮選整套 6 件配套。風格定得清,工藝同紙材即刻收窄。',
+          '第二步:選材質 — 白卡紙 (預算) / 珠光紙 (中奢華) / 萊妮紋紙 (質感) / 棉紙 (高端) / 燙金專用紙 (燙金首選)。5 種材質樣本免費索取,先比再印。',
+          '第三步:選工藝組合 — 燙金 1 層 (90% 喜帖標配) / 燙玫瑰金 + 擊凸龍鳳 (中式奢華) / 燙金 + UV (西式經典) / 雷射雕刻 (高端)。工藝越多,質感越好,成本越高。',
+          '第四步:選數量 — 50 個 (試水) / 100 個 (中型婚禮最經濟) / 300 個 (大型婚禮) / 500 個 (超大型 / 婚慶公司備用)。數量越多,單價越低。',
+          '婚慶套裝 9 折優惠:喜帖 + 信封 + 婚禮禮袋 + 席卡 + 桌牌 + 迎賓牌 + 利是封 一站印齊,享 9 折 + 免費寄樣,適合婚慶全套 / 海外婚禮 / 教堂 / 酒店婚禮。',
+        ],
+        links: [
+          { label: '婚慶整套配套指南', href: '/zh-hk/blog/wedding-invitation-pricing-guide/' },
+          { label: '喜帖 vs 賀卡 vs 貼紙', href: '/zh-hk/category/greeting-cards/' },
+          { label: '婚宴枱卡', href: '/zh-hk/blog/wedding-table-card-printing-guide/' },
+          { label: '婚嫁利是封', href: '/zh-hk/blog/wedding-red-packet-printing-guide/' },
+        ],
+      },
+      faq: [
+        { q: '喜帖最小起訂量是多少?', a: '智印港喜帖 50 個起訂,適合小型婚禮 (30 人以下) 試水。100 個是最經濟起步,特殊工藝如雷射雕刻需 200 個起。' },
+        { q: '喜帖可以印新人姓名嗎?每個名字不同可以嗎?', a: '可以。新人姓名、結婚日期、結婚標誌都可個性化定製,提供高解析度向量檔 (AI / EPS / PDF) 即可。每個名字不同單個加 HK$ 1-3。' },
+        { q: '喜帖交期幾耐?急件可以幾天?', a: '標準 7-10 個工作天,急件可壓縮至 5 天 (加 30%)。婚禮建議提前 1 個月下單,佳節 (5 月、10-12 月) 建議提前 2 個月。' },
+        { q: '喜帖 + 信封 + 婚禮禮袋可以一起訂嗎?有套裝優惠嗎?', a: '可以。智印港提供婚慶印刷套裝 — 喜帖 + 信封 + 婚禮禮袋 + 席卡 + 桌牌 + 迎賓牌 + 利是封,套裝價格 9 折。WhatsApp 19880851334 報價。' },
+        { q: '喜帖可以寄樣本嗎?打樣費多少?', a: '免費寄 5 張材質樣本 (順豐到付)。數碼打樣 (1 張實物樣本) 收費 HK$ 200-500,正式下單 100 個以上可全額抵扣。' },
       ],
     },
-    materialTable: {
-      title: '材質工藝詳解',
-      subtitle: '喜帖常用材質與應用',
-      columns: ['材質類型', '關鍵特性', '適用場景'],
-      rows: [
-        { material: '300g 高級棉紙 (含棉纖維)', features: '質感奢華 / 觸感細膩 / 高端首選', scenarios: '高端婚禮 / 教堂 / 酒店 / 海外' },
-        { material: '350g 剛古紙 / Conqueror', features: '挺括 / 紋理獨特 / 經典', scenarios: '中高端婚禮 / 品牌婚慶' },
-        { material: '300g 高級銅版紙', features: '色彩鮮豔 / 表面光亮 / 經濟', scenarios: '大量派發 / 經濟型婚禮' },
-        { material: '特種金 / 銀卡紙', features: '金屬光澤 / 視覺衝擊 / 奢華', scenarios: '中式喜帖 / 慶典喜帖' },
-        { material: 'FSC 再生紙 (環保認證)', features: '可回收 / 環保認證 / 永續', scenarios: '環保婚禮 / 永續品牌' },
+
+    en: {
+      h2: 'Custom Wedding Invitations 2026: Chinese-Style, Western, Church & Group Wedding Full Service Guide',
+      coreAdvantages: {
+        title: 'Why Choose ZprintPro for Wedding Invitation Printing?',
+        items: [
+          {
+            heading: '1. 4 Wedding Scenarios Full Coverage: Chinese + Western Foil + Church + Group',
+            points: [
+              '2026 dragon year is Hong Kong traditional peak wedding season, Marriage Registry expects 50,000+ registrations driving HK$1.5 billion wedding printing market',
+              '4 scenarios fully covered: Chinese dragon-phoenix, Western foil, church ceremony, group wedding cards, 50-500 piece small-batch custom',
+              'Global wedding printing market $13B+ (Bonafide 2025), invitation submarket $4.29B with 6.3% CAGR, 3.5x larger than business card market',
+            ],
+          },
+          {
+            heading: '2. 5 Materials + 6 Finishing Options + Small Batch 50 Pieces MOQ',
+            points: [
+              '5 materials: white card / pearl / linen / cotton / foil-ready paper, 30+ samples free request',
+              '6 popular finishing: rose gold + dragon emboss (Chinese luxury) / foil + UV / duplex / laser engraving / Pantone / edge foiling',
+              'MOQ 50 pieces, 100+ gets 9% off + free design, wedding bundle 10% off (invitation + envelope + favor bag + place card + table card + welcome sign + red packet)',
+            ],
+          },
+          {
+            heading: '3. DHL Global 2-4 Days + 5-Day Free Proofing',
+            points: [
+              'Local SF Express 24h HK,離島 1-2 days, free pickup over HKD 500',
+              'International DHL 2-4 days to 50+ countries, real-time tracking + customs support',
+              '5-day free proofing then formal order; Shenzhen in-house factory since 2008, quality guarantee',
+            ],
+          },
+        ],
+      },
+      materialTable: {
+        title: '5 Wedding Invitation Materials Compared',
+        subtitle: '5 most popular materials in Hong Kong 2026 wedding market, each with unique characteristics and best-fit scenarios.',
+        columns: ['Material', 'Features', 'Best For'],
+        rows: [
+          { material: 'White card 250-350g', features: 'Pure white, versatile', scenarios: 'Western standard / church / group wedding' },
+          { material: 'Pearl paper 250-300g', features: 'Pearl luster, luxury', scenarios: 'Chinese luxury / Western evening / group' },
+          { material: 'Linen paper 250-300g', features: 'Horizontal texture, tactile', scenarios: 'Western / church wedding' },
+          { material: 'Cotton paper 250-300g', features: 'Soft fabric feel, literary', scenarios: 'Church / forest / literary wedding' },
+          { material: 'Foil-ready paper 250-300g', features: 'Best foil adhesion, matte', scenarios: 'Foil invitation first choice' },
+        ],
+      },
+      specialOptions: {
+        title: '6 Popular Finishing Options',
+        items: [
+          { name: 'Rose gold foil + dragon emboss', description: '2026 trending Chinese luxury, 3D tactile names + monogram. +HKD 1-3/piece.' },
+          { name: 'Gold foil + spot UV', description: 'Western classic, foil names + UV highlights monogram. +HKD 1-3/piece.' },
+          { name: 'Duplex (double layer)', description: 'Common in Chinese invitations, two paper layers laminated. +HKD 2-4/piece.' },
+          { name: 'Laser engraving', description: 'Western luxury, fine patterns cut through top paper. +HKD 3-6/piece.' },
+          { name: 'Pantone spot color', description: 'Exact wedding theme color match. +HKD 1-2/piece.' },
+          { name: 'Edge foiling', description: 'Modern high-end, foil on all 3 edges. +HKD 2-5/piece.' },
+        ],
+      },
+      techSpecs: {
+        title: 'Wedding Invitation Technical Specs',
+        items: [
+          { label: 'Printing', value: 'Offset (CMYK / Pantone spot) + Digital (small batch)' },
+          { label: 'Standard sizes', value: 'A5 (148×210mm) / 13×18cm / 12×18cm / 14×20cm (folded)' },
+          { label: 'Paper weight', value: '250-350g (3 tiers: 250g / 300g / 350g)' },
+          { label: 'MOQ', value: '50 pieces (trial) / 100 pieces (most economical)' },
+          { label: 'Production', value: 'Standard 7-10 working days, rush 5 days (+30%)' },
+          { label: 'Shipping', value: 'SF Express local 24h / DHL global 2-4 days (50+ countries)' },
+          { label: 'Design service', value: 'Free design for 100+ pieces, 5 free material samples' },
+          { label: 'Payment', value: 'PayPal / Bank wire (DBS HK) / WeChat QR / Alipay QR' },
+        ],
+      },
+      serviceNodes: {
+        title: 'ZprintPro Hong Kong Local Service',
+        items: [
+          { title: '5 Material Samples Free', description: 'White / pearl / linen / cotton / foil-ready, free SF Express COD, 24h delivery' },
+          { title: 'Designer 24h Draft', description: 'WeChat / WhatsApp / email confirm, K3 ≤ 2 hours reply, 3 free revision rounds' },
+          { title: 'Daily Production Updates', description: 'Print + foil + duplex + fold 4 major processes real-time feedback, full transparency' },
+          { title: 'SF Express Local 24h', description: 'HK 24h delivery,離島 1-2 days, free pickup over HKD 500' },
+          { title: 'DHL Global 2-4 Days', description: 'International 50+ countries, real-time tracking + customs support' },
+          { title: '7-Day Quality Guarantee', description: 'Free reprint (quality issue) / re-order discount (satisfied recommendation)' },
+        ],
+      },
+      buyingGuide: {
+        title: 'Wedding Invitation Buying Guide 4 Decisions',
+        paragraphs: [
+          'Step 1: Define wedding style — Chinese invitation choose foil + red tone, Western church choose letterpress + cotton, destination wedding choose full 6-piece suite. Clear style narrows finishing and material options immediately.',
+          'Step 2: Choose material — white card (budget) / pearl (mid-luxury) / linen (textured) / cotton (premium) / foil-ready (foil first choice). Request 5 material samples free, compare before print.',
+          'Step 3: Choose finishing combo — 1 foil layer (90% standard) / rose gold + dragon emboss (Chinese luxury) / foil + UV (Western classic) / laser engraving (premium). More finishing = better texture, higher cost.',
+          'Step 4: Choose quantity — 50 (trial) / 100 (most economical) / 300 (large wedding) / 500 (extra-large / planner stock). Higher quantity = lower per-piece cost.',
+          'Wedding bundle 10% off: invitation + envelope + favor bag + place card + table card + welcome sign + red packet, all-in-one printing, 10% off + free sample, ideal for full wedding / destination / church / hotel wedding.',
+        ],
+        links: [
+          { label: 'Wedding Invitation Pricing Guide 2026', href: '/en/blog/wedding-invitation-pricing-guide/' },
+          { label: 'Invitation vs Card vs Sticker', href: '/en/category/greeting-cards/' },
+          { label: 'Wedding Table Card Guide', href: '/en/blog/wedding-table-card-printing-guide/' },
+          { label: 'Wedding Red Packet Guide', href: '/en/blog/wedding-red-packet-printing-guide/' },
+        ],
+      },
+      faq: [
+        { q: 'What is the minimum order quantity for wedding invitations?', a: 'ZprintPro MOQ is 50 pieces for small weddings (under 30 guests) trial. 100 pieces is the most economical starting point. Special finishing like laser engraving requires 200+ pieces.' },
+        { q: 'Can each invitation have a different name?', a: 'Yes. Names, dates, and monograms all personalized. Provide high-resolution vector files (AI / EPS / PDF). Per-name variation adds HKD 1-3/piece.' },
+        { q: 'What is the production lead time? Can I rush?', a: 'Standard 7-10 working days, rush can be compressed to 5 days (+30%). Order 1 month before wedding, peak season (May, Oct-Dec) 2 months ahead.' },
+        { q: 'Can invitations + envelopes + favor bags be ordered together? Bundle discount?', a: 'Yes. ZprintPro wedding stationery bundle — invitation + envelope + favor bag + place card + table card + welcome sign + red packet, 10% bundle discount. WhatsApp 19880851334 for bundle quote.' },
+        { q: 'Can I get samples? Proofing cost?', a: 'Free 5 material samples (SF Express COD). Digital proof (1 physical sample) HKD 200-500, full refund on orders 100+ pieces.' },
       ],
     },
-    specialOptions: {
-      title: '特殊加工選項',
-      items: [
-        { name: '燙玫瑰金 (最受歡迎)', description: '玫瑰金屬光澤,提升婚禮奢華感' },
-        { name: '活版印刷 (Letterpress)', description: '傳統工藝,凹字質感,高端婚慶首選' },
-        { name: 'UV 局部上光', description: '凸顯重點元素,觸感立體' },
-        { name: '雕凹壓印 (Engraving)', description: '3D 壓印,質感最奢華' },
-        { name: '模切異形 (Die-Cut)', description: '自定義形狀,告別標準矩形' },
-        { name: '貼金邊 (Gilded Edges)', description: '頁邊金色,提升整體質感' },
-        { name: '信封配套 (C5 / 自訂)', description: '郵寄信封一站搞定' },
-        { name: '客製姓名印刷', description: '每套喜帖印賓客名,$0.20/套起' },
+
+    ja: {
+      h2: 'カスタム結婚式招待状 2026：中式・西洋式・教会式・合同式 フルサービスガイド',
+      coreAdvantages: {
+        title: 'ZprintProの結婚式招待状印刷を選ぶ理由は?',
+        items: [
+          {
+            heading: '1. 4大披露宴シーン ワンストップ対応：中式 + 西洋式箔押し + 教会式 + 合同式',
+            points: [
+              '2026辰年は香港伝統的な結婚ピークシーズン、香港婚姻登記処は年間5万件超の結婚登録が見込まれHK$15億のブライダル印刷市場を形成',
+              '4大シーン完全対応：中華式龍鳳・西洋式箔押し・教会式・合同式紅包、50〜500個小ロット',
+              '世界ブライダル印刷市場$13B+ (Bonafide 2025)、招待状サブマーケット$4.29B 6.3% CAGR、名刺市場 ($1.2B) の3.5倍',
+            ],
+          },
+          {
+            heading: '2. 5素材 + 6加工オプション + 小ロット50枚から',
+            points: [
+              '5素材：白カード / パール / ラインペーパー / コットン / 箔押し用紙、30+素材サンプル無料請求',
+              '6人気加工：ローズゴールド+龍エンボス (中式 luxury) / 箔押し+UV / 二層紙 / レーザー彫刻 / Pantone / エッジ箔押し',
+              '最小発注50枚、100枚以上9%OFF+無料デザイン、ブライダルセット10%割引 (招待状+封筒+引出物袋+席札+テーブルカード+ウェルカムボード+紅包)',
+            ],
+          },
+          {
+            heading: '3. 順豊ローカル24h + DHL全世界2-4日 + 5日無料校正',
+            points: [
+              'ローカル順豊ローカル九龍新界24h納品、離島1-2日、HKD 500以上無料集荷',
+              '海外DHL全世界2-4日50ヶ国直送、リアルタイム追跡+通関サポート',
+              '5日無料校正後正式発注、深圳自社工場2008年創業、品質保証',
+            ],
+          },
+        ],
+      },
+      materialTable: {
+        title: '5種 招待状素材比較',
+        subtitle: '香港ブライダル市場2026年人気5素材、それぞれ独自の特徴と最適シーン。',
+        columns: ['素材', '特徴', '最適シーン'],
+        rows: [
+          { material: '白カード 250-350g', features: '純白、万能', scenarios: '西洋式標準 / 教会式 / 合同式' },
+          { material: 'パール紙 250-300g', features: 'パール光沢、ラグジュアリー', scenarios: '中式 luxury / 西洋式披露宴' },
+          { material: 'ラインペーパー 250-300g', features: '横線テクスチャ、触感', scenarios: '西洋式 / 教会式' },
+          { material: 'コットン紙 250-300g', features: '柔らかい布感、文芸', scenarios: '教会 / 森林 / 文芸披露宴' },
+          { material: '箔押し用紙 250-300g', features: '箔押し密着性最高、マット', scenarios: '箔押し招待状第一選択' },
+        ],
+      },
+      specialOptions: {
+        title: '6種 人気加工オプション',
+        items: [
+          { name: 'ローズゴールド箔押し + 龍エンボス', description: '2026トレンド中式 luxury、立体触感の名前+モノグラム。+HKD 1-3/枚。' },
+          { name: '金箔押し + 部分UV', description: '西洋式クラシック、箔押し名+UVモノグラム強調。+HKD 1-3/枚。' },
+          { name: '二層紙 (Duplex)', description: '中式招待状一般的、二層紙貼合で高級感。+HKD 2-4/枚。' },
+          { name: 'レーザー彫刻', description: '西洋式 luxury、上層紙貫通の繊細パターン。+HKD 3-6/枚。' },
+          { name: 'Pantone特色印刷', description: '披露宴テーマ色完全一致、ブランド色披露宴に最適。+HKD 1-2/枚。' },
+          { name: 'エッジ箔押し', description: '高級モダン、カード3辺箔押し。+HKD 2-5/枚。' },
+        ],
+      },
+      techSpecs: {
+        title: '招待状印刷技術仕様',
+        items: [
+          { label: '印刷方式', value: 'オフセット (CMYK / Pantone特色) + デジタル (小ロット)' },
+          { label: '標準サイズ', value: 'A5 (148×210mm) / 13×18cm / 12×18cm / 14×20cm (二つ折り)' },
+          { label: '紙厚', value: '250-350g (3段階: 250g / 300g / 350g)' },
+          { label: '最小発注数量', value: '50枚 (試作) / 100枚 (経済的スタート)' },
+          { label: '生産期間', value: '標準 7-10営業日、急ぎ 5日 (+30%)' },
+          { label: '配送', value: '順豊ローカル24h / DHL全世界2-4日 (50ヶ国対応)' },
+          { label: 'デザインサービス', value: '100枚以上無料デザイン、5素材サンプル無料' },
+          { label: '支払い方法', value: 'PayPal / 銀行電信送金 (DBS HK) / WeChat QR / Alipay QR' },
+        ],
+      },
+      serviceNodes: {
+        title: 'ZprintPro香港ローカルサービス',
+        items: [
+          { title: '5素材サンプル無料送付', description: '白カード / パール / ラインペーパー / コットン / 箔押し、5種 無料順豊着払い、24h納品' },
+          { title: 'デザイナー24h初稿', description: 'WeChat / WhatsApp / メール確認、≤2時間以内返信、3回無料修正' },
+          { title: '毎日生産進捗更新', description: '印刷+箔押し+二層紙+折加工 4大工程 リアルタイムフィードバック、全工程透明' },
+          { title: '順豊ローカル24h配送', description: '九龍新界24h納品、離島1-2日、HKD 500以上無料集荷' },
+          { title: 'DHL全世界2-4日直送', description: '海外50ヶ国、リアルタイム追跡+通関サポート' },
+          { title: '7日品質保証+アフター', description: '無料再印刷 (品質問題) / 再注文割引 (満足推薦)' },
+        ],
+      },
+      buyingGuide: {
+        title: '招待状印刷 选购ガイド 4大決定',
+        paragraphs: [
+          'ステップ1：披露宴スタイル決定 — 中式招待状は箔押し+赤色、西洋式教会は活版+コットン、海外披露宴はフル6点セット選択。スタイル明確で加工と素材が即絞り込まれる。',
+          'ステップ2：素材選択 — 白カード (予算) / パール (中 luxury) / ラインペーパー (質感) / コットン (高級) / 箔押し用紙 (箔押し第一選択)。5素材サンプル無料請求、比較してから印刷。',
+          'ステップ3：加工組合せ選択 — 箔押し1層 (90%標準) / ローズゴールド+龍エンボス (中式 luxury) / 箔押し+UV (西洋式クラシック) / レーザー彫刻 (高級)。加工多いほど質感アップ、コスト高。',
+          'ステップ4：数量選択 — 50枚 (試作) / 100枚 (経済的) / 300枚 (大型披露宴) / 500枚 (超大型/プランナー予備)。数量多いほど単価安い。',
+          'ブライダルセット10%割引：招待状+封筒+引出物袋+席札+テーブルカード+ウェルカムボード+紅包 ワンストップ印刷、10%OFF+無料サンプル、フル披露宴/海外披露宴/教会式/ホテル披露宴に最適。',
+        ],
+        links: [
+          { label: '結婚式招待状 価格ガイド 2026', href: '/ja/blog/wedding-invitation-pricing-guide/' },
+          { label: '招待状 vs カード vs ステッカー', href: '/ja/category/greeting-cards/' },
+          { label: '結婚式テーブルカード ガイド', href: '/ja/blog/wedding-table-card-printing-guide/' },
+          { label: 'ブライダル紅包 ガイド', href: '/ja/blog/wedding-red-packet-printing-guide/' },
+        ],
+      },
+      faq: [
+        { q: '招待状の最小発注数量は?', a: 'ZprintPro最小発注は50枚 (小型披露宴30名以下試作)。100枚が経済的スタート、レーザー彫刻等の特殊加工は200枚から。' },
+        { q: '招待状ごとに異なる名前を印刷できますか?', a: '可能です。新郎新婦名・挙式日・モノグラム全て個別対応、高解像度ベクターファイル (AI / EPS / PDF) 提供。個別名追加はHKD 1-3/枚。' },
+        { q: '生産期間は? 急ぎできますか?', a: '標準7-10営業日、急ぎ5日 (+30%)。披露宴1ヶ月前発注推奨、繁忙期 (5月/10-12月) 2ヶ月前。' },
+        { q: '招待状 + 封筒 + 引出物袋 一括注文できますか? セット割は?', a: '可能です。ZprintProブライダルセット — 招待状+封筒+引出物袋+席札+テーブルカード+ウェルカムボード+紅包、10%セット割引。WhatsApp 19880851334 セット見積。' },
+        { q: 'サンプルはもらえますか? 校正費は?', a: '5素材サンプル無料 (順豊着払い)。デジタル校正 (1枚実物) HKD 200-500、100枚以上発注で全額返金。' },
       ],
     },
-    techSpecs: {
-      title: '技術參數詳解',
-      items: [
-        { label: '標準尺寸', value: '130×190mm 標準請帖 / 190×260mm 對摺請帖 / 自訂' },
-        { label: '起訂量', value: '50 套起印,100 套享 9 折,200 套享 85 折,500 套免費寄樣' },
-        { label: '打樣時間', value: '數碼打樣 24 小時 / 5 天實體打樣 (含寄樣)' },
-        { label: '量產交期', value: '常規 7-10 工作天,加急 5-7 天可議' },
-        { label: '檔案要求', value: 'AI / PSD / PDF, 300dpi, CMYK, 出血 3mm, 文字轉外框' },
-        { label: '環保認證', value: 'FSC 認證紙 + 大豆油墨 + ISO 9001 + 可回收' },
-      ],
-    },
-    serviceNodes: {
-      title: '本地化服務節點',
-      items: [
-        { title: '30 秒 AI 即時報價', description: '整套 6 件透明定價' },
-        { title: '5 天免費打樣', description: '含實體寄送,確認工藝與色澤' },
-        { title: '順豐本地配送', description: '港島九龍新界滿 HK$500 免費' },
-        { title: 'DHL 全球直送', description: '2-4 天跨境直送海外婚禮場地' },
-      ],
-    },
-    buyingGuide: {
-      title: '喜帖印刷選購指南',
-      paragraphs: [
-        '喜帖印刷第一步先定婚禮風格:中式喜帖選燙金 + 紅色主調,西式教堂婚禮選活版 + 棉紙,海外婚禮選整套 6 件配套一站搞定。風格定得清,工藝同紙材即刻收窄。',
-        '整套婚慶配套 6 大件最划算:喜帖 + Save the Date + 感謝卡 + 節目單 + 菜單 + 席位圖 = 85 折 + 免費寄樣,比單件印省 15-20%。100 套以上才享此優惠。',
-        '燙玫瑰金 (rose gold) 是 2025-2026 婚慶最受歡迎工藝,搭配 UV 局部 + 雕凹壓印形成「奢華三件套」,婚禮質感提升 50%。',
-        '活版印刷 (Letterpress) 仍是高端婚慶首選,凹字質感 + 棉紙組合是經典搭配。預算寬鬆首選,預算緊可選燙金 + UV 局部組合。',
-        '海外婚禮 (Destination Wedding) 注意事項:喜帖需提前 8-12 星期下單,DHL 全球直送 2-4 天,留充足時間給賓客回覆 + 安排行程。',
-      ],
-      links: [
-        { label: '婚慶整套配套指南', href: '/zh-hk/blog/wedding-suite-guide/' },
-        { label: '燙金工藝詳解', href: '/zh-hk/blog/foil-stamping-guide/' },
-        { label: '喜帖 vs 賀卡 vs 貼紙', href: '/zh-hk/category/greeting-cards/' },
-        { label: '婚宴台卡', href: '/zh-hk/category/place-cards/' },
-      ],
-    },
-    faq: [
-      { q: '喜帖印刷最少印幾多套?', a: '50 套起印。100 套享 9 折,200 套享 85 折,500 套免費寄樣。' },
-      { q: '喜帖 + 整套婚慶配套要幾錢?', a: '喜帖 $1.20/套起,整套 6 大件 $25/套起,可分開報價。' },
-      { q: '燙金 / 活版邊種工藝最受歡迎?', a: '燙玫瑰金 (熱門) + UV 局部 (細節提升) + 雕凹 (質感首選) 三大組合最受歡迎。' },
-      { q: '可以加印賓客姓名嗎?', a: '可以。100 套以上享客製姓名印刷,每套加收 $0.20 起。' },
-    ],
-  },
-  en: {
-    h2: 'Wedding Invitation Printing from $1.20 | Full Suite | Foil/UV/Letterpress',
-    coreAdvantages: {
-      title: 'Why Choose ZprintPro for Wedding Invitation Printing?',
-      items: [
-        {
-          heading: '1. Full Wedding Suite: Invitation + Save the Date + Thank You + Program + Menu + Seating',
-          points: [
-            '6-piece bundle in one order, 15% off + free sample. Perfect for full wedding / destination weddings / chapels / hotel weddings.',
-            'Global wedding printing market $13B+ (Bonafide 2025), invitations $4.29B CAGR 6.3% — 3.5x larger than business card market ($1.2B).',
-            '100+ sets 10% off, 200+ 15% off, 500+ free sample shipping — wedding bulk discount tier.',
-          ],
-        },
-        {
-          heading: '2. 6 Signature Finishes + 5 Papers + Rose Gold Foil/Letterpress Most Popular',
-          points: [
-            '6 finishes: foil (gold / silver / rose gold / champagne), spot UV, letterpress, die-cut shapes, engraving embossing, gilded edges.',
-            '5 papers: 300gsm cotton (premium), 350gsm Conqueror, 300gsm art, specialty gold/silver, recycled (FSC).',
-            'Envelope bundling + custom name printing ($0.20/set add-on), fits Chinese + Western wedding styles.',
-          ],
-        },
-      ],
-    },
-    materialTable: {
-      title: 'Material & Finish Guide',
-      subtitle: 'Wedding invitation materials and applications',
-      columns: ['Material Type', 'Key Features', 'Best For'],
-      rows: [
-        { material: '300gsm Premium Cotton (Cotton Fiber)', features: 'Luxury feel / soft touch / premium', scenarios: 'Premium weddings / chapels / hotels / destination' },
-        { material: '350gsm Conqueror', features: 'Sturdy / unique texture / classic', scenarios: 'Mid-high weddings / branded weddings' },
-        { material: '300gsm Premium Art', features: 'Vibrant colors / glossy surface / economic', scenarios: 'Mass distribution / budget weddings' },
-        { material: 'Specialty Gold / Silver Card', features: 'Metallic shine / visual impact / luxury', scenarios: 'Chinese invitations / celebration cards' },
-        { material: 'FSC Recycled (Eco-Certified)', features: 'Recyclable / eco certified / sustainable', scenarios: 'Eco weddings / sustainable brands' },
-      ],
-    },
-    specialOptions: {
-      title: 'Special Processing Options',
-      items: [
-        { name: 'Rose Gold Foil (Most Popular)', description: 'Rose metallic shine, elevates wedding luxury' },
-        { name: 'Letterpress', description: 'Traditional craft, debossed feel, premium wedding first choice' },
-        { name: 'Spot UV', description: 'Highlight elements, tactile 3D feel' },
-        { name: 'Engraving Embossing', description: '3D embossing, most luxurious feel' },
-        { name: 'Die-Cut Shapes', description: 'Custom shapes beyond standard rectangle' },
-        { name: 'Gilded Edges', description: 'Gold page edges, elevate overall feel' },
-        { name: 'Envelope Bundling (C5 / Custom)', description: 'Mailing envelopes included' },
-        { name: 'Custom Name Printing', description: 'Print guest name on each invitation, $0.20/set' },
-      ],
-    },
-    techSpecs: {
-      title: 'Technical Specifications',
-      items: [
-        { label: 'Standard Sizes', value: '5"×7" standard / 7.5"×10" folded / Custom' },
-        { label: 'MOQ', value: '50 sets minimum, 100+ 10% off, 200+ 15% off, 500+ free sample' },
-        { label: 'Proof Time', value: 'Digital proof 24h / 5-day physical proof (with sample shipping)' },
-        { label: 'Production Lead Time', value: 'Standard 7-10 business days, rush 5-7 days' },
-        { label: 'File Requirements', value: 'AI / PSD / PDF, 300dpi, CMYK, 3mm bleed, outlined text' },
-        { label: 'Eco Certifications', value: 'FSC certified + soy ink + ISO 9001 + recyclable' },
-      ],
-    },
-    serviceNodes: {
-      title: 'Localized Service Nodes',
-      items: [
-        { title: '30s AI Instant Quote', description: '6-piece suite transparent pricing' },
-        { title: '5-Day Free Proof', description: 'Physical sample shipping, confirm craft and color' },
-        { title: 'Free Shipping >$99', description: 'USA-wide delivery' },
-        { title: 'DHL Express Global', description: '2-4 day direct shipping to overseas wedding venues' },
-      ],
-    },
-    buyingGuide: {
-      title: 'Wedding Invitation Printing Buying Guide',
-      paragraphs: [
-        'First, define wedding style: Chinese invitation choose foil + red theme, Western chapel choose letterpress + cotton, destination wedding choose full 6-piece suite. Clear style cuts craft and paper choices in half.',
-        'Full wedding suite 6-piece bundle is most cost-effective: invitation + Save the Date + thank you + program + menu + seating chart = 15% off + free sample, saving 15-20% vs single items. Available for 100+ sets only.',
-        'Rose gold foil is the 2025-2026 wedding most popular finish. Combined with spot UV + engraving embossing, the "luxury trio" elevates wedding feel by 50%.',
-        'Letterpress remains premium wedding first choice: debossed feel + cotton paper is the classic combination. Budget-flexible first pick; budget-tight choose foil + spot UV combo.',
-        'Destination wedding notes: invitations need 8-12 weeks lead time, DHL 2-4 day global delivery, leave enough time for guest RSVPs and travel arrangements.',
-      ],
-      links: [
-        { label: 'Full Wedding Suite Guide', href: '/en/blog/wedding-suite-guide/' },
-        { label: 'Foil Stamping Details', href: '/en/blog/foil-stamping-guide/' },
-        { label: 'Invitations vs Greeting Cards vs Stickers', href: '/en/category/greeting-cards/' },
-        { label: 'Wedding Place Cards', href: '/en/category/place-cards/' },
-      ],
-    },
-    faq: [
-      { q: 'What is the minimum order for wedding invitations?', a: '50 sets minimum. 100+ gets 10% off, 200+ 15% off, 500+ free sample shipping.' },
-      { q: 'How much is a full wedding suite?', a: 'Invitations from $1.20/set, full 6-piece suite from $25/set. Itemized quote available.' },
-      { q: 'Which finishes are most popular for weddings?', a: 'Rose gold foil + spot UV + engraving embossing — the 3-finish signature combo.' },
-      { q: 'Can I add guest names to each invitation?', a: 'Yes. 100+ sets get custom name printing at $0.20/set add-on.' },
-    ],
-  },
-  ja: {
-    h2: '結婚式招待状印刷 | 50セットから | フルセット | 箔押し/UV/活版',
-    coreAdvantages: {
-      title: 'ZprintPro の結婚式招待状印刷を選ぶ理由?',
-      items: [
-        {
-          heading: '1. フル結婚セット:招待状 + Save the Date + サンキュー + のしおり + メニュー + 座席表',
-          points: [
-            '6 点セット一括注文、15%OFF + 無料サンプル。フル結婚 / destination wedding / チャペル / ホテル結婚式に最適。',
-            '世界結婚印刷市場 $13B+ (Bonafide 2025)、招待状 $4.29B CAGR 6.3% — 名刺市場 ($1.2B) の 3.5 倍。',
-            '100 セット以上 10%OFF、200 セット以上 15%OFF、500 セット以上無料サンプル配送 — 結婚数量割引。',
-          ],
-        },
-        {
-          heading: '2. 6 大仕上げ + 5 大紙素材 + ローズゴールド箔押し/活版が最も人気',
-          points: [
-            '6 仕上げ:箔押し (金 / 銀 / 玫瑰金 / シャンパン)、スポット UV、活版印刷、抜型、エングレービング エンボス、金縁。',
-            '5 紙素材:300g コットン (プレミアム)、350g コンカラー、300g コート、特殊金 / 銀、再生紙 (FSC)。',
-            '封筒セット + ゲスト名印刷 ($0.20/セット追加)、中式 + 西式結婚式スタイル対応。',
-          ],
-        },
-      ],
-    },
-    materialTable: {
-      title: '素材と工法の詳細',
-      subtitle: '結婚式招待状常用素材と応用',
-      columns: ['素材タイプ', '主要特性', '適用シーン'],
-      rows: [
-        { material: '300g プレミアムコットン (コットン繊維)', features: '高級感 / ソフトタッチ / プレミアム', scenarios: 'プレミアム結婚式 / チャペル / ホテル / destination' },
-        { material: '350g コンカラー', features: '堅牢 / 独特テクスチャ / クラシック', scenarios: '中〜高級結婚式 / ブランド結婚' },
-        { material: '300g プレミアムコート', features: '色彩鮮明 / 光沢表面 / 経済的', scenarios: '大量配布 / 予算結婚式' },
-        { material: '特殊金 / 銀カード', features: 'メタリック光沢 / 視覚インパクト', scenarios: '中式招待状 / 慶祝カード' },
-        { material: 'FSC 再生紙 (エコ認証)', features: 'リサイクル可能 / エコ認証 / 持続可能', scenarios: 'エコ結婚式 / 持続可能ブランド' },
-      ],
-    },
-    specialOptions: {
-      title: '特殊加工オプション',
-      items: [
-        { name: 'ローズゴールド箔押し (最も人気)', description: 'ローズメタリック光沢、結婚の高級感向上' },
-        { name: '活版印刷 (Letterpress)', description: '伝統工芸、凹字触感、プレミアム結婚第一選択' },
-        { name: 'スポット UV', description: '要素強調、触感的 3D 感' },
-        { name: 'エングレービング エンボス', description: '3D エンボス、最高級感' },
-        { name: '抜型 (Die-Cut)', description: '標準矩形を超えるカスタム形状' },
-        { name: '金縁 (Gilded Edges)', description: 'ページ縁金色、全体感向上' },
-        { name: '封筒セット (C5 / カスタム)', description: '郵送封筒込み' },
-        { name: 'ゲスト名印刷', description: '各招待状にゲスト名印刷、$0.20/セット' },
-      ],
-    },
-    techSpecs: {
-      title: '技術仕様詳細',
-      items: [
-        { label: '標準サイズ', value: '130×190mm 標準 / 190×260mm 折 / カスタム' },
-        { label: '最小数量', value: '50 セットから、100+ 10%OFF、200+ 15%OFF、500+ 無料サンプル' },
-        { label: 'サンプル時間', value: 'デジタルサンプル 24 時間 / 5 日実物サンプル (配送込み)' },
-        { label: '量産納期', value: '通常 7-10 営業日、緊急 5-7 日対応可' },
-        { label: 'ファイル要件', value: 'AI / PSD / PDF、300dpi、CMYK、塗りたし 3mm、文字アウトライン' },
-        { label: 'エコ認証', value: 'FSC 認証 + 大豆インク + ISO 9001 + リサイクル可能' },
-      ],
-    },
-    serviceNodes: {
-      title: 'ローカル化サービスノード',
-      items: [
-        { title: '30 秒 AI 即時見積', description: '6 点セット透明価格' },
-        { title: '5 日無料サンプル', description: '実物配送込み、工法と色を確認' },
-        { title: 'DHL 国際 2-4 日', description: '海外結婚式会場へ直接配送' },
-        { title: '米国 $99 以上送料無料', description: '全米 50 州対応' },
-      ],
-    },
-    buyingGuide: {
-      title: '結婚式招待状印刷購入ガイド',
-      paragraphs: [
-        'まず結婚式スタイルを決める:中式招待状は箔押し + 赤テーマ、西式チャペルは活版 + コットン、destination wedding はフル 6 点セット。明確なスタイルで工法と紙素材が半分に。',
-        'フル結婚セット 6 点がお得:招待状 + Save the Date + サンキュー + のしおり + メニュー + 座席表 = 15%OFF + 無料サンプル、単品より 15-20% 節約。100 セット以上限定。',
-        'ローズゴールド箔押しが 2025-2026 結婚で最も人気。スポット UV + エングレービング エンボスとの「高級 3 点セット」で結婚感 50% 向上。',
-        '活版印刷は依然としてプレミアム結婚第一選択:凹字触感 + コットン紙がクラシック組み合わせ。予算柔軟なら第一選択、予算厳しいなら箔押し + スポット UV 組み合わせ。',
-        'Destination wedding 注意点:招待状は 8-12 週間前発注、DHL 2-4 日国際配送、ゲスト RSVP と旅行手配に十分時間を残す。',
-      ],
-      links: [
-        { label: 'フル結婚セットガイド', href: '/ja/blog/wedding-suite-guide/' },
-        { label: '箔押し詳細', href: '/ja/blog/foil-stamping-guide/' },
-        { label: '招待状 vs グリーティングカード vs ステッカー', href: '/ja/category/greeting-cards/' },
-        { label: '披露宴席札', href: '/ja/category/place-cards/' },
-      ],
-    },
-    faq: [
-      { q: '結婚式招待状の最小注文数は?', a: '50 セットから。100+ 10%OFF、200+ 15%OFF、500+ 無料サンプル配送。' },
-      { q: 'フル結婚セットの価格は?', a: '招待状 $1.20/セットから、フル 6 点セット $25/セットから。項目別見積可。' },
-      { q: '結婚で最も人気の仕上げは?', a: 'ローズゴールド箔押し + スポット UV + エングレービング の 3 点仕上げシグネチャー コンボ。' },
-      { q: 'ゲスト名の個別印刷は可能?', a: '可能。100+ セットでゲスト名印刷対応、$0.20/セット追加。' },
-    ],
-  },
 };
 
 const placeCardsContent: Record<string, CategoryLocaleContent> = {

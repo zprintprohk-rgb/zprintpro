@@ -24,9 +24,12 @@ COMPETITOR_TOKENS = ("智印港", "智印印港")
 
 
 def read_gsc(path: Path) -> list[dict]:
-    """读 UTF-8 编码的 CSV (file 实测是 UTF-8,byte0=0xE7 byte1=0x83 byte2=0xAD = UTF-8 热)."""
+    """读 UTF-8 编码的 CSV (兼容 BOM, 8/21 K3 拍板选项 A utf-8-sig).
+    5 周连失根因: GSC UI 导出 csv 含 UTF-8 BOM (0xEF 0xBB 0xBF), decode utf-8 失败导致
+    第一行第一列 = '\\ufeff热门查询' 字段匹配失败, 数据全空, 静默吞错.
+    修复: utf-8-sig 自动 strip BOM (无 BOM 时跟 utf-8 行为一致, 向后兼容)."""
     raw = path.read_bytes()
-    text = raw.decode("utf-8", errors="replace")
+    text = raw.decode("utf-8-sig", errors="replace")
     reader = csv.reader(io.StringIO(text))
     rows = []
     header = None
@@ -195,7 +198,7 @@ def match_signals_to_queue(signal: dict) -> dict:
 
 def update_matrix(boosts: dict, signal: dict) -> dict:
     """读 matrix.json, 给 queue 中每个 ID 加 priority_boost 字段, 应用 delta."""
-    with open(MATRIX_JSON, "r", encoding="utf-8") as f:
+    with open(MATRIX_JSON, "r", encoding="utf-8-sig") as f:  # 8/21 K3 选项 A: utf-8-sig 兼容 BOM
         matrix = json.load(f)
 
     # 初始化 priority_boost 字段（如果还没有）
@@ -329,11 +332,11 @@ def write_daily_report(signal: dict, boosts: dict, changes: list, matrix_path: P
     lines.append("")
     # 排序 boosts, 找 top priority_boost +1 还没覆盖的
     pending_high_boost = []
-    for entry in matrix_path.read_text(encoding="utf-8") and json.loads(matrix_path.read_text(encoding="utf-8"))["queue"]:
+    for entry in json.loads(matrix_path.read_text(encoding="utf-8-sig"))["queue"]:  # 8/21 K3 选项 A
         if entry.get("priority_boost", 0) >= 1:
             covered_ids = {
                 c["id"]
-                for c in json.loads(matrix_path.read_text(encoding="utf-8"))["covered"]
+                for c in json.loads(matrix_path.read_text(encoding="utf-8-sig"))["covered"]  # 8/21 K3 选项 A
             }
             if entry["id"] not in covered_ids:
                 pending_high_boost.append(entry)

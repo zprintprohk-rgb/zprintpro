@@ -60,6 +60,14 @@ export interface BlogPostMeta {
    */
   cover?: Record<Locale, string>;
   source: BlogPostSource;
+  /**
+   * V3.7 §13.4 v3: 目标关键词 — 1 主词 + 3-5 长尾 (BlogPostMeta frontmatter 必填)
+   * 用于: ① GSC 100 词追踪池 ② 内容主题锚定 ③ 排名快照
+   */
+  targetKeywords?: {
+    primary: string;
+    secondary: string[];
+  };
 }
 
 export const defaultCover: Record<Locale, string> = {
@@ -647,6 +655,49 @@ const lpWeddingInvitationPricing: BlogPostMeta = {
     'zh-hk': '準新人、婚禮統籌師、宴會場地必睇。2026 龍年結婚旺季,中式喜帖、西式邀請卡、教堂婚禮、集團婚禮 4 大場景,50-500 個 4 檔實價對比,白卡紙 / 珠光紙 / 萊妮紋紙 / 棉紙 4 種材質 + 燙金 / 燙銀 / UV / 擊凸 6 種工藝,智印港小批量定制 5-10 個工作天交付。',
     en: 'Couples, wedding planners, and venues — 2026 dragon-year wedding season pricing for Chinese-style invites, Western-style cards, church weddings, and group weddings. 4 quantity tiers (50/100/300/500), 4 materials, 6 finishing options, 5-10 working day delivery from Asia factory.',
     ja: 'ご婚約カップル、ウェディングプランナー、式場様へ。2026辰年ブライダルシーズン、中華式招待状・西洋式カード・教会式・合同式4大シーン、50〜500個4段階リアル価格比較、素材4種・加工6種、5-10営業日納品。',
+  },
+};
+
+const lpWeddingInvitationCost: BlogPostMeta = {
+  slug: 'wedding-invitation-cost-guide',
+  categoryKey: 'paper-bags',
+  source: 'daily',
+  date: '2026-08-20',
+  targetKeywords: {
+    primary: 'wedding invitation cost',
+    secondary: ['how much do wedding invitations cost', 'average cost of wedding invitations', 'wedding invitation pricing 2026', 'cheap wedding invitations bulk', 'custom wedding invitation price'],
+  },
+  title: {
+    'zh-hk': '美國婚禮邀請卡 2026 成本指南 · 50-500 份 4 檔真實價格 + 預算規劃 | ZprintPro',
+    en: 'Wedding Invitation Cost Guide 2026: Real Pricing for 50-500 Piece Runs, Budget Breakdown & Savings Tips | ZprintPro',
+    ja: '結婚式招待状 コストガイド 2026：50〜500部のリアル価格 + 予算内訳 + 節約術 | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '美國新婚夫婦、婚禮策劃師、預算規劃師必睇。2026 年美國婚禮邀請卡 4 檔真實成交價 ($0.85-3.20 / 份),50-500 份批量成本對比,設計費、燙金、加名、印刷 4 大成本拆解,智印港 DHL 全球 2-4 天直送 50+ 國家。',
+    en: 'Couples, planners, and budget advisors — 2026 real pricing for 50-500 piece wedding invitation runs ($0.85-3.20/piece). 4 quantity tiers, 4 cost components (design + foil + names + printing), DHL global 2-4 days from Asia factory, 50+ countries.',
+    ja: 'ご婚約カップル・プランナー・予算プランナーへ。2026年米国結婚式招待状リアル価格 ($0.85-3.20 / 枚)、50〜500部4段階、設計費・箔押し・名入れ・印刷4大コスト、DHL全世界2-4日配送、50ヶ国対応。',
+  },
+};
+
+
+const lpWeddingTableCard: BlogPostMeta = {
+  slug: 'wedding-table-card-printing-guide',
+  categoryKey: 'paper-bags',
+  source: 'daily',
+  date: '2026-08-20',
+  targetKeywords: {
+    primary: '枱卡印刷',
+    secondary: ['婚宴枱卡', '席位圖印刷', '中式枱卡', '婚禮枱卡設計', '枱卡 MOQ'],
+  },
+  title: {
+    'zh-hk': '婚宴枱卡 / 席位圖印刷指南 2026 · 100-500 張材質工藝 + 4 檔實價 | 智印港 ZprintPro',
+    en: 'Wedding Table Card & Seating Chart Printing Guide 2026: 100-500 Piece Pricing, Materials & Design | ZprintPro',
+    ja: '結婚式 テーブルカード・席次表印刷ガイド 2026：100〜500枚 価格・素材・デザイン | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '準新人、婚禮統籌師、宴會場地必睇。2026 龍年婚宴枱卡 / 席位圖 / 桌牌 / 席次表 4 大場景,100-500 張 4 檔實價,白卡紙 / 珠光紙 / 棉紙 / 燙金紙 4 種材質對比,中英文 / 數字座位 / 客製化圖案 3 大設計風格,智印港 5-10 個工作天交付。',
+    en: 'Couples, wedding planners, and venues — 2026 dragon year guide for wedding table cards, seating charts, place cards, and escort cards. 4 quantity tiers (100/200/500/1000), 4 materials, 3 design styles, 5-10 working day delivery from Asia factory.',
+    ja: 'ご婚約カップル・ウェディングプランナー・式場様へ。2026辰年ブライダル テーブルカード・席次表・場札・席札4大シーン、100〜500枚4段階価格、素材4種・デザイン3スタイル、5-10営業日納品。',
   },
 };
 
