@@ -2364,7 +2364,7 @@ export const products: Product[] = [
         optimizationRound: 1,
     category: 'stickers',
     category_slug: 'stickers',
-    name: '透明貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Transparent Stickers | Waterproof & Die-Cut Stickers', nameJa: '透明ステッカー | 防水ステッカー / ダイカット', title_zh: '透明貼紙 · 訂製',
+    name: '透明貼紙 / 透明貼 訂製 | 防水貼紙 / 異形貼紙', nameEn: 'Transparent Stickers / Clear Stickers | Waterproof & Die-Cut', nameJa: '透明ステッカー / 透明 ステッカー | 防水ステッカー / ダイカット', title_zh: '透明貼 / 透明貼紙 訂製 · 100張起印',
     description: '透明PET材質，貼合後呈現無感效果，完美展現產品本身。適合化妝品、食品包裝、玻璃貼飾。 適配行業: 美妝護膚、食品酒類、飲品品牌、香水、玻璃容器、無標籤產品、電商禮盒.', descriptionEn: 'Transparent PET material creates invisible effect when applied. Perfect for cosmetics, food packaging, glass decoration. 适配行业: Beauty, Food & Beverage, Drinks brands, Perfume, Glass containers, No-label products, E-commerce gift boxes.', descriptionJa: '透明PET素材、貼り付け後無感効果。化粧品、食品包裝、ガラス裝飾に最適。 适配行业: 美容、食品・飲料、飲み物ブランド、香水、ガラス容器、ノーラベル商品、ECギフトボックス。', description_zh: '透明PET材質，貼合後呈現無感效果，完美展現產品本身。適合化妝品、食品包裝、玻璃貼飾。 適配行業: 美妝護膚、食品酒類、飲品品牌、香水、玻璃容器、無標籤產品、電商禮盒.',
     longDescription: `透明 PET 貼紙在玻璃瓶、塑膠瓶與透明包裝上能呈現「無底紙感」，僅保留圖案與文字，特別適合美妝精華、香水、飲品與禮盒封口貼。白墨托底可選，用於深色瓶身仍能還原飽和色彩。建議避免過細的反白線條，並為模切預留安全距離。可搭配啞膜減少指紋、光膜提升鮮豔度。與分類頁術語一致：透明 PET、局部 UV、覆膜、模切。香港零售與展會陳列常見應用包括試用裝標籤與限量貼紙。<h3>貼紙材質對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">材質</th><th class="p-2 text-center">透明度</th><th class="p-2 text-center">防水性</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用場景</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">透明 PET</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">瓶身標籤、禮盒封條</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">PVC 防水</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">戶外標籤、食品外賣</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">銅版紙</td><td class="p-2 text-center">★★</td><td class="p-2 text-center">★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">促銷貼紙、臨時標籤</td></tr></tbody></table><h3>貼紙材質對比評分卡</h3><table class="w-full border-collapse my-4 text-sm"><thead><tr class="bg-[#2873F5] text-white"><th class="p-2 text-left">材質</th><th class="p-2 text-center">透明度</th><th class="p-2 text-center">防水性</th><th class="p-2 text-center">成本</th><th class="p-2 text-left">適用場景</th></tr></thead><tbody><tr class="border-b"><td class="p-2 font-medium">透明 PET</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★★</td><td class="p-2">瓶身標籤、禮盒封條</td></tr><tr class="border-b bg-gray-50"><td class="p-2 font-medium">PVC 防水</td><td class="p-2 text-center">★★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2 text-center">★★★</td><td class="p-2">戶外標籤、食品外賣</td></tr><tr class="bg-gray-50"><td class="p-2 font-medium">銅版紙</td><td class="p-2 text-center">★★</td><td class="p-2 text-center">★★</td><td class="p-2 text-center">★★★★★</td><td class="p-2">促銷貼紙、臨時標籤</td></tr></tbody></table>
 
@@ -2871,7 +2871,7 @@ export const products: Product[] = [
     optimizationRound: 1,
     category: 'stickers',
     category_slug: 'stickers',
-    name: '小批量貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Small Batch Stickers | Waterproof & Die-Cut Stickers', nameJa: '小ロットステッカー | 防水ステッカー / ダイカット', title_zh: '小批量貼紙 · 訂製',
+    name: '小批量貼紙 / label printing | 防水貼紙 / 異形貼紙', nameEn: 'Small Batch Stickers / Label Printing | Waterproof & Die-Cut Labels', nameJa: '小ロットステッカー / ラベル印刷 | 防水ステッカー / ダイカット', title_zh: '小批量貼紙 / label printing · 訂製',
     description: '最低A4尺寸起印，無需大量庫存壓力。適合初創品牌、活動宣傳、個人創作。 适配行业: 文創IP、同人周邊、餐飲、零售品牌活動、初創電商、測試樣本、活動贈品.', descriptionEn: 'Minimum A4 size order, no bulk inventory pressure. Perfect for startups, event promotion, personal creations. 适配行业: Indie IP, Doujin creators, Food & Beverage, Retail events, Startup e-commerce, Test samples, Promotional gifts.', descriptionJa: '最小A4サイズから、大量在庫の心配なし。スタートアップ、イベント宣伝、個人創作に最適。 适配行业: インディーIP、同人創作、飲食、小売イベント、スタートアップEC、テストサンプル、プロモーションギフト.', description_zh: '最低A4尺寸起印，無需大量庫存壓力。適合初創品牌、活動宣傳、個人創作。 适配行业: 文創IP、同人周邊、餐飲、零售品牌活動、初創電商、測試樣本、活動贈品.',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -9474,7 +9474,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     optimizationRound: 1,
     category: 'packaging',
     category_slug: 'packaging',
-    name: '食品包裝盒 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Food Boxes | Gift Boxes & Custom Packaging', nameJa: '食品包裝箱 | パッケージボックス・化粧箱', title_zh: '食品包裝盒印刷訂製 100個起印 HK$4起/個 FDA級 | 智印港 · FDA 食品級茶飲烘焙定製',
+    name: '食品包裝訂製 / 食品包裝盒 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Food Packaging / Food Boxes | Custom Packaging & Gift Boxes', nameJa: '食品パッケージ / 食品包裝箱 | パッケージボックス・化粧箱', title_zh: '食品包裝訂製 100個起印 HK$4起/個 FDA級 | 智印港 · 食品級茶飲烘焙定製',
     description: '食品包裝盒印刷訂製，100個起印，HK$4起/個。FDA級食品接觸安全材質，牛皮紙白卡紙可選，支援燙金UV印刷。適合糕點茶葉巧克力月餅食品品牌，3-5天交貨。適配行業: 茶葉品牌、手搖飲品店、烘焙坊、咖啡店、月餅端午節禮盒、餐廳外賣、跨境食品電商。', descriptionEn: 'Food-grade material, safe and eco-friendly., ISO 9001:2015 certified quality management system Best for: tea brands, bubble tea shops, bakeries, coffee shops, mooncake / Dragon Boat Festival gift boxes, restaurant takeout, cross-border food e-commerce.', descriptionJa: '食品グレード素材、安全で環境に優しい。 適用業界: 茶ブランド、タピオカ店、ベーカリー、カフェ、月餅・端午節ギフト ボックス、レストラン テイクアウト、越境食品EC。', description_zh: '食品級材質，安全環保。適合糕點、茶葉、保健品。 2026 旺季: 春節年糕禮盒、端午粽、夏日冰品配送、中秋月餅聖誕禮籃。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
@@ -10244,7 +10244,7 @@ A5 チラシ 印刷 テンプレート 無料をご希望の方へ。飲食・�
     slug: 'rigid-boxes',
     category: 'packaging',
     category_slug: 'packaging',
-    name: '精裝盒 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Rigid Boxes | Gift Boxes & Custom Packaging', nameJa: '上製本箱 | パッケージボックス・化粧箱', title_zh: '硬盒訂製 100個起印 天地蓋書型磁吸 · 鐘錶珠寶3C電子禮品品牌適配 | 智印港 ZprintPro',
+    name: '精裝盒 / 精裝盒報價 | 包裝盒 / 禮品盒 / 化妝品盒', nameEn: 'Rigid Boxes / Custom Quote | Gift Boxes & Premium Packaging', nameJa: '上製本箱 / 上製本箱 見積もり | パッケージボックス・化粧箱', title_zh: '精裝盒報價 100個起印 HK$4.5起/個 天地蓋書型磁吸 · 智印港',
     description: '精品盒/禮品盒訂製印刷，100個起印，HK$4.5起/個。硬殼天地盒磁吸盒抽屜盒，灰板裱藝術紙，燙金UV壓凹工藝。適合化妝品珠寶首飾婚慶禮盒週年慶品牌活動贈品，3-7天交貨，全球配送。 **适配行业**:鐘錶珠寶品牌、3C電子產品、手機配件、禮品店、婚慶喜糖、聖誕禮盒、跨境電商亞馬遜', descriptionEn: 'Hardcover rigid construction, luxurious and premium. Premium setup box · 100 MOQ · Magnetic closure available · Foil + spot UV finish. Luxury packaging for jewelry, electronics, high-end gifts. **Best for**:watch & jewellery brands, 3C electronics, phone accessories, premium gift shops, wedding favours, Christmas hampers, Amazon FBA sellers', descriptionJa: '硬い上製本構造、豪華でプレミアム。。プレミアムセットアップ箱・100個から・マグネット式・箔押し+スポットUV。宝飾/電子機器/高級ギフト向けラグジュアリーパッケージ。 **適用業界**:腕時計・宝飾ブランド、3C電子機器、携帯電話アクセサリー、プレミアムギフト、ブライダル、クリスマス、Amazon FBA', description_zh: '硬殼精裝/禮品盒，高檔奢華。適合高端產品、限量版、婚慶/週年慶贈品。',
     longDescription: `<h3>材質與紙張對比</h3>
 <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
