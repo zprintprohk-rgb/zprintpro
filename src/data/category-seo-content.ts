@@ -1878,10 +1878,10 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
 // =============================================================================
 const calendarsContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
-    // 2026-08-19 R3 月曆印刷 5 件套
-    featuredSnippet: '月曆印刷 100 本起，掛曆 HK$18/本，檯曆 HK$9/本，9 月開學季企業定制起量。',
-    lastUpdated: '2026-08-19',
-    h2: '香港月曆印刷 — 座枱曆／掛牆曆／年曆卡，50 本起訂，節日促銷必備',
+    // 2026-08-21 v3.13 T14: 月曆 5 词对齐 + 2027 时效 + 5 FAQ (季节窗最急)
+    featuredSnippet: '月曆印刷 100 本起訂製, 2027 年曆 9 月早鳥, 掛曆 HK$18/本、檯曆 HK$9/本、年曆卡 HK$3/張。免費設計 + 燙金封面, DHL 全球 2-4 天。',
+    lastUpdated: '2026-08-21',
+    h2: '月曆印刷 / 月曆訂製 / 訂制月曆 / 印月曆 / 2027 月曆 — 座枱曆/掛牆曆/年曆卡 100 本起訂, 企業禮品 9 月旺季前夜',
     coreAdvantages: {
       title: '核心競爭優勢',
       items: [
@@ -1972,10 +1972,15 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
       { q: '建議什麼時候開始印年曆？', a: '建議提前 2–3 個月準備，避開 11–12 月的印刷高峰期。' },
       { q: '香港港島、九龍、新界都可以送貨嗎？', a: '可以。座枱曆／掛曆可按箱規安排順豐或貨車；跨區派發企業禮品可先集中送到總部再分發。旺季建議鎖定檔期與數量。' },
       { q: '可以先報價再給設計檔嗎？', a: '可以。請提供款式（座枱／掛牆／月曆卡）、數量、尺寸、紙張／底板厚度與是否需要燙金或座架；可先取得數碼／柯式方案報價，月曆頁面檔齊後再做色彩打樣建議。' },
+      // 2026-08-21 v3.13 T14: 5 主题 5 FAQ 补全 (价格 + 燙金)
+      { q: '2027 月曆印刷價格幾多？', a: '掛曆 HK$18/本、檯曆 HK$9/本、年曆卡 HK$3/張。100 本起訂製, 500 本柯式更平。2027 年曆 9 月早鳥可享 9 折 + 免費設計。' },
+      { q: '月曆封面可以加燙金嗎？', a: '可以。封面 / 內頁 / 座架都可加燙金 (金/銀/玫瑰金), 另加 HK$0.5-1.5/本, 起印量 100 本, 2-3 天加急。' },
     ],
   },
   en: {
-    h2: 'Calendar Printing — Desk / Wall / Card Calendars, From 50 pcs, Holiday Promotions Essential',
+    featuredSnippet: 'Calendar printing from 100 pcs, 2027 calendars ready Sep, wall US$2.30/pc, desk US$1.15/pc, card US$0.40/pc. Free design + foil cover, DHL global 2-4 day delivery.',
+    lastUpdated: '2026-08-21',
+    h2: 'Calendar Printing / Custom Calendars / Print Calendars / 2027 Calendars / Wall Calendars — Desk/Wall/Card From 100 pcs, Corporate Gifting Sep 9-11 Peak Season',
     coreAdvantages: {
       title: 'Why Choose ZprintPro for Calendars?',
       items: [
@@ -2072,7 +2077,7 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
     // 2026-08-19 R3 両面カラー印刷 5 件套 (ja 通用 double-sided color printing 击穿 pos 22.35)
     featuredSnippet: '両面カラー印刷 100 枚〜、4C CMYK 標準、A4 ¥12〜、小ロット 1 日特急、DHL 2-4 日。',
     lastUpdated: '2026-08-19',
-    h2: 'カレンダー印刷 — 卓上／壁掛け／カード、50冊から、季節プロモーション必須',
+    h2: 'カレンダー印刷 / カレンダー オーダーメイド / 2027年カレンダー / 卓上カレンダー / 壁掛けカレンダー — 卓上/壁掛け/カード 100冊から, 企業ギフト 9-11月繁忙期前夜',
     coreAdvantages: {
       title: 'ZprintPro カレンダーの強み',
       items: [
