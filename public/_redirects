@@ -1,8 +1,4 @@
-# 2026-08-21 K3 v3.10 修复: 简化 _redirects < 100 行 (CF Pages 限制)
-# 删 SECTION 7 quote?product=* 78 行 (移到 CF Dashboard Bulk Redirects)
-# 删 SECTION 8B {locale}/* 8 行 (同上)
-# 保留 SECTION 1-6 + 8A + 8C + 9 + 10 (< 100 行)
-
+# ============================================================
 # Cloudflare Pages Redirects
 # 目标：统一URL规范为 https://zprintpro.com/（非www + https + 尾部斜杠）
 # 
@@ -21,9 +17,57 @@
 # ============================================================
 
 # =====================
-# /\* /zh-hk/:splat/ 301
+# SECTION 1: 缺失 locale 前缀的路径 → 默认 locale（zh-hk）
+# 必须放在 SECTION 1，因为 Cloudflare 按顺序匹配
+# =====================
+/about/ /zh-hk/about/ 301
+/about /zh-hk/about 301
+/ /zh-hk/ 301
+/blog/ /zh-hk/guide/ 301
+/blog /zh-hk/guide/ 301
+/cart/ /zh-hk/cart/ 301
+/cart /zh-hk/cart/ 301
+/case-studies/ /zh-hk/case-studies/ 301
+/case-studies /zh-hk/case-studies/ 301
+/category/stickers /zh-hk/category/stickers/ 301
+/category/flyers /zh-hk/category/flyers/ 301
+/category/packaging /zh-hk/category/packaging/ 301
+/category/* /zh-hk/category/:splat/ 301
+/checkout/ /zh-hk/checkout/ 301
+/checkout /zh-hk/checkout/ 301
+/company-news/ /zh-hk/company-news/ 301
+/company-news /zh-hk/company-news/ 301
+/contact/ /zh-hk/contact/ 301
+/contact /zh-hk/contact/ 301
+/faq/ /zh-hk/faq/ 301
+/faq /zh-hk/faq/ 301
+/help-center/ /zh-hk/help-center/ 301
+/help-center /zh-hk/help-center/ 301
+/press-kit/ /zh-hk/press-kit/ 301
+/press-kit /zh-hk/press-kit/ 301
+/privacy/ /zh-hk/privacy/ 301
+/privacy /zh-hk/privacy/ 301
+# 注意: /product/* 不能放在此处，因为会错误匹配 /zh-hk/product/xxx/ 路径
+# 已在 SECTION 1B 处理
+/quote/ /zh-hk/quote/ 301
+/quote /zh-hk/quote/ 301
+/search/ /zh-hk/search/ 301
+/search /zh-hk/search/ 301
+/service-areas/ /zh-hk/service-areas/ 301
+/service-areas /zh-hk/service-areas/ 301
+/services/* /zh-hk/services/:splat/ 301
+/terms/ /zh-hk/terms/ 301
+/terms /zh-hk/terms/ 301
 
-SECTION 2: Locale 尾部斜杠（精确匹配）
+# =====================
+# SECTION 1B: 缺失 locale 前缀的 product 路径 → 默认 locale（zh-hk）
+# 必须放 SECTION 2 之前，且不能放 SECTION 1 中以免干扰有locale的product路径
+# 修复：Cloudflare Pages 中通配符 * 会贪婪匹配包括 /zh-hk/ 在内的任何路径
+# =====================
+/product/* /zh-hk/product/:splat/ 301
+
+# =====================
+# SECTION 2: Locale 尾部斜杠（精确匹配）
 # =====================
 /en /en/ 301
 /zh-hk /zh-hk/ 301
@@ -36,6 +80,14 @@ SECTION 2: Locale 尾部斜杠（精确匹配）
 /zh-hk/quote /zh-hk/quote/ 301
 /ja/quote /ja/quote/ 301
 /quote /quote/ 301
+
+# =====================
+# SECTION 4: 重复 locale 修复
+# 解决 /en/en/xxx、/ja/ja/xxx 双重复locale问题
+# =====================
+/en/en/* /en/:splat 301
+/zh-hk/zh-hk/* /zh-hk/:splat 301
+/ja/ja/* /ja/:splat 301
 
 # =====================
 # SECTION 5: 路径修正 & 别名（已移除 /ja/guide/* → /ja/blog/ 重定向，因 sitemap 改用 /guide/ 路径）
@@ -60,6 +112,191 @@ SECTION 2: Locale 尾部斜杠（精确匹配）
 /ja/services/same-day-printing-delivery/ /ja/services/rush-printing-delivery/ 301
 
 # =====================
+# SECTION 7: 产品询价页 → 产品详情页 301重定向
+# 修复所有 quote?product=xxx → /product/xxx/ 的跳转
+# 这是核心修复：确保Google索引的是产品详情页而非询价表单页
+# =====================
+# Paper Bags 纸袋类
+/en/quote?product=kraft-paper-bags /en/product/kraft-paper-bags/ 301
+/zh-hk/quote?product=kraft-paper-bags /zh-hk/product/kraft-paper-bags/ 301
+/ja/quote?product=kraft-paper-bags /ja/product/kraft-paper-bags/ 301
+/en/quote/?product=kraft-paper-bags /en/product/kraft-paper-bags/ 301
+/zh-hk/quote/?product=kraft-paper-bags /zh-hk/product/kraft-paper-bags/ 301
+/ja/quote/?product=kraft-paper-bags /ja/product/kraft-paper-bags/ 301
+
+# Gift Boxes 礼品盒类
+/en/quote?product=gift-boxes /en/product/gift-boxes/ 301
+/zh-hk/quote?product=gift-boxes /zh-hk/product/gift-boxes/ 301
+/ja/quote?product=gift-boxes /ja/product/gift-boxes/ 301
+/en/quote/?product=gift-boxes /en/product/gift-boxes/ 301
+/zh-hk/quote/?product=gift-boxes /zh-hk/product/gift-boxes/ 301
+/ja/quote/?product=gift-boxes /ja/product/gift-boxes/ 301
+
+# Cosmetic Boxes
+/en/quote?product=cosmetic-boxes /en/product/cosmetic-boxes/ 301
+/zh-hk/quote?product=cosmetic-boxes /zh-hk/product/cosmetic-boxes/ 301
+/ja/quote?product=cosmetic-boxes /ja/product/cosmetic-boxes/ 301
+/en/quote/?product=cosmetic-boxes /en/product/cosmetic-boxes/ 301
+/zh-hk/quote/?product=cosmetic-boxes /zh-hk/product/cosmetic-boxes/ 301
+/ja/quote/?product=cosmetic-boxes /ja/product/cosmetic-boxes/ 301
+
+# Stickers 贴纸类
+/en/quote?product=waterproof-stickers /en/product/waterproof-stickers/ 301
+/zh-hk/quote?product=waterproof-stickers /zh-hk/product/waterproof-stickers/ 301
+/ja/quote?product=waterproof-stickers /ja/product/waterproof-stickers/ 301
+/en/quote/?product=waterproof-stickers /en/product/waterproof-stickers/ 301
+/zh-hk/quote/?product=waterproof-stickers /zh-hk/product/waterproof-stickers/ 301
+/ja/quote/?product=waterproof-stickers /ja/product/waterproof-stickers/ 301
+
+# Die-cut Stickers
+/en/quote?product=die-cut-stickers /en/product/die-cut-stickers/ 301
+/zh-hk/quote?product=die-cut-stickers /zh-hk/product/die-cut-stickers/ 301
+/ja/quote?product=die-cut-stickers /ja/product/die-cut-stickers/ 301
+/en/quote/?product=die-cut-stickers /en/product/die-cut-stickers/ 301
+/zh-hk/quote/?product=die-cut-stickers /zh-hk/product/die-cut-stickers/ 301
+/ja/quote/?product=die-cut-stickers /ja/product/die-cut-stickers/ 301
+
+# Removable Stickers
+/en/quote?product=removable-stickers /en/product/removable-stickers/ 301
+/zh-hk/quote?product=removable-stickers /zh-hk/product/removable-stickers/ 301
+/ja/quote?product=removable-stickers /ja/product/removable-stickers/ 301
+/en/quote/?product=removable-stickers /en/product/removable-stickers/ 301
+/zh-hk/quote/?product=removable-stickers /zh-hk/product/removable-stickers/ 301
+/ja/quote/?product=removable-stickers /ja/product/removable-stickers/ 301
+
+# Security Stickers
+/en/quote?product=security-stickers /en/product/security-stickers/ 301
+/zh-hk/quote?product=security-stickers /zh-hk/product/security-stickers/ 301
+/ja/quote?product=security-stickers /ja/product/security-stickers/ 301
+/en/quote/?product=security-stickers /en/product/security-stickers/ 301
+/zh-hk/quote/?product=security-stickers /zh-hk/product/security-stickers/ 301
+/ja/quote/?product=security-stickers /ja/product/security-stickers/ 301
+
+# Posters 海报类
+/en/quote?product=display-posters /en/product/display-posters/ 301
+/zh-hk/quote?product=display-posters /zh-hk/product/display-posters/ 301
+/ja/quote?product=display-posters /ja/product/display-posters/ 301
+/en/quote/?product=display-posters /en/product/display-posters/ 301
+/zh-hk/quote/?product=display-posters /zh-hk/product/display-posters/ 301
+/ja/quote/?product=display-posters /ja/product/display-posters/ 301
+
+# Outdoor Posters
+/en/quote?product=outdoor-posters /en/product/outdoor-posters/ 301
+/zh-hk/quote?product=outdoor-posters /zh-hk/product/outdoor-posters/ 301
+/ja/quote?product=outdoor-posters /ja/product/outdoor-posters/ 301
+/en/quote/?product=outdoor-posters /en/product/outdoor-posters/ 301
+/zh-hk/quote/?product=outdoor-posters /zh-hk/product/outdoor-posters/ 301
+/ja/quote/?product=outdoor-posters /ja/product/outdoor-posters/ 301
+
+# Mailer Boxes
+/en/quote?product=mailer-boxes /en/product/mailer-boxes/ 301
+/zh-hk/quote?product=mailer-boxes /zh-hk/product/mailer-boxes/ 301
+/ja/quote?product=mailer-boxes /ja/product/mailer-boxes/ 301
+/en/quote/?product=mailer-boxes /en/product/mailer-boxes/ 301
+/zh-hk/quote/?product=mailer-boxes /zh-hk/product/mailer-boxes/ 301
+/ja/quote/?product=mailer-boxes /ja/product/mailer-boxes/ 301
+
+# Gift Bags
+/en/quote?product=gift-bags /en/product/gift-bags/ 301
+/zh-hk/quote?product=gift-bags /zh-hk/product/gift-bags/ 301
+/ja/quote?product=gift-bags /ja/product/gift-bags/ 301
+/en/quote/?product=gift-bags /en/product/gift-bags/ 301
+/zh-hk/quote/?product=gift-bags /zh-hk/product/gift-bags/ 301
+/ja/quote/?product=gift-bags /ja/product/gift-bags/ 301
+
+# Books 书籍类
+/en/quote?product=perfect-bound-books /en/product/perfect-bound-books/ 301
+/zh-hk/quote?product=perfect-bound-books /zh-hk/product/perfect-bound-books/ 301
+/ja/quote?product=perfect-bound-books /ja/product/perfect-bound-books/ 301
+/en/quote/?product=perfect-bound-books /en/product/perfect-bound-books/ 301
+/zh-hk/quote/?product=perfect-bound-books /zh-hk/product/perfect-bound-books/ 301
+/ja/quote/?product=perfect-bound-books /ja/product/perfect-bound-books/ 301
+
+# Calendars 日历类
+/en/quote?product=custom-calendars /en/product/custom-calendars/ 301
+/zh-hk/quote?product=custom-calendars /zh-hk/product/custom-calendars/ 301
+/ja/quote?product=custom-calendars /ja/product/custom-calendars/ 301
+/en/quote/?product=custom-calendars /en/product/custom-calendars/ 301
+/zh-hk/quote/?product=custom-calendars /zh-hk/product/custom-calendars/ 301
+/ja/quote/?product=custom-calendars /ja/product/custom-calendars/ 301
+
+# Banners 横幅类
+/en/quote?product=mesh-banners /en/product/mesh-banners/ 301
+/zh-hk/quote?product=mesh-banners /zh-hk/product/mesh-banners/ 301
+/ja/quote?product=mesh-banners /ja/product/mesh-banners/ 301
+/en/quote/?product=mesh-banners /en/product/mesh-banners/ 301
+/zh-hk/quote/?product=mesh-banners /zh-hk/product/mesh-banners/ 301
+/ja/quote/?product=mesh-banners /ja/product/mesh-banners/ 301
+
+# Flyers 传单类
+/en/quote?product=thick-paper-flyers /en/product/thick-paper-flyers/ 301
+/zh-hk/quote?product=thick-paper-flyers /zh-hk/product/thick-paper-flyers/ 301
+/ja/quote?product=thick-paper-flyers /ja/product/thick-paper-flyers/ 301
+/en/quote/?product=thick-paper-flyers /en/product/thick-paper-flyers/ 301
+/zh-hk/quote/?product=thick-paper-flyers /zh-hk/product/thick-paper-flyers/ 301
+/ja/quote/?product=thick-paper-flyers /ja/product/thick-paper-flyers/ 301
+
+/en/quote?product=same-day-flyers /en/product/same-day-flyers/ 301
+/zh-hk/quote?product=same-day-flyers /zh-hk/product/same-day-flyers/ 301
+/ja/quote?product=same-day-flyers /ja/product/same-day-flyers/ 301
+/en/quote/?product=same-day-flyers /en/product/same-day-flyers/ 301
+/zh-hk/quote/?product=same-day-flyers /zh-hk/product/same-day-flyers/ 301
+/ja/quote/?product=same-day-flyers /ja/product/same-day-flyers/ 301
+
+# Envelopes 信封类
+/en/quote?product=business-envelopes /en/product/business-envelopes/ 301
+/zh-hk/quote?product=business-envelopes /zh-hk/product/business-envelopes/ 301
+/ja/quote?product=business-envelopes /ja/product/business-envelopes/ 301
+/en/quote/?product=business-envelopes /en/product/business-envelopes/ 301
+/zh-hk/quote/?product=business-envelopes /zh-hk/product/business-envelopes/ 301
+/ja/quote/?product=business-envelopes /ja/product/business-envelopes/ 301
+
+# Folded Leaflets
+/en/quote?product=folded-leaflets /en/product/folded-leaflets/ 301
+/zh-hk/quote?product=folded-leaflets /zh-hk/product/folded-leaflets/ 301
+/ja/quote?product=folded-leaflets /ja/product/folded-leaflets/ 301
+/en/quote/?product=folded-leaflets /en/product/folded-leaflets/ 301
+/zh-hk/quote/?product=folded-leaflets /zh-hk/product/folded-leaflets/ 301
+/ja/quote/?product=folded-leaflets /ja/product/folded-leaflets/ 301
+
+# Packaging 包装盒类
+/en/quote?product=magnetic-closure-gift-box /en/product/magnetic-closure-gift-box/ 301
+/zh-hk/quote?product=magnetic-closure-gift-box /zh-hk/product/magnetic-closure-gift-box/ 301
+/ja/quote?product=magnetic-closure-gift-box /ja/product/magnetic-closure-gift-box/ 301
+/en/quote/?product=magnetic-closure-gift-box /en/product/magnetic-closure-gift-box/ 301
+/zh-hk/quote/?product=magnetic-closure-gift-box /zh-hk/product/magnetic-closure-gift-box/ 301
+/ja/quote/?product=magnetic-closure-gift-box /ja/product/magnetic-closure-gift-box/ 301
+
+/en/quote?product=rigid-boxes /en/product/rigid-boxes/ 301
+/zh-hk/quote?product=rigid-boxes /zh-hk/product/rigid-boxes/ 301
+/ja/quote?product=rigid-boxes /ja/product/rigid-boxes/ 301
+/en/quote/?product=rigid-boxes /en/product/rigid-boxes/ 301
+/zh-hk/quote/?product=rigid-boxes /zh-hk/product/rigid-boxes/ 301
+/ja/quote/?product=rigid-boxes /ja/product/rigid-boxes/ 301
+
+/en/quote?product=drawer-slide-gift-box /en/product/drawer-slide-gift-box/ 301
+/zh-hk/quote?product=drawer-slide-gift-box /zh-hk/product/drawer-slide-gift-box/ 301
+/ja/quote?product=drawer-slide-gift-box /ja/product/drawer-slide-gift-box/ 301
+/en/quote/?product=drawer-slide-gift-box /en/product/drawer-slide-gift-box/ 301
+/zh-hk/quote/?product=drawer-slide-gift-box /zh-hk/product/drawer-slide-gift-box/ 301
+/ja/quote/?product=drawer-slide-gift-box /ja/product/drawer-slide-gift-box/ 301
+
+/en/quote?product=kraft-paper-packaging-box /en/product/kraft-paper-packaging-box/ 301
+/zh-hk/quote?product=kraft-paper-packaging-box /zh-hk/product/kraft-paper-packaging-box/ 301
+/ja/quote?product=kraft-paper-packaging-box /ja/product/kraft-paper-packaging-box/ 301
+/en/quote/?product=kraft-paper-packaging-box /en/product/kraft-paper-packaging-box/ 301
+/zh-hk/quote/?product=kraft-paper-packaging-box /zh-hk/product/kraft-paper-packaging-box/ 301
+/ja/quote/?product=kraft-paper-packaging-box /ja/product/kraft-paper-packaging-box/ 301
+
+/en/quote?product=electronics-packaging-box /en/product/electronics-packaging-box/ 301
+/zh-hk/quote?product=electronics-packaging-box /zh-hk/product/electronics-packaging-box/ 301
+/ja/quote?product=electronics-packaging-box /ja/product/electronics-packaging-box/ 301
+/en/quote/?product=electronics-packaging-box /en/product/electronics-packaging-box/ 301
+/zh-hk/quote/?product=electronics-packaging-box /zh-hk/product/electronics-packaging-box/ 301
+/ja/quote/?product=electronics-packaging-box /ja/product/electronics-packaging-box/ 301
+
+# =====================
+# =====================
 # SECTION 8: 日文/中文编码 URL 404 修复
 # 产品页面价格标签中的日文/中文字符被搜索引擎错误索引为URL路径
 # 修复策略：301重定向到对应的产品页面或首页
@@ -68,6 +305,19 @@ SECTION 2: Locale 尾部斜杠（精确匹配）
 /個起 /ja/ 301
 /枚から /ja/quote/?product=custom-stickers 301
 /張起 /ja/ 301
+
+# =====================
+# SECTION 8B: {locale} 字面量 URL 修复
+# 搜索引擎或外部工具错误地将模板变量 {locale} 当作实际URL路径
+# 修复策略：301重定向到正确的英文版页面
+# =====================
+/{locale}/product/gift-boxes /en/product/gift-boxes/ 301
+/{locale}/product/gift-boxes/ /en/product/gift-boxes/ 301
+/{locale}/product/kraft-paper-bags /en/product/kraft-paper-bags/ 301
+/{locale}/product/kraft-paper-bags/ /en/product/kraft-paper-bags/ 301
+/{locale}/product/* /en/product/:splat/ 301
+/{locale}/category/* /en/category/:splat/ 301
+/{locale}/* /en/:splat/ 301
 
 # =====================
 # SECTION 8C: Cloudflare 内部路径 404 修复
