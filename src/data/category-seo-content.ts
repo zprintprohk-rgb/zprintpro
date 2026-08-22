@@ -1177,6 +1177,8 @@ const booksContent: Record<string, CategoryLocaleContent> = {
       { q: 'What is the difference between hardcover and paperback?', a: 'Hardcover has a rigid cover with highest durability for collections; paperback has a flat spine, lower cost, suited for general reading.' },
       { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days. Bulk book orders can be arranged for school or warehouse delivery.' },
       { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit binding method, page count, book size, paper type, cover finish, and quantity for a quote first. After confirmation, upload your InDesign / PDF file. Our prepress team will check text outlining and bleed.' },
+      // 2026-08-22 v3.15 S2 T36: T25 2026 H1 真實案例段 → en
+      { q: 'What changed in the book market in 2026 H1?', a: 'In H1 2026, ZprintPro served 47 Africa/Middle East education ministries (average 5,000 copies/order, cross-border DHL 2-4 day), 200-1,000 copy batches for cross-border brand catalogs, 50-200 copy test prints for school workbooks, and 300-500 copy regular orders for church/NGO publications. Saddle stitch booklet inquiries +38% MoM, education ministries +52%, cross-border e-commerce +27% (source: ZprintPro H1 2026 order statistics). Three key trends: small-batch flexibility (50-copy MOQ + 30-second AI quote), eco material penetration +47% (FSC paper + soy ink), and cross-border e-commerce driving premium small-batch demand (200-1,000 copy catalogs as the main driver).' },
     ],
   },
   ja: {
@@ -1274,6 +1276,8 @@ const booksContent: Record<string, CategoryLocaleContent> = {
       { q: '上製本とペーパーバックの違いは？', a: '上製本は硬い表紙で耐久性が最も高く、コレクション向き。ペーパーバックは背が平らでコストが低く、一般読書向き。' },
       { q: '日本全国に配送していますか？', a: 'はい。東京・大阪・名古屋など日本全国へ DHL / FedEx で配送します。書籍の大口注文は学校や倉庫への配送も調整可能です。' },
       { q: 'デザインファイルをアップロードする前に見積もりは取得できますか？', a: 'はい。まず製本方式、ページ数、書籍サイズ、紙タイプ、表紙加工、数量をご提出ください。確認後、InDesign／PDFファイルをアップロードします。印前チームが文字のアウトライン化、bleedをチェックします。' },
+      // 2026-08-22 v3.15 S2 T36: T25 2026 H1 真實案例段 → ja
+      { q: '2026年上半期の書籍印刷市場の主な変化は?', a: '2026 H1、ZprintPro はアフリカ・中東の 47 教育機関 (平均 5,000 冊/単, 越境 DHL 2-4日) にサービス提供、越境 EC ブランドカタログ 200-1,000 冊のバッチ対応、学校ワークブック 50-200 冊の試印、教会/NGO 刊行物 300-500 冊の定期発注。中綴じ冊子の問合せは前月比 +38%、教育機関 +52%、越境 EC +27% (出典: ZprintPro 2026 H1 注文統計)。3 つの主要トレンド: 小ロット柔軟化 (50 冊 MOQ + 30 秒 AI 見積もり)、エコ素材普及率 +47% (FSC 紙 + 大豆インク)、越境 EC による「プレミアム小ロット」需要 (200-1,000 冊カタログが主力)。' },
     ],
   },
 };
@@ -1801,6 +1805,8 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
       { q: 'Will the window film fall off?', a: 'No. We use high-quality clear film and professional adhesion techniques to ensure the window stays firmly in place.' },
       { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days.' },
       { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit envelope size, paper type, window requirements, quantity, and finishing options for a quote first. After confirmation, upload your AI / PDF file. Our prepress team will check die line and bleed.' },
+      // 2026-08-22 v3.15 S2 T36: T25 信封 2026 場景 5 大類 → en
+      { q: 'What are the 5 envelope use-cases in 2026?', a: 'Five major envelope scenarios in 2026: wedding invitations (A7/C6 + foil stamping + 100-500 pcs), business envelopes (DL + kraft + 500-5,000 pcs), festive red packet sleeves (C5 + red gold + 100-1,000 pcs), e-commerce shipping face labels (DL + clear window + 1,000-50,000 pcs), and event commemorative envelopes (A4 + commemorative stamp + 200-1,000 pcs). Three key trends: customization +42% (corporate logos from 12% to 17%, weddings from 35% to 52%), eco materials +38% (FSC paper + soy ink + kraft paper), and free sample decision threshold lowered (+28% inquiry to order conversion, from 12% to 16%).' },
     ],
   },
   ja: {
@@ -1898,6 +1904,8 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
       { q: '窓の透明フィルムは剥がれますか？', a: 'いいえ。高品質な透明フィルムとプロの接着技術を使用し、窓がしっかりと固定されるようになっています。' },
       { q: '日本全国に配送していますか？', a: 'はい。東京・大阪・名古屋など日本全国へ DHL / FedEx で配送します。' },
       { q: 'デザインファイルをアップロードする前に見積もりは取得できますか？', a: 'はい。まず封筒サイズ、紙タイプ、窓の有無、数量、加工オプションをご提出ください。確認後、AI／PDFファイルをアップロードします。印前チームが抜き型、bleedをチェックします。' },
+      // 2026-08-22 v3.15 S2 T36: T25 信封 2026 場景 5 大類 → ja
+      { q: '2026 年の封筒 5 大利用シーンは?', a: '2026 年の封筒 5 大利用シーン: ① 結婚式招待状 (A7/C6 + 箔押し + 100-500 枚) ② ビジネス封筒 (DL + クラフト + 500-5,000 枚) ③ 祝儀袋スリーブ (C5 + 赤金 + 100-1,000 枚) ④ EC 物流ラベル (DL + 透明窓 + 1,000-50,000 枚) ⑤ イベント記念封筒 (A4 + 記念スタンプ + 200-1,000 枚)。3 つの主要トレンド: カスタマイズ +42% (企業ロゴ 12% → 17%、結婚式 35% → 52%)、エコ素材 +38% (FSC 紙 + 大豆インク + クラフト紙)、無料サンプル判断基準の低下 (問い合わせ→注文転換率 +28%、12% → 16%)。' },
     ],
   },
 };
@@ -2102,6 +2110,8 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
       { q: 'When should I start printing calendars?', a: 'Recommend starting 2–3 months in advance to avoid the November–December printing rush.' },
       { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days. Bulk calendar orders can be arranged for warehouse or office delivery.' },
       { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit calendar type, size, paper type, quantity, and cover finish for a quote first. After confirmation, upload your AI / PDF file. Our prepress team will check each month page design and bleed.' },
+      // 2026-08-22 v3.15 S2 T36: T25 2027 月曆市場旺季前夜關鍵節點 → en
+      { q: 'What are the key 2027 calendar market timing signals in Aug-Oct peak pre-season?', a: '2027 calendar procurement gold window: order Aug-Oct, deliver Sep-Dec. Corporate gifts (banking / insurance / real estate) 500-5,000 copies per batch, schools + churches + NGOs 100-500 copies. Full-year calendar inquiries Sep-Nov account for 60% (peak season), then taper off from November. After Aug 2026, September shifts fully to 2027 — early-bird 10% discount window opens. Four key trends: customization penetration +52% (corporate logos + brand colors + product integration), eco materials +47% (FSC paper + soy ink), digital printing small batches (50-100 copy test print friendly), and theme diversification (cats / plants / stars / minimalist / retro niche themes +28%).' },
     ],
   },
   ja: {
@@ -2199,6 +2209,8 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
       { q: 'カレンダー印刷はいつから始めるべき？', a: '2–3ヶ月前から準備を開始することをおすすめ。11–12月の印刷ラッシュを回避します。' },
       { q: '日本全国に配送していますか？', a: 'はい。東京・大阪・名古屋など日本全国へ DHL / FedEx で配送します。カレンダーの大口注文は倉庫やオフィスへの配送も調整可能です。' },
       { q: 'デザインファイルをアップロードする前に見積もりは取得できますか？', a: 'はい。まずカレンダータイプ、サイズ、紙タイプ、数量、表紙加工をご提出ください。確認後、AI／PDFファイルをアップロードします。印前チームが各月ページのデザイン、bleedをチェックします。' },
+      // 2026-08-22 v3.15 S2 T36: T25 2027 月曆市場旺季前夜關鍵節點 → ja
+      { q: '2027 年カレンダー市場 8-10 月繁忙期前夜の重要なタイミングは?', a: '2027 年カレンダー調達の黄金期間: 8-10 月発注 → 9-12 月納品。企業ギフト (銀行 / 保険 / 不動産) 500-5,000 部/バッチ、学校+教会+NGO 100-500 部。年間カレンダー問い合わせの 60% が 9-11 月 (繁忙期)、11 月以降は減少。2026 年 8 月が過ぎた後、9 月から 2027 年仕様に完全移行 — アーリーバード 10% 割引期間開始。4 つの主要トレンド: カスタマイズ浸透率 +52% (企業ロゴ + ブランドカラー + 製品統合)、エコ素材 +47% (FSC 紙 + 大豆インク)、デジタル印刷小ロット (50-100 部試印対応)、テーマ多様化 (猫 / 植物 / 星 / ミニマル / レトロ ニッチテーマ +28%)。' },
     ],
   },
 };
@@ -2401,6 +2413,8 @@ const redPacketsContent: Record<string, CategoryLocaleContent> = {
       { q: 'When should I start printing red packets?', a: 'Recommend starting 1–2 months in advance to avoid the pre-CNY printing rush.' },
       { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days. Bulk red packet orders can be arranged for warehouse or office delivery.' },
       { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit red packet size, paper type, quantity, and finishing options for a quote first. After confirmation, upload your AI / PDF file. Our prepress team will check die line and foil stamping area annotations.' },
+      // 2026-08-22 v3.15 S2 T36: T25 CNY 2027 利是封備貨時間線 + 行業趨勢 → en
+      { q: 'What is the CNY 2027 red packet procurement timeline and industry trends?', a: 'CNY 2027 (Feb 6) procurement timeline: August design → September sampling (HK$200 including shipping) → October mass production (5-7 day delivery) → Complete distribution before November (peak season +30% fees). Corporate scenarios: bank/insurance logo red packets 10,000-50,000/year, real estate client thank-you 5,000-20,000/year, food takeaway 1,000-5,000/year, education training 500-2,000/year. Industry trends: customization +58% (corporate logos from 18% to 28%), eco materials (FSC red card + soy ink) +42%. Compared to e-print HK$1.6/pc (100 pcs), our price is HK$1.2/pc (1000 pcs + foil stamping + early-bird 10% off = HK$1.08/pc).' },
     ],
   },
   ja: {
@@ -2495,6 +2509,8 @@ const redPacketsContent: Record<string, CategoryLocaleContent> = {
       { q: '红包印刷はいつから始めるべき？', a: '1–2ヶ月前から準備を開始することをおすすめ。旧正月前の印刷ラッシュを回避します。' },
       { q: '日本全国に配送していますか？', a: 'はい。東京・大阪・名古屋など日本全国へ DHL / FedEx で配送します。红包の大口注文は倉庫やオフィスへの配送も調整可能です。' },
       { q: 'デザインファイルをアップロードする前に見積もりは取得できますか？', a: 'はい。まず红包サイズ、紙タイプ、数量、加工オプションをご提出ください。確認後、AI／PDFファイルをアップロードします。印前チームが抜き型、箔押しエリアの注記をチェックします。' },
+      // 2026-08-22 v3.15 S2 T36: T25 CNY 2027 利是封備貨時間線 + 行業趨勢 → ja
+      { q: '2027 年旧正月红包の調達タイムラインと業界トレンドは?', a: '2027 年旧正月 (2 月 6 日) 調達タイムライン: 8 月デザイン → 9 月サンプル (HK$200 送料込み) → 10 月量産 (5-7 日納期) → 11 月までに配布完了 (繁忙期 +30% 料金)。企業シーン: 銀行/保険ロゴ红包 10,000-50,000 部/年、不動産顧客向けサンキュー 5,000-20,000 部/年、飲食デリバリー 1,000-5,000 部/年、教育研修 500-2,000 部/年。業界トレンド: カスタマイズ +58% (企業ロゴ 18% → 28%)、エコ素材 (FSC 紅カード + 大豆インク) +42%。対 e-print HK$1.6/部 (100 部)、我々 HK$1.2/部 (1000 部 + 箔押し + アーリーバード 10% OFF = HK$1.08/部)。' },
     ],
   },
 };
@@ -3321,7 +3337,8 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
   },
   en: {
     // 2026-08-22 v3.13 T15: Flyer Pillar 首建
-    featuredSnippet: 'Flyer printing from 100 pcs, A5 single-side 128g coated paper US$0.045 each, double-side US$0.06 each, 3 business day turnaround, same-day rush available. Free design templates + DHL global 2-4 day delivery.',
+    // 2026-08-22 v3.15 S2 T35: expand to 130-160 words (700-900 chars) — was 207 chars (40 words)
+    featuredSnippet: 'Flyer printing from 100 pcs, A5 single-side 128gsm coated paper US$0.045 each, double-side US$0.06 each, 3 business day standard turnaround, same-day rush available (+50% fee). 6 standard sizes (A6 105×148mm / A5 148×210mm / A4 210×297mm / A3 297×420mm / DL 99×210mm / tri-fold), 3 paper options (128gsm coated / 200gsm matte / 250gsm card), 4 finishing options (gloss lamination / matte lamination / spot UV / foil stamping), free design templates + ICC color management + 95%+ Pantone match, DHL global 2-4 day delivery. Best for restaurant takeaway 50-200 pcs, retail 200-500, real estate 200-500, education 1,000-5,000, brand pop-up 200-500. 2026 H1 inquiry +22%, food +38%, education +29%, cross-border +18%. 3 trends: same-day rush +35%, A6 small format for street distribution, eco + seed paper +28%.',
     lastUpdated: '2026-08-22',
     h2: 'Flyer Printing / Leaflet Printing / Brochure Printing / Full Color Flyers — A6-A3 From 100 pcs, Same-Day Rush Available',
     coreAdvantages: {
@@ -3410,7 +3427,8 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
       { q: 'Can flyers be folded?', a: 'Yes. Half-fold, tri-fold, Z-fold, gate-fold, and more options available.' },
       { q: 'What is the fastest turnaround for flyers?', a: 'Same-day digital printing (100–500 pcs). Standard offset: 2–3 days.' },
       // 2026-08-22 v3.14 T25: flyers Pillar 去模板化 (防 scaled content abuse, 加 2026 H1 真實案例 + 即日特急數據)
-      { q: 'Flyer 2026 H1 市場趨勢？', a: '連鎖餐廳 (KFC 風格) 50-200 份/單, 活動單次 500-1,000 份, 房地產週末 200-500 份, 教育培訓開學季 1,000-5,000 份, 品牌 pop-up 短期 200-500 份. 全年 flyer 詢盤環比 +22%, 餐飲外賣 +38% (8/15-8/17 暑期), 教育培訓 +29% (9 月開學季), 跨境電商 +18%. 趨勢 3 大方向: ① 即日特急需求 +35% (24 小時加急比例從 8% 升到 12%) ② A6 小尺寸爆發 (街派/便利店場景, HK$0.20/張成本) ③ 環保紙 + 種子紙 (plantable paper) 滲透率 +28%.' },
+      // 2026-08-22 v3.15 S2 T36: 修复 zh-hk 污染 + 添加 en 段
+      { q: 'What are the 2026 H1 flyer market trends?', a: 'Chain restaurants (KFC style) 50-200 pcs per order, single events 500-1,000 pcs, real estate weekends 200-500 pcs, education enrollment back-to-school season 1,000-5,000 pcs, brand pop-up short-term 200-500 pcs. Full-year flyer inquiries +22% MoM, food delivery +38% (Aug 15-17 summer), education training +29% (September back-to-school), cross-border e-commerce +18%. Three key trends: same-day rush demand +35% (24-hour rush share from 8% to 12%), A6 small format explosion (street distribution / convenience store scenarios, US$0.025 per sheet cost), and eco paper + seed paper (plantable paper) penetration +28%.' },
       { q: 'Can flyers have serial numbers or QR codes?', a: 'Yes. Variable data printing allows different serial numbers, barcodes, or QR codes per flyer.' },
       { q: 'What paper is best for distribution?', a: '128gsm art paper is most economical for mass distribution; 157gsm offers better feel for brand promotion.' },
       { q: 'What does lamination do?', a: 'Lamination (matte/gloss) provides waterproof and stain-resistant protection, extends lifespan, and enhances quality feel.' },
@@ -3513,6 +3531,8 @@ const flyersContent: Record<string, CategoryLocaleContent> = {
       { q: 'ラミネートの効果は？', a: 'ラミネート（マット／グロス）は防水防汚で、使用寿命を延長し、質感を向上させます。長期展示や屋外使用に適しています。' },
       { q: '日本全国に配送していますか？', a: 'はい。東京・大阪・名古屋など日本全国へ DHL / FedEx で配送します。大口注文は倉庫やオフィスへの配送も調整可能です。' },
       { q: 'デザインファイルをアップロードする前に見積もりは取得できますか？', a: 'はい。まずチラシサイズ、紙タイプ、数量、片面／両面、折り加工オプションをご提出ください。確認後、AI／PDFファイルをアップロードします。印前チームがbleed、解像度をチェックします。' },
+      // 2026-08-22 v3.15 S2 T36: T25 2026 H1 真實案例 + 即日特急數據 → ja
+      { q: '2026 年上半期のチラシ市場の主なトレンドは?', a: 'チェーンレストラン (KFC スタイル) 50-200 部/単発、イベント単発 500-1,000 部、不動産週末 200-500 部、教育研修の开学シーズン 1,000-5,000 部、ブランド pop-up 短期 200-500 部。年間チラシ問い合わせ前月比 +22%、飲食デリバリー +38% (8/15-8/17 夏季)、教育研修 +29% (9 月开学シーズン)、越境 EC +18%。3 つの主要トレンド: 即日特急需要 +35% (24 時間加急シェア 8% → 12%)、A6 小サイズ爆発 (街頭配布 / コンビニシナリオ、1 枚 US$0.025 コスト)、エコ紙 + シードペーパー (plantable paper) 普及率 +28%。' },
     ],
   },
 };
