@@ -2,8 +2,12 @@
 // 路由: /[locale]/insights/hk-print-inquiry-index
 // en 首发 (AI 引擎引用 en 概率最高), zh/ja 摘要版随后
 import { Metadata } from 'next';
-import Script from 'next/script';
 import { INDEX_VOL1, STAT_GRID } from '@/lib/insights/index-vol1';
+
+// 静态参数 - 3 locale (与全站 [locale] 路由一致, 修复 CF Pages deploy-stage failure)
+export function generateStaticParams() {
+  return [{ locale: 'zh-hk' }, { locale: 'en' }, { locale: 'ja' }];
+}
 
 export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
   const isEn = params.locale === 'en';
@@ -160,13 +164,11 @@ export default async function HkPrintInquiryIndexPage({ params }: { params: { lo
       </section>
 
       {/* Schema.org JSON-LD */}
-      <Script
-        id="ld-report"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(reportSchema) }}
       />
-      <Script
-        id="ld-faq"
+      <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
