@@ -13,7 +13,9 @@ import {
   getProductDescription,
   getProductImageAlt,
   products
-} from '@/lib/products';
+} from '@/data/products';
+// 2026-08-22 b81463a 后续修复: longDescription 三字段已搬移至 products-content.ts, 此处合并回 product
+import { productsContent } from '@/data/products-content';
 import { buildProductH1ZhHk, buildProductH1En, buildProductH1Ja } from '@/lib/h1-builder';
 import { 
   generateProductMetadata, 
@@ -138,12 +140,15 @@ export default function ProductPage({
   params: { locale: Locale; slug: string };
 }) {
   const { locale, slug } = params;
-  const product = getProductBySlug(slug);
+  const baseProduct = getProductBySlug(slug);
   
   // 产品不存在时返回404
-  if (!product) {
+  if (!baseProduct) {
     notFound();
   }
+  
+  // 合并长描述内容层 (longDescription 三字段在 b81463a 搬移至 products-content.ts)
+  const product = { ...baseProduct, ...productsContent[baseProduct.slug] };
   
   // 获取分类信息
   const category = getCategoryBySlug(product.category_slug);

@@ -12,7 +12,7 @@ import {
   getCategoryName,
   categories,
   products
-} from '@/lib/products';
+} from '@/data/products';
 import {
   generateCategoryMetadata,
   generateBreadcrumbJsonLd,

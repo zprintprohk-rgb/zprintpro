@@ -1,5 +1,5 @@
 // Search regression test (2026-06-08: 增加 typeahead 业务别名 + 简繁互通 验证)
-import { searchAll, categories, products } from '../../products';
+import { searchAll, categories, products } from '../../data/products';
 
 // === 1. 业务搜索: 关键 query 命中数 ===
 // 验证:
