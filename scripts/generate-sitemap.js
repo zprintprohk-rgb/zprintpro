@@ -54,7 +54,7 @@ const legacyBlogSlugs = extractSlugsFromTs(path.join(__dirname, '../src/data/blo
 const clusterSlugs = extractSlugsFromTs(path.join(__dirname, '../src/data/pillar-content.ts'), /slug:\s*['"]([^'"]+)['"],/g);
 const allBlogSlugs = [...new Set([...legacyBlogSlugs, ...clusterSlugs])];
 
-const staticPages = ['','about/','blog/','case-studies/','contact/','faq/','help-center/','service-areas/','company-news/','services/rush-printing-delivery/','cart/','checkout/','order-confirmation/','payment/success/','payment-methods/','privacy/','terms/'];
+const staticPages = ['','about/','blog/','case-studies/','contact/','faq/','help-center/','service-areas/','company-news/','services/rush-printing-delivery/','insights/hk-print-inquiry-index/','cart/','checkout/','order-confirmation/','payment/success/','payment-methods/','privacy/','terms/'];
 
 function getPriority(u) {
   if(u==='')return'1.0';
