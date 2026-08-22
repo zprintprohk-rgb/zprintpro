@@ -1086,7 +1086,7 @@ const booksContent: Record<string, CategoryLocaleContent> = {
     // 2026-08-22 v3.13 T16: books 338 imps structure war
     featuredSnippet: 'Saddle stitch booklets from 50 copies, 8-64 pages (multiples of 4, switch to perfect binding beyond 64), US$1.84-7.36/pc at 500 copies, 30-second instant AI quote, DHL global 2-4 day delivery, no plate fees. Self-cover (cost-effective) vs separate cover 250gsm (+US$0.15-0.30/pc for brand catalogs). Three moats vs Alibaba yellow pages: 50-copy MOQ vs 500+, 30s quote vs 2-day email, DHL 2-4d vs 3-4 week sea freight. Use cases: 8-32 page brand catalogs, 32-48 page magazines, 48-64 page NGO reports, Africa/Middle East/Southeast Asia education ministry bulk orders.',
     lastUpdated: '2026-08-22',
-    h2: 'Saddle Stitch Booklet Printing HK – From 20 Copies | 30s Quote | ZprintPro',
+    h2: 'Saddle Stitch Booklet / Catalog Printing / Book Printing / Exercise Book Printing / Booklet Printing — From 50 Copies, Instant Quote, 8-64 Pages',
     coreAdvantages: {
       title: 'Why Choose ZprintPro for Books?',
       items: [
@@ -1714,7 +1714,7 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
     // 2026-08-22 v3.13 T18: envelopes CTR fix (pos 1-2.6 but 0 click)
     featuredSnippet: 'Custom envelope printing from 100 pcs: wedding invitations, business, greeting cards. Free proof before print, foil/emboss/UV available. 120-300gsm paper, 3 business day turnaround.',
     lastUpdated: '2026-08-22',
-    h2: 'Custom Envelope Printing Hong Kong | C4/C5/C6/DL | 500 pcs MOQ | ZprintPro',
+    h2: 'Envelope Printing / Custom Envelopes / Wedding Invitation Envelopes / Business Envelopes — From 100 pcs, Free Proof, Same-Day Rush',
     coreAdvantages: {
       title: 'Why Choose ZprintPro for Envelopes?',
       items: [
