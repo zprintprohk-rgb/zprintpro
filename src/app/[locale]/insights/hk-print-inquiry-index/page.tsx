@@ -1,13 +1,16 @@
 // K3 v3.15 ① G1 《HK Print Inquiry Index》Vol.1 页面
 // 路由: /[locale]/insights/hk-print-inquiry-index
-// en 首发 (AI 引擎引用 en 概率最高), zh-hk 中文版同步, ja 暂走 en (Vol.2 补 ja 摘要)
+// en 首发 (AI 引擎引用 en 概率最高), zh-hk 中文版同步, ja 走 jaSummary (K3 v3.17 B4 schema 增量 8/24 17:20 拍板)
 // 2026-08-23 重上: 修复 3 处合规问题 —
 //   1) NAP 真实实体: publisher 改 siteConfig 深圳地址 (§13.10 NAP 层必须真实)
 //   2) hreflang 3 locale + x-default (§2 不可妥协)
 //   3) 移除直接回答块 [Stat] 占位符, 全量英文化 (en 首发定位)
+// 2026-08-24 v3.17 B4 增量: OrganizationSchema 集成 (sameAs + knowsAbout) + 区域 hreflang (en-US/GB/AU) + ja 摘要
 import { Metadata } from 'next';
 import { INDEX_VOL1, STAT_GRID } from '@/lib/insights/index-vol1';
 import { siteConfig } from '@/lib/seo';
+import { OrganizationSchema } from '@/components/insights/HKPrintInquiryIndex/OrganizationSchema';
+import { jaSummary } from '@/data/insights/hk-print-inquiry-index-vol1';
 
 // 静态参数 - 3 locale (与全站 [locale] 路由一致)
 export function generateStaticParams() {
@@ -18,18 +21,26 @@ const PAGE_PATH = 'insights/hk-print-inquiry-index';
 
 export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
   const isZh = params.locale === 'zh-hk';
+  const isJa = params.locale === 'ja';
   return {
     title: isZh
       ? `${INDEX_VOL1.title} | 智印港 ZprintPro`
+      : isJa
+      ? `${jaSummary.title} | ジープリント ZprintPro`
       : `${INDEX_VOL1.titleEn} | ZprintPro`,
     description: isZh
       ? '香港印刷業首個基於真實詢盤數據的季度公開指數. n=31 baseline (2026年8月), 渠道結構, CTA 位置效率, 語言分佈, 熱門著陸頁, 品類興趣.'
+      : isJa
+      ? jaSummary.excerpt
       : 'Hong Kong print industry first public quarterly index based on real inquiry data. n=31 baseline (Aug 2026), channel split, CTA position efficiency, language distribution, top landing pages, category interest.',
     alternates: {
       canonical: `${siteConfig.url}/${params.locale}/${PAGE_PATH}/`,
       languages: {
         'zh-HK': `${siteConfig.url}/zh-hk/${PAGE_PATH}/`,
         'en': `${siteConfig.url}/en/${PAGE_PATH}/`,
+        'en-US': `${siteConfig.url}/en/${PAGE_PATH}/`,
+        'en-GB': `${siteConfig.url}/en/${PAGE_PATH}/`,
+        'en-AU': `${siteConfig.url}/en/${PAGE_PATH}/`,
         'ja': `${siteConfig.url}/ja/${PAGE_PATH}/`,
         'x-default': `${siteConfig.url}/zh-hk/${PAGE_PATH}/`,
       },
@@ -194,6 +205,8 @@ export default async function HkPrintInquiryIndexPage({ params }: { params: { lo
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      {/* K3 v3.17 B4 schema 增量: Organization sameAs + knowsAbout + areaServed (per K3 §13.16.1 8/8 02:52 + 8/24 daily §2.2 实测缺失项) */}
+      <OrganizationSchema />
     </main>
   );
 }
