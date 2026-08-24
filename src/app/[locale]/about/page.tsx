@@ -866,27 +866,13 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
             <div className="grid md:grid-cols-3 gap-6">
               {t.credentials.map((cred, i) => (
                 <div key={i} className="bg-white rounded-xl p-6 shadow-sm border border-gray-100">
-                  <div className="flex items-start gap-3 mb-4">
+                  <div className="flex items-start gap-3">
                     <div className="w-10 h-10 bg-green-50 rounded-lg flex items-center justify-center shrink-0">
                       <svg className="w-5 h-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                     </div>
                     <div className="flex-1 min-w-0">
                       <h3 className="text-base font-bold text-[#333333]">{cred.name}</h3>
                       <p className="text-gray-500 text-xs mt-0.5">{cred.scope}</p>
-                    </div>
-                  </div>
-                  <div className="border-t border-gray-100 pt-3 space-y-1.5">
-                    <div className="flex items-center justify-between text-xs">
-                      <span className="text-gray-500">{locale === 'zh-hk' ? '認證機構' : locale === 'ja' ? '認証機関' : 'Issued by'}</span>
-                      <span className="font-semibold text-[#333333]">{cred.issuer}</span>
-                    </div>
-                    <div className="flex items-center justify-between text-xs">
-                      <span className="text-gray-500">{locale === 'zh-hk' ? '證書編號' : locale === 'ja' ? '証明書番号' : 'Cert No.'}</span>
-                      <span className="font-mono font-semibold text-[#2873F5]">{cred.certNo}</span>
-                    </div>
-                    <div className="flex items-center justify-between text-xs">
-                      <span className="text-gray-500">{locale === 'zh-hk' ? '有效期限' : locale === 'ja' ? '有効期限' : 'Valid until'}</span>
-                      <span className="font-semibold text-[#333333]">{cred.validUntil}</span>
                     </div>
                   </div>
                 </div>
