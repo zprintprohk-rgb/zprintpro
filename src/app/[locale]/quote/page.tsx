@@ -41,10 +41,28 @@ export async function generateMetadata({ params }: QuotePageProps): Promise<Meta
 }
 
 export default function QuotePage({ params }: QuotePageProps) {
+  // 2026-08-25 P1 #8 拍板 24h SLA FAQ 触发位置 (K3 8/24 19:03 拍板 SLA 适用条款, 8/25 P0 #5 数据 + 8/25 P1 #8 触发)
+  const faqLinkText: Record<string, string> = {
+    'zh-hk': '查看 24 小時 SLA 適用條款',
+    'en': 'View 24h SLA Terms',
+    'ja': '24 時間 SLA 適用条件を見る',
+  };
   return (
     <>
       <QuoteNoIndexManager />
       <QuoteRedirect locale={params.locale} />
+      <div className="fixed bottom-4 right-4 z-50">
+        <a
+          href={`/${params.locale}/faq/`}
+          className="inline-flex items-center gap-2 bg-[#2873F5] text-white px-4 py-2 rounded-full shadow-lg hover:bg-[#1E5BD8] transition-colors text-sm font-medium"
+          aria-label={faqLinkText[params.locale] || faqLinkText.en}
+        >
+          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          {faqLinkText[params.locale] || faqLinkText.en}
+        </a>
+      </div>
     </>
   );
 }

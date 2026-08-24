@@ -41,7 +41,7 @@ const translations = {
     advantageTitle: '核心優勢',
     advantages: [
       { title: '品質保證', desc: 'ISO 9001 + FSC 認證 · 海德堡四色柯式 + HP Indigo 數碼 + 6 道工序實拍 ([查看工序流 ↓](#factory)) · ICC 色彩管理 Delta E ≤3 · 1,000+ 企業客戶信賴。' },
-      { title: '快速交付', desc: '數碼印刷 24h · 柯式印刷 3–5 天 · 順豐本地當日 + DHL/FedEx 全球 2-4 天 · 緊急訂單專人跟進 · 1,000+ 訂單累計 · [WhatsApp 即時查詢 📲](https://wa.me/8619880851334) · [聯絡我們](/contact/)' },
+      { title: '快速交付', desc: '數碼印刷 24h · 柯式印刷 3–5 天 · 順豐本地當日 + DHL/FedEx 全球 2-4 天 · 緊急訂單專人跟進 · 1,000+ 訂單累計 · [WhatsApp 即時查詢 📲](https://wa.me/8619880851334) · [聯絡我們](/contact/) · [查看 24h SLA 適用條款](/zh-hk/faq/)' },
       { title: '專業服務', desc: '免費設計諮詢、免費刀模設計、免費色彩校樣。專屬客戶經理一對一跟進，從報價到交付全程無憂。' },
     ],
     teamTitle: '專業團隊',
@@ -197,7 +197,7 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
     advantageTitle: 'Core Advantages',
     advantages: [
       { title: 'Quality Assurance', desc: 'ISO 9001 + FSC certified. Heidelberg 4-color offset + HP Indigo digital + 6 production stages ([view flow ↓](#factory)). ICC color management with Delta E ≤3. Trusted by 1,000+ global brands.' },
-      { title: 'Fast Global Delivery', desc: 'Digital ships in 24h, offset 3–5 business days. DHL/FedEx worldwide in 2–4 days to 50+ countries. Free shipping to US / UK / AU / CA. 1,000+ orders shipped. [WhatsApp us 📲](https://wa.me/8619880851334) · [Contact us](/contact/)' },
+      { title: 'Fast Global Delivery', desc: 'Digital ships in 24h, offset 3–5 business days. DHL/FedEx worldwide in 2–4 days to 50+ countries. Free shipping to US / UK / AU / CA. 1,000+ orders shipped. [WhatsApp us 📲](https://wa.me/8619880851334) · [Contact us](/contact/) · [View 24h SLA Terms](/en/faq/)' },
       { title: 'Professional Service', desc: 'Free design consultation, free die-cut design, free color proofing. Dedicated English-speaking account manager assigned to every order. From quote to delivery — no setup fees, no hidden charges.' },
     ],
     teamTitle: 'Our Team',
@@ -348,7 +348,7 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
     advantageTitle: '核心強み',
     advantages: [
       { title: '品質保証', desc: 'ISO 9001 + FSC 認証 · ハイデルベルク 4 色オフセット + HP Indigo デジタル + 6 工程実写 ([工程フローを見る ↓](#factory)) · ICC カラーマネジメント Delta E ≤3 · 1,000+ 法人顧客。' },
-      { title: '迅速な納品', desc: 'デジタル 24h · オフセット 3-5 日 · DHL/FedEx 世界 2-4 日直送 · 50+ ヶ国対応 · 1,000+ 注文実績 · [WhatsApp で即時お問合せ 📲](https://wa.me/8619880851334) · ' },
+      { title: '迅速な納品', desc: 'デジタル 24h · オフセット 3-5 日 · DHL/FedEx 世界 2-4 日直送 · 50+ ヶ国対応 · 1,000+ 注文実績 · [WhatsApp で即時お問合せ 📲](https://wa.me/8619880851334) · [24 時間 SLA 適用条件を見る](/ja/faq/)' },
       { title: '専門的なサービス', desc: '無料デザイン相談、無料型抜き設計、無料カラープルーフ。専任のアカウントマネージャーが見積もりから納品までワンストップでサポートします。' },
     ],
     teamTitle: '専門チーム',
