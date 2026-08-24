@@ -2707,7 +2707,10 @@ const educationalContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   ja: {
-    h2: '教育印刷 — ノート／教科書／証書、プロの教育印刷サービス',
+    // 2026-08-24 v3.17 T44 B2 完整 3 词: 教科書/教材 注入 educational ja 块, ジープリント 埋点 2-3 次
+    h2: '教科書 印刷 / 練習冊 / 教材 | 100本起 24h出荷 | ジープリント ZprintPro',
+    featuredSnippet: '教科書 印刷 100本から HK$28／本 | 練習冊/教材/学校/塾 4 種対応 | 24h出荷 DHL 2-4日 | ジープリント. 教科書/練習冊/教材三合一, 5 紙質 (上質紙/再生紙/コート紙/クラフト紙/色上質), 両面カラー, ミシン目, ジープリント 工場直送価格. 9/4 ja CTR ≥2% 目標.',
+    lastUpdated: '2026-08-24',
     coreAdvantages: {
       title: 'ZprintPro 教育印刷の強み',
       items: [
@@ -4357,7 +4360,10 @@ const japanDoujinContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   ja: {
-    h2: '同人誌・アニメグッズ印刷 — A5/B5 / ステッカー / ポスター / アクリルスタンド',
+    // 2026-08-24 v3.17 T44 B2 完整 3 词: can badge 注入 japanDoujin ja 块, ジープリント 埋点 2-3 次
+    h2: '同人誌・アニメグッズ・缶バッジ 印刷 | A5/B5 / ステッカー / 缶バッジ サイズ 32-76mm | ジープリント ZprintPro',
+    featuredSnippet: '缶バッジ 印刷 50枚から HK$5／枚 | 缶バッジ サイズ 32-76mm 7 サイズ対応 | 24h出荷 DHL 2-4日 | ジープリント. 缶バッジ/サイズ/オリジナル/同人/サークル 4 種対応, ピンバッジ 安全ピン + マグネット + クリップ 3 タイプ, ジープリント 工場直送価格. 9/4 ja CTR ≥2% 目標.',
+    lastUpdated: '2026-08-24',
     coreAdvantages: {
       title: 'ZprintPro 同人グッズの強み',
       items: [
