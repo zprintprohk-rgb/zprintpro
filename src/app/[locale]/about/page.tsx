@@ -63,12 +63,13 @@ const translations = {
     // 2026-08-19 P0-A: 公司资质块 (证书编号 + 认证机构 + 有效期, K3 拍板新增)
     // 2026-08-24 F1 紧急修复: 撤下 ISO 9001 + FSC 假证书号 (K3 8/24 18:11 拍板)
     // 2026-08-24 F1-batch-3 修正 (K3 8/24 18:35 拍板): 保留 "通過 ISO 9001 品質管理體系認證" + "FSC 森林認證" 文字 + 撤 certNo + validUntil 字段
+    // 2026-08-24 F1-batch-3 立即执行 (K3 8/24 18:42 拍板): certNo 字段全撤 (不展示证书号), 客服查询可联系
     credTitle: '公司資質 · 可查證書',
     credSubtitle: '第三方認證 · 通過 ISO 9001 品質管理體系認證 + FSC 森林認證 · 定期續審',
     credentials: [
-      { name: 'ISO 9001:2015 品質管理體系', issuer: 'TÜV Rheinland', certNo: '—', validUntil: '—', scope: '通過 ISO 9001 品質管理體系認證 (K3 8/19 拍板, 真實證書號 8/25 補充)' },
-      { name: 'FSC® 森林認證 (CoC)', issuer: 'Forest Stewardship Council', certNo: '—', validUntil: '—', scope: 'FSC 森林認證紙張溯源管理 (K3 8/19 拍板, 真實證書號 8/25 補充)' },
-      { name: '大豆油墨環保認證', issuer: 'SGS', certNo: 'SGS-CNP-2024-001', validUntil: '2027-12-31', scope: 'VOC 排放 ≤ 50% 行業標準' },
+      { name: 'ISO 9001:2015 品質管理體系', issuer: 'TÜV Rheinland', certNo: '詳詢客服', validUntil: '—', scope: '通過 ISO 9001 品質管理體系認證 (K3 8/19 拍板, 證書詳詢客服)' },
+      { name: 'FSC® 森林認證 (CoC)', issuer: 'Forest Stewardship Council', certNo: '詳詢客服', validUntil: '—', scope: 'FSC 森林認證紙張溯源管理 (K3 8/19 拍板, 證書詳詢客服)' },
+      { name: '大豆油墨環保認證', issuer: 'SGS', certNo: '詳詢客服', validUntil: '—', scope: 'VOC 排放 ≤ 50% 行業標準 (K3 8/19 拍板, 證書詳詢客服)' },
     ],
 
     // 2026-08-19 P0-A: Page-end CTA section (30秒AI报价 + WhatsApp + 聯絡)
@@ -200,9 +201,9 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
     credTitle: 'Company Credentials · Verifiable',
     credSubtitle: 'Third-party certification · Certificate numbers open to verification by issuing bodies · Periodic renewal',
     credentials: [
-      { name: 'ISO 9001:2015', issuer: 'TÜV Rheinland', certNo: '01 100 150 1234', validUntil: '2027-08-15', scope: 'Printing quality management system' },
-      { name: 'FSC® C123456', issuer: 'Forest Stewardship Council', certNo: 'FSC-C123456', validUntil: '2028-04-20', scope: 'Paper chain-of-custody certification (CoC)' },
-      { name: 'Soy-based Ink Eco-Cert', issuer: 'SGS', certNo: 'SGS-CNP-2024-001', validUntil: '2027-12-31', scope: 'VOC emissions ≤ 50% of industry standard' },
+      { name: 'ISO 9001:2015', issuer: 'TÜV Rheinland', certNo: 'Contact for details', validUntil: '—', scope: 'Printing quality management system certified (contact us for certificate details)' },
+      { name: 'FSC® Chain-of-Custody', issuer: 'Forest Stewardship Council', certNo: 'Contact for details', validUntil: '—', scope: 'FSC certified paper chain-of-custody (contact us for certificate details)' },
+      { name: 'Soy-based Ink Eco-Cert', issuer: 'SGS', certNo: 'Contact for details', validUntil: '—', scope: 'VOC emissions ≤ 50% of industry standard (contact us for certificate details)' },
     ],
 
     // 2026-08-19 P0-A: Page-end CTA section (30s AI quote + WhatsApp + Contact)
@@ -334,9 +335,9 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
     credTitle: '会社資格 · 検証可能',
     credSubtitle: '第三者認証 · 証明書番号は発行機関に照会可能 · 定期更新',
     credentials: [
-      { name: 'ISO 9001:2015', issuer: 'TÜV Rheinland', certNo: '01 100 150 1234', validUntil: '2027-08-15', scope: '印刷品質マネジメントシステム' },
-      { name: 'FSC® C123456', issuer: 'Forest Stewardship Council', certNo: 'FSC-C123456', validUntil: '2028-04-20', scope: '紙 CoC (Chain-of-Custody) 認証' },
-      { name: '大豆インク環境認証', issuer: 'SGS', certNo: 'SGS-CNP-2024-001', validUntil: '2027-12-31', scope: 'VOC 排出量 ≤ 業界基準 50%' },
+      { name: 'ISO 9001:2015', issuer: 'TÜV Rheinland', certNo: '詳細はお問い合わせください', validUntil: '—', scope: '印刷品質マネジメントシステム認証 (詳細はお問い合わせください)' },
+      { name: 'FSC® Chain-of-Custody', issuer: 'Forest Stewardship Council', certNo: '詳細はお問い合わせください', validUntil: '—', scope: 'FSC 認証紙 CoC (Chain-of-Custody) (詳細はお問い合わせください)' },
+      { name: '大豆インク環境認証', issuer: 'SGS', certNo: '詳細はお問い合わせください', validUntil: '—', scope: 'VOC 排出量 ≤ 業界基準 50% (詳細はお問い合わせください)' },
     ],
 
     // 2026-08-19 P0-A: ページ末尾 CTA (30秒AI見積もり + WhatsApp + お問い合わせ)
