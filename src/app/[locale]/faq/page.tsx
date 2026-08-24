@@ -30,9 +30,28 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: { locale: string } }): Promise<Metadata> {
   const data = FAQ_DATA_MAP[params.locale];
   if (!data) return {};
+  const locale = params.locale;
+  const totalFaqs = data.categories.reduce((sum: number, c: any) => sum + c.faqs.length, 0);
   return {
     title: data.metadata.title,
     description: data.metadata.description,
+    openGraph: {
+      title: data.metadata.title,
+      description: data.metadata.description,
+      url: `https://zprintpro.com/${locale}/faq/`,
+      siteName: locale === 'zh-hk' ? '智印港' : 'ZprintPro',
+      locale: locale === 'zh-hk' ? 'zh_HK' : locale === 'ja' ? 'ja_JP' : 'en_US',
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: data.metadata.title,
+      description: data.metadata.description,
+    },
+    other: {
+      'faq:count': totalFaqs.toString(),
+      'faq:categories': data.categories.length.toString(),
+    },
     alternates: {
       canonical: `https://zprintpro.com/${params.locale}/faq/`,
       languages: {
@@ -74,7 +93,11 @@ export default function FaqPage({ params }: { params: { locale: string } }) {
             {data.metadata.description}
           </p>
           <p className="text-xs text-gray-400 mt-2">
-            Last updated: {data.metadata.lastUpdated} · Version {data.metadata.version}
+            Last updated: {data.metadata.lastUpdated} · Version {data.metadata.version} ·{' '}
+            {data.categories.length}{' '}
+            {params.locale === 'zh-hk' ? '個類別' : params.locale === 'ja' ? 'カテゴリー' : 'categories'} ·{' '}
+            {data.categories.reduce((sum: number, c: any) => sum + c.faqs.length, 0)}{' '}
+            {params.locale === 'zh-hk' ? '條 FAQ' : params.locale === 'ja' ? '件の FAQ' : 'FAQs'}
           </p>
         </div>
 
