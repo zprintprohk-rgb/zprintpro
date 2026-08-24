@@ -68,10 +68,29 @@ const translations = {
     // 2026-08-24 F1-batch-4 立即执行 (K3 8/24 19:03 拍板): certNo + validUntil 字段全清空 (不留联系方式, 不展示认证细节), 只保留认证描述 (ISO 9001 / FSC / SGS)
     credTitle: '公司資質 · 可查證書',
     credSubtitle: '第三方認證 · 通過 ISO 9001 品質管理體系認證 · 可選 FSC 森林認證紙張 · 定期續審',
+    // 2026-08-24 F1-batch-6 数据层重构 (K3 8/24 20:15 P1 #3 拍板 4.2 方案 B)
+    // object {name, issuer, certNo, validUntil, scope} → array of {name, items: [{label, value}]}
+    // 通用结构: 未来加新认证 (FDA/CE/UL) 不用改 UI 代码
+    // SOP-10 第 6 款: UI 层 filter 空/'—'/占位符字段不展示
     credentials: [
-      { name: 'ISO 9001 品質管理體系', issuer: '—', certNo: '', validUntil: '', scope: '印刷品質管理體系認證' },
-      { name: 'FSC® 森林認證 (CoC)', issuer: '—', certNo: '', validUntil: '', scope: 'FSC 認證紙張供應 (可選)' },
-      { name: '大豆油墨環保認證', issuer: '—', certNo: '', validUntil: '', scope: 'VOC 排放 ≤ 50% 行業標準' },
+      {
+        name: 'ISO 9001 品質管理體系',
+        items: [
+          { label: '認證範圍', value: '印刷品質管理體系認證' },
+        ],
+      },
+      {
+        name: 'FSC® 森林認證 (CoC)',
+        items: [
+          { label: '認證範圍', value: 'FSC 認證紙張供應 (可選)' },
+        ],
+      },
+      {
+        name: '大豆油墨環保認證',
+        items: [
+          { label: '認證範圍', value: 'VOC 排放 ≤ 50% 行業標準' },
+        ],
+      },
     ],
 
     // 2026-08-19 P0-A: Page-end CTA section (30秒AI报价 + WhatsApp + 聯絡)
@@ -202,10 +221,27 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
     // 2026-08-19 P0-A: Company credentials block (cert number + issuer + validity)
     credTitle: 'Company Credentials · Verifiable',
     credSubtitle: 'Third-party certification · ISO 9001 quality management certified · FSC forest certified paper available · Periodic renewal',
+    // 2026-08-24 F1-batch-6 data layer refactor (K3 8/24 20:15 P1 #3 拍板 4.2 方案 B)
+    // object → array of {name, items: [{label, value}]} for generic UI filter
     credentials: [
-      { name: 'ISO 9001 Quality Management', issuer: '—', certNo: '', validUntil: '', scope: 'Printing quality management system certified' },
-      { name: 'FSC® Chain-of-Custody', issuer: '—', certNo: '', validUntil: '', scope: 'FSC certified paper available (optional)' },
-      { name: 'Soy-based Ink Eco-Cert', issuer: '—', certNo: '', validUntil: '', scope: 'VOC emissions ≤ 50% of industry standard' },
+      {
+        name: 'ISO 9001 Quality Management',
+        items: [
+          { label: 'Scope', value: 'Printing quality management system certified' },
+        ],
+      },
+      {
+        name: 'FSC® Chain-of-Custody',
+        items: [
+          { label: 'Scope', value: 'FSC certified paper available (optional)' },
+        ],
+      },
+      {
+        name: 'Soy-based Ink Eco-Cert',
+        items: [
+          { label: 'Scope', value: 'VOC emissions ≤ 50% of industry standard' },
+        ],
+      },
     ],
 
     // 2026-08-19 P0-A: Page-end CTA section (30s AI quote + WhatsApp + Contact)
@@ -336,10 +372,27 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
     // 2026-08-19 P0-A: 会社資格ブロック (証明書番号 + 発行機関 + 有効期限)
     credTitle: '会社資格 · 検証可能',
     credSubtitle: '第三者認証 · ISO 9001 品質マネジメントシステム認証 · FSC 森林認証紙対応 · 定期更新',
+    // 2026-08-24 F1-batch-6 データ層リファクタ (K3 8/24 20:15 P1 #3 拍板 4.2 方案 B)
+    // object → array of {name, items: [{label, value}]} 汎用UIフィルター
     credentials: [
-      { name: 'ISO 9001 品質マネジメント', issuer: '—', certNo: '', validUntil: '', scope: '印刷品質マネジメントシステム認証' },
-      { name: 'FSC® Chain-of-Custody', issuer: '—', certNo: '', validUntil: '', scope: 'FSC 認証紙対応（選択可）' },
-      { name: '大豆インク環境認証', issuer: '—', certNo: '', validUntil: '', scope: 'VOC 排出量 ≤ 業界基準 50%' },
+      {
+        name: 'ISO 9001 品質マネジメント',
+        items: [
+          { label: '認証範囲', value: '印刷品質マネジメントシステム認証' },
+        ],
+      },
+      {
+        name: 'FSC® Chain-of-Custody',
+        items: [
+          { label: '認証範囲', value: 'FSC 認証紙対応（選択可）' },
+        ],
+      },
+      {
+        name: '大豆インク環境認証',
+        items: [
+          { label: '認証範囲', value: 'VOC 排出量 ≤ 業界基準 50%' },
+        ],
+      },
     ],
 
     // 2026-08-19 P0-A: ページ末尾 CTA (30秒AI見積もり + WhatsApp + お問い合わせ)
@@ -872,7 +925,15 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
                     </div>
                     <div className="flex-1 min-w-0">
                       <h3 className="text-base font-bold text-[#333333]">{cred.name}</h3>
-                      <p className="text-gray-500 text-xs mt-0.5">{cred.scope}</p>
+                      {/* 2026-08-24 F1-batch-6 通用结构 (K3 4.2 方案 B): filter 空值/'—'/占位符 */}
+                      {cred.items
+                        .filter((item) => item.value && item.value !== '—' && item.value !== '-' && item.value !== 'N/A')
+                        .map((item, j) => (
+                          <p key={j} className="text-gray-500 text-xs mt-0.5">
+                            {item.label && <span className="text-gray-400">{item.label}: </span>}
+                            {item.value}
+                          </p>
+                        ))}
                     </div>
                   </div>
                 </div>
