@@ -61,11 +61,12 @@ const translations = {
     processSubtitle: '5 步標準流程，從上傳檔案到全球送達',
 
     // 2026-08-19 P0-A: 公司资质块 (证书编号 + 认证机构 + 有效期, K3 拍板新增)
+    // 2026-08-24 F1 紧急修复: 撤下 ISO 9001 + FSC 假证书号 (K3 8/24 18:11 拍板, 真实持证情况待 K3 8/25 拍板)
     credTitle: '公司資質 · 可查證書',
-    credSubtitle: '第三方認證 · 證書編號可向發證機構查詢 · 定期續審',
+    credSubtitle: '生產流程遵循國際行業標準 · 紙張可選 FSC 認證供應商 · 詳詢客服',
     credentials: [
-      { name: 'ISO 9001:2015', issuer: 'TÜV Rheinland', certNo: '01 100 150 1234', validUntil: '2027-08-15', scope: '印刷品質管理體系認證' },
-      { name: 'FSC® C123456', issuer: 'Forest Stewardship Council', certNo: 'FSC-C123456', validUntil: '2028-04-20', scope: '紙張溯源管理 (CoC Chain-of-Custody)' },
+      { name: '品質管理體系', issuer: '深圳彩龍印刷包裝有限公司', certNo: '—', validUntil: '—', scope: '生產流程遵循 ISO 9001 品質管理體系 (per 2026 年內審通過, 真實證書待 K3 8/25 拍板補充)' },
+      { name: '紙張溯源管理', issuer: '供應商提供', certNo: '—', validUntil: '—', scope: '可選 FSC 認證紙張 (由認證供應商提供, 詳詢客服)' },
       { name: '大豆油墨環保認證', issuer: 'SGS', certNo: 'SGS-CNP-2024-001', validUntil: '2027-12-31', scope: 'VOC 排放 ≤ 50% 行業標準' },
     ],
 
