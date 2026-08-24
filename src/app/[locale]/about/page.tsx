@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { Locale, siteConfig, getBrandName, generateLocalBusinessSchema } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
+import { parseInlineLinks } from '@/utils/parseInlineLinks';
 
 export function generateStaticParams() {
   return [{ locale: 'zh-hk' }, { locale: 'en' }, { locale: 'ja' }];
@@ -64,12 +65,13 @@ const translations = {
     // 2026-08-24 F1 紧急修复: 撤下 ISO 9001 + FSC 假证书号 (K3 8/24 18:11 拍板)
     // 2026-08-24 F1-batch-3 修正 (K3 8/24 18:35 拍板): 保留 "通過 ISO 9001 品質管理體系認證" + "FSC 森林認證" 文字 + 撤 certNo + validUntil 字段
     // 2026-08-24 F1-batch-3 立即执行 (K3 8/24 18:42 拍板): certNo 字段全撤 (不展示证书号), 客服查询可联系
+    // 2026-08-24 F1-batch-4 立即执行 (K3 8/24 19:03 拍板): certNo + validUntil 字段全清空 (不留联系方式, 不展示认证细节), 只保留认证描述 (ISO 9001 / FSC / SGS)
     credTitle: '公司資質 · 可查證書',
-    credSubtitle: '第三方認證 · 通過 ISO 9001 品質管理體系認證 + FSC 森林認證 · 定期續審',
+    credSubtitle: '第三方認證 · 通過 ISO 9001 品質管理體系認證 · 可選 FSC 森林認證紙張 · 定期續審',
     credentials: [
-      { name: 'ISO 9001:2015 品質管理體系', issuer: 'TÜV Rheinland', certNo: '詳詢客服', validUntil: '—', scope: '通過 ISO 9001 品質管理體系認證 (K3 8/19 拍板, 證書詳詢客服)' },
-      { name: 'FSC® 森林認證 (CoC)', issuer: 'Forest Stewardship Council', certNo: '詳詢客服', validUntil: '—', scope: 'FSC 森林認證紙張溯源管理 (K3 8/19 拍板, 證書詳詢客服)' },
-      { name: '大豆油墨環保認證', issuer: 'SGS', certNo: '詳詢客服', validUntil: '—', scope: 'VOC 排放 ≤ 50% 行業標準 (K3 8/19 拍板, 證書詳詢客服)' },
+      { name: 'ISO 9001 品質管理體系', issuer: '—', certNo: '', validUntil: '', scope: '印刷品質管理體系認證' },
+      { name: 'FSC® 森林認證 (CoC)', issuer: '—', certNo: '', validUntil: '', scope: 'FSC 認證紙張供應 (可選)' },
+      { name: '大豆油墨環保認證', issuer: '—', certNo: '', validUntil: '', scope: 'VOC 排放 ≤ 50% 行業標準' },
     ],
 
     // 2026-08-19 P0-A: Page-end CTA section (30秒AI报价 + WhatsApp + 聯絡)
@@ -201,9 +203,9 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
     credTitle: 'Company Credentials · Verifiable',
     credSubtitle: 'Third-party certification · Certificate numbers open to verification by issuing bodies · Periodic renewal',
     credentials: [
-      { name: 'ISO 9001:2015', issuer: 'TÜV Rheinland', certNo: 'Contact for details', validUntil: '—', scope: 'Printing quality management system certified (contact us for certificate details)' },
-      { name: 'FSC® Chain-of-Custody', issuer: 'Forest Stewardship Council', certNo: 'Contact for details', validUntil: '—', scope: 'FSC certified paper chain-of-custody (contact us for certificate details)' },
-      { name: 'Soy-based Ink Eco-Cert', issuer: 'SGS', certNo: 'Contact for details', validUntil: '—', scope: 'VOC emissions ≤ 50% of industry standard (contact us for certificate details)' },
+      { name: 'ISO 9001 Quality Management', issuer: '—', certNo: '', validUntil: '', scope: 'Printing quality management system certified' },
+      { name: 'FSC® Chain-of-Custody', issuer: '—', certNo: '', validUntil: '', scope: 'FSC certified paper available (optional)' },
+      { name: 'Soy-based Ink Eco-Cert', issuer: '—', certNo: '', validUntil: '', scope: 'VOC emissions ≤ 50% of industry standard' },
     ],
 
     // 2026-08-19 P0-A: Page-end CTA section (30s AI quote + WhatsApp + Contact)
@@ -335,9 +337,9 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
     credTitle: '会社資格 · 検証可能',
     credSubtitle: '第三者認証 · 証明書番号は発行機関に照会可能 · 定期更新',
     credentials: [
-      { name: 'ISO 9001:2015', issuer: 'TÜV Rheinland', certNo: '詳細はお問い合わせください', validUntil: '—', scope: '印刷品質マネジメントシステム認証 (詳細はお問い合わせください)' },
-      { name: 'FSC® Chain-of-Custody', issuer: 'Forest Stewardship Council', certNo: '詳細はお問い合わせください', validUntil: '—', scope: 'FSC 認証紙 CoC (Chain-of-Custody) (詳細はお問い合わせください)' },
-      { name: '大豆インク環境認証', issuer: 'SGS', certNo: '詳細はお問い合わせください', validUntil: '—', scope: 'VOC 排出量 ≤ 業界基準 50% (詳細はお問い合わせください)' },
+      { name: 'ISO 9001 品質マネジメント', issuer: '—', certNo: '', validUntil: '', scope: '印刷品質マネジメントシステム認証' },
+      { name: 'FSC® Chain-of-Custody', issuer: '—', certNo: '', validUntil: '', scope: 'FSC 認証紙対応（選択可）' },
+      { name: '大豆インク環境認証', issuer: '—', certNo: '', validUntil: '', scope: 'VOC 排出量 ≤ 業界基準 50%' },
     ],
 
     // 2026-08-19 P0-A: ページ末尾 CTA (30秒AI見積もり + WhatsApp + お問い合わせ)
@@ -789,7 +791,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
                     <span className="text-[#2873F5] text-xl font-bold">{i + 1}</span>
                   </div>
                   <h3 className="text-lg font-bold text-[#333333] mb-2">{adv.title}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{adv.desc}</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">{parseInlineLinks(adv.desc)}</p>
                 </div>
               ))}
             </div>
@@ -825,7 +827,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
                     {team.title.charAt(0)}
                   </div>
                   <h3 className="text-lg font-bold text-[#333333] mb-2">{team.title}</h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">{team.desc}</p>
+                  <p className="text-gray-600 text-sm leading-relaxed">{parseInlineLinks(team.desc)}</p>
                 </div>
               ))}
             </div>
@@ -846,7 +848,7 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
                   </div>
                   <div>
                     <div className="font-bold text-[#333333] text-sm">{ind.name}</div>
-                    <div className="text-gray-500 text-xs mt-0.5">{ind.desc}</div>
+                    <div className="text-gray-500 text-xs mt-0.5">{parseInlineLinks(ind.desc)}</div>
                   </div>
                 </div>
               ))}
