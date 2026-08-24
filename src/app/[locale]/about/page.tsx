@@ -201,7 +201,7 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
 
     // 2026-08-19 P0-A: Company credentials block (cert number + issuer + validity)
     credTitle: 'Company Credentials · Verifiable',
-    credSubtitle: 'Third-party certification · Certificate numbers open to verification by issuing bodies · Periodic renewal',
+    credSubtitle: 'Third-party certification · ISO 9001 quality management certified · FSC forest certified paper available · Periodic renewal',
     credentials: [
       { name: 'ISO 9001 Quality Management', issuer: '—', certNo: '', validUntil: '', scope: 'Printing quality management system certified' },
       { name: 'FSC® Chain-of-Custody', issuer: '—', certNo: '', validUntil: '', scope: 'FSC certified paper available (optional)' },
@@ -335,7 +335,7 @@ Our vision is "Smarter Printing, Brighter Future." Through intelligent productio
 
     // 2026-08-19 P0-A: 会社資格ブロック (証明書番号 + 発行機関 + 有効期限)
     credTitle: '会社資格 · 検証可能',
-    credSubtitle: '第三者認証 · 証明書番号は発行機関に照会可能 · 定期更新',
+    credSubtitle: '第三者認証 · ISO 9001 品質マネジメントシステム認証 · FSC 森林認証紙対応 · 定期更新',
     credentials: [
       { name: 'ISO 9001 品質マネジメント', issuer: '—', certNo: '', validUntil: '', scope: '印刷品質マネジメントシステム認証' },
       { name: 'FSC® Chain-of-Custody', issuer: '—', certNo: '', validUntil: '', scope: 'FSC 認証紙対応（選択可）' },
