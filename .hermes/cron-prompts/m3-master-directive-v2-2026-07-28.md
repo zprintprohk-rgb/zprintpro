@@ -9,14 +9,27 @@
 
 ## §0 强制执行约束（红线，任何阶段不可违反）
 
+> **【v3 增补 2026-08-23 06:38 K3 拍板】** 必读 `F:\zprintpro-nextjs\.hermes\cron-prompts\k3-v3-addendum-2026-08-23.md` (最高优先级 SSoT)
+> **【v3 §0.21 报告格式简化 2026-08-20 11:54 K3 拍板】** 报告不列 push 计数, 攒批策略作废, 释放 token 给 SEO+GEO 业务目标
+> **【v3 业务 0 改动红线 2026-08-22 17:58 K3 F0 拍板】** 不删 SKU / 不删文案 / 不删长文本字段内容, 1 次修复不盲修
+> **【v3 5 SOP 完整谱系 2026-08-22-8/23 K3 拍板】** SOP-1 红灯冻结令 / SOP-2 阈值二元化 / SOP-3 根因 diff 优先 / SOP-4 债务熔断 / SOP-5 派生数据禁手搓 / SOP-6 lock 双验证 / SOP-7 验收数字附原文 / SOP-8 撞车兜底 / SOP-9 验证 > 假设
+
 | # | 约束 | 验证方式 |
 |---|------|---------|
-| 0.1 | 每天 ≤1 push（攒批，origin_ssh main） | git log --oneline --since="today" \| wc -l ≤ 1 |
+| 0.1 | ~~每天 ≤1 push（攒批，origin_ssh main）~~ → v3 §0.21 作废攒批策略, 报告不列 push 计数 | git log --oneline (K3 拍板后立即 push, 不攒批) |
 | 0.2 | push 后 verify-deploy PASS 才算完成 | curl -sI https://zprintpro.com \| grep "200" |
-| 0.3 | 封版零改动文件清单（见下） | diff 检查 |
-| 0.4 | 内链先核后写：curl 验证目标 URL 200 后才写入 | curl -sI <url> \| head -1 |
+| 0.3 | 封版零改动文件清单（见下） + **v3 业务 0 改动红线** (不删 SKU/文案/长文本) | diff 检查 + 业务字段级 grep |
+| 0.4 | 内链先核后写：curl 验证目标 URL 200 后才写入 (§13.6 单数 /product/ + §13.10 NAP 脱钩 + §13.16.1 ja 品牌词「ジープリント」) | curl -sI <url> \| head -1 |
 | 0.5 | 不删/不改现有 slug/不加地区词（除非本文件明确指示） | — |
-| 0.6 | 拿不准 → 选保守方案，报告标注，继续下一任务 | — |
+| 0.6 | 拿不准 → 选保守方案，报告标注，继续下一任务 + **v3 SOP-1 红灯冻结令** (build FAIL 立即停手, 含"无关"任务) | — |
+| 0.7 | **v3 SOP-2 阈值二元化** (禁"勉强/基本/差不多", 验收只有达标/未达标) | 报告措辞检查 |
+| 0.8 | **v3 SOP-3 根因 diff 优先法** (先 diff 正常 vs 异常列结构差异, 机制猜测必附验证方法) | `git show --stat` + `git diff` |
+| 0.9 | **v3 SOP-4 债务熔断** (每版本延后 ≤2 任务, 跨版本不重复延后) | matrix.json 延后任务追踪 |
+| 0.10 | **v3 SOP-5 派生数据禁手搓** (sitemap/RSS/schema 必脚本化 + 抽 3 条字段级比对) | 脚本生成 + 抽样验证 |
+| 0.11 | **v3 SOP-6 lock 双验证** (动 package.json/lock 必跑 `npx npm@10.9.2 install --package-lock-only` + `ci --dry-run`) | 双命令输出 |
+| 0.12 | **v3 SOP-7 验收数字附原文** (禁"3 闸门全过"虚报, 必附 `tsc`/`build`/`verify-deploy` 实际输出) | 命令输出原文 |
+| 0.13 | **v3 SOP-8 撞车兜底** (派活前 3 问 + 抢跑识别 tsc+build 必过 + 兜底 rebase) | `git status` + `npx tsc --noEmit` + `npm run build` |
+| 0.14 | **v3 SOP-9 验证 > 假设** (T43 反直觉: 任何"前提 XXX 缺失"修复, 必先实测线上 HTML 验证; GSC rich results 是观察项, 禁盲改) | `curl + grep` 线上验证 |
 
 ### 封版文件清单（绝对不可修改）
 page.tsx (hero 区域)

@@ -335,14 +335,27 @@ node scripts/verify-deploy.mjs          # 自动查 CF Pages check-runs API stat
 > **核心定位**: 把 SEO 自进化从 Hermes 抽象 cron 升级为 user 自己定时任务列表里可见、每天 10:15 跑的实体任务。
 > **目标**: 千行百业 × 主营类目,深度+广度双覆盖,纯文字博客无图,稳定运维不出现 404/301。
 
-### 13.1 4 条 cron 实体
+### 13.1 4 条 cron 实体 (2026-08-23 06:38 K3 v3 增补校准)
 
 | Cron 名 | 触发 | 范围 |
 |---------|------|------|
-| `zprintpro-daily-content-evolve` | 每天 10:15 Asia/Shanghai | Blog (1-2 篇纯文字) + SKU (2-3 个优化) + Matrix tracking |
-| `zprintpro-weekly-meta-refresh` | 周一 11:00 | Tier B 行业 + 类目页 meta refresh |
-| `zprintpro-monthly-matrix-audit` | 每月 1 号 14:00 | 全 matrix 覆盖率审计 + Tier 切换判定 |
-| `zprintpro-gsc-feedback-loop` | 每周三 15:00 | 拉 GSC 数据 → 写回 matrix next_due 加权;+ 智印港品牌词 CTR 追踪 (基线 10% → 目标 4 周 40%+);+ 301 承接验证 (z-printpro.com 旧 URL 抽查 ≥10 条确认 301 → 新站 200) |
+| `zprintpro-daily-content-1x7w` (校准 8/23, 实际名) | 每天 9:10 Asia/Shanghai (校准 8/23, 实际触发) | Blog (1-2 篇纯文字) + SKU (2-3 个优化) + Matrix tracking + v3 5 SOP + §13.16.1 ja 品牌词「ジープリント」埋点 + T39 IndexNow 自动化 (8/28 后) |
+| `zprintpro-weekly-meta-refresh` | 周一 11:00 | Tier B 行业 + 类目页 meta refresh + v3.16 T41/T42/T44/T45 (8/28 验收) + §13.16.1 ja 埋点 |
+| `zprintpro-monthly-matrix-audit` | 每月 1 号 14:00 | 全 matrix 覆盖率审计 + Tier 切换判定 + G2 实体 0→1 + G1 Vol.2 进度 + §13.16.1 30 目录建设 |
+| `zprintpro-gsc-feedback-loop` | 每周三 15:00 | 拉 GSC 数据 → 写回 matrix next_due 加权;+ 智印港品牌词 CTR 追踪 (基线 10% → 目标 4 周 40%+);+ ジープリント branded search 6 query 监测;+ 301 承接验证 (z-printpro.com 旧 URL 抽查 ≥10 条确认 301 → 新站 200);+ T43 反直觉: rich results 是 GSC 观察项, 禁盲改 schema |
+
+### 13.1.1 4 cron 必读 SSoT (2026-08-23 K3 拍板, 最高优先级)
+
+**`F:\zprintpro-nextjs\.hermes\cron-prompts\k3-v3-addendum-2026-08-23.md`** (22.3KB, 12 节, 4 cron 启动必读第 1 优先级)
+
+v3 增补内容 (K3 8/20-8/23 拍板):
+- §0.21 报告格式简化 (8/20 11:54): 报告不列 push 计数, 攒批策略作废
+- 业务 0 改动红线 (8/22 17:58 F0 拍板): 不删 SKU / 文案 / 长文本字段
+- 5 SOP 完整谱系 (8/22-8/23): SOP-1 红灯冻结令 / SOP-2 阈值二元化 / SOP-3 根因 diff 优先 / SOP-4 债务熔断 / SOP-5 派生数据禁手搓 / SOP-6 lock 双验证 / SOP-7 验收数字附原文 / SOP-8 撞车兜底 / SOP-9 验证 > 假设
+- §13.16.1 ja 品牌词「ジープリント」 (8/8 02:52): 30 目录 + sameAs + 埋点 2-3 次
+- T43 反直觉 (8/23 02:52): 16 类目 × 3 locale + PDP + blog FAQPage 已全部在线, "48 组件缺失"前提已过期
+- G1 Vol.2 计划 (8/28 中检后): 008 度量层 SQL + 区域 hreflang + ja 摘要
+- v3.16 9 任务进度 (8/22 17:48): F0 ✅ / F1 ✅ / T41-T45 PENDING (8/28) / G2 PENDING (8/28) / T39 PENDING (8/28)
 
 ### 13.2 行业 Tier 分级（按印刷品复购频次，不是按市场规模）
 

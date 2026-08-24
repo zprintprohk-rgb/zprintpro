@@ -2,6 +2,45 @@
 # 提取源: m3-master-directive-v2-2026-07-28.md (L446-524)
 # 用途: 5 cron prompt v2 升级 (daily/gsc/monthly/weekly/revenue)
 # 同步: 2026-07-28 10:55 (K3 拍板 v2 替代 v1)
+# v3 增补: 2026-08-23 06:38 K3 拍板 (5 SOP + §0.21 + 业务 0 改动 + §13.16.1 + G1 Vol.2 + T43 反直觉)
+# v3 必读 SSoT: F:\zprintpro-nextjs\.hermes\cron-prompts\k3-v3-addendum-2026-08-23.md (最高优先级)
+
+---
+
+## 【v3 公共段 · 2026-08-23 06:38 K3 拍板 · 5 cron 必含】
+
+### v3 关键摘要 (5 cron 报告必含)
+
+1. **§0.21 报告格式简化** (8/20 11:54 K3 拍板): 报告不列 push 计数 (今日 X/5 / 月累计 Y/150 / amend N/2 / buffer 5-X), 攒批策略作废, 只报业务 actionable; 保留: push 前 build 4 步 + push 后 verify 5 步 (技术质量)
+2. **业务 0 改动红线** (8/22 17:58 F0 拍板): 不删 SKU / 不删文案 / 不删长文本字段内容, 1 次修复不盲修, 退路唯一化
+3. **5 SOP 完整谱系** (8/22-8/23 拍板):
+   - SOP-1 红灯冻结令 (build FAIL 立即停手, 含"无关"任务)
+   - SOP-2 阈值二元化 (禁"勉强/基本/差不多")
+   - SOP-3 根因 diff 优先法 (先 diff 后机制)
+   - SOP-4 债务熔断 (延后 ≤2 任务)
+   - SOP-5 派生数据禁手搓 (sitemap/RSS/schema 必脚本化)
+   - SOP-6 lock 双验证 (`npx npm@10.9.2 install --package-lock-only` + `ci --dry-run`)
+   - SOP-7 验收数字附原文 (禁"3 闸门全过"虚报)
+   - SOP-8 撞车兜底 (派活前 3 问 + 抢跑识别 tsc+build 必过)
+   - SOP-9 验证 > 假设 (T43: 任何"前提 XXX 缺失"修复, 必先实测线上 HTML 验证)
+4. **§13.16.1 ja 品牌词「ジープリント」** (8/8 02:52 K3 拍板): ja alternate brand = ジープリント (J-Print), 30 目录 + sameAs + 埋点 2-3 次; 禁站名漂移
+5. **T43 反直觉发现** (8/23 02:52 拍板): 16 类目 × 3 locale + PDP + blog FAQPage 已全部在线且解析合法, "48 组件缺失"前提已过期; T43 验收项"rich results 出现 FAQ" 是 GSC 观察项, 非代码项, **不在 M3 修复范围**
+6. **G1 Vol.2 计划** (8/28 中检后): 008 度量层 SQL 注入 G1 真实数字 + 补 en-US/en-GB/en-AU 区域 hreflang + ja 摘要字段 (现走 en 不符合 §13.10 NAP 脱钩)
+7. **v3.16 9 任务进度** (8/22 17:48 拍板): F0 ✅ / F1 ✅ / T41-T45 PENDING (8/28) / G2 PENDING (8/28) / T39 PENDING (8/28)
+
+### v3 报告模板 (替代 §0.17 push 台账, per K3 8/20 11:54)
+```
+✅ [业务目标] 落地: [SEO/GEO/转化/产品]
+- 改动: [文件 + 实质内容]
+- 验证: [5 步真验收 PASS/FAIL]
+- 下一步: [业务 actionable]
+```
+禁: "今日 X/5 push" / "月累计 Y/150 build" / "amend N/2" / "buffer 5-X" / 攒批策略
+
+### v3 必读 SSoT (5 cron 启动必读第 1 优先级)
+**F:\zprintpro-nextjs\.hermes\cron-prompts\k3-v3-addendum-2026-08-23.md** (22.3KB, 12 节: §0 §0.21 报告格式 / §1 业务 0 改动红线 / §2 5 SOP 完整谱系 / §3 §13.16.1 ja 品牌词 / §4 G1 Vol.2 / §5 v3.16 9 任务 / §6 撞车兜底 / §7 4 SOP 同步 / §8 6 行报告格式 / §9 触发时间校对 / §10 4 cron 必含 v3 段 / §11 必读 SSoT 优先级 / §12 同步 checklist)
+
+---
 
 ---
 
