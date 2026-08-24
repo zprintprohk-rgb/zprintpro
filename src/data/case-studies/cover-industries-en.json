@@ -1,0 +1,128 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "tier": "A",
+    "tier_label": "12 Industries - 4 Cover Tier (case library pending)",
+    "lastUpdated": "2026-08-25",
+    "k3_paiban": "8/24 19:03 suggest 4 cover industries case-study brief supplement"
+  },
+  "industries": [
+    {
+      "id": "creative-ip",
+      "name_zh": "文創 IP",
+      "name_en": "Creative IP",
+      "name_ja": "クリエイティブ IP",
+      "tier": "A",
+      "depth": "Cover (brief)",
+      "cases": [
+        {
+          "title": "Doujin Peripherals + Limited Packaging",
+          "summary": "Doujin creator groups / anime merchandise stores, 50-200 sets limited printing, including stickers / badges / acrylic standees / limited outer packaging boxes. SF Express local + DHL global.",
+          "products": ["Custom Stickers", "Acrylic Standees", "Badges", "Limited Outer Packaging Boxes"],
+          "moq": "50+",
+          "delivery": "SF Express local 1-2 days + DHL global 2-4 days"
+        },
+        {
+          "title": "Independent Designer Brand Packaging",
+          "summary": "Local independent design brands (apparel / stationery / home), 100-500 sets full packaging (hang tags + stickers + paper bags + thank you cards). Support small-batch multi-SKU printing strategy.",
+          "products": ["Hang Tags", "Custom Stickers", "Brand Paper Bags", "Thank You Cards"],
+          "moq": "100+",
+          "delivery": "SF Express local 2-3 days"
+        },
+        {
+          "title": "Gallery Exhibition Catalogues",
+          "summary": "Gallery / artist exhibition catalogue printing, 50-200 copies, focus on color reproduction (95%+) + premium paper (matte coated / fine art paper). Hong Kong local gallery long-term clients.",
+          "products": ["Catalog Printing", "Exhibition Catalogues", "Limited Edition Posters"],
+          "moq": "50+",
+          "delivery": "SF Express local 3-5 days"
+        }
+      ]
+    },
+    {
+      "id": "pet",
+      "name_zh": "寵物",
+      "name_en": "Pet",
+      "name_ja": "ペット",
+      "tier": "A",
+      "depth": "Cover (brief)",
+      "cases": [
+        {
+          "title": "Pet Food Packaging + Labels",
+          "summary": "Local pet food brands (kibble / canned / treats), food-grade safe ink + FSC certified paper. 100-1000 sets full packaging, SF Express local delivery to pet stores / online stores.",
+          "products": ["Food-grade Stickers", "FSC Certified Packaging Boxes", "Product Labels"],
+          "moq": "100+",
+          "delivery": "SF Express local 2-3 days + global DHL 2-4 days"
+        },
+        {
+          "title": "Pet Store Brand Materials",
+          "summary": "Pet stores / pet grooming chains, full brand materials (stickers + posters + hang tags + business cards + coupons), 100-500 sets. For store opening / seasonal promotions.",
+          "products": ["Store Stickers", "Posters", "Hang Tags", "Business Cards", "Coupons"],
+          "moq": "100+",
+          "delivery": "SF Express local 2-3 days"
+        }
+      ]
+    },
+    {
+      "id": "maternal-baby",
+      "name_zh": "母嬰",
+      "name_en": "Maternal & Baby",
+      "name_ja": "マタニティ & ベビー",
+      "tier": "A",
+      "depth": "Cover (brief)",
+      "cases": [
+        {
+          "title": "Maternal & Baby Product Packaging (Food-grade)",
+          "summary": "Maternal & baby product brands (formula / complementary food / skincare), food-grade ink + safety certification. 100-1000 sets full packaging, SF Express local + cross-border delivery.",
+          "products": ["Food-grade Stickers", "Formula Can Labels", "Complementary Food Packaging", "Skincare Outer Packaging"],
+          "moq": "100+",
+          "delivery": "SF Express local 2-3 days + DHL global 2-4 days"
+        },
+        {
+          "title": "Maternal & Baby Store Brand Materials + Teaching Tools",
+          "summary": "Maternal & baby stores / early education centers, full brand materials + teaching tool printing (stickers + posters + exercise books + teaching materials). 100-500 sets.",
+          "products": ["Store Stickers", "Posters", "Children's Exercise Books", "Teaching Materials"],
+          "moq": "100+",
+          "delivery": "SF Express local 2-3 days"
+        }
+      ]
+    },
+    {
+      "id": "tea-beverage",
+      "name_zh": "茶飲食品",
+      "name_en": "Tea & Beverage",
+      "name_ja": "茶・飲料",
+      "tier": "A",
+      "depth": "Cover (brief)",
+      "cases": [
+        {
+          "title": "Bubble Tea Brand Packaging",
+          "summary": "Bubble tea shops / tea beverage brands, 100-1000 sets full materials (cup stickers + sealing film + paper bags + coupons + thank you cards). For new store opening / seasonal limited editions.",
+          "products": ["Cup Body Stickers", "Sealing Film", "Takeaway Paper Bags", "Coupons", "Thank You Cards"],
+          "moq": "100+",
+          "delivery": "SF Express local 1-2 days"
+        },
+        {
+          "title": "Tea Gift Boxes + Premium Packaging",
+          "summary": "Tea brands / mooncake brands, 50-500 sets premium gift boxes (foil + embossing + specialty paper). For Mid-Autumn / Spring Festival / wedding seasons.",
+          "products": ["Tea Gift Boxes", "Foil Outer Packaging", "Thank You Cards", "Mooncake Gift Boxes"],
+          "moq": "50+",
+          "delivery": "SF Express local 3-5 days"
+        },
+        {
+          "title": "Coffee Shop Brand Materials",
+          "summary": "Local coffee shops / coffee bean brands, full brand materials (cup stickers + paper cup sleeves + coffee bean bags + hang tags + posters). 100-500 sets.",
+          "products": ["Cup Body Stickers", "Paper Cup Sleeves", "Coffee Bean Bags", "Hang Tags", "Posters"],
+          "moq": "100+",
+          "delivery": "SF Express local 2-3 days"
+        },
+        {
+          "title": "Restaurant Takeaway Packaging",
+          "summary": "Restaurants / takeaway shops, 100-2000 sets takeaway packaging (stickers + box stickers + paper bags + thank you cards + menus). For food delivery platforms + dine-in scenarios.",
+          "products": ["Box Stickers", "Takeaway Paper Bags", "Thank You Cards", "Menu Printing"],
+          "moq": "100+",
+          "delivery": "SF Express local 1-2 days"
+        }
+      ]
+    }
+  ]
+}
