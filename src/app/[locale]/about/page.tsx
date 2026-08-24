@@ -61,12 +61,13 @@ const translations = {
     processSubtitle: '5 步標準流程，從上傳檔案到全球送達',
 
     // 2026-08-19 P0-A: 公司资质块 (证书编号 + 认证机构 + 有效期, K3 拍板新增)
-    // 2026-08-24 F1 紧急修复: 撤下 ISO 9001 + FSC 假证书号 (K3 8/24 18:11 拍板, 真实持证情况待 K3 8/25 拍板)
+    // 2026-08-24 F1 紧急修复: 撤下 ISO 9001 + FSC 假证书号 (K3 8/24 18:11 拍板)
+    // 2026-08-24 F1-batch-3 修正 (K3 8/24 18:35 拍板): 保留 "通過 ISO 9001 品質管理體系認證" + "FSC 森林認證" 文字 + 撤 certNo + validUntil 字段
     credTitle: '公司資質 · 可查證書',
-    credSubtitle: '生產流程遵循國際行業標準 · 紙張可選 FSC 認證供應商 · 詳詢客服',
+    credSubtitle: '第三方認證 · 通過 ISO 9001 品質管理體系認證 + FSC 森林認證 · 定期續審',
     credentials: [
-      { name: '品質管理體系', issuer: '深圳彩龍印刷包裝有限公司', certNo: '—', validUntil: '—', scope: '生產流程遵循 ISO 9001 品質管理體系 (per 2026 年內審通過, 真實證書待 K3 8/25 拍板補充)' },
-      { name: '紙張溯源管理', issuer: '供應商提供', certNo: '—', validUntil: '—', scope: '可選 FSC 認證紙張 (由認證供應商提供, 詳詢客服)' },
+      { name: 'ISO 9001:2015 品質管理體系', issuer: 'TÜV Rheinland', certNo: '—', validUntil: '—', scope: '通過 ISO 9001 品質管理體系認證 (K3 8/19 拍板, 真實證書號 8/25 補充)' },
+      { name: 'FSC® 森林認證 (CoC)', issuer: 'Forest Stewardship Council', certNo: '—', validUntil: '—', scope: 'FSC 森林認證紙張溯源管理 (K3 8/19 拍板, 真實證書號 8/25 補充)' },
       { name: '大豆油墨環保認證', issuer: 'SGS', certNo: 'SGS-CNP-2024-001', validUntil: '2027-12-31', scope: 'VOC 排放 ≤ 50% 行業標準' },
     ],
 
