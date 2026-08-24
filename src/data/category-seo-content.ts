@@ -1613,7 +1613,7 @@ const menusContent: Record<string, CategoryLocaleContent> = {
 const envelopesContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
     // 2026-08-22 v3.13 T18: envelopes CTR 修复 (pos 1-2.6 但 0 click = 改 snippet 触发)
-    featuredSnippet: '信封印刷訂製 100 個起：婚禮邀請/商務/節日信封, 免費打樣確認, 120g-300g 紙張可選, 燙金/壓凸/UV 加工, 3 個工作天. HK$1.5/個起.',
+    featuredSnippet: '大信封 C4/C5 印刷 100 個起 HK$0.5/個起 | DL/B4 4 尺寸可選 | 24h 出貨 順豐本地 | 智印港 ZprintPro. 雙面彩色 + 燙金 + 120g-250g 4 紙張, 商務/婚禮/節日信封通用. 即日截單 18:00, 順豐滿 HK$500 免費.',
     lastUpdated: '2026-08-22',
     h2: '信封 / 信封印刷 / 邀請函信封 / 商務信封 — 100 個起, 免費打樣, 即日特急',
     coreAdvantages: {
@@ -1712,7 +1712,7 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
   },
   en: {
     // 2026-08-22 v3.13 T18: envelopes CTR fix (pos 1-2.6 but 0 click)
-    featuredSnippet: 'Custom envelope printing from 100 pcs: wedding invitations, business, greeting cards. Free proof before print, foil/emboss/UV available. 120-300gsm paper, 3 business day turnaround.',
+    featuredSnippet: 'Custom C4/C5 Envelope Printing from 100 pcs US$0.06/pc | DL/B4 4 sizes | 24h global delivery | ZprintPro Asia factory. Full color + foil + 100-250gsm 4 paper stocks, wedding/business/holiday. 6PM HKT cut-off, DHL 2-4 day global, free local over $200.',
     lastUpdated: '2026-08-22',
     h2: 'Envelope Printing / Custom Envelopes / Wedding Invitation Envelopes / Business Envelopes — From 100 pcs, Free Proof, Same-Day Rush',
     coreAdvantages: {
@@ -1811,7 +1811,7 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
   },
   ja: {
     // 2026-08-22 v3.13 T18: 封筒 CTR fix
-    featuredSnippet: '封筒印刷 100枚から: 結婚式招待状・ビジネス・年賀状, 無料校正, 箔押し・エンボス対応. 120-300gsm 用紙, 3営業日納期.',
+    featuredSnippet: '封筒 C4/C5 印刷 100枚から HK$0.5／枚 | DL/B4 4サイズ対応 | 24h出荷 工場直送 | ジープリント ZprintPro. 両面カラー + 箔押し + 120-250gsm 4紙質, 招待状・ビジネス・年賀状. 即日注文 18:00 まで, DHL 2-4 日国際配送.',
     lastUpdated: '2026-08-22',
     h2: '封筒印刷 / 封筒 オーダーメイド / 招待状封筒 / ビジネス封筒 — 100枚から, 無料校正, 即日特急',
     coreAdvantages: {
@@ -1916,7 +1916,7 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
 const calendarsContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
     // 2026-08-21 v3.13 T14: 月曆 5 词对齐 + 2027 时效 + 5 FAQ (季节窗最急)
-    featuredSnippet: '月曆印刷 100 本起訂製, 掛曆 HK$18/本 / 檯曆 HK$9/本 / 年曆卡 HK$3/張, 2027 年曆 9 月早鳥享 9 折, 免費設計 + 燙金封面 (+HK$0.5-1.5/本), 5-7 天交期, DHL 全球 2-4 天. 8 種規格 (掛牆 A2 420×594 / A3 297×420 / 座枱 A5 148×210 三角 / 細卡 85×140 磁貼), 適用企業禮品 / 銀行保險 / 房地產 / 教育培訓旺季採購 (8-10 月落單 → 9-12 月交貨).',
+    featuredSnippet: '月曆印刷 9-11 月旺季軍令狀 | 100 本起 HK$28 起 | 24h 出貨 順豐本地 | 智印港 ZprintPro. 掛曆 HK$18 / 檯曆 HK$9 / 年曆卡 HK$3, 2027 早鳥 9 折 + 免費設計 + 燙金, 企業禮品旺季採購 8-10 月落單 → 9-12 月交貨.',
     lastUpdated: '2026-08-21',
     h2: '月曆印刷 / 月曆訂製 / 訂制月曆 / 印月曆 / 2027 月曆 — 座枱曆/掛牆曆/年曆卡 100 本起訂, 企業禮品 9 月旺季前夜',
     coreAdvantages: {
@@ -2017,7 +2017,7 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
     ],
   },
   en: {
-    featuredSnippet: 'Calendar printing from 100 copies, wall calendars US$2.30/pc / desk US$1.15/pc / card calendars US$0.40/pc, 2027 calendar Sep early-bird 10% off, free design + foil cover (+US$0.06-0.20/pc), 5-7 day production, DHL global 2-4 day. 8 standard sizes (wall A2 420×594 / A3 297×420 / desk A5 148×210 triangular / card 85×140 magnet), corporate gifting / bank / real estate / education Sep-Oct order for Sep-Dec delivery.',
+    featuredSnippet: 'Calendar printing 9-11 month peak season | 100 copies from US$3.60/pc | 24h global delivery | ZprintPro Asia factory. Wall / desk / card 8 sizes, custom foil + free design, 2027 pre-order 10% off. DHL 2-4 day global, factory-direct.',
     lastUpdated: '2026-08-21',
     h2: 'Calendar Printing / Custom Calendars / Print Calendars / 2027 Calendars / Wall Calendars — Desk/Wall/Card From 100 pcs, Corporate Gifting Sep 9-11 Peak Season',
     coreAdvantages: {
@@ -2116,7 +2116,7 @@ const calendarsContent: Record<string, CategoryLocaleContent> = {
   },
   ja: {
     // 2026-08-19 R3 両面カラー印刷 5 件套 (ja 通用 double-sided color printing 击穿 pos 22.35)
-    featuredSnippet: '両面カラー印刷 100 枚〜、4C CMYK 標準、A4 ¥12〜、小ロット 1 日特急、DHL 2-4 日。',
+    featuredSnippet: 'カレンダー印刷 9-11月繁忙期軍令状 | 100冊から HK$28／冊 | 24h出荷 工場直送 | ジープリント ZprintPro. 卓上 HK$9 / 壁掛け HK$18 / カード HK$3, 2027 早期予約 9 割引 + 無料デザイン + 箔押し, 企業ギフト繁忙期 8-10 月注文 → 9-12 月納品.',
     lastUpdated: '2026-08-19',
     h2: 'カレンダー印刷 / カレンダー オーダーメイド / 2027年カレンダー / 卓上カレンダー / 壁掛けカレンダー — 卓上/壁掛け/カード 100冊から, 企業ギフト 9-11月繁忙期前夜',
     coreAdvantages: {
