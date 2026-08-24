@@ -138,6 +138,76 @@ function isRenderLayer(file) {
          file.includes('src\\components\\') || file.includes('src/components/');
 }
 
+// v3 误报优化: 排除注释行 (// 开头, /* */ 块, * 续行)
+function isCommentLine(content, matchIndex) {
+  const lineStart = content.lastIndexOf('\n', matchIndex - 1) + 1;
+  const linePrefix = content.slice(lineStart, matchIndex);
+  const lineContent = content.slice(lineStart, content.indexOf('\n', matchIndex));
+  const trimmed = lineContent.trim();
+  // 单行注释
+  if (trimmed.startsWith('//')) return true;
+  // 块注释起始
+  if (trimmed.startsWith('/*')) return true;
+  // 块注释续行
+  if (trimmed.startsWith('*') && !trimmed.startsWith('*/') && !trimmed.match(/^[\w$]+/)) return true;
+  // 行首有 // 但在 string 内 (粗略检测: // 后不是引号)
+  // 注: 完美检测需要 AST, 简单实现够用 95% 场景
+  return false;
+}
+
+// v3 误报优化: 排除变量名/函数名/类名 (代码标识符, 非字符串字面量)
+// 检测逻辑: 凡是 cluster / T00 / SOP-N / v3.N 等模式在代码区 (const/let/var/.x/[x] 后), 算代码
+// 简化为: 行内代码关键字 OR cluster 前后是 . [ ( , { = 等代码符号, 算代码
+function isVariableOrCodeIdentifier(content, matchIndex) {
+  const lineStart = content.lastIndexOf('\n', matchIndex - 1) + 1;
+  const lineEnd = content.indexOf('\n', matchIndex);
+  const line = content.slice(lineStart, lineEnd > 0 ? lineEnd : undefined);
+  const before = content.slice(lineStart, matchIndex);
+  const after = content.slice(matchIndex, lineEnd > 0 ? lineEnd : undefined);
+  // 整行不含 ' " ` 引号 (单行代码)
+  if (!/['"`]/.test(line)) {
+    // 整行是纯代码, 算代码标识符
+    return true;
+  }
+  // match 之前最近的非空字符是 . [ ( , { = ; 等代码符号 → 算代码
+  // 注意: cluster 前是 " " (空格) 算代码 — 因为 cluster 是裸标识符, 通常是变量名
+  const beforeTrim = before.replace(/\s+$/, '');
+  const lastChar = beforeTrim.slice(-1);
+  if (/[\.\[\(,;{=]/.test(lastChar)) {
+    // 但要排除字符串内: 'foo.cluster' — lastChar 是引号 → 不算
+    if (/['"`]/.test(lastChar)) return false;
+    return true;
+  }
+  // match 之前是空白 + 标识符开头 (cluster 在标识符位置, 如 "cluster.keywords" 中的 cluster)
+  // 整行形如 `\w+(\.\w+|\[)` → 算代码
+  if (/^\s*\w+\s*\.\s*\w+/.test(line) || /^\s*\w+\s*\[/.test(line)) return true;
+  // 行内任意位置有 .x 或 [x] 模式 (如 "cluster.keywords", "x[locale]")
+  if (/\.\s*\w+/.test(line) || /\[\s*\w+\s*\]/.test(line)) {
+    // 但要确保 cluster 不是字符串字面量内容
+    // 整行没引号 OR cluster 在引号外
+    if (!/['"`]/.test(line) || /['"`].*\bcluster\b.*['"`]/.test(line) === false) {
+      return true;
+    }
+  }
+  // match 之前是空白 + 引号 → 字符串内, 算 user-facing
+  return false;
+}
+
+// v3 误报优化: 排除 React form input placeholder 属性
+// 检测行上下文: placeholder={...} / placeholder="..." / placeholder=... / xxxPlaceholder:
+function isReactPlaceholderProp(content, matchIndex) {
+  const lineStart = content.lastIndexOf('\n', matchIndex - 1) + 1;
+  const lineEnd = content.indexOf('\n', matchIndex);
+  const line = content.slice(lineStart, lineEnd > 0 ? lineEnd : undefined);
+  // placeholder={...} / placeholder="..." / placeholder=...
+  if (/\bplaceholder\s*[=:]/.test(line)) return true;
+  // xxxPlaceholder 字段名 (namePlaceholder / messagePlaceholder / phonePlaceholder 等)
+  if (/\b\w*Placeholder\s*[=:]/.test(line)) return true;
+  // placeholder= 出现在 JSX 属性
+  if (/\bplaceholder\s*=\s*[\{"']/.test(line)) return true;
+  return false;
+}
+
 const hits = [];
 const counts = { red: 0, orange: 0, yellow: 0, white: 0 };
 let totalFiles = 0;
@@ -188,6 +258,21 @@ for (const file of files) {
           if (linePrefix.startsWith('    ') || linePrefix.startsWith('\t')) continue;
           // 排除 dangerouslySetInnerHTML 字符串 (那是合法 HTML 渲染)
           if (/dangerouslySetInnerHTML/i.test(lineContent)) continue;
+        }
+
+        // v3 误报优化: STRATEGY_JARGON (yellow) 排除变量名 + 注释 + ISO 8601 时间格式
+        if (ruleKey === 'STRATEGY_JARGON') {
+          if (isCommentLine(content, match.index)) continue;
+          if (isVariableOrCodeIdentifier(content, match.index)) continue;
+          // 排除 ISO 8601 时间格式: ${publishedAt}T00:00:00+08:00 / T23:59:59Z
+          const afterMatch = content.slice(match.index, Math.min(content.length, match.index + 30));
+          if (/^T\d{2}:\d{2}:\d{2}/.test(afterMatch)) continue;
+        }
+
+        // v3 误报优化: PLACEHOLDER (white) 排除 React form placeholder 属性 + 注释
+        if (ruleKey === 'PLACEHOLDER') {
+          if (isCommentLine(content, match.index)) continue;
+          if (isReactPlaceholderProp(content, match.index)) continue;
         }
 
         // 找行号
