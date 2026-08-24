@@ -24,6 +24,21 @@ const REPORT = (() => {
 const MAX_FILE_SIZE = 500 * 1024; // 500KB per file
 const MAX_HITS_PER_RULE = 50; // 每个 rule 最多记录 50 hits
 
+// Rule 7 (2026-08-25 P2 #13 拍板): Markdown 豁免路径白名单
+// 豁免路径: docs/ (含 SOP-10 / K3 拍板 ID 等内部黑话) + .hermes/cron-prompts/ (cron 内部策略)
+// 豁免规则: 全部规则 (Rule 1 STRATEGY_JARGON / Rule 4 PLACEHOLDER / Rule 2 SIMPLIFIED_CHINESE 等)
+// 不豁免: Rule 5 RAW_MARKDOWN_LINK (法律风险) + Rule 3 UNVERIFIED_CLAIM (K3 拍板真实数据, 不在豁免范围)
+const EXEMPT_PATHS = [
+  /docs[\/\\]/,                  // docs/ 路径 (含 SOP / 拍板 / 报告)
+  /\.hermes[\/\\]cron-prompts[\/\\]/,  // .hermes/cron-prompts/ 路径 (cron 内部策略)
+];
+// 不豁免的关键规则 (即使在豁免路径也强制扫描)
+const NON_EXEMPT_RULES = ['RAW_MARKDOWN_LINK', 'UNVERIFIED_CLAIM'];
+
+function isExemptPath(file) {
+  return EXEMPT_PATHS.some(re => re.test(file));
+}
+
 // 4 类扫描规则 (v2 优化: 全局 regex 一次编译)
 const RULES = {
   'STRATEGY_JARGON': {
@@ -233,6 +248,8 @@ for (const file of files) {
     if (ruleKey === 'SIMPLIFIED_CHINESE' && !isZHHKorJA(file)) continue;
     // Rule 5 RAW_MARKDOWN_LINK: 只在渲染层 (page.tsx/component) 扫
     if (ruleKey === 'RAW_MARKDOWN_LINK' && !isRenderLayer(file)) continue;
+    // Rule 7 (2026-08-25 P2 #13): 豁免路径 + 不豁免关键规则
+    if (isExemptPath(file) && !NON_EXEMPT_RULES.includes(ruleKey)) continue;
 
     let ruleHits = 0;
     for (const pattern of rule.patterns) {
