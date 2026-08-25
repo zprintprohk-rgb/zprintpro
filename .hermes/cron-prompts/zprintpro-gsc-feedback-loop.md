@@ -13,6 +13,13 @@
 5. F:\zprintpro-nextjs\.hermes\industry-keyword-matrix.json + .hermes/gsc-141-baseline-2026-07-22.json (28 词 baseline) + .hermes/gsc-snapshot-2026-07-22.json (54.5KB 全量)
 
 【触发】每周三 15:00 Asia/Shanghai
+
+【v4 GEO 主动测试协议升级 (2026-08-25 M3 战略升级, 千问 5.3 GEO 监测 + 7.2 机制 4)】
+- 每周五 15:00 额外触发 GEO 主动测试 (周五 15:00 跟 K3 8/25 P2 #11 SEO 优化排期同步)
+- 20 个标准问题测试 (中文 8 + 英文 8 + 日文 4), 详见千问 5.3 协议
+- 记录: 是否提及 ZprintPro / 引用順位 / 引用内容 / 情感傾向 / 截图存档
+- 趋势追踪: 每週对比, 观察引用率变化
+- 8/28 起每週执行 (P3 #15 GSC 记分卡配套)
 【预算】60 min
 【任务】按 v4 主任务流程跑 GSC 周报 (拉 7 天 GSC + K3 §6 铁律 + 141 残杀词周报 + P0-2 301 监控 5 项 + 日报建议含 Q-005 daily 必写 + matrix.json 改 + git commit + push origin_ssh main + verify-deploy PASS), 写 .hermes/logs/YYYY-MM-DD-gsc-feedback.md K3 格式 14 章节.
 
