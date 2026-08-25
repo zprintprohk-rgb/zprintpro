@@ -167,6 +167,7 @@ export default function ContactPage({ params }: ContactPageProps) {
   const localePrefix = `/${locale}`;
 
   return (
+    <>
     <main className="min-h-screen bg-gray-50 py-12 md:py-16">
       {/* 2026-06-28 fix(contact-500): next 14.2 + Edge Runtime 在连续 3 个独立 <JsonLd> + dangerouslySetInnerHTML 时 streaming 末尾抛错。
           改用 home 同款 1 个 <JsonLd data={[array]}> 形式（home 200 ✅）。 */}
@@ -401,5 +402,6 @@ export default function ContactPage({ params }: ContactPageProps) {
     </main>
     {/* WhatsApp 浮动按钮 + 4 事件埋点 (撞墙升级 K3 必拍 #2 批准, 8/25 15:45) */}
     <WhatsAppFloat />
+    </>
   );
 }
