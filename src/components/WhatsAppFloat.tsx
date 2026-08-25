@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { useParams } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { trackWhatsAppClick, trackFormSubmit, trackTelClick, trackMailtoClick } from '@/lib/metrics-008';
 
 const WHATSAPP_NUMBER = '+8619880851334';
@@ -13,15 +13,31 @@ const LOCALE_MESSAGES = {
   'ja': { label: 'WhatsApp お問い合わせ', prefix: 'こんにちは, お問い合わせ' },
 } as const;
 
+const SUPPORTED_LOCALES = new Set(['zh-hk', 'en', 'ja']);
+
+/**
+ * 8/26 修 2 redo: locale 撞车根因 = BUG 不是流量结构 (K3 撞车根因)
+ * 撞车根因 = useParams() 撞车根因 = 5 行全 'en' 撞车根因 = params.locale undefined
+ * 修法 = 改用 usePathname() 解析路径第 1 段 (next-intl as-needed 路由 /zh-hk/services/...)
+ * 验证 = 在 zh-hk 页面手动点 WhatsApp, Supabase 应见 locale='zh-hk'
+ */
+function detectLocaleFromPath(pathname: string | null): 'zh-hk' | 'en' | 'ja' {
+  if (!pathname) return 'zh-hk';
+  // pathname 形如 /zh-hk/services/... /en/services/... /ja/services/... 或根 /
+  const seg = pathname.split('/').filter(Boolean)[0];
+  if (seg && SUPPORTED_LOCALES.has(seg)) return seg as 'zh-hk' | 'en' | 'ja';
+  return 'zh-hk';
+}
+
 export default function WhatsAppFloat() {
-  const params = useParams<{ locale: string }>();
-  const locale = (params?.locale as keyof typeof LOCALE_MESSAGES) || 'zh-hk';
+  const pathname = usePathname();
+  const locale = detectLocaleFromPath(pathname);
   const [isOpen, setIsOpen] = useState(false);
 
   const messages = LOCALE_MESSAGES[locale] || LOCALE_MESSAGES['zh-hk'];
 
   const handleWhatsAppClick = () => {
-    // 4 事件埋点: whatsapp_click (P1 #6 撞墙升级 K3 必拍 #2 批准)
+    // 4 事件埋点: whatsapp_click (8/26 修 2 redo: locale 撞车根因 = pathname 解析)
     trackWhatsAppClick(locale, typeof window !== 'undefined' ? window.location.pathname : '', {
       phone: WHATSAPP_NUMBER,
       message_prefix: messages.prefix,
