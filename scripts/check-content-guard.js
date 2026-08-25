@@ -35,8 +35,37 @@ const EXEMPT_PATHS = [
 // 不豁免的关键规则 (即使在豁免路径也强制扫描)
 const NON_EXEMPT_RULES = ['RAW_MARKDOWN_LINK', 'UNVERIFIED_CLAIM'];
 
+// 千问 8/25 13:45 评核 #3 改进: YELLOW allowlist 16 条 accepted 带拍板编号
+// 输出分 accepted/new 两栏, new=0 时全绿
+// 拍板来源: K3 v3.13 T16-1 拍板 (8/22 拍板) + 8/24 18:35 反转 12 件事属实不动
+const ALLOWLIST_KEYWORDS = [
+  // K3 v3.13 T16-1 拍板真实数据 (8/22 拍板, 8/24 18:35 反转 12 件事属实不动)
+  { keyword: 'cluster', source: 'K3 v3.13 T16-1 (8/22)', type: 'SEO 4 词 group' },
+  { keyword: '9/4', source: 'K3 v3.13 T16-1 (8/22)', type: '4 词 group 期望进首页' },
+  // 其他 K3 拍板真实数据
+  { keyword: '拍板', source: 'K3 8/24-8/25 SOP-10', type: '内部 SOP 术语' },
+  { keyword: '埋点', source: 'K3 8/25 SOP-10 §0.22', type: '内部 SOP 术语' },
+  { keyword: '埋點', source: 'K3 8/25 SOP-10 §0.22', type: '內部 SOP 術語' },
+  { keyword: 'SOP-10', source: 'K3 8/25 拍板', type: 'SOP 编号' },
+  { keyword: 'SOP-8', source: 'K3 8/23 02:52 拍板', type: 'SOP 编号' },
+  { keyword: 'v3.13', source: 'K3 8/22 拍板', type: 'v3 节奏版本' },
+  { keyword: 'v3.17', source: 'K3 8/25 拍板', type: 'v3 节奏版本' },
+  { keyword: 'T16-1', source: 'K3 8/22 拍板', type: 'T 任务编号' },
+  { keyword: 'T41', source: 'K3 8/23 02:52 拍板', type: 'T 任务编号' },
+  { keyword: 'T42', source: 'K3 8/23 02:52 拍板', type: 'T 任务编号' },
+  { keyword: 'T44', source: 'K3 8/23 02:52 拍板', type: 'T 任务编号' },
+  { keyword: 'T45', source: 'K3 8/23 02:52 拍板', type: 'T 任务编号' },
+  { keyword: '8/28', source: 'K3 8/23 02:52 拍板', type: '中检日期' },
+  { keyword: '8/4', source: 'K3 8/22 拍板', type: '节奏日期' },
+  { keyword: '9/4', source: 'K3 8/22 拍板', type: '节奏日期' },
+];
+
 function isExemptPath(file) {
   return EXEMPT_PATHS.some(re => re.test(file));
+}
+
+function isAllowlistedKeyword(match) {
+  return ALLOWLIST_KEYWORDS.some(entry => match.includes(entry.keyword));
 }
 
 // 4 类扫描规则 (v2 优化: 全局 regex 一次编译)
@@ -284,6 +313,8 @@ for (const file of files) {
           // 排除 ISO 8601 时间格式: ${publishedAt}T00:00:00+08:00 / T23:59:59Z
           const afterMatch = content.slice(match.index, Math.min(content.length, match.index + 30));
           if (/^T\d{2}:\d{2}:\d{2}/.test(afterMatch)) continue;
+          // 千问 8/25 13:45 评核 #3: YELLOW allowlist (K3 拍板真实数据, F0 红线不删)
+          if (isAllowlistedKeyword(match[0])) continue;
         }
 
         // v3 误报优化: PLACEHOLDER (white) 排除 React form placeholder 属性 + 注释
@@ -336,6 +367,16 @@ const summary = {
 console.log(`[check-content-guard v2] 扫描完成 (${elapsedMs}ms)`);
 console.log(`  范围: ${SCOPE}  文件: ${totalFiles}  命中: ${totalMatches}`);
 console.log(`  🔴 red=${counts.red}  🟠 orange=${counts.orange}  🟡 yellow=${counts.yellow}  ⚪ white=${counts.white}`);
+// 千问 8/25 13:45 评核 #3: YELLOW 16 = 已接受真实数据, 标"accepted"; new 命中才报警
+const yellowHits = hits.filter(h => h.severity === 'yellow');
+const acceptedYellow = yellowHits.filter(h => isAllowlistedKeyword(h.match));
+const newYellow = yellowHits.filter(h => !isAllowlistedKeyword(h.match));
+console.log(`  🟡 yellow accepted (K3 拍板真实数据, F0 红线不删): ${acceptedYellow.length} of ${yellowHits.length}`);
+if (newYellow.length > 0) {
+  console.log(`  🟡 yellow NEW (需要 K3 拍板): ${newYellow.length}`);
+} else {
+  console.log(`  ✅ yellow NEW = 0 (全绿, 无新命中)`);
+}
 
 const grouped = { red: [], orange: [], yellow: [], white: [] };
 for (const h of hits) grouped[h.severity].push(h);
