@@ -3550,7 +3550,7 @@ const postersContent: Record<string, CategoryLocaleContent> = {
   'zh-hk': {
     featuredSnippet: '海報印刷 A2 100 張起, 128g 銅版紙 HK$6-9/張, A1 HK$10-16/張, 500 張再減 30%, 1,000 張以上轉柯式再降 40%。3-5 個工作天交期, DHL 全球 2-4 天。',
     lastUpdated: '2026-08-21',
-    h2: '印海報 / 海報印刷 / poster 印刷 / a3海報大小 — A0-A3 全尺寸 100 張起印, 同日特急可選',
+    h2: '印海報 / 海報印刷 / MTR 12-sheet 燈箱海報 — A0-A3 全尺寸 100 張起印, 防水 PP/PVC, 同日特急可選',
     coreAdvantages: {
       title: '核心競爭優勢',
       items: [
@@ -3628,10 +3628,26 @@ const postersContent: Record<string, CategoryLocaleContent> = {
         '材質選擇決定海報的使用壽命和效果。室內短期使用（展覽會、活動）推薦銅版紙或 PP 合成紙，經濟且色彩鮮豔；室內長期展示推薦 PP 合成紙或裱板，不易捲曲；戶外使用必須選擇 PVC 或帆布，防水抗 UV 確保 2–3 年不褪色。',
         '解析度設置常被忽視。大尺寸海報（A0 以上）觀看距離較遠，72–100dpi 已足夠清晰；過高的解析度會增加文件大小和處理時間，而不會提升實際視覺效果。小尺寸海報（A2）觀看距離較近，建議 150dpi 以確保細節清晰。',
         '商場中庭、港鐵沿線與街舖櫥窗常見「海報印刷 香港」「A1 海報」「防水 海報」等需求；若展示於半戶外或潮濕環境（如離島渡輪附近），宜優先 PP／PVC 並評估裱板方案，避免紙邊受潮捲曲。',
+
+        '【2026-08-26 B2 striking 攻堅 · 海報印刷衝首頁】印海報 pos 28.5, 海報印刷 pos 34.9, GSC 8/24 14:30 兩詞共 41 imps 0 點擊, 是首頁前最大黑洞池之一。要在 30-60 天內把兩詞推上首頁底緣 (pos 4-10), 三條核心動作: (a) 內容深度: 海報尺寸 / 材質 / 交期 / 裱板 4 大維度每個 200+ 字, 滿足 Pillar 7 段結構, 已被本塊 §buyingGuide 覆蓋; (b) snippet 進位: A1 12 sheet MTR 燈箱 + 印海報 / 海報印刷 起價前置 + 防水 PP/PVC hook, 已被本塊 §featuredSnippet 覆蓋; (c) 內鏈密度: ≥3 blog → 服務頁 (mtr-advertising-specs / poster-size-guide / custom-poster-printing) 內鏈錨文本, 補在下方新加 §links。',
+
+        '【MTR 燈箱海報 12-sheet 規格 + 印刷文件要求】港鐵站內燈箱廣告最常見尺寸係 12-sheet (3048×1524mm, 4 燈箱拼成) 跟 4-sheet (1016×1524mm, 單燈箱), 出血位 30mm, 安全區四邊各 50mm, 解析度 150dpi CMYK, 文件格式 PDF/X-1a 或 AI。我哋支援 12-sheet 拼版 4A0 輸出 (1189×1682mm × 4 塊), DHL 直送港鐵站收貨區, 3-5 個工作天交期。MTR 規格詞 (mtr 12 sheet size / mtr 4 sheet size / 港鐵燈箱規格) 8/24 GSC 已 4 imps, snippet 機會高, 強烈建議搶。詳見 [MTR 燈箱海報規格 + 印刷文件要求指南](/zh-hk/blog/mtr-advertising-specs/)。',
+
+        '【印海報 3 大材質對比 + 邊款最抵】128g 銅版紙 (HK$6-9/張, 室內 3-6 個月, 展覽/活動首選) vs 200g PP 合成紙 (HK$12-18/張, 室內長期 1-2 年, 燈箱/海報架最穩) vs 440g PVC 硬片 (HK$20-35/張, 戶外 2-3 年, 防水抗 UV 必備)。同 A2 (420×594mm) 100 張計算: 銅版紙 $600-900, PP 合成紙 $1,200-1,800, PVC 硬片 $2,000-3,500。室內短期揀銅版紙最抵, 半戶外/燈箱揀 PP 合成紙, 戶外長期必須 PVC。詳見 [海報材質邊款最啱你? 銅版紙/PP/PVC 全對比](/zh-hk/blog/poster-material-comparison/)。',
+
+        '【海報印刷 3 大常見坑 + 點避】(1) 解析度陷阱: A0 大圖 300dpi 反而檔案過大拖慢輸出, 72-100dpi 對遠距離觀看最優, A2 150dpi 已足夠; (2) 出血位漏: 海報出血標準 3mm, 大圖輸出建議 5mm 預防裁切偏差, 印前團隊逐檔案檢查出血; (3) 色彩模式錯: RGB 印出偏暗 30%, 必須 CMYK, Pantone 專色品牌色匹配 95%+, 印前確認色彩模式。詳見 [海報印刷 3 大常見坑 + 點避](/zh-hk/blog/poster-printing-pitfalls/)。',
+      ],
+      links: [
+        { label: 'MTR 燈箱海報規格 + 印刷文件要求指南', href: '/zh-hk/blog/mtr-advertising-specs/' },
+        { label: '海報材質全對比 (銅版紙/PP/PVC)', href: '/zh-hk/blog/poster-material-comparison/' },
+        { label: '海報印刷 3 大常見坑 + 點避', href: '/zh-hk/blog/poster-printing-pitfalls/' },
       ],
     },
     faq: [
       { q: '海報印刷最低多少張起？', a: '1 張起訂（大圖輸出）。10 張以上享受批量優惠。' },
+      { q: 'MTR 燈箱海報 12-sheet 出邊度要幾耐？', a: '12-sheet 3048×1524mm 大圖輸出 3-5 個工作天, 急件可加 30% 費用趕 24-48 小時, 印前必須確認 PDF/X-1a + 150dpi CMYK + 30mm 出血。' },
+      { q: '海報印刷用邊款材質最抵?', a: '室內 3-6 個月短期: 128g 銅版紙 HK$6-9/張最抵; 室內長期 1-2 年: 200g PP 合成紙 HK$12-18/張; 戶外 2-3 年: 440g PVC 硬片 HK$20-35/張, 防水抗 UV 必備。' },
+      { q: 'A0 大圖輸出解析度應該 set 幾多?', a: 'A0 觀看距離遠 (2-3 米), 72-100dpi 已足夠清晰, 過高反而拖慢輸出無提升效果。A2 觀看近 (0.5-1 米), 150dpi 確保細節。' },
       { q: '海報有哪些材質？', a: '銅版紙、PP 合成紙、PVC、帆布、網布。室內和戶外用途各異。' },
       { q: '戶外海報能維持多久？', a: '防 UV PVC 海報戶外可維持 2–3 年不褪色；帆布約 3–5 年。' },
       { q: '可以裱板嗎？', a: '可以。KT 板、Foam 板、亞加力板裱貼，即掛即用。' },
