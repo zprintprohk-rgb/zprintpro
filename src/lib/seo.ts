@@ -487,19 +487,18 @@ const categorySeoData: Record<string, {
     // 2026-08-19 R2 #2: 大信封 1 行 meta 修 (rank 3.37/19 imps/0 click → 注入「大信封」「公文」「A4」核心词)
     titles: {
       'zh-hk': '大信封 / C4 / C5 信封印刷 HK$0.45起 | 100個起印・公文信封・牛皮・開窗・WhatsApp 30秒報價 | 智印港',
-      en: 'Custom Envelopes Free Shipping · 100 MOQ Kraft/Window/Corporate Logo | ZprintPro',
-      ja: '封筒印刷 100個〜 · クラフト/窓付き/カラー/企業ロゴ ISO認証 DHL | ZprintPro',
+      en: 'C4 / C5 / DL Envelopes from $0.06 | 100 MOQ + Free Proof + Made for USA | ZprintPro',
+      ja: '長3 / 洋形 封筒印刷 ¥8〜 | 100個〜・無料デザイン・短納期・全国送料 | ZprintPro',
     },
     keywords: {
       'zh-hk': '大信封,信封印刷,A4信封,公文信封,大號信封,牛皮信封,開窗信封,彩色信封,企業信封,LOGO信封,定制信封,中式信封,西式信封,航空信封,印刷信封,郵寄信封,C4信封,C5信封,快遞信封,公函信封',
-      en: 'envelope printing,custom envelopes,kraft envelope,window envelope,colored envelope,corporate envelope,branded envelope,DL envelope,C5 envelope,airmail envelope,printing envelopes,business envelopes,free shipping envelopes,USA envelope printing',
-      ja: '封筒印刷,カスタム封筒,クラフト封筒,窓付き封筒,カラー封筒,企業封筒,ロゴ封筒,長3封筒,洋形封筒,エアメール封筒,印刷封筒,社名入り封筒',
+      en: 'envelope printing,custom envelopes,kraft envelope,window envelope,colored envelope,corporate envelope,branded envelope,DL envelope,C5 envelope,C4 envelope,airmail envelope,printing envelopes,business envelopes,free shipping envelopes,USA envelope printing,Made for USA,Free Proof',
+      ja: '封筒印刷,カスタム封筒,クラフト封筒,窓付き封筒,カラー封筒,企業封筒,ロゴ封筒,長3封筒,洋形封筒,エアメール封筒,印刷封筒,社名入り封筒,C4封筒,C5封筒,短納期,日本全国',
     },
     descriptions: {
       'zh-hk': '大信封印刷 HK$0.45/個,100 個起印。A4 公文信封 / C4 / C5 / 牛皮 / 開窗 / 彩色 / 企業 LOGO 定制,滿 HK$500 順豐香港免運費。WhatsApp 30 秒即時報價,ISO 9001 認證紙材,DHL 全球 2-4 天速遞。',
-      en: 'Custom envelope printing 100 MOQ. Kraft / window / colored / DL / C5 + corporate branding. Free shipping over $99 to USA. ISO 9001 certified + 30-second AI quote + DHL 2-4 day global. Free proof in 4 hours · 100% satisfaction guarantee · 5-7 day door-to-door delivery to USA.',
-      ja: '封筒印刷 100 個から対応. クラフト・窓付き・カラー・長 3・洋形 + 企業ロゴ. ISO 9001 認証 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日.',
-    },
+      en: 'Custom envelope printing 100 MOQ. C4 / C5 / DL / kraft / window / colored / corporate branding. Free shipping over $99 to USA + free proof in 4 hours. ISO 9001 certified + 30-second AI quote + DHL 2-4 day global delivery. Made for USA, perfect for business and corporate use.',
+      ja: '封筒印刷 100 個から、¥8〜。長3 / 洋形 / C4 / C5 / クラフト / 窓付き / カラー / 企業ロゴ。無料デザイン校正 4 時間、ISO 9001 認証 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日。',
   },
   'menus': {
     titles: {
