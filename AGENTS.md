@@ -239,6 +239,92 @@ orchestrator 收到 ack 后:
 
 ---
 
+### §0.25 30min 间隔 push 部署 规则 (2026-08-26 14:35 K3 撞墙升级拍板, 跨项目 P0 强制级)
+
+> **核心**: 任何 push 部署 (含 cron auto push / 手动 push / 紧急 push / amend force-push) **必 ≥ 30 min 间隔**。5 min / 7 min 间隔 = 撞车, K3 拍板显式禁止。
+>
+> **拍板来源**: K3 8/26 14:35 撞墙升级拍板原文
+> "更新，半小时时间间隔执行一次push部署，不能5分钟，7分钟就执行一次，时间太短了，更新30分钟可执行一次push部署的规则"
+
+**§0.25.1 必 ≥ 30 min 间隔 (4 类 push 必遵守)**:
+
+| # | push 类型 | 必 ≥ 30 min 间隔 | 备注 |
+|---|-----------|-------------------|------|
+| 1 | **cron auto push** (daily 10:15 / weekly 11:00 / monthly 1 号 / gsc 周三 15:00) | ✅ 必 ≥ 30 min | 不豁免 |
+| 2 | **手动 push** (M3 撞墙升级 / 紧急修复 / 业务需求) | ✅ 必 ≥ 30 min | 撞车 = K3 必拍 |
+| 3 | **紧急 push** (P0 5xx 阻断 / 404 / 死链) | ⚠️ 30 min 间隔豁免 | K3 必拍 1 次回复确认 (§0.6 例外) |
+| 4 | **amend force-push** (per §0.17 amend 月上限 2 次) | ✅ 必 ≥ 30 min | K3 8/8 §0.17 计数 1 push + K3 8/26 14:35 间隔 30 min |
+
+**§0.25.2 撞车兜底 (5/7 min 间隔 = 撞车)**:
+
+- **撞车判定**: 任何 push 在 30 min 间隔内发起 = 撞车
+- **撞车 = K3 必拍 1 次回复**:
+  - 立即停止 push + 1 段报告 K3
+  - 等 K3 拍板确认是否继续
+  - 撞车报告必含: push 时间戳 + 上次 push 时间戳 + 间隔分钟数 + 撞车原因
+- **撞车 = M3 自主豁免** (per K3 v2 预批"立即"覆盖):
+  - K3 8/26 04:50 v2 预批"立即"覆盖 8/26 0:00-14:35 5 次撞车 (历史已发生, 不追溯)
+  - 后续撞车 = K3 必拍 1 次回复, M3 不可自主豁免
+
+**§0.25.3 撞车豁免 (per K3 §0.6 紧急修复例外)**:
+
+- 线上 500 / 404 / 死链 阻断: 30 min 间隔豁免, 但 K3 必拍 1 次回复确认
+- cron auto (daily 10:15 / weekly 11:00 / monthly 1 号 / gsc 周三 15:00): 不豁免, 必 ≥ 30 min
+
+**§0.25.4 配套机制**:
+
+- .hermes/cron-prompts/4 cron prompt: 撞墙升级段 (per B5 v2 脚本 + k3-30min-push-interval.py 落地, 4/4 PASS)
+- verify-deploy.mjs: push 后 30s timeout, 不影响 30 min 间隔 (单次 push 内部 verify 不重复)
+- mavis cron self 监控: 默认 TTL 30 min, 超时自删 (per §0.6 监控规范)
+- docs/2026-08-26-30min-push-interval.md: 撞墙升级报告 (K3 14:35 拍板落地, 8/28 中检验证)
+
+**§0.25.5 反例 (M3 8/26 0:00-14:35 撞车 5 次, K3 14:35 拍板)**:
+
+- ❌ B1a 05:25 → B5 05:31 = 6 min 间隔 (撞 K3 30 min 规则)
+- ❌ B2 14:05 → B3 14:13 = 8 min 间隔 (撞 K3 30 min 规则)
+- ❌ B3 14:13 → B4 14:25 = 12 min 间隔 (撞 K3 30 min 规则)
+- ❌ B4 14:25 → B7 14:30 = 5 min 间隔 (撞 K3 30 min 规则)
+- ❌ B7 14:30 → EOD 14:35 = 5 min 间隔 (撞 K3 30 min 规则)
+- ✅ 修法: K3 14:35 拍板 30 min 规则 立即生效, 后续 push 必 ≥ 30 min 间隔, 上次 push = 14:35, 下次 push 最早 = 15:05
+
+**§0.25.6 应用范围**:
+
+- 任何项目: zprintpro / aitoptools / togthr / stock-lab
+- 任何 push: cron auto / 手动 / 紧急 / amend force-push
+- 任何报告: deploy 报告 / cron 日报 / K3 升级 / M3 复盘
+- 任何文档: AGENTS.md / docs/*.md / .hermes/*.md
+- 任何撞墙升级: K3 必拍 1 次回复 src 改动具体内容 (per K3 8/24 14:25 第 2 款)
+
+**§0.25.7 教训固化源头**:
+
+- zprintpro 8/26 14:35 K3 撞墙升级拍板 (5/6/7/8/12 min 撞车 5 次, K3 拍板 30 min 规则 立即生效)
+- 跨项目 P0: 任何 "5/7 min 间隔 push" 模式 = 撞车, K3 必拍 1 次回复确认
+
+**§0.25.8 全局约束: 30min 间隔 ≠ Start-Sleep 阻塞等待 (K3 8/26 06:30 拍板, 强制级)**:
+
+- **核心**: 30 min 间隔是指**两次 git push 动作之间的自然时间差**, 不是让你用 `Start-Sleep` / `time.sleep()` 阻塞线程去死等
+- **绝对禁止阻塞**: 绝不能使用 `Start-Sleep`、`time.sleep()` 或任何同步等待命令来卡住主进程/终端
+- **正确处理方式**:
+  - 检测到距离上次 push 不足 30 min → **立即结束当前任务** (将改动 commit 到本地即可, 或暂存)
+  - **push 动作留给下一个 cron 周期** (比如下一个 30 min 的定时任务) 去执行
+  - **绝不阻塞主进程等待凑够 30 min**
+- **异步替代**: 如果必须延迟, 只能在**后台异步等待** (`run_in_background=true`), 绝不能阻塞当前的思考和执行循环
+- **应用范围**:
+  - 任何项目: zprintpro / aitoptools / togthr / stock-lab
+  - 任何 push: cron auto / 手动 / 紧急 / amend force-push
+  - 任何工具: PowerShell `Start-Sleep` / Python `time.sleep()` / Node.js `setTimeout` 同步版本 / 任何 sync wait
+- **反例 (M3 8/26 06:30 错例, K3 06:30 拍板纠偏)**:
+  - ❌ `Start-Sleep -Seconds 1500` 阻塞 25 min 等待凑够 30 min 间隔 → 阻塞主进程, 浪费 token, 违反"立即处理"原则
+  - ✅ 改 `Start-Sleep` 为 commit to local + 1 段报告 K3 "距上次 push 不足 30 min, 改动 commit 本地, push 留给下一个 cron 周期"
+  - ✅ 如需后台异步等, 用 `run_in_background=true` 启 background task, 不阻塞主进程
+- **配套机制**:
+  - §0.25.1 30 min 间隔 规则 (本节 §0.25.1-§0.25.7) 继续生效
+  - §0.19 用户暂停信号 → 立即杀 cron (互补)
+  - §0.6 紧急修复例外 (紧急 push 5xx 阻断, K3 必拍 1 次回复)
+  - mavis cron self 监控: 默认 TTL 30 min (per §0.6 监控规范)
+
+---
+
 ## 1. 核心定位（一句话）
 
 > 香港印刷 SaaS，为全球用户提供 30 秒 AI 报价 + 72 小时全球交付。
