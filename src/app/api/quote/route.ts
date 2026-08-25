@@ -40,7 +40,8 @@ const QuoteRequestSchema = z.object({
   customerEmail: z.string().email('Valid email required'),
   customerPhone: z.string().optional(),
   customerCountry: z.string().optional(),
-  locale: z.string().default('en'),
+  // 8/26 修 2 补全: locale default 'en' → 'zh-hk' (zprintpro 是香港公司, 默认 zh-hk)
+  locale: z.string().default('zh-hk'),
   referrerUrl: z.string().optional(),
 });
 
@@ -121,6 +122,40 @@ export async function POST(req: NextRequest) {
 
     const inserted = await response.json();
     const record = Array.isArray(inserted) ? inserted[0] : inserted;
+
+    // 8/26 修 3 真修复: 服务端插入 quote_requests 度量层 (不依赖 env-gated 客户端 trackQuoteRequest)
+    // 业务表成功后才插, 失败不影响业务主流程
+    try {
+      const metricRes = await fetch(`${supabaseUrl}/rest/v1/quote_requests`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          apikey: supabaseKey,
+          Authorization: `Bearer ${supabaseKey}`,
+          Prefer: 'return=minimal',
+        },
+        body: JSON.stringify({
+          source: data.source,
+          locale: data.locale,
+          landing_page: data.referrerUrl || null,
+          customer_name: data.customerName,
+          customer_email: data.customerEmail,
+          product_slug: data.productSlug,
+          product_name: data.productName,
+          category: data.material,
+          quantity: String(data.quantity),
+          size: sizeString,
+          message: data.productName,
+          last_touch_at: new Date().toISOString(),
+        }),
+      });
+      if (!metricRes.ok) {
+        console.warn('[Quote API] quote_requests 度量层插入失败:', metricRes.status, await metricRes.text());
+      }
+    } catch (metricErr) {
+      console.warn('[Quote API] quote_requests 度量层异常:', metricErr);
+    }
+
     return NextResponse.json({
       id: record.id,
       created_at: record.created_at,
