@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Locale, siteConfig, getBrandName, generateLocalBusinessSchema } from '@/lib/seo';
 import { JsonLd } from '@/components/JsonLd';
 import { parseInlineLinks } from '@/utils/parseInlineLinks';
+import WhatsAppFloat from '@/components/WhatsAppFloat';
 
 export function generateStaticParams() {
   return [{ locale: 'zh-hk' }, { locale: 'en' }, { locale: 'ja' }];
@@ -981,6 +982,8 @@ export default function AboutPage({ params }: { params: { locale: Locale } }) {
           </div>
         </section>
       </main>
+      {/* WhatsApp 浮动按钮 + 4 事件埋点 (撞墙升级 K3 必拍 #2 批准, 8/25 15:45) */}
+      <WhatsAppFloat />
     </>
   );
 }

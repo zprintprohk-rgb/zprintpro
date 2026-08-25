@@ -5,6 +5,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { generateContactPageJsonLd } from "@/lib/seo/schema-extensions";
 import { ContactFormWrapper } from "./ContactFormWrapper";
 import { generateWhatsAppLink } from "@/lib/whatsapp";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 interface ContactPageProps {
   params: { locale: string };
@@ -398,5 +399,7 @@ export default function ContactPage({ params }: ContactPageProps) {
         </section>
       </div>
     </main>
+    {/* WhatsApp 浮动按钮 + 4 事件埋点 (撞墙升级 K3 必拍 #2 批准, 8/25 15:45) */}
+    <WhatsAppFloat />
   );
 }
