@@ -219,7 +219,7 @@ export function Footer({ locale }: FooterProps) {
     // WhatsApp 链接：使用统一生成器（带 source=footer 上下文 + onClick 追踪）
     const isWa = link.href.startsWith('https://wa.me/');
     if (isWa) {
-      const waProps = getWhatsAppLinkProps(locale, { source: 'footer' });
+      const waProps = getWhatsAppLinkProps(locale, { source: 'footer', productName: 'Site Footer WhatsApp CTA' });
       return (
         <li key={linkIndex}>
           <a
@@ -440,7 +440,7 @@ export function Footer({ locale }: FooterProps) {
               {t.columns[3].links[0].label}
             </Link>
             <a
-              {...getWhatsAppLinkProps(locale, { source: 'footer-mobile' })}
+              {...getWhatsAppLinkProps(locale, { source: 'footer-mobile', productName: 'Mobile Footer WhatsApp CTA' })}
               className="flex items-center justify-center rounded-lg bg-[#25D366] text-white text-xs font-bold py-2.5 px-1 text-center"
             >
               WhatsApp
