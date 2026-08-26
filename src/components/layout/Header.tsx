@@ -462,6 +462,16 @@ export function Header({ locale }: HeaderProps) {
               </div>
 
               <Link href={`${localePrefix}/contact/`} className={navLinkClass(pathname.includes('/contact'))}>{t.contact}</Link>
+
+              {/* 2026-08-26 K3 拍板 (推翻 2026-07-09 SEO 复盘): 加回 nav 入口
+                  rush 页不再是 SEO 孤岛, 跟 Contact 同样 navLinkClass 风格
+                  3 locale 文案: zh-hk 即日急件 / en Rush Delivery / ja 当日急行 */}
+              <Link
+                href={`${localePrefix}/services/rush-printing-delivery/`}
+                className={navLinkClass(pathname.includes('/services/rush-printing-delivery'))}
+              >
+                {locale === 'zh-hk' ? '即日急件' : locale === 'ja' ? '当日急行' : 'Rush Delivery'}
+              </Link>
             </div>
           </div>
         </nav>
@@ -491,6 +501,15 @@ export function Header({ locale }: HeaderProps) {
               {t.categories[catSlug]}
             </Link>
           ))}
+          {/* 2026-08-26 K3 拍板: 移动端 priority+ nav 也加 rush 入口, 跟桌面端同步 */}
+          <Link
+            href={`${localePrefix}/services/rush-printing-delivery/`}
+            className={`px-3.5 h-full flex items-center text-[14px] font-medium whitespace-nowrap transition-colors ${
+              pathname.includes('/services/rush-printing-delivery') ? 'bg-[#F87314] text-white' : 'text-white/90'
+            }`}
+          >
+            {locale === 'zh-hk' ? '即日急件' : locale === 'ja' ? '当日急行' : 'Rush Delivery'}
+          </Link>
         </div>
       </nav>
 

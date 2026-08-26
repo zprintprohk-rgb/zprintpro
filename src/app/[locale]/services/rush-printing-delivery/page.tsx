@@ -81,8 +81,9 @@ export default function RushDeliveryPage({ params }: Props) {
       : '特急印刷・2〜4営業日お届け';
 
   return (
-    <main className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
-      {/* JSON-LD 1/3: Service (现有) */}
+    <main className="pb-8 md:pb-12">
+      {/* 2026-08-26 K3 拍板: Hero 加工厂图全屏 (viewport 满宽) + 正文内容收进 1320px 容器
+          模式: 跟 /services/ 一致, max-w-[1320px] (全站统一, K3 11:02 确认 1380px 误判实际是 1320) */}
       <JsonLd
         data={generateServiceJsonLd({
           serviceType: 'Rush Printing Service',
@@ -161,8 +162,8 @@ export default function RushDeliveryPage({ params }: Props) {
         {/* preload 提示 (Next.js Image 替代) */}
         <link rel="preload" as="image" href="/images/factory/factory-hero.webp" />
 
-        {/* 内容层 */}
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
+        {/* 内容层 (K3 拍板: 加工厂图全屏, 内部文字/CTA 收进 1320px 容器) */}
+        <div className="relative z-10 max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 h-full flex flex-col items-center justify-center text-white text-center">
           <span className="bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full text-sm font-bold mb-4">
             ⚡ {locale === 'zh-hk' ? '通宵達旦服務' : locale === 'en' ? 'Overnight Delivery' : '徹夜配送'}
           </span>
@@ -208,6 +209,9 @@ export default function RushDeliveryPage({ params }: Props) {
           </p>
         </div>
       </section>
+
+      {/* 2026-08-26 K3 拍板: 正文内容区收进 1320px 容器 (Hero 加工厂图全屏例外) */}
+      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
 
       {/* 面包屑由 layout.tsx / BreadcrumbNav 统一生成，page.tsx 内不重复 */}
 
@@ -326,8 +330,9 @@ export default function RushDeliveryPage({ params }: Props) {
         </ul>
       </section>
 
-      {/* S8 新增: 浮动元素 (桌面右下 + 移动底部) */}
+      {/* S8 新增: 浮动元素 (桌面右下 + 移动底部) — fixed 模式, 不受 1320px 容器约束 */}
       <RushFloating locale={locale} />
+      </div>
     </main>
   );
 }
