@@ -210,16 +210,16 @@ export function WhyChooseUs({ locale }: WhyChooseUsProps) {
               key={index}
               className={`group rounded-2xl border p-6 transition-all duration-300 text-center ${
                 index === 0
-                  ? 'bg-gradient-to-b from-orange-50/70 to-white border-orange-200 sm:col-span-2 lg:col-span-2 hover:shadow-xl hover:-translate-y-1'
+                  ? 'bg-[#0F1F3D] text-white border-[#0F1F3D] sm:col-span-2 lg:col-span-2 hover:shadow-2xl hover:-translate-y-1'
                   : 'bg-white border-gray-100 hover:shadow-xl hover:-translate-y-1 hover:border-gray-200'
               }`}
             >
-              <div className={`w-14 h-14 ${feature.bgColor} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                <feature.icon className={`w-7 h-7 ${feature.iconColor}`} />
+              <div className={`w-14 h-14 ${index === 0 ? 'bg-white/10' : feature.bgColor} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                <feature.icon className={`w-7 h-7 ${index === 0 ? 'text-[#F87314]' : feature.iconColor}`} />
               </div>
-              <h3 className="font-bold text-[#333333] text-lg mb-1.5">{feature.title}</h3>
+              <h3 className={`font-bold text-lg mb-1.5 ${index === 0 ? 'text-white' : 'text-[#333333]'}`}>{feature.title}</h3>
               <p className={`text-sm font-semibold ${feature.subtitleColor} mb-3`}>{feature.subtitle}</p>
-              <p className="text-xs text-gray-500 leading-[1.76]">{feature.description}</p>
+              <p className={`text-xs leading-[1.76] ${index === 0 ? 'text-white/75' : 'text-gray-500'}`}>{feature.description}</p>
               {index === 0 && (
                 <a
                   href={`/${locale}/services/rush-printing-delivery/`}

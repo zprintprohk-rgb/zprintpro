@@ -265,17 +265,17 @@ export default function BlogContent({ locale }: { locale: Locale }) {
           {/* Left rail: categories + hot products */}
           <aside className="w-full lg:w-[260px] flex-shrink-0">
             <div className="hidden lg:block">
-              <p className="text-[13px] font-bold tracking-[.12em] uppercase text-[#2873F5] mb-4">{t.contentCategories}</p>
+              <p className="text-sm font-bold tracking-[.12em] uppercase text-[#2873F5] mb-4">{t.contentCategories}</p>
               <ul className="border-t border-gray-100">
                 <li className="border-b border-gray-100">
-                  <button onClick={() => setActiveCategory('all')} className={`w-full text-left py-3 text-[15px] font-semibold flex items-center justify-between transition-colors ${activeCategory === 'all' ? 'text-[#2873F5]' : 'text-gray-600 hover:text-[#2873F5]'}`}>
+                  <button onClick={() => setActiveCategory('all')} className={`w-full text-left py-3.5 text-base font-semibold flex items-center justify-between transition-colors ${activeCategory === 'all' ? 'text-[#2873F5]' : 'text-gray-600 hover:text-[#2873F5]'}`}>
                     <span>{t.allArticles}</span>
                     <span className="text-xs text-gray-400">{allPosts.length}</span>
                   </button>
                 </li>
                 {t.categories.map((cat) => (
                   <li key={cat.key} className="border-b border-gray-100">
-                    <button onClick={() => setActiveCategory(cat.key)} className={`w-full text-left py-3 text-[15px] font-semibold flex items-center justify-between transition-colors ${activeCategory === cat.key ? 'text-[#2873F5]' : 'text-gray-600 hover:text-[#2873F5]'}`}>
+                    <button onClick={() => setActiveCategory(cat.key)} className={`w-full text-left py-3.5 text-base font-semibold flex items-center justify-between transition-colors ${activeCategory === cat.key ? 'text-[#2873F5]' : 'text-gray-600 hover:text-[#2873F5]'}`}>
                       <span>{cat.label}</span>
                       <span className="text-xs text-gray-400">{categoryCounts[cat.key] || 0}</span>
                     </button>
@@ -296,7 +296,7 @@ export default function BlogContent({ locale }: { locale: Locale }) {
 
             {/* Hot products card */}
             <div className="mt-2 rounded-2xl border border-gray-100 bg-[#F9FAFB] p-5">
-              <p className="text-[13px] font-bold tracking-[.12em] uppercase text-[#2873F5] mb-4">{t.hotProducts}</p>
+              <p className="text-sm font-bold tracking-[.12em] uppercase text-[#2873F5] mb-4">{t.hotProducts}</p>
               <ul className="space-y-3">
                 {hotProducts.map((prod) => (
                   <li key={prod.slug}>
@@ -326,15 +326,17 @@ export default function BlogContent({ locale }: { locale: Locale }) {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {featured.map((post) => (
                   <Link key={post.slug} href={`${localePrefix}/blog/${post.slug}/`} className="group flex flex-col rounded-2xl border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 bg-white">
-                    <div className="aspect-[16/9] bg-gray-100 overflow-hidden">
-                      {post.image ? <Image src={post.image} alt={post.title} width={640} height={360} className="object-cover w-full h-full group-hover:scale-[1.02] transition-transform duration-300" /> : null}
-                    </div>
+                    {post.image ? (
+                      <div className="aspect-[16/9] bg-gray-100 overflow-hidden">
+                        <Image src={post.image} alt={post.title} width={640} height={360} className="object-cover w-full h-full group-hover:scale-[1.02] transition-transform duration-300" />
+                      </div>
+                    ) : null}
                     <div className="p-5 md:p-6 flex flex-col flex-1">
                       <div className="flex items-center gap-3 text-xs text-gray-400 mb-2.5">
-                        <span className="inline-flex items-center gap-1.5 text-[#2873F5] font-semibold"><Tag size={13} />{post.categoryLabel}</span>
+                        <span className="inline-flex items-center gap-1.5 rounded-full bg-[#EFF4FF] text-[#2873F5] px-2.5 py-1 font-semibold"><Tag size={13} />{post.categoryLabel}</span>
                         <span className="inline-flex items-center gap-1.5"><Calendar size={13} />{post.date}</span>
                       </div>
-                      <h3 className="text-[17px] md:text-lg font-bold text-[#111827] leading-snug group-hover:text-[#2873F5] transition-colors line-clamp-2">{post.title}</h3>
+                      <h3 className="text-lg md:text-xl font-extrabold text-[#111827] leading-snug group-hover:text-[#2873F5] transition-colors line-clamp-2">{post.title}</h3>
                       <p className="mt-2.5 text-sm text-gray-500 leading-relaxed line-clamp-3">{post.excerpt}</p>
                       <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-[#F87314]">
                         {t.readMore}
@@ -352,9 +354,11 @@ export default function BlogContent({ locale }: { locale: Locale }) {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-0">
                   {rest.map((post) => (
                     <Link key={post.slug} href={`${localePrefix}/blog/${post.slug}/`} className="group py-5 border-b border-gray-100 flex items-start gap-4">
-                      <div className="w-20 h-14 rounded-lg bg-gray-100 overflow-hidden flex-shrink-0">
-                        {post.image ? <Image src={post.image} alt={post.title} width={160} height={112} className="object-cover w-full h-full" /> : null}
-                      </div>
+                      {post.image ? (
+                        <div className="w-24 h-16 rounded-lg bg-gray-100 overflow-hidden flex-shrink-0">
+                          <Image src={post.image} alt={post.title} width={160} height={112} className="object-cover w-full h-full" />
+                        </div>
+                      ) : null}
                       <div className="min-w-0">
                         <span className="text-xs text-[#2873F5] font-semibold">{post.categoryLabel} · {post.date}</span>
                         <h4 className="text-[15px] font-bold text-[#111827] leading-snug group-hover:text-[#2873F5] transition-colors line-clamp-2 mt-1">{post.title}</h4>

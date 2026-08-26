@@ -188,12 +188,12 @@ export function HowItWorks({ locale }: HowItWorksProps) {
             <li
               key={step.num}
               title={step.tip}
-              className="relative bg-white rounded-xl border border-slate-200 px-4 py-5 md:px-5 md:py-6 shadow-sm hover:shadow-md transition-shadow"
+              className="relative bg-white rounded-xl border border-slate-200 px-4 py-5 md:px-5 md:py-6 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300"
             >
               {/* Connector arrow for desktop (between steps) */}
               {idx < steps.length - 1 && (
                 <div
-                  className="hidden lg:block absolute top-1/2 -right-2 -translate-y-1/2 text-[#F87314] z-10"
+                  className="hidden lg:block absolute top-1/2 -right-2 -translate-y-1/2 text-[#F87314] z-10 animate-pulse"
                   aria-hidden="true"
                 >
                   →

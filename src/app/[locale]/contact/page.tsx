@@ -173,10 +173,14 @@ export default function ContactPage({ params }: ContactPageProps) {
           改用 home 同款 1 个 <JsonLd data={[array]}> 形式（home 200 ✅）。 */}
       <JsonLd data={[businessJsonLd, contactPageJsonLd, localBusinessJsonLd]} />
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-10 md:mb-12">
-          <h1 className="text-3xl md:text-4xl font-bold text-[#333333] mb-3">{t.h1}</h1>
-          <p className="text-gray-500 text-lg">{t.subtitle}</p>
+        {/* Header — deep-blue hero band */}
+        <div className="rounded-2xl bg-[#0F1F3D] px-6 md:px-12 py-10 md:py-14 mb-10 md:mb-12 text-center md:text-left">
+          <p className="inline-flex items-center gap-2 text-[#F87314] text-[13px] font-semibold tracking-[.12em] uppercase mb-4">
+            <span className="inline-block w-[22px] h-[2px] bg-[#F87314]" />
+            {locale === 'zh-hk' ? '免費報價・30 秒 AI' : locale === 'ja' ? '無料見積もり・30秒AI' : 'Free Quote · 30s AI'}
+          </p>
+          <h1 className="text-3xl md:text-5xl font-extrabold text-white leading-[1.15] tracking-tight mb-4">{t.h1}</h1>
+          <p className="text-white/80 text-base md:text-lg max-w-[640px] leading-relaxed">{t.subtitle}</p>
         </div>
 
         {/* Trust Bar - 4 metrics (2026-07-18 P8: emoji → Heroicons outline SVG) */}
@@ -362,40 +366,7 @@ export default function ContactPage({ params }: ContactPageProps) {
           </div>
         </div>
 
-        {/* 2026-07-03 Cross-border remittance payment block
-            - For overseas clients unable to pay via bank wire / WeChat / Alipay
-            - Static QR reference; not an inline checkout payment */}
-        <section className="mt-8 rounded-2xl border border-indigo-100 bg-gradient-to-br from-indigo-50 via-white to-blue-50 p-6 md:p-8">
-          <div className="flex flex-col md:flex-row gap-6 items-center">
-            <div className="relative w-32 h-32 md:w-40 md:h-40 bg-white border border-indigo-200 rounded-2xl overflow-hidden flex items-center justify-center shadow-md flex-shrink-0">
-              <img
-                src={locale === 'zh-hk' ? '/images/payment/shansu-collect-zh-hk.png' : '/images/payment/shansu-collect-en.png'}
-                alt="Alipay Flash Collect QR"
-                width={140}
-                height={140}
-                className="object-contain w-full h-full"
-                loading="lazy"
-              />
-            </div>
-            <div className="flex-1 min-w-0 text-center md:text-left">
-              <div className="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-indigo-100 text-indigo-700 text-xs font-semibold mb-2">
-                <span>Alipay Flash Collect</span>
-              </div>
-              <h2 className="text-xl md:text-2xl font-bold text-[#333333] mb-2">{t.altPayTitle}</h2>
-              <p className="text-sm text-gray-600 leading-relaxed mb-3">{t.altPayDesc}</p>
-              <p className="text-xs text-gray-500 mb-4">{t.altPayQrCaption}</p>
-              <Link
-                href={`${localePrefix}/payment-methods/`}
-                className="inline-flex items-center gap-1.5 px-4 py-2 bg-[#2873F5] hover:bg-[#1E5BD6] text-white text-sm font-semibold rounded-lg transition-colors"
-              >
-                {t.altPayCta}
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-              </Link>
-            </div>
-          </div>
-        </section>
+        
       </div>
     </main>
     {/* WhatsApp 浮动按钮 + 4 事件埋点 (撞墙升级 K3 必拍 #2 批准, 8/25 15:45) */}

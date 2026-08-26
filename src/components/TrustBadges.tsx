@@ -140,10 +140,10 @@ export function TrustBadges({ locale, compact = false }: TrustBadgesProps) {
             return (
               <div
                 key={idx}
-                className="bg-white rounded-xl border border-slate-200 p-4 md:p-5 hover:border-[#2873F5] hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300"
+                className="bg-white rounded-2xl border border-slate-200 p-5 md:p-6 hover:border-[#2873F5] hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
                 <div className="flex flex-col items-center text-center gap-2">
-                  <div className={`w-10 h-10 md:w-12 md:h-12 rounded-full ${color.bg} flex items-center justify-center flex-shrink-0`}>
+                  <div className={`w-11 h-11 md:w-14 md:h-14 rounded-2xl ${color.bg} flex items-center justify-center flex-shrink-0 shadow-sm`}>
                     <Icon className={`w-5 h-5 md:w-6 md:h-6 ${color.icon}`} aria-hidden="true" />
                   </div>
                   <h3 className="text-sm md:text-base font-bold text-slate-900 leading-tight">
