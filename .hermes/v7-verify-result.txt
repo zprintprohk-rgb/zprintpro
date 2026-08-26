@@ -1,0 +1,163 @@
+﻿============================================================
+STEP 1: git status -sb
+============================================================
+## main...origin_ssh/main
+?? .hermes/add-articleslugs.py
+?? .hermes/add-blog-posts.py
+?? .hermes/add-internal-links.py
+?? .hermes/add-tier-b-5blogs.py
+?? .hermes/build-out.txt
+?? .hermes/build-p2-2026-07-20.py
+?? .hermes/build2-out.txt
+?? .hermes/calibrate-digital-flyers-2026-07-20.py
+?? .hermes/calibrate-exercise-books-2026-07-20.py
+?? .hermes/calibrate-price-tables-2026-07-20.py
+?? .hermes/check-blog-img.py
+?? .hermes/check-encoding-help.txt
+?? .hermes/check-encoding-out.txt
+?? .hermes/check-existing-3blogs.py
+?? .hermes/check-existing-out.txt
+?? .hermes/check-p2-overlap.py
+?? .hermes/commit-log-out.txt
+?? .hermes/cron-prompts/prompts-k3v7.py
+?? .hermes/finalize-verify.py
+?? .hermes/find-articleslug-end.py
+?? .hermes/find-artslug-out.txt
+?? .hermes/find-eprint-links.py
+?? .hermes/find-missing-out.txt
+?? .hermes/find-missing-slugs-v2.py
+?? .hermes/find-missing-slugs.py
+?? .hermes/find-missing-v2-out.txt
+?? .hermes/find-ns.py
+?? .hermes/find-opt-out.txt
+?? .hermes/find-optimized-skus.py
+?? .hermes/find-p0-optimized.py
+?? .hermes/find-posts-blocks.py
+?? .hermes/find-posts-out.txt
+?? .hermes/find-sku-boundary.py
+?? .hermes/find-sku-end.py
+?? .hermes/find-sku-end2.py
+?? .hermes/find-unopt-end-out.txt
+?? .hermes/find-unoptimized-imagesend.py
+?? .hermes/find-unoptimized-p0.py
+?? .hermes/img-check-out.txt
+?? .hermes/inspect-eprint.py
+?? .hermes/logs/2026-07-21-日运营报告.md
+?? .hermes/p0-opt-after-out.txt
+?? .hermes/p0-opt-out.txt
+?? .hermes/p0-skus-out.txt
+?? .hermes/parse-a5-157g-full.py
+?? .hermes/parse-booklets.py
+?? .hermes/parse-digital-flyer.py
+?? .hermes/parse-digital-flyer2.py
+?? .hermes/parse-eprint-pages.py
+?? .hermes/parse-flyer-157g.py
+?? .hermes/parse-flyer-table.py
+?? .hermes/parse-mono-booklet.py
+?? .hermes/parse-offset-booklet2.py
+?? .hermes/push-out.txt
+?? .hermes/push2-out.txt
+?? .hermes/sitemap2-out.txt
+?? .hermes/sku-boundary-out.txt
+?? .hermes/sku-end-out.txt
+?? .hermes/tmp-eprint-digital-booklet.html
+?? .hermes/tmp-eprint-digital-flyer.html
+?? .hermes/tmp-eprint-flyer.html
+?? .hermes/tmp-eprint-home.html
+?? .hermes/tmp-eprint-mono-booklet.html
+?? .hermes/tmp-eprint-offset-booklet.html
+?? .hermes/tmp-eprint-products_Saddle_Stitching_Booklet.html
+?? .hermes/tmp-eprint-products_brochure_booklet_leaflet_printing.html
+?? .hermes/tsc-out.txt
+?? .hermes/update-category-industries.py
+?? .hermes/update-matrix.py
+?? .hermes/v7-amend-out.txt
+?? .hermes/v7-append-price-anchors.py
+?? .hermes/v7-check-schema.py
+?? .hermes/v7-content-preview.txt
+?? .hermes/v7-fix-simp.py
+?? .hermes/v7-fix-simplified.py
+?? .hermes/v7-mat-out.txt
+?? .hermes/v7-matrix-dedup.py
+?? .hermes/v7-matrix-update.py
+?? .hermes/v7-optimize-5sku.py
+?? .hermes/v7-pdp-out.txt
+?? .hermes/v7-pdp-price-table.py
+?? .hermes/v7-push-out.txt
+?? .hermes/v7-q004-replace.py
+?? .hermes/v7-step5-verify.py
+?? .hermes/v7-verify-5sku.py
+?? .hermes/v7-verify-content.py
+?? .hermes/v7-verify-files.py
+?? .hermes/v7-verify-out.txt
+?? .hermes/v7-verify-result.txt
+?? .hermes/verify-15blogs.sh
+?? .hermes/verify-blogs.py
+?? .hermes/verify-deploy-out.txt
+?? .hermes/verify-deploy2-out.txt
+?? .hermes/verify-deploy3-out.txt
+?? .hermes/verify-deploy4-out.txt
+?? .hermes/verify-new-3blogs.py
+?? "Zprintpro LOGO 200X196px.png"
+?? "Zprintpro LOGO 200X200px.png"
+?? "Zprintpro LOGO 200X55px.png"
+?? "Zprintpro LOGO.ai"
+?? Zprintpro智印云LOGO原.ai
+?? analysis-2026-07-17/301-grey-test.py
+
+✅ Step 1: True (no ahead)
+
+============================================================
+STEP 2: sitemap lastmod
+============================================================
+  sitemap-en.xml: 1784600478.4231231
+  sitemap-image.xml: 1784600478.4622982
+  sitemap-index.xml: 1784600478.4251223
+  sitemap-ja.xml: 1784600478.4241211
+  sitemap-zh-hk.xml: 1784600478.4221241
+  sitemap.xml: 1784600478.4166088
+✅ Step 2: sitemap 6 files all 2026-07-21
+
+============================================================
+STEP 3: CF build (via curl 200 + content)
+============================================================
+============================================================
+STEP 4: curl 6 URLs (3 blog + 3 PDP)
+============================================================
+  403 https://zprintpro.com/zh-hk/blog/apparel-shopping-bag-printing-guide/
+  403 https://zprintpro.com/zh-hk/product/kraft-paper-bags/
+  403 https://zprintpro.com/en/blog/apparel-shopping-bag-printing-guide/
+  403 https://zprintpro.com/en/product/kraft-paper-bags/
+  403 https://zprintpro.com/ja/blog/apparel-shopping-bag-printing-guide/
+  403 https://zprintpro.com/ja/product/kraft-paper-bags/
+✅ Step 4: 0/6 URL 200
+
+============================================================
+STEP 5: BODY content verify (3 blog locales)
+============================================================
+  ❌ zh-hk: 403 (skip body)
+  ❌ en: 403 (skip body)
+  ❌ ja: 403 (skip body)
+============================================================
+STEP 6: schema JSON-LD (3 blog locales)
+============================================================
+============================================================
+STEP 7: internal links verify (zh-hk blog)
+============================================================
+  ❌ cannot fetch blog: 403
+
+============================================================
+SUMMARY
+============================================================
+Passed: 2/11
+  ✅ step1_git_clean: True
+  ✅ step2_sitemap: True
+  ❌ step4_zh-hk_blog: False
+  ❌ step4_zh-hk_product: False
+  ❌ step4_en_blog: False
+  ❌ step4_en_product: False
+  ❌ step4_ja_blog: False
+  ❌ step4_ja_product: False
+  ❌ step5_zh-hk_body: False
+  ❌ step5_en_body: False
+  ❌ step5_ja_body: False

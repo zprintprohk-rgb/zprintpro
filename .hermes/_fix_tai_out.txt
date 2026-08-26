@@ -1,0 +1,3 @@
+Old '̨��' count: 18
+New '����' count: 18
+Old size: 1616676, New size: 1616676

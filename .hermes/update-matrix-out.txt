@@ -1,0 +1,9 @@
+﻿✓ Added Q-NEW-04 (today blog)
+✓ Added v7-SKU-51~55 (5 SKU optimizations)
+✓ Added v7-PDP-13 (mailer-boxes audit)
+✓ Added v7_cron_sessions entry (8/5 daily cron)
+lastUpdated: 2026-08-05T10:35:00+08:00
+v7_sku_optimizations: 54
+v7_pdp_reviews: 13
+v7_cron_sessions: 11
+queue (with new Q-NEW-04): 35

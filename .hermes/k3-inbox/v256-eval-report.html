@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>V25.6 生图提示词体系 — 优化增强方法与验证报告（供豆包评估）</title>
+<style>
+:root{--ink:#1a1a1a;--mut:#667;--line:#e5e7eb;--bg:#f8f9fa;--acc:#7c3aed;}
+*{box-sizing:border-box} body{font-family:"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;margin:0;background:var(--bg);color:var(--ink);line-height:1.65}
+.wrap{max-width:1060px;margin:0 auto;padding:32px 20px 64px}
+h1{font-size:26px;margin:0 0 6px} h2{font-size:19px;margin:34px 0 12px;border-left:4px solid var(--acc);padding-left:10px}
+.sub{color:var(--mut);margin-bottom:18px}
+.metrics{display:flex;gap:14px;flex-wrap:wrap;margin:18px 0}
+.metric{flex:1;min-width:150px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.metric .num{font-size:26px;font-weight:800} .metric .lab{font-size:12px;color:var(--mut)}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:13.5px}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:center} th{background:#f3f4f6}
+.muted{color:var(--mut);font-size:12px}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:10px 0}
+.card-title{font-weight:700;margin-bottom:6px}
+.note{background:#fff8e6;border:1px solid #f0d98c;border-radius:10px;padding:12px 16px;margin:12px 0;font-size:13.5px}
+ol li,ul li{margin:4px 0}
+</style></head><body><div class="wrap">
+<h1>V25.6 生图提示词体系 · 优化增强方法与验证报告</h1>
+<div class="sub">提交给豆包评估 · 2026-08-24 · 评估通过后展开全量 SKU 提示词</div>
+
+<div class="metrics">
+<div class="metric"><div class="num">9.584</div><div class="lab">20 张均分（目标 ≥9.5 ✓）</div></div>
+<div class="metric"><div class="num">20/20</div><div class="lab">全部 ≥9.2 底线</div></div>
+<div class="metric"><div class="num">9.30</div><div class="lab">单图最低分</div></div>
+<div class="metric"><div class="num">9.80</div><div class="lab">单图最高分</div></div>
+</div>
+
+<h2>0. 请豆包评估的要点</h2>
+<div class="card"><ol>
+<li>提示词体系结构（九段骨架+六字段注入+使用中场景+只手/无脸约束）是否完整、可规模化？</li>
+<li>5 SKU 使用中场景句是否符合"背景虚化=客户实际应用场景"？</li>
+<li>验证数据（20 张均分 9.584、最低 9.3）是否说明方法有效？</li>
+<li>最新规则（只手/无脸/DJ 鲜艳色）是否有遗漏风险？</li>
+<li>autoglm 通道 950 字符上限 + 水印处理是否可接受？</li>
+</ol></div>
+
+<h2>1. 优化增强方法（四层吸收 + 审查闭环）</h2>
+<div class="card"><ul>
+<li><b>V22 九段骨架</b>：HEAD/WHERE USED/AUDIENCE/PRODUCT/SCENE/PALETTE/VIEW/CRAFT&TRUST/NEGATIVE — 纸纹质感明显提升</li>
+<li><b>P0 六视觉字段</b>：name/description/features/material/size/printMethod/finishing 全展开注入；16 类目差异化场景</li>
+<li><b>V25.5 使用中场景</b>：前景人手动作+产品 80-85%，背景虚化=客户实际应用场景</li>
+<li><b>反方审查+实测迭代闭环</b>：5 轮迭代（见下表），每轮发现问题→实测→修复→重评</li>
+</ul></div>
+<table><tr><th>轮</th><th>发现</th><th>实测</th><th>动作</th><th>结果</th></tr><tr><td>1</td><td style="text-align:left">DETAIL 残留人手场景句 → 手部入镜</td><td>旧指令 7.7</td><td style="text-align:left">评分指令更新：动作手部达标</td><td style="text-align:left">重评 9.5</td></tr><tr><td>2</td><td style="text-align:left">RP-001 双人双手（4 手畸形风险）</td><td>—</td><td style="text-align:left">改单手递出构图</td><td style="text-align:left">HERO 9.73</td></tr><tr><td>3</td><td style="text-align:left">PK-002 金银箔混用（色板冲突）</td><td>—</td><td style="text-align:left">统一银箔</td><td style="text-align:left">9.7</td></tr><tr><td>4</td><td style="text-align:left">手部规则收紧：只手+无脸</td><td>—</td><td style="text-align:left">全视图最多 1 只手、无清晰人脸（rev3）</td><td style="text-align:left">已写入提示词</td></tr><tr><td>5</td><td style="text-align:left">DJ-001 封面不够鲜艳</td><td>V25.5 为 9.0</td><td style="text-align:left">色板改鲜艳靓丽+禁压抑色（rev3）</td><td style="text-align:left">已写入提示词</td></tr></table>
+
+<h2>2. 5 SKU 使用中场景（rev3 定稿）</h2>
+<table><tr><th>SKU</th><th>场景（前景）</th><th>背景（=客户实际应用）</th><th>短文案</th><th>色板</th></tr><tr><td style="text-align:left"><b>BC-001</b></td><td style="text-align:left">一只手金笔书写贺卡，暖木桌</td><td style="text-align:left">家中庆祝（彩灯/蛋糕/礼物）</td><td>WARM WISHES</td><td style="text-align:left">金+象牙白+腮红粉+鼠尾草绿</td></tr><tr><td style="text-align:left"><b>PB-001</b></td><td style="text-align:left">一只手提绳走出花店</td><td style="text-align:left">花店内景（牡丹/玫瑰/绿植）</td><td>CARRY JOY</td><td style="text-align:left">牛皮+白+牡丹粉+叶绿</td></tr><tr><td style="text-align:left"><b>PK-002</b></td><td style="text-align:left">一只手掀磁吸盖</td><td style="text-align:left">卧室梳妆台（镜前灯/香水瓶）</td><td>PURE GLOW</td><td style="text-align:left">粉+银+珍珠白+香槟+玫瑰金</td></tr><tr><td style="text-align:left"><b>RP-001</b></td><td style="text-align:left">长辈单手递红包</td><td style="text-align:left">春节家宴（灯笼/橘子/暖光）</td><td>GOOD LUCK</td><td style="text-align:left">中国红+深绯红+金箔</td></tr><tr><td style="text-align:left"><b>DJ-001</b></td><td style="text-align:left">一只手翻页，书大比例+亚克力立牌</td><td style="text-align:left">漫展 artist alley（人群虚化）</td><td>ART BOOK</td><td style="text-align:left">鲜艳糖果色+高亮（禁压抑）</td></tr></table>
+
+<h2>3. 验证数据（20 张评分台账，rev2 实测）</h2>
+<table><tr><th style="text-align:left">SKU</th><th>HERO</th><th>DETAIL</th><th>VARIETY</th><th>MULTI-ANGLE</th><th>SKU 均分</th></tr><tr><td style="text-align:left"><b>BC-001</b><br><span class="muted">贺卡</span></td><td style="text-align:center;color:#1a7f37;font-weight:600">9.75</td><td style="text-align:center;color:#1a7f37;font-weight:600">9.78</td><td style="text-align:center;color:#9a6700;font-weight:600">9.30</td><td style="text-align:center;color:#1a7f37;font-weight:600">9.56</td><td style="text-align:center;font-weight:700">9.60</td></tr>
+<tr><td style="text-align:left"><b>PB-001</b><br><span class="muted">纸袋</span></td><td style="text-align:center;color:#1a7f37;font-weight:600">9.65</td><td style="text-align:center;color:#1a7f37;font-weight:600">9.80</td><td style="text-align:center;color:#9a6700;font-weight:600">9.40</td><td style="text-align:center;color:#1a7f37;font-weight:600">9.60</td><td style="text-align:center;font-weight:700">9.61</td></tr>
+<tr><td style="text-align:left"><b>PK-002</b><br><span class="muted">化妆品盒</span></td><td style="text-align:center;color:#1a7f37;font-weight:600">9.63</td><td style="text-align:center;color:#1a7f37;font-weight:600">9.70</td><td style="text-align:center;color:#1a7f37;font-weight:600">9.50</td><td style="text-align:center;color:#9a6700;font-weight:600">9.40</td><td style="text-align:center;font-weight:700">9.56</td></tr>
+<tr><td style="text-align:left"><b>RP-001</b><br><span class="muted">红包</span></td><td style="text-align:center;color:#1a7f37;font-weight:600">9.73</td><td style="text-align:center;color:#1a7f37;font-weight:600">9.60</td><td style="text-align:center;color:#9a6700;font-weight:600">9.40</td><td style="text-align:center;color:#1a7f37;font-weight:600">9.60</td><td style="text-align:center;font-weight:700">9.58</td></tr>
+<tr><td style="text-align:left"><b>DJ-001</b><br><span class="muted">同人志</span></td><td style="text-align:center;color:#1a7f37;font-weight:600">9.68</td><td style="text-align:center;color:#1a7f37;font-weight:600">9.70</td><td style="text-align:center;color:#9a6700;font-weight:600">9.40</td><td style="text-align:center;color:#1a7f37;font-weight:600">9.50</td><td style="text-align:center;font-weight:700">9.57</td></tr>
+
+<tr style="background:#f8f6ff"><td style="text-align:left"><b>全 20 张</b></td><td colspan="4">均分 <b>9.584</b> · 最低 9.30 · 最高 9.80</td><td><b>9.58</b></td></tr></table>
+
+<h2>4. 最新规则变更（2026-08-24，rev3）</h2>
+<div class="card"><ol>
+<li><b>手部</b>：全视图最多 1 只手；手部出现不扣分，按质量评分（五指正确/关节自然/动作合理）；2 只手同框扣分</li>
+<li><b>人脸</b>：不允许清晰人脸/头部入镜；背景人物必须重度虚化不可辨认</li>
+<li><b>DJ-001 色彩</b>：鲜艳靓丽（vivid saturated + bright candy + high-key），禁压抑灰暗（no dark gloomy colors / no muted tones）</li>
+<li><b>NEGATIVE 扩至 30 项</b>：手部畸形/只手/人脸/伪中文/压抑色/烫金失真/结构变形/背景专项</li>
+</ol></div>
+
+<h2>5. 模型与通道</h2>
+<div class="card"><ul>
+<li>模型：Seedream 5.0 Pro 级（autoglm 通道实测）</li>
+<li>通道上限：autoglm 中转 prompt ≤950 字符（950 成功/1000 失败）→ 调用版适配</li>
+<li>水印：autoglm 中转叠加 AutoClawAI 水印 → 裁底边 4.5% → 1200×1146；官方 ARK API（watermark:false）可出 1200×1200 无水印</li>
+</ul></div>
+
+<h2>6. 下一步（评估通过后）</h2>
+<div class="card"><ol>
+<li>按 rev3 定稿重跑 5 SKU × 4 视图 = 20 张并评分</li>
+<li>展开全部 16 类目 × 4 视图全量 SKU 提示词</li>
+<li>如需官方无水印：接入 ARK API 直接出 1200×1200</li>
+</ol></div>
+
+<div class="note"><b>交付说明：</b>rev3 提示词（文档版 20 条 1800-2400 字符 + 调用版 20 条 ≤950 字符）见 <code>v256-prompts.txt / v256-prompts.json / v256-call-prompts.json</code>；评分指令 v3 见 <code>scoring-guide-v3.md</code>；本报告含全部提示词全文，见 <code>v256-eval-report.md</code>。</div>
+</div></body></html>

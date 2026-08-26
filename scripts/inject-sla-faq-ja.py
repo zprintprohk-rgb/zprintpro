@@ -1,0 +1,170 @@
+#!/usr/bin/env python3
+# 2026-08-25 P0 #5 24h SLA FAQ ja locale
+import json
+import io
+import os
+
+JA_FAQ = {
+    "metadata": {
+        "slug": "sla-faq",
+        "title": "ZprintPro 24時間サービスコミットメント · 適用条件 FAQ",
+        "description": "ZprintPro 4 種類の 24 時間サービスコミットメント（返答 / 校正 / SF Express 国内 / デジタル印刷）の適用条件と除外条件, NAP 統一基準対応.",
+        "lastUpdated": "2026-08-25",
+        "version": "1.0"
+    },
+    "categories": [
+        {
+            "id": "sla-response",
+            "label": "24 時間返答コミット",
+            "scope": "お問合せ / ご連絡 24 時間以内に専門スタッフが対応",
+            "faqs": [
+                {
+                    "question": "24 時間返答コミットの適用条件は何ですか?",
+                    "answer": "営業日 9:00-18:00 (UTC+8) にお問合せ, 連絡先完全記入 (WhatsApp / メール / 電話), 標準カテゴリ (ステッカー / パッケージ / 紙袋 / ポスター / 冊子), 24 時間以内に専門スタッフが対応.",
+                    "applicable": [
+                        "✅ 営業日 9:00-18:00 (UTC+8) にお問合せ",
+                        "✅ 連絡先完全記入",
+                        "✅ 標準カテゴリ (ステッカー / パッケージ / 紙袋 / ポスター / 冊子)"
+                    ],
+                    "notApplicable": [
+                        "❌ 週末 / 香港祝日 (政府発表準拠)",
+                        "❌ お問合せ情報不完全 (連絡先なし / カテゴリなし)",
+                        "❌ 越境大口注文 (プロジェクト別スケジュール)"
+                    ]
+                },
+                {
+                    "question": "週末と香港祝日の対応は?",
+                    "answer": "週末と祝日は, 24 時間返答コミットは翌営業日 9:00 開始に繰越. 緊急時は WhatsApp (+86 198 8085 1334) で「緊急」タグ付けで優先対応.",
+                    "applicable": [
+                        "✅ 緊急時 WhatsApp「緊急」タグで優先対応",
+                        "✅ 祝日終了後 24 時間以内にフォロー"
+                    ],
+                    "notApplicable": [
+                        "❌ 祝日中 24 時間返答保証"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "sla-proofing",
+            "label": "24 時間デジタル校正",
+            "scope": "デジタル校正 24 時間以内納品",
+            "faqs": [
+                {
+                    "question": "24 時間デジタル校正の適用条件は何ですか?",
+                    "answer": "営業日 9:00-18:00 にお問合せ, ファイル問題なし (300dpi / CMYK / 3mm 塗り足し / フォントアウトライン化), 数量 100 以上, 校正ニーズ確認済, 24 時間以内にデジタル校正納品.",
+                    "applicable": [
+                        "✅ 営業日 9:00-18:00 にお問合せ",
+                        "✅ ファイル問題なし (300dpi / CMYK / 3mm 塗り足し / フォントアウトライン化)",
+                        "✅ 数量 100 以上",
+                        "✅ 校正ニーズ確認済"
+                    ],
+                    "notApplicable": [
+                        "❌ 週末 / 祝日",
+                        "❌ ファイル修正必要 (1-2 日修正後 24 時間再起算)",
+                        "❌ 特殊加工 (箔押し / 拔型 / UV / エンボス) — オフセット校正 3-5 営業日に切替",
+                        "❌ 数量 100 未満 (特价フロー応相談)"
+                    ]
+                },
+                {
+                    "question": "校正ファイルに問題がある場合は?",
+                    "answer": "ZprintPro はご注文後 2 時間以内に PDF プレチェック完了, ページ数誤り / フォント未アウトライン / 塗り足し不足等のよくある問題を無償修正. 修正後 24 時間校正コミット再起算.",
+                    "applicable": [
+                        "✅ 2 時間以内 PDF プレチェック無償",
+                        "✅ よくある問題無償修正 (ページ数 / フォント / 塗り足し)",
+                        "✅ 修正後 24 時間コミット再起算"
+                    ],
+                    "notApplicable": [
+                        "❌ お客様要望再設計 (ZprintPro サービス範囲外)"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "sla-sf-express",
+            "label": "24 時間 SF Express 国内",
+            "scope": "香港国内 SF Express 配送 24 時間以内",
+            "faqs": [
+                {
+                    "question": "24 時間 SF Express 国内の適用条件は何ですか?",
+                    "answer": "香港国内住所 (香港島 / 九龍 / 新界), 営業日 14:00 までにお問合せ (14:00 以降翌日), 標準サイズ + 重量 (30kg 以下, 長さ 1.5m 以下), SF Express 24 時間以内配送.",
+                    "applicable": [
+                        "✅ 香港国内住所 (香港島 / 九龍 / 新界)",
+                        "✅ 営業日 14:00 までにお問合せ (14:00 以降翌日)",
+                        "✅ 標準サイズ + 重量 (30kg 以下, 長さ 1.5m 以下)"
+                    ],
+                    "notApplicable": [
+                        "❌ 離島 / 制限区域, SF 追加料金 / 2-3 日",
+                        "❌ 規格外, 物流会社切替",
+                        "❌ 祝日, SF 祝日配送 1-2 日"
+                    ]
+                },
+                {
+                    "question": "SF Express 配送時間確認方法は?",
+                    "answer": "ZprintPro はご注文後 1 時間以内に SF Express 追跡番号提供, リアルタイム配送追跡可能. 急件は SF Express 優先配送申込可 (追加料金別途).",
+                    "applicable": [
+                        "✅ 1 時間以内に SF 追跡番号提供",
+                        "✅ リアルタイム配送追跡",
+                        "✅ 急件 SF Express 優先配送申込可 (追加料金)"
+                    ],
+                    "notApplicable": [
+                        "❌ 越境配送 (DHL / FedEx 切替, 2-4 日)"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "sla-digital",
+            "label": "24 時間デジタル印刷",
+            "scope": "デジタル印刷 24 時間以内完了",
+            "faqs": [
+                {
+                    "question": "24 時間デジタル印刷の適用条件は何ですか?",
+                    "answer": "営業日 9:00-18:00 にお問合せ, 数量 1-500 (デジタル経済ロット), ファイル問題なし, 標準用紙 (コート / 書籍 / 特殊紙除く), デジタル印刷 24 時間以内完了.",
+                    "applicable": [
+                        "✅ 営業日 9:00-18:00 にお問合せ",
+                        "✅ 数量 1-500 (デジタル経済ロット)",
+                        "✅ ファイル問題なし",
+                        "✅ 標準用紙 (コート / 書籍 / 特殊紙除く)"
+                    ],
+                    "notApplicable": [
+                        "❌ 数量 500 超 (オフセット切替, 3-5 営業日)",
+                        "❌ 特殊用紙 (FSC / 棉紙 / 箔押し紙 等, 1-3 日材料手配)",
+                        "❌ 箔押し / 拔型 / UV / エンボス (オフセット切替)",
+                        "❌ 週末 / 祝日"
+                    ]
+                },
+                {
+                    "question": "デジタル vs オフセット印刷の選び方は?",
+                    "answer": "デジタル 1-500 部急件, 版代不要, 24 時間納品; オフセット 500+ 部大口, 単価安, 3-5 営業日. ZprintPro 30 秒 AI 即時見積もりで最適方案自動推薦.",
+                    "applicable": [
+                        "✅ 1-500 部: デジタル (急件, 24h)",
+                        "✅ 500+ 部: オフセット (大口, 単価安)",
+                        "✅ ZprintPro 30 秒 AI 見積もり自動推薦"
+                    ],
+                    "notApplicable": [
+                        "❌ 特殊加工は常にオフセット (箔押し / 拔型 / UV / エンボス)"
+                    ]
+                }
+            ]
+        }
+    ]
+}
+
+
+def main():
+    path = r'F:\zprintpro-nextjs\src\data\faq\ja.json'
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with io.open(path, 'w', encoding='utf-8') as f:
+        json.dump(JA_FAQ, f, ensure_ascii=False, indent=2)
+        f.write('\n')
+    with io.open(path, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    total_faqs = sum(len(c['faqs']) for c in data['categories'])
+    print(f'ja FAQ written: {len(data["categories"])} categories, {total_faqs} FAQs')
+    print(f'  file size: {os.path.getsize(path)} bytes')
+    print(f'  JSON valid: True')
+
+
+if __name__ == '__main__':
+    main()

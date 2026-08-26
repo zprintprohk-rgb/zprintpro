@@ -1,0 +1,54 @@
+﻿All price* fields in products.ts:
+  price_range
+---kraft-paper-bags fields---
+slug: 'kraft-paper-bags',
+    category: 'paper-bags',
+    category_slug: 'paper-bags',
+    name: '牛皮紙袋 | 紙袋 / 牛皮紙袋 / 手提袋', nameEn: 'Kraft Paper Bags | Paper Bags & Kraft Bags', nameJa: 'クラフト紙袋 | 紙袋 / クラフト紙袋 / ハンドル', title_zh: '牛皮紙袋印刷訂製 100個起印 免費刀模 FSC認證 | 智印雲 ZprintPro',
+    description: '牛皮紙袋印刷訂製，100個起印，HK$1.8起/個。FSC環保認證紙材，多尺寸多規格，免費刀模設計，支援燙金UV局部。即日交貨，全港送貨，零售餐飲活動品牌推廣。', descriptionEn: 'Eco-friendly kraft paper, natural and rustic, loved by consumers. Perfect for clothing stores, gift shops, coffee shops., ISO 9001:2015 certified quality management system. Eco-friendly kraft · 100 MOQ · Twisted/ribbon handle options · Free shipping over $99 USA. Perfect for retail, bakery, fashion brands.', descriptionJa: '環境に優しいクラフト紙、質朴で自然、消費者に人気。衣料品店、ギフトショップ、コーヒーショップに最適。。エコクラフト紙・100枚から・紐/リボン手提げ選択可・全国送料込み。小売・ベーカリー・アパレルブランドに最適。', description_zh: '環保牛皮紙材質，質樸自然，深受消費者喜愛。適合服裝店、禮品店、咖啡店。多種尺寸可選，可定製Logo印刷。',
+    longDescription: `<h3>材質與紙張對比</h3>
+<p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
+<table>
+  <thead><tr><th>紙材</th><th>特性</th><th>適用場景</th></tr></thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>牛皮紙</td><td>未漂白或半漂白，天然纖維質感，環保形象</td><td>文創市集、咖啡烘焙、有機服飾、輕食外帶</td></tr>
+    <tr class="border-b border-gray-200"><td>白卡紙</td><td>250g-300g 高白度，表面光滑，印刷效果細膩</td><td>服飾品牌、化妝品、珠寶首飾、精品店</td></tr>
+    <tr><td>環保再生紙</td><td>FSC 認證再生紙或進口天然牛皮紙，可完全降解</td><td>ESG 碳審計、社企、減塑徵費合規</td></tr>
+  </tbody>
+</table>
+
+<h3>工藝選擇</h3>
+<p>可選 4 種印刷與後加工藝組合，根據品牌定位與使用場景搭配：</p>
+<table>
+  <thead><tr><th>工藝</th><th>效果說明</th></tr></thead>
+  <tbody>
+    <tr class="border-b border-gray-200"><td>棉繩手挽</td><td>堅固耐用，承重 8-12 公斤，質感高檔</td></tr>
+    <tr class="border-b border-gray-200"><td>扁紙手挽</td><td>經濟實惠，適合輕量商品</td></tr>
+    <tr class="border-b border-gray-200"><td>緞帶手挽</td><td>絲帶手挽，高級禮品袋首選</td></tr>
+    <tr><td>PP 繩 / 尼龍繩</td><td>可加 Logo 印刷，耐用度極高</td></tr>
+  </tbody>
+</table>
+
+<h3>印刷工藝說明</h3>
+<ul>
+  <li>底部加固與側邊折位可提升承重與提拿舒適度</li>
+  <li>印刷可採單色簡約或四色滿版，亦可加燙金 Logo 提升禮品感</li>
+  <li>依袋型預留糊位與出血，建議在報價時確認克重（常見 120–300g）</li>
+</ul>
+
+<h3>已服務的本地客戶</h3>
+<p>智印雲已為 31 間香港零售品牌印製活動禮品袋。100 個起印，48 小時快遞，深圳自設廠房直送，紙材通過 FSC 認證。</p>
+
+<h3>可選加值服務</h3>
+<p>可加燙金、UV 局部、壓凹、絲帶手挽、底部加固等多種工藝組合。免費打樣。</p>
+
+<p><em>智印雲 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>
+<h3>常見問題 (FAQ)</h3>
+<details class="my-2"><summary><strong>智印雲 ZprintPro 的最低起印量是多少？</strong></summary><p>智印雲支援小批量印刷，貼紙 50 張起、名片/信封 100 張起、禮品包裝盒 100 個起。所有訂單均享 30 秒 AI 智能報價，無需註冊即可獲取即時價格。</p></details>
+<details class="my-2"><summary><strong>印刷交貨期需要多久？特急最快幾耐？</strong></summary><p>標準訂單 3-5 個工作天完成。智印雲深圳自設廠房出貨最快 24 小時，特急印刷最快當日完工。日本客戶 DHL 國際速遞 2-4 個工作天到貨。批量大宗訂單可享優先排程。</p></details>
+<details class="my-2"><summary><strong>智印雲支援哪些材質和工藝？</strong></summary><p>材質涵蓋銅版紙、啞粉紙、棉質紙、牛皮紙、PET、PVC 等。工藝包括四色柯式印刷、燙金、燙銀、局部 UV、壓凹、壓紋、圓角模切、騎馬釘、無線膠裝、PUR 裝等多種選擇，免費樣品對比。</p></details>
+<details class="my-2"><summary><strong>香港本地配送怎麼安排？免運費嗎？</strong></summary><p>智印雲（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房直送。國際訂單透過 DHL Express / FedEx 全球 2-4 天配送，日本客戶 2-4 個工作天到貨。</p></details>
+<details class="my-2"><summary><strong>印刷品質有問題怎麼辦？</strong></summary><p>智印雲提供 100% 滿意保證——色彩不符免費重印，品質問題全額退款。所有訂單均經 FSC 認證紙材、ISO 12647 色彩管理、海德堡印刷機把關。提供免費 AI 預檢與打樣確認。</p></details>
+`,
+    longDescriptionEn: `<h3>Kraft Paper Bags for Global Brands</h3>
+<p>ZprintPro kraft paper bags combine eco-friendly materials with retail-ready durability. Choose from 120-300g natural brown or white kraft with cotton or paper rope handle

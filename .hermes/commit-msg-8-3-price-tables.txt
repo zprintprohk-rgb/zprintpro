@@ -1,0 +1,20 @@
+feat(price-tables): K3 8/3 拍板 §11 5 类目 × 3 locale = 15 骨架 (1 push §0.1 例外)
+
+- 5 类目 (§11 主营, 避开 §11 business-cards 禁区):
+  - stickers / flyers / packaging / paper-bags / labels
+  - 现有 price-tables/ 17 文件不动 (迁移策略 8/12 复盘拍板)
+- 3 locale (§13.10 NAP 脱钩, currency 跟 locale):
+  - zh-hk: HKD (繁體, 香港场景)
+  - en: USD (全球通用)
+  - ja: JPY (日本市场)
+- schema: { category, size: "default", currency, label, name, description, tiers: [] }
+- 8/4-8/6 填数据 (每个表 5-20 行 tier 阶梯) - 攒批 1 push
+- §0.1 第 4 例外 (K3 主动拍板, 不等 8/3 21:00 攒批)
+- §13.16.1 zh-hk 100% 繁体 0 简体字残留 验证通过
+- UTF-8 无 BOM 验证通过
+- K3 8/3 凌晨 01:23 拍板: 立即执行 push 部署 (跟 7/31 路线图 8/3 21:00 启动价格表骨架一致, 但提前到 01:30 push)
+
+[verify 期望]
+- 3 locale 5 类目 = 15 URL head 200
+- body 命中: 類目 + currency + tiers[]
+- 1 push 后 8/3 verify 30/30 URL PASS 闭环

@@ -1,0 +1,6 @@
+﻿✓ a4-flyers: stripped 3-suffix combo from description_zh
+  ✓ a4-flyers.description: added 7-word
+  ✓ a4-flyers.descriptionEn: added 7-word
+  ✓ a4-flyers.descriptionJa: added 7-word
+
+Saved. Total file size: 1237072 chars

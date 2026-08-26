@@ -1,0 +1,32 @@
+=== about/page.tsx L128-145 (after fix) ===
+L128:     testimonialSubtitle: 'Real customer feedback (MOCK placeholder — replace with real client logos/quotes after K3 captures)',
+L129: 
+L130:     testimonials: [
+L131:       { company: 'MOCK - HK Restaurant Chain', industry: 'F&B', quote: 'Flyer quality exceeded expectations. 3000 pieces for just HK\\$ 1,200, thick paper, vivid colors, customer photo-tagging rate up 40%.' },
+L132:       { company: 'MOCK - US DTC Beauty Brand', industry: 'DTC Beauty', quote: 'Custom packaging from design to delivery in 12 days, FedEx to US warehouse, 5000 units at HK\\$ 8 each, transparent logistics tracking.' },
+L133:       { company: 'MOCK - Japan Event Agency', industry: 'Events', quote: 'Calendar printing MOQ 1000 at HK\\$ 4 each, 30% cheaper than e-print, delivered before October peak season.' }
+L134:     ],
+L135: 
+L136:     imageSlotFactory: 'Factory floor / equipment panorama (K3 replace after photo capture)',
+L137: 
+L138:     imageSlotTeam: 'Team real work scenes (K3 replace after photo capture)',
+L139:   },
+L140: 
+L141:   ja: {
+L142:     metaTitle: 'ZprintProについて | 香港プロ印刷サービス | 15年の実績',
+L143:     metaDesc: '智印雲 ZprintProは香港で15年以上の歴史を持ち、高品質な印刷サービスを提供しています。ISO 9001認証、FSC認証、1000社以上のお客様にサービスを提供。',
+L144:     h1: 'ZprintProについて',
+L145:     subtitle: '香港で15年以上、高品質印刷に専念',
+
+=== products.ts L3378-3385 (after fix) ===
+L3378:     category: 'stickers',
+L3379:     category_slug: 'stickers',
+L3380:     name: '燙金貼紙 | 防水貼紙 / 異形貼紙', nameEn: 'Foil Stickers | Waterproof & Die-Cut Stickers', nameJa: '箔押しステッカー | 防水ステッカー / ダイカット', title_zh: '燙金貼紙',
+L3381:     description: '燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮品包裝、VIP標識。 适配行业: 美妝護膚、食品酒類、零售精品、品牌活動、禮品包裝、VIP標識、跨境電商. **適配行業**: 餐飲外賣/美妝護膚/茶飲食品/寵物食品/母嬰/服裝/禮品包裝.', descriptionEn: 'Foil stamping gives stickers premium quality feel. Perfect for luxury product labels, gift packaging, VIP badges. Gold/silver foil · 50 MOQ · Free design proof · Fast 4-day turnaround. Perfect for beauty brands, wedding favors, premium packaging. **Best for**: beauty & skincare / food & beverage / tea brands / pet food / baby & maternity / apparel / gift packaging.', descriptionJa: '箔押し加工でステッカーに高級感。ラグジュアリー商品ラベル、ギフトパッケージ、VIPバッジに最適。ゴールド/シルバーホイル・50枚から・無料デザイン確認・4日仕上げ。 beauty & skincare / food & beverage / tea brands / pet food / baby & maternity / apparel / gift packaging.', description_zh: '燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮品包裝、VIP標識。 适配行业: 美妝護膚、食品酒類、零售精品、品牌活動、禮品包裝、VIP標識、跨境電商. **適配行業**: 餐飲外賣/美妝護膚/茶飲食品/寵物食品/母嬰/服裝/禮品包裝.',
+L3382:     longDescription: `<h3>材質與紙張對比</h3>
+L3383: <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
+L3384: <table>
+L3385:   <thead><tr><th>紙材</th><th>特性</th><th>適用場景</th></tr></thead>
+
+page.tsx: size=29036 BOM=False
+products.ts: size=1693124 BOM=False

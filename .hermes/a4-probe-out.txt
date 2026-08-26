@@ -1,0 +1,8 @@
+﻿Has zh 7-word: True
+Has en 7-word: True
+Has ja 7-word: True
+Found descriptionEn via regex: tail 50: ...リング、小売・ブティック、越境EC、美容・スキンケア、教育・研修、婚礼・冠婚葬祭、ブランドイベント。
+
+--- Look for descriptionEn: ---
+  Between quotes (first 100): Standard A4 size, most common flyer format. 157g glossy paper, 4-color printing, vibrant colors., IS
+  Between quotes (last 100):  ty management system 适配行业: Food delivery, Real estate, Retail, Education, Events, Beauty, Community.

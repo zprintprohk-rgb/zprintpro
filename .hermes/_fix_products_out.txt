@@ -1,0 +1,4 @@
+Remaining 'pricing: {' : 0 (should be 0)
+Remaining 'industries: [' : 0 (should be 0)
+Updated F:\zprintpro-nextjs\src\data\products.ts
+Old size: 1616536, New size: 1609584

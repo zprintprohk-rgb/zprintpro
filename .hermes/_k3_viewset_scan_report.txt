@@ -1,0 +1,84 @@
+================================================================================
+72 SKU �ļ�����ͼ��������ɨ�豨��
+================================================================================
+
+�� SKU �ļ���: 65
+��ͼƬ�ļ�: 258
+�ܴ�С: 27.5 MB
+
+--- ��Ŀ¼ (0 �ļ�) ---
+  PKG-008
+
+--- ��ͼ����ȫ (< 4 �ļ�) ---
+  PK-002: 2 �ļ�, ��ͼ ['detail', 'box-open']
+    - zprintpro-packaging-cosmetic-boxes-en-box-open.webp (105 KB, box-open)
+    - zprintpro-packaging-cosmetic-boxes-en-detail.webp (113 KB, detail)
+  PK-003: 2 �ļ�, ��ͼ ['detail', 'box-open']
+    - zprintpro-packaging-food-boxes-en-box-open.webp (107 KB, box-open)
+    - zprintpro-packaging-food-boxes-en-detail.webp (116 KB, detail)
+  PK-004: 2 �ļ�, ��ͼ ['detail', 'box-open']
+    - zprintpro-packaging-mailer-boxes-en-box-open.webp (108 KB, box-open)
+    - zprintpro-packaging-mailer-boxes-en-detail.webp (116 KB, detail)
+  PK-005: 2 �ļ�, ��ͼ ['detail', 'box-open']
+    - zprintpro-packaging-folding-boxes-en-box-open.webp (99 KB, box-open)
+    - zprintpro-packaging-folding-boxes-en-detail.webp (114 KB, detail)
+  PK-006: 2 �ļ�, ��ͼ ['detail', 'box-open']
+    - zprintpro-packaging-rigid-boxes-en-box-open.webp (103 KB, box-open)
+    - zprintpro-packaging-rigid-boxes-en-detail.webp (126 KB, detail)
+  PKG-007: 2 �ļ�, ��ͼ ['detail', 'box-open']
+    - zprintpro-packaging-magnetic-closure-gift-box-en-box-open.webp (119 KB, box-open)
+    - zprintpro-packaging-magnetic-closure-gift-box-en-detail.webp (119 KB, detail)
+
+--- ��ͼ < 3 �� SKU (��ͼ�������Բ���) ---
+  PK-002: 2 ��ͼ (['detail', 'box-open'])
+  PK-003: 2 ��ͼ (['detail', 'box-open'])
+  PK-004: 2 ��ͼ (['detail', 'box-open'])
+  PK-005: 2 ��ͼ (['detail', 'box-open'])
+  PK-006: 2 ��ͼ (['detail', 'box-open'])
+  PKG-007: 2 ��ͼ (['detail', 'box-open'])
+
+--- �ļ��� 120KB �Ž� ---
+  EV-002/zprintpro-envelopes-colored-envelopes-en-detail.webp: 121 KB
+  EV-004/zprintpro-envelopes-pearl-envelopes-en-detail.webp: 150 KB
+  FL-001/zprintpro-flyers-a4-flyers-en-multi-angle.webp: 171 KB
+  FL-001/zprintpro-flyers-a4-flyers-en-variety.webp: 140 KB
+  FL-002/zprintpro-flyers-a5-flyers-en-multi-angle.webp: 145 KB
+  FL-003/zprintpro-flyers-double-sided-flyers-en-variety.webp: 163 KB
+  FL-004/zprintpro-flyers-folded-leaflets-en-detail.webp: 131 KB
+  FL-004/zprintpro-flyers-folded-leaflets-en-multi-angle.webp: 150 KB
+  FL-007/zprintpro-flyers-eco-flyers-en-variety.webp: 130 KB
+  MN-003/zprintpro-menus-hardcover-menus-en-detail.webp: 133 KB
+  PB-001/zprintpro-paper-bags-kraft-paper-bags-en-detail.webp: 135 KB
+  PB-005/zprintpro-paper-bags-handle-bags-en-detail.webp: 215 KB
+  PK-006/zprintpro-packaging-rigid-boxes-en-detail.webp: 126 KB
+
+--- ���ƴ�ͼ / ����Ʒ�� ---
+  �� (filename ��δ���� HARVEST LABELS ��δ֪Ʒ��)
+
+--- PKG-007 ���� ---
+  zprintpro-packaging-magnetic-closure-gift-box-en-box-open.webp (119 KB, box-open)
+  zprintpro-packaging-magnetic-closure-gift-box-en-detail.webp (119 KB, detail)
+
+================================================================================
+Summary: P0 ��ͼ����:
+  - PK-002~006 (5 SKU �� 2 �ļ�): ���˹����
+  - PKG-007 (2 �ļ�, K3 ����: ������С�HARVEST LABELS ��ֽ)
+  - PKG-008 (0 �ļ�): ��
+
+�Ž��� 120KB:
+  EV-002/zprintpro-envelopes-colored-envelopes-en-detail.webp: 121 KB
+  EV-004/zprintpro-envelopes-pearl-envelopes-en-detail.webp: 150 KB
+  FL-001/zprintpro-flyers-a4-flyers-en-multi-angle.webp: 171 KB
+  FL-001/zprintpro-flyers-a4-flyers-en-variety.webp: 140 KB
+  FL-002/zprintpro-flyers-a5-flyers-en-multi-angle.webp: 145 KB
+  FL-003/zprintpro-flyers-double-sided-flyers-en-variety.webp: 163 KB
+  FL-004/zprintpro-flyers-folded-leaflets-en-detail.webp: 131 KB
+  FL-004/zprintpro-flyers-folded-leaflets-en-multi-angle.webp: 150 KB
+  FL-007/zprintpro-flyers-eco-flyers-en-variety.webp: 130 KB
+  MN-003/zprintpro-menus-hardcover-menus-en-detail.webp: 133 KB
+  PB-001/zprintpro-paper-bags-kraft-paper-bags-en-detail.webp: 135 KB
+  PB-005/zprintpro-paper-bags-handle-bags-en-detail.webp: 215 KB
+  PK-006/zprintpro-packaging-rigid-boxes-en-detail.webp: 126 KB
+
+��ͼ����ȫ: 6 �� SKU
+��Ŀ¼: 1 ��

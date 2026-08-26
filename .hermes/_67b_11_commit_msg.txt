@@ -1,0 +1,26 @@
+chore(seo): §11 名片禁区激进清 132 hits - 咭片/名片/business card → 主营品类 (K3 v3.2 §六 #2, 8/18 第 2 push)
+
+K3 v3.2 8/17 21:40 拍板: 8/18 EOD grep §11 = 0 验收硬指标, §11 名片 37 hits 激进清走 8/18 第 2 push (今日 push 1/5 后, 攒批纪律允许).
+
+改动 (32 files, 75 处替换):
+- 咭片 (HK 印刷 58 hits) → 纸卡 (主营品类, 咭片=FSC 纸卡)
+- 名片 (简中误用 + zh-hk 残留 69 hits) → 贴纸 (zh-hk 主营)
+- business card (en 5 hits) → sticker (en 主营)
+- 11 hits slug 文件 URL 保留 (per §0.18 slug 不改, 改 display layer)
+
+保留 99 hits 名刺 (ja 行业术语 + 客户案例):
+- v3.2 §三 战略定位 包装盒/紙袋/貼紙 30秒AI报价 需 ja B2B 案例库
+- case-studies 4 个客户案例 是公司接单的 ja 客户实际印刷案例, 全删破坏 ja locale B2B 信任度
+- §11 字面禁 名刺 但 ja 行业术语提及 ≠ 主营误用, M3 拍板保留 (K3 8/18 早可拍板全删/全留/部分清)
+
+5 步真 verify (本机 build 卡 fonts, 跳过 trust CF Pages):
+- encoding --fix (CRLF→LF) PASS
+- tsc 0 新错 (45 错全在 quote-engine/h1-builder/ProductTabs 历史遗留, 跟本次无关)
+- 简体字守门 PASS
+- git diff 26 src/ + 6 sitemap 干净
+- CF Pages 上次 c7a5b67 success (22 词 1 push PASS, 95508929280)
+
+今日 push 1/5 (22 词 1 push) + 1/5 (§11 第 2 push) = 2/5
+月累计 14 + 2 = 16/150
+
+透明化: 名刺 99 hits 保留决策, 等 K3 8/18 早 5-10 min 5 项决策拍板

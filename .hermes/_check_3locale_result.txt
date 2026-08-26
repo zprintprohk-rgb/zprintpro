@@ -1,0 +1,9 @@
+zh-hk: title_len=46 content_len=3248
+  title preview: 香港珠寶鐘錶品牌紙袋印刷指南 · 黑卡燙金 + 絲帶手挽定製 | 智印港 ZprintPro
+  content first 100: <p>香港尖沙咀、中環、金鐘、銅鑼灣四大珠寶鐘錶核心商圈,雲集國際頂級品牌與本地老字號。對珠寶鐘錶零售商、買手店、品牌經銷商而言,一個燙金黑卡紙袋、絲帶手挽、磁石扣硬殼袋,不只是購物包裝,更是客人離開
+en: title_len=93 content_len=5857
+  title preview: Jewellery & Watch Brand Paper Bag Printing Guide: Black Card, Foil & Satin Ribbo
+  content first 100: <p>Global luxury jewellery and watch retail — whether Mayfair in London, Place Vendôme in Paris, Gin
+ja: title_len=48 content_len=3741
+  title preview: 宝飾・腕時計ブランド紙袋印刷ガイド：ブラックカード・箔押し・サテンリボン | ZprintPro
+  content first 100: <p>東京・銀座・大阪・心斎橋・京都・福岡の主要宝飾・腕時計商圈では、国際的トップブランドから地元老舗までが集積。宝飾・腕時計小売店・バイヤー・ブランド代理店にとって、箔押しブラックカード紙袋 + サ

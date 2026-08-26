@@ -1,0 +1,720 @@
+{
+ "policy": "任何视图选图视觉评分 <9.0 时：不再自动重出，进入本队列交 K3 人工决策（决策选项：接受降级 / 指定通道重出 / PS 修补 / 换视图）",
+ "updated": "2026-08-18 04:40",
+ "items": [
+  {
+   "sku": "CL-001",
+   "view": "CALENDAR-OPEN",
+   "scores": [
+    7.2,
+    7.8,
+    3.0
+   ],
+   "rounds": 3,
+   "status": "PENDING",
+   "added": "2026-08-17 06:10",
+   "issue": "日期网格数字重复/缺失/跳位（通道能力硬上限），形态正确（线圈月历，无书式先验）",
+   "options": [
+    "豆包 Seedream 5.0 重出（需 K3 新 ARK key）",
+    "AutoGLM 增加重出预算",
+    "接受轻度抽象日期",
+    "PS 修补日期网格"
+   ]
+  },
+  {
+   "sku": "BC-002",
+   "view": "HERO",
+   "scores": [
+    8.5
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-17 06:15",
+   "issue": "美式场景/真实感达标，右下角 AI 水印 + 整体观感略平",
+   "options": [
+    "重出（预算 1 轮）",
+    "接受降级",
+    "PS 修补水印/乱码",
+    "换视图"
+   ]
+  },
+  {
+   "sku": "BC-002",
+   "view": "DETAIL",
+   "scores": [
+    7.8
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-17 06:15",
+   "issue": "顶部品牌 Logo 乱码(Gootings) + 水印",
+   "options": [
+    "重出（预算 1 轮）",
+    "接受降级",
+    "PS 修补水印/乱码",
+    "换视图"
+   ]
+  },
+  {
+   "sku": "BC-002",
+   "view": "VARIETY-C",
+   "scores": [
+    7.2
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-17 06:15",
+   "issue": "烫金质感不足(呈黑色印刷体) + 卡片内文乱码 + 水印",
+   "options": [
+    "重出（预算 1 轮）",
+    "接受降级",
+    "PS 修补水印/乱码",
+    "换视图"
+   ]
+  },
+  {
+   "sku": "BC-002",
+   "view": "MULTI-ANGLE",
+   "scores": [
+    8.4
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-17 06:15",
+   "issue": "四宫格构图达标，水印扣分",
+   "options": [
+    "重出（预算 1 轮）",
+    "接受降级",
+    "PS 修补水印/乱码",
+    "换视图"
+   ]
+  },
+  {
+   "sku": "BC-003",
+   "view": "DETAIL",
+   "scores": [
+    7.2
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-17 06:15",
+   "issue": "背景品牌 Logo + 水印",
+   "options": [
+    "重出（预算 1 轮）",
+    "接受降级",
+    "PS 修补水印/乱码",
+    "换视图"
+   ]
+  },
+  {
+   "sku": "BC-003",
+   "view": "VARIETY-C",
+   "scores": [
+    8.9
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-17 06:15",
+   "issue": "场景/质感优秀，仅水印扣 0.1",
+   "options": [
+    "重出（预算 1 轮）",
+    "接受降级",
+    "PS 修补水印/乱码",
+    "换视图"
+   ]
+  },
+  {
+   "sku": "BC-005",
+   "view": "CARD-STAND",
+   "scores": [
+    8.7
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-17 06:50",
+   "issue": "右侧两张贺卡底部 AI 变形/融化瑕疵（nowm 版仍存在）",
+   "options": [
+    "重出（预算 1 轮）",
+    "接受降级",
+    "PS 修补底部变形",
+    "换视图"
+   ]
+  },
+  {
+   "sku": "BC-006",
+   "view": "CARD-STAND",
+   "scores": [
+    7.6
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-17 07:25",
+   "issue": "产品四角为直角，不符合圆角 SKU 工艺特征（非水印问题）",
+   "options": [
+    "重出（加圆角条款）",
+    "接受",
+    "PS 修角"
+   ]
+  },
+  {
+   "sku": "BK-001",
+   "view": "HERO",
+   "scores": [
+    8.6
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-17 07:25",
+   "issue": "white block artifact bottom",
+   "options": [
+    "重出",
+    "换豆包通道（新 key）",
+    "接受降级",
+    "PS 修补"
+   ]
+  },
+  {
+   "sku": "BK-001",
+   "view": "DETAIL",
+   "scores": [
+    7.4
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-17 07:25",
+   "issue": "brand typo Pross + melt edges",
+   "options": [
+    "重出",
+    "换豆包通道（新 key）",
+    "接受降级",
+    "PS 修补"
+   ]
+  },
+  {
+   "sku": "BK-001",
+   "view": "VARIETY-C",
+   "scores": [
+    7.1
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-17 07:25",
+   "issue": "hand anomaly + floating + texture",
+   "options": [
+    "重出",
+    "换豆包通道（新 key）",
+    "接受降级",
+    "PS 修补"
+   ]
+  },
+  {
+   "sku": "BK-001",
+   "view": "MULTI-ANGLE",
+   "scores": [
+    8.4
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-17 07:25",
+   "issue": "FRONT VIEW text overlay + wavy edge",
+   "options": [
+    "重出",
+    "换豆包通道（新 key）",
+    "接受降级",
+    "PS 修补"
+   ]
+  },
+  {
+   "sku": "BK-001",
+   "view": "SPREAD",
+   "scores": [
+    7.1
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-17 07:25",
+   "issue": "mosaic blur + truncated text QUILLHC",
+   "options": [
+    "重出",
+    "换豆包通道（新 key）",
+    "接受降级",
+    "PS 修补"
+   ]
+  },
+  {
+   "sku": "BK-002",
+   "view": "HERO",
+   "scores": [
+    5.2
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-17 07:35",
+   "issue": "hardcover form, not saddle-stitch booklet",
+   "options": [
+    "重出（加装订形态条款）",
+    "换豆包通道",
+    "接受降级",
+    "PS 修补"
+   ]
+  },
+  {
+   "sku": "BK-002",
+   "view": "DETAIL",
+   "scores": [
+    6.1
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-17 07:35",
+   "issue": "twisted wire, not saddle stitch",
+   "options": [
+    "重出（加装订形态条款）",
+    "换豆包通道",
+    "接受降级",
+    "PS 修补"
+   ]
+  },
+  {
+   "sku": "BK-002",
+   "view": "VARIETY-C",
+   "scores": [
+    5.6
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-17 07:35",
+   "issue": "inner text gibberish",
+   "options": [
+    "重出（加装订形态条款）",
+    "换豆包通道",
+    "接受降级",
+    "PS 修补"
+   ]
+  },
+  {
+   "sku": "BK-002",
+   "view": "MULTI-ANGLE",
+   "scores": [
+    6.0
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-17 07:35",
+   "issue": "coil binding not saddle stitch",
+   "options": [
+    "重出（加装订形态条款）",
+    "换豆包通道",
+    "接受降级",
+    "PS 修补"
+   ]
+  },
+  {
+   "sku": "BK-002",
+   "view": "SPREAD",
+   "scores": [
+    2.5
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-17 07:35",
+   "issue": "mass gibberish + iron ring binding",
+   "options": [
+    "重出（加装订形态条款）",
+    "换豆包通道",
+    "接受降级",
+    "PS 修补"
+   ]
+  },
+  {
+   "sku": "BK-003",
+   "view": "VARIETY-C",
+   "scores": [
+    5.5
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-17 07:35",
+   "issue": "severe gibberish + spine mirror error",
+   "options": [
+    "重出（加装订形态条款）",
+    "换豆包通道",
+    "接受降级",
+    "PS 修补"
+   ]
+  },
+  {
+   "sku": "BK-003",
+   "view": "MULTI-ANGLE",
+   "scores": [
+    8.3
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-17 07:35",
+   "issue": "spine text garbled",
+   "options": [
+    "重出（加装订形态条款）",
+    "换豆包通道",
+    "接受降级",
+    "PS 修补"
+   ]
+  },
+  {
+   "sku": "BK-003",
+   "view": "SPREAD",
+   "scores": [
+    4.0
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-17 07:35",
+   "issue": "severe inner text gibberish",
+   "options": [
+    "重出（加装订形态条款）",
+    "换豆包通道",
+    "接受降级",
+    "PS 修补"
+   ]
+  },
+  {
+   "sku": "BK-004",
+   "view": "HERO",
+   "scores": [
+    8.5
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-17 07:45",
+   "issue": "封面副标题乱码 Commonorative Vlure",
+   "options": [
+    "重出（加封面文字条款）",
+    "换豆包通道",
+    "接受降级",
+    "PS 修补"
+   ]
+  },
+  {
+   "sku": "BK-004",
+   "view": "VARIETY-C",
+   "scores": [
+    8.2
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-17 07:45",
+   "issue": "封面人物照面部 AI 伪影（眼神/手指异常）",
+   "options": [
+    "重出（加封面文字条款）",
+    "换豆包通道",
+    "接受降级",
+    "PS 修补"
+   ]
+  },
+  {
+   "sku": "BK-005",
+   "view": "VARIETY-C",
+   "scores": [
+    8.7
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-18 03:10",
+   "issue": "右上角 TRAINING 模糊字样 + 产品上 Quillhouse Press 品牌名干扰",
+   "options": [
+    "重出（加去文字条款）",
+    "换豆包通道",
+    "接受降级"
+   ]
+  },
+  {
+   "sku": "CL-004",
+   "view": "HERO",
+   "scores": [
+    4.5
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-18 04:20",
+   "issue": "日期数字严重乱码",
+   "options": [
+    "重出（加日期清晰条款）",
+    "换豆包通道",
+    "接受降级",
+    "PS 修补"
+   ]
+  },
+  {
+   "sku": "CL-004",
+   "view": "DETAIL",
+   "scores": [
+    4.0
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-18 04:20",
+   "issue": "日期数字重复跳跃",
+   "options": [
+    "重出（加日期清晰条款）",
+    "换豆包通道",
+    "接受降级",
+    "PS 修补"
+   ]
+  },
+  {
+   "sku": "CL-004",
+   "view": "VARIETY-C",
+   "scores": [
+    4.2
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-18 04:20",
+   "issue": "全子图日期乱码",
+   "options": [
+    "重出（加日期清晰条款）",
+    "换豆包通道",
+    "接受降级",
+    "PS 修补"
+   ]
+  },
+  {
+   "sku": "CL-004",
+   "view": "MULTI-ANGLE",
+   "scores": [
+    8.0
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-18 04:20",
+   "issue": "WED 显示 VEE 乱码+错位",
+   "options": [
+    "重出（加日期清晰条款）",
+    "换豆包通道",
+    "接受降级",
+    "PS 修补"
+   ]
+  },
+  {
+   "sku": "CL-005",
+   "view": "HERO",
+   "scores": [
+    6.2
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-18 04:20",
+   "issue": "日期区域严重乱码",
+   "options": [
+    "重出（加日期清晰条款）",
+    "换豆包通道",
+    "接受降级",
+    "PS 修补"
+   ]
+  },
+  {
+   "sku": "CL-005",
+   "view": "VARIETY-C",
+   "scores": [
+    7.6
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-18 04:20",
+   "issue": "日期模糊乱码+品牌水印",
+   "options": [
+    "重出（加日期清晰条款）",
+    "换豆包通道",
+    "接受降级",
+    "PS 修补"
+   ]
+  },
+  {
+   "sku": "CL-005",
+   "view": "MULTI-ANGLE",
+   "scores": [
+    8.1
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-18 04:20",
+   "issue": "日期模糊+品牌水印",
+   "options": [
+    "重出（加日期清晰条款）",
+    "换豆包通道",
+    "接受降级",
+    "PS 修补"
+   ]
+  },
+  {
+   "sku": "CL-006",
+   "view": "HERO",
+   "scores": [
+    3.5
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-18 04:25",
+   "issue": "日期数字乱码",
+   "options": [
+    "重出（加对应条款）",
+    "换豆包通道",
+    "接受降级",
+    "PS 修补"
+   ]
+  },
+  {
+   "sku": "CL-006",
+   "view": "DETAIL",
+   "scores": [
+    2.8
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-18 04:25",
+   "issue": "星期/日期全乱码",
+   "options": [
+    "重出（加对应条款）",
+    "换豆包通道",
+    "接受降级",
+    "PS 修补"
+   ]
+  },
+  {
+   "sku": "CL-006",
+   "view": "VARIETY-C",
+   "scores": [
+    3.0
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-18 04:25",
+   "issue": "四角度日期全乱码",
+   "options": [
+    "重出（加对应条款）",
+    "换豆包通道",
+    "接受降级",
+    "PS 修补"
+   ]
+  },
+  {
+   "sku": "CL-006",
+   "view": "MULTI-ANGLE",
+   "scores": [
+    2.0
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-18 04:25",
+   "issue": "严重日期乱码",
+   "options": [
+    "重出（加对应条款）",
+    "换豆包通道",
+    "接受降级",
+    "PS 修补"
+   ]
+  },
+  {
+   "sku": "DJ-001",
+   "view": "DETAIL",
+   "scores": [
+    8.4
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-18 04:25",
+   "issue": "Sakura Studio 品牌 Logo 覆盖",
+   "options": [
+    "重出（加对应条款）",
+    "换豆包通道",
+    "接受降级",
+    "PS 修补"
+   ]
+  },
+  {
+   "sku": "DJ-001",
+   "view": "MULTI-ANGLE",
+   "scores": [
+    8.5
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-18 04:25",
+   "issue": "日系二次元风格非美式生活场景+花瓣特效",
+   "options": [
+    "重出（加对应条款）",
+    "换豆包通道",
+    "接受降级",
+    "PS 修补"
+   ]
+  },
+  {
+   "sku": "DJ-002",
+   "view": "HERO",
+   "scores": [
+    8.5
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-18 04:35",
+   "issue": "背景展位横幅文字干扰+花瓣特效",
+   "options": [
+    "重出（去花瓣/美式场景条款）",
+    "换豆包通道",
+    "接受降级",
+    "PS 修补"
+   ]
+  },
+  {
+   "sku": "DJ-002",
+   "view": "MULTI-ANGLE",
+   "scores": [
+    7.2
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-18 04:35",
+   "issue": "AI 合成伪影+日式二次元桌搭非美式生活场景",
+   "options": [
+    "重出（去花瓣/美式场景条款）",
+    "换豆包通道",
+    "接受降级",
+    "PS 修补"
+   ]
+  },
+  {
+   "sku": "DJ-004",
+   "view": "MULTI-ANGLE",
+   "scores": [
+    7.8
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-18 04:40",
+   "issue": "日式漫展摊位非美式生活场景",
+   "options": [
+    "重出（美式场景+去拼写条款）",
+    "换豆包通道",
+    "接受降级",
+    "PS 修补"
+   ]
+  },
+  {
+   "sku": "DJ-004",
+   "view": "SPREAD",
+   "scores": [
+    7.2
+   ],
+   "rounds": 1,
+   "status": "PENDING",
+   "added": "2026-08-18 04:40",
+   "issue": "内页文字拼写错误（blassoms/Warking/parcin）",
+   "options": [
+    "重出（美式场景+去拼写条款）",
+    "换豆包通道",
+    "接受降级",
+    "PS 修补"
+   ]
+  }
+ ]
+}

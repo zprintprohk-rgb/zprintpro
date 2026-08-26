@@ -1,0 +1,25 @@
+﻿articleSlugs has same-day-flyers: True
+articleSlugs has calendar-printing-guide: True
+blog-posts.ts has 'lpSameDayFlyersHK': True
+blog-posts.ts has 'lpCalendarPrinting': True
+
+[zh-hk] same-day-flyers: True, calendar: True
+  same-day title: 即日宣傳單張印刷指南 · 香港餐廳開業 / 活動速遞方案 | 智印港 ZprintPro
+  same-day content len: 4869
+  calendar title: 月曆印刷指南 2027：掛牆年曆 / 桌曆尺寸・紙材・交期全攻略 | 智印港 ZprintPro
+  calendar content len: 2282
+  calendar has h2: False, h3: True, table: False, cta: False, callout: False
+
+[en] same-day-flyers: True, calendar: True
+  same-day title: Same-Day Flyer Printing Guide · 4-6hr Rush Turnaround for US
+  same-day content len: 7378
+  calendar title: 2027 Calendar Printing Guide: Wall & Desk Calendar Sizes, Pa
+  calendar content len: 4014
+  calendar has h2: False, h3: True, table: False, cta: False, callout: False
+
+[ja] same-day-flyers: True, calendar: True
+  same-day title: 即日チラシ印刷ガイド · 4-6時間特急納品 日本の中小企業向け | ZprintPro
+  same-day content len: 4778
+  calendar title: 2027年カレンダー印刷ガイド：壁掛け・卓上サイズ・用紙・納期完全解説 | ZprintPro
+  calendar content len: 2281
+  calendar has h2: False, h3: True, table: False, cta: False, callout: False

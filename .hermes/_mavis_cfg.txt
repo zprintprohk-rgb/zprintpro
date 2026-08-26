@@ -1,0 +1,3 @@
+﻿C:\\Users\\Administrator\\.mavis True
+C:\\Users\\Administrator\\.mavis\\config.yaml True
+C:\\Users\\Administrator\\.mavis\\daemon.json False

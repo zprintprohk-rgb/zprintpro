@@ -1,0 +1,14 @@
+﻿sitemap.xml: 555 URLs
+sitemap-zh-hk.xml: 185 URLs
+sitemap-en.xml: 185 URLs
+sitemap-ja.xml: 185 URLs
+sitemap-index.xml: 4 sitemaps
+
+--- Summary ---
+Categories: 14, Products: 85, Blog: 69
+Static: 17, Locales: 3, Total: 555
+  zh-hk: 185 URLs
+  en: 185 URLs
+  ja: 185 URLs
+IndexNow pings sent for 3 locales
+sitemap-image.xml: 250 product URLs (84 unique products)

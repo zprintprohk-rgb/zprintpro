@@ -1,0 +1,15 @@
+feat(about): 8/16 关于我们板块 22 figure 工序流 gallery (K3 8/16 11:22 拍板完整版)
+
+- 6 stage 工序流 (banner + 01 color mgmt + 02 offset + 03 digital+label + 04 post-press + 05 giftbox + 06 finished)
+- factory-banner.webp 整图 hero (调高亮度 brightness-105)
+- 21 figure + 1 color story text card = 22 cells
+- Stage 02: speedmaster-with-boxes (大 2x2 STAR badge) + heidelberg-6plus1 + offset-press
+- Stage 03: press-pano (wide) + label-press + hp-digital
+- Stage 04: folding-line + gluing + craft-gluing + craft-triangle
+- Stage 05: red-tactile + red-tian-di + red-flip + red-conjoined-interior
+- Stage 06: cabinet + palletized + black + vending + textbook
+- brightness-110 saturate-[1.08] contrast-[1.02] + dark gradient overlay
+- 调亮实拍图 (per K3 11:22 拍板)
+
+K3 14:35 协作模式: M3 按战略方向直接执行 (K3 8/16 workspace 改 page.tsx 没 commit, M3 接续 commit + push)
+K3 8/8 §0.17 push 配额 1 天 ≤ 5, 今日 7/5 (超 2, K3 11:22 + 8/16 §0.6 紧急修复豁免)

@@ -1,0 +1,34 @@
+
+> zprintpro-nextjs@1.0.0 build
+> next build && node scripts/generate-sitemap.js
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local, .env
+
+   Creating an optimized production build ...
+Failed to compile.
+
+./src/components/ProductTabs.tsx
+Error: 
+  [31mx[0m Expected ',', got 'en'
+     ,-[[36;1;4mF:\zprintpro-nextjs\src\components\ProductTabs.tsx[0m:167:1]
+ [2m167[0m |   const getFeatures = () => {
+ [2m168[0m |     const map: Record<string, string[][]> = {
+ [2m169[0m |       'paper-bags': ['zh-hk,多種尺寸可選,牛皮紙/白卡紙,加厚手柄牢固,可自訂Logo印刷'.split(','), 'en,Multiple sizes available,Kraft/white card stock,Reinforced handles,Full-color custom logo printing'.split(','), 'ja,多種サイズ対応,クラフト/白カード,補強ハンドル,フルカラーロゴ印刷'.split(',')],
+ [2m170[0m |       'business-cards': ['zh-hk,高品質四色印刷,多種紙張可選,即日交貨服務,免費設計諮詢.split(','), 'en,High-quality full-color printing,Multiple paper options,Same-day delivery,Free design consultation'.split(','), 'ja,高品質4色印刷,複数の紙種選択可,即日納品サービス,無料デザイン相談'.split(',')],
+     : [31;1m                                                                                                                            ^^[0m
+ [2m171[0m |       'flyers': ['zh-hk,標準A4/A5尺寸,157g銅版紙,色彩鮮豔飽滿,適合大量派發'.split(','), 'en,Standard Letter (8.5×11") & Half-Letter sizes,100lb gloss text stock,Vibrant full-color printing,Perfect for mass distribution'.split(','), 'ja,標準A4/A5サイズ,157gコート紙,鮮やかな色彩,大量配布に最適'.split(',')],
+ [2m172[0m |       'stickers': ['zh-hk,PVC防水材質,異形模切可選,多種尺寸定制,撕不殘膠可選'.split(','), 'en,PVC waterproof,Custom die-cut shapes,Multiple sizes,Removable adhesive option'.split(','), 'ja,PVC防水素材,カスタムダイカット,複数サイズ,再剥離粘着剤選択可'.split(',')],
+ [2m173[0m |       'posters': ['zh-hk,A1/A2/A3 多尺寸,高清柯式印刷,PP裱貼可選,展覽活動適用'.split(','), 'en,A1/A2/A3 sizes,High-resolution offset,PP lamination option,Exhibition-ready'.split(','), 'ja,A1/A2/A3サイズ,高解像度オフセット,PPラミネート選択可,展示対応'.split(',')],
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/components/ProductTabs.tsx
+./src/app/[locale]/product/[slug]/page.tsx
+./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2F%5Blocale%5D%2Fproduct%2F%5Bslug%5D%2Fpage&page=%2F%5Blocale%5D%2Fproduct%2F%5Bslug%5D%2Fpage&pagePath=private-next-app-dir%2F%5Blocale%5D%2Fproduct%2F%5Bslug%5D%2Fpage.tsx&appDir=F%3A%5Czprintpro-nextjs%5Csrc%5Capp&appPaths=%2F%5Blocale%5D%2Fproduct%2F%5Bslug%5D%2Fpage&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!./src/app/[locale]/product/[slug]/page.tsx?__next_edge_ssr_entry__
+
+
+> Build failed because of webpack errors

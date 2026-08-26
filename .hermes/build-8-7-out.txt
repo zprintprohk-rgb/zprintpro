@@ -1,0 +1,94 @@
+﻿node.exe : npm notice run zprintpro-nextjs@1.0.0 build
+所在位置 C:\Users\Administrator\AppData\Local\hermes\node\npm.ps1:16 字符: 5
++     & "$basedir/node$exe"  "$basedir/node_modules/npm/bin/npm-cli.js" ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (npm notice run ...tjs@1.0.0 build:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+npm notice run next build && node scripts/generate-sitemap.js
+  ▲ Next.js 14.2.35
+  - Environments: .env.local, .env
+
+   Creating an optimized production build ...
+Failed to compile.
+
+./src/data/products.ts
+Error: 
+  [31mx[0m Expected ',', got 'for'
+     ,-[[36;1;4mF:\zprintpro-nextjs\src\data\products.ts[0m:108:1]
+ [2m108[0m |     category: 'greeting-cards',
+ [2m109[0m |     category_slug: 'greeting-cards',
+ [2m110[0m |     name: '高級賀卡', nameEn: 'Premium Greeting Cards', nameJa: '年賀状印刷 | プレミアムグリーティングカード', title_zh: '高級賀卡',
+ [2m111[0m |     description: '300g 高級銅版紙賀卡,四色印刷精美,可選啞膠/光膠/燙金/UV 局部光油。聖誕卡、新年卡、婚禮感謝卡、節日禮品卡首選,免費打樣,DHL 全球 2-4 天配送。 **適配
+行業**: 婚慶/聖誕節/新年/節日禮品/品牌活動/酒店迎賓/企業定制.', descriptionEn: '300g premium greeting cards with 4-color printing. Optional matt
+e/gloss lamination, foil stamping, spot UV. Perfect for Christmas cards, New Year cards, wedding thank-you cards, holid
+ay gift cards. Free sample, DHL Express 2-4 day global delivery from Asia factory. **Best for**: weddings / Christmas /
+ New Year / holiday gifts / brand events / hotel welcome / corporate customization.' **Best for**: Food & Beverage, Ret
+ail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.', descriptionJa: '30
+0g 高級グリーティングカード、4色印刷精美。マット/グロスラミネーション、ホットスタンプ、スポットUV選択可。クリスマスカード、新年カード、ウェディングサンキュー、ハロウィンカードに最適。無料サンプル、DHL Express 国際 2-
+4 日納品対応。 **適合業種**: 婚礼 / クリスマス / 新年 / 节日ギフト / ブランドイベント / ホテル歓迎 / 企業カスタム.' **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研
+修、婚礼・冠婚葬祭、ブランドイベント。', description_zh: '300g 高級銅版紙賀卡,四色印刷精美,可選啞膠/光膠/燙金/UV 局部光油。聖誕卡、新年卡、婚禮感謝卡、節日禮品卡首選,免費打樣,DHL 全球 2-4 天配送
+。 **適配行業**: 婚慶/聖誕節/新年/節日禮品/品牌活動/酒店迎賓/企業定制.',
+     : [31;1m                                                                                                         
+                                                                                                                       
+                                                                                                                       
+                                                                                                                       
+                                                                                                                       
+                                                                                                                       
+                     ^^^[0m
+ [2m112[0m |     longDescription: `<h3>材質與紙張對比</h3>
+ [2m113[0m | <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
+ [2m114[0m | <table>
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/data/products.ts
+./src/app/[locale]/not-found.tsx
+
+./src/data/products.ts
+Error: 
+  [31mx[0m Expected ',', got 'for'
+     ,-[[36;1;4mF:\zprintpro-nextjs\src\data\products.ts[0m:108:1]
+ [2m108[0m |     category: 'greeting-cards',
+ [2m109[0m |     category_slug: 'greeting-cards',
+ [2m110[0m |     name: '高級賀卡', nameEn: 'Premium Greeting Cards', nameJa: '年賀状印刷 | プレミアムグリーティングカード', title_zh: '高級賀卡',
+ [2m111[0m |     description: '300g 高級銅版紙賀卡,四色印刷精美,可選啞膠/光膠/燙金/UV 局部光油。聖誕卡、新年卡、婚禮感謝卡、節日禮品卡首選,免費打樣,DHL 全球 2-4 天配送。 **適配
+行業**: 婚慶/聖誕節/新年/節日禮品/品牌活動/酒店迎賓/企業定制.', descriptionEn: '300g premium greeting cards with 4-color printing. Optional matt
+e/gloss lamination, foil stamping, spot UV. Perfect for Christmas cards, New Year cards, wedding thank-you cards, holid
+ay gift cards. Free sample, DHL Express 2-4 day global delivery from Asia factory. **Best for**: weddings / Christmas /
+ New Year / holiday gifts / brand events / hotel welcome / corporate customization.' **Best for**: Food & Beverage, Ret
+ail, Cross-border E-commerce, Beauty & Skincare, Education & Training, Wedding, Brand Activations.', descriptionJa: '30
+0g 高級グリーティングカード、4色印刷精美。マット/グロスラミネーション、ホットスタンプ、スポットUV選択可。クリスマスカード、新年カード、ウェディングサンキュー、ハロウィンカードに最適。無料サンプル、DHL Express 国際 2-
+4 日納品対応。 **適合業種**: 婚礼 / クリスマス / 新年 / 节日ギフト / ブランドイベント / ホテル歓迎 / 企業カスタム.' **適用業界**：飲食・ケータリング、小売・ブティック、越境EC、美容・スキンケア、教育・研
+修、婚礼・冠婚葬祭、ブランドイベント。', description_zh: '300g 高級銅版紙賀卡,四色印刷精美,可選啞膠/光膠/燙金/UV 局部光油。聖誕卡、新年卡、婚禮感謝卡、節日禮品卡首選,免費打樣,DHL 全球 2-4 天配送
+。 **適配行業**: 婚慶/聖誕節/新年/節日禮品/品牌活動/酒店迎賓/企業定制.',
+     : [31;1m                                                                                                         
+                                                                                                                       
+                                                                                                                       
+                                                                                                                       
+                                                                                                                       
+                                                                                                                       
+                     ^^^[0m
+ [2m112[0m |     longDescription: `<h3>材質與紙張對比</h3>
+ [2m113[0m | <p>本類產品常用 3 種紙材，分別適用不同預算與使用場景：</p>
+ [2m114[0m | <table>
+     `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./src/data/products.ts
+./src/lib/products.ts
+./src/app/[locale]/category/[slug]/page.tsx
+./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2F%5Blocale%5D%2Fcategory%2F%5Bslug%5D%2Fpag
+e&page=%2F%5Blocale%5D%2Fcategory%2F%5Bslug%5D%2Fpage&pagePath=private-next-app-dir%2F%5Blocale%5D%2Fcategory%2F%5Bslug
+%5D%2Fpage.tsx&appDir=F%3A%5Czprintpro-nextjs%5Csrc%5Capp&appPaths=%2F%5Blocale%5D%2Fcategory%2F%5Bslug%5D%2Fpage&pageE
+xtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&basePath=&assetPrefix=&nextConfigOutput=&preferred
+Region=&middlewareConfig=e30%3D!./src/app/[locale]/category/[slug]/page.tsx?__next_edge_ssr_entry__
+
+
+> Build failed because of webpack errors

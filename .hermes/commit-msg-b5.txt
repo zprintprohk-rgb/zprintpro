@@ -1,0 +1,43 @@
+feat(cron): T39 IndexNow 自动化 (B5 拍板 C 排期 17:30-18:15) - 脚本化生成 sitemap 扫 + diff + 批量提交 + 4 cron 集成
+
+B5 T39 IndexNow 自动化 (K3 v3.17 战略 8/24 11:37 B5 工具层殿后, K3 14:25 拍板 C 排期 17:30-18:15 45min):
+- 新建 IndexNow 自动化脚本 (scripts/indexnow-auto-submit.py, 6.2KB):
+  - 每日扫 sitemap.xml 解析全部 URL (B5 后 660 URLs)
+  - diff .hermes/secrets/indexnow-history.json 找新 URL
+  - POST IndexNow API 批量提交 (Bing + Yandex + Seznam + Naver, 最多 10000 URL/次)
+  - log 落盘 .hermes/logs/indexnow-YYYY-MM-DD.json (含 timestamp + URL counts + result)
+  - history 累加保存 (SOP-5 派生数据禁手搓, 脚本化生成)
+  - 业务 0 改动: 工具层 scripts/ + .hermes/secrets/ + .hermes/logs/ 增量, 不动 src/
+
+- 新建 README 文档 (scripts/README-indexnow.md, 3.6KB):
+  - 脚本使用说明 (手动跑 + cron 自动跑)
+  - K3 key 注入位置 (.hermes/secrets/indexnow-key.json)
+  - 监控 (log + history 文件)
+  - 退路 (手动 curl IndexNow API)
+
+- 新建 K3 IndexNow key 文件 (.hermes/secrets/indexnow-key.json, 197B):
+  - key: zprintpro-indexnow-2026 (placeholder, K3 8/24 提前拍板)
+  - 8/25 K3 注入真实 key 后替换 (per B5 战略 §〇 第 17 行 "K3 key 必含")
+  - 首次跑 403 Forbidden expected (placeholder key 验证失败, K3 真实 key 注入后即可)
+
+- 首次跑 log 落盘 (.hermes/logs/indexnow-2026-08-24.json, 226B):
+  - timestamp: 2026-08-24T17:47:10
+  - all_urls_count: 660
+  - new_urls_count: 660 (历史 0, 全部 660 都是新)
+  - error: HTTPError 403 (K3 key 验证失败, 跟预期一致)
+  - history 未保存 (SOP-5 派生数据禁手搓, only success 时保存)
+
+- 4 cron prompt T39 段 (SSoT 模式自动生效, 不需 mavis cron update):
+  - 通过 v3 SSoT §A 17 B5 段自动集成到 zprintpro-daily-content-1x7w (每天 9:10 Asia/Shanghai)
+  - 4 cron 启动必读 SSoT 第 1 优先级
+  - daily-cron 8/25+ 启动 T39 IndexNow 自动化段
+  - 不需 mavis cron update (避免 buffer + 撞车, per B5 战略 §三 Step 1.4 第 218 行)
+
+期望 (K3 v3.17 §四):
+- B1-B4 全部新 URL (T45 envelopes + T42 7 类目 + T44 ja 5 类目 + T41 catalog PDP + books + blog 新路由 + G1 Vol.2 3 locale) 24h 索引 (vs Google 7-14 天)
+- 8/25 K3 真实 key 注入后, 首次跑提交 660 URLs 全部 200 + history 保存 660 个
+- 后续 daily cron 9:10 跑, 增量 diff (新 URL 0 个 stable 后, no_new_urls 跳过)
+
+业务 0 改动红线 (K3 8/22 17:58 F0): 不动 src/ 不删任何 SKU/文案/长文本字段, 工具层增量
+
+3 闸门: encoding 0 / tsc 54 → 54 (pre-existing 全在 quote-engine/__tests__/ 测试, 跟 IndexNow 脚本无关, B4 verify PASS run 97388542197 时同样 54, 0 production error) / diff 4 新文件 (1 脚本 + 1 README + 1 key + 1 log)

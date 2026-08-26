@@ -1,0 +1,1000 @@
+{
+  "BC-001": [
+    {
+      "key": "zprintpro-greeting-cards-premium-greeting-cards-en-detail",
+      "cand1": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand\\zprintpro-greeting-cards-premium-greeting-cards-en-detail_cand1.jpg",
+        "score": 45.6,
+        "breakdown": {
+          "aesthetic_score": 62.0,
+          "text_score": 8.3,
+          "edge_score": 100,
+          "brand_score": 25.9,
+          "sat_score": 28.3,
+          "sharpness": 3.32,
+          "warm_score": 89.8
+        }
+      },
+      "cand2": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand\\zprintpro-greeting-cards-premium-greeting-cards-en-detail_cand2.jpg",
+        "score": 39.0,
+        "breakdown": {
+          "aesthetic_score": 52.8,
+          "text_score": 6.9,
+          "edge_score": 88.8,
+          "brand_score": 22.4,
+          "sat_score": 22.0,
+          "sharpness": 2.69,
+          "warm_score": 79.9
+        }
+      },
+      "winner": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand\\zprintpro-greeting-cards-premium-greeting-cards-en-detail_cand1.jpg",
+        "idx": 1,
+        "score": 45.6
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\_auto_selected\\zprintpro-greeting-cards-premium-greeting-cards-en-detail.webp"
+    },
+    {
+      "key": "zprintpro-greeting-cards-premium-greeting-cards-en-hero",
+      "cand1": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand\\zprintpro-greeting-cards-premium-greeting-cards-en-hero_cand1.jpg",
+        "score": 35.6,
+        "breakdown": {
+          "aesthetic_score": 61.1,
+          "text_score": 4.3,
+          "edge_score": 59.5,
+          "brand_score": 12.4,
+          "sat_score": 20.0,
+          "sharpness": 1.64,
+          "warm_score": 87.4
+        }
+      },
+      "cand2": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand\\zprintpro-greeting-cards-premium-greeting-cards-en-hero_cand2.jpg",
+        "score": 30.8,
+        "breakdown": {
+          "aesthetic_score": 49.7,
+          "text_score": 4.3,
+          "edge_score": 53.7,
+          "brand_score": 11.8,
+          "sat_score": 20.4,
+          "sharpness": 1.7,
+          "warm_score": 76.6
+        }
+      },
+      "winner": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand\\zprintpro-greeting-cards-premium-greeting-cards-en-hero_cand1.jpg",
+        "idx": 1,
+        "score": 35.6
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\_auto_selected\\zprintpro-greeting-cards-premium-greeting-cards-en-hero.webp"
+    },
+    {
+      "key": "zprintpro-greeting-cards-premium-greeting-cards-en-multi-angle",
+      "cand1": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand\\zprintpro-greeting-cards-premium-greeting-cards-en-multi-angle_cand1.jpg",
+        "score": 46.2,
+        "breakdown": {
+          "aesthetic_score": 62.0,
+          "text_score": 8.6,
+          "edge_score": 100,
+          "brand_score": 13.5,
+          "sat_score": 40.0,
+          "sharpness": 3.89,
+          "warm_score": 87.7
+        }
+      },
+      "cand2": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand\\zprintpro-greeting-cards-premium-greeting-cards-en-multi-angle_cand2.jpg",
+        "score": 39.9,
+        "breakdown": {
+          "aesthetic_score": 51.2,
+          "text_score": 6.5,
+          "edge_score": 100,
+          "brand_score": 13.7,
+          "sat_score": 26.9,
+          "sharpness": 2.83,
+          "warm_score": 78.1
+        }
+      },
+      "winner": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand\\zprintpro-greeting-cards-premium-greeting-cards-en-multi-angle_cand1.jpg",
+        "idx": 1,
+        "score": 46.2
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\_auto_selected\\zprintpro-greeting-cards-premium-greeting-cards-en-multi-angle.webp"
+    },
+    {
+      "key": "zprintpro-greeting-cards-premium-greeting-cards-en-spread",
+      "cand1": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand\\zprintpro-greeting-cards-premium-greeting-cards-en-spread_cand1.jpg",
+        "score": 35.7,
+        "breakdown": {
+          "aesthetic_score": 42.2,
+          "text_score": 5.3,
+          "edge_score": 89.0,
+          "brand_score": 7.7,
+          "sat_score": 36.7,
+          "sharpness": 2.44,
+          "warm_score": 67.7
+        }
+      },
+      "cand2": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand\\zprintpro-greeting-cards-premium-greeting-cards-en-spread_cand2.jpg",
+        "score": 44.5,
+        "breakdown": {
+          "aesthetic_score": 47.6,
+          "text_score": 8.1,
+          "edge_score": 100,
+          "brand_score": 41.5,
+          "sat_score": 44.6,
+          "sharpness": 2.64,
+          "warm_score": 73.5
+        }
+      },
+      "winner": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand\\zprintpro-greeting-cards-premium-greeting-cards-en-spread_cand2.jpg",
+        "idx": 2,
+        "score": 44.5
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\_auto_selected\\zprintpro-greeting-cards-premium-greeting-cards-en-spread.webp"
+    },
+    {
+      "key": "zprintpro-greeting-cards-premium-greeting-cards-en-variety",
+      "cand1": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand\\zprintpro-greeting-cards-premium-greeting-cards-en-variety_cand1.jpg",
+        "score": 50.6,
+        "breakdown": {
+          "aesthetic_score": 68.9,
+          "text_score": 8.2,
+          "edge_score": 100,
+          "brand_score": 18.0,
+          "sat_score": 50.9,
+          "sharpness": 3.53,
+          "warm_score": 91.7
+        }
+      },
+      "cand2": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand\\zprintpro-greeting-cards-premium-greeting-cards-en-variety_cand2.jpg",
+        "score": 54.3,
+        "breakdown": {
+          "aesthetic_score": 69.4,
+          "text_score": 8.6,
+          "edge_score": 100,
+          "brand_score": 17.8,
+          "sat_score": 74.0,
+          "sharpness": 3.73,
+          "warm_score": 82.5
+        }
+      },
+      "winner": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand\\zprintpro-greeting-cards-premium-greeting-cards-en-variety_cand2.jpg",
+        "idx": 2,
+        "score": 54.3
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\_auto_selected\\zprintpro-greeting-cards-premium-greeting-cards-en-variety.webp"
+    }
+  ],
+  "BC-002": [
+    {
+      "key": "zprintpro-greeting-cards-thick-greeting-cards-400g-en-detail",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-002\\raw\\zprintpro-greeting-cards-thick-greeting-cards-400g-en-detail_raw.jpg",
+        "score": 44.9,
+        "breakdown": {
+          "aesthetic_score": 58.6,
+          "text_score": 10.0,
+          "edge_score": 100,
+          "brand_score": 27.4,
+          "sat_score": 27.7,
+          "sharpness": 4.24,
+          "warm_score": 86.4
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-002\\_auto_selected\\zprintpro-greeting-cards-thick-greeting-cards-400g-en-detail.webp"
+    },
+    {
+      "key": "zprintpro-greeting-cards-thick-greeting-cards-400g-en-hero",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-002\\raw\\zprintpro-greeting-cards-thick-greeting-cards-400g-en-hero_raw.jpg",
+        "score": 40.8,
+        "breakdown": {
+          "aesthetic_score": 64.8,
+          "text_score": 4.8,
+          "edge_score": 61.2,
+          "brand_score": 17.4,
+          "sat_score": 40.3,
+          "sharpness": 1.77,
+          "warm_score": 92.4
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-002\\_auto_selected\\zprintpro-greeting-cards-thick-greeting-cards-400g-en-hero.webp"
+    },
+    {
+      "key": "zprintpro-greeting-cards-thick-greeting-cards-400g-en-multi-angle",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-002\\raw\\zprintpro-greeting-cards-thick-greeting-cards-400g-en-multi-angle_raw.jpg",
+        "score": 43.8,
+        "breakdown": {
+          "aesthetic_score": 59.8,
+          "text_score": 7.8,
+          "edge_score": 100,
+          "brand_score": 9.2,
+          "sat_score": 33.5,
+          "sharpness": 3.65,
+          "warm_score": 84.5
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-002\\_auto_selected\\zprintpro-greeting-cards-thick-greeting-cards-400g-en-multi-angle.webp"
+    },
+    {
+      "key": "zprintpro-greeting-cards-thick-greeting-cards-400g-en-spread",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-002\\raw\\zprintpro-greeting-cards-thick-greeting-cards-400g-en-spread_raw.jpg",
+        "score": 46.6,
+        "breakdown": {
+          "aesthetic_score": 57.1,
+          "text_score": 5.5,
+          "edge_score": 100,
+          "brand_score": 6.7,
+          "sat_score": 63.9,
+          "sharpness": 2.53,
+          "warm_score": 85.3
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-002\\_auto_selected\\zprintpro-greeting-cards-thick-greeting-cards-400g-en-spread.webp"
+    },
+    {
+      "key": "zprintpro-greeting-cards-thick-greeting-cards-400g-en-variety",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-002\\raw\\zprintpro-greeting-cards-thick-greeting-cards-400g-en-variety_raw.jpg",
+        "score": 48.4,
+        "breakdown": {
+          "aesthetic_score": 63.5,
+          "text_score": 8.6,
+          "edge_score": 100,
+          "brand_score": 19.6,
+          "sat_score": 47.1,
+          "sharpness": 3.67,
+          "warm_score": 81.5
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-002\\_auto_selected\\zprintpro-greeting-cards-thick-greeting-cards-400g-en-variety.webp"
+    }
+  ],
+  "BC-003": [
+    {
+      "key": "zprintpro-greeting-cards-foil-greeting-cards-en-detail",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-003\\raw\\zprintpro-greeting-cards-foil-greeting-cards-en-detail_raw.jpg",
+        "score": 37.5,
+        "breakdown": {
+          "aesthetic_score": 60.4,
+          "text_score": 6.6,
+          "edge_score": 60.2,
+          "brand_score": 15.8,
+          "sat_score": 27.4,
+          "sharpness": 2.85,
+          "warm_score": 88.8
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-003\\_auto_selected\\zprintpro-greeting-cards-foil-greeting-cards-en-detail.webp"
+    },
+    {
+      "key": "zprintpro-greeting-cards-foil-greeting-cards-en-hero",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-003\\raw\\zprintpro-greeting-cards-foil-greeting-cards-en-hero_raw.jpg",
+        "score": 35.8,
+        "breakdown": {
+          "aesthetic_score": 55.5,
+          "text_score": 5.3,
+          "edge_score": 70.5,
+          "brand_score": 12.4,
+          "sat_score": 21.7,
+          "sharpness": 2.16,
+          "warm_score": 81.9
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-003\\_auto_selected\\zprintpro-greeting-cards-foil-greeting-cards-en-hero.webp"
+    },
+    {
+      "key": "zprintpro-greeting-cards-foil-greeting-cards-en-multi-angle",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-003\\raw\\zprintpro-greeting-cards-foil-greeting-cards-en-multi-angle_raw.jpg",
+        "score": 44.7,
+        "breakdown": {
+          "aesthetic_score": 60.1,
+          "text_score": 7.7,
+          "edge_score": 100,
+          "brand_score": 13.4,
+          "sat_score": 36.2,
+          "sharpness": 3.44,
+          "warm_score": 86.2
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-003\\_auto_selected\\zprintpro-greeting-cards-foil-greeting-cards-en-multi-angle.webp"
+    },
+    {
+      "key": "zprintpro-greeting-cards-foil-greeting-cards-en-spread",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-003\\raw\\zprintpro-greeting-cards-foil-greeting-cards-en-spread_raw.jpg",
+        "score": 42.8,
+        "breakdown": {
+          "aesthetic_score": 46.5,
+          "text_score": 8.1,
+          "edge_score": 100,
+          "brand_score": 28.3,
+          "sat_score": 44.6,
+          "sharpness": 3.26,
+          "warm_score": 73.2
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-003\\_auto_selected\\zprintpro-greeting-cards-foil-greeting-cards-en-spread.webp"
+    },
+    {
+      "key": "zprintpro-greeting-cards-foil-greeting-cards-en-variety",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-003\\raw\\zprintpro-greeting-cards-foil-greeting-cards-en-variety_raw.jpg",
+        "score": 46.5,
+        "breakdown": {
+          "aesthetic_score": 59.0,
+          "text_score": 7.7,
+          "edge_score": 100,
+          "brand_score": 20.2,
+          "sat_score": 46.1,
+          "sharpness": 3.16,
+          "warm_score": 84.0
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-003\\_auto_selected\\zprintpro-greeting-cards-foil-greeting-cards-en-variety.webp"
+    }
+  ],
+  "BC-004": [
+    {
+      "key": "zprintpro-greeting-cards-spot-uv-greeting-cards-en-detail",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-004\\raw\\zprintpro-greeting-cards-spot-uv-greeting-cards-en-detail_raw.jpg",
+        "score": 33.9,
+        "breakdown": {
+          "aesthetic_score": 54.6,
+          "text_score": 5.7,
+          "edge_score": 60.5,
+          "brand_score": 15.4,
+          "sat_score": 18.2,
+          "sharpness": 2.31,
+          "warm_score": 82.0
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-004\\_auto_selected\\zprintpro-greeting-cards-spot-uv-greeting-cards-en-detail.webp"
+    },
+    {
+      "key": "zprintpro-greeting-cards-spot-uv-greeting-cards-en-hero",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-004\\raw\\zprintpro-greeting-cards-spot-uv-greeting-cards-en-hero_raw.jpg",
+        "score": 37.7,
+        "breakdown": {
+          "aesthetic_score": 53.9,
+          "text_score": 5.8,
+          "edge_score": 81.4,
+          "brand_score": 23.0,
+          "sat_score": 19.5,
+          "sharpness": 2.04,
+          "warm_score": 79.1
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-004\\_auto_selected\\zprintpro-greeting-cards-spot-uv-greeting-cards-en-hero.webp"
+    },
+    {
+      "key": "zprintpro-greeting-cards-spot-uv-greeting-cards-en-multi-angle",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-004\\raw\\zprintpro-greeting-cards-spot-uv-greeting-cards-en-multi-angle_raw.jpg",
+        "score": 39.0,
+        "breakdown": {
+          "aesthetic_score": 60.9,
+          "text_score": 5.5,
+          "edge_score": 64.4,
+          "brand_score": 12.5,
+          "sat_score": 35.9,
+          "sharpness": 2.41,
+          "warm_score": 88.1
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-004\\_auto_selected\\zprintpro-greeting-cards-spot-uv-greeting-cards-en-multi-angle.webp"
+    },
+    {
+      "key": "zprintpro-greeting-cards-spot-uv-greeting-cards-en-spread",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-004\\raw\\zprintpro-greeting-cards-spot-uv-greeting-cards-en-spread_raw.jpg",
+        "score": 45.8,
+        "breakdown": {
+          "aesthetic_score": 56.5,
+          "text_score": 7.6,
+          "edge_score": 100,
+          "brand_score": 23.1,
+          "sat_score": 45.5,
+          "sharpness": 3.21,
+          "warm_score": 84.7
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-004\\_auto_selected\\zprintpro-greeting-cards-spot-uv-greeting-cards-en-spread.webp"
+    },
+    {
+      "key": "zprintpro-greeting-cards-spot-uv-greeting-cards-en-variety",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-004\\raw\\zprintpro-greeting-cards-spot-uv-greeting-cards-en-variety_raw.jpg",
+        "score": 48.4,
+        "breakdown": {
+          "aesthetic_score": 63.6,
+          "text_score": 7.7,
+          "edge_score": 100,
+          "brand_score": 23.5,
+          "sat_score": 45.7,
+          "sharpness": 3.09,
+          "warm_score": 87.5
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-004\\_auto_selected\\zprintpro-greeting-cards-spot-uv-greeting-cards-en-variety.webp"
+    }
+  ],
+  "BC-005": [
+    {
+      "key": "zprintpro-greeting-cards-matte-greeting-cards-en-detail",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-005\\raw\\zprintpro-greeting-cards-matte-greeting-cards-en-detail_raw.jpg",
+        "score": 45.8,
+        "breakdown": {
+          "aesthetic_score": 64.6,
+          "text_score": 7.4,
+          "edge_score": 96.0,
+          "brand_score": 21.7,
+          "sat_score": 31.8,
+          "sharpness": 3.04,
+          "warm_score": 91.4
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-005\\_auto_selected\\zprintpro-greeting-cards-matte-greeting-cards-en-detail.webp"
+    },
+    {
+      "key": "zprintpro-greeting-cards-matte-greeting-cards-en-hero",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-005\\raw\\zprintpro-greeting-cards-matte-greeting-cards-en-hero_raw.jpg",
+        "score": 34.6,
+        "breakdown": {
+          "aesthetic_score": 54.6,
+          "text_score": 5.2,
+          "edge_score": 63.2,
+          "brand_score": 15.7,
+          "sat_score": 21.0,
+          "sharpness": 2.01,
+          "warm_score": 81.2
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-005\\_auto_selected\\zprintpro-greeting-cards-matte-greeting-cards-en-hero.webp"
+    },
+    {
+      "key": "zprintpro-greeting-cards-matte-greeting-cards-en-multi-angle",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-005\\raw\\zprintpro-greeting-cards-matte-greeting-cards-en-multi-angle_raw.jpg",
+        "score": 39.3,
+        "breakdown": {
+          "aesthetic_score": 53.3,
+          "text_score": 6.1,
+          "edge_score": 97.4,
+          "brand_score": 8.3,
+          "sat_score": 24.7,
+          "sharpness": 2.79,
+          "warm_score": 78.2
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-005\\_auto_selected\\zprintpro-greeting-cards-matte-greeting-cards-en-multi-angle.webp"
+    },
+    {
+      "key": "zprintpro-greeting-cards-matte-greeting-cards-en-spread",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-005\\raw\\zprintpro-greeting-cards-matte-greeting-cards-en-spread_raw.jpg",
+        "score": 36.6,
+        "breakdown": {
+          "aesthetic_score": 39.4,
+          "text_score": 5.9,
+          "edge_score": 100,
+          "brand_score": 15.2,
+          "sat_score": 32.3,
+          "sharpness": 2.51,
+          "warm_score": 64.4
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-005\\_auto_selected\\zprintpro-greeting-cards-matte-greeting-cards-en-spread.webp"
+    },
+    {
+      "key": "zprintpro-greeting-cards-matte-greeting-cards-en-variety",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-005\\raw\\zprintpro-greeting-cards-matte-greeting-cards-en-variety_raw.jpg",
+        "score": 54.2,
+        "breakdown": {
+          "aesthetic_score": 70.9,
+          "text_score": 8.8,
+          "edge_score": 100,
+          "brand_score": 28.5,
+          "sat_score": 62.2,
+          "sharpness": 3.47,
+          "warm_score": 97.3
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-005\\_auto_selected\\zprintpro-greeting-cards-matte-greeting-cards-en-variety.webp"
+    }
+  ],
+  "BC-006": [
+    {
+      "key": "zprintpro-greeting-cards-rounded-corner-greeting-cards-en-detail",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-006\\raw\\zprintpro-greeting-cards-rounded-corner-greeting-cards-en-detail_raw.jpg",
+        "score": 24.6,
+        "breakdown": {
+          "aesthetic_score": 49.2,
+          "text_score": 4.3,
+          "edge_score": 18.5,
+          "brand_score": 11.3,
+          "sat_score": 16.3,
+          "sharpness": 1.85,
+          "warm_score": 77.0
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-006\\_auto_selected\\zprintpro-greeting-cards-rounded-corner-greeting-cards-en-detail.webp"
+    },
+    {
+      "key": "zprintpro-greeting-cards-rounded-corner-greeting-cards-en-hero",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-006\\raw\\zprintpro-greeting-cards-rounded-corner-greeting-cards-en-hero_raw.jpg",
+        "score": 44.1,
+        "breakdown": {
+          "aesthetic_score": 63.6,
+          "text_score": 5.2,
+          "edge_score": 94.9,
+          "brand_score": 15.5,
+          "sat_score": 31.8,
+          "sharpness": 1.98,
+          "warm_score": 90.5
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-006\\_auto_selected\\zprintpro-greeting-cards-rounded-corner-greeting-cards-en-hero.webp"
+    },
+    {
+      "key": "zprintpro-greeting-cards-rounded-corner-greeting-cards-en-multi-angle",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-006\\raw\\zprintpro-greeting-cards-rounded-corner-greeting-cards-en-multi-angle_raw.jpg",
+        "score": 41.1,
+        "breakdown": {
+          "aesthetic_score": 56.8,
+          "text_score": 5.9,
+          "edge_score": 87.0,
+          "brand_score": 8.4,
+          "sat_score": 38.8,
+          "sharpness": 2.67,
+          "warm_score": 82.8
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-006\\_auto_selected\\zprintpro-greeting-cards-rounded-corner-greeting-cards-en-multi-angle.webp"
+    },
+    {
+      "key": "zprintpro-greeting-cards-rounded-corner-greeting-cards-en-spread",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-006\\raw\\zprintpro-greeting-cards-rounded-corner-greeting-cards-en-spread_raw.jpg",
+        "score": 46.8,
+        "breakdown": {
+          "aesthetic_score": 53.0,
+          "text_score": 9.0,
+          "edge_score": 100,
+          "brand_score": 27.5,
+          "sat_score": 55.1,
+          "sharpness": 3.76,
+          "warm_score": 78.1
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-006\\_auto_selected\\zprintpro-greeting-cards-rounded-corner-greeting-cards-en-spread.webp"
+    },
+    {
+      "key": "zprintpro-greeting-cards-rounded-corner-greeting-cards-en-variety",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-006\\raw\\zprintpro-greeting-cards-rounded-corner-greeting-cards-en-variety_raw.jpg",
+        "score": 53.9,
+        "breakdown": {
+          "aesthetic_score": 69.1,
+          "text_score": 7.3,
+          "edge_score": 100,
+          "brand_score": 20.3,
+          "sat_score": 72.4,
+          "sharpness": 2.94,
+          "warm_score": 86.9
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-006\\_auto_selected\\zprintpro-greeting-cards-rounded-corner-greeting-cards-en-variety.webp"
+    }
+  ],
+  "FL-001": [
+    {
+      "key": "zprintpro-flyers-a4-flyers-en-detail",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\FL-001\\raw\\zprintpro-flyers-a4-flyers-en-detail_raw.jpg",
+        "score": 38.0,
+        "breakdown": {
+          "aesthetic_score": 38.8,
+          "text_score": 8.4,
+          "edge_score": 96.9,
+          "brand_score": 26.7,
+          "sat_score": 34.2,
+          "sharpness": 3.4,
+          "warm_score": 52.6
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\FL-001\\_auto_selected\\zprintpro-flyers-a4-flyers-en-detail.webp"
+    },
+    {
+      "key": "zprintpro-flyers-a4-flyers-en-hero",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\FL-001\\raw\\zprintpro-flyers-a4-flyers-en-hero_raw.jpg",
+        "score": 47.0,
+        "breakdown": {
+          "aesthetic_score": 63.8,
+          "text_score": 7.0,
+          "edge_score": 100,
+          "brand_score": 22.0,
+          "sat_score": 38.5,
+          "sharpness": 2.66,
+          "warm_score": 80.0
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\FL-001\\_auto_selected\\zprintpro-flyers-a4-flyers-en-hero.webp"
+    },
+    {
+      "key": "zprintpro-flyers-a4-flyers-en-multi-angle",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\FL-001\\raw\\zprintpro-flyers-a4-flyers-en-multi-angle_raw.jpg",
+        "score": 47.8,
+        "breakdown": {
+          "aesthetic_score": 63.1,
+          "text_score": 10.0,
+          "edge_score": 100,
+          "brand_score": 18.4,
+          "sat_score": 42.5,
+          "sharpness": 4.33,
+          "warm_score": 83.6
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\FL-001\\_auto_selected\\zprintpro-flyers-a4-flyers-en-multi-angle.webp"
+    },
+    {
+      "key": "zprintpro-flyers-a4-flyers-en-variety",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\FL-001\\raw\\zprintpro-flyers-a4-flyers-en-variety_raw.jpg",
+        "score": 55.6,
+        "breakdown": {
+          "aesthetic_score": 68.3,
+          "text_score": 10.5,
+          "edge_score": 100,
+          "brand_score": 21.6,
+          "sat_score": 79.2,
+          "sharpness": 4.43,
+          "warm_score": 73.4
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\FL-001\\_auto_selected\\zprintpro-flyers-a4-flyers-en-variety.webp"
+    }
+  ],
+  "ST-001": [
+    {
+      "key": "zprintpro-stickers-waterproof-stickers-en-detail",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-001\\raw\\zprintpro-stickers-waterproof-stickers-en-detail_raw.jpg",
+        "score": 47.9,
+        "breakdown": {
+          "aesthetic_score": 52.3,
+          "text_score": 10.0,
+          "edge_score": 100,
+          "brand_score": 36.0,
+          "sat_score": 57.1,
+          "sharpness": 3.94,
+          "warm_score": 67.4
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-001\\_auto_selected\\zprintpro-stickers-waterproof-stickers-en-detail.webp"
+    },
+    {
+      "key": "zprintpro-stickers-waterproof-stickers-en-hero",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-001\\raw\\zprintpro-stickers-waterproof-stickers-en-hero_raw.jpg",
+        "score": 43.5,
+        "breakdown": {
+          "aesthetic_score": 52.2,
+          "text_score": 7.4,
+          "edge_score": 100,
+          "brand_score": 24.1,
+          "sat_score": 39.6,
+          "sharpness": 2.8,
+          "warm_score": 75.1
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-001\\_auto_selected\\zprintpro-stickers-waterproof-stickers-en-hero.webp"
+    },
+    {
+      "key": "zprintpro-stickers-waterproof-stickers-en-multi-angle",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-001\\raw\\zprintpro-stickers-waterproof-stickers-en-multi-angle_raw.jpg",
+        "score": 44.9,
+        "breakdown": {
+          "aesthetic_score": 61.0,
+          "text_score": 7.8,
+          "edge_score": 100,
+          "brand_score": 10.6,
+          "sat_score": 37.3,
+          "sharpness": 3.53,
+          "warm_score": 88.4
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-001\\_auto_selected\\zprintpro-stickers-waterproof-stickers-en-multi-angle.webp"
+    },
+    {
+      "key": "zprintpro-stickers-waterproof-stickers-en-variety",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-001\\raw\\zprintpro-stickers-waterproof-stickers-en-variety_raw.jpg",
+        "score": 42.2,
+        "breakdown": {
+          "aesthetic_score": 43.8,
+          "text_score": 7.2,
+          "edge_score": 100,
+          "brand_score": 21.9,
+          "sat_score": 52.1,
+          "sharpness": 2.78,
+          "warm_score": 59.8
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-001\\_auto_selected\\zprintpro-stickers-waterproof-stickers-en-variety.webp"
+    }
+  ],
+  "ST-002": [
+    {
+      "key": "zprintpro-stickers-transparent-stickers-en-detail",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-002\\raw\\zprintpro-stickers-transparent-stickers-en-detail_raw.jpg",
+        "score": 37.4,
+        "breakdown": {
+          "aesthetic_score": 34.6,
+          "text_score": 6.6,
+          "edge_score": 100,
+          "brand_score": 30.9,
+          "sat_score": 37.0,
+          "sharpness": 2.37,
+          "warm_score": 52.3
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-002\\_auto_selected\\zprintpro-stickers-transparent-stickers-en-detail.webp"
+    },
+    {
+      "key": "zprintpro-stickers-transparent-stickers-en-hero",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-002\\raw\\zprintpro-stickers-transparent-stickers-en-hero_raw.jpg",
+        "score": 42.0,
+        "breakdown": {
+          "aesthetic_score": 54.5,
+          "text_score": 6.3,
+          "edge_score": 88.2,
+          "brand_score": 27.5,
+          "sat_score": 36.0,
+          "sharpness": 2.08,
+          "warm_score": 78.5
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-002\\_auto_selected\\zprintpro-stickers-transparent-stickers-en-hero.webp"
+    },
+    {
+      "key": "zprintpro-stickers-transparent-stickers-en-multi-angle",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-002\\raw\\zprintpro-stickers-transparent-stickers-en-multi-angle_raw.jpg",
+        "score": 42.8,
+        "breakdown": {
+          "aesthetic_score": 53.3,
+          "text_score": 8.8,
+          "edge_score": 100,
+          "brand_score": 18.0,
+          "sat_score": 34.0,
+          "sharpness": 3.75,
+          "warm_score": 79.1
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-002\\_auto_selected\\zprintpro-stickers-transparent-stickers-en-multi-angle.webp"
+    },
+    {
+      "key": "zprintpro-stickers-transparent-stickers-en-variety",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-002\\raw\\zprintpro-stickers-transparent-stickers-en-variety_raw.jpg",
+        "score": 48.2,
+        "breakdown": {
+          "aesthetic_score": 65.0,
+          "text_score": 5.6,
+          "edge_score": 100,
+          "brand_score": 13.7,
+          "sat_score": 51.4,
+          "sharpness": 2.3,
+          "warm_score": 86.9
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-002\\_auto_selected\\zprintpro-stickers-transparent-stickers-en-variety.webp"
+    }
+  ],
+  "ST-003": [
+    {
+      "key": "zprintpro-stickers-removable-stickers-en-detail",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-003\\raw\\zprintpro-stickers-removable-stickers-en-detail_raw.jpg",
+        "score": 37.0,
+        "breakdown": {
+          "aesthetic_score": 49.3,
+          "text_score": 6.9,
+          "edge_score": 72.7,
+          "brand_score": 18.7,
+          "sat_score": 35.0,
+          "sharpness": 2.95,
+          "warm_score": 75.2
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-003\\_auto_selected\\zprintpro-stickers-removable-stickers-en-detail.webp"
+    },
+    {
+      "key": "zprintpro-stickers-removable-stickers-en-hero",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-003\\raw\\zprintpro-stickers-removable-stickers-en-hero_raw.jpg",
+        "score": 43.0,
+        "breakdown": {
+          "aesthetic_score": 53.8,
+          "text_score": 7.0,
+          "edge_score": 100,
+          "brand_score": 26.6,
+          "sat_score": 31.8,
+          "sharpness": 2.47,
+          "warm_score": 79.8
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-003\\_auto_selected\\zprintpro-stickers-removable-stickers-en-hero.webp"
+    },
+    {
+      "key": "zprintpro-stickers-removable-stickers-en-multi-angle",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-003\\raw\\zprintpro-stickers-removable-stickers-en-multi-angle_raw.jpg",
+        "score": 35.9,
+        "breakdown": {
+          "aesthetic_score": 42.6,
+          "text_score": 7.6,
+          "edge_score": 100,
+          "brand_score": 13.9,
+          "sat_score": 17.8,
+          "sharpness": 3.28,
+          "warm_score": 65.3
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-003\\_auto_selected\\zprintpro-stickers-removable-stickers-en-multi-angle.webp"
+    },
+    {
+      "key": "zprintpro-stickers-removable-stickers-en-variety",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-003\\raw\\zprintpro-stickers-removable-stickers-en-variety_raw.jpg",
+        "score": 34.6,
+        "breakdown": {
+          "aesthetic_score": 34.9,
+          "text_score": 6.3,
+          "edge_score": 100,
+          "brand_score": 25.5,
+          "sat_score": 21.5,
+          "sharpness": 2.22,
+          "warm_score": 57.0
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-003\\_auto_selected\\zprintpro-stickers-removable-stickers-en-variety.webp"
+    }
+  ],
+  "ST-004": [
+    {
+      "key": "zprintpro-stickers-small-batch-stickers-en-detail",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-004\\raw\\zprintpro-stickers-small-batch-stickers-en-detail_raw.jpg",
+        "score": 30.1,
+        "breakdown": {
+          "aesthetic_score": 33.5,
+          "text_score": 5.5,
+          "edge_score": 68.0,
+          "brand_score": 12.4,
+          "sat_score": 37.0,
+          "sharpness": 2.36,
+          "warm_score": 43.2
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-004\\_auto_selected\\zprintpro-stickers-small-batch-stickers-en-detail.webp"
+    },
+    {
+      "key": "zprintpro-stickers-small-batch-stickers-en-hero",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-004\\raw\\zprintpro-stickers-small-batch-stickers-en-hero_raw.jpg",
+        "score": 42.0,
+        "breakdown": {
+          "aesthetic_score": 59.7,
+          "text_score": 5.3,
+          "edge_score": 68.0,
+          "brand_score": 19.4,
+          "sat_score": 51.2,
+          "sharpness": 2.03,
+          "warm_score": 83.9
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-004\\_auto_selected\\zprintpro-stickers-small-batch-stickers-en-hero.webp"
+    },
+    {
+      "key": "zprintpro-stickers-small-batch-stickers-en-multi-angle",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-004\\raw\\zprintpro-stickers-small-batch-stickers-en-multi-angle_raw.jpg",
+        "score": 36.5,
+        "breakdown": {
+          "aesthetic_score": 41.6,
+          "text_score": 5.7,
+          "edge_score": 100,
+          "brand_score": 12.6,
+          "sat_score": 28.1,
+          "sharpness": 2.41,
+          "warm_score": 64.2
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-004\\_auto_selected\\zprintpro-stickers-small-batch-stickers-en-multi-angle.webp"
+    },
+    {
+      "key": "zprintpro-stickers-small-batch-stickers-en-variety",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-004\\raw\\zprintpro-stickers-small-batch-stickers-en-variety_raw.jpg",
+        "score": 50.3,
+        "breakdown": {
+          "aesthetic_score": 63.0,
+          "text_score": 5.7,
+          "edge_score": 100,
+          "brand_score": 12.5,
+          "sat_score": 70.3,
+          "sharpness": 2.36,
+          "warm_score": 75.0
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-004\\_auto_selected\\zprintpro-stickers-small-batch-stickers-en-variety.webp"
+    }
+  ],
+  "ST-005": [
+    {
+      "key": "zprintpro-stickers-die-cut-stickers-en-detail",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-005\\raw\\zprintpro-stickers-die-cut-stickers-en-detail_raw.jpg",
+        "score": 40.8,
+        "breakdown": {
+          "aesthetic_score": 42.2,
+          "text_score": 8.7,
+          "edge_score": 100,
+          "brand_score": 28.1,
+          "sat_score": 40.7,
+          "sharpness": 3.43,
+          "warm_score": 59.2
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-005\\_auto_selected\\zprintpro-stickers-die-cut-stickers-en-detail.webp"
+    },
+    {
+      "key": "zprintpro-stickers-die-cut-stickers-en-hero",
+      "single": {
+        "path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-005\\raw\\zprintpro-stickers-die-cut-stickers-en-hero_raw.jpg",
+        "score": 45.3,
+        "breakdown": {
+          "aesthetic_score": 57.1,
+          "text_score": 6.7,
+          "edge_score": 100,
+          "brand_score": 20.1,
+          "sat_score": 43.9,
+          "sharpness": 2.67,
+          "warm_score": 77.6
+        }
+      },
+      "auto_selected": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-005\\_auto_selected\\zprintpro-stickers-die-cut-stickers-en-hero.webp"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+ "BC-001": {
+  "HERO": {
+   "source": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand\\zprintpro-greeting-cards-premium-greeting-cards-en-hero_cand4.jpg",
+   "output": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\final_webp\\HERO.webp",
+   "quality": 90,
+   "bytes": 122492,
+   "size_kb": 119.6,
+   "pass": true
+  },
+  "DETAIL": {
+   "source": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand\\zprintpro-greeting-cards-premium-greeting-cards-en-detail_cand5.jpg",
+   "output": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\final_webp\\DETAIL.webp",
+   "quality": 78,
+   "bytes": 122696,
+   "size_kb": 119.8,
+   "pass": true
+  },
+  "VARIETY-C": {
+   "source": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand\\zprintpro-greeting-cards-premium-greeting-cards-en-variety_cand4.jpg",
+   "output": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\final_webp\\VARIETY-C.webp",
+   "quality": 82,
+   "bytes": 119764,
+   "size_kb": 117.0,
+   "pass": true
+  },
+  "MULTI-ANGLE": {
+   "source": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand\\zprintpro-greeting-cards-premium-greeting-cards-en-multi-angle_cand3.jpg",
+   "output": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\final_webp\\MULTI-ANGLE.webp",
+   "quality": 80,
+   "bytes": 116392,
+   "size_kb": 113.7,
+   "pass": true
+  },
+  "SPREAD": {
+   "source": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand\\zprintpro-greeting-cards-premium-greeting-cards-en-spread_cand6.jpg",
+   "output": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\final_webp\\SPREAD.webp",
+   "quality": 88,
+   "bytes": 116772,
+   "size_kb": 114.0,
+   "pass": true
+  }
+ },
+ "ST-001": {
+  "HERO": {
+   "source": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-001\\raw\\_cand\\zprintpro-stickers-waterproof-stickers-en-hero_cand2.jpg",
+   "output": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-001\\final_webp\\HERO.webp",
+   "quality": 90,
+   "bytes": 114684,
+   "size_kb": 112.0,
+   "pass": true
+  },
+  "DETAIL": {
+   "source": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-001\\raw\\_cand\\zprintpro-stickers-waterproof-stickers-en-detail_cand5.jpg",
+   "output": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-001\\final_webp\\DETAIL.webp",
+   "quality": 81,
+   "bytes": 119020,
+   "size_kb": 116.2,
+   "pass": true
+  },
+  "VARIETY-A": {
+   "source": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-001\\raw\\_cand\\zprintpro-stickers-waterproof-stickers-en-variety_cand5.jpg",
+   "output": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-001\\final_webp\\VARIETY-A.webp",
+   "quality": 91,
+   "bytes": 121308,
+   "size_kb": 118.5,
+   "pass": true
+  },
+  "MULTI-ANGLE": {
+   "source": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-001\\raw\\_cand\\zprintpro-stickers-waterproof-stickers-en-multi-angle_cand2.jpg",
+   "output": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-001\\final_webp\\MULTI-ANGLE.webp",
+   "quality": 86,
+   "bytes": 121528,
+   "size_kb": 118.7,
+   "pass": true
+  }
+ }
+}

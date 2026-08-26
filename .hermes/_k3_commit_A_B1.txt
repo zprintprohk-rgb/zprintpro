@@ -1,0 +1,34 @@
+docs(AGENTS) + feat(components): 8/16 23:11 K3 拍板固化 (Push 3 A + Push 4 B-1)
+
+Push 3 A - AGENTS.md 5 sections add (200 insertions, 0 deletions, 5 sections):
+
+- §0.16 SEO/GEO 拍板固化 3 阶段 (8/5/13/15 K3 拍板, Batch 1 longDescription /
+  Batch 2 description+faq / Batch 3 schema, 8/18 grep = 0 验收)
+- §0.17 push 台账一口径 (8/8 15:35 K3 拍板, 1 天 ≤ 5 push / 月 ≤ 150 / amend ≤ 2/月 /
+  报告必含数字 / 8/16 16:51 重要内容豁免 / push 前必跑 npm run build)
+- §0.18.1 重定向上线 SOP (8/8 15:35 K3 拍板, 4 步: curl 200 + 禁覆盖多 locale +
+  禁自指向 + m3u8 用 410)
+- §0.20.8 工厂图 K3 拍板 SOP (8/16 08:53 K3 拍板, 5 步: 命名规则 / 命名分类 /
+  红变黑温和白平衡修法 / alt 3 locale / 5 步真验证)
+- §0.20.9 22 figure 工序流 SOP (8/16 11:22 K3 拍板, 6 stage: Banner / 色彩管理 /
+  柯式 / 數碼+標籤 / 後道+半成品 / 節慶禮盒 / 成品出貨, 22 figure 总数对得上)
+
+Push 4 B-1 - ProductLongDescription 共享 component 创建 (skill 抽离准备):
+
+- src/components/ProductLongDescription.tsx 新建 (2775 bytes)
+- ProductLongDescriptionProps interface (html / locale / slug / sections)
+- PRODUCT_LONG_DESCRIPTION_TEMPLATES 3 locale × 5 段结构
+  (intro / industry / material / design / faq)
+- 0 风险: 未动 85 SKU 调用, 8/17 K3 单独拍板 B-2 接口改造
+  (Product interface longDescription?: string → longDescriptionTemplate? +
+   86 SKU × 3 locale = 258 处改写)
+
+Push 配额:
+- 今日: 7/5 (重要内容豁免, K3 8/16 16:51 拍板, AGENTS.md 5 sections 属于固化类)
+- 月累计: 13/150 (CF 账户 500 build/月, 3 项目共享)
+
+pre-commit 验证:
+- encoding check ✅ (UTF-8 LF, 0 CRLF, 0 BOM)
+- 简体字 check ✅ (AGENTS.md 5 sections 全部繁体, 与 zh-hk locale 一致)
+- tsc: pre-existing 错误 in books.pricing.test.ts (538310d 历史), 跟本 commit 无关
+- npm run build ✅ (Compiled successfully, 5/5 static pages)

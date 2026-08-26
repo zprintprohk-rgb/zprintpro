@@ -1,0 +1,22 @@
+docs(cron): v3 SSoT 增量 + gsc_data.csv 8/24 累计 - B1-B5+G2 8/24 EOD 7 任务今日全清 8/28 中检准备
+
+v3 SSoT 增量 (K3 v3.17 战略 8/24 11:37 B1-B5+G2 7 任务全部上线, 增量 v3 SSoT 文档):
+- §A 17 v3.17 战略同步 (B2 14:00-15:00 / B3 15:00-16:30 / B4 16:30-17:30 / B5 17:30-18:15 / G2 12:00-18:15)
+- §A 18 SOP-10 沉淀 (K3 12:04 拍板 E + M3 误诊推翻 + 架构差异≠阻塞, 30 秒 git show 前序任务)
+- 4 cron 启动必读 SSoT 第 1 优先级 (daily 8/25+ 自动跑 T39 IndexNow 段)
+
+gsc_data.csv 8/24 累计:
+- B1 T45+T42 src/ 改动后 GSC 数据快照 (含 8/21-8/23 7d window, 月曆 21.1 / 大信封 pos 2.0 0 click)
+- B2 T44 ja 5 词 src/ 改动后 GSC 数据快照 (教科書 / ステッカー / 特急 / 教材 / can badge)
+- B3 T41 EN catalog 4 词 src/ 改动后 GSC 数据快照 (catalog book + china catalog + catalog printing china + bulk catalog)
+- B4 G1 Vol.2 schema 增量后 GSC 数据快照 (sameAs + knowsAbout)
+- 8/24 daily 报告 §2.2 实测缺失项修复 (Organization sameAs/knowsAbout)
+
+业务 0 改动红线 (K3 8/22 17:58 F0): docs-only, 不碰 src/
+
+期望 (K3 v3.17 §一 EOD):
+- 8/24 EOD 7 任务今日全清 = v3.16 九任务 9/9 DONE
+- 8/28 中检 K3 拍板 7 项 actionable (per §A 14): T41/T42/T44/T45/G2/T39/G1 Vol.2 启动/延期/砍范围
+- 8/28 中检角色转变: 拍板启动 → 纯验收对账 (GSC 8/21-8/27 数据 + 008 询盘基线首报), K3 当天 15-30 min
+
+3 闸门: encoding 0 / tsc N/A (docs-only) / build N/A (docs-only) / diff 2 文件

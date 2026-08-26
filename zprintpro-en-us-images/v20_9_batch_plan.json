@@ -1,0 +1,170 @@
+{
+ "version": "V20.9",
+ "generated_at": "2026-08-16 05:40",
+ "total_skus": 84,
+ "total_views": 380,
+ "already_done": [
+  "BC-001",
+  "FL-001",
+  "ST-001"
+ ],
+ "pipeline": "生成 2 候选 -> 批量视觉选优 -> 定稿 WebP(1200x1200,<=120KB,SEO文件名,alt) -> 画廊交付确认",
+ "batches": [
+  {
+   "batch": 1,
+   "skus": [
+    "BC-002",
+    "BC-003",
+    "BC-004",
+    "BC-005",
+    "BC-006",
+    "BK-001",
+    "BK-002",
+    "BK-003",
+    "BK-004",
+    "BK-005"
+   ],
+   "sku_count": 10,
+   "view_count": 50,
+   "est_minutes": 120
+  },
+  {
+   "batch": 2,
+   "skus": [
+    "BN-001",
+    "BN-002",
+    "BN-003",
+    "BN-004",
+    "BN-005",
+    "CL-001",
+    "CL-002",
+    "CL-003",
+    "CL-004",
+    "CL-005"
+   ],
+   "sku_count": 10,
+   "view_count": 45,
+   "est_minutes": 108
+  },
+  {
+   "batch": 3,
+   "skus": [
+    "CL-006",
+    "DJ-001",
+    "DJ-002",
+    "DJ-003",
+    "DJ-004",
+    "DJ-005",
+    "ED-001",
+    "ED-002",
+    "ED-003",
+    "ED-004"
+   ],
+   "sku_count": 10,
+   "view_count": 50,
+   "est_minutes": 120
+  },
+  {
+   "batch": 4,
+   "skus": [
+    "ED-005",
+    "EV-001",
+    "EV-002",
+    "EV-003",
+    "EV-004",
+    "FL-002",
+    "FL-003",
+    "FL-004",
+    "FL-005",
+    "FL-007"
+   ],
+   "sku_count": 10,
+   "view_count": 41,
+   "est_minutes": 98
+  },
+  {
+   "batch": 5,
+   "skus": [
+    "FL-008",
+    "MN-001",
+    "MN-002",
+    "MN-003",
+    "MN-004",
+    "MN-005",
+    "PB-001",
+    "PB-002",
+    "PB-003",
+    "PB-004"
+   ],
+   "sku_count": 10,
+   "view_count": 40,
+   "est_minutes": 96
+  },
+  {
+   "batch": 6,
+   "skus": [
+    "PB-005",
+    "PB-007",
+    "PK-002",
+    "PK-003",
+    "PK-004",
+    "PK-005",
+    "PK-006",
+    "PKG-007",
+    "PKG-008",
+    "PKG-009"
+   ],
+   "sku_count": 10,
+   "view_count": 48,
+   "est_minutes": 115
+  },
+  {
+   "batch": 7,
+   "skus": [
+    "PKG-013",
+    "PKG-014",
+    "PKG-015",
+    "PKG-016",
+    "PO-001",
+    "PO-002",
+    "PO-003",
+    "PO-004",
+    "PO-005",
+    "PO-006"
+   ],
+   "sku_count": 10,
+   "view_count": 44,
+   "est_minutes": 106
+  },
+  {
+   "batch": 8,
+   "skus": [
+    "RP-001",
+    "RP-002",
+    "RP-003",
+    "RP-004",
+    "RP-005",
+    "RP-006",
+    "ST-002",
+    "ST-003",
+    "ST-004",
+    "ST-005"
+   ],
+   "sku_count": 10,
+   "view_count": 46,
+   "est_minutes": 110
+  },
+  {
+   "batch": 9,
+   "skus": [
+    "ST-006",
+    "ST-007",
+    "ST-008",
+    "ST-009"
+   ],
+   "sku_count": 4,
+   "view_count": 16,
+   "est_minutes": 38
+  }
+ ]
+}

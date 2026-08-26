@@ -1,0 +1,35 @@
+﻿[
+    {
+        "locale":  "zh-hk",
+        "url":  "https://zprintpro.com/zh-hk/blog/cross-border-ecommerce-shipping-box-guide/",
+        "cta_quote":  3,
+        "sku_mailer":  1,
+        "sku_folding":  1,
+        "sku_kraft":  2,
+        "wa_me":  5,
+        "form_quote_present":  true,
+        "conversion_status":  "verified"
+    },
+    {
+        "locale":  "en",
+        "url":  "https://zprintpro.com/en/blog/cross-border-ecommerce-shipping-box-guide/",
+        "cta_quote":  3,
+        "sku_mailer":  1,
+        "sku_folding":  1,
+        "sku_kraft":  2,
+        "wa_me":  4,
+        "form_quote_present":  true,
+        "conversion_status":  "verified"
+    },
+    {
+        "locale":  "ja",
+        "url":  "https://zprintpro.com/ja/blog/cross-border-ecommerce-shipping-box-guide/",
+        "cta_quote":  3,
+        "sku_mailer":  1,
+        "sku_folding":  1,
+        "sku_kraft":  2,
+        "wa_me":  4,
+        "form_quote_present":  true,
+        "conversion_status":  "verified"
+    }
+]

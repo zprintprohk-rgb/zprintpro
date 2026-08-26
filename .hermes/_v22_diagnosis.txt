@@ -1,0 +1,169 @@
+# V22 提示词问题诊断 + 新版标准化提示词模板方案
+
+> 
+> 基于文档`V21→V22 生图提示词升级分析与全量 EN 交付.docx` + SKU‑01 wedding‑place‑cards 原始 V22 提示词 + 美国跨境印刷电商 zprintpro 业务目标（CTR 提升、转化、GEO/AI Overview 收录、建立海外供应商信任感）做全量复盘。
+
+## 一、现有 V22 原始提示词核心问题
+
+### 1）信息冗余，把业务元数据塞入生图 Prompt
+
+原始提示词混入大量**不属于图像生成的业务文本**：物流话术（`Free shipping over $99 + DHL 2‑4 day global`），MOQ 销售条款。
+
+- 问题：AI 会尝试把促销、物流文字渲染进图片画面，极易产生乱码、占位文字、虚假印刷文本；**物流 / MOQ 属于网页文案，不属于图片视觉内容**。
+- 根源：把`alt_en`完整大段复制进图像 prompt，ALT 是网页 HTML 属性，不是绘图指令。
+
+### 2）构图参数冲突
+
+原始写`1200x1200 square`，但 V22 文档定义标准输出是`1200×1146 BOTTOM‑STRIP`，规格前后矛盾。
+
+> 
+> `1200×1146`为美国 PDP 主图标准（底部预留网页 UI 条带，非图片内画条），生图输出尺寸应当统一遵循文档标准。
+
+### 3）构图占比不合理
+
+原始 HERO：`80‑85%产品占比`。美国电商（Etsy、Amazon、Shopify 精品独立站）经过数据验证：
+
+> 
+> 搜索网格缩略图 + 产品详情首图最优：**产品主体 60‑70%，30‑40% 干净留白**。80‑85% 占比画面过满，移动端缩略图拥挤，没有呼吸空间，降低高级感。DETAIL 特写保留 85‑95% 微距。
+
+### 4）长文本负载过高
+
+原始单条 2100‑2300 字符，大量句子重复复制到 HERO / DETAIL / VARIETY‑C / MULTI‑ANGLE。
+
+- AUDIENCE、CRAFT&TRUST 大段重复，AI 权重稀释；关键视觉指令被淹没，容易产出塑料感、过度装饰、场景杂乱。
+
+### 5）负面清单存在缺陷
+
+原有负面清单缺少：`autoClaw AI`、虚假占位印刷文字、不自然道具堆砌、过度花艺装饰；没有区分【禁止画面出现】和【网页业务信息】，把业务卖点和视觉属性混在一起。
+
+### 6）SEO/GEO 注入方式错误
+
+> 
+> ❌错误：直接把搜索关键词大段堆入画面描述；
+> ✅正确：GEO/SEO 关键词用于**文件名、HTML alt_en、图片周边网页文本**；生图 prompt 只把语义融入场景、材质描述，不要裸列一堆搜索词，会干扰图像生成。
+
+> 
+> 文档说明：“提示词内嵌真实搜索词提升 GEO 引用”，指**语义对齐**，不是把关键词列表直接粘贴进绘图指令。
+
+### 7）人群描述冗余
+
+大段 AUDIENCE 文本完整复制到每条视图 prompt；AI 不需要理解商业买家角色文本，只需要把**人群对应的审美、场景、道具、色彩**转化为视觉指令。
+
+### 8）风险点
+
+原始提示词没有显式禁止：图片内出现任何印刷占位文字 / 乱码文本。婚礼席位卡极易生成一堆无意义英文字符印在卡片表面，是当前最大坑。
+
+## 二、北极星业务目标（对齐 zprintpro）
+
+1. **点击率 CTR**：美国搜索网格缩略图识别清晰，高级、可信，区别廉价中国供应商的劣质 AI 图；
+2. **转化信任**：写实商业产品摄影，还原纸张、烫金、压纹、模切材质；消除海外印刷品质量顾虑；
+3. **GEO / AI‑Overview 增益**：图片语义和美国真实搜索意图对齐；配套正确`seo_filename` + `alt_en`（图片不负责展示文字，交给 HTML）；
+4. **风险规避**：无 AI 水印、无`autoClaw AI`，无乱码占位文字，无奢侈品牌 Logo，无版权风险；
+5. **批量生产前置校验流程**：批量生成前，固定选取 2 个 SKU，4 个视图（Hero+Detail+Variety+Multi‑Angle）先出样，人工校验通过后再跑全量 99SKU。
+
+## 三、标准化 V23 生图 Prompt 架构（改良版，替代旧 V22）
+
+> 
+> 输出规格：`1200×1146, Seedream5.0 lite Direct API, watermark off, no crop, ≤120KB WebP, 8K UHD micro‑detail`
+> 单条字符控制：**1300‑1700 字符**，剔除业务销售条款，只保留图像生成指令。
+> 分为 9 模块，区分【图像指令】和【网页元数据（不进 prompt）】
+
+表格
+
+| 模块 | 说明 | 是否进生图 Prompt |
+| --- | --- | --- |
+| ① HEAD 生产声明 + 输出规格 | 固定头部，输出尺寸、格式、质量参数 | ✅ 进 prompt |
+| ② WHERE‑USED 用途与业务目标 | 图片在网页的位置，业务目标（stop scroll，earn click /build buyer trust） | ✅ 进 prompt，精简 |
+| ③ PRODUCT VISUAL SPECS【仅视觉属性】 | **只写材质、物理形态、工艺外观；移除 MOQ、运费、物流等销售业务文本** | ✅ 进 prompt |
+| ④ SCENE + ENVIRONMENT | 美国本土化场景、道具、环境光线，匹配目标用户生活 / 商业使用环境 | ✅ 进 prompt |
+| ⑤ COLOR PALETTE | 类目适配色彩体系 | ✅ 进 prompt |
+| ⑥ COMPOSITION【视图分支】 | 分 4 套：HERO / DETAIL / VARIETY‑C / MULTI‑ANGLE，严格产品占比、景深、视角 | ✅ 进 prompt |
+| ⑦ PHOTOGRAPHY CRAFT | 摄影风格、光线、质感，建立信任感；不再重复大段买家画像，画像转化为场景 | ✅ 进 prompt |
+| ⑧ NEGATIVE PROMPT（强负面清单） | 合并所有禁止项，包含 autoClaw AI、占位乱码文字、塑料质感、悬浮物体等 | ✅ 进 prompt |
+| ⑨ META（网页元数据） | `seo_filename`，`alt_en`，GEO 搜索关键词集合；**只保存在 txt/json，不送入生图 API** | ❌ 不进 prompt |
+
+> 
+> 重要规则：
+> 
+> 
+> - MOQ、运费、DHL 物流、起订量，全部移到 META 元数据，绝不送入图像生成提示词。
+> - 禁止任何指令诱导 AI 在图片上生成促销文字、物流文案。
+> - 所有视图共用一套 HEAD、PRODUCT VISUAL SPECS、SCENE、COLOR、NEGATIVE；仅替换 COMPOSITION 视图段落。
+
+## 四、统一强负面提示词（固定复用，所有 SKU 全部继承）
+
+```
+Negative: blurry, low‑quality, watermark, text overlay, brand logo, distorted shape, ugly artifacts, malformed structure, oversaturated colors, overexposed, underexposed, bad cropping, subject cut off, object duplication, errors, JPEG artifacts, autoClaw AI, "autoClaw AI", AI generator watermark, unnatural lighting, cheap plastic texture, floating product, tacky over‑advertising aesthetic, violate physics, gibberish placeholder printed text, fake random words printed on product surfaces, celebrity faces, luxury brand logos, torn edges
+```
+
+## 五、模板实例：SKU‑01 wedding‑place‑cards（改良 V23 示例）
+
+> 
+> META 元数据（**不送入生图 API，保存在配置文件用于网页渲染**）
+
+```
+SKU‑01 | PC‑001 | wedding‑place‑cards
+seo_filename: wedding‑place‑cards‑en.webp
+ALT_en: Wedding place cards / table cards 100 sheets MOQ, 300gsm cotton / art / Conqueror paper + foil / embossing / die‑cut, folded or standing. Free shipping over $99 + DHL 2‑4 day global.
+GEO_search_keywords: place card printing, table cards, escort cards, wedding place cards, custom place cards
+Target audience profile: US engaged couples, wedding planners, fine‑dining restaurants, hotel banquet managers and corporate event hosts; age 25‑45, value premium paper texture, real‑world usage, trust overseas print vendor; deep‑research purchase mindset.
+```
+
+### [HERO 视图｜改良版 Prompt]
+
+```
+PRODUCTION‑READY FINAL IMAGE ONLY. V23 e‑commerce product photography. Output 1200x1146 (Seedream 5.0 lite Direct API, watermark off, no crop needed), <=120KB WebP, 8K UHD micro‑detail.
+WHERE USED: main HERO image on US zprintpro.com product page, primary visual for search result grids; designed to stop scroll and earn click, build trust for overseas print supplier.
+PRODUCT VISUAL SPECS: premium wedding folded tent‑style and standing place cards and table cards; physical material: 300gsm cotton paper, art paper, Conqueror paper; visible finish details: foil stamping, embossing, clean die‑cut edges.
+SCENE: realistic American wedding reception banquet setting, place cards laid across linen covered escort table and fine dining plates; subtle soft candle glow, muted florals in softly blurred background, natural soft window ambient light.
+COLOR PALETTE: ivory, blush, champagne gold, sage green, delicate foil metallic accents; neutral natural tone, no harsh high‑saturation colors.
+COMPOSITION HERO: product occupies 60‑70% frame area, generous clean negative space around subject; slight angled perspective creates depth, subject centered, instantly recognizable for mobile thumbnail preview; shallow natural depth of field, background softly blurred without clutter.
+PHOTOGRAPHY CRAFT: commercial product photorealism, sharp focus on paper surface, natural soft diffused lighting, lifelike texture of cotton paper and foil finish; honest premium studio look, warm and trustworthy, US‑style lifestyle product shot; no over‑stylized, gimmicky decorations.
+Negative: blurry, low‑quality, watermark, text overlay, brand logo, distorted shape, ugly artifacts, malformed structure, oversaturated colors, overexposed, underexposed, bad cropping, subject cut off, object duplication, errors, JPEG artifacts, autoClaw AI, "autoClaw AI", AI generator watermark, unnatural lighting, cheap plastic texture, floating product, tacky over‑advertising aesthetic, violate physics, gibberish placeholder printed text, fake random words printed on product surfaces, celebrity faces, luxury brand logos, torn edges
+```
+
+### [DETAIL 视图｜改良版 Prompt]
+
+仅替换`COMPOSITION`段落，其余 HEAD~PHOTOGRAPHY CRAFT、Negative 全部复用：
+
+```
+COMPOSITION DETAIL: macro extreme close‑up shot, product fills 85‑95% frame; sharp focus locked on paper grain, clean die‑cut edge, foil stamping and embossed surface texture; shallow depth of field, highlight craftsmanship detail for quality validation.
+```
+
+### [VARIETY‑C 视图｜改良版 Prompt]
+
+```
+COMPOSITION VARIETY‑C: 3‑4 distinct style variants of wedding place cards grouped naturally within wedding banquet scene; every card fully visible, consistent premium paper quality across all variants; tidy cohesive arrangement, avoid messy over‑crowded styling.
+```
+
+### [MULTI‑ANGLE 视图｜改良版 Prompt]
+
+```
+COMPOSITION MULTI‑ANGLE: clean single‑frame layout showing three contextual views of same place‑card product: front view, side folded profile, partial material detail shot; demonstrate real physical dimension and usability, no collage borders.
+```
+
+## 六、落地执行流程（大批量生图强制流程）
+
+1. **抽取 2 个代表 SKU 做预校验样本**
+   - 样本选择原则：1 个婚礼类目 SKU（SKU‑01 wedding‑place‑cards）+ 1 个印刷包装类 SKU（如彩盒 / 贴纸 SKU）；
+   - 每个 SKU 生成 4 个视图 HERO / DETAIL / VARIETY‑C / MULTI‑ANGLE；
+2. **样本校验清单（必须全部通过才允许批量跑 99SKU）**
+   - ✅输出尺寸严格 1200×1146，WebP 格式，无水印，无`autoClaw AI`字样；
+   - ✅产品占比符合视图规范：Hero60‑70% / Detail85‑95%；留白合理；
+   - ✅材质质感真实：纸张、烫金、压纹物理质感，没有塑料玩具质感；
+   - ✅**产品表面没有 AI 生成的乱码占位文字、虚假随机印刷文本**；
+   - ✅场景符合美国本土使用习惯，光线柔和自然，无硬闪光，无过度饱和；
+   - ✅无奢侈品牌 logo、名人、版权风险元素；
+   - ✅没有悬浮物体、违背物理的道具摆放；
+3. 预校验样本不达标：微调 PRODUCT VISUAL SPECS / SCENE / COMPOSITION 段落，重新出样；
+4. 两份 SKU 全部视图校验通过 → 再执行全量 99SKU 批量生成。
+
+## 七、模板迁移指引，把原有 99SKU 迁移 V23 模板
+
+1. 对每一个 SKU，把原始 prompt 中所有销售业务信息（MOQ、运费、DHL、起订量）剥离出来，放到 META 元数据段；
+2. 只保留**产品物理、材质、工艺外观描述**放入`PRODUCT VISUAL SPECS`；
+3. 统一输出尺寸改为文档标准`1200×1146`，废弃旧的 1200×1200；
+4. HERO 视图产品占比从`80‑85%`改为`60‑70%`；DETAIL 维持 85‑95%；
+5. 删除裸列的 SEO 关键词列表，GEO 语义靠场景 + 材质描述完成，关键词写入 META；
+6. 全部 SKU 统一使用新版完整 Negative 负面清单；
+7. 所有视图（Hero/Detail/Variety‑C/Multi‑Angle）共用 HEAD、Product Visual Spec、Scene、Color、Negative，只替换 Composition 部分，减少重复文本，降低 token 负载。

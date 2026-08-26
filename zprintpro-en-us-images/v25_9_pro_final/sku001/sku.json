@@ -1,0 +1,19 @@
+{
+  "number": "sku001",
+  "sku": "BC-001",
+  "market": "en",
+  "category": "greeting-cards",
+  "view": "HERO",
+  "prompt_version": "V25.9",
+  "images": [
+    {
+      "webp_filename": "zprintpro-greeting-cards-premium-greeting-cards-en-hero.webp",
+      "webp_path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\sku001\\zprintpro-greeting-cards-premium-greeting-cards-en-hero.webp",
+      "size_kb": 109.45,
+      "dimensions": "1200x1200",
+      "alt_text": "Premium foil stamped greeting cards with WARM WISHES design, gold foil corners and floral botanicals on ivory cardstock, displayed on a warm wooden desk with fairy lights bokeh - custom greeting cards printing by zprintpro",
+      "seo_keywords": "premium greeting cards, foil stamped cards, gold foil greeting cards, custom card printing",
+      "original_png": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\_originals\\BC-001_en.png"
+    }
+  ]
+}

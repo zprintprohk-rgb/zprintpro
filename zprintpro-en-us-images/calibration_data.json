@@ -1,0 +1,119 @@
+[
+ {
+  "sku": "BC-001",
+  "view": "HERO",
+  "cand1_path": "BC-001/calib_candidates/HERO_cand1.jpg",
+  "cand2_path": "BC-001/calib_candidates/HERO_cand2.jpg",
+  "picked": 1,
+  "stable_cand": 1,
+  "design_score_diff": 4
+ },
+ {
+  "sku": "BC-001",
+  "view": "DETAIL",
+  "cand1_path": "BC-001/calib_candidates/DETAIL_cand1.jpg",
+  "cand2_path": "BC-001/calib_candidates/DETAIL_cand2.jpg",
+  "picked": 1,
+  "stable_cand": 1,
+  "design_score_diff": 10
+ },
+ {
+  "sku": "BC-001",
+  "view": "VARIETY-C",
+  "cand1_path": "BC-001/calib_candidates/VARIETY-C_cand1.jpg",
+  "cand2_path": "BC-001/calib_candidates/VARIETY-C_cand2.jpg",
+  "picked": 1,
+  "stable_cand": 1,
+  "design_score_diff": 45
+ },
+ {
+  "sku": "BC-001",
+  "view": "MULTI-ANGLE",
+  "cand1_path": "BC-001/calib_candidates/MULTI-ANGLE_cand1.jpg",
+  "cand2_path": "BC-001/calib_candidates/MULTI-ANGLE_cand2.jpg",
+  "picked": 1,
+  "stable_cand": 1,
+  "design_score_diff": 5
+ },
+ {
+  "sku": "BC-001",
+  "view": "SPREAD",
+  "cand1_path": "BC-001/calib_candidates/SPREAD_cand1.jpg",
+  "cand2_path": "BC-001/calib_candidates/SPREAD_cand2.jpg",
+  "picked": 1,
+  "stable_cand": 1,
+  "design_score_diff": 23
+ },
+ {
+  "sku": "ST-001",
+  "view": "HERO",
+  "cand1_path": "ST-001/calib_candidates/HERO_cand1.jpg",
+  "cand2_path": "ST-001/calib_candidates/HERO_cand2.jpg",
+  "picked": 1,
+  "stable_cand": 1,
+  "design_score_diff": 6
+ },
+ {
+  "sku": "ST-001",
+  "view": "DETAIL",
+  "cand1_path": "ST-001/calib_candidates/DETAIL_cand1.jpg",
+  "cand2_path": "ST-001/calib_candidates/DETAIL_cand2.jpg",
+  "picked": 1,
+  "stable_cand": 1,
+  "design_score_diff": 2
+ },
+ {
+  "sku": "ST-001",
+  "view": "VARIETY-A",
+  "cand1_path": "ST-001/calib_candidates/VARIETY-A_cand1.jpg",
+  "cand2_path": "ST-001/calib_candidates/VARIETY-A_cand2.jpg",
+  "picked": 1,
+  "stable_cand": 1,
+  "design_score_diff": 11
+ },
+ {
+  "sku": "ST-001",
+  "view": "MULTI-ANGLE",
+  "cand1_path": "ST-001/calib_candidates/MULTI-ANGLE_cand1.jpg",
+  "cand2_path": "ST-001/calib_candidates/MULTI-ANGLE_cand2.jpg",
+  "picked": 1,
+  "stable_cand": 1,
+  "design_score_diff": 6
+ },
+ {
+  "sku": "FL-001",
+  "view": "HERO",
+  "cand1_path": "FL-001/calib_candidates/HERO_cand1.jpg",
+  "cand2_path": "FL-001/calib_candidates/HERO_cand2.jpg",
+  "picked": 1,
+  "stable_cand": 1,
+  "design_score_diff": 3
+ },
+ {
+  "sku": "FL-001",
+  "view": "DETAIL",
+  "cand1_path": "FL-001/calib_candidates/DETAIL_cand1.jpg",
+  "cand2_path": "FL-001/calib_candidates/DETAIL_cand2.jpg",
+  "picked": 1,
+  "stable_cand": 1,
+  "design_score_diff": 4
+ },
+ {
+  "sku": "FL-001",
+  "view": "VARIETY-A",
+  "cand1_path": "FL-001/calib_candidates/VARIETY-A_cand1.jpg",
+  "cand2_path": "FL-001/calib_candidates/VARIETY-A_cand2.jpg",
+  "picked": 1,
+  "stable_cand": 1,
+  "design_score_diff": 3
+ },
+ {
+  "sku": "FL-001",
+  "view": "MULTI-ANGLE",
+  "cand1_path": "FL-001/calib_candidates/MULTI-ANGLE_cand1.jpg",
+  "cand2_path": "FL-001/calib_candidates/MULTI-ANGLE_cand2.jpg",
+  "picked": 2,
+  "stable_cand": 2,
+  "design_score_diff": 5
+ }
+]

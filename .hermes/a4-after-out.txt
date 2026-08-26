@@ -1,0 +1,12 @@
+﻿== description ==
+  tail 250: ...A4傳單印刷訂製，100張起印，HK$0.3起/張。157g銅版紙雙面四色印刷，免費設計打樣。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。 适配行业: 餐飲外賣、房地產、零售精品、教育培訓、活動展會、美容美髮、社區中心.
+  has 7-word: False
+
+== descriptionEn ==
+  tail 250: ...Standard A4 size, most common flyer format. 157g glossy paper, 4-color printing, vibrant colors., ISO 9001:2015 certified quality management system 适配行业: Food delivery, Real estate, Retail, Education, Events, Beauty, Community.
+  has 7-word: False
+
+== descriptionJa ==
+  tail 250: ...標準A4サイズ、最も一般的なチラシ形式。157gコート紙、4色印刷、鮮やかな色彩。 适配行业: 飲食デリバリー、不動産、小売、教育、イベント、美容、コミュニティ.
+  has 7-word: False
+

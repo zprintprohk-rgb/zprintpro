@@ -1,0 +1,20 @@
+{
+  "_说明": "V20.9 视觉评估选优结果（image 模型逐组评估，2026-08-16）。picked=选中的候选编号，score=评估分(0-100)，stable=是否成品级。选定候选已处理为正式 WebP（v20_9_selected/）。",
+  "generated_at": "2026-08-16 05:32",
+  "channel": "AutoGLM Seedream (V20.9 prompt)",
+  "groups": [
+    {"sku": "BC-001", "view": "HERO",          "picked": 1, "scores": {"cand1": 92, "cand2": 88}, "stable": [true, true]},
+    {"sku": "BC-001", "view": "DETAIL",        "picked": 1, "scores": {"cand1": 95, "cand2": 85}, "stable": [true, true]},
+    {"sku": "BC-001", "view": "VARIETY-C",     "picked": 1, "scores": {"cand1": 90, "cand2": 45}, "stable": [true, false]},
+    {"sku": "BC-001", "view": "MULTI-ANGLE",   "picked": 1, "scores": {"cand1": 91, "cand2": 86}, "stable": [true, true]},
+    {"sku": "BC-001", "view": "SPREAD",        "picked": 1, "scores": {"cand1": 93, "cand2": 70}, "stable": [true, false]},
+    {"sku": "ST-001", "view": "HERO",          "picked": 1, "scores": {"cand1": 88, "cand2": 82}, "stable": [true, true]},
+    {"sku": "ST-001", "view": "DETAIL",        "picked": 1, "scores": {"cand1": 91, "cand2": 89}, "stable": [true, true]},
+    {"sku": "ST-001", "view": "VARIETY-A",     "picked": 1, "scores": {"cand1": 87, "cand2": 76}, "stable": [true, false]},
+    {"sku": "ST-001", "view": "MULTI-ANGLE",   "picked": 1, "scores": {"cand1": 89, "cand2": 83}, "stable": [true, true]},
+    {"sku": "FL-001", "view": "HERO",          "picked": 1, "scores": {"cand1": 89, "cand2": 86}, "stable": [true, true]},
+    {"sku": "FL-001", "view": "DETAIL",        "picked": 1, "scores": {"cand1": 93, "cand2": 89}, "stable": [true, true]},
+    {"sku": "FL-001", "view": "VARIETY-A",     "picked": 1, "scores": {"cand1": 87, "cand2": 84}, "stable": [true, true]},
+    {"sku": "FL-001", "view": "MULTI-ANGLE",   "picked": 2, "scores": {"cand1": 85, "cand2": 90}, "stable": [true, true]}
+  ]
+}

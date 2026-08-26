@@ -1,0 +1,19 @@
+{
+  "number": "sku002",
+  "sku": "PB-001",
+  "market": "en",
+  "category": "paper-bags",
+  "view": "HERO",
+  "prompt_version": "V25.9",
+  "images": [
+    {
+      "webp_filename": "zprintpro-paper-bags-kraft-paper-bags-en-hero.webp",
+      "webp_path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\sku002\\zprintpro-paper-bags-kraft-paper-bags-en-hero.webp",
+      "size_kb": 105.18,
+      "dimensions": "1200x1200",
+      "alt_text": "Custom kraft paper gift bags with CARRY JOY peony floral design, held at a sunlit flower shop counter with fresh peonies and eucalyptus, soft bright bokeh - eco-friendly branded paper bags printing by zprintpro",
+      "seo_keywords": "kraft paper bags, custom paper bags, gift bag printing, eco friendly branded bags",
+      "original_png": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\_originals\\PB-001_en.png"
+    }
+  ]
+}

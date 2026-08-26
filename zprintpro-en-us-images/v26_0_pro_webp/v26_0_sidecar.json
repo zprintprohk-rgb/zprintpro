@@ -1,0 +1,371 @@
+[
+  {
+    "sku": "ST-003",
+    "lang": "en",
+    "view": "HERO",
+    "file": "zprintpro-stickers-removable-stickers-en-hero.webp",
+    "alt": "ZprintPro custom printing main product image - ST-003",
+    "raw": "ST-003_en_hero.png",
+    "size_kb": 119.6
+  },
+  {
+    "sku": "ST-003",
+    "lang": "en",
+    "view": "DETAIL",
+    "file": "zprintpro-stickers-removable-stickers-en-detail.webp",
+    "alt": "ZprintPro custom printing detail close-up - ST-003",
+    "raw": "ST-003_en_detail.png",
+    "size_kb": 119.0
+  },
+  {
+    "sku": "ST-003",
+    "lang": "en",
+    "view": "VARIETY",
+    "file": "zprintpro-stickers-removable-stickers-en-variety.webp",
+    "alt": "ZprintPro custom printing multiple designs - ST-003",
+    "raw": "ST-003_en_variety.png",
+    "size_kb": 119.2
+  },
+  {
+    "sku": "ST-003",
+    "lang": "en",
+    "view": "MULTI-ANGLE",
+    "file": "zprintpro-stickers-removable-stickers-en-multi-angle.webp",
+    "alt": "ZprintPro custom printing multi-angle view - ST-003",
+    "raw": "ST-003_en_multi-angle.png",
+    "size_kb": 117.1
+  },
+  {
+    "sku": "PK-005",
+    "lang": "en",
+    "view": "HERO",
+    "file": "zprintpro-packaging-folding-boxes-en-hero.webp",
+    "alt": "ZprintPro custom printing main product image - PK-005",
+    "raw": "PK-005_en_hero.png",
+    "size_kb": 112.0
+  },
+  {
+    "sku": "PK-005",
+    "lang": "en",
+    "view": "DETAIL",
+    "file": "zprintpro-packaging-folding-boxes-en-detail.webp",
+    "alt": "ZprintPro custom printing detail close-up - PK-005",
+    "raw": "PK-005_en_detail.png",
+    "size_kb": 114.3
+  },
+  {
+    "sku": "PK-005",
+    "lang": "en",
+    "view": "VARIETY",
+    "file": "zprintpro-packaging-folding-boxes-en-variety.webp",
+    "alt": "ZprintPro custom printing multiple designs - PK-005",
+    "raw": "PK-005_en_variety.png",
+    "size_kb": 115.3
+  },
+  {
+    "sku": "PK-005",
+    "lang": "en",
+    "view": "MULTI-ANGLE",
+    "file": "zprintpro-packaging-folding-boxes-en-multi-angle.webp",
+    "alt": "ZprintPro custom printing multi-angle view - PK-005",
+    "raw": "PK-005_en_multi-angle.png",
+    "size_kb": 116.0
+  },
+  {
+    "sku": "CL-004",
+    "lang": "en",
+    "view": "HERO",
+    "file": "zprintpro-calendars-mini-calendars-en-hero.webp",
+    "alt": "ZprintPro custom printing main product image - CL-004",
+    "raw": "CL-004_en_hero.png",
+    "size_kb": 119.5
+  },
+  {
+    "sku": "CL-004",
+    "lang": "en",
+    "view": "DETAIL",
+    "file": "zprintpro-calendars-mini-calendars-en-detail.webp",
+    "alt": "ZprintPro custom printing detail close-up - CL-004",
+    "raw": "CL-004_en_detail.png",
+    "size_kb": 116.8
+  },
+  {
+    "sku": "CL-004",
+    "lang": "en",
+    "view": "VARIETY",
+    "file": "zprintpro-calendars-mini-calendars-en-variety.webp",
+    "alt": "ZprintPro custom printing multiple designs - CL-004",
+    "raw": "CL-004_en_variety.png",
+    "size_kb": 119.8
+  },
+  {
+    "sku": "CL-004",
+    "lang": "en",
+    "view": "MULTI-ANGLE",
+    "file": "zprintpro-calendars-mini-calendars-en-multi-angle.webp",
+    "alt": "ZprintPro custom printing multi-angle view - CL-004",
+    "raw": "CL-004_en_multi-angle.png",
+    "size_kb": 115.9
+  },
+  {
+    "sku": "PB-004",
+    "lang": "en",
+    "view": "HERO",
+    "file": "zprintpro-paper-bags-eco-paper-bags-en-hero.webp",
+    "alt": "ZprintPro custom printing main product image - PB-004",
+    "raw": "PB-004_en_hero.png",
+    "size_kb": 115.7
+  },
+  {
+    "sku": "PB-004",
+    "lang": "en",
+    "view": "DETAIL",
+    "file": "zprintpro-paper-bags-eco-paper-bags-en-detail.webp",
+    "alt": "ZprintPro custom printing detail close-up - PB-004",
+    "raw": "PB-004_en_detail.png",
+    "size_kb": 117.4
+  },
+  {
+    "sku": "PB-004",
+    "lang": "en",
+    "view": "VARIETY",
+    "file": "zprintpro-paper-bags-eco-paper-bags-en-variety.webp",
+    "alt": "ZprintPro custom printing multiple designs - PB-004",
+    "raw": "PB-004_en_variety.png",
+    "size_kb": 118.8
+  },
+  {
+    "sku": "PB-004",
+    "lang": "en",
+    "view": "MULTI-ANGLE",
+    "file": "zprintpro-paper-bags-eco-paper-bags-en-multi-angle.webp",
+    "alt": "ZprintPro custom printing multi-angle view - PB-004",
+    "raw": "PB-004_en_multi-angle.png",
+    "size_kb": 117.2
+  },
+  {
+    "sku": "RP-004",
+    "lang": "en",
+    "view": "HERO",
+    "file": "zprintpro-red-packets-cartoon-red-packets-en-hero.webp",
+    "alt": "ZprintPro custom printing main product image - RP-004",
+    "raw": "RP-004_en_hero.png",
+    "size_kb": 119.1
+  },
+  {
+    "sku": "RP-004",
+    "lang": "en",
+    "view": "DETAIL",
+    "file": "zprintpro-red-packets-cartoon-red-packets-en-detail.webp",
+    "alt": "ZprintPro custom printing detail close-up - RP-004",
+    "raw": "RP-004_en_detail.png",
+    "size_kb": 118.5
+  },
+  {
+    "sku": "RP-004",
+    "lang": "en",
+    "view": "VARIETY",
+    "file": "zprintpro-red-packets-cartoon-red-packets-en-variety.webp",
+    "alt": "ZprintPro custom printing multiple designs - RP-004",
+    "raw": "RP-004_en_variety.png",
+    "size_kb": 117.0
+  },
+  {
+    "sku": "RP-004",
+    "lang": "en",
+    "view": "MULTI-ANGLE",
+    "file": "zprintpro-red-packets-cartoon-red-packets-en-multi-angle.webp",
+    "alt": "ZprintPro custom printing multi-angle view - RP-004",
+    "raw": "RP-004_en_multi-angle.png",
+    "size_kb": 118.4
+  },
+  {
+    "sku": "ST-003",
+    "lang": "zh-hk",
+    "view": "HERO",
+    "file": "zprintpro-stickers-removable-stickers-zh-hk-hero.webp",
+    "alt": "ZprintPro custom printing main product image - ST-003",
+    "raw": "ST-003_zh-hk_hero.png",
+    "size_kb": 116.9
+  },
+  {
+    "sku": "ST-003",
+    "lang": "zh-hk",
+    "view": "DETAIL",
+    "file": "zprintpro-stickers-removable-stickers-zh-hk-detail.webp",
+    "alt": "ZprintPro custom printing detail close-up - ST-003",
+    "raw": "ST-003_zh-hk_detail.png",
+    "size_kb": 119.7
+  },
+  {
+    "sku": "ST-003",
+    "lang": "zh-hk",
+    "view": "VARIETY",
+    "file": "zprintpro-stickers-removable-stickers-zh-hk-variety.webp",
+    "alt": "ZprintPro custom printing multiple designs - ST-003",
+    "raw": "ST-003_zh-hk_variety.png",
+    "size_kb": 119.9
+  },
+  {
+    "sku": "ST-003",
+    "lang": "zh-hk",
+    "view": "MULTI-ANGLE",
+    "file": "zprintpro-stickers-removable-stickers-zh-hk-multi-angle.webp",
+    "alt": "ZprintPro custom printing multi-angle view - ST-003",
+    "raw": "ST-003_zh-hk_multi-angle.png",
+    "size_kb": 116.7
+  },
+  {
+    "sku": "PK-005",
+    "lang": "zh-hk",
+    "view": "HERO",
+    "file": "zprintpro-packaging-folding-boxes-zh-hk-hero.webp",
+    "alt": "ZprintPro custom printing main product image - PK-005",
+    "raw": "PK-005_zh-hk_hero.png",
+    "size_kb": 117.5
+  },
+  {
+    "sku": "PK-005",
+    "lang": "zh-hk",
+    "view": "DETAIL",
+    "file": "zprintpro-packaging-folding-boxes-zh-hk-detail.webp",
+    "alt": "ZprintPro custom printing detail close-up - PK-005",
+    "raw": "PK-005_zh-hk_detail.png",
+    "size_kb": 113.4
+  },
+  {
+    "sku": "PK-005",
+    "lang": "zh-hk",
+    "view": "VARIETY",
+    "file": "zprintpro-packaging-folding-boxes-zh-hk-variety.webp",
+    "alt": "ZprintPro custom printing multiple designs - PK-005",
+    "raw": "PK-005_zh-hk_variety.png",
+    "size_kb": 111.6
+  },
+  {
+    "sku": "PK-005",
+    "lang": "zh-hk",
+    "view": "MULTI-ANGLE",
+    "file": "zprintpro-packaging-folding-boxes-zh-hk-multi-angle.webp",
+    "alt": "ZprintPro custom printing multi-angle view - PK-005",
+    "raw": "PK-005_zh-hk_multi-angle.png",
+    "size_kb": 117.4
+  },
+  {
+    "sku": "CL-004",
+    "lang": "zh-hk",
+    "view": "HERO",
+    "file": "zprintpro-calendars-mini-calendars-zh-hk-hero.webp",
+    "alt": "ZprintPro custom printing main product image - CL-004",
+    "raw": "CL-004_zh-hk_hero.png",
+    "size_kb": 119.2
+  },
+  {
+    "sku": "CL-004",
+    "lang": "zh-hk",
+    "view": "DETAIL",
+    "file": "zprintpro-calendars-mini-calendars-zh-hk-detail.webp",
+    "alt": "ZprintPro custom printing detail close-up - CL-004",
+    "raw": "CL-004_zh-hk_detail.png",
+    "size_kb": 119.2
+  },
+  {
+    "sku": "CL-004",
+    "lang": "zh-hk",
+    "view": "VARIETY",
+    "file": "zprintpro-calendars-mini-calendars-zh-hk-variety.webp",
+    "alt": "ZprintPro custom printing multiple designs - CL-004",
+    "raw": "CL-004_zh-hk_variety.png",
+    "size_kb": 116.8
+  },
+  {
+    "sku": "CL-004",
+    "lang": "zh-hk",
+    "view": "MULTI-ANGLE",
+    "file": "zprintpro-calendars-mini-calendars-zh-hk-multi-angle.webp",
+    "alt": "ZprintPro custom printing multi-angle view - CL-004",
+    "raw": "CL-004_zh-hk_multi-angle.png",
+    "size_kb": 119.4
+  },
+  {
+    "sku": "PB-004",
+    "lang": "zh-hk",
+    "view": "HERO",
+    "file": "zprintpro-paper-bags-eco-paper-bags-zh-hk-hero.webp",
+    "alt": "ZprintPro custom printing main product image - PB-004",
+    "raw": "PB-004_zh-hk_hero.png",
+    "size_kb": 117.4
+  },
+  {
+    "sku": "PB-004",
+    "lang": "zh-hk",
+    "view": "DETAIL",
+    "file": "zprintpro-paper-bags-eco-paper-bags-zh-hk-detail.webp",
+    "alt": "ZprintPro custom printing detail close-up - PB-004",
+    "raw": "PB-004_zh-hk_detail.png",
+    "size_kb": 116.6
+  },
+  {
+    "sku": "PB-004",
+    "lang": "zh-hk",
+    "view": "VARIETY",
+    "file": "zprintpro-paper-bags-eco-paper-bags-zh-hk-variety.webp",
+    "alt": "ZprintPro custom printing multiple designs - PB-004",
+    "raw": "PB-004_zh-hk_variety.png",
+    "size_kb": 117.5
+  },
+  {
+    "sku": "PB-004",
+    "lang": "zh-hk",
+    "view": "MULTI-ANGLE",
+    "file": "zprintpro-paper-bags-eco-paper-bags-zh-hk-multi-angle.webp",
+    "alt": "ZprintPro custom printing multi-angle view - PB-004",
+    "raw": "PB-004_zh-hk_multi-angle.png",
+    "size_kb": 118.4
+  },
+  {
+    "sku": "RP-004",
+    "lang": "zh-hk",
+    "view": "HERO",
+    "file": "zprintpro-red-packets-cartoon-red-packets-zh-hk-hero.webp",
+    "alt": "ZprintPro custom printing main product image - RP-004",
+    "raw": "RP-004_zh-hk_hero.png",
+    "size_kb": 116.1
+  },
+  {
+    "sku": "RP-004",
+    "lang": "zh-hk",
+    "view": "DETAIL",
+    "file": "zprintpro-red-packets-cartoon-red-packets-zh-hk-detail.webp",
+    "alt": "ZprintPro custom printing detail close-up - RP-004",
+    "raw": "RP-004_zh-hk_detail.png",
+    "size_kb": 119.6
+  },
+  {
+    "sku": "RP-004",
+    "lang": "zh-hk",
+    "view": "VARIETY",
+    "file": "zprintpro-red-packets-cartoon-red-packets-zh-hk-variety.webp",
+    "alt": "ZprintPro custom printing multiple designs - RP-004",
+    "raw": "RP-004_zh-hk_variety.png",
+    "size_kb": 118.6
+  },
+  {
+    "sku": "RP-004",
+    "lang": "zh-hk",
+    "view": "MULTI-ANGLE",
+    "file": "zprintpro-red-packets-cartoon-red-packets-zh-hk-multi-angle.webp",
+    "alt": "ZprintPro custom printing multi-angle view - RP-004",
+    "raw": "RP-004_zh-hk_multi-angle.png",
+    "size_kb": 119.8
+  },
+  {
+    "sku": "ST-003",
+    "lang": "ja",
+    "view": "HERO",
+    "file": "zprintpro-stickers-removable-stickers-ja-hero.webp",
+    "alt": "ZprintPro custom printing main product image - ST-003",
+    "raw": "ST-003_ja_hero.png",
+    "size_kb": 118.9
+  }
+]

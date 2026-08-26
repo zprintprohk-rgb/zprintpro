@@ -1,0 +1,3 @@
+﻿🔍 Checking staged files for encoding issues...
+
+✅ All 7 checked files are UTF-8 LF — safe to commit.

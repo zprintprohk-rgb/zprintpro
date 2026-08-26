@@ -1,0 +1,13 @@
+Failed to compile.
+
+./src/app/[locale]/category/[slug]/page.tsx:309:5
+Type error: An object literal cannot have multiple properties with the same name.
+
+[0m [90m 307 |[39m     [32m'packaging'[39m[33m:[39m [32m'hero-gift-box'[39m[33m,[39m[0m
+[0m [90m 308 |[39m     [32m'posters'[39m[33m:[39m [32m'hero-poster'[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 309 |[39m     [32m'stickers'[39m[33m:[39m [32m'hero-stickers'[39m[33m,[39m[0m
+[0m [90m     |[39m     [31m[1m^[22m[39m[0m
+[0m [90m 310 |[39m     [32m'banners'[39m[33m:[39m [32m'hero-banners'[39m[33m,[39m[0m
+[0m [90m 311 |[39m     [32m'books'[39m[33m:[39m [32m'hero-books'[39m[33m,[39m[0m
+[0m [90m 312 |[39m     [32m'menus'[39m[33m:[39m [32m'hero-menus'[39m[33m,[39m[0m
+Next.js build worker exited with code: 1 and signal: null

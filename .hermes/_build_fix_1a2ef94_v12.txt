@@ -1,0 +1,23 @@
+
+> zprintpro-nextjs@1.0.0 build
+> next build && node scripts/generate-sitemap.js
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local, .env
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+Failed to compile.
+
+./src/data/sku-seo-data.ts:725:3
+Type error: An object literal cannot have multiple properties with the same name.
+
+[0m [90m 723 |[39m     }[0m
+[0m [90m 724 |[39m   }[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 725 |[39m   [32m"foil-stickers"[39m[33m:[39m {[0m
+[0m [90m     |[39m   [31m[1m^[22m[39m[0m
+[0m [90m 726 |[39m     [32m"name"[39m[33m:[39m {[0m
+[0m [90m 727 |[39m       [32m"zh-hk"[39m[33m:[39m [32m"燙金貼紙"[39m[33m,[39m[0m
+[0m [90m 728 |[39m       [32m"en"[39m[33m:[39m [32m"Foil Stickers"[39m[33m,[39m[0m
+Next.js build worker exited with code: 1 and signal: null

@@ -1,0 +1,42 @@
+﻿covered[0] keys: [
+  'id',
+  'slug',
+  'category',
+  'sku',
+  'industry',
+  'tier',
+  'priority',
+  'covered_at',
+  'deployed_commit',
+  'deployed_at',
+  'cf_build_run',
+  'verify_status',
+  'verify_steps',
+  'locale_chars',
+  'nap_decoupled',
+  'internal_links_count'
+]
+---
+Q-004 in queue: {
+  id: 'Q-004',
+  category: 'paper-bags',
+  sku: 'kraft-paper-bags',
+  industry: '服裝',
+  tier: 'A',
+  priority: 'P0',
+  slug: 'apparel-shopping-bag-printing-guide',
+  title_zh: '香港服裝品牌紙袋印刷指南 · 環保購物袋品牌升級 | 智印雲 ZprintPro',
+  title_en: 'Apparel Brand Shopping Bag Printing Guide: Materials, Sizes & Logo Tips | ZprintPro',
+  title_ja: 'アパレルブランドショッピングバッグ印刷ガイド：素材・サイズ・ロゴ | ZprintPro',
+  valid_internal_links: [
+    '/category/paper-bags/',
+    '/product/kraft-paper-bags/',
+    '/product/white-card-bags/',
+    '/product/gift-bags/',
+    '/product/eco-paper-bags/'
+  ],
+  expected_words_zh: 1000,
+  expected_faqs: 4,
+  queued_at: '2026-07-06',
+  priority_boost: 1
+}

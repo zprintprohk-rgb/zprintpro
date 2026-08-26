@@ -1,0 +1,14 @@
+V20.9 DNA Verify Report (2026-08-17 01:58)
+Threshold: avg >= 7.5, any dim < 6.0 = REJECT
+================================================================================
+
+## BC-001 / hero
+  zprintpro-greeting-cards-premium-greeting-cards-en-hero_cand1.jpg: avg=8.41 → PASS ★ BEST
+    v1_phash=7.15 v2_palette=8.87 v3_craft=6.04 v4_ratio=10.0 v5_scene=10
+  zprintpro-greeting-cards-premium-greeting-cards-en-hero_cand3.jpg: avg=8.12 → REJECT
+    v1_phash=5.7 v2_palette=8.29 v3_craft=6.63 v4_ratio=10.0 v5_scene=10
+    ! hard threshold: [5.7]
+  zprintpro-greeting-cards-premium-greeting-cards-en-hero_cand2.jpg: avg=7.87 → REJECT
+    v1_phash=5.35 v2_palette=7.99 v3_craft=6.0 v4_ratio=10.0 v5_scene=10
+    ! hard threshold: [5.35]
+

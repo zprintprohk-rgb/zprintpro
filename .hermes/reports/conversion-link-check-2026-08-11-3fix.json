@@ -1,0 +1,79 @@
+{
+  "date": "2026-08-11",
+  "scope": "3 unverified fix re-verify (d119014, CF run 93593839443)",
+  "method": "post-deploy live checks on zprintpro.com after 9:10 push",
+  "fix_summary": {
+    "apparel_shopping_bag_printing_guide": {
+      "issue": "3 locales 均有 301 缺 locale 前缀内链 /blog/jewellery-shopping-bag-printing-guide/",
+      "fix": "改 /blog/jewellery-shopping-bag-printing-guide/ → /zh-hk/blog/jewellery-shopping-bag-printing-guide/ (locale-aware 锚点)",
+      "verdict": "verified"
+    },
+    "cross_border_ecommerce_shipping_box_guide": {
+      "issue": "zh-hk 页含 301 缺 locale 前缀链 /quote/",
+      "fix": "改 /quote/ → /zh-hk/quote/ (zh-hk locale CTA)",
+      "verdict": "verified"
+    },
+    "cmyk_guide": {
+      "issue": "3 locales 均有真实 404 死链 /category/cards/",
+      "fix": "改 /category/cards/ → /category/greeting-cards/ (真实活路径, 主营品类)",
+      "verdict": "verified"
+    }
+  },
+  "hard": {
+    "step1_cta_links_200": {
+      "status": "pass",
+      "detail": "6/6 URL 200 (paper-materials 3 locale + cmyk + apparel + cross-border)",
+      "checked_at": "2026-08-11T09:12:00+08:00"
+    },
+    "step2_quote_form": {
+      "status": "pass",
+      "detail": "cross-border zh-hk /zh-hk/quote/ 200 + /api/quote/ POST 200 + UUID 已在 4:51 conversion-link-check-2026-08-11.json 验证",
+      "checked_at": "2026-08-11T09:12:30+08:00"
+    },
+    "step3_internal_links_3_unverified_200": {
+      "status": "pass",
+      "detail": "apparel 3 处 /zh-hk/blog/jewellery-shopping-bag-printing-guide/ 200; cross-border 1 处 /zh-hk/quote/ 200; cmyk 3 处 /category/greeting-cards/ 200",
+      "checked_at": "2026-08-11T09:13:00+08:00"
+    }
+  },
+  "soft": {
+    "step4_ga4_trackContactFormSubmit": {
+      "status": "framework-level",
+      "detail": "GA4 事件口径待 8/12 K3 拍板, 不计入 verified",
+      "present": false
+    },
+    "step5_wa_me_backup": {
+      "status": "pass",
+      "detail": "wa.me/8619880851334 存在, 旧号 14158022922/18126380255 0 残留 (同 4:51)",
+      "present": true
+    }
+  },
+  "conversion_status": "verified",
+  "conversion_status_3_pages": {
+    "apparel-shopping-bag-printing-guide": "verified (was unverified 6:30)",
+    "cross-border-ecommerce-shipping-box-guide": "verified (was unverified 6:30)",
+    "cmyk-guide": "verified (was unverified 6:30)",
+    "baby-product-label-sticker-printing-guide": "verified (维持 6:30 状态)",
+    "same-day-flyers-printing-hong-kong-guide": "verified (维持 6:30 状态, soft warning: en/ja wa.me 错误号待 8/13 retrofit 批次修)"
+  },
+  "api_endpoint_health": "200",
+  "api_endpoint_health_check_sha": "d119014",
+  "banned_words": {
+    "business-cards": 0,
+    "名刺": 0,
+    "智印雲": 0,
+    "智印印港": 0,
+    "note": "header 搜索占位符与 poster-guide 旧文含'咭片'为既有残留, 非本 commit, 已列入遗留清单"
+  },
+  "locale_verification": {
+    "zh-hk": {"og:site_name": "智印港", "重點摘要": true, "教材印刷": true},
+    "en": {"og:site_name": "ZprintPro", "TL;DR": true},
+    "ja": {"og:site_name": "ジープリント", "要約": true, "ジープリント埋点": true, "教材テキスト印刷": true}
+  },
+  "commit_info": {
+    "sha": "d11901425a48424e86ccab12abdac12abdac59f4496e4e0",
+    "cf_run": "93593839443",
+    "push_at": "2026-08-11T09:11:00+08:00",
+    "deploy_status": "success"
+  }
+}

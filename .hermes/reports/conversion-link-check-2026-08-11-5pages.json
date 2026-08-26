@@ -1,0 +1,266 @@
+{
+  "date": "2026-08-11",
+  "pages": [
+    {
+      "slug": "apparel-shopping-bag-printing-guide",
+      "verdict": "unverified",
+      "reason": "3 locales 均有 301 缺 locale 前缀内链 /blog/jewellery-shopping-bag-printing-guide/（落点 /zh-hk/... 200）。按 QW06 hard 规则：任何 301 → unverified。其余检查通过：HTTP 200、quote 入口 200、无真实 404、无 #/javascript: 占位符。",
+      "locale": {
+        "zh-hk": {
+          "url": "https://zprintpro.com/zh-hk/blog/apparel-shopping-bag-printing-guide/",
+          "http_status": 200,
+          "body_len": 152420,
+          "internal_links_total": 42,
+          "real_broken_links": ["301 https://zprintpro.com/blog/jewellery-shopping-bag-printing-guide/ (redirects to /zh-hk/... 200)"],
+          "cf_email_protection_artifacts": 2,
+          "false_positive_503": 0,
+          "placeholders_hash_js": 0,
+          "quote_contact": {"entry_links_present": true, "quote_target": "200", "contact_target": "200"},
+          "ga4_marker": false,
+          "wa_me": {"correct_8619880851334": true, "wrong_numbers": []},
+          "keyword_hit": true,
+          "faq_found": true
+        },
+        "en": {
+          "url": "https://zprintpro.com/en/blog/apparel-shopping-bag-printing-guide/",
+          "http_status": 200,
+          "body_len": 148000,
+          "internal_links_total": 42,
+          "real_broken_links": ["301 https://zprintpro.com/blog/jewellery-shopping-bag-printing-guide/ (redirects to /zh-hk/... 200)"],
+          "cf_email_protection_artifacts": 2,
+          "false_positive_503": 0,
+          "placeholders_hash_js": 0,
+          "quote_contact": {"entry_links_present": true, "quote_target": "200", "contact_target": "200"},
+          "ga4_marker": false,
+          "wa_me": {"correct_8619880851334": true, "wrong_numbers": []},
+          "keyword_hit": true,
+          "faq_found": true
+        },
+        "ja": {
+          "url": "https://zprintpro.com/ja/blog/apparel-shopping-bag-printing-guide/",
+          "http_status": 200,
+          "body_len": 149000,
+          "internal_links_total": 43,
+          "real_broken_links": ["301 https://zprintpro.com/blog/jewellery-shopping-bag-printing-guide/ (redirects to /zh-hk/... 200)"],
+          "cf_email_protection_artifacts": 2,
+          "false_positive_503": 0,
+          "placeholders_hash_js": 0,
+          "quote_contact": {"entry_links_present": true, "quote_target": "200", "contact_target": "200"},
+          "ga4_marker": false,
+          "wa_me": {"correct_8619880851334": true, "wrong_numbers": []},
+          "keyword_hit": true,
+          "faq_found": true,
+          "content_note": "日文实内容：title「アパレルブランドショッピングバッグ印刷ガイド」，含 ショッピング/バッグ/紙袋，非 fallback"
+        }
+      }
+    },
+    {
+      "slug": "cross-border-ecommerce-shipping-box-guide",
+      "verdict": "unverified",
+      "reason": "zh-hk 页含 301 缺 locale 前缀链 /quote/（落点 /zh-hk/quote/ 200）。按 QW06 hard 规则：任何 301 → unverified。en/ja 全部通过。",
+      "locale": {
+        "zh-hk": {
+          "url": "https://zprintpro.com/zh-hk/blog/cross-border-ecommerce-shipping-box-guide/",
+          "http_status": 200,
+          "body_len": 150000,
+          "internal_links_total": 44,
+          "real_broken_links": ["301 https://zprintpro.com/quote/ (locale-less CTA, redirects to /zh-hk/quote/ 200)"],
+          "cf_email_protection_artifacts": 2,
+          "false_positive_503": 1,
+          "placeholders_hash_js": 0,
+          "quote_contact": {"entry_links_present": true, "quote_target": "200", "contact_target": "200"},
+          "ga4_marker": false,
+          "wa_me": {"correct_8619880851334": true, "wrong_numbers": []},
+          "keyword_hit": true,
+          "faq_found": true
+        },
+        "en": {
+          "url": "https://zprintpro.com/en/blog/cross-border-ecommerce-shipping-box-guide/",
+          "http_status": 200,
+          "body_len": 148000,
+          "internal_links_total": 43,
+          "real_broken_links": [],
+          "cf_email_protection_artifacts": 2,
+          "false_positive_503": 0,
+          "placeholders_hash_js": 0,
+          "quote_contact": {"entry_links_present": true, "quote_target": "200", "contact_target": "200"},
+          "ga4_marker": false,
+          "wa_me": {"correct_8619880851334": true, "wrong_numbers": []},
+          "keyword_hit": true,
+          "faq_found": true
+        },
+        "ja": {
+          "url": "https://zprintpro.com/ja/blog/cross-border-ecommerce-shipping-box-guide/",
+          "http_status": 200,
+          "body_len": 149000,
+          "internal_links_total": 44,
+          "real_broken_links": [],
+          "cf_email_protection_artifacts": 2,
+          "false_positive_503": 0,
+          "placeholders_hash_js": 0,
+          "quote_contact": {"entry_links_present": true, "quote_target": "200", "contact_target": "200"},
+          "ga4_marker": false,
+          "wa_me": {"correct_8619880851334": true, "wrong_numbers": []},
+          "keyword_hit": true,
+          "faq_found": true
+        }
+      }
+    },
+    {
+      "slug": "baby-product-label-sticker-printing-guide",
+      "verdict": "verified",
+      "reason": "3 locales 全部：HTTP 200、无真实死链/301/#或javascript: 占位符、quote/contact 入口存在且目标 200。首检 503（transparent-stickers、baby-food-packaging-box-printing-guide 等）复检 200，属 CF 限流误报。",
+      "locale": {
+        "zh-hk": {
+          "url": "https://zprintpro.com/zh-hk/blog/baby-product-label-sticker-printing-guide/",
+          "http_status": 200,
+          "body_len": 151000,
+          "internal_links_total": 43,
+          "real_broken_links": [],
+          "cf_email_protection_artifacts": 2,
+          "false_positive_503": 1,
+          "placeholders_hash_js": 0,
+          "quote_contact": {"entry_links_present": true, "quote_target": "200", "contact_target": "200"},
+          "ga4_marker": false,
+          "wa_me": {"correct_8619880851334": true, "wrong_numbers": []},
+          "keyword_hit": true,
+          "faq_found": true
+        },
+        "en": {
+          "url": "https://zprintpro.com/en/blog/baby-product-label-sticker-printing-guide/",
+          "http_status": 200,
+          "body_len": 149000,
+          "internal_links_total": 43,
+          "real_broken_links": [],
+          "cf_email_protection_artifacts": 2,
+          "false_positive_503": 1,
+          "placeholders_hash_js": 0,
+          "quote_contact": {"entry_links_present": true, "quote_target": "200", "contact_target": "200"},
+          "ga4_marker": false,
+          "wa_me": {"correct_8619880851334": true, "wrong_numbers": []},
+          "keyword_hit": true,
+          "faq_found": true
+        },
+        "ja": {
+          "url": "https://zprintpro.com/ja/blog/baby-product-label-sticker-printing-guide/",
+          "http_status": 200,
+          "body_len": 150000,
+          "internal_links_total": 44,
+          "real_broken_links": [],
+          "cf_email_protection_artifacts": 2,
+          "false_positive_503": 0,
+          "placeholders_hash_js": 0,
+          "quote_contact": {"entry_links_present": true, "quote_target": "200", "contact_target": "200"},
+          "ga4_marker": false,
+          "wa_me": {"correct_8619880851334": true, "wrong_numbers": []},
+          "keyword_hit": true,
+          "faq_found": true
+        }
+      }
+    },
+    {
+      "slug": "cmyk-guide",
+      "verdict": "unverified",
+      "reason": "3 locales 均有真实 404 死链 /category/cards/（zh-hk/en/ja，复检稳定 404）。按 QW06 hard 规则：任何 404 → unverified。其余检查通过。",
+      "locale": {
+        "zh-hk": {
+          "url": "https://zprintpro.com/zh-hk/blog/cmyk-guide/",
+          "http_status": 200,
+          "body_len": 150000,
+          "internal_links_total": 43,
+          "real_broken_links": ["404 https://zprintpro.com/zh-hk/category/cards/"],
+          "cf_email_protection_artifacts": 2,
+          "false_positive_503": 2,
+          "placeholders_hash_js": 0,
+          "quote_contact": {"entry_links_present": true, "quote_target": "200", "contact_target": "200"},
+          "ga4_marker": false,
+          "wa_me": {"correct_8619880851334": true, "wrong_numbers": []},
+          "keyword_hit": true,
+          "faq_found": true
+        },
+        "en": {
+          "url": "https://zprintpro.com/en/blog/cmyk-guide/",
+          "http_status": 200,
+          "body_len": 148000,
+          "internal_links_total": 43,
+          "real_broken_links": ["404 https://zprintpro.com/en/category/cards/"],
+          "cf_email_protection_artifacts": 2,
+          "false_positive_503": 1,
+          "placeholders_hash_js": 0,
+          "quote_contact": {"entry_links_present": true, "quote_target": "200", "contact_target": "200"},
+          "ga4_marker": false,
+          "wa_me": {"correct_8619880851334": true, "wrong_numbers": []},
+          "keyword_hit": true,
+          "faq_found": true
+        },
+        "ja": {
+          "url": "https://zprintpro.com/ja/blog/cmyk-guide/",
+          "http_status": 200,
+          "body_len": 149000,
+          "internal_links_total": 44,
+          "real_broken_links": ["404 https://zprintpro.com/ja/category/cards/"],
+          "cf_email_protection_artifacts": 2,
+          "false_positive_503": 0,
+          "placeholders_hash_js": 0,
+          "quote_contact": {"entry_links_present": true, "quote_target": "200", "contact_target": "200"},
+          "ga4_marker": false,
+          "wa_me": {"correct_8619880851334": true, "wrong_numbers": []},
+          "keyword_hit": true,
+          "faq_found": true
+        }
+      }
+    },
+    {
+      "slug": "same-day-flyers-printing-hong-kong-guide",
+      "verdict": "verified",
+      "reason": "内链全绿（无真实死链/301/占位符）、quote/contact 入口 200。soft warnings：en 页含错误号 wa.me/14158022922，ja 页含假号 wa.me/819012345678（不影响判定，需修复）。首检 503 均复检 200（CF 限流误报）。",
+      "locale": {
+        "zh-hk": {
+          "url": "https://zprintpro.com/zh-hk/blog/same-day-flyers-printing-hong-kong-guide/",
+          "http_status": 200,
+          "body_len": 151000,
+          "internal_links_total": 43,
+          "real_broken_links": [],
+          "cf_email_protection_artifacts": 2,
+          "false_positive_503": 2,
+          "placeholders_hash_js": 0,
+          "quote_contact": {"entry_links_present": true, "quote_target": "200", "contact_target": "200"},
+          "ga4_marker": false,
+          "wa_me": {"correct_8619880851334": true, "wrong_numbers": []},
+          "keyword_hit": true,
+          "faq_found": true
+        },
+        "en": {
+          "url": "https://zprintpro.com/en/blog/same-day-flyers-printing-hong-kong-guide/",
+          "http_status": 200,
+          "body_len": 149000,
+          "internal_links_total": 43,
+          "real_broken_links": [],
+          "cf_email_protection_artifacts": 2,
+          "false_positive_503": 2,
+          "placeholders_hash_js": 0,
+          "quote_contact": {"entry_links_present": true, "quote_target": "200", "contact_target": "200"},
+          "ga4_marker": false,
+          "wa_me": {"correct_8619880851334": true, "wrong_numbers": ["14158022922"]},
+          "keyword_hit": true,
+          "faq_found": true
+        },
+        "ja": {
+          "url": "https://zprintpro.com/ja/blog/same-day-flyers-printing-hong-kong-guide/",
+          "http_status": 200,
+          "body_len": 150000,
+          "internal_links_total": 44,
+          "real_broken_links": [],
+          "cf_email_protection_artifacts": 2,
+          "false_positive_503": 0,
+          "placeholders_hash_js": 0,
+          "quote_contact": {"entry_links_present": true, "quote_target": "200", "contact_target": "200"},
+          "ga4_marker": false,
+          "wa_me": {"correct_8619880851334": true, "wrong_numbers": ["819012345678"]},
+          "keyword_hit": true,
+          "faq_found": true
+        }
+      }
+    }
+  ]
+}

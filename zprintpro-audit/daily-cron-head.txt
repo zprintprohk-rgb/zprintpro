@@ -1,0 +1,5 @@
+﻿# M3 v8 Daily 鎶ュ憡 路 2026-08-05
+
+## 搂鎽樿锛? 琛屽唴锛?
+
+**缁撹**: **1 push (8/5 daily cron v8 瀹屾暣鎵ц A+B+C+F 4 sub-task, 0 skip; v8 K3 11:36 鎷嶆澘 "queue 鈮?1 鈫?鍐?1 绡?澶?寮哄埗 v8 SEO+GEO 鏍囧噯" 鍏戠幇, 鍗充娇 matrix drift 22 鍊欓€夊叏璺?blog-posts.ts 閲嶅彔, M3 璧?v8 绮剧鏂板 Q-NEW-04 same-day-flyers 濉湡瀹?SKU 缂哄彛, 瀹屾垚鍏?4 sub-task 1 push 鍏戠幇).

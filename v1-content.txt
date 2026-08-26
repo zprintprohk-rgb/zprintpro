@@ -1,0 +1,10 @@
+﻿python :   File "<string>", line 11
+所在位置 行:1 字符: 107
++ ... g]::UTF8; $OutputEncoding = [System.Text.Encoding]::UTF8; python -c "
++                                                               ~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (  File "<string>", line 11:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+    print(f'  title: {entry.get(" title\,\\)[:100]}')
+                                ^
+SyntaxError: unterminated string literal (detected at line 11)

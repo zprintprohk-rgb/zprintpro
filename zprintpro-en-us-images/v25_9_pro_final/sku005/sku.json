@@ -1,0 +1,19 @@
+{
+  "number": "sku005",
+  "sku": "DJ-001",
+  "market": "ja",
+  "category": "japan-doujin",
+  "view": "HERO",
+  "prompt_version": "V25.9",
+  "images": [
+    {
+      "webp_filename": "zprintpro-japan-doujin-doujinshi-printing-ja-hero.webp",
+      "webp_path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\sku005\\zprintpro-japan-doujin-doujinshi-printing-ja-hero.webp",
+      "size_kb": 106.52,
+      "dimensions": "1200x1200",
+      "alt_text": "オリジナル同人誌・アートブック印刷の商品画像、桜色と淡いラベンダー背景、青海波模様の表紙、明るい爽やかなトーン - zprintpro 同人誌印刷",
+      "seo_keywords": "同人誌印刷, art book printing, doujinshi printing, オリジナル本制作",
+      "original_png": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\_originals\\DJ-001_ja.png"
+    }
+  ]
+}

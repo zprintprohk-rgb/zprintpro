@@ -1,0 +1,315 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "created": "2026-08-17",
+    "k3_directive": "ST-001 waterproof sticker scene = no water context. K3 8/17 01:47 拍板. 14 类目 × 4 卖点类型场景词典 (P0-4 + P0-5 整改)",
+    "related_to": ["enhance_rules.json", "AGENTS.md §0.20.10", "_dna_verify.py V5"],
+    "selling_point_types": {
+      "function": "功能型 (防水/防油/撕不烂) - 必须含功能演示元素",
+      "craft": "工艺型 (烫金/UV/起鼓/异形) - 必须含工艺可视化",
+      "scene": "场景型 (春节/圣诞/婚礼) - 必须含节庆元素",
+      "material": "材料型 (牛皮纸/铜版/棉纸) - 必须含材质触感元素"
+    }
+  },
+  "stickers": {
+    "selling_points": ["waterproof", "oilproof", "tear-resistant", "matte", "glossy", "foil-stamped", "die-cut"],
+    "by_selling_point": {
+      "waterproof": {
+        "type": "function",
+        "scenes": [
+          "stuck on water bottle in rain",
+          "stuck on bathroom mirror with steam droplets",
+          "stuck on pool-side Hydro Flask submerged",
+          "stuck on kitchen sink edge with running water",
+          "stuck on plastic bowl next to dishwasher"
+        ],
+        "props": ["water bottle (Hydro Flask submerged)", "umbrella", "bathroom mirror", "swimming pool", "kitchen sink", "water droplets"],
+        "must_contain": ["water drops", "rain", "wet surface", "steam", "pool", "shower", "submerged"],
+        "must_not_contain": ["dry office scene", "MacBook only", "Moleskine only", "Hydro Flask in dry hand"]
+      },
+      "oilproof": {
+        "type": "function",
+        "scenes": [
+          "stuck on spice jar in kitchen",
+          "stuck on microwave door",
+          "stuck on food container in fridge",
+          "stuck on olive oil bottle",
+          "stuck on takeout container"
+        ],
+        "props": ["spice jar", "microwave", "food container", "olive oil bottle"],
+        "must_contain": ["kitchen", "food", "oil", "cooking", "microwave", "fridge"],
+        "must_not_contain": ["office", "MacBook", "notebook"]
+      },
+      "tear-resistant": {
+        "type": "function",
+        "scenes": [
+          "hand attempting to tear sticker off",
+          "sticker on outdoor hiking gear",
+          "sticker on helmet during bike ride",
+          "sticker on skateboard"
+        ],
+        "props": ["outdoor gear", "helmet", "skateboard", "hiking pack"],
+        "must_contain": ["outdoor", "action", "rugged", "athletic"],
+        "must_not_contain": ["static", "gentle", "indoor"]
+      },
+      "matte": {
+        "type": "craft",
+        "scenes": ["gallery wall with no reflection", "minimalist notebook cover", "soft diffused lighting"],
+        "must_contain": ["no-glare", "soft light", "matte texture visible"],
+        "must_not_contain": ["glossy reflection", "harsh spotlight", "mirror"]
+      },
+      "glossy": {
+        "type": "craft",
+        "scenes": ["sticker catching light reflection", "wet-look shine", "under direct light"],
+        "must_contain": ["light reflection", "shine highlight"],
+        "must_not_contain": ["matte", "no reflection"]
+      },
+      "foil-stamped": {
+        "type": "craft",
+        "scenes": ["sticker in golden hour light", "catching candlelight", "luxury gift box"],
+        "must_contain": ["metallic gold/silver reflection", "warm light"],
+        "must_not_contain": ["flat daylight", "no metallic"]
+      },
+      "die-cut": {
+        "type": "craft",
+        "scenes": ["sticker shape silhouette visible", "die-cut edge catching shadow", "shape outline"],
+        "must_contain": ["irregular shape outline", "die-cut edge"],
+        "must_not_contain": ["square sticker without shape emphasis"]
+      }
+    }
+  },
+  "flyers": {
+    "selling_points": ["thick-card", "bi-fold", "tri-fold", "coated-paper", "matte-coated"],
+    "by_selling_point": {
+      "thick-card": {
+        "type": "material",
+        "scenes": ["stacked with weight visible", "edge thickness visible", "compared with thin paper"],
+        "must_contain": ["thickness edge visible", "weight reference", "card stack"],
+        "must_not_contain": ["thin paper only", "single sheet"]
+      },
+      "bi-fold": {
+        "type": "craft",
+        "scenes": ["half-folded open showing inner panel", "fold line visible", "unfolding action"],
+        "must_contain": ["fold line", "two-panel visible"],
+        "must_not_contain": ["flat single sheet only"]
+      },
+      "tri-fold": {
+        "type": "craft",
+        "scenes": ["three-panel fold open", "Z-fold or roll-fold visible"],
+        "must_contain": ["three panels", "fold creases"]
+      },
+      "coated-paper": {
+        "type": "material",
+        "scenes": ["glossy surface catching light", "smooth reflection"],
+        "must_contain": ["smooth surface", "light reflection"],
+        "must_not_contain": ["rough texture"]
+      }
+    }
+  },
+  "packaging": {
+    "selling_points": ["tian-di-gai", "chou-ti", "fei-ji", "magnetic", "ribbon-tie", "rigid"],
+    "by_selling_point": {
+      "tian-di-gai": {
+        "type": "craft",
+        "scenes": ["box lid being lifted off base", "separated top and bottom", "open lid showing interior"],
+        "must_contain": ["two-piece box", "lid removal action", "interior visible"],
+        "must_not_contain": ["closed box only", "single piece"]
+      },
+      "chou-ti": {
+        "type": "craft",
+        "scenes": ["drawer sliding out", "ribbon pull tab visible", "interior drawer compartment"],
+        "must_contain": ["drawer motion", "ribbon pull"],
+        "must_not_contain": ["closed box only"]
+      },
+      "fei-ji": {
+        "type": "craft",
+        "scenes": ["telescope box partially extended", "tray sliding out"],
+        "must_contain": ["tray motion", "telescope shape"]
+      },
+      "magnetic": {
+        "type": "craft",
+        "scenes": ["magnetic flap opening", "magnet alignment visible"],
+        "must_contain": ["magnet", "flap opening"]
+      },
+      "ribbon-tie": {
+        "type": "craft",
+        "scenes": ["ribbon bow on top", "ribbon untying action"],
+        "must_contain": ["ribbon", "bow or tie"]
+      }
+    }
+  },
+  "paper-bags": {
+    "selling_points": ["kraft", "white-card", "lamination", "ribbon-handle", "rope-handle", "load-bearing"],
+    "by_selling_point": {
+      "kraft": {
+        "type": "material",
+        "scenes": ["natural kraft fiber texture visible", "earthy brown tone emphasized"],
+        "must_contain": ["kraft fiber", "natural brown", "fibrous texture"],
+        "must_not_contain": ["smooth white", "no fiber visible"]
+      },
+      "lamination": {
+        "type": "craft",
+        "scenes": ["glossy/matte lamination reflection", "water-resistant surface"],
+        "must_contain": ["lamination sheen", "smooth coated surface"]
+      },
+      "load-bearing": {
+        "type": "function",
+        "scenes": ["heavy items in bag without tearing", "handle stress test", "carrying weight"],
+        "must_contain": ["weight", "handle tension", "carrying action"],
+        "must_not_contain": ["empty bag only", "static display"]
+      }
+    }
+  },
+  "posters": {
+    "selling_points": ["large-format", "outdoor-durable", "matte-lamination", "glossy-lamination"],
+    "by_selling_point": {
+      "large-format": {
+        "type": "scene",
+        "scenes": ["person standing next to poster for scale", "poster covering large wall area", "A0+ size visible"],
+        "must_contain": ["size reference", "person or object for scale"],
+        "must_not_contain": ["small handheld size"]
+      },
+      "outdoor-durable": {
+        "type": "function",
+        "scenes": ["poster on outdoor billboard in rain", "sun exposure", "wind"],
+        "must_contain": ["outdoor", "weather", "billboard/wall"],
+        "must_not_contain": ["indoor only"]
+      }
+    }
+  },
+  "books": {
+    "selling_points": ["saddle-stitch", "perfect-binding", "thread-sewn", "hardcover", "spiral"],
+    "by_selling_point": {
+      "saddle-stitch": {
+        "type": "craft",
+        "scenes": ["stapled spine visible", "page spread open flat", "staple binding visible"],
+        "must_contain": ["staple spine", "flat-open page spread"],
+        "must_not_contain": ["glued spine"]
+      },
+      "perfect-binding": {
+        "type": "craft",
+        "scenes": ["square glued spine visible", "page flex showing PUR glue"],
+        "must_contain": ["square spine", "glue edge"]
+      },
+      "thread-sewn": {
+        "type": "craft",
+        "scenes": ["book open flat 180°", "thread visible in spine", "sewn signatures"],
+        "must_contain": ["thread", "flat-open 180°", "sewn signatures"]
+      },
+      "hardcover": {
+        "type": "craft",
+        "scenes": ["rigid cover visible", "book standing on shelf", "case-bound"],
+        "must_contain": ["rigid", "thick board", "case-bound"]
+      }
+    }
+  },
+  "educational": {
+    "selling_points": ["child-safe-ink", "thick-card", "large-font", "rounded-corner"],
+    "by_selling_point": {
+      "child-safe-ink": {
+        "type": "function",
+        "scenes": ["child holding book", "in classroom with kids", "child's hand turning page"],
+        "must_contain": ["child", "kid hand", "classroom"],
+        "must_not_contain": ["adult only"]
+      },
+      "thick-card": {
+        "type": "material",
+        "scenes": ["card stack with thickness edge", "compared to regular paper"],
+        "must_contain": ["thickness edge", "card stack"]
+      },
+      "rounded-corner": {
+        "type": "craft",
+        "scenes": ["corner close-up showing rounded edge", "safe for child play"],
+        "must_contain": ["rounded corner", "child-safe edge"]
+      }
+    }
+  },
+  "menus": {
+    "selling_points": ["waterproof", "lamination", "replaceable-inner", "bi-fold", "tri-fold"],
+    "by_selling_point": {
+      "waterproof": {
+        "type": "function",
+        "scenes": ["menu with water drops on it", "spilled drink near menu", "kitchen prep with menu nearby"],
+        "must_contain": ["water drops", "spill", "wet surface"],
+        "must_not_contain": ["dry menu only"]
+      },
+      "replaceable-inner": {
+        "type": "craft",
+        "scenes": ["menu cover open showing replaceable inner", "inner pages being swapped"],
+        "must_contain": ["inner pages", "removable", "cover + inner visible"]
+      }
+    }
+  },
+  "red-packets": {
+    "selling_points": ["foil-stamped", "uv-spot", "die-cut", "chinese-new-year"],
+    "by_selling_point": {
+      "foil-stamped": {
+        "type": "craft",
+        "scenes": ["gold foil catching lantern light", "Chinese New Year decoration", "red packet in festive setting"],
+        "must_contain": ["gold foil", "festive", "lantern"],
+        "must_not_contain": ["plain red without context"]
+      },
+      "chinese-new-year": {
+        "type": "scene",
+        "scenes": ["Chinese New Year dinner table", "lanterns and decorations", "fu character visible", "firecrackers", "lucky money envelope"],
+        "must_contain": ["lantern", "fu character", "festive decoration", "Chinese knot"],
+        "must_not_contain": ["western holiday", "no festive context"]
+      }
+    }
+  },
+  "calendars": {
+    "selling_points": ["desk-calendar", "wall-calendar", "weekly-planner", "embossed-spiral"],
+    "by_selling_point": {
+      "desk-calendar": {
+        "type": "scene",
+        "scenes": ["calendar on office desk with daily flip", "ring-bound spiral visible"],
+        "must_contain": ["spiral", "desk setup", "daily page"]
+      },
+      "embossed-spiral": {
+        "type": "craft",
+        "scenes": ["spiral binding close-up", "embossed metal coil"],
+        "must_contain": ["spiral", "embossed metal", "binding detail"]
+      }
+    }
+  },
+  "banners": {
+    "selling_points": ["roll-up", "x-frame", "outdoor-durable", "double-sided"],
+    "by_selling_point": {
+      "roll-up": {
+        "type": "scene",
+        "scenes": ["roll-up banner being pulled up", "retractable base visible", "exhibition booth"],
+        "must_contain": ["retractable base", "exhibition context", "banner standing"]
+      },
+      "x-frame": {
+        "type": "scene",
+        "scenes": ["X-frame stand fully assembled", "outdoor event"],
+        "must_contain": ["X-frame", "assembled"]
+      }
+    }
+  },
+  "envelopes": {
+    "selling_points": ["kraft", "waterproof", "peel-and-seal", "die-cut-window"],
+    "by_selling_point": {
+      "waterproof": {
+        "type": "function",
+        "scenes": ["envelope in rain", "wet mailbox", "envelope with water drops"],
+        "must_contain": ["water", "wet", "rain"]
+      }
+    }
+  },
+  "japan-doujin": {
+    "selling_points": ["doujinshi", "anime-style", "limited-edition", "comiket"],
+    "by_selling_point": {
+      "doujinshi": {
+        "type": "scene",
+        "scenes": ["comiket booth display", "anime/manga style cover", "limited edition number visible"],
+        "must_contain": ["anime style", "comiket context", "limited number"]
+      },
+      "comiket": {
+        "type": "scene",
+        "scenes": ["Comiket booth", "C95/C96/C97 banner", "doujinshi table display"],
+        "must_contain": ["Comiket", "booth", "anime convention"]
+      }
+    }
+  }
+}

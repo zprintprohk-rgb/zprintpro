@@ -1,0 +1,14 @@
+﻿transparent-stickers starts at L2177
+Looking for next slug: at 4-space indent (end of transparent-stickers block):
+  Next slug at L2343: slug: 'removable-stickers',
+  transparent-stickers block ends at L2340:   },
+python : Traceback (most recent call last):
+所在位置 行:1 字符: 131
++ ... ; cd F:\zprintpro-nextjs; python .hermes\find-sku-end.py 2>&1 | Out-F ...
++                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+  File "F:\zprintpro-nextjs\.hermes\find-sku-end.py", line 34, in <module>
+    print(f"    L{k+1}: {lines[k][:130]}")
+UnicodeEncodeError: 'gbk' codec can't encode character '\u30fb' in position 59: illegal multibyte sequence

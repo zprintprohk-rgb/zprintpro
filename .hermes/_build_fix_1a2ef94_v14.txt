@@ -1,0 +1,23 @@
+
+> zprintpro-nextjs@1.0.0 build
+> next build && node scripts/generate-sitemap.js
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local, .env
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+Failed to compile.
+
+./src/lib/pricing.ts:778:7
+Type error: Property '"business-card"' is missing in type '{ sticker: number; flyer: number; 'paper-bag': number; box: number; poster: number; }' but required in type 'Record<ProductType, number>'.
+
+[0m [90m 776 |[39m [36mimport[39m type { [33mQuotationFormData[39m[33m,[39m [33mPriceBreakdown[39m[33m,[39m [33mProductType[39m[33m,[39m [33mPaperType[39m[33m,[39m [33mProcessType[39m } [36mfrom[39m [32m'@/types/quotation'[39m[33m;[39m[0m
+[0m [90m 777 |[39m[0m
+[0m[31m[1m>[22m[39m[90m 778 |[39m [36mconst[39m basePrices[33m:[39m [33mRecord[39m[33m<[39m[33mProductType[39m[33m,[39m number[33m>[39m [33m=[39m {[0m
+[0m [90m     |[39m       [31m[1m^[22m[39m[0m
+[0m [90m 779 |[39m   [32m'sticker'[39m[33m:[39m [35m200[39m[33m,[39m[0m
+[0m [90m 780 |[39m   [32m'sticker'[39m[33m:[39m [35m150[39m[33m,[39m[0m
+[0m [90m 781 |[39m   [32m'flyer'[39m[33m:[39m [35m180[39m[33m,[39m[0m
+Next.js build worker exited with code: 1 and signal: null

@@ -1,0 +1,56 @@
+﻿git : 🔍 Running pre-commit checks...
+所在位置 行:1 字符: 131
++ ... pro-nextjs; git commit -m "feat(tracking): 008 quote_requests 度量层 - 跨 ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (🔍 Running pre-commit checks...:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+1️⃣ Checking for UTF-16/CRLF issues...
+🔍 Checking staged files for encoding issues...
+
+✅ No staged files to check.
+2️⃣ Checking for simplified Chinese in title_zh...
+
+📋 简体字检测报告
+
+================================================================================
+✅ 没有检测到简体字残留
+✅ 所有 zh-hk 产品名称都是纯繁体中文
+
+================================================================================
+🎯 简体字检测完成！
+✅ All pre-commit checks passed!
+On branch main
+Your branch is ahead of 'origin_ssh/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   public/sitemap-en.xml
+	modified:   public/sitemap-image.xml
+	modified:   public/sitemap-index.xml
+	modified:   public/sitemap-ja.xml
+	modified:   public/sitemap-zh-hk.xml
+	modified:   public/sitemap.xml
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.hermes/88fd-about.txt
+	.hermes/88fd-products.txt
+	.hermes/B-22词清单-attachment.txt
+	.hermes/_67b_11_clean_log.txt
+	.hermes/_67b_11_commit_msg.txt
+	.hermes/_67b_11_final_check.py
+	.hermes/_67b_22_seo_diff.json
+	.hermes/_67b_22_seo_diff.md
+	.hermes/_67b_22_seo_diff_applied.txt
+	.hermes/_67b_apply_seo.py
+	.hermes/_67b_seo_v2_batch.py
+	.hermes/_67b_verify.py
+	.hermes/__pycache__/
+	.hermes/_amend_noverify.txt
+	.hermes/_amend_out.txt
+	.hermes/_amend_precommit.txt
+	.hermes/_amend_precommit_v2.txt
+	.hermes/_bak_diff.txt

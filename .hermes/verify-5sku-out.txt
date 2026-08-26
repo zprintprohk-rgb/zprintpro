@@ -1,0 +1,31 @@
+﻿== removable-stickers ==
+  optimizedAt: 2026-08-05
+  optimizationRound: 1
+  7-word 繁體 適配行業: 餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動
+  Has 7-word in 3 locale descriptions: ?
+
+== folded-leaflets ==
+  optimizedAt: 2026-08-05
+  optimizationRound: 1
+  7-word 繁體 適配行業: 餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動
+  Has 7-word in 3 locale descriptions: ?
+
+== same-day-flyers ==
+  optimizedAt: 2026-08-05
+  optimizationRound: 1
+  7-word 繁體 適配行業: 餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動
+  Has 7-word in 3 locale descriptions: ?
+
+== electronics-packaging-box ==
+  optimizedAt: 2026-08-05
+  optimizationRound: 1
+  7-word 繁體 適配行業: 餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動
+  Has 7-word in 3 locale descriptions: ?
+
+== a4-flyers ==
+  optimizedAt: 2026-08-05
+  optimizationRound: 2
+  7-word 繁體 適配行業: 餐飲外賣、零售精品、跨境電商、美妝護膚、教育培訓、婚慶、品牌活動
+  Has 7-word in 3 locale descriptions: ?
+  zh-hk: ✓ 餐飲外賣 found
+

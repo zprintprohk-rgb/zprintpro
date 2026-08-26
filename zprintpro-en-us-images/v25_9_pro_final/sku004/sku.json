@@ -1,0 +1,19 @@
+{
+  "number": "sku004",
+  "sku": "RP-001",
+  "market": "zh-hk",
+  "category": "red-packets",
+  "view": "HERO",
+  "prompt_version": "V25.9",
+  "images": [
+    {
+      "webp_filename": "zprintpro-red-packets-foil-red-packets-zh-hk-hero.webp",
+      "webp_path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\sku004\\zprintpro-red-packets-foil-red-packets-zh-hk-hero.webp",
+      "size_kb": 116.19,
+      "dimensions": "1200x1200",
+      "alt_text": "燙金利是封 GOOD LUCK 設計，金龍金鳳牡丹福字圖案，淺粉象牙白背景配暖色光斑，亮面淺木桌面 - zprintpro 利是封印刷 客製紅包",
+      "seo_keywords": "red packets, lucky red packets, 利是封, 燙金利是封, custom red envelope printing",
+      "original_png": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\_originals\\RP-001_zh-hk.png"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "images": [
+    {
+      "sku": "BC-001",
+      "file": "HERO.webp",
+      "status": "detected",
+      "box_px": {
+        "x0": 660,
+        "y0": 780,
+        "x1": 1199,
+        "y1": 1049,
+        "w": 539,
+        "h": 269
+      },
+      "diag_crop": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\_wm_diag\\BC-001-HERO_wmdiag.png",
+      "ps_advice": "select region (660,780)-(1199,1049), content-aware fill or clone stamp"
+    },
+    {
+      "sku": "BC-001",
+      "file": "DETAIL.webp",
+      "status": "detected",
+      "box_px": {
+        "x0": 660,
+        "y0": 780,
+        "x1": 1199,
+        "y1": 1190,
+        "w": 539,
+        "h": 410
+      },
+      "diag_crop": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\_wm_diag\\BC-001-DETAIL_wmdiag.png",
+      "ps_advice": "select region (660,780)-(1199,1190), content-aware fill or clone stamp"
+    },
+    {
+      "sku": "BC-001",
+      "file": "VARIETY-C.webp",
+      "status": "detected",
+      "box_px": {
+        "x0": 660,
+        "y0": 780,
+        "x1": 1199,
+        "y1": 1199,
+        "w": 539,
+        "h": 419
+      },
+      "diag_crop": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\_wm_diag\\BC-001-VARIETY-C_wmdiag.png",
+      "ps_advice": "select region (660,780)-(1199,1199), content-aware fill or clone stamp"
+    },
+    {
+      "sku": "BC-001",
+      "file": "MULTI-ANGLE.webp",
+      "status": "detected",
+      "box_px": {
+        "x0": 660,
+        "y0": 780,
+        "x1": 1199,
+        "y1": 1199,
+        "w": 539,
+        "h": 419
+      },
+      "diag_crop": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\_wm_diag\\BC-001-MULTI-ANGLE_wmdiag.png",
+      "ps_advice": "select region (660,780)-(1199,1199), content-aware fill or clone stamp"
+    },
+    {
+      "sku": "BC-001",
+      "file": "card-stand.webp",
+      "status": "detected",
+      "box_px": {
+        "x0": 660,
+        "y0": 780,
+        "x1": 1199,
+        "y1": 1189,
+        "w": 539,
+        "h": 409
+      },
+      "diag_crop": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\_wm_diag\\BC-001-card-stand_wmdiag.png",
+      "ps_advice": "select region (660,780)-(1199,1189), content-aware fill or clone stamp"
+    },
+    {
+      "sku": "ST-001",
+      "file": "HERO.webp",
+      "status": "detected",
+      "box_px": {
+        "x0": 660,
+        "y0": 780,
+        "x1": 1197,
+        "y1": 1199,
+        "w": 537,
+        "h": 419
+      },
+      "diag_crop": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\_wm_diag\\ST-001-HERO_wmdiag.png",
+      "ps_advice": "select region (660,780)-(1197,1199), content-aware fill or clone stamp"
+    },
+    {
+      "sku": "ST-001",
+      "file": "DETAIL.webp",
+      "status": "detected",
+      "box_px": {
+        "x0": 660,
+        "y0": 780,
+        "x1": 981,
+        "y1": 1010,
+        "w": 321,
+        "h": 230
+      },
+      "diag_crop": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\_wm_diag\\ST-001-DETAIL_wmdiag.png",
+      "ps_advice": "select region (660,780)-(981,1010), content-aware fill or clone stamp"
+    },
+    {
+      "sku": "ST-001",
+      "file": "variety.webp",
+      "status": "detected",
+      "box_px": {
+        "x0": 660,
+        "y0": 780,
+        "x1": 1199,
+        "y1": 1199,
+        "w": 539,
+        "h": 419
+      },
+      "diag_crop": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\_wm_diag\\ST-001-variety_wmdiag.png",
+      "ps_advice": "select region (660,780)-(1199,1199), content-aware fill or clone stamp"
+    },
+    {
+      "sku": "ST-001",
+      "file": "MULTI-ANGLE.webp",
+      "status": "detected",
+      "box_px": {
+        "x0": 660,
+        "y0": 780,
+        "x1": 1199,
+        "y1": 1199,
+        "w": 539,
+        "h": 419
+      },
+      "diag_crop": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\_wm_diag\\ST-001-MULTI-ANGLE_wmdiag.png",
+      "ps_advice": "select region (660,780)-(1199,1199), content-aware fill or clone stamp"
+    }
+  ],
+  "note": "FULL-crop policy: do NOT crop final; use coords for PS inpainting. Diagnostic crops under raw/_wm_diag/"
+}

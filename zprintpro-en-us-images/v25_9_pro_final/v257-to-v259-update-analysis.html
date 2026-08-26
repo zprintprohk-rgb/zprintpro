@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>V25.7 → V25.9 更新迭代分析</title>
+<style>
+:root{--ink:#1a1a1a;--mut:#667;--line:#e5e7eb;--bg:#f8f9fa;--acc:#7c3aed;--ok:#1a7f37}
+*{box-sizing:border-box} body{font-family:"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif;margin:0;background:var(--bg);color:var(--ink);line-height:1.65}
+.wrap{max-width:1080px;margin:0 auto;padding:32px 20px 60px}
+h1{font-size:25px;margin:0 0 6px} h2{font-size:18px;margin:30px 0 10px;border-left:4px solid var(--acc);padding-left:10px}
+.sub{color:var(--mut);margin-bottom:16px;font-size:13.5px}
+.metrics{display:flex;gap:12px;flex-wrap:wrap;margin:16px 0}
+.metric{flex:1;min-width:160px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.metric .num{font-size:22px;font-weight:800} .metric .lab{font-size:12px;color:var(--mut)}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;font-size:13px;margin:8px 0}
+th,td{padding:7px 9px;border-bottom:1px solid var(--line);text-align:center} th{background:#f3f4f6}
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:13px 16px;margin:10px 0;font-size:13.5px}
+.card-title{font-weight:700;margin-bottom:6px}
+.quote{background:#f6f4ff;border-left:3px solid var(--acc);padding:8px 12px;margin:8px 0;font-size:12.8px;color:#333}
+.warn{background:#fff4e5;border:1px solid #f0c36d;border-radius:10px;padding:11px 14px;margin:10px 0;font-size:13px}
+.ok{color:var(--ok);font-weight:700}
+@media(max-width:640px){.wrap{padding:20px 12px} table{font-size:11.5px}}
+</style></head><body><div class="wrap">
+<h1>V25.7 → V25.9 三语言生图提示词 · 更新迭代分析</h1>
+<div class="sub">zprintpro 电商生图提示词体系（99 SKU × 4 视图 × EN/ZH-HK/JA）｜两路分析 Agent 独立产出 + 主线生图实测交叉验证｜2026-08-25</div>
+
+<div class="metrics">
+<div class="metric"><div class="num">3 版</div><div class="lab">V25.7 九段标签 → V25.8 11 段 → V25.9 一段话</div></div>
+<div class="metric"><div class="num">2723→1710</div><div class="lab">BC-001 HERO 字符量（超限→精简）</div></div>
+<div class="metric"><div class="num">396/396</div><div class="lab">V25.9 三语言×99SKU×4视图完整性</div></div>
+<div class="metric"><div class="num">100%</div><div class="lab">色调主基调四短语覆盖率（三语言各 396 条）</div></div>
+</div>
+
+<h2>一、版本演进总览</h2>
+<table><tr><th style="text-align:left">维度</th><th style="text-align:left">V25.7</th><th style="text-align:left">V25.8</th><th style="text-align:left">V25.9 <span class="ok">最终</span></th></tr><tr><td style='text-align:left'><b>结构</b></td><td style='text-align:left'>九段标签式（WHERE USED/AUDIENCE/.../NEGATIVE）</td><td style='text-align:left'>11 段标签式</td><td style='text-align:left'>一段话 5 层：色彩→产品→场景→构图→负面</td></tr>
+<tr><td style='text-align:left'><b>BC-001 HERO 字符</b></td><td style='text-align:left'>2196（≤2400 OK）</td><td style='text-align:left'>2723（OVER 超限）</td><td style='text-align:left'>1710（EN 全量 avg 1519）</td></tr>
+<tr><td style='text-align:left'><b>手部</b></td><td style='text-align:left'>HERO 单手写卡片</td><td style='text-align:left'>全无手（×3 重复）</td><td style='text-align:left'>无手，负面一句</td></tr>
+<tr><td style='text-align:left'><b>色彩</b></td><td style='text-align:left'>温和暖调</td><td style='text-align:left'>鲜艳饱和 + noble elegant</td><td style='text-align:left'>浅色通透主基调 + 三市场色 + category tones 次基调</td></tr>
+<tr><td style='text-align:left'><b>SEO 段</b></td><td style='text-align:left'>独立 SEO 段</td><td style='text-align:left'>独立 SEO 段</td><td style='text-align:left'>删除（保留 SEO_FILENAME）</td></tr>
+<tr><td style='text-align:left'><b>设计美感</b></td><td style='text-align:left'>仅文字排版</td><td style='text-align:left'>仅文字排版</td><td style='text-align:left'>16 类目图案主题 + 三市场审美段</td></tr></table>
+
+<h2>二、颜色段演进矩阵（用户重点）</h2>
+<table><tr><th style="text-align:left">项</th><th style="text-align:left">V25.7</th><th style="text-align:left">V25.8</th><th style="text-align:left">V25.9 最终</th></tr><tr><td style='text-align:left'><b>主基调</b></td><td style='text-align:left'>warm gold foil, ivory, cream</td><td style='text-align:left'>vivid saturated, bright cheerful</td><td style='text-align:left'><b>Light airy pastel tones + luminous and translucent + elegant noble colors</b></td></tr>
+<tr><td style='text-align:left'><b>通透感</b></td><td style='text-align:left'>未强调</td><td style='text-align:left'>高调高亮（厚饱和）</td><td style='text-align:left'><b>luminous and translucent + background bright and well-lit</b></td></tr>
+<tr><td style='text-align:left'><b>禁压抑</b></td><td style='text-align:left'>no dark gloomy（1 处）</td><td style='text-align:left'>COLOR+AVOID 双写</td><td style='text-align:left'><b>no dark heavy gloomy colors, never flat or dull</b>（色彩段首）</td></tr>
+<tr><td style='text-align:left'><b>EN 色</b></td><td style='text-align:left'>warm gold foil, ivory, cream</td><td style='text-align:left'>vivid warm gold foil, bright ivory</td><td style='text-align:left'><b>soft blush pink, champagne gold, cream white, sage green, dusty blue, warm ivory</b></td></tr>
+<tr><td style='text-align:left'><b>ZH-HK 色</b></td><td style='text-align:left'>—</td><td style='text-align:left'>与 EN 同底</td><td style='text-align:left'><b>festive soft pink, rich champagne gold, warm ivory, jade green accents, lucky red touches</b></td></tr>
+<tr><td style='text-align:left'><b>JA 色</b></td><td style='text-align:left'>—</td><td style='text-align:left'>粗糙拼接</td><td style='text-align:left'><b>sakura pink, light gold, soft lavender, mint green, pure white, warm cream</b></td></tr></table>
+
+<h2>三、每次改动的考虑因素</h2>
+<div class="card"><div class="card-title">V25.7 — 商业可信度与视图分工</div>
+<div class="quote">"V25.6 基础上修 6 项：1. 虚构品牌名小logo+短文案主视觉双层；2. VARIETY 多款设计排列无手；3. MULTI-ANGLE 中性桌面纯产品三视图；4. BC 直边；5. PB 鸡眼扣；6. 文档版 ≤2400 字符"</div>
+品牌小 logo+短文案双层避免 AI 乱编文字；展示类视图先无手化（HERO 仍保留手传递使用感）；BC 直边/PB 鸡眼扣为印刷工艺真实感纠偏。</div>
+
+<div class="card"><div class="card-title">V25.8 — 出图质量复盘与点击率导向</div>
+<div class="quote">"V25.7 基础上修 5 项：1. 全部去掉手；2. 强调 1:1 square；3. 鲜艳饱和色彩；4. 强虚化背景；5. zh-hk 加右上角大红色爆炸贴"</div>
+V25.7 的手是 AI 翻车重灾区（手指畸形/多手）→ 产品独立入镜配道具；电商主图统一 1:1 适配 PDP；缩略图必须"跳出来"→ 全面鲜艳饱和 + 高调亮；强虚化兼顾产品 tack-sharp 与行业场景暗示；ZH-HK 爆炸贴适配港台营销习惯。</div>
+
+<div class="card"><div class="card-title">V25.9 — 模型可解性与色彩路线回调（结构收官）</div>
+<div class="quote">"V25.8 问题: 11段标签式结构, SEO关键词混入, '无手'重复3次, avg 1900+ chars；V25.9 改进: 一段话, 去SEO, 去重复, avg ~800 chars, 模型更易理解"</div>
+按生成逻辑线性排列（色彩→人群产品材质设计美感→虚化场景→构图→负面），模型像读自然语言题面；V25.8 超限（2723 OVER）→ V25.9 EN avg 1519；SEO 对生图无价值删减；<b>核心：V25.8 全饱和高亮在参考图中暴露"浓艳、腻、缺通透" → 按参考图审美校准为浅色通透主基调 + 三市场独立浅色系</b>，category tones 保留品类饱和落点（金箔烫金本色）；新增 16 类目图案主题 + 三市场审美段，从"物品说明书"升级为"摄影+设计题面"。</div>
+
+<h2>四、交叉核验结果（交叉核验员）</h2>
+<table>
+<tr><th style="text-align:left">核验项</th><th>EN</th><th>ZH-HK</th><th>JA</th></tr>
+<tr><td style="text-align:left">SKU 章节 / 提示词条数</td><td>99 / 396</td><td>99 / 396</td><td>99 / 396</td></tr>
+<tr><td style="text-align:left">主基调四短语覆盖率</td><td class="ok">396/396</td><td class="ok">396/396</td><td class="ok">396/396</td></tr>
+<tr><td style="text-align:left">市场专属色命中</td><td class="ok">6/6</td><td class="ok">5/5</td><td class="ok">6/6</td></tr>
+<tr><td style="text-align:left">SEO_FILENAME 唯一性 / 截断</td><td class="ok">396 唯一 / 0</td><td class="ok">396 唯一 / 0</td><td class="ok">396 唯一 / 0</td></tr>
+<tr><td style="text-align:left">三语言名副其实（繁中/日文）</td><td>—</td><td class="ok">燙金工藝/百個可印</td><td class="ok">アートブック/サクスタジオ</td></tr>
+</table>
+
+<h2>五、主线实测补充：V25.9 提示词两处内部矛盾（生图实证）</h2>
+<div class="warn"><b>RP-001（ZH-HK 红包）</b>：主基调浅色通透 vs category tones "vivid festive Chinese red, deep crimson" + 场景 "dark walnut wood table" → 首版生成深红暗调；已修正（soft pink 主调/浅木桌/浅色背景）重生成，浅色验证通过。<br><br>
+<b>DJ-001（JA 同人志）</b>：场景 "black convention tablecloth"（黑色会展桌布）→ 首版背景黑色过深；已修正（soft pink tablecloth + 粉红/浅蓝展台）重生成，粉蓝展台验证通过。<br><br>
+<b>建议</b>：批量跑 99 SKU 前系统性清理 category tones/场景段深色冲突项（红色系降为点缀、场景道具避开黑桌布/深桌面）。</div>
+
+<h2>六、最终结论</h2>
+<div class="card">V25.9 是提示词体系从"标签说明书"到"一段话题面"的结构性收官：砍掉对生图无益的 SEO 段与三重重复禁令，2723 字符超限标签压缩为 1269–1760 字符单段自然语言，按生成顺序线性组织；核心变化在色彩——放弃 V25.8 全民鲜艳高饱和，以参考图审美校准的<b>浅色通透主基调</b>（Light airy pastel tones as dominant palette, luminous and translucent, elegant noble colors, rich color curves with depth and dimension, no dark heavy gloomy colors）为纲，为 EN/ZH-HK/JA 三市场分别定制 airy pastel（灰蓝叠层）、喜庆金红（翡翠绿点缀）、樱花淡彩（wagara 日纹）三套浅色系，V25.8 饱和金箔色降级为 category tones 保产品本色。实测 5 SKU 成图全部浅色通透达标（RP/DJ 两处矛盾修正后），与 V25.9 颜色规范表逐项对照一致。</div>
+</div></body></html>

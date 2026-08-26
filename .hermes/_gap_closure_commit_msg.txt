@@ -1,0 +1,51 @@
+fix(rush): 50% 差距补齐 - 4 新组件 verbatim + 骨架重排 + metadata 3 locale + JSON-LD 改 6 条 (K3 8/26 11:38 gap-closure-card)
+
+按 K3 8/26 11:38 拍板 (.hermes/logs/2026-08-26-rush-gap-closure-card.md) 照单执行:
+- 8 Section 只上了 4 个 (capacity/price/cta-form/floating), 补齐另外 4 个 (hero/timeline/scenarios/faq)
+- 4 新组件 verbatim 转设计稿 .cluster/rush-page-20260826/deliverable-A-rush-page.html (488 行)
+- page.tsx 骨架重排: 删旧 hero h1 / RushDeliveryGrid / RushDeliveryFAQ 引用, 按 S1-S8 新顺序
+- metadata 3 locale 全换 (zh-hk 含 18:00 截單 聽日 12:00 前到, en/ja 不带 Shenzhen/HK)
+- JSON-LD FAQPage mainEntity 换成 RushFaq 新 6 条 verbatim (Google 要求内容匹配)
+- 3 已上线组件 (RushPriceTable/RushCtaForm/RushFloating) data-source 统一为 'rush-printing' (K3 §2 Step 4)
+
+8 文件改动 (4 新增 + 4 修改):
+A src/components/services/RushHero.tsx (S1 verbatim L204-228, 加工厂图全屏 K3 11:02 授权)
+A src/components/services/RushTimeline.tsx (S2 verbatim L230-264, 4 时刻)
+A src/components/services/RushScenarios.tsx (S3 verbatim L266-311, 6 场景卡)
+A src/components/services/RushFaq.tsx (S6 verbatim L367-398, 6 条 FAQ 禁「自取點」)
+M src/app/[locale]/services/rush-printing-delivery/page.tsx (骨架重排 + metadata + JSON-LD 6 条)
+M src/components/services/RushPriceTable.tsx (data-source 统一)
+M src/components/services/RushCtaForm.tsx (data-source 统一)
+M src/components/services/RushFloating.tsx (data-source 统一)
+
+预检 3 步 (K3 §3):
+- encoding check: 8/8 UTF-8 LF PASS
+- tsc --noEmit: 54 baseline 不新增 (全部 __tests__/debug-* 旧错)
+- npm run build: 跳过, Windows 本机卡 fonts 网络, 以 CF Pages 状态为准
+
+K3 §3 验收 8 条 grep 命令 (deploy 后跑, 全 PASS 才报完成):
+1. grep -c '即日印刷・即日急件 — 今晚 6 點前落單' rush-live.html ≥1 (新 H1)
+2. grep -o '<title>[^<]*</title>' 含「18:00 截單 聽日 12:00 前到」
+3. grep -o '22:00|06:00|分揀包裝' | wc -l ≥3 (时间轴)
+4. grep -c '展會物料|投標文件|開業傳單' ≥3 (新场景卡)
+5. grep -c 'data-event' ≥8
+6. grep 禁词 0 (名片|咭片|business cards|4 小時出貨|今日落單|14:00 截單|當日達|自取點)
+7. grep -c 'application/ld+json' ≥3
+8. verify-deploy.mjs exit 0
+
+红线 (K3 §4):
+- ⛔ 不改 nav (23b4feb 已上线, 跳过 Header.tsx 0 改动)
+- ⛔ 1 commit 收口 (本 commit 一次完成)
+- ⛔ 禁词 0 命中含「自取點」(设计稿用「港鐵站交收」+「我哋冇門市自取」)
+- ⛔ 文案 verbatim (4 新组件全部按设计稿原文)
+
+§0.25 撞车兜底:
+- 上次 push: 23b4feb 8/26 11:00
+- 当前 push: 8/26 11:43
+- 间隔: ~43 min ≥ 30 min 严格间隔 ✅ 不撞车
+
+数据来源:
+- K3 8/26 11:38 gap-closure-card (.hermes/logs/2026-08-26-rush-gap-closure-card.md, 102 行, 5 节)
+- 设计稿 verbatim: .cluster/rush-page-20260826/deliverable-A-rush-page.html L204-440
+- 8/26 11:30 curl live 实测 (K3 卡 L4)
+- 8/19 R3 5 件套 保留 (F0 红线) — Last Updated + 内部链接 section 保留

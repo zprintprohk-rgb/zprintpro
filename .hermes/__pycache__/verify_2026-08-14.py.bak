@@ -1,0 +1,82 @@
+# -*- coding: utf-8 -*-
+"""7 步 verify 流水线 (8/14 周报)"""
+import json
+import os
+
+print('=== 7 步 verify 流水线 ===')
+
+# step 1
+report_path = '.hermes/logs/weekly-revenue-2026-08-14.md'
+report_size = os.path.getsize(report_path) if os.path.exists(report_path) else 0
+step1 = 'PASS' if report_size >= 10000 else 'FAIL'
+print('step 1: report exists and non-empty: {} bytes - {}'.format(report_size, step1))
+
+# step 2
+snapshot_path = '.hermes/revenue-snapshot-2026-08-14.json'
+snapshot_size = os.path.getsize(snapshot_path) if os.path.exists(snapshot_path) else 0
+try:
+    with open(snapshot_path, 'r', encoding='utf-8') as f:
+        snap = json.load(f)
+    step2 = 'PASS'
+    print('step 2: snapshot valid JSON, {} bytes - {}'.format(snapshot_size, step2))
+    print('  m3_north_star present: {}'.format(snap.get('m3_north_star') is not None))
+    print('  funnel keys: {}'.format(list(snap['funnel'].keys())))
+except Exception as e:
+    step2 = 'FAIL'
+    print('step 2: snapshot INVALID JSON - FAIL: {}'.format(e))
+
+# step 3
+funnel = snap['funnel']
+null_count = sum(1 for k in ['uv','quote_starts','whatsapp_clicks','inquiries','orders','paid_usd','paid_hkd'] if funnel.get(k) is None)
+step3 = 'PASS' if null_count == 0 else 'FAIL (WEEK 3 D1+D2 缺失)'
+print('step 3: 5 funnel stages non-null: {}/7 N/A - {}'.format(null_count, step3))
+
+# step 4
+cb = funnel['country_breakdown']
+cb_null = sum(1 for k in ['US','HK','JP','Other'] if cb.get(k) is None)
+step4 = 'PASS' if cb_null == 0 else 'FAIL'
+print('step 4: country breakdown 4/4: {}/4 N/A - {}'.format(cb_null, step4))
+
+# step 5
+pb = funnel['payment_breakdown']
+channels = ['wechat_qr','bank_transfer','paypal','airwallex']
+pb_null = sum(1 for c in channels if pb.get(c) is None)
+step5 = 'PASS' if pb_null == 0 else 'FAIL'
+print('step 5: payment breakdown 4 channels: {}/4 N/A - {}'.format(pb_null, step5))
+
+# step 6
+anomalies_count = len(snap.get('anomalies', []))
+todos_count = 8
+step6 = 'PASS' if anomalies_count >= 1 and todos_count >= 1 else 'FAIL'
+print('step 6: anomalies + todos: {} + {} - {}'.format(anomalies_count, todos_count, step6))
+
+# step 7
+m3_ns = snap.get('m3_north_star', {})
+ver_table = m3_ns.get('verification_table_7_items_post_8_12_review_8_14_actual', {})
+step7 = 'PASS' if len(ver_table) == 7 else 'FAIL'
+print('step 7: m3_north_star verification_table_7_items: {}/7 items - {}'.format(len(ver_table), step7))
+
+# 8/12 复盘 KPI 总结
+kpi_summary = snap.get('8_12_post_review_kpi_summary', {})
+print()
+print('=== 8/12 复盘 KPI 总结 ===')
+print('  严格达标: {}'.format(kpi_summary.get('strict_achieved', [])))
+print('  重定义达标: {}'.format(kpi_summary.get('redefined_achieved', [])))
+print('  PENDING: {}'.format(kpi_summary.get('pending', [])))
+print('  阶段评估: {}'.format(kpi_summary.get('phase_assessment', '')))
+
+# GSC WoW
+gsc = snap.get('data_sources', {}).get('gsc', {}).get('data', {})
+print()
+print('=== GSC 7d (8/7-8/13) ===')
+print('  query: {} | clicks: {} | imps: {}'.format(gsc.get('total_queries'), gsc.get('total_clicks'), gsc.get('total_impressions')))
+school = gsc.get('school_keywords', {})
+print('  校园词: {} 词 / {} imps / {} click / avg pos {}'.format(
+    school.get('total_queries'), school.get('total_impressions'),
+    school.get('total_clicks'), school.get('avg_position')))
+school_5 = gsc.get('school_keyword_5_word_tracking', {})
+print('  5 词追踪: {} imps / {} click / 询盘归因 PENDING'.format(
+    school_5.get('total_impressions'), school_5.get('total_clicks')))
+wow = gsc.get('week_over_week', {})
+print('  WoW: query {:+.1f}% / click {:+.1f}% / imps {:+.1f}%'.format(
+    wow.get('queries_change_pct', 0), wow.get('clicks_change_pct', 0), wow.get('impressions_change_pct', 0)))

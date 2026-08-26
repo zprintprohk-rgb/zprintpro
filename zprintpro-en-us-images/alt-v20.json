@@ -1,0 +1,372 @@
+{
+  "zprintpro-greeting-cards-premium-greeting-cards-en-hero.webp": {
+    "sku_code": "BC-001",
+    "view": "HERO",
+    "alt_en": "300g premium greeting cards with 4-color printing. Optional matte/gloss lamination, foil stamping, spot UV. Perfect for Christmas cards, New...",
+    "seo_filename": "zprintpro-greeting-cards-premium-greeting-cards-en.webp",
+    "score": 83.2,
+    "cand1_score": 29.1,
+    "cand2_score": 25.6,
+    "winner_score": 29.1,
+    "winner_path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand\\zprintpro-greeting-cards-premium-greeting-cards-en-hero_cand1.jpg",
+    "score_breakdown": {
+      "text_score": 4.3,
+      "edge_score": 59.5,
+      "text_present_bonus": 12.4,
+      "sat_score": 20.0,
+      "aesthetic_score": 61.1,
+      "sharpness": 1.64,
+      "edge_density": 1.1905
+    }
+  },
+  "zprintpro-greeting-cards-premium-greeting-cards-en-detail.webp": {
+    "sku_code": "BC-001",
+    "view": "DETAIL",
+    "alt_en": "300g premium greeting cards with 4-color printing. Optional matte/gloss lamination, foil stamping, spot UV. Perfect for Christmas cards, New...",
+    "seo_filename": "zprintpro-greeting-cards-premium-greeting-cards-en.webp",
+    "score": 85.3,
+    "cand1_score": 41.1,
+    "cand2_score": 35.5,
+    "winner_score": 41.1,
+    "winner_path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand\\zprintpro-greeting-cards-premium-greeting-cards-en-detail_cand1.jpg",
+    "score_breakdown": {
+      "text_score": 8.3,
+      "edge_score": 100,
+      "text_present_bonus": 25.9,
+      "sat_score": 28.3,
+      "aesthetic_score": 62.0,
+      "sharpness": 3.32,
+      "edge_density": 2.6686
+    }
+  },
+  "zprintpro-greeting-cards-premium-greeting-cards-en-variety.webp": {
+    "sku_code": "BC-001",
+    "view": "VARIETY-C",
+    "alt_en": "300g premium greeting cards with 4-color printing. Optional matte/gloss lamination, foil stamping, spot UV. Perfect for Christmas cards, New...",
+    "seo_filename": "zprintpro-greeting-cards-premium-greeting-cards-en.webp",
+    "score": 73.3,
+    "cand1_score": 44.0,
+    "cand2_score": 46.5,
+    "winner_score": 46.5,
+    "winner_path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand\\zprintpro-greeting-cards-premium-greeting-cards-en-variety_cand2.jpg",
+    "score_breakdown": {
+      "text_score": 8.6,
+      "edge_score": 100,
+      "text_present_bonus": 17.8,
+      "sat_score": 74.0,
+      "aesthetic_score": 69.4,
+      "sharpness": 3.73,
+      "edge_density": 4.5321
+    }
+  },
+  "zprintpro-greeting-cards-premium-greeting-cards-en-multi-angle.webp": {
+    "sku_code": "BC-001",
+    "view": "MULTI-ANGLE",
+    "alt_en": "300g premium greeting cards with 4-color printing. Optional matte/gloss lamination, foil stamping, spot UV. Perfect for Christmas cards, New...",
+    "seo_filename": "zprintpro-greeting-cards-premium-greeting-cards-en.webp",
+    "score": 85.2,
+    "cand1_score": 41.2,
+    "cand2_score": 36.9,
+    "winner_score": 41.2,
+    "winner_path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand\\zprintpro-greeting-cards-premium-greeting-cards-en-multi-angle_cand1.jpg",
+    "score_breakdown": {
+      "text_score": 8.6,
+      "edge_score": 100,
+      "text_present_bonus": 13.5,
+      "sat_score": 40.0,
+      "aesthetic_score": 62.0,
+      "sharpness": 3.89,
+      "edge_density": 3.9182
+    }
+  },
+  "zprintpro-greeting-cards-premium-greeting-cards-en-spread.webp": {
+    "sku_code": "BC-001",
+    "view": "SPREAD",
+    "alt_en": "300g premium greeting cards with 4-color printing. Optional matte/gloss lamination, foil stamping, spot UV. Perfect for Christmas cards, New...",
+    "seo_filename": "zprintpro-greeting-cards-premium-greeting-cards-en.webp",
+    "score": 84.9,
+    "cand1_score": 32.8,
+    "cand2_score": 41.4,
+    "winner_score": 41.4,
+    "winner_path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand\\zprintpro-greeting-cards-premium-greeting-cards-en-spread_cand2.jpg",
+    "score_breakdown": {
+      "text_score": 8.1,
+      "edge_score": 100,
+      "text_present_bonus": 41.5,
+      "sat_score": 44.6,
+      "aesthetic_score": 47.6,
+      "sharpness": 2.64,
+      "edge_density": 2.6764
+    }
+  },
+  "zprintpro-flyers-a4-flyers-en-hero.webp": {
+    "sku_code": "FL-001",
+    "view": "HERO",
+    "alt_en": "Standard A4 size, most common flyer format. 157g glossy paper, 4-color printing, vibrant colors., ISO 9001:2015 certified quality management...",
+    "seo_filename": "zprintpro-flyers-a4-flyers-en.webp"
+  },
+  "zprintpro-flyers-a4-flyers-en-detail.webp": {
+    "sku_code": "FL-001",
+    "view": "DETAIL",
+    "alt_en": "Standard A4 size, most common flyer format. 157g glossy paper, 4-color printing, vibrant colors., ISO 9001:2015 certified quality management...",
+    "seo_filename": "zprintpro-flyers-a4-flyers-en.webp"
+  },
+  "zprintpro-flyers-a4-flyers-en-variety.webp": {
+    "sku_code": "FL-001",
+    "view": "VARIETY-A",
+    "alt_en": "Standard A4 size, most common flyer format. 157g glossy paper, 4-color printing, vibrant colors., ISO 9001:2015 certified quality management...",
+    "seo_filename": "zprintpro-flyers-a4-flyers-en.webp"
+  },
+  "zprintpro-flyers-a4-flyers-en-multi-angle.webp": {
+    "sku_code": "FL-001",
+    "view": "MULTI-ANGLE",
+    "alt_en": "Standard A4 size, most common flyer format. 157g glossy paper, 4-color printing, vibrant colors., ISO 9001:2015 certified quality management...",
+    "seo_filename": "zprintpro-flyers-a4-flyers-en.webp"
+  },
+  "zprintpro-greeting-cards-thick-greeting-cards-400g-en-hero.webp": {
+    "sku_code": "BC-002",
+    "view": "HERO",
+    "alt_en": "400g ultra-thick greeting cards with substantial feel. Perfect for Christmas, New Year, wedding, milestone events. Optional foil stamping, U...",
+    "seo_filename": "zprintpro-greeting-cards-thick-greeting-cards-400g-en.webp"
+  },
+  "zprintpro-greeting-cards-thick-greeting-cards-400g-en-detail.webp": {
+    "sku_code": "BC-002",
+    "view": "DETAIL",
+    "alt_en": "400g ultra-thick greeting cards with substantial feel. Perfect for Christmas, New Year, wedding, milestone events. Optional foil stamping, U...",
+    "seo_filename": "zprintpro-greeting-cards-thick-greeting-cards-400g-en.webp"
+  },
+  "zprintpro-greeting-cards-thick-greeting-cards-400g-en-variety.webp": {
+    "sku_code": "BC-002",
+    "view": "VARIETY-C",
+    "alt_en": "400g ultra-thick greeting cards with substantial feel. Perfect for Christmas, New Year, wedding, milestone events. Optional foil stamping, U...",
+    "seo_filename": "zprintpro-greeting-cards-thick-greeting-cards-400g-en.webp"
+  },
+  "zprintpro-greeting-cards-thick-greeting-cards-400g-en-multi-angle.webp": {
+    "sku_code": "BC-002",
+    "view": "MULTI-ANGLE",
+    "alt_en": "400g ultra-thick greeting cards with substantial feel. Perfect for Christmas, New Year, wedding, milestone events. Optional foil stamping, U...",
+    "seo_filename": "zprintpro-greeting-cards-thick-greeting-cards-400g-en.webp"
+  },
+  "zprintpro-greeting-cards-thick-greeting-cards-400g-en-spread.webp": {
+    "sku_code": "BC-002",
+    "view": "SPREAD",
+    "alt_en": "400g ultra-thick greeting cards with substantial feel. Perfect for Christmas, New Year, wedding, milestone events. Optional foil stamping, U...",
+    "seo_filename": "zprintpro-greeting-cards-thick-greeting-cards-400g-en.webp"
+  },
+  "zprintpro-greeting-cards-foil-greeting-cards-en-hero.webp": {
+    "sku_code": "BC-003",
+    "view": "HERO",
+    "alt_en": "Foil-stamped greeting cards (gold/silver/rose gold). Metallic luster elevates premium feel for Christmas, wedding, baby 100-day celebration,...",
+    "seo_filename": "zprintpro-greeting-cards-foil-greeting-cards-en.webp"
+  },
+  "zprintpro-greeting-cards-foil-greeting-cards-en-detail.webp": {
+    "sku_code": "BC-003",
+    "view": "DETAIL",
+    "alt_en": "Foil-stamped greeting cards (gold/silver/rose gold). Metallic luster elevates premium feel for Christmas, wedding, baby 100-day celebration,...",
+    "seo_filename": "zprintpro-greeting-cards-foil-greeting-cards-en.webp"
+  },
+  "zprintpro-greeting-cards-foil-greeting-cards-en-variety.webp": {
+    "sku_code": "BC-003",
+    "view": "VARIETY-C",
+    "alt_en": "Foil-stamped greeting cards (gold/silver/rose gold). Metallic luster elevates premium feel for Christmas, wedding, baby 100-day celebration,...",
+    "seo_filename": "zprintpro-greeting-cards-foil-greeting-cards-en.webp"
+  },
+  "zprintpro-greeting-cards-foil-greeting-cards-en-multi-angle.webp": {
+    "sku_code": "BC-003",
+    "view": "MULTI-ANGLE",
+    "alt_en": "Foil-stamped greeting cards (gold/silver/rose gold). Metallic luster elevates premium feel for Christmas, wedding, baby 100-day celebration,...",
+    "seo_filename": "zprintpro-greeting-cards-foil-greeting-cards-en.webp"
+  },
+  "zprintpro-greeting-cards-foil-greeting-cards-en-spread.webp": {
+    "sku_code": "BC-003",
+    "view": "SPREAD",
+    "alt_en": "Foil-stamped greeting cards (gold/silver/rose gold). Metallic luster elevates premium feel for Christmas, wedding, baby 100-day celebration,...",
+    "seo_filename": "zprintpro-greeting-cards-foil-greeting-cards-en.webp"
+  },
+  "zprintpro-greeting-cards-spot-uv-greeting-cards-en-hero.webp": {
+    "sku_code": "BC-004",
+    "view": "HERO",
+    "alt_en": "Spot UV greeting cards with logo/pattern highlight + matte substrate for high contrast. Strong visual impact for Christmas, New Year, thank-...",
+    "seo_filename": "zprintpro-greeting-cards-spot-uv-greeting-cards-en.webp"
+  },
+  "zprintpro-greeting-cards-spot-uv-greeting-cards-en-detail.webp": {
+    "sku_code": "BC-004",
+    "view": "DETAIL",
+    "alt_en": "Spot UV greeting cards with logo/pattern highlight + matte substrate for high contrast. Strong visual impact for Christmas, New Year, thank-...",
+    "seo_filename": "zprintpro-greeting-cards-spot-uv-greeting-cards-en.webp"
+  },
+  "zprintpro-greeting-cards-spot-uv-greeting-cards-en-variety.webp": {
+    "sku_code": "BC-004",
+    "view": "VARIETY-C",
+    "alt_en": "Spot UV greeting cards with logo/pattern highlight + matte substrate for high contrast. Strong visual impact for Christmas, New Year, thank-...",
+    "seo_filename": "zprintpro-greeting-cards-spot-uv-greeting-cards-en.webp"
+  },
+  "zprintpro-greeting-cards-spot-uv-greeting-cards-en-multi-angle.webp": {
+    "sku_code": "BC-004",
+    "view": "MULTI-ANGLE",
+    "alt_en": "Spot UV greeting cards with logo/pattern highlight + matte substrate for high contrast. Strong visual impact for Christmas, New Year, thank-...",
+    "seo_filename": "zprintpro-greeting-cards-spot-uv-greeting-cards-en.webp"
+  },
+  "zprintpro-greeting-cards-spot-uv-greeting-cards-en-spread.webp": {
+    "sku_code": "BC-004",
+    "view": "SPREAD",
+    "alt_en": "Spot UV greeting cards with logo/pattern highlight + matte substrate for high contrast. Strong visual impact for Christmas, New Year, thank-...",
+    "seo_filename": "zprintpro-greeting-cards-spot-uv-greeting-cards-en.webp"
+  },
+  "zprintpro-greeting-cards-matte-greeting-cards-en-hero.webp": {
+    "sku_code": "BC-005",
+    "view": "HERO",
+    "alt_en": "Matte lamination greeting cards with smooth anti-fingerprint premium feel. Ideal for minimalist Christmas, New Year, thank-you cards. 300g c...",
+    "seo_filename": "zprintpro-greeting-cards-matte-greeting-cards-en.webp"
+  },
+  "zprintpro-greeting-cards-matte-greeting-cards-en-detail.webp": {
+    "sku_code": "BC-005",
+    "view": "DETAIL",
+    "alt_en": "Matte lamination greeting cards with smooth anti-fingerprint premium feel. Ideal for minimalist Christmas, New Year, thank-you cards. 300g c...",
+    "seo_filename": "zprintpro-greeting-cards-matte-greeting-cards-en.webp"
+  },
+  "zprintpro-greeting-cards-matte-greeting-cards-en-variety.webp": {
+    "sku_code": "BC-005",
+    "view": "VARIETY-C",
+    "alt_en": "Matte lamination greeting cards with smooth anti-fingerprint premium feel. Ideal for minimalist Christmas, New Year, thank-you cards. 300g c...",
+    "seo_filename": "zprintpro-greeting-cards-matte-greeting-cards-en.webp"
+  },
+  "zprintpro-greeting-cards-matte-greeting-cards-en-multi-angle.webp": {
+    "sku_code": "BC-005",
+    "view": "MULTI-ANGLE",
+    "alt_en": "Matte lamination greeting cards with smooth anti-fingerprint premium feel. Ideal for minimalist Christmas, New Year, thank-you cards. 300g c...",
+    "seo_filename": "zprintpro-greeting-cards-matte-greeting-cards-en.webp"
+  },
+  "zprintpro-greeting-cards-matte-greeting-cards-en-spread.webp": {
+    "sku_code": "BC-005",
+    "view": "SPREAD",
+    "alt_en": "Matte lamination greeting cards with smooth anti-fingerprint premium feel. Ideal for minimalist Christmas, New Year, thank-you cards. 300g c...",
+    "seo_filename": "zprintpro-greeting-cards-matte-greeting-cards-en.webp"
+  },
+  "zprintpro-greeting-cards-rounded-corner-greeting-cards-en-hero.webp": {
+    "sku_code": "BC-006",
+    "view": "HERO",
+    "alt_en": "Rounded corner greeting cards (R3mm die-cut), soft tactile feel with no corner lift. Perfect for cute Christmas, birthday, thank-you cards. ...",
+    "seo_filename": "zprintpro-greeting-cards-rounded-corner-greeting-cards-en.webp"
+  },
+  "zprintpro-greeting-cards-rounded-corner-greeting-cards-en-detail.webp": {
+    "sku_code": "BC-006",
+    "view": "DETAIL",
+    "alt_en": "Rounded corner greeting cards (R3mm die-cut), soft tactile feel with no corner lift. Perfect for cute Christmas, birthday, thank-you cards. ...",
+    "seo_filename": "zprintpro-greeting-cards-rounded-corner-greeting-cards-en.webp"
+  },
+  "zprintpro-greeting-cards-rounded-corner-greeting-cards-en-variety.webp": {
+    "sku_code": "BC-006",
+    "view": "VARIETY-C",
+    "alt_en": "Rounded corner greeting cards (R3mm die-cut), soft tactile feel with no corner lift. Perfect for cute Christmas, birthday, thank-you cards. ...",
+    "seo_filename": "zprintpro-greeting-cards-rounded-corner-greeting-cards-en.webp"
+  },
+  "zprintpro-greeting-cards-rounded-corner-greeting-cards-en-multi-angle.webp": {
+    "sku_code": "BC-006",
+    "view": "MULTI-ANGLE",
+    "alt_en": "Rounded corner greeting cards (R3mm die-cut), soft tactile feel with no corner lift. Perfect for cute Christmas, birthday, thank-you cards. ...",
+    "seo_filename": "zprintpro-greeting-cards-rounded-corner-greeting-cards-en.webp"
+  },
+  "zprintpro-greeting-cards-rounded-corner-greeting-cards-en-spread.webp": {
+    "sku_code": "BC-006",
+    "view": "SPREAD",
+    "alt_en": "Rounded corner greeting cards (R3mm die-cut), soft tactile feel with no corner lift. Perfect for cute Christmas, birthday, thank-you cards. ...",
+    "seo_filename": "zprintpro-greeting-cards-rounded-corner-greeting-cards-en.webp"
+  },
+  "zprintpro-stickers-waterproof-stickers-en-hero.webp": {
+    "sku_code": "ST-001",
+    "view": "HERO",
+    "alt_en": "PVC waterproof stickers with excellent water, UV, and abrasion resistance. Perfect for outdoor use, product labels, car decals. Free shippin...",
+    "seo_filename": "zprintpro-stickers-waterproof-stickers-en.webp"
+  },
+  "zprintpro-stickers-waterproof-stickers-en-detail.webp": {
+    "sku_code": "ST-001",
+    "view": "DETAIL",
+    "alt_en": "PVC waterproof stickers with excellent water, UV, and abrasion resistance. Perfect for outdoor use, product labels, car decals. Free shippin...",
+    "seo_filename": "zprintpro-stickers-waterproof-stickers-en.webp"
+  },
+  "zprintpro-stickers-waterproof-stickers-en-variety.webp": {
+    "sku_code": "ST-001",
+    "view": "VARIETY-A",
+    "alt_en": "PVC waterproof stickers with excellent water, UV, and abrasion resistance. Perfect for outdoor use, product labels, car decals. Free shippin...",
+    "seo_filename": "zprintpro-stickers-waterproof-stickers-en.webp"
+  },
+  "zprintpro-stickers-waterproof-stickers-en-multi-angle.webp": {
+    "sku_code": "ST-001",
+    "view": "MULTI-ANGLE",
+    "alt_en": "PVC waterproof stickers with excellent water, UV, and abrasion resistance. Perfect for outdoor use, product labels, car decals. Free shippin...",
+    "seo_filename": "zprintpro-stickers-waterproof-stickers-en.webp"
+  },
+  "zprintpro-stickers-transparent-stickers-en-hero.webp": {
+    "sku_code": "ST-002",
+    "view": "HERO",
+    "alt_en": "Transparent PET material creates invisible effect when applied. Perfect for cosmetics, food packaging, glass decoration. 适配行业: Beauty, Food ...",
+    "seo_filename": "zprintpro-stickers-transparent-stickers-en.webp"
+  },
+  "zprintpro-stickers-transparent-stickers-en-detail.webp": {
+    "sku_code": "ST-002",
+    "view": "DETAIL",
+    "alt_en": "Transparent PET material creates invisible effect when applied. Perfect for cosmetics, food packaging, glass decoration. 适配行业: Beauty, Food ...",
+    "seo_filename": "zprintpro-stickers-transparent-stickers-en.webp"
+  },
+  "zprintpro-stickers-transparent-stickers-en-variety.webp": {
+    "sku_code": "ST-002",
+    "view": "VARIETY-A",
+    "alt_en": "Transparent PET material creates invisible effect when applied. Perfect for cosmetics, food packaging, glass decoration. 适配行业: Beauty, Food ...",
+    "seo_filename": "zprintpro-stickers-transparent-stickers-en.webp"
+  },
+  "zprintpro-stickers-transparent-stickers-en-multi-angle.webp": {
+    "sku_code": "ST-002",
+    "view": "MULTI-ANGLE",
+    "alt_en": "Transparent PET material creates invisible effect when applied. Perfect for cosmetics, food packaging, glass decoration. 适配行业: Beauty, Food ...",
+    "seo_filename": "zprintpro-stickers-transparent-stickers-en.webp"
+  },
+  "zprintpro-stickers-removable-stickers-en-hero.webp": {
+    "sku_code": "ST-003",
+    "view": "HERO",
+    "alt_en": "Special adhesive design leaves no residue when removed. Perfect for car windows, glass displays, short-term exhibitions. **Best for**:season...",
+    "seo_filename": "zprintpro-stickers-removable-stickers-en.webp"
+  },
+  "zprintpro-stickers-removable-stickers-en-detail.webp": {
+    "sku_code": "ST-003",
+    "view": "DETAIL",
+    "alt_en": "Special adhesive design leaves no residue when removed. Perfect for car windows, glass displays, short-term exhibitions. **Best for**:season...",
+    "seo_filename": "zprintpro-stickers-removable-stickers-en.webp"
+  },
+  "zprintpro-stickers-removable-stickers-en-variety.webp": {
+    "sku_code": "ST-003",
+    "view": "VARIETY-A",
+    "alt_en": "Special adhesive design leaves no residue when removed. Perfect for car windows, glass displays, short-term exhibitions. **Best for**:season...",
+    "seo_filename": "zprintpro-stickers-removable-stickers-en.webp"
+  },
+  "zprintpro-stickers-removable-stickers-en-multi-angle.webp": {
+    "sku_code": "ST-003",
+    "view": "MULTI-ANGLE",
+    "alt_en": "Special adhesive design leaves no residue when removed. Perfect for car windows, glass displays, short-term exhibitions. **Best for**:season...",
+    "seo_filename": "zprintpro-stickers-removable-stickers-en.webp"
+  },
+  "zprintpro-stickers-small-batch-stickers-en-hero.webp": {
+    "sku_code": "ST-004",
+    "view": "HERO",
+    "alt_en": "Minimum A4 size order, no bulk inventory pressure. Perfect for startups, event promotion, personal creations. 适配行业: Indie IP, Doujin creator...",
+    "seo_filename": "zprintpro-stickers-small-batch-stickers-en.webp"
+  },
+  "zprintpro-stickers-small-batch-stickers-en-detail.webp": {
+    "sku_code": "ST-004",
+    "view": "DETAIL",
+    "alt_en": "Minimum A4 size order, no bulk inventory pressure. Perfect for startups, event promotion, personal creations. 适配行业: Indie IP, Doujin creator...",
+    "seo_filename": "zprintpro-stickers-small-batch-stickers-en.webp"
+  },
+  "zprintpro-stickers-small-batch-stickers-en-variety.webp": {
+    "sku_code": "ST-004",
+    "view": "VARIETY-A",
+    "alt_en": "Minimum A4 size order, no bulk inventory pressure. Perfect for startups, event promotion, personal creations. 适配行业: Indie IP, Doujin creator...",
+    "seo_filename": "zprintpro-stickers-small-batch-stickers-en.webp"
+  },
+  "zprintpro-stickers-small-batch-stickers-en-multi-angle.webp": {
+    "sku_code": "ST-004",
+    "view": "MULTI-ANGLE",
+    "alt_en": "Minimum A4 size order, no bulk inventory pressure. Perfect for startups, event promotion, personal creations. 适配行业: Indie IP, Doujin creator...",
+    "seo_filename": "zprintpro-stickers-small-batch-stickers-en.webp"
+  }
+}

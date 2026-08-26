@@ -1,0 +1,1075 @@
+{
+ "version": "v20.9.1-score-ledger-final + D7-channel-verify",
+ "date": "2026-08-17",
+ "task_cards": [
+  "55-v20-9-1-2sku-reout",
+  "56-v20-9-2-st001-batch"
+ ],
+ "standard": "visual score >= 9.0, DNA consistency + full product in frame hard gate, 1200x1200 WebP <=120KB, FULL no-crop, watermark to be removed via PS",
+ "skus": {
+  "BC-001": {
+   "name": "Premium Greeting Cards",
+   "views": {
+    "HERO": {
+     "selected": "cand1 (v20.9.5 real-enhance)",
+     "score": 9.8,
+     "rounds": {
+      "v20.9.2": {
+       "cand3": 4.5
+      },
+      "v20.9.3": {
+       "cand2": 1.5
+      },
+      "v20.9.4": {
+       "cand2": 1.5
+      },
+      "v20.9.5": {
+       "cand1": 9.8,
+       "cand2": 9.0,
+       "cand3": 7.0
+      }
+     },
+     "final": {
+      "file": "final_webp/HERO.webp",
+      "bytes": 108840,
+      "kb": 106.3,
+      "q": 90,
+      "pass": true
+     }
+    },
+    "DETAIL": {
+     "selected": "cand3 (v20.9.2)",
+     "score": 9.2,
+     "rounds": {
+      "v20.9.1": {
+       "cand3": 8.5
+      },
+      "v20.9.2": {
+       "cand3": 9.2
+      },
+      "v20.9.5": {
+       "cand1": 9.2,
+       "cand2": 7.5,
+       "cand3": 7.8
+      }
+     },
+     "final": {
+      "file": "final_webp/DETAIL.webp",
+      "bytes": 121348,
+      "kb": 118.4,
+      "q": 80,
+      "pass": true
+     }
+    },
+    "VARIETY-C": {
+     "selected": "cand2 (v20.9.1)",
+     "score": 9.6,
+     "rounds": {
+      "v20.9.1": {
+       "cand2": 9.6
+      }
+     },
+     "final": {
+      "file": "final_webp/VARIETY-C.webp",
+      "bytes": 111315,
+      "kb": 108.7,
+      "q": 80,
+      "pass": true
+     }
+    },
+    "MULTI-ANGLE": {
+     "selected": "cand1 (v20.9.2)",
+     "score": 9.5,
+     "rounds": {
+      "v20.9.1": {
+       "cand1": 9.5
+      },
+      "v20.9.2": {
+       "cand1": 9.5
+      },
+      "v20.9.4": {
+       "cand3": 9.5,
+       "cand2": 7.5,
+       "cand1": 0.0
+      }
+     },
+     "final": {
+      "file": "final_webp/MULTI-ANGLE.webp",
+      "bytes": 115302,
+      "kb": 112.6,
+      "q": 25,
+      "pass": true
+     }
+    },
+    "CARD-STAND": {
+     "selected": "cand1 (v20.9.5 D-7)",
+     "score": 9.6,
+     "rounds": {
+      "v20.9.5": {
+       "cand1": 9.6,
+       "cand2": 9.3,
+       "cand3": 9.0
+      }
+     },
+     "final": {
+      "file": "final_webp/card-stand.webp",
+      "bytes": 96698,
+      "kb": 94.4,
+      "q": 85,
+      "pass": true
+     },
+     "note": "D-7: replaces SPREAD; book-spread prior eliminated (CARDSTAND_BASE prompt replaces parsed book prompt)"
+    }
+   }
+  },
+  "ST-001": {
+   "name": "Waterproof Stickers",
+   "views": {
+    "HERO": {
+     "selected": "cand2 (v20.9.5 real-enhance)",
+     "score": 9.8,
+     "rounds": {
+      "v20.9.1": {
+       "cand3": 8.8
+      },
+      "v20.9.2": {
+       "cand1": 9.2
+      },
+      "v20.9.4": {
+       "cand1": 6.5
+      },
+      "v20.9.5": {
+       "cand1": 9.3,
+       "cand2": 9.8,
+       "cand3": 9.5
+      }
+     },
+     "final": {
+      "file": "final_webp/HERO.webp",
+      "bytes": 110500,
+      "kb": 107.9,
+      "q": 75,
+      "pass": true
+     }
+    },
+    "DETAIL": {
+     "selected": "cand3 (v20.9.5 real-enhance)",
+     "score": 9.6,
+     "rounds": {
+      "v20.9.1": {
+       "cand1": 8.8
+      },
+      "v20.9.2": {
+       "cand1": 4.5
+      },
+      "v20.9.4": {
+       "cand2": 7.0
+      },
+      "v20.9.5": {
+       "cand1": 9.3,
+       "cand2": 7.5,
+       "cand3": 9.6
+      }
+     },
+     "final": {
+      "file": "final_webp/DETAIL.webp",
+      "bytes": 115182,
+      "kb": 112.5,
+      "q": 85,
+      "pass": true
+     }
+    },
+    "VARIETY-A": {
+     "selected": "cand1 (v20.9.5 real-enhance)",
+     "score": 9.2,
+     "rounds": {
+      "v20.9.2": {
+       "cand1": 6.5
+      },
+      "v20.9.4": {
+       "cand3": 0.0
+      },
+      "v20.9.5": {
+       "cand1": 9.2,
+       "cand2": 9.0,
+       "cand3": 9.1
+      }
+     },
+     "final": {
+      "file": "final_webp/variety.webp",
+      "bytes": 117246,
+      "kb": 114.5,
+      "q": 40,
+      "pass": true
+     }
+    },
+    "MULTI-ANGLE": {
+     "selected": "cand1 (v20.9.1)",
+     "score": 9.8,
+     "rounds": {
+      "v20.9.1": {
+       "cand1": 9.8
+      },
+      "v20.9.2": {
+       "cand2": 9.2
+      }
+     },
+     "final": {
+      "file": "final_webp/MULTI-ANGLE.webp",
+      "bytes": 115302,
+      "kb": 112.6,
+      "q": 25,
+      "pass": true
+     }
+    }
+   }
+  },
+  "PKG-007": {
+   "name": "Magnetic Closure Gift Box",
+   "views": {
+    "BOX-OPEN": {
+     "selected": "cand1 (round2)",
+     "score": 9.15,
+     "pass": true,
+     "note": "D-7 channel verify (delivery 59)",
+     "rounds": {
+      "r1": {
+       "cand1": 8.8
+      },
+      "r2": {
+       "cand1": 9.15,
+       "cand2": 8.4,
+       "cand3": 8.7
+      }
+     }
+    }
+   }
+  },
+  "ED-002": {
+   "name": "Educational Certificates",
+   "views": {
+    "CERTIFICATE-SET": {
+     "selected": "cand2 (round2, text clause)",
+     "score": 9.1,
+     "pass": true,
+     "note": "D-7 channel verify (delivery 59)",
+     "rounds": {
+      "r1": {
+       "cand1": 8.8,
+       "cand2": 8.5,
+       "cand3": 9.0
+      },
+      "r2": {
+       "cand1": 9.0,
+       "cand2": 9.1,
+       "cand3": 8.8
+      }
+     }
+    }
+   }
+  },
+  "CL-001": {
+   "name": "Wall Calendar",
+   "views": {
+    "CALENDAR-OPEN": {
+     "selected": null,
+     "score": 7.8,
+     "pass": false,
+     "note": "channel capability limit: date grid errors (delivery 59); strategy: doubao Seedream 5.0 primary / multi-round budget / K3 disclosure",
+     "rounds": {
+      "r1": {
+       "best": 7.2,
+       "fail": "dup+shift digits"
+      },
+      "r2": {
+       "best": 7.8,
+       "fail": "missing 29"
+      },
+      "r3": {
+       "best": 3.0,
+       "fail": "dup 7 + missing 9 + form shift"
+      }
+     }
+    }
+   }
+  },
+  "BC-002": {
+   "views": {
+    "HERO": {
+     "selected": "BEST cand (batch1, AutoGLM)",
+     "score": 8.5,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION (<9.0)"
+    },
+    "DETAIL": {
+     "selected": "BEST cand (batch1, AutoGLM)",
+     "score": 7.8,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION (<9.0)"
+    },
+    "VARIETY-C": {
+     "selected": "BEST cand (batch1, AutoGLM)",
+     "score": 7.2,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION (<9.0)"
+    },
+    "MULTI-ANGLE": {
+     "selected": "BEST cand (batch1, AutoGLM)",
+     "score": 8.4,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION (<9.0)"
+    },
+    "CARD-STAND": {
+     "selected": "BEST cand (batch1, AutoGLM)",
+     "score": 9.0,
+     "rounds": 1,
+     "final": true,
+     "note": "final"
+    }
+   }
+  },
+  "BC-003": {
+   "views": {
+    "HERO": {
+     "selected": "BEST cand (batch1, AutoGLM)",
+     "score": 9.2,
+     "rounds": 1,
+     "final": true,
+     "note": "final"
+    },
+    "DETAIL": {
+     "selected": "BEST cand (batch1, AutoGLM)",
+     "score": 7.2,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION (<9.0)"
+    },
+    "VARIETY-C": {
+     "selected": "BEST cand (batch1, AutoGLM)",
+     "score": 8.9,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION (<9.0)"
+    },
+    "MULTI-ANGLE": {
+     "selected": "BEST cand (batch1, AutoGLM)",
+     "score": 9.1,
+     "rounds": 1,
+     "final": true,
+     "note": "final"
+    },
+    "CARD-STAND": {
+     "selected": "BEST cand (batch1, AutoGLM)",
+     "score": 9.0,
+     "rounds": 1,
+     "final": true,
+     "note": "final"
+    }
+   }
+  },
+  "BC-004": {
+   "views": {
+    "HERO": {
+     "selected": "BEST cand (batch2, AutoGLM)",
+     "score": 9.2,
+     "rounds": 1,
+     "final": true,
+     "note": "final, nowm pipeline"
+    },
+    "DETAIL": {
+     "selected": "BEST cand (batch2, AutoGLM)",
+     "score": 9.5,
+     "rounds": 1,
+     "final": true,
+     "note": "final, nowm pipeline"
+    },
+    "VARIETY-C": {
+     "selected": "BEST cand (batch2, AutoGLM)",
+     "score": 9.1,
+     "rounds": 1,
+     "final": true,
+     "note": "final, nowm pipeline"
+    },
+    "MULTI-ANGLE": {
+     "selected": "BEST cand (batch2, AutoGLM)",
+     "score": 9.1,
+     "rounds": 1,
+     "final": true,
+     "note": "final, nowm pipeline"
+    },
+    "CARD-STAND": {
+     "selected": "BEST cand (batch2, AutoGLM)",
+     "score": 9.0,
+     "rounds": 1,
+     "final": true,
+     "note": "final, nowm pipeline"
+    }
+   }
+  },
+  "BC-005": {
+   "views": {
+    "HERO": {
+     "selected": "BEST cand (batch2, nowm rescore)",
+     "score": 9.3,
+     "rounds": 1,
+     "final": true,
+     "note": "final, nowm pipeline"
+    },
+    "DETAIL": {
+     "selected": "BEST cand (batch2, nowm rescore)",
+     "score": 9.7,
+     "rounds": 1,
+     "final": true,
+     "note": "final, nowm pipeline"
+    },
+    "VARIETY-C": {
+     "selected": "BEST cand (batch2, nowm rescore)",
+     "score": 9.5,
+     "rounds": 1,
+     "final": true,
+     "note": "final, nowm pipeline"
+    },
+    "MULTI-ANGLE": {
+     "selected": "BEST cand (batch2, nowm rescore)",
+     "score": 9.8,
+     "rounds": 1,
+     "final": true,
+     "note": "final, nowm pipeline"
+    },
+    "CARD-STAND": {
+     "selected": "BEST cand (batch2)",
+     "score": 8.7,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION (<9.0): AI melt/deform on right two cards bottom"
+    }
+   }
+  },
+  "BC-006": {
+   "views": {
+    "HERO": {
+     "selected": "BEST cand (batch3)",
+     "score": 9.0,
+     "rounds": 1,
+     "final": true,
+     "note": "final, inpaint-nowm pipeline"
+    },
+    "DETAIL": {
+     "selected": "BEST cand (batch3)",
+     "score": 9.2,
+     "rounds": 1,
+     "final": true,
+     "note": "final, inpaint-nowm pipeline"
+    },
+    "VARIETY-C": {
+     "selected": "BEST cand (batch3)",
+     "score": 9.2,
+     "rounds": 1,
+     "final": true,
+     "note": "final, inpaint-nowm pipeline"
+    },
+    "MULTI-ANGLE": {
+     "selected": "BEST cand (batch3)",
+     "score": 9.4,
+     "rounds": 1,
+     "final": true,
+     "note": "final, inpaint-nowm pipeline"
+    },
+    "CARD-STAND": {
+     "selected": "BEST cand (batch3)",
+     "score": 7.6,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: right-angle corners, rounded-corner SKU mismatch"
+    }
+   }
+  },
+  "BK-001": {
+   "views": {
+    "HERO": {
+     "selected": "BEST cand (batch3)",
+     "score": 8.6,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: white block artifact bottom"
+    },
+    "DETAIL": {
+     "selected": "BEST cand (batch3)",
+     "score": 7.4,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: brand typo Pross + melt edges"
+    },
+    "VARIETY-C": {
+     "selected": "BEST cand (batch3)",
+     "score": 7.1,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: hand anomaly + floating + texture"
+    },
+    "MULTI-ANGLE": {
+     "selected": "BEST cand (batch3)",
+     "score": 8.4,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: FRONT VIEW text overlay + wavy edge"
+    },
+    "SPREAD": {
+     "selected": "BEST cand (batch3)",
+     "score": 7.1,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: mosaic blur + truncated text QUILLHC"
+    }
+   }
+  },
+  "BK-002": {
+   "views": {
+    "HERO": {
+     "selected": "BEST cand (batch4)",
+     "score": 5.2,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: hardcover form, not saddle-stitch booklet"
+    },
+    "DETAIL": {
+     "selected": "BEST cand (batch4)",
+     "score": 6.1,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: twisted wire, not saddle stitch"
+    },
+    "VARIETY-C": {
+     "selected": "BEST cand (batch4)",
+     "score": 5.6,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: inner text gibberish"
+    },
+    "MULTI-ANGLE": {
+     "selected": "BEST cand (batch4)",
+     "score": 6.0,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: coil binding not saddle stitch"
+    },
+    "SPREAD": {
+     "selected": "BEST cand (batch4)",
+     "score": 2.5,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: mass gibberish + iron ring binding"
+    }
+   }
+  },
+  "BK-003": {
+   "views": {
+    "HERO": {
+     "selected": "BEST cand (batch4)",
+     "score": 9.2,
+     "rounds": 1,
+     "final": true,
+     "note": "final, inpaint-nowm pipeline"
+    },
+    "DETAIL": {
+     "selected": "BEST cand (batch4)",
+     "score": 9.2,
+     "rounds": 1,
+     "final": true,
+     "note": "final, inpaint-nowm pipeline"
+    },
+    "VARIETY-C": {
+     "selected": "BEST cand (batch4)",
+     "score": 5.5,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: severe gibberish + spine mirror error"
+    },
+    "MULTI-ANGLE": {
+     "selected": "BEST cand (batch4)",
+     "score": 8.3,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: spine text garbled"
+    },
+    "SPREAD": {
+     "selected": "BEST cand (batch4)",
+     "score": 4.0,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: severe inner text gibberish"
+    }
+   }
+  },
+  "BK-004": {
+   "views": {
+    "DETAIL": {
+     "selected": "BEST cand (batch5)",
+     "score": 9.0,
+     "rounds": 1,
+     "final": true,
+     "note": "final, inpaint-nowm pipeline"
+    },
+    "MULTI-ANGLE": {
+     "selected": "BEST cand (batch5)",
+     "score": 9.1,
+     "rounds": 1,
+     "final": true,
+     "note": "final, inpaint-nowm pipeline"
+    },
+    "SPREAD": {
+     "selected": "BEST cand (batch5)",
+     "score": 9.3,
+     "rounds": 1,
+     "final": true,
+     "note": "final, inpaint-nowm pipeline"
+    },
+    "HERO": {
+     "selected": "BEST cand (batch5)",
+     "score": 8.5,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: cover subtitle gibberish (Commonorative Vlure)"
+    },
+    "VARIETY-C": {
+     "selected": "BEST cand (batch5)",
+     "score": 8.2,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: cover portrait AI artifacts (eyes/hands)"
+    }
+   }
+  },
+  "BK-005": {
+   "views": {
+    "HERO": {
+     "selected": "BEST cand (batch5)",
+     "score": 9.5,
+     "rounds": 1,
+     "final": true,
+     "note": "final, WM-STRIP 1200x1146 nowm"
+    },
+    "DETAIL": {
+     "selected": "BEST cand (batch5)",
+     "score": 9.0,
+     "rounds": 1,
+     "final": true,
+     "note": "final, WM-STRIP 1200x1146 nowm"
+    },
+    "MULTI-ANGLE": {
+     "selected": "BEST cand (batch5)",
+     "score": 9.8,
+     "rounds": 1,
+     "final": true,
+     "note": "final, WM-STRIP 1200x1146 nowm"
+    },
+    "SPREAD": {
+     "selected": "BEST cand (batch5)",
+     "score": 9.8,
+     "rounds": 1,
+     "final": true,
+     "note": "final, WM-STRIP 1200x1146 nowm"
+    },
+    "VARIETY-C": {
+     "selected": "BEST cand (batch5)",
+     "score": 8.7,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: TRAINING text + Quillhouse Press brand interference"
+    }
+   }
+  },
+  "CL-004": {
+   "views": {
+    "CALENDAR-OPEN": {
+     "selected": "BEST cand (batch10)",
+     "score": 9.8,
+     "rounds": 1,
+     "final": true,
+     "note": "final, WM-STRIP nowm"
+    },
+    "HERO": {
+     "selected": "BEST cand (batch10)",
+     "score": 4.5,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: date numbers severe gibberish"
+    },
+    "DETAIL": {
+     "selected": "BEST cand (batch10)",
+     "score": 4.0,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: date digits repeated/jumbled"
+    },
+    "VARIETY-C": {
+     "selected": "BEST cand (batch10)",
+     "score": 4.2,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: all sub-images date gibberish"
+    },
+    "MULTI-ANGLE": {
+     "selected": "BEST cand (batch10)",
+     "score": 8.0,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: WED shows VEE + date misalign"
+    }
+   }
+  },
+  "CL-005": {
+   "views": {
+    "DETAIL": {
+     "selected": "BEST cand (batch10)",
+     "score": 9.1,
+     "rounds": 1,
+     "final": true,
+     "note": "final, WM-STRIP nowm (Dayline Studio brand text in-content)"
+    },
+    "CALENDAR-OPEN": {
+     "selected": "BEST cand (batch10)",
+     "score": 9.8,
+     "rounds": 1,
+     "final": true,
+     "note": "final, WM-STRIP nowm"
+    },
+    "HERO": {
+     "selected": "BEST cand (batch10)",
+     "score": 6.2,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: date area severe gibberish"
+    },
+    "VARIETY-C": {
+     "selected": "BEST cand (batch10)",
+     "score": 7.6,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: date blur gibberish + brand wm"
+    },
+    "MULTI-ANGLE": {
+     "selected": "BEST cand (batch10)",
+     "score": 8.1,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: date blur + brand wm"
+    }
+   }
+  },
+  "CL-006": {
+   "views": {
+    "CALENDAR-OPEN": {
+     "selected": "BEST cand (batch11)",
+     "score": 9.5,
+     "rounds": 1,
+     "final": true,
+     "note": "final, WM-STRIP nowm"
+    },
+    "HERO": {
+     "selected": "BEST cand (batch11)",
+     "score": 3.5,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: date digits jumbled+gibberish"
+    },
+    "DETAIL": {
+     "selected": "BEST cand (batch11)",
+     "score": 2.8,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: week header/date all gibberish"
+    },
+    "VARIETY-C": {
+     "selected": "BEST cand (batch11)",
+     "score": 3.0,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: all 4 angles date gibberish"
+    },
+    "MULTI-ANGLE": {
+     "selected": "BEST cand (batch11)",
+     "score": 2.0,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: severe date gibberish"
+    }
+   }
+  },
+  "DJ-001": {
+   "views": {
+    "HERO": {
+     "selected": "BEST cand (batch11)",
+     "score": 9.2,
+     "rounds": 1,
+     "final": true,
+     "note": "final, WM-STRIP nowm"
+    },
+    "VARIETY-C": {
+     "selected": "BEST cand (batch11)",
+     "score": 9.0,
+     "rounds": 1,
+     "final": true,
+     "note": "final, WM-STRIP nowm"
+    },
+    "SPREAD": {
+     "selected": "BEST cand (batch11)",
+     "score": 9.2,
+     "rounds": 1,
+     "final": true,
+     "note": "final, WM-STRIP nowm"
+    },
+    "DETAIL": {
+     "selected": "BEST cand (batch11)",
+     "score": 8.4,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: Sakura Studio brand logo overlay"
+    },
+    "MULTI-ANGLE": {
+     "selected": "BEST cand (batch11)",
+     "score": 8.5,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: JP anime style not US lifestyle + petals"
+    }
+   }
+  },
+  "DJ-002": {
+   "views": {
+    "DETAIL": {
+     "selected": "BEST cand (batch12)",
+     "score": 9.7,
+     "rounds": 1,
+     "final": true,
+     "note": "final, WM-STRIP nowm"
+    },
+    "VARIETY-C": {
+     "selected": "BEST cand (batch12)",
+     "score": 9.1,
+     "rounds": 1,
+     "final": true,
+     "note": "final, WM-STRIP nowm"
+    },
+    "SPREAD": {
+     "selected": "BEST cand (batch12)",
+     "score": 9.4,
+     "rounds": 1,
+     "final": true,
+     "note": "final, WM-STRIP nowm"
+    },
+    "HERO": {
+     "selected": "BEST cand (batch12)",
+     "score": 8.5,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: booth banner text + petals"
+    },
+    "MULTI-ANGLE": {
+     "selected": "BEST cand (batch12)",
+     "score": 7.2,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: AI artifacts + JP desk style not US"
+    }
+   }
+  },
+  "DJ-003": {
+   "views": {
+    "HERO": {
+     "selected": "BEST cand (batch12)",
+     "score": 9.6,
+     "rounds": 1,
+     "final": true,
+     "note": "final, WM-STRIP nowm (ALL-VIEW PASS)"
+    },
+    "DETAIL": {
+     "selected": "BEST cand (batch12)",
+     "score": 9.8,
+     "rounds": 1,
+     "final": true,
+     "note": "final, WM-STRIP nowm (ALL-VIEW PASS)"
+    },
+    "VARIETY-C": {
+     "selected": "BEST cand (batch12)",
+     "score": 9.3,
+     "rounds": 1,
+     "final": true,
+     "note": "final, WM-STRIP nowm (ALL-VIEW PASS)"
+    },
+    "MULTI-ANGLE": {
+     "selected": "BEST cand (batch12)",
+     "score": 9.2,
+     "rounds": 1,
+     "final": true,
+     "note": "final, WM-STRIP nowm (ALL-VIEW PASS)"
+    },
+    "SPREAD": {
+     "selected": "BEST cand (batch12)",
+     "score": 9.5,
+     "rounds": 1,
+     "final": true,
+     "note": "final, WM-STRIP nowm (ALL-VIEW PASS)"
+    }
+   }
+  },
+  "DJ-004": {
+   "views": {
+    "HERO": {
+     "selected": "BEST cand (batch13)",
+     "score": 9.6,
+     "rounds": 1,
+     "final": true,
+     "note": "final, WM-STRIP nowm"
+    },
+    "DETAIL": {
+     "selected": "BEST cand (batch13)",
+     "score": 9.9,
+     "rounds": 1,
+     "final": true,
+     "note": "final, WM-STRIP nowm"
+    },
+    "VARIETY-C": {
+     "selected": "BEST cand (batch13)",
+     "score": 9.3,
+     "rounds": 1,
+     "final": true,
+     "note": "final, WM-STRIP nowm"
+    },
+    "MULTI-ANGLE": {
+     "selected": "BEST cand (batch13)",
+     "score": 7.8,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: JP convention booth, not US lifestyle"
+    },
+    "SPREAD": {
+     "selected": "BEST cand (batch13)",
+     "score": 7.2,
+     "rounds": 1,
+     "final": false,
+     "note": "HUMAN_DECISION: inner text typos blassoms/Warking/parcin"
+    }
+   }
+  }
+ },
+ "summary": {
+  "views_total": 9,
+  "views_passed": 9,
+  "views_failed": 0,
+  "final_files": [
+   "BC-001/final_webp/HERO.webp",
+   "BC-001/final_webp/DETAIL.webp",
+   "BC-001/final_webp/VARIETY-C.webp",
+   "BC-001/final_webp/MULTI-ANGLE.webp",
+   "BC-001/final_webp/card-stand.webp",
+   "ST-001/final_webp/HERO.webp",
+   "ST-001/final_webp/DETAIL.webp",
+   "ST-001/final_webp/variety.webp",
+   "ST-001/final_webp/MULTI-ANGLE.webp"
+  ],
+  "root_cause_fixed": "enhance segment read path bug (enhance.get(code) vs enhance['SKUS'][code]) - SKU segments never applied before v20.9.5",
+  "d7_verified": "CARD-STAND cand1 9.6: five standalone cards on stands, no book spread, no page numbers",
+  "d7_channel_verify": {
+   "views_verified": 3,
+   "passed": 2,
+   "capability_limit": 1,
+   "note": "CARD-STAND 9.6 (BC-001, delivery 55/56); BOX-OPEN 9.15; CERTIFICATE-SET 9.0; CALENDAR-OPEN limit (see CL-001); ED-002 r2 9.1 (text clause effective)"
+  },
+  "batch1": {
+   "skus": [
+    "BC-002",
+    "BC-003"
+   ],
+   "final": 4,
+   "human_decision": 6,
+   "at": "2026-08-17 06:15"
+  },
+  "batch2": {
+   "skus": [
+    "BC-004",
+    "BC-005"
+   ],
+   "final": 9,
+   "human_decision": 1,
+   "at": "2026-08-17 06:45"
+  },
+  "batch3": {
+   "skus": [
+    "BC-006",
+    "BK-001"
+   ],
+   "final": 4,
+   "human_decision": 6,
+   "at": "2026-08-17 07:25"
+  },
+  "batch4": {
+   "skus": [
+    "BK-002",
+    "BK-003"
+   ],
+   "final": 2,
+   "human_decision": 8,
+   "at": "2026-08-17 07:35"
+  },
+  "batch5": {
+   "skus": [
+    "BK-004",
+    "BK-005"
+   ],
+   "final": 3,
+   "human_decision": 2,
+   "at": "2026-08-17 07:45",
+   "note": "BK-005 generating"
+  },
+  "batch5b": {
+   "skus": [
+    "BK-005"
+   ],
+   "final": 4,
+   "human_decision": 1,
+   "at": "2026-08-18 03:10"
+  },
+  "batch10": {
+   "skus": [
+    "CL-004",
+    "CL-005"
+   ],
+   "final": 3,
+   "human_decision": 7,
+   "at": "2026-08-18 04:20"
+  },
+  "batch11": {
+   "skus": [
+    "CL-006",
+    "DJ-001"
+   ],
+   "final": 4,
+   "human_decision": 6,
+   "at": "2026-08-18 04:25"
+  },
+  "batch12": {
+   "skus": [
+    "DJ-002",
+    "DJ-003"
+   ],
+   "final": 8,
+   "human_decision": 2,
+   "at": "2026-08-18 04:35"
+  },
+  "batch13": {
+   "skus": [
+    "DJ-004",
+    "DJ-005"
+   ],
+   "final": 3,
+   "human_decision": 2,
+   "at": "2026-08-18 04:40",
+   "note": "DJ-005 pending"
+  }
+ }
+}

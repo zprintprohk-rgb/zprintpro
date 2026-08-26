@@ -1,0 +1,1 @@
+{"ok":false,"error":{"code":"extension_error","message":"Unknown tool: type. Available: navigate, find_tab, evaluate, network, snapshot, click, fill, mouse_click, cdp, key_type, send_keys, screenshot, save_as_pdf, upload, close_tab, list_tabs, close_session\nPlease update the Kimi WebBridge extension: https://kimi.com/features/webbridge"}}

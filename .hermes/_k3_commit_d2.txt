@@ -1,0 +1,17 @@
+fix(contact): 8/16 Push 2 (D) follow-up - contact 页 officeHoursValue + 24/7 WhatsApp + support JSX 渲染
+
+修复 1cda9f9 commit 单引号 vs 双引号 mismatch, contact page 翻译字段没改:
+- zh-hk officeHoursValue: 週一至週五 → 週一至週六 (週六也開) + (GMT+8)
+- en officeHoursValue: Mon - Fri → Mon - Sat + (GMT+8)
+- ja officeHoursValue: 月〜金 → 月〜土 + (GMT+8)
+- 3 locale whatsapp247: 24/7 WhatsApp 即時回覆 (zh-hk/en/ja)
+- 3 locale support: 中國大陸 24h 響應 · 香港本地客服
+
+JSX 渲染:
+- t.officeHoursValue 下方加 24/7 WhatsApp + support 副文案
+- 3 个 data-cf-analytics attr:
+  · contact_office_hours_view
+  · contact_whatsapp_247_view
+  · contact_support_view
+
+K3 17:49 拍板 (Push 2 D 完整版) - 转化基建完整 = 服务时间 + 24/7 WhatsApp + 中國大陸 24h

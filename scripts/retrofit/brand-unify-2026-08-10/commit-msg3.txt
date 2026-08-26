@@ -1,0 +1,38 @@
+﻿fix(seo): K3 8/10 10:17 §0.15 升级 part 3 - src/lib/seo.ts 9 处 hardcoded 'ZprintPro' 改 locale-aware
+
+c48181b (49 files 文本层) + cefe895 (layout.tsx 结构层) 之后, curl ja home og:site_name 仍 = ZprintPro, 根因是 src/lib/seo.ts generateHomeMetadata L290 hardcoded 'ZprintPro'. 进一步 grep 发现 12+ 处同 pattern.
+
+修法 (Python apply-2.py 跑成功):
+- 加 helper getBrandName(locale) 返回 brand (zh-hk=智印港 / en=ZprintPro / ja=ジープリント)
+- getWebLogoAlt 改 3 locale-aware (zh-hk=智印港 ZprintPro / ja=ジープリント ZprintPro / en=ZprintPro 双品牌, 保留 zh-hk 双品牌)
+- Pattern 1 (5 处) locale === 'zh-hk' ? siteConfig.displayName : 'ZprintPro' → getBrandName(locale)
+  - L290 generateHomeMetadata siteName
+  - L298 generateHomeMetadata og:image alt
+  - L714 categorySeoData brandSuffix
+  - L791 categorySeoData brandSuffix (2nd)
+  - L1565 quote page siteName
+- Pattern 2 (4 处) locale === 'zh-hk' ? '智印港 ZprintPro' : 'ZprintPro' → locale === 'zh-hk' ? '智印港' : locale === 'ja' ? 'ジープリント' : 'ZprintPro'
+  - L1650 Organization schema name
+  - L1671 LocalBusiness schema name
+  - L1734 Article author
+  - L1739 Article publisher
+
+§0.7 production smoke 4 步:
+- 1. encoding: PASS
+- 2. 简体字守门: PASS (zh-hk.json 0 简体)
+- 3. tsc: pre-existing errors (跟本次无关)
+- 4. npm run build: PASS (exit 0, 600 URLs, 84 blog posts, IndexNow 3 locales)
+
+§0.15 升级 3 part 完整覆盖:
+- c48181b (49 files 文本层 514 处 智印雲 → 智印港 + locale-aware)
+- cefe895 (layout.tsx generateMetadata locale-aware 改造, 1 file +108/-62)
+- 本 commit (src/lib/seo.ts 9 处 ternary + 1 helper, 2 files 11 行改)
+
+合规 & 配额:
+- 8/10 push 配额: 4/5 daily (T1 + c48181b + cefe895 + 本 commit), 月累计 12/150
+- amend 用满 1/2 月上限, 本次走 fresh commit + push
+
+§0.15 升级 后续待 K3 拍板:
+- §0.20 教训固化 (layout.tsx + seo.ts 静态 metadata 是 §0.15 升级盲区)
+- §13.13 3 Locale 鐵律 vs K3 10:17 '全 locale 智印港' 冲突说明
+- 后续全站 og:site_name / WebSite schema / Article author / Footer 验证 (curl 5 关键页面 + 5 个 schema 路径)

@@ -1,0 +1,137 @@
+{
+ "BC-001": {
+  "HERO": {
+   "picked": "cand4",
+   "scores": {
+    "cand1": 9.3,
+    "cand2": 9.4,
+    "cand3": 9.2,
+    "cand4": 9.8,
+    "pick": "cand4"
+   },
+   "source_raw": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand\\zprintpro-greeting-cards-premium-greeting-cards-en-hero_cand4.jpg",
+   "final_webp": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\final_webp\\HERO.webp",
+   "webp_exists": true,
+   "source_exists": true
+  },
+  "DETAIL": {
+   "picked": "cand5",
+   "scores": {
+    "cand1": 7.8,
+    "cand2": 7.9,
+    "cand3": 8.5,
+    "cand4": 8.5,
+    "cand5": 9.8,
+    "pick": "cand5"
+   },
+   "source_raw": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand\\zprintpro-greeting-cards-premium-greeting-cards-en-detail_cand5.jpg",
+   "final_webp": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\final_webp\\DETAIL.webp",
+   "webp_exists": true,
+   "source_exists": true
+  },
+  "VARIETY-C": {
+   "picked": "cand4",
+   "scores": {
+    "cand1": 9.5,
+    "cand2": 9.6,
+    "cand3": 9.5,
+    "cand4": 9.6,
+    "pick": "cand4"
+   },
+   "source_raw": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand\\zprintpro-greeting-cards-premium-greeting-cards-en-variety_cand4.jpg",
+   "final_webp": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\final_webp\\VARIETY-C.webp",
+   "webp_exists": true,
+   "source_exists": true
+  },
+  "MULTI-ANGLE": {
+   "picked": "cand3",
+   "scores": {
+    "cand1": 9.2,
+    "cand2": 9.5,
+    "cand3": 9.6,
+    "cand4": 8.2,
+    "pick": "cand3"
+   },
+   "source_raw": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand\\zprintpro-greeting-cards-premium-greeting-cards-en-multi-angle_cand3.jpg",
+   "final_webp": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\final_webp\\MULTI-ANGLE.webp",
+   "webp_exists": true,
+   "source_exists": true
+  },
+  "SPREAD": {
+   "picked": "cand6",
+   "scores": {
+    "cand1": 8.2,
+    "cand2": 7.5,
+    "cand3": 6.5,
+    "cand4": 4.5,
+    "cand5": 8.2,
+    "cand6": 9.2,
+    "pick": "cand6"
+   },
+   "source_raw": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand\\zprintpro-greeting-cards-premium-greeting-cards-en-spread_cand6.jpg",
+   "final_webp": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\final_webp\\SPREAD.webp",
+   "webp_exists": true,
+   "source_exists": true
+  }
+ },
+ "ST-001": {
+  "HERO": {
+   "picked": "cand2",
+   "scores": {
+    "cand1": 9.3,
+    "cand2": 9.5,
+    "cand3": 9.4,
+    "cand4": 9.4,
+    "pick": "cand2"
+   },
+   "source_raw": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-001\\raw\\_cand\\zprintpro-stickers-waterproof-stickers-en-hero_cand2.jpg",
+   "final_webp": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-001\\final_webp\\HERO.webp",
+   "webp_exists": true,
+   "source_exists": true
+  },
+  "DETAIL": {
+   "picked": "cand5",
+   "scores": {
+    "cand1": 8.2,
+    "cand2": 8.3,
+    "cand3": 8.5,
+    "cand4": 8.4,
+    "cand5": 9.2,
+    "pick": "cand5"
+   },
+   "source_raw": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-001\\raw\\_cand\\zprintpro-stickers-waterproof-stickers-en-detail_cand5.jpg",
+   "final_webp": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-001\\final_webp\\DETAIL.webp",
+   "webp_exists": true,
+   "source_exists": true
+  },
+  "VARIETY-A": {
+   "picked": "cand5",
+   "scores": {
+    "cand1": 7.5,
+    "cand2": 7.8,
+    "cand3": 8.0,
+    "cand4": 7.5,
+    "cand5": 9.8,
+    "pick": "cand5"
+   },
+   "source_raw": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-001\\raw\\_cand\\zprintpro-stickers-waterproof-stickers-en-variety_cand5.jpg",
+   "final_webp": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-001\\final_webp\\VARIETY-A.webp",
+   "webp_exists": true,
+   "source_exists": true
+  },
+  "MULTI-ANGLE": {
+   "picked": "cand2",
+   "scores": {
+    "cand1": 9.1,
+    "cand2": 9.4,
+    "cand3": 9.3,
+    "cand4": 9.3,
+    "pick": "cand2"
+   },
+   "source_raw": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-001\\raw\\_cand\\zprintpro-stickers-waterproof-stickers-en-multi-angle_cand2.jpg",
+   "final_webp": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-001\\final_webp\\MULTI-ANGLE.webp",
+   "webp_exists": true,
+   "source_exists": true
+  }
+ }
+}

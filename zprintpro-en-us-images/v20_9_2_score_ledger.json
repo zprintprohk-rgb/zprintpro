@@ -1,0 +1,54 @@
+{
+ "BC-001/VARIETY-C": {
+  "cand": 2,
+  "score": 9.6,
+  "src": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand_v2091\\zprintpro-greeting-cards-premium-greeting-cards-en-variety_cand2.jpg",
+  "dest": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\final_webp\\VARIETY-C.webp",
+  "kb": 108.7,
+  "q": 80,
+  "pass": true,
+  "note": "v20.9.1 pass; foil border + botanical + serif, 3-panel consistent",
+  "status": "PASS"
+ },
+ "ST-001/MULTI-ANGLE": {
+  "cand": 1,
+  "score": 9.8,
+  "src": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-001\\raw\\_cand_v2091\\zprintpro-stickers-waterproof-stickers-en-multi-angle_cand1.jpg",
+  "dest": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-001\\final_webp\\MULTI-ANGLE.webp",
+  "kb": 112.6,
+  "q": 25,
+  "pass": false,
+  "note": "v20.9.1 pass; badge die-cut + double border + water droplets",
+  "status": "PASS"
+ },
+ "BC-001/DETAIL": {
+  "cand": 3,
+  "score": 9.2,
+  "src": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand_v2092\\zprintpro-greeting-cards-premium-greeting-cards-en-detail_cand3.jpg",
+  "dest": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\final_webp\\DETAIL.webp",
+  "kb": 118.4,
+  "q": 65,
+  "status": "PASS",
+  "note": "v20.9.2 pass; foil border + botanical + 2-line serif, full card"
+ },
+ "BC-001/MULTI-ANGLE": {
+  "cand": 1,
+  "score": 9.5,
+  "src": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\raw\\_cand_v2092\\zprintpro-greeting-cards-premium-greeting-cards-en-multi-angle_cand1.jpg",
+  "dest": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\BC-001\\final_webp\\MULTI-ANGLE.webp",
+  "kb": 112.6,
+  "q": 70,
+  "status": "PASS",
+  "note": "v20.9.2 pass; close-range 4-angle, botanical corners + serif"
+ },
+ "ST-001/HERO": {
+  "cand": 1,
+  "score": 9.2,
+  "src": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-001\\raw\\_cand_v2092\\zprintpro-stickers-waterproof-stickers-en-hero_cand1.jpg",
+  "dest": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\ST-001\\final_webp\\HERO.webp",
+  "kb": 118.2,
+  "q": 60,
+  "status": "PASS",
+  "note": "v20.9.2 pass; badge close-range hero + water droplets"
+ }
+}

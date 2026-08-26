@@ -1,0 +1,1497 @@
+{
+  "file": ".hermes/reports/2026-08-10-ROAS利润测算.xlsx",
+  "sheet_names": [
+    "假设与结论",
+    "ROAS敏感性矩阵",
+    "每$100营收对比"
+  ],
+  "sheets": [
+    {
+      "sheet": "假设与结论",
+      "max_row": 21,
+      "max_col": 3,
+      "preview_rows": {
+        "1": {
+          "values": [
+            "ZprintPro 付费 vs 自然流量 利润测算（每 $100 营收口径）",
+            null,
+            null
+          ],
+          "types": [
+            "string",
+            "empty",
+            "empty"
+          ]
+        },
+        "2": {
+          "values": [
+            "蓝色=可调输入（改后需重跑模型）；黑色=计算结果；黄色底=待用真实数据校准",
+            null,
+            null
+          ],
+          "types": [
+            "string",
+            "empty",
+            "empty"
+          ]
+        },
+        "3": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "types": [
+            "empty",
+            "empty",
+            "empty"
+          ]
+        },
+        "4": {
+          "values": [
+            "项目",
+            "数值",
+            "说明"
+          ],
+          "types": [
+            "string",
+            "string",
+            "string"
+          ]
+        },
+        "5": {
+          "values": [
+            "客单价 AOV ($)",
+            150,
+            "推演值：C端$30-80/B端$150-500 混合，待真实订单校准"
+          ],
+          "types": [
+            "string",
+            "numeric",
+            "string"
+          ]
+        },
+        "6": {
+          "values": [
+            "毛利率（扣除生产+材料+人工）",
+            0.5,
+            "印刷行业典型 40-60%，待真实成本数据校准"
+          ],
+          "types": [
+            "string",
+            "numeric",
+            "string"
+          ]
+        },
+        "7": {
+          "values": [
+            "跨境物流占营收比",
+            0.1,
+            "DHL 直送，小单占比更高，待校准"
+          ],
+          "types": [
+            "string",
+            "numeric",
+            "string"
+          ]
+        },
+        "8": {
+          "values": [
+            "支付手续费率（Airwallex）",
+            0.03,
+            "约 2.8-3.4%"
+          ],
+          "types": [
+            "string",
+            "numeric",
+            "string"
+          ]
+        },
+        "9": {
+          "values": [
+            "广告前贡献率",
+            0.37,
+            null
+          ],
+          "types": [
+            "string",
+            "numeric",
+            "empty"
+          ]
+        },
+        "10": {
+          "values": [
+            "投放 ROAS",
+            2.5,
+            "ROAS=每$1广告费产生的营收"
+          ],
+          "types": [
+            "string",
+            "numeric",
+            "string"
+          ]
+        },
+        "11": {
+          "values": [
+            "广告费占营收比",
+            0.4,
+            null
+          ],
+          "types": [
+            "string",
+            "numeric",
+            "empty"
+          ]
+        },
+        "12": {
+          "values": [
+            "付费渠道净利润率",
+            -0.03000000000000003,
+            null
+          ],
+          "types": [
+            "string",
+            "numeric",
+            "empty"
+          ]
+        },
+        "13": {
+          "values": [
+            "盈亏平衡 ROAS",
+            2.702702702702703,
+            "ROAS 低于此值=每单亏损"
+          ],
+          "types": [
+            "string",
+            "numeric",
+            "string"
+          ]
+        },
+        "14": {
+          "values": [
+            "自然流量(SEO/GEO)净利润率",
+            0.37,
+            "获客成本≈0，贡献率全部落袋"
+          ],
+          "types": [
+            "string",
+            "numeric",
+            "string"
+          ]
+        },
+        "15": {
+          "values": [
+            "利润率差距（自然-付费）",
+            0.4,
+            "每 $100 营收的差距"
+          ],
+          "types": [
+            "string",
+            "numeric",
+            "string"
+          ]
+        }
+      },
+      "merged_cells": [],
+      "merged_cells_by_row": {},
+      "header_row_1": [
+        "ZprintPro 付费 vs 自然流量 利润测算（每 $100 营收口径）",
+        null,
+        null
+      ],
+      "empty_header_columns": [
+        "B",
+        "C"
+      ],
+      "header_row_detection": {
+        "candidates": [
+          {
+            "row_index": 1,
+            "score": 2,
+            "summary": {
+              "empty": 2,
+              "string": 1,
+              "numeric": 0,
+              "datetime": 0,
+              "other": 0,
+              "non_empty_string": 1
+            }
+          },
+          {
+            "row_index": 2,
+            "score": 2,
+            "summary": {
+              "empty": 2,
+              "string": 1,
+              "numeric": 0,
+              "datetime": 0,
+              "other": 0,
+              "non_empty_string": 1
+            }
+          },
+          {
+            "row_index": 3,
+            "score": 0,
+            "summary": {
+              "empty": 3,
+              "string": 0,
+              "numeric": 0,
+              "datetime": 0,
+              "other": 0,
+              "non_empty_string": 0
+            }
+          },
+          {
+            "row_index": 4,
+            "score": 6,
+            "summary": {
+              "empty": 0,
+              "string": 3,
+              "numeric": 0,
+              "datetime": 0,
+              "other": 0,
+              "non_empty_string": 3
+            }
+          },
+          {
+            "row_index": 5,
+            "score": 3,
+            "summary": {
+              "empty": 0,
+              "string": 2,
+              "numeric": 1,
+              "datetime": 0,
+              "other": 0,
+              "non_empty_string": 2
+            }
+          }
+        ],
+        "suggested": 4
+      },
+      "column_analysis": {
+        "A": {
+          "header": "ZprintPro 付费 vs 自然流量 利润测算（每 $100 营收口径）",
+          "analysis": {
+            "type": "str",
+            "non_empty_count": 18,
+            "empty_count": 2,
+            "type_distribution": {
+              "str": 18
+            }
+          }
+        },
+        "B": {
+          "header": null,
+          "analysis": {
+            "type": "float",
+            "non_empty_count": 12,
+            "empty_count": 8,
+            "type_distribution": {
+              "str": 1,
+              "int": 1,
+              "float": 10
+            }
+          }
+        },
+        "C": {
+          "header": null,
+          "analysis": {
+            "type": "str",
+            "non_empty_count": 9,
+            "empty_count": 11,
+            "type_distribution": {
+              "str": 9
+            }
+          }
+        }
+      },
+      "table_region_probe": {
+        "summary": "注意：检测到本 sheet 可能含 3 个列范围不同的独立数据区块：\n  区块1 = A-C 列（ZprintPro 付费 vs 自然流量 利润测算（每 $100 营收口径） / 数值 / 说明），约 18 条数据\n  区块2 = A-C 列（项目 / 数值 / 说明），约 18 条数据\n  区块3 = A-C 列（结论 / B / C），约 18 条数据\n请结合列名语义判断它们是否为各自独立的表，以及表与表之间该如何关联。",
+        "note": "通用表区域检测（纯结构信号聚类，无 case 阈值）。summary 是人类可读的切分结论概述，candidate_blocks 是对应的结构化细节。切分是客观聚类结果，最终请结合列名语义确认；多个独立表时不要仅按物理同行对齐。",
+        "candidate_blocks": [
+          {
+            "range": "A1:C2",
+            "bounds": [
+              1,
+              1,
+              2,
+              3
+            ],
+            "n_rows": 2,
+            "n_cols": 3,
+            "fill_rate": 0.333,
+            "per_col": {
+              "A": {
+                "dom_kind": "text",
+                "dom_nf": "General",
+                "filled": 18,
+                "row_span": [
+                  2,
+                  21
+                ]
+              },
+              "B": {
+                "dom_kind": "number",
+                "dom_nf": "General",
+                "filled": 12,
+                "row_span": [
+                  4,
+                  15
+                ]
+              },
+              "C": {
+                "dom_kind": "text",
+                "dom_nf": "General",
+                "filled": 9,
+                "row_span": [
+                  4,
+                  15
+                ]
+              }
+            }
+          },
+          {
+            "range": "A4:C15",
+            "bounds": [
+              4,
+              1,
+              15,
+              3
+            ],
+            "n_rows": 12,
+            "n_cols": 3,
+            "fill_rate": 0.917,
+            "per_col": {
+              "A": {
+                "dom_kind": "text",
+                "dom_nf": "General",
+                "filled": 18,
+                "row_span": [
+                  2,
+                  21
+                ]
+              },
+              "B": {
+                "dom_kind": "number",
+                "dom_nf": "General",
+                "filled": 12,
+                "row_span": [
+                  4,
+                  15
+                ]
+              },
+              "C": {
+                "dom_kind": "text",
+                "dom_nf": "General",
+                "filled": 9,
+                "row_span": [
+                  4,
+                  15
+                ]
+              }
+            }
+          },
+          {
+            "range": "A17:C21",
+            "bounds": [
+              17,
+              1,
+              21,
+              3
+            ],
+            "n_rows": 5,
+            "n_cols": 3,
+            "fill_rate": 0.333,
+            "per_col": {
+              "A": {
+                "dom_kind": "text",
+                "dom_nf": "General",
+                "filled": 18,
+                "row_span": [
+                  2,
+                  21
+                ]
+              },
+              "B": {
+                "dom_kind": "number",
+                "dom_nf": "General",
+                "filled": 12,
+                "row_span": [
+                  4,
+                  15
+                ]
+              },
+              "C": {
+                "dom_kind": "text",
+                "dom_nf": "General",
+                "filled": 9,
+                "row_span": [
+                  4,
+                  15
+                ]
+              }
+            }
+          }
+        ],
+        "n_blocks": 3,
+        "col_boundary_lines": [
+          1,
+          3
+        ],
+        "empty_rows": [
+          3,
+          16
+        ],
+        "empty_cols": []
+      }
+    },
+    {
+      "sheet": "ROAS敏感性矩阵",
+      "max_row": 11,
+      "max_col": 9,
+      "preview_rows": {
+        "1": {
+          "values": [
+            "净利润率敏感性：毛利率 × ROAS（物流 10% + 支付 3% 固定扣除）",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "types": [
+            "string",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty"
+          ]
+        },
+        "2": {
+          "values": [
+            "红色=该组合亏损；黄色列=当前 ROAS 2.5；最右列=该毛利率的盈亏平衡 ROAS",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "types": [
+            "string",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty"
+          ]
+        },
+        "3": {
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "types": [
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty"
+          ]
+        },
+        "4": {
+          "values": [
+            "毛利率 \\ ROAS",
+            1.5,
+            2,
+            2.5,
+            3,
+            3.5,
+            4,
+            5,
+            "盈亏平衡ROAS"
+          ],
+          "types": [
+            "string",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "string"
+          ]
+        },
+        "5": {
+          "values": [
+            0.4,
+            -0.3966666666666666,
+            -0.23,
+            -0.13,
+            -0.0633333333333333,
+            -0.01571428571428568,
+            0.02000000000000002,
+            0.07,
+            3.703703703703703
+          ],
+          "types": [
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric"
+          ]
+        },
+        "6": {
+          "values": [
+            0.45,
+            -0.3466666666666667,
+            -0.18,
+            -0.08000000000000007,
+            -0.01333333333333336,
+            0.03428571428571425,
+            0.06999999999999995,
+            0.1199999999999999,
+            3.125
+          ],
+          "types": [
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric"
+          ]
+        },
+        "7": {
+          "values": [
+            0.5,
+            -0.2966666666666666,
+            -0.13,
+            -0.03000000000000003,
+            0.03666666666666668,
+            0.0842857142857143,
+            0.12,
+            0.17,
+            2.702702702702703
+          ],
+          "types": [
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric"
+          ]
+        },
+        "8": {
+          "values": [
+            0.55,
+            -0.2466666666666666,
+            -0.07999999999999996,
+            0.02000000000000002,
+            0.08666666666666673,
+            0.1342857142857143,
+            0.17,
+            0.22,
+            2.380952380952381
+          ],
+          "types": [
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric"
+          ]
+        },
+        "9": {
+          "values": [
+            0.6,
+            -0.1966666666666667,
+            -0.03000000000000003,
+            0.06999999999999995,
+            0.1366666666666667,
+            0.1842857142857143,
+            0.22,
+            0.27,
+            2.127659574468085
+          ],
+          "types": [
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric",
+            "numeric"
+          ]
+        },
+        "10": {
+          "values": [
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "types": [
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty"
+          ]
+        },
+        "11": {
+          "values": [
+            "注：矩阵值<0 表示该 毛利率×ROAS 组合每单亏损；毛利率需先扣物流+支付才是广告前贡献率。",
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null,
+            null
+          ],
+          "types": [
+            "string",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty",
+            "empty"
+          ]
+        }
+      },
+      "merged_cells": [],
+      "merged_cells_by_row": {},
+      "header_row_1": [
+        "净利润率敏感性：毛利率 × ROAS（物流 10% + 支付 3% 固定扣除）",
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "empty_header_columns": [
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I"
+      ],
+      "header_row_detection": {
+        "candidates": [
+          {
+            "row_index": 1,
+            "score": 2,
+            "summary": {
+              "empty": 8,
+              "string": 1,
+              "numeric": 0,
+              "datetime": 0,
+              "other": 0,
+              "non_empty_string": 1
+            }
+          },
+          {
+            "row_index": 2,
+            "score": 2,
+            "summary": {
+              "empty": 8,
+              "string": 1,
+              "numeric": 0,
+              "datetime": 0,
+              "other": 0,
+              "non_empty_string": 1
+            }
+          },
+          {
+            "row_index": 3,
+            "score": 0,
+            "summary": {
+              "empty": 9,
+              "string": 0,
+              "numeric": 0,
+              "datetime": 0,
+              "other": 0,
+              "non_empty_string": 0
+            }
+          },
+          {
+            "row_index": 4,
+            "score": -3,
+            "summary": {
+              "empty": 0,
+              "string": 2,
+              "numeric": 7,
+              "datetime": 0,
+              "other": 0,
+              "non_empty_string": 2
+            }
+          },
+          {
+            "row_index": 5,
+            "score": -9,
+            "summary": {
+              "empty": 0,
+              "string": 0,
+              "numeric": 9,
+              "datetime": 0,
+              "other": 0,
+              "non_empty_string": 0
+            }
+          }
+        ],
+        "suggested": 1
+      },
+      "column_analysis": {
+        "A": {
+          "header": "净利润率敏感性：毛利率 × ROAS（物流 10% + 支付 3% 固定扣除）",
+          "analysis": {
+            "type": "float",
+            "non_empty_count": 8,
+            "empty_count": 2,
+            "type_distribution": {
+              "str": 3,
+              "float": 5
+            }
+          }
+        },
+        "B": {
+          "header": null,
+          "analysis": {
+            "type": "float",
+            "non_empty_count": 6,
+            "empty_count": 4,
+            "type_distribution": {
+              "float": 6
+            }
+          }
+        },
+        "C": {
+          "header": null,
+          "analysis": {
+            "type": "float",
+            "non_empty_count": 6,
+            "empty_count": 4,
+            "type_distribution": {
+              "int": 1,
+              "float": 5
+            }
+          }
+        },
+        "D": {
+          "header": null,
+          "analysis": {
+            "type": "float",
+            "non_empty_count": 6,
+            "empty_count": 4,
+            "type_distribution": {
+              "float": 6
+            }
+          }
+        },
+        "E": {
+          "header": null,
+          "analysis": {
+            "type": "float",
+            "non_empty_count": 6,
+            "empty_count": 4,
+            "type_distribution": {
+              "int": 1,
+              "float": 5
+            }
+          }
+        },
+        "F": {
+          "header": null,
+          "analysis": {
+            "type": "float",
+            "non_empty_count": 6,
+            "empty_count": 4,
+            "type_distribution": {
+              "float": 6
+            }
+          }
+        },
+        "G": {
+          "header": null,
+          "analysis": {
+            "type": "float",
+            "non_empty_count": 6,
+            "empty_count": 4,
+            "type_distribution": {
+              "int": 1,
+              "float": 5
+            }
+          }
+        },
+        "H": {
+          "header": null,
+          "analysis": {
+            "type": "float",
+            "non_empty_count": 6,
+            "empty_count": 4,
+            "type_distribution": {
+              "int": 1,
+              "float": 5
+            }
+          }
+        },
+        "I": {
+          "header": null,
+          "analysis": {
+            "type": "float",
+            "non_empty_count": 6,
+            "empty_count": 4,
+            "type_distribution": {
+              "str": 1,
+              "float": 5
+            }
+          }
+        }
+      },
+      "table_region_probe": {
+        "summary": "注意：检测到本 sheet 可能含 2 个列范围不同的独立数据区块：\n  区块1 = A-I 列（净利润率敏感性：毛利率 × ROAS（物流 10% + 支付 3% 固定扣除） / B / C / D / E / F / G / H / 盈亏平衡ROAS），约 8 条数据\n  区块2 = A-I 列（毛利率 \\ ROAS / B / C / D / E / F / G / H / 盈亏平衡ROAS），约 8 条数据\n请结合列名语义判断它们是否为各自独立的表，以及表与表之间该如何关联。",
+        "note": "通用表区域检测（纯结构信号聚类，无 case 阈值）。summary 是人类可读的切分结论概述，candidate_blocks 是对应的结构化细节。切分是客观聚类结果，最终请结合列名语义确认；多个独立表时不要仅按物理同行对齐。",
+        "candidate_blocks": [
+          {
+            "range": "A1:I2",
+            "bounds": [
+              1,
+              1,
+              2,
+              9
+            ],
+            "n_rows": 2,
+            "n_cols": 9,
+            "fill_rate": 0.111,
+            "per_col": {
+              "A": {
+                "dom_kind": "number",
+                "dom_nf": "General",
+                "filled": 8,
+                "row_span": [
+                  2,
+                  11
+                ]
+              },
+              "B": {
+                "dom_kind": "number",
+                "dom_nf": "0.0%",
+                "filled": 6,
+                "row_span": [
+                  4,
+                  9
+                ]
+              },
+              "C": {
+                "dom_kind": "number",
+                "dom_nf": "0.0%",
+                "filled": 6,
+                "row_span": [
+                  4,
+                  9
+                ]
+              },
+              "D": {
+                "dom_kind": "number",
+                "dom_nf": "0.0%",
+                "filled": 6,
+                "row_span": [
+                  4,
+                  9
+                ]
+              },
+              "E": {
+                "dom_kind": "number",
+                "dom_nf": "0.0%",
+                "filled": 6,
+                "row_span": [
+                  4,
+                  9
+                ]
+              },
+              "F": {
+                "dom_kind": "number",
+                "dom_nf": "0.0%",
+                "filled": 6,
+                "row_span": [
+                  4,
+                  9
+                ]
+              },
+              "G": {
+                "dom_kind": "number",
+                "dom_nf": "0.0%",
+                "filled": 6,
+                "row_span": [
+                  4,
+                  9
+                ]
+              },
+              "H": {
+                "dom_kind": "number",
+                "dom_nf": "0.0%",
+                "filled": 6,
+                "row_span": [
+                  4,
+                  9
+                ]
+              },
+              "I": {
+                "dom_kind": "number",
+                "dom_nf": "General",
+                "filled": 6,
+                "row_span": [
+                  4,
+                  9
+                ]
+              }
+            }
+          },
+          {
+            "range": "A4:I9",
+            "bounds": [
+              4,
+              1,
+              9,
+              9
+            ],
+            "n_rows": 6,
+            "n_cols": 9,
+            "fill_rate": 1.0,
+            "per_col": {
+              "A": {
+                "dom_kind": "number",
+                "dom_nf": "General",
+                "filled": 8,
+                "row_span": [
+                  2,
+                  11
+                ]
+              },
+              "B": {
+                "dom_kind": "number",
+                "dom_nf": "0.0%",
+                "filled": 6,
+                "row_span": [
+                  4,
+                  9
+                ]
+              },
+              "C": {
+                "dom_kind": "number",
+                "dom_nf": "0.0%",
+                "filled": 6,
+                "row_span": [
+                  4,
+                  9
+                ]
+              },
+              "D": {
+                "dom_kind": "number",
+                "dom_nf": "0.0%",
+                "filled": 6,
+                "row_span": [
+                  4,
+                  9
+                ]
+              },
+              "E": {
+                "dom_kind": "number",
+                "dom_nf": "0.0%",
+                "filled": 6,
+                "row_span": [
+                  4,
+                  9
+                ]
+              },
+              "F": {
+                "dom_kind": "number",
+                "dom_nf": "0.0%",
+                "filled": 6,
+                "row_span": [
+                  4,
+                  9
+                ]
+              },
+              "G": {
+                "dom_kind": "number",
+                "dom_nf": "0.0%",
+                "filled": 6,
+                "row_span": [
+                  4,
+                  9
+                ]
+              },
+              "H": {
+                "dom_kind": "number",
+                "dom_nf": "0.0%",
+                "filled": 6,
+                "row_span": [
+                  4,
+                  9
+                ]
+              },
+              "I": {
+                "dom_kind": "number",
+                "dom_nf": "General",
+                "filled": 6,
+                "row_span": [
+                  4,
+                  9
+                ]
+              }
+            }
+          }
+        ],
+        "n_blocks": 2,
+        "col_boundary_lines": [
+          1,
+          9
+        ],
+        "empty_rows": [
+          3,
+          10
+        ],
+        "empty_cols": []
+      }
+    },
+    {
+      "sheet": "每$100营收对比",
+      "max_row": 13,
+      "max_col": 3,
+      "preview_rows": {
+        "1": {
+          "values": [
+            "同样 $100 营收：付费渠道(ROAS 2.5) vs 自然流量(SEO/GEO)",
+            null,
+            null
+          ],
+          "types": [
+            "string",
+            "empty",
+            "empty"
+          ]
+        },
+        "2": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "types": [
+            "empty",
+            "empty",
+            "empty"
+          ]
+        },
+        "3": {
+          "values": [
+            "项目",
+            "付费渠道",
+            "自然流量"
+          ],
+          "types": [
+            "string",
+            "string",
+            "string"
+          ]
+        },
+        "4": {
+          "values": [
+            "营收",
+            100,
+            100
+          ],
+          "types": [
+            "string",
+            "numeric",
+            "numeric"
+          ]
+        },
+        "5": {
+          "values": [
+            "生产成本（按毛利率）",
+            -50,
+            -50
+          ],
+          "types": [
+            "string",
+            "numeric",
+            "numeric"
+          ]
+        },
+        "6": {
+          "values": [
+            "跨境物流",
+            -10,
+            -10
+          ],
+          "types": [
+            "string",
+            "numeric",
+            "numeric"
+          ]
+        },
+        "7": {
+          "values": [
+            "支付手续费",
+            -3,
+            -3
+          ],
+          "types": [
+            "string",
+            "numeric",
+            "numeric"
+          ]
+        },
+        "8": {
+          "values": [
+            "广告费（1/ROAS）",
+            -40,
+            0
+          ],
+          "types": [
+            "string",
+            "numeric",
+            "numeric"
+          ]
+        },
+        "9": {
+          "values": [
+            "净利润",
+            -3,
+            37
+          ],
+          "types": [
+            "string",
+            "numeric",
+            "numeric"
+          ]
+        },
+        "10": {
+          "values": [
+            "净利润率",
+            -0.03,
+            0.37
+          ],
+          "types": [
+            "string",
+            "numeric",
+            "numeric"
+          ]
+        },
+        "11": {
+          "values": [
+            null,
+            null,
+            null
+          ],
+          "types": [
+            "empty",
+            "empty",
+            "empty"
+          ]
+        },
+        "12": {
+          "values": [
+            "解读：付费渠道每 $100 营收倒亏约 $3（ROAS 2.5 未达盈亏平衡 2.7）；自然流量净赚约 $37。",
+            null,
+            null
+          ],
+          "types": [
+            "string",
+            "empty",
+            "empty"
+          ]
+        },
+        "13": {
+          "values": [
+            "差距约 40%——同样的订单，走自然流量是利润，走付费投放是亏损。",
+            null,
+            null
+          ],
+          "types": [
+            "string",
+            "empty",
+            "empty"
+          ]
+        }
+      },
+      "merged_cells": [],
+      "merged_cells_by_row": {},
+      "header_row_1": [
+        "同样 $100 营收：付费渠道(ROAS 2.5) vs 自然流量(SEO/GEO)",
+        null,
+        null
+      ],
+      "empty_header_columns": [
+        "B",
+        "C"
+      ],
+      "header_row_detection": {
+        "candidates": [
+          {
+            "row_index": 1,
+            "score": 2,
+            "summary": {
+              "empty": 2,
+              "string": 1,
+              "numeric": 0,
+              "datetime": 0,
+              "other": 0,
+              "non_empty_string": 1
+            }
+          },
+          {
+            "row_index": 2,
+            "score": 0,
+            "summary": {
+              "empty": 3,
+              "string": 0,
+              "numeric": 0,
+              "datetime": 0,
+              "other": 0,
+              "non_empty_string": 0
+            }
+          },
+          {
+            "row_index": 3,
+            "score": 6,
+            "summary": {
+              "empty": 0,
+              "string": 3,
+              "numeric": 0,
+              "datetime": 0,
+              "other": 0,
+              "non_empty_string": 3
+            }
+          },
+          {
+            "row_index": 4,
+            "score": 0,
+            "summary": {
+              "empty": 0,
+              "string": 1,
+              "numeric": 2,
+              "datetime": 0,
+              "other": 0,
+              "non_empty_string": 1
+            }
+          },
+          {
+            "row_index": 5,
+            "score": 0,
+            "summary": {
+              "empty": 0,
+              "string": 1,
+              "numeric": 2,
+              "datetime": 0,
+              "other": 0,
+              "non_empty_string": 1
+            }
+          }
+        ],
+        "suggested": 3
+      },
+      "column_analysis": {
+        "A": {
+          "header": "同样 $100 营收：付费渠道(ROAS 2.5) vs 自然流量(SEO/GEO)",
+          "analysis": {
+            "type": "str",
+            "non_empty_count": 10,
+            "empty_count": 2,
+            "type_distribution": {
+              "str": 10
+            }
+          }
+        },
+        "B": {
+          "header": null,
+          "analysis": {
+            "type": "int",
+            "non_empty_count": 8,
+            "empty_count": 4,
+            "type_distribution": {
+              "str": 1,
+              "int": 6,
+              "float": 1
+            }
+          }
+        },
+        "C": {
+          "header": null,
+          "analysis": {
+            "type": "int",
+            "non_empty_count": 8,
+            "empty_count": 4,
+            "type_distribution": {
+              "str": 1,
+              "int": 6,
+              "float": 1
+            }
+          }
+        }
+      },
+      "table_region_probe": {
+        "summary": "注意：检测到本 sheet 可能含 2 个列范围不同的独立数据区块：\n  区块1 = A-C 列（项目 / 付费渠道 / 自然流量），约 10 条数据\n  区块2 = A-C 列（解读：付费渠道每 $100 营收倒亏约 $3（ROAS 2.5 未达盈亏平衡 2.7）；自然流量净赚约 $37。 / B / C），约 10 条数据\n请结合列名语义判断它们是否为各自独立的表，以及表与表之间该如何关联。",
+        "note": "通用表区域检测（纯结构信号聚类，无 case 阈值）。summary 是人类可读的切分结论概述，candidate_blocks 是对应的结构化细节。切分是客观聚类结果，最终请结合列名语义确认；多个独立表时不要仅按物理同行对齐。",
+        "candidate_blocks": [
+          {
+            "range": "A3:C10",
+            "bounds": [
+              3,
+              1,
+              10,
+              3
+            ],
+            "n_rows": 8,
+            "n_cols": 3,
+            "fill_rate": 1.0,
+            "per_col": {
+              "A": {
+                "dom_kind": "text",
+                "dom_nf": "General",
+                "filled": 10,
+                "row_span": [
+                  3,
+                  13
+                ]
+              },
+              "B": {
+                "dom_kind": "number",
+                "dom_nf": "$#,##0",
+                "filled": 8,
+                "row_span": [
+                  3,
+                  10
+                ]
+              },
+              "C": {
+                "dom_kind": "number",
+                "dom_nf": "$#,##0",
+                "filled": 8,
+                "row_span": [
+                  3,
+                  10
+                ]
+              }
+            }
+          },
+          {
+            "range": "A12:C13",
+            "bounds": [
+              12,
+              1,
+              13,
+              3
+            ],
+            "n_rows": 2,
+            "n_cols": 3,
+            "fill_rate": 0.333,
+            "per_col": {
+              "A": {
+                "dom_kind": "text",
+                "dom_nf": "General",
+                "filled": 10,
+                "row_span": [
+                  3,
+                  13
+                ]
+              },
+              "B": {
+                "dom_kind": "number",
+                "dom_nf": "$#,##0",
+                "filled": 8,
+                "row_span": [
+                  3,
+                  10
+                ]
+              },
+              "C": {
+                "dom_kind": "number",
+                "dom_nf": "$#,##0",
+                "filled": 8,
+                "row_span": [
+                  3,
+                  10
+                ]
+              }
+            }
+          }
+        ],
+        "n_blocks": 2,
+        "col_boundary_lines": [
+          1,
+          3
+        ],
+        "empty_rows": [
+          2,
+          11
+        ],
+        "empty_cols": []
+      }
+    }
+  ]
+}

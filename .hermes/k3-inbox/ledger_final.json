@@ -1,0 +1,102 @@
+{
+ "PB-001-VARIETY": {
+  "file": "PB-001-VARIETY-1200x1146.webp",
+  "score": 9.4,
+  "source": "autoglm-image-recognition"
+ },
+ "PK-002-VARIETY": {
+  "file": "PK-002-VARIETY-1200x1146.webp",
+  "score": 9.5,
+  "source": "autoglm-image-recognition"
+ },
+ "RP-001-VARIETY": {
+  "file": "RP-001-VARIETY-1200x1146.webp",
+  "score": 9.4,
+  "source": "autoglm-image-recognition"
+ },
+ "DJ-001-VARIETY": {
+  "file": "DJ-001-VARIETY-1200x1146.webp",
+  "score": 9.4,
+  "source": "autoglm-image-recognition"
+ },
+ "BC-001-DETAIL": {
+  "file": "BC-001-DETAIL-v2-1200x1146.webp",
+  "score": 9.78,
+  "source": "autoglm-image-recognition"
+ },
+ "PB-001-DETAIL": {
+  "file": "PB-001-DETAIL-v2-1200x1146.webp",
+  "score": 9.8,
+  "source": "autoglm-image-recognition"
+ },
+ "PK-002-DETAIL": {
+  "file": "PK-002-DETAIL-v2-1200x1146.webp",
+  "score": 9.7,
+  "source": "autoglm-image-recognition"
+ },
+ "RP-001-DETAIL": {
+  "file": "RP-001-DETAIL-v2-1200x1146.webp",
+  "score": 9.6,
+  "source": "autoglm-image-recognition"
+ },
+ "DJ-001-DETAIL": {
+  "file": "DJ-001-DETAIL-v2-1200x1146.webp",
+  "score": 9.7,
+  "source": "autoglm-image-recognition"
+ },
+ "BC-001-MULTI-ANGLE": {
+  "file": "BC-001-MULTI-ANGLE-1200x1146.webp",
+  "score": 9.56,
+  "source": "autoglm-image-recognition"
+ },
+ "PB-001-MULTI-ANGLE": {
+  "file": "PB-001-MULTI-ANGLE-1200x1146.webp",
+  "score": 9.6,
+  "source": "autoglm-image-recognition"
+ },
+ "PK-002-MULTI-ANGLE": {
+  "file": "PK-002-MULTI-ANGLE-1200x1146.webp",
+  "score": 9.4,
+  "source": "autoglm-image-recognition"
+ },
+ "RP-001-MULTI-ANGLE": {
+  "file": "RP-001-MULTI-ANGLE-1200x1146.webp",
+  "score": 9.6,
+  "source": "autoglm-image-recognition"
+ },
+ "DJ-001-MULTI-ANGLE": {
+  "file": "DJ-001-MULTI-ANGLE-1200x1146.webp",
+  "score": 9.5,
+  "source": "autoglm-image-recognition"
+ },
+ "BC-001-VARIETY": {
+  "file": "BC-001-VARIETY-v2-1200x1146.webp",
+  "score": 9.3,
+  "source": "autoglm-image-recognition"
+ },
+ "BC-001-HERO": {
+  "file": "BC-001-HERO-1200x1146.webp",
+  "score": 9.75,
+  "source": "image-tool(zai_glm-5v-turbo)"
+ },
+ "PB-001-HERO": {
+  "file": "PB-001-HERO-1200x1146.webp",
+  "score": 9.65,
+  "source": "image-tool(zai_glm-5v-turbo)"
+ },
+ "PK-002-HERO": {
+  "file": "PK-002-HERO-1200x1146.webp",
+  "score": 9.63,
+  "source": "image-tool(zai_glm-5v-turbo)"
+ },
+ "RP-001-HERO": {
+  "file": "RP-001-HERO-1200x1146.webp",
+  "score": 9.73,
+  "source": "image-tool(zai_glm-5v-turbo)"
+ },
+ "DJ-001-HERO": {
+  "file": "DJ-001-HERO-1200x1146.webp",
+  "score": 9.68,
+  "source": "image-tool(zai_glm-5v-turbo)"
+ }
+}

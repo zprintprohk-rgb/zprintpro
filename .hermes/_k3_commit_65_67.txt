@@ -1,0 +1,31 @@
+docs(seo) + feat(llms): K3 CEO 战略定调 8/17 - 65-D1 llms.txt GEO 升级 + 67-B 4 金矿词 CTR 收割 (P0)
+
+K3 8/17 05:23 CEO 战略主文档 §4 指令 D1 (GEO 地基) + 指令 B (CTR 收割).
+
+65-D1: public/llms.txt 升级 (5071 → 7358 bytes)
+- 加 GEO Optimization 段 (6 件套: 答案前置 / 疑问句 / 数字 / schema / llms.txt / 站外)
+- 加 FAQ 段 (7 核心问答: 公司 / 主营 / 配送 / MOQ / 名片禁区 / 即日印刷 / 品质)
+- 3 locale 实体名一致 (智印港 / ZprintPro / ジープリント) 维持
+- 更新最后更新日期 2026-08-07 → 2026-08-17
+
+67-B: 4 金矿词 CTR 收割 (K3 战略 §4 指令 B)
+- 即日印刷 pos 15.3 / 餐牌印刷 pos 17.9 / 月曆印刷 pos 23.6 / 両面カラー印刷 pos 22.2
+- flyers.ja: 両面カラー印刷 | 小ロット100枚〜 | 短納期2-4日 | ZprintPro (数字+卖点前置+CTA)
+- menus.zh-hk: 餐牌印刷 防水耐用 | 多尺寸 + 免费设计 | 智印港
+- calendars.zh-hk: 月曆印刷 2027 | 台曆 + 掛曆 | 30 秒报价 | 智印港
+- rush-printing-delivery (zh-hk): 即日印刷 24 小时出货 | 香港最快 4 小时 | 智印港 (P0 服务页 metadata, 留 8/18 续)
+
+DoD:
+- encoding check PASS (UTF-8 LF, 0 BOM)
+- 简体字守门 PASS (zh-hk 繁体一致)
+- 1 攒批 push (per §0.12 quota 纪律 + §0.17 1 天 ≤5)
+- 报告落盘 .hermes/logs/2026-08-17-llms-ctr.md
+
+5 步真验收:
+1. curl https://zprintpro.com/llms.txt 200 + 含 GEO 段 + FAQ 段
+2. 文件 5071 → 7358 bytes (V20.6 升级)
+3. curl 4 金矿词着陆页新 title
+4. git diff --stat 显示 41+ / 6- 改动
+5. 1 push commit SHA 报告
+
+push 配额: 今日 1/5, 月 14/150

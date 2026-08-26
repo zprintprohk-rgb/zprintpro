@@ -1,0 +1,47 @@
+{
+  "version": "V25.9-5SKU",
+  "generated": "2026-08-25",
+  "note": "auto-upload index: iterate numbered folders, read sku.json, upload webp files",
+  "folders": [
+    {
+      "number": "sku001",
+      "sku": "BC-001",
+      "sku_json": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\sku001\\sku.json",
+      "webp": "zprintpro-greeting-cards-premium-greeting-cards-en-hero.webp",
+      "market": "en",
+      "size_kb": 109.45
+    },
+    {
+      "number": "sku002",
+      "sku": "PB-001",
+      "sku_json": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\sku002\\sku.json",
+      "webp": "zprintpro-paper-bags-kraft-paper-bags-en-hero.webp",
+      "market": "en",
+      "size_kb": 105.18
+    },
+    {
+      "number": "sku003",
+      "sku": "PK-002",
+      "sku_json": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\sku003\\sku.json",
+      "webp": "zprintpro-packaging-cosmetic-boxes-en-hero.webp",
+      "market": "en",
+      "size_kb": 99.77
+    },
+    {
+      "number": "sku004",
+      "sku": "RP-001",
+      "sku_json": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\sku004\\sku.json",
+      "webp": "zprintpro-red-packets-foil-red-packets-zh-hk-hero.webp",
+      "market": "zh-hk",
+      "size_kb": 116.19
+    },
+    {
+      "number": "sku005",
+      "sku": "DJ-001",
+      "sku_json": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\sku005\\sku.json",
+      "webp": "zprintpro-japan-doujin-doujinshi-printing-ja-hero.webp",
+      "market": "ja",
+      "size_kb": 106.52
+    }
+  ]
+}

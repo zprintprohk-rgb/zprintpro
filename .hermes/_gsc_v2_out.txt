@@ -1,0 +1,19 @@
+﻿Headers: ['�\ue162��查�\ue1d7', '点击次数', '展示', '点击�(%)', '排名']
+Total rows: 847
+OK: F:\zprintpro-nextjs\.hermes\_gsc_top15_report.md (3808 bytes)
+15 ������: 15 ��
+  1. imp=   3 pos= 21.0 pearl envelopes
+  2. imp=  61 pos= 23.8 poster 印刷
+  3. imp=  33 pos= 17.6 paper bag print file requirements
+  4. imp=  23 pos=  8.5 small batch stickers
+  5. imp=  19 pos= 25.4 china catalog printing
+  6. imp=  18 pos= 13.1 what gsm for paper bags
+  7. imp=  17 pos= 12.5 paper bag gsm
+  8. imp=  17 pos= 29.7 security sticker printing
+  9. imp=  14 pos= 19.4 small batch sticker printing
+  10. imp=  10 pos= 28.8 school exercise book printing
+  11. imp=   9 pos=  7.2 fluorescent stickers
+  12. imp=   8 pos=  2.0 batch stickers
+  13. imp=   7 pos=  7.9 a5 vs a6 flyer
+  14. imp=   6 pos= 25.7 small batch custom stickers
+  15. imp=   4 pos= 27.8 a6 flyer size

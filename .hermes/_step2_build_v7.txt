@@ -1,0 +1,23 @@
+
+> zprintpro-nextjs@1.0.0 build
+> next build && node scripts/generate-sitemap.js
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local, .env
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+Failed to compile.
+
+./src/data/products.ts:20413:3
+Type error: Type '{ id: string; sku_code: string; slug: string; category: string; category_slug: string; name: string; nameEn: string; nameJa: string; description: string; descriptionEn: string; descriptionJa: string; price_range: string; optimizedAt: string; optimizationRound: number; specs: { ...; }; }' is missing the following properties from type 'Product': title_zh, description_zh, basePrice, weight_score, and 4 more.
+
+[0m [90m 20411 |[39m[0m
+[0m [90m 20412 |[39m   [90m// === 喜帖印刷 (6 SKU, K3 8/17 拍板 Step 2) ===[39m[0m
+[0m[31m[1m>[22m[39m[90m 20413 |[39m   {[0m
+[0m [90m       |[39m   [31m[1m^[22m[39m[0m
+[0m [90m 20414 |[39m     id[33m:[39m [32m'WI-001'[39m[33m,[39m[0m
+[0m [90m 20415 |[39m     sku_code[33m:[39m [32m'WI-001'[39m[33m,[39m[0m
+[0m [90m 20416 |[39m     slug[33m:[39m [32m'foil-wedding-invitations'[39m[33m,[39m[0m
+Next.js build worker exited with code: 1 and signal: null

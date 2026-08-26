@@ -1,0 +1,45 @@
+[
+  {
+    "sku": "BC-001",
+    "view": "hero",
+    "candidate": "zprintpro-greeting-cards-premium-greeting-cards-en-hero_cand1.jpg",
+    "v1_phash": 7.15,
+    "v2_palette_de": 8.87,
+    "v3_craft": 6.04,
+    "v4_ratio": 10.0,
+    "v5_scene": 10,
+    "avg": 8.41,
+    "verdict": "PASS",
+    "reasons": []
+  },
+  {
+    "sku": "BC-001",
+    "view": "hero",
+    "candidate": "zprintpro-greeting-cards-premium-greeting-cards-en-hero_cand2.jpg",
+    "v1_phash": 5.35,
+    "v2_palette_de": 7.99,
+    "v3_craft": 6.0,
+    "v4_ratio": 10.0,
+    "v5_scene": 10,
+    "avg": 7.87,
+    "verdict": "REJECT",
+    "reasons": [
+      "hard threshold: [5.35]"
+    ]
+  },
+  {
+    "sku": "BC-001",
+    "view": "hero",
+    "candidate": "zprintpro-greeting-cards-premium-greeting-cards-en-hero_cand3.jpg",
+    "v1_phash": 5.7,
+    "v2_palette_de": 8.29,
+    "v3_craft": 6.63,
+    "v4_ratio": 10.0,
+    "v5_scene": 10,
+    "avg": 8.12,
+    "verdict": "REJECT",
+    "reasons": [
+      "hard threshold: [5.7]"
+    ]
+  }
+]

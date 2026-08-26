@@ -1,0 +1,3 @@
+﻿OK 200 https://zprintpro.com/zh-hk/
+OK 200 https://zprintpro.com/en/
+OK 200 https://zprintpro.com/ja/

@@ -1,0 +1,10 @@
+﻿L25 [zh-hk block start]: 'zh-hk': blogContentsZhHk as Record<string, { content: string }>,
+L26 [en block?]: en: blogContentsEn as Record<string, { content: string }>,
+L27 [ja block?]: ja: blogContentsJa as Record<string, { content: string }>,
+L47 [block end]: },
+L72: const posts: Record<string, Record<string, { title: string; description: string;
+L73 [zh-hk block start]: 'zh-hk': {
+L79 [block end]: },
+L307 [ja block?]: ja: {
+L442 [articleSlugs start]: const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-
+L461 [articleSlugs start]: const allSlugs = [...articleSlugs, ...guideSlugs, ...clusterSlugs];

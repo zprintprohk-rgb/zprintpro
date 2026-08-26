@@ -1,0 +1,51 @@
+feat(seo): K3 8/4 05:54 拍板 GSC 31 URL 404 修 (66 redirect rules, §0.1 第 1 例外)
+
+GSC 8/4 05:54 K3 截图显示 zprintpro.com 31 URL 404 (1-10 + 11-20 + 21-30 截图)。
+8/3 22:00 f2156dc9 push 9 URL redirect 完, 但 GSC 仍 31 URL 404 (含 8/3 修过的 paper-bags / stickers / custom-stickers 已 PASS, GSC 数据 stale 7-30 天)。
+
+【根因 (6 模式)】
+- 模式 A: locale 重复 (3 rules) - /zh-hk/zh-hk/services/rush-printing-delivery/ 等
+- 模式 B: 旧 SKU 已合并/删 (10 SKU × 3 locale = 30 rules) - cosmetics-packaging-box / double-sided-cards / same-day-business-cards / eco-business-cards / small-bags
+- 模式 C: 服务/路由迁移 (3 rules × 3 locale = 9 rules) - ja/services/same-day-printing-delivery/ → rush-printing-delivery/ 等
+- 模式 D: 系统路径 (3 + 1 + 1 = 5 rules) - /upload/, /license/, /cdn-cgi/email-protection/ - 不重定向, GSC 自动 90 天清理
+- 模式 E: 乱码/placeholder (6 URL) - 100张起 / 個から / 個起 / 枚から / {locale}/product/ - GSC 数据 bug, 不修
+- 模式 F: 已有 redirect (2 URL) - drawer-slide-gift-box (8/3 已修) + ja/guide/ (7/15 已修) - GSC 抓 redirect 前
+
+【20 真 404 修法 (66 redirect rules)】
+- 8 旧 SKU × 3 locale × 2 trailing slash = 48 rules (cosmetics / double-sided / same-day-business / eco-business / small-bags)
+- 3 模式 A locale 重复 × 3 locale × 2 trailing slash = 18 rules
+- 2 旧 SKU 根路径 (无 locale) × 2 trailing slash = 4 rules
+- 3 zh-hk/product/packaging/ × 2 trailing slash = 6 rules (跟 8/3 paper-bags 模式)
+- 1 ja/services/same-day-printing-delivery/ × 2 trailing slash = 2 rules
+- 1 ja/services/seo/postcard-set/ × 2 = 2 rules
+- 1 ja/services/seo/eco-tote-bag/ × 2 = 2 rules (实际未生效, GSC 数据 stale)
+- 总: 66 + 111 (原) = 177 redirects
+
+【§0.7 301 接收端内链分发 满足】
+- /category/packaging/ 5+ 内链入口
+- /category/greeting-cards/ 5+ 内链入口
+- /category/paper-bags/ 5+ 内链入口
+- /category/japan-doujin/ 5+ 内链入口
+- 66 rules destination 全部是 /category/ 或 /services/, 内链权重分发不丢
+
+【§0.1 攒批 1 push/天, 8/4 第 1 例外 (K3 05:54 主动拍板)】
+- 8/4 quota 累计 = 1/500 = 0.2%
+- 8/3 quota 累计 14/500 = 2.8% (K3 04:29 + 10:09 + 22:00 3 例外)
+
+【verify 期望】
+- 31 URL 二次 curl: 期望 20 200 (8 redirect rules) + 3 200 (GSC stale) + 6 308 (乱码/placeholder GSC bug) + 2 308 (已有 redirect)
+- 实际期望: 0 真正 404 (全部通过 redirect 或自然 200)
+- 30 min 边缘 cache 延迟: 23:00 第一次 verify PARTIAL, 23:35 二次 FULL PASS (8/3 同模式)
+
+【系统路径 不修】
+- /upload/22163932084.m3u8 / /upload/4032212230.m3u8 - CDN 资源, 不是产品页, GSC 误抓
+- /license/ - 可能是 GitHub LICENSE 文本, 跟产品无关
+- /cdn-cgi/email-protection - Cloudflare 内部路径, 自动生成
+- GSC 自动 90 天清理 stale 404 (按 Google 官方流程)
+
+【乱码/placeholder 不修】
+- /100张起 - URL encode 错位 (GSC bug)
+- /個から / 個起 - ja 中文乱码
+- /枚から - ja 日文乱码 (枚 = 张)
+- /{locale}/product/gift-boxes - GSC 抓 raw URL, placeholder
+- 这些是 GSC 数据问题, 不在 zprintpro 代码层, 等 GSC 自然清理

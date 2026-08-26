@@ -1,0 +1,70 @@
+{
+ "total": 5,
+ "results": [
+  {
+   "sku": "BC-001",
+   "market": "en",
+   "original_png": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\_originals\\BC-001_en.png",
+   "webp": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\BC-001\\zprintpro-greeting-cards-premium-greeting-cards-en-hero.webp",
+   "webp_filename": "zprintpro-greeting-cards-premium-greeting-cards-en-hero.webp",
+   "size_kb": 109.45,
+   "quality": 90,
+   "size": [
+    1200,
+    1200
+   ]
+  },
+  {
+   "sku": "PB-001",
+   "market": "en",
+   "original_png": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\_originals\\PB-001_en.png",
+   "webp": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\PB-001\\zprintpro-paper-bags-kraft-paper-bags-en-hero.webp",
+   "webp_filename": "zprintpro-paper-bags-kraft-paper-bags-en-hero.webp",
+   "size_kb": 105.18,
+   "quality": 87,
+   "size": [
+    1200,
+    1200
+   ]
+  },
+  {
+   "sku": "PK-002",
+   "market": "en",
+   "original_png": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\_originals\\PK-002_en.png",
+   "webp": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\PK-002\\zprintpro-packaging-cosmetic-boxes-en-hero.webp",
+   "webp_filename": "zprintpro-packaging-cosmetic-boxes-en-hero.webp",
+   "size_kb": 99.77,
+   "quality": 90,
+   "size": [
+    1200,
+    1200
+   ]
+  },
+  {
+   "sku": "RP-001",
+   "market": "zh-hk",
+   "original_png": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\_originals\\RP-001_zh-hk.png",
+   "webp": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\RP-001\\zprintpro-red-packets-foil-red-packets-zh-hk-hero.webp",
+   "webp_filename": "zprintpro-red-packets-foil-red-packets-zh-hk-hero.webp",
+   "size_kb": 116.19,
+   "quality": 84,
+   "size": [
+    1200,
+    1200
+   ]
+  },
+  {
+   "sku": "DJ-001",
+   "market": "ja",
+   "original_png": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\_originals\\DJ-001_ja.png",
+   "webp": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\DJ-001\\zprintpro-japan-doujin-doujinshi-printing-ja-hero.webp",
+   "webp_filename": "zprintpro-japan-doujin-doujinshi-printing-ja-hero.webp",
+   "size_kb": 106.52,
+   "quality": 84,
+   "size": [
+    1200,
+    1200
+   ]
+  }
+ ]
+}

@@ -1,0 +1,15 @@
+V20.9 DNA Verify Report (2026-08-17 01:58)
+Threshold: avg >= 7.5, any dim < 6.0 = REJECT
+================================================================================
+
+## ST-001 / hero
+  zprintpro-stickers-waterproof-stickers-en-hero_cand3.jpg: avg=7.58 → REJECT
+    v1_phash=4.2 v2_palette=6.8 v3_craft=6.9 v4_ratio=10.0 v5_scene=10
+    ! hard threshold: [4.2]
+  zprintpro-stickers-waterproof-stickers-en-hero_cand1.jpg: avg=7.24 → REJECT
+    v1_phash=4.35 v2_palette=7.94 v3_craft=6.92 v4_ratio=7.0 v5_scene=10
+    ! hard threshold: [4.35]
+  zprintpro-stickers-waterproof-stickers-en-hero_cand2.jpg: avg=7.12 → REJECT
+    v1_phash=5.55 v2_palette=6.28 v3_craft=6.77 v4_ratio=7.0 v5_scene=10
+    ! hard threshold: [5.55]
+

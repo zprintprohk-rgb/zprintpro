@@ -1,0 +1,82 @@
+{
+  "version": "V25.9-5SKU",
+  "generated": "2026-08-25",
+  "total": 5,
+  "entries": [
+    {
+      "sku": "BC-001",
+      "market": "en",
+      "view": "HERO",
+      "webp_filename": "zprintpro-greeting-cards-premium-greeting-cards-en-hero.webp",
+      "webp_path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\BC-001\\zprintpro-greeting-cards-premium-greeting-cards-en-hero.webp",
+      "webp_size_kb": 109.45,
+      "webp_quality": 90,
+      "webp_dimensions": "1200x1200",
+      "original_png_path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\_originals\\BC-001_en.png",
+      "alt_text": "Premium foil stamped greeting cards with WARM WISHES design, gold foil corners and floral botanicals on ivory cardstock, displayed on a warm wooden desk with fairy lights bokeh - custom greeting cards printing by zprintpro",
+      "seo_keywords": "premium greeting cards, foil stamped cards, gold foil greeting cards, custom card printing",
+      "prompt_version": "V25.9",
+      "prompt_file": "V25.9_EN_full_99sku_4views.txt"
+    },
+    {
+      "sku": "PB-001",
+      "market": "en",
+      "view": "HERO",
+      "webp_filename": "zprintpro-paper-bags-kraft-paper-bags-en-hero.webp",
+      "webp_path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\PB-001\\zprintpro-paper-bags-kraft-paper-bags-en-hero.webp",
+      "webp_size_kb": 105.18,
+      "webp_quality": 87,
+      "webp_dimensions": "1200x1200",
+      "original_png_path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\_originals\\PB-001_en.png",
+      "alt_text": "Custom kraft paper gift bags with CARRY JOY peony floral design, held at a sunlit flower shop counter with fresh peonies and eucalyptus, soft bright bokeh - eco-friendly branded paper bags printing by zprintpro",
+      "seo_keywords": "kraft paper bags, custom paper bags, gift bag printing, eco friendly branded bags",
+      "prompt_version": "V25.9",
+      "prompt_file": "V25.9_EN_full_99sku_4views.txt"
+    },
+    {
+      "sku": "PK-002",
+      "market": "en",
+      "view": "HERO",
+      "webp_filename": "zprintpro-packaging-cosmetic-boxes-en-hero.webp",
+      "webp_path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\PK-002\\zprintpro-packaging-cosmetic-boxes-en-hero.webp",
+      "webp_size_kb": 99.77,
+      "webp_quality": 90,
+      "webp_dimensions": "1200x1200",
+      "original_png_path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\_originals\\PK-002_en.png",
+      "alt_text": "Luxury rigid cosmetic gift box with PURE GLOW design, champagne gold foil and soft pink accents on a white marble vanity with warm bokeh lighting - custom cosmetic packaging boxes printing by zprintpro",
+      "seo_keywords": "cosmetic boxes, luxury packaging boxes, custom rigid boxes, gift box printing",
+      "prompt_version": "V25.9",
+      "prompt_file": "V25.9_EN_full_99sku_4views.txt"
+    },
+    {
+      "sku": "RP-001",
+      "market": "zh-hk",
+      "view": "HERO",
+      "webp_filename": "zprintpro-red-packets-foil-red-packets-zh-hk-hero.webp",
+      "webp_path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\RP-001\\zprintpro-red-packets-foil-red-packets-zh-hk-hero.webp",
+      "webp_size_kb": 116.19,
+      "webp_quality": 84,
+      "webp_dimensions": "1200x1200",
+      "original_png_path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\_originals\\RP-001_zh-hk.png",
+      "alt_text": "燙金利是封 GOOD LUCK 設計，金龍金鳳牡丹福字圖案，淺粉象牙白背景配暖色光斑，亮面淺木桌面 - zprintpro 利是封印刷 客製紅包",
+      "seo_keywords": "red packets, lucky red packets, 利是封, 燙金利是封, custom red envelope printing",
+      "prompt_version": "V25.9",
+      "prompt_file": "V25.9_ZH-HK_full_99sku_4views.txt"
+    },
+    {
+      "sku": "DJ-001",
+      "market": "ja",
+      "view": "HERO",
+      "webp_filename": "zprintpro-japan-doujin-doujinshi-printing-ja-hero.webp",
+      "webp_path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\DJ-001\\zprintpro-japan-doujin-doujinshi-printing-ja-hero.webp",
+      "webp_size_kb": 106.52,
+      "webp_quality": 84,
+      "webp_dimensions": "1200x1200",
+      "original_png_path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\_originals\\DJ-001_ja.png",
+      "alt_text": "オリジナル同人誌・アートブック印刷の商品画像、桜色と淡いラベンダー背景、青海波模様の表紙、明るい爽やかなトーン - zprintpro 同人誌印刷",
+      "seo_keywords": "同人誌印刷, art book printing, doujinshi printing, オリジナル本制作",
+      "prompt_version": "V25.9",
+      "prompt_file": "V25.9_JA_full_99sku_4views.txt (fixed: pink/blush/light-blue booth, no black tablecloth)"
+    }
+  ]
+}

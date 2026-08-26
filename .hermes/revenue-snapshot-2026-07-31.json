@@ -1,0 +1,220 @@
+{
+  "date": "2026-07-31",
+  "cron_id": "ceecf2dd-0903-45fe-b9b7-a98b1a351f57",
+  "cron_name": "zprintpro-revenue-analytics-weekly",
+  "version": "v2",
+  "report_path": "F:\\zprintpro-nextjs\\.hermes\\logs\\weekly-revenue-2026-07-31.md",
+  "data_sources": {
+    "ga4": {
+      "available": false,
+      "reason": "GA4 architecture missing: .env no GA4 fields, google-analytics Python package not installed, public/analytics/ directory missing, scripts/fetch_ga4_events.py does not exist"
+    },
+    "supabase": {
+      "available": false,
+      "reason": "Supabase architecture missing: .env uses placeholder values (your_supabase_url / your_supabase_anon_key), supabase-py Python package not installed, scripts/fetch_supabase_funnel.py does not exist. supabase/migrations/ schema complete (6 tables: quotes, whatsapp_inquiries, quote_calculations, material_matrix, markets_and_fx, bank_transfer_payment) but no runtime connection"
+    },
+    "airwallex": {
+      "available": false,
+      "reason": "Airwallex card payments permanently deprecated 2026-06-25 (user decision, Shenzhen entity cannot enable Airwallex acquiring). Bank transfer / WeChat QR / Alipay QR are the 3 active channels per user decision."
+    },
+    "gsc": {
+      "available": true,
+      "data": {
+        "window": "2026-07-24 ~ 2026-07-30",
+        "total_queries": 386,
+        "estimated_total_impressions": 862,
+        "estimated_total_clicks": 2,
+        "queries_with_clicks": ["智印港 (CTR 100%, pos 2)", "同人印刷 (CTR 100%, pos 4)"],
+        "baseline_28_words_coverage": "19/28 = 68%",
+        "baseline_28_words_ctr": "0% (all 19 hits, 0 clicks)",
+        "school_keywords_impressions": 0,
+        "q_gr_3_words_impressions": 0,
+        "country_dimension": "NOT available (GSC query-only, no page/country dimension per P2 report §7)",
+        "source": ".hermes/reports/m3-p2-2026-07-29.md + this cron fetch_gsc_data.py --days 7 --dry-run verification"
+      }
+    }
+  },
+  "funnel": {
+    "uv": null,
+    "quote_starts": null,
+    "whatsapp_clicks": null,
+    "inquiries": null,
+    "orders": null,
+    "paid_usd": null,
+    "paid_hkd": null,
+    "country_breakdown": {
+      "US": null,
+      "HK": null,
+      "JP": null,
+      "Other": null
+    },
+    "payment_breakdown": {
+      "wechat": null,
+      "bank": null,
+      "paypal": null,
+      "airwallex": null
+    },
+    "funnel_note": "All 5 funnel stages (UV / Quote / Inquiry / Order / Revenue) are N/A because GA4 + Supabase data sources are architecturally missing. This is NOT a transient API failure but a structural data source gap that requires user decision (D1+D2) to fix."
+  },
+  "m3_p3_school_content_status": {
+    "en_blog": {
+      "slug": "graduation-yearbook-printing-guide",
+      "title_en": "US High School Yearbook Printing Guide: Class of 2026 Binding Styles, Cover Designs & Sponsor Ad Pages | ZprintPro",
+      "status": "DEPLOYED",
+      "source": "src/data/blog-data/en.json + src/data/blog-posts.ts L887"
+    },
+    "zh_hk_blog": {
+      "slug": "graduation-yearbook-printing-guide",
+      "title_zh_hk": "畢業紀念冊印刷指南 · 香港中學大學院校定制方案 | 智印雲 ZprintPro",
+      "status": "DEPLOYED",
+      "word_count": ">=900 zh-hk (6 章节 FAQ x 5 全部命中)",
+      "source": "src/data/blog-data/zh-hk.json"
+    },
+    "ja_blog": {
+      "slug": "new-semester-printing-japan",
+      "status": "NOT_DEPLOYED",
+      "note": "blocklist slug per SSoT v2 §8, 4 cron 严禁写, M3 P3 8/5 截止前必由 M3 P3 独立落地"
+    },
+    "category_hero_zh_hk": {
+      "slug": "educational",
+      "status": "EXISTING_CATEGORY_HERO_REINFORCEMENT_PENDING",
+      "note": "M3 P3 §5.1 计划 7/30-8/5 期间跑"
+    }
+  },
+  "m3_north_star": {
+    "8_12_decision_point": {
+      "revenue_target_usd_monthly": 50000,
+      "revenue_target_hkd_monthly": 390000,
+      "revenue_baseline_usd_monthly": "~100 RMB ~$14 (per master v2 §2.1)",
+      "revenue_baseline_hkd_monthly": null
+    },
+    "verification_table_7_items": {
+      "item_1_school_inquiries_8_6_to_8_12": {
+        "baseline": 0,
+        "target": "WhatsApp >=5 (K3 7/29 拍板从 10 下调)",
+        "current_7_31": 0,
+        "status": "PENDING_8_6_8_12",
+        "note": "M3 P3 7/30 刚启动, 询盘归因 0 是常态 (SSoT v1 §2 M3 拍板)"
+      },
+      "item_2_school_keywords_ranking": {
+        "baseline": "0 词 (GSC 0 imps)",
+        "target": "进前 50",
+        "current_7_31": "0 词",
+        "status": "UNREACHABLE_8_12",
+        "note": "P2 报告 §6.2 拍板 8/12 不可达, 8/12 复盘需重定义验收口径 (e.g. 改 校园词展示量 >=10 imps)"
+      },
+      "item_3_indexed_pages_added": {
+        "baseline": "baseline",
+        "target": "+3 页 (P3 新增)",
+        "current_7_31": "2/3 (en + zh-hk 校园 blog 已落地, ja 缺 1 页)",
+        "status": "PARTIAL_DELIVERY",
+        "note": "M3 P3 8/5 截止前必补 ja 1 页 (blocklist slug new-semester-printing-japan)"
+      },
+      "item_4_rich_results_test": {
+        "baseline": "0% (P1 v2 删 aggregateRating)",
+        "target": "100% (K3 7/28 21:08 拍板 C 维持 14 天)",
+        "current_7_31": "0% (维持)",
+        "status": "HOLD_14_DAYS",
+        "note": "K3 7/28 21:08 拍板 C 维持, 8/12 复盘再决策"
+      },
+      "item_5_ai_visibility": {
+        "baseline": "0/7 -> 0/4 (K3 7/29 拍板剔除 2 禁区 + 2 无市场)",
+        "target": ">=1/4",
+        "current_7_31": "0/4 (web_search baseline)",
+        "status": "P3_GEO_PERIOD_7_30_8_5",
+        "note": "P3 校园 blog GEO 优化期决定, 8/12 复盘"
+      },
+      "item_6_301_inheritance": {
+        "baseline": "7/22 baseline 5/5 PASS",
+        "target": "旧域名 (z-printpro.com) 展示量趋近 0",
+        "current_7_31": "本 cron 无 page 维度 (P2 §7 标注 v3 升级)",
+        "status": "V3_UPGRADE_NEEDED",
+        "note": "fetch_search_analytics 加 dimensions=['page'] 即可, 建议 P4 CTR 阶段补跑"
+      },
+      "item_7_total_push_count": {
+        "baseline": "7/28 = 2 (v2 §6.7) -> 7/29 累计 5 (P2 §6.7) -> 7/30 累计 7 (P2 §6.7) -> 7/31 累计 9 (P2 §6.7 口径)",
+        "target": "<=14 (14 天 x 1 push/天)",
+        "current_7_31": 9,
+        "remaining_quota": 5,
+        "status": "HEALTHY_FAR_BELOW_LIMIT",
+        "note": "P2 §6.7 口径是 v2 升级相关 push 计数, 不是全量 commit 数. 全量 commit 7/28 以来 17 个 (含 7/30 + 7/31 真 push 5 个 + 紧急修 + K3 P0 校准)"
+      }
+    }
+  },
+  "anomalies": [
+    {
+      "id": "D1",
+      "level": "CRITICAL",
+      "type": "DATA_SOURCE_ARCHITECTURE_MISSING",
+      "scope": "GA4",
+      "description": "GA4 architecture missing: .env no GA4 fields, google-analytics Python package not installed, public/analytics/ directory missing, scripts/fetch_ga4_events.py does not exist",
+      "impact": "5 段漏斗 (UV/Quote/Inquiry/Order/Revenue) 全部 N/A, revenue 周报 7 步 verify step 3 FAIL",
+      "fix_path": "user 决策是否启用 GA4 / Plausible 埋点 + 装 google-analytics-data Python 包 + 配 GA4 service account JSON, OR 用 requests 调 GA4 Data API 最小版",
+      "escalation": "USER (P0)"
+    },
+    {
+      "id": "D2",
+      "level": "CRITICAL",
+      "type": "DATA_SOURCE_ARCHITECTURE_MISSING",
+      "scope": "Supabase",
+      "description": "Supabase architecture missing: .env placeholder values, supabase-py not installed, scripts/fetch_supabase_funnel.py does not exist. Schema 6 tables complete in supabase/migrations/ but no runtime connection",
+      "impact": "询盘 + 订单 + 收入数据全部 N/A, 7 步 verify step 3/4/5 FAIL",
+      "fix_path": "user 决策是否在 cron 端接 Supabase REST API (用 requests 即可, 无需装 supabase-py) + 配真实 Supabase URL + service_role_key (server-side 专用)",
+      "escalation": "USER (P0)"
+    },
+    {
+      "id": "D3",
+      "level": "INFO",
+      "type": "KNOWN_LIMITATION",
+      "scope": "Airwallex",
+      "description": "Airwallex card payments permanently deprecated 2026-06-25 (user decision, Shenzhen entity cannot enable Airwallex acquiring)",
+      "impact": "4 渠道支付拆分中 airwallex 段恒为 0, 周报标 N/A",
+      "fix_path": "N/A (已知架构决策, 不升级)",
+      "escalation": "NONE"
+    },
+    {
+      "id": "D4",
+      "level": "MEDIUM",
+      "type": "DATA_DIMENSION_LIMITATION",
+      "scope": "GSC",
+      "description": "GSC fetch_search_analytics 当前 dimensions=['query'] 单维度, 无 page / country 维度",
+      "impact": "无法验证 §6.6 301 旧域名展示衰减, 无法做国家分布",
+      "fix_path": "v3 升级 fetch_search_analytics 加 dimensions=['query','page'] 或 ['query','country'], 建议 P4 CTR 阶段补跑",
+      "escalation": "M3 P4 plan"
+    },
+    {
+      "id": "D5",
+      "level": "MEDIUM",
+      "type": "GSC_ANOMALY_CARRY_OVER",
+      "scope": "GSC traffic",
+      "description": "7/22-7/28 展示量较 6/17 baseline 下降 60-90% (P2 §1 R1), 原因待查 (GSC 数据延迟 / 301 旧域衰减 / 长尾词季节性)",
+      "impact": "全站流量底下降, 但 P3 校园 blog 7/30-8/5 期间会创造新流量入口, 8/6-8/12 P4 CTR 优化后预期回升",
+      "fix_path": "P2 §5 P4 T4 候选 (15 词 0 点击 + imps >=5) CTR 优化, 目标 CTR 0% -> 1.5-3%",
+      "escalation": "M3 P4 plan (already documented in P2)"
+    },
+    {
+      "id": "D6",
+      "level": "HIGH",
+      "type": "M3_P3_PARTIAL_DELIVERY",
+      "scope": "P3 校园 3 页",
+      "description": "M3 P3 §5.1 计划 3 页 (zh-hk 类目 hero + en blog + ja blog). 当前 2/3 已落地 (en + zh-hk 走 graduation-yearbook-printing-guide 共用 slug), ja 1 缺 (blocklist slug new-semester-printing-japan, 4 cron 严禁写)",
+      "impact": "§6.3 收录 +3 目标还差 1 页, 8/5 P3 截止前必补",
+      "fix_path": "M3 P3 8/5 前独立落地 ja 校园 blog (blocklist slug, 4 cron 严禁写, 只能 M3 P3 跑)",
+      "escalation": "M3 P3 (USER 决策 §8 拍板 4 谁落地)"
+    }
+  ],
+  "week_over_week": {
+    "available": false,
+    "reason": "上周 (7/24) snapshot 不存在 + Supabase GA4 都没接, 首次跑无基线. 需 D1+D2 解锁后才能做周环比."
+  },
+  "verify_pipeline_7_steps": {
+    "step_1_report_exists": "PASS",
+    "step_2_snapshot_valid_json": "PASS",
+    "step_3_5_funnel_stages_non_null": "FAIL (5/5 N/A, D1+D2 data source missing)",
+    "step_4_country_breakdown": "FAIL (N/A, GSC no country dimension + Supabase not connected)",
+    "step_5_payment_breakdown_4_channels": "FAIL (N/A, Supabase + payment API not connected)",
+    "step_6_anomalies_and_todos_at_least_1": "PASS (6 anomalies + 5 todos)",
+    "step_7_escalation_message_with_5_elements_and_m3_north_star": "PASS"
+  },
+  "verify_summary": "3/7 PASS, 4/7 FAIL. 4 FAILs all stem from D1+D2 data source architecture missing + GSC query-only dimension limitation. Per SSoT escalation rules, must escalate to user (D1+D2 P0), cannot just mark N/A and report complete."
+}

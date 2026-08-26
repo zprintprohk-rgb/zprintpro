@@ -1,0 +1,23 @@
+
+> zprintpro-nextjs@1.0.0 build
+> next build && node scripts/generate-sitemap.js
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local, .env
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+Failed to compile.
+
+./src/lib/h1-builder.ts:81:3
+Type error: An object literal cannot have multiple properties with the same name.
+
+[0m [90m 79 |[39m   educational[33m:[39m  [[32m'練習冊'[39m[33m,[39m [32m'印刷'[39m][33m,[39m[0m
+[0m [90m 80 |[39m   books[33m:[39m        [[32m'書籍'[39m[33m,[39m [32m'裝訂'[39m][33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 81 |[39m   [32m'stickers'[39m[33m:[39m [[32m'纸卡'[39m[33m,[39m [32m'印刷'[39m][33m,[39m  [90m// §11 禁区，仅作 fallback（不应触发）[39m[0m
+[0m [90m    |[39m   [31m[1m^[22m[39m[0m
+[0m [90m 82 |[39m   [32m'japan-doujin'[39m[33m:[39m   [[32m'同人誌'[39m[33m,[39m [32m'印刷'[39m][33m,[39m[0m
+[0m [90m 83 |[39m   menus[33m:[39m        [[32m'菜單'[39m[33m,[39m [32m'印刷'[39m][33m,[39m[0m
+[0m [90m 84 |[39m }[33m;[39m[0m
+Next.js build worker exited with code: 1 and signal: null

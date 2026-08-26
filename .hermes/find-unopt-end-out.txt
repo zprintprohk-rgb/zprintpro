@@ -1,0 +1,37 @@
+﻿Slug positions:
+  transparent-stickers: L2177
+  kraft-paper-bags: L4268
+  rigid-boxes: L9853
+  transparent-stickers: imagesByLocale starts L2290, ends L2309
+  kraft-paper-bags: imagesByLocale starts L4544, ends L4561
+  rigid-boxes: imagesByLocale starts L9996, ends L10013
+
+--- transparent-stickers context around L2309 ---
+  L2307:       '/images/products/seedream-webp/zprintpro-stickers-transparent-stickers-ja-4.webp',
+  L2308:     ],
+  L2309:   },
+  L2310:     variables: {
+  L2311:       sizes: [
+  L2312:         { value: 'small', label: 'С�ߴ�(��50mm)', multiplier: 1 },
+  L2313:         { value: 'medium', label: '�гߴ�(51-100mm)', multiplier: 1.5 },
+  L2314:         { value: 'large', label: '��ߴ�(>100mm)', multiplier: 2.2 },
+
+--- kraft-paper-bags context around L4561 ---
+  L4559:       '/images/products/seedream-webp/zprintpro-paper-bags-kraft-paper-bags-ja-4.webp',
+  L4560:     ],
+  L4561:   },
+  L4562:   seoImages: {
+  L4563:     filename: { 'zh-hk': 'zprintpro-paper-bags-kraft-paper-bags-zh-hk.webp', en: 'zprintpro-paper-bags-kraft-paper-bags-en.webp', 
+  L4564:     alt: {
+  L4565:       'zh-hk': '����ӡˢ / ţƤ���� / ���Ἀ�� | ���ţƤ����ӡˢ ţƤ�� 120�C200g ��������r�� �C�𣯠C�y',
+  L4566:       en: 'Paper Bag Printing & Kraft Bags | Kraft Paper Bags | Professional Paper Bags Online',
+
+--- rigid-boxes context around L10013 ---
+  L10011:       '/images/products/seedream-webp/zprintpro-packaging-rigid-boxes-ja-3.webp',
+  L10012:     ],
+  L10013:   },
+  L10014:     variables: {
+  L10015:       sizes: [
+  L10016:         { value: 'small', label: 'С̖(100��80��50mm)', multiplier: 1 },
+  L10017:         { value: 'medium', label: '��̖(150��120��80mm)', multiplier: 1.6 },
+  L10018:         { value: 'large', label: '��̖(200��180��100mm)', multiplier: 2.5 },

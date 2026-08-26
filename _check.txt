@@ -1,0 +1,8 @@
+﻿=== 1. blog �б�ҳ /zh-hk/blog/ ===
+  Active tab: ['ȫ������']
+
+=== 2. blog ����ҳ /zh-hk/blog/cosmetics-packaging-box-printing-guide/ ===
+  HTTP 200, content size 148472
+
+=== 3. �б�ҳ /zh-hk/blog/?category=posters ģ�� (URL ��֧�� active, �� all ״̬) ===
+  cosmetics mentions: 23 (full page is blog list, should be 1)

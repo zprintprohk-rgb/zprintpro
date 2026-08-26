@@ -1,0 +1,23 @@
+﻿============================================================
+Step 1: same-day-flyers 3 locale title + description 改
+============================================================
+  [zh-hk] title: 即日宣傳單張印刷指南 · 香港餐廳開業 / 活動速遞方案 | 智印港 ZprintPro → 即日印刷・即日宣傳單張指南 · 香港餐廳開業 / 活動速遞方案 4-6 小時 | 智印港 ZprintPro
+  [zh-hk] written
+  [en] title: Same-Day Flyer Printing Guide · 4-6hr Rush Turnaround for US → Same Day Printing & Same-Day Flyer Guide · 4-6hr Rush, 100 M
+  [en] written
+  [ja] title: 即日チラシ印刷ガイド · 4-6時間特急納品 日本の中小企業向け | ZprintPro → 即日印刷・即日チラシ ガイド · 4-6時間特急、100枚〜、全国送料無料 | ZprintPro
+  [ja] written
+
+============================================================
+Step 2: pvc-menus PDP title_zh 加 '餐牌印刷'
+============================================================
+  pvc-menus: PVC餐牌 · 防水防油可水洗 | 餐廳/咖啡店/酒吧 | 智印雲 ZprintPro → PVC 餐牌印刷 · 防水防油可水洗 | 餐廳/咖啡店/酒吧菜單 | 智印港 ZprintPro
+
+============================================================
+Step 3: double-sided-flyers PDP title_ja 加 '両面カラー印刷'
+============================================================
+  double-sided-flyers slug not found
+
+============================================================
+DONE: 4 CTR 狙击 title/meta 改完 (3 + 2)
+============================================================

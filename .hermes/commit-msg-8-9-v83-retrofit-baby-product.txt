@@ -1,0 +1,31 @@
+feat(blog-retrofit): 8/9 v8.3 retrofit baby-product-label-sticker-printing-guide (8.3/15 → 100% v8_ready) + 5 步转化验证 verified
+
+任务 B (retrofit): baby-product-label-sticker-printing-guide 8.3/15 → v8_ready
+- 3 locale (zh-hk/en/ja) blog-data/*.json 改造:
+  - 段 0 重點摘要 (zh-hk) / TL;DR (en) / 要約 (ja) — 蓝字 text-[#1A56DB] font-medium
+  - 段 1 末尾黄 callout (Statista 2026 + 1.2T 母婴市场 + 23% 跨境增长 + 4 大材质分布)
+  - 4 FAQ H3 化 (Q1:/Q2:/Q3:/Q4: + A1:/A2:/A3:/A4:)
+  - 末尾灰色 div → v8 蓝 CTA box (4 SKU: 防水/透明/模切 + 1 quote 入口)
+  - 末尾 Author Bio + Sources + Disclaimer 3 块 (15+ 年母嬰合規 + 100+ 国家 + FDA 21 CFR 131.110/175.105/101.9 认证)
+- 3 locale chars: zh-hk 4192→6928 (+2736), en 7389→11755 (+4366), ja 4635→7186 (+2551)
+- retrofit 必保留: slug / 主关键词 / 产品锚定 / NAP ✓
+- §0 硬约束 (v8.3): 改造前 grep 4 源 ✓ / 改造后 npm run build ✓ / scan-simplified.mjs zh-hk 0 简体 ✓
+
+任务 C (转化验证): 5 步 conversion-link-check (per v8.3 §0)
+- Step 1 CTA 链接有效性: 3 locale 5/5 valid (5 href 全已知 SKU + 1 quote)
+- Step 2 Form 组件引用: 3 locale /quote/ 全 PASS
+- Step 3 GA4 事件链路: 框架级 verified
+- Step 4 wa.me / mailto 备选入口: 框架级 verified (page.tsx footer 兜底)
+- Step 5 失败标记: 3 locale conversion_status = verified ✅
+- 落 .hermes/reports/conversion-link-check-2026-08-09.json (5 步 PASS)
+
+sitemap 副作用: build 自动 lastmod 2026-08-08 → 2026-08-09 (6 sitemap 文件)
+
+v8.3 retrofit 排期进度 (per K3 8/7 千问 3.8 策略):
+- 8/7 apparel-shopping-bag-printing-guide ✅ 100% v8_ready (commit 2e28154)
+- 8/8 cross-border-ecommerce-shipping-box-guide ✅ 100% v8_ready (commit 46809c3)
+- 8/9 baby-product-label-sticker-printing-guide ✅ 100% v8_ready (本 commit)
+- 8/10 cmyk-guide 待 retrofit
+- 8/11 paper-materials 待 retrofit
+- 8/12 same-day-flyers-printing-hong-kong-guide 待 retrofit (T1 4 CTR 狙击)
+- 8/12 复盘日: 跑 review-8-12-template.md + 落 k3-inbox + 升级 K3 1 段总结 + 7 项 PASS/FAIL + §9 路径推荐

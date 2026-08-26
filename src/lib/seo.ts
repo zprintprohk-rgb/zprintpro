@@ -276,7 +276,7 @@ const homeMetadata: Record<Locale, { title: string; description: string; keyword
   },
   ja: {
     title: 'ZprintPro | 印刷通販 | ステッカー・チラシ・パッケージ印刷 | 即日対応・最短3日納品',
-    description: 'ZprintProはプロの印刷通販サービス。高品質ステッカー印刷、チラシ印刷、パッケージボックスカスタマイズ、紙袋・ラベル・ポスター印刷に対応。30秒でオンライン即時見積もり、複雑な案件も専門スタッフが丁寧に対応。最短即日発送可能、3〜5営業日でお届け。全国配送無料。',
+    description: 'ZprintProはプロの印刷通販サービス。高品質ステッカー印刷、チラシ印刷、パッケージボックスカスタマイズ、紙袋・ラベル��2�������� ポスター印刷 + A0/A1/A2 + 防水UV + 短納期 | 1枟～MTR 12 sheet 燈箱対応 | ZprintPro',
     keywords: '印刷通販,ステッカー印刷,チラシ印刷,パッケージ印刷,ポスター印刷,即日印刷,ネット印刷,小ロット印刷,オリジナル印刷,格安印刷,高品質印刷,急ぎ印刷対応,最短3日納品,全国配送無料',
   },
 };
@@ -413,9 +413,9 @@ const categorySeoData: Record<string, {
 'posters': {
     titles: {
       // 2026-07-17 GSC CTR 修复: 机会词 海報印刷/印海報 前置
-      'zh-hk': '海報印刷 A0/A1/A2 | 防水 + 1張起印 + 4小時打稿 | 智印港',
-      'en': 'Poster Printing from $3.50 | A0-A2 + 1 MOQ + Free Proof | ZprintPro',
-      'ja': 'ポスター印刷｜A0/A1/A2・1枚〜・防水UV｜ZprintPro',
+      'zh-hk': '海報印刷 A0/A1/A2 + MTR 12 sheet 燈箱 | 防水 + 1張起印 + 4小時打稿 | 智印港',
+      'en': '2 Meter Poster Printing + A0-A2 + Waterproof UV + Same-Day Rush | from $3.50 + 1 MOQ + Free Proof | ZprintPro',
+      'ja': '2�������� ポスター印刷 + A0/A1/A2 + 防水UV + 短納期 | 1枟～MTR 12 sheet 燈箱対応 | ZprintPro',
     },
     keywords: {
       'zh-hk': '海報印刷,印海報,A2 prints,a1 海報,海報訂製,防水海報,相紙海報,展覽海報,活動海報,店舖海報,餐廳海報,電影海報,演唱會海報,裝飾海報,大圖輸出',
@@ -432,9 +432,10 @@ const categorySeoData: Record<string, {
     titles: {
       // 2026-08-26 §6 轨 1 + 智印港 40% CTR 公式 + 撞墙 = M3 自主立即做
       // 9 月中前纸袋衝首页 (GSC 8/24 紙袋印刷 pos 12.23/14.77 距首页 2-5 位)
-      'zh-hk': '紙袋印刷 HK$8起 | 100個起印・美妝護膚・餐廳外賣・免費設計 | 智印港 ZprintPro',
-      en: 'Paper Bag Printing from $1.84 | 100 MOQ + Free Design + Made for USA | ZprintPro',
-      ja: '紙袋印刷 ¥240〜 | 100個〜・無料デザイン・日本全国・最短即日 | ZprintPro',
+      // 2026-08-26 K3 批 1: 注入「急單 18:00 截單」+ パール/珠光
+      'zh-hk': '紙袋印刷 100個起 + 牛皮/白卡/珠光 + 急單 18:00 截單 | HK$8起・美妝護膚・餐廳外賣・免費設計 | 智印港 ZprintPro',
+      en: 'Paper Bag Printing 100 MOQ + Kraft/White Card/Pearl + Rush 6PM Cut-off | from $1.84 + Free Design + Made for USA | ZprintPro',
+      ja: '紙袋印刷 100個〜 + クラフト/白カード/パール + 短納期 18:00 締切 | ¥240〜・無料デザイン・日本全国 | ZprintPro',
     },
     keywords: {
       'zh-hk': '紙袋印刷,紙袋訂製,牛皮紙袋,環保紙袋,手提紙袋,品牌紙袋,禮品紙袋,餐廳外賣紙袋,小批量紙袋,棉繩紙袋,白卡紙袋,珠寶紙袋,鐘錶紙袋,奢侈品紙袋,黑卡紙袋,絲帶手挽,美妝護膚紙袋,婚慶紙袋,烘焙紙袋,DHL全球紙袋',
@@ -484,11 +485,11 @@ const categorySeoData: Record<string, {
     },
   },
   'envelopes': {
-    // 2026-08-19 R2 #2: 大信封 1 行 meta 修 (rank 3.37/19 imps/0 click → 注入「大信封」「公文」「A4」核心词)
+    // 2026-08-26 K3 批 1 十五词 (大信封 pos 2.21 第 1 优先) + 信封顏色/彩色信封/信封 封面 + Pearl Envelopes + China Price Quote + 大型封筒 注入
     titles: {
-      'zh-hk': '大信封 / C4 / C5 信封印刷 HK$0.45起 | 100個起印・公文信封・牛皮・開窗・WhatsApp 30秒報價 | 智印港',
-      en: 'C4 / C5 / DL Envelopes from $0.06 | 100 MOQ + Free Proof + Made for USA | ZprintPro',
-      ja: '封筒印刷 100個〜 · C4/C5/DL/クラフト/窓付き/カラー/企業ロゴ · ISO認証 · DHL全国 | ZprintPro',
+      'zh-hk': '大信封印刷 A4/C4/C5 規格 + 起價表 | 100個起印・公文信封・牛皮・開窗・彩色信封・WhatsApp 30秒報價 | 智印港',
+      en: 'Pearl Envelopes Printing 100 MOQ + Custom Color + China Envelope Printing Price Quote + DHL Global | ZprintPro',
+      ja: '大型封筒 印刷 A2/B4 + C4/C5/DL/クラフト/窓付き/カラー/企業ロゴ | 100枚〜・ISO認証・DHL全国 | ZprintPro',
     },
     keywords: {
       'zh-hk': '大信封,信封印刷,A4信封,公文信封,大號信封,牛皮信封,開窗信封,彩色信封,企業信封,LOGO信封,定制信封,中式信封,西式信封,航空信封,印刷信封,郵寄信封,C4信封,C5信封,快遞信封,公函信封',

@@ -1,0 +1,124 @@
+feat(seo+security): A+ 合批 — R2 摘果 3 目标 + R3 striking 4 词五件套 + API 安全加固 4 件套 + NAP 觀塘修正 (8/19 凌晨, 0 push, K3 拍板后落地)
+
+[K3 战略基准: docs/k3-strategy-v3.3-wedding-category-2026-08-19.md + docs/k3-strategy-sync-v3.2-2026-08-17-evening.md]
+[K3 早拍板路径: A+ 1 push 全合批, 走 §0.17 攒批纪律, 月累计 push 19/150]
+
+═══════════════════════════════════════════════════════════════
+Part 1: R2 摘果 3 目标 (per v3.2 §四 R2, 8/19-8/22 两 push 计划)
+═══════════════════════════════════════════════════════════════
+
+R2 #1 small-batch-stickers (rank 5.5 / 11 imps / 0 click, 全站 ROI 最高)
+  - EN/zh-hk/ja 3 段 longDescription 各加 4 段:
+    * h3 "Sample Pack & Tier Pricing"
+    * 10 张样品档 (HK$48 / $5.99 / 980 円), vs Sticker Mule $68/50 张 = 1 张低 56%
+    * 6 阶梯价格表 (10/50/100/500/1000/5000 张, 折扣 0%/-15%/-25%/-35%)
+    * 5 FAQ with specific MOQ/价格/交期 (替代原 6 FAQ)
+  - 影响文件: src/data/products.ts (ST-004)
+
+R2 #2 信封印刷/envelopes (zh-hk, rank 3.37 / 19 imps / 0 click, 纯 meta)
+  - zh-hk 3 字段 (title/keywords/description) 注入「大信封」核心词
+  - title: 信封印刷 → 大信封 / A4 信封印刷 100 個起
+  - keywords: +大信封/A4信封/公文信封/大號信封 4 词
+  - description: +HK$0.45/個 + A4 公文信封 价格锚点
+  - 影响文件: src/lib/seo.ts
+
+R2 #3 poster-printing-price-guide (en, rank 8.98 / 42 imps / 1 click, 内链加固)
+  - 3 locale 各加 "📘 Related Guides & Frequently Paired Products" 段
+  - 6 内部链接 (rush / envelopes / packaging / paper-bags / blog / small-batch-stickers)
+  - + "Last updated: August 2026" 时间戳
+  - 影响文件: src/data/blog-data/{en,zh-hk,ja}.json
+
+═══════════════════════════════════════════════════════════════
+Part 2: R3 striking 4 词五件套 (per v3.2 §四 R3, 8/30 验收倒计时 11 天)
+═══════════════════════════════════════════════════════════════
+
+5 件套 = 5 件:
+  1. ✓ 答案前置 60-150 词 (category h2 段 + rush service GEO 答案块, 原有)
+  2. ★ 40-60 字 Featured Snippet 块 (本 commit 新加, CategoryPillarContent 渲染)
+  3. ✓ FAQPage (category-seo-content.ts faq[] + RushDeliveryFAQ 组件, 原有)
+  4. ✓ 内链 (CategorySidebar 自动 + rush service footer 5 内部链接)
+  5. ★ Last updated 时间戳 (本 commit 新加, CategoryPillarContent 渲染)
+
+4 词目标:
+  - 即日印刷 (zh-hk pos 15.25, 28 imps) - rush service 页
+  - 餐牌印刷 (zh-hk pos 17.93→15.81, Δ-2.12) - category/menus
+  - 両面カラー印刷 (ja pos 22.19→22.35) - category/calendars ja
+  - 月曆印刷 (zh-hk pos 23.61→19.39, Δ-4.22 🟢 最佳) - category/calendars
+
+组件层改动:
+  - CategoryLocaleContent 接口 + 2 可选字段: featuredSnippet + lastUpdated
+  - CategoryPillarContent 组件: h2 前渲染 snippet 块, faq 后渲染 lastUpdated
+
+影响文件: src/components/CategoryPillarContent.tsx + src/data/category-seo-content.ts + src/app/[locale]/services/rush-printing-delivery/page.tsx
+
+═══════════════════════════════════════════════════════════════
+Part 3: API 安全加固 4 件套 (per Supabase rls_disabled_in_public Critical 告警, 2026-08-19 P0)
+═══════════════════════════════════════════════════════════════
+
+背景: /api/quote-notify 与 /api/order-notify 原代码 0 鉴权 0 限流,
+      可被脚本 POST 刷爆 outlook 邮箱 (收件人固定 zprintpro@outlook.com,
+      不泄露数据, 但邮件配额 + 反垃圾信誉会被消耗)
+
+4 件套 (新文件 src/lib/api-security.ts, 5,549 bytes, 13/13 单元测试 PASS):
+  1. Origin/Referer 校验 - 仅 zprintpro.com / www.zprintpro.com / *.zprintprohk.workers.dev / localhost
+  2. Content-Length 8KB 硬限
+  3. 必填字段校验 (各 endpoint 各自做)
+  4. Honeypot 反 bot (隐藏字段 website/url_field/email_confirm, 静默 200)
+  5. 软频率限 (进程内 token bucket, 5 req/IP/5min → 429)
+  6. 失败响应统一格式 (不暴露后端细节)
+
+升级路径 (写进 api-security.ts 注释, 不阻断当前 push):
+  - CF Turnstile (官方人机验证)
+  - CF KV (跨 edge node 严格频率限)
+  - 失败 IP 黑名单
+
+影响文件: src/lib/api-security.ts (新) + src/app/api/quote-notify/route.ts + src/app/api/order-notify/route.ts
+
+注: Supabase RLS migration 007 (95bd62b) 已 ahead 1 未 push, 跟本 commit 1 push 落地
+
+═══════════════════════════════════════════════════════════════
+Part 4: NAP §11 觀塘→深圳残留修正 (8/16 觀塘工厂修正, 8/19 凌晨捡起)
+═══════════════════════════════════════════════════════════════
+
+背景: ProductTabs.tsx zh-hk/ja 段配送文案残留「觀塘工廠」「観塘工場」
+      实际工厂地址 = 深圳龙岗 (per §0.10 NAP 真实地址)
+影响文件: src/components/ProductTabs.tsx (zh-hk/ja 配送段, 2 行)
+
+═══════════════════════════════════════════════════════════════
+5 步 verify (0 push 本地)
+═══════════════════════════════════════════════════════════════
+
+[1] encoding: 12 staged 文件全 UTF-8 LF, 0 BOM, 0 CRLF, 0 UTF-16    ✓ PASS
+[2] tsc: 0 错 (我改的文件, 含 api-security.ts)                       ✓ PASS
+[3] build: ✓ Compiled successfully / Static 17 / Locales 3 / Total 642 ✓ PASS
+[4] 路由表: /api/quote + /api/quote-notify + /api/order-notify 全在    ✓ PASS
+[5] 搜词注入: 18/18 verify PASS (R2 #1/#2/#3 + R3 4 词 + 组件 + 接口)  ✓ PASS
+[6] api-security 单元测试: 13/13 PASS (Python 复刻 TS 逻辑)            ✓ PASS
+
+═══════════════════════════════════════════════════════════════
+Push 配额 (§0.17)
+═══════════════════════════════════════════════════════════════
+
+今日 (8/19): 1/5 (本 push, 跟 95bd62b 一起 = 1 push 2 commits)
+月累计 push: 19/150 (含 8/18 4 push + 1 amend 92ae942)
+amend: 3/2 (已超限, K3 8/19 早拍板接受, 不 revert)
+buffer: 4 (留 8/19 下午/晚 紧急)
+
+═══════════════════════════════════════════════════════════════
+仍 waiting K3 拍板 (本 commit 后, K3 一句话即落地)
+═══════════════════════════════════════════════════════════════
+
+1. K3 真人 20 min R0 行动卡 (今晚 8:00-9:00, §五 5 步)
+   - 第 1.5 步: Supabase Dashboard → SQL Editor → 跑 migration 007
+   - Supabase key 5min + SQL Editor 3min + PayPal 10min + CF Analytics 2min
+2. D3 10 篇博客清单插 2 篇婚礼指南 (喜帖價錢 zh-hk + wedding invitation cost guide en)
+3. 8/19 15:00 GSC cron 自跑对账 22 词 + 婚礼词 imps + striking 4 词
+4. 8/20 09:00 三 Agent 试运行 (cron 4f5d8d06 6h TTL)
+5. 8/21 双周复盘 (M3 主导, 1h 拍板)
+
+═══════════════════════════════════════════════════════════════
+
+*8/19 04:43 凌晨 备好等拍板 → 05:00 K3 拍板 A+ 路径 → 05:05 本 commit 备好*
+*0 push, 等 K3 「推」字落地 → push 后 verify-deploy.mjs 5 步真验收*
+
+[Mavis / K3 核心大脑 · 2026-08-19 05:05 凌晨]

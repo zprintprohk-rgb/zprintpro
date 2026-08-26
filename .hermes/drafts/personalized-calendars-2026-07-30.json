@@ -1,0 +1,74 @@
+{
+  "_meta": {
+    "draft_date": "2026-07-30",
+    "purpose": "K3 拍板 1 (年历个性化 SKU 选 B 攒批 P3), 本地 draft 存为参考, 不入 products.ts, 不 push",
+    "trigger_window": "P3 7/30-8/5 校园期, 实际推 SKU 时机 = 7/30 8:00 (M3 daily cron 触发后, 优先 1 SKU 测市场反应, 不 5 SKU 一次推)",
+    "ready_to_push": false,
+    "k4_decision": "B 攒批 P3, 1 SKU 测试市场反应再扩展",
+    "next_step": "P3 阶段 M3 daily cron 自动 daily content 5 SKU, 个性化作为 1/5 落地, 其他 4 SKU 选 high-ROI 类目"
+  },
+  "new_sku_draft": {
+    "slug": "personalized-calendars",
+    "category_slug": "calendars",
+    "name_zh": "個性化年曆",
+    "name_en": "Personalized Calendars",
+    "name_ja": "パーソナライズ カレンダー",
+    "title_zh": "個性化年曆 1000 本起 | 情侶/家庭/小朋友 紀念日定制",
+    "title_en": "Personalized Calendars 1000 MOQ | Couple / Family / Kids Anniversary Custom",
+    "title_ja": "パーソナライズ カレンダー 1000 部〜 | カップル/家族/子供 記念日カスタム",
+    "description_zh": "支援 100% 自訂設計：情侶紀念日、寶寶成長、家庭相簿、小朋友學習計劃。HK$ 5-8/本起，1000 本起批量優惠。海德堡 4 色柯式 + HP Indigo 數碼，免費設計、無起訂量打樣、72 小時全球送達。",
+    "description_en": "100% custom design: couple anniversaries, baby milestones, family photo album, kids learning planner. HK$ 5-8 each from 1000 units. Heidelberg 4-color offset + HP Indigo digital, free design support, no-setup-fee sample, 72-hour global delivery.",
+    "description_ja": "100% カスタムデザイン：カップル記念日、赤ちゃんの milestones、家族写真、子供学習計画。HK$ 5-8/部、1000 部起で批量割引。ハイデルベルク 4 色オフセット + HP Indigo デジタル、無料デザイン、サンプル作成料なし、72 時間世界配送。",
+    "longDescription_zh": "<h3>4 大使用場景</h3><ul><li><b>情侶紀念日</b>：訂婚、結婚週年、首次約會日、生日倒數，每月一張回憶照片。</li><li><b>寶寶成長</b>：每月一張寶寶照片 + 身高體重標註，紀念 0-12 個月成長曲線。</li><li><b>家庭相簿</b>：每頁一張家庭合照，標註節日、生日、出遊地點，傳家寶級印刷品質。</li><li><b>小朋友學習</b>：自訂日期 + 學習目標（識字 / 算術 / 習慣打卡），獎勵貼紙位置預留。</li></ul><h3>材質工藝</h3><table><tr><th>材質</th><th>規格</th></tr><tr><td>封面</td><td>250-300g 銅版紙 / 棉質紙 / 防水 PVC 4 色印刷</td></tr><tr><td>內頁</td><td>128-200g 銅版紙 4 色印刷，可選 13 頁 / 26 頁</td></tr><tr><td>裝訂</td><td>騎馬釘 / 線膠裝 / 螺旋線圈 / 精裝硬殼</td></tr><tr><td>後加工</td><td>燙金 / UV / 局部立體 / 圓角裁切 / 打孔</td></tr></table><h3>下單流程</h3><ol><li>選擇尺寸（A5 / A4 / 自訂 100×100mm 至 300×300mm）</li><li>上傳 12 張照片 + 12 段文字（每月一張/段）</li><li>免費設計修改（3 輪免費）</li><li>數碼打樣 24 小時，柯式打樣 3-5 個工作日</li><li>確認後 5-7 個工作日印刷完成</li><li>順豐 / DHL 全球 2-4 天送達</li></ol>",
+    "longDescription_en": "<h3>4 Use Cases</h3><ul><li><b>Couple Anniversaries</b>: Engagement, wedding anniversary, first date, birthday countdowns, one photo per month.</li><li><b>Baby Milestones</b>: Monthly baby photos with height/weight annotations, 0-12 month growth curves.</li><li><b>Family Album</b>: Family photo per page with holidays, birthdays, trip locations, heirloom print quality.</li><li><b>Kids Learning</b>: Custom dates + learning goals (literacy / math / habit tracking), reward sticker slots.</li></ul><h3>Materials & Craft</h3><table><tr><th>Material</th><th>Spec</th></tr><tr><td>Cover</td><td>250-300g coated art paper / cotton paper / waterproof PVC 4-color print</td></tr><tr><td>Inner Pages</td><td>128-200g coated art paper 4-color, 13pp or 26pp</td></tr><tr><td>Binding</td><td>Saddle stitch / perfect binding / wire-o / hardcover</td></tr><tr><td>Finishing</td><td>Foil stamping / UV / spot 3D / round corner / hole punch</td></tr></table><h3>Order Flow</h3><ol><li>Choose size (A5 / A4 / custom 100×100mm to 300×300mm)</li><li>Upload 12 photos + 12 captions (one per month)</li><li>Free design edits (3 rounds included)</li><li>Digital proof in 24h, offset proof in 3-5 business days</li><li>5-7 business days production after approval</li><li>SF Express / DHL worldwide in 2-4 days</li></ol>",
+    "longDescription_ja": "<h3>4 大利用シーン</h3><ul><li><b>カップル記念日</b>：婚約、結婚記念日、初デート日、誕生日カウントダウン、月 1 枚の写真。</li><li><b>赤ちゃんの成長</b>：月 1 枚の赤ちゃん写真 + 身長体重メモ、0-12 ヶ月の成長曲線。</li><li><b>家族アルバム</b>：月 1 枚の家族写真、祝日・誕生日・旅行先のメモ、家宝級印刷品質。</li><li><b>子供の学習</b>：カスタム日付 + 学習目標（識字 / 算数 / 習慣記録）、奖励ステッカー位置。</li></ul><h3>素材工芸</h3><table><tr><th>素材</th><th>仕様</th></tr><tr><td>表紙</td><td>250-300g コート紙 / 綿紙 / 防水 PVC 4 色印刷</td></tr><tr><td>内頁</td><td>128-200g コート紙 4 色、13 ページ / 26 ページ</td></tr><tr><td>製本</td><td>中綴じ / 無線綴じ / ツインリング / 上製本</td></tr><tr><td>後加工</td><td>箔押し / UV / 部分立体 / 角丸 / パンチ</td></tr></table><h3>注文フロー</h3><ol><li>サイズ選択（A5 / A4 / カスタム 100×100mm 〜 300×300mm）</li><li>12 枚の写真 + 12 段のテキストをアップロード（月 1 枚/段）</li><li>無料デザイン修正（3 回まで）</li><li>デジタル校正 24 時間、オフセット校正 3-5 営業日</li><li>確認後 5-7 営業日で印刷完了</li><li>顺丰 / DHL で世界 2-4 日配送</li></ol>",
+    "price_range": "HK$5-8/本",
+    "basePrice": 5,
+    "basePrice_en": 0.65,
+    "basePrice_ja": 95,
+    "minQuantity": 1000,
+    "category_id": "calendars",
+    "isHot": true,
+    "isNew": true,
+    "weight_score": 0.85,
+    "images": [
+      "/images/products/seedream-webp/zprintpro-calendars-personalized-calendars-zh-hk.webp",
+      "/images/products/seedream-webp/zprintpro-calendars-personalized-calendars-en.webp",
+      "/images/products/seedream-webp/zprintpro-calendars-personalized-calendars-ja.webp"
+    ],
+    "specs": {
+      "material": "Cover 250-300g coated art / Inner 128-200g coated / 4-color CMYK",
+      "size": "A5 (148x210mm) / A4 (210x297mm) / custom 100x100mm-300x300mm",
+      "printMethod": "Heidelberg 4-color offset (>=500) + HP Indigo digital (<500)",
+      "finishing": "Foil / UV / Spot 3D / Round corner / Hole punch / Saddle stitch / Wire-o / Hardcover"
+    },
+    "options": {
+      "size": [
+        { "value": "a5", "label": "A5 (148x210mm)", "priceAdjustment": 0 },
+        { "value": "a4", "label": "A4 (210x297mm)", "priceAdjustment": 2 },
+        { "value": "custom", "label": "Custom (100x100-300x300mm)", "priceAdjustment": 3 }
+      ],
+      "binding": [
+        { "value": "saddle", "label": "Saddle stitch (low cost)", "priceAdjustment": 0 },
+        { "value": "perfect", "label": "Perfect binding", "priceAdjustment": 1 },
+        { "value": "wireo", "label": "Wire-o spiral (flip-able)", "priceAdjustment": 1.5 },
+        { "value": "hardcover", "label": "Hardcover (premium gift)", "priceAdjustment": 4 }
+      ]
+    },
+    "industries_zh": ["情侶", "新婚", "家庭", "兒童", "教育", "母嬰", "個人禮品"],
+    "industries_en": ["Couples", "Newlyweds", "Families", "Kids", "Education", "Baby & Maternity", "Personal Gifts"],
+    "industries_ja": ["カップル", "新婚", "家族", "子供", "教育", "ベビー・マタニティ", "個人ギフト"],
+    "tags": [
+      "personalized", "couple", "family", "kids", "anniversary", "custom", "moq-1000"
+    ],
+    "optimizedAt": "P3-2026-08-05",
+    "optimizationRound": 1
+  },
+  "k4_decision_rationale": "选 B 攒批 P3 3 大原因: 1) 季节性错位 (7/30 上线 vs 10-12 月采购高峰) 2) 1 个新 SKU 涉及 PDP/SEO/Schema 改动 + 4-6 hr 落地 3) e095918 刚 push 立即再加新 SKU 风险高",
+  "future_5_sku_roadmap_p3_p4": {
+    "wave1_p3": "personalized-calendars (1 SKU 测试市场反应)",
+    "wave2_p3_2_weeks": "couple-calendars + kids-calendars (根据 wave1 数据决定优先哪 2 个)",
+    "wave3_p4": "family-calendars + perpetual-calendars (节日礼品季精准推)",
+    "excluded": "weekly-planner 跟年历定位偏差大, 单独品类更好, 不入 P3-P4 wave"
+  }
+}

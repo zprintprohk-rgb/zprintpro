@@ -1,0 +1,11 @@
+﻿docs(cron): v3 增补 sync · K3 8/23 06:38 拍板 (4 cron 必读 SSoT 第 1 优先级)
+
+- AGENTS.md §13.1 校准 (daily cron 名 + 触发时间, 8/23 06:38 K3)
+- AGENTS.md §13.1.1 新增 4 cron 必读 SSoT 引用 (k3-v3-addendum 22.3KB)
+- m3-master-directive-v2 §0 增补 4 行 v3 引用 (5 SOP + §0.21 + 业务 0 改动)
+- m3-master-directive-v2 §0 表格扩展 0.7-0.14 (SOP-1 ~ SOP-9)
+- m3-v2-shared-snippet 新增 v3 公共段 (5 cron 报告必含 6 项)
+
+性质: 4 cron SSoT 文档同步, 非 src/ 改动, 业务 0 改动红线不触发
+影响: 4 cron 启动必读 SSoT 第 1 优先级 = k3-v3-addendum-2026-08-23.md
+撤销路径: git revert HEAD (1 commit, 无依赖)

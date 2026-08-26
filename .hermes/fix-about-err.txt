@@ -1,0 +1,18 @@
+F:\zprintpro-nextjs\.hermes\fix-about-k4-v2-2026-07-30.py:31: SyntaxWarning: invalid escape sequence '\$'
+  { "company": "MOCK - 香港某連鎖餐廳", "industry": "餐飲", "quote": "宣傳單張質量超預期，3000 張只花了 HK\$ 1,200，紙質厚實色彩鮮明，顧客拍照打卡率提高 40%。" },
+F:\zprintpro-nextjs\.hermes\fix-about-k4-v2-2026-07-30.py:32: SyntaxWarning: invalid escape sequence '\$'
+  { "company": "MOCK - 美國某 DTC 品牌", "industry": "電商美妝", "quote": "客製包裝盒從設計到送達只用了 12 天，FedEx 直送美國倉，5000 個 HK\$ 8/個，物流追蹤透明。" },
+F:\zprintpro-nextjs\.hermes\fix-about-k4-v2-2026-07-30.py:33: SyntaxWarning: invalid escape sequence '\$'
+  { "company": "MOCK - 日本某活動策劃公司", "industry": "活動", "quote": "年曆印刷起訂 1000 本 HK\$ 4/本，比 e-print 便宜 30%，10 月旺季前準時到貨。" },
+F:\zprintpro-nextjs\.hermes\fix-about-k4-v2-2026-07-30.py:51: SyntaxWarning: invalid escape sequence '\$'
+  { "company": "MOCK - HK Restaurant Chain", "industry": "F&B", "quote": "Flyer quality exceeded expectations. 3000 pieces for just HK\$ 1,200, thick paper, vivid colors, customer photo-tagging rate up 40%." },
+F:\zprintpro-nextjs\.hermes\fix-about-k4-v2-2026-07-30.py:52: SyntaxWarning: invalid escape sequence '\$'
+  { "company": "MOCK - US DTC Beauty Brand", "industry": "DTC Beauty", "quote": "Custom packaging from design to delivery in 12 days, FedEx to US warehouse, 5000 units at HK\$ 8 each, transparent logistics tracking." },
+F:\zprintpro-nextjs\.hermes\fix-about-k4-v2-2026-07-30.py:53: SyntaxWarning: invalid escape sequence '\$'
+  { "company": "MOCK - Japan Event Agency", "industry": "Events", "quote": "Calendar printing MOQ 1000 at HK\$ 4 each, 30% cheaper than e-print, delivered before October peak season." },
+F:\zprintpro-nextjs\.hermes\fix-about-k4-v2-2026-07-30.py:71: SyntaxWarning: invalid escape sequence '\$'
+  { "company": "MOCK - 香港レストランチェーン", "industry": "飲食", "quote": "チラシの品質が予想以上。3000 枚で HK\$ 1,200、厚手の紙で色鮮明、お客様の写真投稿率が 40% アップ。" },
+F:\zprintpro-nextjs\.hermes\fix-about-k4-v2-2026-07-30.py:72: SyntaxWarning: invalid escape sequence '\$'
+  { "company": "MOCK - 米国 DTC 美容ブランド", "industry": "DTC 美容", "quote": "カスタムパッケージがデザインから配送まで 12 日、FedEx で米国倉庫へ、5000 個で HK\$ 8/個、物流追跡も透明。" },
+F:\zprintpro-nextjs\.hermes\fix-about-k4-v2-2026-07-30.py:73: SyntaxWarning: invalid escape sequence '\$'
+  { "company": "MOCK - 日本イベント企画会社", "industry": "イベント", "quote": "カレンダー印刷 1000 部起で HK\$ 4/部、e-print より 30% 安、10 月繁忙期前准时納品。" },

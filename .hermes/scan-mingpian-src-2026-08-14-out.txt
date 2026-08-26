@@ -1,0 +1,598 @@
+Files scanned: 1209, Files with hits: 365
+================================================================================
+
+名片: 573 hits total
+------------------------------------------------------------
+
+[image-prompts.md] (29 hits)
+  L17: 所有包裝盒 / 彩頁 / 貼紙 / 紙袋 / 名片 / 標貼 / 海報 / 書刊的**可印刷面**必須呈現真實可見的客戶內容：
+  L30: - **名片**：正面 = logo + 姓名 + 職位 + 電話 + 電郵；背面 = 服務介紹 + slogan + QR
+  L100: 極近距離微距特寫，專業商業產品攝影風格，主體為一疊300g高級銅版紙高級特種紙名片，紙張邊緣可見厚實堅挺的纖維紋理，表面印刷著高飽和度的Pantone亮橙色與深藍色幾何圖形。表面可選啞膠或光膠處理。畫面右側有一張完全對焦的Pantone色卡指南，其中一個色塊被紅色圓圈精準標記。
+  L107: - 標題浮水印字：**香港專色名片 | PANTONE MATCHING**
+  L121:     "prompt_seo_optimized": "Extreme close-up product shot of Premium Business Cards. 紙張邊緣可見厚實堅挺的纖維紋理，表面印刷著高飽和度的Pantone亮橙色與深藍色幾何圖形. 表面可選啞膠或光膠處理 Scene右側有a 完全對焦的Pantone色卡指南，其中一個色塊被紅色圓圈精準標記. Main visual 
+
+[data\keyword-analysis.md] (29 hits)
+  L15: | 名片 | 10 | 丰富（8-12词/SKU） | 中等（5-10词/SKU） | 中等（5-8词/SKU） | 75% |
+  L31: - **EN 市场**：名片、贴纸覆盖较好，包装盒/纸袋/书籍/餐牌等覆盖薄弱
+  L38: ### 2.1 名片印刷 (Business Cards) — 10 SKUs
+  L43: | 名片印刷 即日 |  transactional | ★★★☆☆ | 即日名片 PDP |
+  L44: | 名片印刷 平 |  transactional | ★★★★☆ | 哑光名片 PDP |
+
+[src\data\sku-seo-data.ts] (28 hits)
+  L23:         "title": "高級商務名片 | 燙金 UV 多工藝 | 智印港 ZprintPro",
+  L24:         "description": "高級商務名片/名片印刷 100 張起。採用 300g-400g 銅版紙/啞面/棉紙 高品質材質，支援 90×54mm 標準 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。1-3 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
+  L26:         "keywords": ["高級商務名片", "名片印刷", "印咭片", "印刷公司"],
+  L74:         "title": "400g 厚身名片 | 燙金 UV 多工藝 | 智印港 ZprintPro",
+  L75:         "description": "400g 厚身名片/名片印刷 100 張起。採用 300g-400g 銅版紙/啞面/棉紙 高品質材質，支援 90×54mm 標準 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。1-3 個工作天交貨，港九新界免費速遞，辦公室/港鐵站交收。專業團隊、價格透明，企業活動、店舖推廣首選。",
+
+[src\data\category-seo-content.ts] (21 hits)
+  L397:     h2: '香港名片印刷 — 100張起訂，300g高級紙，24小時急件',
+  L402:           heading: '1. 香港商務首選：專業形象從一張名片開始',
+  L405:             '滿足「名片印刷 香港」、「咭片印刷」、「名片設計」、「商務名片」等高搜索量關鍵詞需求',
+  L421:             '免費名片模板下載，專業設計師一對一諮詢',
+  L422:             '支持雙面不同設計、QR Code 名片、NFC 智能名片',
+
+[docs\auto-claw-prompts-v6-envelopes-calendars-2026-06-28.md] (13 hits)
+  L8: > - **business-cards 例外条款** (memory 主营约束 "不写名片" 仍生效):
+  L51:     'zh-hk': '咭片印刷 香港 | 智印雲 ZprintPro — 燙金名片 / UV名片 / 圓角名片 高檔定制',
+  L112:   'zh-hk': '香港咭片印刷定制 — 燙金名片 / UV名片 / 圓角名片 / 高檔名片',
+  L192: # 预期: <h1 ...>香港咭片印刷定制 — 燙金名片 / UV名片 / 圓角名片 / 高檔名片</h1>
+  L202:   - ✅ "香港咭片印刷定制 — 燙金名片 / UV名片 / 圓角名片 / 高檔名片" (23:58 反转补)
+
+[analysis-2026-07-17\ZprintPro全局摸底反面思考报告.md] (12 hits)
+  L52: 3. **名片 SKU 在线吃展示**: `/zh-hk/product/premium-business-cards/` 271 展示 0 点击 — 禁区品类仍在线,消耗爬取配额且稀释品牌承诺。
+  L119: * 新站: 修 www→apex 301 一致性、pages.dev noindex、QuoteForm 断点、名片 SKU 处置
+  L178: | `cloudflare-bulk-redirect.csv` | **150 条 CF Bulk Redirect 直接导入版** (剔除 8 条名片待决策) |
+  L189: | **bc-decision 名片**  | **8** | **30** | **1,478** | ⚠️ **禁区决策点,见下**                                                               |
+  L191: **名片 8 条 URL 待你拍板**: 两个选项 — (a) 301→/zh-hk/category/flyers/ (承接流量,页面顶部说明主营纸类印刷); (b) 直接 410 放弃 (与品牌禁区一致)。数据供参考: 名片词池季度展示 \~2,000+,是老站 CTR 最高的词群之一。
+
+[data\competitor-pricing.md] (12 hits)
+  L5: > 分析维度：名片、贴纸、宣传单张、海报、包装盒、书籍、纸袋 7 大核心品类
+  L9: ## 一、名片印刷 (Business Cards)
+  L11: ### 1.1 哑胶/标准名片
+  L27: - ZprintPro 名片定价 **显著高于** 本地竞品。e-print 250g 哑胶 100张仅 $50-70，Print100 啞膠 200张 $45-55，而 ZprintPro 啞膠咭片 100张 $110-190。
+  L31: ### 1.2 特殊工艺名片
+
+[scripts\content-data\business-card-buying-guide.json] (12 hits)
+  L5:       "zh-hk": "名片是商業交往中的「第一張臉」。即香港行內講嘅，一張好名片要「睇得、摸得、留得住」。但面對市場上琳瑯滿目的材質和工藝選擇，很多企業主和設計師都會感到困惑。本文將從材質、工藝、價格、行業適配 4 大維度，為您詳細拆解名片印刷的選購要點。",
+  L13:           "body": "一、名片紙質材質對比"
+  L17:           "body": "紙質是名片的靈魂，直接決定觸感和視覺印象："
+  L61:           "body": "二、名片表面工藝詳解"
+  L75:           "body": "三、名片設計與印刷規範"
+
+[.hermes\k3-inbox\2026-08-12-commit-msg-s11-sweep.md] (11 hits)
+  L1: fix(seo): §11 名片禁区清扫 - products.ts 9 类 150 处全清 (K3 8/12 11:50 全推拍板)
+  L5: fix(seo) §11 名片禁区:
+  L7:   - FAQ MOQ (zh-hk 5 SKU 复用): "名片/信封 100張起" -> "信封 100張起" x76
+  L9:   - 表格 L117: "標準商務名片" -> "標準商務卡片" x5
+  L10:   - 表格 L128: "彩色照片名片" -> "彩色照片卡片" x5
+
+[.hermes\k3-inbox\2026-08-12-four-week-execution-plan-0813-0912.md] (11 hits)
+  L25: ## 二、战略层新发现：§11 名片禁区违规，范围远超 19 号预案
+  L31: | 中文「名片」 | **94 处** | 用户可见文案 |
+  L34: | 共享 MOQ FAQ 句式「名片/信封 100 張起」 | 跨多 SKU 重复（占大头） | **声称售卖名片**——直接违反 §11 |
+  L37: **关键判断**：最大问题不是图片文件名，而是 MOQ FAQ 模板句「貼紙 50 張起、**名片/信封** 100 張起」——这句跨 SKU 复用，等于全站对客声称我们卖名片。§11 红线是"绝对不要写名片"，这是现存最广泛的红线违规。
+  L40: 1. **batch 2（8/14-15，与 batch 1 分日执行）**：MOQ 文案机械替换「名片/信封 100 張起」→「信封 100 張起」（或「海報 10 張起」）；賀卡描述「厚度達標準名片的1.3倍」→「厚度達標準賀卡的1.3倍」。纯文本替换，脚本化，风险低。
+
+[competitive-analysis-seo-strategy.md] (10 hits)
+  L19: | 5 | joinprint.com.hk | ~12K | — | 名片+贴纸+书刊 |
+  L36: - **产品线**: 名片、信封、信纸、卡纸、喷画、精装图书、文具
+  L50: - **定位**: 名片/卡片专家，200+设计模板
+  L53: - **威胁度**: ★★★☆☆（在名片领域强势，其他品类弱）
+  L74: - **定位**: 高端名片/印刷
+
+[en-ja-deep-analysis-execution-plan.md] (9 hits)
+  L16: - **物流死穴：** Vistaprint 的生产中心在欧洲/北美，到香港需7-14天。而香港企业客户的核心痛点是**"即日/次日"** —— 活动前一天才发现名片印错、展会海报没做好。Vistaprint永远解决不了这个痛点。
+  L28: **香港中文用户搜索：** `"名片印刷"` → 直接要报价、要下单、要快
+  L81: - 需求：个人名片、活动邀请函、小型出版物
+  L88: - 需求：企业名片（必须符合总部VI）、产品包装、宣传物料
+  L109: | 产品页标题 | `香港名片印刷 | 即日取貨 | $88起` | `Premium Business Card Printing Hong Kong | Same Day | Free Design` |
+
+[.hermes\k3-inbox\2026-08-13-0910-daily-cron-handoff.md] (9 hits)
+  L58: - 或推到 8/15 (4 周计划 §四 8/14 batch 2 名片清扫 完成后, 8/15 retrofit 第二波)
+  L84: ### 拍板 4 (P2): 4 周计划 8/14 batch 2 名片清扫 优先于 retrofit 吗?
+  L87: - batch 2: §11 名片 94+55+1 = 150 处文案清扫
+  L90: **§11 红线**: 名片 94+55+1 处是 AGENTS.md §11 主营品类约束违规 — 任何用户可见文案出现 "名片" = 红线
+  L93: - 4 周计划 §二: "MOQ 文案机械替换「名片/信封 100 張起」→「信封 100 張起」"
+
+[zprintpro\.cluster\m3-exec-20260811\DELIVERY\20-cleanup-batch2-business-cards.md] (9 hits)
+  L1: # 20 · §0.16 batch 2 名片清扫预案（8/14 执行 · §11 禁区）
+  L4: > 上游：战略大脑四周期计划（§11 名片禁区违规发现）+ 独立核验
+  L13: | 名片（zh-hk 文案） | **94 处** | MOQ 段落、greeting-cards 规格描述（尺寸参照）、features 文案 |
+  L18: **最严重**：跨 SKU 复用 MOQ 段落「貼紙 50 張起、名片/信封 100 張起、禮品包裝盒 100 個起」（zh-hk 数十处）+「ステッカー 50枚〜、名刺・封筒 100枚〜」（ja 数十处）——全站对客声称卖名片，直接违反 §11。
+  L24: | MOQ 段落 | 「名片/信封」→「信封」；「名刺・封筒」→「封筒」（删除名片词，保留其余） | ~80 处 |
+
+[src\data\blog-data\zh-hk.json] (8 hits)
+  L8:     "content": "<p>智印港（ZprintPro）是一家紮根深圳、服務全球的綜合性印刷企業，超過15年深耕印刷產業。本文將帶您深入了解智印港的企業概況、核心設備、後加工能力、品質承諾、跨境服務與聯繫方式。</p>\n<p>智印港於深圳龍崗區設有 8,000+ 平方米現代化廠房，毗鄰香港物流樞紐，可高效服務香港本地、大灣區及全球客戶。團隊規模 200+ 人，年產能達數億印張，服務範疇
+  L16:     "content": "<p>香港作為國際商業中心，每天都有成千上萬的企業需要各類印刷服務。無論是名片、傳單印刷，還是禮品盒、紙袋，選擇一家可靠的印刷公司至關重要。本文將帶您系統分析香港各區印刷公司的特點、選擇要點、避坑指南、服務範疇及成本考量，幫您找到最適合的印刷合作夥伴。</p>\n<h3>一、香港印刷公司分佈概況</h3>\n<table class=\"w-full text-sm
+  L24:     "content": "<p>很多設計師和企業市場部在準備印刷文件時都會遇到各種問題：成品邊緣出現白邊、圖片模糊不清、顏色與屏幕顯示差異巨大……這些問題大多源於對印刷文件規範的不了解。本文將詳細講解出血位、分辨率、色彩模式、文件格式、字體處理、出血外設計 6 個核心概念，幫您一次性搞懂印刷文件規範。</p>\n<h3>一、什麼是出血位（Bleed）？</h3>\n<p>出血位是指在設計稿中
+  L32:     "content": "<p>品牌形象的建立需要系統化的物料支持。從一張名片到一個產品包裝盒，每一個觸點都是品牌與客戶溝通的機會。本文將為您提供一份完整的企業品牌物料清單，包括基礎識別、市場推廣、產品包裝、空間展示、內部辦公 5 大類別的系統化規劃建議，幫助您打造一致的品牌形象。</p>\n<h3>一、基礎品牌識別物料</h3>\n<ul class=\"list-disc pl-5 my
+  L72:     "content": "<p class=\"text-base text-[#1A56DB] font-medium mb-4\"><strong>重點摘要：</strong>CMYK vs RGB 是印刷品質控制的核心決策。CMYK 4 色疊印可還原約 85% 螢幕 RGB 顏色，但 RGB 螢光色 / 高飽和原色必須用 Pantone 專色；ΔE ≤ 2 視為肉眼不可辨，業界標配 Δ
+
+[.hermes\k3-inbox\2026-08-12-1148-b77cddf-s11-sweep-PASS.md] (7 hits)
+  L1: # 8/12 11:48 push 2 (b77cddf) · §11 名片禁区清扫 · 部署 PASS 报告
+  L6: > **状态**: ✅ **PASS** · §11 名片禁区 9 类 150 处全清零
+  L15: | zh-hk /product/stickers/ 名片/咭片 | ✅ 0 (全清零) |
+  L26: - 名片 = 0 ✅
+  L46: | 1 | src/data/products.ts | 9 类 150 处替换 (FAQ MOQ 76 + 注释 1 + 表格 5+5 + ja FAQ 55 + 名片夾 6 + 名片色系 1 + 名片 1) | +303/-150 |
+
+[scripts\content-data\business-card-design.json] (7 hits)
+  L5:       "zh-hk": "名片是商業交往中的第一印象。一張設計精良的名片不僅能傳遞聯繫方式，更能展現品牌專業度。本文將從留白、字體、色彩、材質、信息層級、雙面設計、二維碼應用、印刷規範等 10 個維度，為您系統拆解名片設計的黃金法則。",
+  L17:           "body": "不要試圖在名片上塞入所有信息。適當的留白能讓重點內容更加突出，給人簡潔專業的印象。建議信息區域佔用不超過名片面積的 60%。"
+  L79:             "<strong>400g 厚身名片</strong>：厚實手感，彰顯尊貴品質，適合高管、律師、設計師",
+  L118:               "q": "名片最少可以印幾多張？",
+  L122:               "q": "即日名片真係當日可取嗎？",
+
+[.hermes\logs\2026-08-12-gsc-feedback.md] (6 hits)
+  L102: | **8** | 清单外 | `https://www.z-printpro.com/products/business-card-printing/` | (none, 200 直出) | **200** ❌ | 真异常 (与 7/22 一致, 名片禁区 200 直出) |
+  L230: ### ℹ️ 异常 4: 名片禁区 200 直出 (#8 清单外 200)
+  L234: - **影响**: 名片是 AGENTS.md §11 禁区, 老域名名片页 200 直出 = 用户能找到禁品入口
+  L235: - **fallback**: 不算 §14.4 紧急异常 (设计行为是 catch-all, 名片 200 是次要), 但建议 8/13 02:00 拍板是否加 410 Gone
+  L236: - **K3 拍板候选**: 8/12 19:00 拍板是否加 CF Edge Rule → 410 Gone 名片老 URL
+
+[docs\image-prompts-v2.md] (6 hits)
+  L31: 所有包装盒 / 彩页 / 贴纸 / 纸袋 / 名片 / 标贴 / 海报 / 书刊的**可印刷面**必须呈现真实可见的**客户内容**：
+  L46: | 名片 | 正面：logo + 姓名 + 职位 + 电话 + 邮箱；背面：服务介绍 + slogan + QR |
+  L94: **适合**：贴纸 / 低端名片 / doujinshi / 同人 / 电商首页
+  L136: **适合**：B2B 名片 / 标签 / 吊牌 / 企业采购 / 高单价（>HK$500）
+  L282: ├─ 名片 + >HK$500 + 企业 → B
+
+[docs\ja-seo-rewrite-skeleton-batch1.md] (6 hits)
+  L29: - description: "高級商務咭片 - 高級商務名片/名片印刷 100 張起。採用 300g-400g 銅版紙/啞面/棉紙 高品質材質..."
+  L44: - h1: "400g 厚身名片 | 燙金 UV 多工藝"
+  L58: - h1: "燙金名片 | 金箔銀箔"
+  L72: - h1: "局部UV名片 | 亮面光泽"
+  L86: - h1: "哑面名片 | 柔軟觸感"
+
+[scripts\generate-seedream-blog-prompts.js] (6 hits)
+  L38:     category: '名片知識',
+  L39:     title: { 'zh-hk': '名片設計的10個黃金法則', en: '10 Golden Rules for Business Card Design', ja: '名刺デザインの10の黄金法則' },
+  L40:     theme: '設計師桌面場景：多張精美名片設計稿、色卡、排版工具、咖啡杯，創意工作氛圍',
+  L43:     keywords: '名片設計,排版,色彩搭配',
+  L117:     theme: '完整品牌物料套裝展示：名片、信封、信紙、文件夾、宣傳單張統一排列，品牌視覺一致',
+
+[src\app\[locale]\case-studies\page.tsx] (6 hits)
+  L55:         need: '新品牌上市，需要高端包裝盒與品牌名片建立專業形象',
+  L56:         solution: '350g白卡紙磁吸禮盒配合燙金Logo；300g啞粉紙名片局部UV工藝',
+  L66:         need: '400g厚身名片與企業畫冊，展現專業權威與品牌一致性',
+  L67:         solution: '400g超厚銅版紙名片配合啞膠覆膜；膠裝畫冊157g銅版紙四色印刷',
+  L69:         result: '客戶名片留存率提升60%，畫冊在業界會議中獲得高度評價',
+
+[src\data\search-helpers.ts] (6 hits)
+  L31: // 例: 用户搜 "名片" → 系统视同 "咭片" (HK) / "名刺" (JP)
+  L33:   // 业务卡 (HK: 咭片 / CN: 名片 / JP: 名刺) — 全部互通
+  L34:   { primary: '咭片', aliases: ['名片', '名刺', 'card', 'cards', 'business card', 'business cards', '名卡', '卡片'] },
+  L35:   { primary: '名片', aliases: ['咭片', '名刺', 'card', 'cards', 'business card', '名卡'] },
+  L36:   { primary: '名刺', aliases: ['咭片', '名片', 'card', 'cards', 'business card'] },
+
+[zprintpro\.cluster\m3-exec-20260811\subagent_01_rules.md] (6 hits)
+  L41: ## B. 主营品类与名片禁区
+  L46: | B2 | AG §11/§13.3/MEM 项目记忆/SK §43 行 | **名片禁区**: 绝对不要写名片/咭片/business cards/名刺——不在任何 SEO 标题、描述、关键词、产品文案、AI 训练文本出现；已有内容立即替换为貼紙/宣傳單張/包裝盒；v18 卡要求 premium-business-cards 排类目最后 + 撤首页推荐；MD §3 P1 已执行 busines
+  L87: | E11 | MD §3.3/§3.4（v2.1 修订后） | **JSON-LD 硬约束**: 必须服务端渲染（getStaticProps/组件内直接输出），**禁止 useEffect 动态注入**；产品页 Product Schema 的 image 必须用 PDP 实有主图（imagesByLocale[locale][0]），**禁止虚构 -og.jpg**；url 用单数 `/{{
+  L115: | G5 | CTX §14.1.1 | 301 基线 8/10 PASS（7/22 实测）: 清单内 5/5 精准承接；异常案例 #8 business-card 200 直出（名片禁区应有 301）、#9 about-us 404 无兜底；7/29 起每周对照基线 | 【强制】 | 名片旧 URL 仍 200 = §11 违约 |
+  L185: | 名片禁区（business-cards） | B2 + G5（永不写 + 旧 URL 301 收编 + v18 排序末尾/撤首页） |
+
+[zprintpro\.cluster\m3-exec-20260811\DELIVERY\01-m3-rules-digest.md] (6 hits)
+  L36: ### B. 主营品类与名片禁区
+  L38: - **B2 名片禁区（禁止，§11 强制）**：名片/咭片/business cards/名刺 永不出现于任何 SEO 标题、描述、关键词、产品文案、AI 训练文本；已有内容立即替换；旧 slug 已 301 收编到 greeting-cards（21 条）
+  L70: - **E11 JSON-LD 硬约束（强制）**：服务端渲染禁 useEffect 注入；Product image 用实有主图禁虚构；url 单数 /product/；price 只读引用；无真实评价删 aggregateRating；首页 Organization 补真实深圳 address、description 不含名片词
+  L92: - **G5 301 基线（强制）**：8/10 PASS；名片旧 URL 应 301 而非 200
+  L132: | 不可做 | 名片内容；supplier origin 标题；机械翻译；GBK 乱码；/app/ 入 commit；.env key；外链刷量；amend（已用 1/2） |
+
+[SEO_IMPLEMENTATION_REPORT.md] (5 hits)
+  L62: | zh-hk | 产品页 H1/Title | 名片印刷、貼紙印刷 | 燙金名片 香港、棉紙名片 九龍、A2海報印刷 港島、觀塘即日取名片 |
+  L101: ### 支柱页1：名片印刷完全指南
+  L103: - 集群：燙金名片工藝解析 / Foil Stamping Guide / 箔押し名刺工芸
+  L104: - 集群：棉紙名片選紙指南 / Cotton Paper Selection / 綿紙名刺選び方
+  L105: - 集群：香港名片尺寸規範 / Business Card Sizes US vs HK / 名刺サイズ 海外規格
+
+[.hermes\industry-keyword-matrix.json] (5 hits)
+  L77:   "business_cards_excluded_reason": "AGENTS.md §11 主营品类约束 — 名片/咭片不属于 ZprintPro 主营业务",
+  L2445:             "印名片 (NOT_FOUND, §11 禁区 不补)",
+  L3865:       "note": "2026-07-28 v7 daily-content-evolve: matrix P0/P1 100% 饱和 (K3 §6 铁律常态, 0 候选可写). 5 SKU + 1 PDP + matrix update. P1 v22 收官日 (M3 v22 名片→贺卡 + Schema 基建). 7/29 P2 GSC 周检 cron once 8534c688 06
+  L7790:       "outscope_5_catchall_at_8_12": "3/5 PASS (catch-all 跳 zh-hk 是设计), 2/5 FAIL (#8 名片 200 直出 + #9 about-us 404, 与 7/22 baseline 一致)",
+  L7926:       "3. 4 周计划 8/14 batch 2 (名片 94+55+1 文案清扫, 已建议 8/14 优先)",
+
+[.hermes\cron-prompts\m3-master-directive-2026-07-27.md] (5 hits)
+  L27: | P1 | 7/27-7/28 | v22 名片→贺卡改造 (本卡 §3) |
+  L34: ## 3. P1: v22 名片→贺卡改造 (7/27-7/28, 2 commit 上限)
+  L37: user 7/27 拍板: 名片品类不删, 改造为贺卡 (美国贺卡 Q4 旺季 + 日本年賀状 10-12 月峰值)。工艺同源 (烫金/UV/哑胶/厚卡/圆角直接复用)。
+  L61: 5. **blog-posts.ts / page.tsx posts 对象 / blog-data JSON**: grep 'business-card' 残留内链改新 slug; §11 检查全仓不得新增名片内容 (历史 alt/文件名除外)
+  L125: 5. 宪法边界模糊 (§11 名片残留处理分歧 / §13.10 地区词判断 / §13.16.1 简繁)
+
+[.hermes\k3-inbox\2026-08-11-0400-zprintpro-autoclaw-handoff.md] (5 hits)
+  L18: 6. **严禁**: 名片/咭片/business cards/名刺 (主营品类 §11 强制),「智印印港」错字, GBK 乱码
+  L50: **⛔ §11 强制禁区**: **名片 / 咭片 / business cards / 名刺**
+  L51: - 任何页面、产品、SEO 标题、关键词、AI 训练文本中不得出现名片相关内容
+  L192: | 1 | **不出现名片/咭片/business cards/名刺** (§11) | §0.15 品牌一致性 P0 + §11 强制约束, 历史 seo.ts L343-361 死数据已清理 (Batch A) |
+  L396: 1. 不写名片内容 (§11 强制)
+
+[analysis-2026-07-17\301-migration-runbook.md] (5 hits)
+  L4: > **原则**: 老站 SaaS 零改动;全部 301 在 Cloudflare 边缘完成;名片 8 条 URL 放弃不迁
+  L25: 2. 导入 `analysis-2026-07-17/cloudflare-bulk-redirect.csv` (150 条,已剔除名片)
+  L32: 5. 名片 8 条不建规则 (返回旧站 200 直到 SaaS 到期,或 CF 加 410 规则 — 倾向 410,干净)
+  L72: **CSV 变更**: 149 条 (原 150 - 删名片价格指南博客 1 条; 名信片信封产品从 educational 改指 envelopes); 去 BOM。23 个目标 URL 全部 curl 200。
+  L136: 8. ❌ `/business-card-printing/` **200 直出 (真异常)** — AGENTS.md §11 名片禁区矛盾, 但老站 200 直出不被 Bulk Redirect 兜底
+
+名刺: 394 hits total
+------------------------------------------------------------
+
+[src\data\sku-seo-data.ts] (56 hits)
+  L19:       "ja": "高級名刺"
+  L39:         "title": "プレミアム名刺 | 箔押し UV 加工 | ZprintPro",
+  L40:         "description": "ZprintPro のプレミアム名刺印刷サービス。300g-400g のマット紙・コットン紙・コート紙に対応し、箔押し・スポットUV・エンボス加工が可能です。100 枚から対応、ISO 9001 認証取得工場で生産。アジア自社工場直結で 1-3 営業日納品、全国配送承ります。無料見積もり、即日対応可能。",
+  L41:         "h1": "プレミアム名刺 | 箔押し・スポットUV加工",
+  L42:         "keywords": ["プレミアム名刺", "名刺印刷", "箔押し名刺", "高級名刺", "オリジナル名刺", "即日名刺"],
+
+[docs\ja-drafts-batch-1.md] (35 hits)
+  L10: ## BC-003: 箔押し名刺 (Foil Stamped Business Cards)
+  L13: <h3>グローバルブランド向け 箔押し名刺</h3>
+  L14: <p>智印雲 ZprintPro の箔押し名刺は、ロゴ・氏名・デザイン要素に金属光沢をプラスする高級印刷サービスです。経営者・金融・ラグジュアリーブランドのプロフェッショナル向けに最適化され、米国・英国・オーストラリア・日本などグローバル市場に対応。金箔・銀箔・rose gold 箔・銅箔・ホログラム箔の 5 種類から選択可能、350-600g のマットアート紙または非塗工紙をベースに、Heide
+  L22:     <tr class="border-b border-gray-200"><td>マットアート紙</td><td>350g</td><td>★★★★</td><td>★★★★★</td><td>標準箔押し名刺、モダンブランド</td></tr>
+  L55:   <li><strong>MOQ 100 枚</strong>：個人名刺・少数役員も対応、特急料金で 50 枚も対応可能</li>
+
+[scripts\locale-audit\diff-report.json] (34 hits)
+  L5:   "old": "<p>智印雲 ZprintPro は香港 5,000 社以上の法人名刺取引実績。</p>",
+  L6:   "nw": "<p>智印雲 ZprintPro は累計 5,000 社以上の法人名刺取引実績。</p>"
+  L41:   "old": "longDescriptionJa: `厚紙名刺をZprintProでご注文。400g超厚コート紙、両面カラー、厚紙名刺でプレミアム感を演出。デザイナー・弁護士・高級サービス業様に最適。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェック
+  L42:   "nw": "longDescriptionJa: `厚紙名刺をZprintProでご注文。400g超厚コート紙、両面カラー、厚紙名刺でプレミアム感を演出。デザイナー・弁護士・高級サービス業様に最適。アジア自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェックを行
+  L2231:   "old": "\"description\": \"ZprintPro のプレミアム名刺印刷サービス。300g-400g のマット紙・コットン紙・コート紙に対応し、箔押し・スポットUV・エンボス加工が可能です。100 枚から対応、ISO 9001 認証取得工場で生産。香港直結で 1-3 営業日納品、全国配送承ります。無料見積もり、即日対応可能。\",",
+
+[docs\ja-seo-rewrite-skeleton-batch1.md] (18 hits)
+  L21: ## 1. premium-business-cards（高級名刺）
+  L32: - **h1**: `高級名刺 | 箔押し・スポットUV加工 | ZprintPro`
+  L33: - **description**: `ZprintPro のプレミアム名刺印刷サービス。300g-400g のマット紙・コットン紙・コート紙に対応し、箔押し・スポットUV・エンボス加工が可能です。100 枚から対応、ISO 9001 認証取得工場で生産。香港直結で 1-3 営業日納品、全国配送承ります。無料見積もり、即日対応可能。`
+  L37: ## 2. thick-business-cards-400g（厚紙名刺(400g)）
+  L47: - **h1**: `400g 厚紙名刺 | 重厚感プレミアムカード | ZprintPro`
+
+[src\data\category-seo-content.ts] (18 hits)
+  L585:     h2: '名刺印刷 — 100枚から、300g高級紙、24時間急行',
+  L587:       title: 'ZprintPro 名刺の強み',
+  L590:           heading: '1. ビジネス向け：プロの印象は名刺から',
+  L593:             '「名刺印刷」、「名片設計」、「ビジネスカード」などの高検索ボリュームキーワードをカバー。',
+  L609:             '無料名刺テンプレート＋デザイナー一对一相談。',
+
+[scripts\locale-audit\report.json] (17 hits)
+  L10:   "text": "<p>智印雲 ZprintPro は香港 5,000 社以上の法人名刺取引実績。</p>"
+  L83:   "text": "longDescriptionJa: `厚紙名刺をZprintProでご注文。400g超厚コート紙、両面カラー、厚紙名刺でプレミアム感を演出。デザイナー・弁護士・高級サービス業様に最適。中国深圳自社工場印刷、国際検品体製・日本語サポート対応で日本市場に最適化されています。Illustrator / PDF / 高解像度 PNG / JPG に対応、スタッフが無料でデータチェッ
+  L4240:   "text": "\"description\": \"ZprintPro のプレミアム名刺印刷サービス。300g-400g のマット紙・コットン紙・コート紙に対応し、箔押し・スポットUV・エンボス加工が可能です。100 枚から対応、ISO 9001 認証取得工場で生産。香港直結で 1-3 営業日納品、全国配送承ります。無料見積もり、即日対応可能。\","
+  L4250:   "text": "\"a\": \"香港名刺\""
+  L4260:   "text": "\"description\": \"ZprintPro の 400g 厚紙名刺印刷サービス。マット紙・コーンスターチ紙・アート紙に対応し、箔押し・UV 加工可能。弁護士・デザイナー・ハイエンドサービス向けに最適。100 枚から対応、香港直結で短納期、全国配送、ISO 9001 認証。\","
+
+[docs\blog-content-calendar.json] (12 hits)
+  L296:           "topic": "和紙名刺 vs 普通名刺：日本向けハイエンド印刷",
+  L297:           "keyword": "和紙名刺",
+  L299:           "meta_description": "和紙名刺 vs 普通名刺：日本向けハイエンド印刷。和紙名刺の專門ガイド。智印云香港即日印刷｜ISO9001｜FSC認証｜24時間納品。",
+  L300:           "slug": "和紙名刺",
+  L302:             "なぜ 和紙名刺 vs 普通名刺：日本向けハイエンド印刷 が 2026 年に重要か",
+
+[data\products.ts] (10 hits)
+  L52:   { slug: 'business-cards', name_zh: '咭片印刷', name_en: 'Business Cards', name_ja: '名刺印刷', sort_order: 7 },
+  L70:     title_ja: '高級名刺',
+  L99:     title_ja: '厚紙名刺(400g)',
+  L113:     title_ja: '箔押し名刺',
+  L127:     title_ja: '局部UV名刺',
+
+[scripts\content-data\business-card-buying-guide.json] (10 hits)
+  L7:       "ja": "名刺はビジネス交流における「最初の顔」。香港の業界では「見て、触れて、記憶に残る」名刺が必要。本記事は材質、加工、価格、業種適応の 4 つの側面から、名刺印刷の選び方を詳しく解説します。"
+  L343:           "body": "一、名刺用紙材質の比較"
+  L347:           "body": "用紙は名刺の魂であり、触感・視覚印象を直接決定します："
+  L391:           "body": "二、名刺表面加工詳細"
+  L405:           "body": "三、名刺デザインと印刷仕様"
+
+[data\keyword-analysis.md] (9 hits)
+  L73: | 名刺 印刷 即日 | transactional | ★★☆☆☆ | 即日名片 PDP |
+  L74: | 名刺 作成 格安 | transactional | ★★★★☆ | 名片分类页 |
+  L75: | 名刺 デザイン 印刷 | transactional | ★★★☆☆ | 新着陆页 |
+  L76: | 高級名刺 香港 | transactional | ★★☆☆☆ | 高级名片 PDP |
+  L77: | 箔押し名刺 格安 | transactional | ★★☆☆☆ | 烫金名片 PDP |
+
+[docs\audit-ja-pdp-seo-2026-06-18.md] (9 hits)
+  L94: **Re-write angle**: "白い背景に箔押しされた名刺のクローズアップ — ZprintPro" (and similar 1-sentence descriptions).
+  L100: > "プレミアム名刺のプレミアム名刺は ZprintPro にお任せ。300g-400g マット/コットン/コート 高品質用紙、..."
+  L105: - 名刺: "プロの名刺印刷を即日で。100枚から対応、箔押し・UV加工..."
+  L110: Every SKU has at least one English keyword in `seo[ja].keywords` (e.g., `["プレミアム名刺", "プレミアム名刺 印刷", "premium business cards"]`). Google does not use meta keywords for ranking, but **ja quality raters s
+  L113: - 名刺: `["名刺印刷", "プレミアム名刺", "箔押し名刺", "オリジナル名刺 作成", "即日名刺"]`
+
+[src\app\[locale]\case-studies\page.tsx] (8 hits)
+  L253:         need: '新ブランド立ち上げに向けた高級パッケージと名刺',
+  L254:         solution: '350g白カード磁石式ギフトボックスに箔押しロゴ。300gマット紙名刺に局部UV',
+  L255:         products: ['磁石式ギフトボックス', 'マット名刺', '透明ステッカー'],
+  L264:         need: '400g厚紙名刺と企業カタログで専門的な権威とブランド一貫性を演出',
+  L265:         solution: '400g超厚コート紙名刺にマットラミネート。157gコート紙4色印刷の無線綴じカタログ',
+
+[seedream-tasks.json] (6 hits)
+  L21:     "prompt": "1:1 ratio, 8K ultra-high-definition e-commerce hero image. Top-right single burst label with bright vivid red (#DC2626, standard bright red, absolutely NOT dark red, brownish red, maroo
+  L42:     "prompt": "1:1 ratio, 8K ultra-high-definition e-commerce hero image. Top-right single burst label with bright vivid red (#DC2626, standard bright red, absolutely NOT dark red, brownish red, maroo
+  L63:     "prompt": "1:1 ratio, 8K ultra-high-definition e-commerce hero image. Top-right single burst label with bright vivid red (#DC2626, standard bright red, absolutely NOT dark red, brownish red, maroo
+  L84:     "prompt": "1:1 ratio, 8K ultra-high-definition e-commerce hero image. Top-right single burst label with bright vivid red (#DC2626, standard bright red, absolutely NOT dark red, brownish red, maroo
+  L105:     "prompt": "1:1 ratio, 8K ultra-high-definition e-commerce hero image. Top-right single burst label with bright vivid red (#DC2626, standard bright red, absolutely NOT dark red, brownish red, maroo
+
+[scripts\sku-map.json] (6 hits)
+  L8:       "ja": "高級名刺 - 300g高級コート紙、プロ4色印刷。マットまたはグロスラミネーション選択可。..."
+  L22:       "ja": "厚紙名刺(400g) - 400g超厚紙、重厚な質感。高級サービス業、デザイナー、弁護士向け。..."
+  L36:       "ja": "箔押し名刺 - 部分的な箔押し加工、光に輝いてブランドイメージ向上。金・銀・ローズゴールド対応。..."
+  L50:       "ja": "局部UV名刺 - 部分UVコーティングでロゴやデザインに立体的な光沢効果。クリエイティブ業界向け。..."
+  L64:       "ja": "マット名刺 - マットラミネーション加工、落ち着いた質感で指紋が付きにくい。..."
+
+[scripts\expand-keywords.js] (5 hits)
+  L57:     'ja': '両面名刺印刷,両面名刺,両面名刺デザイン,両面名刺香港,両面名刺見積もり,両面名刺印刷サービス,フルカラー両面名刺,両面ビジネスカード',
+  L62:     'ja': 'エコ名刺印刷,再生紙名刺,環境に優しい名刺,エコ名刺,持続可能名刺,FSC認証名刺,エコ名刺香港,エコ名刺デザイン,エコ名刺印刷サービス',
+  L67:     'ja': '箔押し名刺,メタリック名刺,高級名刺,ゴールド箔押し,シルバー箔押し名刺,ローズゴールド名刺,会社用箔押し名刺,プレミアム箔押し名刺,エンボス箔押し名刺,即日箔押し名刺',
+  L72:     'ja': '丸角名刺印刷,丸角名刺,丸角名刺デザイン,丸角名刺香港,丸角名刺見積もり,丸角名刺印刷サービス,おしゃれ丸角名刺,モダン丸角名刺',
+  L289:     'ja': '400g名刺印刷,厚紙名刺,ヘビー名刺,400gsm名刺,超厚紙名刺,カスタム厚紙名刺,厚紙名刺デザイン,厚紙名刺香港,厚紙名刺見積もり,厚紙名刺印刷サービス',
+
+[scripts\generate-seedream-blog-prompts.js] (5 hits)
+  L39:     title: { 'zh-hk': '名片設計的10個黃金法則', en: '10 Golden Rules for Business Card Design', ja: '名刺デザインの10の黄金法則' },
+  L42:     themeJa: 'デザイナーの机：複数のエレガントな名刺デザイン、カラースウォッチ、レイアウトツール、コーヒーカップ、クリエイティブな作業空間',
+  L45:     keywordsJa: '名刺デザイン,タイポグラフィ,配色',
+  L119:     themeJa: '完全なブランド物料セット：名刺、封筒、便箋、フォルダ、チラシを統一的に配置、一貫したブランドビジュアル',
+  L122:     keywordsJa: 'ブランド物料,名刺,封筒,便箋',
+
+[scripts\content-data\business-card-design.json] (5 hits)
+  L7:       "ja": "名刺はビジネス交流における第一印象です。精巧にデザインされた名刺は、連絡先の伝達だけでなく、ブランドの専門性を表現します。本記事では余白、タイポグラフィー、カラー、素材、情報階層、両面デザイン、QR コード、印刷仕様など 10 の側面から、名刺デザインの黄金法則を体系的に解説します。"
+  L281:           "body": "名刺にあらゆる情報を詰め込まないでください。適切な余白は重要内容を際立たせ、クリーンでプロフェッショナルな印象を与えます。情報面積は名刺面積の 60% 未満に抑えましょう。"
+  L386:               "q": "即日名刺は本当に当日受け取れますか？",
+  L390:               "q": "両面名刺は透けますか？",
+  L401:           "body": "名刺をアップグレードしませんか？今すぐ <a href=\"https://wa.me/8618126380255\" target=\"_blank\">WhatsApp で智印雲に連絡</a> デザインアドバイス＆見積もり！"
+
+[src\data\search-helpers.ts] (5 hits)
+  L31: // 例: 用户搜 "名片" → 系统视同 "咭片" (HK) / "名刺" (JP)
+  L33:   // 业务卡 (HK: 咭片 / CN: 名片 / JP: 名刺) — 全部互通
+  L34:   { primary: '咭片', aliases: ['名片', '名刺', 'card', 'cards', 'business card', 'business cards', '名卡', '卡片'] },
+  L35:   { primary: '名片', aliases: ['咭片', '名刺', 'card', 'cards', 'business card', '名卡'] },
+  L36:   { primary: '名刺', aliases: ['咭片', '名片', 'card', 'cards', 'business card'] },
+
+[src\data\blog-data\ja.json] (5 hits)
+  L16:     "content": "<p>オリジナルステッカー・パッケージ・印刷物を小ロットから注文したい中小企業・D2Cブランド・同人サークルの皆様へ。日本国内にも多くの印刷通販サービス（ラクスル・プリントパック・グラフィコ・しまうまプリントなど）がありますが、品質・納期・価格・素材選択肢の総合判断で迷う方も多いはず。本ガイドでは、ステッカー用素材（ビニール・PVC・クラフト・透明・箔押し）、小ロッ
+  L24:     "content": "<p>多くのデザイナーや企業マーケティング担当が印刷ファイル準備時に問題に直面：仕上がり端の白縁、画像ぼやけ、画面表示と大きな色差 — 多くは印刷ファイル仕様への理解不足が原因。本記事ではブリード、解像度、カラーモード、ファイル形式、フォント処理、特殊効果という 6 つの核心概念を詳解します。</p>\n<h3>一、ブリードとは？</h3>\n<p>ブリードとはデザ
+  L32:     "content": "<p>ブランドイメージ構築には体系的な物料サポートが必要です。名刺から製品パッケージまで、すべてのタッチポイントがブランドと顧客のコミュニケーション機会。本記事では基礎識別、マーケティング、製品パッケージ、空間展示、内部オフィスという 5 つのカテゴリーから完全な企業ブランド物料チェックリストをご提供します。</p>\n<h3>一、基礎ブランド識別物料</h3>\n
+  L378:     "content": "<p>2026 年の米国不動産市場では 150 万人以上のアクティブエージェントが活動し、各ブローカレッジは四半期ごとに数千枚の物件資料チラシ・パンフレット・オープンハウス招待状を配布しています。新築販売センター、再販ブローカー、プロパティ マネージャーにとって、プレミアム チラシは 3 秒の第一印象と 25% のオープンハウス転換率を決定します。ZprintPro
+  L453:     "content": "<p>8月から10月は、日本企業が翌年のカレンダーを発注する最盛期です。壁掛けカレンダー、卓上カレンダー、ミニカレンダーは、低コストで年間を通じてブランドを露出できる最高の販促ツール。ZprintPro（ZprintPro）はアジアの自社工場で高品質なオリジナルカレンダーを 50 部から承り、最短 48 時間生産、全国送料無料（税込 ¥10,000 以上）でお届けし
+
+[zprintpro\.cluster\m3-exec-20260811\DELIVERY\20-cleanup-batch2-business-cards.md] (5 hits)
+  L14: | 名刺（ja 文案） | **55 处** | 同上 ja 版（名刺・封筒 100枚〜 等） |
+  L18: **最严重**：跨 SKU 复用 MOQ 段落「貼紙 50 張起、名片/信封 100 張起、禮品包裝盒 100 個起」（zh-hk 数十处）+「ステッカー 50枚〜、名刺・封筒 100枚〜」（ja 数十处）——全站对客声称卖名片，直接违反 §11。
+  L24: | MOQ 段落 | 「名片/信封」→「信封」；「名刺・封筒」→「封筒」（删除名片词，保留其余） | ~80 处 |
+  L26: | features/FAQ | 含名片/名刺 的 features 行改中性表述（商務卡/カード） | ~30 处 |
+  L28: | **闸门** | 全量替换后 grep 名片/名刺/咭片 = 0（文案层）；8/18 全站验收 grep=0 | 150 → 0 |
+
+[SEO_IMPLEMENTATION_REPORT.md] (4 hits)
+  L66: | ja | 产品页 H1/Title | 名刺印刷、シール印刷 | 箔押し名刺 香港オーダー、和紙名刺 少ロット |
+  L103: - 集群：燙金名片工藝解析 / Foil Stamping Guide / 箔押し名刺工芸
+  L104: - 集群：棉紙名片選紙指南 / Cotton Paper Selection / 綿紙名刺選び方
+  L105: - 集群：香港名片尺寸規範 / Business Card Sizes US vs HK / 名刺サイズ 海外規格
+
+[docs\auto-claw-prompts-v6-envelopes-calendars-2026-06-28.md] (4 hits)
+  L53:     ja: '名刺印刷 カスタム | ZprintPro — 箔押し / UV / 丸角 / プレミアム名刺',
+  L114:   ja: '名刺印刷 カスタム — 箔押し / UV / 丸角 / プレミアム名刺',
+  L217: - **日本产品** (ja): 箔押し名刺、UV名刺、丸角名刺、プレミアム名刺
+  L295: > ❌ **绝对不要写名片/咭片/business cards/名刺** — 这不是 ZprintPro 的主营业务
+
+[docs\ja-drafts-batch-1.json] (4 hits)
+  L3:   "BC-003": "<h3>グローバルブランド向け 箔押し名刺</h3>\n<p>智印雲 ZprintPro の箔押し名刺は、ロゴ・氏名・デザイン要素に金属光沢をプラスする高級印刷サービスです。経営者・金融・ラグジュアリーブランドのプロフェッショナル向けに最適化され、米国・英国・オーストラリア・日本などグローバル市場に対応。金箔・銀箔・rose gold 箔・銅箔・ホログラム箔の 5 種類か
+  L4:   "BC-004": "<h3>グローバルブランド向け スポット UV 名刺</h3>\n<p>智印雲 ZprintPro のスポット UV 名刺は、マット調の用紙ベースにロゴ・氏名・デザイン要素を部分的に UV グロス加工することで、光沢コントラストで立体感を演出する高級印刷サービスです。クリエイティブエージェンシー・デザイナー・テック企業の創業者・モダンブランド向けに最適化。米国・英国・オー
+  L5:   "BC-005": "<h3>グローバルブランド向け マットラミネート名刺</h3>\n<p>智印雲 ZprintPro のマットラミネート名刺は、モダンブランドの定番フォーマット。ソフトタッチのマットラミネート加工で指紋が付きにくく、プレミアムな手触りと共に上品な色彩再現を実現します。デザイナー・エージェンシー・金融プロフェッショナル・モダンブランド向けに最適化。300-400g アートカー
+  L6:   "BC-006": "<h3>モダンブランド向け 角丸名刺</h3>\n<p>智印雲 ZprintPro の角丸名刺は、R3mm または R5mm の柔らかい角丸加工でモダンテイストを表現する名刺印刷サービスです。クリエイティブエージェンシー・テックスタートアップ・デザイナー・ライフスタイルブランド向けに最適化。米国・英国・オーストラリア・日本などグローバル市場に対応。300-400g マット
+
+[.hermes\k3-inbox\2026-08-11-0400-zprintpro-autoclaw-handoff.md] (3 hits)
+  L18: 6. **严禁**: 名片/咭片/business cards/名刺 (主营品类 §11 强制),「智印印港」错字, GBK 乱码
+  L50: **⛔ §11 强制禁区**: **名片 / 咭片 / business cards / 名刺**
+  L192: | 1 | **不出现名片/咭片/business cards/名刺** (§11) | §0.15 品牌一致性 P0 + §11 强制约束, 历史 seo.ts L343-361 死数据已清理 (Batch A) |
+
+[.hermes\k3-inbox\2026-08-12-1148-b77cddf-s11-sweep-PASS.md] (3 hits)
+  L16: | ja /product/stickers/ 名刺 | ✅ 0 (全清零) |
+  L31: - 名刺 = 0 ✅
+  L65: | ja FAQ 名刺 → 封筒 (删 5 SKU 复用) | ✅ 接受: §11 严格, ja 也禁名片 |
+
+[.hermes\k3-inbox\2026-08-12-commit-msg-s11-sweep.md] (3 hits)
+  L11:   - ja FAQ 5 SKU 复用: "名刺・封筒 100枚〜" -> "封筒 100枚〜" x55
+  L21: 验证: grep -c "名片|咭片|名刺" src/data/products.ts = 0
+  L22: grep 3 模式 (名片/咭片/名刺) 全清零
+
+[.hermes\k3-inbox\2026-08-12-four-week-execution-plan-0813-0912.md] (3 hits)
+  L32: | 日文「名刺」 | **55 处** | 用户可见文案 |
+  L42: 3. 验收：8/18 全站 grep「名片|名刺|咭片」= 0（图片文件名白名单除外）。
+  L66: | 8/14 | **batch 2**：§11 名片文案清扫（94 名片 + 55 名刺 + 1 咭片，MOQ 句式替换）+ 内链 23.2%→30% 剩余补链 | 1 |
+
+[.hermes\logs\2026-08-01-verify-3562320-r3.md] (3 hits)
+  L12: | ja cmyk 6 关键词 | 0/6 | **4/6** (business-cards / a4-flyers / booklet-printing / 名刺 命中, CMYK 印刷 / A4 フライヤー MISS) | ⚠️ PART |
+  L27: - 实际 source 写: business-cards / a4-flyers / booklet-printing + 名刺
+  L29: - MISS 原因是 source 用『名刺 / A4 フライヤー』是 product 标题用, 但 ja/cmyk-guide 实际 ending section 文字可能略不同 (例如 A4 フライヤー → A4 フライヤー 全角不同)
+
+[scripts\fix-p3-ja-error.ts] (3 hits)
+  L23:   // BC SKU 走中性化 (避免 名刺 出现 §11 禁区)
+  L24:   'thick-business-cards-400g': '厚紙名刺 / 高耐久 | 厚紙名刺印刷 400g厚紙 | ZprintPro智印雲',
+  L25:   'matte-business-cards': 'マット名刺 / マット | マット名刺印刷 300gマット紙 | ZprintPro智印雲',
+
+[scripts\content-data\brand-materials-checklist.json] (3 hits)
+  L7:       "ja": "ブランドイメージ構築には体系的な物料サポートが必要です。名刺から製品パッケージまで、すべてのタッチポイントがブランドと顧客のコミュニケーション機会。本記事では基礎識別、マーケティング、製品パッケージ、空間展示、内部オフィスという 5 つのカテゴリーから完全な企業ブランド物料チェックリストをご提供します。"
+  L288:             "<strong>名刺</strong>：従業員标配、両面デザイン + 役職別バージョン推奨",
+  L392:               "a": "名刺、封筒、便箋、フォルダー、製品包装の 5 項目が基盤。"
+
+咭片: 328 hits total
+------------------------------------------------------------
+
+[docs\seo-audit-en\parsed-data.json] (71 hits)
+  L16985:         "name": "燙金/燙銀咭片",
+  L17010:         "name": "燙金/燙銀咭片 custom printing high-resolution product image | ZPrintPro Hong Kong",
+  L17011:         "description": "燙金/燙銀咭片 custom printing high-resolution product image | ZPrintPro Hong Kong",
+  L17022:         "name": "燙金/燙銀咭片 custom printing high-resolution product image | ZPrintPro Hong Kong",
+  L17023:         "description": "燙金/燙銀咭片 custom printing high-resolution product image | ZPrintPro Hong Kong",
+
+[src\data\sku-seo-data.ts] (38 hits)
+  L17:       "zh-hk": "高級商務咭片",
+  L26:         "keywords": ["高級商務名片", "名片印刷", "印咭片", "印刷公司"],
+  L68:       "zh-hk": "厚身咭片(400g)",
+  L76:         "h1": "400g超厚紙質，厚實手感彰顯尊貴品質。特別適合高端服務業、設計師、律師等專業人士。智印港提供專業厚身咭片(400g)服務，香港本地印刷，品質保證，價格透明。",
+  L99:         "a": "專業厚身咭片(400g)服務 | 智印港"
+
+[image-prompts.md] (18 hits)
+  L95: ## 高級商務咭片 `(premium-business-cards)`
+  L125:     "alt_text_seo": "香港高級商務咭片 特種紙 50起 50張/個起印 24小時出貨 順豐直送 主圖",
+  L134: ## 厚身咭片(400g) `(thick-business-cards-400g)`
+  L164:     "alt_text_seo": "香港厚身咭片(400g) 特種紙 50起 50張/個起印 24小時出貨 順豐直送 主圖",
+  L173: ## 燙金/燙銀咭片 `(foil-business-cards)`
+
+[data\products.ts] (11 hits)
+  L52:   { slug: 'business-cards', name_zh: '咭片印刷', name_en: 'Business Cards', name_ja: '名刺印刷', sort_order: 7 },
+  L63:   // 咭片印刷 (9 SKU)
+  L68:     title_zh: '高級商務咭片',
+  L97:     title_zh: '厚身咭片(400g)',
+  L111:     title_zh: '燙金/燙銀咭片',
+
+[docs\auto-claw-prompts-v6-envelopes-calendars-2026-06-28.md] (11 hits)
+  L9: >   - ✅ SEO 优化 (H1 / title / keywords / description) → 拿 "咭片印刷" 香港高流量词
+  L34: - business-cards (咭片印刷) — **本轮补 (23:58 反转, 但仅 SEO 层面, 不进主营 UI)**
+  L51:     'zh-hk': '咭片印刷 香港 | 智印雲 ZprintPro — 燙金名片 / UV名片 / 圓角名片 高檔定制',
+  L112:   'zh-hk': '香港咭片印刷定制 — 燙金名片 / UV名片 / 圓角名片 / 高檔名片',
+  L192: # 预期: <h1 ...>香港咭片印刷定制 — 燙金名片 / UV名片 / 圓角名片 / 高檔名片</h1>
+
+[data\competitor-pricing.md] (10 hits)
+  L15: | **ZprintPro** | 啞膠咭片 | HK$110-190 | — | — | — | 价格区间/100张 |
+  L16: | **ZprintPro** | 高級商務咭片(300g) | HK$100-180 | — | — | — | 价格区间/100张 |
+  L17: | **ZprintPro** | 厚身咭片(400g) | HK$120-220 | — | — | — | 价格区间/100张 |
+  L20: | **Print100** | 白咭咭片 | — | HK$55 | HK$95 | HK$140 | 200张起 |
+  L21: | **Print100** | 啞膠咭片 | — | HK$45 | HK$80 | HK$110 | 200张起，9折后 |
+
+[scripts\locale-audit\report.json] (8 hits)
+  L4280:   "text": "\"q\": \"400g超厚紙質，厚實手感彰顯尊貴品質。特別適合高端服務業、設計師、律師等專業人士。智印雲提供專業的厚身咭片(400g)服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。\","
+  L4310:   "text": "\"a\": \"局部燙金或燙銀工藝，在光線下閃耀奪目，瞬間提升品牌檔次。可燙金色、銀色、玫瑰金等多種顏色。智印雲提供專業燙金/燙銀咭片服務，香港本地印刷，品質保證，價格透明。\""
+  L4330:   "text": "\"q\": \"局部UV光油工藝，讓Logo或圖案呈現立體光澤效果，視覺衝擊力強。適合創意行業、設計公司。智印雲提供專業UV局部光油咭片服務，香港本地印刷，品質保證，價格透明。\","
+  L4360:   "text": "\"q\": \"啞膠表面處理，低調內斂的質感，不易留下指紋。適合注重細節的專業人士。智印雲提供專業的啞膠咭片服務，採用高品質材料和先進印刷技術，確保每一件產品都達到最高標準。我們支持靈活起訂量和快速交貨，滿足香港企業的各種印刷需求。\","
+  L4380:   "text": "\"a\": \"圓角設計，柔和美觀且不易折損。展現與眾不同的品味，適合創意產業。智印雲提供專業圓角咭片服務，香港本地印刷，品質保證，價格透明。\""
+
+[lighthouse-zh.json] (7 hits)
+  L3236:                     "nodeLabel": "熱門印刷產品\n\n專業品質，價格透明，快速交貨\n\n查看全部產品\n熱銷\n高級商務咭片\n\n採用300g高級銅版紙，配合專業四色印刷，展現企業專業形象。可選啞膠或光膠…"
+  L3297:                     "nodeLabel": "熱銷\n高級商務咭片\n\n採用300g高級銅版紙，配合專業四色印刷，展現企業專業形象。可選啞膠或光膠表面處理，觸感細膩，色彩鮮豔持久。\n\nHK$150-300/1…"
+  L3518:                     "nodeLabel": "厚身咭片(400g)\n\n400g超厚紙質，厚實手感彰顯尊貴品質。特別適合高端服務業、設計師、律師等專業人士。\n\nHK$250-450/100張\n立即訂購"
+  L5830:               "snippet": "<img alt=\"香港厚身咭片(400g)印刷 | 400g超厚紙質，厚實手感彰顯尊貴品質。特別適合高 | ZprintPro智印云\" loading=\"lazy\" decoding=\"async\" data-nimg=\"fill\" class=\"object-cover group-hover:scale-105 trans
+  L5831:               "nodeLabel": "香港厚身咭片(400g)印刷 | 400g超厚紙質，厚實手感彰顯尊貴品質。特別適合高 | ZprintPro智印云"
+
+[seedream-tasks.json] (6 hits)
+  L7:     "prompt": "1:1比例，8K超高清电商主图。右上角固定放置单一枚鲜艳明亮的大红色(#DC2626，标准正红色，绝对不能是暗红、老红、棕红或酒红)底色、白色粗体字(PingFang HK Bold)、白色3px描边的爆炸促销标签。标签主标题：高級商務咭片｜HK$100-180/100張起，副标题：熱賣中・免費設計。标签外画面内绝对不出现任何其他文字、乱码、水印、品牌名、多标签。 前
+  L28:     "prompt": "1:1比例，8K超高清电商主图。右上角固定放置单一枚鲜艳明亮的大红色(#DC2626，标准正红色，绝对不能是暗红、老红、棕红或酒红)底色、白色粗体字(PingFang HK Bold)、白色3px描边的爆炸促销标签。标签主标题：厚身咭片(400g)｜HK$120-220/100張起，副标题：熱賣中・免費設計。标签外画面内绝对不出现任何其他文字、乱码、水印、品牌名、多标
+  L49:     "prompt": "1:1比例，8K超高清电商主图。右上角固定放置单一枚鲜艳明亮的大红色(#DC2626，标准正红色，绝对不能是暗红、老红、棕红或酒红)底色、白色粗体字(PingFang HK Bold)、白色3px描边的爆炸促销标签。标签主标题：燙金/燙銀咭片｜HK$180-320/100張起，副标题：熱賣中・免費設計。标签外画面内绝对不出现任何其他文字、乱码、水印、品牌名、多标签。 
+  L70:     "prompt": "1:1比例，8K超高清电商主图。右上角固定放置单一枚鲜艳明亮的大红色(#DC2626，标准正红色，绝对不能是暗红、老红、棕红或酒红)底色、白色粗体字(PingFang HK Bold)、白色3px描边的爆炸促销标签。标签主标题：UV局部光油咭片｜HK$140-260/100張起，副标题：熱賣中・免費設計。标签外画面内绝对不出现任何其他文字、乱码、水印、品牌名、多标签。
+  L91:     "prompt": "1:1比例，8K超高清电商主图。右上角固定放置单一枚鲜艳明亮的大红色(#DC2626，标准正红色，绝对不能是暗红、老红、棕红或酒红)底色、白色粗体字(PingFang HK Bold)、白色3px描边的爆炸促销标签。标签主标题：啞膠咭片｜HK$110-190/100張起，副标题：熱賣中・免費設計。标签外画面内绝对不出现任何其他文字、乱码、水印、品牌名、多标签。 前景为
+
+[sku-list.json] (6 hits)
+  L5:     "altZh": "高級商務咭片 - 採用300g高級銅版紙，配合專業四色印刷，",
+  L13:     "altZh": "厚身咭片(400g) - 400g超厚紙質，厚實手感彰顯尊貴",
+  L21:     "altZh": "燙金/燙銀咭片 - 局部燙金或燙銀工藝，在光線下閃耀奪目，瞬",
+  L29:     "altZh": "UV局部光油咭片 - 局部UV光油工藝，讓Logo或圖案呈現",
+  L37:     "altZh": "啞膠咭片 - 啞膠表面處理，低調內斂的質感，不易留下指紋。適",
+
+[.hermes\k3-inbox\gsc-2026-08-13-raw-full.json] (6 hits)
+  L419:      "印咭片",
+  L566:      "咭片印刷",
+  L573:      "咭片",
+  L4811:      "印咭片",
+  L5112:      "咭片印刷",
+
+[.hermes\k3-inbox\gsc-2026-08-13-raw.json] (6 hits)
+  L399:         "印咭片",
+  L546:         "咭片印刷",
+  L553:         "咭片",
+  L4786:         "印咭片",
+  L5087:         "咭片印刷",
+
+[scripts\sku-map.json] (6 hits)
+  L6:       "zh-hk": "高級商務咭片 - 採用300g高級銅版紙，配合專業四色印刷，展現企業專業形象。可選啞膠或光膠表面處...",
+  L20:       "zh-hk": "厚身咭片(400g) - 400g超厚紙質，厚實手感彰顯尊貴品質。特別適合高端服務業、設計師、律師等專業人...",
+  L34:       "zh-hk": "燙金/燙銀咭片 - 局部燙金或燙銀工藝，在光線下閃耀奪目，瞬間提升品牌檔次。可燙金色、銀色、玫瑰金等...",
+  L48:       "zh-hk": "UV局部光油咭片 - 局部UV光油工藝，讓Logo或圖案呈現立體光澤效果，視覺衝擊力強。適合創意行業、...",
+  L62:       "zh-hk": "啞膠咭片 - 啞膠表面處理，低調內斂的質感，不易留下指紋。適合注重細節的專業人士。...",
+
+[competitive-analysis-seo-strategy.md] (5 hits)
+  L18: | 4 | print100.com | ~15K | — | 咭片皇，一站式 |
+  L44: - **产品线**: 横幅、易拉架、展板、海报、贴纸、灯箱、车身广告 + 纸品（咭片、单张、信封）
+  L52: - **SEO重点**: "印卡片"、"咭片印刷"等核心词
+  L55: **④ Print100咭片皇**
+  L562: | Print100 | print100.com | 35+ | 咭片、急单印刷 | 网站体验差、无SEO优化 |
+
+[.hermes\reports\m3-v22-2026-07-27.md] (5 hits)
+  L14: | **live 页禁词残留** | business card 0 / 咭片 2 (search placeholder UI) / 名刺 0 | 图片文件名按 K3 豁免 |
+  L66: - ✅ 6 SKU longDescription 全部清零 (咭片/名刺/business cards 81 changes)
+  L70: - ⚠️ Header 搜索框 placeholder "搜尋印刷產品 (宣傳單張/咭片/貼紙...)" — UI 提示词, 跟产品内容无关, 改它属 search component 改造, 不在 v22 范围
+  L149: ### 升级 3: Header 搜索框 placeholder "咭片" (LOW)
+  L151: **现状**: src/components/* 搜索框 placeholder "搜尋印刷產品 (宣傳單張/咭片/貼紙...)" 含 "咭片"
+
+[src\data\search-helpers.ts] (5 hits)
+  L31: // 例: 用户搜 "名片" → 系统视同 "咭片" (HK) / "名刺" (JP)
+  L33:   // 业务卡 (HK: 咭片 / CN: 名片 / JP: 名刺) — 全部互通
+  L34:   { primary: '咭片', aliases: ['名片', '名刺', 'card', 'cards', 'business card', 'business cards', '名卡', '卡片'] },
+  L35:   { primary: '名片', aliases: ['咭片', '名刺', 'card', 'cards', 'business card', '名卡'] },
+  L36:   { primary: '名刺', aliases: ['咭片', '名片', 'card', 'cards', 'business card'] },
+
+[scripts\expand-keywords.js] (4 hits)
+  L55:     'zh-hk': '雙面名片印刷,雙面咭片,雙面名片設計,雙面商務名片,雙面卡片印刷,雙面名片訂造,雙面名片香港,雙面名片報價,雙面名片速印,雙面名片少量印刷,雙面公司名片,雙面彩色名片',
+  L60:     'zh-hk': '環保名片印刷,再生紙名片,環保咭片,綠色名片印刷,環保名片訂造,FSC名片,大豆油墨名片,環保名片香港,環保名片設計,環保名片報價,可持續名片,環保名片速印,環保名片少量印刷',
+  L70:     'zh-hk': '圓角名片印刷,圓角咭片,圓角名片設計,圓角商務名片,圓角卡片制作,圓角名片訂造,圓角名片香港,圓角名片報價,圓角名片速印,圓角名片少量印刷,圓角公司名片,時尚圓角名片',
+  L287:     'zh-hk': '400g厚咭片印刷,厚身名片,超厚名片,400克名片,厚紙名片印刷,厚咭片訂造,厚咭片設計,厚咭片香港,厚咭片報價,厚咭片速印,厚咭片少量印刷,高級厚咭片,400g咭片,厚身咭片印刷',
+
+[src\data\category-seo-content.ts] (4 hits)
+  L393: // 2. BUSINESS CARDS — 咭片印刷
+  L405:             '滿足「名片印刷 香港」、「咭片印刷」、「名片設計」、「商務名片」等高搜索量關鍵詞需求',
+  L474:         '在香港搜尋「名片印刷 香港」「咭片燙金」「厚身名片」的用戶往往同時在意交期與門市／寫字樓收件便利；建議先定下使用場景（展會派發、投行會議、創意作品集），再決定紙厚與工藝數量，並預留時間做數碼樣張確認色彩。',
+  L2727:     'business-cards': { 'zh-hk': '咭片印刷', en: 'Business Cards', ja: '名刺印刷' },
+
+[src\data\price-tables\flyers.json] (4 hits)
+  L14:     "note": "2026-07-18 校准: a5-flyers 重叠档 (1000/2000/3000/5000) + 新增 500 档用 intuan 专版宣传单实询价; 100/300 数码甜点档与 600 e-print anchor 档保留。a4-flyers / same-day-flyers / eco-flyers 未动。 | 2026-07-20 校准: a5/a4 主
+  L22:       "eprint_eco_flyers": "N/A — e-print 公开页无 100% recycled/再生纸 宣传单张配置, 仅有 FSC 咭片 (products_fsc_eco_business_name_cards_printing) 和 環保袋 (non_woven_bag_printing) — eco-flyers 维持 pending, 待 intuan 询价"
+  L256:           "note": "特殊纸价待询 [2026-07-21 v4: e-print.com.hk 无公开再生纸 flyers 页 (仅有 FSC 咭片和環保袋品类), 急件/宣傳單頁无 100% recycled 配置; 维持 pending, 待 intuan 询价校准]"
+  L263:           "note": " [2026-07-21 v4: e-print.com.hk 无公开再生纸 flyers 页 (仅有 FSC 咭片和環保袋品类), 急件/宣傳單頁无 100% recycled 配置; 维持 pending, 待 intuan 询价校准]"
+
+[src\lib\quote-engine\__tests__\search.regression.test.ts] (4 hits)
+  L7: //  - 业务别名 (名片/咭片/名刺, フライヤー/チラシ)
+  L14:   { q: '名片', minP: 5, desc: 'CN 名片 → 咭片 alias' },
+  L15:   { q: '咭片', minP: 5, desc: 'HK 咭片 direct' },
+  L59:   { q: '咭片', expectedCat: 'business-cards' },
+
+[.hermes\k3-inbox\2026-08-11-0400-zprintpro-autoclaw-handoff.md] (3 hits)
+  L18: 6. **严禁**: 名片/咭片/business cards/名刺 (主营品类 §11 强制),「智印印港」错字, GBK 乱码
+  L50: **⛔ §11 强制禁区**: **名片 / 咭片 / business cards / 名刺**
+  L192: | 1 | **不出现名片/咭片/business cards/名刺** (§11) | §0.15 品牌一致性 P0 + §11 强制约束, 历史 seo.ts L343-361 死数据已清理 (Batch A) |
+
+[.hermes\k3-inbox\2026-08-12-commit-msg-s11-sweep.md] (3 hits)
+  L8:   - 注释 L101: "咭片印刷 (6 SKU)" -> "卡片印刷 (6 SKU)" x1
+  L21: 验证: grep -c "名片|咭片|名刺" src/data/products.ts = 0
+  L22: grep 3 模式 (名片/咭片/名刺) 全清零
+
+[.hermes\k3-inbox\2026-08-12-four-week-execution-plan-0813-0912.md] (3 hits)
+  L33: | 「咭片」 | 1 处 | 用户可见文案 |
+  L42: 3. 验收：8/18 全站 grep「名片|名刺|咭片」= 0（图片文件名白名单除外）。
+  L66: | 8/14 | **batch 2**：§11 名片文案清扫（94 名片 + 55 名刺 + 1 咭片，MOQ 句式替换）+ 内链 23.2%→30% 剩余补链 | 1 |
+
+[.hermes\logs\2026-08-11-日运营报告.md] (3 hits)
+  L21: | 残留待修 | header 搜索占位符 "咭片" 1 处 / poster-guide 旧文含 "咭片" 1 处 (既有,非本 commit) |
+  L66: - header 搜索占位符 "咭片" 1 处 + poster-guide 旧文 "咭片" 1 处, 既有残留, 非本 commit
+  L102: | 5 | 禁词残留 | ✅ "咭片" 既有 2 处 (header + poster-guide) 已知; paper-materials 0 命中 |
+
+[.hermes\reports\m3-escalation-2026-07-27.md] (3 hits)
+  L72: - 截图行: 贴纸印刷 9 / 宣传单张 7 / 包装盒定制 12 / 定制海报 6 / 纸袋印刷 6 / 咭片印刷 6 / 喷绘广告 5 / 书籍印刷 5 / 餐牌印刷 5 / 信封印刷 4 / 年历印刷 6
+  L102: - products.ts:87 明确有 `slug: 'business-cards', name: '咭片印刷', nameEn: 'Business Cards', nameJa: '名刺印刷'`
+  L103: - K3 §11 「❌ 绝对不要写名片/咭片/business cards/名刺 — 这不是 ZprintPro 的主营业务」
+
+[zprintpro\.cluster\m3-exec-20260811\DELIVERY\20-cleanup-batch2-business-cards.md] (3 hits)
+  L15: | 咭片（zh-hk） | **1 处** | L99 注释「咭片印刷 (6 SKU)」 |
+  L27: | 注释 | L99「咭片印刷 (6 SKU)」→「賀卡印刷 (6 SKU)」 | 1 处 |
+  L28: | **闸门** | 全量替换后 grep 名片/名刺/咭片 = 0（文案层）；8/18 全站验收 grep=0 | 150 → 0 |
+
+[.hermes\gsc-7d-analysis-2026-08-05.json] (2 hits)
+  L103:       "q": "印咭片",
+  L128:       "q": "咭片",
+
+[.hermes\industry-keyword-matrix.json] (2 hits)
+  L77:   "business_cards_excluded_reason": "AGENTS.md §11 主营品类约束 — 名片/咭片不属于 ZprintPro 主营业务",
+  L2528:         "咭片印刷 10"
+
+[.hermes\working-directory-brief.md] (2 hits)
+  L19: - ❌ 永不在 SKU/博客/SEO 出现: 名片 / 咭片 / business cards / 名刺
+  L402: 4. **C13 BC SKU 中性化**: `fixAltShort` 必须先检测 `catSlug === 'business-cards'` 走 `專業商務印刷` 模板, 避免咭片/名片污染.
+
+[.hermes\k3-inbox\2026-08-08-0430-gsc-zh-hk-v3-analysis.md] (2 hits)
+  L146: | **啞膠咭片** | 4 | 24.5 | ❌ 咭片禁区 | 跳过 |
+  L222: | **咭片/名片** (禁区 per §11) | 咭片印刷 99 + 咭片 98 + 印咭片 87 + 卡片印刷 56 + 印卡片 45 + 啞膠咭片 4 + 名片印刷 1 + 卡片 1 + 卡片 紙質 1 + 客 製 貼紙 2 = **394 imps** | 31-95 | ❌ 全部跳过 |
+
+DONE

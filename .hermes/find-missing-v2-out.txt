@@ -1,0 +1,58 @@
+﻿
+zh-hk JSON (46) vs articleSlugs (49):
+
+en JSON (46) vs articleSlugs (49):
+
+ja JSON (46) vs articleSlugs (49):
+
+
+=== FULL 49 articleSlugs �� 3 locale status matrix ===
+company-intro  Y  Y  Y
+hong-kong-printing-guide  Y  Y  Y
+design-file-specs  Y  Y  Y
+brand-materials-checklist  Y  Y  Y
+mtr-advertising-specs  Y  Y  Y
+sticker-guide  Y  Y  Y
+business-card-design  Y  Y  Y
+packaging-trends  Y  Y  Y
+cmyk-guide  Y  Y  Y
+paper-materials  Y  Y  Y
+eco-printing  Y  Y  Y
+flyer-printing-guide  Y  Y  Y
+food-packaging-printing-guide  Y  Y  Y
+paper-bag-printing-guide  Y  Y  Y
+poster-printing-guide  Y  Y  Y
+restaurant-opening-flyer-printing-guide  Y  Y  Y
+packaging-box-custom-guide  Y  Y  Y
+pet-food-sticker-printing-guide  Y  Y  Y
+apparel-shopping-bag-printing-guide  Y  Y  Y
+cross-border-ecommerce-shipping-box-guide  Y  Y  Y
+real-estate-brochure-box-printing-guide  Y  Y  Y
+pharmaceutical-label-printing-guide  Y  Y  Y
+jewellery-shopping-bag-printing-guide  Y  Y  Y
+cosmetics-packaging-box-printing-guide  Y  Y  Y
+tea-beverage-gift-box-printing-guide  Y  Y  Y
+wedding-favor-bag-printing-guide  Y  Y  Y
+retail-shop-poster-printing-guide  Y  Y  Y
+restaurant-menu-printing-guide  Y  Y  Y
+wedding-red-packet-printing-guide  Y  Y  Y
+product-label-printing-guide  Y  Y  Y
+graduation-yearbook-printing-guide  Y  Y  Y
+ip-character-sticker-printing-guide  Y  Y  Y
+trade-show-banner-printing-guide  Y  Y  Y
+wedding-invitation-envelope-printing-guide  Y  Y  Y
+doujin-circle-printing-guide  Y  Y  Y
+hotel-amenity-sticker-printing-guide  Y  Y  Y
+finance-summit-gift-bag-printing-guide  Y  Y  Y
+marathon-event-poster-printing-guide  Y  Y  Y
+car-dealership-amenity-sticker-printing-guide  Y  Y  Y
+hotel-keycard-sleeve-printing-guide  Y  Y  Y
+baby-product-label-sticker-printing-guide  Y  Y  Y
+ecommerce-shipping-bag-printing-guide  Y  Y  Y
+media-merchandise-box-printing-guide  Y  Y  Y
+restaurant-opening-flyer-printing-guide  Y  Y  Y
+cosmetics-packaging-box-printing-guide  Y  Y  Y
+pet-food-sticker-printing-guide  Y  Y  Y
+thick-paper-flyer-printing-restaurant-takeout-guide  Y  Y  Y
+magnetic-closure-gift-box-ecommerce-brand-guide  Y  Y  Y
+folding-box-cosmetics-brand-eco-friendly-guide  Y  Y  Y

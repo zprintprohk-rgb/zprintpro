@@ -1,0 +1,90 @@
+feat(sku+redirect): v7 gang-run-card-boxes PKG-016 (香港零竞争词) 替换 drawer-slide-gift-box → rigid-boxes (12 SKU 维持)
+
+【触发】K3 7/23 04:49 拍板 v7 任务卡 · Task 1 + Task 2 (Task 3 报价台 v2 UI 部分留到下次)
+【收入关联】拼版白卡彩盒香港 SEO 零竞争 + 成本 RMB 86 起(×1.5 = HKD 129 起)对香港无对手；en/ja 同价锚转换, 毛利 ≥ 50% + DHL 运费另计
+
+【v7 Task 1: 新 SKU gang-run-card-boxes PKG-016 (取代 drawer-slide-gift-box PKG-010 礼盒类最弱坑位)】
+
+- src/data/products.ts: 加 PKG-016 gang-run-card-boxes object (line 17968, 替代 PKG-010)
+  - slug: gang-run-card-boxes
+  - zh-hk: 拼版白卡彩盒(免刀模費) | en: Gang-Run White Card Boxes (No Die-Cut Fee) | ja: 合版ホワイトカードボックス(型代不要)
+  - 4 種紙材: 350g/400g 單粉卡 / 375g 銀卡紙 / 375g 鐳射銀卡
+  - 3 種盒型: 飛機盒 / 普通扣底盒 / 雙插盒; 8 檔標準尺寸 (60x40x20 ~ 200x150x80mm)
+  - 500-10,000 枚, 交期 8-15 天 (湊版, 如實標註)
+  - 覆光膜/啞膜, 可選燙金/UV/擊凸/貼膠片
+  - 價格: zh-hk HKD 129 起 / en USD 25 / ja ¥3,800 (yate98 cost × 1.5/2.2/2.2, 毛利 ≥ 50%)
+  - optimizedAt: 2026-07-23, optimizationRound: 1
+  - **PKG-014 已被 corrugated-boxes 占用, 改为 PKG-016** (v7 新增, 跟 v4 任务的 PKG-013/014/015 接续)
+
+【v7 Task 2: drawer-slide-gift-box 301 → rigid-boxes (3 locale × 2 source = 6 条 rules, LOCALES=zh-hk/en/ja)】
+
+- next.config.js buildGuideRedirects():
+  - 加 6 条 rules: drawer-slide-gift-box / drawer-slide-gift-box/ → rigid-boxes (per locale)
+  - 跟 v6 gift-boxes 模式一致 (2026-07-22 v6 拍板 13→12 SKU 集中权重)
+  - 类目 12→12 SKU 维持 (删 drawer-slide 1 + 加 gang-run 1)
+  - permanent: true (301)
+
+- src/middleware.ts:57 改 'drawer-slide-gift-box': '/product/drawer-slide-gift-box/' → '/product/rigid-boxes/'; 加 'gang-run-card-boxes': '/product/gang-run-card-boxes/'
+
+- src/components/quote/QuoteRedirect.tsx:23 同样改 + 加 (quote 参数映射)
+
+- src/lib/h1-builder.ts:120 'drawer-slide-gift-box': '滑軌盒' → '硬盒定制' (v6 风格, 合并到 rigid-boxes); 加 'gang-run-card-boxes': '拼版白卡' (zh-hk 翻译)
+
+- src/components/layout/Header.tsx 6 处 drawer-slide 翻译 改 gang-run 翻译 (3 locale × 2 处 = slug 翻译 + featuredDescs)
+  - zh-hk: 抽屜禮盒 → 拼版白卡彩盒 | 抽拉設計，層次豐富 → 免刀模費，標準尺寸
+  - en: Drawer Slide Gift Box → Gang-Run White Card Boxes | Slide design, rich layers → No die-cut fee, standard sizes
+  - ja: 引き出しギフト箱 → 合版ホワイトカードボックス | 引き出し式、層豊か → 型代不要、標準サイズ
+
+- src/lib/pricing.ts:436 删 drawer-slide-gift-box entry (min 2.76/max 5.82/ja 360/648); 加 gang-run-card-boxes entry (en 25-110/ja 3800-12500, 5 档范围)
+
+- src/data/sku-seo-data.ts: 删 drawer-slide-gift-box 整段 entry (line 4053-4092, 40 行); 加 gang-run-card-boxes entry (40 行, 含 name + seo 3 locale + faqs + imageAlt)
+  - seo 标题本地化: zh-hk "拼版白卡彩盒印刷 (免刀模費)" | en "Gang-Run White Card Boxes (No Die-Cut Fee)" | ja "合版ホワイトカードボックス (型代不要)"
+  - sharp hooks (en, §13.15): Free Shipping $99+ / No Minimum 500 MOQ
+  - 关键词含 §11 主营品类 (包裝盒)
+
+【红线遵守】
+
+- §11 主营品类: 拼版白卡彩盒 = 包裝盒 ✅ (不写名片, AGENTS.md §11)
+- §13.10 NAP 脱钩: en/ja 标题/正文不带 Hong Kong/Shenzhen/中国 ✅ (keywords 检查通过)
+- §13.13 三 Locale 独立市场: zh-hk 香港無對手價 + en 美国 sharp hook 集中 + ja 日本市场卖点 ✅
+- §13.15 en 美国集中: Free Shipping $99+ + No Minimum 500 MOQ ✅ (sharp hook 4/5 部署)
+- §13.16.1 zh-hk 100% 繁体: 拼版白卡彩盒(免刀模費) + 4 種紙材 + 3 種盒型 + 8 檔標準尺寸 全部繁体 ✅
+- §13.14 15+ 年口径: SKU 描述含 "15+ 年" (深圳自设厂房) ✅
+- 「智印港」= zh-hk 自有品牌 (301 合体后双品牌), en/ja = ZprintPro ✅ (sku-seo-data.ts + products.ts 描述)
+- optimizedAt + optimizationRound 字段按 M3 v4 拍板 (commit 3fe7710) ✅
+- gang-run slug 用 "拼版白卡彩盒" 不是 "拼版彩盒" (差异化 white-card-boxes, 任务卡 v7 拍板) ✅
+- M3 v6 拍板 智印港双品牌 (en/ja = ZprintPro, zh-hk = 智印港) ✅ (description "智印港" 跟 "ZprintPro" 区分)
+
+【数据来源】
+
+- price-tables/gang-run-card-boxes.json (commit 75d2ea4 已落, 13 configs, 5 档标准尺寸) ✅
+- yate98 cost (commit 75d2ea4) × 1.5/2.2/2.2 markup (commit d6dd21d) ✅
+- shipping-rules.json (commit 75d2ea4) ✅
+
+【C9 攒批】
+
+- 本 commit 1 + 之前 3 commit (5cc86b1 fix(sso+cron) + 75d2ea4 feat(pricing) yate98 + 9571bd7 fix(pricing) markup 1.5 + d6dd21d feat(pricing) market markup) = 5 commit 1 push 1 build quota
+- 1 push 攒批 5 commit, 触发 CF Pages build 1 次 (跟 C9 攒批 1 push 1 build 节奏一致)
+- C36 风险分层: 之前 3 commit (data 改) + 本 commit (SKU 改 + redirect) 风险等级不同, 但都是低风险 (无 src/ 核心逻辑改, 主要是产品数据 + redirect 规则 + 翻译映射)
+
+【验收 (本 commit 完成)】
+
+- ✅ packaging 12 SKU 维持 (1 删 1 加)
+- ✅ drawer-slide 全 src 残留 = 0
+- ✅ gang-run-card-boxes PDP URL: /zh-hk/product/gang-run-card-boxes/ (3 locale 8 locale per src/lib/h1-builder, 当前 3 locale)
+- ✅ 7 个文件改 (next.config.js + Header.tsx + QuoteRedirect.tsx + products.ts + sku-seo-data.ts + h1-builder.ts + pricing.ts)
+
+【Task 3 留到下次 (1 commit 1 push 1 build quota)】
+
+- 报价台 v2 /quote-desk/ 路由 + UI 接入 12 张 price-tables 数据层 (data 60% 已 commit 75d2ea4/9571bd7/d6dd21d)
+- 3 级选择 (品类 → 配置 → 数量档位)
+- 运费自动判定 (≤30kg 順豐 / >30kg 物流公式按 shipping-rules.json)
+- 三语 WhatsApp 报价文案 (zh-hk/en/ja)
+- 红线: 页面禁 e-print/intuan/yate98/anchor/cost 字样 + noindex + 零内链
+- 6 项验收 (1 commit + push + verify-deploy.mjs)
+
+【K3 拍板待办】
+
+- gang-run-card-boxes PDP 图片 (seedream 5 张/3 locale = 15 张) — 跟 v4 M3 拍板, Mavis 用 zprintpro-product-image-gen skill 跑, 或 K3 提供
+- 实际生产测试 (500 枚起印报价对比 e-print 公开价)
+- v7 任务卡 6 项 curl 验收 (1 + 2 + 4 已通过 code review, 3 + 5 + 6 待 7/29 cron 跑后 live verify)

@@ -1,0 +1,48 @@
+﻿
+=== https://zprintpro.com/zh-hk/blog/religious-ceremony-printing-guide/ ===
+  total <img> tags: 8
+    1. /images/logo-new-200x55.png
+    2. /images/products/seedream-webp/zprintpro-business-cards-premium-business-cards-zh-hk.webp
+    3. /images/products/seedream-webp/zprintpro-stickers-waterproof-stickers-zh-hk.webp
+    4. /images/products/seedream-webp/zprintpro-paper-bags-kraft-paper-bags-zh-hk-1.webp
+    5. /images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-1.webp
+    6. /images/logo-new-200x55.png
+    7. /images/payment/shansu-collect-zh-hk.png
+    8. /images/logo-new-200x55.png
+  <main> area imgs: 4
+    1. /images/products/seedream-webp/zprintpro-business-cards-premium-business-cards-zh-hk.webp
+    2. /images/products/seedream-webp/zprintpro-stickers-waterproof-stickers-zh-hk.webp
+    3. /images/products/seedream-webp/zprintpro-paper-bags-kraft-paper-bags-zh-hk-1.webp
+    4. /images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-1.webp
+
+=== https://zprintpro.com/zh-hk/blog/industrial-nameplate-printing-guide/ ===
+  total <img> tags: 8
+    1. /images/logo-new-200x55.png
+    2. /images/products/seedream-webp/zprintpro-business-cards-premium-business-cards-zh-hk.webp
+    3. /images/products/seedream-webp/zprintpro-stickers-waterproof-stickers-zh-hk.webp
+    4. /images/products/seedream-webp/zprintpro-paper-bags-kraft-paper-bags-zh-hk-1.webp
+    5. /images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-1.webp
+    6. /images/logo-new-200x55.png
+    7. /images/payment/shansu-collect-zh-hk.png
+    8. /images/logo-new-200x55.png
+  <main> area imgs: 4
+    1. /images/products/seedream-webp/zprintpro-business-cards-premium-business-cards-zh-hk.webp
+    2. /images/products/seedream-webp/zprintpro-stickers-waterproof-stickers-zh-hk.webp
+    3. /images/products/seedream-webp/zprintpro-paper-bags-kraft-paper-bags-zh-hk-1.webp
+    4. /images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-1.webp
+
+=== https://zprintpro.com/zh-hk/blog/construction-material-sample-book-printing-guide/ ===
+  total <img> tags: 8
+    1. /images/logo-new-200x55.png
+    2. /images/products/seedream-webp/zprintpro-business-cards-premium-business-cards-zh-hk.webp
+    3. /images/products/seedream-webp/zprintpro-stickers-waterproof-stickers-zh-hk.webp
+    4. /images/products/seedream-webp/zprintpro-paper-bags-kraft-paper-bags-zh-hk-1.webp
+    5. /images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-1.webp
+    6. /images/logo-new-200x55.png
+    7. /images/payment/shansu-collect-zh-hk.png
+    8. /images/logo-new-200x55.png
+  <main> area imgs: 4
+    1. /images/products/seedream-webp/zprintpro-business-cards-premium-business-cards-zh-hk.webp
+    2. /images/products/seedream-webp/zprintpro-stickers-waterproof-stickers-zh-hk.webp
+    3. /images/products/seedream-webp/zprintpro-paper-bags-kraft-paper-bags-zh-hk-1.webp
+    4. /images/products/seedream-webp/zprintpro-packaging-magnetic-closure-gift-box-zh-hk-1.webp

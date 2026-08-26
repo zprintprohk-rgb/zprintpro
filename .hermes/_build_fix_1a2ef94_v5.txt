@@ -1,0 +1,23 @@
+
+> zprintpro-nextjs@1.0.0 build
+> next build && node scripts/generate-sitemap.js
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local, .env
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+Failed to compile.
+
+./src/components/category/CategorySharpHooks.tsx:237:3
+Type error: An object literal cannot have multiple properties with the same name.
+
+[0m [90m 235 |[39m     }}[33m,[39m[0m
+[0m [90m 236 |[39m   ][33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 237 |[39m   [32m'stickers'[39m[33m:[39m [[0m
+[0m [90m     |[39m   [31m[1m^[22m[39m[0m
+[0m [90m 238 |[39m     [90m// 2026-07-19 user 拍板: 推荐位撤贴纸 → 贺卡 (greeting cards, 美国站情绪价值品类)[39m[0m
+[0m [90m 239 |[39m     { key[33m:[39m [32m'birthday'[39m[33m,[39m scenarios[33m:[39m {[0m
+[0m [90m 240 |[39m       [32m'zh-hk'[39m[33m:[39m [[32m'生日賀卡 · 燙金祝福語'[39m[33m,[39m [32m'300g 厚卡 · 信封配套'[39m[33m,[39m [32m'50 張起 · 自訂內頁祝福'[39m][33m,[39m[0m
+Next.js build worker exited with code: 1 and signal: null

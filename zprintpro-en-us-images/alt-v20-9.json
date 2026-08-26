@@ -1,0 +1,145 @@
+[
+ {
+  "file": "zprintpro-greeting-cards-premium-greeting-cards-en-hero.webp",
+  "alt": "300g premium greeting cards with 4-color printing. Optional matte/gloss lamination, foil stamping, spot UV. Perfect for Christmas cards, New...",
+  "score": 92,
+  "picked": 1,
+  "stable": true,
+  "view": "HERO",
+  "source": "BC-001\\calib_candidates\\HERO_cand1.jpg",
+  "webp_quality": 85,
+  "bytes": 86318
+ },
+ {
+  "file": "zprintpro-greeting-cards-premium-greeting-cards-en-detail.webp",
+  "alt": "300g premium greeting cards with 4-color printing. Optional matte/gloss lamination, foil stamping, spot UV. Perfect for Christmas cards, New...",
+  "score": 95,
+  "picked": 1,
+  "stable": true,
+  "view": "DETAIL",
+  "source": "BC-001\\calib_candidates\\DETAIL_cand1.jpg",
+  "webp_quality": 60,
+  "bytes": 121186
+ },
+ {
+  "file": "zprintpro-greeting-cards-premium-greeting-cards-en-variety.webp",
+  "alt": "300g premium greeting cards with 4-color printing. Optional matte/gloss lamination, foil stamping, spot UV. Perfect for Christmas cards, New...",
+  "score": 90,
+  "picked": 1,
+  "stable": true,
+  "view": "VARIETY-C",
+  "source": "BC-001\\calib_candidates\\VARIETY-C_cand1.jpg",
+  "webp_quality": 80,
+  "bytes": 114874
+ },
+ {
+  "file": "zprintpro-greeting-cards-premium-greeting-cards-en-multi-angle.webp",
+  "alt": "300g premium greeting cards with 4-color printing. Optional matte/gloss lamination, foil stamping, spot UV. Perfect for Christmas cards, New...",
+  "score": 91,
+  "picked": 1,
+  "stable": true,
+  "view": "MULTI-ANGLE",
+  "source": "BC-001\\calib_candidates\\MULTI-ANGLE_cand1.jpg",
+  "webp_quality": 75,
+  "bytes": 107860
+ },
+ {
+  "file": "zprintpro-greeting-cards-premium-greeting-cards-en-spread.webp",
+  "alt": "300g premium greeting cards with 4-color printing. Optional matte/gloss lamination, foil stamping, spot UV. Perfect for Christmas cards, New...",
+  "score": 93,
+  "picked": 1,
+  "stable": true,
+  "view": "SPREAD",
+  "source": "BC-001\\calib_candidates\\SPREAD_cand1.jpg",
+  "webp_quality": 80,
+  "bytes": 104106
+ },
+ {
+  "file": "zprintpro-stickers-waterproof-stickers-en-hero.webp",
+  "alt": "PVC waterproof stickers with excellent water, UV, and abrasion resistance. Perfect for outdoor use, product labels, car decals. Free shippin...",
+  "score": 88,
+  "picked": 1,
+  "stable": true,
+  "view": "HERO",
+  "source": "ST-001\\calib_candidates\\HERO_cand1.jpg",
+  "webp_quality": 85,
+  "bytes": 104744
+ },
+ {
+  "file": "zprintpro-stickers-waterproof-stickers-en-detail.webp",
+  "alt": "PVC waterproof stickers with excellent water, UV, and abrasion resistance. Perfect for outdoor use, product labels, car decals. Free shippin...",
+  "score": 91,
+  "picked": 1,
+  "stable": true,
+  "view": "DETAIL",
+  "source": "ST-001\\calib_candidates\\DETAIL_cand1.jpg",
+  "webp_quality": 55,
+  "bytes": 121286
+ },
+ {
+  "file": "zprintpro-stickers-waterproof-stickers-en-variety.webp",
+  "alt": "PVC waterproof stickers with excellent water, UV, and abrasion resistance. Perfect for outdoor use, product labels, car decals. Free shippin...",
+  "score": 87,
+  "picked": 1,
+  "stable": true,
+  "view": "VARIETY-A",
+  "source": "ST-001\\calib_candidates\\VARIETY-A_cand1.jpg",
+  "webp_quality": 70,
+  "bytes": 120606
+ },
+ {
+  "file": "zprintpro-stickers-waterproof-stickers-en-multi-angle.webp",
+  "alt": "PVC waterproof stickers with excellent water, UV, and abrasion resistance. Perfect for outdoor use, product labels, car decals. Free shippin...",
+  "score": 89,
+  "picked": 1,
+  "stable": true,
+  "view": "MULTI-ANGLE",
+  "source": "ST-001\\calib_candidates\\MULTI-ANGLE_cand1.jpg",
+  "webp_quality": 80,
+  "bytes": 104624
+ },
+ {
+  "file": "zprintpro-flyers-a4-flyers-en-hero.webp",
+  "alt": "Standard A4 size, most common flyer format. 157g glossy paper, 4-color printing, vibrant colors., ISO 9001:2015 certified quality management...",
+  "score": 89,
+  "picked": 1,
+  "stable": true,
+  "view": "HERO",
+  "source": "FL-001\\calib_candidates\\HERO_cand1.jpg",
+  "webp_quality": 40,
+  "bytes": 115830
+ },
+ {
+  "file": "zprintpro-flyers-a4-flyers-en-detail.webp",
+  "alt": "Standard A4 size, most common flyer format. 157g glossy paper, 4-color printing, vibrant colors., ISO 9001:2015 certified quality management...",
+  "score": 93,
+  "picked": 1,
+  "stable": true,
+  "view": "DETAIL",
+  "source": "FL-001\\calib_candidates\\DETAIL_cand1.jpg",
+  "webp_quality": 22,
+  "bytes": 116736
+ },
+ {
+  "file": "zprintpro-flyers-a4-flyers-en-variety.webp",
+  "alt": "Standard A4 size, most common flyer format. 157g glossy paper, 4-color printing, vibrant colors., ISO 9001:2015 certified quality management...",
+  "score": 87,
+  "picked": 1,
+  "stable": true,
+  "view": "VARIETY-A",
+  "source": "FL-001\\calib_candidates\\VARIETY-A_cand1.jpg",
+  "webp_quality": 30,
+  "bytes": 114438
+ },
+ {
+  "file": "zprintpro-flyers-a4-flyers-en-multi-angle.webp",
+  "alt": "Standard A4 size, most common flyer format. 157g glossy paper, 4-color printing, vibrant colors., ISO 9001:2015 certified quality management...",
+  "score": 90,
+  "picked": 2,
+  "stable": true,
+  "view": "MULTI-ANGLE",
+  "source": "FL-001\\calib_candidates\\MULTI-ANGLE_cand2.jpg",
+  "webp_quality": 30,
+  "bytes": 115678
+ }
+]

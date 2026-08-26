@@ -1,0 +1,19 @@
+{
+  "number": "sku003",
+  "sku": "PK-002",
+  "market": "en",
+  "category": "packaging",
+  "view": "HERO",
+  "prompt_version": "V25.9",
+  "images": [
+    {
+      "webp_filename": "zprintpro-packaging-cosmetic-boxes-en-hero.webp",
+      "webp_path": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\sku003\\zprintpro-packaging-cosmetic-boxes-en-hero.webp",
+      "size_kb": 99.77,
+      "dimensions": "1200x1200",
+      "alt_text": "Luxury rigid cosmetic gift box with PURE GLOW design, champagne gold foil and soft pink accents on a white marble vanity with warm bokeh lighting - custom cosmetic packaging boxes printing by zprintpro",
+      "seo_keywords": "cosmetic boxes, luxury packaging boxes, custom rigid boxes, gift box printing",
+      "original_png": "F:\\zprintpro-nextjs\\zprintpro-en-us-images\\v25_9_pro_final\\_originals\\PK-002_en.png"
+    }
+  ]
+}

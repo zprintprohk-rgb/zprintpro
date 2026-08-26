@@ -1415,6 +1415,52 @@ const lpSameDayFlyersHK: BlogPostMeta = {
   },
 };
 
+// 2026-08-26 K3 拍板 W1 #1: 即日急件印刷全攻略 (B7 派发, 跟 rush 6faa459 协同)
+// 9 段 + 4 FAQ + 5 内部链接 + 3 locale native, 跟 rush 服务页互链
+const lpRushPrintingHKGuide: BlogPostMeta = {
+  slug: 'rush-printing-hk-guide',
+  categoryKey: 'printing',
+  source: 'daily',
+  date: '2026-08-26',
+  title: {
+    'zh-hk': '即日急件印刷全攻略：邊度最快？幾錢？幾點截單？| 智印港 ZprintPro',
+    en: 'Same-Day Printing HK Guide: Where Fastest? How Much? What Cut-Off? | ZprintPro',
+    ja: '当日特急印刷 全ガイド：どこが一番早い？料金は？締切は？| ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '香港即日急件印刷 100 張起印，18:00 截單，順豐翌日中午 12:00 前送到。6 大場景 (展會/投標/海報/傳單/易拉寶/貼紙) + 4 條 FAQ + 5 條內部連結,對比 3 大門派 (自營工廠/印刷中介/快圖美)。',
+    en: 'Same-day printing HK from 100 MOQ, 6PM cut-off, SF Express next-day 12pm. 6 scenarios (trade show/tender/poster/flyer/banner/sticker) + 4 FAQs + 5 internal links, 3-channel comparison (in-house factory/print broker/Kwik Kopy).',
+    ja: '香港当日特急印刷 100 枚〜, 18:00 締切, SF翌日12時前配送. 6 シーン (展示/入札/ポスター/チラシ/バナー/ステッカー) + 4 FAQ + 5 内部リンク, 3 ルート比較 (自社工場/印刷仲介/クイック印刷).',
+  },
+  targetKeywords: {
+    primary: '即日急件',
+    secondary: ['即日印刷', '即日急件 印刷', '18:00 截單', '順豐翌日中午', '自營工廠'],
+  },
+};
+
+// 2026-08-26 K3 拍板 W1 #2: 包裝盒印刷價格 2026 (B7 派发, 跟 R5 旺季协同)
+// 9 段 + 4 FAQ + 5 内部链接 + 3 locale native, R5 9/15 旺季提前佈局
+const lpPackagingBoxPricing2026: BlogPostMeta = {
+  slug: 'packaging-box-pricing-2026',
+  categoryKey: 'packaging',
+  source: 'daily',
+  date: '2026-08-26',
+  title: {
+    'zh-hk': '包裝盒印刷價格 2026：500/1000/5000 個分別幾錢？| 智印港 ZprintPro',
+    en: 'Packaging Box Printing Price 2026: How Much for 500/1000/5000 Pieces? | ZprintPro',
+    ja: 'パッケージ印刷価格 2026：500/1000/5000 個でそれぞれいくら？| ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '包裝盒印刷 100 個起印，2026 年真實單價：坑盒 500 個 HK$8-15/個，彩盒 1000 個 HK$12-20/個，禮盒 5000 個 HK$25-40/個。4 大成本因素 + 5 種紙材對比 + 4 條 FAQ + 5 條內部連結。',
+    en: 'Packaging box printing 100 MOQ, 2026 real prices: corrugated 500 pcs $1-2/pc, color box 1000 pcs $1.5-2.5/pc, gift box 5000 pcs $3-5/pc. 4 cost drivers + 5 paper stocks + 4 FAQs + 5 internal links.',
+    ja: 'パッケージ印刷 100 個〜, 2026 年実勢価格：段ボール 500 個 ¥120-220/個, カラー箱 1000 個 ¥180-300/個, ギフト箱 5000 個 ¥360-600/個. 4 大コスト要因 + 5 種用紙 + 4 FAQ + 5 内部リンク.',
+  },
+  targetKeywords: {
+    primary: '包裝盒印刷',
+    secondary: ['包裝盒訂製', '包裝盒 價格', '坑盒', '彩盒', '禮盒'],
+  },
+};
+
 // 2026-08-05 v8 daily-content-evolve: 月曆印刷 (GSC 97 imps rank 46.31, 无着陆页, 2027 采购季) — calendars × Tier A 茶飲食品/零售精品 — 純文字・v8 SEO+GEO 雙引擎
 const lpCalendarPrinting: BlogPostMeta = {
   slug: 'calendar-printing-guide',
@@ -1641,6 +1687,10 @@ export const blogPosts: BlogPostMeta[] = [
   lpCatalogPrintingGuide,
   // 2026-08-24 v3.17 B3 批 2 拍板 C: EN catalog 4 词 cluster supporting blog (K3 14:25 拍板 C 不砍 blog 深度, 完整 9 段 3 locale 单独 push)
   lpCatalogPrintingChinaSupplierGuide,
+  // 2026-08-26 K3 拍板 W1 #1: 即日急件印刷全攻略 (B7 派发, 跟 rush 6faa459 协同) — seo(batch1): 假设大信封 pos 2.21 改 title 后 CTR+2pp
+  lpRushPrintingHKGuide,
+  // 2026-08-26 K3 拍板 W1 #2: 包裝盒印刷價格 2026 (B7 派发, 跟 R5 旺季协同)
+  lpPackagingBoxPricing2026,
 ];
 
 // =============================================================================

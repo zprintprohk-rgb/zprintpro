@@ -1,0 +1,1 @@
+docs(cron): B5 §4 验收口径 v9.4 + 铺量降速 2-3 篇/周 (4 cron prompt, 撞墙 = M3 自主 K3 8/26 04:50 v2 预批"立即"覆盖, K3 §4 战略评估 + §6 3 轨推进, 替换旧 7d clicks ≥85 (8/17 旧线无 527 词分层数据) → 质量三件套 striking 词进首页 ≥5 + pos 1-20 展示占比 ≥30% + 有点击词 ≥12, Python json.dump 模式避免 Edit/Write 处理 70KB+ 大文件 GBK 污染)

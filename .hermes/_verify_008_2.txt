@@ -1,0 +1,4 @@
+﻿[verify-deploy] checking 0840f97 (repo: F:\zprintpro-nextjs)...
+[verify-deploy] CF Pages: success
+[verify-deploy] details: https://github.com/zprintprohk-rgb/zprintpro/runs/96711097287
+[verify-deploy] PASS — deploy is live

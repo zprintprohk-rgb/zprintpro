@@ -1,0 +1,22 @@
+{
+  "date": "2026-08-11",
+  "scope": "paper-materials retrofit (commit c4a8c5f, CF run 93593399407)",
+  "method": "post-deploy live checks on zprintpro.com",
+  "hard": {
+    "step1_cta_links_200": {"status": "pass", "detail": "zh-hk page 40 个 <a href> 全量 curl 200 (0 非200)", "checked_at": "2026-08-11T04:52:00+08:00"},
+    "step2_quote_form": {"status": "pass", "detail": "/zh-hk/quote/ 链接存在且页面 200; /api/quote/ POST 200 + UUID 748ce36d-afa6-40a3-83a4-3407e9f147a3", "checked_at": "2026-08-11T04:53:00+08:00"}
+  },
+  "soft": {
+    "step3_ga4_trackContactFormSubmit": {"status": "framework-level", "detail": "backup_entry: framework-level (GA4 事件口径待 8/12 K3 拍板, 不计入 verified)", "present": false},
+    "step4_wa_me_backup": {"status": "pass", "detail": "wa.me/8619880851334 存在, 旧号 14158022922/18126380255 0 残留", "present": true}
+  },
+  "conversion_status": "verified",
+  "api_endpoint_health": "200",
+  "api_endpoint_health_check_sha": "c4a8c5f",
+  "banned_words": {"business-cards": 0, "名刺": 0, "智印雲": 0, "智印印港": 0, "note": "header 搜索占位符与 poster-guide 旧文含'咭片'为既有残留, 非本 commit, 已列入遗留清单"},
+  "locale_verification": {
+    "zh-hk": {"og:site_name": "智印港", "重點摘要": true, "教材印刷": true},
+    "en": {"og:site_name": "ZprintPro", "TL;DR": true},
+    "ja": {"og:site_name": "ジープリント", "要約": true, "ジープリント埋点": true, "教材テキスト印刷": true}
+  }
+}

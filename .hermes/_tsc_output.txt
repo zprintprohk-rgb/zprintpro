@@ -1,0 +1,65 @@
+﻿node.exe : npm notice run zprintpro-nextjs@1.0.0 npx
+所在位置 C:\Users\Administrator\AppData\Local\hermes\node\npx.ps1:16 字符: 5
++     & "$basedir/node$exe"  "$basedir/node_modules/npm/bin/npx-cli.js" ...
++     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (npm notice run ...extjs@1.0.0 npx:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+npm notice run tsc --noEmit
+src/lib/quote-engine/__tests__/books.pricing.test.ts(25,18): error TS2339: Property 'paperCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/books.pricing.test.ts(25,101): error TS2339: Property 'paperCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/books.pricing.test.ts(42,18): error TS2339: Property 'paperCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/books.pricing.test.ts(42,77): error TS2339: Property 'paperCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/books.pricing.test.ts(55,15): error TS2339: Property 'paperCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/books.pricing.test.ts(55,51): error TS2339: Property 'paperCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/business-cards.pricing.test.ts(20,33): error TS2345: Argument of type '{ market: Market; quantity: number; finishes: never[]; deadline: "standard"; }' is not assignable to parameter of type 'FormulaContext'.
+  Type '{ market: Market; quantity: number; finishes: never[]; deadline: "standard"; }' is missing the following properties from type 'FormulaContext': size, material
+src/lib/quote-engine/__tests__/business-cards.pricing.test.ts(43,18): error TS2339: Property 'tax' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/business-cards.pricing.test.ts(53,15): error TS2339: Property 'totalCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/business-cards.pricing.test.ts(53,54): error TS2339: Property 'totalCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/business-cards.pricing.test.ts(61,47): error TS2339: Property 'quantity' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/business-cards.pricing.test.ts(62,24): error TS2339: Property 'setupCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/business-cards.pricing.test.ts(62,41): error TS2339: Property 'paperCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/business-cards.pricing.test.ts(62,58): error TS2339: Property 'finishingCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/business-cards.pricing.test.ts(68,24): error TS2339: Property 'shippingHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/business-cards.pricing.test.ts(79,19): error TS2339: Property 'setupCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/business-cards.pricing.test.ts(79,36): error TS2339: Property 'setupCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/business-cards.pricing.test.ts(80,19): error TS2339: Property 'paperCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/business-cards.pricing.test.ts(80,36): error TS2339: Property 'paperCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/debug-double.ts(16,32): error TS2339: Property 'setupCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/debug-double.ts(17,32): error TS2339: Property 'paperCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/debug-double.ts(18,36): error TS2339: Property 'finishingCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/debug-double.ts(19,31): error TS2339: Property 'shippingHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/debug-double.ts(20,32): error TS2339: Property 'totalCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/debug-double.ts(21,34): error TS2339: Property 'market' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/debug-double.ts(22,36): error TS2339: Property 'tax' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/debug-double.ts(23,36): error TS2339: Property 'tax' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/debug-double.ts(25,1): error TS18048: 'r.notes' is possibly 'undefined'.
+src/lib/quote-engine/__tests__/debug-pricing.ts(5,34): error TS2345: Argument of type '{ quantity: number; finishes: never[]; deadline: "standard"; market: Market; }' is not assignable to parameter of type 'FormulaContext'.
+  Type '{ quantity: number; finishes: never[]; deadline: "standard"; market: Market; }' is missing the following properties from type 'FormulaContext': size, material
+src/lib/quote-engine/__tests__/debug-pricing.ts(14,32): error TS2339: Property 'setupCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/debug-pricing.ts(15,32): error TS2339: Property 'paperCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/debug-pricing.ts(16,36): error TS2339: Property 'finishingCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/debug-pricing.ts(17,31): error TS2339: Property 'shippingHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/debug-pricing.ts(18,32): error TS2339: Property 'totalCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/debug-pricing.ts(19,49): error TS2339: Property 'setupCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/debug-pricing.ts(19,66): error TS2339: Property 'paperCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/debug-pricing.ts(19,83): error TS2339: Property 'finishingCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/debug-pricing.ts(20,31): error TS2339: Property 'tax' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/debug-pricing.ts(21,36): error TS2339: Property 'tax' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/debug-pricing.ts(22,36): error TS2339: Property 'tax' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/debug-pricing.ts(25,1): error TS18048: 'r.notes' is possibly 'undefined'.
+src/lib/quote-engine/__tests__/e2e-verification.ts(14,23): error TS7006: Parameter 'code' implicitly has an 'any' type.
+src/lib/quote-engine/__tests__/e2e-verification.ts(14,29): error TS7006: Parameter 'market' implicitly has an 'any' type.
+src/lib/quote-engine/__tests__/e2e-verification.ts(29,23): error TS2339: Property 'setupCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/e2e-verification.ts(29,40): error TS2339: Property 'paperCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/e2e-verification.ts(29,57): error TS2339: Property 'finishingCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/e2e-verification.ts(30,24): error TS2339: Property 'shippingHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/e2e-verification.ts(35,119): error TS2339: Property 'shippingHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/e2e-verification.ts(40,22): error TS7053: Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Record<MarketCode, Market>'.
+  No index signature with a parameter of type 'string' was found on type 'Record<MarketCode, Market>'.
+src/lib/quote-engine/__tests__/e2e-verification.ts(53,52): error TS2339: Property 'paperCostHKD' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/e2e-verification.ts(64,28): error TS2339: Property 'size' does not exist on type 'FormulaResult'.
+src/lib/quote-engine/__tests__/search.regression.test.ts(2,49): error TS2307: Cannot find module '../../data/products' or its corresponding type declarations.
+src/lib/quote-engine/__tests__/search.regression.test.ts(70,38): error TS7006: Parameter 'c' implicitly has an 'any' type.
+src/lib/quote-engine/__tests__/search.regression.test.ts(87,24): error TS7006: Parameter 'x' implicitly has an 'any' type.

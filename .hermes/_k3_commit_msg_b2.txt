@@ -1,0 +1,1 @@
+fix(content): B2 海報 striking 冲首页 (posters 块 zh-hk +4 段 800 字 + 3 FAQ + 3 内链, GSC 8/24 14:30 印海報 pos 28.5 21 imps 0 click + 海報印刷 pos 34.9 20 imps 0 click, K3 §6 轨 2 striking 冲首页 30-60 天, h2 注入 MTR 12-sheet, Python json.dump 模式避免 Edit/Write 处理 5294 行大文件 GBK 污染, 撞墙 = M3 自主 K3 8/26 04:50 v2 预批"立即"覆盖, tsc 54 baseline 不新增)

@@ -1,0 +1,23 @@
+
+> zprintpro-nextjs@1.0.0 build
+> next build && node scripts/generate-sitemap.js
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local, .env
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+Failed to compile.
+
+./src/data/category-seo-content.ts:2728:5
+Type error: An object literal cannot have multiple properties with the same name.
+
+[0m [90m 2726 |[39m     packaging[33m:[39m { [32m'zh-hk'[39m[33m:[39m [32m'包裝盒印刷'[39m[33m,[39m en[33m:[39m [32m'Packaging'[39m[33m,[39m ja[33m:[39m [32m'パッケージ印刷'[39m }[33m,[39m[0m
+[0m [90m 2727 |[39m     [32m'stickers'[39m[33m:[39m { [32m'zh-hk'[39m[33m:[39m [32m'卡片印刷'[39m[33m,[39m en[33m:[39m [32m'Stickers'[39m[33m,[39m ja[33m:[39m [32m'名刺印刷'[39m }[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 2728 |[39m     stickers[33m:[39m { [32m'zh-hk'[39m[33m:[39m [32m'貼紙印刷'[39m[33m,[39m en[33m:[39m [32m'Sticker Printing'[39m[33m,[39m ja[33m:[39m [32m'シール印刷'[39m }[33m,[39m[0m
+[0m [90m      |[39m     [31m[1m^[22m[39m[0m
+[0m [90m 2729 |[39m     flyers[33m:[39m { [32m'zh-hk'[39m[33m:[39m [32m'傳單印刷印刷'[39m[33m,[39m en[33m:[39m [32m'Flyer Printing'[39m[33m,[39m ja[33m:[39m [32m'チラシ印刷'[39m }[33m,[39m[0m
+[0m [90m 2730 |[39m     posters[33m:[39m { [32m'zh-hk'[39m[33m:[39m [32m'海報印刷'[39m[33m,[39m en[33m:[39m [32m'Poster Printing'[39m[33m,[39m ja[33m:[39m [32m'ポスター印刷'[39m }[33m,[39m[0m
+[0m [90m 2731 |[39m     [32m'paper-bags'[39m[33m:[39m { [32m'zh-hk'[39m[33m:[39m [32m'紙袋印刷'[39m[33m,[39m en[33m:[39m [32m'Paper Bag Printing'[39m[33m,[39m ja[33m:[39m [32m'紙袋印刷'[39m }[33m,[39m[0m
+Next.js build worker exited with code: 1 and signal: null

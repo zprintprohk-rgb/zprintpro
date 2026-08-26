@@ -1,0 +1,251 @@
+﻿
+========== STEP 1: git status -sb 无 ahead ==========
+## main...origin_ssh/main
+?? $null
+?? -w
+?? .hermes/add-articleslugs.py
+?? .hermes/add-blog-posts.py
+?? .hermes/add-internal-links.py
+?? .hermes/add-tier-b-5blogs.py
+?? .hermes/build-out.txt
+?? .hermes/build-p2-2026-07-20.py
+?? .hermes/build2-out.txt
+?? .hermes/calibrate-digital-flyers-2026-07-20.py
+?? .hermes/calibrate-exercise-books-2026-07-20.py
+?? .hermes/calibrate-price-tables-2026-07-20.py
+?? .hermes/cf-bulk-redirect-2-new-rules-2026-07-23.md
+?? .hermes/check-blog-img.py
+?? .hermes/check-encoding-help.txt
+?? .hermes/check-encoding-out.txt
+?? .hermes/check-existing-3blogs.py
+?? .hermes/check-existing-out.txt
+?? .hermes/check-p2-overlap.py
+?? .hermes/commit-log-out.txt
+?? .hermes/commit-msg-2026-07-23-runbook.txt
+?? .hermes/commit-msg-2026-07-23-task3.txt
+?? .hermes/commit-msg-2026-07-23-v7-fix.txt
+?? .hermes/commit-msg-2026-07-23-v7.txt
+?? .hermes/commit-msg-2026-07-23.txt
+?? .hermes/context.md.p0-2-active-commit-msg.txt
+?? .hermes/cron-prompts/mavis/context-v51-k3-correction-commit-msg.txt
+?? .hermes/cron-prompts/mavis/cron-prompts-v71-k3-2026-07-22-commit-msg.txt
+?? .hermes/cron-prompts/mavis/gsc-feedback-loop-v4-commit-msg.txt
+?? .hermes/cron-prompts/prompts-k3v7.py
+?? .hermes/finalize-verify.py
+?? .hermes/find-articleslug-end.py
+?? .hermes/find-artslug-out.txt
+?? .hermes/find-eprint-links.py
+?? .hermes/find-missing-out.txt
+?? .hermes/find-missing-slugs-v2.py
+?? .hermes/find-missing-slugs.py
+?? .hermes/find-missing-v2-out.txt
+?? .hermes/find-ns.py
+?? .hermes/find-opt-out.txt
+?? .hermes/find-optimized-skus.py
+?? .hermes/find-p0-optimized.py
+?? .hermes/find-posts-blocks.py
+?? .hermes/find-posts-out.txt
+?? .hermes/find-sku-boundary.py
+?? .hermes/find-sku-end.py
+?? .hermes/find-sku-end2.py
+?? .hermes/find-unopt-end-out.txt
+?? .hermes/find-unoptimized-imagesend.py
+?? .hermes/find-unoptimized-p0.py
+?? .hermes/fix-imagealts-locale.py
+?? .hermes/gsc-url-inspection-api-setup-2026-07-23.md
+?? .hermes/img-check-out.txt
+?? .hermes/inspect-eprint.py
+?? .hermes/k3-ops-constitution-v2.md
+?? .hermes/logs/2026-07-21-日运营报告.md
+?? .hermes/logs/2026-07-23-日运营报告.md
+?? .hermes/m3-task-cards/2026-07-21-dual-brand-and-packaging-sku.md
+?? .hermes/m3-task-cards/2026-07-22-v6-dual-brand-title-giftbox-merge.md
+?? .hermes/p0-opt-after-out.txt
+?? .hermes/p0-opt-out.txt
+?? .hermes/p0-skus-out.txt
+?? .hermes/parse-a5-157g-full.py
+?? .hermes/parse-booklets.py
+?? .hermes/parse-digital-flyer.py
+?? .hermes/parse-digital-flyer2.py
+?? .hermes/parse-eprint-pages.py
+?? .hermes/parse-flyer-157g.py
+?? .hermes/parse-flyer-table.py
+?? .hermes/parse-mono-booklet.py
+?? .hermes/parse-offset-booklet2.py
+?? .hermes/push-out.txt
+?? .hermes/push2-out.txt
+?? .hermes/sitemap2-out.txt
+?? .hermes/sku-boundary-out.txt
+?? .hermes/sku-end-out.txt
+?? .hermes/tmp-analyze-gsc.py
+?? .hermes/tmp-eprint-digital-booklet.html
+?? .hermes/tmp-eprint-digital-flyer.html
+?? .hermes/tmp-eprint-flyer.html
+?? .hermes/tmp-eprint-home.html
+?? .hermes/tmp-eprint-mono-booklet.html
+?? .hermes/tmp-eprint-offset-booklet.html
+?? .hermes/tmp-eprint-products_Saddle_Stitching_Booklet.html
+?? .hermes/tmp-eprint-products_brochure_booklet_leaflet_printing.html
+?? .hermes/tsc-out.txt
+?? .hermes/update-category-industries.py
+?? .hermes/update-matrix.py
+?? .hermes/v7-15-ctx3.txt
+?? .hermes/v7-15-ctx4.txt
+?? .hermes/v7-15-html.txt
+?? .hermes/v7-15-src.txt
+?? .hermes/v7-15y-ctx.txt
+?? .hermes/v7-15y-ctx2.txt
+?? .hermes/v7-15y.txt
+?? .hermes/v7-amend-out.txt
+?? .hermes/v7-append-price-anchors.py
+?? .hermes/v7-check-15.py
+?? .hermes/v7-check-schema.py
+?? .hermes/v7-content-preview.txt
+?? .hermes/v7-fix-simp.py
+?? .hermes/v7-fix-simplified.py
+?? .hermes/v7-mat-out.txt
+?? .hermes/v7-matrix-dedup.py
+?? .hermes/v7-matrix-update.py
+?? .hermes/v7-nap-en.txt
+?? .hermes/v7-nap-ja.txt
+?? .hermes/v7-optimize-5sku.py
+?? .hermes/v7-pdp-out.txt
+?? .hermes/v7-pdp-price-table.py
+?? .hermes/v7-pdp-review-mailer.py
+?? .hermes/v7-push-out.txt
+?? .hermes/v7-q004-replace.py
+?? .hermes/v7-rsc.txt
+?? .hermes/v7-step5-verify.py
+?? .hermes/v7-upgrade-q005-cross-border.py
+?? .hermes/v7-verify-5sku.py
+?? .hermes/v7-verify-content.py
+?? .hermes/v7-verify-files.py
+?? .hermes/v7-verify-out.txt
+?? .hermes/v7-verify-ps.txt
+?? .hermes/v7-verify-result.txt
+?? .hermes/verify-15blogs.sh
+?? .hermes/verify-blogs.py
+?? .hermes/verify-deploy-out.txt
+?? .hermes/verify-deploy2-out.txt
+?? .hermes/verify-deploy3-out.txt
+?? .hermes/verify-deploy4-out.txt
+?? .hermes/verify-new-3blogs.py
+?? .hermes/wb-type-e30.json
+?? "Zprintpro LOGO web.png"
+?? "Zprintpro LOGO whatsapp.png"
+?? "Zprintpro LOGO-0721.ai"
+?? "Zprintpro LOGO-200X196px.png"
+?? ZprintproLOGONEW-01.png
+?? ZprintproLOGONEW-02.png
+?? Zprintpro智印云LOGO原.ai
+?? analysis-2026-07-17/301-grey-test.py
+?? logs/
+?? public/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-en-5.webp
+?? public/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-ja-5.webp
+?? public/images/products/seedream-webp/zprintpro-packaging-corrugated-boxes-zh-hk-5.webp
+?? public/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-en-5.webp
+?? public/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-ja-5.webp
+?? public/images/products/seedream-webp/zprintpro-packaging-tuck-end-boxes-zh-hk-5.webp
+?? public/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-en-5.webp
+?? public/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-ja-5.webp
+?? public/images/products/seedream-webp/zprintpro-packaging-white-card-boxes-zh-hk-5.webp
+?? seedream-prompts-all-skus.txt
+?? tools/
+
+  ✓ PASS
+
+========== STEP 2: sitemap.xml 含 gang-run-card-boxes-hk-guide × 3 locale ==========
+node : 'grep' is not recognized as an internal or external command,
+所在位置 行:1 字符: 164
++ ...  = "utf-8"; node tools/verify-7step.mjs > tools/verify-7step-out.txt  ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ('grep' is not r...ternal command,:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+operable program or batch file.
+  https://zprintpro.com/sitemap.xml: ERROR Command failed: curl -s "https://zprintpro.com/sitemap.xml" | grep -c "gang-run-card-boxes-hk-guide" || true
+'grep' is not recognized as an internal or external command,
+operable program or batch file.
+
+'grep' is not recognized as an internal or external command,
+operable program or batch file.
+  https://zprintpro.com/zh-hk/sitemap.xml: ERROR Command failed: curl -s "https://zprintpro.com/zh-hk/sitemap.xml" | grep -c "gang-run-card-boxes-hk-guide" || true
+'grep' is not recognized as an internal or external command,
+operable program or batch file.
+
+'grep' is not recognized as an internal or external command,
+operable program or batch file.
+  https://zprintpro.com/en/sitemap.xml: ERROR Command failed: curl -s "https://zprintpro.com/en/sitemap.xml" | grep -c "gang-run-card-boxes-hk-guide" || true
+'grep' is not recognized as an internal or external command,
+operable program or batch file.
+
+'grep' is not recognized as an internal or external command,
+operable program or batch file.
+  https://zprintpro.com/ja/sitemap.xml: ERROR Command failed: curl -s "https://zprintpro.com/ja/sitemap.xml" | grep -c "gang-run-card-boxes-hk-guide" || true
+'grep' is not recognized as an internal or external command,
+operable program or batch file.
+
+  ⚠ sitemap may not include slug yet (CF Pages cache)
+
+========== STEP 3: curl https://zprintpro.com/{zh-hk,en,ja}/blog/gang-run-card-boxes-hk-guide/ → 200 ==========
+  https://zprintpro.com/zh-hk/blog/gang-run-card-boxes-hk-guide/: HTTP/1.1 200 OK ✓
+  https://zprintpro.com/en/blog/gang-run-card-boxes-hk-guide/: HTTP/1.1 200 OK ✓
+  https://zprintpro.com/ja/blog/gang-run-card-boxes-hk-guide/: HTTP/1.1 200 OK ✓
+  ✓ PASS
+
+========== STEP 4: BODY verify - 主关键词 + price anchor + "This post is part of" = 0 ==========
+  zh-hk: kw(拼版白卡彩盒)=37 price(HK\$129)=2 partOf=0
+  en: kw(Gang-Run)=19 price(USD 25)=2 partOf=0
+  ja: kw(合版)=43 price(¥3,800)=2 partOf=0
+  ❌ FAIL
+
+========== STEP 5: 0 张 <img> + 0 cover 字段 (硬约束无图) ==========
+  zh-hk: <img> in body = 0
+  en: <img> in body = 0
+  ja: <img> in body = 0
+  ✓ PASS
+
+========== STEP 6: 5+ 内链 curl 200 ==========
+  https://zprintpro.com/zh-hk/product/gang-run-card-boxes/: HTTP/1.1 200 OK ✓
+  https://zprintpro.com/zh-hk/product/white-card-boxes/: HTTP/1.1 200 OK ✓
+  https://zprintpro.com/zh-hk/product/mailer-boxes/: HTTP/1.1 200 OK ✓
+  https://zprintpro.com/zh-hk/quote/: HTTP/1.1 200 OK ✓
+  https://zprintpro.com/zh-hk/contact/: HTTP/1.1 200 OK ✓
+  ✓ PASS
+
+========== STEP 7: matrix.json covered[34] 含 Q-GR-01 ==========
+'cat' is not recognized as an internal or external command,
+operable program or batch file.
+node:internal/errors:985
+  const err = new Error(message);
+              ^
+
+Error: Command failed: cat .hermes/industry-keyword-matrix.json
+'cat' is not recognized as an internal or external command,
+
+operable program or batch file.
+
+
+    at genericNodeError (node:internal/errors:985:15)
+    at wrappedFn (node:internal/errors:539:14)
+    at checkExecSyncError (node:child_process:925:11)
+    at execSync (node:child_process:997:15)
+    at file:///F:/zprintpro-nextjs/tools/verify-7step.mjs:132:27
+    at ModuleJob.run (node:internal/modules/esm/module_job:437:25)
+    at async node:internal/modules/esm/loader:639:26
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  status: 1,
+  signal: null,
+  output: [
+    null,
+    '',
+    "'cat' is not recognized as an internal or external command,\r\n" +
+      'operable program or batch file.\r\n'
+  ],
+  pid: 6068,
+  stdout: '',
+  stderr: "'cat' is not recognized as an internal or external command,\r\n" +
+    'operable program or batch file.\r\n'
+}
+
+Node.js v24.15.0

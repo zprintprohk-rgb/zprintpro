@@ -1,0 +1,9 @@
+# V25.9 图片 SEO+GEO Alt 台账（5 SKU × HERO）
+
+| SKU | 市场 | webp 文件名 | 大小 | alt 文案 | 关键词 |
+|---|---|---|---|---|---|
+| BC-001 | en | `zprintpro-greeting-cards-premium-greeting-cards-en-hero.webp` | 109.45KB | Premium foil stamped greeting cards with WARM WISHES design, gold foil corners and floral botanicals on ivory cardstock, displayed on a warm wooden desk with fairy lights bokeh - custom greeting cards printing by zprintpro | premium greeting cards, foil stamped cards, gold foil greeting cards, custom card printing |
+| PB-001 | en | `zprintpro-paper-bags-kraft-paper-bags-en-hero.webp` | 105.18KB | Custom kraft paper gift bags with CARRY JOY peony floral design, held at a sunlit flower shop counter with fresh peonies and eucalyptus, soft bright bokeh - eco-friendly branded paper bags printing by zprintpro | kraft paper bags, custom paper bags, gift bag printing, eco friendly branded bags |
+| PK-002 | en | `zprintpro-packaging-cosmetic-boxes-en-hero.webp` | 99.77KB | Luxury rigid cosmetic gift box with PURE GLOW design, champagne gold foil and soft pink accents on a white marble vanity with warm bokeh lighting - custom cosmetic packaging boxes printing by zprintpro | cosmetic boxes, luxury packaging boxes, custom rigid boxes, gift box printing |
+| RP-001 | zh-hk | `zprintpro-red-packets-foil-red-packets-zh-hk-hero.webp` | 116.19KB | 燙金利是封 GOOD LUCK 設計，金龍金鳳牡丹福字圖案，淺粉象牙白背景配暖色光斑，亮面淺木桌面 - zprintpro 利是封印刷 客製紅包 | red packets, lucky red packets, 利是封, 燙金利是封, custom red envelope printing |
+| DJ-001 | ja | `zprintpro-japan-doujin-doujinshi-printing-ja-hero.webp` | 106.52KB | オリジナル同人誌・アートブック印刷の商品画像、桜色と淡いラベンダー背景、青海波模様の表紙、明るい爽やかなトーン - zprintpro 同人誌印刷 | 同人誌印刷, art book printing, doujinshi printing, オリジナル本制作 |

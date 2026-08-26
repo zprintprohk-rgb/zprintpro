@@ -1,0 +1,23 @@
+
+> zprintpro-nextjs@1.0.0 build
+> next build && node scripts/generate-sitemap.js
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local, .env
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+Failed to compile.
+
+./src/data/products.ts:20428:98
+Type error: Object literal may only specify known properties, and 'finish' does not exist in type '{ material?: string | undefined; size?: string | undefined; printMethod?: string | undefined; finishing?: string | undefined; }'.
+
+[0m [90m 20426 |[39m     optimizationRound[33m:[39m [35m1[39m[33m,[39m[0m
+[0m [90m 20427 |[39m     industries[33m:[39m [[32m'婚慶酒店'[39m[33m,[39m [32m'海外婚禮'[39m[33m,[39m [32m'教堂婚禮'[39m[33m,[39m [32m'Save the Date'[39m[33m,[39m [32m'感謝卡'[39m[33m,[39m [32m'教堂紀念'[39m][33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 20428 |[39m     specs[33m:[39m { material[33m:[39m [32m'300g 棉紙 / 350g 剛古紙 / 300g 銅版紙'[39m[33m,[39m size[33m:[39m [32m'130×190mm 標準請帖 / 190×260mm 對摺請帖'[39m[33m,[39m finish[33m:[39m [32m'燙金 (金/銀/玫瑰金/香檳金) + UV 局部 + 模切異形'[39m[33m,[39m printType[33m:[39m [32m'柯式印刷 4C + 燙金'[39m }[33m,[39m[0m
+[0m [90m       |[39m                                                                                                  [31m[1m^[22m[39m[0m
+[0m [90m 20429 |[39m   }[33m,[39m[0m
+[0m [90m 20430 |[39m   {[0m
+[0m [90m 20431 |[39m     id[33m:[39m [32m'WI-002'[39m[33m,[39m[0m
+Next.js build worker exited with code: 1 and signal: null

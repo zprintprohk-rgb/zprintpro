@@ -1,0 +1,23 @@
+
+> zprintpro-nextjs@1.0.0 build
+> next build && node scripts/generate-sitemap.js
+
+  ▲ Next.js 14.2.35
+  - Environments: .env.local, .env
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+Failed to compile.
+
+./src/data/products.ts:20424:5
+Type error: Object literal may only specify known properties, and 'pricing' does not exist in type 'Product'.
+
+[0m [90m 20422 |[39m     descriptionJa[33m:[39m [32m'300g コットン箔押し結婚式招待状、ローズゴールド/シャンパンゴールド/銀仕上げ、50 セットから。DHL 国際 2-4 日配送。**適合業種**: 結婚式 / ホテル / チャペル /  destination wedding / Save the Date / サンキュカード.'[39m[33m,[39m[0m
+[0m [90m 20423 |[39m     price_range[33m:[39m [32m'NT$25-95 / 套'[39m[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 20424 |[39m     pricing[33m:[39m { basePrice[33m:[39m [35m1.20[39m[33m,[39m unit[33m:[39m [32m'set'[39m[33m,[39m priceModel[33m:[39m [32m'tiered'[39m[33m,[39m tiers[33m:[39m [{ minQty[33m:[39m [35m50[39m[33m,[39m maxQty[33m:[39m [35m99[39m[33m,[39m unitPrice[33m:[39m [35m1.20[39m }[33m,[39m { minQty[33m:[39m [35m100[39m[33m,[39m maxQty[33m:[39m [35m199[39m[33m,[39m unitPrice[33m:[39m [35m1.08[39m }[33m,[39m { minQty[33m:[39m [35m200[39m[33m,[39m maxQty[33m:[39m [35m499[39m[33m,[39m unitPrice[33m:[39m [35m0.95[39m }[33m,[39m { minQty[33m:[39m [35m500[39m[33m,[39m maxQty[33m:[39m [36mnull[39m[33m,[39m unitPrice[33m:[39m [35m0.85[39m }] }[33m,[39m[0m
+[0m [90m       |[39m     [31m[1m^[22m[39m[0m
+[0m [90m 20425 |[39m     optimizedAt[33m:[39m [32m'2026-08-18'[39m[33m,[39m[0m
+[0m [90m 20426 |[39m     optimizationRound[33m:[39m [35m1[39m[33m,[39m[0m
+[0m [90m 20427 |[39m     industries[33m:[39m [[32m'婚慶酒店'[39m[33m,[39m [32m'海外婚禮'[39m[33m,[39m [32m'教堂婚禮'[39m[33m,[39m [32m'Save the Date'[39m[33m,[39m [32m'感謝卡'[39m[33m,[39m [32m'教堂紀念'[39m][33m,[39m[0m
+Next.js build worker exited with code: 1 and signal: null
