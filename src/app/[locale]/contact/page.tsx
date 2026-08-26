@@ -28,11 +28,11 @@ const translations = {
     email: "電郵",
     website: "官網",
     addressLabel: "辦公室地址",
-    addressValue: "香港九龍新蒲崗大有街3號萬廣大廈15樓C室",
+    addressValue: '深圳市龍崗区平湖街道嘉城路 1 号',
     cta: "立即 WhatsApp 查詢",
     qrCaption: "掃碼即聊",
     online: "在線",
-    responseTime: "平均回覆 < 5 分鐘",
+    responseTime: "15 分鐘內專人回覆",
     quickContact: "快速聯絡",
     officeHours: "辦公時間",
     officeHoursValue: "週一至週六 09:00 - 18:00 (GMT+8)",
@@ -74,7 +74,7 @@ const translations = {
     cta: "Chat on WhatsApp Now",
     qrCaption: "Scan to chat",
     online: "Online",
-    responseTime: "Avg reply < 5 min",
+    responseTime: "Reply within 15 minutes",
     quickContact: "Quick Contact",
     officeHours: "Office Hours",
     officeHoursValue: "Mon - Sat 09:00 - 18:00 (GMT+8)",
@@ -116,7 +116,7 @@ const translations = {
     cta: "WhatsAppで相談",
     qrCaption: "スキャンしてチャット",
     online: "オンライン",
-    responseTime: "平均返信 < 5分",
+    responseTime: "15分以内に専門スタッフが返信",
     quickContact: "クイック連絡",
     officeHours: "営業時間",
     officeHoursValue: "月〜土 09:00 - 18:00 (GMT+8)",
@@ -180,17 +180,15 @@ export default function ContactPage({ params }: ContactPageProps) {
         </div>
 
         {/* Trust Bar - 4 metrics (2026-07-18 P8: emoji → Heroicons outline SVG) */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8 md:mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8 md:mb-10">
           {[
-            { value: t.trustServed, icon: <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008zm0 3h.008v.008h-.008v-.008z" /></svg> },
-            { value: t.trustYears, icon: <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5" /></svg> },
-            { value: t.trustDelivery, icon: <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8.25 18.75a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 01-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 00-3.213-9.193 2.056 2.056 0 00-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 00-10.026 0 1.106 1.106 0 00-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" /></svg> },
-            { value: t.trustCountries, icon: <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418" /></svg> },
+            { text: locale === 'zh-hk' ? '提交後 15 分鐘內專人回覆' : locale === 'ja' ? '送信後15分以内に専門スタッフが返信' : 'Reply within 15 minutes', icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg> },
+            { text: locale === 'zh-hk' ? '30 秒 AI 報價' : locale === 'ja' ? '30秒AI見積もり' : '30s AI quote', icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" /></svg> },
+            { text: locale === 'zh-hk' ? '自營工廠直印' : locale === 'ja' ? '自社工場で直刷り' : 'In-house factory printing', icon: <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42" /></svg> },
           ].map((item, i) => (
-            <div key={i} className="bg-white rounded-xl border border-gray-100 p-4 text-center shadow-sm hover:shadow-md transition-shadow">
-              <div className="flex justify-center text-[#2873F5] mb-1.5">{item.icon}</div>
-              <div className="text-sm font-semibold text-[#333333]">{item.value}</div>
-            </div>
+<div key={i} className="flex items-center justify-center gap-2.5 rounded-xl bg-white border border-gray-100 px-4 py-3.5 text-sm font-semibold text-[#111827] shadow-sm">
+            {item.icon}<span>{item.text}</span>
+          </div>
           ))}
         </div>
 

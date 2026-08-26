@@ -8,7 +8,7 @@ import { blogPosts } from '@/data/blog-posts';
 import { products, getProductTitle, getProductDescription } from '@/data/products';
 import { convertPriceRangeString } from '@/lib/pricing';
 import { getProductMainImage } from '@/lib/product-image';
-import { ChevronRight, Calendar, Tag } from 'lucide-react';
+import { ChevronRight, Calendar, Tag, MessageCircle } from 'lucide-react';
 
 const translations: Record<string, {
   h1: string;
@@ -226,307 +226,177 @@ export default function BlogContent({ locale }: { locale: Locale }) {
   const countSuffix = locale === 'zh-hk' ? '篇' : locale === 'ja' ? '件' : 'posts';
 
   return (
-    <main className="min-h-screen bg-gray-50 py-12">
-      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-10">
-          <h1 className="text-3xl md:text-4xl font-bold text-[#333333] mb-3">{t.h1}</h1>
-          <p className="text-gray-500 text-lg">{t.subtitle}</p>
-        </div>
-
-        {/* Category Tabs (Mobile/Top) */}
-        <div className="mb-8 lg:hidden">
-          <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide">
-            <button
-              onClick={() => setActiveCategory('all')}
-              className={`px-5 py-2.5 text-sm font-medium rounded-full border whitespace-nowrap transition-colors ${
-                activeCategory === 'all'
-                  ? 'bg-[#2873F5] text-white border-[#2873F5]'
-                  : 'bg-white text-gray-600 border-gray-200 hover:bg-[#2873F5] hover:text-white hover:border-[#2873F5]'
-              }`}
-            >
-              {t.allArticles}
-            </button>
-            {t.categories.map((cat) => (
-              <button
-                key={cat.key}
-                onClick={() => setActiveCategory(cat.key)}
-                className={`px-5 py-2.5 text-sm font-medium rounded-full border whitespace-nowrap transition-colors ${
-                  activeCategory === cat.key
-                    ? 'bg-[#2873F5] text-white border-[#2873F5]'
-                    : 'bg-white text-gray-600 border-gray-200 hover:bg-[#2873F5] hover:text-white hover:border-[#2873F5]'
-                }`}
-              >
-                {cat.label}
-              </button>
+    <main className="min-h-screen bg-white">
+      {/* Hero band — professional knowledge base */}
+      <section className="bg-[#0F1F3D] text-white">
+        <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20">
+          <p className="inline-flex items-center gap-2 text-[#F87314] text-[13px] font-semibold tracking-[.12em] uppercase mb-4">
+            <span className="inline-block w-[22px] h-[2px] bg-[#F87314]" />
+            {locale === 'zh-hk' ? '印刷知識庫' : locale === 'ja' ? '印刷ナレッジ' : 'Printing Knowledge'}
+          </p>
+          <h1 className="text-3xl md:text-5xl font-extrabold leading-[1.15] tracking-tight max-w-[720px]">{t.h1}</h1>
+          <p className="mt-4 text-white/80 text-base md:text-lg max-w-[560px] leading-relaxed">{t.subtitle}</p>
+          <div className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-white/85">
+            {[
+              locale === 'zh-hk' ? '印刷工藝・設計技巧・行業趨勢' : locale === 'ja' ? '印刷技術・デザイン・業界トレンド' : 'Process, Design Tips & Industry Trends',
+              locale === 'zh-hk' ? '30 秒 AI 報價' : locale === 'ja' ? '30秒AI見積もり' : '30s AI Quote',
+              locale === 'zh-hk' ? '15 分鐘內專人回覆' : locale === 'ja' ? '15分以内に専門スタッフが返信' : 'Reply within 15 minutes',
+            ].map((s) => (
+              <span key={s} className="flex items-center gap-2">
+                <svg className="w-4 h-4 text-[#F87314]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M5 13l4 4L19 7" /></svg>
+                {s}
+              </span>
             ))}
           </div>
+          <a
+            href={`https://wa.me/8619880851334?text=${encodeURIComponent(locale === 'zh-hk' ? '我想查詢印刷報價' : locale === 'ja' ? '印刷の見積もりを依頼したい' : 'I want a printing quote')}`}
+            target="_blank" rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 mt-9 rounded-xl bg-[#F87314] text-white font-bold px-7 py-3.5 shadow-lg shadow-orange-500/30 hover:brightness-105 transition-all"
+            data-event="whatsapp_click" data-source="blog-hero" data-locale={locale}
+          >
+            <MessageCircle size={18} />
+            {locale === 'zh-hk' ? 'WhatsApp 即時報價' : locale === 'ja' ? 'WhatsAppで見積もり' : 'WhatsApp for a Quote'}
+          </a>
         </div>
+      </section>
 
-        {/* Two Column Layout */}
-        <div className="flex gap-8 items-start">
-          {/* Left: Articles */}
-          <div className="flex-1 min-w-0">
-            {/* Desktop Category Tabs */}
-            <div className="hidden lg:flex gap-2 flex-wrap mb-8">
-              <button
-                onClick={() => setActiveCategory('all')}
-                className={`px-5 py-2.5 text-sm font-medium rounded-full border whitespace-nowrap transition-colors ${
-                  activeCategory === 'all'
-                    ? 'bg-[#2873F5] text-white border-[#2873F5]'
-                    : 'bg-white text-gray-600 border-gray-200 hover:bg-[#2873F5] hover:text-white hover:border-[#2873F5]'
-                }`}
-              >
-                {t.allArticles}
-              </button>
-              {t.categories.map((cat) => (
-                <button
-                  key={cat.key}
-                  onClick={() => setActiveCategory(cat.key)}
-                  className={`px-5 py-2.5 text-sm font-medium rounded-full border whitespace-nowrap transition-colors ${
-                    activeCategory === cat.key
-                      ? 'bg-[#2873F5] text-white border-[#2873F5]'
-                      : 'bg-white text-gray-600 border-gray-200 hover:bg-[#2873F5] hover:text-white hover:border-[#2873F5]'
-                  }`}
-                >
-                  {cat.label}
-                </button>
-              ))}
+      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-12 items-start">
+          {/* Left rail: categories + hot products */}
+          <aside className="w-full lg:w-[260px] flex-shrink-0">
+            <div className="hidden lg:block">
+              <p className="text-[13px] font-bold tracking-[.12em] uppercase text-[#2873F5] mb-4">{t.contentCategories}</p>
+              <ul className="border-t border-gray-100">
+                <li className="border-b border-gray-100">
+                  <button onClick={() => setActiveCategory('all')} className={`w-full text-left py-3 text-[15px] font-semibold flex items-center justify-between transition-colors ${activeCategory === 'all' ? 'text-[#2873F5]' : 'text-gray-600 hover:text-[#2873F5]'}`}>
+                    <span>{t.allArticles}</span>
+                    <span className="text-xs text-gray-400">{allPosts.length}</span>
+                  </button>
+                </li>
+                {t.categories.map((cat) => (
+                  <li key={cat.key} className="border-b border-gray-100">
+                    <button onClick={() => setActiveCategory(cat.key)} className={`w-full text-left py-3 text-[15px] font-semibold flex items-center justify-between transition-colors ${activeCategory === cat.key ? 'text-[#2873F5]' : 'text-gray-600 hover:text-[#2873F5]'}`}>
+                      <span>{cat.label}</span>
+                      <span className="text-xs text-gray-400">{categoryCounts[cat.key] || 0}</span>
+                    </button>
+                  </li>
+                ))}
+              </ul>
             </div>
 
-            {/* Article Count */}
-            <p className="text-sm text-gray-400 mb-4">
-              {activeCategory === 'all'
-                ? `${t.allArticles} · ${filteredPosts.length} ${countSuffix}`
-                : `${t.categories.find((c) => c.key === activeCategory)?.label} · ${filteredPosts.length} ${countSuffix}`}
-            </p>
+            {/* Mobile category scroll */}
+            <div className="lg:hidden mb-6">
+              <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide">
+                <button onClick={() => setActiveCategory('all')} className={`px-4 py-2 text-sm font-medium rounded-full border whitespace-nowrap transition-colors ${activeCategory === 'all' ? 'bg-[#2873F5] text-white border-[#2873F5]' : 'bg-white text-gray-600 border-gray-200'}`}>{t.allArticles}</button>
+                {t.categories.map((cat) => (
+                  <button key={cat.key} onClick={() => setActiveCategory(cat.key)} className={`px-4 py-2 text-sm font-medium rounded-full border whitespace-nowrap transition-colors ${activeCategory === cat.key ? 'bg-[#2873F5] text-white border-[#2873F5]' : 'bg-white text-gray-600 border-gray-200'}`}>{cat.label}</button>
+                ))}
+              </div>
+            </div>
 
-            {/* Featured articles (top 2 with cover) — only when not filtering, so users see something */}
-            {featured.length > 0 && activeCategory === 'all' && (
-              <section className="mb-10">
-                <h2 className="text-xl font-bold text-[#333333] mb-5 flex items-center gap-2">
-                  <span className="w-1.5 h-6 bg-[#2873F5] rounded-full"></span>
-                  {t.featured}
-                </h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  {featured.map((post) => {
-                    const colors = getCategoryColor(post.categoryKey);
-                    const hasImage = !!post.image;
-                    return (
-                      <Link
-                        key={post.slug}
-                        href={`${localePrefix}/blog/${post.slug}/`}
-                        className="group bg-white rounded-xl border border-gray-100 overflow-hidden hover:shadow-xl transition-all"
-                      >
-                        {hasImage ? (
-                          <div className="aspect-[16/10] relative overflow-hidden bg-gray-100">
-                            <Image
-                              src={post.image}
-                              alt={post.title}
-                              fill
-                              className="object-cover group-hover:scale-105 transition-transform duration-500"
-                              unoptimized
-                              loading="lazy"
-                              decoding="async"
-                            />
-                          </div>
-                        ) : (
-                          <div className="aspect-[16/10] relative overflow-hidden bg-gradient-to-br from-[#2873F5]/10 via-[#F87314]/10 to-transparent flex items-center justify-center">
-                            <span className="text-3xl font-bold text-[#2873F5]/20">Z</span>
-                          </div>
-                        )}
-                        <div className="p-6">
-                          <div className="flex items-center gap-2 mb-3">
-                            <span className={`inline-flex items-center gap-1 px-2.5 py-1 text-xs font-semibold rounded-md ${colors.bg} ${colors.text}`}>
-                              <Tag className="w-3 h-3" />
-                              {post.categoryLabel}
-                            </span>
-                            <span className="text-xs text-gray-400 inline-flex items-center gap-1">
-                              <Calendar className="w-3 h-3" />
-                              {post.date}
-                            </span>
-                          </div>
-                          <h3 className="text-lg font-bold text-[#333333] group-hover:text-[#2873F5] transition-colors line-clamp-2 leading-snug">
-                            {post.title}
-                          </h3>
-                          <p className="mt-3 text-sm text-gray-500 line-clamp-3 leading-relaxed">
-                            {post.excerpt}
-                          </p>
-                          <p className="mt-4 text-sm font-medium text-[#2873F5] group-hover:underline">
-                            {t.readMore}
-                          </p>
-                        </div>
-                      </Link>
-                    );
-                  })}
-                </div>
-              </section>
-            )}
+            {/* Hot products card */}
+            <div className="mt-2 rounded-2xl border border-gray-100 bg-[#F9FAFB] p-5">
+              <p className="text-[13px] font-bold tracking-[.12em] uppercase text-[#2873F5] mb-4">{t.hotProducts}</p>
+              <ul className="space-y-3">
+                {hotProducts.map((prod) => (
+                  <li key={prod.slug}>
+                    <Link href={`${localePrefix}/product/${prod.slug}/`} className="flex items-center gap-3 group">
+                      <span className="w-12 h-12 rounded-lg bg-white border border-gray-100 overflow-hidden flex-shrink-0">
+                        {getProductMainImage(prod, locale) ? <Image src={getProductMainImage(prod, locale)} alt={getProductTitle(prod, locale)} width={48} height={48} className="object-cover w-full h-full" /> : null}
+                      </span>
+                      <span className="min-w-0">
+                        <span className="block text-[13.5px] font-semibold text-[#111827] group-hover:text-[#2873F5] truncate">{getProductTitle(prod, locale)}</span>
+                        <span className="block text-xs text-[#F87314] font-bold mt-0.5">{convertPriceRangeString(prod.price_range, locale, prod.category_slug, prod.slug)}</span>
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </aside>
 
-            {/* Rest of articles — compact text list, no images */}
-            {rest.length > 0 && (
-              <section>
-                {activeCategory === 'all' && (
-                  <h2 className="text-xl font-bold text-[#333333] mb-5 flex items-center gap-2">
-                    <span className="w-1.5 h-6 bg-[#2873F5] rounded-full"></span>
-                    {t.moreArticles}
-                  </h2>
-                )}
-                <div className="bg-white rounded-xl border border-gray-100 divide-y divide-gray-100">
-                  {rest.map((post) => {
-                    const colors = getCategoryColor(post.categoryKey);
-                    return (
-                      <Link
-                        key={post.slug}
-                        href={`${localePrefix}/blog/${post.slug}/`}
-                        className="group flex items-start gap-4 px-5 py-4 hover:bg-gray-50 transition-colors"
-                      >
-                        <span className={`flex-shrink-0 inline-flex items-center px-2.5 py-1 text-xs font-semibold rounded-md ${colors.bg} ${colors.text} max-w-[120px] truncate`}>
-                          {post.categoryLabel}
-                        </span>
-                        <div className="flex-1 min-w-0">
-                          <h3 className="text-sm sm:text-base font-semibold text-[#333333] group-hover:text-[#2873F5] transition-colors line-clamp-2 leading-snug">
-                            {post.title}
-                          </h3>
-                          <p className="mt-1 text-xs sm:text-sm text-gray-500 line-clamp-1 leading-relaxed hidden sm:block">
-                            {post.excerpt}
-                          </p>
-                        </div>
-                        <span className="flex-shrink-0 text-xs text-gray-400 w-24 text-right hidden md:inline">
-                          {post.date}
-                        </span>
-                        <ChevronRight className="flex-shrink-0 w-4 h-4 text-gray-300 group-hover:text-[#2873F5] transition-colors mt-1" />
-                      </Link>
-                    );
-                  })}
-                </div>
-              </section>
-            )}
+          {/* Main: article grid */}
+          <div className="flex-1 min-w-0 w-full">
+            <div className="flex items-baseline justify-between mb-6">
+              <h2 className="text-xl md:text-2xl font-extrabold text-[#111827]">{activeCategory === 'all' ? t.allArticles : t.categories.find((c) => c.key === activeCategory)?.label}</h2>
+              <span className="text-sm text-gray-400">{filteredPosts.length} {countSuffix}</span>
+            </div>
 
-            {/* Edge case: filter has only featured-suitable articles — render them as compact rows too */}
-            {activeCategory !== 'all' && featured.length > 0 && rest.length === 0 && featured.map((post) => {
-              const colors = getCategoryColor(post.categoryKey);
-              return (
-                <div key={post.slug} className="bg-white rounded-xl border border-gray-100 divide-y divide-gray-100">
-                  <Link
-                    href={`${localePrefix}/blog/${post.slug}/`}
-                    className="group flex items-start gap-4 px-5 py-4 hover:bg-gray-50 transition-colors"
-                  >
-                    <span className={`flex-shrink-0 inline-flex items-center px-2.5 py-1 text-xs font-semibold rounded-md ${colors.bg} ${colors.text} max-w-[120px] truncate`}>
-                      {post.categoryLabel}
-                    </span>
-                    <div className="flex-1 min-w-0">
-                      <h3 className="text-sm sm:text-base font-semibold text-[#333333] group-hover:text-[#2873F5] transition-colors line-clamp-2 leading-snug">
-                        {post.title}
-                      </h3>
-                      <p className="mt-1 text-xs sm:text-sm text-gray-500 line-clamp-1 leading-relaxed hidden sm:block">
-                        {post.excerpt}
-                      </p>
+            {featured.length > 0 && (
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {featured.map((post) => (
+                  <Link key={post.slug} href={`${localePrefix}/blog/${post.slug}/`} className="group flex flex-col rounded-2xl border border-gray-100 overflow-hidden hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 bg-white">
+                    <div className="aspect-[16/9] bg-gray-100 overflow-hidden">
+                      {post.image ? <Image src={post.image} alt={post.title} width={640} height={360} className="object-cover w-full h-full group-hover:scale-[1.02] transition-transform duration-300" /> : null}
                     </div>
-                    <span className="flex-shrink-0 text-xs text-gray-400 w-24 text-right hidden md:inline">{post.date}</span>
-                    <ChevronRight className="flex-shrink-0 w-4 h-4 text-gray-300 group-hover:text-[#2873F5] transition-colors mt-1" />
+                    <div className="p-5 md:p-6 flex flex-col flex-1">
+                      <div className="flex items-center gap-3 text-xs text-gray-400 mb-2.5">
+                        <span className="inline-flex items-center gap-1.5 text-[#2873F5] font-semibold"><Tag size={13} />{post.categoryLabel}</span>
+                        <span className="inline-flex items-center gap-1.5"><Calendar size={13} />{post.date}</span>
+                      </div>
+                      <h3 className="text-[17px] md:text-lg font-bold text-[#111827] leading-snug group-hover:text-[#2873F5] transition-colors line-clamp-2">{post.title}</h3>
+                      <p className="mt-2.5 text-sm text-gray-500 leading-relaxed line-clamp-3">{post.excerpt}</p>
+                      <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-bold text-[#F87314]">
+                        {t.readMore}
+                        <ChevronRight size={16} />
+                      </span>
+                    </div>
                   </Link>
+                ))}
+              </div>
+            )}
+
+            {rest.length > 0 && (
+              <div className="mt-10">
+                <h3 className="text-[13px] font-bold tracking-[.12em] uppercase text-[#2873F5] mb-2">{t.moreArticles}</h3>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-0">
+                  {rest.map((post) => (
+                    <Link key={post.slug} href={`${localePrefix}/blog/${post.slug}/`} className="group py-5 border-b border-gray-100 flex items-start gap-4">
+                      <div className="w-20 h-14 rounded-lg bg-gray-100 overflow-hidden flex-shrink-0">
+                        {post.image ? <Image src={post.image} alt={post.title} width={160} height={112} className="object-cover w-full h-full" /> : null}
+                      </div>
+                      <div className="min-w-0">
+                        <span className="text-xs text-[#2873F5] font-semibold">{post.categoryLabel} · {post.date}</span>
+                        <h4 className="text-[15px] font-bold text-[#111827] leading-snug group-hover:text-[#2873F5] transition-colors line-clamp-2 mt-1">{post.title}</h4>
+                      </div>
+                    </Link>
+                  ))}
                 </div>
-              );
-            })}
+              </div>
+            )}
 
             {filteredPosts.length === 0 && (
-              <div className="text-center py-20 text-gray-400">
-                {locale === 'zh-hk' ? '暫無該分類文章' : locale === 'ja' ? 'このカテゴリーの記事はありません' : 'No articles in this category'}
+              <div className="py-20 text-center text-gray-400">
+                {locale === 'zh-hk' ? '暫無相關文章' : locale === 'ja' ? '関連記事はありません' : 'No articles yet'}
               </div>
             )}
           </div>
-
-          {/* Right Sidebar */}
-          <div className="hidden lg:block w-72 flex-shrink-0 space-y-6">
-            {/* Content Categories */}
-            <div className="bg-white rounded-xl border border-gray-100 p-5">
-              <h3 className="text-base font-bold text-[#333333] mb-4 pb-3 border-b border-gray-100 flex items-center gap-2">
-                <span className="w-1 h-4 bg-[#2873F5] rounded-full"></span>
-                {t.contentCategories}
-              </h3>
-              <div className="space-y-1">
-                <button
-                  onClick={() => setActiveCategory('all')}
-                  className={`w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm transition-colors ${
-                    activeCategory === 'all'
-                      ? 'bg-[#2873F5] text-white'
-                      : 'text-gray-600 hover:bg-gray-50'
-                  }`}
-                >
-                  <span>{t.allArticles}</span>
-                  <span className={`text-xs ${activeCategory === 'all' ? 'text-white/80' : 'text-gray-400'}`}>
-                    {allPosts.length}
-                  </span>
-                </button>
-                {t.categories.map((cat) => (
-                  <button
-                    key={cat.key}
-                    onClick={() => setActiveCategory(cat.key)}
-                    className={`w-full flex items-center justify-between px-3 py-2.5 rounded-lg text-sm transition-colors ${
-                      activeCategory === cat.key
-                        ? 'bg-[#2873F5] text-white'
-                        : 'text-gray-600 hover:bg-gray-50'
-                    }`}
-                  >
-                    <span>{cat.label}</span>
-                    <span className={`text-xs ${activeCategory === cat.key ? 'text-white/80' : 'text-gray-400'}`}>
-                      {categoryCounts[cat.key] || 0}
-                    </span>
-                  </button>
-                ))}
-              </div>
-              <button
-                onClick={() => setActiveCategory('all')}
-                className="mt-3 text-sm text-[#2873F5] hover:underline flex items-center gap-1"
-              >
-                {t.allArticles}
-                <ChevronRight className="w-3.5 h-3.5" />
-              </button>
-            </div>
-
-            {/* Hot Products */}
-            <div className="bg-white rounded-xl border border-gray-100 p-5 sticky top-24">
-              <h3 className="text-base font-bold text-[#333333] mb-5 pb-3 border-b border-gray-100 flex items-center gap-2">
-                <span className="w-1 h-4 bg-[#F87314] rounded-full"></span>
-                {t.hotProducts}
-              </h3>
-              <div className="space-y-5">
-                {hotProducts.map((product) => (
-                  <Link
-                    key={product.sku_code}
-                    href={`${localePrefix}/product/${product.slug}/`}
-                    className="group flex gap-3"
-                  >
-                    <div className="w-16 h-16 rounded-lg overflow-hidden bg-gray-50 flex-shrink-0">
-                      <Image
-                        src={getProductMainImage(product, locale)}
-                        alt={getProductTitle(product, locale)}
-                        width={64}
-                        height={64}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform"
-                        unoptimized
-                        loading="lazy"
-                        decoding="async"
-                      />
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <h4 className="text-sm font-semibold text-[#333333] group-hover:text-[#2873F5] transition-colors line-clamp-2">
-                        {getProductTitle(product, locale)}
-                      </h4>
-                      <p className="text-xs text-gray-500 mt-1 line-clamp-2">
-                        {getProductDescription(product, locale).slice(0, 35)}...
-                      </p>
-                      <p className="text-sm text-[#F87314] font-bold mt-1">
-                        {convertPriceRangeString(product.price_range, locale, product.category_slug, product.slug).split('-')[0]}
-                      </p>
-                    </div>
-                  </Link>
-                ))}
-              </div>
-            </div>
-          </div>
         </div>
+
+        {/* Bottom inquiry CTA */}
+        <section className="mt-14 rounded-2xl bg-[#0F1F3D] px-6 md:px-10 py-10 md:py-12 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div>
+            <h2 className="text-xl md:text-2xl font-extrabold text-white">
+              {locale === 'zh-hk' ? '睇完仲未決定？' : locale === 'ja' ? 'まだお決まりでないですか？' : 'Still deciding?'}
+            </h2>
+            <p className="mt-2 text-white/75 text-sm md:text-base">
+              {locale === 'zh-hk' ? 'WhatsApp 30 秒攞精準報價，15 分鐘內專人回覆。' : locale === 'ja' ? 'WhatsAppで30秒の見積もり、15分以内に専門スタッフが返信。' : 'Get a precise quote in 30 seconds on WhatsApp; reply within 15 minutes.'}
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row gap-3 flex-shrink-0">
+            <a href={`https://wa.me/8619880851334`} target="_blank" rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#F87314] text-white font-bold px-6 py-3 shadow-lg shadow-orange-500/30 hover:brightness-105 transition-all"
+              data-event="whatsapp_click" data-source="blog-bottom-cta" data-locale={locale}>
+              <MessageCircle size={17} />
+              {locale === 'zh-hk' ? 'WhatsApp 詢價' : locale === 'ja' ? 'WhatsAppで見積もり' : 'WhatsApp Us'}
+            </a>
+            <Link href={`${localePrefix}/contact/`}
+              className="inline-flex items-center justify-center gap-2 rounded-xl border border-white/40 text-white font-bold px-6 py-3 hover:bg-white/10 transition-all"
+              data-event="contact_click" data-source="blog-bottom-cta" data-locale={locale}>
+              {locale === 'zh-hk' ? '填寫詢價表' : locale === 'ja' ? '見積もりフォーム' : 'Quote Form'}
+            </Link>
+          </div>
+        </section>
       </div>
     </main>
   );

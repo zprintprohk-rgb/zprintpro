@@ -221,13 +221,13 @@ export function Footer({ locale }: FooterProps) {
     if (isWa) {
       const waProps = getWhatsAppLinkProps(locale, { source: 'footer', productName: 'Site Footer WhatsApp CTA' });
       return (
-        <li key={linkIndex}>
+        <li key={linkIndex} className="mt-1">
           <a
             href={waProps.href}
             target={waProps.target}
             rel={waProps.rel}
             onClick={waProps.onClick}
-            className="text-gray-400 hover:text-white transition-colors text-sm"
+            className="inline-flex items-center gap-2 rounded-full bg-[#F87314] text-white text-sm font-bold px-5 py-2.5 shadow-md shadow-orange-500/30 hover:brightness-105 transition-all"
           >
             {link.label}
           </a>

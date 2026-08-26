@@ -13,6 +13,7 @@
  * 3 locale text: en (primary, US market targeted) / zh-hk / ja
  */
 
+import { ShoppingCart, Upload, FileCheck2, ShieldCheck, Truck, ArrowRight } from 'lucide-react';
 import { Locale } from '@/types/locale';
 
 interface HowItWorksProps {
@@ -44,7 +45,7 @@ const STEPS: Record<Locale, Step[]> = {
     },
     {
       num: 3,
-      title: 'Free Proof in 4 Hours',
+      title: 'Free Human Proof',
       desc: 'Human review, unlimited revisions. Emailed before printing.',
       icon: '✅',
       tip: '100% satisfaction guarantee',
@@ -79,7 +80,7 @@ const STEPS: Record<Locale, Step[]> = {
     },
     {
       num: 3,
-      title: '4 小時內免費打稿',
+      title: '免費打稿・人工審稿',
       desc: '人工審稿不限修改，開印前電郵確認。',
       icon: '✅',
       tip: '100% 滿意保證',
@@ -96,7 +97,7 @@ const STEPS: Record<Locale, Step[]> = {
       title: '港九新界免費速遞',
       desc: '順豐本地 / DHL 全球 5-7 天，滿 $500 免運。',
       icon: '📦',
-      tip: '24 小時急件可選 · DDP 關稅預付',
+      tip: '即日急件可選 · DDP 關稅預付',
     },
   ],
   ja: [
@@ -114,7 +115,7 @@ const STEPS: Record<Locale, Step[]> = {
     },
     {
       num: 3,
-      title: '4 時間以内に無料校正',
+      title: '無料校正・人による審査',
       desc: '校了まで無制限。印刷前にメールで確認。',
       icon: '✅',
       tip: '100% 満足保証',
@@ -143,13 +144,24 @@ const HEADING: Record<Locale, { title: string; subtitle: string }> = {
   },
   'zh-hk': {
     title: '印刷流程',
-    subtitle: '5 步由訂單到送達 · 港九新界 $500+ 免費速遞 · 4 小時免費打稿 · 100% 滿意保證',
+    subtitle: '5 步由訂單到送達 · 港九新界 $500+ 免費速遞 · 免費打稿 · 100% 滿意保證',
   },
   ja: {
     title: 'ご注文の流れ',
-    subtitle: '5 ステップで注文から納品まで · 全国送料 0 円 · 4 時間無料校正 · 100% 満足保証',
+    subtitle: '無料校正・人による審査',
   },
 };
+
+const STEP_ICONS = [ShoppingCart, Upload, FileCheck2, ShieldCheck, Truck];
+
+function StepIcon({ index }: { index: number }) {
+  const Icon = STEP_ICONS[index % STEP_ICONS.length];
+  return (
+    <span className="text-[#2873F5]" aria-hidden="true">
+      <Icon size={20} strokeWidth={2} />
+    </span>
+  );
+}
 
 export function HowItWorks({ locale }: HowItWorksProps) {
   const steps = STEPS[locale] || STEPS['en'];
@@ -181,7 +193,7 @@ export function HowItWorks({ locale }: HowItWorksProps) {
               {/* Connector arrow for desktop (between steps) */}
               {idx < steps.length - 1 && (
                 <div
-                  className="hidden lg:block absolute top-1/2 -right-2 -translate-y-1/2 text-slate-300 z-10 text-2xl"
+                  className="hidden lg:block absolute top-1/2 -right-2 -translate-y-1/2 text-[#F87314] z-10"
                   aria-hidden="true"
                 >
                   →
@@ -192,7 +204,7 @@ export function HowItWorks({ locale }: HowItWorksProps) {
                 <span className="flex-shrink-0 w-9 h-9 rounded-full bg-[#2873F5] text-white font-bold text-lg flex items-center justify-center shadow-sm shadow-blue-200">
                   {step.num}
                 </span>
-                <span className="text-2xl" aria-hidden="true">{step.icon}</span>
+                <StepIcon index={idx} />
               </div>
 
               <h3 className="text-[15px] md:text-base font-semibold text-slate-900 mb-1.5">

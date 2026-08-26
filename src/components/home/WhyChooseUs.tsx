@@ -20,7 +20,7 @@ const translations = {
         subtitleColor: 'text-blue-500',
         bgColor: 'bg-blue-50',
         iconColor: 'text-blue-500',
-        description: '標準訂單3-5個工作天完成，特急服務最快24小時',
+        description: '標準訂單 3-5 個工作天完成；即日急件 18:00 截單，翌日中午 12:00 前送達',
       },
       {
         icon: Truck,
@@ -38,7 +38,7 @@ const translations = {
         subtitleColor: 'text-purple-500',
         bgColor: 'bg-purple-50',
         iconColor: 'text-purple-500',
-        description: '專業客服團隊7x24小時在線，隨時為您解答',
+        description: '標準訂單 3-5 個工作天完成；即日急件 18:00 截單，翌日中午 12:00 前送達',
       },
       {
         icon: Shield,
@@ -80,7 +80,7 @@ const translations = {
         subtitleColor: 'text-blue-500',
         bgColor: 'bg-blue-50',
         iconColor: 'text-blue-500',
-        description: 'Standard orders completed in 3-5 business days, rush service available in 24 hours',
+        description: 'Standard 3-5 business days; same-day rush: order by 6pm, delivered by noon next day',
       },
       {
         icon: Truck,
@@ -140,7 +140,7 @@ const translations = {
         subtitleColor: 'text-blue-500',
         bgColor: 'bg-blue-50',
         iconColor: 'text-blue-500',
-        description: '標準注文は3-5営業日、特急サービスは最短24時間',
+        description: '標準 3-5 営業日；即日印刷：18:00 締切、翌日 12 時着',
       },
       {
         icon: Truck,
@@ -158,7 +158,7 @@ const translations = {
         subtitleColor: 'text-purple-500',
         bgColor: 'bg-purple-50',
         iconColor: 'text-purple-500',
-        description: 'プロのカスタマーサービスチームが24時間対応',
+        description: '標準 3-5 営業日；即日印刷：18:00 締切、翌日 12 時着',
       },
       {
         icon: Shield,
@@ -204,11 +204,15 @@ export function WhyChooseUs({ locale }: WhyChooseUsProps) {
         </div>
 
         {/* Features Grid - 6 columns on large screens */}
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-5">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {t.features.map((feature, index) => (
             <div
               key={index}
-              className="group bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-xl hover:-translate-y-1 hover:border-gray-200 transition-all duration-300 text-center"
+              className={`group rounded-2xl border p-6 transition-all duration-300 text-center ${
+                index === 0
+                  ? 'bg-gradient-to-b from-orange-50/70 to-white border-orange-200 sm:col-span-2 lg:col-span-2 hover:shadow-xl hover:-translate-y-1'
+                  : 'bg-white border-gray-100 hover:shadow-xl hover:-translate-y-1 hover:border-gray-200'
+              }`}
             >
               <div className={`w-14 h-14 ${feature.bgColor} rounded-2xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300`}>
                 <feature.icon className={`w-7 h-7 ${feature.iconColor}`} />
@@ -216,6 +220,17 @@ export function WhyChooseUs({ locale }: WhyChooseUsProps) {
               <h3 className="font-bold text-[#333333] text-lg mb-1.5">{feature.title}</h3>
               <p className={`text-sm font-semibold ${feature.subtitleColor} mb-3`}>{feature.subtitle}</p>
               <p className="text-xs text-gray-500 leading-[1.76]">{feature.description}</p>
+              {index === 0 && (
+                <a
+                  href={`/${locale}/services/rush-printing-delivery/`}
+                  className="inline-flex items-center gap-1.5 mt-4 text-sm font-bold text-[#F87314] hover:underline"
+                  data-event="rush_cta_click"
+                  data-source="home-why-choose-us"
+                  data-locale={locale}
+                >
+                  {locale === 'en' ? 'Same-Day Rush →' : locale === 'ja' ? '即日印刷 →' : '即日急件 →'}
+                </a>
+              )}
             </div>
           ))}
         </div>
