@@ -1,3 +1,14 @@
+# zprintpro-blog-deepfix v1.2 (2026-08-26 20:53 K3 拍板升级)
+
+> **v1.1 → v1.2 核心变化** (per K3 8/26 20:53 升级拍板 "12要素及格线, 不是排名保障"):
+> 1. **主题集群模型 (Topic Cluster)** (K3 拍板): 1 核心页 + 4 支撑页双向链接, 共享主题权重, 而非随机 3 条内链
+> 2. **外链 SOP (Backlink SOP)** (K3 拍板 "GEO 命门"): 每篇 blog 发布后 7 天内 ≥1 条行业目录/本地商会/设计博客自然外链或品牌提及
+> 3. **跨语言互链 (hreflang + 跨语言内容呼应)** (K3 拍板): 3 locale (zh-hk/en/ja) 不再独立, 互相链接 + hreflang 标准化
+> 4. **用户信号反馈闭环 (CTR/停留时间/跳出率)** (K3 拍板 "12要素是静态检查, 无法验证真实效果"): 修复后 14 天回看 GSC, 校正下轮
+> 5. **竞品对标 (可选)** (K3 拍板 "合规≠胜出"): 联网搜索 Top 3 竞品结构, 提炼差异化
+
+---
+
 # zprintpro-blog-deepfix v1.1 (2026-08-26 20:38 K3 拍板升级)
 
 > **v1.0 → v1.1 核心变化** (per K3 8/26 20:38 升级拍板):
@@ -228,6 +239,189 @@ K3 / 用户说"暂停"/"pause"/"等指令"那一刻, 立即 `mavis cron delete <
 - ✅ 5 步 verify 全 PASS: check-encoding / tsc / build / push / curl 200
 - ✅ 报告落盘 `.hermes/logs/blog-deepfix-YYYY-MM-DD.md` (5 段)
 - ✅ 升级 K3 1 段中文 (5 要素 + 数据来源行)
+
+---
+
+## 【§13 主题集群模型 · Topic Cluster】(per K3 8/26 20:53 拍板 "随机 3 条内链 ≠ 主题集群", 必跑, 缺则报告作废)
+
+### 核心原则 (per K3 8/26 20:53 拍板)
+
+> "你说得对，互链要加，但要加对。已有的 3-4 条是随机内链，建议升级为主题集群模型：核心页 + 4 支撑页双向链接，共享 'restaurant printing' 主题权重。"
+
+### 主题集群架构 (必跑)
+
+每篇核心 blog 必形成以下 5 节点主题集群, **双向链接** (5 × 4 = 20 条内链, 而非随机 3 条):
+
+```
+核心页 (Pillar Page, 5000+ 字)
+├── 支撑页 1: 设计 / 制作细节 (How-to 类, 2000-3000 字)
+├── 支撑页 2: 材质 / 价格对比 (Comparison 类, 2000-3000 字)
+├── 支撑页 3: 合规 / 监管 (Compliance 类, 2000-3000 字)
+├── 支撑页 4: 案例 / 数据 (Case Study 类, 2000-3000 字)
+└── 产品页: ZprintPro Custom Service (内部产品落地, 800-1500 字)
+```
+
+### 实际主题集群示例 (per K3 8/26 20:53 拍板原文)
+
+> **核心页**: Restaurant Opening Flyer (本例 slug: `restaurant-opening-flyer-printing-guide`)
+> **支撑页 1**: How to Design Restaurant Flyers (slug 待建: `how-to-design-restaurant-flyers`)
+> **支撑页 2**: Best Paper Weight for Food Menus (slug 待建: `best-paper-weight-food-menus`)
+> **支撑页 3**: FDA Compliant Printing Guide (slug 待建: `fda-compliant-printing-guide`)
+> **支撑页 4**: Restaurant Marketing ROI Case Study (slug 待建: `restaurant-marketing-roi-case`)
+> **产品页**: Custom Flyer Printing Service (现有 `/en/product/a4-flyers/`)
+
+### 链接 SOP (per K3 拍板 "5×4=20 条双向链接")
+
+每篇核心 blog 必在 content body 中:
+- **核心页 → 4 支撑页** (4 条 outbound)
+- **核心页 → 1 产品页** (1 条 outbound)
+- 4 支撑页 + 1 产品页 必含 **回链** 到核心页 (5 条 inbound)
+- **总计 10 条** 主题集群内链, 全部共享 "restaurant printing" / "印刷" 主题锚文本
+
+### 锚文本规范 (per SEO+GEO §11 实体锚文本)
+
+- ❌ 禁用: "click here" / "了解更多" / "read more" / "こちらをクリック"
+- ✅ 必用: 实体名词 + 主题, e.g. "[PDF/X-1a 印刷檔案規格](link)" / "[FDA 21 CFR 176.170 認證](link)" / "[157gsm 雙粉紙材質對比](link)"
+
+### 主题集群选择优先级
+
+1. **GSC 高 imp 核心页** (per GSC 90 天数据, 优先 top 12 imp 高的 blog)
+2. **3 locale 已有 blog 集群** (优先 zh-hk/en/ja 都有的 blog, 3 locale 同步建集群)
+3. **B7 选题库 22 篇** (per K3 8/26 04:50 v2 预批, 4 cron 共享)
+4. **写入时**: 1 核心页 = 4 支撑页 + 1 产品页, 5 篇 blog 攒 1 push (per §0.1)
+
+---
+
+## 【§14 外链 SOP · Backlink SOP】(per K3 8/26 20:53 拍板 "GEO 命门 = 外部权威信号", 必跑, 缺则报告作废)
+
+### 核心原则 (per K3 8/26 20:53 拍板原文)
+
+> "12 要素里没有这一项，但 Google E-E-A-T 和 AI Overview 都重度依赖外部权威引用。建议补一条 cron 规则：每篇 blog 发布后 7 天内，至少获得 1 条来自行业目录/本地商会/设计博客的自然外链或品牌提及。"
+
+### 外链 5 类别 (优先级排序)
+
+| 类别 | 优先级 | 来源类型 | 数量目标 (每 blog 7 天内) |
+|------|--------|----------|--------------------------|
+| 1. 行业目录 (Industry Directory) | P0 | ThomasNet / Kompass / Alibaba 行业目录 | ≥1 |
+| 2. 本地商会 (Local Chamber) | P1 | 香港工业贸易署 / 深圳印刷协会 / LocalBusiness Chamber | ≥1 |
+| 3. 设计博客 (Design Blog) | P1 | Canva Design Blog / Adobe Blog / Print Magazine | ≥1 |
+| 4. Reddit / Quora 自然提及 | P2 | r/printing / r/smallbusiness / Quora 回答 | ≥1 |
+| 5. 合作伙伴 (Partner Cross-link) | P3 | 同行业非竞品 (互不竞争) 网站 | ≥1 |
+
+### 外链 cron SOP (M3 自动执行)
+
+每篇 blog commit + push 后, M3 **7 天内**必做:
+1. **联网搜索 query 模板** (web_search 3-5 query):
+   - `"<blog topic>" site:reddit.com`
+   - `"<blog topic>" site:quora.com`
+   - `"<blog topic>" printing industry directory`
+   - `"<blog topic>" design blog mention`
+2. **Reddit / Quora 找相关讨论** (per GSC 命中 query 反查)
+3. **Natural mention** (不是 spam): 在真实相关讨论中提及 + 简短引用 + 链接
+4. **行业目录提交**: 1 个目录 (ThomasNet / Kompass / 行业协会)
+5. **跟踪**: 报告 1 周内获得的外链数 / 提及数
+
+### 外链质量分 (SOP-2 二元化阈值, per K3 v3 增补)
+
+- **DR 70+ (Domain Rating) = 高质量外链** (1 条 = 5 条普通外链价值)
+- **DR 30-69 = 中质量** (1 条 = 1 条)
+- **DR 0-29 = 低质量** (不计入)
+- **Spammy / PBN = 负分** (必拒, K3 必拍 1 次回复确认)
+
+### M3 报告必含 (per §0.23 数据诚信红线)
+
+每篇 blog 修复报告必含:
+- 修复后 7 天外链数 (实际统计, 不是估算)
+- 修复后 14 天 GSC 数据 (impressions / clicks / CTR)
+- 修复后 28 天 GSC 趋势 (impression 涨 vs click 涨 = 标题问题; 都不涨 = 外链/主题权重问题)
+
+---
+
+## 【§15 跨语言互链 · Cross-locale Internal Linking】(per K3 8/26 20:53 拍板 "3 locale 不再独立", 必跑, 缺则报告作废)
+
+### 核心原则 (per K3 8/26 20:53 拍板)
+
+> "你提到 3 locale 各自独立, 缺 hreflang + 跨语言内容呼应. 需 3 locale 互链 + hreflang 标准化."
+
+### hreflang SOP (必跑)
+
+每篇 blog 必含:
+- **Hreflang 8 locale map** (per v3 增补 §13.15: zh-hant-HK / en / ja-JP + x-default=zh-hk + 5 个其他 locale)
+- **canonical URL** (per locale, 指向该 locale 版本)
+- **OG locale alternate** (Open Graph og:locale:alternate)
+
+### 跨语言内容呼应 SOP (必跑)
+
+3 locale 必同步:
+- **主题集群页 zh-hk + en + ja 3 版本同时发布** (不先发 1 locale 再补)
+- **主题锚文本 跨语言互链**:
+  - zh-hk 页 → en 对应页 (1 条 outbound) + ja 对应页 (1 条 outbound)
+  - en 页 → zh-hk 对应页 + ja 对应页
+  - ja 页 → zh-hk 对应页 + en 对应页
+  - **总计 6 条 跨语言互链** (3 locale × 2 outbound)
+- **canonical 不指向** 跨语言 (各 locale 自指, 避免被 GSC 视为重复内容)
+
+### 跨语言 SOP 强制级
+
+- ❌ 禁用: 1 locale 单独发, 后补其他 2 locale (GSC 视为重复内容, 排名下降)
+- ✅ 必用: 3 locale 同时 push (1 commit + 1 push 包含 3 locale JSON)
+
+---
+
+## 【§16 用户信号反馈闭环 · User Signals Loop】(per K3 8/26 20:53 拍板 "静态检查 ≠ 真实效果", 必跑, 缺则报告作废)
+
+### 核心原则 (per K3 8/26 20:53 拍板)
+
+> "12 要素是静态检查，无法验证真实效果. 需 14 天回看 GSC, 校正下轮."
+
+### 反馈指标 (SOP-2 二元化阈值)
+
+| 指标 | 阈值 (达标) | 数据源 |
+|------|-------------|--------|
+| Impressions 涨 | ≥ +20% (修复前 7 天 vs 修复后 7 天) | GSC 90 天 page+query |
+| Clicks 涨 | ≥ +20% (同上) | GSC 90 天 page+query |
+| CTR 涨 | ≥ +0.5pp (绝对值, 修复前 vs 后) | GSC 90 天 page+query |
+| Avg Position 涨 | ≤ -2 位 (修复前 vs 后, 数字小 = 排名靠前) | GSC 90 天 page+query |
+| 跳出率降 | ≤ -5pp (per Plausible / GA4) | Plausible Analytics |
+| 停留时间涨 | ≥ +30s (per Plausible / GA4) | Plausible Analytics |
+
+### 反馈循环 SOP (M3 自动跑, 每月 1 次)
+
+1. **修复后 14 天回看** (M3 自动 cron: 每月 1 号 14:00, per `zprintpro-monthly-matrix-audit`)
+2. **对比修复前 7 天 vs 修复后 7 天 GSC 数据**
+3. **判定** (SOP-2 二元化):
+   - ✅ 全部指标达标 → "成功, 推广此模板到下批 blog"
+   - ⚠️ 部分指标达标 → "优化 1-2 项, 下批 retry"
+   - ❌ 全部未达标 → "12 要素到顶, 但 GSC 排名问题, 升级 K3 拍板外链 SOP 是否升级"
+4. **升级 K3**: 1 段报告, 含 6 指标实际值 + 判定 + 下批策略
+
+---
+
+## 【§17 竞品对标 · Competitor Benchmarking】(per K3 8/26 20:53 拍板 "合规≠胜出", 可选, 必跑 if 9/1 前)
+
+### 核心原则 (per K3 8/26 20:53 拍板)
+
+> "不知道对手用什么结构，合规≠胜出. 联网搜索 Top 3 竞品结构, 提炼差异化."
+
+### 竞品对标 SOP
+
+每月 1 次, 9/1 验收:
+1. **联网搜索 Top 3 竞品** (per niche):
+   - 例: restaurant-opening-flyer → 搜 "restaurant flyer printing guide" top 3 organic 排名
+   - 例: pet-food-sticker → 搜 "pet food label requirements 2026" top 3
+2. **结构对比** (M3 写):
+   - 竞品 1-3 段数 / FAQ 数 / 数据点数 / 内链数 / 外链数 / schema 类型
+   - zprintpro 对比 同上
+3. **差异化提炼** (M3 写):
+   - zprintpro 比竞品多什么 (差异化优势)
+   - zprintpro 比竞品少什么 (gap, 必补)
+4. **升级 K3**: 1 段报告, 含 3 竞品结构 + 差异化建议
+
+### 竞品范围 (v1.2 暂定)
+
+- **en locale**: PrintPlace / Vistaprint / GotPrint / MOO / 48HourPrint
+- **zh-hk locale**: 印刷通 / e-print / 彩印通 / 香港印刷业网
+- **ja locale**: 印刷のネット / プリントネット / 印刷通販
 
 ---
 
