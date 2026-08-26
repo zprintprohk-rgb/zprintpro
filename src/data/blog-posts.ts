@@ -1569,6 +1569,29 @@ const lpCatalogPrintingChinaSupplierGuide: BlogPostMeta = {
   },
 };
 
+
+// 2026-08-26 K3 拍板 W3 月曆首位 (R5 9/15 硬截止): 2027 月曆印刷攻略
+const lpMonthlyCalendarPrinting2027: BlogPostMeta = {
+  slug: '2027-monthly-calendar-printing-timetable',
+  categoryKey: 'printing',
+  source: 'daily',
+  date: '2026-08-30',
+  title: {
+    'zh-hk': '2027 月曆印刷攻略：幾時印？起印量？4 種月曆紙材大對決 | 智印港 ZprintPro',
+    en: '2027 Calendar Printing Guide: When to Print? MOQ? 4 Paper Stocks Compared | ZprintPro',
+    ja: '2027 年カレンダー印刷攻略：いつ注文？最小ロットは？4 種用紙比較 | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '2027 月曆印刷 9 月開學季企業起量。4 種月曆類型 (掛曆 / 座曆 / 月記事簿 / 檯曆) + 4 大紙材 (銅版紙 / 雙銅紙 / 雅粉紙 / 牛油紙) + 起印量 100 本起 + 7 個常見問題, 9 月中前必印。',
+    en: '2027 calendar printing 9-month back-to-school corporate ramp. 4 types (wall / desk / monthly planner / pad calendar) + 4 stocks (coated / dual-coated / offset / kraft) + 100 MOQ + 7 FAQs, before mid-Sep.',
+    ja: '2027 年カレンダー印刷 9 月から新学期シーズン法人大量注文。4 種類（壁掛け / 卓上 / マンスリープランナー / パッド）+ 4 種用紙（コート紙 / 両面コート / オフセット / クラフト）+ 100 冊〜 + 7 FAQ、9月中旬までに注文推奨。',
+  },
+  targetKeywords: {
+    primary: '2027 月曆印刷',
+    secondary: ['月曆 印刷', '掛曆 印刷', '座曆 印刷', '記事簿 印刷', '檯曆 印刷', '月曆 紙材'],
+  },
+};
+
 export const blogPosts: BlogPostMeta[] = [
   // Buying guides (9)
   bgBusinessCard,
@@ -1690,7 +1713,9 @@ export const blogPosts: BlogPostMeta[] = [
   // 2026-08-26 K3 拍板 W1 #1: 即日急件印刷全攻略 (B7 派发, 跟 rush 6faa459 协同) — seo(batch1): 假设大信封 pos 2.21 改 title 后 CTR+2pp
   lpRushPrintingHKGuide,
   // 2026-08-26 K3 拍板 W1 #2: 包裝盒印刷價格 2026 (B7 派发, 跟 R5 旺季协同)
-  lpPackagingBoxPricing2026,
+    lpPackagingBoxPricing2026,
+  // 2026-08-26 K3 拍板 W3 月曆首位 (R5 9/15 硬截止): 2027 月曆印刷攻略
+  lpMonthlyCalendarPrinting2027,
 ];
 
 // =============================================================================
