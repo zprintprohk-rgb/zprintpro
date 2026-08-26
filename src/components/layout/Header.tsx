@@ -356,6 +356,17 @@ export function Header({ locale }: HeaderProps) {
             <div className="flex items-center h-[46px]">
 <Link href={`${localePrefix}/`} className={navLinkClass(pathname === `${localePrefix}/`)}>{t.home}</Link>
 
+              {/* 2026-08-26 K3 15:39 拍板: zh-hk 加 即日急件 nav 入口, 放传单印刷 (flyers) 前面
+                  推翻 8/26 11:00 23b4feb "不动 nav" 红线 (K3 当前 turn 拍板 = 1 次回复 = §0.22 撞墙豁免) */}
+              {locale === 'zh-hk' && (
+                <Link
+                  href={`${localePrefix}/services/rush-printing-delivery/`}
+                  className={navLinkClass(pathname.includes('/services/rush-printing-delivery'))}
+                >
+                  即日急件
+                </Link>
+              )}
+
               {/* 2026-07-09 SEO 复盘: 移除顶部独立「即日服務」导航栏
                   GSC 数据证明分散权重的反模式 — 竞品 z-printpro.com 把「即日」全部落在类目页 (e.g. /products/poster-printing/24hour-poster-printing-* CTR 4-7%),
                   我们把 nav 权重集中到 14 类目页, 让 flyers 类目页接收「即日 + 数码印刷」权重

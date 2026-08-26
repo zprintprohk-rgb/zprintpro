@@ -77,7 +77,8 @@ export default function RushHero({ locale }: Props) {
 
       {/* 1320px 容器 (K3 §1 修复要求, 既有模式 1320px, K3 8/26 11:02 授权 hero 加工厂图全屏) */}
       <div className="relative z-10 max-w-[1120px] mx-auto px-6 pt-[72px] pb-[104px]">
-        <nav className="text-[13px] text-white/70 mb-10" aria-label="麵包屑">{d.crumb}</nav>
+        {/* K3 15:39 拍板: 删 hero 内的 crumb (上方 layout.tsx 已渲染全站 breadcrumb) */}
+        {/* autoclaw L207 设计的 crumb 视觉冗余, layout.tsx BreadcrumbNav 替代 */}
 
         <p className="inline-flex items-center gap-2 bg-[#F87314] text-white text-[13px] font-semibold tracking-wider px-3 py-1 rounded-full mb-4 uppercase">
           {d.eyebrow}
