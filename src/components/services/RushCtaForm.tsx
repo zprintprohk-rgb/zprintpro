@@ -206,7 +206,7 @@ export default function RushCtaForm({ locale }: Props) {
             type="button"
             onClick={() => setFormOpen(true)}
             data-event="form_open"
-            data-source="rush-cta-form"
+            data-source="rush-printing"
             data-locale={locale}
             className="bg-[#2873F5] hover:bg-[#1e5fd1] text-white font-bold px-8 py-4 rounded-xl shadow-md transition-colors text-base md:text-lg"
           >
@@ -314,7 +314,7 @@ export default function RushCtaForm({ locale }: Props) {
             type="submit"
             disabled={submitting}
             data-event="form_submit"
-            data-source="rush-cta-form"
+            data-source="rush-printing"
             data-locale={locale}
             className="w-full bg-[#2873F5] hover:bg-[#1e5fd1] disabled:bg-gray-400 text-white font-bold px-6 py-4 rounded-xl shadow-md transition-colors text-base md:text-lg"
           >

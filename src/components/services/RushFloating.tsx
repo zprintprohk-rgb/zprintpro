@@ -60,7 +60,7 @@ export default function RushFloating({ locale }: Props) {
         rel="noopener noreferrer"
         onClick={handleWaClick}
         data-event="whatsapp_click"
-        data-source="rush-floating"
+        data-source="rush-printing"
         data-locale={locale}
         aria-label="WhatsApp 急件確認"
         className="hidden md:flex fixed bottom-6 right-6 z-40 bg-[#25D366] hover:bg-[#1da851] text-white w-16 h-16 rounded-full shadow-lg items-center justify-center transition-colors"
@@ -85,7 +85,7 @@ export default function RushFloating({ locale }: Props) {
             rel="noopener noreferrer"
             onClick={handleWaClick}
             data-event="whatsapp_click"
-            data-source="rush-floating-mobile"
+            data-source="rush-printing"
             data-locale={locale}
             className="flex-1 flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1da851] text-white font-bold py-3 transition-colors"
           >
@@ -101,7 +101,7 @@ export default function RushFloating({ locale }: Props) {
               })
             }
             data-event="tel_click"
-            data-source="rush-floating-mobile"
+            data-source="rush-printing"
             data-locale={locale}
             className="flex-1 flex items-center justify-center gap-2 bg-[#2873F5] hover:bg-[#1e5fd1] text-white font-bold py-3 transition-colors"
           >

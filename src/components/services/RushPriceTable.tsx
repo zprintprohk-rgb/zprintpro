@@ -127,7 +127,7 @@ export default function RushPriceTable({ locale }: Props) {
           target="_blank"
           rel="noopener noreferrer"
           data-event="whatsapp_click"
-          data-source="rush-pricetable"
+          data-source="rush-printing"
           data-locale={locale}
           className="bg-[#25D366] hover:bg-[#1da851] text-white font-bold px-6 py-3 rounded-lg shadow-md transition-colors"
         >
