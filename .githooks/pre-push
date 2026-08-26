@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+# 2026-08-26 K3 14:13 §4 拍板 + 19:09 拍板: 拦截 git submodule mode 160000 误提交
+# 触发: git push 前 (本地 .git/hooks/pre-push, 或 core.hooksPath=.githooks)
+# 防: M3 8/26 14:13 zprintpro/ nested repo 误当 submodule 提交, CF build 0s fatal fail in 0s
+# 安装: 一次性执行 (K3 拍板 19:09 装, 后续 cron pre-push 自动跑)
+#   git config core.hooksPath .githooks
+#   chmod +x .githooks/pre-push
+
+# 检查 staged / committed 中是否有 submodule mode 160000
+# git ls-files --stage: 列出 staged 文件 + mode (160000 = gitlink/submodule pointer)
+submodule_count=$(git ls-files --stage 2>/dev/null | awk '$2 ~ /^160000$/' | wc -l | tr -d ' ')
+
+if [ "$submodule_count" -gt 0 ]; then
+  echo ""
+  echo "🚨 [pre-push hook] 检测到 $submodule_count 个 submodule pointer (mode 160000)!"
+  echo ""
+  echo "Submodule 误提交会导致 CF Pages clone 步骤立刻 fatal fail in 0s:"
+  echo "  fatal: No url found for submodule path 'xxx' in .gitmodules"
+  echo "  Failed: error occurred while updating repository submodules"
+  echo ""
+  echo "问题根因: git add -A 扫到了 nested git repo, git 把它当 submodule 记录"
+  echo "          但 .gitmodules 里没有 url, CF clone 找不到 url 立刻 fatal"
+  echo ""
+  echo "修法 3 选 1:"
+  echo "  A. git rm --cached <submodule-path> + .gitignore 加 <path>/ + git commit --amend"
+  echo "  B. git revert <commit-with-submodule> + git push --force-with-lease origin_ssh main"
+  echo "  C. 确认 <submodule-path> 是真 submodule 后, 在 .gitmodules 加 url 定义"
+  echo ""
+  echo "列出误提交的 submodule:"
+  git ls-files --stage 2>/dev/null | awk '$2 ~ /^160000$/ {print "  - " $4 " (mode 160000, hash: " $3 ")"}'
+  echo ""
+  echo "Push 已拒绝, 等修好再 push."
+  echo ""
+  exit 1
+fi
+
+# 全部 OK, 放行
+exit 0
