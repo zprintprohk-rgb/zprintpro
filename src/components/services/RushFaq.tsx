@@ -1,6 +1,4 @@
-// 2026-08-26 K3 拍板 (gap-closure-card §2 Step 1) — verbatim 转设计稿 L367-398
-// 6 条 FAQ 钉死 (⛔ 禁「自取點」, 设计稿用「港鐵站交收」+「我哋冇門市自取」)
-// 验收 grep 钉死: FAQ 主实体 6 条 verbatim + 禁词 0
+// 2026-08-26 K3 15:20 拍板 (autoclaw 设计稿 1120px + 居中): 修复 6f74771 容器太宽 + FAQ 散
 
 'use client';
 
@@ -56,32 +54,42 @@ export default function RushFaq({ locale }: Props) {
   const [openIdx, setOpenIdx] = useState<number>(0);
 
   return (
-    <section className="py-12 md:py-16 bg-gray-50" aria-label="即日印刷常見問題" data-section="rush-faq">
-      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-        <p className="inline-block bg-[#1A56DB] text-white text-xs font-bold px-3 py-1 rounded-full mb-3">{d.eyebrow}</p>
-        <h2 className="text-2xl md:text-4xl font-extrabold text-gray-900 mb-8 md:mb-12">{d.h2}</h2>
+    <section className="py-[104px] bg-[#F9FAFB]" aria-label="即日印刷常見問題" data-section="rush-faq">
+      {/* 1120px 容器 (autoclaw .wrap 居中) */}
+      <div className="max-w-[1120px] mx-auto px-6">
+        <p className="inline-flex items-center gap-2 text-[#2873F5] text-[13px] font-semibold tracking-[.12em] uppercase mb-3">
+          <span className="inline-block w-[22px] h-[2px] bg-[#F87314]" />
+          {d.eyebrow}
+        </p>
+        <h2 className="text-[clamp(26px,3.4vw,40px)] font-extrabold mt-3 mb-12 text-[#111827] leading-[1.2] tracking-tight">
+          {d.h2}
+        </h2>
 
-        <div className="space-y-3 max-w-4xl">
+        {/* FAQ list (autoclaw faq-list max-w 4xl 居中) */}
+        <div className="space-y-3 max-w-4xl mx-auto">
           {d.faqs.map((f, i) => {
             const isOpen = openIdx === i;
             return (
-              <div key={i} className="bg-white rounded-xl border border-gray-200 overflow-hidden">
+              <div
+                key={i}
+                className={`bg-white rounded-xl border ${isOpen ? 'border-[#F87314]' : 'border-[#E5E7EB]'} overflow-hidden transition-colors`}
+              >
                 <button
                   type="button"
                   aria-expanded={isOpen}
                   onClick={() => setOpenIdx(isOpen ? -1 : i)}
-                  className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left font-bold text-gray-900 hover:bg-gray-50 transition-colors"
+                  className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left font-bold text-[#111827] hover:bg-gray-50 transition-colors"
                 >
                   <span className="text-base md:text-lg">{f.q}</span>
                   <span
-                    className={`w-7 h-7 flex items-center justify-center rounded-full bg-[#F87314] text-white text-xl leading-none transition-transform ${isOpen ? 'rotate-45' : ''}`}
+                    className={`w-7 h-7 flex items-center justify-center rounded-full bg-[#F87314] text-white text-xl leading-none transition-transform flex-none ${isOpen ? 'rotate-45' : ''}`}
                     aria-hidden="true"
                   >
                     +
                   </span>
                 </button>
                 {isOpen && (
-                  <div className="px-5 pb-5 text-sm md:text-base text-gray-700 leading-relaxed border-t border-gray-100 pt-4">
+                  <div className="px-5 pb-5 text-sm md:text-base text-[#6B7280] leading-[1.7] border-t border-[#E5E7EB] pt-4">
                     {f.a}
                   </div>
                 )}

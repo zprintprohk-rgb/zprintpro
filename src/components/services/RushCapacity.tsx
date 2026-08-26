@@ -1,126 +1,126 @@
-// 2026-08-26 K3 brief §S4: 产能信任区(车间图 + 数据浮层)
-// 来源: deliverable-A-rush-page.html S4 + rush-nextjs-component-map.md
-// F0 红线: 不删 SKU/文案,只新增车间图区
-// 工厂图已就位: public/images/factory/factory-heidelberg.webp + factory-hpindigo.webp
+// 2026-08-26 K3 15:20 拍板 (autoclaw 设计稿 1120px 容器 + 内容集中 + 设计美学): 修复 6f74771 容器太宽
+// 改动: max-w 1320 → 1120, 4 数据卡 grid-cols-3 md:grid-cols-4 集中, 2 工厂图 aspect-ratio 限
 
 import type { Locale } from '@/lib/seo';
 
-type Props = {
-  locale: Locale;
-};
+type Props = { locale: Locale };
 
-const t = (locale: Locale) => {
+const i18n = (locale: Locale) => {
   const dict = {
     'zh-hk': {
-      title: '智印港產能保障',
-      subtitle: '深圳龍崗自營工廠 · 4 條柯式生產線 · 2 條 HP Indigo 數碼線',
-      heidelberg: '海德堡 Speedmaster 6+1',
-      heidelbergDesc: '德國原裝六色柯式印刷機 + 連線水性上光,海報/畫冊/包裝盒通用',
-      hpindigo: 'HP Indigo 15K',
-      hpindigoDesc: 'B2 高清超級白墨數碼印刷,小批量急件 100 張起 2 小時出貨',
-      stat1: '15',
-      stat1Unit: '年印刷經驗',
-      stat2: '1,200+',
-      stat2Unit: '企業長期客戶',
-      stat3: '24h',
-      stat3Unit: '急件承諾',
-      stat4: '12',
-      stat4Unit: '大行業全覆蓋',
+      eyebrow: '自有產能',
+      h2: '自營工廠直印，不經中介，交期自己話事',
+      lead: '印刷、後工、分揀、出貨全部喺自己廠房完成。通宵班次專為即日急件開機，唔使等外判，先至敢同你講「聽日中午前到」。',
+      stats: [
+        { v: '15', u: '年', label: '本地印刷經驗' },
+        { v: '1,200+', u: '', label: '企業長期客戶' },
+        { v: '24h', u: '', label: '急件承諾' },
+        { v: '12', u: '', label: '大行業全覆蓋' },
+      ],
+      fig1Title: '海德堡 Speedmaster 6+1',
+      fig1Desc: '德國原裝六色柯式印刷機 + 連線水性上光，海報/畫冊/包裝盒通用',
+      fig2Title: 'HP Indigo 15K',
+      fig2Desc: 'B2 高清超級白墨數碼印刷機，小批量急件 100 張起 2 小時出貨',
     },
     en: {
-      title: 'ZprintPro Production Capacity',
-      subtitle: 'Self-operated Shenzhen factory · 4 offset lines · 2 HP Indigo digital lines',
-      heidelberg: 'Heidelberg Speedmaster 6+1',
-      heidelbergDesc: 'German 6-color offset + inline aqueous coating for posters, booklets, packaging',
-      hpindigo: 'HP Indigo 15K',
-      hpindigoDesc: 'B2 high-definition digital press with white ink, 100+ MOQ rush 2-hour ready',
-      stat1: '15',
-      stat1Unit: 'Years in Printing',
-      stat2: '1,200+',
-      stat2Unit: 'Enterprise Clients',
-      stat3: '24h',
-      stat3Unit: 'Rush SLA',
-      stat4: '12',
-      stat4Unit: 'Industries Served',
+      eyebrow: 'In-house Capacity',
+      h2: 'In-house factory direct, no middleman, schedule on our terms',
+      lead: 'Printing, finishing, sorting and shipping all done in our own factory. Overnight shift dedicated for rush orders — no outsourcing, so we confidently promise next-day noon delivery.',
+      stats: [
+        { v: '15', u: 'yrs', label: 'Local print experience' },
+        { v: '1,200+', u: '', label: 'Long-term enterprise clients' },
+        { v: '24h', u: '', label: 'Rush SLA' },
+        { v: '12', u: '', label: 'Industries served' },
+      ],
+      fig1Title: 'Heidelberg Speedmaster 6+1',
+      fig1Desc: 'German 6-color offset press with inline aqueous coating, for posters, booklets, packaging',
+      fig2Title: 'HP Indigo 15K',
+      fig2Desc: 'B2 high-definition digital press with white ink, 100+ MOQ rush 2-hour ready',
     },
     ja: {
-      title: 'ZprintPro 生産能力',
-      subtitle: '深圳龍崗自社工場 · オフセット 4 ライン · HP Indigo デジタル 2 ライン',
-      heidelberg: 'ハイデルベルク Speedmaster 6+1',
-      heidelbergDesc: 'ドイツ製 6 色オフセット + 連線水性コート,ポスター/冊子/包装対応',
-      hpindigo: 'HP Indigo 15K',
-      hpindigoDesc: 'B2 高精細スーパーホワイトインク,小ロット 100 枚〜 2 時間出荷',
-      stat1: '15',
-      stat1Unit: '印刷実績年数',
-      stat2: '1,200+',
-      stat2Unit: '法人顧客',
-      stat3: '24h',
-      stat3Unit: '特急 SLA',
-      stat4: '12',
-      stat4Unit: '対応業界',
+      eyebrow: '自社生産能力',
+      h2: '自社工場直接印刷、仲介なし、納期は自社で管理',
+      lead: '印刷・後加工・仕分け・出荷すべて自社工場で対応。徹夜シフトで当日特急専用、外注待ちなし。だから「明朝午前中お届け」を自信を持って約束。',
+      stats: [
+        { v: '15', u: '年', label: '印刷実績年数' },
+        { v: '1,200+', u: '', label: '法人顧客' },
+        { v: '24h', u: '', label: '特急 SLA' },
+        { v: '12', u: '', label: '対応業界' },
+      ],
+      fig1Title: 'ハイデルベルク Speedmaster 6+1',
+      fig1Desc: 'ドイツ製 6 色オフセット印刷機 + 連線水性コート，ポスター/冊子/包装対応',
+      fig2Title: 'HP Indigo 15K',
+      fig2Desc: 'B2 高精細スーパーホワイトインクデジタル印刷機，小ロット 100 枚〜 2 時間出荷',
     },
   } as const;
   return dict[locale];
 };
 
 export default function RushCapacity({ locale }: Props) {
-  const d = t(locale);
+  const d = i18n(locale);
   return (
     <section
-      className="mb-8 md:mb-12 rounded-2xl overflow-hidden"
+      className="py-[104px] overflow-hidden text-white"
       style={{ background: '#0F1F3D' }}
+      aria-label="自有工廠產能"
       data-section="rush-capacity"
     >
-      <div className="px-6 md:px-10 py-10 md:py-14">
-        <h2 className="text-2xl md:text-3xl font-bold text-white mb-2">{d.title}</h2>
-        <p className="text-sm md:text-base text-blue-100 mb-8 max-w-3xl">{d.subtitle}</p>
+      {/* 1120px 容器 (autoclaw .wrap 模式, 居中, padding 0 24px) */}
+      <div className="max-w-[1120px] mx-auto px-6 grid grid-cols-1 md:grid-cols-[1.05fr_0.95fr] gap-10 md:gap-16 items-center">
+        <div>
+          <p className="text-[#7EA6FF] text-[13px] font-semibold tracking-[.12em] uppercase mb-3">{d.eyebrow}</p>
+          <h2 className="text-[clamp(26px,3.4vw,38px)] font-extrabold mt-3 mb-0 leading-[1.2] tracking-tight">
+            {d.h2}
+          </h2>
+          <p className="text-white/85 mt-[18px] text-[17px] leading-[1.8]">{d.lead}</p>
 
-        {/* 4 项数据浮层 */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-          {[
-            { v: d.stat1, u: d.stat1Unit },
-            { v: d.stat2, u: d.stat2Unit },
-            { v: d.stat3, u: d.stat3Unit },
-            { v: d.stat4, u: d.stat4Unit },
-          ].map((s, i) => (
-            <div
-              key={i}
-              className="rounded-xl bg-white/5 backdrop-blur-sm border border-white/10 p-4 text-center"
-            >
-              <div className="text-2xl md:text-3xl font-extrabold text-[#F87314]">{s.v}</div>
-              <div className="text-xs md:text-sm text-blue-100 mt-1">{s.u}</div>
-            </div>
-          ))}
+          {/* 4 数据浮层 (autoclaw cap-metrics: 3 列 grid 紧贴 1px line) */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-[18px] mt-9">
+            {d.stats.map((s, i) => (
+              <div key={i} className="border-t border-white/20 pt-4">
+                <div className="text-[30px] font-extrabold text-[#F87314] leading-none">
+                  {s.v}
+                  {s.u && <span className="text-base font-bold ml-1">{s.u}</span>}
+                </div>
+                <div className="text-white/70 text-[13.5px] mt-1">{s.label}</div>
+              </div>
+            ))}
+          </div>
         </div>
 
-        {/* 2 张设备图 */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <figure className="rounded-xl overflow-hidden bg-black/30">
+        <div className="grid gap-[18px]">
+          <figure className="relative rounded-2xl overflow-hidden aspect-[1200/472] shadow-[0_24px_60px_rgba(0,0,0,0.4)]">
             <img
               src="/images/factory/factory-heidelberg.webp"
-              alt={`${d.heidelberg}-智印港 ZprintPro`}
-              width={1200}
-              height={845}
-              loading="lazy"
-              className="w-full h-48 md:h-64 object-cover"
-            />
-            <figcaption className="px-4 py-3 text-white">
-              <div className="font-bold text-sm md:text-base">{d.heidelberg}</div>
-              <div className="text-xs text-blue-100 mt-1">{d.heidelbergDesc}</div>
-            </figcaption>
-          </figure>
-          <figure className="rounded-xl overflow-hidden bg-black/30">
-            <img
-              src="/images/factory/factory-hpindigo.webp"
-              alt={`${d.hpindigo}-智印港 ZprintPro`}
+              alt={`即日印刷-${d.fig1Title}-智印港 ZprintPro`}
               width={1200}
               height={472}
               loading="lazy"
-              className="w-full h-48 md:h-64 object-cover"
+              className="w-full h-full object-cover"
+              style={{ filter: 'brightness(0.85)' }}
             />
-            <figcaption className="px-4 py-3 text-white">
-              <div className="font-bold text-sm md:text-base">{d.hpindigo}</div>
-              <div className="text-xs text-blue-100 mt-1">{d.hpindigoDesc}</div>
+            <figcaption className="absolute inset-x-0 bottom-0 px-[22px] py-[22px] text-[13px] text-white/85"
+              style={{ background: 'linear-gradient(180deg,transparent,rgba(10,20,40,.85))' }}
+            >
+              <div className="font-bold text-sm md:text-base">{d.fig1Title}</div>
+              <div className="text-xs mt-1">{d.fig1Desc}</div>
+            </figcaption>
+          </figure>
+          <figure className="relative rounded-2xl overflow-hidden aspect-[1200/472] shadow-[0_24px_60px_rgba(0,0,0,0.4)]">
+            <img
+              src="/images/factory/factory-hpindigo.webp"
+              alt={`即日印刷-${d.fig2Title}-智印港 ZprintPro`}
+              width={1200}
+              height={472}
+              loading="lazy"
+              className="w-full h-full object-cover"
+              style={{ filter: 'brightness(0.85)' }}
+            />
+            <figcaption className="absolute inset-x-0 bottom-0 px-[22px] py-[22px] text-[13px] text-white/85"
+              style={{ background: 'linear-gradient(180deg,transparent,rgba(10,20,40,.85))' }}
+            >
+              <div className="font-bold text-sm md:text-base">{d.fig2Title}</div>
+              <div className="text-xs mt-1">{d.fig2Desc}</div>
             </figcaption>
           </figure>
         </div>

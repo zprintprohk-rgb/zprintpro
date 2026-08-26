@@ -55,7 +55,7 @@ export default function RushTimeline({ locale }: Props) {
       aria-label="即日印刷時間軸"
       data-section="rush-timeline"
     >
-      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1120px] mx-auto px-6">
         <p className="inline-flex items-center gap-2 text-[#2873F5] text-[13px] font-semibold tracking-[.12em] uppercase mb-3">
           <span className="inline-block w-[22px] h-[2px] bg-[#F87314]" />
           {d.eyebrow}
