@@ -21,6 +21,7 @@ import { getProductMainImage } from '@/lib/product-image';
 import blogContentsZhHk from '@/data/blog-data/zh-hk.json';
 import blogContentsEn from '@/data/blog-data/en.json';
 import blogContentsJa from '@/data/blog-data/ja.json';
+import { notFound } from 'next/navigation';
 
 const blogContentsByLocale: Record<string, Record<string, { content: string }>> = {
   'zh-hk': blogContentsZhHk as Record<string, { content: string }>,
@@ -888,13 +889,7 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
   const post = getPostData(locale, params.slug);
 
   if (!post) {
-    return (
-      <main className="min-h-screen bg-gray-50 py-12">
-        <div className="max-w-[1320px] mx-auto px-4 text-center">
-          <h1 className="text-2xl font-bold text-[#333333]">Post not found</h1>
-        </div>
-      </main>
-    );
+    notFound();
   }
 
   const langPrefix = `${locale}/`;
