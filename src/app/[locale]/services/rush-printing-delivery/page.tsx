@@ -1,3 +1,8 @@
+// 2026-08-26 K3 brief 定稿: 8 Section 组装 + 工厂实拍 + 双必填表单 + 埋点 + JSON-LD 3 块
+// 来源: .cluster/rush-page-20260826/rush-nextjs-component-map.md
+// F0 红线 8/19 5 件套全部保留: Hero / GEO 答案块 / 4 节点时间轴 / 6 SKU 网格 / FAQ / 内部链接
+// 新增 4 段: RushCapacity / RushPriceTable / RushCtaForm / RushFloating
+
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import type { Metadata } from 'next';
@@ -7,6 +12,10 @@ import { JsonLd } from '@/components/JsonLd';
 import { generateWhatsAppLink } from '@/lib/whatsapp';
 import RushDeliveryGrid from '@/components/sections/RushDeliveryGrid';
 import RushDeliveryFAQ from '@/components/sections/RushDeliveryFAQ';
+import RushCapacity from '@/components/services/RushCapacity';
+import RushPriceTable from '@/components/services/RushPriceTable';
+import RushCtaForm from '@/components/services/RushCtaForm';
+import RushFloating from '@/components/services/RushFloating';
 
 export function generateStaticParams() {
   return [
@@ -73,6 +82,7 @@ export default function RushDeliveryPage({ params }: Props) {
 
   return (
     <main className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-12">
+      {/* JSON-LD 1/3: Service (现有) */}
       <JsonLd
         data={generateServiceJsonLd({
           serviceType: 'Rush Printing Service',
@@ -90,11 +100,67 @@ export default function RushDeliveryPage({ params }: Props) {
         })}
       />
 
-      {/* Hero Banner 占位区 - 方角 + 固定 440px (P0 雙 CTA 加高) */}
-      <section className="relative w-full h-[440px] rounded-none overflow-hidden mb-4">
-        {/* 渐变背景（占位，后续替换为真实图片） */}
-        <div className="absolute inset-0 bg-gradient-to-r from-red-600 via-orange-500 to-amber-400" />
-        
+      {/* JSON-LD 2/3: FAQPage (新增, 与现有 RushDeliveryFAQ 内容同源) */}
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: locale === 'zh-hk' ? [
+            { '@type': 'Question', name: '即日印刷最快幾耐到？', acceptedAnswer: { '@type': 'Answer', text: '每日 18:00 前落單並確認稿件,即安排通宵印刷,順豐翌日中午 12:00 前送到,亦支持港鐵站交收。' } },
+            { '@type': 'Question', name: '即日同普通件價錢差幾多？', acceptedAnswer: { '@type': 'Answer', text: '即日急件優先排產會有附加費,實際差價視乎品類同數量,WhatsApp 30 秒攞精準報價最準。' } },
+            { '@type': 'Question', name: '過咗 18:00 仲得唔得？', acceptedAnswer: { '@type': 'Answer', text: '過咗截單時間可以 WhatsApp 我哋盡力協調,視乎排產情況安排,唔一定保證翌日中午前到。' } },
+            { '@type': 'Question', name: '點樣收貨？', acceptedAnswer: { '@type': 'Answer', text: '順豐送貨上門或港鐵站交收都得,我哋冇門市自取,落單時揀啱收貨方式即可。' } },
+            { '@type': 'Question', name: '要準備咩文件？', acceptedAnswer: { '@type': 'Answer', text: 'PDF 或 AI 檔,300dpi,預留 3mm 出血位。唔熟排版可以 WhatsApp 我哋,免費幫你檢查稿件。' } },
+            { '@type': 'Question', name: '落單後可唔可以改稿？', acceptedAnswer: { '@type': 'Answer', text: '上機印刷前都可以免費改稿,開印後就冇得改,所以落單後請盡快確認最終版本。' } },
+          ] : locale === 'en' ? [
+            { '@type': 'Question', name: 'How fast is same-day printing?', acceptedAnswer: { '@type': 'Answer', text: 'Order before 6PM HKT and we arrange overnight printing. SF Express delivers before noon next day, or pick up at any MTR station.' } },
+            { '@type': 'Question', name: 'How much more is rush vs standard?', acceptedAnswer: { '@type': 'Answer', text: 'Rush priority production has a surcharge. Final delta depends on product and quantity. 30-second WhatsApp quote is the fastest way.' } },
+            { '@type': 'Question', name: 'Can I order after 6PM?', acceptedAnswer: { '@type': 'Answer', text: 'After cut-off please WhatsApp us, we will try to coordinate. Next-day-noon delivery is not guaranteed.' } },
+            { '@type': 'Question', name: 'How do I receive the order?', acceptedAnswer: { '@type': 'Answer', text: 'SF Express door-to-door or any MTR station. No self-pickup storefront.' } },
+            { '@type': 'Question', name: 'What files do I need?', acceptedAnswer: { '@type': 'Answer', text: 'PDF or AI, 300dpi, 3mm bleed. Not sure about layout? WhatsApp us for free file check.' } },
+            { '@type': 'Question', name: 'Can I change artwork after ordering?', acceptedAnswer: { '@type': 'Answer', text: 'Free revisions before printing. Once on press, no changes. Please confirm final version promptly.' } },
+          ] : [
+            { '@type': 'Question', name: '当日印刷の最短納期は？', acceptedAnswer: { '@type': 'Answer', text: '平日 18 時までのご注文で徹夜印刷、SF 翌朝 12 時前配送、または MTR 駅受取対応。' } },
+            { '@type': 'Question', name: '通常印刷との価格差は？', acceptedAnswer: { '@type': 'Answer', text: '特急割増料金あり。最終価格は商品と数量により異なります。WhatsApp 30 秒見積もりで確定。' } },
+            { '@type': 'Question', name: '18 時過ぎでも対応できますか？', acceptedAnswer: { '@type': 'Answer', text: '締切後は WhatsApp でご相談ください。状況により対応しますが翌日午前中配送は保証できません。' } },
+            { '@type': 'Question', name: '配送方法は？', acceptedAnswer: { '@type': 'Answer', text: 'SF 配送または MTR 駅受取。店舗受取は対応しておりません。' } },
+            { '@type': 'Question', name: '必要なデータは？', acceptedAnswer: { '@type': 'Answer', text: 'PDF または AI、300dpi、塗り足し 3mm。データ確認は WhatsApp で無料対応。' } },
+            { '@type': 'Question', name: '発注後のデータ変更は？', acceptedAnswer: { '@type': 'Answer', text: '印刷開始前なら無料修正可能。刷了後は変更不可。最終版を速やかにご確認ください。' } },
+          ],
+        }}
+      />
+
+      {/* JSON-LD 3/3: BreadcrumbList (新增, 深圳地址) */}
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: locale === 'zh-hk' ? '首頁' : locale === 'ja' ? 'ホーム' : 'Home', item: `https://zprintpro.com/${locale}/` },
+            { '@type': 'ListItem', position: 2, name: locale === 'zh-hk' ? '服務' : locale === 'ja' ? 'サービス' : 'Services', item: `https://zprintpro.com/${locale}/services/` },
+            { '@type': 'ListItem', position: 3, name: locale === 'zh-hk' ? '即日印刷' : locale === 'ja' ? '当日印刷' : 'Rush Printing', item: `https://zprintpro.com/${locale}/services/rush-printing-delivery/` },
+          ],
+        }}
+      />
+
+      {/* Hero Banner - 方角 + 固定 440px (P0 雙 CTA 加高) + 工厂实拍 (2026-08-26 brief) */}
+      <section
+        className="relative w-full h-[440px] rounded-none overflow-hidden mb-4"
+        data-section="rush-hero"
+      >
+        {/* 工厂实拍背景 (取代原有渐变占位, K3 brief 8/26) */}
+        <img
+          src="/images/factory/factory-hero.webp"
+          alt={`即日印刷-${locale === 'zh-hk' ? '海德堡印刷機實拍' : locale === 'ja' ? 'ハイデルベルク印刷機実写' : 'Heidelberg press real shot'}-智印港 ZprintPro`}
+          width={1600}
+          height={1127}
+          fetchPriority="high"
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{ filter: 'brightness(0.42)' }}
+        />
+        {/* preload 提示 (Next.js Image 替代) */}
+        <link rel="preload" as="image" href="/images/factory/factory-hero.webp" />
+
         {/* 内容层 */}
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
           <span className="bg-white/20 backdrop-blur-sm px-4 py-1 rounded-full text-sm font-bold mb-4">
@@ -120,12 +186,18 @@ export default function RushDeliveryPage({ params }: Props) {
               })}
               target="_blank"
               rel="noopener noreferrer"
+              data-event="whatsapp_click"
+              data-source="rush-hero"
+              data-locale={locale}
               className="bg-white text-red-600 font-bold px-6 py-3 rounded-lg hover:bg-gray-100 transition-colors shadow-lg flex items-center justify-center gap-2"
             >
               💬 {locale === 'zh-hk' ? 'WhatsApp 確認趕單' : locale === 'en' ? 'WhatsApp Confirm Rush' : 'WhatsApp で急行確認'}
             </a>
             <Link
               href={`/${locale}/quote/`}
+              data-event="form_open"
+              data-source="rush-hero"
+              data-locale={locale}
               className="bg-white/10 backdrop-blur-sm border-2 border-white text-white font-bold px-6 py-3 rounded-lg hover:bg-white/20 transition-colors flex items-center justify-center"
             >
               {locale === 'zh-hk' ? '查看價格並下單' : locale === 'en' ? 'View Price & Order' : '価格確認・注文'}
@@ -140,7 +212,7 @@ export default function RushDeliveryPage({ params }: Props) {
       {/* 面包屑由 layout.tsx / BreadcrumbNav 统一生成，page.tsx 内不重复 */}
 
       {/* GEO 答案块 */}
-      <section className="mb-4">
+      <section className="mb-4" data-section="rush-geo">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">{title}</h1>
         {/* 2026-08-19 R3 即日印刷 5 件套 - 40-60 字 Featured Snippet 块 */}
         <p className="text-base md:text-lg text-[#1A56DB] font-medium bg-[#F0F7FF] border-l-4 border-[#2873F5] px-4 py-3 mb-4 rounded-r">
@@ -169,7 +241,7 @@ export default function RushDeliveryPage({ params }: Props) {
       </section>
 
       {/* 时间轴 - 4个节点均匀分布在1000px容器内 */}
-      <section className="mb-8 bg-gray-50 rounded-xl p-6 md:p-8">
+      <section className="mb-8 bg-gray-50 rounded-xl p-6 md:p-8" data-section="rush-timeline">
         <div className="max-w-[1000px] mx-auto w-full px-4">
           <div className="flex justify-between items-start">
             {/* 节点1 */}
@@ -226,15 +298,24 @@ export default function RushDeliveryPage({ params }: Props) {
         </div>
       </section>
 
-      {/* 6 个 SKU 网格 */}
+      {/* 6 个 SKU 网格 (F0 保留) */}
       <RushDeliveryGrid locale={locale} />
 
-      {/* FAQ */}
+      {/* S4 新增: 产能信任区 (车间图 + 数据浮层) */}
+      <RushCapacity locale={locale} />
+
+      {/* S5 新增: 價格速查表 */}
+      <RushPriceTable locale={locale} />
+
+      {/* FAQ (F0 保留) */}
       <RushDeliveryFAQ locale={locale} />
 
-      {/* 2026-08-19 R3 即日印刷 5 件套 - Last Updated + 内部链接 */}
+      {/* S7 新增: 双必填表单 */}
+      <RushCtaForm locale={locale} />
+
+      {/* 2026-08-19 R3 即日印刷 5 件套 - Last Updated + 内部链接 (F0 保留) */}
       <section className="mt-12 pt-6 border-t border-gray-200 text-sm text-gray-500">
-        <p className="mb-3"><strong>最後更新：</strong>2026 年 8 月 19 日 · 智印港 ZprintPro（彩龍印刷旗下）</p>
+        <p className="mb-3"><strong>最後更新：</strong>2026 年 8 月 26 日 · 智印港 ZprintPro（彩龍印刷旗下）</p>
         <p className="mb-2"><strong>相關服務：</strong></p>
         <ul className="space-y-1 list-disc list-inside">
           <li><a href="/zh-hk/category/posters/" className="text-[#2873F5] hover:underline">海報印刷</a> · A1/A2 即日速遞，順豐港九新界翌日中午到</li>
@@ -244,6 +325,9 @@ export default function RushDeliveryPage({ params }: Props) {
           <li><a href="/zh-hk/category/calendars/" className="text-[#2873F5] hover:underline">月曆印刷</a> · 2027 掛曆 9 月開學季企業定制起量</li>
         </ul>
       </section>
+
+      {/* S8 新增: 浮动元素 (桌面右下 + 移动底部) */}
+      <RushFloating locale={locale} />
     </main>
   );
 }
