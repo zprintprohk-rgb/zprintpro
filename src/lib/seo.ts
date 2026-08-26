@@ -414,8 +414,8 @@ const categorySeoData: Record<string, {
     titles: {
       // 2026-07-17 GSC CTR 修复: 机会词 海報印刷/印海報 前置
       'zh-hk': '海報印刷 A0/A1/A2 + MTR 12 sheet 燈箱 | 防水 + 1張起印 + 4小時打稿 | 智印港',
-      'en': '2 Meter Poster Printing + A0-A2 + Waterproof UV + Same-Day Rush | from $3.50 + 1 MOQ + Free Proof | ZprintPro',
-      'ja': '2�������� ポスター印刷 + A0/A1/A2 + 防水UV + 短納期 | 1枟～MTR 12 sheet 燈箱対応 | ZprintPro',
+      'en': '2 Meter Poster Printing A0-A2 UV Rush | ZprintPro',
+      'ja': '2メートル ポスター印刷 A0/A1/A2 防水UV 短納期 | ZprintPro',
     },
     keywords: {
       'zh-hk': '海報印刷,印海報,A2 prints,a1 海報,海報訂製,防水海報,相紙海報,展覽海報,活動海報,店舖海報,餐廳海報,電影海報,演唱會海報,裝飾海報,大圖輸出',
@@ -433,7 +433,7 @@ const categorySeoData: Record<string, {
       // 2026-08-26 §6 轨 1 + 智印港 40% CTR 公式 + 撞墙 = M3 自主立即做
       // 9 月中前纸袋衝首页 (GSC 8/24 紙袋印刷 pos 12.23/14.77 距首页 2-5 位)
       // 2026-08-26 K3 批 1: 注入「急單 18:00 截單」+ パール/珠光
-      'zh-hk': '紙袋印刷 100個起 + 牛皮/白卡/珠光 + 急單 18:00 截單 | HK$8起・美妝護膚・餐廳外賣・免費設計 | 智印港 ZprintPro',
+      'zh-hk': '紙袋印刷 100個起 + 牛皮/白卡 + 急單 18:00 截單 | HK$8起・免費設計 | 智印港',
       en: 'Paper Bag Printing 100 MOQ + Kraft/White Card/Pearl + Rush 6PM Cut-off | from $1.84 + Free Design + Made for USA | ZprintPro',
       ja: '紙袋印刷 100個〜 + クラフト/白カード/パール + 短納期 18:00 締切 | ¥240〜・無料デザイン・日本全国 | ZprintPro',
     },
@@ -487,7 +487,7 @@ const categorySeoData: Record<string, {
   'envelopes': {
     // 2026-08-26 K3 批 1 十五词 (大信封 pos 2.21 第 1 优先) + 信封顏色/彩色信封/信封 封面 + Pearl Envelopes + China Price Quote + 大型封筒 注入
     titles: {
-      'zh-hk': '大信封印刷 A4/C4/C5 規格 + 起價表 | 100個起印・公文信封・牛皮・開窗・彩色信封・WhatsApp 30秒報價 | 智印港',
+      'zh-hk': '大信封印刷 A4/C4/C5 規格 + 起價表 | 100個起印・牛皮・開窗 | 智印港',
       en: 'Pearl Envelopes Printing 100 MOQ + Custom Color + China Envelope Printing Price Quote + DHL Global | ZprintPro',
       ja: '大型封筒 印刷 A2/B4 + C4/C5/DL/クラフト/窓付き/カラー/企業ロゴ | 100枚〜・ISO認証・DHL全国 | ZprintPro',
     },
