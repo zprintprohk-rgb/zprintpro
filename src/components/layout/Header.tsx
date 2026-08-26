@@ -474,15 +474,6 @@ export function Header({ locale }: HeaderProps) {
 
               <Link href={`${localePrefix}/contact/`} className={navLinkClass(pathname.includes('/contact'))}>{t.contact}</Link>
 
-              {/* 2026-08-26 K3 拍板 (推翻 2026-07-09 SEO 复盘): 加回 nav 入口
-                  rush 页不再是 SEO 孤岛, 跟 Contact 同样 navLinkClass 风格
-                  3 locale 文案: zh-hk 即日急件 / en Rush Delivery / ja 当日急行 */}
-              <Link
-                href={`${localePrefix}/services/rush-printing-delivery/`}
-                className={navLinkClass(pathname.includes('/services/rush-printing-delivery'))}
-              >
-                {locale === 'zh-hk' ? '即日急件' : locale === 'ja' ? '当日急行' : 'Rush Delivery'}
-              </Link>
             </div>
           </div>
         </nav>
