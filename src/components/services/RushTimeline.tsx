@@ -1,6 +1,5 @@
-// 2026-08-26 K3 拍板 (gap-closure-card §2 Step 1) — verbatim 转设计稿 L230-264
-// 4 时刻: 18:00 你落單 / 22:00 印刷完成 / 06:00 分揀包裝 / 翌日 12:00 你收貨
-// 验收 grep 钉死: 22:00 / 06:00 / 分揀包裝 ≥3
+// 2026-08-26 K3 拍板 (autoclaw 设计稿 verbatim 视觉优化): section 104px 大留白 + 4 时刻大字 + tl-step dot 14px ring 6px + tl-note 橙左条
+// 数据来源: .cluster/rush-page-20260826/deliverable-A-rush-page.html L231-264 + K3 15:09 上传附件
 
 import type { Locale } from '@/lib/seo';
 
@@ -51,30 +50,45 @@ const i18n = (locale: Locale) => {
 export default function RushTimeline({ locale }: Props) {
   const d = i18n(locale);
   return (
-    <section className="bg-[#F8FAFC] py-12 md:py-16" aria-label="即日印刷時間軸" data-section="rush-timeline">
+    <section
+      className="py-[104px] bg-white"
+      aria-label="即日印刷時間軸"
+      data-section="rush-timeline"
+    >
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-        <p className="inline-block bg-[#1A56DB] text-white text-xs font-bold px-3 py-1 rounded-full mb-3">{d.eyebrow}</p>
-        <h2 className="text-2xl md:text-4xl font-extrabold text-gray-900 mb-8 md:mb-12">
+        <p className="inline-flex items-center gap-2 text-[#2873F5] text-[13px] font-semibold tracking-[.12em] uppercase mb-3">
+          <span className="inline-block w-[22px] h-[2px] bg-[#F87314]" />
+          {d.eyebrow}
+        </p>
+        <h2 className="text-[clamp(26px,3.4vw,40px)] font-extrabold mt-3 mb-12 max-w-[640px] leading-[1.2] tracking-tight text-[#111827]">
           {d.h2a}<em className="not-italic text-[#F87314]">{d.h2em}</em>
         </h2>
 
-        <div className="relative grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-0">
           {d.steps.map((s, i) => (
-            <div key={i} className="relative flex flex-col items-center text-center">
-              {/* 橙圆点 (设计稿 L239/244/249/254) */}
+            <div
+              key={i}
+              className="relative pt-7 px-5 pb-2 text-left"
+            >
+              {/* dot 14px + 6px ring 橙色 (autoclaw design) */}
               <span
-                className="w-4 h-4 rounded-full bg-[#F87314] mb-3 ring-4 ring-orange-100"
+                className="absolute top-7 left-5 w-[14px] h-[14px] rounded-full bg-[#F87314] z-[2]"
+                style={{ boxShadow: '0 0 0 6px #FEF1E6' }}
                 aria-hidden="true"
               />
-              <div className="text-sm font-bold text-gray-500 uppercase tracking-wider">
-                <small className="block text-xs">{s.t}</small>
-                <span className="text-2xl md:text-3xl font-extrabold text-gray-900 block mt-1">{s.time}</span>
+              {/* 数字大字 (clamp 26-38px, font-weight 800) */}
+              <div className="mt-4 mb-1 text-[clamp(26px,3vw,38px)] font-extrabold text-[#111827] tracking-[-.02em] leading-none">
+                <small className="block text-[13px] font-semibold text-[#F87314] tracking-[.08em] mb-1">
+                  {s.t}
+                </small>
+                {s.time}
               </div>
-              <p className="text-sm text-gray-700 mt-2 whitespace-pre-line leading-relaxed">{s.d}</p>
-              {/* 箭头 (设计稿 L258-260) — 仅在 md+ 显示, 移动端纵向隐藏 */}
+              <p className="text-[#6B7280] text-[15px] leading-[1.6] whitespace-pre-line">{s.d}</p>
+
+              {/* 箭头 (autoclaw design — 节点右侧, 灰色) */}
               {i < d.steps.length - 1 && (
                 <svg
-                  className="hidden md:block absolute top-2 -right-2 w-6 h-6 text-[#F87314] z-10"
+                  className="hidden md:block absolute top-[30px] -right-[14px] z-[3] text-[#D1D5DB]"
                   width="30"
                   height="30"
                   viewBox="0 0 24 24"
@@ -92,7 +106,13 @@ export default function RushTimeline({ locale }: Props) {
           ))}
         </div>
 
-        <p className="mt-8 text-sm md:text-base text-gray-600 text-center">{d.note}</p>
+        {/* tl-note 橙左条 + bg-orange-light (autoclaw design) */}
+        <div
+          className="mt-11 px-[22px] py-[18px] rounded-r-xl text-[#7c3e10] text-[15px] font-medium border-l-4 border-[#F87314]"
+          style={{ background: '#FEF1E6' }}
+        >
+          {d.note}
+        </div>
       </div>
     </section>
   );

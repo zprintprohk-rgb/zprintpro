@@ -1,6 +1,5 @@
-// 2026-08-26 K3 拍板 (gap-closure-card §2 Step 1) — verbatim 转设计稿 L266-311
-// 6 场景卡: 展會物料 / 投標文件 / 活動海報 / 開業傳單 / 易拉寶急單 / 貼紙急單
-// 验收 grep 钉死: 展會物料 / 投標文件 / 開業傳單 ≥3
+// 2026-08-26 K3 拍板 (autoclaw 设计稿 verbatim 视觉优化): section 104px + sc-card 34px 28px padding + 52x52 蓝底白字 icon + promise pill
+// 数据来源: .cluster/rush-page-20260826/deliverable-A-rush-page.html L266-311 + K3 15:09 上传附件
 
 import type { Locale } from '@/lib/seo';
 
@@ -54,27 +53,53 @@ const i18n = (locale: Locale) => {
 export default function RushScenarios({ locale }: Props) {
   const d = i18n(locale);
   return (
-    <section className="py-12 md:py-16" aria-label="即日印刷適用場景" data-section="rush-scenarios">
+    <section
+      className="py-[104px] bg-[#F9FAFB]"
+      aria-label="即日印刷適用場景"
+      data-section="rush-scenarios"
+    >
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-        <p className="inline-block bg-[#1A56DB] text-white text-xs font-bold px-3 py-1 rounded-full mb-3">{d.eyebrow}</p>
-        <h2 className="text-2xl md:text-4xl font-extrabold text-gray-900 mb-2">{d.h2}</h2>
-        <p className="text-base md:text-lg text-gray-600 mb-8 md:mb-12 max-w-3xl">{d.sub}</p>
+        <p className="inline-flex items-center gap-2 text-[#2873F5] text-[13px] font-semibold tracking-[.12em] uppercase mb-3">
+          <span className="inline-block w-[22px] h-[2px] bg-[#F87314]" />
+          {d.eyebrow}
+        </p>
+        <h2 className="text-[clamp(26px,3.4vw,40px)] font-extrabold mt-3 mb-2 text-[#111827] leading-[1.2] tracking-tight">
+          {d.h2}
+        </h2>
+        <p className="text-[#6B7280] max-w-[560px] mb-14 text-base md:text-lg leading-[1.6]">{d.sub}</p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[22px]">
           {d.cards.map((c) => (
             <article
               key={c.title}
-              className="rounded-2xl bg-white border border-gray-200 p-6 hover:border-[#F87314] hover:shadow-lg transition-all"
+              className="bg-white border border-[#E5E7EB] rounded-2xl p-[34px] sm:p-7 hover:border-[#F87314] hover:shadow-[0_10px_30px_rgba(17,24,39,0.08)] transition-all"
+              style={{ boxShadow: '0 10px 30px rgba(17,24,39,.06)' }}
             >
-              {/* 26×26 内联 SVG (设计稿 L274/280/286/292/298/304) — 通用 building icon 简化示意 */}
-              <div className="w-12 h-12 rounded-lg bg-orange-50 text-[#F87314] flex items-center justify-center mb-4">
-                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-                  <path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6" />
+              {/* 52x52 蓝底白字 icon (autoclaw design — 醒目不刺眼) */}
+              <div
+                className="w-[52px] h-[52px] rounded-[14px] bg-[#2873F5] flex items-center justify-center text-white mb-5"
+              >
+                <svg
+                  width="26"
+                  height="26"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.8"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  aria-hidden="true"
+                >
+                  <path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M9 10h.01M15 10h.01M9 14h.01M15 14h.01" />
                 </svg>
               </div>
-              <h3 className="text-lg md:text-xl font-bold text-gray-900 mb-2">{c.title}</h3>
-              <p className="text-sm md:text-base text-gray-600 mb-4 leading-relaxed">{c.desc}</p>
-              <span className="inline-block text-xs font-bold text-[#F87314] bg-orange-50 px-3 py-1.5 rounded-full">
+              <h3 className="text-xl font-bold text-[#111827] leading-[1.2] mb-2">{c.title}</h3>
+              <p className="text-[14.5px] text-[#6B7280] mt-2 leading-[1.6]">{c.desc}</p>
+              {/* promise pill (border-radius 99px, 橙底橙字) */}
+              <span
+                className="inline-flex items-center gap-[7px] mt-4 text-[14px] font-bold text-[#F87314] px-[14px] py-[7px] rounded-full"
+                style={{ background: '#FEF1E6' }}
+              >
                 ✓ {c.promise}
               </span>
             </article>
