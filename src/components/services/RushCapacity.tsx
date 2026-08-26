@@ -66,8 +66,8 @@ export default function RushCapacity({ locale }: Props) {
       data-section="rush-capacity"
     >
       {/* 1120px 容器 (autoclaw .wrap 模式, 居中, padding 0 24px) */}
-      <div className="max-w-[1120px] mx-auto px-6 grid grid-cols-1 md:grid-cols-[1.05fr_0.95fr] gap-10 md:gap-16 items-center">
-        <div>
+      <div className="max-w-[1120px] mx-auto px-6 grid grid-cols-1 md:grid-cols-[0.75fr_1.25fr] gap-8 md:gap-12 items-center">
+        <div className="max-w-[440px]">
           <p className="text-[#7EA6FF] text-[13px] font-semibold tracking-[.12em] uppercase mb-3">{d.eyebrow}</p>
           <h2 className="text-[clamp(26px,3.4vw,38px)] font-extrabold mt-3 mb-0 leading-[1.2] tracking-tight">
             {d.h2}
@@ -89,7 +89,7 @@ export default function RushCapacity({ locale }: Props) {
         </div>
 
         <div className="grid gap-[18px]">
-          <figure className="relative rounded-2xl overflow-hidden aspect-[1200/472] shadow-[0_24px_60px_rgba(0,0,0,0.4)]">
+          <figure className="relative rounded-2xl overflow-hidden aspect-[1020/472] shadow-[0_24px_60px_rgba(0,0,0,0.4)]">
             <img
               src="/images/factory/factory-heidelberg.webp"
               alt={`即日印刷-${d.fig1Title}-智印港 ZprintPro`}
@@ -106,7 +106,7 @@ export default function RushCapacity({ locale }: Props) {
               <div className="text-xs mt-1">{d.fig1Desc}</div>
             </figcaption>
           </figure>
-          <figure className="relative rounded-2xl overflow-hidden aspect-[1200/472] shadow-[0_24px_60px_rgba(0,0,0,0.4)]">
+          <figure className="relative rounded-2xl overflow-hidden aspect-[1020/472] shadow-[0_24px_60px_rgba(0,0,0,0.4)]">
             <img
               src="/images/factory/factory-hpindigo.webp"
               alt={`即日印刷-${d.fig2Title}-智印港 ZprintPro`}
