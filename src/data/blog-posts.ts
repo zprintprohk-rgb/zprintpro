@@ -1592,6 +1592,29 @@ const lpMonthlyCalendarPrinting2027: BlogPostMeta = {
   },
 };
 
+// 2026-08-27 K3 拍板 W1 #3: 大信封 C4/C5 規格 + 起價表 (B1a 已改 title, GSC 8/26 大信封 pos 2.21 24 imps 0 click 攻堅首頁)
+// 9 段 + 4 FAQ + 5 内部链接 + 3 locale native, 100 個起印 HK$0.5/個, ISO 269 + 紹興市政府框架協議 + 4,200 急件 14h + 18:00 截單翌日 12:00
+const lpLargeEnvelopePrinting: BlogPostMeta = {
+  slug: 'large-envelope-printing-c4-c5',
+  categoryKey: 'printing',
+  source: 'daily',
+  date: '2026-08-27',
+  title: {
+    'zh-hk': '大信封印刷 C4/C5 規格 + 100 個起 HK$0.5/個起 + 即日急件 | 智印港 ZprintPro',
+    en: 'Large Envelope Printing C4/C5 Specs + 100 MOQ from HK$0.5/pc + Same-Day Rush | ZprintPro',
+    ja: '大型封筒印刷 C4/C5 規格 + 100 個〜 HK$0.5/個〜 + 当日特急 | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '大信封 (C4/C5) 印刷 100 個起印 HK$0.5/個起, C4 (229×324mm) 500 個 HK$0.8-1.5/個, C5 500 個 HK$0.5-0.7/個, DL 500 個 HK$0.35-0.55/個. ISO 269 國際標準 + 2026 紹興市政府框架協議 + 4,200 張急件 14 小時 + 18:00 截單翌日 12:00 順豐 + DHL 2-4 天跨境. 5 大場景 + 4 條 FAQ + 5 條內部連結, 30 秒 WhatsApp 報價.',
+    en: 'Large envelope (C4/C5) printing 100 MOQ from HK$0.5/pc. C4 (229x324mm) 500 pcs HK$0.8-1.5/pc, C5 500 pcs HK$0.5-0.7/pc, DL 500 pcs HK$0.35-0.55/pc. ISO 269 standard + 2026 Shaoxing framework agreement + 4,200 rush orders 14h + 6 PM cut-off + DHL 2-4 days. 5 use cases + 4 FAQs + 5 internal links, 30s WhatsApp quote.',
+    ja: '大型封筒 (C4/C5) 印刷 100 個〜 HK$0.5/個〜. C4 (229×324mm) 500 個 HK$0.8-1.5/個, C5 500 個 HK$0.5-0.7/個, DL 500 個 HK$0.35-0.55/個. ISO 269 国際規格 + 2026 紹興市政府枠組協定 + 4,200 件特急 14 時間 + 18:00 締切翌日 12:00 順豐 + DHL 2-4 日越境. 5 シーン + 4 FAQ + 5 内部リンク, 30 秒 WhatsApp 見積.',
+  },
+  targetKeywords: {
+    primary: '大信封印刷',
+    secondary: ['信封 印刷', 'C4 信封', 'C5 信封', 'DL 信封', '信封 規格', 'envelope printing', '封筒印刷', 'C4 封筒'],
+  },
+};
+
 export const blogPosts: BlogPostMeta[] = [
   // Buying guides (9)
   bgBusinessCard,
@@ -1716,6 +1739,8 @@ export const blogPosts: BlogPostMeta[] = [
     lpPackagingBoxPricing2026,
   // 2026-08-26 K3 拍板 W3 月曆首位 (R5 9/15 硬截止): 2027 月曆印刷攻略
   lpMonthlyCalendarPrinting2027,
+  // 2026-08-27 K3 拍板 W1 #3: 大信封 C4/C5 規格 + 起價表 (B1a 已改 title, GSC 8/26 pos 2.21 24 imps 0 click 攻堅首頁)
+  lpLargeEnvelopePrinting,
 ];
 
 // =============================================================================
