@@ -1023,6 +1023,83 @@ if (locale === 'zh-hk') {
 
 **应用范围**：每次 en 美国类目/产品/Hero/H1/description 改动前必跑 30 分钟模板 → commit message 引用模板结论。
 
+## §0.26 ⛔ 文件系统访问限制 (2026-08-28 04:53 K3 拍板 · 最高优先级, 跨项目 P0)
+
+> **核心**: Mavis (M3) 只能在根目录文件夹 (F:\zprintpro-nextjs) 读取文件. 跨项目到根目录外读取文件, **必须遵守以下规则**. 违反 = 撞墙升级 (§0.22 第 2 款), K3 必拍 1 次回复决策.
+>
+> **拍板来源**: K3 8/28 04:53 当前 turn 拍板 "你只能在你的根目录文件夹中读取文件, 如果要跨项目到根目录外读取文件, 需要遵守这条规则" + K3 8/28 05:09 当前 turn 拍板 "继续" = K3 必再拍 1 次回复决策 working tree 63 文件 (K3 8/28 03:56 撞墙升级).
+
+### §0.26.1 盘符访问矩阵 (K3 8/28 04:53 拍板, 跨项目 P0)
+
+| 盘符 / 路径 | 访问权限 | M3 必读规则 | 违反后果 |
+|------------|----------|------------|----------|
+| **C 盘目录** (`C:\*`) | ✅ **可以读取** | 无需 K3 同意, 自由读取 (含 `C:\Users\Administrator\.minimax\`, `C:\Users\Administrator\.hermes\`, `C:\Users\Administrator\AppData\`, 等) | 无 |
+| **F 盘 (根目录)** (`F:\zprintpro-nextjs\`) | ✅ **默认可读** (M3 workspace) | M3 当前 workspace, 自由读取/写入 | 无 |
+| **F 盘 (4 个敏感目录) 绝对不能读取** ❌ | ❌ **绝对不能读取** | (1) `F:/QQ存储文件夹` (2) `F:/抖音小店资料` (3) `F:/微信存储文件夹` (4) `F:/xwechat_files` | 🔴 **撞墙升级, K3 必拍 1 次回复决策** |
+| **F 盘 (其他目录)** | ⚠️ **可读, 写入需 K3 同意** | M3 workspace 外的 F 盘目录 (e.g. `F:/zprintpro-archive/`, `F:/hermes-other/`, 等) | 写入需 K3 拍板 |
+| **D 盘 (`D:\*`)** | ❌ **不能读取** | D 盘任何路径, M3 不能读取 (K3 8/28 04:53 拍板) | 🔴 **撞墙升级, K3 必拍 1 次回复决策** |
+| **E 盘 (`E:\*`)** | ❌ **不能读取** | E 盘任何路径, M3 不能读取 (K3 8/28 04:53 拍板) | 🔴 **撞墙升级, K3 必拍 1 次回复决策** |
+| **G 盘 (`G:\*`)** | ⚠️ **需要经得 K3 同意** | G 盘任何路径, M3 必先报告 K3 拍板 1 次回复, K3 拍板"OK 读"后 M3 才能读取 | 🔴 **撞墙升级, K3 必拍 1 次回复决策** |
+| **H 盘 (`H:\*`)** | ❌ **绝对不能读取, 也不能碰盘符** | H 盘任何路径, M3 不能读取, 不能 ls / 不能 Read / 不能 cat / 不能 grep | 🔴 **撞墙升级, K3 必拍 1 次回复决策** |
+
+### §0.26.2 跨项目读取 SOP (K3 8/28 04:53 拍板, 强制级)
+
+**核心 3 步** (任何跨项目读取必跑):
+1. **检查根目录**: 目标路径是否在 M3 workspace (`F:\zprintpro-nextjs\`) 内?
+   - ✅ 是 → 自由读取, 无需 K3 同意
+   - ❌ 否 → 跳到第 2 步
+2. **检查盘符**: 目标盘符 (C/D/E/F/G/H) 是什么?
+   - ✅ C 盘 → 自由读取, 无需 K3 同意
+   - ✅ F 盘 (4 个敏感目录) → ❌ 绝对不能读取, 撞墙升级
+   - ❌ D 盘 → 不能读取, 撞墙升级
+   - ❌ E 盘 → 不能读取, 撞墙升级
+   - ⚠️ G 盘 → M3 必先报告 K3 拍板 1 次回复, K3 拍板"OK 读"后 M3 才能读取
+   - ❌ H 盘 → 绝对不能读取, 也不能碰盘符 (不能 ls, 不能 Read, 不能 cat, 不能 grep)
+3. **报告 + 拍板**: 跨项目读取 C 盘外的任何文件前, M3 必:
+   - 在 turn 报告: "目标路径: `<path>`, 盘符: `<C/D/E/F/G/H>`, 用途: `<reason>`, 拍板请求: K3 必拍 1 次回复决策"
+   - K3 拍板 "OK 读" 后, M3 才能 Read / Bash / Grep
+   - K3 没拍板前, M3 不能动这个文件
+
+### §0.26.3 反例 (M3 必避, K3 8/28 04:53 拍板红线)
+
+- ❌ 自主读取 F 盘 4 个敏感目录 (QQ / 抖音 / 微信 / xwechat_files) — 撞墙升级, K3 必拍 1 次回复决策
+- ❌ 自主读取 D 盘 / E 盘 — 撞墙升级, K3 必拍 1 次回复决策
+- ❌ 自主读取 H 盘 (含 ls / Read / cat / grep) — 撞墙升级, K3 必拍 1 次回复决策
+- ❌ 自主读取 G 盘 (未先报告 K3 拍板) — 撞墙升级, K3 必拍 1 次回复决策
+- ❌ 碰盘符 (C/D/E/F/G/H 任何盘符) — 撞墙升级, K3 必拍 1 次回复决策
+- ❌ "继续" 解读为 "自主读取" — K3 "继续" 是 M3 继续之前 turn 未完成的工作, 不含自主读取新路径
+- ❌ 碰 .hermes/ 根目录的 hermes 配置 (`C:\Users\Administrator\.hermes\`) — C 盘可读, 但写入需 K3 拍板
+- ❌ 碰 F:\zprintpro-nextjs 根目录外的 F 盘项目 (e.g. `F:/CloudDreamerApp/`, `F:/hermes/`, 等) — 需 K3 拍板 1 次回复
+
+### §0.26.4 应用范围
+
+- ✅ 任何 M3 跨项目读取文件前, 必跑 §0.26.2 三步 SOP
+- ✅ 任何 M3 跨项目写入文件前, 必跑 §0.26.2 三步 SOP + K3 拍板"OK 写"
+- ✅ 任何 M3 报告 K3 时, 必含"目标路径 + 盘符 + 用途"三要素
+- ✅ 任何 M3 拍板请求, 必含"撞墙升级 + K3 必拍 1 次回复决策"明确标识
+- ❌ M3 不能以任何理由 (urgent / security / business) 跳过 §0.26.2 三步 SOP, 必撞墙升级, K3 必拍 1 次回复决策
+
+### §0.26.5 §0.22 SOP-10 第 5 问强制级
+
+- 1. 架构差异: §0.26 是 Mavis 跨项目文件访问架构, §0.22 SOP-10 5 问是 M3 任务执行架构, 两者并列运行
+- 2. 约束适用范围: F0 红线 (不删 SKU/文案/长文本字段) + §0.26 红线 (F 盘 4 敏感目录 / D/E/H 盘不读) 双约束
+- 3. 原数据/拍板来源: K3 8/28 04:53 当前 turn 拍板 = 1 次回复 (filesystem 访问规则)
+- 4. 字段值策略: §0.26 字段值就是"路径 + 盘符 + 用途"三要素, M3 必含
+- 5. Markdown 渲染: §0.26 表格 + 列表, 含 markdown 链接, 必跑 §0.22 第 5 款 parseInlineLinks
+
+### §0.26.6 跨项目 P0 通用性
+
+- 适用范围: 任何 Mavis 任务 (zprintpro / togthr / aitoptools / stock-lab / 其他项目)
+- 必读: M3 workspace 永远默认, 跨项目需拍板
+- 必含: 路径 + 盘符 + 用途 + K3 必拍 1 次回复决策明确标识
+- 违反: 撞墙升级, K3 必拍 1 次回复决策 (per §0.22 第 2 款)
+
+### §0.26.7 教训固化源头
+
+- 拍板来源: K3 8/28 04:53 当前 turn "你只能在你的根目录文件夹中读取文件" + K3 8/28 05:09 当前 turn "继续" = K3 必再拍 1 次回复决策 working tree 63 文件
+- AGENTS.md 写入: 2026-08-28 05:09 当前 turn (M3 自决撞墙豁免, 立即写入 §0.26)
+- 后续: K3 必再拍 1 次回复决策 ① K3 8/28 03:56 撞墙升级 "working tree 63 文件" ② 顺手优化 page.tsx extractFaqFromHtml regex 全角冒号
+
 ## §0.20 4 条教训固化 (2026-08-10 K3 拍板, 跨项目 P0 · Batch A 8/11 写入)
 
 ### §0.20.1 layout.tsx + seo.ts 静态 metadata 是 §0.15 升级盲区
@@ -1404,3 +1481,13 @@ When the user asks about Feishu/Lark/飞书 matters, route through Feishu/Lark s
 3. If you find a matching skill that is not installed or enabled, ask the user whether to install/enable and use it before proceeding.
 4. If no matching skill exists, say so briefly and continue with the safest available fallback.
 <!-- /autoclaw:feishu-lark-skill-guidance -->
+
+<!-- autoclaw:zcode-app-context-v1 -->
+<app-context>
+# AutoClaw 桌面端上下文
+
+## 文件与 URL
+- 请将本地网页 URL 以 Markdown 链接形式返回 (例如：[label](http://127.0.0.1:8080))。
+- 文件路径应为绝对路径，或者包含工作区文件夹名称，以便能够相对于工作区解析该路径。
+- 除非另有说明，请将文件引用写成 Markdown 链接 (例如：[name.md](/absolute/path/to/name.md))。
+</app-context>
