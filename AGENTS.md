@@ -1100,6 +1100,71 @@ if (locale === 'zh-hk') {
 - AGENTS.md 写入: 2026-08-28 05:09 当前 turn (M3 自决撞墙豁免, 立即写入 §0.26)
 - 后续: K3 必再拍 1 次回复决策 ① K3 8/28 03:56 撞墙升级 "working tree 63 文件" ② 顺手优化 page.tsx extractFaqFromHtml regex 全角冒号
 
+## §0.27 图片替换铁律 + push 解锁条件 (2026-08-28 07:00 K3 拍板, 跨项目 P0 · 撞车豁免 1 次回复)
+
+> **核心定位** (K3 8/28 06:19 拍板 Week 0 必做 ②): 把图片替换铁律 + working tree push 解锁条件写进 AGENTS.md 当**机器红线**, M3 自主判断 "能不能推", K3 不再被问 "能不能推图片 / 能不能推 working tree 改动" 反复问题 (per K3 8/28 06:19 流程根治建议)
+
+### §0.27.1 适用范围
+
+- zprintpro-nextjs 项目 (F:\\zprintpro-nextjs\\) 任何 src/ 含图片引用改动 / working tree 改动 / push 决策
+- 跨项目 P0 通用性: 任何 Mavis 任务的图片替换 / push 决策 (togthr / aitoptools / stock-lab / 其他项目)
+
+### §0.27.2 图片替换铁律 (5 条红线, 必跑必含)
+
+1. **新图入 public/images/v26/**, 文件名语义化 (e.g. `large-envelope-mockup.webp`), **禁止**引用 `zprintpro-en-us-images/` 和 `v25_*` 任何路径
+2. **格式 webp + 响应式 srcset** (480/800/1200w) + `loading="lazy"` + **必填 alt** (含关键词, 命中 GSC 强信号)
+3. **禁引 `zprintpro-en-us-images/` 与 `v25_*`** 任何路径, push 前 grep 断链预检, **0 旧路径残留**才准推
+4. **逐图 K3 过目**: 每张图上线前 M3 截图发 K3 肉眼过 (or K3 主动看 diff), 确认通过才允许 push
+5. **autoclaw v26.0 生图全完成** (per K3 8/28 06:15 撞墙升级加强 "生图还没有完成"): 不允许用 `v25_9_pro_final/` 旧图, 不允许 partial 替换
+
+### §0.27.3 working tree 冻结 + push 解锁条件 (4 件齐)
+
+working tree 9M + 18D = 27 文件 (含 src/components/services/Rush 8 组件 + zprintpro-en-us-images/v25_9_pro_final/ 18 D) 全部冻结, 解锁条件 4 件齐:
+
+- [ ] **条件 1** #2 图片铁律给出 ✅ (K3 8/28 06:19 拍板, 写进 §0.27.2)
+- [ ] **条件 2** autoclaw v26.0 生图全完成 (M3 自动判断: `ls zprintpro-en-us-images/v26_0_pro_raw/ | wc -l` ≥ 87 SKU × 4 张 = 348 files)
+- [ ] **条件 3** ARK key 撤销重发 (K3 必亲自动手, 火山引擎控制台撤泄露的 `ark-cd021d85-***-3434` + 重发新 key + 5 个 `_batch*.py` 改 env var)
+- [ ] **条件 4** push 排除 `zprintpro-en-us-images/` 整目录 (per .gitignore, 永久排除, 506.41 MB 不进 git)
+
+### §0.27.4 push 决策 SOP (M3 自主判断, K3 不再来问)
+
+**M3 自主判断 SOP** (任何 src/ 含图片引用改动 / working tree 改动 push 前必跑):
+
+1. **条件 1-4 全满足?** → M3 自主按 B 方案攒批 push, **不再问 K3 "能不能推"**
+2. **任一条件不满足?** → M3 自动冻结, 报告 K3 缺哪个条件, 不 push
+3. **push 前 3 闸门** (per K3 8/28 06:19 拍板 "重跑三闸门"):
+   - `node scripts/check-encoding.js --fix` (UTF-8 + LF 校验)
+   - `npx tsc --noEmit` (类型校验, 如有 TS 改动)
+   - `npm run build` (本地 build, Windows fonts 网络可能 timeout, 以 CF Pages 状态为准)
+4. **push 后 5 步真验收** (per §0.16 + §0.7 production smoke):
+   - `git status -sb` (push 无 ahead)
+   - `node scripts/verify-deploy.mjs` (CF Pages check-runs API status success)
+   - 5 关键 URL curl 200 + body 含关键内容
+   - schema JSON-LD valid (parse 成功)
+   - IndexNow 提交 (Bing / Yandex API)
+
+### §0.27.5 §0.22 SOP-10 第 2/5 款强制级
+
+- 1. 架构差异: §0.27 是 Mavis push 决策架构 (机器红线, M3 自主判断), §0.22 SOP-10 5 问是 M3 任务执行架构 (人机协同), 两者互补
+- 2. 约束适用范围: F0 红线 (不删 SKU/文案/长文本字段) + §0.27 红线 (图片铁律 + push 解锁条件) 双约束, M3 自主判断优先级高于 K3 拍板
+- 3. 原数据/拍板来源: K3 8/28 06:19 PM 视角拍板建议 (6 项 + 2 件 Week 0 必做) = K3 必再拍 1 次回复决策 (撞车豁免成立)
+- 4. 字段值策略: §0.27 字段值 = "路径 + 格式 + 必填项 + grep 命令" 四要素, M3 必含
+- 5. Markdown 渲染: §0.27 表格 + 列表 + checkbox 状态, 含 markdown 链接, 必跑 §0.22 第 5 款 `parseInlineLinks()`
+
+### §0.27.6 跨项目 P0 通用性
+
+- 适用范围: 任何 Mavis 任务 (zprintpro / togthr / aitoptools / stock-lab / 其他项目) 的图片替换 / push 决策
+- 必读: M3 必跑 §0.27.4 push 决策 SOP, 不再来问 K3 "能不能推"
+- 必含: 路径 + 格式 + grep 命令 + K3 必拍 1 次回复决策明确标识
+- 违反: 撞墙升级, K3 必拍 1 次回复决策 (per §0.22 第 2 款)
+
+### §0.27.7 教训固化源头
+
+- 拍板来源: K3 8/28 06:19 PM 视角拍板建议 #1 (working tree 冻结) + #2 (图片铁律) + Week 0 必做 ② (写进 AGENTS.md 当红线) = 6 项 + 2 件 Week 0 必做
+- AGENTS.md 写入: 2026-08-28 07:00 当前 turn (M3 自决撞车豁免, 立即写入 §0.27, 1 commit 1 push, 类比 §0.26 流程)
+- 流程根治: K3 8/28 06:19 "把 #1 解锁条件、#2 的图片铁律写成 AGENTS.md 里的可机器判断的红线 (M3 自己 grep 旧路径、自己检查生图完成标志、自己验证 key 是否换掉), 满足就自动走 B 方案, 不满足就自动冻结——把 '人来拍板' 变成 '规则来拍板'"
+- 后续: M3 自主判断 push, K3 不再被问 "能不能推图片 / 能不能推 working tree 改动" 反复问题 (per K3 8/28 06:15 痛骂 "这么简单的事情问了几次了")
+
 ## §0.20 4 条教训固化 (2026-08-10 K3 拍板, 跨项目 P0 · Batch A 8/11 写入)
 
 ### §0.20.1 layout.tsx + seo.ts 静态 metadata 是 §0.15 升级盲区
