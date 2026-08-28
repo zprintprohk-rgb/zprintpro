@@ -7,6 +7,8 @@ import {
   generateBlogArticleJsonLd,
   generateSpeakableJsonLd,
   standardSpeakableSelectors,
+  generateHowToJsonLd,
+  getCategoryHowToSteps,
 } from '@/lib/seo/schema-extensions';
 import { JsonLd } from '@/components/JsonLd';
 import { getBuyingGuideBySlug, getAllBuyingGuideSlugs } from '@/data/buying-guides';
@@ -805,7 +807,7 @@ function getOgLocale(locale: Locale): string {
 
 function extractFaqFromHtml(html: string): { question: string; answer: string }[] | null {
   const faqs: { question: string; answer: string }[] = [];
-  const regex = /<p><strong>Q[:：]\s*([\s\S]*?)<\/strong>\s*(?:<br\s*\/?>)\s*A[:：]\s*([\s\S]*?)<\/p>/gi;
+  const regex = /<p><strong>Q[0-9]*[:：]\s*([\s\S]*?)<\/strong>\s*(?:<br\s*\/?>)\s*A[0-9]*[:：]\s*([\s\S]*?)<\/p>/gi;
   let match;
   while ((match = regex.exec(html)) !== null) {
     const question = match[1].replace(/<[^>]+>/g, '').trim();
@@ -975,6 +977,12 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
       <JsonLd data={breadcrumbJsonLd} />
       <JsonLd data={speakableJsonLd} />
       {faqJsonLd && <JsonLd data={faqJsonLd} />}
+      {(() => {
+        const howTo = getCategoryHowToSteps(post.category, locale);
+        if (!howTo) return null;
+        const howToJsonLd = generateHowToJsonLd(howTo.name, howTo.description, howTo.steps, locale, howTo.totalTime);
+        return <JsonLd data={howToJsonLd} />;
+      })()}
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         <Link href={`${localePrefix}/blog/`} className="text-[#2873F5] hover:underline text-sm mb-6 inline-block">
           {t.backToBlog}
