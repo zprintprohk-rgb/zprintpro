@@ -29,7 +29,7 @@ const translations = {
     stats: [
       { icon: Users, value: '15,000+', label: '満足のお客様' },
       { icon: Package, value: '50+', label: '製品' },
-      { icon: Clock, value: '99.5%', label: '準時率' },
+      { icon: Clock, value: '99.5%', label: '定時率' },
       { icon: Star, value: '4.9/5', label: '評価' },
     ],
   },

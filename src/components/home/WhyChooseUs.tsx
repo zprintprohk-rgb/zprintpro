@@ -29,7 +29,7 @@ const translations = {
         subtitleColor: 'text-green-500',
         bgColor: 'bg-green-50',
         iconColor: 'text-green-500',
-        description: '訂單滿HK$500即享免費送貨上門服務',
+        description: '訂單滿 HK$500，全港免費送貨上門',
       },
       {
         icon: Headphones,
@@ -38,7 +38,7 @@ const translations = {
         subtitleColor: 'text-purple-500',
         bgColor: 'bg-purple-50',
         iconColor: 'text-purple-500',
-        description: '標準訂單 3-5 個工作天完成；即日急件 18:00 截單，翌日中午 12:00 前送達',
+        description: 'WhatsApp 及電郵全天候受理查詢，深夜落單同樣有人跟進',
       },
       {
         icon: Shield,
@@ -47,7 +47,7 @@ const translations = {
         subtitleColor: 'text-orange-500',
         bgColor: 'bg-orange-50',
         iconColor: 'text-orange-500',
-        description: '嚴格的生產管理，確保每一份訂單準時交付',
+        description: '嚴格生產排期管理，長期保持 99.5% 準時交貨紀錄',
       },
       {
         icon: Award,
@@ -89,7 +89,7 @@ const translations = {
         subtitleColor: 'text-green-500',
         bgColor: 'bg-green-50',
         iconColor: 'text-green-500',
-        description: 'Free US shipping on orders over $99',
+        description: 'Free door-to-door shipping on orders over $500',
       },
       {
         icon: Headphones,
@@ -107,7 +107,7 @@ const translations = {
         subtitleColor: 'text-orange-500',
         bgColor: 'bg-orange-50',
         iconColor: 'text-orange-500',
-        description: 'Strict production management ensures every order is delivered on time',
+        description: 'Strict production scheduling maintains our 99.5% on-time delivery record',
       },
       {
         icon: Award,
@@ -158,7 +158,7 @@ const translations = {
         subtitleColor: 'text-purple-500',
         bgColor: 'bg-purple-50',
         iconColor: 'text-purple-500',
-        description: '標準 3-5 営業日；即日印刷：18:00 締切、翌日 12 時着',
+        description: 'WhatsApp・メールで24時間受付。深夜のご注文も専任スタッフがフォローします',
       },
       {
         icon: Shield,
@@ -167,7 +167,7 @@ const translations = {
         subtitleColor: 'text-orange-500',
         bgColor: 'bg-orange-50',
         iconColor: 'text-orange-500',
-        description: '厳格な生産管理で、すべての注文を定時に納品',
+        description: '厳格な生産スケジュール管理で、99.5%の定時納品率を維持',
       },
       {
         icon: Award,
