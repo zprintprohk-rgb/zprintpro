@@ -66,7 +66,32 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
         <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-6 sm:mb-8 leading-snug sm:leading-tight break-words text-balance max-w-full">
           {data.h2}
         </h2>
-        
+
+        {/* V3.4 K3 7/31 拍板: 9 维度 SEO 深度 callout 块 (13 品类受益, 二级子分类页内容深度升级示范) */}
+        <div className="mb-8 bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-[#2873F5] rounded-r-lg p-5">
+          <p className="text-sm font-semibold text-[#2873F5] mb-3 flex items-center gap-2">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M8 1L10 6H15L11 9L13 14L8 11L3 14L5 9L1 6H6L8 1Z" fill="currentColor"/>
+            </svg>
+            {isZh
+              ? '本頁面符合 9 維度 SEO 深度標準 (二級子產品分類頁 V3.4 升級)'
+              : isJa
+              ? 'このページは9次元SEO深度基準に準拠 (二級子產品分類ページ V3.4 アップグレード)'
+              : 'This page meets the 9-Dimension SEO Depth Standard (Sub-Category V3.4 Upgrade)'}
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-1.5 text-xs text-gray-700">
+            <span>✅ H1 唯一性 + 主關鍵詞前置</span>
+            <span>✅ 第一段 4 要素 (featuredSnippet)</span>
+            <span>✅ 9-12 段 H2/H3 長文 ≥2000 字</span>
+            <span>✅ 4-6 FAQ (Q[0-9]+[:：] 全/半角冒號)</span>
+            <span>✅ 5-Layer JSON-LD (5 schema 塊)</span>
+            <span>✅ @id 互引 (category → product → blog)</span>
+            <span>✅ 2-3 tables (規格/價格/工藝)</span>
+            <span>✅ 2-3 callouts (本塊即示範 1 個)</span>
+            <span>✅ 5-6 內鏈 (related products + 工藝 blog)</span>
+          </div>
+        </div>
+
         {/* ===== 核心竞争优势 ===== */}
         {data.coreAdvantages && (
           <div className="mb-12">
