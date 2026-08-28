@@ -805,7 +805,7 @@ function getOgLocale(locale: Locale): string {
 
 function extractFaqFromHtml(html: string): { question: string; answer: string }[] | null {
   const faqs: { question: string; answer: string }[] = [];
-  const regex = /<p><strong>Q:\s*([\s\S]*?)<\/strong>\s*(?:<br\s*\/?>)\s*A:\s*([\s\S]*?)<\/p>/gi;
+  const regex = /<p><strong>Q[:：]\s*([\s\S]*?)<\/strong>\s*(?:<br\s*\/?>)\s*A[:：]\s*([\s\S]*?)<\/p>/gi;
   let match;
   while ((match = regex.exec(html)) !== null) {
     const question = match[1].replace(/<[^>]+>/g, '').trim();

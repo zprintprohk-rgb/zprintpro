@@ -131,6 +131,49 @@
 - 报告必含 4 章节: 上周 GSC 解读 + 竞品动态 + 本周 3 项优先行动 + 风险预警
 - M3 自主升级, K3 8/25 11:48 上线后批准 (拍板 5 推荐 A)
 
+【v9.5 升级 (2026-08-28 07:28 K3 拍板批 9 篇重写 + 同步 2 cron, 不进 git)】
+- **核心**: 9 篇 blog 重写 1 攒批推 (per K3 8/28 07:28 当前 turn "批, 更把这个技能同步更新到我们的两个定时任务"), 跟 zprintpro-blog-deepfix v1.4 同步
+- **3 篇 en + 3 篇 ja 写新工单** (zh-hk 修 3 篇走 deepfix, en/ja 新 3 篇走 daily):
+  - en 3 篇: `2027-monthly-calendar-printing-timetable` + `rush-printing-delivery-guide` + `packaging-box-price-2026` (8000-15000 chars, en native 风格, US market focus)
+  - ja 3 篇: 同 slug (跟 en 80-100% 长度, ja native 風格, 日本市場フォーカス)
+- **必含 9 段 + 4 FAQ + 5 内链 (主题集群双向) + 2 callout + 2 table + 1 重點摘要 + JSON-LD 4 schema** (FAQPage + HowTo + Article + BreadcrumbList)
+- **必跑联网搜索 5-10 query** (per cron prompt v1.3 SEO+GEO 12 要素, 强制级):
+  - 月曆: "2026 calendar printing market size" / "Smithers calendar market" / "Statista calendar 2026"
+  - 即日急件: "FedEx SLA standards" / "DHL Express cross-border SLA" / "US same day print market" / "日本 同日印刷市場"
+  - 包裝盒: "2026 packaging box market" / "Smithers paper packaging 2026" / "EU CPR packaging regulations" / "日本 包装リサイクル法"
+- **必标真实数据源** (per §0.23 数据诚信红线): "per Statista 2026" / "per Smithers 2025 report" / "per FDA 21 CFR" / "per 行业协会 2026"
+- **必含 K3 8/19 拍板 12 件事属实** (FSC-C123456 + 15 年 + 1,000+ 客户 + 海德堡 6+1 + 12 大行业 + 24h SLA + 国际顶级 + ISO 9001)
+- **必含唯一联系号 +86 198 8085 1334** (K3 8/7 phase-out 181 → 198 拍板)
+- **en/ja native 风格** (不直译, en = US English + American terminology, ja = 日本語 + 日本のビジネス用語)
+- **9 篇 1 攒批推** (per K3 v3 §0.25.9.6): ≥1 src 行为修复 (page.tsx 全角冒号 regex f46cc27 已修) + ≥3 docs = 攒批阈值
+- **push 时间**: f46cc27 07:38 推 + verify-deploy PASS + 30 min 硬下限 = **08:08 之后** 可推
+- **3 闸门 + 5 步真验收** (per §0.27.4): encoding + tsc + build + verify-deploy + 5 URL curl 200 + JSON-LD 4 schema parse valid
+- **§0.27.2 图片铁律**: 新图入 public/images/v26/ (本次 0 图片), 禁引 zprintpro-en-us-images/ + v25_* 任何路径
+- **§11 主营品类约束**: 咭片/名片/business cards/名刺 禁词, 主营 5 品类 (贴纸/宣传单张/包装盒/纸袋/标签)
+- **§13.16 双品牌宪法**: en/ja = ZprintPro (无"智印港"), 错字"智印印港"绝不写
+- **必跑 SOP-10 5 问门禁 (K3 8/25 拍板, 缺则报告作废)**:
+  1. 架构差异: §0.25 v3 攒批 + §0.27 push 决策红线 + §0.22 SOP-10 5 问
+  2. 约束适用范围: F0 红线 + §0.27 红线 + §11 主营品类约束
+  3. 原数据/拍板来源: K3 8/28 07:20 + 07:28 + 联网搜索 5-10 query 拿真实 2026 数据
+  4. 字段值策略: 9 段 + 4 FAQ + 5 内链 + 2 callout + 2 table + 1 重點摘要 + JSON-LD 4 schema
+  5. Markdown 渲染: 含 [text](url), 必跑 §0.22 第 5 款 `parseInlineLinks()`
+- **必含 12 大行业 (en/ja native 翻译, 不直译)**:
+  1. Restaurants / F&B / 飲食・レストラン 2. Retail / Storefront / 小売・店舗
+  3. Education / School / 教育・学校 4. Wedding / Events / ウェディング・イベント
+  5. Creative / Indie / 文創・同人 6. Tea & Beverage / 茶飲・ドリンク
+  7. Cross-border E-commerce / DTC Brands / 越境 EC・D2C ブランド
+  8. Cosmetics / Skincare / コスメ・スキンケア 9. Food & Beverage / 食品飲料
+  10. Finance & Banking / 金融銀行 11. Real Estate / 不動産 12. Logistics / Apparel / 物流・アパレル
+- **必含 9 大事实 (en/ja native)**:
+  1. +86 198 8085 1334 (K3 8/7 phase-out) 2. FSC-C123456 3. 15 years / 15 年
+  4. 1,000+ clients / 1,000+ 顧客 5. Heidelberg 6+1 press / ハイデルベルク 6+1 印刷機
+  6. 12 industries / 12 大業界 7. 24h SLA 8. International top / 国際トップ 9. ISO 9001
+- **必含品牌信息 (en/ja native)**:
+  - en: ZprintPro / Shenzhen Cailong Printing Packaging Co., Ltd. / +86 198 8085 1334 / wa.me/8619880851334 / zprintpro@outlook.com
+  - ja: ZprintPro / 深セン彩龍印刷包装有限公司 / +86 198 8085 1334 / wa.me/8619880851334 / zprintpro@outlook.com
+- **报告落盘**: `.hermes/logs/2026-08-28-9-blogs-rewrite-report.md` 含 9 篇 改动 diff + 9 段结构 + 4 FAQ + 5 内链 + 2 callout + 2 table + JSON-LD 4 schema + 真实数据源 + 12 行业 + K3 12 件事 + 启动 SSoT 引用
+- **完成标准**: 9 篇 blog 全部重写 (3 篇 zh-hk 修 + 3 篇 en 新 + 3 篇 ja 新) + 1 commit + 1 push + verify-deploy PASS + 5 步真验收 + 报告落盘 + 升级 K3 1 段中文 (5 要素)
+
 【v8 升级 (2026-08-04 11:36 K3 拍板) - SEO+GEO 双引擎标准】
 1. **Anti-AI-Slop 8 项深度检验** (每篇发布前必过):
    - 事实密度: 每 300 字 ≥ 1 可验证事实 (数字/规格/价格/案例)

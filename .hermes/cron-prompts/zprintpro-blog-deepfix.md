@@ -9,6 +9,60 @@
 
 ---
 
+# zprintpro-blog-deepfix v1.3 (2026-08-28 07:00 K3 拍板本地升级, 不进 git)
+
+> **v1.2 → v1.3 核心变化** (per K3 8/28 06:19 拍板 "立即改本地 cron prompt（全角冒号 regex + V4 6 增量），不进 git，改完报 diff"):
+> 1. **全角冒号 regex 兼容** (K3 8/28 03:56 撞墙升级 "page.tsx extractFaqFromHtml regex 兼容全角冒号 ："): zh/ja FAQ JSON-LD 0 块唯一卡点, FAQ Q/A 模式从 `**Q1: ...**` 扩展到 `**Q1: ...**` / `**Q1：...**` (zh-hk 全角) / `**Q1：...**` (ja 全角) 三 locale 风格
+> 2. **V4 6 增量必读 SSoT** (K3 8/28 06:19 拍板 "V4 6 增量"): cron 启动必读 `.hermes/logs/2026-08-28-战略方案-gsc-seo-geo-v3.3.1.md` §4 (B1 證書印刷插入最前) + §5 (striking 144 词主工程) + §6 (标题公式 + 转化率 + 权威 + GEO + M3 6 自进化能力)
+> 3. **M3 6 自进化能力** (K3 8/28 06:19 拍板): position movers top10 / 标题实验 tracker / AI 引用月度探针 / 询盘归因台账 / cron 健康仪表盘 / 台账口径锁定 v1.2
+
+---
+
+# zprintpro-blog-deepfix v1.4 (2026-08-28 07:28 K3 拍板批 9 篇重写 + 同步 2 cron, 不进 git)
+
+> **v1.3 → v1.4 核心变化** (per K3 8/28 07:28 当前 turn "批, 更把这个技能同步更新到我们的两个定时任务"):
+> 1. **9 篇重写工单** (3 篇 × 3 locale = zh-hk 3 + en 3 + ja 3, K3 8/28 07:20 痛骂"劣质" + 07:28 批):
+>    - zh-hk 修: `2027-monthly-calendar-printing-timetable` (L551) + `rush-printing-delivery-guide` (L536) + `packaging-box-price-2026` (L544)
+>    - en 新: 3 篇同 slug, 8000-15000 chars, en native 风格
+>    - ja 新: 3 篇同 slug, 跟 en 80-100% 长度, ja native 風格
+> 2. **重写必含 9 段 + 4 FAQ + 5 内链 (主题集群双向) + 2 callout + 2 table + 1 重點摘要 + JSON-LD 4 schema** (FAQPage + HowTo + Article + BreadcrumbList)
+> 3. **必跑联网搜索 5-10 query** (per cron prompt v1.3 SEO+GEO 12 要素, 强制级):
+>    - 月曆: "2026 calendar printing market size" / "Smithers calendar market" / "Statista calendar 2026"
+>    - 即日急件: "FedEx SLA standards" / "DHL Express cross-border SLA" / "US same day print market"
+>    - 包裝盒: "2026 packaging box market" / "Smithers paper packaging 2026" / "EU CPR packaging regulations"
+> 4. **必标真实数据源** (per §0.23 数据诚信红线): "per Statista 2026" / "per Smithers 2025 report" / "per FDA 21 CFR" / "per 行业协会 2026"
+> 5. **必含 K3 8/19 拍板 12 件事属实** (FSC-C123456 + 15 年 + 1,000+ 客户 + 海德堡 6+1 + 12 大行业 + 24h SLA + 国际顶级 + ISO 9001)
+> 6. **必含唯一联系号 +86 198 8085 1334** (K3 8/7 phase-out 181 → 198 拍板)
+> 7. **9 篇 1 攒批推** (per K3 v3 §0.25.9.6): ≥1 src 行为修复 (page.tsx 全角冒号 regex f46cc27 已修) + ≥3 docs (zh-hk.json + en.json + ja.json) = 攒批阈值
+> 8. **push 时间**: f46cc27 07:38 推 + verify-deploy PASS + 30 min 硬下限 = **08:08 之后** 可推
+> 9. **3 闸门 + 5 步真验收** (per §0.27.4): encoding + tsc + build + verify-deploy + 5 URL curl 200 + JSON-LD 4 schema parse valid
+> 10. **§0.27.2 图片铁律**: 新图入 public/images/v26/ (本次 0 图片), 禁引 zprintpro-en-us-images/ + v25_* 任何路径
+> 11. **§11 主营品类约束**: 咭片/名片/business cards/名刺 禁词, 主营 5 品类 (貼紙/宣傳單張/包裝盒/紙袋/標籤)
+> 12. **§13.16 双品牌宪法**: zh-hk = 智印港 ZprintPro, en/ja = ZprintPro, 错字"智印印港"绝不写
+
+> **必跑 SOP-10 5 问门禁 (K3 8/25 拍板, 缺则报告作废)**:
+> 1. 架构差异: §0.25 v3 攒批 + §0.27 push 决策红线 + §0.22 SOP-10 5 问
+> 2. 约束适用范围: F0 红线 (不删 SKU/文案/长文本字段) + §0.27 红线 + §11 主营品类约束
+> 3. 原数据/拍板来源: K3 8/28 07:20 + 07:28 + 联网搜索 5-10 query 拿真实 2026 数据
+> 4. 字段值策略: 9 段 + 4 FAQ + 5 内链 + 2 callout + 2 table + 1 重點摘要 + JSON-LD 4 schema
+> 5. Markdown 渲染: 含 [text](url), 必跑 §0.22 第 5 款 `parseInlineLinks()`
+
+> **必含 12 大行业** (K3 8/19 拍板 12 件事属实, 必含):
+> 1. 餐飲 / 餐廳 2. 零售 / 商店 3. 教育 / 學校 4. 婚慶 / 婚禮 5. 文創 / 同人 6. 茶飲 / 飲品
+> 7. 跨境電商 / DTC 品牌 8. 美妝護膚 / 化妝品 9. 食品茶飲 10. 金融銀行 11. 房地產 12. 物流 / 服裝
+
+> **必含 9 大事实 (K3 8/19 拍板 12 件事属实)**:
+> 1. +86 198 8085 1334 (K3 8/7 phase-out) 2. FSC-C123456 3. 15 年 4. 1,000+ 客户
+> 5. 海德堡 6+1 印刷机 6. 12 大行业 7. 24h SLA 8. 国际顶级 9. ISO 9001
+
+> **必含品牌信息**: zh-hk = 智印港 ZprintPro / 深圳市彩龍印刷包裝有限公司 / +86 198 8085 1334 / wa.me/8619880851334 / zprintpro@outlook.com / 深圳市龍崗区平湖街道嘉城路 1 号
+
+> **报告落盘**: `.hermes/logs/2026-08-28-9-blogs-rewrite-report.md` 含 9 篇 改动 diff + 9 段结构 + 4 FAQ + 5 内链 + 2 callout + 2 table + JSON-LD 4 schema + 真实数据源 + 12 行业 + K3 12 件事 + 启动 SSoT 引用
+
+> **完成标准**: 9 篇 blog 全部重写 + 1 commit + 1 push + verify-deploy PASS + 5 步真验收 + 报告落盘 + 升级 K3 1 段中文 (5 要素)
+
+---
+
 # zprintpro-blog-deepfix v1.1 (2026-08-26 20:38 K3 拍板升级)
 
 > **v1.0 → v1.1 核心变化** (per K3 8/26 20:38 升级拍板):
@@ -32,6 +86,7 @@
 3. `F:\zprintpro-nextjs\.hermes\blog-audit-v5.json` (v5 双格式盘点 71 blog + 待修去重 24 个 + GSC 命中数据)
 4. `F:\zprintpro-nextjs\AGENTS.md` (项目宪法 §0 / §1 / §6 / §11 / §12 / §13)
 5. `F:\zprintpro-nextjs\.hermes\cron-prompts\k3-v3-addendum-2026-08-23.md` (K3 8/23 v3 增补, 业务 0 改动红线 F0 + 5 SOP)
+6. `F:\zprintpro-nextjs\.hermes\logs\2026-08-28-战略方案-gsc-seo-geo-v3.3.1.md` (K3 8/28 06:19 拍板 V4 6 增量 SSoT, §4 B1 證書印刷插入最前 / §5 striking 144 词主工程 / §6 标题公式 + 转化率 + 权威 + GEO + M3 6 自进化能力, cron 启动 30 秒内必读 §4-§6)
 
 ---
 
@@ -52,7 +107,7 @@
 ### SEO 6 要素 (基础, 现有 v3 已有)
 1. **首段 60-150 词答案前置** (Answer-First, 前段直接答问题, AI 引用率高)
 2. **≥8 H2 段** (结构化, markdown `##` 风格, 覆盖 5-10 个长尾子主题)
-3. **≥6 Q&A FAQ** (markdown `**Q1: ...**` 模式, 覆盖 PAA People Also Ask)
+3. **≥6 Q&A FAQ** (markdown `**Q1: ...**` / `**Q1：...**` (zh-hk 全角) / `**Q1：...**` (ja 全角) 三 locale 风格, 全角冒号 regex 兼容, 覆盖 PAA People Also Ask)
 4. **≥3 数据点** (真实数据, 必标来源: Statista / FDA / Smithers / 行业协会)
 5. **≥2-3 内链** (到 category / product / blog, 内链网络增强)
 6. **Title 50-60 字符 + Meta 150-160 字符** (SERP snippet 优化)
