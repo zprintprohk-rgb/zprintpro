@@ -24,7 +24,17 @@ export interface MetricsEvent {
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
-const SUPABASE_TABLE = 'zprintpro_008_events';
+// 2026-08-28 12:00 K3 撞墙拍板: 008 度量层表名 bug 修复
+// 旧值 'zprintpro_008_events' (不存在, 404 schema cache)
+// 正确值 'quote_requests' (008 migration 实际表名)
+// 字段映射: type → source (008 source enum), page → landing_page, metadata → message
+const SUPABASE_TABLE = 'quote_requests';
+const TYPE_TO_SOURCE: Record<string, string> = {
+  form_submit: 'quote-form',
+  whatsapp_click: 'whatsapp-cta',
+  tel_click: 'header-phone',
+  mailto_click: 'other',
+};
 
 const isEnvConfigured = !!(SUPABASE_URL && SUPABASE_ANON_KEY);
 
@@ -46,6 +56,15 @@ export async function trackEvent(event: Omit<MetricsEvent, 'timestamp'>): Promis
   }
 
   try {
+    // 2026-08-28 12:00 字段映射: type→source, page→landing_page, metadata→message, locale→locale
+    const sourceValue = TYPE_TO_SOURCE[fullEvent.type] ?? 'other';
+    const row = {
+      source: sourceValue,
+      locale: fullEvent.locale,
+      landing_page: fullEvent.page,
+      message: fullEvent.metadata ? JSON.stringify(fullEvent.metadata) : null,
+      status: 'new',
+    };
     const response = await fetch(`${SUPABASE_URL}/rest/v1/${SUPABASE_TABLE}`, {
       method: 'POST',
       headers: {
@@ -53,7 +72,7 @@ export async function trackEvent(event: Omit<MetricsEvent, 'timestamp'>): Promis
         apikey: SUPABASE_ANON_KEY!,
         Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
       },
-      body: JSON.stringify(fullEvent),
+      body: JSON.stringify(row),
     });
 
     if (!response.ok) {
