@@ -20,9 +20,9 @@ export async function generateMetadata({ params }: { params: { locale: Locale } 
     ja: '香港印刷サービスエリア | 全港配送 | ZprintPro',
   };
   const descriptions = {
-    'zh-hk': '智印港提供全港印刷送貨服務，覆蓋香港島、九龍、新界及離島。即日印刷，順豐速遞，次日送達。深圳自家工場直送，香港 MTR 站交收服務，品質保證。',
-    en: 'ZprintPro offers global cross-border printing from our Shenzhen factory. Hong Kong-wide delivery with SF Express next-day, plus HK MTR station pickup. DHL Express worldwide shipping to US/UK/AU/JP and beyond.',
-    ja: 'ZprintPro は深圳自社工場から越境印刷サービスを提供。香港 MTR 駅受取サービス、順丰翌日配送。DHL Express で日本・米国・英国・豪州へ 2-4 日配送。',
+    'zh-hk': '智印港提供全港印刷送貨服務，覆蓋香港島、九龍、新界及離島。即日印刷，順豐速遞，次日送達。深圳自家工場直送，合作點交收 + 順豐快遞上門，品質保證。',
+    en: 'ZprintPro offers global cross-border printing from our Shenzhen factory. Hong Kong-wide delivery with SF Express next-day, plus partner pickup points. DHL Express worldwide shipping to US/UK/AU/JP and beyond.',
+    ja: 'ZprintPro は深圳自社工場から越境印刷サービスを提供。順丰翌日配送 + 提携先受取場所。DHL Express で日本・米国・英国・豪州へ 2-4 日配送。',
   };
   return {
     title: titles[locale],
@@ -123,7 +123,7 @@ export default function ServiceAreasPage({ params }: { params: { locale: Locale 
     },
     en: {
       h1: 'Global Printing Service | US · UK · AU',
-      subtitle: 'International printing for businesses in the United States, United Kingdom, Australia and beyond. Shenzhen factory direct, SF Express / DHL worldwide shipping, plus HK MTR station pickup.',
+      subtitle: 'International printing for businesses in the United States, United Kingdom, Australia and beyond. Shenzhen factory direct, SF Express / DHL worldwide shipping, plus partner pickup points.',
       areas: [
         {
           title: 'United States',
@@ -155,7 +155,7 @@ export default function ServiceAreasPage({ params }: { params: { locale: Locale 
     },
     ja: {
       h1: '日本向け越境印刷サービス | 深圳工場から発送',
-      subtitle: '同人誌・企業資料を深圳自社工場から日本へ。香港 MTR 駅受取サービス、ISO9001認証、DHL国際配送。',
+      subtitle: '同人誌・企業資料を深圳自社工場から日本へ。提携先受取場所、ISO9001認証、DHL国際配送。',
       areas: [
         {
           title: '東京・関東エリア',
