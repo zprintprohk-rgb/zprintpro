@@ -67,41 +67,82 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
           {data.h2}
         </h2>
 
-        {/* V3.5 K3 12:14 拍板: 采购决策 4 要素卡 (替换 M3 V3.4 SEO 自检块, 修复 P0 UX 错误)
-            设计依据: 黄金位置(H2 下)=用户价值主张,而非 SEO 术语自检;每格=可被 AI 引用的事实陈述(GEO 友好);首屏回答"多少钱/多久/材质/怎么下单"4 个采购核心问题 */}
-        <div className="mb-8 grid grid-cols-2 lg:grid-cols-4 gap-3">
-          <div className="bg-white border-2 border-[#2873F5] rounded-lg p-4 shadow-sm">
-            <p className="text-xs text-gray-500 mb-1 font-medium">
-              {isZh ? '起印量' : isJa ? '最小注文' : 'Min. Order'}
-            </p>
-            <p className="text-lg md:text-xl font-bold text-[#2873F5] leading-tight">
-              {isZh ? '50 個起' : isJa ? '50 個から' : 'From 50 pcs'}
-            </p>
+        {/* W1 K3 8/29 12:50 派活包 §1.3 拍板: 采购决策 4 要素卡 (P0 返工, 替换 V3.4 SEO 自检块 + 96295a4 4 边框块)
+            设计: 容器样式沿用 V3.4 (蓝渐变 + 左蓝边) + 内部 2×2 网格 (grid-cols-1 sm:grid-cols-2 gap-2) + 内联 SVG 图标 (禁 emoji) + 标题行 + CTA 行
+            数据驱动: stickers 专属值 (示范) + 全站 fallback (其余 12 品类) - 后续 W2-W3 补 decisionCard 字段, 本 turn 硬编码 */}
+        <div className="mb-8 bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-[#2873F5] rounded-r-lg p-5">
+          <p className="text-sm font-semibold text-[#2873F5] mb-3">
+            {isZh ? '快速決策・採購 4 要素' : isJa ? 'クイック決断・購買4要素' : 'Quick Decision · 4 Buying Facts'}
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+            {/* MOQ 要素 - 内联 SVG 图标 (起印量) */}
+            <div className="flex items-center gap-2">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" className="flex-shrink-0">
+                <rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+                <path d="M5 6h6M5 9h4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+              </svg>
+              <span className="text-sm text-gray-800 font-medium">
+                {categorySlug === 'stickers' ? (
+                  isZh ? '50 個起印・HK$0.45/張起' : isJa ? '50 個起印・HK$0.45/張起' : 'From 50 pcs · HK$0.45/pc'
+                ) : (
+                  isZh ? '100 張起印・無開版費' : isJa ? '100枚から・版代ゼロ' : 'From 100 pcs · No setup fees'
+                )}
+              </span>
+            </div>
+            {/* Price 要素 - 内联 SVG 图标 (价格) */}
+            <div className="flex items-center gap-2">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" className="flex-shrink-0">
+                <path d="M8 2L10 6H14L11 9L12 14L8 11L4 14L5 9L2 6H6L8 2Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" fill="none"/>
+              </svg>
+              <span className="text-sm text-gray-800 font-medium">
+                {categorySlug === 'stickers' ? (
+                  isZh ? '防水啞光 PVC・15+ 材質' : isJa ? '防水啞光 PVC・15+ 材質' : 'Waterproof Matte PVC · 15+ Materials'
+                ) : (
+                  isZh ? '30 秒 AI 報價・價格透明' : isJa ? '30秒 AI 見積・透明価格' : '30-sec AI quote · Transparent pricing'
+                )}
+              </span>
+            </div>
+            {/* Lead 要素 - 内联 SVG 图标 (交期) */}
+            <div className="flex items-center gap-2">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" className="flex-shrink-0">
+                <circle cx="8" cy="8" r="6" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+                <path d="M8 4v4l3 2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
+              </svg>
+              <span className="text-sm text-gray-800 font-medium">
+                {categorySlug === 'stickers' ? (
+                  isZh ? '5-7 天交期・DHL 全球 2-4 天' : isJa ? '5-7 天交期・DHL 全球 2-4 天' : '5-7 day lead · DHL 2-4 days global'
+                ) : (
+                  isZh ? '標準 3-5 天交貨・加急即日' : isJa ? '標準3-5営業日・特急即日' : 'Standard 3-5 days · Rush same-day'
+                )}
+              </span>
+            </div>
+            {/* Quality 要素 - 内联 SVG 图标 (认证) */}
+            <div className="flex items-center gap-2">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" className="flex-shrink-0">
+                <path d="M3 8L6 11L13 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                <circle cx="8" cy="8" r="6.5" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+              </svg>
+              <span className="text-sm text-gray-800 font-medium">
+                {categorySlug === 'stickers' ? (
+                  isZh ? 'ISO 9001 工廠・FSC 認證紙' : isJa ? 'ISO 9001 工廠・FSC 認證紙' : 'ISO 9001 factory · FSC-certified paper'
+                ) : (
+                  isZh ? 'ISO 9001 工廠・FSC 認證紙' : isJa ? 'ISO 9001 工場・FSC認証紙' : 'ISO 9001 factory · FSC-certified paper'
+                )}
+              </span>
+            </div>
           </div>
-          <div className="bg-white border-2 border-[#F87314] rounded-lg p-4 shadow-sm">
-            <p className="text-xs text-gray-500 mb-1 font-medium">
-              {isZh ? '價格錨點' : isJa ? '価格目安' : 'Price Anchor'}
-            </p>
-            <p className="text-lg md:text-xl font-bold text-[#F87314] leading-tight">
-              {isZh ? 'HK$0.45/張起' : isJa ? 'HK$0.45/枚から' : 'From HK$0.45/pc'}
-            </p>
-          </div>
-          <div className="bg-white border-2 border-[#10B981] rounded-lg p-4 shadow-sm">
-            <p className="text-xs text-gray-500 mb-1 font-medium">
-              {isZh ? '交期' : isJa ? '納期' : 'Lead Time'}
-            </p>
-            <p className="text-lg md:text-xl font-bold text-[#10B981] leading-tight">
-              {isZh ? '5-7 天・DHL 全球 2-4 天' : isJa ? '5-7日・DHL全球 2-4日' : '5-7 days · DHL 2-4 days global'}
-            </p>
-          </div>
-          <div className="bg-white border-2 border-[#8B5CF6] rounded-lg p-4 shadow-sm">
-            <p className="text-xs text-gray-500 mb-1 font-medium">
-              {isZh ? '質保 / 客服' : isJa ? '保証 / サポート' : 'Warranty / Support'}
-            </p>
-            <p className="text-lg md:text-xl font-bold text-[#8B5CF6] leading-tight">
-              {isZh ? 'WhatsApp 5 分鐘報價' : isJa ? 'WhatsApp 5分返信' : 'WhatsApp quote in 5 min'}
-            </p>
-          </div>
+          {/* CTA 行 - WhatsApp 链接 */}
+          <a
+            href="https://wa.me/8619880851334?text=Hi%20ZprintPro%2C%20I%20need%20a%20quote"
+            className="mt-3 inline-flex items-center text-sm font-semibold text-[#2873F5] hover:text-[#1E5FD1] hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true" className="mr-1">
+              <path d="M8 1C4.1 1 1 4.1 1 8c0 1.3 0.3 2.5 0.9 3.6L1 15l3.5-0.9C5.6 14.6 6.8 15 8 15c3.9 0 7-3.1 7-7s-3.1-7-7-7z" stroke="currentColor" strokeWidth="1.5" fill="none"/>
+            </svg>
+            {isZh ? 'WhatsApp 5 分鐘報價回覆 →' : isJa ? 'WhatsApp 5分以内見積返信 →' : 'WhatsApp quote reply in 5 min →'}
+          </a>
         </div>
 
         {/* ===== 核心竞争优势 ===== */}
