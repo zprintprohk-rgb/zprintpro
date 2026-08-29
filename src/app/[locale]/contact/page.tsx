@@ -30,6 +30,7 @@ const translations = {
     addressLabel: "辦公室地址",
     addressValue: '香港九龍新蒲崗大有街3號萬廣大廈15樓C室',
     cta: "立即 WhatsApp 查詢",
+    emailCta: "電郵查詢",
     qrCaption: "掃碼即聊",
     online: "在線",
     responseTime: "15 分鐘內專人回覆",
@@ -72,6 +73,7 @@ const translations = {
     addressLabel: "Office Address",
     addressValue: "No.1 Jiacheng Road, Pinghu Street, Longgang District, Shenzhen, Guangdong 518111 · Shenzhen Cailong Printing & Packaging Co., Ltd.",
     cta: "Chat on WhatsApp Now",
+    emailCta: "Email Us Now",
     qrCaption: "Scan to chat",
     online: "Online",
     responseTime: "Reply within 15 minutes",
@@ -114,6 +116,7 @@ const translations = {
     addressLabel: "オフィス住所",
     addressValue: "広東省深圳市龍崗区平湖街道嘉城路1号（518111）· 深圳市彩龍印刷包装有限公司",
     cta: "WhatsAppで相談",
+    emailCta: "メールで問い合わせ",
     qrCaption: "スキャンしてチャット",
     online: "オンライン",
     responseTime: "15分以内に専門スタッフが返信",
@@ -322,6 +325,17 @@ export default function ContactPage({ params }: ContactPageProps) {
                       </div>
                     </div>
                   </div>
+
+                  {/* Full-width Email CTA — orange, same size as WhatsApp */}
+                  <a
+                    href="mailto:zprintpro@outlook.com"
+                    data-cf-analytics="contact_email_cta_click"
+                    className="flex items-center justify-center gap-2 w-full bg-[#F87314] hover:bg-[#ea6d10] text-white font-bold py-3.5 px-6 rounded-xl transition-all hover:scale-[1.02] hover:shadow-lg hover:shadow-orange-200 mt-3"
+                  >
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                    {t.emailCta}
+                    <svg className="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                  </a>
                 </div>
               </div>
             </div>
