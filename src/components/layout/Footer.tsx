@@ -69,7 +69,6 @@ const translations = {
         title: '客戶服務',
         links: [
           { label: '聯絡方式', href: '/contact/' },
-          { label: 'WhatsApp查詢', href: 'https://wa.me/8619880851334' },
           { label: '常見問題', href: '/faq/' },
           { label: '追蹤訂單', href: '/contact/' },
         ],
@@ -131,7 +130,6 @@ const translations = {
         title: 'Customer Service',
         links: [
           { label: 'Contact Us', href: '/contact/' },
-          { label: 'WhatsApp', href: 'https://wa.me/8619880851334' },
           { label: 'FAQ', href: '/faq/' },
           { label: 'Track Order', href: '/contact/' },
         ],
@@ -193,7 +191,6 @@ const translations = {
         title: 'カスタマーサービス',
         links: [
           { label: 'お問い合わせ', href: '/contact/' },
-          { label: 'WhatsApp', href: 'https://wa.me/8619880851334' },
           { label: 'よくある質問', href: '/faq/' },
           { label: '注文追跡', href: '/contact/' },
         ],
