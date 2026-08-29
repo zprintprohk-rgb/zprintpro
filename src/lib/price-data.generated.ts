@@ -4986,23 +4986,23 @@ export const PRICE_TABLE_MAP: Record<string, PriceTableData> = {
       "tiers": [
         {
           "qty": 10,
-          "priceHKD": 129,
-          "priceUSD": 17,
-          "priceJPY": 2580,
+          "priceHKD": 160,
+          "priceUSD": 21,
+          "priceJPY": 3200,
           "weightKg": null
         },
         {
           "qty": 20,
-          "priceHKD": 198,
-          "priceUSD": 25,
-          "priceJPY": 3960,
+          "priceHKD": 240,
+          "priceUSD": 32,
+          "priceJPY": 4800,
           "weightKg": null
         },
         {
           "qty": 50,
-          "priceHKD": 405,
-          "priceUSD": 52,
-          "priceJPY": 8100,
+          "priceHKD": 450,
+          "priceUSD": 59,
+          "priceJPY": 9000,
           "weightKg": null
         },
         {
