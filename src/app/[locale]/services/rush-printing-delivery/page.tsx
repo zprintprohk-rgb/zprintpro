@@ -32,9 +32,9 @@ type Props = {
 // en/ja: 不带 Shenzhen/Hong Kong 硬塞前缀 (per §13.10)
 const metaMap: Record<string, { title: string; desc: string; keywords: string }> = {
   'zh-hk': {
-    title: '即日印刷・即日急件｜18:00 截單 聽日 12:00 前到 | 智印港 ZprintPro',
-    desc: '即日印刷 18:00 截單，100 張起印，順豐翌日中午 12:00 前送到。傳單 / 海報 / 貼紙 / 紙袋 / 畫冊 / 易拉寶 100 張起印，CMYK 全彩防水。WhatsApp 30 秒即時報價，15 分鐘電郵回覆承諾。',
-    keywords: '即日印刷,即日急件,18:00 截單,通宵印刷,翌日中午,順豐,合作點交收,CMYK 全彩,傳單 100 張,海報,貼紙,紙袋,畫冊,易拉寶,急件印刷,自營工廠',
+    title: '即日印刷 下午3時前落單即日交貨 | 智印港 ZprintPro',
+    desc: '即日印刷服務：下午 3 時前落單即日交貨，傳單/海報/貼紙全品類支援。免費 2 小時打稿，港九新界滿 HK$500 免費順豐，辦公室/港鐵站交收。30 秒 AI 報價，WhatsApp 即日回覆。',
+    keywords: '即日印刷,即日急件,下午3時前落單,即日交貨,免費 2 小時打稿,港九新界,免費順豐,辦公室交收,港鐵站交收,傳單,海報,貼紙,紙袋,畫冊,易拉寶,30 秒 AI 報價,WhatsApp 即日回覆',
   },
   en: {
     title: 'Same-Day Printing | Order by 6pm, Delivered Next Day 12pm | ZprintPro',
