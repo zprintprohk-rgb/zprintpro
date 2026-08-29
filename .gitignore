@@ -47,6 +47,18 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
+# zprintpro-en-us-images (per AGENTS.md §0.27.4 冻结名单, K3 8/28 06:19 push 决策红线)
+zprintpro-en-us-images/
+# _batch*.py (per AGENTS.md §0.27.4 永久排除)
+_batch*.py
+# 临时脚本 (per K3 8/28 C6 合同/发票根目录规则 + AGENTS.md §0.27)
+.hermes/_tmp_*.py
+.hermes/_tmp_*.ts
+.hermes/_tmp_*.json
+.hermes/_tmp_*.html
+.hermes/_tmp_*.log
+.hermes/_tmp_*.txt
+
 # IDE
 .vscode/
 .idea/
