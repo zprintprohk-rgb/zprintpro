@@ -67,28 +67,40 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
           {data.h2}
         </h2>
 
-        {/* V3.4 K3 7/31 拍板: 9 维度 SEO 深度 callout 块 (13 品类受益, 二级子分类页内容深度升级示范) */}
-        <div className="mb-8 bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-[#2873F5] rounded-r-lg p-5">
-          <p className="text-sm font-semibold text-[#2873F5] mb-3 flex items-center gap-2">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-              <path d="M8 1L10 6H15L11 9L13 14L8 11L3 14L5 9L1 6H6L8 1Z" fill="currentColor"/>
-            </svg>
-            {isZh
-              ? '本頁面符合 9 維度 SEO 深度標準 (二級子產品分類頁 V3.4 升級)'
-              : isJa
-              ? 'このページは9次元SEO深度基準に準拠 (二級子產品分類ページ V3.4 アップグレード)'
-              : 'This page meets the 9-Dimension SEO Depth Standard (Sub-Category V3.4 Upgrade)'}
-          </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-1.5 text-xs text-gray-700">
-            <span>✅ H1 唯一性 + 主關鍵詞前置</span>
-            <span>✅ 第一段 4 要素 (featuredSnippet)</span>
-            <span>✅ 9-12 段 H2/H3 長文 ≥2000 字</span>
-            <span>✅ 4-6 FAQ (Q[0-9]+[:：] 全/半角冒號)</span>
-            <span>✅ 5-Layer JSON-LD (5 schema 塊)</span>
-            <span>✅ @id 互引 (category → product → blog)</span>
-            <span>✅ 2-3 tables (規格/價格/工藝)</span>
-            <span>✅ 2-3 callouts (本塊即示範 1 個)</span>
-            <span>✅ 5-6 內鏈 (related products + 工藝 blog)</span>
+        {/* V3.5 K3 12:14 拍板: 采购决策 4 要素卡 (替换 M3 V3.4 SEO 自检块, 修复 P0 UX 错误)
+            设计依据: 黄金位置(H2 下)=用户价值主张,而非 SEO 术语自检;每格=可被 AI 引用的事实陈述(GEO 友好);首屏回答"多少钱/多久/材质/怎么下单"4 个采购核心问题 */}
+        <div className="mb-8 grid grid-cols-2 lg:grid-cols-4 gap-3">
+          <div className="bg-white border-2 border-[#2873F5] rounded-lg p-4 shadow-sm">
+            <p className="text-xs text-gray-500 mb-1 font-medium">
+              {isZh ? '起印量' : isJa ? '最小注文' : 'Min. Order'}
+            </p>
+            <p className="text-lg md:text-xl font-bold text-[#2873F5] leading-tight">
+              {isZh ? '50 個起' : isJa ? '50 個から' : 'From 50 pcs'}
+            </p>
+          </div>
+          <div className="bg-white border-2 border-[#F87314] rounded-lg p-4 shadow-sm">
+            <p className="text-xs text-gray-500 mb-1 font-medium">
+              {isZh ? '價格錨點' : isJa ? '価格目安' : 'Price Anchor'}
+            </p>
+            <p className="text-lg md:text-xl font-bold text-[#F87314] leading-tight">
+              {isZh ? 'HK$0.45/張起' : isJa ? 'HK$0.45/枚から' : 'From HK$0.45/pc'}
+            </p>
+          </div>
+          <div className="bg-white border-2 border-[#10B981] rounded-lg p-4 shadow-sm">
+            <p className="text-xs text-gray-500 mb-1 font-medium">
+              {isZh ? '交期' : isJa ? '納期' : 'Lead Time'}
+            </p>
+            <p className="text-lg md:text-xl font-bold text-[#10B981] leading-tight">
+              {isZh ? '5-7 天・DHL 全球 2-4 天' : isJa ? '5-7日・DHL全球 2-4日' : '5-7 days · DHL 2-4 days global'}
+            </p>
+          </div>
+          <div className="bg-white border-2 border-[#8B5CF6] rounded-lg p-4 shadow-sm">
+            <p className="text-xs text-gray-500 mb-1 font-medium">
+              {isZh ? '質保 / 客服' : isJa ? '保証 / サポート' : 'Warranty / Support'}
+            </p>
+            <p className="text-lg md:text-xl font-bold text-[#8B5CF6] leading-tight">
+              {isZh ? 'WhatsApp 5 分鐘報價' : isJa ? 'WhatsApp 5分返信' : 'WhatsApp quote in 5 min'}
+            </p>
           </div>
         </div>
 
