@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { ChevronLeft, ChevronRight, ArrowRight } from 'lucide-react';
 import { Locale } from '@/lib/seo';
 import { getAbVariant, CTA_VARIANTS, HERO_H1_VARIANTS, trackEvent, AbVariant } from '@/lib/analytics';
+import { trackCtaClick } from '@/lib/tracking';
 
 function getQuoteHref(slideHref: string): string {
   // /product/xxx/ → /contact/?product=xxx
@@ -177,7 +178,11 @@ export function HeroBanner({ locale }: HeroBannerProps) {
                       </h1>
                       <Link
                         href={`${localePrefix}${getQuoteHref(slide.href)}`}
-                        onClick={() => trackEvent('hero_cta_click', { variant: abVariant, locale, slide_idx: currentSlide })}
+                        onClick={() => {
+                          trackEvent('hero_cta_click', { variant: abVariant, locale, slide_idx: currentSlide });
+                          // 2026-08-29 K3 拍板: Supabase tracking_events 009 (0 PII, sendBeacon)
+                          trackCtaClick(`hero-${currentSlide}`, undefined);
+                        }}
                         className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-bold px-6 py-3 rounded-lg transition-colors shadow-lg whitespace-nowrap flex-shrink-0"
                       >
                         {CTA_VARIANTS[abVariant][locale]} <ArrowRight className="h-4 w-4" />

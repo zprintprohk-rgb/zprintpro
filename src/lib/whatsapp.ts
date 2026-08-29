@@ -2,6 +2,7 @@
  * 统一 WhatsApp 链接生成器
  * 替换所有硬编码 wa.me 链接，带上下文（产品名/尺寸/材质/数量/来源）
  */
+import { trackWhatsappClick } from './tracking';
 
 export interface WhatsAppContext {
   productName?: string;
@@ -115,6 +116,8 @@ export function getWhatsAppLinkProps(
         import('@/lib/quote-tracking').then(({ trackQuoteRequestFromWhatsApp }) => {
           trackQuoteRequestFromWhatsApp('whatsapp-cta', locale, ctx);
         });
+        // 4) 2026-08-29 K3 拍板: 统一事件 (009 tracking_events, 0 PII, sendBeacon 兜底)
+        trackWhatsappClick(ctx.source || 'unknown', ctx.productName || undefined);
       }
     },
   };

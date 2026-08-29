@@ -11,6 +11,7 @@ import { Footer } from '@/components/layout/Footer';
 // 2026-07-05 加：右下角浮动询盘按钮（修复 en 高点击低询盘问题，详情见组件注释）
 import { FloatingQuoteCTA } from '@/components/layout/FloatingQuoteCTA';
 import { TrackingEvents } from '@/components/analytics/TrackingEvents';
+import { SupabaseTracking } from '@/components/tracking/SupabaseTracking';
 import { BreadcrumbNav } from '@/components/breadcrumb-nav';
 import { CartProvider } from '@/lib/cart-context';
 import { htmlLangMap } from '@/types/locale';
@@ -228,6 +229,8 @@ export default function RootLayout({
           <Footer locale={safeLocale} />
           <FloatingQuoteCTA locale={safeLocale} />
           <TrackingEvents />
+          {/* 2026-08-29 K3 拍板: 路由变化触发 page-view → tracking_events (009) */}
+          <SupabaseTracking />
           {/* 2026-08-14 修复 (per §0.6 保守 + 8/13 conversion-link-check 6 retrofit GA4 broken): */}
           {/* 全站 blog/PDP 页面补 1 个 gtag contact_form_submit 事件, 走 CF Beacon (TrackingEvents) 双轨 */}
           {/* 字串含 'gtag(\'event\', \'contact_form_submit\'' 供 conversion-verify 8/13 SSR HTML 检测命中 */}

@@ -46,6 +46,7 @@ import { getSkuSeo } from '@/data/sku-seo-data';
 import { generateFAQSchema } from '@/lib/faq-schema';
 import { coreProductFAQMap } from '@/data/product-faqs';
 import { RegionalContent, RegionalCta, RegionalTrustBadges } from '@/components/seo/RegionalContent';
+import { ProductViewTracker } from '@/components/tracking/ProductViewTracker';
 import { convertPriceRangeString, convertToFromPrice, getUnitPriceAnchor, getDisplayAnchor } from '@/lib/pricing';
 import { generateWhatsAppLink } from '@/lib/whatsapp';
 import { getPriceTableForSlug, findClosestTierBatch } from '@/lib/price-injector';
@@ -336,6 +337,8 @@ export default function ProductPage({
   
   return (
     <>
+      {/* 2026-08-29 K3 拍板: 产品页 → product-view 事件 → tracking_events (009) */}
+      <ProductViewTracker productSlug={slug} productName={productTitle} />
       {/* 结构化数据 */}
       <JsonLd data={productJsonLd} />
       <JsonLd data={productImageJsonLd} />

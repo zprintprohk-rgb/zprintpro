@@ -35,6 +35,7 @@ import { Pagination } from '@/components/Pagination';
 import { CategoryPillarContent, generateFaqSchema } from '@/components/CategoryPillarContent';
 import { CategoryIndustries } from '@/components/category/CategoryIndustries';
 import { CategorySharpHooks } from '@/components/category/CategorySharpHooks';
+import { CategoryViewTracker } from '@/components/tracking/CategoryViewTracker';
 import { RegionalContent, RegionalCta, RegionalTrustBadges } from '@/components/seo/RegionalContent';
 
 // 生成静态参数 - 13分类 × 3语言 = 39个路径
@@ -87,6 +88,13 @@ export default function CategoryPage({
 
   // 获取分类下的产品
   const categoryProducts = getProductsByCategory(slug);
+
+  // 类目名 (per locale)
+  const localizedCategoryName = locale === 'zh-hk'
+    ? category.name
+    : locale === 'en'
+      ? (category.nameEn || category.name)
+      : (category.nameJa || category.name);
 
   // 排序 — 2026-07-13 真正接上 sort 功能 (URL ?sort=price-asc/price-desc/popularity)
   // popularity = 默认, 按 products 数组原顺序 (跟 server-side default 一致)
@@ -323,6 +331,8 @@ export default function CategoryPage({
 
   return (
     <>
+      {/* 2026-08-29 K3 拍板: 类目页 → category-view 事件 → tracking_events (009) */}
+      <CategoryViewTracker category={localizedCategoryName} productSlug={slug} />
       {/* 结构化数据：面包屑 + 产品列表 + 本地商家 + FAQPage + HowTo + Speakable */}
       <JsonLd data={breadcrumbJsonLd} />
       <JsonLd data={itemListJsonLd} />

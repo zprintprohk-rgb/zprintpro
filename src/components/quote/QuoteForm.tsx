@@ -9,6 +9,7 @@ import { Send, Paperclip, CheckCircle, AlertCircle, Upload, X, Loader2, MessageC
 import { categories, products, getProductBySlug } from '@/data/products';
 import { trackContactFormSubmit } from '@/lib/analytics';
 import { generateQuoteRef, generateQuoteSheetLink, generateWhatsAppLink, type QuoteSheetContext } from '@/lib/whatsapp';
+import { trackQuoteSubmit, trackQuoteSubmitSuccess, trackQuoteSubmitError } from '@/lib/tracking';
 import { QuoteTrustBar } from './QuoteTrustBar';
 
 const quoteSchema = z.object({
@@ -263,6 +264,9 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
     setIsSubmitting(true);
     setSubmitStatus('idle');
 
+    // 2026-08-29 K3 拍板: 询盘提交意图 (Supabase tracking_events 009)
+    trackQuoteSubmit(productSlug || undefined);
+
     // 結構化報價單上下文（成功頁 WhatsApp 加速 CTA / 失敗降級共用）
     const productName =
       data.category || prefillCategory ||
@@ -363,6 +367,8 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
       }
 
       trackContactFormSubmit(files.length > 0);
+      // 2026-08-29 K3 拍板: 询盘成功 (Supabase tracking_events 009, 0 PII, ref 跟 008 关联)
+      trackQuoteSubmitSuccess(sheet.ref, productSlug || undefined);
       setSubmitStatus('success');
       form.reset();
       setFiles([]);
@@ -370,6 +376,8 @@ export function QuoteForm({ locale = 'zh-hk' }: QuoteFormProps) {
       // 降級通道：自動打開 WhatsApp，報價單已預填，不讓用戶白填
       window.open(generateQuoteSheetLink(locale, sheet), '_blank', 'noopener,noreferrer');
       setSubmitStatus('fallback');
+      // 2026-08-29 K3 拍板: 询盘失败 (Supabase tracking_events 009, 错误类型, 0 PII)
+      trackQuoteSubmitError('whatsapp-fallback');
     } finally {
       setIsSubmitting(false);
     }

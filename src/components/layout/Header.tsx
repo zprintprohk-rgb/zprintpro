@@ -8,6 +8,7 @@ import { Menu, X, Phone, Mail, ShoppingCart, ChevronDown } from 'lucide-react';
 import { Locale, getWebLogoUrl, getWebLogoAlt } from '@/lib/seo';
 import { useCart } from '@/lib/cart-context';
 import { getWhatsAppLinkProps } from '@/lib/whatsapp';
+import { trackPhoneClick } from '@/lib/tracking';
 import { SearchDropdown } from './SearchDropdown';
 
 interface HeaderProps {
@@ -268,7 +269,7 @@ export function Header({ locale }: HeaderProps) {
             {/* 左：电话 + 邮箱（放大 + 增强 hover）
                 2026-07-27 移动端修复: 号码强制一行 (whitespace-nowrap), <360px 隐藏电话图标保号码 */}
             <div className="flex items-center text-gray-700 font-medium min-w-0">
-              <a href={`tel:${t.phone.replace(/\D/g, '')}`} className="flex items-center gap-2 hover:text-[#2873F5] transition-colors pl-1 pr-4 border-r border-gray-300 whitespace-nowrap text-xs sm:text-sm lg:text-base">
+              <a href={`tel:${t.phone.replace(/\D/g, '')}`} onClick={() => trackPhoneClick('header')} className="flex items-center gap-2 hover:text-[#2873F5] transition-colors pl-1 pr-4 border-r border-gray-300 whitespace-nowrap text-xs sm:text-sm lg:text-base">
                 <Phone className="w-4 h-4 max-[359px]:hidden" />
                 <span className="whitespace-nowrap">{t.phone}</span>
               </a>

@@ -7,6 +7,7 @@ import { Phone, Mail, MapPin, Facebook, Instagram, Linkedin, Youtube, ChevronDow
 import { Locale, getWebLogoUrl, getWebLogoAlt } from '@/lib/seo';
 import { GeoFooterText } from '@/components/seo/GeoFooterText';
 import { generateWhatsAppLink, getWhatsAppLinkProps } from '@/lib/whatsapp';
+import { trackPhoneClick, trackCtaClick } from '@/lib/tracking';
 
 function getLocalizedHref(href: string, locale: Locale): string {
   if (href.startsWith('http') || href.startsWith('mailto') || href.startsWith('tel') || href.startsWith('javascript')) {
@@ -272,7 +273,7 @@ export function Footer({ locale }: FooterProps) {
                 <MapPin className="w-4 h-4 flex-shrink-0" />
                 <span className="text-sm">{t.address}</span>
               </div>
-              <a href={`tel:${t.phone.replace(/\D/g, '')}`} data-cf-analytics="footer_phone_click" className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors">
+              <a href={`tel:${t.phone.replace(/\D/g, '')}`} data-cf-analytics="footer_phone_click" onClick={() => trackPhoneClick('footer')} className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors">
                 <Phone className="w-4 h-4" />
                 <span className="text-sm">{t.phone}</span>
               </a>
