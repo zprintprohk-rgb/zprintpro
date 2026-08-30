@@ -2650,7 +2650,7 @@ export const products: Product[] = [
       printMethod: '柯式或高品數碼',
       finishing: 'PP 裱貼、泡沫板裱貼（可選）',
     },
-    price_range: 'HK$129-2,442',
+    price_range: 'HK$95-1,017',
     basePrice: 129,
     basePrice_en: 2.3,
     basePrice_ja: 300,
