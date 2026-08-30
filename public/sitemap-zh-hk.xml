@@ -661,16 +661,6 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zprintpro.com/zh-hk/product/adhesive-posters/" />
   </url>
   <url>
-    <loc>https://zprintpro.com/zh-hk/product/cosmetic-boxes/</loc>
-    <lastmod>2026-08-30</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://zprintpro.com/zh-hk/product/cosmetic-boxes/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://zprintpro.com/en/product/cosmetic-boxes/" />
-    <xhtml:link rel="alternate" hreflang="ja-JP" href="https://zprintpro.com/ja/product/cosmetic-boxes/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://zprintpro.com/zh-hk/product/cosmetic-boxes/" />
-  </url>
-  <url>
     <loc>https://zprintpro.com/zh-hk/product/food-boxes/</loc>
     <lastmod>2026-08-30</lastmod>
     <changefreq>weekly</changefreq>
@@ -679,6 +669,16 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://zprintpro.com/en/product/food-boxes/" />
     <xhtml:link rel="alternate" hreflang="ja-JP" href="https://zprintpro.com/ja/product/food-boxes/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://zprintpro.com/zh-hk/product/food-boxes/" />
+  </url>
+  <url>
+    <loc>https://zprintpro.com/zh-hk/product/cosmetic-boxes/</loc>
+    <lastmod>2026-08-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="zh-Hant-HK" href="https://zprintpro.com/zh-hk/product/cosmetic-boxes/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://zprintpro.com/en/product/cosmetic-boxes/" />
+    <xhtml:link rel="alternate" hreflang="ja-JP" href="https://zprintpro.com/ja/product/cosmetic-boxes/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://zprintpro.com/zh-hk/product/cosmetic-boxes/" />
   </url>
   <url>
     <loc>https://zprintpro.com/zh-hk/product/mailer-boxes/</loc>

@@ -1,6 +1,7 @@
 // 2026-08-26 K3 拍板 (autoclaw 设计稿 verbatim 视觉优化): section 104px + sc-card 34px 28px padding + 52x52 蓝底白字 icon + promise pill
 // 数据来源: .cluster/rush-page-20260826/deliverable-A-rush-page.html L266-311 + K3 15:09 上传附件
 
+import { Building2, FileText, Image, Megaphone, PanelsTopLeft, Sticker, Check } from "lucide-react";
 import type { Locale } from '@/lib/seo';
 
 type Props = { locale: Locale };
@@ -69,7 +70,7 @@ export default function RushScenarios({ locale }: Props) {
         <p className="text-[#6B7280] max-w-[560px] mb-14 text-base md:text-lg leading-[1.6]">{d.sub}</p>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[22px]">
-          {d.cards.map((c) => (
+          {d.cards.map((c, i) => { const ICONS = [Building2, FileText, Image, Megaphone, PanelsTopLeft, Sticker]; const Icon = ICONS[i % ICONS.length]; return (
             <article
               key={c.title}
               className="bg-white border border-[#E5E7EB] rounded-2xl p-[34px] sm:p-7 hover:border-[#F87314] hover:shadow-[0_10px_30px_rgba(17,24,39,0.08)] transition-all"
@@ -79,31 +80,18 @@ export default function RushScenarios({ locale }: Props) {
               <div
                 className="w-[52px] h-[52px] rounded-[14px] bg-[#2873F5] flex items-center justify-center text-white mb-5"
               >
-                <svg
-                  width="26"
-                  height="26"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.8"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  aria-hidden="true"
-                >
-                  <path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6M9 10h.01M15 10h.01M9 14h.01M15 14h.01" />
-                </svg>
+                <Icon size={26} strokeWidth={1.8} />
               </div>
               <h3 className="text-xl font-bold text-[#111827] leading-[1.2] mb-2">{c.title}</h3>
               <p className="text-[14.5px] text-[#6B7280] mt-2 leading-[1.6]">{c.desc}</p>
               {/* promise pill (border-radius 99px, 橙底橙字) */}
               <span
-                className="inline-flex items-center gap-[7px] mt-4 text-[14px] font-bold text-[#F87314] px-[14px] py-[7px] rounded-full"
-                style={{ background: '#FEF1E6' }}
-              >
-                ✓ {c.promise}
-              </span>
+                  className="inline-flex items-center gap-[7px] mt-4 text-[14px] font-semibold text-[#374151] px-[14px] py-[7px] rounded-full bg-[#F3F4F6] border border-[#E5E7EB]"
+                >
+                  <Check size={14} strokeWidth={2.5} className="text-[#111827]" /> {c.promise}
+                </span>
             </article>
-          ))}
+          );})}
         </div>
       </div>
     </section>
