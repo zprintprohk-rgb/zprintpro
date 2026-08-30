@@ -143,8 +143,15 @@ SELECT
   COUNT(DISTINCT DATE_TRUNC('day', created_at)) AS active_days,
   MIN(created_at) AS first_event_at,
   MAX(created_at) AS last_event_at,
-  ARRAY_AGG(DISTINCT event_type ORDER BY event_type) AS event_types,
-  ARRAY_AGG(DISTINCT page_url ORDER BY created_at) FILTER (WHERE event_type = 'page-view') AS page_view_paths
+  ARRAY_AGG(DISTINCT event_type) AS event_types,
+  -- 修 42P10: ARRAY_AGG(DISTINCT x ORDER BY y) 在 PG 非法 (DISTINCT 去重按 x, ORDER BY 按 y 冲突)
+  -- 改用子查询: 先按时间序聚合 page-view 路径, 再 DISTINCT
+  ARRAY(
+    SELECT DISTINCT page_url FROM tracking_events t2
+    WHERE t2.ga4_client_id = tracking_events.ga4_client_id
+      AND t2.event_type = 'page-view'
+    ORDER BY page_url
+  ) AS page_view_paths
 FROM tracking_events
 WHERE ga4_client_id IS NOT NULL
 GROUP BY ga4_client_id
