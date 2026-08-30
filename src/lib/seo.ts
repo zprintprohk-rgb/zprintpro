@@ -351,9 +351,9 @@ const categorySeoData: Record<string, {
     // DHL Express 保留 (跨境品牌信任) + FedEx Ground (美国本土配送感)
     titles: {
       // 2026-07-17 GSC CTR 修复: 起价前置 + 免費設計/即日 hook, 机会词 貼紙印刷/貼紙訂製
-      'zh-hk': '貼紙印刷 防水抗UV | 1張起印・異形裁切・燙金 | 智印港',
-      'en': 'Sticker Printing from $0.05 | 1 MOQ + Free Proof | ZprintPro',
-      'ja': 'ステッカー印刷｜1枚〜・防水・短納期2-4日｜ZprintPro',
+      'zh-hk': '小批量貼紙印刷 防水抗UV | 1張起印・異形裁切・燙金 | 智印港',
+      'en': 'Small Batch Sticker Printing from $0.05 | 1 MOQ + Free Proof | ZprintPro',
+      'ja': 'ダイカットステッカー 防水印刷｜1枚〜・防水・短納期2-4日｜ZprintPro',
     },
     keywords: {
       'zh-hk': '貼紙印刷,透明貼,防水貼紙,燙金貼紙,異形貼紙,小批量貼紙,LOGO貼紙,標籤印刷,小量貼紙,UV貼紙,啞膠貼紙,亮膜貼紙,封口貼紙,包裝貼紙,餐廳貼紙',
@@ -373,8 +373,8 @@ const categorySeoData: Record<string, {
     // 分散在 nav 独立栏目的反模式已移除, 全部权重归 flyers
     titles: {
       // 2026-07-17 GSC CTR 修复: 机会词 傳單印刷印刷/傳單印刷 前置
-      'zh-hk': '傳單印刷 100張起・A4/A5/A3 雙面 | HK$0.18 起 | 智印港',
-      'en': 'Flyer Printing from $0.06 | 100 MOQ + Free Shipping | ZprintPro',
+      'zh-hk': 'A5 宣傳單張印刷 100張起・A4/A5/A3 雙面 | HK$0.18 起 | 智印港',
+      'en': 'China Catalog Printing from $0.06 | 100 MOQ + Free Shipping | ZprintPro',
       'ja': 'チラシ印刷｜100枚〜・両面・最短即日｜ZprintPro',
     },
     keywords: {
@@ -394,9 +394,9 @@ const categorySeoData: Record<string, {
   'packaging': {
     titles: {
       // 2026-07-17 GSC CTR 修复: 机会词 包裝盒訂製/包裝盒印刷 前置
-      'zh-hk': '食品包裝盒訂製 100個起 | 結構設計 + 燙金 + DHL 全球 + 30 秒報價 | 智印港',
-      en: 'Food Safe Packaging Boxes from $0.85 | 100 MOQ + Free 3D + Made for USA | ZprintPro',
-      ja: '食品パッケージ箱印刷 100個〜 | 構造設計 + 箔押し + 全国送料 + 短納期 | ZprintPro',
+      'zh-hk': '紙盒訂製 100個起 | 食品包裝盒 + 結構設計 + 燙金 + DHL 全球 | 智印港',
+      en: 'Custom Packaging Boxes from $0.85 | 100 MOQ + Free 3D + Made for USA | ZprintPro',
+      ja: 'クラフト紙 パッケージ印刷 100個〜 | 構造設計 + 箔押し + 全国送料 + 短納期 | ZprintPro',
     },
     keywords: {
       'zh-hk': '包裝盒訂製,紙盒訂製,彩盒訂製,禮盒訂製,結構設計,燙金包裝,小批量包裝,定制包裝,品牌包裝,電商包裝,化妝品包裝,食品包裝,茶葉包裝,電子產品包裝,食品包裝盒,食品包裝印刷,化妝品包裝盒,DHL全球',
@@ -413,7 +413,7 @@ const categorySeoData: Record<string, {
 'posters': {
     titles: {
       // 2026-07-17 GSC CTR 修复: 机会词 海報印刷/印海報 前置
-      'zh-hk': '海報印刷 A0/A1/A2 + MTR 12 sheet 燈箱 | 防水 + 1張起印 + 4小時打稿 | 智印港',
+      'zh-hk': 'A2 海報印刷 A0/A1/A2 + MTR 12 sheet 燈箱 | 防水 + 1張起印 + 4小時打稿 | 智印港',
       'en': '2 Meter Poster Printing A0-A2 UV Rush | ZprintPro',
       'ja': '2メートル ポスター印刷 A0/A1/A2 防水UV 短納期 | ZprintPro',
     },
@@ -433,7 +433,7 @@ const categorySeoData: Record<string, {
       // 2026-08-26 §6 轨 1 + 智印港 40% CTR 公式 + 撞墙 = M3 自主立即做
       // 9 月中前纸袋衝首页 (GSC 8/24 紙袋印刷 pos 12.23/14.77 距首页 2-5 位)
       // 2026-08-26 K3 批 1: 注入「急單 18:00 截單」+ パール/珠光
-      'zh-hk': '紙袋印刷 100個起 + 牛皮/白卡 + 急單 18:00 截單 | HK$8起・免費設計 | 智印港',
+      'zh-hk': '牛皮紙袋訂製 100個起 + 牛皮/白卡 + 急單 18:00 截單 | HK$8起・免費設計 | 智印港',
       en: 'Paper Bag Printing 100 MOQ + Kraft/White Card/Pearl + Rush 6PM Cut-off | from $1.84 + Free Design + Made for USA | ZprintPro',
       ja: '紙袋印刷 100個〜 + クラフト/白カード/パール + 短納期 18:00 締切 | ¥240〜・無料デザイン・日本全国 | ZprintPro',
     },
@@ -470,8 +470,8 @@ const categorySeoData: Record<string, {
 'japan-doujin': {
     titles: {
       'zh-hk': '同人周邊印刷 10本起 · 同人誌/亞克力/缶バッヂ/明信片 Comiket 24h特急 | 智印港',
-      en: 'Doujinshi Printing Free Shipping · 10 MOQ Acrylic/Can Badge/Postcard | ZprintPro',
-      ja: '同人誌印刷 10部〜 · アクリル/缶バッジ/ポストカード コミケ24時間特急 | ZprintPro',
+      en: 'Small Batch Doujinshi Printing Free Shipping · 10 MOQ Acrylic/Can Badge/Postcard | ZprintPro',
+      ja: '同人誌印刷 10部〜 USA コミッション · アクリル/缶バッジ/ポストカード コミケ24時間特急 | ZprintPro',
     },
     keywords: {
       'zh-hk': '同人誌印刷,同人周邊,亞克力鑰匙扣,亞克力立牌,全息貼紙,和紙膠帶,罐型襟章,明信片套裝,環保托特袋,Comiket印刷,VTuber周邊,動漫角色周邊,推し活周邊,日系周邊訂製',
@@ -540,7 +540,7 @@ const categorySeoData: Record<string, {
   },
   'banners': {
     titles: {
-      'zh-hk': '戶外橫額印刷 1個起 | 防水防UV + 易拉寶 + X架 | 智印港',
+      'zh-hk': '摺頁印刷 1個起 | 防水防UV + 易拉寶 + X架 | 智印港',
       'en': 'Outdoor Banner Printing from $12 | 1 MOQ + Waterproof UV | ZprintPro',
       'ja': '屋外バナー印刷｜1枚〜・防水UV・ロールアップ｜ZprintPro',
     },
@@ -557,7 +557,7 @@ const categorySeoData: Record<string, {
   },
   'books': {
     titles: {
-      'zh-hk': '書刊印刷 50本起 | 騎馬釘 + 膠裝 + 精裝 + 教材繪本 | 智印港',
+      'zh-hk': '騎馬釘小冊子印刷 50本起 | 騎馬釘 + 膠裝 + 精裝 + 教材繪本 | 智印港',
       'en': 'Booklet Printing from $1.20 | 50 MOQ + Saddle Stitch | ZprintPro',
       'ja': '冊子印刷｜50部〜・中綴じ・無線綴じ・上製本｜ZprintPro',
     },
@@ -593,7 +593,7 @@ const categorySeoData: Record<string, {
     // 2026-08-17 K3 §11 业务子类目豁免: 咭片/名片 归并到 greeting-cards
     // 全球市场 $20B+ (Grand View/Ken Research 2025), US 70B 张/年, 90% 家庭买
     titles: {
-      'zh-hk': '賀卡印刷 · 100 張起印 · 3D 立體爆款 · 順豐本地滿 HK$500 免費',
+      'zh-hk': '燙金賀卡印刷 · 100 張起印 · 3D 立體 + 燙金 UV · 順豐本地滿 HK$500 免費',
       en: 'Greeting Card Printing from $0.50 | 3D Pop-up Available | 100 MOQ + Free Proof | ZprintPro',
       ja: 'グリーティングカード印刷 · 100枚から · 立体 3D 対応 | ZprintPro',
     },
@@ -612,9 +612,9 @@ const categorySeoData: Record<string, {
     // 2026-08-17 K3 §11 业务子类目豁免: 喜帖 归并到 wedding-invitations
     // 全球婚礼印刷市场 $13B+ (Bonafide 2025), 喜帖 $4.29B CAGR 6.3%
     titles: {
-      'zh-hk': '喜帖印刷 · 整套婚慶配套 · 燙金 UV 工艺 · 100 套起印',
-      en: 'Wedding Invitation Printing from $1.20 | Foil/UV Finish | 50 Sets MOQ | ZprintPro',
-      ja: '結婚式招待状印刷 · 50セットから · 箔押し/UV 仕上げ | ZprintPro',
+      'zh-hk': '燙金喜帖印刷 · 整套婚慶配套 · 燙金 UV 工艺 · 100 套起印',
+      en: 'Foil Wedding Invitation Printing from $1.20 | Foil/UV Finish | 50 Sets MOQ | ZprintPro',
+      ja: '結婚式招待状 箔押し印刷 · 50セットから · 箔押し/UV 仕上げ | ZprintPro',
     },
     keywords: {
       'zh-hk': '喜帖印刷,婚禮喜帖,結婚請帖,燙金喜帖,UV 喜帖,Save the Date,答謝卡,婚慶節目單,婚慶菜單,婚慶整套,客製喜帖,訂製喜帖,中式喜帖,西式喜帖',
@@ -631,9 +631,9 @@ const categorySeoData: Record<string, {
     // 2026-08-17 K3 §11 业务子类目豁免: 酒水牌 / 名牌卡 归并到 place-cards
     // 婚宴台卡 $123M (6.98% of Wedding Stationery $1.76B 2025), 跨 婚庆 + 餐饮 + 商务 场景
     titles: {
-      'zh-hk': '台卡 / 酒水牌 / 座位卡印刷 · 50 張起印 · 燙金 / 壓紋',
-      en: 'Place Card / Drink Token Printing from $0.30 | 50 MOQ + Foil/Embossing | ZprintPro',
-      ja: '席札 / ドリンクトークン印刷 · 50枚から · 箔押し/エンボス | ZprintPro',
+      'zh-hk': '婚宴枱卡印刷 · 50 張起印 · 燙金 / 壓紋',
+      en: 'Wedding Place Card Printing from $0.30 | 50 MOQ + Foil/Embossing | ZprintPro',
+      ja: '結婚式 席札印刷 · 50枚から · 箔押し/エンボス | ZprintPro',
     },
     keywords: {
       'zh-hk': '台卡印刷,酒水牌印刷,座位卡印刷,名牌卡印刷,席位圖,婚宴台卡,餐廳台卡,咖啡廳台卡,會議名牌,展會名牌,客製台卡,燙金台卡,壓紋台卡,FSC 認證台卡',

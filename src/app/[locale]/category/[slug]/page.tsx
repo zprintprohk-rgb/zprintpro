@@ -140,20 +140,20 @@ export default function CategoryPage({
   // 2026-07-09 PM+UX+SEO 美国市场优化 v5: en 全部类目 H1 加 "Free Shipping + Made for USA + FedEx/DHL" sharp hook
   const customH1Map: Record<string, Record<string, string>> = {
     'packaging': {
-      'zh-hk': '香港包裝盒印刷 — 禮盒 / 化妝品盒 / 食品盒 / 快遞盒 / 天地蓋盒',
-      'en': 'Custom Packaging Boxes Made in USA-Friendly · 100 MOQ Free Shipping over $99',
-      'ja': 'パッケージボックス カスタム — ギフト / 化粧 / 食品 / メール便 / 組み立て',
+      'zh-hk': '香港紙盒訂製 食品包裝 — 禮盒 / 化妝品盒 / 食品盒 / 快遞盒 / 天地蓋盒',
+      'en': 'Custom Packaging Boxes Made in USA · 100 MOQ Free Shipping over $99 · Small Batch Custom Boxes',
+      'ja': 'クラフト紙 パッケージ印刷 カスタム — ギフト / 化粧 / 食品 / メール便 / 組み立て',
     },
     'paper-bags': {
-      'zh-hk': '香港紙袋印刷定製 — 牛皮紙袋 / 白卡紙袋 / 精品紙袋 / 環保紙袋',
+      'zh-hk': '香港牛皮紙袋訂製 — 牛皮紙袋 / 白卡紙袋 / 精品紙袋 / 環保紙袋',
       'en': 'Custom Paper Bags Free Shipping · 100 MOQ FSC Kraft Eco-Friendly',
       'ja': '紙袋印刷 カスタム — クラフト / ホワイトカード / エコ / ギフト',
     },
 'flyers': {
       // 2026-07-09 SEO 复盘 v3: 即日 + 數碼快印前置 (吸收原本独立 nav 「即日服務」权重)
       // 2026-07-09 v5 美国市场: 加 Free Shipping + FedEx Ground + Same Day sharp hook
-      'zh-hk': '香港即日傳單印刷印刷 — A4/A5 數碼快印 / 摺頁 / 開業傳單 / 24 小時急件',
-      en: 'Same-Day Flyers Free Shipping over $99 · 100 MOQ A4/A5 Digital + FedEx Ground',
+      'zh-hk': '香港 A5 宣傳單張印刷 — A4/A5 數碼快印 / 摺頁 / 開業傳單 / 24 小時急件',
+      en: 'China Catalog Printing Free Shipping over $99 · 100 MOQ A4/A5 Digital + FedEx Ground · Catalog Printing China',
       ja: '香港即日チラシ印刷 — A4/A5 デジタル+オフセット / 折込 / 開業チラシ / 24時間特急',
     },
     'menus': {
@@ -168,22 +168,22 @@ export default function CategoryPage({
       'ja': 'ポチ袋印刷 カスタム 11月前就位 — 箔押し / 旧正月 / キャラクター / 企業ロゴ',
     },
     'stickers': {
-      'zh-hk': '香港貼紙印刷定製 — 防水貼紙 / 透明貼紙 / 異形貼紙 / 標籤貼紙',
-      'en': 'Custom Stickers Free Shipping · 50 MOQ Die-Cut Vinyl Waterproof · Made for USA Small Business',
-      'ja': 'ステッカー印刷 カスタム — 防水 / 透明 / ダイカット / 商品ラベル',
+      'zh-hk': '香港小批量貼紙印刷定製 — 防水貼紙 / 透明貼紙 / 異形貼紙 / 標籤貼紙',
+      'en': 'Small Batch Sticker Printing Free Shipping · 50 MOQ Die-Cut Vinyl Waterproof · Made for USA Small Business',
+      'ja': 'ダイカットステッカー 防水印刷 — 防水 / 透明 / ダイカット / 商品ラベル',
     },
     'posters': {
-      'zh-hk': '香港海報印刷定製 — A1/A2 海報 / 戶外海報 / 展覽海報 / 大圖輸出',
+      'zh-hk': '香港 A2 海報印刷 — A1/A2 海報 / 戶外海報 / 展覽海報 / 大圖輸出',
       'en': 'Custom Posters Free Shipping · A1/A2 Outdoor Waterproof 1 MOQ · USA Trade Show',
       'ja': 'ポスター印刷 カスタム — A1/A2 / 屋外 / 展示 / 大判出力',
     },
     'banners': {
-      'zh-hk': '香港橫幅印刷 — 易拉寶 / 戶外橫幅 / 展覽橫幅 / 車身廣告',
+      'zh-hk': '香港摺頁印刷 — 易拉寶 / 戶外橫幅 / 摺頁印刷 / 展覽橫幅 / 車身廣告',
       'en': 'Custom Banners Free Shipping · 1 MOQ Roll-Up X-Stand Waterproof UV · USA Trade Show',
       'ja': 'バナー印刷 カスタム — ロールアップ / 屋外 / 展示 / 車両広告',
     },
     'books': {
-      'zh-hk': '香港畫冊印刷 — 騎馬釘 / 膠裝書 / 精裝書 / 螺旋裝 / 兒童繪本',
+      'zh-hk': '香港騎馬釘小冊子印刷 — 騎馬釘 / 膠裝書 / 精裝書 / 螺旋裝 / 兒童繪本',
       'en': 'Custom Book Printing Free Shipping · 50 MOQ Saddle Hardcover Perfect Bound · USA Authors',
       'ja': '冊子印刷 カスタム — 中綴じ / 無線綴じ / 上製本 / スパイラル / 絵本',
     },
@@ -204,7 +204,7 @@ export default function CategoryPage({
       'ja': 'カレンダー印刷 2027 9月最後黃金窗 — デスク / 壁掛け / 2027年 / 箔押し上製本',
     },
     'greeting-cards': {
-      'zh-hk': '香港賀卡印刷定製 — 聖誕卡 / 新年卡 / 婚禮感謝卡 / 燙金UV賀卡',
+      'zh-hk': '香港燙金賀卡印刷定製 — 聖誕卡 / 新年卡 / 婚禮感謝卡 / 燙金UV賀卡',
       'en': 'Greeting Cards Free Shipping · 100 MOQ Foil UV Christmas Wedding · Same Day 24h Rush USA',
       'ja': 'グリーティングカード・年賀状印刷 — 箔押し / UV / クリスマス / 婚禮',
     },
@@ -213,8 +213,18 @@ export default function CategoryPage({
     // 加 NAP-脱钩 sharp hook: 10本起 / A5+B5 / Comiket 24h特急 / 5 周邊類型
     'japan-doujin': {
       'zh-hk': '同人周邊印刷 10本起 · A5/B5 同人誌 / 亞克力 / 缶バッジ / 明信片 Comiket 24h 特急',
-      en: 'Doujinshi Printing Free Shipping · 10 MOQ Acrylic Can Badge Postcard · USA Anime Fans',
-      ja: '同人誌印刷 10部〜 · A5/B5 / アクリル / 缶バッジ / ポストカード コミケ 24時間特急',
+      en: 'Small Batch Doujinshi Printing Free Shipping · 10 MOQ Acrylic Can Badge Postcard · USA Anime Fans',
+      ja: '同人誌印刷 10部〜 USA コミッション · A5/B5 / アクリル / 缶バッジ / ポストカード コミケ 24時間特急',
+    },
+    'wedding-invitations': {
+      'zh-hk': '香港燙金喜帖印刷定製 — 中式龍鳳 / 西式燙金 / Save the Date / 教堂婚禮',
+      'en': 'Custom Foil Wedding Invitations Free Shipping · 50 MOQ Foil Embossed Save the Date · USA Wedding',
+      'ja': '結婚式招待状 箔押し印刷 カスタム — 中式 / 西式 / 教会 / 集团婚禮 10部〜',
+    },
+    'place-cards': {
+      'zh-hk': '香港婚宴枱卡印刷定製 — 枱卡 / 酒水牌 / 座位卡 / 餐廳枱卡 / 燙金',
+      'en': 'Custom Place Cards Free Shipping · 100 MOQ Foil Wedding Drink Tokens Seat Cards · USA Wedding',
+      'ja': '席札印刷 カスタム — 席札 / ドリンクトークン / 結婚式 / 箔押し 100部〜',
     },
   };
   const pageH1 = customH1Map[slug]?.[locale] || categoryName;
