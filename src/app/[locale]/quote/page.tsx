@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { QuoteRedirect } from '@/components/quote/QuoteRedirect';
 import { QuoteNoIndexManager } from '@/components/quote/QuoteNoIndexManager';
-import WhatsAppFloat from '@/components/WhatsAppFloat';
+
 import { Locale, siteConfig } from '@/lib/seo';
 
 interface QuotePageProps {
@@ -52,7 +52,6 @@ export default function QuotePage({ params }: QuotePageProps) {
     <>
       <QuoteNoIndexManager />
       <QuoteRedirect locale={params.locale} />
-      <WhatsAppFloat />
       <div className="fixed bottom-4 right-4 z-50">
         <a
           href={`/${params.locale}/faq/`}

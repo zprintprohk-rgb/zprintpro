@@ -8,9 +8,9 @@ import { getWhatsAppLinkProps } from '@/lib/whatsapp';
 const WHATSAPP_NUMBER = '+8619880851334';
 
 const LOCALE_MESSAGES = {
-  'zh-hk': { label: 'WhatsApp 查詢' },
-  'en': { label: 'WhatsApp us' },
-  'ja': { label: 'WhatsApp お問い合わせ' },
+  'zh-hk': { label: 'WhatsApp 查詢', email: '出件查詢' },
+  'en': { label: 'WhatsApp us', email: 'Email Us' },
+  'ja': { label: 'WhatsApp お問い合わせ', email: 'メールで問い合わせ' },
 } as const;
 
 const SUPPORTED_LOCALES = new Set(['zh-hk', 'en', 'ja']);
@@ -104,6 +104,21 @@ export default function WhatsAppFloat() {
           </div>
         )}
 
+        {/* 右侧：橙色出件查询邮件按钮 */}
+        <a
+          href="mailto:zprintpro@outlook.com"
+          onClick={handleEmailClick}
+          className="bg-[#F87314] hover:bg-[#EA580C] text-white rounded-full px-5 py-3.5 shadow-2xl transition-all hover:scale-110 flex items-center gap-2"
+          aria-label={messages.email}
+          data-cf-analytics="floating_email_cta_click"
+        >
+          <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+          </svg>
+          <span className="font-semibold text-sm hidden sm:inline">{messages.email}</span>
+        </a>
+
+        {/* 左侧：圆形 WhatsApp 按钮 */}
         <a
           {...mainWaProps}
           className="bg-[#25D366] hover:bg-[#1DA851] text-white rounded-full p-4 shadow-2xl transition-all hover:scale-110"
