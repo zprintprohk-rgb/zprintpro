@@ -1,7 +1,6 @@
 'use client';
 
 import React from 'react';
-import { Users, Package, Clock, Star } from 'lucide-react';
 import { Locale } from '@/lib/seo';
 
 interface StatsBarProps {
@@ -11,26 +10,26 @@ interface StatsBarProps {
 const translations = {
   'zh-hk': {
     stats: [
-      { icon: Users, value: '15,000+', label: '滿意客戶' },
-      { icon: Package, value: '50+', label: '印刷產品' },
-      { icon: Clock, value: '99.5%', label: '準時交貨率' },
-      { icon: Star, value: '4.9/5', label: '客戶評分' },
+      { value: '15,000+', label: '滿意客戶' },
+      { value: '50+', label: '印刷產品' },
+      { value: '99.5%', label: '準時交貨率' },
+      { value: '4.9/5', label: '客戶評分' },
     ],
   },
   en: {
     stats: [
-      { icon: Users, value: '15,000+', label: 'Happy Customers' },
-      { icon: Package, value: '50+', label: 'Products' },
-      { icon: Clock, value: '99.5%', label: 'On-Time Rate' },
-      { icon: Star, value: '4.9/5', label: 'Rating' },
+      { value: '15,000+', label: 'Happy Customers' },
+      { value: '50+', label: 'Products' },
+      { value: '99.5%', label: 'On-Time Rate' },
+      { value: '4.9/5', label: 'Rating' },
     ],
   },
   ja: {
     stats: [
-      { icon: Users, value: '15,000+', label: '満足のお客様' },
-      { icon: Package, value: '50+', label: '製品' },
-      { icon: Clock, value: '99.5%', label: '定時率' },
-      { icon: Star, value: '4.9/5', label: '評価' },
+      { value: '15,000+', label: '満足のお客様' },
+      { value: '50+', label: '製品' },
+      { value: '99.5%', label: '定時率' },
+      { value: '4.9/5', label: '評価' },
     ],
   },
 };
@@ -39,22 +38,29 @@ export function StatsBar({ locale }: StatsBarProps) {
   const t = translations[locale];
 
   return (
-    <section className="py-8 bg-white">
-      <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="bg-white rounded-2xl border border-gray-100 shadow-sm py-7 px-4 sm:px-8">
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-4 lg:divide-x lg:divide-gray-100">
-            {t.stats.map((stat, index) => (
-              <div key={index} className="flex items-center gap-4 justify-center lg:px-6">
-                <div className="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center flex-shrink-0">
-                  <stat.icon className="w-6 h-6 text-[#2873F5]" />
-                </div>
-                <div>
-                  <p className="text-2xl lg:text-[28px] font-extrabold text-[#111827] tracking-tight">{stat.value}</p>
-                  <p className="text-sm text-gray-500">{stat.label}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+    <section
+      aria-label="stats"
+      className="text-white py-[72px] lg:py-[116px]"
+      style={{
+        background: 'linear-gradient(165deg, #244780 0%, #1B3163 52%, #152649 100%)',
+        boxShadow: 'inset 0 1px 0 rgba(255,255,255,.10)',
+      }}
+    >
+      <div className="max-w-[1320px] mx-auto px-6">
+        <div className="grid grid-cols-2 lg:grid-cols-4">
+          {t.stats.map((stat, index) => (
+            <div
+              key={index}
+              className={`text-center py-[26px] px-3 lg:py-[10px] lg:px-[34px] ${
+                index % 2 === 1 ? 'border-l border-white/10' : ''
+              } ${index > 0 ? 'lg:border-l lg:border-white/10' : ''}`}
+            >
+              <p className="text-[26px] lg:text-[34px] font-extrabold tracking-tight leading-none text-white">
+                {stat.value}
+              </p>
+              <p className="mt-1.5 text-[14.5px] font-semibold text-white/70">{stat.label}</p>
+            </div>
+          ))}
         </div>
       </div>
     </section>
