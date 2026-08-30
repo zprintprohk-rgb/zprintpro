@@ -119,8 +119,8 @@ export default function ReferencePriceBlock({ data, locale, whatsappNumber }: Pr
                   className={`cursor-pointer hover:bg-blue-50/50 transition-colors ${isSelected?"bg-blue-50 ring-1 ring-blue-200":""}`}
                   onClick={() => setSelectedQty(isSelected ? null : tier.qty)}>
                   <td className="px-4 py-3 font-medium text-gray-900">{tier.qty.toLocaleString()}<span className="text-gray-400 ml-1">{locale==="ja"?"個":"個"}</span></td>
-                  <td className="px-4 py-3 text-gray-900 font-medium">{symbol}{batchPrice.toFixed(1)}</td>
-                  <td className="px-4 py-3 text-gray-500 hidden sm:table-cell">{symbol}{avgPrice.toFixed(1)}{locale==="ja"?"/個":locale==="en"?"/pc":"/個"}</td>
+                  <td className="px-4 py-3 text-gray-900 font-medium">{symbol}{batchPrice.toFixed(2)}</td>
+                  <td className="px-4 py-3 text-gray-500 hidden sm:table-cell">{symbol}{avgPrice.toFixed(2)}{locale==="ja"?"/個":locale==="en"?"/pc":"/個"}</td>
                   
                   <td className="px-3 py-3">
                     <a href={waUrl} target="_blank" rel="noopener noreferrer"
