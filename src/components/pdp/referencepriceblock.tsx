@@ -66,6 +66,11 @@ export default function ReferencePriceBlock({ data, locale, whatsappNumber }: Pr
   const currentConfig = data.configs[configIndex];
   const symbol = CURRENCY_SYMBOL[locale] || "HK$";
   const referenceText = REFERENCE_LABEL[locale] || REFERENCE_LABEL["zh-hk"];
+  // 8/30 修：海報/貼紙用「張」，其他產品用「個」/「pc」/「枚」
+  const isSheetProduct = data.source?.includes('posters') || data.source?.includes('stickers');
+  const unitZh = isSheetProduct ? "張" : "個";
+  const unitEn = isSheetProduct ? "sheets" : "pcs";
+  const unitJa = isSheetProduct ? "枚" : "個";
 
   const selectedTier = selectedQty !== null ? currentConfig.tiers.find((t) => t.qty === selectedQty) : null;
   const selectedBatchPrice = selectedTier
@@ -118,9 +123,9 @@ export default function ReferencePriceBlock({ data, locale, whatsappNumber }: Pr
                 <tr key={tier.qty}
                   className={`cursor-pointer hover:bg-blue-50/50 transition-colors ${isSelected?"bg-blue-50 ring-1 ring-blue-200":""}`}
                   onClick={() => setSelectedQty(isSelected ? null : tier.qty)}>
-                  <td className="px-4 py-3 font-medium text-gray-900">{tier.qty.toLocaleString()}<span className="text-gray-400 ml-1">{locale==="ja"?"個":"個"}</span></td>
+                  <td className="px-4 py-3 font-medium text-gray-900">{tier.qty.toLocaleString()}<span className="text-gray-400 ml-1">{locale==="ja"?unitJa:unitZh}</span></td>
                   <td className="px-4 py-3 text-gray-900 font-medium">{symbol}{batchPrice.toFixed(2)}</td>
-                  <td className="px-4 py-3 text-gray-500 hidden sm:table-cell">{symbol}{avgPrice.toFixed(2)}{locale==="ja"?"/個":locale==="en"?"/pc":"/個"}</td>
+                  <td className="px-4 py-3 text-gray-500 hidden sm:table-cell">{symbol}{avgPrice.toFixed(2)}{locale==="ja"?"/"+unitJa:locale==="en"?"/"+unitEn:"/"+unitZh}</td>
                   
                   <td className="px-3 py-3">
                     <a href={waUrl} target="_blank" rel="noopener noreferrer"

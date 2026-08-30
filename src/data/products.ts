@@ -2651,7 +2651,7 @@ export const products: Product[] = [
       finishing: 'PP 裱貼、泡沫板裱貼（可選）',
     },
     price_range: 'HK$95-1,017',
-    basePrice: 129,
+    basePrice: 16,
     basePrice_en: 2.3,
     basePrice_ja: 300,
     weight_score: 95,
@@ -2702,8 +2702,11 @@ export const products: Product[] = [
       ],
       quantities: [
         { value: 10, label: '10張', discount: 1 },
-        { value: 50, label: '50張', discount: 0.8 },
-        { value: 100, label: '100張', discount: 0.6 },
+        { value: 20, label: '20張', discount: 0.72 },
+        { value: 50, label: '50張', discount: 0.56 },
+        { value: 100, label: '100張', discount: 0.35 },
+        { value: 200, label: '200張', discount: 0.19 },
+        { value: 300, label: '300張', discount: 0.14 },
       ],
     },
   

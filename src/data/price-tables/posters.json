@@ -19,19 +19,19 @@
       "tiers": [
         {
           "qty": 10,
-          "sell_hkd": 129,
+          "sell_hkd": 160,
           "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 20,
-          "sell_hkd": 198,
+          "sell_hkd": 230,
           "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 50,
-          "sell_hkd": 405,
+          "sell_hkd": 450,
           "production": "digital",
           "weight_kg": null
         },
@@ -60,19 +60,19 @@
       "tiers": [
         {
           "qty": 10,
-          "sell_hkd": 168,
+          "sell_hkd": 208,
           "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 20,
-          "sell_hkd": 276,
+          "sell_hkd": 321,
           "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 50,
-          "sell_hkd": 600,
+          "sell_hkd": 667,
           "production": "digital",
           "weight_kg": null
         },
@@ -101,19 +101,19 @@
       "tiers": [
         {
           "qty": 10,
-          "sell_hkd": 95,
+          "sell_hkd": 118,
           "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 20,
-          "sell_hkd": 129,
+          "sell_hkd": 150,
           "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 50,
-          "sell_hkd": 233,
+          "sell_hkd": 259,
           "production": "digital",
           "weight_kg": null
         },
@@ -142,19 +142,19 @@
       "tiers": [
         {
           "qty": 10,
-          "sell_hkd": 114,
+          "sell_hkd": 141,
           "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 20,
-          "sell_hkd": 168,
+          "sell_hkd": 195,
           "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 50,
-          "sell_hkd": 330,
+          "sell_hkd": 367,
           "production": "digital",
           "weight_kg": null
         },
@@ -183,19 +183,19 @@
       "tiers": [
         {
           "qty": 10,
-          "sell_hkd": 129,
+          "sell_hkd": 160,
           "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 20,
-          "sell_hkd": 198,
+          "sell_hkd": 230,
           "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 50,
-          "sell_hkd": 405,
+          "sell_hkd": 450,
           "production": "digital",
           "weight_kg": null
         },
@@ -224,19 +224,19 @@
       "tiers": [
         {
           "qty": 10,
-          "sell_hkd": 168,
+          "sell_hkd": 208,
           "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 20,
-          "sell_hkd": 276,
+          "sell_hkd": 321,
           "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 50,
-          "sell_hkd": 600,
+          "sell_hkd": 667,
           "production": "digital",
           "weight_kg": null
         },
@@ -265,19 +265,19 @@
       "tiers": [
         {
           "qty": 10,
-          "sell_hkd": 95,
+          "sell_hkd": 118,
           "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 20,
-          "sell_hkd": 129,
+          "sell_hkd": 150,
           "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 50,
-          "sell_hkd": 233,
+          "sell_hkd": 259,
           "production": "digital",
           "weight_kg": null
         },
@@ -306,19 +306,19 @@
       "tiers": [
         {
           "qty": 10,
-          "sell_hkd": 114,
+          "sell_hkd": 141,
           "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 20,
-          "sell_hkd": 168,
+          "sell_hkd": 195,
           "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 50,
-          "sell_hkd": 330,
+          "sell_hkd": 367,
           "production": "digital",
           "weight_kg": null
         },
@@ -347,19 +347,19 @@
       "tiers": [
         {
           "qty": 10,
-          "sell_hkd": 135,
+          "sell_hkd": 167,
           "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 20,
-          "sell_hkd": 210,
+          "sell_hkd": 244,
           "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 50,
-          "sell_hkd": 435,
+          "sell_hkd": 483,
           "production": "digital",
           "weight_kg": null
         },
@@ -388,19 +388,19 @@
       "tiers": [
         {
           "qty": 10,
-          "sell_hkd": 180,
+          "sell_hkd": 223,
           "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 20,
-          "sell_hkd": 300,
+          "sell_hkd": 348,
           "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 50,
-          "sell_hkd": 550,
+          "sell_hkd": 611,
           "production": "digital",
           "weight_kg": null
         },
@@ -429,19 +429,19 @@
       "tiers": [
         {
           "qty": 10,
-          "sell_hkd": 98,
+          "sell_hkd": 122,
           "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 20,
-          "sell_hkd": 135,
+          "sell_hkd": 157,
           "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 50,
-          "sell_hkd": 248,
+          "sell_hkd": 276,
           "production": "digital",
           "weight_kg": null
         },
@@ -470,19 +470,19 @@
       "tiers": [
         {
           "qty": 10,
-          "sell_hkd": 120,
+          "sell_hkd": 149,
           "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 20,
-          "sell_hkd": 180,
+          "sell_hkd": 209,
           "production": "digital",
           "weight_kg": null
         },
         {
           "qty": 50,
-          "sell_hkd": 360,
+          "sell_hkd": 400,
           "production": "digital",
           "weight_kg": null
         },
