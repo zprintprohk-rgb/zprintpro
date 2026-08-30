@@ -1,3 +1,106 @@
+# zprintpro-blog-deepfix v1.3 (2026-08-30 11:31 K3 拍板 · 主脑 v2.2 30 天极限冲刺 + 带钱词地图 v1 + 5 拍板项 B + 词价值分层 升级)
+
+> **v1.2 → v1.3 核心变化** (per K3 8/30 11:31 拍板, 5 cron 共享同步):
+> 1. **主脑 v2.2 · 30 天极限冲刺 6 原则** (K3 8/30 19:11 拍板) — 替换"180-day 半年冲刺"战略, 改为"30-day 极限冲刺 (83 任务)"
+> 2. **30/60/90 冲刺表** (K3 8/30 19:11 拍板) — zh-hk + en + ja 三轨并行, 9/15 月曆印刷 2027 硬截止
+> 3. **词价值分层** (K3 8/30 12:37 拍板) — 三维分层: ① 采购意图信号 ② 买家类型 ③ 订单价值; T1-T4 四层, blog 选题必用
+> 4. **带钱词地图 v1** (K3 8/30 拍板) — zh-hk 16 词 / en 10 词 / ja 10 词, T1-T2 集中, 任何选题必查 v1 词表
+> 5. **5 拍板项 B 全部推荐** (K3 8/30 19:11 拍板) — B1 zh-hk 10 速赢 / B2 en 5 带钱 / B3 ja 4 取引 / B4 30/60/90 三轨 / B5 数据诚信严格执行
+> 6. **W2.5 实战 5 SKU 内容深度升级 SOP** (8/30 实战沉淀) — 末尾追加 1,134-1,151 chars 材质表 + Q5-Q8 + callout, 5 SKU 案例 (a1/outdoor/display/art/adhesive) 落 .openclaw-autoclaw/skills/zprintpro-content-depth-page-sop/SKILL.md v1.3
+> 7. **W3.1 food-boxes 禮盒订制 实战** (8/30 沉淀) — pos 6.6 速赢词, 标题方案 A "食品包裝印刷 禮盒訂製 100個起 HK$4起" 落地, FDA + 月饼场景 命中
+
+---
+
+## 【§1 主脑 v2.2 · 30 天极限冲刺 6 原则】（K3 8/30 19:11 拍板 · 5 cron 共享, 必跑)
+
+1. **AI 初稿 → K3 审核 → M3 执行** — 流水线, 严禁 M3 自创内容, M3 只搬运 + 落盘 + verify (per §0.28 1 cron 1 交付物红线)
+2. **批量提交** — 多任务攒批, 1 push/天 攒批 SOP (per §0.25.9 v3)
+3. **每日双拍板窗** — 12:00 + 18:00 K3 拍板, M3 1 cron 1 交付物 (per §0.28)
+4. **AI 产出标准** — 联网搜索 3-5 query + 真实 2026 数据 (Statista / FDA / Smithers / 行业协会) + 标数据来源 (per §0.23 数据诚信红线)
+5. **验证闭环** — 5 步真验收 (push 无 ahead / sitemap mtime / curl 200+body / schema / IndexNow)
+6. **数据回灌** — GSC 7d / 30d 数据每日入 matrix.json, 词价值分层 priority_boost 自动调整
+
+---
+
+## 【§2 30/60/90 冲刺表 (原 90 天压缩 ×3, 30 天极限冲刺)】（K3 8/30 19:11 拍板, 5 cron 共享)
+
+| 周 | 阶段 | 核心目标 | 4 cron 协同 | 验收 (per §4 v9.4) |
+|----|------|---------|-------------|---------------------|
+| **W1 (8/30-9/5)** | 速赢词收割 + 1 新页 | zh-hk 10 速赢词 P0 收割 + 1 食品包裝新页 | daily 9 篇 (3+3+3) + weekly 5 篇 + monthly 1 篇 | striking 词进首页数 ≥3, 速赢词 CTR 破 0 ≥6/10 |
+| **W2 (9/6-9/12)** | 跨语言全面铺 | en 5 带钱词 + ja 4 取引词 + 2 篇校园词 | daily 5 篇 + weekly 5 篇 | en 带钱词 pos 进 50, ja 取引词 pos 进 30 |
+| **W3 (9/13-9/19)** | 月曆硬截止 + 季节 | 月曆印刷 2027 (9/15 硬截止) + R5 节庆纸袋 | daily 6 篇 + weekly 5 篇 | 月曆 7d clicks ≥100, 9/15 100% 上线 |
+| **W4 (9/20-9/26)** | GEO/AEO + 外链 + 复盘 | llms.txt + Reddit/Quora 真人 + 月度复盘 | daily 4 篇 + weekly 5 篇 + monthly 1 篇 | AEO schema 覆盖率 ≥80%, 外链 ≥10 条 |
+
+---
+
+## 【§3 词价值分层 (K3 12:37 拍板 · 全站全局词调动)】（5 cron 共享, blog-deepfix 选题必用)
+
+> **核心**: 任何 blog 修复 / 选题 / 任务卡 必先跑三维分层判定, 然后定优先级 (T1-T4):
+> 1. **采购意图信号** — 印刷/訂製/批發/custom/wholesale/bulk/manufacturer/印刷会社/製作 等
+> 2. **买家类型** — 企业采购 / SMB / 个人一次性
+> 3. **订单价值** — 复购耗材 > 事件型 > 信息泛词
+>
+> **T1 (P0 必写)**: 三维全中
+> **T2 (P0 必写)**: 采购信号 + (SMB/企业 OR 复购)
+> **T3 (P1 写)**: 采购信号 + 信息泛词
+> **T4 (P2 写)**: 信息泛词
+
+---
+
+## 【§4 带钱词地图 v1】（K3 8/30 拍板, 全站全局调动, blog-deepfix 选题必查)
+
+**zh-hk (16 词, T1-T2 集中)**: 食品包裝印刷 / 即日印刷 / 餐牌印刷 / 紙袋印刷 / 海報印刷即日 / 食品包裝訂製 / doujinshi 印刷 / china catalog 印刷 / 宣傳單張印刷 / 貼紙印刷 / 名片印刷 (业务子类目豁免) / 喜帖印刷 / 禮盒印刷 / 月餅盒印刷 / 證書印刷 / 貼紙訂製
+
+**en (10 词, T1-T2 集中)**: small batch stickers / small batch sticker printing / small batch custom stickers / fluorescent stickers / china catalog printing / custom packaging boxes / sticker labels / die cut stickers / vinyl stickers / business card printing (业务子类目豁免)
+
+**ja (10 词, T1-T2 集中)**: ダイカット ステッカー 防水 / 特急印刷 激安 / チラシ印刷 早い / クラフト紙 パッケージ印刷 / 同人誌印刷 / ステッカー印刷 / パッケージ印刷 / 名刺印刷 激安 (业务子类目豁免) / 印刷 激安 / ステッカー オリジナル
+
+---
+
+## 【§5 5 拍板项 B 全部推荐 ✅】（K3 8/30 19:11 拍板, 5 cron 共享)
+
+1. **B1 zh-hk 速赢词 10 词收割** — 推荐 ✅, W1 daily 优先级
+2. **B2 en 带钱词 5 词 收割** — 推荐 ✅, W2 daily
+3. **B3 ja 取引词 4 词 收割** — 推荐 ✅, W2 daily
+4. **B4 30/60/90 冲刺表三轨并行** — 推荐 ✅, 9/15 月曆必须上线
+5. **B5 数据诚信红线 SOP-10 第 3 款严格执行** — 推荐 ✅
+
+---
+
+## 【§6 W2.5 实战 5 SKU 内容深度升级 SOP (8/30 实战沉淀)】（blog-deepfix 必参考)
+
+| SKU | slug | 末尾追加 chars | Q5-Q8 | callout |
+|-----|------|----------------|-------|---------|
+| a1-posters | a1-posters | 1,134 | ✓ | ✓ |
+| outdoor-banners | outdoor-banners | 1,151 | ✓ | ✓ |
+| display-stands | display-stands | 1,143 | ✓ | ✓ |
+| art-prints | art-prints | 1,138 | ✓ | ✓ |
+| adhesive-stickers | adhesive-stickers | 1,146 | ✓ | ✓ |
+
+**SOP 来源**: .openclaw-autoclaw/skills/zprintpro-content-depth-page-sop/SKILL.md v1.3 §3.1.4 (W2 实战) + §3.1.5 (W3 SOP)
+
+---
+
+## 【§7 K3 8/30 11:31 同步更新指令】（本段 SSoT 升级, 5 cron 共享)
+
+- **5 个 cron prompt SSoT 同步升级到 v9.5 / v1.3 / v6** (本段)
+- **5 个 daemon cache inline prompt 头部升级** (per mavis cron update 5800 char buffer)
+- **不**增删 cron 任务 (per §0.28 1 cron 1 交付物红线)
+- **不**改 cron schedule (per K3 8/30 11:31 "同步" 而非 "重排")
+
+---
+
+## 【数据来源】（§0.23 强制级）
+
+- K3 8/30 11:31 拍板原文 (已校准)
+- K3 8/30 19:11 拍板: 千问 3.8 max 主脑 v2.2 + 带钱词地图 v1 (已校准)
+- K3 8/30 12:37 拍板: 词价值分层 (已校准)
+- W2.5 实战 5 SKU 内容深度升级: ca7103d commit (已校准 2026-08-30 06:30)
+- W3.1 food-boxes 禮盒订制: 84f954b commit (已校准 2026-08-30)
+- 主脑 v2.2 docx 来源: C:\Users\Administrator\.minimax\v2\assets\2026\08\30\11-11-25-583 + 11-11-25-586 (已校准 2026-08-30 11:11-11:15)
+
+---
+
 # zprintpro-blog-deepfix v1.2 (2026-08-26 20:53 K3 拍板升级)
 
 > **v1.1 → v1.2 核心变化** (per K3 8/26 20:53 升级拍板 "12要素及格线, 不是排名保障"):

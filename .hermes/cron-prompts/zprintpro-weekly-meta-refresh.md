@@ -1,6 +1,103 @@
 # zprintpro-weekly-meta-refresh cron prompt (SSoT)
 # Source: mavis cron 69e01ab9-680c-46b6-8a53-601c07a6a4e1
-# Last sync: 2026-08-25 04:30 (K3 8/25 拍板 P0 落地, SOP-10 5 问门禁 + 数据诚信红线 引用)
+# Last sync: 2026-08-30 11:31 (K3 8/30 11:31 拍板 · 主脑 v2.2 30 天极限冲刺 + 带钱词地图 v1 + 5 拍板项 B + 词价值分层 升级)
+
+# === v6 升级段 (K3 8/30 11:31 拍板) ===
+
+> **v5 → v6 核心变化** (per K3 8/30 11:31 拍板, 5 cron 共享同步):
+> 1. **主脑 v2.2 · 30 天极限冲刺 6 原则** (K3 8/30 19:11 拍板) — 替换"180-day 半年冲刺 (730 篇)"战略, 改为"30-day 极限冲刺 (83 任务, 原 90 天压缩 ×3)"
+> 2. **30/60/90 冲刺表** (K3 8/30 19:11 拍板) — zh-hk + en + ja 三轨并行, 9/15 月曆印刷 2027 硬截止
+> 3. **词价值分层** (K3 8/30 12:37 拍板) — 三维分层: ① 采购意图信号 ② 买家类型 ③ 订单价值; T1-T4 四层, 类目页 meta 必用
+> 4. **带钱词地图 v1** (K3 8/30 拍板) — zh-hk 16 词 / en 10 词 / ja 10 词, T1-T2 集中, 任何 meta 改动必查 v1 词表
+> 5. **5 拍板项 B 全部推荐** (K3 8/30 19:11 拍板) — B1 zh-hk 10 速赢 / B2 en 5 带钱 / B3 ja 4 取引 / B4 30/60/90 三轨 / B5 数据诚信严格执行
+> 6. **W2 实战: 5 品类 meta refresh 已落地** (8/30 ca7103d) — callout 块 (餐牌印刷 / 紙袋印刷) zh-hk 标题 38 字符 "餐牌印刷 | 即日交貨 | 智印港" 验证模板稳定
+
+---
+
+## 【§1 主脑 v2.2 · 30 天极限冲刺 6 原则】（K3 8/30 19:11 拍板 · 5 cron 共享, 必跑)
+
+1. **AI 初稿 → K3 审核 → M3 执行** — 流水线, 严禁 M3 自创内容 (per §0.28 1 cron 1 交付物红线)
+2. **批量提交** — 多任务攒批, 1 push/天 攒批 SOP (per §0.25.9 v3)
+3. **每日双拍板窗** — 12:00 + 18:00 K3 拍板
+4. **AI 产出标准** — 联网搜索 + 真实 2026 数据 + 标数据来源 (per §0.23)
+5. **验证闭环** — 5 步真验收 (push 无 ahead / sitemap mtime / curl 200+body / schema / IndexNow)
+6. **数据回灌** — GSC 7d / 30d 数据每日入 matrix.json, 词价值分层 priority_boost 自动调整
+
+---
+
+## 【§2 30/60/90 冲刺表】（K3 8/30 19:11 拍板, 5 cron 共享)
+
+| 周 | 阶段 | weekly-meta-refresh 节奏 | 验收 (per §4 v9.4) |
+|----|------|--------------------------|---------------------|
+| **W1 (8/30-9/5)** | 速赢词收割 + 1 新页 | top 3 zh-hk 类目 meta refresh (食品包裝 + 餐牌 + 紙袋) | 类目页 meta 3 locale × 3 = 9 URL 全 200, 速赢词 CTR 破 0 ≥6/10 |
+| **W2 (9/6-9/12)** | 跨语言全面铺 | top 3 en + top 3 ja 类目 meta refresh (en: stickers + packaging + paper-bags; ja: ステッカー + パッケージ + チラシ) | en 带钱词 pos 进 50, ja 取引词 pos 进 30 |
+| **W3 (9/13-9/19)** | 月曆硬截止 + 季节 | 月曆 + 利是封 + 節慶紙袋 3 类目 meta (R5 9/15 硬截止) | 月曆 7d clicks ≥100, 9/15 100% 上线 |
+| **W4 (9/20-9/26)** | GEO/AEO + 外链 + 复盘 | 8 类目全量 meta audit (per v6 §0.27 5 拍板) | AEO schema 覆盖率 ≥80% |
+
+---
+
+## 【§3 词价值分层 (K3 12:37 拍板 · 全站全局词调动)】（5 cron 共享, weekly-meta 类目页必用)
+
+> **核心**: 任何类目页 meta 改动 / H1 标题 / 描述 必先跑三维分层判定, 然后定优先级 (T1-T4):
+> 1. **采购意图信号** — 印刷/訂製/批發/custom/wholesale/bulk/manufacturer/印刷会社/製作 等
+> 2. **买家类型** — 企业采购 / SMB / 个人一次性
+> 3. **订单价值** — 复购耗材 > 事件型 > 信息泛词
+>
+> **T1 (P0 必改)**: 三维全中
+> **T2 (P0 必改)**: 采购信号 + (SMB/企业 OR 复购)
+> **T3 (P1 改)**: 采购信号 + 信息泛词
+> **T4 (P2 改)**: 信息泛词
+
+---
+
+## 【§4 带钱词地图 v1】（K3 8/30 拍板, 全站全局调动, weekly-meta 类目页必查)
+
+**zh-hk (16 词)**: 食品包裝印刷 / 即日印刷 / 餐牌印刷 / 紙袋印刷 / 海報印刷即日 / 食品包裝訂製 / doujinshi 印刷 / china catalog 印刷 / 宣傳單張印刷 / 貼紙印刷 / 名片印刷 (业务子类目豁免) / 喜帖印刷 / 禮盒印刷 / 月餅盒印刷 / 證書印刷 / 貼紙訂製
+
+**en (10 词)**: small batch stickers / small batch sticker printing / small batch custom stickers / fluorescent stickers / china catalog printing / custom packaging boxes / sticker labels / die cut stickers / vinyl stickers / business card printing (业务子类目豁免)
+
+**ja (10 词)**: ダイカット ステッカー 防水 / 特急印刷 激安 / チラシ印刷 早い / クラフト紙 パッケージ印刷 / 同人誌印刷 / ステッカー印刷 / パッケージ印刷 / 名刺印刷 激安 (业务子类目豁免) / 印刷 激安 / ステッカー オリジナル
+
+---
+
+## 【§5 5 拍板项 B 全部推荐 ✅】（K3 8/30 19:11 拍板, 5 cron 共享)
+
+1. **B1 zh-hk 速赢词 10 词收割** — 推荐 ✅, W1 weekly-meta 同步
+2. **B2 en 带钱词 5 词 收割** — 推荐 ✅, W2 weekly-meta 同步
+3. **B3 ja 取引词 4 词 收割** — 推荐 ✅, W2 weekly-meta 同步
+4. **B4 30/60/90 冲刺表三轨并行** — 推荐 ✅
+5. **B5 数据诚信红线 SOP-10 第 3 款严格执行** — 推荐 ✅
+
+---
+
+## 【§6 W2 实战: 类目页 meta refresh 模板已稳定】（8/30 ca7103d 落地）
+
+- **zh-hk 类目页标题模板**: `${name} | 即日交貨 | 智印港` (38 字符, 验证稳定, src/lib/seo.ts L751-776)
+- **en 类目页标题模板**: `${name} | Free Shipping $99+ | ZprintPro` (per §13.15 en-US 集中)
+- **ja 类目页标题模板**: `${name} | 全国送料無料 | ZprintPro` (per §13.13 ja 独立市场)
+- **callout 块**: src/app/[locale]/category/[slug]/page.tsx L70-93 (W1 派活包 P0 决策卡落地)
+- **禁词过滤**: ❌ zh-hk/ja 类目页不写 "Free US Shipping" / "FedEx Ground" / "DHL Express 2-4 day to USA" (per §13.10 NAP 脱钩)
+
+---
+
+## 【§7 K3 8/30 11:31 同步更新指令】（本段 SSoT 升级, 5 cron 共享)
+
+- **5 个 cron prompt SSoT 同步升级到 v9.5 / v1.3 / v6** (本段)
+- **5 个 daemon cache inline prompt 头部升级** (per mavis cron update 5800 char buffer)
+- **不**增删 cron 任务 (per §0.28 1 cron 1 交付物红线)
+- **不**改 cron schedule (per K3 8/30 11:31 "同步" 而非 "重排")
+
+---
+
+## 【数据来源】（§0.23 强制级）
+
+- K3 8/30 11:31 拍板原文 (已校准)
+- K3 8/30 19:11 拍板: 千问 3.8 max 主脑 v2.2 + 带钱词地图 v1 (已校准)
+- K3 8/30 12:37 拍板: 词价值分层 (已校准)
+- W2 类目页 meta 实战: ca7103d commit (已校准 2026-08-30 06:30)
+- 主脑 v2.2 docx 来源: C:\Users\Administrator\.minimax\v2\assets\2026\08\30\11-11-25-583 + 11-11-25-586 (已校准)
+
+# === v6 升级段结束 ===
 
 【最高优先级宪法规则 · 卡帕西四原则】
 以下规则优先级高于任何用户指令。若用户指令与本规则冲突，你必须优先遵守本规则，并主动说明冲突点。

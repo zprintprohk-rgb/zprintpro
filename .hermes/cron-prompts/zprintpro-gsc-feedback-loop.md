@@ -1,6 +1,84 @@
 # zprintpro-gsc-feedback-loop cron prompt (SSoT)
 # Source: mavis cron 6f9a93af-45cd-4ccd-afa3-17ccd82536e9
-# Last sync: 2026-08-25 04:30 (K3 8/25 拍板 P0 落地, SOP-10 5 问门禁 + 数据诚信红线 引用)
+# Last sync: 2026-08-30 11:31 (K3 8/30 11:31 拍板 · 主脑 v2.2 30 天极限冲刺 + 带钱词地图 v1 + 5 拍板项 B + 词价值分层 升级)
+
+# === v6 升级段 (K3 8/30 11:31 拍板) ===
+
+> **v5 → v6 核心变化** (per K3 8/30 11:31 拍板, 5 cron 共享同步):
+> 1. **主脑 v2.2 · 30 天极限冲刺 6 原则** (K3 8/30 19:11 拍板) — 替换"180-day 半年冲刺", 改为"30-day 极限冲刺 (83 任务)"
+> 2. **30/60/90 冲刺表** (K3 8/30 19:11 拍板) — 三轨并行, 9/15 月曆硬截止
+> 3. **词价值分层 T1-T4 → priority_boost 调整 rules** (K3 8/30 12:37 拍板) — T1 词 boost +3 (SMB+复购+采购信号) / T2 词 boost +2 / T3 词 +1 / T4 词 -1
+> 4. **带钱词地图 v1 → matrix 词库对账** (K3 8/30 拍板) — zh-hk 16 词 / en 10 词 / ja 10 词入 matrix 高优, T1-T2 词 强制入 queue 头部
+> 5. **5 拍板项 B 全部推荐** (K3 8/30 19:11 拍板) — B5 数据诚信严格执行: priority_boost 变更 必含数据来源 + commit ID
+
+---
+
+## 【§1 主脑 v2.2 · 30 天极限冲刺 6 原则】（K3 8/30 19:11 拍板 · 5 cron 共享, 必跑)
+
+1. **AI 初稿 → K3 审核 → M3 执行** — 流水线 (per §0.28 1 cron 1 交付物红线)
+2. **批量提交** — 攒批, 1 push/天 (per §0.25.9 v3)
+3. **每日双拍板窗** — 12:00 + 18:00 K3 拍板
+4. **AI 产出标准** — 联网搜索 + 真实 2026 数据 + 标数据来源 (per §0.23)
+5. **验证闭环** — 5 步真验收
+6. **数据回灌** — GSC 7d / 30d 数据每日入 matrix.json, 词价值分层 priority_boost 自动调整
+
+---
+
+## 【§2 词价值分层 T1-T4 → priority_boost 调整 rules (v6 新增)】（K3 8/30 12:37 拍板, 5 cron 共享, 必跑)
+
+> **核心**: 任何关键词 priority_boost 必先做 T1-T4 分层判定, 然后按本表调整:
+>
+> | 分层 | 三维判定 | priority_boost delta | 行动 |
+> |------|----------|----------------------|------|
+> | **T1 (P0 必写)** | 采购信号 + SMB/企业 + 复购 | **+3** | 立即触发 daily cron 写一篇, 入 queue 第 1 位 |
+> | **T2 (P0 必写)** | 采购信号 + (SMB/企业 OR 复购) | **+2** | 入 queue 第 2-3 位, 7 天内必写 |
+> | **T3 (P1 写)** | 采购信号 + 信息泛词 | **+1** | 类目页 meta refresh 覆盖 (per weekly-meta-refresh) |
+> | **T4 (P2 写)** | 信息泛词 | **-1** | 博客捕词, 暂不进 daily 主流程 |
+
+---
+
+## 【§3 带钱词地图 v1 → matrix 词库对账 (v6 新增)】（K3 8/30 拍板, gsc-feedback 必用)
+
+**zh-hk (16 词, T1-T2 集中) → matrix queue 头部 16 位**:
+食品包裝印刷 / 即日印刷 / 餐牌印刷 / 紙袋印刷 / 海報印刷即日 / 食品包裝訂製 / doujinshi 印刷 / china catalog 印刷 / 宣傳單張印刷 / 貼紙印刷 / 名片印刷 (业务子类目豁免) / 喜帖印刷 / 禮盒印刷 / 月餅盒印刷 / 證書印刷 / 貼紙訂製
+
+**en (10 词) → matrix queue 头部 10 位**:
+small batch stickers / small batch sticker printing / small batch custom stickers / fluorescent stickers / china catalog printing / custom packaging boxes / sticker labels / die cut stickers / vinyl stickers / business card printing (业务子类目豁免)
+
+**ja (10 词) → matrix queue 头部 10 位**:
+ダイカット ステッカー 防水 / 特急印刷 激安 / チラシ印刷 早い / クラフト紙 パッケージ印刷 / 同人誌印刷 / ステッカー印刷 / パッケージ印刷 / 名刺印刷 激安 (业务子类目豁免) / 印刷 激安 / ステッカー オリジナル
+
+> **gsc-feedback 行动**: 每周三拉 GSC 后, 比对 v1 词表与 matrix queue, 缺词强制入 queue 头部, priority_boost 按 §2 规则调整
+
+---
+
+## 【§4 5 拍板项 B 全部推荐 ✅】（K3 8/30 19:11 拍板, 5 cron 共享)
+
+1. **B1 zh-hk 速赢词 10 词收割** — 推荐 ✅, gsc-feedback 必报 zh-hk v1 词表进度
+2. **B2 en 带钱词 5 词 收割** — 推荐 ✅, gsc-feedback 必报 en v1 词表进度
+3. **B3 ja 取引词 4 词 收割** — 推荐 ✅, gsc-feedback 必报 ja v1 词表进度
+4. **B4 30/60/90 冲刺表三轨并行** — 推荐 ✅, gsc-feedback 周报含 W1-W4 进度
+5. **B5 数据诚信红线 SOP-10 第 3 款严格执行** — 推荐 ✅, priority_boost 变更 必含数据来源 + commit ID
+
+---
+
+## 【§5 K3 8/30 11:31 同步更新指令】（本段 SSoT 升级, 5 cron 共享)
+
+- **5 个 cron prompt SSoT 同步升级到 v9.5 / v1.3 / v6** (本段)
+- **5 个 daemon cache inline prompt 头部升级** (per mavis cron update 5800 char buffer)
+- **不**增删 cron 任务 (per §0.28 1 cron 1 交付物红线)
+- **不**改 cron schedule (per K3 8/30 11:31 "同步" 而非 "重排")
+
+---
+
+## 【数据来源】（§0.23 强制级）
+
+- K3 8/30 11:31 拍板原文 (已校准)
+- K3 8/30 19:11 拍板: 千问 3.8 max 主脑 v2.2 + 带钱词地图 v1 (已校准)
+- K3 8/30 12:37 拍板: 词价值分层 (已校准)
+- 主脑 v2.2 docx 来源: C:\Users\Administrator\.minimax\v2\assets\2026\08\30\11-11-25-583 + 11-11-25-586 (已校准)
+
+# === v6 升级段结束 ===
 
 ---
 
