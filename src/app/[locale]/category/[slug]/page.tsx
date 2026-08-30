@@ -162,9 +162,10 @@ export default function CategoryPage({
       'ja': 'メニュー印刷 カスタム — PVC / 紙 / ハードカバー / 使い捨て',
     },
     'red-packets': {
-      'zh-hk': '香港紅包印刷 — 利是封 / 賀年紅包 / 燙金紅包 / 卡通紅包',
-      'en': 'Custom Red Packets Free Shipping · 100 MOQ Foil CNY Wedding · USA Chinese Communities',
-      'ja': '紅包印刷 — 旧正月 / 箔押し / キャラクター / カスタム',
+      // 2026-08-30 K3 12:00 拍板窗 #3 + K3 12:51 暗示 "早执行 早收益": 加 11月前就位季节军令状 + 燙金 T1 词
+      'zh-hk': '香港利是封印刷定製 11月前就位 — 燙金利是封 / 賀年紅包 / 卡通利是封 / 企業LOGO',
+      'en': 'Custom Lai See Red Packets · 100 MOQ Foil 11月前就位 + CNY Wedding · USA Chinese Communities',
+      'ja': 'ポチ袋印刷 カスタム 11月前就位 — 箔押し / 旧正月 / キャラクター / 企業ロゴ',
     },
     'stickers': {
       'zh-hk': '香港貼紙印刷定製 — 防水貼紙 / 透明貼紙 / 異形貼紙 / 標籤貼紙',
@@ -197,9 +198,10 @@ export default function CategoryPage({
       ja: '封筒印刷 カスタム — クラフト / 窓付き / カラー / 企業ブランディング',
     },
     'calendars': {
-      'zh-hk': '香港月曆印刷定製 — 座檯月曆 / 掛牆月曆 / 月曆卡 / 2027年曆 / 企業LOGO',
-      'en': 'Custom Calendars Free Shipping · 1000 MOQ 2027 Desk Wall Hardcover Foil · USA Corporate Gifts',
-      'ja': 'カレンダー印刷 カスタム — デスク / 壁掛け / 月別 / 2027年 / 企業ロゴ',
+      // 2026-08-30 K3 12:00 拍板窗 #3 + K3 12:51 暗示 "早执行 早收益": 加 9月最後黃金窗季节军令状 + 燙金精裝 T1 词
+      'zh-hk': '香港月曆印刷定製 2027 9月最後黃金窗 — 座檯月曆 / 掛牆月曆 / 企業LOGO / 燙金精裝',
+      'en': 'Custom Calendars 2027 9月最後黃金窗 · 1000 MOQ 2027 Desk Wall Hardcover Foil · USA Corporate Gifts',
+      'ja': 'カレンダー印刷 2027 9月最後黃金窗 — デスク / 壁掛け / 2027年 / 箔押し上製本',
     },
     'greeting-cards': {
       'zh-hk': '香港賀卡印刷定製 — 聖誕卡 / 新年卡 / 婚禮感謝卡 / 燙金UV賀卡',
@@ -515,6 +517,9 @@ const categoryGuideMap: Record<string, string> = {
   'greeting-cards': 'greeting-card-buying-guide',
   'wedding-invitations': 'wedding-invitation-buying-guide',
   'place-cards': 'place-card-buying-guide',
+  // 2026-08-30 K3 12:00 拍板窗 #3 + K3 12:51 暗示 "早执行 早收益": 月曆/利是封 季节军令状跨链到 9/15 硬截止 9月最后黄金窗 + 11月前就位 blog
+  'calendars': '2027-calendar-printing-complete-guide',
+  'red-packets': 'wedding-red-packet-printing-guide',
 };
 
 function BuyingGuideCta({ locale, categorySlug }: { locale: Locale; categorySlug: string }) {
