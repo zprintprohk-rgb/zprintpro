@@ -239,7 +239,7 @@ export function Footer({ locale }: FooterProps) {
           href={href}
           target={link.href.startsWith('http') ? '_blank' : undefined}
           rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-          className="text-gray-400 hover:text-white transition-colors text-sm"
+          className="text-white/85 hover:text-white transition-colors text-sm"
         >
           {link.label}
         </Link>
@@ -273,17 +273,17 @@ export function Footer({ locale }: FooterProps) {
                 decoding="async"
               />
             </div>
-            <p className="text-gray-400 text-sm mb-4 leading-relaxed">{t.companyDesc}</p>
+            <p className="text-white/85 text-sm mb-4 leading-relaxed">{t.companyDesc}</p>
             <div className="space-y-2">
-              <div className="flex items-center gap-2 text-gray-400">
+              <div className="flex items-center gap-2 text-white/85">
                 <MapPin className="w-4 h-4 flex-shrink-0" />
                 <span className="text-sm">{t.address}</span>
               </div>
-              <a href={`tel:${t.phone.replace(/\D/g, '')}`} data-cf-analytics="footer_phone_click" onClick={() => trackPhoneClick('footer')} className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors">
+              <a href={`tel:${t.phone.replace(/\D/g, '')}`} data-cf-analytics="footer_phone_click" onClick={() => trackPhoneClick('footer')} className="flex items-center gap-2 text-white/85 hover:text-white transition-colors">
                 <Phone className="w-4 h-4" />
                 <span className="text-sm">{t.phone}</span>
               </a>
-              <a href={`mailto:${t.email}`} data-cf-analytics="footer_email_click" className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors font-semibold text-base">
+              <a href={`mailto:${t.email}`} data-cf-analytics="footer_email_click" className="flex items-center gap-2 text-white/85 hover:text-white transition-colors font-semibold text-base">
                 <Mail className="w-4 h-4" />
                 <span className="text-base">{t.email}</span>
               </a>
@@ -293,7 +293,7 @@ export function Footer({ locale }: FooterProps) {
                   - env 配置由用户（owner）上线前填入真实值 */}
               {locale === 'ja' && (process.env.NEXT_PUBLIC_LINE_URL || process.env.NEXT_PUBLIC_JA_PHONE || process.env.NEXT_PUBLIC_JA_EMAIL) && (
                 <div className="mt-4 pt-3 border-t border-white/10 space-y-2" data-ja-contact-block>
-                  <div className="flex items-center gap-2 text-gray-300 text-xs font-semibold uppercase tracking-wider">
+                  <div className="flex items-center gap-2 text-white/85 text-xs font-semibold uppercase tracking-wider">
                     <span>日本市場サポート</span>
                   </div>
                   {process.env.NEXT_PUBLIC_LINE_URL && (
@@ -301,7 +301,7 @@ export function Footer({ locale }: FooterProps) {
                       href={process.env.NEXT_PUBLIC_LINE_URL}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex items-center gap-2 text-gray-400 hover:text-[#06C755] transition-colors"
+                      className="flex items-center gap-2 text-white/85 hover:text-[#06C755] transition-colors"
                       aria-label="LINE 公式アカウント"
                     >
                       {/* LINE official green logo SVG (small) */}
@@ -314,7 +314,7 @@ export function Footer({ locale }: FooterProps) {
                   {process.env.NEXT_PUBLIC_JA_PHONE && (
                     <a
                       href={`tel:${process.env.NEXT_PUBLIC_JA_PHONE.replace(/\D/g, '')}`}
-                      className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
+                      className="flex items-center gap-2 text-white/85 hover:text-white transition-colors"
                       aria-label="日本電話"
                     >
                       <Phone className="w-4 h-4 flex-shrink-0" />
@@ -324,7 +324,7 @@ export function Footer({ locale }: FooterProps) {
                   {process.env.NEXT_PUBLIC_JA_EMAIL && (
                     <a
                       href={`mailto:${process.env.NEXT_PUBLIC_JA_EMAIL}`}
-                      className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors"
+                      className="flex items-center gap-2 text-white/85 hover:text-white transition-colors"
                       aria-label="日本メール"
                     >
                       <Mail className="w-4 h-4 flex-shrink-0" />
@@ -335,7 +335,7 @@ export function Footer({ locale }: FooterProps) {
               )}
               {/* Service Area - Only show for English version */}
               {locale === 'en' && t.serviceArea && (
-                <div className="flex items-center gap-2 text-gray-400 mt-3">
+                <div className="flex items-center gap-2 text-white/85 mt-3">
                   <svg className="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
                   </svg>
@@ -345,12 +345,12 @@ export function Footer({ locale }: FooterProps) {
 
               {/* 2026-08-16 K3 拍板: 服務時間 + 24/7 WhatsApp + 中國大陸 24h 響應 (3 locale) */}
               <div className="mt-3 pt-3 border-t border-white/10 space-y-2" data-footer-service-info>
-                <div className="flex items-center gap-2 text-gray-300 text-xs">
+                <div className="flex items-center gap-2 text-white/85 text-xs">
                   <svg className="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                   <span data-cf-analytics="footer_service_hours_view">{t.serviceHours}</span>
                 </div>
                 
-                <div className="flex items-center gap-2 text-gray-400 text-xs">
+                <div className="flex items-center gap-2 text-white/85 text-xs">
                   <svg className="w-4 h-4 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                   <span data-cf-analytics="footer_support_view">{(locale === 'zh-hk' ? t.supportCN : (locale === 'ja' ? t.supportJA : t.supportEN))}</span>
                 </div>
@@ -389,13 +389,13 @@ export function Footer({ locale }: FooterProps) {
               decoding="async"
             />
           </div>
-          <p className="text-gray-400 text-sm mb-3 leading-relaxed line-clamp-2">{t.companyDesc}</p>
+          <p className="text-white/85 text-sm mb-3 leading-relaxed line-clamp-2">{t.companyDesc}</p>
           <div className="space-y-1.5 mb-4">
-            <div className="flex items-center gap-2 text-gray-400">
+            <div className="flex items-center gap-2 text-white/85">
               <MapPin className="w-4 h-4 flex-shrink-0" />
               <span className="text-xs">{t.address}</span>
             </div>
-            <a href={`tel:${t.phone.replace(/\D/g, '')}`} className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors">
+            <a href={`tel:${t.phone.replace(/\D/g, '')}`} className="flex items-center gap-2 text-white/85 hover:text-white transition-colors">
               <Phone className="w-4 h-4" />
               <span className="text-xs whitespace-nowrap">{t.phone}</span>
             </a>
@@ -425,7 +425,7 @@ export function Footer({ locale }: FooterProps) {
 
           {/* 產品中心 — 6 类目紧凑 2 列, 常显 */}
           <div className="mb-4">
-            <h3 className="font-bold text-sm mb-2 text-gray-200">{t.columns[1].title}</h3>
+            <h3 className="font-bold text-sm mb-2 text-white">{t.columns[1].title}</h3>
             <ul className="grid grid-cols-2 gap-x-4 gap-y-2">
               {t.columns[1].links.map((link, linkIndex) => renderFooterLink(link, linkIndex))}
             </ul>
@@ -435,9 +435,9 @@ export function Footer({ locale }: FooterProps) {
           <div className="divide-y divide-white/10 border-y border-white/10">
             {[0, 2, 3].map((colIndex) => (
               <details key={colIndex} className="group">
-                <summary className="flex items-center justify-between py-3 cursor-pointer list-none font-bold text-sm text-gray-200 [&::-webkit-details-marker]:hidden">
+                <summary className="flex items-center justify-between py-3 cursor-pointer list-none font-bold text-sm text-white [&::-webkit-details-marker]:hidden">
                   {t.columns[colIndex].title}
-                  <ChevronDown className="w-4 h-4 text-gray-500 transition-transform group-open:rotate-180" />
+                  <ChevronDown className="w-4 h-4 text-white/70 transition-transform group-open:rotate-180" />
                 </summary>
                 <ul className="pb-4 space-y-2.5">
                   {t.columns[colIndex].links.map((link, linkIndex) => renderFooterLink(link, linkIndex))}
@@ -454,7 +454,7 @@ export function Footer({ locale }: FooterProps) {
         <div className="mt-2 pt-6 border-t border-white/10">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-4">
-              <span className="text-gray-400 text-sm">{t.followUs}</span>
+              <span className="text-white/85 text-sm">{t.followUs}</span>
               <div className="flex gap-3">
                 <span className="w-9 h-9 bg-white/10 rounded-full flex items-center justify-center opacity-50 cursor-not-allowed" title="Coming soon">
                   <Facebook className="w-4 h-4" />
@@ -470,7 +470,7 @@ export function Footer({ locale }: FooterProps) {
                 </span>
               </div>
             </div>
-            <p className="text-gray-500 text-sm">{t.copyright}</p>
+            <p className="text-white/70 text-sm">{t.copyright}</p>
           </div>
         </div>
 
@@ -481,7 +481,7 @@ export function Footer({ locale }: FooterProps) {
         */}
         {locale === 'ja' && (
           <div className="mt-4 pt-4 border-t border-white/10">
-            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-gray-400">
+            <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-white/85">
               <Link
                 href={`${localePrefix}/legal/`}
                 className="hover:text-white transition-colors"
