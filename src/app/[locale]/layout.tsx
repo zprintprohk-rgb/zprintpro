@@ -9,7 +9,8 @@ import '../globals.css';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 // 2026-07-05 加：右下角浮动询盘按钮（修复 en 高点击低询盘问题，详情见组件注释）
-import WhatsAppFloat from '@/components/WhatsAppFloat';
+// 8/30 改: FloatingQuoteCTA 已包含 WhatsApp 立即查詢药丸 + 下方 橙色電郵查詢药丸
+import { FloatingQuoteCTA } from '@/components/layout/FloatingQuoteCTA';
 import { TrackingEvents } from '@/components/analytics/TrackingEvents';
 import { SupabaseTracking } from '@/components/tracking/SupabaseTracking';
 import { BreadcrumbNav } from '@/components/breadcrumb-nav';
@@ -227,7 +228,7 @@ export default function RootLayout({
           <BreadcrumbNav locale={safeLocale} />
           {children}
           <Footer locale={safeLocale} />
-          <WhatsAppFloat />
+          <FloatingQuoteCTA locale={safeLocale} />
           <TrackingEvents />
           {/* 2026-08-29 K3 拍板: 路由变化触发 page-view → tracking_events (009) */}
           <SupabaseTracking />

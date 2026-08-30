@@ -164,9 +164,7 @@ export function QuantityTierInteractive({ locale }: QuantityTierInteractiveProps
                 <div className="min-h-[3rem] flex flex-col items-center justify-center">
                   <p className="text-base md:text-lg font-extrabold text-slate-900 leading-tight">
                     {cur.symbol}
-                    {unitPrice < 1
-                      ? unitPrice.toFixed(2)
-                      : Math.round(unitPrice * 100) / 100}
+                    {unitPrice.toFixed(2)}
                     <span className="text-[10px] font-normal text-slate-500 ml-0.5">
                       {cur.suffix}
                     </span>
