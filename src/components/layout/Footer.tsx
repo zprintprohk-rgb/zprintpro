@@ -248,7 +248,13 @@ export function Footer({ locale }: FooterProps) {
   };
 
   return (
-    <footer className="bg-[#1a1a2e] text-white">
+    <footer
+      className="text-white"
+      style={{
+        background: 'linear-gradient(165deg, #244780 0%, #1B3163 52%, #152649 100%)',
+        boxShadow: 'inset 0 1px 0 rgba(255,255,255,.10)',
+      }}
+    >
       {/* Main Footer */}
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-12">
         {/* 2026-07-27: 桌面端 grid 保持原样, lg 以下隐藏 (移动端走下方精简手风琴) */}

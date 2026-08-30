@@ -117,39 +117,61 @@ export function TrustBadges({ locale, compact = false }: TrustBadgesProps) {
 
   return (
     <section
-      className={`bg-gradient-to-br from-slate-50 via-blue-50 to-emerald-50 ${compact ? 'py-8 md:py-10' : 'py-12 md:py-16'}`}
+      className={compact
+        ? 'bg-gradient-to-br from-slate-50 via-blue-50 to-emerald-50 py-8 md:py-10'
+        : 'bg-[#F9FAFB] py-12 md:py-16'}
       aria-label="Trust signals"
       data-testid="trust-badges"
     >
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8">
         {!compact && (
           <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-2xl md:text-3xl font-bold text-slate-900 mb-2">
+            <span className="inline-flex items-center gap-2.5 text-[13px] font-semibold tracking-[.12em] uppercase text-[#2873F5] mb-3">
+              <span className="inline-block w-[22px] h-[2px] bg-[#F87314]" aria-hidden="true" />
+            </span>
+            <h2 className="text-[26px] md:text-[34px] font-extrabold tracking-tight text-[#111827] mb-2.5">
               {heading}
             </h2>
-            <p className="text-sm md:text-base text-slate-600 max-w-2xl mx-auto">
+            <p className="text-sm md:text-base text-[#6B7280] max-w-2xl mx-auto">
               {subheading}
             </p>
           </div>
         )}
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+        <div className={`grid grid-cols-2 md:grid-cols-4 ${compact ? 'gap-3 md:gap-4' : 'gap-4 md:gap-[18px]'}`}>
           {badges.map((badge, idx) => {
             const Icon = ICON_MAP[badge.icon];
             const color = COLOR_MAP[badge.color];
             return (
               <div
                 key={idx}
-                className="bg-white rounded-2xl border border-slate-200 p-5 md:p-6 hover:border-[#2873F5] hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                className={`bg-white rounded-2xl transition-all duration-300 ${
+                  compact
+                    ? 'border border-slate-200 p-5 md:p-6 hover:border-[#2873F5] hover:shadow-xl hover:-translate-y-1'
+                    : 'border border-[#E5E7EB] py-[26px] px-[20px] hover:border-[#d6e0f5] hover:shadow-[0_10px_30px_rgba(17,24,39,0.06)] hover:-translate-y-[3px]'
+                }`}
               >
                 <div className="flex flex-col items-center text-center gap-2">
-                  <div className={`w-11 h-11 md:w-14 md:h-14 rounded-2xl ${color.bg} flex items-center justify-center flex-shrink-0 shadow-sm`}>
-                    <Icon className={`w-5 h-5 md:w-6 md:h-6 ${color.icon}`} aria-hidden="true" />
+                  <div
+                    className={`flex items-center justify-center flex-shrink-0 ${
+                      compact
+                        ? `w-11 h-11 md:w-14 md:h-14 rounded-2xl ${color.bg} shadow-sm`
+                        : 'w-[52px] h-[52px] rounded-[14px] bg-[#2873F5]'
+                    }`}
+                  >
+                    <Icon
+                      className={compact ? `w-5 h-5 md:w-6 md:h-6 ${color.icon}` : 'w-6 h-6 text-white'}
+                      aria-hidden="true"
+                    />
                   </div>
-                  <h3 className="text-sm md:text-base font-bold text-slate-900 leading-tight">
+                  <h3
+                    className={`font-bold leading-tight ${
+                      compact ? 'text-sm md:text-base text-slate-900' : 'text-[15px] md:text-base text-[#111827]'
+                    }`}
+                  >
                     {renderTitle(badge.title)}
                   </h3>
-                  <p className="text-xs text-slate-600 leading-[1.485]">
+                  <p className={`leading-[1.485] ${compact ? 'text-xs text-slate-600' : 'text-[13px] text-[#6B7280]'}`}>
                     {badge.subtitle}
                   </p>
                 </div>
