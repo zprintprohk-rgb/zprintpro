@@ -145,14 +145,14 @@ export default function CategoryPage({
       'ja': 'クラフト紙 パッケージ印刷 カスタム — ギフト / 化粧 / 食品 / メール便 / 組み立て',
     },
     'paper-bags': {
-      'zh-hk': '香港牛皮紙袋訂製 — 牛皮紙袋 / 白卡紙袋 / 精品紙袋 / 環保紙袋',
-      'en': 'Custom Paper Bags Free Shipping · 100 MOQ FSC Kraft Eco-Friendly',
-      'ja': '紙袋印刷 カスタム — クラフト / ホワイトカード / エコ / ギフト',
+      'zh-hk': '紙袋 牛皮紙袋訂製 100本起印 | 智印港',
+      'en': 'Paper Bag Custom Kraft Paper Bag Printing | 100 MOQ | ZprintPro',
+      'ja': '紙袋 クラフト紙袋オーダー | 100個から | ZprintPro',
     },
 'flyers': {
       // 2026-07-09 SEO 复盘 v3: 即日 + 數碼快印前置 (吸收原本独立 nav 「即日服務」权重)
       // 2026-07-09 v5 美国市场: 加 Free Shipping + FedEx Ground + Same Day sharp hook
-      'zh-hk': '香港 A5 宣傳單張印刷 — A4/A5 數碼快印 / 摺頁 / 開業傳單 / 24 小時急件',
+      'zh-hk': '宣傳單張 A5 宣傳單張印刷 100本起印 | 智印港',
       en: 'China Catalog Printing Free Shipping over $99 · 100 MOQ A4/A5 Digital + FedEx Ground · Catalog Printing China',
       ja: '香港即日チラシ印刷 — A4/A5 デジタル+オフセット / 折込 / 開業チラシ / 24時間特急',
     },
@@ -168,14 +168,14 @@ export default function CategoryPage({
       'ja': 'ポチ袋印刷 カスタム 11月前就位 — 箔押し / 旧正月 / キャラクター / 企業ロゴ',
     },
     'stickers': {
-      'zh-hk': '香港小批量貼紙印刷定製 — 防水貼紙 / 透明貼紙 / 異形貼紙 / 標籤貼紙',
-      'en': 'Small Batch Sticker Printing Free Shipping · 50 MOQ Die-Cut Vinyl Waterproof · Made for USA Small Business',
-      'ja': 'ダイカットステッカー 防水印刷 — 防水 / 透明 / ダイカット / 商品ラベル',
+      'zh-hk': '貼紙 小批量貼紙印刷 100本起印 | 智印港',
+      'en': 'Sticker Small Batch Sticker Printing | 100 MOQ | ZprintPro',
+      'ja': 'ステッカー 小ロットステッカー印刷 | 100個から | ZprintPro',
     },
     'posters': {
-      'zh-hk': '香港 A2 海報印刷 — A1/A2 海報 / 戶外海報 / 展覽海報 / 大圖輸出',
-      'en': 'Custom Posters Free Shipping · A1/A2 Outdoor Waterproof 1 MOQ · USA Trade Show',
-      'ja': 'ポスター印刷 カスタム — A1/A2 / 屋外 / 展示 / 大判出力',
+      'zh-hk': '海報 A2 海報印刷 100本起印 | 智印港',
+      'en': 'Poster A2 Poster Printing | 100 MOQ | ZprintPro',
+      'ja': 'ポスター A2 ポスター印刷 | 100個から | ZprintPro',
     },
     'banners': {
       'zh-hk': '香港摺頁印刷 — 易拉寶 / 戶外橫幅 / 摺頁印刷 / 展覽橫幅 / 車身廣告',
@@ -204,9 +204,9 @@ export default function CategoryPage({
       'ja': 'カレンダー印刷 2027 9月最後黃金窗 — デスク / 壁掛け / 2027年 / 箔押し上製本',
     },
     'greeting-cards': {
-      'zh-hk': '香港燙金賀卡印刷定製 — 聖誕卡 / 新年卡 / 婚禮感謝卡 / 燙金UV賀卡',
-      'en': 'Greeting Cards Free Shipping · 100 MOQ Foil UV Christmas Wedding · Same Day 24h Rush USA',
-      'ja': 'グリーティングカード・年賀状印刷 — 箔押し / UV / クリスマス / 婚禮',
+      'zh-hk': '賀卡 燙金賀卡印刷 100本起印 | 智印港',
+      'en': 'Greeting Card Foil Greeting Card Printing | 100 MOQ | ZprintPro',
+      'ja': 'グリーティングカード 箔押しグリーティングカード印刷 | 100個から | ZprintPro',
     },
     // 2026-07-09 PM+UX+SEO 复盘: japan-doujin 是 14 类目里唯一缺 customH1 的,
     // 走 fallback `categoryName` = 「同人周邊印刷」, 不够 sharp hook.
@@ -217,14 +217,14 @@ export default function CategoryPage({
       ja: '同人誌印刷 10部〜 USA コミッション · A5/B5 / アクリル / 缶バッジ / ポストカード コミケ 24時間特急',
     },
     'wedding-invitations': {
-      'zh-hk': '香港燙金喜帖印刷定製 — 中式龍鳳 / 西式燙金 / Save the Date / 教堂婚禮',
-      'en': 'Custom Foil Wedding Invitations Free Shipping · 50 MOQ Foil Embossed Save the Date · USA Wedding',
-      'ja': '結婚式招待状 箔押し印刷 カスタム — 中式 / 西式 / 教会 / 集团婚禮 10部〜',
+      'zh-hk': '喜帖 燙金喜帖印刷 100本起印 | 智印港',
+      'en': 'Wedding Invitation Foil Wedding Invitation Printing | 100 MOQ | ZprintPro',
+      'ja': '結婚式招待状 箔押し結婚式招待状印刷 | 100個から | ZprintPro',
     },
     'place-cards': {
-      'zh-hk': '香港婚宴枱卡印刷定製 — 枱卡 / 酒水牌 / 座位卡 / 餐廳枱卡 / 燙金',
-      'en': 'Custom Place Cards Free Shipping · 100 MOQ Foil Wedding Drink Tokens Seat Cards · USA Wedding',
-      'ja': '席札印刷 カスタム — 席札 / ドリンクトークン / 結婚式 / 箔押し 100部〜',
+      'zh-hk': '枱卡 婚宴枱卡印刷 100本起印 | 智印港',
+      'en': 'Place Card Wedding Place Card Printing | 100 MOQ | ZprintPro',
+      'ja': '席札 結婚式席札印刷 | 100個から | ZprintPro',
     },
   };
   const pageH1 = customH1Map[slug]?.[locale] || categoryName;
