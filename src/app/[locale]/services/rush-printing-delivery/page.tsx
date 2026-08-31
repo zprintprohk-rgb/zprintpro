@@ -33,8 +33,8 @@ type Props = {
 const metaMap: Record<string, { title: string; desc: string; keywords: string }> = {
   'zh-hk': {
     title: '即日印刷 18:00 截單・順豐翌日 12:00 前送達・WhatsApp 即日回覆 | 智印港',
-    desc: '即日印刷服務：下午 3 時前落單即日交貨，傳單/海報/貼紙全品類支援。免費 2 小時打稿，港九新界滿 HK$500 免費順豐，辦公室/港鐵站交收。30 秒 AI 報價，WhatsApp 即日回覆。',
-    keywords: '即日急件,急件印刷,同日印刷,即日印刷,下午3時前落單,即日交貨,免費 2 小時打稿,港九新界,免費順豐,辦公室交收,港鐵站交收,傳單,海報,貼紙,紙袋,畫冊,易拉寶,30 秒 AI 報價,WhatsApp 即日回覆,跨境電商,本地零售,品牌活動,演唱會,展覽籌備,深圳實體',
+    desc: '即日印刷服務：下午 3 時前落單即日交貨，傳單/海報/貼紙全品類支援。免費 2 小時打稿，港九新界滿 HK$500 免費順豐，順豐速遞上門。30 秒 AI 報價，WhatsApp 即日回覆。',
+    keywords: '即日急件,急件印刷,同日印刷,即日印刷,下午3時前落單,即日交貨,免費 2 小時打稿,港九新界,免費順豐,傳單,海報,貼紙,紙袋,畫冊,易拉寶,30 秒 AI 報價,WhatsApp 即日回覆,跨境電商,本地零售,品牌活動,演唱會,展覽籌備,深圳實體',
   },
   en: {
     title: 'Same-Day Printing | Order by 6pm, Delivered Next Day 12pm | ZprintPro',
@@ -98,17 +98,17 @@ export default function RushDeliveryPage({ params }: Props) {
           '@context': 'https://schema.org',
           '@type': 'FAQPage',
           mainEntity: locale === 'zh-hk' ? [
-            { '@type': 'Question', name: '即日印刷最快幾耐到？', acceptedAnswer: { '@type': 'Answer', text: '每日 18:00 前落單並確認稿件，即安排通宵印刷，順豐翌日中午 12:00 前送到，亦支持合作點交收。' } },
+            { '@type': 'Question', name: '即日印刷最快幾耐到？', acceptedAnswer: { '@type': 'Answer', text: '每日 18:00 前落單並確認稿件，即安排通宵印刷，順豐翌日中午 12:00 前送到，亦支持順豐速遞上門。' } },
             { '@type': 'Question', name: '即日同普通件價錢差幾多？', acceptedAnswer: { '@type': 'Answer', text: '即日急件優先排產會有附加費，實際差價視乎品類同數量，WhatsApp 30 秒攞精準報價最準。' } },
             { '@type': 'Question', name: '過咗 18:00 仲得唔得？', acceptedAnswer: { '@type': 'Answer', text: '過咗截單時間可以 WhatsApp 我哋盡力協調，視乎排產情況安排，唔一定保證翌日中午前到。' } },
-            { '@type': 'Question', name: '點樣收貨？', acceptedAnswer: { '@type': 'Answer', text: '順豐送貨上門或合作點交收都得，我哋冇門市自取，落單時揀啱收貨方式即可。' } },
+            { '@type': 'Question', name: '點樣收貨？', acceptedAnswer: { '@type': 'Answer', text: '順豐送貨上門或順豐速遞上門都得，我哋冇門市自取，落單時揀啱收貨方式即可。' } },
             { '@type': 'Question', name: '要準備咩文件？', acceptedAnswer: { '@type': 'Answer', text: 'PDF 或 AI 檔，300dpi，預留 3mm 出血位。唔熟排版可以 WhatsApp 我哋，免費幫你檢查稿件。' } },
             { '@type': 'Question', name: '落單後可唔可以改稿？', acceptedAnswer: { '@type': 'Answer', text: '上機印刷前都可以免費改稿，開印後就冇得改，所以落單後請盡快確認最終版本。' } },
           ] : locale === 'en' ? [
-            { '@type': 'Question', name: 'How fast is same-day delivery?', acceptedAnswer: { '@type': 'Answer', text: 'Order before 6PM and confirm artwork, we arrange overnight print, SF Express delivers before noon next day, partner location pickup also supported.' } },
+            { '@type': 'Question', name: 'How fast is same-day delivery?', acceptedAnswer: { '@type': 'Answer', text: 'Order before 6PM and confirm artwork, we arrange overnight print, SF Express delivers before noon next day, SF Express delivery also supported.' } },
             { '@type': 'Question', name: 'How much more is rush vs standard?', acceptedAnswer: { '@type': 'Answer', text: 'Rush priority production has a surcharge. Delta depends on product and quantity. 30-second WhatsApp quote is the fastest way.' } },
             { '@type': 'Question', name: 'Can I order after 6PM?', acceptedAnswer: { '@type': 'Answer', text: 'After cut-off please WhatsApp us, we will try to coordinate. Next-day-noon delivery is not guaranteed.' } },
-            { '@type': 'Question', name: 'How do I receive?', acceptedAnswer: { '@type': 'Answer', text: 'SF Express door-to-door or partner location pickup. No storefront self-pickup, choose your delivery method at order time.' } },
+            { '@type': 'Question', name: 'How do I receive?', acceptedAnswer: { '@type': 'Answer', text: 'SF Express door-to-door or SF Express delivery. No storefront self-pickup, choose your delivery method at order time.' } },
             { '@type': 'Question', name: 'What files do I need?', acceptedAnswer: { '@type': 'Answer', text: 'PDF or AI, 300dpi, 3mm bleed. Not sure about layout? WhatsApp us for free file check.' } },
             { '@type': 'Question', name: 'Can I change artwork after ordering?', acceptedAnswer: { '@type': 'Answer', text: 'Free revisions before printing. Once on press, no changes. Please confirm final version promptly.' } },
           ] : [
