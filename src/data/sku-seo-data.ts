@@ -20,7 +20,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "高級商務名片 | 燙金 UV 多工藝 | 智印港 ZprintPro",
+        "title": "高級商務名片 | 燙金 UV 多工藝 | 智印港",
         "description": "高級商務名片/名片印刷 100 張起。採用 300g-400g 銅版紙/啞面/棉紙 高品質材質，支援 90×54mm 標準 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。1-3 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "印刷即日速遞送貨",
         "keywords": ["高級商務名片", "名片印刷", "印咭片", "印刷公司"],
@@ -58,7 +58,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": "專業商務印刷 / 專業商務印刷 | 香港專業商務印刷訂製 300g銅版紙或250g啞粉藝術紙 | ZprintPro智印港",
+      "zh-hk": "專業商務印刷 / 專業商務印刷 | 香港專業商務印刷訂製 300g銅版紙或250g啞粉藝術紙 | 智印港",
       "en": "Premium business cards with foil stamping and spot UV on 300g-400g matte or cotton paper — ZprintPro",
       "ja": "プレミアム名刺 / 高級紙 | プレミアム名刺印刷 プレミアム紙 100枚〜 日本向け | ZprintPro"
     }
@@ -71,7 +71,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "400g 厚身名片 | 燙金 UV 多工藝 | 智印港 ZprintPro",
+        "title": "400g 厚身名片 | 燙金 UV 多工藝 | 智印港",
         "description": "400g 厚身名片/名片印刷 100 張起。採用 300g-400g 銅版紙/啞面/棉紙 高品質材質，支援 90×54mm 標準 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。1-3 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "400g超厚紙質，厚實手感彰顯尊貴品質。特別適合高端服務業、設計師、律師等專業人士。智印港提供專業厚身咭片(400g)服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["400g 厚身名片", "名片印刷", "厚紙", "印刷 厚紙"],
@@ -100,7 +100,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "專業商務印刷 / 專業商務印刷 | 香港專業商務印刷訂製 400g超厚銅版紙 | ZprintPro智印港",
+      "zh-hk": "專業商務印刷 / 專業商務印刷 | 香港專業商務印刷訂製 400g超厚銅版紙 | 智印港",
       "en": "Custom thick business cards 400g with foil uv multi-finish, premium materials — ZprintPro",
       "ja": "厚紙名刺 / 高耐久 | 厚紙名刺印刷 400g厚紙 | ZprintPro"
     }
@@ -113,7 +113,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "燙金名片 | 燙金 UV 多工藝 | 智印港 ZprintPro",
+        "title": "燙金名片 | 燙金 UV 多工藝 | 智印港",
         "description": "燙金名片/燙金名片 100 張起。採用 300g-400g 銅版紙/啞面/棉紙 高品質材質，支援 90×54mm 標準 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。1-3 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "燙金咭片 | 金屬光澤 香港本地印刷",
         "keywords": ["燙金名片", "咭片印刷"],
@@ -164,7 +164,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "局部 UV 名片 | 燙金 UV 多工藝 | 智印港 ZprintPro",
+        "title": "局部 UV 名片 | 燙金 UV 多工藝 | 智印港",
         "description": "局部 UV 名片/UV business card 100 張起。採用 300g-400g 銅版紙/啞面/棉紙 高品質材質，支援 90×54mm 標準 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。1-3 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首",
         "h1": "局部UV咭片 | 立體光澤視覺衝擊",
         "keywords": ["局部 UV 名片", "UV business card", "咭片印刷", "uv business cards"],
@@ -215,7 +215,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "啞面名片 | 燙金 UV 多工藝 | 智印港 ZprintPro",
+        "title": "啞面名片 | 燙金 UV 多工藝 | 智印港",
         "description": "啞面名片/名片印刷 100 張起。採用 300g-400g 銅版紙/啞面/棉紙 高品質材質，支援 90×54mm 標準 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。1-3 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "啞膠表面處理，低調內斂的質感，不易留下指紋。適合注重細節的專業人士。智印港提供專業啞膠咭片服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["啞面名片", "名片印刷", "啞膠", "咭片印刷"],
@@ -241,7 +241,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "faqs": [
       ],
     "imageAlt": {
-      "zh-hk": "專業商務印刷 / 專業商務印刷 | 香港專業商務印刷訂製 300g啞粉紙或環保紙 | ZprintPro智印港",
+      "zh-hk": "專業商務印刷 / 專業商務印刷 | 香港專業商務印刷訂製 300g啞粉紙或環保紙 | 智印港",
       "en": "Matte laminated business cards with soft-touch finish and fingerprint resistance, 300-400g art card — ZprintPro",
       "ja": "マット名刺 / マット | マット名刺印刷 300gマット紙 | ZprintPro"
     }
@@ -254,7 +254,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "圓角卡片 | 燙金 UV 多工藝 | 智印港 ZprintPro",
+        "title": "圓角卡片 | 燙金 UV 多工藝 | 智印港",
         "description": "圓角卡片/圓角卡片 100 張起。採用 300g-400g 銅版紙/啞面/棉紙 高品質材質，支援 90×54mm 標準 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。1-3 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "圓角咭片 | 柔和邊緣 創意行業首選",
         "keywords": ["圓角卡片", "咭片印刷"],
@@ -292,7 +292,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     ],
     "imageAlt": {
-      "zh-hk": " fast delivery. | 香港印刷 | ZprintPro智印港",
+      "zh-hk": " fast delivery. | 香港印刷 | 智印港",
       "en": "Rounded corner business cards in matte or gloss finish with R3/R5/R10mm radius options — ZprintPro",
       "ja": "角丸名刺 / 角丸加工 | 角丸名刺印刷 角丸加工 100枚〜 即日発送 | ZprintPro"
     }
@@ -305,7 +305,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "雙面卡片 | 燙金 UV 多工藝 | 智印港 ZprintPro",
+        "title": "雙面卡片 | 燙金 UV 多工藝 | 智印港",
         "description": "雙面卡片/咭片印刷 100 張起。採用 300g-400g 銅版紙/啞面/棉紙 高品質材質，支援 90×54mm 標準 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。1-3 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "雙面全彩印刷，充分利用空間展示更多信息。背面可印公司理念、產品介紹或聯絡方式。智印港提供專業雙面咭片服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["雙面卡片", "咭片印刷", "印咭片", "咭片"],
@@ -347,7 +347,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "即日名片 | 燙金 UV 多工藝 | 智印港 ZprintPro",
+        "title": "即日名片 | 燙金 UV 多工藝 | 智印港",
         "description": "即日名片/即時印刷 100 張起。採用 300g-400g 銅版紙/啞面/棉紙 高品質材質，支援 90×54mm 標準 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。1-3 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "即日名片 | 4小時取件 急件首選",
         "keywords": ["即日名片", "即時印刷", "名片印刷", "咭片印刷"],
@@ -389,7 +389,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "環保再生名片 | 燙金 UV 多工藝 | 智印港 ZprintPro",
+        "title": "環保再生名片 | 燙金 UV 多工藝 | 智印港",
         "description": "環保再生名片/環保名片 100 張起。採用 300g-400g 銅版紙/啞面/棉紙 高品質材質，支援 90×54mm 標準 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。1-3 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "採用FSC認證環保再生紙，展現企業社會責任。質樸自然的風格，適合環保品牌。智印港提供專業環保再生紙咭片服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["環保再生名片", "環保名片", "咭片印刷"],
@@ -427,7 +427,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "防水貼紙 | 防水 PVC 異形切割 | 智印港 ZprintPro",
+        "title": "防水貼紙 | 防水 PVC 異形切割 | 智印港",
         "description": "防水貼紙/防水貼紙 100 張起。採用 防水 PVC/銅版紙/透明料 高品質材質，支援 圓/方/異形 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "防水貼紙 | PVC/PP合成紙 異形切割",
         "keywords": ["防水貼紙", "防水 貼紙 印刷", "防水 pvc 貼紙", "貼紙印刷", "不干膠印刷", "透明貼紙", "異形貼紙", "標籤貼紙", "定制貼紙", "小批量貼紙", "防水不干膠", "卷筒標籤", "1000張貼紙", "100張貼紙", "A4貼紙", "Etsy貼紙", "FDA貼紙", "QR Code 貼紙", "expiry date 貼紙", "不殘膠", "不留膠", "可掃描貼紙", "可移除貼紙", "圓形貼紙", "婚禮貼紙", "學生貼紙", "客製貼紙", "成分標示", "成分標示貼紙", "標籤貼紙印刷", "活動互動", "物流追蹤", "玻璃貼紙", "生日貼紙", "經濟貼紙", "迎賓牌貼紙", "透明貼紙印刷", "防水標籤", "食品級貼紙", "高透貼紙"],
@@ -478,7 +478,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "透明貼紙 | 防水 PVC 異形切割 | 智印港 ZprintPro",
+        "title": "透明貼紙 | 防水 PVC 異形切割 | 智印港",
         "description": "透明貼紙/透明貼紙 100 張起。採用 防水 PVC/銅版紙/透明料 高品質材質，支援 圓/方/異形 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "透明貼紙",
@@ -508,7 +508,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "透明貼紙 / 不干膠 | 香港透明貼紙印刷 透明 PET | ZprintPro智印港",
+      "zh-hk": "透明貼紙 / 不干膠 | 香港透明貼紙印刷 透明 PET | 智印港",
       "en": "Custom Transparent Stickers for pet food and brand labels — ZprintPro",
       "ja": "一般為100張起訂，部分特殊工藝需500張起。"
     }
@@ -521,7 +521,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "可移貼紙 | 防水 PVC 異形切割 | 智印港 ZprintPro",
+        "title": "可移貼紙 | 防水 PVC 異形切割 | 智印港",
         "description": "可移貼紙/不殘膠貼紙 100 張起。採用 防水 PVC/銅版紙/透明料 高品質材質，支援 圓/方/異形 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "特殊背膠設計，移除後不留殘膠，保護貼附表面。適合車窗、玻璃櫥窗、短期展覽。智印港提供專業可移貼紙(無殘膠)服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["可移貼紙", "不殘膠貼紙", "貼紙印刷", "不干膠印刷", "防水貼紙", "透明貼紙", "異形貼紙", "標籤貼紙", "定制貼紙", "小批量貼紙", "防水不干膠", "卷筒標籤", "1000張貼紙", "100張貼紙", "A4貼紙", "Etsy貼紙", "FDA貼紙", "QR Code 貼紙", "expiry date 貼紙", "不殘膠", "不留膠", "可掃描貼紙", "可移除貼紙", "圓形貼紙", "婚禮貼紙", "學生貼紙", "客製貼紙", "成分標示", "成分標示貼紙", "標籤貼紙印刷", "活動互動", "物流追蹤", "玻璃貼紙", "生日貼紙", "經濟貼紙", "迎賓牌貼紙", "透明貼紙印刷", "防水標籤", "食品級貼紙", "高透貼紙"],
@@ -551,7 +551,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "可移貼紙(無殘膠) / 不干膠 | 香港可移貼紙(無殘膠)印刷 PP 合成紙／PET 透明膜 | ZprintPro智印港",
+      "zh-hk": "可移貼紙(無殘膠) / 不干膠 | 香港可移貼紙(無殘膠)印刷 PP 合成紙／PET 透明膜 | 智印港",
       "en": "Custom Removable Stickers for pet food and brand labels — ZprintPro",
       "ja": "再剥離ステッカー / 防水 | 再剥離ステッカー印刷 防水PVC | ZprintPro"
     }
@@ -564,7 +564,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "小批量貼紙印刷 50張起 防水PVC | 智印港 ZprintPro",
+        "title": "小批量貼紙印刷 50張起 防水PVC | 智印港",
         "description": "小批量貼紙印刷 50 張起印，無開版費。防水 PVC / 透明 BOPP / 銅版紙全材質，異形切割 + 燙金 UV 支援。3-5 天交貨，免費 2 小時打稿。30 秒 AI 報價，WhatsApp 即日回覆。",
         "h1": "最低A4尺寸起印，無需大量庫存壓力。適合初創品牌、活動宣傳、個人創作。智印港提供專業小批量貼紙服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["小批量貼紙", "貼紙印刷", "貼紙訂製", "印貼紙", "不干膠印刷", "防水貼紙", "透明貼紙", "異形貼紙", "標籤貼紙", "定制貼紙", "防水不干膠", "卷筒標籤", "1000張貼紙", "100張貼紙", "A4貼紙", "Etsy貼紙", "FDA貼紙", "QR Code 貼紙", "expiry date 貼紙", "不殘膠", "不留膠", "可掃描貼紙", "可移除貼紙", "圓形貼紙", "婚禮貼紙", "學生貼紙", "客製貼紙", "成分標示", "成分標示貼紙", "標籤貼紙印刷", "活動互動", "物流追蹤", "玻璃貼紙", "生日貼紙", "經濟貼紙", "迎賓牌貼紙", "透明貼紙印刷", "防水標籤", "食品級貼紙", "高透貼紙"],
@@ -594,7 +594,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "小批量貼紙 / 不干膠 | 香港小批量貼紙印刷 PVC 防水／PP 合成紙 | ZprintPro智印港",
+      "zh-hk": "小批量貼紙 / 不干膠 | 香港小批量貼紙印刷 PVC 防水／PP 合成紙 | 智印港",
       "en": "Custom Small Batch Stickers for pet food and brand labels — ZprintPro",
       "ja": "一般為100張起訂，部分特殊工藝需500張起。"
     }
@@ -607,7 +607,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "異形模切貼紙 | 防水 PVC 異形切割 | 智印港 ZprintPro",
+        "title": "異形模切貼紙 | 防水 PVC 異形切割 | 智印港",
         "description": "異形模切貼紙/貼紙印刷 100 張起。採用 防水 PVC/銅版紙/透明料 高品質材質，支援 圓/方/異形 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "任意形狀模切，讓創意不受限製。可切出Logo形狀、卡通形象等獨特輪廓。智印港提供專業異形模切貼紙服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["異形模切貼紙", "貼紙印刷", "貼紙訂製", "異形貼紙", "不干膠印刷", "防水貼紙", "透明貼紙", "標籤貼紙", "定制貼紙", "小批量貼紙", "防水不干膠", "卷筒標籤", "1000張貼紙", "100張貼紙", "A4貼紙", "Etsy貼紙", "FDA貼紙", "QR Code 貼紙", "expiry date 貼紙", "不殘膠", "不留膠", "可掃描貼紙", "可移除貼紙", "圓形貼紙", "婚禮貼紙", "學生貼紙", "客製貼紙", "成分標示", "成分標示貼紙", "標籤貼紙印刷", "活動互動", "物流追蹤", "玻璃貼紙", "生日貼紙", "經濟貼紙", "迎賓牌貼紙", "透明貼紙印刷", "防水標籤", "食品級貼紙", "高透貼紙"],
@@ -637,7 +637,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "異形模切貼紙 / 不干膠 | 香港異形模切貼紙印刷 PVC／PP 合成紙／透明 PET | ZprintPro智印港",
+      "zh-hk": "異形模切貼紙 / 不干膠 | 香港異形模切貼紙印刷 PVC／PP 合成紙／透明 PET | 智印港",
       "en": "Custom Die-Cut Stickers for pet food and brand labels — ZprintPro",
       "ja": "一般為100張起訂，部分特殊工藝需500張起。"
     }
@@ -650,7 +650,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "燙金貼紙 | 防水 PVC 異形切割 | 智印港 ZprintPro",
+        "title": "燙金貼紙 | 防水 PVC 異形切割 | 智印港",
         "description": "燙金貼紙/燙金貼紙 100 張起。採用 防水 PVC/銅版紙/透明料 高品質材質，支援 圓/方/異形 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "燙金工藝，讓貼紙呈現高級質感。適合高端產品標籤、禮品包裝、VIP標識。智印港提供專業燙金貼紙服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["燙金貼紙", "貼紙印刷", "不干膠印刷", "防水貼紙", "透明貼紙", "異形貼紙", "標籤貼紙", "定制貼紙", "小批量貼紙", "防水不干膠", "卷筒標籤", "1000張貼紙", "100張貼紙", "A4貼紙", "Etsy貼紙", "FDA貼紙", "QR Code 貼紙", "expiry date 貼紙", "不殘膠", "不留膠", "可掃描貼紙", "可移除貼紙", "圓形貼紙", "婚禮貼紙", "學生貼紙", "客製貼紙", "成分標示", "成分標示貼紙", "標籤貼紙印刷", "活動互動", "物流追蹤", "玻璃貼紙", "生日貼紙", "經濟貼紙", "迎賓牌貼紙", "透明貼紙印刷", "防水標籤", "食品級貼紙", "高透貼紙"],
@@ -680,7 +680,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "燙金貼紙 / 不干膠 | 香港燙金貼紙印刷 銅版紙／合成紙 | ZprintPro智印港",
+      "zh-hk": "燙金貼紙 / 不干膠 | 香港燙金貼紙印刷 銅版紙／合成紙 | 智印港",
       "en": "Custom Foil Stickers for pet food and brand labels — ZprintPro",
       "ja": "箔押しステッカー / 防水 | 箔押しステッカー印刷 防水PVC | ZprintPro"
     }
@@ -693,7 +693,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "防偽貼紙 | 防水 PVC 異形切割 | 智印港 ZprintPro",
+        "title": "防偽貼紙 | 防水 PVC 異形切割 | 智印港",
         "description": "防偽貼紙/防偽貼紙 100 張起。採用 防水 PVC/銅版紙/透明料 高品質材質，支援 圓/方/異形 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "特殊防偽工藝，包括雷射標籤、易碎紙等，保護品牌免受假冒。智印港提供專業防偽貼紙服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["防偽貼紙", "貼紙印刷", "不干膠印刷", "防水貼紙", "透明貼紙", "異形貼紙", "標籤貼紙", "定制貼紙", "小批量貼紙", "防水不干膠", "卷筒標籤", "1000張貼紙", "100張貼紙", "A4貼紙", "Etsy貼紙", "FDA貼紙", "QR Code 貼紙", "expiry date 貼紙", "不殘膠", "不留膠", "可掃描貼紙", "可移除貼紙", "圓形貼紙", "婚禮貼紙", "學生貼紙", "客製貼紙", "成分標示", "成分標示貼紙", "標籤貼紙印刷", "活動互動", "物流追蹤", "玻璃貼紙", "生日貼紙", "經濟貼紙", "迎賓牌貼紙", "透明貼紙印刷", "防水標籤", "食品級貼紙", "高透貼紙"],
@@ -723,7 +723,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "防偽貼紙 / 不干膠 | 香港防偽貼紙印刷 易碎紙／VOID／合成紙＋全息膜等（依方案） | ZprintPro智印港",
+      "zh-hk": "防偽貼紙 / 不干膠 | 香港防偽貼紙印刷 易碎紙／VOID／合成紙＋全息膜等（依方案） | 智印港",
       "en": "Custom Security Stickers for pet food and brand labels — ZprintPro",
       "ja": "セキュリティステッカー / 防水 | セキュリティステッカー印刷 防水PVC | ZprintPro"
     }
@@ -736,7 +736,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "螢光貼紙 | 防水 PVC 異形切割 | 智印港 ZprintPro",
+        "title": "螢光貼紙 | 防水 PVC 異形切割 | 智印港",
         "description": "螢光貼紙/螢光貼紙 100 張起。採用 防水 PVC/銅版紙/透明料 高品質材質，支援 圓/方/異形 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "螢光色彩，在光線下格外醒目。適合促銷標籤、安全標識、活動裝飾。智印港提供專業螢光貼紙服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["螢光貼紙", "貼紙印刷", "不干膠印刷", "防水貼紙", "透明貼紙", "異形貼紙", "標籤貼紙", "定制貼紙", "小批量貼紙", "防水不干膠", "卷筒標籤", "1000張貼紙", "100張貼紙", "A4貼紙", "Etsy貼紙", "FDA貼紙", "QR Code 貼紙", "expiry date 貼紙", "不殘膠", "不留膠", "可掃描貼紙", "可移除貼紙", "圓形貼紙", "婚禮貼紙", "學生貼紙", "客製貼紙", "成分標示", "成分標示貼紙", "標籤貼紙印刷", "活動互動", "物流追蹤", "玻璃貼紙", "生日貼紙", "經濟貼紙", "迎賓牌貼紙", "透明貼紙印刷", "防水標籤", "食品級貼紙", "高透貼紙"],
@@ -766,7 +766,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "螢光貼紙 / 不干膠 | 香港螢光貼紙印刷 螢光 PVC 膜／螢光紙 | ZprintPro智印港",
+      "zh-hk": "螢光貼紙 / 不干膠 | 香港螢光貼紙印刷 螢光 PVC 膜／螢光紙 | 智印港",
       "en": "Custom Fluorescent Stickers for pet food and brand labels — ZprintPro",
       "ja": "一般為100張起訂，部分特殊工藝需500張起。"
     }
@@ -779,7 +779,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "牛皮紙袋 | 100%環保 多尺寸 | 智印港 ZprintPro",
+        "title": "牛皮紙袋 | 100%環保 多尺寸 | 智印港",
         "description": "牛皮紙袋印刷訂製，100個起印，HK$1.8起/個。FSC環保認證紙材，多尺寸多規格，免費刀模設計，支援燙金UV局部。即日交貨，全港送貨，零售餐飲活動品牌推廣。100個起訂, 順豐本地速遞, 立即 WhatsApp 報價。ZprintPro 15+ 年自有品牌。",
         
         "h1": "牛皮紙袋",
@@ -814,7 +814,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "牛皮紙袋 / 環保 | 香港牛皮紙袋印刷 牛皮紙 120–200g 級（依報價） | ZprintPro智印港",
+      "zh-hk": "牛皮紙袋 / 環保 | 香港牛皮紙袋印刷 牛皮紙 120–200g 級（依報價） | 智印港",
       "en": "Custom Kraft Paper Bags for pet food and brand labels — ZprintPro",
       "ja": "クラフト紙袋 / FSC認証 | クラフト紙袋印刷 FSC認証紙 100個〜 | ZprintPro"
     }
@@ -827,7 +827,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "白卡紙袋 | 100%環保 多尺寸 | 智印港 ZprintPro",
+        "title": "白卡紙袋 | 100%環保 多尺寸 | 智印港",
         "description": "白卡紙袋/白卡紙袋 100 個起。採用 白卡/牛皮紙/銅版紙 高品質材質，支援 多尺寸 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "白卡紙袋",
@@ -861,7 +861,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "白卡紙袋 / 環保 | 香港白卡紙袋印刷 白卡紙 200–300g 級（依報價） | ZprintPro智印港",
+      "zh-hk": "白卡紙袋 / 環保 | 香港白卡紙袋印刷 白卡紙 200–300g 級（依報價） | 智印港",
       "en": "Custom White Card Bags for pet food and brand labels — ZprintPro",
       "ja": "白カード紙袋 / 高耐久 | 白カード紙袋印刷 高耐久素材 100個〜 | ZprintPro"
     }
@@ -874,7 +874,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "禮品紙袋 | 100%環保 多尺寸 | 智印港 ZprintPro",
+        "title": "禮品紙袋 | 100%環保 多尺寸 | 智印港",
         "description": "禮品紙袋印刷訂製，100個起印，HK$3.5起/個。棉繩緞帶手挽，燙金UV壓凹工藝，支援多尺寸客製LOGO。適合品牌活動週年慶贈品，即日交貨，全港免費送貨。100張起印, 順豐本地速遞, 立即 WhatsApp 報價。ZprintPro 15+ 年自有品牌。",
         
         "h1": "禮品紙袋",
@@ -905,7 +905,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "禮品紙袋 / 環保 | 香港禮品紙袋印刷 白卡／特種紙／珠光紙（依稿） | ZprintPro智印港",
+      "zh-hk": "禮品紙袋 / 環保 | 香港禮品紙袋印刷 白卡／特種紙／珠光紙（依稿） | 智印港",
       "en": "Custom Gift Paper Bags for pet food and brand labels — ZprintPro",
       "ja": "一般為100個起訂，大批量訂單價格更優惠。"
     }
@@ -918,7 +918,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "環保紙袋 | 100%環保 多尺寸 | 智印港 ZprintPro",
+        "title": "環保紙袋 | 100%環保 多尺寸 | 智印港",
         "description": "環保紙袋印刷訂製，100個起印，HK$2.2起/個。FSC再生認證紙材，可完全降解，支援燙金UV印刷。適合ESG品牌碳審計、減塑徵費合規，即日交貨，全港送貨。100張起印, 順豐本地速遞, 立即 WhatsApp 報價。ZprintPro 15+ 年自有品牌。",
         "h1": "FSC認證環保紙張，可持續發展。適合注重環保的品牌。智印港提供專業環保紙袋服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["環保紙袋", "紙袋印刷", "紙袋訂製", "手提紙袋", "購物紙袋", "牛皮紙袋", "婚禮紙袋", "禮品紙袋", "定製LOGO紙袋", "精品紙袋", "白卡紙袋", "100個起", "100個起印", "2小時取件", "48小時出貨", "50個起", "A4文件袋", "C6紙袋", "C7禮品袋", "HK$1.5起", "HK$2起", "伴手禮紙袋", "保密檔案袋", "免費打樣", "免費設計", "全港順豐直送", "公司抬頭", "印紙袋", "可封口袋", "可水洗手提袋", "品牌周邊", "喜糖紙袋", "喜糖袋印刷", "夜市袋子", "婚禮手提袋", "專業紙袋印刷服務", "小批量紙袋", "市集手提袋", "帆布袋印刷", "平價紙袋印刷", "快速紙袋印刷", "手抽袋印刷", "手挽紙袋", "手提袋定製", "托特包定製", "承重手提袋", "旺角急印", "檔案袋印刷", "深圳聯動生產", "無紡布袋印刷", "燙金LOGO", "燙金紙袋", "燙金絲帶孔", "環保袋定製", "精品店紙袋", "紙袋印製", "紙袋工廠", "紙袋製作", "紙袋訂做", "迷你紙袋", "透明窗手抽袋", "食品級袋子"],
@@ -957,7 +957,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "環保手挽袋 | 100%環保 多尺寸 | 智印港 ZprintPro",
+        "title": "環保手挽袋 | 100%環保 多尺寸 | 智印港",
         "description": "手挽袋/紙袋 100 個起。採用 白卡/牛皮紙/銅版紙 高品質材質，支援 多尺寸 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "堅固手挽設計，承重能力強。適合購物中心、超市。智印港提供專業手挽紙袋服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["手挽袋", "紙袋", "紙袋訂製", "紙袋印刷", "手提紙袋", "購物紙袋", "牛皮紙袋", "環保紙袋", "婚禮紙袋", "禮品紙袋", "定製LOGO紙袋", "精品紙袋", "白卡紙袋", "100個起", "100個起印", "2小時取件", "48小時出貨", "50個起", "A4文件袋", "C6紙袋", "C7禮品袋", "HK$1.5起", "HK$2起", "伴手禮紙袋", "保密檔案袋", "免費打樣", "免費設計", "全港順豐直送", "公司抬頭", "印紙袋", "可封口袋", "可水洗手提袋", "品牌周邊", "喜糖紙袋", "喜糖袋印刷", "夜市袋子", "婚禮手提袋", "專業紙袋印刷服務", "小批量紙袋", "市集手提袋", "帆布袋印刷", "平價紙袋印刷", "快速紙袋印刷", "手抽袋印刷", "手挽紙袋", "手提袋定製", "托特包定製", "承重手提袋", "旺角急印", "檔案袋印刷", "深圳聯動生產", "無紡布袋印刷", "燙金LOGO", "燙金紙袋", "燙金絲帶孔", "環保袋定製", "精品店紙袋", "紙袋印製", "紙袋工廠", "紙袋製作", "紙袋訂做", "迷你紙袋", "透明窗手抽袋", "食品級袋子"],
@@ -987,7 +987,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "手挽紙袋 / 環保 | 香港手挽紙袋印刷 牛皮／白卡 | ZprintPro智印港",
+      "zh-hk": "手挽紙袋 / 環保 | 香港手挽紙袋印刷 牛皮／白卡 | 智印港",
       "en": "Custom Handle Bags for pet food and brand labels — ZprintPro",
       "ja": "ハンドルバッグ / 高耐久 | ハンドルバッグ印刷 高耐久素材 100個〜 | ZprintPro"
     }
@@ -1000,7 +1000,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "小號紙袋 | 100%環保 多尺寸 | 智印港 ZprintPro",
+        "title": "小號紙袋 | 100%環保 多尺寸 | 智印港",
         "description": "小號紙袋/小號紙袋 100 個起。採用 白卡/牛皮紙/銅版紙 高品質材質，支援 多尺寸 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "小巧尺寸，適合首飾、化妝品等小件商品。智印港提供專業小號紙袋服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["小號紙袋", "紙袋", "紙袋訂製"],
@@ -1042,7 +1042,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "大號紙袋 | 100%環保 多尺寸 | 智印港 ZprintPro",
+        "title": "大號紙袋 | 100%環保 多尺寸 | 智印港",
         "description": "大號紙袋/大號紙袋 100 個起。採用 白卡/牛皮紙/銅版紙 高品質材質，支援 多尺寸 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "加大尺寸，適合服裝、鞋類等大件商品。智印港提供專業大號紙袋服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["大號紙袋", "紙袋批發", "紙袋訂製", "紙袋印刷", "手提紙袋", "購物紙袋", "牛皮紙袋", "環保紙袋", "婚禮紙袋", "禮品紙袋", "定製LOGO紙袋", "精品紙袋", "白卡紙袋", "100個起", "100個起印", "2小時取件", "48小時出貨", "50個起", "A4文件袋", "C6紙袋", "C7禮品袋", "HK$1.5起", "HK$2起", "伴手禮紙袋", "保密檔案袋", "免費打樣", "免費設計", "全港順豐直送", "公司抬頭", "印紙袋", "可封口袋", "可水洗手提袋", "品牌周邊", "喜糖紙袋", "喜糖袋印刷", "夜市袋子", "婚禮手提袋", "專業紙袋印刷服務", "小批量紙袋", "市集手提袋", "帆布袋印刷", "平價紙袋印刷", "快速紙袋印刷", "手抽袋印刷", "手挽紙袋", "手提袋定製", "托特包定製", "承重手提袋", "旺角急印", "檔案袋印刷", "深圳聯動生產", "無紡布袋印刷", "燙金LOGO", "燙金紙袋", "燙金絲帶孔", "環保袋定製", "精品店紙袋", "紙袋印製", "紙袋工廠", "紙袋製作", "紙袋訂做", "迷你紙袋", "透明窗手抽袋", "食品級袋子"],
@@ -1072,7 +1072,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "大號紙袋 / 環保 | 香港大號紙袋印刷 FSC 認證紙 | ZprintPro智印港",
+      "zh-hk": "大號紙袋 / 環保 | 香港大號紙袋印刷 FSC 認證紙 | 智印港",
       "en": "Custom Large Paper Bags for pet food and brand labels — ZprintPro",
       "ja": "大型紙袋 / 高耐久素材 | 大型紙袋印刷 強化素材 100個〜 即日発送 | ZprintPro"
     }
@@ -1085,7 +1085,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "A4 傳單印刷 | 雙面四色 100張起 | 智印港 ZprintPro",
+        "title": "A4 傳單印刷 | 雙面四色 100張起 | 智印港",
         "description": "A4傳單印刷訂製，100張起印，HK$0.3起/張。157g銅版紙雙面四色印刷，免費設計打樣。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。100張起印, 順豐本地速遞, 立即 WhatsApp 報價。ZprintPro 15+ 年自有品牌。",
         
         "h1": "A4傳單印刷",
@@ -1120,7 +1120,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "A4傳單印刷 / 雙面四色 | 香港A4傳單印刷印刷 157g銅版紙或128g啞粉紙 | ZprintPro智印港",
+      "zh-hk": "A4傳單印刷 / 雙面四色 | 香港A4傳單印刷印刷 157g銅版紙或128g啞粉紙 | 智印港",
       "en": "A4 Flyers for holiday cards, wedding invitations — ZprintPro",
       "ja": "A4チラシ / 両面カラー | A4チラシ印刷 両面4色 100枚〜 即日発送 | ZprintPro"
     }
@@ -1133,7 +1133,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "A5 傳單印刷 | 雙面四色 100張起 | 智印港 ZprintPro",
+        "title": "A5 傳單印刷 | 雙面四色 100張起 | 智印港",
         "description": "A5傳單印刷訂製，100張起印，HK$0.18起/張。157g銅版紙雙面四色，免費設計排版。適合餐廳地產活動宣傳，48小時交貨，全港速遞免費。100張起印, 順豐本地速遞, 立即 WhatsApp 報價。ZprintPro 15+ 年自有品牌。",
         
         "h1": "A5傳單印刷",
@@ -1167,7 +1167,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "A5傳單印刷 / 雙面四色 | 香港A5傳單印刷印刷 128g銅版紙或100g書紙 | ZprintPro智印港",
+      "zh-hk": "A5傳單印刷 / 雙面四色 | 香港A5傳單印刷印刷 128g銅版紙或100g書紙 | 智印港",
       "en": "A5 Flyers for holiday cards, wedding invitations — ZprintPro",
       "ja": "A5チラシ / 両面カラー | A5チラシ印刷 両面4色 100枚〜 即日発送 | ZprintPro"
     }
@@ -1180,7 +1180,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "雙面傳單印刷 | 雙面四色 100張起 | 智印港 ZprintPro",
+        "title": "雙面傳單印刷 | 雙面四色 100張起 | 智印港",
         "description": "雙面傳單印刷/傳單印刷 100 張起。採用 157g-300g 銅版紙 高品質材質，支援 A4/A5/A6/DL 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。即日-2 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "雙面傳單印刷",
@@ -1210,7 +1210,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "雙面傳單印刷 / 雙面四色 | 香港雙面傳單印刷印刷 157g銅版紙或128g啞粉紙 | ZprintPro智印港",
+      "zh-hk": "雙面傳單印刷 / 雙面四色 | 香港雙面傳單印刷印刷 157g銅版紙或128g啞粉紙 | 智印港",
       "en": "Double-Sided Flyers for holiday cards, wedding invitations — ZprintPro",
       "ja": "両面チラシ / 両面カラー | 両面チラシ印刷 両面4色 100枚〜 即日発送 | ZprintPro"
     }
@@ -1223,7 +1223,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "摺頁單張 | 雙面四色 100張起 | 智印港 ZprintPro",
+        "title": "摺頁單張 | 雙面四色 100張起 | 智印港",
         "description": "三摺雙摺宣傳單印刷訂製，100張起印，HK$0.45起/張。157g-250g銅版紙，免費摺頁設計排版。適合企業簡介產品目錄活動宣傳，3-5天交貨，全港送貨。100張起印, 順豐本地速遞, 立即 WhatsApp 報價。ZprintPro 15+ 年自有品牌。",
         "h1": "對摺或三摺設計，可展示更多信息。適合產品目錄、服務介紹。智印港提供專業摺疊傳單印刷服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["摺頁單張", "傳單印刷", "摺頁", "傳單印刷印刷", "單張印刷", "彩頁印刷", "折頁印刷", "A4單張", "A5單張", "DM單", "三折頁", "宣傳單設計", "彩色單張", "24小時快印", "2小時快印", "CSV快印", "HK$0.5起", "HK$199起", "HK$1起", "一對一名單", "上門快印", "上門收件", "企業快印", "個性化印刷", "傳單印刷", "免費排版", "功課印刷", "即日出貨", "即日取件", "即日快印", "即日設計", "可變數據印刷", "學生快印", "專屬客服", "快印", "快印多少錢", "批量合併列印", "批量文件", "文件快印", "旺角快印", "易拉架快印", "月結印刷", "標籤快印", "活動印刷", "活動名卡", "燙金證書", "物流標籤快印", "獎狀印刷", "畢業證打印", "當日出貨", "發票印刷", "裝訂服務", "論文打印", "證書快印", "跨境包裝", "邀請卡印刷", "銅鑼灣快印", "防偽紙", "電商快印", "香港快印"],
@@ -1261,7 +1261,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "厚身單張 | 雙面四色 100張起 | 智印港 ZprintPro",
+        "title": "厚身單張 | 雙面四色 100張起 | 智印港",
         "description": "厚身單張/傳單印刷 100 張起。採用 157g-300g 銅版紙 高品質材質，支援 A4/A5/A6/DL 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。即日-2 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "200g以上厚紙，質感更佳，不易折損。適合高端產品宣傳。智印港提供專業厚紙傳單印刷服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["厚身單張", "傳單印刷", "傳單印刷印刷", "單張印刷", "彩頁印刷", "折頁印刷", "A4單張", "A5單張", "DM單", "三折頁", "宣傳單設計", "彩色單張", "24小時快印", "2小時快印", "CSV快印", "HK$0.5起", "HK$199起", "HK$1起", "一對一名單", "上門快印", "上門收件", "企業快印", "個性化印刷", "傳單印刷", "免費排版", "功課印刷", "即日出貨", "即日取件", "即日快印", "即日設計", "可變數據印刷", "學生快印", "專屬客服", "快印", "快印多少錢", "批量合併列印", "批量文件", "文件快印", "旺角快印", "易拉架快印", "月結印刷", "標籤快印", "活動印刷", "活動名卡", "燙金證書", "物流標籤快印", "獎狀印刷", "畢業證打印", "當日出貨", "發票印刷", "裝訂服務", "論文打印", "證書快印", "跨境包裝", "邀請卡印刷", "銅鑼灣快印", "防偽紙", "電商快印", "香港快印"],
@@ -1290,7 +1290,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "厚紙傳單印刷 / 雙面四色 | 香港厚紙傳單印刷印刷 200g或250g銅版紙 | ZprintPro智印港",
+      "zh-hk": "厚紙傳單印刷 / 雙面四色 | 香港厚紙傳單印刷印刷 200g或250g銅版紙 | 智印港",
       "en": "Thick Paper Flyers for holiday cards, wedding invitations — ZprintPro",
       "ja": "厚口チラシ / 高耐久 | 厚口チラシ印刷 高耐久 100枚〜 即日発送 | ZprintPro"
     }
@@ -1303,7 +1303,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "即日印刷 傳單 100張起 HK$0.55起 | 智印港 ZprintPro",
+        "title": "即日印刷 傳單 100張起 HK$0.55起 | 智印港",
         "description": "即日傳單印刷 100 張起、HK$0.55 起/張，下午 3 時前落單即日交貨。157-300g 銅版紙全尺寸 A4/A5/A6/DL，雙面四色。免費 2 小時打稿，滿 HK$500 免費順豐。30 秒 AI 報價。",
         
         "h1": "即日傳單印刷",
@@ -1333,7 +1333,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "即日傳單印刷 / 雙面四色 | 香港即日傳單印刷印刷 157g銅版紙 | ZprintPro智印港",
+      "zh-hk": "即日傳單印刷 / 雙面四色 | 香港即日傳單印刷印刷 157g銅版紙 | 智印港",
       "en": "Same-Day Flyers for holiday cards, wedding invitations — ZprintPro",
       "ja": "即日チラシ / 両面カラー | 即日チラシ印刷 当日仕上げ 100枚〜 | ZprintPro"
     }
@@ -1346,7 +1346,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "環保傳單印刷 | 雙面四色 100張起 | 智印港 ZprintPro",
+        "title": "環保傳單印刷 | 雙面四色 100張起 | 智印港",
         "description": "環保傳單印刷/環保印刷 100 張起。採用 157g-300g 銅版紙 高品質材質，支援 A4/A5/A6/DL 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。即日-2 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "環保紙張印刷，展現企業責任。適合環保主題活動。智印港提供專業環保傳單印刷服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["環保傳單印刷", "環保印刷", "傳單印刷", "傳單印刷印刷", "單張印刷", "彩頁印刷", "折頁印刷", "A4單張", "A5單張", "DM單", "三折頁", "宣傳單設計", "彩色單張", "24小時快印", "2小時快印", "CSV快印", "HK$0.5起", "HK$199起", "HK$1起", "一對一名單", "上門快印", "上門收件", "企業快印", "個性化印刷", "傳單印刷", "免費排版", "功課印刷", "即日出貨", "即日取件", "即日快印", "即日設計", "可變數據印刷", "學生快印", "專屬客服", "快印", "快印多少錢", "批量合併列印", "批量文件", "文件快印", "旺角快印", "易拉架快印", "月結印刷", "標籤快印", "活動印刷", "活動名卡", "燙金證書", "物流標籤快印", "獎狀印刷", "畢業證打印", "當日出貨", "發票印刷", "裝訂服務", "論文打印", "證書快印", "跨境包裝", "邀請卡印刷", "銅鑼灣快印", "防偽紙", "電商快印", "香港快印"],
@@ -1384,7 +1384,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "A2 海報印刷 1張起印 HK$9起 即日交貨 印海報一張小訂單適用 | 智印港 ZprintPro",
+        "title": "A2 海報印刷 1張起印 HK$9起 即日交貨 印海報一張小訂單適用 | 智印港",
         "description": "A2 海報印刷 1 張起印、HK$9 起/張，200g 銅版紙 / PP 防水合成紙，Giclée 級 1200 DPI。展覽/門店/地產推廣適用，即日打稿 2 小時。滿 HK$500 免費順豐，30 秒 AI 報價。",
         
         "h1": "海報印刷 · A2 大幅 · 印海報 即日",
@@ -1419,7 +1419,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "A2海報印刷 / 防水材質 | 香港A2海報印刷 157g 銅版紙（可升 200g／相紙） | ZprintPro智印港",
+      "zh-hk": "A2海報印刷 / 防水材質 | 香港A2海報印刷 157g 銅版紙（可升 200g／相紙） | 智印港",
       "en": "A2 Posters wall art for home decor, gallery walls — ZprintPro",
       "ja": "A2ポスター / 防水 | A2ポスター印刷 防水紙 翌日配送 | ZprintPro"
     }
@@ -1432,7 +1432,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "A1 大幅海報 | 防水材質 即日速遞 | 智印港 ZprintPro",
+        "title": "A1 大幅海報 | 防水材質 即日速遞 | 智印港",
         "description": "A1 大幅海報/海報印刷 10 張起。採用 157g-300g 銅版紙/PP 紙/相紙 高品質材質，支援 A1/A2/A3/A4 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。即日-3 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "A1大幅海報",
@@ -1463,7 +1463,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "A1大幅海報 / 防水材質 | 香港A1大幅海報印刷 157–200g 銅版或相紙 | ZprintPro智印港",
+      "zh-hk": "A1大幅海報 / 防水材質 | 香港A1大幅海報印刷 157–200g 銅版或相紙 | 智印港",
       "en": "A1 Posters wall art for home decor, gallery walls — ZprintPro",
       "ja": "我們支持最大A0尺寸（841×1189mm），更大尺寸可定制拼接。"
     }
@@ -1476,7 +1476,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "戶外海報 | 防水材質 即日速遞 | 智印港 ZprintPro",
+        "title": "戶外海報 | 防水材質 即日速遞 | 智印港",
         "description": "戶外海報/戶外海報 10 張起。採用 157g-300g 銅版紙/PP 紙/相紙 高品質材質，支援 A1/A2/A3/A4 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。即日-3 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "戶外海報",
@@ -1507,7 +1507,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "戶外海報 / 防水材質 | 香港戶外海報印刷 戶外 PVC／PET／合成紙 | ZprintPro智印港",
+      "zh-hk": "戶外海報 / 防水材質 | 香港戶外海報印刷 戶外 PVC／PET／合成紙 | 智印港",
       "en": "Outdoor Posters wall art for home decor, gallery walls — ZprintPro",
       "ja": "屋外ポスター / 防水 | 屋外ポスター印刷 防水・耐光紙 翌日配送 | ZprintPro"
     }
@@ -1520,7 +1520,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "展架海報 | 防水材質 即日速遞 | 智印港 ZprintPro",
+        "title": "展架海報 | 防水材質 即日速遞 | 智印港",
         "description": "展架海報/海報印刷 10 張起。採用 157g-300g 銅版紙/PP 紙/相紙 高品質材質，支援 A1/A2/A3/A4 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。即日-3 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "配合X展架或易拉寶使用，便攜易裝。展會、路演必備。智印港提供專業展架海報服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["展架海報", "海報印刷", "A1海報", "A2海報", "戶外海報", "展覽海報", "大圖輸出", "防水海報", "門店海報", "POP海報", "活動海報", "24小時海報印刷", "2小時快印", "A0海報", "HK$20起", "促銷海報", "功課海報", "即日出貨", "即日海報印刷", "即日設計", "夜間快印", "婚禮海報印刷", "婚禮照片牆", "婚紗海報", "學生海報印刷", "寫真海報", "寫真海報印刷", "專業海報", "旺角海報", "易拉架海報", "活動海報印刷", "海報多少錢", "海報排版", "海報設計印刷", "燙金海報", "節日裝飾", "簡報海報", "緊急海報", "美術排版", "背膠寫真", "背膠海報", "菜單印刷", "迎賓牌印刷", "銅鑼灣快印", "餐飲海報印刷", "高解析度海報"],
@@ -1559,7 +1559,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "藝術海報 | 防水材質 即日速遞 | 智印港 ZprintPro",
+        "title": "藝術海報 | 防水材質 即日速遞 | 智印港",
         "description": "藝術海報印刷訂製，1張起印，HK$15起/張。200g美術紙/啞粉紙/RC相紙，Giclée級色彩管理。適合攝影師藝術家畫廊展覽，3-5天交貨，全球配送。100張起印, 順豐本地速遞, 立即 WhatsApp 報價。ZprintPro 15+ 年自有品牌。",
         "h1": "高級藝術紙張，色彩還原度高。適合藝術展覽、攝影作品。智印港提供專業藝術海報服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["藝術海報", "海報印刷", "印poster", "A1海報", "A2海報", "戶外海報", "展覽海報", "大圖輸出", "防水海報", "門店海報", "POP海報", "活動海報", "24小時海報印刷", "2小時快印", "A0海報", "HK$20起", "促銷海報", "功課海報", "即日出貨", "即日海報印刷", "即日設計", "夜間快印", "婚禮海報印刷", "婚禮照片牆", "婚紗海報", "學生海報印刷", "寫真海報", "寫真海報印刷", "專業海報", "旺角海報", "易拉架海報", "活動海報印刷", "海報多少錢", "海報排版", "海報設計印刷", "燙金海報", "節日裝飾", "簡報海報", "緊急海報", "美術排版", "背膠寫真", "背膠海報", "菜單印刷", "迎賓牌印刷", "銅鑼灣快印", "餐飲海報印刷", "高解析度海報"],
@@ -1589,7 +1589,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "藝術海報 / 防水材質 | 香港藝術海報印刷 PP 合成紙 | ZprintPro智印港",
+      "zh-hk": "藝術海報 / 防水材質 | 香港藝術海報印刷 PP 合成紙 | 智印港",
       "en": "Art Posters wall art for home decor, gallery walls — ZprintPro",
       "ja": "アートポスター / 防水 | アートポスター印刷 防水紙 翌日配送 | ZprintPro"
     }
@@ -1602,7 +1602,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "背膠海報 | 防水材質 即日速遞 | 智印港 ZprintPro",
+        "title": "背膠海報 | 防水材質 即日速遞 | 智印港",
         "description": "背膠海報/海報印刷 10 張起。採用 157g-300g 銅版紙/PP 紙/相紙 高品質材質，支援 A1/A2/A3/A4 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。即日-3 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "自帶背膠，可直接粘貼。適合店鋪櫥窗、牆面裝飾。智印港提供專業背膠海報服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["背膠海報", "海報印刷", "印海報", "A1海報", "A2海報", "戶外海報", "展覽海報", "大圖輸出", "防水海報", "門店海報", "POP海報", "活動海報", "24小時海報印刷", "2小時快印", "A0海報", "HK$20起", "促銷海報", "功課海報", "即日出貨", "即日海報印刷", "即日設計", "夜間快印", "婚禮海報印刷", "婚禮照片牆", "婚紗海報", "學生海報印刷", "寫真海報", "寫真海報印刷", "專業海報", "旺角海報", "易拉架海報", "活動海報印刷", "海報多少錢", "海報排版", "海報設計印刷", "燙金海報", "節日裝飾", "簡報海報", "緊急海報", "美術排版", "背膠寫真", "菜單印刷", "迎賓牌印刷", "銅鑼灣快印", "餐飲海報印刷", "高解析度海報"],
@@ -1632,7 +1632,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "背膠海報 / 防水材質 | 香港背膠海報印刷 150g–180g 背膠 PP／鑄造級 PVC | ZprintPro智印港",
+      "zh-hk": "背膠海報 / 防水材質 | 香港背膠海報印刷 150g–180g 背膠 PP／鑄造級 PVC | 智印港",
       "en": "Adhesive Posters wall art for home decor, gallery walls — ZprintPro",
       "ja": "粘着ポスター / 防水 | 粘着ポスター印刷 防水紙 翌日配送 | ZprintPro"
     }
@@ -1645,7 +1645,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "化妝品包裝盒 4 種盒型 100 個起印 · 磁吸翻蓋 / 天地蓋 / 抽屜式 / 書型 | 智印港 ZprintPro",
+        "title": "化妝品包裝盒 4 種盒型 100 個起印 · 磁吸翻蓋 / 天地蓋 / 抽屜式 / 書型 | 智印港",
         "description": "化妝品包裝盒 100 個起印. 4 種盒型 (天地蓋 / 磁吸翻蓋 / 抽屜式 / 書型) + 內托 EVA / 紙漿 / PET 吸塑可定制. 燙金 + 局部 UV + 緞布內襯. 香港 + 跨境美妝電商 + 日本市場. ISO 9001 + FSC 認證, 4 色柯式印刷, 30 秒 AI 即時報價",
 
         "h1": "化妝品包裝盒 — 4 種盒型 · 內托定制",
@@ -1701,14 +1701,14 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "食品包裝印刷 禮盒訂製 100個起 HK$4起 | 智印港 ZprintPro",
+        "title": "食品包裝印刷 禮盒訂製 100個起 HK$4起 | 智印港",
         "description": "食品包裝印刷訂製：FDA 認可食品級材質 + FSC 認證紙，100 個起印、HK$4 起/個，燙金 UV 全工藝支援。糕點/茶葉/保健品品牌首選，3-5 天交貨、免費 2 小時打稿。30 秒 AI 報價，WhatsApp 即日回覆。 FDA食品級 (FDA 21 CFR 176.170), 跨境合規。月饼端午禮盒 / 茶葉禮盒 / 烘焙坊 / 保健品品牌 / 手搖飲品店 適用。",
         "h1": "食品包裝印刷訂製｜FDA 級材質・100 個起印・3-5 天交貨",
         "keywords": ["食品包裝盒", "食品包裝印刷", "食品包裝訂製", "包裝盒印刷", "瓦楞紙盒", "禮品盒", "定制包裝", "化妝品盒", "食品盒", "快遞盒", "天地蓋盒", "紙盒定制", "高檔禮盒", "100個起印", "2天出貨", "FSC認證", "HK衛生署", "QR Code包裝", "UV彩盒", "中秋禮盒印刷", "保健品包裝", "免費打樣", "免費排版", "出口包裝", "包裝盒價格", "包裝盒快印", "化妝品包裝盒", "即日報價", "可降解包裝", "婚禮喜糖盒", "定製包裝盒", "定製包裝箱", "定製喜糖盒", "小批量包裝盒", "小批量彩盒", "小批量快印", "工業包裝", "彩盒印刷", "抽屜式彩盒", "永續包裝", "燙金印刷", "燙金禮盒", "燙銀印刷", "環保包裝盒", "瓦楞紙盒印刷", "磁吸盒", "禮品彩盒", "窗口包裝", "窗口設計", "節慶包裝盒", "絲帶設計", "經濟包裝", "綠色印刷", "緊急印刷", "美妝包裝", "藥品包裝盒", "防潮包裝", "食品級紙盒", "香港本地印刷", "FDA食品包装", "食品级包装盒", "月饼包裝", "茶葉禮盒包裝", "烘焙包裝", "保健品包裝", "手搖飲品包裝", "跨境食品合规", "FDA認證食品级", "FSC認證紙"],
         "body": "食品包裝印刷訂製，100 個起印、HK$4 起/個，標準 3-5 個工作天交貨。提交檔案 2 小時內免費數碼打稿，30 秒 AI 報價即時出價，WhatsApp 即日回覆。\n\n食品包裝盒專為香港中小企、本地餐廳、茶飲烘焙品牌及跨境食品電商設計。100 個起印，無開版費，港九新界訂單滿 HK$500 免費順豐速遞。ISO 9001 認證工廠，FSC 認證紙張，大豆油墨，FDA 認可（適用於間接食品接觸），15+ 年印刷經驗。\n\n廣泛應用於糕點烘焙、茶葉禮盒、月餅節日禮盒、保健品、手搖飲品及餐廳外賣場景。選材與法規細節可參考[食品包裝印刷完全指南](/zh-hk/blog/food-packaging-printing-guide/)；嬰幼兒食品品牌請參考[嬰幼兒食品包裝盒印刷指南](/zh-hk/blog/baby-food-packaging-box-printing-guide/)，奶粉、輔食、米糊類包裝有專門的安全材質建議。\n\n材質選擇：350g 食品級白卡／400g 灰底白板（標準盒），PE 淋膜或 PLA 可降解內層防油防濕；B 楞瓦楞紙（運輸箱）；硬身磁石禮盒（高級禮品）。全部材質通過 FSC 認證、採用大豆油墨及 FDA 認可（間接食品接觸）。表面處理可選啞光膠、亮面膠、局部 UV、燙金燙銀，支援 CMYK 全彩印刷。\n\n盒型與結構：插口盒（自動扣／直插／反插）、天地蓋、書型盒、磁石蓋禮盒、抽屜式盒、瓦楞運輸箱及異形切割盒，所有標準款式提供免費刀模線模板下載。可做 PET 透明窗口設計展示內裝產品，亦可印可變 QR Code 做批次追溯與防偽。更多盒型與配套見[包裝盒印刷類目](/zh-hk/category/packaging/)。\n\n交稿規範：300 DPI、CMYK 色彩模式、3mm 出血、字體外框化。提交檔案後 2 小時內提供免費數碼打稿。如未有設計檔案，專業設計團隊免費打稿——只需透過 WhatsApp 提供品牌顏色、Logo 及參考圖片。\n\n收費透明：100 個起印、HK$4 起/個（按尺寸、材質、工藝浮動；自訂尺寸或異形切割 500 個起），無開版費、無製版費。標準生產 3-5 個工作天，港九新界順豐速遞 1-2 個工作天送達；加急訂單（24 小時打稿 + 2 天生產）加收 20%。跨境訂單 DHL 全球 2-4 個工作天配送。\n\n食品品牌通常同時需要標籤與外帶配套：[防水貼紙](/zh-hk/product/waterproof-stickers/)適合飲品杯貼與冷藏標籤，[紙袋印刷類目](/zh-hk/category/paper-bags/)可配同款設計一站式交付，省返分開搵供應商嘅時間。\n\n旺季檔期提示：聖誕及 2027 春節禮盒建議提前 3-4 週落單，預留打樣與生產檔期。\n\n準備落單？2 小時免費打稿——WhatsApp 客服 +86 198 8085 1334 或點擊頁面「30 秒 AI 報價」按鈕。"
       },
       "en": {
-        "title": "Custom Food Packaging Boxes 禮盒訂製 | 100 MOQ | ZprintPro",
+        "title": "Custom Food Packaging Boxes | 100 MOQ | ZprintPro",
         "description": "Custom food packaging printing with FDA-safe, FSC-certified materials. 100 MOQ, foil & UV finishes, free 2-hour digital proof, free US shipping $99+. 30-second AI quote. FDA-compliant (FDA 21 CFR 176.170). Mooncake & Dragon Boat Festival gift box, tea gift box, bakery, supplement brand, bubble tea shop all welcome.",
         "h1": "Food Boxes 100+ | Food-Grade | ZprintPro",
         "keywords": ["food boxes","custom food boxes","food packaging boxes","food grade boxes","takeout boxes custom","bakery boxes wholesale","food boxes free shipping","bulk food packaging","food boxes USD","bespoke food packaging","packaging box printing","gift boxes","cosmetic boxes","mailer boxes","corrugated boxes","custom packaging","rigid boxes","folding cartons","product boxes","100pcs MOQ","2-day turnaround","FSC certified","food safety compliance","QR code packaging","mid-autumn gift box printing","health supplement packaging","free proof","free layout","export packaging","cosmetic packaging box","instant quote","compostable packaging","small batch packaging box","industrial packaging","color box printing","drawer color box","sustainable packaging","silver foil printing","eco packaging box","corrugated box","corrugated box printing","magnetic box","gift color box","window design","festival packaging box","green printing","rush printing","beauty packaging","pharmaceutical packaging box","moisture-proof packaging","food-grade box","pet food label","pet brand label","custom pet label","pet portrait","pet memorial","pet lover gift","dog mom gift","cat dad gift","pet treat label", "FDA approved food packaging", "FDA food grade packaging", "mooncake packaging", "tea gift box packaging", "bakery packaging", "supplement packaging", "bubble tea packaging", "eco food box", "cross border food packaging", "FSC certified paper"],
@@ -1717,7 +1717,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       
       },
       "ja": {
-        "title": "食品パッケージ印刷 禮盒訂製 | 100個から | ZprintPro",
+        "title": "食品パッケージ印刷 | 100個から | ZprintPro",
         "description": "食品パッケージ印刷を100個から小ロット対応。FDA適合・FSC認証紙、箔押し・UV加工、無料2時間デジタル校正。日本全国送料無料、DHLで2-4日納品。30秒無料見積もり。 FDA適合 (FDA 21 CFR 176.170 認証)。月餅・端午節ギフトボックス、茶葉ギフト、ベーカリー、ヘルスケアブランド、タピオカ店対応。",
         "h1": "高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。",
         "keywords": ["食品パッケージ", "食品パッケージ 印刷", "food boxes", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "日本の食品衛生基準", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱", "FDA食品パッケージ", "食品グレード包装", "月餅パッケージ", "茶葉ギフトボックス", "ベーカリーパッケージ", "ヘルスケアパッケージ", "タピオカパッケージ", "エコ食品箱", "FSC認証紙"],
@@ -1772,7 +1772,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "訂製郵寄盒 | 燙金 UV 100%訂製 | 智印港 ZprintPro",
+        "title": "訂製郵寄盒 | 燙金 UV 100%訂製 | 智印港",
         "description": "郵寄盒/郵寄盒 100 個起。採用 白卡/牛皮紙/灰板 高品質材質，支援 訂製尺寸 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。7-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "快遞盒/飛機盒",
@@ -1803,7 +1803,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "快遞盒/飛機盒 / 訂製 | 香港快遞盒/飛機盒訂製 E／B 坑瓦楞或白卡裱瓦（依載重） | ZprintPro智印港",
+      "zh-hk": "快遞盒/飛機盒 / 訂製 | 香港快遞盒/飛機盒訂製 E／B 坑瓦楞或白卡裱瓦（依載重） | 智印港",
       "en": "Custom Mailer Boxes for pet food and brand labels — ZprintPro",
       "ja": "メーラーボックス / 宅配対応 | メーラーボックス印刷 厚紙 100個〜 日本向け | ZprintPro"
     }
@@ -1816,7 +1816,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "折疊禮盒 | 燙金 UV 100%訂製 | 智印港 ZprintPro",
+        "title": "折疊禮盒 | 燙金 UV 100%訂製 | 智印港",
         "description": "折疊禮盒/折疊盒 100 個起。採用 白卡/牛皮紙/灰板 高品質材質，支援 訂製尺寸 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。7-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "可折疊設計，節省倉儲空間。適合大量存貨的電商賣家。智印港提供專業折疊盒服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["折疊禮盒", "折疊盒", "禮盒訂製", "包裝盒印刷", "瓦楞紙盒", "禮品盒", "定制包裝", "化妝品盒", "食品盒", "快遞盒", "天地蓋盒", "紙盒定制", "高檔禮盒", "100個起印", "2天出貨", "FSC認證", "HK衛生署", "QR Code包裝", "UV彩盒", "中秋禮盒印刷", "保健品包裝", "免費打樣", "免費排版", "出口包裝", "包裝盒價格", "包裝盒快印", "化妝品包裝盒", "即日報價", "可降解包裝", "婚禮喜糖盒", "定製包裝盒", "定製包裝箱", "定製喜糖盒", "小批量包裝盒", "小批量彩盒", "小批量快印", "工業包裝", "彩盒印刷", "抽屜式彩盒", "永續包裝", "燙金印刷", "燙金禮盒", "燙銀印刷", "環保包裝盒", "瓦楞紙盒印刷", "磁吸盒", "禮品彩盒", "窗口包裝", "窗口設計", "節慶包裝盒", "絲帶設計", "經濟包裝", "綠色印刷", "緊急印刷", "美妝包裝", "藥品包裝盒", "防潮包裝", "食品級紙盒", "香港本地印刷"],
@@ -1855,7 +1855,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "精裝禮盒 | 燙金 UV 100%訂製 | 智印港 ZprintPro",
+        "title": "精裝禮盒 | 燙金 UV 100%訂製 | 智印港",
         "description": "精品盒訂製印刷，100個起印，HK$8起/個。硬殼天地盒磁吸盒，灰板裱藝術紙，燙金UV壓凹工藝。適合化妝品珠寶首飾高端品牌，5-7天交貨，全球配送。100張起印, 順豐本地速遞, 立即 WhatsApp 報價。ZprintPro 15+ 年自有品牌。",
         "h1": "硬殼精裝，高檔奢華。適合高端產品、限量版商品。智印港提供專業精裝盒服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["精裝禮盒", "精裝盒", "禮盒訂製", "包裝盒印刷", "瓦楞紙盒", "禮品盒", "定制包裝", "化妝品盒", "食品盒", "快遞盒", "天地蓋盒", "紙盒定制", "高檔禮盒", "100個起印", "2天出貨", "FSC認證", "HK衛生署", "QR Code包裝", "UV彩盒", "中秋禮盒印刷", "保健品包裝", "免費打樣", "免費排版", "出口包裝", "包裝盒價格", "包裝盒快印", "化妝品包裝盒", "即日報價", "可降解包裝", "婚禮喜糖盒", "定製包裝盒", "定製包裝箱", "定製喜糖盒", "小批量包裝盒", "小批量彩盒", "小批量快印", "工業包裝", "彩盒印刷", "抽屜式彩盒", "永續包裝", "燙金印刷", "燙金禮盒", "燙銀印刷", "環保包裝盒", "瓦楞紙盒印刷", "磁吸盒", "禮品彩盒", "窗口包裝", "窗口設計", "節慶包裝盒", "絲帶設計", "經濟包裝", "綠色印刷", "緊急印刷", "美妝包裝", "藥品包裝盒", "防潮包裝", "食品級紙盒", "香港本地印刷"],
@@ -1894,7 +1894,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "燙金利是封 | 燙金 UV 壓紋 | 智印港 ZprintPro",
+        "title": "燙金利是封 | 燙金 UV 壓紋 | 智印港",
         "description": "燙金利是封/利是封 100 個起。採用 157g 紅金紙/銅版紙 高品質材質，支援 標準/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "燙金利是封",
@@ -1924,7 +1924,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "燙金利是封 / 燙金 UV | 香港燙金利是封印刷 120g紅色紙張 | ZprintPro智印港",
+      "zh-hk": "燙金利是封 / 燙金 UV | 香港燙金利是封印刷 120g紅色紙張 | 智印港",
       "en": "Foil Red Packets for holiday cards, wedding invitations — ZprintPro",
       "ja": "箔押し年賀状 / 箔押し | 箔押し年賀状印刷 箔押し加工 100個〜 | ZprintPro"
     }
@@ -1937,7 +1937,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "浮雕利是封 | 燙金 UV 壓紋 | 智印港 ZprintPro",
+        "title": "浮雕利是封 | 燙金 UV 壓紋 | 智印港",
         "description": "浮雕利是封/利是封 100 個起。採用 157g 紅金紙/銅版紙 高品質材質，支援 標準/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "浮雕工藝，立體觸感，高檔奢華。展現品牌誠意，適合VIP客戶、高端送禮。智印港提供專業浮雕利是封服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["浮雕利是封", "利是封", "燙金", "浮雕", "春聯", "中秋賀卡", "聖誕卡", "婚禮請柬", "嬰兒滿月卡", "感謝卡", "燙金紅包", "卡通紅包", "新年賀卡", "100個起", "24小時出貨", "2小時取件", "300g紙", "30個起", "50個起", "80個起", "AI檔 印刷", "HK$0.4起", "HK$0.5起", "HK$0.6起", "PSD轉印刷", "UV喜帖", "免設計費 利是封", "免費打樣", "免費設計", "全套婚禮印刷", "公司利是封印刷", "利是封印刷", "利是封印刷 自備設計", "利是封多少錢", "利是封定製", "利是封製作", "即日出稿", "即日出貨", "喜帖 實體打樣", "喜帖印刷", "喜帖設計印刷", "囍帖印刷", "婚禮印刷 套餐", "婚禮囍帖設計", "婚禮套組 多少錢", "婚禮座位卡", "學校利是封活動", "學生利是封", "小批量利是封印刷", "感謝卡印刷", "手工利是封", "燙金利是封", "燙金囍帖", "特種紙 囍帖", "班級利是封", "環保利是封", "環保紙 利是封", "當日印刷", "節日紅包袋", "節日賀卡印刷", "紅包袋印刷", "絲帶孔信封", "聖誕賀卡印刷", "農曆新年利是封", "迎賓牌 印刷", "高端喜帖印刷"],
@@ -1966,7 +1966,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "浮雕利是封 / 燙金 UV | 香港浮雕利是封印刷 150g紅色紙張 | ZprintPro智印港",
+      "zh-hk": "浮雕利是封 / 燙金 UV | 香港浮雕利是封印刷 150g紅色紙張 | 智印港",
       "en": "Embossed Red Packets for holiday cards, wedding invitations — ZprintPro",
       "ja": "エンボス年賀状 / エンボス | エンボス年賀状印刷 エンボス加工 100個〜 | ZprintPro"
     }
@@ -1979,7 +1979,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "custom red packets | 燙金 UV 壓紋 | 智印港 ZprintPro",
+        "title": "custom red packets | 燙金 UV 壓紋 | 智印港",
         "description": "custom red packets/利是封 100 個起。採用 157g 紅金紙/銅版紙 高品質材質，支援 標準/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "定制利是封",
@@ -2018,7 +2018,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "卡通利是封 | 燙金 UV 壓紋 | 智印港 ZprintPro",
+        "title": "卡通利是封 | 燙金 UV 壓紋 | 智印港",
         "description": "卡通利是封/卡通利是封 100 個起。採用 157g 紅金紙/銅版紙 高品質材質，支援 標準/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "可愛卡通設計，深受年輕人喜愛。適合親子品牌、教育機構、兒童產品。智印港提供專業卡通利是封服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["卡通利是封", "利是封", "利是封印刷", "春聯", "中秋賀卡", "聖誕卡", "婚禮請柬", "嬰兒滿月卡", "感謝卡", "燙金紅包", "卡通紅包", "新年賀卡", "100個起", "24小時出貨", "2小時取件", "300g紙", "30個起", "50個起", "80個起", "AI檔 印刷", "HK$0.4起", "HK$0.5起", "HK$0.6起", "PSD轉印刷", "UV喜帖", "免設計費 利是封", "免費打樣", "免費設計", "全套婚禮印刷", "公司利是封印刷", "利是封印刷 自備設計", "利是封多少錢", "利是封定製", "利是封製作", "即日出稿", "即日出貨", "喜帖 實體打樣", "喜帖印刷", "喜帖設計印刷", "囍帖印刷", "婚禮印刷 套餐", "婚禮囍帖設計", "婚禮套組 多少錢", "婚禮座位卡", "學校利是封活動", "學生利是封", "小批量利是封印刷", "感謝卡印刷", "手工利是封", "燙金利是封", "燙金囍帖", "特種紙 囍帖", "班級利是封", "環保利是封", "環保紙 利是封", "當日印刷", "節日紅包袋", "節日賀卡印刷", "紅包袋印刷", "絲帶孔信封", "聖誕賀卡印刷", "農曆新年利是封", "迎賓牌 印刷", "高端喜帖印刷"],
@@ -2056,7 +2056,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "環保利是封 | 燙金 UV 壓紋 | 智印港 ZprintPro",
+        "title": "環保利是封 | 燙金 UV 壓紋 | 智印港",
         "description": "環保利是封/利是封 100 個起。採用 157g 紅金紙/銅版紙 高品質材質，支援 標準/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "採用環保紙張和油墨，可持續發展理念。適合注重環保的企業。智印港提供專業環保利是封服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["環保利是封", "利是封", "利是封印刷", "利是封訂製", "春聯", "中秋賀卡", "聖誕卡", "婚禮請柬", "嬰兒滿月卡", "感謝卡", "燙金紅包", "卡通紅包", "新年賀卡", "100個起", "24小時出貨", "2小時取件", "300g紙", "30個起", "50個起", "80個起", "AI檔 印刷", "HK$0.4起", "HK$0.5起", "HK$0.6起", "PSD轉印刷", "UV喜帖", "免設計費 利是封", "免費打樣", "免費設計", "全套婚禮印刷", "公司利是封印刷", "利是封印刷 自備設計", "利是封多少錢", "利是封定製", "利是封製作", "即日出稿", "即日出貨", "喜帖 實體打樣", "喜帖印刷", "喜帖設計印刷", "囍帖印刷", "婚禮印刷 套餐", "婚禮囍帖設計", "婚禮套組 多少錢", "婚禮座位卡", "學校利是封活動", "學生利是封", "小批量利是封印刷", "感謝卡印刷", "手工利是封", "燙金利是封", "燙金囍帖", "特種紙 囍帖", "班級利是封", "環保紙 利是封", "當日印刷", "節日紅包袋", "節日賀卡印刷", "紅包袋印刷", "絲帶孔信封", "聖誕賀卡印刷", "農曆新年利是封", "迎賓牌 印刷", "高端喜帖印刷"],
@@ -2094,7 +2094,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "大利是封 | 燙金 UV 壓紋 | 智印港 ZprintPro",
+        "title": "大利是封 | 燙金 UV 壓紋 | 智印港",
         "description": "大利是封/大利是封 100 個起。採用 157g 紅金紙/銅版紙 高品質材質，支援 標準/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "加大尺寸，可放入更多鈔票或禮品卡。實用大氣，送禮更有面子。智印港提供專業大號利是封服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["大利是封", "利是封", "利是封印刷", "春聯", "中秋賀卡", "聖誕卡", "婚禮請柬", "嬰兒滿月卡", "感謝卡", "燙金紅包", "卡通紅包", "新年賀卡", "100個起", "24小時出貨", "2小時取件", "300g紙", "30個起", "50個起", "80個起", "AI檔 印刷", "HK$0.4起", "HK$0.5起", "HK$0.6起", "PSD轉印刷", "UV喜帖", "免設計費 利是封", "免費打樣", "免費設計", "全套婚禮印刷", "公司利是封印刷", "利是封印刷 自備設計", "利是封多少錢", "利是封定製", "利是封製作", "即日出稿", "即日出貨", "喜帖 實體打樣", "喜帖印刷", "喜帖設計印刷", "囍帖印刷", "婚禮印刷 套餐", "婚禮囍帖設計", "婚禮套組 多少錢", "婚禮座位卡", "學校利是封活動", "學生利是封", "小批量利是封印刷", "感謝卡印刷", "手工利是封", "燙金利是封", "燙金囍帖", "特種紙 囍帖", "班級利是封", "環保利是封", "環保紙 利是封", "當日印刷", "節日紅包袋", "節日賀卡印刷", "紅包袋印刷", "絲帶孔信封", "聖誕賀卡印刷", "農曆新年利是封", "迎賓牌 印刷", "高端喜帖印刷"],
@@ -2132,7 +2132,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "掛牆年曆 | 企業禮品 多款式 | 智印港 ZprintPro",
+        "title": "掛牆年曆 | 企業禮品 多款式 | 智印港",
         "description": "掛牆年曆/掛牆年曆 50 本起。採用 250g 銅版紙/啞面 高品質材質，支援 A5/A4/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。7-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "掛牆年曆",
@@ -2162,7 +2162,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "掛牆年曆 / 企業禮品 | 香港掛牆年曆印刷 250g–300g銅版紙或啞粉紙 | ZprintPro智印港",
+      "zh-hk": "掛牆年曆 / 企業禮品 | 香港掛牆年曆印刷 250g–300g銅版紙或啞粉紙 | 智印港",
       "en": "Custom wall calendars with wire-bound spiral, premium materials — ZprintPro",
       "ja": "壁掛けカレンダー / 高品質 | 壁掛けカレンダー印刷 高品質紙 翌日配送 | ZprintPro"
     }
@@ -2175,7 +2175,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "座檯年曆 | 企業禮品 多款式 | 智印港 ZprintPro",
+        "title": "座檯年曆 | 企業禮品 多款式 | 智印港",
         "description": "座檯年曆/座檯年曆 50 本起。採用 250g 銅版紙/啞面 高品質材質，支援 A5/A4/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。7-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "座檯年曆",
@@ -2205,7 +2205,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "座檯年曆 / 企業禮品 | 香港座檯年曆印刷 200g–250g銅版紙或卡紙 | ZprintPro智印港",
+      "zh-hk": "座檯年曆 / 企業禮品 | 香港座檯年曆印刷 200g–250g銅版紙或卡紙 | 智印港",
       "en": "Custom desk calendars with wire-bound spiral, premium materials — ZprintPro",
       "ja": "デスクカレンダー / 高品質 | デスクカレンダー印刷 高品質紙 翌日配送 | ZprintPro"
     }
@@ -2218,7 +2218,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "定制年曆 | 企業禮品 多款式 | 智印港 ZprintPro",
+        "title": "定制年曆 | 企業禮品 多款式 | 智印港",
         "description": "定制年曆/定制年曆 50 本起。採用 250g 銅版紙/啞面 高品質材質，支援 A5/A4/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。7-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "專屬設計，每頁可印公司產品或服務。企業禮品首選，送客戶最佳選擇。智印港提供專業定制年曆服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["定制年曆", "年曆", "桌曆", "掛曆", "月曆", "企業年曆", "迷你口袋曆", "環保再生曆", "定製節日曆", "2027年曆", "照片年曆", "翻頁式桌曆", "2026年曆印刷", "2026座枱曆", "2小時取", "A5日曆", "ESG年曆", "企業掛曆", "個人日曆定製", "免費設計年曆", "公司掛曆定製", "再生紙年曆", "即日取年曆印刷", "可撕式年曆", "學校年曆", "家庭年曆", "年曆印刷 500個", "座枱曆印刷", "急件掛曆", "批量年曆", "掛曆 HK$8起", "掛曆印刷 多少錢", "新年掛曆", "旺角年曆", "照片日曆", "環保掛曆", "社福掛曆", "節慶年曆", "節日主題掛曆", "簡約年曆", "精裝日曆", "綠色企業掛曆", "聖誕掛曆"],
@@ -2256,7 +2256,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "迷你年曆 | 企業禮品 多款式 | 智印港 ZprintPro",
+        "title": "迷你年曆 | 企業禮品 多款式 | 智印港",
         "description": "迷你年曆/迷你年曆 50 本起。採用 250g 銅版紙/啞面 高品質材質，支援 A5/A4/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。7-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "小巧便攜，可放入錢包或口袋。創意禮品，年輕人喜愛。智印港提供專業迷你年曆服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["迷你年曆", "年曆", "桌曆", "掛曆", "月曆", "企業年曆", "迷你口袋曆", "環保再生曆", "定製節日曆", "2027年曆", "照片年曆", "翻頁式桌曆", "2026年曆印刷", "2026座枱曆", "2小時取", "A5日曆", "ESG年曆", "企業掛曆", "個人日曆定製", "免費設計年曆", "公司掛曆定製", "再生紙年曆", "即日取年曆印刷", "可撕式年曆", "學校年曆", "家庭年曆", "年曆印刷 500個", "座枱曆印刷", "急件掛曆", "批量年曆", "掛曆 HK$8起", "掛曆印刷 多少錢", "新年掛曆", "旺角年曆", "照片日曆", "環保掛曆", "社福掛曆", "節慶年曆", "節日主題掛曆", "簡約年曆", "精裝日曆", "綠色企業掛曆", "聖誕掛曆"],
@@ -2294,7 +2294,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "相框年曆 | 企業禮品 多款式 | 智印港 ZprintPro",
+        "title": "相框年曆 | 企業禮品 多款式 | 智印港",
         "description": "相框年曆/相框年曆 50 本起。採用 250g 銅版紙/啞面 高品質材質，支援 A5/A4/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。7-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "結合相框功能，可替換照片。實用美觀，家庭必備。智印港提供專業相框年曆服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["相框年曆", "年曆", "桌曆", "掛曆", "月曆", "企業年曆", "迷你口袋曆", "環保再生曆", "定製節日曆", "2027年曆", "照片年曆", "翻頁式桌曆", "2026年曆印刷", "2026座枱曆", "2小時取", "A5日曆", "ESG年曆", "企業掛曆", "個人日曆定製", "免費設計年曆", "公司掛曆定製", "再生紙年曆", "即日取年曆印刷", "可撕式年曆", "學校年曆", "家庭年曆", "年曆印刷 500個", "座枱曆印刷", "急件掛曆", "批量年曆", "掛曆 HK$8起", "掛曆印刷 多少錢", "新年掛曆", "旺角年曆", "照片日曆", "環保掛曆", "社福掛曆", "節慶年曆", "節日主題掛曆", "簡約年曆", "精裝日曆", "綠色企業掛曆", "聖誕掛曆"],
@@ -2332,7 +2332,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "磁吸年曆 | 企業禮品 多款式 | 智印港 ZprintPro",
+        "title": "磁吸年曆 | 企業禮品 多款式 | 智印港",
         "description": "磁吸年曆/磁吸年曆 50 本起。採用 250g 銅版紙/啞面 高品質材質，支援 A5/A4/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。7-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "磁石背膠，可貼於冰箱等金屬表面。每日多次接觸，品牌曝光率高。智印港提供專業磁石年曆服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["磁吸年曆", "年曆", "桌曆", "掛曆", "月曆", "企業年曆", "迷你口袋曆", "環保再生曆", "定製節日曆", "2027年曆", "照片年曆", "翻頁式桌曆", "2026年曆印刷", "2026座枱曆", "2小時取", "A5日曆", "ESG年曆", "企業掛曆", "個人日曆定製", "免費設計年曆", "公司掛曆定製", "再生紙年曆", "即日取年曆印刷", "可撕式年曆", "學校年曆", "家庭年曆", "年曆印刷 500個", "座枱曆印刷", "急件掛曆", "批量年曆", "掛曆 HK$8起", "掛曆印刷 多少錢", "新年掛曆", "旺角年曆", "照片日曆", "環保掛曆", "社福掛曆", "節慶年曆", "節日主題掛曆", "簡約年曆", "精裝日曆", "綠色企業掛曆", "聖誕掛曆"],
@@ -2370,7 +2370,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "PVC 餐牌印刷 · 防水防油覆膜 50本起 | 餐廳/咖啡店/酒吧菜單 | 智印港 ZprintPro",
+        "title": "PVC 餐牌印刷 · 防水防油覆膜 50本起 | 餐廳/咖啡店/酒吧菜單 | 智印港",
         "description": "PVC 餐牌印刷 50 本起。採用 250g 銅版紙/防水覆膜 高品質材質，支援 A4/A5/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界 $500 免費順豐速遞。餐廳、咖啡店、酒吧、茶餐廳、火鍋店、居酒屋首選。",
         
         "h1": "PVC 餐牌印刷 · 防水防油可水洗菜單 | 智印港",
@@ -2400,7 +2400,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "PVC餐牌 / 防水覆膜 | 香港PVC餐牌製作 0.5mm–1.0mm透明或白色PVC膠片 | ZprintPro智印港",
+      "zh-hk": "PVC餐牌 / 防水覆膜 | 香港PVC餐牌製作 0.5mm–1.0mm透明或白色PVC膠片 | 智印港",
       "en": "Custom pvc menus with laminated durable, premium materials — ZprintPro",
       "ja": "PVC menu / 防水ラミネート | PVC menu印刷 防水ラミネート 翌日配送 | ZprintPro"
     }
@@ -2413,7 +2413,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "過膠餐牌 | 防水 覆膜 50本起 | 智印港 ZprintPro",
+        "title": "過膠餐牌 | 防水 覆膜 50本起 | 智印港",
         "description": "過膠餐牌/餐牌印刷 50 本起。採用 250g 銅版紙/防水覆膜 高品質材質，支援 A4/A5/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "過膠餐牌",
@@ -2443,7 +2443,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "過膠餐牌 / 防水覆膜 | 香港過膠餐牌製作 200g–250g銅版紙或啞粉紙 | ZprintPro智印港",
+      "zh-hk": "過膠餐牌 / 防水覆膜 | 香港過膠餐牌製作 200g–250g銅版紙或啞粉紙 | 智印港",
       "en": "Custom laminated menus with laminated durable, premium materials — ZprintPro",
       "ja": "ラミネート menu / 防水 | ラミネート menu印刷 防水加工 翌日配送 | ZprintPro"
     }
@@ -2456,7 +2456,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "精裝餐牌 | 防水 覆膜 50本起 | 智印港 ZprintPro",
+        "title": "精裝餐牌 | 防水 覆膜 50本起 | 智印港",
         "description": "精裝餐牌/精裝餐牌 50 本起。採用 250g 銅版紙/防水覆膜 高品質材質，支援 A4/A5/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "精裝餐牌",
@@ -2486,7 +2486,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "精裝餐牌 / 防水覆膜 | 香港精裝餐牌製作 硬紙板封面裱糊銅版紙 | ZprintPro智印港",
+      "zh-hk": "精裝餐牌 / 防水覆膜 | 香港精裝餐牌製作 硬紙板封面裱糊銅版紙 | 智印港",
       "en": "Custom hardcover menus with laminated durable, premium materials — ZprintPro",
       "ja": "一般為50個起訂，一次性餐牌可接受10個起。"
     }
@@ -2499,7 +2499,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "餐廳酒水牌 | 防水 覆膜 50本起 | 智印港 ZprintPro",
+        "title": "餐廳酒水牌 | 防水 覆膜 50本起 | 智印港",
         "description": "酒水牌/酒水牌 50 本起。採用 250g 銅版紙/防水覆膜 高品質材質，支援 A4/A5/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "專為酒水設計，可立式或手持。酒吧、餐廳必備。智印港提供專業酒水牌服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["酒水牌", "餐牌印刷", "防水餐牌", "PVC餐牌", "紙質菜單", "精裝菜單", "一次性菜單", "杯套印刷", "打包盒", "餐廳宣傳單", "飲品單"],
@@ -2537,7 +2537,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "一次性餐牌 | 防水 覆膜 50本起 | 智印港 ZprintPro",
+        "title": "一次性餐牌 | 防水 覆膜 50本起 | 智印港",
         "description": "一次性餐牌/餐牌印刷 50 本起。採用 250g 銅版紙/防水覆膜 高品質材質，支援 A4/A5/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-7 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "經濟紙質，適合快餐店、外賣店。可頻繁更換內容。智印港提供專業一次性餐牌服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["一次性餐牌", "餐牌印刷", "防水餐牌", "PVC餐牌", "紙質菜單", "精裝菜單", "一次性菜單", "杯套印刷", "打包盒", "餐廳宣傳單", "飲品單"],
@@ -2575,7 +2575,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "戶外橫幅 | 鋁合金支架 高清 | 智印港 ZprintPro",
+        "title": "戶外橫幅 | 鋁合金支架 高清 | 智印港",
         "description": "戶外橫幅/易拉架 1 個起。採用 PP 合成紙/PVC 高品質材質，支援 80×200cm 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。1-3 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "戶外燈布噴繪",
@@ -2605,7 +2605,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "戶外燈布噴繪 / 高清噴繪 | 香港戶外燈布噴繪製作 外光／內光 PVC 燈布（依場景） | ZprintPro智印港",
+      "zh-hk": "戶外燈布噴繪 / 高清噴繪 | 香港戶外燈布噴繪製作 外光／內光 PVC 燈布（依場景） | 智印港",
       "en": "Custom outdoor vinyl banners with wind-resistant, premium materials — ZprintPro",
       "ja": "屋外ビニールバナー / 防水 | 屋外ビニールバナー印刷 防水・耐光 翌日配送 | ZprintPro"
     }
@@ -2618,7 +2618,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "展示易拉寶 | 鋁合金支架 高清 | 智印港 ZprintPro",
+        "title": "展示易拉寶 | 鋁合金支架 高清 | 智印港",
         "description": "易拉寶/易拉架 1 個起。採用 PP 合成紙/PVC 高品質材質，支援 80×200cm 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。1-3 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "易拉寶",
@@ -2648,7 +2648,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "易拉寶 / 高清噴繪 | 香港易拉寶製作 PET／PVC 片或防水合成紙 | ZprintPro智印港",
+      "zh-hk": "易拉寶 / 高清噴繪 | 香港易拉寶製作 PET／PVC 片或防水合成紙 | 智印港",
       "en": "Custom roll up banners with wind-resistant, premium materials — ZprintPro",
       "ja": "ロールアップバナー / アルミ | ロールアップバナー印刷 アルミスタンド 高画質 | ZprintPro"
     }
@@ -2661,7 +2661,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "背膠噴繪 | 鋁合金支架 高清 | 智印港 ZprintPro",
+        "title": "背膠噴繪 | 鋁合金支架 高清 | 智印港",
         "description": "背膠噴繪/噴繪 1 個起。採用 PP 合成紙/PVC 高品質材質，支援 80×200cm 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。1-3 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "自帶背膠，可直接粘貼於牆面或玻璃。適合店鋪裝飾、活動佈置。智印港提供專業背膠噴繪服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["背膠噴繪", "噴繪", "易拉架", "噴繪印刷", "易拉寶", "戶外橫幅", "展覽橫幅", "廣告牌", "燈箱", "旗幟印刷", "車身貼", "舞台背景", "門型展架", "A0噴繪", "PP紙噴繪", "任何尺寸噴繪", "即日取噴繪", "可拆卸背板", "含安裝", "噴繪廣告", "噴繪按呎計價", "圍板噴繪", "地貼噴繪", "夜間招牌", "婚禮背景板", "室內噴繪", "展會噴繪", "展覽背板噴繪", "店舖開業噴繪", "戶外噴繪", "抗UV噴繪", "按呎計價", "旺角噴繪", "求婚佈置", "燈箱布", "燈箱廣告", "生日噴繪", "經濟噴繪", "背景板噴繪", "透光噴繪", "透明報價", "開業橫額", "防水PVC", "高清防水噴繪"],
@@ -2686,7 +2686,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "faqs": [
       ],
     "imageAlt": {
-      "zh-hk": "我們支持最寬5米的無縫拼接，長度不限。 | 香港印刷 | ZprintPro智印港",
+      "zh-hk": "我們支持最寬5米的無縫拼接，長度不限。 | 香港印刷 | 智印港",
       "en": "Custom adhesive banners with wind-resistant, premium materials — ZprintPro",
       "ja": "是的。我們使用戶外專用燈布和防水油墨，可承受風吹日曬。"
     }
@@ -2699,7 +2699,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "汽車車身貼 | 車身廣告 全車包覆 | 智印港 ZprintPro",
+        "title": "汽車車身貼 | 車身廣告 全車包覆 | 智印港",
         "description": "車身貼/車身貼 1 套起。採用 車身貼 PVC 高品質材質，支援 訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "專用車身貼紙，耐候性強，移除不留痕。流動廣告，曝光率高。智印港提供專業車身廣告服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["車身貼", "車身廣告", "噴繪印刷", "易拉寶", "戶外橫幅", "展覽橫幅", "廣告牌", "燈箱", "旗幟印刷", "舞台背景", "門型展架", "A0噴繪", "PP紙噴繪", "任何尺寸噴繪", "即日取噴繪", "可拆卸背板", "含安裝", "噴繪廣告", "噴繪按呎計價", "圍板噴繪", "地貼噴繪", "夜間招牌", "婚禮背景板", "室內噴繪", "展會噴繪", "展覽背板噴繪", "店舖開業噴繪", "戶外噴繪", "抗UV噴繪", "按呎計價", "旺角噴繪", "求婚佈置", "燈箱布", "燈箱廣告", "生日噴繪", "經濟噴繪", "背景板噴繪", "透光噴繪", "透明報價", "開業橫額", "防水PVC", "高清防水噴繪"],
@@ -2728,7 +2728,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "車身廣告 / 高清噴繪 | 香港車身廣告製作 鑄造級 PVC 車貼 80–100 微米 | ZprintPro智印港",
+      "zh-hk": "車身廣告 / 高清噴繪 | 香港車身廣告製作 鑄造級 PVC 車貼 80–100 微米 | 智印港",
       "en": "Custom vehicle wraps with 3m vinyl wrap, premium materials — ZprintPro",
       "ja": "車両ラッピング / カスタム | 車両ラッピング印刷 車両フルラップ カスタム | ZprintPro"
     }
@@ -2741,7 +2741,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "網孔布易拉寶 | 鋁合金支架 高清 | 智印港 ZprintPro",
+        "title": "網孔布易拉寶 | 鋁合金支架 高清 | 智印港",
         "description": "網孔布易拉寶/易拉架 1 個起。採用 PP 合成紙/PVC 高品質材質，支援 80×200cm 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。1-3 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "網格設計，透光透風。適合大型戶外廣告、建築圍板。智印港提供專業網格布噴繪服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["網孔布易拉寶", "易拉架", "網孔布", "噴繪印刷", "易拉寶", "戶外橫幅", "展覽橫幅", "廣告牌", "燈箱", "旗幟印刷", "車身貼", "舞台背景", "門型展架", "A0噴繪", "PP紙噴繪", "任何尺寸噴繪", "即日取噴繪", "可拆卸背板", "含安裝", "噴繪廣告", "噴繪按呎計價", "圍板噴繪", "地貼噴繪", "夜間招牌", "婚禮背景板", "室內噴繪", "展會噴繪", "展覽背板噴繪", "店舖開業噴繪", "戶外噴繪", "抗UV噴繪", "按呎計價", "旺角噴繪", "求婚佈置", "燈箱布", "燈箱廣告", "生日噴繪", "經濟噴繪", "背景板噴繪", "透光噴繪", "透明報價", "開業橫額", "防水PVC", "高清防水噴繪"],
@@ -2766,7 +2766,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     "faqs": [
       ],
     "imageAlt": {
-      "zh-hk": "我們支持最寬5米的無縫拼接，長度不限。 | 香港印刷 | ZprintPro智印港",
+      "zh-hk": "我們支持最寬5米的無縫拼接，長度不限。 | 香港印刷 | 智印港",
       "en": "Custom mesh banners with wind-resistant, premium materials — ZprintPro",
       "ja": "是的。我們使用戶外專用燈布和防水油墨，可承受風吹日曬。"
     }
@@ -2779,7 +2779,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "畫冊印刷 | 專業印刷 品質保證 | 智印港 ZprintPro",
+        "title": "畫冊印刷 | 專業印刷 品質保證 | 智印港",
         "description": "畫冊印刷/畫冊印刷 100 起。採用 157g 銅版紙 高品質材質，支援 標準/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "畫冊印刷",
@@ -2809,7 +2809,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "香港畫冊印刷 / 精裝膠裝 | 香港畫冊印刷裝訂 內頁157g–200g銅版紙 | ZprintPro智印港",
+      "zh-hk": "香港畫冊印刷 / 精裝膠裝 | 香港畫冊印刷裝訂 內頁157g–200g銅版紙 | 智印港",
       "en": "Custom catalog printing with saddle-stitched, premium materials — ZprintPro",
       "ja": "カタログ印刷 / 高品質 | カタログ印刷 高品質オフセット 50冊〜 日本向け | ZprintPro"
     }
@@ -2822,7 +2822,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "騎馬釘小冊子 | 膠裝/騎馬釘 50本起 | 智印港 ZprintPro",
+        "title": "騎馬釘小冊子 | 膠裝/騎馬釘 50本起 | 智印港",
         "description": "騎馬釘小冊子/騎馬釘 50 本起。採用 內頁 157g 銅版紙/封面 250g 高品質材質，支援 A4/A5/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "騎馬釘小冊子",
@@ -2852,7 +2852,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "香港騎馬釘小冊子 / 精裝膠裝 | 香港騎馬釘小冊子裝訂 128g–157g銅版紙或書紙 | ZprintPro智印港",
+      "zh-hk": "香港騎馬釘小冊子 / 精裝膠裝 | 香港騎馬釘小冊子裝訂 128g–157g銅版紙或書紙 | 智印港",
       "en": "Custom saddle stitch booklets with premium custom, premium materials — ZprintPro",
       "ja": "中綴じ冊子 / 中綴じ | 中綴じ冊子印刷 中綴じ/無線綴じ 50冊〜 即日発送 | ZprintPro"
     }
@@ -2865,7 +2865,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "公司膠裝書 | 膠裝/騎馬釘 50本起 | 智印港 ZprintPro",
+        "title": "公司膠裝書 | 膠裝/騎馬釘 50本起 | 智印港",
         "description": "膠裝書/膠裝書 50 本起。採用 內頁 157g 銅版紙/封面 250g 高品質材質，支援 A4/A5/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "平整書脊，可印刷書名。適合頁數較多的書籍、雜誌。智印港提供專業無線膠裝書籍服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["膠裝書", "膠裝書印刷", "印刷書籍"],
@@ -2903,7 +2903,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "公司精裝書 | 膠裝/騎馬釘 50本起 | 智印港 ZprintPro",
+        "title": "公司精裝書 | 膠裝/騎馬釘 50本起 | 智印港",
         "description": "精裝書/精裝書 50 本起。採用 內頁 157g 銅版紙/封面 250g 高品質材質，支援 A4/A5/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "硬殼精裝，高檔耐用。適合珍藏版書籍、企業年鑑。智印港提供專業精裝書籍服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["精裝書", "印刷書籍"],
@@ -2941,7 +2941,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "線圈筆記本 | 膠裝/騎馬釘 50本起 | 智印港 ZprintPro",
+        "title": "線圈筆記本 | 膠裝/騎馬釘 50本起 | 智印港",
         "description": "線圈筆記本/線圈筆記本 50 本起。採用 內頁 157g 銅版紙/封面 250g 高品質材質，支援 A4/A5/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "線圈裝訂，可180度平攤。適合筆記本、工作手冊。智印港提供專業線圈筆記本服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["線圈筆記本", "筆記本印刷"],
@@ -2970,7 +2970,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "香港線圈筆記本 / 精裝膠裝 | 香港線圈筆記本裝訂 內頁80g–100g書紙或道林紙 | ZprintPro智印港",
+      "zh-hk": "香港線圈筆記本 / 精裝膠裝 | 香港線圈筆記本裝訂 內頁80g–100g書紙或道林紙 | 智印港",
       "en": "Custom spiral notebooks with perfect bound, premium materials — ZprintPro",
       "ja": "スパイラルノート / リング | スパイラルノート印刷 リング製本 50冊〜 | ZprintPro"
     }
@@ -2983,7 +2983,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "公司信封 | 雙面印刷 多規格 | 智印港 ZprintPro",
+        "title": "公司信封 | 雙面印刷 多規格 | 智印港",
         "description": "公司信封/公司信封 100 個起。採用 100g 書寫紙/白牛皮 高品質材質，支援 DL/C5/C4 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "公司信封",
@@ -3013,7 +3013,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "公司信封 / 開窗信封 | 香港公司信封印刷 80–120g 書紙／本白書紙 | ZprintPro智印港",
+      "zh-hk": "公司信封 / 開窗信封 | 香港公司信封印刷 80–120g 書紙／本白書紙 | 智印港",
       "en": "Custom business envelopes with foil-lined premium, premium materials — ZprintPro",
       "ja": "会社封筒 / 両面印刷 | 会社封筒印刷 両面4色 マルチサイズ 即日発送 | ZprintPro"
     }
@@ -3026,7 +3026,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "彩色信封 | 雙面印刷 多規格 | 智印港 ZprintPro",
+        "title": "彩色信封 | 雙面印刷 多規格 | 智印港",
         "description": "彩色信封/彩色信封 100 個起。採用 100g 書寫紙/白牛皮 高品質材質，支援 DL/C5/C4 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "彩色信封",
@@ -3056,7 +3056,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "彩色信封 / 開窗信封 | 香港彩色信封印刷 80–120g 書紙／彩色書紙 | ZprintPro智印港",
+      "zh-hk": "彩色信封 / 開窗信封 | 香港彩色信封印刷 80–120g 書紙／彩色書紙 | 智印港",
       "en": "Custom colored envelopes with foil-lined premium, premium materials — ZprintPro",
       "ja": "一般為500個起訂，彩色和特殊材質需1000個起。"
     }
@@ -3069,7 +3069,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "大號信封 | 雙面印刷 多規格 | 智印港 ZprintPro",
+        "title": "大號信封 | 雙面印刷 多規格 | 智印港",
         "description": "大號信封/大號信封 100 個起。採用 100g 書寫紙/白牛皮 高品質材質，支援 DL/C5/C4 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "A4尺寸大信封，可裝入文件、合同。辦公室必備。智印港提供專業大號信封服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["大號信封", "信封 印刷", "信封訂製", "信封印刷", "牛皮信封", "開窗信封", "彩色信封", "企業LOGO信封", "信紙信封套裝", "C6信封", "DL信封", "中式信封", "氣泡信封", "100個起", "2小時取", "50個起", "A4功課袋", "A4文件夾印刷", "C5信封", "C7信封", "ESG印刷", "Excel信封", "HK$0.5起", "HK$0.8起", "UV信封", "UV封套", "企業文件夾", "保密信封", "信封多少錢", "公司信封印刷", "公司抬頭文件夾", "公司簡介封套印刷", "再生紙信封", "再生紙封套", "即日取封套", "即日取封套印刷", "可變數據信封", "可降解信封", "喜帖信封", "地址列印", "婚禮信封印刷", "學校信封印刷", "學校功課袋印刷", "定製信封印刷", "封套印刷", "小學生功課袋", "展會資料夾", "律師信封印刷", "急件文件夾", "成績單信封", "批量信封", "批量封套", "抬頭信封", "文件夾 HK$199", "旺角信封", "旺角封套", "會計樓信封", "會議資料封套", "校徽封套", "無塑過膠", "燙金LOGO", "燙金信封", "特種紙信封", "特種紙封套", "環保信封印刷", "環保封套印刷", "畢業班用品", "畢業資料封套", "當日出貨", "紀念封套", "絲帶孔信封", "迷你信封", "透明功課套", "通知信印刷", "過膠封套", "霧面過膠封套", "高端信封"],
@@ -3107,7 +3107,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "珍珠光信封 | 雙面印刷 多規格 | 智印港 ZprintPro",
+        "title": "珍珠光信封 | 雙面印刷 多規格 | 智印港",
         "description": "珍珠光信封/信封 印刷 100 個起。採用 100g 書寫紙/白牛皮 高品質材質，支援 DL/C5/C4 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "珠光紙張，閃耀質感。適合婚禮邀請、高端活動。智印港提供專業珠光信封服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["珍珠光信封", "信封 印刷", "信封訂製", "信封印刷", "牛皮信封", "開窗信封", "彩色信封", "企業LOGO信封", "信紙信封套裝", "C6信封", "DL信封", "中式信封", "氣泡信封", "100個起", "2小時取", "50個起", "A4功課袋", "A4文件夾印刷", "C5信封", "C7信封", "ESG印刷", "Excel信封", "HK$0.5起", "HK$0.8起", "UV信封", "UV封套", "企業文件夾", "保密信封", "信封多少錢", "公司信封印刷", "公司抬頭文件夾", "公司簡介封套印刷", "再生紙信封", "再生紙封套", "即日取封套", "即日取封套印刷", "可變數據信封", "可降解信封", "喜帖信封", "地址列印", "婚禮信封印刷", "學校信封印刷", "學校功課袋印刷", "定製信封印刷", "封套印刷", "小學生功課袋", "展會資料夾", "律師信封印刷", "急件文件夾", "成績單信封", "批量信封", "批量封套", "抬頭信封", "文件夾 HK$199", "旺角信封", "旺角封套", "會計樓信封", "會議資料封套", "校徽封套", "無塑過膠", "燙金LOGO", "燙金信封", "特種紙信封", "特種紙封套", "環保信封印刷", "環保封套印刷", "畢業班用品", "畢業資料封套", "當日出貨", "紀念封套", "絲帶孔信封", "迷你信封", "透明功課套", "通知信印刷", "過膠封套", "霧面過膠封套", "高端信封"],
@@ -3136,7 +3136,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "珠光信封 / 開窗信封 | 香港珠光信封印刷 珠光／冰白特種書紙 | ZprintPro智印港",
+      "zh-hk": "珠光信封 / 開窗信封 | 香港珠光信封印刷 珠光／冰白特種書紙 | 智印港",
       "en": "Custom pearl envelopes with foil-lined premium, premium materials — ZprintPro",
       "ja": "パール封筒 / 高級感 | パール封筒印刷 パール紙 マルチサイズ 即日発送 | ZprintPro"
     }
@@ -3149,7 +3149,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "作業簿印刷 | 膠裝/騎馬釘 50本起 | 智印港 ZprintPro",
+        "title": "作業簿印刷 | 膠裝/騎馬釘 50本起 | 智印港",
         "description": "作業簿印刷/作業簿 50 本起。採用 內頁 157g 銅版紙/封面 250g 高品質材質，支援 A4/A5/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "作業簿印刷",
@@ -3179,7 +3179,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "香港練習簿印刷 / 校園印刷 | 香港練習簿印刷 80g–100g書紙或道林紙 | ZprintPro智印港",
+      "zh-hk": "香港練習簿印刷 / 校園印刷 | 香港練習簿印刷 80g–100g書紙或道林紙 | 智印港",
       "en": "Custom exercise books with perfect bound, premium materials — ZprintPro",
       "ja": "練習帳 / 學校向け | 練習帳印刷 中綴じ/無線綴じ 50冊〜 學校向け | ZprintPro"
     }
@@ -3192,7 +3192,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "證書印刷 | 專業印刷 品質保證 | 智印港 ZprintPro",
+        "title": "證書印刷 | 專業印刷 品質保證 | 智印港",
         "description": "證書印刷/證書印刷 100 起。採用 157g 銅版紙 高品質材質，支援 標準/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。3-5 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         
         "h1": "證書印刷",
@@ -3209,7 +3209,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "賞状印刷 | プロ印刷 高品質 | ZprintPro",
-        "description": "賞状印刷サービス、高品質紙に金箔・銀箔オプション可能。学校・企業・スポーツ大会向け表彰状・感謝状、50枚〜即日発送対応、縦書き横書き両対応可能。日本向けDHL配送2-4日追跡番号付き。無料デザインサポート、複数回修正対応、深夜受付OK。| ZprintPro智印港",
+        "description": "賞状印刷サービス、高品質紙に金箔・銀箔オプション可能。学校・企業・スポーツ大会向け表彰状・感謝状、50枚〜即日発送対応、縦書き横書き両対応可能。日本向けDHL配送2-4日追跡番号付き。無料デザインサポート、複数回修正対応、深夜受付OK。| 智印港",
         "h1": "Exquisite certificates with foil stamping",
         "keywords": ["賞状印刷", "賞状印刷 印刷", "certificates", "宿題バッグ印刷", "学生手帳印刷", "教師自作教材", "表彰状印刷", "クラス名札バッグ", "卒業記念アルバム", "卒業証書印刷", "科目分類フォルダー", "無線綴じレジュメ", "中綴じ教材"],
         "body": " fast delivery."
@@ -3222,7 +3222,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "香港證書印刷 / 校園印刷 | 香港證書印刷 200g–250g水印紙或棉質紙 | ZprintPro智印港",
+      "zh-hk": "香港證書印刷 / 校園印刷 | 香港證書印刷 200g–250g水印紙或棉質紙 | 智印港",
       "en": "Custom certificates with embossed seal, premium materials — ZprintPro",
       "ja": "賞状印刷 / 高品質 | 賞状印刷 高品質紙 金箔オプション 50枚〜 | ZprintPro"
     }
@@ -3235,7 +3235,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "學校單張 | 雙面四色 100張起 | 智印港 ZprintPro",
+        "title": "學校單張 | 雙面四色 100張起 | 智印港",
         "description": "學校單張/學校 印刷 100 張起。採用 157g-300g 銅版紙 高品質材質，支援 A4/A5/A6/DL 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。即日-2 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "學校通告、活動傳單印刷。經濟實惠，大量印刷。智印港提供專業學校單張服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["學校單張", "學校 印刷", "傳單印刷", "100本起", "250g特種紙", "A4功課袋", "A4練習冊", "A4課程表", "A4資料夾", "A5學生手冊", "A5筆記本", "A5練習簿", "免費設計獎狀", "功課袋印刷", "印校徽筆記本", "即日取課程表", "即日取證書", "姓名班別筆記本", "學校專用手冊", "學校文件夾印刷", "學校畢業證", "學生寫字簿印刷", "學生手冊印刷", "學生筆記本定製", "小一田字格", "小學生功課袋", "拼音寫字簿", "掛牆課程表", "教師文件夾", "教師自編教材", "教育教材印刷", "比賽獎狀", "燙金校徽", "燙金獎狀", "燙金畢業證", "獎狀印刷", "班別姓名袋", "班級相冊", "留言冊", "畢業班用品", "畢業紀念冊", "畢業證書印刷", "科目分類文件夾", "精裝紀念冊", "膠裝講義", "課程表印刷", "透明功課套", "過膠課程表", "騎馬釘教材"],
@@ -3264,7 +3264,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "香港學校單張 / 校園印刷 | 香港學校單張印刷 128g–157g銅版紙或書紙 | ZprintPro智印港",
+      "zh-hk": "香港學校單張 / 校園印刷 | 香港學校單張印刷 128g–157g銅版紙或書紙 | 智印港",
       "en": "Custom school flyers with same-day printing, premium materials — ZprintPro",
       "ja": "学校チラシ / 學校向け | 学校チラシ印刷 両面4色 100枚〜 學校向け | ZprintPro"
     }
@@ -3277,7 +3277,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "公司教科書 | 膠裝/騎馬釘 50本起 | 智印港 ZprintPro",
+        "title": "公司教科書 | 膠裝/騎馬釘 50本起 | 智印港",
         "description": "教科書/教科書 50 本起。採用 內頁 157g 銅版紙/封面 250g 高品質材質，支援 A4/A5/訂製 多種規格，提供 4 色 CMYK 全彩印刷、logo 圖案自由設計。5-10 個工作天交貨，港九新界免費速遞，順豐速遞上門。專業團隊、價格透明，企業活動、店舖推廣首選。",
         "h1": "教材、教科書印刷。專業排版，品質保證。智印港提供專業教科書印刷服務，香港本地印刷，品質保證，價格透明。",
         "keywords": ["教科書", "教科書 印刷", "100本起", "250g特種紙", "A4功課袋", "A4練習冊", "A4課程表", "A4資料夾", "A5學生手冊", "A5筆記本", "A5練習簿", "免費設計獎狀", "功課袋印刷", "印校徽筆記本", "即日取課程表", "即日取證書", "姓名班別筆記本", "學校專用手冊", "學校文件夾印刷", "學校畢業證", "學生寫字簿印刷", "學生手冊印刷", "學生筆記本定製", "小一田字格", "小學生功課袋", "拼音寫字簿", "掛牆課程表", "教師文件夾", "教師自編教材", "教育教材印刷", "比賽獎狀", "燙金校徽", "燙金獎狀", "燙金畢業證", "獎狀印刷", "班別姓名袋", "班級相冊", "留言冊", "畢業班用品", "畢業紀念冊", "畢業證書印刷", "科目分類文件夾", "精裝紀念冊", "膠裝講義", "課程表印刷", "透明功課套", "過膠課程表", "騎馬釘教材"],
@@ -3306,7 +3306,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       ],
     "imageAlt": {
-      "zh-hk": "香港教科書印刷 / 校園印刷 | 香港教科書印刷 80g–100g道林紙或書紙 | ZprintPro智印港",
+      "zh-hk": "香港教科書印刷 / 校園印刷 | 香港教科書印刷 80g–100g道林紙或書紙 | 智印港",
       "en": "Custom textbooks with perfect bound, premium materials — ZprintPro",
       "ja": "教科書 / 高品質 | 教科書印刷 高品質オフセット 50冊〜 學校向け | ZprintPro"
     }
@@ -3320,7 +3320,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "磁吸翻蓋禮盒印刷 | 高端定製 48 小時交貨 | 智印港 ZprintPro",
+        "title": "磁吸翻蓋禮盒印刷 | 高端定製 48 小時交貨 | 智印港",
         "description": "磁吸翻蓋禮盒印刷 100 個起, 採用 1200g 高密度灰板外裱特種紙, 磁吸開合儀式感強, 適合高端產品包裝、珠寶、奢侈品、月餅。48 小時快遞 (順豐香港本地派送)。**智印港 香港本地印刷 15+ 年自有品牌**: 灰板通過 FSC 認證, 免費打樣, 支持燙金、壓凹、局部光油。",
         "h1": "磁吸翻蓋禮盒",
         "keywords": ["磁吸翻蓋禮盒", "禮盒印刷", "高端禮盒", "包裝盒印刷", "瓦楞紙盒", "禮品盒", "定制包裝", "化妝品盒", "食品盒", "快遞盒", "天地蓋盒", "紙盒定制", "高檔禮盒", "100個起印", "2天出貨", "FSC認證", "HK衛生署", "QR Code包裝", "UV彩盒", "中秋禮盒印刷", "保健品包裝", "免費打樣", "免費排版", "出口包裝", "包裝盒價格", "包裝盒快印", "化妝品包裝盒", "即日報價", "可降解包裝", "婚禮喜糖盒", "定製包裝盒", "定製包裝箱", "定製喜糖盒", "小批量包裝盒", "小批量彩盒", "小批量快印", "工業包裝", "彩盒印刷", "抽屜式彩盒", "永續包裝", "燙金印刷", "燙金禮盒", "燙銀印刷", "環保包裝盒", "瓦楞紙盒印刷", "磁吸盒", "禮品彩盒", "窗口包裝", "窗口設計", "節慶包裝盒", "絲帶設計", "經濟包裝", "綠色印刷", "緊急印刷", "美妝包裝", "藥品包裝盒", "防潮包裝", "食品級紙盒", "香港本地印刷"],
@@ -3336,7 +3336,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "マグネット式ギフトボックス | カスタム印刷 | ZprintPro",
-        "description": "マグネット式ギフトボックス印刷サービス、高品質特殊紙採用でマグネット蓋がピタッと閉まる高級感。ギフトブランド・アパレル向け短納期対応、100個〜少量対応、日本向けDHL配送2-4日。無料デザインサポート、複数回修正OK。| ZprintPro智印港",
+        "description": "マグネット式ギフトボックス印刷サービス、高品質特殊紙採用でマグネット蓋がピタッと閉まる高級感。ギフトブランド・アパレル向け短納期対応、100個〜少量対応、日本向けDHL配送2-4日。無料デザインサポート、複数回修正OK。| 智印港",
         "h1": "高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。",
         "keywords": ["マグネット式ギフトボックス", "magnetic closure gift box", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "日本の食品衛生基準", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
         "body": "カスタム マグネット蓋ギフトボックス — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FSC 認証紙、大豆油性インク、FDA セーフ（間接食品接触対応）。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\nマグネット蓋ギフトボックス は ギフトパッケージ・高級小売箱、化粧品・スキンケア製品パッケージ、DTC EC 配送・サブスクリプションボックス の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。packaging 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに マグネット蓋ギフトボックス サービスの設計思想です。\n\n素材は 350g コート紙 + マットラミネート（標準箱）（日常大量使用）、B フルート段ボール（強化配送箱）（プレミアム用途、主力選択）、硬質セットアップ箱 + マグネット蓋（プレミアムギフト）（特殊プロジェクト）の 3 種類。すべて FSC 認証紙、大豆油性インク および FDA セーフ（間接食品接触対応） 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、packaging 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: どんな箱スタイルが対応可能ですか？**\nTuck-end 箱（オートロック、ストレートタック、リバースタック）、セットアップ箱（硬質蓋底）、マグネット蓋箱、引き出し式箱、宅配段ボール箱、オリジナルダイカット形状。すべての標準スタイルに無料型紙テンプレートをご用意。\n\n**Q2: 最小注文数量は？**\n100 個から（標準サイズ版代・型代ゼロ）。カスタムサイズ / ダイカットは 500 個から。標準納期 5-7 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前に 3D モックアップは見られますか？**\nはい — データ提出から 4 時間以内に無料 3D レンダリングをお届け。実物サンプルは有償（¥4,980）で DHL Express にて、お客様デザイン実物印刷入りでお届け。\n\n**Q4: 食品接触対応ですか？**\n食品グレード箱は FDA セーフ接着剤と食品接触対応インク使用、間接食品接触（オートミール、茶、チョコ、スナック）認証済み。直接食品接触（キャンディ、フルーツ）は専用食品グレードライニング対応。食品種別をお知らせいただければ最適素材をご提案します。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
@@ -3348,7 +3348,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       { "q": "急件 磁吸翻蓋禮盒", "a": "48 小時快遞 (順豐香港本地派送)" }
     ],
     "imageAlt": {
-      "zh-hk": "磁吸翻蓋禮盒 - 香港本地印刷 智印港 | 香港印刷 | ZprintPro智印港",
+      "zh-hk": "磁吸翻蓋禮盒 - 香港本地印刷 智印港 | 香港印刷 | 智印港",
       "en": "Custom Magnetic Closure Gift Box for pet food and brand labels — ZprintPro",
       "ja": "マグネット式ギフトボックス | ZprintPro"
     }
@@ -3362,7 +3362,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "電子產品包裝盒印刷 | 3C 數碼 EVA 內襯 | 智印港 ZprintPro",
+        "title": "電子產品包裝盒印刷 | 3C 數碼 EVA 內襯 | 智印港",
         "description": "電子產品包裝盒印刷 100 個起, 採用瓦楞紙板或白卡紙, EVA 海棉內襯, 適合 3C 數碼、手機配件、智能設備包裝。48 小時快遞 (順豐香港本地派送)。**智印港 香港本地印刷 15+ 年自有品牌**: 緩衝抗震設計, 支持多款規格尺寸, 免費結構設計打樣。",
         "h1": "電子產品包裝盒",
         "keywords": ["電子產品包裝盒", "3C 包裝", "數碼包裝盒", "包裝盒印刷", "瓦楞紙盒", "禮品盒", "定制包裝", "化妝品盒", "食品盒", "快遞盒", "天地蓋盒", "紙盒定制", "高檔禮盒", "100個起印", "2天出貨", "FSC認證", "HK衛生署", "QR Code包裝", "UV彩盒", "中秋禮盒印刷", "保健品包裝", "免費打樣", "免費排版", "出口包裝", "包裝盒價格", "包裝盒快印", "化妝品包裝盒", "即日報價", "可降解包裝", "婚禮喜糖盒", "定製包裝盒", "定製包裝箱", "定製喜糖盒", "小批量包裝盒", "小批量彩盒", "小批量快印", "工業包裝", "彩盒印刷", "抽屜式彩盒", "永續包裝", "燙金印刷", "燙金禮盒", "燙銀印刷", "環保包裝盒", "瓦楞紙盒印刷", "磁吸盒", "禮品彩盒", "窗口包裝", "窗口設計", "節慶包裝盒", "絲帶設計", "經濟包裝", "綠色印刷", "緊急印刷", "美妝包裝", "藥品包裝盒", "防潮包裝", "食品級紙盒", "香港本地印刷"],
@@ -3378,7 +3378,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "電子製品包装箱 | カスタム印刷 | ZprintPro",
-        "description": "電子製品パッケージボックス印刷サービス、静電気防止加工オプション標準装備。EC・D2Cブランド・精密機器メーカー向け、100個〜少量対応、日本向けDHL短納期配送2-4日追跡番号付き。無料デザインサポート、安全素材採用で商品保護強化、複数回修正OK。| ZprintPro智印港",
+        "description": "電子製品パッケージボックス印刷サービス、静電気防止加工オプション標準装備。EC・D2Cブランド・精密機器メーカー向け、100個〜少量対応、日本向けDHL短納期配送2-4日追跡番号付き。無料デザインサポート、安全素材採用で商品保護強化、複数回修正OK。| 智印港",
         "h1": "高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。",
         "keywords": ["電子製品包装箱", "electronics packaging box", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "日本の食品衛生基準", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
         "body": "カスタム 電子機器包裝箱 — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FSC 認証紙、大豆油性インク、FDA セーフ（間接食品接触対応）。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\n電子機器包裝箱 は ギフトパッケージ・高級小売箱、化粧品・スキンケア製品パッケージ、DTC EC 配送・サブスクリプションボックス の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。packaging 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに 電子機器包裝箱 サービスの設計思想です。\n\n素材は 350g コート紙 + マットラミネート（標準箱）（日常大量使用）、B フルート段ボール（強化配送箱）（プレミアム用途、主力選択）、硬質セットアップ箱 + マグネット蓋（プレミアムギフト）（特殊プロジェクト）の 3 種類。すべて FSC 認証紙、大豆油性インク および FDA セーフ（間接食品接触対応） 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、packaging 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: どんな箱スタイルが対応可能ですか？**\nTuck-end 箱（オートロック、ストレートタック、リバースタック）、セットアップ箱（硬質蓋底）、マグネット蓋箱、引き出し式箱、宅配段ボール箱、オリジナルダイカット形状。すべての標準スタイルに無料型紙テンプレートをご用意。\n\n**Q2: 最小注文数量は？**\n100 個から（標準サイズ版代・型代ゼロ）。カスタムサイズ / ダイカットは 500 個から。標準納期 5-7 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前に 3D モックアップは見られますか？**\nはい — データ提出から 4 時間以内に無料 3D レンダリングをお届け。実物サンプルは有償（¥4,980）で DHL Express にて、お客様デザイン実物印刷入りでお届け。\n\n**Q4: 食品接触対応ですか？**\n食品グレード箱は FDA セーフ接着剤と食品接触対応インク使用、間接食品接触（オートミール、茶、チョコ、スナック）認証済み。直接食品接触（キャンディ、フルーツ）は専用食品グレードライニング対応。食品種別をお知らせいただければ最適素材をご提案します。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
@@ -3404,7 +3404,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "牛皮紙包裝印刷盒 | 環保材質 多尺寸 | 智印港 ZprintPro",
+        "title": "牛皮紙包裝印刷盒 | 環保材質 多尺寸 | 智印港",
         "description": "牛皮紙包裝印刷盒 100 個起, 採用 250g-350g 進口牛皮紙, 印刷 Logo 清晰自然, 適合茶葉、月餅、禮品、烘焙產品包裝。48 小時快遞 (順豐香港本地派送)。**智印港 香港本地印刷 15+ 年自有品牌**: 紙材通過 FSC 環保認證, 100% 可回收, 支持燙金、壓凹、局部光油 | 即時報價",
         "h1": "牛皮紙包裝印刷盒",
         "keywords": ["牛皮紙包裝盒", "環保包裝盒", "禮品包裝", "包裝盒印刷", "瓦楞紙盒", "禮品盒", "定制包裝", "化妝品盒", "食品盒", "快遞盒", "天地蓋盒", "紙盒定制", "高檔禮盒", "100個起印", "2天出貨", "FSC認證", "HK衛生署", "QR Code包裝", "UV彩盒", "中秋禮盒印刷", "保健品包裝", "免費打樣", "免費排版", "出口包裝", "包裝盒價格", "包裝盒快印", "化妝品包裝盒", "即日報價", "可降解包裝", "婚禮喜糖盒", "定製包裝盒", "定製包裝箱", "定製喜糖盒", "小批量包裝盒", "小批量彩盒", "小批量快印", "工業包裝", "彩盒印刷", "抽屜式彩盒", "永續包裝", "燙金印刷", "燙金禮盒", "燙銀印刷", "瓦楞紙盒印刷", "磁吸盒", "禮品彩盒", "窗口包裝", "窗口設計", "節慶包裝盒", "絲帶設計", "經濟包裝", "綠色印刷", "緊急印刷", "美妝包裝", "藥品包裝盒", "防潮包裝", "食品級紙盒", "香港本地印刷"],
@@ -3420,7 +3420,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "クラフト紙包装箱 | カスタム印刷 | ZprintPro",
-        "description": "クラフト紙パッケージボックス印刷サービス、FSC認証クラフト紙採用でエコ志向ブランドに最適。100個〜即日発送対応、ナチュラル・北欧・カフェブランド向けカスタム印刷、日本向けDHL配送2-4日。無料デザインサポート。| ZprintPro智印港",
+        "description": "クラフト紙パッケージボックス印刷サービス、FSC認証クラフト紙採用でエコ志向ブランドに最適。100個〜即日発送対応、ナチュラル・北欧・カフェブランド向けカスタム印刷、日本向けDHL配送2-4日。無料デザインサポート。| 智印港",
         "h1": "高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。",
         "keywords": ["クラフト紙包装箱", "kraft paper packaging box", "パッケージボックス印刷", "化粧箱", "食品箱", "ギフトボックス", "メール便箱", "オリジナルパッケージ", "組み立て箱", "化粧ポーチ", "商品箱", "カートン箱", "100個〜", "2日出荷", "FSC 認証", "日本の食品衛生基準", "QR コードパッケージ", "中秋ギフトボックス印刷", "健康食品パッケージ", "無料校正", "無料レイアウト", "輸出パッケージ", "化粧品パッケージボックス", "即見積もり", "生分解性パッケージ", "小ロットパッケージ", "工業パッケージ", "化粧箱印刷", "引き出し式化粧箱", "サステナブルパッケージ", "銀箔押し", "エコパッケージ", "段ボール箱", "段ボール箱印刷", "マグネットボックス", "ギフト化粧箱", "窓付きデザイン", "祝日パッケージボックス", "グリーン印刷", "特急印刷", "美容パッケージ", "医薬品パッケージボックス", "防湿パッケージ", "食品グレード箱"],
         "body": "カスタム クラフト紙箱印刷 — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FSC 認証紙、大豆油性インク、FDA セーフ（間接食品接触対応）。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\nクラフト紙箱印刷 は ギフトパッケージ・高級小売箱、化粧品・スキンケア製品パッケージ、DTC EC 配送・サブスクリプションボックス の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。packaging 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに クラフト紙箱印刷 サービスの設計思想です。\n\n素材は 350g コート紙 + マットラミネート（標準箱）（日常大量使用）、B フルート段ボール（強化配送箱）（プレミアム用途、主力選択）、硬質セットアップ箱 + マグネット蓋（プレミアムギフト）（特殊プロジェクト）の 3 種類。すべて FSC 認証紙、大豆油性インク および FDA セーフ（間接食品接触対応） 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、packaging 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: どんな箱スタイルが対応可能ですか？**\nTuck-end 箱（オートロック、ストレートタック、リバースタック）、セットアップ箱（硬質蓋底）、マグネット蓋箱、引き出し式箱、宅配段ボール箱、オリジナルダイカット形状。すべての標準スタイルに無料型紙テンプレートをご用意。\n\n**Q2: 最小注文数量は？**\n100 個から（標準サイズ版代・型代ゼロ）。カスタムサイズ / ダイカットは 500 個から。標準納期 5-7 営業日、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前に 3D モックアップは見られますか？**\nはい — データ提出から 4 時間以内に無料 3D レンダリングをお届け。実物サンプルは有償（¥4,980）で DHL Express にて、お客様デザイン実物印刷入りでお届け。\n\n**Q4: 食品接触対応ですか？**\n食品グレード箱は FDA セーフ接着剤と食品接触対応インク使用、間接食品接触（オートミール、茶、チョコ、スナック）認証済み。直接食品接触（キャンディ、フルーツ）は専用食品グレードライニング対応。食品種別をお知らせいただければ最適素材をご提案します。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
@@ -3446,7 +3446,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "拼版白卡彩盒印刷 (免刀模費) | 8-15天交期 | 香港無對手價 | 智印港 ZprintPro",
+        "title": "拼版白卡彩盒印刷 (免刀模費) | 8-15天交期 | 香港無對手價 | 智印港",
         "description": "拼版白卡彩盒, 固定刀模共用, 免刀模費 + 免排版費, 成本直降 40-60%。4 種紙材 (350g/400g 單粉卡、375g 銀卡、375g 鐳射銀卡), 3 種盒型, 8 檔標準尺寸。500-10,000 枚, 8-15 天交期。**拼版白卡彩盒 香港無對手價**: 500 枚飛機盒起 HKD 129, 1000 枚 HKD 171。",
         "h1": "拼版白卡彩盒印刷 (免刀模費)",
         "keywords": ["拼版白卡彩盒", "免刀模費", "白卡彩盒", "拼版彩盒", "標準尺寸彩盒", "飛機盒", "扣底盒", "雙插盒", "跨境電商彩盒", "美妝包裝盒"],
@@ -3473,7 +3473,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       { "q": "500 個最少起印嗎？", "a": "是, 拼版彩盒 500 個起印, 10,000 枚封頂 (湊版生產限製)。" }
     ],
     "imageAlt": {
-      "zh-hk": "拼版白卡彩盒印刷 (免刀模費) | 香港本地印刷 智印港 ZprintPro",
+      "zh-hk": "拼版白卡彩盒印刷 (免刀模費) | 香港本地印刷 智印港",
       "en": "Gang-Run White Card Boxes (No Die-Cut Fee) | Custom Packaging | ZprintPro",
       "ja": "合版ホワイトカードボックス (型代不要) | パッケージ・化粧箱 | ZprintPro"
     }
@@ -3486,7 +3486,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "水果及食品標籤印刷 | 防水防油 SGS 認證 | 智印港 ZprintPro",
+        "title": "水果及食品標籤印刷 | 防水防油 SGS 認證 | 智印港",
         "description": "水果及食品標籤印刷 500 張起, 採用防水 PVC 或 PP 合成紙, 通過 SGS 食品接觸安全認證, 適合水果店、有機食品、烘焙店、外賣包裝。48 小時快遞 (順豐香港本地派送)。**智印港 香港本地印刷 15+ 年自有品牌**: 耐低溫防霧氣設計, 表面防水防油, 支持可變序號、二維碼 | 即時報價",
         "h1": "水果及食品標籤印刷",
         "keywords": ["水果標籤", "食品標籤", "防水標籤", "標籤印刷", "貼紙印刷", "不干膠印刷", "防水貼紙", "透明貼紙", "異形貼紙", "標籤貼紙", "定制貼紙", "小批量貼紙", "防水不干膠", "卷筒標籤", "1000張貼紙", "100張貼紙", "A4貼紙", "Etsy貼紙", "FDA貼紙", "QR Code 貼紙", "expiry date 貼紙", "不殘膠", "不留膠", "可掃描貼紙", "可移除貼紙", "圓形貼紙", "婚禮貼紙", "學生貼紙", "客製貼紙", "成分標示", "成分標示貼紙", "標籤貼紙印刷", "活動互動", "物流追蹤", "玻璃貼紙", "生日貼紙", "經濟貼紙", "迎賓牌貼紙", "透明貼紙印刷", "食品級貼紙", "高透貼紙"],
@@ -3502,7 +3502,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "フルーツ・食品ラベル印刷 | カスタム印刷 | ZprintPro",
-        "description": "フルーツ食品ラベルステッカー印刷サービス、食品FDA認証素材採用で果物・食品ブランドに最適。防水・耐油加工で冷蔵庫保管対応、剥がしやすく糊残なし特殊粘着、100枚〜即日発送対応、日本向けDHL配送2-4日追跡番号付き。無料デザインサポート、複数回修正OK。| ZprintPro智印港",
+        "description": "フルーツ食品ラベルステッカー印刷サービス、食品FDA認証素材採用で果物・食品ブランドに最適。防水・耐油加工で冷蔵庫保管対応、剥がしやすく糊残なし特殊粘着、100枚〜即日発送対応、日本向けDHL配送2-4日追跡番号付き。無料デザインサポート、複数回修正OK。| 智印港",
         "h1": "高品質・短納期・グローバル配送。ZprintPro がプロフェッショナル印刷サービスを提供。",
         "keywords": ["フルーツ・食品ラベル印刷", "fruit & food label stickers", "ステッカー印刷", "防水ステッカー", "オリジナルステッカー", "小ロットステッカー", "ダイカットステッカー", "透明ステッカー", "商品ラベル", "カスタムステッカー", "剥がせるステッカー", "ロゴステッカー", "1000枚ステッカー", "A4 ステッカー", "Etsy ステッカー", "QR コードステッカー", "賞味期限ステッカー", "ノーリボン残留", "残留なし", "スキャン可能ステッカー", "円形ステッカー", "ウェディングステッカー", "学生ステッカー", "成分表示", "成分表示ステッカー", "ラベルステッカー印刷", "イベント双方向", "物流追跡", "ガラスステッカー", "誕生日ステッカー", "エコノミーステッカー", "ウェルカムステッカー", "透明ステッカー印刷", "食品グレードステッカー", "高透明ステッカー"],
         "body": "カスタム フルーツ・食品ラベルシール — 日本市場向け高品質短納期印刷サービス。100 枚から対応、FDA 認可接着剤（間接食品接触対応）、SGS 移行テスト済み。沖縄県・北海道も追加料金なし。ISO 9001 認証工場、DHL 国際配送で 2-4 日納品、15+ 年の印刷実績。\n\nフルーツ・食品ラベルシール は 食品ラベル・FDA 準拠パッケージ、屋外サイン・設備デカール、小売商品ラベル・DTC ブランドステッカー の日本市場で広く活用されています。新商品ラインの立ち上げ、小売棚での存在感をリフレッシュ、全国顧客への販促物配送など、同人・D2C・中小企業いずれの用途にも対応。stickers 市場は「迅速な納品」「頻繁な改善」「厳格な単価管理」を評価します — これはまさに フルーツ・食品ラベルシール サービスの設計思想です。\n\n素材は PVC ビニール（3.4 mil、UV 耐性インク）（日常大量使用）、BOPP 透明フィルム（2.6 mil、防水）（プレミアム用途、主力選択）、コート紙（70lb、短期プロモーション用）（特殊プロジェクト）の 3 種類。すべて FDA 認可接着剤（間接食品接触対応） および SGS 移行テスト済み 認証取得。表面仕上げはマットラミネート、グロスラミネート、スポット UV、ホイル押し対応。CMYK フルカラー印刷および透明地用ホワイトインクに対応。\n\n入稿仕様：300 DPI、CMYK モード、3mm 塗り足し、フォントはアウトライン化。データ提出から 2 時間以内に無料デジタル校正 PDF を提供。デザインファイルがない場合は、LINE でブランドカラー・ロゴ・参考画像をお送りいただければ、無料で制作サポート。各標準サイズに無料型紙テンプレートを用意。\n\n料金透明：100 枚から、版代・型代ゼロ。沖縄県・北海道含む日本全国送料無料、stickers 業界最安水準。標準納期は 3-5 営業日、お急ぎ便（24 時間校正 + 2 日制作）は 20% 増。商品ページの 30 秒 AI 見積もりボタンで即時お見積もり、LINE お問い合わせでカスタム対応。\n\n**よくある質問**\n\n**Q1: ステッカーの屋外耐久年数は？**\nPVC ビニールステッカーは屋外で 3-5 年、屋内では 1-2 年の耐久性があります。マットラミネート加工で紫外線耐性も確保。BOPP フィルムも同等の耐久性を実現し、透明ラベルに最適です。すべての素材は UV 耐性インク使用で日焼けによる色褪せを防止します。\n\n**Q2: 最小注文数量は？**\n100 枚から対応、版代・型代ゼロ。スモールバッチシリーズは 50 枚まで対応可能。標準納期は 3-5 営業日、沖縄・北海道含む日本全国送料無料、DHL 国際配送で 2-4 日納品。\n\n**Q3: 本注文前にデジタル校正は確認できますか？**\nはい — データ提出から 2 時間以内に無料デジタル校正 PDF を提供。無料修正は 2 回まで対応可能です。実物サンプルは有償（¥2,980）で素材・加工見本セットを DHL Express でお届けします。\n\n**Q4: 日本への配送はどのくらいですか？**\n日本全国送料無料、沖縄県・北海道も同料金、DHL 国際配送で 2-4 日納品。お急ぎ便（48 時間製作 + 1 日配送）は 30% 増で対応。沖縄・北海道も追加料金一切なし。\n\nご注文はこちら — 2 時間で無料デジタル校正、LINE お問い合わせ または商品ページの「30 秒 AI 見積もり」ボタンから。"
@@ -3543,7 +3543,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "同人誌印刷 コミケ対応 | 即日発送 24時間特急",
-        "description": "同人誌印刷サービス、無線綴じ・中綴じ・PUR製本対応。A5/B5サイズ表紙フルカラー本文モノクロ印刷。コミケ・即売会向け50冊〜少部数対応、即日発送オプション、日本全国DHL配送2-4日追跡番号付き。無料デザインサポート、24時間特急対応可能。| ZprintPro智印港",
+        "description": "同人誌印刷サービス、無線綴じ・中綴じ・PUR製本対応。A5/B5サイズ表紙フルカラー本文モノクロ印刷。コミケ・即売会向け50冊〜少部数対応、即日発送オプション、日本全国DHL配送2-4日追跡番号付き。無料デザインサポート、24時間特急対応可能。| 智印港",
         "h1": "同人誌印刷 コミケ・即売会対応",
         "keywords": ["同人誌印刷", "コミケ", "同人誌", "即売会", "印刷", "A5同人誌", "少部数印刷", "コミケ前特急", "即売会印刷"],
         "body": "<p>コミケ・即売会・創作イベント向けに最適化された同人誌印刷。表紙フルカラー + 本文モノクロの標準構成から、表紙本文ともにフルカラーのプレミアム構成まで対応。本文 10 部からの少部数対応で、個人サークル・初心者も気軽に発注可能。コミケ開催前は 24 時間特急対応で、在庫切れの追加印刷も迅速対応。</p><h3>サイズ・仕様</h3><p>材質: FSC認証 上質紙 90g/コート紙 90g (表紙)。サイズ: A5 (148×210mm) / B5 (182×257mm) / A4 (オプション)。印刷方式: 表紙: オフセット4色 / 本文: オンデマンド or オフセット。加工: 無線綴じ / 中綴じ (8-64p) / 背表紙。</p>"
@@ -3592,7 +3592,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "アクリルキーホルダー キャラクター形 推し活応援 | 10個から",
-        "description": "アクリルキーホルダー印刷サービス、高透明2mm/3mmアクリル採用で完全カスタム形状対応。日本同人・アニメ・VTuber・推し活ブランド向け、50個〜即日発送対応、日本向けDHL配送2-4日追跡番号付き。無料デザインサポート、複数回修正OK、安全ピンオプション。| ZprintPro智印港",
+        "description": "アクリルキーホルダー印刷サービス、高透明2mm/3mmアクリル採用で完全カスタム形状対応。日本同人・アニメ・VTuber・推し活ブランド向け、50個〜即日発送対応、日本向けDHL配送2-4日追跡番号付き。無料デザインサポート、複数回修正OK、安全ピンオプション。| 智印港",
         "h1": "アクリルキーホルダー キャラクター形 推し活応援",
         "keywords": ["アクリルキーホルダー", "キャラキーホルダー", "推し活", "VTuber グッズ", "アニメ グッズ", "カスタム キーホルダー", "同人グッズ", "オタク グッズ"],
         "body": "<p>推し活応援・キャラクターグッズ・アクリルスタンドの小型版。完全なカスタム形状対応 — VTuber のロゴ、推しキャラのイラストをそのままキーホルダー化。2mm と 3mm 厚で価格・手触りが異なる。10 個から対応で、個人作家・同人イベント参加にも最適。</p><h3>サイズ・仕様</h3><p>材質: 透明アクリル板 2mm/3mm (オプション: 白ベース/満版印刷)。サイズ: 30-80mm (カスタム形状可、Illustrator パスデータ入稿)。印刷方式: UV インクジェット 4色 (CMYK + 白インク)。加工: 安全ピン/ボールチェーン/ナスカン/ヘッダーOPP袋封入。</p>"
@@ -3613,7 +3613,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
     ],
     "imageAlt": {
-      "zh-hk": "亞克力鑰匙扣-角色造型-2mm-3mm | 香港印刷 | ZprintPro智印港",
+      "zh-hk": "亞克力鑰匙扣-角色造型-2mm-3mm | 香港印刷 | 智印港",
       "en": "acrylic-keychain-custom-shape-2mm-3mm",
       "ja": "アクリルキーホルダー-キャラクター形-2mm-3mm"
     }
@@ -3641,7 +3641,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
       "ja": {
         "title": "缶バッジ印刷 57mm 76mm | 推し活応援 コミケ対応",
-        "description": "缶バッジ印刷サービス、高品質アルミ素材採用で57mm標準+76mm大判+44mmミニ対応。安全ピン付き、フルカラー印刷、日本同人・アニメ・推し活・物販ブランド向け、50個〜即日発送、日本向けDHL配送2-4日。無料デザインサポート。| ZprintPro智印港",
+        "description": "缶バッジ印刷サービス、高品質アルミ素材採用で57mm標準+76mm大判+44mmミニ対応。安全ピン付き、フルカラー印刷、日本同人・アニメ・推し活・物販ブランド向け、50個〜即日発送、日本向けDHL配送2-4日。無料デザインサポート。| 智印港",
         "h1": "缶バッジ印刷 57mm 76mm コミケ・推し活応援",
         "keywords": ["缶バッジ印刷", "缶バッジ", "バッジ", "推し活", "コミケ", "VTuber グッズ", "アニメ グッズ", "安全ピン バッジ"],
         "body": "<p>コミケ・推し活・VTuber 物販に必須の缶バッジ。57mm 標準サイズと 76mm 大判、44mm ミニの 3 サイズ展開。フルカラー印刷でイラスト・ロゴをそのまま再現。安全ピン標準装備で衣服・カバンに簡単装着。10 個から少部数対応で、個人サークルも気軽に発注可能。</p><h3>サイズ・仕様</h3><p>材質: 金属ベース + 紙/ペット印刷面 + 安全ピン。サイズ: 57mm (標準) / 76mm (大判) / 44mm (ミニ)。印刷方式: オフセット/デジタル 4色 (CMYK)。加工: 安全ピン標準装備 / OPP袋個別包装オプション。</p>"
@@ -3711,7 +3711,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
     ],
     "imageAlt": {
-      "zh-hk": "明信片套裝-和紙風-105x148mm | 香港印刷 | ZprintPro智印港",
+      "zh-hk": "明信片套裝-和紙風-105x148mm | 香港印刷 | 智印港",
       "en": "postcard-set-washi-style-105x148mm",
       "ja": "ポストカードセット-和紙風-105x148mm"
     }
@@ -3760,7 +3760,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       },
     ],
     "imageAlt": {
-      "zh-hk": "環保托特袋-有機棉-12oz-帆布 | 香港印刷 | ZprintPro智印港",
+      "zh-hk": "環保托特袋-有機棉-12oz-帆布 | 香港印刷 | 智印港",
       "en": "eco-tote-bag-organic-cotton-12oz-canvas",
       "ja": "エコトートバッグ-オーガニックコットン-12oz"
     }
@@ -3773,7 +3773,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
     },
     "seo": {
       "zh-hk": {
-        "title": "香港畢業紀念冊 — 騎馬釘 / 膠裝 / 精裝 50 本起 | 智印港 ZprintPro",
+        "title": "香港畢業紀念冊 — 騎馬釘 / 膠裝 / 精裝 50 本起 | 智印港",
         "description": "香港畢業紀念冊 / 校史特刊 / 校友會刊 / 社團特刊定製，騎馬釘 / 膠裝 / 精裝三種裝訂，支持班級照片、師長題詞、學校 logo 全頁。香港本地 48 小時交付，DHL 全球 2-4 天。ZprintPro 15+ 年自有品牌。| 立即 WhatsApp 報價",
         "h1": "香港畢業紀念冊 — 50 本起印 騎馬釘 / 膠裝 / 精裝",
         "keywords": ["畢業紀念冊", "校史特刊", "校友會刊", "社團特刊", "畢業紀念冊印刷", "膠裝精裝", "騎馬釘", "香港印刷", "DHL 全球配送", "FSC 認證"],
@@ -3795,7 +3795,7 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       }
     },
     "imageAlt": {
-      "zh-hk": "香港畢業紀念冊 / 校園印刷 | 香港畢業紀念冊印刷 環保紙 | ZprintPro智印港",
+      "zh-hk": "香港畢業紀念冊 / 校園印刷 | 香港畢業紀念冊印刷 環保紙 | 智印港",
       "en": "Graduation Yearbook Printing / School Publication | Free Design Mockup Free Shipping | ZprintPro",
       "ja": "卒業記念アルバム / 校園印刷 | 卒業記念アルバム印刷 環保紙 | ZprintPro"
     },
