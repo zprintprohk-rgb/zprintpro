@@ -353,7 +353,7 @@ const categorySeoData: Record<string, {
       // 2026-07-17 GSC CTR 修复: 起价前置 + 免費設計/即日 hook, 机会词 貼紙印刷/貼紙訂製
       'zh-hk': '小批量貼紙印刷 防水抗UV | 1張起印・異形裁切・燙金 | 智印港',
       'en': 'Small Batch Sticker Printing from $0.05 | 1 MOQ + Free Proof | ZprintPro',
-      'ja': 'ダイカットステッカー 防水印刷｜1枚〜・防水・短納期2-4日｜ZprintPro',
+      'ja': 'PVC シール 防水・カスタム・短納期 1枚〜・DHL全国2-4日 | ZprintPro',
     },
     keywords: {
       'zh-hk': '貼紙印刷,透明貼,防水貼紙,燙金貼紙,異形貼紙,小批量貼紙,LOGO貼紙,標籤印刷,小量貼紙,UV貼紙,啞膠貼紙,亮膜貼紙,封口貼紙,包裝貼紙,餐廳貼紙',
@@ -375,7 +375,7 @@ const categorySeoData: Record<string, {
       // 2026-07-17 GSC CTR 修复: 机会词 傳單印刷印刷/傳單印刷 前置
       'zh-hk': 'A5 宣傳單張印刷 100張起・A4/A5/A3 雙面 | HK$0.18 起 | 智印港',
       'en': 'China Catalog Printing from $0.06 | 100 MOQ + Free Shipping | ZprintPro',
-      'ja': 'チラシ印刷｜100枚〜・両面・最短即日｜ZprintPro',
+      'ja': 'チラシ印刷 早い・短納期・100枚〜・両面カラー・即日対応 | ZprintPro',
     },
     keywords: {
       // 加長尾: 數碼印刷 / 數碼快印 / 急印傳單 / 即日傳單 / 數位印刷 / 加急傳單 / 短版印刷
@@ -505,7 +505,7 @@ const categorySeoData: Record<string, {
   'menus': {
     titles: {
       // 2026-07-17 GSC CTR 修复: 机会词 餐牌印刷 前置
-      'zh-hk': '餐牌印刷 防水耐用 | 多尺寸 + 免费设计 | 智印港',
+      'zh-hk': '餐牌印刷 100本起印・防水耐用・24小時快印 | 智印港',
       en: 'Menu Printing from $0.14 | Free Shipping $99+ | ZprintPro',
       ja: 'メニュー印刷｜¥20〜・小ロット・最短即日・無料デザイン｜ZprintPro',
     },
@@ -515,7 +515,7 @@ const categorySeoData: Record<string, {
       ja: 'メニュー印刷,レストランメニュー,メニューブック,PVCメニュー,ラミネートメニュー,レザーメニュー,居酒屋メニュー,カフェメニュー,デザートメニュー,ホテルメニュー',
     },
     descriptions: {
-      'zh-hk': '餐牌印刷 100 本起印，HK$0.22 起/份。防水 PVC / 紙質菜單 / 精裝 / 一次性，餐廳、茶餐廳、酒吧、咖啡店適用。免費設計打稿，最快即日交貨，港九新界滿 HK$500 免費順豐速遞。WhatsApp 30 秒即時報價，ISO 9001 認證。',
+      'zh-hk': '餐牌印刷 100 本起印, HK$4 起/份, 標準 3-5 天交貨。防水 PVC / 紙質 / 精裝 / 一次性 4 種材質, 餐廳 / 茶餐廳 / 酒吧 / 咖啡店適用。免費設計打稿 4 小時, 港九新界滿 HK$500 免費順豐速遞, ISO 9001 + FSC 認證。',
       en: 'Menu printing from $0.14, 100 MOQ. Waterproof PVC, paper, hardcover & disposable menus for restaurants, cafes and bars. Free design proof, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote.',
       ja: 'メニュー印刷 100 部から、¥20〜。防水 PVC・紙・ハードカバー・使い捨て、レストラン・カフェ・バー向け。無料デザイン校正 2 時間、最短即日発送、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり。',
     },
