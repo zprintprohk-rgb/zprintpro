@@ -3368,7 +3368,6 @@ export const products: Product[] = [
     expertReview: {"reviewer": "Maya L.", "credentials": "G7 Master Printer, 25+ years offset & digital printing expertise, founder of ZprintPro print engineering team", "review": "Reviewed by Maya L., G7 Master certified print engineer with 25+ years in commercial offset and digital printing. She validates color accuracy, substrate performance, and finishing durability for every ZprintPro SKU."},
     authorBio: {"name": "ZprintPro Print Engineering Team", "role": "Founder & Lead Print Engineer", "bio": "Founded 2024 in Shenzhen by print industry veterans with 30+ years combined experience at Manhattan, Hong Kong, and Tokyo print houses. G7 Master certified, FSC certified, ISO 12647-2 compliant. Serving 50,000+ brands across 50 countries with 4C+0 offset, digital, and large format printing."},
 },
-},
   {
     id: 'PK-004',
     sku_code: 'PK-004',
