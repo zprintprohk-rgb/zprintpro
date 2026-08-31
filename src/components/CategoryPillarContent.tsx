@@ -33,6 +33,23 @@ export function generateFaqSchema(locale: string, categorySlug: string) {
   };
 }
 
+// 设计组件：把「A・B」式事实句拆成 主/副 双层级渲染（内容零改动，仅呈现层）
+function DecisionCard({ text }: { text: string }) {
+  const sep = text.includes('・') ? '・' : text.includes(' · ') ? ' · ' : null;
+  if (!sep) {
+    return <span className="text-sm text-gray-800 font-medium">{text}</span>;
+  }
+  const i = text.indexOf(sep);
+  const lead = text.slice(0, i);
+  const rest = text.slice(i + sep.length);
+  return (
+    <>
+      <span className="text-[15px] font-extrabold tracking-tight text-[#111827] leading-snug">{lead}</span>
+      <span className="text-[12.5px] text-[#6B7280] font-medium leading-snug">{rest}</span>
+    </>
+  );
+}
+
 export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarContentProps) {
   const data = categorySeoContent[categorySlug]?.[locale as 'zh-hk' | 'en' | 'ja'] 
     || getDefaultCategoryContent(categorySlug, locale);
@@ -51,6 +68,15 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
     faqTitle: isZh ? '常見問題' : isJa ? 'よくある質問' : 'Frequently Asked Questions',
   };
 
+  // 设计：锚点导航（标签复用各小节现有标题，零新增文案）
+  const anchors: { href: string; label: string }[] = [];
+  if (data.coreAdvantages) anchors.push({ href: '#sec-advantages', label: data.coreAdvantages.title || t.coreAdvantages });
+  if (data.materialTable) anchors.push({ href: '#sec-materials', label: data.materialTable.title || t.materialTable });
+  if (data.specialOptions) anchors.push({ href: '#sec-options', label: data.specialOptions.title || t.specialOptions });
+  if (data.techSpecs) anchors.push({ href: '#sec-specs', label: data.techSpecs.title || t.techSpecs });
+  if (data.serviceNodes) anchors.push({ href: '#sec-nodes', label: data.serviceNodes.title || t.serviceNodes });
+  if (data.faq && data.faq.length > 0) anchors.push({ href: '#sec-faq', label: t.faqTitle });
+
   return (
     <section className="bg-white border-t">
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-12 md:py-16">
@@ -67,6 +93,20 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
           {data.h2}
         </h2>
 
+        {anchors.length > 0 && (
+          <nav aria-label="Section navigation" className="mb-8 flex flex-wrap gap-2">
+            {anchors.map((a) => (
+              <a
+                key={a.href}
+                href={a.href}
+                className="inline-flex items-center rounded-full border border-[#E5E7EB] bg-white px-3.5 py-1.5 text-[13px] font-semibold text-[#1B3163] transition-colors hover:border-[#2873F5] hover:text-[#2873F5]"
+              >
+                {a.label}
+              </a>
+            ))}
+          </nav>
+        )}
+
         {/* W1 K3 8/29 12:50 派活包 §1.3 拍板: 采购决策 4 要素卡 (P0 返工, 替换 V3.4 SEO 自检块 + 96295a4 4 边框块)
             设计: 容器样式沿用 V3.4 (蓝渐变 + 左蓝边) + 内部 2×2 网格 (grid-cols-1 sm:grid-cols-2 gap-2) + 内联 SVG 图标 (禁 emoji) + 标题行 + CTA 行
             数据驱动: stickers 专属值 (示范) + 全站 fallback (其余 12 品类) - 后续 W2-W3 补 decisionCard 字段, 本 turn 硬编码 */}
@@ -74,63 +114,48 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
           <p className="text-[13px] font-bold uppercase tracking-[.12em] text-[#2873F5] mb-4">
             {isZh ? '快速決策・採購 4 要素' : isJa ? 'クイック決断・購買4要素' : 'Quick Decision · 4 Buying Facts'}
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-            {/* MOQ 要素 - 内联 SVG 图标 (起印量) */}
-            <div className="flex items-center gap-2">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" className="flex-shrink-0">
-                <rect x="2" y="2" width="12" height="12" rx="2" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-                <path d="M5 6h6M5 9h4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-              </svg>
-              <span className="text-sm text-gray-800 font-medium">
-                {categorySlug === 'stickers' ? (
-                  isZh ? '50 個起印・HK$0.45/張起' : isJa ? '50 個起印・HK$0.45/張起' : 'From 50 pcs · HK$0.45/pc'
-                ) : (
-                  isZh ? '100 張起印・無開版費' : isJa ? '100枚から・版代ゼロ' : 'From 100 pcs · No setup fees'
-                )}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            {/* MOQ 起印量 */}
+            <div className="group bg-white border border-[#E5E7EB] rounded-2xl p-4 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-[3px] hover:border-[#d6e0f5] hover:shadow-[0_10px_30px_rgba(17,24,39,0.06)]">
+              <span className="w-9 h-9 rounded-[10px] bg-[#2873F5] flex items-center justify-center flex-shrink-0">
+                <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <rect x="2" y="2" width="12" height="12" rx="2" stroke="#fff" strokeWidth="1.5" fill="none"/>
+                  <path d="M5 6h6M5 9h4" stroke="#fff" strokeWidth="1.5" strokeLinecap="round"/>
+                </svg>
               </span>
+              <DecisionCard text={categorySlug === 'stickers' ? (isZh ? '50 個起印・HK$0.45/張起' : isJa ? '50 個起印・HK$0.45/張起' : 'From 50 pcs · HK$0.45/pc') : (isZh ? '100 張起印・無開版費' : isJa ? '100枚から・版代ゼロ' : 'From 100 pcs · No setup fees')} />
             </div>
-            {/* Price 要素 - 内联 SVG 图标 (价格) */}
-            <div className="flex items-center gap-2">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" className="flex-shrink-0">
-                <path d="M8 2L10 6H14L11 9L12 14L8 11L4 14L5 9L2 6H6L8 2Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" fill="none"/>
-              </svg>
-              <span className="text-sm text-gray-800 font-medium">
-                {categorySlug === 'stickers' ? (
-                  isZh ? '防水啞光 PVC・15+ 材質' : isJa ? '防水啞光 PVC・15+ 材質' : 'Waterproof Matte PVC · 15+ Materials'
-                ) : (
-                  isZh ? '30 秒 AI 報價・價格透明' : isJa ? '30秒 AI 見積・透明価格' : '30-sec AI quote · Transparent pricing'
-                )}
+            {/* Price 價格 */}
+            <div className="group bg-white border border-[#E5E7EB] rounded-2xl p-4 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-[3px] hover:border-[#d6e0f5] hover:shadow-[0_10px_30px_rgba(17,24,39,0.06)]">
+              <span className="w-9 h-9 rounded-[10px] bg-[#2873F5] flex items-center justify-center flex-shrink-0">
+                <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M8 2L10 6H14L11 9L12 14L8 11L4 14L5 9L2 6H6L8 2Z" stroke="#fff" strokeWidth="1.5" strokeLinejoin="round" fill="none"/>
+                </svg>
               </span>
+              <DecisionCard text={categorySlug === 'stickers' ? (isZh ? '防水啞光 PVC・15+ 材質' : isJa ? '防水啞光 PVC・15+ 材質' : 'Waterproof Matte PVC · 15+ Materials') : (isZh ? '30 秒 AI 報價・價格透明' : isJa ? '30秒 AI 見積・透明価格' : '30-sec AI quote · Transparent pricing')} />
             </div>
-            {/* Lead 要素 - 内联 SVG 图标 (交期) */}
-            <div className="flex items-center gap-2">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" className="flex-shrink-0">
-                <circle cx="8" cy="8" r="6" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-                <path d="M8 4v4l3 2" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-              </svg>
-              <span className="text-sm text-gray-800 font-medium">
-                {categorySlug === 'stickers' ? (
-                  isZh ? '5-7 天交期・DHL 全球 2-4 天' : isJa ? '5-7 天交期・DHL 全球 2-4 天' : '5-7 day lead · DHL 2-4 days global'
-                ) : (
-                  isZh ? '標準 3-5 天交貨・加急即日' : isJa ? '標準3-5営業日・特急即日' : 'Standard 3-5 days · Rush same-day'
-                )}
+            {/* Lead 交期 */}
+            <div className="group bg-white border border-[#E5E7EB] rounded-2xl p-4 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-[3px] hover:border-[#d6e0f5] hover:shadow-[0_10px_30px_rgba(17,24,39,0.06)]">
+              <span className="w-9 h-9 rounded-[10px] bg-[#2873F5] flex items-center justify-center flex-shrink-0">
+                <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <circle cx="8" cy="8" r="6" stroke="#fff" strokeWidth="1.5" fill="none"/>
+                  <path d="M8 4v4l3 2" stroke="#fff" strokeWidth="1.5" strokeLinecap="round"/>
+                </svg>
               </span>
+              <DecisionCard text={categorySlug === 'stickers' ? (isZh ? '5-7 天交期・DHL 全球 2-4 天' : isJa ? '5-7 天交期・DHL 全球 2-4 天' : '5-7 day lead · DHL 2-4 days global') : (isZh ? '標準 3-5 天交貨・加急即日' : isJa ? '標準3-5営業日・特急即日' : 'Standard 3-5 days · Rush same-day')} />
             </div>
-            {/* Quality 要素 - 内联 SVG 图标 (认证) */}
-            <div className="flex items-center gap-2">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true" className="flex-shrink-0">
-                <path d="M3 8L6 11L13 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                <circle cx="8" cy="8" r="6.5" stroke="currentColor" strokeWidth="1.5" fill="none"/>
-              </svg>
-              <span className="text-sm text-gray-800 font-medium">
-                {categorySlug === 'stickers' ? (
-                  isZh ? 'ISO 9001 工廠・FSC 認證紙' : isJa ? 'ISO 9001 工廠・FSC 認證紙' : 'ISO 9001 factory · FSC-certified paper'
-                ) : (
-                  isZh ? 'ISO 9001 工廠・FSC 認證紙' : isJa ? 'ISO 9001 工場・FSC認証紙' : 'ISO 9001 factory · FSC-certified paper'
-                )}
+            {/* Quality 認證 */}
+            <div className="group bg-white border border-[#E5E7EB] rounded-2xl p-4 flex flex-col gap-3 transition-all duration-300 hover:-translate-y-[3px] hover:border-[#d6e0f5] hover:shadow-[0_10px_30px_rgba(17,24,39,0.06)]">
+              <span className="w-9 h-9 rounded-[10px] bg-[#2873F5] flex items-center justify-center flex-shrink-0">
+                <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 8L6 11L13 4" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  <circle cx="8" cy="8" r="6.5" stroke="#fff" strokeWidth="1.5" fill="none"/>
+                </svg>
               </span>
+              <DecisionCard text={categorySlug === 'stickers' ? (isZh ? 'ISO 9001 工廠・FSC 認證紙' : isJa ? 'ISO 9001 工廠・FSC 認證紙' : 'ISO 9001 factory · FSC-certified paper') : (isZh ? 'ISO 9001 工廠・FSC 認證紙' : isJa ? 'ISO 9001 工場・FSC認証紙' : 'ISO 9001 factory · FSC-certified paper')} />
             </div>
           </div>
+
           {/* CTA 行 - WhatsApp 链接 */}
           <a
             href="https://wa.me/8619880851334?text=Hi%20ZprintPro%2C%20I%20need%20a%20quote"
@@ -147,14 +172,17 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
 
         {/* ===== 核心竞争优势 ===== */}
         {data.coreAdvantages && (
-          <div className="mb-12">
-            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 border-l-4 border-[#2873F5] pl-4">
+          <div className="mb-12 scroll-mt-24" id="sec-advantages">
+            <div className="flex items-center gap-2.5 mb-4 sm:mb-5">
+              <span className="inline-block w-[22px] h-[3px] bg-[#F87314] flex-shrink-0" aria-hidden="true" />
+              <h3 className="text-lg sm:text-xl md:text-2xl font-extrabold tracking-tight text-[#111827]">
               {data.coreAdvantages.title || t.coreAdvantages}
             </h3>
-            <div className="space-y-8">
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {data.coreAdvantages.items.map((item, idx) => (
-                <div key={idx} className="bg-gray-50 rounded-xl p-5 md:p-6">
-                  <h4 className="text-lg font-semibold text-gray-900 mb-3">
+                <div key={idx} className="bg-white border border-[#E5E7EB] rounded-2xl p-5 md:p-6 transition-all duration-300 hover:shadow-[0_10px_30px_rgba(17,24,39,0.06)]">
+                  <h4 className="text-base md:text-lg font-extrabold tracking-tight text-[#111827] mb-3">
                     {item.heading}
                   </h4>
                   <ul className="space-y-2">
@@ -173,10 +201,13 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
         
         {/* ===== 材质工艺详解表格 ===== */}
         {data.materialTable && (
-          <div className="mb-12">
-            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2 border-l-4 border-[#2873F5] pl-4">
+          <div className="mb-12 scroll-mt-24" id="sec-materials">
+            <div className="flex items-center gap-2.5 mb-4 sm:mb-5">
+              <span className="inline-block w-[22px] h-[3px] bg-[#F87314] flex-shrink-0" aria-hidden="true" />
+              <h3 className="text-lg sm:text-xl md:text-2xl font-extrabold tracking-tight text-[#111827]">
               {data.materialTable.title || t.materialTable}
             </h3>
+            </div>
             {data.materialTable.subtitle && (
               <p className="text-gray-500 mb-4 text-sm md:text-base pl-5">{data.materialTable.subtitle}</p>
             )}
@@ -207,10 +238,13 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
         
         {/* ===== 特殊加工选项 ===== */}
         {data.specialOptions && (
-          <div className="mb-12">
-            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-2 border-l-4 border-[#2873F5] pl-4">
+          <div className="mb-12 scroll-mt-24" id="sec-options">
+            <div className="flex items-center gap-2.5 mb-4 sm:mb-5">
+              <span className="inline-block w-[22px] h-[3px] bg-[#F87314] flex-shrink-0" aria-hidden="true" />
+              <h3 className="text-lg sm:text-xl md:text-2xl font-extrabold tracking-tight text-[#111827]">
               {data.specialOptions.title || t.specialOptions}
             </h3>
+            </div>
             <p className="text-gray-500 text-sm pl-5 mb-6">
               {isZh
                 ? '以下為本類目最常用的特殊加工選項，前兩項為最推薦工藝。'
@@ -257,11 +291,14 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
         
         {/* ===== 技术参数 ===== */}
         {data.techSpecs && (
-          <div className="mb-12">
-            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 border-l-4 border-[#2873F5] pl-4">
+          <div className="mb-12 scroll-mt-24" id="sec-specs">
+            <div className="flex items-center gap-2.5 mb-4 sm:mb-5">
+              <span className="inline-block w-[22px] h-[3px] bg-[#F87314] flex-shrink-0" aria-hidden="true" />
+              <h3 className="text-lg sm:text-xl md:text-2xl font-extrabold tracking-tight text-[#111827]">
               {data.techSpecs.title || t.techSpecs}
             </h3>
-            <div className="bg-gray-50 rounded-xl p-5 md:p-6 space-y-3">
+            </div>
+            <div className="bg-white border border-[#E5E7EB] rounded-2xl p-5 md:p-6 space-y-3">
               {data.techSpecs.items.map((spec, idx) => (
                 <div key={idx} className="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-4">
                   <span className="font-semibold text-gray-900 sm:w-28 flex-shrink-0">{spec.label}</span>
@@ -274,13 +311,16 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
         
         {/* ===== 本地化服务节点 ===== */}
         {data.serviceNodes && (
-          <div className="mb-12">
-            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-6 border-l-4 border-[#2873F5] pl-4">
+          <div className="mb-12 scroll-mt-24" id="sec-nodes">
+            <div className="flex items-center gap-2.5 mb-4 sm:mb-5">
+              <span className="inline-block w-[22px] h-[3px] bg-[#F87314] flex-shrink-0" aria-hidden="true" />
+              <h3 className="text-lg sm:text-xl md:text-2xl font-extrabold tracking-tight text-[#111827]">
               {data.serviceNodes.title || t.serviceNodes}
             </h3>
+            </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {data.serviceNodes.items.map((node, idx) => (
-                <div key={idx} className="bg-gradient-to-br from-blue-50 to-white rounded-xl border border-blue-100 p-5">
+                <div key={idx} className="bg-white rounded-2xl border border-[#E5E7EB] border-t-[3px] border-t-[#F87314] p-5 transition-all duration-300 hover:shadow-[0_10px_30px_rgba(17,24,39,0.06)]">
                   <h4 className="font-semibold text-[#2873F5] mb-2">{node.title}</h4>
                   <p className="text-gray-600 text-sm leading-relaxed">{node.description}</p>
                 </div>
@@ -292,9 +332,12 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
         {/* ===== 选购指南 ===== */}
         {data.buyingGuide && (
           <div className="mb-12">
-            <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 border-l-4 border-[#2873F5] pl-4">
+            <div className="flex items-center gap-2.5 mb-4 sm:mb-5">
+              <span className="inline-block w-[22px] h-[3px] bg-[#F87314] flex-shrink-0" aria-hidden="true" />
+              <h3 className="text-lg sm:text-xl md:text-2xl font-extrabold tracking-tight text-[#111827]">
               {data.buyingGuide.title || t.buyingGuide}
             </h3>
+            </div>
             <div className="prose prose-sm sm:prose-base lg:prose-lg max-w-none text-gray-600 space-y-3 sm:space-y-4">
               {data.buyingGuide.paragraphs.map((p, idx) => (
                 <p key={idx} className="leading-relaxed text-sm sm:text-base break-words">{p}</p>
@@ -318,15 +361,19 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
         
         {/* ===== FAQ 区域 ===== */}
         {data.faq && data.faq.length > 0 && (
-          <div className="bg-gray-50 rounded-xl p-4 sm:p-6 md:p-8">
-            <h3 className="text-lg sm:text-xl md:text-2xl font-semibold text-gray-900 mb-4 sm:mb-6">
+          <div className="mb-2 scroll-mt-24" id="sec-faq">
+          <div className="bg-white rounded-2xl border border-[#E5E7EB] p-4 sm:p-6 md:p-8">
+            <div className="flex items-center gap-2.5 mb-4 sm:mb-6">
+              <span className="inline-block w-[22px] h-[3px] bg-[#F87314] flex-shrink-0" aria-hidden="true" />
+              <h3 className="text-lg sm:text-xl md:text-2xl font-extrabold tracking-tight text-[#111827]">
               {t.faqTitle}
-            </h3>
+              </h3>
+            </div>
             <div className="space-y-3 sm:space-y-4">
               {data.faq.map((item, index) => (
                 <details
                   key={index}
-                  className="group bg-white rounded-lg border border-gray-200 overflow-hidden"
+                  className="group bg-white rounded-xl border border-[#E5E7EB] overflow-hidden transition-colors open:border-[#2873F5]/40"
                 >
                   <summary className="flex items-start gap-3 p-3.5 sm:p-4 cursor-pointer hover:bg-gray-50 transition-colors list-none [&::-webkit-details-marker]:hidden">
                     <span className="min-w-0 flex-1 text-left font-medium text-gray-900 text-sm sm:text-base leading-snug break-words">
@@ -344,6 +391,7 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
                 </details>
               ))}
             </div>
+          </div>
           </div>
         )}
 
