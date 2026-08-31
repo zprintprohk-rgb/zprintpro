@@ -483,10 +483,10 @@ export default function CategoryPage({
 
         {/* 地區化內容區域 — CTA + 信任信號 */}
         <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 pb-16 pt-12">
-          <div className="bg-gradient-to-b from-white to-blue-50/50 rounded-3xl border border-blue-100 p-8 md:p-12 space-y-8">
+          <div className="bg-white rounded-3xl border border-[#E5E7EB] p-8 md:p-12 space-y-8 shadow-[0_10px_30px_rgba(17,24,39,0.04)]">
             {/* 主標題 */}
             <div className="text-center">
-              <h3 className="text-2xl md:text-3xl font-bold text-[#333333] mb-5">
+              <h3 className="text-2xl md:text-3xl font-extrabold tracking-tight text-[#111827] mb-5">
                 {locale === 'zh-hk' ? '為何選擇智印港？' : locale === 'en' ? 'Why Choose ZprintPro?' : 'なぜZprintProを選ぶ？'}
               </h3>
               <RegionalTrustBadges locale={locale} />
@@ -566,17 +566,27 @@ function BuyingGuideCta({ locale, categorySlug }: { locale: Locale; categorySlug
     <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 pb-8">
       <a
         href={href}
-        className="block bg-gradient-to-r from-[#2873F5] to-[#1E5FD1] rounded-xl p-6 md:p-8 text-white hover:shadow-lg transition-shadow"
+        className="group block relative isolate overflow-hidden rounded-2xl p-7 md:p-9 text-white transition-all duration-300 hover:-translate-y-[3px] hover:shadow-[0_14px_30px_rgba(15,31,61,0.22)]"
+        style={{
+          background: 'linear-gradient(165deg, #244780 0%, #1B3163 52%, #152649 100%)',
+          boxShadow: 'inset 0 1px 0 rgba(255,255,255,.12)',
+        }}
       >
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+        <span
+          aria-hidden="true"
+          className="absolute -top-[70px] -right-[60px] w-[240px] h-[240px] rounded-full pointer-events-none -z-10"
+          style={{ background: 'radial-gradient(circle, rgba(93,144,235,.22), transparent 68%)' }}
+        />
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-5">
           <div>
-            <span className="inline-block bg-white/20 text-white text-xs font-medium px-2 py-1 rounded mb-2">
+            <span className="inline-flex items-center gap-2.5 text-[13px] font-semibold tracking-[.12em] uppercase text-[#9DB8F5] mb-3">
+              <span className="inline-block w-[22px] h-[2px] bg-[#F87314]" aria-hidden="true" />
               {t.label}
             </span>
-            <h3 className="text-xl md:text-2xl font-bold">{t.title}</h3>
-            <p className="text-blue-100 mt-1 text-sm md:text-base">{t.desc}</p>
+            <h3 className="text-xl md:text-2xl font-extrabold tracking-tight">{t.title}</h3>
+            <p className="text-white/70 mt-1.5 text-sm md:text-base">{t.desc}</p>
           </div>
-          <span className="inline-flex items-center text-white font-semibold whitespace-nowrap">
+          <span className="inline-flex items-center text-white font-bold whitespace-nowrap rounded-xl bg-[#F87314] px-6 py-3 text-[15px] shadow-[0_8px_24px_rgba(248,115,20,0.32)] transition-transform duration-200 group-hover:translate-x-1">
             {t.cta}
           </span>
         </div>

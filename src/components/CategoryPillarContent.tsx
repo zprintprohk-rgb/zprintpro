@@ -57,21 +57,21 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
 
         {/* 2026-08-19 R3 5 件套: 40-60 字 Featured Snippet 块 (争 Position 0) */}
         {data.featuredSnippet && (
-          <p className="text-base md:text-lg text-[#1A56DB] font-medium bg-[#F0F7FF] border-l-4 border-[#2873F5] px-4 py-3 mb-6 rounded-r">
+          <p className="text-base md:text-lg text-[#1B3163] font-medium bg-white border border-[#E5E7EB] border-l-4 border-l-[#F87314] px-4 py-3 mb-6 rounded-r-xl">
             <strong>{data.featuredSnippet}</strong>
           </p>
         )}
 
         {/* H2 主标题 */}
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-6 sm:mb-8 leading-snug sm:leading-tight break-words text-balance max-w-full">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-extrabold tracking-tight text-[#111827] mb-6 sm:mb-8 leading-snug sm:leading-tight break-words text-balance max-w-full">
           {data.h2}
         </h2>
 
         {/* W1 K3 8/29 12:50 派活包 §1.3 拍板: 采购决策 4 要素卡 (P0 返工, 替换 V3.4 SEO 自检块 + 96295a4 4 边框块)
             设计: 容器样式沿用 V3.4 (蓝渐变 + 左蓝边) + 内部 2×2 网格 (grid-cols-1 sm:grid-cols-2 gap-2) + 内联 SVG 图标 (禁 emoji) + 标题行 + CTA 行
             数据驱动: stickers 专属值 (示范) + 全站 fallback (其余 12 品类) - 后续 W2-W3 补 decisionCard 字段, 本 turn 硬编码 */}
-        <div className="mb-8 bg-gradient-to-r from-blue-50 to-indigo-50 border-l-4 border-[#2873F5] rounded-r-lg p-5">
-          <p className="text-sm font-semibold text-[#2873F5] mb-3">
+        <div className="mb-8 bg-white border border-[#E5E7EB] rounded-2xl p-6 shadow-[0_10px_30px_rgba(17,24,39,0.04)]">
+          <p className="text-[13px] font-bold uppercase tracking-[.12em] text-[#2873F5] mb-4">
             {isZh ? '快速決策・採購 4 要素' : isJa ? 'クイック決断・購買4要素' : 'Quick Decision · 4 Buying Facts'}
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
@@ -183,7 +183,7 @@ export function CategoryPillarContent({ locale, categorySlug }: CategoryPillarCo
             <div className="overflow-x-auto rounded-xl border border-gray-200 -mx-1 sm:mx-0">
               <table className="w-full min-w-[520px] sm:min-w-0 text-xs sm:text-sm md:text-base">
                 <thead>
-                  <tr className="bg-gradient-to-r from-[#2873F5] to-[#1E5FD1] text-white">
+                  <tr className="text-white" style={{ background: 'linear-gradient(165deg, #244780 0%, #1B3163 52%, #152649 100%)' }}>
                     {data.materialTable.columns.map((col, idx) => (
                       <th key={idx} className="text-left px-3 sm:px-4 py-2.5 sm:py-3 font-semibold whitespace-normal md:whitespace-nowrap align-top">
                         {col}
