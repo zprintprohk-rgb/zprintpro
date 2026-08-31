@@ -144,6 +144,13 @@ const posts: Record<string, Record<string, { title: string; description: string;
       date: '2026-07-02', category: '包裝知識',
       content: '',
     },
+    // 2026-08-31 zprintpro-blog-deepfix v1.4 + §0.30 v2.2 拍板: zh-hk T1 速赢词 "證書印刷" (pos 11.4, CTR 12.5%) 写新 Pillar Page, 3 locale 同步, 8000+ chars, 9 段 + 4 FAQ + 5 內鏈 + 2 callout + 2 table + JSON-LD 4 schema (FAQPage + HowTo + Article + BreadcrumbList)
+    'certificate-printing-guide': {
+      title: '證書印刷完整攻略 · 材質工藝呎吋合規認證全拆解 | 智印港 ZprintPro',
+      description: '2026 香港證書印刷 8000+ 字攻略：7 大場景（學業/企業/機構/活動/培訓/婚禮/醫療）+ 4 種材質（200-300gsm 雙粉咭/仿羊皮紙/棉紙/特種紙）+ 4 種工藝（燙金/局部UV/擊凸/壓紋）+ 4 種呎吋（A4/A5/A3/自訂）+ 5 大合規認證（ISO 14298:2021/FSC/G7/海德堡 6+1/ISO 9001）+ 4 條 FAQ。智印港 ZprintPro 香港深圳雙廠，10-10,000 張小至大批量，3-5 個工作天交付，WhatsApp 198 8085 1334。',
+      date: '2026-08-31', category: '印刷',
+      content: '',
+    },
     'poster-printing-guide': { title: 'Custom Poster Printing Guide for US Events & Retail: Sizes, Paper, Finishes | Free Shipping', description: 'Custom poster printing guide for US event organizers and retail. Standard sizes (A3/A2/A1/A0/18x24"/24x36"), paper (gloss/matte/PP film/canvas), finishing (UV/lamination/edge tape), 25-1000 MOQ, Free shipping over $99 USA, 3-5 day turnaround from Asia factory.', date: '2026-07-02', category: 'Printing Guide', content: '' },
     'sticker-guide': { title: 'Complete Sticker Printing Guide: Materials, Finishes & Applications', description: 'Deep dive into sticker material choices, surface treatments, and application scenarios.', date: '2024-04-15', category: 'Sticker Guide', content: '' },
     'sticker-design': { title: '10 Golden Rules for Sticker Design', description: 'Master the core techniques of sticker design.', date: '2024-04-10', category: 'Sticker Guide', content: '' },
@@ -171,6 +178,13 @@ const posts: Record<string, Record<string, { title: string; description: string;
       title: 'Paper Bag Printing Guide: Materials, Sizes, Handles & 2026 Trends',
       description: 'Kraft bags, white card bags, gift bags, eco bags — a complete guide to paper bag printing for Hong Kong boutiques, cafés, and retail brands.',
       date: '2026-07-02', category: 'Packaging Guide',
+      content: '',
+    },
+    // 2026-08-31 zprintpro-blog-deepfix v1.4 + §0.30 v2.2 拍板: en T1 速赢词 "certificate printing" (zh-hk 證書印刷 pos 11.4 CTR 12.5%) 3 locale 同步, 8000+ chars, 9 段 + 4 FAQ + 5 內鏈 + 2 callout + 2 table + JSON-LD 4 schema
+    'certificate-printing-guide': {
+      title: 'Certificate Printing Guide 2026: Materials, Finishes, Sizes & Compliance | ZprintPro',
+      description: '2026 Certificate Printing 8000+ word guide: 7 scenarios (academic/corporate/institutional/event/training/wedding/medical) + 4 materials (200-300gsm C2S/parchment/cotton/specialty) + 4 finishes (foil/spot UV/embossing/texture) + 4 sizes (A4/A5/A3/custom) + 5 certifications (ISO 14298:2021/FSC/G7/Heidelberg 6+1/ISO 9001) + 6 FAQs. ZprintPro dual-factory HK+Shenzhen, 10-10,000 piece runs, 3-5 business day production, $0.45-0.85/pc base, Free Shipping $99+ USA, WhatsApp 198 8085 1334.',
+      date: '2026-08-31', category: 'Printing',
       content: '',
     },
     'poster-printing-guide': {
@@ -491,6 +505,13 @@ const posts: Record<string, Record<string, { title: string; description: string;
       content: '',
     },
     'paper-bag-printing-guide': { title: 'オリジナル紙袋印刷完全ガイド：素材・サイズ・持ち手と2026年トレンド | 小ロット対応', description: 'クラフト紙袋、白カード紙袋、ギフト紙袋、エコバッグまで、日本の boutique・カフェ・小売向けに紙袋印刷を徹底解説。30枚〜、短納期（3日〜7日出荷）、全国送料込み。', date: '2026-07-02', category: '包装知識', content: '' },
+    // 2026-08-31 zprintpro-blog-deepfix v1.4 + §0.30 v2.2 拍板: ja 証書印刷 Pillar Page, 3 locale 同期 zh-hk pos 11.4 CTR 12.5% 速赢, 8000+ chars, 9 段 + 4 FAQ + 5 內鏈 + 2 callout + 2 table + JSON-LD 4 schema
+    'certificate-printing-guide': {
+      title: '証書印刷完全ガイド 2026：素材・加工・サイズ・コンプライアンス認証を徹底解説 | ZprintPro',
+      description: '2026 年 証書印刷 8000+ 字完全ガイド：7 大シナリオ（学業/企業/機関/イベント/研修/婚礼/医療）+ 4 種素材（200-300gsm コート紙/パーチメント/コットン紙/特殊紙）+ 4 種加工（箔押し/スポット UV/エンボス/テクスチャ）+ 4 種サイズ（A4/A5/A3/カスタム）+ 5 大コンプライアンス認証（ISO 14298:2021/FSC/G7/ハイデルベルク 6+1/ISO 9001）+ 6 FAQ。ZprintPro 香港+深圳デュアル工場、10-10,000 枚小〜大ロット、3-5 営業日生産、$0.45-0.85/枚 ベース、$99 以上で全国無料配送、WhatsApp 198 8085 1334。',
+      date: '2026-08-31', category: '印刷',
+      content: '',
+    },
     'poster-printing-guide': { title: 'オリジナルポスター印刷ガイド：サイズ・用紙・加工・デザイン | 短納期対応', description: 'オリジナルポスター印刷完全ガイド。標準サイズ（A3・A2・A1・A0・B1・B2）・用紙（光沢紙・マット紙・合成紙・耐水PP・キャンバス）・加工（UVラミネート・PP加工・周囲テープ）・短納期（3日〜7日出荷）。イベント主催・展示会・小売店・不動産向け。', date: '2026-07-02', category: '印刷知識', content: '' },
 
     // 2026-07-04 純文字深度ブログ: レストラン開業チラシ (Tier A × P0 flyers) — 純文字・無図
@@ -680,7 +701,8 @@ const posts: Record<string, Record<string, { title: string; description: string;
 
 // 2026-07-05 修：补 packaging-box-custom-guide（之前 src/data/blog-data 已加 content，但 articleSlugs 缺位导致 generateStaticParams 不生成该 slug → Post not found）
 // 2026-07-06 手动补救: weekly-meta-refresh 11:00 session LLM API GOAWAY 崩了, 手动补 3 篇 Tier B 博客 (Tier B 行业 × P0 品类), 需同步加到 articleSlugs
-const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-specs', 'brand-materials-checklist', 'mtr-advertising-specs', 'sticker-guide', 'sticker-design', 'packaging-trends', 'cmyk-guide', 'paper-materials', 'eco-printing', 'flyer-printing-guide', 'food-packaging-printing-guide', 'paper-bag-printing-guide', 'poster-printing-guide', 'restaurant-opening-flyer-printing-guide', 'packaging-box-custom-guide', 'pet-food-sticker-printing-guide', 'apparel-shopping-bag-printing-guide', 'cross-border-ecommerce-shipping-box-guide', 'real-estate-brochure-box-printing-guide', 'pharmaceutical-label-printing-guide', 'jewellery-shopping-bag-printing-guide', 'cosmetics-packaging-box-printing-guide', 'tea-beverage-gift-box-printing-guide', 'wedding-favor-bag-printing-guide', 'retail-shop-poster-printing-guide', 'restaurant-menu-printing-guide', 'wedding-red-packet-printing-guide', 'product-label-printing-guide', 'graduation-yearbook-printing-guide', 'ip-character-sticker-printing-guide', 'trade-show-banner-printing-guide', 'wedding-invitation-envelope-printing-guide', 'doujin-circle-printing-guide',
+const articleSlugs = ['company-intro', 'hong-kong-printing-guide', 'design-file-specs', 'brand-materials-checklist', 'mtr-advertising-specs', 'sticker-guide', 'sticker-design', 'packaging-trends', 'cmyk-guide', 'paper-materials', 'eco-printing', 'flyer-printing-guide', 'food-packaging-printing-guide', 'paper-bag-printing-guide',
+  'certificate-printing-guide', 'poster-printing-guide', 'restaurant-opening-flyer-printing-guide', 'packaging-box-custom-guide', 'pet-food-sticker-printing-guide', 'apparel-shopping-bag-printing-guide', 'cross-border-ecommerce-shipping-box-guide', 'real-estate-brochure-box-printing-guide', 'pharmaceutical-label-printing-guide', 'jewellery-shopping-bag-printing-guide', 'cosmetics-packaging-box-printing-guide', 'tea-beverage-gift-box-printing-guide', 'wedding-favor-bag-printing-guide', 'retail-shop-poster-printing-guide', 'restaurant-menu-printing-guide', 'wedding-red-packet-printing-guide', 'product-label-printing-guide', 'graduation-yearbook-printing-guide', 'ip-character-sticker-printing-guide', 'trade-show-banner-printing-guide', 'wedding-invitation-envelope-printing-guide', 'doujin-circle-printing-guide',
   'rush-printing-hk-guide',
   'packaging-box-pricing-2026',
   '2027-monthly-calendar-printing-timetable', 'hotel-amenity-sticker-printing-guide',
