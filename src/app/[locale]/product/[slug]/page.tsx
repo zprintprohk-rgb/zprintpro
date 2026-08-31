@@ -555,8 +555,8 @@ export default function ProductPage({
 
           {/* 长描述 SEO 内容 */}
           {longDesc && (
-            <section className="mt-12 bg-white rounded-xl border border-gray-100 p-8">
-              <h2 className="text-2xl font-bold text-[#333333] mb-4">
+            <section className="mt-12 bg-white rounded-2xl border border-[#E5E7EB] p-6 md:p-8 shadow-[0_10px_30px_rgba(17,24,39,0.04)]">
+              <h2 className="text-xl md:text-2xl font-extrabold tracking-tight text-[#111827] mb-4">
                 {locale === 'zh-hk' ? '產品詳情' : locale === 'en' ? 'Product Details' : '製品詳細'}
               </h2>
               <div
