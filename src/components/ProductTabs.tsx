@@ -221,17 +221,17 @@ export function ProductTabs({ product, locale }: ProductTabsProps) {
   };
 
   return (
-    <div className="bg-white rounded-xl border border-gray-100">
+    <div className="bg-white rounded-2xl border border-[#E5E7EB] shadow-[0_10px_30px_rgba(17,24,39,0.04)]">
       {/* Tab导航 */}
-      <div className="flex border-b border-gray-100">
+      <div className="flex border-b border-[#E5E7EB] px-2 sm:px-4">
         {(['description', 'specs', 'shipping'] as const).map((tab) => (
           <button
             key={tab}
             onClick={() => setActiveTab(tab)}
-            className={`px-6 py-4 text-lg font-medium transition-colors ${
+            className={`px-4 sm:px-6 py-4 text-[15px] sm:text-base font-semibold transition-colors ${
               activeTab === tab
-                ? 'text-[#2873F5] border-b-2 border-[#2873F5]'
-                : 'text-gray-500 hover:text-gray-700'
+                ? 'text-[#1B3163] border-b-2 border-[#F87314]'
+                : 'text-gray-500 hover:text-[#111827]'
             }`}
           >
             {t[tab]}
@@ -240,24 +240,30 @@ export function ProductTabs({ product, locale }: ProductTabsProps) {
       </div>
 
       {/* Tab内容 */}
-      <div className="p-6">
+      <div className="p-6 md:p-8">
         {activeTab === 'description' && (
           <div className="prose max-w-none">
             <p className="text-gray-600 leading-relaxed whitespace-pre-line">{description}</p>
             <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div className="p-4">
-                <h4 className="font-medium text-lg mb-2">{t.features}</h4>
-                <ul className="text-base text-gray-600 space-y-1">
+              <div className="bg-[#F9FAFB] rounded-xl p-5">
+                <h4 className="font-extrabold tracking-tight text-[#111827] text-base mb-3">{t.features}</h4>
+                <ul className="text-[15px] text-gray-600 space-y-2">
                   {getFeatures().map((f, i) => (
-                    <li key={i}>• {f}</li>
+                    <li key={i} className="flex items-start gap-2">
+                      <span className="text-[#F87314] mt-0.5 flex-shrink-0" aria-hidden="true">•</span>
+                      <span>{f}</span>
+                    </li>
                   ))}
                 </ul>
               </div>
-              <div className="p-4">
-                <h4 className="font-medium text-lg mb-2">{t.useCases}</h4>
-                <ul className="text-base text-gray-600 space-y-1">
+              <div className="bg-[#F9FAFB] rounded-xl p-5">
+                <h4 className="font-extrabold tracking-tight text-[#111827] text-base mb-3">{t.useCases}</h4>
+                <ul className="text-[15px] text-gray-600 space-y-2">
                   {getUseCases().map((u, i) => (
-                    <li key={i}>• {u}</li>
+                    <li key={i} className="flex items-start gap-2">
+                      <span className="text-[#F87314] mt-0.5 flex-shrink-0" aria-hidden="true">•</span>
+                      <span>{u}</span>
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -287,7 +293,7 @@ export function ProductTabs({ product, locale }: ProductTabsProps) {
                 </span>
               </div>
             </div>
-            <div className="border border-gray-200 rounded-lg p-4 mt-4">
+            <div className="border border-[#E5E7EB] border-l-4 border-l-[#F87314] bg-[#F9FAFB] rounded-xl p-4 mt-4">
               <p className="text-base text-gray-700">
                 <span className="font-medium">{t.priceNote}：</span>
                 {locale === 'zh-hk'
@@ -302,8 +308,8 @@ export function ProductTabs({ product, locale }: ProductTabsProps) {
 
         {activeTab === 'shipping' && (
           <div className="space-y-4">
-            <div className="p-4">
-              <h4 className="font-medium text-lg mb-2">{t.shippingMethod}</h4>
+            <div className="bg-[#F9FAFB] rounded-xl p-5">
+              <h4 className="font-extrabold tracking-tight text-[#111827] text-base mb-2">{t.shippingMethod}</h4>
               <p className="text-base text-gray-600">
                 {locale === 'zh-hk'
                   ? '我們提供多種配送方式，包括順豐速運、本地快遞及門市自取。深圳廠房支援預約自取。'
@@ -312,8 +318,8 @@ export function ProductTabs({ product, locale }: ProductTabsProps) {
                   : 'SFエクスプレス、ローカルクーリエ、店舗受取など、複数の配送オプションを提供しています。深圳工場で事前予約制お受け取り可能。'}
               </p>
             </div>
-            <div className="p-4">
-              <h4 className="font-medium text-lg mb-2">{t.freeShipping}</h4>
+            <div className="bg-[#F9FAFB] rounded-xl p-5">
+              <h4 className="font-extrabold tracking-tight text-[#111827] text-base mb-2">{t.freeShipping}</h4>
               <p className="text-base text-gray-600">
                 {locale === 'zh-hk'
                   ? '訂單滿HK$500即可享受免費送貨服務（香港地區）。離島及偏遠地區可能需要額外費用。'

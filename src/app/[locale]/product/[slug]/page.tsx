@@ -623,8 +623,8 @@ export default function ProductPage({
             </div>
           )}
           <ProductWhyChooseUs locale={locale} />
-            <div className="p-6">
-              <p className="text-gray-600 text-sm leading-relaxed">
+            <div className="bg-white rounded-2xl border border-[#E5E7EB] p-6 md:p-8">
+              <p className="text-gray-600 text-sm md:text-base leading-relaxed">
                 <RegionalContent locale={locale} type="expertIntro" />
               </p>
             </div>
