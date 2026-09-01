@@ -145,14 +145,14 @@ export default function CategoryPage({
       'ja': 'クラフト紙 パッケージ印刷 カスタム — ギフト / 化粧 / 食品 / メール便 / 組み立て',
     },
     'paper-bags': {
-      'zh-hk': '紙袋 牛皮紙袋訂製 100本起印 | 智印港',
-      'en': 'Paper Bag Custom Kraft Paper Bag Printing | 100 MOQ | ZprintPro',
-      'ja': '紙袋 クラフト紙袋オーダー | 100個から | ZprintPro',
+      'zh-hk': '香港牛皮紙袋訂製 — 牛皮紙袋 / 白卡紙袋 / 精品紙袋 / 環保紙袋',
+      'en': 'Custom Paper Bags Free Shipping · 100 MOQ FSC Kraft Eco-Friendly',
+      'ja': '紙袋印刷 カスタム — クラフト / ホワイトカード / エコ / ギフト',
     },
 'flyers': {
       // 2026-07-09 SEO 复盘 v3: 即日 + 數碼快印前置 (吸收原本独立 nav 「即日服務」权重)
       // 2026-07-09 v5 美国市场: 加 Free Shipping + FedEx Ground + Same Day sharp hook
-      'zh-hk': '宣傳單張 A5 宣傳單張印刷 100本起印 | 智印港',
+      'zh-hk': '香港 A5 宣傳單張印刷 — A4/A5 數碼快印 / 摺頁 / 開業傳單 / 24 小時急件',
       en: 'China Catalog Printing Free Shipping over $99 · 100 MOQ A4/A5 Digital + FedEx Ground · Catalog Printing China',
       ja: '香港即日チラシ印刷 — A4/A5 デジタル+オフセット / 折込 / 開業チラシ / 24時間特急',
     },
@@ -168,14 +168,14 @@ export default function CategoryPage({
       'ja': 'ポチ袋印刷 カスタム 11月前就位 — 箔押し / 旧正月 / キャラクター / 企業ロゴ',
     },
     'stickers': {
-      'zh-hk': '貼紙 小批量貼紙印刷 100本起印 | 智印港',
-      'en': 'Sticker Small Batch Sticker Printing | 100 MOQ | ZprintPro',
-      'ja': 'ステッカー 小ロットステッカー印刷 | 100個から | ZprintPro',
+      'zh-hk': '香港小批量貼紙印刷定製 — 防水貼紙 / 透明貼紙 / 異形貼紙 / 標籤貼紙',
+      'en': 'Small Batch Sticker Printing Free Shipping · 50 MOQ Die-Cut Vinyl Waterproof · Made for USA Small Business',
+      'ja': 'ダイカットステッカー 防水印刷 — 防水 / 透明 / ダイカット / 商品ラベル',
     },
     'posters': {
-      'zh-hk': '海報 A2 海報印刷 100本起印 | 智印港',
-      'en': 'Poster A2 Poster Printing | 100 MOQ | ZprintPro',
-      'ja': 'ポスター A2 ポスター印刷 | 100個から | ZprintPro',
+      'zh-hk': '香港 A2 海報印刷 — A1/A2 海報 / 戶外海報 / 展覽海報 / 大圖輸出',
+      'en': 'Custom Posters Free Shipping · A1/A2 Outdoor Waterproof 1 MOQ · USA Trade Show',
+      'ja': 'ポスター印刷 カスタム — A1/A2 / 屋外 / 展示 / 大判出力',
     },
     'banners': {
       'zh-hk': '香港摺頁印刷 — 易拉寶 / 戶外橫幅 / 摺頁印刷 / 展覽橫幅 / 車身廣告',
@@ -204,9 +204,9 @@ export default function CategoryPage({
       'ja': 'カレンダー印刷 2027 9月最後黃金窗 — デスク / 壁掛け / 2027年 / 箔押し上製本',
     },
     'greeting-cards': {
-      'zh-hk': '賀卡 燙金賀卡印刷 100本起印 | 智印港',
-      'en': 'Greeting Card Foil Greeting Card Printing | 100 MOQ | ZprintPro',
-      'ja': 'グリーティングカード 箔押しグリーティングカード印刷 | 100個から | ZprintPro',
+      'zh-hk': '香港燙金賀卡印刷定製 — 聖誕卡 / 新年卡 / 婚禮感謝卡 / 燙金UV賀卡',
+      'en': 'Greeting Cards Free Shipping · 100 MOQ Foil UV Christmas Wedding · Same Day 24h Rush USA',
+      'ja': 'グリーティングカード・年賀状印刷 — 箔押し / UV / クリスマス / 婚禮',
     },
     // 2026-07-09 PM+UX+SEO 复盘: japan-doujin 是 14 类目里唯一缺 customH1 的,
     // 走 fallback `categoryName` = 「同人周邊印刷」, 不够 sharp hook.
@@ -217,14 +217,14 @@ export default function CategoryPage({
       ja: '同人誌印刷 10部〜 USA コミッション · A5/B5 / アクリル / 缶バッジ / ポストカード コミケ 24時間特急',
     },
     'wedding-invitations': {
-      'zh-hk': '喜帖 燙金喜帖印刷 100本起印 | 智印港',
-      'en': 'Wedding Invitation Foil Wedding Invitation Printing | 100 MOQ | ZprintPro',
-      'ja': '結婚式招待状 箔押し結婚式招待状印刷 | 100個から | ZprintPro',
+      'zh-hk': '香港燙金喜帖印刷定製 — 中式龍鳳 / 西式燙金 / Save the Date / 教堂婚禮',
+      'en': 'Custom Foil Wedding Invitations Free Shipping · 50 MOQ Foil Embossed Save the Date · USA Wedding',
+      'ja': '結婚式招待状 箔押し印刷 カスタム — 中式 / 西式 / 教会 / 集团婚禮 10部〜',
     },
     'place-cards': {
-      'zh-hk': '枱卡 婚宴枱卡印刷 100本起印 | 智印港',
-      'en': 'Place Card Wedding Place Card Printing | 100 MOQ | ZprintPro',
-      'ja': '席札 結婚式席札印刷 | 100個から | ZprintPro',
+      'zh-hk': '香港婚宴枱卡印刷定製 — 枱卡 / 酒水牌 / 座位卡 / 餐廳枱卡 / 燙金',
+      'en': 'Custom Place Cards Free Shipping · 100 MOQ Foil Wedding Drink Tokens Seat Cards · USA Wedding',
+      'ja': '席札印刷 カスタム — 席札 / ドリンクトークン / 結婚式 / 箔押し 100部〜',
     },
   };
   const pageH1 = customH1Map[slug]?.[locale] || categoryName;
@@ -483,10 +483,10 @@ export default function CategoryPage({
 
         {/* 地區化內容區域 — CTA + 信任信號 */}
         <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 pb-16 pt-12">
-          <div className="bg-white rounded-3xl border border-[#E5E7EB] p-8 md:p-12 space-y-8 shadow-[0_10px_30px_rgba(17,24,39,0.04)]">
+          <div className="bg-gradient-to-b from-white to-blue-50/50 rounded-3xl border border-blue-100 p-8 md:p-12 space-y-8">
             {/* 主標題 */}
             <div className="text-center">
-              <h3 className="text-2xl md:text-3xl font-extrabold tracking-tight text-[#111827] mb-5">
+              <h3 className="text-2xl md:text-3xl font-bold text-[#333333] mb-5">
                 {locale === 'zh-hk' ? '為何選擇智印港？' : locale === 'en' ? 'Why Choose ZprintPro?' : 'なぜZprintProを選ぶ？'}
               </h3>
               <RegionalTrustBadges locale={locale} />
@@ -566,27 +566,17 @@ function BuyingGuideCta({ locale, categorySlug }: { locale: Locale; categorySlug
     <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 pb-8">
       <a
         href={href}
-        className="group block relative isolate overflow-hidden rounded-2xl p-7 md:p-9 text-white transition-all duration-300 hover:-translate-y-[3px] hover:shadow-[0_14px_30px_rgba(15,31,61,0.22)]"
-        style={{
-          background: 'linear-gradient(165deg, #244780 0%, #1B3163 52%, #152649 100%)',
-          boxShadow: 'inset 0 1px 0 rgba(255,255,255,.12)',
-        }}
+        className="block bg-gradient-to-r from-[#2873F5] to-[#1E5FD1] rounded-xl p-6 md:p-8 text-white hover:shadow-lg transition-shadow"
       >
-        <span
-          aria-hidden="true"
-          className="absolute -top-[70px] -right-[60px] w-[240px] h-[240px] rounded-full pointer-events-none -z-10"
-          style={{ background: 'radial-gradient(circle, rgba(93,144,235,.22), transparent 68%)' }}
-        />
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-5">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div>
-            <span className="inline-flex items-center gap-2.5 text-[13px] font-semibold tracking-[.12em] uppercase text-[#9DB8F5] mb-3">
-              <span className="inline-block w-[22px] h-[2px] bg-[#F87314]" aria-hidden="true" />
+            <span className="inline-block bg-white/20 text-white text-xs font-medium px-2 py-1 rounded mb-2">
               {t.label}
             </span>
-            <h3 className="text-xl md:text-2xl font-extrabold tracking-tight">{t.title}</h3>
-            <p className="text-white/70 mt-1.5 text-sm md:text-base">{t.desc}</p>
+            <h3 className="text-xl md:text-2xl font-bold">{t.title}</h3>
+            <p className="text-blue-100 mt-1 text-sm md:text-base">{t.desc}</p>
           </div>
-          <span className="inline-flex items-center text-white font-bold whitespace-nowrap rounded-xl bg-[#F87314] px-6 py-3 text-[15px] shadow-[0_8px_24px_rgba(248,115,20,0.32)] transition-transform duration-200 group-hover:translate-x-1">
+          <span className="inline-flex items-center text-white font-semibold whitespace-nowrap">
             {t.cta}
           </span>
         </div>

@@ -21,7 +21,7 @@ export function getWebLogoUrl(locale: Locale): string {
 
 export function getWebLogoAlt(locale: Locale): string {
   // 2026-08-10 §0.15 升级: ja locale ジープリント ZprintPro (双品牌, ja 公式 per §13.16.1)
-  if (locale === 'zh-hk') return '智印港';
+  if (locale === 'zh-hk') return '智印港 ZprintPro';
   if (locale === 'ja') return 'ジープリント ZprintPro';
   return 'ZprintPro';
 }
@@ -40,7 +40,7 @@ export function getBrandName(locale: Locale): string {
 // 網站配置
 export const siteConfig = {
   // 2026-06-17 P0: 品牌切割 — 主品牌剥离 "ZprintPro" 字串
-  // 原问题: name = "智印港", alternateName 直接含 "ZprintPro" / "ZprintPro Global"
+  // 原问题: name = "智印港 ZprintPro", alternateName 直接含 "ZprintPro" / "ZprintPro Global"
   //   → Google Knowledge Graph 把 zprintpro.com 和 z-printpro.com 共享同一品牌实体
   //   → 智印港和智印港互相印证"是同一个东西", 整体被算法降权, 展示量长期 10-20
   // 修法: name 改成"智印港" (主品牌, 让 Google 识别为独立实体)
@@ -260,7 +260,7 @@ const homeMetadata: Record<Locale, { title: string; description: string; keyword
   'zh-hk': {
     // 2026-07-22 v6: 智印港 是 zh-hk 合法品牌词 (AGENTS.md §1 v2 / §13.10 NAP 脱钩)
     // §13.13 三 Locale 鐵律: en/ja 標題 100% 過濾 Shenzhen/China/中國/智印港
-    title: '智印港 | 香港印刷公司 | 急件印刷·即日交貨 | 貼紙/單張/包裝盒印刷',
+    title: '智印港 ZprintPro | 香港印刷公司 | 急件印刷·即日交貨 | 貼紙/單張/包裝盒印刷',
     description: '香港智印港印刷平台 — 專注急件印刷及即日交貨服務。提供高質素貼紙、傳單印刷、包裝盒印刷、紙袋、海報等。線上30秒獲取初步報價，複雜需求由專人人工核價。全港免費送貨，最快即日交付，72小時快速交貨。',
     keywords: '香港印刷,急件印刷,即日印刷,貼紙印刷,傳單印刷印刷,包裝盒印刷,數碼印刷,30秒報價,人工核價,免費送貨,紙袋印刷,海報印刷,香港印刷公司,印刷急單,小批量印刷,ZprintPro,智印港',
   },
@@ -351,9 +351,9 @@ const categorySeoData: Record<string, {
     // DHL Express 保留 (跨境品牌信任) + FedEx Ground (美国本土配送感)
     titles: {
       // 2026-07-17 GSC CTR 修复: 起价前置 + 免費設計/即日 hook, 机会词 貼紙印刷/貼紙訂製
-      'zh-hk': '貼紙 小批量貼紙印刷 100個起印 HK$4起 | 智印港',
-      'en': 'Sticker Small Batch Sticker Printing | 100 MOQ | ZprintPro',
-      'ja': 'ステッカー 小ロットステッカー印刷 | 100個から | ZprintPro',
+      'zh-hk': '小批量貼紙印刷 防水抗UV | 1張起印・異形裁切・燙金 | 智印港',
+      'en': 'Small Batch Sticker Printing from $0.05 | 1 MOQ + Free Proof | ZprintPro',
+      'ja': 'PVC シール 防水印刷 1枚〜・短納期2-4日・DHL全国 | ZprintPro',
     },
     keywords: {
       'zh-hk': '貼紙印刷,透明貼,防水貼紙,燙金貼紙,異形貼紙,小批量貼紙,LOGO貼紙,標籤印刷,小量貼紙,UV貼紙,啞膠貼紙,亮膜貼紙,封口貼紙,包裝貼紙,餐廳貼紙',
@@ -373,9 +373,9 @@ const categorySeoData: Record<string, {
     // 分散在 nav 独立栏目的反模式已移除, 全部权重归 flyers
     titles: {
       // 2026-07-17 GSC CTR 修复: 机会词 傳單印刷印刷/傳單印刷 前置
-      'zh-hk': '宣傳單張 A5 宣傳單張印刷 100個起印 HK$4起 | 智印港',
-      'en': 'A5 Flyer A5 Flyer Printing | 100 MOQ | ZprintPro',
-      'ja': 'A5 チラシ A5 チラシ印刷 | 100個から | ZprintPro',
+      'zh-hk': 'A5 宣傳單張印刷 100張起・A4/A5/A3 雙面 | HK$0.18 起 | 智印港',
+      'en': 'China Catalog Printing from $0.06 | 100 MOQ + Free Shipping | ZprintPro',
+      'ja': 'A5 チラシ印刷 100枚〜・両面カラー・即日対応 | ZprintPro',
     },
     keywords: {
       // 加長尾: 數碼印刷 / 數碼快印 / 急印傳單 / 即日傳單 / 數位印刷 / 加急傳單 / 短版印刷
@@ -413,9 +413,9 @@ const categorySeoData: Record<string, {
 'posters': {
     titles: {
       // 2026-07-17 GSC CTR 修复: 机会词 海報印刷/印海報 前置
-      'zh-hk': '海報 A2 海報印刷 100個起印 HK$4起 | 智印港',
-      'en': 'Poster A2 Poster Printing | 100 MOQ | ZprintPro',
-      'ja': 'ポスター A2 ポスター印刷 | 100個から | ZprintPro',
+      'zh-hk': 'A2 海報印刷 A0/A1/A2 + MTR 12 sheet 燈箱 | 防水 + 1張起印 + 4小時打稿 | 智印港',
+      'en': '2 Meter Poster Printing A0-A2 UV Rush | ZprintPro',
+      'ja': '2メートル ポスター印刷 A0/A1/A2 防水UV 短納期 | ZprintPro',
     },
     keywords: {
       'zh-hk': '海報印刷,印海報,A2 prints,a1 海報,海報訂製,防水海報,相紙海報,展覽海報,活動海報,店舖海報,餐廳海報,電影海報,演唱會海報,裝飾海報,大圖輸出',
@@ -433,7 +433,7 @@ const categorySeoData: Record<string, {
       // 2026-08-26 §6 轨 1 + 智印港 40% CTR 公式 + 撞墙 = M3 自主立即做
       // 9 月中前纸袋衝首页 (GSC 8/24 紙袋印刷 pos 12.23/14.77 距首页 2-5 位)
       // 2026-08-26 K3 批 1: 注入「急單 18:00 截單」+ パール/珠光
-      'zh-hk': '紙袋 牛皮紙袋訂製 100個起印 HK$4起 | 智印港',
+      'zh-hk': '牛皮紙袋訂製 100個起 + 牛皮/白卡 + 急單 18:00 截單 | HK$8起・免費設計 | 智印港',
       en: 'Paper Bag Printing 100 MOQ + Kraft/White Card/Pearl + Rush 6PM Cut-off | from $1.84 + Free Design + Made for USA | ZprintPro',
       ja: '紙袋印刷 100個〜 + クラフト/白カード/パール + 短納期 18:00 締切 | ¥240〜・無料デザイン・日本全国 | ZprintPro',
     },
@@ -505,7 +505,7 @@ const categorySeoData: Record<string, {
   'menus': {
     titles: {
       // 2026-07-17 GSC CTR 修复: 机会词 餐牌印刷 前置
-      'zh-hk': '餐牌印刷 100本起印・防水耐用・24小時快印 | 智印港',
+      'zh-hk': '餐牌印刷 100本起印 防水耐用 24小時快印 多尺寸 | 智印港',
       en: 'Menu Printing from $0.14 | Free Shipping $99+ | ZprintPro',
       ja: 'メニュー印刷｜¥20〜・小ロット・最短即日・無料デザイン｜ZprintPro',
     },
@@ -515,7 +515,7 @@ const categorySeoData: Record<string, {
       ja: 'メニュー印刷,レストランメニュー,メニューブック,PVCメニュー,ラミネートメニュー,レザーメニュー,居酒屋メニュー,カフェメニュー,デザートメニュー,ホテルメニュー',
     },
     descriptions: {
-      'zh-hk': '餐牌印刷 100 本起印, HK$4 起/份, 標準 3-5 天交貨。防水 PVC / 紙質 / 精裝 / 一次性 4 種材質, 餐廳 / 茶餐廳 / 酒吧 / 咖啡店適用。免費設計打稿 4 小時, 港九新界滿 HK$500 免費順豐速遞, ISO 9001 + FSC 認證。',
+      'zh-hk': '餐牌印刷 100 本起印, HK$4 起/份, 標準 3-5 天交貨。防水 PVC / 紙質 / 精裝 / 一次性 4 種材質, 餐廳 / 茶餐廳 / 酒吧 / 咖啡店適用。免費設計打稿 4 小時, 港九新界順豐速遞, ISO 9001 + FSC 認證。',
       en: 'Menu printing from $0.14, 100 MOQ. Waterproof PVC, paper, hardcover & disposable menus for restaurants, cafes and bars. Free design proof, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote.',
       ja: 'メニュー印刷 100 部から、¥20〜。防水 PVC・紙・ハードカバー・使い捨て、レストラン・カフェ・バー向け。無料デザイン校正 2 時間、最短即日発送、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり。',
     },
@@ -523,7 +523,7 @@ const categorySeoData: Record<string, {
   'red-packets': {
     titles: {
       // 2026-07-17 GSC CTR 修复: 机会词 利是封印刷 / lai see 前置
-      'zh-hk': '利是封印刷 | HK$1.1起・燙金定制・免費設計 | 智印港',
+      'zh-hk': '利是封印刷 | HK$1.1起・燙金定制・免費設計 | 智印港 ZprintPro',
       en: 'Lai See Red Packet Printing from $0.46 | Free Shipping $99+ | ZprintPro',
       ja: 'ポチ袋印刷｜¥64〜・小ロット・箔押し・無料デザイン｜ZprintPro',
     },
@@ -593,7 +593,7 @@ const categorySeoData: Record<string, {
     // 2026-08-17 K3 §11 业务子类目豁免: 咭片/名片 归并到 greeting-cards
     // 全球市场 $20B+ (Grand View/Ken Research 2025), US 70B 张/年, 90% 家庭买
     titles: {
-      'zh-hk': '賀卡 燙金賀卡印刷 100個起印 HK$4起 | 智印港',
+      'zh-hk': '燙金賀卡印刷 · 100 張起印 · 3D 立體 + 燙金 UV · 順豐本地滿 HK$500 免費',
       en: 'Greeting Card Printing from $0.50 | 3D Pop-up Available | 100 MOQ + Free Proof | ZprintPro',
       ja: 'グリーティングカード印刷 · 100枚から · 立体 3D 対応 | ZprintPro',
     },
@@ -612,7 +612,7 @@ const categorySeoData: Record<string, {
     // 2026-08-17 K3 §11 业务子类目豁免: 喜帖 归并到 wedding-invitations
     // 全球婚礼印刷市场 $13B+ (Bonafide 2025), 喜帖 $4.29B CAGR 6.3%
     titles: {
-      'zh-hk': '喜帖 燙金喜帖印刷 100個起印 HK$4起 | 智印港',
+      'zh-hk': '燙金喜帖印刷 · 整套婚慶配套 · 燙金 UV 工艺 · 100 套起印',
       en: 'Foil Wedding Invitation Printing from $1.20 | Foil/UV Finish | 50 Sets MOQ | ZprintPro',
       ja: '結婚式招待状 箔押し印刷 · 50セットから · 箔押し/UV 仕上げ | ZprintPro',
     },
@@ -631,7 +631,7 @@ const categorySeoData: Record<string, {
     // 2026-08-17 K3 §11 业务子类目豁免: 酒水牌 / 名牌卡 归并到 place-cards
     // 婚宴台卡 $123M (6.98% of Wedding Stationery $1.76B 2025), 跨 婚庆 + 餐饮 + 商务 场景
     titles: {
-      'zh-hk': '枱卡 婚宴枱卡印刷 100個起印 HK$4起 | 智印港',
+      'zh-hk': '婚宴枱卡印刷 · 50 張起印 · 燙金 / 壓紋',
       en: 'Wedding Place Card Printing from $0.30 | 50 MOQ + Foil/Embossing | ZprintPro',
       ja: '結婚式 席札印刷 · 50枚から · 箔押し/エンボス | ZprintPro',
     },
@@ -763,7 +763,7 @@ export function generateCategoryMetadata(locale: Locale, categorySlug: string = 
   // 分类标题按市场区分
   // 2026-06-10 Phase B 修复 P0-2：en/ja 分支末尾使用纯英文品牌 'ZprintPro'（无中文），
   // 2026-07-22 v6: zh-hk 用 displayName '智印港' (用户可见品牌词), 不是 schema.name '智印港' (NAP 法律名)
-  // 避免 layout 模板的 '| ZprintPro' 再次叠加后形成 "...| 智印港 | ZprintPro"。
+  // 避免 layout 模板的 '| ZprintPro' 再次叠加后形成 "...| 智印港 ZprintPro | ZprintPro"。
   // 2026-06-10：layout template 改为 '%s'（见 layout.tsx），此处由子页统一控制品牌后缀。
   const brandSuffix = getBrandName(locale);
 
@@ -838,7 +838,7 @@ export function generateProductMetadata(
   // Title: 50-60字符，含核心關鍵詞
   // 2026-06-10 Phase B 修复 P0-2：en/ja 末尾使用纯英文 'ZprintPro'（无中文），
   // 2026-07-22 v6: zh-hk 用 displayName '智印港' (用户可见品牌词), 不是 schema.name '智印港' (NAP 法律名)
-  // 避免 layout 模板的 '| ZprintPro' 再次叠加后形成 "...| 智印港 | ZprintPro"。
+  // 避免 layout 模板的 '| ZprintPro' 再次叠加后形成 "...| 智印港 ZprintPro | ZprintPro"。
   // 2026-06-10：layout template 改为 '%s'（见 layout.tsx），此处由子页统一控制品牌后缀。
   const suffix = locale === 'zh-hk' ? '印刷' : locale === 'en' ? 'Printing' : '印刷';
   const titleBase = `${name}${suffix}`.replace(/印刷印刷/g, '印刷');
@@ -1328,7 +1328,7 @@ export function generateProductImageJsonLd(
   };
 
   const alt = locale === 'zh-hk'
-    ? `${productName} 香港印刷高清產品圖 | 智印港`
+    ? `${productName} 香港印刷高清產品圖 | 智印港 ZprintPro`
     : locale === 'ja'
     ? `${productName} 印刷 高画質商品画像 | ZprintPro`
     : `${productName} custom printing high-resolution product image | ZprintPro`;
@@ -1340,7 +1340,7 @@ export function generateProductImageJsonLd(
     : `${productName} - ZprintPro professional printing from our Shenzhen factory, ${urls.length} detailed high-res product images`;
 
   const creditText = locale === 'zh-hk'
-    ? '© 智印港 版權所有'
+    ? '© 智印港 ZprintPro 版權所有'
     : locale === 'ja'
     ? '© ZprintPro 無断転載禁止'
     : '© ZprintPro All Rights Reserved';
@@ -1600,7 +1600,7 @@ export function generateServiceJsonLd(input: {
 // 報價頁面元數據
 export function generateQuotePageMetadata(locale: Locale): Metadata {
   const titles = {
-    'zh-hk': '即時報價 | 智印港',
+    'zh-hk': '即時報價 | 智印港 ZprintPro',
     'en': 'Instant Quote | ZprintPro',
     'ja': '即時見積もり | ZprintPro',
   };

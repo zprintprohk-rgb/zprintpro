@@ -32,7 +32,7 @@ type Props = {
 // en/ja: 不带 Shenzhen/Hong Kong 硬塞前缀 (per §13.10)
 const metaMap: Record<string, { title: string; desc: string; keywords: string }> = {
   'zh-hk': {
-    title: '即日印刷 18:00 截單・順豐翌日 12:00 前送達・WhatsApp 即日回覆 | 智印港',
+    title: '即日印刷 18:00 截單・順豐翌日 12:00 前送達 | 智印港',
     desc: '即日印刷服務：下午 3 時前落單即日交貨，傳單/海報/貼紙全品類支援。免費 2 小時打稿，港九新界滿 HK$500 免費順豐，順豐速遞上門。30 秒 AI 報價，WhatsApp 即日回覆。',
     keywords: '即日急件,急件印刷,同日印刷,即日印刷,下午3時前落單,即日交貨,免費 2 小時打稿,港九新界,免費順豐,傳單,海報,貼紙,紙袋,畫冊,易拉寶,30 秒 AI 報價,WhatsApp 即日回覆,跨境電商,本地零售,品牌活動,演唱會,展覽籌備,深圳實體',
   },
@@ -42,7 +42,7 @@ const metaMap: Record<string, { title: string; desc: string; keywords: string }>
     keywords: 'same-day printing,rush printing,6pm cut-off,overnight print,next-day delivery,CMYK full color,flyers 100 moq,posters,stickers,paper bags,booklets,roll-up banner,urgent print,in-house factory',
   },
   ja: {
-    title: '特急印刷 激安・DHL全国・翌日届・24時間特急 | ZprintPro',
+    title: '特急印刷 激安・DHL全国・翌日届 100枚〜 | ZprintPro',
     desc: '即日印刷 18:00 締切、100 枚〜、翌日 12 時前配送。チラシ・ポスター・ステッカー・紙袋・冊子・ロールアップバナー、CMYK フルカラー防水。WhatsApp 30 秒見積もり、15 分以内にメール返信。',
     keywords: '即日印刷,当日特急,18:00締切,徹夜印刷,翌日12時,CMYK フルカラー,チラシ 100 枚,ポスター,ステッカー,紙袋,冊子,ロールアップバナー,緊急印刷,自社工場',
   },
