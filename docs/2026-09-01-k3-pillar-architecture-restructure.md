@@ -9,7 +9,7 @@
 > - .hermes/cron-prompts/zprintpro-monthly-content-authority-audit.md v8 (§0 战略基线 + §13 品类记分卡)
 > - .hermes/cron-prompts/v8-daily-addendum.md (选题闸门 5 问 4 选 1)
 > - .hermes/cron-prompts/v8-weekly-addendum.md (深度分增量 + 4 pillar)
-> - src/data/blog-data/ 79 unique blog 盘点 worker 立即起跑 (K3 派活包"时不我待")
+> - src/data/blog-posts.ts SSoT 85 blog entries 盘点 worker 立即起跑 (K3 派活包"时不我待")
 >
 > **3 源联网验证**: Jukebox Print + American Business Forms (貼紙 vs 標籤) + WTPBiz + Kelly Printing (校園教育) + samedayrushprinting (即日印刷) + Digital Applied 2026 (深度长文 Pillar)
 
@@ -75,14 +75,14 @@ K3 9/1 16:16 派活包要求主营品类架构从"5 品类"重构为"4 pillar + 
 | 3 | v8-daily-addendum 增量更新 | ✅ 已落 | 选题闸门 5 问 4 选 1 (包裝盒/貼紙與標籤/宣傳單張/校園教育印刷) |
 | 4 | v8-weekly-addendum 增量更新 (4 pillar) | ⏳ 待落 | 深度分增量 + 4 Pillar 排名轨迹 |
 | 5 | docs/2026-09-01-k3-pillar-architecture-restructure.md (本文档) | ⏳ 待落 | 9 角色综合 + 3 源验证 + 7 拍板详解 |
-| 6 | 79 篇 blog 盘点 worker 立即起跑 (K3 派活包"时不我待") | ⏳ 异步 5-7 天 | 4 档分布 (达标/可翻新/需合并/建议 301) |
+| 6 | **85 blog entries 盘点 worker 立即起跑** (per blog-posts.ts SSoT, K3 派活包"时不我待") | ⏳ 异步 5-7 天 | 4 档分布 (达标/可翻新/需合并/建议 301) + 14 项 3 locale 同步差修复清单 |
 
 ### 3.2 9 月执行路线图
 
 | 日期 | 任务 | 交付物 |
 |------|------|--------|
 | **9/1 16:30 (立即)** | 本 commit 落地 (AGENTS.md §11 + v8 cron + 决策文档) | 5 文件 commit |
-| **9/1 16:30 起** | 79 篇 blog 盘点 worker 起跑 (5-7 天) | 4 档分布报告 |
+| **9/1 16:30 起** | **85 blog entries 盘点 worker 起跑** (per blog-posts.ts SSoT, 5-7 天) | 4 档分布报告 + 14 项 3 locale 同步差修复清单 |
 | 9/3 | GSC 8 天数据校准 (5 cron gsc-feedback-loop) | T1 排名轨迹基线 + 校园词 GSC 90 天拉数 |
 | 9/8 | 包裝盒 Pillar 升级 (12:32 优化基础上 3,000+ 字) | Pillar #1 落地 (主战场 1-12 月询盘 50% 占比) |
 | **9/8-9/14 窗口** | **校園教育 Pillar 立项** (新晋主营 #4) | 新 pillar + 吸收證書 + 月曆 + 4 cluster 缺口选题 |
@@ -164,16 +164,23 @@ K3 9/1 16:16 派活包要求主营品类架构从"5 品类"重构为"4 pillar + 
 
 ## 7. 数据 (Data) — 真实数据 + 数据诚信
 
-### 7.1 79 Unique Blog 数据 (K3 §0.22 数据诚信真实数据, 纠正 K3 9/1 15:59 派活包"94 篇"估算)
+### 7.1 85 Blog Entries 数据 (K3 §0.22 数据诚信真实数据, per `src/data/blog-posts.ts` SSoT, K3 9/1 16:22 派活包核对)
 
-| Locale | Blog 条目数 | Unique Slug (去重) |
-|--------|-------------|---------------------|
-| zh-hk | 78 | ≈ 26-30 (3 locale 共享 slug) |
-| en | 79 | ≈ 26-30 |
-| ja | 79 | ≈ 26-30 |
-| **总计** | **236** (3 locale × unique) | **79 unique** |
+| 数据源 | 数量 | 说明 |
+|--------|------|------|
+| **blog-posts.ts SSoT slug 字段总数** | **85** | K3 9/1 16:22 派活包"85"口径来源 (SSoT) |
+| **blog-posts.ts unique slugs (去重)** | **84** | 1 个 slug (sticker-buying-guide) 重复 2 次 |
+| **3 locale json unique slug 并集** | 80 | `src/data/blog-data/{zh-hk,en,ja}.json` 实际内容 (含 1 个 system key company-intro 排除) |
+| **3 locale json 共同 unique slug 交集** | 77 | 3 locale 全部同步的 blog |
+| zh-hk unique slugs | 78 | 含 1 个 system (company-intro 排除) |
+| en unique slugs | 79 | |
+| ja unique slugs | 79 | |
 
-**注意**: K3 9/1 15:59 派活包 + 9/1 16:16 派活包 + AGENTS.md §11 v1 多次写"94 篇"是估算, 实际 unique = 79。**已纠正到所有 v8 cron prompt + AGENTS.md §11 v2 + 本决策文档**。
+**3 locale 内容同步差 14 项** (K3 9/1 16:22 派活包核对):
+- **9 项 blog-posts.ts 有但 3 locale blog-data 缺** (需补 3 locale blog-data/): packaging-buying-guide / banner-buying-guide / flyer-buying-guide / paper-bag-buying-guide / book-buying-guide / 4 其他 (待 9/3 worker 详细清单)
+- **5 项 3 locale 有但 blog-posts.ts 缺** (需补 blog-posts.ts SSoT): packaging-box-price-2026 / certificate-printing-guide / 2027-calendar-printing-complete-guide / rush-printing-delivery-guide / apparel-clothing-tag-printing-guide
+
+**注意**: K3 9/1 15:59 派活包"94 篇" + K3 9/1 16:16 派活包"79 unique" + M3 16:22 核对 85 SSoT 口径, 三个数字都不完全一致, **已用 SSoT 85 纠正到所有 v8 cron prompt + AGENTS.md §11 v2 + 本决策文档**。
 
 ### 7.2 GSC 8/30 Baseline (per 5 cron v6.4 真实数据)
 
@@ -215,8 +222,8 @@ K3 9/1 16:16 派活包要求主营品类架构从"5 品类"重构为"4 pillar + 
 |--------|----------------|--------------|--------------|
 | **包裝盒** (主战场) | 12:32 优化基础上扩展 3,000+ 字 | 同步 | 同步 |
 | **校園教育** (新晋) | 新建 pillar 立项 | 同步 | 同步 |
-| **貼紙與標籤** (合并簇) | 待 79 篇盘点 | 同步 | 同步 |
-| **宣傳單張** | 待 79 篇盘点 | 同步 | 同步 |
+| **貼紙與標籤** (合并簇) | 待 85 篇盘点 | 同步 | 同步 |
+| **宣傳單張** | 待 85 篇盘点 | 同步 | 同步 |
 
 ### 9.2 2 横向 + L3 次级 3 locale 同步
 
@@ -258,7 +265,7 @@ K3 9/1 16:16 派活包要求主营品类架构从"5 品类"重构为"4 pillar + 
 - **v8 monthly cron** §0 + §2.2 + §3 + §9 + §13 增量更新 (94→79 纠正 + 5→4 pillar + 品类记分卡并入)
 - **v8-daily-addendum** 选题闸门 4 pillar 取代 5 品类
 - **v8-weekly-addendum** 4 pillar 同步 (本周内落)
-- **79 篇 blog 盘点 worker** 立即起跑 (5-7 天)
+- **85 blog entries 盘点 worker** 立即起跑 (per blog-posts.ts SSoT, 5-7 天)
 - **校园 GSC 90 天拉数** 9/3 (5 cron gsc-feedback-loop 触发)
 - **K3 §0.23 校 7-8 月校园询盘归档** 待 K3 拍板 (前置条件)
 
@@ -289,4 +296,4 @@ K3 9/1 16:16 派活包要求主营品类架构从"5 品类"重构为"4 pillar + 
 ---
 
 **拍板等待**: K3 9/1 16:16 已预批"建议本周内 AGENTS.md §11 更新 + 校园 GSC 佐证拉数 + 记分卡并入月度 cron v8, 三件事一个 commit", M3 已 1 commit 1 push 攒批落地。
-**首单**: 9/1 16:30 (立即起跑, K3 派活包"时不我待") 79 篇 blog 盘点 worker + 9/8 包裝盒 Pillar 升级 + 9/8-9/14 校園教育 Pillar 立项。
+**首单**: 9/1 16:30 (立即起跑, K3 派活包"时不我待") **85 blog entries 盘点 worker** (per blog-posts.ts SSoT) + 9/8 包裝盒 Pillar 升级 + 9/8-9/14 校園教育 Pillar 立项。

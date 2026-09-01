@@ -13,7 +13,7 @@
 **自 2026-09-01 起, zprintpro 内容战略从"每词一页"矩阵转型为"每主题一簇"内容权威度**:
 - **主营 4 Pillar + 2 横向 + L3 次级** (per AGENTS.md §11 v2, K3 9/1 16:16 拍板): L1 主营 4 pillar (包裝盒/貼紙與標籤合并簇/宣傳單張/校園教育印刷新晋) + L2 横向 2 (即日印刷 + 小批量低起订) + L3 次级 2 簇 (紙袋降级 + 婚慶賀卡簇)
 - **每 Pillar 1 篇** (3,000-5,000 字, Digital Applied 2026 标准) + 10-20 Cluster (1,500-2,500 字/篇, GSC 实证词支撑)
-- **675 URLs** (16 类目 + 97 产品 + **79 unique blog** = 192 总条目) → 4 主题簇 (4×22) + 2 横向 + 2 次级 重组目标
+- **675 URLs** (16 类目 + 97 产品 + **85 blog entries** per blog-posts.ts SSoT = 84 unique slug, K3 §0.22 数据诚信真实数据) → 4 主题簇 (4×22) + 2 横向 + 2 次级 重组目标
 - **"每词一页"矩阵停止投资** (Digital Applied: "孤立关键词打法收益递减")
 
 ---
@@ -27,7 +27,7 @@
 | 报告长度 | 304 行 (commit 流水 1/3) | ~150 行 (战略归类摘要) |
 | AEO 审计 | ❌ 无 | ✅ FAQPage 覆盖率 / llms.txt / AI 引擎抽查 |
 | Pruning 决策 | ❌ 无 | ✅ 翻新/合并/301 三栏清单 |
-| 存量 **79 篇 unique blog** (zh-hk 78 + en 79 + ja 79 = 236 总数 × 3 locale, K3 §0.22 数据诚信真实数据) | ❌ 无 | ✅ 4 档分布盘点 (达标/可翻新/需合并/建议 301) |
+| 存量 **85 blog entries** (per blog-posts.ts SSoT, 84 unique slug 含 1 重复 sticker-buying-guide, 3 locale 内容同步差 14 项: 9 项 blog-posts.ts 有但 3 locale blog-data 缺 + 5 项 3 locale 有但 blog-posts.ts 缺, K3 §0.22 数据诚信真实数据) | ❌ 无 | ✅ 4 档分布盘点 (达标/可翻新/需合并/建议 301) |
 
 ---
 
@@ -45,12 +45,12 @@
 
 | 新指标 | 公式 | 9 月基线 | 10/1 KPI |
 |--------|------|----------|----------|
-| **深度资产盘点** | 见 §3 | 79 篇 unique blog 4 档分布 | 4-6 篇/月翻新配额 |
+| **深度资产盘点** | 见 §3 | 85 blog entries 4 档分布 (per blog-posts.ts SSoT) | 4-6 篇/月翻新配额 |
 | **T1 排名轨迹** | 月度快照: 进首页数 / P1-3 数 / CTR 破 0 数 | 9/3 GSC 校准窗口 | 5+ 词进首页 |
-| **每 cluster 内链完整性** | pillar↔cluster 双向链 + 锚文本含目标词 | 待 79 篇盘点 | ≥90% 达标 |
+| **每 cluster 内链完整性** | pillar↔cluster 双向链 + 锚文本含目标词 | 待 85 篇盘点 | ≥90% 达标 |
 | **AEO 引用资格基线** | FAQPage 覆盖率 + llms.txt 状态 + AI 引擎抽查 | 0 (新指标) | FAQPage ≥60% + llms.txt 上线 + 5 问抽查 |
 | **Pruning 决策清单** | 30 天 0 imp 且 0 clk 页面 → 翻新/合并/301 | 待盘点 | 10 页面处置/月 |
-| **深度分评分卡** | 见 §4 | 待 79 篇盘点 | 全站 ≥70 + **4 Pillar ≥80** (K3 9/1 16:16 主营架构 v2, 5 → 4 pillar) |
+| **深度分评分卡** | 见 §4 | 待 85 篇盘点 | 全站 ≥70 + **4 Pillar ≥80** (K3 9/1 16:16 主营架构 v2, 5 → 4 pillar) |
 | **品类记分卡** (K3 9/1 16:16 拍板并入) | 询盘数 / GSC 实证 / 客单价值 3 指标 (见 §13 增量) | 本周期: 紙袋触发降级 / 校园触发升主营 | 连续 2 月 ≥3 / 60 天 0 订单 / T1+T2 CTR >2% / 单笔 ≥HK$5,000 |
 
 ---
@@ -67,7 +67,7 @@
 | 紙袋 (paper-bags) | 待建 | 待盘点 | 待盘点 | 待盘点 | 同上 |
 | 標籤 (labels) | 待建 | 待盘点 | 待盘点 | 待盘点 | 同上 |
 
-**9 月首次盘点重点**: **79 篇 unique blog** 全量扫一遍 (zh-hk 78 + en 79 + ja 79 = 236 总数 × 3 locale), 输出"达标 / 可翻新 / 需合并 / 建议 301"四档分布。
+**9 月首次盘点重点**: **85 blog entries** 全量扫一遍 (per blog-posts.ts SSoT, 84 unique slug, 1 重复 sticker-buying-guide, 3 locale 内容同步差 14 项: 9 项 blog-posts.ts 有但 3 locale blog-data 缺 + 5 项 3 locale 有但 blog-posts.ts 缺, K3 §0.22 数据诚信真实数据), 输出"达标 / 可翻新 / 需合并 / 建议 301"四档分布。
 **翻新配额**: 每月 4-6 篇 thin → cluster 改造 (对齐 Animalz refresh 优先策略 + B7 选题库改排期: 22 篇选题中优先选能补 cluster 缺口的, 砍掉与现有内容蚕食的)。
 
 ---
@@ -94,7 +94,7 @@
 
 | 项 | 9 月基线 | 10/1 KPI |
 |----|----------|----------|
-| **FAQPage schema 覆盖率** | 0 (新指标) | ≥60% (79 篇 unique blog 中 47+ 篇) |
+| **FAQPage schema 覆盖率** | 0 (新指标) | ≥60% (85 blog entries 中 51+ 篇) |
 | **llms.txt 状态** | 未上线 | 9/20-26 W4 计划上线 (per 5 cron v6.4) |
 | **AI 引擎抽查** (Perplexity + ChatGPT 搜 5 问) | 0% 引用 | 5 问中 ≥2 问引用智印港 |
 | **5 问抽样** | 待定 | "香港 貼紙印刷 價錢" / "即日 印刷 香港" / "包裝盒 印刷 推薦" / "海報 印刷 價錢" / "利是封 印刷 邊間" |
@@ -108,7 +108,7 @@
 2. **合并入 pillar** (重复主题, 301 → 主 pillar)
 3. **301 重定向** (永久无价值, 301 → 类目首页)
 
-**9 月首单**: **79 篇 unique blog** 盘点后, 输出"建议 301 / 建议合并 / 建议翻新"三栏清单。
+**9 月首单**: **85 blog entries** 盘点后 (per blog-posts.ts SSoT), 输出"建议 301 / 建议合并 / 建议翻新"三栏清单。
 
 ---
 
@@ -148,21 +148,24 @@
 
 ---
 
-## §9 9 月首单 P0 任务 (79 篇 unique blog 盘点)
+## §9 9 月首单 P0 任务 (85 blog entries 盘点, per blog-posts.ts SSoT)
 
 ### §9.1 盘点范围
 
-- **79 篇 unique blog** = `src/data/blog-data/{zh-hk,en,ja}.json` 全部 blog 条目 (zh-hk 78 + en 79 + ja 79 = 236 总数 × 3 locale)
-- **3 locale 同步盘点** (zh-hk / en / ja 各 78-79 篇, 唯一性检查用 slug)
-- **9/1 16:16 立即起跑** (K3 派活包"时不我待", 不等 9/2)
+- **85 blog entries** (per `src/data/blog-posts.ts` SSoT, 84 unique slug, 1 重复 sticker-buying-guide)
+- **3 locale 实际内容** (per `src/data/blog-data/{zh-hk,en,ja}.json`): zh-hk 78 + en 79 + ja 79 = 80 unique slug 并集 (含 1 个 system key company-intro 已被排除)
+- **3 locale 内容同步差 14 项** (K3 9/1 16:22 派活包核对):
+  - **9 项 blog-posts.ts 有但 3 locale blog-data 缺** (需补 3 locale blog-data): packaging-buying-guide / banner-buying-guide / flyer-buying-guide / paper-bag-buying-guide / book-buying-guide / 4 其他 (待盘点)
+  - **5 项 3 locale 有但 blog-posts.ts 缺** (需补 blog-posts.ts): packaging-box-price-2026 / certificate-printing-guide / 2027-calendar-printing-complete-guide / rush-printing-delivery-guide / apparel-clothing-tag-printing-guide
+- **9/1 16:30 立即起跑** (K3 派活包"时不我待", 不等 9/2)
 
 ### §9.2 4 档分布输出
 
-| 档 | 标准 | 9 月预期分布 (基于 79 unique) |
-|----|------|------------------------------|
-| **达标 cluster** | ≥1,500 字 + FAQPage schema + 3+ 内链 + GSC 实证词 | 8-12 篇 (10-15%) |
-| **可翻新** | 1,000-1,500 字 + 部分 schema + 1-2 内链 | 25-35 篇 (32-44%) |
-| **需合并** | 重复主题 / 与 Pillar 蚕食 | 8-12 篇 (10-15%) |
+| 档 | 标准 | 9 月预期分布 (基于 85 entries) |
+|----|------|-------------------------------|
+| **达标 cluster** | ≥1,500 字 + FAQPage schema + 3+ 内链 + GSC 实证词 | 8-13 篇 (10-15%) |
+| **可翻新** | 1,000-1,500 字 + 部分 schema + 1-2 内链 | 27-37 篇 (32-44%) |
+| **需合并** | 重复主题 / 与 Pillar 蚕食 | 8-13 篇 (10-15%) |
 | **建议 301** | 30 天 0 imp + 0 clk + 与主营不相关 | 4-8 篇 (5-10%) |
 
 ### §9.3 翻新配额 (4-6 篇/月, K3 9/1 16:16 主营架构 v2)
@@ -177,11 +180,19 @@
 |---|------|------------|----------|----------|
 | 1 | **包裝盒 (packaging)** (主战场) | packaging-box-custom-guide | **本月升级 Pillar (3,000+ 字, 12:32 优化基础上扩展)** | 5 cluster 选题 |
 | 2 | **貼紙與標籤** (合并簇, 2 入口页) | sticker-material-pvc-vinyl-removable (貼紙) + label-printing-guide (標籤 B2B) | 待盘点 | 10 月双 cluster (合并为 1 簇但 2 入口) |
-| 3 | **宣傳單張 (flyers)** | flyer-printing-guide | 待盘点 | 11 月 Pillar |
+| 3 | **宣傳單張 (flyers)** | flyer-buying-guide (新建) | 待盘点 | 11 月 Pillar |
 | 4 | **校園教育印刷** (新晋) | campus-printing-guide (新建) | **9 月立项, 吸收證書 + 月曆 + 校刊/畢業冊/學生手冊/校園橫幅** | 5 cluster 选题 |
 
 **L2 横向 (2 项, 不占 pillar 名额)**: 即日印刷 (维持特殊架构) + 小批量低起订 (en 站 Q4 立项)
 **L3 次级 (2 簇, 按记分卡观察)**: 紙袋 (降级, R5 節慶 9/9-9/15 观察) + 婚慶賀卡簇 (T2 豁免)
+
+### §9.5 14 项 3 locale 内容同步差修复计划 (K3 9/1 16:22 拍板)
+
+| 类型 | 数量 | 修复 | 截止 |
+|------|------|------|------|
+| **blog-posts.ts 有但 3 locale 缺** | 9 项 | 补 3 locale blog-data/ | 9/8 包裝盒 Pillar 升级前 |
+| **3 locale 有但 blog-posts.ts 缺** | 5 项 | 补 blog-posts.ts SSoT | 9/8 前 |
+| **总计** | 14 项 | (待 9/3 worker 同步盘点详细清单) | **9/8 硬截止** |
 
 ---
 
@@ -215,7 +226,7 @@
 | 日期 | 任务 | 交付物 |
 |------|------|--------|
 | **9/1 15:59** | 本 cron v8 落地 (本 commit) | v8 prompt + §0 战略基线 |
-| 9/1 16:30 (立即) | 79 篇 blog 盘点 worker 起跑 (K3 9/1 16:16 派活包"时不我待") | 4 档分布报告 (5-7 天) |
+| 9/1 16:30 (立即) | **85 blog entries** 盘点 worker 起跑 (K3 9/1 16:22 派活包核对真实数据, 14 项 3 locale 同步差待 worker 输出详细清单) | 4 档分布报告 (5-7 天) + 14 项同步差修复清单 |
 | 9/3 | GSC 8 天数据校准 (per 5 cron v6.4) | T1 排名轨迹基线 |
 | 9/8 | 包裝盒 Pillar 升级 (12:32 基础上 3,000+ 字) | Pillar #1 落地 |
 | 9/13 | 首批 4-6 篇 thin → cluster 改造 | 4-6 篇 cluster 升级 |
@@ -236,7 +247,7 @@
 ---
 
 **拍板等待**: K3 9/1 15:59 已预批"建议今日内 M3 落 cron v8 prompt", M3 已立即执行。
-**首单**: 9/1 16:30 (立即) 79 篇 blog 盘点 (worker 异步, K3 9/1 16:16 派活包"时不我待") + 9/8 包裝盒 Pillar 升级 (主战场 1-12 月询盘 50% 占比)。
+**首单**: 9/1 16:30 (立即) **85 blog entries 盘点** (worker 异步, K3 9/1 16:22 派活包核对真实数据 85 SSoT + 14 项 3 locale 同步差) + 9/8 包裝盒 Pillar 升级 (主战场 1-12 月询盘 50% 占比)。
 
 ---
 
