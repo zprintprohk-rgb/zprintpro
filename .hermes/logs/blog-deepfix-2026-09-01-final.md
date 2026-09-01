@@ -267,16 +267,25 @@
 
 ## §12 报告落盘
 
-- **报告路径**: `.hermes/logs/blog-deepfix-2026-09-01-final.md` (本文件, 17 KB)
+- **报告路径**: `.hermes/logs/blog-deepfix-2026-09-01-final.md` (本文件, 19 KB)
 - **报告草稿**: `.hermes/logs/blog-deepfix-2026-09-01.md` (15 KB, 17:10 commit 完立即写)
+- **撞车报告**: `.hermes/logs/blog-deepfix-2026-09-01-crash-report.md` (3 KB, §0.25.2 5 字段 + 3 选项)
+- **IndexNow log**: `.hermes/logs/indexnow-2026-09-01.json` (HTTP 403 placeholder key, 留待 9/2)
 - **Python 脚本**: `docs/_blog_deepfix_2026-09-01_appendix.py` (35 KB, raw triple-quoted string + json.dump, per MEMORY.md §7 教训)
 - **5 URL verify 脚本**: `docs/_verify_blog_deepfix_2026-09-01.py` (5 KB, urllib + 5 URL + marker check)
 - **HTML 深度 verify 脚本**: `docs/_verify_html_2026-09-01.py` (2 KB, main article content + 14 marker 验证)
 - **Marker 精准 verify 脚本**: `docs/_verify_marker_2026-09-01.py` (2 KB, 7 marker 精准验证, 绕开 PS GBK)
-- **commit SHA**: f2b325e2ffef7d61326fe40a17aa5878eb743a20
-- **push SHA**: f2b325e2ffef7d61326fe40a17aa5878eb743a20 (git ls-remote 确认)
-- **push 时间**: 2026-09-01 17:18:05 (距上次 16:48 = 30 min 17 sec)
-- **报告最终版时间**: 2026-09-01 17:19:30 (push 后 1.5 min, CF build 仍在跑, 二次 verify 待 17:25)
+- **en/ja 二次 verify 脚本**: `docs/_verify_en_ja_2026-09-01.py` (2 KB, 11 marker 验证)
+
+## §13 commit 历史 (3 commit, 2 已推 + 1 待推)
+
+| SHA | 时间 | 标题 | 状态 |
+|-----|------|------|------|
+| f2b325e2 | 17:10:07 | feat(blog-deepfix): [W1 #1] restaurant-menu-printing-guide 末尾追加 zh-hk + en + ja 3 locale 同步 | ✅ **推 17:18:05 (距上次 16:48 = 30 min 17 sec 硬下限达)** |
+| d25ae72f | 17:29:20 | docs(blog-deepfix-2026-09-01): 报告 + 5 verify 脚本 + IndexNow log | ⏳ ahead 2, **17:48 推 (background task bg_35afb28c 异步等 + push + verify, per §0.25.5 撞车兜底)** |
+| 18a3e2c1 | 17:32:04 | docs(crash-report-2026-09-01): §0.25 撞车报告 | ⏳ ahead 3, **17:48 攒批推 3 commit** |
+
+**background task 状态**: bg_35afb28c 启动 17:30:25, wait 1074 sec = 17 min 54 sec, 预计完成 17:48:19 (push 3 commit) + verify (5 URL) = 17:50 完
 
 ---
 
