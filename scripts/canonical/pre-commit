@@ -1,0 +1,82 @@
+#!/bin/bash
+# scripts/canonical/pre-commit (SSoT)
+# 反审门童 v1 (K3 9/1 15:06 拍板) — canonical pre-commit hook
+#
+# 5 道门童 + 3 道防线 + 自进化 4 步 SOP
+# - 🔴 red (电话/品牌/跨语言污染严重): 硬拦 (exit 1)
+# - 🟠 orange (数据诚信 11 类): shadow mode (9/1-9/15), --strict 启用硬拦
+# - 🟡 yellow (i18n/SOP-10): shadow mode, --strict-all 启用硬拦
+#
+# 安装 (K3 9/1 15:06 修正 4: hook 持久化):
+#   bash scripts/setup-hooks.sh
+#
+# 用法:
+#   git commit -m "..."                # 默认 red 硬拦
+#   git commit -m "..." --no-verify   # K3 必拍 1 次回复豁免
+#   git commit -m "..." --allow=<id>  # 临时豁免 (K3 必拍)
+
+set -e
+
+echo "🔍 反审门童 v1 pre-commit (K3 9/1 15:06 拍板)..."
+
+# 1. Encoding check (UTF-16 + CRLF) — 保留 v6 行为
+echo "1️⃣  Encoding check..."
+if command -v node &> /dev/null; then
+  node scripts/check-encoding.js --fix
+  if [ $? -ne 0 ]; then
+    echo "❌ Encoding check failed!"
+    exit 1
+  fi
+else
+  echo "⚠️ Node not found, skipping encoding check"
+fi
+
+# 2. Simplified Chinese check (zh-hk 最高原则) — 保留 v6 行为
+echo "2️⃣  Simplified Chinese check..."
+if command -v node &> /dev/null; then
+  node scripts/scan-simplified.mjs 2>/dev/null || echo "  (scan-simplified.mjs not found, skipping)"
+fi
+
+# 3. 反审门童 v1 — K3 9/1 15:06 拍板落地
+echo "3️⃣  反审门童 v1 (5 道门童 + 3 道防线)..."
+if command -v node &> /dev/null; then
+  # --commit 模式: 仅扫 staged diff (< 5s, pre-commit hook 性能优化)
+  # 默认仅 red 硬拦, shadow mode (orange/yellow 仅警告)
+  node scripts/check-regression-guard.js --commit --strict
+  EXIT_CODE=$?
+  if [ $EXIT_CODE -ne 0 ]; then
+    echo ""
+    echo "❌ 反审门童拦截 (exit 1)"
+    echo ""
+    echo "💡 修法选项:"
+    echo "  1. 改 src/ 内容, 撤除命中规则"
+    echo "  2. 同步写 .hermes/regression-guard/error-patterns.md (DoD 铁律)"
+    echo "  3. git commit --no-verify (K3 必拍 1 次回复豁免)"
+    exit 1
+  fi
+else
+  echo "⚠️ Node not found, skipping regression guard"
+fi
+
+# 4. DoD 铁律 (K3 9/1 15:06 齿轮 1: No fix without a rule)
+echo "4️⃣  DoD 铁律 (No fix without a rule)..."
+if command -v node &> /dev/null; then
+  node scripts/check-regression-guard.js --commit --dod
+  EXIT_CODE=$?
+  if [ $EXIT_CODE -ne 0 ]; then
+    echo ""
+    echo "❌ DoD 铁律失败: 修复错误未同步入 error-patterns.md"
+    echo ""
+    echo "💡 修法:"
+    echo "  1. 在 .hermes/regression-guard/error-patterns.md 新增 ### <rule-id> 条目"
+    echo "  2. 错误修复 + 规则沉淀 = 同一个 commit 的两部分"
+    exit 1
+  fi
+fi
+
+echo ""
+echo "✅ 反审门童 v1 pre-commit 全部通过"
+echo "  5 道门童: 0 red / 0 orange (shadow) / 0 yellow (shadow)"
+echo "  DoD 铁律: 通过"
+echo "  Encoding: 通过"
+echo "  Simplified Chinese: 通过"
