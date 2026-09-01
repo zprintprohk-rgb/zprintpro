@@ -550,15 +550,107 @@ For any image recognition task, **prefer `autoglm-image-recognition`**. Use it a
 
 Do not use the built-in `image` tool or read an image and describe it yourself when `autoglm-image-recognition` is available. Always try `autoglm-image-recognition` first.
 <!-- /autoclaw:image-recognition-guidance -->
-## 11. 主营品类约束（2026-06-28，2026-08-17 K3 战略修正）
+## 11. 主营品类约束（2026-06-28，2026-08-17 K3 战略修正，2026-09-01 K3 架构重构 v2)
 
-- **主营品类 5**: 貼紙 / 宣傳單張 / 包裝盒 / 紙袋 / 標籤（任何页面/文案/SEO 都可写，是 ZprintPro 核心业务）
-- **业务子类目（2026-08-17 K3 战略修正新增）**: 贺卡 / 喜帖 / 台卡 / 酒水牌 / 感谢卡 / 名牌卡 / 邀请函 — 新建 `greeting-cards` + `wedding-invitations` + `place-cards` 三个类目后，业务子类目页面可写"咭片/名片"等业务子类目用法，内部链接到对应类目，主营误用禁词豁免
-- **纸卡 (paper card / cardstock)**: 保留为物理材质，是 FSC 咭片/纸卡行业术语，不是 §11 主营误用
-- ❌ **绝对禁词（2026-08-17 修订）**: 咭片（作为业务子类目用法）/ 名片 / business cards / 名刺（ja 行业术语提及 8/17 拍板保留 ja 客户案例）= 主营误用禁，业务子类目豁免
-- 所有 SEO 标题、描述、关键词、产品文案、AI 训练文本中不得出现 主营误用（主营品类 5 误用 + 业务子类目未链接豁免）
-- 咭片/名片 业务子类目用法 = 链接到 `greeting-cards` / `wedding-invitations` / `place-cards` 类目，主页可写
-- 详见 `docs/k3-greeting-cards-strategy-2026-08-17.md`（M3 战略思考 + 联网核实数据）
+### §11.1 主营架构 v2 (K3 9/1 16:16 拍板, 5 → 4 pillar + 2 横向 + L3 次级)
+
+**L1 主营支柱层 (Pillar 级深度长文投资, 4 品类)**:
+- **包裝盒** (主战场, 含食品包裝子簇) → Pillar 已排期 9/8 升级 (12:32 优化基础上 3,000+ 字)
+- **貼紙與標籤** (合并 1 个权威簇: 貼紙 pillar + 標籤 B2B cluster + 防水/乙烯/透明/自訂 specs, 2 入口页保留)
+- **宣傳單張** (含海報/傳單 specs)
+- **校園教育印刷** (新晋, 吸收證書印刷 Pillar + 月曆 + 校刊/畢業冊/學生手冊/校園橫幅)
+
+**L2 横向服务层 (与主营导航平级, 不占 pillar 名额, 2 项)**:
+- **即日印刷** (现特殊架构维持; GSC 8.7 词继续攻坚首页; 跨品类 SKU 急件溢价)
+- **小批量低起订** (en 站差异化定位词 small batch 已 5.5 异常正向, Q4 再立项)
+
+**L3 次级/季节层 (保留资产, 停 pillar 投资, 按记分卡观察, 2 簇)**:
+- **紙袋** (降级, 牛皮紙袋 spec 页保留, R5 節慶紙袋 9/9-9/15 观察窗)
+- **婚慶賀卡簇** (賀卡/喜帖/枱卡, T2 豁免, 燙金 6 SKU)
+
+**为什么"4"而不是硬凑"5"**: 主营数量本身不是圣旨。原 5 品类中標籤并入貼紙簇 (1 个簇 2 入口页) + 紙袋降级后是 3 个, +校园 = 4。省出的 2 篇 pillar 资源 (紙袋 pillar 不写 + 標籤 pillar 不写) 全部转投校园 pillar + 校园 clusters — 资源没有减少, 是重新瞄准。
+
+### §11.2 行业实证 + 经营实况 (K3 9/1 16:16 派活包 3 源验证)
+
+| 品类 | GSC 实证 (8/30 baseline) | 经营实况 (K3 口述) | 询盘含金量 | 判定 |
+|------|--------------------------|---------------------|------------|------|
+| 包裝盒 | 紙盒訂製 14 imp / 包裝盒訂製 11 imp | 1-12 月 50% 询盘, 客单 HK$125K-200K | 8-80x | L1 主营 #1 (主战场) |
+| 貼紙/標籤 | small batch sticker printing 20 imp + label 20 imp + 貼紙 16 imp | 有稳定小单 | 中 | L1 主营 #2 (合并为簇, 2 入口页保留) |
+| 宣傳單張 | 宣傳單張 27 imp | 常规走量 | 中 | L1 主营 #3 |
+| 校園教育 | 證書印刷 pos 11.4 CTR 12.5% (全站最高 CTR 之一) + 月曆訂製 | 7-8 月不时有询盘 (待 K3 §0.23 归档) | 高 (合同复购) | L1 主营 #4 (新晋) |
+| 紙袋 | 紙袋 3 imp / 牛皮紙袋 1 imp pos 4.0 | 0 订单, 2 个几十/100 個现货小询盘 | 低 | L3 次级 (降级, R5 观察) |
+| 即日印刷 | pos 8.7→11.3, T1 速赢攻坚词 | 跨品类 SKU | 中 (急件溢价) | L2 横向 (维持现状) |
+
+### §11.3 贴纸 vs 标签: 行业裁决 (K3 9/1 16:16 派活包)
+
+- **不合并页面** (churn 红线, 烧词)
+- **合并为 1 个权威簇** (pillar 战略层)
+- **双向内链** (貼紙页挂"產品標籤 B2B 方案"入口, 標籤页挂"防水貼紙营销入口")
+- 后续所有新内容按同簇互链
+
+**行业证据**:
+- Jukebox Print: "stickers go in people's hands, roll labels go on your products" (B2B+B2C 印刷厂)
+- American Business Forms: "labels = 功能信息/业务运营, stickers = 视觉促销/互动" (B2B 行业标准)
+- 护肤品牌案例: "瓶子贴卷标 + 盒内放贴纸" (most businesses need both)
+
+### §11.4 即日印刷: 行业对标 (K3 9/1 16:16 派活包)
+
+- **维持横向服务层特殊架构** (不占主营 4 pillar 名额)
+- **导航视觉权重与主营平级** (R5 节日 + 急件季节)
+- **不塞进主营产品类目** (自相蚕食, 行业反例)
+
+**行业证据**:
+- samedayrushprinting.com: "Same Day Printing available 24h on all our products & services" (全行业标准)
+
+### §11.5 校园教育: 升主营行业铁证 (K3 9/1 16:16 派活包)
+
+- **年册市场 US$2.19B, CAGR 4.2%** (WTPBiz 2025)
+- **B2B 合同型年复购市场** (predictability is rare in the print business, per WTPBiz)
+- **单校年均 US$2,000-15,000** (Kelly 印刷教育产品线)
+- **现成资产协同**: 證書印刷 Pillar (pos 11.4 / CTR 12.5%) + 月曆印刷 (9/15 硬截止, 本身是校园 B2B 场景)
+
+### §11.6 纸袋降级: 保护资产红线 (K3 9/1 16:16 派活包)
+
+- ✅ 允许: 导航从主营区移到"更多產品", 首页主推位撤下, pillar 资源停止
+- ❌ 禁止: 删页面 / 回滚 W3 batch 2 已部署 title (churn 红线) / 撤 GSC 长尾 keywords 字段
+- **R5 節慶紙袋窗口 9/9-9/15**: 9/15 后按 §11.7 品类记分卡终审
+
+### §11.7 品类记分卡 (K3 9/1 16:16 拍板, 写入月度 cron v8 §2.2)
+
+| 指标 | 升主营线 | 降级观察线 | 数据源 |
+|------|----------|------------|--------|
+| 询盘数 (按品类归档) | 连续 2 月 ≥3 | 连续 60 天 0 订单且询盘 ≤2 | 询盘记录 (§0.23 归档, 每次询盘标品类) |
+| GSC 实证 | T1/T2 词有展示且 CTR >2% | 核心词 <5 imp | GSC 月度 |
+| 客单价值 | 单笔 ≥HK$5,000 或合同型复购 | 全部现货小单 | 成交记录 |
+
+**本周期状态**:
+- 紙袋: 触发"降级观察线" (连续 60 天 0 订单 + GSC <5 imp) → L3 次级
+- 校园: 触发"升主营线" (GSC 证書 + 月曆实证 + 7-8 月不时询盘) → L1 主营 #4 (新晋, 询盘待 K3 §0.23 归档确认)
+
+### §11.8 SEO 迁移风险控制 (K3 9/1 16:16 红线清单)
+
+| 动作 | 允许 | 禁止 |
+|------|------|------|
+| 紙袋降级 | 导航从主营区移到"更多產品"; 首页主推位撤下; pillar 资源停止 | ❌ 删页面 ❌ 回滚 W3 batch 2 已部署 title (churn 红线) ❌ 撤 GSC 长尾 keywords 字段 |
+| 校园升级 | 新建 pillar 页 + 内链矩阵 (證書↔月曆↔校刊↔校园 pillar 双向链) | ❌ 未拉 GSC 佐证前先发 pillar (先验证后投资) |
+| 貼紙標籤 | 互相内链 ("貼紙"页挂"產品標籤 B2B 方案"入口, 反之亦然); 后续所有新内容按同簇互链 | ❌ 308 合并两页 ❌ title 里合并关键词 |
+| 即日印刷 | 导航视觉权重与主营平级 | ❌ 塞进主营产品类目 (自相蚕食) |
+
+### §11.9 原始约束 (2026-06-28, 2026-08-17 K3 战略修正保留, 主营架构 v2 不冲突)
+
+- **业务子类目 (2026-08-17 K3 战略修正新增)**: 贺卡 / 喜帖 / 台卡 / 酒水牌 / 感谢卡 / 名牌卡 / 邀请函 — 新建 `greeting-cards` + `wedding-invitations` + `place-cards` 三个类目后, 业务子类目页面可写"咭片/名片"等业务子类目用法, 内部链接到对应类目, 主营误用禁词豁免
+- **纸卡 (paper card / cardstock)**: 保留为物理材质, 是 FSC 咭片/纸卡行业术语, 不是 §11 主营误用
+- ❌ **绝对禁词 (2026-08-17 修订)**: 咭片 (作为业务子类目用法) / 名片 / business cards / 名刺 (ja 行业术语提及 8/17 拍板保留 ja 客户案例) = 主营误用禁, 业务子类目豁免
+- 所有 SEO 标题、描述、关键词、产品文案、AI 训练文本中不得出现 主营误用 (主营品类 5 误用 + 业务子类目未链接豁免)
+- 咭片/名片 业务子类目用法 = 链接到 `greeting-cards` / `wedding-invitations` + `place-cards` 类目, 主页可写
+- 详见 `docs/k3-greeting-cards-strategy-2026-08-17.md` (M3 战略思考 + 联网核实数据) + `docs/2026-09-01-k3-pillar-architecture-restructure.md` (主营架构 v2 决策文档)
+
+### §11.10 拍板来源与教训固化源头
+
+- **K3 9/1 16:16 派活包**: 主营品类架构重构 v2 (5 → 4 pillar + 2 横向 + L3 次级)
+- **3 源联网验证**: Jukebox Print + American Business Forms (贴纸 vs 标签) + WTPBiz + samedayrushprinting (即日志) + Kelly Printing (校园教育)
+- **GSC 实证 + 经营实况**: §11.2 表格 (8/30 baseline + K3 口述, §0.23 校 7-8 月校园询盘待归档)
+- **配套**: 9/1 15:59 派活包 (月度 cron v8 战略转型) + 9/1 15:06 派活包 (反审门童 v1.0) + 9/1 12:32 派活包 (包装盒 9 项优化 1-6 项)
 ## 12. Push 安全协议（2026-07-02）
 
 ### 写入规则
@@ -1966,6 +2058,139 @@ www.zprintpro.com/枚から            → zprintpro.com/            301
 **应用范围**: 任何新 SKU 上线; 任何存量 SKU 优化; 任何季节性 SKU 上线 (R5 9/15 三旺季共振).
 
 **跟 §13.4 v3 配套**: Blog 命中 100 词 → PDP 承接, PDP 必须有 targetKeywords 跟 Blog 对齐 (Blog `primary: 喜帖價格` ↔ PDP `primary: 喜帖印刷` 同语义, 三角锚定).
+
+---
+
+## §0.31 反审门童（Regression Guard）SOP (K3 9/1 15:06 拍板, 跨项目 P0 强制级)
+
+> **核心**: 错误不能一直犯 → 日志 + 自进化 + 反审门童机制 (K3 9/1 12:37 派活包 + 15:06 拍板 4 修正 + 3 齿轮)
+>
+> **5 道门童 + 3 道防线 + 自进化 4 步 SOP + 3 个 SSoT**, 跨 session 永久生效, 跨项目 P0 通用
+>
+> **拍板来源**: K3 9/1 12:37 派活包 + K3 9/1 15:06 CEO 决策报告 4 修正 + 3 齿轮
+> **首版**: v1.0 (2026-09-01)
+> **转正**: v1.1 (2026-09-15 shadow mode FP 复盘后)
+
+### §0.31.1 5 道门童 (5 Guards)
+
+| # | 门童 | 严重度 | v1.0 (9/1-9/15) | v1.1 (9/15 后) | 脚本 |
+|---|------|--------|------------------|----------------|------|
+| #1 | 数据诚信 (credibility) | 🟠 orange | shadow (仅警告) | FP<10% → --strict 硬拦 | `scripts/guards/credibility-guard.js` |
+| #2 | 真实电话 (phone) | 🔴 red | 硬拦 (默认) | 硬拦 (默认) | `scripts/guards/phone-guard.js` |
+| #3 | 品牌分层 (brand) | 🔴 red | 硬拦 (默认) | 硬拦 (默认) | `scripts/guards/brand-guard.js` |
+| #4 | 跨语言污染 (i18n) | 🟡 yellow + 🔴 red 部分 | shadow + 部分硬拦 | FP<10% → --strict-all 硬拦 | `scripts/guards/i18n-guard.js` |
+| #5 | SOP-10 5 问门禁 (sop10) | 🟡 yellow + 🔴 red 秘密泄漏 | shadow + 秘密泄漏硬拦 | FP<10% → --strict-all 硬拦 | `scripts/guards/sop10-guard.js` |
+
+**门童 v1.0 规则集 (K3 9/1 15:06 拍板)**:
+- 门童 #1 数据诚信 11 类: ISO 9001 / FSC-C\d{6} / TÜV / 1,000+ / 4 位数无来源 / X 大行业 / X 重 / 国际顶级 / 15 年 / 自设厂房 / 海德堡 (per §0.23 数据诚信 4 次拍板)
+- 门童 #2 真实电话 4 类: +852 黑名单 / wa.me/852 黑名单 / +86 198 8085 1334 白名单 / 非白名单电话 (per §13.10 真实主体)
+- 门童 #3 品牌分层 5 类: 双品牌 / 错字 智印印港 / 跨语言混用 / ja alternate ジープリント / 一致性 (per §13.16 v2)
+- 门童 #4 跨语言污染 6 类: 简体字残留 / title 字符体检 / meta 字符体检 / 半角全角 / 币种格式 / food-boxes 跨语言 (per §0.29 v3.1)
+- 门童 #5 SOP-10 8 类: 证书号 / 24h SLA / 海德堡 6+1 / 12 大行业 / 国际顶级 / 4 位数 / 15 年 / 秘密泄漏 (per §0.22 + §0.27.8)
+
+### §0.31.2 3 道防线 (3 Defense Lines)
+
+1. **防线 1: 编辑前 (Mavis 输出建议)**: Mavis 生成 src/ 改动前, 跑 5 道门童 dry-run, 输出预警 (yellow/orange) + 修法建议
+2. **防线 2: commit 前 (pre-commit hook v7 强制)**: 5 道门童 --strict 模式, 命中 red/orange → exit 1 拒绝 commit
+3. **防线 3: push 后 (5 cron 监控 v1.1)**: 5 道门童 dry-run + error-log.md 写入, 连续 3 天同错 → 升级 K3
+
+### §0.31.3 自进化 4 步 SOP (4-Step Loop)
+
+1. **Step 1 错误识别 (Identify)**: 编辑前 / commit 前 / push 后 / K3 派活包 / 历史回灌 seeding
+2. **Step 2 归类 (Classify)**: 写 `error-patterns.md` (模式编号 + 类别 + regex + 例子 + K3 拍板 + 替代文案)
+3. **Step 3 拦截 (Intercept)**: 升级 `scripts/guards/X-guard.js` 规则集 + DoD 铁律检查
+4. **Step 4 验证 (Verify)**: 5 cron dry-run 命中 0 + 拦截率 ≥90% + 已 pattern 化错误复发 = 0
+
+### §0.31.4 3 个 SSoT (3 Single Sources of Truth)
+
+| SSoT | 路径 | 职责 |
+|------|------|------|
+| 错误模式库 | `.hermes/regression-guard/error-patterns.md` | 规则定义 (模式 + 例子 + 拦截), 增量追加 |
+| 错误日志 | `.hermes/regression-guard/error-log.md` | 错误实例 (commit ID + 命中 + 修复), 时间序列 |
+| 自进化 SOP | `.hermes/regression-guard/playbook.md` | 4 步循环 + 3 齿轮, 跨 session 永久 |
+
+### §0.31.5 K3 9/1 15:06 4 修正 (4 Corrections)
+
+1. **ROI 诚实化**: 10.7h/8d → 40h/月, 回报 22x/月 (诚实但更强)
+2. **拦截率 100% → 90% + 0 复发**: 可验证目标, post-push cron 验证
+3. **shadow mode 分级执法**: red 硬拦, orange/yellow 仅警告 (9/15 后转正)
+4. **hook 持久化**: `scripts/canonical/pre-commit` 是 SSoT (git tracked), `scripts/setup-hooks.sh` 一键安装
+
+### §0.31.6 K3 9/1 15:06 3 齿轮 (3 Gears)
+
+1. **DoD 铁律 (No fix without a rule)**: 任何派活包修复错误, 必同步把 pattern 写入 error-patterns.md, 视为任务未完成
+2. **周健康报告 (5 cron SSoT v6.4 嵌入)**: 每周输出拦截次数 / 误报次数 / 新增 pattern 数 / 复发数, 连续 2 周 0 复发 = 飞轮健康
+3. **历史 diff 回灌 seeding (scripts/seed-error-patterns.js, v1.1)**: 扫近 30 天 commit diff, 自动灌入 error-patterns.md 作为种子证据
+
+### §0.31.7 setup 命令 (任何新环境/新 agent 10 秒内可恢复)
+
+```bash
+# 一键安装反审门童 v1 canonical hook
+bash scripts/setup-hooks.sh
+
+# 验证: 跑 5 道门童 dry-run
+node scripts/check-regression-guard.js src/
+
+# 严格模式 (含 orange 硬拦, 9/15 后转正)
+node scripts/check-regression-guard.js --strict src/
+
+# DoD 铁律模式 (检查修复错误是否同步入 error-patterns.md)
+node scripts/check-regression-guard.js --dod src/
+
+# 卸载 (K3 拍板可豁免)
+rm .git/hooks/pre-commit
+```
+
+### §0.31.8 门童 v1.1 KPI 验收 (K3 9/1 15:06 拍板)
+
+| 指标 | 目标 | 验证方式 |
+|------|------|----------|
+| 已知 11 类拦截率 | ≥90% | backtest + post-push cron |
+| 已 pattern 化错误复发 | 0 | 周健康报告 |
+| 误报率 | <10% (9/15 复盘) | shadow mode 数据 |
+| hook 耗时 | <5s (只扫 staged diff) | 本地实测 |
+| 新错误 → pattern 入库 | <24h | DoD 铁律 |
+| 新 pattern → 规则上线 | <48h | M3 SLA |
+
+### §0.31.9 §0.31 拍板落地配套机制 (K3 9/1 15:06 强制级)
+
+- **§0.22 SOP-10 5 问门禁**: 门童 #5 直接落 §0.22 强制级
+- **§0.23 数据诚信红线**: 门童 #1 升级 11 类
+- **§0.25 30 min 硬下限**: K3 派活包豁免覆盖 (本派活包)
+- **§0.27 push 决策红线 5 条**: 本派活包 11 文件全过 (§0.27.4)
+- **§0.28 1 cron 1 交付物**: 5 cron 升级嵌入 5 道门童 (v1.1)
+- **§0.29 标题 v3.1**: 门童 #4 字符体检 v3.1 落地
+- **§0.30 v3 成熟度分级**: 门童 #1 升级 11 类含 4 位数无来源 (4,200+ 急件)
+- **§13.10 真实主体**: 门童 #2 唯一白名单 +86 198 8085 1334
+- **§13.16 v2 单品牌分层**: 门童 #3 拦截双品牌 / 错字 智印印港
+- **§0.27.8 ARK key 不暴露**: 门童 #5 SECRET_LEAK 规则
+
+### §0.31.10 §0.31 教训固化源头 (跨项目 P0 通用性)
+
+- zprintpro 9/1 12:37 K3 派活包 — 错误不能一直犯 → 日志 + 自进化 + 反审门童
+- zprintpro 9/1 15:06 K3 CEO 决策报告 — 4 修正 (ROI 诚实化 / 90% 目标 / shadow mode / hook 持久化) + 3 齿轮 (DoD / 周报 / 回灌 seeding)
+- 跨项目 P0: 任何"错误反复犯 + 静态规则集不全 + 没有自进化 SOP"模式都触发反审门童
+- 适用: zprintpro / aitoptools / togthr / stock-lab
+- 落地证据: 9/1 15:10 v1.0 落地, b4c630f2 拦截案例 8+ 类错误, 12:32 包装盒实弹测试拦截 title 73 当量 → 56 当量修正版
+
+---
+
+### §0.31.11 门童 v1.0 上岗首单实弹测试 (K3 9/1 15:06 12:32 案例)
+
+> **背景**: K3 9/1 12:32 派活包要求包装盒 blog 全方位优化, M3 拟定 title v3.1
+>
+> **拟定版**: `包裝盒印刷價格 2026：500/1000/5000 個・FOB 深圳・跨境 DHL 2-4 天 | 智印港`
+>
+> **门童拦截**:
+> - i18n-guard 字符体检 50-60 → 实测 73 当量 (非声称 60-65) ≈ 730px > 600px, 品牌尾部必被截断
+> - D.3 红线 3筛/GSC 实证 → FOB 深圳・跨境 DHL 是业务洞察词, GSC 0 实证, 禁入 title
+>
+> **K3 修正版**: `包裝盒印刷價格 2026：500/1000/5000 個・禮盒訂製 | 智印港` (56 当量 ✅)
+> - 禮盒訂製 = GSC 实证 5+6+1 imp, 帶钱词地图 v2 T1 速赢词
+> - FOB/DHL 移入 meta description 前半
+> - FDA/FSC 合规信任点放后半 (与 food-boxes 模式同构)
+>
+> **意义**: 门童上线第一天, 第一个被拦下的是 M3 刚写方案的标题。能拦住自己人的门童, 才拦得住下一个 FSC-C123456。
 
 ---
 
