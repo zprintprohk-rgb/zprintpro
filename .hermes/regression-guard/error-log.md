@@ -26,6 +26,49 @@
 
 ## 错误记录
 
+### [2026-09-02 05:58] (P0 事故修复) zh-hk §0.32 实体注册信息残留 — K3 9/2 05:58 派活包截图
+
+- **命中门童 (修复前)**: 门童 #6 实体注册 (§0.32 P0 强制级) 47 处 / 7 blog
+- **命中规则 (修复前)**:
+  - ENTITY_FULL_NAME_ZH: `深圳市彩龍印刷包裝有限公司` (K3 §0.32 第 1 禁词, 公司中文全称)
+  - ENTITY_ADDRESS_ZH: `廣東省深圳市龍崗區平湖街道嘉城路 1 號` (K3 §0.32 第 2 禁词, 实体注册地址)
+  - ENTITY_ZIPCODE: `518111` (K3 §0.32 第 5 禁词, 邮编单独使用)
+  - 残留 blog: packaging-box-custom-guide (9 处) / tea-beverage-gift-box-printing-guide (9 处) / wedding-invitation-pricing-guide (6 处) / rush-printing-hk-guide (6 处) / packaging-box-pricing-2026 (5 处) / 2027-monthly-calendar-printing-timetable (6 处) / certificate-printing-guide (6 处)
+- **K3 派活包**: 9/2 05:58 截图显示 `2027-monthly-calendar-printing-timetable` zh-hk 页面底部"最後更新"段残留 `深圳市彩龍印刷包裝有限公司 + 廣東省深圳市龍崗區平湖街道嘉城路 1 號 + 多年 + 客戶 + 12 大行業`, K3 问 "为什么还区现这个问题，在zh-hk繁体中文页面还是有 公司全称 深圳市彩龍印刷包裝有限公司 出现，反审门童的规则呢"
+- **K3 9/1 18:50 拍板 §0.32 硬规则 (9/1 18:50 memory 已落)**: zh-hk 语言绝不出现以下 5 类实体注册信息 (P0 强制级):
+  1. 公司中文全称: 深圳市彩龍印刷包裝有限公司
+  2. 实体注册地址: 深圳市龍崗區平湖街道嘉城路 1 號
+  3. 公司英文名: Shenzhen Cai Long Printing Packaging Co., Ltd.
+  4. 注册地址英文: 1 Jiacheng Road, Pinghu Street, Longgang District, Shenzhen 518111
+  5. 邮编 518111 单独使用
+- **K3 §0.32 补完 (9/1 18:58 拍板) 6 允许表述 (品牌关系表述)**: 智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌 / 单独深圳 / 单独平湖 / 彩龍品牌音译
+- **根本原因 (教训固化)**: 
+  - 9/1 18:50 K3 §0.32 拍板时, M3 已落 memory 但**未立即同步到反审门童 v1.0 (commit 1, 9/1 15:06)**
+  - 9/1 18:47 撤除脚本 (commit 7, be744435) 也没加 §0.32 5 禁词 (脚本在 18:47 写, §0.32 18:50 才拍)
+  - 反审门童 v1.0 漏了门童 #6 实体注册
+  - M3 §0.31 反审门童 v1.0 上岗首单 (12:32 包装盒任务) PASS 后, 没继续审计其他 blog
+- **修复 commit**: (待 K3 9/2 06:00 派活包 commit, 预计 be74xxxx 后)
+- **修复内容**:
+  - 1. Python 全站撤除脚本 `_zh_hk_entity_sweep.py` 撤除 47 处 / 7 blog
+  - 2. legal disclaimer NAP 段重写: 智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌 + 电话 + WhatsApp + 电邮
+  - 3. 品牌关系段重写: 保留允许表述
+  - 4. 母公司段重写: 母公司品牌 彩龍印刷（深圳）
+  - 5. 反审门童 v1.1 升级: 加门童 #6 实体注册 (entity-guard.js), 5 条 §0.32 禁词, red 硬拦, zh-hk only
+- **6 道门童 backtest src/data/blog-data/ 0 命中 PASS** (修复后):
+  - 门童 #1 数据诚信: ✅ 0 命中
+  - 门童 #2 真实电话: ✅ 0 命中
+  - 门童 #3 品牌分层: ✅ 0 命中
+  - 门童 #4 跨语言污染: ✅ 0 命中
+  - 门童 #5 SOP-10 5 问门禁: ✅ 0 命中
+  - 门童 #6 实体注册 (§0.32 P0 强制级): ✅ 0 命中
+- **拦截时间窗**: 9/1 18:50 拍板 → 9/2 05:58 派活包截图 = 11h 8min
+- **教训固化 (K3 §0.32 跨项目 P0 强制级)**:
+  - 任何 K3 派活包拍板红线, M3 必须立即:
+    - 写新门童或升级现有门童 (per K3 派活包时间窗)
+    - 跑全站 src/data/blog-data/ 0 命中验证
+    - 写 error-log.md 事故记录
+  - 不能再 "memory 已落但反审门童 v1.0 没升级" 的 11h 时间差
+
 ### [2026-09-01 15:25] (Commit 2) packaging-box-pricing-2026 - 12:32 包装盒 3 locale 9 项优化 backtest
 
 - **命中门童 (修复前)**: #1 数据诚信 (8) + #2 真实电话 (1) + #3 品牌分层 (2) + #4 跨语言污染 (0) + #5 SOP-10 (4) = 15 命中

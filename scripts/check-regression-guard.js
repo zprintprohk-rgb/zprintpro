@@ -32,13 +32,14 @@ const path = require('path');
 
 const GUARDS_DIR = path.join(__dirname, 'guards');
 
-// 5 道门童
+// 6 道门童 (v1.1 升级: 加门童 #6 实体注册, K3 9/1 18:50 拍板 §0.32 P0 强制级)
 const GUARDS = {
   credibility: require(path.join(GUARDS_DIR, 'credibility-guard.js')),
   phone: require(path.join(GUARDS_DIR, 'phone-guard.js')),
   brand: require(path.join(GUARDS_DIR, 'brand-guard.js')),
   i18n: require(path.join(GUARDS_DIR, 'i18n-guard.js')),
   sop10: require(path.join(GUARDS_DIR, 'sop10-guard.js')),
+  entity: require(path.join(GUARDS_DIR, 'entity-guard.js')),
 };
 
 const GUARD_LABELS = {
@@ -47,6 +48,7 @@ const GUARD_LABELS = {
   brand: '门童 #3 品牌分层',
   i18n: '门童 #4 跨语言污染',
   sop10: '门童 #5 SOP-10 5 问门禁',
+  entity: '门童 #6 实体注册 (§0.32 P0 强制级)',
 };
 
 const args = process.argv.slice(2);
