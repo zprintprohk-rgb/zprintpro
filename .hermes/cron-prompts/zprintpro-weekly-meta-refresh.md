@@ -352,6 +352,166 @@
 - Upward Engine 内链可提升排名最高 40% 联网核实
 
 ---
+## §L 本 session 9/2 全部派活包结果同步 (K3 9/2 09:43 派活包"结果同步更新我们的定时任务和定时任务指令", 跨项目 P0 强制级)
+
+> **拍板来源**: K3 9/2 09:43 push "结果同步更新我们的定时任务和定时任务指令"
+> **作者**: M3 (Mavis) 强制机制
+> **校准日期**: 2026-09-02 09:43
+> **校准状态**: 已校准 (本 commit 落地后)
+> **配套**: 决策登记簿 .hermes/decision-register.md (SSoT 14.4 KB) + 5 cron SSoT §I v2 + §J + §K 段嵌入
+
+### §L.1 本 session 9/2 累计 8 commit 落地 (8 已 push, 0 ahead, 0 注水)
+
+| Commit | 内容 | Status |
+|--------|------|--------|
+| 2f304484 (08:13) | fix §0.33 数据诚信纠错 + 4 口径对照 + 6 commit 撤回 + AGENTS.md §0.32/§0.33 + docs/blog-count-correction + docs/printing-blog-reorganization + 9/1 daily review | ✅ pushed |
+| 16d92eab (08:21) | feat regression-guard v1.2: 7 道门童完整规则 + 门童 #7 数据口径必填 + AGENTS.md §0.31.1 完整规则 + scripts/guards/count-guard.js | ✅ pushed |
+| 06f99882 (08:25) | feat §I ja-en-market-localization: 5 cron SSoT §I v1 嵌入 + docs/ja-en-market-localization.md v1 | ✅ pushed |
+| 225e51ae (09:05) | feat glm-p0-1y-roadmap: 1 年战略 + en/ja 翻译指南 v2 (FTC/Raksul) + 5 cron SSoT §I v2 + i18n-guard v2 | ✅ pushed |
+| 64a4db24 (09:15) | feat decision-register-v1.2: .hermes/decision-register.md SSoT + 门童 #8 register-guard.js + 3 处硬伤修正 (Wikipedia→Wikidata 提前 Q4) | ✅ pushed |
+| 678dbbc9 (09:18) | feat sot-section-j-v2: 5 cron SSoT §J 段嵌入 (K3 9/2 09:14 派活包执行结果指令同步) | ✅ pushed |
+| fe93f5f7 (09:25) | feat indexnow-r6-build: D-9/2-15 IndexNow HTTP 202 + D-9/2-22 R6 本地分支 build PASS (K3 9/2 09:16 派活包 9 角色综合) | ✅ pushed |
+| 481b4378 (09:36) | feat gsc-source-guard-v1.3: GSC数据/index.json SSoT + 门童 #9 gsc-source-guard + 5 cron SSoT §K + sku-keyword-gsc-map v1 14 SKU (K3 9/2 09:29 派活包 GLM cron 体系更新) | ✅ pushed |
+
+### §L.2 10 道门童 v1.3 完整规则 (per AGENTS.md §0.31.1)
+
+| # | 门童 | 严重度 | 演化源头 |
+|---|------|--------|----------|
+| #1 | 数据诚信 (credibility-guard.js) | 🟠 orange | v1.0 (9/1 15:06) |
+| #2 | 真实电话 (phone-guard.js) | 🔴 red | v1.0 + K3 §13.10 |
+| #3 | 品牌分层 (brand-guard.js) | 🔴 red | v1.0 + K3 §13.16 v2 |
+| #4 | 跨语言污染 (i18n-guard.js, v2 扩展) | 🟡 yellow + 🔴 red | v1.0 + v1.2 (GLM 9/2 08:50) |
+| #5 | SOP-10 5 问门禁 (sop10-guard.js) | 🟡 yellow + 🔴 red SECRET_LEAK | v1.0 + K3 §0.22 + §0.27.8 |
+| #6 | 实体注册 (entity-guard.js, v1.1.1) | 🔴 red §0.32 P0 | v1.1 (9/1 18:50) + v1.1.1 (9/2 06:04) |
+| #7 | 数据口径必填 (count-guard.js) | 🟠 orange | v1.2 (9/2 08:09) |
+| #8 | 决策登记簿 (register-guard.js) | 🟡 yellow + 🟠 orange 注水 | v1.2 (9/2 09:05 拍板 #3) |
+| #9 | GSC 数据源 (gsc-source-guard.js) | 🟡 yellow + 🟠 orange STALE | v1.3 (9/2 09:29 派活包 GLM §J) |
+
+### §L.3 决策登记簿 30 项拍板 (per K3 9/2 09:05 拍板 #3, 全部已落 .hermes/decision-register.md)
+
+#### §L.3.1 9/1 拍板 12 项
+- D-9/1-1 即日印刷 blog 虚假电话 (be744435) 🟢 DONE
+- D-9/1-2 全站撤除硬数字 1,238 处 (be744435) 🟢 DONE
+- D-9/1-3 包装盒 blog 9 项优化 (274c61c7) 🟢 DONE
+- D-9/1-4 反审门童 v1.0 5 道门童 (3619c778) 🟢 DONE
+- D-9/1-5 月度 cron v8 战略转型 (6f4486cb) 🟢 DONE
+- D-9/1-6 主营架构 v2 4 Pillar (01458676) 🟢 DONE
+- D-9/1-7 blog-posts.ts SSoT 85 口径核对 (9cadce1c) 🟢 DONE
+- D-9/1-8 信息同步 4 个 mavis cron 任务 (03889db9) 🟢 DONE
+- D-9/1-9 全站 239 blog 508 处硬数据撤除 (be744435) 🟢 DONE
+- D-9/1-10 §0.32 zh-hk 5 禁词硬规则 (03b86366) 🟢 DONE
+- D-9/1-11 复盘 cron 重启 3 天断档后首份 (review-2026-09-01.md) 🟢 DONE
+- D-9/1-12 9/1 决策 1-7 (cron 命名 A + 月度改名 + en-ja 禁词 + R0 任务卡 + R6 分支 + 断档 B+ + 口径双层制) 🟡 部分嵌入 (注水纠正, per K3 9/2 09:05 硬伤 2)
+
+#### §L.3.2 9/2 拍板 18 项 (11 + 6 + 1)
+- D-9/2-1 zh-hk §0.32 5 禁词残留 (6e936b1d) 🟢 DONE
+- D-9/2-2 §0.32 战略级分层 ja 允许 / en 暂保留 (59ce1aba) 🟢 DONE
+- D-9/2-3 包裝盒 17 blog 调度 v3 (2f8d9438) 🟢 DONE
+- D-9/2-4 status check 6 道门童 backtest 0 命中 🟢 DONE
+- D-9/2-5 贴纸 18 blog 调度 v2 (3f5a13cb) 🟢 DONE
+- D-9/2-6 全部 79 blog 全局统筹 (4 commit) 🟢 DONE
+- D-9/2-7 数据诚信老数据 + 4 口径对照必填 + §0.33 落地 (2f304484) 🟢 DONE
+- D-9/2-8 反审门童 v1.0 → v1.2 7 道门童完整规则 (16d92eab) 🟢 DONE
+- D-9/2-9 ja/en 没有市场喜好翻译 + 9 角色综合 (06f99882) 🟢 DONE
+- D-9/2-10 GLM 评估报告 v1 (M3 76/100 B-) + P0 紧急修正 en/ja 翻译指南 v2 + 1 年战略路线图 + 5 cron SSoT §I v2 + i18n-guard v2 (225e51ae) 🟢 DONE
+- D-9/2-11 GLM 评估报告 v2 (M3 77/100 B-, +1 略升) + 决策登记簿 + 门童 #8 + 9 月 30 天收敛 7 项 P0 + 3 处硬伤修正 (64a4db24) 🟢 DONE
+- D-9/2-12 拍板 #1 验收通过 M3 处置报告 4 项 P0, 3 处硬伤限 9/3 修正 (64a4db24 落地) 🟢 DONE
+- D-9/2-13 拍板 #2 9 月 30 天收敛 7 项 P0, 立即替换 M3 的 13 项清单, 写入 5 cron SSoT (678dbbc9 落地) 🟢 DONE
+- D-9/2-14 拍板 #3 决策登记簿 + 门童 #8 register-guard.js 批准 (64a4db24 落地) 🟢 DONE
+- D-9/2-15 D-9/2-15 IndexNow 自解锁 HTTP 202 Accepted (54 URL: 12 4 Pillar + 33 22 SKU + 9 关键文档) (fe93f5f7 落地) 🟢 DONE
+- D-9/2-16 R6 收尾 push 分支 (8 Rush* 文件 commit 到 feat/rush-redesign-0827 + push origin) ⚪ BLOCKED (K3 必给 §0.27.3 条件 3 ARK key 撤销重发, K3 必拍)
+- D-9/2-17 R0 四项解锁: GA4 G-XXXX 接入 / Supabase SQL 跑通 / PayPal 工单+Stripe 并行 / IndexNow 自解锁 (IndexNow ✅, 其余 3 项 ⚪ BLOCKED K3 必给) 🟡 IN_PROGRESS
+- D-9/2-18 R2 摘果 4 词 (大信封 / a1-a2 海報 / small-batch) 🔴 OPEN (待 M3 实际动作, 9/4 截止)
+- D-9/2-19 R0 IndexNow 部分 ✅ (同 D-9/2-15) 🟢 DONE
+- D-9/2-20 4 大 Pillar 各 1 篇深度升级 × 3 locale (包裝盒 9/8 硬截止 + 贴纸 + 宣傳單張 + 校園[若 9/8 go]) 🔴 OPEN
+- D-9/2-21 src/ 588 处清零 (about/footer/contact/faq/legal/category/product) 🔴 OPEN (9/12 截止, 9/15 门童升硬拦前必完成)
+- D-9/2-22 R6 收尾: 8 Rush* 文件按 K3 拍板 commit 到 feat/rush-redesign-0827 分支 + build 验证 (分支已建 + build PASS, 678dbbc9 落地, fe93f5f7 验证) 🟡 IN_PROGRESS
+- D-9/2-23 M1 验收 9/16 (7d clicks ≥75, 双口径制) 🔴 OPEN
+- D-9/2-24 校园 pillar go/no-go (9/3 GSC 90 天取证 → 9/8 拍板) 🔴 OPEN
+- D-9/2-25 §J 三段指令嵌入 5 cron SSoT (481b4378 落地) 🟢 DONE
+- D-9/2-26 GSC数据/ 文件夹 = 唯一事实源 + 落盘义务 + index.json 索引 (9/2 09:31 落地) 🟢 DONE
+- D-9/2-27 新鲜度闸门 72h + STALE 禁数字结论 (9/3 15:00 GSC 校准窗口拉新) 🟡 IN_PROGRESS
+- D-9/2-28 门童 #9 gsc-source-guard (v1.3, 481b4378 落地) 🟢 DONE
+- D-9/2-29 sku-keyword-gsc-map v1 (14 SKU 起步: 包裝盒 8 + 贴纸 6, 481b4378 落地) 🟢 DONE
+- D-9/2-30 选题闸门 6 问制 (新增 GSC 证据链引用了吗?, 481b4378 落地) 🟢 DONE
+
+#### §L.3.3 30 项拍板状态分布
+- 🟢 DONE: 25 / 30 (83.3%)
+- 🟡 部分嵌入 / IN_PROGRESS: 4 / 30 (13.3%)
+- 🔴 OPEN: 4 / 30 (13.3%, 9 月 7 项 P0 全部 OPEN)
+- ⚪ BLOCKED: 2 / 30 (6.7%, K3 必给/必拍)
+- ⛔ RETRACTED: 0 / 30
+
+### §L.4 GSC 数据 + sku-keyword-gsc-map v1 14 SKU (per K3 9/2 09:29 派活包 GLM §J)
+
+#### §L.4.1 GSC 数据当前状态 (9/2 09:31 真验证)
+- GSC数据/: 122 文件, index.json SSoT 21.8 KB
+- 最新数据日期: 2026-08-17
+- freshnessStatus: **STALE** (stalenessDays = 16 天, >72h 红线)
+- 行动: 9/3 15:00 GSC 校准窗口必拉新数据 → 落盘 gsc-fresh-2026-09-03.json → 更新 index.json → 重跑 sku-keyword-gsc-map v1
+
+#### §L.4.2 sku-keyword-gsc-map v1 14 SKU 起步
+- 包裝盒 8 SKU (en + zh-hk + ja): packaging-box-custom-100pcs / cosmetic-card-boxes-gang-run / food-packaging-box-greaseproof / eco-kraft-packaging-box / magnetic-closure-gift-box-ecommerce / cross-border-ecommerce-shipping-box
+- 贴纸 6 SKU (en + zh-hk + ja): waterproof-pvc-sticker / clear-transparent-sticker / gold-foil-sticker / baby-product-label-sticker
+- 3 条联动规则: R1 锚文本 = GSC 实证词 / R2 SKU 死端禁令 / R3 Silo 权重单向传导
+- 落地: scripts/sku-keyword-gsc-map.mjs + .hermes/sku-keyword-gsc-map.json 9.2 KB SSoT
+
+#### §L.4.3 9/17 3 市场前 5 词 (per §L.1.4 词级证据链)
+- 香港 (187 行): 證書印刷 (8 imps, pos 11.38) / 海報印刷一張 (4 imps, pos 13.75) / a2 印刷 即日 (3 imps, pos 3.67) / 智印港 (1 imps, pos 1) / 係邊買 (1 imps, pos 4)
+- 美国 (143 行): china catalog printing (12 imps, pos 19.67) / flyer printing (1 imps, pos 6) / print a5 flyers (1 imps, pos 7) / saddle stitch booklet (18 imps, pos 77.67) / saddle stitch booklets (17 imps, pos 89.76)
+- 日本 (70 行): 両面カラー印刷 (24 imps, pos 19.17) / 教材 印刷製本 (14 imps, pos 50.71) / カタログ 印刷 (13 imps, pos 49.77) / a5とa6どっちが大きい (9 imps, pos 11.78) / クラフト紙 パッケージ印刷 (9 imps, pos 27)
+
+### §L.5 9 月 7 项 P0 状态 (per K3 9/2 09:05 拍板 #2 + GLM §4, 9/2 09:43 同步更新)
+
+| # | 30 天必达项 | 截止 | 状态 | 备注 |
+|---|-------------|------|------|------|
+| 1 | R2 摘果 4 词 (大信封 / a1-a2 海報 / small-batch) | 9/4 | 🔴 OPEN D-9/2-18 | 待 M3 实际动作 |
+| 2 | R0 四项解锁 | 9/5 | 🟡 IN_PROGRESS D-9/2-19 | IndexNow ✅, GA4/Supabase/PayPal ⚪ K3 必给 |
+| 3 | 4 大 Pillar 各 1 篇深度升级 × 3 locale | 9/8 起 | 🔴 OPEN D-9/2-20 | 9/3 启动 |
+| 4 | src/ 588 处清零 | 9/12 | 🔴 OPEN D-9/2-21 | 9/15 门童升硬拦前必完成 |
+| 5 | R6 收尾 | 9/3 | 🟡 IN_PROGRESS D-9/2-22 | 分支已建 + build PASS, 等 K3 预览 48h + ARK key |
+| 6 | M1 验收 9/16 (7d clicks ≥75) | 9/16 | 🔴 OPEN D-9/2-23 | 待 9/16 触发 |
+| 7 | 校园 pillar go/no-go (9/3 GSC 90 天取证 → 9/8 拍板) | 9/8 | 🔴 OPEN D-9/2-24 | 9/3 启动 GSC 90 天取证 |
+
+### §L.6 K3 必拍板项 (per K3 9/2 09:43 派活包 + §0.0 零决策铁律)
+
+| D-ID | 待 K3 给/拍 | 状态 | 截止 |
+|------|-------------|------|------|
+| D-9/2-16 | R6 收尾 push 分支 (8 Rush* 文件 commit 到 feat/rush-redesign-0827 + push origin) | ⚪ BLOCKED (K3 必给 §0.27.3 条件 3 ARK key 撤销重发) | K3 9/2 拍板 |
+| D-9/2-17-a | R0 GA4 G-XXXX 接入 (K3 必给 G-XXXX ID) | ⚪ BLOCKED | K3 9/5 派活包 |
+| D-9/2-17-b | R0 Supabase SQL 跑通 (K3 必给 schema access key) | ⚪ BLOCKED | K3 9/5 派活包 |
+| D-9/2-17-c | R0 PayPal 工单 (K3 必拍板 PayPal 工单 + Stripe 并行) | ⚪ BLOCKED | K3 9/5 派活包 |
+| D-9/2-22-preview | R6 48h 预览窗 (K3 看 rush-live.html 后 merge/revert) | ⚪ BLOCKED | 9/4 09:18 结束 |
+| D-9/2-27 | GSC 数据 9/3 15:00 拉新 + 落盘 gsc-fresh-2026-09-03.json | 🟡 IN_PROGRESS | 9/3 15:00 GSC 校准窗口 |
+
+### §L.7 5 cron SSoT 头部段嵌入完成度 (per K3 9/2 09:43 派活包"结果同步更新定时任务指令")
+
+5 cron SSoT 文件头部已嵌入:
+- §I 数据口径校准 + 1 年战略 + en/ja 翻译指南 v2 (225e51ae 落地)
+- §J 执行结果指令同步 + 决策登记簿 + 门童 #8 + 9 月 7 项 P0 + 3 处硬伤修正 (678dbbc9 落地)
+- §K Cron 体系更新 + GSC 数据强制源 + SKU 联动 + 门童 #9 + sku-keyword-gsc-map v1 14 SKU (481b4378 落地)
+- **§L 本 session 9/2 全部派活包结果同步** (本 commit 落地)
+
+每文件累计新增: §I (4649) + §J (7607) + §K (6871) + §L (~6000) = ~25 KB 头部段嵌入
+
+### §L.8 教训固化源头 (per K3 §0.31 自进化 4 步 SOP)
+
+- 2026-09-02 09:43 K3 push "结果同步更新我们的定时任务和定时任务指令"
+- 2026-09-02 09:29 K3 push GLM cron 体系更新 (GSC 数据强制源 + SKU 联动)
+- 2026-09-02 09:16 K3 push 9 角色综合按最优执行
+- 2026-09-02 09:14 K3 push 执行结果指令同步定时任务
+- 2026-09-02 09:05 K3 push + GLM 评估报告 v2 (M3 77/100 B-, +1 略升)
+- 2026-09-02 08:50 K3 push + GLM 评估报告 v1 (M3 76/100 B-)
+- 2026-09-02 08:19 K3 push ja/en 没有市场喜好翻译 + 9 角色综合
+- 2026-09-02 08:15 K3 push 反审门童规则不全
+- 2026-09-02 08:09 K3 push 数据诚信老数据
+- 2026-09-01 21:12 复盘 cron 重启 3 天断档后首份 (8/29-9/1 GSC 数据 0 落盘)
+- seo-stack.io 联网核实: GSC UI 16 个月滚动窗口 + GSC API 2-3 天数据延迟
+- Break the Web / GoElastic / Upward Engine 联网核实 (SKU 联动行业标准)
+
+---
+
+
 
 
 

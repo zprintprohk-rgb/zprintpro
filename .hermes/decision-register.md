@@ -108,7 +108,23 @@
 |----|--------|------|--------|------|----------|
 | **D-9/2-12** | 9/2 09:05 | M3 处置报告 4 项 P0 验收通过, **3 处硬伤限 9/3 修正**: Wikipedia→Wikidata 提前 Q4 / 状态标注回填 / commit 数校正 | M3 | 🟡 IN_PROGRESS | docs/2026-09-02-k3-1y-strategic-roadmap.md v2 修正 |
 | **D-9/2-13** | 9/2 09:05 | **9 月 30 天收敛 7 项 P0**, 立即替换 M3 的 13 项清单, 写入 5 cron SSoT | M3 | 🟡 IN_PROGRESS | 5 cron SSoT §I v2 7 项 P0 替换 13 项 |
-| **D-9/2-14** | 9/2 09:05 | **决策登记簿 + 门童 #8 register-guard.js** 批准, 今天建, 历史拍板全部回填 | M3 | 🟡 IN_PROGRESS | .hermes/decision-register.md (本文件) + scripts/guards/register-guard.js |
+| **D-9/2-14** | 9/2 09:05 | **决策登记簿 + 门童 #8 register-guard.js** 批准, 今天建, 历史拍板全部回填 | M3 | 🟢 DONE | commit 64a4db24 (.hermes/decision-register.md SSoT 14.4 KB + scripts/guards/register-guard.js 8.2 KB 215 行 4 类规则) |
+| **D-9/2-15** | 9/2 09:05 | **IndexNow 自解锁** 第三次催办: M3 生成 32 位十六进制 key + 托管 {key}.txt, 10 分钟, 两次提醒仍未做 | M3 | 🟢 DONE | commit fe93f5f7 (public/b4743800634c73a56fc734e58d77a5d9.txt + scripts/indexnow-submit.mjs 6.2 KB + HTTP 202 Accepted 54 URL) |
+| **D-9/2-16** | 9/2 09:05 | **R6 收尾**: 8 Rush* 文件按 K3 拍板 commit 到 feat/rush-redesign-0827 分支 + build 验证 | M3 | 🟡 IN_PROGRESS | 本地分支 feat/rush-redesign-0827 + build PASS (678 URLs + 95 blog), 未 push origin 等 K3 预览 48h + §0.27.3 条件 3 |
+| **D-9/2-17** | 9/2 09:05 | **R0 四项解锁**: GA4 G-XXXX 接入 / Supabase SQL 跑通首份归因报告 / PayPal 工单+Stripe 并行 / IndexNow 自解锁 | K3+M3 | 🟡 IN_PROGRESS | IndexNow ✅, GA4/Supabase/PayPal ⚪ K3 必给 |
+| **D-9/2-18** | 9/2 09:05 | **R2 摘果 4 词** (大信封 / a1-a2 海報 / small-batch) | M3 | 🔴 OPEN | 待 M3 实际动作, 9/4 截止 |
+| **D-9/2-19** | 9/2 09:05 | **R0 IndexNow 部分** (同 D-9/2-15) | M3 | 🟢 DONE | commit fe93f5f7 (IndexNow HTTP 202) |
+| **D-9/2-20** | 9/2 09:05 | **4 大 Pillar 各 1 篇深度升级 × 3 locale** (包裝盒 9/8 硬截止 + 贴纸 + 宣傳單張 + 校園[若 9/8 go]) | M3 | 🔴 OPEN | 9/3 启动 |
+| **D-9/2-21** | 9/2 09:05 | **src/ 588 处清零** (about/footer/contact/faq/legal/category/product) | M3 | 🔴 OPEN | 9/12 截止, 9/15 门童升硬拦前必完成 |
+| **D-9/2-22** | 9/2 09:05 | **R6 收尾**: 8 Rush* 文件按 K3 拍板 commit 到 feat/rush-redesign-0827 分支 + build 验证 | M3 | 🟡 IN_PROGRESS | 本地分支已建 + build PASS (678 URLs + 95 blog), 详见 D-9/2-16 |
+| **D-9/2-23** | 9/2 09:05 | **M1 验收 9/16** (7d clicks ≥75, 双口径制) | M3 | 🔴 OPEN | 待 9/16 触发 |
+| **D-9/2-24** | 9/2 09:05 | **校园 pillar go/no-go** (9/3 GSC 90 天取证 → 9/8 拍板) | M3 | 🔴 OPEN | 9/3 启动 GSC 90 天取证 |
+| **D-9/2-25** | 9/2 09:29 | **§J 三段指令嵌入 5 cron SSoT** (GLM §J-1 GSC 强制源 + §J-2 SKU 联动 + §J-3 逐 cron 更新) | M3 | 🟢 DONE | commit 481b4378 (5 cron SSoT §K 段嵌入 121 行 × 5 文件) |
+| **D-9/2-26** | 9/2 09:29 | **GSC数据/ 文件夹 = 唯一事实源 + 落盘义务 + index.json 索引** | M3 | 🟢 DONE | commit 481b4378 (GSC数据/index.json SSoT 21.8 KB 646 行, 122 文件索引) |
+| **D-9/2-27** | 9/2 09:29 | **新鲜度闸门 72h + STALE 禁数字结论** | M3+K3 | 🟡 IN_PROGRESS | 门童 #9 STALE 闸门已落地, 9/3 15:00 拉新待执行 |
+| **D-9/2-28** | 9/2 09:29 | **门童 #9 gsc-source-guard** (v1.3) | M3 | 🟢 DONE | commit 481b4378 (scripts/guards/gsc-source-guard.js 8.2 KB 215 行 4 类规则) |
+| **D-9/2-29** | 9/2 09:29 | **sku-keyword-gsc-map v1** (14 SKU 起步: 包裝盒 8 + 贴纸 6) | M3 | 🟢 DONE | commit 481b4378 (scripts/sku-keyword-gsc-map.mjs + .hermes/sku-keyword-gsc-map.json 9.2 KB) |
+| **D-9/2-30** | 9/2 09:29 | **选题闸门 6 问制** (新增"GSC 证据链引用了吗?") | M3 | 🟢 DONE | commit 481b4378 (5 cron SSoT §K.3 daily-content-1x7w 选题闸门 5 问 → 6 问) |
 | **D-9/2-15** | 9/2 09:05 | **IndexNow 自解锁** 第三次催办: M3 生成 32 位十六进制 key + 托管 {key}.txt, 10 分钟, 两次提醒仍未做 | M3 | 🔴 OPEN | 待 M3 10 分钟内完成 (IndexNow 200 响应 log) |
 | **D-9/2-16** | 9/2 09:05 | **R6 收尾**: 8 Rush* 文件按 K3 拍板 commit 到 feat/rush-redesign-0827 分支 + build 验证 | M3 | 🔴 OPEN | 分支名+build log (K3 预览窗 48h 从分支建立时起算) |
 | **D-9/2-17** | 9/2 09:05 | **R0 四项解锁**: GA4 G-XXXX 接入 / Supabase SQL 跑通首份归因报告 / PayPal 工单+Stripe 并行 / IndexNow 自解锁 | K3+M3 | ⚪ BLOCKED | GA4 G-XXXX 等 K3 提供 (R0 PENDING 5 天) |
