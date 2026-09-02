@@ -125,6 +125,12 @@
 | **D-9/2-28** | 9/2 09:29 | **门童 #9 gsc-source-guard** (v1.3) | M3 | 🟢 DONE | commit 481b4378 (scripts/guards/gsc-source-guard.js 8.2 KB 215 行 4 类规则) |
 | **D-9/2-29** | 9/2 09:29 | **sku-keyword-gsc-map v1** (14 SKU 起步: 包裝盒 8 + 贴纸 6) | M3 | 🟢 DONE | commit 481b4378 (scripts/sku-keyword-gsc-map.mjs + .hermes/sku-keyword-gsc-map.json 9.2 KB) |
 | **D-9/2-30** | 9/2 09:29 | **选题闸门 6 问制** (新增"GSC 证据链引用了吗?") | M3 | 🟢 DONE | commit 481b4378 (5 cron SSoT §K.3 daily-content-1x7w 选题闸门 5 问 → 6 问) |
+| **D-9/2-31** | 9/2 20:28 | **GLM 5 关键建议嵌入 5 cron SSoT §M 段 + 决策登记簿同步** (per K3 9/2 20:28 派活包"按最优执行") | M3 | 🟡 IN_PROGRESS | docs/2026-09-02-k3-glm-strategic-report.md (26.9 KB) + 5 cron SSoT §M 段嵌入 5 文件 × 7847 chars |
+| **D-9/2-32** | 9/2 20:28 | **R2 摘果 4 词 title/desc 重写范围** (大信封 / a1a2 海報 / small-batch 系) + 9/4 截止 | M3+K3 | 🔴 OPEN | 待 M3 实际动作, K3 必拍 R2 摘果范围 (per GLM 关键建议 #2) |
+| **D-9/2-33** | 9/2 20:28 | **4 Pillar × 1 篇 × 3 locale = 12 篇深度升级** (Pillar 化节奏砍半) + 深度分 ≥80 | M3+K3 | 🔴 OPEN | 待 M3 实际动作, K3 必拍 Pillar 范围 (per GLM 关键建议 #4) |
+| **D-9/2-34** | 9/2 20:28 | **en china/factory-direct 内容线 9 月策划稿 + 10 月落地预算** | M3+K3 | 🔴 OPEN | 待 M3 写策划 + K3 拍 (per GLM 关键建议 #5, china catalog printing imps +110% 战略信号) |
+| **D-9/2-35** | 9/2 09:05 | **R0 4 子项实证产物** (GA4 截图 / Supabase 归因表 / PayPal 工单号 / IndexNow 200 log) | K3+M3 | 🟡 IN_PROGRESS | IndexNow ✅ (commit fe93f5f7 HTTP 202), 其余 3 ⚪ K3 必给 (per GLM 关键建议 #3) |
+| **D-9/2-36** | 9/2 20:28 | **GLM 关键建议 1 (9/3 15:00 GSC 校准窗口) 9 月 7 项 P0 收敛** | M3 | 🟡 IN_PROGRESS | D-9/2-27 GSC 校准待执行 (stalenessDays 16 天, 9/3 15:00 必拉新数据) |
 | **D-9/2-15** | 9/2 09:05 | **IndexNow 自解锁** 第三次催办: M3 生成 32 位十六进制 key + 托管 {key}.txt, 10 分钟, 两次提醒仍未做 | M3 | 🔴 OPEN | 待 M3 10 分钟内完成 (IndexNow 200 响应 log) |
 | **D-9/2-16** | 9/2 09:05 | **R6 收尾**: 8 Rush* 文件按 K3 拍板 commit 到 feat/rush-redesign-0827 分支 + build 验证 | M3 | 🔴 OPEN | 分支名+build log (K3 预览窗 48h 从分支建立时起算) |
 | **D-9/2-17** | 9/2 09:05 | **R0 四项解锁**: GA4 G-XXXX 接入 / Supabase SQL 跑通首份归因报告 / PayPal 工单+Stripe 并行 / IndexNow 自解锁 | K3+M3 | ⚪ BLOCKED | GA4 G-XXXX 等 K3 提供 (R0 PENDING 5 天) |
