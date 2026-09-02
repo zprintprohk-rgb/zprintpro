@@ -189,7 +189,7 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-greeting-cards-premium-greeting-cards-zh-hk-hero.webp', en: 'zprintpro-stickers-premium-stickers-en.webp', ja: 'zprintpro-stickers-premium-stickers-ja.webp' },
     alt: {
-      'zh-hk': '賀卡: 300g premium greeting cards with 4-color printing. Optional matte/gloss lamination, foil stamping, spot UV. Perfect for Christmas cards, New Year cards, wedding thank-you cards, holiday gift cards, milestone events, corporate customization. Free sample, DHL global 2-4 day delivery. 智印港 ZprintPro 樣品。',
+      'zh-hk': '香港高級賀卡印刷 300g銅版紙 覆膜（啞膠／光膠）',
       en: 'Premium Greeting Cards | Professional Greeting Cards Online',
       ja: 'プレミアムグリーティングカード | プロ印刷・即日お見積もり | ZprintPro'
     },
@@ -310,7 +310,7 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-greeting-cards-thick-greeting-cards-400g-zh-hk-hero.webp', en: 'zprintpro-stickers-thick-stickers-400g-en.webp', ja: 'zprintpro-stickers-thick-stickers-400g-ja.webp' },
     alt: {
-      'zh-hk': '賀卡: 400g ultra-thick greeting cards with substantial feel, premium rigidity for luxury hospitality and corporate gifting. Perfect for Christmas cards, New Year cards, wedding, milestone events. Optional foil stamping, UV, embossing, soft-touch lamination. 智印港 ZprintPro 樣品。',
+      'zh-hk': '香港厚身賀卡(400g)印刷 400g超厚銅版紙 覆膜（啞膠／光膠）',
       en: 'Thick Greeting Cards (400g) | Professional Greeting Cards Online',
       ja: '厚紙グリーティングカード(400g) | プロ印刷・即日お見積もり | ZprintPro'
     },
@@ -407,7 +407,7 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-greeting-cards-foil-greeting-cards-zh-hk-hero.webp', en: 'zprintpro-stickers-foil-stickers-en.webp', ja: 'zprintpro-stickers-foil-stickers-ja.webp' },
     alt: {
-      'zh-hk': '賀卡: Foil-stamped greeting cards (gold, silver, rose gold, holographic). Metallic luster elevates premium feel for Christmas, wedding, baby 100-day celebration, thank-you cards, milestone events. 300g cardstock with matte lamination, optional spot UV highlight. 智印港 ZprintPro 樣品。',
+      'zh-hk': '香港燙金/燙銀賀卡印刷 300g銅版紙 覆膜（啞膠／光膠）',
       en: 'Foil Stamped Greeting Cards | Professional Greeting Cards Online',
       ja: '箔押しグリーティングカード | プロ印刷・即日お見積もり | ZprintPro'
     },
@@ -502,7 +502,7 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-greeting-cards-spot-uv-greeting-cards-zh-hk-hero.webp', en: 'zprintpro-stickers-spot-uv-stickers-en.webp', ja: 'zprintpro-stickers-spot-uv-stickers-ja.webp' },
     alt: {
-      'zh-hk': '賀卡: Spot UV greeting cards with logo or pattern highlight, combined with matte substrate for high visual contrast. Strong impact for Christmas, New Year, thank-you cards, corporate branding, hotel welcome. 300g cardstock with optional foil stamping. 智印港 ZprintPro 樣品。',
+      'zh-hk': '香港UV局部光油賀卡印刷 300g銅版紙 局部UV',
       en: 'Spot UV Greeting Cards | Professional Greeting Cards Online',
       ja: '局部UVグリーティングカード | プロ印刷・即日お見積もり | ZprintPro'
     },
@@ -599,7 +599,7 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-greeting-cards-matte-greeting-cards-zh-hk-hero.webp', en: 'zprintpro-stickers-matte-stickers-en.webp', ja: 'zprintpro-stickers-matte-stickers-ja.webp' },
     alt: {
-      'zh-hk': '賀卡: Matte lamination greeting cards with smooth anti-fingerprint premium feel. Ideal for minimalist Christmas, New Year, thank-you cards, corporate branding, modern wedding invitations. 300g matte art paper with optional spot UV or foil stamping accent. 智印港 ZprintPro 樣品。',
+      'zh-hk': '香港啞膠賀卡印刷 300g啞粉紙 啞膠覆膜',
       en: 'Matte Laminated Cards | Professional Greeting Cards Online',
       ja: 'マットグリーティングカード | プロ印刷・即日お見積もり | ZprintPro'
     },
@@ -674,7 +674,7 @@ export const products: Product[] = [
   seoImages: {
     filename: { 'zh-hk': 'zprintpro-greeting-cards-rounded-corner-greeting-cards-zh-hk-hero.webp', en: 'zprintpro-stickers-rounded-corner-cards-en.webp', ja: 'zprintpro-stickers-rounded-corner-cards-ja.webp' },
     alt: {
-      'zh-hk': '賀卡: Rounded corner greeting cards (R3mm die-cut), soft tactile feel with no corner lift, safe for children and elderly. Perfect for cute Christmas, birthday, thank-you cards, baby shower, modern wedding stationery. 300g cardstock with matte or gloss lamination. 智印港 ZprintPro 樣品。',
+      'zh-hk': '香港圓角賀卡印刷 300g銅版紙 覆膜（啞膠／光膠）',
       en: 'Rounded Corner Cards | Professional Greeting Cards Online',
       ja: '丸角グリーティングカード | プロ印刷・即日お見積もり | ZprintPro'
     },
