@@ -123,7 +123,7 @@ function checkReport(content, file) {
 
   // 1. 检测报告类型: 含数字 / 选题 / 词决策 / 战略判定
   const isContentDecision = /\b(选题|title|meta|词决策|sku|blog|决策|战略|关键词|query|imps|pos|ctr|clicks)\b/i.test(content);
-  const hasNumber = /\b\d+(\.\d+)?\s*(个|篇|条|词|imp|click|%/g.test(content) ||
+  const hasNumber = /\b\d+(\.\d+)?\s*(个|篇|条|词|imp|click|%)/g.test(content) ||
                     /\b\d{1,3}\s*个\b/g.test(content);
   if (!isContentDecision && !hasNumber) {
     return hits;  // 不是内容决策报告, 跳过
@@ -190,10 +190,12 @@ function checkReport(content, file) {
 async function scan(files) {
   const allHits = [];
   for (const file of files) {
-    // 豁免: 门童脚本自身 + .hermes/regression-guard/ + GSC数据/ 自身
+    // 豁免: 门童脚本自身 + .hermes/regression-guard/ + GSC数据/ 自身 + src/ 代码目录 (代码文件不含 GSC 词级证据, 不算内容决策报告)
+    const relFile = file.replace(/\\/g, '/');
     if (file.includes('gsc-source-guard.js') ||
         file.includes('.hermes/regression-guard/') ||
-        file.includes('GSC数据/')) {
+        file.includes('GSC数据/') ||
+        /^src\//.test(relFile)) {
       continue;
     }
 

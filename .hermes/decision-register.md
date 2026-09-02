@@ -131,6 +131,8 @@
 | **D-9/2-34** | 9/2 20:28 | **en china/factory-direct 内容线 9 月策划稿 + 10 月落地预算** | M3+K3 | 🔴 OPEN | 待 M3 写策划 + K3 拍 (per GLM 关键建议 #5, china catalog printing imps +110% 战略信号) |
 | **D-9/2-35** | 9/2 09:05 | **R0 4 子项实证产物** (GA4 截图 / Supabase 归因表 / PayPal 工单号 / IndexNow 200 log) | K3+M3 | 🟡 IN_PROGRESS | IndexNow ✅ (commit fe93f5f7 HTTP 202), 其余 3 ⚪ K3 必给 (per GLM 关键建议 #3) |
 | **D-9/2-36** | 9/2 20:28 | **GLM 关键建议 1 (9/3 15:00 GSC 校准窗口) 9 月 7 项 P0 收敛** | M3 | 🟡 IN_PROGRESS | D-9/2-27 GSC 校准待执行 (stalenessDays 16 天, 9/3 15:00 必拉新数据) |
+| **D-9/2-34** | 9/2 20:28 | **en china/factory-direct 内容线 9 月策划稿 + 10 月落地预算** (GLM 关键建议 #5, china catalog printing imps +110% 战略信号) | M3+K3 | 🟡 IN_PROGRESS | docs/2026-09-02-k3-en-china-factory-direct-content-line.md (22.2 KB, 9 月策划稿落地) + 10 月落地预算 15,000-26,000 元/月 K3 必拍 |
+| **D-9/2-24** | 9/2 08:06 | **校园 Pillar go/no-go** (9/3 GSC 90 天取证 → 9/8 拍板) | M3+K3 | 🟡 IN_PROGRESS | docs/2026-09-02-k3-campus-pillar-content-line.md (25.2 KB, 9 月策划稿 + go/no-go 拍板框架) + K3 9/8 拍 go/no-go |
 | **D-9/2-15** | 9/2 09:05 | **IndexNow 自解锁** 第三次催办: M3 生成 32 位十六进制 key + 托管 {key}.txt, 10 分钟, 两次提醒仍未做 | M3 | 🔴 OPEN | 待 M3 10 分钟内完成 (IndexNow 200 响应 log) |
 | **D-9/2-16** | 9/2 09:05 | **R6 收尾**: 8 Rush* 文件按 K3 拍板 commit 到 feat/rush-redesign-0827 分支 + build 验证 | M3 | 🔴 OPEN | 分支名+build log (K3 预览窗 48h 从分支建立时起算) |
 | **D-9/2-17** | 9/2 09:05 | **R0 四项解锁**: GA4 G-XXXX 接入 / Supabase SQL 跑通首份归因报告 / PayPal 工单+Stripe 并行 / IndexNow 自解锁 | K3+M3 | ⚪ BLOCKED | GA4 G-XXXX 等 K3 提供 (R0 PENDING 5 天) |
