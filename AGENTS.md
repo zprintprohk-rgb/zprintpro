@@ -2071,22 +2071,184 @@ www.zprintpro.com/枚から            → zprintpro.com/            301
 > **首版**: v1.0 (2026-09-01)
 > **转正**: v1.1 (2026-09-15 shadow mode FP 复盘后)
 
-### §0.31.1 5 道门童 (5 Guards)
+### §0.31.1 7 道门童 (7 Guards, v1.2 升级)
 
-| # | 门童 | 严重度 | v1.0 (9/1-9/15) | v1.1 (9/15 后) | 脚本 |
-|---|------|--------|------------------|----------------|------|
-| #1 | 数据诚信 (credibility) | 🟠 orange | shadow (仅警告) | FP<10% → --strict 硬拦 | `scripts/guards/credibility-guard.js` |
-| #2 | 真实电话 (phone) | 🔴 red | 硬拦 (默认) | 硬拦 (默认) | `scripts/guards/phone-guard.js` |
-| #3 | 品牌分层 (brand) | 🔴 red | 硬拦 (默认) | 硬拦 (默认) | `scripts/guards/brand-guard.js` |
-| #4 | 跨语言污染 (i18n) | 🟡 yellow + 🔴 red 部分 | shadow + 部分硬拦 | FP<10% → --strict-all 硬拦 | `scripts/guards/i18n-guard.js` |
-| #5 | SOP-10 5 问门禁 (sop10) | 🟡 yellow + 🔴 red 秘密泄漏 | shadow + 秘密泄漏硬拦 | FP<10% → --strict-all 硬拦 | `scripts/guards/sop10-guard.js` |
+| # | 门童 | 严重度 | v1.0 (9/1-9/15) | v1.1 (9/15 后) | v1.2 (9/2 数据口径升级) | 脚本 |
+|---|------|--------|------------------|----------------|--------------------------|------|
+| #1 | 数据诚信 (credibility) | 🟠 orange | shadow (仅警告) | FP<10% → --strict 硬拦 | +4 位数无来源 / X 大行业 / X 重 | `scripts/guards/credibility-guard.js` |
+| #2 | 真实电话 (phone) | 🔴 red | 硬拦 (默认) | 硬拦 (默认) | 硬拦 (默认) | `scripts/guards/phone-guard.js` |
+| #3 | 品牌分层 (brand) | 🔴 red | 硬拦 (默认) | 硬拦 (默认) | 硬拦 (默认) | `scripts/guards/brand-guard.js` |
+| #4 | 跨语言污染 (i18n) | 🟡 yellow + 🔴 red 部分 | shadow + 部分硬拦 | FP<10% → --strict-all 硬拦 | FP<10% → --strict-all 硬拦 | `scripts/guards/i18n-guard.js` |
+| #5 | SOP-10 5 问门禁 (sop10) | 🟡 yellow + 🔴 red 秘密泄漏 | shadow + 秘密泄漏硬拦 | FP<10% → --strict-all 硬拦 | FP<10% → --strict-all 硬拦 | `scripts/guards/sop10-guard.js` |
+| #6 | 实体注册 (entity) | 🔴 red | 🔴 硬拦 (§0.32 P0) | 🔴 硬拦 (§0.32 P0) | 🔴 硬拦 (§0.32 P0, 战略级分层 zh-hk 禁 / ja 允许 / en 暂保留) | `scripts/guards/entity-guard.js` |
+| #7 | 数据口径 (count) | 🟠 orange | — | — | shadow (K3 9/2 08:09 push 痛骂触发, 9/15 FP 复盘 <10% 后升硬拦) | `scripts/guards/count-guard.js` (新) |
 
-**门童 v1.0 规则集 (K3 9/1 15:06 拍板)**:
-- 门童 #1 数据诚信 11 类: ISO 9001 / FSC-C\d{6} / TÜV / 1,000+ / 4 位数无来源 / X 大行业 / X 重 / 国际顶级 / 15 年 / 自设厂房 / 海德堡 (per §0.23 数据诚信 4 次拍板)
-- 门童 #2 真实电话 4 类: +852 黑名单 / wa.me/852 黑名单 / +86 198 8085 1334 白名单 / 非白名单电话 (per §13.10 真实主体)
-- 门童 #3 品牌分层 5 类: 双品牌 / 错字 智印印港 / 跨语言混用 / ja alternate ジープリント / 一致性 (per §13.16 v2)
-- 门童 #4 跨语言污染 6 类: 简体字残留 / title 字符体检 / meta 字符体检 / 半角全角 / 币种格式 / food-boxes 跨语言 (per §0.29 v3.1)
-- 门童 #5 SOP-10 8 类: 证书号 / 24h SLA / 海德堡 6+1 / 12 大行业 / 国际顶级 / 4 位数 / 15 年 / 秘密泄漏 (per §0.22 + §0.27.8)
+**v1.2 升级源 (K3 9/2 08:15 push 痛骂 "反审门童呢，把规则写完整")**:
+- 7 道门童规则完整展开 (per §0.31.1.1 ~ §0.31.1.7)
+- 门童 #6 §0.32 战略级分层注释 (K3 9/2 06:04)
+- 门童 #7 数据口径必填 (K3 9/2 08:09 push 痛骂, 4 口径对照表)
+- v1.0 → v1.1 → v1.1.1 → v1.2 演化源头完整
+
+### §0.31.1.1 门童 #1 数据诚信 (credibility-guard.js) — 11 类规则完整展开
+
+| Rule ID | 规则名 | 严重度 | Pattern | 修法 | K3 拍板 |
+|---------|--------|--------|---------|------|---------|
+| CRED_ISO_9001 | ISO 9001 认证 (无 K3 拍板来源) | 🟠 orange | `/ISO\s*9001:?(2015)?/g` | 撤除, 改用 "ISO 认证体系" | K3 9/1 12:27 派活包 |
+| CRED_FSC_C123456 | FSC 证书号 (C\d{6}) | 🟠 orange | `/FSC®?\s*-?\s*C\d{6}/g` | 撤除, 改用 "FSC 認証紙" (材质描述, 经营参数白名单) | K3 9/1 12:27 派活包 |
+| CRED_TUV_RHEINLAND | TÜV Rheinland 认证 | 🟠 orange | `/TÜV\s*Rheinland/g` | 撤除 | K3 9/1 12:27 派活包 |
+| CRED_1000_PLUS | 1,000+ / 1000+ 客户 | 🟠 orange | `/\b1,?000\+/g` | 撤除, 改用 "全球客户" | K3 9/1 12:27 派活包 |
+| CRED_4_PLUS_NUMBER | 4 位数无来源数字 | 🟠 orange | `/\b\d{1,3},\d{3}\+?\b/g` | 撤除, 改可验证数字 | K3 9/1 12:27 + §0.30 v3 升级 |
+| CRED_X_INDUSTRIES | X 大行业 / X 大行業 | 🟠 orange | `/\b\d+\s*大\s*[行業行业行業]\b/g` | 撤除, 改 "多行业经验" | K3 9/1 12:27 派活包 |
+| CRED_X_FOLD | X 重 (7 重 / 8 重) | 🟠 orange | `/\b\d+\s*重\b/g` | 撤除, 改 "多道工序" | K3 9/1 12:27 派活包 |
+| CRED_INTL_TOP | 国际顶级 / 國際頂級 | 🟠 orange | `/國際頂級\|国际顶级/g` | 撤除 | K3 9/1 12:27 派活包 |
+| CRED_15_YEARS | 15 年 / 15+ 年 / 十五年 | 🟠 orange | `/\b15\+?\s*年\b\|十五年/g` | 撤除, 改 "多年印刷经验" | K3 9/1 12:27 派活包 |
+| CRED_SELF_FACTORY | 自設廠房 / 自设厂房 | 🟠 orange | `/自設廠房\|自设厂房/g` | 撤除, 改 "深圳平湖廠房 + 香港服務點" | K3 §13.10 真实主体 |
+| CRED_HEIDELBERG | 海德堡 / Heidelberg / HP Indigo | 🟠 orange | `/海德堡\s*柯式\|海德堡\s*6\+1\|Heidelberg\|HP\s*Indigo/g` | 撤除, 改 "进口印刷设备" | K3 9/1 12:27 + §0.22 SOP-10 |
+
+**经营参数白名单 (K3 9/1 15:06 修正 3, 在 common.js `isOperationalWhitelist()` 处理)**:
+- 材质描述: FSC認証紙 / FSC Mix / FSC 100% / FSC Recycled / 大豆油墨 / 碳中和 / FDA / EU REACH
+- 价格/交期/起印量: HK$\s*[\d.]+ / 100\s*個起印 / 100\s*pcs / 100\s*枚 / 18:00\s*截單 / 翌日\s*12:00 / 順豐 / SF Express / DHL\s*\d+-\d+\s*天 / 4\s*天
+- 业务洞察: 帶钱词 / 带钱词 / 速赢词 / 重點詞 / 重点词
+- 命中白名单 = 不算不可验证声明 (仅 yellow 提示)
+
+**Shadow mode KPI (per §0.31.8)**: 拦截率 ≥90% + 误报率 <10% (9/15 FP 复盘后升硬拦)
+
+### §0.31.1.2 门童 #2 真实电话 (phone-guard.js) — 4 类规则完整展开
+
+| Rule ID | 规则名 | 严重度 | Pattern | 修法 | K3 拍板 |
+|---------|--------|--------|---------|------|---------|
+| PHONE_HK_BLACKLIST | +852 港号黑名单 | 🔴 red | `/\+852[\s-]?\d{4}[\s-]?\d{4}/g` | 改 +86 198 8085 1334 (per §13.10 phase-out 181) | K3 §13.10 + K3 9/1 15:06 |
+| PHONE_WA_852 | wa.me/852 港号 wa 链接 | 🔴 red | `/wa\.me\/852\d+/g` | 改 wa.me/8619880851334 | K3 §13.10 + K3 9/1 15:06 |
+| PHONE_NON_WHITELIST | 非白名单电话格式 | 🟠 orange | `/\+\d{1,3}[\s-]?\d{4,}/g` | 确认是 K3 拍板的真实号, 加白名单或撤除 | K3 9/1 15:06 |
+| PHONE_CN_WHITELIST | 唯一白名单 | — | `+86\s*198\s*8085\s*1334` / `wa\.me\/8619880851334` / `8619880851334` | (不拦, 业务号码) | K3 §13.10 真实主体 |
+
+**§0.32 跨项目 P0 强制级: 经营参数白名单不豁免此门童 (电话是品牌资产, 必拦)**
+
+### §0.31.1.3 门童 #3 品牌分层 (brand-guard.js) — 5 类规则完整展开
+
+| Rule ID | 规则名 | 严重度 | Pattern | 修法 | K3 拍板 |
+|---------|--------|--------|---------|------|---------|
+| BRAND_DOUBLE | 双品牌同时出现 | 🔴 red | `/智印港\s*ZprintPro\|ZprintPro\s*智印港\|智印港\s*ジープリント\|ジープリント\s*智印港/g` | 按 locale 单品牌分层 (zh-hk=智印港 / en=ZprintPro / ja=ZprintPro) | K3 9/1 02:54 §13.16 v2 |
+| BRAND_TYPO | 错字 智印印港 | 🔴 red | `/智印印港/g` | 改 智印港 (错字绝写) | K3 §13.16 v2 红线 |
+| BRAND_LOCALE_MISMATCH | 跨语言品牌混用 | 🔴 red | `/[一-鿿]+.*ZprintPro.*[一-鿿]+\|ZprintPro.*[一-鿿]+/g` | 按 locale 单品牌分层 | K3 9/1 02:54 §13.16 v2 |
+| BRAND_JA_ALTERNATE | ja ジープリント 不与 ZprintPro 字面同时出现 | 🟠 orange | `/ジープリント.*ZprintPro\|ZprintPro.*ジープリント/g` | ja alternate ジープリント 单独埋点, 不与 ZprintPro 字面同时出现 | K3 8/8 02:52 §13.16.1 |
+| BRAND_CONSISTENCY | 同页面 brand 出现 > 2 次警告 | 🟡 yellow | (customCheck, 待落地) | 简化文案 | K3 9/1 15:06 |
+
+**§13.16 v2 单品牌分层 (K3 9/1 02:54 拍板)**:
+- zh-hk = 智印港 (单品牌, 不加 ZprintPro 后缀)
+- en = ZprintPro (单品牌)
+- ja = ZprintPro (单品牌)
+- ja alternate "ジープリント" 单独埋点 (per K3 8/8 02:52 §13.16.1)
+- 双品牌 "智印港 ZprintPro" 不再同时出现
+- 错字「智印印港」禁写
+
+### §0.31.1.4 门童 #4 跨语言污染 (i18n-guard.js) — 6 类规则完整展开
+
+| Rule ID | 规则名 | 严重度 | Pattern | 修法 | K3 拍板 |
+|---------|--------|--------|---------|------|---------|
+| I18N_POLLUTION | zh-hk/ja 文本内简体字残留 | 🔴 red | `/[复电业为发这们个时来会说过对开现应学页]/g` | 改繁体字 (per §0.29 v3.1 跨语言污染零容忍) | K3 9/1 15:06 + §0.29 v3.1 |
+| I18N_TITLE_LENGTH | title 字符体检 50-60 当量 | 🟡 yellow | `/title:\s*["']([^"']{1,200})["']/g` + 自定义长度检查 | title 长度 50-60 当量 (中文字符=1.5, ASCII=1) | K3 9/1 10:22 §0.29 v3.1 |
+| I18N_META_LENGTH | meta description 字符体检 150-160 | 🟡 yellow | `/description:\s*["']([^"']{1,500})["']/g` | meta description 长度 150-160 字符 | K3 9/1 10:22 §0.29 v3.1 |
+| I18N_CURRENCY | 币种格式不统一 | 🟡 yellow | `/US\$\|USD\|JPY\|￥/g` | 改 HK$ (跨境统一币种 per zprintpro §5) | K3 §13.10 + K3 9/1 15:06 |
+| I18N_FOOD_BOXES_CROSS | food-boxes en/ja 误用 zh-hk 文本 | 🔴 red | `/food-boxes.*[一-鿿]{20,}/g` | 检查 src/data/sku-seo-data.ts food-boxes 段 | K3 fd22275f 修复 (P0 教训) |
+
+**§0.29 v3.1 字符体检 3 行** (K3 9/1 10:22 拍板):
+- 满格 ≥55 禁加
+- 不足 <45 按序补
+- 跨语言污染零容忍
+
+**半角当量计算** (i18n-guard.js customCheck): 中文字符=1.5 半角当量, ASCII 字符=1
+**title 当量上限 65** (i18n-guard.js 中设 65 而非 60, 留给尾部 5 当量缓冲), 实际目标 50-60
+
+### §0.31.1.5 门童 #5 SOP-10 5 问门禁 (sop10-guard.js) — 8 类规则完整展开
+
+| Rule ID | 规则名 | 严重度 | Pattern | 修法 | K3 拍板 |
+|---------|--------|--------|---------|------|---------|
+| SOP10_CERT_NO | 虚假证书号 (FSC-C123456 / 01 100 150 1234) | 🔴 red | `/FSC-C\d{6}\|01\s*100\s*150\s*1234/g` | 撤除 (per §0.22 SOP-10 第 4 款 + §0.23 数据诚信) | K3 9/1 15:06 + §0.22 + §0.23 |
+| SOP10_24H_SLA | 24h SLA / 99.2% 达成率 (无 K3 拍板) | 🟡 yellow | `/\b24\s*[hH小时]\s*SLA\b\|99\.2%\s*達成率\|99\.2%\s*达成率/g` | 撤除, 改 "急件 18:00 截單翌日 12:00 順豐" | K3 9/1 15:06 + §0.22 5 问 3 款 |
+| SOP10_HEIDELBERG_6_1 | 海德堡 6+1 印刷机 (SOP-10 语境) | 🟡 yellow | `/海德堡\s*6\s*\+\s*1/g` | 撤除, 改 "进口印刷设备" | K3 9/1 15:06 + §0.22 |
+| SOP10_12_INDUSTRIES | 12 大行业 / 4 大行业标配 | 🟡 yellow | `/\b12\s*大\s*[行業行业]\b\|\b4\s*大\s*[行業行业]\s*標配\b\|\b4\s*大\s*[行業行业]\s*标配\b/g` | 撤除, 改 "多行业经验" | K3 9/1 15:06 + §0.22 |
+| SOP10_INTL_TOP | 国际顶级 / 國際頂級 (SOP-10 语境) | 🟡 yellow | `/國際頂級\|国际顶级/g` | 撤除 | K3 9/1 15:06 + §0.22 |
+| SOP10_4_PLUS_NUMBER | 4 位数无来源数字 | 🟡 yellow | `/\b\d{1,3},\d{3}\+?\b/g` | 撤除, 改为可验证数字 | K3 9/1 15:06 + §0.22 + §0.30 v3 |
+| SOP10_15_YEARS | 15 年 / 15+ 年 / 十五年 (SOP-10 语境) | 🟡 yellow | `/\b15\+?\s*年\b\|十五年/g` | 撤除 | K3 9/1 15:06 + §0.22 |
+| SECRET_LEAK | API key / token 硬编码 (per §0.27.8) | 🔴 red | `/(ARK_API_KEY\|sk-[a-zA-Z0-9]{20,}\|pk_live_[a-zA-Z0-9]{20,}\|sk_live_[a-zA-Z0-9]{20,}\|AIRWALLEX_API_KEY=[a-zA-Z0-9-]{20,})/g` | 立即 mavis-trash 删除 + K3 必拍 1 次回复 | K3 8/28 07:48 + §0.27.8 + K3 9/1 15:06 |
+
+**SECRET_LEAK 在豁免路径也强制扫描** (per §0.27.8, sop10-guard.js 中 `isExemptPath` 内 SEC 唯一不豁免)
+
+### §0.31.1.6 门童 #6 实体注册 (entity-guard.js) — 5 类规则完整展开 (v1.1.1 §0.32 P0 战略级分层)
+
+| Rule ID | 规则名 | 严重度 | Pattern | 修法 | K3 拍板 |
+|---------|--------|--------|---------|------|---------|
+| ENTITY_FULL_NAME_ZH | 公司中文全称 (§0.32 第 1 禁词) | 🔴 red | `/深圳市彩龍印刷包裝有限公司\|彩龍印刷包裝有限公司\|深圳市彩龍印刷包裝/g` | 改 智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌 | K3 9/1 18:50 §0.32 拍板 |
+| ENTITY_ADDRESS_ZH | 实体注册地址 (§0.32 第 2 禁词) | 🔴 red | `/廣東省深圳市龍崗區平湖街道嘉城路 1 號\|.../g` (10 个变体) | 改 深圳 (城市名允许, per §0.32 补完) | K3 9/1 18:50 §0.32 拍板 |
+| ENTITY_FULL_NAME_EN | 公司英文名 (§0.32 第 3 禁词) | 🔴 red | `/Shenzhen\s+Cai\s+Long\s+Printing\s+Packaging\s+Co\.\s*,\s*Ltd\./g` | 改 Cai Long Printing (母公司品牌音译允许) | K3 9/1 18:50 §0.32 拍板 |
+| ENTITY_ADDRESS_EN | 注册地址英文 (§0.32 第 4 禁词) | 🔴 red | `/1\s+Jiacheng\s+Road,\s*Pinghu\s+Street,\s*Longgang\s+District,\s*Shenzhen\s+518111/g` | 改 Shenzhen (城市名允许) | K3 9/1 18:50 §0.32 拍板 |
+| ENTITY_ZIPCODE | 邮编 518111 单独使用 (§0.32 第 5 禁词) | 🔴 red | `/\b518111\b\|郵編\s*518111\|邮编\s*518111/g` | 改 深圳 (城市名允许) | K3 9/1 18:50 §0.32 拍板 |
+
+**K3 §0.32 战略级分层** (K3 9/2 06:04 派活包, 跨项目 P0 强制级):
+- **zh-hk**: 5 禁词硬规则 (本门童 red 硬拦, 仅扫描 zh-hk)
+- **ja**: 允许显示公司实际注册信息 (日本合同法/印刷业法要求), 门童自动豁免 ja
+- **en**: 暂保留 (K3 未明说), 门童自动豁免 en
+
+**K3 §0.32 补完** (K3 9/1 18:58 拍板) 6 允许表述 (品牌关系表述 vs 实体注册信息 区分):
+- 智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌
+- 母公司品牌音译: 彩龍 / Cai Long / 彩龍印刷
+- 单独"深圳" / 单独"平湖" 仍然允许
+- "深圳彩龍" 城市+品牌组合允许
+
+**扫描范围 SCAN_LOCALES = ["zh-hk", "zh-HK"]** (entity-guard.js line 84, ja/en 自动豁免)
+
+**v1.0 → v1.1 → v1.1.1 演化**:
+- v1.0 (9/1 15:06 拍板): 5 道门童
+- v1.1 (9/1 18:50 §0.32 拍板): 加门童 #6 实体注册, zh-hk 5 禁词 red 硬拦
+- v1.1.1 (9/2 06:04 派活包): 战略级分层, 注释明确 ja 允许 + en 暂保留 (扫描范围维持 zh-hk only, ja/en 自动豁免)
+
+### §0.31.1.7 门童 #7 数据口径必填 (count-guard.js) — v1.2 新增 (K3 9/2 08:09 push 痛骂触发)
+
+| Rule ID | 规则名 | 严重度 | Pattern | 修法 | K3 拍板 |
+|---------|--------|--------|---------|------|---------|
+| COUNT_NO_SOURCE | 报告无数据来源行 | 🟠 orange | 报告含 "blog 篇数 / SKU 数 / 询盘数 / 客户数" 数字, 但缺 "数据来源:" 行 | 补 "数据来源:" 行 + 4 口径对照表 + 校准日期 | K3 9/2 08:09 push 痛骂 |
+| COUNT_NO_4_LOCALE | 报告无 4 口径对照表 | 🟠 orange | 报告含数字, 但缺 zh-hk 79 / en 80 / ja 80 / blog-posts.ts 85 双口径 | 补 4 口径对照表 (per §0.33.1) | K3 9/2 08:09 + §0.33.1 |
+| COUNT_NO_CALIBRATION | 报告无校准日期 | 🟡 yellow | 报告含数字, 但缺 "校准日期" 字段 | 补 "校准日期: YYYY-MM-DD HH:MM" | K3 9/2 08:09 + §0.23 |
+| COUNT_MISLEADING | 报告口径与数据源不符 | 🟠 orange | 报告口径 (zh-hk 79) 与 SSoT 口径 (85) 不一致, 但未标双口径 | 标 "vs blog-posts.ts SSoT 85 双口径" (per §0.33) | K3 9/2 08:09 |
+| COUNT_NO_RETRACTION | 报告未含撤回声明 | 🟡 yellow | 报告撤回数据/数字, 但缺 "原 commit ID + 撤回日期" | 补撤回声明 (per §0.23 数据诚信红线) | K3 9/2 08:09 + §0.23 |
+
+**严重度执行** (per K3 9/2 08:09 拍板):
+- v1.2 (9/2-9/15): shadow mode 仅警告, 不拦截 commit (per §0.31.6 修正 3)
+- 9/15 FP 复盘: 误报率 <10% 后升硬拦 (per §0.31.8 KPI)
+
+**4 口径对照表 (per §0.33.1, 必填)**:
+
+| 口径 | 真实数量 | 类型 | 何时用 |
+|------|---------|------|--------|
+| zh-hk.json unique slugs | 79 | zh-hk 真实页面内容 | zh-hk 报告 / zh-hk 修复 / zh-hk 优化 |
+| en.json unique slugs | 80 | en 真实页面内容 | en 报告 / en 修复 / en 优化 |
+| ja.json unique slugs | 80 | ja 真实页面内容 | ja 报告 / ja 修复 / ja 优化 |
+| blog-posts.ts SSoT entries | 85 | SSoT 配置 (含 3 locale 衍生 + 6 重复) | CEO 看 SSoT / 总览 / 战略报告 |
+| 跨 locale 并集 | 81 unique | 3 locale 实际总 blog 数 | 跨 locale 报告 |
+| 跨 locale 交集 (3 locale 都有) | 78 unique | 3 locale 同步覆盖 | 3 locale 同步修复 |
+
+**校准日期**: 2026-09-02 08:12 (python _audit_blog_count_*.py 真验证)
+
+**报告必含 3 行** (per §0.33.2, 缺一作废):
+```
+数据来源:
+- <数据源文件 1> (<校准日期>)
+- <数据源文件 2> (<校准日期>)
+- <查询 / 拍板原文 / 校准依据>
+校准状态: 已校准 (commit ID) / 待校准 (下次校准时间)
+撤回声明: (per §0.23 撤回必含原 commit ID + 撤回日期) — 如适用
+```
+
+**PASS 示例** (per §0.33.4):
+> "M3 报告 zh-hk blog 79 unique slugs (vs en 80 + ja 80 + blog-posts.ts SSoT 85), 数据来源 src/data/blog-data/{zh-hk,en,ja}.json + src/data/blog-posts.ts, 校准日期 2026-09-02 08:12, 校准状态 已校准"
+
+**FAIL 反例** (M3 8/24 + 9/2 错例):
+- ❌ "M3 报告 zh-hk 79 blog" (无数据来源 + 无 4 口径 + 无校准日期)
+- ❌ "M3 报告 zh-hk 79 blog 主营 4 Pillar 归类" (无 SSoT 双口径)
+- ❌ "M3 报告 8.2-12.6 询盘/週 n=31 baseline" (M3 编造, 008 未校准, K3 8/24 22:00 撤回)
+
+**触发源**: K3 9/2 08:09 push 痛骂原文 "全部文章 85 明明我们 zh-hk 语言下就有 85 篇，你却说 79... 至少 2 天内有两次说数据不对了"
 
 ### §0.31.2 3 道防线 (3 Defense Lines)
 

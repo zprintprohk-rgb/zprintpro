@@ -32,7 +32,7 @@ const path = require('path');
 
 const GUARDS_DIR = path.join(__dirname, 'guards');
 
-// 6 道门童 (v1.1 升级: 加门童 #6 实体注册, K3 9/1 18:50 拍板 §0.32 P0 强制级)
+// 7 道门童 (v1.2 升级: 加门童 #7 数据口径, K3 9/2 08:09 push 痛骂触发)
 const GUARDS = {
   credibility: require(path.join(GUARDS_DIR, 'credibility-guard.js')),
   phone: require(path.join(GUARDS_DIR, 'phone-guard.js')),
@@ -40,6 +40,7 @@ const GUARDS = {
   i18n: require(path.join(GUARDS_DIR, 'i18n-guard.js')),
   sop10: require(path.join(GUARDS_DIR, 'sop10-guard.js')),
   entity: require(path.join(GUARDS_DIR, 'entity-guard.js')),
+  count: require(path.join(GUARDS_DIR, 'count-guard.js')),
 };
 
 const GUARD_LABELS = {
@@ -48,7 +49,8 @@ const GUARD_LABELS = {
   brand: '门童 #3 品牌分层',
   i18n: '门童 #4 跨语言污染',
   sop10: '门童 #5 SOP-10 5 问门禁',
-  entity: '门童 #6 实体注册 (§0.32 P0 强制级)',
+  entity: '门童 #6 实体注册 (§0.32 P0 强制级, 战略级分层 zh-hk 禁/ja 允许/en 暂保留)',
+  count: '门童 #7 数据口径必填 (§0.33 v1.2 升级, K3 9/2 08:09 push 痛骂触发)',
 };
 
 const args = process.argv.slice(2);
