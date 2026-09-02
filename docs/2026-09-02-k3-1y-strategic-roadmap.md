@@ -100,7 +100,7 @@
 
 | 季度 | 任务 | 交付物 | DoD 铁律 |
 |------|------|--------|----------|
-| 2027 Q1 | **GEO 实体提交** 3 批 (zh-hk/en/ja) | Wikipedia / Wikidata / Crunchbase / Yelp 实体 | 站外实体 3 批提交 + 真人背书 |
+| 2027 Q1 | **GEO 实体 Wikidata 自建** (10 月 Q4 提前) + Google Business Profile 强化 (GBP 已有基础) + 行业目录/黄页批提交 (原 R4 计划) | Wikidata + GBP + 行业目录 三件套 | K3 9/2 09:05 拍板 #1 硬伤 1 修正 (Wikipedia→Wikidata) + GLM 9/2 09:05 §3 |
 | 2027 Q1 | **Reddit/Quora 真人背书** (per GLM R4 长期欠账, GEO 引用的最大缺口) | 50+ Reddit/Quora 真人帖 | 真人背书 + 站外引用 |
 | 2027 Q1 | **標籤 B2B 入口** 立项 (per K3 §11 v2 品类记分卡触发制) | 標籤 B2B Pillar 主页 + 3 cluster + 5 SKU | 深度分 ≥80 + 5 schema |
 
@@ -124,7 +124,10 @@
 | 2026-10-15 | GA4 + 008 询盘归因闭环首次完整跑通 | 询盘品类 + 来源 + 转化阶段 100% | K3 §0.23 + K3 §0.30 v2.2 |
 | 2026-11-15 | AI 引用监测基线 5 问 月度快照 | 5 问快照 + 月度追踪 | Princeton AI Research +36%~67% |
 | 2026-12-15 | 利是封峰 + 全年复盘 | 询盘归档 100% + 4 季度复盘 | K3 §0.30 v2.2 |
-| 2027-01-15 | GEO 实体提交 3 批 (zh-hk/en/ja) | 站外实体 3 批 + 真人背书 | K3 §0.30 v2.2 + GLM 9/2 08:50 |
+| **2026-10-15** | **GEO 实体 Wikidata 自建** (Q4 提前, 成本 1 天, 性价比最高) | Wikidata 条目 + Google Knowledge Graph 扩展 | K3 9/2 09:05 拍板 #1 硬伤 1 修正 (Wikipedia→Wikidata) + GLM 9/2 09:05 §3 |
+| 2026-10-15 | Google Business Profile 强化 (GBP 已有基础) | GBP 完善 | K3 9/2 09:05 拍板 #1 修正版 GEO 三件套 |
+| 2026-10-15 | 行业目录/黄页批提交 (原 R4 计划) | 50+ 行业目录 + 黄页 | K3 §0.30 v2.2 + GLM 9/2 09:05 |
+| **2027-01-15** | **Wikipedia 条件目标** (当第三方媒体 ≥3 篇时再评估) | WP:N significant coverage 满足后再评估 | K3 9/2 09:05 拍板 #1 修正 (Wikipedia 改为条件目标) |
 | 2027-02-15 | Reddit/Quora 真人背书 50+ 真人帖 | 50+ 真人帖 + 站外引用 | K3 §0.30 v2.2 + GLM R4 |
 | 2027-03-15 | 標籤 B2B 入口 立项 | 標籤 B2B Pillar 主页 + 3 cluster | K3 §11 v2 品类记分卡触发制 |
 | 2027-04-15 | ja 权威簇成型 启动 | ja GSC 实证 + 询盘归档 | K3 §11 v2 + Raksul 校准 |
