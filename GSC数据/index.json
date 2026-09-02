@@ -1,0 +1,646 @@
+{
+  "schema": "gsc-data-index-v1",
+  "lastBuild": "2026-09-02T09:31:24.416192",
+  "host": "zprintpro.com",
+  "freshnessGateHours": 72,
+  "totalFiles": 122,
+  "skippedFiles": 0,
+  "latestFreshData": "2026-08-17",
+  "stalenessDays": 16,
+  "freshnessStatus": "STALE",
+  "filesByDate": {
+    "2026-07-08": 7,
+    "2026-07-09": 7,
+    "2026-07-17": 7,
+    "2026-07-31": 7,
+    "2026-08-04": 7,
+    "2026-08-08": 7,
+    "2026-08-09": 6,
+    "2026-08-12": 4,
+    "2026-08-13": 28,
+    "2026-08-17": 28,
+    "extracted-0809": 7
+  },
+  "freshnessRule": ">72h = STALE, 禁止输出带数字结论, 触发刷新, 9/3 15:00 GSC 校准窗口",
+  "dataDimensions": [
+    "query (词级)",
+    "page+query (SKU URL 级)",
+    "country (3 市场 zh-hk/en/ja)",
+    "device",
+    "date"
+  ],
+  "files": [
+    {
+      "path": "GSC数据/2026-08-09/all_queries.csv",
+      "size": 29035,
+      "mtime": "2026-08-18T05:01:55.272587"
+    },
+    {
+      "path": "GSC数据/2026-08-09/country.csv",
+      "size": 1968,
+      "mtime": "2026-08-18T05:01:55.273583"
+    },
+    {
+      "path": "GSC数据/2026-08-09/en_queries.csv",
+      "size": 16227,
+      "mtime": "2026-08-18T05:01:55.273583"
+    },
+    {
+      "path": "GSC数据/2026-08-09/ja_queries.csv",
+      "size": 3777,
+      "mtime": "2026-08-18T05:01:55.273583"
+    },
+    {
+      "path": "GSC数据/2026-08-09/weekly-summary.md",
+      "size": 1774,
+      "mtime": "2026-08-18T05:01:55.273583"
+    },
+    {
+      "path": "GSC数据/2026-08-09/zh-hk_queries.csv",
+      "size": 9460,
+      "mtime": "2026-08-18T05:01:55.274586"
+    },
+    {
+      "path": "GSC数据/2026-08-12-direct/page_7d_0806_0812.csv",
+      "size": 16966,
+      "mtime": "2026-08-18T05:01:55.275584"
+    },
+    {
+      "path": "GSC数据/2026-08-12-direct/page_imps_28d.csv",
+      "size": 31856,
+      "mtime": "2026-08-18T05:01:55.275584"
+    },
+    {
+      "path": "GSC数据/2026-08-12-direct/page_imps_28d_0708_0804.csv",
+      "size": 30067,
+      "mtime": "2026-08-18T05:01:55.275584"
+    },
+    {
+      "path": "GSC数据/2026-08-12-direct/queries_7d_0806_0812.csv",
+      "size": 9706,
+      "mtime": "2026-08-18T05:01:55.276584"
+    },
+    {
+      "path": "GSC数据/extracted-0809/µÑ޻óµò¦.csv",
+      "size": 11934,
+      "mtime": "2026-08-18T05:01:55.277584"
+    },
+    {
+      "path": "GSC数据/extracted-0809/µɣþ¦óþ+ôµףÕæêþĦ.csv",
+      "size": 113,
+      "mtime": "2026-08-18T05:01:55.278584"
+    },
+    {
+      "path": "GSC数据/extracted-0809/Õø¢իÂ_գ¦Õî¦.csv",
+      "size": 1776,
+      "mtime": "2026-08-18T05:01:55.278584"
+    },
+    {
+      "path": "GSC数据/extracted-0809/Õø¥Þí¿.csv",
+      "size": 239,
+      "mtime": "2026-08-18T05:01:55.278584"
+    },
+    {
+      "path": "GSC数据/extracted-0809/Þ+çµ+ñÕֿ.csv",
+      "size": 53,
+      "mtime": "2026-08-18T05:01:55.278584"
+    },
+    {
+      "path": "GSC数据/extracted-0809/þ¢æÚíÁ.csv",
+      "size": 22081,
+      "mtime": "2026-08-18T05:01:55.279583"
+    },
+    {
+      "path": "GSC数据/extracted-0809/ޫ¥Õñç.csv",
+      "size": 131,
+      "mtime": "2026-08-18T05:01:55.279583"
+    },
+    {
+      "path": "GSC数据/z-printpro.com-Performance-on-Search-2026-07-09/国家_地区.csv",
+      "size": 2486,
+      "mtime": "2026-08-18T05:01:55.280583"
+    },
+    {
+      "path": "GSC数据/z-printpro.com-Performance-on-Search-2026-07-09/图表.csv",
+      "size": 2583,
+      "mtime": "2026-08-18T05:01:55.280583"
+    },
+    {
+      "path": "GSC数据/z-printpro.com-Performance-on-Search-2026-07-09/搜索结果呈现.csv",
+      "size": 89,
+      "mtime": "2026-08-18T05:01:55.280583"
+    },
+    {
+      "path": "GSC数据/z-printpro.com-Performance-on-Search-2026-07-09/查询数.csv",
+      "size": 13168,
+      "mtime": "2026-08-18T05:01:55.280583"
+    },
+    {
+      "path": "GSC数据/z-printpro.com-Performance-on-Search-2026-07-09/网页.csv",
+      "size": 17487,
+      "mtime": "2026-08-18T05:01:55.281584"
+    },
+    {
+      "path": "GSC数据/z-printpro.com-Performance-on-Search-2026-07-09/设备.csv",
+      "size": 138,
+      "mtime": "2026-08-18T05:01:55.290581"
+    },
+    {
+      "path": "GSC数据/z-printpro.com-Performance-on-Search-2026-07-09/过滤器.csv",
+      "size": 56,
+      "mtime": "2026-08-18T05:01:55.291581"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-07-08/国家_地区.csv",
+      "size": 2391,
+      "mtime": "2026-08-18T05:01:55.293683"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-07-08/图表.csv",
+      "size": 1674,
+      "mtime": "2026-08-18T05:01:55.293683"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-07-08/搜索结果呈现.csv",
+      "size": 114,
+      "mtime": "2026-08-18T05:01:55.293683"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-07-08/查询数.csv",
+      "size": 22688,
+      "mtime": "2026-08-18T05:01:55.294684"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-07-08/网页.csv",
+      "size": 27109,
+      "mtime": "2026-08-18T05:01:55.294684"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-07-08/设备.csv",
+      "size": 134,
+      "mtime": "2026-08-18T05:01:55.294684"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-07-08/过滤器.csv",
+      "size": 56,
+      "mtime": "2026-08-18T05:01:55.295682"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-07-17/国家_地区.csv",
+      "size": 2642,
+      "mtime": "2026-08-18T05:01:55.295682"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-07-17/图表.csv",
+      "size": 1924,
+      "mtime": "2026-08-18T05:01:55.296680"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-07-17/搜索结果呈现.csv",
+      "size": 115,
+      "mtime": "2026-08-18T05:01:55.296680"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-07-17/查询数.csv",
+      "size": 26046,
+      "mtime": "2026-08-18T05:01:55.296680"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-07-17/网页.csv",
+      "size": 31982,
+      "mtime": "2026-08-18T05:01:55.297680"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-07-17/设备.csv",
+      "size": 134,
+      "mtime": "2026-08-18T05:01:55.297680"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-07-17/过滤器.csv",
+      "size": 56,
+      "mtime": "2026-08-18T05:01:55.298682"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-07-31/国家_地区.csv",
+      "size": 1702,
+      "mtime": "2026-08-18T05:01:55.299685"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-07-31/图表.csv",
+      "size": 240,
+      "mtime": "2026-08-18T05:01:55.299685"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-07-31/搜索结果呈现.csv",
+      "size": 88,
+      "mtime": "2026-08-18T05:01:55.300683"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-07-31/查询数.csv",
+      "size": 11916,
+      "mtime": "2026-08-18T05:01:55.300683"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-07-31/网页.csv",
+      "size": 20644,
+      "mtime": "2026-08-18T05:01:55.301685"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-07-31/设备.csv",
+      "size": 128,
+      "mtime": "2026-08-18T05:01:55.301685"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-07-31/过滤器.csv",
+      "size": 53,
+      "mtime": "2026-08-18T05:01:55.302684"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-08-04/国家_地区.csv",
+      "size": 2572,
+      "mtime": "2026-08-18T05:01:55.303682"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-08-04/图表.csv",
+      "size": 823,
+      "mtime": "2026-08-18T05:01:55.303682"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-08-04/搜索结果呈现.csv",
+      "size": 116,
+      "mtime": "2026-08-18T05:01:55.303682"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-08-04/查询数.csv",
+      "size": 23116,
+      "mtime": "2026-08-18T05:01:55.304682"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-08-04/网页.csv",
+      "size": 29762,
+      "mtime": "2026-08-18T05:01:55.304682"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-08-04/设备.csv",
+      "size": 132,
+      "mtime": "2026-08-18T05:01:55.305681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-08-04/过滤器.csv",
+      "size": 54,
+      "mtime": "2026-08-18T05:01:55.305681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-08-08/国家_地区.csv",
+      "size": 77,
+      "mtime": "2026-08-18T05:01:55.308682"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-08-08/图表.csv",
+      "size": 2183,
+      "mtime": "2026-08-18T05:01:55.308682"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-08-08/搜索结果呈现.csv",
+      "size": 109,
+      "mtime": "2026-08-18T05:01:55.309681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-08-08/查询数.csv",
+      "size": 5075,
+      "mtime": "2026-08-18T05:01:55.309681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-08-08/网页.csv",
+      "size": 3748,
+      "mtime": "2026-08-18T05:01:55.309681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-08-08/设备.csv",
+      "size": 126,
+      "mtime": "2026-08-18T05:01:55.310680"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-08-08/过滤器.csv",
+      "size": 77,
+      "mtime": "2026-08-18T05:01:55.310680"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-08-08 (1)/国家_地区.csv",
+      "size": 77,
+      "mtime": "2026-08-18T05:01:55.306681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-08-08 (1)/图表.csv",
+      "size": 2212,
+      "mtime": "2026-08-18T05:01:55.306681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-08-08 (1)/搜索结果呈现.csv",
+      "size": 116,
+      "mtime": "2026-08-18T05:01:55.306681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-08-08 (1)/查询数.csv",
+      "size": 11656,
+      "mtime": "2026-08-18T05:01:55.307682"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-08-08 (1)/网页.csv",
+      "size": 5728,
+      "mtime": "2026-08-18T05:01:55.307682"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-08-08 (1)/设备.csv",
+      "size": 128,
+      "mtime": "2026-08-18T05:01:55.307682"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-2026-08-08 (1)/过滤器.csv",
+      "size": 77,
+      "mtime": "2026-08-18T05:01:55.308682"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/国家_地区.csv",
+      "size": 1924,
+      "mtime": "2026-08-18T05:01:55.311680"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/图表.csv",
+      "size": 237,
+      "mtime": "2026-08-18T05:01:55.311680"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/搜索结果呈现.csv",
+      "size": 112,
+      "mtime": "2026-08-18T05:01:55.311680"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/查询数.csv",
+      "size": 16455,
+      "mtime": "2026-08-18T05:01:55.311680"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/网页.csv",
+      "size": 24026,
+      "mtime": "2026-08-18T05:01:55.312681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/设备.csv",
+      "size": 129,
+      "mtime": "2026-08-18T05:01:55.312681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/过滤器.csv",
+      "size": 53,
+      "mtime": "2026-08-18T05:01:55.313682"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-日本市场2026-08-17/国家_地区.csv",
+      "size": 75,
+      "mtime": "2026-08-18T05:01:55.313682"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-日本市场2026-08-17/图表.csv",
+      "size": 223,
+      "mtime": "2026-08-18T05:01:55.313682"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-日本市场2026-08-17/搜索结果呈现.csv",
+      "size": 107,
+      "mtime": "2026-08-18T05:01:55.314681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-日本市场2026-08-17/查询数.csv",
+      "size": 2353,
+      "mtime": "2026-08-18T05:01:55.314681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-日本市场2026-08-17/网页.csv",
+      "size": 2246,
+      "mtime": "2026-08-18T05:01:55.314681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-日本市场2026-08-17/设备.csv",
+      "size": 124,
+      "mtime": "2026-08-18T05:01:55.314681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-日本市场2026-08-17/过滤器.csv",
+      "size": 74,
+      "mtime": "2026-08-18T05:01:55.315682"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-美国市场2026-08-17/国家_地区.csv",
+      "size": 75,
+      "mtime": "2026-08-18T05:01:55.316686"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-美国市场2026-08-17/图表.csv",
+      "size": 223,
+      "mtime": "2026-08-18T05:01:55.316686"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-美国市场2026-08-17/搜索结果呈现.csv",
+      "size": 109,
+      "mtime": "2026-08-18T05:01:55.317684"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-美国市场2026-08-17/查询数.csv",
+      "size": 4731,
+      "mtime": "2026-08-18T05:01:55.317684"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-美国市场2026-08-17/网页.csv",
+      "size": 2692,
+      "mtime": "2026-08-18T05:01:55.317684"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-美国市场2026-08-17/设备.csv",
+      "size": 122,
+      "mtime": "2026-08-18T05:01:55.318684"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-美国市场2026-08-17/过滤器.csv",
+      "size": 74,
+      "mtime": "2026-08-18T05:01:55.318684"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-香港市场2026-08-17/国家_地区.csv",
+      "size": 83,
+      "mtime": "2026-08-18T05:01:55.319679"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-香港市场2026-08-17/图表.csv",
+      "size": 235,
+      "mtime": "2026-08-18T05:01:55.319679"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-香港市场2026-08-17/搜索结果呈现.csv",
+      "size": 88,
+      "mtime": "2026-08-18T05:01:55.320682"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-香港市场2026-08-17/查询数.csv",
+      "size": 4655,
+      "mtime": "2026-08-18T05:01:55.320682"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-香港市场2026-08-17/网页.csv",
+      "size": 5303,
+      "mtime": "2026-08-18T05:01:55.320682"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-香港市场2026-08-17/设备.csv",
+      "size": 125,
+      "mtime": "2026-08-18T05:01:55.321681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-on-Search-香港市场2026-08-17/过滤器.csv",
+      "size": 80,
+      "mtime": "2026-08-18T05:01:55.321681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-日本on-Search-2026-08-13/国家_地区.csv",
+      "size": 75,
+      "mtime": "2026-08-18T05:01:55.322682"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-日本on-Search-2026-08-13/图表.csv",
+      "size": 223,
+      "mtime": "2026-08-18T05:01:55.322682"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-日本on-Search-2026-08-13/搜索结果呈现.csv",
+      "size": 111,
+      "mtime": "2026-08-18T05:01:55.322682"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-日本on-Search-2026-08-13/查询数.csv",
+      "size": 2395,
+      "mtime": "2026-08-18T05:01:55.322682"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-日本on-Search-2026-08-13/网页.csv",
+      "size": 1853,
+      "mtime": "2026-08-18T05:01:55.323682"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-日本on-Search-2026-08-13/设备.csv",
+      "size": 124,
+      "mtime": "2026-08-18T05:01:55.323682"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-日本on-Search-2026-08-13/过滤器.csv",
+      "size": 74,
+      "mtime": "2026-08-18T05:01:55.323682"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-汇总on-Search-2026-08-13/国家_地区.csv",
+      "size": 1830,
+      "mtime": "2026-08-18T05:01:55.324681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-汇总on-Search-2026-08-13/图表.csv",
+      "size": 236,
+      "mtime": "2026-08-18T05:01:55.324681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-汇总on-Search-2026-08-13/搜索结果呈现.csv",
+      "size": 110,
+      "mtime": "2026-08-18T05:01:55.324681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-汇总on-Search-2026-08-13/查询数.csv",
+      "size": 14296,
+      "mtime": "2026-08-18T05:01:55.325681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-汇总on-Search-2026-08-13/网页.csv",
+      "size": 22157,
+      "mtime": "2026-08-18T05:01:55.325681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-汇总on-Search-2026-08-13/设备.csv",
+      "size": 131,
+      "mtime": "2026-08-18T05:01:55.325681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-汇总on-Search-2026-08-13/过滤器.csv",
+      "size": 53,
+      "mtime": "2026-08-18T05:01:55.326682"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-美国on-Search-2026-08-13/国家_地区.csv",
+      "size": 72,
+      "mtime": "2026-08-18T05:01:55.326682"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-美国on-Search-2026-08-13/图表.csv",
+      "size": 213,
+      "mtime": "2026-08-18T05:01:55.326682"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-美国on-Search-2026-08-13/搜索结果呈现.csv",
+      "size": 105,
+      "mtime": "2026-08-18T05:01:55.327681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-美国on-Search-2026-08-13/查询数.csv",
+      "size": 3942,
+      "mtime": "2026-08-18T05:01:55.327681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-美国on-Search-2026-08-13/网页.csv",
+      "size": 2623,
+      "mtime": "2026-08-18T05:01:55.327681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-美国on-Search-2026-08-13/设备.csv",
+      "size": 115,
+      "mtime": "2026-08-18T05:01:55.327681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-美国on-Search-2026-08-13/过滤器.csv",
+      "size": 74,
+      "mtime": "2026-08-18T05:01:55.328681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-香港on-Search-2026-08-13/国家_地区.csv",
+      "size": 83,
+      "mtime": "2026-08-18T05:01:55.328681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-香港on-Search-2026-08-13/图表.csv",
+      "size": 235,
+      "mtime": "2026-08-18T05:01:55.329681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-香港on-Search-2026-08-13/搜索结果呈现.csv",
+      "size": 88,
+      "mtime": "2026-08-18T05:01:55.329681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-香港on-Search-2026-08-13/查询数.csv",
+      "size": 4515,
+      "mtime": "2026-08-18T05:01:55.329681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-香港on-Search-2026-08-13/网页.csv",
+      "size": 5904,
+      "mtime": "2026-08-18T05:01:55.329681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-香港on-Search-2026-08-13/设备.csv",
+      "size": 130,
+      "mtime": "2026-08-18T05:01:55.330681"
+    },
+    {
+      "path": "GSC数据/zprintpro.com-Performance-香港on-Search-2026-08-13/过滤器.csv",
+      "size": 80,
+      "mtime": "2026-08-18T05:01:55.330681"
+    }
+  ],
+  "gsc-api-fresh-data-format": "gsc-fresh-YYYY-MM-DD.json (per §J-1.1 落盘义务, 9/3 15:00 启用)",
+  "actionRequired": "9/3 15:00 GSC 校准窗口: ① 拉新数据 → ② 按 gsc-fresh-2026-09-03.json 格式落盘 → ③ 更新 index.json"
+}

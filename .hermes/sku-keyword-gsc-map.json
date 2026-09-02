@@ -1,0 +1,270 @@
+{
+  "schema": "sku-keyword-gsc-map-v1",
+  "lastBuild": "2026-09-02T01:33:14.870Z",
+  "skuCount": 14,
+  "skuBreakdown": {
+    "包裝盒 (Pillar #1)": 8,
+    "貼紙與標籤 (Pillar #2)": 6
+  },
+  "gscSource": {
+    "index": "GSC数据/index.json",
+    "latestFreshData": "2026-08-17",
+    "stalenessDays": 16,
+    "freshnessStatus": "STALE",
+    "actionRequired": "9/3 15:00 GSC 校准窗口必拉新数据"
+  },
+  "dataSources": {
+    "pageImps28d": "F:\\zprintpro-nextjs\\GSC数据/2026-08-12-direct/page_imps_28d.csv (490 行, 8/12-direct)",
+    "pageData817": "F:\\zprintpro-nextjs\\GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/网页.csv (8/17 总数据)"
+  },
+  "threeRules": {
+    "R1": "锚文本 = GSC 实证词 (Break the Web 行业标准, blog Cluster → SKU PDP 内链)",
+    "R2": "SKU 死端禁令 (SKU PDP 必含 ≥1 cluster 主文内链 + 2-3 SKU 互链)",
+    "R3": "Silo 权重单向传导 (Pillar → Cluster → SKU, GoElastic 结构)"
+  },
+  "kpiTargets": {
+    "SKU 词 GSC pos 月度轨迹 (进首页数 / 破 0 click 数)": "TBD 9/30 月度 cron 首跑",
+    "联动完整性 (每 SKU 有主文 / 每 cluster 链 ≥2 SKU / 锚文本实证率 100%)": "TBD 9/30 月度 cron 首跑",
+    "008 询盘归因联动 (SKU 级 query → 询盘归档)": "TBD 9/30 月度 cron 首跑"
+  },
+  "map": [
+    {
+      "sku": "packaging-box-custom-100pcs",
+      "targetKeyword": "custom packaging boxes",
+      "pillar": "包裝盒 (Pillar #1)",
+      "locale": "en",
+      "cluster": "packaging-box-custom-guide",
+      "gsc817": {
+        "imps": 0,
+        "clicks": 0,
+        "avgPos": 0
+      },
+      "gsc812Direct": {
+        "matchedQueries": 0,
+        "topQueries": []
+      },
+      "evidenceChain": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/网页.csv · custom packaging boxes · 0 imps · pos 0 · 0 clicks"
+    },
+    {
+      "sku": "packaging-box-custom-100pcs",
+      "targetKeyword": "訂製包裝盒",
+      "pillar": "包裝盒 (Pillar #1)",
+      "locale": "zh-hk",
+      "cluster": "packaging-box-custom-guide",
+      "gsc817": {
+        "imps": 0,
+        "clicks": 0,
+        "avgPos": 0
+      },
+      "gsc812Direct": {
+        "matchedQueries": 0,
+        "topQueries": []
+      },
+      "evidenceChain": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/网页.csv · 訂製包裝盒 · 0 imps · pos 0 · 0 clicks"
+    },
+    {
+      "sku": "packaging-box-custom-100pcs",
+      "targetKeyword": "パッケージ印刷 カスタム",
+      "pillar": "包裝盒 (Pillar #1)",
+      "locale": "ja",
+      "cluster": "packaging-box-custom-guide",
+      "gsc817": {
+        "imps": 0,
+        "clicks": 0,
+        "avgPos": 0
+      },
+      "gsc812Direct": {
+        "matchedQueries": 0,
+        "topQueries": []
+      },
+      "evidenceChain": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/网页.csv · パッケージ印刷 カスタム · 0 imps · pos 0 · 0 clicks"
+    },
+    {
+      "sku": "cosmetic-card-boxes-gang-run",
+      "targetKeyword": "cosmetic packaging boxes wholesale",
+      "pillar": "包裝盒 (Pillar #1)",
+      "locale": "en",
+      "cluster": "cosmetics-packaging-box-printing-guide",
+      "gsc817": {
+        "imps": 0,
+        "clicks": 0,
+        "avgPos": 0
+      },
+      "gsc812Direct": {
+        "matchedQueries": 0,
+        "topQueries": []
+      },
+      "evidenceChain": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/网页.csv · cosmetic packaging boxes wholesale · 0 imps · pos 0 · 0 clicks"
+    },
+    {
+      "sku": "food-packaging-box-greaseproof",
+      "targetKeyword": "food packaging box FDA",
+      "pillar": "包裝盒 (Pillar #1)",
+      "locale": "en",
+      "cluster": "food-packaging-printing-guide",
+      "gsc817": {
+        "imps": 0,
+        "clicks": 0,
+        "avgPos": 0
+      },
+      "gsc812Direct": {
+        "matchedQueries": 0,
+        "topQueries": []
+      },
+      "evidenceChain": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/网页.csv · food packaging box FDA · 0 imps · pos 0 · 0 clicks"
+    },
+    {
+      "sku": "eco-kraft-packaging-box",
+      "targetKeyword": "eco kraft packaging box",
+      "pillar": "包裝盒 (Pillar #1)",
+      "locale": "en",
+      "cluster": "eco-printing",
+      "gsc817": {
+        "imps": 0,
+        "clicks": 0,
+        "avgPos": 0
+      },
+      "gsc812Direct": {
+        "matchedQueries": 0,
+        "topQueries": []
+      },
+      "evidenceChain": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/网页.csv · eco kraft packaging box · 0 imps · pos 0 · 0 clicks"
+    },
+    {
+      "sku": "magnetic-closure-gift-box-ecommerce",
+      "targetKeyword": "magnetic closure gift box",
+      "pillar": "包裝盒 (Pillar #1)",
+      "locale": "en",
+      "cluster": "packaging-box-custom-guide",
+      "gsc817": {
+        "imps": 0,
+        "clicks": 0,
+        "avgPos": 0
+      },
+      "gsc812Direct": {
+        "matchedQueries": 0,
+        "topQueries": []
+      },
+      "evidenceChain": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/网页.csv · magnetic closure gift box · 0 imps · pos 0 · 0 clicks"
+    },
+    {
+      "sku": "cross-border-ecommerce-shipping-box",
+      "targetKeyword": "cross border ecommerce shipping box",
+      "pillar": "包裝盒 (Pillar #1)",
+      "locale": "en",
+      "cluster": "cross-border-ecommerce-shipping-box-guide",
+      "gsc817": {
+        "imps": 0,
+        "clicks": 0,
+        "avgPos": 0
+      },
+      "gsc812Direct": {
+        "matchedQueries": 0,
+        "topQueries": []
+      },
+      "evidenceChain": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/网页.csv · cross border ecommerce shipping box · 0 imps · pos 0 · 0 clicks"
+    },
+    {
+      "sku": "waterproof-pvc-sticker",
+      "targetKeyword": "waterproof PVC sticker",
+      "pillar": "貼紙與標籤 (Pillar #2)",
+      "locale": "en",
+      "cluster": "sticker-material-pvc-vinyl-removable",
+      "gsc817": {
+        "imps": 0,
+        "clicks": 0,
+        "avgPos": 0
+      },
+      "gsc812Direct": {
+        "matchedQueries": 0,
+        "topQueries": []
+      },
+      "evidenceChain": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/网页.csv · waterproof PVC sticker · 0 imps · pos 0 · 0 clicks"
+    },
+    {
+      "sku": "waterproof-pvc-sticker",
+      "targetKeyword": "防水貼紙",
+      "pillar": "貼紙與標籤 (Pillar #2)",
+      "locale": "zh-hk",
+      "cluster": "sticker-material-pvc-vinyl-removable",
+      "gsc817": {
+        "imps": 0,
+        "clicks": 0,
+        "avgPos": 0
+      },
+      "gsc812Direct": {
+        "matchedQueries": 0,
+        "topQueries": []
+      },
+      "evidenceChain": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/网页.csv · 防水貼紙 · 0 imps · pos 0 · 0 clicks"
+    },
+    {
+      "sku": "waterproof-pvc-sticker",
+      "targetKeyword": "防水ステッカー",
+      "pillar": "貼紙與標籤 (Pillar #2)",
+      "locale": "ja",
+      "cluster": "sticker-material-pvc-vinyl-removable",
+      "gsc817": {
+        "imps": 0,
+        "clicks": 0,
+        "avgPos": 0
+      },
+      "gsc812Direct": {
+        "matchedQueries": 0,
+        "topQueries": []
+      },
+      "evidenceChain": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/网页.csv · 防水ステッカー · 0 imps · pos 0 · 0 clicks"
+    },
+    {
+      "sku": "clear-transparent-sticker",
+      "targetKeyword": "clear transparent sticker",
+      "pillar": "貼紙與標籤 (Pillar #2)",
+      "locale": "en",
+      "cluster": "sticker-material-pvc-vinyl-removable",
+      "gsc817": {
+        "imps": 0,
+        "clicks": 0,
+        "avgPos": 0
+      },
+      "gsc812Direct": {
+        "matchedQueries": 0,
+        "topQueries": []
+      },
+      "evidenceChain": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/网页.csv · clear transparent sticker · 0 imps · pos 0 · 0 clicks"
+    },
+    {
+      "sku": "gold-foil-sticker",
+      "targetKeyword": "gold foil sticker",
+      "pillar": "貼紙與標籤 (Pillar #2)",
+      "locale": "en",
+      "cluster": "sticker-material-pvc-vinyl-removable",
+      "gsc817": {
+        "imps": 0,
+        "clicks": 0,
+        "avgPos": 0
+      },
+      "gsc812Direct": {
+        "matchedQueries": 0,
+        "topQueries": []
+      },
+      "evidenceChain": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/网页.csv · gold foil sticker · 0 imps · pos 0 · 0 clicks"
+    },
+    {
+      "sku": "baby-product-label-sticker",
+      "targetKeyword": "FDA food safe label",
+      "pillar": "貼紙與標籤 (Pillar #2)",
+      "locale": "en",
+      "cluster": "baby-product-label-sticker-printing-guide",
+      "gsc817": {
+        "imps": 0,
+        "clicks": 0,
+        "avgPos": 0
+      },
+      "gsc812Direct": {
+        "matchedQueries": 0,
+        "topQueries": []
+      },
+      "evidenceChain": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/网页.csv · FDA food safe label · 0 imps · pos 0 · 0 clicks"
+    }
+  ]
+}

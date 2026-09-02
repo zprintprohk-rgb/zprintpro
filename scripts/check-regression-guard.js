@@ -32,7 +32,7 @@ const path = require('path');
 
 const GUARDS_DIR = path.join(__dirname, 'guards');
 
-// 8 道门童 (v1.3 升级: 加门童 #8 决策登记簿, K3 9/2 09:05 拍板)
+// 9 道门童 (v1.3 升级: 加门童 #9 GSC 数据源, K3 9/2 09:29 派活包)
 const GUARDS = {
   credibility: require(path.join(GUARDS_DIR, 'credibility-guard.js')),
   phone: require(path.join(GUARDS_DIR, 'phone-guard.js')),
@@ -42,6 +42,7 @@ const GUARDS = {
   entity: require(path.join(GUARDS_DIR, 'entity-guard.js')),
   count: require(path.join(GUARDS_DIR, 'count-guard.js')),
   register: require(path.join(GUARDS_DIR, 'register-guard.js')),
+  gscSource: require(path.join(GUARDS_DIR, 'gsc-source-guard.js')),
 };
 
 const GUARD_LABELS = {
@@ -53,6 +54,7 @@ const GUARD_LABELS = {
   entity: '门童 #6 实体注册 (§0.32 P0 强制级, 战略级分层 zh-hk 禁/ja 允许/en 暂保留)',
   count: '门童 #7 数据口径必填 (§0.33 v1.2 升级, K3 9/2 08:09 push 痛骂触发)',
   register: '门童 #8 决策登记簿 (K3 9/2 09:05 拍板 #3, .hermes/decision-register.md SSoT)',
+  gscSource: '门童 #9 GSC 数据源 (K3 9/2 09:29 派活包 GLM §J, GSC数据/index.json SSoT 21.8 KB, 新鲜度闸门 72h)',
 };
 
 const args = process.argv.slice(2);

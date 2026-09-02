@@ -233,6 +233,127 @@
 - 2026-08-28 04:50 K3 拍板 §0.26 文件系统访问限制
 
 ---
+## §K Cron 体系更新 (K3 9/2 09:29 派活包 GLM 评估报告, GSC 数据强制源 + SKU 关键词联动 + 门童 #9, 嵌入 5 cron SSoT 头部, 跨项目 P0 强制级)
+
+> **拍板来源**: K3 9/2 09:29 push "思考 GLM 关于我提出的 Blog 的建议, 和一定要去 F:\zprintpro-nextjs\GSC数据 文件夹读取最新的 GSC 数据 或是联网读取 GSC 数据, 标题也要同 GSC 数据 和 SKU 的数据 以及关键词的数据, 深度思考理解问题和要求, 以 9 角色综合最优执行"
+> **配套**: GSC数据/index.json SSoT 21.8 KB (122 文件, 9/2 09:31 真验证) + scripts/guards/gsc-source-guard.js 门童 #9 + scripts/sku-keyword-gsc-map.mjs 14 SKU 起步 + 决策登记簿 D-9/2-25 ~ D-9/2-30
+
+### §K.1 GSC 数据强制源规则 (per GLM §J-1, 所有 cron 适用)
+
+#### §K.1.1 唯一本地事实源 (F:\zprintpro-nextjs\GSC数据\)
+- **主文件**: `gsc-fresh-YYYY-MM-DD.json` (每次抓取按日期落盘, 不覆盖历史, 9/3 15:00 启用)
+- **索引**: `index.json` (文件名 / mtime / 口径 / row 数, 所有 cron 开工前先读)
+- **存量迁移**: 现有 8/7-8/17 GSC UI 导出 CSV (122 文件) 已 index, 9/3 15:00 拉新数据时按新格式落盘
+- **数据维度**: query (词级) + page+query (SKU URL 级, §J-2 SKU 联动) + country (3 市场 zh-hk/en/ja) + device + date
+
+#### §K.1.2 落盘义务 (gsc-feedback-loop cron 专属)
+- 每次 run 必须: ① 拉数 (GSC API 优先, UI 导出兜底) → ② 按日期落盘 gsc-fresh-YYYY-MM-DD.json → ③ 更新 index.json
+- 同时拉两个维度: query 维度 (词级) + page+query 维度 (SKU URL 级, 供 §J-2 SKU 联动)
+- API 数据延迟 2-3 天为正常 (seo-stack.io 联网核实)
+
+#### §K.1.3 新鲜度闸门 72h (所有内容决策 cron 必跑)
+- 开工第一步: 读 `GSC数据/index.json` → 文件年龄 >72h = **STALE**
+- **STALE 状态**: 禁止输出任何带数字的结论 → 触发刷新 → 刷新失败 → 全部标 `PENDING_GSC`
+- **当前状态** (9/2 09:31 真验证): stalenessDays = 16 天, **STALE**, 9/3 15:00 GSC 校准窗口必拉新数据
+
+#### §K.1.4 词级证据链 (per K3 9/2 09:29 指令 "Blog 以 GSC 数据为事实依据")
+- 任何选题 / title / meta / 词决策必引用: `GSC数据/gsc-fresh-YYYY-MM-DD.json · [query] · [imps] imps · pos [x] · [clicks] clicks`
+- 无此引用链 = 决策无效, 门童 #9 gsc-source-guard 拦截
+- 与门童 #7 数据口径 (zh-hk 79 / en 80 / ja 80 / SSoT 85) 互补 (#7 管"口径", #9 管"GSC 证据链")
+
+### §K.2 SKU↔Blog↔GSC 三向联动机制 (per GLM §J-2, K3 9/2 09:29 指令 "同 SKU 搜索排名与关键词联动提升权重与 SEO+AEO+GEO")
+
+#### §K.2.1 sku-keyword-gsc-map (周度刷新 / 月度审计, 9/5 前 v1 起步)
+- **结构**: | SKU | targetKeyword | GSC pos/imps/clicks | Pillar/Cluster | 主题 cluster 主文 | 锚文本 |
+- **数据源**: §K.1.2 page+query 维度 (/zh-hk/product/* /en/product/* /ja/product/* URL 命中的 query → 映射到 SKU)
+- **14 SKU 起步** (per K3 9/2 09:05 拍板): 包裝盒 8 + 贴纸 6, Q4 扩全量
+- **脚本**: `scripts/sku-keyword-gsc-map.mjs` (9/3 15:00 GSC 校准窗口跑)
+
+#### §K.2.2 三条联动规则
+- **R1 锚文本 = GSC 实证词** (Break the Web 行业标准): blog Cluster → SKU PDP 的内链锚文本, 必使用该 SKU 有 GSC imps 的词, 禁止使用无实证的编造词 (对接 §0.22 SOP-10 D.3 红线)
+- **R2 SKU 死端禁令**: 每个 SKU PDP 必含 ≥1 主题 cluster 主文内链 + 2-3 个相关 SKU 互链 (用户在决策时刻比较, product 页链出 = equity 传导 + 用户留存双收益)
+- **R3 Silo 权重单向传导** (GoElastic 结构): Pillar → Cluster → SKU 自上而下导权; SKU 层的外部/内部 equity 通过"回 Pillar"内链回流顶部, 形成闭环
+
+#### §K.2.3 联动 KPI (进 monthly cron 新增 §SKU 联动审计节)
+- SKU 词 GSC pos 月度轨迹 (进首页数 / 破 0 click 数)
+- 联动完整性: 每 SKU 有主文 / 每 cluster 链 ≥2 SKU / 锚文本实证率 100%
+- 与 008 询盘归因联动: SKU 级 query → 询盘归档 (品类+来源+词)
+
+### §K.3 逐 Cron 更新清单 (per GLM §J-3)
+
+| Cron | 新增指令 (本 §K 段必嵌入) |
+|------|---------------------------|
+| **gsc-feedback-loop** (9/3 15:00 首跑) | 落盘义务 (§K.1.2) + page+query 维度拉 SKU URL 数据 + STALE 告警升级为报告顶部横幅 + §K.1.4 词级证据链必引用 |
+| **daily-content-1x7w** | 选题闸门 5 问 → 6 问: 新增"**GSC 证据链引用了吗? (文件名+query+imps+pos)**" — 无引用不立项 |
+| **blog-deepfix** | 选 blog 依据必词级证据引用 (现行做法制度化); 报告必含 GSC 来源行; 修复前/修复后均引同一文件同口径 |
+| **weekly-meta-refresh** | R2 摘果逻辑制度化: pos≤10 且 CTR<1% = 强制 title/desc 重写队列 (CTR 故事问题); pos 11-20 = 内容补强队列 — 每词从 sku-keyword-gsc-map 与词级数据自动派生 |
+| **monthly-content-authority-audit** | 新增 §SKU 联动审计节: sku-keyword-gsc-map 全表 + 联动完整性三项 + SKU 词轨迹 + 死端检测报告 |
+
+### §K.4 门童 #9 gsc-source-guard (per GLM §J, v1.2 → v1.3 升级)
+
+| 项 | 设计 |
+|----|------|
+| 触发 | 任何含内容决策或数字的报告 |
+| 检查 ① | GSC 来源行存在 (文件名 + 校准日期) — 与门童 #7 互补 (#7 管"口径", #9 管"GSC 证据链") |
+| 检查 ② | 所引 GSC 文件年龄 ≤72h (读 index.json 实时校验, 防"引用旧文件当新证据") |
+| 检查 ③ | 选题/词决策含词级证据 (query+imps+pos 完整三元组) |
+| 执法 | 🟡 yellow shadow (与现有门童同步), 9/15 FP 复盘 <10% 后随批次升 red |
+| 入库 | error-patterns 新增模式: "无 GSC 来源的内容决策" (首次实例: 8/29-9/1 断档期间任何潜在决策) |
+| 落地 | `scripts/guards/gsc-source-guard.js` (9/2 09:33 落地) + check-regression-guard.js 主入口加 GUARDS.gsc-source (10 道门童) |
+
+### §K.5 当前 GSC 数据状态 (per K3 9/2 09:29 + §K.1.3 新鲜度闸门, 9/2 09:31 真验证)
+
+- **GSC数据/**: 122 文件, index.json SSoT 21.8 KB
+- **最新数据**: 2026-08-17 (3 市场 × 7 文件, 总 + 香港 + 美国 + 日本 = 28 文件 + 子文件夹)
+- **页面维度** (8/12-direct): 4 文件, 1571 行 page+query 维度 (§J-2 SKU 联动基础)
+- **freshnessStatus**: **STALE** (stalenessDays = 16 天, >72h 红线)
+- **行动**: 9/3 15:00 GSC 校准窗口必拉新数据 → 按 gsc-fresh-2026-09-03.json 落盘 → 更新 index.json
+
+### §K.6 8/17 3 市场前 5 词 (per §K.1.4 词级证据链, 真验证)
+
+- **香港市场** (187 行): 證書印刷 (8 imps, pos 11.38) / 海報印刷一張 (4 imps, pos 13.75) / a2 印刷 即日 (3 imps, pos 3.67) / 智印港 (1 imps, pos 1) / 係邊買 (1 imps, pos 4)
+- **美国市场** (143 行): china catalog printing (12 imps, pos 19.67) / flyer printing (1 imps, pos 6) / print a5 flyers (1 imps, pos 7) / saddle stitch booklet (18 imps, pos 77.67) / saddle stitch booklets (17 imps, pos 89.76)
+- **日本市场** (70 行): 両面カラー印刷 (24 imps, pos 19.17) / 教材 印刷製本 (14 imps, pos 50.71) / カタログ 印刷 (13 imps, pos 49.77) / a5とa6どっちが大きい (9 imps, pos 11.78) / クラフト紙 パッケージ印刷 (9 imps, pos 27)
+
+### §K.7 9 角色综合战略判定 (per K3 9/2 09:29 派活包)
+
+| 角色 | 战略判定 |
+|------|---------|
+| **战略军师** | "貼紙知識 9" vs "贴纸知識 1" = 简繁混用 = 数据诚信问题 (zh-hk 全部"貼紙"繁体 + 全部主营 4 Pillar 统筹) |
+| **CEO** | 4 Pillar 全部 Pillar 化 (包裝盒 / 貼紙與標籤 / 宣傳單張 / 校園教育) × 1 主 Pillar = 月营收 1M+ HKD |
+| **PM** | 5 阶段 30 天冲刺扩展到全部主营 4 Pillar (与 §J.3 5 cron SSoT 同步) |
+| **UI/UX** | 简繁统一 + 全部主营 Pillar 全新升级 + 跨品类 SKU 协同矩阵 |
+| **运营** | 79 unique blog 全部归类 + 4 Pillar × Cluster × SKU 三层协同 (per §J-2) |
+| **CRO** | 4 Pillar 独立月营收潜力 = 主营 4 品类全部 Pillar 化 (包裝盒 / 貼紙 / 宣傳單張 / 校園) |
+| **数据** | 3 locale 全 audit 找"贴纸知識" (简体) 残留 + 全部主营 4 Pillar 79 blog 归类 + §J-2 sku-keyword-gsc-map v1 14 SKU 起步 |
+| **SEO/AEO/GEO** | 4 Pillar × 1 主 = 4 Pillar 全 Pillar 化 + FAQPage 51 页面 + llms.txt 9/30 + §J-2 锚文本 GSC 实证词 |
+| **多语言** | 3 locale 同步 4 Pillar + ja 公司注册信息显示 (per §0.32 v1.1.1 战略级分层) + en 暂保留 |
+
+### §K.8 K3 必拍板 6 项 (per K3 9/2 09:29 派活包 + §0.0 零决策铁律)
+
+| D-ID | 决策 | 状态 |
+|------|------|------|
+| D-9/2-25 | §J 三段指令嵌入 5 cron SSoT (本 commit 落地) | 🟡 IN_PROGRESS |
+| D-9/2-26 | GSC数据/ 文件夹 = 唯一事实源 + 落盘义务 + index.json 索引 (9/2 09:31 落地) | 🟢 DONE (9/2 09:31) |
+| D-9/2-27 | 新鲜度闸门 72h + STALE 禁数字结论 (9/3 15:00 GSC 校准窗口拉新) | 🟡 IN_PROGRESS (待 9/3 15:00 落地) |
+| D-9/2-28 | 门童 #9 gsc-source-guard (9/2 09:33 落地, v1.3) | 🟡 IN_PROGRESS |
+| D-9/2-29 | sku-keyword-gsc-map v1 (14 SKU 起步: 包裝盒 8 + 贴纸 6) + 3 条联动规则 | 🟡 IN_PROGRESS (待 9/3 15:00 GSC 校准窗口拉新后跑) |
+| D-9/2-30 | 选题闸门 6 问制 (新增"GSC 证据链引用了吗?") | 🟡 IN_PROGRESS (本 commit 落地) |
+
+### §K.9 教训固化源头
+
+- 2026-09-02 09:29 K3 push "GSC 数据强制源 + SKU 关键词联动" 派活包
+- 2026-09-02 09:14 K3 push "把这些执行结果指令同步到定时任务中并更新定时任务指令"
+- 2026-09-01 21:12 复盘 cron 重启 3 天断档后首份 (8/29-9/1 GSC 数据 0 落盘)
+- 2026-08-29 21:12 GSC 校准窗口漏跑 (8/30 + 8/31 + 9/1 连续漏跑, 9/1 21:12 重启 = 3 天断档)
+- seo-stack.io 联网核实: GSC UI 16 个月滚动窗口, GSC API 2-3 天数据延迟
+- Break the Web (电商 SEO 机构) 联网核实: product pages 不得成为死端
+- GoElastic silo 结构 (Pillar→Cluster→SKU 单向导权) 联网核实
+- Upward Engine 内链可提升排名最高 40% 联网核实
+
+---
+
+
 
 
 
