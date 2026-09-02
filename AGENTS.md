@@ -2194,6 +2194,148 @@ rm .git/hooks/pre-commit
 
 ---
 
+## §0.32 zh-hk 硬规则: 不出现实体注册信息 (K3 9/1 18:50 拍板, 跨项目 P0 强制级)
+
+> **核心**: zh-hk 语言**绝不出现**以下实体注册信息 (K3 8/7 隐私保护 + 9/1 18:50 拍板硬规则):
+> 1. 公司中文全称: `深圳市彩龍印刷包裝有限公司`
+> 2. 实体注册地址: `深圳市龍崗區平湖街道嘉城路 1 號`
+> 3. 公司英文名: `Shenzhen Cai Long Printing Packaging Co., Ltd.`
+> 4. 注册地址英文: `1 Jiacheng Road, Pinghu Street, Longgang District, Shenzhen 518111`
+> 5. 邮编 518111 单独使用也可能暴露地址, 需合并
+>
+> **可保留** (K3 9/1 18:50 拍板未涉及, 跨项目常态使用):
+> - 品牌名: `智印港` / `ZprintPro` (zh-hk 智印港 ZprintPro, en/ja ZprintPro, per §13.16 双品牌宪法)
+> - 联系人 +86 198 8085 1334 / wa.me/8619880851334
+> - 邮箱 zprintpro@outlook.com
+> - "深圳" 单独作为城市名 (跟香港/新加坡/悉尼并列跨境配送列表, 不可移除)
+> - "平湖" 单独作为街道名 (跟其他街道并列, 不可移除)
+>
+> **执行 SOP** (任何 cron 修复 / 写新 blog / 内链 / 报告):
+> 1. 写新 content 前 grep 上述 5 个禁词, 0 出现才能 push
+> 2. 现有 content 必跑 Python audit 脚本
+> 3. 推后 5 URL verify 必含禁词 grep, 命中立即停止 push + K3 通知
+>
+> **战略级分层** (K3 9/2 06:04 拍板 v1.1.1 升级):
+> - **zh-hk**: 5 禁词硬规则 (本节, P0 强制级)
+> - **ja**: 允许显示公司实际注册信息 (日本合同法/印刷业法要求)
+> - **en**: 暂保留 (K3 未明说, 留 K3 后续拍板)
+>
+> **配套机制**:
+> - §0.31 反审门童 v1.1 加门童 #6 实体注册 (scripts/guards/entity-guard.js)
+> - §13.16 双品牌宪法 (智印港 / ZprintPro / 不写错字)
+> - §0.22 SOP-10 5 问门禁
+>
+> **应用范围**: 任何项目: zprintpro (主战场) + 任何含深圳实体注册的子项目 / 任何 session / 任何交付物 (blog / category / product / page.tsx / faq / footer / contact / 法律页) / K3 拍板后立即执行, 跨 session 永久生效
+>
+> **教训固化源头**: 2026-09-01 18:50 K3 拍板 + 2026-09-02 06:04 战略级分层
+
+---
+
+## §0.32 补完: 允许的品牌关系表述清单 (K3 9/1 18:58 拍板, 跟 §0.32 硬规则配套)
+
+> **核心**: 跟 §0.32 硬规则配套, K3 18:58 拍板明确"智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌" 是允许的 **品牌关系表述** (vs §0.32 禁的 **实体注册信息**), 区别如下:
+>
+> **§0.32 禁的 (实体注册信息, K3 8/7 隐私 + 9/1 18:50 拍板)**: 深圳市彩龍印刷包裝有限公司 / 深圳市龍崗區平湖街道嘉城路 1 號 / 518111 等具体注册字段
+>
+> **K3 18:58 拍的 (允许的品牌关系表述, 跨项目常态使用)**:
+> - 母公司品牌音译: 彩龍 / Cai Long / 彩龍印刷
+> - zh-hk 模板: "智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌"
+> - en 模板: "ZprintPro is the international printing service brand under Cai Long Printing"
+> - ja 模板: "ZprintPro は彩龍印刷旗下の国際印刷サービスブランド"
+> - 单独"深圳"城市名 (跟香港/新加坡/悉尼并列跨境配送) 仍然允许
+> - 单独"平湖"街道名 (跟其他街道并列) 仍然允许
+> - "深圳彩龍"组合 (城市+品牌音译) 允许
+> - 单独"彩龍" 品牌音译允许
+>
+> **触发来源**: 2026-09-01 18:58 K3 拍板 "智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌, 这样就很好了"
+>
+> **应用范围**: 跟 §0.32 同 (跨项目 P0 强制级, zprintpro 主战场, 任何 session 任何交付物)
+
+---
+
+## §0.33 数据口径校准硬规则 (K3 9/2 08:09 push 数据诚信红线拍板, 跨项目 P0 强制级)
+
+> **核心**: 任何 M3 报告含 blog/SKU/询盘/客户等数字, **必标 4 口径对照表** (zh-hk / en / ja / SSoT) + 数据来源行 + 校准日期, 缺则报告作废, K3 不拍板
+>
+> **拍板来源**: K3 9/2 08:09 push 痛骂原文 "全部文章 85 明明我们 zh-hk 语言下就有 85 篇，你却说 79，这些信息是从哪里来的，错误信息，思考理解问题，分析研究后给到最优方案，能读肯定是最新信息，怎么老是老信息，至少 2 天内有两次说数据不对了"
+>
+> **根因**: M3 报告只写 "79 unique slugs 真实口径", 未标 "vs blog-posts.ts SSoT 85 entries" 双口径, K3 看 SSoT 自然觉得 85, 2 次数据不对触发 §0.22 SOP-10 第 3 款 + §0.23 数据诚信红线
+
+**§0.33.1 4 口径对照表 (必标)**:
+
+| 口径 | 真实数量 | 类型 | 何时用 |
+|------|---------|------|--------|
+| **zh-hk.json unique slugs** | **79** | zh-hk 真实页面内容 | zh-hk 报告 / zh-hk 修复 / zh-hk 优化 |
+| **en.json unique slugs** | **80** | en 真实页面内容 | en 报告 / en 修复 / en 优化 |
+| **ja.json unique slugs** | **80** | ja 真实页面内容 | ja 报告 / ja 修复 / ja 优化 |
+| **blog-posts.ts SSoT entries** | **85** | SSoT 配置 (含 3 locale 衍生 + 6 重复) | CEO 看 SSoT / 总览 / 战略报告 |
+| 跨 locale 并集 | 81 unique | 3 locale 实际总 blog 数 | 跨 locale 报告 |
+| 跨 locale 交集 (3 locale 都有) | 78 unique | 3 locale 同步覆盖 | 3 locale 同步修复 |
+
+**§0.33.2 报告必含 3 行 (缺一作废)**:
+
+```
+数据来源:
+- <数据源文件 1> (<校准日期>)
+- <数据源文件 2> (<校准日期>)
+- <查询 / 拍板原文 / 校准依据>
+校准状态: 已校准 (commit ID) / 待校准 (下次校准时间)
+撤回声明: (per §0.23 撤回必含原 commit ID + 撤回日期) — 如适用
+```
+
+**§0.33.3 6 commit 撤回 (per K3 §0.23 撤回必含原 commit ID + 撤回日期)**:
+
+| 原 commit ID | 撤回内容 | 撤回原因 | 撤回日期 |
+|--------------|---------|---------|---------|
+| 01458676 | "79 篇盘点立即起跑" 主营架构 v2 | 数字为 zh-hk.json unique slugs 真实口径没错, 但未标"vs SSoT 85"双口径, 违反 §0.22 SOP-10 第 3 款 | 2026-09-02 08:12 |
+| 9cadce1c | "79→85 SSoT 口径纠正" | 标题正确但 commit body 仍以"79"为基准叙事, 缺少双口径对照表 | 2026-09-02 08:12 |
+| 2f8d9438 | "17 zh-hk 包裝盒 blog 全局调度" (commit body 沿用 79 口径) | 17 blog 占 79 zh-hk 的 21.5%, 报告未标"vs SSoT 85"双口径 | 2026-09-02 08:12 |
+| 3f5a13cb | "9 zh-hk + 9 ja = 18 贴纸 blog 全局调度" (沿用 79 口径) | 9 zh-hk 贴纸占 79 zh-hk 的 11.4%, 报告未标"vs SSoT 85"双口径 | 2026-09-02 08:12 |
+| docs/2026-09-02-k3-printing-blog-reorganization.md (untracked) | "79 unique blog 主营 4 Pillar 归类" | 文档口径需改为"79 zh-hk + 80 en + 80 ja + 85 SSoT 4 口径" | 2026-09-02 08:12 |
+| docs/2026-09-02-k3-packaging-blog-reorganization.md (committed in 2f8d9438) | "17 blog" 沿用 79 口径 | 文档口径需补全 4 口径对照 | 2026-09-02 08:12 |
+
+**注**: 6 commit 内容**实质正确** (数据真实), 撤回的是**报告口径叙述方式**, 不是数据本身。本节 + 5 cron SSoT 升级段 一起 commit 落地后, 6 commit 报告口径升级为 "79 zh-hk + 80 en + 80 ja + 85 SSoT" 双口径叙事。
+
+**§0.33.4 门童 #7 数据口径必填 (升级 v1.1.1 → v1.2)**:
+
+- **触发**: 任何报告含 "blog 篇数 / SKU 数 / 询盘数 / 客户数" 等数字
+- **拦截**: 必须含 "数据来源" 行 + 4 口径对照表 + 校准日期
+- **缺任一** = 0 commit (red 硬拦) / yellow SHADOW 警告 (per §0.31 反审门童 SOP)
+- **落地**: scripts/guards/count-guard.js (9/15 反审门童 v1.0 → v1.1 FP 复盘后升硬拦)
+- **示例** (PASS): "M3 报告 zh-hk blog 79 unique slugs (vs en 80 + ja 80 + blog-posts.ts SSoT 85), 数据来源 src/data/blog-data/{zh-hk,en,ja}.json + src/data/blog-posts.ts, 校准日期 2026-09-02 08:12, 校准状态 已校准"
+
+**§0.33.5 反例 (M3 8/24 + 9/2 错例)**:
+
+- ❌ M3 9/1 01458676 commit: "79 篇盘点立即起跑" — 数字真实但未标"vs SSoT 85"双口径 → K3 9/2 08:09 push 痛骂
+- ❌ M3 9/1 9cadce1c commit: "79→85 SSoT 口径纠正" — 标题正确但 commit body 仍以"79"为基准叙事 → K3 9/2 08:09 push 痛骂
+- ❌ M3 8/24 EOD 报告: "8.2-12.6 询盘/週 n=31 baseline" — 数字为 M3 编造, 008 未校准 → K3 8/24 22:00 撤回 (`docs/eod-retraction-2026-08-24.md`)
+- ✅ 修法: 数据来源行 + 4 口径对照表 + 校准日期 + 撤回声明 (本节 4 件齐)
+
+**§0.33.6 应用范围**:
+
+- 任何项目: zprintpro / aitoptools / togthr / stock-lab
+- 任何 session: 当前 + 未来 + 跨 session
+- 任何报告: EOD / 中检 / K3 升级 / cron 日报 / 战略报告 / 复盘
+- 任何文档: AGENTS.md / docs/*.md / .hermes/*.md / commit message
+- K3 拍板后立即执行, 跨 session 永久生效
+
+**§0.33.7 配套机制**:
+
+- §0.22 SOP-10 第 3 款: 上报拍板前先问"原数据/拍板来源"
+- §0.23 数据诚信红线: 任何报告必含"数据来源"行
+- §0.31 反审门童 SOP: 5 道门童 + 3 道防线 + 自进化 4 步 SOP
+- §0.31.3 自进化 4 步: detect → block → learn → prevent (本节为 learn 落地)
+- 5 cron SSoT 升级段: 嵌入 4 口径对照表
+
+**§0.33.8 教训固化源头**:
+
+- 2026-09-02 08:09 K3 push 痛骂 (2 次数据不对, 根因相同: 未标双口径)
+- 2026-09-01 16:22 K3 拍板 79→85 口径纠正 (commit 9cadce1c, 但未根治)
+- 2026-08-24 22:00 K3 拍板 §0.23 数据诚信红线
+- 跨项目 P0 强制级: 任何 "报告数字未标数据来源" / "未标 4 口径对照" / "未标校准日期" 模式 = 报告作废 + K3 不拍板 + 写事故
+
+---
+
 <!-- autoclaw:feishu-lark-skill-guidance -->
 ## Feishu / Lark Requests
 
@@ -2204,3 +2346,13 @@ When the user asks about Feishu/Lark/飞书 matters, route through Feishu/Lark s
 3. If you find a matching skill that is not installed or enabled, ask the user whether to install/enable and use it before proceeding.
 4. If no matching skill exists, say so briefly and continue with the safest available fallback.
 <!-- /autoclaw:feishu-lark-skill-guidance -->
+
+<!-- autoclaw:zcode-app-context-v1 -->
+<app-context>
+# AutoClaw 桌面端上下文
+
+## 文件与 URL
+- 请将本地网页 URL 以 Markdown 链接形式返回 (例如：[label](http://127.0.0.1:8080))。
+- 文件路径应为绝对路径，或者包含工作区文件夹名称，以便能够相对于工作区解析该路径。
+- 除非另有说明，请将文件引用写成 Markdown 链接 (例如：[name.md](/absolute/path/to/name.md))。
+</app-context>

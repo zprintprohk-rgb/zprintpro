@@ -207,4 +207,137 @@
 - 拦截率统计 (90% 目标 vs 实际)
 - 误报率统计 (<10% 目标 vs 实际)
 - 新增 pattern 数 (期望 ≤ 5/月 = 飞轮收敛)
+
+---
+
+## 事件 K3-2026-09-02-0809-data-credit-crisis-v1 (9/2 08:09 K3 push 痛骂数据诚信老数据)
+
+> **拍板来源**: K3 9/2 08:09 push 痛骂原文 "全部文章 85 明明我们 zh-hk 语言下就有 85 篇，你却说 79，这些信息是从哪里来的，错误信息，思考理解问题，分析研究后给到最优方案，能读肯定是最新信息，怎么老是老信息，至少 2 天内有两次说数据不对了"
+>
+> **事件 ID**: K3-2026-09-02-0809-data-credit-crisis-v1
+>
+> **事件名**: 6 commit 数据口径未标双口径 (zh-hk 79 unique slugs vs blog-posts.ts SSoT 85 entries)
+>
+> **严重度**: 🟠 orange (数据诚信, 9/15 FP 复盘后升硬拦)
+>
+> **数据来源** (per K3 §0.22 SOP-10 第 3 款 + §0.23 数据诚信红线):
+> - `python _audit_blog_count_real.py` 9/2 08:10 真验证
+> - `python _audit_blog_count_deep.py` 9/2 08:12 真验证
+> - `python _simplified_traditional_unify.py` 9/2 08:15 真验证
+> - 校准日期: 2026-09-02 08:12
+> - 校准状态: 已校准 (本事件 commit 落地后)
+
+### 4 口径对照表 (per §0.33.1, 必填)
+
+| 口径 | 真实数量 | 类型 | 何时用 |
+|------|---------|------|--------|
+| **zh-hk.json unique slugs** | **79** | zh-hk 真实页面内容 | zh-hk 报告 / zh-hk 修复 / zh-hk 优化 |
+| **en.json unique slugs** | **80** | en 真实页面内容 | en 报告 / en 修复 / en 优化 |
+| **ja.json unique slugs** | **80** | ja 真实页面内容 | ja 报告 / ja 修复 / ja 优化 |
+| **blog-posts.ts SSoT entries** | **85** | SSoT 配置 (含 3 locale 衍生 + 6 重复) | CEO 看 SSoT / 总览 / 战略报告 |
+| 跨 locale 并集 | 81 unique | 3 locale 实际总 blog 数 | 跨 locale 报告 |
+| 跨 locale 交集 (3 locale 都有) | 78 unique | 3 locale 同步覆盖 | 3 locale 同步修复 |
+
+### 自进化 4 步 SOP (per §0.31.3, K3 9/1 15:06 拍板)
+
+1. **detect** (K3 9/2 08:09): K3 push 痛骂触发"79" vs "85" 口径错位
+2. **block** (M3 9/2 08:10): 立刻 stop 所有 blog 报告, 跑 `python _audit_blog_count_real.py` 真验证
+3. **learn** (本事件): 写本事件 + AGENTS.md §0.33 数据口径校准硬规则 + v8-cron-sot-upgrade-segment.md §I 升级段
+4. **prevent** (落地后): 5 cron SSoT 升级段嵌入 4 口径对照表 + 反审门童 v1.2 加门童 #7 数据口径必填
+
+### 6 commit 撤回声明 (per K3 §0.23 撤回必含原 commit ID + 撤回日期)
+
+| 原 commit ID | 撤回内容 | 撤回原因 | 撤回日期 |
+|--------------|---------|---------|---------|
+| 01458676 | "79 篇盘点立即起跑" 主营架构 v2 | 数字为 zh-hk.json unique slugs 真实口径没错, 但未标"vs SSoT 85"双口径, 违反 §0.22 SOP-10 第 3 款 | 2026-09-02 08:12 |
+| 9cadce1c | "79→85 SSoT 口径纠正" | 标题正确但 commit body 仍以"79"为基准叙事, 缺少双口径对照表 | 2026-09-02 08:12 |
+| 2f8d9438 | "17 zh-hk 包裝盒 blog 全局调度" (commit body 沿用 79 口径) | 17 blog 占 79 zh-hk 的 21.5%, 报告未标"vs SSoT 85"双口径 | 2026-09-02 08:12 |
+| 3f5a13cb | "9 zh-hk + 9 ja = 18 贴纸 blog 全局调度" (沿用 79 口径) | 9 zh-hk 贴纸占 79 zh-hk 的 11.4%, 报告未标"vs SSoT 85"双口径 | 2026-09-02 08:12 |
+| docs/2026-09-02-k3-printing-blog-reorganization.md (untracked) | "79 unique blog 主营 4 Pillar 归类" | 文档口径需改为"79 zh-hk + 80 en + 80 ja + 85 SSoT 4 口径" | 2026-09-02 08:12 |
+| docs/2026-09-02-k3-packaging-blog-reorganization.md (committed in 2f8d9438) | "17 blog" 沿用 79 口径 | 文档口径需补全 4 口径对照 | 2026-09-02 08:12 |
+
+**注**: 6 commit 内容**实质正确** (数据真实), 撤回的是**报告口径叙述方式**, 不是数据本身。
+
+### 门童 #7 数据口径必填 (升级 v1.1.1 → v1.2)
+
+- **触发**: 任何报告含 "blog 篇数 / SKU 数 / 询盘数 / 客户数" 等数字
+- **拦截**: 必须含 "数据来源" 行 + 4 口径对照表 + 校准日期
+- **缺任一** = 0 commit (red 硬拦) / yellow SHADOW 警告 (per §0.31 反审门童 SOP)
+- **落地**: scripts/guards/count-guard.js (9/15 反审门童 v1.0 → v1.1 FP 复盘后升硬拦)
+- **配套**: v8-cron-sot-upgrade-segment.md §I 升级段 + AGENTS.md §0.33 8 子节
+
+### 5 cron SSoT 升级段嵌入
+
+- `.hermes/cron-prompts/zprintpro-daily-content-1x7w.md` 头部追加 §I 摘要
+- `.hermes/cron-prompts/zprintpro-weekly-meta-refresh.md` 头部追加 §I 摘要
+- `.hermes/cron-prompts/zprintpro-gsc-feedback-loop.md` 头部追加 §I 摘要
+- `.hermes/cron-prompts/zprintpro-monthly-content-authority-audit.md` 头部追加 §I 摘要
+- `.hermes/cron-prompts/zprintpro-blog-deepfix.md` (v9.6) 头部追加 §I 摘要
+
+### K3 必拍板项 (per §0.0 零决策铁律, 5 项)
+
+1. 是否同意 6 commit 报告口径升级为"79 zh-hk + 80 en + 80 ja + 85 SSoT" 4 口径对照叙事 (建议: 同意)
+2. 门童 #7 数据口径必填是否升硬拦 (建议: 9/15 FP 复盘 <10% 后升)
+3. 6 commit 历史是否 amend (建议: 不 amend, AGENTS.md §0.33 永久生效)
+4. zh-hk 32 类 700+ 简体残留是否整改 (建议: 仅改 20 处真需改的, 等 K3 拍板)
+5. K3 9/2 07:59 "贴纸知識 9+1 简体" 误判是否需要 K3 主动撤销 (建议: 已在 §I.6 文档化纠错)
+
+### 教训固化源头
+
+- 2026-09-02 08:09 K3 push 痛骂 (2 次数据不对, 根因相同: 未标双口径)
+- 2026-09-01 16:22 K3 拍板 79→85 口径纠正 (commit 9cadce1c, 但未根治)
+- 2026-08-24 22:00 K3 拍板 §0.23 数据诚信红线
+- 跨项目 P0 强制级: 任何 "报告数字未标数据来源" / "未标 4 口径对照" / "未标校准日期" 模式 = 报告作废 + K3 不拍板 + 写事故
+
+---
+
+## 事件 K3-2026-09-02-0759-sticker-simp-trad-misjudge-v1 (9/2 07:59 K3 派活包"贴纸知識 9+1 简体"误判)
+
+> **拍板来源**: K3 9/2 07:59 派活包截图 "貼紙知識 9 篇 + 简体 贴纸知识 1 篇 = 10 篇"
+>
+> **事件 ID**: K3-2026-09-02-0759-sticker-simp-trad-misjudge-v1
+>
+> **事件名**: K3 误判 zh-hk 贴纸 blog 简繁混用 (实际全繁体, 0 简体残留)
+>
+> **严重度**: 🟡 yellow (误判, 非 M3 错误, 文档化纠错即可)
+
+### 真验证 (9/2 08:15)
+
+**zh-hk 贴纸/貼紙 blog 数量** (按 slug 含 sticker 关键词):
+- **8 篇**:
+  1. baby-product-label-sticker-printing-guide
+  2. car-dealership-amenity-sticker-printing-guide
+  3. hotel-amenity-sticker-printing-guide
+  4. ip-character-sticker-printing-guide
+  5. pet-food-sticker-printing-guide
+  6. sticker-design
+  7. sticker-guide
+  8. sticker-material-pvc-vinyl-removable
+
+### 简体残留检测
+
+- 简体 "贴纸知识" 残留: **0 次**
+- 简体 "贴纸" 残留: **0 次**
+- 繁体 "貼紙知識" 出现: 2 次
+- 繁体 "貼紙" 出现: 216 次
+
+### 误判根因
+
+K3 截图可能是:
+- 旧版 zh-hk (含简体残留) 已修
+- K3 记忆误差
+- M3 之前 commit 3f5a13cb 报告"9 zh-hk + 9 ja = 18"中 9 zh-hk 实际含 sticker 关键词 8 + sticker-buying-guide 衍生 1 = 9 (K3 可能误以为 9 中有 1 简体, 实际全繁体)
+
+### 处置
+
+- 已在 v8-cron-sot-upgrade-segment.md §I.6 文档化纠错
+- 不需 K3 主动撤销 (误判无 commit 落地)
+- 8 篇贴纸 blog 全部用繁体 "貼紙", K3 9/2 07:59 误判纠正
+
+### 教训
+
+- M3 报告"9 zh-hk 贴纸"应明确标"按 sticker slug 关键词 8 + sticker-buying-guide 衍生 1 = 9"
+- 未来报告含"X 篇 + Y 简体 = Z 篇"必先 grep 验证
+- 已在 §0.33 4 口径对照表涵盖此类误判
+
 - 跨项目复用准备 (v1.3 跨项目)
