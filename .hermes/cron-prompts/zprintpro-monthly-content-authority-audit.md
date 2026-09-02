@@ -1,3 +1,77 @@
+## §I 数据口径校准 (K3 9/2 08:09 push 痛骂数据诚信纠错, 嵌入 5 cron SSoT 头部, 跨项目 P0 强制级)
+
+> **拍板来源**: K3 9/2 08:09 push 痛骂 "全部文章 85 明明我们 zh-hk 语言下就有 85 篇，你却说 79，至少 2 天内有两次说数据不对了"
+> **配套**: AGENTS.md §0.33 数据口径校准硬规则 8 子节 + .hermes/regression-guard/error-log.md K3-2026-09-02-0809 事件 + v8-cron-sot-upgrade-segment.md §I 9 子节 + docs/2026-09-02-k3-blog-count-correction.md 10 KB 纠错报告
+
+### §I.1 4 口径对照表 (per K3 §0.33.1, 必填, 校准日期 2026-09-02 08:12)
+
+| 口径 | 真实数量 | 类型 | 何时用 |
+|------|---------|------|--------|
+| **zh-hk.json unique slugs** | **79** | zh-hk 真实页面内容 | zh-hk 报告 / 修复 / 优化 |
+| **en.json unique slugs** | **80** | en 真实页面内容 | en 报告 / 修复 / 优化 |
+| **ja.json unique slugs** | **80** | ja 真实页面内容 | ja 报告 / 修复 / 优化 |
+| **blog-posts.ts SSoT entries** | **85** | SSoT 配置 (含 3 locale 衍生 + 6 重复) | CEO 看 SSoT / 总览 / 战略报告 |
+| 跨 locale 并集 | 81 unique | 3 locale 实际总 blog 数 | 跨 locale 报告 |
+| 跨 locale 交集 (3 locale 都有) | 78 unique | 3 locale 同步覆盖 | 3 locale 同步修复 |
+
+### §I.2 报告必含 3 行 (per K3 §0.33.2, 缺一作废)
+
+```
+数据来源:
+- <数据源文件 1> (<校准日期>)
+- <数据源文件 2> (<校准日期>)
+- <查询 / 拍板原文 / 校准依据>
+校准状态: 已校准 (commit ID) / 待校准 (下次校准时间)
+撤回声明: (per §0.23 撤回必含原 commit ID + 撤回日期) — 如适用
+```
+
+### §I.3 6 commit 撤回 (per K3 §0.23 + §0.33.3)
+
+- 01458676 (主营架构 v2 "79 篇盘点立即起跑")
+- 9cadce1c (79→85 SSoT 口径纠正, commit body 仍以 79 基准)
+- 2f8d9438 (包裝盒 17 blog 调度 v3)
+- 3f5a13cb (贴纸 18 blog 调度 v2)
+- docs/2026-09-02-k3-printing-blog-reorganization.md (untracked, 升级 4 口径对照)
+- docs/2026-09-02-k3-packaging-blog-reorganization.md (in 2f8d9438, 升级 4 口径对照)
+
+**注**: 6 commit 内容**实质正确** (数据真实), 撤回的是**报告口径叙述方式**, 不是数据本身。
+
+### §I.4 门童 #7 数据口径必填 (升级 v1.1.1 → v1.2)
+
+- 触发: 任何报告含 "blog 篇数 / SKU 数 / 询盘数 / 客户数" 等数字
+- 拦截: 必须含 "数据来源" 行 + 4 口径对照表 + 校准日期
+- 缺任一 = 0 commit (red 硬拦) / yellow SHADOW 警告
+- 落地: scripts/guards/count-guard.js (9/15 FP 复盘 <10% 后升硬拦)
+
+### §I.5 K3 9/2 07:59 派活包"贴纸知識 9+1 简体"误判纠正
+
+K3 截图称 zh-hk 9 贴紙知識 + 1 简体 贴纸知识 = 10 篇, 实际 (9/2 08:15 真验证) zh-hk 8 sticker slug 全繁体, 0 简体残留, 简体"贴纸"残留 0 次, 繁体"貼紙"出现 216 次。
+
+### §I.6 K3 9/2 08:19 派活包 ja/en 市场喜好翻译 (per docs/2026-09-02-k3-ja-en-market-localization.md)
+
+- en 翻译指南 6 必含: Custom/Wholesale/Bulk/Manufacturer + Fast/Rush/Same Day + FDA/CPSC/ASTM + Made in USA + SMB/Enterprise + Free Shipping
+- ja 翻译指南 6 必含: 印刷会社/製作/製作所 + 短納期/翌日/当日/スピード + PSE/JIS/景表法/薬機法/食品衛生法 + 様/御社/貴社 + 激安/格安/送料無料/法人 + OEM/ODM/ロット
+- 3 locale 同步: 4 Pillar 主页 + 8 cluster 主页 + 22-28 SKU PDP 必含 3 locale
+
+### §I.7 K3 必拍板 5 项 (per §0.0 零决策铁律)
+
+1. en 翻译指南 6 必含 + ja 翻译指南 6 必含是否同意 (建议: 同意)
+2. 3 阶段 5 周 30 天冲刺是否同意 (建议: 同意, 9/3-7-8-13-22-30)
+3. 64 blog 缺口翻译 (en 40 + ja 24) 是否 worker 并行 (建议: 是, 5-7 天)
+4. 22-28 SKU 主营协同是否 9/8 同步升级 (建议: 9/8 Pillar 升级日同步)
+5. 5 cron SSoT 头部 §I 摘要嵌入是否本次 commit 一起 (建议: 是, 攒批)
+
+### §I.8 教训固化源头
+
+- 2026-09-02 08:09 K3 push 痛骂 (2 次数据不对, 根因相同: 未标双口径)
+- 2026-09-01 16:22 K3 拍板 79→85 口径纠正 (commit 9cadce1c, 但未根治)
+- 2026-09-02 08:15 K3 push 痛骂 (反审门童规则不全, 升级 v1.0 → v1.2 7 道门童)
+- 2026-09-02 08:19 K3 push 派活包 (ja/en 市场喜好翻译, ja 缺日式 B2B 词)
+- 2026-08-24 22:00 K3 拍板 §0.23 数据诚信红线
+
+---
+
+
 # zprintpro-monthly-content-authority-audit (v8) — K3 9/1 15:59 拍板
 
 > **SSoT 路径**: `.hermes/cron-prompts/zprintpro-monthly-content-authority-audit.md`
