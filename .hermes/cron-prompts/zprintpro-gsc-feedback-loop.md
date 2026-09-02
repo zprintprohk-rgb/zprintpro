@@ -711,6 +711,114 @@ K3 截图称 zh-hk 9 贴紙知識 + 1 简体 贴纸知识 = 10 篇, 实际 (9/2 
 
 ---
 
+
+
+## §N 9/3 GSC 校准前 SOP (K3 9/3 06:51 派活包"按最优执行"落地, 嵌入 5 cron SSoT 头部, 跨项目 P0 强制级)
+
+> **拍板来源**: K3 9/3 06:51 push "按最优执行" (本次派活包) + K3 9/3 06:49 push "9 角色综合能力执行 P0 级问题" (9 角色综合身份) + K3 9/3 06:44 v6 升级版 §06 下一轮 #1 (GSC 校准 P0 唯一系统性解锁节点)
+>
+> **作者**: M3 (Mavis) 9 角色综合战略军师+CEO
+>
+> **校准日期**: 2026-09-03 06:51 (校准前 8h9m 倒计时)
+>
+> **校准窗口**: 2026-09-03 15:00 (M3 自主触发)
+>
+> **配套**: docs/2026-09-03-k3-gsc-calibration-prep.md 23.5 KB (SOP 完整版) + .hermes/decision-register.md D-9/2-37 增量 + 5 cron SSoT §N 段嵌入 (本段)
+
+### §N.1 8h9m 倒计时 4 阶段 SOP
+
+- **06:51 → 14:00 (阶段 1 准备, 7h9m)**: GSC API 凭证可用性确认 + GSC数据/index.json 现状备份 + 校准报告模板 + 5 大下游联动脚本准备 + 校准前门童 #9 + #1 + #7 预跑
+- **15:00 → 17:00 (阶段 2 校准执行, 2h)**: 拉 3 站点 × 2 窗口 GSC API 数据 + 落盘 gsc-fresh-2026-09-03.json + 更新 GSC数据/index.json (STALE 16d → FRESH 0d) + 校准报告 docs/2026-09-03-k3-gsc-calibration-report.md (~20 KB) 落盘 + 校准后门童必跑
+- **17:00 → 19:30 (阶段 3 下游联动, 2.5h)**: sku-keyword-gsc-map v1 重跑 (14 → 30+ SKU) + 校园 9/3 GSC 90 天取证 + P0 #4 src/ 588 处清零 backtest + P0 #6 M1 验收 baseline 校准 + 词图 v3 → v4 升级 + i18n-guard v2 全 src/ 扫描
+- **19:30 → 20:30 (阶段 4 EOD, 1h)**: 1 段报告 K3 9/3 校准结果 + 7 项 P0 解锁状态 + 9/4 9 项 actionable + docs/2026-09-03-k3-gsc-calibration-eod.md (~15 KB) 落盘 + 决策登记簿 D-9/2-27 状态更新
+
+### §N.2 5 大下游联动动作 (校准后立即触发, M3 自主)
+
+| # | 动作 | 联动 P0 | 期限 | 联动证据 |
+|---|------|---------|------|----------|
+| 1 | sku-keyword-gsc-map v1 重跑 (14 → 30+ SKU) | P0 #2/P0 #3 | 9/3 17:30 | .hermes/sku-keyword-gsc-map.json 落盘 |
+| 2 | 校园 9/3 GSC 90 天取证 | P0 #7 校園 Pillar go/no-go | 9/3 18:00 | GSC数据/campus-90d-2026-09-03.json 落盘 |
+| 3 | P0 #4 src/ 588 处清零 backtest | P0 #4 9/12 截止 | 9/3 18:30 | 门童 v1.2 重跑 0 命中 |
+| 4 | P0 #6 M1 验收 baseline 校准 | P0 #6 9/16 截止 | 9/3 18:30 | 7d clicks ≥75 baseline 锁定 |
+| 5 | 词图 v3 → v4 升级 + i18n-guard v2 全 src/ 扫描 | 7 项 P0 全依赖 | 9/3 19:00 | docs/2026-09-03-k3-keyword-map-v4.md 落盘 |
+
+### §N.3 9 角色综合 P0 = GSC 校准 (per K3 9/3 06:49 派活包)
+
+1. **PM产品经理**: 3 站点 × 2 窗口 = 6 dataset 校准, 验收产物 gsc-fresh-2026-09-03.json + GSC数据/index.json FRESH
+2. **UI/UX 设计师**: GSC UI 16m 滚动 vs API 2-3d 延迟明确区分, 校准报告 UX (1 表 1 图 1 地图 1 SKU 联动表)
+3. **运营专家**: 校准直接服务 7 项 P0 中 4 项解锁 (D-9/2-18/20/23/24), 校准后第 1 周 (9/3-9/10) = 解锁窗口
+4. **GLM 数据分析师**: 双窗口 (7d/3m) 对比 + 5 维指标 (CTR/imps/pos/跳出率/转化率) + 校准前后差异阈值 (≥20% ⚠️ / ≥50% 🔴)
+5. **战略军师**: 校准不是单点动作 = v6 升级版 §06 下一轮 #1 唯一系统性解锁节点, 校准前冻结规则 §K.1.3 门童 #9 强制
+6. **CEO 决策者**: 资源投入 1 M3 session 5.5h (15:00-20:30) + 1 docs 校准报告 (~20 KB) + 1 docs EOD 报告 (~15 KB) = 35 KB chars 增量, 风险 3 项 (GSC API 凭证 / 校准差异 ≥50% / commit 时机)
+7. **跨境 EC 实战**: 3 站点差异化 (zh-hk 187 行 / en 143 行 / ja 70 行), 校准数据 = 跨境接单最权威"哪个市场买什么词"地图
+8. **合规翻译**: en 站 china catalog +110% 信号验证是否含 Made in USA 残留 (i18n-guard v2 en 8 禁词), ja 站 両面カラー 24imp 验证是否含 激安 残留 (i18n-guard v2 ja 8 禁词)
+9. **SOP 守门员**: 10 道门童 v1.3 校准前后必跑, 校准后 5 cron SSoT §K 段必更新 (校准日期 + freshnessStatus 0d), §0.0 零决策铁律校准发现任何 src/ 改动必先 K3 拍板
+
+### §N.4 风险评估 (per CEO 决策者)
+
+- **风险 1 · GSC API 凭证不可用**: 14:00 准备时验证, 不可用立即升级 K3 (校准窗口失效)
+- **风险 2 · 校准前后差异 ≥50%**: 立即重判 T1-T4 + 撤回 9/2 校准前所有带数字报告 (per K3 §0.23 数据诚信红线)
+- **风险 3 · 校准后 commit 时机**: 攒批 ≥1 src 行为修复 + 60min 强制兜底 (per §0.25.9 v3)
+- **风险 4 · 决策登记簿 36 项拍板状态重置**: 校准后增量 6-10 项, 不重置已有 36 项
+
+### §N.5 校准前必跑 (14:30 触发, M3 自主)
+
+```bash
+# 14:30 校准前门童必跑 3 道 (per §0.31.1 10 道门童 v1.3)
+cd F:/zprintpro-nextjs
+node scripts/check-regression-guard.js --pre-calibration
+
+# 14:30 校准前 GSC API 凭证验证
+node scripts/gsc-api-credentials-check.js
+
+# 14:30 校准前 SKU 联动脚本准备
+node scripts/sku-keyword-gsc-map.mjs --prepare
+```
+
+### §N.6 校准后必跑 (17:00 触发, M3 自主)
+
+```bash
+# 17:00 校准后门童必跑 3 道
+cd F:/zprintpro-nextjs
+node scripts/check-regression-guard.js --post-calibration
+
+# 17:30 5 大联动脚本执行
+node scripts/sku-keyword-gsc-map.mjs --rerun --post-calibration
+node scripts/campus-90d-extract.mjs --post-calibration
+node scripts/p0-4-src-clear-backtest.mjs --post-calibration
+node scripts/p0-6-m1-baseline.mjs --post-calibration
+
+# 19:00 词图 v3 → v4 升级
+python scripts/keyword-map-v3-to-v4.py
+
+# 19:00 i18n-guard v2 全 src/ 扫描
+node scripts/guards/i18n-guard.js --full-scan
+```
+
+### §N.7 数据来源 (per K3 §0.23 数据诚信红线 + §0.33 数据口径校准硬规则)
+
+- K3 9/3 06:51 push "按最优执行" (本 §N 段拍板)
+- K3 9/3 06:49 push "9 角色综合能力执行 P0 级问题" (9 角色综合身份进入)
+- K3 9/3 06:44 v6 升级版战略军师综合报告 §06 下一轮 #1 (GSC 校准 P0 唯一系统性解锁节点)
+- K3 9/2 20:28 v1 战略军师综合报告 (commit 607af195)
+- 5 cron SSoT §I v2 + §J + §K + §L + §M 段嵌入累计每文件 ~38 KB
+- 决策登记簿 .hermes/decision-register.md (48 D- 项, 9/3 06:44 校准)
+- GSC数据/index.json (STALE 16d, lastBuild 2026-09-02T09:31:24, freshnessGateHours 72)
+- 10 道门童 v1.3 (per AGENTS.md §0.31.1)
+- §0.0 零决策铁律 + §0.25.9 v3 攒批优先 + §0.23 数据诚信 + §0.33 数据口径校准
+- 校准日期: 2026-09-03 06:51
+- 校准窗口: 2026-09-03 15:00 (8h9m 倒计时)
+- 校准状态: 🟡 准备阶段 (校准前)
+
+### §N.8 决策登记簿增量 (D-9/2-37)
+
+- **拍板来源**: K3 9/3 06:51 push "按最优执行" + 9/3 06:49 "9 角色综合能力执行 P0 级问题" + 9/3 06:44 v6 升级版
+- **作者**: M3 (Mavis) 9 角色综合战略军师+CEO
+- **落地**: docs/2026-09-03-k3-gsc-calibration-prep.md + 5 cron SSoT §N 段嵌入 (本段) + 决策登记簿 D-9/2-37 增量
+- **状态**: 🟡 IN_PROGRESS (校准前)
+- **联动 P0**: 7 项 P0 中 4 项 (D-9/2-18/20/23/24) — 校准后解锁
+- **期限**: 9/3 15:00 校准执行触发
+
 ## 【§1 主脑 v2.2 · 30 天极限冲刺 6 原则】（K3 8/30 19:11 拍板 · 5 cron 共享, 必跑)
 
 1. **AI 初稿 → K3 审核 → M3 执行** — 流水线 (per §0.28 1 cron 1 交付物红线)

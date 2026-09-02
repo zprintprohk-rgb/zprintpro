@@ -230,3 +230,81 @@
 **拍板来源**: K3 9/2 09:05 push 痛骂 + GLM 评估报告 v2 §5
 **配套**: scripts/guards/register-guard.js (新建) + check-regression-guard.js 主入口扩展 + 5 cron SSoT §I v2 7 项 P0 替换 13 项 + 1 年战略路线图 v2 修正
 **撤回声明**: per K3 §0.23 撤回必含原 commit ID + 撤回日期 (Wikipedia 自创目标已删 / D-9/1-12 注水纠正 / commit 数 12→4 校正)
+
+
+---
+
+## 7. D-9/2-37 · 9/3 GSC 校准前准备 (per K3 9/3 06:51 派活包「按最优执行」)
+
+**拍板来源**: K3 9/3 06:51 push "按最优执行" (本次派活包) + K3 9/3 06:49 push "9 角色综合能力执行 P0 级问题" (9 角色综合身份) + K3 9/3 06:44 v6 升级版 §06 下一轮 #1 (GSC 校准 P0 唯一系统性解锁节点)
+
+**作者**: M3 (Mavis) 9 角色综合战略军师+CEO
+
+**落地**:
+- docs/2026-09-03-k3-gsc-calibration-prep.md 23.5 KB (校准前准备清单 + 4 阶段 SOP + 5 大下游联动 + 9 角色综合 P0 = GSC 校准)
+- 5 cron SSoT §N 段嵌入 (zprintpro-daily-content-1x7w.md / zprintpro-weekly-meta-refresh.md / zprintpro-gsc-feedback-loop.md / zprintpro-monthly-content-authority-audit.md / zprintpro-blog-deepfix.md, 每文件 +5001 chars = 累计 +25005 chars / 24.4 KB)
+- 决策登记簿 D-9/2-37 增量 (本段)
+
+**状态**: 🟡 IN_PROGRESS (校准前) → 9/3 15:00 校准执行触发后转 🟢 DONE
+
+**联动 P0** (校准后 4 项解锁):
+- D-9/2-18 R2 摘果 4 词 (9/4 截止, **6h 剩余**) — 校准后词图 v4 选 4 词精确化
+- D-9/2-20 Pillar 12 篇深度升级 (9/8-9/22) — 校准后 Pillar 范围精确化
+- D-9/2-23 M1 验收 (9/16 截止) — 校准后 7d clicks ≥75 baseline 锁定
+- D-9/2-24 校園 Pillar go/no-go (9/8 截止) — 校准后 90 天校园流量趋势
+
+**联动 P0 校准前 6 项 ⚪ BLOCKED** (跟 D-9/2-37 同步):
+- D-9/2-32 R2 摘果 4 词 src/ 改动范围 (K3 必拍, 9/4 截止, **6h 剩余**)
+- D-9/2-16 ARK key 撤销重发 (K3 必给, 9/4 09:18 预览窗结束, **26h34m 剩余**)
+- D-9/2-33 12 篇 Pillar 范围 + 深度分 ≥80 + 5 schema + 10 内链 (K3 必拍, 9/8 截止, 5d 剩余)
+- D-9/2-24 校園 Pillar go/no-go (K3 必拍, 9/8 截止, 5d 剩余) — 同步 D-9/2-37 联动
+- D-9/2-17 R0 4 项 GA4 G-XXXX 访问权 + Supabase schema access + PayPal 工单 (K3 必给, 9/10 截止, 7d 剩余)
+- D-9/2-34 en china/factory-direct 10 月落地预算 15,000-26,000 元/月 (K3 必拍, 9/30 截止, 27d 剩余)
+
+**4 阶段 SOP** (per docs/2026-09-03-k3-gsc-calibration-prep.md §2):
+1. 阶段 1 · 14:00 准备 (校准前 1h, 7h9m 后) — GSC API 凭证验证 + 校准前门童 #9 + #1 + #7 预跑
+2. 阶段 2 · 15:00 校准执行 (2h) — 拉 3 站点 × 2 窗口 GSC API + 落盘 gsc-fresh-2026-09-03.json + 更新 GSC数据/index.json STALE → FRESH
+3. 阶段 3 · 17:00 下游联动 (2.5h) — sku-keyword-gsc-map v1 重跑 + 校园 90 天取证 + P0 #4 backtest + P0 #6 M1 baseline + 词图 v3 → v4 升级
+4. 阶段 4 · 19:30 EOD (1h) — 校准结果 + 7 项 P0 解锁状态 + 9/4 9 项 actionable + 决策登记簿 D-9/2-27 状态更新
+
+**5 大下游联动动作** (per docs/2026-09-03-k3-gsc-calibration-prep.md §4):
+1. sku-keyword-gsc-map v1 重跑 (14 → 30+ SKU) → P0 #2/P0 #3
+2. 校园 9/3 GSC 90 天取证 → P0 #7 校園 Pillar go/no-go
+3. P0 #4 src/ 588 处清零 backtest → P0 #4 9/12 截止
+4. P0 #6 M1 验收 baseline 校准 → P0 #6 9/16 截止
+5. 词图 v3 → v4 升级 + i18n-guard v2 全 src/ 扫描 → 7 项 P0 全依赖
+
+**校准前数据现状** (per GSC数据/index.json):
+- freshnessStatus: STALE 🔴 (stalenessDays 16, freshnessGateHours 72)
+- lastBuild: 2026-09-02T09:31:24 (commit 8 481b4378)
+- latestFreshData: 2026-08-17 (16 天前, GSC API 2-3 天延迟)
+- totalFiles: 122 / skippedFiles: 0
+- 校准前最近校准: 8/17 词图 v3 + 8/30 拍板版
+- sku-keyword-gsc-map v1: 14 SKU 起步 (.hermes/sku-keyword-gsc-map.json 9.2 KB)
+
+**风险评估** (per CEO 决策者, docs/2026-09-03-k3-gsc-calibration-prep.md §5):
+- 风险 1 · GSC API 凭证不可用 → 14:00 验证, 不可用立即升级 K3
+- 风险 2 · 校准前后差异 ≥50% → 立即重判 T1-T4 + 撤回 9/2 校准前所有带数字报告
+- 风险 3 · 校准后 commit 时机 → 攒批 ≥1 src 行为修复 + 60min 强制兜底
+- 风险 4 · 决策登记簿 36 项拍板状态重置 → 校准后增量 6-10 项, 不重置已有
+
+**9 角色综合 P0 = GSC 校准** (per K3 9/3 06:49 派活包, docs/2026-09-03-k3-gsc-calibration-prep.md §3):
+1. PM产品经理: 3 站点 × 2 窗口 = 6 dataset 校准
+2. UI/UX 设计师: UI 16m 滚动 vs API 2-3d 延迟明确区分
+3. 运营专家: 校准直接服务 7 项 P0 中 4 项解锁
+4. GLM 数据分析师: 双窗口 (7d/3m) 对比 + 5 维指标 + 差异阈值 (≥20% ⚠️ / ≥50% 🔴)
+5. 战略军师: 校准不是单点动作 = v6 升级版 §06 下一轮 #1 唯一系统性解锁节点
+6. CEO 决策者: 资源投入 1 M3 session 5.5h + 1 docs 校准报告 (~20 KB) + 1 docs EOD 报告 (~15 KB) = 35 KB chars 增量
+7. 跨境 EC 实战: 3 站点差异化 (zh-hk 187 行 / en 143 行 / ja 70 行)
+8. 合规翻译: en 站 china catalog +110% 信号验证 + ja 站 両面カラー 24imp 验证
+9. SOP 守门员: 10 道门童 v1.3 校准前后必跑 + §0.0 零决策铁律
+
+---
+
+**报告生成时间**: 2026-09-03 06:51 GMT+8
+**作者**: M3 (Mavis) 9 角色综合战略军师+CEO
+**拍板来源**: K3 9/3 06:51 push "按最优执行" + 9/3 06:49 "9 角色综合能力执行 P0 级问题" + 9/3 06:44 v6 升级版
+**配套**: docs/2026-09-03-k3-gsc-calibration-prep.md 23.5 KB + 5 cron SSoT §N 段嵌入 +25 KB chars + 决策登记簿 D-9/2-37 增量
+**校准日期**: 2026-09-03 06:51
+**校准窗口**: 2026-09-03 15:00 (8h9m 倒计时)
+**校准状态**: 🟡 准备阶段 (校准前)
