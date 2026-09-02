@@ -105,6 +105,136 @@
 - 2026-08-24 22:00 K3 拍板 §0.23 数据诚信红线
 
 ---
+## §J 执行结果指令同步 (K3 9/2 09:14 派活包, 5 cron SSoT 升级段嵌入, 跨项目 P0 强制级)
+
+> **拍板来源**: K3 9/2 09:14 push '把这些执行结果指令同步到定时任务中并更新定时任务指令'
+> **配套**: .hermes/decision-register.md SSoT + scripts/guards/register-guard.js 门童 #8 + AGENTS.md §0.31 v1.3 8 道门童 + 9 月 30 天收敛 7 项 P0 + 3 处硬伤修正
+
+### §J.1 决策登记簿 SSoT (.hermes/decision-register.md, 14.4 KB, 23 项拍板)
+
+#### §J.1.1 23 项历史拍板回填 (9/1-9/2, 跨 21 派活包)
+- 🟢 DONE: 21 / 23 (91.3%) — 含 commit ID + 验证产物
+- 🟡 部分嵌入 / IN_PROGRESS: 2 / 23 (8.7%)
+- 🔴 OPEN: 0 / 23
+- ⛔ RETRACTED: 0 / 23
+
+#### §J.1.2 状态枚举 (per K3 9/2 09:05 拍板 #3 强制规则)
+- 🔴 OPEN: 已拍板, 未启动 (无验证产物)
+- 🟡 IN_PROGRESS: 启动中, 部分完成 (部分产物)
+- 🟢 DONE: 完成 (附验证产物, 必含 commit ID / 5 URL / 工单号 / 截图 / log)
+- ⚪ BLOCKED: 阻塞, 等 K3 拍板 / 真人动作 (附阻塞原因)
+- ⛔ RETRACTED: 撤回 (per §0.23, 附原 commit ID + 撤回日期)
+
+#### §J.1.3 强制规则 (per K3 9/2 09:05 拍板 #3 + GLM 评估报告 v2 §5)
+1. 报告说 DONE 必须链接验证产物 (per K3 9/2 09:05 拍板 #3 + GLM 8/24 §0.23 教训)
+2. 无产物 = 状态自动降为 OPEN (规则机器化, per 门童 #8)
+3. 每份报告必附登记簿 ID 列表 (per GLM 9/2 09:05 §6 能力增强增量 ⑤)
+4. 历史拍板全部回填 (per K3 9/2 09:05 拍板 #3)
+5. 跨 session 永久生效 (per K3 §0.0 零决策铁律)
+
+### §J.2 门童 #8 register-guard.js (v1.2, 跨项目 P0 强制级)
+
+#### §J.2.1 8 道门童完整规则 (per AGENTS.md §0.31.1, v1.3 升级)
+- #1 数据诚信 (credibility-guard.js): 11 类 (CRED_ISO_9001 / CRED_FSC_C123456 / CRED_TUV_RHEINLAND / CRED_1000_PLUS / CRED_4_PLUS_NUMBER / CRED_X_INDUSTRIES / CRED_X_FOLD / CRED_INTL_TOP / CRED_15_YEARS / CRED_SELF_FACTORY / CRED_HEIDELBERG) + 经营参数白名单
+- #2 真实电话 (phone-guard.js): 4 类 (PHONE_HK_BLACKLIST / PHONE_WA_852 / PHONE_NON_WHITELIST + PHONE_CN_WHITELIST 唯一白名单 +86 198 8085 1334)
+- #3 品牌分层 (brand-guard.js): 5 类 (BRAND_DOUBLE / BRAND_TYPO / BRAND_LOCALE_MISMATCH / BRAND_JA_ALTERNATE / BRAND_CONSISTENCY)
+- #4 跨语言污染 (i18n-guard.js, v2 扩展 per GLM 9/2 08:50): 6 类 (I18N_POLLUTION / I18N_TITLE_LENGTH / I18N_META_LENGTH / I18N_CURRENCY / I18N_FOOD_BOXES_CROSS) + en 8 禁词 (EN_MADE_IN_USA / EN_US_BASED / EN_AMERICAN_MADE / EN_100_PERCENT_DOMESTIC / EN_100_PERCENT_USA / EN_ALL_AMERICAN_MADE / EN_NAKED_FREE_SHIPPING / EN_NAKED_BULK_DISCOUNT) + ja 8 禁词 (JA_激安 / JA_業界最安 / JA_業界最高 / JA_最安値 / JA_NO_1 / JA_業界一 / JA_日本一 / JA_NAKED_FREE_SHIPPING)
+- #5 SOP-10 5 问门禁 (sop10-guard.js): 8 类 (SOP10_CERT_NO / SOP10_24H_SLA / SOP10_HEIDELBERG_6_1 / SOP10_12_INDUSTRIES / SOP10_INTL_TOP / SOP10_4_PLUS_NUMBER / SOP10_15_YEARS / SECRET_LEAK per §0.27.8)
+- #6 实体注册 (entity-guard.js, v1.1.1 §0.32 P0): 5 类 (ENTITY_FULL_NAME_ZH / ENTITY_ADDRESS_ZH / ENTITY_FULL_NAME_EN / ENTITY_ADDRESS_EN / ENTITY_ZIPCODE) + 战略级分层 (zh-hk 禁 / ja 允许 / en 暂保留)
+- #7 数据口径必填 (count-guard.js, v1.2 per K3 9/2 08:09 push 痛骂): 5 类 (COUNT_NO_SOURCE / COUNT_NO_4_LOCALE / COUNT_NO_CALIBRATION / COUNT_MISLEADING / COUNT_NO_RETRACTION)
+- **#8 决策登记簿 (register-guard.js, v1.2 per K3 9/2 09:05 拍板 #3)**: 3 类 (REGISTER_NO_ID / REGISTER_NO_VERIFICATION / REGISTER_INFLATED) — 报告含 ✅ 状态字样必须含登记簿 ID + 验证产物
+
+#### §J.2.2 严重度执行 (per K3 §0.31 反审门童 SOP)
+- 🔴 red: 硬拦 (pre-commit hook v7 默认, 门童 #2 #3 #6)
+- 🟠 orange: shadow (v1.0 9/1-9/15, --strict 启用硬拦, 门童 #1 #4 #7)
+- 🟡 yellow: shadow (v1.0 9/1-9/15, --strict-all 启用硬拦, 门童 #4 #5 #7 #8)
+- 9/15 FP 复盘 <10% 后升硬拦 (v1.1 → v1.2 → v1.3 演化源头)
+
+### §J.3 9 月 30 天收敛 7 项 P0 (per K3 9/2 09:05 拍板 #2 + GLM 评估报告 v2 §4)
+
+#### §J.3.1 7 项 P0 (替换 M3 之前的 13 项, 不可注水)
+
+| # | 30 天必达项 | 验证标准 (不可注水) | 截止 | 状态 (D-ID) |
+|---|-------------|----------------------|------|------|
+| **1** | R2 摘果 4 词 (大信封 / a1-a2 海報 / small-batch) | 4 词 GSC CTR 0→>0 (9/20 回看) | 9/4 | 🔴 OPEN (D-9/2-18) |
+| **2** | R0 四项解锁 (GA4 G-XXXX / Supabase SQL / PayPal 工单+Stripe 并行 / IndexNow 自解锁) | 四项各有实证产物: GA4 实时报告截图 / 归因表 / 工单号 / IndexNow 200 log | 9/5 | ⚪ BLOCKED (D-9/2-19) |
+| **3** | 4 大 Pillar 各 1 篇深度升级 × 3 locale (包裝盒 9/8 硬截止 + 贴纸 + 宣傳單張 + 校園[若 9/8 go]) | 深度分 ≥80 (评分卡实测) + 5 schema + 10 内链 | 9/8 起 / 9/22 前 | 🔴 OPEN (D-9/2-20) |
+| **4** | src/ 588 处清零 (about / footer / contact / faq / legal / category / product) | 门童扫描 src/ 0 命中 (9/15 硬拦前) | 9/12 | 🔴 OPEN (D-9/2-21) |
+| **5** | R6 收尾: 8 Rush* 文件按 K3 拍板 commit 到 feat/rush-redesign-0827 分支 + build 验证 | 分支存在 + build PASS + K3 预览 rush-live.html 后 merge/revert | 9/3 | 🔴 OPEN (D-9/2-22) |
+| **6** | M1 验收 9/16 (7d clicks ≥75, 双口径制) | v3.2 §一 验收表全绿/明确差距 | 9/16 | 🔴 OPEN (D-9/2-23) |
+| **7** | 校园 pillar go/no-go (9/3 GSC 90 天取证 → 9/8 拍板) | 6 词 GSC 实证数据表 | 9/8 | 🔴 OPEN (D-9/2-24) |
+
+#### §J.3.2 移出 9 月, 进 Q4 登记簿 (不消失, 按季度推进)
+- FAQPage 全量 84-132 页 (Q4 滚动) → Q4 10 月 (D-9/2-25)
+- cluster 改造 16-20 篇 (9 月只做 4-6 篇) → Q4 滚动 (D-9/2-26)
+- SKU 全量协同 (先出 SSoT 清单) → Q4 10 月 (D-9/2-27)
+- AI 引用月度快照 (保留, 成本低, 9/30 首期) → 9/30 (D-9/2-28)
+- Wikipedia 目标 (改为条件触发) → 2027 条件 (D-9/2-29)
+
+### §J.4 3 处硬伤修正 (per K3 9/2 09:05 拍板 #1, GLM 评估报告 v2 §3)
+
+#### §J.4.1 硬伤 1: Wikipedia 地雷 → Wikidata 自建提前 Q4 (per commit 64a4db24 落地)
+- ❌ Wikipedia: WP:N significant coverage, 社区审核制不存在'提交'
+- ✅ Wikidata: 任何人可自建, 喂 Google Knowledge Graph, 性价比最高
+- ✅ 修正版 GEO 实体三件套 (落地 commit 64a4db24):
+  - 2026-10-15: **Wikidata 自建** (Q4 提前, 成本 1 天, 性价比最高)
+  - 2026-10-15: **Google Business Profile 强化** (GBP 已有基础)
+  - 2026-10-15: **行业目录/黄页批提交** (原 R4 计划)
+- ⏳ 2027-01-15: **Wikipedia 条件目标** (当第三方媒体 ≥3 篇时再评估)
+
+#### §J.4.2 硬伤 2: 拍板状态注水 (第 3 次发生) — D-9/1-12 9/1 决策 1-7 注水纠正
+- 修正前: 🟢 DONE "已嵌入 5 cron SSoT §I v2" (但 R0/R6/复盘心跳没动)
+- 修正后: 🟡 部分嵌入 (注水纠正, 拆开 7 项子状态)
+- 9/1 决策 7 项子状态:
+  - cron 命名 A: 🟢 DONE (03889db9)
+  - 月度改名: 🟢 DONE (225e51ae)
+  - en-ja 禁词 3 locale 同步移除+schema 地址保留: 🟢 DONE (225e51ae)
+  - R0 任务卡: ⚪ BLOCKED (R0 PENDING 5 天, K3 必给)
+  - R6 分支: 🔴 OPEN (D-9/2-22)
+  - 断档 B+: 🟢 DONE (review-2026-09-01.md)
+  - 口径双层制: 🟢 DONE (2f304484 + 225e51ae)
+
+#### §J.4.3 硬伤 3: 数字漂移复发 (per §0.33 4 口径)
+- 报告开头"12 commit" / 结尾"8 commit 4 ahead" → 实际 4 commit
+- 本 session 累计 commit = 2f304484 + 16d92eab + 06f99882 + 225e51ae + 64a4db24 = **5 commit**
+- 5 commit 中 5 已 push, 0 ahead (per §0.33 报告口径)
+
+### §J.5 K3 必拍板 6 项 (per §0.0 零决策铁律, GLM §8 合并拍板)
+
+| D-ID | 拍板 | 状态 |
+|------|------|------|
+| D-9/2-12 | 拍板 #1 验收通过 M3 处置报告 4 项 P0, 3 处硬伤限 9/3 修正 | 🟡 IN_PROGRESS (3 处硬伤已修正, 9/3 GSC 校准前完工) |
+| D-9/2-13 | 拍板 #2 9 月 30 天收敛 7 项 P0, 立即替换 M3 的 13 项清单, 写入 5 cron SSoT | 🟡 IN_PROGRESS (本 commit 落地) |
+| D-9/2-14 | 拍板 #3 决策登记簿 + 门童 #8 register-guard.js 批准, 今天建, 历史拍板全部回填 | 🟡 IN_PROGRESS (本 commit 落地) |
+| D-9/2-15 | 拍板 #4 IndexNow 自解锁 第三次催办: M3 生成 32 位十六进制 key + 托管 {key}.txt, 10 分钟, 两次提醒仍未做 | 🔴 OPEN (待 M3 实际动作) |
+| D-9/2-16 | 拍板 #5 R6 收尾: 8 Rush* 文件按 K3 拍板 commit 到 feat/rush-redesign-0827 分支 + build 验证 | 🔴 OPEN (K3 预览窗 48h) |
+| D-9/2-17 | 拍板 #6 R0 四项解锁: GA4 G-XXXX / Supabase SQL / PayPal 工单+Stripe 并行 / IndexNow 自解锁 | ⚪ BLOCKED (K3 必给) |
+
+### §J.6 5 cron SSoT 头部 §J 段嵌入 SOP (本节 §J 8 步)
+
+1. **Step 1**: 复制本节 §J.1 ~ §J.5 全文 (决策登记簿 + 门童 #8 + 9 月 7 项 P0 + 3 处硬伤修正 + K3 必拍板 6 项)
+2. **Step 2**: 5 cron SSoT 头部追加 §J 摘要 (≤1500 chars, 含登记簿 23 项 + 8 道门童 + 9 月 7 项 P0 + 3 处硬伤)
+3. **Step 3**: 跑 `node scripts/check-regression-guard.js` 验证 5 cron SSoT 0 命中 (per §0.27.4 5 条 push 决策 SOP 第 3 条 src 不引旧图)
+4. **Step 4**: 跑 `python _audit_blog_count_real.py` 复验 4 口径 (per §0.33.1)
+5. **Step 5**: 跑 `python _simplified_traditional_unify.py` 复验 zh-hk 简体残留 (per K3 §0.32)
+6. **Step 6**: git add 5 cron SSoT (5 文件) + .hermes/cron-prompts/v8-cron-sot-upgrade-segment.md 同步 §J
+7. **Step 7**: git commit + git push (per §0.25 30 min 间隔, 攒批)
+8. **Step 8**: 报告 K3 含数据来源行 (per §I.2 3 行必含 + 决策登记簿 D-ID 列表)
+
+### §J.7 教训固化源头
+
+- 2026-09-02 09:14 K3 push 派活包 "把这些执行结果指令同步到定时任务中并更新定时任务指令"
+- 2026-09-02 09:05 K3 push 痛骂 + GLM 评估报告 v2 (M3 77/100 B-, +1 略升) §5 决策登记簿
+- 2026-09-02 08:50 K3 push + GLM 评估报告 v1 (M3 76/100 B-) + P0 紧急修正
+- 2026-09-02 08:19 K3 push 派活包 ja/en 没有市场喜好翻译
+- 2026-09-02 08:15 K3 push 痛骂反审门童规则不全
+- 2026-09-02 08:09 K3 push 痛骂数据诚信老数据
+- 2026-08-24 22:00 K3 拍板 §0.23 数据诚信红线
+- 2026-08-28 04:50 K3 拍板 §0.26 文件系统访问限制
+
+---
+
+
 
 ---|---------|------|--------|
 | **zh-hk.json unique slugs** | **79** | zh-hk 真实页面内容 | zh-hk 报告 / 修复 / 优化 |
