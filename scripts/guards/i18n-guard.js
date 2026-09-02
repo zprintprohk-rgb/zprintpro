@@ -113,4 +113,130 @@ async function scan(files) {
   return allHits;
 }
 
-module.exports = { scan, RULES };
+
+
+// ===== v2 禁词扩展 (per K3 9/2 08:50 GLM 评估报告 P0 紧急修正) =====
+// 触发源: GLM 评估报告 §3 "en 翻译指南 FTC 合规地雷" + §4 "ja 翻译指南 Raksul 校准"
+// 落地: 9/3 15:00 GSC 校准窗口前必生效 (en 翻译必 9/3 开翻前完成)
+
+// en 禁词 (per FTC Act §5 + 16 C.F.R. Part 323 + EO 14392 2026-03-13 + 2026-04 执法 sweep)
+const EN_FORBIDDEN_RULES = [
+  {
+    id: 'EN_MADE_IN_USA',
+    name: 'Made in USA (FTC Act §5 违规, 重点打击)',
+    severity: 'red',
+    pattern: /\bMade\s*in\s*USA?\b/gi,
+    fix: '撤除 (per GLM 9/2 08:50 P0 紧急修正, FTC Act §5 + 16 C.F.R. Part 323 + EO 14392 2026-03-13 + 2026-04 执法 sweep). 替换为 Factory-direct from Shenzhen / DHL 2-4 day delivery to US',
+  },
+  {
+    id: 'EN_US_BASED',
+    name: 'US-based (EO 14392 重点打击)',
+    severity: 'red',
+    pattern: /\bUS[- ]?based\b/gi,
+    fix: '撤除 (per GLM 9/2 08:50 P0 紧急修正). 替换为 Shenzhen-based with global shipping',
+  },
+  {
+    id: 'EN_AMERICAN_MADE',
+    name: 'American-made (FTC 2026-04 执法 sweep 中招变体)',
+    severity: 'red',
+    pattern: /\bAmerican[- ]?made\b/gi,
+    fix: '撤除 (per GLM 9/2 08:50 P0 紧急修正). 替换为 Factory-direct from China',
+  },
+  {
+    id: 'EN_100_PERCENT_DOMESTIC',
+    name: '100% Domestic (FTC 2026-04 执法 sweep 中招变体)',
+    severity: 'red',
+    pattern: /\b100%\s*Domestic\b/gi,
+    fix: '撤除 (per GLM 9/2 08:50 P0 紧急修正). 替换为真实定位',
+  },
+  {
+    id: 'EN_100_PERCENT_USA',
+    name: '100% USA (FTC 2026-04 执法 sweep 中招变体)',
+    severity: 'red',
+    pattern: /\b100%\s*USA\b/gi,
+    fix: '撤除 (per GLM 9/2 08:50 P0 紧急修正). 替换为真实定位',
+  },
+  {
+    id: 'EN_ALL_AMERICAN_MADE',
+    name: 'All-American Made (FTC 2026-04 执法 sweep 中招变体)',
+    severity: 'red',
+    pattern: /\bAll[- ]?American\s*Made\b/gi,
+    fix: '撤除 (per GLM 9/2 08:50 P0 紧急修正). 替换为真实定位',
+  },
+  {
+    id: 'EN_NAKED_FREE_SHIPPING',
+    name: '裸 Free Shipping (无 HK$500 限定, 真实规则 順豐滿 HK$500 免運)',
+    severity: 'orange',
+    pattern: /\bFree\s*Shipping\b(?!\s*over\s*HK\$500)/gi,
+    fix: '改为 Free SF shipping over HK$500 (per 真实经营参数)',
+  },
+  {
+    id: 'EN_NAKED_BULK_DISCOUNT',
+    name: '裸 Bulk Discount (无 500+ 限定, MOQ 100 + lead time 5-7 days)',
+    severity: 'orange',
+    pattern: /\bBulk\s*Discount\b(?!\s*at\s*\d+\+)/gi,
+    fix: '改为 Bulk pricing at 500+ units (per MOQ 体系)',
+  },
+];
+
+// ja 禁词 (per 日本景表法 不当表示防止法 + Raksul 校准)
+const JA_FORBIDDEN_RULES = [
+  {
+    id: 'JA_激安',
+    name: '激安 (B2C 甩卖词, 法人语境掉价)',
+    severity: 'orange',
+    pattern: /激安/g,
+    fix: '改用 格安 / コスパ (per GLM 9/2 08:50 Raksul 校准)',
+  },
+  {
+    id: 'JA_業界最安',
+    name: '業界最安 (无依据比较, 日本景表法 不当表示防止法)',
+    severity: 'red',
+    pattern: /業界最安/g,
+    fix: '撤除 (per GLM 9/2 08:50 Raksul 校准, 日本景表法 不当表示防止法)',
+  },
+  {
+    id: 'JA_業界最高',
+    name: '業界最高 (无依据比较, 日本景表法 不当表示防止法)',
+    severity: 'red',
+    pattern: /業界最高/g,
+    fix: '撤除 (per GLM 9/2 08:50 Raksul 校准, 日本景表法 不当表示防止法)',
+  },
+  {
+    id: 'JA_最安値',
+    name: '最安値 (无依据比较, 日本景表法 不当表示防止法)',
+    severity: 'red',
+    pattern: /最安値/g,
+    fix: '撤除 (per GLM 9/2 08:50 Raksul 校准, 日本景表法 不当表示防止法)',
+  },
+  {
+    id: 'JA_NO_1',
+    name: 'No.1 (无依据比较, 日本景表法 不当表示防止法)',
+    severity: 'red',
+    pattern: /No\.1/g,
+    fix: '撤除 (per GLM 9/2 08:50 Raksul 校准, 日本景表法 不当表示防止法)',
+  },
+  {
+    id: 'JA_業界一',
+    name: '業界一 (无依据, 日本景表法 不当表示防止法)',
+    severity: 'red',
+    pattern: /業界一/g,
+    fix: '撤除 (per GLM 9/2 08:50 Raksul 校准, 日本景表法 不当表示防止法)',
+  },
+  {
+    id: 'JA_日本一',
+    name: '日本一 (无依据, 日本景表法 不当表示防止法)',
+    severity: 'red',
+    pattern: /日本一/g,
+    fix: '撤除 (per GLM 9/2 08:50 Raksul 校准, 日本景表法 不当表示防止法)',
+  },
+  {
+    id: 'JA_NAKED_FREE_SHIPPING',
+    name: '裸 送料無料 (无 HK$500 限定, 真实规则 順豐滿 HK$500 免運)',
+    severity: 'orange',
+    pattern: /(?<!条件的)送料無料(?!条件)/g,
+    fix: '改为 送料無料の条件明記 (对应满额规则)',
+  },
+];
+
+module.exports = { scan, RULES, EN_FORBIDDEN_RULES, JA_FORBIDDEN_RULES };
