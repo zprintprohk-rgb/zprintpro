@@ -351,9 +351,9 @@ const categorySeoData: Record<string, {
     // DHL Express 保留 (跨境品牌信任) + FedEx Ground (美国本土配送感)
     titles: {
       // 2026-07-17 GSC CTR 修复: 起价前置 + 免費設計/即日 hook, 机会词 貼紙印刷/貼紙訂製
-      'zh-hk': '小批量貼紙印刷 防水抗UV | 1張起印・異形裁切・燙金 | 智印港',
-      'en': 'Small Batch Sticker Printing from $0.05 | 1 MOQ + Free Proof | ZprintPro',
-      'ja': 'PVC シール 防水印刷 1枚〜・短納期2-4日・DHL全国 | ZprintPro',
+      'zh-hk': 'small batch 貼紙印刷 防水抗UV・1張起印・異形裁切・燙金 | 智印港',
+      en: 'Small Batch Sticker Printing from $0.05 | 1 MOQ + Free Proof + Free US Shipping $99+ | ZprintPro',
+      ja: 'small batch PVC シール 防水印刷 1枚〜・短納期2-4日・DHL全国 | ZprintPro',
     },
     keywords: {
       'zh-hk': '貼紙印刷,透明貼,防水貼紙,燙金貼紙,異形貼紙,小批量貼紙,LOGO貼紙,標籤印刷,小量貼紙,UV貼紙,啞膠貼紙,亮膜貼紙,封口貼紙,包裝貼紙,餐廳貼紙',
@@ -413,7 +413,7 @@ const categorySeoData: Record<string, {
 'posters': {
     titles: {
       // 2026-07-17 GSC CTR 修复: 机会词 海報印刷/印海報 前置
-      'zh-hk': 'A2 海報印刷 A0/A1/A2 + MTR 12 sheet 燈箱 | 防水 + 1張起印 + 4小時打稿 | 智印港',
+      'zh-hk': 'a1a2 海報印刷 A0/A1/A2 + MTR 12 sheet 燈箱 | 防水 + 1張起印 + 4小時打稿 | 智印港',
       'en': '2 Meter Poster Printing A0-A2 UV Rush | ZprintPro',
       'ja': '2メートル ポスター印刷 A0/A1/A2 防水UV 短納期 | ZprintPro',
     },
@@ -487,7 +487,7 @@ const categorySeoData: Record<string, {
   'envelopes': {
     // 2026-08-26 K3 批 1 十五词 (大信封 pos 2.21 第 1 优先) + 信封顏色/彩色信封/信封 封面 + Pearl Envelopes + China Price Quote + 大型封筒 注入
     titles: {
-      'zh-hk': '大信封印刷 A4/C4/C5 規格 + 起價表 | 100個起印・牛皮・開窗 | 智印港',
+      'zh-hk': '大信封印刷 100個起・C4/C5/DL・急件即日・DHL 全球 2-4 天 | 智印港',  // 2026-09-03 D-9/2-32 校准后 R2 摘果: 大信封 7d pos 2.16/89 imp/0 click
       en: 'Pearl Envelopes Printing 100 MOQ + Custom Color + China Envelope Printing Price Quote + DHL Global | ZprintPro',
       ja: '大型封筒 印刷 A2/B4 + C4/C5/DL/クラフト/窓付き/カラー/企業ロゴ | 100枚〜・ISO認証・DHL全国 | ZprintPro',
     },
