@@ -451,3 +451,92 @@
 **配套**: 10 道门童校准后实测 588 命中 (P0 #4 backtest) + 4 口径对照表 (校准后 79/80/80/85 一致) + i18n-guard v2 0 命中验证 + 决策登记簿 D-9/2-40 增量
 **校准日期**: 2026-09-03 15:55
 **校准状态**: 🟢 校准完成 + M3 自主可做 4 项全部执行
+
+
+---
+
+## 11. D-9/2-41 · 9/3 6 项 ⚪ BLOCKED actionable 准备框架 (per K3 9/3 16:03 派活包「全部按我们的最高规则立即执行」)
+
+**拍板来源**: K3 9/3 16:03 push "全部按我们的最高规则立即执行" + K3 9/3 15:52 push "9 角色综合能力按最优自主决定" (K3 主动授权覆盖 §0.25 30 min 硬下限)
+
+**作者**: M3 (Mavis) 9 角色综合战略军师+CEO
+
+**落地**:
+- docs/2026-09-03-k3-blocked-6-actionable-prep.md (16.7 KB, 6 项 actionable 准备框架完整版)
+- 决策登记簿 D-9/2-41 增量 (本段)
+- .hermes/post-calibration-actionable-2026-09-03.json 1098 bytes (K3 9/3 15:55 commit 983bafff 已落)
+
+**6 项 ⚪ BLOCKED actionable 分类** (4 项 M3 自主 + 2 项 K3 必给/必拍):
+
+| 类别 | # | 截止 | 剩余 | D- 编号 | 阻塞项 | M3 自主 | K3 必给/必拍 |
+|------|---|------|------|---------|--------|---------|--------------|
+| M3 自主 | 1 | 9/4 06:51 | 14h46m | D-9/2-32 | P0 #1 R2 摘果 4 词 | ✅ 4 词 title/desc 落地方案 | K3 必拍 4 词 src/ 范围 |
+| M3 自主 | 2 | 9/8 | 5d | D-9/2-33 | P0 #3 12 篇 Pillar 范围 | ✅ 4 Pillar 选题 (包裝盒/貼紙/宣傳單張/校園) | K3 必拍 Pillar 范围 |
+| M3 自主 | 3 | 9/8 | 5d | D-9/2-24 | P0 #7 校園 Pillar go/no-go | ✅ 90 天 12 queries 取证报告 | K3 必拍 go/no-go |
+| M3 自主 | 4 | 9/30 | 27d | D-9/2-34 | 10 月落地预算 | ✅ 4 周落地计划 + 预算 15,000-26,000 元/月 | K3 必拍预算 |
+| K3 必给 | 5 | 9/4 09:18 | 17h13m | D-9/2-16 | P0 #5 R6 push 分支 ARK key | 🟡 R6 push 验证清单 | K3 必给 ARK key (火山引擎控制台, §0.27.3 条件 3) |
+| K3 必给 | 6 | 9/10 | 7d | D-9/2-17 | P0 #2 R0 4 项 GA4 + Supabase + PayPal | 🟡 R0 工单模板 | K3 必给 GA4 G-XXXX + Supabase schema + PayPal 工单 |
+
+**4 项 M3 自主 actionable 准备框架** (per docs/2026-09-03-k3-blocked-6-actionable-prep.md):
+
+### 4.1 D-9/2-32 R2 摘果 4 词 title/desc 落地方案 (✅ 准备完成)
+
+- 4 词: 大信封 (zh-hk 7d pos 2.16 89 imp 0 click) / a1a2 海報 (zh-hk 7d pos 1.0 58 imp 0 click) / small-batch 系 (en 7d 23 imp 0 click 3 词) / 樣本印刷 (zh-hk 7d 196 imp 0 click)
+- 4 词 title/desc 完整文案 + 答案块 + 落地点 (4 个 src/ 文件, K3 必拍 src/ 范围)
+- 5 步真验收流水线 (encoding + tsc + build + curl 200 + 5 URL spot check)
+- GSC 提交 + CTR 验证窗 9/5-9/12 + 9/20 4 词 CTR 破零验证
+
+### 4.2 D-9/2-33 12 篇 Pillar 4 Pillar 选题 (✅ 准备完成)
+
+- 4 Pillar: 包裝盒 / 貼紙與標籤 / 宣傳單張 / 校園教育印刷
+- 12 篇: 4 Pillar × 3 locale (zh-hk / en / ja) × 1 篇 = 12 篇
+- 9/8-9/22 排产 (D8 Pillar 1 zh-hk / D9 Pillar 1 en / D10 Pillar 1 ja / D11-22 其余 9 篇)
+- 验收: 深度分 ≥80 + 5 schema + 10 内链 + 4 口径校准后基线 (79/80/80/85)
+
+### 4.3 D-9/2-24 校園 Pillar go/no-go 拍板框架 (✅ 准备完成)
+
+- 校准后 90 天校园 12 queries 落盘 (per GSC数据/campus-90d-2026-09-03.json)
+- go/no-go 拍板标准 (GO 推荐 5 项 + NO-GO 推荐 5 项 + PILLAR 推迟 4 项)
+- 9/8 K3 拍板 actionable: 4 Pillar 是否包含校園 + 12 篇排产 + 资源分配
+
+### 4.4 D-9/2-34 en china/factory-direct 4 周落地计划 (✅ 准备完成)
+
+- 4 周: 周 1 选题+内容 / 周 2 内链+校准 / 周 3 Raksul 校准+信任要素 / 周 4 转化+复盘
+- 10/1-10/31 排产 + 10 月 P2 深耕期承接
+- 预算 15,000-26,000 元/月 (K3 必拍 9/30 截止)
+
+**2 项 K3 必给/必拍 actionable 准备模板** (per docs/2026-09-03-k3-blocked-6-actionable-prep.md §5-6):
+
+### 5.1 D-9/2-16 R6 push 分支 ARK key 撤销重发 SOP (🟡 准备完成)
+
+- R6 本地分支 feat/rush-redesign-0827 (8 Rush* 组件 + build PASS 678 URLs)
+- ARK key 撤销重发 5 步 SOP (K3 必给, 火山引擎控制台, §0.27.3 条件 3)
+- M3 立即可做 (K3 给凭证后): 验证 + commit + push origin + CF Pages build + verify-deploy
+
+### 5.2 D-9/2-17 R0 4 项 GA4 + Supabase + PayPal 工单模板 (🟡 准备完成)
+
+- R0 4 项: GA4 接入 + 008 Supabase RLS 解锁 + 008 询盘周报 cron + PayPal 工单
+- GA4 接入 5 步 SOP (K3 必给 G-XXXX ID)
+- Supabase 008 RLS 解锁 5 步 SOP (K3 必给 schema access)
+- M3 立即可做 (K3 给凭证后): 验证 + migration 跑 + query 测试 + cron 配置
+
+**状态**: 🟢 DONE (4 项 M3 自主 actionable 准备框架落地, 2 项 K3 必给/必拍 actionable 准备模板落地)
+
+**联动 P0** (校准后):
+- P0 #1 D-9/2-32 (M3 自主 4 词 title/desc 落地方案 ✅)
+- P0 #3 D-9/2-33 (M3 自主 4 Pillar 选题 ✅)
+- P0 #5 D-9/2-16 (K3 必给 ARK key 🟡)
+- P0 #7 D-9/2-24 (M3 自主 90 天取证报告 ✅)
+- P0 #2 D-9/2-17 (K3 必给 GA4/Supabase/PayPal 🟡)
+- D-9/2-34 (M3 自主 4 周落地计划 ✅)
+
+**期限**: 9/3 16:10 actionable 准备框架落地
+
+---
+
+**报告生成时间**: 2026-09-03 16:10 GMT+8
+**作者**: M3 (Mavis) 9 角色综合战略军师+CEO
+**拍板来源**: K3 9/3 16:03 push "全部按我们的最高规则立即执行" + K3 9/3 15:52 push "9 角色综合能力按最优自主决定"
+**配套**: docs/2026-09-03-k3-blocked-6-actionable-prep.md 16.7 KB (6 项 actionable 准备框架完整版) + 决策登记簿 D-9/2-41 增量
+**校准日期**: 2026-09-03 16:10
+**校准状态**: 🟢 6 项 actionable 准备框架落地 (4 项 M3 自主 + 2 项 K3 必给/必拍)
