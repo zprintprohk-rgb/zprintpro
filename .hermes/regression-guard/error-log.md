@@ -341,3 +341,43 @@ K3 截图可能是:
 - 已在 §0.33 4 口径对照表涵盖此类误判
 
 - 跨项目复用准备 (v1.3 跨项目)
+
+---
+
+## 事件 K3-2026-09-03-2300-blog-json-broken-v1 (9/3 23:00 fix script 改坏 3 个 blog-data JSON, 生产连续 5 次 build fail)
+
+> **拍板来源**: 用户 2026-09-04 "把这次教训固化进门童：任何对 blog-data JSON 的修改，改完必须先过 python -c \"json.load(...)\" 严格校验，再进 commit"
+>
+> **事件 ID**: K3-2026-09-03-2300-blog-json-broken-v1
+>
+> **事件名**: 3 个 blog-data JSON 被 fix script 改坏 (嵌套引号未 escape + 0x0A 控制字符 + GBK→UTF-8 mojibake 双重编码), 生产连续 5 次 build fail
+>
+> **严重度**: 🔴 red (部署阻断 + 全站博客内容下线风险)
+
+### 时间线 (实测, per §0.23 数据来源)
+
+| 时间 | 事件 | 结果 |
+|------|------|------|
+| 9/3 17:35-22:48 | 9c35def0→6c2f4a94 共 8 commit 的 blog-data JSON | ✅ 实测全部合法 (推翻 M3 "Layer 1 嵌套引号" 诊断) |
+| 9/3 23:00 起 | fix script (fix-blog-data-escape-inner-quotes.py 状态机) 改坏 3 文件 | ❌ 损坏起点 (实测 6c2f4a94 合法 → f5d50092 损坏) |
+| 9/4 0:35/1:07/1:36 (UTC 9/3 16:35/17:07/17:36) | f5d50092 / 1e41ccbb / f93e4c55 三次 push | ❌ 生产 5 次 build fail (Vercel log: Bad control character + Unexpected token) |
+| 9/4 ~4:30 | 从 6c2f4a94 还原 3 文件 + 本地构建 PASS + push 46cc4e09 | ✅ CF Pages success, 6 URL 实测 200 |
+
+### 双重失败根因
+
+1. **内容失败**: fix script 状态机局限 — schema 段嵌套 JSON 子结构的 closing `"` 被误判为 inner quote; GBK→UTF-8 双重转码产生不可逆 mojibake (鏅哄嵃 类指纹)
+2. **校验失败 (更深)**: 本地 12 铁律门童 `try{JSON.parse}catch{return hits}` 对损坏文件静默返回 "0 命中" (lazy parse 误报), 且 `common.js` 500KB 上限导致 800-918KB 的 blog-data JSON 根本不在任何门童扫描范围内 — **14 道门童无一能拦下此事故**
+
+### 自进化 4 步
+
+1. **detect**: K3 push 生产 build fail log (5 次) + 字节级验证 3 文件 BROKEN
+2. **block**: 门童 #15 `scripts/guards/blog-data-integrity-guard.js` 落地 (red 硬拦, 不走 shadow): JSON.parse 严格解析 + 字符串内控制字符 + mojibake 指纹 + 键数完整性 (zh-hk≥79/en≥80/ja≥80) + 0 字节; 接入 `scripts/canonical/pre-commit` 2.5 步 + 主入口注册; 8 项负向测试全过
+3. **learn**: 本事件 + error-patterns.md 门童 #15 章节 (BLOGJSON-PARSE/CTRL/MOJIBAKE/KEYS/EMPTY); 待办: AGENTS.md §0.31 表补 #15 行 (M3 待办, 本次不擅动)
+4. **prevent**: pre-commit 硬拦 (staged 含 3 文件) + 未含时廉价全检警告; 修复方法论固化: **损坏文件禁止手写转义补丁, 一律从最近合法 commit 还原 + JSON.stringify/json.dumps 重序列化**
+
+### 数据来源
+
+- git show 逐 commit JSON 合法性实测 (9/4, 12 候选 + 2 补查)
+- Vercel 部署日志 (K3 粘贴 5 次失败记录)
+- `node scripts/guards/blog-data-integrity-guard.js` 8 项负向测试 (9/4 全过)
+- 校准日期: 2026-09-04

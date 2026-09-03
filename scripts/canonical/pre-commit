@@ -37,6 +37,36 @@ if command -v node &> /dev/null; then
   node scripts/scan-simplified.mjs 2>/dev/null || echo "  (scan-simplified.mjs not found, skipping)"
 fi
 
+# 2.5 blog-data JSON 严格校验 (门童 #15, 用户 2026-09-04 拍板)
+# 事故背书: 9/3-9/4 fix script 把 3 个 blog-data JSON 改坏, 生产连续 5 次 build fail,
+# 本地 12 铁律门童的 lazy try/catch 静默放行 (误报 "0 命中")。
+# 拍板: 任何对 blog-data JSON 的修改, 改完必须先过严格解析校验, 再进 commit。
+echo "2️⃣.5  blog-data JSON 严格校验 (门童 #15)..."
+if command -v node &> /dev/null; then
+  STAGED_BLOG_JSON=$(git diff --cached --name-only -- src/data/blog-data/zh-hk.json src/data/blog-data/en.json src/data/blog-data/ja.json)
+  if [ -n "$STAGED_BLOG_JSON" ]; then
+    node scripts/guards/blog-data-integrity-guard.js
+    if [ $? -ne 0 ]; then
+      echo ""
+      echo "❌ 门童 #15 拦截: blog-data JSON 严格校验未通过 (生产部署必挂)"
+      echo ""
+      echo "💡 修法:"
+      echo "  1. 从最近合法 commit 还原 (实测 6c2f4a94 三语全合法: zh-hk 81 / en 82 / ja 82 keys)"
+      echo "  2. 用 JSON.stringify / json.dumps 重新序列化, 禁止手写转义补丁 (状态机已失败 2 次)"
+      echo "  3. node scripts/guards/blog-data-integrity-guard.js 复验全过后再 commit"
+      exit 1
+    fi
+  else
+    # 本次未改 blog-data JSON: 廉价全检, 仅警告不拦截 (提示工作树已损坏, 部署会挂)
+    node scripts/guards/blog-data-integrity-guard.js > /dev/null 2>&1
+    if [ $? -ne 0 ]; then
+      echo "⚠️  警告: 工作树 blog-data JSON 校验未通过 (未在本次 staged, 不拦截; 但生产构建会失败, 请尽快修复)"
+    fi
+  fi
+else
+  echo "⚠️ Node not found, skipping blog-data JSON 严格校验"
+fi
+
 # 3. 反审门童 v1 — K3 9/1 15:06 拍板落地
 echo "3️⃣  反审门童 v1 (5 道门童 + 3 道防线)..."
 if command -v node &> /dev/null; then

@@ -264,6 +264,61 @@
 
 ---
 
+## 门童 #15 blog-data JSON 严格校验 (blog-data-integrity-guard) — red 硬拦 (用户 2026-09-04 拍板)
+
+> **拍板原文 (用户 2026-09-04)**: "把这次教训固化进门童：任何对 blog-data JSON 的修改，改完必须先过 python -c \"json.load(...)\" 严格校验，再进 commit"
+>
+> **事故背书**: K3-2026-09-03-2300-blog-json-broken-v1 (见 error-log.md 同事件条目)
+
+### BLOGJSON_PARSE JSON 严格解析失败
+
+- **类别**: 数据完整性 (部署阻断)
+- **严重度**: red
+- **检测**: `JSON.parse` 严格解析 (等价 Python `json.loads` 严格模式), 失败即拦
+- **拦截方式**: pre-commit hook 2.5 步硬拦 (staged 含 blog-data JSON 时) + 主入口 GUARDS 注册
+- **典型命中**: 嵌套引号未 escape (9/3 fix script 状态机把 schema value 的 closing `"` 当 inner quote escape)
+- **修法**: 从最近合法 commit 还原 (实测 6c2f4a94 三语全合法) + `JSON.stringify`/`json.dumps` 重新序列化; **禁止在损坏文件上手写转义补丁** (状态机已失败 2 次)
+
+### BLOGJSON_CTRL 字符串字面量内裸控制字符
+
+- **类别**: 数据完整性 (部署阻断)
+- **严重度**: red
+- **检测**: 按引号边界扫描, 仅字符串内 `0x00-0x1F` 命中 (字符串外换行是合法空白, 不误报)
+- **典型命中**: `\u000a` 裸换行写入 content 字段 (Python `json.loads` 报 "Bad control character")
+- **修法**: 同 BLOGJSON-PARSE
+
+### BLOGJSON_MOJIBAKE mojibake 双重编码指纹
+
+- **类别**: 数据完整性 (内容不可逆损坏)
+- **严重度**: red
+- **检测**: 指纹库 (鏅哄嵃 = 智印港 / ӡˢ = 印刷 类变形, 指纹库可扩展)
+- **典型命中**: 9/4 损坏文件 `2kg <乱码>, ӡˢɫ<乱码>` = GBK 字节被按 UTF-8 二次写回
+- **修法**: **转义修复救不回已损坏的中文** — 正文必须从 git 历史或 .hermes 草稿重取原文 + 重新序列化
+
+### BLOGJSON_KEYS 键数完整性
+
+- **类别**: 数据完整性 (防整段丢失)
+- **严重度**: red
+- **检测**: zh-hk ≥79 / en ≥80 / ja ≥80 (per §0.33.1 4 口径对照表)
+- **典型命中**: 误删整个 locale 的 blog 条目; 文件被截断成 `{}`
+- **修法**: 核对最近合法 commit 键数; 有意删除需 K3 拍板
+
+### BLOGJSON_EMPTY 文件缺失/0 字节
+
+- **类别**: 数据完整性
+- **严重度**: red
+- **检测**: 文件不存在或 0 字节
+- **修法**: `git checkout HEAD -- src/data/blog-data/<locale>.json`
+
+### 配套机制
+
+- 钩子: `scripts/canonical/pre-commit` 2.5 步 (staged 含 3 文件 → 硬拦; 未含 → 廉价全检仅警告)
+- 主入口: `scripts/check-regression-guard.js` GUARDS.blogDataIntegrity 注册
+- 独立运行: `node scripts/guards/blog-data-integrity-guard.js` (cron 可挂)
+- 负向测试: 8 用例全过 (合法 0 命中 / 控制字符 / 嵌套引号 / mojibake / 键数 / 空对象 / 0 字节 / 合法换行不误报)
+
+---
+
 ## 历史 commit 8/24-9/1 回灌 seeding (K3 9/1 15:06 齿轮 3)
 
 | commit | 日期 | 命中门童 | 命中规则 | K3 拍板 | 状态 |

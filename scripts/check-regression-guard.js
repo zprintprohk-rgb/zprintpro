@@ -32,7 +32,7 @@ const path = require('path');
 
 const GUARDS_DIR = path.join(__dirname, 'guards');
 
-// 9 道门童 (v1.3 升级: 加门童 #9 GSC 数据源, K3 9/2 09:29 派活包)
+// 10 道门童 (v1.4 升级: 加门童 #15 blog-data JSON 严格校验, 用户 2026-09-04 拍板)
 const GUARDS = {
   credibility: require(path.join(GUARDS_DIR, 'credibility-guard.js')),
   phone: require(path.join(GUARDS_DIR, 'phone-guard.js')),
@@ -43,6 +43,7 @@ const GUARDS = {
   count: require(path.join(GUARDS_DIR, 'count-guard.js')),
   register: require(path.join(GUARDS_DIR, 'register-guard.js')),
   gscSource: require(path.join(GUARDS_DIR, 'gsc-source-guard.js')),
+  blogDataIntegrity: require(path.join(GUARDS_DIR, 'blog-data-integrity-guard.js')),
 };
 
 const GUARD_LABELS = {
@@ -55,6 +56,7 @@ const GUARD_LABELS = {
   count: '门童 #7 数据口径必填 (§0.33 v1.2 升级, K3 9/2 08:09 push 痛骂触发)',
   register: '门童 #8 决策登记簿 (K3 9/2 09:05 拍板 #3, .hermes/decision-register.md SSoT)',
   gscSource: '门童 #9 GSC 数据源 (K3 9/2 09:29 派活包 GLM §J, GSC数据/index.json SSoT 21.8 KB, 新鲜度闸门 72h)',
+  blogDataIntegrity: '门童 #15 blog-data JSON 严格校验 (用户 9/4 拍板, 9/3-9/4 部署事故固化: JSON.parse 严格解析 + 控制字符 + mojibake + 键数)',
 };
 
 const args = process.argv.slice(2);

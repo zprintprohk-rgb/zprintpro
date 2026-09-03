@@ -163,6 +163,13 @@ function findLineNumber(content, matchIndex) {
 // 单规则扫描 (返回 hits 数组)
 function scanRule(content, file, rule) {
   const hits = [];
+  // regression-guard 规则库自身豁免: 模式库/日志必须记录假数据原文作示例,
+  // CRED_ 类 (数据诚信示例) / SOP10_CERT_NO / SECRET_LEAK (规则 regex 示例)
+  // 在此目录强制扫描 = 必然误报 (9/4 门童 #15 落地时发现,
+  // 既有矛盾: EXEMPT_PATHS 标"必豁免" vs NON_EXEMPT_RULES 强制扫描同一目录)
+  // 注: 仅限规则库自身目录; src/ docs/ 等其他位置这些规则仍强制扫描
+  const isGuardLibFile = /regression-guard[\/\\]/.test(file);
+  if (isGuardLibFile && rule.id && (rule.id.startsWith('CRED_') || rule.id === 'SOP10_CERT_NO' || rule.id === 'SECRET_LEAK')) return hits;
   const re = new RegExp(rule.pattern.source, rule.pattern.flags.includes('g') ? rule.pattern.flags : rule.pattern.flags + 'g');
   let match;
   let count = 0;
