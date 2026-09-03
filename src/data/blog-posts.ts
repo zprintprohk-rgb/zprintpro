@@ -1663,6 +1663,30 @@ const lpInstantPrinting30sAiQuoteFlow: BlogPostMeta = {
   },
 };
 
+// 2026-09-03 K3 拍板 v3 long-form-blog-3w2r 周四 10:00 第 2 篇: 燙金印刷 3 大應用攻略 (W5 #3 B7 派发, M4 燙金 4 词一次攻, 燙金貼紙 pos 2.3 衝首頁 TOP3)
+// 9 段 + 4 FAQ + 5 内部链接 + 3 locale native, 100 個起印 HK$0.80/個起, 3 大應用 (貼紙/喜帖/禮盒卡片) + 4 種箔 + 5 種材質 + 12 大行業 + R5 9-12 月旺季
+// 4 词攻堅: 燙金貼紙 pos 2.3 4 imps 衝首頁 + 燙金印刷 root + 燙金喜帖 Q4 旺季 + 燙金卡片 R5 聖誕新年
+const lpFoilStamping3Applications2026: BlogPostMeta = {
+  slug: 'foil-stamping-3-applications-2026',
+  categoryKey: 'printing',
+  source: 'daily',
+  date: '2026-09-03',
+  title: {
+    'zh-hk': '燙金印刷 3 大應用攻略: 貼紙/喜帖/禮盒卡片 GSC pos 2.3 衝首頁全對比 | 智印港 ZprintPro',
+    en: 'Foil Stamping 3-Application Guide 2026: Stickers / Wedding Invitations / Gift Box Cards GSC pos 2.3 Top-3 Push | ZprintPro',
+    ja: '箔押し印刷 3 大活用 2026 攻略: ステッカー/招待状/ギフトカード GSC pos 2.3 TOP3 突入 | ZprintPro ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '燙金點揀? 3 大應用 (貼紙 pos 2.3 4 imps 衝首頁 / 喜帖 Q4 旺季 / 禮盒卡片 R5 聖誕新年) + 4 種箔 (金/銀/玫瑰金/鐳射) + 5 種材質相容性 + 100 個起印 HK$0.80/個起 + 智印港 2026 H1 訂單實證 + 9 段 + 4 FAQ + 5 內部連結 + 30 秒 WhatsApp 報價.',
+    en: 'Which foil finish? 3 applications (foil stickers pos 2.3 4 imps top-3 push / wedding Q4 peak / gift box cards R5 Christmas New Year) + 4 foil colors (gold/silver/rose gold/holographic) + 5 material compatibilities + 100 MOQ from HK$0.80/pc + ZprintPro 2026 H1 order data + 9 sections + 4 FAQs + 5 internal links + 30s WhatsApp quote.',
+    ja: '箔押し印刷の選び方は？3 大活用シーン（箔押しステッカー pos 2.3 4 imps TOP3 突入 / Q4 婚礼シーズン / R5 クリスマス新年ギフトカード）+ 4 色の箔（金/銀/ローズゴールド/ホログラム）+ 5 種素材適合性 + 100 個〜 HK$0.80/個〜 + ZprintPro 2026 年上半期注文データ + 9 段 + 4 FAQ + 5 内部リンク + 30 秒 WhatsApp 見積もり.',
+  },
+  targetKeywords: {
+    primary: '燙金',
+    secondary: ['燙金貼紙', '燙金喜帖', '燙金禮盒', '熱燙金', 'hot foil stamping', 'foil stamping', '箔押し', '箔押しステッカー', 'foil sticker'],
+  },
+};
+
 export const blogPosts: BlogPostMeta[] = [
   // Buying guides (9)
   bgBusinessCard,
@@ -1793,6 +1817,10 @@ export const blogPosts: BlogPostMeta[] = [
   lpStickerMaterialPvcVinylRemovable,
   // 2026-09-01 K3 拍板 v3 long-form-blog-3w2r 周二 10:00 第 1 篇: 即日印刷 30 秒 AI 報價流程 (W5 B7 派发, M1 即日急件 10 询盘, 跟 rush-printing-hk-guide 主题集群, GSC 即日印刷 pos 8.7 6 imps 攻堅首頁)
   lpInstantPrinting30sAiQuoteFlow,
+  // 2026-09-03 K3 拍板 v3 long-form-blog-3w2r 周四 10:00 第 2 篇: 燙金印刷 3 大應用攻略 (W5 #3 B7 派发, M4 燙金 4 词一次攻, 燙金貼紙 pos 2.3 衝首頁 TOP3)
+  // 9 段 + 4 FAQ + 5 内部链接 + 3 locale native, 100 個起印 HK$0.80/個起, 3 大應用 (貼紙/喜帖/禮盒卡片) + 4 種箔 + 5 種材質 + 12 大行業 + R5 9-12 月旺季
+  // 4 词攻堅: 燙金貼紙 pos 2.3 4 imps 衝首頁 + 燙金印刷 root + 燙金喜帖 Q4 旺季 + 燙金卡片 R5 聖誕新年
+  lpFoilStamping3Applications2026,
 ];
 
 // =============================================================================
