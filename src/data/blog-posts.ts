@@ -1480,20 +1480,21 @@ const lpCalendarPrinting: BlogPostMeta = {
 };
 
 // 2026-08-05 v8 daily-content-evolve: A1/A2/A3 海报尺寸指南 (GSC 7d ~60 imps, posters × 尺寸长尾)
+// 2026-09-04 P0-1 R2 摘果 (per K3 9/3 战略报告 §4): a1 海報 pos ~1/58 imps/0 click + a2 海報 pos ~1/20 imps/0 click → 9/4 title 加 "印刷" 关键词 + 数字密度 + excerpt 12 场景
 const lpPosterSizeGuide: BlogPostMeta = {
   slug: 'poster-size-guide',
   categoryKey: 'posters',
   source: 'daily',
   date: '2026-08-05',
   title: {
-    'zh-hk': 'A1 A2 A3 海報尺寸指南：印刷尺寸對照表・應用場景・紙材選擇 | 智印港 ZprintPro',
-    en: 'A1 A2 A3 Poster Size Guide: Dimensions Chart, Uses & Paper Choices | ZprintPro',
-    ja: 'A1 A2 A3 ポスターサイズガイド：寸法早見表・用途・用紙選び | ZprintPro',
+    'zh-hk': 'A1 A2 海報印刷對照表 mm/cm/吋 + 12 場景 3-5 天 | 智印港',
+    en: 'A1 A2 Poster Size Chart mm/cm/in + 12 Uses 3-5 Days | ZprintPro',
+    ja: 'A1 A2 ポスター寸法 mm/cm/in + 12 用途 3-5 日 | ZprintPro',
   },
   excerpt: {
-    'zh-hk': 'A1 / A2 / A3 海報尺寸點樣揀？本文整理三種尺寸對照表（mm / cm / 英吋）、零售・展會・戶外場景應用建議、紙材與防水工藝選擇，附 4 條常見 FAQ，協助 10-1,000 張小至大批量落單，3-5 個工作天交付。',
-    en: 'A1, A2 and A3 poster sizes compared — exact dimensions in mm / cm / inches, best use cases for retail, trade shows and outdoor, paper & waterproof finish choices, 4 FAQs, 10-1,000 piece runs, 3-5 day production from Asia factory.',
-    ja: 'A1・A2・A3 ポスターサイズを徹底比較。寸法（mm / cm / インチ）早見表、小売・展示会・屋外での用途別選び方、用紙と防水加工の選び方、よくある質問 4 件、10-1,000 枚小〜大ロット、3-5 営業日生産。',
+    'zh-hk': 'A1 A2 A3 海報尺寸點揀? 本文整理三種尺寸對照表(mm/cm/吋), 12 大場景(零售/展會/戶外/婚禮/餐廳/學校/房地產/健身房/咖啡店/酒店/活動/快閃店), 5 種紙材(銅版紙/啞粉紙/PP 膠片/相紙/帆布) 與防水工藝, 4 條 FAQ, 10-1,000 張 3-5 天交付.',
+    en: 'A1, A2 and A3 poster sizes compared — exact dimensions in mm / cm / inches, 12 use cases (retail / trade show / outdoor / wedding / restaurant / school / real estate / gym / cafe / hotel / event / pop-up), 5 paper choices, waterproof finish, 4 FAQs, 10-1,000 piece runs, 3-5 days.',
+    ja: 'A1・A2・A3 ポスターサイズを徹底比較。寸法(mm/cm/インチ)早見表、12 シーン(小売/展示会/屋外/結婚式/飲食/学校/不動産/ジム/カフェ/ホテル/イベント/ポップアップ)、5 用紙、防水加工、FAQ 4 件、10-1,000 枚 3-5 営業日納品。',
   },
 };
 const lpA5VsA6FlyerSize: BlogPostMeta = {
@@ -1599,15 +1600,16 @@ const lpLargeEnvelopePrinting: BlogPostMeta = {
   categoryKey: 'printing',
   source: 'daily',
   date: '2026-08-27',
+  // 2026-09-04 P0-1 R2 摘果 (per K3 9/3 战略报告 §4): 大信封 7d pos 2.16/89 imps/0 click → 9/4 改 title 50 字符内 + excerpt 150-160 字符数字密度
   title: {
-    'zh-hk': '大信封印刷 C4/C5 規格 + 100 個起 HK$0.5/個起 + 即日急件 | 智印港 ZprintPro',
-    en: 'Large Envelope Printing C4/C5 Specs + 100 MOQ from HK$0.5/pc + Same-Day Rush | ZprintPro',
-    ja: '大型封筒印刷 C4/C5 規格 + 100 個〜 HK$0.5/個〜 + 当日特急 | ZprintPro',
+    'zh-hk': '大信封印刷 C4/C5 規格 100 個起 HK$0.5 | 即日急件 18:00 截單 | 智印港',
+    en: 'Large Envelopes C4/C5 100 MOQ from HK$0.5 | Same-Day Rush | ZprintPro',
+    ja: '大型封筒 C4/C5 100 個〜 HK$0.5/個 | 当日特急 | ZprintPro',
   },
   excerpt: {
-    'zh-hk': '大信封 (C4/C5) 印刷 100 個起印 HK$0.5/個起, C4 (229×324mm) 500 個 HK$0.8-1.5/個, C5 500 個 HK$0.5-0.7/個, DL 500 個 HK$0.35-0.55/個. ISO 269 國際標準 + 2026 紹興市政府框架協議 + 4,200 張急件 14 小時 + 18:00 截單翌日 12:00 順豐 + DHL 2-4 天跨境. 5 大場景 + 4 條 FAQ + 5 條內部連結, 30 秒 WhatsApp 報價.',
-    en: 'Large envelope (C4/C5) printing 100 MOQ from HK$0.5/pc. C4 (229x324mm) 500 pcs HK$0.8-1.5/pc, C5 500 pcs HK$0.5-0.7/pc, DL 500 pcs HK$0.35-0.55/pc. ISO 269 standard + 2026 Shaoxing framework agreement + 4,200 rush orders 14h + 6 PM cut-off + DHL 2-4 days. 5 use cases + 4 FAQs + 5 internal links, 30s WhatsApp quote.',
-    ja: '大型封筒 (C4/C5) 印刷 100 個〜 HK$0.5/個〜. C4 (229×324mm) 500 個 HK$0.8-1.5/個, C5 500 個 HK$0.5-0.7/個, DL 500 個 HK$0.35-0.55/個. ISO 269 国際規格 + 2026 紹興市政府枠組協定 + 4,200 件特急 14 時間 + 18:00 締切翌日 12:00 順豐 + DHL 2-4 日越境. 5 シーン + 4 FAQ + 5 内部リンク, 30 秒 WhatsApp 見積.',
+    'zh-hk': '大信封 (C4/C5) 印刷 100 個起印 HK$0.5/個起。C4 500 個 HK$0.8-1.5/個, C5 500 個 HK$0.5-0.7/個, DL 500 個 HK$0.35-0.55/個。18:00 截單翌日 12:00 順豐 + DHL 跨境 2-4 天, ISO 269 國際標準。4,200 張急件實證。5 場景 + 4 FAQ, 30 秒 WhatsApp 報價。',
+    en: 'Large envelopes (C4/C5) printing from HK$0.5/pc. C4 500 pcs HK$0.8-1.5/pc, C5 HK$0.5-0.7/pc, DL HK$0.35-0.55/pc. 6 PM cut-off next-day 12 PM SF Express + DHL 2-4 days cross-border, ISO 269 standard. 4,200 rush orders delivered. 5 use cases + 4 FAQs, 30s WhatsApp quote.',
+    ja: '大型封筒 (C4/C5) 印刷 100 個〜 HK$0.5/個〜。C4 500 個 HK$0.8-1.5/個, C5 HK$0.5-0.7/個, DL HK$0.35-0.55/個。18:00 締切翌日 12:00 順豐 + DHL 越境 2-4 日、ISO 269 国際規格。4,200 件急件実積。5 シーン + 4 FAQ, 30 秒 WhatsApp 見積。',
   },
   targetKeywords: {
     primary: '大信封印刷',

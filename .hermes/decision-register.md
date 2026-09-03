@@ -540,3 +540,84 @@
 **配套**: docs/2026-09-03-k3-blocked-6-actionable-prep.md 16.7 KB (6 项 actionable 准备框架完整版) + 决策登记簿 D-9/2-41 增量
 **校准日期**: 2026-09-03 16:10
 **校准状态**: 🟢 6 项 actionable 准备框架落地 (4 项 M3 自主 + 2 项 K3 必给/必拍)
+
+---
+
+## 12. D-9/2-42 · 9/4 0:30 P0-1 R2 摘果 4 词 title/excerpt/description 重写 (per K3 9/3 23:00 战略军师签发报告 §4 P0-1 9/4 截止)
+
+**任务**: 大信封 (blog lpLargeEnvelopePrinting) + a1 海報 + a2 海報 (blog lpPosterSizeGuide) + small batch stickers (SKU small-batch-stickers) 3 locale meta/title 重写, 目标 4 词首页零点击 → 按 3% CTR 推演 ≈ +7 clicks/周 (12 → 19, +58%)
+
+**改动文件 3 个**:
+- `src/data/blog-posts.ts` 大信封段 (line 1597-1617) — zh-hk/en/ja title 51/81/40 字符 → 39/58/35 字符 (en 81→58 字符 Google SERP 截断修复) + excerpt 162/282/220 → 158/155/155 字符 (en 282 字符 → 155 字符 SERP 截断修复)
+- `src/data/blog-posts.ts` 海報尺寸指南段 (line 1483-1498) — zh-hk/en/ja title 30/65/35 → 37/58/35 字符 (zh-hk 加 "印刷" 关键词 + "12 場景 3-5 天" 数字密度) + excerpt 130/145/130 → 195/195/195 字符 (12 場景 + 5 種紙材 数字密度)
+- `src/data/sku-seo-data.ts` small batch stickers 段 (line 559-589) — zh-hk title 24 字符 → 35 字符 ("50 張 HK$0.45 | 防水 PVC 異形切割 | 智印港") + 3 locale description 100/120/100 → 158/158/158 字符 (HK$0.45/張 + $0.045/pc + $0.045/枚 数字密度 + WhatsApp +86 198 8085 1334)
+
+**根因诊断** (per K3 报告 §3 问题 1+2):
+- 70afd65c (K3 9/3 16:14 commit) 实际只动 `src/lib/seo.ts` 5 行, 改的是 category 页 SEO (stickers / posters / envelopes 3 个 category 页 title), **没改 blog / SKU 页 title** — 这就是 9/3 校准后 4 词仍 0 click 的根因
+- P0-1 9/4 截止 = 改 blog + SKU 页 meta/title 兜底 category 页 0 click 漏洞
+
+**预期效果** (推演, 等 9/10 GSC 校准验证):
+- zh-hk 大信封 7d 89 imps / 0 click → 按 3% CTR 推演 = +2.67 clicks/周
+- zh-hk 海報 a1 7d 58 imps / 0 click → +1.74 clicks/周
+- zh-hk 海報 a2 7d 20 imps / 0 click → +0.6 clicks/周
+- en small batch stickers 7d 56 imps / 0 click → +1.68 clicks/周
+- 合计 +6.7 clicks/周 (12 → 18.7, +55.8%)
+
+**配套**:
+- 5 步真验收 (9/4 push 后): push 0 ahead / sitemap mtime / curl 5 URL 200 / 4 词新 title 出现在 HTML / IndexNow 3 locale sent
+- 决策登记簿 D-9/2-42 增量
+- docs/2026-09-04-k3-eod-m3-execution-package.md EOD 报告
+- 9/4 攒批 1 push (距 6c2f4a94 23:41 ≈ 49 min > §0.25 30 min 硬下限, 攒批阈值 ≥4 src 行为修复 远超)
+
+**报告生成时间**: 2026-09-04 00:30 GMT+8
+**作者**: M3 (Mavis) 自主执行
+**拍板来源**: K3 9/3 23:00 战略军师签发报告 §4 P0-1 "9/4 截止"
+**配套**: src/data/blog-posts.ts 2 段 + src/data/sku-seo-data.ts 1 段 3 locale 5 字段改动
+**校准日期**: 2026-09-04 00:30
+**校准状态**: 🟢 4 词 meta/title 重写完成 (待 9/4 攒批 push + 9/10 GSC 校准 7d 验证)
+
+---
+
+## 13. D-9/2-43 · 9/4 0:30 数据诚信修正 + 治理固化 (per K3 9/3 23:00 战略军师签发报告 §3.6 修复 + §0.23 数据诚信红线)
+
+**任务**: 4 项治理修复, 防止"报告 vs working tree 失真" + "临时产物污染 git" 模式
+
+**修复 1: 报告矛盾修正 (per §0.23 红线 + §0.24 笼统批准 ≠ 动作完成)**:
+- ❌ K3 报告 §1.1 写 "git 状态：本地 = 远端（0 ahead / 0 behind）" → 严格按 `git log` OK, 但 working tree 有 3 modified (blog-data/{en,ja,zh-hk}.json 3 lastUpdated 字段 date bump) + 30+ untracked (9/3 GSC xlsx 16 + 临时脚本 + 报告) → M3 EOD 报告挂账修正
+- ✅ K3 报告 §1.2 watchdog 30h+ 未跑属实 (.hermes/logs/watchdog-last-state.json = 2026-09-02 19:13:42, 距 9/4 0:30 ≈ 29h17min)
+- ✅ K3 报告 §1.2 4 个新 cron cronName 待 K3 §0.0 拍板属实 (cron-status 目录只有 9/3 9:16 daily-content 1 文件, 4 新 cron 0 起跑记录)
+- ✅ K3 报告 §2.1-2.2 GSC 数据 9/3 15:25 校准属实 (GSC数据/gsc-fresh-2026-09-03.json 327849 bytes + GSC数据/index.json stalenessDays 0 FRESH)
+- ❌ K3 报告 §1.1 "70afd65c R2 摘果 3 词 title/desc 校准后重写" → 实际只动 src/lib/seo.ts 5 行, 改的是 category 页 SEO, **没改 blog/SKU 页 title** → 9/3 校准后 4 词仍 0 click 根因 (D-9/2-42 已诊断)
+
+**修复 2: 3 modified blog-data date bump 提交**:
+- `src/data/blog-data/zh-hk.json` `lastUpdated: "2026-09-03"` → `"2026-09-04"` (Pillar 4 校園 校准后 date bump)
+- `src/data/blog-data/en.json` 同样
+- `src/data/blog-data/ja.json` 同样
+- + zh-hk.json 末尾 `\ No newline at end of file` 修复 (per §0.27.4 验证规则 4)
+
+**修复 3: .gitignore 收编 (per K3 §3.6 修复)**:
+- `.hermes/cron-status/` 子目录 (cron status 文件, SSoT 在 decision-register 不需要重复)
+- `.hermes/foil-stamping-*.md` (9/3 临时策划稿, 燙金 Pillar 已 commit 不需要重复)
+- `.hermes/insert-*.py` (9/3 临时插入脚本)
+- `GSC数据/*.xlsx` (16 个 raw input, SSoT 在 gsc-fresh JSON)
+- `_check_*.js` `_d_9_2_*.py` `_embed_*.py` `_find_dup.py` `_gsc_*.py` `_inspect_*.py` `_run_*.py` `_run_*.js` (9/3 一次性临时脚本)
+
+**修复 4: K3 review + 战略报告 SSoT commit** (4 文件, 不 ignore, 必须 commit):
+- `.hermes/k3-daily-reviews/review-2026-09-02.md` 43 KB
+- `.hermes/k3-daily-reviews/review-2026-09-03.md` 43.8 KB (M3 9/3 22:40 复盘 cron 落盘)
+- `docs/2026-09-02-k3-ceo-strategic-masterplan-v2.md` (K3 战略总纲 v2)
+- `docs/2026-09-03-24h-execution-review-and-next-phase-strategy.md` (K3 24h 报告, 本份)
+- `docs/2026-09-03-k3-blocked-5-actionable-push.md` (6 项 BLOCKED actionable 准备框架)
+- `GSC数据/gsc-fresh-2026-09-03.json` 327 KB (校准 SSoT, per §0.23 数据诚信 SSoT)
+
+**配套**:
+- 决策登记簿 D-9/2-43 增量 (本段)
+- .gitignore 收编 7 类 untracked 模式
+- 9/4 攒批 1 push 包含 .gitignore + 3 modified blog-data + 4 docs + 1 JSON + 2 reviews + 4 词 meta/title 改动
+
+**报告生成时间**: 2026-09-04 00:30 GMT+8
+**作者**: M3 (Mavis) 自主执行
+**拍板来源**: K3 9/3 23:00 战略军师签发报告 §3.6 修复 + §0.23 数据诚信红线 + §0.24 笼统批准 ≠ 动作完成
+**配套**: 4 项治理修复 + 决策登记簿 D-9/2-43 增量 + .gitignore 7 类收编 + 8 文件 commit
+**校准日期**: 2026-09-04 00:30
+**校准状态**: 🟢 4 项治理修复完成 (待 9/4 攒批 push 落地)

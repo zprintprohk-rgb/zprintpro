@@ -243,3 +243,20 @@ deploy-log-*.txt
 next-build.log
 next-build-*.log
 zprintpro/
+
+# 2026-09-04 K3 §3.6 修复: 收编 9/3 GSC 校准后 untracked 临时脚本 + GSC xlsx raw input
+# (per K3 9/3 战略军师签发报告 §3.6 修复: ".gitignore 收编 .hermes 临时产物与 GSC xlsx")
+.hermes/cron-status/
+.hermes/foil-stamping-*.md
+.hermes/insert-*.py
+GSC数据/*.xlsx
+# _check_*.js (9/3 临时脚本) + _d_9_2_32_*.py + _embed_*.py + _find_dup.py + _gsc_*.py + _inspect_gsc_*.py
+_check_*.js
+_d_9_2_*.py
+_embed_*.py
+_find_dup.py
+_gsc_*.py
+_inspect_*.py
+# 9/3 一次性 cron 临时脚本 (后续 cron 必带 _tmp_ 前缀)
+_run_*.py
+_run_*.js

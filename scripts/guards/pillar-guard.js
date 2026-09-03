@@ -73,12 +73,32 @@ function checkPillar(file, content) {
     }
 
     // 检查 3: 实际 schema 块类型必须包含 5 个必需 schema
+    // 用平衡花括号提取完整 JSON 对象 (原 regex [{...}?] 不能处理嵌套 JSON-LD)
     const ldBlockTypes = new Set();
-    const ldRegex = /<script\s+type=["']application\/ld\+json["']>\s*({[\s\S]*?})\s*<\/script>/g;
-    let m;
-    while ((m = ldRegex.exec(blogContent)) !== null) {
+    const ldStartRegex = /<script\s+type=["']application\/ld\+json["']>/g;
+    let sm;
+    while ((sm = ldStartRegex.exec(blogContent)) !== null) {
+      // 找下一个 </script>
+      const endIdx = blogContent.indexOf('</script>', sm.index);
+      if (endIdx < 0) break;
+      const body = blogContent.substring(sm.index + sm[0].length, endIdx);
+      // 用平衡花括号提取第一个完整 {...}
+      const firstBrace = body.indexOf('{');
+      if (firstBrace < 0) continue;
+      let depth = 0, inString = false, escape = false, end = -1;
+      for (let i = firstBrace; i < body.length; i++) {
+        const ch = body[i];
+        if (escape) { escape = false; continue; }
+        if (ch === '\\') { escape = true; continue; }
+        if (ch === '"') { inString = !inString; continue; }
+        if (inString) continue;
+        if (ch === '{') depth++;
+        else if (ch === '}') { depth--; if (depth === 0) { end = i; break; } }
+      }
+      if (end < 0) continue;
+      const json = body.substring(firstBrace, end + 1);
       try {
-        const obj = JSON.parse(m[1]);
+        const obj = JSON.parse(json);
         if (obj['@type']) {
           if (Array.isArray(obj['@type'])) {
             obj['@type'].forEach(t => ldBlockTypes.add(t));
