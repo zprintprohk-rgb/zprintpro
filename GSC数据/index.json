@@ -1,13 +1,13 @@
 {
   "schema": "gsc-data-index-v1",
-  "lastBuild": "2026-09-02T09:31:24.416192",
+  "lastBuild": "2026-09-03T15:25:00+08:00",
   "host": "zprintpro.com",
   "freshnessGateHours": 72,
-  "totalFiles": 122,
+  "totalFiles": 123,
   "skippedFiles": 0,
-  "latestFreshData": "2026-08-17",
-  "stalenessDays": 16,
-  "freshnessStatus": "STALE",
+  "latestFreshData": "2026-09-03",
+  "stalenessDays": 0,
+  "freshnessStatus": "FRESH",
   "filesByDate": {
     "2026-07-08": 7,
     "2026-07-09": 7,
@@ -30,6 +30,14 @@
     "date"
   ],
   "files": [
+    {
+      "file": "gsc-fresh-2026-09-03.json",
+      "date": "2026-09-03",
+      "window": "all",
+      "size": 327849,
+      "freshnessStatus": "FRESH",
+      "stalenessDays": 0
+    },
     {
       "path": "GSC数据/2026-08-09/all_queries.csv",
       "size": 29035,

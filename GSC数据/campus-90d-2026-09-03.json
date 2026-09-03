@@ -1,0 +1,156 @@
+{
+  "schema": "campus-90d-v1",
+  "date": "2026-09-03",
+  "window": "3m (5/15 - 9/1 实际 GSC UI 截止 9/2)",
+  "source": "GSC UI 16 xlsx 校准后 (9/3 14:50-15:17)",
+  "campusKeywords": [
+    "校園",
+    "學校",
+    "教育",
+    "教材",
+    "教科書",
+    "教科書印刷",
+    "教材印刷",
+    "校園印刷",
+    "學校印刷",
+    "教育印刷",
+    "school",
+    "education",
+    "textbook",
+    "textbook printing",
+    "school printing",
+    "education printing",
+    "学校",
+    "教育",
+    "教材",
+    "教科書",
+    "製本",
+    "学校印刷",
+    "教育印刷",
+    "教材印刷"
+  ],
+  "data": {
+    "hk": {
+      "matched_queries": [
+        {
+          "query": "學校印刷",
+          "clicks": 1.0,
+          "imps": 61.0,
+          "ctr": 0.016399999999999998,
+          "pos": 36.51,
+          "matched_keyword": "學校"
+        }
+      ],
+      "total_imps": 61.0,
+      "total_clicks": 1.0,
+      "matched_count": 1
+    },
+    "ja": {
+      "matched_queries": [
+        {
+          "query": "教科書 印刷",
+          "clicks": 0.0,
+          "imps": 104.0,
+          "ctr": 0.0,
+          "pos": 40.6,
+          "matched_keyword": "教科書"
+        },
+        {
+          "query": "教科書 印刷会社",
+          "clicks": 0.0,
+          "imps": 59.0,
+          "ctr": 0.0,
+          "pos": 62.64,
+          "matched_keyword": "教科書"
+        },
+        {
+          "query": "教材 印刷製本",
+          "clicks": 0.0,
+          "imps": 53.0,
+          "ctr": 0.0,
+          "pos": 52.38,
+          "matched_keyword": "教材"
+        },
+        {
+          "query": "教材 テキスト印刷",
+          "clicks": 0.0,
+          "imps": 32.0,
+          "ctr": 0.0,
+          "pos": 42.72,
+          "matched_keyword": "教材"
+        },
+        {
+          "query": "教科書 印刷 会社",
+          "clicks": 0.0,
+          "imps": 32.0,
+          "ctr": 0.0,
+          "pos": 64.56,
+          "matched_keyword": "教科書"
+        },
+        {
+          "query": "教材 印刷 製本",
+          "clicks": 0.0,
+          "imps": 28.0,
+          "ctr": 0.0,
+          "pos": 53.71,
+          "matched_keyword": "教材"
+        },
+        {
+          "query": "教材 製本",
+          "clicks": 0.0,
+          "imps": 17.0,
+          "ctr": 0.0,
+          "pos": 67.18,
+          "matched_keyword": "教材"
+        },
+        {
+          "query": "上 製本 印刷 安い",
+          "clicks": 0.0,
+          "imps": 13.0,
+          "ctr": 0.0,
+          "pos": 65.77,
+          "matched_keyword": "製本"
+        },
+        {
+          "query": "教材 印刷会社",
+          "clicks": 0.0,
+          "imps": 3.0,
+          "ctr": 0.0,
+          "pos": 78.67,
+          "matched_keyword": "教材"
+        },
+        {
+          "query": "印刷 教科書",
+          "clicks": 0.0,
+          "imps": 2.0,
+          "ctr": 0.0,
+          "pos": 29.0,
+          "matched_keyword": "教科書"
+        }
+      ],
+      "total_imps": 343.0,
+      "total_clicks": 0.0,
+      "matched_count": 10
+    },
+    "en": {
+      "matched_queries": [
+        {
+          "query": "school exercise book printing",
+          "clicks": 0.0,
+          "imps": 7.0,
+          "ctr": 0.0,
+          "pos": 7.29,
+          "matched_keyword": "school"
+        }
+      ],
+      "total_imps": 7.0,
+      "total_clicks": 0.0,
+      "matched_count": 1
+    }
+  },
+  "aggregate": {
+    "total_imps": 411.0,
+    "total_clicks": 1.0,
+    "matched_query_count": 12
+  }
+}

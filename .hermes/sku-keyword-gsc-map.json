@@ -1,270 +1,2424 @@
 {
-  "schema": "sku-keyword-gsc-map-v1",
-  "lastBuild": "2026-09-02T01:33:14.870Z",
-  "skuCount": 14,
+  "schema": "sku-keyword-gsc-map-v2",
+  "version": "2.0",
+  "lastBuild": "2026-09-03T15:30:00+08:00",
+  "buildSource": "GSC UI 16 xlsx (3 站点 × 4 窗口 + 4 汇总, 校准后数据, per 9/3 校准执行)",
+  "skuCount": 18,
   "skuBreakdown": {
-    "包裝盒 (Pillar #1)": 8,
-    "貼紙與標籤 (Pillar #2)": 6
-  },
-  "gscSource": {
-    "index": "GSC数据/index.json",
-    "latestFreshData": "2026-08-17",
-    "stalenessDays": 16,
-    "freshnessStatus": "STALE",
-    "actionRequired": "9/3 15:00 GSC 校准窗口必拉新数据"
-  },
-  "dataSources": {
-    "pageImps28d": "F:\\zprintpro-nextjs\\GSC数据/2026-08-12-direct/page_imps_28d.csv (490 行, 8/12-direct)",
-    "pageData817": "F:\\zprintpro-nextjs\\GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/网页.csv (8/17 总数据)"
-  },
-  "threeRules": {
-    "R1": "锚文本 = GSC 实证词 (Break the Web 行业标准, blog Cluster → SKU PDP 内链)",
-    "R2": "SKU 死端禁令 (SKU PDP 必含 ≥1 cluster 主文内链 + 2-3 SKU 互链)",
-    "R3": "Silo 权重单向传导 (Pillar → Cluster → SKU, GoElastic 结构)"
-  },
-  "kpiTargets": {
-    "SKU 词 GSC pos 月度轨迹 (进首页数 / 破 0 click 数)": "TBD 9/30 月度 cron 首跑",
-    "联动完整性 (每 SKU 有主文 / 每 cluster 链 ≥2 SKU / 锚文本实证率 100%)": "TBD 9/30 月度 cron 首跑",
-    "008 询盘归因联动 (SKU 级 query → 询盘归档)": "TBD 9/30 月度 cron 首跑"
-  },
-  "map": [
-    {
-      "sku": "packaging-box-custom-100pcs",
-      "targetKeyword": "custom packaging boxes",
-      "pillar": "包裝盒 (Pillar #1)",
-      "locale": "en",
-      "cluster": "packaging-box-custom-guide",
-      "gsc817": {
-        "imps": 0,
-        "clicks": 0,
-        "avgPos": 0
+    "包裝盒": {
+      "keywords": {
+        "zh-hk": {
+          "matched_queries": [
+            {
+              "query": "包裝盒",
+              "clicks": 0.0,
+              "imps": 18.0,
+              "ctr": 0.0,
+              "pos": 30.39,
+              "matched_keyword": "包裝盒"
+            },
+            {
+              "query": "紙盒印刷",
+              "clicks": 0.0,
+              "imps": 17.0,
+              "ctr": 0.0,
+              "pos": 38.47,
+              "matched_keyword": "紙盒"
+            },
+            {
+              "query": "包裝盒訂製",
+              "clicks": 0.0,
+              "imps": 16.0,
+              "ctr": 0.0,
+              "pos": 32.12,
+              "matched_keyword": "包裝盒"
+            },
+            {
+              "query": "禮盒訂製",
+              "clicks": 0.0,
+              "imps": 16.0,
+              "ctr": 0.0,
+              "pos": 38.81,
+              "matched_keyword": "禮盒"
+            },
+            {
+              "query": "包裝盒印刷",
+              "clicks": 0.0,
+              "imps": 15.0,
+              "ctr": 0.0,
+              "pos": 35.93,
+              "matched_keyword": "包裝盒"
+            },
+            {
+              "query": "紙盒訂製",
+              "clicks": 0.0,
+              "imps": 14.0,
+              "ctr": 0.0,
+              "pos": 48.14,
+              "matched_keyword": "紙盒"
+            },
+            {
+              "query": "印刷",
+              "clicks": 0.0,
+              "imps": 8.0,
+              "ctr": 0.0,
+              "pos": 43.5,
+              "matched_keyword": "包裝盒印刷"
+            },
+            {
+              "query": "禮盒訂做",
+              "clicks": 0.0,
+              "imps": 7.0,
+              "ctr": 0.0,
+              "pos": 31.29,
+              "matched_keyword": "禮盒"
+            }
+          ],
+          "total_imps": 111.0,
+          "total_clicks": 0.0
+        },
+        "en": {
+          "matched_queries": [],
+          "total_imps": 0,
+          "total_clicks": 0
+        },
+        "ja": {
+          "matched_queries": [
+            {
+              "query": "クラフト紙 パッケージ印刷",
+              "clicks": 0.0,
+              "imps": 9.0,
+              "ctr": 0.0,
+              "pos": 27.89,
+              "matched_keyword": "パッケージ"
+            },
+            {
+              "query": "クラフト紙 パッケージ 印刷",
+              "clicks": 0.0,
+              "imps": 9.0,
+              "ctr": 0.0,
+              "pos": 28.33,
+              "matched_keyword": "パッケージ"
+            },
+            {
+              "query": "食品 パッケージ",
+              "clicks": 0.0,
+              "imps": 5.0,
+              "ctr": 0.0,
+              "pos": 55.8,
+              "matched_keyword": "パッケージ"
+            },
+            {
+              "query": "食品 パッケージ印刷",
+              "clicks": 0.0,
+              "imps": 3.0,
+              "ctr": 0.0,
+              "pos": 58.0,
+              "matched_keyword": "パッケージ"
+            },
+            {
+              "query": "食品パッケージ",
+              "clicks": 0.0,
+              "imps": 2.0,
+              "ctr": 0.0,
+              "pos": 57.5,
+              "matched_keyword": "パッケージ"
+            },
+            {
+              "query": "防水加工 パッケージ印刷",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 24.0,
+              "matched_keyword": "パッケージ"
+            },
+            {
+              "query": "防水加工 パッケージ 印刷",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 29.0,
+              "matched_keyword": "パッケージ"
+            }
+          ],
+          "total_imps": 30.0,
+          "total_clicks": 0.0
+        }
       },
-      "gsc812Direct": {
-        "matchedQueries": 0,
-        "topQueries": []
-      },
-      "evidenceChain": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/网页.csv · custom packaging boxes · 0 imps · pos 0 · 0 clicks"
+      "total_imps": 141.0,
+      "total_clicks": 0.0,
+      "matched_query_count": 15,
+      "top_queries": [
+        {
+          "query": "包裝盒",
+          "clicks": 0.0,
+          "imps": 18.0,
+          "ctr": 0.0,
+          "pos": 30.39,
+          "matched_keyword": "包裝盒"
+        },
+        {
+          "query": "紙盒印刷",
+          "clicks": 0.0,
+          "imps": 17.0,
+          "ctr": 0.0,
+          "pos": 38.47,
+          "matched_keyword": "紙盒"
+        },
+        {
+          "query": "包裝盒訂製",
+          "clicks": 0.0,
+          "imps": 16.0,
+          "ctr": 0.0,
+          "pos": 32.12,
+          "matched_keyword": "包裝盒"
+        },
+        {
+          "query": "禮盒訂製",
+          "clicks": 0.0,
+          "imps": 16.0,
+          "ctr": 0.0,
+          "pos": 38.81,
+          "matched_keyword": "禮盒"
+        },
+        {
+          "query": "包裝盒印刷",
+          "clicks": 0.0,
+          "imps": 15.0,
+          "ctr": 0.0,
+          "pos": 35.93,
+          "matched_keyword": "包裝盒"
+        }
+      ]
     },
-    {
-      "sku": "packaging-box-custom-100pcs",
-      "targetKeyword": "訂製包裝盒",
-      "pillar": "包裝盒 (Pillar #1)",
-      "locale": "zh-hk",
-      "cluster": "packaging-box-custom-guide",
-      "gsc817": {
-        "imps": 0,
-        "clicks": 0,
-        "avgPos": 0
+    "贴纸": {
+      "keywords": {
+        "zh-hk": {
+          "matched_queries": [
+            {
+              "query": "貼紙印刷",
+              "clicks": 0.0,
+              "imps": 37.0,
+              "ctr": 0.0,
+              "pos": 29.24,
+              "matched_keyword": "貼紙"
+            },
+            {
+              "query": "貼紙",
+              "clicks": 0.0,
+              "imps": 24.0,
+              "ctr": 0.0,
+              "pos": 42.79,
+              "matched_keyword": "貼紙"
+            },
+            {
+              "query": "貼紙設計",
+              "clicks": 0.0,
+              "imps": 18.0,
+              "ctr": 0.0,
+              "pos": 13.94,
+              "matched_keyword": "貼紙"
+            },
+            {
+              "query": "戶外貼紙",
+              "clicks": 0.0,
+              "imps": 18.0,
+              "ctr": 0.0,
+              "pos": 14.78,
+              "matched_keyword": "貼紙"
+            },
+            {
+              "query": "防水貼紙",
+              "clicks": 0.0,
+              "imps": 14.0,
+              "ctr": 0.0,
+              "pos": 7.57,
+              "matched_keyword": "貼紙"
+            },
+            {
+              "query": "貼紙訂製",
+              "clicks": 0.0,
+              "imps": 11.0,
+              "ctr": 0.0,
+              "pos": 24.09,
+              "matched_keyword": "貼紙"
+            },
+            {
+              "query": "可移貼紙",
+              "clicks": 0.0,
+              "imps": 10.0,
+              "ctr": 0.0,
+              "pos": 16.0,
+              "matched_keyword": "貼紙"
+            },
+            {
+              "query": "環保材質貼紙",
+              "clicks": 0.0,
+              "imps": 9.0,
+              "ctr": 0.0,
+              "pos": 18.11,
+              "matched_keyword": "貼紙"
+            },
+            {
+              "query": "透明貼紙",
+              "clicks": 0.0,
+              "imps": 8.0,
+              "ctr": 0.0,
+              "pos": 25.62,
+              "matched_keyword": "貼紙"
+            },
+            {
+              "query": "印刷",
+              "clicks": 0.0,
+              "imps": 8.0,
+              "ctr": 0.0,
+              "pos": 43.5,
+              "matched_keyword": "貼紙印刷"
+            },
+            {
+              "query": "標籤廠商",
+              "clicks": 0.0,
+              "imps": 7.0,
+              "ctr": 0.0,
+              "pos": 52.86,
+              "matched_keyword": "標籤"
+            },
+            {
+              "query": "pvc貼紙",
+              "clicks": 0.0,
+              "imps": 6.0,
+              "ctr": 0.0,
+              "pos": 6.33,
+              "matched_keyword": "貼紙"
+            },
+            {
+              "query": "條碼標籤紙",
+              "clicks": 0.0,
+              "imps": 6.0,
+              "ctr": 0.0,
+              "pos": 52.17,
+              "matched_keyword": "標籤"
+            },
+            {
+              "query": "標籤貼",
+              "clicks": 0.0,
+              "imps": 4.0,
+              "ctr": 0.0,
+              "pos": 42.75,
+              "matched_keyword": "標籤"
+            }
+          ],
+          "total_imps": 180.0,
+          "total_clicks": 0.0
+        },
+        "en": {
+          "matched_queries": [
+            {
+              "query": "small batch label printing",
+              "clicks": 0.0,
+              "imps": 25.0,
+              "ctr": 0.0,
+              "pos": 26.76,
+              "matched_keyword": "label printing"
+            },
+            {
+              "query": "small batch sticker printing",
+              "clicks": 0.0,
+              "imps": 23.0,
+              "ctr": 0.0,
+              "pos": 8.04,
+              "matched_keyword": "sticker printing"
+            },
+            {
+              "query": "small quantity label printing",
+              "clicks": 0.0,
+              "imps": 14.0,
+              "ctr": 0.0,
+              "pos": 58.57,
+              "matched_keyword": "label printing"
+            },
+            {
+              "query": "custom foil stickers",
+              "clicks": 0.0,
+              "imps": 10.0,
+              "ctr": 0.0,
+              "pos": 53.2,
+              "matched_keyword": "stickers"
+            },
+            {
+              "query": "fluorescent stickers",
+              "clicks": 0.0,
+              "imps": 8.0,
+              "ctr": 0.0,
+              "pos": 6.88,
+              "matched_keyword": "stickers"
+            },
+            {
+              "query": "small batch stickers",
+              "clicks": 0.0,
+              "imps": 7.0,
+              "ctr": 0.0,
+              "pos": 6.43,
+              "matched_keyword": "stickers"
+            },
+            {
+              "query": "small batch custom stickers",
+              "clicks": 0.0,
+              "imps": 6.0,
+              "ctr": 0.0,
+              "pos": 10.5,
+              "matched_keyword": "stickers"
+            },
+            {
+              "query": "custom removable stickers",
+              "clicks": 0.0,
+              "imps": 5.0,
+              "ctr": 0.0,
+              "pos": 43.2,
+              "matched_keyword": "stickers"
+            },
+            {
+              "query": "flourescent stickers",
+              "clicks": 0.0,
+              "imps": 3.0,
+              "ctr": 0.0,
+              "pos": 6.0,
+              "matched_keyword": "stickers"
+            },
+            {
+              "query": "custom restickable stickers",
+              "clicks": 0.0,
+              "imps": 3.0,
+              "ctr": 0.0,
+              "pos": 49.0,
+              "matched_keyword": "stickers"
+            },
+            {
+              "query": "custom printed fluorescent labels",
+              "clicks": 0.0,
+              "imps": 3.0,
+              "ctr": 0.0,
+              "pos": 65.0,
+              "matched_keyword": "labels"
+            },
+            {
+              "query": "batch stickers",
+              "clicks": 0.0,
+              "imps": 2.0,
+              "ctr": 0.0,
+              "pos": 3.5,
+              "matched_keyword": "stickers"
+            },
+            {
+              "query": "small batch labels",
+              "clicks": 0.0,
+              "imps": 2.0,
+              "ctr": 0.0,
+              "pos": 31.0,
+              "matched_keyword": "labels"
+            },
+            {
+              "query": "print removable stickers",
+              "clicks": 0.0,
+              "imps": 2.0,
+              "ctr": 0.0,
+              "pos": 33.5,
+              "matched_keyword": "stickers"
+            },
+            {
+              "query": "foil stickers custom",
+              "clicks": 0.0,
+              "imps": 2.0,
+              "ctr": 0.0,
+              "pos": 50.5,
+              "matched_keyword": "stickers"
+            },
+            {
+              "query": "custom removable labels",
+              "clicks": 0.0,
+              "imps": 2.0,
+              "ctr": 0.0,
+              "pos": 53.0,
+              "matched_keyword": "labels"
+            },
+            {
+              "query": "waterproof sticker printing",
+              "clicks": 0.0,
+              "imps": 2.0,
+              "ctr": 0.0,
+              "pos": 53.0,
+              "matched_keyword": "sticker printing"
+            },
+            {
+              "query": "waterproof sticker printing supplier",
+              "clicks": 0.0,
+              "imps": 2.0,
+              "ctr": 0.0,
+              "pos": 65.5,
+              "matched_keyword": "sticker printing"
+            },
+            {
+              "query": "die-cut stickers",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 1.0,
+              "matched_keyword": "stickers"
+            },
+            {
+              "query": "custom stickers small batch",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 8.0,
+              "matched_keyword": "stickers"
+            },
+            {
+              "query": "how to order custom sticker printing in small batches?",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 10.0,
+              "matched_keyword": "sticker printing"
+            },
+            {
+              "query": "custom fluorescent stickers",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 29.0,
+              "matched_keyword": "stickers"
+            },
+            {
+              "query": "security sticker printing",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 29.0,
+              "matched_keyword": "sticker printing"
+            },
+            {
+              "query": "waterproof stickers manufacturer usa",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 32.0,
+              "matched_keyword": "stickers"
+            }
+          ],
+          "total_imps": 127.0,
+          "total_clicks": 0.0
+        },
+        "ja": {
+          "matched_queries": [
+            {
+              "query": "pvc シール",
+              "clicks": 0.0,
+              "imps": 8.0,
+              "ctr": 0.0,
+              "pos": 18.5,
+              "matched_keyword": "シール"
+            },
+            {
+              "query": "シール pvcとは",
+              "clicks": 0.0,
+              "imps": 2.0,
+              "ctr": 0.0,
+              "pos": 28.0,
+              "matched_keyword": "シール"
+            },
+            {
+              "query": "pvcシールとは",
+              "clicks": 0.0,
+              "imps": 2.0,
+              "ctr": 0.0,
+              "pos": 28.5,
+              "matched_keyword": "シール"
+            },
+            {
+              "query": "pvc ステッカー",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 25.0,
+              "matched_keyword": "ステッカー"
+            },
+            {
+              "query": "pvcステッカーとは",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 30.0,
+              "matched_keyword": "ステッカー"
+            },
+            {
+              "query": "型 抜き ステッカー",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 48.0,
+              "matched_keyword": "ステッカー"
+            }
+          ],
+          "total_imps": 15.0,
+          "total_clicks": 0.0
+        }
       },
-      "gsc812Direct": {
-        "matchedQueries": 0,
-        "topQueries": []
-      },
-      "evidenceChain": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/网页.csv · 訂製包裝盒 · 0 imps · pos 0 · 0 clicks"
+      "total_imps": 322.0,
+      "total_clicks": 0.0,
+      "matched_query_count": 44,
+      "top_queries": [
+        {
+          "query": "貼紙印刷",
+          "clicks": 0.0,
+          "imps": 37.0,
+          "ctr": 0.0,
+          "pos": 29.24,
+          "matched_keyword": "貼紙"
+        },
+        {
+          "query": "small batch label printing",
+          "clicks": 0.0,
+          "imps": 25.0,
+          "ctr": 0.0,
+          "pos": 26.76,
+          "matched_keyword": "label printing"
+        },
+        {
+          "query": "貼紙",
+          "clicks": 0.0,
+          "imps": 24.0,
+          "ctr": 0.0,
+          "pos": 42.79,
+          "matched_keyword": "貼紙"
+        },
+        {
+          "query": "small batch sticker printing",
+          "clicks": 0.0,
+          "imps": 23.0,
+          "ctr": 0.0,
+          "pos": 8.04,
+          "matched_keyword": "sticker printing"
+        },
+        {
+          "query": "貼紙設計",
+          "clicks": 0.0,
+          "imps": 18.0,
+          "ctr": 0.0,
+          "pos": 13.94,
+          "matched_keyword": "貼紙"
+        }
+      ]
     },
-    {
-      "sku": "packaging-box-custom-100pcs",
-      "targetKeyword": "パッケージ印刷 カスタム",
-      "pillar": "包裝盒 (Pillar #1)",
-      "locale": "ja",
-      "cluster": "packaging-box-custom-guide",
-      "gsc817": {
-        "imps": 0,
-        "clicks": 0,
-        "avgPos": 0
+    "彩盒": {
+      "keywords": {
+        "zh-hk": {
+          "matched_queries": [
+            {
+              "query": "印刷",
+              "clicks": 0.0,
+              "imps": 8.0,
+              "ctr": 0.0,
+              "pos": 43.5,
+              "matched_keyword": "彩盒印刷"
+            }
+          ],
+          "total_imps": 8.0,
+          "total_clicks": 0.0
+        },
+        "en": {
+          "matched_queries": [],
+          "total_imps": 0,
+          "total_clicks": 0
+        },
+        "ja": {
+          "matched_queries": [],
+          "total_imps": 0,
+          "total_clicks": 0
+        }
       },
-      "gsc812Direct": {
-        "matchedQueries": 0,
-        "topQueries": []
-      },
-      "evidenceChain": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/网页.csv · パッケージ印刷 カスタム · 0 imps · pos 0 · 0 clicks"
+      "total_imps": 8.0,
+      "total_clicks": 0.0,
+      "matched_query_count": 1,
+      "top_queries": [
+        {
+          "query": "印刷",
+          "clicks": 0.0,
+          "imps": 8.0,
+          "ctr": 0.0,
+          "pos": 43.5,
+          "matched_keyword": "彩盒印刷"
+        }
+      ]
     },
-    {
-      "sku": "cosmetic-card-boxes-gang-run",
-      "targetKeyword": "cosmetic packaging boxes wholesale",
-      "pillar": "包裝盒 (Pillar #1)",
-      "locale": "en",
-      "cluster": "cosmetics-packaging-box-printing-guide",
-      "gsc817": {
-        "imps": 0,
-        "clicks": 0,
-        "avgPos": 0
+    "纸袋": {
+      "keywords": {
+        "zh-hk": {
+          "matched_queries": [
+            {
+              "query": "紙袋印刷",
+              "clicks": 0.0,
+              "imps": 19.0,
+              "ctr": 0.0,
+              "pos": 12.53,
+              "matched_keyword": "紙袋"
+            },
+            {
+              "query": "訂做紙袋",
+              "clicks": 0.0,
+              "imps": 16.0,
+              "ctr": 0.0,
+              "pos": 16.94,
+              "matched_keyword": "紙袋"
+            },
+            {
+              "query": "紙袋訂製",
+              "clicks": 0.0,
+              "imps": 16.0,
+              "ctr": 0.0,
+              "pos": 25.0,
+              "matched_keyword": "紙袋"
+            },
+            {
+              "query": "印刷紙袋",
+              "clicks": 0.0,
+              "imps": 14.0,
+              "ctr": 0.0,
+              "pos": 13.29,
+              "matched_keyword": "紙袋"
+            },
+            {
+              "query": "邊度有紙袋買",
+              "clicks": 0.0,
+              "imps": 11.0,
+              "ctr": 0.0,
+              "pos": 7.45,
+              "matched_keyword": "紙袋"
+            },
+            {
+              "query": "紙袋",
+              "clicks": 0.0,
+              "imps": 9.0,
+              "ctr": 0.0,
+              "pos": 34.44,
+              "matched_keyword": "紙袋"
+            },
+            {
+              "query": "印刷",
+              "clicks": 0.0,
+              "imps": 8.0,
+              "ctr": 0.0,
+              "pos": 43.5,
+              "matched_keyword": "紙袋印刷"
+            },
+            {
+              "query": "大紙袋",
+              "clicks": 0.0,
+              "imps": 7.0,
+              "ctr": 0.0,
+              "pos": 6.0,
+              "matched_keyword": "紙袋"
+            }
+          ],
+          "total_imps": 100.0,
+          "total_clicks": 0.0
+        },
+        "en": {
+          "matched_queries": [],
+          "total_imps": 0,
+          "total_clicks": 0
+        },
+        "ja": {
+          "matched_queries": [
+            {
+              "query": "紙袋 印刷",
+              "clicks": 0.0,
+              "imps": 6.0,
+              "ctr": 0.0,
+              "pos": 58.33,
+              "matched_keyword": "紙袋"
+            },
+            {
+              "query": "クラフト紙袋 印刷",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 32.0,
+              "matched_keyword": "紙袋"
+            },
+            {
+              "query": "紙袋 プリント",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 54.0,
+              "matched_keyword": "紙袋"
+            }
+          ],
+          "total_imps": 8.0,
+          "total_clicks": 0.0
+        }
       },
-      "gsc812Direct": {
-        "matchedQueries": 0,
-        "topQueries": []
-      },
-      "evidenceChain": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/网页.csv · cosmetic packaging boxes wholesale · 0 imps · pos 0 · 0 clicks"
+      "total_imps": 108.0,
+      "total_clicks": 0.0,
+      "matched_query_count": 11,
+      "top_queries": [
+        {
+          "query": "紙袋印刷",
+          "clicks": 0.0,
+          "imps": 19.0,
+          "ctr": 0.0,
+          "pos": 12.53,
+          "matched_keyword": "紙袋"
+        },
+        {
+          "query": "訂做紙袋",
+          "clicks": 0.0,
+          "imps": 16.0,
+          "ctr": 0.0,
+          "pos": 16.94,
+          "matched_keyword": "紙袋"
+        },
+        {
+          "query": "紙袋訂製",
+          "clicks": 0.0,
+          "imps": 16.0,
+          "ctr": 0.0,
+          "pos": 25.0,
+          "matched_keyword": "紙袋"
+        },
+        {
+          "query": "印刷紙袋",
+          "clicks": 0.0,
+          "imps": 14.0,
+          "ctr": 0.0,
+          "pos": 13.29,
+          "matched_keyword": "紙袋"
+        },
+        {
+          "query": "邊度有紙袋買",
+          "clicks": 0.0,
+          "imps": 11.0,
+          "ctr": 0.0,
+          "pos": 7.45,
+          "matched_keyword": "紙袋"
+        }
+      ]
     },
-    {
-      "sku": "food-packaging-box-greaseproof",
-      "targetKeyword": "food packaging box FDA",
-      "pillar": "包裝盒 (Pillar #1)",
-      "locale": "en",
-      "cluster": "food-packaging-printing-guide",
-      "gsc817": {
-        "imps": 0,
-        "clicks": 0,
-        "avgPos": 0
+    "贺卡": {
+      "keywords": {
+        "zh-hk": {
+          "matched_queries": [
+            {
+              "query": "賀卡印刷",
+              "clicks": 1.0,
+              "imps": 1.0,
+              "ctr": 1.0,
+              "pos": 18.0,
+              "matched_keyword": "賀卡"
+            }
+          ],
+          "total_imps": 1.0,
+          "total_clicks": 1.0
+        },
+        "en": {
+          "matched_queries": [],
+          "total_imps": 0,
+          "total_clicks": 0
+        },
+        "ja": {
+          "matched_queries": [
+            {
+              "query": "グリーティングカード 印刷",
+              "clicks": 0.0,
+              "imps": 2.0,
+              "ctr": 0.0,
+              "pos": 26.0,
+              "matched_keyword": "グリーティングカード"
+            }
+          ],
+          "total_imps": 2.0,
+          "total_clicks": 0.0
+        }
       },
-      "gsc812Direct": {
-        "matchedQueries": 0,
-        "topQueries": []
-      },
-      "evidenceChain": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/网页.csv · food packaging box FDA · 0 imps · pos 0 · 0 clicks"
+      "total_imps": 3.0,
+      "total_clicks": 1.0,
+      "matched_query_count": 2,
+      "top_queries": [
+        {
+          "query": "グリーティングカード 印刷",
+          "clicks": 0.0,
+          "imps": 2.0,
+          "ctr": 0.0,
+          "pos": 26.0,
+          "matched_keyword": "グリーティングカード"
+        },
+        {
+          "query": "賀卡印刷",
+          "clicks": 1.0,
+          "imps": 1.0,
+          "ctr": 1.0,
+          "pos": 18.0,
+          "matched_keyword": "賀卡"
+        }
+      ]
     },
-    {
-      "sku": "eco-kraft-packaging-box",
-      "targetKeyword": "eco kraft packaging box",
-      "pillar": "包裝盒 (Pillar #1)",
-      "locale": "en",
-      "cluster": "eco-printing",
-      "gsc817": {
-        "imps": 0,
-        "clicks": 0,
-        "avgPos": 0
+    "利是封": {
+      "keywords": {
+        "zh-hk": {
+          "matched_queries": [
+            {
+              "query": "利是封印刷",
+              "clicks": 0.0,
+              "imps": 22.0,
+              "ctr": 0.0,
+              "pos": 27.32,
+              "matched_keyword": "利是封"
+            },
+            {
+              "query": "訂製利是封",
+              "clicks": 0.0,
+              "imps": 9.0,
+              "ctr": 0.0,
+              "pos": 25.44,
+              "matched_keyword": "利是封"
+            },
+            {
+              "query": "利是封訂製",
+              "clicks": 0.0,
+              "imps": 7.0,
+              "ctr": 0.0,
+              "pos": 27.14,
+              "matched_keyword": "利是封"
+            }
+          ],
+          "total_imps": 38.0,
+          "total_clicks": 0.0
+        },
+        "en": {
+          "matched_queries": [],
+          "total_imps": 0,
+          "total_clicks": 0
+        },
+        "ja": {
+          "matched_queries": [
+            {
+              "query": "オリジナル ポチ袋",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 3.0,
+              "matched_keyword": "ポチ袋"
+            }
+          ],
+          "total_imps": 1.0,
+          "total_clicks": 0.0
+        }
       },
-      "gsc812Direct": {
-        "matchedQueries": 0,
-        "topQueries": []
-      },
-      "evidenceChain": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/网页.csv · eco kraft packaging box · 0 imps · pos 0 · 0 clicks"
+      "total_imps": 39.0,
+      "total_clicks": 0.0,
+      "matched_query_count": 4,
+      "top_queries": [
+        {
+          "query": "利是封印刷",
+          "clicks": 0.0,
+          "imps": 22.0,
+          "ctr": 0.0,
+          "pos": 27.32,
+          "matched_keyword": "利是封"
+        },
+        {
+          "query": "訂製利是封",
+          "clicks": 0.0,
+          "imps": 9.0,
+          "ctr": 0.0,
+          "pos": 25.44,
+          "matched_keyword": "利是封"
+        },
+        {
+          "query": "利是封訂製",
+          "clicks": 0.0,
+          "imps": 7.0,
+          "ctr": 0.0,
+          "pos": 27.14,
+          "matched_keyword": "利是封"
+        },
+        {
+          "query": "オリジナル ポチ袋",
+          "clicks": 0.0,
+          "imps": 1.0,
+          "ctr": 0.0,
+          "pos": 3.0,
+          "matched_keyword": "ポチ袋"
+        }
+      ]
     },
-    {
-      "sku": "magnetic-closure-gift-box-ecommerce",
-      "targetKeyword": "magnetic closure gift box",
-      "pillar": "包裝盒 (Pillar #1)",
-      "locale": "en",
-      "cluster": "packaging-box-custom-guide",
-      "gsc817": {
-        "imps": 0,
-        "clicks": 0,
-        "avgPos": 0
+    "月曆": {
+      "keywords": {
+        "zh-hk": {
+          "matched_queries": [
+            {
+              "query": "月曆印刷",
+              "clicks": 0.0,
+              "imps": 32.0,
+              "ctr": 0.0,
+              "pos": 18.16,
+              "matched_keyword": "月曆"
+            },
+            {
+              "query": "月曆訂製",
+              "clicks": 0.0,
+              "imps": 15.0,
+              "ctr": 0.0,
+              "pos": 24.6,
+              "matched_keyword": "月曆"
+            },
+            {
+              "query": "座檯月曆",
+              "clicks": 0.0,
+              "imps": 11.0,
+              "ctr": 0.0,
+              "pos": 36.27,
+              "matched_keyword": "月曆"
+            },
+            {
+              "query": "印刷",
+              "clicks": 0.0,
+              "imps": 8.0,
+              "ctr": 0.0,
+              "pos": 43.5,
+              "matched_keyword": "月曆印刷"
+            },
+            {
+              "query": "訂制月曆",
+              "clicks": 0.0,
+              "imps": 7.0,
+              "ctr": 0.0,
+              "pos": 21.57,
+              "matched_keyword": "月曆"
+            }
+          ],
+          "total_imps": 73.0,
+          "total_clicks": 0.0
+        },
+        "en": {
+          "matched_queries": [
+            {
+              "query": "calendar sizes",
+              "clicks": 0.0,
+              "imps": 10.0,
+              "ctr": 0.0,
+              "pos": 42.4,
+              "matched_keyword": "calendar"
+            },
+            {
+              "query": "calendar dimensions",
+              "clicks": 0.0,
+              "imps": 6.0,
+              "ctr": 0.0,
+              "pos": 58.67,
+              "matched_keyword": "calendar"
+            },
+            {
+              "query": "standard calendar size",
+              "clicks": 0.0,
+              "imps": 5.0,
+              "ctr": 0.0,
+              "pos": 39.0,
+              "matched_keyword": "calendar"
+            },
+            {
+              "query": "calendar standard size",
+              "clicks": 0.0,
+              "imps": 3.0,
+              "ctr": 0.0,
+              "pos": 47.33,
+              "matched_keyword": "calendar"
+            },
+            {
+              "query": "average calendar size",
+              "clicks": 0.0,
+              "imps": 2.0,
+              "ctr": 0.0,
+              "pos": 47.5,
+              "matched_keyword": "calendar"
+            },
+            {
+              "query": "standard calendar dimensions",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 36.0,
+              "matched_keyword": "calendar"
+            },
+            {
+              "query": "typical calendar size",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 36.0,
+              "matched_keyword": "calendar"
+            },
+            {
+              "query": "normal calendar size",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 39.0,
+              "matched_keyword": "calendar"
+            }
+          ],
+          "total_imps": 29.0,
+          "total_clicks": 0.0
+        },
+        "ja": {
+          "matched_queries": [
+            {
+              "query": "カスタムカレンダー",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 27.0,
+              "matched_keyword": "カレンダー"
+            }
+          ],
+          "total_imps": 1.0,
+          "total_clicks": 0.0
+        }
       },
-      "gsc812Direct": {
-        "matchedQueries": 0,
-        "topQueries": []
-      },
-      "evidenceChain": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/网页.csv · magnetic closure gift box · 0 imps · pos 0 · 0 clicks"
+      "total_imps": 103.0,
+      "total_clicks": 0.0,
+      "matched_query_count": 14,
+      "top_queries": [
+        {
+          "query": "月曆印刷",
+          "clicks": 0.0,
+          "imps": 32.0,
+          "ctr": 0.0,
+          "pos": 18.16,
+          "matched_keyword": "月曆"
+        },
+        {
+          "query": "月曆訂製",
+          "clicks": 0.0,
+          "imps": 15.0,
+          "ctr": 0.0,
+          "pos": 24.6,
+          "matched_keyword": "月曆"
+        },
+        {
+          "query": "座檯月曆",
+          "clicks": 0.0,
+          "imps": 11.0,
+          "ctr": 0.0,
+          "pos": 36.27,
+          "matched_keyword": "月曆"
+        },
+        {
+          "query": "calendar sizes",
+          "clicks": 0.0,
+          "imps": 10.0,
+          "ctr": 0.0,
+          "pos": 42.4,
+          "matched_keyword": "calendar"
+        },
+        {
+          "query": "印刷",
+          "clicks": 0.0,
+          "imps": 8.0,
+          "ctr": 0.0,
+          "pos": 43.5,
+          "matched_keyword": "月曆印刷"
+        }
+      ]
     },
-    {
-      "sku": "cross-border-ecommerce-shipping-box",
-      "targetKeyword": "cross border ecommerce shipping box",
-      "pillar": "包裝盒 (Pillar #1)",
-      "locale": "en",
-      "cluster": "cross-border-ecommerce-shipping-box-guide",
-      "gsc817": {
-        "imps": 0,
-        "clicks": 0,
-        "avgPos": 0
+    "餐牌": {
+      "keywords": {
+        "zh-hk": {
+          "matched_queries": [
+            {
+              "query": "餐牌印刷",
+              "clicks": 0.0,
+              "imps": 18.0,
+              "ctr": 0.0,
+              "pos": 12.39,
+              "matched_keyword": "餐牌"
+            },
+            {
+              "query": "印刷",
+              "clicks": 0.0,
+              "imps": 8.0,
+              "ctr": 0.0,
+              "pos": 43.5,
+              "matched_keyword": "餐牌印刷"
+            },
+            {
+              "query": "膠片餐牌",
+              "clicks": 0.0,
+              "imps": 7.0,
+              "ctr": 0.0,
+              "pos": 7.71,
+              "matched_keyword": "餐牌"
+            }
+          ],
+          "total_imps": 33.0,
+          "total_clicks": 0.0
+        },
+        "en": {
+          "matched_queries": [
+            {
+              "query": "pvc menu",
+              "clicks": 0.0,
+              "imps": 3.0,
+              "ctr": 0.0,
+              "pos": 6.67,
+              "matched_keyword": "menu"
+            },
+            {
+              "query": "pvc menus",
+              "clicks": 0.0,
+              "imps": 2.0,
+              "ctr": 0.0,
+              "pos": 2.5,
+              "matched_keyword": "menu"
+            }
+          ],
+          "total_imps": 5.0,
+          "total_clicks": 0.0
+        },
+        "ja": {
+          "matched_queries": [],
+          "total_imps": 0,
+          "total_clicks": 0
+        }
       },
-      "gsc812Direct": {
-        "matchedQueries": 0,
-        "topQueries": []
-      },
-      "evidenceChain": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/网页.csv · cross border ecommerce shipping box · 0 imps · pos 0 · 0 clicks"
+      "total_imps": 38.0,
+      "total_clicks": 0.0,
+      "matched_query_count": 5,
+      "top_queries": [
+        {
+          "query": "餐牌印刷",
+          "clicks": 0.0,
+          "imps": 18.0,
+          "ctr": 0.0,
+          "pos": 12.39,
+          "matched_keyword": "餐牌"
+        },
+        {
+          "query": "印刷",
+          "clicks": 0.0,
+          "imps": 8.0,
+          "ctr": 0.0,
+          "pos": 43.5,
+          "matched_keyword": "餐牌印刷"
+        },
+        {
+          "query": "膠片餐牌",
+          "clicks": 0.0,
+          "imps": 7.0,
+          "ctr": 0.0,
+          "pos": 7.71,
+          "matched_keyword": "餐牌"
+        },
+        {
+          "query": "pvc menu",
+          "clicks": 0.0,
+          "imps": 3.0,
+          "ctr": 0.0,
+          "pos": 6.67,
+          "matched_keyword": "menu"
+        },
+        {
+          "query": "pvc menus",
+          "clicks": 0.0,
+          "imps": 2.0,
+          "ctr": 0.0,
+          "pos": 2.5,
+          "matched_keyword": "menu"
+        }
+      ]
     },
-    {
-      "sku": "waterproof-pvc-sticker",
-      "targetKeyword": "waterproof PVC sticker",
-      "pillar": "貼紙與標籤 (Pillar #2)",
-      "locale": "en",
-      "cluster": "sticker-material-pvc-vinyl-removable",
-      "gsc817": {
-        "imps": 0,
-        "clicks": 0,
-        "avgPos": 0
+    "宣傳單張": {
+      "keywords": {
+        "zh-hk": {
+          "matched_queries": [
+            {
+              "query": "宣傳單張印刷",
+              "clicks": 0.0,
+              "imps": 36.0,
+              "ctr": 0.0,
+              "pos": 29.53,
+              "matched_keyword": "宣傳單張"
+            },
+            {
+              "query": "宣傳單張",
+              "clicks": 0.0,
+              "imps": 31.0,
+              "ctr": 0.0,
+              "pos": 36.42,
+              "matched_keyword": "宣傳單張"
+            },
+            {
+              "query": "印刷",
+              "clicks": 0.0,
+              "imps": 8.0,
+              "ctr": 0.0,
+              "pos": 43.5,
+              "matched_keyword": "單張印刷"
+            }
+          ],
+          "total_imps": 75.0,
+          "total_clicks": 0.0
+        },
+        "en": {
+          "matched_queries": [
+            {
+              "query": "a5 flyer size",
+              "clicks": 0.0,
+              "imps": 5.0,
+              "ctr": 0.0,
+              "pos": 74.2,
+              "matched_keyword": "flyer"
+            },
+            {
+              "query": "a6 flyer size",
+              "clicks": 0.0,
+              "imps": 2.0,
+              "ctr": 0.0,
+              "pos": 54.0,
+              "matched_keyword": "flyer"
+            },
+            {
+              "query": "a6 flyer dimensions",
+              "clicks": 0.0,
+              "imps": 2.0,
+              "ctr": 0.0,
+              "pos": 58.5,
+              "matched_keyword": "flyer"
+            },
+            {
+              "query": "a4 size flyer printing",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 1.0,
+              "matched_keyword": "flyer"
+            },
+            {
+              "query": "trade thick flyers",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 1.0,
+              "matched_keyword": "flyer"
+            },
+            {
+              "query": "a5 vs a6 flyer",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 7.0,
+              "matched_keyword": "flyer"
+            },
+            {
+              "query": "dimensions flyer a6",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 26.0,
+              "matched_keyword": "flyer"
+            },
+            {
+              "query": "weekend flyer delivery",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 36.0,
+              "matched_keyword": "flyer"
+            }
+          ],
+          "total_imps": 14.0,
+          "total_clicks": 0.0
+        },
+        "ja": {
+          "matched_queries": [
+            {
+              "query": "チラシ印刷 早い",
+              "clicks": 0.0,
+              "imps": 9.0,
+              "ctr": 0.0,
+              "pos": 27.89,
+              "matched_keyword": "チラシ"
+            },
+            {
+              "query": "チラシ 印刷 早い",
+              "clicks": 0.0,
+              "imps": 6.0,
+              "ctr": 0.0,
+              "pos": 25.17,
+              "matched_keyword": "チラシ"
+            },
+            {
+              "query": "チラシ 印刷 即日",
+              "clicks": 0.0,
+              "imps": 2.0,
+              "ctr": 0.0,
+              "pos": 29.0,
+              "matched_keyword": "チラシ"
+            },
+            {
+              "query": "チラシ印刷 急ぎ",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 23.0,
+              "matched_keyword": "チラシ"
+            }
+          ],
+          "total_imps": 18.0,
+          "total_clicks": 0.0
+        }
       },
-      "gsc812Direct": {
-        "matchedQueries": 0,
-        "topQueries": []
-      },
-      "evidenceChain": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/网页.csv · waterproof PVC sticker · 0 imps · pos 0 · 0 clicks"
+      "total_imps": 107.0,
+      "total_clicks": 0.0,
+      "matched_query_count": 15,
+      "top_queries": [
+        {
+          "query": "宣傳單張印刷",
+          "clicks": 0.0,
+          "imps": 36.0,
+          "ctr": 0.0,
+          "pos": 29.53,
+          "matched_keyword": "宣傳單張"
+        },
+        {
+          "query": "宣傳單張",
+          "clicks": 0.0,
+          "imps": 31.0,
+          "ctr": 0.0,
+          "pos": 36.42,
+          "matched_keyword": "宣傳單張"
+        },
+        {
+          "query": "チラシ印刷 早い",
+          "clicks": 0.0,
+          "imps": 9.0,
+          "ctr": 0.0,
+          "pos": 27.89,
+          "matched_keyword": "チラシ"
+        },
+        {
+          "query": "印刷",
+          "clicks": 0.0,
+          "imps": 8.0,
+          "ctr": 0.0,
+          "pos": 43.5,
+          "matched_keyword": "單張印刷"
+        },
+        {
+          "query": "チラシ 印刷 早い",
+          "clicks": 0.0,
+          "imps": 6.0,
+          "ctr": 0.0,
+          "pos": 25.17,
+          "matched_keyword": "チラシ"
+        }
+      ]
     },
-    {
-      "sku": "waterproof-pvc-sticker",
-      "targetKeyword": "防水貼紙",
-      "pillar": "貼紙與標籤 (Pillar #2)",
-      "locale": "zh-hk",
-      "cluster": "sticker-material-pvc-vinyl-removable",
-      "gsc817": {
-        "imps": 0,
-        "clicks": 0,
-        "avgPos": 0
+    "海報": {
+      "keywords": {
+        "zh-hk": {
+          "matched_queries": [
+            {
+              "query": "海報印刷",
+              "clicks": 0.0,
+              "imps": 43.0,
+              "ctr": 0.0,
+              "pos": 17.79,
+              "matched_keyword": "海報"
+            },
+            {
+              "query": "印海報",
+              "clicks": 0.0,
+              "imps": 29.0,
+              "ctr": 0.0,
+              "pos": 23.38,
+              "matched_keyword": "海報"
+            },
+            {
+              "query": "海報與印刷",
+              "clicks": 0.0,
+              "imps": 14.0,
+              "ctr": 0.0,
+              "pos": 16.86,
+              "matched_keyword": "海報"
+            },
+            {
+              "query": "印海報一張",
+              "clicks": 0.0,
+              "imps": 8.0,
+              "ctr": 0.0,
+              "pos": 40.38,
+              "matched_keyword": "海報"
+            },
+            {
+              "query": "印刷",
+              "clicks": 0.0,
+              "imps": 8.0,
+              "ctr": 0.0,
+              "pos": 43.5,
+              "matched_keyword": "海報印刷"
+            },
+            {
+              "query": "a3海報印刷",
+              "clicks": 0.0,
+              "imps": 7.0,
+              "ctr": 0.0,
+              "pos": 34.43,
+              "matched_keyword": "海報"
+            },
+            {
+              "query": "海報列印",
+              "clicks": 0.0,
+              "imps": 5.0,
+              "ctr": 0.0,
+              "pos": 54.2,
+              "matched_keyword": "海報"
+            },
+            {
+              "query": "戶外海報",
+              "clicks": 0.0,
+              "imps": 4.0,
+              "ctr": 0.0,
+              "pos": 13.25,
+              "matched_keyword": "海報"
+            },
+            {
+              "query": "a2 海報",
+              "clicks": 0.0,
+              "imps": 3.0,
+              "ctr": 0.0,
+              "pos": 1.0,
+              "matched_keyword": "海報"
+            }
+          ],
+          "total_imps": 121.0,
+          "total_clicks": 0.0
+        },
+        "en": {
+          "matched_queries": [
+            {
+              "query": "a1 posters",
+              "clicks": 0.0,
+              "imps": 6.0,
+              "ctr": 0.0,
+              "pos": 48.5,
+              "matched_keyword": "poster"
+            },
+            {
+              "query": "a2 poster printing",
+              "clicks": 0.0,
+              "imps": 4.0,
+              "ctr": 0.0,
+              "pos": 64.25,
+              "matched_keyword": "poster"
+            },
+            {
+              "query": "out of the box ii poster print",
+              "clicks": 0.0,
+              "imps": 3.0,
+              "ctr": 0.0,
+              "pos": 73.33,
+              "matched_keyword": "poster"
+            },
+            {
+              "query": "poster a 2",
+              "clicks": 0.0,
+              "imps": 2.0,
+              "ctr": 0.0,
+              "pos": 28.5,
+              "matched_keyword": "poster"
+            },
+            {
+              "query": "way 2 poster print",
+              "clicks": 0.0,
+              "imps": 2.0,
+              "ctr": 0.0,
+              "pos": 47.0,
+              "matched_keyword": "poster"
+            },
+            {
+              "query": "catalog ii poster print",
+              "clicks": 0.0,
+              "imps": 2.0,
+              "ctr": 0.0,
+              "pos": 82.5,
+              "matched_keyword": "poster"
+            },
+            {
+              "query": "event poster sizes",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 1.0,
+              "matched_keyword": "poster"
+            },
+            {
+              "query": "poster printing a1",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 1.0,
+              "matched_keyword": "poster"
+            }
+          ],
+          "total_imps": 21.0,
+          "total_clicks": 0.0
+        },
+        "ja": {
+          "matched_queries": [
+            {
+              "query": "a2 クリアポスター 印刷",
+              "clicks": 0.0,
+              "imps": 3.0,
+              "ctr": 0.0,
+              "pos": 42.33,
+              "matched_keyword": "ポスター"
+            },
+            {
+              "query": "ポスター 屋外 防水",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 34.0,
+              "matched_keyword": "ポスター"
+            },
+            {
+              "query": "屋外 ポスター",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 50.0,
+              "matched_keyword": "ポスター"
+            },
+            {
+              "query": "ポスター 屋外",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 52.0,
+              "matched_keyword": "ポスター"
+            }
+          ],
+          "total_imps": 6.0,
+          "total_clicks": 0.0
+        }
       },
-      "gsc812Direct": {
-        "matchedQueries": 0,
-        "topQueries": []
-      },
-      "evidenceChain": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/网页.csv · 防水貼紙 · 0 imps · pos 0 · 0 clicks"
+      "total_imps": 148.0,
+      "total_clicks": 0.0,
+      "matched_query_count": 21,
+      "top_queries": [
+        {
+          "query": "海報印刷",
+          "clicks": 0.0,
+          "imps": 43.0,
+          "ctr": 0.0,
+          "pos": 17.79,
+          "matched_keyword": "海報"
+        },
+        {
+          "query": "印海報",
+          "clicks": 0.0,
+          "imps": 29.0,
+          "ctr": 0.0,
+          "pos": 23.38,
+          "matched_keyword": "海報"
+        },
+        {
+          "query": "海報與印刷",
+          "clicks": 0.0,
+          "imps": 14.0,
+          "ctr": 0.0,
+          "pos": 16.86,
+          "matched_keyword": "海報"
+        },
+        {
+          "query": "印海報一張",
+          "clicks": 0.0,
+          "imps": 8.0,
+          "ctr": 0.0,
+          "pos": 40.38,
+          "matched_keyword": "海報"
+        },
+        {
+          "query": "印刷",
+          "clicks": 0.0,
+          "imps": 8.0,
+          "ctr": 0.0,
+          "pos": 43.5,
+          "matched_keyword": "海報印刷"
+        }
+      ]
     },
-    {
-      "sku": "waterproof-pvc-sticker",
-      "targetKeyword": "防水ステッカー",
-      "pillar": "貼紙與標籤 (Pillar #2)",
-      "locale": "ja",
-      "cluster": "sticker-material-pvc-vinyl-removable",
-      "gsc817": {
-        "imps": 0,
-        "clicks": 0,
-        "avgPos": 0
+    "證書": {
+      "keywords": {
+        "zh-hk": {
+          "matched_queries": [
+            {
+              "query": "證書紙材質",
+              "clicks": 1.0,
+              "imps": 1.0,
+              "ctr": 1.0,
+              "pos": 10.0,
+              "matched_keyword": "證書"
+            },
+            {
+              "query": "印刷",
+              "clicks": 0.0,
+              "imps": 8.0,
+              "ctr": 0.0,
+              "pos": 43.5,
+              "matched_keyword": "證書印刷"
+            }
+          ],
+          "total_imps": 9.0,
+          "total_clicks": 1.0
+        },
+        "en": {
+          "matched_queries": [],
+          "total_imps": 0,
+          "total_clicks": 0
+        },
+        "ja": {
+          "matched_queries": [],
+          "total_imps": 0,
+          "total_clicks": 0
+        }
       },
-      "gsc812Direct": {
-        "matchedQueries": 0,
-        "topQueries": []
-      },
-      "evidenceChain": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/网页.csv · 防水ステッカー · 0 imps · pos 0 · 0 clicks"
+      "total_imps": 9.0,
+      "total_clicks": 1.0,
+      "matched_query_count": 2,
+      "top_queries": [
+        {
+          "query": "印刷",
+          "clicks": 0.0,
+          "imps": 8.0,
+          "ctr": 0.0,
+          "pos": 43.5,
+          "matched_keyword": "證書印刷"
+        },
+        {
+          "query": "證書紙材質",
+          "clicks": 1.0,
+          "imps": 1.0,
+          "ctr": 1.0,
+          "pos": 10.0,
+          "matched_keyword": "證書"
+        }
+      ]
     },
-    {
-      "sku": "clear-transparent-sticker",
-      "targetKeyword": "clear transparent sticker",
-      "pillar": "貼紙與標籤 (Pillar #2)",
-      "locale": "en",
-      "cluster": "sticker-material-pvc-vinyl-removable",
-      "gsc817": {
-        "imps": 0,
-        "clicks": 0,
-        "avgPos": 0
+    "校園": {
+      "keywords": {
+        "zh-hk": {
+          "matched_queries": [
+            {
+              "query": "印刷",
+              "clicks": 0.0,
+              "imps": 8.0,
+              "ctr": 0.0,
+              "pos": 43.5,
+              "matched_keyword": "校園印刷"
+            },
+            {
+              "query": "學校印刷",
+              "clicks": 0.0,
+              "imps": 5.0,
+              "ctr": 0.0,
+              "pos": 29.4,
+              "matched_keyword": "學校印刷"
+            }
+          ],
+          "total_imps": 13.0,
+          "total_clicks": 0.0
+        },
+        "en": {
+          "matched_queries": [],
+          "total_imps": 0,
+          "total_clicks": 0
+        },
+        "ja": {
+          "matched_queries": [],
+          "total_imps": 0,
+          "total_clicks": 0
+        }
       },
-      "gsc812Direct": {
-        "matchedQueries": 0,
-        "topQueries": []
-      },
-      "evidenceChain": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/网页.csv · clear transparent sticker · 0 imps · pos 0 · 0 clicks"
+      "total_imps": 13.0,
+      "total_clicks": 0.0,
+      "matched_query_count": 2,
+      "top_queries": [
+        {
+          "query": "印刷",
+          "clicks": 0.0,
+          "imps": 8.0,
+          "ctr": 0.0,
+          "pos": 43.5,
+          "matched_keyword": "校園印刷"
+        },
+        {
+          "query": "學校印刷",
+          "clicks": 0.0,
+          "imps": 5.0,
+          "ctr": 0.0,
+          "pos": 29.4,
+          "matched_keyword": "學校印刷"
+        }
+      ]
     },
-    {
-      "sku": "gold-foil-sticker",
-      "targetKeyword": "gold foil sticker",
-      "pillar": "貼紙與標籤 (Pillar #2)",
-      "locale": "en",
-      "cluster": "sticker-material-pvc-vinyl-removable",
-      "gsc817": {
-        "imps": 0,
-        "clicks": 0,
-        "avgPos": 0
+    "大信封": {
+      "keywords": {
+        "zh-hk": {
+          "matched_queries": [
+            {
+              "query": "信封印刷",
+              "clicks": 1.0,
+              "imps": 5.0,
+              "ctr": 0.2,
+              "pos": 5.8,
+              "matched_keyword": "信封"
+            },
+            {
+              "query": "大信封",
+              "clicks": 0.0,
+              "imps": 8.0,
+              "ctr": 0.0,
+              "pos": 5.38,
+              "matched_keyword": "大信封"
+            },
+            {
+              "query": "印刷",
+              "clicks": 0.0,
+              "imps": 8.0,
+              "ctr": 0.0,
+              "pos": 43.5,
+              "matched_keyword": "信封印刷"
+            },
+            {
+              "query": "公司信封",
+              "clicks": 0.0,
+              "imps": 3.0,
+              "ctr": 0.0,
+              "pos": 1.0,
+              "matched_keyword": "信封"
+            }
+          ],
+          "total_imps": 24.0,
+          "total_clicks": 1.0
+        },
+        "en": {
+          "matched_queries": [
+            {
+              "query": "envelope printing price quote china",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 31.0,
+              "matched_keyword": "envelope"
+            }
+          ],
+          "total_imps": 1.0,
+          "total_clicks": 0.0
+        },
+        "ja": {
+          "matched_queries": [
+            {
+              "query": "法人 封筒",
+              "clicks": 0.0,
+              "imps": 2.0,
+              "ctr": 0.0,
+              "pos": 58.5,
+              "matched_keyword": "封筒"
+            },
+            {
+              "query": "封筒 印刷 法人",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 58.0,
+              "matched_keyword": "封筒"
+            }
+          ],
+          "total_imps": 3.0,
+          "total_clicks": 0.0
+        }
       },
-      "gsc812Direct": {
-        "matchedQueries": 0,
-        "topQueries": []
-      },
-      "evidenceChain": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/网页.csv · gold foil sticker · 0 imps · pos 0 · 0 clicks"
+      "total_imps": 28.0,
+      "total_clicks": 1.0,
+      "matched_query_count": 7,
+      "top_queries": [
+        {
+          "query": "大信封",
+          "clicks": 0.0,
+          "imps": 8.0,
+          "ctr": 0.0,
+          "pos": 5.38,
+          "matched_keyword": "大信封"
+        },
+        {
+          "query": "印刷",
+          "clicks": 0.0,
+          "imps": 8.0,
+          "ctr": 0.0,
+          "pos": 43.5,
+          "matched_keyword": "信封印刷"
+        },
+        {
+          "query": "信封印刷",
+          "clicks": 1.0,
+          "imps": 5.0,
+          "ctr": 0.2,
+          "pos": 5.8,
+          "matched_keyword": "信封"
+        },
+        {
+          "query": "公司信封",
+          "clicks": 0.0,
+          "imps": 3.0,
+          "ctr": 0.0,
+          "pos": 1.0,
+          "matched_keyword": "信封"
+        },
+        {
+          "query": "法人 封筒",
+          "clicks": 0.0,
+          "imps": 2.0,
+          "ctr": 0.0,
+          "pos": 58.5,
+          "matched_keyword": "封筒"
+        }
+      ]
     },
-    {
-      "sku": "baby-product-label-sticker",
-      "targetKeyword": "FDA food safe label",
-      "pillar": "貼紙與標籤 (Pillar #2)",
-      "locale": "en",
-      "cluster": "baby-product-label-sticker-printing-guide",
-      "gsc817": {
-        "imps": 0,
-        "clicks": 0,
-        "avgPos": 0
+    "小批量": {
+      "keywords": {
+        "zh-hk": {
+          "matched_queries": [
+            {
+              "query": "印刷",
+              "clicks": 0.0,
+              "imps": 8.0,
+              "ctr": 0.0,
+              "pos": 43.5,
+              "matched_keyword": "小批量印刷"
+            }
+          ],
+          "total_imps": 8.0,
+          "total_clicks": 0.0
+        },
+        "en": {
+          "matched_queries": [
+            {
+              "query": "small batch label printing",
+              "clicks": 0.0,
+              "imps": 25.0,
+              "ctr": 0.0,
+              "pos": 26.76,
+              "matched_keyword": "small batch"
+            },
+            {
+              "query": "small batch sticker printing",
+              "clicks": 0.0,
+              "imps": 23.0,
+              "ctr": 0.0,
+              "pos": 8.04,
+              "matched_keyword": "small batch"
+            },
+            {
+              "query": "small batch stickers",
+              "clicks": 0.0,
+              "imps": 7.0,
+              "ctr": 0.0,
+              "pos": 6.43,
+              "matched_keyword": "small batch"
+            },
+            {
+              "query": "small batch custom stickers",
+              "clicks": 0.0,
+              "imps": 6.0,
+              "ctr": 0.0,
+              "pos": 10.5,
+              "matched_keyword": "small batch"
+            },
+            {
+              "query": "small batch labels",
+              "clicks": 0.0,
+              "imps": 2.0,
+              "ctr": 0.0,
+              "pos": 31.0,
+              "matched_keyword": "small batch"
+            },
+            {
+              "query": "custom stickers small batch",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 8.0,
+              "matched_keyword": "small batch"
+            },
+            {
+              "query": "how to order custom sticker printing in small batches?",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 10.0,
+              "matched_keyword": "small batch"
+            }
+          ],
+          "total_imps": 65.0,
+          "total_clicks": 0.0
+        },
+        "ja": {
+          "matched_queries": [],
+          "total_imps": 0,
+          "total_clicks": 0
+        }
       },
-      "gsc812Direct": {
-        "matchedQueries": 0,
-        "topQueries": []
+      "total_imps": 73.0,
+      "total_clicks": 0.0,
+      "matched_query_count": 8,
+      "top_queries": [
+        {
+          "query": "small batch label printing",
+          "clicks": 0.0,
+          "imps": 25.0,
+          "ctr": 0.0,
+          "pos": 26.76,
+          "matched_keyword": "small batch"
+        },
+        {
+          "query": "small batch sticker printing",
+          "clicks": 0.0,
+          "imps": 23.0,
+          "ctr": 0.0,
+          "pos": 8.04,
+          "matched_keyword": "small batch"
+        },
+        {
+          "query": "印刷",
+          "clicks": 0.0,
+          "imps": 8.0,
+          "ctr": 0.0,
+          "pos": 43.5,
+          "matched_keyword": "小批量印刷"
+        },
+        {
+          "query": "small batch stickers",
+          "clicks": 0.0,
+          "imps": 7.0,
+          "ctr": 0.0,
+          "pos": 6.43,
+          "matched_keyword": "small batch"
+        },
+        {
+          "query": "small batch custom stickers",
+          "clicks": 0.0,
+          "imps": 6.0,
+          "ctr": 0.0,
+          "pos": 10.5,
+          "matched_keyword": "small batch"
+        }
+      ]
+    },
+    "急件": {
+      "keywords": {
+        "zh-hk": {
+          "matched_queries": [
+            {
+              "query": "即日印刷",
+              "clicks": 0.0,
+              "imps": 13.0,
+              "ctr": 0.0,
+              "pos": 7.85,
+              "matched_keyword": "即日"
+            },
+            {
+              "query": "印刷",
+              "clicks": 0.0,
+              "imps": 8.0,
+              "ctr": 0.0,
+              "pos": 43.5,
+              "matched_keyword": "即日印刷"
+            },
+            {
+              "query": "a1 印刷 即日",
+              "clicks": 0.0,
+              "imps": 7.0,
+              "ctr": 0.0,
+              "pos": 7.43,
+              "matched_keyword": "即日"
+            },
+            {
+              "query": "急件",
+              "clicks": 0.0,
+              "imps": 5.0,
+              "ctr": 0.0,
+              "pos": 8.0,
+              "matched_keyword": "急件"
+            },
+            {
+              "query": "順豐急件",
+              "clicks": 0.0,
+              "imps": 5.0,
+              "ctr": 0.0,
+              "pos": 10.4,
+              "matched_keyword": "急件"
+            },
+            {
+              "query": "a2 印刷 即日",
+              "clicks": 0.0,
+              "imps": 4.0,
+              "ctr": 0.0,
+              "pos": 4.25,
+              "matched_keyword": "即日"
+            }
+          ],
+          "total_imps": 42.0,
+          "total_clicks": 0.0
+        },
+        "en": {
+          "matched_queries": [],
+          "total_imps": 0,
+          "total_clicks": 0
+        },
+        "ja": {
+          "matched_queries": [
+            {
+              "query": "即日 印刷",
+              "clicks": 0.0,
+              "imps": 7.0,
+              "ctr": 0.0,
+              "pos": 30.86,
+              "matched_keyword": "即日"
+            },
+            {
+              "query": "印刷 即日",
+              "clicks": 0.0,
+              "imps": 6.0,
+              "ctr": 0.0,
+              "pos": 38.0,
+              "matched_keyword": "即日"
+            },
+            {
+              "query": "特急印刷 激安",
+              "clicks": 0.0,
+              "imps": 3.0,
+              "ctr": 0.0,
+              "pos": 23.33,
+              "matched_keyword": "特急"
+            },
+            {
+              "query": "チラシ 印刷 即日",
+              "clicks": 0.0,
+              "imps": 2.0,
+              "ctr": 0.0,
+              "pos": 29.0,
+              "matched_keyword": "即日"
+            },
+            {
+              "query": "プリント 即日",
+              "clicks": 0.0,
+              "imps": 2.0,
+              "ctr": 0.0,
+              "pos": 31.5,
+              "matched_keyword": "即日"
+            }
+          ],
+          "total_imps": 20.0,
+          "total_clicks": 0.0
+        }
       },
-      "evidenceChain": "GSC数据/zprintpro.com-Performance-on-Search-总数据 2026-08-17/网页.csv · FDA food safe label · 0 imps · pos 0 · 0 clicks"
+      "total_imps": 62.0,
+      "total_clicks": 0.0,
+      "matched_query_count": 11,
+      "top_queries": [
+        {
+          "query": "即日印刷",
+          "clicks": 0.0,
+          "imps": 13.0,
+          "ctr": 0.0,
+          "pos": 7.85,
+          "matched_keyword": "即日"
+        },
+        {
+          "query": "印刷",
+          "clicks": 0.0,
+          "imps": 8.0,
+          "ctr": 0.0,
+          "pos": 43.5,
+          "matched_keyword": "即日印刷"
+        },
+        {
+          "query": "a1 印刷 即日",
+          "clicks": 0.0,
+          "imps": 7.0,
+          "ctr": 0.0,
+          "pos": 7.43,
+          "matched_keyword": "即日"
+        },
+        {
+          "query": "即日 印刷",
+          "clicks": 0.0,
+          "imps": 7.0,
+          "ctr": 0.0,
+          "pos": 30.86,
+          "matched_keyword": "即日"
+        },
+        {
+          "query": "印刷 即日",
+          "clicks": 0.0,
+          "imps": 6.0,
+          "ctr": 0.0,
+          "pos": 38.0,
+          "matched_keyword": "即日"
+        }
+      ]
+    },
+    "小册子": {
+      "keywords": {
+        "zh-hk": {
+          "matched_queries": [
+            {
+              "query": "騎馬釘印刷",
+              "clicks": 0.0,
+              "imps": 18.0,
+              "ctr": 0.0,
+              "pos": 14.72,
+              "matched_keyword": "騎馬釘"
+            },
+            {
+              "query": "騎馬釘",
+              "clicks": 0.0,
+              "imps": 17.0,
+              "ctr": 0.0,
+              "pos": 19.18,
+              "matched_keyword": "騎馬釘"
+            },
+            {
+              "query": "騎馬釘書刊",
+              "clicks": 0.0,
+              "imps": 14.0,
+              "ctr": 0.0,
+              "pos": 31.71,
+              "matched_keyword": "騎馬釘"
+            },
+            {
+              "query": "小冊子印刷",
+              "clicks": 0.0,
+              "imps": 11.0,
+              "ctr": 0.0,
+              "pos": 10.73,
+              "matched_keyword": "小冊子"
+            },
+            {
+              "query": "印刷",
+              "clicks": 0.0,
+              "imps": 8.0,
+              "ctr": 0.0,
+              "pos": 43.5,
+              "matched_keyword": "小冊子印刷"
+            }
+          ],
+          "total_imps": 68.0,
+          "total_clicks": 0.0
+        },
+        "en": {
+          "matched_queries": [
+            {
+              "query": "saddle stitch booklet",
+              "clicks": 0.0,
+              "imps": 8.0,
+              "ctr": 0.0,
+              "pos": 85.62,
+              "matched_keyword": "booklet"
+            },
+            {
+              "query": "saddle stitch booklets",
+              "clicks": 0.0,
+              "imps": 5.0,
+              "ctr": 0.0,
+              "pos": 86.6,
+              "matched_keyword": "booklet"
+            },
+            {
+              "query": "saddle stitched booklets",
+              "clicks": 0.0,
+              "imps": 4.0,
+              "ctr": 0.0,
+              "pos": 89.5,
+              "matched_keyword": "booklet"
+            },
+            {
+              "query": "saddle stitched book",
+              "clicks": 0.0,
+              "imps": 4.0,
+              "ctr": 0.0,
+              "pos": 98.75,
+              "matched_keyword": "saddle stitch"
+            },
+            {
+              "query": "saddle stitched booklet",
+              "clicks": 0.0,
+              "imps": 3.0,
+              "ctr": 0.0,
+              "pos": 90.0,
+              "matched_keyword": "booklet"
+            },
+            {
+              "query": "saddlestitch booklets",
+              "clicks": 0.0,
+              "imps": 2.0,
+              "ctr": 0.0,
+              "pos": 80.5,
+              "matched_keyword": "booklet"
+            },
+            {
+              "query": "saddle stitched booklet printing",
+              "clicks": 0.0,
+              "imps": 2.0,
+              "ctr": 0.0,
+              "pos": 95.0,
+              "matched_keyword": "booklet"
+            },
+            {
+              "query": "saddle stitch booklet printing",
+              "clicks": 0.0,
+              "imps": 1.0,
+              "ctr": 0.0,
+              "pos": 1.0,
+              "matched_keyword": "booklet"
+            }
+          ],
+          "total_imps": 29.0,
+          "total_clicks": 0.0
+        },
+        "ja": {
+          "matched_queries": [],
+          "total_imps": 0,
+          "total_clicks": 0
+        }
+      },
+      "total_imps": 97.0,
+      "total_clicks": 0.0,
+      "matched_query_count": 13,
+      "top_queries": [
+        {
+          "query": "騎馬釘印刷",
+          "clicks": 0.0,
+          "imps": 18.0,
+          "ctr": 0.0,
+          "pos": 14.72,
+          "matched_keyword": "騎馬釘"
+        },
+        {
+          "query": "騎馬釘",
+          "clicks": 0.0,
+          "imps": 17.0,
+          "ctr": 0.0,
+          "pos": 19.18,
+          "matched_keyword": "騎馬釘"
+        },
+        {
+          "query": "騎馬釘書刊",
+          "clicks": 0.0,
+          "imps": 14.0,
+          "ctr": 0.0,
+          "pos": 31.71,
+          "matched_keyword": "騎馬釘"
+        },
+        {
+          "query": "小冊子印刷",
+          "clicks": 0.0,
+          "imps": 11.0,
+          "ctr": 0.0,
+          "pos": 10.73,
+          "matched_keyword": "小冊子"
+        },
+        {
+          "query": "印刷",
+          "clicks": 0.0,
+          "imps": 8.0,
+          "ctr": 0.0,
+          "pos": 43.5,
+          "matched_keyword": "小冊子印刷"
+        }
+      ]
+    },
+    "中式": {
+      "keywords": {
+        "zh-hk": {
+          "matched_queries": [],
+          "total_imps": 0,
+          "total_clicks": 0
+        },
+        "en": {
+          "matched_queries": [],
+          "total_imps": 0,
+          "total_clicks": 0
+        },
+        "ja": {
+          "matched_queries": [],
+          "total_imps": 0,
+          "total_clicks": 0
+        }
+      },
+      "total_imps": 0,
+      "total_clicks": 0,
+      "matched_query_count": 0,
+      "top_queries": []
+    },
+    "烫金": {
+      "keywords": {
+        "zh-hk": {
+          "matched_queries": [
+            {
+              "query": "印刷",
+              "clicks": 0.0,
+              "imps": 8.0,
+              "ctr": 0.0,
+              "pos": 43.5,
+              "matched_keyword": "燙金印刷"
+            }
+          ],
+          "total_imps": 8.0,
+          "total_clicks": 0.0
+        },
+        "en": {
+          "matched_queries": [],
+          "total_imps": 0,
+          "total_clicks": 0
+        },
+        "ja": {
+          "matched_queries": [],
+          "total_imps": 0,
+          "total_clicks": 0
+        }
+      },
+      "total_imps": 8.0,
+      "total_clicks": 0.0,
+      "matched_query_count": 1,
+      "top_queries": [
+        {
+          "query": "印刷",
+          "clicks": 0.0,
+          "imps": 8.0,
+          "ctr": 0.0,
+          "pos": 43.5,
+          "matched_keyword": "燙金印刷"
+        }
+      ]
     }
-  ]
+  },
+  "links": {
+    "ruleR1": "锚文本实证词: 校准后 GSC 数据中匹配 SKU 关键词的 query 列表",
+    "ruleR2": "死端禁令: 不引 Pillar 12 篇外的内容到 G1/G5 落地页",
+    "ruleR3": "Silo 权重单向传导: 主页 → 品类页 → 产品页 → blog 内容页"
+  }
 }

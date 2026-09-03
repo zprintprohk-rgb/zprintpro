@@ -1,0 +1,21 @@
+{
+  "schema": "p0-4-backtest-v1",
+  "date": "2026-09-03",
+  "calibration": "校准前 8/17 STALE 16d → 校准后 9/3 FRESH 0d",
+  "pre_calibration": {
+    "freshnessStatus": "STALE",
+    "stalenessDays": 16,
+    "gate_9_hits": "校准前 门童 #9 gsc-source-guard 必命中 GSC_STALE"
+  },
+  "post_calibration": {
+    "freshnessStatus": "FRESH",
+    "stalenessDays": 0,
+    "gate_9_hits": "校准后 门童 #9 gsc-source-guard 0 命中 (校准日期 2026-09-03)"
+  },
+  "src_clear_progress": {
+    "校准前 3383 命中 (校准前 14:30 跑过)": "true positive (3383 校准前 stale 数据) + false positive (校准后阈值) 混合",
+    "校准后 588 阈值重新校准": "待 9/3 17:00-18:30 阶段 3 实测 (用校准后 GSC 数据校准 588 阈值)",
+    "剩余 0 命中验证": "阶段 3 18:30 落地"
+  },
+  "status": "🟡 校准后实测待执行 (阶段 3 18:00-18:30)"
+}

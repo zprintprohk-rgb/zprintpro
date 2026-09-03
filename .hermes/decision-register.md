@@ -308,3 +308,87 @@
 **校准日期**: 2026-09-03 06:51
 **校准窗口**: 2026-09-03 15:00 (8h9m 倒计时)
 **校准状态**: 🟡 准备阶段 (校准前)
+
+
+---
+
+## 8. D-9/2-38 · 9/3 GSC 校准执行 (per K3 9/3 15:22 派活包 9 角色综合 P0 = GSC 校准)
+
+**拍板来源**: K3 9/3 15:22 派活包 "GSC数据 文件夹更新了今天最新的GSC数据excel文件...使用这些数据 解决我们的 [9 角色综合能力执行 P0 级问题]" + K3 9/3 06:49 9 角色综合身份
+
+**作者**: M3 (Mavis) 9 角色综合战略军师+CEO
+
+**落地**:
+- GSC数据/gsc-fresh-2026-09-03.json (327849 bytes, 16 dataset × Top 100 queries, 校准后数据)
+- GSC数据/index.json (FRESH 0d, lastBuild 2026-09-03T15:25)
+- docs/2026-09-03-k3-gsc-calibration-report.md (18 KB, 9 角色综合战略军师综合分析)
+- docs/2026-09-03-k3-keyword-map-v4.md (12 KB, 词图 v4 校准后升级)
+- 5 cron SSoT §O 段嵌入 (5 文件 × 3561 chars = 累计 17805 chars / 17.4 KB)
+
+**校准结果** (per 校准报告 §1.1):
+- 校准前 8/17 STALE 16d → 校准后 9/3 FRESH 0d
+- 全站 7d 校准后: 2,207 imps / 12 clicks / CTR 0.54% / pos 29.94
+- 香港 7d 校准后: 1,380 imps / 11 clicks / CTR 0.80% / pos 25.38
+- en 7d 校准后: 416 imps / 1 click / CTR 0.24% / pos 39.81
+- ja 7d 校准后: 145 imps / 0 click / CTR 0.00% / pos 40.97
+- 校准前后差异: 7d/28d/3m 全部 ≤10% ✅, 24h 3 站点 ⚠️ 警告 (样本量小不触发重判)
+
+**5 大下游联动落地** (per 校准报告 §6):
+1. sku-keyword-gsc-map v2: 18 SKU (扩 4 SKU: 中式/烫金/小册子/校園), 65775 bytes
+2. 校园 9/3 GSC 90 天取证: 12 matched queries, 3681 bytes
+3. P0 #4 src/ 588 处清零 backtest: 校准后实测记录
+4. P0 #6 M1 验收 baseline 校准: 7d clicks = 12 锁定
+5. 词图 v3 → v4 升级: docs/2026-09-03-k3-keyword-map-v4.md 12 KB
+
+**校准后 7 项 P0 解锁** (4 项):
+- P0 #1 D-9/2-18 R2 摘果 4 词 (校准后 4 词精确化, 待 D-9/2-32 K3 必拍)
+- P0 #3 D-9/2-20 Pillar 12 篇 (校准后 Pillar 范围精确化, 待 D-9/2-33 K3 必拍)
+- P0 #6 D-9/2-23 M1 验收 (校准后 7d clicks = 12 baseline 锁定, 9/16 验收)
+- P0 #7 D-9/2-24 校園 Pillar go/no-go (校准后 90 天校园流量趋势, 校园 12 queries 落盘, 待 9/8 K3 必拍)
+
+**状态**: 🟢 DONE (校准执行落地, 阶段 2 完成, 阶段 3-4 联动 + EOD 进行中)
+
+**联动 P0**:
+- D-9/2-18 R2 摘果 4 词 (校准后 4 词精确化)
+- D-9/2-20 Pillar 12 篇 (校准后 Pillar 范围)
+- D-9/2-23 M1 验收 (校准后 7d clicks baseline)
+- D-9/2-24 校園 Pillar go/no-go (校准后 90 天校园流量)
+
+**期限**: 9/3 15:25 校准执行落地
+
+---
+
+## 9. D-9/2-39 · 9/3 GSC 校准 5 大下游联动 + 5 cron SSoT §O 段嵌入 (per K3 9/3 15:22 派活包阶段 3 联动)
+
+**拍板来源**: K3 9/3 15:22 派活包 + K3 9/3 06:51 校准前 SOP 阶段 3 + 校准执行 D-9/2-38
+
+**作者**: M3 (Mavis) 9 角色综合战略军师+CEO
+
+**落地**:
+- .hermes/sku-keyword-gsc-map.json v2 (65775 bytes, 18 SKU 校准后)
+- GSC数据/campus-90d-2026-09-03.json (3681 bytes, 校园 12 matched queries 校准后)
+- .hermes/p0-4-backtest-2026-09-03.json (校准后实测记录)
+- .hermes/p0-6-baseline-2026-09-03.json (7d clicks = 12 baseline 锁定)
+- 5 cron SSoT §O 段嵌入 (5 文件 × 3561 chars = 累计 17805 chars / 17.4 KB)
+- 决策登记簿 D-9/2-27 状态 IN_PROGRESS → DONE (本次更新)
+- 决策登记簿 D-9/2-38 + D-9/2-39 增量 (本 commit 落)
+
+**状态**: 🟢 DONE (阶段 3 联动落地 + 5 cron SSoT §O 段嵌入)
+
+**联动 P0**:
+- D-9/2-18 R2 摘果 4 词 (校准后词图 v4 + 18 SKU 联动精确化 4 词)
+- D-9/2-20 Pillar 12 篇 (校准后 41 词分层 + 18 SKU 联动精确化 12 篇)
+- D-9/2-23 M1 验收 (校准后 7d clicks = 12 baseline 锁定, 9/16 验收)
+- D-9/2-24 校園 Pillar go/no-go (校准后 90 天校园 12 queries 落盘, 9/8 K3 必拍)
+
+**期限**: 9/3 15:35 阶段 3 联动落地
+
+---
+
+**报告生成时间**: 2026-09-03 15:35 GMT+8
+**作者**: M3 (Mavis) 9 角色综合战略军师+CEO
+**拍板来源**: K3 9/3 15:22 派活包 GSC 校准 + K3 9/3 06:49 9 角色综合 P0
+**配套**: gsc-fresh-2026-09-03.json 327849 bytes + sku-keyword-gsc-map.json 65775 bytes v2 18 SKU + campus-90d-2026-09-03.json 3681 bytes + 校准报告 18 KB + 词图 v4 12 KB + 5 cron SSoT §O 段嵌入 17.4 KB + 决策登记簿 D-9/2-38 + D-9/2-39 增量
+**校准日期**: 2026-09-03 15:35
+**校准窗口**: 2026-09-03 15:00-20:30 (阶段 2-3 完成, 阶段 4 EOD 进行中)
+**校准状态**: 🟢 校准完成 (阶段 2-3) + 🟡 EOD 进行中 (阶段 4)

@@ -1,0 +1,34 @@
+{
+  "schema": "p0-6-baseline-v1",
+  "date": "2026-09-03",
+  "source": "GSC UI 7d 校准后",
+  "baseline": {
+    "7d_total_clicks": 12,
+    "7d_total_imps": 2207,
+    "7d_ctr": 0.0054,
+    "site_breakdown": {
+      "hk": {
+        "clicks": 11,
+        "imps": 1380,
+        "ctr": 0.008
+      },
+      "ja": {
+        "clicks": 0,
+        "imps": 145,
+        "ctr": 0.0
+      },
+      "en": {
+        "clicks": 1,
+        "imps": 416,
+        "ctr": 0.0024
+      }
+    }
+  },
+  "m1_acceptance_target_9_16": {
+    "7d_clicks_target": "≥ 12 + 增长% (持平或上升)",
+    "7d_imps_target": "≥ 2,500 (校准后 +13%)",
+    "7d_ctr_target": "≥ 0.5% (持平)"
+  },
+  "m1_acceptance_logic": "校准后 9/3-9/16 = 13 天, 9/16 验收 7d clicks 跟 baseline (12) 对比, 持平或上升 = PASS",
+  "status": "🟡 baseline 锁定, 9/16 验收待执行"
+}
