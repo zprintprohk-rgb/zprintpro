@@ -562,7 +562,7 @@ const categorySeoData: Record<string, {
       'ja': '冊子印刷｜50部〜・中綴じ・無線綴じ・上製本｜ZprintPro',
     },
     keywords: {
-      'zh-hk': '書刊印刷,印書,騎馬釘書刊,騎馬釘,膠裝書,精裝書,兒童繪本,教材印刷,印刷製本,小批量書刊,宣傳冊子,公司年報,產品目錄,saddle stitch booklet,school exercise book',
+      'zh-hk': '樣本印刷,樣品印刷,免費樣本,印刷樣本,書刊印刷,印書,騎馬釘書刊,騎馬釘,膠裝書,精裝書,兒童繪本,教材印刷,印刷製本,小批量書刊,宣傳冊子,公司年報,產品目錄,saddle stitch booklet,school exercise book',
       'en': 'booklet printing,saddle stitch booklet,saddle stitch booklets,custom booklets,perfect bound books,hardcover books,children books,textbook printing,school exercise book print,school exercise book printing,small batch booklets,catalog printing,annual report,product catalog,USA book printing',
       'ja': '冊子印刷,中綴じ冊子,無線綴じ冊子,上製本,児童書,テキスト印刷,学校教材,印刷製本,小ロット冊子,カタログ印刷,会社案内,製品カタログ',
     },
@@ -575,8 +575,8 @@ const categorySeoData: Record<string, {
   'educational': {
     titles: {
       'zh-hk': '校園教育印刷 100本起 · 證書/作業簿/教材 學校批量優惠 FSC認證 | 智印港',
-      en: 'Education Printing Free Shipping · 100 MOQ Certificates/Workbooks Bulk | ZprintPro',
-      ja: '教育印刷 100部〜 · 証明書/ワークブック/教科書 学校一括割引 FSC認証 | ZprintPro',
+      en: 'sample printing,free sample,book sample,Education Printing Free Shipping · 100 MOQ Certificates/Workbooks Bulk | ZprintPro',
+      ja: 'サンプル印刷,無料サンプル,書籍サンプル,教育印刷 100部〜 · 証明書/ワークブック/教科書 学校一括割引 FSC認証 | ZprintPro',
     },
     keywords: {
       'zh-hk': '校園印刷,教育印刷,證書印刷,作業簿,教材印刷,學業簿,畢業證書,獎狀印刷,學校印刷,學生手冊,導師手冊,學位證書,幼稚園教材',
