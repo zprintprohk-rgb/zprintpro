@@ -306,7 +306,7 @@ export function CategorySharpHooks({
   // Fallback when no scenario data
   if (scenarios.length === 0) {
     return (
-      <section className="bg-gradient-to-b from-white to-blue-50/30 border-y border-blue-100/60">
+      <section className="bg-gradient-to-b from-white to-[#F9FAFB] border-y border-[#E5E7EB]">
         <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
           <p className="text-center text-sm md:text-base text-gray-600">
             {t.fallbackHook}
@@ -320,15 +320,19 @@ export function CategorySharpHooks({
   const top3 = scenarios.slice(0, 3);
 
   return (
-    <section className="bg-gradient-to-b from-white via-blue-50/20 to-gray-50 border-b border-gray-200">
+    <section className="bg-white border-b border-[#E5E7EB]">
       <div className="max-w-[1320px] mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
         {/* Section header — h3 + view-all 同行 (2026-07-11 PM+UX 复盘: 删"快速开始"小字, view-all 移至 h3 行最右) */}
-        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2 mb-4 sm:mb-5">
+        <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-3 mb-6 sm:mb-7">
           <div>
-            <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-gray-900 mb-1">
+            <span className="inline-flex items-center gap-2.5 mb-2">
+              <span className="inline-block w-[22px] h-[3px] bg-[#F87314]" aria-hidden="true" />
+              <span className="text-[13px] font-semibold tracking-[.12em] uppercase text-[#2873F5]">Sharp Hooks</span>
+            </span>
+            <h3 className="text-xl sm:text-2xl md:text-[28px] font-extrabold tracking-tight text-[#111827] mb-1.5">
               {t.title}
             </h3>
-            <p className="text-xs sm:text-sm text-gray-500">{t.subtitle}</p>
+            <p className="text-sm md:text-[15px] text-[#6B7280]">{t.subtitle}</p>
           </div>
           <a
             href="#industries"
@@ -339,33 +343,33 @@ export function CategorySharpHooks({
         </div>
 
         {/* 3-column sharp hook cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-5">
           {top3.map((scenario, idx) => {
             const industryName = industries[idx] || '';
             const scenarioLines = scenario.scenarios[locale] || scenario.scenarios['zh-hk'];
             return (
               <div
                 key={scenario.key}
-                className="bg-white rounded-xl border border-gray-200 hover:border-[#2873F5] hover:shadow-md transition-all p-4 sm:p-5 group"
+                className="bg-white rounded-2xl border border-[#E5E7EB] hover:border-[#d6e0f5] hover:shadow-[0_10px_30px_rgba(17,24,39,0.08)] hover:-translate-y-1 transition-all duration-300 p-6 sm:p-7 group flex flex-col"
               >
-                {/* Industry name with index badge */}
-                <div className="flex items-center gap-2 mb-3">
-                  <span className="flex-shrink-0 w-6 h-6 rounded-full bg-gradient-to-br from-[#2873F5] to-[#1E5FD1] text-white text-xs font-bold flex items-center justify-center">
-                    {idx + 1}
+                {/* Industry name with large index tile */}
+                <div className="flex items-center gap-3 mb-4 pb-4 border-b border-[#E5E7EB]">
+                  <span className="flex-shrink-0 w-10 h-10 rounded-xl bg-[linear-gradient(165deg,#244780_0%,#1B3163_52%,#152649_100%)] text-white text-base font-extrabold flex items-center justify-center shadow-[0_4px_12px_rgba(15,31,61,0.22)]">
+                    {String(idx + 1).padStart(2, '0')}
                   </span>
-                  <span className="font-semibold text-gray-900 text-sm sm:text-base">
+                  <span className="font-extrabold tracking-tight text-[#111827] text-base sm:text-lg">
                     {industryName}
                   </span>
                 </div>
 
                 {/* 3 sharp hook bullets */}
-                <ul className="space-y-1.5">
+                <ul className="space-y-2.5 flex-1">
                   {scenarioLines.map((line, lineIdx) => (
                     <li
                       key={lineIdx}
-                      className="flex items-start gap-2 text-xs sm:text-sm text-gray-600 leading-relaxed"
+                      className="flex items-start gap-2.5 text-sm text-[#4B5563] leading-relaxed"
                     >
-                      <span className="text-[#F87314] mt-0.5 flex-shrink-0">●</span>
+                      <span className="text-[#F87314] mt-0.5 flex-shrink-0 font-bold" aria-hidden="true">●</span>
                       <span>{line}</span>
                     </li>
                   ))}

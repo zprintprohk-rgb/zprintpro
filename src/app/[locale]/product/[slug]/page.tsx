@@ -469,8 +469,8 @@ export default function ProductPage({
                 {productDescription}
               </p>
               
-              {/* 价格显示 — 去色块简洁风格 (2026-07-26 K3: 单价小锚主显示, 整批价降级小字) */}
-              <div className="mb-5">
+              {/* 价格显示 — 转化焦点卡 (2026-09-02: 价格锚+信任 chips+SKU/MOQ 收进一张卡, 对标 Vistaprint 价格阶梯直写) */}
+              <div className="mb-5 bg-white rounded-2xl border border-[#E5E7EB] shadow-[0_10px_30px_rgba(17,24,39,0.06)] p-5 md:p-6">
                 {(() => {
                   const anchor = getDisplayAnchor(product.slug, locale);
                   return (
@@ -510,6 +510,10 @@ export default function ProductPage({
                     {t.freeShipping}
                   </span>
                 </div>
+                <div className="flex items-center justify-between gap-3 text-xs text-gray-400 mt-4 pt-3 border-t border-[#E5E7EB]">
+                  <span>{t.sku}: <span className="font-mono text-gray-500">{product.sku_code}</span></span>
+                  <span>{t.minOrder}: <span className="font-semibold text-gray-600">{product.minQuantity}</span></span>
+                </div>
               </div>
 
               {/* v14 方案A: price-table-backed SKU 由 ReferencePriceBlock 接管; 其余无表 SKU 仍走 QuoteCalculator */}
@@ -535,13 +539,6 @@ export default function ProductPage({
                 return null;
               })()}
 
-              {/* SKU & 最低订购量 (2026-06-07: 靠右对齐 + 减右 padding 2/3)
-                  2026-07-13 v3: QuantityTier 已从右栏移除, 放在左 column 备注栏下面 */}
-              <div className="flex items-center justify-end gap-3 text-xs text-gray-400 mb-4 pr-2">
-                <span>{t.sku}: <span className="font-mono text-gray-500">{product.sku_code}</span></span>
-                <span className="w-px h-3 bg-gray-300"></span>
-                <span>{t.minOrder}: {product.minQuantity}</span>
-              </div>
             </div>
           </div>
           </ProductQuoteProvider>
