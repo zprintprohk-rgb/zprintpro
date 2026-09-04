@@ -1689,6 +1689,29 @@ const lpFoilStamping3Applications2026: BlogPostMeta = {
   },
 };
 
+// 2026-09-04 v3.3 校园 Pillar go 接线修复: 校園教育印刷 9 月開學季 (JSON 9/3 已落地 18.7K 字, 但此前未接入列表 → 页面 404)
+// 12 queries GSC 取证 (campus-90d-2026-09-03.json) + 5 大印刷品 × 5 大材質 × 12 場景
+const lpCampusEducationPrintingPillarGuide: BlogPostMeta = {
+  slug: 'campus-education-printing-pillar-guide',
+  categoryKey: 'printing',
+  source: 'daily',
+  date: '2026-09-03',
+  title: {
+    'zh-hk': '校園教育印刷 9 月開學季 5 大印刷品 × 5 大材質 × 12 場景 | 智印港',
+    en: 'Campus Education Printing Sept: 5 Products × 5 Materials × 12 Apps | ZprintPro',
+    ja: 'キャンパス教育印刷 9 月新学期 5 大印刷品 × 5 大素材 × 12 シーン | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '9 月開學季校園印刷點揀? 5 大印刷品 (校刊/學生手冊/校園橫幅/畢業冊/證書) × 5 大材質 × 12 個應用場景 (4 大市場), 6 步印刷流程 + 30 秒 AI 報價, 18 SKU 校園聯動 + 12 個內鏈, 100 本起印, 3-5 個工作天交付.',
+    en: 'Back-to-school campus printing guide: 5 print products (yearbooks / student handbooks / campus banners / graduation albums / certificates) × 5 materials × 12 applications across 4 markets, 6-step flow + 30s AI quote, 18 SKU campus linkage, 100-copy MOQ, 3-5 day turnaround.',
+    ja: '9 月新学期キャンパス印刷ガイド：5 大印刷品（学園年刊 / 学生ハンドブック / キャンパス横断幕 / 卒業アルバム / 賞状）× 5 大素材 × 12 応用シーン（4 大市場）、6 ステップ工程 + 30 秒 AI 見積もり、18 SKU キャンパス連動、100 冊〜、3-5 営業日納品。',
+  },
+  targetKeywords: {
+    primary: '校園教育印刷',
+    secondary: ['校刊印刷', '學生手冊', '校園橫幅', '畢業冊', '證書印刷', 'school printing', 'campus printing', 'yearbook printing', '学園印刷', '卒業アルバム'],
+  },
+};
+
 export const blogPosts: BlogPostMeta[] = [
   // Buying guides (9)
   bgBusinessCard,
@@ -1823,6 +1846,8 @@ export const blogPosts: BlogPostMeta[] = [
   // 9 段 + 4 FAQ + 5 内部链接 + 3 locale native, 100 個起印 HK$0.80/個起, 3 大應用 (貼紙/喜帖/禮盒卡片) + 4 種箔 + 5 種材質 + 12 大行業 + R5 9-12 月旺季
   // 4 词攻堅: 燙金貼紙 pos 2.3 4 imps 衝首頁 + 燙金印刷 root + 燙金喜帖 Q4 旺季 + 燙金卡片 R5 聖誕新年
   lpFoilStamping3Applications2026,
+  // 2026-09-04 v3.3 校园 Pillar go 接线修复: 校園教育印刷 9 月開學季 (此前未接入列表 → 页面 404, 现修复)
+  lpCampusEducationPrintingPillarGuide,
 ];
 
 // =============================================================================

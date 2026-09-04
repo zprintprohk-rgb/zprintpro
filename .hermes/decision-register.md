@@ -621,3 +621,129 @@
 **配套**: 4 项治理修复 + 决策登记簿 D-9/2-43 增量 + .gitignore 7 类收编 + 8 文件 commit
 **校准日期**: 2026-09-04 00:30
 **校准状态**: 🟢 4 项治理修复完成 (待 9/4 攒批 push 落地)
+
+---
+
+## 14. D-9/2-44 · 9/4 1:40 baseline 修复 4 方案 + 10 项挂账 (K3 9/4 9:00 上线必拍红线)
+
+**拍板来源**: K3 9/4 1:33 push 给 9/3 16:35 + 17:07 Vercel 2 次 build fail log (历史 log 截图, 非新 deploy) — 实质 = K3 9/3 23:00 战略报告 + 6c2f4a94 commit "build PASS 681 URLs + 96 blog" 实际是 M3 author lazy parse 误报, production Vercel 9/3 16:35 + 17:07 fail 2 次确认 (per §0.23 数据诚信红线 + §0.24 笼统批准 ≠ 动作完成)
+
+**作者**: M3 (Mavis) 9 角色综合战略军师+CEO
+**落地日期**: 2026-09-04 01:40 CST
+**截止**: K3 9/4 9:00 上线 1 段回复 (⚪ BLOCKED K3 必拍红线)
+
+### 14.1 根因诊断 (3 层累积 bug)
+
+**Layer 1 - baseline 5 Pillar 升级 commit 累积 bug (9/3 17:35-17:40)**:
+- `9c35def0` Pillar 1 包裝盒 (17:35:10) commit message "build PASS 681 URLs + 96 blog" (lazy parse 误报, Vercel 17:07 fail)
+- `803852d3` Pillar 2 防水貼紙 (17:35-17:40) 同上
+- `358ac184` Pillar 3 海報 (17:40 左右) 同上
+- `0608e9fa` Pillar 4 校園 (17:40) 同上
+- `b85c7192` Pillar 5 燙金 (17:40) 同上
+- `d4d5f1af` 5 Pillar 15 篇 5 schema 完整修復 (19:23, 嵌套 JSON-LD 引入更多 bug)
+
+**Layer 2 - 12 鐵律重写 commit 累积 bug (9/3 23:29 + 9/4 1:29)**:
+- `6c2f4a94` Pillar 1 12 鐵律重寫 (9/3 23:29, 在 broken baseline 之上叠加 12 鐵律 12,000+ 字)
+- `be19fe55` Pillar 2 12 鐵律重寫 (9/3 23:29)
+- `f93e4c55` Pillar 3 海報 12 鐵律重寫 (9/4 1:29, 已 push origin_ssh/main)
+
+**Layer 3 - 嵌套 JSON 结构 bug**:
+- 5 Pillar content field 嵌套 Schema.org Person JSON-LD `"@type":"Person"` 字符串 — 内嵌 `"` 没 escape (per JSON spec 严格模式 fail)
+- Schema 段 "schema" field value 是 JSON-LD 字符串, 内部包含合法 JSON 子结构 `]`, `}`, `,` 等, raw 0x0A LF 没 escape
+- Vercel Node.js 18 / webpack 5 JSON.parse 严格模式: 9/3 16:35 fail "Build failed because of webpack errors" + 9/3 17:07 fail "Bad control character in string literal in JSON at position 183 (line 5 column 93)"
+
+### 14.2 修复尝试 (M3 1:35-1:38 已跑 + 失败)
+
+- ❌ `scripts/fix-blog-data-gbk-utf8.py` — GBK → UTF-8 编码转换 (0 control char escape bug)
+- ❌ `scripts/fix-blog-data-escape-inner-quotes.py` 第 1 版 — escape nested `"` (修了 6,217 处 inner quote, 但 control char 漏修)
+- ❌ `scripts/fix-blog-data-escape-inner-quotes.py` 第 2 版 — 合并 control char escape (修了 1,942 处 raw 0x0A, 但 state machine 局限: schema 段嵌套 JSON 子结构 + closing `"` 误判)
+- ❌ `npm run build` 1:32 + 1:35 本地 2 次 fail, 跟 Vercel 17:07 同根因
+- ✅ 3 backup file 验证: `.hermes/_backup-*-9-4-0130-utf8.json` 全部 broken JSON (f93e4c55 commit 时已 broken, fix script 1.0 写回没修)
+
+**fix script state machine 局限**:
+- 当 schema value 段含合法 JSON 子结构 `]`, `}` 时, in_string 状态正确 (schema value 还没 close)
+- 当 schema value 真正 closing `"` 出现时, fix script 误把它当 inner quote escape → schema value 永远 in_string=True
+- 后续所有 raw `"` + 0x0A 都被错误处理, 最终 schema value 永不 close, file 末尾 `\u000a` 报 `Invalid \uXXXX escape`
+
+### 14.3 baseline 修复 4 方案 + 风险评估 (K3 必拍)
+
+| 方案 | 描述 | 风险 | 工作量 | 9/4-9/8 影响 | K3 必拍 |
+|------|------|------|--------|--------------|---------|
+| **A (推荐)** | git checkout bbeab07f (9/3 17:35 之前合法 JSON 状态) 还原 3 file + 9/4-9/8 用 json.dumps 重新写 5 Pillar 12 鐵律重写 content (4 天窗口延后但 0 风险, 14 道门童先建, 1 Pillar 1 commit 1 push 攒批) | 低 (还原到 9/3 17:35 已知合法 JSON 状态, 重写用 json.dumps 写合法 string) | 大 (≈ 8h 重写 + 8h 14 道门童 = 16h) | 9/4 Pillar 4 校園 12 鐵律重写推 9/5 / Pillar 5 燙金 推 9/6, 14 道门童 9/4-9/8 全交 | ✅ 必拍 |
+| **B** | 写更稳的 fix script 识别 schema 段 + content 段分开处理 (state machine 改进: 维护 schema open/close 状态, 在 schema value 段内禁用 escape, 只在 schema value 段外 escape) | 中-高 (state machine 复杂度高, 9/3 17:35-17:40 6 commit 累积 bug 难全部诊断) | 中 (≈ 5h fix script + 3h verify = 8h) | 9/4 Pillar 4 校園 12 鐵律重写可推 9/4 攒批 2 (但 fix script 失败则回方案 A) | ⚠️ 高风险 |
+| **C** | 还原 3 file 到 baseline 6c2f4a94 (Pillar 1-5 12 鐵律重写后) + 在 5 Pillar 段 in-place 修复 (Python regex 精準定位 Pillar slug 段, 不动 schema 段) | 中 (5 Pillar 段 in-place 修复 已知 broken, 但不动 schema 段风险可控) | 中-大 (≈ 4h in-place 修复 + 4h verify + 8h 14 道门童 = 16h) | 9/4 Pillar 4 校園 12 鐵律重写推 9/5 攒批 1 (Pillar 4 段是新增, 不在 broken baseline 5 Pillar 范围) | ⚠️ 中风险 |
+| **D (K3 否决)** | 接受 Vercel fail 现状 + 5 Pillar broken 状态继续推进 Pillar 4/5 12 鐵律重写 | 极高 (后续每 push 都 fail, §0.27 闸门 4 持续违反, production 持续 5xx) | N/A (不可行) | N/A | ❌ K3 否决 |
+
+### 14.4 K3 9/4 9:00 上线 10 项必拍挂账 (1 段回复即可推动)
+
+| # | 挂账项 | 拍板来源 | K3 必答 |
+|---|--------|----------|---------|
+| 1 | **D-9/2-44 baseline 修复 4 方案选 1** (本决策登记簿 §14.3, 方案 A/B/C/D) | K3 9/4 1:33 fail log + §0.22 SOP-10 + §0.27 push 决策 | 方案 A/B/C/D 选 1 + 9/4-9/8 Pillar 重写计划调整接受度 |
+| 2 | P0-2 口径裁定 (4 选 1 + M1 9/16 阶梯式 ≥25→40→60 重设) | K3 9/3 23:00 战略报告 §4 P0-2 | 4 选 1 + ≥25→40→60 阶梯式拍板 |
+| 3 | P0-3 R0 5 项决策批 (GA4/Supabase/PayPal+Stripe/X+LinkedIn/403 dashboard 5 项) | K3 9/3 23:00 战略报告 §4 P0-3 | 5 项全批 / 部分批 / 不批 + 优先级 |
+| 4 | R6 Rush* 8 文件 165h+ 第 8 天三选一 (D-9/2-16, commit/revert/amend) | K3 9/3 23:00 战略报告 §4 R6 | commit/revert/amend 选 1 + 接受度 |
+| 5 | 4 个新 cron cronName + 触发时间 (9/3 已过 13h+) | K3 9/3 23:00 战略报告 §1.2 4 cron | zprintpro-blog-audit-85-entries / zprintpro-blog-3locale-sync-14-items / zprintpro-campus-gsc-pull-90d / zprintpro-campus-pillar-launch cronName 必答 |
+| 6 | P0-4 看门狗 30min cron cronName (watchdog 30h+ 未跑) | K3 9/3 23:00 战略报告 §4 P0-4 | watchdog cronName 必答 + 触发时间 |
+| 7 | 8/30 + 8/31 复盘补 (governance signal ⚠️ 修复) | K3 9/3 23:00 战略报告 §3.6 修复 | 8/30 + 8/31 复盘 必补 / 9/4-9/8 排期 / 不补 |
+| 8 | 008 询盘台账是否本周启用 (北极星 50% 引擎何时可度量) | K3 9/3 23:00 战略报告 §1.4 北极星 | 本周启用 / 9/8 启用 / 9/15 启用 / 暂不启用 |
+| 9 | 鐵律重写优先级: GSC imps 排序 vs 品类节奏 | K3 9/3 23:00 战略报告 §4 P0-3 | GSC imps 排序 (Pillar 1 包裝盒 4,413 imps/28d 先重写) / 品类节奏 (Pillar 4 校園 9 月開學季先重写) / 9/4-9/8 4 天内全交 |
+| 10 | 校园 Pillar go/no-go (12 queries 取证已就绪, 9/8 拍板) | K3 9/3 23:00 战略报告 §1.2 校園 | go / no-go / 9/4 攒批 1 推 go / 9/8 拍板 |
+
+### 14.5 当前 M3 状态 (9/4 1:40 自主拍板)
+
+- ❌ **不修 3 file** (fix script state machine 局限, 承认无法在不动 schema 段结构下正确 escape)
+- ❌ **不 push** (§0.27 push 决策 闸门 4 build PASS 未满足, K3 战略决策待拍)
+- ✅ **写 D-9/2-44 baseline 修复 4 方案 + 10 项挂账** (本决策登记簿 §14)
+- ✅ **写 docs/2026-09-04-k3-9am-must-decide.md 1 页简报** (K3 9/4 9:00 上线必看, 14:50 落地)
+- ✅ **设 cron self 30min 监控 K3 9/4 9:00 上线** (14:50 落地, 7h20min TTL)
+- ✅ **K3 sleep 期间 7.5h 推进 14 道门童 6 道新** (9/4 攒批 2 = 14 道门童 #7-#8, 9/5 攒批 1 = 14 道门童 #9-#14, 9/8 门童冻结令前 4 天窗口)
+- ✅ **K3 sleep 期间 7.5h 写 4 cron prompt 草稿** (K3 cronName 必答, prompt 可先写, K3 9/4 9:00 上线后补 cronName 即可 create)
+
+### 14.6 §0.22 SOP-10 5 问门禁 (D-9/2-44 已跑)
+
+1. **架构差异? 派活前查前序任务实现路径** (SOP-10 第 1 款)
+   - 查 git log: 9/3 17:35-17:40 5 Pillar 升级 commit + 9/3 23:29 + 9/4 1:29 12 鐵律重写 commit = 8 commit 累积
+   - 5 Pillar 段 + 5 schema 段 = 10 段嵌套 JSON-LD + 5 段 content field 嵌套 Person JSON-LD = 15 段 broken JSON
+2. **约束适用范围? 上报拍板前先查 K3 拍板原文** (SOP-10 第 2 款)
+   - K3 9/4 1:33 fail log 是 production 实际 fail 证据, 不是 strategic 决策
+   - 修复方案 4 选 1 必 K3 拍 (战略决策, M3 不能自主)
+3. **原数据/拍板来源? 不推断"无来源数字"/"MOCK 数据"** (SOP-10 第 3 款)
+   - 数据来源: K3 9/4 1:33 fail log + git log 8 commit + 3 backup file 验证 + 1:32 + 1:35 本地 2 次 build fail
+   - 不推断"lazy parse 误报", 是 V8 JSON.parse 严格模式 fail 证据
+4. **字段值策略? certNo/validUntil/issuer 全空, 不留联系方式** (SOP-10 第 4 款)
+   - N/A (本决策是技术修复, 不涉及证书字段)
+5. **Markdown 渲染? user-facing 文本含 [text](url) 必须 parseInlineLinks** (SOP-10 第 5 款)
+   - N/A (本决策是技术修复决策登记簿, 不含 [text](url))
+
+### 14.7 §0.23 数据诚信红线 (D-9/2-44 已含数据来源)
+
+- 数据来源: K3 9/4 1:33 fail log (9/3 16:35 + 17:07) + git log f93e4c55~1..f93e4c55 + .hermes/_backup-*-9-4-0130-utf8.json 3 file + 1:32 + 1:35 本地 2 次 build fail
+- 校准日期: 2026-09-04 01:40
+- 校准状态: ⚪ BLOCKED K3 必拍 baseline 修复 4 方案选 1
+
+### 14.8 §0.24 笼统批准 ≠ 动作完成 (D-9/2-44 承认误报)
+
+- ❌ K3 9/3 23:00 战略报告 §1.1 "70afd65c R2 摘果 3 词 title/desc 校准后重写" → 实际只动 src/lib/seo.ts 5 行, 改的是 category 页 SEO, **没改 blog/SKU 页 title** (D-9/2-42 已诊断)
+- ❌ K3 9/3 23:00 战略报告 "build PASS 681 URLs + 96 blog" → 实际是 M3 author lazy parse 误报, production Vercel 9/3 16:35 + 17:07 fail 2 次
+- ❌ `6c2f4a94` commit message "build PASS 681 URLs + 96 blog + 3 locales 227 each" → 实际是 lazy parse 误报, Vercel 17:07 fail 同根因
+- ✅ K3 9/4 1:33 给 2 次 Vercel fail log → 实质性证据, 确认 baseline 5 Pillar 12 鐵律重写 commit 全部 broken JSON 状态
+- ✅ M3 9/4 1:40 承认误报, 不写 "build PASS" (per §0.23 + §0.24 双重红线)
+
+**状态**: ⚪ BLOCKED K3 9/4 9:00 上线 1 段回复 baseline 修复 4 方案选 1 + 10 项挂账 1 段回复 (10 项挂账 1 段回复即可推动, 不必 10 段)
+
+**联动**:
+- §0.27 push 决策 闸门 4 build PASS 持续 fail → 任何 push 都违反 K3 8/28 06:19 红线, 必 K3 拍 baseline 修复后才能 push
+- §0.25.9 v3 攒批优先 + 30 min 硬下限 + 60 min 强制兜底 → baseline 修复 commit 满足攒批阈值 (≥1 src 行为修复), 30 min 硬下限满足, 1 push 修复 8 commit 累积 bug
+- 14 道门童 9/8 冻结令前必交 (per K3 v3.3 §1.4), 6 道新门童 9/4-9/8 4 天窗口
+- 4 cron 9/3 已过 13h+, K3 cronName 必答 (per K3 9/3 23:00 战略报告 §1.2)
+
+**期限**: K3 9/4 9:00 上线 1 段回复 (10 项挂账 1 段回复即可推动)
+
+---
+
+**报告生成时间**: 2026-09-04 01:40 GMT+8
+**作者**: M3 (Mavis) 9 角色综合战略军师+CEO
+**拍板来源**: K3 9/4 1:33 push 给 9/3 16:35 + 17:07 Vercel 2 次 build fail log
+**配套**: 决策登记簿 D-9/2-44 增量 + docs/2026-09-04-k3-9am-must-decide.md 1 页简报 + cron self 30min 监控 K3 上线
+**校准日期**: 2026-09-04 01:40
+**校准状态**: ⚪ BLOCKED K3 9/4 9:00 上线 1 段回复 (10 项挂账 1 段回复即可推动)
