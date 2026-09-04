@@ -33,6 +33,8 @@ import { CategoryProductCard } from '@/components/category/CategoryProductCard';
 import { CategorySortSelect } from '@/components/category/CategorySortSelect';
 import { Pagination } from '@/components/Pagination';
 import { CategoryPillarContent, generateFaqSchema } from '@/components/CategoryPillarContent';
+import { CategoryConversionBlocks } from '@/components/category/CategoryConversionBlocks';
+import { getConversionFaqs } from '@/data/category-conversion-blocks';
 import { CategoryIndustries } from '@/components/category/CategoryIndustries';
 import { CategorySharpHooks } from '@/components/category/CategorySharpHooks';
 import { CategoryViewTracker } from '@/components/tracking/CategoryViewTracker';
@@ -352,8 +354,22 @@ export default function CategoryPage({
       {howToJsonLd && <JsonLd data={howToJsonLd} />}
       <JsonLd data={speakableJsonLd} />
       {(() => {
-        const faqSchema = generateFaqSchema(locale, slug);
-        return faqSchema ? <JsonLd data={faqSchema} /> : null;
+        const baseFaq = generateFaqSchema(locale, slug);
+        const extraFaqs = getConversionFaqs(slug, locale);
+        if (extraFaqs.length === 0) return baseFaq ? <JsonLd data={baseFaq} /> : null;
+        const mergedFaq = {
+          '@context': 'https://schema.org',
+          '@type': 'FAQPage',
+          mainEntity: [
+            ...((baseFaq && (baseFaq as { mainEntity?: unknown[] }).mainEntity) || []),
+            ...extraFaqs.map((f) => ({
+              '@type': 'Question',
+              name: f.q,
+              acceptedAnswer: { '@type': 'Answer', text: f.a },
+            })),
+          ],
+        };
+        return <JsonLd data={mergedFaq} />;
       })()}
 
       <main className="min-h-screen bg-gray-50">
@@ -474,6 +490,9 @@ export default function CategoryPage({
 
         {/* Buying Guide CTA — 选购指南入口 */}
         <BuyingGuideCta locale={locale} categorySlug={slug} />
+
+        {/* M1 大词攻坚转化区块 (B1 2026-09-04): 快速答案/信任状/比较表/6步流程/预填WhatsApp/新FAQ — 独立可回滚 */}
+        <CategoryConversionBlocks locale={locale} categorySlug={slug} />
 
         {/* Pillar Content — SEO支柱内容区 */}
         <CategoryPillarContent locale={locale} categorySlug={slug} />
