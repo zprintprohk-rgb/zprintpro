@@ -505,17 +505,17 @@ const categorySeoData: Record<string, {
   'menus': {
     titles: {
       // 2026-07-17 GSC CTR 修复: 机会词 餐牌印刷 前置
-      'zh-hk': '餐牌印刷 100本起印 防水耐用 24小時快印 多尺寸 | 智印港',
+      'zh-hk': '餐牌印刷 100張起 過膠/PVC防水 膠片餐牌/酒水牌 快至3日 | 智印港',
       en: 'Menu Printing from $0.14 | Free Shipping $99+ | ZprintPro',
       ja: 'メニュー印刷｜¥20〜・小ロット・最短即日・無料デザイン｜ZprintPro',
     },
     keywords: {
-      'zh-hk': '餐牌印刷,菜單印刷,酒水牌,PVC餐牌,過膠餐牌,皮革餐牌,餐廳餐牌,茶餐廳餐牌,酒吧餐牌,外賣餐牌,甜品餐牌,咖啡店餐牌,酒店菜單',
+      'zh-hk': '餐牌印刷,菜單印刷,酒水牌,PVC餐牌,過膠餐牌,膠片餐牌,防水餐牌,皮革餐牌,餐廳餐牌,茶餐廳餐牌,酒吧餐牌,外賣餐牌,甜品餐牌,咖啡店餐牌,酒店菜單',
       en: 'menu printing,custom menus,restaurant menus,bar menus,PVC menus,laminated menus,leather menu covers,takeaway menus,food menus,drink menus,dessert menu,cafe menu,hotel menu,free shipping menus,USA restaurant menus',
       ja: 'メニュー印刷,レストランメニュー,メニューブック,PVCメニュー,ラミネートメニュー,レザーメニュー,居酒屋メニュー,カフェメニュー,デザートメニュー,ホテルメニュー',
     },
     descriptions: {
-      'zh-hk': '餐牌印刷 100 本起印, HK$4 起/份, 標準 3-5 天交貨。防水 PVC / 紙質 / 精裝 / 一次性 4 種材質, 餐廳 / 茶餐廳 / 酒吧 / 咖啡店適用。免費設計打稿 4 小時, 港九新界順豐速遞, ISO 9001 + FSC 認證。',
+      'zh-hk': '餐牌印刷 100 張起, 一次性 HK$0.22 起/張, 過膠餐牌 HK$5 起/張, 精裝 HK$28 起/本。防水 PVC / 膠片 / 精裝 / 一次性 4 種材質, 茶餐廳 / 咖啡店 / 酒吧適用。免費設計打稿 4 小時, 標準 3-5 天交貨, 趕單 WhatsApp 加急, ISO 9001 + FSC 認證。',
       en: 'Menu printing from $0.14, 100 MOQ. Waterproof PVC, paper, hardcover & disposable menus for restaurants, cafes and bars. Free design proof, DHL 2-4 day USA delivery, free shipping $99+. 30-second AI quote.',
       ja: 'メニュー印刷 100 部から、¥20〜。防水 PVC・紙・ハードカバー・使い捨て、レストラン・カフェ・バー向け。無料デザイン校正 2 時間、最短即日発送、日本全国 DHL 2-4 日配送。30 秒 AI 無料見積もり。',
     },
