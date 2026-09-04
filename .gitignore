@@ -226,8 +226,11 @@ USER.md
 .openclaw/
 .openclaw-attachments/
 
-# 2026-07-06: .hermes runtime scripts (don't commit script artifacts)
+# 2026-07-06: .hermes runtime scripts (don't commit script artifacts, EXCEPT integration/audit/fix 工具 per K3 9/4 v3.3 12 鐵律 sub-tasks 整合)
 .hermes/scripts/
+!.hermes/scripts/integrate-*.py
+!.hermes/scripts/audit-*.py
+!.hermes/scripts/fix-*.py
 
 # 2026-07-06: local archive (debug temp files moved here, never commit)
 .archive/
