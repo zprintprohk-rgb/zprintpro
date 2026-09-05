@@ -268,6 +268,56 @@ function buildGuideRedirects() {
     });
   }
 
+  // 2026-09-05 W5 v34: GSC booklets/rush-printing 品类页 404 (45 词 813 展示) 308 收拢
+  // - booklets -> books: exercise book/saddle stitch/教材製本 系承接 books 类目
+  //   (词图 v2 审计: en 17 词 301 展示 / zh-hk 5 词 140 / ja 6 词 93)
+  // - rush-printing -> flyers: 即日印刷词群语义即 flyers 即日 hook
+  //   (ja 即日 印刷 12 + 印刷 即日 10 / zh-hk 即日印刷 35 + a2 印刷 即日 8)
+  // destination 带尾斜杠对齐 trailingSlash:true, permanent:true 产出 308;
+  // 与 W4 catalogs 独立块同构, 可独立回滚。
+  for (const locale of LOCALES) {
+    rules.push({
+      source: `/${locale}/category/booklets`,
+      destination: `/${locale}/category/books/`,
+      permanent: true,
+    });
+    rules.push({
+      source: `/${locale}/category/booklets/`,
+      destination: `/${locale}/category/books/`,
+      permanent: true,
+    });
+    rules.push({
+      source: `/${locale}/booklets`,
+      destination: `/${locale}/category/books/`,
+      permanent: true,
+    });
+    rules.push({
+      source: `/${locale}/booklets/`,
+      destination: `/${locale}/category/books/`,
+      permanent: true,
+    });
+    rules.push({
+      source: `/${locale}/category/rush-printing`,
+      destination: `/${locale}/category/flyers/`,
+      permanent: true,
+    });
+    rules.push({
+      source: `/${locale}/category/rush-printing/`,
+      destination: `/${locale}/category/flyers/`,
+      permanent: true,
+    });
+    rules.push({
+      source: `/${locale}/rush-printing`,
+      destination: `/${locale}/category/flyers/`,
+      permanent: true,
+    });
+    rules.push({
+      source: `/${locale}/rush-printing/`,
+      destination: `/${locale}/category/flyers/`,
+      permanent: true,
+    });
+  }
+
   // /product/{oldSlug}/ (无 locale 前缀, GSC 索引的根路径) 3 locale
   for (const [oldSlug, target] of [
     ['double-sided-cards', 'greeting-cards'],
