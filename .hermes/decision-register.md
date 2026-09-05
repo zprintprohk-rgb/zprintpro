@@ -747,3 +747,45 @@
 **配套**: 决策登记簿 D-9/2-44 增量 + docs/2026-09-04-k3-9am-must-decide.md 1 页简报 + cron self 30min 监控 K3 上线
 **校准日期**: 2026-09-04 01:40
 **校准状态**: ⚪ BLOCKED K3 9/4 9:00 上线 1 段回复 (10 项挂账 1 段回复即可推动)
+
+---
+
+## 15. D-9/5-1 · 9/5 17:00 W1 day 7 收尾 + R3 攻 餐牌印刷 12 鐵律 深度升级 (zprintpro-blog-deepfix cron 触发, M3 自主决定 per §0.28.7 K3 8/28 11:52 拍板 "其他全部交给 M3 执行")
+
+**作者**: M3 (Mavis) orchestrator
+**拍板来源**: zprintpro-blog-deepfix cron 9/5 17:00 触发 + SSoT v1.4 + §0.30 v2.2 已落盘 (per 9/4 末 1e41ccbb + 8cacf057 + 9/4 末 31d0f3ce W2 跨语言全面铺前置) + K3 8/30 19:59 拍板 5 cron 升级 v9.6/v1.4/v7
+**1 cron 1 交付物**: zh-hk restaurant-menu-printing-guide R3 攻 12 鐵律 深度升级 (W1 day 7 收尾 + 9/19 14 天回看)
+**commit**: f87e88af (9/5 17:16 推送 origin_ssh/main)
+**改造内容**:
+- 5 schema JSON-LD 块 (Article + FAQPage + BreadcrumbList + HowTo + Organization) - 12 鐵律 RULE 10
+- H2 問題 3 (香港餐廳菜單材質應該點樣揀 / 餐牌印刷防水防油 / 菜單 50 張起印到 5,000 張) - 12 鐵律 RULE 2
+- 快速答案 塊 3 (4 種主流材質 + 50 張起印 + FDA + EU REACH) - 12 鐵律 RULE 3
+- 答案金塊 3 (餐牌材質 4 種主流核心差異 + 設計精美菜單提升人均消費 15-25% + FDA + EU REACH 跨境必備) - 12 鐵律 RULE 11
+- 4 種材質 5 維度比較表 1 (PP 過膠 / 硬皮精裝 / PVC 防水 / 紙巾式) - 12 鐵律 RULE 12
+- E-E-A-T 作者 + LinkedIn + FDA + EU REACH + ISO 9001 + FSC + ISO 12647-2 認證 - 12 鐵律 RULE 5
+- 內鏈 7 → 10 (補 3 個: packaging-box-pricing-2026 blog + waterproof-stickers SKU + paper-bags category) - 12 鐵律 RULE 9
+- firstP 重写 124 字 (12 鐵律 RULE 1 < 200 字阈值)
+- chars: 10,052 → 18,308 (+8,256 / +82%)
+**门童验证**:
+- blog-quality-12-rules-guard 0 命中 ✅
+- check-regression-guard --commit src/data/blog-data/zh-hk.json: 10 门童全 0 命中 ✅
+- §0.32 zh-hk 5 禁词 0 命中 (per 门童 #6 实体注册 v1.1.1) ✅
+- §13.16 双品牌宪法 (智印港 ZprintPro) ✅
+**build 验证**: PASS 687 URLs / 98 blog / 16 category / 3 locales / IndexNow 3 locales sent
+**5 步真 verify 流水线**:
+- STEP 1 push 无 ahead: 0/0 ✅
+- STEP 2 sitemap mtime: 9/5 17:14:56 (跟 17:16 push close) ✅
+- STEP 3 curl 200: HEAD 200 ✅
+- STEP 4 schema 5 块 0 命中 ✅
+- STEP 5 IndexNow 推送 ✅
+**§0.25 30min 间隔**: 上次 push 4a2eff52 9/5 12:36 → 本 push f87e88af 9/5 17:16 = 4h 40min 间隔 ✅
+**校准日期**: 2026-09-05 17:16
+**校准状态**: 🟢 DONE (f87e88af pushed to origin_ssh/main, 5 步真 verify 全过)
+**配套**: .hermes/decision-register.md D-9/5-1 增量 + K3 9/4 review review-2026-09-04.md baseline + 9/19 14 天回看节点
+**W2 9/6-9/12 跨语言全面铺 en 5 带钱 + ja 4 取引 即将开始**: M3 待 K3 拍 R2 范围 + 9/8 校园 Pillar go/no-go
+**K3 必拍板 4 项 (P0 阻塞)**:
+- D-9/2-18/32 R2 摘果 4 词 (大信封 / a1a2 海報 / small-batch) 9/4 截止已过, 31d0f3ce 9/5 01:04 已落地, 9/20 14 天回看
+- D-9/2-24 校园 Pillar 9/8 go/no-go (4d 倒计)
+- D-9/2-34 en china/factory-direct 内容线 9/30 策划稿
+- D-9/2-44 baseline 修复 4 方案 (K3 9/4 1:40 10 项挂账, 9/5 9am must-decide 简报待 K3 1 段回复)
+- D-9/2-17 R0 4 子项实证产物 (GA4 G-XXXX / Supabase SQL / PayPal 工单+Stripe / IndexNow ✅) 9/5 截止 2 天倒计
