@@ -96,15 +96,15 @@ const QUOTE_PRODUCT_MAP: Record<string, string> = {
   'eco-paper-bags': '/product/eco-paper-bags/',
   // === Business Cards → Greeting Cards (v3.2 §11 战略修正, 2026-08-18) ===
   // 咭片/名片 → 归并到贺卡/喜帖/台卡/酒水牌 业务子类目 (K3 8/17 05:32 拍板)
-  'premium-business-cards': '/product/premium-greeting-cards/',
-  'thick-business-cards-400g': '/product/thick-greeting-cards-400g/',
-  'foil-business-cards': '/product/foil-greeting-cards/',
-  'spot-uv-business-cards': '/product/spot-uv-greeting-cards/',
-  'matte-business-cards': '/product/matte-greeting-cards/',
-  'rounded-corner-cards': '/product/rounded-corner-greeting-cards/',
+  'premium-business-cards': '/product/stickers/',
+  'thick-business-cards-400g': '/product/stickers/',
+  'foil-business-cards': '/product/stickers/',
+  'spot-uv-business-cards': '/product/stickers/',
+  'matte-business-cards': '/product/stickers/',
+  'rounded-corner-cards': '/product/stickers/',
   'double-sided-cards': '/product/double-sided-greeting-cards/',
-  'same-day-business-cards': '/product/same-day-greeting-cards/',
-  'eco-business-cards': '/product/eco-greeting-cards/',
+  'same-day-business-cards': '/product/stickers/',
+  'eco-business-cards': '/product/stickers/',
   // === Handle Bags ===
   'handle-bags': '/product/handle-bags/',
   'small-bags': '/product/small-bags/',

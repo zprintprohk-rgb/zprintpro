@@ -3807,6 +3807,301 @@ export const skuSeoData: Record<string, SkuSeoEntry> = {
       { "q": "DHL 全球配送", "a": "亞洲工廠直送 DHL Express 2-4 天到全球, 香港本地 48 小時交付" }
     ]
   },
+
+  "premium-greeting-cards": {
+    "name": {
+      "zh-hk": "高級賀卡",
+      "en": "Premium Greeting Cards",
+      "ja": "プレミアムグリーティングカード"
+    },
+    "seo": {
+      "zh-hk": {
+        "title": "高級賀卡印刷 | 燙金・局部UV・啞膜 | ZprintPro",
+        "description": "ZprintPro 高級賀卡定制：300g 優質紙、4 色 CMYK 印刷，可選啞膜/光膜、燙金、局部UV。適合聖誕卡、新年卡、婚禮感謝卡、節日禮品卡。100 張起訂、免費樣品、DHL 2-4 天全球送達、FSC 認證紙。",
+        "h1": "高級賀卡定制印刷 | 燙金・UV・啞膜工藝",
+        "keywords": ["高級賀卡", "賀卡印刷", "聖誕卡定制", "新年卡印刷", "婚禮感謝卡", "節日賀卡", "燙金賀卡", "局部UV賀卡", "企業賀卡定制", "酒店歡迎卡"],
+        "body": "ZprintPro 高級賀卡採用 300g 優質紙張與 4 色 CMYK 印刷，可搭配啞膜、光膜、燙金、局部 UV 等工藝，質感高級、色彩飽滿。廣泛用於聖誕卡、新年卡、婚禮感謝卡、節日禮品卡、品牌活動與企業定制。100 張起訂、免費設計確認與樣品、FSC 環保認證紙、ISO 9001 品質管理，亞洲工廠直送，DHL Express 2-4 天全球送達。"
+      },
+      "en": {
+        "title": "Premium Greeting Cards | Foil & UV | Free Ship | ZprintPro",
+        "description": "Custom premium greeting cards: 300gsm stock, 4-color CMYK, matte/gloss lamination, foil stamping & spot UV. Christmas, New Year, wedding thank-you cards. 100 MOQ, free sample, DHL 2-4 day global delivery, FSC paper. | ZprintPro",
+        "h1": "Premium Greeting Cards | Foil, UV & Lamination Finishes",
+        "keywords": ["premium greeting cards", "custom greeting cards printing", "christmas cards printing", "new year cards", "wedding thank you cards", "holiday gift cards", "foil stamped greeting cards", "spot uv greeting cards", "corporate greeting cards", "bulk greeting cards"],
+        "body": "ZprintPro premium greeting cards are printed on 300gsm stock with full 4-color CMYK, with optional matte or gloss lamination, foil stamping, and spot UV for a refined, high-end feel. Ideal for Christmas cards, New Year cards, wedding thank-you cards, holiday gift cards, hotel welcome cards, and branded corporate orders. 100-card MOQ, free design check and sample, FSC certified paper, ISO 9001 quality control, shipped direct from our Asia factory via DHL Express in 2-4 days worldwide."
+      },
+      "ja": {
+        "title": "プレミアムグリーティングカード印刷 | 箔押し・UV | ZprintPro",
+        "description": "ZprintPro の高級グリーティングカード印刷：300g 上質紙、4色カラー、マット/グロスラミネート、箔押し、部分UVに対応。クリスマスカード、年賀状、結婚式サンキューカードに。100枚から、無料サンプル、DHL 2-4日で世界配送、FSC認証紙。",
+        "h1": "プレミアムグリーティングカードのオーダー印刷 | 箔押し・UV加工",
+        "keywords": ["グリーティングカード 印刷", "オリジナルカード 印刷", "クリスマスカード 印刷", "年賀状 印刷", "結婚式 サンキューカード", "箔押し カード", "部分UV カード", "挨拶状 印刷", "企業 記念カード", "ホリデーカード"],
+        "body": "ZprintPro のプレミアムグリーティングカードは、300g の上質紙に4色カラーで印刷し、マット・グロスラミネート、箔押し、部分UVなどの加工を組み合わせて高級感のある仕上がりを実現します。クリスマスカード、年賀状、結婚式のサンキューカード、ホリデーギフトカード、企業のご挨拶状などに最適です。100枚からご注文いただけ、無料デザイン確認とサンプル、FSC認証紙、ISO 9001 品質管理を備え、アジア工場から DHL Express で世界へ2-4日でお届けします。"
+      }
+    },
+    "faqs": [
+      {
+        "q": "高級賀卡多少張起訂？交期多久？",
+        "a": "100 張起訂。確認設計後約 2-3 個工作天生產，DHL Express 全球 2-4 天送達。"
+      },
+      {
+        "q": "可以做哪些特殊工藝？",
+        "a": "可選啞膜/光膜覆膜、燙金（金/銀/玫瑰金）、局部 UV、壓紋等，提升賀卡質感。"
+      },
+      {
+        "q": "可以先看樣品或打樣嗎？",
+        "a": "可以。我們提供免費樣品與付費打樣，確認紙質與工藝效果後再大量生產。"
+      }
+    ],
+    "imageAlt": {
+      "zh-hk": "高級賀卡配燙金與局部UV工藝，300g 優質紙印刷 | ZprintPro",
+      "en": "Premium greeting cards with foil stamping and spot UV on 300gsm stock | ZprintPro",
+      "ja": "箔押しと部分UVを施した高級グリーティングカード、300g上質紙 | ZprintPro"
+    }
+  },
+  "thick-greeting-cards-400g": {
+    "name": {
+      "zh-hk": "超厚賀卡 (400g)",
+      "en": "Thick 400g Greeting Cards",
+      "ja": "厚口グリーティングカード (400g)"
+    },
+    "seo": {
+      "zh-hk": {
+        "title": "400g 超厚賀卡印刷 | 厚卡・燙金・壓紋 | ZprintPro",
+        "description": "ZprintPro 400g 超厚賀卡：手感厚實高級，適合聖誕、新年、婚禮、里程碑慶典。可選燙金、局部UV、壓紋工藝。100 張起訂、免費樣品、DHL 2-4 天全球送達、FSC 認證紙、ISO 9001。",
+        "h1": "400g 超厚賀卡定制 | 厚實手感・高級質感",
+        "keywords": ["400g賀卡", "超厚賀卡", "厚卡賀卡", "燙金賀卡", "壓紋賀卡", "聖誕卡定制", "新年賀卡", "婚禮賀卡", "高級賀卡印刷", "厚紙賀卡"],
+        "body": "ZprintPro 400g 超厚賀卡選用高克重卡紙，拿在手中厚實有份量，傳遞尊榮與儀式感，特別適合聖誕卡、新年卡、婚禮邀請與里程碑慶典等重要場合。可搭配燙金、局部 UV、壓紋等工藝強化質感。100 張起訂、免費設計確認與樣品、FSC 環保紙、ISO 9001 認證，亞洲工廠直送，DHL Express 2-4 天全球送達。"
+      },
+      "en": {
+        "title": "Thick 400g Greeting Cards | Foil & Emboss | ZprintPro",
+        "description": "400gsm ultra-thick greeting cards with a substantial premium feel for Christmas, New Year, weddings & milestones. Foil, spot UV & embossing options. 100 MOQ, free sample, DHL 2-4 day global delivery, FSC paper. | ZprintPro",
+        "h1": "Thick 400g Greeting Cards | Ultra-Heavy Premium Stock",
+        "keywords": ["thick greeting cards", "400gsm greeting cards", "heavyweight christmas cards", "luxury holiday cards", "foil embossed cards", "premium wedding cards", "thick cardstock cards", "bulk thick cards", "embossed greeting cards", "high end greeting cards"],
+        "body": "ZprintPro thick 400g greeting cards use heavyweight cardstock with a substantial, rigid feel that conveys prestige — perfect for Christmas, New Year, wedding invitations, and milestone celebrations. Add foil stamping, spot UV, or embossing for extra luxury. 100-card MOQ with free design check and sample, FSC certified paper, ISO 9001 quality control, shipped direct from our Asia factory via DHL Express in 2-4 days worldwide."
+      },
+      "ja": {
+        "title": "厚口400gグリーティングカード印刷 | 箔押し・エンボス | ZprintPro",
+        "description": "ZprintPro の400g 厚口グリーティングカード：重厚で高級感のある手触り。クリスマス、年賀、結婚式、記念行事に。箔押し・部分UV・エンボス加工対応。100枚から、無料サンプル、DHL 2-4日世界配送、FSC認証紙。",
+        "h1": "厚口400gグリーティングカード | 重厚なプレミアム用紙",
+        "keywords": ["厚口 カード", "400g カード", "厚紙 グリーティングカード", "高級 クリスマスカード", "箔押し カード", "エンボス カード", "結婚式 カード", "記念 カード", "挨拶状 高級", "プレミアム カード 印刷"],
+        "body": "ZprintPro の厚口400gグリーティングカードは、高斤量のカード紙を使用し、手に取ったときの重厚感と高級感が魅力です。クリスマスカード、年賀状、結婚式の招待状、記念行事など大切な場面に最適で、箔押し・部分UV・エンボス加工でさらに華やかに仕上げられます。100枚からご注文可能で、無料デザイン確認とサンプル、FSC認証紙、ISO 9001 品質管理を備え、アジア工場から DHL Express で2-4日で世界へお届けします。"
+      }
+    },
+    "faqs": [
+      {
+        "q": "400g 超厚賀卡適合什麼場合？",
+        "a": "厚實手感帶來尊榮感，特別適合聖誕、新年、婚禮邀請與企業里程碑等需要高級質感的場合。"
+      },
+      {
+        "q": "超厚卡可以做壓紋或燙金嗎？",
+        "a": "可以。400g 卡紙適合燙金、局部 UV 與壓紋（embossing），立體層次更明顯。"
+      },
+      {
+        "q": "起訂量與交期？",
+        "a": "100 張起訂，生產約 2-3 個工作天，DHL 全球 2-4 天送達。"
+      }
+    ],
+    "imageAlt": {
+      "zh-hk": "400g 超厚賀卡配燙金與壓紋，厚重高級質感 | ZprintPro",
+      "en": "Thick 400g greeting cards with foil stamping and embossing on heavyweight stock | ZprintPro",
+      "ja": "箔押しとエンボスを施した400g厚口グリーティングカード | ZprintPro"
+    }
+  },
+  "foil-greeting-cards": {
+    "name": {
+      "zh-hk": "燙金賀卡",
+      "en": "Foil-Stamped Greeting Cards",
+      "ja": "箔押しグリーティングカード"
+    },
+    "seo": {
+      "zh-hk": {
+        "title": "燙金賀卡印刷 | 金・銀・玫瑰金 | ZprintPro",
+        "description": "ZprintPro 燙金賀卡：金/銀/玫瑰金燙金，金屬光澤提升高級感，適合聖誕、婚禮、嬰兒百日、感謝卡。300g 銅版紙+金屬燙金層。100 張起訂、免費樣品、DHL 2-4 天全球送達、FSC 認證。",
+        "h1": "燙金賀卡定制 | 金銀玫瑰金箔・金屬光澤",
+        "keywords": ["燙金賀卡", "金箔賀卡", "燙銀賀卡", "玫瑰金賀卡", "婚禮賀卡", "聖誕燙金卡", "感謝卡定制", "金屬光澤賀卡", "高級燙金印刷", "箔燙賀卡"],
+        "body": "ZprintPro 燙金賀卡以 300g 銅版紙搭配金、銀、玫瑰金等金屬燙金層，在光線下呈現細緻金屬光澤，顯著提升卡片的高級與節慶感。適合聖誕卡、婚禮邀請與感謝卡、嬰兒百日、新年祝福等場合。100 張起訂、免費設計確認與樣品、FSC 環保紙、ISO 9001 認證，亞洲工廠直送，DHL Express 2-4 天全球送達。"
+      },
+      "en": {
+        "title": "Foil-Stamped Greeting Cards | Gold & Silver | ZprintPro",
+        "description": "Foil-stamped greeting cards in gold, silver & rose gold. Metallic shine for Christmas, weddings, baby celebrations & thank-you cards. 300gsm coated stock with metallic foil. 100 MOQ, free sample, DHL 2-4 day delivery, FSC paper. | ZprintPro",
+        "h1": "Foil-Stamped Greeting Cards | Gold, Silver & Rose Gold Foil",
+        "keywords": ["foil stamped greeting cards", "gold foil christmas cards", "silver foil cards", "rose gold greeting cards", "foil wedding cards", "metallic holiday cards", "foil thank you cards", "luxury foil cards", "hot foil stamping cards", "bulk foil greeting cards"],
+        "body": "ZprintPro foil-stamped greeting cards pair 300gsm coated stock with a metallic foil layer in gold, silver, or rose gold, delivering a luminous, premium finish that catches the light. They elevate Christmas cards, wedding invitations and thank-you cards, baby celebrations, and New Year greetings. 100-card MOQ, free design check and sample, FSC certified paper, ISO 9001 quality control, shipped direct from our Asia factory via DHL Express in 2-4 days worldwide."
+      },
+      "ja": {
+        "title": "箔押しグリーティングカード印刷 | 金・銀・ローズゴールド | ZprintPro",
+        "description": "ZprintPro の箔押しグリーティングカード：金・銀・ローズゴールドのメタリックな光沢で高級感を演出。クリスマス、結婚式、お宮参り、サンキューカードに。300gコート紙+箔押し。100枚から、無料サンプル、DHL 2-4日世界配送。",
+        "h1": "箔押しグリーティングカード | ゴールド・シルバー・ローズゴールド",
+        "keywords": ["箔押し カード", "ゴールド カード", "シルバー 箔 カード", "ローズゴールド カード", "結婚式 箔押し", "クリスマス 箔カード", "メタリック カード", "高級 挨拶状", "サンキューカード 箔", "記念カード 印刷"],
+        "body": "ZprintPro の箔押しグリーティングカードは、300g のコート紙に金・銀・ローズゴールドなどのメタリック箔を施し、光を受けて美しく輝く高級感あふれる仕上がりです。クリスマスカード、結婚式の招待状やサンキューカード、お宮参り・出産祝い、年賀状などに最適です。100枚からご注文いただけ、無料デザイン確認とサンプル、FSC認証紙、ISO 9001 品質管理を備え、アジア工場から DHL Express で2-4日で世界へお届けします。"
+      }
+    },
+    "faqs": [
+      {
+        "q": "燙金有哪些顏色可選？",
+        "a": "常備金、銀、玫瑰金，亦可做銅色、鐳射、黑色箔等，依設計需求選擇。"
+      },
+      {
+        "q": "燙金賀卡用什麼紙？",
+        "a": "標配 300g 銅版紙搭配金屬燙金層，也可升級 400g 厚卡或加啞膜提升質感。"
+      },
+      {
+        "q": "起訂量與送達時間？",
+        "a": "100 張起訂，生產約 2-3 個工作天，DHL Express 全球 2-4 天送達。"
+      }
+    ],
+    "imageAlt": {
+      "zh-hk": "金銀玫瑰金燙金賀卡，300g 銅版紙金屬光澤工藝 | ZprintPro",
+      "en": "Gold, silver and rose gold foil-stamped greeting cards on 300gsm coated stock | ZprintPro",
+      "ja": "ゴールド・シルバー・ローズゴールドの箔押しグリーティングカード、300gコート紙 | ZprintPro"
+    }
+  },
+  "spot-uv-greeting-cards": {
+    "name": {
+      "zh-hk": "局部UV賀卡",
+      "en": "Spot UV Greeting Cards",
+      "ja": "部分UVグリーティングカード"
+    },
+    "seo": {
+      "zh-hk": {
+        "title": "局部UV賀卡印刷 | 啞面底・高光對比 | ZprintPro",
+        "description": "ZprintPro 局部UV賀卡：Logo/圖案高光 + 啞面底紙形成強烈對比，視覺衝擊強，適合聖誕、新年、感謝卡。300g 銅版紙+局部UV。100 張起訂、免費樣品、DHL 2-4 天全球送達、FSC 認證。",
+        "h1": "局部UV賀卡定制 | 啞面與高光層次對比",
+        "keywords": ["局部UV賀卡", "UV賀卡", "啞面UV賀卡", "高光賀卡", "聖誕卡UV", "Logo UV賀卡", "感謝卡印刷", "質感賀卡", "局部上光賀卡", "高級賀卡定制"],
+        "body": "ZprintPro 局部 UV 賀卡在 300g 銅版紙上，先做啞面覆膜打底，再於 Logo、圖案或文字處局部上光，形成啞與亮的強烈觸覺與視覺對比，讓重點資訊跳脫出來。適合聖誕卡、新年卡、感謝卡與品牌賀卡。100 張起訂、免費設計確認與樣品、FSC 環保紙、ISO 9001 認證，亞洲工廠直送，DHL Express 2-4 天全球送達。"
+      },
+      "en": {
+        "title": "Spot UV Greeting Cards | Matte + Gloss | ZprintPro",
+        "description": "Spot UV greeting cards with glossy UV highlights on logos & patterns over a matte base for high contrast. Christmas, New Year & thank-you cards. 300gsm coated stock with spot UV. 100 MOQ, free sample, DHL 2-4 day delivery. | ZprintPro",
+        "h1": "Spot UV Greeting Cards | Matte Base with Glossy Highlights",
+        "keywords": ["spot uv greeting cards", "spot uv christmas cards", "matte gloss cards", "glossy logo cards", "uv coated greeting cards", "raised uv cards", "modern holiday cards", "thank you cards spot uv", "bulk spot uv cards", "premium uv cards"],
+        "body": "ZprintPro spot UV greeting cards use 300gsm coated stock with a matte lamination base, then apply glossy UV coating to selected areas — logos, patterns, or greetings — creating a striking matte-vs-gloss contrast that makes key elements pop. Ideal for Christmas, New Year, and thank-you cards as well as branded corporate cards. 100-card MOQ, free design check and sample, FSC certified paper, ISO 9001 quality control, shipped direct from our Asia factory via DHL Express in 2-4 days worldwide."
+      },
+      "ja": {
+        "title": "部分UVグリーティングカード印刷 | マット+光沢 | ZprintPro",
+        "description": "ZprintPro の部分UVグリーティングカード：ロゴや柄に光沢UV、下地はマットで高コントラスト。クリスマス、年賀、サンキューカードに。300gコート紙+部分UV。100枚から、無料サンプル、DHL 2-4日世界配送。",
+        "h1": "部分UVグリーティングカード | マット下地と光沢のコントラスト",
+        "keywords": ["部分UV カード", "スポットUV カード", "マット UV カード", "光沢 カード", "クリスマス UVカード", "ロゴ UV カード", "サンキューカード 印刷", "高級 カード", "部分ニス カード", "挨拶状 UV"],
+        "body": "ZprintPro の部分UVグリーティングカードは、300g コート紙にマットラミネートを施し、ロゴや柄、メッセージなどのポイントに光沢のあるUVコーティングを重ねることで、マットと光沢のコントラストを生み出し、重要な要素を引き立てます。クリスマスカード、年賀状、サンキューカード、企業のブランドカードに最適です。100枚からご注文いただけ、無料デザイン確認とサンプル、FSC認証紙、ISO 9001 品質管理を備え、アジア工場から DHL Express で2-4日で世界へお届けします。"
+      }
+    },
+    "faqs": [
+      {
+        "q": "什麼是局部 UV？效果如何？",
+        "a": "在啞面底紙上對局部區域（Logo、圖案、文字）做高光上光，形成啞與亮的對比，觸感與視覺都更有層次。"
+      },
+      {
+        "q": "局部 UV 適合哪些賀卡？",
+        "a": "適合想突出品牌 Logo 或重點訊息的聖誕卡、新年卡、感謝卡與企業賀卡。"
+      },
+      {
+        "q": "起訂量與交期？",
+        "a": "100 張起訂，生產約 2-3 個工作天，DHL Express 全球 2-4 天送達。"
+      }
+    ],
+    "imageAlt": {
+      "zh-hk": "局部UV賀卡，啞面底紙配高光Logo圖案，強烈對比 | ZprintPro",
+      "en": "Spot UV greeting cards with glossy UV highlights on a matte coated base | ZprintPro",
+      "ja": "マット下地に光沢UVを施した部分UVグリーティングカード、300gコート紙 | ZprintPro"
+    }
+  },
+  "matte-greeting-cards": {
+    "name": {
+      "zh-hk": "啞膜賀卡",
+      "en": "Matte Greeting Cards",
+      "ja": "マットグリーティングカード"
+    },
+    "seo": {
+      "zh-hk": {
+        "title": "啞膜賀卡印刷 | 防指紋・細膩手感 | ZprintPro",
+        "description": "ZprintPro 啞膜賀卡：啞膜覆膜順滑防指紋，質感低調高級，適合極簡風聖誕、新年、感謝卡。300g 銅版紙+啞膜。100 張起訂、免費樣品、DHL 2-4 天全球送達、FSC 認證。",
+        "h1": "啞膜賀卡定制 | 柔順手感・低調高級",
+        "keywords": ["啞膜賀卡", "啞面賀卡", "磨砂賀卡", "防指紋賀卡", "極簡賀卡", "聖誕卡啞膜", "新年賀卡", "感謝卡印刷", "啞膠賀卡", "高級啞面卡"],
+        "body": "ZprintPro 啞膜賀卡在 300g 銅版紙表面覆一層啞膜，手感柔順細膩、不易留指紋，呈現低調內斂的高級質感，深受極簡與精品品牌喜愛。適合北歐風聖誕卡、新年卡、感謝卡與企業形象賀卡。100 張起訂、免費設計確認與樣品、FSC 環保紙、ISO 9001 認證，亞洲工廠直送，DHL Express 2-4 天全球送達。"
+      },
+      "en": {
+        "title": "Matte Greeting Cards | Soft-Touch, Fingerprint-Free | ZprintPro",
+        "description": "Matte laminated greeting cards with a smooth, fingerprint-resistant premium feel. Minimalist Christmas, New Year & thank-you cards. 300gsm coated stock with matte lamination. 100 MOQ, free sample, DHL 2-4 day delivery, FSC paper. | ZprintPro",
+        "h1": "Matte Greeting Cards | Soft-Touch Matte Lamination",
+        "keywords": ["matte greeting cards", "matte laminated cards", "soft touch cards", "fingerprint resistant cards", "minimalist christmas cards", "matte holiday cards", "matte thank you cards", "modern greeting cards", "bulk matte cards", "premium matte cards"],
+        "body": "ZprintPro matte greeting cards feature 300gsm coated stock finished with soft-touch matte lamination — smooth, refined, and resistant to fingerprints, delivering an understated premium look favored by minimalist and boutique brands. Perfect for Nordic-style Christmas cards, New Year cards, thank-you cards, and corporate image cards. 100-card MOQ, free design check and sample, FSC certified paper, ISO 9001 quality control, shipped direct from our Asia factory via DHL Express in 2-4 days worldwide."
+      },
+      "ja": {
+        "title": "マットグリーティングカード印刷 | さらさら・指紋防止 | ZprintPro",
+        "description": "ZprintPro のマットグリーティングカード：なめらかで指紋が付きにくい高級マット加工。シンプルなクリスマス、年賀、サンキューカードに。300gコート紙+マットラミネート。100枚から、無料サンプル、DHL 2-4日世界配送。",
+        "h1": "マットグリーティングカード | ソフトタッチのマット加工",
+        "keywords": ["マット カード", "マット加工 カード", "ソフトタッチ カード", "指紋防止 カード", "シンプル カード", "クリスマス マット", "年賀状 マット", "サンキューカード 印刷", "高級 挨拶状", "ノード カード"],
+        "body": "ZprintPro のマットグリーティングカードは、300g コート紙にソフトタッチのマットラミネートを施し、なめらかで指紋が付きにくく、落ち着いた高級感のある仕上がりです。ミニマルやブティック系ブランドに人気で、北欧風クリスマスカード、年賀状、サンキューカード、企業のイメージカードに最適です。100枚からご注文いただけ、無料デザイン確認とサンプル、FSC認証紙、ISO 9001 品質管理を備え、アジア工場から DHL Express で2-4日で世界へお届けします。"
+      }
+    },
+    "faqs": [
+      {
+        "q": "啞膜和光膜差在哪？",
+        "a": "啞膜表面不反光、手感細膩、不易留指紋，呈低調高級感；光膜則亮麗反光、色彩鮮豔。"
+      },
+      {
+        "q": "啞膜賀卡適合什麼風格？",
+        "a": "特別適合極簡、北歐、精品與低調奢華風格的聖誕卡、新年卡與感謝卡。"
+      },
+      {
+        "q": "起訂量與交期？",
+        "a": "100 張起訂，生產約 2-3 個工作天，DHL Express 全球 2-4 天送達。"
+      }
+    ],
+    "imageAlt": {
+      "zh-hk": "啞膜賀卡，300g 銅版紙柔順防指紋低調質感 | ZprintPro",
+      "en": "Matte laminated greeting cards with smooth fingerprint-resistant finish on 300gsm stock | ZprintPro",
+      "ja": "なめらかなマット加工のグリーティングカード、300gコート紙 | ZprintPro"
+    }
+  },
+  "rounded-corner-greeting-cards": {
+    "name": {
+      "zh-hk": "圓角賀卡",
+      "en": "Rounded Corner Greeting Cards",
+      "ja": "角丸グリーティングカード"
+    },
+    "seo": {
+      "zh-hk": {
+        "title": "圓角賀卡印刷 | R3mm 模切・柔和觸感 | ZprintPro",
+        "description": "ZprintPro 圓角賀卡：R3mm 圓角模切，觸感柔和、邊角不易翹起，適合可愛風聖誕、生日、感謝卡。300g 銅版紙+圓角模切。100 張起訂、免費樣品、DHL 2-4 天全球送達、FSC 認證。",
+        "h1": "圓角賀卡定制 | R3mm 圓角模切・不翹角",
+        "keywords": ["圓角賀卡", "圓角卡片", "R3圓角", "模切賀卡", "可愛賀卡", "生日卡定制", "聖誕卡圓角", "感謝卡印刷", "圓角模切", "造型賀卡"],
+        "body": "ZprintPro 圓角賀卡以 300g 銅版紙印刷後做 R3mm 圓角模切，四角圓潤、觸感柔和，長期使用邊角也不易翹起或刮手，特別適合可愛、親切風格的聖誕卡、生日卡與感謝卡。100 張起訂、免費設計確認與樣品、FSC 環保紙、ISO 9001 認證，亞洲工廠直送，DHL Express 2-4 天全球送達。"
+      },
+      "en": {
+        "title": "Rounded Corner Greeting Cards | R3mm Die-Cut | ZprintPro",
+        "description": "Rounded corner greeting cards with R3mm die-cut for a soft feel and no corner lift. Cute Christmas, birthday & thank-you cards. 300gsm coated stock with rounded die-cut. 100 MOQ, free sample, DHL 2-4 day delivery, FSC paper. | ZprintPro",
+        "h1": "Rounded Corner Greeting Cards | Soft R3mm Die-Cut Corners",
+        "keywords": ["rounded corner greeting cards", "rounded corner cards", "die cut greeting cards", "cute christmas cards", "birthday cards bulk", "rounded thank you cards", "soft corner cards", "r3mm cards", "custom shaped cards", "bulk rounded cards"],
+        "body": "ZprintPro rounded corner greeting cards are printed on 300gsm coated stock and die-cut with smooth R3mm rounded corners, giving a soft, friendly tactile feel while preventing corner lift and wear. They're especially well suited to cute and approachable Christmas cards, birthday cards, and thank-you cards. 100-card MOQ, free design check and sample, FSC certified paper, ISO 9001 quality control, shipped direct from our Asia factory via DHL Express in 2-4 days worldwide."
+      },
+      "ja": {
+        "title": "角丸グリーティングカード印刷 | R3mm 型抜き | ZprintPro",
+        "description": "ZprintPro の角丸グリーティングカード：R3mm の角丸型抜きでやさしい手触り、角が反りにくい。かわいいクリスマス、誕生日、サンキューカードに。300gコート紙+角丸加工。100枚から、無料サンプル、DHL 2-4日世界配送。",
+        "h1": "角丸グリーティングカード | R3mm やさしい丸角加工",
+        "keywords": ["角丸 カード", "角丸加工 カード", "型抜き カード", "かわいい カード", "誕生日 カード", "クリスマス 角丸", "サンキューカード 印刷", "丸角 カード", "ダイカット カード", "グリーティングカード 角丸"],
+        "body": "ZprintPro の角丸グリーティングカードは、300g コート紙に印刷後、四隅を R3mm の丸角に型抜きしており、手触りがやさしく、長く使っても角が反り返ったり引っかかったりしにくいのが特長です。かわいらしく親しみやすい雰囲気のクリスマスカード、誕生日カード、サンキューカードに特に適しています。100枚からご注文いただけ、無料デザイン確認とサンプル、FSC認証紙、ISO 9001 品質管理を備え、アジア工場から DHL Express で2-4日で世界へお届けします。"
+      }
+    },
+    "faqs": [
+      {
+        "q": "圓角的半徑是多少？可以改嗎？",
+        "a": "標配 R3mm 圓角模切，視設計也可評估其他半徑；下單時可與設計確認。"
+      },
+      {
+        "q": "圓角賀卡適合什麼場合？",
+        "a": "圓角柔和親切，適合可愛風的聖誕卡、生日卡、感謝卡與親子類品牌。"
+      },
+      {
+        "q": "起訂量與交期？",
+        "a": "100 張起訂，生產約 2-3 個工作天，DHL Express 全球 2-4 天送達。"
+      }
+    ],
+    "imageAlt": {
+      "zh-hk": "R3mm 圓角模切賀卡，300g 銅版紙柔和觸感不翹角 | ZprintPro",
+      "en": "R3mm rounded-corner die-cut greeting cards on 300gsm coated stock | ZprintPro",
+      "ja": "R3mm角丸に型抜きしたグリーティングカード、300gコート紙 | ZprintPro"
+    }
+  },
 };
 
 export function getSkuSeo(slug: string): SkuSeoEntry | undefined {

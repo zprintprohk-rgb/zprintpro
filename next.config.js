@@ -116,16 +116,16 @@ function buildGuideRedirects() {
   // 完整 7 旧 SKU 类目 slug → 新 slug 映射
   const V22_REDIRECTS = [
     // 6 SKU 1:1 映射
-    ['premium-business-cards', 'premium-greeting-cards'],
-    ['thick-business-cards-400g', 'thick-greeting-cards-400g'],
-    ['foil-business-cards', 'foil-greeting-cards'],
-    ['spot-uv-business-cards', 'spot-uv-greeting-cards'],
-    ['matte-business-cards', 'matte-greeting-cards'],
-    ['rounded-corner-cards', 'rounded-corner-greeting-cards'],
+    ['premium-business-cards', 'stickers'],
+    ['thick-business-cards-400g', 'stickers'],
+    ['foil-business-cards', 'stickers'],
+    ['spot-uv-business-cards', 'stickers'],
+    ['matte-business-cards', 'stickers'],
+    ['rounded-corner-cards', 'stickers'],
     // 类目
-    ['business-cards', 'greeting-cards'],
+    ['business-cards', 'stickers'],
     // buying guide
-    ['business-card-buying-guide', 'greeting-card-buying-guide'],
+    ['business-card-buying-guide', 'sticker-buying-guide'],
   ];
   for (const [oldSlug, newSlug] of V22_REDIRECTS) {
     for (const locale of LOCALES) {
@@ -204,9 +204,9 @@ function buildGuideRedirects() {
     // 模式 A: locale 重复 (/zh-hk/zh-hk/.../ -> /zh-hk/.../) - 3 rules
     // 模式 B: 旧 SKU -> 类目页 - 12 rules
     ['cosmetics-packaging-box', 'packaging'],
-    ['double-sided-cards', 'greeting-cards'],
-    ['same-day-business-cards', 'greeting-cards'],
-    ['eco-business-cards', 'greeting-cards'],
+    ['double-sided-cards', 'stickers'],
+    ['same-day-business-cards', 'stickers'],
+    ['eco-business-cards', 'stickers'],
     ['small-bags', 'paper-bags'],
     // 模式 C: 服务/路由迁移 - 3 rules
     ['ja/services/same-day-printing-delivery', 'ja/services/rush-printing-delivery'],
