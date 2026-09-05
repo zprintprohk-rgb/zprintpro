@@ -396,6 +396,33 @@ function buildGuideRedirects() {
   // /upload/, /license/, /cdn-cgi/email-protection 不重定向, 让 Google 自然去索引
   // (GSC 自动 90 天清理 stale 404)
 
+  // 2026-09-05 v23: /servis/ spelling typo collapse (blog CTA mass-404 fix, user-reported on
+  // zh-hk/blog/rush-printing-hk-guide section 9 CTA). Content sources already fixed in
+  // blog-data/{zh-hk,ja,en}.json (38 URL occurrences); these 301s catch URLs already
+  // indexed by GSC or linked externally.
+  // Targets: rush-printing-delivery -> real service page; business-envelopes -> real SKU;
+  // category/servis -> services hub page.
+  const LOCALES_R3 = ['zh-hk', 'en', 'ja'];
+  const SERVIS_TYPO_MAP = [
+    ['servis/rush-printing-delivery', 'services/rush-printing-delivery/'],
+    ['servis/business-envelopes', 'product/business-envelopes/'],
+    ['category/servis', 'services/'],
+  ];
+  for (const locale of LOCALES_R3) {
+    for (const [badPath, goodPath] of SERVIS_TYPO_MAP) {
+      rules.push({
+        source: `/${locale}/${badPath}`,
+        destination: `/${locale}/${goodPath}`,
+        permanent: true,
+      });
+      rules.push({
+        source: `/${locale}/${badPath}/`,
+        destination: `/${locale}/${goodPath}`,
+        permanent: true,
+      });
+    }
+  }
+
   return rules;
 }
 
