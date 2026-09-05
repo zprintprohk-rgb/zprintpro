@@ -212,6 +212,7 @@ function buildGuideRedirects() {
     ['ja/services/same-day-printing-delivery', 'ja/services/rush-printing-delivery'],
     ['ja/services/seo/postcard-set', 'category/japan-doujin'],
     ['ja/services/seo/eco-tote-bag', 'category/paper-bags'],
+    ['catalogs', 'category/books'],
   ];
   for (const [oldSlug, target] of GSC_404_REDIRECTS) {
     for (const locale of LOCALES) {
@@ -239,6 +240,34 @@ function buildGuideRedirects() {
       });
     }
   }
+  // 2026-09-05 W4 v34: GSC /en/catalogs 品类页 404 (13 词 227 展示) 301 收拢 -> books 类目页
+  // 依据: GSC_404_REDIRECTS 循环只生成 /{locale}/product/{oldSlug} source (本文件原 L216-241),
+  // 打补丁前全文件 grep `catalogs` = 0 命中 -> category/catalogs 原不在任何 source 中;
+  // GSC 实报形态为 /en/catalogs -> 裸 catalogs 与 category/catalogs 两种形态都覆盖。
+  // destination 带尾斜杠对齐 trailingSlash:true (文件头 L15 注释), 避免二次 308。
+  for (const locale of LOCALES) {
+    rules.push({
+      source: `/${locale}/category/catalogs`,
+      destination: `/${locale}/category/books/`,
+      permanent: true,
+    });
+    rules.push({
+      source: `/${locale}/category/catalogs/`,
+      destination: `/${locale}/category/books/`,
+      permanent: true,
+    });
+    rules.push({
+      source: `/${locale}/catalogs`,
+      destination: `/${locale}/category/books/`,
+      permanent: true,
+    });
+    rules.push({
+      source: `/${locale}/catalogs/`,
+      destination: `/${locale}/category/books/`,
+      permanent: true,
+    });
+  }
+
   // /product/{oldSlug}/ (无 locale 前缀, GSC 索引的根路径) 3 locale
   for (const [oldSlug, target] of [
     ['double-sided-cards', 'greeting-cards'],
