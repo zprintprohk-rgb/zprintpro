@@ -1712,6 +1712,30 @@ const lpCampusEducationPrintingPillarGuide: BlogPostMeta = {
   },
 };
 
+// 2026-09-05 K3 拍板 v3 long-form-blog-3w2r 周六 10:00 第 3 篇: 牛皮紙盒 8 盒型 5 維度全對比 (W7 #1 B7 派发, M3 包裝盒 客單价最高, GSC kraft paper box pos 9 衝首頁, 2025-2026 18,500 訂單實證)
+// 9 段 + 4 FAQ + 10 內部連結 + 3 locale native, 100 個起印 HK$2.5/個起, 8 盒型 (牛皮紙盒/坑盒/彩盒/禮盒/飛機盒/書型盒/抽屜盒/天地盒) 5 維度 (結構/厚度/耐用度/單價/適用場景) 全對比
+// 5 词攻堅: kraft paper box pos 9 9 imps 衝首頁 + 包裝盒訂製 pos 29.4 + 包裝盒印刷 pos 34.9 + 食品包裝印刷 pos 15.6 28 imps + 牛皮紙盒 食品/餐飲外賣 旺季
+const lpKraftPaperBoxTypesComparison2026: BlogPostMeta = {
+  slug: 'kraft-paper-box-types-comparison-2026',
+  categoryKey: 'packaging',
+  source: 'daily',
+  date: '2026-09-05',
+  title: {
+    'zh-hk': '牛皮紙盒 vs 坑盒 vs 彩盒 vs 禮盒 8 大盒型 5 維度全對比 GSC pos 9 衝首頁 | 智印港 ZprintPro',
+    en: '8 Packaging Box Types Compared: Kraft vs Corrugated vs Color vs Gift vs Aircraft vs Book vs Drawer vs Shoulder | ZprintPro',
+    ja: '8 種パッケージボックス徹底比較: クラフト vs ダンボール vs キャラメル vs ギフト vs エアクラフト vs ブック vs ドロワー vs ショルダー | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '8 大盒型 (牛皮紙盒 / 坑盒 / 彩盒 / 禮盒 / 飛機盒 / 書型盒 / 抽屜盒 / 天地盒) 5 維度 (結構 / 厚度 / 耐用度 / 單價 / 適用場景) 全對比. 100 個起印 HK$2.5/個起, FDA 21 CFR 175.300 + EU REACH + FSC 4 大認證, 智印港 2025-2026 年 18,500 訂單實證, 8 步選購流程 + 10 內鏈 + 30 秒 WhatsApp 報價.',
+    en: '8 box types 5-dimension comparison (structure / thickness / durability / unit price / use case). 100 MOQ from $0.32 USD/pc, FDA 21 CFR 175.300 + EU REACH + FSC 4 certifications, ZprintPro 18,500 orders 2025-2026, 8-step flow + 10 internal links + 30s WhatsApp quote.',
+    ja: '8 種ボックス 5 軸比較 (構造 / 厚み / 耐久性 / 単価 / 適用シーン). 100 個〜 ¥42/個〜, FDA 21 CFR 175.300 + EU REACH + FSC 4 大認証, ZprintPro 2025-2026 年 18,500 件実績, 8 ステップ発注フロー + 10 内部リンク + 30 秒 WhatsApp 見積.',
+  },
+  targetKeywords: {
+    primary: '牛皮紙盒',
+    secondary: ['kraft paper box', '坑盒', '彩盒', '禮盒', '飛機盒', '書型盒', '抽屜盒', '天地盒', '包裝盒訂製', '包裝盒印刷', '食品包裝盒', 'kraft box', 'corrugated box', 'gift box', 'shoulder box', 'drawer box', 'book box', 'aircraft box', 'craft box', '段ボール', 'キャラメル箱', 'ギフトボックス', 'ショルダーボックス', 'ブックボックス', 'ドロワーボックス', 'エアクラフトボックス', 'パッケージボックス', '包装箱', '包装紙箱'],
+  },
+};
+
 export const blogPosts: BlogPostMeta[] = [
   // Buying guides (9)
   bgBusinessCard,
@@ -1848,6 +1872,9 @@ export const blogPosts: BlogPostMeta[] = [
   lpFoilStamping3Applications2026,
   // 2026-09-04 v3.3 校园 Pillar go 接线修复: 校園教育印刷 9 月開學季 (此前未接入列表 → 页面 404, 现修复)
   lpCampusEducationPrintingPillarGuide,
+  // 2026-09-05 K3 拍板 v3 long-form-blog-3w2r 周六 10:00 第 3 篇: 8 盒型 5 維度全對比 (W7 #1 B7 派发, M3 包裝盒 客單价最高, GSC kraft paper box pos 9 衝首頁, 2025-2026 18,500 訂單實證)
+  // 9 段 + 4 FAQ + 10 內部連結 + 3 locale native, 100 個起印 HK$2.5/個起, 8 盒型 5 維度 + 4 場景 + 5 工藝 + 4 認證 + 客戶案例 + 8 步流程 + 30 秒 WhatsApp
+  lpKraftPaperBoxTypesComparison2026,
 ];
 
 // =============================================================================
