@@ -497,7 +497,7 @@ const categorySeoData: Record<string, {
       ja: '封筒印刷,カスタム封筒,クラフト封筒,窓付き封筒,カラー封筒,C4 封筒,C5 封筒,企業封筒,ロゴ封筒,長3封筒,洋形封筒,エアメール封筒,印刷封筒,社名入り封筒,日本全国,沖縄北海道,短納期',
     },
     descriptions: {
-      'zh-hk': '大信封印刷 HK$0.45/個,100 個起印。A4 公文信封 / C4 / C5 / 牛皮 / 開窗 / 彩色 / 企業 LOGO 定制,滿 HK$500 順豐香港免運費。WhatsApp 30 秒即時報價,ISO 9001 認證紙材,DHL 全球 2-4 天速遞。',
+      'zh-hk': '大信封印刷 HK$0.60 起/個,一般信封 HK$0.22 起,100 個起印。A4 公文信封 / C4 / C5 / 牛皮 / 開窗 / 彩色 / 企業 LOGO 訂製,滿 HK$500 順豐香港免運費。WhatsApp 30 秒即時報價,ISO 9001 認證紙材,DHL 全球 2-4 天速遞。',
       en: 'Custom envelope printing 100 MOQ. C4 / C5 / DL / kraft / window / colored / corporate branding. Free shipping over $99 to USA + free proof in 4 hours. ISO 9001 certified + 30-second AI quote + DHL 2-4 day global delivery. Made for USA, perfect for business and corporate use.',
       ja: '封筒印刷 100 個から対応. C4・C5・DL・クラフト・窓付き・カラー・長 3・洋形 + 企業ロゴ. ISO 9001 認証 + 30 秒 AI 即時見積 + DHL 国際配送 2-4 日. 日本全国 + 沖縄・北海道対応.',
     },
@@ -523,12 +523,12 @@ const categorySeoData: Record<string, {
   'red-packets': {
     titles: {
       // 2026-07-17 GSC CTR 修复: 机会词 利是封印刷 / lai see 前置
-      'zh-hk': '利是封印刷 | HK$1.1起・燙金定制・免費設計 | 智印港 ZprintPro',
+      'zh-hk': '利是封印刷 100個起・燙金/浮雕/卡通訂製・免費設計｜智印港',
       en: 'Lai See Red Packet Printing from $0.46 | Free Shipping $99+ | ZprintPro',
       ja: 'ポチ袋印刷｜¥64〜・小ロット・箔押し・無料デザイン｜ZprintPro',
     },
     keywords: {
-      'zh-hk': '利是封印刷,企業利是封,婚慶利是封,賀年利是封,定制利是封,燙金利是封,紅包印刷,新年利是封,結婚利是封,LOGO利是封,生肖利是封,銀行利是封,卡通利是封',
+      'zh-hk': '利是封印刷,企業利是封,婚慶利是封,賀年利是封,訂製利是封,燙金利是封,紅包印刷,新年利是封,結婚利是封,LOGO利是封,生肖利是封,銀行利是封,卡通利是封',
       en: 'red packet printing,lai see printing,lai see envelopes,custom red envelopes,Chinese New Year red packets,wedding red packets,corporate red packets,foil red packets,hong bao printing,new year red envelopes,zodiac red packet,bank red packet,cartoon red packet,free shipping red packets,USA CNY red envelopes',
       ja: 'ポチ袋印刷,オリジナルポチ袋,お年玉袋,結婚式ポチ袋,企業ポチ袋,箔押しポチ袋,紅包印刷,新年ポチ袋,干支ポチ袋,銀行ポチ袋,キャラクターポチ袋',
     },
@@ -558,12 +558,12 @@ const categorySeoData: Record<string, {
   'books': {
     titles: {
       'zh-hk': '騎馬釘小冊子印刷 50本起 | 騎馬釘 + 膠裝 + 精裝 + 教材繪本 | 智印港',
-      'en': 'Booklet Printing from $1.20 | 50 MOQ + Saddle Stitch | ZprintPro',
+      'en': 'Catalog & Booklet Printing from $1.20 | 50 MOQ + Saddle Stitch | ZprintPro',
       'ja': '冊子印刷｜50部〜・中綴じ・無線綴じ・上製本｜ZprintPro',
     },
     keywords: {
       'zh-hk': '樣本印刷,樣品印刷,免費樣本,印刷樣本,書刊印刷,印書,騎馬釘書刊,騎馬釘,膠裝書,精裝書,兒童繪本,教材印刷,印刷製本,小批量書刊,宣傳冊子,公司年報,產品目錄,saddle stitch booklet,school exercise book',
-      'en': 'booklet printing,saddle stitch booklet,saddle stitch booklets,custom booklets,perfect bound books,hardcover books,children books,textbook printing,school exercise book print,school exercise book printing,small batch booklets,catalog printing,annual report,product catalog,USA book printing',
+      'en': 'booklet printing,saddle stitch booklet,saddle stitch booklets,custom booklets,perfect bound books,hardcover books,children books,textbook printing,school exercise book print,school exercise book printing,small batch booklets,catalog printing,annual report,product catalog,USA book printing,booklet catalog china,company profile booklet',
       'ja': '冊子印刷,中綴じ冊子,無線綴じ冊子,上製本,児童書,テキスト印刷,学校教材,印刷製本,小ロット冊子,カタログ印刷,会社案内,製品カタログ',
     },
     descriptions: {
