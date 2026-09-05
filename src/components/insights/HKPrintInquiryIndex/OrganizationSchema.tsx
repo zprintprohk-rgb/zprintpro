@@ -11,7 +11,7 @@ const ORG_SCHEMA = {
   name: 'ZprintPro / ジープリント',
   alternateName: '智印港 ZprintPro / ジープリント ZprintPro',
   url: 'https://zprintpro.com',
-  logo: 'https://zprintpro.com/logo.png',
+  logo: 'https://zprintpro.com/images/logo-web.png',
   description:
     'Custom printing service for catalogs, packaging, stickers, calendars, paper bags, and educational materials. Serving Japan, USA, UK, and Hong Kong with Asia factory-direct pricing and DHL 2-4 day global delivery.',
   foundingDate: '2024-Q1',
