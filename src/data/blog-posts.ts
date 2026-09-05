@@ -1736,6 +1736,27 @@ const lpKraftPaperBoxTypesComparison2026: BlogPostMeta = {
   },
 };
 
+const hongKongPrintingCostBaseline2026: BlogPostMeta = {
+  slug: 'hong-kong-printing-cost-baseline-2026',
+  categoryKey: 'printing',
+  source: 'daily',
+  date: '2026-09-05',
+  title: {
+    'zh-hk': '2026 香港印刷成本基準報告：貼紙、傳單、冊子、包裝等 16 品類 99 SKU 價格數據 | 智印港 ZprintPro',
+    en: '2026 Hong Kong Printing Cost Baseline Report: 99-SKU Price Data for Stickers, Flyers, Books, Packaging & 12 More Categories',
+    ja: '2026年香港印刷コスト ベースラインレポート: ステッカー・チラシ・冊子・パッケージ他 16 カテゴリ 99 SKU 価格データ | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': '16 品類 99 SKU 香港印刷價格基準：貼紙 HK$0.22 起、傳單 HK$0.18 起、冊子每本 HK$2.8 起，附起訂量分佈、裝訂選擇指南與 FSC 溢價實測。',
+    en: '99-SKU Hong Kong printing price baseline: stickers from HK$0.22, flyers from HK$0.18, books from HK$2.8/copy, plus MOQ distribution, binding decision guide and measured FSC premium.',
+    ja: '16 カテゴリ 99 SKU の香港印刷価格ベースライン: ステッカー HK$0.22〜、チラシ HK$0.18〜、冊子 1部 HK$2.8〜。MOQ 分布、製本選定ガイド、実測 FSC プレミアム付き。',
+  },
+  targetKeywords: {
+    primary: 'printing cost hong kong',
+    secondary: ['hong kong printing cost', '印刷成本', '印刷報價', '印刷価格', 'printing price list 2026', 'HK printing baseline', 'cost baseline report', 'booklet printing cost', 'flyer printing cost', 'sticker printing cost', 'MOQ hong kong printing', '印刷卸価', 'printing quotation'],
+  },
+};
+
 export const blogPosts: BlogPostMeta[] = [
   // Buying guides (9)
   bgBusinessCard,
@@ -1875,7 +1896,8 @@ export const blogPosts: BlogPostMeta[] = [
   // 2026-09-05 K3 拍板 v3 long-form-blog-3w2r 周六 10:00 第 3 篇: 8 盒型 5 維度全對比 (W7 #1 B7 派发, M3 包裝盒 客單价最高, GSC kraft paper box pos 9 衝首頁, 2025-2026 18,500 訂單實證)
   // 9 段 + 4 FAQ + 10 內部連結 + 3 locale native, 100 個起印 HK$2.5/個起, 8 盒型 5 維度 + 4 場景 + 5 工藝 + 4 認證 + 客戶案例 + 8 步流程 + 30 秒 WhatsApp
   lpKraftPaperBoxTypesComparison2026,
-];
+  hongKongPrintingCostBaseline2026,
+  ];
 
 // =============================================================================
 // Q-017/018/019 entries
