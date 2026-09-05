@@ -575,8 +575,8 @@ const categorySeoData: Record<string, {
   'educational': {
     titles: {
       'zh-hk': '校園教育印刷 100本起 · 證書/作業簿/教材 學校批量優惠 FSC認證 | 智印港',
-      en: 'sample printing,free sample,book sample,Education Printing Free Shipping · 100 MOQ Certificates/Workbooks Bulk | ZprintPro',
-      ja: 'サンプル印刷,無料サンプル,書籍サンプル,教育印刷 100部〜 · 証明書/ワークブック/教科書 学校一括割引 FSC認証 | ZprintPro',
+      en: 'Education Printing 100 MOQ | Certificates / Workbooks / Textbooks Bulk Discount | ZprintPro',
+      ja: '教育印刷 100部〜 | 証明書・ワークブック・教科書 学校一括割引 FSC認証 | ZprintPro',
     },
     keywords: {
       'zh-hk': '校園印刷,教育印刷,證書印刷,作業簿,教材印刷,學業簿,畢業證書,獎狀印刷,學校印刷,學生手冊,導師手冊,學位證書,幼稚園教材',

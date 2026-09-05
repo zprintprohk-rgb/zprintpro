@@ -2288,6 +2288,686 @@ categoryConversionBlocks['menus:zh-hk'] = {
     }
   ]
 };
+categoryConversionBlocks['educational:zh-hk'] = {
+  "category": "educational",
+  "locale": "zh-hk",
+  "title": "香港證書印刷・校簿印刷・畢業紀念冊訂製 — 教育印刷服務｜智印港",
+  "metaDescription": "香港證書印刷 HK$8-40/張，200g-250g 水印紙或棉質紙，燙金壓凹防偽底紋都做到；校簿印刷 HK$4-16/本，A4/A5 內頁橫線方格空白任揀；畢業紀念冊 HK$45-180/本，騎馬釘膠裝精裝三種裝訂，50 本起訂。證書 100 張起，WhatsApp 想訂幾多張都傾得掂，即刻報價。",
+  "quickAnswers": [
+    {
+      "q": "證書印刷幾多錢一張？",
+      "a": "證書 HK$8-40 一張，視乎紙材、尺寸（A4 或 A3）同工藝：燙金、壓凹、防偽底紋、浮水印都可以加。常用 200g-250g 水印紙或棉質紙，100 張起訂，確實價錢 WhatsApp 報價。"
+    },
+    {
+      "q": "證書紙有咩材質？點揀先啱？",
+      "a": "常見係 200g-250g 水印紙同棉質紙。水印紙本身帶浮水印，加埋防偽底紋就穩陣，機構認證、畢業證書都用得；棉質紙手感厚實，寫獎狀、榮譽證書企理啲。唔知點揀就話我哋知用途，幫你配。"
+    },
+    {
+      "q": "校簿印刷起訂量要幾多本？",
+      "a": "練習簿 100 本起訂，小批量數碼、大量柯式，補習社同學校細單都接得。A4/A5 內頁可揀橫線、方格或空白，封面 200g 銅版紙四色，HK$4-16/本，開學前兩個星期係高峰期，記得早啲落單。"
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "100張起",
+      "label": "證書小批量都接，畢業禮同培訓班都印得起"
+    },
+    {
+      "stat": "50本起",
+      "label": "畢業紀念冊 50 本開班，班級同校友會都訂得逢"
+    },
+    {
+      "stat": "48小時",
+      "label": "畢業紀念冊香港本地交付，個別規格以報價為準"
+    },
+    {
+      "stat": "免費排版",
+      "label": "校簿頁碼、章節同習題欄位幫你排好，唔使自己搞"
+    }
+  ],
+  "comparisonTable": {
+    "title": "香港教育印刷：證書 × 校簿 × 紀念冊 × 教科書 比較",
+    "columns": [
+      "產品",
+      "常用工藝",
+      "適用場景",
+      "起訂量"
+    ],
+    "rows": [
+      [
+        "證書（A4/A3）",
+        "四色印刷＋燙金、壓凹、防偽底紋、浮水印",
+        "畢業證書、獎狀、校友會證書、培訓證書",
+        "100 張起"
+      ],
+      [
+        "校簿／練習簿（A4/A5）",
+        "封面四色＋內頁單色或雙色，騎馬釘，封面覆膜可選",
+        "K12 練習簿、補習社教材、學年作業本",
+        "100 本起"
+      ],
+      [
+        "畢業紀念冊",
+        "騎馬釘／膠裝／精裝三種裝訂，班級照片師長題詞全頁",
+        "中學大學畢業紀念冊、校史特刊、校友會刊",
+        "50 本起"
+      ],
+      [
+        "教科書／年級教材",
+        "免費排版（頁碼、章節、習題欄），騎馬釘或膠裝",
+        "學校自編教科書、年級作業本、導師講義",
+        "100 本起"
+      ]
+    ],
+    "note": "紙材、釘裝同工藝可以自由搭配，最終價錢交期以 WhatsApp 報價為準。"
+  },
+  "orderFlow": {
+    "title": "6 步教育印刷流程",
+    "steps": [
+      {
+        "title": "WhatsApp 諮詢",
+        "desc": "話我哋知係證書、校簿定紀念冊，講低數量同大日子"
+      },
+      {
+        "title": "報價確認",
+        "desc": "按紙材、工藝同數量出價，列明工期同費用"
+      },
+      {
+        "title": "設計定稿",
+        "desc": "提供檔案，或者免費幫你排版頁碼章節習題欄"
+      },
+      {
+        "title": "打樣確認",
+        "desc": "核對紙材、顏色同釘裝，冇問題先開機"
+      },
+      {
+        "title": "落單付款",
+        "desc": "銀行轉賬或轉數快，確認後即刻開工"
+      },
+      {
+        "title": "交貨收貨",
+        "desc": "香港本地交付，開學季畢業季記得預鬆少少時間"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "證書報價查詢",
+      "message": "你好，我想印【畢業證書】，紙材想用【水印紙】，尺寸【A4】，數量【100】張，封面要【燙金＋防偽底紋】，麻煩報價同交期，多謝！"
+    },
+    {
+      "label": "校簿開學季查詢",
+      "message": "你好，我哋係【補習社】，想訂【A4 練習簿】，內頁【方格】，數量【200】本，開學前要到貨，想問下最快幾日有貨同報價，謝謝！"
+    },
+    {
+      "label": "畢業紀念冊查詢",
+      "message": "你好，我想訂造【中學畢業紀念冊】，裝訂想揀【膠裝】，數量【50】本，會有班級照片同師長題詞，想了解設計流程同報價，多謝！"
+    }
+  ],
+  "newFaqs": [
+    {
+      "q": "證書紙係咩材質？邊種防偽效果好啲？",
+      "a": "證書常用 200g-250g 水印紙或棉質紙。水印紙造紙時已帶浮水印，再加防偽底紋，臨摹難度高啲，機構認證同畢業證書都適用；棉質紙厚實企理，適合獎狀同榮譽證書。A4/A3 都得，想睇實物可以 WhatsApp 話我哋知。"
+    },
+    {
+      "q": "畢業紀念冊應該幾時落單？",
+      "a": "建議畢業禮之前早啲開始傾，因為要預位收集相片、排版、打樣先至開印。校簿方面，開學前兩個星期係高峰期，想檔期鬆動啲就避開呢段時間提早落單。你話我哋知幾時要用，我哋幫你倒後排期。"
+    },
+    {
+      "q": "校簿同教科書可以幫手排版嗎？",
+      "a": "可以，免費排版：頁碼、章節同習題欄位都幫你排好。內頁有橫線、方格、空白三種可揀，封面 200g 銅版紙四色印刷，騎馬釘或膠裝，封面覆膜都加到。"
+    },
+    {
+      "q": "證書印刷起訂量係幾多？工藝有咩揀？",
+      "a": "證書 100 張起訂，小批量數碼、大量柯式。工藝方面燙金、壓凹、防偽底紋、浮水印都做到，畢業證書、獎狀、校友會證書、培訓證書都啱用，確實價錢按規格報價。"
+    }
+  ]
+};
+
+categoryConversionBlocks['educational:en'] = {
+  "category": "educational",
+  "locale": "en",
+  "title": "Exercise Book Printing & Custom School Workbooks｜ZprintPro",
+  "metaDescription": "Custom printed exercise books & educational workbook printing from US$1.84. 100-book MOQ, free typesetting, DHL 2-4 day delivery. 30-second quote for schools.",
+  "quickAnswers": [
+    {
+      "q": "How much does school exercise book printing cost?",
+      "a": "Exercise books start at US$1.84 each, certificates at US$2.76, textbooks at US$9.20 and graduation yearbooks at US$10.35. Final cost depends on page count, paper, size and quantity, so request a quote for exact pricing."
+    },
+    {
+      "q": "What is the MOQ for custom printed exercise books?",
+      "a": "100 books for exercise books and perfect-bound textbooks, 50 for hardcover textbooks and yearbooks, and 250 for saddle-stitch booklets. Small runs print digitally, while offset presses handle larger volume orders."
+    },
+    {
+      "q": "How long does a school printing order take from quote to delivery?",
+      "a": "Production time is quoted per order based on page count and binding. After dispatch, DHL Express delivers worldwide in 2-4 days, and Hong Kong schools receive local delivery within 48 hours. Order early — the two weeks before term starts are the busiest."
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "100 books",
+      "label": "Exercise book MOQ, vs 500+ minimums common on trade platforms"
+    },
+    {
+      "stat": "From US$1.84",
+      "label": "Per-book entry price for K12 exercise books"
+    },
+    {
+      "stat": "2-4 days",
+      "label": "DHL Express delivery to Africa, the Middle East & Southeast Asia"
+    },
+    {
+      "stat": "G7 Master",
+      "label": "Certified press color control with FSC-certified paper options"
+    }
+  ],
+  "comparisonTable": {
+    "title": "Educational Printing Product Comparison",
+    "columns": [
+      "Product",
+      "Finishing & Binding",
+      "Typical Use Case",
+      "MOQ"
+    ],
+    "rows": [
+      [
+        "Exercise Books",
+        "Saddle stitch or perfect bound; 80-100g woodfree interior; lined, grid or blank pages",
+        "K12 workbooks, term exercise books, tutoring-center materials",
+        "100 books"
+      ],
+      [
+        "Certificates",
+        "200-250g watermark or cotton paper; foil stamping, embossing, anti-counterfeit background pattern",
+        "Diplomas, awards, alumni and training certificates",
+        "100 pcs"
+      ],
+      [
+        "Textbooks",
+        "Perfect bound or saddle stitch; A4 or B5; ISBN and barcode support",
+        "Grade-level curricula, training manuals, question banks",
+        "100 perfect bound / 50 hardcover"
+      ],
+      [
+        "Yearbooks",
+        "Saddle stitch, perfect bound or hardcover; foil-stamped crest, ribbon bookmark, dust jacket",
+        "Graduation yearbooks, school anniversary and alumni publications",
+        "50 copies"
+      ]
+    ],
+    "note": "Paper and finishing options vary by product. Pricing is quote-based on page count, paper, size and quantity."
+  },
+  "orderFlow": {
+    "title": "School Printing Order Flow — From Spec Sheet to Delivery",
+    "steps": [
+      {
+        "title": "Submit Specs",
+        "desc": "Send page count, size, binding and quantity — single titles or multi-title school sets welcome"
+      },
+      {
+        "title": "30-Second AI Quote",
+        "desc": "Get instant pricing online, then confirm paper and finishing options"
+      },
+      {
+        "title": "Free Typesetting",
+        "desc": "We lay out page numbers, chapter headers and exercise fields; yearbooks include a free design mockup"
+      },
+      {
+        "title": "Proof Sign-Off",
+        "desc": "Approve a digital proof or sample before the bulk run begins"
+      },
+      {
+        "title": "Bulk Production",
+        "desc": "Digital printing for small batches, offset for volume, with quality checks throughout"
+      },
+      {
+        "title": "DHL Delivery",
+        "desc": "2-4 days worldwide via DHL Express; 48-hour delivery for Hong Kong schools"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "Get a Quote",
+      "message": "Hi, we're a [school / tutoring center: ____] in [country: ____] and need a quote for [exercise books / textbooks / certificates: ____]. Quantity: [____ pcs], size: [A4 / A5 / B5: ____], page count: [____], binding: [saddle stitch / perfect bound / hardcover: ____]. Please share pricing and lead time, thanks!"
+    },
+    {
+      "label": "Request a Sample",
+      "message": "Hi, we'd like to check paper and print quality before placing our school order. Could you send a sample of [product: ____] with [interior paper weight: ____]? Target quantity is [____ pcs], delivery to [country: ____]. Thanks!"
+    },
+    {
+      "label": "Back-to-School Bulk Order",
+      "message": "Hi, we're preparing for the [term / school year: ____] and need [product: ____] for [number of students: ____] students. Please advise bulk pricing, payment terms and the latest order date to receive delivery by [date: ____]. Thanks!"
+    }
+  ],
+  "newFaqs": [
+    {
+      "q": "Do you offer bulk discounts for school-wide or district orders?",
+      "a": "Yes. Classroom sets and school-wide orders are priced in quantity tiers, so the per-unit rate drops as volume grows. Share your student count and page specs and we'll quote exercise books, workbooks and certificates together as one combined order."
+    },
+    {
+      "q": "What artwork do you need for custom workbook printing?",
+      "a": "Print-ready PDFs work smoothly — CMYK color with fonts embedded and high-resolution images. If you're starting from Word, PowerPoint or Canva files, send them as-is: free typesetting covers page numbers, chapter headers and exercise-field layouts before printing."
+    },
+    {
+      "q": "Which paper should we choose for children's workbooks?",
+      "a": "80gsm uncoated woodfree paper is the standard workbook interior — smooth to write on and gentle on the eyes. Covers use 250gsm coated stock for vibrant graphics, and 100% recycled FSC-certified paper is available for eco-friendly programs."
+    },
+    {
+      "q": "Can you deliver school orders internationally?",
+      "a": "Yes — orders ship worldwide from our Asia factory via DHL Express in 2-4 days, a route commonly used by education ministries and school groups in Africa, the Middle East and Southeast Asia. Hong Kong schools receive local delivery within 48 hours."
+    }
+  ]
+};
+
+categoryConversionBlocks['educational:ja'] = {
+  "category": "educational",
+  "locale": "ja",
+  "title": "教材 印刷製本｜教科書印刷・教材テキスト印刷・問題集を小ロット100部から製本対応｜ZprintPro",
+  "metaDescription": "教材 印刷製本なら小ロット100部から対応。教科書印刷は1冊￥1,288〜、問題集・練習帳は1冊￥258〜。中綴じ・無線綴じ・上製本から選択でき、ISBN・バーコードにも対応します。AI即時見積もり30秒、DHL Expressで日本全国へ2-4日配送。卒業アルバムの上製本や学年内教材もお見積もり制。",
+  "quickAnswers": [
+    {
+      "q": "教材 印刷の最小ロットは何部からですか？",
+      "a": "教科書・テキスト・問題集はすべて100部から承ります。問題集・練習帳は1冊￥258〜、教科書は1冊￥1,288〜が目安です。学校や塾の学年内教材など、部数がまとまると単価も下がるため、まずは仕様と部数をお知らせください。最終価格はお見積もり制です。"
+    },
+    {
+      "q": "教科書 印刷のサイズと仕様はどう選べばいいですか？",
+      "a": "教科書はA4（210×297mm）またはB5（176×250mm）、問題集・練習帳はA4またはA5（148×210mm）が定番です。表紙はカラー4C＋200gコート紙、内文はモノクロまたは2色。目に優しい80g–100gの上質紙を使い、ISBN・バーコードの掲載にも対応します。"
+    },
+    {
+      "q": "教材 製本の種類は選べますか？",
+      "a": "中綴じ・無線綴じから選択でき、表紙のラミネート加工もオプションで可能です。卒業アルバムは上製本に対応し、校章の箔押し・栞紐・ダストジャケットで仕上げます。ページ数・予算・配布シーンに合わせて、教材 印刷 製本の組み合わせをご提案します。"
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "100部〜",
+      "label": "教科書・テキスト・問題集の小ロット製本対応"
+    },
+    {
+      "stat": "￥258〜",
+      "label": "問題集・練習帳の1冊あたり目安価格"
+    },
+    {
+      "stat": "30秒",
+      "label": "AI即時見積もりで部数別の概算価格を提示"
+    },
+    {
+      "stat": "2-4日",
+      "label": "DHL Expressで日本全国へ配送（製造後）"
+    }
+  ],
+  "comparisonTable": {
+    "title": "教材 印刷 製本 早見表（種類 × 製本 × シーン × 最小ロット）",
+    "columns": [
+      "教材の種類",
+      "製本",
+      "おすすめシーン",
+      "最小ロット"
+    ],
+    "rows": [
+      [
+        "教科書（A4／B5）",
+        "無線綴じ・中綴じ＋表紙ラミネート（オプション）",
+        "K12教科書・補習校教材・学年内教材（ISBN・バーコード対応）",
+        "100部〜"
+      ],
+      [
+        "研修テキスト・マニュアル",
+        "無線綴じ（内文モノクロ／2色）",
+        "企業研修・教室テキスト・教材 テキスト印刷",
+        "100部〜"
+      ],
+      [
+        "問題集・練習帳（A4／A5）",
+        "中綴じ＋罫線（マス・横罫・無地）から選択",
+        "塾・予備校のドリル・家庭学習用問題集",
+        "100部〜"
+      ],
+      [
+        "卒業アルバム",
+        "上製本＋箔押し・栞紐・ダストジャケット",
+        "学校・学級の記念アルバム・周年誌",
+        "お見積もり制"
+      ]
+    ],
+    "note": "価格・納期は数量・紙質・ページ数・製本によりお見積もり制です。問題集1冊￥258〜、教科書1冊￥1,288〜が目安価格で、部数が多いほど単価は下がります。"
+  },
+  "orderFlow": {
+    "title": "教材 印刷製本のオーダーフロー 6ステップ",
+    "steps": [
+      {
+        "title": "お問い合わせ",
+        "desc": "WhatsAppで教材の種類・サイズ・ページ数・部数・製本方法のご要望をお知らせください"
+      },
+      {
+        "title": "AI即時見積もり",
+        "desc": "30秒で概算価格と納期をご提示します"
+      },
+      {
+        "title": "デザイン入稿",
+        "desc": "レイアウトデータ（AI／PDF）の入稿、または無料デザインサービスをご利用いただけます（頁番号・章立て・習題欄の組版も対応）"
+      },
+      {
+        "title": "サンプル確認",
+        "desc": "色・紙質・製本の仕上がりをチェックしてから量産へ進めます"
+      },
+      {
+        "title": "製造・品質検査",
+        "desc": "印刷から綴じ加工まで一貫製造し、出荷前に全数検品のうえ梱包します"
+      },
+      {
+        "title": "配送・納品",
+        "desc": "DHL Express／FedExで日本全国へ。全世界2-4日でお届けします"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "見積もり依頼",
+      "message": "教材の見積もりをお願いします。【教科書（B5）】／部数【300部】／製本【無線綴じ＋表紙ラミネート】／内文【モノクロ】。1冊の単価と納期を教えてください。"
+    },
+    {
+      "label": "学期納期相談",
+      "message": "【開学前】に教材を納品したいです。【問題集（A4・中綴じ）】／部数【500部】。最短納期と特急対応の可否をあわせて教えてください。"
+    },
+    {
+      "label": "卒業アルバム相談",
+      "message": "【卒業アルバム】の製作を検討しています。部数【　部】／製本【上製本＋校章の箔押し】。デザインテンプレートの有無とお見積もりをお願いします。"
+    }
+  ],
+  "newFaqs": [
+    {
+      "q": "教材印刷の部数と価格はいくらからですか？",
+      "a": "教科書・テキスト・問題集は100部から承ります。問題集・練習帳は1冊￥258〜、教科書は1冊￥1,288〜が目安で、部数が多いほど単価は下がります。最終価格はサイズ・紙質・ページ数・製本方法によりお見積もり制です。"
+    },
+    {
+      "q": "納期はどのくらいかかりますか？",
+      "a": "完成後はDHL Expressで全世界2-4日、日本全国へお届けします。製造期間はページ数・製本・部数により変わるため、学期の納品スケジュールに合わせてご相談ください。開学前の2週間は混み合う時期なので、早めのご相談がおすすめです。"
+    },
+    {
+      "q": "教科書印刷でISBNやバーコードは対応できますか？",
+      "a": "はい。教科書・テキストではISBN・バーコードの掲載に対応しています。内文は目に優しい80g–100gの上質紙でモノクロまたは2色から選べ、表紙はカラー印刷＋ラミネート加工（オプション）で長く使える仕上がりにします。"
+    },
+    {
+      "q": "卒業アルバムの製本はどんな仕様にできますか？",
+      "a": "上製本に対応し、校章の箔押し・栞紐・ダストジャケットで仕上げます。無料のデザインテンプレートをご用意しているほか、学年末の繁忙期には制作サポートも行っています。価格と最小部数は仕様によりお見積もり制です。"
+    }
+  ]
+};
+
+categoryConversionBlocks['japan-doujin:zh-hk'] = {
+  "category": "japan-doujin",
+  "locale": "zh-hk",
+  "title": "同人本印刷｜同人印刷 10 本起印＋Comiket 特急對應｜智印港",
+  "metaDescription": "香港同人本印刷／同人印刷推薦：A5/B5 同人誌 10 本起印，封面彩色＋內頁單色，騎馬釘（8-64 頁）／膠裝可選，Comiket 前 24 小時特急對應；仲有亞克力匙扣、罐型襟章、明信片套裝一站式訂製，深圳自營工廠 ISO 12647 色彩管理，DHL 國際速遞出貨，WhatsApp 即時報價。",
+  "quickAnswers": [
+    {
+      "q": "同人本印刷幾多錢？",
+      "a": "同人本 10 本起印，價錢視乎開本（A5/B5）、頁數、紙材同裝訂方式，50／100／500 本仲有 5%-15% 量購折扣，WhatsApp 即時報價。"
+    },
+    {
+      "q": "同人印刷起訂量係幾多？",
+      "a": "同人本 10 本起印；亞克力匙扣同罐型襟章 10 件起；明信片套裝 4 套起，社團同個人團隊細批量都印得到。"
+    },
+    {
+      "q": "同人本交期要幾耐？",
+      "a": "常規 5-7 個工作天生產，Comiket 前有 24 小時特急對應；匙扣、襟章特急 3 個營業日，明信片套裝 3-5 個營業日，之後 DHL Express 速遞出貨。"
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "10 本起",
+      "label": "同人本起訂量 匙扣襟章 10 件起"
+    },
+    {
+      "stat": "24 小時",
+      "label": "Comiket 前特急對應"
+    },
+    {
+      "stat": "3 個營業日",
+      "label": "匙扣／襟章特急交期可協調"
+    },
+    {
+      "stat": "ISO 12647",
+      "label": "色彩管理＋FSC 認證紙材"
+    }
+  ],
+  "comparisonTable": {
+    "title": "同人周邊四大產品線比較",
+    "columns": [
+      "產品",
+      "工藝",
+      "適用場景",
+      "起訂量"
+    ],
+    "rows": [
+      [
+        "同人本",
+        "封面柯式四色＋內頁單色，騎馬釘（8-64 頁）／膠裝，A5／B5 標準開本",
+        "同人展場販售、社團場刊、粉絲誌",
+        "10 本起"
+      ],
+      [
+        "亞克力匙扣",
+        "UV 四色＋白墨，透明／白底／滿版，30-80mm 任意形狀，2mm／3mm 厚",
+        "角色應援、VTuber 周邊、物販",
+        "10 件起"
+      ],
+      [
+        "罐型襟章",
+        "柯式／數碼四色，57mm／76mm／44mm，安全扣標配＋OPP 袋",
+        "展會物販、應援活動、贈品",
+        "10 件起"
+      ],
+      [
+        "明信片套裝",
+        "和紙風藝術紙 180g，雙面印刷＋霧面 PP 貼膜，OPP 獨立袋",
+        "活動限定贈品、收藏、感謝卡",
+        "4 套起"
+      ]
+    ],
+    "note": "以上規格以智印港 japan-doujin 產品線為準，實際報價視乎設計細節同數量。"
+  },
+  "orderFlow": {
+    "title": "同人周邊 6 步落單流程",
+    "steps": [
+      {
+        "title": "WhatsApp 查詢",
+        "desc": "講明產品：同人本／匙扣／襟章／明信片，連開本尺寸同數量"
+      },
+      {
+        "title": "報價確認",
+        "desc": "24 小時內回覆價錢同交期"
+      },
+      {
+        "title": "提供設計檔",
+        "desc": "AI／PDF／PNG 都收，CMYK 300dpi+，異形匙扣要 Illustrator 路徑檔"
+      },
+      {
+        "title": "打樣確認",
+        "desc": "印前檢查設計檔，確認冇問題先開機"
+      },
+      {
+        "title": "生產製作",
+        "desc": "深圳自營工廠印刷，Comiket 前特急可協調排單"
+      },
+      {
+        "title": "收貨驗收",
+        "desc": "DHL Express 國際速遞出貨，跟進到滿意為止"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "同人本報價",
+      "message": "你好，我想報價同人本印刷：\n【開本】A5 / B5 / A4\n【頁數】\n【裝訂】騎馬釘 / 膠裝\n【數量】例如 50 本\n【封面】彩色\n【交貨日期】例如 X 月 X 日\n麻煩報價，多謝！"
+    },
+    {
+      "label": "周邊報價",
+      "message": "你好，我想訂製同人周邊：\n【產品】亞克力匙扣 / 罐型襟章 / 明信片套裝\n【尺寸】例如匙扣 50mm / 襟章 57mm\n【數量】\n【工藝】例如匙扣 3mm 白底\n【交貨日期】\n麻煩報價，多謝！"
+    },
+    {
+      "label": "展前特急",
+      "message": "你好，我趕住展會出貨：\n【活動名稱／日期】例如 X 月 X 日\n【產品】\n【數量】\n【設計檔現況】已有 / 未完成\n【最遲收貨日期】\n麻煩幫手睇下趕唔趕到，多謝！"
+    }
+  ],
+  "newFaqs": [
+    {
+      "q": "同人本同普通畫冊印刷有咩分別？",
+      "a": "同人本主打小批量：10 本起印，A5/B5 標準開本，騎馬釘（8-64 頁）或膠裝都得，封面彩色＋內頁單色，適合同人展同社團場刊；普通畫冊一般針對較大訂量同企業用途，裝訂同用紙設定唔同。想清楚配置可以先 WhatsApp 講需求。"
+    },
+    {
+      "q": "Comic Market 或者書展前落單，交貨節奏應該點安排？",
+      "a": "同人本常規 5-7 個工作天生產，Comiket 前有 24 小時特急對應，匙扣同襟章特急 3 個營業日；展前高峰期（暑假同年底場次前）廠房排單較密，建議預留 10-15 個工作日會更穩陣，落單前先喺 WhatsApp 確認交期。"
+    },
+    {
+      "q": "可唔可以同人本同周邊一齊落單？",
+      "a": "得。同人本、亞克力匙扣、罐型襟章、明信片套裝全部屬同一條 japan-doujin 產品線，深圳自營工廠統一以 ISO 12647 色彩管理，色調一致，一齊出貨方便管理物販。"
+    },
+    {
+      "q": "設計檔有咩要求？",
+      "a": "AI／PDF／PNG 都收，建議 CMYK 色彩模式、300dpi 以上；異形匙扣需要 Illustrator 路徑檔入稿。印前有免費設計檔檢查，有問題會先同你確認先開印。"
+    }
+  ]
+};
+
+categoryConversionBlocks['japan-doujin:ja'] = {
+  "category": "japan-doujin",
+  "locale": "ja",
+  "title": "同人グッズ印刷｜同人誌・アクリルキーホルダー・缶バッジ 小ロット10個から｜ZprintPro",
+  "metaDescription": "同人グッズ印刷はお任せ。同人誌1部￥7,500〜、アクリルキーホルダー1個￥2,275〜、缶バッジ1個￥1,200〜、ポストカード1枚￥750〜。10部・10個からの小ロットに対応し、コミケ前24時間特急製造も可能。AI即時見積もり30秒、DHL Expressで日本全国へ2-4営業日でお届けします。",
+  "quickAnswers": [
+    {
+      "q": "同人グッズの印刷はいくらから依頼できますか？",
+      "a": "同人誌は1部￥7,500〜（10部から）、アクリルキーホルダーは1個￥2,275〜、缶バッジは1個￥1,200〜（各10個から）、ポストカードセットは1枚￥750〜（4セットから）です。数量や仕様によって単価が変わるため、最終価格はお見積もり制となります。"
+    },
+    {
+      "q": "コミケや即売会に間に合う納期はどのくらいですか？",
+      "a": "標準は3-7営業日で製造します。同人誌と缶バッジはコミケ前の24時間特急製造にも対応しています（特急料金はお見積もり制）。完成後はDHL Expressで日本へ2-4営業日でお届けするため、イベント日程はあらかじめお知らせください。"
+    },
+    {
+      "q": "アクリルキーホルダーと缶バッジはどんな仕様を選べますか？",
+      "a": "アクリルキーホルダーは30-80mmの任意形状、2mm／3mmの厚み、透明・白・満版印刷から選べ、安全ピンやチェーンのオプションも可能です。缶バッジは57mm／76mmの2サイズで、フルカラー印刷・安全ピン付きが標準です。"
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "10個〜",
+      "label": "アクリルキーホルダー・缶バッジの小ロットに対応（同人誌は10部から）"
+    },
+    {
+      "stat": "24時間",
+      "label": "コミケ前の特急製造に対応（同人誌・缶バッジ）"
+    },
+    {
+      "stat": "2-4営業日",
+      "label": "DHL Expressによる日本への配送日数目安"
+    },
+    {
+      "stat": "￥750〜",
+      "label": "ポストカードセットの1枚あたり目安価格"
+    }
+  ],
+  "comparisonTable": {
+    "title": "同人グッズの商品タイプ × 加工 × シーン別 比較表",
+    "columns": [
+      "商品タイプ",
+      "主な加工・仕様",
+      "おすすめシーン",
+      "最小ロット"
+    ],
+    "rows": [
+      [
+        "同人誌（A5／B5）",
+        "表紙フルカラー＋本文モノクロ",
+        "コミケ・即売会での本編物販",
+        "10部〜"
+      ],
+      [
+        "アクリルキーホルダー（30-80mm）",
+        "2mm／3mm厚・透明／白／満版印刷",
+        "推し活グッズ・ファンクラブ限定品",
+        "10個〜"
+      ],
+      [
+        "缶バッジ（57mm／76mm）",
+        "フルカラー印刷・安全ピン付き",
+        "現場配布・セット売りの特典",
+        "10個〜"
+      ],
+      [
+        "ポストカードセット（105×148mm）",
+        "和紙風アート紙・両面印刷・OPPスリーブ封入",
+        "イラストコレクション・来場者特典",
+        "4セット〜（4-8枚組）"
+      ]
+    ],
+    "note": "目安価格は同人誌1部￥7,500〜／アクリルキーホルダー1個￥2,275〜／缶バッジ1個￥1,200〜／ポストカード1枚￥750〜。最終価格・納期は仕様と数量により変わるため、お見積もり制です。"
+  },
+  "orderFlow": {
+    "title": "同人グッズ印刷 6ステップ",
+    "steps": [
+      {
+        "title": "お問い合わせ",
+        "desc": "WhatsAppで商品・数量・仕様・イベント日程をご相談ください"
+      },
+      {
+        "title": "AI即時見積もり",
+        "desc": "30秒で概算価格と納期をご提示します"
+      },
+      {
+        "title": "データ入稿",
+        "desc": "印刷データをご入稿いただき、スタッフが仕様を確認します"
+      },
+      {
+        "title": "内容の最終確認",
+        "desc": "サイズ・加工・部数のご確認のあと、製造を開始します"
+      },
+      {
+        "title": "製造・品質検査",
+        "desc": "標準3-7営業日で製造。FSC認証紙とISO 12647の色管理のもと、出荷前に検品します"
+      },
+      {
+        "title": "配送・納品",
+        "desc": "DHL Expressで日本へ2-4営業日でお届けします"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "見積もり依頼",
+      "message": "同人グッズの見積もりをお願いします。商品【アクリルキーホルダー】／サイズ【50mm】／数量【30個】／仕様【2mm・満版印刷】。1個あたりの単価と納期を教えてください。"
+    },
+    {
+      "label": "コミケ特急相談",
+      "message": "【コミケ】の物販が急ぎです。商品【同人誌（B5・表紙カラー／本文モノクロ）】／数量【50部】。24時間特急製造が使えるか、費用とあわせて教えてください。"
+    },
+    {
+      "label": "リピート追加発注",
+      "message": "前に発注した【同じデザインの缶バッジ（57mm）】を追加したいです。数量【100個】、デザインは前回と同じです。見積もりをお願いします。"
+    }
+  ],
+  "newFaqs": [
+    {
+      "q": "小部数でも注文できますか？部数と価格の関係は？",
+      "a": "はい。同人誌は10部から、アクリルキーホルダー・缶バッジは10個から、ポストカードセットは4セットから承ります。目安価格は同人誌1部￥7,500〜、アクリルキーホルダー1個￥2,275〜、缶バッジ1個￥1,200〜、ポストカード1枚￥750〜です。部数が増えるほど1点あたりの単価は下がり、最終価格はお見積もり制となります。"
+    },
+    {
+      "q": "入稿データの形式や仕様はどこで確認できますか？",
+      "a": "主要フォーマットでのデータ入稿に対応しています。カラーモード・塗り足し・解像度などの詳細仕様は、担当スタッフまでお気軽にお問い合わせください。同人誌は表紙フルカラー＋本文モノクロという標準構成にも対応し、入稿後にスタッフが仕様を確認してから製造に入ります。"
+    },
+    {
+      "q": "アクリルキーホルダーの厚みや印刷方法は選べますか？",
+      "a": "選べます。30-80mmの任意形状、2mm／3mmの厚み、透明・白・満版印刷に対応し、安全ピンやチェーンのオプションも追加できます。缶バッジは57mm／76mmの2サイズでフルカラー印刷・安全ピン付き。推し活グッズには缶バッジとアクリルキーホルダーの組み合わせが人気です。"
+    },
+    {
+      "q": "コミケ前に間に合わせる特急製造は可能ですか？",
+      "a": "可能です。同人誌と缶バッジはコミケ前の24時間特急製造に対応しており、標準の3-7営業日より短い納期で製造できます（特急料金はお見積もり制）。完成後はDHL Expressで日本へ2-4営業日でお届けします。イベントの開始日をあらかじめお知らせください。"
+    }
+  ]
+};
+
 
 export function getConversionBlocks(
   categorySlug: string,
