@@ -3251,6 +3251,438 @@ categoryConversionBlocks['red-packets:zh-hk'] = {
 
 
 
+
+
+// 2026-09-05 W5 v34: books 三语转化区块 (词图 v2 审计 REMAP 承接: booklets 404 词群经重定向落 books)
+categoryConversionBlocks['books:zh-hk'] = {
+  "category": "books",
+  "locale": "zh-hk",
+  "title": "騎馬釘小冊子印刷 100本起｜騎馬釘/膠裝/精裝/校簿印書訂製 | 智印港",
+  "metaDescription": "香港騎馬釘書刊印刷訂製：騎馬釘小冊子 HK$6-32/本、無線膠裝書 HK$16-80/本、精裝書 HK$40-240/本、線圈筆記本 HK$8-40/本，全部 100 本起印。印書、校簿練習冊、活動場刊、公司年報、畢業紀念冊都印得，免費設計打稿 4 小時，ISO 9001 認證，港九新界滿 HK$500 免費順豐速遞，WhatsApp 30 秒即時報價。",
+  "quickAnswers": [
+    {
+      "q": "騎馬釘小冊子印刷幾多錢一本？",
+      "a": "騎馬釘小冊子印刷 HK$6-32/本，100 本起印；8-64 頁小冊子可以平攤 180° 翻閱，最啱活動場刊、校簿練習冊、產品目錄同宣傳冊子。實價視乎頁數、紙張（128g–157g 銅版紙或書紙）同數量，WhatsApp 30 秒即時報價。"
+    },
+    {
+      "q": "印書最少要印幾多本？有冇批量優惠？",
+      "a": "五款書刊（騎馬釘書刊小冊子、無線膠裝書、精裝書、線圈筆記本、畫冊型錄）劃一 100 本起印；以騎馬釘小冊子為例，100 本有 85 折、500 本 7 折。學校教材、補習社練習冊批量單，WhatsApp 攞分層報價。"
+    },
+    {
+      "q": "騎馬釘、膠裝定精裝點揀？",
+      "a": "8-64 頁揀騎馬釘最抵，可平攤 180° 易翻閱；48-400 頁用無線膠裝，書脊平整牢固，可以印書名、條碼同 ISBN；畢業紀念冊、婚慶紀念書等珍藏版揀精裝，2.5mm 灰紙板封面可加燙金書名。小冊子升級膠裝 +HK$30/本、精裝 +HK$100/本。"
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "HK$2.8 起",
+      "label": "畫冊/型錄印刷低至 HK$2.8/本，印書入門冇難度"
+    },
+    {
+      "stat": "100 本起印",
+      "label": "五款書刊劃一 100 本起訂，校簿教材小批量都接得"
+    },
+    {
+      "stat": "ISO 9001 + FSC",
+      "label": "認證印刷廠直出，品質同環保雙重認證"
+    },
+    {
+      "stat": "48 小時",
+      "label": "畫冊類香港本地速遞到貨，DHL 全球 2-4 天"
+    }
+  ],
+  "comparisonTable": {
+    "title": "香港印書點揀？五款書刊 × 裝訂工藝 × 適用場景 × 價錢比較",
+    "columns": [
+      "品類",
+      "材質/工藝",
+      "適用場景",
+      "起訂量/價格"
+    ],
+    "rows": [
+      [
+        "騎馬釘小冊子（場刊/校簿/練習冊）",
+        "128g–157g 銅版紙或書紙，四色數碼或柯式，8-64 頁平攤 180° 翻閱",
+        "企業手冊、活動場刊、學校練習冊（校簿）、雜誌同產品目錄",
+        "100 本起、HK$6-32/本"
+      ],
+      [
+        "無線膠裝書籍",
+        "內頁 157g–200g 銅版紙/啞粉紙，書脊平整牢固，可印書名/條碼/ISBN，48-400 頁",
+        "學術論文集、年度報告、CSR 社會責任報告、文學作品集",
+        "100 本起、HK$16-80/本"
+      ],
+      [
+        "精裝書籍",
+        "2.5mm 灰紙板封面，可加燙金書名、絲帶書籤",
+        "畢業紀念冊、婚慶紀念書、家族史冊、校友會刊",
+        "100 本起、HK$40-240/本"
+      ],
+      [
+        "線圈筆記本",
+        "內頁 80g–100g 書紙或道林紙，YO 圈/螺旋裝訂可拆卸重組，180° 平攤",
+        "企業禮品、補習社教材、培訓手冊、校園紀念本",
+        "100 本起、HK$8-40/本"
+      ],
+      [
+        "畫冊/產品型錄",
+        "內頁 157g–200g 銅版紙，封面覆膜（啞膜/光膜）或燙金，騎馬釘或膠裝",
+        "攝影集、展覽圖錄、產品型錄、公司年報",
+        "100 本起、HK$2.8-1000/本"
+      ]
+    ],
+    "note": "以騎馬釘小冊子計價階梯為準：100 本有 85 折、500 本 7 折；小冊子升級膠裝 +HK$30/本、精裝 +HK$100/本。Q4 係印刷高峰期，建議提早落單；實際價錢視乎頁數、紙張同數量，以 WhatsApp 報價為準。"
+  },
+  "orderFlow": {
+    "title": "書刊訂製 6 步流程",
+    "steps": [
+      {
+        "title": "查價",
+        "desc": "WhatsApp 講低品類（騎馬釘小冊子/膠裝書/校簿練習冊）、頁數同數量，30 秒 AI 即時報價；騎馬釘小冊子 HK$6-32/本、畫冊型錄 HK$2.8-1000/本，全部 100 本起印"
+      },
+      {
+        "title": "交稿",
+        "desc": "提供 CMYK 設計檔連出血位；冇現成檔案都可以，免費排版幫你處理目錄、頁碼與章節標註"
+      },
+      {
+        "title": "校樣",
+        "desc": "免費設計打稿 4 小時，核對色稿、字體同頁序，確認冇問題先開印；Q4 係高峰期，建議提早確認檔期"
+      },
+      {
+        "title": "印刷",
+        "desc": "小批量數碼、大量柯式四色印刷；內頁 128g–200g 銅版紙或 80g–100g 書紙任揀，色彩飽和圖文清晰"
+      },
+      {
+        "title": "裝訂（騎馬釘／膠裝）",
+        "desc": "騎馬釘 8-64 頁平攤 180°；無線膠裝 48-400 頁書脊可印 ISBN；小冊子升級膠裝 +HK$30/本、升級精裝 +HK$100/本"
+      },
+      {
+        "title": "交貨",
+        "desc": "畫冊類 48 小時香港本地速遞，DHL 全球 2-4 天；港九新界滿 HK$500 免費順豐速遞"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "騎馬釘小冊子報價",
+      "message": "你好，我想印【騎馬釘小冊子】，A4 【16頁】，數量【300】本，128g銅版紙，用嚟做【活動場刊】，麻煩報價同交期，唔該！"
+    },
+    {
+      "label": "校簿練習冊批量查詢",
+      "message": "你好，我哋係【補習社】，想印【騎馬釘練習冊（校簿）】A5 【32頁】，數量【500】本，想知批量價同埋幾時交到，多謝！"
+    },
+    {
+      "label": "膠裝年報急單",
+      "message": "你好，公司【年度報告】要印【無線膠裝】A4 【100本】，書脊要印書名同年份，下星期要收貨，想問最快幾日同報價，謝謝！"
+    }
+  ],
+  "newFaqs": [
+    {
+      "q": "騎馬釘書刊係咩？邊啲書刊適合用騎馬釘？",
+      "a": "騎馬釘即係喺書脊中央用釘書釘裝訂，8-64 頁小冊子可以完全平攤 180°，翻閱方便、成本最低；活動場刊、校簿練習冊、產品目錄、宣傳冊子都啱用。HK$6-32/本，100 本起印。"
+    },
+    {
+      "q": "校簿／練習冊可以批量印嗎？",
+      "a": "可以。騎馬釘練習冊用 128g–157g 銅版紙或書紙，100 本起印，100 本有 85 折、500 本 7 折；補習社教材、學校作業簿、培訓手冊批量單，WhatsApp 攞分層報價。"
+    },
+    {
+      "q": "印書交期要幾耐？",
+      "a": "免費設計打稿 4 小時，確認校樣後開印；畫冊類香港本地速遞 48 小時到貨，DHL 全球 2-4 天，港九新界滿 HK$500 免費順豐速遞。Q4 係印刷高峰期，建議提早落單。"
+    },
+    {
+      "q": "膠裝同精裝有咩分別？",
+      "a": "無線膠裝書脊平整牢固，48-400 頁適用，可印書名/條碼/ISBN，HK$16-80/本；精裝用 2.5mm 灰紙板封面，可加燙金書名同絲帶書籤，HK$40-240/本，適合畢業紀念冊、婚慶紀念書。小冊子升級膠裝 +HK$30/本、精裝 +HK$100/本。"
+    }
+  ]
+};
+
+categoryConversionBlocks['books:en'] = {
+  "category": "books",
+  "locale": "en",
+  "title": "Catalog & Booklet Printing from $1.20 | 50 MOQ + Saddle Stitch | ZprintPro",
+  "metaDescription": "Custom book printing from $1.20 with a 50-copy MOQ. Saddle stitch booklets, catalog book printing, exercise books, perfect bound & hardcover books. Free proof in 4 hours, DHL 2-4 day USA delivery, free shipping $99+. ISO 9001 + FSC certified.",
+  "quickAnswers": [
+    {
+      "q": "How much does booklet printing cost?",
+      "a": "Saddle stitch booklets run US$1.84-7.36 per copy with a 50-copy MOQ (8-64 pages). Perfect bound books and catalog book printing start at US$4.6 per copy from 100 copies — WhatsApp for a 30-second AI quote."
+    },
+    {
+      "q": "Where can I get book printing in Hong Kong with a low MOQ?",
+      "a": "ZprintPro prints saddle stitch booklets from 50 copies, plus perfect bound, spiral and hardcover books from 100 copies — with volume discounts at 500 / 1,000 / 5,000 copies and DHL 2-4 day global delivery."
+    },
+    {
+      "q": "How fast can you print and ship custom books?",
+      "a": "Free design proof in 4 hours, production starts once you approve, then DHL worldwide in 2-4 days. US orders over $99 ship free, and the facility is ISO 9001 + FSC certified."
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "US$1.84",
+      "label": "Saddle stitch booklet printing, per copy",
+      "desc": "50-copy MOQ, 8-64 pages; volume discounts at 500 / 1,000 / 5,000 copies."
+    },
+    {
+      "stat": "50 copies",
+      "label": "Lowest book MOQ — saddle stitch",
+      "desc": "Perfect bound, spiral and hardcover books start at 100 copies."
+    },
+    {
+      "stat": "4,820+",
+      "label": "Orders completed for schools, publishers & brands",
+      "desc": "From exercise books and workbooks to annual reports and product catalogs."
+    },
+    {
+      "stat": "ISO 9001 + FSC",
+      "label": "Certified printing quality & responsible paper",
+      "desc": "Four-color printing with 95%+ color accuracy for catalogs and photo books."
+    }
+  ],
+  "comparisonTable": {
+    "title": "Custom Book Printing Options Compared: Saddle Stitch, Perfect Bound, Spiral & Hardcover",
+    "columns": [
+      "Binding Option",
+      "Page Count",
+      "Price (Per Copy)",
+      "MOQ",
+      "Best For"
+    ],
+    "rows": [
+      [
+        "Saddle stitch booklets",
+        "8-64 pages",
+        "US$1.84-7.36",
+        "50 copies",
+        "Event programs, exercise books, company profile booklets, zines"
+      ],
+      [
+        "Perfect bound books",
+        "48-400 pages",
+        "From US$4.6",
+        "100 copies",
+        "Annual reports, CSR reports, product catalogs, literary collections"
+      ],
+      [
+        "Spiral notebooks & manuals",
+        "Lay-flat, fully removable pages",
+        "From US$2.76",
+        "100 copies",
+        "Training handbooks, workbooks, corporate gifts"
+      ],
+      [
+        "Hardcover books",
+        "2.5mm grayboard case",
+        "From US$13.8",
+        "100 copies",
+        "Yearbooks, photo books, premium keepsakes"
+      ]
+    ],
+    "note": "Prices are from ZprintPro's live catalog; final quotes vary with page count, paper stock and quantity. Get a 30-second AI quote on WhatsApp before you commit."
+  },
+  "orderFlow": {
+    "title": "How to Order Custom Booklets & Books in 6 Steps",
+    "steps": [
+      {
+        "title": "Pick Your Binding",
+        "desc": "Choose saddle stitch (8-64 pages), perfect bound, spiral or hardcover — we match the binding to your page count and budget."
+      },
+      {
+        "title": "Send Your Artwork",
+        "desc": "Upload your PDF or AI files on WhatsApp; free layout support for catalogs, page numbers and chapter markers."
+      },
+      {
+        "title": "Approve Your Proof",
+        "desc": "Free digital proof within 4 hours — nothing goes to press until you say go."
+      },
+      {
+        "title": "We Print",
+        "desc": "Four-color printing with 95%+ color accuracy; small runs print digitally, large runs on offset."
+      },
+      {
+        "title": "Bind & Finish",
+        "desc": "Saddle stitch, PUR perfect binding, spiral rings or 2.5mm grayboard hardcover — optional foil stamping, spot UV and lamination."
+      },
+      {
+        "title": "Delivery to Your Door",
+        "desc": "DHL worldwide in 2-4 days and free US shipping over $99. Reorders are one WhatsApp message away."
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "Get a Booklet Quote",
+      "message": "Hi ZprintPro! I'd like a quote for saddle stitch booklet printing:\n- Page count: [e.g. 24 pages]\n- Size: [e.g. A4 / A5]\n- Quantity: [e.g. 500 copies]\n- Paper: [e.g. 157gsm coated]\n- Needed by: [date]\n\nPlease send the price and delivery timeline. Thanks!"
+    },
+    {
+      "label": "Catalog & Book Quote",
+      "message": "Hi ZprintPro! I'm looking for a quote for catalog book printing:\n- Book type: [e.g. product catalog / annual report / exercise books]\n- Binding: [e.g. saddle stitch / perfect bound / hardcover]\n- Page count: [e.g. 48 pages]\n- Quantity: [e.g. 1,000 copies]\n- Ship to: [city, country]\n\nPlease quote the best price. Thank you!"
+    },
+    {
+      "label": "Rush Order",
+      "message": "Hi ZprintPro! I have a rush book printing request:\n- Item: [e.g. 200 saddle stitch booklets, 32 pages]\n- Deadline: [date]\n- Artwork: [print-ready / needs design help]\n\nCan you meet this timeline? Please confirm cost ASAP. Thanks!"
+    }
+  ],
+  "newFaqs": [
+    {
+      "q": "What is the difference between saddle stitch and perfect bound?",
+      "a": "Saddle stitch booklets (8-64 pages) are stapled and lay flat at 180° — the most economical binding. Perfect bound books use PUR adhesive for a sturdy square spine, best for 64+ page annual reports, catalogs and literary collections."
+    },
+    {
+      "q": "How much does saddle stitch booklet printing cost?",
+      "a": "US$1.84-7.36 per copy with a 50-copy MOQ, depending on page count, size and paper stock. Catalog book printing and perfect bound books start at US$4.6 per copy from 100 copies."
+    },
+    {
+      "q": "Can you print exercise books and workbooks for schools?",
+      "a": "Yes — exercise books, workbooks and training handbooks are popular saddle stitch and spiral orders, starting from 50-100 copies with volume discounts at 500 / 1,000 / 5,000 copies. Every order includes a free design proof within 4 hours."
+    },
+    {
+      "q": "Do you ship book printing orders to the USA?",
+      "a": "Yes. DHL worldwide delivery takes 2-4 days and US orders over $99 ship free. The facility is ISO 9001 + FSC certified, and a free digital proof is ready in 4 hours before anything goes to press."
+    }
+  ]
+};
+
+categoryConversionBlocks['books:ja'] = {
+  "category": "books",
+  "locale": "ja",
+  "title": "教材・テキスト印刷｜中綴じ・無線綴じ・上製本 小ロット100冊〜｜ZprintPro",
+  "metaDescription": "教材・テキスト・冊子印刷は工場直送。中綴じ冊子は1冊￥258〜、無線綴じ書籍は1冊￥644〜、上製本は1冊￥1,932〜、カタログは1冊￥644〜。いずれも100冊からで、学校・塾・企業のテキスト印刷・製本に対応します。30秒AI無料見積もり、DHL Expressで日本全国へ2-4営業日でお届け。ISO 9001認証工場。",
+  "quickAnswers": [
+    {
+      "q": "教材やテキストの印刷はいくらから依頼できますか？",
+      "a": "教材・テキストでよく使われる中綴じ冊子は1冊￥258〜、ページ数の多いカタログ・図録は1冊￥644〜で、いずれも100冊から承ります。ページ数・紙質・製本方法によって単価が変わるため、最終価格はお見積もり制となります。"
+    },
+    {
+      "q": "無線綴じと上製本はそれぞれ何冊から注文できますか？",
+      "a": "無線綴じ書籍は1冊￥644〜、上製本（ハードカバー）は1冊￥1,932〜で、いずれも100冊から製造します。無線綴じは48〜400ページの論文集・報告書に、上製本は卒業記念アルバムや記念誌におすすめです。ISO 9001認証工場で製造し、DHL Expressで日本へ2-4営業日でお届けします。"
+    },
+    {
+      "q": "無線綴じの小ロット製本には対応していますか？",
+      "a": "対応しています。中綴じ・無線綴じ・上製本すべて100冊からのご注文で、教材やテキストの小ロット製本にも対応します。ページ数と部数をいただければ30秒AI見積もりで概算価格と納期をご提示し、大口部数は段階的に単価が下がります。"
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "100冊〜",
+      "label": "中綴じ・無線綴じ・上製本すべて小ロット発注に対応"
+    },
+    {
+      "stat": "￥258〜",
+      "label": "中綴じ冊子の1冊あたり目安価格"
+    },
+    {
+      "stat": "ISO 9001",
+      "label": "認証工場の品質管理のもと、教材・製本を一貫製造"
+    },
+    {
+      "stat": "2-4営業日",
+      "label": "DHL Expressによる日本への配送日数目安"
+    }
+  ],
+  "comparisonTable": {
+    "title": "教材・テキスト・冊子の製本タイプ × 仕様 × シーン別 比較表",
+    "columns": [
+      "製本タイプ",
+      "主な仕様",
+      "おすすめシーン",
+      "最小ロット／目安価格"
+    ],
+    "rows": [
+      [
+        "中綴じ冊子（8-64ページ）",
+        "128g-157gコート紙または書籍用紙・四色印刷・180°フラット開き",
+        "テキスト・ワークブック・プログラム・カタログ",
+        "100冊〜／1冊￥258〜"
+      ],
+      [
+        "無線綴じ書籍（48-400ページ）",
+        "157g-200gコート紙・平らで丈夫な背・書名・バーコード・ISBN印刷可",
+        "論文集・年次報告書・CSRレポート・配布資料",
+        "100冊〜／1冊￥644〜"
+      ],
+      [
+        "上製本（ハードカバー）",
+        "2.5mm厚のボード表紙・箔押しタイトル・リボン栞対応",
+        "卒業記念アルバム・記念誌・保存版テキスト",
+        "100冊〜／1冊￥1,932〜"
+      ],
+      [
+        "カタログ・図録",
+        "157g-200gコート紙またはマット紙・表紙はマット／光沢フィルム、箔押しも可",
+        "作品集・展覧会図録・製品カタログ",
+        "100冊〜／1冊￥644〜"
+      ],
+      [
+        "スパイラルノート（リング綴じ）",
+        "80g-100g上質紙・YOリング／スパイラル綴じ・180°平開き",
+        "研修教材・企業ノート・学校記念品",
+        "100冊〜／1冊￥386〜"
+      ]
+    ],
+    "note": "目安価格は中綴じ冊子1冊￥258〜／無線綴じ書籍1冊￥644〜／上製本1冊￥1,932〜／スパイラルノート1冊￥386〜。最終価格・納期はページ数・紙質・部数により変わるため、お見積もり制です。"
+  },
+  "orderFlow": {
+    "title": "教材・冊子印刷 6ステップ",
+    "steps": [
+      {
+        "title": "お見積もり",
+        "desc": "WhatsAppでページ数・部数・製本方法をご相談ください。100冊からの小ロットに対応し、30秒AI見積もりで概算価格と納期をご提示します"
+      },
+      {
+        "title": "データ入稿",
+        "desc": "印刷データをご入稿いただき、スタッフがページ数と製本仕様を確認します"
+      },
+      {
+        "title": "校了確認",
+        "desc": "内容と色指定をご確認いただき、校了のご承認後に印刷へ進みます"
+      },
+      {
+        "title": "印刷",
+        "desc": "FSC認証紙とISO 9001品質管理のもとで四色印刷。本文・表紙の仕上がりを検品してから製本工程へ進みます"
+      },
+      {
+        "title": "製本（無線綴じ／上製本）",
+        "desc": "ページ数と用途に合わせて中綴じ・無線綴じ・上製本で製本し、丁合いや表紙の仕上がりを検品します"
+      },
+      {
+        "title": "配送・納品",
+        "desc": "DHL Expressで日本へ2-4営業日でお届けします。大口部数は分割出荷にも対応できます"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "教材・テキスト見積もり",
+      "message": "教材・テキストの印刷見積もりをお願いします。商品【テキスト（A4・100ページ）】／部数【100部】／製本【無線綴じ】。1冊あたりの単価と納期を教えてください。"
+    },
+    {
+      "label": "製本仕様相談",
+      "message": "【卒業記念アルバム】の製本仕様を相談したいです。部数【100冊】、ページ数【64ページ】を想定しています。無線綴じと上製本（ハードカバー）それぞれの価格とおすすめ仕様を教えてください。"
+    },
+    {
+      "label": "小ロット急ぎ相談",
+      "message": "講習会用テキストを急ぎで作りたいです。商品【A5・24ページの中綴じ冊子】／部数【100部】。最短納期と費用を教えてください。"
+    }
+  ],
+  "newFaqs": [
+    {
+      "q": "教材・テキスト印刷の最小部数と目安価格を教えてください",
+      "a": "中綴じ冊子・無線綴じ書籍・上製本はいずれも100冊から承ります。目安価格は中綴じ冊子1冊￥258〜、無線綴じ1冊￥644〜、上製本1冊￥1,932〜です。ページ数・紙質・部数により単価が変わり、大口ほど単価が下がります。最終価格はお見積もり制となります。"
+    },
+    {
+      "q": "無線綴じと中綴じはどう使い分ければよいですか？",
+      "a": "8〜64ページ程度の薄い冊子は、180°フラット開きの中綴じが読みやすく経済的です。48ページ以上の論文集・報告書・配布資料は、背が平らで丈夫な無線綴じがおすすめで、書名・バーコード・ISBNの印刷にも対応します。ページ数と予算に応じて、最適な製本方法をご提案します。"
+    },
+    {
+      "q": "上製本にはどんな加工を選べますか？",
+      "a": "2.5mm厚のボード表紙にクロスまたは紙を装丁し、箔押しタイトルやリボン栞を追加できます。卒業記念アルバム・記念誌・保存版テキストに人気の仕様です。上製本は100冊から、1冊￥1,932〜で製造します。"
+    },
+    {
+      "q": "学校や塾の発注でも小ロットから注文できますか？",
+      "a": "はい。中綴じ・無線綴じ・上製本とも100冊から承りますので、講習会テキストや配布資料などの小ロットにも対応します。大口部数は段階的な数量割引が適用され、学校・塾・企業の定期発注にも対応します。ISO 9001認証工場で製造し、DHL Expressで日本へ2-4営業日でお届けします。"
+    }
+  ]
+};
+
 export function getConversionBlocks(
   categorySlug: string,
   locale: string
