@@ -1467,6 +1467,828 @@ categoryConversionBlocks['calendars:zh-hk'] = {
   ]
 };
 
+
+// === W2 wave2 内容包注入 (2026-09-05) ===
+
+categoryConversionBlocks['posters:zh-hk'] = {
+  "category": "posters",
+  "locale": "zh-hk",
+  "title": "海報印刷｜印海報 A0-A3 大圖輸出・戶外防水 PVC 100 張起｜智印港",
+  "metaDescription": "香港海報印刷｜印海報 1 張起印，A2 128g銅版紙 HK$6-9/張、A1 HK$10-16/張，500 張減 30%，1,000 張以上轉柯式再降 40%。室內銅版紙/PP，戶外防水 PVC 抗 UV，MTR 燈箱 12-sheet 大圖輸出都做，最快即日交貨，DHL 全球 2-4 天，WhatsApp 報價。",
+  "quickAnswers": [
+    {
+      "q": "海報印刷幾多錢一張？",
+      "a": "128g 銅版紙 A2 約 HK$6-9/張、A1 約 HK$10-16/張（100 張批量價）；500 張再減 30%，1,000 張以上轉柯式再降約 40%。大圖輸出 1 張都印，實際價錢按尺寸、材質、數量報價。"
+    },
+    {
+      "q": "海報有咩 size 同材質揀？",
+      "a": "標準 A2（420×594mm）、A1（594×841mm）、A0（841×1189mm），訂製最大闊 1.5 米、長度不限。室內揀銅版紙或 PP 合成紙，戶外必須 PVC／帆布／網布，防水抗 UV。"
+    },
+    {
+      "q": "印海報最快幾日有貨？",
+      "a": "大圖輸出 1-5 張最快即日交貨，批量標準 1-2 日；柯式批量 3-5 個工作天，DHL 全球 2-4 天到。加裱板額外 1 日，趕單可以 WhatsApp 問下加急安排。"
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "4820+",
+      "label": "香港累計訂單，展覽活動、零售餐飲都幫襯"
+    },
+    {
+      "stat": "1 張起印",
+      "label": "大圖輸出散張都接，10 張起有批量優惠"
+    },
+    {
+      "stat": "2-3 年",
+      "label": "防 UV PVC 戶外海報日曬雨淋唔褪色"
+    },
+    {
+      "stat": "95%+",
+      "label": "Pantone 專色匹配，品牌色一致有保證"
+    }
+  ],
+  "comparisonTable": {
+    "title": "香港海報印刷材質 × 工藝 × 適用場景比較",
+    "columns": [
+      "海報類型",
+      "材質/工藝",
+      "適用場景",
+      "起訂量"
+    ],
+    "rows": [
+      [
+        "銅版紙海報（128g）",
+        "全彩 CMYK 印刷，A2 約 HK$6-9/張（100 張價）",
+        "展覽會、活動宣傳、店內裝飾，室內短期 3-6 個月",
+        "1 張起印，100 張起批量價"
+      ],
+      [
+        "PP 合成紙海報（200g）",
+        "防水不反光、色彩還原佳，A2 約 HK$12-18/張",
+        "燈箱、海報架、室內長期展示 1-2 年",
+        "1 張起印，10 張起批量優惠"
+      ],
+      [
+        "PVC 海報（440g）",
+        "完全防水、抗 UV 耐磨，A2 約 HK$20-35/張",
+        "戶外廣告、建築圍板、工地標示，2-3 年不褪色",
+        "1 張起印（大圖輸出）"
+      ],
+      [
+        "帆布／網布海報",
+        "帆布藝術質感可捲收；網布透風抗風輕量",
+        "藝術展、攝影展；大型戶外、體育場、演唱會",
+        "1 張起印（大圖輸出）"
+      ]
+    ],
+    "note": "仲有背膠（可移除／永久）、KT 板／Foam 板／亞加力裱板、打孔穿繩、燙金、局部 UV、夜光等加工。A2 價以 100 張批量計，最終價錢交期以 WhatsApp 報價為準，其他海報與印刷疑問歡迎逐單傾。"
+  },
+  "orderFlow": {
+    "title": "6 步海報印刷流程",
+    "steps": [
+      {
+        "title": "WhatsApp 諮詢",
+        "desc": "話我哋知尺寸（A2/A1/A0 或訂製）、數量、室內定戶外"
+      },
+      {
+        "title": "報價確認",
+        "desc": "按材質同數量出價，列明交期同裱板等額外費用"
+      },
+      {
+        "title": "上傳設計檔",
+        "desc": "PDF/X-1a 或 AI 檔，CMYK 150dpi（A0 大圖 72-100dpi 已夠）"
+      },
+      {
+        "title": "印前檢查",
+        "desc": "逐檔案核對解析度、3-5mm 出血同色彩模式，Pantone 匹配 95%+"
+      },
+      {
+        "title": "落單付款",
+        "desc": "確認報價後付款開工，急件可加 30% 費用趕 24-48 小時"
+      },
+      {
+        "title": "交貨收貨",
+        "desc": "大圖最快即日、批量 1-2 日；捲筒順豐寄送或貨車直送場地"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "報價查詢",
+      "message": "你好，我想印海報，尺寸【A2】，材質【128g 銅版紙】，數量【200】張，室內用，麻煩報價同交期，多謝！"
+    },
+    {
+      "label": "戶外海報加急",
+      "message": "你好，我哋【開張/活動】趕住用戶外海報，尺寸【A1】，PVC 防水材質，數量【50】張，想問下最快幾日有貨同加急費用，謝謝！"
+    },
+    {
+      "label": "燈箱/裱板查詢",
+      "message": "你好，想查詢【MTR 燈箱 12-sheet 海報】，尺寸【3048×1524mm】，需要【KT 板裱板】，檔案係 PDF，麻煩報價同交期，多謝！"
+    }
+  ],
+  "newFaqs": [
+    {
+      "q": "印海報一張幾多錢？",
+      "a": "大圖輸出 1 張都印，散張按尺寸同材質計價；批量價參考：128g 銅版紙 A2 100 張約 HK$6-9/張、A1 約 HK$10-16/張，1,000 張以上轉柯式再降約 40%。實際以 WhatsApp 報價為準。"
+    },
+    {
+      "q": "戶外海報用邊種材質先唔怕日曬雨淋？",
+      "a": "440g PVC 硬片完全防水抗 UV，戶外 2-3 年不褪色；帆布約 3-5 年；大型戶外或建築外牆可用網布，透風抗風更穩陣。"
+    },
+    {
+      "q": "海報 size 有咩標準？可唔可以訂製？",
+      "a": "標準 A2（420×594mm）、A1（594×841mm）、A0（841×1189mm），支援完全訂製，最大闊 1.5 米、長度不限。近看（A2）建議 150dpi，遠看（A0）72-100dpi 已夠清晰。"
+    },
+    {
+      "q": "港鐵燈箱海報 12-sheet 印要幾耐？",
+      "a": "12-sheet（3048×1524mm）大圖輸出 3-5 個工作天，急件可加 30% 費用趕 24-48 小時；印前請確認 PDF/X-1a、150dpi CMYK 同 30mm 出血。"
+    }
+  ]
+};
+
+categoryConversionBlocks['paper-bags:en'] = {
+  "category": "paper-bags",
+  "locale": "en",
+  "title": "Custom Paper Bags | 100 MOQ, Free Dieline Design | Kraft & Foil Gift Bag Printing | ZprintPro",
+  "metaDescription": "Custom paper bags from 100 pcs: kraft from US$0.19, white card from US$0.23, foil gift bags US$0.45. Free dieline design, 3-5 day production, DHL worldwide.",
+  "quickAnswers": [
+    {
+      "q": "How much do custom paper bags cost per piece?",
+      "a": "Kraft paper bags start at US$0.19 each (200gsm, offset runs of 1,000+), white card bags from US$0.23 each (digital printing from 100 pcs), and pearl foil gift bags from US$0.45 each. Orders of 5,000+ pcs unlock 15-25% tier discounts."
+    },
+    {
+      "q": "What is the minimum order and turnaround for printed paper bags?",
+      "a": "MOQ is 100 pcs for digital printing; 1,000+ pcs is recommended for offset pricing. Digital production takes 3-5 days, offset 5-7 days, rush 2-3 days, with DHL Express delivery worldwide in 2-4 days."
+    },
+    {
+      "q": "What sizes and materials are available for paper bags?",
+      "a": "20+ materials including 200gsm kraft, 250gsm white card, 300gsm black card, pearl and eco recycled paper. Standard sizes run from small 200×250×80 mm to extra large 450×550×150 mm, and fully custom dimensions are welcome."
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "4820+",
+      "label": "Orders delivered worldwide"
+    },
+    {
+      "stat": "100 pcs",
+      "label": "Low minimum for digital printing"
+    },
+    {
+      "stat": "From US$0.19",
+      "label": "200gsm kraft bag, offset 1,000+ pcs"
+    },
+    {
+      "stat": "5 handle styles",
+      "label": "Twisted rope, ribbon, die-cut, satin, cotton"
+    }
+  ],
+  "comparisonTable": {
+    "title": "Printed Paper Bag Options Compared",
+    "columns": [
+      "Criteria",
+      "Traditional Printer",
+      "Online Self-Service",
+      "ZprintPro Custom Paper Bags"
+    ],
+    "rows": [
+      [
+        "Minimum Order",
+        "500 - 1,000 pcs",
+        "200 - 500 pcs",
+        "100 pcs digital, 1,000+ offset"
+      ],
+      [
+        "Entry Price",
+        "Quote-based, plate fees common",
+        "Fixed sizes only",
+        "Kraft from US$0.19, white card from US$0.23"
+      ],
+      [
+        "Lead Time",
+        "15 - 30 working days",
+        "7 - 20 working days",
+        "3-5 days digital, rush 2-3 days"
+      ],
+      [
+        "Design Support",
+        "Paid dieline and design fees",
+        "Templates only",
+        "Free dieline design + free sample confirmation"
+      ]
+    ],
+    "note": "Comparison based on standard kraft and white card shopping bags in common sizes. Final pricing varies by quantity, paper weight, handle, and finishing options."
+  },
+  "orderFlow": {
+    "title": "Custom Paper Bag Ordering in 6 Steps",
+    "steps": [
+      {
+        "title": "Instant AI Quote",
+        "desc": "Send bag size, quantity and material — priced in 30 seconds"
+      },
+      {
+        "title": "Free Dieline Design",
+        "desc": "Our designers prep the dieline; AI/PDF files checked at 300dpi, CMYK, 3mm bleed"
+      },
+      {
+        "title": "Free Sample Confirmation",
+        "desc": "Approve a sample to verify color, paper and handle before mass production"
+      },
+      {
+        "title": "Bulk Production",
+        "desc": "3-5 days digital or 5-7 days offset with full QC checkpoints"
+      },
+      {
+        "title": "Pre-Shipment Inspection",
+        "desc": "Random print and load-capacity checks before dispatch"
+      },
+      {
+        "title": "DHL Express Delivery",
+        "desc": "2-4 days to the US, UK, AU and worldwide; orders over $99 ship free"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "Get a Quote",
+      "message": "Hi, I'd like a quote for [bag type: kraft / white card / pearl] [size: W x H x D mm] [quantity: pcs] with [handle: twisted rope / ribbon / die-cut]. Please share pricing and lead time, thanks!"
+    },
+    {
+      "label": "Rush Order",
+      "message": "Hi, I need printed paper bags for [event date: ____]. Quantity [pcs], size [mm], handle [type]. What is the fastest turnaround and any rush fee, thanks!"
+    },
+    {
+      "label": "Repeat Order",
+      "message": "Hi, I'd like to reorder our previous [bag type] in [size: mm] x [quantity: pcs], same artwork and handle as last time. Please confirm pricing and the earliest ship date, thanks!"
+    }
+  ],
+  "newFaqs": [
+    {
+      "q": "What are the paper bag print file requirements?",
+      "a": "Send AI or PDF artwork with dieline design at 300dpi in CMYK, reserving 3mm bleed and glue area. No dieline yet? Our designers provide free dieline design and prepress checks before printing."
+    },
+    {
+      "q": "Which paper material is most cost-effective for kraft paper bags?",
+      "a": "200gsm kraft is the most economical at US$0.19/pc for offset runs of 1,000+ — ideal for coffee shops, eco brands and handmade goods. White card (250gsm) at US$0.23/pc suits fashion and beauty retail, while pearl paper with foil stamping (US$0.45/pc) is the wedding favor upgrade."
+    },
+    {
+      "q": "How much weight can custom paper bags hold?",
+      "a": "Standard bags carry 3-5kg; reinforced builds with bottom board hold 8-10kg, suitable for bottles and glassware. Load testing is recommended for heavy retail products before large runs."
+    },
+    {
+      "q": "Can you ship printed paper bags internationally?",
+      "a": "Yes. DHL Express and FedEx deliver in 2-4 business days to the US, UK, Australia and worldwide. Orders over $99 ship free, and split shipments to multiple store locations are available on request."
+    }
+  ]
+};
+
+categoryConversionBlocks['flyers:en'] = {
+  "category": "flyers",
+  "locale": "en",
+  "title": "Flyer Printing | Custom Leaflets A4/A5/A6/DL From 100 Pcs, Same-Day Rush | ZprintPro",
+  "metaDescription": "Flyer & leaflet printing from 100 pcs. A5 single-sided from US$0.045 each, double-sided US$0.06, offset from US$0.03. Same-day rush and DHL worldwide delivery.",
+  "quickAnswers": [
+    {
+      "q": "How much does flyer printing cost?",
+      "a": "It depends on size, paper and quantity. A5 single-sided on 128gsm coated paper starts at US$0.045 each, double-sided from US$0.06, and offset runs of 1,000+ pcs drop to as low as US$0.03 per piece. Final pricing is quote-based."
+    },
+    {
+      "q": "What flyer sizes are available?",
+      "a": "Six standard formats: A6 (105x148mm), A5 (148x210mm), A4 (210x297mm), A3 (297x420mm), DL (99x210mm) and folded leaflets. Fully custom sizes are also available on request."
+    },
+    {
+      "q": "How fast can I get my flyers?",
+      "a": "Digital orders of 100-500 pcs can be printed same day, while standard offset turnaround is 2-3 business days. Same-day rush is available for a +50% fee, and DHL delivers worldwide in 2-4 days."
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "4820+",
+      "label": "Orders delivered worldwide - restaurants, retail and brands"
+    },
+    {
+      "stat": "100 pcs",
+      "label": "Low minimum order, ideal for test campaigns"
+    },
+    {
+      "stat": "2-3 days",
+      "label": "Standard turnaround with same-day rush available"
+    },
+    {
+      "stat": "6 formats",
+      "label": "A6 to A3, DL and folded leaflets in one place"
+    }
+  ],
+  "comparisonTable": {
+    "title": "Flyer Types x Paper & Finish x Use Case x MOQ",
+    "columns": [
+      "Flyer Type",
+      "Paper & Finish",
+      "Best Use Case",
+      "Minimum Order"
+    ],
+    "rows": [
+      [
+        "A5 flyer (148x210mm)",
+        "128gsm-157gsm art paper, gloss or matte lamination",
+        "Street handouts, grand openings, mailbox drops",
+        "From 100 pcs"
+      ],
+      [
+        "A4 flyer (210x297mm)",
+        "157gsm-200gsm art paper, optional spot UV",
+        "Takeaway menus, product catalogs, main event flyer",
+        "From 100 pcs"
+      ],
+      [
+        "A6 flyer (105x148mm)",
+        "128gsm-157gsm coated paper",
+        "Coupons, gift cards, counter drop cards",
+        "From 100 pcs"
+      ],
+      [
+        "Folded leaflet (half-fold / tri-fold)",
+        "200gsm-250gsm card, matte lamination",
+        "Price lists, product intros, event programs",
+        "From 100 pcs"
+      ]
+    ],
+    "note": "Paper and finishing can be combined freely. Final pricing and lead time are confirmed by quote."
+  },
+  "orderFlow": {
+    "title": "6-Step Flyer Ordering Flow",
+    "steps": [
+      {
+        "title": "Send Your Specs",
+        "desc": "Share size, quantity, paper and deadline on WhatsApp"
+      },
+      {
+        "title": "Quote Confirmation",
+        "desc": "We reply promptly with pricing and lead time"
+      },
+      {
+        "title": "Upload Artwork",
+        "desc": "AI / PDF / InDesign files accepted, or ask for design help"
+      },
+      {
+        "title": "Proof Sign-Off",
+        "desc": "Review content and colors before anything goes to press"
+      },
+      {
+        "title": "Arrange Payment",
+        "desc": "Production starts as soon as payment is confirmed"
+      },
+      {
+        "title": "Delivery",
+        "desc": "DHL / FedEx worldwide in 2-4 business days"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "Get a Quote",
+      "message": "Hi, I'd like a quote for [size: A5] flyers, around [quantity: 1000] pcs, on [paper: 157gsm art paper with matte lamination]. Please share pricing and lead time, thanks!"
+    },
+    {
+      "label": "Rush Order Inquiry",
+      "message": "Hi, I need [size: A4] flyers for an [occasion: grand opening] - [quantity: 500] pcs. What's the fastest turnaround and the rush fee? Thanks!"
+    },
+    {
+      "label": "Repeat Order",
+      "message": "Hi, I printed flyers with you before and would like to reorder [size: A5], [quantity: 2000] pcs, same design as last time. Please confirm the quote, thanks!"
+    }
+  ],
+  "newFaqs": [
+    {
+      "q": "What's the minimum order for flyer printing?",
+      "a": "100 pcs with digital printing - great for small campaigns and targeted distribution. For 1,000 pcs and up, offset printing brings the unit price down to as low as US$0.03 per piece."
+    },
+    {
+      "q": "Can flyers be printed double-sided or folded?",
+      "a": "Yes. Double-sided flyers double your information capacity, and folding options include half-fold, tri-fold, Z-fold and gate-fold. Finishes like gloss or matte lamination, spot UV and foil stamping are also available."
+    },
+    {
+      "q": "I don't have a design file - can you design the flyer for me?",
+      "a": "Yes. Start from 50+ free industry flyer templates, or share your text and images for custom design help. Design fees depend on complexity, so tell us your needs and we'll quote first."
+    },
+    {
+      "q": "Do you ship flyers internationally?",
+      "a": "Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days, and bulk quantities can be arranged for warehouse or office delivery."
+    }
+  ]
+};
+
+categoryConversionBlocks['calendars:en'] = {
+  "category": "calendars",
+  "locale": "en",
+  "title": "Custom Calendar Printing | 2027 Wall & Desk Calendars from 50 pcs｜ZprintPro",
+  "metaDescription": "Custom calendar printing from 50 pcs: desk, wall, card & planner formats, foil stamping, 3-5 day digital turnaround, DHL worldwide. 2027 pre-orders open.",
+  "quickAnswers": [
+    {
+      "q": "How much does custom calendar printing cost?",
+      "a": "Desk, wall, and card calendars start at US$3.60 per piece for 100-copy orders, and 500+ offset runs bring the unit price down further. Final pricing is quote-based - it varies with size, paper, and finishing such as foil stamping - and a free quote is one WhatsApp message away."
+    },
+    {
+      "q": "How long does calendar printing take, and when should I order 2027 calendars?",
+      "a": "Standard turnaround is 3-5 days for digital printing and 5-7 days for offset, plus 2-4 business days worldwide via DHL Express / FedEx. For 2027 corporate calendars, order 2-3 months ahead: the August-October ordering window feeds September-December delivery, ahead of the November-December factory rush."
+    },
+    {
+      "q": "What types of custom calendars can I print?",
+      "a": "Desk calendars (easel), wall calendars in A3/A2, postcard-size calendar cards, planner calendars, and magnetic fridge calendars. Standard sizes run from 150×180mm desk formats up to 420×594mm A2 wall versions - all fully customizable in paper, binding, and finish."
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "4820+",
+      "label": "Orders delivered to global B2B and corporate buyers"
+    },
+    {
+      "stat": "50 pcs",
+      "label": "Digital printing minimum for low-risk 2027 test runs"
+    },
+    {
+      "stat": "3-5 days",
+      "label": "Standard digital turnaround before the peak-season crunch"
+    },
+    {
+      "stat": "365 days",
+      "label": "Of desk-and-wall brand exposure, no renewal fees"
+    }
+  ],
+  "comparisonTable": {
+    "title": "Custom Calendar Types Compared: Format × Finish × Use Case × MOQ",
+    "columns": [
+      "Calendar Type",
+      "Binding & Finish",
+      "Typical Use Case",
+      "MOQ"
+    ],
+    "rows": [
+      [
+        "Desk Calendar (Easel) - 150×180 / 200×230mm",
+        "Foil-stamped year, spot UV, metal ring binding, 2mm thickened base",
+        "Office desks, reception counters, corporate gifts",
+        "From 50 pcs (digital)"
+      ],
+      [
+        "Wall Calendar - A3 (297×420mm) / A2 (420×594mm)",
+        "Hole punch & hanging string, waterproof lamination, foil accents",
+        "Homes, offices, schools, restaurants",
+        "From 50 pcs (digital)"
+      ],
+      [
+        "Calendar Card - 100×150mm postcard size",
+        "Double-sided color printing, lamination",
+        "Mail giveaways, event handouts, trade shows, promos",
+        "From 50 pcs (digital)"
+      ],
+      [
+        "Planner Calendar",
+        "Ring binding, variable data printing (unique names or branch info per copy)",
+        "Employee benefits, client gifts, school souvenirs, VIP gifts",
+        "From 50 pcs (digital)"
+      ]
+    ],
+    "note": "Magnetic fridge calendars are also available. Paper: 200g-300gsm art or matte stock with 1-2mm greyboard bases. Offset runs at 500+ pcs are more economical for corporate bulk; foil and specialty finishes are quote-based via WhatsApp."
+  },
+  "orderFlow": {
+    "title": "Custom Calendar Printing: 6-Step Ordering Flow",
+    "steps": [
+      {
+        "title": "WhatsApp Inquiry",
+        "desc": "Share calendar type (desk / wall / card / planner), quantity, size, and budget"
+      },
+      {
+        "title": "Quote & Print Method",
+        "desc": "Digital or offset options side by side, with lead times and finishing costs spelled out"
+      },
+      {
+        "title": "Design & Templates",
+        "desc": "Free 12-month templates with holiday markings - your logo and product photos are enough to start"
+      },
+      {
+        "title": "Proof Approval",
+        "desc": "Verify colors, paper, and monthly page layouts before production begins"
+      },
+      {
+        "title": "Order Confirmation",
+        "desc": "Lock quantities and specs; 2027 early-bird pre-orders secure discount pricing before the rush"
+      },
+      {
+        "title": "Production & Delivery",
+        "desc": "Digital in 3-5 days or offset in 5-7, then 2-4 business days worldwide via DHL / FedEx"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "Get a Quote",
+      "message": "Hi, I'd like a quote for [calendar type: desk / wall / card] calendars, size [____ mm], quantity [____ pcs], with [finishing: foil / spot UV / none]. Please share pricing and lead time, thanks!"
+    },
+    {
+      "label": "2027 Corporate Pre-Order",
+      "message": "Hi, we're planning [2027 corporate gift calendars], type [desk / wall / planner], quantity [____ pcs], delivery by [month: ____]. How do we apply the early-bird discount and free design, thanks!"
+    },
+    {
+      "label": "Rush / Peak-Season Order",
+      "message": "Hi, I need [____ pcs] [calendar type] calendars delivered before [____]. What's the shortest turnaround, and is rush production available, thanks!"
+    }
+  ],
+  "newFaqs": [
+    {
+      "q": "When should I order 2027 calendars?",
+      "a": "Work backward from your distribution date and order 2-3 months before calendars need to be in hand. The seasonal rhythm runs August-October ordering into September-December delivery, with September-November concentrating roughly 60% of annual calendar demand. Ordering before the November-December peak helps lock factory schedules and paper pricing, and 2027 pre-orders placed in the early-bird window also earn 10% off with free design support."
+    },
+    {
+      "q": "How do I keep custom calendar costs down?",
+      "a": "Three practical levers: move to offset printing at 500+ copies where unit prices drop, favor compact formats such as calendar cards or desk easels over full A2 wall spreads, and order inside the 2027 early-bird window for 10% off plus free design. Foil stamping, spot UV, and variable-data personalization are quoted as add-ons."
+    },
+    {
+      "q": "I don't have print-ready artwork - can you still produce my calendar?",
+      "a": "Yes. Start from our free 12-month templates with holiday markings - your logo and product photos are enough for our team to lay out every monthly page. Corporate orders can integrate brand colors and product imagery with designer support. Camera-ready files follow AI / PDF / InDesign, 300dpi, CMYK, with 3mm bleed."
+    },
+    {
+      "q": "Do you ship custom calendars internationally?",
+      "a": "Yes - DHL Express and FedEx deliver worldwide in 2-4 business days, and bulk corporate orders can be arranged for warehouse or office delivery. Peak-season production slots fill quickly between September and November, so confirm quantities and delivery dates early."
+    }
+  ]
+};
+
+
+// === W2 wave2 内容包注入 (2026-09-05) ===
+
+categoryConversionBlocks['flyers:ja'] = {
+  "category": "flyers",
+  "locale": "ja",
+  "title": "チラシ印刷 | フライヤー印刷・チラシ作成 | A6〜A3 100枚から 即日特急対応｜ZprintPro",
+  "metaDescription": "チラシ印刷は100枚から小ロット対応。A5片面128gコート紙が1枚¥6〜、両面は¥8〜。A6〜A3・DL・三つ折りに対応し、両面印刷・スポットUV・箔押しも選べます。デジタル100〜500枚は即日納品可、オフセットは2-3営業日。AI即時見積もり30秒、DHL／FedExで東京・大阪など日本全国へ2-4日配送。",
+  "quickAnswers": [
+    {
+      "q": "チラシ印刷は1枚いくらからですか？",
+      "a": "A5片面128gコート紙で1枚¥6〜、両面は1枚¥8〜（両面は+¥1.5／枚）です。枚数が増えるほど単価が下がり、1,000枚以上はオフセット印刷がお得。最終価格はサイズ・紙・数量により変わるため、まずはお見積もりをどうぞ。"
+    },
+    {
+      "q": "チラシの最小発注数（MOQ）は何枚からですか？",
+      "a": "デジタル印刷は100枚から承ります。新店開業やイベントの試し配布にも十分な枚数です。1,000枚以上はオフセット印刷に切り替えると単価を抑えられ、大口配布に向いています。"
+    },
+    {
+      "q": "チラシはどのくらい早く受け取れますか？",
+      "a": "デジタル印刷は100〜500枚で即日納品が可能です。オフセット印刷は標準2-3営業日で仕上がります。お急ぎの場合は特急対応（+50%料金）もございますので、まずはご相談ください。"
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "¥6〜",
+      "label": "A5片面128gコート紙の1枚あたり目安価格"
+    },
+    {
+      "stat": "100枚〜",
+      "label": "デジタル印刷の最小ロット。新店開業・イベント配布にも"
+    },
+    {
+      "stat": "即日対応",
+      "label": "デジタル印刷100〜500枚。特急は+50%料金"
+    },
+    {
+      "stat": "+22%",
+      "label": "2026年上半期のチラシ問い合わせ伸び率"
+    }
+  ],
+  "comparisonTable": {
+    "title": "チラシの種類 × 紙・加工 × シーン別 比較表",
+    "columns": [
+      "チラシ種類",
+      "紙・加工",
+      "おすすめシーン",
+      "最小ロット"
+    ],
+    "rows": [
+      [
+        "A4チラシ（210×297mm）",
+        "128g／157gコート紙、マット／グロスラミネート可",
+        "製品紹介・企業案内・イベントのメインチラシ",
+        "100枚〜"
+      ],
+      [
+        "A5チラシ（148×210mm）",
+        "128gコート紙が定番（片面1枚¥6〜）",
+        "店舗配布・ポスト投函・開業PR",
+        "100枚〜"
+      ],
+      [
+        "A6・DLチラシ（105×148／99×210mm）",
+        "128g／157gコート紙、ナンバリング可",
+        "クーポン・街頭配布など小サイズの大量配布",
+        "100枚〜"
+      ],
+      [
+        "折りチラシ（三つ折り・対折・Z折り）",
+        "200gマット紙／250gカード、スポットUV・箔押し",
+        "メニュー・製品カタログ・案内冊子",
+        "100枚〜"
+      ]
+    ],
+    "note": "サイズ・紙・加工は自由に組み合わせ可能。1,000枚以上はオフセット印刷がお得です。最終価格・納期はお見積もり制です。"
+  },
+  "orderFlow": {
+    "title": "チラシ印刷 6ステップ",
+    "steps": [
+      {
+        "title": "お問い合わせ",
+        "desc": "WhatsAppでサイズ・数量・片面／両面・紙のご要望をお知らせください"
+      },
+      {
+        "title": "AI即時見積もり",
+        "desc": "30秒で概算価格と納期をご提示します"
+      },
+      {
+        "title": "デザイン入稿",
+        "desc": "AI／PDFデータの入稿、または50種類以上の無料業界テンプレートをご利用いただけます"
+      },
+      {
+        "title": "サンプル確認",
+        "desc": "無料サンプルで色・紙質・折りの仕上がりをチェック（サンプル当日対応）"
+      },
+      {
+        "title": "製造・品質検査",
+        "desc": "デジタル即日／オフセット2-3営業日で製造し、出荷前に検品します"
+      },
+      {
+        "title": "配送・納品",
+        "desc": "DHL／FedExで東京・大阪・名古屋など日本全国へ2-4日で到着します"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "見積もり依頼",
+      "message": "チラシ印刷の見積もりをお願いします。サイズ【A5 148×210mm】／片面・両面【両面】／数量【1,000枚】／紙【128gコート紙】。1枚あたりの単価と納期を教えてください。"
+    },
+    {
+      "label": "納期・特急相談",
+      "message": "【開業イベント】でチラシが急ぎです。サイズ【A6 105×148mm】／数量【300枚】。即日対応が可能か、特急料金とあわせて教えてください。"
+    },
+    {
+      "label": "折りチラシ相談",
+      "message": "【三つ折り】のメニューチラシを検討しています。紙【200gマット】／数量【500枚】。折り加工込みの見積もりと納期をお願いします。"
+    }
+  ],
+  "newFaqs": [
+    {
+      "q": "チラシの入稿ファイルはどの形式に対応していますか？",
+      "a": "AI／PDF／InDesign、300dpi、CMYKカラー、3mmの塗り足し（bleed）をご用意ください。入稿前に印刷チームが解像度と裁ち落とし線をチェックします。"
+    },
+    {
+      "q": "三つ折りや対折などの折り加工は可能ですか？",
+      "a": "はい。対折・三つ折り・Z折りなど多様な折り加工に対応しています。折りチラシは情報量が3〜5倍に増え、メニューや製品カタログで人気の形式です。"
+    },
+    {
+      "q": "シリアル番号やQRコードの印刷はできますか？",
+      "a": "はい。可変データ印刷で1枚ずつ異なるシリアル番号・バーコード・QRコードの印字が可能です。抽選券やクーポン、イベント入場券にご活用いただけます。"
+    },
+    {
+      "q": "東京や大阪など日本全国への配送はできますか？",
+      "a": "はい。DHL／FedExで日本全国へ2-4日でお届けします。大口注文は倉庫やオフィスへの直接納品も調整可能です。まずはお見積もりをご依頼ください。"
+    }
+  ]
+};
+
+categoryConversionBlocks['menus:zh-hk'] = {
+  "category": "menus",
+  "locale": "zh-hk",
+  "title": "餐牌印刷 | 香港菜單印刷 | PVC膠片/過膠/精裝餐牌·酒水牌 防水防油 100張起｜智印港",
+  "metaDescription": "香港餐牌印刷訂製：PVC膠片餐牌、過膠餐牌、精裝菜單、酒水牌、一次性餐牌五類齊全，防水防油易清潔。一次性HK$0.22起/張、過膠HK$5起/張、精裝HK$28起/本，100張起訂，標準2-3個工作天交貨，急單可傾。WhatsApp免費報價，茶餐廳、酒樓、咖啡店、外賣店都啱用，菜單印刷支持中英雙語對照排版。",
+  "quickAnswers": [
+    {
+      "q": "餐牌印刷幾多錢？",
+      "a": "視乎材質同數量：一次性餐牌 HK$0.22 起/張、過膠餐牌 HK$5 起/張、PVC 膠片餐牌 HK$8 起/張、酒水牌 HK$12 起/張、精裝餐牌 HK$28 起/本，全部 100 張起訂，實際價錢以報價為準。"
+    },
+    {
+      "q": "咩餐牌先至防水耐用？",
+      "a": "PVC 膠片餐牌（0.5–1.0mm）同過膠餐牌都防水防油，湯汁油漬用濕布一抹就淨，啱茶餐廳、火鍋店呢類多油煙場景；想檔次高啲可以揀精裝餐牌配硬殼封面。"
+    },
+    {
+      "q": "茶餐廳趕住開業換餐牌，最快幾耐有貨？",
+      "a": "標準柯式印刷 2–3 個工作天交貨，打樣當日完成對色；開業或急單記得 WhatsApp 講明死線，我哋有急件專線幫你排期，盡量配合開張日子。"
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "HK$0.22起",
+      "label": "一次性餐牌低至幾毫一張，外賣店日日換都唔肉赤"
+    },
+    {
+      "stat": "100張起",
+      "label": "小批量都接，新開餐廳試菜單冇壓力"
+    },
+    {
+      "stat": "2-3日",
+      "label": "標準柯式交貨，打樣當日對色，開業唔使齋等"
+    },
+    {
+      "stat": "五類任揀",
+      "label": "PVC膠片、過膠、精裝、酒水牌、一次性餐牌一條龍搞掂"
+    }
+  ],
+  "comparisonTable": {
+    "title": "香港餐牌印刷類型 × 材質工藝 × 適用場景比較",
+    "columns": [
+      "餐牌類型",
+      "材質/工藝",
+      "適用場景",
+      "起訂量"
+    ],
+    "rows": [
+      [
+        "PVC膠片餐牌（防水款）",
+        "0.5–1.0mm 透明或白色 PVC，四色UV印刷，圓角或直角裁切",
+        "茶餐廳、火鍋店、酒吧、居酒屋",
+        "100 張起"
+      ],
+      [
+        "過膠餐牌（經濟款）",
+        "200–250g 銅版紙或啞粉紙，啞膠/光膠覆膜",
+        "咖啡店、甜品店、西餐廳",
+        "100 張起"
+      ],
+      [
+        "精裝餐牌（高級款）",
+        "硬紙板封面裱糊銅版紙，內頁 200g 銅版紙",
+        "酒樓、高級餐廳、酒店宴會",
+        "100 本起"
+      ],
+      [
+        "一次性餐牌（外賣款）",
+        "100–120g 書紙或再生紙",
+        "外賣店、優惠宣傳、季節限定菜單",
+        "100 張起"
+      ]
+    ],
+    "note": "仲有酒水牌（HK$12 起/張，銅版紙或合成紙過啞膠）可以加配；燙金、打洞穿繩、QR Code 電子菜單等加工都做得，價錢同交期以 WhatsApp 報價為準。"
+  },
+  "orderFlow": {
+    "title": "6 步餐牌訂製流程",
+    "steps": [
+      {
+        "title": "WhatsApp 諮詢",
+        "desc": "傳店名、菜式數量、尺寸（A4/A5）同想要的材質"
+      },
+      {
+        "title": "免費報價",
+        "desc": "列明單價、起訂量同交期，急單先講明死線"
+      },
+      {
+        "title": "設計排版",
+        "desc": "提供菜價相片或現成設計檔，免費幫你執靚個版"
+      },
+      {
+        "title": "打樣對色",
+        "desc": "打樣當日完成，顏色尺寸核對冇問題先開印"
+      },
+      {
+        "title": "落單付款",
+        "desc": "轉數快或銀行轉賬，確認後即刻開工"
+      },
+      {
+        "title": "交貨收貨",
+        "desc": "標準 2–3 個工作天，順豐送到全港各區"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "報價查詢",
+      "message": "你好，我想印【A4過膠餐牌】，菜式大約【60】款，數量【200】張，需要【中英對照】，麻煩報價同交期，多謝！"
+    },
+    {
+      "label": "急單詢問",
+      "message": "你好，我哋【茶餐廳】【下星期開業】趕住用餐牌，想要【PVC防水款】，數量【100】張，想問最快幾日交到同急單安排，謝謝！"
+    },
+    {
+      "label": "換季菜單",
+      "message": "你好，之前喺你哋度印過【過膠餐牌】，今次想更新【季節菜式同價錢】，數量【100】張，設計跟返上一次版面，麻煩報價，多謝！"
+    }
+  ],
+  "newFaqs": [
+    {
+      "q": "餐牌真係防水嗎？油漬湯汁抹得走嗎？",
+      "a": "PVC 膠片餐牌（0.5–1.0mm）同過膠餐牌都達到防水防油效果，湯汁、油漬用濕布一抹就淨；PVC 款成塊係膠，可以直接擦拭清潔，茶餐廳、火鍋店呢類多油煙場景用最穩陣。"
+    },
+    {
+      "q": "過膠餐牌同 PVC 餐牌，邊款耐用啲？",
+      "a": "兩款都防水，但耐用度唔同：PVC 膠片餐牌成塊係膠，係最襟用嘅一款，長期翻枱都冇咁易殘；過膠餐牌係紙過啞膠或光膠，成本低啲、手感貼近紙本，啱諗住成季換一次菜單嘅店。實際揀邊款，WhatsApp 講低你嘅翻枱情況我哋幫你配。"
+    },
+    {
+      "q": "茶餐廳趕住開業，餐牌最快幾耐交到？",
+      "a": "標準柯式印刷 2–3 個工作天，打樣當日完成對色；趕開業記得 WhatsApp 講明死線，我哋有急件專線幫你排期。建議開張旺季提早兩星期落單，預留執相同改稿時間。"
+    },
+    {
+      "q": "餐牌可以加 QR Code 電子菜單或者中英對照嗎？",
+      "a": "可以。可以幫你生成 QR Code 連電子菜單，晚市繁忙時間客人自己掃碼睇餸；排版支持中英文、中日文對照，連鎖分店仲可以每間印唔同價錢。"
+    }
+  ]
+};
+
 export function getConversionBlocks(
   categorySlug: string,
   locale: string

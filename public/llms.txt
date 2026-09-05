@@ -63,9 +63,9 @@
 
 ## 站点结构 (供 crawler)
 - **首页**: <https://zprintpro.com/{zh-hk,en,ja}/>
-- **品类页 (14 个)**: /{locale}/category/{stickers,flyers,packaging,paper-bags,posters,books,menus,banners,red-packets,calendars,educational,envelopes,japan-doujin}/
-- **产品页 (79 个)**: /{locale}/product/{slug}/
-- **博客 (62 篇)**: /{locale}/blog/{slug}/
+- **品类页 (16 个)**: /{locale}/category/{stickers,flyers,packaging,posters,paper-bags,greeting-cards,banners,books,menus,envelopes,calendars,red-packets,educational,japan-doujin,wedding-invitations,place-cards}/
+- **产品页 (97 个)**: /{locale}/product/{slug}/
+- **博客 (97 篇)**: /{locale}/blog/{slug}/
 - **服务页**: /{locale}/services/rush-printing-delivery/
 - **报价**: /{locale}/quote/
 - **联系**: /{locale}/contact/
