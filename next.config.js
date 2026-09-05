@@ -423,6 +423,84 @@ function buildGuideRedirects() {
     }
   }
 
+  // 2026-09-05 v24: deep link-audit collapse (subagent full-site scan: 233 broken internal
+  // URLs across blog-data x3 locales, 6 pattern classes). Content sources fixed in same commit;
+  // these 301s catch already-indexed legacy URLs (GSC / external backlinks).
+  const LOCALES_D = ['zh-hk', 'en', 'ja'];
+  // 1) legacy nested product path /{loc}/products/<cat>/<slug>/ -> flat PDP
+  for (const locale of LOCALES_D) {
+    rules.push({
+      source: `/${locale}/products/:cat/:slug+`,
+      destination: `/${locale}/product/:slug/`,
+      permanent: true,
+    });
+  }
+  // 2) dead singular/legacy category + fake/renamed slugs -> verified real targets
+  const DEEP_SLUG_MAP = [
+    ['/category/flyer', '/category/flyers/'],
+    ['/category/poster', '/category/posters/'],
+    ['/category/sticker', '/category/stickers/'],
+    ['/category/menu', '/category/menus/'],
+    ['/category/banner', '/category/banners/'],
+    ['/category/gift-boxes', '/category/packaging/'],
+    ['/category/gift-box', '/category/packaging/'],
+    ['/category/wedding-invitation', '/category/wedding-invitations/'],
+    ['/category/school-flyer', '/category/educational/'],
+    ['/category/school-journal', '/category/educational/'],
+    ['/category/campus-education', '/category/educational/'],
+    ['/category/textbook', '/category/educational/'],
+    ['/category/dm-flyer', '/category/flyers/'],
+    ['/category/leaflet-fold', '/category/flyers/'],
+    ['/category/labels', '/category/stickers/'],
+    ['/category/foil-stamping-sticker', '/category/stickers/'],
+    ['/category/design', '/blog/'],
+    ['/category/printing', '/services/'],
+    ['/category/sticker-material-pvc-vinyl-removable', '/blog/sticker-material-pvc-vinyl-removable/'],
+    ['/category/food-packaging-printing-guide', '/blog/food-packaging-printing-guide/'],
+    ['/category/packaging-box-custom-guide', '/blog/packaging-box-custom-guide/'],
+    ['/category/cosmetics-packaging-box-printing-guide', '/blog/cosmetics-packaging-box-printing-guide/'],
+    ['/product/a1-poster', '/product/a1-posters/'],
+    ['/product/a2-poster', '/product/a2-posters/'],
+    ['/product/poster-a1', '/product/a1-posters/'],
+    ['/product/poster-a2', '/product/a2-posters/'],
+    ['/product/poster-a3', '/product/art-posters/'],
+    ['/product/pvc-poster', '/product/outdoor-posters/'],
+    ['/product/waterproof-posters', '/product/outdoor-posters/'],
+    ['/product/posters', '/category/posters/'],
+    ['/product/gift-boxes', '/product/rigid-boxes/'],
+    ['/product/drawer-slide-gift-box', '/product/rigid-boxes/'],
+    ['/product/doujin-booklets', '/product/doujinshi-printing/'],
+    ['/product/doujin-badges', '/product/can-badge/'],
+    ['/product/doujin-postcards', '/product/postcard-set/'],
+    ['/product/edu-textbook', '/product/textbooks/'],
+    ['/product/luxury-menus', '/product/hardcover-menus/'],
+    ['/product/same-day-printing-hk', '/services/rush-printing-delivery/'],
+    ['/product/international-shipping', '/services/catalog-printing-china/'],
+    ['/product/personalized-red-packets', '/product/custom-red-packets/'],
+    ['/product/packaging-box-color', '/category/packaging/'],
+    ['/product/packaging-box-pit', '/category/packaging/'],
+    ['/product/rtificates', '/product/certificates/'],
+    ['/blog/finan-summit-gift-bag-printing-guide', '/blog/finance-summit-gift-bag-printing-guide/'],
+    ['/blog/medical-devi-packaging-box-guide', '/blog/medical-device-packaging-box-guide/'],
+    ['/blog/poster-printing-pri-guide', '/blog/poster-printing-price-guide/'],
+    ['/blog/rtificate-printing-guide', '/blog/certificate-printing-guide/'],
+    ['/blog/ecommer-shipping-bag-printing-guide', '/blog/ecommerce-shipping-bag-printing-guide/'],
+    ['/blog/cross-border-ecommerce-shipping-guide', '/blog/cross-border-ecommerce-shipping-box-guide/'],
+    ['/blog/fda-certification-guide', '/blog/food-packaging-printing-guide/'],
+    ['/blog/2027-calendar-printing-guide', '/blog/calendar-printing-guide/'],
+    ['/blog/poster-material-comparison', '/blog/poster-printing-price-guide/'],
+    ['/blog/poster-printing-pitfalls', '/blog/poster-printing-guide/'],
+    ['/blog/case-study', '/blog/'],
+  ];
+  for (const locale of LOCALES_D) {
+    for (const [bad, good] of DEEP_SLUG_MAP) {
+      rules.push({ source: `/${locale}${bad}`, destination: good, permanent: true });
+      rules.push({ source: `/${locale}${bad}/`, destination: good, permanent: true });
+    }
+    // legacy WP-style blog taxonomy stubs -> blog index
+    rules.push({ source: `/${locale}/blog/category/:slug+`, destination: `/${locale}/blog/`, permanent: true });
+  }
+
   return rules;
 }
 
