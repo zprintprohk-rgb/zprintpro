@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { CreditCard, Tag, ShoppingBag, FileText, ImageIcon, Package, BookOpen, Flag, Calendar, Mail, Gift, GraduationCap, Box, Palette } from 'lucide-react';
+import { CreditCard, Tag, ShoppingBag, FileText, ImageIcon, Package, BookOpen, Flag, Calendar, Mail, Gift, GraduationCap, Box } from 'lucide-react';
 import { Product, getProductDisplayTitle } from '@/data/products';
 import { Locale } from '@/lib/seo';
 import { shouldShowPrice, convertToFromPrice, getPriceUnitWord, getDisplayAnchor } from '@/lib/pricing';
@@ -60,15 +60,6 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
     return getProductDisplayTitle(product, locale);
   };
 
-  const getDesc = () => {
-    switch (locale) {
-      case 'en': return product.descriptionEn;
-      case 'ja': return product.descriptionJa;
-      default: return product.description;
-    }
-  };
-
-  const shortDesc = getDesc().slice(0, 40) + (getDesc().length > 40 ? '...' : '');
   const showPrice = shouldShowPrice(product.category_slug);
 
   // 2026-07-18 P6+P7: 起价 + MOQ 表达 — 'HK$4-16/本' → 'HK$4/本起' + '100本起訂 · 量大更優'
@@ -112,14 +103,13 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
         )}
       </Link>
 
-      {/* product name + desc */}
-      <div className="px-4 pt-2">
-        <h3 className="text-lg font-bold text-[#333333] text-center line-clamp-3 h-[84px] leading-7">{normalizeTitle(getName())}</h3>
-        <p className="text-sm text-gray-500 text-center mt-1 line-clamp-2 h-[44px] leading-5">{shortDesc}</p>
+      {/* product name — 2026-09-06 降噪: 删截断描述行, 标题 2 行自适应 */}
+      <div className="px-4 pt-3">
+        <h3 className="text-base font-bold text-[#333333] text-center line-clamp-2 leading-6 min-h-[48px]">{normalizeTitle(getName())}</h3>
       </div>
 
       {/* divider */}
-      <div className="mx-4 border-t border-gray-100 mt-2" />
+      <div className="mx-4 border-t border-gray-100 mt-3" />
 
       {/* price + dual buttons */}
       <div className="p-4 pt-3 flex flex-col flex-1">
@@ -134,27 +124,13 @@ export function CategoryProductCard({ product, locale, index }: CategoryProductC
           <p className="text-[11px] text-gray-400 leading-tight mt-0.5">{moqLine}</p>
         </div>
 
-        {/* free design — 卡片底部 icon + 小字 */}
-        <p className="flex items-center justify-center gap-1 text-[11px] text-gray-400 mb-2.5">
-          <Palette className="w-3 h-3 text-[#2873F5]" strokeWidth={2} />
-          {t.freeDesign}
-        </p>
-
-        {/* dual buttons — half length, centered */}
-        <div className="flex gap-2 mt-auto justify-center">
-          <Link
-            href={`${localePrefix}/product/${product.slug}/`}
-            className="flex-1 max-w-[140px] text-center py-2 border border-gray-300 text-gray-700 rounded-lg text-sm font-medium hover:border-[#2873F5] hover:text-[#2873F5] transition-colors"
-          >
-            {t.viewMore}
-          </Link>
-          <Link
-            href={`${localePrefix}/product/${product.slug}/`}
-            className="flex-1 max-w-[140px] text-center py-2 bg-[#3090FF] text-white rounded-lg text-sm font-medium hover:bg-[#1E5FD1] transition-colors"
-          >
-            {t.getQuote}
-          </Link>
-        </div>
+        {/* single primary CTA — 2026-09-06 降噪: 双按钮同 URL 重复, 合并为单主 CTA */}
+        <Link
+          href={`${localePrefix}/product/${product.slug}/`}
+          className="w-full text-center py-2.5 bg-[#3090FF] text-white rounded-lg text-sm font-semibold hover:bg-[#1E5FD1] transition-colors mt-auto"
+        >
+          {t.getQuote}
+        </Link>
       </div>
     </div>
   );

@@ -686,10 +686,14 @@ export function CategoryIndustries({ locale, categorySlug }: { locale: Locale; c
     const covered = coveredSlugs.length > 0 && tier === 'A';
     const blogSlug = covered ? coveredSlugs[Math.min(posInTier, coveredSlugs.length - 1)] : undefined;
 
+    // 2026-09-06 UX 修复: 场景数据未铺的卡片不渲染 (原显示「場景數據整理中…」占位)
+    const scenarioLines = scenario?.scenarios[locale] || [];
+    if (scenarioLines.length === 0) continue;
+
     cards.push({
       industryName,
       tier,
-      scenarios: scenario?.scenarios[locale] || [],
+      scenarios: scenarioLines,
       blogSlug,
       covered: covered && !!blogSlug,
     });

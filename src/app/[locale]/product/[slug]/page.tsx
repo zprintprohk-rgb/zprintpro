@@ -56,6 +56,7 @@ import { ProductWhyChooseUs } from '@/components/ProductWhyChooseUs';
 import RushDeliveryBadge from '@/components/sections/RushDeliveryBadge';
 import { TrustWaterfall } from '@/components/home/TrustWaterfall';
 import FreeSampleBanner from '@/components/pdp/FreeSampleBanner';
+import { SkuSeoBody } from '@/components/pdp/SkuSeoBody';
 import WeddingBundle from '@/components/pdp/WeddingBundle';
 
 // 生成静态参数 - 79产品 × 3语言 = 237个路径
@@ -514,6 +515,27 @@ export default function ProductPage({
                   <span>{t.sku}: <span className="font-mono text-gray-500">{product.sku_code}</span></span>
                   <span>{t.minOrder}: <span className="font-semibold text-gray-600">{product.minQuantity}</span></span>
                 </div>
+                {(() => {
+                  // 2026-09-06 UX 试点: 小批量起步行 — 报价表真实档位, 消除 0.42 vs 73/71 口径落差
+                  const wpTable = product.slug === 'waterproof-stickers' ? getPriceTableForSlug('waterproof-stickers') : null;
+                  if (!wpTable || !wpTable.configs?.[0]?.tiers) return null;
+                  const cur = locale === 'ja' ? 'JPY' : locale === 'en' ? 'USD' : 'HKD';
+                  const sym = locale === 'ja' ? '¥' : locale === 'en' ? '$' : 'HK$';
+                  const t50 = wpTable.configs[0].tiers.find((x: { qty: number }) => x.qty === 50);
+                  const t100 = wpTable.configs[0].tiers.find((x: { qty: number }) => x.qty === 100);
+                  const fmtP = (hkd: number) => {
+                    if (cur === 'JPY') return String(Math.round(hkd * 20));
+                    if (cur === 'USD') return String(Math.round(hkd * 0.125));
+                    return String(hkd);
+                  };
+                  const label = locale === 'zh-hk' ? '小批量起步' : locale === 'ja' ? '小ロット対応' : 'Small-batch';
+                  return (
+                    <p className="text-xs text-gray-500 mt-2 leading-relaxed">
+                      {label}: 50 → {sym}{fmtP(t50?.priceHKD ?? 0)} · 100 → {sym}{fmtP(t100?.priceHKD ?? 0)}
+                      <span className="text-gray-400"> (105×148 數碼模切)</span>
+                    </p>
+                  );
+                })()}
               </div>
 
               {/* v14 方案A: price-table-backed SKU 由 ReferencePriceBlock 接管; 其余无表 SKU 仍走 QuoteCalculator */}
@@ -613,11 +635,7 @@ export default function ProductPage({
           {/* 地區化內容區域 */}
           <div className="mt-16 pt-10 border-t border-gray-200 space-y-8">
             {skuSeo?.seo?.[locale]?.body && (
-            <div className="prose prose-gray max-w-none">
-              <div className="text-gray-700 leading-relaxed whitespace-pre-line text-base">
-                {skuSeo.seo[locale].body}
-              </div>
-            </div>
+            <SkuSeoBody body={skuSeo.seo[locale].body} locale={locale} />
           )}
           <ProductWhyChooseUs locale={locale} />
             <div className="bg-white rounded-2xl border border-[#E5E7EB] p-6 md:p-8">
