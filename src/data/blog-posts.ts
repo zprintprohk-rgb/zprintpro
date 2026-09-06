@@ -1757,6 +1757,40 @@ const hongKongPrintingCostBaseline2026: BlogPostMeta = {
   },
 };
 
+// W7 §E 三语《印刷尺寸对照表》FAQ 资产 + §A 词层 15 词合并 (K3 9/6 W7 战略 addendum)
+// 12 鐵律 Pillar 标准: 21K/29K/22K chars × 3 locale, 5 schema (Article + FAQPage + BreadcrumbList + HowTo + Organization)
+// 命中 AEO 知识词 cluster: a6 尺寸 pos 7.69 (速赢位) / a5 a6 尺寸 pos 9.52 / 海報 size / 海報大小 / cmyk / rgb / 環保印刷 / 印刷カラーモード / a5とa6どっちが大きい
+const printSpecificationsReferenceGuide2026: BlogPostMeta = {
+  slug: 'print-specifications-reference-guide-2026',
+  categoryKey: 'printing',
+  source: 'daily',
+  date: '2026-09-06',
+  title: {
+    'zh-hk': '印刷規格完全指南 2026: A1-A6 尺寸 + CMYK 色彩 + 6 大印刷模式 一表對照 | 智印港 ZprintPro',
+    en: 'Print Specifications Complete Guide 2026: A1-A6 Sizes, CMYK Colors & 6 Print Modes | ZprintPro',
+    ja: '印刷スペック完全ガイド 2026: A1-A6 サイズ・CMYK 色モード・6 大印刷モード 一覧 | ZprintPro',
+  },
+  excerpt: {
+    'zh-hk': 'A1-A6 尺寸 + CMYK vs RGB vs Pantone 色彩 + 6 大印刷模式 (數碼/柯式/絲網/燙金/UV/擊凸) 一文睇晒。智印港 15 年膠印工程師張志明編寫, FDA 21 CFR + EU REACH + FSC 認證, 香港工廠直印, 30 秒 AI 報價。',
+    en: 'A1-A6 sizes + CMYK vs RGB vs Pantone color modes + 6 print modes (digital/offset/screen/foil/UV/emboss) in one reference table. Authored by 15-year ZprintPro offset engineer. FDA 21 CFR + EU REACH + FSC certified. Hong Kong factory-direct, 30-second AI quote.',
+    ja: 'A1-A6 サイズ + CMYK vs RGB vs Pantone 色モード + 6 大印刷モード (デジタル/オフセット/シルク/箔/UV/エンボス) 一表対照。ZprintPro 15 年オフセットエンジニア執筆。FDA 21 CFR + EU REACH + FSC 認証、即時見積もり無料。',
+  },
+  targetKeywords: {
+    primary: '印刷規格 印刷仕様 print specifications',
+    secondary: [
+      'a6 尺寸', 'a5 a6 尺寸', 'a5 a6 比較', 'a5 尺寸', 'a4 尺寸', 'A1 A2 A3 A4 A5 A6',
+      '海報 size', '海報大小', '海報與印刷', 'poster size', 'poster size guide', 'a2 印刷', 'a3 海報', 'a1 poster',
+      'cmyk 印刷', 'rgb 印刷', 'cmyk vs rgb', 'pantone 專色', '印刷カラーモード', 'cmyk 印刷モード', 'cmyk vs rgb print',
+      '數碼印刷', '柯式印刷', '絲網印刷', '燙金', 'UV 局部', '擊凸', 'digital printing', 'offset printing', 'screen printing', 'foil stamping', 'spot uv', 'embossing',
+      'a5とa6どっちが大きい', 'a6 印刷', 'ポスター 屋外', 'ポスターサイズ',
+      '環保印刷', '彩色印刷', 'eco printing', 'color printing',
+      '出血', 'dpi', 'pdf/x-1a', '300 dpi', '3mm 出血',
+      'fda 21 cfr', 'eu reach', 'fsc 認證',
+      '智印港 zprintpro', '香港工廠', '跨境印刷', '印刷尺寸', '印刷模式',
+    ],
+  },
+};
+
 export const blogPosts: BlogPostMeta[] = [
   // Buying guides (9)
   bgBusinessCard,
@@ -1897,6 +1931,8 @@ export const blogPosts: BlogPostMeta[] = [
   // 9 段 + 4 FAQ + 10 內部連結 + 3 locale native, 100 個起印 HK$2.5/個起, 8 盒型 5 維度 + 4 場景 + 5 工藝 + 4 認證 + 客戶案例 + 8 步流程 + 30 秒 WhatsApp
   lpKraftPaperBoxTypesComparison2026,
   hongKongPrintingCostBaseline2026,
+  // 2026-09-06 W7 §E 三语《印刷尺寸对照表》FAQ 资产 (K3 9/6 W7 addendum §A + §E 拍板, 12 鐵律 Pillar 标准, 命中 AEO 知识词 cluster)
+  printSpecificationsReferenceGuide2026,
   ];
 
 // =============================================================================
