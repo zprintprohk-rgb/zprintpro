@@ -1,3 +1,5 @@
+> **[W7 战略 Addendum · 2026-09-06 · 必读 P0]** 本 SSoT 叠加 `.hermes/cron-prompts/w7-strategy-addendum-2026-09-06.md`：①others 三语 404 堵漏（43 词/519 展示/5 点击，M1 第一优先，URL 层 308 M3 可自走）②转化区块以注册表实测 23 键为准（旧 7 格缺口 TOP10 停用，真缺口 posters en/ja 等 5 格）③CTR 基线 0.59% 与头部 7 词攻坚队列④WA/GA4 埋点触及组件层 = M3 停手等 K3 拍板⑤AEO 尺寸对照表资产 + GEO 三份数据资产 + AI 引用月测⑥180 天六冲刺排期。冲突时以 addendum §A/§B/§D 为准。生效 2026-09-06。
+
 # zprintpro-monthly-matrix-audit cron prompt (SSoT)
 # Source: mavis cron 9e3c442d-4bcd-436b-ab44-c7a2c14db485
 # Last sync: 2026-08-30 11:31 (K3 8/30 11:31 拍板 · 主脑 v2.2 30 天极限冲刺 + 带钱词地图 v1 + 5 拍板项 B + 词价值分层 升级)

@@ -1606,6 +1606,280 @@ categoryConversionBlocks['posters:zh-hk'] = {
   ]
 };
 
+// 2026-09-06 W7 §B 真实缺口 #1: posters en (9 词/103 展示) - W7 战略 addendum §B.2 priority 1
+categoryConversionBlocks['posters:en'] = {
+  "category": "posters",
+  "locale": "en",
+  "title": "Custom Poster Printing | A2/A1/A0, Indoor & Outdoor, Same-Day Rush | ZprintPro",
+  "metaDescription": "Custom poster printing from 1 piece. A2 art paper from US$0.85, A1 from US$1.45, A0 from US$2.80. Factory-direct from Shenzhen, DHL 2-4 day worldwide delivery.",
+  "quickAnswers": [
+    {
+      "q": "How much does a custom poster cost per piece?",
+      "a": "128g art paper A2 from US$0.85/pc, A1 from US$1.45/pc, A0 from US$2.80/pc (based on 100 pcs offset runs); 500 pcs drops another 30%, 1,000+ pcs offset drops up to 40%. Bulk offset 1 piece is also accepted — confirm size, material and quantity on WhatsApp for an instant factory-direct quote."
+    },
+    {
+      "q": "What poster sizes and materials are available?",
+      "a": "Standard A2 (420×594mm), A1 (594×841mm), A0 (841×1189mm), plus fully custom sizes up to 1.5m wide. Indoor use: 128g art paper, 200g PP synthetic. Outdoor use: 440g PVC hard sheet, canvas or liquid-laminated fabric. All outdoor prints are waterproof, UV-resistant and built to last 2-3 years without fading."
+    },
+    {
+      "q": "How fast can I get my posters?",
+      "a": "Bulk offset 1-5 pieces ship same day, standard runs 1-2 days, custom runs 3-5 working days. DHL Express delivers worldwide in 2-4 days. Add 1 day for lamination, board mounting or any finishing. Rush 24-48h available on request via WhatsApp with a 30% rush fee."
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "4,820+",
+      "label": "Poster orders shipped worldwide, covering exhibitions, retail promotions, and event campaigns"
+    },
+    {
+      "stat": "From 1 pc",
+      "label": "Bulk offset accepts 1 piece; tier pricing unlocks at 10 pcs and above"
+    },
+    {
+      "stat": "2-3 years",
+      "label": "Outdoor UV-resistant PVC posters without fading"
+    },
+    {
+      "stat": "95%+",
+      "label": "Pantone color match, brand colors stay consistent"
+    }
+  ],
+  "comparisonTable": {
+    "title": "Poster Material × Finish × Use Case Compared",
+    "columns": [
+      "Poster type",
+      "Material / finish",
+      "Use case",
+      "Min order"
+    ],
+    "rows": [
+      [
+        "Art paper poster (128g)",
+        "Full CMYK print, A2 from US$0.85/pc (100 pcs offset)",
+        "Exhibitions, event promos, in-store visuals, indoor 3-6 months",
+        "1 piece, 100 pcs get best price"
+      ],
+      [
+        "PP synthetic paper poster (200g)",
+        "Waterproof, no reflection, true colors, A2 from US$1.65/pc",
+        "Window displays, poster frames, short-term outdoor 1-2 years",
+        "1 piece, 10 pcs get tier price"
+      ],
+      [
+        "PVC poster (440g)",
+        "Fully waterproof, UV-resistant, A2 from US$2.85/pc",
+        "Outdoor advertising, construction hoarding, factory zones, 2-3 years no fade",
+        "1 piece (bulk offset)"
+      ],
+      [
+        "Canvas / liquid-laminated fabric poster",
+        "Canvas texture with optional lamination; fabric is breathable and light-resistant",
+        "Art prints, photo walls, large format outdoor, hanging banners, exhibitions",
+        "1 piece (bulk offset)"
+      ]
+    ],
+    "note": "All materials can be paired with optional services like tear-resistant lamination, KT board / Foam board mounting, eyelets, gold foil, spot UV, etc. A2 prices are based on 100 pcs offset runs. For urgent or bulk orders get a quote directly via WhatsApp, other poster custom printing needs welcome to discuss anytime."
+  },
+  "orderFlow": {
+    "title": "6-Step Poster Printing Process",
+    "steps": [
+      {
+        "title": "WhatsApp Inquiry",
+        "desc": "Tell us size (A2/A1/A0 or custom), quantity, and whether it's for indoor or outdoor use"
+      },
+      {
+        "title": "Get a Quote",
+        "desc": "Quote by material and quantity, listing lead time and finishing options"
+      },
+      {
+        "title": "Upload Artwork",
+        "desc": "PDF/X-1a or AI file, CMYK 150dpi (A0 large format 72-100dpi is enough)"
+      },
+      {
+        "title": "Pre-Press Check",
+        "desc": "We check each artwork's resolution, 3-5mm bleed, same color mode, 95%+ Pantone match"
+      },
+      {
+        "title": "Production & Payment",
+        "desc": "Pay the deposit after the quote is confirmed; rush orders add 30% to ship within 24-48h"
+      },
+      {
+        "title": "Ship & Deliver",
+        "desc": "Bulk offset fastest same day, custom runs 1-2 days; DHL door-to-door or pick up at our factory"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "Get a Quote",
+      "message": "Hi, I'd like to print posters, size [A2], material [128g art paper], quantity [100] pcs, for indoor use, please share pricing and lead time, thanks!"
+    },
+    {
+      "label": "Outdoor Poster Rush",
+      "message": "Hi, I need [size: A1] outdoor PVC waterproof posters for [use: construction hoarding], quantity [50] pcs, want the fastest turnaround with rush fee, please share details, thanks!"
+    },
+    {
+      "label": "Lightbox / Board Mounting",
+      "message": "Hi, I'd like to inquire about [MTR 12-sheet lightbox poster], size [3048×1524mm], need [KT board mounting], with PDF artwork ready, please share pricing and lead time, thanks!"
+    }
+  ],
+  "newFaqs": [
+    {
+      "q": "Can I print just 1 poster and how much?",
+      "a": "Bulk offset 1 piece is accepted, the price is by size and material: 128g art paper A2 US$0.85/pc, A1 US$1.45/pc, A0 US$2.80/pc; 1,000+ pcs offset drops up to 40%. For details get a direct quote on WhatsApp."
+    },
+    {
+      "q": "Which outdoor poster material is most durable and does not fade?",
+      "a": "440g PVC hard sheet is fully waterproof and UV-resistant, lasting 2-3 years without fading; liquid-laminated canvas lasts 3-5 years; for large outdoor or construction hoarding use canvas with light-resistant lamination, breathable and more durable."
+    },
+    {
+      "q": "Are poster sizes standardized? Can I customize?",
+      "a": "Standard A2 (420×594mm), A1 (594×841mm), A0 (841×1189mm), fully custom supported, max width 1.5m, length unlimited. Close view (A2) recommend 150dpi, far view (A0) 72-100dpi is enough for clarity."
+    },
+    {
+      "q": "How long does MTR 12-sheet poster printing take?",
+      "a": "12-sheet (3048×1524mm) large format output 3-5 working days, rush available with 30% extra fee to ship within 24-48h; please confirm PDF/X-1a, 150dpi CMYK and 30mm bleed before printing."
+    }
+  ]
+};
+
+// 2026-09-06 W7 §B 真实缺口 #2: posters ja (12 词/60 展示) - W7 战略 addendum §B.2 priority 2
+categoryConversionBlocks['posters:ja'] = {
+  "category": "posters",
+  "locale": "ja",
+  "title": "カスタムポスター印刷 | A2/A1/A0サイズ・屋内屋外対応 | ZprintPro",
+  "metaDescription": "1枚から製作可能なポスター印刷。アートペーパー128g A2は125円/枚〜、A1は215円/枚〜、A0は415円/枚〜。中国深セン工場直送、無料サンプル対応、見積もり即時、DHL 2-4日 worldwide delivery.",
+  "quickAnswers": [
+    {
+      "q": "ポスター印刷の1枚単価はいくらですか？",
+      "a": "アートペーパー128g A2は125円/枚〜、A1は215円/枚〜、A0は415円/枚〜（100枚オフセット参考価格）。500枚でさらに30%オフ、1,000枚以上のオフセットなら最大40%オフ。1枚から大口まで対応、サイズ・素材・数量をWhatsAppでお伝えいただければ、工場直販のお見積もりを即時ご提示します。"
+    },
+    {
+      "q": "ポスターのサイズと素材はどう選べばいいですか？",
+      "a": "標準サイズはA2（420×594mm）、A1（594×841mm）、A0（841×1189mm）のほか、最大幅1.5mのフルカスタム対応。屋内用は128gアートペーパー、200g PP合成紙。屋外用は440g PVC硬質シート、キャンバスまたはラミネート加工生地。屋外印刷は全種防水・UV加工で、色褪せなく2-3年持ちます。"
+    },
+    {
+      "q": "ポスターの最短納期はどのくらいですか？",
+      "a": "大口オフセットは1-5枚でも当日発送、標準納期1-2日、カスタムは3-5営業日。DHL Expressで世界中2-4日でお届け。ラミネートやパネル貼りなどの加工は+1日。お急ぎの場合はWhatsAppでご相談ください。30%追加料金で24-48時間特急対応も可能です。"
+    }
+  ],
+  "socialProof": [
+    {
+      "stat": "4,820件以上",
+      "label": "日本・香港・worldwide向けポスター出荷実績、展示会・小売プロモーション・キャンペーンをカバー"
+    },
+    {
+      "stat": "1枚から",
+      "label": "大口オフセット1枚対応、10枚以上でロット別価格"
+    },
+    {
+      "stat": "2-3年",
+      "label": "屋外UV加工PVCポスター、色褪せ保証"
+    },
+    {
+      "stat": "95%以上",
+      "label": "Pantoneカラーマッチ、ブランド色を一貫保持"
+    }
+  ],
+  "comparisonTable": {
+    "title": "ポスター素材 × 加工 × 用途比較",
+    "columns": [
+      "ポスター種類",
+      "素材 / 加工",
+      "用途",
+      "最小ロット"
+    ],
+    "rows": [
+      [
+        "アートペーパーポスター（128g）",
+        "全色CMYK印刷、A2 125円/枚〜（100枚オフセット）",
+        "展示会、イベント広告、店舗ビジュアル、屋内3-6ヶ月",
+        "1枚から、100枚で適正価格"
+      ],
+      [
+        "PP合成紙ポスター（200g）",
+        "防水・反射なし・本色再現、A2 245円/枚〜",
+        "ウィンドウディスプレイ、ポスターフレーム、短期屋外1-2年",
+        "1枚から、10枚でロット別価格"
+      ],
+      [
+        "PVCポスター（440g）",
+        "完全防水・UV耐性、A2 425円/枚〜",
+        "屋外広告、工事現場仮囲い、工場エリア、2-3年色褪せず",
+        "1枚から（オフセット大口）"
+      ],
+      [
+        "キャンバス / ラミネート生地ポスター",
+        "キャンバス質感、ラミネート加工可能、生地は通気性・耐光性",
+        "アートプリント、写真ウォール、大型屋外、吊り下げバナー、展示会",
+        "1枚から（オフセット大口）"
+      ]
+    ],
+    "note": "全素材にオプション加工あり：耐撕裂ラミネート、KTボード／フォームボードパネル取付、ハトメ、金箔、スポットUVなど。A2価格は100枚オフセット参考価格です。お急ぎ・大口はWhatsAppで直接見積もり（無料サンプル対応、送料のみご負担）。他サイズ・カスタム印刷もお気軽にご相談ください。ロット別価格表あり。"
+  },
+  "orderFlow": {
+    "title": "6ステップでポスター印刷完了",
+    "steps": [
+      {
+        "title": "WhatsAppお問い合わせ",
+        "desc": "サイズ（A2/A1/A0またはカスタム）、数量、屋内か屋外かをお知らせください"
+      },
+      {
+        "title": "見積もり即時取得",
+        "desc": "素材と数量で見積もり、納期と加工オプションを明記"
+      },
+      {
+        "title": "データ入稿",
+        "desc": "PDF/X-1aまたはAIファイル、CMYK 150dpi（A0大型は72-100dpiで十分）"
+      },
+      {
+        "title": "印刷前チェック",
+        "desc": "解像度、3-5mm余白、カラーモード、Pantone 95%以上一致を確認"
+      },
+      {
+        "title": "生産・決済",
+        "desc": "見積もり確定後着手金お支払い、特急は30%追加で24-48時間出荷"
+      },
+      {
+        "title": "出荷・配送",
+        "desc": "大口オフセット最速当日、カスタム1-2日；DHL玄関先配達または工場受取"
+      }
+    ]
+  },
+  "whatsappTemplates": [
+    {
+      "label": "見積もり依頼",
+      "message": "こんにちは、ポスター印刷をお願いしたいのですが、サイズ[A2]、素材[128gアートペーパー]、数量[100]枚、屋内用です。価格と納期を教えてください、よろしくお願いします！"
+    },
+    {
+      "label": "屋外ポスター特急",
+      "message": "こんにちは、[サイズ：A1]の屋外PVC防水ポスターを[用途：工事現場仮囲い]に使いたいです。数量[50]枚、特急対応と追加料金を知りたいです。よろしくお願いします！"
+    },
+    {
+      "label": "広告灯箱 / パネル加工",
+      "message": "こんにちは、[12枚灯箱ポスター]、[サイズ：3048×1524mm]、[KTボードパネル加工]希望、PDFデータあります。価格と納期を教えてください、よろしくお願いします！"
+    }
+  ],
+  "newFaqs": [
+    {
+      "q": "ポスター1枚から印刷できますか？料金はいくらですか？",
+      "a": "大口オフセット1枚から対応、サイズと素材別価格：アートペーパー128g A2 125円/枚〜、A1 215円/枚〜、A0 415円/枚〜。1,000枚以上のオフセットなら最大40%オフ。詳細はWhatsAppで直接見積もり（無料サンプル対応）。"
+    },
+    {
+      "q": "屋外で色褪せしない最も耐久性のある素材は？",
+      "a": "440g PVC硬質シートは完全防水・UV耐性、2-3年色褪せず；ラミネートキャンバスは3-5年持ちます；大型屋外や工事現場仮囲いには耐光ラミネート加工のキャンバス、通気性がありより耐久。"
+    },
+    {
+      "q": "ポスターサイズに規格がありますか？カスタムできますか？",
+      "a": "標準A2（420×594mm）、A1（594×841mm）、A0（841×1189mm）のほか、フルカスタム対応、最大幅1.5m、長さ無制限。近くで見る（A2）は150dpi推奨、遠く用（A0）は72-100dpiで十分鮮明。"
+    },
+    {
+      "q": "12枚ポスター印刷の納期は？",
+      "a": "12枚（3048×1524mm）大型出力は3-5営業日、30%追加料金で24-48時間特急対応可能。印刷前にPDF/X-1a、150dpi CMYK、30mm余白をご確認ください。"
+    }
+  ]
+};
+
 categoryConversionBlocks['paper-bags:en'] = {
   "category": "paper-bags",
   "locale": "en",

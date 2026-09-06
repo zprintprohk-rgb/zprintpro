@@ -318,6 +318,37 @@ function buildGuideRedirects() {
     });
   }
 
+  // 2026-09-06 W6 v34: GSC /{loc}/category/others/ 三语 404 (43 词 519 展示 5 点击泄漏, K3 9/6 W7 战略 §A P0)
+  // 依据: K3 9/6 W7 战略任务 `DELIVERY/w7-strategy-180day-20260906.html` + addendum
+  //        `.hermes/cron-prompts/w7-strategy-addendum-2026-09-06.md` §A.1 事实 + §A.2 第一层 URL 层处置;
+  // 落地: 4 形态 (裸 others + category/others + 各自 trailing slash) × 3 locale = 12 rules, 全部 → flyers;
+  // 目的地: per §A.2 词层分流表 flyers 是 43 词最大去向 (7 词/130 展示);
+  //        curl 验证 /{loc}/category/flyers/ 三语 200 (9/6 主线探针) ✅;
+  // 行为: 5 点击带点击词 (車身廣告 / 賀卡印刷 / 精裝盒 / a4 印刷 / 彩色印刷) 落地到 flyers 减少 404 跳出;
+  // destination 带尾斜杠对齐 trailingSlash:true (文件头 L15 注释), 避免二次 308。
+  for (const locale of LOCALES) {
+    rules.push({
+      source: `/${locale}/category/others`,
+      destination: `/${locale}/category/flyers/`,
+      permanent: true,
+    });
+    rules.push({
+      source: `/${locale}/category/others/`,
+      destination: `/${locale}/category/flyers/`,
+      permanent: true,
+    });
+    rules.push({
+      source: `/${locale}/others`,
+      destination: `/${locale}/category/flyers/`,
+      permanent: true,
+    });
+    rules.push({
+      source: `/${locale}/others/`,
+      destination: `/${locale}/category/flyers/`,
+      permanent: true,
+    });
+  }
+
   // /product/{oldSlug}/ (无 locale 前缀, GSC 索引的根路径) 3 locale
   for (const [oldSlug, target] of [
     ['double-sided-cards', 'greeting-cards'],
