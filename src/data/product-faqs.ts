@@ -500,8 +500,115 @@ export const paperBagsFAQs: FAQItem[] = [
   },
 ];
 
-// 通用 FAQ — 適用所有未自定義的 category（greeting-cards / books / calendars /
-// menus / banners / red-packets / envelopes / educational）
+// 2026-09-08 K3 v4.0 指令 A6/SKU-2: envelopes 品类专属 FAQ（替代通用兜底）
+// 数据锚: products.ts envelopes 4 SKU 实价 HK$0.22-5.20/個・MOQ 100・basePrice 0.60(large-envelopes)
+// 服务目标: 词图 v4.1 G1 大信封(28d pos 3.1/48 imp/0 click)摘果 + FAQ schema 富摘要
+export const envelopesFAQs: FAQItem[] = [
+  {
+    question: {
+      'zh-hk': '大信封印刷幾多錢？最低訂量是多少？',
+      'en': 'How much does large envelope printing cost? What is the MOQ?',
+      'ja': '大判封筒の印刷価格と最小ロットは？',
+    },
+    answer: {
+      'zh-hk': '大信封及公司信封 100 個起訂，價格 HK$0.22-5.20/個（2026-09 報價，視尺寸與數量），常規 C4/DL 大號信封 HK$0.60 起。即日急件檔期請 WhatsApp 查詢。',
+      'en': 'Large and business envelopes start from 100 pieces, priced HK$0.22-5.20 each depending on size and quantity (updated 2026-09); standard C4/DL large envelopes from HK$0.60. Same-day rush slots - WhatsApp us.',
+      'ja': '大判封筒・会社封筒は100枚から。価格はサイズと数量により HK$0.22-5.20/枚（2026-09 更新）、標準 C4/DL 判は1枚 HK$0.60 から。当日出荷の枠は WhatsApp でご確認ください。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '信封可以印 LOGO 同公司地址嗎？支持哪些工藝？',
+      'en': 'Can envelopes be printed with our logo and return address? What finishing options exist?',
+      'ja': '封筒にロゴと宛名印刷は可能ですか？',
+    },
+    answer: {
+      'zh-hk': '支持單色至四色 CMYK 印刷 LOGO 及地址，可選開窗、自黏封口、燙金 LOGO、特種紙，並可諮詢保密內印——適合律師行、會計樓等專業文件。',
+      'en': 'Yes - single-colour to full CMYK printing of logos and return addresses. Options include window cut-outs, self-seal flaps, foil-stamped logos, specialty papers, and confidential inner printing for law and accounting firms.',
+      'ja': '可能です。単色〜4色 CMYK でロゴ・宛名に対応。窓付き、糊付きフラップ、箔押しロゴ、特殊紙のほか、機密性の高い文書向けの内面印刷もご相談ください。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '信封印刷交貨時間幾耐？可以即日取嗎？',
+      'en': 'What is the delivery time for envelope printing? Is same-day pickup possible?',
+      'ja': '封筒印刷の納期は？当日受け取りは可能ですか？',
+    },
+    answer: {
+      'zh-hk': '標準 3-5 個工作天交貨，港九新界免費速遞（HK$500 以上訂單）；部份常規款可安排急件即日，以 WhatsApp 確認當日檔期為準。',
+      'en': 'Standard turnaround is 3-5 business days with free local courier on orders over HK$500. Selected standard styles support same-day rush - confirm today\'s slot via WhatsApp.',
+      'ja': '標準 3-5 営業日で納品。HK$500 以上のご注文は香港内無料配送。一部規格は当日出荷に対応 — WhatsApp で当日の枠をご確認ください。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '信封可以寄去海外客戶嗎？',
+      'en': 'Do you ship printed envelopes internationally?',
+      'ja': '封筒の海外配送は可能ですか？',
+    },
+    answer: {
+      'zh-hk': '支持 DHL 全球配送 2-4 天送達，海外企業與跨境辦公常用；大量訂單可諮詢分批出貨安排。',
+      'en': 'Yes - DHL worldwide delivery in 2-4 business days, popular with overseas offices and cross-border teams. Bulk and staggered shipments available on request.',
+      'ja': '対応しています。DHL の国際配送で 2-4 営業日でお届け。海外拠点や越境チームに人気です。大量注文は分割出貨もご相談ください。',
+    },
+  },
+];
+
+// 2026-09-08 K3 v4.0 指令 A7: calendars 品类专属 FAQ（替代通用兜底，9/15 季节死线）
+// 数据锚: products.ts calendars 6 SKU 实价 HK$3-8/本・13 页设计・柯式 500 本起・Q4 高峰建议 10 月底前确认
+export const calendarsFAQs: FAQItem[] = [
+  {
+    question: {
+      'zh-hk': '月曆印刷幾多錢一本？',
+      'en': 'How much does custom calendar printing cost per copy?',
+      'ja': 'カレンダー印刷は1部いくらですか？',
+    },
+    answer: {
+      'zh-hk': '2027 掛牆/座檯年曆 HK$3-8/本（2026-09 報價，視乎 A3/A4 尺寸、250-300g 銅版紙或啞粉紙及數量），免費排版含每月版面與節慶標註，WhatsApp 即時報價。',
+      'en': '2027 wall and desk calendars run HK$3-8 per copy (updated 2026-09; depends on A3/A4 size, 250-300g stock, and quantity). Free layout design with monthly grids and holiday marking included - WhatsApp for an instant quote.',
+      'ja': '2027 年の壁掛け・卓上カレンダーは1部 HK$3-8（2026-09 更新、A3/A4 サイズ・250-300g 紙・数量により変動）。月面レイアウトと祝日マーク制作は無料。WhatsApp でスピード見積もり。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '月曆/桌曆起訂量是多少？',
+      'en': 'What is the minimum order quantity for calendars?',
+      'ja': 'カレンダーの最小ロットは？',
+    },
+    answer: {
+      'zh-hk': '起訂量視工藝而定：柯式大批量 500 本起，數碼印刷支持更小批量，以產品頁即時報價為準；梯級數量享批發價。',
+      'en': 'MOQ depends on the process: offset runs from 500 copies, while digital printing supports smaller batches. Final MOQ and tiered pricing are shown on each product page quote.',
+      'ja': 'ロットは製法により異なります：オフセットは500部から、デジタル印刷はより小ロットに対応。最終ロットと段階価格は製品ページの見積もりをご確認ください。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '9 月落單印月曆仲嚟得切嗎？交貨時間幾耐？',
+      'en': 'If we order calendars in September, is it still in time? What is the lead time?',
+      'ja': '9 月にカレンダーを発注して間に合いますか？',
+    },
+    answer: {
+      'zh-hk': 'Q4 為月曆高峰期，產能按落單先後排產，建議 10 月底前確認訂單；愈早落單愈穩陣，急件檔期請 WhatsApp 對時間表。',
+      'en': 'Q4 is peak season and production slots fill in order of confirmation - lock your order by end of October to be safe. Rush scheduling available via WhatsApp.',
+      'ja': 'Q4 はピークシーズンで、製造枠は発注確定順に埋まります。10 月末までのご発注を推奨。特急の日程は WhatsApp でご相談ください。',
+    },
+  },
+  {
+    question: {
+      'zh-hk': '年曆可以加印公司資訊同客戶名字嗎？',
+      'en': 'Can calendars include our company info and client names?',
+      'ja': 'カレンダーに会社情報や顧客名を入れられますか？',
+    },
+    answer: {
+      'zh-hk': '可以。每月一頁背面可印企業資訊（聯絡方式、服務清單、優惠券），封面加入 logo 與品牌色；13 頁設計（封面+12 個月）支持全定制。',
+      'en': 'Yes - the reverse of each monthly page can carry company info (contacts, services, coupons), with your logo and brand colours on the cover. The 13-page design (cover + 12 months) is fully customisable.',
+      'ja': '可能です。各月ページの裏面に会社情報（連絡先・サービス・クーポン）を印刷し、表紙にロゴとブランドカラーを反映。表紙＋12 ヶ月の 13 ページ構成をフルカスタムできます。',
+    },
+  },
+];
+
+// 通用 FAQ — 適用所有未自定義的 category（greeting-cards / books /
+// menus / banners / red-packets / educational）
 // 含 6 個最高頻問題：最低訂量 / 印刷工期 / 配送 / 設計稿要求 / 付款方式 / 環保認證
 export const generalProductFAQs: FAQItem[] = [
   {
@@ -611,11 +718,11 @@ export const coreProductFAQMap: Record<string, FAQItem[]> = {
   // 通用 FAQ 兜底 — 適用所有未自定義的 category
   'greeting-cards': generalProductFAQs,
   books: generalProductFAQs,
-  calendars: generalProductFAQs,
+  calendars: calendarsFAQs,
   menus: generalProductFAQs,
   banners: generalProductFAQs,
   'red-packets': generalProductFAQs,
-  envelopes: generalProductFAQs,
+  envelopes: envelopesFAQs,
   educational: generalProductFAQs,
   // packaging 沒有專屬 FAQ（只有 packaging-boxes），回退到通用
   packaging: generalProductFAQs,
