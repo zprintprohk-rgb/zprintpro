@@ -125,7 +125,7 @@ function buildGuideRedirects() {
     // 类目
     ['business-cards', 'greeting-cards'],
     // buying guide
-    ['business-card-buying-guide', 'sticker-buying-guide'],
+    ['business-card-buying-guide', 'greeting-card-buying-guide'], // BC-BAN §0.0: BC traffic -> greeting (9/8)
   ];
   for (const [oldSlug, newSlug] of V22_REDIRECTS) {
     for (const locale of LOCALES) {
@@ -152,6 +152,19 @@ function buildGuideRedirects() {
     });
     rules.push({
       source: `/${locale}/category/business-cards/`,
+      destination: `/${locale}/category/greeting-cards/`,
+      permanent: true,
+    });
+  }
+  // 2026-09-08 BC-BAN §0.0: plural /products/business-cards legacy path -> greeting category (3 locale)
+  for (const locale of LOCALES) {
+    rules.push({
+      source: `/${locale}/products/business-cards`,
+      destination: `/${locale}/category/greeting-cards`,
+      permanent: true,
+    });
+    rules.push({
+      source: `/${locale}/products/business-cards/`,
       destination: `/${locale}/category/greeting-cards/`,
       permanent: true,
     });
