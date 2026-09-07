@@ -115,15 +115,13 @@ function buildGuideRedirects() {
   // buying guide 旧 slug (business-card-buying-guide → greeting-card-buying-guide) 也走 next.config.js
   // 完整 7 旧 SKU 类目 slug → 新 slug 映射
   const V22_REDIRECTS = [
-    // 6 SKU 1:1 映射
-    ['premium-business-cards', 'greeting-cards'],
-    ['thick-business-cards-400g', 'greeting-cards'],
-    ['foil-business-cards', 'greeting-cards'],
-    ['spot-uv-business-cards', 'greeting-cards'],
-    ['matte-business-cards', 'greeting-cards'],
-    ['rounded-corner-cards', 'greeting-cards'],
-    // 类目
-    ['business-cards', 'greeting-cards'],
+    // 6 SKU 1:1 映射 (9/8 404 回归修复: 原全指 /product/greeting-cards/ 但该产品页不存在, 改为真实改名后 slug)
+    ['premium-business-cards', 'premium-greeting-cards'],
+    ['thick-business-cards-400g', 'thick-greeting-cards-400g'],
+    ['foil-business-cards', 'foil-greeting-cards'],
+    ['spot-uv-business-cards', 'spot-uv-greeting-cards'],
+    ['matte-business-cards', 'matte-greeting-cards'],
+    ['rounded-corner-cards', 'rounded-corner-greeting-cards'],
     // buying guide
     ['business-card-buying-guide', 'greeting-card-buying-guide'], // BC-BAN §0.0: BC traffic -> greeting (9/8)
   ];
@@ -142,6 +140,20 @@ function buildGuideRedirects() {
         permanent: true,
       });
     }
+  }
+  // 2026-09-8 紧急 404 修复: 裸 /product/business-cards (旧通用产品页, 无 1:1 改名对应)
+  // -> 贺卡类目页 (§0.0 承接主品类; 原 V22 行指 /product/greeting-cards/ 不存在 = 404 回归)
+  for (const locale of LOCALES) {
+    rules.push({
+      source: `/${locale}/product/business-cards`,
+      destination: `/${locale}/category/greeting-cards/`,
+      permanent: true,
+    });
+    rules.push({
+      source: `/${locale}/product/business-cards/`,
+      destination: `/${locale}/category/greeting-cards/`,
+      permanent: true,
+    });
   }
   // 类目路径 /category/business-cards/ → /category/greeting-cards/ (3 locale)
   for (const locale of LOCALES) {

@@ -972,3 +972,13 @@
 ---
 
 EOF · 2026-09-06 17:45 · M3 自决 (per K3 §0.28.7 8/28 11:52 派活包 M3 自主决定, W7 day 1 下午 blog-deepfix cron)
+
+---
+
+## 20. D-9/8-2 · BC-BAN redirect 落点 404 回归修复 (9/8 ~04:30 紧急, per §0.25.3 线上 404 豁免, K3 对话确认"立即修复+紧急push")
+
+- **现象**: 67546cc6/644fd4ce 上线后 `/{locale}/product/business-cards/` 及 6 个旧 SKU URL redirect 落点 `/product/greeting-cards/` 不存在 → 终态 404 (补丁前 301→stickers 可落 200 = 上线引入回归)
+- **根因**: next.config.js V22_REDIRECTS 8 行全指裸 `greeting-cards` 产品页 (products.ts 无此 slug, 真实 SKU 为 premium/foil/spot-uv/matte/thick-400g/rounded-corner-greeting-cards); middleware QUOTE_PRODUCT_MAP 9 行同病
+- **修复**: V22 6 SKU → 真实 1:1 改名 slug; 裸 `/product/business-cards` 新增 3 locale × 2 形态 → `/category/greeting-cards/`; QUOTE_PRODUCT_MAP 9 行同修 (rounded-corner→SKU, double-sided/same-day/eco→category)
+- **排查确认不改**: GSC_404_REDIRECTS 循环 fallback 本为 category 目标 (L236-240) = 已正确; L366 无 locale map = 已正确
+- **数据来源**: node https 全链探针实测 zprintpro.com (en/zh-hk/ja, 10 URL) + products.ts slug 全量清单 + next.config.js L117-260 + middleware.ts L97-112 + tsc 基线 54(全 __tests__)/非测试 0
