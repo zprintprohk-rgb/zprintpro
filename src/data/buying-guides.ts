@@ -18,69 +18,72 @@ export interface BuyingGuide {
 }
 
 export const buyingGuides: BuyingGuide[] = [
-  // ========== STICKERS (旧 greeting-card-buying-guide, 2026-07-18 内容重写为贴纸指南并归类) ==========
+  // ========== GREETING CARDS (2026-09-08 BC-BAN §0.0 D-9/8-3: 重写为贺卡买指南, 旧贴纸内容由 sticker-buying-guide 承载, 本 slug 为 BC 流量承接终点) ==========
   {
     slug: 'greeting-card-buying-guide',
-    categorySlug: 'stickers',
+    categorySlug: 'greeting-cards',
     title: {
-      'zh-hk': '貼紙印刷選購完全指南：材質、工藝、價格一次搞懂',
-      en: 'Custom Sticker Printing Guide: Materials, Finishes & Pricing Explained',
-      ja: 'ステッカー印刷ガイド：材質、加工、価格を徹底解説',
+      'zh-hk': '賀卡印刷選購完全指南：紙張、工藝、價格一次搞懂',
+      en: 'Greeting Card Printing Buying Guide: Paper, Finishes & Pricing',
+      ja: 'グリーティングカード印刷ガイド：紙・加工・価格を徹底解説',
     },
     description: {
-      'zh-hk': '從防水PVC到透明料、從燙金到異形模切，香港貼紙印刷選購全攻略。智印港印刷專家為您拆解材質、工藝與價格，助您選出最適合的品牌貼紙。',
-      en: 'From waterproof vinyl to clear stock, from foil stamping to die-cut shapes - a complete guide to custom sticker printing.',
-      ja: '防水ビニールから透明素材まで、箔押しからダイカットまで—オリジナルステッカー印刷の選び方完全ガイド。',
+      'zh-hk': '由 300g 銅版紙到 400g 厚卡、由燙金到 3D 立體，香港賀卡印刷選購全攻略。智印港拆解紙張、工藝、價格與交期，100 張起印、免費打樣，助您印出最有心意的賀卡。',
+      en: 'From 300g art board to 400g thick stock, foil stamping to 3D pop-up - a complete guide to custom greeting card printing. 100 MOQ, free proof, DHL 2-4 day global delivery.',
+      ja: '300gアート紙から400g厚紙、箔押しからポップアップまで—グリーティングカード印刷の選び方完全ガイド。100枚から注文可、無料サンプル、DHLで2-4日納品。',
     },
     keywords: {
-      'zh-hk': '貼紙印刷選購,貼紙材質,貼紙工藝,貼紙價格,香港貼紙印刷,防水貼紙,透明貼紙,貼紙設計,貼紙紙質,貼紙燙金,貼紙UV,異形貼紙,環保貼紙',
-      en: 'sticker printing guide,sticker materials,sticker finishes,sticker prices,custom sticker printing,waterproof stickers,sticker design',
-      ja: 'ステッカー選び方,ステッカー材質,ステッカー加工,ステッカー価格,オリジナルステッカー印刷,防水ステッカー,ステッカーデザイン',
+      'zh-hk': '賀卡印刷,賀卡訂造,賀卡選購,聖誕卡印刷,新年賀卡,感謝卡印刷,燙金賀卡,3D立體賀卡,賀卡價格,香港賀卡印刷',
+      en: 'greeting card printing guide,custom greeting cards,greeting card paper,foil greeting cards,pop up greeting cards,greeting card prices,christmas card printing',
+      ja: 'グリーティングカード印刷,年賀状印刷,ポップアップカード,オリジナルカード作成,箔押しカード,クリスマスカード印刷,カード印刷 選び方',
     },
-    category: { 'zh-hk': '貼紙知識', en: 'Sticker Guide', ja: 'ステッカーガイド' },
-    date: '2025-01-15',
-    relatedProducts: ['waterproof-stickers', 'transparent-stickers', 'die-cut-stickers', 'foil-stickers', 'removable-stickers', 'small-batch-stickers'],
+    category: { 'zh-hk': '賀卡知識', en: 'Greeting Card Guide', ja: 'カードガイド' },
+    date: '2026-09-08',
+    relatedProducts: ['premium-greeting-cards', 'thick-greeting-cards-400g', 'foil-greeting-cards', 'spot-uv-greeting-cards', 'matte-greeting-cards', 'rounded-corner-greeting-cards'],
     content: {
-      'zh-hk': `<p>貼紙是品牌推廣中 CP 值最高的印刷品之一：一張防水貼紙可以跟隨產品走進客戶家中、辦公室甚至行李箱，曝光週期長達數月。但面對銅版紙、防水 PVC、透明 PET、牛皮紙等眾多材質，以及燙金、局部 UV、異形模切等工藝，很多品牌主都不知從何入手。本文從材質、工藝、形狀、應用場景、預算 5 大維度，為您系統拆解貼紙印刷的選購要點，助您用最低成本印出最適合品牌的貼紙。</p>
-<h3>一、貼紙材質對比</h3>
-<p>材質決定貼紙的壽命、質感與適用環境，是選購第一步：</p>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">材質</th><th class="border p-2 text-left">特性</th><th class="border p-2 text-left">適合場景</th><th class="border p-2 text-left">參考價格</th></tr></thead><tbody><tr><td class="border p-2">銅版紙貼紙</td><td class="border p-2">成本低、色彩鮮豔、不防水</td><td class="border p-2">室內短期促銷、贈品</td><td class="border p-2">HK$0.5-1.5/張</td></tr><tr><td class="border p-2">防水合成紙 / PVC</td><td class="border p-2">防水防油、撕不爛、耐用</td><td class="border p-2">餐飲外賣、戶外、凍品標籤</td><td class="border p-2">HK$1.2-3/張</td></tr><tr><td class="border p-2">透明 PET</td><td class="border p-2">高透明、無標籤感</td><td class="border p-2">玻璃瓶、化妝品、飲品</td><td class="border p-2">HK$2-5/張</td></tr><tr><td class="border p-2">牛皮紙</td><td class="border p-2">環保復古、手作質感</td><td class="border p-2">文創品牌、烘焙、手工皂</td><td class="border p-2">HK$1.5-4/張</td></tr><tr><td class="border p-2">雷射 / 全息</td><td class="border p-2">防偽、視覺效果強</td><td class="border p-2">品牌防偽、限量周邊</td><td class="border p-2">HK$3-8/張</td></tr></tbody></table>
-<h3>二、表面工藝詳解</h3>
-<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>光膠（Gloss）</strong>：色彩飽和、防污易抹，適合食品與飲品標籤</li><li><strong>啞膠（Matte）</strong>：沉穩高檔、不反光，適合美妝與精品品牌</li><li><strong>燙金 / 燙銀</strong>：金屬光澤點綴 LOGO，提升奢華感</li><li><strong>局部 UV</strong>：重點圖案上光，製造明暗層次</li><li><strong>壓凸 / 壓凹</strong>：無油墨立體觸感，適合高端禮盒封口貼</li></ul>
-<h3>三、形狀與模切方式</h3>
-<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>方形 / 矩形</strong>：信息量大，適合成分標籤、條碼標籤</li><li><strong>圓形 / 橢圓</strong>：經典百搭，適合 LOGO 貼、封口貼</li><li><strong>異形模切（Die-cut）</strong>：完全按圖案外輪廓裁切，視覺衝擊力最強，文創與 IP 周邊首選</li><li><strong>吻切（Kiss-cut）</strong>：只切面材不切底紙，一整版方便撕取與派發</li><li><strong>卷裝貼紙</strong>：配合自動貼標機，適合萬級以上批量生產</li></ol>
-<h3>四、行業應用速查</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">行業</th><th class="border p-2 text-left">推薦組合</th><th class="border p-2 text-left">要點</th></tr></thead><tbody><tr><td class="border p-2">餐飲外賣</td><td class="border p-2">防水合成紙 + 光膠</td><td class="border p-2">防油防冷凝水</td></tr><tr><td class="border p-2">美妝護膚</td><td class="border p-2">透明 PET + 啞膠 + 燙金</td><td class="border p-2">無標籤感、凸顯瓶身</td></tr><tr><td class="border p-2">跨境電商</td><td class="border p-2">銅版紙 + GS1 條碼</td><td class="border p-2">成本可控、掃碼合規</td></tr><tr><td class="border p-2">零售精品</td><td class="border p-2">牛皮紙 / 燙金封口貼</td><td class="border p-2">開箱體驗加分</td></tr><tr><td class="border p-2">婚慶活動</td><td class="border p-2">珠光紙 + 異形模切</td><td class="border p-2">儀式感、打卡友好</td></tr></tbody></table>
-<h3>五、選購決策框架</h3>
-<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>預算有限</strong>：銅版紙 + 光膠，100 張起印，單張低至 HK$0.5</li><li><strong>戶外 / 防水需求</strong>：PVC 或合成紙 + 光膠，耐用 1 年以上</li><li><strong>高端品牌</strong>：透明 PET 或特種紙 + 燙金 / 局部 UV</li><li><strong>環保理念</strong>：FSC 認證牛皮紙 + 大豆油墨</li></ul>
-<h3>六、常見問題</h3>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：貼紙最少可以印幾多張？</strong><br/>A：50-100 張起印，視材質而定。小批量試產建議先印 50 張確認效果。</p><p><strong>Q：防水貼紙可以貼凍肉、凍飲嗎？</strong><br/>A：可以。防水合成紙 / PVC 耐低溫冷凝水，是凍品與凍飲標籤的標準選擇。</p><p><strong>Q：可以按我的 LOGO 形狀裁切嗎？</strong><br/>A：可以。異形模切支援任意形狀，只需提供向量檔（AI / PDF）即可開刀模。</p><p><strong>Q：設計檔要什麼格式？</strong><br/>A：AI / PDF（文字轉曲線）、CMYK、300dpi，含 3mm 出血。智印港提供免費打稿確認。</p></div>
-<p>無論您需要防水外賣貼紙、透明化妝品標籤，還是異形模切品牌貼紙，歡迎瀏覽 <a href="/zh-hk/category/stickers/">貼紙印刷全系列</a>，或立即 <a href="https://wa.me/8619880851334" target="_blank">WhatsApp 聯絡智印港</a> 獲取即時報價！</p>`,
-      'en': `<p>Stickers deliver one of the highest ROIs in print marketing — a single waterproof sticker rides along on packaging, laptops, and luggage for months. But with vinyl, clear PET, kraft, and holographic materials plus foil, spot UV, and die-cut options, choosing the right sticker can be overwhelming. This guide breaks down materials, finishes, shapes, use cases, and budgets so you can order with confidence.</p>
-<h3>1. Sticker Material Comparison</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Material</th><th class="border p-2 text-left">Features</th><th class="border p-2 text-left">Best For</th><th class="border p-2 text-left">Price</th></tr></thead><tbody><tr><td class="border p-2">Art paper</td><td class="border p-2">Low cost, vivid color, not waterproof</td><td class="border p-2">Indoor promos, giveaways</td><td class="border p-2">US$0.05-0.15/pc</td></tr><tr><td class="border p-2">Vinyl / PVC</td><td class="border p-2">Waterproof, tear-proof, durable</td><td class="border p-2">Food delivery, outdoor, freezer labels</td><td class="border p-2">US$0.12-0.35/pc</td></tr><tr><td class="border p-2">Clear PET</td><td class="border p-2">Transparent, no-label look</td><td class="border p-2">Glass bottles, cosmetics, beverages</td><td class="border p-2">US$0.20-0.55/pc</td></tr><tr><td class="border p-2">Kraft</td><td class="border p-2">Eco, rustic texture</td><td class="border p-2">Artisan brands, bakery, handmade soap</td><td class="border p-2">US$0.15-0.45/pc</td></tr><tr><td class="border p-2">Holographic</td><td class="border p-2">Anti-counterfeit, eye-catching</td><td class="border p-2">Brand security, limited merch</td><td class="border p-2">US$0.35-0.90/pc</td></tr></tbody></table>
-<h3>2. Finish Options</h3>
-<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Gloss lamination</strong>: Saturated color, wipe-clean — ideal for food and beverage labels</li><li><strong>Matte lamination</strong>: Premium, glare-free — ideal for beauty and boutique brands</li><li><strong>Foil stamping</strong>: Metallic gold/silver accents that elevate your logo</li><li><strong>Spot UV</strong>: Gloss highlights on key graphics for depth</li></ul>
-<h3>3. Shapes &amp; Cutting</h3>
-<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>Square / rectangle</strong>: Maximum info density — ingredient and barcode labels</li><li><strong>Circle / oval</strong>: Classic — logo and seal stickers</li><li><strong>Die-cut</strong>: Cut exactly to your artwork outline — the strongest visual impact</li><li><strong>Kiss-cut</strong>: Cuts the face stock only, sheet stays intact for easy peeling</li><li><strong>Roll labels</strong>: For automatic applicators on 10,000+ runs</li></ol>
-<h3>4. Decision Framework</h3>
-<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Tight budget</strong>: Art paper + gloss, from 100 pcs</li><li><strong>Outdoor / waterproof</strong>: Vinyl + gloss lamination, 1+ year durability</li><li><strong>Premium brand</strong>: Clear PET or specialty stock + foil / spot UV</li><li><strong>Eco focus</strong>: FSC kraft + soy-based inks</li></ul>
-<h3>5. FAQ</h3>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q: What is the MOQ?</strong><br/>A: 50-100 pieces depending on material. Start small to validate your design.</p><p><strong>Q: Can stickers survive freezers and condensation?</strong><br/>A: Yes — vinyl and synthetic stocks are the standard for frozen food and cold drinks.</p><p><strong>Q: Can you cut to my logo shape?</strong><br/>A: Yes. Die-cutting follows any outline — just send vector files (AI/PDF).</p><p><strong>Q: What file format do you need?</strong><br/>A: AI/PDF with outlined fonts, CMYK, 300dpi, 3mm bleed. Free digital proof included.</p></div>
-<p>Browse our <a href="/en/category/stickers/">full sticker printing range</a> or <a href="https://wa.me/8619880851334" target="_blank">chat with ZprintPro on WhatsApp</a> for an instant quote!</p>`,
-      'ja': `<p>ステッカーは費用対効果の高いブランディングツールです。防水ステッカー1枚がパッケージやボトルと一緒に数か月間お客様の目に触れ続けます。しかし、ビニール・透明PET・クラフト・ホログラムなどの素材、箔押し・スポットUV・ダイカットなどの加工が多く、迷ってしまう方も少なくありません。本ガイドでは素材・加工・形状・用途・予算の5つの視点から、失敗しないステッカー選びを解説します。</p>
-<h3>一、素材比較</h3>
-<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">素材</th><th class="border p-2 text-left">特徴</th><th class="border p-2 text-left">最適用途</th><th class="border p-2 text-left">価格目安</th></tr></thead><tbody><tr><td class="border p-2">アート紙</td><td class="border p-2">低コスト・発色良好・非防水</td><td class="border p-2">屋内プロモ・配布用</td><td class="border p-2">¥8-25/枚</td></tr><tr><td class="border p-2">ビニール / PVC</td><td class="border p-2">防水・耐破れ・耐久</td><td class="border p-2">フードデリバリー・屋外・冷凍ラベル</td><td class="border p-2">¥20-50/枚</td></tr><tr><td class="border p-2">透明 PET</td><td class="border p-2">高透明・ラベル感なし</td><td class="border p-2">ボトル・化粧品・飲料</td><td class="border p-2">¥30-80/枚</td></tr><tr><td class="border p-2">クラフト紙</td><td class="border p-2">エコ・素朴な質感</td><td class="border p-2">ハンドメイド・ベーカリー</td><td class="border p-2">¥25-60/枚</td></tr><tr><td class="border p-2">ホログラム</td><td class="border p-2">偽造防止・視覚効果大</td><td class="border p-2">ブランド保護・限定グッズ</td><td class="border p-2">¥50-120/枚</td></tr></tbody></table>
-<h3>二、表面加工</h3>
-<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>グロスPP</strong>：発色鮮やか・汚れに強い — 食品・飲料ラベルに</li><li><strong>マットPP</strong>：高級感・反射なし — コスメ・セレクトブランドに</li><li><strong>箔押し</strong>：金・銀のメタリックでロゴを格上げ</li><li><strong>スポットUV</strong>：重点箇所に光沢、立体感を演出</li></ul>
-<h3>三、形状とカット方式</h3>
-<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>四角・長方形</strong>：情報量重視 — 成分・バーコードラベル</li><li><strong>円形・楕円</strong>：定番 — ロゴ・シール貼りに</li><li><strong>ダイカット（型抜き）</strong>：デザインの輪郭通りにカット、最も目を引く形状</li><li><strong>キスカット</strong>：面材のみカット、台紙ごとめくって剥がしやすい</li><li><strong>ロール巻き</strong>：自動貼付機対応、1万枚以上の量産向け</li></ol>
-<h3>四、選び方のフレームワーク</h3>
-<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>低予算</strong>：アート紙＋グロス、100枚から</li><li><strong>屋外・防水</strong>：ビニール＋グロスPP、1年以上耐久</li><li><strong>高級路線</strong>：透明PETまたは特殊紙＋箔/スポットUV</li><li><strong>エコ重視</strong>：FSC認証クラフト＋大豆インキ</li></ul>
+      'zh-hk': `<p>賀卡是少數「一定會被翻開看」的印刷品：企業年終答謝、婚禮感謝、聖誕新年祝福，一張有質感的賀卡勝過十則群發訊息。但紙張克重、燙金工藝、起印數量選擇繁多，報價差異也大。本文以智印港 6 款賀卡的真實規格為基準，從紙張、工藝、尺寸、場景、預算 5 大維度拆解選購要點——100 張起印、免費打樣，助您用合理預算印出最有心意的賀卡。</p>
+<h3>一、賀卡類型與價格對照</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">類型</th><th class="border p-2 text-left">紙張／工藝</th><th class="border p-2 text-left">適合場景</th><th class="border p-2 text-left">參考價格（100 張）</th></tr></thead><tbody><tr><td class="border p-2">標準賀卡</td><td class="border p-2">300g 銅版／250g 啞粉＋覆膜</td><td class="border p-2">節日量發、企業客戶</td><td class="border p-2">HK$100-140</td></tr><tr><td class="border p-2">400g 厚卡</td><td class="border p-2">厚卡紙＋擊凸／燙金</td><td class="border p-2">VIP 答謝、請柬感</td><td class="border p-2">HK$120-180</td></tr><tr><td class="border p-2">燙金賀卡</td><td class="border p-2">燙金／燙銀 LOGO</td><td class="border p-2">婚禮感謝卡、奢華品牌</td><td class="border p-2">HK$150-180</td></tr><tr><td class="border p-2">Spot UV</td><td class="border p-2">啞膠＋局部光油</td><td class="border p-2">設計感品牌</td><td class="border p-2">HK$140-170</td></tr><tr><td class="border p-2">圓角模切</td><td class="border p-2">R3mm 圓角刀模</td><td class="border p-2">手作文創</td><td class="border p-2">HK$100-150</td></tr><tr><td class="border p-2">3D 立體</td><td class="border p-2">彈出結構工藝</td><td class="border p-2">節日驚喜、禮品卡</td><td class="border p-2">按設計報價</td></tr></tbody></table>
+<h3>二、紙張怎麼選</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>300g 銅版紙</strong>：四色柯式印刷的標準搭配，色彩飽和度最高，節日量發性價比之王</li><li><strong>250g 啞粉藝術紙</strong>：細膩低反光，插畫與攝影類設計更耐看</li><li><strong>400g 厚卡</strong>：挺度足、儀式感強，VIP 客戶答謝建議直上（<a href="/zh-hk/product/thick-greeting-cards-400g/">400g 厚卡賀卡</a>）</li><li><strong>特種紙／珠光</strong>：婚慶與高端請柬質感首選</li></ul>
+<h3>三、工藝與後加工</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>燙金／燙銀</strong>：金屬光澤點綴 LOGO 與祝福語，婚慶感謝卡標配（<a href="/zh-hk/product/foil-greeting-cards/">燙金賀卡</a>）</li><li><strong>局部 UV</strong>：重點圖案上光，明暗層次即刻提升</li><li><strong>擊凸／壓紋</strong>：無油墨立體觸感，低調而高級</li><li><strong>R3mm 圓角模切</strong>：柔和安全，手作品牌最愛；所有模切款式提供免費刀模檢查</li><li><strong>3D 立體彈出</strong>：打開瞬間的驚喜感，節日禮品場景記憶點最強</li></ul>
+<h3>四、尺寸與開卡方式</h3>
+<p>127×178mm（5×7 吋）是主力標準尺寸，兼容全球主流卡夾與信封；方形卡更適合社交平台打卡分享；對摺展開式方便雙面內文排版。四色雙面印刷為標準配置，ICC 色彩管理確保批量色差穩定。</p>
+<h3>五、行業場景速查</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">場景</th><th class="border p-2 text-left">推薦組合</th><th class="border p-2 text-left">要點</th></tr></thead><tbody><tr><td class="border p-2">企業年終答謝</td><td class="border p-2">400g 厚卡＋燙金＋簡約版面</td><td class="border p-2">挺度與金屬細節＝誠意</td></tr><tr><td class="border p-2">婚禮感謝卡</td><td class="border p-2">珠光／特種紙＋擊凸</td><td class="border p-2">與喜帖同一視覺體系</td></tr><tr><td class="border p-2">聖誕新年檔</td><td class="border p-2">300g 銅版＋光膠</td><td class="border p-2">10 月前落單避開旺季</td></tr><tr><td class="border p-2">手作文創品牌</td><td class="border p-2">圓角模切＋啞膠</td><td class="border p-2">觸感細膩、打卡友好</td></tr></tbody></table>
+<h3>六、選購決策 4 步</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>定場景與檔期</strong>：節日檔（聖誕／新年／農曆年）建議提早 6-8 週落單</li><li><strong>按預算配紙張工藝</strong>：先定紙張克重，再加 1-2 項後加工，避免預算攤薄</li><li><strong>100 張起印先試款</strong>：免費打樣確認色彩與工藝效果，滿意才量產</li><li><strong>檔案規格</strong>：AI／PDF 文字轉曲線、CMYK、300dpi、3mm 出血</li></ol>
+<h3>七、常見問題</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：賀卡最少可以印幾多張？</strong><br/>A：100 張起印。小批量數碼最快可當日取貨，大批量轉柯式印刷單價更平。</p><p><strong>Q：打樣要收費嗎？</strong><br/>A：免費打樣。先確認色彩與工藝效果再上機量產，改稿成本最低。</p><p><strong>Q：交期幾耐？可以寄海外嗎？</strong><br/>A：香港本地順豐配送（滿 HK$500 免運），海外經 DHL 2-4 天送達全球。</p><p><strong>Q：可以雙面印刷同加公司 LOGO 嗎？</strong><br/>A：可以。四色雙面為標準配置，燙金、局部 UV、圓角等後加工自由搭配。</p></div>
+<p>無論是企業答謝卡、聖誕新年賀卡定婚禮感謝卡，歡迎瀏覽 <a href="/zh-hk/category/greeting-cards/">賀卡印刷全系列</a>；籌備婚禮亦可看看 <a href="/zh-hk/category/wedding-invitations/">婚禮請卡與喜帖</a>。立即 <a href="https://wa.me/8619880851334" target="_blank">WhatsApp 聯絡智印港</a> 免費打樣！</p>`,
+      'en': `<p>Greeting cards are the rare print piece people actually open: corporate thank-yous, wedding notes, Christmas and New Year wishes. But between paper weights, finishing options and MOQs, quotes vary wildly. This guide uses the real specs of ZprintPro's six greeting card SKUs - 100 MOQ, free proof, DHL 2-4 day global delivery - so you can order with confidence.</p>
+<h3>1. Card Types &amp; Pricing at a Glance</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">Type</th><th class="border p-2 text-left">Paper / Finish</th><th class="border p-2 text-left">Best For</th><th class="border p-2 text-left">Price (100 pcs)</th></tr></thead><tbody><tr><td class="border p-2">Standard</td><td class="border p-2">300g art board / 250g matte art + lamination</td><td class="border p-2">Holiday volume, client mailings</td><td class="border p-2">US$13-15 per card set</td></tr><tr><td class="border p-2">400g Thick</td><td class="border p-2">Thick stock + emboss / foil</td><td class="border p-2">VIP gifts, invitation feel</td><td class="border p-2">US$15-18 set</td></tr><tr><td class="border p-2">Foil</td><td class="border p-2">Gold / silver foil logo</td><td class="border p-2">Wedding thank-yous, luxury brands</td><td class="border p-2">US$23 set</td></tr><tr><td class="border p-2">Spot UV</td><td class="border p-2">Matte lamination + gloss highlights</td><td class="border p-2">Design-led brands</td><td class="border p-2">US$18-21 set</td></tr><tr><td class="border p-2">Rounded Corner</td><td class="border p-2">R3mm die-cut corners</td><td class="border p-2">Artisan &amp; creative brands</td><td class="border p-2">US$13-16 set</td></tr><tr><td class="border p-2">3D Pop-up</td><td class="border p-2">Engineered pop-up structure</td><td class="border p-2">Holiday surprises, gift cards</td><td class="border p-2">Quoted by design</td></tr></tbody></table>
+<h3>2. Choosing Paper</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>300g art board</strong>: The standard for 4-color offset - maximum color saturation, best value at volume</li><li><strong>250g matte art</strong>: Low-glare and refined; ideal for illustration and photography</li><li><strong>400g thick stock</strong>: Serious heft and ceremony - the VIP thank-you choice</li><li><strong>Pearl / specialty</strong>: Wedding and high-end invitation texture</li></ul>
+<h3>3. Finishes That Elevate</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>Foil stamping</strong>: Gold or silver metallic accents for logos and greetings</li><li><strong>Spot UV</strong>: Gloss highlights on key graphics for instant depth</li><li><strong>Embossing</strong>: Ink-free raised texture - quiet luxury</li><li><strong>R3mm rounded corners</strong>: Soft, safe, social-share friendly; every die-cut order includes a free die-line check</li><li><strong>3D pop-up</strong>: The strongest unboxing moment of any card format</li></ul>
+<h3>4. Sizes &amp; Formats</h3>
+<p>127×178mm (5×7") is the workhorse standard - fits mainstream card holders and envelopes worldwide. Square formats are made for social sharing; folded formats give you two interior panels. Double-sided 4-color printing is standard, with ICC color management for batch consistency.</p>
+<h3>5. Ordering in 4 Steps</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>Set the scene and deadline</strong>: for Christmas / New Year, order 6-8 weeks ahead</li><li><strong>Match paper and finish to budget</strong>: pick paper weight first, then add 1-2 finishes</li><li><strong>Start at 100 pcs</strong>: free proof first, produce after approval</li><li><strong>File specs</strong>: AI/PDF with outlined fonts, CMYK, 300dpi, 3mm bleed</li></ol>
+<h3>6. FAQ</h3>
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q: What is the MOQ?</strong><br/>A: 100 pieces. Small runs go digital (same-day pickup possible); larger runs move to offset for better unit pricing.</p><p><strong>Q: Is the proof free?</strong><br/>A: Yes - free proof before production, so revisions cost you nothing.</p><p><strong>Q: Delivery time?</strong><br/>A: DHL Express 2-4 day global delivery from our Asia factory.</p><p><strong>Q: Can I print double-sided with my own logo?</strong><br/>A: Yes. Double-sided 4-color is standard; foil, spot UV and rounded corners are freely combinable.</p></div>
+<p>Browse the <a href="/en/category/greeting-cards/">full greeting card range</a> or plan the big day with our <a href="/en/category/wedding-invitations/">wedding invitations</a>. <a href="https://wa.me/8619880851334" target="_blank">Chat with ZprintPro on WhatsApp</a> for a free proof!</p>`,
+      'ja': `<p>グリーティングカードは「必ず手に取って開いてもらえる」希少な印刷物です。企業のサンキューカード、ウェディングの挨拶、クリスマス・新年のメッセージに、質の高いカード1枚は大量送信のメッセージより心に残ります。本ガイドはZprintProのグリーティングカード6種類の実仕様をもとに、紙・加工・サイズ・用途・予算の5つの視点から選び方を解説します。100枚から注文可、無料サンプル対応。</p>
+<h3>一、カード種類と価格早見表</h3>
+<table class="w-full text-sm border-collapse my-4"><thead><tr class="bg-gray-100"><th class="border p-2 text-left">種類</th><th class="border p-2 text-left">紙／加工</th><th class="border p-2 text-left">最適用途</th><th class="border p-2 text-left">価格目安（100枚）</th></tr></thead><tbody><tr><td class="border p-2">スタンダード</td><td class="border p-2">300gアート紙／250gマット紙＋PP</td><td class="border p-2">季節のご挨拶・大量配布</td><td class="border p-2">¥2,000-2,800</td></tr><tr><td class="border p-2">400g 厚紙</td><td class="border p-2">厚紙＋エンボス／箔押し</td><td class="border p-2">VIP向け・招待状風</td><td class="border p-2">¥2,300-3,500</td></tr><tr><td class="border p-2">箔押し</td><td class="border p-2">金・銀ホットスタンプ</td><td class="border p-2">ウェディング・ラグジュアリー</td><td class="border p-2">¥3,500〜</td></tr><tr><td class="border p-2">スポットUV</td><td class="border p-2">マットPP＋部分光沢</td><td class="border p-2">デザイン重視ブランド</td><td class="border p-2">¥2,700-3,200</td></tr><tr><td class="border p-2">角丸ダイカット</td><td class="border p-2">R3mm 角丸</td><td class="border p-2">ハンドメイド・クリエイティブ</td><td class="border p-2">¥2,000-2,500</td></tr><tr><td class="border p-2">ポップアップ</td><td class="border p-2">飛び出す仕掛け構造</td><td class="border p-2">季節のサプライズ・ギフト</td><td class="border p-2">デザインにより見積</td></tr></tbody></table>
+<h3>二、紙の選び方</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>300gアート紙</strong>：4色印刷の標準。発色が最も良く、量産コストパフォーマンス抜群</li><li><strong>250gマットアート紙</strong>：低反射で上品。イラスト・写真に最適</li><li><strong>400g厚紙</strong>：腰が強く儀式感あり。VIP向けの1枚に</li><li><strong>特殊紙／パール</strong>：ウェディング・高級招待状の質感に</li></ul>
+<h3>三、加工で差をつける</h3>
+<ul class="list-disc pl-5 my-3 space-y-1"><li><strong>箔押し</strong>：金・銀のメタリックでロゴとメッセージを格上げ</li><li><strong>スポットUV</strong>：重点部分に光沢、立体感を演出</li><li><strong>エンボス</strong>：インクなしの凹凸で静かな高級感</li><li><strong>R3mm角丸</strong>：柔らかく安全。すべてのダイカットで無料刀型チェック実施</li><li><strong>ポップアップ</strong>：開けた瞬間の驚きが最大の記憶点に</li></ul>
+<h3>四、発注の4ステップ</h3>
+<ol class="list-decimal pl-5 my-3 space-y-1"><li><strong>用途と納期を決める</strong>：クリスマス・年賀状シーズンは6〜8週間前の発注が安心</li><li><strong>予算に合わせて紙と加工を選ぶ</strong>：まず紙の厚み、次に加工1〜2点</li><li><strong>100枚からスタート</strong>：無料サンプルで仕上がり確認後に量産</li><li><strong>入稿スペック</strong>：AI/PDF（文字アウトライン化）、CMYK、300dpi、塗り足し3mm</li></ol>
 <h3>五、よくある質問</h3>
-<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：最小ロットは？</strong><br/>A：素材により50〜100枚から。まず小ロットで仕上がり確認がおすすめです。</p><p><strong>Q：冷凍・結露でも大丈夫？</strong><br/>A：はい。ビニール・合成紙は冷凍食品・冷飲料ラベルの標準仕様です。</p><p><strong>Q：ロゴの形にカットできる？</strong><br/>A：はい。ダイカットは任意の輪郭に対応。ベクターデータ（AI/PDF）をご用意ください。</p><p><strong>Q：入稿データの形式は？</strong><br/>A：AI/PDF（文字アウトライン化）、CMYK、300dpi、塗り足し3mm。無料デジタル校正付き。</p></div>
-<p><a href="/ja/category/stickers/">ステッカー印刷の全ラインナップ</a>をご覧いただくか、<a href="https://wa.me/8619880851334" target="_blank">WhatsAppでZprintProに相談</a>して今すぐお見積もり！</p>`,
-  },
+<div class="bg-gray-50 rounded-lg p-4 my-4 space-y-3"><p><strong>Q：最小ロットは？</strong><br/>A：100枚から。小ロットはデジタル（最短当日受取可）、大量ロットはオフセット印刷で単価ダウン。</p><p><strong>Q：サンプルは有料？</strong><br/>A：無料サンプルをご用意。仕上がり確認後に量産へ進めます。</p><p><strong>Q：納期は？海外配送は？</strong><br/>A：DHL Expressで2-4日、グローバル配送対応（アジア工場から）。</p><p><strong>Q：両面印刷や社名ロゴの追加は可能？</strong><br/>A：可能です。両面4色印刷が標準。箔押し・スポットUV・角丸など加工は自由に組み合わせられます。</p></div>
+<p><a href="/ja/category/greeting-cards/">グリーティングカード印刷の全ラインナップ</a>、ウェディングには<a href="/ja/category/wedding-invitations/">ウェディング招待カード</a>もご覧ください。<a href="https://wa.me/8619880851334" target="_blank">WhatsAppでZprintProに相談</a>して無料サンプルをリクエスト！</p>`,
+    },
   },
   // ========== STICKERS ==========
   {
