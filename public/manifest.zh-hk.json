@@ -38,7 +38,7 @@
       "name": "瀏覽產品",
       "short_name": "產品",
       "description": "瀏覽所有印刷產品分類",
-      "url": "/zh-hk/category/business-cards/",
+      "url": "/zh-hk/category/greeting-cards/",
       "icons": [{ "src": "/icon-products.png", "sizes": "96x96" }]
     }
   ],

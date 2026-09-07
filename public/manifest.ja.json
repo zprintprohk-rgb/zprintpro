@@ -2,7 +2,7 @@
   "id": "/ja",
   "name": "ZPrintPro - グローバル印刷サービス",
   "short_name": "ZPrintPro",
-  "description": "ZPrintPro - 香港拠点のカスタム印刷 SaaS。AI見積もり30秒、Airwallex多通貨決済、DHL Express全世界72時間納品（米英豪日韓星）。FSC認証紙、ISO 9001品質保証。名刺・パッケージ・ステッカー。",
+  "description": "ZPrintPro - 香港拠点のカスタム印刷 SaaS。AI見積もり30秒、Airwallex多通貨決済、DHL Express全世界72時間納品（米英豪日韓星）。FSC認証紙、ISO 9001品質保証。グリーティングカード・パッケージ・ステッカー。",
   "start_url": "/ja?source=pwa",
   "scope": "/ja/",
   "display": "standalone",
@@ -38,7 +38,7 @@
       "name": "製品を見る",
       "short_name": "製品",
       "description": "全印刷製品カテゴリを閲覧",
-      "url": "/ja/category/business-cards/",
+      "url": "/ja/category/greeting-cards/",
       "icons": [{ "src": "/icon-products.png", "sizes": "96x96" }]
     }
   ],

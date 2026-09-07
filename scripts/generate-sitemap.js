@@ -30,6 +30,9 @@ const categorySlugs = (() => {
   return [...set];
 })();
 
+// BC-BAN (AGENTS.md §0.0 禁做名片): any business-card URL/image is excluded from sitemaps
+const BC_BAN = (s) => !/business-?card/i.test(s);
+
 const productSlugs = (() => {
   const content = fs.readFileSync(path.join(__dirname, '../src/data/products.ts'), 'utf-8');
   const lines = content.split('\n');
@@ -101,7 +104,7 @@ function buildXml(arr) {
 }
 
 // Unified
-fs.writeFileSync(path.join(__dirname,'../public/sitemap.xml'), buildXml(urls), 'utf-8');
+fs.writeFileSync(path.join(__dirname,'../public/sitemap.xml'), buildXml(urls.filter(u => BC_BAN(u.loc || u))), 'utf-8');
 console.log('sitemap.xml: '+urls.length+' URLs');
 
 // Per-locale
@@ -109,7 +112,7 @@ const files = [];
 locales.forEach(l => {
   const lu = urls.filter(u => u.loc.startsWith(BASE_URL+'/'+l+'/'));
   const fn = 'sitemap-'+l+'.xml';
-  fs.writeFileSync(path.join(__dirname,'../public/',fn), buildXml(lu), 'utf-8');
+  fs.writeFileSync(path.join(__dirname,'../public/',fn), buildXml(lu.filter(u => BC_BAN(u.loc || u))), 'utf-8');
   files.push({ locale:l, filename:fn, count:lu.length });
   console.log(fn+': '+lu.length+' URLs');
 });
@@ -152,7 +155,7 @@ function buildImageSitemap() {
   const imgDir = pathx.join(__dirname, '../public/images');
 
   // Known category slugs (from src/data/products.ts)
-  const knownCategories = ['stickers','flyers','packaging','posters','paper-bags','business-cards','banners','books','menus','envelopes','calendars','red-packets','educational','japan-doujin'];
+  const knownCategories = ['stickers','flyers','packaging','posters','paper-bags','banners','books','menus','envelopes','calendars','red-packets','educational','japan-doujin'];
 
   // Index images by product (slug → { locale: [{url, title}] })
   const productsImg = {};
@@ -164,6 +167,7 @@ function buildImageSitemap() {
     const catPattern = knownCategories.join('|');
     const seedRe = new RegExp(`^zprintpro-(${catPattern})-([a-z0-9\\-]+)-(zh-hk|en|ja)(-\\d+)?\\.(webp|jpg|png)$`);
     fsx.readdirSync(seedDir).forEach((f) => {
+      if (!BC_BAN(f)) return;
       const m = f.match(seedRe);
       if (!m) return;
       const [, category, slug, locale] = m;
@@ -181,6 +185,7 @@ function buildImageSitemap() {
   const japanDir = pathx.join(imgDir, 'japan');
   if (fsx.existsSync(japanDir)) {
     fsx.readdirSync(japanDir).forEach((f) => {
+      if (!BC_BAN(f)) return;
       let m = f.match(/^([a-z0-9\-]+)\.webp$/);
       if (m) {
         const slug = m[1];
@@ -213,7 +218,7 @@ function buildImageSitemap() {
   const locales = ['zh-hk', 'en', 'ja'];
   let xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"\n        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">\n';
   let urlCount = 0;
-  Object.keys(productsImg).sort().forEach((slug) => {
+  Object.keys(productsImg).sort().filter(BC_BAN).forEach((slug) => {
     locales.forEach((locale) => {
       const imgs = productsImg[slug][locale] || [];
       if (imgs.length === 0) return;

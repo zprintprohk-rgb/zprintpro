@@ -404,290 +404,6 @@ const packagingContent: Record<string, CategoryLocaleContent> = {
 // =============================================================================
 // 2. BUSINESS CARDS — 卡片印刷
 // =============================================================================
-const businessCardsContent: Record<string, CategoryLocaleContent> = {
-  'zh-hk': {
-    h2: '香港卡片印刷 — 100張起訂，300g高級紙，24小時急件',
-    coreAdvantages: {
-      title: '核心競爭優勢',
-      items: [
-        {
-          heading: '1. 香港商務首選：專業形象從一張卡片開始',
-          points: [
-            '採用 300g–400g 高級銅版紙、剛古紙、荷蘭白卡、棉紙，配合德國海德堡四色印刷機，色彩準確還原',
-            '滿足「卡片印刷 香港」、「卡片印刷」、「卡片設計」、「商務卡片」等高搜索量關鍵詞需求',
-            '適用於金融、法律、醫療、設計、科技、地產等專業行業',
-          ],
-        },
-        {
-          heading: '2. 極速交貨：上午落單，翌日收貨',
-          points: [
-            '100 張起訂，標準 3–5 個工作日交貨',
-            '24 小時急件服務，上午 11 點前確認稿件，翌日速遞到門',
-            '全港順豐覆蓋：香港島、九龍、新界，企業客戶可安排專人直送',
-          ],
-        },
-        {
-          heading: '3. 高端工藝：燙金、UV、凹凸壓紋、圓角一站式',
-          points: [
-            '燙金／燙銀（金、銀、玫瑰金、香檳金）、局部 UV、凹凸壓紋、啞膠／光膠覆膜',
-            '免費卡片模板下載，專業設計師一對一諮詢',
-            '支持雙面不同設計、QR Code 卡片、NFC 智能卡片',
-          ],
-        },
-      ],
-    },
-    materialTable: {
-      title: '材質工藝詳解',
-      subtitle: '卡片常用紙張與工藝',
-      columns: ['紙張類型', '關鍵特性', '適用場景'],
-      rows: [
-        { material: '300g 銅版紙', features: '色彩鮮豔｜經濟實惠｜啞膠／光膠可選', scenarios: '一般商務｜銷售｜初創企業' },
-        { material: '400g 厚紙', features: '厚實手感｜高級質感｜不易彎曲', scenarios: '高管｜律師｜金融業｜高端服務' },
-        { material: '剛古紙 Conqueror', features: '紋理細膩｜英國進口｜品牌首選', scenarios: '奢侈品牌｜設計師｜藝術家' },
-        { material: '荷蘭白卡', features: '純白無紋｜色彩還原極佳｜簡約風格', scenarios: '科技公司｜建築師｜極簡品牌' },
-        { material: '棉紙 Cotton', features: '柔軟觸感｜環保天然｜凸版印刷絕配', scenarios: '婚禮｜手工品牌｜環保企業' },
-      ],
-    },
-    specialOptions: {
-      title: '特殊加工選項',
-      items: [
-        { name: '燙金／燙銀', description: '局部金屬光澤，提升品牌奢華感，可選金、銀、玫瑰金、香檳金' },
-        { name: '局部 UV', description: '重點元素高光凸顯，觸感立體，視覺衝擊力強' },
-        { name: '凹凸壓紋', description: 'LOGO 或圖案立體浮凸，無需油墨即可呈現質感' },
-        { name: '圓角裁切', description: '1mm–5mm 圓角選擇，柔和專業，避免刮傷' },
-        { name: '雙面異形', description: '正面商務信息，背面品牌故事或 QR Code，一卡雙用' },
-        { name: 'NFC 智能卡片', description: '手機一觸即傳聯絡方式，科技前衛，適合科技行業' },
-      ],
-    },
-    techSpecs: {
-      title: '技術參數詳解',
-      items: [
-        { label: '標準尺寸', value: '90×54mm（ISO 7810 標準），支持 85×55mm、方形 65×65mm 等客製尺寸' },
-        { label: '起訂量', value: '100 張起訂，數碼打樣可 50 張小量測試' },
-        { label: '交期', value: '標準 3–5 工作日；24 小時急件；打樣當日完成' },
-        { label: '檔案要求', value: 'AI / PSD / PDF，300dpi，CMYK，預留 3mm 出血位' },
-        { label: '印刷方式', value: '柯式印刷（大量）、數碼印刷（小量、可變數據）' },
-      ],
-    },
-    serviceNodes: {
-      title: '本地化服務節點',
-      items: [
-        { title: '深圳自有工廠', description: '現代化生產基地，配備海德堡印刷設備，ISO 12647 色彩管理' },
-        { title: '免費設計諮詢', description: '資深設計師一對一服務，從排版到色彩管理全程指導' },
-        { title: '企業月結賬戶', description: '專屬客戶經理、批量優惠、優先排期、月結付款' },
-      ],
-    },
-    buyingGuide: {
-      title: '卡片選購指南',
-      paragraphs: [
-        '選擇卡片紙張時，首先要考慮行業屬性。金融、法律行業適合 400g 厚紙或剛古紙，傳達穩重專業；創意行業可選棉紙或特殊紋理紙，展示個性；科技行業推薦荷蘭白卡，簡約現代。',
-        '工藝選擇上，燙金適合高端品牌，局部 UV 適合強調 LOGO，凹凸壓紋適合極簡設計。建議不要超過兩種工藝組合，避免視覺過於繁複。我們提供免費工藝搭配建議。',
-        '文件準備是關鍵。請確保文字轉曲線、圖片嵌入、色彩模式為 CMYK。如果不確定，可直接上傳設計稿，我們的印前團隊會免費檢查並提供修改建議。',
-        '在香港搜尋「卡片印刷 香港」「卡片燙金」「厚身卡片」的用戶往往同時在意交期與門市／寫字樓收件便利；建議先定下使用場景（展會派發、投行會議、創意作品集），再決定紙厚與工藝數量，並預留時間做數碼樣張確認色彩。',
-      ],
-    },
-    faq: [
-      { q: '卡片印刷最低多少張起？', a: '100 張起訂。數碼打樣可 50 張小量測試，適合初次合作或設計確認。' },
-      { q: '卡片最快多久可以取貨？', a: '24 小時急件服務：上午 11 點前確認稿件，翌日速遞到門。標準交期 3–5 工作日。' },
-      { q: '卡片支持哪些特殊工藝？', a: '燙金（金／銀／玫瑰金／香檳金）、局部 UV、凹凸壓紋、啞膠／光膠覆膜、圓角裁切、打孔、NFC 智能芯片。' },
-      { q: '卡片設計文件有什麼要求？', a: 'AI / PSD / PDF 格式，300dpi，CMYK 色彩模式，預留 3mm 出血位，文字轉曲線，圖片嵌入。' },
-      { q: '可以印刷雙面不同設計的卡片嗎？', a: '可以。雙面異形設計是我們的熱門選項，正面商務信息 + 背面品牌故事或 QR Code。' },
-      { q: '企業批量訂購有優惠嗎？', a: '有。1,000 張以上享批量折扣，企業客戶可申請月結賬戶，專屬客戶經理跟進。' },
-      { q: '卡片可以印 QR Code 嗎？', a: '可以。我們支持可變數據印刷，每張卡片的 QR Code 可以不同（鏈接不同網頁或聯絡方式）。' },
-      { q: '什麼是 NFC 智能卡片？', a: '內置 NFC 芯片的卡片，手機輕觸即可自動保存聯絡方式或打開網站，適合科技行業和前瞻性品牌。' },
-      { q: '香港港島、九龍、新界都可以安排送貨嗎？', a: '可以。支援順豐到付／月結及指定時段派送；港島核心商業區、九龍黃金地段與新界大型屋苑皆可安排。急件建議上午前確認稿件以便排單。' },
-      { q: '可以先網上報價再決定工藝嗎？', a: '可以。請提供數量、紙張克重（300g／400g 等）、單雙面與工藝（啞膠／燙金／UV／圓角等），可先取得分段報價；印前會協助檢查安全線與出血，確保批量無誤。' },
-    ],
-  },
-  en: {
-    h2: 'Business Card Printing — 100 Cards MOQ, 300gsm Premium Stock, 24hr Rush',
-    coreAdvantages: {
-      title: 'Why Choose ZprintPro for Business Cards?',
-      items: [
-        {
-          heading: '1. Your Business Card Specialist: Your Professional Image Starts Here',
-          points: [
-            'Premium 300–400gsm art paper, Conqueror, Dutch white card, and cotton paper. Heidelberg 4-color presses ensure accurate color reproduction.',
-            'Covers high-search keywords: "business card printing online", "name card printing", "business card design", "corporate business cards".',
-            'Perfect for finance, legal, medical, design, tech, and real estate professionals.',
-          ],
-        },
-        {
-          heading: '2. Lightning-Fast Delivery: Order Today, Receive Tomorrow',
-          points: [
-            '100 cards minimum order, standard 3–5 business day delivery.',
-            '24-hour rush service: confirm artwork by 11 AM, ships next day via DHL.',
-            'Worldwide coverage: DHL Express / FedEx 2-4 day delivery. Corporate clients enjoy dedicated delivery.',
-          ],
-        },
-        {
-          heading: '3. Premium Finishes: Foil, UV, Embossing, Rounded Corners',
-          points: [
-            'Foil stamping (gold, silver, rose gold, champagne), spot UV, embossing/debossing, matte/gloss lamination.',
-            'Free business card templates + one-on-one designer consultation.',
-            'Support for dual-sided designs, QR code cards, and NFC smart business cards.',
-          ],
-        },
-      ],
-    },
-    materialTable: {
-      title: 'Material & Craftsmanship Guide',
-      subtitle: 'Popular Business Card Papers and Finishes',
-      columns: ['Paper Type', 'Key Features', 'Best For'],
-      rows: [
-        { material: '300gsm Art Paper', features: 'Vibrant colors | Affordable | Matte/gloss options', scenarios: 'General business | Sales | Startups' },
-        { material: '400gsm Thick Stock', features: 'Substantial feel | Premium quality | Won\'t bend', scenarios: 'Executives | Lawyers | Finance | Luxury services' },
-        { material: 'Conqueror Textured', features: 'Subtle texture | UK imported | Brand favorite', scenarios: 'Luxury brands | Designers | Artists' },
-        { material: 'Dutch White Card', features: 'Pure white | Excellent color | Minimalist', scenarios: 'Tech companies | Architects | Minimalist brands' },
-        { material: 'Cotton Paper', features: 'Soft texture | Eco-friendly | Letterpress-ready', scenarios: 'Weddings | Handmade brands | Eco businesses' },
-      ],
-    },
-    specialOptions: {
-      title: 'Special Finishing Options',
-      items: [
-        { name: 'Foil Stamping', description: 'Metallic luxury finish. Choose gold, silver, rose gold, or champagne foil.' },
-        { name: 'Spot UV', description: 'Glossy raised highlights on key elements for tactile impact.' },
-        { name: 'Embossing / Debossing', description: 'Three-dimensional texture without ink — pure tactile elegance.' },
-        { name: 'Rounded Corners', description: '1mm–5mm radius options. Professional and safe from snagging.' },
-        { name: 'Dual-Sided Design', description: 'Business details on front, brand story or QR code on back.' },
-        { name: 'NFC Smart Card', description: 'Tap-to-share contact details or website. Perfect for tech industry.' },
-      ],
-    },
-    techSpecs: {
-      title: 'Technical Specifications',
-      items: [
-        { label: 'Standard Size', value: '90×54mm (ISO 7810 standard). Custom: 85×55mm, square 65×65mm, etc.' },
-        { label: 'Minimum Order', value: '100 cards. Digital proofing available from 50 cards.' },
-        { label: 'Turnaround', value: 'Standard: 3–5 business days. Rush: 24 hours. Prototyping: same day.' },
-        { label: 'File Requirements', value: 'AI / PSD / PDF, 300dpi, CMYK, 3mm bleed. Text outlined, images embedded.' },
-        { label: 'Print Method', value: 'Offset printing (volume) or digital printing (small batches, variable data).' },
-      ],
-    },
-    serviceNodes: {
-      title: 'Local Service Points',
-      items: [
-        { title: 'Modern Production Facility', description: 'Modern production base at our Asia factory with Heidelberg presses and ISO 12647 color management.' },
-        { title: 'Free Design Consultation', description: 'Senior designers provide one-on-one guidance from layout to color management.' },
-        { title: 'Corporate Account Billing', description: 'Dedicated account manager, volume discounts, priority scheduling, monthly billing.' },
-      ],
-    },
-    buyingGuide: {
-      title: 'Business Card Buying Guide',
-      paragraphs: [
-        'When choosing business card paper, consider your industry. Finance and legal professionals suit 400gsm thick stock or Conqueror for a solid, professional impression. Creative industries can opt for cotton or textured papers to showcase personality. Tech companies prefer Dutch white card for a clean, modern look.',
-        'For finishes, foil stamping suits luxury brands, spot UV emphasizes logos, and embossing works well for minimalist designs. We recommend no more than two finishes combined to avoid visual clutter. Free finish pairing advice is available.',
-        'File preparation is critical. Ensure text is outlined, images are embedded, and the color mode is CMYK. If unsure, simply upload your design — our prepress team checks it for free and provides modification suggestions.',
-        'Users searching for "business card printing online," "foil-stamped cards," and "thick business cards" worldwide often care about turnaround time and convenient office delivery. We recommend defining the use case first (trade shows, investment banking meetings, creative portfolios) before deciding on paper weight and finish quantities, and reserving time for digital proofing to confirm color accuracy.',
-      ],
-    },
-    faq: [
-      { q: 'What is the minimum order for business cards?', a: '100 cards. Digital proofing available from 50 cards for design confirmation or first-time clients.' },
-      { q: 'How fast can I get my business cards?', a: '24-hour rush service: confirm by 11 AM, delivered next day. Standard: 3–5 business days.' },
-      { q: 'What special finishes do you offer?', a: 'Foil stamping (gold/silver/rose gold/champagne), spot UV, embossing/debossing, matte/gloss lamination, rounded corners, hole punching, NFC chips.' },
-      { q: 'What are the design file requirements?', a: 'AI / PSD / PDF at 300dpi, CMYK color mode, 3mm bleed. Text outlined, images embedded.' },
-      { q: 'Can I print different designs on each side?', a: 'Yes. Dual-sided designs are popular — business info on front, brand story or QR code on back.' },
-      { q: 'Are there discounts for bulk orders?', a: 'Yes. Volume discounts on 1,000+ cards. Corporate clients enjoy monthly billing with dedicated account managers.' },
-      { q: 'Can you print QR codes on business cards?', a: 'Yes. We support variable data printing — each card can have a unique QR code linking to different pages or contacts.' },
-      { q: 'What is an NFC smart business card?', a: 'A card with a built-in NFC chip. Tap a phone to automatically save contact details or open a website. Ideal for tech professionals.' },
-      { q: 'Do you deliver worldwide?', a: 'Yes. We deliver worldwide via DHL Express / FedEx in 2-4 business days. Bulk orders can be arranged for warehouse or office delivery.' },
-      { q: 'Can I get a quote before uploading my design file?', a: 'Yes. Submit card size, paper type, quantity, and finishing options for a quote first. After confirmation, upload your AI / PDF file. Our prepress team will check bleed, safe margins, and color mode.' },
-    ],
-  },
-  ja: {
-    h2: '名刺印刷 — 100枚から、300g高級紙、24時間急行',
-    coreAdvantages: {
-      title: 'ZprintPro 名刺の強み',
-      items: [
-        {
-          heading: '1. ビジネス向け：プロの印象は名刺から',
-          points: [
-            '300g–400g高級コート紙、コンカラー紙、オランダ白カード、コットン紙を採用。ハイデルベルグ4色印刷機で正確な色彩再現。',
-            '「名刺印刷」、「卡片設計」、「ビジネスカード」などの高検索ボリュームキーワードをカバー。',
-            '金融、法律、医療、デザイン、テック、不動産などの専門業界に最適。',
-          ],
-        },
-        {
-          heading: '2. 超高速納品：今日注文、明日到着',
-          points: [
-            '最小100枚から、標準3–5営業日納品。',
-            '24時間急行サービス：午前11時までにデータ確定で翌日SFエクスプレス配送。',
-            '日本全国をカバー。法人様は専門配送手配も可能。',
-          ],
-        },
-        {
-          heading: '3. 高級加工：箔押し、UV、エンボス、丸角',
-          points: [
-            '箔押し（金／銀／ローズゴールド／シャンパン）、局部UV、エンボス／デボス、マット／グロスラミネーション。',
-            '無料名刺テンプレート＋デザイナー一对一相談。',
-            '両面異なるデザイン、QRコード名刺、NFCスマート名刺に対応。',
-          ],
-        },
-      ],
-    },
-    materialTable: {
-      title: '材質・工法ガイド',
-      subtitle: '名刺によく使われる紙と加工',
-      columns: ['紙の種類', '主な特徴', '最適な用途'],
-      rows: [
-        { material: '300g コート紙', features: '発色鮮やか｜手頃な価格｜マット／グロス可', scenarios: '一般ビジネス｜営業｜スタートアップ' },
-        { material: '400g 厚紙', features: '厚みのある質感｜高級感｜曲がりにくい', scenarios: '経営者｜弁護士｜金融｜高級サービス' },
-        { material: 'コンカラー紙', features: '繊細な纹理｜英国輸入｜ブランド御用達', scenarios: 'ラグジュアリー｜デザイナー｜アーティスト' },
-        { material: 'オランダ白カード', features: '純白無紋｜色彩再現抜群｜ミニマル', scenarios: 'テック企業｜建築家｜ミニマルブランド' },
-        { material: 'コットン紙', features: '柔らかな触感｜エコ天然｜活版印刷向き', scenarios: 'ウエディング｜手工芸｜環境企業' },
-      ],
-    },
-    specialOptions: {
-      title: '特殊加工オプション',
-      items: [
-        { name: '箔押し', description: '局部に金属光沢の高級感。金、銀、ローズゴールド、シャンパンから選択可。' },
-        { name: '局部UV', description: '重要要素を光沢で強調し、触感も立体的に。' },
-        { name: 'エンボス／デボス', description: 'インクなしでロゴや模様を立体的に表現。' },
-        { name: '丸角裁切', description: '1mm–5mmの丸角選択。プロフェッショナルで安全。' },
-        { name: '両面異なるデザイン', description: '表面にビジネス情報、裏面にブランドストーリーやQRコード。' },
-        { name: 'NFCスマート名刺', description: 'スマホをかざすだけで連絡先を自動保存。テック業界に最適。' },
-      ],
-    },
-    techSpecs: {
-      title: '技術仕様',
-      items: [
-        { label: '標準サイズ', value: '90×54mm（ISO 7810標準）。カスタム：85×55mm、方形65×65mmなど。' },
-        { label: '最小発注数', value: '100枚から。デジタル校正用に50枚の少量サービスあり。' },
-        { label: '納期', value: '標準3–5営業日。急行24時間。サンプル当日完成。' },
-        { label: 'ファイル要件', value: 'AI／PSD／PDF、300dpi、CMYK、3mmのbleed。文字はアウトライン、画像は埋め込み。' },
-        { label: '印刷方式', value: 'オフセット印刷（大量）、デジタル印刷（小ロット、可変データ）。' },
-      ],
-    },
-    serviceNodes: {
-      title: 'ローカルサービス拠点',
-      items: [
-        { title: '自社工場 (アジア)', description: 'アジアにある自社工場。ハイデルベルグ印刷機の稼働を間近で見学可能。' },
-        { title: '無料デザイン相談', description: 'ベテランデザイナーが一对一で、組版から色彩管理まで全程指導。' },
-        { title: '法人月次請求', description: '専任担当者、大口割引、優先スケジュール、月次請求対応。' },
-      ],
-    },
-    buyingGuide: {
-      title: '名刺選び方ガイド',
-      paragraphs: [
-        '名刺の紙を選ぶ際、まず業界属性を考慮しましょう。金融・法律業界には400g厚紙やコンカラー紙が適し、堅実でプロフェッショナルな印象を与えます。クリエイティブ業界はコットン紙や特殊纹理紙で個性をアピール。テック企業にはオランダ白カードがおすすめで、クリーンでモダンな印象になります。',
-        '加工の選択では、箔押しは高級ブランドに、局部UVはロゴ強調に、エンボスはミニマルデザインに最適です。2種類以上の組み合わせは視覚的に煩雑になりやすいので避けることをおすすめします。無料の加工組み合わせ相談をご利用ください。',
-        'ファイル準備が鍵です。文字はアウトライン化、画像は埋め込み、カラーモードはCMYKを確認してください。不安な場合はデザインデータをそのままアップロードください — 当社の印前チームが無料でチェックし、修正提案をいたします。',
-        '「卡片印刷」「燕金卡片」「厚身卡片」を検索するユーザーは、納期とオフィス配送の利便性を重視することが多いです。まず使用シーン（展示会、投資銀行会議、クリエイティブポートフォリオ）を決めてから、紙厚と工苝数量を決定し、カラーの確認のためデジタル校正の時間を確保することをお勧めします。',
-      ],
-    },
-    faq: [
-      { q: '名刺印刷の最小発注数は？', a: '100枚から。デジタル校正用に50枚の少量サービスもあり、初回やデザイン確認に最適です。' },
-      { q: '名刺の最短納期は？', a: '24時間急行サービス：午前11時までにデータ確定で翌日配送。標準は3–5営業日。' },
-      { q: '対応している特殊加工は？', a: '箔押し（金／銀／ローズゴールド／シャンパン）、局部UV、エンボス／デボス、マット／グロスラミネーション、丸角裁切、穴あけ、NFCチップ。' },
-      { q: 'デザインファイルの要件は？', a: 'AI／PSD／PDF、300dpi、CMYKカラーモード、3mmのbleed。文字はアウトライン、画像は埋め込み。' },
-      { q: '両面に違うデザインは可能ですか？', a: 'はい。両面異なるデザインは人気のオプションです。表面にビジネス情報、裏面にブランドストーリーやQRコード。' },
-      { q: '法人の大口注文に割引はありますか？', a: 'はい。1,000枚以上で大口割引。法人様は月次請求が可能で、専任担当者が対応します。' },
-      { q: '名刺にQRコードは印刷できますか？', a: 'はい。可変データ印刷に対応しており、1枚ずつ異なるQRコード（異なるWebページや連絡先）が可能です。' },
-      { q: 'NFCスマート名刺とは？', a: 'NFCチップを内蔵した名刺です。スマホをかざすだけで連絡先を自動保存したり、Webサイトを開いたりできます。テック業界に最適です。' },
-      { q: '日本全国に配送していますか？', a: 'はい。東京・大阪・名古屋など日本全国へ DHL / FedEx で配送します。大口注文は倉庫やオフィスへの配送も調整可能です。' },
-      { q: 'デザインファイルをアップロードする前に見積もりは取得できますか？', a: 'はい。まず名刺サイズ、紙タイプ、数量、加工オプションをご提出ください。確認後、AI／PDFファイルをアップロードします。印前チームがbleed、安全マージン、カラーモードをチェックします。' },
-    ],
-  },
-};
 
 
 // =============================================================================
@@ -1829,7 +1545,7 @@ const envelopesContent: Record<string, CategoryLocaleContent> = {
           ],
         },
         {
-          heading: '2. 特殊紙と加工で、封筒をブランドの名刺に',
+          heading: '2. 特殊紙と加工で、封筒をブランドの顔に',
           points: [
             'クラフト紙、白カード紙、カラー紙、パール紙、テクスチャ紙など20種類以上の特殊紙を選択可能。',
             '箔押し、エンボス、局部UV、デボスなどの加工で、普通の封筒をブランド伝達メディアに変身させます。',
@@ -2824,7 +2540,7 @@ const educationalContent: Record<string, CategoryLocaleContent> = {
 export function getDefaultCategoryContent(categorySlug: string, locale: string): CategoryLocaleContent {
   const nameMap: Record<string, { 'zh-hk': string; en: string; ja: string }> = {
     packaging: { 'zh-hk': '包裝盒印刷', en: 'Packaging', ja: 'パッケージ印刷' },
-    'business-cards': { 'zh-hk': '卡片印刷', en: 'Business Cards', ja: '名刺印刷' },
+    'business-cards': { 'zh-hk': '賀卡印刷', en: 'Greeting Cards', ja: 'グリーティングカード印刷' },
     stickers: { 'zh-hk': '貼紙印刷', en: 'Sticker Printing', ja: 'シール印刷' },
     flyers: { 'zh-hk': '傳單印刷印刷', en: 'Flyer Printing', ja: 'チラシ印刷' },
     posters: { 'zh-hk': '海報印刷', en: 'Poster Printing', ja: 'ポスター印刷' },
@@ -4116,7 +3832,7 @@ const paperBagsContent: Record<string, CategoryLocaleContent> = {
           ],
         },
         {
-          heading: '3. 精湛な工芸で、紙袋をブランドの名刺に',
+          heading: '3. 精湛な工芸で、紙袋をブランドの顔に',
           points: [
             '箔押し、エンボス、局部UV、スクリーン印刷などの多様な加工で、普通の紙袋をブランド伝達メディアに変身させます。',
             '精密な抜き型と袋成型で、耐荷重5–10kg。堅牢で耐久性があります。',
@@ -4647,7 +4363,7 @@ const greetingCardsContent: Record<string, CategoryLocaleContent> = {
     buyingGuide: {
       title: 'Greeting Card Printing Buying Guide',
       paragraphs: [
-        'First, define the use case: holiday gifts choose 3D pop-up (cross-border hero), business cards choose foil 300gsm Conqueror, thank you cards choose cotton + spot UV. Clear use case cuts material and finish budget in half.',
+        'First, define the use case: holiday gifts choose 3D pop-up (cross-border hero), correspondence cards choose foil 300gsm Conqueror, thank you cards choose cotton + spot UV. Clear use case cuts material and finish budget in half.',
         'Holiday card key is design consistency: Christmas / New Year / Valentine cards use unified visual language, customer repurchase rate +30%. Recommend 3-5 templates per season to reduce design cost.',
         'Cross-border hero 3D pop-up cards: 7-day 780K RMB GMV (TikTok Paper Love case), $14.99 retail, ¥7-12 wholesale = 15x margin. 3D pop-up is the cross-border core moat.',
         'FSC certified + soy ink + seed paper (plantable) — three eco selling points. EU / US customers willing to pay 20% premium, matching ESG procurement trends.',
@@ -4769,7 +4485,7 @@ const weddingInvitationsContent: Record<string, CategoryLocaleContent> = {
             points: [
               '2026 龍年香港傳統結婚大年,婚姻登記處預計全年結婚登記超過 50,000 對,帶動婚慶印刷市場規模突破 HK$15 億',
               '4 大場景完整覆蓋:中式傳統龍鳳喜帖、西式燙金邀請卡、教堂婚禮卡、集團婚禮紀念卡,100-500 個小批量定制',
-              '全球婚慶印刷市場 $13B+ (Bonafide 2025),喜帖 $4.29B CAGR 6.3%,是名片市場 ($1.2B) 3.5x 大',
+              '全球婚慶印刷市場 $13B+ (Bonafide 2025),喜帖 $4.29B CAGR 6.3%',
             ],
           },
           {
@@ -4872,7 +4588,7 @@ const weddingInvitationsContent: Record<string, CategoryLocaleContent> = {
             points: [
               '2026 dragon year is Hong Kong traditional peak wedding season, Marriage Registry expects 50,000+ registrations driving HK$1.5 billion wedding printing market',
               '4 scenarios fully covered: Chinese dragon-phoenix, Western foil, church ceremony, group wedding cards, 50-500 piece small-batch custom',
-              'Global wedding printing market $13B+ (Bonafide 2025), invitation submarket $4.29B with 6.3% CAGR, 3.5x larger than business card market',
+              'Global wedding printing market $13B+ (Bonafide 2025), invitation submarket $4.29B with 6.3% CAGR',
             ],
           },
           {
@@ -4975,7 +4691,7 @@ const weddingInvitationsContent: Record<string, CategoryLocaleContent> = {
             points: [
               '2026辰年は香港伝統的な結婚ピークシーズン、香港婚姻登記処は年間5万件超の結婚登録が見込まれHK$15億のブライダル印刷市場を形成',
               '4大シーン完全対応：中華式龍鳳・西洋式箔押し・教会式・合同式紅包、50〜500個小ロット',
-              '世界ブライダル印刷市場$13B+ (Bonafide 2025)、招待状サブマーケット$4.29B 6.3% CAGR、名刺市場 ($1.2B) の3.5倍',
+              '世界ブライダル印刷市場$13B+ (Bonafide 2025)、招待状サブマーケット$4.29B 6.3% CAGR',
             ],
           },
           {
@@ -5347,7 +5063,6 @@ const placeCardsContent: Record<string, CategoryLocaleContent> = {
 
 export const categorySeoContent: CategorySeoData = {
   packaging: packagingContent,
-  'business-cards': businessCardsContent,
   stickers: stickersContent,
   flyers: flyersContent,
   posters: postersContent,

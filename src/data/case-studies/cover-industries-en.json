@@ -55,8 +55,8 @@
         },
         {
           "title": "Pet Store Brand Materials",
-          "summary": "Pet stores / pet grooming chains, full brand materials (stickers + posters + hang tags + business cards + coupons), 100-500 sets. For store opening / seasonal promotions.",
-          "products": ["Store Stickers", "Posters", "Hang Tags", "Business Cards", "Coupons"],
+          "summary": "Pet stores / pet grooming chains, full brand materials (stickers + posters + hang tags + greeting cards + coupons), 100-500 sets. For store opening / seasonal promotions.",
+          "products": ["Store Stickers", "Posters", "Hang Tags", "Greeting Cards", "Coupons"],
           "moq": "100+",
           "delivery": "SF Express local 2-3 days"
         }

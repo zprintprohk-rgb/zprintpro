@@ -100,7 +100,7 @@ const translations = {
   },
   ja: {
     title: "無料お見積もり · 30秒返信 | 智印港 ZprintPro",
-    description: "印刷の無料お見積もりはZprintProへ。ステッカー、包装箱、名刺、書籍、ポスター。72時間グローバル配送。WhatsAppで今すぐお問い合わせください。",
+    description: "印刷の無料お見積もりはZprintProへ。ステッカー、包装箱、グリーティングカード、書籍、ポスター。72時間グローバル配送。WhatsAppで今すぐお問い合わせください。",
     h1: "無料お見積もり",
     subtitle: "フォームまたはWhatsAppでお問い合わせ、24時間以内に返信. [24 時間 SLA 適用条件を見る](/ja/faq/)",
     quoteTitle: "無料お見積もり",

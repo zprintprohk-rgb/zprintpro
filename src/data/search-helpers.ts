@@ -31,9 +31,9 @@ export const TRAD_SIMP_PAIRS: Array<[string, string]> = [
 // 例: 用户搜 "贴纸" → 系统视同 "纸卡" (HK) / "名刺" (JP)
 export const BUSINESS_ALIASES: Array<{ primary: string; aliases: string[] }> = [
   // 业务卡 (HK: 纸卡 / CN: 贴纸 / JP: 名刺) — 全部互通
-  { primary: '纸卡', aliases: ['贴纸', '名刺', 'card', 'cards', 'sticker', 'stickers', '名卡', '卡片'] },
-  { primary: '贴纸', aliases: ['纸卡', '名刺', 'card', 'cards', 'sticker', '名卡'] },
-  { primary: '名刺', aliases: ['纸卡', '贴纸', 'card', 'cards', 'sticker'] },
+  { primary: '纸卡', aliases: ['贴纸', 'card', 'cards', 'sticker', 'stickers', '卡片'] },
+  { primary: '贴纸', aliases: ['纸卡', 'card', 'cards', 'sticker'] },
+  { primary: '卡片', aliases: ['名片', '咭片', '名刺', '名卡', 'card', 'cards', 'sticker'] },
   // 宣传单张 (HK: 傳單印刷 / CN: 宣传单张 / JP: チラシ) — 已有字符映射, 增 aliases 兜底
   { primary: '傳單印刷', aliases: ['flyer', 'flyers', 'leaflet', 'leaflets', '传单', '宣傳單', '宣傳'] },
   { primary: '宣传单张', aliases: ['flyer', 'flyers', 'leaflet', '传单', '宣传单'] },

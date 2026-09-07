@@ -194,7 +194,7 @@ const legacyBlogNames: Record<string, Record<Locale, string>> = {
   'sticker-design': {
     'zh-hk': '贴纸設計指南',
     en: 'Sticker Design Guide',
-    ja: '名刺デザインガイド',
+    ja: 'ステッカーデザインガイド',
   },
   'packaging-trends': {
     'zh-hk': '包裝設計趨勢',

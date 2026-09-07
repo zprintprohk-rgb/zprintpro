@@ -21,7 +21,7 @@ export const altTagMap: Record<string, Record<string, string>> = {
   'greeting-cards': {
     'zh-hk': '贴纸印刷-燙金棉紙局部UV-香港-繁體中文',
     en: 'greeting-card-printing-foil-cotton-spot-uv-hong-kong-english',
-    ja: '名刺印刷-箔押しコットン局部UV-香港-日本語',
+    ja: 'カード印刷-箔押しコットン局部UV-香港-日本語',
   },
   booklets: {
     'zh-hk': '畫冊印刷-騎馬釘膠裝覆膜-香港-繁體中文',

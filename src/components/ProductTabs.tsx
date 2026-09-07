@@ -157,7 +157,7 @@ export function ProductTabs({ product, locale }: ProductTabsProps) {
   const t = translations[locale];
   const description = getProductDescription(product, locale);
   // 用 slug 索引（educational 4 SKU 各自獨立規格）
-  const specs = specsBySlug[product.slug] || specsBySlug[product.category] || specsBySlug['business-cards'];
+  const specs = specsBySlug[product.slug] || specsBySlug[product.category] || specsBySlug['greeting-cards'];
 
   const getSpec = (key: 'material' | 'size' | 'finish') => {
     return specs[key][locale] || specs[key]['en'];

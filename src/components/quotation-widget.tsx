@@ -27,7 +27,7 @@ interface QuotationWidgetProps {
 
 const productTypeLabels: Record<Locale, Record<ProductType, string>> = {
   'zh-hk': {
-    'business-card': '卡片',
+    'business-card': '賀卡', // BC-BAN §0.0: legacy product-type key relabeled
     'sticker': '貼紙',
     'flyer': '傳單印刷',
     'paper-bag': '紙袋',
@@ -35,7 +35,7 @@ const productTypeLabels: Record<Locale, Record<ProductType, string>> = {
     'poster': '海報',
   },
   'en': {
-    'business-card': 'Cards',
+    'business-card': 'Greeting Cards', // BC-BAN §0.0
     'sticker': 'Sticker',
     'flyer': 'Flyer',
     'paper-bag': 'Paper Bag',
@@ -43,7 +43,7 @@ const productTypeLabels: Record<Locale, Record<ProductType, string>> = {
     'poster': 'Poster',
   },
   'ja': {
-    'business-card': 'カード',
+    'business-card': 'グリーティングカード', // BC-BAN §0.0
     'sticker': 'シール',
     'flyer': 'チラシ',
     'paper-bag': '紙袋',

@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-09-02T01:17:11.157Z",
+  "timestamp": "2026-09-06T09:16:28.781Z",
   "host": "zprintpro.com",
   "key": "b4743800634c73a56fc734e58d77a5d9",
   "keyLocation": "https://zprintpro.com/b4743800634c73a56fc734e58d77a5d9.txt",
@@ -125,7 +125,7 @@
       "https://zprintpro.com/ja/blog/certificate-printing-guide"
     ]
   },
-  "responseStatus": 202,
-  "responseStatusText": "Accepted",
+  "responseStatus": 200,
+  "responseStatusText": "OK",
   "success": true
 }

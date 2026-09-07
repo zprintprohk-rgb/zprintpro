@@ -119,7 +119,7 @@ const translations: Record<string, {
     categories: [
       { key: 'company-news', label: '会社ニュース' },
       { key: 'sticker', label: 'ステッカー知識' },
-      { key: 'card', label: '名刺知識' },
+      { key: 'card', label: 'カード知識' },
       { key: 'packaging', label: '包装知識' },
       { key: 'printing', label: '印刷技術' },
       { key: 'design', label: 'デザインチップ' },

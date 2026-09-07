@@ -1,5 +1,22 @@
 # ZprintPro（智印云）— AI 协作指南
 
+
+## §0.0 最高规则：禁做品类 — 名片印刷 (K3 2026-09-08 01:15 终裁, 凌驾一切旧规则)
+
+> **条款**：**zprintpro.com 不做名片印刷（business cards / 咭片 / 名刺 / name cards）。**
+> v22 (7347c503) 已将全部名片 SKU 1:1 改名为贺卡（greeting-cards），该裁决为终局：任何车道、任何 Agent、任何会话都**不得**把名片重新引入站内——包括但不限于：产品数据、SEO title/description/H1/keywords/FAQ、分类内容、sitemap、manifest、案例、博客、内链、图片 alt、重定向目标。
+> 例外（允许保留的唯一形态）：**301/308 重定向**——旧名片 URL 必须永久收拢到贺卡或相邻品类（见 §0.0.1），这是唯一允许「名片」字样出现的地方（重定向源 URL）。
+
+### §0.0.1 执行细则
+1. **承接口径（终裁）**：名片流量承接主品类 = **贺卡 greeting-cards**（用户 9/8 原话「把全部名片改成了贺卡印刷」）；stickers 为次选（9/5 策略文档 L48 历史口径，被本条款取代）。
+2. **禁止行为清单**：新建名片 SKU/分类页/博客/FAQ/schema；在 SEO 字段填名片词；把名片 URL 提交进任何 sitemap；在 UI（hero/manifest/案例/文案）展示名片产品。
+3. **兜底检测与自动纠正**：每次 push 前跑名片扫描（关键词：`名片|咭片|business-card|Business Card|名刺|name card`，范围：src/ + public/ + 根配置，豁免：.bak/备份/GSC数据/docs 历史快照/redirect 源行）。命中 > 0 即阻断 push，先清再发。扫描脚本：`.openclaw/tmp/bc_sweep.py`（仓库侧复制为 `scripts/check-bc-ban.mjs` 由门童执行）。
+4. **历史豁免**：docs/ 下历史审计快照、GSC 导出、旧版备份（*.bak*）不算命中——它们不是线上事实，但**不得**被复制回活数据。
+
+### §0.0.2 违规追溯（本条款为什么存在）
+- 2026-08-18 v22 (7347c503)：6 SKU 名片→贺卡 1:1 改名（用户拍板「要做贺卡」）。
+- 2026-09-05 方案 B：products.ts 12 处名片尺寸残留修复；导流 19 处 → stickers。
+- 2026-09-08 复发根因确认：**改了展示层，没改规则层与生成层**——孤儿 SEO 条目 8+1、CSV regen 源 78 行名片、sitemap-image 提交 166 处名片图、分类内容死代码块 15KB、manifest PWA 入口。本条款 + 清理 commit 即终局修复。
 > **项目**: F:\zprintpro-nextjs\ (Next.js 印刷 SaaS)
 > **类型**: 8 locale 印刷电商 (zh-hk / en / ja)
 > **部署**: Cloudflare Pages + Airwallex 支付

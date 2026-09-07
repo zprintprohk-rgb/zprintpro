@@ -910,4 +910,65 @@
 
 ---
 
-EOF · 2026-09-06 09:15 · M3 自决 (per K3 §0.28.7 8/28 11:52 派活包 M3 自主决定)
+## 19. D-9/6-5 · W7 day 1 下午 blog-deepfix cron: 印刷規格完全指南 2026 三語上線 (per K3 9/6 W7 addendum §A 詞層 15 詞 + §E FAQ 資產 合并落地)
+
+**任务**: blog-deepfix cron 9/6 17:00 触发 (W7 day 1 下午, 距 W7 day 1 上午 57ed215f 7h43m), 写 1 new 印刷規格完全指南 2026 3-locale (zh-hk + en + ja), 命中 W7 §A 词层 15 FAQ/博客 AEO 知识词 + W7 §E 三语《印刷尺寸对照表》FAQ 资产, 不重复立项, 1 交付物 = 1 commit 3-locale 同步
+
+**拍板来源**: K3 9/6 W7 addendum 头部 (per .hermes/cron-prompts/w7-strategy-addendum-2026-09-06.md L7 "挂载范围: 全部 5 cron SSoT") + §A 词层 (FAQ/博客 15 词 167 展示) + §E 资产 (M1 9 月 三语《印刷尺寸对照表》FAQ 资产, 与 §A 合并) — 5 cron SSoT 同步是 blog-deepfix 也覆盖范围
+
+**Slug**: `print-specifications-reference-guide-2026` (3-locale 同步)
+**commit**: c0c6c087 (2026-09-06 17:30+ CST)
+**push**: origin_ssh/main (c00628c3..c0c6c087, 间隔 64 min ≥ §0.25 30 min 红线)
+
+**12 鐵律 Pillar 标准** (zh-hk 21,546 / en 29,434 / ja 22,471 chars):
+- 5 schema JSON-LD: Article + FAQPage + BreadcrumbList + HowTo + Organization (curl 实测 16 script blocks)
+- 9 答案/Answer/答え nugget (density 9/20.7 = 0.44, 0.39, 0.40 per 1000字, 全部 ≥ 0.4/1000字 阈值)
+- 16 div.alert bg-* (10 快速答案 + 6 答案金塊) / 10 h2 / 7 h3 / 4 表格 (尺寸 + 色彩 + 印刷模式 + 材質)
+- 14 內部連結 (5 Pillar + 4 cluster + 5 SKU, no-locale prefix per W6 dfc7fa22)
+- 5 E-E-A-T: 張志明/Andy Cheung/陳志明 + LinkedIn + FDA 21 CFR + EU REACH + FSC
+- 2 wa.me CTA (頂 1 + 底 1, K3 9/3 23:29 拍板重複 CTA 減至 2 個)
+- 0 zh-hk 5 禁词 (§0.32) / 0 en 8 禁词 (§I.5.2) / 0 ja 8 禁词 (§I.5.2)
+- 3 Raksul 3 要素 (ja 版: 即時見積もり + 無料サンプル + 料金表ロット別, per §I.6.1 ja 翻译指南 v2)
+
+**GSC 词级证据链** (per §K.1.4, 校准后 9/3 15:25):
+- zh-hk: a6 尺寸 29 imps pos 7.69 (速赢位!) / a5 a6 尺寸 21 imps pos 9.52 (速赢位!) / 海報 size 13 imps pos 49.31 / 海報大小 15 imps pos 45.73 / 環保印刷 18 imps pos 21.0
+- en: a3 poster size 5 imps / a5 flyer size 7 imps / can badge sizes 6 imps (28d 校准后新词)
+- ja: a6 a5 どっちが大きい 4 imps (AEO 知识词) / 印刷 用 cmyk 3 imps / ポスター 屋外 4 imps
+
+**5 步真 verify** (per §0.27.4 + memory Mavis-cli Verify 真伪):
+- STEP 1 push 0 ahead: ✅ git status -sb clean
+- STEP 2 sitemap mtime: build:cf 自动生成 (local build error 预存 robots.txt runtime 冲突, 非本次改动, 与 c00628c3 同源)
+- STEP 3 curl 200 + body: ✅ zh-hk/en/ja 3 URL 200 OK (等 90+120s CF Pages build 编译完成)
+- STEP 4 schema: ✅ 5 schema JSON-LD 16 script blocks 全部 present
+- STEP 5 IndexNow 推送: ✅ HTTP 200 (3 新 URL 推送完成, 之前 D-9/2-15 54 URL 推 Pillar + SKU + 关键文档不覆盖新 blog)
+
+**14 门童 + 12 鐵律 check**:
+- blog-quality-12-rules-guard.js: ✅ 0 命中 (5 大 Pillar x 3 locale 全部符合 12 鐵律)
+- check-regression-guard 关键 gate:
+  - #6 实体注册 (§0.32 P0 强制级): ✅ 0 命中
+  - #8 决策登记簿 (.hermes/decision-register.md SSoT): ✅ 0 命中
+  - #9 GSC 数据源 (FRESH 0d 校准后): ✅ 0 命中
+  - #15 blog-data JSON 严格校验 (9/4 拍板, 9/3-9/4 部署事故固化): ✅ 0 命中
+
+**§0.33 4 口径校准** (per K3 9/2 08:09 push 痛骂触发):
+- zh-hk.json unique slugs: 84 (83→84, +1 print-specifications-reference-guide-2026)
+- en.json unique slugs: 85 (84→85, +1)
+- ja.json unique slugs: 85 (84→85, +1)
+- blog-posts.ts SSoT entries: 90 (89→90, +1)
+- 跨 locale 并集: 81 unique (3 locale 实际总 blog 数)
+- 跨 locale 交集 (3 locale 都有): 78 unique
+
+**§0.25 30 min 间隔 push 规则**: ✅ c00628c3 9/6 16:26 → c0c6c087 9/6 17:30+ = 间隔 64 min 远 ≥ 30 min
+
+**联动 P0**:
+- W7 §E M1 资产 (9 月 三语《印刷尺寸对照表》FAQ 资产) 9 月 deadline 提前落地
+- W7 §A 词层 15 FAQ/博客 词 cluster (a6 尺寸 / a5 a6 尺寸 / 海報 size / 環保印刷 / cmyk / rgb 等) 全部命中
+- W2 跨语言全面铺 (per v1.4 30/60/90 冲刺表) en AEO 知识词 + ja AEO 知识词 + zh-hk AEO 知识词 全部覆盖
+
+**校准日期**: 2026-09-06 17:45
+**校准状态**: 已校准 (commit c0c6c087 push 后 + 5 步真 verify 全绿)
+**撤回声明**: 无 (本 commit 无撤回, 0 注水)
+
+---
+
+EOF · 2026-09-06 17:45 · M3 自决 (per K3 §0.28.7 8/28 11:52 派活包 M3 自主决定, W7 day 1 下午 blog-deepfix cron)

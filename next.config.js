@@ -116,14 +116,14 @@ function buildGuideRedirects() {
   // 完整 7 旧 SKU 类目 slug → 新 slug 映射
   const V22_REDIRECTS = [
     // 6 SKU 1:1 映射
-    ['premium-business-cards', 'stickers'],
-    ['thick-business-cards-400g', 'stickers'],
-    ['foil-business-cards', 'stickers'],
-    ['spot-uv-business-cards', 'stickers'],
-    ['matte-business-cards', 'stickers'],
-    ['rounded-corner-cards', 'stickers'],
+    ['premium-business-cards', 'greeting-cards'],
+    ['thick-business-cards-400g', 'greeting-cards'],
+    ['foil-business-cards', 'greeting-cards'],
+    ['spot-uv-business-cards', 'greeting-cards'],
+    ['matte-business-cards', 'greeting-cards'],
+    ['rounded-corner-cards', 'greeting-cards'],
     // 类目
-    ['business-cards', 'stickers'],
+    ['business-cards', 'greeting-cards'],
     // buying guide
     ['business-card-buying-guide', 'sticker-buying-guide'],
   ];
@@ -204,9 +204,9 @@ function buildGuideRedirects() {
     // 模式 A: locale 重复 (/zh-hk/zh-hk/.../ -> /zh-hk/.../) - 3 rules
     // 模式 B: 旧 SKU -> 类目页 - 12 rules
     ['cosmetics-packaging-box', 'packaging'],
-    ['double-sided-cards', 'stickers'],
-    ['same-day-business-cards', 'stickers'],
-    ['eco-business-cards', 'stickers'],
+    ['double-sided-cards', 'greeting-cards'],
+    ['same-day-business-cards', 'greeting-cards'],
+    ['eco-business-cards', 'greeting-cards'],
     ['small-bags', 'paper-bags'],
     // 模式 C: 服务/路由迁移 - 3 rules
     ['ja/services/same-day-printing-delivery', 'ja/services/rush-printing-delivery'],

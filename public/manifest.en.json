@@ -38,7 +38,7 @@
       "name": "Browse Products",
       "short_name": "Products",
       "description": "Browse all printing product categories",
-      "url": "/en/category/business-cards/",
+      "url": "/en/category/greeting-cards/",
       "icons": [{ "src": "/icon-products.png", "sizes": "96x96" }]
     }
   ],
