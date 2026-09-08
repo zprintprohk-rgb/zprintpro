@@ -348,7 +348,7 @@
       "expected_words_zh": 800,
       "expected_faqs": 4,
       "queued_at": "2026-07-06",
-      "priority_boost": 1,
+      "priority_boost": 2,
       "gsc_signal_source": "GSC orphan imps 123, rank 38-57"
     },
     {
@@ -371,7 +371,7 @@
       "expected_words_zh": 800,
       "expected_faqs": 4,
       "queued_at": "2026-07-06",
-      "priority_boost": 1,
+      "priority_boost": 3,
       "gsc_signal_source": "GSC high_potential imps 43, rank 20.56 (close to page 2)"
     },
     {
@@ -394,7 +394,7 @@
       "expected_words_zh": 750,
       "expected_faqs": 4,
       "queued_at": "2026-07-06",
-      "priority_boost": 1,
+      "priority_boost": 2,
       "gsc_signal_source": "GSC high_potential imps 43, rank 34.7"
     },
     {
@@ -2533,6 +2533,49 @@
       "build_quota_consumed": 1,
       "cron_session_id": "mvs_38fa4b081faa473c929730c6f6d8b2cf",
       "report_path": ".hermes/logs/2026-07-29-gsc-feedback.md"
+    },
+    {
+      "date": "2026-09-08",
+      "event": "gsc-feedback-loop v7 cron 22:43 (新执行层首次运行, M3 出局后 autoclaw/deepseek hermes 承接)",
+      "data_source": "GSC数据/gsc-fresh-2026-09-03.json (canonical, K3 9/3 15:22 上传 16 xlsx, 校准 2026-09-03T15:25+08:00); STALE 5d, 9/10 校准窗口刷新",
+      "official_ctr_baseline": "7d 全站 CTR 0.54% (9/3 官方口径; 旧 0.79% 已撤回禁用)",
+      "boost_changes": [
+        {
+          "id": "Q-P1-02",
+          "slug": "restaurant-menu-printing-guide",
+          "old": 1,
+          "new": 3,
+          "reason": "餐牌印刷 7d 18imp pos12.39 0click → T1窗(5-15速赢) boost+3 (§2 K3 8/30 12:37); 28d pos15.27 同窗确认",
+          "data_source": "GSC数据/gsc-fresh-2026-09-03.json (canonical, K3 9/3 15:22 上传 16 xlsx, 校准 2026-09-03T15:25+08:00)"
+        },
+        {
+          "id": "Q-P1-03",
+          "slug": "lai-see-packet-printing-guide",
+          "old": 1,
+          "new": 2,
+          "reason": "利是封印刷 7d 22imp pos27.32 0click → T2窗(16-30培育) boost+2 + R5 季节军令 (W7 9/30 08:00 必发, 2027 农曆新年 1/29)",
+          "data_source": "GSC数据/gsc-fresh-2026-09-03.json (canonical, K3 9/3 15:22 上传 16 xlsx, 校准 2026-09-03T15:25+08:00)"
+        },
+        {
+          "id": "Q-P1-01",
+          "slug": "retail-poster-printing-guide",
+          "old": 1,
+          "new": 2,
+          "reason": "海報印刷 7d 43imp pos17.79 0click = 全站零点击头号词 → T2窗 boost+2; B7 W4 选题 poster 印刷 (9/16-9/22) 协同",
+          "data_source": "GSC数据/gsc-fresh-2026-09-03.json (canonical, K3 9/3 15:22 上传 16 xlsx, 校准 2026-09-03T15:25+08:00)"
+        },
+        {
+          "id": "Q-P2-03",
+          "slug": "doujin-circle-printing-guide",
+          "old": 2,
+          "new": 2,
+          "reason": "doujinshi printing en 7d 9imp pos17.11 striking 维持 boost=2; ja 同人誌印刷 7d 0 展示 (ja 新生儿正常, 不降级)",
+          "data_source": "GSC数据/gsc-fresh-2026-09-03.json (canonical, K3 9/3 15:22 上传 16 xlsx, 校准 2026-09-03T15:25+08:00)"
+        }
+      ],
+      "banned_bc_words": "名片印刷/business card printing/名刺印刷 激安 按 §0.0 终裁剔除 (K3 9/8 01:15)",
+      "lists_summary": "零点击高展示 hk 47/en 7/ja 1; CTR 负向异常 hk 7/en 2/ja 0; striking(pos5-20) hk 33/en 8/ja 1; 详见 gsc_feedback_2026_09_08 段",
+      "commit": "见本次 gsc-feedback cron commit (2026-09-08 晚)"
     }
   ],
   "last_tier_switch_run": {
@@ -8281,5 +8324,1365 @@
       "2026-08-19 15:00 M3 GSC v4 weekly feedback v2: matrix v2026-08-01-v1 + gsc_targeting_weekly_v2 (8/4-8/10 4 markets 3203 imps + P0-2 301 5/5 PASS 恢复 + 智印港 brand 2/2/100%/rank 1.0 + Q-005 priority_boost=2 维持 daily 8/20 必写候选 + 0 候选常态延续 27 天 + 拍板 12 升级 GSC 数据获取路径 utf-8-sig 解码)",
       "2026-08-12 15:00 M3 GSC v4 weekly feedback: matrix v2026-08-01-v1 + gsc_targeting_weekly_v1 (Q-005 priority_boost=2 维持 daily 必写 + P0-2 301 1/5 PASS 升级 K3)"
     ]
-  }
+  },
+  "gsc_feedback_2026_09_08": {
+    "version": "gsc-feedback-v7-2026-09-08",
+    "run_at": "2026-09-08T22:43:00+08:00",
+    "cron": "gsc-feedback-loop 22:43 Asia/Shanghai (v7 新执行层 autoclaw/deepseek hermes)",
+    "data_source": {
+      "canonical_file": "GSC数据/gsc-fresh-2026-09-03.json",
+      "calibration_date": "2026-09-03T15:25:00+08:00",
+      "windows": "24h/7d/28d/3m × 全站/hk/en/ja = 16 dataset, Top 100 queries/dataset",
+      "staleness": "STALE 5d (freshnessGateHours=72, lastBuild 9/3 15:25; 下次校准 9/10 per v4 §5.1)",
+      "official_ctr_7d_all": 0.0054,
+      "ctr_note": "9/3 官方口径 7d 全站 CTR 0.54% (旧 0.79% 已撤回, 禁再用)"
+    },
+    "site_stats": {
+      "24h": {
+        "clicks": 3,
+        "imps": 387,
+        "ctr": 0.0078,
+        "wpos": 25.11,
+        "queries": 195
+      },
+      "7d": {
+        "clicks": 12,
+        "imps": 2207,
+        "ctr": 0.0054,
+        "wpos": 29.94,
+        "queries": 534
+      },
+      "28d": {
+        "clicks": 41,
+        "imps": 7618,
+        "ctr": 0.0054,
+        "wpos": 34.62,
+        "queries": 1000
+      },
+      "3m": {
+        "clicks": 65,
+        "imps": 17129,
+        "ctr": 0.0038,
+        "wpos": 38.41,
+        "queries": 1000
+      }
+    },
+    "money_word_map_v1_reconciliation": {
+      "hk:食品包裝印刷": {
+        "7d": {
+          "clicks": 0.0,
+          "imps": 38.0,
+          "ctr": 0.0,
+          "pos": 5.29
+        },
+        "28d": {
+          "clicks": 0.0,
+          "imps": 109.0,
+          "ctr": 0.0,
+          "pos": 16.57
+        },
+        "3m": {
+          "clicks": 0.0,
+          "imps": 344.0,
+          "ctr": 0.0,
+          "pos": 36.85
+        },
+        "tier_window": "T1窗(5-15速赢)"
+      },
+      "hk:即日印刷": {
+        "7d": {
+          "clicks": 0.0,
+          "imps": 13.0,
+          "ctr": 0.0,
+          "pos": 7.85
+        },
+        "28d": {
+          "clicks": 0.0,
+          "imps": 35.0,
+          "ctr": 0.0,
+          "pos": 9.57
+        },
+        "3m": {
+          "clicks": 2.0,
+          "imps": 89.0,
+          "ctr": 0.0225,
+          "pos": 14.52
+        },
+        "tier_window": "T1窗(5-15速赢)"
+      },
+      "hk:餐牌印刷": {
+        "7d": {
+          "clicks": 0.0,
+          "imps": 18.0,
+          "ctr": 0.0,
+          "pos": 12.39
+        },
+        "28d": {
+          "clicks": 0.0,
+          "imps": 66.0,
+          "ctr": 0.0,
+          "pos": 15.27
+        },
+        "3m": {
+          "clicks": 0.0,
+          "imps": 204.0,
+          "ctr": 0.0,
+          "pos": 17.42
+        },
+        "tier_window": "T1窗(5-15速赢)"
+      },
+      "hk:紙袋印刷": {
+        "7d": {
+          "clicks": 0.0,
+          "imps": 19.0,
+          "ctr": 0.0,
+          "pos": 12.53
+        },
+        "28d": {
+          "clicks": 0.0,
+          "imps": 67.0,
+          "ctr": 0.0,
+          "pos": 14.45
+        },
+        "3m": {
+          "clicks": 0.0,
+          "imps": 269.0,
+          "ctr": 0.0,
+          "pos": 20.76
+        },
+        "tier_window": "T1窗(5-15速赢)"
+      },
+      "hk:海報印刷即日": {
+        "7d": null,
+        "28d": null,
+        "3m": null,
+        "tier_window": "NONE"
+      },
+      "hk:食品包裝訂製": {
+        "7d": {
+          "clicks": 0.0,
+          "imps": 13.0,
+          "ctr": 0.0,
+          "pos": 13.62
+        },
+        "28d": {
+          "clicks": 0.0,
+          "imps": 39.0,
+          "ctr": 0.0,
+          "pos": 17.77
+        },
+        "3m": {
+          "clicks": 0.0,
+          "imps": 162.0,
+          "ctr": 0.0,
+          "pos": 20.48
+        },
+        "tier_window": "T1窗(5-15速赢)"
+      },
+      "hk:doujinshi 印刷": {
+        "7d": null,
+        "28d": null,
+        "3m": null,
+        "tier_window": "NONE"
+      },
+      "hk:china catalog 印刷": {
+        "7d": null,
+        "28d": null,
+        "3m": null,
+        "tier_window": "NONE"
+      },
+      "hk:宣傳單張印刷": {
+        "7d": {
+          "clicks": 0.0,
+          "imps": 36.0,
+          "ctr": 0.0,
+          "pos": 29.53
+        },
+        "28d": {
+          "clicks": 0.0,
+          "imps": 137.0,
+          "ctr": 0.0,
+          "pos": 29.31
+        },
+        "3m": {
+          "clicks": 1.0,
+          "imps": 416.0,
+          "ctr": 0.0024,
+          "pos": 35.05
+        },
+        "tier_window": "T2窗(16-30培育)"
+      },
+      "hk:貼紙印刷": {
+        "7d": {
+          "clicks": 0.0,
+          "imps": 37.0,
+          "ctr": 0.0,
+          "pos": 29.24
+        },
+        "28d": {
+          "clicks": 0.0,
+          "imps": 133.0,
+          "ctr": 0.0,
+          "pos": 35.14
+        },
+        "3m": {
+          "clicks": 0.0,
+          "imps": 407.0,
+          "ctr": 0.0,
+          "pos": 40.15
+        },
+        "tier_window": "T2窗(16-30培育)"
+      },
+      "hk:喜帖印刷": {
+        "7d": null,
+        "28d": null,
+        "3m": null,
+        "tier_window": "NONE"
+      },
+      "hk:禮盒印刷": {
+        "7d": null,
+        "28d": null,
+        "3m": null,
+        "tier_window": "NONE"
+      },
+      "hk:月餅盒印刷": {
+        "7d": null,
+        "28d": null,
+        "3m": null,
+        "tier_window": "NONE"
+      },
+      "hk:證書印刷": {
+        "7d": null,
+        "28d": {
+          "clicks": 1.0,
+          "imps": 18.0,
+          "ctr": 0.0556,
+          "pos": 10.72
+        },
+        "3m": {
+          "clicks": 5.0,
+          "imps": 30.0,
+          "ctr": 0.1667,
+          "pos": 13.5
+        },
+        "tier_window": "T1窗(5-15速赢)"
+      },
+      "hk:貼紙訂製": {
+        "7d": {
+          "clicks": 0.0,
+          "imps": 11.0,
+          "ctr": 0.0,
+          "pos": 24.09
+        },
+        "28d": {
+          "clicks": 0.0,
+          "imps": 48.0,
+          "ctr": 0.0,
+          "pos": 24.48
+        },
+        "3m": {
+          "clicks": 0.0,
+          "imps": 132.0,
+          "ctr": 0.0,
+          "pos": 40.69
+        },
+        "tier_window": "T2窗(16-30培育)"
+      },
+      "en:small batch stickers": {
+        "7d": {
+          "clicks": 0.0,
+          "imps": 7.0,
+          "ctr": 0.0,
+          "pos": 6.43
+        },
+        "28d": {
+          "clicks": 0.0,
+          "imps": 24.0,
+          "ctr": 0.0,
+          "pos": 5.5
+        },
+        "3m": {
+          "clicks": 0.0,
+          "imps": 52.0,
+          "ctr": 0.0,
+          "pos": 6.69
+        },
+        "tier_window": "T1窗(5-15速赢)"
+      },
+      "en:small batch sticker printing": {
+        "7d": {
+          "clicks": 0.0,
+          "imps": 23.0,
+          "ctr": 0.0,
+          "pos": 8.04
+        },
+        "28d": {
+          "clicks": 0.0,
+          "imps": 53.0,
+          "ctr": 0.0,
+          "pos": 11.64
+        },
+        "3m": {
+          "clicks": 0.0,
+          "imps": 59.0,
+          "ctr": 0.0,
+          "pos": 12.24
+        },
+        "tier_window": "T1窗(5-15速赢)"
+      },
+      "en:small batch custom stickers": {
+        "7d": {
+          "clicks": 0.0,
+          "imps": 6.0,
+          "ctr": 0.0,
+          "pos": 10.5
+        },
+        "28d": {
+          "clicks": 0.0,
+          "imps": 27.0,
+          "ctr": 0.0,
+          "pos": 11.48
+        },
+        "3m": {
+          "clicks": 0.0,
+          "imps": 28.0,
+          "ctr": 0.0,
+          "pos": 11.57
+        },
+        "tier_window": "T1窗(5-15速赢)"
+      },
+      "en:fluorescent stickers": {
+        "7d": {
+          "clicks": 0.0,
+          "imps": 8.0,
+          "ctr": 0.0,
+          "pos": 6.88
+        },
+        "28d": {
+          "clicks": 0.0,
+          "imps": 15.0,
+          "ctr": 0.0,
+          "pos": 9.6
+        },
+        "3m": {
+          "clicks": 0.0,
+          "imps": 22.0,
+          "ctr": 0.0,
+          "pos": 8.91
+        },
+        "tier_window": "T1窗(5-15速赢)"
+      },
+      "en:china catalog printing": {
+        "7d": {
+          "clicks": 0.0,
+          "imps": 18.0,
+          "ctr": 0.0,
+          "pos": 17.0
+        },
+        "28d": {
+          "clicks": 1.0,
+          "imps": 64.0,
+          "ctr": 0.0156,
+          "pos": 18.58
+        },
+        "3m": {
+          "clicks": 1.0,
+          "imps": 71.0,
+          "ctr": 0.0141,
+          "pos": 19.25
+        },
+        "tier_window": "T2窗(16-30培育)"
+      },
+      "en:custom packaging boxes": {
+        "7d": null,
+        "28d": null,
+        "3m": null,
+        "tier_window": "NONE"
+      },
+      "en:sticker labels": {
+        "7d": null,
+        "28d": null,
+        "3m": null,
+        "tier_window": "NONE"
+      },
+      "en:die cut stickers": {
+        "7d": null,
+        "28d": null,
+        "3m": null,
+        "tier_window": "NONE"
+      },
+      "en:vinyl stickers": {
+        "7d": null,
+        "28d": null,
+        "3m": null,
+        "tier_window": "NONE"
+      },
+      "ja:ダイカット ステッカー 防水": {
+        "7d": null,
+        "28d": {
+          "clicks": 0.0,
+          "imps": 5.0,
+          "ctr": 0.0,
+          "pos": 9.2
+        },
+        "3m": {
+          "clicks": 0.0,
+          "imps": 12.0,
+          "ctr": 0.0,
+          "pos": 4.42
+        },
+        "tier_window": "T1窗(5-15速赢)"
+      },
+      "ja:特急印刷 激安": {
+        "7d": {
+          "clicks": 0.0,
+          "imps": 3.0,
+          "ctr": 0.0,
+          "pos": 23.33
+        },
+        "28d": {
+          "clicks": 0.0,
+          "imps": 12.0,
+          "ctr": 0.0,
+          "pos": 19.0
+        },
+        "3m": {
+          "clicks": 0.0,
+          "imps": 12.0,
+          "ctr": 0.0,
+          "pos": 19.0
+        },
+        "tier_window": "T2窗(16-30培育)"
+      },
+      "ja:チラシ印刷 早い": {
+        "7d": {
+          "clicks": 0.0,
+          "imps": 9.0,
+          "ctr": 0.0,
+          "pos": 27.89
+        },
+        "28d": {
+          "clicks": 0.0,
+          "imps": 13.0,
+          "ctr": 0.0,
+          "pos": 27.08
+        },
+        "3m": {
+          "clicks": 0.0,
+          "imps": 13.0,
+          "ctr": 0.0,
+          "pos": 27.08
+        },
+        "tier_window": "T2窗(16-30培育)"
+      },
+      "ja:クラフト紙 パッケージ印刷": {
+        "7d": {
+          "clicks": 0.0,
+          "imps": 9.0,
+          "ctr": 0.0,
+          "pos": 27.89
+        },
+        "28d": {
+          "clicks": 0.0,
+          "imps": 32.0,
+          "ctr": 0.0,
+          "pos": 27.88
+        },
+        "3m": {
+          "clicks": 0.0,
+          "imps": 46.0,
+          "ctr": 0.0,
+          "pos": 29.8
+        },
+        "tier_window": "T2窗(16-30培育)"
+      },
+      "ja:同人誌印刷": {
+        "7d": null,
+        "28d": null,
+        "3m": null,
+        "tier_window": "NONE"
+      },
+      "ja:ステッカー印刷": {
+        "7d": null,
+        "28d": null,
+        "3m": null,
+        "tier_window": "NONE"
+      },
+      "ja:パッケージ印刷": {
+        "7d": null,
+        "28d": null,
+        "3m": null,
+        "tier_window": "NONE"
+      },
+      "ja:印刷 激安": {
+        "7d": null,
+        "28d": null,
+        "3m": null,
+        "tier_window": "NONE"
+      },
+      "ja:ステッカー オリジナル": {
+        "7d": null,
+        "28d": null,
+        "3m": null,
+        "tier_window": "NONE"
+      }
+    },
+    "extra_tracked_words_9_2_map": {
+      "hk:大信封": {
+        "7d": {
+          "clicks": 0.0,
+          "imps": 8.0,
+          "ctr": 0.0,
+          "pos": 5.38
+        },
+        "28d": {
+          "clicks": 0.0,
+          "imps": 48.0,
+          "ctr": 0.0,
+          "pos": 3.15
+        }
+      },
+      "hk:樣本印刷": {
+        "7d": null,
+        "28d": null
+      },
+      "hk:月曆": {
+        "7d": null,
+        "28d": null
+      },
+      "hk:利是封": {
+        "7d": null,
+        "28d": null
+      },
+      "hk:包裝盒訂製": {
+        "7d": {
+          "clicks": 0.0,
+          "imps": 16.0,
+          "ctr": 0.0,
+          "pos": 32.12
+        },
+        "28d": {
+          "clicks": 0.0,
+          "imps": 64.0,
+          "ctr": 0.0,
+          "pos": 29.39
+        }
+      },
+      "hk:紗袋": {
+        "7d": null,
+        "28d": null
+      },
+      "hk:海報": {
+        "7d": null,
+        "28d": null
+      },
+      "hk:a1 海報": {
+        "7d": null,
+        "28d": null
+      },
+      "hk:a2 海報": {
+        "7d": {
+          "clicks": 0.0,
+          "imps": 3.0,
+          "ctr": 0.0,
+          "pos": 1.0
+        },
+        "28d": null
+      },
+      "en:school exercise book": {
+        "7d": null,
+        "28d": null
+      },
+      "en:saddle stitch": {
+        "7d": null,
+        "28d": null
+      },
+      "en:menu printing": {
+        "7d": null,
+        "28d": null
+      },
+      "en:sticker printing": {
+        "7d": null,
+        "28d": null
+      },
+      "en:custom stickers": {
+        "7d": null,
+        "28d": null
+      },
+      "ja:教材 印刷製本": {
+        "7d": null,
+        "28d": {
+          "clicks": 0.0,
+          "imps": 38.0,
+          "ctr": 0.0,
+          "pos": 52.03
+        }
+      },
+      "ja:カタログ": {
+        "7d": null,
+        "28d": null
+      },
+      "ja:両面カラー": {
+        "7d": null,
+        "28d": null
+      },
+      "ja:印刷会社": {
+        "7d": null,
+        "28d": null
+      },
+      "ja:パッケージ": {
+        "7d": null,
+        "28d": null
+      },
+      "ja:ステッカー": {
+        "7d": null,
+        "28d": null
+      }
+    },
+    "banned_business_card_words_removed": {
+      "rule": "§0.0 禁做品类终裁 (K3 2026-09-08 01:15, 凌驾一切旧规则) — 带钱词地图 v1 原豁免 3 词正式剔除, 永不入 queue/title/内容",
+      "removed": [
+        "名片印刷 (zh-hk, 原 v1 豁免)",
+        "business card printing (en, 原 v1 豁免)",
+        "名刺印刷 激安 (ja, 原 v1 豁免)"
+      ],
+      "redirect_note": "旧名片 URL 唯一允许形态 = 301/308 → greeting-cards 承接 (9/8 42d897b2 已修复 404 回归, 9/10 校准复核清零)"
+    },
+    "zero_click_high_impression_7d": {
+      "hk": [
+        {
+          "query": "海報印刷",
+          "imps": 43.0,
+          "pos": 17.79
+        },
+        {
+          "query": "食品包裝印刷",
+          "imps": 38.0,
+          "pos": 5.29
+        },
+        {
+          "query": "貼紙印刷",
+          "imps": 37.0,
+          "pos": 29.24
+        },
+        {
+          "query": "宣傳單張印刷",
+          "imps": 36.0,
+          "pos": 29.53
+        },
+        {
+          "query": "月曆印刷",
+          "imps": 32.0,
+          "pos": 18.16
+        },
+        {
+          "query": "宣傳單張",
+          "imps": 31.0,
+          "pos": 36.42
+        },
+        {
+          "query": "印海報",
+          "imps": 29.0,
+          "pos": 23.38
+        },
+        {
+          "query": "條碼紙",
+          "imps": 29.0,
+          "pos": 42.62
+        },
+        {
+          "query": "a6 尺寸",
+          "imps": 26.0,
+          "pos": 7.38
+        },
+        {
+          "query": "車身廣告",
+          "imps": 26.0,
+          "pos": 46.62
+        },
+        {
+          "query": "貼紙",
+          "imps": 24.0,
+          "pos": 42.79
+        },
+        {
+          "query": "利是封印刷",
+          "imps": 22.0,
+          "pos": 27.32
+        },
+        {
+          "query": "紙袋印刷",
+          "imps": 19.0,
+          "pos": 12.53
+        },
+        {
+          "query": "餐牌印刷",
+          "imps": 18.0,
+          "pos": 12.39
+        },
+        {
+          "query": "貼紙設計",
+          "imps": 18.0,
+          "pos": 13.94
+        },
+        {
+          "query": "騎馬釘印刷",
+          "imps": 18.0,
+          "pos": 14.72
+        },
+        {
+          "query": "戶外貼紙",
+          "imps": 18.0,
+          "pos": 14.78
+        },
+        {
+          "query": "印書",
+          "imps": 18.0,
+          "pos": 30.28
+        },
+        {
+          "query": "包裝盒",
+          "imps": 18.0,
+          "pos": 30.39
+        },
+        {
+          "query": "騎馬釘",
+          "imps": 17.0,
+          "pos": 19.18
+        },
+        {
+          "query": "紙盒印刷",
+          "imps": 17.0,
+          "pos": 38.47
+        },
+        {
+          "query": "訂做紙袋",
+          "imps": 16.0,
+          "pos": 16.94
+        },
+        {
+          "query": "紙袋訂製",
+          "imps": 16.0,
+          "pos": 25.0
+        },
+        {
+          "query": "亞加力匙扣訂製",
+          "imps": 16.0,
+          "pos": 26.5
+        },
+        {
+          "query": "包裝盒訂製",
+          "imps": 16.0,
+          "pos": 32.12
+        },
+        {
+          "query": "禮盒訂製",
+          "imps": 16.0,
+          "pos": 38.81
+        },
+        {
+          "query": "月歷印刷",
+          "imps": 15.0,
+          "pos": 16.53
+        },
+        {
+          "query": "poster 印刷",
+          "imps": 15.0,
+          "pos": 21.93
+        },
+        {
+          "query": "透明貼",
+          "imps": 15.0,
+          "pos": 23.87
+        },
+        {
+          "query": "月曆訂製",
+          "imps": 15.0,
+          "pos": 24.6
+        },
+        {
+          "query": "包裝盒印刷",
+          "imps": 15.0,
+          "pos": 35.93
+        },
+        {
+          "query": "易拉架製作",
+          "imps": 15.0,
+          "pos": 68.93
+        },
+        {
+          "query": "珠光紙",
+          "imps": 14.0,
+          "pos": 1.0
+        },
+        {
+          "query": "防水貼紙",
+          "imps": 14.0,
+          "pos": 7.57
+        },
+        {
+          "query": "印刷紙袋",
+          "imps": 14.0,
+          "pos": 13.29
+        },
+        {
+          "query": "海報與印刷",
+          "imps": 14.0,
+          "pos": 16.86
+        },
+        {
+          "query": "食品印刷",
+          "imps": 14.0,
+          "pos": 23.36
+        },
+        {
+          "query": "騎馬釘書刊",
+          "imps": 14.0,
+          "pos": 31.71
+        },
+        {
+          "query": "摺頁印刷",
+          "imps": 14.0,
+          "pos": 36.71
+        },
+        {
+          "query": "紙盒訂製",
+          "imps": 14.0,
+          "pos": 48.14
+        },
+        {
+          "query": "即日印刷",
+          "imps": 13.0,
+          "pos": 7.85
+        },
+        {
+          "query": "食品包裝訂製",
+          "imps": 13.0,
+          "pos": 13.62
+        },
+        {
+          "query": "邊度有紙袋買",
+          "imps": 11.0,
+          "pos": 7.45
+        },
+        {
+          "query": "小冊子印刷",
+          "imps": 11.0,
+          "pos": 10.73
+        },
+        {
+          "query": "貼紙訂製",
+          "imps": 11.0,
+          "pos": 24.09
+        },
+        {
+          "query": "座檯月曆",
+          "imps": 11.0,
+          "pos": 36.27
+        },
+        {
+          "query": "可移貼紙",
+          "imps": 10.0,
+          "pos": 16.0
+        }
+      ],
+      "en": [
+        {
+          "query": "small batch label printing",
+          "imps": 25.0,
+          "pos": 26.76
+        },
+        {
+          "query": "small batch sticker printing",
+          "imps": 23.0,
+          "pos": 8.04
+        },
+        {
+          "query": "china catalog printing",
+          "imps": 18.0,
+          "pos": 17.0
+        },
+        {
+          "query": "catalog printing china",
+          "imps": 15.0,
+          "pos": 20.73
+        },
+        {
+          "query": "small quantity label printing",
+          "imps": 14.0,
+          "pos": 58.57
+        },
+        {
+          "query": "calendar sizes",
+          "imps": 10.0,
+          "pos": 42.4
+        },
+        {
+          "query": "custom foil stickers",
+          "imps": 10.0,
+          "pos": 53.2
+        }
+      ],
+      "ja": [
+        {
+          "query": "両面カラー印刷",
+          "imps": 13.0,
+          "pos": 39.46
+        }
+      ]
+    },
+    "ctr_anomaly_7d": {
+      "hk": {
+        "negative": [
+          {
+            "query": "食品包裝印刷",
+            "imps": 38.0,
+            "pos": 5.29,
+            "ctr": 0
+          },
+          {
+            "query": "a6 尺寸",
+            "imps": 26.0,
+            "pos": 7.38,
+            "ctr": 0
+          },
+          {
+            "query": "珠光紙",
+            "imps": 14.0,
+            "pos": 1.0,
+            "ctr": 0
+          },
+          {
+            "query": "防水貼紙",
+            "imps": 14.0,
+            "pos": 7.57,
+            "ctr": 0
+          },
+          {
+            "query": "即日印刷",
+            "imps": 13.0,
+            "pos": 7.85,
+            "ctr": 0
+          },
+          {
+            "query": "邊度有紙袋買",
+            "imps": 11.0,
+            "pos": 7.45,
+            "ctr": 0
+          },
+          {
+            "query": "大信封",
+            "imps": 8.0,
+            "pos": 5.38,
+            "ctr": 0
+          }
+        ],
+        "positive": [
+          {
+            "query": "信封印刷",
+            "imps": 5.0,
+            "clicks": 1.0,
+            "pos": 5.8,
+            "ctr": 0.2
+          },
+          {
+            "query": "智印港",
+            "imps": 4.0,
+            "clicks": 4.0,
+            "pos": 1.25,
+            "ctr": 1.0
+          },
+          {
+            "query": "poster printing",
+            "imps": 3.0,
+            "clicks": 1.0,
+            "pos": 27.33,
+            "ctr": 0.3333
+          }
+        ]
+      },
+      "en": {
+        "negative": [
+          {
+            "query": "small batch sticker printing",
+            "imps": 23.0,
+            "pos": 8.04,
+            "ctr": 0
+          },
+          {
+            "query": "fluorescent stickers",
+            "imps": 8.0,
+            "pos": 6.88,
+            "ctr": 0
+          }
+        ],
+        "positive": []
+      },
+      "ja": {
+        "negative": [],
+        "positive": []
+      }
+    },
+    "striking_distance_7d_pos5_20": {
+      "hk": [
+        {
+          "query": "海報印刷",
+          "imps": 43.0,
+          "clicks": 0.0,
+          "pos": 17.79,
+          "ctr": 0.0
+        },
+        {
+          "query": "食品包裝印刷",
+          "imps": 38.0,
+          "clicks": 0.0,
+          "pos": 5.29,
+          "ctr": 0.0
+        },
+        {
+          "query": "月曆印刷",
+          "imps": 32.0,
+          "clicks": 0.0,
+          "pos": 18.16,
+          "ctr": 0.0
+        },
+        {
+          "query": "a6 尺寸",
+          "imps": 26.0,
+          "clicks": 0.0,
+          "pos": 7.38,
+          "ctr": 0.0
+        },
+        {
+          "query": "紙袋印刷",
+          "imps": 19.0,
+          "clicks": 0.0,
+          "pos": 12.53,
+          "ctr": 0.0
+        },
+        {
+          "query": "餐牌印刷",
+          "imps": 18.0,
+          "clicks": 0.0,
+          "pos": 12.39,
+          "ctr": 0.0
+        },
+        {
+          "query": "貼紙設計",
+          "imps": 18.0,
+          "clicks": 0.0,
+          "pos": 13.94,
+          "ctr": 0.0
+        },
+        {
+          "query": "騎馬釘印刷",
+          "imps": 18.0,
+          "clicks": 0.0,
+          "pos": 14.72,
+          "ctr": 0.0
+        },
+        {
+          "query": "戶外貼紙",
+          "imps": 18.0,
+          "clicks": 0.0,
+          "pos": 14.78,
+          "ctr": 0.0
+        },
+        {
+          "query": "騎馬釘",
+          "imps": 17.0,
+          "clicks": 0.0,
+          "pos": 19.18,
+          "ctr": 0.0
+        },
+        {
+          "query": "訂做紙袋",
+          "imps": 16.0,
+          "clicks": 0.0,
+          "pos": 16.94,
+          "ctr": 0.0
+        },
+        {
+          "query": "月歷印刷",
+          "imps": 15.0,
+          "clicks": 0.0,
+          "pos": 16.53,
+          "ctr": 0.0
+        },
+        {
+          "query": "防水貼紙",
+          "imps": 14.0,
+          "clicks": 0.0,
+          "pos": 7.57,
+          "ctr": 0.0
+        },
+        {
+          "query": "印刷紙袋",
+          "imps": 14.0,
+          "clicks": 0.0,
+          "pos": 13.29,
+          "ctr": 0.0
+        },
+        {
+          "query": "海報與印刷",
+          "imps": 14.0,
+          "clicks": 0.0,
+          "pos": 16.86,
+          "ctr": 0.0
+        },
+        {
+          "query": "即日印刷",
+          "imps": 13.0,
+          "clicks": 0.0,
+          "pos": 7.85,
+          "ctr": 0.0
+        },
+        {
+          "query": "食品包裝訂製",
+          "imps": 13.0,
+          "clicks": 0.0,
+          "pos": 13.62,
+          "ctr": 0.0
+        },
+        {
+          "query": "邊度有紙袋買",
+          "imps": 11.0,
+          "clicks": 0.0,
+          "pos": 7.45,
+          "ctr": 0.0
+        },
+        {
+          "query": "小冊子印刷",
+          "imps": 11.0,
+          "clicks": 0.0,
+          "pos": 10.73,
+          "ctr": 0.0
+        },
+        {
+          "query": "可移貼紙",
+          "imps": 10.0,
+          "clicks": 0.0,
+          "pos": 16.0,
+          "ctr": 0.0
+        },
+        {
+          "query": "環保材質貼紙",
+          "imps": 9.0,
+          "clicks": 0.0,
+          "pos": 18.11,
+          "ctr": 0.0
+        },
+        {
+          "query": "大信封",
+          "imps": 8.0,
+          "clicks": 0.0,
+          "pos": 5.38,
+          "ctr": 0.0
+        },
+        {
+          "query": "包裝食品 裡印",
+          "imps": 8.0,
+          "clicks": 0.0,
+          "pos": 19.75,
+          "ctr": 0.0
+        },
+        {
+          "query": "大紙袋",
+          "imps": 7.0,
+          "clicks": 0.0,
+          "pos": 6.0,
+          "ctr": 0.0
+        },
+        {
+          "query": "a1 印刷 即日",
+          "imps": 7.0,
+          "clicks": 0.0,
+          "pos": 7.43,
+          "ctr": 0.0
+        },
+        {
+          "query": "膠片餐牌",
+          "imps": 7.0,
+          "clicks": 0.0,
+          "pos": 7.71,
+          "ctr": 0.0
+        },
+        {
+          "query": "pvc貼紙",
+          "imps": 6.0,
+          "clicks": 0.0,
+          "pos": 6.33,
+          "ctr": 0.0
+        },
+        {
+          "query": "a5 a6 尺寸",
+          "imps": 6.0,
+          "clicks": 0.0,
+          "pos": 9.5,
+          "ctr": 0.0
+        },
+        {
+          "query": "信封印刷",
+          "imps": 5.0,
+          "clicks": 1.0,
+          "pos": 5.8,
+          "ctr": 0.2
+        },
+        {
+          "query": "急件",
+          "imps": 5.0,
+          "clicks": 0.0,
+          "pos": 8.0,
+          "ctr": 0.0
+        },
+        {
+          "query": "順豐急件",
+          "imps": 5.0,
+          "clicks": 0.0,
+          "pos": 10.4,
+          "ctr": 0.0
+        },
+        {
+          "query": "a6 size尺寸",
+          "imps": 5.0,
+          "clicks": 0.0,
+          "pos": 10.8,
+          "ctr": 0.0
+        },
+        {
+          "query": "環保印刷",
+          "imps": 5.0,
+          "clicks": 0.0,
+          "pos": 19.2,
+          "ctr": 0.0
+        }
+      ],
+      "en": [
+        {
+          "query": "small batch sticker printing",
+          "imps": 23.0,
+          "clicks": 0.0,
+          "pos": 8.04,
+          "ctr": 0.0
+        },
+        {
+          "query": "china catalog printing",
+          "imps": 18.0,
+          "clicks": 0.0,
+          "pos": 17.0,
+          "ctr": 0.0
+        },
+        {
+          "query": "doujinshi printing",
+          "imps": 9.0,
+          "clicks": 0.0,
+          "pos": 17.11,
+          "ctr": 0.0
+        },
+        {
+          "query": "fluorescent stickers",
+          "imps": 8.0,
+          "clicks": 0.0,
+          "pos": 6.88,
+          "ctr": 0.0
+        },
+        {
+          "query": "z print",
+          "imps": 8.0,
+          "clicks": 0.0,
+          "pos": 12.25,
+          "ctr": 0.0
+        },
+        {
+          "query": "small batch stickers",
+          "imps": 7.0,
+          "clicks": 0.0,
+          "pos": 6.43,
+          "ctr": 0.0
+        },
+        {
+          "query": "catalogue printing china",
+          "imps": 7.0,
+          "clicks": 0.0,
+          "pos": 17.71,
+          "ctr": 0.0
+        },
+        {
+          "query": "small batch custom stickers",
+          "imps": 6.0,
+          "clicks": 0.0,
+          "pos": 10.5,
+          "ctr": 0.0
+        }
+      ],
+      "ja": [
+        {
+          "query": "pvc シール",
+          "imps": 8.0,
+          "clicks": 0.0,
+          "pos": 18.5,
+          "ctr": 0.0
+        }
+      ]
+    },
+    "priority_boost_changes": [
+      {
+        "id": "Q-P1-02",
+        "slug": "restaurant-menu-printing-guide",
+        "old": 1,
+        "new": 3,
+        "reason": "餐牌印刷 7d 18imp pos12.39 0click → T1窗(5-15速赢) boost+3 (§2 K3 8/30 12:37); 28d pos15.27 同窗确认",
+        "data_source": "GSC数据/gsc-fresh-2026-09-03.json (canonical, K3 9/3 15:22 上传 16 xlsx, 校准 2026-09-03T15:25+08:00)"
+      },
+      {
+        "id": "Q-P1-03",
+        "slug": "lai-see-packet-printing-guide",
+        "old": 1,
+        "new": 2,
+        "reason": "利是封印刷 7d 22imp pos27.32 0click → T2窗(16-30培育) boost+2 + R5 季节军令 (W7 9/30 08:00 必发, 2027 农曆新年 1/29)",
+        "data_source": "GSC数据/gsc-fresh-2026-09-03.json (canonical, K3 9/3 15:22 上传 16 xlsx, 校准 2026-09-03T15:25+08:00)"
+      },
+      {
+        "id": "Q-P1-01",
+        "slug": "retail-poster-printing-guide",
+        "old": 1,
+        "new": 2,
+        "reason": "海報印刷 7d 43imp pos17.79 0click = 全站零点击头号词 → T2窗 boost+2; B7 W4 选题 poster 印刷 (9/16-9/22) 协同",
+        "data_source": "GSC数据/gsc-fresh-2026-09-03.json (canonical, K3 9/3 15:22 上传 16 xlsx, 校准 2026-09-03T15:25+08:00)"
+      },
+      {
+        "id": "Q-P2-03",
+        "slug": "doujin-circle-printing-guide",
+        "old": 2,
+        "new": 2,
+        "reason": "doujinshi printing en 7d 9imp pos17.11 striking 维持 boost=2; ja 同人誌印刷 7d 0 展示 (ja 新生儿正常, 不降级)",
+        "data_source": "GSC数据/gsc-fresh-2026-09-03.json (canonical, K3 9/3 15:22 上传 16 xlsx, 校准 2026-09-03T15:25+08:00)"
+      }
+    ],
+    "priority_boost_holds": [
+      {
+        "id": "Q-005",
+        "boost": 2,
+        "reason": "跨境运输箱指南 — 直接对应词 7d 无新展示证据, boost=2 维持 (8/26 v3 口径延续)"
+      },
+      {
+        "b7_w3_calendar": "boost=4 维持",
+        "reason": "月曆印刷 7d 32imp pos18.16 0click + 月歷印刷 15imp pos16.53 → R5 9/15 硬截止, 明日 9/9 W3 窗口开启, daily-content 必发"
+      }
+    ],
+    "b7_coverage_check": {
+      "海報印刷 43imp": "B7 W4 poster 印刷选题 (9/16-9/22) 已覆盖, 按排期不插队",
+      "月曆印刷+月歷印刷 47imp": "B7 W3 月曆 (9/9-9/15, R5 9/15 硬截止) 已覆盖, 明日必发",
+      "邊度有紙袋買/紙袋印刷": "B7 W3 紙袋印刷 2026 趨勢 已覆盖",
+      "small batch label printing 25imp": "Q-P1-04 product-label-printing-guide 在 queue (boost=1)",
+      "未覆盖词": [
+        "條碼紙 29imp pos42.62 (labels 相邻, 待 K3 拍板是否立项)",
+        "車身廣告 26imp pos46.62 (疑似超经营范围, 仅记录)",
+        "騎馬釘印刷/騎馬釘 35imp pos14-19 (装订工艺, 与教材/同人誌簇相关, 建议入 Q4 评估)"
+      ]
+    },
+    "calibration_day_check": "2026-09-08 非校准日 (v4 §5.1: 9/10 Pillar 收录验证+§2.3 抓取状态表补齐 / 9/12-13 8/30 批验证窗判定) → ③④ 不触发, 9/10 cron 执行",
+    "verification_window_note": "当前处 8/30 批验证窗内 (9/5-9/12): title/keywords 只读, 本次零改文案, 仅数据回灌"
+  },
+  "last_gsc_feedback_update": "2026-09-08T22:43:00+08:00"
 }
