@@ -35,6 +35,18 @@ function buildGuideRedirects() {
       permanent: true,
     });
 
+    // 2026-09-09 404 审计: pillar 幽灵 slug 精准承接(置于通配前, 保证 1 跳) —
+    // flyer-guide/packaging-guide 是 /guide/ 路由 pillar 页, 无博客内容,
+    // 通配会把它们送进 /blog/<slug>/ 404 (9/9 线上实测 308→404)
+    const PILLAR_GHOST_301 = [
+      ['flyer-guide', 'flyer-printing-guide'],
+      ['packaging-guide', 'packaging-box-custom-guide'],
+    ];
+    for (const [ghost, target] of PILLAR_GHOST_301) {
+      rules.push({ source: `/${locale}/guide/${ghost}`, destination: `/${locale}/blog/${target}/`, permanent: true });
+      rules.push({ source: `/${locale}/guide/${ghost}/`, destination: `/${locale}/blog/${target}/`, permanent: true });
+    }
+
     // 2) /guide/<slug>/ → /blog/<slug>/（通配）
     //    用 :slug+ 强制至少 1 个字符，避免吞掉裸 /guide/（虽然上面已经处理了，双保险）
     //    destination 同样以 / 结尾，跟 trailingSlash: true 对齐
@@ -555,6 +567,32 @@ function buildGuideRedirects() {
     }
     // legacy WP-style blog taxonomy stubs -> blog index
     rules.push({ source: `/${locale}/blog/category/:slug+`, destination: `/${locale}/blog/`, permanent: true });
+  }
+
+  // 2026-09-09 全站 404 审计修复 (next.config 精准 301):
+  // ① 幽灵 URL 根因: generate-sitemap.js 把 pillar-content.ts 全部 12 个 slug 混入博客 sitemap,
+  //    其中 flyer-guide/packaging-guide 是 /guide/ 路由的 pillar 页 slug, 无博客内容;
+  //    7/15 的 /guide/:slug+ 通配 301 把它们两跳送进 404 (线上实测 308→404, 9/9)。
+  // ② packaging-box-guide: 外部引擎/旧外链猜测 URL, 从未存在 (sitemap 无/源码零引用/GSC 零流量, 用户 9/9 报障)。
+  // 承接目标三语 200 实证 (flyer-printing-guide / packaging-box-custom-guide), GSC 3 slug 0 流量故直接 301 无流量损失。
+  const GHOST_BLOG_301 = [
+    ['flyer-guide', 'flyer-printing-guide'],
+    ['packaging-guide', 'packaging-box-custom-guide'],
+    ['packaging-box-guide', 'packaging-box-custom-guide'],
+  ];
+  for (const locale of LOCALES) {
+    for (const [ghost, target] of GHOST_BLOG_301) {
+      rules.push({
+        source: `/${locale}/blog/${ghost}`,
+        destination: `/${locale}/blog/${target}/`,
+        permanent: true,
+      });
+      rules.push({
+        source: `/${locale}/blog/${ghost}/`,
+        destination: `/${locale}/blog/${target}/`,
+        permanent: true,
+      });
+    }
   }
 
   return rules;

@@ -326,7 +326,7 @@
 /cdn-cgi/* / 301
 # SECTION 9: 其他 404 修复
 # =====================
-/zh-hk/blog/flyer-guide/ /zh-hk/guide/ 301
+/zh-hk/blog/flyer-guide/ /zh-hk/blog/flyer-printing-guide/ 301
 
 # =====================
 # SECTION 10: 旧平台兼容
@@ -336,3 +336,13 @@
 /zh-hk/blog/business-card-design/ /zh-hk/blog/sticker-design/ 301
 /en/blog/business-card-design/ /en/blog/sticker-design/ 301
 /ja/blog/business-card-design/ /ja/blog/sticker-design/ 301
+
+# 2026-09-09 404 审计: 幽灵博客 slug 边缘层承接 (flyer-guide/packaging-guide 无博客内容; packaging-box-guide 从未存在)
+/en/blog/flyer-guide/ /en/blog/flyer-printing-guide/ 301
+/ja/blog/flyer-guide/ /ja/blog/flyer-printing-guide/ 301
+/zh-hk/blog/packaging-guide/ /zh-hk/blog/packaging-box-custom-guide/ 301
+/en/blog/packaging-guide/ /en/blog/packaging-box-custom-guide/ 301
+/ja/blog/packaging-guide/ /ja/blog/packaging-box-custom-guide/ 301
+/zh-hk/blog/packaging-box-guide/ /zh-hk/blog/packaging-box-custom-guide/ 301
+/en/blog/packaging-box-guide/ /en/blog/packaging-box-custom-guide/ 301
+/ja/blog/packaging-box-guide/ /ja/blog/packaging-box-custom-guide/ 301

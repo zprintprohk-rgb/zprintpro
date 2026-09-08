@@ -55,7 +55,20 @@ const productSlugs = (() => {
 const legacyBlogSlugs = extractSlugsFromTs(path.join(__dirname, '../src/data/blog-posts.ts'), /slug:\s*['"]([^'"]+)['"],/g);
 // Also include cluster slugs from pillar-content (may overlap, deduped by Set)
 const clusterSlugs = extractSlugsFromTs(path.join(__dirname, '../src/data/pillar-content.ts'), /slug:\s*['"]([^'"]+)['"],/g);
-const allBlogSlugs = [...new Set([...legacyBlogSlugs, ...clusterSlugs])];
+// 2026-09-09 404 审计修复: pillar 页 slug (sticker-guide/flyer-guide/packaging-guide) 走 /guide/ 路由,
+// 混入博客 sitemap 造成幽灵 URL (/guide/:slug+ 通配 301 → /blog/ 后 404, 9/9 线上实证)。
+// 剔除 3 个 pillar 对象的 slug; sticker-guide 博客 meta 由 legacyBlogSlugs 单独覆盖, 不受影响。
+const pillarTs = fs.readFileSync(path.join(__dirname, '../src/data/pillar-content.ts'), 'utf-8');
+const pillarSlugs = new Set();
+for (const pname of ['stickerGuidePillar', 'flyerGuidePillar', 'packagingGuidePillar']) {
+  const im = pillarTs.indexOf('export const ' + pname);
+  if (im >= 0) {
+    const sm = pillarTs.slice(im, im + 400).match(/slug:\s*['"]([^'"]+)['"]/);
+    if (sm) pillarSlugs.add(sm[1]);
+  }
+}
+const clusterBlogSlugs = clusterSlugs.filter(s => !pillarSlugs.has(s));
+const allBlogSlugs = [...new Set([...legacyBlogSlugs, ...clusterBlogSlugs])];
 
 const staticPages = ['','about/','blog/','case-studies/','contact/','faq/','help-center/','service-areas/','company-news/','services/rush-printing-delivery/','insights/hk-print-inquiry-index/','cart/','checkout/','order-confirmation/','payment/success/','payment-methods/','privacy/','terms/'];
 
