@@ -29,7 +29,7 @@ const translations = {
       freeShipping: '滿$500免運費',
       standard: '標準送貨: 3-5個工作天',
       express: '急件送貨: 1-2個工作天',
-      selfPickup: '門市自取: 觀塘',
+      selfPickup: '門市自取: 觀塘（香港服務點，非生產地）',
     },
     templates: {
       description: '下載設計模板，確保您的設計符合印刷要求',
@@ -54,7 +54,7 @@ const translations = {
       freeShipping: 'Free intl. shipping',
       standard: 'Standard: 3-5 business days',
       express: 'Express: 1-2 business days',
-      selfPickup: 'Rush: same-day production',
+      selfPickup: 'Pickup: Kwun Tong service point (not a production site)',
     },
     templates: {
       description: 'Download design templates to ensure your design meets printing requirements',
@@ -79,7 +79,7 @@ const translations = {
       freeShipping: '国際送料無料',
       standard: '標準配送: 3-5営業日',
       express: '急ぎ配送: 1-2営業日',
-      selfPickup: '店頭受取: 観塘',
+      selfPickup: '店頭受取: 観塘（香港サービスポイント、製造拠点ではありません）',
     },
     templates: {
       description: '印刷要件を満たすためにデザインテンプレートをダウンロード',
