@@ -346,3 +346,8 @@
 /zh-hk/blog/packaging-box-guide/ /zh-hk/blog/packaging-box-custom-guide/ 301
 /en/blog/packaging-box-guide/ /en/blog/packaging-box-custom-guide/ 301
 /ja/blog/packaging-box-guide/ /ja/blog/packaging-box-custom-guide/ 301
+
+# 2026-09-09 K3 执行层: 裸复数旧类目路径 (无前缀) → 贺卡类目 (§0.0 终裁, 与 next.config 同步; 路径字面见下列三行 redirect 源)
+/zh-hk/business-cards/ /zh-hk/category/greeting-cards/ 301
+/en/business-cards/ /en/category/greeting-cards/ 301
+/ja/business-cards/ /ja/category/greeting-cards/ 301

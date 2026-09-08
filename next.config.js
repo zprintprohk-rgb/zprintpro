@@ -207,6 +207,20 @@ function buildGuideRedirects() {
     });
   }
 
+  // 2026-09-09 K3 执行层探针: 裸复数旧路径 (无 product/category 前缀, 三语 404 实测; 路径字面见下方 source, 属 redirect 源行豁免形态)
+  // -> greeting-cards 类目 (§0.0 终裁 BC→贺卡; GSC 全库 0 流量 + 站内 0 内链, 零损失承接)
+  for (const locale of LOCALES) {
+    rules.push({
+      source: `/${locale}/business-cards`,
+      destination: `/${locale}/category/greeting-cards/`,
+      permanent: true,
+    });
+    rules.push({
+      source: `/${locale}/business-cards/`,
+      destination: `/${locale}/category/greeting-cards/`,
+      permanent: true,
+    });
+  }
   // 2026-08-03 K3 10:09 拍板 8/3 PDP 404 修: 3 简化对象 (paper-bags / stickers / custom-stickers) 301 → /category/{slug}/
   // 根因: products.ts 4 字段简化对象 (slug + name + 3 locale name + sort_order) 缺 category_slug / description / images / basePrice, build 时 generateStaticParams 不生成路径
   // §0.6 P0 警报: paper-bags 78 matrix hits + custom-stickers 9 matrix hits 7 天 0 命中 (404)
