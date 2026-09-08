@@ -17,6 +17,26 @@
 - 2026-08-18 v22 (7347c503)：6 SKU 名片→贺卡 1:1 改名（用户拍板「要做贺卡」）。
 - 2026-09-05 方案 B：products.ts 12 处名片尺寸残留修复；导流 19 处 → stickers。
 - 2026-09-08 复发根因确认：**改了展示层，没改规则层与生成层**——孤儿 SEO 条目 8+1、CSV regen 源 78 行名片、sitemap-image 提交 166 处名片图、分类内容死代码块 15KB、manifest PWA 入口。本条款 + 清理 commit 即终局修复。
+
+## §0.34 执行层迁移：M3 出局 → autoclaw + deepseek hermes (K3 2026-09-08 05:58 拍板, 跨项目 P0 强制级)
+
+> **核心**: M3 已出局（K3 9/8 05:58 拍板"M3已出局，能力太弱了"）。执行层 = **autoclaw + deepseek hermes**。原项目全部有用规则 / 自进化能力 / 技能已迁移到新执行层。
+
+### §0.34.1 统一入口（新执行层开工前必读第 0 优先级）
+1. **统一入口技能**: `C:\Users\Administrator\.openclaw-autoclaw\skills\zprintpro-content-standards\SKILL.md` — 新执行层（autoclaw / deepseek hermes）冷启动入口：启动自检 5 问 / 标题规则速查 / 深度 blog 12 段骨架 / 验收门童命令 / 执行纪律 / 自进化 4 步 SOP。
+2. **规则 SSoT 主文档**: `docs/2026-09-08-title-rules-and-deep-blog-standard.md` — SKU 标题规则 v3（四元素 + 半角当量 50-60 / ≥80 禁加 / 长尾 3 筛选 / 冻结 2-4 周）/ blog 标题 meta 规则 / 深度 blog 12 段标准 / SEO+AEO+GEO 合规 / 检验标准三层闸门 / 执行层迁移。
+3. **既有 7 技能保留**: zprintpro / zprintpro-blog-writing-sop / zprintpro-content-depth-page-sop / zprintpro-design-tokens / zprintpro-release-pipeline / zprintpro-sku-detail-sop / zprintpro-verify-probes（全部位于 `.openclaw-autoclaw\skills\`）。
+
+### §0.34.2 称谓承接口径
+- 本文件及各 cron prompt 中所有"M3 执行 / M3 必跑 / M3 落地 / M3 派活"等**执行者称谓**，一律由新执行层（autoclaw / deepseek hermes）承接，规则本身继续生效。
+- 历史反例与拍板记录中的"M3"（如 §0.22-§0.25 反例、误诊记录）为**史实，不改写**。
+- 冲突优先级：**K3 最新拍板 > AGENTS.md > zprintpro-content-standards 入口技能 > 各专项技能**。技能间规则冲突 → 撞墙升级 K3，不自主裁决。
+
+### §0.34.3 当前战略指令 SSoT
+- 最新主报告: `docs/2026-09-08-v4-full-alignment-master-report.md`（原子指令 A1-A12 + 问 K3 八件）。
+- 最新拍板增补: `docs/2026-09-09-k3-title-rule-v4-write-full.md`（K3 9/9 06:18：标题规则 v4 写满原则 50-54 半角当量 / 幂等铁律「不重复做已完成的事」/ 大脑-执行层闭环指令书）。
+- 定时任务（autoclaw Blueprint Automation, K3 9/8 06:15 拍板设于 19:00-07:00 窗口）: daily-content 21:17 / gsc-feedback 22:43 / weekly-meta 周五 23:07 / blog-deepfix 周六 05:37 / monthly-matrix 每月 1 号 06:13（Asia/Shanghai）。
+
 > **项目**: F:\zprintpro-nextjs\ (Next.js 印刷 SaaS)
 > **类型**: 8 locale 印刷电商 (zh-hk / en / ja)
 > **部署**: Cloudflare Pages + Airwallex 支付
@@ -460,7 +480,7 @@ F:\zprintpro-nextjs\
 
 ## 5. SEO/GEO 关键约定
 
-- **Title**: 50-60 字符,主关键词前置,品牌后置,只用一次
+- **Title**: v4 写满原则 (K3 9/9 06:18 拍板): 半角当量 50-54 写满目标区 (主词前置 + GSC 实证长尾 1-2 个 + 数字钩子 + 品牌末尾一次), ≥55 满格禁加, <50 按序补; SSoT = docs/2026-09-09-k3-title-rule-v4-write-full.md
 - **Meta description**: 150-160 字符,含数字 + CTA
 - **H1**: 每页唯一,含主关键词
 - **Schema**: Organization / BreadcrumbList / Product / FAQPage
@@ -560,12 +580,12 @@ Always try `autoglm-browser-agent` first. Fall back to other browser tools only 
 <!-- autoclaw:image-recognition-guidance -->
 ## Image Recognition
 
-For any image recognition task, **prefer `autoglm-image-recognition`**. Use it as the first choice.
+For image tasks, prefer the model's native visual capability when the image is available to the selected model through its native image-input channel and the model supports image input.
 
-- ✅ `autoglm-image-recognition` — **preferred** for all image recognition tasks
-- ⚠️ Built-in `image` tool or reading images directly with `read` — fallback only when `autoglm-image-recognition` is unavailable or fails
+- ✅ Native image input + an image-capable model — read and judge the image directly; do not invoke `autoglm-image-recognition`
+- ✅ Existing `[图片参考描述]` — reuse the description; do not invoke the recognition skill again
+- ⚠️ `autoglm-image-recognition` — fallback only for text-only models, images offloaded or unavailable through the native input channel, or unavailable native vision capability
 
-Do not use the built-in `image` tool or read an image and describe it yourself when `autoglm-image-recognition` is available. Always try `autoglm-image-recognition` first.
 <!-- /autoclaw:image-recognition-guidance -->
 ## 11. 主营品类约束（2026-06-28，2026-08-17 K3 战略修正，2026-09-01 K3 架构重构 v2)
 

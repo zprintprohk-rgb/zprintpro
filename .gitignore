@@ -263,3 +263,27 @@ _inspect_*.py
 # 9/3 一次性 cron 临时脚本 (后续 cron 必带 _tmp_ 前缀)
 _run_*.py
 _run_*.js
+
+# ===== 2026-09-08 D-9/8-4 uncommitted 处置 (M3): 探针/运行态/备份/设计截图 不入 git =====
+# 4 个本地代理能力探针 (含 localhost token, §0.27 零容忍禁止入库)
+.finance-tool-capability.json
+.jw-proxy-capability.json
+.legal-proxy-capability.json
+.tyc-proxy-capability.json
+# 运行态与一次性产物
+__pycache__/
+.hermes/backups/
+.hermes/scratch/
+.hermes/logs/watchdog-last-state.json
+.hermes/_backup-*.json
+hermes-scratch/
+# 设计车道栅格截图 (HTML 源稿入 git, PNG/JPG 留盘不入库, ~30MB)
+design/*.png
+design/*.jpg
+# 各车道备份文件后缀约定
+*.bak_bc_purge
+*.bak_bc_purge2
+*.bak_bc_redirect
+*.bak_gc_content
+*.bak_gc_seo
+*.w5-now
