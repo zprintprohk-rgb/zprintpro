@@ -1,3 +1,4 @@
+// BC-BAN-DEPRECATED (2026-09-09 K3 拍板②): deprecated 名片公式模块的调试脚本, 随模块保留, 不随门童阻断。
 // Debug: print actual quote values
 import { businessCardsFormulaV2 } from '../formulas/business-cards';
 import { MARKETS } from '../markets';

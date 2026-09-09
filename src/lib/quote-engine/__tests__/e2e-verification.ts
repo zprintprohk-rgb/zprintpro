@@ -1,3 +1,5 @@
+// BC-BAN-DEPRECATED (2026-09-09 K3 拍板②): deprecated 名片公式模块的配套验证脚本, 随模块保留, 不随门童阻断。
+
 /**
  * 端到端 verification (2026-06-07)
  * 自验: 4 commits 后报价系统行为

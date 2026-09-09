@@ -18,13 +18,19 @@
 - 2026-09-05 方案 B：products.ts 12 处名片尺寸残留修复；导流 19 处 → stickers。
 - 2026-09-08 复发根因确认：**改了展示层，没改规则层与生成层**——孤儿 SEO 条目 8+1、CSV regen 源 78 行名片、sitemap-image 提交 166 处名片图、分类内容死代码块 15KB、manifest PWA 入口。本条款 + 清理 commit 即终局修复。
 
+### §0.0.3 执行层承接（per §0.34, K3 9/8 05:58 起生效）
+1. 本条款对**任何执行层**生效，含新执行层 autoclaw / deepseek hermes——M3 出局不豁免，本条款随规则迁移继续生效。
+2. 新执行层开工自检第 1 问 = 名片扫描（统一入口技能 `zprintpro-content-standards/SKILL.md` §0）：任何 SKU/SEO/FAQ/博客产出前先对照禁止行为清单，命中即停，承接主品类 = 贺卡 greeting-cards。
+3. push 前兜底扫描（§0.0.1 第 3 条）由仓库门童脚本 `scripts/check-bc-ban.mjs`（2026-09-09 补建落地）+ 新执行层验收命令承接，命中 > 0 阻断 push。
+4. 本节历史记录中的执行者称谓为史实不改写（per §0.34.2）。
+
 ## §0.34 执行层迁移：M3 出局 → autoclaw + deepseek hermes (K3 2026-09-08 05:58 拍板, 跨项目 P0 强制级)
 
 > **核心**: M3 已出局（K3 9/8 05:58 拍板"M3已出局，能力太弱了"）。执行层 = **autoclaw + deepseek hermes**。原项目全部有用规则 / 自进化能力 / 技能已迁移到新执行层。
 
 ### §0.34.1 统一入口（新执行层开工前必读第 0 优先级）
-1. **统一入口技能**: `C:\Users\Administrator\.openclaw-autoclaw\skills\zprintpro-content-standards\SKILL.md` — 新执行层（autoclaw / deepseek hermes）冷启动入口：启动自检 5 问 / 标题规则速查 / 深度 blog 12 段骨架 / 验收门童命令 / 执行纪律 / 自进化 4 步 SOP。
-2. **规则 SSoT 主文档**: `docs/2026-09-08-title-rules-and-deep-blog-standard.md` — SKU 标题规则 v3（四元素 + 半角当量 50-60 / ≥80 禁加 / 长尾 3 筛选 / 冻结 2-4 周）/ blog 标题 meta 规则 / 深度 blog 12 段标准 / SEO+AEO+GEO 合规 / 检验标准三层闸门 / 执行层迁移。
+1. **统一入口技能**: `C:\Users\Administrator\.openclaw-autoclaw\skills\zprintpro-content-standards\SKILL.md` — 新执行层（autoclaw / deepseek hermes）冷启动入口：启动自检 6 问（第 1 问 = §0.0 最高规则名片扫描）/ 最高规则速查 / 标题规则速查 / 深度 blog 12 段骨架 / 验收门童命令 / 自动化窗口速查 / 执行纪律 / 自进化 4 步 SOP。
+2. **规则 SSoT 主文档**: `docs/2026-09-08-title-rules-and-deep-blog-standard.md` — SKU 标题规则 v4 写满原则（K3 9/9 06:18 最新，四元素 + 写满区 50-54 / ≥55 满格禁加 / 长尾 3 筛选 / 冻结 2-4 周）/ blog 标题 meta 规则 / 深度 blog 12 段标准 / SEO+AEO+GEO 合规 / 检验标准三层闸门 / 执行层迁移。
 3. **既有 7 技能保留**: zprintpro / zprintpro-blog-writing-sop / zprintpro-content-depth-page-sop / zprintpro-design-tokens / zprintpro-release-pipeline / zprintpro-sku-detail-sop / zprintpro-verify-probes（全部位于 `.openclaw-autoclaw\skills\`）。
 
 ### §0.34.2 称谓承接口径
@@ -735,6 +741,8 @@ node scripts/verify-deploy.mjs          # 自动查 CF Pages check-runs API stat
 > **目标**: 千行百业 × 主营类目,深度+广度双覆盖,纯文字博客无图,稳定运维不出现 404/301。
 
 ### 13.1 4 条 cron 实体 (2026-08-23 06:38 K3 v3 增补校准)
+
+> **[v7 执行层迁移 · 2026-09-08]** 本节所有执行者称谓一律由新执行层（autoclaw / deepseek hermes）承接（§0.34.2）。**调度 SSoT 已迁移至 §0.34.3（autoclaw Blueprint Automation，K3 9/8 06:15 拍板，19:00-07:00 窗口，5 实体含 blog-deepfix）**；下表 4 cron 触发时间为 8/23 历史口径（hermes/mavis 时代），仅作任务范围定义参考，**触发时间一律以 §0.34.3 为准**。任务实体注册表 = `C:\Users\Administrator\.openclaw-autoclaw\cron\jobs.json`（建任务用 autoclaw 原生 AutomationCreate，payload = `.hermes/cron-prompts/v7-automation-payload-2026-09-09.json`）。
 
 | Cron 名 | 触发 | 范围 |
 |---------|------|------|
@@ -2545,13 +2553,3 @@ When the user asks about Feishu/Lark/飞书 matters, route through Feishu/Lark s
 3. If you find a matching skill that is not installed or enabled, ask the user whether to install/enable and use it before proceeding.
 4. If no matching skill exists, say so briefly and continue with the safest available fallback.
 <!-- /autoclaw:feishu-lark-skill-guidance -->
-
-<!-- autoclaw:zcode-app-context-v1 -->
-<app-context>
-# AutoClaw 桌面端上下文
-
-## 文件与 URL
-- 请将本地网页 URL 以 Markdown 链接形式返回 (例如：[label](http://127.0.0.1:8080))。
-- 文件路径应为绝对路径，或者包含工作区文件夹名称，以便能够相对于工作区解析该路径。
-- 除非另有说明，请将文件引用写成 Markdown 链接 (例如：[name.md](/absolute/path/to/name.md))。
-</app-context>
