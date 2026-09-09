@@ -181,9 +181,11 @@ export function ProductPageV9({
               <span className="font-mono text-[clamp(27px,3vw,38px)] font-bold text-[#F87314] tracking-[-0.02em]">{anchor ? anchor.big : product.price_range}</span>
               <span className="text-[14px] text-[#6B7280]">{anchor ? `${anchor.unitLabel}起` : ''}</span>
             </div>
-            <div className="text-[13.5px] text-[#6B7280] mt-1.5 font-medium">
-              {topRow ? `${topRow.qty.toLocaleString('en-US')} 張起批 · 整批 HK$${topRow.total}` : '實價按規格報價'}
-            </div>
+            {!anchor && (
+              <div className="text-[13.5px] text-[#6B7280] mt-1.5 font-medium">
+                {topRow ? `${topRow.qty.toLocaleString('en-US')} 張起批 · 整批 HK$${topRow.total}` : '實價按規格報價'}
+              </div>
+            )}
             <div className="text-[13.5px] text-[#6B7280] mt-0.5">{anchor ? anchor.sub : '滿$500包郵'}</div>
           </div>
 
@@ -216,36 +218,51 @@ export function ProductPageV9({
         </div>
       </section>
 
-      {/* ═══ 藍本 .ladder 價格階梯（真實檔位數據） + .rail 側欄 ═══ */}
+      {/* ═══ 藍本 .ladder 價格階梯（真實檔位數據）+ .rail 側欄（修訂輪8 #4: 按第四張圖藍本效果重做 — 橙色大數字+標題行+28px 橫條+虛線分隔+最抵標籤+規格右上註） ═══ */}
       <section className="max-w-[1320px] mx-auto px-6 mb-16">
-        <div className="bg-[#F8FAFC] border border-[#E5E7EB] rounded-[20px] p-7 sm:p-9 grid gap-9 lg:grid-cols-[minmax(0,8fr)_minmax(0,4fr)]">
+        <div className="grid gap-9 lg:grid-cols-[minmax(0,8fr)_minmax(0,4fr)] items-start">
           <div>
-            <div className="flex items-baseline gap-3.5 flex-wrap">
-              <span className="font-mono text-[clamp(34px,3.4vw,44px)] font-bold text-[#2873F5] tracking-[-0.02em] leading-none">{savePct}%</span>
-              <span className="text-[15px] text-[#6B7280]">訂 {bestRow ? bestRow.qty.toLocaleString('en-US') : '1,000'} 張 vs 50 張 · 每張慳幅</span>
+            <div className="flex items-center gap-2.5 text-[14px] font-bold tracking-[0.14em] text-[#2873F5] uppercase mb-2.5">
+              <span className="inline-block w-[22px] h-[3px] bg-[#F87314] rounded-[2px]" aria-hidden="true" />
+              Price Ladder · 參考價
             </div>
-            <div className="mt-5 space-y-3.5">
-              {rows.map((r) => (
-                <div key={r.qty} className="grid grid-cols-[86px_1fr_150px] items-center gap-3 text-[15.5px]">
-                  <span className="font-mono font-bold text-right whitespace-nowrap">{r.qty} 張</span>
-                  <span className="h-4 rounded-full bg-[#E8EFFB] overflow-hidden">
-                    <span
-                      className={`block h-full rounded-full ${r.unit === unitMin ? 'bg-[#F87314]' : 'bg-[#2873F5]'}`}
-                      style={{ width: `${Math.max(8, Math.round((r.unit / unitMax) * 100))}%` }}
-                    />
-                  </span>
-                  <span className="whitespace-nowrap font-mono text-[#444444]">
-                    HK${r.unit.toFixed(2)}/張 · 整批 ${r.total}
-                    {r.unit === unitMin && <b className="ml-1.5 text-[12.5px] text-white bg-[#F87314] rounded px-1.5 py-0.5 font-bold">最抵</b>}
-                  </span>
+            <h2 className="text-[clamp(23px,2.6vw,30px)] font-extrabold tracking-[-0.01em] leading-[1.3] mb-5">
+              訂得越多，<em className="not-italic text-[#F87314]">每張越平</em>
+            </h2>
+            <div className="bg-white border border-[#E5E7EB] rounded-[18px] p-6 sm:p-[34px] shadow-[0_1px_3px_rgba(16,24,40,0.07)]">
+              <div className="flex items-end justify-between gap-5 mb-6">
+                <div>
+                  <div className="font-mono text-[clamp(34px,4vw,52px)] font-bold text-[#F87314] tracking-[-0.03em] leading-none">{savePct}%</div>
+                  <div className="text-[15px] font-bold text-[#1F2937] mt-2">訂 {bestRow ? bestRow.qty.toLocaleString('en-US') : '1,000'} 張 vs {rows[0] ? rows[0].qty.toLocaleString('en-US') : '50'} 張 · 每張慳幾</div>
                 </div>
-              ))}
+                {cfg?.label?.['zh-hk'] && (
+                  <div className="hidden sm:block text-[13px] text-[#6B7280] text-right max-w-[260px] leading-[1.7]">{cfg.label['zh-hk']}</div>
+                )}
+              </div>
+              <div>
+                {rows.map((r) => (
+                  <div key={r.qty} className="relative grid grid-cols-[88px_1fr_150px] gap-4 items-center py-[11px] border-b border-dashed border-[#EBECEF] last:border-b-0">
+                    {r.unit === unitMin && (
+                      <span className="absolute right-0 top-[-9px] bg-[#F87314] text-white text-[12px] font-bold px-[9px] py-[2px] rounded-full">最抵</span>
+                    )}
+                    <span className="font-mono font-bold text-[15.5px] text-right whitespace-nowrap">{r.qty} 張</span>
+                    <span className="relative h-[28px] bg-[#F3F4F6] rounded-[6px] overflow-hidden">
+                      <span
+                        className={`absolute left-0 top-0 bottom-0 rounded-[6px] min-w-[8px] ${r.unit === unitMin ? 'bg-[#F87314]' : 'bg-[#2873F5]'}`}
+                        style={{ width: `${Math.max(8, Math.round((r.unit / unitMax) * 100))}%` }}
+                      />
+                    </span>
+                    <span className="text-right whitespace-nowrap">
+                      <span className={`font-mono font-bold text-[18px] ${r.unit === unitMin ? 'text-[#F87314]' : 'text-[#1F2937]'}`}>HK${r.unit.toFixed(2)}</span>
+                      <span className="text-[13px] text-[#6B7280]">/張 · 整批 ${r.total}</span>
+                    </span>
+                  </div>
+                ))}
+              </div>
+              <p className="text-[13.5px] text-[#6B7280] mt-3.5">參考價 · 最終以 WhatsApp 正式報價為準</p>
             </div>
-            <p className="text-[13px] text-[#6B7280] mt-4">
-              參考價 · 最終以 WhatsApp 正式報價為準{cfg?.label?.['zh-hk'] ? ` ｜ 規格選擇：${cfg.label['zh-hk']}` : ''}
-            </p>
           </div>
-          <div className="bg-white border border-[#E5E7EB] rounded-[16px] p-6 self-start shadow-[0_1px_3px_rgba(16,24,40,0.07)]">
+          <div className="bg-white border border-[#E5E7EB] rounded-[18px] p-6 self-start lg:sticky lg:top-[88px] shadow-[0_10px_30px_rgba(17,24,39,0.08)]">
             <div className="text-[13px] font-bold uppercase tracking-[0.12em] text-[#2873F5] mb-2">即時報價</div>
             <div className="font-mono text-[26px] font-bold text-[#F87314] leading-tight">{anchor ? anchor.big : product.price_range}<span className="text-[14px] font-normal text-[#6B7280]">{anchor ? `${anchor.unitLabel}起` : ''}</span></div>
             <div className="text-[13.5px] text-[#6B7280] mt-1 mb-4">{bestRow ? `${bestRow.qty.toLocaleString('en-US')} 張整批 HK$${bestRow.total}` : ''}</div>
@@ -262,20 +279,27 @@ export function ProductPageV9({
         </div>
       </section>
 
-      {/* ═══ 藍本 .leadbar 3 欄服務條（修訂輪4: 前兩欄品牌藍底、即日急件橙底; 小標 +2px → 16.5px） ═══ */}
-      <section className="max-w-[1320px] mx-auto px-6 mb-16 grid gap-4 lg:grid-cols-3">
-        <div className="bg-[#2873F5] rounded-[14px] p-[18px]">
-          <div className="font-extrabold text-[16.5px] mb-1 text-white">標準 5-7 天</div>
-          <p className="text-[16.5px] text-white/90 leading-[1.65]">HP Indigo 6K 數碼產線 · 提交檔案後 2 小時內免費數碼打稿 · 平均 2.3 天出貨</p>
+      {/* ═══ 服務承諾一體色塊（修訂輪8 #5: 三塊合併為一條皇家藏青大色塊，內含三部分內容；即日急件橙色塊整體可點，鏈接即日印刷服務） ═══ */}
+      <section className="max-w-[1320px] mx-auto px-6 mb-16">
+        <div
+          className="rounded-[18px] p-6 sm:p-8 md:p-9 text-white"
+          style={{ background: 'var(--color-royal-navy-grad)', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.12), 0 14px 30px rgba(15,31,61,0.24)' }}
+        >
+          <div className="grid gap-6 md:grid-cols-3">
+            <div>
+              <div className="font-extrabold text-[16.5px] mb-1.5 text-white">標準 5-7 天</div>
+              <p className="text-[16.5px] text-white/90 leading-[1.65]">HP Indigo 6K 數碼產線 · 提交檔案後 2 小時內免費數碼打稿 · 平均 2.3 天出貨</p>
+            </div>
+            <div>
+              <div className="font-extrabold text-[16.5px] mb-1.5 text-white">DHL 全球 2-4 天</div>
+              <p className="text-[16.5px] text-white/90 leading-[1.65]">DHL Express / FedEx 國際配送 · 港九新界滿 $500 免費順豐本地速遞</p>
+            </div>
+            <a href={rushUrl} className="block bg-[#F87314] rounded-[14px] p-5 group">
+              <div className="font-extrabold text-[16.5px] mb-1.5 text-white">即日急件</div>
+              <p className="text-[16.5px] text-white/95 leading-[1.65]">今天下單 · 明天 12 點前到 · 前往即日印刷服務 →</p>
+            </a>
+          </div>
         </div>
-        <div className="bg-[#2873F5] rounded-[14px] p-[18px]">
-          <div className="font-extrabold text-[16.5px] mb-1 text-white">DHL 全球 2-4 天</div>
-          <p className="text-[16.5px] text-white/90 leading-[1.65]">DHL Express / FedEx 國際配送 · 港九新界滿 $500 免費順豐本地速遞</p>
-        </div>
-        <a href={rushUrl} className="bg-[#F87314] rounded-[14px] p-[18px] group">
-          <div className="font-extrabold text-[16.5px] mb-1 text-white">即日急件</div>
-          <p className="text-[16.5px] text-white/95 leading-[1.65]">今天下單 · 明天 12 點前到 · 前往即日印刷服務 →</p>
-        </a>
       </section>
 
       {/* ═══ 藍本 .det 產品詳情手風琴（longDescription 逐字節內容） ═══ */}
