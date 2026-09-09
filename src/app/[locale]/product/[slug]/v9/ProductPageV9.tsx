@@ -71,9 +71,16 @@ export function ProductPageV9({
   const quoteUrl = `${localePrefix}/quote/`;
   const rushUrl = `${localePrefix}/services/rush-printing-delivery/`;
 
-  /* 產品詳情: longDescription 按 <h3> 切分為手風琴（內容逐字節不變） */
+  /* 產品詳情: longDescription 按 <h3> 切分為手風琴（內容逐字節不變）
+     修訂輪4 渲染層定向 transform（數據層凍結不動, 僅 v9 門控頁生效, 唐總指令）:
+     ① 剔除重複的品牌介紹尾段（段內 DHL 句自我重複, 且與頁尾信任模塊重複）
+     ② 已服務本地客戶: 客戶類型增補「政府部門及學校」 */
+  const V9_STRIP_PARA = '<p><em>智印港 (ZprintPro) 為彩龍印刷旗下國際印刷服務品牌，深圳自設廠房，DHL Express / FedEx 全球 2-4 天配送。DHL Express 全球 2-4 天配送。FSC 認證紙材、ISO 12647 色彩管理、ISO 9001 品質認證。</em></p>';
+  const V9_CLEAN_DESC = (longDesc ?? '')
+    .split(V9_STRIP_PARA).join('')
+    .split('咖啡店提供貼紙印製服務').join('咖啡店、政府部門及學校提供貼紙印製服務');
   const detailSections: { title: string; html: string }[] = [];
-  (longDesc ?? '').split(/<h3>/).forEach((part) => {
+  V9_CLEAN_DESC.split(/<h3>/).forEach((part) => {
     if (!part.trim()) return;
     const end = part.indexOf('</h3>');
     if (end === -1) {
@@ -255,19 +262,19 @@ export function ProductPageV9({
         </div>
       </section>
 
-      {/* ═══ 藍本 .leadbar 3 欄服務條（口徑全部來自既有數據聲明） ═══ */}
+      {/* ═══ 藍本 .leadbar 3 欄服務條（修訂輪4: 前兩欄品牌藍底、即日急件橙底; 小標 +2px → 16.5px） ═══ */}
       <section className="max-w-[1320px] mx-auto px-6 mb-16 grid gap-4 lg:grid-cols-3">
-        <div className="bg-[#F2F6FF] border border-[#E5E7EB] rounded-[14px] p-[18px]">
-          <div className="font-extrabold text-[16.5px] mb-1">標準 5-7 天</div>
-          <p className="text-[14.5px] text-[#6B7280] leading-[1.65]">HP Indigo 6K 數碼產線 · 提交檔案後 2 小時內免費數碼打稿 · 平均 2.3 天出貨</p>
+        <div className="bg-[#2873F5] rounded-[14px] p-[18px]">
+          <div className="font-extrabold text-[16.5px] mb-1 text-white">標準 5-7 天</div>
+          <p className="text-[16.5px] text-white/90 leading-[1.65]">HP Indigo 6K 數碼產線 · 提交檔案後 2 小時內免費數碼打稿 · 平均 2.3 天出貨</p>
         </div>
-        <div className="bg-[#F2F6FF] border border-[#E5E7EB] rounded-[14px] p-[18px]">
-          <div className="font-extrabold text-[16.5px] mb-1">DHL 全球 2-4 天</div>
-          <p className="text-[14.5px] text-[#6B7280] leading-[1.65]">DHL Express / FedEx 國際配送 · 港九新界滿 $500 免費順豐本地速遞</p>
+        <div className="bg-[#2873F5] rounded-[14px] p-[18px]">
+          <div className="font-extrabold text-[16.5px] mb-1 text-white">DHL 全球 2-4 天</div>
+          <p className="text-[16.5px] text-white/90 leading-[1.65]">DHL Express / FedEx 國際配送 · 港九新界滿 $500 免費順豐本地速遞</p>
         </div>
-        <a href={rushUrl} className="bg-[#FEF1E6] border border-[#FED7AA] rounded-[14px] p-[18px] group">
-          <div className="font-extrabold text-[16.5px] mb-1 text-[#EA580C]">即日急件</div>
-          <p className="text-[14.5px] text-[#6B7280] leading-[1.65] group-hover:text-[#EA580C]">今天下單 · 明天 12 點前到 · 前往即日印刷服務 →</p>
+        <a href={rushUrl} className="bg-[#F87314] rounded-[14px] p-[18px] group">
+          <div className="font-extrabold text-[16.5px] mb-1 text-white">即日急件</div>
+          <p className="text-[16.5px] text-white/95 leading-[1.65]">今天下單 · 明天 12 點前到 · 前往即日印刷服務 →</p>
         </a>
       </section>
 
@@ -390,8 +397,8 @@ export function ProductPageV9({
         </div>
       </section>
 
-      {/* ═══ 為何選擇智印港 — 皇家藏青色塊（置於產品詳情之後; 組件復用 TrustBadgeBlock, 與 PLP 同源同文案） ═══ */}
-      <TrustBadgeBlock />
+      {/* ═══ 為何選擇智印港 — 皇家藏青色塊（修訂輪4: PDP 用 navy 變體; PLP 保持 light; 組件復用 TrustBadgeBlock） ═══ */}
+      <TrustBadgeBlock variant="navy" />
 
       {/* ═══ FAQ（數據: coreProductFAQMap, 藍本手風琴樣式） ═══ */}
       {faqItems.length > 0 && (
@@ -414,6 +421,21 @@ export function ProductPageV9({
           </div>
         </section>
       )}
+
+      {/* ═══ 頁底 CTA（修訂輪4: 皇家藏青色塊底色 + 上移至相關產品之前） ═══ */}
+      <section className="max-w-[1320px] mx-auto px-6 mb-16">
+        <div
+          className="rounded-[20px] p-8 sm:p-12 text-center"
+          style={{ background: 'var(--color-royal-navy-grad)', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.12), 0 14px 30px rgba(15,31,61,0.24)' }}
+        >
+          <h3 className="text-[clamp(22px,2.6vw,29px)] font-extrabold mb-2.5 text-white">準備落單？2 小時免費打稿</h3>
+          <p className="text-white/80 text-[16px] mb-6">WhatsApp 客服 +86 198 8085 1334 或點擊「30 秒 AI 報價」· 24 小時內回覆 · 免費設計諮詢</p>
+          <div className="flex gap-3.5 justify-center flex-wrap">
+            <a href={quoteUrl} className="inline-flex items-center gap-2 bg-[#F87314] text-white font-bold text-[16.5px] px-[34px] py-[15px] rounded-[11px] shadow-[0_8px_22px_rgba(248,115,20,0.3)] hover:brightness-95">30 秒 AI 報價</a>
+            <a href={waUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[#25D366] text-white font-bold text-[16.5px] px-[34px] py-[15px] rounded-[11px] hover:brightness-95">WhatsApp 即時查詢</a>
+          </div>
+        </div>
+      </section>
 
       {/* ═══ 藍本 .related 相關產品（同源選取邏輯, 藍本卡片樣式） ═══ */}
       {related.length > 0 && (
@@ -445,18 +467,6 @@ export function ProductPageV9({
           </div>
         </section>
       )}
-
-      {/* ═══ 頁底 CTA（口徑 = sku-seo body 既有結尾句 + NAP 電話 + 24 小時內回覆） ═══ */}
-      <section className="max-w-[1320px] mx-auto px-6 mb-16">
-        <div className="bg-white border border-[#E5E7EB] rounded-[20px] p-8 sm:p-12 text-center shadow-[0_1px_3px_rgba(16,24,40,0.07)]">
-          <h3 className="text-[clamp(22px,2.6vw,29px)] font-extrabold mb-2.5">準備落單？2 小時免費打稿</h3>
-          <p className="text-[#6B7280] text-[16px] mb-6">WhatsApp 客服 +86 198 8085 1334 或點擊「30 秒 AI 報價」· 24 小時內回覆 · 免費設計諮詢</p>
-          <div className="flex gap-3.5 justify-center flex-wrap">
-            <a href={quoteUrl} className="inline-flex items-center gap-2 bg-[#F87314] text-white font-bold text-[16.5px] px-[34px] py-[15px] rounded-[11px] shadow-[0_8px_22px_rgba(248,115,20,0.3)] hover:brightness-95">30 秒 AI 報價</a>
-            <a href={waUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[#25D366] text-white font-bold text-[16.5px] px-[34px] py-[15px] rounded-[11px] hover:brightness-95">WhatsApp 即時查詢</a>
-          </div>
-        </div>
-      </section>
 
       {/* 移動端吸底報價軌（藍本 .mrail; 價格 = 真實檔位錨點） */}
       <div className="flex sm:hidden fixed left-0 right-0 bottom-0 z-[60] bg-white border-t border-[#E5E7EB] px-3.5 py-2.5 gap-2.5 items-center shadow-[0_-4px_20px_rgba(0,0,0,0.08)]">

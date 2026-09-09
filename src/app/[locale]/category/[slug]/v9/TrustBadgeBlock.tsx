@@ -37,6 +37,8 @@ export interface TrustBadgeBlockProps {
   logistics?: string;
   /** 信任卡片（默認 = 6 張標準卡） */
   cards?: TrustCard[];
+  /** 底色變體: light = 6 步落單流程同款 #F2F6FF（默認, PLP 用）; navy = 皇家藏青 token（修訂輪4, PDP 用） */
+  variant?: 'light' | 'navy';
 }
 
 export function TrustBadgeBlock({
@@ -44,27 +46,33 @@ export function TrustBadgeBlock({
   paragraphs = [TRUST_COPY_INTRO],
   logistics = TRUST_COPY_LOGISTICS,
   cards = TRUST_CARDS,
+  variant = 'light',
 }: TrustBadgeBlockProps) {
+  const navy = variant === 'navy';
   return (
     <section className="max-w-[1320px] mx-auto px-6 mb-16">
-      {/* 底色與圓角 = 6 步落單流程區同款（bg-[#F2F6FF] + rounded-[22px]） */}
-      <div className="overflow-hidden rounded-[22px] p-7 md:p-10 bg-[#F2F6FF]">
+      {/* light: 底色與圓角 = 6 步落單流程區同款（bg-[#F2F6FF] + rounded-[22px]）
+          navy: 皇家藏青 token 底（--color-royal-navy-grad）+ inset 高光, 文字白色 */}
+      <div
+        className={`overflow-hidden rounded-[22px] p-7 md:p-10 ${navy ? 'text-white' : 'bg-[#F2F6FF]'}`}
+        style={navy ? { background: 'var(--color-royal-navy-grad)', boxShadow: 'inset 0 1px 0 rgba(255,255,255,0.12), 0 14px 30px rgba(15,31,61,0.24)' } : undefined}
+      >
         <div className="grid gap-9 lg:grid-cols-[5fr_7fr] items-start">
           <div>
-            <span className="inline-flex items-center gap-2.5 text-[13px] font-semibold tracking-[.12em] uppercase text-[#2873F5] mb-3.5">
+            <span className={`inline-flex items-center gap-2.5 text-[13px] font-semibold tracking-[.12em] uppercase mb-3.5 ${navy ? 'text-[#9DB8F5]' : 'text-[#2873F5]'}`}>
               <span className="inline-block w-[22px] h-[2px] bg-[#F87314]" aria-hidden="true" />
               {eyebrow}
             </span>
-            <h2 className="text-[26px] md:text-[32px] font-extrabold leading-tight tracking-tight text-[#111827]">
+            <h2 className={`text-[26px] md:text-[32px] font-extrabold leading-tight tracking-tight ${navy ? 'text-white' : 'text-[#111827]'}`}>
               為何選擇<em className="not-italic text-[#F87314]">智印港</em>
             </h2>
             {paragraphs.map((p, i) => (
-              <p key={i} className="mt-4 text-[16.5px] leading-[1.9] text-[#3A4250] text-justify">
+              <p key={i} className={`mt-4 text-[16.5px] leading-[1.9] text-justify ${navy ? 'text-white/90' : 'text-[#3A4250]'}`}>
                 {p}
               </p>
             ))}
             {logistics && (
-              <p className="mt-4 pt-4 border-t border-[#C9D6F2] text-[16.5px] leading-[1.8] font-bold text-[#2873F5]">
+              <p className={`mt-4 pt-4 border-t text-[16.5px] leading-[1.8] font-bold ${navy ? 'border-white/15 text-white' : 'border-[#C9D6F2] text-[#2873F5]'}`}>
                 {logistics}
               </p>
             )}
