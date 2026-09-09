@@ -58,6 +58,7 @@ import { TrustWaterfall } from '@/components/home/TrustWaterfall';
 import FreeSampleBanner from '@/components/pdp/FreeSampleBanner';
 import { SkuSeoBody } from '@/components/pdp/SkuSeoBody';
 import WeddingBundle from '@/components/pdp/WeddingBundle';
+import { ProductPageV9 } from './v9/ProductPageV9';
 
 // 生成静态参数 - 79产品 × 3语言 = 237个路径
 export function generateStaticParams() {
@@ -335,6 +336,11 @@ export default function ProductPage({
   };
   
   const t = translations[locale];
+  // 2026-09-09 PDP v9.1 樷板路由门控 (执行卡锁定点 2): 仅 zh-hk /product/waterproof-stickers/ 走 v9 渲染层,
+  // 其余 SKU + en/ja 渲染零影响 (legacy 分支原样保留)
+  const isV9Waterproof = locale === 'zh-hk' && slug === 'waterproof-stickers';
+  // v9.1 工厂实证图 (蓝本 §Factory Proof; 盘上实存 public/images/factory/)
+  const PDP_FACTORY_IMAGE = '/images/factory/factory-heidelberg-6plus1.webp';
   
   return (
     <>
@@ -354,6 +360,19 @@ export default function ProductPage({
           违反 v2 §3.3 "无真实评价数据, 不可编造" 铁律。
           generateProductReviewsJsonLd 函数保留, 后续如有真实评价数据 (Trustpilot/Google Reviews API 接入) 再启用。 */}
       
+      {isV9Waterproof ? (
+        <ProductPageV9
+          locale={locale}
+          product={product}
+          productTitle={productTitle}
+          productDescription={productDescription}
+          h1={locale === 'zh-hk' ? buildProductH1ZhHk(productTitle, categoryName, product.category_slug, product.slug) : productTitle}
+          faqItems={faqItems ?? []}
+          longDesc={longDesc ?? ''}
+          skuBody={skuSeo?.seo?.[locale]?.body ?? ''}
+          factoryImage={PDP_FACTORY_IMAGE}
+        />
+      ) : (
       <main className="min-h-screen bg-gray-50">
         {/* 面包屑导航 */}
         <div className="bg-white border-b">
@@ -660,6 +679,7 @@ export default function ProductPage({
           </div>
         </div>
       </main>
+      )}
     </>
   );
 }

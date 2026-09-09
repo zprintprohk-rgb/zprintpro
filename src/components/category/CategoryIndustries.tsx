@@ -857,3 +857,36 @@ function IndustryCard({
     </CardWrapper>
   );
 }
+
+// ============================================================================
+// v9.1 导出 (2026-09-09 PLP v9 樷板路由): 复用上方卡片构建逻辑 (同 pairing 规则),
+// 仅导出数据, 不改变现有组件渲染路径 — 蓝本 design/plp-v9.html §Industries 使用
+// ============================================================================
+export function getIndustryCards(categorySlug: string, locale: Locale) {
+  const industries = CATEGORY_INDUSTRIES[categorySlug]?.[locale] || [];
+  const scenarios = categoryIndustryScenarios[categorySlug] || [];
+  const coveredSlugs = coveredBlogMap[categorySlug] || [];
+
+  const cards: {
+    industryName: string;
+    tier: 'A' | 'B';
+    scenarios: string[];
+    blogSlug?: string;
+    covered: boolean;
+  }[] = [];
+
+  const maxCards = Math.min(industries.length, 8);
+  for (let i = 0; i < maxCards; i++) {
+    const industryName = industries[i];
+    const tier: 'A' | 'B' = i < 5 ? 'A' : 'B';
+    const tierScenarios = scenarios.filter((s) => s.tier === tier);
+    const posInTier = tier === 'A' ? i : i - 5;
+    const scenario = tierScenarios[posInTier];
+    const covered = coveredSlugs.length > 0 && tier === 'A';
+    const blogSlug = covered ? coveredSlugs[Math.min(posInTier, coveredSlugs.length - 1)] : undefined;
+    const scenarioLines = scenario?.scenarios[locale] || [];
+    if (scenarioLines.length === 0) continue;
+    cards.push({ industryName, tier, scenarios: scenarioLines, blogSlug, covered: covered && !!blogSlug });
+  }
+  return cards;
+}

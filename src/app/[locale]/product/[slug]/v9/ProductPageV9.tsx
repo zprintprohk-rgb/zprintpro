@@ -1,0 +1,538 @@
+/**
+ * PDP v9.1 — 防水貼紙樣板路由渲染層（zh-hk 門控，僅 /zh-hk/product/waterproof-stickers/）
+ * 藍本: design/pdp-v9.html 逐 section 映射；頁眉/頁腳沿用現有組件（凍結區）
+ * 數據全部取自現有數據源（內容零改動）：
+ *   - Hero/meta/規格: products.ts（sku_code/minQuantity/specs/features）
+ *   - 價格階梯: price-data.generated.ts 真實檔位（getPriceTableForSlug）
+ *   - 產品詳情 5 手風琴: products-content.ts longDescription 按 <h3> 切分（內容逐字節不變）
+ *   - 場景長文: sku-seo-data.ts body（交稿規範段落拆為側欄規格卡，其餘逐字渲染）
+ *   - 6 步流程: category-conversion-blocks orderFlow（與 PLP 同源）
+ *   - FAQ: product-faqs coreProductFAQMap；相關產品: getProductsByCategory 同源邏輯
+ * 執行卡: 2026-09-09-autoclaw-plp-pdp-v91-execution-card.md (v1.3) 鎖定點 1-5
+ */
+import Image from 'next/image';
+import { Locale } from '@/lib/seo';
+import {
+  Product,
+  getProductDisplayTitle,
+  getProductsByCategory,
+} from '@/data/products';
+import { getProductImages, getProductMainImage } from '@/lib/product-image';
+import { getDisplayAnchor } from '@/lib/pricing';
+import { getPriceTableForSlug } from '@/lib/price-injector';
+import { getConversionBlocks, buildWhatsAppUrl } from '@/data/category-conversion-blocks';
+import { RegionalContent, RegionalCta, RegionalTrustBadges } from '@/components/seo/RegionalContent';
+import { GalleryV9 } from './GalleryV9';
+
+const normalizeTitle = (s: string): string => s.replace(/\s+/g, ' ').trim();
+
+/* ---------- 為何選擇 6 格（文案與 ProductWhyChooseUs zh-hk 逐字一致, 僅重排視覺） ---------- */
+const WHY6 = [
+  { title: '深圳自有工廠', sub: '15年跨境經驗', desc: '彩龍印刷旗下品牌，深圳自有工廠生產，品質可控', icon: 'factory' },
+  { title: '即日交貨', sub: '特急24小時', desc: '標準訂單3-5日，急件最快當天', icon: 'zap' },
+  { title: '順豐直達', sub: '全港覆蓋', desc: '順豐速運上門派送，快捷安全', icon: 'truck' },
+  { title: '免費打樣', sub: '滿意再下單', desc: '批量訂單免費提供實物樣板確認', icon: 'clock' },
+  { title: '品質保證', sub: '100%滿意', desc: '不滿意免費重印，品質問題全額退款', icon: 'shield' },
+  { title: '24小時支持', sub: '全天候服務', desc: '專業客服團隊7x24小時在線', icon: 'support' },
+] as const;
+
+function WhyIcon({ kind }: { kind: string }) {
+  const common = { className: 'w-6 h-6 stroke-white fill-none', strokeWidth: 1.8, viewBox: '0 0 24 24', 'aria-hidden': true } as const;
+  return (
+    <svg {...common}>
+      {kind === 'factory' && <><path d="M3 21V9l6 4V9l6 4V5h6v16H3z" /><path d="M7 17h2M13 17h2" /></>}
+      {kind === 'zap' && <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />}
+      {kind === 'truck' && <><rect x="1" y="6" width="14" height="11" rx="1" /><path d="M15 10h4l3 3v4h-7" /><circle cx="6" cy="19" r="1.6" /><circle cx="18" cy="19" r="1.6" /></>}
+      {kind === 'clock' && <><circle cx="12" cy="12" r="9" /><path d="M12 7v5l3 3" /></>}
+      {kind === 'shield' && <><path d="M12 3l7 4v5c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V7l7-4z" /><path d="M9 12l2 2 4-4" /></>}
+      {kind === 'support' && <><path d="M4 13a8 8 0 0116 0" /><rect x="2" y="13" width="4" height="6" rx="1.5" /><rect x="18" y="13" width="4" height="6" rx="1.5" /><path d="M20 19a3 3 0 01-3 3h-3" /></>}
+    </svg>
+  );
+}
+
+export function ProductPageV9({
+  locale,
+  product,
+  productTitle,
+  productDescription,
+  h1,
+  faqItems,
+  longDesc,
+  skuBody,
+  factoryImage,
+}: {
+  locale: Locale;
+  product: Product;
+  productTitle: string;
+  productDescription: string;
+  h1: string;
+  faqItems: { q: string; a: string }[];
+  longDesc: string;
+  skuBody: string;
+  factoryImage: string;
+}) {
+  const localePrefix = `/${locale}`;
+  const galleryImages = getProductImages(product, locale).length
+    ? getProductImages(product, locale)
+    : [getProductMainImage(product, locale)].filter(Boolean) as string[];
+
+  const anchor = getDisplayAnchor(product.slug, locale);
+
+  /* 價格階梯（真實檔位） */
+  const table = getPriceTableForSlug('waterproof-stickers');
+  const cfg = table ? table.configs?.[Math.max(0, table.defaultConfigIndex ?? 0)] ?? table.configs?.[0] : undefined;
+  const tiers = cfg?.tiers ?? [];
+  const rows = tiers.map((t) => ({ qty: t.qty, total: t.priceHKD, unit: t.qty > 0 ? t.priceHKD / t.qty : 0 }));
+  const unitMax = rows.length ? Math.max(...rows.map((r) => r.unit)) : 1;
+  const unitMin = rows.length ? Math.min(...rows.map((r) => r.unit)) : 1;
+  const bestRow = rows.find((r) => r.unit === unitMin) ?? rows[rows.length - 1];
+  const topRow = rows[rows.length - 1];
+  const savePct = unitMax > 0 ? Math.round((1 - unitMin / unitMax) * 100) : 0;
+
+  const conv = getConversionBlocks('stickers', locale);
+  const waTemplate = conv?.whatsappTemplates?.[0]?.message ?? '';
+  const waUrl = buildWhatsAppUrl(waTemplate);
+  const quoteUrl = `${localePrefix}/quote/`;
+  const rushUrl = `${localePrefix}/services/rush-printing-delivery/`;
+
+  /* 產品詳情: longDescription 按 <h3> 切分為手風琴（內容逐字節不變） */
+  const detailSections: { title: string; html: string }[] = [];
+  (longDesc ?? '').split(/<h3>/).forEach((part) => {
+    if (!part.trim()) return;
+    const end = part.indexOf('</h3>');
+    if (end === -1) {
+      detailSections.push({ title: '', html: part });
+      return;
+    }
+    detailSections.push({ title: part.slice(0, end).trim(), html: part.slice(end + 5) });
+  });
+
+  /* 場景長文: sku-seo body 分段；交稿規範段拆為側欄規格卡（文字全部來自 body 本身） */
+  const paras = (skuBody ?? '').split('\n\n').map((p) => p.trim()).filter(Boolean);
+  const bodyLead = paras[0] ?? '';
+  const specPara = paras.find((p) => p.startsWith('交稿規範：'));
+  const bodyMain = paras.filter((p) => p !== specPara);
+  const noteIdx = specPara ? specPara.indexOf('如未有設計檔案') : -1;
+  const specNote = noteIdx >= 0 ? specPara!.slice(noteIdx) : '';
+  const specRows: [string, string][] = [
+    ['解析度', '300 DPI'],
+    ['色彩模式', 'CMYK'],
+    ['出血', '3 mm'],
+    ['字體', '外框化'],
+    ['免費數碼打稿', '2 小時內'],
+  ];
+
+  /* 相關產品（與 RelatedProducts 同源選取邏輯） */
+  const related = getProductsByCategory(product.category_slug)
+    .filter((p) => p.sku_code !== product.sku_code)
+    .slice(0, 4);
+
+  const metaRows: [string, string][] = [
+    [product.sku_code, '產品編號'],
+    [`${product.minQuantity} 張`, '最低訂購量'],
+    ['5-7 天', '標準交期'],
+    ['不滿意免費重印', '品質保證'],
+    ['港九新界順豐', '滿$500包郵'],
+  ];
+
+  const proofImages: [string, string, string][] = [
+    [factoryImage, '印刷', '海德堡 6+1 柯式印刷機'],
+    ['/images/factory/factory-color-chart.webp', '品控', 'ICC 色彩管理 · 對色實景'],
+    ['/images/factory/factory-weigang-uv.webp', '不乾膠專用', '輪轉 UV 印刷機 · 貼紙標籤專線'],
+  ];
+
+  const renderBodyPara = (p: string, key: string) => {
+    if (p === '**常見問題**') {
+      return <p key={key} className="font-bold text-[#1F2937] mt-7 mb-3 text-[17px]">常見問題</p>;
+    }
+    if (p.startsWith('**Q')) {
+      const clean = p.replace(/\*\*/g, '');
+      const nl = clean.indexOf('\n');
+      const q = nl >= 0 ? clean.slice(0, nl).trim() : clean.trim();
+      const a = nl >= 0 ? clean.slice(nl + 1).trim() : '';
+      return (
+        <div key={key} className="mt-4">
+          <p className="font-bold text-[#1F2937] text-[16.5px] mb-1.5">{q}</p>
+          {a && <p className="text-[#3A4250] text-[16px] leading-[1.85] mb-3">{a}</p>}
+        </div>
+      );
+    }
+    if (p.startsWith('準備落單')) {
+      return <p key={key} className="bg-[#FEF1E6] border-l-4 border-[#F87314] rounded-r-xl px-5 py-4 font-semibold text-[#1F2937] text-[16.5px] leading-[1.85]">{p}</p>;
+    }
+    return <p key={key} className="text-[#3A4250] text-[16.5px] leading-[1.9] text-justify mb-4">{p}</p>;
+  };
+
+  return (
+    <main className="bg-white text-[#1F2937] text-[17.5px] leading-[1.75] pb-16 sm:pb-0">
+      {/* ═══ 藍本 .bc 麵包屑 ═══ */}
+      <div className="max-w-[1320px] mx-auto px-6 py-3.5 text-[13px] text-[#6B7280]">
+        <a href={`${localePrefix}/`} className="text-[#6B7280] hover:text-[#2873F5]">首頁</a>
+        {' / '}
+        <a href={`${localePrefix}/category/${product.category_slug}/`} className="text-[#6B7280] hover:text-[#2873F5]">貼紙印刷</a>
+        {' / '}
+        <span>{productTitle}</span>
+      </div>
+
+      {/* ═══ 藍本 .hero 首屏: 左相冊 + 右決策區 ═══ */}
+      <section className="max-w-[1320px] mx-auto px-6 pt-2 pb-12 grid gap-11 lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)]">
+        <GalleryV9 images={galleryImages} alt={productTitle} factoryImage={factoryImage} />
+
+        <div>
+          {/* 即日徽章（沿用現有 RushDeliveryBadge 文案） */}
+          <div className="inline-flex items-center gap-2 bg-[#FEF1E6] border-l-4 border-[#F87314] rounded-[0_10px_10px_0] px-[15px] py-2.5 text-[14.5px] font-bold text-[#EA580C] mb-3.5">
+            <svg viewBox="0 0 24 24" className="w-4 h-4 fill-current" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" /></svg>
+            <span>印刷即日速遞送貨</span>
+            <span className="font-normal text-[#EA580C]/80">| 今天下單 · 明天 12 點前到</span>
+          </div>
+
+          <h1 className="text-[clamp(23px,2.4vw,30px)] font-extrabold leading-[1.4] tracking-[-0.01em]">{h1}</h1>
+          <p className="mt-2.5 text-[15.5px] text-[#6B7280] leading-[1.75]">{productDescription}</p>
+
+          {/* 價格盒 */}
+          <div className="mt-6 bg-[#FFF7ED] border border-[#FED7AA] rounded-[14px] p-5">
+            <div className="text-[13px] font-semibold text-[#EA580C] uppercase tracking-[0.1em] mb-1">
+              {anchor ? `每個低至 · ${anchor.big}` : product.price_range}
+            </div>
+            <div className="flex items-baseline gap-1.5">
+              <span className="font-mono text-[clamp(27px,3vw,38px)] font-bold text-[#F87314] tracking-[-0.02em]">{anchor ? anchor.big : product.price_range}</span>
+              <span className="text-[14px] text-[#6B7280]">{anchor ? `${anchor.unitLabel}起` : ''}</span>
+            </div>
+            <div className="text-[13.5px] text-[#6B7280] mt-1.5 font-medium">
+              {topRow ? `${topRow.qty.toLocaleString('en-US')} 張起批 · 整批 HK$${topRow.total}` : '實價按規格報價'}
+            </div>
+            <div className="text-[13.5px] text-[#6B7280] mt-0.5">{anchor ? anchor.sub : '滿$500包郵'}</div>
+          </div>
+
+          {/* meta 行 */}
+          <dl className="mt-4 border-t border-[#E5E7EB]">
+            {metaRows.map(([val, label]) => (
+              <div key={label} className="flex justify-between items-center py-2 border-b border-[#E5E7EB] text-[14.5px]">
+                <span className="text-[#6B7280]">{label}</span>
+                <span className="font-mono font-semibold text-[#1F2937]">{val}</span>
+              </div>
+            ))}
+          </dl>
+
+          {/* CTA 行 */}
+          <div className="mt-5 grid grid-cols-2 gap-3">
+            <a href={quoteUrl} className="text-center bg-[#F87314] text-white font-bold text-[16px] py-[15px] rounded-[10px] shadow-[0_8px_22px_rgba(248,115,20,0.3)] hover:brightness-95">
+              30 秒 AI 報價
+            </a>
+            <a href={waUrl} target="_blank" rel="noopener noreferrer" className="text-center bg-[#25D366] text-white font-bold text-[16px] py-[15px] rounded-[10px] hover:brightness-95">
+              WhatsApp 即時查詢
+            </a>
+          </div>
+
+          {/* trust 三點（文案 = 既有信任聲明） */}
+          <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-1.5 text-[13.5px] text-[#6B7280]">
+            <li className="inline-flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-[#16A34A]" />深圳自有工廠</li>
+            <li className="inline-flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-[#16A34A]" />免費打樣</li>
+            <li className="inline-flex items-center gap-1.5"><span className="w-1.5 h-1.5 rounded-full bg-[#16A34A]" />100%滿意保證</li>
+          </ul>
+        </div>
+      </section>
+
+      {/* ═══ 藍本 .ladder 價格階梯（真實檔位數據） + .rail 側欄 ═══ */}
+      <section className="max-w-[1320px] mx-auto px-6 mb-16">
+        <div className="bg-[#F8FAFC] border border-[#E5E7EB] rounded-[20px] p-7 sm:p-9 grid gap-9 lg:grid-cols-[minmax(0,8fr)_minmax(0,4fr)]">
+          <div>
+            <div className="flex items-baseline gap-3.5 flex-wrap">
+              <span className="font-mono text-[clamp(34px,3.4vw,44px)] font-bold text-[#2873F5] tracking-[-0.02em] leading-none">{savePct}%</span>
+              <span className="text-[15px] text-[#6B7280]">訂 {bestRow ? bestRow.qty.toLocaleString('en-US') : '1,000'} 張 vs 50 張 · 每張慳幅</span>
+            </div>
+            <div className="mt-5 space-y-3.5">
+              {rows.map((r) => (
+                <div key={r.qty} className="grid grid-cols-[86px_1fr_150px] items-center gap-3 text-[15.5px]">
+                  <span className="font-mono font-bold text-right whitespace-nowrap">{r.qty} 張</span>
+                  <span className="h-4 rounded-full bg-[#E8EFFB] overflow-hidden">
+                    <span
+                      className={`block h-full rounded-full ${r.unit === unitMin ? 'bg-[#F87314]' : 'bg-[#2873F5]'}`}
+                      style={{ width: `${Math.max(8, Math.round((r.unit / unitMax) * 100))}%` }}
+                    />
+                  </span>
+                  <span className="whitespace-nowrap font-mono text-[#444444]">
+                    HK${r.unit.toFixed(2)}/張 · 整批 ${r.total}
+                    {r.unit === unitMin && <b className="ml-1.5 text-[12.5px] text-white bg-[#F87314] rounded px-1.5 py-0.5 font-bold">最抵</b>}
+                  </span>
+                </div>
+              ))}
+            </div>
+            <p className="text-[13px] text-[#6B7280] mt-4">
+              參考價 · 最終以 WhatsApp 正式報價為準{cfg?.label?.['zh-hk'] ? ` ｜ 規格選擇：${cfg.label['zh-hk']}` : ''}
+            </p>
+          </div>
+          <div className="bg-white border border-[#E5E7EB] rounded-[16px] p-6 self-start shadow-[0_1px_3px_rgba(16,24,40,0.07)]">
+            <div className="text-[13px] font-bold uppercase tracking-[0.12em] text-[#2873F5] mb-2">即時報價</div>
+            <div className="font-mono text-[26px] font-bold text-[#F87314] leading-tight">{anchor ? anchor.big : product.price_range}<span className="text-[14px] font-normal text-[#6B7280]">{anchor ? `${anchor.unitLabel}起` : ''}</span></div>
+            <div className="text-[13.5px] text-[#6B7280] mt-1 mb-4">{bestRow ? `${bestRow.qty.toLocaleString('en-US')} 張整批 HK$${bestRow.total}` : ''}</div>
+            <dl className="border-t border-[#F0F1F3]">
+              <div className="flex justify-between py-2.5 border-b border-[#F0F1F3] text-[14px]"><dt className="text-[#6B7280]">標準交期</dt><dd className="font-semibold">5-7 天</dd></div>
+              <div className="flex justify-between py-2.5 border-b border-[#F0F1F3] text-[14px]"><dt className="text-[#6B7280]">即日急件</dt><dd className="font-semibold">今天下單 · 明天 12 點前到</dd></div>
+              <div className="flex justify-between py-2.5 border-b border-[#F0F1F3] text-[14px]"><dt className="text-[#6B7280]">滿 HK$500</dt><dd className="font-semibold">港九新界免運</dd></div>
+            </dl>
+            <div className="grid gap-2.5 mt-5">
+              <a href={quoteUrl} className="text-center bg-[#F87314] text-white font-bold text-[15.5px] py-3 rounded-[10px] hover:brightness-95">30 秒 AI 報價</a>
+              <a href={waUrl} target="_blank" rel="noopener noreferrer" className="text-center bg-[#25D366] text-white font-bold text-[15.5px] py-3 rounded-[10px] hover:brightness-95">WhatsApp 即時查詢</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══ 藍本 .leadbar 3 欄服務條（口徑全部來自既有數據聲明） ═══ */}
+      <section className="max-w-[1320px] mx-auto px-6 mb-16 grid gap-4 lg:grid-cols-3">
+        <div className="bg-[#F2F6FF] border border-[#E5E7EB] rounded-[14px] p-[18px]">
+          <div className="font-extrabold text-[16.5px] mb-1">標準 5-7 天</div>
+          <p className="text-[14.5px] text-[#6B7280] leading-[1.65]">HP Indigo 6K 數碼產線 · 提交檔案後 2 小時內免費數碼打稿 · 平均 2.3 天出貨</p>
+        </div>
+        <div className="bg-[#F2F6FF] border border-[#E5E7EB] rounded-[14px] p-[18px]">
+          <div className="font-extrabold text-[16.5px] mb-1">DHL 全球 2-4 天</div>
+          <p className="text-[14.5px] text-[#6B7280] leading-[1.65]">DHL Express / FedEx 國際配送 · 港九新界滿 $500 免費順豐本地速遞</p>
+        </div>
+        <a href={rushUrl} className="bg-[#FEF1E6] border border-[#FED7AA] rounded-[14px] p-[18px] group">
+          <div className="font-extrabold text-[16.5px] mb-1 text-[#EA580C]">即日急件</div>
+          <p className="text-[14.5px] text-[#6B7280] leading-[1.65] group-hover:text-[#EA580C]">今天下單 · 明天 12 點前到 · 前往即日印刷服務 →</p>
+        </a>
+      </section>
+
+      {/* ═══ 藍本 .det 產品詳情手風琴（longDescription 逐字節內容） ═══ */}
+      <section className="max-w-[1320px] mx-auto px-6 mb-16">
+        <div className="flex items-center gap-2.5 text-[14px] font-bold tracking-[0.14em] text-[#2873F5] uppercase mb-2.5">
+          <span className="inline-block w-[22px] h-[3px] bg-[#F87314] rounded-[2px]" aria-hidden="true" />
+          Product Details
+        </div>
+        <h2 className="text-[clamp(23px,2.6vw,30px)] font-extrabold tracking-[-0.01em] leading-[1.3] mb-5">產品詳情</h2>
+        <div>
+          {detailSections.map((s, i) => (
+            <details key={s.title || `sec-${i}`} className="group bg-white border border-[#E5E7EB] rounded-xl mb-2.5 shadow-[0_1px_3px_rgba(16,24,40,0.07)]" open={i === 0}>
+              {s.title && (
+                <summary className="cursor-pointer list-none px-[22px] py-[19px] font-bold text-[16.5px] flex justify-between items-center gap-4 [&::-webkit-details-marker]:hidden">
+                  {s.title}
+                  <span className="font-mono text-[22px] text-[#2873F5] transition-transform duration-200 group-open:rotate-45 shrink-0">+</span>
+                </summary>
+              )}
+              <div className="px-[22px] pb-6 text-[#3A4250] text-[16px] leading-[1.85] [&_h3]:hidden [&_p]:mb-3 [&_ul]:mb-3 [&_li]:list-disc [&_li]:ml-6 [&_li]:mb-1 [&_table]:w-full [&_table]:border-collapse [&_table]:my-4 [&_table]:text-[15px] [&_th]:border [&_th]:border-[#E5E7EB] [&_th]:bg-[#F3F4F6] [&_th]:p-2.5 [&_th]:text-left [&_td]:border [&_td]:border-[#E5E7EB] [&_td]:p-2.5 [&_tr:nth-child(even)]:bg-[#F8FAFD]">
+                <div dangerouslySetInnerHTML={{ __html: s.html }} />
+              </div>
+            </details>
+          ))}
+          {/* 規格參數 + 產品特點（products.ts specs/features 數據） */}
+          <details className="group bg-white border border-[#E5E7EB] rounded-xl mb-2.5 shadow-[0_1px_3px_rgba(16,24,40,0.07)]">
+            <summary className="cursor-pointer list-none px-[22px] py-[19px] font-bold text-[16.5px] flex justify-between items-center gap-4 [&::-webkit-details-marker]:hidden">
+              規格參數
+              <span className="font-mono text-[22px] text-[#2873F5] transition-transform duration-200 group-open:rotate-45 shrink-0">+</span>
+            </summary>
+            <div className="px-[22px] pb-6 text-[#3A4250] text-[16px] leading-[1.85]">
+              {product.specs && (
+                <dl className="mb-4">
+                  {Object.entries(product.specs).map(([k, v]) => (
+                    v ? (
+                      <div key={k} className="grid grid-cols-[128px_1fr] gap-4 py-2.5 border-b border-[#F0F1F3] text-[15.5px]">
+                        <dt className="font-bold text-[#1F2937]">{k}</dt>
+                        <dd className="text-[#6B7280]">{v}</dd>
+                      </div>
+                    ) : null
+                  ))}
+                </dl>
+              )}
+              {product.features && (
+                <ul>
+                  {product.features.map((f) => (
+                    <li key={f} className="list-disc ml-6 mb-1">{f}</li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          </details>
+        </div>
+      </section>
+
+      {/* ═══ 藍本 .proof 工廠品控實證帶（工廠實拍 = 信任要素, 執行卡 §5③ 禁刪） ═══ */}
+      <section className="max-w-[1320px] mx-auto px-6 mb-16">
+        <div className="grid gap-4 lg:grid-cols-3">
+          {proofImages.map(([src, tag, caption]) => (
+            <figure key={src} className="relative rounded-[18px] overflow-hidden border border-[#E5E7EB] bg-[#F3F3F3]">
+              <div className="relative [aspect-ratio:4/3]">
+                <Image src={src} alt={caption} fill className="object-cover" unoptimized loading="lazy" sizes="(max-width: 1024px) 100vw, 420px" />
+              </div>
+              <figcaption className="absolute left-3.5 bottom-3.5 right-3.5 flex items-center gap-2.5 bg-[rgba(21,38,73,0.82)] text-white rounded-[9px] px-3.5 py-2.5 backdrop-blur-[3px]">
+                <span className="font-mono text-[11.5px] font-bold tracking-[0.06em] bg-[#F87314] rounded-[5px] px-1.5 py-0.5 shrink-0">{tag}</span>
+                <span className="text-[13.5px] font-semibold">{caption}</span>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+
+      {/* ═══ 藍本 .steps 6 步落單流程（數據: conversion orderFlow, 與 PLP 同源） ═══ */}
+      {conv?.orderFlow && (
+        <section className="max-w-[1320px] mx-auto px-6 mb-16 bg-[#F2F6FF] rounded-[22px] p-7 sm:p-8 lg:p-9">
+          <h2 className="text-[clamp(23px,2.6vw,30px)] font-extrabold tracking-[-0.01em] leading-[1.3] text-center mb-7">{conv.orderFlow.title}</h2>
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6">
+            {conv.orderFlow.steps.map((s, i) => (
+              <div key={s.title} className="relative px-3.5 text-center">
+                {i < conv!.orderFlow!.steps.length - 1 && (
+                  <span aria-hidden="true" className="absolute top-6 left-[calc(50%+30px)] right-[calc(-50%+30px)] border-t-2 border-dashed border-[#C9D6F2]" />
+                )}
+                <div className="w-12 h-12 rounded-full bg-white border-2 border-[#2873F5] text-[#2873F5] font-mono font-bold text-lg flex items-center justify-center mx-auto mb-3 relative z-[1]">
+                  {i + 1}
+                </div>
+                <b className="block text-[15.5px] mb-1.5">{s.title}</b>
+                <p className="text-[14px] text-[#6B7280] leading-[1.6]">{s.desc}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* ═══ 藍本 .ufs 適用場景與檔案規格（sku-seo body 逐字; 交稿規範拆側欄卡） ═══ */}
+      <section className="max-w-[1320px] mx-auto px-6 mb-16">
+        <div className="flex items-center gap-2.5 text-[14px] font-bold tracking-[0.14em] text-[#2873F5] uppercase mb-2.5">
+          <span className="inline-block w-[22px] h-[3px] bg-[#F87314] rounded-[2px]" aria-hidden="true" />
+          Use Cases &amp; File Specs
+        </div>
+        <h2 className="text-[clamp(23px,2.6vw,30px)] font-extrabold tracking-[-0.01em] leading-[1.3] mb-5">適用場景與檔案規格</h2>
+        <div className="grid gap-10 lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)]">
+          <div>
+            <p className="text-[19px] text-[#1F2937] font-semibold leading-[1.85] mb-5 pb-5 border-b-2 border-[#1F2937]">{bodyLead}</p>
+            {bodyMain.map((p, i) => renderBodyPara(p, `p-${i}`))}
+          </div>
+          <aside className="self-start lg:sticky lg:top-[88px]">
+            <div className="bg-[#F2F6FF] border border-[#E5E7EB] rounded-[14px] p-[18px]">
+              <b className="block text-[16.5px] mb-2.5">交稿規範</b>
+              <dl>
+                {specRows.map(([v, k]) => (
+                  <div key={k} className="flex justify-between items-center py-2 border-b border-[#E5E7EB] text-[15px]">
+                    <span className="text-[#6B7280]">{k}</span>
+                    <span className="font-mono font-semibold text-[#1F2937]">{v}</span>
+                  </div>
+                ))}
+              </dl>
+              <p className="text-[14px] text-[#6B7280] leading-[1.75] mt-3.5">{specNote}</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      {/* ═══ 藍本 .whys 為何選擇 6 格（文案 = ProductWhyChooseUs zh-hk 逐字） ═══ */}
+      <section className="max-w-[1320px] mx-auto px-6 mb-16">
+        <h2 className="text-[clamp(23px,2.6vw,30px)] font-extrabold tracking-[-0.01em] leading-[1.3] mb-6">為何選擇智印港？</h2>
+        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {WHY6.map((w) => (
+            <div key={w.title} className="bg-[#F8FAFC] border border-[#E5E7EB] rounded-[14px] p-[18px]">
+              <div className="flex items-center gap-3 mb-2.5">
+                <span className="w-11 h-11 rounded-[12px] bg-[#2873F5] flex items-center justify-center shrink-0">
+                  <WhyIcon kind={w.icon} />
+                </span>
+                <div>
+                  <b className="block text-[16.5px] leading-tight">{w.title}</b>
+                  <span className="font-mono text-[12.5px] font-bold text-[#EA580C] bg-[#FEF1E6] rounded-[5px] px-1.5 py-0.5 inline-block mt-1">{w.sub}</span>
+                </div>
+              </div>
+              <p className="text-[15px] text-[#6B7280] leading-[1.65]">{w.desc}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      {/* ═══ FAQ（數據: coreProductFAQMap, 藍本手風琴樣式） ═══ */}
+      {faqItems.length > 0 && (
+        <section className="max-w-[1320px] mx-auto px-6 mb-16">
+          <div className="flex items-center gap-2.5 text-[14px] font-bold tracking-[0.14em] text-[#2873F5] uppercase mb-2.5">
+            <span className="inline-block w-[22px] h-[3px] bg-[#F87314] rounded-[2px]" aria-hidden="true" />
+            FAQ
+          </div>
+          <h2 className="text-[clamp(23px,2.6vw,30px)] font-extrabold tracking-[-0.01em] leading-[1.3] mb-5">常見問題</h2>
+          <div>
+            {faqItems.map((f, i) => (
+              <details key={f.q} className="group bg-white border border-[#E5E7EB] rounded-xl mb-2.5 shadow-[0_1px_3px_rgba(16,24,40,0.07)]" open={i === 0}>
+                <summary className="cursor-pointer list-none px-[22px] py-[19px] font-bold text-[16.5px] flex justify-between items-center gap-4 [&::-webkit-details-marker]:hidden">
+                  {f.q}
+                  <span className="font-mono text-[22px] text-[#2873F5] transition-transform duration-200 group-open:rotate-45 shrink-0">+</span>
+                </summary>
+                <div className="px-[22px] pb-5 text-[15.5px] text-[#444444] leading-[1.85]">{f.a}</div>
+              </details>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {/* ═══ 藍本 .related 相關產品（同源選取邏輯, 藍本卡片樣式） ═══ */}
+      {related.length > 0 && (
+        <section className="max-w-[1320px] mx-auto px-6 mb-16">
+          <div className="flex items-center justify-between mb-5">
+            <h2 className="text-[clamp(23px,2.6vw,30px)] font-extrabold tracking-[-0.01em] leading-[1.3]">相關產品</h2>
+            <a href={`${localePrefix}/category/${product.category_slug}/`} className="text-[15px] font-bold text-[#2873F5] hover:underline">查看全部 →</a>
+          </div>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            {related.map((p) => {
+              const a = getDisplayAnchor(p.slug, locale);
+              return (
+                <article key={p.sku_code} className="bg-white border border-[#E5E7EB] rounded-[14px] overflow-hidden shadow-[0_1px_3px_rgba(16,24,40,0.07)] transition-[box-shadow,border-color] duration-200 hover:border-[#C9D6F2] hover:shadow-[0_8px_24px_rgba(40,115,245,0.09)]">
+                  <a href={`${localePrefix}/product/${p.slug}/`} className="block relative [aspect-ratio:1/1] bg-[#F3F3F3] overflow-hidden">
+                    <Image src={getProductMainImage(p, locale)} alt={normalizeTitle(getProductDisplayTitle(p, locale))} fill className="object-cover" unoptimized loading="lazy" sizes="(max-width: 1024px) 50vw, 320px" />
+                  </a>
+                  <div className="p-3.5 pb-4">
+                    <h3 className="text-[15.5px] font-bold leading-[1.5] h-12 overflow-hidden line-clamp-2 mb-1.5">
+                      <a href={`${localePrefix}/product/${p.slug}/`} className="hover:text-[#2873F5]">{normalizeTitle(getProductDisplayTitle(p, locale))}</a>
+                    </h3>
+                    <div className="font-mono text-[16px] font-bold text-[#F87314]">
+                      {a ? a.big : p.price_range}
+                      <span className="text-[13px] font-normal text-[#6B7280]">{a ? `${a.unitLabel}起` : ''}</span>
+                    </div>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+      )}
+
+      {/* ═══ 頁底 CTA（口徑 = sku-seo body 既有結尾句 + NAP 電話 + 24 小時內回覆） ═══ */}
+      <section className="max-w-[1320px] mx-auto px-6 mb-16">
+        <div className="bg-white border border-[#E5E7EB] rounded-[20px] p-8 sm:p-12 text-center shadow-[0_1px_3px_rgba(16,24,40,0.07)]">
+          <h3 className="text-[clamp(22px,2.6vw,29px)] font-extrabold mb-2.5">準備落單？2 小時免費打稿</h3>
+          <p className="text-[#6B7280] text-[16px] mb-6">WhatsApp 客服 +86 198 8085 1334 或點擊「30 秒 AI 報價」· 24 小時內回覆 · 免費設計諮詢</p>
+          <div className="flex gap-3.5 justify-center flex-wrap">
+            <a href={quoteUrl} className="inline-flex items-center gap-2 bg-[#F87314] text-white font-bold text-[16.5px] px-[34px] py-[15px] rounded-[11px] shadow-[0_8px_22px_rgba(248,115,20,0.3)] hover:brightness-95">30 秒 AI 報價</a>
+            <a href={waUrl} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 bg-[#25D366] text-white font-bold text-[16.5px] px-[34px] py-[15px] rounded-[11px] hover:brightness-95">WhatsApp 即時查詢</a>
+          </div>
+        </div>
+      </section>
+
+      {/* 地區化內容（沿用現有組件與文案, 內容零改動） */}
+      <div className="max-w-[1320px] mx-auto px-6 pb-4">
+        <div className="bg-[linear-gradient(180deg,#ffffff,rgba(239,246,255,0.5))] rounded-3xl border border-blue-100 p-8 md:p-12 space-y-8">
+          <div className="text-center">
+            <h3 className="text-2xl md:text-3xl font-bold text-[#333333] mb-5">為何選擇智印港？</h3>
+            <RegionalTrustBadges locale={locale} />
+          </div>
+          <div className="bg-white rounded-2xl p-6 md:p-8 shadow-sm border border-blue-100/60">
+            <p className="text-gray-600 text-base md:text-lg leading-relaxed text-center">
+              <RegionalContent locale={locale} type="expertIntro" />
+            </p>
+          </div>
+          <div className="text-center space-y-4">
+            <p className="text-base md:text-lg text-gray-500">
+              <RegionalContent locale={locale} type="shipping" />
+            </p>
+            <RegionalCta locale={locale} productSlug={product.slug} />
+            <p className="text-sm text-gray-400">
+              <RegionalContent locale={locale} type="pricingNote" />
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* 移動端吸底報價軌（藍本 .mrail; 價格 = 真實檔位錨點） */}
+      <div className="flex sm:hidden fixed left-0 right-0 bottom-0 z-[60] bg-white border-t border-[#E5E7EB] px-3.5 py-2.5 gap-2.5 items-center shadow-[0_-4px_20px_rgba(0,0,0,0.08)]">
+        <span className="whitespace-nowrap">
+          <span className="font-mono font-bold text-[#F87314] text-[16px]">{anchor ? anchor.big : product.price_range}</span>
+          <span className="text-[12.5px] text-[#6B7280]">{bestRow ? ` · ${bestRow.qty.toLocaleString('en-US')} 張整批 HK$${bestRow.total}` : ''}</span>
+        </span>
+        <a href={quoteUrl} className="flex-1 text-center bg-[#F87314] text-white font-bold text-[13.5px] py-[11px] rounded-[9px]">30 秒報價</a>
+        <a href={waUrl} target="_blank" rel="noopener noreferrer" className="flex-1 text-center bg-[#25D366] text-white font-bold text-[13.5px] py-[11px] rounded-[9px]">WhatsApp</a>
+      </div>
+    </main>
+  );
+}
