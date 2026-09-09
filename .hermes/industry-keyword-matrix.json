@@ -9684,5 +9684,39 @@
     "calibration_day_check": "2026-09-08 非校准日 (v4 §5.1: 9/10 Pillar 收录验证+§2.3 抓取状态表补齐 / 9/12-13 8/30 批验证窗判定) → ③④ 不触发, 9/10 cron 执行",
     "verification_window_note": "当前处 8/30 批验证窗内 (9/5-9/12): title/keywords 只读, 本次零改文案, 仅数据回灌"
   },
-  "last_gsc_feedback_update": "2026-09-08T22:43:00+08:00"
+  "last_gsc_feedback_update": "2026-09-09T22:44:00+08:00",
+  "gsc_feedback_2026_09_09": {
+    "version": "gsc-feedback-v7-2026-09-09-delta",
+    "run_at": "2026-09-09T22:44:00+08:00",
+    "run_type": "delta (canonical 数据未变, 全量分析沿用 gsc_feedback_2026_09_08)",
+    "data_source": {
+      "canonical_file": "GSC数据/gsc-fresh-2026-09-03.json",
+      "calibration_date": "2026-09-03T15:25:00+08:00",
+      "staleness": "STALE 6d (freshnessGateHours=72; 明日 9/10 = v4 §5.1 校准日)",
+      "official_ctr_7d_all": 0.0054
+    },
+    "no_change_statement": "GSC数据/ 自 9/3 15:25 无新上传, 16 dataset 与 9/8 run 完全一致 → 零点击/CTR 异常/striking 3 清单与 boost 判定不变, 不重复回灌 (防矩阵膨胀 + 防重复 boost 抖动)",
+    "boost_state_verified": {
+      "Q-P1-02": 3,
+      "Q-P1-01": 2,
+      "Q-P1-03": 2,
+      "Q-P2-03": 2,
+      "note": "9/8 回灌值在本地 matrix 完整保留"
+    },
+    "r5_calendar_landing_check": {
+      "status": "✅ 落地确认",
+      "evidence": "2027-monthly-calendar-printing-timetable + calendar-printing-guide 3 locale (zh-hk/en/ja) 全覆盖; 2f846d01 D9 zh-hk calendar-printing-guide 12段骨架升级 (9/9, remote main)",
+      "gsc_target": "月曆印刷 7d 32imp pos18.16 + 月歷印刷 15imp pos16.53 (canonical 9/3) — R5 9/15 硬截止前 6 天缓冲"
+    },
+    "title_v4_batch_note": "05554ed1/e9c394ca SKU 补词批1 + 摘果第二波 (窗外白名单, master-report A3) — 与 8/30 批验证窗 (9/5-9/12) 无冲突; 9/12-13 判定照旧",
+    "tomorrow_9_10_calibration_precheck": [
+      "① Pillar 收录验证: 5 Pillar slug URL Inspection (packaging-box-pricing-2026 / sticker-material-pvc-vinyl-removable / poster-printing-guide / campus-education-printing-pillar-guide / foil-stamping-3-applications-2026)",
+      "② §2.3 九篇 12铁律重写篇目抓取状态表补齐 (未抓取者 IndexNow 补推)",
+      "③ BC 旧名片 URL 404 清零复核 (9/8 42d897b2 修复后 GSC 复核)",
+      "④ 同口径导出 24h/7d/28d/3m × 全站/hk/en/ja 对比 9/3 canonical",
+      "⑤ 校准报告落 docs/2026-09-10-*.md (文件名含当日日期)",
+      "前提: 若 K3 未上传新 GSC xlsx, 沿用 9/3 canonical 并标 STALE 7d + 显式声明"
+    ],
+    "calibration_day_check": "2026-09-09 非校准日 → ③④ 不触发; 明日 9/10 = v4 §5.1 校准日, 全部 ③④ 任务激活"
+  }
 }
