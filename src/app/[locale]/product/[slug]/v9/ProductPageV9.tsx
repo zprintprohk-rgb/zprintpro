@@ -11,7 +11,6 @@
  * 執行卡: 2026-09-09-autoclaw-plp-pdp-v91-execution-card.md (v1.3) 鎖定點 1-5
  */
 import Image from 'next/image';
-import { Factory, Zap, Truck, Clock, ShieldCheck, Headphones } from 'lucide-react';
 import { Locale } from '@/lib/seo';
 import {
   Product,
@@ -23,21 +22,9 @@ import { getDisplayAnchor } from '@/lib/pricing';
 import { getPriceTableForSlug } from '@/lib/price-injector';
 import { getConversionBlocks, buildWhatsAppUrl } from '@/data/category-conversion-blocks';
 import { GalleryV9 } from './GalleryV9';
+import { TrustBadgeBlock } from '@/app/[locale]/category/[slug]/v9/TrustBadgeBlock';
 
 const normalizeTitle = (s: string): string => s.replace(/\s+/g, ' ').trim();
-
-/* ---------- 為何選擇 6 格（統一區塊: 樣式對齊首頁 WhyChooseUs; 文案與 ProductWhyChooseUs zh-hk 逐字一致） ---------- */
-const WHY_CARDS = [
-  { icon: Factory, title: '深圳自有工廠', sub: '15年跨境經驗', desc: '彩龍印刷旗下品牌，深圳自有工廠生產，品質可控' },
-  { icon: Zap, title: '即日交貨', sub: '特急24小時', desc: '標準訂單3-5日，急件最快當天' },
-  { icon: Truck, title: '順豐直達', sub: '全港覆蓋', desc: '順豐速運上門派送，快捷安全' },
-  { icon: Clock, title: '免費打樣', sub: '滿意再下單', desc: '批量訂單免費提供實物樣板確認' },
-  { icon: ShieldCheck, title: '品質保證', sub: '100%滿意', desc: '不滿意免費重印，品質問題全額退款' },
-  { icon: Headphones, title: '24小時支持', sub: '全天候服務', desc: '專業客服團隊7x24小時在線' },
-];
-const WHY_INTRO = '智印港（ZprintPro）為彩龍印刷旗下國際印刷服務品牌，深圳自有工廠，服務日本及全球客戶。我們熟悉跨境印刷需求，提供 IP 保護、ISO 認證品質保證，以及全球物流支援。';
-const WHY_SHIPPING = '順豐香港本地送貨 · 港島/九龍/新界 48小時達 · DHL 全球 2-4 日';
-const WHY_PRICING = '以上價格以港幣（HKD）計算。量大價優，歡迎致電查詢批量報價。';
 
 export function ProductPageV9({
   locale,
@@ -154,14 +141,35 @@ export function ProductPageV9({
 
   return (
     <main className="bg-white text-[#1F2937] text-[17.5px] leading-[1.75] pb-16 sm:pb-0">
-      {/* ═══ 藍本 .bc 麵包屑 ═══ */}
-      <div className="max-w-[1320px] mx-auto px-6 py-3.5 text-[13px] text-[#6B7280]">
-        <a href={`${localePrefix}/`} className="text-[#6B7280] hover:text-[#2873F5]">首頁</a>
-        {' / '}
-        <a href={`${localePrefix}/category/${product.category_slug}/`} className="text-[#6B7280] hover:text-[#2873F5]">貼紙印刷</a>
-        {' / '}
-        <span>{productTitle}</span>
-      </div>
+      {/* ═══ Banner — 與 PLP 同規格: 同導航欄寬 1320px + 輪播圖同高 (300/400), 麵包屑入圖; H1 保留在 hero（每頁唯一 H1, SEO 安全） ═══ */}
+      <section className="max-w-[1320px] mx-auto">
+        <div
+          className="relative overflow-hidden h-[300px] md:h-[400px] text-white"
+          style={{ backgroundColor: 'var(--color-royal-navy)' }}
+        >
+          <Image
+            src={`/images/hero/hero-sticker-${locale}.webp`}
+            alt={`${productTitle} — 貼紙印刷分類實拍`}
+            fill
+            className="object-cover"
+            unoptimized
+            priority
+            sizes="(max-width: 1320px) 100vw, 1320px"
+          />
+          <div aria-hidden="true" className="absolute inset-0" style={{ background: 'var(--color-royal-navy-overlay)' }} />
+          <div className="relative z-[1] h-full flex flex-col justify-center px-6 md:px-10">
+            <nav aria-label="breadcrumb" className="text-[13px] text-white/75 mb-4">
+              <a href={`${localePrefix}/`} className="hover:text-white transition-colors underline decoration-white/40 underline-offset-4">首頁</a>
+              <span className="mx-2">/</span>
+              <a href={`${localePrefix}/category/${product.category_slug}/`} className="hover:text-white transition-colors underline decoration-white/40 underline-offset-4">貼紙印刷</a>
+              <span className="mx-2">/</span>
+              <span className="text-white">{productTitle}</span>
+            </nav>
+            <p className="text-[22px] md:text-[26px] font-extrabold leading-snug max-w-[760px] drop-shadow-sm">{productTitle}</p>
+            <p className="mt-2.5 text-[16.5px] text-white/85">專業品質，價格透明，快速交貨</p>
+          </div>
+        </div>
+      </section>
 
       {/* ═══ 藍本 .hero 首屏: 左相冊 + 右決策區 ═══ */}
       <section className="max-w-[1320px] mx-auto px-6 pt-2 pb-12 grid gap-11 lg:grid-cols-[minmax(0,7fr)_minmax(0,5fr)]">
@@ -403,37 +411,8 @@ export function ProductPageV9({
         </div>
       </section>
 
-      {/* ═══ 為何選擇智印港 — 統一區塊（置於產品詳情之後; 樣式對齊首頁 WhyChooseUs; 文案 = Regional zh-hk 逐字; 無重複大按鈕） ═══ */}
-      <section className="max-w-[1320px] mx-auto px-6 mb-16">
-        <div className="grid gap-9 lg:grid-cols-[5fr_7fr] items-start">
-          <div>
-            <div className="flex items-center gap-2.5 text-[13px] font-semibold tracking-[.12em] uppercase text-[#2873F5] mb-3.5">
-              <span className="inline-block w-[22px] h-[2px] bg-[#F87314]" aria-hidden="true" />
-              Why ZprintPro
-            </div>
-            <h2 className="text-[26px] md:text-[32px] font-extrabold leading-tight tracking-tight text-[#111827]">
-              為何選擇<em className="not-italic text-[#F87314]">智印港</em>
-            </h2>
-            <p className="mt-4 text-[16px] leading-[1.9] text-[#3A4250] text-justify">{WHY_INTRO}</p>
-            <p className="mt-3 text-[16px] leading-[1.9] text-[#3A4250] font-semibold">{WHY_SHIPPING}</p>
-            <p className="mt-3 text-[13px] text-[#6B7280]">{WHY_PRICING}</p>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-[18px]">
-            {WHY_CARDS.map((w) => (
-              <div key={w.title} className="flex items-start gap-4 bg-white border border-[#E5E7EB] rounded-2xl py-[22px] px-[20px] transition-all duration-300 hover:shadow-[0_10px_30px_rgba(17,24,39,0.06)] hover:-translate-y-[3px] hover:border-[#d6e0f5]">
-                <div className="w-[52px] h-[52px] rounded-[14px] bg-[#2873F5] flex items-center justify-center flex-shrink-0">
-                  <w.icon className="w-6 h-6 text-white" aria-hidden="true" />
-                </div>
-                <div className="min-w-0">
-                  <h3 className="text-base font-extrabold text-[#111827]">{w.title}</h3>
-                  <p className="text-[13px] font-bold text-[#2873F5] mt-1 mb-1.5">{w.sub}</p>
-                  <p className="text-[13px] leading-[1.7] text-[#6B7280]">{w.desc}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* ═══ 為何選擇智印港 — 皇家藏青色塊（置於產品詳情之後; 組件復用 TrustBadgeBlock, 與 PLP 同源同文案） ═══ */}
+      <TrustBadgeBlock />
 
       {/* ═══ FAQ（數據: coreProductFAQMap, 藍本手風琴樣式） ═══ */}
       {faqItems.length > 0 && (
