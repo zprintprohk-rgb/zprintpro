@@ -251,7 +251,8 @@ export function Footer({ locale }: FooterProps) {
     <footer
       className="text-white"
       style={{
-        background: 'linear-gradient(165deg, #244780 0%, #1B3163 52%, #152649 100%)',
+        /* 2026-09-09 修訂輪3: 唐總直接指令 — 頁腳底色改用皇家藏青 token（原 #244780→#1B3163→#152649 漸變撤換; 凍結區越線已在報告申報） */
+        background: 'var(--color-royal-navy-grad)',
         boxShadow: 'inset 0 1px 0 rgba(255,255,255,.10)',
       }}
     >

@@ -39,6 +39,7 @@ import { CategoryIndustries } from '@/components/category/CategoryIndustries';
 import { CategorySharpHooks } from '@/components/category/CategorySharpHooks';
 import { CategoryViewTracker } from '@/components/tracking/CategoryViewTracker';
 import { RegionalContent, RegionalCta, RegionalTrustBadges } from '@/components/seo/RegionalContent';
+import { CategoryPageV9 } from './v9/CategoryPageV9';
 
 // 生成静态参数 - 13分类 × 3语言 = 39个路径
 export function generateStaticParams() {
@@ -314,6 +315,10 @@ export default function CategoryPage({
   const t = translations[locale];
   const localePrefix = `/${locale}`;
 
+  // 2026-09-09 PLP v9.1 樷板路由门控 (执行卡锁定点 2): 仅 zh-hk /category/stickers/ 走 v9 渲染层,
+  // 其余 15 品类 + en/ja 渲染零影响 (legacy 分支原样保留)
+  const isV9Stickers = locale === 'zh-hk' && slug === 'stickers';
+
   // Sort options — 必须在 t 声明后 (依赖 t.popularity / t.priceAsc / t.priceDesc)
   const sortOptions: { value: string; label: string }[] = [
     { value: 'popularity', label: t.popularity },
@@ -372,6 +377,15 @@ export default function CategoryPage({
         return <JsonLd data={mergedFaq} />;
       })()}
 
+      {isV9Stickers ? (
+        <CategoryPageV9
+          locale={locale}
+          slug={slug}
+          categoryName={categoryName}
+          pageH1={pageH1}
+          products={sortedProducts}
+        />
+      ) : (
       <main className="min-h-screen bg-gray-50">
         {/* Banner 区域 - 1320×400，紧贴导航栏，图片背景 */}
         <div className="max-w-[1320px] mx-auto">
@@ -529,6 +543,7 @@ export default function CategoryPage({
           </div>
         </div>
       </main>
+      )}
     </>
   );
 }
